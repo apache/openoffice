@@ -1,0 +1,44 @@
+
+#: solver.src#RID_SOLVER_COMPONENT.string.text
+msgid "%PRODUCTNAME Linear Solver"
+msgstr "%PRODUCTNAME-i lineaarne lahendaja"
+
+#: solver.src#RID_PROPERTY_NONNEGATIVE.string.text
+msgid "Assume variables as non-negative"
+msgstr "Mittenegatiivsete muutujate eeldamine"
+
+#: solver.src#RID_PROPERTY_INTEGER.string.text
+msgid "Assume variables as integer"
+msgstr "Täisarvuliste muutujate eeldamine"
+
+#: solver.src#RID_PROPERTY_TIMEOUT.string.text
+msgid "Solving time limit (seconds)"
+msgstr "Lahendamise ajalimiit (sekundites)"
+
+#: solver.src#RID_PROPERTY_EPSILONLEVEL.string.text
+msgid "Epsilon level (0-3)"
+msgstr "Epsiloni tase (0-3)"
+
+#: solver.src#RID_PROPERTY_LIMITBBDEPTH.string.text
+msgid "Limit branch-and-bound depth"
+msgstr "Hargnemis- ja piiramissügavuse limiit"
+
+#: solver.src#RID_ERROR_NONLINEAR.string.text
+msgid "The model is not linear."
+msgstr "Mudel pole lineaarne."
+
+#: solver.src#RID_ERROR_EPSILONLEVEL.string.text
+msgid "The epsilon level is invalid."
+msgstr "Epsiloni tase on vigane."
+
+#: solver.src#RID_ERROR_INFEASIBLE.string.text
+msgid "The model is infeasible. Check limiting conditions."
+msgstr "Selline mudel pole võimalik. Kontrolli piirangutingimusi."
+
+#: solver.src#RID_ERROR_UNBOUNDED.string.text
+msgid "The model is unbounded."
+msgstr "Mudel on piiritlemata."
+
+#: solver.src#RID_ERROR_TIMEOUT.string.text
+msgid "The time limit was reached."
+msgstr "Ajalimiit ületati."

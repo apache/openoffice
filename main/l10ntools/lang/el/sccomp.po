@@ -1,0 +1,44 @@
+
+#: solver.src#RID_SOLVER_COMPONENT.string.text
+msgid "%PRODUCTNAME Linear Solver"
+msgstr "Γραμμική επίλυση %PRODUCTNAME"
+
+#: solver.src#RID_PROPERTY_NONNEGATIVE.string.text
+msgid "Assume variables as non-negative"
+msgstr "Υποθέτει ότι οι μεταβλητές είναι μη-αρνητικές"
+
+#: solver.src#RID_PROPERTY_INTEGER.string.text
+msgid "Assume variables as integer"
+msgstr "Υποθέτει ότι οι μεταβλητές είναι ακέραιος"
+
+#: solver.src#RID_PROPERTY_TIMEOUT.string.text
+msgid "Solving time limit (seconds)"
+msgstr "Όριο χρόνου επίλυσης (δευτερόλεπτα)"
+
+#: solver.src#RID_PROPERTY_EPSILONLEVEL.string.text
+msgid "Epsilon level (0-3)"
+msgstr "Επίπεδο έψιλον (0-3)"
+
+#: solver.src#RID_PROPERTY_LIMITBBDEPTH.string.text
+msgid "Limit branch-and-bound depth"
+msgstr "Όριο κλάδου και βάθος δέσμευσης"
+
+#: solver.src#RID_ERROR_NONLINEAR.string.text
+msgid "The model is not linear."
+msgstr "Το μοντέλο δεν είναι γραμμικό."
+
+#: solver.src#RID_ERROR_EPSILONLEVEL.string.text
+msgid "The epsilon level is invalid."
+msgstr "Το επίπεδο έψιλον δεν είναι έγκυρο"
+
+#: solver.src#RID_ERROR_INFEASIBLE.string.text
+msgid "The model is infeasible. Check limiting conditions."
+msgstr "Το μοντέλο είναι ανέφικτο. Ελέγξτε τις συνθήκες ορίων."
+
+#: solver.src#RID_ERROR_UNBOUNDED.string.text
+msgid "The model is unbounded."
+msgstr "Το μοντέλο δεν είναι δεσμευμένο."
+
+#: solver.src#RID_ERROR_TIMEOUT.string.text
+msgid "The time limit was reached."
+msgstr "Έληξε το όριο χρόνου."

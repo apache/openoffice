@@ -1,0 +1,2710 @@
+"X-Accelerator-Marker: ~\n"
+
+#: view.src#STR_NODEFPRINTER.string.text
+msgid ""
+"No default printer found.\n"
+"Please choose a printer and try again."
+msgstr ""
+"沒有找到預設印表機。\n"
+"請選擇一個印表機﹐然後再重試列印。"
+
+#: view.src#STR_NOSTARTPRINTER.string.text
+msgid ""
+"Could not start printer.\n"
+"Please check your printer configuration."
+msgstr ""
+"無法啟動印表機。\n"
+"請檢查印表機的配置。"
+
+#: view.src#STR_PRINTER_NOTAVAIL.string.text
+msgid ""
+"This document has been formatted for the printer $1. The specified printer "
+"is not available. \n"
+"Do you want to use the standard printer $2 ?"
+msgstr ""
+"這個文件格式是專門為印表機 $1 設定的。\n"
+"但是這個印表機不存在。您要使用預設印表機 $2 ？"
+
+#: view.src#STR_PRINT_OPTIONS.string.text
+msgid "Options..."
+msgstr "其他..."
+
+#: view.src#STR_PRINT_OPTIONS_TITLE.string.text
+msgid "Printer Options"
+msgstr "印表機 其他"
+
+#: view.src#STR_ERROR_PRINTER_BUSY.string.text
+msgid "Printer busy"
+msgstr "印表機忙碌中"
+
+#: view.src#STR_ERROR_PRINT.string.text
+msgid "Error while printing"
+msgstr "列印錯誤"
+
+#: view.src#STR_PRINTING.string.text
+msgid "Printing"
+msgstr "正在列印"
+
+#: view.src#STR_PAGE.string.text
+msgid "Page "
+msgstr "頁 "
+
+#: view.src#STR_ERROR_SAVE_TEMPLATE.string.text
+msgid "Error saving template "
+msgstr "寫入範本時發生一個錯誤 "
+
+#: view.src#STR_READONLY.string.text
+msgid " (read-only)"
+msgstr "(唯讀)"
+
+#: view.src#STR_PRINT_NEWORI.string.text
+msgctxt "view.src#STR_PRINT_NEWORI.string.text"
+msgid ""
+"The page size and orientation have been modified.\n"
+"Would you like to save the new settings in the\n"
+"active document?"
+msgstr ""
+"頁面大小和頁面方向已經被修改。\n"
+"是否將新設定儲存到使用中文件內？"
+
+#: view.src#STR_PRINT_NEWSIZE.string.text
+msgid ""
+"The page size has been modified.\n"
+"Should the new settings be saved\n"
+"in the active document?"
+msgstr ""
+"您已經修改了頁面大小。\n"
+"讓文件採用這個設定？"
+
+#: view.src#STR_PRINT_NEWORISIZE.string.text
+msgctxt "view.src#STR_PRINT_NEWORISIZE.string.text"
+msgid ""
+"The page size and orientation have been modified.\n"
+"Would you like to save the new settings in the\n"
+"active document?"
+msgstr ""
+"頁面大小和頁面方向已經被修改。\n"
+"是否將新設定儲存到使用中文件內？"
+
+#: view.src#STR_PREVIEW_DOCINFO.string.text
+msgid ""
+"<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$("
+"TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt>"
+"<b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
+msgstr ""
+"html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>標題：</b><dd>$(TITE"
+"L)<dt><b>主題：</b><dd>$(THEME)<dt><b>關鍵字：</b><dd>$(KEYWORDS)<dt><b>描述：</b><dd>"
+"$(TEXT)</dl></font></body></html>"
+
+#: view.src#STR_PREVIEW_NODOCINFO.string.text
+msgid ""
+"<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document "
+"properties found.</B></FONT></P></BODY></HTML>"
+msgstr ""
+"<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT "
+"FACE=\"Arial\"><B>沒有文件屬性。</B></FONT></P></BODY></HTML>"
+
+#: view.src#MSG_CANT_CLOSE.infobox.text
+msgid ""
+"The document cannot be closed because a\n"
+" print job is being carried out."
+msgstr ""
+"正在執行一個列印任務，\n"
+"因此無法關閉這個文件。"
+
+#: view.src#DLG_PRINTMONITOR_TEXT.#define.text
+msgid "Print Monitor"
+msgstr "列印監視器"
+
+#: view.src#DLG_PRINTMONITOR.FT_PRINTING.fixedtext.text
+msgid "is being printed on"
+msgstr "的列印設備是"
+
+#: view.src#DLG_PRINTMONITOR.STR_FT_PREPARATION.string.text
+msgid "is being prepared for printing"
+msgstr "正在準備進行列印"
+
+#: view.src#MSG_ERROR_SEND_MAIL.infobox.text
+msgid ""
+"An error occurred in sending the message. Possible errors could be a missing "
+"user account or a defective setup.\n"
+"Please check the %PRODUCTNAME settings or your e-mail program settings."
+msgstr ""
+"在傳送這個文件時發生一個錯誤。可能缺少一個使用者賬號或安裝有問題。\n"
+"請您檢查 %PRODUCTNAME 的設定和您的電子郵件程式的設定。"
+
+#: view.src#MSG_QUERY_OPENASTEMPLATE.querybox.text
+msgid ""
+"This document cannot be edited, possibly due to missing access rights. Do "
+"you want to edit a copy of the document?"
+msgstr "無法編輯本文件，可能是因為缺少存取權限。您要編輯文件的副本嗎？"
+
+#: view.src#STR_REPAIREDDOCUMENT.string.text
+msgid " (repaired document)"
+msgstr " (已修復的文件)"
+
+#: view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.errorbox.text
+msgid ""
+"%PRODUCTNAME could not find a web browser on your system. Please check your "
+"Desktop Preferences or install a web browser (for example, Mozilla) in the "
+"default  location requested during the browser installation."
+msgstr ""
+"%PRODUCTNAME 找不到系統中的 Web 瀏覽器。請檢查桌面喜好設定，或在瀏覽器安裝期間，於要求的預設位置，安裝 Web 瀏覽器 "
+"(例如：Mozilla)。"
+"X-Accelerator-Marker: ~\n"
+
+#: menu.src#STR_MENU_CFGITEM.string.text
+msgid "Configuration Menu"
+msgstr "功能表"
+
+#: menu.src#STR_MENU_ADDONS.string.text
+msgid "~Add-Ons"
+msgstr "附加元件(~A)"
+
+#: menu.src#MN_CLIPBOARDFUNCS.SID_CUT.menuitem.text
+msgid "Cu~t"
+msgstr "剪下(~T)"
+
+#: menu.src#MN_CLIPBOARDFUNCS.SID_COPY.menuitem.text
+msgid "~Copy"
+msgstr "複製(~C)"
+
+#: menu.src#MN_CLIPBOARDFUNCS.SID_PASTE.menuitem.text
+msgid "~Paste"
+msgstr "貼上(~P)"
+
+#: menu.src#SID_WIN_FULLSCREEN.string.text
+msgid "Leave Full-Screen Mode"
+msgstr "離開全螢幕模式"
+
+#: menu.src#STR_MENU_ADDONHELP.string.text
+msgid "Add-~On Help"
+msgstr "附加元件說明(~O)"
+
+#: menu.src#STR_MENU_SYNONYMS.string.text
+msgid "Synonyms"
+msgstr "同義詞"
+
+#: menu.src#STR_MENU_NO_SYNONYM_FOUND.string.text
+msgid "(none)"
+msgstr "(無)"
+
+#: menu.src#STR_MENU_THESAURUS.string.text
+msgid "~Thesaurus..."
+msgstr "同義詞詞典(~T)..."
+
+#: fltfnc.src#STR_FILTER_NOT_INSTALLED.string.text
+msgid ""
+"The selected filter $(FILTER) has not been installed.\n"
+"Would you like to do this now?"
+msgstr ""
+"選取的篩選器 $(FILTER) 還沒有安裝好。\n"
+"現在要安裝？"
+
+#: fltfnc.src#STR_FILTER_CONSULT_SERVICE.string.text
+msgid ""
+"The selected filter $(FILTER) is not included in your edition.\n"
+"You can find information about orders on our homepage."
+msgstr ""
+"這個版本還沒有提供您選擇的轉換器 $(FILTER)。\n"
+"請參閱我們的網頁提供的定購軟體的資訊。"
+"X-Accelerator-Marker: ~\n"
+
+#: app.src#STR_NONAME.string.text
+msgid "Untitled"
+msgstr "未命名"
+
+#: app.src#STR_CLOSE.string.text
+msgid "Close"
+msgstr "關閉"
+
+#: app.src#STR_STYLE_FILTER_AUTO.string.text
+msgid "Automatic"
+msgstr "自動"
+
+#: app.src#STR_STANDARD_SHORTCUT.string.text
+msgctxt "app.src#STR_STANDARD_SHORTCUT.string.text"
+msgid "Standard"
+msgstr "標準"
+
+#: app.src#STR_BYTES.string.text
+msgid "Bytes"
+msgstr "位元組"
+
+#: app.src#STR_KB.string.text
+msgid "KB"
+msgstr "KB"
+
+#: app.src#STR_MB.string.text
+msgid "MB"
+msgstr "MB"
+
+#: app.src#STR_GB.string.text
+msgid "GB"
+msgstr "GB"
+
+#: app.src#MSG_QUERY_LASTVERSION.querybox.text
+msgid "Cancel all changes?"
+msgstr "要取消所有變更嗎？"
+
+#: app.src#RID_DOCALREADYLOADED_DLG.infobox.text
+msgid "Document already open."
+msgstr "已經載入這個檔案並處於使用狀態。"
+
+#: app.src#MSG_ERR_NO_WEBBROWSER_FOUND.errorbox.text
+msgid ""
+"%PRODUCTNAME could not find a web browser on your system. Please check your "
+"Desktop Preferences or install a web browser (for example, Mozilla) in the "
+"default  location requested during the browser installation."
+msgstr ""
+"%PRODUCTNAME 找不到系統的網頁瀏覽器。請在瀏覽器安裝期間，於需要的預設位置，檢查桌面偏好設定或是安裝網頁瀏覽器 (例如：Mozilla)。"
+
+#: app.src#GID_INTERN.string.text
+msgid "Internal"
+msgstr "內部"
+
+#: app.src#GID_APPLICATION.string.text
+msgid "Application"
+msgstr "應用程式"
+
+#: app.src#GID_VIEW.string.text
+msgid "View"
+msgstr "檢視"
+
+#: app.src#GID_DOCUMENT.string.text
+msgid "Documents"
+msgstr "文件"
+
+#: app.src#GID_EDIT.string.text
+msgid "Edit"
+msgstr "編輯"
+
+#: app.src#GID_MACRO.string.text
+msgid "BASIC"
+msgstr "BASIC"
+
+#: app.src#GID_OPTIONS.string.text
+msgid "Options"
+msgstr "選項"
+
+#: app.src#GID_MATH.string.text
+msgid "Math"
+msgstr "數學"
+
+#: app.src#GID_NAVIGATOR.string.text
+msgid "Navigate"
+msgstr "瀏覽"
+
+#: app.src#GID_INSERT.string.text
+msgid "Insert"
+msgstr "插入"
+
+#: app.src#GID_FORMAT.string.text
+msgid "Format"
+msgstr "格式"
+
+#: app.src#GID_TEMPLATE.string.text
+msgid "Templates"
+msgstr "範本"
+
+#: app.src#GID_TEXT.string.text
+msgid "Text"
+msgstr "文字"
+
+#: app.src#GID_FRAME.string.text
+msgid "Frame"
+msgstr "框"
+
+#: app.src#GID_GRAPHIC.string.text
+msgctxt "app.src#GID_GRAPHIC.string.text"
+msgid "Graphic"
+msgstr "圖形"
+
+#: app.src#GID_TABLE.string.text
+msgid "Table"
+msgstr "表格"
+
+#: app.src#GID_ENUMERATION.string.text
+msgid "Numbering"
+msgstr "編號"
+
+#: app.src#GID_DATA.string.text
+msgid "Data"
+msgstr "資料"
+
+#: app.src#GID_SPECIAL.string.text
+msgid "Special Functions"
+msgstr "特殊功能"
+
+#: app.src#GID_IMAGE.string.text
+msgid "Image"
+msgstr "影像"
+
+#: app.src#GID_CHART.string.text
+msgid "Chart"
+msgstr "圖表"
+
+#: app.src#GID_EXPLORER.string.text
+msgid "Explorer"
+msgstr "檔案總管"
+
+#: app.src#GID_CONNECTOR.string.text
+msgid "Connector"
+msgstr "連接符"
+
+#: app.src#GID_MODIFY.string.text
+msgid "Modify"
+msgstr "修改"
+
+#: app.src#GID_DRAWING.string.text
+msgid "Drawing"
+msgstr "繪圖"
+
+#: app.src#GID_CONTROLS.string.text
+msgid "Controls"
+msgstr "控制單元"
+
+#: app.src#MSG_CANT_QUIT.infobox.text
+msgid ""
+"The application cannot be terminated at the moment.\n"
+"Please wait until all print jobs and/or\n"
+"OLE actions have finished and close all dialogs."
+msgstr ""
+"現在無法結束這個應用程式。\n"
+"請等候所有列印任務或OLE使用狀態已經結束﹐\n"
+"然後再關閉所有的對話方塊。"
+
+#: app.src#STR_ISMODIFIED.string.text
+msgid "Do you want to save the changes to %1?"
+msgstr "儲存變更 %1 ？"
+
+#: app.src#STR_QUITAPP.string.text
+msgid "E~xit"
+msgstr "結束(~X)"
+
+#: app.src#RID_STR_HELP.string.text
+msgid "Help"
+msgstr "說明"
+
+#: app.src#RID_STR_NOAUTOSTARTHELPAGENT.string.text
+msgid "No automatic start at 'XX'"
+msgstr "在<XX>時不自動運行。"
+
+#: app.src#RID_HELPBAR.string.text
+msgid "Help Bar"
+msgstr "說明列"
+
+#: app.src#RID_STR_HLPFILENOTEXIST.string.text
+msgid "The help file for this topic is not installed."
+msgstr "沒有安裝關於這個主題的說明檔案。"
+
+#: app.src#RID_ENVTOOLBOX.string.text
+msgid "Function Bar"
+msgstr "工具列"
+
+#: app.src#RID_SPECIALCONFIG_ERROR.string.text
+msgid ""
+"An error has occurred in the special configuration.\n"
+"Please contact your administrator."
+msgstr ""
+"在一個特殊的配置檔案內發現一個錯誤。\n"
+"請和管理員連絡﹗"
+
+#: app.src#STR_QUICKSTART_EXIT.string.text
+msgid "Exit Quickstarter"
+msgstr "結束快速啟動"
+
+#: app.src#STR_QUICKSTART_TIP.string.text
+msgid "%PRODUCTNAME %PRODUCTVERSION Quickstarter"
+msgstr "%PRODUCTNAME %PRODUCTVERSION 快速啟動"
+
+#: app.src#STR_QUICKSTART_FILEOPEN.string.text
+msgid "Open Document..."
+msgstr "開啟文件..."
+
+#: app.src#STR_QUICKSTART_FROMTEMPLATE.string.text
+msgid "From Template..."
+msgstr "從範本..."
+
+#: app.src#STR_QUICKSTART_PRELAUNCH.string.text
+msgid "Load %PRODUCTNAME During System Start-Up"
+msgstr "系統啟動時載入 %PRODUCTNAME"
+
+#: app.src#STR_QUICKSTART_PRELAUNCH_UNX.string.text
+msgid "Disable systray Quickstarter"
+msgstr "停用 systray 快速啟動"
+
+#: app.src#STR_QUICKSTART_LNKNAME.string.text
+msgid "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
+
+#: app.src#STR_QUICKSTART_FILE.string.text
+msgid "File"
+msgstr "檔案"
+
+#: app.src#STR_QUICKSTART_STARTCENTER.string.text
+msgid "Startcenter"
+msgstr "啟動中心"
+
+#: app.src#STR_QUICKSTART_RECENTDOC.string.text
+msgid "Recent Documents"
+msgstr "最近的文件"
+
+#: app.src#STR_QUERY_UPDATE_LINKS.string.text
+msgid "Update all links?"
+msgstr "更新所有連結？"
+
+#: app.src#STR_DDE_ERROR.string.text
+msgid "DDE link to % for % area % are not available."
+msgstr "不能使用 % 區 % 到 % 的 DDE 連結。"
+
+#: app.src#RID_SECURITY_WARNING_HYPERLINK.warningbox.text
+msgid "This hyperlink is going to open \"%s\". Do you want to proceed?"
+msgstr "這個超連結將會開啟 \"%s\" 。您要繼續嗎？"
+
+#: app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.warningbox.text
+msgid ""
+"For security reasons, the hyperlink cannot be executed.\n"
+"The stated address will not be opened."
+msgstr ""
+"基於安全理由，無法執行該超連結。\n"
+"將不開啟指定的位址。"
+
+#: app.src#RID_SECURITY_WARNING_TITLE.string.text
+msgid "Security Warning"
+msgstr "安全警告"
+
+#: app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.querybox.text
+msgid ""
+"Saving will remove all existing signatures.\n"
+"Do you want to continue saving the document?"
+msgstr ""
+"若儲存，將移除所有現有的簽名。\n"
+"您要繼續儲存文件嗎？"
+
+#: app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.querybox.text
+msgid ""
+"The document has to be saved before it can be signed.\n"
+"Do you want to save the document?"
+msgstr ""
+"簽名之前必須先儲存文件。\n"
+"您要儲存文件嗎？"
+
+#: app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.infobox.text
+msgid ""
+"This document must be saved in OpenDocument file format before it can be "
+"digitally signed."
+msgstr "這個文件必須先以 OpenOffice 檔案格式儲存後才能進行數位簽名。"
+
+#: app.src#RID_XMLSEC_DOCUMENTSIGNED.string.text
+msgid " (Signed)"
+msgstr "(已簽名)"
+
+#: app.src#STR_STANDARD.string.text
+msgctxt "app.src#STR_STANDARD.string.text"
+msgid "Standard"
+msgstr "標準"
+
+#: app.src#RID_SVXSTR_FILELINK.string.text
+msgid "Document"
+msgstr "文件"
+
+#: app.src#STR_NONE.string.text
+msgid "- None -"
+msgstr "- 無 -"
+
+#: app.src#RID_SVXSTR_GRAFIKLINK.string.text
+msgctxt "app.src#RID_SVXSTR_GRAFIKLINK.string.text"
+msgid "Graphic"
+msgstr "圖形"
+
+#: app.src#STR_SFX_FILTERNAME_ALL.string.text
+msgid "All files (*.*)"
+msgstr "所有檔案 (*.*)"
+
+#: app.src#RID_SVXSTR_EDITGRFLINK.string.text
+msgid "Link graphics"
+msgstr "連結圖形"
+
+#: app.src#STR_ERRUNOEVENTBINDUNG.string.text
+msgid ""
+"An appropriate component method %1\n"
+"could not be found.\n"
+"\n"
+"Check spelling of method name."
+msgstr ""
+"找不到合適的組件方法 %1\n"
+"\n"
+"請檢查方法名稱是否正確。"
+
+#: app.src#RID_SVXSTR_GRFILTER_OPENERROR.string.text
+msgid "Graphics file cannot be opened"
+msgstr "無法開啟圖形檔案"
+
+#: app.src#RID_SVXSTR_GRFILTER_IOERROR.string.text
+msgid "Graphics file cannot be read"
+msgstr "無法讀取圖形檔案"
+
+#: app.src#RID_SVXSTR_GRFILTER_FORMATERROR.string.text
+msgid "Unknown graphics format"
+msgstr "不明的圖形格式"
+
+#: app.src#RID_SVXSTR_GRFILTER_VERSIONERROR.string.text
+msgid "This version of the graphics file is not supported"
+msgstr "不支援此版本的圖形檔案"
+
+#: app.src#RID_SVXSTR_GRFILTER_FILTERERROR.string.text
+msgid "Graphics filter not found"
+msgstr "找不到圖形濾鏡"
+
+#: app.src#RID_SVXSTR_GRFILTER_TOOBIG.string.text
+msgid "Not enough memory to insert graphic"
+msgstr "沒有足夠的記憶體可插入圖形"
+
+#: dde.src#MD_DDE_LINKEDIT.FT_DDE_APP.fixedtext.text
+msgid "~Application:"
+msgstr "應用程式(~A)"
+
+#: dde.src#MD_DDE_LINKEDIT.FT_DDE_TOPIC.fixedtext.text
+msgid "~File:"
+msgstr "檔案(~F)"
+
+#: dde.src#MD_DDE_LINKEDIT.FT_DDE_ITEM.fixedtext.text
+msgid "~Category:"
+msgstr "範圍(~C)"
+
+#: dde.src#MD_DDE_LINKEDIT.GROUP_DDE_CHG.fixedline.text
+msgid "Modify link"
+msgstr "修改連結"
+
+#: dde.src#MD_DDE_LINKEDIT.modaldialog.text
+msgid "Modify Link"
+msgstr "修改連結"
+
+#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_CONTENTS.pageitem.text
+msgid "Contents"
+msgstr "內容"
+
+#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_INDEX.pageitem.text
+msgid "Index"
+msgstr "索引"
+
+#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_SEARCH.pageitem.text
+msgid "Find"
+msgstr "尋找"
+
+#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_BOOKMARKS.pageitem.text
+msgid "Bookmarks"
+msgstr "書籤"
+
+#: newhelp.src#TP_HELP_INDEX.FT_EXPRESSION.fixedtext.text
+msgid "~Search term"
+msgstr "搜尋項目(~S)"
+
+#: newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.pushbutton.text
+msgctxt "newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.pushbutton.text"
+msgid "~Display"
+msgstr "顯示(~D)"
+
+#: newhelp.src#TP_HELP_SEARCH.FT_SEARCH.fixedtext.text
+msgid "S~earch term"
+msgstr "搜尋項目(~E)"
+
+#: newhelp.src#TP_HELP_SEARCH.PB_SEARCH.pushbutton.text
+msgid "~Find"
+msgstr "尋找(~F)"
+
+#: newhelp.src#TP_HELP_SEARCH.CB_FULLWORDS.checkbox.text
+msgid "~Complete words only"
+msgstr "僅是單詞(~C)"
+
+#: newhelp.src#TP_HELP_SEARCH.CB_SCOPE.checkbox.text
+msgid "Find in ~headings only"
+msgstr "僅在大標題範圍內尋找(~H)"
+
+#: newhelp.src#TP_HELP_SEARCH.PB_OPEN_SEARCH.pushbutton.text
+msgctxt "newhelp.src#TP_HELP_SEARCH.PB_OPEN_SEARCH.pushbutton.text"
+msgid "~Display"
+msgstr "顯示(~D)"
+
+#: newhelp.src#TP_HELP_BOOKMARKS.FT_BOOKMARKS.fixedtext.text
+msgid "~Bookmarks"
+msgstr "書籤(~B)"
+
+#: newhelp.src#TP_HELP_BOOKMARKS.PB_BOOKMARKS.pushbutton.text
+msgctxt "newhelp.src#TP_HELP_BOOKMARKS.PB_BOOKMARKS.pushbutton.text"
+msgid "~Display"
+msgstr "顯示(~D)"
+
+#: newhelp.src#STR_HELP_WINDOW_TITLE.string.text
+msgid "%PRODUCTNAME Help"
+msgstr "%PRODUCTNAME 說明"
+
+#: newhelp.src#STR_HELP_BUTTON_INDEX_ON.string.text
+msgid "Show Navigation Pane"
+msgstr "顯示瀏覽區域"
+
+#: newhelp.src#STR_HELP_BUTTON_INDEX_OFF.string.text
+msgid "Hide Navigation Pane"
+msgstr "隱入瀏覽區域"
+
+#: newhelp.src#STR_HELP_BUTTON_START.string.text
+msgid "First Page"
+msgstr "首頁"
+
+#: newhelp.src#STR_HELP_BUTTON_PREV.string.text
+msgid "Previous Page"
+msgstr "上一頁"
+
+#: newhelp.src#STR_HELP_BUTTON_NEXT.string.text
+msgid "Next Page"
+msgstr "下一頁"
+
+#: newhelp.src#STR_HELP_BUTTON_PRINT.string.text
+msgid "Print..."
+msgstr "列印..."
+
+#: newhelp.src#STR_HELP_BUTTON_ADDBOOKMARK.string.text
+msgid "Add to Bookmarks..."
+msgstr "加入書籤..."
+
+#: newhelp.src#STR_HELP_BUTTON_SEARCHDIALOG.string.text
+msgid "Find on this Page..."
+msgstr "在本頁尋找..."
+
+#: newhelp.src#STR_HELP_BUTTON_SOURCEVIEW.string.text
+msgid "HTML Source"
+msgstr "HTML 原始檔"
+
+#: newhelp.src#STR_HELP_FIRST_MESSAGE.string.text
+msgid "The Help is being started..."
+msgstr "正在啟動說明功能..."
+
+#: newhelp.src#STR_HELP_MENU_TEXT_SELECTION_MODE.string.text
+msgid "Select Text"
+msgstr "選取文字"
+
+#: newhelp.src#STR_HELP_MENU_TEXT_COPY.string.text
+msgid "~Copy"
+msgstr "複製(~C)"
+
+#: newhelp.src#DLG_HELP_ADDBOOKMARK.FT_BOOKMARK_TITLE.fixedtext.text
+msgid "Bookmark:"
+msgstr "書籤："
+
+#: newhelp.src#DLG_HELP_ADDBOOKMARK.STR_BOOKMARK_RENAME.string.text
+msgid "Rename Bookmark"
+msgstr "重新命名書籤"
+
+#: newhelp.src#DLG_HELP_ADDBOOKMARK.modaldialog.text
+msgid "Add to Bookmarks"
+msgstr "加入書籤"
+
+#: newhelp.src#MENU_HELP_BOOKMARKS.MID_OPEN.menuitem.text
+msgid "Display"
+msgstr "顯示"
+
+#: newhelp.src#MENU_HELP_BOOKMARKS.MID_RENAME.menuitem.text
+msgid "Rename..."
+msgstr "重新命名..."
+
+#: newhelp.src#MENU_HELP_BOOKMARKS.MID_DELETE.menuitem.text
+msgid "Delete"
+msgstr "刪除"
+
+#: newhelp.src#RID_INFO_NOSEARCHRESULTS.infobox.text
+msgid "No topics found."
+msgstr "沒有找到主題。"
+
+#: newhelp.src#RID_INFO_NOSEARCHTEXTFOUND.infobox.text
+msgid "The text you entered was not found."
+msgstr "找不到您輸入的文字。"
+
+#: newhelp.src#RID_HELP_ONSTARTUP_TEXT.string.text
+msgid "~Display %PRODUCTNAME %MODULENAME Help at Startup"
+msgstr "啟動時顯示 %PRODUCTNAME %MODULENAME 說明(~D)"
+
+#: sfx.src#STR_ACCTITLE_PRODUCTIVITYTOOLS.string.text
+msgid "%PRODUCTNAME"
+msgstr "%PRODUCTNAME"
+
+#~ msgid "Applied Styles"
+#~ msgstr "使用的樣式"
+
+#~ msgid "Custom Styles"
+#~ msgstr "自訂樣式"
+
+#~ msgid "All Styles"
+#~ msgstr "全部樣式"
+
+#~ msgid "Cannot open document."
+#~ msgstr "無法載入這個文件。"
+
+#~ msgid "Error reading configuration file."
+#~ msgstr "在讀取配置檔案時發生錯誤。"
+
+#~ msgid "Error writing configuration file."
+#~ msgstr "在寫入配置檔案時發出錯誤。"
+
+#~ msgid "Error opening configuration file."
+#~ msgstr "在開啟配置檔時發生錯誤。"
+
+#~ msgid "File is not a configuration file."
+#~ msgstr "檔案不是配置檔案。"
+
+#~ msgid "Configuration file contains the wrong version."
+#~ msgstr "配置檔案版本錯誤。"
+
+#~ msgid ""
+#~ "Error recording BASIC library in\n"
+#~ "'@'."
+#~ msgstr ""
+#~ "BASIC 庫在寫入\n"
+#~ "'@' 時發生錯誤。"
+
+#~ msgid ""
+#~ "An unexpected program error has occurred.\n"
+#~ "\n"
+#~ "Do you want to try to save your changes in all open documents before the "
+#~ "program is terminated?"
+#~ msgstr ""
+#~ "發生了一個意外的程式錯誤！\n"
+#~ "您現在可以嘗試保存所有被開啟的檔案！\n"
+#~ "您要在關閉這個應用程式之前儲存所有的檔案？"
+
+#~ msgid ""
+#~ "A form is to be sent by e-mail.\n"
+#~ "This means that the receiver will get to see your e-mail address."
+#~ msgstr ""
+#~ "應該透過電子郵件寄發表單。\n"
+#~ "這樣您的電子郵件地址也就傳遞給了收件者。"
+
+#~ msgid "File Recovery"
+#~ msgstr "回復檔案"
+
+#~ msgid "Should the file \"$1\" be restored?"
+#~ msgstr "要還原檔案 $1?"
+
+#~ msgid "General"
+#~ msgstr "一般"
+
+#~ msgid "Save"
+#~ msgstr "儲存"
+
+#~ msgid "Paths"
+#~ msgstr "路徑"
+
+#~ msgid "Spellcheck"
+#~ msgstr "拼字檢查"
+
+#~ msgid ""
+#~ "This application is as object or print server active.\n"
+#~ "Do you want to terminate anyway?"
+#~ msgstr ""
+#~ "這個應用程式作為物件或列印伺服器還處於使用狀態。\n"
+#~ "您還是要關閉它？"
+
+#~ msgid "%PRODUCTNAME cannot be started more than once."
+#~ msgstr "無法同時多次啟動 %PRODUCTNAME。"
+
+#~ msgid ""
+#~ "Some %PRODUCTNAME functions will not work properly without a printer driver.\n"
+#~ "Please install a printer driver."
+#~ msgstr ""
+#~ "沒有安裝列印驅動程式﹐一些%PRODUCTNAME功能運轉不會正常。\n"
+#~ "請您安裝一個列印驅動程式。"
+
+#~ msgid "AutoSave"
+#~ msgstr "自動儲存"
+
+#~ msgid ""
+#~ "Limited system resources. Please quit other applications or close some "
+#~ "windows before continuing."
+#~ msgstr "系統資源不足。請關閉其它的程式或者關閉一些視窗﹐然後重新嘗試執行指令。"
+
+#~ msgid "There are files missing. Please check application setup."
+#~ msgstr "沒有找到必要的程式元件。請檢查您的安裝。"
+
+#~ msgid ""
+#~ "Another error occurred during the save recovery.\n"
+#~ "Possibly, the data could not be entirely saved."
+#~ msgstr ""
+#~ "還原資料備份時發生了一個錯誤。\n"
+#~ "資料儲存很有可能不完整。"
+
+#~ msgid "System resources exhausted. Please restart the application."
+#~ msgstr "系統資源已經用完。請您重新啟動應用程式。"
+
+#~ msgid "Error initializing object-system."
+#~ msgstr "在初始化物件系統時發生錯誤。"
+
+#~ msgid "The file $(FILE) doesn't exist."
+#~ msgstr "檔案$(FILE)不存在。"
+
+#~ msgid "The path to file $(FILE) doesn't exist."
+#~ msgstr "指向檔案 $(FILE) 的路徑不存在。"
+
+#~ msgid ""
+#~ "The file $(FILE) could not be opened,\n"
+#~ "because too many files are open.\n"
+#~ "Please close some files and try again."
+#~ msgstr ""
+#~ "無法開啟檔案$(FILE) ﹐\n"
+#~ "因為已經開啟太多的檔案。\n"
+#~ "請關閉一些檔案﹐然後在重新嘗試。"
+
+#~ msgid "The file $(FILE) could not be opened due to missing access rights."
+#~ msgstr "因為沒有讀取權利而無法讀取檔案$(FILE)。"
+
+#~ msgid "The file $(FILE) could not be accessed."
+#~ msgstr "無法讀取檔案 $(FILE) 。"
+
+#~ msgid "The file $(FILE) could not be opened due to an invalid file handle."
+#~ msgstr "因無效的檔案標識值而無法開啟檔案$(FILE) 。"
+
+#~ msgid "The file $(FILE) could not be created."
+#~ msgstr "無法開啟新檔$(FILE)。"
+
+#~ msgid "Error by shared access to $(FILE)."
+#~ msgstr "在同時讀取檔案$(FILE) 時發生錯誤。"
+
+#~ msgid "General I/O error accessing $(FILE)."
+#~ msgstr "在讀取$(FILE)時發生一個一般的輸入/輸出錯誤。"
+
+#~ msgid "The selected template has an incorrect format"
+#~ msgstr "範本格式錯誤。"
+
+#~ msgid "Can't open file $."
+#~ msgstr "無法開啟檔案 $ 。"
+
+#~ msgid "E~xit & return to "
+#~ msgstr "結束和返回(~X)"
+
+#~ msgid "Select a command or click to select a theme."
+#~ msgstr "請您選擇或者按一個指令﹐選擇一個主題。"
+
+#~ msgid "Mail"
+#~ msgstr "電子郵件"
+
+#~ msgid "Addresses"
+#~ msgstr "地址"
+
+#~ msgid "Don't display tips"
+#~ msgstr "不要再顯示提示"
+
+#~ msgid "The help system could not be started"
+#~ msgstr "無法啟動說明應用程式。"
+
+#~ msgid "Enable plug-ins"
+#~ msgstr "啟動外掛程式"
+
+#~ msgid ""
+#~ "Important program components could not be initialized correctly.\n"
+#~ "Please start the setup program with the option /Repair."
+#~ msgstr ""
+#~ "無法正確初始化重要的程式元件。\n"
+#~ "請啟動安裝程式，執行修複選項。"
+
+#~ msgid "Reference will not be saved: "
+#~ msgstr "不儲存參照： "
+
+#~ msgid "Configuration"
+#~ msgstr "配置"
+
+#~ msgid "My Documents"
+#~ msgstr "我的文件"
+
+#~ msgid "Graphics"
+#~ msgstr "圖形"
+
+#~ msgid "Icons"
+#~ msgstr "圖示"
+
+#~ msgid "Palettes"
+#~ msgstr "調色板"
+
+#~ msgid "Backups"
+#~ msgstr "安全備份"
+
+#~ msgid "Modules"
+#~ msgstr "模塊"
+
+#~ msgid "AutoText"
+#~ msgstr "自動圖文集"
+
+#~ msgid "Dictionaries"
+#~ msgstr "字典"
+
+#~ msgid "Gallery"
+#~ msgstr "畫廊"
+
+#~ msgid "Message Storage"
+#~ msgstr "電子郵件/新聞儲存體"
+
+#~ msgid "Temporary files"
+#~ msgstr "暫存檔案"
+
+#~ msgid "Plug-ins"
+#~ msgstr "外掛程式目錄"
+
+#~ msgid "Folder Bookmarks"
+#~ msgstr "資料夾書籤"
+
+#~ msgid "Filters"
+#~ msgstr "篩選"
+
+#~ msgid "Add-ins"
+#~ msgstr "AddIns"
+
+#~ msgid "User Configuration"
+#~ msgstr "使用者配置"
+
+#~ msgid "User-defined dictionaries"
+#~ msgstr "使用者自行定義的字典"
+
+#~ msgid "AutoCorrect"
+#~ msgstr "自動校正"
+
+#~ msgid "Writing aids"
+#~ msgstr "撰寫輔助"
+
+#~ msgid "The URL is not valid."
+#~ msgstr "URL 無效。"
+"X-Accelerator-Marker: ~\n"
+
+#: doc.src#MSG_CONFIRM_FILTER.querybox.text
+msgid ""
+"Saving in external formats may have caused\n"
+" information loss. Do you still want to close?"
+msgstr ""
+"在文件儲存成一個外來的格式時\n"
+"未能訊息可能會流失。\n"
+"還是要關閉這個文件？"
+
+#: doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.querybox.text
+msgid ""
+"Name already in use.\n"
+"Do you want to overwrite document template?"
+msgstr ""
+"已存在相同名稱。\n"
+"您要覆寫它？"
+
+#: doc.src#STR_DELETE_REGION.string.text
+msgid "Are you sure you want to delete the region \"$1\"?"
+msgstr "要刪除這個區域 $1？"
+
+#: doc.src#STR_DELETE_TEMPLATE.string.text
+msgid "Are you sure you want to delete the entry \"$1\"?"
+msgstr "要刪除這個項目 $1？"
+
+#: doc.src#MSG_REGION_NOTEMPTY.querybox.text
+msgid ""
+"The category is not empty.\n"
+"Delete anyway?"
+msgstr ""
+"這個區域含有資料。\n"
+"還是要刪除它？"
+
+#: doc.src#STR_QUERY_SAVE_DOCUMENT.string.text
+msgid ""
+"The document \"$(DOC)\" has been modified.\n"
+"Do you want to save your changes?"
+msgstr ""
+"這個文件 $(DOC) 已經修改。\n"
+"要儲存這些變更？"
+
+#: doc.src#STR_STYLES.string.text
+msgid "Styles"
+msgstr "樣式"
+
+#: doc.src#STR_MACROS.string.text
+msgid "Macros"
+msgstr "巨集"
+
+#: doc.src#STR_CONFIG.string.text
+msgid "Configuration"
+msgstr "配置"
+
+#: doc.src#STR_PRINT_STYLES_HEADER.string.text
+msgid "Styles in "
+msgstr "格式樣式在 "
+
+#: doc.src#STR_PRINT_STYLES.string.text
+msgid "Printing Styles"
+msgstr "列印格式樣式"
+
+#: doc.src#MSG_PRINT_ERROR.errorbox.text
+msgid "The print job could not be started."
+msgstr "無法執行列印操作。"
+
+#: doc.src#STR_BACKUP_COPY.string.text
+msgid "Copy"
+msgstr "複製"
+
+#: doc.src#MSG_CANT_OPEN_TEMPLATE.infobox.text
+msgid "The template could not be opened."
+msgstr "無法開啟範本　"
+
+#: doc.src#MSG_VIEW_OPEN_CANT_SAVE.infobox.text
+msgid "Document already open for editing."
+msgstr "這個檔案已經開啟編輯。"
+
+#: doc.src#STR_ERROR_SAVE.string.text
+msgid "Error recording document "
+msgstr "在寫入文件時發生一個錯誤 "
+
+#: doc.src#STR_TEMPLATE_FILTER.string.text
+msgctxt "doc.src#STR_TEMPLATE_FILTER.string.text"
+msgid "Templates"
+msgstr "範本"
+
+#: doc.src#STR_ERROR_COPY_TEMPLATE.string.text
+msgid ""
+"Error copying template \"$1\". \n"
+"A template with this name may already exist."
+msgstr ""
+"在複製範本「$1」時發生一個錯誤。\n"
+"可能已存在相同名稱的範本。"
+
+#: doc.src#STR_ERROR_DELETE_TEMPLATE.string.text
+msgid "The template \"$1\" can not be deleted."
+msgstr "無法刪除這個範本 $1。"
+
+#: doc.src#STR_ERROR_MOVE_TEMPLATE.string.text
+msgid "Error moving template \"$1\"."
+msgstr "在移動範本 $1 時發生錯誤。"
+
+#: doc.src#MSG_ERROR_RESCAN.errorbox.text
+msgid "The update could not be saved."
+msgstr "無法儲存更新。"
+
+#: doc.src#STR_ERROR_SAVE_TEMPLATE.string.text
+msgid "Error saving template "
+msgstr "在寫入範本時發生一個錯誤 "
+
+#: doc.src#MSG_ERROR_RENAME_TEMPLATE.errorbox.text
+msgid "Error renaming template."
+msgstr "重新命名範本時發生錯誤。"
+
+#: doc.src#MSG_ERROR_RENAME_TEMPLATE_REGION.errorbox.text
+msgid "Error renaming template category."
+msgstr "重新命名區域時發生錯誤。"
+
+#: doc.src#MSG_ERROR_EMPTY_NAME.errorbox.text
+msgid "Please specify a name."
+msgstr "您必須輸入一個名稱。"
+
+#: doc.src#MSG_ERROR_UNIQ_NAME.errorbox.text
+msgid ""
+"Please specify a unique name.\n"
+"Entries must not be case specific."
+msgstr ""
+"您必須輸入一個唯一的名稱。\n"
+"您不必區別字母大小寫。"
+
+#: doc.src#STR_QUERY_DEFAULT_TEMPLATE.string.text
+msgid "Should the template \"$(TEXT)\" become the default template?"
+msgstr "要將這個範本$(TEXT)設定成預設範本？"
+
+#: doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.querybox.text
+msgid "Do you want to reset the default template?"
+msgstr "您要重設預設範本檔案？"
+
+#: doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.infobox.text
+msgid ""
+"Template directory\n"
+"$(DIR)\n"
+"does not exist."
+msgstr ""
+"這個範本目錄\n"
+"$(DIR)\n"
+"不存在。"
+
+#: doc.src#MSG_DOCINFO_CANTREAD.infobox.text
+msgid "Document info cannot be read."
+msgstr "無法讀取文件資訊。"
+
+#: doc.src#STR_ERROR_NOSTORAGE.string.text
+msgid "The selected file has an incorrect format."
+msgstr "選中的檔案格式無效。"
+
+#: doc.src#STR_QUERY_MUSTOWNFORMAT.string.text
+msgid ""
+"Documents cannot be saved in $(FORMAT) format. Do you\n"
+"want to save your changes using the $(OWNFORMAT) format?"
+msgstr ""
+"無法用 $(FORMAT) 格式儲存文件。\n"
+"您要使用 $(OWNFORMAT) 格式儲存？"
+
+#: doc.src#STR_SAVEDOC.string.text
+msgid "~Save"
+msgstr "儲存(~S)"
+
+#: doc.src#STR_UPDATEDOC.string.text
+msgid "~Update"
+msgstr "更新(~U)"
+
+#: doc.src#STR_SAVEASDOC.string.text
+msgid "Save ~As..."
+msgstr "另存新檔(~A)..."
+
+#: doc.src#STR_SAVECOPYDOC.string.text
+msgid "Save Copy ~as..."
+msgstr "複製件另存新檔(~A)..."
+
+#: doc.src#STR_CLOSEDOC.string.text
+msgid "~Close"
+msgstr "關閉(~C)"
+
+#: doc.src#STR_CLOSEDOC_ANDRETURN.string.text
+msgid "~Close & Return to "
+msgstr "關閉和返回(~C)"
+
+#: doc.src#STR_WIZARD.string.text
+msgid " AutoPilot"
+msgstr "嚮導"
+
+#: doc.src#RID_STR_FILTCONFIG.string.text
+msgid "Configurations"
+msgstr "配置"
+
+#: doc.src#RID_STR_FILTBASIC.string.text
+msgid "%PRODUCTNAME Basic libraries"
+msgstr "%PRODUCTNAME Basic 程式庫"
+
+#: doc.src#RID_STR_WARNSTYLEOVERWRITE.string.text
+msgid "Should the \"$(ARG1)\" Style be replaced?"
+msgstr "要取代樣式「$(ARG1)」？"
+
+#: doc.src#STR_DOC_LOADING.string.text
+msgid "Loading Document"
+msgstr "正在載入文件"
+
+#: doc.src#RID_DLSTATUS.INET_NAME_RESOLVE_START.string.text
+msgid "Connection to: $(HOST). Waiting for response..."
+msgstr "連線到$(HOST)。正在等候答復..."
+
+#: doc.src#RID_DLSTATUS.INET_CONNECT_START.string.text
+msgid "Opening $(TARGET) at $(HOST)"
+msgstr "開啟：$(HOST)上的$(TARGET)"
+
+#: doc.src#RID_DLSTATUS.INET_READ_STATUS.string.text
+msgid "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
+msgstr "傳遞：$(HOST)的$(TARGET)。已經閱讀： $(BYTE)"
+
+#: doc.src#RID_DLSTATUS.INET_CONNECTION_CLOSED.string.text
+msgid "Disconnected"
+msgstr "已經結束連線"
+
+#: doc.src#MSG_OPEN_READONLY.querybox.text
+msgid ""
+"Document cannot be opened for editing.\n"
+"Do you want to open it as read-only?"
+msgstr ""
+"您不能編輯這個檔案。\n"
+"要開啟閱讀它？"
+
+#: doc.src#STR_EDIT.string.text
+msgid "Edit"
+msgstr "編輯"
+
+#: doc.src#RID_OFFICEFILTER.string.text
+msgid "%PRODUCTNAME Documents"
+msgstr "%PRODUCTNAME 文件"
+
+#: doc.src#STR_FRAMEOBJECT_PROPERTIES.string.text
+msgid "Propert~ies..."
+msgstr "屬性(~I)..."
+
+#: doc.src#STR_FSET_FILTERNAME0.string.text
+msgid "HTML (FrameSet)"
+msgstr "HTML (訊框架)"
+
+#: doc.src#STR_FSET_FILTERNAME1.string.text
+msgid "%PRODUCTNAME Frame Document"
+msgstr "%PRODUCTNAME 訊框文件"
+
+#: doc.src#STR_TEMPL_MOVED.string.text
+msgid ""
+"The template \"$(TEMPLATE)\" was not found at the original location. A "
+"template with the same name exists at \"$(FOUND)\". Should this template be "
+"used in the future when comparing?"
+msgstr "沒有在原來的位置找到這個範本 $(TEMPLATE)。有一個同名的範本在 $(FOUND) 。今後您要比較這個範本？"
+
+#: doc.src#STR_TEMPL_RESET.string.text
+msgid ""
+"The template \"$(TEMPLATE)\" has not been found. Should the template be looked "
+"for the next time the document is opened ?"
+msgstr "沒有找到這個範本 $(TEMPLATE)。今後還要繼續搜尋它？"
+
+#: doc.src#STR_AUTOMATICVERSION.string.text
+msgid "Automatically saved version"
+msgstr "自動儲存的版本"
+
+#: doc.src#STR_DOCTYPENAME_SW.string.text
+msgid "Text Document"
+msgstr "文字文件"
+
+#: doc.src#STR_DOCTYPENAME_SWWEB.string.text
+msgid "HTML Document"
+msgstr "HTML 文件"
+
+#: doc.src#STR_DOCTYPENAME_SWGLOB.string.text
+msgid "Master Document"
+msgstr "主控文件"
+
+#: doc.src#STR_DOCTYPENAME_SC.string.text
+msgid "Spreadsheet"
+msgstr "試算表"
+
+#: doc.src#STR_DOCTYPENAME_SI.string.text
+msgid "Presentation"
+msgstr "簡報文件"
+
+#: doc.src#STR_DOCTYPENAME_SD.string.text
+msgid "Drawing"
+msgstr "繪圖文件"
+
+#: doc.src#STR_DOCTYPENAME_MESSAGE.string.text
+msgid "Message"
+msgstr "電子郵件"
+
+#: doc.src#STR_NOSAVEANDCLOSE.string.text
+msgid "~Discard"
+msgstr "捨棄(~D)"
+
+#: doc.src#STR_PACKNGO_NOACCESS.string.text
+msgid "Access to the current data medium not possible."
+msgstr "無法存取目前的資料載體。"
+
+#: doc.src#STR_PACKNGO_NEWMEDIUM.string.text
+msgid "Insert the next data carrier and click OK."
+msgstr "請您放入下一個磁片，然后按一下 [確定]。"
+
+#: doc.src#STR_OBJECT.string.text
+msgid "Object"
+msgstr "物件"
+
+#: doc.src#DLG_MACROQUERY.querybox.text
+msgid "This document contains macros. $(TEXT)"
+msgstr "這個文件含有巨集。$(TEXT)"
+
+#: doc.src#DLG_MACROQUERY.querybox.title
+msgid "Run Macro"
+msgstr "執行巨集"
+
+#: doc.src#BTN_OK.string.text
+msgid "Run"
+msgstr "執行"
+
+#: doc.src#BTN_CANCEL.string.text
+msgid "Do Not Run"
+msgstr "不要執行"
+
+#: doc.src#FT_CANCEL.string.text
+msgid ""
+"According to the security settings, the macros in this document should not "
+"be run. Do you want to run them anyway?"
+msgstr "根據現有的安全設定，不應該執行這個文件的巨集。您還是執行這個巨集？"
+
+#: doc.src#FT_OK.string.text
+msgid "Do you want to allow these macros to be run?"
+msgstr "要允許執行這個巨集？"
+
+#: doc.src#STR_EXPORTASPDF_TITLE.string.text
+msgid "Export as PDF"
+msgstr "匯出成 PDF"
+
+#: doc.src#STR_EXPORTWITHCFGBUTTON.string.text
+msgid "Export..."
+msgstr "匯出..."
+
+#: doc.src#STR_EXPORTBUTTON.string.text
+msgid "Export"
+msgstr "匯出"
+
+#: doc.src#RID_SVXSTR_SECURITY_ADDPATH.string.text
+msgid "Add this directory to the list of secure paths: "
+msgstr "將這個目錄加入安全路徑的清單："
+
+#: doc.src#STR_LABEL_FILEFORMAT.string.text
+msgid "File format:"
+msgstr "檔案格式："
+
+#: doc.src#STR_HIDDENINFO_CONTAINS.string.text
+msgid ""
+"This document contains:\n"
+"\n"
+msgstr ""
+"此文件包含：\n"
+"\n"
+
+#: doc.src#STR_HIDDENINFO_RECORDCHANGES.string.text
+msgid "Recorded changes"
+msgstr "已記錄的變更"
+
+#: doc.src#STR_HIDDENINFO_NOTES.string.text
+msgid "Notes"
+msgstr "備註"
+
+#: doc.src#STR_HIDDENINFO_DOCVERSIONS.string.text
+msgid "Document versions"
+msgstr "文件版本"
+
+#: doc.src#STR_HIDDENINFO_FIELDS.string.text
+msgid "Fields"
+msgstr "欄位"
+
+#: doc.src#STR_HIDDENINFO_LINKDATA.string.text
+msgid "Linked data..."
+msgstr "連結的資料..."
+
+#: doc.src#STR_HIDDENINFO_CONTINUE_SAVING.string.text
+msgid "Do you want to continue saving the document?"
+msgstr "您要繼續儲存該文件嗎？"
+
+#: doc.src#STR_HIDDENINFO_CONTINUE_PRINTING.string.text
+msgid "Do you want to continue printing the document?"
+msgstr "您要繼續列印該文件嗎？"
+
+#: doc.src#STR_HIDDENINFO_CONTINUE_SIGNING.string.text
+msgid "Do you want to continue signing the document?"
+msgstr "您要繼續於該文件簽名嗎？"
+
+#: doc.src#STR_HIDDENINFO_CONTINUE_CREATEPDF.string.text
+msgid "Do you want to continue creating a PDF file?"
+msgstr "您要繼續建立 PDF 檔案嗎？"
+
+#: doc.src#STR_NEW_FILENAME_SAVE.string.text
+msgid ""
+"If you do not want to overwrite the original document, you should save your "
+"work under a new filename."
+msgstr "如果不希望覆寫原始文件，則應該使用新檔案名稱來儲存工作。"
+
+#: doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.string.text
+msgid "Some template files are protected and can not be deleted."
+msgstr "某些範本檔案受到保護，無法刪除。"
+
+#: doc.src#STR_DOCINFO_INFOFIELD.string.text
+msgid "Info %1"
+msgstr "資訊 %1"
+
+#: doc.src#STR_SHARED.string.text
+msgid " (shared)"
+msgstr " (已共用)"
+
+#: doc.src#STR_XMLSEC_ODF12_EXPECTED.string.text
+msgid ""
+"The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-"
+"Options-Load/Save-General. Signing documents requires ODF 1.2 "
+"(OpenOffice.org 3.x)."
+msgstr ""
+"文件格式版本在 [工具] - [選項] - [載入/儲存] - [一般] 中設定為 ODF 1.1 (OpenOffice.org "
+"2.x)。簽署文件需要 ODF 1.2 (OpenOffice.org 3.x)。"
+
+#: doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.querybox.text
+msgid ""
+"The document has to be saved before it can be signed. Saving the document "
+"removes all present signatures.\n"
+"Do you want to save the document?"
+msgstr ""
+"文件必須加以儲存，才可簽署。儲存文件會移除所有現有的簽名。\n"
+"是否要儲存文件？"
+
+#: doc.src#STR_QRYTEMPL_MESSAGE.string.text
+msgid ""
+"The template '$(ARG1)' on which this document is based, has been modified. "
+"Do you want to update style based formattings according to the modified "
+"template?"
+msgstr "本文件是以範本 '$(ARG1)'為基礎建立，而該範本已被修改。您要根據修改後的範本更新樣式的格式嗎?"
+
+#: doc.src#STR_QRYTEMPL_UPDATE_BTN.string.text
+msgid "~Update Styles"
+msgstr "更新樣式(~U)"
+
+#: doc.src#STR_QRYTEMPL_KEEP_BTN.string.text
+msgid "~Keep Old Styles"
+msgstr "保留舊樣式(~K)"
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.FL_EDIT.fixedline.text
+msgid "New template"
+msgstr "開啟新範本"
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.fixedline.text
+msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.fixedline.text"
+msgid "Templates"
+msgstr "範本"
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.fixedtext.text
+msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.fixedtext.text"
+msgid "~Categories"
+msgstr "分類(~C)"
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.FT_STYLESHEETS.fixedtext.text
+msgid "~Templates"
+msgstr "範本(~T)"
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.pushbutton.text
+msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.pushbutton.text"
+msgid "~Edit"
+msgstr "編輯(~E)"
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.BT_ORGANIZE.pushbutton.text
+msgid "~Organizer..."
+msgstr "組織器(~O)..."
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.modaldialog.text
+msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.modaldialog.text"
+msgid "Templates"
+msgstr "範本"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.1.itemlist.text
+msgid "My Templates"
+msgstr "我的範本"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.2.itemlist.text
+msgid "Business Correspondence"
+msgstr "商務信函"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.3.itemlist.text
+msgid "Other Business Documents"
+msgstr "其他商務文件"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.4.itemlist.text
+msgid "Personal Correspondence and Documents"
+msgstr "個人信函與文件"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.5.itemlist.text
+msgid "Forms and Contracts"
+msgstr "表單和合同"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.6.itemlist.text
+msgid "Finances"
+msgstr "財務"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.7.itemlist.text
+msgid "Education"
+msgstr "教育"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.8.itemlist.text
+msgid "Presentation Backgrounds"
+msgstr "簡報背景"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.9.itemlist.text
+msgid "Presentations"
+msgstr "簡報"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.10.itemlist.text
+msgid "Miscellaneous"
+msgstr "其它"
+
+#: doctempl.src#RID_CNT_STR_WAITING.string.text
+msgid "The templates are being initialized for first-time usage."
+msgstr "現在首次初始化需要使用的範本檔案。"
+
+#: docvor.src#DLG_ORGANIZE.BTN_OK.okbutton.text
+msgid "Close"
+msgstr "關閉"
+
+#: docvor.src#DLG_ORGANIZE.BTN_FILES.pushbutton.text
+msgid "~File..."
+msgstr "檔案(~F)..."
+
+#: docvor.src#DLG_ORGANIZE.BTN_ADDRESSTEMPLATE.pushbutton.text
+msgid "~Address Book..."
+msgstr "通訊錄(~A)..."
+
+#: docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.1.stringlist.text
+msgctxt "docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.1.stringlist.text"
+msgid "Templates"
+msgstr "範本"
+
+#: docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.2.stringlist.text
+msgctxt "docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.2.stringlist.text"
+msgid "Documents"
+msgstr "文件"
+
+#: docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.1.stringlist.text
+msgctxt "docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.1.stringlist.text"
+msgid "Templates"
+msgstr "範本"
+
+#: docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.2.stringlist.text
+msgctxt "docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.2.stringlist.text"
+msgid "Documents"
+msgstr "文件"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_NEW.menuitem.text
+msgid "~New"
+msgstr "開啟新檔(~N)"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DELETE.menuitem.text
+msgid "~Delete"
+msgstr "刪除(~D)"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.menuitem.text
+msgctxt "docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.menuitem.text"
+msgid "~Edit"
+msgstr "編輯(~E)"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_FROM.menuitem.text
+msgid "Import Template..."
+msgstr "匯入範本..."
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_TO.menuitem.text
+msgid "Export Template..."
+msgstr "匯出範本..."
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINT.menuitem.text
+msgid "~Print"
+msgstr "列印(~P)"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINTER_SETUP.menuitem.text
+msgid "Printer Settings..."
+msgstr "設定印表機..."
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESCAN.menuitem.text
+msgid "Update"
+msgstr "更新"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DEFAULT_TEMPLATE.menuitem.text
+msgid "Set As Default Template"
+msgstr "設定成預設範本"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESET_DEFAULT_TEMPLATE.menuitem.text
+msgid "Reset Default Template"
+msgstr "重設預設範本"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.menubutton.text
+msgid "Commands"
+msgstr "指令"
+
+#: docvor.src#DLG_ORGANIZE.modaldialog.text
+msgid "Template Management"
+msgstr "範本管理"
+
+#: new.src#DLG_NEW_FILE.FT_REGION.fixedtext.text
+msgctxt "new.src#DLG_NEW_FILE.FT_REGION.fixedtext.text"
+msgid "~Categories"
+msgstr "分類(~C)"
+
+#: new.src#DLG_NEW_FILE.FT_TEMPLATE.fixedtext.text
+msgid "T~emplates"
+msgstr "範本(~E)"
+
+#: new.src#DLG_NEW_FILE.BT_MORE.morebutton.text
+msgid "~More"
+msgstr "附加(~M)"
+
+#: new.src#DLG_NEW_FILE.BTN_PREVIEW.checkbox.text
+msgid "Pre~view"
+msgstr "檢視(~V)"
+
+#: new.src#DLG_NEW_FILE.GB_DOCINFO.fixedline.text
+msgid "Description"
+msgstr "描述"
+
+#: new.src#DLG_NEW_FILE.CB_TEXT_STYLE.checkbox.text
+msgid "Te~xt"
+msgstr "文字(~X)"
+
+#: new.src#DLG_NEW_FILE.CB_FRAME_STYLE.checkbox.text
+msgid "~Frame"
+msgstr "框架(~F)"
+
+#: new.src#DLG_NEW_FILE.CB_PAGE_STYLE.checkbox.text
+msgid "~Pages"
+msgstr "頁(~P)"
+
+#: new.src#DLG_NEW_FILE.CB_NUM_STYLE.checkbox.text
+msgid "N~umbering"
+msgstr "編號(~U)"
+
+#: new.src#DLG_NEW_FILE.CB_MERGE_STYLE.checkbox.text
+msgid "~Overwrite"
+msgstr "覆寫(~O)"
+
+#: new.src#DLG_NEW_FILE.PB_LOAD_FILE.pushbutton.text
+msgid "From File..."
+msgstr "從檔案..."
+
+#: new.src#DLG_NEW_FILE.STR_LOAD_TEMPLATE.string.text
+msgid "Load Styles"
+msgstr "載入樣式"
+
+#: new.src#DLG_NEW_FILE.FT_TITLE.fixedtext.text
+msgid "~Title"
+msgstr "標題(~T)"
+
+#: new.src#DLG_NEW_FILE.FT_THEMA.fixedtext.text
+msgid "Subject"
+msgstr "主題"
+
+#: new.src#DLG_NEW_FILE.FT_KEYWORDS.fixedtext.text
+msgid "~Key words"
+msgstr "關鍵字(~K)"
+
+#: new.src#DLG_NEW_FILE.FT_DESC.fixedtext.text
+msgid "~Description"
+msgstr "描述(~D)"
+
+#: new.src#DLG_NEW_FILE.modaldialog.text
+msgid "New"
+msgstr "開啟新檔"
+"X-Accelerator-Marker: ~\n"
+
+#: alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.fixedtext.text
+msgid ""
+"This document may contain formatting or content that cannot be saved in the "
+"%FORMATNAME file format. Do you want to save the document in this format "
+"anyway?\n"
+"\n"
+"Use the latest ODF file format and be sure all formatting and content is "
+"saved correctly."
+msgstr ""
+"此文件可能包含無法以 %FORMATNAME 檔案格式儲存的格式或內容。您還是要以此格式儲存文件嗎？\n"
+"\n"
+"使用最新的 ODF 檔案格式，如此可確保會正確儲存所有格式和內容。"
+
+#: alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.okbutton.text
+msgid "~Keep Current Format"
+msgstr "保留目前格式(~K)"
+
+#: alienwarn.src#RID_DLG_ALIEN_WARNING.PB_YES.cancelbutton.text
+msgid "~Save in ODF Format"
+msgstr "以 ODF 格式儲存(~S)"
+
+#: alienwarn.src#RID_DLG_ALIEN_WARNING.PB_MOREINFO.helpbutton.text
+msgid "~More Information..."
+msgstr "更多資訊(~M)..."
+
+#: alienwarn.src#RID_DLG_ALIEN_WARNING.CB_WARNING_OFF.checkbox.text
+msgid "~Ask when not saving in ODF format"
+msgstr "不以 ODF 格式儲存時詢問(~A)"
+
+#: dialog.src#STR_RESET.string.text
+msgid "~Reset"
+msgstr "返回(~R)"
+
+#: dialog.src#STR_APPLY.string.text
+msgid "Apply"
+msgstr "套用"
+
+#: dialog.src#STR_TABPAGE_MANAGESTYLES.string.text
+msgid "Organizer"
+msgstr "組織器"
+
+#: dialog.src#MSG_TABPAGE_INVALIDNAME.infobox.text
+msgid "This name is already in use."
+msgstr "有一個樣式已經使用這個名稱。"
+
+#: dialog.src#MSG_TABPAGE_INVALIDSTYLE.infobox.text
+msgid "This Style does not exist."
+msgstr "這個樣式不存在。"
+
+#: dialog.src#MSG_TABPAGE_INVALIDPARENT.infobox.text
+msgid ""
+"This Style cannot be used as a base Style,\n"
+"because it would result in a recursive reference."
+msgstr ""
+"此樣式無法作為基本樣式使用，\n"
+"原因是此樣式會產生遞迴參照。"
+
+#: dialog.src#MSG_POOL_STYLE_NAME.infobox.text
+msgid ""
+"Name already exists as a default Style.\n"
+"Please choose another name."
+msgstr ""
+"這個名稱是一個預設樣式的名稱。\n"
+"請您採用其他一個名稱。"
+
+#: dialog.src#STR_DELETE_STYLE.string.text
+msgid "Do you really want to delete Style $1?"
+msgstr "您真的要刪除樣式 $1 ﹖"
+
+#: dialog.src#STR_DELETE_STYLE_USED.string.text
+msgid "You are deleting an applied Style!\n"
+msgstr "您要刪除的是一個使用的樣式﹗\n"
+
+#: dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.menuitem.text
+msgid "New..."
+msgstr "開啟新檔..."
+
+#: dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.menuitem.text
+msgid "Modify..."
+msgstr "修改..."
+
+#: dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.menuitem.text
+msgid "Delete..."
+msgstr "刪除..."
+
+#: dialog.src#SID_NAVIGATOR.string.text
+msgid "Navigator"
+msgstr "助手"
+
+#: dialog.src#SID_TASKPANE.string.text
+msgid "Task Pane"
+msgstr "工作窗格"
+
+#: dialog.src#MSG_ERROR_WRONG_CONFIRM.errorbox.text
+msgid "Faulty password confirmation"
+msgstr "驗証密碼無效"
+
+#: dialog.src#STR_PDF_EXPORT_SEND.string.text
+msgid "Send"
+msgstr "傳送"
+
+#: dinfdlg.src#STR_SFX_NEWOFFICEDOC.string.text
+msgid "%PRODUCTNAME document"
+msgstr "%PRODUCTNAME 文件"
+
+#: dinfdlg.src#TP_DOCINFODESC.FT_TITLE.fixedtext.text
+msgid "~Title"
+msgstr "標題(~T)"
+
+#: dinfdlg.src#TP_DOCINFODESC.FT_THEMA.fixedtext.text
+msgid "~Subject"
+msgstr "主題(~S)"
+
+#: dinfdlg.src#TP_DOCINFODESC.FT_KEYWORDS.fixedtext.text
+msgid "~Keywords"
+msgstr "關鍵字(~K)"
+
+#: dinfdlg.src#TP_DOCINFODESC.FT_COMMENT.fixedtext.text
+msgid "~Comments"
+msgstr "註釋(~C)"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.fixedtext.text
+msgid "Type:"
+msgstr "類型："
+
+#: dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.checkbox.text
+msgctxt "dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.checkbox.text"
+msgid "~Read-only"
+msgstr "唯讀(~R)"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_FILE.fixedtext.text
+msgid "Location:"
+msgstr "位置："
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_FILE_SIZE.fixedtext.text
+msgid "Size:"
+msgstr "大小："
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_CREATE.fixedtext.text
+msgid "Created:"
+msgstr "建立日期："
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_CHANGE.fixedtext.text
+msgid "Modified:"
+msgstr "修改的日期："
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_SIGNED.fixedtext.text
+msgid "Digitally signed:"
+msgstr "已數位簽名："
+
+#: dinfdlg.src#TP_DOCINFODOC.BTN_SIGNATURE.pushbutton.text
+msgid "Digital Signature..."
+msgstr "數位簽名..."
+
+#: dinfdlg.src#TP_DOCINFODOC.STR_MULTSIGNED.string.text
+msgid "Multiply signed document"
+msgstr "多重簽名的文件"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_PRINT.fixedtext.text
+msgid "Last printed:"
+msgstr "上次列印時間："
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_TIMELOG.fixedtext.text
+msgid "Total editing time:"
+msgstr "總計編輯時間："
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_DOCNO.fixedtext.text
+msgid "Revision number:"
+msgstr "修訂的版本："
+
+#: dinfdlg.src#TP_DOCINFODOC.BTN_DELETE.pushbutton.text
+msgid "Reset"
+msgstr "重設"
+
+#: dinfdlg.src#TP_DOCINFODOC.CB_USE_USERDATA.checkbox.text
+msgid "~Apply user data"
+msgstr "採用使用者資料(~A)"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_TEMPL.fixedtext.text
+msgid "Template:"
+msgstr "範本："
+
+#: dinfdlg.src#TP_DOCINFODOC.STR_UNKNOWNSIZE.string.text
+msgid "unknown"
+msgstr "不明的"
+
+#: dinfdlg.src#TP_DOCINFODOC.EDIT_FILE_NAME.string.text
+msgid "File Name"
+msgstr "檔案名稱"
+
+#: dinfdlg.src#TP_DOCINFOUSER.BTN_EDITLABEL.pushbutton.text
+msgid "~Info fields..."
+msgstr "資訊欄位(~I)..."
+
+#: dinfdlg.src#TP_DOCINFORELOAD.RB_NOAUTOUPDATE.radiobutton.text
+msgid "Do not refresh automatically"
+msgstr "不自動更新"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.RB_RELOADUPDATE.radiobutton.text
+msgid "Refresh this document"
+msgstr "更新這個文件"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.FT_EVERY.fixedtext.text
+msgid "every"
+msgstr "毎"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.fixedtext.text
+msgctxt "dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.fixedtext.text"
+msgid "seconds"
+msgstr "秒"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.RB_FORWARDUPDATE.radiobutton.text
+msgid "Redirect from this document"
+msgstr "從這個文件轉送"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.fixedtext.text
+msgid "after"
+msgstr "經過"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.fixedtext.text
+msgctxt "dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.fixedtext.text"
+msgid "seconds"
+msgstr "秒"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.FT_URL.fixedtext.text
+msgid "to URL"
+msgstr "至 URL"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.FT_FRAME.fixedtext.text
+msgid "to frame"
+msgstr "送至訊框"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.STR_FORWARD_ERRMSSG.string.text
+msgid "If you select the option \"%PLACEHOLDER%\", you must enter a URL."
+msgstr "如果您選擇選項 \"%PLACEHOLDER%\" ，就必須輸入一個 URL 地址。"
+
+#: dinfdlg.src#TP_CUSTOMPROPERTIES.FT_PROPERTIES.fixedtext.text
+msgid "~Properties"
+msgstr "屬性(~P)"
+
+#: dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.string.text
+msgid "Name"
+msgstr "名稱"
+
+#: dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.string.text
+msgid "Type"
+msgstr "類型"
+
+#: dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_VALUE.string.text
+msgid "Value"
+msgstr "值"
+
+#: dinfdlg.src#TP_CUSTOMPROPERTIES.BTN_ADD.pushbutton.text
+msgid "~Add"
+msgstr "增加(~A)"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.combobox.text
+msgctxt "dinfdlg.src#SFX_CB_PROPERTY_NAME.combobox.text"
+msgid "-"
+msgstr "-"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.combobox.quickhelptext
+msgid "Property Name"
+msgstr "屬性名稱"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.1.stringlist.text
+msgid "Checked by"
+msgstr "檢查者"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.2.stringlist.text
+msgid "Client"
+msgstr "用戶端"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.3.stringlist.text
+msgid "Date completed"
+msgstr "完成日期"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.4.stringlist.text
+msgid "Department"
+msgstr "部門"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.5.stringlist.text
+msgid "Destinations"
+msgstr "目標"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.6.stringlist.text
+msgid "Disposition"
+msgstr "佈置"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.7.stringlist.text
+msgid "Division"
+msgstr "部門"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.8.stringlist.text
+msgid "Document number"
+msgstr "文件號碼"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.9.stringlist.text
+msgid "Editor"
+msgstr "編輯器"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.10.stringlist.text
+msgid "E-Mail"
+msgstr "電子郵件"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.11.stringlist.text
+msgid "Forward to"
+msgstr "轉寄至"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.12.stringlist.text
+msgid "Group"
+msgstr "群組"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.13.stringlist.text
+msgid "Info"
+msgstr "資訊"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.14.stringlist.text
+msgid "Language"
+msgstr "語言"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.15.stringlist.text
+msgid "Mailstop"
+msgstr "郵寄地點"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.16.stringlist.text
+msgid "Matter"
+msgstr "事務"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.17.stringlist.text
+msgid "Office"
+msgstr "辦公室"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.18.stringlist.text
+msgid "Owner"
+msgstr "所有者"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.19.stringlist.text
+msgid "Project"
+msgstr "專案"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.20.stringlist.text
+msgid "Publisher"
+msgstr "出版社"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.21.stringlist.text
+msgid "Purpose"
+msgstr "用途"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.22.stringlist.text
+msgid "Received from"
+msgstr "接收自"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.23.stringlist.text
+msgid "Recorded by"
+msgstr "記錄者"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.24.stringlist.text
+msgid "Recorded date"
+msgstr "記錄日期"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.25.stringlist.text
+msgid "Reference"
+msgstr "參照"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.26.stringlist.text
+msgid "Source"
+msgstr "來源"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.27.stringlist.text
+msgid "Status"
+msgstr "狀態"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.28.stringlist.text
+msgid "Telephone number"
+msgstr "電話號碼"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.29.stringlist.text
+msgid "Typist"
+msgstr "打字員"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.30.stringlist.text
+msgid "URL"
+msgstr "URL"
+
+#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.1.stringlist.text
+msgid "Text"
+msgstr "文字"
+
+#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.2.stringlist.text
+msgid "DateTime"
+msgstr "日期時間"
+
+#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.3.stringlist.text
+msgid "Date"
+msgstr "日期"
+
+#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.4.stringlist.text
+msgctxt "dinfdlg.src#SFX_LB_PROPERTY_TYPE.4.stringlist.text"
+msgid "Duration"
+msgstr "持續時間"
+
+#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.5.stringlist.text
+msgid "Number"
+msgstr "號碼"
+
+#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.6.stringlist.text
+msgid "Yes or no"
+msgstr "是或否"
+
+#: dinfdlg.src#SFX_ST_DURATION_FORMAT.string.text
+msgid " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
+msgstr " Y：%1 M：%2 D：%3 H：%4 M：%5 S：%6"
+
+#: dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.radiobutton.text
+msgid "Yes"
+msgstr "是"
+
+#: dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_NO.radiobutton.text
+msgid "No"
+msgstr "否"
+
+#: dinfdlg.src#SFX_PB_PROPERTY_REMOVE.imagebutton.text
+msgctxt "dinfdlg.src#SFX_PB_PROPERTY_REMOVE.imagebutton.text"
+msgid "-"
+msgstr "-"
+
+#: dinfdlg.src#SFX_PB_PROPERTY_REMOVE.imagebutton.quickhelptext
+msgid "Remove Property"
+msgstr "移除屬性"
+
+#: dinfdlg.src#SFX_QB_WRONG_TYPE.querybox.text
+msgid ""
+"The value entered does not match the specified type.\n"
+"The value will be stored as text."
+msgstr ""
+"輸入的值與指定的類型不符。\n"
+"此值會儲存為文字。"
+
+#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.pageitem.text
+msgid "General"
+msgstr "一般"
+
+#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.pageitem.text
+msgid "Description"
+msgstr "描述"
+
+#: dinfdlg.src#SID_DOCINFO.1.TP_CUSTOMPROPERTIES.pageitem.text
+msgid "Custom Properties"
+msgstr "自訂屬性"
+
+#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.pageitem.text
+msgid "Internet"
+msgstr "Internet"
+
+#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFOSECURITY.pageitem.text
+msgid "Security"
+msgstr "安全性"
+
+#: dinfdlg.src#SID_DOCINFO.tabdialog.text
+msgid "Properties of "
+msgstr "屬性： "
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FL_DURATION.fixedline.text
+msgctxt "dinfdlg.src#RID_EDIT_DURATIONS.FL_DURATION.fixedline.text"
+msgid "Duration"
+msgstr "持續時間"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.CB_NEGATIVE.checkbox.text
+msgid "~Negative"
+msgstr "負值(~N)"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_YEAR.fixedtext.text
+msgid "~Years"
+msgstr "年(~Y)"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_MONTH.fixedtext.text
+msgid "~Months"
+msgstr "月(~M)"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_DAY.fixedtext.text
+msgid "~Days"
+msgstr "天(~D)"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_HOUR.fixedtext.text
+msgid "H~ours"
+msgstr "小時(~O)"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_MINUTE.fixedtext.text
+msgid "Min~utes"
+msgstr "分鐘(~U)"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_SECOND.fixedtext.text
+msgid "~Seconds"
+msgstr "秒(~S)"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_MSECOND.fixedtext.text
+msgid "Millise~conds"
+msgstr "毫秒(~C)"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.modaldialog.text
+msgid "Edit Duration"
+msgstr "編輯持續時間"
+
+#: dinfedt.src#DLG_DOCINFO_EDT.FL_INFO.fixedline.text
+msgid "Names"
+msgstr "名稱"
+
+#: dinfedt.src#DLG_DOCINFO_EDT.modaldialog.text
+msgid "Edit Field Names"
+msgstr "編輯標題"
+
+#: filedlghelper.src#STR_SFX_FILEDLG_ACTUALVERSION.string.text
+msgid "Current version"
+msgstr "目前的版本"
+
+#: filedlghelper.src#STR_SFX_EXPLORERFILE_EXPORT.string.text
+msgid "Export"
+msgstr "匯出"
+
+#: filedlghelper.src#STR_SFX_EXPLORERFILE_INSERT.string.text
+msgid "Insert"
+msgstr "貼上"
+
+#: filedlghelper.src#STR_SFX_EXPLORERFILE_BUTTONINSERT.string.text
+msgid "~Insert"
+msgstr "貼上(~I)"
+
+#: filedlghelper.src#STR_SFX_IMPORT_ALL.string.text
+msgid "<All formats>"
+msgstr "<所有的格式>"
+
+#: filedlghelper.src#STR_CB_AUTO_EXTENSION.string.text
+msgid "~Automatic file name extension"
+msgstr "自動加上副檔名(~A)"
+
+#: filedlghelper.src#STR_CB_SELECTION.string.text
+msgid "~Selection"
+msgstr "選取(~S)"
+
+#: filedlghelper.src#STR_CB_INSERT_AS_LINK.string.text
+msgid "~Link"
+msgstr "連結(~L)"
+
+#: filedlghelper.src#STR_CB_SHOW_PREVIEW.string.text
+msgid "Pr~eview"
+msgstr "預覽(~E)"
+
+#: filedlghelper.src#STR_CB_READONLY.string.text
+msgctxt "filedlghelper.src#STR_CB_READONLY.string.text"
+msgid "~Read-only"
+msgstr "唯讀(~R)"
+
+#: filedlghelper.src#STR_CB_PASSWORD.string.text
+msgid "Save with ~password"
+msgstr "使用密碼儲存(~P)"
+
+#: filedlghelper.src#STR_CB_FILTER_OPTIONS.string.text
+msgid "Edit ~filter settings"
+msgstr "編輯篩選設定(~F)"
+
+#: filedlghelper.src#STR_PB_PLAY.string.text
+msgid "~Play"
+msgstr "放映(~P)"
+
+#: filedlghelper.src#STR_PB_STOP.string.text
+msgid "Sto~p"
+msgstr "暫停(~P)"
+
+#: filedlghelper.src#STR_PB_OPEN.string.text
+msgid "~Open"
+msgstr "開啟舊檔(~O)"
+
+#: filedlghelper.src#STR_PB_SAVE.string.text
+msgid "~Save"
+msgstr "儲存(~S)"
+
+#: filedlghelper.src#STR_LB_IMAGE_TEMPLATE.string.text
+msgid "Style:"
+msgstr "風格："
+
+#: filedlghelper.src#STR_LB_TEMPLATES.string.text
+msgid "~Templates:"
+msgstr "範本(~T)："
+
+#: filedlghelper.src#STR_LB_VERSION.string.text
+msgid "~Version:"
+msgstr "版本(~V)："
+
+#: mailwindow.src#RID_ERRBOX_MAIL_CONFIG.errorbox.text
+msgid ""
+"%PRODUCTNAME was unable to find a working e-mail configuration. Please save "
+"this document locally instead and attach it from within your e-mail client."
+msgstr "%PRODUCTNAME 找不到可用的電子郵件設定。請將此文件儲存在本端電腦中並將之附加至您的電子郵件用戶端內。"
+
+#: mgetempl.src#TP_MANAGE_STYLES.FT_NAME.fixedtext.text
+msgid "~Name"
+msgstr "名稱(~N)"
+
+#: mgetempl.src#TP_MANAGE_STYLES.CB_AUTO.checkbox.text
+msgid "~AutoUpdate"
+msgstr "自動更新(~A)"
+
+#: mgetempl.src#TP_MANAGE_STYLES.FT_NEXT.fixedtext.text
+msgid "Ne~xt Style"
+msgstr "下一個樣式(~X)"
+
+#: mgetempl.src#TP_MANAGE_STYLES.FT_BASE.fixedtext.text
+msgid "Linked with"
+msgstr "連結到"
+
+#: mgetempl.src#TP_MANAGE_STYLES.FT_REGION.fixedtext.text
+msgid "~Category"
+msgstr "分類(~C)"
+
+#: mgetempl.src#TP_MANAGE_STYLES.GB_DESC.fixedline.text
+msgid "Contains"
+msgstr "含有"
+
+#: newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.FL_COL.fixedline.text
+msgid "Style name"
+msgstr "樣式名稱"
+
+#: newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MSG_OVERWRITE.querybox.text
+msgid "Style already exists. Overwrite?"
+msgstr "樣式已經存在。要覆寫？"
+
+#: newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.modaldialog.text
+msgid "Create Style"
+msgstr "建立樣式"
+
+#: passwd.src#DLG_PASSWD.FT_PASSWD_USER.fixedtext.text
+msgid "~User"
+msgstr "使用者(~U)"
+
+#: passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD.fixedtext.text
+msgid "~Password"
+msgstr "密碼(~P)"
+
+#: passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM.fixedtext.text
+msgid "~Confirm"
+msgstr "確認(~C)"
+
+#: passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.fixedline.text
+msgctxt "passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.fixedline.text"
+msgid "Password"
+msgstr "密碼"
+
+#: passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD2.fixedtext.text
+msgid "P~assword"
+msgstr "密碼(~A)"
+
+#: passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM2.fixedtext.text
+msgid "Confir~m"
+msgstr "確認(~M)"
+
+#: passwd.src#DLG_PASSWD.TEXT_PASSWD.string.text
+msgctxt "passwd.src#DLG_PASSWD.TEXT_PASSWD.string.text"
+msgid "Password"
+msgstr "密碼"
+
+#: passwd.src#DLG_PASSWD.modaldialog.text
+msgid "Enter Password"
+msgstr "輸入密碼"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.fixedline.text
+msgid "Reduce print data"
+msgstr "減少列印資料"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.FT_OUTPUTTYPE.fixedtext.text
+msgid "Settings for"
+msgstr "設定用於"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTEROUTPUT.radiobutton.text
+msgid "~Printer"
+msgstr "印表機(~P)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTFILEOUTPUT.radiobutton.text
+msgid "Print to ~file"
+msgstr "列印成檔案(~F)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCETRANSPARENCY.checkbox.text
+msgid "~Reduce transparency"
+msgstr "減少透明(~R)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_AUTO.radiobutton.text
+msgid "Auto~matically"
+msgstr "自動(~M)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_NONE.radiobutton.text
+msgid "~No transparency"
+msgstr "不透明(~N)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEGRADIENTS.checkbox.text
+msgid "Reduce ~gradients"
+msgstr "減少漸層色圖案(~G)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_STRIPES.radiobutton.text
+msgid "Gradient ~stripes"
+msgstr "漸層色圖案條紋(~S)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_COLOR.radiobutton.text
+msgid "Intermediate ~color"
+msgstr "中間色(~C)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS.checkbox.text
+msgid "Reduce ~bitmaps"
+msgstr "減少點陣圖(~B)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_OPTIMAL.radiobutton.text
+msgid "~High print quality"
+msgstr "很好的列印品質(~H)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_NORMAL.radiobutton.text
+msgid "N~ormal print quality"
+msgstr "一般的品質(~O)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_RESOLUTION.radiobutton.text
+msgid "Reso~lution"
+msgstr "解析度(~L)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.1.stringlist.text
+msgid "72 DPI"
+msgstr "72 DPI"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.2.stringlist.text
+msgid "96 DPI"
+msgstr "96 DPI"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.3.stringlist.text
+msgid "150 DPI (Fax)"
+msgstr "150 DPI (傳真)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.4.stringlist.text
+msgid "200 DPI (default)"
+msgstr "200 DPI (預設定)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.5.stringlist.text
+msgid "300 DPI"
+msgstr "300 DPI"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.6.stringlist.text
+msgid "600 DPI"
+msgstr "600 DPI"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS_TRANSPARENCY.checkbox.text
+msgid "Include transparent ob~jects"
+msgstr "包括透明物件(~J)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_CONVERTTOGREYSCALES.checkbox.text
+msgid "Con~vert colors to grayscale"
+msgstr "彩色轉換成灰階(~V)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.GB_PRINT_WARN.fixedline.text
+msgid "Printer warnings"
+msgstr "印表機的警告"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERSIZE.checkbox.text
+msgid "P~aper size"
+msgstr "紙張大小(~A)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERORIENTATION.checkbox.text
+msgid "Pap~er orientation"
+msgstr "紙張方向(~E)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_TRANSPARENCY.checkbox.text
+msgid "~Transparency"
+msgstr "透明(~T)"
+
+#: printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.fixedtext.text
+msgid ""
+"Your document contains transparent objects.\n"
+"This may lead to longer printing time on certain\n"
+"printers. Should the aspect of transparency\n"
+"be reduced?"
+msgstr ""
+"您的文件含有透明物件。\n"
+"許多印表機會因此需要很長的時間來完成列印任務。\n"
+"要讓印表機忽略這些透明物件？"
+
+#: printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.okbutton.text
+msgid "~Yes"
+msgstr "是(~Y)"
+
+#: printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_NO.pushbutton.text
+msgid "~No"
+msgstr "否(~N)"
+
+#: printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_CANCEL.cancelbutton.text
+msgid "~Cancel"
+msgstr "取消(~C)"
+
+#: printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.checkbox.text
+msgid "~Do not show warning again"
+msgstr "不再顯示這個警告(~D)"
+
+#: printopt.src#RID_WARN_PRINTTRANSPARENCY.modaldialog.text
+msgid "Warning"
+msgstr "警告"
+
+#: recfloat.src#SID_RECORDING_FLOATWINDOW.floatingwindow.text
+msgid "Record Macro"
+msgstr "記錄巨集"
+
+#: recfloat.src#STR_MACRO_LOSS.string.text
+msgid ""
+"Do you really want to cancel the recording? Any steps recorded up to this "
+"point will be lost."
+msgstr "真的要取消記錄？所有的目前的記錄內容就會流失。"
+
+#: recfloat.src#STR_CANCEL_RECORDING.string.text
+msgid "Cancel Recording"
+msgstr "取消記錄"
+
+#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FL.fixedline.text
+msgid "File encryption password"
+msgstr "檔案加密密碼"
+
+#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FT.fixedtext.text
+msgid "~Enter password to open"
+msgstr "輸入密碼以開啟(~E)"
+
+#: securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_OPEN_FT.fixedtext.text
+msgid "~Reenter password to open"
+msgstr "重新輸入密碼以開啟(~R)"
+
+#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FL.fixedline.text
+msgid "File sharing password"
+msgstr "檔案共用密碼"
+
+#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FT.fixedtext.text
+msgid "Enter password to modify"
+msgstr "輸入密碼以修改"
+
+#: securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_MODIFY_FT.fixedtext.text
+msgid "Reenter password to modify"
+msgstr "重新輸入密碼以修改"
+
+#: securitypage.src#TP_DOCINFOSECURITY.OPTIONS_FL.fixedline.text
+msgid "File sharing options"
+msgstr "檔案共用選項"
+
+#: securitypage.src#TP_DOCINFOSECURITY.OPEN_READONLY_CB.checkbox.text
+msgid "~Open file read-only"
+msgstr "以唯讀方式開啟檔案(~O)"
+
+#: securitypage.src#TP_DOCINFOSECURITY.RECORD_CHANGES_CB.checkbox.text
+msgid "Record ~changes"
+msgstr "記錄變更(~C)"
+
+#: securitypage.src#TP_DOCINFOSECURITY.STR_PROTECT.string.text
+msgid "~Protect..."
+msgstr "保護(~P)..."
+
+#: securitypage.src#TP_DOCINFOSECURITY.STR_UNPROTECT.string.text
+msgid "~Unprotect..."
+msgstr "取消保護(~U)..."
+
+#: securitypage.src#TP_DOCINFOSECURITY.STR_END_REDLINING_WARNING.string.text
+msgid ""
+"This action will exit the change recording mode.\n"
+"Any information about changes will be lost.\n"
+"\n"
+"Exit change recording mode?\n"
+"\n"
+msgstr ""
+"此動作會結束變更記錄模式。\n"
+"任何與變更相關的資訊都將遺失。\n"
+"\n"
+"要結束變更記錄模式？\n"
+"\n"
+
+#: securitypage.src#RID_SFX_PROTECT_RECORDS.string.text
+msgid "Protect Records"
+msgstr "保護記錄"
+
+#: securitypage.src#RID_SFX_UNPROTECT_RECORDS.string.text
+msgid "Unprotect Records"
+msgstr "取消保護記錄"
+
+#: securitypage.src#RID_SFX_INCORRECT_PASSWORD.string.text
+msgid "Incorrect password"
+msgstr "不正確的密碼"
+
+#: srchdlg.src#RID_DLG_SEARCH.FT_SEARCH.fixedtext.text
+msgid "~Search for"
+msgstr "搜尋(~S)"
+
+#: srchdlg.src#RID_DLG_SEARCH.CB_WHOLEWORDS.checkbox.text
+msgid "~Whole words only"
+msgstr "全字拼寫相符(~W)"
+
+#: srchdlg.src#RID_DLG_SEARCH.CB_MATCHCASE.checkbox.text
+msgid "~Match case"
+msgstr "大小寫相符(~M)"
+
+#: srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.checkbox.text
+msgctxt "srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.checkbox.text"
+msgid "Wrap ~around"
+msgstr "環繞(~A)"
+
+#: srchdlg.src#RID_DLG_SEARCH.CB_BACKWARDS.checkbox.text
+msgid "~Backwards"
+msgstr "向後(~B)"
+
+#: srchdlg.src#RID_DLG_SEARCH.PB_FIND.pushbutton.text
+msgid "~Find"
+msgstr "尋找(~F)"
+
+#: srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.cancelbutton.text
+msgctxt "srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.cancelbutton.text"
+msgid "~Close"
+msgstr "關閉(~C)"
+
+#: srchdlg.src#RID_DLG_SEARCH.STR_TOGGLE.string.text
+msgctxt "srchdlg.src#RID_DLG_SEARCH.STR_TOGGLE.string.text"
+msgid "Wrap ~around"
+msgstr "環繞(~A)"
+
+#: srchdlg.src#RID_DLG_SEARCH.modelessdialog.text
+msgid "Find on this Page"
+msgstr "在此頁面尋找"
+
+#: taskpane.src#STR_SFX_DOCK.string.text
+msgid "Dock"
+msgstr "停駐"
+
+#: taskpane.src#STR_SFX_UNDOCK.string.text
+msgid "Undock"
+msgstr "取消停駐"
+
+#: taskpane.src#STR_SFX_TASK_PANE_VIEW.string.text
+msgid "View"
+msgstr "檢視"
+
+#: taskpane.src#STR_SFX_TASKS.string.text
+msgid "Tasks"
+msgstr "工作"
+
+#: templdlg.src#RID_STYLECATALOG.BT_ORG.pushbutton.text
+msgid "~Organizer..."
+msgstr "組織器(~O)..."
+
+#: templdlg.src#RID_STYLECATALOG.BT_DEL.pushbutton.text
+msgid "~Delete..."
+msgstr "刪除(~D)..."
+
+#: templdlg.src#RID_STYLECATALOG.BT_EDIT.pushbutton.text
+msgid "~Modify..."
+msgstr "修改(~M)..."
+
+#: templdlg.src#RID_STYLECATALOG.BT_NEW.pushbutton.text
+msgid "~New..."
+msgstr "開啟新檔(~N)..."
+
+#: templdlg.src#RID_STYLECATALOG.modaldialog.text
+msgid "Style Catalog"
+msgstr "樣式目錄"
+
+#: templdlg.src#STR_STYLE_ELEMTLIST.string.text
+msgid "Style List"
+msgstr "樣式清單"
+
+#: templdlg.src#STR_STYLE_FILTER_HIERARCHICAL.string.text
+msgid "Hierarchical"
+msgstr "等級式"
+
+#: templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_WATERCAN.toolboxitem.text
+msgid "Fill Format Mode"
+msgstr "充填模式"
+
+#: templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_NEW_BY_EXAMPLE.toolboxitem.text
+msgid "New Style from Selection"
+msgstr "選取的新樣式"
+
+#: templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_UPDATE_BY_EXAMPLE.toolboxitem.text
+msgid "Update Style"
+msgstr "更新樣式"
+
+#: templdlg.src#DLG_STYLE_DESIGNER.dockingwindow.text
+msgid "Styles and Formatting"
+msgstr "樣式與格式"
+
+#: versdlg.src#DLG_VERSIONS.GB_NEWVERSIONS.fixedline.text
+msgid "New versions"
+msgstr "新版本"
+
+#: versdlg.src#DLG_VERSIONS.PB_SAVE.pushbutton.text
+msgid "Save ~New Version"
+msgstr "保存新版本(~N)"
+
+#: versdlg.src#DLG_VERSIONS.CB_SAVEONCLOSE.checkbox.text
+msgid "~Always save a version on closing"
+msgstr "在關閉時自動保存版本資訊(~A)"
+
+#: versdlg.src#DLG_VERSIONS.GB_OLDVERSIONS.fixedline.text
+msgid "Existing versions"
+msgstr "現存的版本"
+
+#: versdlg.src#DLG_VERSIONS.FT_DATETIME.fixedtext.text
+msgid "Date and time"
+msgstr "日期和時間"
+
+#: versdlg.src#DLG_VERSIONS.FT_SAVEDBY.fixedtext.text
+msgid "Saved by"
+msgstr "作者"
+
+#: versdlg.src#DLG_VERSIONS.FT_COMMENTS.fixedtext.text
+msgid "Comments"
+msgstr "註解"
+
+#: versdlg.src#DLG_VERSIONS.PB_CLOSE.cancelbutton.text
+msgid "Close"
+msgstr "關閉"
+
+#: versdlg.src#DLG_VERSIONS.PB_OPEN.pushbutton.text
+msgid "Open"
+msgstr "開啟舊檔"
+
+#: versdlg.src#DLG_VERSIONS.PB_VIEW.pushbutton.text
+msgid "~Show..."
+msgstr "顯示(~S)..."
+
+#: versdlg.src#DLG_VERSIONS.PB_DELETE.pushbutton.text
+msgid "~Delete"
+msgstr "刪除(~D)"
+
+#: versdlg.src#DLG_VERSIONS.PB_COMPARE.pushbutton.text
+msgid "Compare"
+msgstr "比較"
+
+#: versdlg.src#DLG_VERSIONS.modaldialog.text
+msgid "Versions of"
+msgstr "版本在"
+
+#: versdlg.src#DLG_COMMENTS.FT_DATETIME.fixedtext.text
+msgid "Date and time : "
+msgstr "日期和時間： "
+
+#: versdlg.src#DLG_COMMENTS.FT_SAVEDBY.fixedtext.text
+msgid "Saved by "
+msgstr "作者 "
+
+#: versdlg.src#DLG_COMMENTS.PB_CLOSE.pushbutton.text
+msgctxt "versdlg.src#DLG_COMMENTS.PB_CLOSE.pushbutton.text"
+msgid "~Close"
+msgstr "關閉(~C)"
+
+#: versdlg.src#DLG_COMMENTS.modaldialog.text
+msgid "Insert Version Comment"
+msgstr "輸入版本註解"
+
+#: versdlg.src#DLG_COMMENTS.string.text
+msgid "Version comment"
+msgstr "版本註解"

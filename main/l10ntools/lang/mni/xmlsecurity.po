@@ -1,0 +1,374 @@
+
+#: certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.FT_HINT_SELECT.fixedtext.text
+msgid "Select the certificate you want to use for signing"
+msgstr "অদোম্না শোই তৌনবগীদমক শিজিন্নবা পাম্বা সার্তিফিকেত্তু খল্লো"
+
+#: certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.modaldialog.text
+msgid "Select Certificate"
+msgstr "সার্তিফিকেত খল্লো"
+
+#: certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.pushbutton.text
+msgctxt "certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.pushbutton.text"
+msgid "View Certificate..."
+msgstr "সার্তিফিকেত মীতয়েং তাবা..."
+
+#: certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.string.text
+msgctxt "certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.string.text"
+msgid "Issued to\tIssued by\tExpiration date"
+msgstr "দা... ইসু তৌরবা\tনা... ইসু তৌরবা\tমতম হেন্দোকপগী তাং"
+
+#: certificateviewer.src#RID_XMLSECTP_CERTPATH.FT_CERTPATH.fixedtext.text
+msgid "Certification path"
+msgstr "অচুম্বনি তাকপগী লম্বী...."
+
+#: certificateviewer.src#RID_XMLSECTP_CERTPATH.FT_CERTSTATUS.fixedtext.text
+msgid "Certification status"
+msgstr "অচুম্বনি য়েংশিনবগী ফিবম"
+
+#: certificateviewer.src#RID_XMLSECTP_GENERAL.FI_CERTINFO.fixedtext.text
+msgid " Certificate Information"
+msgstr "সার্তিফিকেতকী ঈপাউ"
+
+#: certificateviewer.src#RID_XMLSECTP_GENERAL.FI_CORRPRIVKEY.fixedtext.text
+msgid "You have a private key that corresponds to this certificate."
+msgstr "মসিগী সার্তিপিফিকেত অসিগা মরী লৈন্নবা অদোমগী লনাইগী কি অমা লৈ."
+
+#: certificateviewer.src#RID_XMLSECTP_GENERAL.FI_HINTNOTTRUST.fixedtext.text
+msgid "This certificate is intended for the following purpose(s):"
+msgstr "মসিগী সার্তিফিকেত অসি মখাদা পিরিবা মরম(শিং) অসিগীদমক আশা তৌই:"
+
+#: certificateviewer.src#RID_XMLSECTP_GENERAL.FI_ISSBYLABEL.fixedtext.text
+msgid "Issued by:"
+msgstr "-না ইশু তৌরবা:"
+
+#: certificateviewer.src#RID_XMLSECTP_GENERAL.FI_ISSTOLABEL.fixedtext.text
+msgid "Issued to:"
+msgstr "-দা ইশু তৌরবা:"
+
+#: certificateviewer.src#RID_XMLSECTP_GENERAL.FI_VALIDDATE.fixedtext.text
+msgid "Valid from %SDATE% to %EDATE%"
+msgstr " %SDATE%দগী %EDATE%দা চতনরিবা"
+
+#: certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_CERTPATH.pageitem.text
+msgid "Certification Path"
+msgstr "অচুম্বনি তাকপগী লম্বী"
+
+#: certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_DETAILS.pageitem.text
+msgid "Details"
+msgstr "মচাখাইবা"
+
+#: certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_GENERAL.pageitem.text
+msgid "General"
+msgstr "খ্বাইগী ওইবা"
+
+#: certificateviewer.src#RID_XMLSECTP_CERTPATH.BTN_VIEWCERT.pushbutton.text
+msgctxt "certificateviewer.src#RID_XMLSECTP_CERTPATH.BTN_VIEWCERT.pushbutton.text"
+msgid "View Certificate..."
+msgstr "সার্তিফিকেত মীতয়েং তাবা..."
+
+#: certificateviewer.src#RID_XMLSECTP_CERTPATH.STR_PATH_CERT_NOT_VALIDATED.string.text
+msgctxt "certificateviewer.src#RID_XMLSECTP_CERTPATH.STR_PATH_CERT_NOT_VALIDATED.string.text"
+msgid "The certificate could not be validated."
+msgstr "সার্তিফিকেত অসি চতনহনবা ঙমদে."
+
+#: certificateviewer.src#RID_XMLSECTP_CERTPATH.STR_PATH_CERT_OK.string.text
+msgid "The certificate is OK."
+msgstr "সর্তিফিকেত অসি OK ওইরে."
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_HEADERBAR.string.text
+msgid "Field\tValue"
+msgstr "ফিল্দ\tভেল্যু"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_ISSUER.string.text
+msgid "Issuer"
+msgstr "ইসু তৌরিবা"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_ISSUER_ID.string.text
+msgid "Issuer Unique ID"
+msgstr "ইসু তৌরিবগী তোপ-তোপ্পা ID"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SERIALNUM.string.text
+msgid "Serial Number"
+msgstr "মথং-মনাও মশিং"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGALGORITHM.string.text
+msgctxt "certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGALGORITHM.string.text"
+msgid "Signature Algorithm"
+msgstr "শোইগী এলগোরিদম"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGNATURE_ALGO.string.text
+msgctxt "certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGNATURE_ALGO.string.text"
+msgid "Signature Algorithm"
+msgstr "শোইগী এলগোরিদম"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT.string.text
+msgid "Subject"
+msgstr "হীরম"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_ID.string.text
+msgid "Subject Unique ID"
+msgstr "হীরম তোপ-তোপ্পা ID"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_PUBKEY_ALGO.string.text
+msgid "Subject Algorithm"
+msgstr "হীরম এলগোরিদম"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_PUBKEY_VAL.string.text
+msgid "Public Key"
+msgstr "মীয়ামগী ওইবা কি"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_THUMBPRINT_MD5.string.text
+msgid "Thumbprint MD5"
+msgstr "থম্বপ্ৰিন্ত MD5"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_THUMBPRINT_SHA1.string.text
+msgid "Thumbprint SHA1"
+msgstr "থম্বপ্ৰিন্ত SHA1"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VALIDFROM.string.text
+msgid "Valid From"
+msgstr "...দগী চতনরিবা"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VALIDTO.string.text
+msgid "Valid to"
+msgstr "...দা চতনরিবা"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VERSION.string.text
+msgid "Version"
+msgstr "ভর্সন"
+
+#: certificateviewer.src#RID_XMLSECTP_GENERAL.STR_CERTIFICATE_NOT_VALIDATED.string.text
+msgctxt "certificateviewer.src#RID_XMLSECTP_GENERAL.STR_CERTIFICATE_NOT_VALIDATED.string.text"
+msgid "The certificate could not be validated."
+msgstr "সার্তিফিকেত অসি চতনহনবা ঙমদে."
+
+#: certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.tabdialog.text
+msgid "View Certificate"
+msgstr "সার্তিফিকেত মীতয়েং তাবা"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_OLD_ODF_FORMAT.errorbox.text
+msgid ""
+"This document contains signatures in ODF 1.1 (OpenOffice.org 2.x) format. "
+"Signing documents in %PRODUCTNAME %PRODUCTVERSION requires ODF 1.2 format "
+"version. Thus no signatures can be added or removed to this document.\n"
+"\n"
+"Save document in ODF 1.2 format and add all desired signatures again."
+msgstr ""
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_BROKEN.fixedtext.text
+msgctxt "digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_BROKEN.fixedtext.text"
+msgid "The signatures in this document are invalid"
+msgstr "মসিগী দোকুমেন্তকী শোইশিং চতন্দ্রে "
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_OLDSIGNATURE.fixedtext.text
+msgid "Not all parts of the document are signed"
+msgstr ""
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_VALID.fixedtext.text
+msgid "The signatures in this document are valid"
+msgstr "মসিগী দোকুমেন্তকী শোইশিং চতনরি"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_BASIC.fixedtext.text
+msgid "The following have signed the document macro:"
+msgstr "মখাদা পিরিবসিনা মসিগী দোকুমেন্ত মেক্রো শোই তৌরে:"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_DOC.fixedtext.text
+msgid "The following have signed the document content:"
+msgstr "মখাদা পিরিবসিনা মসিগী দোকুমেন্ত হীরম শোই তৌরে:"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_PACK.fixedtext.text
+msgid "The following have signed this package:"
+msgstr "মখাদা পিরিবসিনা মসিগী পেকেজ শোই তৌরে:"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.modaldialog.text
+msgid "Digital Signatures"
+msgstr "দিজিতেল শোইশিং"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_OK.okbutton.text
+msgid "Close"
+msgstr ""
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_ADDCERT.pushbutton.text
+msgid "Sign Document..."
+msgstr "তিনশিল্লো..."
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_REMOVECERT.pushbutton.text
+msgctxt "digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_REMOVECERT.pushbutton.text"
+msgid "Remove"
+msgstr "লৌথোক্লো"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_VIEWCERT.pushbutton.text
+msgctxt "digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_VIEWCERT.pushbutton.text"
+msgid "View Certificate..."
+msgstr "সার্তিফিকেত মীতয়েং তাবা..."
+
+#: digitalsignaturesdialog.src#MSG_XMLSECDLG_QUERY_REMOVEDOCSIGNBEFORESIGN.querybox.text
+msgid ""
+"Adding or removing a macro signature will remove all document signatures.\n"
+"Do you really want to continue?"
+msgstr ""
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_HEADERBAR.string.text
+msgid "\tSigned by\tDigital ID issued by\tDate"
+msgstr "\tনা শোয় তৌরে\tনা দিজিতেল ID ইশু তৌরে \tতাং"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_INVALID_SIGNATURE.string.text
+msgctxt "digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_INVALID_SIGNATURE.string.text"
+msgid "The signatures in this document are invalid"
+msgstr "মসিগী দোকুমেন্তকী শোইশিং চতন্দ্রে "
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_NO_INFO_TO_VERIFY.string.text
+msgid "Certificate could not be validated"
+msgstr "সার্তিফিকেত চতনহনবা ঙমদ্রে"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_VALID_SIGNATURE.string.text
+msgid "Valid signature"
+msgstr "অচুম্বা শোই"
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.fixedline.text
+msgid "Trusted certificates"
+msgstr "থাজরবা সর্তিফিকেতশিং"
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTFILELOC.fixedline.text
+msgid "Trusted file locations"
+msgstr "থাজরবা ফাইলগী লৈফমশিং"
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FI_TRUSTFILELOC.fixedtext.text
+msgid ""
+"Document macros are always executed if they have been opened from one of the "
+"following locations."
+msgstr ""
+"করিগুম্বা মখোয়শিং অসি মখাগী লৈফমশিং অসিদগী হাংদোক্লবদি দোকুমেন্ত মেক্রোশিং "
+"মতম পুম্নমক্তা মথৌ তৌই."
+
+#: macrosecurity.src#RID_XMLSECTP_MACROSEC.1.RID_XMLSECTP_SECLEVEL.pageitem.text
+msgid "Security Level"
+msgstr "সেক্যুরিতিগী থাক"
+
+#: macrosecurity.src#RID_XMLSECTP_MACROSEC.1.RID_XMLSECTP_TRUSTSOURCES.pageitem.text
+msgid "Trusted Sources"
+msgstr "ত্রস্তেদ হৌরকফমশিং"
+
+#: macrosecurity.src#RID_XMLSECTP_MACROSEC.BTN_RESET.pushbutton.text
+msgid "Reset"
+msgstr "হন্না শেম্মো"
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_ADD_TRUSTFILELOC.pushbutton.text
+msgctxt "macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_ADD_TRUSTFILELOC.pushbutton.text"
+msgid "Add..."
+msgstr "তিনশিল্লো..."
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_REMOVE_TRUSTFILELOC.pushbutton.text
+msgctxt "macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_REMOVE_TRUSTFILELOC.pushbutton.text"
+msgid "Remove"
+msgstr "লৌথোক্লো"
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_ADD_TRUSTCERT.pushbutton.text
+msgctxt "macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_ADD_TRUSTCERT.pushbutton.text"
+msgid "Add..."
+msgstr "তিনশিল্লো..."
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_REMOVE_TRUSTCERT.pushbutton.text
+msgctxt "macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_REMOVE_TRUSTCERT.pushbutton.text"
+msgid "Remove"
+msgstr "লৌথোক্লো"
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_VIEW_TRUSTCERT.pushbutton.text
+msgid "View..."
+msgstr "মীতয়েং..."
+
+#: macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.radiobutton.text
+msgid ""
+"H~igh.\n"
+"Only signed macros from trusted sources are allowed to run. Unsigned macros "
+"are disabled."
+msgstr ""
+"অৱাংবা.\n"
+"থাজরবা হৌরকফমশিংদগী শোই তৌরবা মেক্রোশিংতমক শিজিন্নবা য়াই. শোই তৌদবা "
+"মেক্রোজশিং শিজিন্নবা য়াদে."
+
+#: macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.radiobutton.text
+msgid ""
+"~Low (not recommended).\n"
+"All macros will be executed without confirmation. Use this setting only if "
+"you are certain that all documents that will be opened are safe."
+msgstr ""
+"~অনেম্বা (রিকমেন্দ তৌদবা).\n"
+"মেক্রো পুম্নমক অয়াবা য়াওদনা মথৌ তৌরনি. করিগুম্বা অদোম্না শোয়দ্রবদি মদুদি "
+"হাংদোক্কদবা দোকুমেন্ত পুম্নমক সেফ ওইগনি হায়রবদি মসিগী সেত্তিংসিতমক "
+"শিজিন্নবিয়ু."
+
+#: macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.radiobutton.text
+msgid ""
+"~Medium.\n"
+"Confirmation required before executing macros from untrusted sources."
+msgstr ""
+"~ময়াই ওইবা.\n"
+"থাজদ্রবা হৌরকফমশিংদগী মেক্ৰোশিং থবক পাংথোক্ত্রিঙৈগী মমাংদা অরেপ্পা খঙবা "
+"দরকার লৈ."
+
+#: macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.radiobutton.text
+msgid ""
+"~Very high.\n"
+"Only macros from trusted file locations are allowed to run. All other "
+"macros, regardless whether signed or not, are disabled."
+msgstr ""
+"~য়াম্না ৱাংই.\n"
+"থাজরবা ফাইল লৈফমশিংদগী মেক্ৰোশিংতমক শিজিন্নবা য়াই. অতোপ্পা মেক্ৰোশিং "
+"পুম্নমক, শোই তৌরবসু তৌদ্রবসু খন্দনা, শিজিন্নবা য়াদে."
+
+#: macrosecurity.src#RID_XMLSECTP_READONLY_CONFIG_TIP.string.text
+msgid "This setting is protected by the Administrator"
+msgstr "ৱায়েন থৌদারোয়না সেত্তিং অসি ঙাকশেল্লে"
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.STR_HEADERBAR.string.text
+msgctxt "macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.STR_HEADERBAR.string.text"
+msgid "Issued to\tIssued by\tExpiration date"
+msgstr "দা... ইসু তৌরবা\tনা... ইসু তৌরবা\tমতম হেন্দোকপগী তাং"
+
+#: macrosecurity.src#RID_XMLSECTP_MACROSEC.tabdialog.text
+msgid "Macro Security"
+msgstr "মেক্ৰো সেক্যুরিতি"
+
+#: warnings.src#RID_XMLSECTP_MACROWARN.PB_DISABLE.cancelbutton.text
+msgid "Disable Macros"
+msgstr ""
+
+#: warnings.src#RID_XMLSECTP_MACROWARN.CB_ALWAYSTRUST.checkbox.text
+msgid "Always trust macros from this source"
+msgstr ""
+
+#: warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR1A.fixedtext.text
+msgid "The document contains document macros signed by:"
+msgstr ""
+
+#: warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR1B.fixedtext.text
+msgid "The document contains document macros."
+msgstr ""
+
+#: warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR2.fixedtext.text
+msgid ""
+"Macros may contain viruses. Disabling macros for a document is always save. "
+"If you disable macros you may lose functionality provided by the document "
+"macros."
+msgstr ""
+
+#: warnings.src#RID_XMLSECTP_MACROWARN.modaldialog.text
+msgid "Security Warning"
+msgstr "সেক্যুরিতিগী চেকশিনৱা"
+
+#: warnings.src#RID_XMLSECTP_MACROWARN.PB_ENABLE.pushbutton.text
+msgid "Enable Macros"
+msgstr ""
+
+#: warnings.src#RID_XMLSECTP_MACROWARN.PB_VIEWSIGNS.pushbutton.text
+msgid "View Signatures..."
+msgstr "শোইশিং মীতয়েং তাবা..."
+
+#: warnbox.src#RID_XMLSECWB_NO_MOZILLA_PROFILE.warningbox.text
+msgid ""
+"Digital signatures functionality could not be used, because no Mozilla user "
+"profile was found. Please check the Mozilla installation."
+msgstr ""
+"দিজিতেল সিগ্নেচর ফংশনেলিতি শিজিন্নবা য়াদ্রে, মরমদি মোজিলা ইউজর প্ৰোফাইল "
+"ফংদ্রে. চানবিদুনা মোজিলা ইনস্তোলেশন চেক তৌবিয়ু."

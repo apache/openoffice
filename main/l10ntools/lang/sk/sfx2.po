@@ -1,0 +1,2495 @@
+
+#: view.src#DLG_PRINTMONITOR_TEXT.#define.text
+msgid "Print Monitor"
+msgstr "Monitorovanie tlače"
+
+#: view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.errorbox.text
+msgid ""
+"%PRODUCTNAME could not find a web browser on your system. Please check your "
+"Desktop Preferences or install a web browser (for example, Mozilla) in the "
+"default  location requested during the browser installation."
+msgstr ""
+"%PRODUCTNAME nemohol nájsť internetový prehliadač na vašom systéme. Prosím "
+"preverte nastavenia vašej pracovnej stanice alebo nainštalujete internetový "
+"prehliadač (napríklad Mozilla) do východzieho umiestnenia požadovaného počas "
+"inštalácie prehliadača."
+
+#: view.src#DLG_PRINTMONITOR.FT_PRINTING.fixedtext.text
+msgid "is being printed on"
+msgstr "sa tlačí na"
+
+#: view.src#MSG_CANT_CLOSE.infobox.text
+msgid ""
+"The document cannot be closed because a\n"
+" print job is being carried out."
+msgstr ""
+"Dokument nie je možné zatvoriť, pretože\n"
+" práve prebieha tlačová úloha."
+
+#: view.src#MSG_ERROR_SEND_MAIL.infobox.text
+msgid ""
+"An error occurred in sending the message. Possible errors could be a missing "
+"user account or a defective setup.\n"
+"Please check the %PRODUCTNAME settings or your e-mail program settings."
+msgstr ""
+"Nastala chyba pri posielaní správy. Problém môže byť spôsobený chýbajúcim "
+"používateľským kontom alebo chybným nastavením.\n"
+"Prosím skontrolujte nastavenia %PRODUCTNAME alebo nastavenia vášho programu "
+"pre posielanie e-mailových správ."
+
+#: view.src#MSG_QUERY_OPENASTEMPLATE.querybox.text
+msgid ""
+"This document cannot be edited, possibly due to missing access rights. Do "
+"you want to edit a copy of the document?"
+msgstr ""
+"Dokument nemohol byť otvorený pre úpravu, pravdepodobne kvôli chýbajúcim "
+"právam. Želáte si ho použiť len ako šablónu na vytvorenie nového dokumentu?"
+
+#: view.src#DLG_PRINTMONITOR.STR_FT_PREPARATION.string.text
+msgid "is being prepared for printing"
+msgstr "je pripravovaný pre tlač"
+
+#: view.src#STR_ERROR_PRINT.string.text
+msgid "Error while printing"
+msgstr "Chyba pri tlači"
+
+#: view.src#STR_ERROR_PRINTER_BUSY.string.text
+msgid "Printer busy"
+msgstr "Tlačiareň je zaneprázdnená"
+
+#: view.src#STR_ERROR_SAVE_TEMPLATE.string.text
+msgid "Error saving template "
+msgstr "Chyba pri ukladaní šablóny "
+
+#: view.src#STR_NODEFPRINTER.string.text
+msgid ""
+"No default printer found.\n"
+"Please choose a printer and try again."
+msgstr ""
+"Nebola nájdená žiadna východzia tlačiareň.\n"
+"Prosím vyberte tlačiareň a skúste znovu."
+
+#: view.src#STR_NOSTARTPRINTER.string.text
+msgid ""
+"Could not start printer.\n"
+"Please check your printer configuration."
+msgstr ""
+"Nebolo možné inicializovať tlačiareň.\n"
+"Prosím skontrolujte nastavenia tlačiarne."
+
+#: view.src#STR_PAGE.string.text
+msgid "Page "
+msgstr "Strana "
+
+#: view.src#STR_PREVIEW_DOCINFO.string.text
+msgid ""
+"<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$("
+"TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt>"
+"<b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
+msgstr ""
+"<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Titulok:</b><dd>"
+"$(TITEL)<dt><b>Predmet:</b><dd>$(THEME)<dt><b>Kľúčové slová:</b><dd>$(KEYWOR"
+"DS)<dt><b>Popis:</b><dd>$(TEXT)</dl></font></body></html>"
+
+#: view.src#STR_PREVIEW_NODOCINFO.string.text
+msgid ""
+"<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document "
+"properties found.</B></FONT></P></BODY></HTML>"
+msgstr ""
+"<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>Žiadne "
+"vlastnosti dokumentu neboli nájdené.</B></FONT></P></BODY></HTML>"
+
+#: view.src#STR_PRINTER_NOTAVAIL.string.text
+msgid ""
+"This document has been formatted for the printer $1. The specified printer "
+"is not available. \n"
+"Do you want to use the standard printer $2 ?"
+msgstr ""
+"Tento dokument bol formátovaný pre tlačiareň $1. Určená tlačiareň nie je "
+"dostupná. \n"
+"Prajete si použiť štandardnú tlačiareň $2?"
+
+#: view.src#STR_PRINTING.string.text
+msgid "Printing"
+msgstr "Tlačenie"
+
+#: view.src#STR_PRINT_NEWORI.string.text
+msgctxt "view.src#STR_PRINT_NEWORI.string.text"
+msgid ""
+"The page size and orientation have been modified.\n"
+"Would you like to save the new settings in the\n"
+"active document?"
+msgstr ""
+"Veľkosť a orientácia strany boli zmenené.\n"
+"Chcete uložiť nové nastavenia\n"
+"v aktívnom dokumente?"
+
+#: view.src#STR_PRINT_NEWORISIZE.string.text
+msgctxt "view.src#STR_PRINT_NEWORISIZE.string.text"
+msgid ""
+"The page size and orientation have been modified.\n"
+"Would you like to save the new settings in the\n"
+"active document?"
+msgstr ""
+"Veľkosť a orientácia strany boli zmenené.\n"
+"Chcete uložiť nové nastavenia\n"
+"v aktívnom dokumente?"
+
+#: view.src#STR_PRINT_NEWSIZE.string.text
+msgid ""
+"The page size has been modified.\n"
+"Should the new settings be saved\n"
+"in the active document?"
+msgstr ""
+"Veľkosť strany bola zmenená.\n"
+"Má byť nové nastavenie uložené\n"
+"v aktuálnom dokumente?"
+
+#: view.src#STR_PRINT_OPTIONS.string.text
+msgid "Options..."
+msgstr "Možnosti..."
+
+#: view.src#STR_PRINT_OPTIONS_TITLE.string.text
+msgid "Printer Options"
+msgstr "Možnosti tlačiarne"
+
+#: view.src#STR_READONLY.string.text
+msgid " (read-only)"
+msgstr " (Iba na čítanie)"
+
+#: view.src#STR_REPAIREDDOCUMENT.string.text
+msgid " (repaired document)"
+msgstr " (opravený dokument)"
+
+#: menu.src#MN_CLIPBOARDFUNCS.SID_COPY.menuitem.text
+msgid "~Copy"
+msgstr "~Kopírovať"
+
+#: menu.src#MN_CLIPBOARDFUNCS.SID_CUT.menuitem.text
+msgid "Cu~t"
+msgstr "Vys~trihnúť"
+
+#: menu.src#MN_CLIPBOARDFUNCS.SID_PASTE.menuitem.text
+msgid "~Paste"
+msgstr "~Vložiť"
+
+#: menu.src#SID_WIN_FULLSCREEN.string.text
+msgid "Leave Full-Screen Mode"
+msgstr "Opustiť Full-Screen mód"
+
+#: menu.src#STR_MENU_ADDONHELP.string.text
+msgid "Add-~On Help"
+msgstr "Add-~On Pomocník"
+
+#: menu.src#STR_MENU_ADDONS.string.text
+msgid "~Add-Ons"
+msgstr "~Add-Ons"
+
+#: menu.src#STR_MENU_CFGITEM.string.text
+msgid "Configuration Menu"
+msgstr "Konfiguračné menu"
+
+#: menu.src#STR_MENU_NO_SYNONYM_FOUND.string.text
+msgid "(none)"
+msgstr "(nič)"
+
+#: menu.src#STR_MENU_SYNONYMS.string.text
+msgid "Synonyms"
+msgstr "Synonymá"
+
+#: menu.src#STR_MENU_THESAURUS.string.text
+msgid "~Thesaurus..."
+msgstr "~Slovník synoným..."
+
+#: fltfnc.src#STR_FILTER_CONSULT_SERVICE.string.text
+msgid ""
+"The selected filter $(FILTER) is not included in your edition.\n"
+"You can find information about orders on our homepage."
+msgstr ""
+"Vybraný filter $(FILTER) nebol zahrnutý vo vašej verzii programu.\n"
+"Informácie o objednávkach môžete nájsť na našich domovských stránkach."
+
+#: fltfnc.src#STR_FILTER_NOT_INSTALLED.string.text
+msgid ""
+"The selected filter $(FILTER) has not been installed.\n"
+"Would you like to do this now?"
+msgstr ""
+"Vybraný filter $(FILTER) nebol nainštalovaný.\n"
+"Chcete to urobiť teraz?"
+
+#: app.src#MSG_ERR_NO_WEBBROWSER_FOUND.errorbox.text
+msgid ""
+"%PRODUCTNAME could not find a web browser on your system. Please check your "
+"Desktop Preferences or install a web browser (for example, Mozilla) in the "
+"default  location requested during the browser installation."
+msgstr ""
+"%PRODUCTNAME nemohol nájsť internetový prehliadač na vašom systéme. Prosím "
+"preverte nastavenia vašej pracovnej stanice alebo nainštalujete internetový "
+"prehliadač (napríklad Mozilla) do východzieho  umiestnenia požadovaného "
+"počas inštalácie prehliadača."
+
+#: app.src#MSG_CANT_QUIT.infobox.text
+msgid ""
+"The application cannot be terminated at the moment.\n"
+"Please wait until all print jobs and/or\n"
+"OLE actions have finished and close all dialogs."
+msgstr ""
+"Aplikácia nemôže byť práve teraz ukončená.\n"
+"Prosím počkajte, až dobehnú všetky tlačové úlohy a/alebo \n"
+"OLE akcie, a zavrite všetky dialógové okná."
+
+#: app.src#RID_DOCALREADYLOADED_DLG.infobox.text
+msgid "Document already open."
+msgstr "Dokument je už otvorený."
+
+#: app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.infobox.text
+msgid ""
+"This document must be saved in OpenDocument file format before it can be "
+"digitally signed."
+msgstr ""
+"Tento dokument musí byť pred digitálnym podpísaním uložený vo formáte "
+"OpenDocument."
+
+#: app.src#MSG_QUERY_LASTVERSION.querybox.text
+msgid "Cancel all changes?"
+msgstr "Zrušiť všetky zmeny?"
+
+#: app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.querybox.text
+msgid ""
+"Saving will remove all existing signatures.\n"
+"Do you want to continue saving the document?"
+msgstr ""
+"Uloženie odstráni všetky existujúce podpisy.\n"
+"Chcete pokračovať v ukladaní dokumentu?"
+
+#: app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.querybox.text
+msgid ""
+"The document has to be saved before it can be signed.\n"
+"Do you want to save the document?"
+msgstr ""
+"Pred podpísaním musí byť dokument uložený.\n"
+"Chcete dokument uložiť?"
+
+#: app.src#GID_APPLICATION.string.text
+msgid "Application"
+msgstr "Aplikácia"
+
+#: app.src#GID_CHART.string.text
+msgid "Chart"
+msgstr "Graf"
+
+#: app.src#GID_CONNECTOR.string.text
+msgid "Connector"
+msgstr "Spojnica"
+
+#: app.src#GID_CONTROLS.string.text
+msgid "Controls"
+msgstr "Ovládacie prvky"
+
+#: app.src#GID_DATA.string.text
+msgid "Data"
+msgstr "Dáta"
+
+#: app.src#GID_DOCUMENT.string.text
+msgid "Documents"
+msgstr "Dokumenty"
+
+#: app.src#GID_DRAWING.string.text
+msgid "Drawing"
+msgstr "Kresba"
+
+#: app.src#GID_EDIT.string.text
+msgid "Edit"
+msgstr "Upraviť"
+
+#: app.src#GID_ENUMERATION.string.text
+msgid "Numbering"
+msgstr "Číslovanie"
+
+#: app.src#GID_EXPLORER.string.text
+msgid "Explorer"
+msgstr "Prieskumník"
+
+#: app.src#GID_FORMAT.string.text
+msgid "Format"
+msgstr "Formát"
+
+#: app.src#GID_FRAME.string.text
+msgid "Frame"
+msgstr "Rámec"
+
+#: app.src#GID_GRAPHIC.string.text
+msgctxt "app.src#GID_GRAPHIC.string.text"
+msgid "Graphic"
+msgstr "Obrázok"
+
+#: app.src#GID_IMAGE.string.text
+msgid "Image"
+msgstr "Obrázok"
+
+#: app.src#GID_INSERT.string.text
+msgid "Insert"
+msgstr "Vložiť"
+
+#: app.src#GID_INTERN.string.text
+msgid "Internal"
+msgstr "Interný"
+
+#: app.src#GID_MACRO.string.text
+msgid "BASIC"
+msgstr "BASIC"
+
+#: app.src#GID_MATH.string.text
+msgid "Math"
+msgstr "Matematika"
+
+#: app.src#GID_MODIFY.string.text
+msgid "Modify"
+msgstr "Upraviť"
+
+#: app.src#GID_NAVIGATOR.string.text
+msgid "Navigate"
+msgstr "Previesť"
+
+#: app.src#GID_OPTIONS.string.text
+msgid "Options"
+msgstr "Možnosti"
+
+#: app.src#GID_SPECIAL.string.text
+msgid "Special Functions"
+msgstr "Špeciálne funkcie"
+
+#: app.src#GID_TABLE.string.text
+msgid "Table"
+msgstr "Tabuľka"
+
+#: app.src#GID_TEMPLATE.string.text
+msgid "Templates"
+msgstr "Šablóny"
+
+#: app.src#GID_TEXT.string.text
+msgid "Text"
+msgstr "Text"
+
+#: app.src#GID_VIEW.string.text
+msgid "View"
+msgstr "Zobraziť"
+
+#: app.src#RID_ENVTOOLBOX.string.text
+msgid "Function Bar"
+msgstr "Panel funkcií"
+
+#: app.src#RID_HELPBAR.string.text
+msgid "Help Bar"
+msgstr "Panel pomocníka"
+
+#: app.src#RID_SECURITY_WARNING_TITLE.string.text
+msgid "Security Warning"
+msgstr "Bezpečnostné varovanie"
+
+#: app.src#RID_SPECIALCONFIG_ERROR.string.text
+msgid ""
+"An error has occurred in the special configuration.\n"
+"Please contact your administrator."
+msgstr ""
+"Nastala chyba vo zvláštnej konfigurácii.\n"
+"Prosím kontaktujte vašeho administrátora."
+
+#: app.src#RID_STR_HELP.string.text
+msgid "Help"
+msgstr "Pomocník"
+
+#: app.src#RID_STR_HLPFILENOTEXIST.string.text
+msgid "The help file for this topic is not installed."
+msgstr "Pre túto tému nebol nainštalovaný príslušný súbor s pomocníkom."
+
+#: app.src#RID_STR_NOAUTOSTARTHELPAGENT.string.text
+msgid "No automatic start at 'XX'"
+msgstr "Nespúšťať 'XX' automaticky"
+
+#: app.src#RID_SVXSTR_EDITGRFLINK.string.text
+msgid "Link graphics"
+msgstr "Prepojiť obrázky"
+
+#: app.src#RID_SVXSTR_FILELINK.string.text
+msgid "Document"
+msgstr "Dokument"
+
+#: app.src#RID_SVXSTR_GRAFIKLINK.string.text
+msgctxt "app.src#RID_SVXSTR_GRAFIKLINK.string.text"
+msgid "Graphic"
+msgstr "Obrázok"
+
+#: app.src#RID_SVXSTR_GRFILTER_FILTERERROR.string.text
+msgid "Graphics filter not found"
+msgstr "Grafický filter nebol nájdený"
+
+#: app.src#RID_SVXSTR_GRFILTER_FORMATERROR.string.text
+msgid "Unknown graphics format"
+msgstr "Neznámy formát obrázka"
+
+#: app.src#RID_SVXSTR_GRFILTER_IOERROR.string.text
+msgid "Graphics file cannot be read"
+msgstr "Nie je možné načítať grafický súbor"
+
+#: app.src#RID_SVXSTR_GRFILTER_OPENERROR.string.text
+msgid "Graphics file cannot be opened"
+msgstr "Nie je možné otvoriť grafický súbor"
+
+#: app.src#RID_SVXSTR_GRFILTER_TOOBIG.string.text
+msgid "Not enough memory to insert graphic"
+msgstr "Nedostatok pamäte na vloženie obrázka"
+
+#: app.src#RID_SVXSTR_GRFILTER_VERSIONERROR.string.text
+msgid "This version of the graphics file is not supported"
+msgstr "Tento typ grafického súboru nie je podporovaný"
+
+#: app.src#RID_XMLSEC_DOCUMENTSIGNED.string.text
+msgid " (Signed)"
+msgstr " (podpísaný)"
+
+#: app.src#STR_BYTES.string.text
+msgid "Bytes"
+msgstr "Bajtov"
+
+#: app.src#STR_CLOSE.string.text
+msgid "Close"
+msgstr "Zatvoriť"
+
+#: app.src#STR_DDE_ERROR.string.text
+msgid "DDE link to % for % area % are not available."
+msgstr "DDE odkaz na % pre % oblasť % nie je dostupný."
+
+#: app.src#STR_ERRUNOEVENTBINDUNG.string.text
+msgid ""
+"An appropriate component method %1\n"
+"could not be found.\n"
+"\n"
+"Check spelling of method name."
+msgstr ""
+"Nebola nájdená vhodná metóda\n"
+"komponentu %1.\n"
+"\n"
+"Skontrolujte názov metódy."
+
+#: app.src#STR_GB.string.text
+msgid "GB"
+msgstr "GB"
+
+#: app.src#STR_ISMODIFIED.string.text
+msgid "Do you want to save the changes to %1?"
+msgstr "Prajete si zmeny uložiť do %1?"
+
+#: app.src#STR_KB.string.text
+msgid "KB"
+msgstr "kB"
+
+#: app.src#STR_MB.string.text
+msgid "MB"
+msgstr "MB"
+
+#: app.src#STR_NONAME.string.text
+msgid "Untitled"
+msgstr "Bez_názvu"
+
+#: app.src#STR_NONE.string.text
+msgid "- None -"
+msgstr "- žiadna -"
+
+#: app.src#STR_QUERY_UPDATE_LINKS.string.text
+msgid "Update all links?"
+msgstr "Aktualizovať všetky odkazy?"
+
+#: app.src#STR_QUICKSTART_EXIT.string.text
+msgid "Exit Quickstarter"
+msgstr "Ukončiť Quickstarter"
+
+#: app.src#STR_QUICKSTART_FILE.string.text
+msgid "File"
+msgstr "Súbor"
+
+#: app.src#STR_QUICKSTART_FILEOPEN.string.text
+msgid "Open Document..."
+msgstr "Otvoriť dokument..."
+
+#: app.src#STR_QUICKSTART_FROMTEMPLATE.string.text
+msgid "From Template..."
+msgstr "Otvoriť zo šablóny..."
+
+#: app.src#STR_QUICKSTART_LNKNAME.string.text
+msgid "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
+
+#: app.src#STR_QUICKSTART_PRELAUNCH.string.text
+msgid "Load %PRODUCTNAME During System Start-Up"
+msgstr "Načítať %PRODUCTNAME počas štartu systému"
+
+#: app.src#STR_QUICKSTART_PRELAUNCH_UNX.string.text
+msgid "Disable systray Quickstarter"
+msgstr "Vypnúť quickstarter v systémovej lište"
+
+#: app.src#STR_QUICKSTART_RECENTDOC.string.text
+msgid "Recent Documents"
+msgstr "Nedávne dokumenty"
+
+#: app.src#STR_QUICKSTART_STARTCENTER.string.text
+msgid "Startcenter"
+msgstr "Spúšťacie centrum"
+
+#: app.src#STR_QUICKSTART_TIP.string.text
+msgid "%PRODUCTNAME %PRODUCTVERSION Quickstarter"
+msgstr "%PRODUCTNAME %PRODUCTVERSION Quickstarter"
+
+#: app.src#STR_QUITAPP.string.text
+msgid "E~xit"
+msgstr "~Ukončiť"
+
+#: app.src#STR_SFX_FILTERNAME_ALL.string.text
+msgid "All files (*.*)"
+msgstr "Všetky súbory (*.*)"
+
+#: app.src#STR_STANDARD.string.text
+msgctxt "app.src#STR_STANDARD.string.text"
+msgid "Standard"
+msgstr "Štandardný"
+
+#: app.src#STR_STANDARD_SHORTCUT.string.text
+msgctxt "app.src#STR_STANDARD_SHORTCUT.string.text"
+msgid "Standard"
+msgstr "Štandardný"
+
+#: app.src#STR_STYLE_FILTER_AUTO.string.text
+msgid "Automatic"
+msgstr "Automaticky"
+
+#: app.src#RID_SECURITY_WARNING_HYPERLINK.warningbox.text
+msgid "This hyperlink is going to open \"%s\". Do you want to proceed?"
+msgstr "Tento odkaz otvorí \"%s\". Chcete pokračovať?"
+
+#: app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.warningbox.text
+msgid ""
+"For security reasons, the hyperlink cannot be executed.\n"
+"The stated address will not be opened."
+msgstr ""
+"Hypertextový odkaz nebude z bezpečnostných dôvodov vykonaný.\n"
+"Uvedená adresa nebude otvorená."
+
+#: dde.src#MD_DDE_LINKEDIT.GROUP_DDE_CHG.fixedline.text
+msgid "Modify link"
+msgstr "Upraviť odkaz"
+
+#: dde.src#MD_DDE_LINKEDIT.FT_DDE_APP.fixedtext.text
+msgid "~Application:"
+msgstr "~Aplikácia:"
+
+#: dde.src#MD_DDE_LINKEDIT.FT_DDE_ITEM.fixedtext.text
+msgid "~Category:"
+msgstr "~Kategória:"
+
+#: dde.src#MD_DDE_LINKEDIT.FT_DDE_TOPIC.fixedtext.text
+msgid "~File:"
+msgstr "~Súbor:"
+
+#: dde.src#MD_DDE_LINKEDIT.modaldialog.text
+msgid "Modify Link"
+msgstr "Upraviť odkaz"
+
+#: newhelp.src#TP_HELP_SEARCH.CB_FULLWORDS.checkbox.text
+msgid "~Complete words only"
+msgstr "Iba ~celé slová"
+
+#: newhelp.src#TP_HELP_SEARCH.CB_SCOPE.checkbox.text
+msgid "Find in ~headings only"
+msgstr "~Hľadať iba v nadpisoch"
+
+#: newhelp.src#DLG_HELP_ADDBOOKMARK.FT_BOOKMARK_TITLE.fixedtext.text
+msgid "Bookmark:"
+msgstr "Záložka:"
+
+#: newhelp.src#TP_HELP_BOOKMARKS.FT_BOOKMARKS.fixedtext.text
+msgid "~Bookmarks"
+msgstr "Zálož~ky"
+
+#: newhelp.src#TP_HELP_INDEX.FT_EXPRESSION.fixedtext.text
+msgid "~Search term"
+msgstr "Hľadaný výra~z"
+
+#: newhelp.src#TP_HELP_SEARCH.FT_SEARCH.fixedtext.text
+msgid "S~earch term"
+msgstr "~Hľadaný výraz"
+
+#: newhelp.src#RID_INFO_NOSEARCHRESULTS.infobox.text
+msgid "No topics found."
+msgstr "Žiadne témy neboli nájdené."
+
+#: newhelp.src#RID_INFO_NOSEARCHTEXTFOUND.infobox.text
+msgid "The text you entered was not found."
+msgstr "Zadaný text nebol nájdený."
+
+#: newhelp.src#MENU_HELP_BOOKMARKS.MID_DELETE.menuitem.text
+msgid "Delete"
+msgstr "Zmazať"
+
+#: newhelp.src#MENU_HELP_BOOKMARKS.MID_OPEN.menuitem.text
+msgid "Display"
+msgstr "Zobraziť"
+
+#: newhelp.src#MENU_HELP_BOOKMARKS.MID_RENAME.menuitem.text
+msgid "Rename..."
+msgstr "Premenovať..."
+
+#: newhelp.src#DLG_HELP_ADDBOOKMARK.modaldialog.text
+msgid "Add to Bookmarks"
+msgstr "Pridať k záložkám"
+
+#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_BOOKMARKS.pageitem.text
+msgid "Bookmarks"
+msgstr "Záložky"
+
+#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_CONTENTS.pageitem.text
+msgid "Contents"
+msgstr "Obsah"
+
+#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_INDEX.pageitem.text
+msgid "Index"
+msgstr "Index"
+
+#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_SEARCH.pageitem.text
+msgid "Find"
+msgstr "Nájsť"
+
+#: newhelp.src#TP_HELP_BOOKMARKS.PB_BOOKMARKS.pushbutton.text
+msgctxt "newhelp.src#TP_HELP_BOOKMARKS.PB_BOOKMARKS.pushbutton.text"
+msgid "~Display"
+msgstr "Zo~braziť"
+
+#: newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.pushbutton.text
+msgctxt "newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.pushbutton.text"
+msgid "~Display"
+msgstr "Zo~braziť"
+
+#: newhelp.src#TP_HELP_SEARCH.PB_OPEN_SEARCH.pushbutton.text
+msgctxt "newhelp.src#TP_HELP_SEARCH.PB_OPEN_SEARCH.pushbutton.text"
+msgid "~Display"
+msgstr "Zo~braziť"
+
+#: newhelp.src#TP_HELP_SEARCH.PB_SEARCH.pushbutton.text
+msgid "~Find"
+msgstr "~Nájsť"
+
+#: newhelp.src#DLG_HELP_ADDBOOKMARK.STR_BOOKMARK_RENAME.string.text
+msgid "Rename Bookmark"
+msgstr "Premenovať záložku"
+
+#: newhelp.src#RID_HELP_ONSTARTUP_TEXT.string.text
+msgid "~Display %PRODUCTNAME %MODULENAME Help at Startup"
+msgstr "Zo~braziť Pomocníka %PRODUCTNAME %MODULENAME pri spustení programu"
+
+#: newhelp.src#STR_HELP_BUTTON_ADDBOOKMARK.string.text
+msgid "Add to Bookmarks..."
+msgstr "Pridať k záložkám..."
+
+#: newhelp.src#STR_HELP_BUTTON_INDEX_OFF.string.text
+msgid "Hide Navigation Pane"
+msgstr "Skryť navigačný panel"
+
+#: newhelp.src#STR_HELP_BUTTON_INDEX_ON.string.text
+msgid "Show Navigation Pane"
+msgstr "Zobraziť navigačný panel"
+
+#: newhelp.src#STR_HELP_BUTTON_NEXT.string.text
+msgid "Next Page"
+msgstr "Ďalšia strana"
+
+#: newhelp.src#STR_HELP_BUTTON_PREV.string.text
+msgid "Previous Page"
+msgstr "Predchádzajúca strana"
+
+#: newhelp.src#STR_HELP_BUTTON_PRINT.string.text
+msgid "Print..."
+msgstr "Tlač..."
+
+#: newhelp.src#STR_HELP_BUTTON_SEARCHDIALOG.string.text
+msgid "Find on this Page..."
+msgstr "Nájsť na tejto strane..."
+
+#: newhelp.src#STR_HELP_BUTTON_SOURCEVIEW.string.text
+msgid "HTML Source"
+msgstr "Zdrojový HTML text"
+
+#: newhelp.src#STR_HELP_BUTTON_START.string.text
+msgid "First Page"
+msgstr "Prvá strana"
+
+#: newhelp.src#STR_HELP_FIRST_MESSAGE.string.text
+msgid "The Help is being started..."
+msgstr "Spúšťa sa pomocník..."
+
+#: newhelp.src#STR_HELP_MENU_TEXT_COPY.string.text
+msgid "~Copy"
+msgstr "~Kopírovať"
+
+#: newhelp.src#STR_HELP_MENU_TEXT_SELECTION_MODE.string.text
+msgid "Select Text"
+msgstr "Vybrať text"
+
+#: newhelp.src#STR_HELP_WINDOW_TITLE.string.text
+msgid "%PRODUCTNAME Help"
+msgstr "Pomocník %PRODUCTNAME"
+
+#: sfx.src#STR_ACCTITLE_PRODUCTIVITYTOOLS.string.text
+msgid "%PRODUCTNAME"
+msgstr "%PRODUCTNAME"
+
+#: doc.src#MSG_ERROR_EMPTY_NAME.errorbox.text
+msgid "Please specify a name."
+msgstr "Uveďte meno."
+
+#: doc.src#MSG_ERROR_RENAME_TEMPLATE.errorbox.text
+msgid "Error renaming template."
+msgstr "Chyba pri premenovaní­ šablóny."
+
+#: doc.src#MSG_ERROR_RENAME_TEMPLATE_REGION.errorbox.text
+msgid "Error renaming template category."
+msgstr "Chyba pri premenovaní­ kategórie šablóny."
+
+#: doc.src#MSG_ERROR_RESCAN.errorbox.text
+msgid "The update could not be saved."
+msgstr "Nie je možné uložiť aktualizácie"
+
+#: doc.src#MSG_ERROR_UNIQ_NAME.errorbox.text
+msgid ""
+"Please specify a unique name.\n"
+"Entries must not be case specific."
+msgstr ""
+"Prosím zadajte jedinečné meno.\n"
+"V položkách nesmie záležať na veľkosti písmen."
+
+#: doc.src#MSG_PRINT_ERROR.errorbox.text
+msgid "The print job could not be started."
+msgstr "Nie je možné spustiť tlačovú úlohu."
+
+#: doc.src#MSG_CANT_OPEN_TEMPLATE.infobox.text
+msgid "The template could not be opened."
+msgstr "Nie je možné otvoriť šablónu."
+
+#: doc.src#MSG_DOCINFO_CANTREAD.infobox.text
+msgid "Document info cannot be read."
+msgstr "Nejde prečítať informáciu o dokumente."
+
+#: doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.infobox.text
+msgid ""
+"Template directory\n"
+"$(DIR)\n"
+"does not exist."
+msgstr ""
+"Adresár so šablónami\n"
+"$(DIR)\n"
+"neexistuje."
+
+#: doc.src#MSG_VIEW_OPEN_CANT_SAVE.infobox.text
+msgid "Document already open for editing."
+msgstr "Dokument je už otvorený pre úpravy."
+
+#: doc.src#DLG_MACROQUERY.querybox.text
+msgid "This document contains macros. $(TEXT)"
+msgstr "Tento dokument obsahuje makrá. $(TEXT)"
+
+#: doc.src#DLG_MACROQUERY.querybox.title
+msgid "Run Macro"
+msgstr "Spustiť makro"
+
+#: doc.src#MSG_CONFIRM_FILTER.querybox.text
+msgid ""
+"Saving in external formats may have caused\n"
+" information loss. Do you still want to close?"
+msgstr ""
+"Uloženie v externom formáte mohlo spôsobiť\n"
+"stratu informácii. Prajete si naozaj zatvoriť okno?"
+
+#: doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.querybox.text
+msgid ""
+"Name already in use.\n"
+"Do you want to overwrite document template?"
+msgstr ""
+"Meno už bolo použité.\n"
+"Prejete si prepísať šablónu dokumentu?"
+
+#: doc.src#MSG_OPEN_READONLY.querybox.text
+msgid ""
+"Document cannot be opened for editing.\n"
+"Do you want to open it as read-only?"
+msgstr ""
+"Dokument nemôže byť otvorený pre úpravu.\n"
+"Prajete si ho otvoriť iba na čítanie?"
+
+#: doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.querybox.text
+msgid "Do you want to reset the default template?"
+msgstr "Prajete si prestaviť východziu šablónu?"
+
+#: doc.src#MSG_REGION_NOTEMPTY.querybox.text
+msgid ""
+"The category is not empty.\n"
+"Delete anyway?"
+msgstr ""
+"Kategória nie je prázdna.\n"
+"Naozaj zmazať?"
+
+#: doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.querybox.text
+msgid ""
+"The document has to be saved before it can be signed. Saving the document "
+"removes all present signatures.\n"
+"Do you want to save the document?"
+msgstr ""
+"Pred podpísaním musí byť dokument uložený. Uloženie dokumentu odstráni "
+"všetky súčasné podpisy.\n"
+"Chcete dokument uložiť?"
+
+#: doc.src#BTN_CANCEL.string.text
+msgid "Do Not Run"
+msgstr "Nespúšťať"
+
+#: doc.src#BTN_OK.string.text
+msgid "Run"
+msgstr "Spustiť"
+
+#: doc.src#FT_CANCEL.string.text
+msgid ""
+"According to the security settings, the macros in this document should not "
+"be run. Do you want to run them anyway?"
+msgstr ""
+"Podľa nastavení zabezpečenia, makrá v tomto dokumente by nemali byť "
+"spustené. Prajete si ich napriek tomu spustiť?"
+
+#: doc.src#FT_OK.string.text
+msgid "Do you want to allow these macros to be run?"
+msgstr "Určite chcete povoliť spustenie týchto makier?"
+
+#: doc.src#RID_DLSTATUS.INET_CONNECTION_CLOSED.string.text
+msgid "Disconnected"
+msgstr "Spojenie prerušené"
+
+#: doc.src#RID_DLSTATUS.INET_CONNECT_START.string.text
+msgid "Opening $(TARGET) at $(HOST)"
+msgstr "Otvára sa $(TARGET) u $(HOST)"
+
+#: doc.src#RID_DLSTATUS.INET_NAME_RESOLVE_START.string.text
+msgid "Connection to: $(HOST). Waiting for response..."
+msgstr "Pripojenie k: $(HOST). Čaká sa na spojenie..."
+
+#: doc.src#RID_DLSTATUS.INET_READ_STATUS.string.text
+msgid "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
+msgstr "Nahráva sa: $(TARGET) z $(HOST). Stiahnuté: $(BYTE)"
+
+#: doc.src#RID_OFFICEFILTER.string.text
+msgid "%PRODUCTNAME Documents"
+msgstr "Dokumenty %PRODUCTNAME"
+
+#: doc.src#RID_STR_FILTBASIC.string.text
+msgid "%PRODUCTNAME Basic libraries"
+msgstr "Knižnice BASIC %PRODUCTNAME"
+
+#: doc.src#RID_STR_FILTCONFIG.string.text
+msgid "Configurations"
+msgstr "Konfigurácia"
+
+#: doc.src#RID_STR_WARNSTYLEOVERWRITE.string.text
+msgid "Should the \"$(ARG1)\" Style be replaced?"
+msgstr "Má byť štýl \"$(ARG1)\" nahradený?"
+
+#: doc.src#RID_SVXSTR_SECURITY_ADDPATH.string.text
+msgid "Add this directory to the list of secure paths: "
+msgstr "Pridať tento adresár do zoznamu bezpečných ciest: "
+
+#: doc.src#STR_AUTOMATICVERSION.string.text
+msgid "Automatically saved version"
+msgstr "Automaticky uložená verzia"
+
+#: doc.src#STR_BACKUP_COPY.string.text
+msgid "Copy"
+msgstr "Kopírovať"
+
+#: doc.src#STR_CLOSEDOC.string.text
+msgid "~Close"
+msgstr "~Zatvoriť"
+
+#: doc.src#STR_CLOSEDOC_ANDRETURN.string.text
+msgid "~Close & Return to "
+msgstr "~Zatvoriť a návrat do "
+
+#: doc.src#STR_CONFIG.string.text
+msgid "Configuration"
+msgstr "Konfigurácia"
+
+#: doc.src#STR_DELETE_REGION.string.text
+msgid "Are you sure you want to delete the region \"$1\"?"
+msgstr "Určite chcete zmazať región \"$1\"?"
+
+#: doc.src#STR_DELETE_TEMPLATE.string.text
+msgid "Are you sure you want to delete the entry \"$1\"?"
+msgstr "Určite chcete zmazať položku \"$1\"?"
+
+#: doc.src#STR_DOCINFO_INFOFIELD.string.text
+msgid "Info %1"
+msgstr "Informácia %1"
+
+#: doc.src#STR_DOCTYPENAME_MESSAGE.string.text
+msgid "Message"
+msgstr "Správa"
+
+#: doc.src#STR_DOCTYPENAME_SC.string.text
+msgid "Spreadsheet"
+msgstr "Zošit"
+
+#: doc.src#STR_DOCTYPENAME_SD.string.text
+msgid "Drawing"
+msgstr "Kresba"
+
+#: doc.src#STR_DOCTYPENAME_SI.string.text
+msgid "Presentation"
+msgstr "Prezentácia"
+
+#: doc.src#STR_DOCTYPENAME_SW.string.text
+msgid "Text Document"
+msgstr "Textový dokument"
+
+#: doc.src#STR_DOCTYPENAME_SWGLOB.string.text
+msgid "Master Document"
+msgstr "Hlavný dokument"
+
+#: doc.src#STR_DOCTYPENAME_SWWEB.string.text
+msgid "HTML Document"
+msgstr "HTML dokument"
+
+#: doc.src#STR_DOC_LOADING.string.text
+msgid "Loading Document"
+msgstr "Načíta sa súbor"
+
+#: doc.src#STR_EDIT.string.text
+msgid "Edit"
+msgstr "Upraviť"
+
+#: doc.src#STR_ERROR_COPY_TEMPLATE.string.text
+msgid ""
+"Error copying template \"$1\". \n"
+"A template with this name may already exist."
+msgstr ""
+"Chyba pri kopírovaní šablóny \"$1\". \n"
+"Šablóna s týmto menom už pravdepodobne existuje."
+
+#: doc.src#STR_ERROR_DELETE_TEMPLATE.string.text
+msgid "The template \"$1\" can not be deleted."
+msgstr "Nie je možné zmazať šablónu \"$1\"."
+
+#: doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.string.text
+msgid "Some template files are protected and can not be deleted."
+msgstr "Niektoré súbory so šablónami sú chránené a nemôžu byť zmazané."
+
+#: doc.src#STR_ERROR_MOVE_TEMPLATE.string.text
+msgid "Error moving template \"$1\"."
+msgstr "Chyba pri presune šablóny \"$1\"."
+
+#: doc.src#STR_ERROR_NOSTORAGE.string.text
+msgid "The selected file has an incorrect format."
+msgstr "Vybraný súbor má neplatný formát."
+
+#: doc.src#STR_ERROR_SAVE.string.text
+msgid "Error recording document "
+msgstr "Chyba pri zaznamenávaní dokumentu "
+
+#: doc.src#STR_ERROR_SAVE_TEMPLATE.string.text
+msgid "Error saving template "
+msgstr "Chyba pri ukladaní šablóny "
+
+#: doc.src#STR_EXPORTASPDF_TITLE.string.text
+msgid "Export as PDF"
+msgstr "Export do PDF"
+
+#: doc.src#STR_EXPORTBUTTON.string.text
+msgid "Export"
+msgstr "Exportovať"
+
+#: doc.src#STR_EXPORTWITHCFGBUTTON.string.text
+msgid "Export..."
+msgstr "Export..."
+
+#: doc.src#STR_FRAMEOBJECT_PROPERTIES.string.text
+msgid "Propert~ies..."
+msgstr "~Vlastnosti..."
+
+#: doc.src#STR_FSET_FILTERNAME0.string.text
+msgid "HTML (FrameSet)"
+msgstr "HTML (sada rámcov)"
+
+#: doc.src#STR_FSET_FILTERNAME1.string.text
+msgid "%PRODUCTNAME Frame Document"
+msgstr "Dokument s rámcami %PRODUCTNAME"
+
+#: doc.src#STR_HIDDENINFO_CONTAINS.string.text
+msgid ""
+"This document contains:\n"
+"\n"
+msgstr ""
+"Tento dokument obsahuje:\n"
+"\n"
+
+#: doc.src#STR_HIDDENINFO_CONTINUE_CREATEPDF.string.text
+msgid "Do you want to continue creating a PDF file?"
+msgstr "Chcete pokračovať vo vytváraní PDF súboru?"
+
+#: doc.src#STR_HIDDENINFO_CONTINUE_PRINTING.string.text
+msgid "Do you want to continue printing the document?"
+msgstr "Chcete pokračovať v tlačení dokumentu?"
+
+#: doc.src#STR_HIDDENINFO_CONTINUE_SAVING.string.text
+msgid "Do you want to continue saving the document?"
+msgstr "Chcete pokračovať v ukladaní dokumentu?"
+
+#: doc.src#STR_HIDDENINFO_CONTINUE_SIGNING.string.text
+msgid "Do you want to continue signing the document?"
+msgstr "Chcete pokračovať v podpisovaní dokumentu?"
+
+#: doc.src#STR_HIDDENINFO_DOCVERSIONS.string.text
+msgid "Document versions"
+msgstr "Verzie dokumentu"
+
+#: doc.src#STR_HIDDENINFO_FIELDS.string.text
+msgid "Fields"
+msgstr "Polia"
+
+#: doc.src#STR_HIDDENINFO_LINKDATA.string.text
+msgid "Linked data..."
+msgstr "Prepojené dáta..."
+
+#: doc.src#STR_HIDDENINFO_NOTES.string.text
+msgid "Notes"
+msgstr "Poznámky"
+
+#: doc.src#STR_HIDDENINFO_RECORDCHANGES.string.text
+msgid "Recorded changes"
+msgstr "Zaznamenané zmeny"
+
+#: doc.src#STR_LABEL_FILEFORMAT.string.text
+msgid "File format:"
+msgstr "Formát súboru:"
+
+#: doc.src#STR_MACROS.string.text
+msgid "Macros"
+msgstr "Makrá"
+
+#: doc.src#STR_NEW_FILENAME_SAVE.string.text
+msgid ""
+"If you do not want to overwrite the original document, you should save your "
+"work under a new filename."
+msgstr ""
+"Ak nechcete prepísať originálny dokument, mali by ste uložiť vašu prácu pod "
+"novým názvom súboru."
+
+#: doc.src#STR_NOSAVEANDCLOSE.string.text
+msgid "~Discard"
+msgstr "Zaho~diť"
+
+#: doc.src#STR_OBJECT.string.text
+msgid "Object"
+msgstr "Objekt"
+
+#: doc.src#STR_PACKNGO_NEWMEDIUM.string.text
+msgid "Insert the next data carrier and click OK."
+msgstr "Vložte prosím ďalší nosič dát a stlačte OK."
+
+#: doc.src#STR_PACKNGO_NOACCESS.string.text
+msgid "Access to the current data medium not possible."
+msgstr "Prístup k terajšiemu dátovému médiu nie je možný."
+
+#: doc.src#STR_PRINT_STYLES.string.text
+msgid "Printing Styles"
+msgstr "Štýly tlače"
+
+#: doc.src#STR_PRINT_STYLES_HEADER.string.text
+msgid "Styles in "
+msgstr "Štýly v "
+
+#: doc.src#STR_QRYTEMPL_KEEP_BTN.string.text
+msgid "~Keep Old Styles"
+msgstr "~Nechať staré štýly"
+
+#: doc.src#STR_QRYTEMPL_MESSAGE.string.text
+msgid ""
+"The template '$(ARG1)' on which this document is based, has been modified. "
+"Do you want to update style based formattings according to the modified "
+"template?"
+msgstr ""
+"Šablóna '$(ARG1)' na ktorej je tento dokument založený bola zmenená. Chcete "
+"aktualizovať formátovania založené na štýle podľa zmenenej šablóny?"
+
+#: doc.src#STR_QRYTEMPL_UPDATE_BTN.string.text
+msgid "~Update Styles"
+msgstr "Akt~ualizovať štýly"
+
+#: doc.src#STR_QUERY_DEFAULT_TEMPLATE.string.text
+msgid "Should the template \"$(TEXT)\" become the default template?"
+msgstr "Má sa šablóna \"$(TEXT)\" stať východzou šablónou?"
+
+#: doc.src#STR_QUERY_MUSTOWNFORMAT.string.text
+msgid ""
+"Documents cannot be saved in $(FORMAT) format. Do you\n"
+"want to save your changes using the $(OWNFORMAT) format?"
+msgstr ""
+"Dokumenty nemôžu byť uložené vo formáte $(FORMAT).\n"
+"Prajete si uložiť svoje zmeny s použitím formátu $(OWNFORMAT)?"
+
+#: doc.src#STR_QUERY_SAVE_DOCUMENT.string.text
+msgid ""
+"The document \"$(DOC)\" has been modified.\n"
+"Do you want to save your changes?"
+msgstr ""
+"Dokument \"$(DOC)\" bol zmenený.\n"
+"Chcete uložiť vami vykonané zmeny?"
+
+#: doc.src#STR_SAVEASDOC.string.text
+msgid "Save ~As..."
+msgstr "Uložiť ~ako..."
+
+#: doc.src#STR_SAVECOPYDOC.string.text
+msgid "Save Copy ~as..."
+msgstr "Uložiť kópiu ~ako..."
+
+#: doc.src#STR_SAVEDOC.string.text
+msgid "~Save"
+msgstr "~Uložiť"
+
+#: doc.src#STR_SHARED.string.text
+msgid " (shared)"
+msgstr " (zdieľaný)"
+
+#: doc.src#STR_STYLES.string.text
+msgid "Styles"
+msgstr "Štýly"
+
+#: doc.src#STR_TEMPLATE_FILTER.string.text
+msgctxt "doc.src#STR_TEMPLATE_FILTER.string.text"
+msgid "Templates"
+msgstr "Šablóny"
+
+#: doc.src#STR_TEMPL_MOVED.string.text
+msgid ""
+"The template \"$(TEMPLATE)\" was not found at the original location. A "
+"template with the same name exists at \"$(FOUND)\". Should this template be "
+"used in the future when comparing?"
+msgstr ""
+"Šablóna \"$(TEMPLATE)\" nebola nájdená na pôvodnom mieste. Šablóna z rovnakým "
+"názvom sa nachádza v \"$(FOUND)\".Má byť táto šablóna v budúcnosti použitá na "
+"porovnanie?"
+
+#: doc.src#STR_TEMPL_RESET.string.text
+msgid ""
+"The template \"$(TEMPLATE)\" has not been found. Should the template be looked "
+"for the next time the document is opened ?"
+msgstr ""
+"Šablóna \"$(TEMPLATE)\" nebola nájdená. Má sa vykonávať hľadanie šablóny i pri "
+"ďalšom otvorení dokumentu?"
+
+#: doc.src#STR_UPDATEDOC.string.text
+msgid "~Update"
+msgstr "Akt~ualizovať"
+
+#: doc.src#STR_WIZARD.string.text
+msgid " AutoPilot"
+msgstr " Sprievodca"
+
+#: doc.src#STR_XMLSEC_ODF12_EXPECTED.string.text
+msgid ""
+"The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-"
+"Options-Load/Save-General. Signing documents requires ODF 1.2 "
+"(OpenOffice.org 3.x)."
+msgstr ""
+"Verzia formátu dokumentov je nastavená v Nástroje-Možnosti-"
+"Načítať/Uložiť-Všeobecné na ODF 1.1 (OpenOffice.org 2.x). Podpisovanie "
+"dokumentov vyžaduje verziu ODF 1.2 (OpenOffice.org 3.x)."
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.FL_EDIT.fixedline.text
+msgid "New template"
+msgstr "Nová šablóna"
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.fixedline.text
+msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.fixedline.text"
+msgid "Templates"
+msgstr "Šablóny"
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.fixedtext.text
+msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.fixedtext.text"
+msgid "~Categories"
+msgstr "Kate~górie"
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.FT_STYLESHEETS.fixedtext.text
+msgid "~Templates"
+msgstr "Šabló~ny"
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.modaldialog.text
+msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.modaldialog.text"
+msgid "Templates"
+msgstr "Šablóny"
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.pushbutton.text
+msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.pushbutton.text"
+msgid "~Edit"
+msgstr "~Upraviť"
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.BT_ORGANIZE.pushbutton.text
+msgid "~Organizer..."
+msgstr "~Organizátor..."
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.1.itemlist.text
+msgid "My Templates"
+msgstr "Moje šablóny"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.10.itemlist.text
+msgid "Miscellaneous"
+msgstr "Rôzne"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.2.itemlist.text
+msgid "Business Correspondence"
+msgstr "Obchodná korešpondencia"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.3.itemlist.text
+msgid "Other Business Documents"
+msgstr "Ostatné obchodné dokumenty"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.4.itemlist.text
+msgid "Personal Correspondence and Documents"
+msgstr "Osobná korešpondencia a dokumenty"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.5.itemlist.text
+msgid "Forms and Contracts"
+msgstr "Formuláre a zmluvy"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.6.itemlist.text
+msgid "Finances"
+msgstr "Financie"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.7.itemlist.text
+msgid "Education"
+msgstr "Školenie"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.8.itemlist.text
+msgid "Presentation Backgrounds"
+msgstr "Pozadia prezentácie"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.9.itemlist.text
+msgid "Presentations"
+msgstr "Prezentácie"
+
+#: doctempl.src#RID_CNT_STR_WAITING.string.text
+msgid "The templates are being initialized for first-time usage."
+msgstr "Šablóny sú inicializované pre prvé použitie."
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.menubutton.text
+msgid "Commands"
+msgstr "Príkazy"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_FROM.menuitem.text
+msgid "Import Template..."
+msgstr "Importovať šablónu..."
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_TO.menuitem.text
+msgid "Export Template..."
+msgstr "Exportovať šablónu..."
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DEFAULT_TEMPLATE.menuitem.text
+msgid "Set As Default Template"
+msgstr "Nastaviť ako východziu šablónu"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DELETE.menuitem.text
+msgid "~Delete"
+msgstr "~Zmazať"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.menuitem.text
+msgctxt "docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.menuitem.text"
+msgid "~Edit"
+msgstr "~Upraviť"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_NEW.menuitem.text
+msgid "~New"
+msgstr "~Nový"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINT.menuitem.text
+msgid "~Print"
+msgstr "~Tlač"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINTER_SETUP.menuitem.text
+msgid "Printer Settings..."
+msgstr "Nastavenia tlačiarne..."
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESCAN.menuitem.text
+msgid "Update"
+msgstr "Aktualizácia"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESET_DEFAULT_TEMPLATE.menuitem.text
+msgid "Reset Default Template"
+msgstr "Obnoviť východziu šablónu"
+
+#: docvor.src#DLG_ORGANIZE.modaldialog.text
+msgid "Template Management"
+msgstr "Správa šablón"
+
+#: docvor.src#DLG_ORGANIZE.BTN_OK.okbutton.text
+msgid "Close"
+msgstr "Zatvoriť"
+
+#: docvor.src#DLG_ORGANIZE.BTN_ADDRESSTEMPLATE.pushbutton.text
+msgid "~Address Book..."
+msgstr "~Adresár..."
+
+#: docvor.src#DLG_ORGANIZE.BTN_FILES.pushbutton.text
+msgid "~File..."
+msgstr "~Súbor..."
+
+#: docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.1.stringlist.text
+msgctxt "docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.1.stringlist.text"
+msgid "Templates"
+msgstr "Šablóny"
+
+#: docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.2.stringlist.text
+msgctxt "docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.2.stringlist.text"
+msgid "Documents"
+msgstr "Dokumenty"
+
+#: docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.1.stringlist.text
+msgctxt "docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.1.stringlist.text"
+msgid "Templates"
+msgstr "Šablóny"
+
+#: docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.2.stringlist.text
+msgctxt "docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.2.stringlist.text"
+msgid "Documents"
+msgstr "Dokumenty"
+
+#: new.src#DLG_NEW_FILE.BTN_PREVIEW.checkbox.text
+msgid "Pre~view"
+msgstr "~Náhľad"
+
+#: new.src#DLG_NEW_FILE.CB_FRAME_STYLE.checkbox.text
+msgid "~Frame"
+msgstr "Rám~ec"
+
+#: new.src#DLG_NEW_FILE.CB_MERGE_STYLE.checkbox.text
+msgid "~Overwrite"
+msgstr "~Prepísať"
+
+#: new.src#DLG_NEW_FILE.CB_NUM_STYLE.checkbox.text
+msgid "N~umbering"
+msgstr "Čí~slovanie"
+
+#: new.src#DLG_NEW_FILE.CB_PAGE_STYLE.checkbox.text
+msgid "~Pages"
+msgstr "~Strany"
+
+#: new.src#DLG_NEW_FILE.CB_TEXT_STYLE.checkbox.text
+msgid "Te~xt"
+msgstr "Te~xt"
+
+#: new.src#DLG_NEW_FILE.GB_DOCINFO.fixedline.text
+msgid "Description"
+msgstr "Popis"
+
+#: new.src#DLG_NEW_FILE.FT_DESC.fixedtext.text
+msgid "~Description"
+msgstr "~Popis"
+
+#: new.src#DLG_NEW_FILE.FT_KEYWORDS.fixedtext.text
+msgid "~Key words"
+msgstr "~Kľúčové slová"
+
+#: new.src#DLG_NEW_FILE.FT_REGION.fixedtext.text
+msgctxt "new.src#DLG_NEW_FILE.FT_REGION.fixedtext.text"
+msgid "~Categories"
+msgstr "Kate~górie"
+
+#: new.src#DLG_NEW_FILE.FT_TEMPLATE.fixedtext.text
+msgid "T~emplates"
+msgstr "Š~ablóny"
+
+#: new.src#DLG_NEW_FILE.FT_THEMA.fixedtext.text
+msgid "Subject"
+msgstr "Predmet"
+
+#: new.src#DLG_NEW_FILE.FT_TITLE.fixedtext.text
+msgid "~Title"
+msgstr "~Nadpis"
+
+#: new.src#DLG_NEW_FILE.modaldialog.text
+msgid "New"
+msgstr "Nový"
+
+#: new.src#DLG_NEW_FILE.BT_MORE.morebutton.text
+msgid "~More"
+msgstr "~Viac"
+
+#: new.src#DLG_NEW_FILE.PB_LOAD_FILE.pushbutton.text
+msgid "From File..."
+msgstr "Zo súboru..."
+
+#: new.src#DLG_NEW_FILE.STR_LOAD_TEMPLATE.string.text
+msgid "Load Styles"
+msgstr "Načítať štýly"
+
+#: alienwarn.src#RID_DLG_ALIEN_WARNING.PB_YES.cancelbutton.text
+msgid "~Save in ODF Format"
+msgstr "~Uložiť v ODF formáte"
+
+#: alienwarn.src#RID_DLG_ALIEN_WARNING.CB_WARNING_OFF.checkbox.text
+msgid "~Ask when not saving in ODF format"
+msgstr "Spýt~ať sa pri ukladaní do iného formátu ako ODF"
+
+#: alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.fixedtext.text
+msgid ""
+"This document may contain formatting or content that cannot be saved in the "
+"%FORMATNAME file format. Do you want to save the document in this format "
+"anyway?\n"
+"\n"
+"Use the latest ODF file format and be sure all formatting and content is "
+"saved correctly."
+msgstr ""
+"Tento dokument môže obsahovať formátovanie alebo obsah, ktorý nemôže byť "
+"uložený vo formáte %FORMATNAME. Napriek tomu chcete uložiť dokument v tomto "
+"formáte?\n"
+"\n"
+"Použite posledný ODF formát súborov pre zabezpečenie že celé formátovanie a "
+"obsah je uložený správne."
+
+#: alienwarn.src#RID_DLG_ALIEN_WARNING.PB_MOREINFO.helpbutton.text
+msgid "~More Information..."
+msgstr "~Viac informácií..."
+
+#: alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.okbutton.text
+msgid "~Keep Current Format"
+msgstr "Zachovať a~ktuálny formát"
+
+#: dialog.src#MSG_ERROR_WRONG_CONFIRM.errorbox.text
+msgid "Faulty password confirmation"
+msgstr "Neplatné potvrdenie hesla"
+
+#: dialog.src#MSG_POOL_STYLE_NAME.infobox.text
+msgid ""
+"Name already exists as a default Style.\n"
+"Please choose another name."
+msgstr ""
+"Názov už existuje ako východzí štýl.\n"
+"Zadajte prosím iný názov."
+
+#: dialog.src#MSG_TABPAGE_INVALIDNAME.infobox.text
+msgid "This name is already in use."
+msgstr "Tento názov sa už používa."
+
+#: dialog.src#MSG_TABPAGE_INVALIDPARENT.infobox.text
+msgid ""
+"This Style cannot be used as a base Style,\n"
+"because it would result in a recursive reference."
+msgstr ""
+"Táto šablóna nemôže byť použitá ako šablóna základná;\n"
+"mohlo by dôjsť ku vzniku rekurzívnych odkazov."
+
+#: dialog.src#MSG_TABPAGE_INVALIDSTYLE.infobox.text
+msgid "This Style does not exist."
+msgstr "Tento štýl neexistuje."
+
+#: dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.menuitem.text
+msgid "Delete..."
+msgstr "Zmazať..."
+
+#: dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.menuitem.text
+msgid "Modify..."
+msgstr "Upraviť..."
+
+#: dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.menuitem.text
+msgid "New..."
+msgstr "Nový..."
+
+#: dialog.src#SID_NAVIGATOR.string.text
+msgid "Navigator"
+msgstr "Navigátor"
+
+#: dialog.src#SID_TASKPANE.string.text
+msgid "Task Pane"
+msgstr "Navigačný panel úloh"
+
+#: dialog.src#STR_APPLY.string.text
+msgid "Apply"
+msgstr "Použiť"
+
+#: dialog.src#STR_DELETE_STYLE.string.text
+msgid "Do you really want to delete Style $1?"
+msgstr "Určite chcete zmazať štýl $1?"
+
+#: dialog.src#STR_DELETE_STYLE_USED.string.text
+msgid "You are deleting an applied Style!\n"
+msgstr "Práve mažete použitý štýl!\n"
+
+#: dialog.src#STR_PDF_EXPORT_SEND.string.text
+msgid "Send"
+msgstr "Odoslať"
+
+#: dialog.src#STR_RESET.string.text
+msgid "~Reset"
+msgstr "Obno~viť"
+
+#: dialog.src#STR_TABPAGE_MANAGESTYLES.string.text
+msgid "Organizer"
+msgstr "Organizátor"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.CB_NEGATIVE.checkbox.text
+msgid "~Negative"
+msgstr "Zápor~né"
+
+#: dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.checkbox.text
+msgctxt "dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.checkbox.text"
+msgid "~Read-only"
+msgstr "Iba na čí~tanie"
+
+#: dinfdlg.src#TP_DOCINFODOC.CB_USE_USERDATA.checkbox.text
+msgid "~Apply user data"
+msgstr "Použiť informácie o použív~ateľovi"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.combobox.text
+msgctxt "dinfdlg.src#SFX_CB_PROPERTY_NAME.combobox.text"
+msgid "-"
+msgstr "-"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.combobox.quickhelptext
+msgid "Property Name"
+msgstr "Názov vlastnosti"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FL_DURATION.fixedline.text
+msgctxt "dinfdlg.src#RID_EDIT_DURATIONS.FL_DURATION.fixedline.text"
+msgid "Duration"
+msgstr "Doba trvania"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_DAY.fixedtext.text
+msgid "~Days"
+msgstr "~Dni(í)"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_HOUR.fixedtext.text
+msgid "H~ours"
+msgstr "H~odiny(ín)"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_MINUTE.fixedtext.text
+msgid "Min~utes"
+msgstr "M~inúty(t)"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_MONTH.fixedtext.text
+msgid "~Months"
+msgstr "~Mesiace(ov)"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_MSECOND.fixedtext.text
+msgid "Millise~conds"
+msgstr "Milise~kundy"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_SECOND.fixedtext.text
+msgid "~Seconds"
+msgstr "~Sekundy(d)"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_YEAR.fixedtext.text
+msgid "~Years"
+msgstr "Rok~y"
+
+#: dinfdlg.src#TP_CUSTOMPROPERTIES.FT_PROPERTIES.fixedtext.text
+msgid "~Properties"
+msgstr "~Vlastnosti"
+
+#: dinfdlg.src#TP_DOCINFODESC.FT_COMMENT.fixedtext.text
+msgid "~Comments"
+msgstr "~Poznámky"
+
+#: dinfdlg.src#TP_DOCINFODESC.FT_KEYWORDS.fixedtext.text
+msgid "~Keywords"
+msgstr "~Kľúčové slová"
+
+#: dinfdlg.src#TP_DOCINFODESC.FT_THEMA.fixedtext.text
+msgid "~Subject"
+msgstr "P~redmet"
+
+#: dinfdlg.src#TP_DOCINFODESC.FT_TITLE.fixedtext.text
+msgid "~Title"
+msgstr "~Nadpis"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_CHANGE.fixedtext.text
+msgid "Modified:"
+msgstr "Zmenený:"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_CREATE.fixedtext.text
+msgid "Created:"
+msgstr "Vytvorený:"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_DOCNO.fixedtext.text
+msgid "Revision number:"
+msgstr "Číslo revízie:"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_FILE.fixedtext.text
+msgid "Location:"
+msgstr "Umiestnenie:"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_FILE_SIZE.fixedtext.text
+msgid "Size:"
+msgstr "Veľkosť:"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.fixedtext.text
+msgid "Type:"
+msgstr "Typ:"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_PRINT.fixedtext.text
+msgid "Last printed:"
+msgstr "Vytlačený:"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_SIGNED.fixedtext.text
+msgid "Digitally signed:"
+msgstr "Digitálne podpísané:"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_TEMPL.fixedtext.text
+msgid "Template:"
+msgstr "Šablóna:"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_TIMELOG.fixedtext.text
+msgid "Total editing time:"
+msgstr "Celkový čas úprav:"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.fixedtext.text
+msgid "after"
+msgstr "po"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.FT_EVERY.fixedtext.text
+msgid "every"
+msgstr "každých"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.fixedtext.text
+msgctxt "dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.fixedtext.text"
+msgid "seconds"
+msgstr "Sekúnd"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.FT_FRAME.fixedtext.text
+msgid "to frame"
+msgstr "K rámcu"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.fixedtext.text
+msgctxt "dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.fixedtext.text"
+msgid "seconds"
+msgstr "Sekúnd"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.FT_URL.fixedtext.text
+msgid "to URL"
+msgstr "na URL"
+
+#: dinfdlg.src#SFX_PB_PROPERTY_REMOVE.imagebutton.text
+msgctxt "dinfdlg.src#SFX_PB_PROPERTY_REMOVE.imagebutton.text"
+msgid "-"
+msgstr "-"
+
+#: dinfdlg.src#SFX_PB_PROPERTY_REMOVE.imagebutton.quickhelptext
+msgid "Remove Property"
+msgstr "Odstrániť vlastnosť"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.modaldialog.text
+msgid "Edit Duration"
+msgstr "Upraviť dĺžku trvania"
+
+#: dinfdlg.src#SID_DOCINFO.1.TP_CUSTOMPROPERTIES.pageitem.text
+msgid "Custom Properties"
+msgstr "Vlastné vlastnosti"
+
+#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.pageitem.text
+msgid "Description"
+msgstr "Popis"
+
+#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.pageitem.text
+msgid "General"
+msgstr "Všeobecné"
+
+#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.pageitem.text
+msgid "Internet"
+msgstr "Internet"
+
+#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFOSECURITY.pageitem.text
+msgid "Security"
+msgstr "Bezpečnosť"
+
+#: dinfdlg.src#TP_CUSTOMPROPERTIES.BTN_ADD.pushbutton.text
+msgid "~Add"
+msgstr "Prid~ať"
+
+#: dinfdlg.src#TP_DOCINFODOC.BTN_DELETE.pushbutton.text
+msgid "Reset"
+msgstr "Obnoviť"
+
+#: dinfdlg.src#TP_DOCINFODOC.BTN_SIGNATURE.pushbutton.text
+msgid "Digital Signature..."
+msgstr "Digitálny podpis..."
+
+#: dinfdlg.src#TP_DOCINFOUSER.BTN_EDITLABEL.pushbutton.text
+msgid "~Info fields..."
+msgstr "Vlas~tné položky..."
+
+#: dinfdlg.src#SFX_QB_WRONG_TYPE.querybox.text
+msgid ""
+"The value entered does not match the specified type.\n"
+"The value will be stored as text."
+msgstr ""
+"Zadaná hodnota nezodpovedá zadanému typu.\n"
+"Hodnota bude uložená ako text."
+
+#: dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_NO.radiobutton.text
+msgid "No"
+msgstr "Nie"
+
+#: dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.radiobutton.text
+msgid "Yes"
+msgstr "Áno"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.RB_FORWARDUPDATE.radiobutton.text
+msgid "Redirect from this document"
+msgstr "Presmerovať z tohto dokumentu"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.RB_NOAUTOUPDATE.radiobutton.text
+msgid "Do not refresh automatically"
+msgstr "Neobnovovať automaticky"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.RB_RELOADUPDATE.radiobutton.text
+msgid "Refresh this document"
+msgstr "Obnoviť dokument"
+
+#: dinfdlg.src#SFX_ST_DURATION_FORMAT.string.text
+msgid " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
+msgstr " R: %1 M: %2 Ď: %3 H: %4 M: %5 S: %6"
+
+#: dinfdlg.src#STR_SFX_NEWOFFICEDOC.string.text
+msgid "%PRODUCTNAME document"
+msgstr "%PRODUCTNAME dokument"
+
+#: dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.string.text
+msgid "Name"
+msgstr "Názov"
+
+#: dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.string.text
+msgid "Type"
+msgstr "Typ"
+
+#: dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_VALUE.string.text
+msgid "Value"
+msgstr "Hodnota"
+
+#: dinfdlg.src#TP_DOCINFODOC.EDIT_FILE_NAME.string.text
+msgid "File Name"
+msgstr "Názov súboru"
+
+#: dinfdlg.src#TP_DOCINFODOC.STR_MULTSIGNED.string.text
+msgid "Multiply signed document"
+msgstr "Viacnásobne podpísaný dokument"
+
+#: dinfdlg.src#TP_DOCINFODOC.STR_UNKNOWNSIZE.string.text
+msgid "unknown"
+msgstr "neznámy"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.STR_FORWARD_ERRMSSG.string.text
+msgid "If you select the option \"%PLACEHOLDER%\", you must enter a URL."
+msgstr "V prípade že si vyberiete možnosť \"%PLACEHOLDER%\", musíte zadať URL."
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.1.stringlist.text
+msgid "Checked by"
+msgstr "Otestované"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.10.stringlist.text
+msgid "E-Mail"
+msgstr "Email"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.11.stringlist.text
+msgid "Forward to"
+msgstr "Poslať ďalej"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.12.stringlist.text
+msgid "Group"
+msgstr "Zoskupiť"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.13.stringlist.text
+msgid "Info"
+msgstr "Informácie"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.14.stringlist.text
+msgid "Language"
+msgstr "Jazyk"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.15.stringlist.text
+msgid "Mailstop"
+msgstr "Mailstop"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.16.stringlist.text
+msgid "Matter"
+msgstr "Vec"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.17.stringlist.text
+msgid "Office"
+msgstr "Kancelária"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.18.stringlist.text
+msgid "Owner"
+msgstr "Vlastník"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.19.stringlist.text
+msgid "Project"
+msgstr "Projekt"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.2.stringlist.text
+msgid "Client"
+msgstr "Klient"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.20.stringlist.text
+msgid "Publisher"
+msgstr "Vydávateľ"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.21.stringlist.text
+msgid "Purpose"
+msgstr "Dôvod"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.22.stringlist.text
+msgid "Received from"
+msgstr "Doručné od"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.23.stringlist.text
+msgid "Recorded by"
+msgstr "Zaznamenané"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.24.stringlist.text
+msgid "Recorded date"
+msgstr "Dátum zaznamenania"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.25.stringlist.text
+msgid "Reference"
+msgstr "Odkaz"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.26.stringlist.text
+msgid "Source"
+msgstr "Zdroj"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.27.stringlist.text
+msgid "Status"
+msgstr "Stav"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.28.stringlist.text
+msgid "Telephone number"
+msgstr "Telefónne číslo"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.29.stringlist.text
+msgid "Typist"
+msgstr "Zapisovateľ"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.3.stringlist.text
+msgid "Date completed"
+msgstr "Dátum ukončenia"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.30.stringlist.text
+msgid "URL"
+msgstr "URL"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.4.stringlist.text
+msgid "Department"
+msgstr "Oddelenie"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.5.stringlist.text
+msgid "Destinations"
+msgstr "Miesta určenia"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.6.stringlist.text
+msgid "Disposition"
+msgstr "Dispozícia"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.7.stringlist.text
+msgid "Division"
+msgstr "Delenie"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.8.stringlist.text
+msgid "Document number"
+msgstr "Číslo dokumentu"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.9.stringlist.text
+msgid "Editor"
+msgstr "Redaktor"
+
+#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.1.stringlist.text
+msgid "Text"
+msgstr "Text"
+
+#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.2.stringlist.text
+msgid "DateTime"
+msgstr "Dátum a čas"
+
+#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.3.stringlist.text
+msgid "Date"
+msgstr "Dátum"
+
+#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.4.stringlist.text
+msgctxt "dinfdlg.src#SFX_LB_PROPERTY_TYPE.4.stringlist.text"
+msgid "Duration"
+msgstr "Doba trvania"
+
+#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.5.stringlist.text
+msgid "Number"
+msgstr "Číslo"
+
+#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.6.stringlist.text
+msgid "Yes or no"
+msgstr "Áno alebo nie"
+
+#: dinfdlg.src#SID_DOCINFO.tabdialog.text
+msgid "Properties of "
+msgstr "Vlastnosti "
+
+#: dinfedt.src#DLG_DOCINFO_EDT.FL_INFO.fixedline.text
+msgid "Names"
+msgstr "Názvy"
+
+#: dinfedt.src#DLG_DOCINFO_EDT.modaldialog.text
+msgid "Edit Field Names"
+msgstr "Upraviť názvy polí­"
+
+#: filedlghelper.src#STR_CB_AUTO_EXTENSION.string.text
+msgid "~Automatic file name extension"
+msgstr "~Automatická prípona súboru"
+
+#: filedlghelper.src#STR_CB_FILTER_OPTIONS.string.text
+msgid "Edit ~filter settings"
+msgstr "Upraviť nastavenie ~filtra"
+
+#: filedlghelper.src#STR_CB_INSERT_AS_LINK.string.text
+msgid "~Link"
+msgstr "~Odkaz"
+
+#: filedlghelper.src#STR_CB_PASSWORD.string.text
+msgid "Save with ~password"
+msgstr "Uložiť s ~heslom"
+
+#: filedlghelper.src#STR_CB_READONLY.string.text
+msgctxt "filedlghelper.src#STR_CB_READONLY.string.text"
+msgid "~Read-only"
+msgstr "Iba na čí~tanie"
+
+#: filedlghelper.src#STR_CB_SELECTION.string.text
+msgid "~Selection"
+msgstr "~Výber"
+
+#: filedlghelper.src#STR_CB_SHOW_PREVIEW.string.text
+msgid "Pr~eview"
+msgstr "~Náhľad"
+
+#: filedlghelper.src#STR_LB_IMAGE_TEMPLATE.string.text
+msgid "Style:"
+msgstr "Štýl:"
+
+#: filedlghelper.src#STR_LB_TEMPLATES.string.text
+msgid "~Templates:"
+msgstr "Ša~blóny:"
+
+#: filedlghelper.src#STR_LB_VERSION.string.text
+msgid "~Version:"
+msgstr "~Verzia:"
+
+#: filedlghelper.src#STR_PB_OPEN.string.text
+msgid "~Open"
+msgstr "~Otvoriť"
+
+#: filedlghelper.src#STR_PB_PLAY.string.text
+msgid "~Play"
+msgstr "~Prehrať"
+
+#: filedlghelper.src#STR_PB_SAVE.string.text
+msgid "~Save"
+msgstr "~Uložiť"
+
+#: filedlghelper.src#STR_PB_STOP.string.text
+msgid "Sto~p"
+msgstr "Zas~taviť"
+
+#: filedlghelper.src#STR_SFX_EXPLORERFILE_BUTTONINSERT.string.text
+msgid "~Insert"
+msgstr "Vlož~iť"
+
+#: filedlghelper.src#STR_SFX_EXPLORERFILE_EXPORT.string.text
+msgid "Export"
+msgstr "Exportovať"
+
+#: filedlghelper.src#STR_SFX_EXPLORERFILE_INSERT.string.text
+msgid "Insert"
+msgstr "Vložiť"
+
+#: filedlghelper.src#STR_SFX_FILEDLG_ACTUALVERSION.string.text
+msgid "Current version"
+msgstr "Aktuálna verzia"
+
+#: filedlghelper.src#STR_SFX_IMPORT_ALL.string.text
+msgid "<All formats>"
+msgstr "<Všetky formáty>"
+
+#: mailwindow.src#RID_ERRBOX_MAIL_CONFIG.errorbox.text
+msgid ""
+"%PRODUCTNAME was unable to find a working e-mail configuration. Please save "
+"this document locally instead and attach it from within your e-mail client."
+msgstr ""
+"%PRODUCTNAME nemohol nájsť funkčné nastavenie pre e-mail. Prosím uložte "
+"dokument lokálne a priložte ho k správe priamo z vášho e-mailového klienta."
+
+#: mgetempl.src#TP_MANAGE_STYLES.CB_AUTO.checkbox.text
+msgid "~AutoUpdate"
+msgstr "~Automatická aktualizácia"
+
+#: mgetempl.src#TP_MANAGE_STYLES.GB_DESC.fixedline.text
+msgid "Contains"
+msgstr "Obsahuje"
+
+#: mgetempl.src#TP_MANAGE_STYLES.FT_BASE.fixedtext.text
+msgid "Linked with"
+msgstr "Spojené s"
+
+#: mgetempl.src#TP_MANAGE_STYLES.FT_NAME.fixedtext.text
+msgid "~Name"
+msgstr "~Názov"
+
+#: mgetempl.src#TP_MANAGE_STYLES.FT_NEXT.fixedtext.text
+msgid "Ne~xt Style"
+msgstr "Ďa~lší štýl"
+
+#: mgetempl.src#TP_MANAGE_STYLES.FT_REGION.fixedtext.text
+msgid "~Category"
+msgstr "~Kategória"
+
+#: newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.FL_COL.fixedline.text
+msgid "Style name"
+msgstr "Názov štýlu"
+
+#: newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.modaldialog.text
+msgid "Create Style"
+msgstr "Vytvoriť štýl"
+
+#: newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MSG_OVERWRITE.querybox.text
+msgid "Style already exists. Overwrite?"
+msgstr "Štýl už existuje. Prepísať?"
+
+#: passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.fixedline.text
+msgctxt "passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.fixedline.text"
+msgid "Password"
+msgstr "Heslo"
+
+#: passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM.fixedtext.text
+msgid "~Confirm"
+msgstr "Potvrd~iť"
+
+#: passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM2.fixedtext.text
+msgid "Confir~m"
+msgstr "Potvrd~iť"
+
+#: passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD.fixedtext.text
+msgid "~Password"
+msgstr "~Heslo"
+
+#: passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD2.fixedtext.text
+msgid "P~assword"
+msgstr "~Heslo"
+
+#: passwd.src#DLG_PASSWD.FT_PASSWD_USER.fixedtext.text
+msgid "~User"
+msgstr "~Používateľ"
+
+#: passwd.src#DLG_PASSWD.modaldialog.text
+msgid "Enter Password"
+msgstr "Zadajte heslo"
+
+#: passwd.src#DLG_PASSWD.TEXT_PASSWD.string.text
+msgctxt "passwd.src#DLG_PASSWD.TEXT_PASSWD.string.text"
+msgid "Password"
+msgstr "Heslo"
+
+#: printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_CANCEL.cancelbutton.text
+msgid "~Cancel"
+msgstr "~Zrušiť"
+
+#: printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.checkbox.text
+msgid "~Do not show warning again"
+msgstr "Upozornenie znovu nezo~brazovať"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_CONVERTTOGREYSCALES.checkbox.text
+msgid "Con~vert colors to grayscale"
+msgstr "Pre~viesť farby na odtiene šedi"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERORIENTATION.checkbox.text
+msgid "Pap~er orientation"
+msgstr "Orientácia papi~era"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERSIZE.checkbox.text
+msgid "P~aper size"
+msgstr "Veľkosť p~apiera"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS.checkbox.text
+msgid "Reduce ~bitmaps"
+msgstr "Redukovať ~bitové mapy"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS_TRANSPARENCY.checkbox.text
+msgid "Include transparent ob~jects"
+msgstr "Zahrnúť priehľadné ob~jekty"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEGRADIENTS.checkbox.text
+msgid "Reduce ~gradients"
+msgstr "Redukovať pr~echody"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCETRANSPARENCY.checkbox.text
+msgid "~Reduce transparency"
+msgstr "~Redukovať priehľadnosť"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_TRANSPARENCY.checkbox.text
+msgid "~Transparency"
+msgstr "Priehľadno~sť"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.GB_PRINT_WARN.fixedline.text
+msgid "Printer warnings"
+msgstr "Hlásenia tlačiarne"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.fixedline.text
+msgid "Reduce print data"
+msgstr "Redukovať dáta k tlači"
+
+#: printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.fixedtext.text
+msgid ""
+"Your document contains transparent objects.\n"
+"This may lead to longer printing time on certain\n"
+"printers. Should the aspect of transparency\n"
+"be reduced?"
+msgstr ""
+"Váš dokument obsahuje priesvitné objekty.\n"
+"To môže na určitých tlačiarňach spôsobiť predĺženie\n"
+"doby tlače. Má byť obmedzené použitie\n"
+"priehľadnosti?"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.FT_OUTPUTTYPE.fixedtext.text
+msgid "Settings for"
+msgstr "Nastavenie pre"
+
+#: printopt.src#RID_WARN_PRINTTRANSPARENCY.modaldialog.text
+msgid "Warning"
+msgstr "Upozornenie"
+
+#: printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.okbutton.text
+msgid "~Yes"
+msgstr "~Áno"
+
+#: printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_NO.pushbutton.text
+msgid "~No"
+msgstr "~Nie"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTEROUTPUT.radiobutton.text
+msgid "~Printer"
+msgstr "~Tlačiareň"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTFILEOUTPUT.radiobutton.text
+msgid "Print to ~file"
+msgstr "Tlač do sú~boru"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_NORMAL.radiobutton.text
+msgid "N~ormal print quality"
+msgstr "N~ormálna kvalita tlače"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_OPTIMAL.radiobutton.text
+msgid "~High print quality"
+msgstr "Vysoká ~kvalita tlače"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_RESOLUTION.radiobutton.text
+msgid "Reso~lution"
+msgstr "Roz~líšenie"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_COLOR.radiobutton.text
+msgid "Intermediate ~color"
+msgstr "Pre~chodná farba"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_STRIPES.radiobutton.text
+msgid "Gradient ~stripes"
+msgstr "P~ruhy prechodov"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_AUTO.radiobutton.text
+msgid "Auto~matically"
+msgstr "Auto~maticky"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_NONE.radiobutton.text
+msgid "~No transparency"
+msgstr "Žiad~na priehľadnosť"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.1.stringlist.text
+msgid "72 DPI"
+msgstr "72 DPI"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.2.stringlist.text
+msgid "96 DPI"
+msgstr "96 DPI"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.3.stringlist.text
+msgid "150 DPI (Fax)"
+msgstr "150 DPI (Fax)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.4.stringlist.text
+msgid "200 DPI (default)"
+msgstr "200 DPI (východzie)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.5.stringlist.text
+msgid "300 DPI"
+msgstr "300 DPI"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.6.stringlist.text
+msgid "600 DPI"
+msgstr "600 DPI"
+
+#: recfloat.src#SID_RECORDING_FLOATWINDOW.floatingwindow.text
+msgid "Record Macro"
+msgstr "Nahrať Makro"
+
+#: recfloat.src#STR_CANCEL_RECORDING.string.text
+msgid "Cancel Recording"
+msgstr "Zrušiť nahrávanie"
+
+#: recfloat.src#STR_MACRO_LOSS.string.text
+msgid ""
+"Do you really want to cancel the recording? Any steps recorded up to this "
+"point will be lost."
+msgstr "Určite chcete zrušiť nahrávanie? Všetky nahrané kroky budú stratené."
+
+#: securitypage.src#TP_DOCINFOSECURITY.OPEN_READONLY_CB.checkbox.text
+msgid "~Open file read-only"
+msgstr "~Otvoriť súbor len na čítanie"
+
+#: securitypage.src#TP_DOCINFOSECURITY.RECORD_CHANGES_CB.checkbox.text
+msgid "Record ~changes"
+msgstr "Zaznamenávať ~zmeny"
+
+#: securitypage.src#TP_DOCINFOSECURITY.OPTIONS_FL.fixedline.text
+msgid "File sharing options"
+msgstr "Možnosti zdieľania súboru"
+
+#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FL.fixedline.text
+msgid "File sharing password"
+msgstr "Heslo na zdieľanie súboru"
+
+#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FL.fixedline.text
+msgid "File encryption password"
+msgstr "Heslo na ochranu súboru"
+
+#: securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_MODIFY_FT.fixedtext.text
+msgid "Reenter password to modify"
+msgstr "Zopakovať heslo pre úpravy"
+
+#: securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_OPEN_FT.fixedtext.text
+msgid "~Reenter password to open"
+msgstr "Zopakovať heslo pre otvo~renie"
+
+#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FT.fixedtext.text
+msgid "Enter password to modify"
+msgstr "Zadajte heslo pre úpravy"
+
+#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FT.fixedtext.text
+msgid "~Enter password to open"
+msgstr "Zadať h~eslo pre otvorenie"
+
+#: securitypage.src#RID_SFX_INCORRECT_PASSWORD.string.text
+msgid "Incorrect password"
+msgstr "Neplatné heslo"
+
+#: securitypage.src#RID_SFX_PROTECT_RECORDS.string.text
+msgid "Protect Records"
+msgstr "Zamknúť záznamy"
+
+#: securitypage.src#RID_SFX_UNPROTECT_RECORDS.string.text
+msgid "Unprotect Records"
+msgstr "Odomknúť záznamy"
+
+#: securitypage.src#TP_DOCINFOSECURITY.STR_END_REDLINING_WARNING.string.text
+msgid ""
+"This action will exit the change recording mode.\n"
+"Any information about changes will be lost.\n"
+"\n"
+"Exit change recording mode?\n"
+"\n"
+msgstr ""
+"Táto činnosť ukončí zmenu záznamového módu.\n"
+"Všetky informácie o zmenách sa stratia.\n"
+"Ukončiť zmenu záznamového módu?\n"
+"\n"
+
+#: securitypage.src#TP_DOCINFOSECURITY.STR_PROTECT.string.text
+msgid "~Protect..."
+msgstr "~Zamknúť..."
+
+#: securitypage.src#TP_DOCINFOSECURITY.STR_UNPROTECT.string.text
+msgid "~Unprotect..."
+msgstr "~Odomknúť..."
+
+#: srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.cancelbutton.text
+msgctxt "srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.cancelbutton.text"
+msgid "~Close"
+msgstr "~Zatvoriť"
+
+#: srchdlg.src#RID_DLG_SEARCH.CB_BACKWARDS.checkbox.text
+msgid "~Backwards"
+msgstr "~Dozadu"
+
+#: srchdlg.src#RID_DLG_SEARCH.CB_MATCHCASE.checkbox.text
+msgid "~Match case"
+msgstr "R~ozlišovať veľkosť"
+
+#: srchdlg.src#RID_DLG_SEARCH.CB_WHOLEWORDS.checkbox.text
+msgid "~Whole words only"
+msgstr "Len ~celé slova"
+
+#: srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.checkbox.text
+msgctxt "srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.checkbox.text"
+msgid "Wrap ~around"
+msgstr "Hľad~ať dookola"
+
+#: srchdlg.src#RID_DLG_SEARCH.FT_SEARCH.fixedtext.text
+msgid "~Search for"
+msgstr "~Hľadať"
+
+#: srchdlg.src#RID_DLG_SEARCH.modelessdialog.text
+msgid "Find on this Page"
+msgstr "Nájsť na tejto strane"
+
+#: srchdlg.src#RID_DLG_SEARCH.PB_FIND.pushbutton.text
+msgid "~Find"
+msgstr "~Nájsť"
+
+#: srchdlg.src#RID_DLG_SEARCH.STR_TOGGLE.string.text
+msgctxt "srchdlg.src#RID_DLG_SEARCH.STR_TOGGLE.string.text"
+msgid "Wrap ~around"
+msgstr "Hľad~ať dookola"
+
+#: taskpane.src#STR_SFX_DOCK.string.text
+msgid "Dock"
+msgstr "Ukotviť"
+
+#: taskpane.src#STR_SFX_TASKS.string.text
+msgid "Tasks"
+msgstr "Úlohy"
+
+#: taskpane.src#STR_SFX_TASK_PANE_VIEW.string.text
+msgid "View"
+msgstr "Zobraziť"
+
+#: taskpane.src#STR_SFX_UNDOCK.string.text
+msgid "Undock"
+msgstr "Uvoľniť"
+
+#: templdlg.src#DLG_STYLE_DESIGNER.dockingwindow.text
+msgid "Styles and Formatting"
+msgstr "Štýly a formátovanie"
+
+#: templdlg.src#RID_STYLECATALOG.modaldialog.text
+msgid "Style Catalog"
+msgstr "Katalóg štýlov"
+
+#: templdlg.src#RID_STYLECATALOG.BT_DEL.pushbutton.text
+msgid "~Delete..."
+msgstr "~Zmazať..."
+
+#: templdlg.src#RID_STYLECATALOG.BT_EDIT.pushbutton.text
+msgid "~Modify..."
+msgstr "~Upraviť..."
+
+#: templdlg.src#RID_STYLECATALOG.BT_NEW.pushbutton.text
+msgid "~New..."
+msgstr "~Nový..."
+
+#: templdlg.src#RID_STYLECATALOG.BT_ORG.pushbutton.text
+msgid "~Organizer..."
+msgstr "~Organizátor..."
+
+#: templdlg.src#STR_STYLE_ELEMTLIST.string.text
+msgid "Style List"
+msgstr "Zoznam štýlov"
+
+#: templdlg.src#STR_STYLE_FILTER_HIERARCHICAL.string.text
+msgid "Hierarchical"
+msgstr "Hierarchický"
+
+#: templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_NEW_BY_EXAMPLE.toolboxitem.text
+msgid "New Style from Selection"
+msgstr "Nový štýl z výberu"
+
+#: templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_UPDATE_BY_EXAMPLE.toolboxitem.text
+msgid "Update Style"
+msgstr "Aktualizovať štýl"
+
+#: templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_WATERCAN.toolboxitem.text
+msgid "Fill Format Mode"
+msgstr "Vyplniť mód formátu"
+
+#: versdlg.src#DLG_VERSIONS.PB_CLOSE.cancelbutton.text
+msgid "Close"
+msgstr "Zatvoriť"
+
+#: versdlg.src#DLG_VERSIONS.CB_SAVEONCLOSE.checkbox.text
+msgid "~Always save a version on closing"
+msgstr "Vždy uložiť verziu pri uz~avretí"
+
+#: versdlg.src#DLG_VERSIONS.GB_NEWVERSIONS.fixedline.text
+msgid "New versions"
+msgstr "Nové verzie"
+
+#: versdlg.src#DLG_VERSIONS.GB_OLDVERSIONS.fixedline.text
+msgid "Existing versions"
+msgstr "Existujúce verzie"
+
+#: versdlg.src#DLG_COMMENTS.FT_DATETIME.fixedtext.text
+msgid "Date and time : "
+msgstr "Dátum a čas: "
+
+#: versdlg.src#DLG_COMMENTS.FT_SAVEDBY.fixedtext.text
+msgid "Saved by "
+msgstr "Uložil "
+
+#: versdlg.src#DLG_VERSIONS.FT_COMMENTS.fixedtext.text
+msgid "Comments"
+msgstr "Poznámky"
+
+#: versdlg.src#DLG_VERSIONS.FT_DATETIME.fixedtext.text
+msgid "Date and time"
+msgstr "Dátum a čas"
+
+#: versdlg.src#DLG_VERSIONS.FT_SAVEDBY.fixedtext.text
+msgid "Saved by"
+msgstr "Uložené pod"
+
+#: versdlg.src#DLG_COMMENTS.modaldialog.text
+msgid "Insert Version Comment"
+msgstr "Vložiť poznámky k verzii"
+
+#: versdlg.src#DLG_VERSIONS.modaldialog.text
+msgid "Versions of"
+msgstr "Verzie"
+
+#: versdlg.src#DLG_COMMENTS.PB_CLOSE.pushbutton.text
+msgctxt "versdlg.src#DLG_COMMENTS.PB_CLOSE.pushbutton.text"
+msgid "~Close"
+msgstr "~Zatvoriť"
+
+#: versdlg.src#DLG_VERSIONS.PB_COMPARE.pushbutton.text
+msgid "Compare"
+msgstr "Porovnať"
+
+#: versdlg.src#DLG_VERSIONS.PB_DELETE.pushbutton.text
+msgid "~Delete"
+msgstr "~Zmazať"
+
+#: versdlg.src#DLG_VERSIONS.PB_OPEN.pushbutton.text
+msgid "Open"
+msgstr "Otvoriť"
+
+#: versdlg.src#DLG_VERSIONS.PB_SAVE.pushbutton.text
+msgid "Save ~New Version"
+msgstr "Uložiť ~novú verziu"
+
+#: versdlg.src#DLG_VERSIONS.PB_VIEW.pushbutton.text
+msgid "~Show..."
+msgstr "~Zobraziť..."
+
+#: versdlg.src#DLG_COMMENTS.string.text
+msgid "Version comment"
+msgstr "Poznámka k verzii"

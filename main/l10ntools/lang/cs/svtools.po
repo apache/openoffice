@@ -1,0 +1,3717 @@
+
+#: roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_WELCOME.string.text
+msgid "Welcome"
+msgstr "Vítejte"
+
+#: roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_PREPARE.string.text
+msgid "Prepare"
+msgstr "Příprava"
+
+#: roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_SETUP.string.text
+msgid "Setup"
+msgstr "Nastavení"
+
+#: roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_FINISH.string.text
+msgid "Finish"
+msgstr "Dokončení"
+
+#: roadmapskeleton.src#DLG_ROADMAP_SKELETON.modaldialog.text
+msgid "Roadmap Skeleton Demo"
+msgstr "Roadmap Skeleton Demo"
+"X-Accelerator-Marker: ~\n"
+
+#: addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FL_DATASOURCEFRAME.fixedline.text
+msgid "Address Book Source"
+msgstr "Databáze kontaktů"
+
+#: addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_DATASOURCE.fixedtext.text
+msgid "Data source"
+msgstr "Zdroj dat"
+
+#: addresstemplate.src#DLG_ADDRESSBOOKSOURCE.PB_ADMINISTATE_DATASOURCES.pushbutton.text
+msgid "~Address Data Source..."
+msgstr "Datový zdroj adres..."
+
+#: addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_TABLE.fixedtext.text
+msgid "Table"
+msgstr "Tabulka"
+
+#: addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_FIELDS.fixedtext.text
+msgid "Field assignment"
+msgstr "Přiřazení polí"
+
+#: addresstemplate.src#DLG_ADDRESSBOOKSOURCE.modaldialog.text
+msgid "Templates: Address Book Assignment"
+msgstr "Šablony: Přiřazení databáze kontaktů"
+
+#: addresstemplate.src#STR_NO_FIELD_SELECTION.string.text
+msgid "<none>"
+msgstr "<nic>"
+
+#: addresstemplate.src#STR_FIELD_COMPANY.string.text
+msgid "Company"
+msgstr "Společnost"
+
+#: addresstemplate.src#STR_FIELD_DEPARTMENT.string.text
+msgid "Department"
+msgstr "Oddělení"
+
+#: addresstemplate.src#STR_FIELD_FIRSTNAME.string.text
+msgid "First name"
+msgstr "Jméno"
+
+#: addresstemplate.src#STR_FIELD_LASTNAME.string.text
+msgid "Last name"
+msgstr "Příjmení"
+
+#: addresstemplate.src#STR_FIELD_STREET.string.text
+msgid "Street"
+msgstr "Ulice"
+
+#: addresstemplate.src#STR_FIELD_COUNTRY.string.text
+msgid "Country"
+msgstr "Země"
+
+#: addresstemplate.src#STR_FIELD_ZIPCODE.string.text
+msgid "ZIP Code"
+msgstr "PSČ"
+
+#: addresstemplate.src#STR_FIELD_CITY.string.text
+msgid "City"
+msgstr "Obec"
+
+#: addresstemplate.src#STR_FIELD_TITLE.string.text
+msgid "Title"
+msgstr "Titulek"
+
+#: addresstemplate.src#STR_FIELD_POSITION.string.text
+msgid "Position"
+msgstr "Umístění"
+
+#: addresstemplate.src#STR_FIELD_ADDRFORM.string.text
+msgid "Addr. Form"
+msgstr "Formulář adresy"
+
+#: addresstemplate.src#STR_FIELD_INITIALS.string.text
+msgid "Initials"
+msgstr "Iniciály"
+
+#: addresstemplate.src#STR_FIELD_SALUTATION.string.text
+msgid "Complimentary close"
+msgstr "Oslovení"
+
+#: addresstemplate.src#STR_FIELD_HOMETEL.string.text
+msgid "Tel: Home"
+msgstr "Tel: domů"
+
+#: addresstemplate.src#STR_FIELD_WORKTEL.string.text
+msgid "Tel: Work"
+msgstr "Tel: do práce"
+
+#: addresstemplate.src#STR_FIELD_FAX.string.text
+msgid "FAX"
+msgstr "Fax"
+
+#: addresstemplate.src#STR_FIELD_EMAIL.string.text
+msgid "E-mail"
+msgstr "E-mail"
+
+#: addresstemplate.src#STR_FIELD_URL.string.text
+msgid "URL"
+msgstr "URL"
+
+#: addresstemplate.src#STR_FIELD_NOTE.string.text
+msgid "Note"
+msgstr "Poznámka"
+
+#: addresstemplate.src#STR_FIELD_USER1.string.text
+msgid "User 1"
+msgstr "Uživatelem definovaný 1"
+
+#: addresstemplate.src#STR_FIELD_USER2.string.text
+msgid "User 2"
+msgstr "Uživatelem definovaný 2"
+
+#: addresstemplate.src#STR_FIELD_USER3.string.text
+msgid "User 3"
+msgstr "Uživatelem definovaný 3"
+
+#: addresstemplate.src#STR_FIELD_USER4.string.text
+msgid "User 4"
+msgstr "Uživatelem definovaný 4"
+
+#: addresstemplate.src#STR_FIELD_ID.string.text
+msgid "ID"
+msgstr "ID"
+
+#: addresstemplate.src#STR_FIELD_STATE.string.text
+msgid "State"
+msgstr "Stav"
+
+#: addresstemplate.src#STR_FIELD_OFFICETEL.string.text
+msgid "Tel: Office"
+msgstr "Tel: na stůl"
+
+#: addresstemplate.src#STR_FIELD_PAGER.string.text
+msgid "Pager"
+msgstr "Pager"
+
+#: addresstemplate.src#STR_FIELD_MOBILE.string.text
+msgid "Mobile"
+msgstr "Mobile"
+
+#: addresstemplate.src#STR_FIELD_TELOTHER.string.text
+msgid "Tel: Other"
+msgstr "Tel: jiný"
+
+#: addresstemplate.src#STR_FIELD_CALENDAR.string.text
+msgid "Calendar"
+msgstr "Kalendář"
+
+#: addresstemplate.src#STR_FIELD_INVITE.string.text
+msgid "Invite"
+msgstr "Pozvat"
+
+#: filedlg2.src#STR_FILEDLG_SELECT.string.text
+msgid "Select Directory"
+msgstr "Vybrat adresář"
+
+#: filedlg2.src#STR_FILEDLG_CANTCHDIR.string.text
+msgid "Cannot change to directory"
+msgstr "Nelze přejít do adresáře"
+
+#: filedlg2.src#STR_FILEDLG_OPEN.string.text
+msgid "Open"
+msgstr "Otevřít"
+
+#: filedlg2.src#STR_FILEDLG_FILE.string.text
+msgid "~File"
+msgstr "Soubor"
+
+#: filedlg2.src#STR_FILEDLG_DIR.string.text
+msgid "~Directory"
+msgstr "Adresář"
+
+#: filedlg2.src#STR_FILEDLG_TYPE.string.text
+msgid "File ~type"
+msgstr "Typ souboru"
+
+#: filedlg2.src#STR_FILEDLG_CANTOPENFILE.string.text
+msgid "Can't open file"
+msgstr "Není možné otevřít soubor"
+
+#: filedlg2.src#STR_FILEDLG_CANTOPENDIR.string.text
+msgid "Can't open directory"
+msgstr "Není možné otevřít adresář"
+
+#: filedlg2.src#STR_FILEDLG_OVERWRITE.string.text
+msgid ""
+"This file already exists. \n"
+"Overwrite ?"
+msgstr ""
+"Tento soubor již existuje.\n"
+"Přepsat?"
+
+#: filedlg2.src#STR_FILEDLG_GOUP.string.text
+msgid "Up One Level"
+msgstr "O úroveň výše"
+
+#: filedlg2.src#STR_FILEDLG_SAVE.string.text
+msgid "Save"
+msgstr "Uložit"
+
+#: filedlg2.src#STR_FILEDLG_DRIVES.string.text
+msgid "D~rive"
+msgstr "Mechanika"
+
+#: filedlg2.src#STR_FILEDLG_HOME.string.text
+msgid "User Directory"
+msgstr "Adresář uživatele"
+
+#: filedlg2.src#STR_FILEDLG_NEWDIR.string.text
+msgid "Create Directory"
+msgstr "Vytvořit adresář"
+
+#: filedlg2.src#STR_FILEDLG_ASKNEWDIR.string.text
+msgid "Do you want the directory %s to be created ?"
+msgstr "Přejete si vytvořit adresář %s?"
+
+#: formats.src#STR_FORMAT_STRING.string.text
+msgid "Unformatted text"
+msgstr "Neformátovaný text"
+
+#: formats.src#STR_FORMAT_BITMAP.string.text
+msgid "Bitmap"
+msgstr "Bitová mapa"
+
+#: formats.src#STR_FORMAT_GDIMETAFILE.string.text
+msgid "GDI metafile"
+msgstr "GDI metasoubor"
+
+#: formats.src#STR_FORMAT_RTF.string.text
+msgid "Formatted text [RTF]"
+msgstr "Formátovaný text [RTF]"
+
+#: formats.src#STR_FORMAT_ID_DRAWING.string.text
+msgid "Drawing format"
+msgstr "Formát kresby"
+
+#: formats.src#STR_FORMAT_ID_SVXB.string.text
+msgid "SVXB (StarView bitmap/animation)"
+msgstr "SVXB (StarView bitmapa/animace)"
+
+#: formats.src#STR_FORMAT_ID_INTERNALLINK_STATE.string.text
+msgid "Status Info from Svx Internal Link"
+msgstr "Stavové informace od Svx"
+
+#: formats.src#STR_FORMAT_ID_SOLK.string.text
+msgid "SOLK (%PRODUCTNAME Link)"
+msgstr "SOLK (%PRODUCTNAME Link)"
+
+#: formats.src#STR_FORMAT_ID_NETSCAPE_BOOKMARK.string.text
+msgid "Netscape Bookmark"
+msgstr "Záložka Netscape"
+
+#: formats.src#STR_FORMAT_ID_STARSERVER.string.text
+msgid "Star server format"
+msgstr "Formát Star serveru"
+
+#: formats.src#STR_FORMAT_ID_STAROBJECT.string.text
+msgid "Star object format"
+msgstr "Formát Star objektu"
+
+#: formats.src#STR_FORMAT_ID_APPLETOBJECT.string.text
+msgid "Applet object"
+msgstr "Applet"
+
+#: formats.src#STR_FORMAT_ID_PLUGIN_OBJECT.string.text
+msgid "Plug-in object"
+msgstr "Zásuvný modul"
+
+#: formats.src#STR_FORMAT_ID_STARWRITER_30.string.text
+msgid "StarWriter 3.0 object"
+msgstr "Objekt StarWriteru 3.0"
+
+#: formats.src#STR_FORMAT_ID_STARWRITER_40.string.text
+msgid "StarWriter 4.0 object"
+msgstr "Objekt StarWriter 4.0"
+
+#: formats.src#STR_FORMAT_ID_STARWRITER_50.string.text
+msgid "StarWriter 5.0 object"
+msgstr "Objekt StarWriter 5.0"
+
+#: formats.src#STR_FORMAT_ID_STARWRITERWEB_40.string.text
+msgid "StarWriter/Web 4.0 object"
+msgstr "Objekt StarWriter/Web 4.0"
+
+#: formats.src#STR_FORMAT_ID_STARWRITERWEB_50.string.text
+msgid "StarWriter/Web 5.0 object"
+msgstr "Objekt StarWriter/Web 5.0"
+
+#: formats.src#STR_FORMAT_ID_STARWRITERGLOB_40.string.text
+msgid "StarWriter/Master 4.0 object"
+msgstr "Objekt StarWriter/Master 4.0"
+
+#: formats.src#STR_FORMAT_ID_STARWRITERGLOB_50.string.text
+msgid "StarWriter/Master 5.0 object"
+msgstr "Objekt StarWriter/Master 5.0"
+
+#: formats.src#STR_FORMAT_ID_STARDRAW.string.text
+msgid "StarDraw object"
+msgstr "Objekt StarDraw"
+
+#: formats.src#STR_FORMAT_ID_STARDRAW_40.string.text
+msgid "StarDraw 4.0 object"
+msgstr "Objekt StarDraw 4.0"
+
+#: formats.src#STR_FORMAT_ID_STARIMPRESS_50.string.text
+msgid "StarImpress 5.0 object"
+msgstr "Objekt StarImpress 5.0"
+
+#: formats.src#STR_FORMAT_ID_STARDRAW_50.string.text
+msgid "StarDraw 5.0 object"
+msgstr "Objekt StarDraw 5.0"
+
+#: formats.src#STR_FORMAT_ID_STARCALC.string.text
+msgid "StarCalc object"
+msgstr "Objekt StarCalc"
+
+#: formats.src#STR_FORMAT_ID_STARCALC_40.string.text
+msgid "StarCalc  4.0 object"
+msgstr "Objekt StarCalc  4.0"
+
+#: formats.src#STR_FORMAT_ID_STARCALC_50.string.text
+msgid "StarCalc 5.0 object"
+msgstr "Objekt StarCalc 5.0"
+
+#: formats.src#STR_FORMAT_ID_STARCHART.string.text
+msgid "StarChart object"
+msgstr "Objekt StarChart"
+
+#: formats.src#STR_FORMAT_ID_STARCHART_40.string.text
+msgid "StarChart 4.0 object"
+msgstr "Objekt StarChart 4.0"
+
+#: formats.src#STR_FORMAT_ID_STARCHART_50.string.text
+msgctxt "formats.src#STR_FORMAT_ID_STARCHART_50.string.text"
+msgid "StarChart 5.0 object"
+msgstr "Objekt StarChart 5.0"
+
+#: formats.src#STR_FORMAT_ID_STARIMAGE.string.text
+msgid "StarImage object"
+msgstr "Objekt StarImage"
+
+#: formats.src#STR_FORMAT_ID_STARIMAGE_40.string.text
+msgid "StarImage 4.0 object"
+msgstr "Objekt StarImage 4.0"
+
+#: formats.src#STR_FORMAT_ID_STARIMAGE_50.string.text
+msgid "StarImage 5.0 object"
+msgstr "Objekt StarImage 5.0"
+
+#: formats.src#STR_FORMAT_ID_STARMATH.string.text
+msgid "StarMath object"
+msgstr "Objekt StarMath"
+
+#: formats.src#STR_FORMAT_ID_STARMATH_40.string.text
+msgid "StarMath 4.0 object"
+msgstr "Objekt StarMath 4.0"
+
+#: formats.src#STR_FORMAT_ID_STARMATH_50.string.text
+msgid "StarMath 5.0 object"
+msgstr "Objekt StarMath 5.0"
+
+#: formats.src#STR_FORMAT_ID_STAROBJECT_PAINTDOC.string.text
+msgid "StarObject Paint object"
+msgstr "Objekt StarObject Paint"
+
+#: formats.src#STR_FORMAT_ID_HTML.string.text
+msgid "HTML (HyperText Markup Language)"
+msgstr "HTML (HyperText Markup Language)"
+
+#: formats.src#STR_FORMAT_ID_HTML_SIMPLE.string.text
+msgid "HTML format"
+msgstr "HTML formát"
+
+#: formats.src#STR_FORMAT_ID_BIFF_5.string.text
+msgid "Biff5 (Microsoft Excel 5.0/95)"
+msgstr "Biff5 (Microsoft Excel 5.0/95)"
+
+#: formats.src#STR_FORMAT_ID_BIFF_8.string.text
+msgid "Biff8 (Microsoft Excel 97/2000/XP)"
+msgstr "Biff8 (Microsoft Excel 97/2000/XP)"
+
+#: formats.src#STR_FORMAT_ID_SYLK.string.text
+msgid "Sylk"
+msgstr "Sylk"
+
+#: formats.src#STR_FORMAT_ID_LINK.string.text
+msgid "DDE link"
+msgstr "Odkaz DDE"
+
+#: formats.src#STR_FORMAT_ID_DIF.string.text
+msgid "DIF"
+msgstr "DIF"
+
+#: formats.src#STR_FORMAT_ID_MSWORD_DOC.string.text
+msgid "Microsoft Word object"
+msgstr "Objekt Microsoft Word"
+
+#: formats.src#STR_FORMAT_ID_STAR_FRAMESET_DOC.string.text
+msgid "StarFrameSet object"
+msgstr "Objekt StarFrameSet"
+
+#: formats.src#STR_FORMAT_ID_OFFICE_DOC.string.text
+msgid "Office document object"
+msgstr "Dokument"
+
+#: formats.src#STR_FORMAT_ID_NOTES_DOCINFO.string.text
+msgid "Notes document info"
+msgstr "Poznámky k dokumentu"
+
+#: formats.src#STR_FORMAT_ID_SFX_DOC.string.text
+msgid "Sfx document"
+msgstr "Sfx dokument"
+
+#: formats.src#STR_FORMAT_ID_STARCHARTDOCUMENT_50.string.text
+msgctxt "formats.src#STR_FORMAT_ID_STARCHARTDOCUMENT_50.string.text"
+msgid "StarChart 5.0 object"
+msgstr "Objekt StarChart 5.0"
+
+#: formats.src#STR_FORMAT_ID_GRAPHOBJ.string.text
+msgid "Graphic object"
+msgstr "Obrázek"
+
+#: formats.src#STR_FORMAT_ID_STARWRITER_60.string.text
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer object"
+msgstr "Objekt %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer"
+
+#: formats.src#STR_FORMAT_ID_STARWRITERWEB_60.string.text
+msgid ""
+"%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Web object"
+msgstr ""
+"Objekt %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Web"
+
+#: formats.src#STR_FORMAT_ID_STARWRITERGLOB_60.string.text
+msgid ""
+"%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Master object"
+msgstr ""
+"Objekt %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Master"
+
+#: formats.src#STR_FORMAT_ID_STARDRAW_60.string.text
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Draw object"
+msgstr "Objekt %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Draw"
+
+#: formats.src#STR_FORMAT_ID_STARIMPRESS_60.string.text
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Impress object"
+msgstr "Objekt %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Impress"
+
+#: formats.src#STR_FORMAT_ID_STARCALC_60.string.text
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Calc object"
+msgstr "Objekt %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Calc"
+
+#: formats.src#STR_FORMAT_ID_STARCHART_60.string.text
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart object"
+msgstr "Objekt %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart"
+
+#: formats.src#STR_FORMAT_ID_STARMATH_60.string.text
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Math object"
+msgstr "Objekt %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Math"
+
+#: formats.src#STR_FORMAT_ID_WMF.string.text
+msgid "Windows metafile"
+msgstr "Windows Metafile"
+
+#: formats.src#STR_FORMAT_ID_DBACCESS_QUERY.string.text
+msgid "Data source object"
+msgstr "Zdroj dat"
+
+#: formats.src#STR_FORMAT_ID_DBACCESS_TABLE.string.text
+msgid "Data source table"
+msgstr "Tabulka zdrojových dat"
+
+#: formats.src#STR_FORMAT_ID_DBACCESS_COMMAND.string.text
+msgid "SQL query"
+msgstr "SQL dotaz"
+
+#: formats.src#STR_FORMAT_ID_DIALOG_60.string.text
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION dialog"
+msgstr "Dialog %PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: formats.src#STR_FORMAT_ID_FILEGRPDESCRIPTOR.string.text
+msgid "Link"
+msgstr "Odkaz"
+
+#: formats.src#STR_FORMAT_ID_HTML_NO_COMMENT.string.text
+msgid "HTML format without comments"
+msgstr "HTML formát bez komentářů"
+
+#: prnsetup.src#STR_SVT_PRNDLG_READY.string.text
+msgid "Ready"
+msgstr "Připraveno"
+
+#: prnsetup.src#STR_SVT_PRNDLG_PAUSED.string.text
+msgid "Paused"
+msgstr "Přerušeno"
+
+#: prnsetup.src#STR_SVT_PRNDLG_PENDING.string.text
+msgid "Pending deletion"
+msgstr "Během mazání"
+
+#: prnsetup.src#STR_SVT_PRNDLG_BUSY.string.text
+msgid "Busy"
+msgstr "Zaneprázdněný"
+
+#: prnsetup.src#STR_SVT_PRNDLG_INITIALIZING.string.text
+msgid "Initializing"
+msgstr "Inicializace"
+
+#: prnsetup.src#STR_SVT_PRNDLG_WAITING.string.text
+msgid "Waiting"
+msgstr "Čekat"
+
+#: prnsetup.src#STR_SVT_PRNDLG_WARMING_UP.string.text
+msgid "Warming up"
+msgstr "Nabíhání"
+
+#: prnsetup.src#STR_SVT_PRNDLG_PROCESSING.string.text
+msgid "Processing"
+msgstr "Zpracování"
+
+#: prnsetup.src#STR_SVT_PRNDLG_PRINTING.string.text
+msgid "Printing"
+msgstr "Probíhá tisk"
+
+#: prnsetup.src#STR_SVT_PRNDLG_OFFLINE.string.text
+msgid "Offline"
+msgstr "Offline"
+
+#: prnsetup.src#STR_SVT_PRNDLG_ERROR.string.text
+msgid "Error"
+msgstr "Chyba"
+
+#: prnsetup.src#STR_SVT_PRNDLG_SERVER_UNKNOWN.string.text
+msgid "Unknown Server"
+msgstr "Neznámý server"
+
+#: prnsetup.src#STR_SVT_PRNDLG_PAPER_JAM.string.text
+msgid "Paper jam"
+msgstr "Zmačkání papíru"
+
+#: prnsetup.src#STR_SVT_PRNDLG_PAPER_OUT.string.text
+msgid "Not enough paper"
+msgstr "Nedostatek papíru"
+
+#: prnsetup.src#STR_SVT_PRNDLG_MANUAL_FEED.string.text
+msgid "Manual feed"
+msgstr "Ruční posuv"
+
+#: prnsetup.src#STR_SVT_PRNDLG_PAPER_PROBLEM.string.text
+msgid "Paper problem"
+msgstr "Problémy s papírem"
+
+#: prnsetup.src#STR_SVT_PRNDLG_IO_ACTIVE.string.text
+msgid "I/O active"
+msgstr "I/O aktivní"
+
+#: prnsetup.src#STR_SVT_PRNDLG_OUTPUT_BIN_FULL.string.text
+msgid "Output bin full"
+msgstr "Výstupní schránka je plná"
+
+#: prnsetup.src#STR_SVT_PRNDLG_TONER_LOW.string.text
+msgid "Toner low"
+msgstr "Málo toneru"
+
+#: prnsetup.src#STR_SVT_PRNDLG_NO_TONER.string.text
+msgid "No toner"
+msgstr "Došel toner"
+
+#: prnsetup.src#STR_SVT_PRNDLG_PAGE_PUNT.string.text
+msgid "Delete Page"
+msgstr "Odstranit stránku"
+
+#: prnsetup.src#STR_SVT_PRNDLG_USER_INTERVENTION.string.text
+msgid "User intervention necessary"
+msgstr "Je třeba zásahu uživatele"
+
+#: prnsetup.src#STR_SVT_PRNDLG_OUT_OF_MEMORY.string.text
+msgid "Insufficient memory"
+msgstr "Nedostatek paměti"
+
+#: prnsetup.src#STR_SVT_PRNDLG_DOOR_OPEN.string.text
+msgid "Cover open"
+msgstr "Cover open"
+
+#: prnsetup.src#STR_SVT_PRNDLG_POWER_SAVE.string.text
+msgid "Power save mode"
+msgstr "Úsporný režim"
+
+#: prnsetup.src#STR_SVT_PRNDLG_DEFPRINTER.string.text
+msgid "Default printer"
+msgstr "Výchozí tiskárna"
+
+#: prnsetup.src#STR_SVT_PRNDLG_JOBCOUNT.string.text
+msgid "%d documents"
+msgstr "%d dokumentů"
+
+#: prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FL_PRINTER.fixedline.text
+msgid "Printer"
+msgstr "Tiskárna"
+
+#: prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_NAME.fixedtext.text
+msgid "~Name"
+msgstr "Název"
+
+#: prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.BTN_PROPERTIES.pushbutton.text
+msgid "Propert~ies..."
+msgstr "Vlastnosti..."
+
+#: prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_STATUS.fixedtext.text
+msgid "Status"
+msgstr "Stav"
+
+#: prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_TYPE.fixedtext.text
+msgid "Type"
+msgstr "Typ"
+
+#: prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_LOCATION.fixedtext.text
+msgid "Location"
+msgstr "Umístění"
+
+#: prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_COMMENT.fixedtext.text
+msgid "Comment"
+msgstr "Komentář"
+
+#: prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.BTN_OPTIONS.pushbutton.text
+msgid "~Options..."
+msgstr "Volby..."
+
+#: prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.modaldialog.text
+msgid "Printer Setup"
+msgstr "Nastavení tiskárny"
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_GENERALERROR_S_MAX.string.text
+msgid "General OLE error."
+msgstr "Obecná chyba OLE."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_CANT_BINDTOSOURCE_S_MAX.string.text
+msgid "The connection to the object cannot be established."
+msgstr "Spojení s objektem není možné navázat."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOCACHE_UPDATED_S_MAX.string.text
+msgid "No cache files were updated."
+msgstr "Cache soubory nebyly aktualizovány."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_SOMECACHES_NOTUPDATED_S_MAX.string.text
+msgid "Some cache files were not updated."
+msgstr "Některé cache soubory nebyly aktualizovány."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_UNAVAILABLE_S_MAX.string.text
+msgid "Status of object cannot be determined in a timely manner."
+msgstr "Není možné určit stav objektu."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_E_CLASSDIFF_S_MAX.string.text
+msgid "Source of the OLE link has been converted."
+msgstr "Zdroj OLE odkazu by změněn."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_OBJECT_S_MAX.string.text
+msgid "The object could not be found."
+msgstr "Objekt nelze najít."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_EXCEEDED_DEADLINE_S_MAX.string.text
+msgid "The process could not be completed within the specified time period."
+msgstr "Proces není možné dokončit v uvedeném časovém intervalu."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_CONNECT_MANUALLY_S_MAX.string.text
+msgid "OLE could not connect to a network device (server)."
+msgstr "OLE není možné připojit k síťovému zařízení (serveru)."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_INTERMEDIATE_INTERFACE_NOT_SUPPORTED_S_MAX.string.text
+msgid ""
+"The object found does not support the interface required for the desired "
+"operation."
+msgstr "Nalezený objekt nepodporuje rozhraní potřebné pro zvolenou operaci."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NO_INTERFACE_S_MAX.string.text
+msgid "Interface not supported."
+msgstr "Rozhraní není podporováno."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_OUT_OF_MEMORY_S_MAX.string.text
+msgid "Insufficient memory."
+msgstr "Nedostatek paměti."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_SYNTAX_S_MAX.string.text
+msgid "The connection name could not be processed."
+msgstr "Spojení není možné upravit."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_REDUCED_TO_SELF_S_MAX.string.text
+msgid "The connection name could not be reduced further."
+msgstr "Spojení není možné dále redukovat."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_INVERSE_S_MAX.string.text
+msgid "The connection name has no inverse."
+msgstr "Spojení nemá protějšek."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_PREFIX_S_MAX.string.text
+msgid "No common prefix exists."
+msgstr "Neexistuje obvyklá předpona."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_HIM_S_MAX.string.text
+msgctxt "so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_HIM_S_MAX.string.text"
+msgid "The connection name is contained in the other one."
+msgstr "Spojení je obsaženo v jiném."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_US_S_MAX.string.text
+msgid ""
+"The connection names (the receiver and the other moniker) are identical."
+msgstr "Názvy spojení (příjemce a další moniker) jsou shodné."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_ME_S_MAX.string.text
+msgctxt "so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_ME_S_MAX.string.text"
+msgid "The connection name is contained in the other one."
+msgstr "Spojení je obsaženo v jiném."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NOT_BINDABLE_S_MAX.string.text
+msgid "The connection name cannot be connected. This is a relative name."
+msgstr "Spojení není možné navázat. Toto je relativní název."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOT_IMPLEMENTED_S_MAX.string.text
+msgid "Operation not implemented."
+msgstr "Operace není implementována."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_STORAGE_S_MAX.string.text
+msgid "No storage."
+msgstr "Nedostatek místa."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_FALSE_S_MAX.string.text
+msgid "False."
+msgstr "Nepravda."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NEED_GENERIC_S_MAX.string.text
+msgid "Monikers must be composed generically."
+msgstr "Monikery musí být skládány obecně."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_PENDING_S_MAX.string.text
+msgid "Data not available at this time."
+msgstr "Data nejsou nyní dostupná."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOT_INPLACEACTIVE___S_MAX.string.text
+msgid "Object could not be activated InPlace."
+msgstr "Objekt není možné aktivovat na místě."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_LINDEX___S_MAX.string.text
+msgid "Invalid index."
+msgstr "Neplatný index."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_CANNOT_DOVERB_NOW___S_MAX.string.text
+msgid "The action cannot be executed in the object's current state."
+msgstr "Akci není možné provést se současným stavem objektu."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_OLEOBJ_INVALIDHWND___S_MAX.string.text
+msgid "An invalid window was passed when activated."
+msgstr "Při aktivaci bylo předáno neplatné okno."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOVERBS___S_MAX.string.text
+msgid "The object does not support any actions."
+msgstr "Objekt nepodporuje žádné akce."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_INVALIDVERB___S_MAX.string.text
+msgid "The action is not defined. The default action will be executed."
+msgstr "Akce není definována. Bude vykonána výchozí akce."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_CONNECT___S_MAX.string.text
+msgid "A link to the network could not be re-established."
+msgstr "Odkaz na síť není možné obnovit."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOTIMPL___S_MAX.string.text
+msgid "Object does not support this action."
+msgstr "Objekt nepodporuje tuto akci."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_CANTOPENFILE___S_MAX.string.text
+msgid "The specified file could not be opened."
+msgstr "Určený soubor nelze otevřít."
+
+#: so3res.src#RID_SO_ERRCTX.ERRCTX_SO_DOVERB.string.text
+msgid "$(ERR) activating object"
+msgstr "$(ERR) při aktivaci objektu"
+
+#: so3res.src#STR_INS_OBJECT.string.text
+msgid "Inserts a new %1-Object into your document."
+msgstr "Vložit nový objekt %1 do dokumentu."
+
+#: so3res.src#STR_INS_OBJECT_ICON.string.text
+msgid "Inserts a new %1-Object into your document as a symbol."
+msgstr "Vložit nový objekt %1 do dokumentu jako symbol"
+
+#: so3res.src#STR_INS_FILE.string.text
+msgid ""
+"Inserts the contents of the file into your document to enable later editing "
+"in the original application."
+msgstr ""
+"Vložit obsah souboru do dokumentu a umožnit pozdější změny v původní "
+"aplikaci."
+
+#: so3res.src#STR_INS_PLUGIN.string.text
+msgid ""
+"Inserts a plug-in object into your document with a reference to the plug-in "
+"data. When the object is activated, the plug-in is automatically executed."
+msgstr ""
+"Vložit zásuvný modul do dokumentu s odkazem na data zásuvného modulu. Při "
+"aktivaci objektu se modul automaticky spustí."
+
+#: so3res.src#STR_INS_APPLET.string.text
+msgid ""
+"Inserts an applet object into your document. When the object is activated, "
+"the applet is automatically executed."
+msgstr ""
+"Vložit applet do dokumentu. Při aktivaci objektu se applet automaticky "
+"spustí."
+
+#: so3res.src#STR_INS_FILE_ICON.string.text
+msgid "Inserts the contents of the file as an icon into your document."
+msgstr "Vloží obsah souboru do dokumentu jako ikonu."
+
+#: so3res.src#STR_INS_FILE_LINK.string.text
+msgid ""
+"Inserts the contents of the file into your document and creates a link to "
+"the source file. Changes made to the source file will be reflected in your "
+"document."
+msgstr ""
+"Vložit obsah souboru do dokumentu a vytvořit odkaz na zdrojový soubor. Změny "
+"ve zdrojovém souboru se potom projeví v dokumentu."
+
+#: so3res.src#STR_INS_FILE_ICON_LINK.string.text
+msgid ""
+"Inserts an icon into your document representing the file. Changes made to "
+"the source file will be reflected in your document."
+msgstr ""
+"Vložit ikonu reprezentující soubor do dokumentu. Změny ve zdrojovém souboru "
+"se potom projeví v dokumentu."
+
+#: so3res.src#STR_PASTE.string.text
+msgid "Pastes the contents of the clipboard as %1 in your document."
+msgstr "Vložit obsah schránky do dokumentu jako %1."
+
+#: so3res.src#STR_CONVERT_TO.string.text
+msgid "Converts the selected %1object to the object type %2."
+msgstr "Konvertovat vybraný objekt %1 na objekt typu %2."
+
+#: so3res.src#STR_ACTIVATE_AS.string.text
+msgid "All objects of type %1 are activated as %2, but not converted"
+msgstr ""
+"Všechny objekty typu %1 budou aktivovány jako %2, ale nebudou konvertovány."
+
+#: so3res.src#STR_VERB_OPEN.string.text
+msgid "~Open"
+msgstr "Otevřít"
+
+#: so3res.src#STR_VERB_PROPS.string.text
+msgid "~Properties"
+msgstr "Vlastnosti"
+
+#: so3res.src#STR_PLUGIN_CANT_SHOW.string.text
+msgid "Plug-in % cannot be displayed."
+msgstr "Zásuvný modul % nebylo možné zobrazit."
+
+#: so3res.src#STR_ERROR_DDE.string.text
+msgid "DDE link to % for % area % are not available."
+msgstr "DDE odkaz na % pro % oblast % není dostupný."
+
+#: so3res.src#STR_ERROR_OBJNOCREATE.string.text
+msgid "Object % could not be inserted."
+msgstr "Objekt % nelze vložit."
+
+#: so3res.src#STR_ERROR_OBJNOCREATE_FROM_FILE.string.text
+msgid "Object from file % could not be inserted."
+msgstr "Objekt ze souboru % nelze vložit."
+
+#: so3res.src#STR_ERROR_OBJNOCREATE_PLUGIN.string.text
+msgid "Plug-in from document % could not be inserted."
+msgstr "Zásuvný modul z dokumentu % nemohl být použit."
+
+#: so3res.src#STR_QUERYUPDATELINKS.string.text
+msgid "Update all links?"
+msgstr "Aktualizovat všechny odkazy?"
+
+#: so3res.src#STR_FURTHER_OBJECT.string.text
+msgid "Further objects"
+msgstr "Další objekty"
+
+#: so3res.src#STR_EDIT_APPLET.string.text
+msgid "Edit Applet"
+msgstr "Upravit applet"
+
+#: so3res.src#MI_PLUGIN.MI_PLUGIN_DEACTIVATE.menuitem.text
+msgid "Deactivate"
+msgstr "Deaktivovat"
+
+#: so3res.src#STR_UNKNOWN_SOURCE.string.text
+msgid "Unknown source"
+msgstr "Neznámý zdroj"
+
+#: wizardmachine.src#STR_WIZDLG_FINISH.string.text
+msgid "~Finish"
+msgstr "Dokončit"
+
+#: wizardmachine.src#STR_WIZDLG_NEXT.string.text
+msgid "~Next >>"
+msgstr "Další >>"
+
+#: wizardmachine.src#STR_WIZDLG_PREVIOUS.string.text
+msgid "<< Bac~k"
+msgstr "<< Zpět"
+
+#: wizardmachine.src#STR_WIZDLG_ROADMAP_TITLE.string.text
+msgid "Steps"
+msgstr "Kroky"
+
+#~ msgid "~Cyan"
+#~ msgstr "Azurová"
+
+#~ msgid "~Magenta"
+#~ msgstr "Purpurová"
+
+#~ msgid "~Yellow"
+#~ msgstr "Žlutá"
+
+#~ msgid "~Key"
+#~ msgstr "Klíč"
+
+#~ msgid "~Red"
+#~ msgstr "Červená"
+
+#~ msgid "~Green"
+#~ msgstr "Zelená"
+
+#~ msgid "~Blue"
+#~ msgstr "Modrá"
+
+#~ msgid "H~ue"
+#~ msgstr "Tón"
+
+#~ msgid "~Saturation"
+#~ msgstr "Nasycení"
+
+#~ msgid "Bright~ness"
+#~ msgstr "Jas"
+
+#~ msgid "Color"
+#~ msgstr "Barva"
+
+#~ msgid "RGB(%1, %2, %3) Hue:%4 Saturation:%5 Brightness:%6"
+#~ msgstr "RGB(%1,%2,%3) Tón:%4 Nasycení:%5 Jas:%6"
+
+#~ msgid "Fax number"
+#~ msgstr "Faxové číslo"
+
+#~ msgid "Print to file"
+#~ msgstr "Tisk do souboru"
+
+#~ msgctxt "printdlg.src#DLG_SVT_PRNDLG_PRINTDLG.FL_PRINT.fixedline.text"
+#~ msgid "Print"
+#~ msgstr "Tisk"
+
+#~ msgid "All sheets"
+#~ msgstr "Všechny listy"
+
+#~ msgid "Selected sheets"
+#~ msgstr "Vybrané listy"
+
+#~ msgid "Selected cells"
+#~ msgstr "Vybrané buňky"
+
+#~ msgid "Print range"
+#~ msgstr "Tisk oblasti"
+
+#~ msgid "All pages"
+#~ msgstr "Všechny stránky"
+
+#~ msgid "Pages"
+#~ msgstr "Stránky"
+
+#~ msgid "Selection"
+#~ msgstr "Výběr"
+
+#~ msgid "Copies"
+#~ msgstr "Kopie"
+
+#~ msgid "Number of copies"
+#~ msgstr "Počet kopií"
+
+#~ msgid "Co~llate"
+#~ msgstr "Seřadit"
+
+#~ msgid "<All>"
+#~ msgstr "<Vše>"
+
+#~ msgctxt "printdlg.src#DLG_SVT_PRNDLG_PRINTDLG.modaldialog.text"
+#~ msgid "Print"
+#~ msgstr "Tisk"
+
+#: fileview.src#STR_SVT_FILEVIEW_COLUMN_TITLE.string.text
+msgctxt "fileview.src#STR_SVT_FILEVIEW_COLUMN_TITLE.string.text"
+msgid "Title"
+msgstr "Název"
+
+#: fileview.src#STR_SVT_FILEVIEW_COLUMN_SIZE.string.text
+msgctxt "fileview.src#STR_SVT_FILEVIEW_COLUMN_SIZE.string.text"
+msgid "Size"
+msgstr "Velikost"
+
+#: fileview.src#STR_SVT_FILEVIEW_COLUMN_DATE.string.text
+msgid "Date modified"
+msgstr "Datum změny"
+
+#: fileview.src#STR_SVT_FILEVIEW_COLUMN_TYPE.string.text
+msgctxt "fileview.src#STR_SVT_FILEVIEW_COLUMN_TYPE.string.text"
+msgid "Type"
+msgstr "Typ"
+
+#: fileview.src#STR_SVT_FILEVIEW_ERR_MAKEFOLDER.string.text
+msgid "Could not create the folder %1."
+msgstr "Nelze vytvořit složku %1."
+
+#: fileview.src#STR_SVT_BYTES.string.text
+msgid "Bytes"
+msgstr "Bajtů"
+
+#: fileview.src#STR_SVT_KB.string.text
+msgid "KB"
+msgstr "kB"
+
+#: fileview.src#STR_SVT_MB.string.text
+msgid "MB"
+msgstr "MB"
+
+#: fileview.src#STR_SVT_GB.string.text
+msgid "GB"
+msgstr "GB"
+
+#: fileview.src#RID_FILEVIEW_CONTEXTMENU.MID_FILEVIEW_DELETE.menuitem.text
+msgctxt "fileview.src#RID_FILEVIEW_CONTEXTMENU.MID_FILEVIEW_DELETE.menuitem.text"
+msgid "~Delete"
+msgstr "Odstranit"
+
+#: fileview.src#RID_FILEVIEW_CONTEXTMENU.MID_FILEVIEW_RENAME.menuitem.text
+msgid "~Rename"
+msgstr "Přejmenovat..."
+
+#: fileview.src#DLG_SVT_QUERYDELETE.TXT_ENTRY.fixedtext.text
+msgid "Entry:"
+msgstr "Položka:"
+
+#: fileview.src#DLG_SVT_QUERYDELETE.TXT_QUERYMSG.fixedtext.text
+msgid "Are you sure you want to delete the selected data?"
+msgstr "Opravdu si přejete odstranit vybraná data?"
+
+#: fileview.src#DLG_SVT_QUERYDELETE.BTN_YES.pushbutton.text
+msgctxt "fileview.src#DLG_SVT_QUERYDELETE.BTN_YES.pushbutton.text"
+msgid "~Delete"
+msgstr "Odstranit"
+
+#: fileview.src#DLG_SVT_QUERYDELETE.BTN_ALL.pushbutton.text
+msgid "Delete ~All"
+msgstr "Odstranit vše"
+
+#: fileview.src#DLG_SVT_QUERYDELETE.BTN_NO.pushbutton.text
+msgid "Do ~Not Delete"
+msgstr "Neodstraňovat"
+
+#: fileview.src#DLG_SVT_QUERYDELETE.modaldialog.text
+msgid "Confirm Delete"
+msgstr "Potvrzení odstranění"
+
+#: svcontnr.src#STR_SVT_ACC_DESC_TABLISTBOX.string.text
+msgid "Row: %1, Column: %2"
+msgstr "Řádek: %1, Sloupec: %2"
+
+#: svcontnr.src#STR_SVT_ACC_DESC_FILEVIEW.string.text
+msgid ", Type: %1, URL: %2"
+msgstr ", Typ: %1, URL: %2"
+
+#: svcontnr.src#STR_SVT_ACC_DESC_FOLDER.string.text
+msgid "Folder"
+msgstr "Složka"
+
+#: svcontnr.src#STR_SVT_ACC_DESC_FILE.string.text
+msgid "File"
+msgstr "Soubor"
+
+#: svcontnr.src#STR_SVT_ACC_EMPTY_FIELD.string.text
+msgid "Empty Field"
+msgstr "Prázdné pole"
+
+#: templwin.src#STR_SVT_NEWDOC.string.text
+msgid "New Document"
+msgstr "Nový dokument"
+
+#: templwin.src#STR_SVT_MYDOCS.string.text
+msgid "My Documents"
+msgstr "Mé dokumenty"
+
+#: templwin.src#STR_SVT_TEMPLATES.string.text
+msgid "Templates"
+msgstr "Šablony"
+
+#: templwin.src#STR_SVT_SAMPLES.string.text
+msgid "Samples"
+msgstr "Příklady"
+
+#: templwin.src#TB_SVT_FILEVIEW.TI_DOCTEMPLATE_BACK.toolboxitem.text
+msgid "Back"
+msgstr "Zpět"
+
+#: templwin.src#TB_SVT_FILEVIEW.TI_DOCTEMPLATE_PREV.toolboxitem.text
+msgid "Up One Level"
+msgstr "O úroveň výše"
+
+#: templwin.src#TB_SVT_FILEVIEW.TI_DOCTEMPLATE_PRINT.toolboxitem.text
+msgid "Print"
+msgstr "Tisk"
+
+#: templwin.src#TB_SVT_FRAMEWIN.TI_DOCTEMPLATE_DOCINFO.toolboxitem.text
+msgid "Document Properties"
+msgstr "Vlastnosti dokumentu"
+
+#: templwin.src#TB_SVT_FRAMEWIN.TI_DOCTEMPLATE_PREVIEW.toolboxitem.text
+msgid "Preview"
+msgstr "Náhled"
+
+#: templwin.src#DLG_DOCTEMPLATE.FT_DOCTEMPLATE_LINK.fixedtext.text
+msgid "~Get more templates online..."
+msgstr "Získat více šablon online..."
+
+#: templwin.src#DLG_DOCTEMPLATE.BTN_DOCTEMPLATE_MANAGE.pushbutton.text
+msgid "Organi~ze..."
+msgstr "Uspořádat..."
+
+#: templwin.src#DLG_DOCTEMPLATE.BTN_DOCTEMPLATE_EDIT.pushbutton.text
+msgid "~Edit"
+msgstr "Upravit"
+
+#: templwin.src#DLG_DOCTEMPLATE.BTN_DOCTEMPLATE_OPEN.okbutton.text
+msgid "~Open"
+msgstr "Otevřít"
+
+#: templwin.src#DLG_DOCTEMPLATE.modaldialog.text
+msgid "Templates and Documents"
+msgstr "Šablony a dokumenty"
+
+#: templwin.src#STRARY_SVT_DOCINFO.1.itemlist.text
+msgctxt "templwin.src#STRARY_SVT_DOCINFO.1.itemlist.text"
+msgid "Title"
+msgstr "Název"
+
+#: templwin.src#STRARY_SVT_DOCINFO.2.itemlist.text
+msgid "By"
+msgstr "By"
+
+#: templwin.src#STRARY_SVT_DOCINFO.3.itemlist.text
+msgid "Date"
+msgstr "Datum"
+
+#: templwin.src#STRARY_SVT_DOCINFO.4.itemlist.text
+msgid "Keywords"
+msgstr "Klíčová slova"
+
+#: templwin.src#STRARY_SVT_DOCINFO.5.itemlist.text
+msgid "Description"
+msgstr "Popis"
+
+#: templwin.src#STRARY_SVT_DOCINFO.6.itemlist.text
+msgctxt "templwin.src#STRARY_SVT_DOCINFO.6.itemlist.text"
+msgid "Type"
+msgstr "Typ"
+
+#: templwin.src#STRARY_SVT_DOCINFO.7.itemlist.text
+msgid "Modified on"
+msgstr "Upraveno"
+
+#: templwin.src#STRARY_SVT_DOCINFO.8.itemlist.text
+msgid "Modified by"
+msgstr "Upravil"
+
+#: templwin.src#STRARY_SVT_DOCINFO.9.itemlist.text
+msgid "Printed on"
+msgstr "Vytištěno"
+
+#: templwin.src#STRARY_SVT_DOCINFO.10.itemlist.text
+msgid "Printed by"
+msgstr "Vytiskl"
+
+#: templwin.src#STRARY_SVT_DOCINFO.11.itemlist.text
+msgid "Subject"
+msgstr "Předmět"
+
+#: templwin.src#STRARY_SVT_DOCINFO.12.itemlist.text
+msgctxt "templwin.src#STRARY_SVT_DOCINFO.12.itemlist.text"
+msgid "Size"
+msgstr "Velikost"
+
+#: templwin.src#STR_SVT_NEWDOC_HELP.string.text
+msgid "Click here to create new documents."
+msgstr "Klepnutím zde vytvoříte nový dokument."
+
+#: templwin.src#STR_SVT_MYDOCS_HELP.string.text
+msgid "Contains your letters, reports and other documents"
+msgstr "Obsahuje vaše dopisy, reporty a ostatní dokumenty"
+
+#: templwin.src#STR_SVT_TEMPLATES_HELP.string.text
+msgid "Contains templates for creating new documents"
+msgstr "Obsahuje šablony pro vytváření nových dokumentů"
+
+#: templwin.src#STR_SVT_SAMPLES_HELP.string.text
+msgid "Contains a selection of sample letters, reports and other documents"
+msgstr "Obsahuje výběr ukázkových dopisů, reportů a jiných dokumentů"
+"X-Accelerator-Marker: ~\n"
+
+#: calendar.src#STR_SVT_CALENDAR_DAY.string.text
+msgid "Day"
+msgstr "Den"
+
+#: calendar.src#STR_SVT_CALENDAR_WEEK.string.text
+msgid "Week"
+msgstr "Týden"
+
+#: calendar.src#STR_SVT_CALENDAR_TODAY.string.text
+msgid "Today"
+msgstr "Dnes"
+
+#: calendar.src#STR_SVT_CALENDAR_NONE.string.text
+msgid "None"
+msgstr "Žádné"
+
+#: ctrlbox.src#STR_SVT_AUTOMATIC_COLOR.string.text
+msgid "Automatic"
+msgstr "Automaticky"
+
+#: ctrlbox.src#STR_SVT_COLLATE_ALPHANUMERIC.string.text
+msgctxt "ctrlbox.src#STR_SVT_COLLATE_ALPHANUMERIC.string.text"
+msgid "Alphanumeric"
+msgstr "Alfanumerický"
+
+#: ctrlbox.src#STR_SVT_COLLATE_NORMAL.string.text
+msgid "Normal"
+msgstr "Běžné"
+
+#: ctrlbox.src#STR_SVT_COLLATE_CHARSET.string.text
+msgid "Character set"
+msgstr "Písmo"
+
+#: ctrlbox.src#STR_SVT_COLLATE_DICTIONARY.string.text
+msgctxt "ctrlbox.src#STR_SVT_COLLATE_DICTIONARY.string.text"
+msgid "Dictionary"
+msgstr "Slovník"
+
+#: ctrlbox.src#STR_SVT_COLLATE_PINYIN.string.text
+msgctxt "ctrlbox.src#STR_SVT_COLLATE_PINYIN.string.text"
+msgid "Pinyin"
+msgstr "Pinyin"
+
+#: ctrlbox.src#STR_SVT_COLLATE_STROKE.string.text
+msgctxt "ctrlbox.src#STR_SVT_COLLATE_STROKE.string.text"
+msgid "Stroke"
+msgstr "Stroke"
+
+#: ctrlbox.src#STR_SVT_COLLATE_RADICAL.string.text
+msgctxt "ctrlbox.src#STR_SVT_COLLATE_RADICAL.string.text"
+msgid "Radical"
+msgstr "Radical"
+
+#: ctrlbox.src#STR_SVT_COLLATE_UNICODE.string.text
+msgid "Unicode"
+msgstr "Unicode"
+
+#: ctrlbox.src#STR_SVT_COLLATE_ZHUYIN.string.text
+msgctxt "ctrlbox.src#STR_SVT_COLLATE_ZHUYIN.string.text"
+msgid "Zhuyin"
+msgstr "Zhuyin"
+
+#: ctrlbox.src#STR_SVT_COLLATE_PHONEBOOK.string.text
+msgid "Phone book"
+msgstr "Telefonní seznam"
+
+#: ctrlbox.src#STR_SVT_COLLATE_PHONETIC_F.string.text
+msgid "Phonetic (alphanumeric first)"
+msgstr "Foneticky (písmena a číslice jako první)"
+
+#: ctrlbox.src#STR_SVT_COLLATE_PHONETIC_L.string.text
+msgid "Phonetic (alphanumeric last)"
+msgstr "Foneticky (písmena a číslice jako poslední)"
+
+#: ctrlbox.src#STR_SVT_INDEXENTRY_ALPHANUMERIC.string.text
+msgctxt "ctrlbox.src#STR_SVT_INDEXENTRY_ALPHANUMERIC.string.text"
+msgid "Alphanumeric"
+msgstr "Alfanumerický"
+
+#: ctrlbox.src#STR_SVT_INDEXENTRY_DICTIONARY.string.text
+msgctxt "ctrlbox.src#STR_SVT_INDEXENTRY_DICTIONARY.string.text"
+msgid "Dictionary"
+msgstr "Slovník"
+
+#: ctrlbox.src#STR_SVT_INDEXENTRY_PINYIN.string.text
+msgctxt "ctrlbox.src#STR_SVT_INDEXENTRY_PINYIN.string.text"
+msgid "Pinyin"
+msgstr "Pinyin"
+
+#: ctrlbox.src#STR_SVT_INDEXENTRY_RADICAL.string.text
+msgctxt "ctrlbox.src#STR_SVT_INDEXENTRY_RADICAL.string.text"
+msgid "Radical"
+msgstr "Radical"
+
+#: ctrlbox.src#STR_SVT_INDEXENTRY_STROKE.string.text
+msgctxt "ctrlbox.src#STR_SVT_INDEXENTRY_STROKE.string.text"
+msgid "Stroke"
+msgstr "Stroke"
+
+#: ctrlbox.src#STR_SVT_INDEXENTRY_ZHUYIN.string.text
+msgctxt "ctrlbox.src#STR_SVT_INDEXENTRY_ZHUYIN.string.text"
+msgid "Zhuyin"
+msgstr "Zhuyin"
+
+#: ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_FS.string.text
+msgid "Phonetic (alphanumeric first, grouped by syllables)"
+msgstr "Foneticky (písmena a číslice jako první, seskupené podle hlásek)"
+
+#: ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_FC.string.text
+msgid "Phonetic (alphanumeric first, grouped by consonants)"
+msgstr "Foneticky (písmena a číslice jako první, seskupené podle souhlásek)"
+
+#: ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_LS.string.text
+msgid "Phonetic (alphanumeric last, grouped by syllables)"
+msgstr "Foneticky (písmena a číslice jako poslední, seskupené podle hlásek)"
+
+#: ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_LC.string.text
+msgid "Phonetic (alphanumeric last, grouped by consonants)"
+msgstr "Foneticky (písmena a číslice jako poslední, seskupené podle souhlásek)"
+
+#: ctrltool.src#STR_SVT_STYLE_LIGHT.string.text
+msgid "Light"
+msgstr "Light"
+
+#: ctrltool.src#STR_SVT_STYLE_LIGHT_ITALIC.string.text
+msgid "Light Italic"
+msgstr "Lehce skloněné"
+
+#: ctrltool.src#STR_SVT_STYLE_NORMAL.string.text
+msgid "Regular"
+msgstr "Běžné"
+
+#: ctrltool.src#STR_SVT_STYLE_NORMAL_ITALIC.string.text
+msgid "Italic"
+msgstr "Kurzíva"
+
+#: ctrltool.src#STR_SVT_STYLE_BOLD.string.text
+msgid "Bold"
+msgstr "Tučné"
+
+#: ctrltool.src#STR_SVT_STYLE_BOLD_ITALIC.string.text
+msgid "Bold Italic"
+msgstr "Tučná kurzíva"
+
+#: ctrltool.src#STR_SVT_STYLE_BLACK.string.text
+msgid "Black"
+msgstr "Černá"
+
+#: ctrltool.src#STR_SVT_STYLE_BLACK_ITALIC.string.text
+msgid "Black Italic"
+msgstr "Černá kurzíva"
+
+#: ctrltool.src#STR_SVT_FONTMAP_BOTH.string.text
+msgid "The same font will be used on both your printer and your screen."
+msgstr "Stejné písmo bude použito na tiskárně i na vaší obrazovce."
+
+#: ctrltool.src#STR_SVT_FONTMAP_PRINTERONLY.string.text
+msgid "This is a printer font. The screen image may differ."
+msgstr "Toto je písmo je určeno pro tiskárnu; na obrazovce se může lišit."
+
+#: ctrltool.src#STR_SVT_FONTMAP_SCREENONLY.string.text
+msgid "This is a screen font. The printer image may differ."
+msgstr "Toto je písmo je určeno pro obrazovku; na tiskárně se může lišit."
+
+#: ctrltool.src#STR_SVT_FONTMAP_SIZENOTAVAILABLE.string.text
+msgid ""
+"This font size has not been installed. The closest available size will be "
+"used."
+msgstr ""
+"Tato velikost písma není nainstalována. Bude použita nejbližší možná "
+"velikost."
+
+#: ctrltool.src#STR_SVT_FONTMAP_STYLENOTAVAILABLE.string.text
+msgid ""
+"This font style will be simulated or the closest matching style will be "
+"used."
+msgstr ""
+"Tento styl písma bude simulován nebo bude použit nejbližší odpovídající "
+"styl."
+
+#: ctrltool.src#STR_SVT_FONTMAP_NOTAVAILABLE.string.text
+msgid ""
+"This font has not been installed. The closest available font will be used."
+msgstr ""
+"Toto písmo nebylo nainstalováno. Bude použito nejblíže odpovídající písmo."
+
+#: filectrl.src#STR_FILECTRL_BUTTONTEXT.string.text
+msgid "Browse..."
+msgstr "Procházet..."
+
+#: filectrl.src#STR_TABBAR_PUSHBUTTON_MOVET0HOME.string.text
+msgid "Move To Home"
+msgstr "Přesunout na začátek"
+
+#: filectrl.src#STR_TABBAR_PUSHBUTTON_MOVELEFT.string.text
+msgid "Move Left"
+msgstr "Přesunout vlevo"
+
+#: filectrl.src#STR_TABBAR_PUSHBUTTON_MOVERIGHT.string.text
+msgid "Move Right"
+msgstr "Přesunout vpravo"
+
+#: filectrl.src#STR_TABBAR_PUSHBUTTON_MOVETOEND.string.text
+msgid "Move To End"
+msgstr "Přesunout na konec"
+
+#: toolpanel.src#STR_SVT_TOOL_PANEL_BUTTON_FWD.string.text
+msgid "Tab Panel Scroll Button, backward"
+msgstr "Posuvník panelu záložek, zpět"
+
+#: toolpanel.src#STR_SVT_TOOL_PANEL_BUTTON_BACK.string.text
+msgid "Tab Panel Scroll Button, forward"
+msgstr "Posuvník panelu záložek, dopředu"
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: ~\n"
+
+#: exportdialog.src#DLG_EXPORT_TITLE.string.text
+msgid " Options"
+msgstr "Volby"
+
+#: exportdialog.src#DLG_EXPORT.FL_EXPORT_SIZE.fixedline.text
+msgid "Size"
+msgstr "Velikost"
+
+#: exportdialog.src#DLG_EXPORT.FT_SIZEX.fixedtext.text
+msgid "Width:"
+msgstr "Šířka:"
+
+#: exportdialog.src#DLG_EXPORT.LB_SIZEX.1.stringlist.text
+msgctxt "exportdialog.src#DLG_EXPORT.LB_SIZEX.1.stringlist.text"
+msgid "inches"
+msgstr "palců"
+
+#: exportdialog.src#DLG_EXPORT.LB_SIZEX.2.stringlist.text
+msgctxt "exportdialog.src#DLG_EXPORT.LB_SIZEX.2.stringlist.text"
+msgid "cm"
+msgstr "cm"
+
+#: exportdialog.src#DLG_EXPORT.LB_SIZEX.3.stringlist.text
+msgctxt "exportdialog.src#DLG_EXPORT.LB_SIZEX.3.stringlist.text"
+msgid "mm"
+msgstr "mm"
+
+#: exportdialog.src#DLG_EXPORT.LB_SIZEX.4.stringlist.text
+msgctxt "exportdialog.src#DLG_EXPORT.LB_SIZEX.4.stringlist.text"
+msgid "points"
+msgstr "bodů"
+
+#: exportdialog.src#DLG_EXPORT.LB_SIZEX.5.stringlist.text
+msgctxt "exportdialog.src#DLG_EXPORT.LB_SIZEX.5.stringlist.text"
+msgid "pixels"
+msgstr "pixelů"
+
+#: exportdialog.src#DLG_EXPORT.FT_SIZEY.fixedtext.text
+msgid "Height:"
+msgstr "Výška:"
+
+#: exportdialog.src#DLG_EXPORT.LB_SIZEY.1.stringlist.text
+msgctxt "exportdialog.src#DLG_EXPORT.LB_SIZEY.1.stringlist.text"
+msgid "inches"
+msgstr "palců"
+
+#: exportdialog.src#DLG_EXPORT.LB_SIZEY.2.stringlist.text
+msgctxt "exportdialog.src#DLG_EXPORT.LB_SIZEY.2.stringlist.text"
+msgid "cm"
+msgstr "cm"
+
+#: exportdialog.src#DLG_EXPORT.LB_SIZEY.3.stringlist.text
+msgctxt "exportdialog.src#DLG_EXPORT.LB_SIZEY.3.stringlist.text"
+msgid "mm"
+msgstr "mm"
+
+#: exportdialog.src#DLG_EXPORT.LB_SIZEY.4.stringlist.text
+msgctxt "exportdialog.src#DLG_EXPORT.LB_SIZEY.4.stringlist.text"
+msgid "points"
+msgstr "bodů"
+
+#: exportdialog.src#DLG_EXPORT.LB_SIZEY.5.stringlist.text
+msgctxt "exportdialog.src#DLG_EXPORT.LB_SIZEY.5.stringlist.text"
+msgid "pixels"
+msgstr "pixelů"
+
+#: exportdialog.src#DLG_EXPORT.FT_RESOLUTION.fixedtext.text
+msgid "Resolution:"
+msgstr "Rozlišení:"
+
+#: exportdialog.src#DLG_EXPORT.LB_RESOLUTION.1.stringlist.text
+msgid "pixels/cm"
+msgstr "pixelů/cm"
+
+#: exportdialog.src#DLG_EXPORT.LB_RESOLUTION.2.stringlist.text
+msgid "pixels/inch"
+msgstr "pixelů/palec"
+
+#: exportdialog.src#DLG_EXPORT.LB_RESOLUTION.3.stringlist.text
+msgid "pixels/meter"
+msgstr "pixelů/metr"
+
+#: exportdialog.src#DLG_EXPORT.FL_COLOR_DEPTH.fixedline.text
+msgid "Color Depth"
+msgstr "Barevná hloubka"
+
+#: exportdialog.src#DLG_EXPORT.STR_1BIT_THRESHOLD.string.text
+msgid "1 bit threshold"
+msgstr "1 bit s prahem"
+
+#: exportdialog.src#DLG_EXPORT.STR_1BIT_DITHERED.string.text
+msgid "1 bit dithered"
+msgstr "1 bit s ditherem"
+
+#: exportdialog.src#DLG_EXPORT.STR_4BIT_GRAYSCALE.string.text
+msgid "4 bit grayscale"
+msgstr "4 bity stupně šedi"
+
+#: exportdialog.src#DLG_EXPORT.STR_4BIT_COLOR_PALETTE.string.text
+msgid "4 bit color"
+msgstr "4 bity barevné"
+
+#: exportdialog.src#DLG_EXPORT.STR_8BIT_GRAYSCALE.string.text
+msgid "8 bit grayscale"
+msgstr "8 bitů stupně šedi"
+
+#: exportdialog.src#DLG_EXPORT.STR_8BIT_COLOR_PALETTE.string.text
+msgid "8 bit color"
+msgstr "8 bitů barevné"
+
+#: exportdialog.src#DLG_EXPORT.STR_24BIT_TRUE_COLOR.string.text
+msgid "24 bit true color"
+msgstr "24 bitů TrueColor"
+
+#: exportdialog.src#DLG_EXPORT.FL_JPG_QUALITY.fixedline.text
+msgid "Quality"
+msgstr "Kvalita"
+
+#: exportdialog.src#DLG_EXPORT.FL_COMPRESSION.fixedline.text
+msgid "Compression"
+msgstr "Komprese"
+
+#: exportdialog.src#DLG_EXPORT.FL_MODE.fixedline.text
+msgid "Mode"
+msgstr "Režim"
+
+#: exportdialog.src#DLG_EXPORT.FL_PBM_OPTIONS.fixedline.text
+msgid "File Format"
+msgstr "Formát souboru"
+
+#: exportdialog.src#DLG_EXPORT.FT_JPG_MIN.fixedtext.text
+msgid "1 is minimum Quality and smallest file size."
+msgstr "1 je minimální kvalita a nejmenší velikost souboru."
+
+#: exportdialog.src#DLG_EXPORT.FT_JPG_MAX.fixedtext.text
+msgid "100 is maximum Quality and biggest file size."
+msgstr "100 je maximální kvalita a největší velikost souboru."
+
+#: exportdialog.src#DLG_EXPORT.FT_PNG_MIN.fixedtext.text
+msgid "0 is biggest file size and fastest loading."
+msgstr "0 je největší velikost souboru a nejrychlejší načítání."
+
+#: exportdialog.src#DLG_EXPORT.FT_PNG_MAX.fixedtext.text
+msgid "9 is smallest file size and slowest loading."
+msgstr "9 je nejmenší velikost souboru a nejpomalejší načítání."
+
+#: exportdialog.src#DLG_EXPORT.CB_JPG_PREVIEW.checkbox.text
+msgctxt "exportdialog.src#DLG_EXPORT.CB_JPG_PREVIEW.checkbox.text"
+msgid "Preview"
+msgstr "Náhled"
+
+#: exportdialog.src#DLG_EXPORT.CB_INTERLACED.checkbox.text
+msgid "Interlaced"
+msgstr "Prokládání"
+
+#: exportdialog.src#DLG_EXPORT.CB_RLE_ENCODING.checkbox.text
+msgid "RLE encoding"
+msgstr "RLE kódování"
+
+#: exportdialog.src#DLG_EXPORT.FL_GIF_DRAWING_OBJECTS.fixedline.text
+msgid "Drawing Objects"
+msgstr "Objekty kresby"
+
+#: exportdialog.src#DLG_EXPORT.CB_SAVE_TRANSPARENCY.checkbox.text
+msgid "Save transparency"
+msgstr "Ukládat průhlednost"
+
+#: exportdialog.src#DLG_EXPORT.RB_BINARY.radiobutton.text
+msgid "Binary"
+msgstr "Binární"
+
+#: exportdialog.src#DLG_EXPORT.RB_TEXT.radiobutton.text
+msgid "Text"
+msgstr "Text"
+
+#: exportdialog.src#DLG_EXPORT.FL_EPS_PREVIEW.fixedline.text
+msgctxt "exportdialog.src#DLG_EXPORT.FL_EPS_PREVIEW.fixedline.text"
+msgid "Preview"
+msgstr "Náhled"
+
+#: exportdialog.src#DLG_EXPORT.CB_EPS_PREVIEW_TIFF.checkbox.text
+msgid "Image Preview (TIFF)"
+msgstr "Náhled obrázku (TIFF)"
+
+#: exportdialog.src#DLG_EXPORT.CB_EPS_PREVIEW_EPSI.checkbox.text
+msgid "Interchange (EPSI)"
+msgstr "Interchange (EPSI)"
+
+#: exportdialog.src#DLG_EXPORT.FL_EPS_VERSION.fixedline.text
+msgid "Version"
+msgstr "Verze"
+
+#: exportdialog.src#DLG_EXPORT.RB_EPS_LEVEL1.radiobutton.text
+msgid "Level 1"
+msgstr "Level 1"
+
+#: exportdialog.src#DLG_EXPORT.RB_EPS_LEVEL2.radiobutton.text
+msgid "Level 2"
+msgstr "Level 2"
+
+#: exportdialog.src#DLG_EXPORT.FL_EPS_COLOR_FORMAT.fixedline.text
+msgid "Color format"
+msgstr "Formát barev"
+
+#: exportdialog.src#DLG_EXPORT.RB_EPS_COLOR_FORMAT1.radiobutton.text
+msgid "Color"
+msgstr "Barevné"
+
+#: exportdialog.src#DLG_EXPORT.RB_EPS_COLOR_FORMAT2.radiobutton.text
+msgid "Grayscale"
+msgstr "Stupně šedi"
+
+#: exportdialog.src#DLG_EXPORT.RB_EPS_COMPRESSION_LZW.radiobutton.text
+msgid "LZW encoding"
+msgstr "LZW kódování"
+
+#: exportdialog.src#DLG_EXPORT.RB_EPS_COMPRESSION_NONE.radiobutton.text
+msgid "None"
+msgstr "Žádné"
+
+#: exportdialog.src#DLG_EXPORT.STR_ESTIMATED_SIZE_PIX_1.string.text
+msgid "The picture needs about %1 KB of memory."
+msgstr "Obrázek potřebuje přibližně %1 KB paměti."
+
+#: exportdialog.src#DLG_EXPORT.STR_ESTIMATED_SIZE_PIX_2.string.text
+msgid ""
+"The picture needs about %1 KB of memory,\n"
+" the file size is %2 KB."
+msgstr ""
+"Obrázek potřebuje přibližně %1 KB paměti,\n"
+"velikost souboru je %2 KB."
+
+#: exportdialog.src#DLG_EXPORT.STR_ESTIMATED_SIZE_VEC.string.text
+msgid "The file size is %1 KB."
+msgstr "Velikost souboru je %1 KB."
+"X-Accelerator-Marker: ~\n"
+
+#: javaerror.src#WARNINGBOX_JAVANOTFOUND.warningbox.text
+msgid ""
+"%PRODUCTNAME requires a Java runtime environment (JRE) to perform this task. "
+"Please install a JRE and restart %PRODUCTNAME."
+msgstr ""
+"%PRODUCTNAME vyžaduje pro vykonání této funkce běhové prostředí Javy (JRE). "
+"Nainstalujte, prosím, JRE a znovu spusťte %PRODUCTNAME."
+
+#: javaerror.src#WARNINGBOX_INVALIDJAVASETTINGS.warningbox.text
+msgid ""
+"The %PRODUCTNAME configuration has been changed. Under Tools - Options - %"
+"PRODUCTNAME - Java, select the Java runtime environment you want to have "
+"used by %PRODUCTNAME."
+msgstr ""
+"Konfigurace %PRODUCTNAME byla změněna. V nabídce Nástroje - Volby - %"
+"PRODUCTNAME - Java vybere běhové prostředí Javy, které chcete v %PRODUCTNAME "
+"používat."
+
+#: javaerror.src#QBX_JAVADISABLED.querybox.text
+msgid ""
+"%PRODUCTNAME requires a Java runtime environment (JRE) to perform this task. "
+"However, use of a JRE has been disabled. Do you want to enable the use of a "
+"JRE now?"
+msgstr ""
+"%PRODUCTNAME pro provedení tohoto úkolu vyžaduje běhové prostředí Javy "
+"(JRE). Použití JRE ale bylo zakázáno. Chcete nyní povolit používání JRE?"
+
+#: javaerror.src#ERRORBOX_JVMCREATIONFAILED.errorbox.text
+msgid ""
+"%PRODUCTNAME requires a Java runtime environment (JRE) to perform this task. "
+"The selected JRE is defective. Please select another version or install a "
+"new JRE and select  it under Tools - Options - %PRODUCTNAME - Java."
+msgstr ""
+"%PRODUCTNAME vyžaduje pro vykonání této funkce běhové prostředí Javy (JRE). "
+"Zvolené běhové prostředí je vadné. Zvolte, prosím, jinou verzi nebo "
+"nainstalujte nové běhové prostředí a vyberte jej v nabídce Nástroje - Volby "
+"- %PRODUCTNAME - Java."
+
+#: javaerror.src#ERRORBOX_RESTARTREQUIRED.errorbox.text
+msgid ""
+"For the selected Java runtime environment to work properly, %PRODUCTNAME "
+"must be restarted. Please restart %PRODUCTNAME now."
+msgstr ""
+"Aby mohlo zvolené běhové prostředí Javy správně pracovat, je nutné znovu "
+"spustit %PRODUCTNAME. Nyní, prosím, znovu spusťte %PRODUCTNAME."
+
+#: javaerror.src#STR_WARNING_JAVANOTFOUND.string.text
+msgid "JRE Required"
+msgstr "Vyžadováno JRE"
+
+#: javaerror.src#STR_WARNING_INVALIDJAVASETTINGS.string.text
+msgid "Select JRE"
+msgstr "Zvolte JRE"
+
+#: javaerror.src#STR_ERROR_RESTARTREQUIRED.string.text
+msgid "Restart Required"
+msgstr "Je nutné restartovat"
+
+#: javaerror.src#STR_QUESTION_JAVADISABLED.string.text
+msgid "Enable JRE"
+msgstr "Povolit JRE"
+
+#: javaerror.src#STR_ERROR_JVMCREATIONFAILED.string.text
+msgid "JRE is Defective"
+msgstr "JRE je poškozeno"
+
+#: testtool.src#DisplayHidToolBox.TT_SHOW.toolboxitem.text
+msgid "Display IDs"
+msgstr "Zobrazovat IDčka"
+
+#: testtool.src#DisplayHidToolBox.TT_OUTPUT.toolboxitem.text
+msgid "This is the input window"
+msgstr "Toto je vstupní okno"
+
+#: testtool.src#DisplayHidToolBox.TT_SEND_DATA.toolboxitem.text
+msgid "Transfer to TestTool"
+msgstr "Přenes do testovacího nástroje"
+
+#: testtool.src#DisplayHidToolBox.TT_ALLWIN.toolboxitem.text
+msgid "Show all windows"
+msgstr "Zobrazit všechna okna"
+
+#: testtool.src#DisplayHidToolBox.TT_KURZNAME.toolboxitem.text
+msgid "Show short names (if available)"
+msgstr "Zobrazit krátká jména (jsou-li dostupná)"
+
+#: testtool.src#DisplayHidToolBox.TT_LANGNAME.toolboxitem.text
+msgid "Always show long-name"
+msgstr "Vždy zobrazovat dlouhá jména"
+
+#: testtool.src#DisplayHidToolBox.toolbox.text
+msgid "DisplayHID"
+msgstr "DisplayHID"
+
+#: testtool.src#TT_INLINE_TRANSLATION.TT_GB_TRANSLATION.groupbox.text
+msgid "Translation"
+msgstr "Překlad"
+
+#: testtool.src#TT_INLINE_TRANSLATION.TT_E_NEW.edit.text
+msgid "~Edit"
+msgstr "Upravit"
+
+#: testtool.src#TT_INLINE_TRANSLATION.TT_FT_OLD.fixedtext.text
+msgid "Original Text"
+msgstr "Původní text"
+
+#: testtool.src#TT_INLINE_TRANSLATION.TT_GB_COMMENT.groupbox.text
+msgid "Comment"
+msgstr "Komentář"
+
+#: testtool.src#TT_INLINE_TRANSLATION.TT_E_COMMENT.edit.text
+msgid "~Comment"
+msgstr "Komentář"
+
+#: testtool.src#TT_INLINE_TRANSLATION.TT_PB_SELECT.pushbutton.text
+msgid "~Select"
+msgstr "Vybrat"
+
+#: testtool.src#TT_INLINE_TRANSLATION.TT_PB_RESTORE.pushbutton.text
+msgid "~Restore"
+msgstr "Obnovit"
+
+#: testtool.src#TT_INLINE_TRANSLATION.TT_PB_ACCEPT.pushbutton.text
+msgid "~Accept"
+msgstr "Přijmout"
+
+#: testtool.src#TT_INLINE_TRANSLATION.TT_PB_NEXT.pushbutton.text
+msgid "~Next"
+msgstr "Další"
+
+#: testtool.src#TT_INLINE_TRANSLATION.workwindow.text
+msgid "Inplace Translation"
+msgstr "Překlad na místě"
+
+#: testtool.src#TT_DISCARD_CHANGED_DATA.messbox.text
+msgid "The Translation will be lost. Proceed anyway?"
+msgstr "Překlad bude ztracen, i tak pokračovat?"
+
+#: testtool.src#TT_NO_CONTROL.errorbox.text
+msgid "The Control is no longer valid. The Translation cannot be saved."
+msgstr "Ovládací prvek již není platný. Překlad nemůže být uložen."
+
+#: testtool.src#TT_GPF.string.text
+msgid "GPF occurred"
+msgstr "Nastala chyba GPF"
+
+#: testtool.src#TT_ALTERNATE_CAPTION.string.text
+msgid "HelpID does not match UniqueID: "
+msgstr "HelpID neodpovídá UniqueID: "
+"X-Accelerator-Marker: ~\n"
+
+#: imagemgr.src#STR_DESCRIPTION_SOURCEFILE.string.text
+msgid "Source code"
+msgstr "Zdrojový kód"
+
+#: imagemgr.src#STR_DESCRIPTION_BOOKMARKFILE.string.text
+msgid "Bookmark file"
+msgstr "Soubor záložek"
+
+#: imagemgr.src#STR_DESCRIPTION_GRAPHIC_DOC.string.text
+msgid "Graphics"
+msgstr "Obrázek"
+
+#: imagemgr.src#STR_DESCRIPTION_CFGFILE.string.text
+msgid "Configuration file"
+msgstr "Konfigurační soubor"
+
+#: imagemgr.src#STR_DESCRIPTION_APPLICATION.string.text
+msgid "Application"
+msgstr "Aplikace"
+
+#: imagemgr.src#STR_DESCRIPTION_DATABASE_TABLE.string.text
+msgid "Database table"
+msgstr "Databázová tabulka"
+
+#: imagemgr.src#STR_DESCRIPTION_SYSFILE.string.text
+msgid "System file"
+msgstr "Systémový soubor"
+
+#: imagemgr.src#STR_DESCRIPTION_WORD_DOC.string.text
+msgid "MS Word document"
+msgstr "Dokument MS Word"
+
+#: imagemgr.src#STR_DESCRIPTION_HELP_DOC.string.text
+msgid "Help file"
+msgstr "Soubor nápovědy"
+
+#: imagemgr.src#STR_DESCRIPTION_HTMLFILE.string.text
+msgctxt "imagemgr.src#STR_DESCRIPTION_HTMLFILE.string.text"
+msgid "HTML document"
+msgstr "HTML dokument"
+
+#: imagemgr.src#STR_DESCRIPTION_ARCHIVFILE.string.text
+msgid "Archive file"
+msgstr "Archivní soubor"
+
+#: imagemgr.src#STR_DESCRIPTION_LOGFILE.string.text
+msgid "Log file"
+msgstr "Protokolový soubor"
+
+#: imagemgr.src#STR_DESCRIPTION_SDATABASE_DOC.string.text
+msgid "%STAROFFICE Database"
+msgstr "Databáze %STAROFFICE"
+
+#: imagemgr.src#STR_DESCRIPTION_GLOBALDOC.string.text
+msgid "StarWriter 4.0 / 5.0 Master Document"
+msgstr "Hlavní dokument StarWriter 4.0 / 5.0"
+
+#: imagemgr.src#STR_DESCRIPTION_SIMAGE_DOC.string.text
+msgid "%STAROFFICE Image"
+msgstr "Obrázek %STAROFFICE"
+
+#: imagemgr.src#STR_DESCRIPTION_TEXTFILE.string.text
+msgid "Text file"
+msgstr "Textový soubor"
+
+#: imagemgr.src#STR_DESCRIPTION_LINK.string.text
+msgid "Link"
+msgstr "Odkaz"
+
+#: imagemgr.src#STR_DESCRIPTION_SOFFICE_TEMPLATE_DOC.string.text
+msgid "%STAROFFICE 3.0 - 5.0 Template"
+msgstr "Šablona %STAROFFICE 3.0 - 5.0"
+
+#: imagemgr.src#STR_DESCRIPTION_EXCEL_DOC.string.text
+msgid "MS Excel document"
+msgstr "Dokument MS Excel"
+
+#: imagemgr.src#STR_DESCRIPTION_EXCEL_TEMPLATE_DOC.string.text
+msgid "MS Excel template"
+msgstr "Šablona MS Excel"
+
+#: imagemgr.src#STR_DESCRIPTION_BATCHFILE.string.text
+msgid "Batch file"
+msgstr "Dávkový soubor"
+
+#: imagemgr.src#STR_DESCRIPTION_FILE.string.text
+msgid "File"
+msgstr "Soubor"
+
+#: imagemgr.src#STR_DESCRIPTION_FOLDER.string.text
+msgid "Folder"
+msgstr "Složka"
+
+#: imagemgr.src#STR_DESCRIPTION_FACTORY_WRITER.string.text
+msgid "Text Document"
+msgstr "Textový dokument"
+
+#: imagemgr.src#STR_DESCRIPTION_FACTORY_CALC.string.text
+msgid "Spreadsheet"
+msgstr "Sešit"
+
+#: imagemgr.src#STR_DESCRIPTION_FACTORY_IMPRESS.string.text
+msgid "Presentation"
+msgstr "Prezentace"
+
+#: imagemgr.src#STR_DESCRIPTION_FACTORY_DRAW.string.text
+msgid "Drawing"
+msgstr "Kresba"
+
+#: imagemgr.src#STR_DESCRIPTION_FACTORY_WRITERWEB.string.text
+msgctxt "imagemgr.src#STR_DESCRIPTION_FACTORY_WRITERWEB.string.text"
+msgid "HTML document"
+msgstr "HTML dokument"
+
+#: imagemgr.src#STR_DESCRIPTION_FACTORY_GLOBALDOC.string.text
+msgid "Master document"
+msgstr "Hlavní dokument"
+
+#: imagemgr.src#STR_DESCRIPTION_FACTORY_MATH.string.text
+msgid "Formula"
+msgstr "Vzorec"
+
+#: imagemgr.src#STR_DESCRIPTION_FACTORY_DATABASE.string.text
+msgid "Database"
+msgstr "Databáze"
+
+#: imagemgr.src#STR_DESCRIPTION_CALC_TEMPLATE.string.text
+msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet Template"
+msgstr "Šablona sešitu %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: imagemgr.src#STR_DESCRIPTION_DRAW_TEMPLATE.string.text
+msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Drawing Template"
+msgstr "Šablona kresby %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: imagemgr.src#STR_DESCRIPTION_IMPRESS_TEMPLATE.string.text
+msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Presentation Template"
+msgstr "Šablona prezentace %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: imagemgr.src#STR_DESCRIPTION_WRITER_TEMPLATE.string.text
+msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Text Document Template"
+msgstr "Šablona textového dokumentu %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: imagemgr.src#STR_DESCRIPTION_LOCALE_VOLUME.string.text
+msgid "Local drive"
+msgstr "Lokální mechanika"
+
+#: imagemgr.src#STR_DESCRIPTION_FLOPPY_VOLUME.string.text
+msgid "Disk drive"
+msgstr "Disk"
+
+#: imagemgr.src#STR_DESCRIPTION_CDROM_VOLUME.string.text
+msgid "CD-ROM drive"
+msgstr "CD mechanika"
+
+#: imagemgr.src#STR_DESCRIPTION_REMOTE_VOLUME.string.text
+msgid "Network connection"
+msgstr "Síťové spojení"
+
+#: imagemgr.src#STR_DESCRIPTION_POWERPOINT.string.text
+msgid "MS PowerPoint Document"
+msgstr "Dokument MS PowerPoint"
+
+#: imagemgr.src#STR_DESCRIPTION_POWERPOINT_TEMPLATE.string.text
+msgid "MS PowerPoint Template"
+msgstr "Šablona MS PowerPoint"
+
+#: imagemgr.src#STR_DESCRIPTION_POWERPOINT_SHOW.string.text
+msgid "MS PowerPoint Show"
+msgstr "Prezentace MS PowerPoint"
+
+#: imagemgr.src#STR_DESCRIPTION_SXMATH_DOC.string.text
+msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Formula"
+msgstr "Vzorec %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: imagemgr.src#STR_DESCRIPTION_SXCHART_DOC.string.text
+msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Chart"
+msgstr "Graf %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: imagemgr.src#STR_DESCRIPTION_SXDRAW_DOC.string.text
+msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Drawing"
+msgstr "Kresba %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: imagemgr.src#STR_DESCRIPTION_SXCALC_DOC.string.text
+msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet"
+msgstr "Sešit %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: imagemgr.src#STR_DESCRIPTION_SXIMPRESS_DOC.string.text
+msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Presentation"
+msgstr "Prezentace %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: imagemgr.src#STR_DESCRIPTION_SXWRITER_DOC.string.text
+msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Text Document"
+msgstr "Textový dokument %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: imagemgr.src#STR_DESCRIPTION_SXGLOBAL_DOC.string.text
+msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Master Document"
+msgstr "Hlavní dokument %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
+
+#: imagemgr.src#STR_DESCRIPTION_MATHML_DOC.string.text
+msgid "MathML Document"
+msgstr "MathML dokument"
+
+#: imagemgr.src#STR_DESCRIPTION_OO_DATABASE_DOC.string.text
+msgid "OpenDocument Database"
+msgstr "Databáze OpenDocument"
+
+#: imagemgr.src#STR_DESCRIPTION_OO_DRAW_DOC.string.text
+msgid "OpenDocument Drawing"
+msgstr "Kresba OpenDocument"
+
+#: imagemgr.src#STR_DESCRIPTION_OO_MATH_DOC.string.text
+msgid "OpenDocument Formula"
+msgstr "Vzorec OpenDocument"
+
+#: imagemgr.src#STR_DESCRIPTION_OO_GLOBAL_DOC.string.text
+msgid "OpenDocument Master Document"
+msgstr "Hlavní dokument OpenDocument"
+
+#: imagemgr.src#STR_DESCRIPTION_OO_IMPRESS_DOC.string.text
+msgid "OpenDocument Presentation"
+msgstr "Prezentace OpenDocument"
+
+#: imagemgr.src#STR_DESCRIPTION_OO_CALC_DOC.string.text
+msgid "OpenDocument Spreadsheet"
+msgstr "Sešit OpenDocument"
+
+#: imagemgr.src#STR_DESCRIPTION_OO_WRITER_DOC.string.text
+msgid "OpenDocument Text"
+msgstr "Textový dokument OpenDocument"
+
+#: imagemgr.src#STR_DESCRIPTION_OO_CALC_TEMPLATE.string.text
+msgid "OpenDocument Spreadsheet Template"
+msgstr "Šablona sešitu OpenDocument"
+
+#: imagemgr.src#STR_DESCRIPTION_OO_DRAW_TEMPLATE.string.text
+msgid "OpenDocument Drawing Template"
+msgstr "Šablona kresby OpenDocument"
+
+#: imagemgr.src#STR_DESCRIPTION_OO_IMPRESS_TEMPLATE.string.text
+msgid "OpenDocument Presentation Template"
+msgstr "Šablona prezentace OpenDocument"
+
+#: imagemgr.src#STR_DESCRIPTION_OO_WRITER_TEMPLATE.string.text
+msgid "OpenDocument Text Template"
+msgstr "Šablona textového dokumentu OpenDocument"
+
+#: imagemgr.src#STR_DESCRIPTION_EXTENSION.string.text
+msgid "%PRODUCTNAME Extension"
+msgstr "Rozšíření %PRODUCTNAME"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NONE.pairedlist.text
+msgid "[None]"
+msgstr "[žádný]"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DONTKNOW.pairedlist.text
+msgid "Unknown"
+msgstr "Neznámý"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SYSTEM.pairedlist.text
+msgid "Default"
+msgstr "Výchozí"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AFRIKAANS.pairedlist.text
+msgid "Afrikaans (South Africa)"
+msgstr "Afrikánsky (Jižní Afrika)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ALBANIAN.pairedlist.text
+msgid "Albanian"
+msgstr "Albánsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_PRIMARY_ONLY.pairedlist.text
+msgid "Arabic"
+msgstr "Arabsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_ALGERIA.pairedlist.text
+msgid "Arabic (Algeria)"
+msgstr "Arabsky (Alžírsko)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_BAHRAIN.pairedlist.text
+msgid "Arabic (Bahrain)"
+msgstr "Arabsky (Bahrajn)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_CHAD.pairedlist.text
+msgid "Arabic (Chad)"
+msgstr "Arabsky (Čad)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_COMOROS.pairedlist.text
+msgid "Arabic (Comoros)"
+msgstr "Arabsky (Komory)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_DJIBOUTI.pairedlist.text
+msgid "Arabic (Djibouti)"
+msgstr "Arabsky (Džibuti)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_EGYPT.pairedlist.text
+msgid "Arabic (Egypt)"
+msgstr "Arabsky (Egypt)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_ERITREA.pairedlist.text
+msgid "Arabic (Eritrea)"
+msgstr "Arabsky (Eritrea)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_IRAQ.pairedlist.text
+msgid "Arabic (Iraq)"
+msgstr "Arabsky (Irák)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_ISRAEL.pairedlist.text
+msgid "Arabic (Israel)"
+msgstr "Arabsky (Izrael)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_JORDAN.pairedlist.text
+msgid "Arabic (Jordan)"
+msgstr "Arabsky (Jordán)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_KUWAIT.pairedlist.text
+msgid "Arabic (Kuwait)"
+msgstr "Arabsky (Kuvajt)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_LEBANON.pairedlist.text
+msgid "Arabic (Lebanon)"
+msgstr "Arabsky (Libanon)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_LIBYA.pairedlist.text
+msgid "Arabic (Libya)"
+msgstr "Arabsky (Libye)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_MAURITANIA.pairedlist.text
+msgid "Arabic (Mauritania)"
+msgstr "Arabsky (Mauritánie)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_MOROCCO.pairedlist.text
+msgid "Arabic (Morocco)"
+msgstr "Arabsky (Maroko)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_OMAN.pairedlist.text
+msgid "Arabic (Oman)"
+msgstr "Arabsky (Omán)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_PALESTINE.pairedlist.text
+msgid "Arabic (Palestine)"
+msgstr "Arabsky (Palestina)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_QATAR.pairedlist.text
+msgid "Arabic (Qatar)"
+msgstr "Arabsky (Katar)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_SAUDI_ARABIA.pairedlist.text
+msgid "Arabic (Saudi Arabia)"
+msgstr "Arabsky (Saúdská Arábie)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_SOMALIA.pairedlist.text
+msgid "Arabic (Somalia)"
+msgstr "Arabsky (Somálsko)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_SUDAN.pairedlist.text
+msgid "Arabic (Sudan)"
+msgstr "Arabsky (Súdán)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_SYRIA.pairedlist.text
+msgid "Arabic (Syria)"
+msgstr "Arabsky (Sýrie)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_TUNISIA.pairedlist.text
+msgid "Arabic (Tunisia)"
+msgstr "Arabsky (Tunis)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_UAE.pairedlist.text
+msgid "Arabic (UAE)"
+msgstr "Arabsky (SAE)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_YEMEN.pairedlist.text
+msgid "Arabic (Yemen)"
+msgstr "Arabsky (Jemen)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARMENIAN.pairedlist.text
+msgid "Armenian"
+msgstr "Arménština"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ASSAMESE.pairedlist.text
+msgid "Assami"
+msgstr "Ásámsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AZERI_LATIN.pairedlist.text
+msgid "Azerbaijani Latin"
+msgstr "Azerbájdžánsky (latinka)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AZERI_CYRILLIC.pairedlist.text
+msgid "Azerbaijani Cyrillic"
+msgstr "Azerbájdžánsky (azbuka)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BASQUE.pairedlist.text
+msgid "Basque"
+msgstr "Baskicky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BENGALI.pairedlist.text
+msgid "Bengali (India)"
+msgstr "Bengálsky (Indie)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BULGARIAN.pairedlist.text
+msgid "Bulgarian"
+msgstr "Bulharsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BELARUSIAN.pairedlist.text
+msgid "Belarusian"
+msgstr "Bělorusky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CATALAN.pairedlist.text
+msgid "Catalan"
+msgstr "Katalánsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_TRADITIONAL.pairedlist.text
+msgid "Chinese (traditional)"
+msgstr "Čínsky (tradiční)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_SIMPLIFIED.pairedlist.text
+msgid "Chinese (simplified)"
+msgstr "Čínsky (zjedn.)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_HONGKONG.pairedlist.text
+msgid "Chinese (Hong Kong)"
+msgstr "Čínsky (Hong Kong)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_SINGAPORE.pairedlist.text
+msgid "Chinese (Singapore)"
+msgstr "Čínsky (Singapur)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_MACAU.pairedlist.text
+msgid "Chinese (Macau)"
+msgstr "Čínsky (Macau)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CROATIAN.pairedlist.text
+msgid "Croatian"
+msgstr "Chorvatsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CZECH.pairedlist.text
+msgid "Czech"
+msgstr "Česky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DANISH.pairedlist.text
+msgid "Danish"
+msgstr "Dánsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DUTCH.pairedlist.text
+msgid "Dutch (Netherlands)"
+msgstr "Holandsky (Nizozemí)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DUTCH_BELGIAN.pairedlist.text
+msgid "Dutch (Belgium)"
+msgstr "Holandsky (Belgie)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_US.pairedlist.text
+msgid "English (USA)"
+msgstr "Anglicky (USA)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_UK.pairedlist.text
+msgid "English (UK)"
+msgstr "Anglicky (UK)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_AUS.pairedlist.text
+msgid "English (Australia)"
+msgstr "Anglicky (Austrálie)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_CAN.pairedlist.text
+msgid "English (Canada)"
+msgstr "Anglicky (Kanada)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_NZ.pairedlist.text
+msgid "English (New Zealand)"
+msgstr "Anglicky (Nový Zéland)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_EIRE.pairedlist.text
+msgid "English (Eire)"
+msgstr "Anglicky (Irsko)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_SAFRICA.pairedlist.text
+msgid "English (South Africa)"
+msgstr "Anglicky (Jižní Afrika)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_JAMAICA.pairedlist.text
+msgid "English (Jamaica)"
+msgstr "Anglicky (Jamajka)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_CARRIBEAN.pairedlist.text
+msgid "English (Caribbean)"
+msgstr "Anglicky (Karibik)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_BELIZE.pairedlist.text
+msgid "English (Belize)"
+msgstr "Anglicky (Belize)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_TRINIDAD.pairedlist.text
+msgid "English (Trinidad)"
+msgstr "Anglicky (Trinidad)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_ZIMBABWE.pairedlist.text
+msgid "English (Zimbabwe)"
+msgstr "Anglicky (Zimbabwe)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_PHILIPPINES.pairedlist.text
+msgid "English (Philippines)"
+msgstr "Anglicky (Filipíny)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_INDIA.pairedlist.text
+msgid "English (India)"
+msgstr "Anglicky (Indie)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ESTONIAN.pairedlist.text
+msgid "Estonian"
+msgstr "Estonsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FINNISH.pairedlist.text
+msgid "Finnish"
+msgstr "Finsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FAEROESE.pairedlist.text
+msgid "Faroese"
+msgstr "Faersky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FARSI.pairedlist.text
+msgid "Farsi"
+msgstr "Persky (Farsi)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH.pairedlist.text
+msgid "French (France)"
+msgstr "Francouzsky (Francie)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_BELGIAN.pairedlist.text
+msgid "French (Belgium)"
+msgstr "Francouzsky (Belgie)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_CANADIAN.pairedlist.text
+msgid "French (Canada)"
+msgstr "Francouzsky (Kanada)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_SWISS.pairedlist.text
+msgid "French (Switzerland)"
+msgstr "Francouzsky (Švýcarsko)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_LUXEMBOURG.pairedlist.text
+msgid "French (Luxembourg)"
+msgstr "Francouzsky (Lucembursko)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_MONACO.pairedlist.text
+msgid "French (Monaco)"
+msgstr "Francouzsky (Monako)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GASCON.pairedlist.text
+msgid "Gascon"
+msgstr "Gaskoňsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN.pairedlist.text
+msgid "German (Germany)"
+msgstr "Německy (Německo)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_SWISS.pairedlist.text
+msgid "German (Switzerland)"
+msgstr "Německy (Švýcarsko)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_AUSTRIAN.pairedlist.text
+msgid "German (Austria)"
+msgstr "Německy (Rakousko)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_LUXEMBOURG.pairedlist.text
+msgid "German (Luxembourg)"
+msgstr "Německy (Lucembursko)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_LIECHTENSTEIN.pairedlist.text
+msgid "German (Liechtenstein)"
+msgstr "Německy (Lichtenštejnsko)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GREEK.pairedlist.text
+msgid "Greek"
+msgstr "Řecky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GUJARATI.pairedlist.text
+msgid "Gujarati"
+msgstr "Gudžarádsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HEBREW.pairedlist.text
+msgid "Hebrew"
+msgstr "Hebrejsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HINDI.pairedlist.text
+msgid "Hindi"
+msgstr "Hindsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HUNGARIAN.pairedlist.text
+msgid "Hungarian"
+msgstr "Maďarsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ICELANDIC.pairedlist.text
+msgid "Icelandic"
+msgstr "Islandsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_INDONESIAN.pairedlist.text
+msgid "Indonesian"
+msgstr "Indonésky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ITALIAN.pairedlist.text
+msgid "Italian (Italy)"
+msgstr "Italsky (Itálie)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ITALIAN_SWISS.pairedlist.text
+msgid "Italian (Switzerland)"
+msgstr "Italsky (Švýcarsko)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_JAPANESE.pairedlist.text
+msgid "Japanese"
+msgstr "Japonsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KANNADA.pairedlist.text
+msgid "Kannada"
+msgstr "Kannadsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KASHMIRI.pairedlist.text
+msgid "Kashmiri (Kashmir)"
+msgstr "Kašmírsky (Kašmír)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KASHMIRI_INDIA.pairedlist.text
+msgid "Kashmiri (India)"
+msgstr "Kašmírsky (Indie)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KAZAK.pairedlist.text
+msgid "Kazak"
+msgstr "Kazašsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KONKANI.pairedlist.text
+msgid "Konkani"
+msgstr "Konkansky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KOREAN.pairedlist.text
+msgid "Korean (RoK)"
+msgstr "Korejsky (KLDR)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LATVIAN.pairedlist.text
+msgid "Latvian"
+msgstr "Lotyšsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LITHUANIAN.pairedlist.text
+msgid "Lithuanian"
+msgstr "Litevsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MACEDONIAN.pairedlist.text
+msgid "Macedonian"
+msgstr "Makedonsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAY_MALAYSIA.pairedlist.text
+msgid "Malay (Malaysia)"
+msgstr "Malajsky (Malajsie)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAY_BRUNEI_DARUSSALAM.pairedlist.text
+msgid "Malay (Brunei Darussalam)"
+msgstr "Malajsky (Brunej)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAYALAM.pairedlist.text
+msgid "Malayalam"
+msgstr "Malajámsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MANIPURI.pairedlist.text
+msgid "Manipuri"
+msgstr "Manipursky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MARATHI.pairedlist.text
+msgid "Marathi"
+msgstr "Maráthsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NEPALI.pairedlist.text
+msgid "Nepali (Nepal)"
+msgstr "Nepálsky (Nepál)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NEPALI_INDIA.pairedlist.text
+msgid "Nepali (India)"
+msgstr "Nepálsky (Indie)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NORWEGIAN_BOKMAL.pairedlist.text
+msgid "Norwegian, Bokmål"
+msgstr "Norsky, Bokmål"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NORWEGIAN_NYNORSK.pairedlist.text
+msgid "Norwegian, Nynorsk"
+msgstr "Norsky, Nynorsk"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ORIYA.pairedlist.text
+msgid "Oriya"
+msgstr "Oriya"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_POLISH.pairedlist.text
+msgid "Polish"
+msgstr "Polsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PORTUGUESE.pairedlist.text
+msgid "Portuguese (Portugal)"
+msgstr "Portugalsky (Portugalsko)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PORTUGUESE_BRAZILIAN.pairedlist.text
+msgid "Portuguese (Brazil)"
+msgstr "Portugalsky (Brazílie)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PUNJABI.pairedlist.text
+msgid "Punjabi"
+msgstr "Pandžábsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_RHAETO_ROMAN.pairedlist.text
+msgid "Rhaeto-Romance"
+msgstr "Rétorománsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ROMANIAN.pairedlist.text
+msgid "Romanian"
+msgstr "Rumunsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_RUSSIAN.pairedlist.text
+msgid "Russian"
+msgstr "Rusky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SANSKRIT.pairedlist.text
+msgid "Sanskrit"
+msgstr "Sanskrtem"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SERBIAN_CYRILLIC.pairedlist.text
+msgid "Serbian Cyrillic (Serbia and Montenegro)"
+msgstr "Srbsky, azbuka (Srbsko a Černá hora)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SERBIAN_LATIN.pairedlist.text
+msgid "Serbian Latin (Serbia and Montenegro)"
+msgstr "Srbsky, latinka (Srbsko a Černá hora)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_CYRILLIC_SERBIA.pairedlist.text
+msgid "Serbian Cyrillic (Serbia)"
+msgstr "Srbsky, azbuka (Srbsko)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_LATIN_SERBIA.pairedlist.text
+msgid "Serbian Latin (Serbia)"
+msgstr "Srbsky, latinka (Srbsko)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_CYRILLIC_MONTENEGRO.pairedlist.text
+msgid "Serbian Cyrillic (Montenegro)"
+msgstr "Srbsky, azbuka (Černá hora)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_LATIN_MONTENEGRO.pairedlist.text
+msgid "Serbian Latin (Montenegro)"
+msgstr "Srbsky, latinka (Černá hora)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SINDHI.pairedlist.text
+msgid "Sindhi"
+msgstr "Sindhsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SLOVAK.pairedlist.text
+msgid "Slovak"
+msgstr "Slovensky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SLOVENIAN.pairedlist.text
+msgid "Slovenian"
+msgstr "Slovinsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH.pairedlist.text
+msgid "Spanish (Spain)"
+msgstr "Španělsky (Španělsko)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_MEXICAN.pairedlist.text
+msgid "Spanish (Mexico)"
+msgstr "Španělsky (Mexiko)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_GUATEMALA.pairedlist.text
+msgid "Spanish (Guatemala)"
+msgstr "Španělsky (Guatemala)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_COSTARICA.pairedlist.text
+msgid "Spanish (Costa Rica)"
+msgstr "Španělsky (Kostarika)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PANAMA.pairedlist.text
+msgid "Spanish (Panama)"
+msgstr "Španělsky (Panama)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_DOMINICAN_REPUBLIC.pairedlist.text
+msgid "Spanish (Dom. Rep.)"
+msgstr "Španělsky (Dominikánská republika)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_VENEZUELA.pairedlist.text
+msgid "Spanish (Venezuela)"
+msgstr "Španělsky (Venezuela)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_COLOMBIA.pairedlist.text
+msgid "Spanish (Colombia)"
+msgstr "Španělsky (Kolumbie)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PERU.pairedlist.text
+msgid "Spanish (Peru)"
+msgstr "Španělsky (Peru)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_ARGENTINA.pairedlist.text
+msgid "Spanish (Argentina)"
+msgstr "Španělsky (Argentina)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_ECUADOR.pairedlist.text
+msgid "Spanish (Ecuador)"
+msgstr "Španělsky (Ekvádor)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_CHILE.pairedlist.text
+msgid "Spanish (Chile)"
+msgstr "Španělsky (Chile)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_URUGUAY.pairedlist.text
+msgid "Spanish (Uruguay)"
+msgstr "Španělsky (Uruguay)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PARAGUAY.pairedlist.text
+msgid "Spanish (Paraguay)"
+msgstr "Španělsky (Paraguay)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_BOLIVIA.pairedlist.text
+msgid "Spanish (Bolivia)"
+msgstr "Španělsky (Bolívie)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_EL_SALVADOR.pairedlist.text
+msgid "Spanish (El Salvador)"
+msgstr "Španělsky (El Salvador)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_HONDURAS.pairedlist.text
+msgid "Spanish (Honduras)"
+msgstr "Španělsky (Honduras)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_NICARAGUA.pairedlist.text
+msgid "Spanish (Nicaragua)"
+msgstr "Španělsky (Nikaragua)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PUERTO_RICO.pairedlist.text
+msgid "Spanish (Puerto Rico)"
+msgstr "Španělsky (Portoriko)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWAHILI.pairedlist.text
+msgid "Swahili (Kenya)"
+msgstr "Svahilsky (Keňa)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWEDISH.pairedlist.text
+msgid "Swedish (Sweden)"
+msgstr "Švédsky (Švédsko)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWEDISH_FINLAND.pairedlist.text
+msgid "Swedish (Finland)"
+msgstr "Švédsky (Finsko)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TAJIK.pairedlist.text
+msgid "Tajik"
+msgstr "Tajik"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TAMIL.pairedlist.text
+msgid "Tamil"
+msgstr "Tamilsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TATAR.pairedlist.text
+msgid "Tatar"
+msgstr "Tatarsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TELUGU.pairedlist.text
+msgid "Telugu"
+msgstr "Telugsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_THAI.pairedlist.text
+msgid "Thai"
+msgstr "Thajsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TURKISH.pairedlist.text
+msgid "Turkish"
+msgstr "Turecky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_URDU_PAKISTAN.pairedlist.text
+msgid "Urdu (Pakistan)"
+msgstr "Urdu (Pákistán)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_URDU_INDIA.pairedlist.text
+msgid "Urdu (India)"
+msgstr "Urdu (India)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UKRAINIAN.pairedlist.text
+msgid "Ukrainian"
+msgstr "Ukrajinsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UZBEK_LATIN.pairedlist.text
+msgid "Uzbek Latin"
+msgstr "Uzbecky, latinka"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_WELSH.pairedlist.text
+msgid "Welsh"
+msgstr "Velšsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER1.pairedlist.text
+msgid "User 1"
+msgstr "Uživatelem definovaný 1"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER2.pairedlist.text
+msgid "User 2"
+msgstr "Uživatelem definovaný 2"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER3.pairedlist.text
+msgid "User 3"
+msgstr "Uživatelem definovaný 3"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER4.pairedlist.text
+msgid "User 4"
+msgstr "Uživatelem definovaný 4"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER5.pairedlist.text
+msgid "User 5"
+msgstr "Uživatelem definovaný 5"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER6.pairedlist.text
+msgid "User 6"
+msgstr "Uživatelem definovaný 6"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER7.pairedlist.text
+msgid "User 7"
+msgstr "Uživatelem definovaný 7"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER8.pairedlist.text
+msgid "User 8"
+msgstr "Uživatelem definovaný 8"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER9.pairedlist.text
+msgid "User 9"
+msgstr "Uživatelem definovaný 8"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LATIN.pairedlist.text
+msgid "Latin"
+msgstr "Latina"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ESPERANTO.pairedlist.text
+msgid "Esperanto"
+msgstr "Esperantem"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KINYARWANDA.pairedlist.text
+msgid "Kinyarwanda (Rwanda)"
+msgstr "Kinyarwanda (Rwanda)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MAORI_NEW_ZEALAND.pairedlist.text
+msgid "Maori (New Zealand)"
+msgstr "Maorsky (Nový Zéland)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GALICIAN.pairedlist.text
+msgid "Galician"
+msgstr "Galicijsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DHIVEHI.pairedlist.text
+msgid "Dhivehi"
+msgstr "Divehi"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SEPEDI.pairedlist.text
+msgid "Northern Sotho"
+msgstr "Severosotsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GAELIC_SCOTLAND.pairedlist.text
+msgid "Gaelic (Scotland)"
+msgstr "Gaelsky (Skotsko)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MONGOLIAN.pairedlist.text
+msgid "Mongolian"
+msgstr "Mongolsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_INTERLINGUA.pairedlist.text
+msgid "Interlingua"
+msgstr "Interlingua"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BOSNIAN_BOSNIA_HERZEGOVINA.pairedlist.text
+msgid "Bosnian"
+msgstr "Bosensky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BENGALI_BANGLADESH.pairedlist.text
+msgid "Bengali (Bangladesh)"
+msgstr "Bengálsky (Bangladéš)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_OCCITAN.pairedlist.text
+msgid "Occitan"
+msgstr "Okcitánsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KHMER.pairedlist.text
+msgid "Khmer"
+msgstr "Khmérsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_TURKEY.pairedlist.text
+msgid "Kurdish (Turkey)"
+msgstr "Kurdsky (Turecko)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_SYRIA.pairedlist.text
+msgid "Kurdish (Syria)"
+msgstr "Kurdsky (Sýrie)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_IRAQ.pairedlist.text
+msgid "Kurdish (Iraq)"
+msgstr "Kurdsky (Irák)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_IRAN.pairedlist.text
+msgid "Kurdish (Iran)"
+msgstr "Kurdsky (Irán)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN.pairedlist.text
+msgid "Sardinian"
+msgstr "Sardinsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DZONGKHA.pairedlist.text
+msgid "Dzongkha"
+msgstr "Dzongkha"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SWAHILI_TANZANIA.pairedlist.text
+msgid "Swahili (Tanzania)"
+msgstr "Svahilsky (Tanzánie)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LAO.pairedlist.text
+msgid "Lao"
+msgstr "Laosky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GAELIC_IRELAND.pairedlist.text
+msgid "Irish"
+msgstr "Irsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TIBETAN.pairedlist.text
+msgid "Tibetan (PR China)"
+msgstr "Tibetsky (ČLDR)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GEORGIAN.pairedlist.text
+msgid "Georgian"
+msgstr "Georgiánsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRISIAN_NETHERLANDS.pairedlist.text
+msgid "Frisian"
+msgstr "Frísky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TSWANA.pairedlist.text
+msgid "Tswana (South Africa)"
+msgstr "Čwansky (Jižní Afrika)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ZULU.pairedlist.text
+msgid "Zulu"
+msgstr "Zulu"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_VIETNAMESE.pairedlist.text
+msgid "Vietnamese"
+msgstr "Vietnamština"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BRETON.pairedlist.text
+msgid "Breton"
+msgstr "Bretonština"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KALAALLISUT.pairedlist.text
+msgid "Kalaallisut"
+msgstr "Kalaallisut"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_NDEBELE_SOUTH.pairedlist.text
+msgid "Ndebele, South"
+msgstr "Ndebele, Jižní"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SESOTHO.pairedlist.text
+msgid "Southern Sotho"
+msgstr "Jihosotsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SWAZI.pairedlist.text
+msgid "Swazi"
+msgstr "Swazi"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TSONGA.pairedlist.text
+msgid "Tsonga"
+msgstr "Tsonga"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_VENDA.pairedlist.text
+msgid "Venda"
+msgstr "Venda"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TSWANA_BOTSWANA.pairedlist.text
+msgid "Tswana (Botswana)"
+msgstr "Tswana (Botswana)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_XHOSA.pairedlist.text
+msgid "Xhosa"
+msgstr "Xhosky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SINHALESE_SRI_LANKA.pairedlist.text
+msgid "Sinhala"
+msgstr "Sinhala"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MOORE.pairedlist.text
+msgid "Moore"
+msgstr "Moorsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BAMBARA.pairedlist.text
+msgid "Bambara"
+msgstr "Bambarsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_AKAN.pairedlist.text
+msgid "Akan"
+msgstr "Akansky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LUXEMBOURGISH.pairedlist.text
+msgid "Luxembourgish"
+msgstr "Lucembursky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_FRIULIAN.pairedlist.text
+msgid "Friulian"
+msgstr "Friulsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_FIJIAN.pairedlist.text
+msgid "Fijian"
+msgstr "Fidžijsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_AFRIKAANS_NAMIBIA.pairedlist.text
+msgid "Afrikaans (Namibia)"
+msgstr "Afrikánsky (Namíbie)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ENGLISH_NAMIBIA.pairedlist.text
+msgid "English (Namibia)"
+msgstr "Anglicky (Namíbie)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_WALLOON.pairedlist.text
+msgid "Walloon"
+msgstr "Valónsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_COPTIC.pairedlist.text
+msgid "Coptic"
+msgstr "Koptsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TIGRIGNA_ERITREA.pairedlist.text
+msgid "Tigrigna (Eritrea)"
+msgstr "Tigrigna (Eritrea)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TIGRIGNA_ETHIOPIA.pairedlist.text
+msgid "Tigrigna (Ethiopia)"
+msgstr "Tigrigna (Etiopie)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AMHARIC_ETHIOPIA.pairedlist.text
+msgid "Amharic"
+msgstr "Amharsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KIRGHIZ.pairedlist.text
+msgid "Kirghiz"
+msgstr "Kirgizsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GERMAN_BELGIUM.pairedlist.text
+msgid "German (Belgium)"
+msgstr "Německy (Belgie)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_CHUVASH.pairedlist.text
+msgid "Chuvash"
+msgstr "Chuvash"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BURMESE.pairedlist.text
+msgid "Burmese"
+msgstr "Barmsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HAUSA_NIGERIA.pairedlist.text
+msgid "Hausa (Nigeria)"
+msgstr "Hausa (Nigérie)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_HAUSA_GHANA.pairedlist.text
+msgid "Hausa (Ghana)"
+msgstr "Hausa (Ghana)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_EWE_GHANA.pairedlist.text
+msgid "Éwé"
+msgstr "Éwé"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ENGLISH_GHANA.pairedlist.text
+msgid "English (Ghana)"
+msgstr "Angličtina (Ghana)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SANGO.pairedlist.text
+msgid "Sango"
+msgstr "Sango"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TAGALOG.pairedlist.text
+msgid "Tagalog"
+msgstr "Tagalog"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GANDA.pairedlist.text
+msgid "Ganda"
+msgstr "Ganda"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LINGALA_DRCONGO.pairedlist.text
+msgid "Lingala"
+msgstr "Lingala"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LOW_GERMAN.pairedlist.text
+msgid "Low German"
+msgstr "Dolnoněmčina"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_HILIGAYNON.pairedlist.text
+msgid "Hiligaynon"
+msgstr "Hiligaynon"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_NYANJA.pairedlist.text
+msgid "Nyanja"
+msgstr "Nyanja"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KASHUBIAN.pairedlist.text
+msgid "Kashubian"
+msgstr "Kashubian"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SPANISH_CUBA.pairedlist.text
+msgid "Spanish (Cuba)"
+msgstr "Španělsky (Kuba)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TETUN.pairedlist.text
+msgid "Tetun (Indonesia)"
+msgstr "Tetun (Indonézie)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_QUECHUA_NORTH_BOLIVIA.pairedlist.text
+msgid "Quechua (Bolivia, North)"
+msgstr "Quechua (Severní Bolívie)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_QUECHUA_SOUTH_BOLIVIA.pairedlist.text
+msgid "Quechua (Bolivia, South)"
+msgstr "Quechua (Jižní Bolívie)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SOMALI.pairedlist.text
+msgid "Somali"
+msgstr "Somálsky"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_INARI.pairedlist.text
+msgid "Sami, Inari (Finland)"
+msgstr "Sami, Inari (Finsko)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_LULE_NORWAY.pairedlist.text
+msgid "Sami, Lule (Norway)"
+msgstr "Sami, Lule (Norsko)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_LULE_SWEDEN.pairedlist.text
+msgid "Sami, Lule (Sweden)"
+msgstr "Sami, Lule (Švédsko)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_NORTHERN_FINLAND.pairedlist.text
+msgid "Sami, Northern (Finland)"
+msgstr "Sami, Severní (Finsko)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_NORTHERN_NORWAY.pairedlist.text
+msgid "Sami, Northern (Norway)"
+msgstr "Sami, Severní (Norsko)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_NORTHERN_SWEDEN.pairedlist.text
+msgid "Sami, Northern (Sweden)"
+msgstr "Sami, Severní (Švédsko)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_SKOLT.pairedlist.text
+msgid "Sami, Skolt (Finland)"
+msgstr "Sami, Skolt (Finsko)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_SOUTHERN_NORWAY.pairedlist.text
+msgid "Sami, Southern (Norway)"
+msgstr "Sami, Jižní (Norsko)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_SOUTHERN_SWEDEN.pairedlist.text
+msgid "Sami, Southern (Sweden)"
+msgstr "Sami, Jižní (Švédsko)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SAMI_KILDIN_RUSSIA.pairedlist.text
+msgid "Sami, Kildin (Russia)"
+msgstr "Sami, Kildin (Rusko)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GUARANI_PARAGUAY.pairedlist.text
+msgid "Guaraní, Paraguayan"
+msgstr "Guaraní, Paraguayan"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BODO_INDIA.pairedlist.text
+msgid "Bodo"
+msgstr "Bodo"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_DOGRI_INDIA.pairedlist.text
+msgid "Dogri"
+msgstr "Dogri"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MAITHILI_INDIA.pairedlist.text
+msgid "Maithili"
+msgstr "Maithili"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SANTALI_INDIA.pairedlist.text
+msgid "Santali"
+msgstr "Santali"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TETUN_TIMOR_LESTE.pairedlist.text
+msgid "Tetun (Timor-Leste)"
+msgstr "Tetun (Timor-Leste)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TURKMEN.pairedlist.text
+msgid "Turkmen"
+msgstr "Turkmen"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALTESE.pairedlist.text
+msgid "Maltese"
+msgstr "Maltština"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TOK_PISIN.pairedlist.text
+msgid "Tok Pisin"
+msgstr "Tok Pisin"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SHUSWAP.pairedlist.text
+msgid "Shuswap"
+msgstr "Shuswap"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_OROMO.pairedlist.text
+msgid "Oromo"
+msgstr "Oromo"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ANCIENT_GREEK.pairedlist.text
+msgid "Greek, Ancient"
+msgstr "Starořečtina"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_YIDDISH.pairedlist.text
+msgid "Yiddish (Israel)"
+msgstr "Jidiš (Izrael)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_QUECHUA_ECUADOR.pairedlist.text
+msgid "Quechua (Ecuador)"
+msgstr "Quechua (Ekvádor)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UIGHUR_CHINA.pairedlist.text
+msgid "Uyghur"
+msgstr "Ujgurština"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ASTURIAN.pairedlist.text
+msgid "Asturian"
+msgstr "Asturština"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UPPER_SORBIAN_GERMANY.pairedlist.text
+msgid "Sorbian, Upper"
+msgstr "Hornolužická srbština"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LOWER_SORBIAN_GERMANY.pairedlist.text
+msgid "Sorbian, Lower"
+msgstr "Dolnolužická srbština"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LATGALIAN.pairedlist.text
+msgid "Latgalian"
+msgstr "Latgalština"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MAORE.pairedlist.text
+msgid "Maore"
+msgstr "Maore"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BUSHI.pairedlist.text
+msgid "Bushi"
+msgstr "Bushi"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TAHITIAN.pairedlist.text
+msgid "Tahitian"
+msgstr "Tahitština"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MALAGASY_PLATEAU.pairedlist.text
+msgid "Malagasy, Plateau"
+msgstr "Malagasy, Plateau"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PAPIAMENTU.pairedlist.text
+msgid "Papiamentu (Netherlands Antilles)"
+msgstr "Papiamentu (Nizozemské Antilly)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_PAPIAMENTU_ARUBA.pairedlist.text
+msgid "Papiamento (Aruba)"
+msgstr "Papiamento (Aruba)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN_CAMPIDANESE.pairedlist.text
+msgid "Sardinian, Campidanese"
+msgstr "Sardinština, Campidanese"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN_GALLURESE.pairedlist.text
+msgid "Sardinian, Gallurese"
+msgstr "Sardinština, Gallurese"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN_LOGUDORESE.pairedlist.text
+msgid "Sardinian, Logudorese"
+msgstr "Sardinština, Logudorese"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN_SASSARESE.pairedlist.text
+msgid "Sardinian, Sassarese"
+msgstr "Sardinština, Sassarese"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BAFIA.pairedlist.text
+msgid "Bafia"
+msgstr "Bafia"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GIKUYU.pairedlist.text
+msgid "Gikuyu"
+msgstr "Kikujština"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_YORUBA.pairedlist.text
+msgid "Yoruba"
+msgstr "Jorubština"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_RUSYN_UKRAINE.pairedlist.text
+msgid "Rusyn (Ukraine)"
+msgstr "Rusínština (Ukrajina)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_RUSYN_SLOVAKIA.pairedlist.text
+msgid "Rusyn (Slovakia)"
+msgstr "Rusínština (Slovensko)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_YIDDISH_US.pairedlist.text
+msgid "Yiddish (USA)"
+msgstr "Jidiš (USA)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HAWAIIAN_UNITED_STATES.pairedlist.text
+msgid "Hawaiian"
+msgstr "Havajština"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LIMBU.pairedlist.text
+msgid "Limbu"
+msgstr "Limbu"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LOJBAN.pairedlist.text
+msgid "Lojban"
+msgstr "Lojban"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KABYLE.pairedlist.text
+msgid "Kabyle"
+msgstr "Kabyle"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_HAITIAN.pairedlist.text
+msgid "Haitian"
+msgstr "Haitština"
+
+#: undo.src#STR_UNDO.string.text
+msgid "Undo: "
+msgstr "Zpět: "
+
+#: undo.src#STR_REDO.string.text
+msgid "Re~do: "
+msgstr "Znovu: "
+
+#: undo.src#STR_REPEAT.string.text
+msgid "~Repeat: "
+msgstr "Zopakovat: "
+
+#~ msgid "Slovakian"
+#~ msgstr "Slovensky"
+
+#~ msgid "Yiddish"
+#~ msgstr "Jidiš"
+
+#~ msgid "Error"
+#~ msgstr "Chyba"
+
+#~ msgid "Warning"
+#~ msgstr "Upozornění"
+
+#~ msgid "$(ERR) loading the template $(ARG1)"
+#~ msgstr "$(ERR) při načítání šablony $(ARG1)"
+
+#~ msgctxt "errtxt.src#RID_ERRCTX.ERRCTX_SFX_SAVEDOC.string.text"
+#~ msgid "$(ERR) saving the document $(ARG1)"
+#~ msgstr "$(ERR) při ukládání dokumentu $(ARG1)"
+
+#~ msgctxt "errtxt.src#RID_ERRCTX.ERRCTX_SFX_SAVEASDOC.string.text"
+#~ msgid "$(ERR) saving the document $(ARG1)"
+#~ msgstr "$(ERR) při ukládání dokumentu $(ARG1)"
+
+#~ msgid "$(ERR) displaying doc. information for document $(ARG1)"
+#~ msgstr "$(ERR) při zobrazování informací o dokumentu $(ARG1)"
+
+#~ msgid "$(ERR) writing document $(ARG1) as template"
+#~ msgstr "$(ERR) při zápisu dokumentu $(ARG1) jako šablony"
+
+#~ msgid "$(ERR) copying or moving document contents"
+#~ msgstr "$(ERR) při kopírování nebo přesunu obsahu dokumentu"
+
+#~ msgid "$(ERR) starting the Document Manager"
+#~ msgstr "$(ERR) při spuštění správce dokumentů"
+
+#~ msgid "$(ERR) loading document $(ARG1)"
+#~ msgstr "$(ERR) při načítání dokumentu $(ARG1)"
+
+#~ msgctxt "errtxt.src#RID_ERRCTX.ERRCTX_SFX_NEWDOCDIRECT.string.text"
+#~ msgid "$(ERR) creating a new document"
+#~ msgstr "$(ERR) při vytváření dokumentu"
+
+#~ msgctxt "errtxt.src#RID_ERRCTX.ERRCTX_SFX_NEWDOC.string.text"
+#~ msgid "$(ERR) creating a new document"
+#~ msgstr "$(ERR) při vytváření dokumentu"
+
+#~ msgid "$(ERR) expanding entry"
+#~ msgstr "Chyba $(ERR) při expanzi položky"
+
+#~ msgid "$(ERR) loading BASIC of document $(ARG1)"
+#~ msgstr "$(ERR) při načítání kódu jazyka Basic z dokumentu $(ARG1)"
+
+#~ msgid "$(ERR) searching for an address"
+#~ msgstr "$(ERR) při hledání adresy"
+
+#~ msgid "Abort"
+#~ msgstr "Přerušit"
+
+#~ msgid "Nonexistent object"
+#~ msgstr "Neexistující objekt"
+
+#~ msgid "Object already exists"
+#~ msgstr "Objekt již existuje"
+
+#~ msgid "Object not accessible"
+#~ msgstr "Objekt je nedostupný"
+
+#~ msgid "Inadmissible path"
+#~ msgstr "Nepřípustná cesta"
+
+#~ msgid "Locking problem"
+#~ msgstr "Problém s uzamčením"
+
+#~ msgid "Wrong parameter"
+#~ msgstr "Chybný parametr"
+
+#~ msgid "Resource exhausted"
+#~ msgstr "Zdroj vyčerpán"
+
+#~ msgid "Action not supported"
+#~ msgstr "Činnost nepodporována"
+
+#~ msgid "Read-Error"
+#~ msgstr "Chyba při čtení"
+
+#~ msgid "Write Error"
+#~ msgstr "Chyba při zápisu"
+
+#~ msgid "unknown"
+#~ msgstr "neznámá"
+
+#~ msgid "Version Incompatibility"
+#~ msgstr "Nekompatibilita verze"
+
+#~ msgctxt "errtxt.src#RID_ERRHDL.ERRCODE_CLASS_GENERAL.string.text"
+#~ msgid "General Error"
+#~ msgstr "Obecná chyba"
+
+#~ msgid "Incorrect format"
+#~ msgstr "Nesprávný formát"
+
+#~ msgid "Error creating object"
+#~ msgstr "Chyba ve vytvoření objektu"
+
+#~ msgid "Inadmissible value or data type"
+#~ msgstr "Nepřípustná hodnota či datový typ"
+
+#~ msgid "BASIC runtime error"
+#~ msgstr "BASIC - chyba při běhu"
+
+#~ msgid "BASIC syntax error"
+#~ msgstr "BASIC - chyba v syntaxi"
+
+#~ msgctxt "errtxt.src#RID_ERRHDL.1.string.text"
+#~ msgid "General Error"
+#~ msgstr "Obecná chyba"
+
+#~ msgid "General input/output error."
+#~ msgstr "Obecná chyba vstupu/výstupu."
+
+#~ msgid "Invalid file name."
+#~ msgstr "Neplatný název souboru."
+
+#~ msgid "Nonexistent file."
+#~ msgstr "Neexistující soubor."
+
+#~ msgid "File already exists."
+#~ msgstr "Soubor již existuje."
+
+#~ msgid "The object is not a directory."
+#~ msgstr "Objekt není adresářem."
+
+#~ msgid "The object is not a file."
+#~ msgstr "Objekt není souborem."
+
+#~ msgid "The specified device is invalid."
+#~ msgstr "Zadané zařízení je neplatné."
+
+#~ msgid ""
+#~ "The object cannot be accessed\n"
+#~ "due to insufficient user rights."
+#~ msgstr ""
+#~ "Nelze přistupovat k objektu kvůli\n"
+#~ "nedostatečným uživatelským oprávněním."
+
+#~ msgid "Sharing violation while accessing the object."
+#~ msgstr "Porušení sdílení při přístupu k objektu."
+
+#~ msgid "No more space on device."
+#~ msgstr "Na zařízení není místo."
+
+#~ msgid ""
+#~ "This operation cannot be run on\n"
+#~ "files containing wildcards."
+#~ msgstr ""
+#~ "Tuto operaci nelze spustit nad\n"
+#~ "soubory, které obsahují zástupné znaky."
+
+#~ msgid "This operation is not supported on this operating system."
+#~ msgstr "Tato činnost není v tomto operačním systému podporována."
+
+#~ msgid "There are too many files open."
+#~ msgstr "Existuje příliš mnoho otevřených souborů."
+
+#~ msgid "Data could not be read from the file."
+#~ msgstr "Data nelze přečíst ze souboru."
+
+#~ msgid "The file could not be written."
+#~ msgstr "Soubor nelze zapsat."
+
+#~ msgid "The operation could not be run due to insufficient memory."
+#~ msgstr "Operaci nelze spustit kvůli nedostatku paměti."
+
+#~ msgid "The seek operation could not be run."
+#~ msgstr "Operace seek nemůže být spuštěna."
+
+#~ msgid "The tell operation could not be run."
+#~ msgstr "Operace tell nemůže být spuštěna."
+
+#~ msgid "Incorrect file version."
+#~ msgstr "Nesprávná verze souboru."
+
+#~ msgid "Incorrect file format."
+#~ msgstr "Nesprávný formát souboru."
+
+#~ msgid "The file name contains invalid characters."
+#~ msgstr "Název souboru obsahuje neplatné znaky."
+
+#~ msgid "An unknown I/O error has occurred."
+#~ msgstr "Nastala neznámá I/O chyba."
+
+#~ msgid "An invalid attempt was made to access the file."
+#~ msgstr "Byl proveden neplatný pokus o přístup k souboru."
+
+#~ msgid "The file could not be created."
+#~ msgstr "Soubor nelze vytvořit."
+
+#~ msgid "The operation was started under an invalid parameter."
+#~ msgstr "Operace byla spuštěna s neplatným parametrem."
+
+#~ msgid "The operation on the file was aborted."
+#~ msgstr "Operace se souborem byla přerušena."
+
+#~ msgid "Path to the file does not exist."
+#~ msgstr "Cesta k souboru neexistuje."
+
+#~ msgid "An object cannot be copied into itself."
+#~ msgstr "Objekt nelze kopírovat do sebe sama."
+
+#~ msgid "The default template could not be opened."
+#~ msgstr "Nelze otevřít výchozí šablonu."
+
+#~ msgid "The specified template could not be found."
+#~ msgstr "Nelze nalézt zadanou šablonu."
+
+#~ msgid "The file cannot be used as template."
+#~ msgstr "Nelze použít daný soubor jako šablonu."
+
+#~ msgid ""
+#~ "Document information could not be read from the file because\n"
+#~ "the document information format is unknown or because document information "
+#~ "does not\n"
+#~ "exist."
+#~ msgstr ""
+#~ "Nelze načíst informaci o dokumentu, protože\n"
+#~ "neexistuje nebo její formát je neznámý."
+
+#~ msgid "This document has already been opened for editing."
+#~ msgstr "Tento dokument již byl otevřen k úpravám."
+
+#~ msgid "The wrong password has been entered."
+#~ msgstr "Bylo zadáno chybné heslo"
+
+#~ msgid "Error reading file."
+#~ msgstr "Chyba při čtení souboru."
+
+#~ msgid "The document was opened as read-only."
+#~ msgstr "Dokument byl otevřen pouze pro čtení."
+
+#~ msgid "General OLE Error."
+#~ msgstr "Obecná chyba OLE."
+
+#~ msgid "The host name $(ARG1) could not be resolved."
+#~ msgstr "Jméno počítače $(ARG1) není možné rozklíčovat."
+
+#~ msgid "Could not establish network connection to $(ARG1)."
+#~ msgstr "Nelze vytvořit síťové spojení s $(ARG1)."
+
+#~ msgid ""
+#~ "Error reading data from the network.\n"
+#~ "Server error message: $(ARG1)."
+#~ msgstr ""
+#~ "Chyba při čtení dat ze sítě.\n"
+#~ "Chybová zpráva ze serveru: $(ARG1)."
+
+#~ msgid ""
+#~ "Error transferring data to the network.\n"
+#~ "Server error message: $(ARG1)."
+#~ msgstr ""
+#~ "Chyba při přenosu dat na síť.\n"
+#~ "Chybová zpráva ze serveru: $(ARG1)."
+
+#~ msgid "General network error has occurred."
+#~ msgstr "Nastala obecná chyba sítě."
+
+#~ msgid ""
+#~ "The requested network data is not available in the cache and cannot be "
+#~ "transmitted as the Online mode has not be activated."
+#~ msgstr ""
+#~ "Požadovaná data ze sítě nejsou dostupná v cache a nelze je přenést, jelikož "
+#~ "se nenacházíte v online režimu."
+
+#~ msgid "Should the $(ARG1) Style be replaced?"
+#~ msgstr "Má být styl $(ARG1) nahrazen?"
+
+#~ msgid "A filter has not been found."
+#~ msgstr "Filtr nebyl nalezen."
+
+#~ msgid "The original could not be determined."
+#~ msgstr "Nelze určit originál."
+
+#~ msgid "The contents could not be created."
+#~ msgstr "Nelze vytvořit obsah."
+
+#~ msgid "The link could not be created."
+#~ msgstr "Nelze vytvořit odkaz."
+
+#~ msgid "The link format is invalid."
+#~ msgstr "Formát odkazu je neplatný"
+
+#~ msgid "The configuration of the icon display is invalid."
+#~ msgstr "Konfigurace pohledu s ikonami je neplatná."
+
+#~ msgid "The configuration of the icon display can not be saved."
+#~ msgstr "Nelze uložit konfiguraci pohledu s ikonami."
+
+#~ msgid "The configuration of the icon display could not be deleted."
+#~ msgstr "Nelze odstranit konfiguraci pohledu s ikonami."
+
+#~ msgid "Contents cannot be renamed."
+#~ msgstr "Obsah nelze přejmenovat."
+
+#~ msgid "The bookmark folder is invalid."
+#~ msgstr "Složka záložek je neplatná"
+
+#~ msgid "The configuration of the URLs to be saved locally could not be saved."
+#~ msgstr "Konfiguraci lokálně ukládaných URL nebylo možné uložit."
+
+#~ msgid "The configuration format of the URLs to be saved locally is invalid."
+#~ msgstr "Konfigurační formát lokálně ukládaných URL je neplatný."
+
+#~ msgid "This action cannot be applied to a document that does not exist."
+#~ msgstr "Tuto akci nelze použít na dokument, který neexistuje."
+
+#~ msgid "The link refers to an invalid target."
+#~ msgstr "Odkaz ukazuje na neplatný cíl."
+
+#~ msgid "The Recycle Bin path is invalid."
+#~ msgstr "Cesta k odpadkovému koši je neplatná."
+
+#~ msgid "The entry could not be restored."
+#~ msgstr "Nelze obnovit položku."
+
+#~ msgid "The file name is too long for the target file system."
+#~ msgstr "Název souboru je neplatný pro cílový souborový systém."
+
+#~ msgid "The details for running the function are incomplete."
+#~ msgstr "Detaily pro spuštění funkce jsou nekompletní."
+
+#~ msgctxt "errtxt.src#RID_ERRHDL.ERRCODE_SFX_INVALIDSYNTAX.string.text"
+#~ msgid "The input syntax is invalid."
+#~ msgstr "Neplatná vstupní syntaxe."
+
+#~ msgctxt "errtxt.src#RID_ERRHDL.ERRCODE_SFX_CANTCREATEFOLDER.string.text"
+#~ msgid "The input syntax is invalid."
+#~ msgstr "Neplatná vstupní syntaxe."
+
+#~ msgctxt "errtxt.src#RID_ERRHDL.ERRCODE_SFX_CANTRENAMEFOLDER.string.text"
+#~ msgid "The input syntax is invalid."
+#~ msgstr "Neplatná vstupní syntaxe."
+
+#~ msgid "The channel document has an invalid format."
+#~ msgstr "Dokument kanálu má neplatný formát."
+
+#~ msgid "The server must not be empty."
+#~ msgstr "Název serveru nesmí být prázdný."
+
+#~ msgid "A subscription folder is required to install a Channel."
+#~ msgstr "Pro instalaci kanálu je vyžadována složka k odebírání."
+
+#~ msgid ""
+#~ "This document contains attributes that cannot be saved in the selected "
+#~ "format.\n"
+#~ "Please save the document in a %PRODUCTNAME %PRODUCTVERSION file format."
+#~ msgstr ""
+#~ "Tento dokument obsahuje atributy, které nemohou být uloženy ve vybraném "
+#~ "formátu.\n"
+#~ "Prosím uložte dokument ve formátu %PRODUCTNAME %PRODUCTVERSION."
+
+#~ msgid ""
+#~ "The file $(FILENAME) cannot be saved. Please check your system settings. You "
+#~ "can find an automatically generated backup copy of this file in folder "
+#~ "$(PATH) named $(BACKUPNAME)."
+#~ msgstr ""
+#~ "Soubor $(FILENAME) nemůže být uložen. Prosím ověřte nastavení vašeho "
+#~ "systému. Automaticky generovanou záložní kopii tohoto souboru naleznete v "
+#~ "adresáři $(PATH) pod jménem $(BACKUPNAME)."
+
+#~ msgid ""
+#~ "The maximum number of documents that can be opened at the same time has been "
+#~ "reached. You need to close one or more documents before you can open a new "
+#~ "document."
+#~ msgstr ""
+#~ "Byl otevřen maximální možný počet dokumentů. Před otevřením nového dokumentu "
+#~ "musíte některé dokumenty zavřít."
+
+#~ msgid "Could not create backup copy."
+#~ msgstr "Nelze vytvořit záložní kopii."
+
+#~ msgid ""
+#~ "An attempt was made to execute a macro.\n"
+#~ "For security reasons, macro support is disabled."
+#~ msgstr ""
+#~ "Byl proveden pokus o spuštění makra.\n"
+#~ "Makra jsou z bezpečnostních důvodů zakázána."
+
+#~ msgid ""
+#~ "This document contains macros.\n"
+#~ "\n"
+#~ "Macros may contain viruses. Execution of macros is disabled due to the "
+#~ "current macro security setting in Tools - Options - %PRODUCTNAME - Security.\n"
+#~ "\n"
+#~ "Therefore, some functionality may not be available."
+#~ msgstr ""
+#~ "Tento dokument obsahuje makra.\n"
+#~ "\n"
+#~ "Makra mohou obsahovat viry. Spouštění maker je zakázáno kvůli nastavení "
+#~ "bezpečnosti maker v menu Nástroje - Volby - %PRODUCTNAME - Bezpečnost.\n"
+#~ "\n"
+#~ "Některé funkce nemusí být k dispozici."
+
+#~ msgid ""
+#~ "The digitally signed document content and/or macros do not match the current "
+#~ "document signature.\n"
+#~ "\n"
+#~ "This could be the result of document manipulation or of structural document "
+#~ "damage due to data transmission.\n"
+#~ "\n"
+#~ "We recommend that you do not trust the content of the current document.\n"
+#~ "Execution of macros is disabled for this document.\n"
+#~ " "
+#~ msgstr ""
+#~ "Nelze ověřit elektronicky podepsaný dokument nebo makra.\n"
+#~ "\n"
+#~ "Může to být způsobeno úpravou dokumentu nebo chybou při přenosu.\n"
+#~ "\n"
+#~ "Doporučujeme, abyste aktuálnímu obsahu dokumentu nedůvěřoval.\n"
+#~ "Bylo zakázáno spouštění maker z tohoto souboru.\n"
+#~ " "
+
+#~ msgid ""
+#~ "The encrypted document contains unexpected non-encrypted streams.\n"
+#~ "\n"
+#~ "This could be the result of document manipulation.\n"
+#~ "\n"
+#~ "We recommend that you do not trust the content of the current document.\n"
+#~ "Execution of macros is disabled for this document.\n"
+#~ " "
+#~ msgstr ""
+#~ "Zašifrovaný dokument obsahuje nešifrovaná data.\n"
+#~ "\n"
+#~ "Může jít o následek manipulace s dokumentem.\n"
+#~ "\n"
+#~ "Doporučujeme obsahu opraveného souboru nevěřit.\n"
+#~ "Pro tento dokument je zákázáno spouštění maker."
+
+#~ msgid "Invalid data length."
+#~ msgstr "Neplatná délka dat."
+
+#~ msgid "Function not possible: path contains current directory."
+#~ msgstr "Funkce není možná: cesta obsahuje současný adresář."
+
+#~ msgid "Function not possible: device (drive) not identical."
+#~ msgstr "Funkce není možná: zařízení (mechanika) není identická."
+
+#~ msgid "Device (drive) not ready."
+#~ msgstr "Zařízení (mechanika) není připravené."
+
+#~ msgid "Wrong check amount."
+#~ msgstr "Chybný kontrolní součet."
+
+#~ msgid "Function not possible: write protected."
+#~ msgstr "Funkce není možná: ochrana proti zápisu."
+
+#~ msgid ""
+#~ "The password of a shared spreadsheet cannot be set or changed.\n"
+#~ "Deactivate sharing mode first."
+#~ msgstr ""
+#~ "Heslo sdíleného listu nelze nastavit ani změnit.\n"
+#~ "Nejprve deaktivujte režim sdílení."

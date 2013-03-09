@@ -1,0 +1,1770 @@
+
+#: sb.src#ERRCODE_BASMGR_LIBLOAD___ERRCODE_RES_MASK.string.text
+msgid "Error loading library '$(ARG1)'."
+msgstr "Fazi en ur gargañ al levraoueg '$(ARG1)'."
+
+#: sb.src#ERRCODE_BASMGR_LIBSAVE___ERRCODE_RES_MASK.string.text
+msgid "Error saving library: '$(ARG1)'."
+msgstr "Fazi en ur enrollañ al levraoueg : '$(ARG1)'."
+
+#: sb.src#ERRCODE_BASMGR_MGROPEN___ERRCODE_RES_MASK.string.text
+msgid "The BASIC from the file '$(ARG1)' could not be initialized."
+msgstr "N'haller ket deraouekaat BASIC diouzh ar restr '$(ARG1)'."
+
+#: sb.src#ERRCODE_BASMGR_MGRSAVE___ERRCODE_RES_MASK.string.text
+msgid "Error saving BASIC: '$(ARG1)'."
+msgstr "Fazi en ur enrollañ ar makro vBasic : '$(ARG1)'."
+
+#: sb.src#ERRCODE_BASMGR_REMOVELIB___ERRCODE_RES_MASK.string.text
+msgid "Error removing library."
+msgstr "Fazi en ur zilemel al levraoueg."
+
+#: sb.src#ERRCODE_BASMGR_UNLOADLIB___ERRCODE_RES_MASK.string.text
+msgid "The library could not be removed from memory."
+msgstr "N'haller ket dilemel al levraoueg diouzh ar vemor."
+
+#: sb.src#IDS_SBERR_STOREREF.string.text
+msgid "Reference will not be saved: "
+msgstr "N'haller ket enrollañ an dave :"
+
+#: sb.src#IDS_SBERR_TERMINATED.string.text
+msgid "The macro running has been interrupted"
+msgstr "Troc'het eo bet ar makro dindan erounit"
+
+#: sb.src#RID_BASIC_START.ERRCODE_BASIC_ARRAY_FIX___ERRCODE_RES_MASK.string.text
+msgid "This array is fixed or temporarily locked."
+msgstr ""
+
+#: sb.src#RID_BASIC_START.ERRCODE_BASIC_COMPAT___ERRCODE_RES_MASK.string.text
+msgid "$(ARG1)"
+msgstr ""
+
+#: sb.src#RID_BASIC_START.ERRCODE_BASIC_EXCEPTION___ERRCODE_RES_MASK.string.text
+msgid "An exception occurred $(ARG1)."
+msgstr "Nemedenn."
+
+#: sb.src#RID_BASIC_START.ERRCODE_BASIC_EXPR_TOO_COMPLEX___ERRCODE_RES_MASK.string.text
+msgid "Expression Too Complex."
+msgstr ""
+
+#: sb.src#RID_BASIC_START.ERRCODE_BASIC_LOOP_NOT_INIT___ERRCODE_RES_MASK.string.text
+msgid "For loop not initialized."
+msgstr ""
+
+#: sb.src#RID_BASIC_START.ERRCODE_BASIC_OPER_NOT_PERFORM___ERRCODE_RES_MASK.string.text
+msgid "Can't perform requested operation."
+msgstr ""
+
+#: sb.src#RID_BASIC_START.ERRCODE_BASIC_STRING_OVERFLOW___ERRCODE_RES_MASK.string.text
+msgid "Out of string space."
+msgstr ""
+
+#: sb.src#RID_BASIC_START.ERRCODE_BASIC_TOO_MANY_DLL___ERRCODE_RES_MASK.string.text
+msgid "Too many DLL application clients."
+msgstr ""
+
+#: sb.src#RID_BASIC_START.SBERR_IS_NULL___ERRCODE_RES_MASK.string.text
+msgid "Use of zero not permitted."
+msgstr "Arver ar mann difennet."
+
+#: sb.src#RID_BASIC_START.SbERR_ACCESS_DENIED___ERRCODE_RES_MASK.string.text
+msgid "Access denied."
+msgstr "Haeziñ nac'het."
+
+#: sb.src#RID_BASIC_START.SbERR_ACCESS_ERROR___ERRCODE_RES_MASK.string.text
+msgid "Path/File access error."
+msgstr "Fazi haeziñ an treug/restr."
+
+#: sb.src#RID_BASIC_START.SbERR_ALREADY_DIM___ERRCODE_RES_MASK.string.text
+msgid "Array already dimensioned."
+msgstr "Array bet bevennet endeo."
+
+#: sb.src#RID_BASIC_START.SbERR_ARG_MISSING___ERRCODE_RES_MASK.string.text
+msgid "Required argument lacking."
+msgstr "Mankout a ra an arguzenn ret."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_ACTION___ERRCODE_RES_MASK.string.text
+msgid "This action is not supported by given object."
+msgstr "An ergorenn veneget ne skor ket ar gwezhiadur-mañ."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_ARGUMENT___ERRCODE_RES_MASK.string.text
+msgid "Invalid procedure call."
+msgstr "Galv treugennad direizh."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_BLOCK___ERRCODE_RES_MASK.string.text
+msgid "Statement block still open: $(ARG1) missing."
+msgstr "Bloc'had ditouroù digor c'hoazh : $(ARG1) a ra diouer."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_BRACKETS___ERRCODE_RES_MASK.string.text
+msgid "Parentheses do not match."
+msgstr "Fazi krommelloù."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_CHANNEL___ERRCODE_RES_MASK.string.text
+msgid "Invalid file name or file number."
+msgstr "Anv pe niverenn restr direizh."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_CHAR_IN_NUMBER___ERRCODE_RES_MASK.string.text
+msgid "Invalid character in number."
+msgstr "Un arouezenn direizh zo e-barzh an niver."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_CLIPBD_FORMAT___ERRCODE_RES_MASK.string.text
+msgid "Invalid clipboard format."
+msgstr "Direizh eo ar mentrezh golver hetet."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_DECLARATION___ERRCODE_RES_MASK.string.text
+msgid "Symbol $(ARG1) already defined differently."
+msgstr "Un displegadur all en deus degemeret an arouez $(ARG1)."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_DLL_CALL___ERRCODE_RES_MASK.string.text
+msgid "Wrong DLL call convention."
+msgstr "Kendivizad galv DLL direizh."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_DLL_LOAD___ERRCODE_RES_MASK.string.text
+msgid "Error loading DLL file."
+msgstr "Fazi en ur gargañ ur restr DLL."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_EXIT___ERRCODE_RES_MASK.string.text
+msgid "Exit $(ARG1) expected."
+msgstr "Exit $(ARG1) ret."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_FILE_MODE___ERRCODE_RES_MASK.string.text
+msgid "Incorrect file mode."
+msgstr "Mod restr direizh."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_INDEX___ERRCODE_RES_MASK.string.text
+msgid "Invalid object index."
+msgstr "Ibil ergorennoù direizh."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_LOCALE___ERRCODE_RES_MASK.string.text
+msgid "The current locale setting is not supported by the given object."
+msgstr "An ergorenn veneget ne skor ket an emdro yezh bremanel."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_METHOD___ERRCODE_RES_MASK.string.text
+msgid "This property or method is not supported by the object."
+msgstr "An ergorenn ne skor ket ar perzh pe an hentenn-mañ."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_NUMBER_OF_ARGS___ERRCODE_RES_MASK.string.text
+msgctxt "sb.src#RID_BASIC_START.SbERR_BAD_NUMBER_OF_ARGS___ERRCODE_RES_MASK.string.text"
+msgid "Invalid number of arguments."
+msgstr "Niver arguzennoù direizh."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_OPTION___ERRCODE_RES_MASK.string.text
+msgid "Unknown option: $(ARG1)."
+msgstr "Dibarzh dianav : $(ARG1)."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_ORDINAL___ERRCODE_RES_MASK.string.text
+msgid "Invalid ordinal number."
+msgstr "Niver urzhel didalvoudek."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_PARAMETER___ERRCODE_RES_MASK.string.text
+msgid "Invalid parameter."
+msgstr "Arventenn direizh."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_PARAMETERS___ERRCODE_RES_MASK.string.text
+msgid "Parameters do not correspond to procedure."
+msgstr "An arventennoù ne glotont ket gant an argerzhadur."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_PATTERN___ERRCODE_RES_MASK.string.text
+msgid "Invalid string pattern."
+msgstr "Standilhon chadenn arouezennoù direizh."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_PROP_VALUE___ERRCODE_RES_MASK.string.text
+msgid "Incorrect property value."
+msgstr "Gwerzh perzh direizh."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_RECORD_LENGTH___ERRCODE_RES_MASK.string.text
+msgid "Incorrect record length."
+msgstr "Led marilhañ direizh."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_RECORD_NUMBER___ERRCODE_RES_MASK.string.text
+msgid "Incorrect record number."
+msgstr "Niverenn enrollañ direizh."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_RESUME___ERRCODE_RES_MASK.string.text
+msgid "Resume without error."
+msgstr "Krennad difazi."
+
+#: sb.src#RID_BASIC_START.SbERR_CANNOT_LOAD___ERRCODE_RES_MASK.string.text
+msgid "Module cannot be loaded; invalid format."
+msgstr "N'haller ket kargañ ar mollad dre ur fazi mentrezhañ."
+
+#: sb.src#RID_BASIC_START.SbERR_CONSTANT_REDECLARED___ERRCODE_RES_MASK.string.text
+msgid "Constant $(ARG1) redefined."
+msgstr "Addespizet eo bet an arstalenn $(ARG1)."
+
+#: sb.src#RID_BASIC_START.SbERR_CONVERSION___ERRCODE_RES_MASK.string.text
+msgid "Data type mismatch."
+msgstr "Rizh roadennoù digeverlec'h."
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_BUSY___ERRCODE_RES_MASK.string.text
+msgid "External application busy."
+msgstr "Ac'hubet eo ar meziant diavaez."
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_CHANNEL_LOCKED___ERRCODE_RES_MASK.string.text
+msgid "DDE channel locked."
+msgstr "Kanol DDE morailhet."
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_CONV_CLOSED___ERRCODE_RES_MASK.string.text
+msgid "DDE connection interrupted or modified."
+msgstr "Daskemmet pe troc'het eo bet ar c'hennask DDE."
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_DLL_NOT_FOUND___ERRCODE_RES_MASK.string.text
+msgid "DDE requires the DDEML.DLL file."
+msgstr "An DDE a azgoulenn DDEML.DLL."
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_ERROR___ERRCODE_RES_MASK.string.text
+msgid "DDE Error."
+msgstr "Fazi DDE."
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_INVALID_LINK___ERRCODE_RES_MASK.string.text
+msgid "Invalid DDE link format."
+msgstr "Mentrezh ere DDE direizh."
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_LINK_ALREADY_EST___ERRCODE_RES_MASK.string.text
+msgid "Paste link already performed."
+msgstr "Erounezet eo bet ar paste Link endeo."
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_LINK_INV_TOPIC___ERRCODE_RES_MASK.string.text
+msgid "Link mode cannot be set due to invalid link topic."
+msgstr "N'haller ket despizañ al LinkMode en abeg d'ul Link-Topic direizh."
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_MULT_RESPONSES___ERRCODE_RES_MASK.string.text
+msgid "Too many applications responded to DDE connect initiation."
+msgstr "Re a arloadoù a respont d'ar chlask kennaskañ DDE."
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_NOTPROCESSED___ERRCODE_RES_MASK.string.text
+msgid "External application cannot execute DDE operation."
+msgstr "Ar meziant diavaez n'eo ket evit erounit ar gwezhiadur DDE."
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_NO_CHANNEL___ERRCODE_RES_MASK.string.text
+msgid "DDE method invoked with no channel open."
+msgstr "Hentenn DDE galvet hep bezañ digoret ur c'hanol DDE ganti."
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_NO_DATA___ERRCODE_RES_MASK.string.text
+msgid "DDE operation without data."
+msgstr "Roadennoù ket pourchaset er gwezhiadur DDE."
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_NO_RESPONSE___ERRCODE_RES_MASK.string.text
+msgid "No application responded to DDE connect initiation."
+msgstr "N'eus arload ebet o tastaol ouzh an taol-esae kennaskañ DDE."
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_OUTOFCHANNELS___ERRCODE_RES_MASK.string.text
+msgid "No DDE channels available."
+msgstr "Kanol DDE dieub ebet."
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_PARTNER_QUIT___ERRCODE_RES_MASK.string.text
+msgid "External application has been terminated."
+msgstr "Kuitaet eo bet ar meziant diavaez."
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_QUEUE_OVERFLOW___ERRCODE_RES_MASK.string.text
+msgid "DDE message has been lost."
+msgstr "Kollet eo bet ar c'hemennad DDE."
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_TIMEOUT___ERRCODE_RES_MASK.string.text
+msgid "Timeout while waiting for DDE response."
+msgstr "Timeout e-pad gortoz respont DDE."
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_USER_INTERRUPT___ERRCODE_RES_MASK.string.text
+msgid "User pressed ESCAPE during DDE operation."
+msgstr "Pouezet en deus an arveriad war ECHAP e-kerzh ar gwezhiadur DDE."
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_WAITINGACK___ERRCODE_RES_MASK.string.text
+msgid "Awaiting response to DDE connection."
+msgstr "O c'hortoz ur respont gant ur c'hennask DDE."
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_WRONG_DATA_FORMAT___ERRCODE_RES_MASK.string.text
+msgid "Data are in wrong format."
+msgstr "Direizh eo mentrezh ar roadennoù."
+
+#: sb.src#RID_BASIC_START.SbERR_DIFFERENT_DRIVE___ERRCODE_RES_MASK.string.text
+msgid "Renaming on different drives impossible."
+msgstr "N'haller ket envel en-dro war unvezioù disheñvel !."
+
+#: sb.src#RID_BASIC_START.SbERR_DISK_FULL___ERRCODE_RES_MASK.string.text
+msgid "Disk or hard drive full."
+msgstr "Kantennig/kantenn galet leun."
+
+#: sb.src#RID_BASIC_START.SbERR_DLLPROC_NOT_FOUND___ERRCODE_RES_MASK.string.text
+msgid "Specified DLL function not found."
+msgstr "Digavadus eo an arc'hwel DLL meneget."
+
+#: sb.src#RID_BASIC_START.SbERR_DUPLICATE_DEF___ERRCODE_RES_MASK.string.text
+msgid "Duplicate definition."
+msgstr "Despizadur oc'h ober un implij dreistezhomm."
+
+#: sb.src#RID_BASIC_START.SbERR_EXPECTED___ERRCODE_RES_MASK.string.text
+msgid "Expected: $(ARG1)."
+msgstr "Azgoulennet : $(ARG)."
+
+#: sb.src#RID_BASIC_START.SbERR_FILE_ALREADY_OPEN___ERRCODE_RES_MASK.string.text
+msgid "File already open."
+msgstr "Restr digor endeo."
+
+#: sb.src#RID_BASIC_START.SbERR_FILE_EXISTS___ERRCODE_RES_MASK.string.text
+msgid "File already exists."
+msgstr "Restr o vezañ anezhi endeo."
+
+#: sb.src#RID_BASIC_START.SbERR_FILE_NOT_FOUND___ERRCODE_RES_MASK.string.text
+msgid "File not found."
+msgstr "Restr digavadus."
+
+#: sb.src#RID_BASIC_START.SbERR_GETPROP_FAILED___ERRCODE_RES_MASK.string.text
+msgid "Unable to determine property."
+msgstr "N'haller ket savelañ ar perzh."
+
+#: sb.src#RID_BASIC_START.SbERR_INTERNAL_ERROR___ERRCODE_RES_MASK.string.text
+msgid "Internal error $(ARG1)."
+msgstr "Fazi diabarzh $(ARG1)."
+
+#: sb.src#RID_BASIC_START.SbERR_INVALID_OBJECT___ERRCODE_RES_MASK.string.text
+msgid "Invalid object reference."
+msgstr "Dave ergorenn direizh."
+
+#: sb.src#RID_BASIC_START.SbERR_INVALID_USAGE_OBJECT___ERRCODE_RES_MASK.string.text
+msgid "Invalid use of an object."
+msgstr "Arver direizh un ergorenn."
+
+#: sb.src#RID_BASIC_START.SbERR_IO_ERROR___ERRCODE_RES_MASK.string.text
+msgid "Device I/O error."
+msgstr "Fazi an drobarzhell En/Ec'h."
+
+#: sb.src#RID_BASIC_START.SbERR_LABEL_DEFINED___ERRCODE_RES_MASK.string.text
+msgid "Label $(ARG1) already defined."
+msgstr "Despizet eo an diketenn $(ARG1) endeo."
+
+#: sb.src#RID_BASIC_START.SbERR_LABEL_EXPECTED___ERRCODE_RES_MASK.string.text
+msgid "Label expected."
+msgstr "Tikedenn azgoulennet."
+
+#: sb.src#RID_BASIC_START.SbERR_LVALUE_EXPECTED___ERRCODE_RES_MASK.string.text
+msgid "Value cannot be applied."
+msgstr "N'haller ket ardaoliñ ar werzh."
+
+#: sb.src#RID_BASIC_START.SbERR_MATH_OVERFLOW___ERRCODE_RES_MASK.string.text
+msgid "Overflow."
+msgstr "Mont dreist."
+
+#: sb.src#RID_BASIC_START.SbERR_METHOD_FAILED___ERRCODE_RES_MASK.string.text
+msgid "Error executing a method."
+msgstr "Fazi en ur erounit un hentenn."
+
+#: sb.src#RID_BASIC_START.SbERR_METHOD_NOT_FOUND___ERRCODE_RES_MASK.string.text
+msgid "Object does not have this method."
+msgstr "An ergorenn n'he deus ket an hentenn-mañ."
+
+#: sb.src#RID_BASIC_START.SbERR_MUST_HAVE_DIMS___ERRCODE_RES_MASK.string.text
+msgid "Array must be dimensioned."
+msgstr "Ret eo deoc'h mentañ an Array."
+
+#: sb.src#RID_BASIC_START.SbERR_NAMED_NOT_FOUND___ERRCODE_RES_MASK.string.text
+msgid "Named argument not found."
+msgstr "Digavadus eo an arguzenn veneget."
+
+#: sb.src#RID_BASIC_START.SbERR_NEEDS_OBJECT___ERRCODE_RES_MASK.string.text
+msgid "Object required."
+msgstr "Ergorenn ret."
+
+#: sb.src#RID_BASIC_START.SbERR_NOT_A_COLL___ERRCODE_RES_MASK.string.text
+msgid "Object is not a list."
+msgstr "An ergorenn n'eo ket ul listenn."
+
+#: sb.src#RID_BASIC_START.SbERR_NOT_IMPLEMENTED___ERRCODE_RES_MASK.string.text
+msgid "Not implemented."
+msgstr "Anemboudet."
+
+#: sb.src#RID_BASIC_START.SbERR_NOT_IN_MAIN___ERRCODE_RES_MASK.string.text
+msgid "$(ARG1) not allowed outside a procedure."
+msgstr "$(ARG1) difennet e-maez eus un dreugennad."
+
+#: sb.src#RID_BASIC_START.SbERR_NOT_IN_SUBR___ERRCODE_RES_MASK.string.text
+msgid "$(ARG1) not allowed within a procedure."
+msgstr "$(ARG1) difennet e-pad un dreugennad."
+
+#: sb.src#RID_BASIC_START.SbERR_NOT_OPTIONAL___ERRCODE_RES_MASK.string.text
+msgid "Argument is not optional."
+msgstr "N'eo ket diret an arguzenn."
+
+#: sb.src#RID_BASIC_START.SbERR_NOT_READY___ERRCODE_RES_MASK.string.text
+msgid "Disk not ready."
+msgstr "N'eo ket prest ar gantennig."
+
+#: sb.src#RID_BASIC_START.SbERR_NO_ACTIVE_OBJECT___ERRCODE_RES_MASK.string.text
+msgid "Object is not available."
+msgstr "N'eo ket dieub an ergorenn."
+
+#: sb.src#RID_BASIC_START.SbERR_NO_DEVICE___ERRCODE_RES_MASK.string.text
+msgid "Device not available."
+msgstr "Trobarzhell dibrest."
+
+#: sb.src#RID_BASIC_START.SbERR_NO_GOSUB___ERRCODE_RES_MASK.string.text
+msgid "Return without Gosub."
+msgstr "Distro hep Gosub."
+
+#: sb.src#RID_BASIC_START.SbERR_NO_IF___ERRCODE_RES_MASK.string.text
+msgid "Else/Endif without If."
+msgstr "Else/Endif hep If."
+
+#: sb.src#RID_BASIC_START.SbERR_NO_MEMORY___ERRCODE_RES_MASK.string.text
+msgid "Not enough memory."
+msgstr "Memor re skort "
+
+#: sb.src#RID_BASIC_START.SbERR_NO_METHOD___ERRCODE_RES_MASK.string.text
+msgid "Property or method not found: $(ARG1)."
+msgstr "Perzh pe hentenn digavadus."
+
+#: sb.src#RID_BASIC_START.SbERR_NO_NAMED_ARGS___ERRCODE_RES_MASK.string.text
+msgid "Named arguments are not supported by given object."
+msgstr "An ergorenn veneget ne skor ket an arguzennoù meneget."
+
+#: sb.src#RID_BASIC_START.SbERR_NO_OBJECT___ERRCODE_RES_MASK.string.text
+msgid "Object variable not set."
+msgstr "Argemmenn ergorenn diarventennet."
+
+#: sb.src#RID_BASIC_START.SbERR_NO_OLE___ERRCODE_RES_MASK.string.text
+msgid "OLE Automation is not supported by this object."
+msgstr "Ne skor ket an ergorenn-se an emgefreekaat OLE."
+
+#: sb.src#RID_BASIC_START.SbERR_NO_STRINGS_ARRAYS___ERRCODE_RES_MASK.string.text
+msgid "Strings or arrays not permitted."
+msgstr "Strings pe Arrays diasantus."
+
+#: sb.src#RID_BASIC_START.SbERR_OLE_ERROR___ERRCODE_RES_MASK.string.text
+msgid "OLE Automation Error."
+msgstr "Fazi en ur emgefrekaat OLE."
+
+#: sb.src#RID_BASIC_START.SbERR_OUT_OF_RANGE___ERRCODE_RES_MASK.string.text
+msgid "Index out of defined range."
+msgstr "Ibil er-maez eus al lijorenn despizet."
+
+#: sb.src#RID_BASIC_START.SbERR_PATH_NOT_FOUND___ERRCODE_RES_MASK.string.text
+msgid "Path not found."
+msgstr "Treug digavadus."
+
+#: sb.src#RID_BASIC_START.SbERR_PROC_DEFINED___ERRCODE_RES_MASK.string.text
+msgid "Sub procedure or function procedure $(ARG1) already defined."
+msgstr "Despizet eo an istreugennad pe treugennad arc'hwel $(ARG1) endeo."
+
+#: sb.src#RID_BASIC_START.SbERR_PROC_UNDEFINED___ERRCODE_RES_MASK.string.text
+msgid "Sub-procedure or function procedure not defined."
+msgstr "N'eo ket despizet an istreugennad pe treugennad arc'hwel $(ARG1)."
+
+#: sb.src#RID_BASIC_START.SbERR_PROG_TOO_LARGE___ERRCODE_RES_MASK.string.text
+msgid "Program too large."
+msgstr "Re vras eo ar goulev."
+
+#: sb.src#RID_BASIC_START.SbERR_PROPERTY_NOT_FOUND___ERRCODE_RES_MASK.string.text
+msgid "Object does not have this property."
+msgstr "An ergorenn n'he deus ket ar perzh-mañ."
+
+#: sb.src#RID_BASIC_START.SbERR_PROP_READONLY___ERRCODE_RES_MASK.string.text
+msgid "This property is read-only."
+msgstr "War lenn hepken emañ ar perzh."
+
+#: sb.src#RID_BASIC_START.SbERR_PROP_WRITEONLY___ERRCODE_RES_MASK.string.text
+msgid "This property is write only."
+msgstr "War skriv hepken emañ ar perzh."
+
+#: sb.src#RID_BASIC_START.SbERR_READ_PAST_EOF___ERRCODE_RES_MASK.string.text
+msgid "Reading exceeds EOF."
+msgstr "Lennadur dreist dibenn ar restr."
+
+#: sb.src#RID_BASIC_START.SbERR_REDO_FROM_START___ERRCODE_RES_MASK.string.text
+msgid "Incorrect entry; please retry."
+msgstr "Euvradur direizh, adkrogit."
+
+#: sb.src#RID_BASIC_START.SbERR_SETPROP_FAILED___ERRCODE_RES_MASK.string.text
+msgid "Unable to set property."
+msgstr "N'haller ket despizañ ar perzh."
+
+#: sb.src#RID_BASIC_START.SbERR_STACK_OVERFLOW___ERRCODE_RES_MASK.string.text
+msgid "Not enough stack memory."
+msgstr "Memor skurzer re skort."
+
+#: sb.src#RID_BASIC_START.SbERR_SYMBOL_EXPECTED___ERRCODE_RES_MASK.string.text
+msgid "Symbol expected."
+msgstr "Arouez azgoulennet."
+
+#: sb.src#RID_BASIC_START.SbERR_SYNTAX___ERRCODE_RES_MASK.string.text
+msgid "Syntax error."
+msgstr "Fazi kevreadur."
+
+#: sb.src#RID_BASIC_START.SbERR_TOO_MANY_FILES___ERRCODE_RES_MASK.string.text
+msgid "Too many files."
+msgstr "Re a restroù. "
+
+#: sb.src#RID_BASIC_START.SbERR_UNDEF_ARRAY___ERRCODE_RES_MASK.string.text
+msgid "Array or procedure $(ARG1) not found."
+msgstr "Array pe treugennad $(ARG1) digavus."
+
+#: sb.src#RID_BASIC_START.SbERR_UNDEF_LABEL___ERRCODE_RES_MASK.string.text
+msgid "Label $(ARG1) undefined."
+msgstr "N'eo ket despizet an diketenn $(ARG1)."
+
+#: sb.src#RID_BASIC_START.SbERR_UNDEF_PROC___ERRCODE_RES_MASK.string.text
+msgid "Procedure $(ARG1) not found."
+msgstr "Treugennad $(ARG1) digavadus."
+
+#: sb.src#RID_BASIC_START.SbERR_UNDEF_TYPE___ERRCODE_RES_MASK.string.text
+msgid "Unknown data type $(ARG1)."
+msgstr "Rizh roadennoù $(ARG1) dianav."
+
+#: sb.src#RID_BASIC_START.SbERR_UNDEF_VAR___ERRCODE_RES_MASK.string.text
+msgid "Variable $(ARG1) not found."
+msgstr "Argemmenn $(ARG1) digavadus."
+
+#: sb.src#RID_BASIC_START.SbERR_UNEXPECTED___ERRCODE_RES_MASK.string.text
+msgid "Unexpected symbol: $(ARG1)."
+msgstr "Arouez anrakwelet : $(ARG1). "
+
+#: sb.src#RID_BASIC_START.SbERR_USER_ABORT___ERRCODE_RES_MASK.string.text
+msgid "Process interrupted by user."
+msgstr "Argerzh paouezet gant an arveriad."
+
+#: sb.src#RID_BASIC_START.SbERR_VAR_DEFINED___ERRCODE_RES_MASK.string.text
+msgid "Variable $(ARG1) already defined."
+msgstr "Despizet eo an argemmenn $(ARG1) endeo."
+
+#: sb.src#RID_BASIC_START.SbERR_VAR_EXPECTED___ERRCODE_RES_MASK.string.text
+msgid "Variable expected."
+msgstr "Argemmenn azgoulennet."
+
+#: sb.src#RID_BASIC_START.SbERR_VAR_UNDEFINED___ERRCODE_RES_MASK.string.text
+msgid "Variable not defined."
+msgstr "Argemmenn anspis."
+
+#: sb.src#RID_BASIC_START.SbERR_WRONG_ARGS___ERRCODE_RES_MASK.string.text
+msgctxt "sb.src#RID_BASIC_START.SbERR_WRONG_ARGS___ERRCODE_RES_MASK.string.text"
+msgid "Invalid number of arguments."
+msgstr "Niver arguzennoù direizh."
+
+#: sb.src#RID_BASIC_START.SbERR_WRONG_DIMS___ERRCODE_RES_MASK.string.text
+msgid "Dimension specifications do not match."
+msgstr "Ar mentoù meneget ne glotont ket an eil ouzh egile."
+
+#: sb.src#RID_BASIC_START.SbERR_ZERODIV___ERRCODE_RES_MASK.string.text
+msgid "Division by zero."
+msgstr "Rannadur dre vann."
+
+#: basic.src#IDD_FIND_DIALOG.RID_CANCEL.cancelbutton.text
+msgctxt "basic.src#IDD_FIND_DIALOG.RID_CANCEL.cancelbutton.text"
+msgid "~Cancel"
+msgstr "Nullañ"
+
+#: basic.src#IDD_PRINT_DIALOG.RID_CANCEL.cancelbutton.text
+msgctxt "basic.src#IDD_PRINT_DIALOG.RID_CANCEL.cancelbutton.text"
+msgid "Cancel"
+msgstr "Nullañ"
+
+#: basic.src#IDD_REPLACE_DIALOG.RID_CANCEL.cancelbutton.text
+msgctxt "basic.src#IDD_REPLACE_DIALOG.RID_CANCEL.cancelbutton.text"
+msgid "~Cancel"
+msgstr "Nullañ"
+
+#: basic.src#RID_TP_CRASH.CB_ALLOWCONTACT.checkbox.text
+msgid "Allow Contact"
+msgstr "Aotren an darempred"
+
+#: basic.src#RID_TP_CRASH.CB_USEPROXY.checkbox.text
+msgid "Use Proxy"
+msgstr "Arverañ ur proksi"
+
+#: basic.src#RID_TP_PROFILE.CB_AUTORELOAD.checkbox.text
+msgid "AutoReload"
+msgstr "EmAdkargañ"
+
+#: basic.src#RID_TP_PROFILE.CB_AUTOSAVE.checkbox.text
+msgid "Save before execute"
+msgstr "Gwarediñ kent erounit"
+
+#: basic.src#RID_TP_PROFILE.CB_STOPONSYNTAXERRORS.checkbox.text
+msgid "Stop on Syntax Errors"
+msgstr "Stop on Syntax Errors"
+
+#: basic.src#RID_TP_PROFILE.HID_CHECK.checkbox.text
+msgid "Default HID directory"
+msgstr "Kavlec'hiad HID dre ziouer"
+
+#: basic.src#IDD_EDIT_VAR.RID_ED_NEW_STRING.edit.text
+msgid "Edit"
+msgstr "Embann"
+
+#: basic.src#IDS_CANTLOAD.errorbox.text
+msgid "Library cannot be loaded!"
+msgstr "N'haller ket kargañ al levraoueg "
+
+#: basic.src#IDS_CANTLOAD.errorbox.title
+msgctxt "basic.src#IDS_CANTLOAD.errorbox.title"
+msgid "Testtool Error"
+msgstr "Testtool Error"
+
+#: basic.src#IDS_CANTSAVE.errorbox.text
+msgid "Library cannot be saved!"
+msgstr "N'haller ket enrollañ al levraoueg "
+
+#: basic.src#IDS_CANTSAVE.errorbox.title
+msgctxt "basic.src#IDS_CANTSAVE.errorbox.title"
+msgid "Testtool Error"
+msgstr "Testtool Error"
+
+#: basic.src#IDS_INVALID_VALUE.errorbox.text
+msgid "The value is invalid and cannot be set."
+msgstr "Gwerzh direizh, n'haller ket he lec'hiañ "
+
+#: basic.src#IDS_INVALID_VALUE.errorbox.title
+msgctxt "basic.src#IDS_INVALID_VALUE.errorbox.title"
+msgid "Testtool Error"
+msgstr "Testtool Error"
+
+#: basic.src#IDS_NOMAINPGM.errorbox.text
+msgid "This window does not contain a main program!"
+msgstr "N'eus goulev pennañ ebet e-barzh ar prenestr-mañ "
+
+#: basic.src#IDS_NOMAINPGM.errorbox.title
+msgctxt "basic.src#IDS_NOMAINPGM.errorbox.title"
+msgid "Testtool Error"
+msgstr "Testtool Error"
+
+#: basic.src#IDS_PATTERNNOTFOUND.errorbox.text
+msgid "Search key not found!"
+msgstr "N'haller ket dinoiñ ar ger klasket "
+
+#: basic.src#IDS_PATTERNNOTFOUND.errorbox.title
+msgctxt "basic.src#IDS_PATTERNNOTFOUND.errorbox.title"
+msgid "Testtool Error"
+msgstr "Testtool Error"
+
+#: basic.src#IDS_READERROR.errorbox.text
+msgid "File cannot be read!"
+msgstr "N'haller ket lenn ar restr "
+
+#: basic.src#IDS_READERROR.errorbox.title
+msgctxt "basic.src#IDS_READERROR.errorbox.title"
+msgid "Testtool Error"
+msgstr "Testtool Error"
+
+#: basic.src#IDS_WRITEERROR.errorbox.text
+msgid "File cannot be saved!"
+msgstr "N'haller ket enrollañ ar restr "
+
+#: basic.src#IDS_WRITEERROR.errorbox.title
+msgctxt "basic.src#IDS_WRITEERROR.errorbox.title"
+msgid "Testtool Error"
+msgstr "Testtool Error"
+
+#: basic.src#RID_TP_CRASH.FL_CRASHREPORT.fixedline.text
+msgctxt "basic.src#RID_TP_CRASH.FL_CRASHREPORT.fixedline.text"
+msgid "Crashreport"
+msgstr "Danevell an diskaroù"
+
+#: basic.src#RID_TP_GENERIC.RID_FL_AREA.fixedline.text
+msgid "Area"
+msgstr "Maez"
+
+#: basic.src#RID_TP_GENERIC.RID_FL_VALUE.fixedline.text
+msgid "Setting"
+msgstr "Kefluniañ"
+
+#: basic.src#RID_TP_MISC.FL_COMMUNICATION.fixedline.text
+msgid "Communication"
+msgstr "Kehentiñ"
+
+#: basic.src#RID_TP_MISC.FL_OTHER.fixedline.text
+msgid "Other settings"
+msgstr "Antellañ all"
+
+#: basic.src#RID_TP_PROFILE.FL_DIRECTORIES.fixedline.text
+msgid "Profile settings"
+msgstr "Profile settings"
+
+#: basic.src#RID_TP_PROFILE.RID_FL_PROFILE.fixedline.text
+msgctxt "basic.src#RID_TP_PROFILE.RID_FL_PROFILE.fixedline.text"
+msgid "Profile"
+msgstr "Profile"
+
+#: basic.src#IDD_DISPLAY_HID.RID_FT_CONTROLS.fixedtext.text
+msgid "Controls"
+msgstr "Reolerezhioù"
+
+#: basic.src#IDD_DISPLAY_HID.RID_FT_SLOTS.fixedtext.text
+msgid "Slots"
+msgstr "Slotoù"
+
+#: basic.src#IDD_EDIT_VAR.RID_FT_CONTENT.fixedtext.text
+msgid "Content"
+msgstr "Endalc'had"
+
+#: basic.src#IDD_EDIT_VAR.RID_FT_CONTENT_VALUE.fixedtext.text
+msgid "Previous contents"
+msgstr "Endalc'had kozh"
+
+#: basic.src#IDD_EDIT_VAR.RID_FT_NAME.fixedtext.text
+msgctxt "basic.src#IDD_EDIT_VAR.RID_FT_NAME.fixedtext.text"
+msgid "Name"
+msgstr "Anv"
+
+#: basic.src#IDD_EDIT_VAR.RID_FT_NAME_VALUE.fixedtext.text
+msgid "Name of variable"
+msgstr "Anvioù an argemmennoù"
+
+#: basic.src#IDD_EDIT_VAR.RID_FT_NEW_CONTENT.fixedtext.text
+msgid "New content"
+msgstr "Endalc'had nevez"
+
+#: basic.src#IDD_FIND_DIALOG.RID_FIXEDTEXT1.fixedtext.text
+msgid "~Text"
+msgstr "Testenn"
+
+#: basic.src#IDD_PRINT_DIALOG.RID_TEXT.fixedtext.text
+msgid "Print "
+msgstr "Moulladur "
+
+#: basic.src#IDD_REPLACE_DIALOG.RID_FIXEDTEXT1.fixedtext.text
+msgid "~Search for"
+msgstr "~Testenn kozh"
+
+#: basic.src#IDD_REPLACE_DIALOG.RID_FIXEDTEXT2.fixedtext.text
+msgid "~Replace by"
+msgstr "Teste~nn nevez"
+
+#: basic.src#IDD_TT_ABOUT_DIALOG.1.fixedtext.text
+msgctxt "basic.src#IDD_TT_ABOUT_DIALOG.1.fixedtext.text"
+msgid "VCLTestTool"
+msgstr "StarTestTool"
+
+#: basic.src#IDD_TT_ABOUT_DIALOG.4.fixedtext.text
+msgid "©1995-2010 Oracle"
+msgstr "®1995-2006 Sun Microsystems, Inc."
+
+#: basic.src#LOAD_CONF.FILENAME.fixedtext.text
+msgid "File.win"
+msgstr "Restr"
+
+#: basic.src#LOAD_CONF.WORK.fixedtext.text
+msgid "Slot IDs"
+msgstr "Slot IDs"
+
+#: basic.src#RID_TP_CRASH.FT_CRHOST.fixedtext.text
+msgctxt "basic.src#RID_TP_CRASH.FT_CRHOST.fixedtext.text"
+msgid "Host"
+msgstr "Ostiz"
+
+#: basic.src#RID_TP_CRASH.FT_CRPORT.fixedtext.text
+msgid "Port"
+msgstr "P~orzh"
+
+#: basic.src#RID_TP_CRASH.FT_EMAIL.fixedtext.text
+msgid "EMail"
+msgstr "Postel"
+
+#: basic.src#RID_TP_FONT.FT_FONTNAME.fixedtext.text
+msgid "Type"
+msgstr "Rizh"
+
+#: basic.src#RID_TP_FONT.FT_FONTSIZE.fixedtext.text
+msgid "Size"
+msgstr "Ment "
+
+#: basic.src#RID_TP_FONT.FT_FONTSTYLE.fixedtext.text
+msgid "Typeface"
+msgstr "Stil "
+
+#: basic.src#RID_TP_MISC.FT_HOST.fixedtext.text
+msgctxt "basic.src#RID_TP_MISC.FT_HOST.fixedtext.text"
+msgid "Host"
+msgstr "Ostiz"
+
+#: basic.src#RID_TP_MISC.FT_LRU.fixedtext.text
+msgid "Max LRU Files"
+msgstr "Max LRU Files"
+
+#: basic.src#RID_TP_MISC.FT_PROGDIR.fixedtext.text
+msgid "OOo Program Dir"
+msgstr "Kavlec'hiad ar goulev OOo"
+
+#: basic.src#RID_TP_MISC.FT_TTPORT.fixedtext.text
+msgid "Testtool Port"
+msgstr "Ostilhprouadiñ Porzh"
+
+#: basic.src#RID_TP_MISC.FT_UNOPORT.fixedtext.text
+msgid "Remote UNO Port"
+msgstr "Remote UNO Port"
+
+#: basic.src#RID_TP_MISC.TIMEOUT_TEXT.fixedtext.text
+msgid "Server Timeout"
+msgstr "Dafariad diamzeret"
+
+#: basic.src#RID_TP_PROFILE.BASIS_TEXT.fixedtext.text
+msgid "Base directory"
+msgstr "Kavlec'hiad bon"
+
+#: basic.src#RID_TP_PROFILE.LOG_TEXT.fixedtext.text
+msgid "Log base directory"
+msgstr "Log base directory"
+
+#: basic.src#IDD_DISPLAY_HID.floatingwindow.text
+msgid "Display HId"
+msgstr "Skrammañ Hid"
+
+#: basic.src#LOAD_CONF.floatingwindow.text
+msgid "Reading Configuration Files"
+msgstr "Lennadur ar restroù kefluniañ"
+
+#: basic.src#IDS_NOPRINTERERROR.infobox.text
+msgid "The print function is not available!"
+msgstr "N'eo ket hegerz an arc'hwel moullañ "
+
+#: basic.src#IDS_NOT_YET_IMPLEMENTED.infobox.text
+msgid "Not yet implemented"
+msgstr "Ket bet kefloueret c'hoazh"
+
+#: basic.src#RID_APPMENUBAR.RID_APPEDIT.menuitem.text
+msgid "~Edit"
+msgstr "~Embann"
+
+#: basic.src#RID_APPMENUBAR.RID_APPFILE.menuitem.text
+msgid "~File"
+msgstr "~Restr"
+
+#: basic.src#RID_APPMENUBAR.RID_APPHELP.menuitem.text
+msgid "~Help"
+msgstr "Sko~azell"
+
+#: basic.src#RID_APPMENUBAR.RID_APPRUN.menuitem.text
+msgid "~Program"
+msgstr "~Meziant"
+
+#: basic.src#RID_APPMENUBAR.RID_APPWINDOW.menuitem.text
+msgid "~Window"
+msgstr "~Prenestr"
+
+#: basic.src#RID_EDIT.RID_EDITCOPY.menuitem.text
+msgid "~Copy"
+msgstr "~Eilañ"
+
+#: basic.src#RID_EDIT.RID_EDITCUT.menuitem.text
+msgid "~Cut"
+msgstr "Tro~c'hañ"
+
+#: basic.src#RID_EDIT.RID_EDITDEL.menuitem.text
+msgid "~Delete"
+msgstr "~Lemel kuit"
+
+#: basic.src#RID_EDIT.RID_EDITPASTE.menuitem.text
+msgid "~Paste"
+msgstr "~Pegañ"
+
+#: basic.src#RID_EDIT.RID_EDITREDO.menuitem.text
+msgid "~Redo"
+msgstr "A~rren"
+
+#: basic.src#RID_EDIT.RID_EDITREPEAT.menuitem.text
+msgid "Repeat S~earch"
+msgstr "~Arren ar c'halsk"
+
+#: basic.src#RID_EDIT.RID_EDITREPLACE.menuitem.text
+msgid "~Replace..."
+msgstr "Erl~ec'hiañ ouzh..."
+
+#: basic.src#RID_EDIT.RID_EDITSEARCH.menuitem.text
+msgid "~Find..."
+msgstr "~Klask..."
+
+#: basic.src#RID_EDIT.RID_EDITUNDO.menuitem.text
+msgid "~Undo"
+msgstr "Null~añ"
+
+#: basic.src#RID_FILE.RID_FILECLOSE.menuitem.text
+msgid "~Close"
+msgstr "~Serriñ"
+
+#: basic.src#RID_FILE.RID_FILELOADLIB.menuitem.text
+msgid "~Load Library..."
+msgstr "~Kargañ al levraoueg..."
+
+#: basic.src#RID_FILE.RID_FILENEW.menuitem.text
+msgid "~New"
+msgstr "~Nevez"
+
+#: basic.src#RID_FILE.RID_FILEOPEN.menuitem.text
+msgid "~Open..."
+msgstr "~Digeriñ..."
+
+#: basic.src#RID_FILE.RID_FILEPRINT.menuitem.text
+msgid "~Print"
+msgstr "~Moullañ"
+
+#: basic.src#RID_FILE.RID_FILESAVE.menuitem.text
+msgid "~Save"
+msgstr "~Enrollañ"
+
+#: basic.src#RID_FILE.RID_FILESAVEAS.menuitem.text
+msgid "Save~ As..."
+msgstr "~Enrollañ dindan..."
+
+#: basic.src#RID_FILE.RID_FILESAVELIB.menuitem.text
+msgid "Save Li~brary..."
+msgstr "En~rollañ al levraoueg..."
+
+#: basic.src#RID_FILE.RID_FILESETUP.menuitem.text
+msgid "P~rinter Setting..."
+msgstr "~Kefluniañ ar voullerez..."
+
+#: basic.src#RID_FILE.RID_QUIT.menuitem.text
+msgid "~Exit"
+msgstr "~Kuitaat"
+
+#: basic.src#RID_HELP.menuitem.text
+msgid "~About..."
+msgstr "~Stlenn..."
+
+#: basic.src#RID_RUN.RID_RUNBREAK.menuitem.text
+msgid "~Break"
+msgstr "~Troc'hañ"
+
+#: basic.src#RID_RUN.RID_RUNCOMPILE.menuitem.text
+msgid "~Compile"
+msgstr "~Kempunañ"
+
+#: basic.src#RID_RUN.RID_RUNDISAS.menuitem.text
+msgid "~Disassemble"
+msgstr "~Digenstrollañ"
+
+#: basic.src#RID_RUN.RID_RUNNEXTERR.menuitem.text
+msgid "~Next Error"
+msgstr "Fazi da h~eul"
+
+#: basic.src#RID_RUN.RID_RUNPREVERR.menuitem.text
+msgid "~Previous Error"
+msgstr "Fazi k~ent"
+
+#: basic.src#RID_RUN.RID_RUNSTART.menuitem.text
+msgid "~Start"
+msgstr "~Loc'hañ"
+
+#: basic.src#RID_RUN.RID_RUNSTEPINTO.menuitem.text
+msgid "~Single Step"
+msgstr "Tennad ha ~tennad"
+
+#: basic.src#RID_RUN.RID_RUNSTEPOVER.menuitem.text
+msgid "Si~ngle Step over Procedure"
+msgstr "Argerzhadurioù ~pazenn ha pazenn"
+
+#: basic.src#RID_RUN.RID_RUNSTOP.menuitem.text
+msgid "~Stop"
+msgstr "Null~añ"
+
+#: basic.src#RID_RUN.RID_TOGLEBRKPNT.menuitem.text
+msgid "Set / Delete Break Point"
+msgstr "Lakaat / dilemel ur poent arsaviñ (breakpoint)"
+
+#: basic.src#RID_TT_EXTRAS.RID_OPTIONS.menuitem.text
+msgid "~Settings"
+msgstr "~Arventennoù"
+
+#: basic.src#IDD_FIND_DIALOG.modaldialog.text
+msgid "Testtool: Find Text"
+msgstr "Ostilhprouadiñ : Klask testenn"
+
+#: basic.src#IDD_REPLACE_DIALOG.modaldialog.text
+msgid "Testtool: Replace Text"
+msgstr "Ostilhprouadiñ : Erlec'hiadur testenn"
+
+#: basic.src#IDD_TT_ABOUT_DIALOG.modaldialog.text
+msgid "About VCLTestTool"
+msgstr "A-zivout VCLTestTool"
+
+#: basic.src#RID_CALLDLG.modaldialog.text
+msgid "Dynamic Link No. "
+msgstr "Ere arlusk Nn."
+
+#: basic.src#IDD_EDIT_VAR.modelessdialog.text
+msgid "Edit variable"
+msgstr "Embann argemmennoù"
+
+#: basic.src#IDD_PRINT_DIALOG.modelessdialog.text
+msgid "Testtool: Print File"
+msgstr "Ostilhprouadiñ : Moulladur ar restr"
+
+#: basic.src#IDD_DISPLAY_HID.RID_OK_CLOSE.okbutton.text
+msgid "Close"
+msgstr "Serriñ"
+
+#: basic.src#IDD_FIND_DIALOG.RID_OK.okbutton.text
+msgid "~Find"
+msgstr "Klask"
+
+#: basic.src#IDD_REPLACE_DIALOG.RID_OK.okbutton.text
+msgid "~Replace"
+msgstr "Erlec'hiañ ouzh"
+
+#: basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_CRA.pageitem.text
+msgctxt "basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_CRA.pageitem.text"
+msgid "Crashreport"
+msgstr "Danevell an diskaroù"
+
+#: basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_FON.pageitem.text
+msgid "Font"
+msgstr "Nodrezh"
+
+#: basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_GEN.pageitem.text
+msgid "Generic"
+msgstr "Arlizh"
+
+#: basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_MIS.pageitem.text
+msgid "Misc"
+msgstr "Liesseurt"
+
+#: basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_PRO.pageitem.text
+msgctxt "basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_PRO.pageitem.text"
+msgid "Profile"
+msgstr "Profile"
+
+#: basic.src#IDD_DISPLAY_HID.RID_PB_BENENNEN.pushbutton.text
+msgctxt "basic.src#IDD_DISPLAY_HID.RID_PB_BENENNEN.pushbutton.text"
+msgid "Name"
+msgstr "Envel"
+
+#: basic.src#IDD_DISPLAY_HID.RID_PB_KOPIEREN.pushbutton.text
+msgid "Copy"
+msgstr "Eilañ"
+
+#: basic.src#IDD_DISPLAY_HID.RID_PB_SELECTALL.pushbutton.text
+msgid "Select all"
+msgstr "Diuz pep tra"
+
+#: basic.src#RID_TP_GENERIC.RID_PB_DEL_VALUE.pushbutton.text
+msgctxt "basic.src#RID_TP_GENERIC.RID_PB_DEL_VALUE.pushbutton.text"
+msgid "Delete"
+msgstr "Lemel kuit"
+
+#: basic.src#RID_TP_GENERIC.RID_PB_NEW_AREA.pushbutton.text
+msgctxt "basic.src#RID_TP_GENERIC.RID_PB_NEW_AREA.pushbutton.text"
+msgid "New"
+msgstr "Nevez"
+
+#: basic.src#RID_TP_GENERIC.RID_PB_NEW_VALUE.pushbutton.text
+msgctxt "basic.src#RID_TP_GENERIC.RID_PB_NEW_VALUE.pushbutton.text"
+msgid "New"
+msgstr "Nevez"
+
+#: basic.src#RID_TP_GENERIC.RID_PB_SELECT_FILE.pushbutton.text
+msgid "Path ..."
+msgstr "Treug ..."
+
+#: basic.src#RID_TP_GENERIC.RID_PD_DEL_AREA.pushbutton.text
+msgctxt "basic.src#RID_TP_GENERIC.RID_PD_DEL_AREA.pushbutton.text"
+msgid "Delete"
+msgstr "Lemel kuit"
+
+#: basic.src#RID_TP_MISC.PB_PROGDIR.pushbutton.text
+msgctxt "basic.src#RID_TP_MISC.PB_PROGDIR.pushbutton.text"
+msgid "..."
+msgstr "..."
+
+#: basic.src#RID_TP_PROFILE.BASIS_SET.pushbutton.text
+msgctxt "basic.src#RID_TP_PROFILE.BASIS_SET.pushbutton.text"
+msgid "..."
+msgstr "..."
+
+#: basic.src#RID_TP_PROFILE.HID_SET.pushbutton.text
+msgctxt "basic.src#RID_TP_PROFILE.HID_SET.pushbutton.text"
+msgid "..."
+msgstr "..."
+
+#: basic.src#RID_TP_PROFILE.LOG_SET.pushbutton.text
+msgctxt "basic.src#RID_TP_PROFILE.LOG_SET.pushbutton.text"
+msgid "..."
+msgstr "..."
+
+#: basic.src#RID_TP_PROFILE.RID_PB_NEW_PROFILE.pushbutton.text
+msgctxt "basic.src#RID_TP_PROFILE.RID_PB_NEW_PROFILE.pushbutton.text"
+msgid "New"
+msgstr "Nevez"
+
+#: basic.src#RID_TP_PROFILE.RID_PD_DEL_PROFILE.pushbutton.text
+msgctxt "basic.src#RID_TP_PROFILE.RID_PD_DEL_PROFILE.pushbutton.text"
+msgid "Delete"
+msgstr "Diskrivañ"
+
+#: basic.src#IDS_ASKDIRTYRELOAD.querybox.text
+msgid ""
+"File has been changed on data medium\n"
+"and in the Editor. Reload?"
+msgstr ""
+"Daskemmet eo bet ar restr war ar media\n"
+"hag en embanner. Kargañ en-dro ?"
+
+#: basic.src#IDS_ASKDIRTYRELOAD.querybox.title
+msgctxt "basic.src#IDS_ASKDIRTYRELOAD.querybox.title"
+msgid "Testtool"
+msgstr "Testtool"
+
+#: basic.src#IDS_ASKRELOAD.querybox.text
+msgid "File has been changed on data medium. Reload?"
+msgstr "Daskemmet eo bet ar restr war ar media. Kargañ en-dro ?"
+
+#: basic.src#IDS_ASKRELOAD.querybox.title
+msgctxt "basic.src#IDS_ASKRELOAD.querybox.title"
+msgid "Testtool"
+msgstr "Testtool"
+
+#: basic.src#IDS_ASKSAVEERROR.querybox.text
+msgid "Error saving files! Run anyway?"
+msgstr "Fazi e-pad enrolladur ar restr ! Erounit evelkent ?"
+
+#: basic.src#IDS_ASKSAVEERROR.querybox.title
+msgctxt "basic.src#IDS_ASKSAVEERROR.querybox.title"
+msgid "Testtool"
+msgstr "Testtool"
+
+#: basic.src#IDS_ASK_DIRTY_AND_DISKCHANGE_SAVE.querybox.text
+msgid ""
+"File has been changed on data medium\n"
+"and in the Editor. Save?"
+msgstr ""
+"Daskemmet eo bet ar restr war ar media\n"
+"hag en embanner. Enrollañ ?"
+
+#: basic.src#IDS_ASK_DIRTY_AND_DISKCHANGE_SAVE.querybox.title
+msgctxt "basic.src#IDS_ASK_DIRTY_AND_DISKCHANGE_SAVE.querybox.title"
+msgid "Testtool"
+msgstr "Testtool"
+
+#: basic.src#IDS_ASK_DIRTY_SAVE.querybox.text
+msgid "File has been changed. Save?"
+msgstr "Daskemmet eo bet ar restr. Enrollañ ?"
+
+#: basic.src#IDS_ASK_DIRTY_SAVE.querybox.title
+msgctxt "basic.src#IDS_ASK_DIRTY_SAVE.querybox.title"
+msgid "Testtool"
+msgstr "Testtool"
+
+#: basic.src#IDS_ASK_DISKCHANGE_SAVE.querybox.text
+msgid ""
+"File has been changed on data medium.\n"
+"Overwrite?"
+msgstr ""
+"Daskemmet eo bet ar restr war ar media. \n"
+"Flastrañ ?"
+
+#: basic.src#IDS_ASK_DISKCHANGE_SAVE.querybox.title
+msgctxt "basic.src#IDS_ASK_DISKCHANGE_SAVE.querybox.title"
+msgid "Testtool"
+msgstr "Testtool"
+
+#: basic.src#IDS_LOSS_OF_INFORMATION.querybox.text
+msgid "Saving in an external format causes information loss."
+msgstr "Enrollañ en ur mentrezh diavaez a zegas ur c'holl stlennoù."
+
+#: basic.src#IDS_LOSS_OF_INFORMATION.querybox.title
+msgctxt "basic.src#IDS_LOSS_OF_INFORMATION.querybox.title"
+msgid "Testtool"
+msgstr "Testtool"
+
+#: basic.src#IDS_RUNNING.querybox.text
+msgid "BASIC is still running! Exit anyway?"
+msgstr "Oberiat eo BASIC c'hoazh ! Kuitaat ar goulev evelkent ?"
+
+#: basic.src#IDS_RUNNING.querybox.title
+msgctxt "basic.src#IDS_RUNNING.querybox.title"
+msgid "Testtool"
+msgstr "Testtool"
+
+#: basic.src#IDD_EDIT_VAR.RID_RB_NEW_BOOL_F.radiobutton.text
+msgid "False"
+msgstr "Fals"
+
+#: basic.src#IDD_EDIT_VAR.RID_RB_NEW_BOOL_T.radiobutton.text
+msgid "True"
+msgstr "Gwir"
+
+#: basic.src#IDS_APPMODE_BREAK.string.text
+msgid "Break"
+msgstr "Ehan"
+
+#: basic.src#IDS_APPMODE_RUN.string.text
+msgid "Run"
+msgstr "Run"
+
+#: basic.src#IDS_APPNAME.string.text
+msgctxt "basic.src#IDS_APPNAME.string.text"
+msgid "Testtool"
+msgstr "Ostilhprouadiñ"
+
+#: basic.src#IDS_APPNAME2.string.text
+msgctxt "basic.src#IDS_APPNAME2.string.text"
+msgid "VCLTestTool"
+msgstr "StarTestTool"
+
+#: basic.src#IDS_BASFILTER.string.text
+msgid "Source files (*.BAS)"
+msgstr "Testenn darzh (*.BAS)"
+
+#: basic.src#IDS_CANCEL.string.text
+msgctxt "basic.src#IDS_CANCEL.string.text"
+msgid "Cancel"
+msgstr "Nullañ"
+
+#: basic.src#IDS_CONTINUE.string.text
+msgid "Continue"
+msgstr "War-lerc'h"
+
+#: basic.src#IDS_DISASWIN.string.text
+msgid "Disassembly"
+msgstr "Digenstrollañ"
+
+#: basic.src#IDS_EDIT_VAR.string.text
+msgid "Edit ($Arg1)"
+msgstr "Embann ($Arg1)"
+
+#: basic.src#IDS_ERROR1.string.text
+msgid "Error "
+msgstr "Fazi"
+
+#: basic.src#IDS_ERROR2.string.text
+msgid " in line "
+msgstr "d'al linenn"
+
+#: basic.src#IDS_INCFILTER.string.text
+msgid "Include files (*.INC)"
+msgstr "Restroù \"Include\" (*.INC)"
+
+#: basic.src#IDS_LIBFILTER.string.text
+msgid "Libraries (*.SB)"
+msgstr "Levraouegoù (*.SB)"
+
+#: basic.src#IDS_LOADDLG.string.text
+msgid "Testtool: Load File"
+msgstr "Ostilhprouadiñ : Lennadur ar restr"
+
+#: basic.src#IDS_NONAME.string.text
+msgid "Unnamed"
+msgstr "Disanv"
+
+#: basic.src#IDS_NO_LONGNAME.string.text
+msgid "No entries in Hid.Lst"
+msgstr "Enankad ebet e Hid.Lst"
+
+#: basic.src#IDS_OBJECT.string.text
+msgid "Object"
+msgstr "Ergorenn"
+
+#: basic.src#IDS_PAGE.string.text
+msgid "Page "
+msgstr "Pajenn"
+
+#: basic.src#IDS_PRINTMSG.string.text
+msgid "Printout of "
+msgstr "Moulladur "
+
+#: basic.src#IDS_RESFILTER.string.text
+msgid "Result files (*.RES)"
+msgstr "Disoc'hoù (*.RES)"
+
+#: basic.src#IDS_SAVEDLG.string.text
+msgid "Testtool: Save File"
+msgstr "Ostilhprouadiñ : Enrolladur ar restr"
+
+#: basic.src#IDS_TXTFILTER.string.text
+msgid "Results as text file (*.TXT)"
+msgstr "Disoc'hoù o stumm ur restr testenn (*.TXT)"
+
+#: basic.src#IDS_WARNING1.string.text
+msgid "Warning "
+msgstr "Diwallit "
+
+#: basic.src#IDS_WARNING_PREFIX.string.text
+msgctxt "basic.src#IDS_WARNING_PREFIX.string.text"
+msgid "Warning: "
+msgstr "Diwallit "
+
+#: basic.src#RID_TT_EXTRAS_NAME.string.text
+msgid "E~xtra"
+msgstr "~Ostilhoù"
+
+#: basic.src#IDD_OPTIONS_DLG.tabdialog.text
+msgid "Settings"
+msgstr "Arventennoù"
+
+#: basmsg.src#S_ERROR_OUTSIDE_TESTCASE.string.text
+msgid "Error outside of test case"
+msgstr "Fazi er-maez eus ur senario prouadiñ (test case)."
+
+#: basmsg.src#S_PROG_START.string.text
+msgid "Program start: ($Arg1); ($Arg2)"
+msgstr "Loc'hañ ar goulev : ($Arg1); ($Arg2)"
+
+#: basmsg.src#S_WARNING_PREFIX.string.text
+msgctxt "basmsg.src#S_WARNING_PREFIX.string.text"
+msgid "Warning: "
+msgstr "Kemenn :"
+
+#: svtmsg.src#S_ALLOWED_ONLY_IN_DOCKING_MODE.string.text
+msgid "Method only allowed in docking mode at ($Arg1)"
+msgstr "Hentenn aotreet e mod Docking hepken evit ($Arg1)"
+
+#: svtmsg.src#S_ALLOWED_ONLY_IN_FLOATING_MODE.string.text
+msgid "Method only allowed in floating mode at ($Arg1)"
+msgstr "Hentenn aotreet e mod Froating hepken evit ($Arg1)"
+
+#: svtmsg.src#S_APP_SHUTDOWN.string.text
+msgid "Application has been shut down"
+msgstr "Arsavet eo bet an arload."
+
+#: svtmsg.src#S_ATTEMPT_TO_WRITE_READONLY.string.text
+msgid "Attempt to write on read-only ($Arg1)"
+msgstr "Klask skrivañ war ($Arg1) (e mod lenn hepken)"
+
+#: svtmsg.src#S_BUTTONID_REQUIRED.string.text
+msgid "A button ID needs to be given at ($Arg1)"
+msgstr "Un AfellID a vank evit ($Arg1)"
+
+#: svtmsg.src#S_BUTTON_DISABLED_ON_TOOLBOX.string.text
+msgid "The button is disabled in ToolBox at ($Arg1)"
+msgstr "Diweredekaet eo an afell en Toolbox evit ($Arg1)"
+
+#: svtmsg.src#S_BUTTON_HIDDEN_ON_TOOLBOX.string.text
+msgid "The button is hidden in ToolBox at ($Arg1)"
+msgstr "Kuzhet eo an afell en Toolbox evit ($Arg1)"
+
+#: svtmsg.src#S_BUTTON_ID_NOT_THERE.string.text
+msgid "There is no button with ID ($Arg1) at ($Arg2)"
+msgstr "Ezvezañs afell o tiskouez ID ($Arg1) evit ($Arg2) "
+
+#: svtmsg.src#S_CANNOT_CREATE_DIRECTORY.string.text
+msgid "Cannot create Directory: \"($Arg1)\""
+msgstr "N'hall ket krouiñ kavlec'hiad : \"($Arg1)\""
+
+#: svtmsg.src#S_CANNOT_FIND_FLOATING_WIN.string.text
+msgid "Cannot find FloatingWindow for floating DockingWindow at ($Arg1)."
+msgstr ""
+"N'hall ket kavout ur prenestr tonn evit ar prenestr tonn/didonn e ($Arg1)."
+
+#: svtmsg.src#S_CANNOT_MAKE_BUTTON_VISIBLE_IN_TOOLBOX.string.text
+msgid "Button cannot be made visible in ToolBox at ($Arg1)"
+msgstr "N'haller ket skrammañ an afell en ToolBox evit ($Arg1)"
+
+#: svtmsg.src#S_CONTROLTYPE_NOT_SUPPORTED.string.text
+msgid "ControlType ($Arg1) is not supported"
+msgstr "ControlType ($Arg1) diskor"
+
+#: svtmsg.src#S_DEPRECATED.string.text
+msgid "Deprecated! Please change the script."
+msgstr "Deprecated! Please change the script."
+
+#: svtmsg.src#S_DIRECTORY_NOT_EMPTY.string.text
+msgid "Directory has to be Empty to unpack to. Directory: \"($Arg1)\""
+msgstr ""
+"Ret eo d'ar c'havlec'h bezañ Goullo da zibakañ davetañ. Kavlec'h : \"($Arg1)\""
+
+#: svtmsg.src#S_ENTRY_NOT_FOUND.string.text
+msgid "\"($Arg2)\" entry at ($Arg1) not found"
+msgstr "Enankad \"($Arg2)\" dic'havadus evit ($Arg1)"
+
+#: svtmsg.src#S_ERROR_IN_SET_TEXT.string.text
+msgid "Set text did not function"
+msgstr "SetText n'en deus ket arc'hwelet"
+
+#: svtmsg.src#S_ERROR_SAVING_IMAGE.string.text
+msgid "Error #($Arg1) when saving the image"
+msgstr "Fazi #(Arg1) e-pad enrolladur ar skeudenn"
+
+#: svtmsg.src#S_GPF_ABORT.string.text
+msgid "Program aborted with GPF"
+msgstr "Goulev troc'het gant GPF"
+
+#: svtmsg.src#S_HELPID_ON_TOOLBOX_NOT_FOUND.string.text
+msgid "HelpID in ToolBox not found at ($Arg1)"
+msgstr "HelpID an ToolBox digavadus evit ($Arg1)"
+
+#: svtmsg.src#S_INTERNAL_ERROR.string.text
+msgid "Internal error at ($Arg1)"
+msgstr "Fazi diabarzh evit ($Arg1)"
+
+#: svtmsg.src#S_INVALID_PARAMETERS.string.text
+msgid "Invalid Parameters"
+msgstr "Arventennoù direizh"
+
+#: svtmsg.src#S_INVALID_POSITION.string.text
+msgid "Invalid position at ($Arg1)"
+msgstr "Fazi menegadur eus lec'hiadur ($Arg1)"
+
+#: svtmsg.src#S_ITEMS_INVISIBLE.string.text
+msgid "The items are hidden at ($Arg1)"
+msgstr "Masklet eo an itemoù evit ($Arg1)"
+
+#: svtmsg.src#S_MENU_NOT_CLOSING.string.text
+msgid "Menu not closing."
+msgstr ""
+
+#: svtmsg.src#S_METHOD_FAILED.string.text
+msgid "($Arg1) of entry \"($Arg2)\" failed"
+msgstr "($Arg1) en deus faziet evit an enankad ($Arg2) "
+
+#: svtmsg.src#S_NO_ACTIVE_WINDOW.string.text
+msgid "No active window found (GetNextCloseWindow)"
+msgstr "Prenestr oberiat ebet dinoet (GetNextCloseWindow)"
+
+#: svtmsg.src#S_NO_CANCEL_BUTTON.string.text
+msgid "There is no Cancel button at ($Arg1)"
+msgstr "Ezvezañs afell Nullañ evit ($Arg1)"
+
+#: svtmsg.src#S_NO_DEFAULT_BUTTON.string.text
+msgid "There is no Default button defined at ($Arg1)"
+msgstr "Ezvezañs afell Dre ziouer evit ($Arg1)"
+
+#: svtmsg.src#S_NO_DIALOG_IN_GETACTIVE.string.text
+msgid "GetActive does not return a dialog! Inform development"
+msgstr ""
+"GetActive ne bourchas boest emziviz ebet ! Titourit ar gwazerezh diorren."
+
+#: svtmsg.src#S_NO_HELP_BUTTON.string.text
+msgid "There is no Help button at ($Arg1)"
+msgstr "Ezvezañs afell Skoazell evit ($Arg1)"
+
+#: svtmsg.src#S_NO_LIST_BOX_BUTTON.string.text
+msgid "ListBoxButton does not exist in ($Arg1)"
+msgstr "Afell vaez rollad direvout evit ($Arg1)"
+
+#: svtmsg.src#S_NO_LIST_BOX_STRING.string.text
+msgid "String does not exist in ($Arg1)"
+msgstr "An hedad n'eus ket anezhañ e ($Arg1)"
+
+#: svtmsg.src#S_NO_MENU.string.text
+msgid "There is no menu at ($Arg1)"
+msgstr "Ezvezañs lañser evit ($Arg1)"
+
+#: svtmsg.src#S_NO_MORE_FILES.string.text
+msgid "No more files"
+msgstr "Restr all ebet"
+
+#: svtmsg.src#S_NO_NO_BUTTON.string.text
+msgid "There is no No button at ($Arg1)"
+msgstr "Ezvezañs afell Nann evit ($Arg1)"
+
+#: svtmsg.src#S_NO_OK_BUTTON.string.text
+msgid "There is no OK button at ($Arg1)"
+msgstr "Ezvezañs afell Mad eo evit ($Arg1)"
+
+#: svtmsg.src#S_NO_POPUP.string.text
+msgid "Pop-up menu not open"
+msgstr "Lañser Difluk (Pop-up) digor ebet"
+
+#: svtmsg.src#S_NO_RETRY_BUTTON.string.text
+msgid "There is no Repeat button at ($Arg1)"
+msgstr "Ezvezañs afell Adklask evit ($Arg1)"
+
+#: svtmsg.src#S_NO_SAX_PARSER.string.text
+msgid "No SAX Parser when using ($Arg1). Initialize with 'SAXReadFile' first."
+msgstr ""
+"SAX Parser ebet evit ($Arg1). Deraouekaat a-raok pep tra gant 'SAXReadFile'."
+
+#: svtmsg.src#S_NO_SCROLLBAR.string.text
+msgid "No scroll bar at ($Arg1)"
+msgstr "Ezvezañs afell dibunañ evit ($Arg1)"
+
+#: svtmsg.src#S_NO_SELECTED_ENTRY.string.text
+msgid "No entry is selected in ($Arg2) at ($Arg1)"
+msgstr "Enankad ebet diuzet e ($Arg2) evit ($Arg1)"
+
+#: svtmsg.src#S_NO_SELECTED_ENTRY_DEPRECATED.string.text
+msgid "No entry is selected in TreeListBox at ($Arg1)"
+msgstr "Enankad ebet diuzet e TreeListBox evit ($Arg1)"
+
+#: svtmsg.src#S_NO_SELECT_FALSE.string.text
+msgid "Select FALSE not allowed. Use MultiSelect at ($Arg1)"
+msgstr "Berzet eo diuzañ FALSE. Arverit MultiSelect evit ($Arg1)"
+
+#: svtmsg.src#S_NO_STATUSBAR.string.text
+msgid "No status bar at ($Arg1)"
+msgstr "Ezvezañs barrenn stad evit ($Arg1) "
+
+#: svtmsg.src#S_NO_SUBMENU.string.text
+msgid "Submenu does not exist"
+msgstr "Islañser anrevout"
+
+#: svtmsg.src#S_NO_YES_BUTTON.string.text
+msgid "There is no Yes button at ($Arg1)"
+msgstr "Ezvezañs afell Ya evit ($Arg1)"
+
+#: svtmsg.src#S_NUMBER_TOO_BIG.string.text
+msgid "Entry number ($Arg2) is too large in ($Arg1). Max. allowed is ($Arg3)"
+msgstr ""
+"Re izel eo an niverenn enankañ ($Arg2) evit ($Arg1). An uc'heg galloudus zo "
+"($Arg3)."
+
+#: svtmsg.src#S_NUMBER_TOO_SMALL.string.text
+msgid ""
+"The entry number ($Arg2) is too small in ($Arg1). Min allowed is ($Arg3)"
+msgstr ""
+"Re izel eo an niverenn enankañ ($Arg2) evit ($Arg1). An izeg galloudus zo "
+"($Arg3)."
+
+#: svtmsg.src#S_POINTER_OUTSIDE_APPWIN.string.text
+msgid "Pointer not inside application window at '($Arg1)'"
+msgstr "Diskouezer er-maez eus prenestr an arload evit '(Arg1)'"
+
+#: svtmsg.src#S_RESETAPPLICATION_FAILED_COMPLEX.string.text
+msgid "ResetApplication failed: too complex"
+msgstr "C'hwitadenn ResetApplication : re gemplezh"
+
+#: svtmsg.src#S_RESETAPPLICATION_FAILED_UNKNOWN.string.text
+msgid "ResetApplication failed: unknown window type"
+msgstr "C'hwitadenn ResetApplication : rizh prenestr dianav"
+
+#: svtmsg.src#S_SELECTION_BY_ATTRIBUTE_ONLY_DIRECTORIES.string.text
+msgid "Selection by attributes only possible for directories"
+msgstr ""
+"An diuz e-keñver doareennoù zo galloudus evit ar c'havlec'hiadoù nemetken."
+
+#: svtmsg.src#S_SELECT_DESELECT_VIA_STRING_NOT_IMPLEMENTED.string.text
+msgid "Select/Deselect with string not implemented at ($Arg1)"
+msgstr "Diuz/diziuz ur string ankefloueret evit ($Arg1)"
+
+#: svtmsg.src#S_SID_EXECUTE_FAILED.string.text
+msgid "Slot ID could not be executed"
+msgstr "N'haller ket erounit Slot ID."
+
+#: svtmsg.src#S_SID_EXECUTE_FAILED_NO_DISPATCHER.string.text
+msgid "Slot ID cannot be executed. No ActiveDispatcher"
+msgstr "N'haller ket erounit Slot ID : dasparzher oberiat ebet."
+
+#: svtmsg.src#S_SIZE_BELOW_MINIMUM.string.text
+msgid "The Size is below the minimum. x=($Arg1) ,y=($Arg2)"
+msgstr "Dindan an izeg emañ ar Ment. x=($Arg1) ,y=($Arg2)"
+
+#: svtmsg.src#S_SIZE_NOT_CHANGEABLE.string.text
+msgid "Size cannot be altered at ($Arg1)"
+msgstr "Ment andaskemmadus evit ($Arg1)"
+
+#: svtmsg.src#S_SLOT_IN_EXECUTE.string.text
+msgid "Another Slot is being executed already."
+msgstr "Emañ war erounit ur slot all endeo."
+
+#: svtmsg.src#S_SPLITWIN_NOT_FOUND.string.text
+msgid "SplitWindow not found at ($Arg1)"
+msgstr "SplitWindow digavadus evit ($Arg1)"
+
+#: svtmsg.src#S_TABPAGE_NOT_FOUND.string.text
+msgid "Tab page not found at ($Arg1)"
+msgstr "Tabpage dic'havadus evit ($Arg1)"
+
+#: svtmsg.src#S_TEAROFF_FAILED.string.text
+msgid "TearOff failed in ToolBox at ($Arg1)"
+msgstr "C'hwitet en deus TearOff en ToolBox evit ($Arg1)"
+
+#: svtmsg.src#S_TRISTATE_NOT_ALLOWED.string.text
+msgid "Tristate cannot be set at ($Arg1)"
+msgstr "N'haller ket lec'hiañ ur werzh Tristate evit ($Arg1)"
+
+#: svtmsg.src#S_UNKNOWN_COMMAND.string.text
+msgid "Unknown command '($Arg1)'"
+msgstr "Arc'had dianav '($Arg1)'"
+
+#: svtmsg.src#S_UNKNOWN_METHOD.string.text
+msgid "Unknown method '($Arg1)' on ($Arg2)"
+msgstr "Hentenn dianav '($Arg1)' etrezek ($Arg2)"
+
+#: svtmsg.src#S_UNKNOWN_TYPE.string.text
+msgid "Unknown object type ($Arg1) from UId or method '($Arg2)' not supported"
+msgstr ""
+"Rizh ergorenn dianav ($Arg1) evodet eus UId pe hentenn '($Arg2)' anskor."
+
+#: svtmsg.src#S_UNO_PROPERTY_NITIALIZE_FAILED.string.text
+msgid "UnoSlot: Properties could not be initialized"
+msgstr "UnoSlot : N'haller ket deraouekaat ar perzhioù."
+
+#: svtmsg.src#S_UNO_URL_EXECUTE_FAILED_DISABLED.string.text
+msgid "UNO URL \"($Arg1)\" could not be run: Disabled"
+msgstr "N'haller ket erounit an URL UNO \"($Arg1)\" : diweredekaet."
+
+#: svtmsg.src#S_UNO_URL_EXECUTE_FAILED_NO_DISPATCHER.string.text
+msgid "UNO URL \"($Arg1)\" could not be executed: No dispatcher was found."
+msgstr "N'haller ket erounit an URL UNO \"($Arg1)\" : dasparzher oberiat ebet."
+
+#: svtmsg.src#S_UNO_URL_EXECUTE_FAILED_NO_FRAME.string.text
+msgid "UNO URL \"($Arg1)\" could not be executed: No ActiveFrame on desktop."
+msgstr ""
+"N'haller ket erounit an URL UNO \"($Arg1)\" : Frame oberiat ebet war ar Burev."
+
+#: svtmsg.src#S_UNPACKING_STORAGE_FAILED.string.text
+msgid "Unpacking storage \"($Arg1)\" to \"($Arg2)\" failed"
+msgstr "C'hwitet en deus digoazhadur ar c'hadaviñ \"($Arg1)\" davet \"($Arg2)\"."
+
+#: svtmsg.src#S_WINDOW_DISAPPEARED.string.text
+msgid "Window disappeared in the meantime at ($Arg1)"
+msgstr "Disparition momentanée de la fenêtre  ($Arg1)"
+
+#: svtmsg.src#S_WIN_DISABLED.string.text
+msgid "($Arg1) could not be accessed. Disabled"
+msgstr "Haeziñ ($Arg1) dibosupl"
+
+#: svtmsg.src#S_WIN_INVISIBLE.string.text
+msgid "($Arg1) is not visible"
+msgstr "($Arg1) diwelus"
+
+#: svtmsg.src#S_WIN_NOT_FOUND.string.text
+msgid "($Arg1) could not be found"
+msgstr "($Arg1) digavus"
+
+#: testtool.src#S_INVALID_KEYCODE.string.text
+msgid "Is an invalid KeyCode!"
+msgstr "KeyCode direizh "
+
+#: testtool.src#S_MANDATORY_FILE.string.text
+msgid ""
+"\n"
+"could not be found.\n"
+"This file is indispensable."
+msgstr ""
+"\n"
+"n'eo ket bet dinoet.\n"
+"Ar restr-mañ a zo ret."
+
+#: testtool.src#S_READING_BASIC_MODULE.string.text
+msgid "Reading BASIC module"
+msgstr "Lennadur ar mollad BASIC"
+
+#: testtool.src#S_READING_CONTROLS.string.text
+msgid "Reading Controls"
+msgstr "Lennadur ar reolerezhioù"
+
+#: testtool.src#S_READING_LONGNAMES.string.text
+msgid "Reading long-names"
+msgstr "Lennadur an anvioù restr hir (long names)"
+
+#: testtool.src#S_READING_SLOT_IDS.string.text
+msgid "Reading Slot IDs"
+msgstr "Lennadur ar Slotoù Ids"
+
+#: testtool.src#S_STARTING_APPLICATION.string.text
+msgid "Starting application"
+msgstr "Loc'hañ an arload"
+
+#: ttmsg.src#S_APPLICATION_RESTARTED.string.text
+msgid "Application has been restarted."
+msgstr "Adlusket eo bet an arload."
+
+#: ttmsg.src#S_APPLICATION_START_FAILED.string.text
+msgid "Application \"($Arg1)\" cannot be started. "
+msgstr "N'haller ket luskañ an arload \"($Arg1)\".  "
+
+#: ttmsg.src#S_CANNOT_OPEN_FILE.string.text
+msgid "File cannot be opened: ($Arg1)"
+msgstr "N'haller ket digeriñ ar restr : ($Arg1)"
+
+#: ttmsg.src#S_DOUBLE_NAME.string.text
+msgid "Name double: ($Arg1)"
+msgstr "Daouanv : ($Arg1)"
+
+#: ttmsg.src#S_ERRORS_DETECTED.string.text
+msgid "** ($Arg1) errors occurred"
+msgstr "** ($Arg1) : Fazioù degouezhet"
+
+#: ttmsg.src#S_FIRST_SHORTNAME_REQ_ASTRX.string.text
+msgid "First short-name must start with * . Ignoring."
+msgstr "Ret eo d'ar berradur kentañ kregiñ gant *. Leuskel a-gostez."
+
+#: ttmsg.src#S_INCLUDE_FILE_WARNINGS_DETECTED.string.text
+msgid "** ($Arg1) warnings occurred during initialization"
+msgstr "** ($Arg1) : Kemennoù e-pad an deraouekaat"
+
+#: ttmsg.src#S_INVALID_LINE.string.text
+msgid "Line \"($Arg1)\" is invalid."
+msgstr "Linenn \"($Arg1)\" didalvoud."
+
+#: ttmsg.src#S_LONGNAME_UNKNOWN.string.text
+msgid "Long-name unknown: ($Arg1)"
+msgstr "Anv dianav : ($Arg1)"
+
+#: ttmsg.src#S_NAME_NOT_THERE.string.text
+msgid "Name doesn't exist: #($Arg1)"
+msgstr "Anv direvoud : #(Arg1)"
+
+#: ttmsg.src#S_NO_CONNECTION.string.text
+msgid "No connection. Sequence No: ($Arg1)"
+msgstr "Kennask ebet. Nn gemalenn : ($Arg1)"
+
+#: ttmsg.src#S_NO_ERRORS_DETECTED.string.text
+msgid "** No errors have occurred"
+msgstr "** Fazi ebet degouezhet"
+
+#: ttmsg.src#S_NO_FILES_FOUND.string.text
+msgid "No ($Arg1) files found"
+msgstr "Teul ($Arg1) ebet dinoet"
+
+#: ttmsg.src#S_NO_INCLUDE_FILE_WARNINGS_DETECTED.string.text
+msgid "** No warnings occurred during initialization"
+msgstr "** Kemenn ebet e-pad an deraouekaat"
+
+#: ttmsg.src#S_NO_WARNINGS_DETECTED.string.text
+msgid "** No warnings have occurred"
+msgstr "** Kemenn ebet degouezhet"
+
+#: ttmsg.src#S_READING_FILE.string.text
+msgid "Reading the files"
+msgstr "Lennadur ar restroù"
+
+#: ttmsg.src#S_RETURNED_VALUE_ID_MISSMATCH.string.text
+msgid "Return value received but different Id expected"
+msgstr "Gwerzh argas degemeret met o c'hortoz un ID all"
+
+#: ttmsg.src#S_RETURNED_VALUE_NO_RECEIVER.string.text
+msgid "Return value received but no receiver defined"
+msgstr "Gwerzh argas degemeret met kasadour despizet ebet"
+
+#: ttmsg.src#S_RETURN_SEQUENCE_MISSMATCH.string.text
+msgid "Return Stream has wrong sequence: ($Arg1) instead of ($Arg2)"
+msgstr "Return Stream gant ur gemalenn faziek : (Arg1) e lec'h ($Arg2)"
+
+#: ttmsg.src#S_SHORTNAME_UNKNOWN.string.text
+msgid "Short-name unknown during copying: ($Arg1)"
+msgstr "Berradenn dianav en ur gopiañ : ($Arg1)"
+
+#: ttmsg.src#S_TIMOUT_SENDING.string.text
+msgid "Server Timeout while sending. Sequence No: ($Arg1)"
+msgstr "Timeout an dafariad e-pad ar c'has. Nn gemalenn : ($Arg1)"
+
+#: ttmsg.src#S_TIMOUT_WAITING.string.text
+msgid "Server Timeout while waiting for answer. Sequence No: ($Arg1)"
+msgstr "Timeout an dafariad e-pad gortoz ar respont. Nn gemalenn : ($Arg1)"
+
+#: ttmsg.src#S_UNKNOWN_METHOD.string.text
+msgid "Unknown method on object :($Arg1).($Arg2)"
+msgstr "Hentenn dianav etrezek an ergorenn : '($Arg1).($Arg2)"
+
+#: ttmsg.src#S_UNKNOWN_SLOT_CONTROL.string.text
+msgid "Slot/Control unknown :\"($Arg1)\""
+msgstr "Slot/Control dianav : \"($Arg1)\""
+
+#: ttmsg.src#S_WARNINGS_DETECTED.string.text
+msgid "** ($Arg1) warnings occurred"
+msgstr "** ($Arg1) : Kemennoù degouezhet"
+
+#: format.src#STR_BASICKEY_FORMAT_CURRENCY.string.text
+msgid "@0.00 $;@(0.00 $)"
+msgstr "@0.00 $"
+
+#: format.src#STR_BASICKEY_FORMAT_FALSE.string.text
+msgid "False"
+msgstr "Fals"
+
+#: format.src#STR_BASICKEY_FORMAT_NO.string.text
+msgid "No"
+msgstr "Nann"
+
+#: format.src#STR_BASICKEY_FORMAT_OFF.string.text
+msgid "Off"
+msgstr "Off"
+
+#: format.src#STR_BASICKEY_FORMAT_ON.string.text
+msgid "On"
+msgstr "On"
+
+#: format.src#STR_BASICKEY_FORMAT_TRUE.string.text
+msgid "True"
+msgstr "Gwir"
+
+#: format.src#STR_BASICKEY_FORMAT_YES.string.text
+msgid "Yes"
+msgstr "Ya"

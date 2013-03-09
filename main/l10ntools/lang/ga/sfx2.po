@@ -1,0 +1,2783 @@
+
+#: view.src#STR_NODEFPRINTER.string.text
+msgid ""
+"No default printer found.\n"
+"Please choose a printer and try again."
+msgstr ""
+"Níl aon phrintéir réamhshocraithe agat.\n"
+"Roghnaigh printéir agus triail arís, le do thoil."
+
+#: view.src#STR_NOSTARTPRINTER.string.text
+msgid ""
+"Could not start printer.\n"
+"Please check your printer configuration."
+msgstr ""
+"Níorbh fhéidir an printéir a thosú.\n"
+"Seiceáil cumraíocht do phrintéara."
+
+#: view.src#STR_PRINTER_NOTAVAIL.string.text
+msgid ""
+"This document has been formatted for the printer $1. The specified printer "
+"is not available. \n"
+"Do you want to use the standard printer $2 ?"
+msgstr ""
+"Formáidíodh an cháipéis seo do phrintéir $1. Níl teacht ar an bprintéir sin "
+"faoi láthair. \n"
+"An bhfuil fonn ort printéir caighdeánach $2 a úsáid?"
+
+#: view.src#STR_PRINT_OPTIONS.string.text
+msgid "Options..."
+msgstr "Roghanna..."
+
+#: view.src#STR_PRINT_OPTIONS_TITLE.string.text
+msgid "Printer Options"
+msgstr "Roghanna Priontála"
+
+#: view.src#STR_ERROR_PRINTER_BUSY.string.text
+msgid "Printer busy"
+msgstr "Printéir gnóthach"
+
+#: view.src#STR_ERROR_PRINT.string.text
+msgid "Error while printing"
+msgstr "Tharla earráid le linn priontála"
+
+#: view.src#STR_PRINTING.string.text
+msgid "Printing"
+msgstr "Á Phriontáil"
+
+#: view.src#STR_PAGE.string.text
+msgid "Page "
+msgstr "Leathanach "
+
+#: view.src#STR_ERROR_SAVE_TEMPLATE.string.text
+msgid "Error saving template "
+msgstr "Earráid agus teimpléad á shábháil "
+
+#: view.src#STR_READONLY.string.text
+msgid " (read-only)"
+msgstr " (inléite amháin)"
+
+#: view.src#STR_PRINT_NEWORI.string.text
+msgctxt "view.src#STR_PRINT_NEWORI.string.text"
+msgid ""
+"The page size and orientation have been modified.\n"
+"Would you like to save the new settings in the\n"
+"active document?"
+msgstr ""
+"Athraíodh méid agus treoshuíomh an leathanaigh.\n"
+"An bhfuil fonn ort na socruithe nua a shábháil\n"
+"sa cháipéis reatha?"
+
+#: view.src#STR_PRINT_NEWSIZE.string.text
+msgid ""
+"The page size has been modified.\n"
+"Should the new settings be saved\n"
+"in the active document?"
+msgstr ""
+"Athraíodh méid an leathanaigh.\n"
+"Ar cheart na socruithe nua a shábháil\n"
+"sa cháipéis reatha?"
+
+#: view.src#STR_PRINT_NEWORISIZE.string.text
+msgctxt "view.src#STR_PRINT_NEWORISIZE.string.text"
+msgid ""
+"The page size and orientation have been modified.\n"
+"Would you like to save the new settings in the\n"
+"active document?"
+msgstr ""
+"Athraíodh méid agus treoshuíomh an leathanaigh.\n"
+"An bhfuil fonn ort na socruithe nua a shábháil\n"
+"sa cháipéis reatha?"
+
+#: view.src#STR_PREVIEW_DOCINFO.string.text
+msgid ""
+"<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$("
+"TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt>"
+"<b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
+msgstr ""
+"<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Teideal:</b><dd>"
+"$(TITEL)<dt><b>Ábhar:</b><dd>$(THEME)<dt><b>Lorgfhocal:</b><dd>$(KEYWORDS)<d"
+"t><b>Cur Síos:</b><dd>$(TEXT)</dl></font></body></html>"
+
+#: view.src#STR_PREVIEW_NODOCINFO.string.text
+msgid ""
+"<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document "
+"properties found.</B></FONT></P></BODY></HTML>"
+msgstr ""
+"<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>Níor aimsíodh "
+"airíonna na cáipéise.</B></FONT></P></BODY></HTML>"
+
+#: view.src#MSG_CANT_CLOSE.infobox.text
+msgid ""
+"The document cannot be closed because a\n"
+" print job is being carried out."
+msgstr ""
+"Ní féidir an cháipéis a dhúnadh toisc\n"
+" go bhfuil jab priontála ar bun."
+
+#: view.src#DLG_PRINTMONITOR_TEXT.#define.text
+msgid "Print Monitor"
+msgstr "Monatóir Priontála"
+
+#: view.src#DLG_PRINTMONITOR.FT_PRINTING.fixedtext.text
+msgid "is being printed on"
+msgstr "á phriontáil ar"
+
+#: view.src#DLG_PRINTMONITOR.STR_FT_PREPARATION.string.text
+msgid "is being prepared for printing"
+msgstr "á ullmhú le priontáil"
+
+#: view.src#MSG_ERROR_SEND_MAIL.infobox.text
+msgid ""
+"An error occurred in sending the message. Possible errors could be a missing "
+"user account or a defective setup.\n"
+"Please check the %PRODUCTNAME settings or your e-mail program settings."
+msgstr ""
+"Tharla earráid agus an teachtaireacht á seoladh. D'fhéadfaí nach ann do "
+"chuntas úsáideora nó cumraíocht lochtach.\n"
+"Seiceáil socruithe %PRODUCTNAME nó socruithe do chláir ríomhphoist."
+
+#: view.src#MSG_QUERY_OPENASTEMPLATE.querybox.text
+msgid ""
+"This document cannot be edited, possibly due to missing access rights. Do "
+"you want to edit a copy of the document?"
+msgstr ""
+"Ní féidir an cháipéis a chur in eagar; is dócha nach bhfuil cead rochtana "
+"agat. An bhfuil fonn ort cóip den cháipéis a chur in eagar?"
+
+#: view.src#STR_REPAIREDDOCUMENT.string.text
+msgid " (repaired document)"
+msgstr " (cáipéis deisithe)"
+
+#: view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.errorbox.text
+msgid ""
+"%PRODUCTNAME could not find a web browser on your system. Please check your "
+"Desktop Preferences or install a web browser (for example, Mozilla) in the "
+"default  location requested during the browser installation."
+msgstr ""
+"Níorbh fhéidir le %PRODUCTNAME brabhsálaí a aimsiú ar do chóras. Seiceáil do "
+"shainroghanna deisce, nó suiteáil brabhsálaí (mar shampla Mozilla Firefox) "
+"san áit réamhshocraithe nuair a iarrtar ort é agus tú á shuiteáil."
+
+#: menu.src#STR_MENU_CFGITEM.string.text
+msgid "Configuration Menu"
+msgstr "Roghchlár Cumraíochta"
+
+#: menu.src#STR_MENU_ADDONS.string.text
+msgid "~Add-Ons"
+msgstr "~Breiseáin"
+
+#: menu.src#MN_CLIPBOARDFUNCS.SID_CUT.menuitem.text
+msgid "Cu~t"
+msgstr "Gear~r"
+
+#: menu.src#MN_CLIPBOARDFUNCS.SID_COPY.menuitem.text
+msgid "~Copy"
+msgstr "~Cóipeáil"
+
+#: menu.src#MN_CLIPBOARDFUNCS.SID_PASTE.menuitem.text
+msgid "~Paste"
+msgstr "~Greamaigh"
+
+#: menu.src#SID_WIN_FULLSCREEN.string.text
+msgid "Leave Full-Screen Mode"
+msgstr "Éirigh as an Lánscáileán"
+
+#: menu.src#STR_MENU_ADDONHELP.string.text
+msgid "Add-~On Help"
+msgstr "Cabhair le B~reiseáin"
+
+#: menu.src#STR_MENU_SYNONYMS.string.text
+msgid "Synonyms"
+msgstr "Focail chomhchiallacha"
+
+#: menu.src#STR_MENU_NO_SYNONYM_FOUND.string.text
+msgid "(none)"
+msgstr "(neamhní)"
+
+#: menu.src#STR_MENU_THESAURUS.string.text
+msgid "~Thesaurus..."
+msgstr "~Teasáras..."
+
+#: fltfnc.src#STR_FILTER_NOT_INSTALLED.string.text
+msgid ""
+"The selected filter $(FILTER) has not been installed.\n"
+"Would you like to do this now?"
+msgstr ""
+"Níl an scagaire roghnaithe $(FILTER) suiteáilte.\n"
+"An bhfuil fonn ort é a shuiteáil anois?"
+
+#: fltfnc.src#STR_FILTER_CONSULT_SERVICE.string.text
+msgid ""
+"The selected filter $(FILTER) is not included in your edition.\n"
+"You can find information about orders on our homepage."
+msgstr ""
+"Níl an scagaire roghnaithe $(FILTER) ar do leagan.\n"
+"Is féidir faisnéis maidir le horduithe a fháil ar ár gclár cinn."
+"X-Accelerator-Marker: ~\n"
+
+#: app.src#STR_NONAME.string.text
+msgid "Untitled"
+msgstr "Gan Teideal"
+
+#: app.src#STR_CLOSE.string.text
+msgid "Close"
+msgstr "Dún"
+
+#: app.src#STR_STYLE_FILTER_AUTO.string.text
+msgid "Automatic"
+msgstr "Uathoibríoch"
+
+#: app.src#STR_STANDARD_SHORTCUT.string.text
+#, fuzzy
+msgctxt "app.src#STR_STANDARD_SHORTCUT.string.text"
+msgid "Standard"
+msgstr "Caighdeánach"
+
+#: app.src#STR_BYTES.string.text
+msgid "Bytes"
+msgstr "Beart"
+
+#: app.src#STR_KB.string.text
+msgid "KB"
+msgstr "kB"
+
+#: app.src#STR_MB.string.text
+msgid "MB"
+msgstr "MB"
+
+#: app.src#STR_GB.string.text
+msgid "GB"
+msgstr "GB"
+
+#: app.src#MSG_QUERY_LASTVERSION.querybox.text
+msgid "Cancel all changes?"
+msgstr "Gach athrú le cealú?"
+
+#: app.src#RID_DOCALREADYLOADED_DLG.infobox.text
+msgid "Document already open."
+msgstr "Tá an cháipéis oscailte cheana."
+
+#: app.src#MSG_ERR_NO_WEBBROWSER_FOUND.errorbox.text
+msgid ""
+"%PRODUCTNAME could not find a web browser on your system. Please check your "
+"Desktop Preferences or install a web browser (for example, Mozilla) in the "
+"default  location requested during the browser installation."
+msgstr ""
+"Níorbh fhéidir le %PRODUCTNAME brabhsálaí a aimsiú ar do chóras. Seiceáil do "
+"shainroghanna deisce, nó suiteáil brabhsálaí (mar shampla Mozilla Firefox) "
+"san áit réamhshocraithe nuair a iarrtar ort é agus tú á shuiteáil."
+
+#: app.src#GID_INTERN.string.text
+msgid "Internal"
+msgstr "Inmheánach"
+
+#: app.src#GID_APPLICATION.string.text
+msgid "Application"
+msgstr "Feidhmchlár"
+
+#: app.src#GID_VIEW.string.text
+msgid "View"
+msgstr "Amharc"
+
+#: app.src#GID_DOCUMENT.string.text
+msgid "Documents"
+msgstr "Cáipéisí"
+
+#: app.src#GID_EDIT.string.text
+msgid "Edit"
+msgstr "Eagar"
+
+#: app.src#GID_MACRO.string.text
+msgid "BASIC"
+msgstr "BASIC"
+
+#: app.src#GID_OPTIONS.string.text
+#, fuzzy
+msgid "Options"
+msgstr "Roghanna"
+
+#: app.src#GID_MATH.string.text
+msgid "Math"
+msgstr "Matamaitic"
+
+#: app.src#GID_NAVIGATOR.string.text
+msgid "Navigate"
+msgstr "Nascleanúint"
+
+#: app.src#GID_INSERT.string.text
+msgid "Insert"
+msgstr "Ionsáigh"
+
+#: app.src#GID_FORMAT.string.text
+msgid "Format"
+msgstr "Formáid"
+
+#: app.src#GID_TEMPLATE.string.text
+#, fuzzy
+msgid "Templates"
+msgstr "Teimpléid"
+
+#: app.src#GID_TEXT.string.text
+msgid "Text"
+msgstr "Téacs"
+
+#: app.src#GID_FRAME.string.text
+msgid "Frame"
+msgstr "Fráma"
+
+#: app.src#GID_GRAPHIC.string.text
+msgctxt "app.src#GID_GRAPHIC.string.text"
+msgid "Graphic"
+msgstr "Grafaic"
+
+#: app.src#GID_TABLE.string.text
+msgid "Table"
+msgstr "Tábla"
+
+#: app.src#GID_ENUMERATION.string.text
+msgid "Numbering"
+msgstr "Uimhriú"
+
+#: app.src#GID_DATA.string.text
+msgid "Data"
+msgstr "Sonraí"
+
+#: app.src#GID_SPECIAL.string.text
+msgid "Special Functions"
+msgstr "Feidhmeanna Speisialta"
+
+#: app.src#GID_IMAGE.string.text
+msgid "Image"
+msgstr "Íomhá"
+
+#: app.src#GID_CHART.string.text
+msgid "Chart"
+msgstr "Cairt"
+
+#: app.src#GID_EXPLORER.string.text
+msgid "Explorer"
+msgstr "Taiscéalaí"
+
+#: app.src#GID_CONNECTOR.string.text
+msgid "Connector"
+msgstr "Nascóir"
+
+#: app.src#GID_MODIFY.string.text
+msgid "Modify"
+msgstr "Mionathraigh"
+
+#: app.src#GID_DRAWING.string.text
+msgid "Drawing"
+msgstr "Líníocht"
+
+#: app.src#GID_CONTROLS.string.text
+msgid "Controls"
+msgstr "Rialtáin"
+
+#: app.src#MSG_CANT_QUIT.infobox.text
+msgid ""
+"The application cannot be terminated at the moment.\n"
+"Please wait until all print jobs and/or\n"
+"OLE actions have finished and close all dialogs."
+msgstr ""
+"Ní féidir an feidhmchlár a dhúnadh faoi láthair.\n"
+"Fan go gcríochnófar gach jab priontála, agus/nó\n"
+"go bhfuil gach gníomh OLE críochnaithe. Ansin dún gach dialóg."
+
+#: app.src#STR_ISMODIFIED.string.text
+msgid "Do you want to save the changes to %1?"
+msgstr "An bhfuil fonn ort na hathruithe do %1 a shábháil?"
+
+#: app.src#STR_QUITAPP.string.text
+msgid "E~xit"
+msgstr "S~coir"
+
+#: app.src#RID_STR_HELP.string.text
+#, fuzzy
+msgid "Help"
+msgstr "Cabhair"
+
+#: app.src#RID_STR_NOAUTOSTARTHELPAGENT.string.text
+msgid "No automatic start at 'XX'"
+msgstr "Gan tús uathoibríoch ar 'XX'"
+
+#: app.src#RID_HELPBAR.string.text
+msgid "Help Bar"
+msgstr "Barra Cabhrach"
+
+#: app.src#RID_STR_HLPFILENOTEXIST.string.text
+msgid "The help file for this topic is not installed."
+msgstr "Níl aon chomhad cabhrach don ábhar seo suiteáilte."
+
+#: app.src#RID_ENVTOOLBOX.string.text
+msgid "Function Bar"
+msgstr "Barra Feidhme"
+
+#: app.src#RID_SPECIALCONFIG_ERROR.string.text
+msgid ""
+"An error has occurred in the special configuration.\n"
+"Please contact your administrator."
+msgstr ""
+"Tharla earráid sa chumraíocht speisialta.\n"
+"Ceistigh riarthóir do chórais."
+
+#: app.src#STR_QUICKSTART_EXIT.string.text
+msgid "Exit Quickstarter"
+msgstr "Scoir an Meardhúisire"
+
+#: app.src#STR_QUICKSTART_TIP.string.text
+msgid "%PRODUCTNAME %PRODUCTVERSION Quickstarter"
+msgstr "Meardhúisire %PRODUCTNAME %PRODUCTVERSION"
+
+#: app.src#STR_QUICKSTART_FILEOPEN.string.text
+msgid "Open Document..."
+msgstr "Oscail Cáipéis..."
+
+#: app.src#STR_QUICKSTART_FROMTEMPLATE.string.text
+msgid "From Template..."
+msgstr "Ó Theimpléad..."
+
+#: app.src#STR_QUICKSTART_PRELAUNCH.string.text
+msgid "Load %PRODUCTNAME During System Start-Up"
+msgstr "Luchtaigh %PRODUCTNAME i rith Thosú an Chórais"
+
+#: app.src#STR_QUICKSTART_PRELAUNCH_UNX.string.text
+msgid "Disable systray Quickstarter"
+msgstr "Cumasaigh an Meardhúisire i dtráidire an chórais"
+
+#: app.src#STR_QUICKSTART_LNKNAME.string.text
+msgid "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
+
+#: app.src#STR_QUICKSTART_FILE.string.text
+msgid "File"
+msgstr "Comhad"
+
+#: app.src#STR_QUICKSTART_STARTCENTER.string.text
+msgid "Startcenter"
+msgstr "Ionad tosaithe"
+
+#: app.src#STR_QUICKSTART_RECENTDOC.string.text
+msgid "Recent Documents"
+msgstr "Cáipéisí Is Déanaí"
+
+#: app.src#STR_QUERY_UPDATE_LINKS.string.text
+msgid "Update all links?"
+msgstr "Nuashonraigh gach nasc?"
+
+#: app.src#STR_DDE_ERROR.string.text
+msgid "DDE link to % for % area % are not available."
+msgstr "Níl teacht ar nasc DDE le % do % limistéir %."
+
+#: app.src#RID_SECURITY_WARNING_HYPERLINK.warningbox.text
+msgid "This hyperlink is going to open \"%s\". Do you want to proceed?"
+msgstr "Osclófar an hipearnasc seo \"%s\". An bhfuil fonn ort dul ar aghaidh?"
+
+#: app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.warningbox.text
+msgid ""
+"For security reasons, the hyperlink cannot be executed.\n"
+"The stated address will not be opened."
+msgstr ""
+"Ar fháthanna slándála, ní féidir an hipearnasc a rith.\n"
+"Ní osclófar an seoladh luaite."
+
+#: app.src#RID_SECURITY_WARNING_TITLE.string.text
+msgid "Security Warning"
+msgstr "Rabhadh Slándála"
+
+#: app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.querybox.text
+msgid ""
+"Saving will remove all existing signatures.\n"
+"Do you want to continue saving the document?"
+msgstr ""
+"Bainfidh sábháil gach síniú atá ann cheana.\n"
+"An bhfuil fonn ort leanúint ag sábháil na cáipéise?"
+
+#: app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.querybox.text
+msgid ""
+"The document has to be saved before it can be signed.\n"
+"Do you want to save the document?"
+msgstr ""
+"Ní mór an cháipéis a shábháil sula mbeifear in ann é a shíniú.\n"
+"An bhfuil fonn ort an cháipéis a shábháil?"
+
+#: app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.infobox.text
+msgid ""
+"This document must be saved in OpenDocument file format before it can be "
+"digitally signed."
+msgstr ""
+"Ní mór an cháipéis seo a shábháil i bhformáid OpenDocument sula mbeifear in "
+"ann é a dhigishíniú."
+
+#: app.src#RID_XMLSEC_DOCUMENTSIGNED.string.text
+msgid " (Signed)"
+msgstr " (Sínithe)"
+
+#: app.src#STR_STANDARD.string.text
+#, fuzzy
+msgctxt "app.src#STR_STANDARD.string.text"
+msgid "Standard"
+msgstr "Caighdeánach"
+
+#: app.src#RID_SVXSTR_FILELINK.string.text
+msgid "Document"
+msgstr "Cáipéis"
+
+#: app.src#STR_NONE.string.text
+msgid "- None -"
+msgstr "- Neamhní -"
+
+#: app.src#RID_SVXSTR_GRAFIKLINK.string.text
+msgctxt "app.src#RID_SVXSTR_GRAFIKLINK.string.text"
+msgid "Graphic"
+msgstr "Grafaic"
+
+#: app.src#STR_SFX_FILTERNAME_ALL.string.text
+msgid "All files (*.*)"
+msgstr "Gach comhad (*.*)"
+
+#: app.src#RID_SVXSTR_EDITGRFLINK.string.text
+msgid "Link graphics"
+msgstr "Nasc grafaic"
+
+#: app.src#STR_ERRUNOEVENTBINDUNG.string.text
+msgid ""
+"An appropriate component method %1\n"
+"could not be found.\n"
+"\n"
+"Check spelling of method name."
+msgstr ""
+"Níorbh fhéidir modh oiriúnach comhpháirte %1\n"
+"a aimsiú.\n"
+"\n"
+"Seiceáil litriú dá ainm."
+
+#: app.src#RID_SVXSTR_GRFILTER_OPENERROR.string.text
+msgid "Graphics file cannot be opened"
+msgstr "Ní féidir comhad grafach a oscailt"
+
+#: app.src#RID_SVXSTR_GRFILTER_IOERROR.string.text
+msgid "Graphics file cannot be read"
+msgstr "Ní féidir an comhad grafach a léamh"
+
+#: app.src#RID_SVXSTR_GRFILTER_FORMATERROR.string.text
+msgid "Unknown graphics format"
+msgstr "Formáid anaithnid ghrafach"
+
+#: app.src#RID_SVXSTR_GRFILTER_VERSIONERROR.string.text
+msgid "This version of the graphics file is not supported"
+msgstr "Ní thacaítear le comhad grafach den leagan seo"
+
+#: app.src#RID_SVXSTR_GRFILTER_FILTERERROR.string.text
+msgid "Graphics filter not found"
+msgstr "Ní bhfuarthas an scagaire grafach"
+
+#: app.src#RID_SVXSTR_GRFILTER_TOOBIG.string.text
+msgid "Not enough memory to insert graphic"
+msgstr "Ní féidir an ghrafaic a ionsá: cuimhne ídithe"
+
+#: dde.src#MD_DDE_LINKEDIT.FT_DDE_APP.fixedtext.text
+msgid "~Application:"
+msgstr "~Feidhmchlár:"
+
+#: dde.src#MD_DDE_LINKEDIT.FT_DDE_TOPIC.fixedtext.text
+msgid "~File:"
+msgstr "~Comhad:"
+
+#: dde.src#MD_DDE_LINKEDIT.FT_DDE_ITEM.fixedtext.text
+msgid "~Category:"
+msgstr "~Catagóir:"
+
+#: dde.src#MD_DDE_LINKEDIT.GROUP_DDE_CHG.fixedline.text
+msgid "Modify link"
+msgstr "Mionathraigh nasc"
+
+#: dde.src#MD_DDE_LINKEDIT.modaldialog.text
+msgid "Modify Link"
+msgstr "Mionathraigh Nasc"
+
+#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_CONTENTS.pageitem.text
+msgid "Contents"
+msgstr "Clár Ábhair"
+
+#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_INDEX.pageitem.text
+msgid "Index"
+msgstr "Innéacs"
+
+#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_SEARCH.pageitem.text
+msgid "Find"
+msgstr "Aimsigh"
+
+#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_BOOKMARKS.pageitem.text
+msgid "Bookmarks"
+msgstr "Leabharmharcanna"
+
+#: newhelp.src#TP_HELP_INDEX.FT_EXPRESSION.fixedtext.text
+msgid "~Search term"
+msgstr "~Téarma cuardaigh"
+
+#: newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.pushbutton.text
+msgctxt "newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.pushbutton.text"
+msgid "~Display"
+msgstr "~Taispeáin"
+
+#: newhelp.src#TP_HELP_SEARCH.FT_SEARCH.fixedtext.text
+msgid "S~earch term"
+msgstr "Téar~ma cuardaigh"
+
+#: newhelp.src#TP_HELP_SEARCH.PB_SEARCH.pushbutton.text
+msgid "~Find"
+msgstr "~Aimsigh"
+
+#: newhelp.src#TP_HELP_SEARCH.CB_FULLWORDS.checkbox.text
+msgid "~Complete words only"
+msgstr "Fo~cail iomlána amháin"
+
+#: newhelp.src#TP_HELP_SEARCH.CB_SCOPE.checkbox.text
+msgid "Find in ~headings only"
+msgstr "Aimsigh ~sna ceannteidil amháin"
+
+#: newhelp.src#TP_HELP_SEARCH.PB_OPEN_SEARCH.pushbutton.text
+msgctxt "newhelp.src#TP_HELP_SEARCH.PB_OPEN_SEARCH.pushbutton.text"
+msgid "~Display"
+msgstr "~Taispeáin"
+
+#: newhelp.src#TP_HELP_BOOKMARKS.FT_BOOKMARKS.fixedtext.text
+msgid "~Bookmarks"
+msgstr "~Leabharmharcanna"
+
+#: newhelp.src#TP_HELP_BOOKMARKS.PB_BOOKMARKS.pushbutton.text
+msgctxt "newhelp.src#TP_HELP_BOOKMARKS.PB_BOOKMARKS.pushbutton.text"
+msgid "~Display"
+msgstr "~Taispeáin"
+
+#: newhelp.src#STR_HELP_WINDOW_TITLE.string.text
+msgid "%PRODUCTNAME Help"
+msgstr "Cabhair le %PRODUCTNAME"
+
+#: newhelp.src#STR_HELP_BUTTON_INDEX_ON.string.text
+msgid "Show Navigation Pane"
+msgstr "Taispeáin an Painéal Nascleanúna"
+
+#: newhelp.src#STR_HELP_BUTTON_INDEX_OFF.string.text
+msgid "Hide Navigation Pane"
+msgstr "Folaigh an Painéal Nascleanúna"
+
+#: newhelp.src#STR_HELP_BUTTON_START.string.text
+msgid "First Page"
+msgstr "An Chéad Leathanach"
+
+#: newhelp.src#STR_HELP_BUTTON_PREV.string.text
+msgid "Previous Page"
+msgstr "Leathanach Roimhe"
+
+#: newhelp.src#STR_HELP_BUTTON_NEXT.string.text
+msgid "Next Page"
+msgstr "An Chéad Leathanach Eile"
+
+#: newhelp.src#STR_HELP_BUTTON_PRINT.string.text
+msgid "Print..."
+msgstr "Priontáil..."
+
+#: newhelp.src#STR_HELP_BUTTON_ADDBOOKMARK.string.text
+msgid "Add to Bookmarks..."
+msgstr "Cuir leis na Leabharmharcanna..."
+
+#: newhelp.src#STR_HELP_BUTTON_SEARCHDIALOG.string.text
+msgid "Find on this Page..."
+msgstr "Aimsigh sa Leathanach Seo..."
+
+#: newhelp.src#STR_HELP_BUTTON_SOURCEVIEW.string.text
+msgid "HTML Source"
+msgstr "Foinse HTML"
+
+#: newhelp.src#STR_HELP_FIRST_MESSAGE.string.text
+msgid "The Help is being started..."
+msgstr "Cabhair á tosú..."
+
+#: newhelp.src#STR_HELP_MENU_TEXT_SELECTION_MODE.string.text
+msgid "Select Text"
+msgstr "Roghnaigh Téacs"
+
+#: newhelp.src#STR_HELP_MENU_TEXT_COPY.string.text
+msgid "~Copy"
+msgstr "~Cóipeáil"
+
+#: newhelp.src#DLG_HELP_ADDBOOKMARK.FT_BOOKMARK_TITLE.fixedtext.text
+msgid "Bookmark:"
+msgstr "Leabharmharc:"
+
+#: newhelp.src#DLG_HELP_ADDBOOKMARK.STR_BOOKMARK_RENAME.string.text
+msgid "Rename Bookmark"
+msgstr "Athainmnigh Leabharmharc"
+
+#: newhelp.src#DLG_HELP_ADDBOOKMARK.modaldialog.text
+msgid "Add to Bookmarks"
+msgstr "Cuir leis na Leabharmharcanna"
+
+#: newhelp.src#MENU_HELP_BOOKMARKS.MID_OPEN.menuitem.text
+msgid "Display"
+msgstr "Taispeáin"
+
+#: newhelp.src#MENU_HELP_BOOKMARKS.MID_RENAME.menuitem.text
+msgid "Rename..."
+msgstr "Athainmnigh..."
+
+#: newhelp.src#MENU_HELP_BOOKMARKS.MID_DELETE.menuitem.text
+msgid "Delete"
+msgstr "Scrios"
+
+#: newhelp.src#RID_INFO_NOSEARCHRESULTS.infobox.text
+msgid "No topics found."
+msgstr "Níor aimsíodh aon topaic."
+
+#: newhelp.src#RID_INFO_NOSEARCHTEXTFOUND.infobox.text
+msgid "The text you entered was not found."
+msgstr "Níor aimsíodh an téacs a d'iontráil tú."
+
+#: newhelp.src#RID_HELP_ONSTARTUP_TEXT.string.text
+msgid "~Display %PRODUCTNAME %MODULENAME Help at Startup"
+msgstr "~Taispeáin Cabhair le %PRODUCTNAME %MODULENAME ag am tosaithe"
+
+#: sfx.src#STR_ACCTITLE_PRODUCTIVITYTOOLS.string.text
+msgid "%PRODUCTNAME"
+msgstr ""
+
+#~ msgid "Applied Styles"
+#~ msgstr "Stíleanna i bhFeidhm"
+
+#~ msgid "Custom Styles"
+#~ msgstr "Stíleanna Saincheaptha"
+
+#~ msgid "All Styles"
+#~ msgstr "Gach Stíl"
+
+#~ msgid "Cannot open document."
+#~ msgstr "Ní féidir an cháipéis a oscailt."
+
+#~ msgid "Error reading configuration file."
+#~ msgstr "Earráid agus an comhad cumraíochta á léamh."
+
+#~ msgid "Error writing configuration file."
+#~ msgstr "Earráid agus an comhad cumraíochta á scríobh."
+
+#~ msgid "Error opening configuration file."
+#~ msgstr "Earráid agus an comhad cumraíochta á oscailt."
+
+#~ msgid "File is not a configuration file."
+#~ msgstr "Ní comhad cumraíochta é seo."
+
+#~ msgid "Configuration file contains the wrong version."
+#~ msgstr "Tá an leagan mícheart i gcomhad na cumraíochta."
+
+#~ msgid ""
+#~ "Error recording BASIC library in\n"
+#~ "'@'."
+#~ msgstr ""
+#~ "Earráid agus leabharlann BASIC á taifeadadh i\n"
+#~ "'@'."
+
+#~ msgid ""
+#~ "An unexpected program error has occurred.\n"
+#~ "\n"
+#~ "Do you want to try to save your changes in all open documents before the "
+#~ "program is terminated?"
+#~ msgstr ""
+#~ "Tharla earráid gan choinne sa chlár.\n"
+#~ "\n"
+#~ "An bhfuil fonn ort iarracht a dhéanamh na hathruithe i ngach cáipéis atá "
+#~ "oscailte a shábháil sula ndúntar an clár?"
+
+#~ msgid ""
+#~ "A form is to be sent by e-mail.\n"
+#~ "This means that the receiver will get to see your e-mail address."
+#~ msgstr ""
+#~ "Tá foirm le seoladh thar ríomhphost.\n"
+#~ "Ciallaíonn seo go bhfeicfidh an faighteoir do sheoladh ríomhphoist."
+
+#~ msgid "File Recovery"
+#~ msgstr "Athshlánú Comhaid"
+
+#~ msgid "Should the file \"$1\" be restored?"
+#~ msgstr "An bhfuil fonn ort comhad \"$1\" a athchóiriú?"
+
+#~ msgid "General"
+#~ msgstr "Ginearálta"
+
+#~ msgid "Save"
+#~ msgstr "Sábháil"
+
+#~ msgid "Paths"
+#~ msgstr "Conairí"
+
+#~ msgid "Spellcheck"
+#~ msgstr "Seiceáil an litriú"
+
+#~ msgid ""
+#~ "This application is as object or print server active.\n"
+#~ "Do you want to terminate anyway?"
+#~ msgstr ""
+#~ "Tá an feidhmchlár seo gníomhach mar réad nó freastalaí priontála.\n"
+#~ "An bhfuil fonn ort críochnú mar sin féin?"
+
+#~ msgid "%PRODUCTNAME cannot be started more than once."
+#~ msgstr "Ní féidir %PRODUCTNAME a thosú níos mó ná uair amháin."
+
+#~ msgid ""
+#~ "Some %PRODUCTNAME functions will not work properly without a printer driver.\n"
+#~ "Please install a printer driver."
+#~ msgstr ""
+#~ "Ní oibreoidh roinnt gníomhaíochtaí %PRODUCTNAME i gceart gan tiománaí "
+#~ "printéara.\n"
+#~ "Suiteáil tiománaí printéara."
+
+#~ msgid "AutoSave"
+#~ msgstr "Uathshábháil"
+
+#~ msgid ""
+#~ "Limited system resources. Please quit other applications or close some "
+#~ "windows before continuing."
+#~ msgstr ""
+#~ "Acmhainní an chórais teoranta. Scoir d'fheidhmchláir eile nó dún roinnt "
+#~ "fuinneoga sula leanann tú ar aghaidh."
+
+#~ msgid "There are files missing. Please check application setup."
+#~ msgstr "Tá comhaid in easnamh. Seiceáil cumraíocht an fheidhmchláir."
+
+#~ msgid ""
+#~ "Another error occurred during the save recovery.\n"
+#~ "Possibly, the data could not be entirely saved."
+#~ msgstr ""
+#~ "Tharla earráid eile i rith an athshlánaithe sábhála.\n"
+#~ "D'fhéadfaí nár sábháladh an t-eolas ar fad."
+
+#~ msgid "System resources exhausted. Please restart the application."
+#~ msgstr "Tá acmhainní an chórais ídithe. Atosaigh an feidhmchlár le do thoil."
+
+#~ msgid "Error initializing object-system."
+#~ msgstr "Earráid agus an córas réada á thúsú."
+
+#~ msgid "The file $(FILE) doesn't exist."
+#~ msgstr "Níl comhad $(FILE) ann."
+
+#~ msgid "The path to file $(FILE) doesn't exist."
+#~ msgstr "Níl an chonair go $(FILE) ann."
+
+#~ msgid ""
+#~ "The file $(FILE) could not be opened,\n"
+#~ "because too many files are open.\n"
+#~ "Please close some files and try again."
+#~ msgstr ""
+#~ "Níorbh fhéidir comhad $(FILE) a oscailt,\n"
+#~ "mar tá an iomarca comhad ar oscailt cheana féin.\n"
+#~ "Dún roinnt comhad agus bain triail as arís."
+
+#~ msgid "The file $(FILE) could not be opened due to missing access rights."
+#~ msgstr ""
+#~ "Níorbh fhéidir comhad $(FILE) a oscailt mar gheall ar chearta rochtana a "
+#~ "bheith in easnamh."
+
+#~ msgid "The file $(FILE) could not be accessed."
+#~ msgstr "Níorbh fhéidir comhad $(FILE) a rochtain."
+
+#~ msgid "The file $(FILE) could not be opened due to an invalid file handle."
+#~ msgstr ""
+#~ "Níorbh fhéidir comhad $(FILE) a oscailt mar gheall ar chomhadainm "
+#~ "neamhbhailí."
+
+#~ msgid "The file $(FILE) could not be created."
+#~ msgstr "Níorbh fhéidir an comhad $(FILE) a chruthú."
+
+#~ msgid "Error by shared access to $(FILE)."
+#~ msgstr "Earráid trí rochtain ar $(FILE) a bheith roinnte."
+
+#~ msgid "General I/O error accessing $(FILE)."
+#~ msgstr "Earráid ghinearálta I/A agus $(FILE) á rochtain."
+
+#~ msgid "The selected template has an incorrect format"
+#~ msgstr "Formáid mhícheart ar an teimpléad roghnaithe"
+
+#~ msgid "Can't open file $."
+#~ msgstr "Ní féidir comhad $ a oscailt."
+
+#~ msgid "E~xit & return to "
+#~ msgstr "~Scoir agus fill ar "
+
+#~ msgid "Select a command or click to select a theme."
+#~ msgstr "Roghnaigh ordú nó cliceáil chun téama a roghnú."
+
+#~ msgid "Mail"
+#~ msgstr "Post"
+
+#~ msgid "Addresses"
+#~ msgstr "Addresses"
+
+#~ msgid "Don't display tips"
+#~ msgstr "Ná taispeáin leideanna"
+
+#~ msgid "The help system could not be started"
+#~ msgstr "Níorbh fhéidir an córas cabhrach a thosú"
+
+#~ msgid "Enable plug-ins"
+#~ msgstr "Cumasaigh breiseáin"
+
+#~ msgid ""
+#~ "Important program components could not be initialized correctly.\n"
+#~ "Please start the setup program with the option /Repair."
+#~ msgstr ""
+#~ "Níorbh fhéidir comhpháirteanna tábhachtacha den chlár seo a thúsú i gceart.\n"
+#~ "Tosaigh an clár cumraíochta leis an rogha /Deisigh."
+
+#~ msgid "Reference will not be saved: "
+#~ msgstr "Ní shábhálfar an tagairt: "
+
+#~ msgid "Configuration"
+#~ msgstr "Cumraíocht"
+
+#~ msgid "My Documents"
+#~ msgstr "Mo Cháipéisí"
+
+#~ msgid "Graphics"
+#~ msgstr "Grafaic"
+
+#~ msgid "Icons"
+#~ msgstr "Deilbhíní"
+
+#~ msgid "Palettes"
+#~ msgstr "Pailéid"
+
+#~ msgid "Backups"
+#~ msgstr "Cúltacaí"
+
+#~ msgid "Modules"
+#~ msgstr "Modúil"
+
+#~ msgid "AutoText"
+#~ msgstr "UathThéacs"
+
+#~ msgid "Dictionaries"
+#~ msgstr "Foclóirí"
+
+#~ msgid "Gallery"
+#~ msgstr "Gailearaí"
+
+#~ msgid "Message Storage"
+#~ msgstr "Stóráil na dTeachtaireachtaí"
+
+#~ msgid "Temporary files"
+#~ msgstr "Comhaid Shealadacha"
+
+#~ msgid "Plug-ins"
+#~ msgstr "Breiseáin"
+
+#~ msgid "Folder Bookmarks"
+#~ msgstr "Leabharmharcanna Comhad"
+
+#~ msgid "Filters"
+#~ msgstr "Scagairí"
+
+#~ msgid "Add-ins"
+#~ msgstr "Breiseáin"
+
+#~ msgid "User Configuration"
+#~ msgstr "Cumraíocht Úsáideora"
+
+#~ msgid "User-defined dictionaries"
+#~ msgstr "Foclóirí saincheaptha"
+
+#~ msgid "AutoCorrect"
+#~ msgstr "UathCheartaigh"
+
+#~ msgid "Writing aids"
+#~ msgstr "Áiseanna scríbhneoireachta"
+
+#~ msgid "The URL is not valid."
+#~ msgstr "Níl an URL bailí."
+
+#~ msgid "Undo: "
+#~ msgstr "Cealaigh: "
+
+#~ msgid "Re~do: "
+#~ msgstr "~Athdhéan: "
+
+#~ msgid "~Repeat: "
+#~ msgstr "A~rís: "
+
+#~ msgid "New task"
+#~ msgstr "Tasc nua"
+"X-Accelerator-Marker: ~\n"
+
+#: doc.src#MSG_CONFIRM_FILTER.querybox.text
+msgid ""
+"Saving in external formats may have caused\n"
+" information loss. Do you still want to close?"
+msgstr ""
+"D'fhéadfaí gur chailleadh eolas trí shábháil a dhéanamh\n"
+"i bhformáid sheachtrach. An bhfuil fonn ort dúnadh mar sin féin?"
+
+#: doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.querybox.text
+msgid ""
+"Name already in use.\n"
+"Do you want to overwrite document template?"
+msgstr ""
+"Ainm in úsáid cheana féin.\n"
+"An bhfuil fonn ort teimpléad na cáipéise a fhorscríobh?"
+
+#: doc.src#STR_DELETE_REGION.string.text
+msgid "Are you sure you want to delete the region \"$1\"?"
+msgstr "An bhfuil tú cinnte gur mian leat an réigiún \"$1\" a scriosadh?"
+
+#: doc.src#STR_DELETE_TEMPLATE.string.text
+msgid "Are you sure you want to delete the entry \"$1\"?"
+msgstr "An bhfuil tú cinnte gur mian leat an iontráil \"$1\" a scriosadh?"
+
+#: doc.src#MSG_REGION_NOTEMPTY.querybox.text
+msgid ""
+"The category is not empty.\n"
+"Delete anyway?"
+msgstr ""
+"Níl an chatagóir folamh.\n"
+"Scrios mar sin féin?"
+
+#: doc.src#STR_QUERY_SAVE_DOCUMENT.string.text
+msgid ""
+"The document \"$(DOC)\" has been modified.\n"
+"Do you want to save your changes?"
+msgstr ""
+"Athraíodh an cháipéis \"$(DOC)\".\n"
+"An bhfuil fonn ort do chuid athruithe a shábháil?"
+
+#: doc.src#STR_STYLES.string.text
+msgid "Styles"
+msgstr "Stíleanna"
+
+#: doc.src#STR_MACROS.string.text
+msgid "Macros"
+msgstr "Macraí"
+
+#: doc.src#STR_CONFIG.string.text
+msgid "Configuration"
+msgstr "Cumraíocht"
+
+#: doc.src#STR_PRINT_STYLES_HEADER.string.text
+msgid "Styles in "
+msgstr "Stíleanna i "
+
+#: doc.src#STR_PRINT_STYLES.string.text
+msgid "Printing Styles"
+msgstr "Stíleanna Priontála"
+
+#: doc.src#MSG_PRINT_ERROR.errorbox.text
+msgid "The print job could not be started."
+msgstr "Níorbh fhéidir an jab priontála a thosú."
+
+#: doc.src#STR_BACKUP_COPY.string.text
+msgid "Copy"
+msgstr "Cóipeáil"
+
+#: doc.src#MSG_CANT_OPEN_TEMPLATE.infobox.text
+msgid "The template could not be opened."
+msgstr "Níorbh fhéidir an teimpléad a oscailt."
+
+#: doc.src#MSG_VIEW_OPEN_CANT_SAVE.infobox.text
+msgid "Document already open for editing."
+msgstr "Tá an cháipéis oscailte cheana le cur in eagar."
+
+#: doc.src#STR_ERROR_SAVE.string.text
+msgid "Error recording document "
+msgstr "Earráid agus cáipéis á taifeadadh "
+
+#: doc.src#STR_TEMPLATE_FILTER.string.text
+msgctxt "doc.src#STR_TEMPLATE_FILTER.string.text"
+msgid "Templates"
+msgstr "Teimpléid"
+
+#: doc.src#STR_ERROR_COPY_TEMPLATE.string.text
+msgid ""
+"Error copying template \"$1\". \n"
+"A template with this name may already exist."
+msgstr ""
+"Earráid agus teimpléad \"$1\" á chóipeáil. \n"
+"Is féidir go bhfuil teimpléad ann cheana leis an ainm seo."
+
+#: doc.src#STR_ERROR_DELETE_TEMPLATE.string.text
+msgid "The template \"$1\" can not be deleted."
+msgstr "Ní féidir an teimpléad \"$1\" a scriosadh."
+
+#: doc.src#STR_ERROR_MOVE_TEMPLATE.string.text
+msgid "Error moving template \"$1\"."
+msgstr "Earráid agus teimpléad \"$1\" á aistriú."
+
+#: doc.src#MSG_ERROR_RESCAN.errorbox.text
+msgid "The update could not be saved."
+msgstr "Níorbh fhéidir an nuashonrú a shábháil."
+
+#: doc.src#STR_ERROR_SAVE_TEMPLATE.string.text
+msgid "Error saving template "
+msgstr "Earráid agus teimpléad á shábháil "
+
+#: doc.src#MSG_ERROR_RENAME_TEMPLATE.errorbox.text
+msgid "Error renaming template."
+msgstr "Earráid agus teimpléad á athainmniú."
+
+#: doc.src#MSG_ERROR_RENAME_TEMPLATE_REGION.errorbox.text
+msgid "Error renaming template category."
+msgstr "Earráid agus catagóir an teimpléid á hathainmniú."
+
+#: doc.src#MSG_ERROR_EMPTY_NAME.errorbox.text
+msgid "Please specify a name."
+msgstr "Iontráil ainm le do thoil."
+
+#: doc.src#MSG_ERROR_UNIQ_NAME.errorbox.text
+msgid ""
+"Please specify a unique name.\n"
+"Entries must not be case specific."
+msgstr ""
+"Sonraigh ainm faoi leith, le do thoil.\n"
+"Ní gá cás na litreacha a thabhairt san áireamh."
+
+#: doc.src#STR_QUERY_DEFAULT_TEMPLATE.string.text
+msgid "Should the template \"$(TEXT)\" become the default template?"
+msgstr ""
+"An bhfuil fonn ort teimpléad \"$(TEXT)\" a úsáid mar theimpléad "
+"réamhshocraithe?"
+
+#: doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.querybox.text
+msgid "Do you want to reset the default template?"
+msgstr "An bhfuil fonn ort an teimpléad réamhshocraithe a athshocrú?"
+
+#: doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.infobox.text
+msgid ""
+"Template directory\n"
+"$(DIR)\n"
+"does not exist."
+msgstr ""
+"Níl an chomhadlann teimpléid\n"
+"$(DIR)\n"
+"ann."
+
+#: doc.src#MSG_DOCINFO_CANTREAD.infobox.text
+msgid "Document info cannot be read."
+msgstr "Ní féidir an t-eolas faoin cháipéis a léamh."
+
+#: doc.src#STR_ERROR_NOSTORAGE.string.text
+msgid "The selected file has an incorrect format."
+msgstr "Tá formáid mhícheart ag an gcomhad roghnaithe."
+
+#: doc.src#STR_QUERY_MUSTOWNFORMAT.string.text
+msgid ""
+"Documents cannot be saved in $(FORMAT) format. Do you\n"
+"want to save your changes using the $(OWNFORMAT) format?"
+msgstr ""
+"Ní féidir cáipéisí a shábháil san fhormáid $(FORMAT). Ar mhaith\n"
+"leat do chuid athruithe a shábháil san fhormáid $(OWNFORMAT)?"
+
+#: doc.src#STR_SAVEDOC.string.text
+msgid "~Save"
+msgstr "~Sábháil"
+
+#: doc.src#STR_UPDATEDOC.string.text
+msgid "~Update"
+msgstr "N~uashonraigh"
+
+#: doc.src#STR_SAVEASDOC.string.text
+msgid "Save ~As..."
+msgstr "Sábháil ~Mar..."
+
+#: doc.src#STR_SAVECOPYDOC.string.text
+msgid "Save Copy ~as..."
+msgstr "Sábháil Cóip m~ar..."
+
+#: doc.src#STR_CLOSEDOC.string.text
+msgid "~Close"
+msgstr "~Dún"
+
+#: doc.src#STR_CLOSEDOC_ANDRETURN.string.text
+msgid "~Close & Return to "
+msgstr "~Dún agus Fill ar "
+
+#: doc.src#STR_WIZARD.string.text
+msgid " AutoPilot"
+msgstr " UathPhíolóta"
+
+#: doc.src#RID_STR_FILTCONFIG.string.text
+msgid "Configurations"
+msgstr "Cumraíochtaí"
+
+#: doc.src#RID_STR_FILTBASIC.string.text
+msgid "%PRODUCTNAME Basic libraries"
+msgstr "Bunleabharlanna %PRODUCTNAME"
+
+#: doc.src#RID_STR_WARNSTYLEOVERWRITE.string.text
+msgid "Should the \"$(ARG1)\" Style be replaced?"
+msgstr "An bhfuil fonn ort stíl \"$(ARG1)\" a ionadú?"
+
+#: doc.src#STR_DOC_LOADING.string.text
+msgid "Loading Document"
+msgstr "Cáipéis á Luchtú"
+
+#: doc.src#RID_DLSTATUS.INET_NAME_RESOLVE_START.string.text
+msgid "Connection to: $(HOST). Waiting for response..."
+msgstr "Ceangal le: $(HOST). Ag feitheamh le freagra..."
+
+#: doc.src#RID_DLSTATUS.INET_CONNECT_START.string.text
+msgid "Opening $(TARGET) at $(HOST)"
+msgstr "$(TARGET) á oscailt ag $(HOST)"
+
+#: doc.src#RID_DLSTATUS.INET_READ_STATUS.string.text
+msgid "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
+msgstr "Á Luchtú: $(TARGET) ó $(HOST). Luchtaithe: $(BYTE)"
+
+#: doc.src#RID_DLSTATUS.INET_CONNECTION_CLOSED.string.text
+msgid "Disconnected"
+msgstr "Dícheangailte"
+
+#: doc.src#MSG_OPEN_READONLY.querybox.text
+msgid ""
+"Document cannot be opened for editing.\n"
+"Do you want to open it as read-only?"
+msgstr ""
+"Ní féidir an cháipéis a oscailt chun é a chur in eagar.\n"
+"An bhfuil fonn ort é a oscailt sa mhód inléite amháin?"
+
+#: doc.src#STR_EDIT.string.text
+msgid "Edit"
+msgstr "Eagar"
+
+#: doc.src#RID_OFFICEFILTER.string.text
+msgid "%PRODUCTNAME Documents"
+msgstr "Cáipéisí %PRODUCTNAME"
+
+#: doc.src#STR_FRAMEOBJECT_PROPERTIES.string.text
+msgid "Propert~ies..."
+msgstr "A~iríonna..."
+
+#: doc.src#STR_FSET_FILTERNAME0.string.text
+msgid "HTML (FrameSet)"
+msgstr "HTML (Frámadán)"
+
+#: doc.src#STR_FSET_FILTERNAME1.string.text
+msgid "%PRODUCTNAME Frame Document"
+msgstr "Cáipéis Fhráma %PRODUCTNAME"
+
+#: doc.src#STR_TEMPL_MOVED.string.text
+msgid ""
+"The template \"$(TEMPLATE)\" was not found at the original location. A "
+"template with the same name exists at \"$(FOUND)\". Should this template be "
+"used in the future when comparing?"
+msgstr ""
+"Níor aimsíodh teimpléad \"$(TEMPLATE)\" sa bhunáit. Is ann do theimpléad den "
+"ainm céanna ag \"$(FOUND)\". Ar cheart an teimpléad seo a úsáid as seo amach "
+"nuair atáthar ag comparáidiú?"
+
+#: doc.src#STR_TEMPL_RESET.string.text
+msgid ""
+"The template \"$(TEMPLATE)\" has not been found. Should the template be looked "
+"for the next time the document is opened ?"
+msgstr ""
+"Níor aimsíodh teimpléad \"$(TEMPLATE)\". Ar cheart é a lorg nuair a osclófar "
+"an cháipéis an chéad uair eile ?"
+
+#: doc.src#STR_AUTOMATICVERSION.string.text
+msgid "Automatically saved version"
+msgstr "Leagan a sábháladh go huathoibríoch"
+
+#: doc.src#STR_DOCTYPENAME_SW.string.text
+msgid "Text Document"
+msgstr "Cáipéis Téacs"
+
+#: doc.src#STR_DOCTYPENAME_SWWEB.string.text
+msgid "HTML Document"
+msgstr "Cáipéis HTML"
+
+#: doc.src#STR_DOCTYPENAME_SWGLOB.string.text
+msgid "Master Document"
+msgstr "Máistircháipéis"
+
+#: doc.src#STR_DOCTYPENAME_SC.string.text
+msgid "Spreadsheet"
+msgstr "Scarbhileog"
+
+#: doc.src#STR_DOCTYPENAME_SI.string.text
+msgid "Presentation"
+msgstr "Láithreoireacht"
+
+#: doc.src#STR_DOCTYPENAME_SD.string.text
+msgid "Drawing"
+msgstr "Líníocht"
+
+#: doc.src#STR_DOCTYPENAME_MESSAGE.string.text
+msgid "Message"
+msgstr "Teachtaireacht"
+
+#: doc.src#STR_NOSAVEANDCLOSE.string.text
+msgid "~Discard"
+msgstr "~Ná Sábháil"
+
+#: doc.src#STR_PACKNGO_NOACCESS.string.text
+msgid "Access to the current data medium not possible."
+msgstr "Níorbh fhéidir an meán sonraí reatha a rochtain."
+
+#: doc.src#STR_PACKNGO_NEWMEDIUM.string.text
+msgid "Insert the next data carrier and click OK."
+msgstr "Ionsáigh an chéad iompróir sonraí eile agus cliceáil OK."
+
+#: doc.src#STR_OBJECT.string.text
+msgid "Object"
+msgstr "Réad"
+
+#: doc.src#DLG_MACROQUERY.querybox.text
+msgid "This document contains macros. $(TEXT)"
+msgstr "Tá macraí sa cháipéis seo. $(TEXT)"
+
+#: doc.src#DLG_MACROQUERY.querybox.title
+msgid "Run Macro"
+msgstr "Rith Macra"
+
+#: doc.src#BTN_OK.string.text
+msgid "Run"
+msgstr "Rith"
+
+#: doc.src#BTN_CANCEL.string.text
+msgid "Do Not Run"
+msgstr "Ná Rith"
+
+#: doc.src#FT_CANCEL.string.text
+msgid ""
+"According to the security settings, the macros in this document should not "
+"be run. Do you want to run them anyway?"
+msgstr ""
+"De réir na socruithe slándála, ní chóir duit na macraí sa cháipéis seo a "
+"rith. An bhfuil fonn ort iad a rith mar sin féin?"
+
+#: doc.src#FT_OK.string.text
+msgid "Do you want to allow these macros to be run?"
+msgstr "An bhfuil fonn ort na macraí seo a rith?"
+
+#: doc.src#STR_EXPORTASPDF_TITLE.string.text
+msgid "Export as PDF"
+msgstr "Easpórtáil mar PDF"
+
+#: doc.src#STR_EXPORTWITHCFGBUTTON.string.text
+msgid "Export..."
+msgstr "Easpórtáil..."
+
+#: doc.src#STR_EXPORTBUTTON.string.text
+msgid "Export"
+msgstr "Easpórtáil"
+
+#: doc.src#RID_SVXSTR_SECURITY_ADDPATH.string.text
+msgid "Add this directory to the list of secure paths: "
+msgstr "Cuir an chomhadlann seo leis an liosta de chonairí daingne: "
+
+#: doc.src#STR_LABEL_FILEFORMAT.string.text
+msgid "File format:"
+msgstr "Formáid chomhaid:"
+
+#: doc.src#STR_HIDDENINFO_CONTAINS.string.text
+msgid ""
+"This document contains:\n"
+"\n"
+msgstr ""
+"Tá :\n"
+"sa cháipéis seo\n"
+
+#: doc.src#STR_HIDDENINFO_RECORDCHANGES.string.text
+msgid "Recorded changes"
+msgstr "Taifeadadh na hathruithe"
+
+#: doc.src#STR_HIDDENINFO_NOTES.string.text
+msgid "Notes"
+msgstr "Nótaí"
+
+#: doc.src#STR_HIDDENINFO_DOCVERSIONS.string.text
+msgid "Document versions"
+msgstr "Leaganacha na cáipéise"
+
+#: doc.src#STR_HIDDENINFO_FIELDS.string.text
+msgid "Fields"
+msgstr "Réimsí"
+
+#: doc.src#STR_HIDDENINFO_LINKDATA.string.text
+msgid "Linked data..."
+msgstr "Sonraí nasctha..."
+
+#: doc.src#STR_HIDDENINFO_CONTINUE_SAVING.string.text
+msgid "Do you want to continue saving the document?"
+msgstr "An bhfuil fonn ort leanúint ar aghaidh le sábháil?"
+
+#: doc.src#STR_HIDDENINFO_CONTINUE_PRINTING.string.text
+msgid "Do you want to continue printing the document?"
+msgstr "An bhfuil fonn ort leanúint ar aghaidh le priontáil na cáipéise?"
+
+#: doc.src#STR_HIDDENINFO_CONTINUE_SIGNING.string.text
+msgid "Do you want to continue signing the document?"
+msgstr "An bhfuil fonn ort leanúint ar aghaidh le síniú na cáipéise?"
+
+#: doc.src#STR_HIDDENINFO_CONTINUE_CREATEPDF.string.text
+msgid "Do you want to continue creating a PDF file?"
+msgstr "An bhfuil fonn ort leanúint ar aghaidh le cruthú comhaid PDF?"
+
+#: doc.src#STR_NEW_FILENAME_SAVE.string.text
+msgid ""
+"If you do not want to overwrite the original document, you should save your "
+"work under a new filename."
+msgstr ""
+"Mura mian leat an bhuncháipéis a fhorscríobh, ba chóir duit do chuid oibre a "
+"shábháil i gcomhad nua."
+
+#: doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.string.text
+msgid "Some template files are protected and can not be deleted."
+msgstr "Tá roinnt teimpléad cosanta agus ní féidir iad a scrios."
+
+#: doc.src#STR_DOCINFO_INFOFIELD.string.text
+msgid "Info %1"
+msgstr "Eolas %1"
+
+#: doc.src#STR_SHARED.string.text
+msgid " (shared)"
+msgstr " (comhroinnte)"
+
+#: doc.src#STR_XMLSEC_ODF12_EXPECTED.string.text
+msgid ""
+"The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-"
+"Options-Load/Save-General. Signing documents requires ODF 1.2 "
+"(OpenOffice.org 3.x)."
+msgstr ""
+"Is é ODF 1.1 (OpenOffice.org 2.x) leagan formáide na cáipéise faoi Uirlis"
+"í-Roghanna-Luchtaigh/Sábháil-Ginearálta.  Tá ODF 1.2 (OpenOffice.org 3.x) de "
+"dhíth ort chun cáipéisí a shíniú."
+
+#: doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.querybox.text
+msgid ""
+"The document has to be saved before it can be signed. Saving the document "
+"removes all present signatures.\n"
+"Do you want to save the document?"
+msgstr ""
+"Ní mór an cháipéis a shábháil sula mbeifear in ann é a shíniú. Bainfear gach "
+"síniú atá sa cháipéis faoi láthair nuair a shábhálfaidh tú í.\n"
+"An bhfuil fonn ort an cháipéis a shábháil?"
+
+#: doc.src#STR_QRYTEMPL_MESSAGE.string.text
+msgid ""
+"The template '$(ARG1)' on which this document is based, has been modified. "
+"Do you want to update style based formattings according to the modified "
+"template?"
+msgstr ""
+"Athraíodh teimpléad '$(ARG1)', a bhfuil an cháipéis seo bunaithe air.  An "
+"bhfuil fonn ort formáidiú stíleanna a nuashonrú de réir an teimpléid "
+"athraithe?"
+
+#: doc.src#STR_QRYTEMPL_UPDATE_BTN.string.text
+msgid "~Update Styles"
+msgstr "N~uashonraigh Stíleanna"
+
+#: doc.src#STR_QRYTEMPL_KEEP_BTN.string.text
+msgid "~Keep Old Styles"
+msgstr "~Coinnigh Seanstíleanna"
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.FL_EDIT.fixedline.text
+msgid "New template"
+msgstr "Teimpléad nua"
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.fixedline.text
+msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.fixedline.text"
+msgid "Templates"
+msgstr "Teimpléid"
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.fixedtext.text
+msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.fixedtext.text"
+msgid "~Categories"
+msgstr "~Catagóirí"
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.FT_STYLESHEETS.fixedtext.text
+msgid "~Templates"
+msgstr "~Teimpléid"
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.pushbutton.text
+msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.pushbutton.text"
+msgid "~Edit"
+msgstr "~Eagar"
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.BT_ORGANIZE.pushbutton.text
+msgid "~Organizer..."
+msgstr "~Eagraí..."
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.modaldialog.text
+msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.modaldialog.text"
+msgid "Templates"
+msgstr "Teimpléid"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.1.itemlist.text
+msgid "My Templates"
+msgstr "Mo chuid Teimpléid"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.2.itemlist.text
+msgid "Business Correspondence"
+msgstr "Comhfhreagras Gnó"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.3.itemlist.text
+msgid "Other Business Documents"
+msgstr "Cáipéisí Ghnó Eile"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.4.itemlist.text
+msgid "Personal Correspondence and Documents"
+msgstr "Comhfhreagras Pearsanta agus Cáipéisí"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.5.itemlist.text
+msgid "Forms and Contracts"
+msgstr "Foirmeacha agus Conarthaí"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.6.itemlist.text
+msgid "Finances"
+msgstr "Airgeadas"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.7.itemlist.text
+msgid "Education"
+msgstr "Oideachas"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.8.itemlist.text
+msgid "Presentation Backgrounds"
+msgstr "Cúlraí Láithreoireachta"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.9.itemlist.text
+msgid "Presentations"
+msgstr "Láithreoireachtaí"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.10.itemlist.text
+msgid "Miscellaneous"
+msgstr "Rudaí éagsúla"
+
+#: doctempl.src#RID_CNT_STR_WAITING.string.text
+msgid "The templates are being initialized for first-time usage."
+msgstr "Tá na teimpléid á dtúsú le húsáid den chéad uair."
+
+#: docvor.src#DLG_ORGANIZE.BTN_OK.okbutton.text
+msgid "Close"
+msgstr "Dún"
+
+#: docvor.src#DLG_ORGANIZE.BTN_FILES.pushbutton.text
+msgid "~File..."
+msgstr "~Comhad..."
+
+#: docvor.src#DLG_ORGANIZE.BTN_ADDRESSTEMPLATE.pushbutton.text
+msgid "~Address Book..."
+msgstr "Le~abhar Seoltaí..."
+
+#: docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.1.stringlist.text
+msgctxt "docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.1.stringlist.text"
+msgid "Templates"
+msgstr "Teimpléid"
+
+#: docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.2.stringlist.text
+msgctxt "docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.2.stringlist.text"
+msgid "Documents"
+msgstr "Cáipéisí"
+
+#: docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.1.stringlist.text
+msgctxt "docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.1.stringlist.text"
+msgid "Templates"
+msgstr "Teimpléid"
+
+#: docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.2.stringlist.text
+msgctxt "docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.2.stringlist.text"
+msgid "Documents"
+msgstr "Cáipéisí"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_NEW.menuitem.text
+msgid "~New"
+msgstr "~Nua"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DELETE.menuitem.text
+msgid "~Delete"
+msgstr "~Scrios"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.menuitem.text
+msgctxt "docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.menuitem.text"
+msgid "~Edit"
+msgstr "~Eagar"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_FROM.menuitem.text
+msgid "Import Template..."
+msgstr "Iompórtáil Teimpléad..."
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_TO.menuitem.text
+msgid "Export Template..."
+msgstr "Easpórtáil Teimpléad..."
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINT.menuitem.text
+msgid "~Print"
+msgstr "~Priontáil"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINTER_SETUP.menuitem.text
+msgid "Printer Settings..."
+msgstr "Socruithe Phriontála..."
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESCAN.menuitem.text
+msgid "Update"
+msgstr "Nuashonraigh"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DEFAULT_TEMPLATE.menuitem.text
+msgid "Set As Default Template"
+msgstr "Socraigh mar an teimpléad réamhshocraithe"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESET_DEFAULT_TEMPLATE.menuitem.text
+msgid "Reset Default Template"
+msgstr "Athshocraigh go dtí an Teimpléad Réamhshocraithe"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.menubutton.text
+msgid "Commands"
+msgstr "Orduithe"
+
+#: docvor.src#DLG_ORGANIZE.modaldialog.text
+msgid "Template Management"
+msgstr "Bainistiú na dTeimpléad"
+
+#: new.src#DLG_NEW_FILE.FT_REGION.fixedtext.text
+msgctxt "new.src#DLG_NEW_FILE.FT_REGION.fixedtext.text"
+msgid "~Categories"
+msgstr "~Catagóirí"
+
+#: new.src#DLG_NEW_FILE.FT_TEMPLATE.fixedtext.text
+msgid "T~emplates"
+msgstr "T~eimpléid"
+
+#: new.src#DLG_NEW_FILE.BT_MORE.morebutton.text
+msgid "~More"
+msgstr "~Tuilleadh"
+
+#: new.src#DLG_NEW_FILE.BTN_PREVIEW.checkbox.text
+msgid "Pre~view"
+msgstr "Réamha~mharc"
+
+#: new.src#DLG_NEW_FILE.GB_DOCINFO.fixedline.text
+msgid "Description"
+msgstr "Cur Síos"
+
+#: new.src#DLG_NEW_FILE.CB_TEXT_STYLE.checkbox.text
+msgid "Te~xt"
+msgstr "Téa~cs"
+
+#: new.src#DLG_NEW_FILE.CB_FRAME_STYLE.checkbox.text
+msgid "~Frame"
+msgstr "~Fráma"
+
+#: new.src#DLG_NEW_FILE.CB_PAGE_STYLE.checkbox.text
+msgid "~Pages"
+msgstr "~Leathanaigh"
+
+#: new.src#DLG_NEW_FILE.CB_NUM_STYLE.checkbox.text
+msgid "N~umbering"
+msgstr "~Uimhriú"
+
+#: new.src#DLG_NEW_FILE.CB_MERGE_STYLE.checkbox.text
+msgid "~Overwrite"
+msgstr "F~orscríobh"
+
+#: new.src#DLG_NEW_FILE.PB_LOAD_FILE.pushbutton.text
+msgid "From File..."
+msgstr "Ó Chomhad..."
+
+#: new.src#DLG_NEW_FILE.STR_LOAD_TEMPLATE.string.text
+msgid "Load Styles"
+msgstr "Luchtaigh Stíleanna"
+
+#: new.src#DLG_NEW_FILE.FT_TITLE.fixedtext.text
+msgid "~Title"
+msgstr "~Teideal"
+
+#: new.src#DLG_NEW_FILE.FT_THEMA.fixedtext.text
+msgid "Subject"
+msgstr "Ábhar"
+
+#: new.src#DLG_NEW_FILE.FT_KEYWORDS.fixedtext.text
+msgid "~Key words"
+msgstr "~Lorgfhocail"
+
+#: new.src#DLG_NEW_FILE.FT_DESC.fixedtext.text
+msgid "~Description"
+msgstr "~Cur Síos"
+
+#: new.src#DLG_NEW_FILE.modaldialog.text
+msgid "New"
+msgstr "Nua"
+
+#~ msgid ""
+#~ "The Styles in this document do not match your current Styles. Should your "
+#~ "current Styles be applied to this document?"
+#~ msgstr ""
+#~ "Ní hionann na stíleanna sa cháipéis seo agus do stíleanna reatha.  Ar cheart "
+#~ "do stíleanna reatha a leagan air?"
+"X-Accelerator-Marker: ~\n"
+
+#: alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.fixedtext.text
+msgid ""
+"This document may contain formatting or content that cannot be saved in the "
+"%FORMATNAME file format. Do you want to save the document in this format "
+"anyway?\n"
+"\n"
+"Use the latest ODF file format and be sure all formatting and content is "
+"saved correctly."
+msgstr ""
+"D'fhéadfaí inneachar a bheith sa cháipéis seo nach féidir a shábháil i "
+"bhformáid %FORMATNAME. An bhfuil tú cinnte gur maith leat an cháipéis a "
+"shábháil san fhormáid seo mar sin féin?\n"
+"\n"
+"Bain úsáid as an bhformáid ODF is déanaí chun cinntiú go sábhálfar i gceart "
+"gach formáidiú agus inneachar."
+
+#: alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.okbutton.text
+msgid "~Keep Current Format"
+msgstr "~Coinnigh an Fhormáid Reatha"
+
+#: alienwarn.src#RID_DLG_ALIEN_WARNING.PB_YES.cancelbutton.text
+msgid "~Save in ODF Format"
+msgstr "~Sábháil i bhFormáid ODF"
+
+#: alienwarn.src#RID_DLG_ALIEN_WARNING.PB_MOREINFO.helpbutton.text
+msgid "~More Information..."
+msgstr "~Tuilleadh Eolais..."
+
+#: alienwarn.src#RID_DLG_ALIEN_WARNING.CB_WARNING_OFF.checkbox.text
+msgid "~Ask when not saving in ODF format"
+msgstr "Fi~afraigh roimh shábháil i bhformáid ODF"
+
+#: dialog.src#STR_RESET.string.text
+msgid "~Reset"
+msgstr "Athshoc~raigh"
+
+#: dialog.src#STR_APPLY.string.text
+msgid "Apply"
+msgstr "Cuir i bhFeidhm"
+
+#: dialog.src#STR_TABPAGE_MANAGESTYLES.string.text
+msgid "Organizer"
+msgstr "Eagraí"
+
+#: dialog.src#MSG_TABPAGE_INVALIDNAME.infobox.text
+msgid "This name is already in use."
+msgstr "Tá an t-ainm seo in úsáid cheana."
+
+#: dialog.src#MSG_TABPAGE_INVALIDSTYLE.infobox.text
+msgid "This Style does not exist."
+msgstr "Níl an Stíl seo ann."
+
+#: dialog.src#MSG_TABPAGE_INVALIDPARENT.infobox.text
+msgid ""
+"This Style cannot be used as a base Style,\n"
+"because it would result in a recursive reference."
+msgstr ""
+"Ní féidir an stíl seo a úsáid mar bhunstíl,\n"
+"toisc go mbeadh tagairt athchúrsach ann."
+
+#: dialog.src#MSG_POOL_STYLE_NAME.infobox.text
+msgid ""
+"Name already exists as a default Style.\n"
+"Please choose another name."
+msgstr ""
+"Tá an t-ainm ann cheana mar Stíl réamhshocraithe.\n"
+"Roghnaigh ainm eile le do thoil."
+
+#: dialog.src#STR_DELETE_STYLE.string.text
+msgid "Do you really want to delete Style $1?"
+msgstr "An bhfuil tú cinnte gur mhaith leat Stíl $1 a scriosadh?"
+
+#: dialog.src#STR_DELETE_STYLE_USED.string.text
+msgid "You are deleting an applied Style!\n"
+msgstr "Tá tú ar tí Stíl a scriosadh atá i bhfeidhm!\n"
+
+#: dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.menuitem.text
+msgid "New..."
+msgstr "Nua..."
+
+#: dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.menuitem.text
+msgid "Modify..."
+msgstr "Mionathraigh..."
+
+#: dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.menuitem.text
+msgid "Delete..."
+msgstr "Scrios..."
+
+#: dialog.src#SID_NAVIGATOR.string.text
+msgid "Navigator"
+msgstr "Nascleantóir"
+
+#: dialog.src#SID_TASKPANE.string.text
+msgid "Task Pane"
+msgstr "Pána na Tascanna"
+
+#: dialog.src#MSG_ERROR_WRONG_CONFIRM.errorbox.text
+msgid "Faulty password confirmation"
+msgstr "Dearbhú lochtach focail fhaire"
+
+#: dialog.src#STR_PDF_EXPORT_SEND.string.text
+msgid "Send"
+msgstr "Seol"
+
+#: dinfdlg.src#STR_SFX_NEWOFFICEDOC.string.text
+msgid "%PRODUCTNAME document"
+msgstr "Cáipéis %PRODUCTNAME"
+
+#: dinfdlg.src#TP_DOCINFODESC.FT_TITLE.fixedtext.text
+msgid "~Title"
+msgstr "~Teideal"
+
+#: dinfdlg.src#TP_DOCINFODESC.FT_THEMA.fixedtext.text
+msgid "~Subject"
+msgstr "Á~bhar"
+
+#: dinfdlg.src#TP_DOCINFODESC.FT_KEYWORDS.fixedtext.text
+msgid "~Keywords"
+msgstr "~Lorgfhocail"
+
+#: dinfdlg.src#TP_DOCINFODESC.FT_COMMENT.fixedtext.text
+msgid "~Comments"
+msgstr "~Nótaí"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.fixedtext.text
+msgid "Type:"
+msgstr "Cineál:"
+
+#: dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.checkbox.text
+msgctxt "dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.checkbox.text"
+msgid "~Read-only"
+msgstr "~Inléite amháin"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_FILE.fixedtext.text
+msgid "Location:"
+msgstr "Suíomh:"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_FILE_SIZE.fixedtext.text
+msgid "Size:"
+msgstr "Méid:"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_CREATE.fixedtext.text
+msgid "Created:"
+msgstr "Cruthaithe:"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_CHANGE.fixedtext.text
+msgid "Modified:"
+msgstr "Athraithe:"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_SIGNED.fixedtext.text
+msgid "Digitally signed:"
+msgstr "Sínithe go digiteach:"
+
+#: dinfdlg.src#TP_DOCINFODOC.BTN_SIGNATURE.pushbutton.text
+msgid "Digital Signature..."
+msgstr "Síniú Digiteach..."
+
+#: dinfdlg.src#TP_DOCINFODOC.STR_MULTSIGNED.string.text
+msgid "Multiply signed document"
+msgstr "Cáipéis ilsínithe"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_PRINT.fixedtext.text
+msgid "Last printed:"
+msgstr "Priontáilte:"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_TIMELOG.fixedtext.text
+msgid "Total editing time:"
+msgstr "Am iomlán eagair:"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_DOCNO.fixedtext.text
+msgid "Revision number:"
+msgstr "Leasú:"
+
+#: dinfdlg.src#TP_DOCINFODOC.BTN_DELETE.pushbutton.text
+msgid "Reset"
+msgstr "Athshocraigh"
+
+#: dinfdlg.src#TP_DOCINFODOC.CB_USE_USERDATA.checkbox.text
+msgid "~Apply user data"
+msgstr "~Cuir sonraí úsáideora i bhfeidhm"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_TEMPL.fixedtext.text
+msgid "Template:"
+msgstr "Teimpléad:"
+
+#: dinfdlg.src#TP_DOCINFODOC.STR_UNKNOWNSIZE.string.text
+msgid "unknown"
+msgstr "anaithnid"
+
+#: dinfdlg.src#TP_DOCINFODOC.EDIT_FILE_NAME.string.text
+msgid "File Name"
+msgstr ""
+
+#: dinfdlg.src#TP_DOCINFOUSER.BTN_EDITLABEL.pushbutton.text
+msgid "~Info fields..."
+msgstr "Ré~imsí eolais..."
+
+#: dinfdlg.src#TP_DOCINFORELOAD.RB_NOAUTOUPDATE.radiobutton.text
+msgid "Do not refresh automatically"
+msgstr "Ná hathnuaigh go huathoibríoch"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.RB_RELOADUPDATE.radiobutton.text
+msgid "Refresh this document"
+msgstr "Athnuaigh an cháipéis seo"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.FT_EVERY.fixedtext.text
+msgid "every"
+msgstr "gach"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.fixedtext.text
+msgctxt "dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.fixedtext.text"
+msgid "seconds"
+msgstr "soicind"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.RB_FORWARDUPDATE.radiobutton.text
+msgid "Redirect from this document"
+msgstr "Atreoraigh ón cháipéis seo"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.fixedtext.text
+msgid "after"
+msgstr "tar éis"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.fixedtext.text
+msgctxt "dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.fixedtext.text"
+msgid "seconds"
+msgstr "soicind"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.FT_URL.fixedtext.text
+msgid "to URL"
+msgstr "go URL"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.FT_FRAME.fixedtext.text
+msgid "to frame"
+msgstr "go fráma"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.STR_FORWARD_ERRMSSG.string.text
+msgid "If you select the option \"%PLACEHOLDER%\", you must enter a URL."
+msgstr "Má tá \"%PLACEHOLDER%\" roghnaithe agat, caithfidh tú URL a iontráil."
+
+#: dinfdlg.src#TP_CUSTOMPROPERTIES.FT_PROPERTIES.fixedtext.text
+msgid "~Properties"
+msgstr "~Airíonna"
+
+#: dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.string.text
+msgid "Name"
+msgstr "Ainm"
+
+#: dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.string.text
+msgid "Type"
+msgstr "Cineál"
+
+#: dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_VALUE.string.text
+msgid "Value"
+msgstr "Luach"
+
+#: dinfdlg.src#TP_CUSTOMPROPERTIES.BTN_ADD.pushbutton.text
+msgid "~Add"
+msgstr "~Cuir Leis"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.combobox.text
+msgctxt "dinfdlg.src#SFX_CB_PROPERTY_NAME.combobox.text"
+msgid "-"
+msgstr "-"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.combobox.quickhelptext
+msgid "Property Name"
+msgstr "Ainm an Airí"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.1.stringlist.text
+msgid "Checked by"
+msgstr "Deimhnithe ag"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.2.stringlist.text
+msgid "Client"
+msgstr "Cliant"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.3.stringlist.text
+msgid "Date completed"
+msgstr "Dáta críochnaithe"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.4.stringlist.text
+msgid "Department"
+msgstr "Roinn"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.5.stringlist.text
+msgid "Destinations"
+msgstr "Spriocanna"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.6.stringlist.text
+msgid "Disposition"
+msgstr "Socraíocht"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.7.stringlist.text
+msgid "Division"
+msgstr "Rannán"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.8.stringlist.text
+msgid "Document number"
+msgstr "Uimhir na cáipéise"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.9.stringlist.text
+msgid "Editor"
+msgstr "Eagarthóir"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.10.stringlist.text
+msgid "E-Mail"
+msgstr "R-Phost"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.11.stringlist.text
+msgid "Forward to"
+msgstr "Cuir ar aghaidh chuig"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.12.stringlist.text
+msgid "Group"
+msgstr "Grúpa"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.13.stringlist.text
+msgid "Info"
+msgstr "Eolas"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.14.stringlist.text
+msgid "Language"
+msgstr "Teanga"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.15.stringlist.text
+msgid "Mailstop"
+msgstr "Stad poist"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.16.stringlist.text
+msgid "Matter"
+msgstr "Ábhar"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.17.stringlist.text
+msgid "Office"
+msgstr "Oifig"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.18.stringlist.text
+msgid "Owner"
+msgstr "Úinéir"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.19.stringlist.text
+msgid "Project"
+msgstr "Tionscadal"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.20.stringlist.text
+msgid "Publisher"
+msgstr "Foilsitheoir"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.21.stringlist.text
+msgid "Purpose"
+msgstr "Aidhm"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.22.stringlist.text
+msgid "Received from"
+msgstr "Faighte ó"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.23.stringlist.text
+msgid "Recorded by"
+msgstr "Taifeadta ag"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.24.stringlist.text
+msgid "Recorded date"
+msgstr "Dáta a taifeadadh"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.25.stringlist.text
+msgid "Reference"
+msgstr "Tagairt"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.26.stringlist.text
+msgid "Source"
+msgstr "Foinse"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.27.stringlist.text
+msgid "Status"
+msgstr "Stádas"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.28.stringlist.text
+msgid "Telephone number"
+msgstr "Uimhir theileafóin"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.29.stringlist.text
+msgid "Typist"
+msgstr "Clóscríobhaí"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.30.stringlist.text
+msgid "URL"
+msgstr "URL"
+
+#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.1.stringlist.text
+msgid "Text"
+msgstr "Téacs"
+
+#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.2.stringlist.text
+msgid "DateTime"
+msgstr "Dáta/Am"
+
+#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.3.stringlist.text
+msgid "Date"
+msgstr "Dáta"
+
+#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.4.stringlist.text
+msgctxt "dinfdlg.src#SFX_LB_PROPERTY_TYPE.4.stringlist.text"
+msgid "Duration"
+msgstr "Fad Ama"
+
+#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.5.stringlist.text
+msgid "Number"
+msgstr "Uimhir"
+
+#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.6.stringlist.text
+msgid "Yes or no"
+msgstr "Tá nó níl"
+
+#: dinfdlg.src#SFX_ST_DURATION_FORMAT.string.text
+msgid " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
+msgstr " B: %1 M: %2 L: %3 U: %4 N: %5 S: %6"
+
+#: dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.radiobutton.text
+msgid "Yes"
+msgstr "Tá"
+
+#: dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_NO.radiobutton.text
+msgid "No"
+msgstr "Níl"
+
+#: dinfdlg.src#SFX_PB_PROPERTY_REMOVE.imagebutton.text
+msgctxt "dinfdlg.src#SFX_PB_PROPERTY_REMOVE.imagebutton.text"
+msgid "-"
+msgstr "-"
+
+#: dinfdlg.src#SFX_PB_PROPERTY_REMOVE.imagebutton.quickhelptext
+msgid "Remove Property"
+msgstr "Bain an tAirí"
+
+#: dinfdlg.src#SFX_QB_WRONG_TYPE.querybox.text
+msgid ""
+"The value entered does not match the specified type.\n"
+"The value will be stored as text."
+msgstr ""
+"Níl an luach a iontráladh comhoiriúnach don chineál roghnaithe.\n"
+"Stórálfar an luach mar ghnáth-théacs."
+
+#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.pageitem.text
+msgid "General"
+msgstr "Ginearálta"
+
+#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.pageitem.text
+msgid "Description"
+msgstr "Cur Síos"
+
+#: dinfdlg.src#SID_DOCINFO.1.TP_CUSTOMPROPERTIES.pageitem.text
+msgid "Custom Properties"
+msgstr "Airíonna Saincheaptha"
+
+#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.pageitem.text
+msgid "Internet"
+msgstr "Idirlíon"
+
+#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFOSECURITY.pageitem.text
+msgid "Security"
+msgstr "Slándáil"
+
+#: dinfdlg.src#SID_DOCINFO.tabdialog.text
+msgid "Properties of "
+msgstr "Airíonna do "
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FL_DURATION.fixedline.text
+msgctxt "dinfdlg.src#RID_EDIT_DURATIONS.FL_DURATION.fixedline.text"
+msgid "Duration"
+msgstr "Fad Ama"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.CB_NEGATIVE.checkbox.text
+msgid "~Negative"
+msgstr "~Diúltach"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_YEAR.fixedtext.text
+msgid "~Years"
+msgstr "~Blianta"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_MONTH.fixedtext.text
+msgid "~Months"
+msgstr "~Míonna"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_DAY.fixedtext.text
+msgid "~Days"
+msgstr "~Laethanta"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_HOUR.fixedtext.text
+msgid "H~ours"
+msgstr "~Uaireanta"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_MINUTE.fixedtext.text
+msgid "Min~utes"
+msgstr "~Nóiméid"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_SECOND.fixedtext.text
+msgid "~Seconds"
+msgstr "~Soicindí"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_MSECOND.fixedtext.text
+msgid "Millise~conds"
+msgstr "Milleasoi~cindí"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.modaldialog.text
+msgid "Edit Duration"
+msgstr "Cuir Fad Ama in Eagar"
+
+#: dinfedt.src#DLG_DOCINFO_EDT.FL_INFO.fixedline.text
+msgid "Names"
+msgstr "Ainmneacha"
+
+#: dinfedt.src#DLG_DOCINFO_EDT.modaldialog.text
+msgid "Edit Field Names"
+msgstr "Cuir Ainmneacha Réimse in Eagar"
+
+#: filedlghelper.src#STR_SFX_FILEDLG_ACTUALVERSION.string.text
+msgid "Current version"
+msgstr "Leagan reatha"
+
+#: filedlghelper.src#STR_SFX_EXPLORERFILE_EXPORT.string.text
+msgid "Export"
+msgstr "Easpórtáil"
+
+#: filedlghelper.src#STR_SFX_EXPLORERFILE_INSERT.string.text
+msgid "Insert"
+msgstr "Ionsáigh"
+
+#: filedlghelper.src#STR_SFX_EXPLORERFILE_BUTTONINSERT.string.text
+msgid "~Insert"
+msgstr "~Ionsáigh"
+
+#: filedlghelper.src#STR_SFX_IMPORT_ALL.string.text
+msgid "<All formats>"
+msgstr "<Gach formáid>"
+
+#: filedlghelper.src#STR_CB_AUTO_EXTENSION.string.text
+msgid "~Automatic file name extension"
+msgstr "Iarmhír u~athoibríoch ar ainm comhaid"
+
+#: filedlghelper.src#STR_CB_SELECTION.string.text
+msgid "~Selection"
+msgstr "~Roghnúchán"
+
+#: filedlghelper.src#STR_CB_INSERT_AS_LINK.string.text
+msgid "~Link"
+msgstr "~Nasc"
+
+#: filedlghelper.src#STR_CB_SHOW_PREVIEW.string.text
+msgid "Pr~eview"
+msgstr "Réamh~amharc"
+
+#: filedlghelper.src#STR_CB_READONLY.string.text
+msgctxt "filedlghelper.src#STR_CB_READONLY.string.text"
+msgid "~Read-only"
+msgstr "~Inléite amháin"
+
+#: filedlghelper.src#STR_CB_PASSWORD.string.text
+msgid "Save with ~password"
+msgstr "Sábháil le ~focal faire"
+
+#: filedlghelper.src#STR_CB_FILTER_OPTIONS.string.text
+msgid "Edit ~filter settings"
+msgstr "Cuir na socruithe ~scagaire in eagar"
+
+#: filedlghelper.src#STR_PB_PLAY.string.text
+msgid "~Play"
+msgstr "~Seinn"
+
+#: filedlghelper.src#STR_PB_STOP.string.text
+msgid "Sto~p"
+msgstr "Sta~d"
+
+#: filedlghelper.src#STR_PB_OPEN.string.text
+msgid "~Open"
+msgstr "~Oscail"
+
+#: filedlghelper.src#STR_PB_SAVE.string.text
+msgid "~Save"
+msgstr "~Sábháil"
+
+#: filedlghelper.src#STR_LB_IMAGE_TEMPLATE.string.text
+msgid "Style:"
+msgstr "Stíl:"
+
+#: filedlghelper.src#STR_LB_TEMPLATES.string.text
+msgid "~Templates:"
+msgstr "~Teimpléid:"
+
+#: filedlghelper.src#STR_LB_VERSION.string.text
+msgid "~Version:"
+msgstr "~Leagan:"
+
+#: mailwindow.src#RID_ERRBOX_MAIL_CONFIG.errorbox.text
+msgid ""
+"%PRODUCTNAME was unable to find a working e-mail configuration. Please save "
+"this document locally instead and attach it from within your e-mail client."
+msgstr ""
+"Níorbh fhéidir le %PRODUCTNAME cumraíocht chuí ríomhphoist a aimsiú. Sábháil "
+"an cháipéis seo go logánta agus ceangail í ó do chliant ríomhphoist."
+
+#: mgetempl.src#TP_MANAGE_STYLES.FT_NAME.fixedtext.text
+msgid "~Name"
+msgstr "Ai~nm"
+
+#: mgetempl.src#TP_MANAGE_STYLES.CB_AUTO.checkbox.text
+msgid "~AutoUpdate"
+msgstr "Nu~ashonraigh go hUathoibríoch"
+
+#: mgetempl.src#TP_MANAGE_STYLES.FT_NEXT.fixedtext.text
+msgid "Ne~xt Style"
+msgstr "An Chéad Stíl ~Eile"
+
+#: mgetempl.src#TP_MANAGE_STYLES.FT_BASE.fixedtext.text
+msgid "Linked with"
+msgstr "Nasctha le"
+
+#: mgetempl.src#TP_MANAGE_STYLES.FT_REGION.fixedtext.text
+msgid "~Category"
+msgstr "~Catagóir"
+
+#: mgetempl.src#TP_MANAGE_STYLES.GB_DESC.fixedline.text
+msgid "Contains"
+msgstr "Ina bhfuil"
+
+#: newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.FL_COL.fixedline.text
+msgid "Style name"
+msgstr "Ainm stíle"
+
+#: newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MSG_OVERWRITE.querybox.text
+msgid "Style already exists. Overwrite?"
+msgstr "Tá an stíl ann cheana. Forscríobh?"
+
+#: newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.modaldialog.text
+msgid "Create Style"
+msgstr "Cruthaigh Stíl"
+
+#: passwd.src#DLG_PASSWD.FT_PASSWD_USER.fixedtext.text
+msgid "~User"
+msgstr "Ú~sáideoir"
+
+#: passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD.fixedtext.text
+msgid "~Password"
+msgstr "~Focal Faire"
+
+#: passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM.fixedtext.text
+msgid "~Confirm"
+msgstr "~Dearbhaigh"
+
+#: passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.fixedline.text
+#, fuzzy
+msgctxt "passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.fixedline.text"
+msgid "Password"
+msgstr "Focal Faire"
+
+#: passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD2.fixedtext.text
+#, fuzzy
+msgid "P~assword"
+msgstr "Focal Faire"
+
+#: passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM2.fixedtext.text
+#, fuzzy
+msgid "Confir~m"
+msgstr "~Dearbhaigh"
+
+#: passwd.src#DLG_PASSWD.TEXT_PASSWD.string.text
+#, fuzzy
+msgctxt "passwd.src#DLG_PASSWD.TEXT_PASSWD.string.text"
+msgid "Password"
+msgstr "Focal Faire"
+
+#: passwd.src#DLG_PASSWD.modaldialog.text
+msgid "Enter Password"
+msgstr "Iontráil Focal Faire"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.fixedline.text
+msgid "Reduce print data"
+msgstr "Laghdaigh sonraí priontála"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.FT_OUTPUTTYPE.fixedtext.text
+msgid "Settings for"
+msgstr "Socruithe do"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTEROUTPUT.radiobutton.text
+msgid "~Printer"
+msgstr "~Printéir"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTFILEOUTPUT.radiobutton.text
+msgid "Print to ~file"
+msgstr "Priontáil go ~comhad"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCETRANSPARENCY.checkbox.text
+msgid "~Reduce transparency"
+msgstr "Laghdaigh an t~rédhearcacht"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_AUTO.radiobutton.text
+msgid "Auto~matically"
+msgstr "Go h~uathoibríoch"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_NONE.radiobutton.text
+msgid "~No transparency"
+msgstr "Ga~n trédhearcacht"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEGRADIENTS.checkbox.text
+msgid "Reduce ~gradients"
+msgstr "Laghdaigh ~grádáin"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_STRIPES.radiobutton.text
+msgid "Gradient ~stripes"
+msgstr "~Straidhpeanna grádáin"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_COLOR.radiobutton.text
+msgid "Intermediate ~color"
+msgstr "~Dath idirmheánach"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS.checkbox.text
+msgid "Reduce ~bitmaps"
+msgstr "Laghdaigh ~mapaí giotáin"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_OPTIMAL.radiobutton.text
+msgid "~High print quality"
+msgstr "Ardc~háilíocht phriontála"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_NORMAL.radiobutton.text
+msgid "N~ormal print quality"
+msgstr "Gnáthcháilíocht phri~ontála"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_RESOLUTION.radiobutton.text
+msgid "Reso~lution"
+msgstr "~Taifeach"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.1.stringlist.text
+msgid "72 DPI"
+msgstr "72 PSO"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.2.stringlist.text
+msgid "96 DPI"
+msgstr "96 PSO"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.3.stringlist.text
+msgid "150 DPI (Fax)"
+msgstr "150 PSO (Facs)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.4.stringlist.text
+msgid "200 DPI (default)"
+msgstr "200 PSO (réamhshocraithe)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.5.stringlist.text
+msgid "300 DPI"
+msgstr "300 PSO"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.6.stringlist.text
+msgid "600 DPI"
+msgstr "600 PSO"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS_TRANSPARENCY.checkbox.text
+msgid "Include transparent ob~jects"
+msgstr "Cuir ~réada trédhearcacha san áireamh"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_CONVERTTOGREYSCALES.checkbox.text
+msgid "Con~vert colors to grayscale"
+msgstr "Tion~taigh dathanna go liathscála"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.GB_PRINT_WARN.fixedline.text
+msgid "Printer warnings"
+msgstr "Rabhaidh phriontála"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERSIZE.checkbox.text
+msgid "P~aper size"
+msgstr "Páipéar~mhéid"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERORIENTATION.checkbox.text
+msgid "Pap~er orientation"
+msgstr "Tr~eoshuíomh leathanaigh"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_TRANSPARENCY.checkbox.text
+msgid "~Transparency"
+msgstr "~Trédhearcacht"
+
+#: printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.fixedtext.text
+msgid ""
+"Your document contains transparent objects.\n"
+"This may lead to longer printing time on certain\n"
+"printers. Should the aspect of transparency\n"
+"be reduced?"
+msgstr ""
+"Tá réada trédhearcacha i do cháipéis.\n"
+"D'fhéadfadh sé go mbeadh moill ar am priontála ar\n"
+"phrintéirí áirithe. An ceart an ghné thrédhearcach\n"
+"a laghdú?"
+
+#: printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.okbutton.text
+msgid "~Yes"
+msgstr "~Tá"
+
+#: printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_NO.pushbutton.text
+msgid "~No"
+msgstr "~Níl"
+
+#: printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_CANCEL.cancelbutton.text
+msgid "~Cancel"
+msgstr "~Cealaigh"
+
+#: printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.checkbox.text
+msgid "~Do not show warning again"
+msgstr "~Ná taispeáin an rabhadh seo arís"
+
+#: printopt.src#RID_WARN_PRINTTRANSPARENCY.modaldialog.text
+msgid "Warning"
+msgstr "Rabhadh"
+
+#: recfloat.src#SID_RECORDING_FLOATWINDOW.floatingwindow.text
+msgid "Record Macro"
+msgstr "Taifead Macra"
+
+#: recfloat.src#STR_MACRO_LOSS.string.text
+msgid ""
+"Do you really want to cancel the recording? Any steps recorded up to this "
+"point will be lost."
+msgstr ""
+"An bhfuil tú cinnte gur mian leat an taifeadadh a chealú? Caillfidh tú aon "
+"chéimeanna a taifeadadh go dtí seo."
+
+#: recfloat.src#STR_CANCEL_RECORDING.string.text
+msgid "Cancel Recording"
+msgstr "Cealaigh an Taifeadadh"
+
+#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FL.fixedline.text
+msgid "File encryption password"
+msgstr "Focal faire criptiúcháin"
+
+#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FT.fixedtext.text
+msgid "~Enter password to open"
+msgstr "~Iontráil an focal faire chun é a oscailt"
+
+#: securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_OPEN_FT.fixedtext.text
+msgid "~Reenter password to open"
+msgstr "Iontráil an focal faire a~rís chun é a oscailt"
+
+#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FL.fixedline.text
+msgid "File sharing password"
+msgstr "Focal faire comhroinnte"
+
+#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FT.fixedtext.text
+msgid "Enter password to modify"
+msgstr "Iontráil an focal faire chun é a athrú"
+
+#: securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_MODIFY_FT.fixedtext.text
+msgid "Reenter password to modify"
+msgstr "Iontráil an focal faire arís chun é a athrú"
+
+#: securitypage.src#TP_DOCINFOSECURITY.OPTIONS_FL.fixedline.text
+msgid "File sharing options"
+msgstr "Roghanna roinnt comhaid"
+
+#: securitypage.src#TP_DOCINFOSECURITY.OPEN_READONLY_CB.checkbox.text
+msgid "~Open file read-only"
+msgstr "~Oscail an comhad inléite amháin"
+
+#: securitypage.src#TP_DOCINFOSECURITY.RECORD_CHANGES_CB.checkbox.text
+msgid "Record ~changes"
+msgstr "~Taifead na hathruithe"
+
+#: securitypage.src#TP_DOCINFOSECURITY.STR_PROTECT.string.text
+msgid "~Protect..."
+msgstr "~Cosain..."
+
+#: securitypage.src#TP_DOCINFOSECURITY.STR_UNPROTECT.string.text
+msgid "~Unprotect..."
+msgstr "~Díchosain..."
+
+#: securitypage.src#TP_DOCINFOSECURITY.STR_END_REDLINING_WARNING.string.text
+msgid ""
+"This action will exit the change recording mode.\n"
+"Any information about changes will be lost.\n"
+"\n"
+"Exit change recording mode?\n"
+"\n"
+msgstr ""
+"Scoirfidh an gníomh seo den mhód athraithe taifeadta.\n"
+"Caillfear gach faisnéis maidir le hathruithe.\n"
+"\n"
+"An bhfuil tú cinnte gur mian leat scor den mhód athraithe taifeadta?\n"
+"\n"
+
+#: securitypage.src#RID_SFX_PROTECT_RECORDS.string.text
+msgid "Protect Records"
+msgstr "Cosain Taifid"
+
+#: securitypage.src#RID_SFX_UNPROTECT_RECORDS.string.text
+msgid "Unprotect Records"
+msgstr "Díchosain Taifid"
+
+#: securitypage.src#RID_SFX_INCORRECT_PASSWORD.string.text
+msgid "Incorrect password"
+msgstr "Focal faire mícheart"
+
+#: srchdlg.src#RID_DLG_SEARCH.FT_SEARCH.fixedtext.text
+msgid "~Search for"
+msgstr "Déan ~cuardach ar"
+
+#: srchdlg.src#RID_DLG_SEARCH.CB_WHOLEWORDS.checkbox.text
+msgid "~Whole words only"
+msgstr "~Focail iomlána amháin"
+
+#: srchdlg.src#RID_DLG_SEARCH.CB_MATCHCASE.checkbox.text
+msgid "~Match case"
+msgstr "~Meaitseáil an cás"
+
+#: srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.checkbox.text
+msgctxt "srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.checkbox.text"
+msgid "Wrap ~around"
+msgstr "Tim~fhill"
+
+#: srchdlg.src#RID_DLG_SEARCH.CB_BACKWARDS.checkbox.text
+msgid "~Backwards"
+msgstr "~Siar"
+
+#: srchdlg.src#RID_DLG_SEARCH.PB_FIND.pushbutton.text
+msgid "~Find"
+msgstr "~Aimsigh"
+
+#: srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.cancelbutton.text
+msgctxt "srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.cancelbutton.text"
+msgid "~Close"
+msgstr "~Dún"
+
+#: srchdlg.src#RID_DLG_SEARCH.STR_TOGGLE.string.text
+msgctxt "srchdlg.src#RID_DLG_SEARCH.STR_TOGGLE.string.text"
+msgid "Wrap ~around"
+msgstr "Tim~fhill"
+
+#: srchdlg.src#RID_DLG_SEARCH.modelessdialog.text
+msgid "Find on this Page"
+msgstr "Aimsigh sa Leathanach Seo"
+
+#: taskpane.src#STR_SFX_DOCK.string.text
+msgid "Dock"
+msgstr "Cuir i nDuga"
+
+#: taskpane.src#STR_SFX_UNDOCK.string.text
+msgid "Undock"
+msgstr "Tóg as Duga"
+
+#: taskpane.src#STR_SFX_TASK_PANE_VIEW.string.text
+msgid "View"
+msgstr "Amharc"
+
+#: taskpane.src#STR_SFX_TASKS.string.text
+msgid "Tasks"
+msgstr "Tasks"
+
+#: templdlg.src#RID_STYLECATALOG.BT_ORG.pushbutton.text
+msgid "~Organizer..."
+msgstr "~Eagraí..."
+
+#: templdlg.src#RID_STYLECATALOG.BT_DEL.pushbutton.text
+msgid "~Delete..."
+msgstr "~Scrios..."
+
+#: templdlg.src#RID_STYLECATALOG.BT_EDIT.pushbutton.text
+msgid "~Modify..."
+msgstr "~Mionathraigh..."
+
+#: templdlg.src#RID_STYLECATALOG.BT_NEW.pushbutton.text
+msgid "~New..."
+msgstr "~Nua..."
+
+#: templdlg.src#RID_STYLECATALOG.modaldialog.text
+msgid "Style Catalog"
+msgstr "Catalóg na Stíleanna"
+
+#: templdlg.src#STR_STYLE_ELEMTLIST.string.text
+msgid "Style List"
+msgstr ""
+
+#: templdlg.src#STR_STYLE_FILTER_HIERARCHICAL.string.text
+msgid "Hierarchical"
+msgstr "Ordlathach"
+
+#: templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_WATERCAN.toolboxitem.text
+msgid "Fill Format Mode"
+msgstr "Mód Líon Formáid"
+
+#: templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_NEW_BY_EXAMPLE.toolboxitem.text
+msgid "New Style from Selection"
+msgstr "Stíl Nua ón Roghnúchán"
+
+#: templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_UPDATE_BY_EXAMPLE.toolboxitem.text
+msgid "Update Style"
+msgstr "Nuashonraigh Stíl"
+
+#: templdlg.src#DLG_STYLE_DESIGNER.dockingwindow.text
+msgid "Styles and Formatting"
+msgstr "Stíleanna agus Formáidiú"
+
+#: versdlg.src#DLG_VERSIONS.GB_NEWVERSIONS.fixedline.text
+msgid "New versions"
+msgstr "Leaganacha Nua"
+
+#: versdlg.src#DLG_VERSIONS.PB_SAVE.pushbutton.text
+msgid "Save ~New Version"
+msgstr "Sábháil Leagan ~Nua"
+
+#: versdlg.src#DLG_VERSIONS.CB_SAVEONCLOSE.checkbox.text
+msgid "~Always save a version on closing"
+msgstr "Sábháil le~agan i gcónaí agus cáipéis á dúnadh"
+
+#: versdlg.src#DLG_VERSIONS.GB_OLDVERSIONS.fixedline.text
+msgid "Existing versions"
+msgstr "Leaganacha atá ann"
+
+#: versdlg.src#DLG_VERSIONS.FT_DATETIME.fixedtext.text
+msgid "Date and time"
+msgstr "Dáta agus am"
+
+#: versdlg.src#DLG_VERSIONS.FT_SAVEDBY.fixedtext.text
+msgid "Saved by"
+msgstr "Sábháilte ag"
+
+#: versdlg.src#DLG_VERSIONS.FT_COMMENTS.fixedtext.text
+msgid "Comments"
+msgstr "Nótaí"
+
+#: versdlg.src#DLG_VERSIONS.PB_CLOSE.cancelbutton.text
+msgid "Close"
+msgstr "Dún"
+
+#: versdlg.src#DLG_VERSIONS.PB_OPEN.pushbutton.text
+msgid "Open"
+msgstr "Oscail"
+
+#: versdlg.src#DLG_VERSIONS.PB_VIEW.pushbutton.text
+msgid "~Show..."
+msgstr "Tai~speáin..."
+
+#: versdlg.src#DLG_VERSIONS.PB_DELETE.pushbutton.text
+msgid "~Delete"
+msgstr "~Scrios"
+
+#: versdlg.src#DLG_VERSIONS.PB_COMPARE.pushbutton.text
+msgid "Compare"
+msgstr "Cuir i gComparáid"
+
+#: versdlg.src#DLG_VERSIONS.modaldialog.text
+msgid "Versions of"
+msgstr "Leaganacha de"
+
+#: versdlg.src#DLG_COMMENTS.FT_DATETIME.fixedtext.text
+msgid "Date and time : "
+msgstr "Dáta agus am : "
+
+#: versdlg.src#DLG_COMMENTS.FT_SAVEDBY.fixedtext.text
+msgid "Saved by "
+msgstr "Sábháilte ag "
+
+#: versdlg.src#DLG_COMMENTS.PB_CLOSE.pushbutton.text
+msgctxt "versdlg.src#DLG_COMMENTS.PB_CLOSE.pushbutton.text"
+msgid "~Close"
+msgstr "~Dún"
+
+#: versdlg.src#DLG_COMMENTS.modaldialog.text
+msgid "Insert Version Comment"
+msgstr "Ionsáigh Nóta Leagain"
+
+#: versdlg.src#DLG_COMMENTS.string.text
+msgid "Version comment"
+msgstr "Nóta leagain"
+
+#~ msgid "Confirm password"
+#~ msgstr "Dearbhaigh an focal faire"

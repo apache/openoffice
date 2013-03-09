@@ -1,0 +1,44 @@
+
+#: solver.src#RID_SOLVER_COMPONENT.string.text
+msgid "%PRODUCTNAME Linear Solver"
+msgstr "%PRODUCTNAME Linear Solver"
+
+#: solver.src#RID_PROPERTY_NONNEGATIVE.string.text
+msgid "Assume variables as non-negative"
+msgstr "Assume variables as non-negative"
+
+#: solver.src#RID_PROPERTY_INTEGER.string.text
+msgid "Assume variables as integer"
+msgstr "மாறிகளை முழு எண் என கொள்ளவும்"
+
+#: solver.src#RID_PROPERTY_TIMEOUT.string.text
+msgid "Solving time limit (seconds)"
+msgstr "தீர்க்கும் நேர வரம்பு (விநாடிகள்)"
+
+#: solver.src#RID_PROPERTY_EPSILONLEVEL.string.text
+msgid "Epsilon level (0-3)"
+msgstr "Epsilon நிலை (0-3)"
+
+#: solver.src#RID_PROPERTY_LIMITBBDEPTH.string.text
+msgid "Limit branch-and-bound depth"
+msgstr "Limit branch-and-bound depth"
+
+#: solver.src#RID_ERROR_NONLINEAR.string.text
+msgid "The model is not linear."
+msgstr "The model is not linear."
+
+#: solver.src#RID_ERROR_EPSILONLEVEL.string.text
+msgid "The epsilon level is invalid."
+msgstr "epsilon நிலை தவறானது."
+
+#: solver.src#RID_ERROR_INFEASIBLE.string.text
+msgid "The model is infeasible. Check limiting conditions."
+msgstr "The model is infeasible. Check limiting conditions."
+
+#: solver.src#RID_ERROR_UNBOUNDED.string.text
+msgid "The model is unbounded."
+msgstr "மாதிரி பிணைக்கப்படவில்லை"
+
+#: solver.src#RID_ERROR_TIMEOUT.string.text
+msgid "The time limit was reached."
+msgstr "நேர வரம்பை அடைந்தது"

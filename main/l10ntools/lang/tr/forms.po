@@ -1,0 +1,256 @@
+
+#: strings.src#RID_BASELISTBOX_ERROR_FILLLIST.string.text
+msgid "The contents of a combo box or list field could not be determined."
+msgstr "Açılır kutu alanı veya liste alanı algılanamıyor."
+
+#: strings.src#RID_STR_IMPORT_GRAPHIC.string.text
+msgid "Insert graphics"
+msgstr "Grafik ekle"
+
+#: strings.src#RID_STR_CONTROL_SUBSTITUTED_NAME.string.text
+msgid "substituted"
+msgstr "değiştirildi"
+
+#: strings.src#RID_STR_CONTROL_SUBSTITUTED_EPXPLAIN.string.text
+msgid ""
+"An error occurred while this control was being loaded. It was therefore "
+"replaced with a placeholder."
+msgstr ""
+"Denetim yüklenirken hata oluştu. Bu yüzden eski değerler ile değiştirildi."
+
+#: strings.src#RID_STR_READERROR.string.text
+msgid "Error reading data from database"
+msgstr "Hata: veritabanından veriler okunamıyor"
+
+#: strings.src#RID_STR_CONNECTERROR.string.text
+msgid "Connection failed"
+msgstr "Bağlantı hatası"
+
+#: strings.src#RID_ERR_LOADING_FORM.string.text
+msgid "The data content could not be loaded."
+msgstr "Veri yüklenemedi"
+
+#: strings.src#RID_ERR_REFRESHING_FORM.string.text
+msgid "The data content could not be updated"
+msgstr "Veri içeriği güncellenemedi."
+
+#: strings.src#RID_STR_ERR_INSERTRECORD.string.text
+msgid "Error inserting the new record"
+msgstr "Yeni kayıt girilirken hata oluştu."
+
+#: strings.src#RID_STR_ERR_UPDATERECORD.string.text
+msgid "Error updating the current record"
+msgstr "Geçerli kayıt güncellenirken bir hata oluştu"
+
+#: strings.src#RID_STR_ERR_DELETERECORD.string.text
+msgid "Error deleting the current record"
+msgstr "Geçerli kayıt silinirken bir hata oluştu"
+
+#: strings.src#RID_STR_ERR_DELETERECORDS.string.text
+msgid "Error deleting the specified records"
+msgstr "Belirtilen kayıtlar silinirken hata oluştu."
+
+#: strings.src#RID_STR_NEED_NON_NULL_OBJECT.string.text
+msgid "The object cannot be NULL."
+msgstr "Nesne BOŞ olamaz."
+
+#: strings.src#RID_STR_OPEN_GRAPHICS.string.text
+msgid "Insert graphics from..."
+msgstr "Grafiklerden ekle..."
+
+#: strings.src#RID_STR_CLEAR_GRAPHICS.string.text
+msgid "Remove graphics"
+msgstr "Grafiği kaldır"
+
+#: strings.src#RID_STR_INVALIDSTREAM.string.text
+msgid "The given stream is invalid."
+msgstr "Verilen akım geçersiz."
+
+#: strings.src#RID_STR_SYNTAXERROR.string.text
+msgid "Syntax error in query expression"
+msgstr "Sorgu ifadesinde sözdizim hatası"
+
+#: strings.src#RID_STR_INCOMPATIBLE_TYPES.string.text
+msgid ""
+"The value types supported by the binding cannot be used for exchanging data "
+"with this control."
+msgstr ""
+"Bu bağlayıcı ile desteklenen değer tipleri, bu kontrol ile veri değiştirme "
+"için kullanılamıyor."
+
+#: strings.src#RID_STR_LABEL_RECORD.string.text
+msgid "Record"
+msgstr "Kayıt"
+
+#: strings.src#RID_STR_INVALID_VALIDATOR.string.text
+msgid ""
+"The control is connected to an external value binding, which at the same "
+"time acts as validator. You need to revoke the value binding, before you can "
+"set a new validator."
+msgstr ""
+"Bu kontrol, onaylayıcı olarak işlev gören, bir dış değere bağlanıyor. Yeni "
+"bir onaylayıcı oluşturmadan önce değer bağlantısını iptal etmelisiniz."
+
+#: strings.src#RID_STR_LABEL_OF.string.text
+msgid "of"
+msgstr "/"
+
+#: strings.src#RID_STR_QUERY_SAVE_MODIFIED_ROW.string.text
+msgid ""
+"The content of the current form has been modified.\n"
+"Do you want to save your changes?"
+msgstr ""
+"Geçerli form içeriği değiştirildi.\n"
+"Değişiklikleri kaydetmek ister misiniz?"
+
+#: strings.src#RID_STR_COULD_NOT_SET_ORDER.string.text
+msgid "Error setting the sort criteria"
+msgstr "Sıralama ölçütü ayar hatası"
+
+#: strings.src#RID_STR_COULD_NOT_SET_FILTER.string.text
+msgid "Error setting the filter criteria"
+msgstr "Süzgeç ölçütü ayar hatası"
+
+#: strings.src#RID_STR_FEATURE_REQUIRES_PARAMETERS.string.text
+msgid "To execute this function, parameters are needed."
+msgstr "Bu işlevin çalışması için parametreye ihtiyaç duyuluyor."
+
+#: strings.src#RID_STR_FEATURE_NOT_EXECUTABLE.string.text
+msgid "This function cannot be executed, but is only for status queries."
+msgstr "Bu işlev çalıştırılamıyor, fakat sadece sorgu durumu için."
+
+#: strings.src#RID_STR_FEATURE_UNKNOWN.string.text
+msgid "Unknown function."
+msgstr "Bilinmeyen işlev."
+
+#: xforms.src#RID_STR_XFORMS_NO_BINDING_EXPRESSION.string.text
+msgid "Please enter a binding expression."
+msgstr "Lütfen bağlayıcı deyimi giriniz."
+
+#: xforms.src#RID_STR_XFORMS_INVALID_BINDING_EXPRESSION.string.text
+msgid "This is an invalid binding expression."
+msgstr "Bu bağlayıcı deyimi geçersizdir."
+
+#: xforms.src#RID_STR_XFORMS_INVALID_VALUE.string.text
+msgid "Value is invalid."
+msgstr "Geçersiz değer."
+
+#: xforms.src#RID_STR_XFORMS_REQUIRED.string.text
+msgid "A value is required."
+msgstr "Bir değer gerekiyor."
+
+#: xforms.src#RID_STR_XFORMS_INVALID_CONSTRAINT.string.text
+msgid "The constraint '$1' not validated."
+msgstr "'$1' sınırlaması doğrulanamadı."
+
+#: xforms.src#RID_STR_XFORMS_VALUE_IS_NOT_A.string.text
+msgid "The value is not of the type '$2'."
+msgstr "Değer '$2' tipinde değil."
+
+#: xforms.src#RID_STR_XFORMS_VALUE_MAX_INCL.string.text
+msgid "The value must be smaller than or equal to $2."
+msgstr "Değer $2 sayısına eşit veya $2 sayısından küçük olmalıdır."
+
+#: xforms.src#RID_STR_XFORMS_VALUE_MAX_EXCL.string.text
+msgid "The value must be smaller than $2."
+msgstr "Değer $2 sayısından küçük olmalıdır."
+
+#: xforms.src#RID_STR_XFORMS_VALUE_MIN_INCL.string.text
+msgid "The value must be greater than or equal to $2."
+msgstr "Değer $2 sayısına eşit veya $2 sayısından büyük olmalıdır."
+
+#: xforms.src#RID_STR_XFORMS_VALUE_MIN_EXCL.string.text
+msgid "The value must be greater than $2."
+msgstr "Değer $2 sayısından büyük olmalıdır."
+
+#: xforms.src#RID_STR_XFORMS_VALUE_PATTERN.string.text
+msgid "The value does not match the pattern '$2'."
+msgstr "Değer '$2' maskesiyle örtüşmüyor."
+
+#: xforms.src#RID_STR_XFORMS_VALUE_TOTAL_DIGITS.string.text
+msgid "$2 digits allowed at most."
+msgstr "En fazla $2 basamağa izin var."
+
+#: xforms.src#RID_STR_XFORMS_VALUE_FRACTION_DIGITS.string.text
+msgid "$2 fraction digits allowed at most."
+msgstr "En fazla kesirli $2 basamağa izin var."
+
+#: xforms.src#RID_STR_XFORMS_VALUE_LENGTH.string.text
+msgid "The string must be $2 characters long."
+msgstr "Dizi $2 karakter uzunluğunda olmalıdır."
+
+#: xforms.src#RID_STR_XFORMS_VALUE_MIN_LENGTH.string.text
+msgid "The string must be at least $2 characters long."
+msgstr "Dizi en az $2 karakter uzunluğunda olmalıdır."
+
+#: xforms.src#RID_STR_XFORMS_VALUE_MAX_LENGTH.string.text
+msgid "The string can only be $2 characters long at most."
+msgstr "Dizi en çok $2 karakter uzunluğunda olmalıdır."
+
+#: xforms.src#RID_STR_DATATYPE_STRING.string.text
+msgid "String"
+msgstr "Dizi"
+
+#: xforms.src#RID_STR_DATATYPE_URL.string.text
+msgid "Hyperlink"
+msgstr "Köprü"
+
+#: xforms.src#RID_STR_DATATYPE_BOOLEAN.string.text
+msgid "True/False (Boolean)"
+msgstr "Doğru/Yanlış (Mantıksal)"
+
+#: xforms.src#RID_STR_DATATYPE_DECIMAL.string.text
+msgid "Decimal"
+msgstr "Ondalık"
+
+#: xforms.src#RID_STR_DATATYPE_FLOAT.string.text
+msgid "Floating point"
+msgstr "Kayan Nokta"
+
+#: xforms.src#RID_STR_DATATYPE_DOUBLE.string.text
+msgid "Double"
+msgstr "Çift"
+
+#: xforms.src#RID_STR_DATATYPE_DATE.string.text
+msgid "Date"
+msgstr "Tarih"
+
+#: xforms.src#RID_STR_DATATYPE_TIME.string.text
+msgid "Time"
+msgstr "Zaman"
+
+#: xforms.src#RID_STR_DATATYPE_DATETIME.string.text
+msgid "Date and Time"
+msgstr "Tarih ve zaman"
+
+#: xforms.src#RID_STR_DATATYPE_YEARMONTH.string.text
+msgid "Month and year"
+msgstr "Ay ve yıl"
+
+#: xforms.src#RID_STR_DATATYPE_YEAR.string.text
+msgid "Year"
+msgstr "Yıl"
+
+#: xforms.src#RID_STR_DATATYPE_MONTHDAY.string.text
+msgid "Month and day"
+msgstr "Ay ve gün"
+
+#: xforms.src#RID_STR_DATATYPE_MONTH.string.text
+msgid "Month"
+msgstr "Ay"
+
+#: xforms.src#RID_STR_DATATYPE_DAY.string.text
+msgid "Day"
+msgstr "Gün"
+
+#: xforms.src#RID_STR_XFORMS_CANT_EVALUATE.string.text
+msgid "Error during evaluation"
+msgstr "Değerlendirme sırasında hata"
+
+#: xforms.src#RID_STR_XFORMS_PATTERN_DOESNT_MATCH.string.text
+msgid "The string '$1' does not match the required regular expression '$2'."
+msgstr "'$1' dizisi gerekli düzenli ifade '$2' ile eşleşmiyor."
+
+#: xforms.src#RID_STR_XFORMS_BINDING_UI_NAME.string.text
+msgid "Binding"
+msgstr "Bağlama"

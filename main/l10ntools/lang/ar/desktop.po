@@ -1,0 +1,1355 @@
+
+#: wizard.src#DLG_FIRSTSTART_WIZARD.modaldialog.text
+msgctxt "wizard.src#DLG_FIRSTSTART_WIZARD.modaldialog.text"
+msgid "Welcome to %PRODUCTNAME %PRODUCTVERSION"
+msgstr "مرحبًا بك في %PRODUCTNAME %PRODUCTVERSION"
+
+#: wizard.src#STR_STATE_WELCOME.string.text
+msgid "Welcome"
+msgstr "مرحبًا"
+
+#: wizard.src#STR_STATE_LICENSE.string.text
+msgid "License Agreement"
+msgstr "اتفاقية الترخيص"
+
+#: wizard.src#STR_STATE_MIGRATION.string.text
+msgid "Personal Data"
+msgstr "البيانات الشخصية"
+
+#: wizard.src#STR_STATE_USER.string.text
+msgid "User name"
+msgstr "اسم المستخدم"
+
+#: wizard.src#STR_STATE_UPDATE_CHECK.string.text
+msgctxt "wizard.src#STR_STATE_UPDATE_CHECK.string.text"
+msgid "Online Update"
+msgstr "تحديث عبر الإنترنت"
+
+#: wizard.src#STR_STATE_REGISTRATION.string.text
+msgid "Registration"
+msgstr "التسجيل"
+
+#: wizard.src#STR_WELCOME_MIGRATION.string.text
+msgid ""
+"This wizard will guide you through the license agreement, the transfer of "
+"user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n"
+"\n"
+"Click 'Next' to continue."
+msgstr ""
+"سيرشدك هذا المعالج عبر اتفاقية الترخيص، ونقل بيانات المستخدم من %OLD_VERSION "
+"وتسجيل %PRODUCTNAME.\n"
+"\n"
+"انقر فوق \"التالي\" للمتابعة."
+
+#: wizard.src#STR_WELCOME_WITHOUT_LICENSE.string.text
+msgid ""
+"This wizard will guide you through the registration of %PRODUCTNAME.\n"
+"\n"
+"Click 'Next' to continue."
+msgstr ""
+"سيرشدك هذا المعالج عبر تسجيل %PRODUCTNAME.\n"
+"\n"
+"انقر فوق \" التالي\" للمتابعة."
+
+#: wizard.src#STR_FINISH.string.text
+msgid "~Finish"
+msgstr "إ~نهاء"
+
+#: wizard.src#STR_REGISTRATION_OOO.string.text
+msgid ""
+"You now have the opportunity to support and contribute to the fastest "
+"growing open source community in the world.\n"
+"\n"
+"Help us prove that %PRODUCTNAME has already gained significant market share "
+"by registering.\n"
+"\n"
+"Registering is voluntary and without obligation."
+msgstr ""
+"لديك الآن فرصة لدعم مجتمع المصدر المفتوح الأسرع تطورًا في العالم والمساهمة "
+"فيه.\n"
+"\n"
+"ساعدنا على إثبات أن %PRODUCTNAME قد حاز على حصة مميزة في السوق من خلال "
+"التسجيل. \n"
+"\n"
+"عملية التسجيل اختيارية بدون أية التزامات."
+
+#: wizard.src#ERRBOX_REG_NOSYSBROWSER.errorbox.text
+msgid ""
+"An error occurred in starting the web browser.\n"
+"Please check the %PRODUCTNAME and web browser settings."
+msgstr ""
+"حدث خطأ في تشغيل مستعرض ويب.\n"
+"الرجاء التحقق من %PRODUCTNAME وإعدادات مستعرض ويب."
+
+#: wizard.src#QB_ASK_DECLINE.querybox.text
+msgid "Do you really want to decline?"
+msgstr "هل تريد الرفض بالفعل؟"
+
+#: wizard.src#TP_WELCOME.FT_WELCOME_HEADER.fixedtext.text
+msgctxt "wizard.src#TP_WELCOME.FT_WELCOME_HEADER.fixedtext.text"
+msgid "Welcome to %PRODUCTNAME %PRODUCTVERSION"
+msgstr "مرحبًا بك في %PRODUCTNAME %PRODUCTVERSION"
+
+#: wizard.src#TP_WELCOME.FT_WELCOME_BODY.fixedtext.text
+msgid ""
+"This wizard will guide you through the license agreement and the "
+"registration of %PRODUCTNAME.\n"
+"\n"
+"Click 'Next' to continue."
+msgstr ""
+"سيرشدك هذا المعالج عبر اتفاقية الترخيص وتسجيل %PRODUCTNAME.\n"
+"\n"
+"انقر فوق \"التالي\" للمتابعة."
+
+#: wizard.src#TP_LICENSE.FT_LICENSE_HEADER.fixedtext.text
+msgid "Please follow these steps to accept the license"
+msgstr "الرجاء اتباع هذه الخطوات لقبول الترخيص"
+
+#: wizard.src#TP_LICENSE.FT_LICENSE_BODY_1.fixedtext.text
+msgid "1."
+msgstr "1."
+
+#: wizard.src#TP_LICENSE.FT_LICENSE_BODY_1_TXT.fixedtext.text
+msgid ""
+"View the complete License Agreement. Please use the scrollbar or the '%"
+"PAGEDOWN' button in this dialog to view the entire license text."
+msgstr ""
+"استعرض اتفاقية الترخيص بأكملها. الرجاء استخدام شريط التمرير أو زر '%"
+"PAGEDOWN' في مربع الحوار هذا لعرض نص الترخيص بالكامل."
+
+#: wizard.src#TP_LICENSE.FT_LICENSE_BODY_2.fixedtext.text
+msgid "2."
+msgstr "2."
+
+#: wizard.src#TP_LICENSE.FT_LICENSE_BODY_2_TXT.fixedtext.text
+msgid "Click 'Accept' to accept the terms of the Agreement."
+msgstr "انقر فوق \"قبول\" لقبول بنود الاتفاقية."
+
+#: wizard.src#TP_LICENSE.PB_LICENSE_DOWN.pushbutton.text
+msgid "Scroll Do~wn"
+msgstr "تمرير لأس~فل"
+
+#: wizard.src#STR_LICENSE_ACCEPT.string.text
+msgid "~Accept"
+msgstr "~قبول"
+
+#: wizard.src#STR_LICENSE_DECLINE.string.text
+msgid "~Decline"
+msgstr "ر~فض"
+
+#: wizard.src#TP_MIGRATION.FT_MIGRATION_HEADER.fixedtext.text
+msgctxt "wizard.src#TP_MIGRATION.FT_MIGRATION_HEADER.fixedtext.text"
+msgid "Transfer personal data"
+msgstr "نقل البيانات الشخصية"
+
+#: wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.fixedtext.text
+msgid ""
+"Most personal data from %OLDPRODUCT installation can be reused in %"
+"PRODUCTNAME %PRODUCTVERSION.\n"
+"\n"
+"If you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, "
+"unmark the check box."
+msgstr ""
+"يمكن إعادة استخدام معظم البيانات الشخصية من تثبيت %OLDPRODUCT في %"
+"PRODUCTNAME %PRODUCTVERSION.\n"
+"\n"
+"إذا لم ترغب في إعادة استخدام أية إعدادات في %PRODUCTNAME %PRODUCTVERSION، "
+"فقم بإلغاء تحديد خانة الاختيار."
+
+#: wizard.src#TP_MIGRATION.CB_MIGRATION.checkbox.text
+msgctxt "wizard.src#TP_MIGRATION.CB_MIGRATION.checkbox.text"
+msgid "Transfer personal data"
+msgstr "نقل البيانات الشخصية"
+
+#: wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_HEADER.fixedtext.text
+msgctxt "wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_HEADER.fixedtext.text"
+msgid "Online Update"
+msgstr "تحديث عبر الإنترنت"
+
+#: wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_BODY.fixedtext.text
+msgid ""
+"%PRODUCTNAME searches automatically at regular intervals for new versions.\n"
+"In doing so online update does not transfer personal data.\n"
+"As soon as a new version is available, you will be notified.\n"
+"\n"
+"You can configure this feature at Tools / Options... / %PRODUCTNAME / Online "
+"Update."
+msgstr ""
+"يبحث %PRODUCTNAME بشكل تلقائي وعلى فترات زمنية منتظمة عن الإصدارات الجديدة.\n"
+"وبذلك، لا يقوم التحديث عبر الإنترنت بنقل أية بيانات شخصية.\n"
+"بمجرد توفير إصدار جديد، سيتم إعلامك.\n"
+"\n"
+"يمكنك تكوين هذه الميزة من خلال أدوات / خيارات... / %PRODUCTNAME / التحديث "
+"عبر الإنترنت."
+
+#: wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.checkbox.text
+msgid "~Check for updates automatically"
+msgstr "التحقق من وجود تحدي~ثات تلقائيًا"
+
+#: wizard.src#TP_USER.FT_USER_HEADER.fixedtext.text
+msgid "Provide your full name and initials below"
+msgstr "اكتب اسمك بالكامل والأحرف الأولى منه أدناه"
+
+#: wizard.src#TP_USER.FT_USER_BODY.fixedtext.text
+msgid ""
+"The user name will be used in the document properties, templates and when "
+"you record changes made to documents."
+msgstr ""
+"يُستخدم اسم المستخدم في خصائص المستندات، والقوالب وعند تسجيل التغييرات التي "
+"تتم على المستندات."
+
+#: wizard.src#TP_USER.FT_USER_FIRST.fixedtext.text
+msgid "~First name"
+msgstr "الاس~م الأول"
+
+#: wizard.src#TP_USER.FT_USER_LAST.fixedtext.text
+msgid "~Last name"
+msgstr "اسم ال~عائلة"
+
+#: wizard.src#TP_USER.FT_USER_INITIALS.fixedtext.text
+msgid "~Initials"
+msgstr "الأحرف الأو~لى"
+
+#: wizard.src#TP_USER.FT_USER_FATHER.fixedtext.text
+msgid "~Father's name"
+msgstr "اسم الأ~ب"
+
+#: wizard.src#TP_REGISTRATION.FT_REGISTRATION_HEADER.fixedtext.text
+msgid "%PRODUCTNAME Registration"
+msgstr "تسجيل %PRODUCTNAME"
+
+#: wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.fixedtext.text
+msgid ""
+"You now have the opportunity to register as a %PRODUCTNAME user. "
+"Registration is voluntary and is without obligation.\n"
+"\n"
+"If you register, we can inform you about new developments concerning this "
+"product."
+msgstr ""
+"لديك الآن فرصة للتسجيل كمستخدم %PRODUCTNAME. التسجيل تطوعي وغير إلزامي. \n"
+"\\إذا قمت بالتسجيل، فسيمكننا إعلامك بأية تطورات جديدة تخص هذا المنتج."
+
+#: wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.radiobutton.text
+msgid "I want to register ~now"
+msgstr "أريد الت~سجيل الآن"
+
+#: wizard.src#TP_REGISTRATION.RB_REGISTRATION_LATER.radiobutton.text
+msgid "I want to register ~later"
+msgstr "أريد التس~جيل لاحقًا"
+
+#: wizard.src#TP_REGISTRATION.RB_REGISTRATION_NEVER.radiobutton.text
+msgid "I do not want to ~register"
+msgstr "لا أريد ال~تسجيل"
+
+#: wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.fixedtext.text
+msgid ""
+"We hope you enjoy working with %PRODUCTNAME.\n"
+"\n"
+"To exit the wizard, click 'Finish'."
+msgstr ""
+"نأمل أن تستمتع بالعمل مع %PRODUCTNAME.\n"
+"\n"
+"لإنهاء المعالج، انقر فوق \"إنهاء\"."
+"X-Generator: Pootle 2.1.6\n"
+"X-Accelerator-Marker: ~\n"
+
+#: desktop.src#STR_RECOVER_QUERY.string.text
+msgid "Should the file \"$1\" be restored?"
+msgstr "هل تلزم استعادة الملف \"$1\"؟"
+
+#: desktop.src#STR_RECOVER_TITLE.string.text
+msgid "File Recovery"
+msgstr "استعادة الملف"
+
+#: desktop.src#STR_RECOVER_PREPARED.warningbox.text
+msgid ""
+"An unrecoverable error has occurred.\n"
+"\n"
+"All modified files have been saved and can\n"
+"probably be recovered at program restart."
+msgstr ""
+"حدث خطأ لا يمكن إصلاحه.\n"
+"\n"
+"تم حفظ جميع الملفات التي تم تعديلها\n"
+"ويمكن استعادتها عند إعادة تشغيل البرنامج."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_CANNOT_START.string.text
+msgid "The application cannot be started. "
+msgstr "لا يمكن بدء تشغيل التطبيق. "
+
+#: desktop.src#STR_BOOTSTRAP_ERR_DIR_MISSING.string.text
+msgid "The configuration directory \"$1\" could not be found."
+msgstr "تعذر العثور على دليل التكوين \"$1\"."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_PATH_INVALID.string.text
+msgid "The installation path is invalid."
+msgstr "مسار التثبيت غير صالح."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_NO_PATH.string.text
+msgid "The installation path is not available."
+msgstr "مسار التثبيت غير متوفر."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_INTERNAL.string.text
+msgid "An internal error occurred."
+msgstr "حدث خطأ داخلي."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_FILE_CORRUPT.string.text
+msgid "The configuration file \"$1\" is corrupt."
+msgstr "ملف التكوين \"$1\" تالف."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_FILE_MISSING.string.text
+msgid "The configuration file \"$1\" was not found."
+msgstr "لم يتم العثور على ملف التهيئة \"$1\"."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_NO_SUPPORT.string.text
+msgid "The configuration file \"$1\" does not support the current version."
+msgstr "ملف التهيئة \"$1\" لا يدعم الإصدار الحالي."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_LANGUAGE_MISSING.string.text
+msgid "The user interface language cannot be determined."
+msgstr "لا يمكن تحديد لغة واجهة المتسخدم."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_NO_SERVICE.string.text
+msgid "The component manager is not available."
+msgstr "إدارة المكونات غير متوفرة."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_NO_CFG_SERVICE.string.text
+msgid "The configuration service is not available."
+msgstr "خدمة التكوين غير متوفرة."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_MULTISESSION.string.text
+msgid ""
+"You have another instance running in a different terminal session. Close "
+"that instance and then try again."
+msgstr ""
+"لديك حالة أخرى قيد التشغيل في جلسة عمل محطة مختلفة. أغلق هذا المثال وحاول "
+"مرة أخرى."
+
+#: desktop.src#STR_ASK_START_SETUP_MANUALLY.string.text
+msgid ""
+"Start the setup application to repair the installation from the CD or the "
+"folder containing the installation packages."
+msgstr ""
+"ابدأ تطبيق الإعداد لإصلاح التثبيت من القرص المضغوط، أو من المجلد الذي يضم "
+"حزم التثبيت."
+
+#: desktop.src#STR_CONFIG_ERR_SETTINGS_INCOMPLETE.string.text
+msgid ""
+"The startup settings for accessing the central configuration are incomplete. "
+""
+msgstr "إعدادات بدء التشغيل للوصول إلى التكوين المركزي غير كاملة. "
+
+#: desktop.src#STR_CONFIG_ERR_CANNOT_CONNECT.string.text
+msgid "A connection to the central configuration could not be established. "
+msgstr "تعذر إجراء اتصال بالتكوين المركزي. "
+
+#: desktop.src#STR_CONFIG_ERR_RIGHTS_MISSING.string.text
+msgid ""
+"You cannot access the central configuration because of missing access "
+"rights. "
+msgstr "لا يمكنك الوصول إلى التكوين المركزي بسبب نقص في حقوق الوصول. "
+
+#: desktop.src#STR_CONFIG_ERR_ACCESS_GENERAL.string.text
+msgid "A general error occurred while accessing your central configuration. "
+msgstr "حدث خطأ عام أثناء الوصول إلى التكوين المركزي. "
+
+#: desktop.src#STR_CONFIG_ERR_NO_WRITE_ACCESS.string.text
+msgid ""
+"The changes to your personal settings cannot be stored centrally because of "
+"missing access rights. "
+msgstr ""
+"لا يمكن تسجيل التغييرات التي تمت على إعداداتك الشخصية مركزيًا نظرًا لوجود "
+"فقد في حقوق الوصول. "
+
+#: desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.string.text
+msgid ""
+"%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME "
+"configuration data.\n"
+"\n"
+"Please contact your system administrator."
+msgstr ""
+"لا يمكن بدء تشغيل %PRODUCTNAME بسبب حدوث خطأ في الوصول إلى بيانات تكوين %"
+"PRODUCTNAME.\n"
+"\n"
+"الرجاء الاتصال بمسؤول النظام."
+
+#: desktop.src#STR_INTERNAL_ERRMSG.string.text
+msgid "The following internal error has occurred: "
+msgstr "حدث الخطأ الداخلي التالي: "
+
+#: desktop.src#QBX_USERDATALOCKED.querybox.text
+msgid ""
+"Either another instance of %PRODUCTNAME is accessing your personal settings "
+"or your personal settings are locked.\n"
+"Simultaneous access can lead to inconsistencies in your personal settings. "
+"Before continuing, you should make sure user '$u' closes %PRODUCTNAME on "
+"host '$h'.\n"
+"\n"
+"Do you really want to continue?"
+msgstr ""
+"إما أن هناك مثيل آخر من %PRODUCTNAME يقوم بالوصول إلى إعداداتك الشخصية، أو "
+"أن إعداداتك الشخصية مؤمنة.\n"
+"قد يؤدي الوصول المتزامن إلى تناقضات في إعداداتك الشخصية. قبل المتابعة، يجب "
+"التأكد من إغلاق المستخدم '$u' لـ %PRODUCTNAME على المضيف '$h'.\n"
+"\n"
+"هل تريد المتابعة بالفعل؟"
+
+#: desktop.src#STR_TITLE_USERDATALOCKED.string.text
+msgctxt "desktop.src#STR_TITLE_USERDATALOCKED.string.text"
+msgid "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
+
+#: desktop.src#EBX_ERR_PRINTDISABLED.errorbox.text
+msgid "Printing is disabled. No documents can be printed."
+msgstr "الطباعة معطلة. لا يمكن طباعة أية مستندات."
+
+#: desktop.src#INFOBOX_EXPIRED.infobox.text
+msgid ""
+"This Evaluation Version has expired. To find out more about %PRODUCTNAME,\n"
+"visit http://www.oracle.com/us/products/applications/open-office."
+msgstr ""
+"انتهت صلاحية هذا الإصدار التقييمي. لمعرفة المزيد حول %PRODUCTNAME,\n"
+"تفضل بزيارة http://www.oracle.com/us/products/applications/open-office."
+
+#: desktop.src#STR_TITLE_EXPIRED.string.text
+msgctxt "desktop.src#STR_TITLE_EXPIRED.string.text"
+msgid "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
+
+#: desktop.src#STR_BOOTSTRAP_ERR_NO_PATHSET_SERVICE.string.text
+msgid "The path manager is not available.\n"
+msgstr "إدارة المسارات غير متوفرة.\n"
+
+#: desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.string.text
+msgid ""
+"%PRODUCTNAME user installation could not be completed due to insufficient "
+"free disk space. Please free more disc space at the following location and "
+"restart %PRODUCTNAME:\n"
+"\n"
+msgstr ""
+"تعذر إكمال تثبيت %PRODUCTNAME الخاص بالمستخدم بسبب عدم توفر مساحة كافية على "
+"القرص. الرجاء توفير مساحة إضافية على القرص على الموقع التالي وإعادة تشغيل %"
+"PRODUCTNAME:\n"
+"\n"
+
+#: desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.string.text
+msgid ""
+"%PRODUCTNAME user installation could not be processed due to missing access "
+"rights. Please make sure that you have sufficient access rights for the "
+"following location and restart %PRODUCTNAME:\n"
+"\n"
+msgstr ""
+"تعذرت معالجة تثبيت %PRODUCTNAME الخاص بالمستخدم بسبب عدم توفر حقوق وصول. "
+"الرجاء التأكد أن لديك حقوقًا كافية للوصول إلى الموقع التالي وإعادة تشغيل %"
+"PRODUCTNAME:\n"
+"\n"
+"X-Generator: Pootle 2.1.6\n"
+"X-Accelerator-Marker: ~\n"
+
+#: dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.fixedtext.text
+msgid ""
+"The extension cannot be installed as the following\n"
+"system dependencies are not fulfilled:"
+msgstr ""
+"لا يمكن تثبيت الامتداد\n"
+"لأنه لم يتم الإيفاء بتبعيات النظام التالية:"
+
+#: dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.modaldialog.text
+msgid "System dependencies check"
+msgstr "فحص تبعيات النظام"
+
+#: dp_gui_dialog.src#RID_STR_ADD_PACKAGES.string.text
+msgid "Add Extension(s)"
+msgstr "إضافة امتداد (امتدادات)"
+
+#: dp_gui_dialog.src#RID_CTX_ITEM_REMOVE.string.text
+msgid "~Remove"
+msgstr "إزا~لة"
+
+#: dp_gui_dialog.src#RID_CTX_ITEM_ENABLE.string.text
+msgid "~Enable"
+msgstr "تم~كين"
+
+#: dp_gui_dialog.src#RID_CTX_ITEM_DISABLE.string.text
+msgid "~Disable"
+msgstr "~تعطيل"
+
+#: dp_gui_dialog.src#RID_CTX_ITEM_CHECK_UPDATE.string.text
+msgid "~Update..."
+msgstr "ت~حديث..."
+
+#: dp_gui_dialog.src#RID_CTX_ITEM_OPTIONS.string.text
+msgid "~Options..."
+msgstr "~خيارات..."
+
+#: dp_gui_dialog.src#RID_STR_ADDING_PACKAGES.string.text
+msgctxt "dp_gui_dialog.src#RID_STR_ADDING_PACKAGES.string.text"
+msgid "Adding %EXTENSION_NAME"
+msgstr "جارٍ إضافة %EXTENSION_NAME"
+
+#: dp_gui_dialog.src#RID_STR_REMOVING_PACKAGES.string.text
+msgid "Removing %EXTENSION_NAME"
+msgstr "إزالة %EXTENSION_NAME"
+
+#: dp_gui_dialog.src#RID_STR_ENABLING_PACKAGES.string.text
+msgid "Enabling %EXTENSION_NAME"
+msgstr "تمكين %EXTENSION_NAME"
+
+#: dp_gui_dialog.src#RID_STR_DISABLING_PACKAGES.string.text
+msgid "Disabling %EXTENSION_NAME"
+msgstr "تعطيل %EXTENSION_NAME"
+
+#: dp_gui_dialog.src#RID_STR_ACCEPT_LICENSE.string.text
+msgid "Accept license for %EXTENSION_NAME"
+msgstr "الموافقة على ترخيص %EXTENSION_NAME"
+
+#: dp_gui_dialog.src#RID_STR_INSTALL_FOR_ALL.string.text
+msgid "~For all users"
+msgstr "~لكافة المستخدمين"
+
+#: dp_gui_dialog.src#RID_STR_INSTALL_FOR_ME.string.text
+msgid "~Only for me"
+msgstr "لي و~حدي"
+
+#: dp_gui_dialog.src#RID_STR_ERROR_UNKNOWN_STATUS.string.text
+msgid "Error: The status of this extension is unknown"
+msgstr "خطأ: حالة هذا الامتداد غير معروفة"
+
+#: dp_gui_dialog.src#RID_STR_CLOSE_BTN.string.text
+msgctxt "dp_gui_dialog.src#RID_STR_CLOSE_BTN.string.text"
+msgid "Close"
+msgstr "إغلاق"
+
+#: dp_gui_dialog.src#RID_STR_EXIT_BTN.string.text
+msgid "Quit"
+msgstr "إنهاء"
+
+#: dp_gui_dialog.src#RID_STR_NO_ADMIN_PRIVILEGE.string.text
+msgid ""
+"%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME "
+"extensions are not compatible with this version and need to be updated "
+"before %PRODUCTNAME can be started.\n"
+"\n"
+"Updating of shared extension requires administrator privileges. Contact your "
+"system administrator to update the following shared extensions:"
+msgstr ""
+"تم تحديث %PRODUCTNAME لإصدار جديد. بعض امتدادات %PRODUCTNAME المشتركة غير "
+"متوافقة مع هذا الإصدار ويلزم تحديثها قبل بدء %PRODUCTNAME.\n"
+"\n"
+"يتطلب تحديث الامتداد المشترك امتيازات المسئول. اتصل بمسئول النظام لتحديث "
+"الامتدادات المشتركة التالية:"
+
+#: dp_gui_dialog.src#RID_STR_ERROR_MISSING_DEPENDENCIES.string.text
+msgid ""
+"The extension cannot be enabled as the following system dependencies are not "
+"fulfilled:"
+msgstr "يتعذر تمكين الامتداد نظرًا لعدم استكمال عناصر النظام التابعة التالية:"
+
+#: dp_gui_dialog.src#RID_STR_ERROR_MISSING_LICENSE.string.text
+msgid "This extension is disabled because you haven't accepted the license yet.\n"
+msgstr "تم تعطيل هذا الامتداد لأنك لم توافق على الترخيص بعد.\n"
+
+#: dp_gui_dialog.src#RID_STR_SHOW_LICENSE_CMD.string.text
+msgid "Show license"
+msgstr "إظهار رخصة"
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_HEADER.fixedtext.text
+msgid ""
+"Please follow these steps to proceed with the installation of the extension:"
+msgstr "الرجاء اتباع هذه الخطوات لمتابعة تثبيت الامتداد:"
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1.fixedtext.text
+msgid "1."
+msgstr "1."
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1_TXT.fixedtext.text
+msgid ""
+"Read the complete License Agreement. Use the scroll bar or the \\'Scroll "
+"Down\\' button in this dialog to view the entire license text."
+msgstr ""
+"اقرأ اتفاقية الترخيص الكاملة. استخدم شريط التمرير أو الزر \\'تمرير لأسفل\\' في "
+"مربع الحوار هذا لرؤية نص الترخيص كاملاً."
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2.fixedtext.text
+msgid "2."
+msgstr "2."
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2_TXT.fixedtext.text
+msgid ""
+"Accept the License Agreement for the extension by pressing the \\'Accept\\' "
+"button."
+msgstr "اقبل اتفاقية الترخيص للامتداد بالضغط على الزر \\'قبول\\'."
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.PB_LICENSE_DOWN.pushbutton.text
+msgid "~Scroll Down"
+msgstr "~تمرير لأسفل"
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_ACCEPT.okbutton.text
+msgid "Accept"
+msgstr "قبول"
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_DECLINE.cancelbutton.text
+msgid "Decline"
+msgstr "رفض"
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.modaldialog.text
+msgctxt "dp_gui_dialog.src#RID_DLG_LICENSE.modaldialog.text"
+msgid "Extension Software License Agreement"
+msgstr "تمديد اتفاقية ترخيص البرامج"
+
+# 100%
+#: dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.RID_EM_BTN_CLOSE.okbutton.text
+msgctxt "dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.RID_EM_BTN_CLOSE.okbutton.text"
+msgid "Close"
+msgstr "إغلاق"
+
+#: dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.modaldialog.text
+msgctxt "dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.modaldialog.text"
+msgid "Extension Software License Agreement"
+msgstr "تمديد اتفاقية ترخيص البرامج"
+
+#: dp_gui_dialog.src#RID_WARNINGBOX_INSTALL_EXTENSION.warningbox.text
+msgid ""
+"You are about to install the extension \\'%NAME\\'.\n"
+"Click \\'OK\\' to proceed with the installation.\n"
+"Click \\'Cancel\\' to stop the installation."
+msgstr ""
+"أنت على وشك تثبيت الامتداد \\'%NAME\\'.\n"
+"انقر فوق \\'موافق\\' لمتابعة التثبيت.\n"
+"وانقر فوق \\'إلغاء الأمر\\' لإيقاف التثبيت."
+
+#: dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_EXTENSION.warningbox.text
+msgid ""
+"You are about to remove the extension \\'%NAME\\'.\n"
+"Click \\'OK\\' to remove the extension.\n"
+"Click \\'Cancel\\' to stop removing the extension."
+msgstr ""
+"أنت على وشك إزالة الامتداد \\'%NAME\\'.\n"
+"انقر فوق \\'موافق\\' لإزالة الامتداد.\n"
+"انقر فوق \\'إلغاء الأمر\\' لوقف إزالة الامتداد."
+
+#: dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_SHARED_EXTENSION.warningbox.text
+msgid ""
+"Make sure that no further users are working with the same %PRODUCTNAME, when "
+"changing shared extensions in a multi user environment.\n"
+"Click \\'OK\\' to remove the extension.\n"
+"Click \\'Cancel\\' to stop removing the extension."
+msgstr ""
+"تأكد أنه لا يوجد مستخدمون آخرون يعملون بنفس %PRODUCTNAME، عند تغيير "
+"الامتدادات المشتركة في بيئة متعددة المستخدمين.\n"
+"انقر فوق \\'موافق\\' لإزالة الامتداد.\n"
+"وانقر فوق \\'إلغاء الأمر\\' لإيقاف إزالة الامتداد."
+
+#: dp_gui_dialog.src#RID_WARNINGBOX_ENABLE_SHARED_EXTENSION.warningbox.text
+msgid ""
+"Make sure that no further users are working with the same %PRODUCTNAME, when "
+"changing shared extensions in a multi user environment.\n"
+"Click \\'OK\\' to enable the extension.\n"
+"Click \\'Cancel\\' to stop enabling the extension."
+msgstr ""
+"تأكد أنه لا يوجد مستخدمون آخرون يعملون بنفس %PRODUCTNAME، عند تغيير "
+"الامتدادات المشتركة في بيئة متعددة المستخدمين.\n"
+"انقر فوق \\'موافق\\' لتمكين الامتداد.\n"
+"وانقر فوق \\'إلغاء الأمر\\' لإيقاف تمكين الامتداد."
+
+#: dp_gui_dialog.src#RID_WARNINGBOX_DISABLE_SHARED_EXTENSION.warningbox.text
+msgid ""
+"Make sure that no further users are working with the same %PRODUCTNAME, when "
+"changing shared extensions in a multi user environment.\n"
+"Click \\'OK\\' to disable the extension.\n"
+"Click \\'Cancel\\' to stop disabling the extension."
+msgstr ""
+"تأكد أنه لا يوجد مستخدمون آخرون يعملون بنفس %PRODUCTNAME، عند تغيير "
+"الامتدادات المشتركة في بيئة متعددة المستخدمين.\n"
+"انقر فوق \\'موافق\\' لتعطيل الامتداد.\n"
+"وانقر فوق \\'إلغاء الأمر\\' لإيقاف تعطيل الامتداد."
+
+#: dp_gui_dialog.src#RID_STR_UNSUPPORTED_PLATFORM.string.text
+msgid "The extension \\'%Name\\' does not work on this computer."
+msgstr "لا يعمل الامتداد \\'%Name\\' على هذا الكمبيوتر."
+
+#: dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_ADD.pushbutton.text
+msgid "~Add..."
+msgstr "إ~ضافة..."
+
+#: dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CHECK_UPDATES.pushbutton.text
+msgctxt "dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CHECK_UPDATES.pushbutton.text"
+msgid "Check for ~Updates..."
+msgstr "التحقق من وجود ~تحديثات..."
+
+#: dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_FT_GET_EXTENSIONS.fixedtext.text
+msgid "Get more extensions online..."
+msgstr "الحصول على المزيد من الامتدادات عبر الإنترنت..."
+
+#: dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_FT_PROGRESS.fixedtext.text
+msgctxt "dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_FT_PROGRESS.fixedtext.text"
+msgid "Adding %EXTENSION_NAME"
+msgstr "جارٍ إضافة % EXTENSION_NAME"
+
+#: dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CLOSE.okbutton.text
+msgctxt "dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CLOSE.okbutton.text"
+msgid "Close"
+msgstr "إغلاق"
+
+#: dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.modelessdialog.text
+msgid "Extension Manager"
+msgstr "إدارة الامتدادات"
+
+#: dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_MSG.fixedtext.text
+msgid ""
+"%PRODUCTNAME has been updated to a new version. Some installed %PRODUCTNAME "
+"extensions are not compatible with this version and need to be updated "
+"before they can be used."
+msgstr ""
+"تم تحديث %PRODUCTNAME لإصدار جديد. بعض امتدادات %PRODUCTNAME المثبتة غير "
+"متوافقة مع هذا الإصدار ويلزم تحديثها قبل استخدامها."
+
+#: dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_PROGRESS.fixedtext.text
+msgctxt "dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_PROGRESS.fixedtext.text"
+msgid "Adding %EXTENSION_NAME"
+msgstr "إضافة %EXTENSION_NAME"
+
+#: dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CHECK_UPDATES.pushbutton.text
+msgctxt "dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CHECK_UPDATES.pushbutton.text"
+msgid "Check for ~Updates..."
+msgstr "التحقق من وجود ~تحديثات..."
+
+#: dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CLOSE.pushbutton.text
+msgid "Disable all"
+msgstr "تعطيل الكل"
+
+#: dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.modaldialog.text
+msgid "Extension Update Required"
+msgstr "يلزم تحديث الامتداد"
+
+#: dp_gui_dialog2.src#RID_QUERYBOX_INSTALL_FOR_ALL.querybox.text
+msgid ""
+"Make sure that no further users are working with the same %PRODUCTNAME, when "
+"installing an extension for all users in a multi user environment.\n"
+"\n"
+"For whom do you want to install the extension?\n"
+msgstr ""
+"تأكد من عدم تعامل مستخدمين آخرين مع %PRODUCTNAME نفسه، عند تثبيت امتداد "
+"لكافة المستخدمين في بيئة متعددة المستخدمين. \n"
+"\n"
+"لمن تريد تثبيت الامتداد؟\n"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CHECKING.fixedtext.text
+msgid "Checking..."
+msgstr "جارٍ الفحص..."
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_UPDATE.fixedtext.text
+msgid "~Available extension updates"
+msgstr "~تحديثات الامتداد المتوفرة"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ALL.checkbox.text
+msgid "~Show all updates"
+msgstr "إ~ظهار كافة التحديثات"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_DESCRIPTION.fixedline.text
+msgid "Description"
+msgstr "الوصف"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_PUBLISHER_LABEL.fixedtext.text
+msgid "Publisher:"
+msgstr "الناشر:"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_RELEASENOTES_LABEL.fixedtext.text
+msgid "What is new:"
+msgstr "ما الجديد:"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_RELEASENOTES_LINK.fixedtext.text
+msgid "Release Notes"
+msgstr "ملاحظات الإصدار"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_OK.pushbutton.text
+msgid "~Install"
+msgstr "ت~ثبيت"
+
+# 100%
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CLOSE.pushbutton.text
+msgctxt "dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CLOSE.pushbutton.text"
+msgid "Close"
+msgstr "إغلاق"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ERROR.string.text
+msgid "Error"
+msgstr "خطأ"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NONE.string.text
+msgid "No new updates are available."
+msgstr "لا تتوفر تحديثات جديدة ."
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALLABLE.string.text
+msgid ""
+"No installable updates are available. To see ignored or disabled updates, "
+"mark the check box 'Show all updates'."
+msgstr ""
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_FAILURE.string.text
+msgid "An error occurred:"
+msgstr "حدث خطأ:"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_UNKNOWNERROR.string.text
+msgid "Unknown error."
+msgstr "خطأ غير معروف."
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODESCRIPTION.string.text
+msgid "No more details are available for this update."
+msgstr ""
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALL.string.text
+msgid "The extension cannot be updated because:"
+msgstr "يتعذر تحديث الامتداد بسبب:"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY.string.text
+msgid "Required OpenOffice.org version doesn't match:"
+msgstr "إصدار OpenOffice.org المطلوب غير مطابق:"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY_CUR_VER.string.text
+msgid "You have OpenOffice.org %VERSION"
+msgstr "لديك OpenOffice.org %VERSION"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_BROWSERBASED.string.text
+msgid "browser based update"
+msgstr "تحديث مستند إلى المستعرض"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_VERSION.string.text
+msgid "Version"
+msgstr "الإصدار"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORE.string.text
+msgid "Ignore this Update"
+msgstr ""
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORE_ALL.string.text
+msgid "Ignore all Updates"
+msgstr ""
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ENABLE.string.text
+msgid "Enable Updates"
+msgstr ""
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORED_UPDATE.string.text
+msgid "This update will be ignored.\n"
+msgstr ""
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.modaldialog.text
+msgid "Extension Update"
+msgstr "تحديث الامتداد"
+
+#: dp_gui_updatedialog.src#RID_WARNINGBOX_UPDATE_SHARED_EXTENSION.warningbox.text
+msgid ""
+"Make sure that no further users are working with the same %PRODUCTNAME, when "
+"changing shared extensions in a multi user environment.\n"
+"Click \\'OK\\' to update the extensions.\n"
+"Click \\'Cancel\\' to stop updating the extensions."
+msgstr ""
+"تأكد أنه لا يوجد مستخدمون آخرون يعملون بنفس %PRODUCTNAME، عند تغيير "
+"الامتدادات المشتركة في بيئة متعددة المستخدمين.\n"
+"انقر فوق \\'موافق\\' لتحديث الامتدادات.\n"
+"وانقر فوق \\'إلغاء الأمر\\' لإيقاف تحديث الامتدادات."
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_DOWNLOADING.fixedtext.text
+msgid "Downloading extensions..."
+msgstr "جارٍ تنزيل الامتدادات..."
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_RESULTS.fixedtext.text
+msgid "Result"
+msgstr "النتيجة"
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_OK.okbutton.text
+msgid "OK"
+msgstr "موافق"
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ABORT.cancelbutton.text
+msgid "Cancel Update"
+msgstr "إلغاء التحديث"
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_INSTALLING.string.text
+msgid "Installing extensions..."
+msgstr "جارٍ تثبيت الامتدادات ..."
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_FINISHED.string.text
+msgid "Installation finished"
+msgstr "انتهى التثبيت"
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_NO_ERRORS.string.text
+msgid "No errors."
+msgstr "لا توجد أخطاء."
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_DOWNLOAD.string.text
+msgid "Error while downloading extension %NAME. "
+msgstr "حدث خطأ أثناء تنزيل الامتداد %NAME. "
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_THIS_ERROR_OCCURRED.string.text
+msgid "The error message is: "
+msgstr "رسالة الخطأ هي: "
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_INSTALLATION.string.text
+msgid "Error while installing extension %NAME. "
+msgstr "حدث خطأ أثناء تثبيت الامتداد %NAME. "
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_LIC_DECLINED.string.text
+msgid "The license agreement for extension %NAME was refused. "
+msgstr "تم رفض اتفاقية الترخيص للامتداد %NAME. "
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_EXTENSION_NOINSTALL.string.text
+msgid "The extension will not be installed."
+msgstr "لن يتم تثبيت الامتداد."
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.modaldialog.text
+msgid "Download and Installation"
+msgstr "تنزيل وتثبيت"
+
+#: dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.warningbox.text
+msgid ""
+"You are about to install version $NEW of the extension \\'$NAME\\'.\n"
+"The newer version $DEPLOYED is already installed.\n"
+"Click \\'OK\\' to replace the installed extension.\n"
+"Click \\'Cancel\\' to stop the installation."
+msgstr ""
+"أنت على وشك تثبيت الإصدار $NEW للامتداد \\'$NAME\\'.\n"
+"الإصدار الأحدث $DEPLOYED مثبّت بالفعل. انقر فوق \\'موافق\\' لاستبدال الامتداد "
+"المثبت.\n"
+"وانقر فوق \\'إلغاء الأمر\\' لإيقاف التثبيت."
+
+#: dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_LESS_DIFFERENT_NAMES.string.text
+msgid ""
+"You are about to install version $NEW of the extension \\'$NAME\\'.\n"
+"The newer version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\n"
+"Click \\'OK\\' to replace the installed extension.\n"
+"Click \\'Cancel\\' to stop the installation."
+msgstr ""
+"أنت على وشك تثبيت الإصدار $NEW للامتداد \\'$NAME\\'.\n"
+"الإصدار الأحدث المسمى $DEPLOYED، المسمى \\'$OLDNAME\\' مثبت بالفعل. انقر فوق "
+"\\'موافق\\' لاستبدال الامتداد المثبت.\n"
+"وانقر فوق \\'إلغاء الأمر\\' لإيقاف التثبيت."
+
+#: dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_EQUAL.warningbox.text
+msgid ""
+"You are about to install version $NEW of the extension \\'$NAME\\'.\n"
+"That version is already installed.\n"
+"Click \\'OK\\' to replace the installed extension.\n"
+"Click \\'Cancel\\' to stop the installation."
+msgstr ""
+"أنت على وشك تثبيت الإصدار $NEW للامتداد \\'$NAME\\'.\n"
+"هذا الإصدار مثبت بالفعل. انقر فوق \\'موافق\\' لاستبدال الامتداد المثبّت.\n"
+"وانقر فوق \\'إلغاء الأمر\\' لإيقاف التثبيت."
+
+#: dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_EQUAL_DIFFERENT_NAMES.string.text
+msgid ""
+"You are about to install version $NEW of the extension \\'$NAME\\'.\n"
+"That version, named \\'$OLDNAME\\', is already installed.\n"
+"Click \\'OK\\' to replace the installed extension.\n"
+"Click \\'Cancel\\' to stop the installation."
+msgstr ""
+"أنت على وشك تثبيت الإصدار $NEW للامتداد \\'$NAME\\'.\n"
+"هذا الإصدار المسمى \\'$OLDNAME\\'، مثبت بالفعل. انقر فوق \\'موافق\\' لاستبدال "
+"الامتداد المثبت.\n"
+"وانقر فوق \\'إلغاء الأمر\\' لإيقاف التثبيت."
+
+#: dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_GREATER.warningbox.text
+msgid ""
+"You are about to install version $NEW of the extension \\'$NAME\\'.\n"
+"The older version $DEPLOYED is already installed.\n"
+"Click \\'OK\\' to replace the installed extension.\n"
+"Click \\'Cancel\\' to stop the installation."
+msgstr ""
+"أنت على وشك تثبيت الإصدار $NEW للامتداد \\'$NAME\\'.\n"
+"الإصدار الأقدم المسمى $DEPLOYED مثبت بالفعل. انقر فوق \\'موافق\\' لاستبدال "
+"الامتداد المثبت.\n"
+"وانقر فوق \\'إلغاء الأمر\\' لإيقاف التثبيت."
+
+#: dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_GREATER_DIFFERENT_NAMES.string.text
+msgid ""
+"You are about to install version $NEW of the extension \\'$NAME\\'.\n"
+"The older version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\n"
+"Click \\'OK\\' to replace the installed extension.\n"
+"Click \\'Cancel\\' to stop the installation."
+msgstr ""
+"أنت على وشك تثبيت الإصدار $NEW للامتداد \\'$NAME\\'.\n"
+"الإصدار الأقدم المسمى $DEPLOYED، المسمى \\'$OLDNAME\\' مثبت بالفعل. انقر فوق "
+"\\'موافق\\' لاستبدال الامتداد المثبت.\n"
+"وانقر فوق \\'إلغاء الأمر\\' لإيقاف التثبيت."
+
+#: dp_manager.src#RID_STR_COPYING_PACKAGE.string.text
+msgid "Copying: "
+msgstr "نسخ: "
+
+#: dp_manager.src#RID_STR_ERROR_WHILE_ADDING.string.text
+msgid "Error while adding: "
+msgstr "حدث خطأ أثناء الإضافة: "
+
+#: dp_manager.src#RID_STR_ERROR_WHILE_REMOVING.string.text
+msgid "Error while removing: "
+msgstr "حدث خطأ أثناء الإزالة: "
+
+#: dp_manager.src#RID_STR_PACKAGE_ALREADY_ADDED.string.text
+msgid "Extension has already been added: "
+msgstr "تمت إضافة امتداد بالفعل: "
+
+#: dp_manager.src#RID_STR_NO_SUCH_PACKAGE.string.text
+msgid "There is no such extension deployed: "
+msgstr "لم يتم نشر امتداد بهذا الاسم: "
+
+#: dp_manager.src#RID_STR_SYNCHRONIZING_REPOSITORY.string.text
+msgid "Synchronizing repository for %NAME extensions"
+msgstr "مزامنة المخزون لامتدادات %NAME"
+
+#: dp_registry.src#RID_STR_REGISTERING_PACKAGE.string.text
+msgid "Enabling: "
+msgstr "تمكين: "
+
+#: dp_registry.src#RID_STR_REVOKING_PACKAGE.string.text
+msgid "Disabling: "
+msgstr "تعطيل: "
+
+#: dp_registry.src#RID_STR_CANNOT_DETECT_MEDIA_TYPE.string.text
+msgid "Cannot detect media-type: "
+msgstr "لا يمكن التعرف على نوع الوسائط: "
+
+#: dp_registry.src#RID_STR_UNSUPPORTED_MEDIA_TYPE.string.text
+msgid "This media-type is not supported: "
+msgstr "هذه الوسائط غير مدعومة: "
+
+#: dp_registry.src#RID_STR_ERROR_WHILE_REGISTERING.string.text
+msgid "An error occurred while enabling: "
+msgstr "حدث خطأ أثناء التمكين: "
+
+#: dp_registry.src#RID_STR_ERROR_WHILE_REVOKING.string.text
+msgid "An error occurred while disabling: "
+msgstr "حدث خطأ أثناء التعطيل: "
+"X-Accelerator-Marker: ~\n"
+
+#: dp_configuration.src#RID_STR_CONF_SCHEMA.string.text
+msgid "Configuration Schema"
+msgstr "مخطط التكوين"
+
+#: dp_configuration.src#RID_STR_CONF_DATA.string.text
+msgid "Configuration Data"
+msgstr "بيانات التكوين"
+
+#: dp_component.src#RID_STR_DYN_COMPONENT.string.text
+msgid "UNO Dynamic Library Component"
+msgstr "مكون المكتبة الديناميكية لـ UNO"
+
+#: dp_component.src#RID_STR_JAVA_COMPONENT.string.text
+msgid "UNO Java Component"
+msgstr "مكون جافا لـ UNO"
+
+#: dp_component.src#RID_STR_PYTHON_COMPONENT.string.text
+msgid "UNO Python Component"
+msgstr "مكون UNO Python"
+
+#: dp_component.src#RID_STR_COMPONENTS.string.text
+msgid "UNO Components"
+msgstr ""
+
+#: dp_component.src#RID_STR_RDB_TYPELIB.string.text
+msgid "UNO RDB Type Library"
+msgstr "مكتبة أنواع UNO RDB"
+
+#: dp_component.src#RID_STR_JAVA_TYPELIB.string.text
+msgid "UNO Java Type Library"
+msgstr "مكتبة أنواع جافا لـ UNO"
+
+#: dp_package.src#RID_STR_PACKAGE_BUNDLE.string.text
+msgid "Extension"
+msgstr "الامتداد"
+
+#: dp_script.src#RID_STR_BASIC_LIB.string.text
+msgid "%PRODUCTNAME Basic Library"
+msgstr "مكتبة قاعدة %PRODUCTNAME"
+
+#: dp_script.src#RID_STR_DIALOG_LIB.string.text
+msgid "Dialog Library"
+msgstr "مكتبة مربعات الحوار"
+
+#: dp_script.src#RID_STR_CANNOT_DETERMINE_LIBNAME.string.text
+msgid "The library name could not be determined."
+msgstr "تعذر تحديد اسم المكتبة."
+
+#: dp_script.src#RID_STR_LIBNAME_ALREADY_EXISTS.string.text
+msgid "This library name already exists. Please choose a different name."
+msgstr "اسم المكتبة مستخدم بالفعل. الرجاء اختيار اسم مختلف."
+
+#: dp_help.src#RID_STR_HELP.string.text
+msgid "Help"
+msgstr "تعليمات"
+
+#: dp_help.src#RID_STR_HELPPROCESSING_GENERAL_ERROR.string.text
+msgid "The extension cannot be installed because:\n"
+msgstr "لا يمكن تثبيت الامتداد بسبب:\n"
+
+#: dp_help.src#RID_STR_HELPPROCESSING_XMLPARSING_ERROR.string.text
+msgid "The extension will not be installed because an error occurred in the Help "
+"files:\n"
+msgstr "لن يتم تثبيت الامتداد نظرًا لحدوث خطأ في ملفات التعليمات:\n"
+
+#: dp_sfwk.src#RID_STR_SFWK_LIB.string.text
+msgid "%MACROLANG Library"
+msgstr "مكتبة %MACROLANG"
+
+#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_1.string.text
+msgid "Extension Software License Agreement of $NAME:"
+msgstr "اتفاقية ترخيص برنامج الامتداد لـ $NAME:"
+
+#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_2.string.text
+msgid ""
+"Read the complete License Agreement displayed above. Accept the License "
+"Agreement by typing \"yes\" on the console then press the Return key. Type "
+"\"no\" to decline and to abort the extension setup."
+msgstr ""
+"اقرأ اتفاقية الترخيص المعروضة أعلاه كاملة. واقبل اتفاقية الترخيص بكتابة "
+"\"نعم\" في وحدة التحكم، ثم اضغط على زر الإدخال. اكتب \"لا\" لرفض الاتفاقية "
+"وإلغاء إعداد الامتداد."
+
+#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_3.string.text
+msgid "[Enter \"yes\" or \"no\"]:"
+msgstr "[أدخل \"نعم\" أو \"لا\"]:"
+
+#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_4.string.text
+msgid "Your input was not correct. Please enter \"yes\" or \"no\":"
+msgstr "البيانات التي أدخلتها غير صحيحة. الرجاء إدخال \"نعم\" أو \"لا\":"
+
+#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.string.text
+msgid "YES"
+msgstr "نعم"
+
+#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_Y.string.text
+msgid "Y"
+msgstr "ن"
+
+#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_NO.string.text
+msgid "NO"
+msgstr "لا"
+
+#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_N.string.text
+msgid "N"
+msgstr "ل"
+
+#: unopkg.src#RID_STR_CONCURRENTINSTANCE.string.text
+msgid ""
+"unopkg cannot be started. The lock file indicates it as already running. If "
+"this does not apply, delete the lock file at:"
+msgstr ""
+"يتعذر بدء unopkg. حيث يشير ملف القفل إلى أنه قيد التشغيل بالفعل. فإن لم يكن "
+"كذلك، فقم بحذف ملف القفل في:"
+
+#: unopkg.src#RID_STR_UNOPKG_ERROR.string.text
+msgid "ERROR: "
+msgstr "خطأ: "
+
+#: dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_UNKNOWN.string.text
+msgid "Unknown"
+msgstr "غير معروف"
+
+#: dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MIN.string.text
+msgid "Extension requires at least OpenOffice.org %VERSION"
+msgstr ""
+
+#: dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MAX.string.text
+msgid ""
+"Extension doesn't support versions greater than: OpenOffice.org %VERSION"
+msgstr "لا يدعم الامتداد الإصدارات الأعلى من: OpenOffice.org %VERSION"
+
+#: setup.ulf#_APP_TITLE_.LngText.text
+msgid "Setup"
+msgstr "إعداد"
+
+#: setup.ulf#_APP_PROD_TITLE_.LngText.text
+msgid "The %PRODUCTNAME Setup"
+msgstr "إعداد %PRODUCTNAME"
+
+#: setup.ulf#_OUTOFMEM_.LngText.text
+msgid "Out of Memory"
+msgstr "نفاد الذاكرة"
+
+#: setup.ulf#_NOMSI_.LngText.text
+msgid "Setup was unable to find the msi package."
+msgstr "لم يتمكن برنامج الإعداد من العثور على حزمة msi."
+
+#: setup.ulf#_USER_CANCELLED_.LngText.text
+msgid "Setup was cancelled"
+msgstr "تم إلغاء الإعداد"
+
+#: setup.ulf#_REQUIRES_ADMIN_PRIV_.LngText.text
+msgid ""
+"Administrator privileges are required for upgrading the Windows Installer."
+msgstr "يجب توفر امتيازات المسؤول لترقية Windows Installer."
+
+#: setup.ulf#_FILE_NOT_FOUND_.LngText.text
+msgid "Setup was unable to find the file '%s'."
+msgstr "لم يتمكن برنامج الإعداد من العثور على الملف '%s'."
+
+#: setup.ulf#_INVALID_PARAM_.LngText.text
+msgid "Invalid command line option '%s'. Please use '/?' for help."
+msgstr ""
+"خيار سطر الأوامر '%s' غير صالح. الرجاء استخدام '/?' للحصول على المساعدة."
+
+#: setup.ulf#_SETUP_TO_OLD_.LngText.text
+msgid ""
+"This package requires at least the version '%s' of the Windows Installer. \n"
+"You have Windows Installer '%s' on your system!"
+msgstr ""
+"تتطلب هذه الحزمة على الأقل الإصدار '%s' من Windows Installer. \n"
+"لديك Windows Installer '%s' مثبت على النظام!"
+
+#: setup.ulf#_SETUP_NOT_FOUND_.LngText.text
+msgid ""
+"This package requires the Windows Installer. \n"
+"You need at least Windows Installer '%s' on your system!"
+msgstr ""
+"تتطلب هذه الحزمة Windows Installer. \n"
+"تحتاج إلى تثبيت Windows Installer على الأقل '%s' على نظامك!"
+
+#: setup.ulf#_USAGE_.LngText.text
+msgid ""
+"Usage:\n"
+"   /? :  Shows this dialog.\n"
+"   /a :  Performs an administrative installation.\n"
+"   /j[u|m] :  Performs an advertising installation.\n"
+"   /q[n] : Do not show any user interface (silent mode).\n"
+msgstr ""
+"الاستخدام:\n"
+" /? : إظهار مربع الحوار هذا.\n"
+" /a : إجراء تثبيت إداري.\n"
+" /j[u|m] : إجراء تثبيت إعلاني.\n"
+" /q[n] : عدم إظهار واجهة مستخدم (وضع السكون).\n"
+
+#: setup.ulf#_ALREADY_RUNNING_.LngText.text
+msgid "There is already a setup process running."
+msgstr "توجد عملية إعداد قيد الإجراء بالفعل."
+
+#: setup.ulf#_UNKNOWN_ERROR_.LngText.text
+msgid "An Unknown Error occured!"
+msgstr "حدث خطأ غير معروف!"
+
+#: setup.ulf#_INVALID_PROFILE_.LngText.text
+msgid "Invalid or incomplete profile."
+msgstr "ملف تعريف غير صالح أو غير مكتمل."
+
+#: setup.ulf#_UNKNOWN_LANG_.LngText.text
+msgid "Unknown Language: %d"
+msgstr "لغة غير معروفة: %d"
+
+#: setup.ulf#_LANGUAGE_ZH_TW_.LngText.text
+msgid "Chinese (traditional)"
+msgstr "الصينية (التقليدية)"
+
+#: setup.ulf#_LANGUAGE_CS_.LngText.text
+msgid "Czech"
+msgstr "التشيكية"
+
+#: setup.ulf#_LANGUAGE_DA_.LngText.text
+msgid "Danish"
+msgstr "الدانمركية"
+
+#: setup.ulf#_LANGUAGE_DE_DE_.LngText.text
+msgid "German (Germany)"
+msgstr "الألمانية (ألمانيا)"
+
+#: setup.ulf#_LANGUAGE_EL_.LngText.text
+msgid "Greek"
+msgstr "اليونانية"
+
+#: setup.ulf#_LANGUAGE_EN_US_.LngText.text
+msgid "English (USA)"
+msgstr "الإنجليزية (الولايات المتحدة)"
+
+#: setup.ulf#_LANGUAGE_ES_.LngText.text
+msgid "Spanish (Spain)"
+msgstr "الإسبانية (إسبانيا)"
+
+#: setup.ulf#_LANGUAGE_FI_.LngText.text
+msgid "Finnish"
+msgstr "الفنلندية"
+
+#: setup.ulf#_LANGUAGE_FR_FR_.LngText.text
+msgid "French (France)"
+msgstr "الفرنسية (فرنسا)"
+
+#: setup.ulf#_LANGUAGE_HE_.LngText.text
+msgid "Hebrew"
+msgstr "العبرية"
+
+#: setup.ulf#_LANGUAGE_HU_.LngText.text
+msgid "Hungarian"
+msgstr "المجرية"
+
+#: setup.ulf#_LANGUAGE_IT_IT_.LngText.text
+msgid "Italian (Italy)"
+msgstr "الإيطالية (إيطاليا)"
+
+#: setup.ulf#_LANGUAGE_JA_.LngText.text
+msgid "Japanese"
+msgstr "اليابانية"
+
+#: setup.ulf#_LANGUAGE_KO_.LngText.text
+msgid "Korean"
+msgstr "الكورية"
+
+#: setup.ulf#_LANGUAGE_NL_NL_.LngText.text
+msgid "Dutch (Netherlands)"
+msgstr "الهولندية (هولندا)"
+
+#: setup.ulf#_LANGUAGE_NO_NO_.LngText.text
+msgid "Norwegian (Bokmål)"
+msgstr "النرويجية (بوكمال)"
+
+#: setup.ulf#_LANGUAGE_PL_.LngText.text
+msgid "Polish"
+msgstr "البولندية"
+
+#: setup.ulf#_LANGUAGE_PT_BR_.LngText.text
+msgid "Portuguese (Brazil)"
+msgstr "البرتغالية (البرازيل)"
+
+#: setup.ulf#_LANGUAGE_RU_.LngText.text
+msgid "Russian"
+msgstr "الروسية"
+
+#: setup.ulf#_LANGUAGE_SK_.LngText.text
+msgid "Slovak"
+msgstr "السلوفاكية"
+
+#: setup.ulf#_LANGUAGE_SV_SE_.LngText.text
+msgid "Swedish (Sweden)"
+msgstr "السويدية (السويد)"
+
+#: setup.ulf#_LANGUAGE_TH_.LngText.text
+msgid "Thai"
+msgstr "التايلاندية"
+
+#: setup.ulf#_LANGUAGE_TR_.LngText.text
+msgid "Turkish"
+msgstr "التركية"
+
+#: setup.ulf#_LANGUAGE_ET_.LngText.text
+msgid "Estonian"
+msgstr "الإستونية"
+
+#: setup.ulf#_LANGUAGE_ZH_CN_.LngText.text
+msgid "Chinese (Simplified)"
+msgstr "الصينية (المبسطة)"
+
+#: setup.ulf#_LANGUAGE_PT_PT_.LngText.text
+msgid "Portuguese (Portugal)"
+msgstr "البرتغالية (البرتغال)"
+
+#: rebasegui.ulf#_APP_TITLE_.LngText.text
+msgid "Installation Status"
+msgstr "حالة التثبيت"
+
+#: rebasegui.ulf#_MSG_OPTIMIZED_FOR_CLIENT_.LngText.text
+msgid "Installation is optimized for clients."
+msgstr "تم تحسين التثبيت للعملاء."
+
+#: rebasegui.ulf#_MSG_OPTIMIZED_FOR_SERVER_.LngText.text
+msgid "Installation is optimized for servers."
+msgstr "تم تحسين التثبيت للخوادم."
+
+#: rebasegui.ulf#_MSG_NO_INSTALLATION_FOUND_.LngText.text
+msgid "Cannot find Office installation."
+msgstr "لا يمكن العثور على تثبيت Office."

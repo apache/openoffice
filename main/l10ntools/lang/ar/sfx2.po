@@ -1,0 +1,2502 @@
+
+#: view.src#STR_NODEFPRINTER.string.text
+msgid ""
+"No default printer found.\n"
+"Please choose a printer and try again."
+msgstr ""
+"لا توجد طابعة افتراضية.\n"
+"الرجاء اختيار طابعة والمحاولة من جديد."
+
+#: view.src#STR_NOSTARTPRINTER.string.text
+msgid ""
+"Could not start printer.\n"
+"Please check your printer configuration."
+msgstr ""
+"تعذر تشغيل الطابعة.\n"
+"الرجاء مراجعة إعدادات الطابعة."
+
+#: view.src#STR_PRINTER_NOTAVAIL.string.text
+msgid ""
+"This document has been formatted for the printer $1. The specified printer "
+"is not available. \n"
+"Do you want to use the standard printer $2 ?"
+msgstr ""
+"تم تنسيق هذا المستند للطابعة $1. ولكن الطابعة المحددة غير متوفرة.\n"
+"هل تريد استخدام الطابعة القياسية $2؟"
+
+#: view.src#STR_PRINT_OPTIONS.string.text
+msgid "Options..."
+msgstr "خيارات..."
+
+#: view.src#STR_PRINT_OPTIONS_TITLE.string.text
+msgid "Printer Options"
+msgstr "خيارات الطابعة"
+
+#: view.src#STR_ERROR_PRINTER_BUSY.string.text
+msgid "Printer busy"
+msgstr "الطابعة مشغولة"
+
+#: view.src#STR_ERROR_PRINT.string.text
+msgid "Error while printing"
+msgstr "خطأ أثناء الطباعة"
+
+#: view.src#STR_PRINTING.string.text
+msgid "Printing"
+msgstr "طباعة"
+
+#: view.src#STR_PAGE.string.text
+msgid "Page "
+msgstr "الصفحة "
+
+#: view.src#STR_ERROR_SAVE_TEMPLATE.string.text
+msgid "Error saving template "
+msgstr "خطأ أثناء حفظ القالب "
+
+#: view.src#STR_READONLY.string.text
+msgid " (read-only)"
+msgstr " (للقراءة فقط)"
+
+#: view.src#STR_PRINT_NEWORI.string.text
+msgctxt "view.src#STR_PRINT_NEWORI.string.text"
+msgid ""
+"The page size and orientation have been modified.\n"
+"Would you like to save the new settings in the\n"
+"active document?"
+msgstr ""
+"تم تعديل حجم الصفحة واتجاهها.\n"
+"فهل تريد حفظ الإعدادات الجديدة في\n"
+"المستند النشط؟"
+
+#: view.src#STR_PRINT_NEWSIZE.string.text
+msgid ""
+"The page size has been modified.\n"
+"Should the new settings be saved\n"
+"in the active document?"
+msgstr ""
+"تم تعديل حجم الورقة. \n"
+"هل ترغب في حفظ الإعدادات الجديدة \n"
+"في المستند النشط ؟"
+
+#: view.src#STR_PRINT_NEWORISIZE.string.text
+msgctxt "view.src#STR_PRINT_NEWORISIZE.string.text"
+msgid ""
+"The page size and orientation have been modified.\n"
+"Would you like to save the new settings in the\n"
+"active document?"
+msgstr ""
+"تم تعديل حجم الصفحة واتجاهها.\n"
+"فهل تريد حفظ الإعدادات الجديدة في\n"
+"المستند النشط؟"
+
+#: view.src#STR_PREVIEW_DOCINFO.string.text
+msgid ""
+"<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$("
+"TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt>"
+"<b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
+msgstr ""
+"<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>العنوان:</b><dd>"
+"$(TITEL)<dt><b>الموضوع:</b><dd>$(THEME)<dt><b>كلمات البحث:</b><dd>$(KEYWORDS"
+")<dt><b>الوصف:</b><dd>$(TEXT)</dl></font></body></html>"
+
+#: view.src#STR_PREVIEW_NODOCINFO.string.text
+msgid ""
+"<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document "
+"properties found.</B></FONT></P></BODY></HTML>"
+msgstr ""
+"<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>لم يُعثر على "
+"خصائص المستند.</B></FONT></P></BODY></HTML>"
+
+#: view.src#MSG_CANT_CLOSE.infobox.text
+msgid ""
+"The document cannot be closed because a\n"
+" print job is being carried out."
+msgstr ""
+"لا يمكن إغلاق المستند بسبب \n"
+"وجود مهمة طباعة قيد التنفيذ. "
+
+#: view.src#DLG_PRINTMONITOR_TEXT.#define.text
+msgid "Print Monitor"
+msgstr "شاشة الطباعة"
+
+#: view.src#DLG_PRINTMONITOR.FT_PRINTING.fixedtext.text
+msgid "is being printed on"
+msgstr "سوف يُطبع على"
+
+#: view.src#DLG_PRINTMONITOR.STR_FT_PREPARATION.string.text
+msgid "is being prepared for printing"
+msgstr "يجري إعداده للطباعة"
+
+#: view.src#MSG_ERROR_SEND_MAIL.infobox.text
+msgid ""
+"An error occurred in sending the message. Possible errors could be a missing "
+"user account or a defective setup.\n"
+"Please check the %PRODUCTNAME settings or your e-mail program settings."
+msgstr ""
+"حدث خطأ أثناء إرسال الرسالة. ربما يكون الخطأ في عدم وجود حساب مستخدم أو أن "
+"تثبيت البرنامج به خلل.\n"
+"الرجاء التأكد من إعدادات %PRODUCTNAME أو إعدادات برنامج البريد الإلكتروني "
+"الخاص بك."
+
+#: view.src#MSG_QUERY_OPENASTEMPLATE.querybox.text
+msgid ""
+"This document cannot be edited, possibly due to missing access rights. Do "
+"you want to edit a copy of the document?"
+msgstr ""
+"لا يمكن تحرير المستند، ربما بسبب حقوق الوصول المفقودة. هل تريد تحرير نسخة من "
+"المستند؟"
+
+#: view.src#STR_REPAIREDDOCUMENT.string.text
+msgid " (repaired document)"
+msgstr " (مستند تم إصلاحه)"
+
+#: view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.errorbox.text
+msgid ""
+"%PRODUCTNAME could not find a web browser on your system. Please check your "
+"Desktop Preferences or install a web browser (for example, Mozilla) in the "
+"default  location requested during the browser installation."
+msgstr ""
+"تعذر على %PRODUCTNAME العثور على مستعرض ويب على نظامك. الرجاء مراجعة تفضيلات "
+"سطح المكتب أو تثبيت مستعرض ويب (مثل Mozilla) في المكان الافتراضي المطلوب "
+"أثناء تثبيت المستعرض."
+
+#: menu.src#STR_MENU_CFGITEM.string.text
+msgid "Configuration Menu"
+msgstr "قائمة التهيئة"
+
+#: menu.src#STR_MENU_ADDONS.string.text
+msgid "~Add-Ons"
+msgstr "إ~ضافات"
+
+#: menu.src#MN_CLIPBOARDFUNCS.SID_CUT.menuitem.text
+msgid "Cu~t"
+msgstr "~قص"
+
+#: menu.src#MN_CLIPBOARDFUNCS.SID_COPY.menuitem.text
+msgid "~Copy"
+msgstr "~نسخ"
+
+#: menu.src#MN_CLIPBOARDFUNCS.SID_PASTE.menuitem.text
+msgid "~Paste"
+msgstr "~لصق"
+
+#: menu.src#SID_WIN_FULLSCREEN.string.text
+msgid "Leave Full-Screen Mode"
+msgstr "إبقاء نمط الشاشة الكاملة"
+
+#: menu.src#STR_MENU_ADDONHELP.string.text
+msgid "Add-~On Help"
+msgstr "تعليمات الأ~داة الإضافية"
+
+#: menu.src#STR_MENU_SYNONYMS.string.text
+msgid "Synonyms"
+msgstr "المرادفات"
+
+#: menu.src#STR_MENU_NO_SYNONYM_FOUND.string.text
+msgid "(none)"
+msgstr "(بلا)"
+
+#: menu.src#STR_MENU_THESAURUS.string.text
+msgid "~Thesaurus..."
+msgstr "قا~موس المترادفات..."
+
+#: fltfnc.src#STR_FILTER_NOT_INSTALLED.string.text
+msgid ""
+"The selected filter $(FILTER) has not been installed.\n"
+"Would you like to do this now?"
+msgstr ""
+"لم يتم تثبيت عامل التصفية المحدد $(FILTER).\n"
+"هل تريد القيام بذلك الآن؟"
+
+#: fltfnc.src#STR_FILTER_CONSULT_SERVICE.string.text
+msgid ""
+"The selected filter $(FILTER) is not included in your edition.\n"
+"You can find information about orders on our homepage."
+msgstr ""
+"عامل التصفية المحدد $(FILTER) غير متضمن في الإصدار لديك.\n"
+"يمكن العثور على معلومات حول الطلبات على صفحتنا الرئيسية."
+
+#: app.src#STR_NONAME.string.text
+msgid "Untitled"
+msgstr "بلا عنوان"
+
+#: app.src#STR_CLOSE.string.text
+msgid "Close"
+msgstr "إغلاق"
+
+#: app.src#STR_STYLE_FILTER_AUTO.string.text
+msgid "Automatic"
+msgstr "تلقائي"
+
+#: app.src#STR_STANDARD_SHORTCUT.string.text
+msgctxt "app.src#STR_STANDARD_SHORTCUT.string.text"
+msgid "Standard"
+msgstr ""
+
+#: app.src#STR_BYTES.string.text
+msgid "Bytes"
+msgstr "بايتات"
+
+#: app.src#STR_KB.string.text
+msgid "KB"
+msgstr "كيلوبايت"
+
+#: app.src#STR_MB.string.text
+msgid "MB"
+msgstr "ميغابايت"
+
+#: app.src#STR_GB.string.text
+msgid "GB"
+msgstr "غيغابايت"
+
+#: app.src#MSG_QUERY_LASTVERSION.querybox.text
+msgid "Cancel all changes?"
+msgstr "هل تريد إلغاء جميع التغييرات؟"
+
+#: app.src#RID_DOCALREADYLOADED_DLG.infobox.text
+msgid "Document already open."
+msgstr "المستند مفتوح بالفعل."
+
+#: app.src#MSG_ERR_NO_WEBBROWSER_FOUND.errorbox.text
+msgid ""
+"%PRODUCTNAME could not find a web browser on your system. Please check your "
+"Desktop Preferences or install a web browser (for example, Mozilla) in the "
+"default  location requested during the browser installation."
+msgstr ""
+"تعذر على %PRODUCTNAME العثور على مستعرض ويب على نظامك. الرجاء مراجعة تفضيلات "
+"سطح المكتب أو تثبيت مستعرض ويب (مثل Mozilla) في المكان الافتراضي المطلوب "
+"أثناء تثبيت المستعرض."
+
+#: app.src#GID_INTERN.string.text
+msgid "Internal"
+msgstr "داخلي"
+
+#: app.src#GID_APPLICATION.string.text
+msgid "Application"
+msgstr "التطبيق"
+
+#: app.src#GID_VIEW.string.text
+msgid "View"
+msgstr "عرض"
+
+#: app.src#GID_DOCUMENT.string.text
+msgid "Documents"
+msgstr "مستندات"
+
+#: app.src#GID_EDIT.string.text
+msgid "Edit"
+msgstr "تحرير"
+
+#: app.src#GID_MACRO.string.text
+msgid "BASIC"
+msgstr "BASIC"
+
+#: app.src#GID_OPTIONS.string.text
+msgid "Options"
+msgstr ""
+
+#: app.src#GID_MATH.string.text
+msgid "Math"
+msgstr "الرياضيات"
+
+#: app.src#GID_NAVIGATOR.string.text
+msgid "Navigate"
+msgstr "تنقل"
+
+#: app.src#GID_INSERT.string.text
+msgid "Insert"
+msgstr "إدراج"
+
+#: app.src#GID_FORMAT.string.text
+msgid "Format"
+msgstr "التنسيق"
+
+#: app.src#GID_TEMPLATE.string.text
+msgid "Templates"
+msgstr ""
+
+#: app.src#GID_TEXT.string.text
+msgid "Text"
+msgstr "النص"
+
+#: app.src#GID_FRAME.string.text
+msgid "Frame"
+msgstr "الإطار"
+
+#: app.src#GID_GRAPHIC.string.text
+msgctxt "app.src#GID_GRAPHIC.string.text"
+msgid "Graphic"
+msgstr "الرسم"
+
+#: app.src#GID_TABLE.string.text
+msgid "Table"
+msgstr "الجدول"
+
+#: app.src#GID_ENUMERATION.string.text
+msgid "Numbering"
+msgstr "تعداد رقمي"
+
+#: app.src#GID_DATA.string.text
+msgid "Data"
+msgstr "البيانات"
+
+#: app.src#GID_SPECIAL.string.text
+msgid "Special Functions"
+msgstr "وظائف خاصة"
+
+#: app.src#GID_IMAGE.string.text
+msgid "Image"
+msgstr "صورة"
+
+#: app.src#GID_CHART.string.text
+msgid "Chart"
+msgstr "المخطط البياني"
+
+#: app.src#GID_EXPLORER.string.text
+msgid "Explorer"
+msgstr "المستعرض"
+
+#: app.src#GID_CONNECTOR.string.text
+msgid "Connector"
+msgstr "موصل"
+
+#: app.src#GID_MODIFY.string.text
+msgid "Modify"
+msgstr "تعديل"
+
+#: app.src#GID_DRAWING.string.text
+msgid "Drawing"
+msgstr "الرسم"
+
+#: app.src#GID_CONTROLS.string.text
+msgid "Controls"
+msgstr "عناصر تحكم"
+
+#: app.src#MSG_CANT_QUIT.infobox.text
+msgid ""
+"The application cannot be terminated at the moment.\n"
+"Please wait until all print jobs and/or\n"
+"OLE actions have finished and close all dialogs."
+msgstr ""
+"لا يمكن إنهاء التطبيق في الوقت الحالي. \n"
+"الرجاء الانتظار حتى يتم الانتهاء من جميع مهام الطباعة و/أو \n"
+"مهام OLE وإغلاق جميع مربعات الحوار."
+
+#: app.src#STR_ISMODIFIED.string.text
+msgid "Do you want to save the changes to %1?"
+msgstr "هل تريد حفظ التغييرات في %1؟"
+
+#: app.src#STR_QUITAPP.string.text
+msgid "E~xit"
+msgstr "إ~نهاء"
+
+#: app.src#RID_STR_HELP.string.text
+msgid "Help"
+msgstr ""
+
+#: app.src#RID_STR_NOAUTOSTARTHELPAGENT.string.text
+msgid "No automatic start at 'XX'"
+msgstr "عدم البدء التلقائي عند 'XX'"
+
+#: app.src#RID_HELPBAR.string.text
+msgid "Help Bar"
+msgstr "شريط التعليمات"
+
+#: app.src#RID_STR_HLPFILENOTEXIST.string.text
+msgid "The help file for this topic is not installed."
+msgstr "ملف التعليمات الخاص بهذا الموضوع غير مثبت."
+
+#: app.src#RID_ENVTOOLBOX.string.text
+msgid "Function Bar"
+msgstr "شريط الوظائف"
+
+#: app.src#RID_SPECIALCONFIG_ERROR.string.text
+msgid ""
+"An error has occurred in the special configuration.\n"
+"Please contact your administrator."
+msgstr ""
+"حدث خطأ في الإعدادات الخاصة .\n"
+"الرجاء الاتصال بالمسؤول."
+
+#: app.src#STR_QUICKSTART_EXIT.string.text
+msgid "Exit Quickstarter"
+msgstr "إغلاق المشغل السريع"
+
+#: app.src#STR_QUICKSTART_TIP.string.text
+msgid "%PRODUCTNAME %PRODUCTVERSION Quickstarter"
+msgstr "مشغل %PRODUCTNAME %PRODUCTVERSION السريع"
+
+#: app.src#STR_QUICKSTART_FILEOPEN.string.text
+msgid "Open Document..."
+msgstr "فتح المستند..."
+
+#: app.src#STR_QUICKSTART_FROMTEMPLATE.string.text
+msgid "From Template..."
+msgstr "من القالب..."
+
+#: app.src#STR_QUICKSTART_PRELAUNCH.string.text
+msgid "Load %PRODUCTNAME During System Start-Up"
+msgstr "تحميل %PRODUCTNAME أثناء بدء تشغيل النظام"
+
+#: app.src#STR_QUICKSTART_PRELAUNCH_UNX.string.text
+msgid "Disable systray Quickstarter"
+msgstr "تعطيل التشغيل السريع لعلبة النظام"
+
+#: app.src#STR_QUICKSTART_LNKNAME.string.text
+msgid "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
+
+#: app.src#STR_QUICKSTART_FILE.string.text
+msgid "File"
+msgstr "ملف"
+
+#: app.src#STR_QUICKSTART_STARTCENTER.string.text
+msgid "Startcenter"
+msgstr "Startcenter"
+
+#: app.src#STR_QUICKSTART_RECENTDOC.string.text
+msgid "Recent Documents"
+msgstr "المستندات الحالية"
+
+#: app.src#STR_QUERY_UPDATE_LINKS.string.text
+msgid "Update all links?"
+msgstr "هل تريد تحديث جميع الارتباطات؟"
+
+#: app.src#STR_DDE_ERROR.string.text
+msgid "DDE link to % for % area % are not available."
+msgstr "الارتباط DDE مع % إلى % النطاق % غير متوفر."
+
+#: app.src#RID_SECURITY_WARNING_HYPERLINK.warningbox.text
+msgid "This hyperlink is going to open \"%s\". Do you want to proceed?"
+msgstr "هذا الارتباط التشعبي سيفتح \"%s\". هل تريد التقدم؟"
+
+#: app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.warningbox.text
+msgid ""
+"For security reasons, the hyperlink cannot be executed.\n"
+"The stated address will not be opened."
+msgstr ""
+"لأسباب أمنية، لا يمكن تنفيذ الارتباط التشعبي.\n"
+"لن يتم فتح العنوان المذكور."
+
+#: app.src#RID_SECURITY_WARNING_TITLE.string.text
+msgid "Security Warning"
+msgstr "تحذير أماني"
+
+#: app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.querybox.text
+msgid ""
+"Saving will remove all existing signatures.\n"
+"Do you want to continue saving the document?"
+msgstr ""
+"سيؤدي الحفظ إلى إزالة كافة التواقيع الموجودة.\n"
+"هل ترغب في متابعة حفظ المستند؟"
+
+#: app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.querybox.text
+msgid ""
+"The document has to be saved before it can be signed.\n"
+"Do you want to save the document?"
+msgstr ""
+"يلزم حفظ المستند قبل توقيعه.\n"
+"هل تريد حفظ المستند؟"
+
+#: app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.infobox.text
+msgid ""
+"This document must be saved in OpenDocument file format before it can be "
+"digitally signed."
+msgstr "يجب حفظ هذا المستند بتنسيق ملف OpenDocument قبل توقيعه رقميًا."
+
+#: app.src#RID_XMLSEC_DOCUMENTSIGNED.string.text
+msgid " (Signed)"
+msgstr " (مُوقّع)"
+
+#: app.src#STR_STANDARD.string.text
+msgctxt "app.src#STR_STANDARD.string.text"
+msgid "Standard"
+msgstr ""
+
+#: app.src#RID_SVXSTR_FILELINK.string.text
+msgid "Document"
+msgstr "المستند"
+
+#: app.src#STR_NONE.string.text
+msgid "- None -"
+msgstr "- بدون -"
+
+#: app.src#RID_SVXSTR_GRAFIKLINK.string.text
+msgctxt "app.src#RID_SVXSTR_GRAFIKLINK.string.text"
+msgid "Graphic"
+msgstr "الرسم"
+
+#: app.src#STR_SFX_FILTERNAME_ALL.string.text
+msgid "All files (*.*)"
+msgstr "كل الملفات (*.*)"
+
+#: app.src#RID_SVXSTR_EDITGRFLINK.string.text
+msgid "Link graphics"
+msgstr "رسومات الارتباط"
+
+#: app.src#STR_ERRUNOEVENTBINDUNG.string.text
+msgid ""
+"An appropriate component method %1\n"
+"could not be found.\n"
+"\n"
+"Check spelling of method name."
+msgstr ""
+"تعذر العثور على طريقة المكون المناسبة %1\n"
+".\n"
+"\n"
+"راجع تهجئة اسم الطريقة."
+
+#: app.src#RID_SVXSTR_GRFILTER_OPENERROR.string.text
+msgid "Graphics file cannot be opened"
+msgstr "لا يمكن فتح ملف الرسومات"
+
+#: app.src#RID_SVXSTR_GRFILTER_IOERROR.string.text
+msgid "Graphics file cannot be read"
+msgstr "لا يمكن قراءة ملف الرسومات"
+
+#: app.src#RID_SVXSTR_GRFILTER_FORMATERROR.string.text
+msgid "Unknown graphics format"
+msgstr "تنسيق رسومات غير معروف"
+
+#: app.src#RID_SVXSTR_GRFILTER_VERSIONERROR.string.text
+msgid "This version of the graphics file is not supported"
+msgstr "هذا الإصدار من ملف الرسومات غير مدعوم"
+
+#: app.src#RID_SVXSTR_GRFILTER_FILTERERROR.string.text
+msgid "Graphics filter not found"
+msgstr "عامل تصفية الرسومات غير موجود"
+
+#: app.src#RID_SVXSTR_GRFILTER_TOOBIG.string.text
+msgid "Not enough memory to insert graphic"
+msgstr "لا توجد ذاكرة كافية لإدراج رسم"
+
+#: dde.src#MD_DDE_LINKEDIT.FT_DDE_APP.fixedtext.text
+msgid "~Application:"
+msgstr "ت~طبيق:"
+
+#: dde.src#MD_DDE_LINKEDIT.FT_DDE_TOPIC.fixedtext.text
+msgid "~File:"
+msgstr "ال~ملف:"
+
+#: dde.src#MD_DDE_LINKEDIT.FT_DDE_ITEM.fixedtext.text
+msgid "~Category:"
+msgstr "ال~فئة:"
+
+#: dde.src#MD_DDE_LINKEDIT.GROUP_DDE_CHG.fixedline.text
+msgid "Modify link"
+msgstr "تعديل الرابط"
+
+#: dde.src#MD_DDE_LINKEDIT.modaldialog.text
+msgid "Modify Link"
+msgstr "تعديل الرابط"
+
+#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_CONTENTS.pageitem.text
+msgid "Contents"
+msgstr "المحتويات"
+
+#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_INDEX.pageitem.text
+msgid "Index"
+msgstr "الفهرس"
+
+#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_SEARCH.pageitem.text
+msgid "Find"
+msgstr "بحث"
+
+#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_BOOKMARKS.pageitem.text
+msgid "Bookmarks"
+msgstr "الإشارات المرجعية"
+
+#: newhelp.src#TP_HELP_INDEX.FT_EXPRESSION.fixedtext.text
+msgid "~Search term"
+msgstr "~مصطلح البحث"
+
+#: newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.pushbutton.text
+msgctxt "newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.pushbutton.text"
+msgid "~Display"
+msgstr "~عرض"
+
+#: newhelp.src#TP_HELP_SEARCH.FT_SEARCH.fixedtext.text
+msgid "S~earch term"
+msgstr "م~صطلح البحث"
+
+#: newhelp.src#TP_HELP_SEARCH.PB_SEARCH.pushbutton.text
+msgid "~Find"
+msgstr "~بحث..."
+
+#: newhelp.src#TP_HELP_SEARCH.CB_FULLWORDS.checkbox.text
+msgid "~Complete words only"
+msgstr "إ~كمال الكلمات فقط"
+
+#: newhelp.src#TP_HELP_SEARCH.CB_SCOPE.checkbox.text
+msgid "Find in ~headings only"
+msgstr "البحث في ال~رؤوس فقط"
+
+#: newhelp.src#TP_HELP_SEARCH.PB_OPEN_SEARCH.pushbutton.text
+msgctxt "newhelp.src#TP_HELP_SEARCH.PB_OPEN_SEARCH.pushbutton.text"
+msgid "~Display"
+msgstr "~عرض"
+
+#: newhelp.src#TP_HELP_BOOKMARKS.FT_BOOKMARKS.fixedtext.text
+msgid "~Bookmarks"
+msgstr "إ~شارات مرجعية"
+
+#: newhelp.src#TP_HELP_BOOKMARKS.PB_BOOKMARKS.pushbutton.text
+msgctxt "newhelp.src#TP_HELP_BOOKMARKS.PB_BOOKMARKS.pushbutton.text"
+msgid "~Display"
+msgstr "~عرض"
+
+#: newhelp.src#STR_HELP_WINDOW_TITLE.string.text
+msgid "%PRODUCTNAME Help"
+msgstr "تعليمات %PRODUCTNAME"
+
+#: newhelp.src#STR_HELP_BUTTON_INDEX_ON.string.text
+msgid "Show Navigation Pane"
+msgstr "إظهار قسم التنقل"
+
+#: newhelp.src#STR_HELP_BUTTON_INDEX_OFF.string.text
+msgid "Hide Navigation Pane"
+msgstr "إخفاء قسم التنقل"
+
+#: newhelp.src#STR_HELP_BUTTON_START.string.text
+msgid "First Page"
+msgstr "الصفحة الأولى"
+
+#: newhelp.src#STR_HELP_BUTTON_PREV.string.text
+msgid "Previous Page"
+msgstr "الصفحة السابقة"
+
+#: newhelp.src#STR_HELP_BUTTON_NEXT.string.text
+msgid "Next Page"
+msgstr "الصفحة التالية"
+
+#: newhelp.src#STR_HELP_BUTTON_PRINT.string.text
+msgid "Print..."
+msgstr "طباعة..."
+
+#: newhelp.src#STR_HELP_BUTTON_ADDBOOKMARK.string.text
+msgid "Add to Bookmarks..."
+msgstr "إضافة إلى الإشارات المرجعية..."
+
+#: newhelp.src#STR_HELP_BUTTON_SEARCHDIALOG.string.text
+msgid "Find on this Page..."
+msgstr "البحث في هذه الصفحة..."
+
+#: newhelp.src#STR_HELP_BUTTON_SOURCEVIEW.string.text
+msgid "HTML Source"
+msgstr "مصدر HTML"
+
+#: newhelp.src#STR_HELP_FIRST_MESSAGE.string.text
+msgid "The Help is being started..."
+msgstr "جارٍ بدء التعليمات..."
+
+#: newhelp.src#STR_HELP_MENU_TEXT_SELECTION_MODE.string.text
+msgid "Select Text"
+msgstr "تحديد النص"
+
+#: newhelp.src#STR_HELP_MENU_TEXT_COPY.string.text
+msgid "~Copy"
+msgstr "~نسخ"
+
+#: newhelp.src#DLG_HELP_ADDBOOKMARK.FT_BOOKMARK_TITLE.fixedtext.text
+msgid "Bookmark:"
+msgstr "إشارة مرجعية:"
+
+#: newhelp.src#DLG_HELP_ADDBOOKMARK.STR_BOOKMARK_RENAME.string.text
+msgid "Rename Bookmark"
+msgstr "إعادة تسمية الإشارة المرجعية"
+
+#: newhelp.src#DLG_HELP_ADDBOOKMARK.modaldialog.text
+msgid "Add to Bookmarks"
+msgstr "إضافة إلى الإشارات المرجعية"
+
+#: newhelp.src#MENU_HELP_BOOKMARKS.MID_OPEN.menuitem.text
+msgid "Display"
+msgstr "عرض"
+
+#: newhelp.src#MENU_HELP_BOOKMARKS.MID_RENAME.menuitem.text
+msgid "Rename..."
+msgstr "إعادة تسمية..."
+
+#: newhelp.src#MENU_HELP_BOOKMARKS.MID_DELETE.menuitem.text
+msgid "Delete"
+msgstr "حذف"
+
+#: newhelp.src#RID_INFO_NOSEARCHRESULTS.infobox.text
+msgid "No topics found."
+msgstr "لم يُعثر على مواضيع."
+
+#: newhelp.src#RID_INFO_NOSEARCHTEXTFOUND.infobox.text
+msgid "The text you entered was not found."
+msgstr "لم يتم العثور على النص الذي أدخلته."
+
+#: newhelp.src#RID_HELP_ONSTARTUP_TEXT.string.text
+msgid "~Display %PRODUCTNAME %MODULENAME Help at Startup"
+msgstr "~عرض تعليمات %PRODUCTNAME %MODULENAME عند بدء التشغيل"
+
+#: sfx.src#STR_ACCTITLE_PRODUCTIVITYTOOLS.string.text
+msgid "%PRODUCTNAME"
+msgstr ""
+
+#: doc.src#MSG_CONFIRM_FILTER.querybox.text
+msgid ""
+"Saving in external formats may have caused\n"
+" information loss. Do you still want to close?"
+msgstr ""
+"الحفظ في صيغ خارجية ربما يحدث \n"
+"فقدًا في المعلومات. هل مازلت ترغب في الإغلاق؟"
+
+#: doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.querybox.text
+msgid ""
+"Name already in use.\n"
+"Do you want to overwrite document template?"
+msgstr ""
+"هذا الاسم قيد الاستخدام.\n"
+"هل تريد أن تستبدل قالب المستند؟"
+
+#: doc.src#STR_DELETE_REGION.string.text
+msgid "Are you sure you want to delete the region \"$1\"?"
+msgstr "هل تريد بالفعل حذف المنطقة \"$1\"؟"
+
+#: doc.src#STR_DELETE_TEMPLATE.string.text
+msgid "Are you sure you want to delete the entry \"$1\"?"
+msgstr "هل تريد بالفعل حذف الإدخال \"$1\"؟"
+
+#: doc.src#MSG_REGION_NOTEMPTY.querybox.text
+msgid ""
+"The category is not empty.\n"
+"Delete anyway?"
+msgstr ""
+"هذا التصنيف ليس فارغًا.\n"
+"هل تحذفه على أية حال؟"
+
+#: doc.src#STR_QUERY_SAVE_DOCUMENT.string.text
+msgid ""
+"The document \"$(DOC)\" has been modified.\n"
+"Do you want to save your changes?"
+msgstr ""
+"لقد تم تعديل المستند \"$(DOC)\" .\n"
+"هل تريد حفظ تغييراتك؟"
+
+#: doc.src#STR_STYLES.string.text
+msgid "Styles"
+msgstr "أنماط"
+
+#: doc.src#STR_MACROS.string.text
+msgid "Macros"
+msgstr "وحدات الماكرو"
+
+#: doc.src#STR_CONFIG.string.text
+msgid "Configuration"
+msgstr "تكوين"
+
+#: doc.src#STR_PRINT_STYLES_HEADER.string.text
+msgid "Styles in "
+msgstr "أنماط في "
+
+#: doc.src#STR_PRINT_STYLES.string.text
+msgid "Printing Styles"
+msgstr "أنماط الطباعة"
+
+#: doc.src#MSG_PRINT_ERROR.errorbox.text
+msgid "The print job could not be started."
+msgstr "تعذر بدء عملية الطباعة"
+
+#: doc.src#STR_BACKUP_COPY.string.text
+msgid "Copy"
+msgstr "نسخ"
+
+#: doc.src#MSG_CANT_OPEN_TEMPLATE.infobox.text
+msgid "The template could not be opened."
+msgstr "لا يمكن فتح قالب المستند."
+
+#: doc.src#MSG_VIEW_OPEN_CANT_SAVE.infobox.text
+msgid "Document already open for editing."
+msgstr "المستند مفتوح بشكل مسبق للتحرير."
+
+#: doc.src#STR_ERROR_SAVE.string.text
+msgid "Error recording document "
+msgstr "حدث خطأ أثناء تسجيل المستند "
+
+#: doc.src#STR_TEMPLATE_FILTER.string.text
+msgctxt "doc.src#STR_TEMPLATE_FILTER.string.text"
+msgid "Templates"
+msgstr "قوالب"
+
+#: doc.src#STR_ERROR_COPY_TEMPLATE.string.text
+msgid ""
+"Error copying template \"$1\". \n"
+"A template with this name may already exist."
+msgstr ""
+"حدث خطأ أثناء نسخ القالب \"$1\".\n"
+"يوجد قالب بنفس الاسم."
+
+#: doc.src#STR_ERROR_DELETE_TEMPLATE.string.text
+msgid "The template \"$1\" can not be deleted."
+msgstr "لا يمكن حذف القالب \"$1\"."
+
+#: doc.src#STR_ERROR_MOVE_TEMPLATE.string.text
+msgid "Error moving template \"$1\"."
+msgstr "حدث خطأ أثناء تحريك القالب \"$1\"."
+
+#: doc.src#MSG_ERROR_RESCAN.errorbox.text
+msgid "The update could not be saved."
+msgstr "تعذر حفظ التحديثات."
+
+#: doc.src#STR_ERROR_SAVE_TEMPLATE.string.text
+msgid "Error saving template "
+msgstr "خطأ أثناء حفظ القالب "
+
+#: doc.src#MSG_ERROR_RENAME_TEMPLATE.errorbox.text
+msgid "Error renaming template."
+msgstr "حدث خطأ أثناء إعادة تسمية القالب."
+
+#: doc.src#MSG_ERROR_RENAME_TEMPLATE_REGION.errorbox.text
+msgid "Error renaming template category."
+msgstr "حدث خطأ أثناء إعادة تسمية فئة القالب."
+
+#: doc.src#MSG_ERROR_EMPTY_NAME.errorbox.text
+msgid "Please specify a name."
+msgstr "الرجاء تحديد اسم."
+
+#: doc.src#MSG_ERROR_UNIQ_NAME.errorbox.text
+msgid ""
+"Please specify a unique name.\n"
+"Entries must not be case specific."
+msgstr ""
+"الرجاء تحديد اسم فريد. \n"
+"يجب أن تكون المدخلات غير حساسة لحالة الحروف."
+
+#: doc.src#STR_QUERY_DEFAULT_TEMPLATE.string.text
+msgid "Should the template \"$(TEXT)\" become the default template?"
+msgstr "هل تريد جعل القالب \"$(TEXT)\" قالبًا افتراضيًا؟"
+
+#: doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.querybox.text
+msgid "Do you want to reset the default template?"
+msgstr "هل تريد إعادة تعيين القالب الافتراضي؟"
+
+#: doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.infobox.text
+msgid ""
+"Template directory\n"
+"$(DIR)\n"
+"does not exist."
+msgstr ""
+"دليل القالب \n"
+"$(DIR)\n"
+"غير موجود."
+
+#: doc.src#MSG_DOCINFO_CANTREAD.infobox.text
+msgid "Document info cannot be read."
+msgstr "لا يمكن قراءة معلومات المستند."
+
+#: doc.src#STR_ERROR_NOSTORAGE.string.text
+msgid "The selected file has an incorrect format."
+msgstr "تنسيق الملف المحدد غير صحيح."
+
+#: doc.src#STR_QUERY_MUSTOWNFORMAT.string.text
+msgid ""
+"Documents cannot be saved in $(FORMAT) format. Do you\n"
+"want to save your changes using the $(OWNFORMAT) format?"
+msgstr ""
+"لا يمكن حفظ المستند على صيغة $(FORMAT). هل ترغب \n"
+"في حفظ التغييرات باستخدام تنسيق $(OWNFORMAT)?"
+
+#: doc.src#STR_SAVEDOC.string.text
+msgid "~Save"
+msgstr "حف~ظ"
+
+#: doc.src#STR_UPDATEDOC.string.text
+msgid "~Update"
+msgstr "~تحديث"
+
+#: doc.src#STR_SAVEASDOC.string.text
+msgid "Save ~As..."
+msgstr "حفظ باس~م..."
+
+#: doc.src#STR_SAVECOPYDOC.string.text
+msgid "Save Copy ~as..."
+msgstr "حف~ظ النسخة باسم..."
+
+#: doc.src#STR_CLOSEDOC.string.text
+msgid "~Close"
+msgstr "إ~غلاق"
+
+#: doc.src#STR_CLOSEDOC_ANDRETURN.string.text
+msgid "~Close & Return to "
+msgstr "إغلا~ق ورجوع إلى "
+
+#: doc.src#STR_WIZARD.string.text
+msgid " AutoPilot"
+msgstr " المعالج التلقائي"
+
+#: doc.src#RID_STR_FILTCONFIG.string.text
+msgid "Configurations"
+msgstr "عمليات تكوين"
+
+#: doc.src#RID_STR_FILTBASIC.string.text
+msgid "%PRODUCTNAME Basic libraries"
+msgstr "مكتبات قاعدة %PRODUCTNAME"
+
+#: doc.src#RID_STR_WARNSTYLEOVERWRITE.string.text
+msgid "Should the \"$(ARG1)\" Style be replaced?"
+msgstr "هل تريد استبدال النمط \"$(ARG1)\"؟"
+
+#: doc.src#STR_DOC_LOADING.string.text
+msgid "Loading Document"
+msgstr "جارٍ تحميل المستند"
+
+#: doc.src#RID_DLSTATUS.INET_NAME_RESOLVE_START.string.text
+msgid "Connection to: $(HOST). Waiting for response..."
+msgstr "الاتصال بـ: $(HOST). في انتظار الرد..."
+
+#: doc.src#RID_DLSTATUS.INET_CONNECT_START.string.text
+msgid "Opening $(TARGET) at $(HOST)"
+msgstr "يتم فتح $(TARGET) على $(HOST)"
+
+#: doc.src#RID_DLSTATUS.INET_READ_STATUS.string.text
+msgid "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
+msgstr "جارٍ تحميل: $(TARGET) من $(HOST). تم تحميل: $(BYTE)"
+
+#: doc.src#RID_DLSTATUS.INET_CONNECTION_CLOSED.string.text
+msgid "Disconnected"
+msgstr "تم قطع الاتصال"
+
+#: doc.src#MSG_OPEN_READONLY.querybox.text
+msgid ""
+"Document cannot be opened for editing.\n"
+"Do you want to open it as read-only?"
+msgstr ""
+"لا يمكن فتح المستند للتحرير.\n"
+"هل ترغب بفتحه للقراءة فقط؟"
+
+#: doc.src#STR_EDIT.string.text
+msgid "Edit"
+msgstr "تحرير"
+
+#: doc.src#RID_OFFICEFILTER.string.text
+msgid "%PRODUCTNAME Documents"
+msgstr "مستندات %PRODUCTNAME "
+
+#: doc.src#STR_FRAMEOBJECT_PROPERTIES.string.text
+msgid "Propert~ies..."
+msgstr "~خصائص..."
+
+#: doc.src#STR_FSET_FILTERNAME0.string.text
+msgid "HTML (FrameSet)"
+msgstr "(HTML (FrameSet"
+
+#: doc.src#STR_FSET_FILTERNAME1.string.text
+msgid "%PRODUCTNAME Frame Document"
+msgstr " مستند إطار %PRODUCTNAME "
+
+#: doc.src#STR_TEMPL_MOVED.string.text
+msgid ""
+"The template \"$(TEMPLATE)\" was not found at the original location. A "
+"template with the same name exists at \"$(FOUND)\". Should this template be "
+"used in the future when comparing?"
+msgstr ""
+"تعذر العثور على القالب \"$(TEMPLATE)\" في موضعه الأصلي. يوجد قالب بنفس الاسم "
+"في الموضع \"$(FOUND)\". هل تريد استخدام هذا القالب في المستقبل عند المقارنة؟"
+
+#: doc.src#STR_TEMPL_RESET.string.text
+msgid ""
+"The template \"$(TEMPLATE)\" has not been found. Should the template be looked "
+"for the next time the document is opened ?"
+msgstr ""
+"تعذر العثور على القالب \"$(TEMPLATE)\". هل تريد متابعة البحث عنه في المستقبل؟"
+
+#: doc.src#STR_AUTOMATICVERSION.string.text
+msgid "Automatically saved version"
+msgstr "إصدار محفوظ بشكل تلقائي"
+
+#: doc.src#STR_DOCTYPENAME_SW.string.text
+msgid "Text Document"
+msgstr "مستند نصي"
+
+#: doc.src#STR_DOCTYPENAME_SWWEB.string.text
+msgid "HTML Document"
+msgstr "مستند HTML"
+
+#: doc.src#STR_DOCTYPENAME_SWGLOB.string.text
+msgid "Master Document"
+msgstr "مستند رئيسي"
+
+#: doc.src#STR_DOCTYPENAME_SC.string.text
+msgid "Spreadsheet"
+msgstr "جدول بيانات"
+
+#: doc.src#STR_DOCTYPENAME_SI.string.text
+msgid "Presentation"
+msgstr "عرض تقديمي"
+
+#: doc.src#STR_DOCTYPENAME_SD.string.text
+msgid "Drawing"
+msgstr "الرسم"
+
+#: doc.src#STR_DOCTYPENAME_MESSAGE.string.text
+msgid "Message"
+msgstr "رسالة"
+
+#: doc.src#STR_NOSAVEANDCLOSE.string.text
+msgid "~Discard"
+msgstr "ر~فض"
+
+#: doc.src#STR_PACKNGO_NOACCESS.string.text
+msgid "Access to the current data medium not possible."
+msgstr "تعذر الوصول إلى الوسيط الحالي للبيانات."
+
+#: doc.src#STR_PACKNGO_NEWMEDIUM.string.text
+msgid "Insert the next data carrier and click OK."
+msgstr "الرجاء إدخال ناقل البيانات التالي، ثم النقر فوق \"موافق\"."
+
+#: doc.src#STR_OBJECT.string.text
+msgid "Object"
+msgstr "كائن"
+
+#: doc.src#DLG_MACROQUERY.querybox.text
+msgid "This document contains macros. $(TEXT)"
+msgstr "هذا المستند يحتوي على وحدات ماكرو. $(TEXT)"
+
+#: doc.src#DLG_MACROQUERY.querybox.title
+msgid "Run Macro"
+msgstr "تنفيذ الماكروو"
+
+#: doc.src#BTN_OK.string.text
+msgid "Run"
+msgstr "تشغيل"
+
+#: doc.src#BTN_CANCEL.string.text
+msgid "Do Not Run"
+msgstr "عدم التنفيذ"
+
+#: doc.src#FT_CANCEL.string.text
+msgid ""
+"According to the security settings, the macros in this document should not "
+"be run. Do you want to run them anyway?"
+msgstr ""
+"وفقا لإعدادات الأمان، فإنه لا يُسمح لوحدات الماكرو بالتشغيل في هذا المستند. "
+"هل تريد تشغيلها على أية حال؟ "
+
+#: doc.src#FT_OK.string.text
+msgid "Do you want to allow these macros to be run?"
+msgstr "هل تريد السماح لوحدات الماكرو هذه بالتشغيل؟"
+
+#: doc.src#STR_EXPORTASPDF_TITLE.string.text
+msgid "Export as PDF"
+msgstr "تصدير بتنسيق PDF"
+
+#: doc.src#STR_EXPORTWITHCFGBUTTON.string.text
+msgid "Export..."
+msgstr "تصدير..."
+
+#: doc.src#STR_EXPORTBUTTON.string.text
+msgid "Export"
+msgstr "تصدير"
+
+#: doc.src#RID_SVXSTR_SECURITY_ADDPATH.string.text
+msgid "Add this directory to the list of secure paths: "
+msgstr "إضافة هذا الدليل إلى قائمة المسارات الآمنة: "
+
+#: doc.src#STR_LABEL_FILEFORMAT.string.text
+msgid "File format:"
+msgstr "تنسيق الملف:"
+
+#: doc.src#STR_HIDDENINFO_CONTAINS.string.text
+msgid ""
+"This document contains:\n"
+"\n"
+msgstr ""
+"هذا المستند يحتضمن:\n"
+"\n"
+
+#: doc.src#STR_HIDDENINFO_RECORDCHANGES.string.text
+msgid "Recorded changes"
+msgstr "التغييرات المسجلة"
+
+#: doc.src#STR_HIDDENINFO_NOTES.string.text
+msgid "Notes"
+msgstr "ملاحظات"
+
+#: doc.src#STR_HIDDENINFO_DOCVERSIONS.string.text
+msgid "Document versions"
+msgstr "إصدارات المستند"
+
+#: doc.src#STR_HIDDENINFO_FIELDS.string.text
+msgid "Fields"
+msgstr "الحقول"
+
+#: doc.src#STR_HIDDENINFO_LINKDATA.string.text
+msgid "Linked data..."
+msgstr "بيانات مرتبطة..."
+
+#: doc.src#STR_HIDDENINFO_CONTINUE_SAVING.string.text
+msgid "Do you want to continue saving the document?"
+msgstr "هل تريد أن تستمر في حفظ المستند؟"
+
+#: doc.src#STR_HIDDENINFO_CONTINUE_PRINTING.string.text
+msgid "Do you want to continue printing the document?"
+msgstr "هل تريد في الاستمرار في طباعة المستند؟"
+
+#: doc.src#STR_HIDDENINFO_CONTINUE_SIGNING.string.text
+msgid "Do you want to continue signing the document?"
+msgstr "هل تريد في الاستمرار في توقيع المستند؟."
+
+#: doc.src#STR_HIDDENINFO_CONTINUE_CREATEPDF.string.text
+msgid "Do you want to continue creating a PDF file?"
+msgstr "هل تريد المتابعة في إنشاء ملف PDF؟"
+
+#: doc.src#STR_NEW_FILENAME_SAVE.string.text
+msgid ""
+"If you do not want to overwrite the original document, you should save your "
+"work under a new filename."
+msgstr ""
+"إذا لم تكن تريد استبدال مستندك الأصلي، فيجب عليك حفظ عملك ضمن اسم ملف جديد."
+
+#: doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.string.text
+msgid "Some template files are protected and can not be deleted."
+msgstr "بعض قوالب الملفات محمية ولا يمكن حذفها."
+
+#: doc.src#STR_DOCINFO_INFOFIELD.string.text
+msgid "Info %1"
+msgstr "معلومات %1"
+
+#: doc.src#STR_SHARED.string.text
+msgid " (shared)"
+msgstr " (مشترك)"
+
+#: doc.src#STR_XMLSEC_ODF12_EXPECTED.string.text
+msgid ""
+"The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-"
+"Options-Load/Save-General. Signing documents requires ODF 1.2 "
+"(OpenOffice.org 3.x)."
+msgstr ""
+"يتم تعيين إصدار تنسيق المستند إلى ODF 1.1 (OpenOffice.org 2.x) في \"أدوات - "
+"خيارات - تحميل /حفظ - عام\". يتطلب توقيع المستندات وجود ODF 1.2 "
+"(OpenOffice.org 3.x)"
+
+#: doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.querybox.text
+msgid ""
+"The document has to be saved before it can be signed. Saving the document "
+"removes all present signatures.\n"
+"Do you want to save the document?"
+msgstr ""
+"يجب حفظ المستند قبل توقيعه. يؤدي حفظ المستند إلى إزالة كافة التواقيع "
+"الموجودة.\n"
+"هل تريد حفظ المستند؟"
+
+#: doc.src#STR_QRYTEMPL_MESSAGE.string.text
+msgid ""
+"The template '$(ARG1)' on which this document is based, has been modified. "
+"Do you want to update style based formattings according to the modified "
+"template?"
+msgstr ""
+"تم تعديل القالب '$(ARG1)' الذي يستند إليه هذا المستند. هل تريد تحديث "
+"التنسيقات التي تستند إلى النمط وفقًا للقالب المُعدّل؟"
+
+#: doc.src#STR_QRYTEMPL_UPDATE_BTN.string.text
+msgid "~Update Styles"
+msgstr "~تحديث الأنماط"
+
+#: doc.src#STR_QRYTEMPL_KEEP_BTN.string.text
+msgid "~Keep Old Styles"
+msgstr "الاح~تفاظ بالأنماط القديمة"
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.FL_EDIT.fixedline.text
+msgid "New template"
+msgstr "قالب جديد"
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.fixedline.text
+msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.fixedline.text"
+msgid "Templates"
+msgstr "قوالب"
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.fixedtext.text
+msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.fixedtext.text"
+msgid "~Categories"
+msgstr "ال~فئات"
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.FT_STYLESHEETS.fixedtext.text
+msgid "~Templates"
+msgstr "~قوالب"
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.pushbutton.text
+msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.pushbutton.text"
+msgid "~Edit"
+msgstr "ت~حرير"
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.BT_ORGANIZE.pushbutton.text
+msgid "~Organizer..."
+msgstr "المن~ظم..."
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.modaldialog.text
+msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.modaldialog.text"
+msgid "Templates"
+msgstr "قوالب"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.1.itemlist.text
+msgid "My Templates"
+msgstr "قوالبي"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.2.itemlist.text
+msgid "Business Correspondence"
+msgstr "مراسلات تجارية"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.3.itemlist.text
+msgid "Other Business Documents"
+msgstr "مستندات تجارية أخرى"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.4.itemlist.text
+msgid "Personal Correspondence and Documents"
+msgstr "مراسلات ومستندات خاصة"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.5.itemlist.text
+msgid "Forms and Contracts"
+msgstr "نماذج وعقود"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.6.itemlist.text
+msgid "Finances"
+msgstr "مالية"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.7.itemlist.text
+msgid "Education"
+msgstr "تعليم"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.8.itemlist.text
+msgid "Presentation Backgrounds"
+msgstr "خلفيات عروض تقديمية"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.9.itemlist.text
+msgid "Presentations"
+msgstr "عروض تقديمية"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.10.itemlist.text
+msgid "Miscellaneous"
+msgstr "منوعات"
+
+#: doctempl.src#RID_CNT_STR_WAITING.string.text
+msgid "The templates are being initialized for first-time usage."
+msgstr "جارٍ الآن تهيئة مكونات للمرة الأولى."
+
+#: docvor.src#DLG_ORGANIZE.BTN_OK.okbutton.text
+msgid "Close"
+msgstr "إغلاق"
+
+#: docvor.src#DLG_ORGANIZE.BTN_FILES.pushbutton.text
+msgid "~File..."
+msgstr "~ملف..."
+
+#: docvor.src#DLG_ORGANIZE.BTN_ADDRESSTEMPLATE.pushbutton.text
+msgid "~Address Book..."
+msgstr "دف~تر العناوين..."
+
+#: docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.1.stringlist.text
+msgctxt "docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.1.stringlist.text"
+msgid "Templates"
+msgstr "قوالب"
+
+#: docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.2.stringlist.text
+msgctxt "docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.2.stringlist.text"
+msgid "Documents"
+msgstr "مستندات"
+
+#: docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.1.stringlist.text
+msgctxt "docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.1.stringlist.text"
+msgid "Templates"
+msgstr "قوالب"
+
+#: docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.2.stringlist.text
+msgctxt "docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.2.stringlist.text"
+msgid "Documents"
+msgstr "مستندات"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_NEW.menuitem.text
+msgid "~New"
+msgstr "ج~ديد"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DELETE.menuitem.text
+msgid "~Delete"
+msgstr "ح~ذف"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.menuitem.text
+msgctxt "docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.menuitem.text"
+msgid "~Edit"
+msgstr "ت~حرير"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_FROM.menuitem.text
+msgid "Import Template..."
+msgstr "استيراد قالب..."
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_TO.menuitem.text
+msgid "Export Template..."
+msgstr "تصدير قالب..."
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINT.menuitem.text
+msgid "~Print"
+msgstr "~طباعة"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINTER_SETUP.menuitem.text
+msgid "Printer Settings..."
+msgstr "إعدادات الطابعة..."
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESCAN.menuitem.text
+msgid "Update"
+msgstr "تحديث"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DEFAULT_TEMPLATE.menuitem.text
+msgid "Set As Default Template"
+msgstr "التعيين كقالب افتراضي"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESET_DEFAULT_TEMPLATE.menuitem.text
+msgid "Reset Default Template"
+msgstr "إعادة تعيين القالب الافتراضي"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.menubutton.text
+msgid "Commands"
+msgstr "تعليقات"
+
+#: docvor.src#DLG_ORGANIZE.modaldialog.text
+msgid "Template Management"
+msgstr "إدارة القوالب"
+
+#: new.src#DLG_NEW_FILE.FT_REGION.fixedtext.text
+msgctxt "new.src#DLG_NEW_FILE.FT_REGION.fixedtext.text"
+msgid "~Categories"
+msgstr "ال~فئات"
+
+#: new.src#DLG_NEW_FILE.FT_TEMPLATE.fixedtext.text
+msgid "T~emplates"
+msgstr "ق~والب"
+
+#: new.src#DLG_NEW_FILE.BT_MORE.morebutton.text
+msgid "~More"
+msgstr "المز~يد"
+
+#: new.src#DLG_NEW_FILE.BTN_PREVIEW.checkbox.text
+msgid "Pre~view"
+msgstr "م~عاينة"
+
+#: new.src#DLG_NEW_FILE.GB_DOCINFO.fixedline.text
+msgid "Description"
+msgstr "الوصف"
+
+#: new.src#DLG_NEW_FILE.CB_TEXT_STYLE.checkbox.text
+msgid "Te~xt"
+msgstr "ن~ص"
+
+#: new.src#DLG_NEW_FILE.CB_FRAME_STYLE.checkbox.text
+msgid "~Frame"
+msgstr "إ~طار"
+
+#: new.src#DLG_NEW_FILE.CB_PAGE_STYLE.checkbox.text
+msgid "~Pages"
+msgstr "ال~صفحات"
+
+#: new.src#DLG_NEW_FILE.CB_NUM_STYLE.checkbox.text
+msgid "N~umbering"
+msgstr "ت~رقيم"
+
+#: new.src#DLG_NEW_FILE.CB_MERGE_STYLE.checkbox.text
+msgid "~Overwrite"
+msgstr "اس~تبدال"
+
+#: new.src#DLG_NEW_FILE.PB_LOAD_FILE.pushbutton.text
+msgid "From File..."
+msgstr "من ملف..."
+
+#: new.src#DLG_NEW_FILE.STR_LOAD_TEMPLATE.string.text
+msgid "Load Styles"
+msgstr "تحميل أنماط"
+
+#: new.src#DLG_NEW_FILE.FT_TITLE.fixedtext.text
+msgid "~Title"
+msgstr "الع~نوان"
+
+#: new.src#DLG_NEW_FILE.FT_THEMA.fixedtext.text
+msgid "Subject"
+msgstr "الموضوع"
+
+#: new.src#DLG_NEW_FILE.FT_KEYWORDS.fixedtext.text
+msgid "~Key words"
+msgstr "ال~كلمات الأساسية"
+
+#: new.src#DLG_NEW_FILE.FT_DESC.fixedtext.text
+msgid "~Description"
+msgstr "ال~وصف"
+
+#: new.src#DLG_NEW_FILE.modaldialog.text
+msgid "New"
+msgstr "جديد"
+"X-Generator: Pootle 2.1.6\n"
+"X-Accelerator-Marker: ~\n"
+
+#: alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.fixedtext.text
+msgid ""
+"This document may contain formatting or content that cannot be saved in the "
+"%FORMATNAME file format. Do you want to save the document in this format "
+"anyway?\n"
+"\n"
+"Use the latest ODF file format and be sure all formatting and content is "
+"saved correctly."
+msgstr ""
+"قد يحتوي هذا المستند على تنسيق أو محتوى لا يمكن حفظه بتنسيق ملف %FORMATNAME. "
+"هل تريد حفظ المستند بهذا التنسيق على أية حال؟\n"
+"\n"
+"استخدم أحدث تنسيق ملف ODF مع التأكد من حفظ كافة التنسيقات والمحتوى بشكل "
+"صحيح."
+
+#: alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.okbutton.text
+msgid "~Keep Current Format"
+msgstr "الا~حتفاظ بالتنسيق الحالي"
+
+#: alienwarn.src#RID_DLG_ALIEN_WARNING.PB_YES.cancelbutton.text
+msgid "~Save in ODF Format"
+msgstr "~حفظ بتنسيق ODF"
+
+#: alienwarn.src#RID_DLG_ALIEN_WARNING.PB_MOREINFO.helpbutton.text
+msgid "~More Information..."
+msgstr "~مزيد من المعلومات..."
+
+#: alienwarn.src#RID_DLG_ALIEN_WARNING.CB_WARNING_OFF.checkbox.text
+msgid "~Ask when not saving in ODF format"
+msgstr "ال~سؤال عند عدم الحفظ بتنسيق ODF"
+
+#: dialog.src#STR_RESET.string.text
+msgid "~Reset"
+msgstr "إ~عادة تعيين"
+
+#: dialog.src#STR_APPLY.string.text
+msgid "Apply"
+msgstr "تطبيق"
+
+#: dialog.src#STR_TABPAGE_MANAGESTYLES.string.text
+msgid "Organizer"
+msgstr "المنظم"
+
+#: dialog.src#MSG_TABPAGE_INVALIDNAME.infobox.text
+msgid "This name is already in use."
+msgstr "هذا الاسم مستخدم حاليًا."
+
+#: dialog.src#MSG_TABPAGE_INVALIDSTYLE.infobox.text
+msgid "This Style does not exist."
+msgstr "هذا النمط غير موجود."
+
+#: dialog.src#MSG_TABPAGE_INVALIDPARENT.infobox.text
+msgid ""
+"This Style cannot be used as a base Style,\n"
+"because it would result in a recursive reference."
+msgstr ""
+"هذا النمط لا يمكن استخدامه كنمط أساسي،\n"
+"بسبب أنه سوف يحدث مراجع تشير إلى نفسها بشكل لا نهائي. "
+
+#: dialog.src#MSG_POOL_STYLE_NAME.infobox.text
+msgid ""
+"Name already exists as a default Style.\n"
+"Please choose another name."
+msgstr ""
+"الاسم موجود بالفعل كنمط افتراضي.\n"
+"الرجاء اختيار اسم آخر."
+
+#: dialog.src#STR_DELETE_STYLE.string.text
+msgid "Do you really want to delete Style $1?"
+msgstr "هل تريد بالفعل حذف النمط $1؟"
+
+#: dialog.src#STR_DELETE_STYLE_USED.string.text
+msgid "You are deleting an applied Style!\n"
+msgstr "إنك تقوم بحذف نمط مستخدم!\n"
+
+#: dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.menuitem.text
+msgid "New..."
+msgstr "جديد..."
+
+#: dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.menuitem.text
+msgid "Modify..."
+msgstr "تعديل..."
+
+#: dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.menuitem.text
+msgid "Delete..."
+msgstr "حذف..."
+
+#: dialog.src#SID_NAVIGATOR.string.text
+msgid "Navigator"
+msgstr "المستكشف"
+
+#: dialog.src#SID_TASKPANE.string.text
+msgid "Task Pane"
+msgstr "قسم المهام"
+
+#: dialog.src#MSG_ERROR_WRONG_CONFIRM.errorbox.text
+msgid "Faulty password confirmation"
+msgstr "تأكيد غير صحيح لكلمة المرور"
+
+#: dialog.src#STR_PDF_EXPORT_SEND.string.text
+msgid "Send"
+msgstr "أرسل"
+
+#: dinfdlg.src#STR_SFX_NEWOFFICEDOC.string.text
+msgid "%PRODUCTNAME document"
+msgstr "مستند %PRODUCTNAME"
+
+#: dinfdlg.src#TP_DOCINFODESC.FT_TITLE.fixedtext.text
+msgid "~Title"
+msgstr "الع~نوان"
+
+#: dinfdlg.src#TP_DOCINFODESC.FT_THEMA.fixedtext.text
+msgid "~Subject"
+msgstr "المو~ضوع"
+
+#: dinfdlg.src#TP_DOCINFODESC.FT_KEYWORDS.fixedtext.text
+msgid "~Keywords"
+msgstr "ال~كلمات الأساسية"
+
+#: dinfdlg.src#TP_DOCINFODESC.FT_COMMENT.fixedtext.text
+msgid "~Comments"
+msgstr "~تعليقات"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.fixedtext.text
+msgid "Type:"
+msgstr "النوع:"
+
+#: dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.checkbox.text
+msgctxt "dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.checkbox.text"
+msgid "~Read-only"
+msgstr "للق~راءة فقط"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_FILE.fixedtext.text
+msgid "Location:"
+msgstr "الموقع:"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_FILE_SIZE.fixedtext.text
+msgid "Size:"
+msgstr "الحجم:"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_CREATE.fixedtext.text
+msgid "Created:"
+msgstr "إنشاء:"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_CHANGE.fixedtext.text
+msgid "Modified:"
+msgstr "عُدّل:"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_SIGNED.fixedtext.text
+msgid "Digitally signed:"
+msgstr "مُوقّع رقميًا:"
+
+#: dinfdlg.src#TP_DOCINFODOC.BTN_SIGNATURE.pushbutton.text
+msgid "Digital Signature..."
+msgstr "توقيع رقمي..."
+
+#: dinfdlg.src#TP_DOCINFODOC.STR_MULTSIGNED.string.text
+msgid "Multiply signed document"
+msgstr "مستند موقّع مرارًا"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_PRINT.fixedtext.text
+msgid "Last printed:"
+msgstr "تاريخ آخر طباعة:"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_TIMELOG.fixedtext.text
+msgid "Total editing time:"
+msgstr "إجمالي وقت التحرير:"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_DOCNO.fixedtext.text
+msgid "Revision number:"
+msgstr "رقم المراجعة:"
+
+#: dinfdlg.src#TP_DOCINFODOC.BTN_DELETE.pushbutton.text
+msgid "Reset"
+msgstr "إعادة تعيين"
+
+#: dinfdlg.src#TP_DOCINFODOC.CB_USE_USERDATA.checkbox.text
+msgid "~Apply user data"
+msgstr "ا~ستخدام بيانات المستخدم"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_TEMPL.fixedtext.text
+msgid "Template:"
+msgstr "قالب:"
+
+#: dinfdlg.src#TP_DOCINFODOC.STR_UNKNOWNSIZE.string.text
+msgid "unknown"
+msgstr "غير معروف"
+
+#: dinfdlg.src#TP_DOCINFODOC.EDIT_FILE_NAME.string.text
+msgid "File Name"
+msgstr ""
+
+#: dinfdlg.src#TP_DOCINFOUSER.BTN_EDITLABEL.pushbutton.text
+msgid "~Info fields..."
+msgstr "~حقول معلومات..."
+
+#: dinfdlg.src#TP_DOCINFORELOAD.RB_NOAUTOUPDATE.radiobutton.text
+msgid "Do not refresh automatically"
+msgstr "عدم التحديث التلقائي"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.RB_RELOADUPDATE.radiobutton.text
+msgid "Refresh this document"
+msgstr "تحديث هذا المستند"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.FT_EVERY.fixedtext.text
+msgid "every"
+msgstr "كل"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.fixedtext.text
+msgctxt "dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.fixedtext.text"
+msgid "seconds"
+msgstr "ثوانٍ"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.RB_FORWARDUPDATE.radiobutton.text
+msgid "Redirect from this document"
+msgstr "إعادة توجيه بدءًا من هذا المستند"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.fixedtext.text
+msgid "after"
+msgstr "بعد"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.fixedtext.text
+msgctxt "dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.fixedtext.text"
+msgid "seconds"
+msgstr "ثوانٍ"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.FT_URL.fixedtext.text
+msgid "to URL"
+msgstr "إلى URL"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.FT_FRAME.fixedtext.text
+msgid "to frame"
+msgstr "إلى إطار"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.STR_FORWARD_ERRMSSG.string.text
+msgid "If you select the option \"%PLACEHOLDER%\", you must enter a URL."
+msgstr "إن قمت بتحديد الخيار \"%PLACEHOLDER%\"، فيجب إدخال عنوان URL."
+
+#: dinfdlg.src#TP_CUSTOMPROPERTIES.FT_PROPERTIES.fixedtext.text
+msgid "~Properties"
+msgstr "~خصائص"
+
+#: dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.string.text
+msgid "Name"
+msgstr "الاسم"
+
+#: dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.string.text
+msgid "Type"
+msgstr "النوع"
+
+#: dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_VALUE.string.text
+msgid "Value"
+msgstr "القيمة"
+
+#: dinfdlg.src#TP_CUSTOMPROPERTIES.BTN_ADD.pushbutton.text
+msgid "~Add"
+msgstr "إضا~فة"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.combobox.text
+msgctxt "dinfdlg.src#SFX_CB_PROPERTY_NAME.combobox.text"
+msgid "-"
+msgstr "-"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.combobox.quickhelptext
+msgid "Property Name"
+msgstr "اسم الخاصيةe"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.1.stringlist.text
+msgid "Checked by"
+msgstr "قام بالتدقيق"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.2.stringlist.text
+msgid "Client"
+msgstr "العميل"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.3.stringlist.text
+msgid "Date completed"
+msgstr "تاريخ الإكمال"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.4.stringlist.text
+msgid "Department"
+msgstr "القسم"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.5.stringlist.text
+msgid "Destinations"
+msgstr "الوجهات"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.6.stringlist.text
+msgid "Disposition"
+msgstr "الترتيب"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.7.stringlist.text
+msgid "Division"
+msgstr "القسم"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.8.stringlist.text
+msgid "Document number"
+msgstr "رقم المستند"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.9.stringlist.text
+msgid "Editor"
+msgstr "المُحرر"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.10.stringlist.text
+msgid "E-Mail"
+msgstr "البريد الإلكتروني"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.11.stringlist.text
+msgid "Forward to"
+msgstr "إعادة توجيه إلى"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.12.stringlist.text
+msgid "Group"
+msgstr "تجميع"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.13.stringlist.text
+msgid "Info"
+msgstr "معلومات"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.14.stringlist.text
+msgid "Language"
+msgstr "اللغة"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.15.stringlist.text
+msgid "Mailstop"
+msgstr "توقف البريد"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.16.stringlist.text
+msgid "Matter"
+msgstr "الموضوع"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.17.stringlist.text
+msgid "Office"
+msgstr "مكتب"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.18.stringlist.text
+msgid "Owner"
+msgstr "المالك"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.19.stringlist.text
+msgid "Project"
+msgstr "مشروع"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.20.stringlist.text
+msgid "Publisher"
+msgstr "الناشر"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.21.stringlist.text
+msgid "Purpose"
+msgstr "الهدف"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.22.stringlist.text
+msgid "Received from"
+msgstr "متلقاة من"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.23.stringlist.text
+msgid "Recorded by"
+msgstr "قام بالتسجيل"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.24.stringlist.text
+msgid "Recorded date"
+msgstr "تاريخ التسجيل"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.25.stringlist.text
+msgid "Reference"
+msgstr "المرجع"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.26.stringlist.text
+msgid "Source"
+msgstr "المصدر"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.27.stringlist.text
+msgid "Status"
+msgstr "الحالة"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.28.stringlist.text
+msgid "Telephone number"
+msgstr "رقم الهاتف"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.29.stringlist.text
+msgid "Typist"
+msgstr "الكاتب"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.30.stringlist.text
+msgid "URL"
+msgstr "عنوان URL"
+
+#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.1.stringlist.text
+msgid "Text"
+msgstr "النص"
+
+#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.2.stringlist.text
+msgid "DateTime"
+msgstr "التاريخ والوقت"
+
+#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.3.stringlist.text
+msgid "Date"
+msgstr "التاريخ"
+
+#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.4.stringlist.text
+msgctxt "dinfdlg.src#SFX_LB_PROPERTY_TYPE.4.stringlist.text"
+msgid "Duration"
+msgstr "المدة"
+
+#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.5.stringlist.text
+msgid "Number"
+msgstr "الرقم"
+
+#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.6.stringlist.text
+msgid "Yes or no"
+msgstr "نعم أم لا"
+
+#: dinfdlg.src#SFX_ST_DURATION_FORMAT.string.text
+msgid " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
+msgstr " سنة: %1 شهر: %2 يوم: %3 ساعة: %4 دقيقة: %5 ثانية: %6"
+
+#: dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.radiobutton.text
+msgid "Yes"
+msgstr "نعم"
+
+#: dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_NO.radiobutton.text
+msgid "No"
+msgstr "لا"
+
+#: dinfdlg.src#SFX_PB_PROPERTY_REMOVE.imagebutton.text
+msgctxt "dinfdlg.src#SFX_PB_PROPERTY_REMOVE.imagebutton.text"
+msgid "-"
+msgstr "-"
+
+#: dinfdlg.src#SFX_PB_PROPERTY_REMOVE.imagebutton.quickhelptext
+msgid "Remove Property"
+msgstr "إزالة الخاصيةy"
+
+#: dinfdlg.src#SFX_QB_WRONG_TYPE.querybox.text
+msgid ""
+"The value entered does not match the specified type.\n"
+"The value will be stored as text."
+msgstr ""
+"لا تتوافق القيمة التي تم إدخالها مع النوع المحدد.\n"
+"سيتم تخزين القيمة كنص."
+
+#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.pageitem.text
+msgid "General"
+msgstr "عام"
+
+#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.pageitem.text
+msgid "Description"
+msgstr "الوصف"
+
+#: dinfdlg.src#SID_DOCINFO.1.TP_CUSTOMPROPERTIES.pageitem.text
+msgid "Custom Properties"
+msgstr "خصائص مخصصة"
+
+#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.pageitem.text
+msgid "Internet"
+msgstr "إنترنت"
+
+#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFOSECURITY.pageitem.text
+msgid "Security"
+msgstr "الأمان"
+
+#: dinfdlg.src#SID_DOCINFO.tabdialog.text
+msgid "Properties of "
+msgstr "خصائص "
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FL_DURATION.fixedline.text
+msgctxt "dinfdlg.src#RID_EDIT_DURATIONS.FL_DURATION.fixedline.text"
+msgid "Duration"
+msgstr "المدة"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.CB_NEGATIVE.checkbox.text
+msgid "~Negative"
+msgstr "س~لبية"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_YEAR.fixedtext.text
+msgid "~Years"
+msgstr "سنوا~ت"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_MONTH.fixedtext.text
+msgid "~Months"
+msgstr "أ~شهر"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_DAY.fixedtext.text
+msgid "~Days"
+msgstr "أي~ام"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_HOUR.fixedtext.text
+msgid "H~ours"
+msgstr "سا~عات"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_MINUTE.fixedtext.text
+msgid "Min~utes"
+msgstr "د~قائق"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_SECOND.fixedtext.text
+msgid "~Seconds"
+msgstr "ثوا~ني"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_MSECOND.fixedtext.text
+msgid "Millise~conds"
+msgstr "مللي ~ثانية"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.modaldialog.text
+msgid "Edit Duration"
+msgstr "تحرير المدة"
+
+#: dinfedt.src#DLG_DOCINFO_EDT.FL_INFO.fixedline.text
+msgid "Names"
+msgstr "الأسماء"
+
+#: dinfedt.src#DLG_DOCINFO_EDT.modaldialog.text
+msgid "Edit Field Names"
+msgstr "تحرير أسماء الحقول"
+
+#: filedlghelper.src#STR_SFX_FILEDLG_ACTUALVERSION.string.text
+msgid "Current version"
+msgstr "الإصدار الحالي"
+
+#: filedlghelper.src#STR_SFX_EXPLORERFILE_EXPORT.string.text
+msgid "Export"
+msgstr "تصدير"
+
+#: filedlghelper.src#STR_SFX_EXPLORERFILE_INSERT.string.text
+msgid "Insert"
+msgstr "إدراج"
+
+#: filedlghelper.src#STR_SFX_EXPLORERFILE_BUTTONINSERT.string.text
+msgid "~Insert"
+msgstr "إ~دراج"
+
+#: filedlghelper.src#STR_SFX_IMPORT_ALL.string.text
+msgid "<All formats>"
+msgstr "<كل التنسيقات>"
+
+#: filedlghelper.src#STR_CB_AUTO_EXTENSION.string.text
+msgid "~Automatic file name extension"
+msgstr "ام~تداد اسم ملف تلقائي"
+
+#: filedlghelper.src#STR_CB_SELECTION.string.text
+msgid "~Selection"
+msgstr "ال~تحديد"
+
+#: filedlghelper.src#STR_CB_INSERT_AS_LINK.string.text
+msgid "~Link"
+msgstr "الارتبا~ط"
+
+#: filedlghelper.src#STR_CB_SHOW_PREVIEW.string.text
+msgid "Pr~eview"
+msgstr "م~عاينة"
+
+#: filedlghelper.src#STR_CB_READONLY.string.text
+msgctxt "filedlghelper.src#STR_CB_READONLY.string.text"
+msgid "~Read-only"
+msgstr "للق~راءة فقط"
+
+#: filedlghelper.src#STR_CB_PASSWORD.string.text
+msgid "Save with ~password"
+msgstr "حفظ بكلمة ~مرور"
+
+#: filedlghelper.src#STR_CB_FILTER_OPTIONS.string.text
+msgid "Edit ~filter settings"
+msgstr "تحرير إ~عدادات عامل التصفية"
+
+#: filedlghelper.src#STR_PB_PLAY.string.text
+msgid "~Play"
+msgstr "~تشغيل"
+
+#: filedlghelper.src#STR_PB_STOP.string.text
+msgid "Sto~p"
+msgstr "إي~قاف"
+
+#: filedlghelper.src#STR_PB_OPEN.string.text
+msgid "~Open"
+msgstr "~فتح"
+
+#: filedlghelper.src#STR_PB_SAVE.string.text
+msgid "~Save"
+msgstr "حف~ظ"
+
+#: filedlghelper.src#STR_LB_IMAGE_TEMPLATE.string.text
+msgid "Style:"
+msgstr "النمط:"
+
+#: filedlghelper.src#STR_LB_TEMPLATES.string.text
+msgid "~Templates:"
+msgstr "~قوالب:"
+
+#: filedlghelper.src#STR_LB_VERSION.string.text
+msgid "~Version:"
+msgstr "الإ~صدار:"
+
+#: mailwindow.src#RID_ERRBOX_MAIL_CONFIG.errorbox.text
+msgid ""
+"%PRODUCTNAME was unable to find a working e-mail configuration. Please save "
+"this document locally instead and attach it from within your e-mail client."
+msgstr ""
+"لم يستطع %PRODUCTNAME العثور على تكوين بريد إلكتروني يمكن استخدامه. الرجاء "
+"حفظ هذا المستند محليًا بدلاً من إرفاقه من خلال عميل البريد الإلكتروني."
+
+#: mgetempl.src#TP_MANAGE_STYLES.FT_NAME.fixedtext.text
+msgid "~Name"
+msgstr "الا~سم"
+
+#: mgetempl.src#TP_MANAGE_STYLES.CB_AUTO.checkbox.text
+msgid "~AutoUpdate"
+msgstr "~تحديث تلقائي"
+
+#: mgetempl.src#TP_MANAGE_STYLES.FT_NEXT.fixedtext.text
+msgid "Ne~xt Style"
+msgstr "ال~نمط التالي"
+
+#: mgetempl.src#TP_MANAGE_STYLES.FT_BASE.fixedtext.text
+msgid "Linked with"
+msgstr "مرتبط بـ"
+
+#: mgetempl.src#TP_MANAGE_STYLES.FT_REGION.fixedtext.text
+msgid "~Category"
+msgstr "ال~فئة"
+
+#: mgetempl.src#TP_MANAGE_STYLES.GB_DESC.fixedline.text
+msgid "Contains"
+msgstr "يحتوي"
+
+#: newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.FL_COL.fixedline.text
+msgid "Style name"
+msgstr "اسم النمط"
+
+#: newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MSG_OVERWRITE.querybox.text
+msgid "Style already exists. Overwrite?"
+msgstr "النمط موجود بالفعل. هل تريد الاستبدال؟"
+
+#: newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.modaldialog.text
+msgid "Create Style"
+msgstr "إنشاء نمط"
+
+#: passwd.src#DLG_PASSWD.FT_PASSWD_USER.fixedtext.text
+msgid "~User"
+msgstr "ال~مستخدم"
+
+#: passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD.fixedtext.text
+msgid "~Password"
+msgstr "~كلمة المرور"
+
+#: passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM.fixedtext.text
+msgid "~Confirm"
+msgstr "~تأكيد"
+
+# 88%
+# 100%
+#: passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.fixedline.text
+#, fuzzy
+msgctxt "passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.fixedline.text"
+msgid "Password"
+msgstr "~كلمة المرور"
+
+# 77%
+# 100%
+#: passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD2.fixedtext.text
+#, fuzzy
+msgid "P~assword"
+msgstr "~كلمة المرور"
+
+# 75%
+# 100%
+#: passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM2.fixedtext.text
+#, fuzzy
+msgid "Confir~m"
+msgstr "~تأكيد"
+
+# 88%
+# 100%
+#: passwd.src#DLG_PASSWD.TEXT_PASSWD.string.text
+#, fuzzy
+msgctxt "passwd.src#DLG_PASSWD.TEXT_PASSWD.string.text"
+msgid "Password"
+msgstr "~كلمة المرور"
+
+#: passwd.src#DLG_PASSWD.modaldialog.text
+msgid "Enter Password"
+msgstr "إدخال كلمة المرور"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.fixedline.text
+msgid "Reduce print data"
+msgstr "تقليص البيانات المطبوعة"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.FT_OUTPUTTYPE.fixedtext.text
+msgid "Settings for"
+msgstr "إعدادات"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTEROUTPUT.radiobutton.text
+msgid "~Printer"
+msgstr "~طابعة"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTFILEOUTPUT.radiobutton.text
+msgid "Print to ~file"
+msgstr "الطباعة إلى ~ملف"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCETRANSPARENCY.checkbox.text
+msgid "~Reduce transparency"
+msgstr "ت~قليص الشفافية"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_AUTO.radiobutton.text
+msgid "Auto~matically"
+msgstr "~تلقائيًا"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_NONE.radiobutton.text
+msgid "~No transparency"
+msgstr "~بدون شفافية"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEGRADIENTS.checkbox.text
+msgid "Reduce ~gradients"
+msgstr "تقليص ال~تدرجات"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_STRIPES.radiobutton.text
+msgid "Gradient ~stripes"
+msgstr "تدرج ال~تخطيطات"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_COLOR.radiobutton.text
+msgid "Intermediate ~color"
+msgstr "اللون ال~متوسط"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS.checkbox.text
+msgid "Reduce ~bitmaps"
+msgstr "تقليص ~الصورة النقطية"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_OPTIMAL.radiobutton.text
+msgid "~High print quality"
+msgstr "طباعة ~عالية الجودة"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_NORMAL.radiobutton.text
+msgid "N~ormal print quality"
+msgstr "طباعة ذات جودة عا~دية"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_RESOLUTION.radiobutton.text
+msgid "Reso~lution"
+msgstr "ال~دقة"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.1.stringlist.text
+msgid "72 DPI"
+msgstr "72 نقطة لكل بوصة"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.2.stringlist.text
+msgid "96 DPI"
+msgstr "96 نقطة لكل بوصة"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.3.stringlist.text
+msgid "150 DPI (Fax)"
+msgstr "150 نقطة لكل بوصة (فاكس)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.4.stringlist.text
+msgid "200 DPI (default)"
+msgstr "200 نقطة لكل بوصة (افتراضي)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.5.stringlist.text
+msgid "300 DPI"
+msgstr "300 نقطة لكل بوصة"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.6.stringlist.text
+msgid "600 DPI"
+msgstr "600 نقطة لكل بوصة"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS_TRANSPARENCY.checkbox.text
+msgid "Include transparent ob~jects"
+msgstr "تضمين ~كائن شفاف"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_CONVERTTOGREYSCALES.checkbox.text
+msgid "Con~vert colors to grayscale"
+msgstr "~تحويل الألوان إلى تدرجات الرمادي"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.GB_PRINT_WARN.fixedline.text
+msgid "Printer warnings"
+msgstr "تحذيرات الطابعة"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERSIZE.checkbox.text
+msgid "P~aper size"
+msgstr "حج~م الورق"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERORIENTATION.checkbox.text
+msgid "Pap~er orientation"
+msgstr "ات~جاه الورق"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_TRANSPARENCY.checkbox.text
+msgid "~Transparency"
+msgstr "ا~لشفافية"
+
+#: printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.fixedtext.text
+msgid ""
+"Your document contains transparent objects.\n"
+"This may lead to longer printing time on certain\n"
+"printers. Should the aspect of transparency\n"
+"be reduced?"
+msgstr ""
+"يحتوي مستندك على كائنات شفافة.\n"
+"قد يؤدي هذا إلى استغراق وقت أطول في طابعات\n"
+"محددة. هل يجب تقليص مستوى\n"
+"الشفافية؟"
+
+#: printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.okbutton.text
+msgid "~Yes"
+msgstr "~نعم"
+
+#: printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_NO.pushbutton.text
+msgid "~No"
+msgstr "~لا"
+
+#: printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_CANCEL.cancelbutton.text
+msgid "~Cancel"
+msgstr "إل~غاء الأمر"
+
+#: printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.checkbox.text
+msgid "~Do not show warning again"
+msgstr "~عدم إظهار هذا التحذير مرة أخرى"
+
+#: printopt.src#RID_WARN_PRINTTRANSPARENCY.modaldialog.text
+msgid "Warning"
+msgstr "تحذير"
+
+#: recfloat.src#SID_RECORDING_FLOATWINDOW.floatingwindow.text
+msgid "Record Macro"
+msgstr "تسجيل ماكرو"
+
+#: recfloat.src#STR_MACRO_LOSS.string.text
+msgid ""
+"Do you really want to cancel the recording? Any steps recorded up to this "
+"point will be lost."
+msgstr ""
+"هل تريد بالتأكيد إلغاء التسجيل؟ سيتم فقد أية خطوات تُسجيل بعد هذه النقطة."
+
+#: recfloat.src#STR_CANCEL_RECORDING.string.text
+msgid "Cancel Recording"
+msgstr "إلغاء التسجيل"
+
+#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FL.fixedline.text
+msgid "File encryption password"
+msgstr "كلمة مرور تشفير الملف"
+
+#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FT.fixedtext.text
+msgid "~Enter password to open"
+msgstr "أ~دخل كلمة المرور للفتح"
+
+#: securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_OPEN_FT.fixedtext.text
+msgid "~Reenter password to open"
+msgstr "أ~عد إدخال كلمة المرور للفتح"
+
+#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FL.fixedline.text
+msgid "File sharing password"
+msgstr "كلمة مرور مشاركة الملفات"
+
+#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FT.fixedtext.text
+msgid "Enter password to modify"
+msgstr "أدخل كلمة المرور للتعديل"
+
+#: securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_MODIFY_FT.fixedtext.text
+msgid "Reenter password to modify"
+msgstr "أعد إدخال كلمة المرور للتعديل"
+
+#: securitypage.src#TP_DOCINFOSECURITY.OPTIONS_FL.fixedline.text
+msgid "File sharing options"
+msgstr "خيارات مشاركة الملف"
+
+#: securitypage.src#TP_DOCINFOSECURITY.OPEN_READONLY_CB.checkbox.text
+msgid "~Open file read-only"
+msgstr "فتح مل~ف للقراءة فقط"
+
+#: securitypage.src#TP_DOCINFOSECURITY.RECORD_CHANGES_CB.checkbox.text
+msgid "Record ~changes"
+msgstr "تسجيل الت~غييرات"
+
+#: securitypage.src#TP_DOCINFOSECURITY.STR_PROTECT.string.text
+msgid "~Protect..."
+msgstr "ح~ماية..."
+
+#: securitypage.src#TP_DOCINFOSECURITY.STR_UNPROTECT.string.text
+msgid "~Unprotect..."
+msgstr "إلغاء ال~حماية"
+
+#: securitypage.src#TP_DOCINFOSECURITY.STR_END_REDLINING_WARNING.string.text
+msgid ""
+"This action will exit the change recording mode.\n"
+"Any information about changes will be lost.\n"
+"\n"
+"Exit change recording mode?\n"
+"\n"
+msgstr ""
+"سيقوم هذا الإجراء بإنهاء وضع تسجيل التغييرات.\n"
+"سيتم فقد أية معلومات حول التغييرات.\n"
+"\n"
+"هل تريد إنهاء وضع تسجيل التغييرات؟\n"
+"\n"
+
+#: securitypage.src#RID_SFX_PROTECT_RECORDS.string.text
+msgid "Protect Records"
+msgstr "حماية السجلات"
+
+#: securitypage.src#RID_SFX_UNPROTECT_RECORDS.string.text
+msgid "Unprotect Records"
+msgstr "إلغاء حماية السجلات"
+
+#: securitypage.src#RID_SFX_INCORRECT_PASSWORD.string.text
+msgid "Incorrect password"
+msgstr "كلمة مرور غير صحيحة"
+
+#: srchdlg.src#RID_DLG_SEARCH.FT_SEARCH.fixedtext.text
+msgid "~Search for"
+msgstr "ال~بحث عن"
+
+#: srchdlg.src#RID_DLG_SEARCH.CB_WHOLEWORDS.checkbox.text
+msgid "~Whole words only"
+msgstr "~كلمات كاملة فقط"
+
+#: srchdlg.src#RID_DLG_SEARCH.CB_MATCHCASE.checkbox.text
+msgid "~Match case"
+msgstr "~مطابقة حالة الأحرف"
+
+#: srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.checkbox.text
+msgctxt "srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.checkbox.text"
+msgid "Wrap ~around"
+msgstr "التفا~ف حول"
+
+#: srchdlg.src#RID_DLG_SEARCH.CB_BACKWARDS.checkbox.text
+msgid "~Backwards"
+msgstr "~للخلف"
+
+#: srchdlg.src#RID_DLG_SEARCH.PB_FIND.pushbutton.text
+msgid "~Find"
+msgstr "~بحث..."
+
+#: srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.cancelbutton.text
+msgctxt "srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.cancelbutton.text"
+msgid "~Close"
+msgstr "إ~غلاق"
+
+#: srchdlg.src#RID_DLG_SEARCH.STR_TOGGLE.string.text
+msgctxt "srchdlg.src#RID_DLG_SEARCH.STR_TOGGLE.string.text"
+msgid "Wrap ~around"
+msgstr "التفا~ف حول"
+
+#: srchdlg.src#RID_DLG_SEARCH.modelessdialog.text
+msgid "Find on this Page"
+msgstr "البحث في هذه الصفحة"
+
+#: taskpane.src#STR_SFX_DOCK.string.text
+msgid "Dock"
+msgstr "إرساء"
+
+#: taskpane.src#STR_SFX_UNDOCK.string.text
+msgid "Undock"
+msgstr "إلغاء إرساء"
+
+#: taskpane.src#STR_SFX_TASK_PANE_VIEW.string.text
+msgid "View"
+msgstr "عرض"
+
+#: taskpane.src#STR_SFX_TASKS.string.text
+msgid "Tasks"
+msgstr "المهام"
+
+#: templdlg.src#RID_STYLECATALOG.BT_ORG.pushbutton.text
+msgid "~Organizer..."
+msgstr "المن~ظم..."
+
+#: templdlg.src#RID_STYLECATALOG.BT_DEL.pushbutton.text
+msgid "~Delete..."
+msgstr "~حذف..."
+
+#: templdlg.src#RID_STYLECATALOG.BT_EDIT.pushbutton.text
+msgid "~Modify..."
+msgstr "~تعديل..."
+
+#: templdlg.src#RID_STYLECATALOG.BT_NEW.pushbutton.text
+msgid "~New..."
+msgstr "~جديد..."
+
+#: templdlg.src#RID_STYLECATALOG.modaldialog.text
+msgid "Style Catalog"
+msgstr "كتالوج الأنماط"
+
+#: templdlg.src#STR_STYLE_ELEMTLIST.string.text
+msgid "Style List"
+msgstr ""
+
+#: templdlg.src#STR_STYLE_FILTER_HIERARCHICAL.string.text
+msgid "Hierarchical"
+msgstr "هيكلي"
+
+#: templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_WATERCAN.toolboxitem.text
+msgid "Fill Format Mode"
+msgstr "وضع تنسيق التعبئة"
+
+#: templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_NEW_BY_EXAMPLE.toolboxitem.text
+msgid "New Style from Selection"
+msgstr "نمط جديد من التحديد"
+
+#: templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_UPDATE_BY_EXAMPLE.toolboxitem.text
+msgid "Update Style"
+msgstr "تحديث النمط"
+
+#: templdlg.src#DLG_STYLE_DESIGNER.dockingwindow.text
+msgid "Styles and Formatting"
+msgstr "الأنماط والتنسيق"
+
+#: versdlg.src#DLG_VERSIONS.GB_NEWVERSIONS.fixedline.text
+msgid "New versions"
+msgstr "إصدارات جديدة"
+
+#: versdlg.src#DLG_VERSIONS.PB_SAVE.pushbutton.text
+msgid "Save ~New Version"
+msgstr "حفظ الإ~صدار الجديد"
+
+#: versdlg.src#DLG_VERSIONS.CB_SAVEONCLOSE.checkbox.text
+msgid "~Always save a version on closing"
+msgstr "~حفظ الإصدار عند الإغلاق دائمًا"
+
+#: versdlg.src#DLG_VERSIONS.GB_OLDVERSIONS.fixedline.text
+msgid "Existing versions"
+msgstr "الإصدارات الموجودة"
+
+#: versdlg.src#DLG_VERSIONS.FT_DATETIME.fixedtext.text
+msgid "Date and time"
+msgstr "التاريخ والوقت"
+
+#: versdlg.src#DLG_VERSIONS.FT_SAVEDBY.fixedtext.text
+msgid "Saved by"
+msgstr "قام بعملية الحفظ"
+
+#: versdlg.src#DLG_VERSIONS.FT_COMMENTS.fixedtext.text
+msgid "Comments"
+msgstr "تعليقات"
+
+#: versdlg.src#DLG_VERSIONS.PB_CLOSE.cancelbutton.text
+msgid "Close"
+msgstr "إغلاق"
+
+#: versdlg.src#DLG_VERSIONS.PB_OPEN.pushbutton.text
+msgid "Open"
+msgstr "فتح"
+
+#: versdlg.src#DLG_VERSIONS.PB_VIEW.pushbutton.text
+msgid "~Show..."
+msgstr "إ~ظهار..."
+
+#: versdlg.src#DLG_VERSIONS.PB_DELETE.pushbutton.text
+msgid "~Delete"
+msgstr "ح~ذف"
+
+#: versdlg.src#DLG_VERSIONS.PB_COMPARE.pushbutton.text
+msgid "Compare"
+msgstr "مقارنة"
+
+#: versdlg.src#DLG_VERSIONS.modaldialog.text
+msgid "Versions of"
+msgstr "إصدارات"
+
+#: versdlg.src#DLG_COMMENTS.FT_DATETIME.fixedtext.text
+msgid "Date and time : "
+msgstr "التاريخ والوقت : "
+
+#: versdlg.src#DLG_COMMENTS.FT_SAVEDBY.fixedtext.text
+msgid "Saved by "
+msgstr "قام بعملية الحفظ "
+
+#: versdlg.src#DLG_COMMENTS.PB_CLOSE.pushbutton.text
+msgctxt "versdlg.src#DLG_COMMENTS.PB_CLOSE.pushbutton.text"
+msgid "~Close"
+msgstr "إ~غلاق"
+
+#: versdlg.src#DLG_COMMENTS.modaldialog.text
+msgid "Insert Version Comment"
+msgstr "إدراج تعليق الإصدار"
+
+#: versdlg.src#DLG_COMMENTS.string.text
+msgid "Version comment"
+msgstr "تعليق الإصدار"

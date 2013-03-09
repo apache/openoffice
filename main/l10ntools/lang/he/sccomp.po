@@ -1,0 +1,44 @@
+
+#: solver.src#RID_SOLVER_COMPONENT.string.text
+msgid "%PRODUCTNAME Linear Solver"
+msgstr "הפותר הליניארי של %PRODUCTNAME"
+
+#: solver.src#RID_PROPERTY_NONNEGATIVE.string.text
+msgid "Assume variables as non-negative"
+msgstr "להניח משתנים חיוביים"
+
+#: solver.src#RID_PROPERTY_INTEGER.string.text
+msgid "Assume variables as integer"
+msgstr "להניח משתנים שלמים"
+
+#: solver.src#RID_PROPERTY_TIMEOUT.string.text
+msgid "Solving time limit (seconds)"
+msgstr "מגבלת זמן ביצוע (בשניות)"
+
+#: solver.src#RID_PROPERTY_EPSILONLEVEL.string.text
+msgid "Epsilon level (0-3)"
+msgstr "רמת האפסילון (0-3)"
+
+#: solver.src#RID_PROPERTY_LIMITBBDEPTH.string.text
+msgid "Limit branch-and-bound depth"
+msgstr "להגביל את עומק ההסתעפות והגבולות"
+
+#: solver.src#RID_ERROR_NONLINEAR.string.text
+msgid "The model is not linear."
+msgstr "המודל אינו ליניארי."
+
+#: solver.src#RID_ERROR_EPSILONLEVEL.string.text
+msgid "The epsilon level is invalid."
+msgstr "רמת האפסילון אינה תקינה."
+
+#: solver.src#RID_ERROR_INFEASIBLE.string.text
+msgid "The model is infeasible. Check limiting conditions."
+msgstr "המודל לא ישים. לבדוק תנאי המגבלות."
+
+#: solver.src#RID_ERROR_UNBOUNDED.string.text
+msgid "The model is unbounded."
+msgstr "המודל ללא מגבלות"
+
+#: solver.src#RID_ERROR_TIMEOUT.string.text
+msgid "The time limit was reached."
+msgstr "עבר מגבלת הזמן לביצוע"

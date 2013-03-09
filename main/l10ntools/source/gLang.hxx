@@ -35,8 +35,6 @@
 
 
 /*******************   G L O B A L   D E F I N I T I O N   *******************/
-extern  bool gbVerbose;
-extern  bool gbDebug;
 typedef enum
 {
   ENTRY_DELETED,
@@ -58,26 +56,51 @@ class l10nMem
     l10nMem();
     ~l10nMem();
 
-    std::string showError    (const std::string& sText, int iLineNo = 0);
-    std::string showWarning  (const std::string& sText, int iLineNo = 0);
-    bool        isError      ();
 
-    bool        checkKey     (const std::string& sKey);
-    void        setFileName  (const std::string& sSourceFile);
-    void        setModuleName(const std::string& sModuleName);
-    void        setLanguage  (const std::string& sLanguage, bool bMaster = false);
+    static void setShowVerbose ();
+    static void setShowDebug   ();
 
-    void        loadEnUsKey  (const std::string& sKey,
-                              const std::string& sText);
-    void        loadLangKey  (ENTRY_STATE        eFlag,
-                              const std::string& sKey,
-                              const std::string& sOrgText,
-                              const std::string& sText);
-    void        save();
+    static int  showError   (const std::string& sText, int iLineNo = 0);
+    static int  showWarning (const std::string& sText, int iLineNo = 0);
+    static void showDebug   (const std::string& sText, int iLineNo = 0);
+    static void showVerbose (const std::string& sText, int iLineNo = 0);
+    bool isError            ();
 
-    void        setEnUsKey   (int                iLineNo,
-                              const std::string& sKey,
-                              const std::string& srText);
+    void setModuleName (const std::string& sModuleName);
+
+    void loadENUSkey   (int                iLineNo,
+                        const std::string& sSourceFile,
+                        const std::string& sKey,
+                        const std::string& sText);
+    void loadCleanup   (bool bMaster);
+
+    void setLanguage   (const std::string& sLanguage,
+                        bool               bCreate);
+    void loadLangKey   (int                iLineNo,
+                        const std::string& sSourceFile,
+                        const std::string& sKey,
+                        const std::string& sOrgText,
+                        const std::string& sText,
+                        bool               bIsFuzzy);
+    void convLangKey   (int                iLineNo,
+                        const std::string& sSourceFile,
+                        const std::string& sKey,
+                        const std::string& sOrgText,
+                        const std::string& sText,
+                        bool               bIsFuzzy);
+
+    void setFileName  (int                iLineNo,
+                       const std::string& sFilename,
+                       bool               bCreate);
+    bool checkKey     (const std::string& sKey,
+                       const std::string& sText);
+    void setSourceKey (int                iLineNo,
+                       const std::string& sKey,
+                       const std::string& sText);
+
+    void save         (const std::string& sTargetDir);
+    void dumpMem      (const std::string& sTargetDir);
+
 };
 
 
@@ -86,7 +109,7 @@ class l10nMem
 class convert_gen
 {
   public:
-    convert_gen(l10nMem& crMemory, const std::string& srSourceFile);
+    convert_gen(l10nMem& cMemory, const std::string& sSourceFile);
     ~convert_gen();
 
     // do extract/merge
@@ -106,7 +129,7 @@ class handler
     void run();
 
   private:
-    enum {DO_CONVERT, DO_EXTRACT, DO_MERGE, DO_GENERATE} meWorkMode;
+    enum {DO_CONVERT, DO_EXTRACT, DO_MERGE, DO_MERGE_KID, DO_GENERATE} meWorkMode;
     l10nMem                  mcMemory;
     std::string              msModuleName;
     std::string              msPoOutDir;
@@ -117,7 +140,7 @@ class handler
     std::vector<std::string> mvLanguages;
 
     void runConvert();
-    void runExtractMerge(bool bMerge);
+    void runExtractMerge(bool bMerge, bool bKid);
     void runGenerate();
 
     void showUsage(std::string& sErr);

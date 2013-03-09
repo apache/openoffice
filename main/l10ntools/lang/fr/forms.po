@@ -1,0 +1,260 @@
+
+#: strings.src#RID_BASELISTBOX_ERROR_FILLLIST.string.text
+msgid "The contents of a combo box or list field could not be determined."
+msgstr "Impossible de déterminer le contenu de la zone combinée/zone de liste."
+
+#: strings.src#RID_STR_IMPORT_GRAPHIC.string.text
+msgid "Insert graphics"
+msgstr "Insérer une image"
+
+#: strings.src#RID_STR_CONTROL_SUBSTITUTED_NAME.string.text
+msgid "substituted"
+msgstr "remplacé"
+
+#: strings.src#RID_STR_CONTROL_SUBSTITUTED_EPXPLAIN.string.text
+msgid ""
+"An error occurred while this control was being loaded. It was therefore "
+"replaced with a placeholder."
+msgstr ""
+"Erreur lors du chargement de ce contrôle ; c'est pouquoi il a été remplacé "
+"par un substituant."
+
+#: strings.src#RID_STR_READERROR.string.text
+msgid "Error reading data from database"
+msgstr "Erreur lors de la lecture des données de la base de données"
+
+#: strings.src#RID_STR_CONNECTERROR.string.text
+msgid "Connection failed"
+msgstr "Connexion impossible"
+
+#: strings.src#RID_ERR_LOADING_FORM.string.text
+msgid "The data content could not be loaded."
+msgstr "Impossible de charger le contenu des données."
+
+#: strings.src#RID_ERR_REFRESHING_FORM.string.text
+msgid "The data content could not be updated"
+msgstr "Impossible d'actualiser le contenu des données"
+
+#: strings.src#RID_STR_ERR_INSERTRECORD.string.text
+msgid "Error inserting the new record"
+msgstr "Erreur lors de l'insertion du nouvel enregistrement"
+
+#: strings.src#RID_STR_ERR_UPDATERECORD.string.text
+msgid "Error updating the current record"
+msgstr "Erreur lors de l'écriture de l'enregistrement actif"
+
+#: strings.src#RID_STR_ERR_DELETERECORD.string.text
+msgid "Error deleting the current record"
+msgstr "Erreur lors de la suppression de l'enregistrement actif"
+
+#: strings.src#RID_STR_ERR_DELETERECORDS.string.text
+msgid "Error deleting the specified records"
+msgstr "Erreur lors de la suppression des enregistrements spécifiés"
+
+#: strings.src#RID_STR_NEED_NON_NULL_OBJECT.string.text
+msgid "The object cannot be NULL."
+msgstr "L'objet ne peut pas être NULL."
+
+#: strings.src#RID_STR_OPEN_GRAPHICS.string.text
+msgid "Insert graphics from..."
+msgstr "Insérer une image à partir de..."
+
+#: strings.src#RID_STR_CLEAR_GRAPHICS.string.text
+msgid "Remove graphics"
+msgstr "Supprimer l'image"
+
+#: strings.src#RID_STR_INVALIDSTREAM.string.text
+msgid "The given stream is invalid."
+msgstr "Le flux donné n'est pas valide."
+
+#: strings.src#RID_STR_SYNTAXERROR.string.text
+msgid "Syntax error in query expression"
+msgstr "Erreur dans l'analyse de l'expression de la requête"
+
+#: strings.src#RID_STR_INCOMPATIBLE_TYPES.string.text
+msgid ""
+"The value types supported by the binding cannot be used for exchanging data "
+"with this control."
+msgstr ""
+"Les types de valeur supportés par le binding sont inutilisables pour "
+"l'échange de données avec ce contrôle."
+
+#: strings.src#RID_STR_LABEL_RECORD.string.text
+msgid "Record"
+msgstr "Enregistrement"
+
+#: strings.src#RID_STR_INVALID_VALIDATOR.string.text
+msgid ""
+"The control is connected to an external value binding, which at the same "
+"time acts as validator. You need to revoke the value binding, before you can "
+"set a new validator."
+msgstr ""
+"Le contrôle est connecté à une liaison de valeur externe qui agit en même "
+"temps comme valideur. Vous devez révoquer cette liaison avant de définir un "
+"nouveau valideur."
+
+#: strings.src#RID_STR_LABEL_OF.string.text
+msgid "of"
+msgstr "de"
+
+#: strings.src#RID_STR_QUERY_SAVE_MODIFIED_ROW.string.text
+msgid ""
+"The content of the current form has been modified.\n"
+"Do you want to save your changes?"
+msgstr ""
+"Le contenu du formulaire actif a été modifié.\n"
+"Voulez-vous enregistrer les modifications ?"
+
+#: strings.src#RID_STR_COULD_NOT_SET_ORDER.string.text
+msgid "Error setting the sort criteria"
+msgstr "Erreur lors de la définition des critères de tri"
+
+#: strings.src#RID_STR_COULD_NOT_SET_FILTER.string.text
+msgid "Error setting the filter criteria"
+msgstr "Erreur lors de la définition des critères de filtre"
+
+#: strings.src#RID_STR_FEATURE_REQUIRES_PARAMETERS.string.text
+msgid "To execute this function, parameters are needed."
+msgstr "Des paramètres sont nécessaires pour exécuter cette fonction."
+
+#: strings.src#RID_STR_FEATURE_NOT_EXECUTABLE.string.text
+msgid "This function cannot be executed, but is only for status queries."
+msgstr ""
+"Cette fonction ne peut pas être exécutée ; elle sert uniquement aux requêtes "
+"d'état."
+
+#: strings.src#RID_STR_FEATURE_UNKNOWN.string.text
+msgid "Unknown function."
+msgstr "Fonction inconnue."
+
+#: xforms.src#RID_STR_XFORMS_NO_BINDING_EXPRESSION.string.text
+msgid "Please enter a binding expression."
+msgstr "Saisissez une expression de liaison."
+
+#: xforms.src#RID_STR_XFORMS_INVALID_BINDING_EXPRESSION.string.text
+msgid "This is an invalid binding expression."
+msgstr "Cette expression de liaison n'est pas valide."
+
+#: xforms.src#RID_STR_XFORMS_INVALID_VALUE.string.text
+msgid "Value is invalid."
+msgstr "Valeur incorrecte."
+
+#: xforms.src#RID_STR_XFORMS_REQUIRED.string.text
+msgid "A value is required."
+msgstr "Une valeur est requise."
+
+#: xforms.src#RID_STR_XFORMS_INVALID_CONSTRAINT.string.text
+msgid "The constraint '$1' not validated."
+msgstr "La contrainte $1 n'a pas été validée."
+
+#: xforms.src#RID_STR_XFORMS_VALUE_IS_NOT_A.string.text
+msgid "The value is not of the type '$2'."
+msgstr "Le type de la valeur n'est pas $2."
+
+#: xforms.src#RID_STR_XFORMS_VALUE_MAX_INCL.string.text
+msgid "The value must be smaller than or equal to $2."
+msgstr "La valeur doit être inférieure ou égale à $2."
+
+#: xforms.src#RID_STR_XFORMS_VALUE_MAX_EXCL.string.text
+msgid "The value must be smaller than $2."
+msgstr "La valeur doit être inférieure à $2."
+
+#: xforms.src#RID_STR_XFORMS_VALUE_MIN_INCL.string.text
+msgid "The value must be greater than or equal to $2."
+msgstr "La valeur doit être supérieure ou égale à $2."
+
+#: xforms.src#RID_STR_XFORMS_VALUE_MIN_EXCL.string.text
+msgid "The value must be greater than $2."
+msgstr "La valeur doit être supérieure à $2."
+
+#: xforms.src#RID_STR_XFORMS_VALUE_PATTERN.string.text
+msgid "The value does not match the pattern '$2'."
+msgstr "La valeur ne correspond pas au motif $2."
+
+#: xforms.src#RID_STR_XFORMS_VALUE_TOTAL_DIGITS.string.text
+msgid "$2 digits allowed at most."
+msgstr "$2 chiffres maximum sont autorisés."
+
+#: xforms.src#RID_STR_XFORMS_VALUE_FRACTION_DIGITS.string.text
+msgid "$2 fraction digits allowed at most."
+msgstr "$2 chiffres de fraction maximum sont autorisés."
+
+#: xforms.src#RID_STR_XFORMS_VALUE_LENGTH.string.text
+msgid "The string must be $2 characters long."
+msgstr "La chaîne doit contenir $2 caractères."
+
+#: xforms.src#RID_STR_XFORMS_VALUE_MIN_LENGTH.string.text
+msgid "The string must be at least $2 characters long."
+msgstr "La chaîne doit contenir $2 caractères minimum."
+
+#: xforms.src#RID_STR_XFORMS_VALUE_MAX_LENGTH.string.text
+msgid "The string can only be $2 characters long at most."
+msgstr "La chaîne doit contenir $2 caractères maximum."
+
+#: xforms.src#RID_STR_DATATYPE_STRING.string.text
+msgid "String"
+msgstr "Chaîne"
+
+#: xforms.src#RID_STR_DATATYPE_URL.string.text
+msgid "Hyperlink"
+msgstr "Hyperlien"
+
+#: xforms.src#RID_STR_DATATYPE_BOOLEAN.string.text
+msgid "True/False (Boolean)"
+msgstr "Vrai/Faux (booléen)"
+
+#: xforms.src#RID_STR_DATATYPE_DECIMAL.string.text
+msgid "Decimal"
+msgstr "Décimale"
+
+#: xforms.src#RID_STR_DATATYPE_FLOAT.string.text
+msgid "Floating point"
+msgstr "Virgule flottante"
+
+#: xforms.src#RID_STR_DATATYPE_DOUBLE.string.text
+msgid "Double"
+msgstr "Double"
+
+#: xforms.src#RID_STR_DATATYPE_DATE.string.text
+msgid "Date"
+msgstr "Date"
+
+#: xforms.src#RID_STR_DATATYPE_TIME.string.text
+msgid "Time"
+msgstr "Heure"
+
+#: xforms.src#RID_STR_DATATYPE_DATETIME.string.text
+msgid "Date and Time"
+msgstr "Date et heure"
+
+#: xforms.src#RID_STR_DATATYPE_YEARMONTH.string.text
+msgid "Month and year"
+msgstr "Mois et année"
+
+#: xforms.src#RID_STR_DATATYPE_YEAR.string.text
+msgid "Year"
+msgstr "Année"
+
+#: xforms.src#RID_STR_DATATYPE_MONTHDAY.string.text
+msgid "Month and day"
+msgstr "Mois et jour"
+
+#: xforms.src#RID_STR_DATATYPE_MONTH.string.text
+msgid "Month"
+msgstr "Mois"
+
+#: xforms.src#RID_STR_DATATYPE_DAY.string.text
+msgid "Day"
+msgstr "Jour"
+
+#: xforms.src#RID_STR_XFORMS_CANT_EVALUATE.string.text
+msgid "Error during evaluation"
+msgstr "Erreur lors de l'évaluation"
+
+#: xforms.src#RID_STR_XFORMS_PATTERN_DOESNT_MATCH.string.text
+msgid "The string '$1' does not match the required regular expression '$2'."
+msgstr "La chaîne '$1' ne correspond pas à l'expression régulière '$2' requise."
+
+#: xforms.src#RID_STR_XFORMS_BINDING_UI_NAME.string.text
+msgid "Binding"
+msgstr "Liaison"

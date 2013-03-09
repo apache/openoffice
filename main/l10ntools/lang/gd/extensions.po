@@ -1,0 +1,2870 @@
+"(n > 2 && n < 20) ? 2 : 3;\n"
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: ~\n"
+"X-Project-Style: openoffice\n"
+
+#: updatehdl.src#RID_UPDATE_STR_CHECKING.string.text
+msgid "Checking..."
+msgstr "A' toirt sùil..."
+
+#: updatehdl.src#RID_UPDATE_STR_CHECKING_ERR.string.text
+msgid "Checking for an update failed."
+msgstr "Cha robh an lorg airson ùrachadh soirbheachail."
+
+#: updatehdl.src#RID_UPDATE_STR_NO_UPD_FOUND.string.text
+msgid "%PRODUCTNAME %PRODUCTVERSION is up to date."
+msgstr "Tha %PRODUCTNAME %PRODUCTVERSION cho nuadh 's a ghabhas."
+
+#: updatehdl.src#RID_UPDATE_STR_UPD_FOUND.string.text
+msgid ""
+"%PRODUCTNAME %NEXTVERSION is available.\n"
+"\n"
+"The installed version is %PRODUCTNAME %PRODUCTVERSION.\n"
+"\n"
+"Note: Before downloading  an update, please ensure that you have sufficient "
+"access rights to install it.\n"
+"A password, usually the administrator's or root password, may be required."
+msgstr ""
+"Tha %PRODUCTNAME %NEXTVERSION ri fhaighinn.\n"
+"\n"
+"Tha %PRODUCTNAME %PRODUCTVERSION air a stàladh agad.\n"
+"\n"
+"An aire: Dèan cinnteach gu bheil cead stàlaidh agad mus luchdaich thu a-nuas "
+"ùrachadh.\n"
+"Bidh feum air facal-faire rianaire no facal-faire root mar is trice."
+
+#: updatehdl.src#RID_UPDATE_STR_DLG_TITLE.string.text
+msgid "Check for Updates"
+msgstr "Thoir sùil airson ùrachaidhean"
+
+#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_PAUSE.string.text
+msgid "Downloading %PRODUCTNAME %NEXTVERSION paused at..."
+msgstr "Tha luchdadh a-nuas %PRODUCTNAME %NEXTVERSION 'na stad air..."
+
+#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_ERR.string.text
+msgid "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
+msgstr "Tha maille air luchdadh a-nuas %PRODUCTNAME %NEXTVERSION aig"
+
+#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.string.text
+msgid ""
+"The download location is: %DOWNLOAD_PATH.\n"
+"\n"
+"Under Tools – Options... - %PRODUCTNAME – Online Update you can change the "
+"download location."
+msgstr ""
+"Thèid a luchdadh a-nuas an-seo: %DOWNLOAD_PATH.\n"
+"\n"
+"'S urrainn dhut an t-ionad seo atharrachadh fo Innealan – Roghainnean... - %"
+"PRODUCTNAME – Ùrachadh air loidhne."
+
+#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.string.text
+msgid "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
+msgstr ""
+"Chaidh %FILE_NAME a luchdadh a-nuas is a shàbhaladh ann an %DOWNLOAD_PATH."
+
+#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.string.text
+msgid ""
+"The automatic download of the update is currently not available.\n"
+"\n"
+"Click 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the "
+"web site."
+msgstr ""
+"Chan eil luchdadh a-nuas fèin-obrachail an ùrachaidh ri fhaighinn an-dràsta "
+"fhèin.\n"
+"\n"
+"Briog air 'Luchdaich a-nuas...' gus %PRODUCTNAME %NEXTVERSION a luchdadh "
+"a-nuas de làimh on làrach-lìn."
+
+#: updatehdl.src#RID_UPDATE_STR_DOWNLOADING.string.text
+msgid "Downloading %PRODUCTNAME %NEXTVERSION..."
+msgstr "A' luchdadh a-nuas %PRODUCTNAME %NEXTVERSION..."
+
+#: updatehdl.src#RID_UPDATE_STR_READY_INSTALL.string.text
+msgid ""
+"Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
+msgstr ""
+"Tha luchdadh a-nuas %PRODUCTNAME %NEXTVERSION deiseil. Tha e deiseil ri "
+"stàladh a-nis."
+
+#: updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.string.text
+msgid "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
+
+#: updatehdl.src#RID_UPDATE_STR_CANCEL_DOWNLOAD.string.text
+msgid "Do you really want to cancel the download?"
+msgstr "A bheil thu cinnteach gu bheil thu airson sgur dhen luchdadh a-nuas?"
+
+#: updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.string.text
+msgid ""
+"To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do "
+"you want to install the update now?"
+msgstr ""
+"Gus an t-ùrachadh seo a stàladh, tha agad ri %PRODUCTNAME %PRODUCTVERSION a "
+"dhùnadh. A bheil thu airson an t-ùrachadh a stàladh an-dràsta?"
+
+#: updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.string.text
+msgid "Install ~now"
+msgstr "Stàlaich a~n-dràsta"
+
+#: updatehdl.src#RID_UPDATE_STR_INSTALL_LATER.string.text
+msgid "Install ~later"
+msgstr "Stà~laich an ceann tàmaill"
+
+#: updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.string.text
+msgid ""
+"Could not run the installer application, please run %FILE_NAME in %"
+"DOWNLOAD_PATH manually."
+msgstr ""
+"Cha do thòisich an stàlaichear. Feumaidh tu %FILE_NAME ann an %DOWNLOAD_PATH "
+"a chur a dhol a làimh."
+
+#: updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.string.text
+msgid ""
+"A file with that name already exists! Do you want to overwrite the existing "
+"file?"
+msgstr ""
+"Tha faidhle leis an dearbh-ainm ann mu thràth. A bheil thu airson sgrìobhadh "
+"thairis air an fhaidhle a tha ann mu thràth?"
+
+#: updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.string.text
+msgid ""
+"A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you "
+"want to continue with the download or delete and reload the file?"
+msgstr ""
+"Tha faidhle ann mu thràth air a bheil '%FILENAME' ann an '%DOWNLOAD_PATH'! A "
+"bheil thu airson leantainn ort leis an luchdadh a-nuas no bheil thu airson "
+"am faidhle a sguabadh às is ath-luchdadh?"
+
+#: updatehdl.src#RID_UPDATE_STR_RELOAD_RELOAD.string.text
+msgid "Reload File"
+msgstr "Ath-luchdaich am faidhle"
+
+#: updatehdl.src#RID_UPDATE_STR_RELOAD_CONTINUE.string.text
+msgid "Continue"
+msgstr "Air adhart"
+
+#: updatehdl.src#RID_UPDATE_STR_PERCENT.string.text
+msgid "%PERCENT%"
+msgstr "%PERCENT%"
+
+#: updatehdl.src#RID_UPDATE_FT_STATUS.string.text
+msgid "Status"
+msgstr "Cor"
+
+#: updatehdl.src#RID_UPDATE_FT_DESCRIPTION.string.text
+msgid "Description"
+msgstr "Tuairisgeul"
+
+#: updatehdl.src#RID_UPDATE_BTN_CLOSE.string.text
+msgid "Close"
+msgstr "Dùin"
+
+#: updatehdl.src#RID_UPDATE_BTN_DOWNLOAD.string.text
+msgid "~Download"
+msgstr "Luch~daich a-nuas"
+
+#: updatehdl.src#RID_UPDATE_BTN_INSTALL.string.text
+msgid "~Install"
+msgstr "~Stàlaich"
+
+#: updatehdl.src#RID_UPDATE_BTN_PAUSE.string.text
+msgid "~Pause"
+msgstr "~Cuir 'na stad"
+
+#: updatehdl.src#RID_UPDATE_BTN_RESUME.string.text
+msgid "~Resume"
+msgstr "Lean ai~r"
+
+#: updatehdl.src#RID_UPDATE_BTN_CANCEL.string.text
+msgid "Cancel"
+msgstr "Sguir dheth"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.string.text
+msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.string.text"
+msgid "%PRODUCTNAME update available"
+msgstr "Tha ùrachadh %PRODUCTNAME ri fhaighinn"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_AVAIL.string.text
+msgid "Click here to start the download."
+msgstr "Briog an-seo gus tòiseachadh air an luchdadh a-nuas."
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.string.text
+msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.string.text"
+msgid "%PRODUCTNAME update available"
+msgstr "Tha ùrachadh %PRODUCTNAME ri fhaighinn"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.string.text
+msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.string.text"
+msgid "Click here for more information."
+msgstr "Briog an-seo airson barrachd fiosrachaidh."
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.string.text
+msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.string.text"
+msgid "%PRODUCTNAME update available"
+msgstr "Tha ùrachadh %PRODUCTNAME ri fhaighinn"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_AUTO_START.string.text
+msgid "Download of update begins."
+msgstr "Tha an luchdadh a-nuas gu bhith tòiseachadh."
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOADING.string.text
+msgid "Download of update in progress"
+msgstr "Tha an t-ùrachadh 'ga luchdadh a-nuas"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_PAUSED.string.text
+msgid "Download of update paused"
+msgstr "Tha luchdadh a-nuas an ùrachaidh 'na stad"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_PAUSED.string.text
+msgid "Click here to resume."
+msgstr "Briog an-seo gus leantainn air."
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_ERROR_DOWNLOADING.string.text
+msgid "Download of update stalled"
+msgstr "Tha maille air luchdadh a-nuas an ùrachaidh"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.string.text
+msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.string.text"
+msgid "Click here for more information."
+msgstr "Briog an-seo airson barrachd fiosrachaidh."
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_AVAIL.string.text
+msgid "Download of update completed"
+msgstr "Tha luchdadh a-nuas an ùrachaidh deiseil"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_AVAIL.string.text
+msgid "Click here to start the installation."
+msgstr "Briog an-seo gus tòiseachadh air an ùrachadh."
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_EXT_UPD_AVAIL.string.text
+msgid "Updates for extensions available"
+msgstr "Tha ùrachaidhean airson leudachain ri fhaighinn"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.string.text
+msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.string.text"
+msgid "Click here for more information."
+msgstr "Briog an-seo airson barrachd fiosrachaidh."
+
+#: Addons.xcu#.Addons.AddonUI.OfficeHelp.UpdateCheckJob.Title.value.text
+msgid "Check for ~Updates..."
+msgstr "Th~oir sùil airson ùrachaidhean..."
+"(n > 2 && n < 20) ? 2 : 3;\n"
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: ~\n"
+"X-Project-Style: openoffice\n"
+
+#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.FL_DATA.fixedline.text
+msgctxt "commonpagesdbp.src#RID_PAGE_TABLESELECTION.FL_DATA.fixedline.text"
+msgid "Data"
+msgstr "Dàta"
+
+#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.fixedtext.text
+msgid ""
+"Currently, the form the control belongs to is not (or not completely) bound "
+"to a data source.\n"
+"\n"
+"Please choose a data source and a table.\n"
+"\n"
+"\n"
+"Please note that the settings made on this page will take effect immediately "
+"upon leaving the page."
+msgstr ""
+"Chan eil am foirm aig a bheil an t-inneal-smachd co-cheangailte idir ri "
+"tùs-dàta an-dràsta (no air a cheangal gu neo-iomlan).\n"
+"\n"
+"Tagh tùs-dàta agus clàr.\n"
+"\n"
+"\n"
+"Thoir an aire gum bi buaidh aig na roghainnean a thaghas tu air an duilleag "
+"seo cho luath 's a dh'fhàgas tu e."
+
+#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.fixedtext.text
+msgid "~Data source:"
+msgstr "Tùs-~dàta:"
+
+#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.PB_FORMDATASOURCE.pushbutton.text
+msgid "~..."
+msgstr "~..."
+
+#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_TABLE.fixedtext.text
+msgid "~Table / Query:"
+msgstr "Clàr / Ceis~t:"
+
+#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.tabpage.text
+msgctxt "commonpagesdbp.src#RID_PAGE_TABLESELECTION.tabpage.text"
+msgid "Data"
+msgstr "Dàta"
+
+#: commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.FT_DATABASEFIELD_QUEST.fixedtext.text
+msgid "Do you want to save the value in a database field?"
+msgstr "A bheil thu airson an luach a shàbhaladh ann an raon stòir-dhàta?"
+
+#: commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_YES.radiobutton.text
+msgid "~Yes, I want to save it in the following database field:"
+msgstr "Tha, ~bu toigh leam a shàbhaladh san raon stòir-dhàta a leanas:"
+
+#: commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_NO.radiobutton.text
+msgid "~No, I only want to save the value in the form."
+msgstr "Cha~n eil, cha bu toigh leam ach an luach a shàbhaladh san fhoirm."
+
+#: commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.tabpage.text
+msgid "Database Field"
+msgstr "Raon stòir-dhàta"
+
+#: commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FL_FORMSETINGS.fixedline.text
+msgid "Form"
+msgstr "Foirm"
+
+#: commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMDATASOURCELABEL.fixedtext.text
+msgid "Data source"
+msgstr "Tùs-dàta"
+
+#: commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMCONTENTTYPELABEL.fixedtext.text
+msgid "Content type"
+msgstr "Seòrsa susbainte"
+
+#: commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMTABLELABEL.fixedtext.text
+msgid "Content"
+msgstr "Susbaint"
+
+#: commonpagesdbp.src#RID_STR_TYPE_TABLE.string.text
+msgid "Table"
+msgstr "Clàr"
+
+#: commonpagesdbp.src#RID_STR_TYPE_QUERY.string.text
+msgid "Query"
+msgstr "Ceist"
+
+#: commonpagesdbp.src#RID_STR_TYPE_COMMAND.string.text
+msgid "SQL command"
+msgstr "Àithne SQL"
+
+#: dbpilots.src#RID_DLG_GROUPBOXWIZARD.modaldialog.text
+msgid "Group Element Wizard"
+msgstr "Draoidh eileamaidean nam buidhnean"
+
+#: dbpilots.src#RID_DLG_GRIDWIZARD.modaldialog.text
+msgid "Table Element Wizard"
+msgstr "Draoidh eileamaidean nan clàr"
+
+#: dbpilots.src#RID_STR_LISTWIZARD_TITLE.string.text
+msgid "List Box Wizard"
+msgstr "Draoidh a' bogsa liosta"
+
+#: dbpilots.src#RID_STR_COMBOWIZARD_TITLE.string.text
+msgid "Combo Box Wizard"
+msgstr "Draoidh a' bhogsa cho-mheasgaichte"
+
+#: dbpilots.src#RID_STR_COULDNOTOPENTABLE.string.text
+msgid "The table connection to the data source could not be established."
+msgstr "Cha do ghabh ceangal clàir a stèidheachadh ris an tùs-dàta."
+
+#: gridpages.src#RID_PAGE_GW_FIELDSELECTION.FL_FRAME.fixedline.text
+msgid "Table element"
+msgstr "Eileamaid a' chlàir"
+
+#: gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.fixedtext.text
+msgctxt "gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.fixedtext.text"
+msgid "Existing fields"
+msgstr "Raointean a tha ann"
+
+#: gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_SELECTED_FIELDS.fixedtext.text
+msgid "Selected fields"
+msgstr "Na raointean a thagh thu"
+
+#: gridpages.src#RID_PAGE_GW_FIELDSELECTION.tabpage.text
+msgctxt "gridpages.src#RID_PAGE_GW_FIELDSELECTION.tabpage.text"
+msgid "Field Selection"
+msgstr "Taghadh nan raointean"
+
+#: gridpages.src#RID_STR_DATEPOSTFIX.string.text
+msgid " (Date)"
+msgstr " (Ceann-là)"
+
+#: gridpages.src#RID_STR_TIMEPOSTFIX.string.text
+msgid " (Time)"
+msgstr " (Àm)"
+
+#: groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOLABELS.fixedtext.text
+msgid "Which ~names do you want to give the option fields?"
+msgstr ""
+"Dè na ~h-ainmean a tha thu ag iarraidh airson raointean nan roghainnean?"
+
+#: groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.fixedtext.text
+msgctxt "groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.fixedtext.text"
+msgid "~Option fields"
+msgstr "Ra~ointean nan roghainnean"
+
+#: groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.tabpage.text
+msgctxt "groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.tabpage.text"
+msgid "Data"
+msgstr "Dàta"
+
+#: groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.FT_DEFAULTSELECTION.fixedtext.text
+msgid "Should one option field be selected as a default?"
+msgstr "An cleachd sinn aon raon roghainn mar roghainn bhunaiteach?"
+
+#: groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_YES.radiobutton.text
+msgid "~Yes, the following:"
+msgstr "~Cleachdaidh, am fear seo:"
+
+#: groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_NO.radiobutton.text
+msgid "No, one particular field is not going to be selected."
+msgstr "Cha chleachd, cha dèid raon sònraichte a thaghadh."
+
+#: groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.tabpage.text
+msgid "Default Field Selection"
+msgstr "Taghadh an raoin bhunaitich"
+
+#: groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES_EXPL.fixedtext.text
+msgid "When you select an option, the option group is given a specific value."
+msgstr ""
+"Nuair a thaghas tu roghainn, thèid luach sònraichte a chur air a' bhuidheann "
+"roghainn."
+
+#: groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES.fixedtext.text
+msgid "Which ~value do you want to assign to each option?"
+msgstr "Dè an l~uach a bu toigh leat iomruineadh do gach roghainn?"
+
+#: groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_RADIOBUTTONS.fixedtext.text
+msgctxt "groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_RADIOBUTTONS.fixedtext.text"
+msgid "~Option fields"
+msgstr "Ra~ointean roghainn"
+
+#: groupboxpages.src#RID_PAGE_OPTIONVALUES.tabpage.text
+msgid "Field Values"
+msgstr "Luachan raointean"
+
+#: groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_NAMEIT.fixedtext.text
+msgid "Which ~caption is to be given to your option group?"
+msgstr "Dè an ~caipsean a chuirear air a' bhuidheann roghainn agad?"
+
+#: groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_THATSALL.fixedtext.text
+msgid "These were all details needed to create the option group."
+msgstr ""
+"Seo am fiosrachadh gu lèir air a bheil feum gus am buidheann roghainn a "
+"chruthachadh."
+
+#: groupboxpages.src#RID_PAGE_OPTIONS_FINAL.tabpage.text
+msgid "Create Option Group"
+msgstr "Cruthaich am buidheann roghainn"
+
+#: groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.string.text
+msgid ""
+"You can either save the value of the option group in a database field or use "
+"it for a later action."
+msgstr ""
+"'S urrainn dhut luach a' bhuidhinn roghainn a shàbhaladh ann an raon stòir-"
+"dhàta no a chleachdadh ann an gnìomh as a dhèidh seo."
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FL_FRAME.fixedline.text
+msgid "Control"
+msgstr "Smachd"
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.fixedtext.text
+msgid ""
+"On the right side, you see all the tables from the data source of the form.\n"
+"\n"
+"\n"
+"Choose the table from which the data should be used as basis for the list "
+"content:"
+msgstr ""
+"Chì thu gach clàr o thùs-dàta an fhoirm air an taobh deis.\n"
+"\n"
+"\n"
+"Tagh an clàr a thèid a chuid dàta a chleachdadh mar bhunait airson susbaint "
+"na liosta:"
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.tabpage.text
+msgid "Table Selection"
+msgstr "Taghadh a' chlàir"
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_TABLEFIELDS.fixedtext.text
+msgctxt "listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_TABLEFIELDS.fixedtext.text"
+msgid "Existing fields"
+msgstr "Raointean a tha ann"
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_DISPLAYEDFIELD.fixedtext.text
+msgid "Display field"
+msgstr "Raon taisbeanaidh"
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_COMBOBOX.string.text
+msgid "The contents of the field selected will be shown in the combo box list."
+msgstr ""
+"Thèid susbaint an raoin a thagh thu a thaisbeanadh ann an liosta a' bhogsa "
+"co-mheasgaichte."
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.string.text
+msgid ""
+"The contents of the selected field will be shown in the list box if the "
+"linked fields are identical."
+msgstr ""
+"Thèid susbaint an raoin a thagh thu a thaisbeanadh ann am bogsa na liosta ma "
+"bhios na raointean ceangailte co-ionnann."
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.tabpage.text
+msgctxt "listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.tabpage.text"
+msgid "Field Selection"
+msgstr "Taghadh nan raon"
+
+#: listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.fixedtext.text
+msgid ""
+"This is where you select fields with matching contents so that the value "
+"from the display field will be shown."
+msgstr ""
+"Taghaidh tu raointean an-seo anns a bheil susbaint a tha a' maidseadh a "
+"chèile gus am faicear luach an raoin taisbeanaidh."
+
+#: listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.fixedtext.text
+msgid "Field from the ~Value Table"
+msgstr "Raon on ~chlàr luachan"
+
+#: listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_TABLEFIELD.fixedtext.text
+msgid "Field from the ~List Table"
+msgstr "Raon on chlàr ~liosta"
+
+#: listcombopages.src#RID_PAGE_LCW_FIELDLINK.tabpage.text
+msgid "Field Link"
+msgstr "Ceangal raoin"
+
+#: listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.string.text
+msgid ""
+"You can either save the value of the combo box in a database field or use it "
+"for display purposes."
+msgstr ""
+"'S urrainn dhut luach a' bhogsa cho-mheasgaichte a shàbhaladh ann an raon st"
+"òir-dhàta no a chleachdadh a chum taisbeanaidh."
+"(n > 2 && n < 20) ? 2 : 3;\n"
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: ~\n"
+"X-Project-Style: openoffice\n"
+
+#: fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.pageitem.text
+msgctxt "fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.pageitem.text"
+msgid "Font"
+msgstr "Cruth-clò"
+
+#: fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS_EXT.pageitem.text
+msgid "Font Effects"
+msgstr "Buaidhean crutha-clò"
+
+#: fontdialog.src#RID_TABDLG_FONTDIALOG.tabdialog.text
+msgid "Character"
+msgstr "Caractair"
+
+#: formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.fixedtext.text
+msgid ""
+"Sub forms can be used to display detailed data about the current record of "
+"the master form. To do this, you can specify which columns in the sub form "
+"match which columns in the master form."
+msgstr ""
+"'S urrainn dhut fo-fhoirmean a chleachdadh gus dàta mionaideach a "
+"shealltainn mu reacord làithreach a' phrìomh-fhoirm. Gus seo a dhèanamh, 's "
+"urrainn dhut sònrachadh dè na colbhan san fho-fhoirm a fhreagras ri colbhan "
+"san fhoirm mhaighstir."
+
+#: formlinkdialog.src#RID_DLG_FORMLINKS.modaldialog.text
+msgid "Link fields"
+msgstr "Ceangail na raointean"
+
+#: formlinkdialog.src#PB_SUGGEST.pushbutton.text
+msgid "Suggest"
+msgstr "Mol"
+
+#: formlinkdialog.src#STR_DETAIL_FORM.string.text
+msgid "Sub Form"
+msgstr "Fo-fhoirm"
+
+#: formlinkdialog.src#STR_MASTER_FORM.string.text
+msgid "Master Form"
+msgstr "Prìomh-fhoirm"
+
+#: formlinkdialog.src#STR_ERROR_RETRIEVING_COLUMNS.string.text
+msgid "The columns of '#' could not be retrieved."
+msgstr "Cha do ghabh colbhan '#' fhaighinn."
+
+#: formres.src#RID_STR_EDITMASK.string.text
+msgid "Edit mask"
+msgstr "Deasaich am masg"
+
+#: formres.src#RID_STR_LITERALMASK.string.text
+msgid "Literal mask"
+msgstr "Masg litireil"
+
+#: formres.src#RID_STR_READONLY.string.text
+msgctxt "formres.src#RID_STR_READONLY.string.text"
+msgid "Read-only"
+msgstr "Ri leughadh a-mhàin"
+
+#: formres.src#RID_STR_ENABLED.string.text
+msgid "Enabled"
+msgstr "An comas"
+
+#: formres.src#RID_STR_ENABLE_VISIBLE.string.text
+msgid "Visible"
+msgstr "Ri fhaicinn"
+
+#: formres.src#RID_STR_AUTOCOMPLETE.string.text
+msgid "AutoFill"
+msgstr "FèinLìon"
+
+#: formres.src#RID_STR_LINECOUNT.string.text
+msgid "Line count"
+msgstr "Àireamh de loidhnichean"
+
+#: formres.src#RID_STR_MAXTEXTLEN.string.text
+msgid "Max. text length"
+msgstr "Faid as motha an teacsa"
+
+#: formres.src#RID_STR_SPIN.string.text
+msgid "Spin Button"
+msgstr "Putan-toinneimh"
+
+#: formres.src#RID_STR_STRICTFORMAT.string.text
+msgid "Strict format"
+msgstr "Fòrmat teann"
+
+#: formres.src#RID_STR_SHOWTHOUSANDSEP.string.text
+msgid "Thousands separator"
+msgstr "Sgaradair nam mìltean"
+
+#: formres.src#RID_STR_PRINTABLE.string.text
+msgid "Printable"
+msgstr "So-chlò-bhualaidh"
+
+#: formres.src#RID_STR_TARGET_URL.string.text
+msgctxt "formres.src#RID_STR_TARGET_URL.string.text"
+msgid "URL"
+msgstr "URL"
+
+#: formres.src#RID_STR_TARGET_FRAME.string.text
+msgctxt "formres.src#RID_STR_TARGET_FRAME.string.text"
+msgid "Frame"
+msgstr "Frèam"
+
+#: formres.src#RID_STR_HELPTEXT.string.text
+msgid "Help text"
+msgstr "Teacsa cobharach"
+
+#: formres.src#RID_STR_HELPURL.string.text
+msgid "Help URL"
+msgstr "URL cobharach"
+
+#: formres.src#RID_STR_TAG.string.text
+msgid "Additional information"
+msgstr "Barrachd fiosrachaidh"
+
+#: formres.src#RID_STR_ECHO_CHAR.string.text
+msgid "Password character"
+msgstr "Caractair facail-fhaire"
+
+#: formres.src#RID_STR_TRISTATE.string.text
+msgid "Tristate"
+msgstr "Trì-staid"
+
+#: formres.src#RID_STR_EMPTY_IS_NULL.string.text
+msgid "Empty string is NULL"
+msgstr "Tha an t-sreang fhalamh 'na NULL"
+
+#: formres.src#RID_STR_DECIMAL_ACCURACY.string.text
+msgid "Decimal accuracy"
+msgstr "Cruinneas deicheach"
+
+#: formres.src#RID_STR_IMAGE_URL.string.text
+msgid "Graphics"
+msgstr "Grafaigean"
+
+#: formres.src#RID_STR_DEFAULT_SELECT_SEQ.string.text
+msgid "Default selection"
+msgstr "Taghadh bunaiteach"
+
+#: formres.src#RID_STR_DEFAULT_BUTTON.string.text
+msgid "Default button"
+msgstr "Putan bunaiteach"
+
+#: formres.src#RID_STR_LABELCONTROL.string.text
+msgctxt "formres.src#RID_STR_LABELCONTROL.string.text"
+msgid "Label Field"
+msgstr "Raon leubail"
+
+#: formres.src#RID_STR_LABEL.string.text
+msgid "Label"
+msgstr "Leubail"
+
+#: formres.src#RID_STR_ALIGN.string.text
+msgid "Alignment"
+msgstr "Co-thaobhadh"
+
+#: formres.src#RID_STR_VERTICAL_ALIGN.string.text
+msgid "Vert. Alignment"
+msgstr "Co-thaobhadh inghearach"
+
+#: formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.1.string.text
+msgid "Top"
+msgstr "Barr"
+
+#: formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.2.string.text
+msgid "Middle"
+msgstr "Meadhan"
+
+#: formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.3.string.text
+msgid "Bottom"
+msgstr "Bonn"
+
+#: formres.src#RID_STR_IMAGEPOSITION.string.text
+msgid "Graphics alignment"
+msgstr "Co-thaobhadh ghrafaigean"
+
+#: formres.src#RID_STR_FONT.string.text
+msgctxt "formres.src#RID_STR_FONT.string.text"
+msgid "Font"
+msgstr "Cruth-clò"
+
+#: formres.src#RID_STR_BACKGROUNDCOLOR.string.text
+msgid "Background color"
+msgstr "Dath a' chùlaibh"
+
+#: formres.src#RID_STR_BORDER.string.text
+msgid "Border"
+msgstr "Iomall"
+
+#: formres.src#RID_STR_ICONSIZE.string.text
+msgid "Icon size"
+msgstr "Meud na h-ìomhaigheige"
+
+#: formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.1.string.text
+msgid "Small"
+msgstr "Beag"
+
+#: formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.2.string.text
+msgid "Large"
+msgstr "Mòr"
+
+#: formres.src#RID_STR_SHOW_POSITION.string.text
+msgid "Positioning"
+msgstr "Suidheachadh"
+
+#: formres.src#RID_STR_SHOW_NAVIGATION.string.text
+msgid "Navigation"
+msgstr "Seòladaireachd"
+
+#: formres.src#RID_STR_SHOW_RECORDACTIONS.string.text
+msgid "Acting on a record"
+msgstr "Gnìomh ri linn reacoird"
+
+#: formres.src#RID_STR_SHOW_FILTERSORT.string.text
+msgid "Filtering / Sorting"
+msgstr "Criathradh / Seòrsachadh"
+
+#: formres.src#RID_STR_HSCROLL.string.text
+msgid "Horizontal scroll bar"
+msgstr "Bàr-sgrolaidh còmhnard"
+
+#: formres.src#RID_STR_VSCROLL.string.text
+msgid "Vertical scroll bar"
+msgstr "Bàr-sgrolaidh inghearach"
+
+#: formres.src#RID_STR_WORDBREAK.string.text
+msgid "Word break"
+msgstr "Briseadh facail"
+
+#: formres.src#RID_STR_MULTILINE.string.text
+msgid "Multiline input"
+msgstr "Ion-chur ioma-loidhne"
+
+#: formres.src#RID_STR_MULTISELECTION.string.text
+msgid "Multiselection"
+msgstr "Ioma-thaghadh"
+
+#: formres.src#RID_STR_NAME.string.text
+msgid "Name"
+msgstr "Ainm"
+
+#: formres.src#RID_STR_TABINDEX.string.text
+msgid "Tab order"
+msgstr "Òrdugh nan taba"
+
+#: formres.src#RID_STR_WHEEL_BEHAVIOR.string.text
+msgid "Mouse wheel scroll"
+msgstr "Sgroladh cuibhle na luchaige"
+
+#: formres.src#RID_STR_FILTER.string.text
+msgid "Filter"
+msgstr "Criathrag"
+
+#: formres.src#RID_STR_SORT_CRITERIA.string.text
+msgid "Sort"
+msgstr "Seòrsaich"
+
+#: formres.src#RID_STR_RECORDMARKER.string.text
+msgid "Record marker"
+msgstr "Comharraichear reacoird"
+
+#: formres.src#RID_STR_FILTERPROPOSAL.string.text
+msgid "Filter proposal"
+msgstr "Moladh criathraige"
+
+#: formres.src#RID_STR_NAVIGATION.string.text
+msgid "Navigation bar"
+msgstr "Bàr na seòladaireachd"
+
+#: formres.src#RID_STR_CYCLE.string.text
+msgid "Cycle"
+msgstr "Cuairt"
+
+#: formres.src#RID_STR_TABSTOP.string.text
+msgid "Tabstop"
+msgstr "Taba-stad"
+
+#: formres.src#RID_STR_CONTROLSOURCE.string.text
+msgid "Data field"
+msgstr "Raon dàta"
+
+#: formres.src#RID_STR_DROPDOWN.string.text
+msgid "Dropdown"
+msgstr "Tuiteamach"
+
+#: formres.src#RID_STR_BOUNDCOLUMN.string.text
+msgid "Bound field"
+msgstr "Raon naisgte"
+
+#: formres.src#RID_STR_LISTSOURCE.string.text
+msgid "List content"
+msgstr "Susbaint na liosta"
+
+#: formres.src#RID_STR_LISTSOURCETYPE.string.text
+msgid "Type of list contents"
+msgstr "Seòrsa susbaint na liosta"
+
+#: formres.src#RID_STR_CURSORSOURCE.string.text
+msgid "Content"
+msgstr "Susbaint"
+
+#: formres.src#RID_STR_CURSORSOURCETYPE.string.text
+msgid "Content type"
+msgstr "Seòrsa na susbainte"
+
+#: formres.src#RID_STR_ALLOW_ADDITIONS.string.text
+msgid "Allow additions"
+msgstr "Ceadaich cur ris"
+
+#: formres.src#RID_STR_ALLOW_DELETIONS.string.text
+msgid "Allow deletions"
+msgstr "Ceadaich sguabadh às"
+
+#: formres.src#RID_STR_ALLOW_EDITS.string.text
+msgid "Allow modifications"
+msgstr "Ceadaich atharrachaidhean"
+
+#: formres.src#RID_STR_DATAENTRY.string.text
+msgid "Add data only"
+msgstr "Na cuir ris ach dàta"
+
+#: formres.src#RID_STR_DATASOURCE.string.text
+msgid "Data source"
+msgstr "Tùs-dàta"
+
+#: formres.src#RID_STR_MASTERFIELDS.string.text
+msgid "Link master fields"
+msgstr "Ceangail na prìomh-raointean"
+
+#: formres.src#RID_STR_SLAVEFIELDS.string.text
+msgid "Link slave fields"
+msgstr "Ceangail raointean tràille"
+
+#: formres.src#RID_STR_VALUEMIN.string.text
+msgid "Value min."
+msgstr "Luach as lugha"
+
+#: formres.src#RID_STR_VALUEMAX.string.text
+msgid "Value max."
+msgstr "Luach as motha"
+
+#: formres.src#RID_STR_VALUESTEP.string.text
+msgid "Incr./decrement value"
+msgstr "Luach ioncr./dìochramaid"
+
+#: formres.src#RID_STR_CURRENCYSYMBOL.string.text
+msgid "Currency symbol"
+msgstr "Samhla an airgeadra"
+
+#: formres.src#RID_STR_DATEMIN.string.text
+msgid "Date min."
+msgstr "Ceann-là as lugha"
+
+#: formres.src#RID_STR_DATEMAX.string.text
+msgid "Date max."
+msgstr "Ceann-là as motha"
+
+#: formres.src#RID_STR_DATEFORMAT.string.text
+msgid "Date format"
+msgstr "Fòrmat a' chinn-là"
+
+#: formres.src#RID_STR_SELECTEDITEMS.string.text
+msgid "Selection"
+msgstr "Taghadh"
+
+#: formres.src#RID_STR_TIMEMIN.string.text
+msgid "Time min."
+msgstr "Àm as lugha"
+
+#: formres.src#RID_STR_TIMEMAX.string.text
+msgid "Time max."
+msgstr "Àm as motha"
+
+#: formres.src#RID_STR_TIMEFORMAT.string.text
+msgid "Time format"
+msgstr "Fòrmat an ama"
+
+#: formres.src#RID_STR_CURRSYM_POSITION.string.text
+msgid "Prefix symbol"
+msgstr "Comharra ro-leasachain"
+
+#: formres.src#RID_STR_VALUE.string.text
+msgid "Value"
+msgstr "Luach"
+
+#: formres.src#RID_STR_FORMATKEY.string.text
+msgid "Formatting"
+msgstr "Fòrmatadh"
+
+#: formres.src#RID_STR_CLASSID.string.text
+msgid "Class ID"
+msgstr "ID clas"
+
+#: formres.src#RID_STR_HEIGHT.string.text
+msgid "Height"
+msgstr "Àirde"
+
+#: formres.src#RID_STR_WIDTH.string.text
+msgid "Width"
+msgstr "Leud"
+
+#: formres.src#RID_STR_LISTINDEX.string.text
+msgid "List index"
+msgstr "Clàr-amais liosta"
+
+#: formres.src#RID_STR_ROWHEIGHT.string.text
+msgid "Row height"
+msgstr "Àirde an ràigh"
+
+#: formres.src#RID_STR_FILLCOLOR.string.text
+msgid "Fill color"
+msgstr "Dath an lìonaidh"
+
+#: formres.src#RID_STR_LINECOLOR.string.text
+msgid "Line color"
+msgstr "Dath na loidhne"
+
+#: formres.src#RID_STR_REFVALUE.string.text
+msgid "Reference value (on)"
+msgstr "Luach cho-chomharran (air)"
+
+#: formres.src#RID_STR_UNCHECKEDREFVALUE.string.text
+msgid "Reference value (off)"
+msgstr "Luach cho-chomharran (dheth)"
+
+#: formres.src#RID_STR_STRINGITEMLIST.string.text
+msgid "List entries"
+msgstr "Innteartan na liosta"
+
+#: formres.src#RID_STR_BUTTONTYPE.string.text
+msgid "Action"
+msgstr "Gnìomh"
+
+#: formres.src#RID_STR_SUBMIT_ACTION.string.text
+msgctxt "formres.src#RID_STR_SUBMIT_ACTION.string.text"
+msgid "URL"
+msgstr "URL"
+
+#: formres.src#RID_STR_SUBMIT_METHOD.string.text
+msgid "Type of submission"
+msgstr "Seòrsa an tagraidh"
+
+#: formres.src#RID_STR_DEFAULT_STATE.string.text
+msgid "Default status"
+msgstr "Cor bunaiteach"
+
+#: formres.src#RID_STR_SUBMIT_ENCODING.string.text
+msgid "Submission encoding"
+msgstr "Còdachadh an tagraidh"
+
+#: formres.src#RID_STR_DEFAULTVALUE.string.text
+msgid "Default value"
+msgstr "Luach bunaiteach"
+
+#: formres.src#RID_STR_DEFAULTTEXT.string.text
+msgid "Default text"
+msgstr "Teacsa bunaiteach"
+
+#: formres.src#RID_STR_DEFAULTDATE.string.text
+msgid "Default date"
+msgstr "Ceann-là bunaiteach"
+
+#: formres.src#RID_STR_DEFAULTTIME.string.text
+msgid "Default time"
+msgstr "Àm bunaiteach"
+
+#: formres.src#RID_STR_SUBMIT_TARGET.string.text
+msgctxt "formres.src#RID_STR_SUBMIT_TARGET.string.text"
+msgid "Frame"
+msgstr "Frèam"
+
+#: formres.src#RID_RSC_ENUM_BORDER_TYPE.1.string.text
+msgid "Without frame"
+msgstr "Gun fhrèam"
+
+#: formres.src#RID_RSC_ENUM_BORDER_TYPE.2.string.text
+msgid "3D look"
+msgstr "Cumadh 3D"
+
+#: formres.src#RID_RSC_ENUM_BORDER_TYPE.3.string.text
+msgctxt "formres.src#RID_RSC_ENUM_BORDER_TYPE.3.string.text"
+msgid "Flat"
+msgstr "Rèidh"
+
+#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.1.string.text
+msgid "Valuelist"
+msgstr "Liosta luachan"
+
+#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.string.text
+msgctxt "formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.string.text"
+msgid "Table"
+msgstr "Clàr"
+
+#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.string.text
+msgctxt "formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.string.text"
+msgid "Query"
+msgstr "Ceist"
+
+#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.4.string.text
+msgid "Sql"
+msgstr "Sql"
+
+#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.5.string.text
+msgid "Sql [Native]"
+msgstr "Sql [Native]"
+
+#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.6.string.text
+msgid "Tablefields"
+msgstr "Raointean clàir"
+
+#: formres.src#RID_RSC_ENUM_ALIGNMENT.1.string.text
+msgid "Left"
+msgstr "Clì"
+
+#: formres.src#RID_RSC_ENUM_ALIGNMENT.2.string.text
+msgid "Center"
+msgstr "Meadhan"
+
+#: formres.src#RID_RSC_ENUM_ALIGNMENT.3.string.text
+msgid "Right"
+msgstr "Deis"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_BUTTONTYPE.1.string.text"
+msgid "None"
+msgstr "Chan eil gin"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.2.string.text
+msgid "Submit form"
+msgstr "Cuir a-null am foirm"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.3.string.text
+msgid "Reset form"
+msgstr "Aisig am foirm"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.4.string.text
+msgid "Open document/web page"
+msgstr "Fosgail sgrìobhainn/làrach-lìn"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.5.string.text
+msgid "First record"
+msgstr "A' chiad reacord"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.6.string.text
+msgid "Previous record"
+msgstr "An reacord roimhe"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.7.string.text
+msgid "Next record"
+msgstr "An ath-reacord"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.8.string.text
+msgid "Last record"
+msgstr "An reacord mu dheireadh"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.9.string.text
+msgid "Save record"
+msgstr "Sàbhail an reacord"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.10.string.text
+msgid "Undo data entry"
+msgstr "Neo-dhèan cur a-steach an dàta"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.11.string.text
+msgid "New record"
+msgstr "Reacord ùr"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.12.string.text
+msgid "Delete record"
+msgstr "Sguab às an reacord"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.13.string.text
+msgid "Refresh form"
+msgstr "Ùraich am foirm"
+
+#: formres.src#RID_RSC_ENUM_SUBMIT_METHOD.1.string.text
+msgid "Get"
+msgstr "Faigh"
+
+#: formres.src#RID_RSC_ENUM_SUBMIT_METHOD.2.string.text
+msgid "Post"
+msgstr "Postaich"
+
+#: formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.string.text"
+msgid "URL"
+msgstr "URL"
+
+#: formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.2.string.text
+msgid "Multipart"
+msgstr "Ioma-phàirteach"
+
+#: formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.string.text
+msgctxt "formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.string.text"
+msgid "Text"
+msgstr "Teacsa"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.1.string.text
+msgid "Standard (short)"
+msgstr "Bun-tomhasach (goirid)"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.2.string.text
+msgid "Standard (short YY)"
+msgstr "Bun-tomhasach (goirid BB)"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.3.string.text
+msgid "Standard (short YYYY)"
+msgstr "Bun-tomhasach (goirid BBBB)"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.4.string.text
+msgid "Standard (long)"
+msgstr "Bun-tomhasach (fada)"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.5.string.text
+msgid "DD/MM/YY"
+msgstr "LL/MM/BB"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.6.string.text
+msgid "MM/DD/YY"
+msgstr "MM/LL/BB"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.7.string.text
+msgid "YY/MM/DD"
+msgstr "BB/MM/LL"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.8.string.text
+msgid "DD/MM/YYYY"
+msgstr "LL/MM/BBBB"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.9.string.text
+msgid "MM/DD/YYYY"
+msgstr "MM/LL/BBBB"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.10.string.text
+msgid "YYYY/MM/DD"
+msgstr "BBBB/MM/LL"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.11.string.text
+msgid "YY-MM-DD"
+msgstr "BB-MM-LL"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.12.string.text
+msgid "YYYY-MM-DD"
+msgstr "BBBB-MM-LL"
+
+#: formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.1.string.text
+msgid "13:45"
+msgstr "13:45"
+
+#: formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.2.string.text
+msgid "13:45:00"
+msgstr "13:45:00"
+
+#: formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.3.string.text
+msgid "01:45 PM"
+msgstr "01:45 f"
+
+#: formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.4.string.text
+msgid "01:45:00 PM"
+msgstr "01:45:00 f"
+
+#: formres.src#RID_RSC_ENUM_CHECKED.1.string.text
+msgid "Not Selected"
+msgstr "Gun taghadh"
+
+#: formres.src#RID_RSC_ENUM_CHECKED.2.string.text
+msgid "Selected"
+msgstr "Air a thaghadh"
+
+#: formres.src#RID_RSC_ENUM_CHECKED.3.string.text
+msgid "Not Defined"
+msgstr "Gun mhìneachadh"
+
+#: formres.src#RID_RSC_ENUM_CYCLE.1.string.text
+msgid "All records"
+msgstr "Gach reacord"
+
+#: formres.src#RID_RSC_ENUM_CYCLE.2.string.text
+msgid "Active record"
+msgstr "Reacord beò"
+
+#: formres.src#RID_RSC_ENUM_CYCLE.3.string.text
+msgid "Current page"
+msgstr "An duilleag làithreach"
+
+#: formres.src#RID_RSC_ENUM_NAVIGATION.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_NAVIGATION.1.string.text"
+msgid "No"
+msgstr "Chan eil"
+
+#: formres.src#RID_RSC_ENUM_NAVIGATION.2.string.text
+msgctxt "formres.src#RID_RSC_ENUM_NAVIGATION.2.string.text"
+msgid "Yes"
+msgstr "Tha"
+
+#: formres.src#RID_RSC_ENUM_NAVIGATION.3.string.text
+msgid "Parent Form"
+msgstr "Foirm pàraint"
+
+#: formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.string.text"
+msgid "None"
+msgstr "Chan eil gin"
+
+#: formres.src#RID_RSC_ENUM_SELECTION_TYPE.2.string.text
+msgid "Single"
+msgstr "Singilte"
+
+#: formres.src#RID_RSC_ENUM_SELECTION_TYPE.3.string.text
+msgid "Multi"
+msgstr "Iomadh"
+
+#: formres.src#RID_RSC_ENUM_SELECTION_TYPE.4.string.text
+msgid "Range"
+msgstr "Rainse"
+
+#: formres.src#RID_STR_EVT_APPROVEPARAMETER.string.text
+msgid "Fill parameters"
+msgstr "Paramadairean lìonaidh"
+
+#: formres.src#RID_STR_EVT_ACTIONPERFORMED.string.text
+msgid "Execute action"
+msgstr "Thoir gu buil an gnìomh"
+
+#: formres.src#RID_STR_EVT_AFTERUPDATE.string.text
+msgid "After updating"
+msgstr "An dèidh an ùrachaidh"
+
+#: formres.src#RID_STR_EVT_BEFOREUPDATE.string.text
+msgid "Before updating"
+msgstr "Ron ùrachadh"
+
+#: formres.src#RID_STR_EVT_APPROVEROWCHANGE.string.text
+msgid "Before record action"
+msgstr "Ro ghnìomh an reacoird"
+
+#: formres.src#RID_STR_EVT_ROWCHANGE.string.text
+msgid "After record action"
+msgstr "An dèidh gnìomh an reacoird"
+
+#: formres.src#RID_STR_EVT_CONFIRMDELETE.string.text
+msgid "Confirm deletion"
+msgstr "Dearbhaich an sguabadh às"
+
+#: formres.src#RID_STR_EVT_ERROROCCURED.string.text
+msgid "Error occurred"
+msgstr "Thachair mearachd"
+
+#: formres.src#RID_STR_EVT_FOCUSGAINED.string.text
+msgid "When receiving focus"
+msgstr "Nuair a gheibhear fòcas"
+
+#: formres.src#RID_STR_EVT_FOCUSLOST.string.text
+msgid "When losing focus"
+msgstr "Nuair a chaillear fòcas"
+
+#: formres.src#RID_STR_EVT_ITEMSTATECHANGED.string.text
+msgid "Item status changed"
+msgstr "Cor an nì air atharrachadh"
+
+#: formres.src#RID_STR_EVT_KEYTYPED.string.text
+msgid "Key pressed"
+msgstr "Iuchair air a phutadh"
+
+#: formres.src#RID_STR_EVT_KEYUP.string.text
+msgid "Key released"
+msgstr "Iuchair air a leigeil às"
+
+#: formres.src#RID_STR_EVT_LOADED.string.text
+msgid "When loading"
+msgstr "Rè luchdaidh"
+
+#: formres.src#RID_STR_EVT_RELOADING.string.text
+msgid "Before reloading"
+msgstr "Ro ath-luchdadh"
+
+#: formres.src#RID_STR_EVT_RELOADED.string.text
+msgid "When reloading"
+msgstr "Rè ath-luchdaidh"
+
+#: formres.src#RID_STR_EVT_MOUSEDRAGGED.string.text
+msgid "Mouse moved while key pressed"
+msgstr "Ghluais an luchag fhad 's a bha iuchair 'ga brùthadh"
+
+#: formres.src#RID_STR_EVT_MOUSEENTERED.string.text
+msgid "Mouse inside"
+msgstr "Luchag a-staigh"
+
+#: formres.src#RID_STR_EVT_MOUSEEXITED.string.text
+msgid "Mouse outside"
+msgstr "Luchag a-muigh"
+
+#: formres.src#RID_STR_EVT_MOUSEMOVED.string.text
+msgid "Mouse moved"
+msgstr "Luchag air gluasad"
+
+#: formres.src#RID_STR_EVT_MOUSEPRESSED.string.text
+msgid "Mouse button pressed"
+msgstr "Putan na luchaige 'ga bhrùthadh"
+
+#: formres.src#RID_STR_EVT_MOUSERELEASED.string.text
+msgid "Mouse button released"
+msgstr "Putan na luchaige air a leigeil às"
+
+#: formres.src#RID_STR_EVT_POSITIONING.string.text
+msgid "Before record change"
+msgstr "Ro atharrachadh an reacoird"
+
+#: formres.src#RID_STR_EVT_POSITIONED.string.text
+msgid "After record change"
+msgstr "An dèidh atharrchadh an reacoird"
+
+#: formres.src#RID_STR_EVT_RESETTED.string.text
+msgid "After resetting"
+msgstr "An dèidh ath-shuidheachaidh"
+
+#: formres.src#RID_STR_EVT_APPROVERESETTED.string.text
+msgid "Prior to reset"
+msgstr "Ro ath-shuidheachadh"
+
+#: formres.src#RID_STR_EVT_APPROVEACTIONPERFORMED.string.text
+msgid "Approve action"
+msgstr "Aontaich leis a' ghnìomh"
+
+#: formres.src#RID_STR_EVT_SUBMITTED.string.text
+msgid "Before submitting"
+msgstr "Mus dèid a chur a-null"
+
+#: formres.src#RID_STR_EVT_TEXTCHANGED.string.text
+msgid "Text modified"
+msgstr "Teacsa air atharrachadh"
+
+#: formres.src#RID_STR_EVT_UNLOADING.string.text
+msgid "Before unloading"
+msgstr "Ro dhì-luchdadh"
+
+#: formres.src#RID_STR_EVT_UNLOADED.string.text
+msgid "When unloading"
+msgstr "Rè dì-luchdaidh"
+
+#: formres.src#RID_STR_EVT_CHANGED.string.text
+msgid "Changed"
+msgstr "Air atharradh"
+
+#: formres.src#RID_STR_EVENTS.string.text
+msgid "Events"
+msgstr "Tachartasan"
+
+#: formres.src#RID_STR_ESCAPE_PROCESSING.string.text
+msgid "Analyze SQL command"
+msgstr "Sgrùd àithne SQL"
+
+#: formres.src#RID_STR_POSITIONX.string.text
+msgid "PositionX"
+msgstr "IonadX"
+
+#: formres.src#RID_STR_POSITIONY.string.text
+msgid "PositionY"
+msgstr "IonadY"
+
+#: formres.src#RID_STR_TITLE.string.text
+msgid "Title"
+msgstr "Tiotal"
+
+#: formres.src#RID_STR_STEP.string.text
+msgid "Page (step)"
+msgstr "Duilleag (ceum)"
+
+#: formres.src#RID_STR_PROGRESSVALUE.string.text
+msgid "Progress value"
+msgstr "Luach adhartas"
+
+#: formres.src#RID_STR_PROGRESSVALUE_MIN.string.text
+msgid "Progress value min."
+msgstr "Luach adhartais as lugha"
+
+#: formres.src#RID_STR_PROGRESSVALUE_MAX.string.text
+msgid "Progress value max."
+msgstr "Luach adhartais as motha"
+
+#: formres.src#RID_STR_SCROLLVALUE.string.text
+msgid "Scroll value"
+msgstr "Luach sgrolaidh"
+
+#: formres.src#RID_STR_SCROLLVALUE_MAX.string.text
+msgid "Scroll value max."
+msgstr "Luach sgrolaidh as motha"
+
+#: formres.src#RID_STR_SCROLLVALUE_MIN.string.text
+msgid "Scroll value min."
+msgstr "Luach sgrolaidh as lugha"
+
+#: formres.src#RID_STR_DEFAULT_SCROLLVALUE.string.text
+msgid "Default scroll value"
+msgstr "Luach sgrolaidh bunaiteach"
+
+#: formres.src#RID_STR_LINEINCREMENT.string.text
+msgid "Small change"
+msgstr "Atharrachadh beag"
+
+#: formres.src#RID_STR_BLOCKINCREMENT.string.text
+msgid "Large change"
+msgstr "Atharrachadh mòr"
+
+#: formres.src#RID_STR_REPEAT_DELAY.string.text
+msgid "Delay"
+msgstr "Dàil"
+
+#: formres.src#RID_STR_REPEAT.string.text
+msgid "Repeat"
+msgstr "Dèan a-rithist"
+
+#: formres.src#RID_STR_VISIBLESIZE.string.text
+msgid "Visible size"
+msgstr "Meud faicsinneach"
+
+#: formres.src#RID_STR_ORIENTATION.string.text
+msgid "Orientation"
+msgstr "Comhair"
+
+#: formres.src#RID_RSC_ENUM_ORIENTATION.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_ORIENTATION.1.string.text"
+msgid "Horizontal"
+msgstr "Còmhnard"
+
+#: formres.src#RID_RSC_ENUM_ORIENTATION.2.string.text
+msgctxt "formres.src#RID_RSC_ENUM_ORIENTATION.2.string.text"
+msgid "Vertical"
+msgstr "Inghearach"
+
+#: formres.src#RID_STR_EVT_ADJUSTMENTVALUECHANGED.string.text
+msgid "While adjusting"
+msgstr "Fhad 's a thathar 'ga chur air gleus"
+
+#: formres.src#RID_STR_DATE.string.text
+msgid "Date"
+msgstr "Ceann-là"
+
+#: formres.src#RID_STR_STATE.string.text
+msgid "State"
+msgstr "Stàit"
+
+#: formres.src#RID_STR_TIME.string.text
+msgid "Time"
+msgstr "Àm"
+
+#: formres.src#RID_STR_SCALEIMAGE.string.text
+msgid "Scale"
+msgstr "Sgèile"
+
+#: formres.src#RID_STR_PUSHBUTTONTYPE.string.text
+msgid "Button type"
+msgstr "Seòrsa putain"
+
+#: formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.string.text"
+msgid "Default"
+msgstr "Roghainn bhunaiteach"
+
+#: formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.2.string.text
+msgid "OK"
+msgstr "Ceart ma-thà"
+
+#: formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.3.string.text
+msgid "Cancel"
+msgstr "Sguir dheth"
+
+#: formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.string.text
+msgctxt "formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.string.text"
+msgid "Help"
+msgstr "Cobhair"
+
+#: formres.src#RID_STR_UNABLETOCONNECT.string.text
+msgid "The connection to the data source \"$name$\" could not be established."
+msgstr "Cha do ghabh ceangal a stèidheachadh ris an tùs-dàta \"$name$\"."
+
+#: formres.src#RID_STR_TEXT.string.text
+msgctxt "formres.src#RID_STR_TEXT.string.text"
+msgid "Text"
+msgstr "Teacsa"
+
+#: formres.src#RID_STR_BOUND_CELL.string.text
+msgid "Linked cell"
+msgstr "Cealla co-cheangailte"
+
+#: formres.src#RID_STR_LIST_CELL_RANGE.string.text
+msgid "Source cell range"
+msgstr "Tùs-rainse nan cealla"
+
+#: formres.src#RID_STR_CELL_EXCHANGE_TYPE.string.text
+msgid "Contents of the linked cell"
+msgstr "Susbaint a' chealla cho-cheangailte"
+
+#: formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.1.string.text
+msgid "The selected entry"
+msgstr "An t-innteart a thagh thu"
+
+#: formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.2.string.text
+msgid "Position of the selected entry"
+msgstr "Ionad an innteirt a thagh thu"
+
+#: formres.src#RID_STR_SHOW_SCROLLBARS.string.text
+msgid "Scrollbars"
+msgstr "Bàr-sgrolaidh"
+
+#: formres.src#RID_RSC_ENUM_TEXTTYPE.1.string.text
+msgid "Single-line"
+msgstr "Aon loidhne"
+
+#: formres.src#RID_RSC_ENUM_TEXTTYPE.2.string.text
+msgid "Multi-line"
+msgstr "Ioma-loidhne"
+
+#: formres.src#RID_RSC_ENUM_TEXTTYPE.3.string.text
+msgid "Multi-line with formatting"
+msgstr "Ioma-loidhne le fòrmatadh"
+
+#: formres.src#RID_STR_SYMBOLCOLOR.string.text
+msgid "Symbol color"
+msgstr "Dath comharra"
+
+#: formres.src#RID_STR_LINEEND_FORMAT.string.text
+msgid "Text lines end with"
+msgstr "Crìochnaichidh loidhnichean teacsa le"
+
+#: formres.src#RID_RSC_ENUM_LINEEND_FORMAT.1.string.text
+msgid "LF (Unix)"
+msgstr "LF (Unix)"
+
+#: formres.src#RID_RSC_ENUM_LINEEND_FORMAT.2.string.text
+msgid "CR+LF (Windows)"
+msgstr "CR+LF (Windows)"
+
+#: formres.src#RID_RSC_ENUM_SCROLLBARS.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_SCROLLBARS.1.string.text"
+msgid "None"
+msgstr "Chan eil gin"
+
+#: formres.src#RID_RSC_ENUM_SCROLLBARS.2.string.text
+msgctxt "formres.src#RID_RSC_ENUM_SCROLLBARS.2.string.text"
+msgid "Horizontal"
+msgstr "Còmhnard"
+
+#: formres.src#RID_RSC_ENUM_SCROLLBARS.3.string.text
+msgctxt "formres.src#RID_RSC_ENUM_SCROLLBARS.3.string.text"
+msgid "Vertical"
+msgstr "Inghearach"
+
+#: formres.src#RID_RSC_ENUM_SCROLLBARS.4.string.text
+msgid "Both"
+msgstr "An dà chuid"
+
+#: formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.string.text"
+msgid "Table"
+msgstr "Clàr"
+
+#: formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.string.text
+msgctxt "formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.string.text"
+msgid "Query"
+msgstr "Ceist"
+
+#: formres.src#RID_RSC_ENUM_COMMAND_TYPE.3.string.text
+msgid "SQL command"
+msgstr "Àithne SQL"
+
+#: formres.src#RID_STR_TOGGLE.string.text
+msgid "Toggle"
+msgstr "Toglaich"
+
+#: formres.src#RID_STR_FOCUSONCLICK.string.text
+msgid "Take Focus on Click"
+msgstr "Dèan fòcas nuair a nithear briogadh"
+
+#: formres.src#RID_STR_HIDEINACTIVESELECTION.string.text
+msgid "Hide selection"
+msgstr "Cuir am falach na thagh thu"
+
+#: formres.src#RID_STR_VISUALEFFECT.string.text
+msgid "Style"
+msgstr "Stoidhle"
+
+#: formres.src#RID_RSC_ENUM_VISUALEFFECT.1.string.text
+msgid "3D"
+msgstr "3D"
+
+#: formres.src#RID_RSC_ENUM_VISUALEFFECT.2.string.text
+msgctxt "formres.src#RID_RSC_ENUM_VISUALEFFECT.2.string.text"
+msgid "Flat"
+msgstr "Rèidh"
+
+#: formres.src#RID_STR_BORDERCOLOR.string.text
+msgid "Border color"
+msgstr "Dath an iomaill"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.1.string.text
+msgid "Left top"
+msgstr "Clì aig a' bharr"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.2.string.text
+msgid "Left centered"
+msgstr "Clì sa mheadhan"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.3.string.text
+msgid "Left bottom"
+msgstr "Clì aig a' bhonn"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.4.string.text
+msgid "Right top"
+msgstr "Deas aig a' bharr"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.5.string.text
+msgid "Right centered"
+msgstr "Deas sa mheadhan"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.6.string.text
+msgid "Right bottom"
+msgstr "Deas aig a' bhonn"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.7.string.text
+msgid "Above left"
+msgstr "Clì os a chionn"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.8.string.text
+msgid "Above centered"
+msgstr "Sa mheadhan os a chionn"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.9.string.text
+msgid "Above right"
+msgstr "Deas os a chionn"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.10.string.text
+msgid "Below left"
+msgstr "Clì foidhe"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.11.string.text
+msgid "Below centered"
+msgstr "Sa mheadhan foidhe"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.12.string.text
+msgid "Below right"
+msgstr "Deas foidhe"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.13.string.text
+msgid "Centered"
+msgstr "Sa mheadhan"
+
+#: formres.src#RID_STR_AUTOLINEBREAK.string.text
+msgid "Wrap text automatically"
+msgstr "Paisg an teacsa gu fèin-obrachail"
+
+#: formres.src#RID_STR_TEXTTYPE.string.text
+msgid "Text type"
+msgstr "Seòrsa an teacsa"
+
+#: formres.src#RID_RSC_ENUM_SHOWHIDE.1.string.text
+msgid "Hide"
+msgstr "Cuir am falach"
+
+#: formres.src#RID_RSC_ENUM_SHOWHIDE.2.string.text
+msgid "Show"
+msgstr "Seall"
+
+#: formres.src#RID_STR_XML_DATA_MODEL.string.text
+msgid "XML data model"
+msgstr "Modail dàta XML"
+
+#: formres.src#RID_STR_BIND_EXPRESSION.string.text
+msgid "Binding expression"
+msgstr "Eas-preisean ceanglaidh"
+
+#: formres.src#RID_STR_XSD_REQUIRED.string.text
+msgid "Required"
+msgstr "Tha feum air"
+
+#: formres.src#RID_STR_LIST_BINDING.string.text
+msgid "List entry source"
+msgstr "Liostaich tùs na h-innteirte"
+
+#: formres.src#RID_STR_XSD_RELEVANT.string.text
+msgid "Relevant"
+msgstr "Cudromach"
+
+#: formres.src#RID_STR_XSD_READONLY.string.text
+msgctxt "formres.src#RID_STR_XSD_READONLY.string.text"
+msgid "Read-only"
+msgstr "Ri leughadh a-mhàin"
+
+#: formres.src#RID_STR_XSD_CONSTRAINT.string.text
+msgid "Constraint"
+msgstr "Cuingeachadh"
+
+#: formres.src#RID_STR_XSD_CALCULATION.string.text
+msgid "Calculation"
+msgstr "Àireamhadh"
+
+#: formres.src#RID_STR_XSD_DATA_TYPE.string.text
+msgid "Data type"
+msgstr "Seòrsa an dàta"
+
+#: formres.src#RID_STR_XSD_WHITESPACES.string.text
+msgid "Whitespaces"
+msgstr "Geal-spàsan"
+
+#: formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.1.string.text
+msgid "Preserve"
+msgstr "Glèidh"
+
+#: formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.2.string.text
+msgid "Replace"
+msgstr "Cuir 'na àite"
+
+#: formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.3.string.text
+msgid "Collapse"
+msgstr "Co-theannaich"
+
+#: formres.src#RID_STR_XSD_PATTERN.string.text
+msgid "Pattern"
+msgstr "Pàtran"
+
+#: formres.src#RID_STR_XSD_LENGTH.string.text
+msgid "Length"
+msgstr "Faid"
+
+#: formres.src#RID_STR_XSD_MIN_LENGTH.string.text
+msgid "Length (at least)"
+msgstr "Faid (air a' chas as lugha)"
+
+#: formres.src#RID_STR_XSD_MAX_LENGTH.string.text
+msgid "Length (at most)"
+msgstr "Faid (air a' chas as motha)"
+
+#: formres.src#RID_STR_XSD_TOTAL_DIGITS.string.text
+msgid "Digits (total)"
+msgstr "Figearan (iomlan)"
+
+#: formres.src#RID_STR_XSD_FRACTION_DIGITS.string.text
+msgid "Digits (fraction)"
+msgstr "Figearan (bloigh)"
+
+#: formres.src#RID_STR_XSD_MAX_INCLUSIVE.string.text
+msgid "Max. (inclusive)"
+msgstr "As motha ('ga ghabhail a-steach)"
+
+#: formres.src#RID_STR_XSD_MAX_EXCLUSIVE.string.text
+msgid "Max. (exclusive)"
+msgstr "As motha ('ga dhùnadh a-mach)"
+
+#: formres.src#RID_STR_XSD_MIN_INCLUSIVE.string.text
+msgid "Min. (inclusive)"
+msgstr "As lugha ('ga ghabhail a-steach)"
+
+#: formres.src#RID_STR_XSD_MIN_EXCLUSIVE.string.text
+msgid "Min. (exclusive)"
+msgstr "As lugha ('ga dhùnadh a-mach)"
+
+#: formres.src#RID_STR_SUBMISSION_ID.string.text
+msgid "Submission"
+msgstr "Tagradh"
+
+#: formres.src#RID_STR_BINDING_UI_NAME.string.text
+msgid "Binding"
+msgstr "Ceangladh"
+
+#: formres.src#RID_STR_SELECTION_TYPE.string.text
+msgid "Selection type"
+msgstr "Seòrsa an taghaidh"
+
+#: formres.src#RID_STR_ROOT_DISPLAYED.string.text
+msgid "Root displayed"
+msgstr "Am freumh 'ga shealltainn"
+
+#: formres.src#RID_STR_SHOWS_HANDLES.string.text
+msgid "Show handles"
+msgstr "Seall na làmhrachain"
+
+#: formres.src#RID_STR_SHOWS_ROOT_HANDLES.string.text
+msgid "Show root handles"
+msgstr "Seall làmhrachain freumha"
+
+#: formres.src#RID_STR_EDITABLE.string.text
+msgid "Editable"
+msgstr "So-dheasaichte"
+
+#: formres.src#RID_STR_INVOKES_STOP_NOT_EDITING.string.text
+msgid "Invokes stop node editing"
+msgstr "Gairmidh seo deasachadh nan nòdan sguir"
+
+#: formres.src#RID_STR_DECORATION.string.text
+msgid "With title bar"
+msgstr "Le bàr tiotail"
+
+#: formres.src#RID_STR_NOLABEL.string.text
+msgid "No Label"
+msgstr "Gun leubail"
+
+#: formres.src#RID_RSC_ENUM_SCALE_MODE.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_SCALE_MODE.1.string.text"
+msgid "No"
+msgstr "Chan eil"
+
+#: formres.src#RID_RSC_ENUM_SCALE_MODE.2.string.text
+msgid "Keep Ratio"
+msgstr "Glèidh an co-mheas"
+
+#: formres.src#RID_RSC_ENUM_SCALE_MODE.3.string.text
+msgid "Fit to Size"
+msgstr "Co-fhreagair ris a' mheud"
+
+#: formres.src#RID_STR_INPUT_REQUIRED.string.text
+msgid "Input required"
+msgstr "Tha feum air innteart"
+
+#: formres.src#RID_STR_WRITING_MODE.string.text
+msgid "Text direction"
+msgstr "Comhair an teacsa"
+
+#: formres.src#RID_RSC_ENUM_WRITING_MODE.1.string.text
+msgid "Left-to-right"
+msgstr "Clìn gun deas"
+
+#: formres.src#RID_RSC_ENUM_WRITING_MODE.2.string.text
+msgid "Right-to-left"
+msgstr "Deas gun chlì"
+
+#: formres.src#RID_RSC_ENUM_WRITING_MODE.3.string.text
+msgid "Use superordinate object settings"
+msgstr "Cleachd roghainnean an oibseict os-òrdaichte"
+
+#: formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.1.string.text
+msgid "Never"
+msgstr "Chan eil idir"
+
+#: formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.2.string.text
+msgid "When focused"
+msgstr "Ma bhios fòcas air"
+
+#: formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.3.string.text
+msgid "Always"
+msgstr "An-còmhnaidh"
+
+#: formres.src#RID_STR_ANCHOR_TYPE.string.text
+msgid "Anchor"
+msgstr "Acair"
+
+#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.1.string.text
+msgid "To Paragraph"
+msgstr "Ris a' pharagraf"
+
+#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.2.string.text
+msgid "As Character"
+msgstr "Mar charactair"
+
+#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.string.text
+msgctxt "formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.string.text"
+msgid "To Page"
+msgstr "Ris an duilleag"
+
+#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.4.string.text
+msgid "To Frame"
+msgstr "Ris an fhrèam"
+
+#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.5.string.text
+msgid "To Character"
+msgstr "Ris a' charactair"
+
+#: formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.1.string.text"
+msgid "To Page"
+msgstr "Ris an duilleag"
+
+#: formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.2.string.text
+msgid "To Cell"
+msgstr "Ris a' chealla"
+
+#: formres.src#RID_STR_FONTSTYLE_REGULAR.string.text
+msgid "Regular"
+msgstr "Àbhaisteach"
+
+#: formres.src#RID_STR_FONTSTYLE_BOLD_ITALIC.string.text
+msgid "Bold Italic"
+msgstr "Eadailteach trom"
+
+#: formres.src#RID_STR_FONTSTYLE_ITALIC.string.text
+msgid "Italic"
+msgstr "Eadailteach"
+
+#: formres.src#RID_STR_FONTSTYLE_BOLD.string.text
+msgid "Bold"
+msgstr "Trom"
+
+#: formres.src#RID_STR_FONT_DEFAULT.string.text
+msgid "(Default)"
+msgstr "(Bunaiteach)"
+
+#: newdatatype.src#RID_DLG_NEW_DATA_TYPE.FT_LABEL.fixedtext.text
+msgid "Type a name for the new data type:"
+msgstr "Cuir a-steach ainm ùr airson an t-seòrsa dàta ùr:"
+
+#: newdatatype.src#RID_DLG_NEW_DATA_TYPE.modaldialog.text
+msgid "New Data Type"
+msgstr "Seòrsa dàta ùr"
+
+#: pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.string.text
+msgid ""
+"Do you want to delete the data type '#type#' from the model?\n"
+"Please note that this will affect all controls which are bound to this data "
+"type."
+msgstr ""
+"A bheil thu airson an seòrsa dàta '#type#' on mhodail?\n"
+"Thoir an aire gum bi buaidh aige seo air a h-uile inneal-smachd a tha co-"
+"cheangailte ris an t-seòrsa dàta seo."
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.string.text
+msgid "Button"
+msgstr "Putan"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_RADIOBUTTON.string.text
+msgid "Option Button"
+msgstr "Putan roghainnean"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_CHECKBOX.string.text
+msgid "Check Box"
+msgstr "Bogsa cromaige"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.string.text
+msgctxt "pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.string.text"
+msgid "Label Field"
+msgstr "Raon leubail"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_GROUPBOX.string.text
+msgid "Group Box"
+msgstr "Bogsa buidhinn"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_EDIT.string.text
+msgid "Text Box"
+msgstr "Bogsa teacsa"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_FORMATTED.string.text
+msgid "Formatted Field"
+msgstr "Raon fòrmataichte"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_LISTBOX.string.text
+msgid "List Box"
+msgstr "Bogsa liosta"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_COMBOBOX.string.text
+msgid "Combo Box"
+msgstr "Bogsa co-mheasgaichte"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_IMAGEBUTTON.string.text
+msgid "Image Button"
+msgstr "Putan ìomhaighe"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_HIDDENCONTROL.string.text
+msgid "Hidden Control"
+msgstr "Inneal-smachd am falach"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_UNKNOWNCONTROL.string.text
+msgid "Control (unknown type)"
+msgstr "Inneal-smachd (seòrsa neo-aithnichte)"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_IMAGECONTROL.string.text
+msgid "Image Control"
+msgstr "Inneal-smachd ìomhaighe"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_FILECONTROL.string.text
+msgid "File Selection"
+msgstr "Taghadh faidhle"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_DATEFIELD.string.text
+msgid "Date Field"
+msgstr "Raon a' chinn-là"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_TIMEFIELD.string.text
+msgid "Time Field"
+msgstr "Raon an ama"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_NUMERICFIELD.string.text
+msgid "Numeric Field"
+msgstr "Raon àireamhail"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_CURRENCYFIELD.string.text
+msgid "Currency Field"
+msgstr "Raon airgeadra"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_PATTERNFIELD.string.text
+msgid "Pattern Field"
+msgstr "Raon pàtrain"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_DBGRID.string.text
+msgid "Table Control "
+msgstr "Smachdadh clàir "
+
+#: propres.src#RID_STR_STANDARD.string.text
+msgctxt "propres.src#RID_STR_STANDARD.string.text"
+msgid "Default"
+msgstr "Bunaiteach"
+
+#: propres.src#RID_STR_PROPPAGE_DEFAULT.string.text
+msgid "General"
+msgstr "Coitcheann"
+
+#: propres.src#RID_STR_PROPPAGE_DATA.string.text
+msgid "Data"
+msgstr "Dàta"
+
+#: propres.src#RID_RSC_ENUM_YESNO.1.string.text
+msgctxt "propres.src#RID_RSC_ENUM_YESNO.1.string.text"
+msgid "No"
+msgstr "Chan eil"
+
+#: propres.src#RID_RSC_ENUM_YESNO.2.string.text
+msgctxt "propres.src#RID_RSC_ENUM_YESNO.2.string.text"
+msgid "Yes"
+msgstr "Tha"
+
+#: propres.src#RID_STR_HELP_SECTION_LABEL.string.text
+msgctxt "propres.src#RID_STR_HELP_SECTION_LABEL.string.text"
+msgid "Help"
+msgstr "Cobhair"
+
+#: propres.src#RID_EMBED_IMAGE_PLACEHOLDER.string.text
+msgid "<Embedded-Image>"
+msgstr "<Dealbh-leabaichte>"
+
+#: propres.src#RID_STR_TEXT_FORMAT.string.text
+msgctxt "propres.src#RID_STR_TEXT_FORMAT.string.text"
+msgid "Text"
+msgstr "Teacsa"
+
+#: selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.fixedtext.text
+msgid ""
+"These are control fields that can be used as label fields for the "
+"$control_class$ $control_name$."
+msgstr ""
+"Seo raointean smachd as urrainn dhut cleachdadh mar raointean leubail a chum "
+"$control_class$ $control_name$."
+
+#: selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.checkbox.text
+msgid "~No assignment"
+msgstr "Gu~n iomruineadh"
+
+#: selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.modaldialog.text
+msgid "Label Field Selection"
+msgstr "Taghadh raon nan leubailean"
+
+#: selectlabeldialog.src#RID_STR_FORMS.string.text
+msgid "Forms"
+msgstr "Foirmean"
+
+#: taborder.src#RID_DLG_TABORDER.FT_CONTROLS.fixedtext.text
+msgid "Controls"
+msgstr "Innealan-smachd"
+
+#: taborder.src#RID_DLG_TABORDER.PB_MOVE_UP.pushbutton.text
+msgid "Move Up"
+msgstr "Gluais suas"
+
+#: taborder.src#RID_DLG_TABORDER.PB_MOVE_DOWN.pushbutton.text
+msgid "Move Down"
+msgstr "Gluais sìos"
+
+#: taborder.src#RID_DLG_TABORDER.PB_AUTO_ORDER.pushbutton.text
+msgid "Automatic Sort"
+msgstr "Seòrsachadh fèin-obrachail"
+
+#: taborder.src#RID_DLG_TABORDER.modaldialog.text
+msgid "Tab Order"
+msgstr "Òrdugh nan tabaichean"
+"(n > 2 && n < 20) ? 2 : 3;\n"
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: ~\n"
+"X-Project-Style: openoffice\n"
+
+#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_SELECT_ABTYPE.string.text
+msgid "Address book type"
+msgstr "Seòrsa leabhar nan seòladh"
+
+#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_INVOKE_ADMIN_DIALOG.string.text
+msgid "Connection Settings"
+msgstr "Roghainnean a' cheangail"
+
+#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_TABLE_SELECTION.string.text
+msgid "Table selection"
+msgstr "Taghadh a' chlàir"
+
+#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.string.text
+msgctxt "abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.string.text"
+msgid "Field Assignment"
+msgstr "Iomruineadh nan raointean"
+
+#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_FINAL_CONFIRM.string.text
+msgid "Data Source Title"
+msgstr "Tiotal an tùs-dàta"
+
+#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.modaldialog.text
+msgid "Address Book Data Source Wizard"
+msgstr "Draoidh tùs-dàta leabhar nan seòladh"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.fixedtext.text
+msgid ""
+"%PRODUCTNAME lets you access address data already present in your system. To "
+"do this, a %PRODUCTNAME data source will be created in which your address "
+"data is available in tabular form.\n"
+"\n"
+"This wizard helps you create the data source."
+msgstr ""
+"Tha %PRODUCTNAME a' toirt cothrom dhut inntrigeadh a dhèanamh do dhàta "
+"sheòlaidhean a tha air an t-siostam agad mu thràth. Gus seo a dhèanamh, "
+"thèid tùs dàta %PRODUCTNAME a chruthachadh anns am bi dàta nan seòladh agad "
+"ann an cruth clàir.\n"
+"\n"
+"Cuidichidh an draoidh seo thu le cruthachadh an tùs-dàta."
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.fixedline.text
+msgid "Please select the type of your external address book:"
+msgstr "Tagh seòrsa leabhar nan seòladh agad taobh a-muigh a' phrògraim seo:"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION.radiobutton.text
+msgid "Evolution"
+msgstr "Evolution"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_GROUPWISE.radiobutton.text
+msgid "Groupwise"
+msgstr "Groupwise"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_LDAP.radiobutton.text
+msgid "Evolution LDAP"
+msgstr "Evolution LDAP"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_MORK.radiobutton.text
+msgid "Mozilla / Netscape"
+msgstr "Mozilla / Netscape"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_THUNDERBIRD.radiobutton.text
+msgid "Thunderbird"
+msgstr "Thunderbird"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_KAB.radiobutton.text
+msgid "KDE address book"
+msgstr "Leabhar nan seòladh KDE"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_MACAB.radiobutton.text
+msgid "Mac OS X address book"
+msgstr "Leabhar nan seòladh Mac OS X"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_LDAP.radiobutton.text
+msgid "LDAP address data"
+msgstr "Leabhar nan seòladh LDAP"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOK.radiobutton.text
+msgid "Outlook address book"
+msgstr "Leabhar nan seòladh Outlook"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOKEXPRESS.radiobutton.text
+msgid "Windows system address book"
+msgstr "Leabhar nan seòladh aig siostam Windows"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_OTHER.radiobutton.text
+msgid "Other external data source"
+msgstr "Tùs-dàta eile air an taobh a-muigh"
+
+#: abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.fixedtext.text
+msgid ""
+"To set up the new data source, additional information is required.\n"
+"\n"
+"Click the following button to open another dialog in which you then enter "
+"the necessary information."
+msgstr ""
+"Gus an tùs-dàta ùr a shuidheachadh, tha feum air barrachd fiosrachaidh.\n"
+"\n"
+"Briog air a' phutan a leanas gus còmhradh eile fhosgladh far an urrainn dhut "
+"am fiosrachadh air a bheil feum a chur a-steach."
+
+#: abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.pushbutton.text
+msgid "Settings"
+msgstr "Roghainnean"
+
+#: abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.fixedtext.text
+msgid ""
+"The connection to the data source could not be established.\n"
+"Before you proceed, please check the settings made, or (on the previous "
+"page) choose another address data source type."
+msgstr ""
+"Cha do ghabh ceangal ris an tùs-dàta a stèidheachadh.\n"
+"Mus lean thu air adhart, thoir sùil air na roghainnean a thagh thu roimhe no "
+"tagh seòrsa eile de thùs-dàta sheòlaidhean (air an duilleag roimhe)."
+
+#: abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.fixedtext.text
+msgid ""
+"The external data source you have chosen contains more than one address "
+"book.\n"
+"Please select the one you mainly want to work with:"
+msgstr ""
+"Tha barrachd air aon leabhar sheòlaidhean san tùs-dàta air an taobh a-staigh "
+"a thagh thu.\n"
+"Saoil an tagh thu am fear as cudromaiche dha d' obair:"
+
+#: abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.fixedtext.text
+msgid ""
+"To incorporate the address data in your templates, %PRODUCTNAME has to know "
+"which fields contain which data.\n"
+"\n"
+"For instance, you could have stored the e-mail addresses in a field named "
+"\"email\", or \"E-mail\" or \"EM\" - or something completely different.\n"
+"\n"
+"Click the button below to open another dialog where you can enter the "
+"settings for your data source."
+msgstr ""
+"Gus dàta nan seòladh fhilleadh a-steach 'nad theamplaidean, feumaidh fios a "
+"bhith aig %PRODUCTNAME dè an dàta a tha anns gach raon.\n"
+"\n"
+"Mar eisimpleir, dh'fhaodadh gu bheil na seòlaidhean puist-dhealain agad ann "
+"an raon air a bheil \"post-d\" no \"post-dealain\" no \"email\" no rud gu tur "
+"eadar-dhealaichte.\n"
+"\n"
+"Briog air a' phutan gu h-ìosal gus còmhradh fhosgladh far an urrainn dhut "
+"roghainnean an tùs-dàta agad a shuidheachadh."
+
+#: abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.pushbutton.text
+msgctxt "abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.pushbutton.text"
+msgid "Field Assignment"
+msgstr "Iomruineadh nan raon"
+
+#: abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.fixedtext.text
+msgid ""
+"That was all the information necessary to integrate your address data into %"
+"PRODUCTNAME.\n"
+"\n"
+"Now, just enter the name under which you want to register the data source in "
+"%PRODUCTNAME."
+msgstr ""
+"Sin am fiosrachadh gu lèir air a bheil feum gus dàta nan seòladh agad "
+"fhilleadh a-steach ann an %PRODUCTNAME.\n"
+"\n"
+"Nise, cha leig thu leas ach ainm a thaghadh gus an tùs-dàta a chlàrachadh "
+"ann an %PRODUCTNAME."
+
+#: abspilot.src#RID_PAGE_FINAL.FT_LOCATION.fixedtext.text
+msgid "Location"
+msgstr "Ionad"
+
+#: abspilot.src#RID_PAGE_FINAL.PB_BROWSE.pushbutton.text
+msgid "Browse..."
+msgstr "Brabhsaich..."
+
+#: abspilot.src#RID_PAGE_FINAL.CB_REGISTER_DS.checkbox.text
+msgid "Make this address book available to all modules in %PRODUCTNAME."
+msgstr "Cuir leabhar nan seòladh seo ri làimh gach mòideal ann an %PRODUCTNAME."
+
+#: abspilot.src#RID_PAGE_FINAL.FT_NAME_EXPL.fixedtext.text
+msgid "Address book name"
+msgstr "Ainm leabhar nan seòladh"
+
+#: abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.fixedtext.text
+msgid ""
+"Another data source already has this name. As data sources have to have "
+"globally unique names, you need to choose another one."
+msgstr ""
+"Tha an t-ainm seo air tùs-dàta eile mu thràth. A chionn 's gum feum ainm "
+"àraid a bhith air gach tùs-dàta, tha agad ri ainm eile a thaghadh."
+
+#: abspilot.src#RID_ERR_NEEDTYPESELECTION.errorbox.text
+msgid "Please select a type of address book."
+msgstr "Tagh seòrsa de leabhar sheòlaidhean."
+
+#: abspilot.src#RID_QRY_NOTABLES.querybox.text
+msgid ""
+"The data source does not contain any tables.\n"
+"Do you want to set it up as an address data source, anyway?"
+msgstr ""
+"Chan eil clàr sam bith san tùs-dàta.\n"
+"A bheil thu airson a shuidheachadh a-nis mar tùs-dàta sheòlaidhean co-dhiù?"
+
+#: abspilot.src#RID_STR_DEFAULT_NAME.string.text
+msgid "Addresses"
+msgstr "Seòlaidhean"
+
+#: abspilot.src#RID_STR_ADMINDIALOGTITLE.string.text
+msgid "Create Address Data Source"
+msgstr "Cruthaich tùs-dàta sheòlaidhean eile"
+
+#: abspilot.src#RID_STR_NOCONNECTION.string.text
+msgid "The connection could not be established."
+msgstr "Cha do ghabh an ceangal a stèidheachadh."
+
+#: abspilot.src#RID_STR_PLEASECHECKSETTINGS.string.text
+msgid "Please check the settings made for the data source."
+msgstr "Thoir sùil air na roghainnean a thagh thu airson an tùis-dhàta."
+
+#: abspilot.src#RID_STR_FIELDDIALOGTITLE.string.text
+msgid "Address Data - Field Assignment"
+msgstr "Dàta sheòlaidhean - Iomruineadh nan raon"
+
+#: abspilot.src#RID_STR_NOFIELDSASSIGNED.string.text
+msgid ""
+"There are no fields assigned at this time.\n"
+"You can either assign fields now or do so later by first choosing:\n"
+"\"File - Template - Address Book Source...\""
+msgstr ""
+"Cha deach raon sam bith iomruineadh fhathast.\n"
+"'S urrainn dhut raointean iomruineadh an-dràsta no as a dhèidh seo fo:\n"
+"\"Faidhle - Teamplaid - Tùs-leabhar sheòlaidhean...\""
+"(n > 2 && n < 20) ? 2 : 3;\n"
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: ~\n"
+"X-Project-Style: openoffice\n"
+
+#: bib.src#RID_BIB_STR_FIELDSELECTION.string.text
+msgid "Field selection:"
+msgstr "Taghadh raointean:"
+
+#: bib.src#RID_BIB_STR_TABWIN_PREFIX.string.text
+msgid "Table;Query;Sql;Sql [Native]"
+msgstr "Clàr;Ceist;Sql;Sql [Native]"
+
+#: bib.src#RID_BIB_STR_FRAME_TITLE.string.text
+msgid "Bibliography Database"
+msgstr "Stòr-dàta tùs-leabhraichean"
+
+#: bib.src#RID_MAP_QUESTION.string.text
+msgid "Do you want to edit the column arrangement?"
+msgstr "A bheil thu airson rian nan colbhan a dheasachadh?"
+
+#: datman.src#RID_DLG_MAPPING.GB_MAPPING.fixedline.text
+msgid "Column names"
+msgstr "Ainmean nan colbhan"
+
+#: datman.src#RID_DLG_MAPPING.ST_NONE.string.text
+msgid "<none>"
+msgstr "<chan eil gin>"
+
+#: datman.src#RID_DLG_MAPPING.modaldialog.text
+msgid "Column Layout for Table %1"
+msgstr "Co-dhealbhachd nan colbhan airson Clàr %1"
+
+#: datman.src#RID_DLG_DBCHANGE.ST_ENTRY.string.text
+msgid "Entry"
+msgstr "Innteart"
+
+#: datman.src#RID_DLG_DBCHANGE.modaldialog.text
+msgid "Choose Data Source"
+msgstr "Tagh an tùs-dàta"
+
+#: sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.string.text
+msgid "The following column names could not be assigned:\n"
+msgstr "Cha do ghabh ainmean nan colbhan a leanas iomruineadh:\n"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.string.text
+msgid "Article"
+msgstr "Alt"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_BOOK.string.text
+msgid "Book"
+msgstr "Leabhar"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_BOOKLET.string.text
+msgid "Brochures"
+msgstr "Leabhrain"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_CONFERENCE.string.text
+msgctxt "sections.src#RID_TP_GENERAL.ST_TYPE_CONFERENCE.string.text"
+msgid "Conference proceedings"
+msgstr "Imeachdan co-labhairt"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_INBOOK.string.text
+msgid "Book excerpt"
+msgstr "Às-earrann leabhair"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_INCOLLECTION.string.text
+msgid "Book excerpt with title"
+msgstr "Às-earrann leabhair le tiotal"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_INPROCEEDINGS.string.text
+msgctxt "sections.src#RID_TP_GENERAL.ST_TYPE_INPROCEEDINGS.string.text"
+msgid "Conference proceedings"
+msgstr "Imeachdan co-labhairt"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_JOURNAL.string.text
+msgid "Journal"
+msgstr "Iris"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_MANUAL.string.text
+msgid "Techn. documentation"
+msgstr "Sgrìobhainnean teicnigeach"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_MASTERSTHESIS.string.text
+msgid "Thesis"
+msgstr "Teusas"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_MISC.string.text
+msgid "Miscellaneous"
+msgstr "Measgachadh"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_PHDTHESIS.string.text
+msgid "Dissertation"
+msgstr "Tràchdas"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_PROCEEDINGS.string.text
+msgctxt "sections.src#RID_TP_GENERAL.ST_TYPE_PROCEEDINGS.string.text"
+msgid "Conference proceedings"
+msgstr "Imeachdan co-labhairt"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_TECHREPORT.string.text
+msgid "Research report"
+msgstr "Aithisg rannsachaidh"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_UNPUBLISHED.string.text
+msgid "Unpublished"
+msgstr "Gun fhoillseachadh"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_EMAIL.string.text
+msgid "e-mail"
+msgstr "post-dealain"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_WWW.string.text
+msgid "WWW document"
+msgstr "Sgrìobhainn WWW"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM1.string.text
+msgid "User-defined1"
+msgstr "Gnàthaichte leis a' chleachdaiche1"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM2.string.text
+msgid "User-defined2"
+msgstr "Gnàthaichte leis a' chleachdaiche2"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM3.string.text
+msgid "User-defined3"
+msgstr "Gnàthaichte leis a' chleachdaiche3"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM4.string.text
+msgid "User-defined4"
+msgstr "Gnàthaichte leis a' chleachdaiche4"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM5.string.text
+msgid "User-defined5"
+msgstr "Gnàthaichte leis a' chleachdaiche5"
+
+#: sections.src#RID_TP_GENERAL.tabpage.text
+msgid "General"
+msgstr "Coitcheann"
+
+#: sections.src#RID_POPUP_ME_VIEW.PU_INSERT.menuitem.text
+msgid "Insert Section..."
+msgstr "Cuir a-steach earrann..."
+
+#: sections.src#RID_POPUP_ME_VIEW.PU_REMOVE.menuitem.text
+msgid "Delete Section..."
+msgstr "Sguab às an earrann..."
+
+#: sections.src#RID_POPUP_ME_VIEW.PU_CHG_NAME.menuitem.text
+msgid "Modify Name..."
+msgstr "Atharraich an t-ainm..."
+
+#: sections.src#ST_IDENTIFIER.string.text
+msgid "~Short name"
+msgstr "~Ainm goirid"
+
+#: sections.src#ST_AUTHTYPE.string.text
+msgid "~Type"
+msgstr "~Seòrsa"
+
+#: sections.src#ST_YEAR.string.text
+msgid "~Year"
+msgstr "~Bliadhna"
+
+#: sections.src#ST_AUTHOR.string.text
+msgid "Author(s)"
+msgstr "Ùghdar(an)"
+
+#: sections.src#ST_TITLE.string.text
+msgid "Tit~le"
+msgstr "Tiota~l"
+
+#: sections.src#ST_PUBLISHER.string.text
+msgid "~Publisher"
+msgstr "~Foillsichear"
+
+#: sections.src#ST_ADDRESS.string.text
+msgid "A~ddress"
+msgstr "Seòla~dh"
+
+#: sections.src#ST_ISBN.string.text
+msgid "~ISBN"
+msgstr "ISB~N"
+
+#: sections.src#ST_CHAPTER.string.text
+msgid "~Chapter"
+msgstr "~Caibideil"
+
+#: sections.src#ST_PAGE.string.text
+msgid "Pa~ge(s)"
+msgstr "Duillea~g(an)"
+
+#: sections.src#ST_EDITOR.string.text
+msgid "Editor"
+msgstr "Deasaichear"
+
+#: sections.src#ST_EDITION.string.text
+msgid "Ed~ition"
+msgstr "~Eagran"
+
+#: sections.src#ST_BOOKTITLE.string.text
+msgid "~Book title"
+msgstr "Tiotal a~n leabhair"
+
+#: sections.src#ST_VOLUME.string.text
+msgid "Volume"
+msgstr "Iom-leabhar"
+
+#: sections.src#ST_HOWPUBLISHED.string.text
+msgid "Publication t~ype"
+msgstr "Seòrs~a an fhoillseachaidh"
+
+#: sections.src#ST_ORGANIZATION.string.text
+msgid "Organi~zation"
+msgstr "Eagra~chas"
+
+#: sections.src#ST_INSTITUTION.string.text
+msgid "Instit~ution"
+msgstr "B~uidheann"
+
+#: sections.src#ST_SCHOOL.string.text
+msgid "University"
+msgstr "Oilthigh"
+
+#: sections.src#ST_REPORT.string.text
+msgid "Type of re~port"
+msgstr "Seòrsa na ~h-aithisge"
+
+#: sections.src#ST_MONTH.string.text
+msgid "~Month"
+msgstr "~Mìos"
+
+#: sections.src#ST_JOURNAL.string.text
+msgid "~Journal"
+msgstr "~Iris"
+
+#: sections.src#ST_NUMBER.string.text
+msgid "Numb~er"
+msgstr "Ài~reamh"
+
+#: sections.src#ST_SERIES.string.text
+msgid "Se~ries"
+msgstr "Srea~th"
+
+#: sections.src#ST_ANNOTE.string.text
+msgid "Ann~otation"
+msgstr "Nòtacha~dh"
+
+#: sections.src#ST_NOTE.string.text
+msgid "~Note"
+msgstr "~Nòta"
+
+#: sections.src#ST_URL.string.text
+msgid "URL"
+msgstr "URL"
+
+#: sections.src#ST_CUSTOM1.string.text
+msgid "User-defined field ~1"
+msgstr "Raon air a shònrachadh le cleachdaiche ~1"
+
+#: sections.src#ST_CUSTOM2.string.text
+msgid "User-defined field ~2"
+msgstr "Raon air a shònrachadh le cleachdaiche ~2"
+
+#: sections.src#ST_CUSTOM3.string.text
+msgid "User-defined field ~3"
+msgstr "Raon air a shònrachadh le cleachdaiche ~3"
+
+#: sections.src#ST_CUSTOM4.string.text
+msgid "User-defined field ~4"
+msgstr "Raon air a shònrachadh le cleachdaiche ~4"
+
+#: sections.src#ST_CUSTOM5.string.text
+msgid "User-defined field ~5"
+msgstr "Raon air a shònrachadh le cleachdaiche ~5"
+
+#: toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.toolboxitem.text
+msgid "Table"
+msgstr "Clàr"
+
+#: toolbar.src#RID_BIB_TOOLBAR.TBC_FT_QUERY.toolboxitem.text
+msgid "Search Key"
+msgstr "Iuchair-luirg"
+
+#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_AUTOFILTER.toolboxitem.text
+msgid "AutoFilter"
+msgstr "FèinChriathrag"
+
+#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_FILTERCRIT.toolboxitem.text
+msgid "Standard Filter"
+msgstr "Criathrag bhunaiteach"
+
+#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_REMOVEFILTER.toolboxitem.text
+msgid "Remove Filter"
+msgstr "Thoir air falbh criathrag"
+
+#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_COL_ASSIGN.toolboxitem.text
+msgid "Column Arrangement"
+msgstr "Rian nan colbhan"
+
+#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_CHANGESOURCE.toolboxitem.text
+msgid "Data Source"
+msgstr "Tùs-dàta"
+"(n > 2 && n < 20) ? 2 : 3;\n"
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: ~\n"
+"X-Project-Style: openoffice\n"
+
+#: grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.pushbutton.text
+msgctxt "grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.pushbutton.text"
+msgid "Set"
+msgstr "Suidhich"
+
+#: grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_ASCENDING.string.text
+msgid "Linear ascending"
+msgstr "Gu loidhneach 's a' dìreadh"
+
+#: grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_DESCENDING.string.text
+msgid "Linear descending"
+msgstr "Gu loidhneach 's a' teàrnadh"
+
+#: grid.src#GRID_DIALOG.RESET_TYPE_RESET.string.text
+msgid "Original values"
+msgstr "Na luachan tùsail"
+
+#: grid.src#GRID_DIALOG.RESET_TYPE_EXPONENTIAL.string.text
+msgid "Exponential increasing"
+msgstr "Leudachadh easbonantail"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.pushbutton.text
+msgid ""
+"About\n"
+" Dev~ice"
+msgstr ""
+"~Mun\n"
+" inneal"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.pushbutton.text
+msgid ""
+"Create\n"
+"Preview"
+msgstr ""
+"Cruthaich\n"
+"ro-shealladh"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.fixedline.text
+msgid "Preview"
+msgstr "Ro-shealladh"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCANAREA_BOX.fixedline.text
+msgid "Scan area"
+msgstr "An àrainn sganaidh"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_LEFT_TXT.fixedtext.text
+msgid "Left:"
+msgstr "Clì:"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_TOP_TXT.fixedtext.text
+msgid "Top:"
+msgstr "Barr:"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RIGHT_TXT.fixedtext.text
+msgid "Right:"
+msgstr "Deas:"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BOTTOM_TXT.fixedtext.text
+msgid "Bottom:"
+msgstr "Bonn:"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_DEVICE_BOX_TXT.fixedtext.text
+msgid "Device used:"
+msgstr "An t-inneal a chaidh a chleachdadh:"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RESOLUTION_TXT.fixedtext.text
+msgid "Resolution [~DPI]"
+msgstr "An dùmhlachd-bhreacaidh [~DPI]"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_ADVANCED_TXT.fixedtext.text
+msgid "Show advanced options"
+msgstr "Seall na roghainnean adhartach"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_OPTION_TXT.fixedtext.text
+msgid "Options:"
+msgstr "Roghainnean:"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_NUMERIC_VECTOR_TXT.fixedtext.text
+msgid "Vector element"
+msgstr "Eileamaid vector"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.pushbutton.text
+msgctxt "sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.pushbutton.text"
+msgid "Set"
+msgstr "Suidhich"
+
+#: sanedlg.src#RID_SANE_DIALOG.modaldialog.text
+msgid "Scanner"
+msgstr "Sganair"
+
+#: sanedlg.src#RID_SANE_DEVICEINFO_TXT.string.text
+msgid ""
+"Device: %s\n"
+"Vendor: %s\n"
+"Model: %s\n"
+"Type: %s"
+msgstr ""
+"Inneal: %s\n"
+"Reiceadair: %s\n"
+"Modail: %s\n"
+"Seòrsa: %s"
+
+#: sanedlg.src#RID_SANE_SCANERROR_TXT.string.text
+msgid "An error occurred while scanning."
+msgstr "Thachair mearachd rè an sganaidh."
+
+#: sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.string.text
+msgid ""
+"The device does not offer a preview option. Therefore, a normal scan will be "
+"used as a preview instead. This may take a considerable amount of time."
+msgstr ""
+"Chan eil gleus ro-sheallaidh aig an inneal seo. Thèid sgana àbhaisteach a "
+"chleachdadh mar ro-shealladh air sgàth sin. Faodaidh gum feum seo greis."
+
+#: sanedlg.src#RID_SANE_NOSANELIB_TXT.string.text
+msgid "The SANE interface could not be initialized. Scanning is not possible."
+msgstr ""
+"Cha do ghabh an eadar-aghaidh SANE a thòiseachadh. Chan urrainn dhut "
+"sganadh."
+"(n > 2 && n < 20) ? 2 : 3;\n"
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: ~\n"
+"X-Project-Style: openoffice\n"
+
+#: preload.src#RID_DLG_OEMWIZARD.PB_PREV.pushbutton.text
+msgid "<< Back"
+msgstr "<< Air ais"
+
+#: preload.src#RID_DLG_OEMWIZARD.PB_NEXT.pushbutton.text
+msgid "Next >>"
+msgstr "Air adhart >>"
+
+#: preload.src#RID_DLG_OEMWIZARD.ST_ACCEPT.string.text
+msgid "Accept"
+msgstr "Gabh ris"
+
+#: preload.src#RID_DLG_OEMWIZARD.ST_FINISH.string.text
+msgid "Finish"
+msgstr "Crìochnaich"
+
+#: preload.src#RID_DLG_OEMWIZARD.ST_LICENSE_AGREEMENT.string.text
+msgid " - Software License Agreement"
+msgstr " - Aonta Ceadachas a' Bhathair-Bhuig"
+
+#: preload.src#RID_DLG_OEMWIZARD.ST_INSERT_USER_DATA.string.text
+msgid "- User Data"
+msgstr "- Dàta cleachdaiche"
+
+#: preload.src#RID_TP_WELCOME.FT_INFO.fixedtext.text
+msgid ""
+"Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n"
+"\n"
+"To start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal "
+"data in the dialog following the license text. Important information is "
+"contained in the readme files which are located in the %PRODUCTNAME product "
+"directory. Please read these files carefully. You can also find detailed "
+"information at the Oracle website \n"
+"\n"
+"http://www.oracle.com/us/products/applications/open-office."
+msgstr ""
+"Fàilte gu %PRODUCTNAME %PRODUCTVERSION OEM\n"
+"\n"
+"Gus %PRODUCTNAME %PRODUCTVERSION OEM a thòiseachadh, cuir a-steach an dàta "
+"pearsanta agad sa chòmhradh an dèidh teacsa a' cheadachais. Tha fiosrachadh "
+"cudromach anns na faidhlichean readme a gheibh thu sa phasgan bhathair aig %"
+"PRODUCTNAME. Leugh na faidhlichean seo gu cùramach. Gheibh thu mion-"
+"fhiosrachadh air làrach-lìn Oracle cuideachd.\n"
+"\n"
+"http://www.oracle.com/us/products/applications/open-office."
+
+#: preload.src#RID_TP_WELCOME.tabpage.text
+msgid "Welcome"
+msgstr "Fàilte"
+
+#: preload.src#RID_TP_LICENSE.FT_INFO1.fixedtext.text
+msgid "Please follow these steps to proceed with the installation:"
+msgstr "Lean ris na ceuman a leanas gus leantainn air adhart leis an stàladh:"
+
+#: preload.src#RID_TP_LICENSE.FT_INFO2_1.fixedtext.text
+msgid "1."
+msgstr "1."
+
+#: preload.src#RID_TP_LICENSE.FT_INFO2.fixedtext.text
+msgid ""
+"View the complete License Agreement. Please use the scroll bar or the '%"
+"PAGEDOWN' button in this dialog to view the entire license text."
+msgstr ""
+"Leugh Aonta a' Cheadachais gu lèir. Cleachd am bàr-sgrolaidh no am putan '%"
+"PAGEDOWN' sa chòmhradh seo gus teacsa a' cheadachais gu lèir a leughadh."
+
+#: preload.src#RID_TP_LICENSE.PB_PAGEDOWN.pushbutton.text
+msgid "Page Down"
+msgstr "Duilleag sìos"
+
+#: preload.src#RID_TP_LICENSE.FT_INFO3_1.fixedtext.text
+msgid "2."
+msgstr "2."
+
+#: preload.src#RID_TP_LICENSE.FT_INFO3.fixedtext.text
+msgid "Accept the License Agreement."
+msgstr "Gabh ri Aonta a' Cheadachais."
+
+#: preload.src#RID_TP_LICENSE.CB_ACCEPT.checkbox.text
+msgid "I accept the terms of the Agreement."
+msgstr "Tha mi a' gabhail ri teirmichean an Aonta."
+
+#: preload.src#RID_TP_LICENSE.LICENCE_ACCEPT.string.text
+msgid "~Accept"
+msgstr "~Gabh ris"
+
+#: preload.src#RID_TP_LICENSE.LICENCE_NOTACCEPT.string.text
+msgid "Decline"
+msgstr "Diùlt e"
+
+#: preload.src#RID_TP_LICENSE.tabpage.text
+msgid "License Agreement"
+msgstr "Aonta a' Cheadachais"

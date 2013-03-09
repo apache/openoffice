@@ -1,0 +1,4145 @@
+"X-Accelerator-Marker: ~\n"
+
+#: importwi.src#sHelpButton.string.text
+msgid "~Help"
+msgstr "~Ayuda"
+
+#: importwi.src#sCancelButton.string.text
+msgid "~Cancel"
+msgstr "~Encaboxar"
+
+#: importwi.src#sBackButton.string.text
+msgid "<< ~Back"
+msgstr "<< ~Tornar"
+
+#: importwi.src#sNextButton.string.text
+msgid "Ne~xt >>"
+msgstr "~Siguir >>"
+
+#: importwi.src#sBeginButton.string.text
+msgid "~Convert"
+msgstr "~Convertir"
+
+#: importwi.src#sCloseButton.string.text
+msgid "~Close"
+msgstr "~Zarrar"
+
+#: importwi.src#sWelcometextLabel1.string.text
+msgid ""
+"This wizard converts documents in %PRODUCTNAME format and Microsoft Office "
+"documents to the new OpenDocument format."
+msgstr ""
+"Esti asistente convierte documentos del formatu de %PRODUCTNAME y documentos "
+"de Microsoft Office al formatu nuevu d'OpenDocument."
+
+#: importwi.src#sWelcometextLabel2.string.text
+msgid ""
+"Please note that when converting Microsoft documents any attached VBA macros "
+"lose their functionality."
+msgstr ""
+"Nun escaezas qu'al convertir documentos de Microsoft les macros VBA que "
+"s'axuntaran pueden perder la so funcionalidá."
+
+#: importwi.src#sWelcometextLabel3.string.text
+msgid "Select the document type for conversion:"
+msgstr "Escueyi les tribes de documentu a convertir:"
+
+#: importwi.src#sMSTemplateCheckbox_1_.string.text
+msgid "Word templates"
+msgstr "Word - Plantíes"
+
+#: importwi.src#sMSTemplateCheckbox_2_.string.text
+msgid "Excel templates"
+msgstr "Excel - Plantíes"
+
+#: importwi.src#sMSTemplateCheckbox_3_.string.text
+msgid "PowerPoint templates"
+msgstr "PowerPoint - Plantíes"
+
+#: importwi.src#sMSDocumentCheckbox_1_.string.text
+msgid "Word documents"
+msgstr "Documentos Word"
+
+#: importwi.src#sMSDocumentCheckbox_2_.string.text
+msgid "Excel documents"
+msgstr "Documentos Excel"
+
+#: importwi.src#sMSDocumentCheckbox_3_.string.text
+msgid "PowerPoint documents"
+msgstr "Documentos PowerPoint"
+
+#: importwi.src#sSearchInSubDir.string.text
+msgid "Including subdirectories"
+msgstr "Incluyíos subdirectorios"
+
+#: importwi.src#sMSContainerName.string.text
+msgid "Microsoft Office"
+msgstr "Microsoft Office"
+
+#: importwi.src#sSummaryHeader.string.text
+msgid "Summary:"
+msgstr "Resume:"
+
+#: importwi.src#sTextImportLabel.string.text
+msgid "Import from:"
+msgstr "Importar de:"
+
+#: importwi.src#sTextExportLabel.string.text
+msgid "Save to:"
+msgstr "Grabar en:"
+
+#: importwi.src#sGroupnameDefault.string.text
+msgid "Imported_Templates"
+msgstr "Plantíes de testu importaes"
+
+#: importwi.src#sProgressDesc1.string.text
+msgid "Progress: "
+msgstr "Progresu: "
+
+#: importwi.src#sProgressOneDoc.string.text
+msgid "Document"
+msgstr "Documentu"
+
+#: importwi.src#sProgressMoreDocs.string.text
+msgid "Documents"
+msgstr "Documentos"
+
+#: importwi.src#sProgressMoreTemplates.string.text
+msgid "Templates"
+msgstr "Plantíes"
+
+#: importwi.src#sNoDirCreation.string.text
+msgid "The '%1' directory cannot be created: "
+msgstr "Nun se puede crear el directoriu '%1': "
+
+#: importwi.src#sMsgDirNotThere.string.text
+msgid "The '%1' directory does not exist."
+msgstr "El directoriu '%1' nun existe."
+
+#: importwi.src#sQueryfornewCreation.string.text
+msgid "Do you want to create it now?"
+msgstr "¿Quies crealu?"
+
+#: importwi.src#sFileExists.string.text
+msgid "The '<1>' file already exists.<CR>Do you want to overwrite it?"
+msgstr "Yá existe'l ficheru '<1>'.<CR>¿Quies sobrescribilu?"
+
+#: importwi.src#sMorePathsError3.string.text
+msgid "Directories do not exist"
+msgstr "Directorios que nun existen"
+
+#: importwi.src#sOverwriteallFiles.string.text
+msgid "Do you want to overwrite documents without being asked?"
+msgstr "¿Quies sobrescribir los documentos ensin entruga de confirmación?"
+
+#: importwi.src#sreeditMacro.string.text
+msgid "Document macro has to be revised."
+msgstr "La macro de los documentos tien que revisase."
+
+#: importwi.src#scouldNotsaveDocument.string.text
+msgid "Document '<1>' could not be saved."
+msgstr "El documentu '<1>' nun se pudo grabar."
+
+#: importwi.src#scouldNotopenDocument.string.text
+msgid "Document '<1>' could not be opened."
+msgstr "El documentu '<1>' nun se pudo abrir."
+
+#: importwi.src#sConvertError1.string.text
+msgid "Do you really want to terminate conversion at this point?"
+msgstr "¿De verdá quies parar agora la conversión?"
+
+#: importwi.src#sConvertError2.string.text
+msgid "Cancel Wizard"
+msgstr "Encaboxar asistente"
+
+#: importwi.src#sRTErrorDesc.string.text
+msgid "An unexpected error has occurred in the wizard."
+msgstr "Fallu inesperáu nel asistente."
+
+#: importwi.src#sRTErrorHeader.string.text
+msgid "Error"
+msgstr "Fallu"
+
+#: importwi.src#sPathDialogMessage.string.text
+msgid "Select a directory"
+msgstr "Esbilla un direutoriu"
+
+#: importwi.src#sDialogTitle.string.text
+msgid "Document Converter"
+msgstr "Conversor de documentos"
+
+#: importwi.src#sProgressPage1.string.text
+msgid "Progress"
+msgstr "Progresu"
+
+#: importwi.src#sProgressPage2.string.text
+msgid "Retrieving the relevant documents:"
+msgstr "Recuperación de documentos importantes:"
+
+#: importwi.src#sProgressPage3.string.text
+msgid "Converting the documents"
+msgstr "Conversión de documentos"
+
+#: importwi.src#sProgressFound.string.text
+msgid "Found:"
+msgstr "Atopáu:"
+
+#: importwi.src#sProgressPage5.string.text
+msgid "%1 found"
+msgstr "%1 atopáu(os)"
+
+#: importwi.src#sReady.string.text
+msgid "Finished"
+msgstr "Fináu"
+
+#: importwi.src#sXMLTemplateCheckbox_1_.string.text
+msgid "Text templates"
+msgstr "Modelos de testu"
+
+#: importwi.src#sXMLTemplateCheckbox_2_.string.text
+msgid "Spreadsheet templates"
+msgstr "Modelos de fueya de cálculu"
+
+#: importwi.src#sXMLTemplateCheckbox_3_.string.text
+msgid "Drawing/presentation templates"
+msgstr "Modelos de dibuxu/presentación"
+
+#: importwi.src#sXMLTemplateCheckbox_4_.string.text
+msgctxt "importwi.src#sXMLTemplateCheckbox_4_.string.text"
+msgid "Master documents"
+msgstr "Documentos maestros"
+
+#: importwi.src#sXMLDocumentCheckbox_1_.string.text
+msgid "Text documents"
+msgstr "Documentos de testu"
+
+#: importwi.src#sXMLDocumentCheckbox_2_.string.text
+msgid "Spreadsheets"
+msgstr "Fueyes de cálculu"
+
+#: importwi.src#sXMLDocumentCheckbox_3_.string.text
+msgid "Drawing/presentation documents"
+msgstr "Dibuxos/presentaciones"
+
+#: importwi.src#sXMLDocumentCheckbox_4_.string.text
+msgid "Master documents/formulas"
+msgstr "Documentos maestros/fórmules"
+
+#: importwi.src#sXMLHelperApplications_1.string.text
+msgctxt "importwi.src#sXMLHelperApplications_1.string.text"
+msgid "Master documents"
+msgstr "Documentos maestros"
+
+#: importwi.src#sXMLHelperApplications_2.string.text
+msgid "Formulas"
+msgstr "Fórmules"
+
+#: importwi.src#sSourceDocuments.string.text
+msgid "Source documents"
+msgstr "Documentos fonte"
+
+#: importwi.src#sTargetDocuments.string.text
+msgid "Target documents"
+msgstr "Documentos de destín"
+
+#: importwi.src#sCreateLogfile.string.text
+msgid "Create log file"
+msgstr "Crear ficheru de rexistru"
+
+#: importwi.src#sLogfileSummary.string.text
+msgid "<COUNT> documents converted"
+msgstr "<COUNT> documentos convertíos"
+
+#: importwi.src#sLogfileHelpText.string.text
+msgid "A log file will be created in your work directory"
+msgstr "Crearáse un ficheru de rexistru nel to direutoriu de trabayu"
+
+#: importwi.src#sshowLogfile.string.text
+msgid "Show log file"
+msgstr "Ver ficheru de rexistru"
+
+#: importwi.src#sSumInclusiveSubDir.string.text
+msgid "All subdirectories will be taken into account"
+msgstr "Tolos subdireutorios van tenese en cuenta."
+
+#: importwi.src#sSumSaveDokumente.string.text
+msgid "These will be exported to the following directory:"
+msgstr "Van ser esportaos pal direutoriu siguiente:"
+
+#: importwi.src#sSumSOTextDocuments.string.text
+msgid ""
+"All %PRODUCTNAME text documents contained in the following directory will be "
+"imported:"
+msgstr ""
+"Los documentos de testu %PRODUCTNAME que tán nel direutoriu siguiente van "
+"importase:"
+
+#: importwi.src#sSumSOTableDocuments.string.text
+msgid ""
+"All %PRODUCTNAME spreadsheets contained in the following directory will be "
+"imported:"
+msgstr ""
+"Los clasificadores %PRODUCTNAME que tán nel direutoriu siguiente van "
+"importase:"
+
+#: importwi.src#sSumSODrawDocuments.string.text
+msgid ""
+"All %PRODUCTNAME drawing and presentation documents contained in the "
+"following directory will be imported:"
+msgstr ""
+"Los dibuxos y presentaciones %PRODUCTNAME que tán nel direutoriu siguiente "
+"van importase:"
+
+#: importwi.src#sSumSOMathDocuments.string.text
+msgid ""
+"All %PRODUCTNAME formula documents contained in the following directory will "
+"be imported:"
+msgstr ""
+"Les formules %PRODUCTNAME que tán nel direutoriu siguiente van importase:"
+
+#: importwi.src#sSumSOTextTemplates.string.text
+msgid ""
+"All %PRODUCTNAME text templates contained in the following directory will be "
+"imported:"
+msgstr ""
+"Los modelos de testu %PRODUCTNAME que tán nel direutoriu siguiente van "
+"importase:"
+
+#: importwi.src#sSumSOTableTemplates.string.text
+msgid ""
+"All %PRODUCTNAME table templates contained in the following directory will "
+"be imported:"
+msgstr ""
+"Tolos modelos de tabla de %PRODUCTNAME  que tán nel siguiente direutoriu van "
+"importase:"
+
+#: importwi.src#sSumSODrawTemplates.string.text
+msgid ""
+"All %PRODUCTNAME drawing and presentation templates contained in the "
+"following directory will be imported:"
+msgstr ""
+"Los modelos de dibuxu y de presentación %PRODUCTNAME que tán nel direutoriu "
+"siguiente van importase:"
+
+#: importwi.src#sSumSOGlobalDocuments.string.text
+msgid ""
+"All %PRODUCTNAME master documents contained in the following directory will "
+"be imported:"
+msgstr ""
+"Los documentos maestros %PRODUCTNAME que tán nel direutoriu siguiente van "
+"importase:"
+
+#: importwi.src#sSumMSTextDocuments.string.text
+msgid ""
+"All Word documents contained in the following directory will be imported:"
+msgstr "Los documentos Word que tán nel direutoriu siguiente van importase:"
+
+#: importwi.src#sSumMSTableDocuments.string.text
+msgid ""
+"All Excel documents contained in the following directory will be imported:"
+msgstr "Los documentos Excel que tán nel direutoriu siguiente van importase:"
+
+#: importwi.src#sSumMSDrawDocuments.string.text
+msgid ""
+"All PowerPoint documents contained in the following directory will be "
+"imported:"
+msgstr ""
+"Los documentos PowerPoint que tán nel direutoriu siguiente van importase:"
+
+#: importwi.src#sSumMSTextTemplates.string.text
+msgid ""
+"All Word templates contained in the following directory will be imported:"
+msgstr "Los modelos Word que tán nel direutoriu siguiente van importase:"
+
+#: importwi.src#sSumMSTableTemplates.string.text
+msgid ""
+"All Excel templates contained in the following directory will be imported:"
+msgstr "Los modelos Excel que tán nel direutoriu siguiente van importase:"
+
+#: importwi.src#sSumMSDrawTemplates.string.text
+msgid ""
+"All PowerPoint templates contained in the following directory will be "
+"imported:"
+msgstr "Los modelos PowerPoint que tán nel direutoriu siguiente van importase:"
+"X-Generator: Virtaal 0.7.1\n"
+"X-Accelerator-Marker: ~\n"
+"X-Project-Style: openoffice\n"
+
+#: dbwizres.src#RID_COMMON_START___0.string.text
+msgid ""
+"The directory '%1' could not be created.<BR>There may not be enough space "
+"left on your hard disk."
+msgstr ""
+"Nun se pue crear el direutoriu '%1'.<BR>Seique nun queda espaciu nel discu "
+"duru."
+
+#: dbwizres.src#RID_COMMON_START___1.string.text
+msgid ""
+"The text document could not be created.<BR>Please check if the module "
+"'PRODUCTNAME Writer' is installed."
+msgstr ""
+"Nun se pue crear el documentu de testu.<BR>Comprueba si'l módulu  "
+"'PRODUCTNAME Writer' ta instaláu."
+
+#: dbwizres.src#RID_COMMON_START___2.string.text
+msgid ""
+"The spreadsheet could not be created.<BR>Please check if the module "
+"'PRODUCTNAME Calc' is installed."
+msgstr ""
+"Nun se pue crear la fueya de cálculu.<BR>Comprueba si'l módulu  'PRODUCTNAME "
+"Calc' ta instaláu."
+
+#: dbwizres.src#RID_COMMON_START___3.string.text
+msgid ""
+"The presentation could not be created.<BR>Please check if the module "
+"'PRODUCTNAME Impress' is installed."
+msgstr ""
+"Nun se pue crear la presentación.<BR>Comprueba si'l módulu  'PRODUCTNAME "
+"Impress' ta instaláu."
+
+#: dbwizres.src#RID_COMMON_START___4.string.text
+msgid ""
+"The drawing could not be created.<BR>Please check if the module 'PRODUCTNAME "
+"Draw' is installed."
+msgstr ""
+"Nun se pue crear el dibuxu.<BR>Comprueba si'l módulu  'PRODUCTNAME Draw' ta "
+"instaláu."
+
+#: dbwizres.src#RID_COMMON_START___5.string.text
+msgid ""
+"The formula could not be created.<BR>Please check if the module 'PRODUCTNAME "
+"Math' is installed."
+msgstr ""
+"Nun se pue crear la fórmula.<BR>Comprueba si'l módulu  'PRODUCTNAME Math' ta "
+"instaláu."
+
+#: dbwizres.src#RID_COMMON_START___6.string.text
+msgid ""
+"The files required could not be found.<BR>Please start the %PRODUCTNAME "
+"Setup and choose 'Repair'."
+msgstr ""
+"Nun se pudieron alcontrar los ficheros necesarios.<BR>Arranca'l programa "
+"d'instalación de %PRODUCTNAME y escueyi la opción 'Reparación'."
+
+#: dbwizres.src#RID_COMMON_START___7.string.text
+msgid ""
+"The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the "
+"existing file?"
+msgstr ""
+"El ficheru '<PATH>' yá existe.<BR><BR>¿Quies sobrescribir el ficheru "
+"qu'existe?"
+
+#: dbwizres.src#RID_COMMON_START___8.string.text
+msgid "Yes"
+msgstr "Sí"
+
+#: dbwizres.src#RID_COMMON_START___9.string.text
+msgid "Yes to All"
+msgstr "Sí a too"
+
+#: dbwizres.src#RID_COMMON_START___10.string.text
+msgid "No"
+msgstr "Non"
+
+#: dbwizres.src#RID_COMMON_START___11.string.text
+msgid "Cancel"
+msgstr "Encaboxar"
+
+#: dbwizres.src#RID_COMMON_START___12.string.text
+msgid "~Finish"
+msgstr "~Finar"
+
+#: dbwizres.src#RID_COMMON_START___13.string.text
+msgid "< ~Back"
+msgstr "< ~Atrás"
+
+#: dbwizres.src#RID_COMMON_START___14.string.text
+msgid "~Next >"
+msgstr "~Siguiente >"
+
+#: dbwizres.src#RID_COMMON_START___15.string.text
+msgctxt "dbwizres.src#RID_COMMON_START___15.string.text"
+msgid "~Help"
+msgstr "~Ayuda"
+
+#: dbwizres.src#RID_COMMON_START___16.string.text
+msgid "Steps"
+msgstr "Pasos"
+
+#: dbwizres.src#RID_COMMON_START___17.string.text
+msgid "Close"
+msgstr "Zarrar"
+
+#: dbwizres.src#RID_COMMON_START___18.string.text
+msgid "OK"
+msgstr "Aceutar"
+
+#: dbwizres.src#RID_COMMON_START___19.string.text
+msgid "The file already exists. Do you want to overwrite it?"
+msgstr "Esti ficheru yá existe. ¿Quies sobrescribilu?"
+
+#: dbwizres.src#RID_COMMON_START___20.string.text
+msgid "Template created via <wizard_name> on <current_date>."
+msgstr "Modelu creáu con <wizard_name> el <current_date>."
+
+#: dbwizres.src#RID_COMMON_START___21.string.text
+msgid ""
+"The wizard could not be run, because important files were not found.\n"
+"Under 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to "
+"reset the paths to the original default settings.\n"
+"Then run the wizard again."
+msgstr ""
+"L'asistente nun pudo executase, porque falten dellos ficheros importantes.\n"
+"Pa reaniciar los caminos hacia la configuración predeterminada orixinal, "
+"escueyi \"Ferramientes - Opciones - %PRODUCTNAME - Caminos\" y calca nel botón "
+"\"Predetermináu\".\n"
+"Reanicia darréu l'asistente."
+
+#: dbwizres.src#RID_DB_COMMON_START___0.string.text
+msgid "C~reate"
+msgstr "~Crear"
+
+#: dbwizres.src#RID_DB_COMMON_START___1.string.text
+msgid "~Cancel"
+msgstr "~Encaboxar"
+
+#: dbwizres.src#RID_DB_COMMON_START___2.string.text
+msgid "<< ~Back"
+msgstr "<< ~Tornar"
+
+#: dbwizres.src#RID_DB_COMMON_START___3.string.text
+msgid "~Next >>"
+msgstr "~Siguir >>"
+
+#: dbwizres.src#RID_DB_COMMON_START___4.string.text
+msgid "~Database"
+msgstr "~Base de datos"
+
+#: dbwizres.src#RID_DB_COMMON_START___5.string.text
+msgid "~Table name"
+msgstr "Nome de ~Tabla"
+
+#: dbwizres.src#RID_DB_COMMON_START___6.string.text
+msgid ""
+"An error occurred while running the wizard. The wizard will be terminated."
+msgstr "Hebo un fallu na execución del asistente. L'asistente va zarrase."
+
+#: dbwizres.src#RID_DB_COMMON_START___14.string.text
+msgid "No connection to the database could be established."
+msgstr "Nun se puede coneutar cola base datos"
+
+#: dbwizres.src#RID_DB_COMMON_START___20.string.text
+msgctxt "dbwizres.src#RID_DB_COMMON_START___20.string.text"
+msgid "~Help"
+msgstr "~Ayuda"
+
+#: dbwizres.src#RID_DB_COMMON_START___21.string.text
+msgid "~Stop"
+msgstr "~Parar"
+
+#: dbwizres.src#RID_DB_COMMON_START___30.string.text
+msgid "The document could not be saved."
+msgstr "Nun se puede grabar el documentu"
+
+#: dbwizres.src#RID_DB_COMMON_START___33.string.text
+msgid "Exiting the wizard"
+msgstr "Saliendo del asistente"
+
+#: dbwizres.src#RID_DB_COMMON_START___34.string.text
+msgid "Connecting to data source..."
+msgstr "Conexón a la fonte de datos..."
+
+#: dbwizres.src#RID_DB_COMMON_START___35.string.text
+msgid "The connection to the data source could not be established."
+msgstr "Nun se puede coneutar cola fonte de datos"
+
+#: dbwizres.src#RID_DB_COMMON_START___36.string.text
+msgid "The file path entered is not valid."
+msgstr "El camín del ficheru escoyíu nun val."
+
+#: dbwizres.src#RID_DB_COMMON_START___37.string.text
+msgid "Please select a data source"
+msgstr "Escueyi una fonte de datos"
+
+#: dbwizres.src#RID_DB_COMMON_START___38.string.text
+msgid "Please select a table or query"
+msgstr "Escoyer una tabla o consulta"
+
+#: dbwizres.src#RID_DB_COMMON_START___39.string.text
+msgid "Add field"
+msgstr "Amestar un campu"
+
+#: dbwizres.src#RID_DB_COMMON_START___40.string.text
+msgid "Remove field"
+msgstr "Desaniciar campu"
+
+#: dbwizres.src#RID_DB_COMMON_START___41.string.text
+msgid "Add all fields"
+msgstr "Amestar tolos campos"
+
+#: dbwizres.src#RID_DB_COMMON_START___42.string.text
+msgid "Remove all fields"
+msgstr "Desaniciar tolos campos"
+
+#: dbwizres.src#RID_DB_COMMON_START___43.string.text
+msgid "Move field up"
+msgstr "Mover campu hacia arriba"
+
+#: dbwizres.src#RID_DB_COMMON_START___44.string.text
+msgid "Move field down"
+msgstr "Mover campu p'abaxo"
+
+#: dbwizres.src#RID_DB_COMMON_START___45.string.text
+msgid "The field names from '%NAME' could not be retrieved."
+msgstr "Nun se pudo recuperar los nomes de campu de '%NAME'."
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___0.string.text
+msgid "Form Wizard"
+msgstr "Asistente pa formularios"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___1.string.text
+msgid "Fields in ~the form"
+msgstr "Campos del ~formulariu"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___2.string.text
+msgid ""
+"Binary fields are always listed and selectable from the left list.\n"
+"If possible, they are interpreted as images."
+msgstr ""
+"Los campos binarios siempre se ponen na llista izquierda, onde se pueden "
+"escoyer.\n"
+"Si se puede, interprétense como imáxenes."
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___3.string.text
+msgid ""
+"A subform is a form that is inserted in another form.\n"
+"Use subforms to show data from tables or queries with a one-to-many "
+"relationship."
+msgstr ""
+"Un subformulariu ye un formulariu inxertáu n'otru formulariu.\n"
+"Usa los subformularios p'amosar los datos de les tables o consultes con una "
+"rellación d'unu o dellos."
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___4.string.text
+msgid "~Add Subform"
+msgstr "~Amestar subformulariu"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___5.string.text
+msgid "~Subform based on existing relation"
+msgstr "~Subformulariu basáu nuna rellación existente"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___6.string.text
+msgid "Tables or queries"
+msgstr "Tabla o consulta"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___7.string.text
+msgid "Subform based on ~manual selection of fields"
+msgstr "Subformulariu basáu nuna escoyeta ~manual de campos"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___8.string.text
+msgid "~Which relation do you want to add?"
+msgstr "¿Qué rellación quies ~amestar?"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___9.string.text
+msgid "Fields in the ~subform"
+msgstr "Campos del ~subformulariu"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___12.string.text
+msgid "~Available fields"
+msgstr "~Campos disponibles"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___13.string.text
+msgid "Fields in form"
+msgstr "Campos del ~formulariu"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___19.string.text
+msgid ""
+"The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\n"
+"But joins may only be used once."
+msgstr ""
+"La combinación '<FIELDNAME1>' y '<FIELDNAME2>' esbilléstela dos vegaes.\n"
+"Por embargu, les combinaciones sólamente se pueden usar una vegada."
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___20.string.text
+msgid "~First joined subform field"
+msgstr "~Primer campu de subformulariu combináu"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___21.string.text
+msgid "~Second joined subform field"
+msgstr "~Segundu campu de subformulariu combináu"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___22.string.text
+msgid "~Third joined subform field"
+msgstr "~Tercer campu de subformulariu combináu"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___23.string.text
+msgid "~Fourth joined subform field"
+msgstr "~Cuartu campu de subformulariu combináu"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___24.string.text
+msgid "F~irst joined main form field"
+msgstr "Pr~imer campu de formulariu combináu"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___25.string.text
+msgid "S~econd joined main form field"
+msgstr "S~egundu campu de formulariu combináu"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___26.string.text
+msgid "T~hird joined main form field"
+msgstr "Ter~cer campu de formulariu combináu"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___27.string.text
+msgid "F~ourth joined main form field"
+msgstr "C~uartu campu de formulariu combináu"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___28.string.text
+msgid "Field border"
+msgstr "Bordes de campu"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___29.string.text
+msgid "No border"
+msgstr "Ensin bordes"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___30.string.text
+msgid "3D look"
+msgstr "Aspeutu 3D"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___31.string.text
+msgid "Flat"
+msgstr "Planu"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___32.string.text
+msgid "Label placement"
+msgstr "Orientación de los campos de etiquetes"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___33.string.text
+msgid "Align left"
+msgstr "Alliñar a la esquierda"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___34.string.text
+msgid "Align right"
+msgstr "Alliñar a la derecha"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___35.string.text
+msgid "Arrangement of DB fields"
+msgstr "Axuste de los campos de la base datos"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___36.string.text
+msgid "Columnar - Labels Left"
+msgstr "En columnes - Etiquetes a la izquierda"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___37.string.text
+msgid "Columnar - Labels on Top"
+msgstr "En columnes - Etiquetes enriba"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___38.string.text
+msgid "In Blocks - Labels Left"
+msgstr "En bloques - Etiquetes a la izquierda"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___39.string.text
+msgid "In Blocks - Labels Above"
+msgstr "En bloques - Etiquetes enriba"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___40.string.text
+msgid "As Data Sheet"
+msgstr "Como fueya de datos"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___41.string.text
+msgid "Arrangement of the main form"
+msgstr "Disposición del formulariu principal"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___42.string.text
+msgid "Arrangement of the subform"
+msgstr "Disposición del subformulariu"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___44.string.text
+msgid "The form is to be ~used for entering new data only."
+msgstr "El formulari  va usase pa ~meter únicamente datos nuevos."
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___45.string.text
+msgid "Existing data will not be displayed "
+msgstr "Nun se van amosar los datos qu'existen "
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___46.string.text
+msgid "T~he form is to display all data"
+msgstr "E~l formulariu amosará tolos datos"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___47.string.text
+msgid "Do not allow ~modification of existing data"
+msgstr "Non permitir el ~camudamientu de los datos existentes"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___48.string.text
+msgid "Do not allow ~deletion of existing data"
+msgstr "Non permitir el ~borráu de los datos existentes"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___49.string.text
+msgid "Do not allow ~addition of new data"
+msgstr "Non permitir l'~amestamientu de datos nuevos"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___50.string.text
+msgid "Name of ~the form"
+msgstr "Nome del ~formulariu"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___51.string.text
+msgid "How do you want to proceed after creating the form?"
+msgstr "¿Cómo quies siguir dempués de crear el formulariu?"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___52.string.text
+msgid "~Work with the form"
+msgstr "~Trabayar col formulariu"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___53.string.text
+msgid "~Modify the form"
+msgstr "~Camudar el formulariu"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___55.string.text
+msgid "~Page Styles"
+msgstr "~Estilos de páxina"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___80.string.text
+msgctxt "dbwizres.src#RID_DB_FORM_WIZARD_START___80.string.text"
+msgid "Field selection"
+msgstr "Esbilla de campu"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___81.string.text
+msgid "Set up a subform"
+msgstr "Configurar un subformulariu"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___82.string.text
+msgid "Add subform fields"
+msgstr "Amestar campos de subformulariu"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___83.string.text
+msgid "Get joined fields"
+msgstr "Obtener campos combinaos"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___84.string.text
+msgid "Arrange controls"
+msgstr "Organizar campos de control"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___85.string.text
+msgid "Set data entry"
+msgstr "Establecer entrada de datos"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___86.string.text
+msgid "Apply styles"
+msgstr "Aplicar estilos"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___87.string.text
+msgid "Set name"
+msgstr "Establecer nome"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___88.string.text
+msgid "(Date)"
+msgstr "(Data)"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___89.string.text
+msgid "(Time)"
+msgstr "(Hora)"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___90.string.text
+msgid "Select the fields of your form"
+msgstr "Escueyi los campos del formulariu"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___91.string.text
+msgid "Decide if you want to set up a subform"
+msgstr "Decidi si quies configurar un subformulariu"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___92.string.text
+msgid "Select the fields of your subform"
+msgstr "Escueyi los campos del subformulariu"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___93.string.text
+msgid "Select the joins between your forms"
+msgstr "Escueyi les combinaciones de los formularios"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___94.string.text
+msgid "Arrange the controls on your form"
+msgstr "Tresna los campos de control del formulariu"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___95.string.text
+msgid "Select the data entry mode"
+msgstr "Escueyi'l mou d'entrada de datos"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___96.string.text
+msgid "Apply the style of your form"
+msgstr "Aplicar l'estilu al formulariu"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___97.string.text
+msgid "Set the name of the form"
+msgstr "Denomar el formulariu"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___98.string.text
+msgid ""
+"A form with the name '%FORMNAME' already exists.\n"
+"Choose another name."
+msgstr ""
+"Yá existe un formulariu denomáu %FORMNAME.\n"
+"Escueyi otru nome."
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___0.string.text
+msgctxt "dbwizres.src#RID_DB_QUERY_WIZARD_START___0.string.text"
+msgid "Query Wizard"
+msgstr "Asistente pa consultes"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___1.string.text
+msgid "Query"
+msgstr "Consulta"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___2.string.text
+msgctxt "dbwizres.src#RID_DB_QUERY_WIZARD_START___2.string.text"
+msgid "Query Wizard"
+msgstr "Asistente de Consulta"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___3.string.text
+msgid "~Tables"
+msgstr "Tables"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___4.string.text
+msgctxt "dbwizres.src#RID_DB_QUERY_WIZARD_START___4.string.text"
+msgid "A~vailable fields"
+msgstr "Campos disp~onibles"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___5.string.text
+msgid "Name ~of the query"
+msgstr "N~ome de la consulta"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___6.string.text
+msgid "Display ~Query"
+msgstr "Amosar la Consulta"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___7.string.text
+msgid "~Modify Query"
+msgstr "~Camudar la Consulta"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___8.string.text
+msgid "~How do you want to proceed after creating the query?"
+msgstr "¿Qué quies facer dempués de la creación de la consulta?"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___9.string.text
+msgid "Match ~all of the following"
+msgstr "Guetar b~asándose en toos estos criterios"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___10.string.text
+msgid "~Match any of the following"
+msgstr "Guetar b~asándose n'ún d'estos criterios"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___11.string.text
+msgid "~Detailed query (Shows all records of the query.)"
+msgstr "Consulta detallada (amuesa toles grabaciones de la consulta)"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___12.string.text
+msgid "~Summary query (Shows only results of aggregate functions.)"
+msgstr ""
+"~Consulta resumida (amuesa sólo los resultaos de les funciones amestaes.)"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___16.string.text
+msgid "Aggregate functions"
+msgstr "Funciones amestaes"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___17.string.text
+msgctxt "dbwizres.src#RID_DB_QUERY_WIZARD_START___17.string.text"
+msgid "Fields"
+msgstr "Campos"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___18.string.text
+msgid "~Group by"
+msgstr "~Agrupar por"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___19.string.text
+msgctxt "dbwizres.src#RID_DB_QUERY_WIZARD_START___19.string.text"
+msgid "Field"
+msgstr "Campu"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___20.string.text
+msgid "Alias"
+msgstr "Alcuñu"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___21.string.text
+msgid "Table: "
+msgstr "Tabla : "
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___22.string.text
+msgid "Query: "
+msgstr "Consulta: "
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___24.string.text
+msgid "Condition"
+msgstr "Condición"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___25.string.text
+msgid "Value"
+msgstr "Valor"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___26.string.text
+msgid "is equal to"
+msgstr "ye igual a"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___27.string.text
+msgid "is not equal to"
+msgstr "ye estremáu de"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___28.string.text
+msgid "is smaller than"
+msgstr "ye inferior a"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___29.string.text
+msgid "is greater than"
+msgstr "ye mayor que"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___30.string.text
+msgid "is equal or less than "
+msgstr "ye igual o inferior a "
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___31.string.text
+msgid "is equal or greater than"
+msgstr "ye igual o superior a"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___32.string.text
+msgid "like"
+msgstr "como"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___33.string.text
+msgid "not like"
+msgstr "opuestu"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___34.string.text
+msgid "is null"
+msgstr "ye nulu"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___35.string.text
+msgid "is not null"
+msgstr "nun ye nulu"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___36.string.text
+msgid "true"
+msgstr "braero"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___37.string.text
+msgid "false"
+msgstr "falso"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___38.string.text
+msgid "and"
+msgstr "y"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___39.string.text
+msgid "or"
+msgstr "o"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___40.string.text
+msgid "get the sum of"
+msgstr "obtener la suma de"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___41.string.text
+msgid "get the average of"
+msgstr "obtener la media de"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___42.string.text
+msgid "get the minimum of"
+msgstr "obtener el mínimu de"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___43.string.text
+msgid "get the maximum of"
+msgstr "obtener el máximu de"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___44.string.text
+msgid "get the sum of <FIELD>"
+msgstr "obtener la suma de <FIELD>"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___45.string.text
+msgid "get the average of <FIELD>"
+msgstr "obtener la media de <FIELD>"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___46.string.text
+msgid "get the minimum of <FIELD>"
+msgstr "obtener el mínimu de <FIELD>"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___47.string.text
+msgid "get the maximum of <FIELD>"
+msgstr "obtener el máximu de <FIELD>"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___48.string.text
+msgid "(none)"
+msgstr "(dengún)"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___50.string.text
+msgid "Fie~lds in the Query: "
+msgstr "Campos de ~la Consulta : "
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___51.string.text
+msgid "Sorting order: "
+msgstr "Orde de clasificación: "
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___52.string.text
+msgid "No sorting fields were assigned."
+msgstr "Nun s'asignaron campos d'ordenación."
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___53.string.text
+msgid "Search conditions: "
+msgstr "Condiciones de gueta: "
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___54.string.text
+msgid "No conditions were assigned."
+msgstr "Nun s'asignó denguna condición."
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___55.string.text
+msgid "Aggregate functions: "
+msgstr "Funciones agregaes: "
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___56.string.text
+msgid "No aggregate functions were assigned."
+msgstr "Nun s'asignaron funciones agregaes."
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___57.string.text
+msgid "Grouped by: "
+msgstr "Agrupáu por: "
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___58.string.text
+msgid "No Groups were assigned."
+msgstr "Nun s'asignaron grupos."
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___59.string.text
+msgid "Grouping conditions: "
+msgstr "Condiciones d'agrupamientu: "
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___60.string.text
+msgid "No grouping conditions were assigned."
+msgstr "Nun s'asignaron condiciones d'agrupamientu."
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___70.string.text
+msgid "Select the fields (columns) for your query"
+msgstr "Escueyi los campos (columnes) pa la consulta"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___71.string.text
+msgid "Select the sorting order"
+msgstr "Escueyi l'orde de clasificación"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___72.string.text
+msgid "Select the search conditions"
+msgstr "Escueyi les condiciones de búsqueda"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___73.string.text
+msgid "Select the type of query"
+msgstr "Escueyi la triba de consulta"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___74.string.text
+msgid "Select the groups"
+msgstr "Escueyi los grupos"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___75.string.text
+msgid "Select the grouping conditions"
+msgstr "Escueyi les condiciones d'agrupamientu"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___76.string.text
+msgid "Assign aliases if desired"
+msgstr "Asignar alcuñu si se quier"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___77.string.text
+msgid "Check the overview and decide how to proceed"
+msgstr "Verificar la información xeneral y decidir cómo siguir"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___80.string.text
+msgctxt "dbwizres.src#RID_DB_QUERY_WIZARD_START___80.string.text"
+msgid "Field selection"
+msgstr "Esbilla de campu"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___81.string.text
+msgid "Sorting order"
+msgstr "Orde de clasificación"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___82.string.text
+msgid "Search conditions"
+msgstr "Condiciones de gueta"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___83.string.text
+msgid "Detail or summary"
+msgstr "Detalle o resume"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___84.string.text
+msgctxt "dbwizres.src#RID_DB_QUERY_WIZARD_START___84.string.text"
+msgid "Grouping"
+msgstr "Agrupación"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___85.string.text
+msgid "Grouping conditions"
+msgstr "Condiciones d'agrupamientu"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___86.string.text
+msgid "Aliases"
+msgstr "Alcuñu"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___87.string.text
+msgid "Overview"
+msgstr "Vista xeneral"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___88.string.text
+msgid ""
+"A field that has not been assigned an aggregate function must be used in a "
+"group."
+msgstr ""
+"Hai qu'usar un campu al que nun se-y asignara denguna función agregada n'un "
+"grupu."
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___89.string.text
+msgid ""
+"The condition '<FIELDNAME> <LOGICOPERATOR> <VALUE>' was chosen twice. Each "
+"condition can only be chosen once"
+msgstr ""
+"La condición '<FIELDNAME> <LOGICOPERATOR> <VALUE>' escoyóse dos vegaes. Cada "
+"condición sólo se puede escoyer una vegada"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___90.string.text
+msgid ""
+"The aggregate function <FUNCTION> has been assigned twice to the fieldname "
+"'<NUMERICFIELD>'."
+msgstr ""
+"La función agregada <FUNCTION> asignóse dos vegaesw al nome de campu "
+"'<NUMERICFIELD>'."
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___91.string.text
+msgid ", "
+msgstr ", "
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___92.string.text
+msgid "<FIELDTITLE> (<FIELDNAME>)"
+msgstr "<FIELDTITLE> (<FIELDNAME>)"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___93.string.text
+msgid "<FIELDNAME> (<SORTMODE>)"
+msgstr "<FIELDNAME> (<SORTMODE>)"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___94.string.text
+msgctxt "dbwizres.src#RID_DB_QUERY_WIZARD_START___94.string.text"
+msgid "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+msgstr "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___95.string.text
+msgid "<CALCULATEDFUNCTION> <FIELDNAME>"
+msgstr "<CALCULATEDFUNCTION> <FIELDNAME>"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___96.string.text
+msgctxt "dbwizres.src#RID_DB_QUERY_WIZARD_START___96.string.text"
+msgid "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+msgstr "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___0.string.text
+msgid "Report Wizard"
+msgstr "Asistente d'Informes"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___3.string.text
+msgid "~Table"
+msgstr "~Tabla"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___4.string.text
+msgid "Colu~mns"
+msgstr "Colu~mnes"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___7.string.text
+msgid "Report_"
+msgstr "Estáu_"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___8.string.text
+msgid "- undefined -"
+msgstr "- non definío -"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___9.string.text
+msgid "~Fields in report"
+msgstr "Campos del informe"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___11.string.text
+msgctxt "dbwizres.src#RID_DB_REPORT_WIZARD_START___11.string.text"
+msgid "Grouping"
+msgstr "Agrupando"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___12.string.text
+msgid "Sort options"
+msgstr "Opciones d'orde"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___13.string.text
+msgid "Choose layout"
+msgstr "Composición"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___14.string.text
+msgctxt "dbwizres.src#RID_DB_REPORT_WIZARD_START___14.string.text"
+msgid "Create report"
+msgstr "Facer informe"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___15.string.text
+msgid "Layout of data"
+msgstr "Diseñu de datos"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___16.string.text
+msgid "Layout of headers and footers"
+msgstr "Diseñu de testeres y pies de páxina"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___19.string.text
+msgctxt "dbwizres.src#RID_DB_REPORT_WIZARD_START___19.string.text"
+msgid "Fields"
+msgstr "Campos"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___20.string.text
+msgid "~Sort by"
+msgstr "~Axeitar por"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___21.string.text
+msgid "T~hen by"
+msgstr "Dem~pués por"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___22.string.text
+msgid "Orientation"
+msgstr "Orientación"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___23.string.text
+msgid "Portrait"
+msgstr "Retratu"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___24.string.text
+msgid "Landscape"
+msgstr "Apaisáu"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___28.string.text
+msgid "Which fields do you want to have in your report?"
+msgstr "Campos del informe:"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___29.string.text
+msgid "Do you want to add grouping levels?"
+msgstr "¿Quies amestar dellos niveles d'agrupamientu?"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___30.string.text
+msgid "According to which fields do you want to sort the data?"
+msgstr "¿Por qué campos quies axeitar los datos?"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___31.string.text
+msgid "How do you want your report to look?"
+msgstr "Apariencia del informe:"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___32.string.text
+msgid "Decide how you want to proceed"
+msgstr "Escueyi l'aición a executar"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___33.string.text
+msgid "Title of report"
+msgstr "Títulu del informe"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___34.string.text
+msgid "Display report"
+msgstr "Amosar l'informe"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___35.string.text
+msgctxt "dbwizres.src#RID_DB_REPORT_WIZARD_START___35.string.text"
+msgid "Create report"
+msgstr "Crear un informe"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___36.string.text
+msgid "Ascending"
+msgstr "Ascendente"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___37.string.text
+msgid "Descending"
+msgstr "Descendente"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___40.string.text
+msgid "~Dynamic report"
+msgstr "~Informe dinámicu"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___41.string.text
+msgid "~Create report now"
+msgstr "Crear in~forme agora"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___42.string.text
+msgid "~Modify report layout"
+msgstr "~Camudar diseñu d'informe"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___43.string.text
+msgid "Static report"
+msgstr "Informe estáticu"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___44.string.text
+msgid "Save as"
+msgstr "Grabar como"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___50.string.text
+msgid "Groupings"
+msgstr "Agrupamientos"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___51.string.text
+msgid "Then b~y"
+msgstr "Dempués p~or"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___52.string.text
+msgid "~Then by"
+msgstr "Dem~pués por"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___53.string.text
+msgid "Asc~ending"
+msgstr "Ascendente"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___54.string.text
+msgid "Ascend~ing"
+msgstr "Ascendente"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___55.string.text
+msgid "Ascendin~g"
+msgstr "Ascenden~te"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___56.string.text
+msgctxt "dbwizres.src#RID_DB_REPORT_WIZARD_START___56.string.text"
+msgid "De~scending"
+msgstr "~Descendente"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___57.string.text
+msgid "Des~cending"
+msgstr "Des~cendente"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___58.string.text
+msgctxt "dbwizres.src#RID_DB_REPORT_WIZARD_START___58.string.text"
+msgid "De~scending"
+msgstr "De~scendente"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___60.string.text
+msgid "Binary fields cannot be displayed in the report."
+msgstr "Imposible amosar los campos binarios nel informe."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___61.string.text
+msgid "The table '<TABLENAME>' does not exist."
+msgstr "La tabla '<TABLENAME>' nun existe."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___62.string.text
+msgid "Creating Report..."
+msgstr "Creación del informe..."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___63.string.text
+msgid "Number of records inserted: <COUNT>"
+msgstr "Númberu de rexistros inxertaos : <COUNT>"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___64.string.text
+msgid "The form '<REPORTFORM>' does not exist."
+msgstr "El formulariu '<REPORTFORM>' nun existe."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___65.string.text
+msgid ""
+"The query with the statement <BR>'<STATEMENT>' <BR> could not be run. <BR> "
+"Check your data source."
+msgstr ""
+"Imposible executar la gueta cola espresión <BR>'<STATEMENT>' <BR> ! <BR> "
+"Verifica la fonte de los datos."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___66.string.text
+msgid ""
+"The following hidden control in the form '<REPORTFORM>' could not be read: "
+"'<CONTROLNAME>'."
+msgstr ""
+"Nun se pudo lleer el control siguiente, tapecíu nel formulariu "
+"'<REPORTFORM>':'<CONTROLNAME>'."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___67.string.text
+msgid "Importing data..."
+msgstr "Importando datos"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___68.string.text
+msgid "Labeling fields"
+msgstr "Etiquetando campos"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___69.string.text
+msgid "How do you want to label the fields?"
+msgstr "Triba d'etiqueta de campos:"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___70.string.text
+msgid "Label"
+msgstr "Etiqueta"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___71.string.text
+msgctxt "dbwizres.src#RID_DB_REPORT_WIZARD_START___71.string.text"
+msgid "Field"
+msgstr "Campu"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___72.string.text
+msgid ""
+"An error occurred in the wizard.<BR>The template '%PATH' could be "
+"erroneous.<BR>Either the required sections or tables do not exist or exist "
+"under the wrong name.<BR>See the Help for more detailed "
+"information.<BR>Please select another template."
+msgstr ""
+"Hebo un fallu nel asistente.<BR>El Modelu '%PATH' quiciabes tea "
+"toyíu.<BR>Les estayes o les tables que se necesiten nun existen o tienen "
+"nomes estremaos.<BR>Consulta l'ayuda pa información más detallada.<BR>Por "
+"favor, escueyi otru modelu."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___73.string.text
+msgid "There is an invalid user field in a table."
+msgstr "La tabla contien un campu d'usuariu inválidu."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___74.string.text
+msgid ""
+"The sort criterium '<FIELDNAME>' was chosen twice. Each criterium can only "
+"be chosen once."
+msgstr ""
+"El criteriu d'orde '<FIELDNAME>' escoyóse dos vegaes. Los criterios sólo se "
+"pueden escoyer una vegada."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___75.string.text
+msgid ""
+"Note: The dummy text will be replaced by data from the database when the "
+"report is created."
+msgstr ""
+"Nota: El testu d'exemplu camudaráse pol conteníu de la base datos cuando se "
+"termine l'informe."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___76.string.text
+msgid ""
+"A report '%REPORTNAME' already exists in the database. Please assign another "
+"name."
+msgstr ""
+"Un informe '%REPORTNAME' yá existe na base datos. Por favor, escueyi otru "
+"nome."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___78.string.text
+msgid "How do you want to proceed after creating the report?"
+msgstr "¿Quies siguir dempués cola creación del informe?"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___79.string.text
+msgid "What kind of report do you want to create?"
+msgstr "¿Qué triba d'informe quies crear?"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___80.string.text
+msgid "Tabular"
+msgstr "Tabular"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___81.string.text
+msgid "Columnar, single-column"
+msgstr "Columnar, una columna"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___82.string.text
+msgid "Columnar, two columns"
+msgstr "Columnar, dos columnes"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___83.string.text
+msgid "Columnar, three columns"
+msgstr "Columnar, trés columnes"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___84.string.text
+msgid "In blocks, labels left"
+msgstr "En bloques, etiquetes a manzorga"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___85.string.text
+msgid "In blocks, labels above"
+msgstr "En bloques - Etiquetes arriba"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___86.string.text
+msgctxt "dbwizres.src#RID_DB_REPORT_WIZARD_START___86.string.text"
+msgid "Title:"
+msgstr "Títulu:"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___87.string.text
+msgid "Author:"
+msgstr "Autor:"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___88.string.text
+msgctxt "dbwizres.src#RID_DB_REPORT_WIZARD_START___88.string.text"
+msgid "Date:"
+msgstr "Data:"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___89.string.text
+msgid "Page #page# of #count#"
+msgstr "Páxina #page# de #count#"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___90.string.text
+msgid "Page number:"
+msgstr "Númberu de páxina:"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___91.string.text
+msgid "Page count:"
+msgstr "Páxina actual:"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___92.string.text
+msgid "No valid report template was found."
+msgstr "Nun s'alcontró una plantía de reporte validu"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___1.string.text
+msgid "Table Wizard"
+msgstr "Asistente de Tabla"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___2.string.text
+msgid "Select fields"
+msgstr "Escoyer campos"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___3.string.text
+msgid "Set types and formats"
+msgstr "Definir les tribes y los formatos"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___4.string.text
+msgctxt "dbwizres.src#RID_DB_TABLE_WIZARD_START___4.string.text"
+msgid "Set primary key"
+msgstr "Afitar clave principal"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___5.string.text
+msgctxt "dbwizres.src#RID_DB_TABLE_WIZARD_START___5.string.text"
+msgid "Create table"
+msgstr "Facer tabla"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___8.string.text
+msgid "Select fields for your table"
+msgstr "Escoyer los campos pa incluyir na tabla"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___9.string.text
+msgid "Set field types and formats"
+msgstr "Definir les tribes de campos y los formatos"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___10.string.text
+msgctxt "dbwizres.src#RID_DB_TABLE_WIZARD_START___10.string.text"
+msgid "Set primary key"
+msgstr "Establecer clave principal"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___11.string.text
+msgctxt "dbwizres.src#RID_DB_TABLE_WIZARD_START___11.string.text"
+msgid "Create table"
+msgstr "Crear tabla"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___14.string.text
+msgid ""
+"This wizard helps you to create a table for your database. After selecting a "
+"table category and a sample table, choose the fields you want to include in "
+"your table. You can include fields from more than one sample table."
+msgstr ""
+"Esti asistente ayudaráte a crear una tabla pa la base datos. Darréu "
+"d'escoyer una categoría de tabla y una tabla de muestra, escueyi los campos "
+"que quies incluyir na tabla. Puedes incluyir campos de más d'una tabla de "
+"muestra."
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___15.string.text
+msgid "Ca~tegory"
+msgstr "Es~taya"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___16.string.text
+msgid "B~usiness"
+msgstr "N~egocios"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___17.string.text
+msgid "P~ersonal"
+msgstr "P~ersonal"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___18.string.text
+msgid "~Sample tables"
+msgstr "~Tables de muestra"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___19.string.text
+msgctxt "dbwizres.src#RID_DB_TABLE_WIZARD_START___19.string.text"
+msgid "A~vailable fields"
+msgstr "~Campos disponibles"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___20.string.text
+msgid "Field information"
+msgstr "Información sobre'l campu"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___21.string.text
+msgid "+"
+msgstr "+"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___22.string.text
+msgid "-"
+msgstr "-"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___23.string.text
+msgid "Field name"
+msgstr "Nome de campu"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___24.string.text
+msgid "Field type"
+msgstr "Tipu de campu"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___25.string.text
+msgid "~Selected fields"
+msgstr "~Campos escoyíos"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___26.string.text
+msgid ""
+"A primary key uniquely identifies each record in a database table. Primary "
+"keys ease the linking of information in separate tables, and it is "
+"recommended that you have a primary key in every table. Without a primary "
+"key, it will not be possible to enter data into this table."
+msgstr ""
+"Les claves primaries sirven pa identificar de manera única los rexistros "
+"nuna tabla de base datos. Les claves primaries facilitan l'asociación "
+"d'informaciónes entre delles tables. Recomendámoste una clave primaria en "
+"cada tabla. Ensin ella, nun vas poder meter datos nesa tabla."
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___27.string.text
+msgid "~Create a primary key"
+msgstr "~Crear una clave primaria"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___28.string.text
+msgid "~Automatically add a primary key"
+msgstr "~Amestar una clave principal automáticamente"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___29.string.text
+msgid "~Use an existing field as a primary key"
+msgstr "~Usar un campu existente como clave principal"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___30.string.text
+msgid "Define p~rimary key as a combination of several fields "
+msgstr "Definir clave p~rimaria como combinación de dellos campos "
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___31.string.text
+msgid "F~ieldname"
+msgstr "Nome del c~ampu"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___32.string.text
+msgid "~Primary key fields"
+msgstr "Ca~mpos de clave principal"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___33.string.text
+msgid "Auto ~value"
+msgstr "Auto~valor"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___34.string.text
+msgid "What do you want to name your table?"
+msgstr "¿Qué nome quies da-y a la tabla?"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___35.string.text
+msgid ""
+"Congratulations. You have entered all the information needed to create your "
+"table."
+msgstr "Norabona. Apurriste tola información que facía falta pa crear la tabla."
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___36.string.text
+msgctxt "dbwizres.src#RID_DB_TABLE_WIZARD_START___36.string.text"
+msgid "What do you want to do next?"
+msgstr "¿Qué quies facer a continuación?"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___37.string.text
+msgid "Modify the table design"
+msgstr "Camudar el diseñu de la tabla"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___38.string.text
+msgid "Insert data immediately"
+msgstr "Inxertar datos darréu"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___39.string.text
+msgid "C~reate a form based on this table"
+msgstr "C~rear un formulario basáu nesta tabla"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___40.string.text
+msgid "The table you have created could not be opened."
+msgstr "Nun se pudo abrir la tabla que creeste."
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___41.string.text
+msgid ""
+"The table name '%TABLENAME' contains a character ('%SPECIALCHAR') that might "
+"not be supported by the database."
+msgstr ""
+"El nome de tabla '%TABLENAME' contién un caráuter ('%SPECIALCHAR') que puede "
+"nun ser compatible cola base datos."
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___42.string.text
+msgid ""
+"The field name '%FIELDNAME' contains a special character ('%SPECIALCHAR') "
+"that might not be supported by the database."
+msgstr ""
+"El nome de tabla '%FIELDNAME' contién un caráuter especial('%SPECIALCHAR') "
+"qu'a lo meyor, nun ye compatible cola base datos."
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___43.string.text
+msgctxt "dbwizres.src#RID_DB_TABLE_WIZARD_START___43.string.text"
+msgid "Field"
+msgstr "Campu"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___44.string.text
+msgid "MyTable"
+msgstr "MyTable"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___45.string.text
+msgid "Add a Field"
+msgstr "Amestar un campu"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___46.string.text
+msgid "Remove the selected Field"
+msgstr "Desaniciar el campu escoyíu"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___47.string.text
+msgid ""
+"The field cannot be inserted because this would exceed the maximum number of "
+"%COUNT possible fields in the database table"
+msgstr ""
+"El campu nun se pudo inxertar porque supera el máximu de %COUNT campos "
+"permitíos na tabla de la base datos"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___48.string.text
+msgid ""
+"The name '%TABLENAME' already exists.\n"
+"Please enter another name."
+msgstr ""
+"El nome '%TABLENAME' yá existe.\n"
+"Especifica otru nome."
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___49.string.text
+msgid "Catalog of the table"
+msgstr "Catálogu de la tabla"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___50.string.text
+msgid "Schema of the table"
+msgstr "Esquema de la tabla"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___51.string.text
+msgid "The field '%FIELDNAME' already exists."
+msgstr "El campu '%FIELDNAME' yá existe."
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___1.string.text
+msgid "Letter Wizard"
+msgstr "Asistente para cartes"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___2.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___2.string.text"
+msgid "Label9"
+msgstr "Etiqueta9"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___3.string.text
+msgid "~Business letter"
+msgstr "~Carta comercial"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___4.string.text
+msgid "~Formal personal letter"
+msgstr "~Carta personal formal"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___5.string.text
+msgid "~Personal letter"
+msgstr "~Carta personal"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___6.string.text
+msgid "~Use letterhead paper with pre-printed elements"
+msgstr "~Usar papel con membrete con elementos impresos"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___7.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___7.string.text"
+msgid "~Logo"
+msgstr "~Logotipu"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___8.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___8.string.text"
+msgid "Return address"
+msgstr "Remite"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___9.string.text
+msgid "~Include footer"
+msgstr "~Incluyir pie de páxina"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___10.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___10.string.text"
+msgid "~Return address in envelope window"
+msgstr "~Remite en ventana de sobre"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___11.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___11.string.text"
+msgid "~Logo"
+msgstr "~Logotipu"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___12.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___12.string.text"
+msgid "~Return address in envelope window"
+msgstr "~Remite en ventana de sobre"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___13.string.text
+msgid "Letter Signs"
+msgstr "Signos de lletres"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___14.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___14.string.text"
+msgid "S~ubject line"
+msgstr "~Asuntu"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___15.string.text
+msgid "Salu~tation"
+msgstr "Salu~du"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___16.string.text
+msgid "Fold ~marks"
+msgstr "~Marques de pliegues"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___17.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___17.string.text"
+msgid "~Complimentary close"
+msgstr "~Fras de despedida"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___18.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___18.string.text"
+msgid "~Footer"
+msgstr "~Pie de páxina"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___19.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___19.string.text"
+msgid "~Use user data for return address"
+msgstr "~Usar datos del usuariu pa remite"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___20.string.text
+msgid "~New sender address:"
+msgstr "~Nueva dirección del remitente:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___21.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___21.string.text"
+msgid "Use placeholders for ~recipient's address"
+msgstr "Usar los marcadores de posición pa la direición del ~destinatariu"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___22.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___22.string.text"
+msgid "Use address database for ~mail merge"
+msgstr "Usa la base datos de direiciones pa ~combinar correspondencia"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___23.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___23.string.text"
+msgid "Include ~only on second and following pages"
+msgstr "Incluyir ~sólo na segunda páxina y siguientes"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___24.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___24.string.text"
+msgid "~Include page number"
+msgstr "~Incluyir númberu de páxina"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___25.string.text
+msgid "Letter Template"
+msgstr "Plantía de carta"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___26.string.text
+msgid "Create a ~letter from this template"
+msgstr "Crear una ~carta a partir d'esta plantía"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___27.string.text
+msgid "Make ~manual changes to this letter template"
+msgstr "Facer ~modificaciones manuales nesta plantía pa carta"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___28.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___28.string.text"
+msgid "Page design"
+msgstr "Diseñu de páxina"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___29.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___29.string.text"
+msgid "Page design"
+msgstr "Diseñu de páxina"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___30.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___30.string.text"
+msgid "Page design"
+msgstr "Diseñu de páxina"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___31.string.text
+msgid ""
+"This wizard helps you to create a letter template. You can then use the "
+"template as the basis for writing letters as often as desired."
+msgstr ""
+"Esti asistente va ayudate a crear una plantía pa carta. Puedes usar la "
+"plantía pa escribir cartes cuando te pete."
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___32.string.text
+msgid "~Height:"
+msgstr "~Altor:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___33.string.text
+msgid "~Width:"
+msgstr "~Anchor:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___34.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___34.string.text"
+msgid "S~pacing to left margin:"
+msgstr "Es~paciu en marxe izquierdu:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___35.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___35.string.text"
+msgid "Spacing ~to top margin:"
+msgstr "Es~paciu en marxe cimeru:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___36.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___36.string.text"
+msgid "Height:"
+msgstr "Altor:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___37.string.text
+msgid "Width:"
+msgstr "Anchor:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___38.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___38.string.text"
+msgid "S~pacing to left margin:"
+msgstr "Es~paciu en marxe izquierdu:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___39.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___39.string.text"
+msgid "Spacing ~to top margin:"
+msgstr "Es~paciu en marxe cimeru:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___40.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___40.string.text"
+msgid "Height:"
+msgstr "Altor:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___41.string.text
+msgid "Use a typical letter format for this country:"
+msgstr "Usa un formatu de carta típicu del país:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___42.string.text
+msgid "Sender's address"
+msgstr "Direición del remitente"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___43.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___43.string.text"
+msgid "Name:"
+msgstr "Nome:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___44.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___44.string.text"
+msgid "Street:"
+msgstr "Cai:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___45.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___45.string.text"
+msgid "ZIP code/State/City:"
+msgstr "Códigu postal/Estáu/Ciudá:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___46.string.text
+msgid "Recipient's address"
+msgstr "Señes del destinatariu"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___47.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___47.string.text"
+msgid "Footer"
+msgstr "Pie de páxina"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___48.string.text
+msgid ""
+"This wizard creates a letter template which enables you to create multiple "
+"letters with the same layout and settings."
+msgstr ""
+"Esti asistente va ayudate a crear una plantía pa cartes, que permite crear "
+"delles cartes col mesmu diseñu y la mesma configuración."
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___49.string.text
+msgid ""
+"To create another new letter out of the template just navigate to the "
+"template location and double-click it."
+msgstr ""
+"Pa crear otra carta dende la plantía, vete al allugamientu de la plantía y "
+"calca dos vegaes nella."
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___50.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___50.string.text"
+msgid "Template name:"
+msgstr "Nome de la plantía:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___51.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___51.string.text"
+msgid "Location and file name:"
+msgstr "Allugamientu y nome del ficheru:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___52.string.text
+msgid "How do you want to proceed?"
+msgstr "¿Cómo quies siguir?"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___53.string.text
+msgid "Please choose the type of letter and page design"
+msgstr "Escueyi una triba de carta y el diseñu de páxina"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___54.string.text
+msgid "Select the items to be printed"
+msgstr "Escueyi los elementos que se tienen qu'emprentar"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___55.string.text
+msgid "Specify items already on your letterhead paper"
+msgstr "Especifica elementos que yá tán nel to papel timbráu"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___56.string.text
+msgid "Specify the sender and recipient information"
+msgstr "Especificar la información del remitente y el destinatariu"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___57.string.text
+msgid "Fill in the information you would like in the footer"
+msgstr "Rellenar la información que se quier incluyir nel pie de páxina"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___58.string.text
+msgid "Please specify last settings"
+msgstr "Especifica la última configuración"
+
+#: dbwizres.src#RID_LETTERWIZARDSALUTATION_START___1.string.text
+msgid "To Whom it May Concern"
+msgstr "A quien-y correspuenda"
+
+#: dbwizres.src#RID_LETTERWIZARDSALUTATION_START___2.string.text
+msgid "Dear Sir or Madam"
+msgstr "Estimáu/ada Sr/a."
+
+#: dbwizres.src#RID_LETTERWIZARDSALUTATION_START___3.string.text
+msgid "Hello"
+msgstr "Hola"
+
+#: dbwizres.src#RID_LETTERWIZARDGREETING_START___1.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDGREETING_START___1.string.text"
+msgid "Sincerely"
+msgstr "Candialmente"
+
+#: dbwizres.src#RID_LETTERWIZARDGREETING_START___2.string.text
+msgid "Best regards"
+msgstr "Saludos"
+
+#: dbwizres.src#RID_LETTERWIZARDGREETING_START___3.string.text
+msgid "Cheers"
+msgstr "Un saludu"
+
+#: dbwizres.src#RID_LETTERWIZARDROADMAP_START___1.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDROADMAP_START___1.string.text"
+msgid "Page design"
+msgstr "Diseñu de páxina"
+
+#: dbwizres.src#RID_LETTERWIZARDROADMAP_START___2.string.text
+msgid "Letterhead layout"
+msgstr "Diseñu de membrete"
+
+#: dbwizres.src#RID_LETTERWIZARDROADMAP_START___3.string.text
+msgid "Printed items"
+msgstr "Elementos impresos"
+
+#: dbwizres.src#RID_LETTERWIZARDROADMAP_START___4.string.text
+msgid "Recipient and sender"
+msgstr "Destinatariu y remitente"
+
+#: dbwizres.src#RID_LETTERWIZARDROADMAP_START___5.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDROADMAP_START___5.string.text"
+msgid "Footer"
+msgstr "Pie de páxina"
+
+#: dbwizres.src#RID_LETTERWIZARDROADMAP_START___6.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDROADMAP_START___6.string.text"
+msgid "Name and location"
+msgstr "Nome y allugamientu"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___1.string.text
+msgid "Fax Wizard"
+msgstr "Asistente pa faxes"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___2.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___2.string.text"
+msgid "Label9"
+msgstr "Etiqueta9"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___3.string.text
+msgid "~Business Fax"
+msgstr "Fax del ~trabayu"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___4.string.text
+msgid "~Personal Fax"
+msgstr "Fax ~personal"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___5.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___5.string.text"
+msgid "~Logo"
+msgstr "~Logotipu"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___6.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___6.string.text"
+msgid "S~ubject line"
+msgstr "~Asuntu"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___7.string.text
+msgid "S~alutation"
+msgstr "~Saludu"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___8.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___8.string.text"
+msgid "~Complimentary close"
+msgstr "~Frase de despidida"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___9.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___9.string.text"
+msgid "~Footer"
+msgstr "~Pie de páxina"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___10.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___10.string.text"
+msgid "~Use user data for return address"
+msgstr "~Usar datos del usuariu pal remite"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___11.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___11.string.text"
+msgid "~New return address"
+msgstr "~Nuevu remite"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___12.string.text
+msgid "My Fax Template"
+msgstr "La mio plantía pa fax"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___13.string.text
+msgid "Create a ~fax from this template"
+msgstr "Crear un ~fax a partir d'esta plantía"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___14.string.text
+msgid "Make ~manual changes to this fax template"
+msgstr "Facer ~modificaciones manuales nesta plantía pa fax"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___15.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___15.string.text"
+msgid "Page design"
+msgstr "Diseñu de páxina"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___16.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___16.string.text"
+msgid "Page design"
+msgstr "Diseñu de páxina"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___17.string.text
+msgid ""
+"This wizard helps you to create a fax template. The template can then be "
+"used to create a fax whenever needed."
+msgstr ""
+"Esti asistente va ayudate a crear una plantía pa fax. La plantía puede usase "
+"pa crear un fax cuando lo necesites."
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___18.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___18.string.text"
+msgid "Return address"
+msgstr "Remite"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___19.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___19.string.text"
+msgid "Name:"
+msgstr "Nome:"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___20.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___20.string.text"
+msgid "Street:"
+msgstr "Cai:"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___21.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___21.string.text"
+msgid "ZIP code/State/City:"
+msgstr "Códigu postal/Estáu/Ciudá:"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___22.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___22.string.text"
+msgid "Footer"
+msgstr "Pie de páxina"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___23.string.text
+msgid ""
+"This wizard creates a fax template which enables you to create multiple "
+"faxes with the same layout and settings."
+msgstr ""
+"Esti asistente ayúdate a crear una platía pa fax, que permite crear dellos "
+"faxes col mesmu diseñu y la mesma configuración."
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___24.string.text
+msgid ""
+"To create another new fax out of the template, go to the location where you "
+"saved the template and double-click the file."
+msgstr ""
+"Pa crear un fax dende la plantía, vete a l'allugamientu nel que grabeste la "
+"plantía y calca dos vegaes nel ficheru."
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___25.string.text
+msgid "Template Name:"
+msgstr "Nome de la plantía:"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___26.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___26.string.text"
+msgid "Location and file name:"
+msgstr "Allugamientu y nome del ficheru:"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___27.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___27.string.text"
+msgid "What do you want to do next?"
+msgstr "¿Que quies facer darréu?"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___28.string.text
+msgid "Choose the type of fax and a page design"
+msgstr "Escoyer la triba de fax y el diseñu de la páxina"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___29.string.text
+msgid "Select items to include in the fax template"
+msgstr "Escoyer los elementos pa incluyir na plantía de fax."
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___30.string.text
+msgid "Specify sender and recipient information"
+msgstr "Especificar la información del remitente y el destinatariu"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___31.string.text
+msgid "Enter text for the footer"
+msgstr "Poner testu pal pie de páxina"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___32.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___32.string.text"
+msgid "Choose a name and save the template"
+msgstr "Escoyer un nome y grabar la plantía"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___33.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___33.string.text"
+msgid "Include ~only on second and following pages"
+msgstr "Incluyir ~sólo na segunda páxina y siguientes"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___34.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___34.string.text"
+msgid "~Include page number"
+msgstr "~Incluyir númberu de páxina"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___35.string.text
+msgid "~Date"
+msgstr "~Data"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___36.string.text
+msgid "~Type of message"
+msgstr "~Triba de mensaxe"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___37.string.text
+msgid "Fax Number:"
+msgstr "Númberu de fax:"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___38.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___38.string.text"
+msgid "Use placeholders for ~recipient's address"
+msgstr "Usar los marcadores de posición pa la direición del ~destinatariu"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___39.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___39.string.text"
+msgid "Use address database for ~mail merge"
+msgstr "Usa la base datos de direiciones pa ~combinar correspondencia"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___40.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___40.string.text"
+msgid "~New return address"
+msgstr "~Nuevu remite"
+
+#: dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START___1.string.text
+msgid "Important Information!"
+msgstr "¡Información importante!"
+
+#: dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START___2.string.text
+msgid "For your information"
+msgstr "Pa la to información"
+
+#: dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START___3.string.text
+msgid "News!"
+msgstr "Noticies"
+
+#: dbwizres.src#RID_FAXWIZARDSALUTATION_START___1.string.text
+msgid "To whom it may concern,"
+msgstr "A quien correspuenda:"
+
+#: dbwizres.src#RID_FAXWIZARDSALUTATION_START___2.string.text
+msgid "Dear Sir or Madam,"
+msgstr "Queríu/ida Señor/Señora,"
+
+#: dbwizres.src#RID_FAXWIZARDSALUTATION_START___3.string.text
+msgid "Hello,"
+msgstr "Hello,"
+
+#: dbwizres.src#RID_FAXWIZARDSALUTATION_START___4.string.text
+msgid "Hi,"
+msgstr "Hola,"
+
+#: dbwizres.src#RID_FAXWIZARDGREETING_START___1.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDGREETING_START___1.string.text"
+msgid "Sincerely"
+msgstr "Candialmente"
+
+#: dbwizres.src#RID_FAXWIZARDGREETING_START___2.string.text
+msgid "Yours faithfully"
+msgstr "Un saludu candial"
+
+#: dbwizres.src#RID_FAXWIZARDGREETING_START___3.string.text
+msgid "Regards"
+msgstr "Saludos"
+
+#: dbwizres.src#RID_FAXWIZARDGREETING_START___4.string.text
+msgid "Love"
+msgstr "Con cariñu"
+
+#: dbwizres.src#RID_FAXWIZARDROADMAP_START___1.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDROADMAP_START___1.string.text"
+msgid "Page design"
+msgstr "Diseñu de páxina"
+
+#: dbwizres.src#RID_FAXWIZARDROADMAP_START___2.string.text
+msgid "Items to include"
+msgstr "Elementos para incluyir"
+
+#: dbwizres.src#RID_FAXWIZARDROADMAP_START___3.string.text
+msgid "Sender and Recipient"
+msgstr "Remitente y destinatariu"
+
+#: dbwizres.src#RID_FAXWIZARDROADMAP_START___4.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDROADMAP_START___4.string.text"
+msgid "Footer"
+msgstr "Pie de páxina"
+
+#: dbwizres.src#RID_FAXWIZARDROADMAP_START___5.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDROADMAP_START___5.string.text"
+msgid "Name and location"
+msgstr "Nome y allugamientu"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__1.string.text
+msgid "Web Wizard"
+msgstr "Asistente pa Web"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__2.string.text
+msgid ""
+"This Web Wizard is to aid you in publishing documents on the Internet.\n"
+"\n"
+"It will convert the documents so that they can be viewed by a web browser. "
+"In addition, it will generate a Table of Contents page with links for easy "
+"access to the documents. The Web Wizard will also allow you to customize the "
+"design and layout of your web site.\n"
+"\n"
+"You will be able to keep the documents you have published on the web up-to-"
+"date and add or remove documents at any time."
+msgstr ""
+"Esti Asistente pa Web va ayudate a asoleyar documentos n'Internet.\n"
+"\n"
+"Convierte documentos pa que se puedan ver n'un restolador Web. Amás, xenera "
+"una páxina d'índiz de conteníu con enllaces que permiten acceder fácilmente "
+"a los documentos. L'Asistente pa Web tamién permite personalizar el diseñu "
+"de la páxina Web.\n"
+"\n"
+"Vas poder caltener anovaos los documentos que publiques na Web, y amestar o "
+"desaniciar documentos cuando quieras."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__4.string.text
+msgid "~Delete"
+msgstr "~Desaniciar"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__5.string.text
+msgid "Introduction"
+msgstr "Introducción"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__6.string.text
+msgid "Select the documents you want to publish"
+msgstr "Escueyi los documentos que quies asoleyar"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__8.string.text
+msgid "Document information "
+msgstr "Información del documentu "
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__9.string.text
+msgid "~Title:"
+msgstr "~Títulu:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__10.string.text
+msgid "~Summary: "
+msgstr "~Resume: "
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__11.string.text
+msgid "Au~thor:"
+msgstr "Au~tor:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__12.string.text
+msgid "~Export to file format:"
+msgstr "~Esportar a formatu de ficheru:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__13.string.text
+msgid "Enter general information for your web site"
+msgstr "Escribi la información xeneral pa la páxina web"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__14.string.text
+msgctxt "dbwizres.src#RID_WEBWIZARDDIALOG_START__14.string.text"
+msgid "Title:"
+msgstr "Títulu:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__16.string.text
+msgid "Description:"
+msgstr "Descripción:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__18.string.text
+msgid "Created:"
+msgstr "Creáu:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__20.string.text
+msgid "E-mail:"
+msgstr "Corréu:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__21.string.text
+msgid "Copyright notice:"
+msgstr "Avisu de copyright:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__22.string.text
+msgid "Modified:"
+msgstr "Modificáu:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__24.string.text
+msgid "~Preview"
+msgstr "~Vista previa"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__25.string.text
+msgid "Where do you want to publish your web site?"
+msgstr "¿Ónde quies asoleyar la páxina Web?"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__26.string.text
+msgid "Publish the new web site:"
+msgstr "Asoleya la páxina Web nueva:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__27.string.text
+msgid "To a ~local folder"
+msgstr "Nuna carpeta ~llocal"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__28.string.text
+msgctxt "dbwizres.src#RID_WEBWIZARDDIALOG_START__28.string.text"
+msgid "..."
+msgstr "..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__29.string.text
+msgid "To a ~web server via FTP"
+msgstr "Nun sirvidor ~web vía FTP"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__31.string.text
+msgid "~Configure..."
+msgstr "~Configurar..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__32.string.text
+msgid "To a ZIP ~archive"
+msgstr "Nun ~ficheru ZIP"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__33.string.text
+msgctxt "dbwizres.src#RID_WEBWIZARDDIALOG_START__33.string.text"
+msgid "..."
+msgstr "..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__34.string.text
+msgid "~Save settings (recommended)"
+msgstr "~Grabar configuración (recomendáu)"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__35.string.text
+msgid "Save ~as:"
+msgstr "Grabar ~como:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__36.string.text
+msgid "~Choose settings for the Web Wizard"
+msgstr "~Escoyer configuración del Asistente pa páxines web"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__37.string.text
+msgid "Web site content "
+msgstr "Conteníu de la páxina Web "
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__38.string.text
+msgid "~Add..."
+msgstr "~Amestar..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__39.string.text
+msgid "Remo~ve"
+msgstr "Desa~niciar"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__40.string.text
+msgid "Choose a layout for the table of contents of your web site"
+msgstr "Escueyi un diseñu pal sumariu del sitiu web"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__41.string.text
+msgid "Select a style for the table of contents page"
+msgstr "Escueyi un estilu pa la páxina d'índiz de conteníu"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__42.string.text
+msgid "~Style:"
+msgstr "~Estilu:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__48.string.text
+msgid "~Layouts: "
+msgstr "~Diseños: "
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__50.string.text
+msgid "~Description"
+msgstr "~Descripción"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__51.string.text
+msgid "~Author"
+msgstr "~Autor"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__52.string.text
+msgid "Cr~eation date"
+msgstr "Data de c~reación"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__53.string.text
+msgid "~Last change date"
+msgstr "~Data de la última modificación"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__54.string.text
+msgid "~File name"
+msgstr "Nome del ~ficheru"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__55.string.text
+msgid "File forma~t"
+msgstr "Forma~tu de ficheru"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__56.string.text
+msgid "File format ~icon"
+msgstr "~Iconu de formatu de ficheru"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__57.string.text
+msgid "Number ~of pages"
+msgstr "Nú~mberu de páxines"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__58.string.text
+msgid "~Size in KB"
+msgstr "~Tamañu en KB"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__59.string.text
+msgid "Click 'Preview' to see a preview in your browser:"
+msgstr "Calca en 'Vista previa' pa obtener una vista previa nel restolador:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__60.string.text
+msgid "Customize the selected layout"
+msgstr "Personalizar el diseñu escoyíu"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__61.string.text
+msgid ""
+"Include the following information for each document in the table of "
+"contents:"
+msgstr "Incluyir la información siguiente en tolos documentos del sumariu:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__62.string.text
+msgid "Optimize the layout for screen resolution:"
+msgstr "Optimizar el diseñu pa la resolución de pantalla:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__64.string.text
+msgid "~640x480"
+msgstr "~640x480"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__65.string.text
+msgid "~800x600"
+msgstr "~800x600"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__66.string.text
+msgid "~1024x768"
+msgstr "~1024x768"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__70.string.text
+msgid "Generating Your Web Site"
+msgstr "Xenerando la to Páxina Web"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__71.string.text
+msgid "%START - %END/%TOTAL"
+msgstr "%START - %END/%TOTAL"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__72.string.text
+msgid "myWebsite"
+msgstr "elmiositiuWeb"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__73.string.text
+msgid "FTP target '%FILENAME' is a file."
+msgstr "El destín del FTP '%FILENAME' ye un ficheru."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__74.string.text
+msgid "The local target '%FILENAME' is a file."
+msgstr "El destín llocal '%FILENAME' ye un ficheru."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__75.string.text
+msgid ""
+"The ZIP target '%FILENAME' already exists. Do you want to overwrite the "
+"existing target? "
+msgstr ""
+"El destín ZIP '%FILENAME' yá existe. ¿Quies sobrescribir el destín "
+"existente? "
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__76.string.text
+msgid ""
+"The FTP target directory '%FILENAME' is not empty. Some files might be "
+"overwritten. Do you want to continue?"
+msgstr ""
+"El direutoriu de destín del FTP '%FILENAME' nun ta vaciu. Puede ser que se "
+"sobrescriban dellos ficheros. ¿Quies siguir?"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__77.string.text
+msgid ""
+"The local target directory '%FILENAME' is not empty. Some files might be "
+"overwritten. Do you want to continue?"
+msgstr ""
+"El direutoriu de destín llocal '%FILENAME' nun ta vaciu. Puede ser que se "
+"sobrescriban dellos ficheros. ¿Quies siguir?"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__78.string.text
+msgid ""
+"Settings already exist under the given name. Do you want to overwrite the "
+"existing settings? "
+msgstr ""
+"Yá hai opciones configuraes pal nome apurríu ¿Quies sobrescribir les "
+"opciones de configuración existentes? "
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__79.string.text
+msgid "Exporting documents..."
+msgstr "Esportando documentos..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__80.string.text
+msgid "Preparing export..."
+msgstr "Preparando esportación..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__81.string.text
+msgid "Copying layout files..."
+msgstr "Copiando ficheros de diseñu..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__82.string.text
+msgid "Preparing table of contents generation..."
+msgstr "Preparando la xeneración del sumariu..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__83.string.text
+msgid "Generating table of contents..."
+msgstr "Xenerando l'índiz de conteníu..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__84.string.text
+msgid "Initializing..."
+msgstr "Entamando..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__86.string.text
+msgid "Preparing to publish..."
+msgstr "Preparando p'asoleyar..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__87.string.text
+msgid "Publishing to local directory..."
+msgstr "Asoleyando nel direutoriu llocal..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__88.string.text
+msgid "Publishing to FTP destination..."
+msgstr "Asoleyando en destín FTP..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__89.string.text
+msgid "Publishing to a ZIP archive..."
+msgstr "Asoleyando nel ficheru ZIP..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START___90.string.text
+msgid "Finishing..."
+msgstr "Acabando..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START___94.string.text
+msgid "Graphic files"
+msgstr "Fichero gráficos"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START___95.string.text
+msgid "All files"
+msgstr "Tolos Ficheros"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START___96.string.text
+msgid "~ZIP archive files"
+msgstr "Ficheros histó~ricos ZIP"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START___98.string.text
+msgid "Background images"
+msgstr "Imáxenes de fondu"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START___99.string.text
+msgid "Choose a background image: "
+msgstr "Escueyi una imaxe de fondu: "
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START___100.string.text
+msgid "Icon sets"
+msgstr "Conxuntos d'iconos"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START___101.string.text
+msgid "Choose an icon set:"
+msgstr "Escueyi un conxuntu d'iconos:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__102.string.text
+msgid "Other..."
+msgstr "Otru..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__103.string.text
+msgid "None"
+msgstr "Dengún"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__104.string.text
+msgid "Your web site was created successfully into: %FILENAME"
+msgstr "La páxina web creóse correchamente en: %FILENAME"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__105.string.text
+msgid "One or more errors occurred when generating the web site."
+msgstr "Hebo ún o más fallos al xenerar la páxina web."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__106.string.text
+msgid "An error occurred while generating the table of contents page(s). "
+msgstr "Hebo un fallu al xenerar la(es) páxina(es) del sumariu. "
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__107.string.text
+msgid "An error occurred while copying the layout files. "
+msgstr "Hebo un fallu al copiar los ficheros de diseñu. "
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__108.string.text
+msgid ""
+"An error occurred while gathering document information for '%FILENAME'. "
+msgstr "Hebo un fallu al atropar información del documentu pa '%FILENAME'. "
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__109.string.text
+msgid "An error occurred while exporting the document '%FILENAME'."
+msgstr "Hebo un fallu al esportar el documentu  '%FILENAME'."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__110.string.text
+msgid "An error occurred while creating a directory for exporting '%FILENAME'."
+msgstr "Hebo un fallu al crear un direutoriu pa esportar '%FILENAME'."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__111.string.text
+msgid "A security error occurred while exporting the document '%FILENAME'."
+msgstr "Hebo un fallu de seguridá al esportar el documentu '%FILENAME'."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__112.string.text
+msgid ""
+"An input/output error occurred while exporting the document '%FILENAME'."
+msgstr "Hebo un fallu d'entrada/salida al esportar el documentu '%FILENAME'."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__113.string.text
+msgid "An error occurred while copying media files to the temporary directory."
+msgstr "Hebo un fallu al copiar los ficheros de medios nel direutoriu temporal."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__114.string.text
+msgid "The web site could not be copied to the following destination: %URL"
+msgstr "Nun se pudo copiar la páxina web nel destín: %URL"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__115.string.text
+msgid "An unexpected error occurred: %ERROR"
+msgstr "Hebo un fallu inesperáu: %ERROR"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__116.string.text
+msgid "An unexpected error occurred while validating the file: '%FILENAME'"
+msgstr "Hebo un fallu inesperáu al validar el ficheru: '%FILENAME'"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__117.string.text
+msgid "%FILENAME' is a folder."
+msgstr "%FILENAME' ye una carpeta."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__118.string.text
+msgid "Loading Web Wizard Settings..."
+msgstr "Cargar configuración del Asistente pa páxines web..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__119.string.text
+msgid "An unexpected error occurred."
+msgstr "Hebo un fallu inesperáu."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__120.string.text
+msgid "Validating documents..."
+msgstr "Validando documentos..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__121.string.text
+msgid "My Archive"
+msgstr "El Mio Ficheru"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__122.string.text
+msgid "Introduction "
+msgstr "Introducción "
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__123.string.text
+msgid "Documents "
+msgstr "Documentos "
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__124.string.text
+msgid "Main layout"
+msgstr "Diseñu principal"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__125.string.text
+msgid "Layout details"
+msgstr "Detalles de diseñu"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__126.string.text
+msgid "Style"
+msgstr "Estilu"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__127.string.text
+msgid "Web site information"
+msgstr "Información de la páxina Web"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__128.string.text
+msgid "Preview"
+msgstr "Vista Previa"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__130.string.text
+msgid ""
+"The selected settings will be deleted.\n"
+"\n"
+"Do you really want to delete these settings? "
+msgstr ""
+"Desaniciaránse les opciones de configuración escoyíes.\n"
+"\n"
+"¿Confirmes que quies desaniciales? "
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__131.string.text
+msgid "%NUMBER pages"
+msgstr "%NUMBER páxines"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__132.string.text
+msgid "%NUMBER slides"
+msgstr "%NUMBER diapositives"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__133.string.text
+msgid "Created: %DATE"
+msgstr "Creáu'l: %DATE"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__134.string.text
+msgid "Last modified: %DATE"
+msgstr "Camudáu'l: %DATE"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__135.string.text
+msgid "Web Wizard Settings"
+msgstr "Configuración del Asistente pa Web"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__136.string.text
+msgid "Background image:"
+msgstr "Imaxe de fondu:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__137.string.text
+msgid "Icon set:"
+msgstr "Conxuntu d'iconos:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__138.string.text
+msgid "The icon set is used for presentations in HTML format."
+msgstr "El conxuntu d'iconos úsase pa presentaciones en formatu HTML."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__139.string.text
+msgid "HTML Metadata"
+msgstr "Metadatos HTML"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__140.string.text
+msgctxt "dbwizres.src#RID_WEBWIZARDDIALOG_START__140.string.text"
+msgid "Choose..."
+msgstr "Escoyer..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__141.string.text
+msgctxt "dbwizres.src#RID_WEBWIZARDDIALOG_START__141.string.text"
+msgid "Choose..."
+msgstr "Escoyer..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__142.string.text
+msgid "<default>"
+msgstr "<predetermináu>"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__143.string.text
+msgid "Publishing via FTP Proxy is not supported."
+msgstr "Nun s'almite l'asoleyamientu per aciu d'un sirvidor proxy FTP."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__144.string.text
+msgid "<no background image>"
+msgstr "<denguna imaxe de fondu>"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__145.string.text
+msgid "<no icon set>"
+msgstr "<dengún conxuntu d'iconos>"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__146.string.text
+msgid "The FTP directory '%FILENAME' could not be created."
+msgstr "Nun se pudo crear el direutoriu FTP '%FILENAME'."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__147.string.text
+msgid ""
+"The FTP directory '%FILENAME' does not exist. \n"
+"Create the directory now?"
+msgstr ""
+"El direutoriu FTP '%FILENAME' nun existe. \n"
+"¿Quies crealu agora?"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__148.string.text
+msgid ""
+"The Zip file '%FILENAME' cannot be created: a directory of the same name "
+"already exists."
+msgstr ""
+"El ficheru Zip '%FILENAME' nun se puede crear: yá existe un direutoriu col "
+"mesmu nome."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__149.string.text
+msgid ""
+"The local directory '%FILENAME' cannot be created. \n"
+"Please check your write-access."
+msgstr ""
+"El direutoriu llocal '%FILENAME' nun se puede crear. \n"
+"Comprueba que tienes permisu d'escritura."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__150.string.text
+msgid ""
+"The local directory '%FILENAME' does not exist. \n"
+"Create the directory now?"
+msgstr ""
+"El direutoriu llocal '%FILENAME' nun existe.\n"
+"¿Quies crealu agora?"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__151.string.text
+msgid "Size: %NUMBERKB"
+msgstr "Tamañu: %NUMBERKB"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__152.string.text
+msgid "File not found. Would you like to specify a new file location?"
+msgstr "Nun s'atopa'l ficheru. ¿Quies especificar otru allugamientu de ficheru?"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__0.string.text
+msgid "FTP Connection"
+msgstr "Conexón FTP"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__1.string.text
+msgid "~User name:"
+msgstr "~Nome d'usuariu:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__2.string.text
+msgid "~Password:"
+msgstr "~Contraseña:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__3.string.text
+msgid "Connect"
+msgstr "Coneutar"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__4.string.text
+msgid "1. Enter FTP connection information."
+msgstr "1. Especifica la información de conexón FTP."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__5.string.text
+msgid "~Server name or IP address:"
+msgstr "~Nome de sirvidor o direición IP:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__6.string.text
+msgid "2. Connect to the server."
+msgstr "2. Conecta'l sirvidor."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__7.string.text
+msgid "3. ~Choose a remote directory (optional)."
+msgstr "3. ~Escueyi un direutoriu remotu (opcional)."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__8.string.text
+msgctxt "dbwizres.src#RID_WEBWIZARDDIALOG_FTP__8.string.text"
+msgid "..."
+msgstr "..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__9.string.text
+msgid "Connection status is unknown"
+msgstr "Nun se conoz l'estáu de la conexón"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__10.string.text
+msgid "Connection was established successfully"
+msgstr "La conexón establecióse correchamente"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__11.string.text
+msgid "Username or password is wrong"
+msgstr "El nome d'usuariu o la contraseña nun valen"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__12.string.text
+msgid "Could not resolve server name"
+msgstr "Nun se pudo resolver el nome del sirvidor"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__13.string.text
+msgid "You do not have sufficient user rights"
+msgstr "Nun tienes drechos abondos"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__14.string.text
+msgid "Cannot connect to server"
+msgstr "Nun se puede coneutar col sirvidor"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__15.string.text
+msgid "Unexpected error"
+msgstr "Fallu non esperáu"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__16.string.text
+msgid "FTP publishing directory"
+msgstr "Direutoriu de espublizamientu FTP"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__17.string.text
+msgid "This is not an FTP folder"
+msgstr "Nun ye una carpeta FTP"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__18.string.text
+msgid "Connecting..."
+msgstr "Coneutando..."
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__1.string.text
+msgid "Agenda Wizard"
+msgstr "Asistente p'axendes"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__2.string.text
+msgid "Make ~manual changes to this agenda template"
+msgstr "Facer ~modificaciones manuales nesta plantía p'axenda"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__3.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__3.string.text"
+msgid "Template name:"
+msgstr "Nome de la plantía:"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START___4.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START___4.string.text"
+msgid "Location and file name:"
+msgstr "Allugamientu y nome del ficheru:"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__5.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__5.string.text"
+msgid "What do you want to do next?"
+msgstr "¿Que quies facer agora?"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__6.string.text
+msgid "Please choose the page design for the agenda"
+msgstr "Escueyi'l diseñu de páxina pa l'axenda"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__7.string.text
+msgid "Please select the headings you wish to include in your agenda template"
+msgstr "Escueyi les testeres que quies incluyir na plantía p'axendes"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__8.string.text
+msgid "Please enter general information for the event"
+msgstr "Escribi información xeneral pal eventu"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__9.string.text
+msgid "Please specify items for the agenda"
+msgstr "Especifica los puntos de l'axenda"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__10.string.text
+msgid "Please select the names you wish to include in your agenda template"
+msgstr "Escueyi los nome que quies incluyir na plantía de l'axenda"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__11.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__11.string.text"
+msgid "Choose a name and save the template"
+msgstr "Escoyer un nome y grabar la plantía"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__12.string.text
+msgid "Include form for recording minutes"
+msgstr "Incluyir formulariu pa facer actes"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__13.string.text
+msgid ""
+"This wizard helps you to create an agenda template. The template can then be "
+"used to create an agenda whenever needed."
+msgstr ""
+"Esti asistente va ayudate a crear una plantía pa l'axenda. La plantía pue "
+"usase pa crear una axenda cuando te pete."
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__14.string.text
+msgid "Time:"
+msgstr "Hora:"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__15.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__15.string.text"
+msgid "Name:"
+msgstr "Nome:"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START___16.string.text
+msgid "Location:"
+msgstr "Allugamientu"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__17.string.text
+msgid ""
+"Placeholders will be used in empty fields. You can replace placeholders with "
+"text later."
+msgstr ""
+"Nos campos vacios úsense marcadores de posición. Dempués puedes camudalos "
+"por testu."
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__18.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__18.string.text"
+msgid "..."
+msgstr "..."
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__19.string.text
+msgid "Create an ~agenda from this template"
+msgstr "Crear una ~axenda dende esta plantía"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__20.string.text
+msgid ""
+"To create a new agenda out of the template, go to the location where you "
+"saved the template and double-click the file."
+msgstr ""
+"Pa crear una axenda dende esta plantía, vete al allugamientu nel que "
+"guardeste la plantía y calca dos vegaes nel ficheru."
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__21.string.text
+msgid "Agenda item"
+msgstr "Puntu de l'axenda"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__22.string.text
+msgid "Responsible"
+msgstr "Responsable:"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__23.string.text
+msgid "Duration"
+msgstr "Duración"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__24.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__24.string.text"
+msgid "Meeting called by"
+msgstr "Conceyu convocáu por"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__25.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__25.string.text"
+msgid "Chairperson"
+msgstr "Presidente"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__26.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__26.string.text"
+msgid "Minute keeper"
+msgstr "Controlador de minutos"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__27.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__27.string.text"
+msgid "Moderator"
+msgstr "Moderador"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__28.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__28.string.text"
+msgid "Attendees"
+msgstr "Participantes"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__29.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__29.string.text"
+msgid "Observers"
+msgstr "Observadores"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__30.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__30.string.text"
+msgid "Facility personnel"
+msgstr "Personal de les instalaciones"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__31.string.text
+msgid ""
+"The agenda template will include placeholders for the names of the selected "
+"people. When creating an agenda from the template, you can replace these "
+"placeholder with the appropriate names."
+msgstr ""
+"La plantía p'axendes va contener marcadores de posición pa los nomes de les "
+"persones que s'escueyan. Si se crea una axenda dende la plantía, los "
+"marcadores de posición pueden camudase polos nomes correspondientes."
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__32.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__32.string.text"
+msgid "Type of meeting"
+msgstr "Triba de conceyu"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__33.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__33.string.text"
+msgid "Please read"
+msgstr "Lleer los documentos siguientes"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__34.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__34.string.text"
+msgid "Please bring"
+msgstr "Documentación necesaria"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__35.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__35.string.text"
+msgid "Notes"
+msgstr "Notes"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__36.string.text
+msgid "The agenda template will include placeholders for the selected items."
+msgstr ""
+"La plantía de l'axenda va incluyir los marcadores de posición pa los puntos "
+"escoyíos."
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__38.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__38.string.text"
+msgid "Date:"
+msgstr "Data:"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__39.string.text
+msgid ""
+"This wizard creates an agenda template which enables you to create multiple "
+"agendas with the same layout and settings."
+msgstr ""
+"Esti asistente ayúdate a crear una plantía p'axenda, que permite crear "
+"delles axendes col mesmu diseñu y la mesma configuración."
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__40.string.text
+msgid "Page design:"
+msgstr "Diseñu de la páxina:"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__41.string.text
+msgid "myAgendaTemplate.stw"
+msgstr "myAgendaTemplate.stw"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__42.string.text
+msgid "My Agenda Template"
+msgstr "La plantía de la mio axenda"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__43.string.text
+msgid "An unexpected error occurred while saving the agenda template."
+msgstr "Hebo un fallu inesperáu al grabar la plantía de l'axenda."
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__44.string.text
+msgid "Name"
+msgstr "Nome"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__45.string.text
+msgid "Date"
+msgstr "Data"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__46.string.text
+msgid "Time"
+msgstr "Hora"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START___47.string.text
+msgid "Location"
+msgstr "Allugamientu"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__48.string.text
+msgid "Click to replace this text"
+msgstr "Calca pa trocar el testu"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__50.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__50.string.text"
+msgid "Page design"
+msgstr "Diseñu de páxina"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__51.string.text
+msgid "General information"
+msgstr "Información xeneral"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__52.string.text
+msgid "Headings to include"
+msgstr "Testeres pa incluyir"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__53.string.text
+msgid "Names"
+msgstr "Nomes"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__54.string.text
+msgid "Agenda items"
+msgstr "Puntos de l'axenda"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__55.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__55.string.text"
+msgid "Name and location"
+msgstr "Nome y allugamientu"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__56.string.text
+msgid "An unexpected error occurred while opening the agenda template."
+msgstr "Hebo un fallu inesperáu na apertura de la plantía de l'axenda."
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__57.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__57.string.text"
+msgid "Type of meeting"
+msgstr "Triba de conceyu"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__58.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__58.string.text"
+msgid "Please bring"
+msgstr "Documentación necesaria"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__59.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__59.string.text"
+msgid "Please read"
+msgstr "Lleer los documentos siguientes"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__60.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__60.string.text"
+msgid "Notes"
+msgstr "Notes"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__61.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__61.string.text"
+msgid "Meeting called by"
+msgstr "Conceyu convocáu por"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__62.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__62.string.text"
+msgid "Chairperson"
+msgstr "Presidente"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__63.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__63.string.text"
+msgid "Attendees"
+msgstr "Participantes"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__64.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__64.string.text"
+msgid "Minute keeper"
+msgstr "Controlador de minutos"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__65.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__65.string.text"
+msgid "Moderator"
+msgstr "Moderador"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__66.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__66.string.text"
+msgid "Observers"
+msgstr "Observadores"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__67.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__67.string.text"
+msgid "Facility personnel"
+msgstr "Personal de les instalaciones"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__68.string.text
+msgid "Insert"
+msgstr "Inxertar"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__69.string.text
+msgid "Remove"
+msgstr "Desaniciar"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__70.string.text
+msgid "Move up"
+msgstr "Mover p'arriba"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__71.string.text
+msgid "Move down"
+msgstr "Mover p'abaxo"
+
+#: template.src#SAMPLES.string.text
+msgid ""
+"In order to use the full functionality of this sample, create a document "
+"that is based on this template."
+msgstr ""
+"P'aprovechar la mayor funcionalidá del exemplu, crea un documentu basáu "
+"nesti modelu."
+
+#: template.src#SAMPLES___1.string.text
+msgid "Remarks"
+msgstr "Comentarios"
+
+#: template.src#STYLES.string.text
+msgid "Theme Selection"
+msgstr "Esbilla de tema"
+
+#: template.src#STYLES___1.string.text
+msgid ""
+"Error while saving the document to the clipboard! The following action "
+"cannot be undone."
+msgstr ""
+"¡Fallu al grabar el documentu nel portapapeles! Nun se pude desfacer "
+"l'aición siguiente."
+
+#: template.src#STYLES___2.string.text
+msgid "~Cancel"
+msgstr "~Encaboxar"
+
+#: template.src#STYLES___3.string.text
+msgid "~OK"
+msgstr "~Aceptar"
+
+#: template.src#AgendaDlgName.string.text
+msgid "Minutes Template"
+msgstr "Modelu d'actes"
+
+#: template.src#AgendaDlgNoCancel.string.text
+msgid "An option must be confirmed."
+msgstr "Hai que confirmar una de les opciones."
+
+#: template.src#AgendaDlgFrame.string.text
+msgid "Minutes Type"
+msgstr "Triba d'actes"
+
+#: template.src#AgendaDlgButton1.string.text
+msgid "Results Minutes"
+msgstr "Actes de resultaos"
+
+#: template.src#AgendaDlgButton2.string.text
+msgid "Evaluation Minutes"
+msgstr "Actes d'Evaluación"
+
+#: template.src#CorrespondenceNoTextmark.string.text
+msgid "The bookmark 'Recipient' is missing."
+msgstr "Falta'l marcador de 'Destitarariu'."
+
+#: template.src#CorrespondenceNoTextmark_1.string.text
+msgid "Form letter fields can not be included."
+msgstr "Nun se puede incluyir campos pa cartes modelu."
+
+#: template.src#CorrespondenceMsgError.string.text
+msgid "An error has occurred."
+msgstr "Prodúxose un fallu."
+
+#: template.src#CorrespondenceDialog.string.text
+msgid "Addressee"
+msgstr "Destinatariu"
+
+#: template.src#CorrespondenceDialog_1.string.text
+msgid "One recipient"
+msgstr "Un destinatariu"
+
+#: template.src#CorrespondenceDialog_2.string.text
+msgid "Several recipients (address database)"
+msgstr "Dellos destinatarios (base de datos de direiciones)"
+
+#: template.src#CorrespondenceDialog_3.string.text
+msgid "Use of This Template"
+msgstr "Emplegu d'esti modelu"
+
+#: template.src#CorrespondenceFields.string.text
+msgid "Click placeholder and overwrite"
+msgstr "Calca nel marcador de posición y escribi enriba."
+
+#: template.src#CorrespondenceFields_1.string.text
+msgid "Company"
+msgstr "Compañía"
+
+#: template.src#CorrespondenceFields_2.string.text
+msgid "Department"
+msgstr "Departamentu"
+
+#: template.src#CorrespondenceFields_3.string.text
+msgid "First Name"
+msgstr "Nome"
+
+#: template.src#CorrespondenceFields_4.string.text
+msgid "Last Name"
+msgstr "Apellíu"
+
+#: template.src#CorrespondenceFields_5.string.text
+msgid "Street"
+msgstr "Cai"
+
+#: template.src#CorrespondenceFields_6.string.text
+msgid "Country"
+msgstr "País"
+
+#: template.src#CorrespondenceFields_7.string.text
+msgid "ZIP/Postal Code"
+msgstr "Códigu Postal"
+
+#: template.src#CorrespondenceFields_8.string.text
+msgid "City"
+msgstr "Ciudá"
+
+#: template.src#CorrespondenceFields_9.string.text
+msgid "Title"
+msgstr "Títulu"
+
+#: template.src#CorrespondenceFields_10.string.text
+msgid "Position"
+msgstr "Allugamientu"
+
+#: template.src#CorrespondenceFields_11.string.text
+msgid "Form of Address"
+msgstr "Forma de tratamientu"
+
+#: template.src#CorrespondenceFields_12.string.text
+msgid "Initials"
+msgstr "Iniciales"
+
+#: template.src#CorrespondenceFields_13.string.text
+msgid "Salutation"
+msgstr "Tratamientu"
+
+#: template.src#CorrespondenceFields_14.string.text
+msgid "Home Phone"
+msgstr "Teléfonu de casa"
+
+#: template.src#CorrespondenceFields_15.string.text
+msgid "Work Phone"
+msgstr "Teléfonu del Trabayu"
+
+#: template.src#CorrespondenceFields_16.string.text
+msgid "Fax"
+msgstr "Fax"
+
+#: template.src#CorrespondenceFields_17.string.text
+msgid "E-Mail"
+msgstr "Corréu-e"
+
+#: template.src#CorrespondenceFields_18.string.text
+msgid "URL"
+msgstr "Sitiu web"
+
+#: template.src#CorrespondenceFields_19.string.text
+msgid "Notes"
+msgstr "Notes"
+
+#: template.src#CorrespondenceFields_20.string.text
+msgid "Alt. Field 1"
+msgstr "Campu Alt. 1"
+
+#: template.src#CorrespondenceFields_21.string.text
+msgid "Alt. Field 2"
+msgstr "Campu Alt. 2"
+
+#: template.src#CorrespondenceFields_22.string.text
+msgid "Alt. Field 3"
+msgstr "Campu Alt. 3"
+
+#: template.src#CorrespondenceFields_23.string.text
+msgid "Alt. Field 4"
+msgstr "Campu Alt. 4"
+
+#: template.src#CorrespondenceFields_24.string.text
+msgid "ID"
+msgstr "ID"
+
+#: template.src#CorrespondenceFields_25.string.text
+msgid "State"
+msgstr "Estáu"
+
+#: template.src#CorrespondenceFields_26.string.text
+msgid "Office Phone"
+msgstr "Teléfonu del Trabayu"
+
+#: template.src#CorrespondenceFields_27.string.text
+msgid "Pager"
+msgstr "Buscapersones"
+
+#: template.src#CorrespondenceFields_28.string.text
+msgid "Mobile Phone"
+msgstr "Teléfonu Móvil"
+
+#: template.src#CorrespondenceFields_29.string.text
+msgid "Other Phone"
+msgstr "Otru teléfonu"
+
+#: template.src#CorrespondenceFields_30.string.text
+msgid "Calendar URL"
+msgstr "URL del calendariu"
+
+#: template.src#CorrespondenceFields_31.string.text
+msgid "Invite"
+msgstr "Invitar"
+
+#: template.src#TextField.string.text
+msgid "User data field is not defined!"
+msgstr "¡El campu de datos d'usuariu nun ta definíu!"
+
+#: template.src#Newsletter.string.text
+msgid "General layout"
+msgstr "Diseñu xeneral"
+
+#: template.src#Newsletter___1.string.text
+msgid "Default layout"
+msgstr "Diseñu predefiníu"
+
+#: template.src#Newsletter___2.string.text
+msgid "Commemorative publication layout"
+msgstr "Diseñu de publicación conmemorativa"
+
+#: template.src#Newsletter___3.string.text
+msgid "Brochure layout"
+msgstr "Diseñu de cartafueyu"
+
+#: template.src#Newsletter___10.string.text
+msgid "Format"
+msgstr "Formatu"
+
+#: template.src#Newsletter___11.string.text
+msgid "Single-sided"
+msgstr "Un llau"
+
+#: template.src#Newsletter___12.string.text
+msgid "Double-sided"
+msgstr "A dos cares"
+"X-Accelerator-Marker: ~\n"
+
+#: euro.src#STEP_ZERO.string.text
+msgid "~Cancel"
+msgstr "~Encaboxar"
+
+#: euro.src#STEP_ZERO___1.string.text
+msgid "~Help"
+msgstr "~Gabitu"
+
+#: euro.src#STEP_ZERO___2.string.text
+msgid "<<~Back"
+msgstr "<<~Volver"
+
+#: euro.src#STEP_ZERO___3.string.text
+msgid "~Convert"
+msgstr "~Convertir"
+
+#: euro.src#STEP_ZERO___4.string.text
+msgid ""
+"Note: Currency amounts from external links and currency conversion factors "
+"in formulas cannot be converted."
+msgstr ""
+"Nota: Les cantidáes en divises d'enllaces esternos y los factores de "
+"conversión de divises nes fórmules nun pueden convertise."
+
+#: euro.src#STEP_ZERO___5.string.text
+msgid "First, unprotect all sheets."
+msgstr "Primero, desprotexe toes les fueyes."
+
+#: euro.src#STEP_ZERO___6.string.text
+msgid "Currencies:"
+msgstr "Divises:"
+
+#: euro.src#STEP_ZERO___7.string.text
+msgid "C~ontinue>>"
+msgstr "C~ontinuar>>"
+
+#: euro.src#STEP_ZERO___8.string.text
+msgid "C~lose"
+msgstr "~Zarrar"
+
+#: euro.src#STEP_CONVERTER.string.text
+msgid "~Entire document"
+msgstr "Docum~entu enteru"
+
+#: euro.src#STEP_CONVERTER___1.string.text
+msgid "Selection"
+msgstr "Esbilla"
+
+#: euro.src#STEP_CONVERTER___2.string.text
+msgid "Cell S~tyles"
+msgstr "Es~tilos de caxella"
+
+#: euro.src#STEP_CONVERTER___3.string.text
+msgid "Currency cells in the current ~sheet"
+msgstr "Celde~s de moneda na fueya actual"
+
+#: euro.src#STEP_CONVERTER___4.string.text
+msgid "Currency cells in the entire ~document"
+msgstr "Caxelles de moneda en tol ~documentu"
+
+#: euro.src#STEP_CONVERTER___5.string.text
+msgid "~Selected range"
+msgstr "Intervalu ~seleicionáu"
+
+#: euro.src#STEP_CONVERTER___6.string.text
+msgid "Select Cell Styles"
+msgstr "Seleicionar los estilos de caxella"
+
+#: euro.src#STEP_CONVERTER___7.string.text
+msgid "Select currency cells"
+msgstr "Seleicionar les caxelles de moneda"
+
+#: euro.src#STEP_CONVERTER___8.string.text
+msgid "Currency ranges:"
+msgstr "Intervalos monetarios:"
+
+#: euro.src#STEP_CONVERTER___9.string.text
+msgid "Templates:"
+msgstr "Modelos:"
+
+#: euro.src#STEP_AUTOPILOT.string.text
+msgid "Extent"
+msgstr "Estensión"
+
+#: euro.src#STEP_AUTOPILOT___1.string.text
+msgid "~Single %PRODUCTNAME Calc document"
+msgstr "Un ~solu documentu de %PRODUCTNAME Calc"
+
+#: euro.src#STEP_AUTOPILOT___2.string.text
+msgid "Complete ~directory"
+msgstr "~Direutoriu completu"
+
+#: euro.src#STEP_AUTOPILOT___3.string.text
+msgid "Source Document:"
+msgstr "Documentu fonte:"
+
+#: euro.src#STEP_AUTOPILOT___4.string.text
+msgid "Source directory:"
+msgstr "Direutoriu fonte:"
+
+#: euro.src#STEP_AUTOPILOT___5.string.text
+msgid "~Including subfolders"
+msgstr "~Incluyendo sodireutorios"
+
+#: euro.src#STEP_AUTOPILOT___6.string.text
+msgid "Target directory:"
+msgstr "Directoriu destín:"
+
+#: euro.src#STEP_AUTOPILOT___7.string.text
+msgid "Temporarily unprotect sheet without query"
+msgstr "Desprotexer temporalmente la fueya ensin consultar"
+
+#: euro.src#STEP_AUTOPILOT___10.string.text
+msgid "Also convert fields and tables in text documents"
+msgstr "Convertir tamién campos y tables de documentos de testu"
+
+#: euro.src#STATUSLINE.string.text
+msgid "Conversion status: "
+msgstr "Estáu de la conversión: "
+
+#: euro.src#STATUSLINE___1.string.text
+msgid "Conversion status of the cell templates:"
+msgstr "Estáu de la conversión de los modelos de caxelles:"
+
+#: euro.src#STATUSLINE___2.string.text
+msgid ""
+"Registration of the relevant ranges: Sheet %1Number%1 of %2TotPageCount%2"
+msgstr ""
+"Rexistru de los intervalos relevantes: Fueya %1Number%1 de %2TotPageCount%2"
+
+#: euro.src#STATUSLINE___3.string.text
+msgid "Entry of the ranges to be converted..."
+msgstr "Entrada de los intervalos pa convertir..."
+
+#: euro.src#STATUSLINE___4.string.text
+msgid "Sheet protection for each sheet will be restored..."
+msgstr "La proteición de fueyes va restaurase pa cada fueya..."
+
+#: euro.src#STATUSLINE___5.string.text
+msgid "Conversion of the currency units in the cell templates..."
+msgstr "Conversión de les unidáes de moneda nos modelos de caxella..."
+
+#: euro.src#MESSAGES.string.text
+msgid "~Finish"
+msgstr "~Finar"
+
+#: euro.src#MESSAGES___1.string.text
+msgid "Select directory"
+msgstr "Seleicionar direutoriu"
+
+#: euro.src#MESSAGES___2.string.text
+msgid "Select file"
+msgstr "Seleicionar ficheru"
+
+#: euro.src#MESSAGES___3.string.text
+msgid "Select target directory"
+msgstr "Seleicionar direutoriu destín"
+
+#: euro.src#MESSAGES___4.string.text
+msgid "non-existant"
+msgstr "non esistente"
+
+#: euro.src#MESSAGES___5.string.text
+msgid "Euro Converter"
+msgstr "Convertidor d'Euros"
+
+#: euro.src#MESSAGES___6.string.text
+msgid "Should protected spreadsheets be temporarily unprotected?"
+msgstr "¿Quies desprotexer temporalmente toles fueyes?"
+
+#: euro.src#MESSAGES___7.string.text
+msgid "Enter the password to unprotect the table %1TableName%1"
+msgstr "Contraseña pa desprotexer la fueya %1TableName%1"
+
+#: euro.src#MESSAGES___8.string.text
+msgid "Wrong Password!"
+msgstr "¡Contraseña Falsa!"
+
+#: euro.src#MESSAGES___9.string.text
+msgid "Protected Sheet"
+msgstr "Fueya Protexida"
+
+#: euro.src#MESSAGES___10.string.text
+msgid "Warning!"
+msgstr "¡Curiáu!"
+
+#: euro.src#MESSAGES___11.string.text
+msgid "Protection for the sheets will not be removed."
+msgstr "¡Les fueyes nun se van desprotexer!"
+
+#: euro.src#MESSAGES___12.string.text
+msgid "Sheet cannot be unprotected"
+msgstr "¡Nun se va desprotexer la fueya!"
+
+#: euro.src#MESSAGES___13.string.text
+msgid ""
+"The Wizard cannot edit this document as cell formats cannot be modified in "
+"documents containing protected spreadsheets."
+msgstr ""
+"L'AutoPilotu nun ye a remanar esti documentu porque nun se pueden camudar "
+"estilos de caxella en documentos con fueyes protexíes."
+
+#: euro.src#MESSAGES___14.string.text
+msgid ""
+"Please note that the Euro Converter will, otherwise, not be able to edit "
+"this document!"
+msgstr ""
+"¡Date cuenta que de lo contrario, el Convertidor Euro, nun va poder remanar "
+"el documentu!"
+
+#: euro.src#MESSAGES___15.string.text
+msgid "Please choose a currency to be converted first!"
+msgstr "¡Escueyi enantes la moneda que quies convertir!"
+
+#: euro.src#MESSAGES___16.string.text
+msgid "Password:"
+msgstr "Clave:"
+
+#: euro.src#MESSAGES___17.string.text
+msgid "OK"
+msgstr "Aceutar"
+
+#: euro.src#MESSAGES___18.string.text
+msgid "Cancel"
+msgstr "Encaboxar"
+
+#: euro.src#MESSAGES___19.string.text
+msgid "Please select a %PRODUCTNAME Calc document for editing!"
+msgstr "Escueyi un documentu %PRODUCTNAME Calc pa trabayar"
+
+#: euro.src#MESSAGES___20.string.text
+msgid "'<1>' is not a directory!"
+msgstr "'<1>' nun ye un directoriu!"
+
+#: euro.src#MESSAGES___21.string.text
+msgid "Document is read-only!"
+msgstr "¡El documentu ye sólo de llectura!"
+
+#: euro.src#MESSAGES___22.string.text
+msgid "The '<1>' file already exists.<CR>Do you want to overwrite it?"
+msgstr "Yá existe'l ficheru '<1>'.<CR>¿Quies sobrescribilu?"
+
+#: euro.src#MESSAGES___23.string.text
+msgid "Do you really want to terminate conversion at this point?"
+msgstr "¿De verdá quies parar agora la conversión?"
+
+#: euro.src#MESSAGES___24.string.text
+msgid "Cancel Wizard"
+msgstr "Encaboxar asistente"
+
+#: euro.src#CURRENCIES.string.text
+msgid "Portuguese Escudo"
+msgstr "Escudu Portugués"
+
+#: euro.src#CURRENCIES___1.string.text
+msgid "Dutch Guilder"
+msgstr "Florín holandés"
+
+#: euro.src#CURRENCIES___2.string.text
+msgid "French Franc"
+msgstr "Francu Francés"
+
+#: euro.src#CURRENCIES___3.string.text
+msgid "Spanish Peseta"
+msgstr "Peseta española"
+
+#: euro.src#CURRENCIES___4.string.text
+msgid "Italian Lira"
+msgstr "Llira italiana"
+
+#: euro.src#CURRENCIES___5.string.text
+msgid "German Mark"
+msgstr "Marcu Alemán"
+
+#: euro.src#CURRENCIES___6.string.text
+msgid "Belgian Franc"
+msgstr "Francu Belga"
+
+#: euro.src#CURRENCIES___7.string.text
+msgid "Irish Punt"
+msgstr "Llibra irlandesa"
+
+#: euro.src#CURRENCIES___8.string.text
+msgid "Luxembourg Franc"
+msgstr "Francu Lluxemburgués"
+
+#: euro.src#CURRENCIES___9.string.text
+msgid "Austrian Schilling"
+msgstr "Chelín Austriacu"
+
+#: euro.src#CURRENCIES___10.string.text
+msgid "Finnish Mark"
+msgstr "Marcu finlandés"
+
+#: euro.src#CURRENCIES___11.string.text
+msgid "Greek Drachma"
+msgstr "Dracma Griegu"
+
+#: euro.src#CURRENCIES___12.string.text
+msgid "Slovenian Tolar"
+msgstr "Tolar Eslovenu"
+
+#: euro.src#CURRENCIES___13.string.text
+msgid "Cypriot Pound"
+msgstr "Llibra Chipriota"
+
+#: euro.src#CURRENCIES___14.string.text
+msgid "Maltese Lira"
+msgstr "Lira Maltesa"
+
+#: euro.src#CURRENCIES___15.string.text
+msgid "Slovak Koruna"
+msgstr "Koruna Eslovacu"
+
+#: euro.src#CURRENCIES___16.string.text
+msgid "The currency set for the document is not a European currency!"
+msgstr "¡La moneda establecida pal documentu nun pertenez a la zona Euro!"
+
+#: euro.src#CURRENCIES___17.string.text
+msgid ""
+"The language set for your operating system is not a language of the European "
+"Monetary Union."
+msgstr ""
+"¡L'idioma definíu pal to sistema operativu nun pertenez a la Unión Monetaria "
+"Europea!"
+
+#: euro.src#STEP_LASTPAGE.string.text
+msgid "Progress"
+msgstr "Progresu"
+
+#: euro.src#STEP_LASTPAGE___1.string.text
+msgid "Retrieving the relevant documents..."
+msgstr "Recuperando los documentos importantes..."
+
+#: euro.src#STEP_LASTPAGE___2.string.text
+msgid "Converting the documents..."
+msgstr "Convirtiendo los documentos..."
+
+#: euro.src#STEP_LASTPAGE___3.string.text
+msgid "Settings:"
+msgstr "Configuración:"
+
+#: euro.src#STEP_LASTPAGE___4.string.text
+msgid "Sheet is always unprotected"
+msgstr "Anular siempre la protección de fueya"
+
+#: schedule.src#dlgCalTitle.string.text
+msgid "%PRODUCTNAME Calendar"
+msgstr "Calendariu %PRODUCTNAME"
+
+#: schedule.src#dlgCalTitleBack.string.text
+msgid "Back"
+msgstr "Tornar"
+
+#: schedule.src#dlgCalTitleOwnData.string.text
+msgctxt "schedule.src#dlgCalTitleOwnData.string.text"
+msgid "Personal Data"
+msgstr "Los mios datos"
+
+#: schedule.src#dlgSchdlTitle.string.text
+msgid "Add Holidays to Calendar"
+msgstr "Amestar festivos al calendariu"
+
+#: schedule.src#dlgOK.string.text
+msgid "Create"
+msgstr "Crear"
+
+#: schedule.src#dlgCancel.string.text
+msgid "Cancel"
+msgstr "Encaboxar"
+
+#: schedule.src#dlgCalFrameOption.string.text
+msgctxt "schedule.src#dlgCalFrameOption.string.text"
+msgid "Calendar"
+msgstr "Calendariu"
+
+#: schedule.src#dlgCalOptionYear.string.text
+msgid "~Year Overview"
+msgstr "~Resume del añu"
+
+#: schedule.src#dlgCalOptionMonth.string.text
+msgid "~Month"
+msgstr "~Mes"
+
+#: schedule.src#dlgSchdlDescription.string.text
+msgid "Add holidays for"
+msgstr "Amestar festivos a"
+
+#: schedule.src#dlgSchdlCountry.string.text
+msgid "USA"
+msgstr "EE.XX."
+
+#: schedule.src#dlgTime.string.text
+msgid "Time Frame"
+msgstr "Períodu"
+
+#: schedule.src#dlgYear.string.text
+msgctxt "schedule.src#dlgYear.string.text"
+msgid "Year"
+msgstr "Añu"
+
+#: schedule.src#dlgCalMonth.string.text
+msgctxt "schedule.src#dlgCalMonth.string.text"
+msgid "Month"
+msgstr "Mes"
+
+#: schedule.src#dlgSpecificBankholidays.string.text
+msgid "-"
+msgstr "-"
+
+#: schedule.src#dlgCalOwnData.string.text
+msgctxt "schedule.src#dlgCalOwnData.string.text"
+msgid "Personal Data"
+msgstr "Datos Personales"
+
+#: schedule.src#dlgCalInsert.string.text
+msgid "~Insert"
+msgstr "~Inxertar"
+
+#: schedule.src#dlgCalDelete.string.text
+msgid "~Delete"
+msgstr "~Desaniciar"
+
+#: schedule.src#dlgCalNewEvent.string.text
+msgid "New Event"
+msgstr "Nuevu Eventu"
+
+#: schedule.src#dlgCalEvent.string.text
+msgid "Event"
+msgstr "Sucesu"
+
+#: schedule.src#dlgCalEventOnce.string.text
+msgid "One-Time"
+msgstr "Únicu"
+
+#: schedule.src#dlgCalEventDay.string.text
+msgid "Day"
+msgstr "Día"
+
+#: schedule.src#dlgCalEventMonth.string.text
+msgctxt "schedule.src#dlgCalEventMonth.string.text"
+msgid "Month"
+msgstr "Mes"
+
+#: schedule.src#dlgCalEventYear.string.text
+msgctxt "schedule.src#dlgCalEventYear.string.text"
+msgid "Year"
+msgstr "Añu"
+
+#: schedule.src#dlgBitmapFile.string.text
+msgid "usa.bmp"
+msgstr "asturies.bmp"
+
+#: schedule.src#dlgState.string.text
+msgid "Public holidays"
+msgstr "Díes festivos xenerales"
+
+#: schedule.src#dlgMonth.string.text
+msgid "January"
+msgstr "Xineru"
+
+#: schedule.src#dlgMonth_1.string.text
+msgid "February"
+msgstr "Febreru"
+
+#: schedule.src#dlgMonth_2.string.text
+msgid "March"
+msgstr "Marzu"
+
+#: schedule.src#dlgMonth_3.string.text
+msgid "April"
+msgstr "Abril"
+
+#: schedule.src#dlgMonth_4.string.text
+msgid "May"
+msgstr "Mayu"
+
+#: schedule.src#dlgMonth_5.string.text
+msgid "June"
+msgstr "Xunu"
+
+#: schedule.src#dlgMonth_6.string.text
+msgid "July"
+msgstr "Xunetu"
+
+#: schedule.src#dlgMonth_7.string.text
+msgid "August"
+msgstr "Agostu"
+
+#: schedule.src#dlgMonth_8.string.text
+msgid "September"
+msgstr "Septiembre"
+
+#: schedule.src#dlgMonth_9.string.text
+msgid "October"
+msgstr "Ochobre"
+
+#: schedule.src#dlgMonth_10.string.text
+msgid "November"
+msgstr "Payares"
+
+#: schedule.src#dlgMonth_11.string.text
+msgid "December"
+msgstr "Avientu"
+
+#: schedule.src#msgCalErrorTitle.string.text
+msgid "Yearly / Monthly Calendar"
+msgstr "Calendariu anual/mensual"
+
+#: schedule.src#msgCalError.string.text
+msgid "An error occurred while creating the calendar."
+msgstr "Hebo un fallu al crear el calendariu"
+
+#: schedule.src#msgCalRemoveTitle.string.text
+msgid "Delete event entries"
+msgstr "Desaniciar eventos"
+
+#: schedule.src#msgCalRemove.string.text
+msgid "Delete the selected entries?"
+msgstr "¿Quies desaniciar los rexistros esbillaos?"
+
+#: schedule.src#stlWorkday.string.text
+msgid "Workweek"
+msgstr "Selmana llaboral"
+
+#: schedule.src#stlWeekend.string.text
+msgid "Weekend"
+msgstr "Fin de selmana"
+
+#: schedule.src#nameCalYear.string.text
+msgctxt "schedule.src#nameCalYear.string.text"
+msgid "Calendar"
+msgstr "Calendariu"
+
+#: schedule.src#nameCalMonth.string.text
+msgctxt "schedule.src#nameCalMonth.string.text"
+msgid "Month"
+msgstr "Mes"
+
+#: schedule.src#sProgress.string.text
+msgid "Progress:"
+msgstr "Progresu:"

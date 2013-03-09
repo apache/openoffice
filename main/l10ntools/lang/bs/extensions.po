@@ -1,0 +1,2767 @@
+
+#: updatehdl.src#RID_UPDATE_STR_CHECKING.string.text
+msgid "Checking..."
+msgstr "Provjeravam..."
+
+#: updatehdl.src#RID_UPDATE_STR_CHECKING_ERR.string.text
+msgid "Checking for an update failed."
+msgstr "Nije uspjelo provjeravanje postoje li nove nadogradnje."
+
+#: updatehdl.src#RID_UPDATE_STR_NO_UPD_FOUND.string.text
+msgid "%PRODUCTNAME %PRODUCTVERSION is up to date."
+msgstr "%PRODUCTNAME %PRODUCTVERSION je ažuran."
+
+#: updatehdl.src#RID_UPDATE_STR_UPD_FOUND.string.text
+msgid ""
+"%PRODUCTNAME %NEXTVERSION is available.\n"
+"\n"
+"The installed version is %PRODUCTNAME %PRODUCTVERSION.\n"
+"\n"
+"Note: Before downloading  an update, please ensure that you have sufficient "
+"access rights to install it.\n"
+"A password, usually the administrator's or root password, may be required."
+msgstr ""
+
+#: updatehdl.src#RID_UPDATE_STR_DLG_TITLE.string.text
+msgid "Check for Updates"
+msgstr "Provjera ažuriranja."
+
+#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_PAUSE.string.text
+msgid "Downloading %PRODUCTNAME %NEXTVERSION paused at..."
+msgstr "Preuzimanje programa %PRODUCTNAME %NEXTVERSION je zaustavljeno na..."
+
+#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_ERR.string.text
+msgid "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
+msgstr "Preuzimanje %PRODUCTNAME %NEXTVERSION je prekinuto na"
+
+#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.string.text
+msgid ""
+"The download location is: %DOWNLOAD_PATH.\n"
+"\n"
+"Under Tools – Options... - %PRODUCTNAME – Online Update you can change the "
+"download location."
+msgstr ""
+
+#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.string.text
+msgid "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
+msgstr "%FILE_NAME jepreuzeta i spremljena u  %DOWNLOAD_PATH."
+
+#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.string.text
+msgid ""
+"The automatic download of the update is currently not available.\n"
+"\n"
+"Click 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the "
+"web site."
+msgstr ""
+
+#: updatehdl.src#RID_UPDATE_STR_DOWNLOADING.string.text
+msgid "Downloading %PRODUCTNAME %NEXTVERSION..."
+msgstr "Preuzimam %PRODUCTNAME %NEXTVERSION..."
+
+#: updatehdl.src#RID_UPDATE_STR_READY_INSTALL.string.text
+msgid ""
+"Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
+msgstr ""
+"Završeno je preuzimanje programa %PRODUCTNAME %NEXTVERSION. Sve je spremno "
+"za instalaciju."
+
+#: updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.string.text
+msgid "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
+
+#: updatehdl.src#RID_UPDATE_STR_CANCEL_DOWNLOAD.string.text
+msgid "Do you really want to cancel the download?"
+msgstr "Stvarno želite odustati od preuzimanja?"
+
+#: updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.string.text
+msgid ""
+"To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do "
+"you want to install the update now?"
+msgstr ""
+"Za uspješno instaliranje nadogradnji,  %PRODUCTNAME %PRODUCTVERSION mora "
+"biti isključen. Želite li sada instalirati nadogradnje?"
+
+#: updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.string.text
+msgid "Install ~now"
+msgstr "Instaliraj ~sada"
+
+#: updatehdl.src#RID_UPDATE_STR_INSTALL_LATER.string.text
+msgid "Install ~later"
+msgstr "Instaliraj ~kasnije"
+
+#: updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.string.text
+msgid ""
+"Could not run the installer application, please run %FILE_NAME in %"
+"DOWNLOAD_PATH manually."
+msgstr ""
+"Nije moguće pokrenuti program za instaliranje, molim ručno pokrenite %"
+"FILE_NAME u mapi %DOWNLOAD_PATH."
+
+#: updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.string.text
+msgid ""
+"A file with that name already exists! Do you want to overwrite the existing "
+"file?"
+msgstr ""
+"Već postoji datoteka s tim imenom! Želite li izmijeniti sadžaj postojeće "
+"datoteke?"
+
+#: updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.string.text
+msgid ""
+"A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you "
+"want to continue with the download or delete and reload the file?"
+msgstr ""
+"Već postoji datoteka s imenom '%FILENAME' u direktoriju '%DOWNLOAD_PATH'! "
+"Želite li nastaviti sa preuzimanjem ili obrisati i ponovo učitati datoteku?"
+
+#: updatehdl.src#RID_UPDATE_STR_RELOAD_RELOAD.string.text
+msgid "Reload File"
+msgstr "Ponovno učitaj datoteku"
+
+#: updatehdl.src#RID_UPDATE_STR_RELOAD_CONTINUE.string.text
+msgid "Continue"
+msgstr "Nastavi"
+
+#: updatehdl.src#RID_UPDATE_STR_PERCENT.string.text
+msgid "%PERCENT%"
+msgstr "%PERCENT%"
+
+#: updatehdl.src#RID_UPDATE_FT_STATUS.string.text
+msgid "Status"
+msgstr "Stanje"
+
+#: updatehdl.src#RID_UPDATE_FT_DESCRIPTION.string.text
+msgid "Description"
+msgstr "Opis"
+
+#: updatehdl.src#RID_UPDATE_BTN_CLOSE.string.text
+msgid "Close"
+msgstr "Zatvori"
+
+#: updatehdl.src#RID_UPDATE_BTN_DOWNLOAD.string.text
+msgid "~Download"
+msgstr "~Preuzmi"
+
+#: updatehdl.src#RID_UPDATE_BTN_INSTALL.string.text
+msgid "~Install"
+msgstr "~Instaliraj"
+
+#: updatehdl.src#RID_UPDATE_BTN_PAUSE.string.text
+msgid "~Pause"
+msgstr "Pause"
+
+#: updatehdl.src#RID_UPDATE_BTN_RESUME.string.text
+msgid "~Resume"
+msgstr "~Nastavi"
+
+#: updatehdl.src#RID_UPDATE_BTN_CANCEL.string.text
+msgid "Cancel"
+msgstr "Odustani"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.string.text
+msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.string.text"
+msgid "%PRODUCTNAME update available"
+msgstr "Dostupne su nadogradnje za %PRODUCTNAME"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_AVAIL.string.text
+msgid "Click here to start the download."
+msgstr "Pritisnite ovdje za pokretanje preuzimanja."
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.string.text
+msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.string.text"
+msgid "%PRODUCTNAME update available"
+msgstr "Dostupne su nadogradnje za %PRODUCTNAME"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.string.text
+msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.string.text"
+msgid "Click here for more information."
+msgstr "Pritisnite ovdje za više informacija."
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.string.text
+msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.string.text"
+msgid "%PRODUCTNAME update available"
+msgstr "Dostupne su nadogradnje za %PRODUCTNAME"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_AUTO_START.string.text
+msgid "Download of update begins."
+msgstr "Počinje preuzimanje nadogradnji."
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOADING.string.text
+msgid "Download of update in progress"
+msgstr "U postupku je preuzimanje nadogradnji"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_PAUSED.string.text
+msgid "Download of update paused"
+msgstr "Zaustavljeno je preuzimanje nadogradnji."
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_PAUSED.string.text
+msgid "Click here to resume."
+msgstr "Pritisnite ovdje za nastavak."
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_ERROR_DOWNLOADING.string.text
+msgid "Download of update stalled"
+msgstr "Prekinuto je preuzimanje nadogradnji"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.string.text
+msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.string.text"
+msgid "Click here for more information."
+msgstr "Pritisnite ovdje za više informacija."
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_AVAIL.string.text
+msgid "Download of update completed"
+msgstr "Završeno je preuzimanje nadogradnji."
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_AVAIL.string.text
+msgid "Click here to start the installation."
+msgstr "Kliknite ovdje za pokretanje instalacije."
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_EXT_UPD_AVAIL.string.text
+msgid "Updates for extensions available"
+msgstr "Nadogradnje za ekstenzije dostupne"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.string.text
+msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.string.text"
+msgid "Click here for more information."
+msgstr "Pritisnite ovdje za više informacija."
+
+#: Addons.xcu#.Addons.AddonUI.OfficeHelp.UpdateCheckJob.Title.value.text
+msgid "Check for ~Updates..."
+msgstr "Provjeri za ~nadogradnje..."
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: ~\n"
+
+#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.FL_DATA.fixedline.text
+msgctxt "commonpagesdbp.src#RID_PAGE_TABLESELECTION.FL_DATA.fixedline.text"
+msgid "Data"
+msgstr "Podaci"
+
+#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.fixedtext.text
+msgid ""
+"Currently, the form the control belongs to is not (or not completely) bound "
+"to a data source.\n"
+"\n"
+"Please choose a data source and a table.\n"
+"\n"
+"\n"
+"Please note that the settings made on this page will take effect immediately "
+"upon leaving the page."
+msgstr ""
+
+#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.fixedtext.text
+msgid "~Data source:"
+msgstr "Izvor po~dataka:"
+
+#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.PB_FORMDATASOURCE.pushbutton.text
+msgid "~..."
+msgstr ""
+
+#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_TABLE.fixedtext.text
+msgid "~Table / Query:"
+msgstr "~Tabela / Upit:"
+
+#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.tabpage.text
+msgctxt "commonpagesdbp.src#RID_PAGE_TABLESELECTION.tabpage.text"
+msgid "Data"
+msgstr "Podaci"
+
+#: commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.FT_DATABASEFIELD_QUEST.fixedtext.text
+msgid "Do you want to save the value in a database field?"
+msgstr "Da li želite snimiti vrijednost u polje baze podataka?"
+
+#: commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_YES.radiobutton.text
+msgid "~Yes, I want to save it in the following database field:"
+msgstr "~Da, želim snimiti u sljedeće polje baze podataka:"
+
+#: commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_NO.radiobutton.text
+msgid "~No, I only want to save the value in the form."
+msgstr "~Ne, želim snimiti vrijednost samo u formular."
+
+#: commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.tabpage.text
+msgid "Database Field"
+msgstr "Polje baze podataka"
+
+#: commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FL_FORMSETINGS.fixedline.text
+msgid "Form"
+msgstr "Formular"
+
+#: commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMDATASOURCELABEL.fixedtext.text
+msgid "Data source"
+msgstr "Izvor podataka"
+
+#: commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMCONTENTTYPELABEL.fixedtext.text
+msgid "Content type"
+msgstr "Vrsta sadržaja"
+
+#: commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMTABLELABEL.fixedtext.text
+msgid "Content"
+msgstr "Sadržaj"
+
+#: commonpagesdbp.src#RID_STR_TYPE_TABLE.string.text
+msgid "Table"
+msgstr "Tabela"
+
+#: commonpagesdbp.src#RID_STR_TYPE_QUERY.string.text
+msgid "Query"
+msgstr "Upit"
+
+#: commonpagesdbp.src#RID_STR_TYPE_COMMAND.string.text
+msgid "SQL command"
+msgstr "SQL naredba"
+
+#: dbpilots.src#RID_DLG_GROUPBOXWIZARD.modaldialog.text
+msgid "Group Element Wizard"
+msgstr "Čarobnjak za elemente grupe"
+
+#: dbpilots.src#RID_DLG_GRIDWIZARD.modaldialog.text
+msgid "Table Element Wizard"
+msgstr "Čarobnjak za elemente tabele"
+
+#: dbpilots.src#RID_STR_LISTWIZARD_TITLE.string.text
+msgid "List Box Wizard"
+msgstr "Čarobnjak za polja sa listom"
+
+#: dbpilots.src#RID_STR_COMBOWIZARD_TITLE.string.text
+msgid "Combo Box Wizard"
+msgstr "Čarobnjak za kombinirana polja"
+
+#: dbpilots.src#RID_STR_COULDNOTOPENTABLE.string.text
+msgid "The table connection to the data source could not be established."
+msgstr "Nije moguće uspostaviti vezu tabele sa izvorom podataka."
+
+#: gridpages.src#RID_PAGE_GW_FIELDSELECTION.FL_FRAME.fixedline.text
+msgid "Table element"
+msgstr "Element tabele"
+
+#: gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.fixedtext.text
+msgctxt "gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.fixedtext.text"
+msgid "Existing fields"
+msgstr "Postojeća polja"
+
+#: gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_SELECTED_FIELDS.fixedtext.text
+msgid "Selected fields"
+msgstr "Označena polja"
+
+#: gridpages.src#RID_PAGE_GW_FIELDSELECTION.tabpage.text
+msgctxt "gridpages.src#RID_PAGE_GW_FIELDSELECTION.tabpage.text"
+msgid "Field Selection"
+msgstr "Izbor polja"
+
+#: gridpages.src#RID_STR_DATEPOSTFIX.string.text
+msgid " (Date)"
+msgstr "(Datum)"
+
+#: gridpages.src#RID_STR_TIMEPOSTFIX.string.text
+msgid " (Time)"
+msgstr "(Vrijeme)"
+
+#: groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOLABELS.fixedtext.text
+msgid "Which ~names do you want to give the option fields?"
+msgstr "Koja ime~na želite dati poljima s opcijama?"
+
+#: groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.fixedtext.text
+msgctxt "groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.fixedtext.text"
+msgid "~Option fields"
+msgstr "P~olja s opcijama"
+
+#: groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.tabpage.text
+msgctxt "groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.tabpage.text"
+msgid "Data"
+msgstr "Podaci"
+
+#: groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.FT_DEFAULTSELECTION.fixedtext.text
+msgid "Should one option field be selected as a default?"
+msgstr "Da li bi neko polje opcije trebalo biti označeno kao uobičajeno?"
+
+#: groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_YES.radiobutton.text
+msgid "~Yes, the following:"
+msgstr "~Da, sljedeće:"
+
+#: groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_NO.radiobutton.text
+msgid "No, one particular field is not going to be selected."
+msgstr "Ne, ne treba izabrati neko posebno polje."
+
+#: groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.tabpage.text
+msgid "Default Field Selection"
+msgstr "Izbor uobičajenog polja"
+
+#: groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES_EXPL.fixedtext.text
+msgid "When you select an option, the option group is given a specific value."
+msgstr "Kad izaberete opciju, grupi opcija je dodjeljena posebna vrijednost."
+
+#: groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES.fixedtext.text
+msgid "Which ~value do you want to assign to each option?"
+msgstr "Koju ~vrijednost želite dodijeliti svakoj opciji?"
+
+#: groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_RADIOBUTTONS.fixedtext.text
+msgctxt "groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_RADIOBUTTONS.fixedtext.text"
+msgid "~Option fields"
+msgstr "P~olja s opcijama"
+
+#: groupboxpages.src#RID_PAGE_OPTIONVALUES.tabpage.text
+msgid "Field Values"
+msgstr "Vrijednosti polja"
+
+#: groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_NAMEIT.fixedtext.text
+msgid "Which ~caption is to be given to your option group?"
+msgstr "Koji ~natpis želite dati vašoj grupi opcija?"
+
+#: groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_THATSALL.fixedtext.text
+msgid "These were all details needed to create the option group."
+msgstr "Ovo su bili svi detalji koji su potrebni da se napravi grupa opcija."
+
+#: groupboxpages.src#RID_PAGE_OPTIONS_FINAL.tabpage.text
+msgid "Create Option Group"
+msgstr "Napravi grupu opcija"
+
+#: groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.string.text
+msgid ""
+"You can either save the value of the option group in a database field or use "
+"it for a later action."
+msgstr ""
+"Možete ili snimiti vrijednost grupe opcija u polje baze podataka ili "
+"koristiti za kasniju akciju."
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FL_FRAME.fixedline.text
+msgid "Control"
+msgstr "Kontrola"
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.fixedtext.text
+msgid ""
+"On the right side, you see all the tables from the data source of the form.\n"
+"\n"
+"\n"
+"Choose the table from which the data should be used as basis for the list "
+"content:"
+msgstr ""
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.tabpage.text
+msgid "Table Selection"
+msgstr "Izbor tabele"
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_TABLEFIELDS.fixedtext.text
+msgctxt "listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_TABLEFIELDS.fixedtext.text"
+msgid "Existing fields"
+msgstr "Postojeća polja"
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_DISPLAYEDFIELD.fixedtext.text
+msgid "Display field"
+msgstr "Prikaži polje"
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_COMBOBOX.string.text
+msgid "The contents of the field selected will be shown in the combo box list."
+msgstr "Sadržaj izabranog polja će biti vidljiv u comobox-u."
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.string.text
+msgid ""
+"The contents of the selected field will be shown in the list box if the "
+"linked fields are identical."
+msgstr ""
+"Sadržaj izabranih polja će biti vidljivi u listi ako i samo ako su povezana "
+"polja identična."
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.tabpage.text
+msgctxt "listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.tabpage.text"
+msgid "Field Selection"
+msgstr "Izbor polja"
+
+#: listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.fixedtext.text
+msgid ""
+"This is where you select fields with matching contents so that the value "
+"from the display field will be shown."
+msgstr ""
+"Ovdje izabirate polja sa podudarajućim sadržajem tako da će biti prikazana "
+"vrijednost 'display' polja."
+
+#: listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.fixedtext.text
+msgid "Field from the ~Value Table"
+msgstr "Polje iz tabele s ~vrijednostima"
+
+#: listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_TABLEFIELD.fixedtext.text
+msgid "Field from the ~List Table"
+msgstr "Polje iz ~tabele sa spiskom"
+
+#: listcombopages.src#RID_PAGE_LCW_FIELDLINK.tabpage.text
+msgid "Field Link"
+msgstr "Link na polje"
+
+#: listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.string.text
+msgid ""
+"You can either save the value of the combo box in a database field or use it "
+"for display purposes."
+msgstr ""
+"Možete ili snimiti vrijednosti comboboxa u polje baze podataka ili koristiti "
+"ga za svrhu prikazivanja."
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: ~\n"
+
+#: fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.pageitem.text
+msgctxt "fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.pageitem.text"
+msgid "Font"
+msgstr "Font"
+
+#: fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS_EXT.pageitem.text
+msgid "Font Effects"
+msgstr "Efekti fonta"
+
+#: fontdialog.src#RID_TABDLG_FONTDIALOG.tabdialog.text
+msgid "Character"
+msgstr "Znak"
+
+#: formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.fixedtext.text
+msgid ""
+"Sub forms can be used to display detailed data about the current record of "
+"the master form. To do this, you can specify which columns in the sub form "
+"match which columns in the master form."
+msgstr ""
+"Podforme se mogu koristiti za detaljni prikaz trenutnog zapisa glavne forme. "
+"Da bi koristili podforme, možete izabrati koje kolone u podformi odgovaraju "
+"kolonama u glavnoj formi."
+
+#: formlinkdialog.src#RID_DLG_FORMLINKS.modaldialog.text
+msgid "Link fields"
+msgstr "Polja za linkove"
+
+#: formlinkdialog.src#PB_SUGGEST.pushbutton.text
+msgid "Suggest"
+msgstr "Predloži"
+
+#: formlinkdialog.src#STR_DETAIL_FORM.string.text
+msgid "Sub Form"
+msgstr "Podforma"
+
+#: formlinkdialog.src#STR_MASTER_FORM.string.text
+msgid "Master Form"
+msgstr "Glavna forma"
+
+#: formlinkdialog.src#STR_ERROR_RETRIEVING_COLUMNS.string.text
+msgid "The columns of '#' could not be retrieved."
+msgstr "Kolone od '#' se ne mogu povratiti."
+
+#: formres.src#RID_STR_EDITMASK.string.text
+msgid "Edit mask"
+msgstr "Uredi masku"
+
+#: formres.src#RID_STR_LITERALMASK.string.text
+msgid "Literal mask"
+msgstr "Doslovna maska"
+
+#: formres.src#RID_STR_READONLY.string.text
+msgctxt "formres.src#RID_STR_READONLY.string.text"
+msgid "Read-only"
+msgstr "Samo za čitanje"
+
+#: formres.src#RID_STR_ENABLED.string.text
+msgid "Enabled"
+msgstr "Uključeno"
+
+#: formres.src#RID_STR_ENABLE_VISIBLE.string.text
+msgid "Visible"
+msgstr "Vidljivo"
+
+#: formres.src#RID_STR_AUTOCOMPLETE.string.text
+msgid "AutoFill"
+msgstr "Automatski popuni"
+
+#: formres.src#RID_STR_LINECOUNT.string.text
+msgid "Line count"
+msgstr "Brojanje linija"
+
+#: formres.src#RID_STR_MAXTEXTLEN.string.text
+msgid "Max. text length"
+msgstr "Maks. dužina teksta"
+
+#: formres.src#RID_STR_SPIN.string.text
+msgid "Spin Button"
+msgstr "Obrtno dugme"
+
+#: formres.src#RID_STR_STRICTFORMAT.string.text
+msgid "Strict format"
+msgstr "Striktan format"
+
+#: formres.src#RID_STR_SHOWTHOUSANDSEP.string.text
+msgid "Thousands separator"
+msgstr "Separator hiljada"
+
+#: formres.src#RID_STR_PRINTABLE.string.text
+msgid "Printable"
+msgstr "Štampaj"
+
+#: formres.src#RID_STR_TARGET_URL.string.text
+msgctxt "formres.src#RID_STR_TARGET_URL.string.text"
+msgid "URL"
+msgstr "URL"
+
+#: formres.src#RID_STR_TARGET_FRAME.string.text
+msgctxt "formres.src#RID_STR_TARGET_FRAME.string.text"
+msgid "Frame"
+msgstr "Okvir"
+
+#: formres.src#RID_STR_HELPTEXT.string.text
+msgid "Help text"
+msgstr "Pomoć"
+
+#: formres.src#RID_STR_HELPURL.string.text
+msgid "Help URL"
+msgstr "URL za pomoć"
+
+#: formres.src#RID_STR_TAG.string.text
+msgid "Additional information"
+msgstr "Dodatne informacije"
+
+#: formres.src#RID_STR_ECHO_CHAR.string.text
+msgid "Password character"
+msgstr "Karakter šifre"
+
+#: formres.src#RID_STR_TRISTATE.string.text
+msgid "Tristate"
+msgstr "Tri stanja"
+
+#: formres.src#RID_STR_EMPTY_IS_NULL.string.text
+msgid "Empty string is NULL"
+msgstr "Prazan string je NULL"
+
+#: formres.src#RID_STR_DECIMAL_ACCURACY.string.text
+msgid "Decimal accuracy"
+msgstr "Decimalna tačnost"
+
+#: formres.src#RID_STR_IMAGE_URL.string.text
+msgid "Graphics"
+msgstr "Ilustracije"
+
+#: formres.src#RID_STR_DEFAULT_SELECT_SEQ.string.text
+msgid "Default selection"
+msgstr "Uobičajeni izbor"
+
+#: formres.src#RID_STR_DEFAULT_BUTTON.string.text
+msgid "Default button"
+msgstr "Uobičajeno dugme"
+
+#: formres.src#RID_STR_LABELCONTROL.string.text
+msgctxt "formres.src#RID_STR_LABELCONTROL.string.text"
+msgid "Label Field"
+msgstr "Polje oznake"
+
+#: formres.src#RID_STR_LABEL.string.text
+msgid "Label"
+msgstr "Oznaka"
+
+#: formres.src#RID_STR_ALIGN.string.text
+msgid "Alignment"
+msgstr "Poravnanje"
+
+#: formres.src#RID_STR_VERTICAL_ALIGN.string.text
+msgid "Vert. Alignment"
+msgstr "Vert. poravnanje"
+
+#: formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.1.string.text
+msgid "Top"
+msgstr "Vrh"
+
+#: formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.2.string.text
+msgid "Middle"
+msgstr "Sredina"
+
+#: formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.3.string.text
+msgid "Bottom"
+msgstr "Dno"
+
+#: formres.src#RID_STR_IMAGEPOSITION.string.text
+msgid "Graphics alignment"
+msgstr "Poravnanje grafike"
+
+#: formres.src#RID_STR_FONT.string.text
+msgctxt "formres.src#RID_STR_FONT.string.text"
+msgid "Font"
+msgstr "Font"
+
+#: formres.src#RID_STR_BACKGROUNDCOLOR.string.text
+msgid "Background color"
+msgstr "Boja pozadine"
+
+#: formres.src#RID_STR_BORDER.string.text
+msgid "Border"
+msgstr "Rub"
+
+#: formres.src#RID_STR_ICONSIZE.string.text
+msgid "Icon size"
+msgstr "Veličina ikone"
+
+#: formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.1.string.text
+msgid "Small"
+msgstr "Mala"
+
+#: formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.2.string.text
+msgid "Large"
+msgstr "Velika"
+
+#: formres.src#RID_STR_SHOW_POSITION.string.text
+msgid "Positioning"
+msgstr "Pozicioniranje"
+
+#: formres.src#RID_STR_SHOW_NAVIGATION.string.text
+msgid "Navigation"
+msgstr "Navigacija"
+
+#: formres.src#RID_STR_SHOW_RECORDACTIONS.string.text
+msgid "Acting on a record"
+msgstr "Primjenjujem na zapis"
+
+#: formres.src#RID_STR_SHOW_FILTERSORT.string.text
+msgid "Filtering / Sorting"
+msgstr "Filtriranje / Sortiranje"
+
+#: formres.src#RID_STR_HSCROLL.string.text
+msgid "Horizontal scroll bar"
+msgstr "Vodoravni klizač"
+
+#: formres.src#RID_STR_VSCROLL.string.text
+msgid "Vertical scroll bar"
+msgstr "Uspravni klizač"
+
+#: formres.src#RID_STR_WORDBREAK.string.text
+msgid "Word break"
+msgstr "Prelom riječi"
+
+#: formres.src#RID_STR_MULTILINE.string.text
+msgid "Multiline input"
+msgstr "Višelinijski unos"
+
+#: formres.src#RID_STR_MULTISELECTION.string.text
+msgid "Multiselection"
+msgstr "Višenamjenski izbor"
+
+#: formres.src#RID_STR_NAME.string.text
+msgid "Name"
+msgstr "Ime"
+
+#: formres.src#RID_STR_TABINDEX.string.text
+msgid "Tab order"
+msgstr "Redoslijed tabova"
+
+#: formres.src#RID_STR_WHEEL_BEHAVIOR.string.text
+msgid "Mouse wheel scroll"
+msgstr "Okretanje točkića miša"
+
+#: formres.src#RID_STR_FILTER.string.text
+msgid "Filter"
+msgstr "Filter"
+
+#: formres.src#RID_STR_SORT_CRITERIA.string.text
+msgid "Sort"
+msgstr "Sortiraj"
+
+#: formres.src#RID_STR_RECORDMARKER.string.text
+msgid "Record marker"
+msgstr "Marker zapisa"
+
+#: formres.src#RID_STR_FILTERPROPOSAL.string.text
+msgid "Filter proposal"
+msgstr "Prijedlog filtera"
+
+#: formres.src#RID_STR_NAVIGATION.string.text
+msgid "Navigation bar"
+msgstr "Navigacijska traka"
+
+#: formres.src#RID_STR_CYCLE.string.text
+msgid "Cycle"
+msgstr "Krug"
+
+#: formres.src#RID_STR_TABSTOP.string.text
+msgid "Tabstop"
+msgstr "Tab"
+
+#: formres.src#RID_STR_CONTROLSOURCE.string.text
+msgid "Data field"
+msgstr "Polje podataka"
+
+#: formres.src#RID_STR_DROPDOWN.string.text
+msgid "Dropdown"
+msgstr "Padajući"
+
+#: formres.src#RID_STR_BOUNDCOLUMN.string.text
+msgid "Bound field"
+msgstr "Vezano polje"
+
+#: formres.src#RID_STR_LISTSOURCE.string.text
+msgid "List content"
+msgstr "Lista sadržaja"
+
+#: formres.src#RID_STR_LISTSOURCETYPE.string.text
+msgid "Type of list contents"
+msgstr "Vrsta liste sadržaja"
+
+#: formres.src#RID_STR_CURSORSOURCE.string.text
+msgid "Content"
+msgstr "Sadržaj"
+
+#: formres.src#RID_STR_CURSORSOURCETYPE.string.text
+msgid "Content type"
+msgstr "Vrsta sadržaja"
+
+#: formres.src#RID_STR_ALLOW_ADDITIONS.string.text
+msgid "Allow additions"
+msgstr "Dozvoli dodatke"
+
+#: formres.src#RID_STR_ALLOW_DELETIONS.string.text
+msgid "Allow deletions"
+msgstr "Dozvoli brisanje"
+
+#: formres.src#RID_STR_ALLOW_EDITS.string.text
+msgid "Allow modifications"
+msgstr "Dozvoli izmjene"
+
+#: formres.src#RID_STR_DATAENTRY.string.text
+msgid "Add data only"
+msgstr "Dodaj samo podatke"
+
+#: formres.src#RID_STR_DATASOURCE.string.text
+msgid "Data source"
+msgstr "Izvor podataka"
+
+#: formres.src#RID_STR_MASTERFIELDS.string.text
+msgid "Link master fields"
+msgstr "Poveži nadređena polja"
+
+#: formres.src#RID_STR_SLAVEFIELDS.string.text
+msgid "Link slave fields"
+msgstr "Poveži podređena polja"
+
+#: formres.src#RID_STR_VALUEMIN.string.text
+msgid "Value min."
+msgstr "Min. vrijednost"
+
+#: formres.src#RID_STR_VALUEMAX.string.text
+msgid "Value max."
+msgstr "Maks. vrijednost"
+
+#: formres.src#RID_STR_VALUESTEP.string.text
+msgid "Incr./decrement value"
+msgstr "Povećaj/smanji vrijednost"
+
+#: formres.src#RID_STR_CURRENCYSYMBOL.string.text
+msgid "Currency symbol"
+msgstr "Simbol valute"
+
+#: formres.src#RID_STR_DATEMIN.string.text
+msgid "Date min."
+msgstr "Datum min."
+
+#: formres.src#RID_STR_DATEMAX.string.text
+msgid "Date max."
+msgstr "Datum maks."
+
+#: formres.src#RID_STR_DATEFORMAT.string.text
+msgid "Date format"
+msgstr "Format datuma"
+
+#: formres.src#RID_STR_SELECTEDITEMS.string.text
+msgid "Selection"
+msgstr "Izbor"
+
+#: formres.src#RID_STR_TIMEMIN.string.text
+msgid "Time min."
+msgstr "Min. vrijeme"
+
+#: formres.src#RID_STR_TIMEMAX.string.text
+msgid "Time max."
+msgstr "Maks. vrijeme"
+
+#: formres.src#RID_STR_TIMEFORMAT.string.text
+msgid "Time format"
+msgstr "Format vremena"
+
+#: formres.src#RID_STR_CURRSYM_POSITION.string.text
+msgid "Prefix symbol"
+msgstr "Prefiksni simbol"
+
+#: formres.src#RID_STR_VALUE.string.text
+msgid "Value"
+msgstr "Vrijednost"
+
+#: formres.src#RID_STR_FORMATKEY.string.text
+msgid "Formatting"
+msgstr "Formatiranje"
+
+#: formres.src#RID_STR_CLASSID.string.text
+msgid "Class ID"
+msgstr "ID klase"
+
+#: formres.src#RID_STR_HEIGHT.string.text
+msgid "Height"
+msgstr "Visina"
+
+#: formres.src#RID_STR_WIDTH.string.text
+msgid "Width"
+msgstr "Širina"
+
+#: formres.src#RID_STR_LISTINDEX.string.text
+msgid "List index"
+msgstr "Indeks liste"
+
+#: formres.src#RID_STR_ROWHEIGHT.string.text
+msgid "Row height"
+msgstr "Visina reda"
+
+#: formres.src#RID_STR_FILLCOLOR.string.text
+msgid "Fill color"
+msgstr "Boja za bojenje"
+
+#: formres.src#RID_STR_LINECOLOR.string.text
+msgid "Line color"
+msgstr "Boja linije"
+
+#: formres.src#RID_STR_REFVALUE.string.text
+msgid "Reference value (on)"
+msgstr "Referenta vrijednost (uklj.)"
+
+#: formres.src#RID_STR_UNCHECKEDREFVALUE.string.text
+msgid "Reference value (off)"
+msgstr "Referenta vrijednost (isklj.)"
+
+#: formres.src#RID_STR_STRINGITEMLIST.string.text
+msgid "List entries"
+msgstr "Lista unosa"
+
+#: formres.src#RID_STR_BUTTONTYPE.string.text
+msgid "Action"
+msgstr "Akcija"
+
+#: formres.src#RID_STR_SUBMIT_ACTION.string.text
+msgctxt "formres.src#RID_STR_SUBMIT_ACTION.string.text"
+msgid "URL"
+msgstr "URL"
+
+#: formres.src#RID_STR_SUBMIT_METHOD.string.text
+msgid "Type of submission"
+msgstr "Vrsta predaje"
+
+#: formres.src#RID_STR_DEFAULT_STATE.string.text
+msgid "Default status"
+msgstr "Uobičajeno stanje"
+
+#: formres.src#RID_STR_SUBMIT_ENCODING.string.text
+msgid "Submission encoding"
+msgstr "Kodiranje predaje"
+
+#: formres.src#RID_STR_DEFAULTVALUE.string.text
+msgid "Default value"
+msgstr "Uobičajena vrijednost"
+
+#: formres.src#RID_STR_DEFAULTTEXT.string.text
+msgid "Default text"
+msgstr "Uobičajeni tekst"
+
+#: formres.src#RID_STR_DEFAULTDATE.string.text
+msgid "Default date"
+msgstr "Uobičajeni datum"
+
+#: formres.src#RID_STR_DEFAULTTIME.string.text
+msgid "Default time"
+msgstr "Uobičajeno vrijeme"
+
+#: formres.src#RID_STR_SUBMIT_TARGET.string.text
+msgctxt "formres.src#RID_STR_SUBMIT_TARGET.string.text"
+msgid "Frame"
+msgstr "Okvir"
+
+#: formres.src#RID_RSC_ENUM_BORDER_TYPE.1.string.text
+msgid "Without frame"
+msgstr "Bez okvira"
+
+#: formres.src#RID_RSC_ENUM_BORDER_TYPE.2.string.text
+msgid "3D look"
+msgstr "3D izgled"
+
+#: formres.src#RID_RSC_ENUM_BORDER_TYPE.3.string.text
+msgctxt "formres.src#RID_RSC_ENUM_BORDER_TYPE.3.string.text"
+msgid "Flat"
+msgstr "Ravno"
+
+#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.1.string.text
+msgid "Valuelist"
+msgstr "Lista vrijednosti"
+
+#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.string.text
+msgctxt "formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.string.text"
+msgid "Table"
+msgstr "Tabela"
+
+#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.string.text
+msgctxt "formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.string.text"
+msgid "Query"
+msgstr "Upit"
+
+#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.4.string.text
+msgid "Sql"
+msgstr "Sql"
+
+#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.5.string.text
+msgid "Sql [Native]"
+msgstr "Sql [Izvorni]"
+
+#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.6.string.text
+msgid "Tablefields"
+msgstr "Polja tabele"
+
+#: formres.src#RID_RSC_ENUM_ALIGNMENT.1.string.text
+msgid "Left"
+msgstr "Lijevo"
+
+#: formres.src#RID_RSC_ENUM_ALIGNMENT.2.string.text
+msgid "Center"
+msgstr "Sredina"
+
+#: formres.src#RID_RSC_ENUM_ALIGNMENT.3.string.text
+msgid "Right"
+msgstr "Desno"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_BUTTONTYPE.1.string.text"
+msgid "None"
+msgstr "Ništa"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.2.string.text
+msgid "Submit form"
+msgstr "Pošalji formular"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.3.string.text
+msgid "Reset form"
+msgstr "Obriši sve unose"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.4.string.text
+msgid "Open document/web page"
+msgstr "Otvori dokument/web stranicu"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.5.string.text
+msgid "First record"
+msgstr "Prvi zapis"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.6.string.text
+msgid "Previous record"
+msgstr "Prošli zapis"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.7.string.text
+msgid "Next record"
+msgstr "Sljedeći zapis"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.8.string.text
+msgid "Last record"
+msgstr "Zadnji zapis"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.9.string.text
+msgid "Save record"
+msgstr "Sačuvaj zapis"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.10.string.text
+msgid "Undo data entry"
+msgstr "Poništi prošli unos"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.11.string.text
+msgid "New record"
+msgstr "Novi zapis"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.12.string.text
+msgid "Delete record"
+msgstr "Obriši zapis"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.13.string.text
+msgid "Refresh form"
+msgstr "Osvježi formular"
+
+#: formres.src#RID_RSC_ENUM_SUBMIT_METHOD.1.string.text
+msgid "Get"
+msgstr "Dohvati"
+
+#: formres.src#RID_RSC_ENUM_SUBMIT_METHOD.2.string.text
+msgid "Post"
+msgstr "Oglasi"
+
+#: formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.string.text"
+msgid "URL"
+msgstr "URL"
+
+#: formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.2.string.text
+msgid "Multipart"
+msgstr "Višedjelna"
+
+#: formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.string.text
+msgctxt "formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.string.text"
+msgid "Text"
+msgstr "Tekst"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.1.string.text
+msgid "Standard (short)"
+msgstr "Standardan (kratki)"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.2.string.text
+msgid "Standard (short YY)"
+msgstr "Standardan (kratko YY)"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.3.string.text
+msgid "Standard (short YYYY)"
+msgstr "Standardan (kratki YYYY)"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.4.string.text
+msgid "Standard (long)"
+msgstr "Standardan (dugi)"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.5.string.text
+msgid "DD/MM/YY"
+msgstr "DD/MM/YY"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.6.string.text
+msgid "MM/DD/YY"
+msgstr "MM/DD/YY"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.7.string.text
+msgid "YY/MM/DD"
+msgstr "YY/MM/DD"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.8.string.text
+msgid "DD/MM/YYYY"
+msgstr "DD/MM/YYYY"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.9.string.text
+msgid "MM/DD/YYYY"
+msgstr "MM/DD/YYYY"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.10.string.text
+msgid "YYYY/MM/DD"
+msgstr "YYYY/MM/DD"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.11.string.text
+msgid "YY-MM-DD"
+msgstr "YY-MM-DD"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.12.string.text
+msgid "YYYY-MM-DD"
+msgstr "YYYY-MM-DD"
+
+#: formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.1.string.text
+msgid "13:45"
+msgstr "13:45"
+
+#: formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.2.string.text
+msgid "13:45:00"
+msgstr "13:45:00"
+
+#: formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.3.string.text
+msgid "01:45 PM"
+msgstr "01:45 PM"
+
+#: formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.4.string.text
+msgid "01:45:00 PM"
+msgstr "01:45:00 PM"
+
+#: formres.src#RID_RSC_ENUM_CHECKED.1.string.text
+msgid "Not Selected"
+msgstr "Nije odabrano"
+
+#: formres.src#RID_RSC_ENUM_CHECKED.2.string.text
+msgid "Selected"
+msgstr "Odabrano"
+
+#: formres.src#RID_RSC_ENUM_CHECKED.3.string.text
+msgid "Not Defined"
+msgstr "Nije definisano"
+
+#: formres.src#RID_RSC_ENUM_CYCLE.1.string.text
+msgid "All records"
+msgstr "Svi zapisi"
+
+#: formres.src#RID_RSC_ENUM_CYCLE.2.string.text
+msgid "Active record"
+msgstr "Trenutni zapis"
+
+#: formres.src#RID_RSC_ENUM_CYCLE.3.string.text
+msgid "Current page"
+msgstr "Trenutna stranica"
+
+#: formres.src#RID_RSC_ENUM_NAVIGATION.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_NAVIGATION.1.string.text"
+msgid "No"
+msgstr "Ne"
+
+#: formres.src#RID_RSC_ENUM_NAVIGATION.2.string.text
+msgctxt "formres.src#RID_RSC_ENUM_NAVIGATION.2.string.text"
+msgid "Yes"
+msgstr "Da"
+
+#: formres.src#RID_RSC_ENUM_NAVIGATION.3.string.text
+msgid "Parent Form"
+msgstr "Formular prije ovog"
+
+#: formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.string.text"
+msgid "None"
+msgstr "Ništa"
+
+#: formres.src#RID_RSC_ENUM_SELECTION_TYPE.2.string.text
+msgid "Single"
+msgstr "Jednostruki"
+
+#: formres.src#RID_RSC_ENUM_SELECTION_TYPE.3.string.text
+msgid "Multi"
+msgstr "Višestruki"
+
+#: formres.src#RID_RSC_ENUM_SELECTION_TYPE.4.string.text
+msgid "Range"
+msgstr "Opseg"
+
+#: formres.src#RID_STR_EVT_APPROVEPARAMETER.string.text
+msgid "Fill parameters"
+msgstr "Parametri za punjenje"
+
+#: formres.src#RID_STR_EVT_ACTIONPERFORMED.string.text
+msgid "Execute action"
+msgstr "Izvrši akciju"
+
+#: formres.src#RID_STR_EVT_AFTERUPDATE.string.text
+msgid "After updating"
+msgstr "Nakon osvježenja"
+
+#: formres.src#RID_STR_EVT_BEFOREUPDATE.string.text
+msgid "Before updating"
+msgstr "Prije ažuriranja"
+
+#: formres.src#RID_STR_EVT_APPROVEROWCHANGE.string.text
+msgid "Before record action"
+msgstr "Prije akcije zapisa"
+
+#: formres.src#RID_STR_EVT_ROWCHANGE.string.text
+msgid "After record action"
+msgstr "Nakon akcije zapisa"
+
+#: formres.src#RID_STR_EVT_CONFIRMDELETE.string.text
+msgid "Confirm deletion"
+msgstr "Potvrdi brisanje"
+
+#: formres.src#RID_STR_EVT_ERROROCCURED.string.text
+msgid "Error occurred"
+msgstr "Došlo je do greške"
+
+#: formres.src#RID_STR_EVT_FOCUSGAINED.string.text
+msgid "When receiving focus"
+msgstr "Kada dobija fokus"
+
+#: formres.src#RID_STR_EVT_FOCUSLOST.string.text
+msgid "When losing focus"
+msgstr "Kada gubi fokus"
+
+#: formres.src#RID_STR_EVT_ITEMSTATECHANGED.string.text
+msgid "Item status changed"
+msgstr "Status stavke je promijenjen"
+
+#: formres.src#RID_STR_EVT_KEYTYPED.string.text
+msgid "Key pressed"
+msgstr "Tipka je pritisnuta"
+
+#: formres.src#RID_STR_EVT_KEYUP.string.text
+msgid "Key released"
+msgstr "Tipka je puštena"
+
+#: formres.src#RID_STR_EVT_LOADED.string.text
+msgid "When loading"
+msgstr "Kada se učitava"
+
+#: formres.src#RID_STR_EVT_RELOADING.string.text
+msgid "Before reloading"
+msgstr "Prije osvježavanja"
+
+#: formres.src#RID_STR_EVT_RELOADED.string.text
+msgid "When reloading"
+msgstr "Kada se osvježava"
+
+#: formres.src#RID_STR_EVT_MOUSEDRAGGED.string.text
+msgid "Mouse moved while key pressed"
+msgstr "Miš je pomjeren dok je tipka pritisnuta"
+
+#: formres.src#RID_STR_EVT_MOUSEENTERED.string.text
+msgid "Mouse inside"
+msgstr "Miš iznutra"
+
+#: formres.src#RID_STR_EVT_MOUSEEXITED.string.text
+msgid "Mouse outside"
+msgstr "Miš izvana"
+
+#: formres.src#RID_STR_EVT_MOUSEMOVED.string.text
+msgid "Mouse moved"
+msgstr "Miš pomjeren"
+
+#: formres.src#RID_STR_EVT_MOUSEPRESSED.string.text
+msgid "Mouse button pressed"
+msgstr "Dugme miša pritisnuto"
+
+#: formres.src#RID_STR_EVT_MOUSERELEASED.string.text
+msgid "Mouse button released"
+msgstr "Dugme miša pušteno"
+
+#: formres.src#RID_STR_EVT_POSITIONING.string.text
+msgid "Before record change"
+msgstr "Prije promjene zapisa"
+
+#: formres.src#RID_STR_EVT_POSITIONED.string.text
+msgid "After record change"
+msgstr "Nakon promjene zapisa"
+
+#: formres.src#RID_STR_EVT_RESETTED.string.text
+msgid "After resetting"
+msgstr "Nakon ponovnog pokretanja"
+
+#: formres.src#RID_STR_EVT_APPROVERESETTED.string.text
+msgid "Prior to reset"
+msgstr "Prije poništavanja"
+
+#: formres.src#RID_STR_EVT_APPROVEACTIONPERFORMED.string.text
+msgid "Approve action"
+msgstr "Potvrdi akciju"
+
+#: formres.src#RID_STR_EVT_SUBMITTED.string.text
+msgid "Before submitting"
+msgstr "Prije slanja"
+
+#: formres.src#RID_STR_EVT_TEXTCHANGED.string.text
+msgid "Text modified"
+msgstr "Tekst je promijenjen"
+
+#: formres.src#RID_STR_EVT_UNLOADING.string.text
+msgid "Before unloading"
+msgstr "Prije zatvaranja"
+
+#: formres.src#RID_STR_EVT_UNLOADED.string.text
+msgid "When unloading"
+msgstr "Kada se zatvara"
+
+#: formres.src#RID_STR_EVT_CHANGED.string.text
+msgid "Changed"
+msgstr "Izmijenjeno"
+
+#: formres.src#RID_STR_EVENTS.string.text
+msgid "Events"
+msgstr "Događaji"
+
+#: formres.src#RID_STR_ESCAPE_PROCESSING.string.text
+msgid "Analyze SQL command"
+msgstr "Analiziraj SQL komandu"
+
+#: formres.src#RID_STR_POSITIONX.string.text
+msgid "PositionX"
+msgstr "PoložajX"
+
+#: formres.src#RID_STR_POSITIONY.string.text
+msgid "PositionY"
+msgstr "PoložajY"
+
+#: formres.src#RID_STR_TITLE.string.text
+msgid "Title"
+msgstr "Naslov"
+
+#: formres.src#RID_STR_STEP.string.text
+msgid "Page (step)"
+msgstr "Stranica (korak)"
+
+#: formres.src#RID_STR_PROGRESSVALUE.string.text
+msgid "Progress value"
+msgstr "Vrijednost napretka"
+
+#: formres.src#RID_STR_PROGRESSVALUE_MIN.string.text
+msgid "Progress value min."
+msgstr "Minimalna vrijednost napretka"
+
+#: formres.src#RID_STR_PROGRESSVALUE_MAX.string.text
+msgid "Progress value max."
+msgstr "Maks. vrijednost napretka"
+
+#: formres.src#RID_STR_SCROLLVALUE.string.text
+msgid "Scroll value"
+msgstr "Vrijednost klizača"
+
+#: formres.src#RID_STR_SCROLLVALUE_MAX.string.text
+msgid "Scroll value max."
+msgstr "Maks. vrijednost klizača"
+
+#: formres.src#RID_STR_SCROLLVALUE_MIN.string.text
+msgid "Scroll value min."
+msgstr "Min. vrijednost klizača"
+
+#: formres.src#RID_STR_DEFAULT_SCROLLVALUE.string.text
+msgid "Default scroll value"
+msgstr "Uobičajena vrijednost klizača"
+
+#: formres.src#RID_STR_LINEINCREMENT.string.text
+msgid "Small change"
+msgstr "Manja promjena"
+
+#: formres.src#RID_STR_BLOCKINCREMENT.string.text
+msgid "Large change"
+msgstr "Veća promjena"
+
+#: formres.src#RID_STR_REPEAT_DELAY.string.text
+msgid "Delay"
+msgstr "Zakašnjenje"
+
+#: formres.src#RID_STR_REPEAT.string.text
+msgid "Repeat"
+msgstr "Ponovi"
+
+#: formres.src#RID_STR_VISIBLESIZE.string.text
+msgid "Visible size"
+msgstr "Vidljiva veličina"
+
+#: formres.src#RID_STR_ORIENTATION.string.text
+msgid "Orientation"
+msgstr "Orijentacija"
+
+#: formres.src#RID_RSC_ENUM_ORIENTATION.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_ORIENTATION.1.string.text"
+msgid "Horizontal"
+msgstr "Vodoravno"
+
+#: formres.src#RID_RSC_ENUM_ORIENTATION.2.string.text
+msgctxt "formres.src#RID_RSC_ENUM_ORIENTATION.2.string.text"
+msgid "Vertical"
+msgstr "Uspravno"
+
+#: formres.src#RID_STR_EVT_ADJUSTMENTVALUECHANGED.string.text
+msgid "While adjusting"
+msgstr "Prilikom prilagođavanja"
+
+#: formres.src#RID_STR_DATE.string.text
+msgid "Date"
+msgstr "Datum"
+
+#: formres.src#RID_STR_STATE.string.text
+msgid "State"
+msgstr "Stanje"
+
+#: formres.src#RID_STR_TIME.string.text
+msgid "Time"
+msgstr "Vrijeme"
+
+#: formres.src#RID_STR_SCALEIMAGE.string.text
+msgid "Scale"
+msgstr "Omjer"
+
+#: formres.src#RID_STR_PUSHBUTTONTYPE.string.text
+msgid "Button type"
+msgstr "Vrsta dugmeta"
+
+#: formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.string.text"
+msgid "Default"
+msgstr "Uobičajeno"
+
+#: formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.2.string.text
+msgid "OK"
+msgstr "U redu"
+
+#: formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.3.string.text
+msgid "Cancel"
+msgstr "Odustani"
+
+#: formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.string.text
+msgctxt "formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.string.text"
+msgid "Help"
+msgstr "Pomoć"
+
+#: formres.src#RID_STR_UNABLETOCONNECT.string.text
+msgid "The connection to the data source \"$name$\" could not be established."
+msgstr "Veza za izvorom podatka \"$name$\" ne može biti uspostavljena."
+
+#: formres.src#RID_STR_TEXT.string.text
+msgctxt "formres.src#RID_STR_TEXT.string.text"
+msgid "Text"
+msgstr "Tekst"
+
+#: formres.src#RID_STR_BOUND_CELL.string.text
+msgid "Linked cell"
+msgstr "Uvezana ćelija"
+
+#: formres.src#RID_STR_LIST_CELL_RANGE.string.text
+msgid "Source cell range"
+msgstr "Izvor opsega ćelije"
+
+#: formres.src#RID_STR_CELL_EXCHANGE_TYPE.string.text
+msgid "Contents of the linked cell"
+msgstr "Sadržaj uvezane ćeije"
+
+#: formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.1.string.text
+msgid "The selected entry"
+msgstr "Izabrani unos"
+
+#: formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.2.string.text
+msgid "Position of the selected entry"
+msgstr "Pozicija izabranog unosa"
+
+#: formres.src#RID_STR_SHOW_SCROLLBARS.string.text
+msgid "Scrollbars"
+msgstr "Klizači"
+
+#: formres.src#RID_RSC_ENUM_TEXTTYPE.1.string.text
+msgid "Single-line"
+msgstr "Jednolinijski"
+
+#: formres.src#RID_RSC_ENUM_TEXTTYPE.2.string.text
+msgid "Multi-line"
+msgstr "Višelinijski"
+
+#: formres.src#RID_RSC_ENUM_TEXTTYPE.3.string.text
+msgid "Multi-line with formatting"
+msgstr "Višelinijski sa formatiranjem"
+
+#: formres.src#RID_STR_SYMBOLCOLOR.string.text
+msgid "Symbol color"
+msgstr "Boja simbola"
+
+#: formres.src#RID_STR_LINEEND_FORMAT.string.text
+msgid "Text lines end with"
+msgstr "Tekstualne linije završavaju sa"
+
+#: formres.src#RID_RSC_ENUM_LINEEND_FORMAT.1.string.text
+msgid "LF (Unix)"
+msgstr "LF (Unix)"
+
+#: formres.src#RID_RSC_ENUM_LINEEND_FORMAT.2.string.text
+msgid "CR+LF (Windows)"
+msgstr "CR+LF (Windows)"
+
+#: formres.src#RID_RSC_ENUM_SCROLLBARS.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_SCROLLBARS.1.string.text"
+msgid "None"
+msgstr "Ništa"
+
+#: formres.src#RID_RSC_ENUM_SCROLLBARS.2.string.text
+msgctxt "formres.src#RID_RSC_ENUM_SCROLLBARS.2.string.text"
+msgid "Horizontal"
+msgstr "Vodoravno"
+
+#: formres.src#RID_RSC_ENUM_SCROLLBARS.3.string.text
+msgctxt "formres.src#RID_RSC_ENUM_SCROLLBARS.3.string.text"
+msgid "Vertical"
+msgstr "Uspravno"
+
+#: formres.src#RID_RSC_ENUM_SCROLLBARS.4.string.text
+msgid "Both"
+msgstr "Oba"
+
+#: formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.string.text"
+msgid "Table"
+msgstr "Tabela"
+
+#: formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.string.text
+msgctxt "formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.string.text"
+msgid "Query"
+msgstr "Upit"
+
+#: formres.src#RID_RSC_ENUM_COMMAND_TYPE.3.string.text
+msgid "SQL command"
+msgstr "SQL naredba"
+
+#: formres.src#RID_STR_TOGGLE.string.text
+msgid "Toggle"
+msgstr "Prebaci"
+
+#: formres.src#RID_STR_FOCUSONCLICK.string.text
+msgid "Take Focus on Click"
+msgstr "Preuzmi fokus nakon klika"
+
+#: formres.src#RID_STR_HIDEINACTIVESELECTION.string.text
+msgid "Hide selection"
+msgstr "Sakrij izbor"
+
+#: formres.src#RID_STR_VISUALEFFECT.string.text
+msgid "Style"
+msgstr "Stil"
+
+#: formres.src#RID_RSC_ENUM_VISUALEFFECT.1.string.text
+msgid "3D"
+msgstr "3D"
+
+#: formres.src#RID_RSC_ENUM_VISUALEFFECT.2.string.text
+msgctxt "formres.src#RID_RSC_ENUM_VISUALEFFECT.2.string.text"
+msgid "Flat"
+msgstr "Ravno"
+
+#: formres.src#RID_STR_BORDERCOLOR.string.text
+msgid "Border color"
+msgstr "Boja ruba"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.1.string.text
+msgid "Left top"
+msgstr "Lijevo gore"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.2.string.text
+msgid "Left centered"
+msgstr "Lijevo centrirano"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.3.string.text
+msgid "Left bottom"
+msgstr "Lijevo dolje"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.4.string.text
+msgid "Right top"
+msgstr "Desno gore"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.5.string.text
+msgid "Right centered"
+msgstr "Desno centrirano"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.6.string.text
+msgid "Right bottom"
+msgstr "Desno dolje"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.7.string.text
+msgid "Above left"
+msgstr "Iznad lijevo"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.8.string.text
+msgid "Above centered"
+msgstr "Iznad centrirano"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.9.string.text
+msgid "Above right"
+msgstr "Iznad desno"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.10.string.text
+msgid "Below left"
+msgstr "Ispod lijevo"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.11.string.text
+msgid "Below centered"
+msgstr "Ispod centrirano"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.12.string.text
+msgid "Below right"
+msgstr "Ispod desno"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.13.string.text
+msgid "Centered"
+msgstr "Centrirano"
+
+#: formres.src#RID_STR_AUTOLINEBREAK.string.text
+msgid "Wrap text automatically"
+msgstr "Automatski prelomi tekst"
+
+#: formres.src#RID_STR_TEXTTYPE.string.text
+msgid "Text type"
+msgstr "Vrsta teksta"
+
+#: formres.src#RID_RSC_ENUM_SHOWHIDE.1.string.text
+msgid "Hide"
+msgstr "Sakrij"
+
+#: formres.src#RID_RSC_ENUM_SHOWHIDE.2.string.text
+msgid "Show"
+msgstr "Prikaži"
+
+#: formres.src#RID_STR_XML_DATA_MODEL.string.text
+msgid "XML data model"
+msgstr "XML model podataka"
+
+#: formres.src#RID_STR_BIND_EXPRESSION.string.text
+msgid "Binding expression"
+msgstr "Značenje izraza"
+
+#: formres.src#RID_STR_XSD_REQUIRED.string.text
+msgid "Required"
+msgstr "Zahtijevano"
+
+#: formres.src#RID_STR_LIST_BINDING.string.text
+msgid "List entry source"
+msgstr "Izlistaj unos podatka"
+
+#: formres.src#RID_STR_XSD_RELEVANT.string.text
+msgid "Relevant"
+msgstr "Bitan"
+
+#: formres.src#RID_STR_XSD_READONLY.string.text
+msgctxt "formres.src#RID_STR_XSD_READONLY.string.text"
+msgid "Read-only"
+msgstr "Samo za čitanje"
+
+#: formres.src#RID_STR_XSD_CONSTRAINT.string.text
+msgid "Constraint"
+msgstr "Ograničenje"
+
+#: formres.src#RID_STR_XSD_CALCULATION.string.text
+msgid "Calculation"
+msgstr "Izračunavanje"
+
+#: formres.src#RID_STR_XSD_DATA_TYPE.string.text
+msgid "Data type"
+msgstr "Vrsta podatka"
+
+#: formres.src#RID_STR_XSD_WHITESPACES.string.text
+msgid "Whitespaces"
+msgstr "Bijeli prostor"
+
+#: formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.1.string.text
+msgid "Preserve"
+msgstr "Sačuvaj"
+
+#: formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.2.string.text
+msgid "Replace"
+msgstr "Zamijeni"
+
+#: formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.3.string.text
+msgid "Collapse"
+msgstr "Zatvori"
+
+#: formres.src#RID_STR_XSD_PATTERN.string.text
+msgid "Pattern"
+msgstr "Uzorak"
+
+#: formres.src#RID_STR_XSD_LENGTH.string.text
+msgid "Length"
+msgstr "Dužina"
+
+#: formres.src#RID_STR_XSD_MIN_LENGTH.string.text
+msgid "Length (at least)"
+msgstr "Dužina (najmanja)"
+
+#: formres.src#RID_STR_XSD_MAX_LENGTH.string.text
+msgid "Length (at most)"
+msgstr "Dužina (najveća)"
+
+#: formres.src#RID_STR_XSD_TOTAL_DIGITS.string.text
+msgid "Digits (total)"
+msgstr "Cifre (ukupno)"
+
+#: formres.src#RID_STR_XSD_FRACTION_DIGITS.string.text
+msgid "Digits (fraction)"
+msgstr "Cifre (dio)"
+
+#: formres.src#RID_STR_XSD_MAX_INCLUSIVE.string.text
+msgid "Max. (inclusive)"
+msgstr "Maks. (uključivo)"
+
+#: formres.src#RID_STR_XSD_MAX_EXCLUSIVE.string.text
+msgid "Max. (exclusive)"
+msgstr "Maks. (isključivo)"
+
+#: formres.src#RID_STR_XSD_MIN_INCLUSIVE.string.text
+msgid "Min. (inclusive)"
+msgstr "Min. (uključivo)"
+
+#: formres.src#RID_STR_XSD_MIN_EXCLUSIVE.string.text
+msgid "Min. (exclusive)"
+msgstr "Min. (isključivo)"
+
+#: formres.src#RID_STR_SUBMISSION_ID.string.text
+msgid "Submission"
+msgstr "Predaja"
+
+#: formres.src#RID_STR_BINDING_UI_NAME.string.text
+msgid "Binding"
+msgstr "Uvezivanje"
+
+#: formres.src#RID_STR_SELECTION_TYPE.string.text
+msgid "Selection type"
+msgstr "Vrsta odabira"
+
+#: formres.src#RID_STR_ROOT_DISPLAYED.string.text
+msgid "Root displayed"
+msgstr "Prikazan je korijen"
+
+#: formres.src#RID_STR_SHOWS_HANDLES.string.text
+msgid "Show handles"
+msgstr "Prikaži rukovatelje"
+
+#: formres.src#RID_STR_SHOWS_ROOT_HANDLES.string.text
+msgid "Show root handles"
+msgstr "Prikaži korijenske hvataljke"
+
+#: formres.src#RID_STR_EDITABLE.string.text
+msgid "Editable"
+msgstr "Moguće uređivati"
+
+#: formres.src#RID_STR_INVOKES_STOP_NOT_EDITING.string.text
+msgid "Invokes stop node editing"
+msgstr "Zaustavlja uređivanje čvorišta"
+
+#: formres.src#RID_STR_DECORATION.string.text
+msgid "With title bar"
+msgstr "S trakom naslova"
+
+#: formres.src#RID_STR_NOLABEL.string.text
+msgid "No Label"
+msgstr "Bez oznake"
+
+#: formres.src#RID_RSC_ENUM_SCALE_MODE.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_SCALE_MODE.1.string.text"
+msgid "No"
+msgstr "Ne"
+
+#: formres.src#RID_RSC_ENUM_SCALE_MODE.2.string.text
+msgid "Keep Ratio"
+msgstr "Sačuvaj omjer"
+
+#: formres.src#RID_RSC_ENUM_SCALE_MODE.3.string.text
+msgid "Fit to Size"
+msgstr "Namjesti po dimenzijama"
+
+#: formres.src#RID_STR_INPUT_REQUIRED.string.text
+msgid "Input required"
+msgstr "Unos potreban"
+
+#: formres.src#RID_STR_WRITING_MODE.string.text
+msgid "Text direction"
+msgstr "Smjer teksta"
+
+#: formres.src#RID_RSC_ENUM_WRITING_MODE.1.string.text
+msgid "Left-to-right"
+msgstr "Slijeva na desno"
+
+#: formres.src#RID_RSC_ENUM_WRITING_MODE.2.string.text
+msgid "Right-to-left"
+msgstr "Zdesna na lijevo"
+
+#: formres.src#RID_RSC_ENUM_WRITING_MODE.3.string.text
+msgid "Use superordinate object settings"
+msgstr "Koristi postavke superordinate objekta"
+
+#: formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.1.string.text
+msgid "Never"
+msgstr "Nikad"
+
+#: formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.2.string.text
+msgid "When focused"
+msgstr "Kada ima fokus"
+
+#: formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.3.string.text
+msgid "Always"
+msgstr "Uvijek"
+
+#: formres.src#RID_STR_ANCHOR_TYPE.string.text
+msgid "Anchor"
+msgstr "Usidri"
+
+#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.1.string.text
+msgid "To Paragraph"
+msgstr "Do odlomka"
+
+#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.2.string.text
+msgid "As Character"
+msgstr "Kao znak"
+
+#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.string.text
+msgctxt "formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.string.text"
+msgid "To Page"
+msgstr "Na stranu"
+
+#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.4.string.text
+msgid "To Frame"
+msgstr "Na okvir"
+
+#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.5.string.text
+msgid "To Character"
+msgstr "Na znak"
+
+#: formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.1.string.text"
+msgid "To Page"
+msgstr "Na stranu"
+
+#: formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.2.string.text
+msgid "To Cell"
+msgstr "Na ćeliju"
+
+#: formres.src#RID_STR_FONTSTYLE_REGULAR.string.text
+msgid "Regular"
+msgstr "Obično"
+
+#: formres.src#RID_STR_FONTSTYLE_BOLD_ITALIC.string.text
+msgid "Bold Italic"
+msgstr "Masno i kurziv"
+
+#: formres.src#RID_STR_FONTSTYLE_ITALIC.string.text
+msgid "Italic"
+msgstr "Kurziv"
+
+#: formres.src#RID_STR_FONTSTYLE_BOLD.string.text
+msgid "Bold"
+msgstr "Masno"
+
+#: formres.src#RID_STR_FONT_DEFAULT.string.text
+msgid "(Default)"
+msgstr "Uobičajeno"
+
+#: newdatatype.src#RID_DLG_NEW_DATA_TYPE.FT_LABEL.fixedtext.text
+msgid "Type a name for the new data type:"
+msgstr "Unesite naziv nove vrste podataka:"
+
+#: newdatatype.src#RID_DLG_NEW_DATA_TYPE.modaldialog.text
+msgid "New Data Type"
+msgstr "Nova vrsta podataka"
+
+#: pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.string.text
+msgid ""
+"Do you want to delete the data type '#type#' from the model?\n"
+"Please note that this will affect all controls which are bound to this data "
+"type."
+msgstr ""
+"Da li želite izbrisati podatak tipa '#type#' iz modela?\n"
+"To će utjecati na sve kontrole koje su povezane sa ovim tipom podataka."
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.string.text
+msgid "Button"
+msgstr "Dugme"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_RADIOBUTTON.string.text
+msgid "Option Button"
+msgstr "Dugme za opciju"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_CHECKBOX.string.text
+msgid "Check Box"
+msgstr "Kvadratić"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.string.text
+msgctxt "pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.string.text"
+msgid "Label Field"
+msgstr "Polje oznake"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_GROUPBOX.string.text
+msgid "Group Box"
+msgstr "Okvir grupe"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_EDIT.string.text
+msgid "Text Box"
+msgstr "Polje sa tekstom"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_FORMATTED.string.text
+msgid "Formatted Field"
+msgstr "Formatirano polje"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_LISTBOX.string.text
+msgid "List Box"
+msgstr "Polje sa listom"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_COMBOBOX.string.text
+msgid "Combo Box"
+msgstr "Kombinirani okvir"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_IMAGEBUTTON.string.text
+msgid "Image Button"
+msgstr "Dugme sa slikom"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_HIDDENCONTROL.string.text
+msgid "Hidden Control"
+msgstr "Skriveni kontrolnik"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_UNKNOWNCONTROL.string.text
+msgid "Control (unknown type)"
+msgstr "Kontrola (nepoznata vrsta)"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_IMAGECONTROL.string.text
+msgid "Image Control"
+msgstr "Kontrola slike"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_FILECONTROL.string.text
+msgid "File Selection"
+msgstr "Izbor datoteke"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_DATEFIELD.string.text
+msgid "Date Field"
+msgstr "Polje za datum"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_TIMEFIELD.string.text
+msgid "Time Field"
+msgstr "Polje za vrijeme"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_NUMERICFIELD.string.text
+msgid "Numeric Field"
+msgstr "Brojčano polje"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_CURRENCYFIELD.string.text
+msgid "Currency Field"
+msgstr "Polje za valutu"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_PATTERNFIELD.string.text
+msgid "Pattern Field"
+msgstr "Polje sa uzorkom"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_DBGRID.string.text
+msgid "Table Control "
+msgstr "Kontrola tabele"
+
+#: propres.src#RID_STR_STANDARD.string.text
+msgctxt "propres.src#RID_STR_STANDARD.string.text"
+msgid "Default"
+msgstr "Uobičajeno"
+
+#: propres.src#RID_STR_PROPPAGE_DEFAULT.string.text
+msgid "General"
+msgstr "Općenito"
+
+#: propres.src#RID_STR_PROPPAGE_DATA.string.text
+msgid "Data"
+msgstr "Podaci"
+
+#: propres.src#RID_RSC_ENUM_YESNO.1.string.text
+msgctxt "propres.src#RID_RSC_ENUM_YESNO.1.string.text"
+msgid "No"
+msgstr "Ne"
+
+#: propres.src#RID_RSC_ENUM_YESNO.2.string.text
+msgctxt "propres.src#RID_RSC_ENUM_YESNO.2.string.text"
+msgid "Yes"
+msgstr "Da"
+
+#: propres.src#RID_STR_HELP_SECTION_LABEL.string.text
+msgctxt "propres.src#RID_STR_HELP_SECTION_LABEL.string.text"
+msgid "Help"
+msgstr "Pomoć"
+
+#: propres.src#RID_EMBED_IMAGE_PLACEHOLDER.string.text
+msgid "<Embedded-Image>"
+msgstr ""
+
+#: propres.src#RID_STR_TEXT_FORMAT.string.text
+msgctxt "propres.src#RID_STR_TEXT_FORMAT.string.text"
+msgid "Text"
+msgstr "Tekst"
+
+#: selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.fixedtext.text
+msgid ""
+"These are control fields that can be used as label fields for the "
+"$control_class$ $control_name$."
+msgstr ""
+"Ovo su kontrolna polja koja se mogu koristiti kao polja natpisa za "
+"$control_class$ $control_name$."
+
+#: selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.checkbox.text
+msgid "~No assignment"
+msgstr "~Bez dodjele"
+
+#: selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.modaldialog.text
+msgid "Label Field Selection"
+msgstr "Izbor polja natpisa"
+
+#: selectlabeldialog.src#RID_STR_FORMS.string.text
+msgid "Forms"
+msgstr "Formulari"
+
+#: taborder.src#RID_DLG_TABORDER.FT_CONTROLS.fixedtext.text
+msgid "Controls"
+msgstr "Kontrole"
+
+#: taborder.src#RID_DLG_TABORDER.PB_MOVE_UP.pushbutton.text
+msgid "Move Up"
+msgstr "Pomjeri gore"
+
+#: taborder.src#RID_DLG_TABORDER.PB_MOVE_DOWN.pushbutton.text
+msgid "Move Down"
+msgstr "Pomjeri dolje"
+
+#: taborder.src#RID_DLG_TABORDER.PB_AUTO_ORDER.pushbutton.text
+msgid "Automatic Sort"
+msgstr "Automatsko sortiranje"
+
+#: taborder.src#RID_DLG_TABORDER.modaldialog.text
+msgid "Tab Order"
+msgstr "Redosljed tabova"
+
+#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_SELECT_ABTYPE.string.text
+msgid "Address book type"
+msgstr "Vrsta adresara"
+
+#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_INVOKE_ADMIN_DIALOG.string.text
+msgid "Connection Settings"
+msgstr "Podešavanje konekcije"
+
+#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_TABLE_SELECTION.string.text
+msgid "Table selection"
+msgstr "Izbor tabele"
+
+#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.string.text
+msgctxt "abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.string.text"
+msgid "Field Assignment"
+msgstr "Dodjeljivanje polja"
+
+#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_FINAL_CONFIRM.string.text
+msgid "Data Source Title"
+msgstr "Naslov izvora podataka"
+
+#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.modaldialog.text
+msgid "Address Book Data Source Wizard"
+msgstr "Čarobnjak za izvor podataka adresara"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.fixedtext.text
+msgid ""
+"%PRODUCTNAME lets you access address data already present in your system. To "
+"do this, a %PRODUCTNAME data source will be created in which your address "
+"data is available in tabular form.\n"
+"\n"
+"This wizard helps you create the data source."
+msgstr ""
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.fixedline.text
+msgid "Please select the type of your external address book:"
+msgstr "Molim izaberite vrstu vašeg eksternog adresara:"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION.radiobutton.text
+msgid "Evolution"
+msgstr "Evolution"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_GROUPWISE.radiobutton.text
+msgid "Groupwise"
+msgstr "Grupa"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_LDAP.radiobutton.text
+msgid "Evolution LDAP"
+msgstr "Evolution LDAP"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_MORK.radiobutton.text
+msgid "Mozilla / Netscape"
+msgstr "Mozilla / Netscape"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_THUNDERBIRD.radiobutton.text
+msgid "Thunderbird"
+msgstr "Thunderbird"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_KAB.radiobutton.text
+msgid "KDE address book"
+msgstr "KDE adresar"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_MACAB.radiobutton.text
+msgid "Mac OS X address book"
+msgstr "Mac OS X adresar"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_LDAP.radiobutton.text
+msgid "LDAP address data"
+msgstr "LDAP podaci o adresama"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOK.radiobutton.text
+msgid "Outlook address book"
+msgstr "Adresar programa Outlook"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOKEXPRESS.radiobutton.text
+msgid "Windows system address book"
+msgstr "Windows sistemski adresar"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_OTHER.radiobutton.text
+msgid "Other external data source"
+msgstr "Drugi eksterni izvor podataka"
+
+#: abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.fixedtext.text
+msgid ""
+"To set up the new data source, additional information is required.\n"
+"\n"
+"Click the following button to open another dialog in which you then enter "
+"the necessary information."
+msgstr ""
+
+#: abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.pushbutton.text
+msgid "Settings"
+msgstr "Postavke"
+
+#: abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.fixedtext.text
+msgid ""
+"The connection to the data source could not be established.\n"
+"Before you proceed, please check the settings made, or (on the previous "
+"page) choose another address data source type."
+msgstr ""
+
+#: abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.fixedtext.text
+msgid ""
+"The external data source you have chosen contains more than one address "
+"book.\n"
+"Please select the one you mainly want to work with:"
+msgstr ""
+
+#: abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.fixedtext.text
+msgid ""
+"To incorporate the address data in your templates, %PRODUCTNAME has to know "
+"which fields contain which data.\n"
+"\n"
+"For instance, you could have stored the e-mail addresses in a field named "
+"\"email\", or \"E-mail\" or \"EM\" - or something completely different.\n"
+"\n"
+"Click the button below to open another dialog where you can enter the "
+"settings for your data source."
+msgstr ""
+
+#: abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.pushbutton.text
+msgctxt "abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.pushbutton.text"
+msgid "Field Assignment"
+msgstr "Dodjeljivanje polja"
+
+#: abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.fixedtext.text
+msgid ""
+"That was all the information necessary to integrate your address data into %"
+"PRODUCTNAME.\n"
+"\n"
+"Now, just enter the name under which you want to register the data source in "
+"%PRODUCTNAME."
+msgstr ""
+
+#: abspilot.src#RID_PAGE_FINAL.FT_LOCATION.fixedtext.text
+msgid "Location"
+msgstr "Lokacija"
+
+#: abspilot.src#RID_PAGE_FINAL.PB_BROWSE.pushbutton.text
+msgid "Browse..."
+msgstr "Pretraži..."
+
+#: abspilot.src#RID_PAGE_FINAL.CB_REGISTER_DS.checkbox.text
+msgid "Make this address book available to all modules in %PRODUCTNAME."
+msgstr "Učini ovaj adresar dostupnim svim modulima u %PRODUCTNAME."
+
+#: abspilot.src#RID_PAGE_FINAL.FT_NAME_EXPL.fixedtext.text
+msgid "Address book name"
+msgstr "Naziv adresara"
+
+#: abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.fixedtext.text
+msgid ""
+"Another data source already has this name. As data sources have to have "
+"globally unique names, you need to choose another one."
+msgstr ""
+"Drugi izvor podataka već ima isto ime. Pošto izvori podataka moraju imati "
+"globalno jedinstvena imena, morate izabrati drugo ime."
+
+#: abspilot.src#RID_ERR_NEEDTYPESELECTION.errorbox.text
+msgid "Please select a type of address book."
+msgstr "Molim izaberite vrstu adresara."
+
+#: abspilot.src#RID_QRY_NOTABLES.querybox.text
+msgid ""
+"The data source does not contain any tables.\n"
+"Do you want to set it up as an address data source, anyway?"
+msgstr ""
+"Izvor podataka ne sadrži niti jednu tablicu.\n"
+"Želite li ga svejedno postaviti kao izvor podataka o adresama?"
+
+#: abspilot.src#RID_STR_DEFAULT_NAME.string.text
+msgid "Addresses"
+msgstr "Adrese"
+
+#: abspilot.src#RID_STR_ADMINDIALOGTITLE.string.text
+msgid "Create Address Data Source"
+msgstr "Napravite izvor podataka sa adresama"
+
+#: abspilot.src#RID_STR_NOCONNECTION.string.text
+msgid "The connection could not be established."
+msgstr "Nije moguće uspostaviti vezu."
+
+#: abspilot.src#RID_STR_PLEASECHECKSETTINGS.string.text
+msgid "Please check the settings made for the data source."
+msgstr "Provjerite postavke za ovaj izvor podataka."
+
+#: abspilot.src#RID_STR_FIELDDIALOGTITLE.string.text
+msgid "Address Data - Field Assignment"
+msgstr "Podaci o adresama - Dodjela polja"
+
+#: abspilot.src#RID_STR_NOFIELDSASSIGNED.string.text
+msgid ""
+"There are no fields assigned at this time.\n"
+"You can either assign fields now or do so later by first choosing:\n"
+"\"File - Template - Address Book Source...\""
+msgstr ""
+"Trenutno nema pridruženog polja.\n"
+"Pridružiti polje možete sada ili kasnije korištenjem:\n"
+"\"Datoteka - Predložak - Izvor adresara...\""
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: ~\n"
+
+#: bib.src#RID_BIB_STR_FIELDSELECTION.string.text
+msgid "Field selection:"
+msgstr "Odabir polja:"
+
+#: bib.src#RID_BIB_STR_TABWIN_PREFIX.string.text
+msgid "Table;Query;Sql;Sql [Native]"
+msgstr "Tabela;Upit;Sql;Sql [Native]"
+
+#: bib.src#RID_BIB_STR_FRAME_TITLE.string.text
+msgid "Bibliography Database"
+msgstr "Bibliografska baza podataka"
+
+#: bib.src#RID_MAP_QUESTION.string.text
+msgid "Do you want to edit the column arrangement?"
+msgstr "Da li želite izmijeniti raspored kolona?"
+
+#: datman.src#RID_DLG_MAPPING.GB_MAPPING.fixedline.text
+msgid "Column names"
+msgstr "Imena kolona"
+
+#: datman.src#RID_DLG_MAPPING.ST_NONE.string.text
+msgid "<none>"
+msgstr ""
+
+#: datman.src#RID_DLG_MAPPING.modaldialog.text
+msgid "Column Layout for Table %1"
+msgstr "Uređenje kolona za tabelu %1"
+
+#: datman.src#RID_DLG_DBCHANGE.ST_ENTRY.string.text
+msgid "Entry"
+msgstr "Unos"
+
+#: datman.src#RID_DLG_DBCHANGE.modaldialog.text
+msgid "Choose Data Source"
+msgstr "Izaberite izvor podataka"
+
+#: sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.string.text
+msgid "The following column names could not be assigned:\n"
+msgstr "Sljedeća imena stupaca ne mogu se pridijeliti:\n"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.string.text
+msgid "Article"
+msgstr "Članak"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_BOOK.string.text
+msgid "Book"
+msgstr "Knjiga"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_BOOKLET.string.text
+msgid "Brochures"
+msgstr "Brošure"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_CONFERENCE.string.text
+msgctxt "sections.src#RID_TP_GENERAL.ST_TYPE_CONFERENCE.string.text"
+msgid "Conference proceedings"
+msgstr "Zbornik radova sa konferencije"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_INBOOK.string.text
+msgid "Book excerpt"
+msgstr "Izvadak iz knjige"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_INCOLLECTION.string.text
+msgid "Book excerpt with title"
+msgstr "Izvadak iz knjige s naslovom"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_INPROCEEDINGS.string.text
+msgctxt "sections.src#RID_TP_GENERAL.ST_TYPE_INPROCEEDINGS.string.text"
+msgid "Conference proceedings"
+msgstr "Zbornik radova sa konferencije"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_JOURNAL.string.text
+msgid "Journal"
+msgstr "Dnevnik"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_MANUAL.string.text
+msgid "Techn. documentation"
+msgstr "Teh. dokumentacija"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_MASTERSTHESIS.string.text
+msgid "Thesis"
+msgstr "Teza"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_MISC.string.text
+msgid "Miscellaneous"
+msgstr "Razno"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_PHDTHESIS.string.text
+msgid "Dissertation"
+msgstr "Disertacija"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_PROCEEDINGS.string.text
+msgctxt "sections.src#RID_TP_GENERAL.ST_TYPE_PROCEEDINGS.string.text"
+msgid "Conference proceedings"
+msgstr "Zbornik radova sa konferencije"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_TECHREPORT.string.text
+msgid "Research report"
+msgstr "Istraživački izvještaj"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_UNPUBLISHED.string.text
+msgid "Unpublished"
+msgstr "Neobjavljeno"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_EMAIL.string.text
+msgid "e-mail"
+msgstr "e-mail"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_WWW.string.text
+msgid "WWW document"
+msgstr "WWW dokument"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM1.string.text
+msgid "User-defined1"
+msgstr "Korisnički-definisano1"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM2.string.text
+msgid "User-defined2"
+msgstr "Korisnički-definisano2"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM3.string.text
+msgid "User-defined3"
+msgstr "Korisnički-definisano3"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM4.string.text
+msgid "User-defined4"
+msgstr "Korisnički-definisano4"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM5.string.text
+msgid "User-defined5"
+msgstr "Korisnički-definisano5"
+
+#: sections.src#RID_TP_GENERAL.tabpage.text
+msgid "General"
+msgstr "Općenito"
+
+#: sections.src#RID_POPUP_ME_VIEW.PU_INSERT.menuitem.text
+msgid "Insert Section..."
+msgstr "Ubaci sekciju..."
+
+#: sections.src#RID_POPUP_ME_VIEW.PU_REMOVE.menuitem.text
+msgid "Delete Section..."
+msgstr "Obriši sekciju..."
+
+#: sections.src#RID_POPUP_ME_VIEW.PU_CHG_NAME.menuitem.text
+msgid "Modify Name..."
+msgstr "Promijeni ime..."
+
+#: sections.src#ST_IDENTIFIER.string.text
+msgid "~Short name"
+msgstr "K~ratko ime"
+
+#: sections.src#ST_AUTHTYPE.string.text
+msgid "~Type"
+msgstr "Vrs~ta"
+
+#: sections.src#ST_YEAR.string.text
+msgid "~Year"
+msgstr "G~odina"
+
+#: sections.src#ST_AUTHOR.string.text
+msgid "Author(s)"
+msgstr "Autor(i)"
+
+#: sections.src#ST_TITLE.string.text
+msgid "Tit~le"
+msgstr "Nas~lov"
+
+#: sections.src#ST_PUBLISHER.string.text
+msgid "~Publisher"
+msgstr "~Izdavač"
+
+#: sections.src#ST_ADDRESS.string.text
+msgid "A~ddress"
+msgstr "A~dresa"
+
+#: sections.src#ST_ISBN.string.text
+msgid "~ISBN"
+msgstr "~ISBN"
+
+#: sections.src#ST_CHAPTER.string.text
+msgid "~Chapter"
+msgstr "P~oglavlje"
+
+#: sections.src#ST_PAGE.string.text
+msgid "Pa~ge(s)"
+msgstr "~Stranice"
+
+#: sections.src#ST_EDITOR.string.text
+msgid "Editor"
+msgstr "Urednik"
+
+#: sections.src#ST_EDITION.string.text
+msgid "Ed~ition"
+msgstr "~Izdanje"
+
+#: sections.src#ST_BOOKTITLE.string.text
+msgid "~Book title"
+msgstr "Naslo~v knjige"
+
+#: sections.src#ST_VOLUME.string.text
+msgid "Volume"
+msgstr "Glasnoća"
+
+#: sections.src#ST_HOWPUBLISHED.string.text
+msgid "Publication t~ype"
+msgstr "Vrs~ta publikacije"
+
+#: sections.src#ST_ORGANIZATION.string.text
+msgid "Organi~zation"
+msgstr "Organi~zacija"
+
+#: sections.src#ST_INSTITUTION.string.text
+msgid "Instit~ution"
+msgstr "~Ustanova"
+
+#: sections.src#ST_SCHOOL.string.text
+msgid "University"
+msgstr "Univerzitet"
+
+#: sections.src#ST_REPORT.string.text
+msgid "Type of re~port"
+msgstr "Vrsta ~izvještaja"
+
+#: sections.src#ST_MONTH.string.text
+msgid "~Month"
+msgstr "~Mjesec"
+
+#: sections.src#ST_JOURNAL.string.text
+msgid "~Journal"
+msgstr "~Dnevnik"
+
+#: sections.src#ST_NUMBER.string.text
+msgid "Numb~er"
+msgstr "Bro~j"
+
+#: sections.src#ST_SERIES.string.text
+msgid "Se~ries"
+msgstr "Se~rija"
+
+#: sections.src#ST_ANNOTE.string.text
+msgid "Ann~otation"
+msgstr "An~otacija"
+
+#: sections.src#ST_NOTE.string.text
+msgid "~Note"
+msgstr "~Napomena"
+
+#: sections.src#ST_URL.string.text
+msgid "URL"
+msgstr "URL"
+
+#: sections.src#ST_CUSTOM1.string.text
+msgid "User-defined field ~1"
+msgstr "Korisnički definisano polje ~1"
+
+#: sections.src#ST_CUSTOM2.string.text
+msgid "User-defined field ~2"
+msgstr "Korisnički definisano polje ~2"
+
+#: sections.src#ST_CUSTOM3.string.text
+msgid "User-defined field ~3"
+msgstr "Korisnički definisano polje ~3"
+
+#: sections.src#ST_CUSTOM4.string.text
+msgid "User-defined field ~4"
+msgstr "Korisnički definisano polje ~4"
+
+#: sections.src#ST_CUSTOM5.string.text
+msgid "User-defined field ~5"
+msgstr "Korisnički definisano polje ~5"
+
+#: toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.toolboxitem.text
+msgid "Table"
+msgstr "Tabela"
+
+#: toolbar.src#RID_BIB_TOOLBAR.TBC_FT_QUERY.toolboxitem.text
+msgid "Search Key"
+msgstr "Ključ za pretragu"
+
+#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_AUTOFILTER.toolboxitem.text
+msgid "AutoFilter"
+msgstr "Automatsko filtriranje"
+
+#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_FILTERCRIT.toolboxitem.text
+msgid "Standard Filter"
+msgstr "Standardni filter"
+
+#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_REMOVEFILTER.toolboxitem.text
+msgid "Remove Filter"
+msgstr "Ukloni filter"
+
+#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_COL_ASSIGN.toolboxitem.text
+msgid "Column Arrangement"
+msgstr "Raspored kolona"
+
+#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_CHANGESOURCE.toolboxitem.text
+msgid "Data Source"
+msgstr "Izvor podataka"
+
+#: grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.pushbutton.text
+msgctxt "grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.pushbutton.text"
+msgid "Set"
+msgstr "Podesi"
+
+#: grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_ASCENDING.string.text
+msgid "Linear ascending"
+msgstr "Linearno rastuće"
+
+#: grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_DESCENDING.string.text
+msgid "Linear descending"
+msgstr "Linearno opadajuće"
+
+#: grid.src#GRID_DIALOG.RESET_TYPE_RESET.string.text
+msgid "Original values"
+msgstr "Izvorne vrijednosti"
+
+#: grid.src#GRID_DIALOG.RESET_TYPE_EXPONENTIAL.string.text
+msgid "Exponential increasing"
+msgstr "Eksponencijalno povećavajuće"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.pushbutton.text
+msgid ""
+"About\n"
+" Dev~ice"
+msgstr ""
+"O\n"
+" uređaju"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.pushbutton.text
+msgid ""
+"Create\n"
+"Preview"
+msgstr ""
+"Stvaranje\n"
+"pregled"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.fixedline.text
+msgid "Preview"
+msgstr "Pregled"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCANAREA_BOX.fixedline.text
+msgid "Scan area"
+msgstr "Područje skeniranja"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_LEFT_TXT.fixedtext.text
+msgid "Left:"
+msgstr "Lijevo:"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_TOP_TXT.fixedtext.text
+msgid "Top:"
+msgstr "Vrh:"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RIGHT_TXT.fixedtext.text
+msgid "Right:"
+msgstr "Desno:"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BOTTOM_TXT.fixedtext.text
+msgid "Bottom:"
+msgstr "Dno:"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_DEVICE_BOX_TXT.fixedtext.text
+msgid "Device used:"
+msgstr "Upotrebljeni uređaj:"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RESOLUTION_TXT.fixedtext.text
+msgid "Resolution [~DPI]"
+msgstr "Rezolucija [~DPI]"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_ADVANCED_TXT.fixedtext.text
+msgid "Show advanced options"
+msgstr "Prikaži napredne opcije"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_OPTION_TXT.fixedtext.text
+msgid "Options:"
+msgstr "Opcije:"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_NUMERIC_VECTOR_TXT.fixedtext.text
+msgid "Vector element"
+msgstr "Vektorski element"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.pushbutton.text
+msgctxt "sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.pushbutton.text"
+msgid "Set"
+msgstr "Podesi"
+
+#: sanedlg.src#RID_SANE_DIALOG.modaldialog.text
+msgid "Scanner"
+msgstr "Skener"
+
+#: sanedlg.src#RID_SANE_DEVICEINFO_TXT.string.text
+msgid ""
+"Device: %s\n"
+"Vendor: %s\n"
+"Model: %s\n"
+"Type: %s"
+msgstr ""
+"Uređaj: %s\n"
+"Proizvođač: %s\n"
+"Model: %s\n"
+"Tip: %s"
+
+#: sanedlg.src#RID_SANE_SCANERROR_TXT.string.text
+msgid "An error occurred while scanning."
+msgstr "Došlo je do greške prilikom skeniranja."
+
+#: sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.string.text
+msgid ""
+"The device does not offer a preview option. Therefore, a normal scan will be "
+"used as a preview instead. This may take a considerable amount of time."
+msgstr ""
+"Ovaj uređaj ne omogućuje opciju pregleda. Stoga, umjesto pregleda će se "
+"koristiti normalno skeniranje. Ovo može potrajati solidan iznos vremena."
+
+#: sanedlg.src#RID_SANE_NOSANELIB_TXT.string.text
+msgid "The SANE interface could not be initialized. Scanning is not possible."
+msgstr "Nije moguće inicijalizirati SANE interfejs. Skeniranje nije moguće."
+
+#: preload.src#RID_DLG_OEMWIZARD.PB_PREV.pushbutton.text
+msgid "<< Back"
+msgstr "<< Nazad"
+
+#: preload.src#RID_DLG_OEMWIZARD.PB_NEXT.pushbutton.text
+msgid "Next >>"
+msgstr "Dalje >>"
+
+#: preload.src#RID_DLG_OEMWIZARD.ST_ACCEPT.string.text
+msgid "Accept"
+msgstr "Prihvati"
+
+#: preload.src#RID_DLG_OEMWIZARD.ST_FINISH.string.text
+msgid "Finish"
+msgstr "Kraj"
+
+#: preload.src#RID_DLG_OEMWIZARD.ST_LICENSE_AGREEMENT.string.text
+msgid " - Software License Agreement"
+msgstr "- Licencni ugovor programa"
+
+#: preload.src#RID_DLG_OEMWIZARD.ST_INSERT_USER_DATA.string.text
+msgid "- User Data"
+msgstr "- Podaci o korisniku"
+
+#: preload.src#RID_TP_WELCOME.FT_INFO.fixedtext.text
+msgid ""
+"Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n"
+"\n"
+"To start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal "
+"data in the dialog following the license text. Important information is "
+"contained in the readme files which are located in the %PRODUCTNAME product "
+"directory. Please read these files carefully. You can also find detailed "
+"information at the Oracle website \n"
+"\n"
+"http://www.oracle.com/us/products/applications/open-office."
+msgstr ""
+
+#: preload.src#RID_TP_WELCOME.tabpage.text
+msgid "Welcome"
+msgstr "Dobrodošli"
+
+#: preload.src#RID_TP_LICENSE.FT_INFO1.fixedtext.text
+msgid "Please follow these steps to proceed with the installation:"
+msgstr "Molim slijedite ove korake za biste nastavili sa instalacijom:"
+
+#: preload.src#RID_TP_LICENSE.FT_INFO2_1.fixedtext.text
+msgid "1."
+msgstr "1"
+
+#: preload.src#RID_TP_LICENSE.FT_INFO2.fixedtext.text
+msgid ""
+"View the complete License Agreement. Please use the scroll bar or the '%"
+"PAGEDOWN' button in this dialog to view the entire license text."
+msgstr ""
+"Pregledajte kompletan licencni ugovor. Molim koristite klizač ili dugme '%"
+"PAGEDOWN' u ovom dijalogu da biste pregledali čitav tekst licence."
+
+#: preload.src#RID_TP_LICENSE.PB_PAGEDOWN.pushbutton.text
+msgid "Page Down"
+msgstr "Stranica dolje"
+
+#: preload.src#RID_TP_LICENSE.FT_INFO3_1.fixedtext.text
+msgid "2."
+msgstr "2"
+
+#: preload.src#RID_TP_LICENSE.FT_INFO3.fixedtext.text
+msgid "Accept the License Agreement."
+msgstr "Prihvatam Licencni ugovor."
+
+#: preload.src#RID_TP_LICENSE.CB_ACCEPT.checkbox.text
+msgid "I accept the terms of the Agreement."
+msgstr "Prihvatam uslove Ugovora."
+
+#: preload.src#RID_TP_LICENSE.LICENCE_ACCEPT.string.text
+msgid "~Accept"
+msgstr "~Prihvati"
+
+#: preload.src#RID_TP_LICENSE.LICENCE_NOTACCEPT.string.text
+msgid "Decline"
+msgstr "Odbij"
+
+#: preload.src#RID_TP_LICENSE.tabpage.text
+msgid "License Agreement"
+msgstr "Licencni ugovor"

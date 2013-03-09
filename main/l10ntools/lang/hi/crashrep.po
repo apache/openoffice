@@ -1,0 +1,267 @@
+
+#: crashrep.ulf#_WELCOME_CAPTION_.LngText.text
+msgctxt "crashrep.ulf#_WELCOME_CAPTION_.LngText.text"
+msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr ""
+
+#: crashrep.ulf#_WELCOME_HEADER_.LngText.text
+msgid "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr ""
+
+#: crashrep.ulf#_WELCOME_BODY1_.LngText.text
+msgid ""
+"This error report tool gathers information about how %PRODUCTNAME% is "
+"working and sends it to Oracle to help improve future versions.\n"
+"\n"
+msgstr ""
+"त्रुटि रिपोर्ट औज़ार सूचना इकट्ठा करता है कि कैसे %PRODUCTNAME% काम करता है "
+"औऱ इसे Sun माइक्रोतंत्र को भविष्य के संस्करण को बढ़िया करने के उद्देश्य से "
+"भेजता है.\n"
+"\n"
+
+#: crashrep.ulf#_WELCOME_BODY2_.LngText.text
+msgid ""
+"It's easy - just send the report without any further effort on your part by "
+"clicking 'Send' in the next dialog, or you can briefly describe how the "
+"error occurred and then click 'Send'. If you want to see the report, click "
+"the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n"
+"\n"
+msgstr ""
+"यह आसान है - बिना किसी और कोशिश के रिपोर्ट 'भेजें' पर अगले संवाद में क्लिक "
+"करके सिर्फ भेज दें, या आप संक्षेप में वर्णन कर सकते हैं कि कैसे त्रुटि पैदा "
+"हुई और तब 'भेजें' पर क्लिक करें. अगर आप रिपोर्ट देखना चाहते हैं, 'रिपोर्ट "
+"दिखाएँ' बटन पर क्लिक कीजिये. कोई आँकड़ा नहीं भेजा जायेगा अगर आप 'मत भेजें' "
+"पर क्लिक करते हैं.\n"
+"\n"
+
+#: crashrep.ulf#_WELCOME_BODY3_.LngText.text
+msgid ""
+"Customer Privacy\n"
+"The information gathered is limited to data concerning the state of %"
+"PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information "
+"about passwords or document contents is not collected.\n"
+"\n"
+"The information will only be used to improve the quality of %PRODUCTNAME% "
+"and will not be shared with third parties.\n"
+"For more information on Oracle's privacy policy, visit\n"
+msgstr ""
+"उपभोक्ता गोपनीयता\n"
+"जमा सूचना आंकड़ों तक सीमित है %PRODUCTNAME% %PRODUCTVERSION% की स्थिति से "
+"जुड़ी जब त्रुटि पैदा होती है. कूटशब्द या दस्तावेज़ सामग्री के बारे में अन्य "
+"सूचना जमा नहीं किया गया है.\n"
+"\n"
+"सूचना %PRODUCTNAME% की गुणवत्ता सुधारने के लिए प्रयोग किया जायेगा और किसी "
+"तीसरी पार्टी से साझा नहीं किया जायेगा.\n"
+"Sun माइक्रोतंत्र की गोपनीयता नीति के संबंध में ज्यादा जानकारी के लिये, देखें\n"
+
+#: crashrep.ulf#_PRIVACY_URL_.LngText.text
+msgid "http://www.oracle.com/html/services-privacy-policy.html"
+msgstr ""
+
+#: crashrep.ulf#_NEXT_BUTTON_.LngText.text
+msgid "~Next >>"
+msgstr "आगे (~N)>>"
+
+#: crashrep.ulf#_CANCEL_BUTTON_.LngText.text
+msgid "Cancel"
+msgstr "रद्द करें"
+
+#: crashrep.ulf#_OK_BUTTON_.LngText.text
+msgid "OK"
+msgstr "ठीक"
+
+#: crashrep.ulf#_REPORT_CAPTION_.LngText.text
+msgctxt "crashrep.ulf#_REPORT_CAPTION_.LngText.text"
+msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr ""
+
+#: crashrep.ulf#_REPORT_HEADER_.LngText.text
+msgid "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
+msgstr "%PRODUCTNAME% %PRODUCTVERSION% को चलाने में एक त्रुटि उत्पन्न हुई"
+
+#: crashrep.ulf#_REPORT_BODY_.LngText.text
+msgid ""
+"The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information "
+"that could help Oracle improve %PRODUCTNAME%.\n"
+"In the spaces below, you can enter a title for your crash report and "
+"describe the action you were trying to carry out when the error occurred. "
+"Then click 'Send'.\n"
+msgstr ""
+"%PRODUCTNAME% %PRODUCTVERSION% त्रुटि रिपोर्ट ने सूचना जमा किया है जो Sun "
+"Microsystems को %PRODUCTNAME% को बढ़िया बनाने में मदद कर सकता है.\n"
+"नीचे के स्थान में, आप अपने क्रैश रिपोर्ट के लिए शीर्षक डाल सकते हैं और "
+"क्रियाकलाप का विवरण दे सकते हैं जो आप करना चाहते हैं जब त्रुटि पैदा होती है. "
+"तब 'भेजें' पर क्लिक करें.\n"
+
+#: crashrep.ulf#_ENTER_TITLE_.LngText.text
+msgid ""
+"Which type of document (e.g. presentation) were you using when the error "
+"occurred?"
+msgstr ""
+"किस प्रकार का दस्तावेज़ (उदा. प्रजेंटेशन यानी प्रस्तुतिकरण) आप प्रयोग कर रहे "
+"थे, जब त्रुटि उत्पन्न हुई?"
+
+#: crashrep.ulf#_ALLOW_CONTACT_.LngText.text
+msgid "~I allow Oracle to contact me regarding this report."
+msgstr ""
+"मैं Sun Microsystems को इस रिपोर्ट के संबंध में मुझसे संपर्क करने के लिए "
+"अनुमति देता हूं.(~I)"
+
+#: crashrep.ulf#_ENTER_EMAIL_.LngText.text
+msgid "Please enter your e-mail address."
+msgstr "कृपया अपना ई-मेल पता दें."
+
+#: crashrep.ulf#_ENTER_DESCRIPTION_.LngText.text
+msgid "~How were you using %PRODUCTNAME% when the error occurred ?"
+msgstr "त्रुटि आने के समय कैसे आप %PRODUCTNAME% का प्रयोग कर रहे थे (~H)?"
+
+#: crashrep.ulf#_BACK_BUTTON_.LngText.text
+msgid " << ~Back"
+msgstr " << पीछे (~B)"
+
+#: crashrep.ulf#_SEND_BUTTON_.LngText.text
+msgid "S~end"
+msgstr "भेजें (~e)"
+
+#: crashrep.ulf#_DONOT_SEND_BUTTON_.LngText.text
+msgid "Do ~Not Send"
+msgstr "नहीं भेजें (~N)"
+
+#: crashrep.ulf#_SHOW_REPORT_BUTTON_.LngText.text
+msgid "Show ~Report..."
+msgstr "रिपोर्ट दिखाएँ (~R)..."
+
+#: crashrep.ulf#_SAVE_REPORT_BUTTON_.LngText.text
+msgid "~Save Report..."
+msgstr "रिपोर्ट सहेजें (~S)..."
+
+#: crashrep.ulf#_SAVE_REPORT_TITLE_.LngText.text
+msgid "Save Report to"
+msgstr "इसमें रिपोर्ट सहेजें"
+
+#: crashrep.ulf#_ERROR_MSG_SIMPLE_MAPI_.LngText.text
+msgid ""
+"The error report could not be sent because the default e-mail program does "
+"not support MAPI.\n"
+" Please use a MAPI-compatible e-mail program."
+msgstr ""
+"त्रुटि रिपोर्ट नहीं भेजा जा सका क्योंकि तयशुदा ई-मेल प्रोग्राम MAPI का "
+"समर्थन नहीं करता है.\n"
+"एक MAPI-सुसंगत ई-मेल प्रोग्राम का प्रयोग करें."
+
+#: crashrep.ulf#_ERROR_MSG_DISK_FULL_.LngText.text
+msgid ""
+"The error report could not be temporarily saved and could therefore not be "
+"sent."
+msgstr ""
+"त्रुटि रिपोर्ट अस्थायी तौर पर नहीं सहेजा जा सका और इसलिये नहीं भेजा जा सका."
+
+#: crashrep.ulf#_ERROR_MSG_SENDMAIL_.LngText.text
+msgid ""
+"The error report could not be sent because 'sendmail' could not be started.\n"
+"Please check the 'sendmail' settings."
+msgstr ""
+"त्रुटि रिपोर्ट नहीं भेजी जा सकी क्योंकि सेंडमेल आरंभ नहीं किया जा सका. \n"
+"कृपया सेंडमेल सेटिंग जाँचिये."
+
+#: crashrep.ulf#_ERROR_MSG_PROXY_.LngText.text
+msgid ""
+"The error report could not be sent. Please check the proxy settings under "
+"'Options' in the Error Report Tool."
+msgstr ""
+"त्रुटि रिपोर्ट नहीं भेजी जा सकी. त्रुटि रिपोर्ट औज़ार में अपनी प्रॉक्सी "
+"सेटिंग विकल्प के अंतर्गत जाँचें."
+
+#: crashrep.ulf#_ERROR_MSG_NOCONNECT_.LngText.text
+msgid ""
+"The error report could not be sent because there is no Internet connection. "
+"Please check your Internet settings."
+msgstr ""
+"त्रुटि रिपोर्ट नहीं भेजी जा सकी क्योंकि इंटरनेट कनेक्शन नहीं था. अपना "
+"इंटरनेट सेटिंग जाँचें."
+
+#: crashrep.ulf#_OPTIONS_BUTTON_.LngText.text
+msgid "~Options..."
+msgstr "विकल्प (~O)..."
+
+#: crashrep.ulf#_OPTIONS_TITLE_.LngText.text
+msgid "Options"
+msgstr "विकल्प"
+
+#: crashrep.ulf#_PROXY_SETTINGS_HEADER_.LngText.text
+msgid "Proxy settings"
+msgstr "प्रॉक्सी निर्धारण"
+
+#: crashrep.ulf#_PROXY_SETTINGS_SYSTEM_.LngText.text
+msgid "Use ~system settings"
+msgstr "तंत्र सेटिंग का प्रयोग करें (~s)"
+
+#: crashrep.ulf#_PROXY_SETTINGS_DIRECT_.LngText.text
+msgid "Use ~direct connection to the Internet"
+msgstr "इंटरनेट में सीधे कनेक्शन का प्रयोग करें (~d)"
+
+#: crashrep.ulf#_PROXY_SETTINGS_MANUAL_.LngText.text
+msgid "Use ~manual settings"
+msgstr "दस्ती सेटिंग का प्रयोग करें (~m)"
+
+#: crashrep.ulf#_PROXY_SETTINGS_ADDRESS_.LngText.text
+msgid "HT~TP Proxy"
+msgstr ""
+
+#: crashrep.ulf#_PROXY_SETTINGS_PORT_.LngText.text
+msgid "~Port"
+msgstr "पोर्ट (~P)"
+
+#: crashrep.ulf#_PROXY_SETTINGS_DESCRIPTION_.LngText.text
+msgid ""
+"The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to "
+"be able to send error reports.\n"
+"\n"
+"Companies often use proxy servers in conjunction with a firewall to protect "
+"the network.\n"
+"\n"
+"If this applies to your situation, you have to specify the address and port "
+"for the server."
+msgstr ""
+
+#: crashrep.ulf#_SENDING_REPORT_HEADER_.LngText.text
+msgid "Sending Error Report"
+msgstr "त्रुटि रिपोर्ट भेज रहा है"
+
+#: crashrep.ulf#_SENDING_REPORT_STATUS_.LngText.text
+msgid "Status: Sending error report"
+msgstr "स्थिति: त्रुटि रिपोर्ट भेज रहा है"
+
+#: crashrep.ulf#_SENDING_REPORT_STATUS_FINISHED_.LngText.text
+msgid "Status: The error report has been sent successfully."
+msgstr "स्थिति: त्रुटि रिपोर्ट सफलतापूर्वक भेजा जा रहा है"
+
+#: crashrep.ulf#_ERROR_MSG_NOEMAILADDRESS_.LngText.text
+msgid ""
+"You have marked the option 'I allow Oracle to contact me regarding this "
+"report.'\n"
+"Please enter your e-mail address."
+msgstr ""
+"आपने इस विकल्प को चिह्नित किया है 'मैं Sun Microsystems को अनुमति देता हूं "
+"कि वह इस रिपोर्ट के संबंध में संपर्क करे.'\n"
+"अपना ई-मेल पता दें."
+
+#: crashrep.ulf#_MSG_CMDLINE_USAGE_.LngText.text
+msgid "Usage:"
+msgstr "प्रयोग:"
+
+#: crashrep.ulf#_MSG_PARAM_PROCESSID_.LngText.text
+msgid "-p <process ID>"
+msgstr "-p <प्रक्रिया ID>"
+
+#: crashrep.ulf#_MSG_PARAM_PROCESSID_DESCRIPTION_.LngText.text
+msgid "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
+msgstr ""
+
+#: crashrep.ulf#_MSG_PARAM_HELP_DESCRIPTION_.LngText.text
+msgid ""
+"Shows this help text.\n"
+"Detailed information can be found in the Setup Guide."
+msgstr ""
+"इस मदद पाठ का प्रयोग करें.\n"
+"विस्तृत विवरण सेटअप निदेशिका में पाया जा सकता है."

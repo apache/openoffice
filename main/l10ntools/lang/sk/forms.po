@@ -1,0 +1,258 @@
+
+#: strings.src#RID_BASELISTBOX_ERROR_FILLLIST.string.text
+msgid "The contents of a combo box or list field could not be determined."
+msgstr "Nebolo možné určiť obsah rozbaľovacieho menu alebo textového poľa."
+
+#: strings.src#RID_ERR_LOADING_FORM.string.text
+msgid "The data content could not be loaded."
+msgstr "Obsah dát nemohol byť načítaný."
+
+#: strings.src#RID_ERR_REFRESHING_FORM.string.text
+msgid "The data content could not be updated"
+msgstr "Obsah dát nemohol byť aktualizovaný"
+
+#: strings.src#RID_STR_CLEAR_GRAPHICS.string.text
+msgid "Remove graphics"
+msgstr "Odstrániť obrázok"
+
+#: strings.src#RID_STR_CONNECTERROR.string.text
+msgid "Connection failed"
+msgstr "Spojenie prerušené"
+
+#: strings.src#RID_STR_CONTROL_SUBSTITUTED_EPXPLAIN.string.text
+msgid ""
+"An error occurred while this control was being loaded. It was therefore "
+"replaced with a placeholder."
+msgstr ""
+"Objavila sa chyba pri načítaní tohto ovládacieho prvku, ktorý bol preto "
+"nahradený len zástupcom."
+
+#: strings.src#RID_STR_CONTROL_SUBSTITUTED_NAME.string.text
+msgid "substituted"
+msgstr "nahradené"
+
+#: strings.src#RID_STR_COULD_NOT_SET_FILTER.string.text
+msgid "Error setting the filter criteria"
+msgstr "Chybné nastavenie kritérií­ filtra"
+
+#: strings.src#RID_STR_COULD_NOT_SET_ORDER.string.text
+msgid "Error setting the sort criteria"
+msgstr "Chybné nastavenie kritérií­ pre zoraďovanie"
+
+#: strings.src#RID_STR_ERR_DELETERECORD.string.text
+msgid "Error deleting the current record"
+msgstr "Chyba pri odstraňovaní­ aktuálneho záznamu"
+
+#: strings.src#RID_STR_ERR_DELETERECORDS.string.text
+msgid "Error deleting the specified records"
+msgstr "Chyba pri odstraňovaní­ uvedených záznamov"
+
+#: strings.src#RID_STR_ERR_INSERTRECORD.string.text
+msgid "Error inserting the new record"
+msgstr "Chyba pri vkladaní­ nového záznamu"
+
+#: strings.src#RID_STR_ERR_UPDATERECORD.string.text
+msgid "Error updating the current record"
+msgstr "Chyba pri aktualizácii aktuálneho záznamu"
+
+#: strings.src#RID_STR_FEATURE_NOT_EXECUTABLE.string.text
+msgid "This function cannot be executed, but is only for status queries."
+msgstr "Táto funkcia nemôže byť vykonaná, je možné ju použiť pre dotazy stavu."
+
+#: strings.src#RID_STR_FEATURE_REQUIRES_PARAMETERS.string.text
+msgid "To execute this function, parameters are needed."
+msgstr "Pre vykonanie tejto funkcie sú potrebné parametre."
+
+#: strings.src#RID_STR_FEATURE_UNKNOWN.string.text
+msgid "Unknown function."
+msgstr "Neznáma funkcia."
+
+#: strings.src#RID_STR_IMPORT_GRAPHIC.string.text
+msgid "Insert graphics"
+msgstr "Vložiť obrázok"
+
+#: strings.src#RID_STR_INCOMPATIBLE_TYPES.string.text
+msgid ""
+"The value types supported by the binding cannot be used for exchanging data "
+"with this control."
+msgstr ""
+"Typy hodnôt, podporované touto väzbou, nemôžu byť použité pre výmenu dát s "
+"týmto ovládacím prvkom."
+
+#: strings.src#RID_STR_INVALIDSTREAM.string.text
+msgid "The given stream is invalid."
+msgstr "Zadaný tok je neplatný."
+
+#: strings.src#RID_STR_INVALID_VALIDATOR.string.text
+msgid ""
+"The control is connected to an external value binding, which at the same "
+"time acts as validator. You need to revoke the value binding, before you can "
+"set a new validator."
+msgstr ""
+"Kontrolný prvok je spojený s externou väzbou na hodnotu, ktorá je zároveň aj "
+"overovateľom. Pred nastavením nového overovateľa musíte najprv odvolať "
+"väzbu."
+
+#: strings.src#RID_STR_LABEL_OF.string.text
+msgid "of"
+msgstr "z"
+
+#: strings.src#RID_STR_LABEL_RECORD.string.text
+msgid "Record"
+msgstr "Záznam"
+
+#: strings.src#RID_STR_NEED_NON_NULL_OBJECT.string.text
+msgid "The object cannot be NULL."
+msgstr "Objekt nemôže byť NULL."
+
+#: strings.src#RID_STR_OPEN_GRAPHICS.string.text
+msgid "Insert graphics from..."
+msgstr "Vložiť obrázok z..."
+
+#: strings.src#RID_STR_QUERY_SAVE_MODIFIED_ROW.string.text
+msgid ""
+"The content of the current form has been modified.\n"
+"Do you want to save your changes?"
+msgstr ""
+"Obsah aktuálneho formulára bol zmenený.\n"
+"Chcete uložiť vaše zmeny?"
+
+#: strings.src#RID_STR_READERROR.string.text
+msgid "Error reading data from database"
+msgstr "Chyba pri čítaní­ dát z databázy"
+
+#: strings.src#RID_STR_SYNTAXERROR.string.text
+msgid "Syntax error in query expression"
+msgstr "Chyba syntaxu v dotaze"
+
+#: xforms.src#RID_STR_DATATYPE_BOOLEAN.string.text
+msgid "True/False (Boolean)"
+msgstr "Pravda/Nepravda (Boolean)"
+
+#: xforms.src#RID_STR_DATATYPE_DATE.string.text
+msgid "Date"
+msgstr "Dátum"
+
+#: xforms.src#RID_STR_DATATYPE_DATETIME.string.text
+msgid "Date and Time"
+msgstr "Dátum a čas"
+
+#: xforms.src#RID_STR_DATATYPE_DAY.string.text
+msgid "Day"
+msgstr "Deň"
+
+#: xforms.src#RID_STR_DATATYPE_DECIMAL.string.text
+msgid "Decimal"
+msgstr "Desatinné"
+
+#: xforms.src#RID_STR_DATATYPE_DOUBLE.string.text
+msgid "Double"
+msgstr "Dvojitá presnosť (Double)"
+
+#: xforms.src#RID_STR_DATATYPE_FLOAT.string.text
+msgid "Floating point"
+msgstr "Plávajúca desatinná čiarka (Floating point)"
+
+#: xforms.src#RID_STR_DATATYPE_MONTH.string.text
+msgid "Month"
+msgstr "Mesiac"
+
+#: xforms.src#RID_STR_DATATYPE_MONTHDAY.string.text
+msgid "Month and day"
+msgstr "Mesiac a deň"
+
+#: xforms.src#RID_STR_DATATYPE_STRING.string.text
+msgid "String"
+msgstr "Reťazec"
+
+#: xforms.src#RID_STR_DATATYPE_TIME.string.text
+msgid "Time"
+msgstr "Čas"
+
+#: xforms.src#RID_STR_DATATYPE_URL.string.text
+msgid "Hyperlink"
+msgstr "Hypertextový odkaz"
+
+#: xforms.src#RID_STR_DATATYPE_YEAR.string.text
+msgid "Year"
+msgstr "Rok"
+
+#: xforms.src#RID_STR_DATATYPE_YEARMONTH.string.text
+msgid "Month and year"
+msgstr "Mesiac a rok"
+
+#: xforms.src#RID_STR_XFORMS_BINDING_UI_NAME.string.text
+msgid "Binding"
+msgstr "Väzba"
+
+#: xforms.src#RID_STR_XFORMS_CANT_EVALUATE.string.text
+msgid "Error during evaluation"
+msgstr "Chyba počas vyhodnocovania"
+
+#: xforms.src#RID_STR_XFORMS_INVALID_BINDING_EXPRESSION.string.text
+msgid "This is an invalid binding expression."
+msgstr "Toto je neplatný výraz pre väzbu."
+
+#: xforms.src#RID_STR_XFORMS_INVALID_CONSTRAINT.string.text
+msgid "The constraint '$1' not validated."
+msgstr "Vymedzenie '$1' nie je overené."
+
+#: xforms.src#RID_STR_XFORMS_INVALID_VALUE.string.text
+msgid "Value is invalid."
+msgstr "Hodnota je neplatná."
+
+#: xforms.src#RID_STR_XFORMS_NO_BINDING_EXPRESSION.string.text
+msgid "Please enter a binding expression."
+msgstr "Prosím zadajte výraz pre väzbu."
+
+#: xforms.src#RID_STR_XFORMS_PATTERN_DOESNT_MATCH.string.text
+msgid "The string '$1' does not match the required regular expression '$2'."
+msgstr "Reťazec '$1' nezodpovedá regulárnemu výrazu '$2'."
+
+#: xforms.src#RID_STR_XFORMS_REQUIRED.string.text
+msgid "A value is required."
+msgstr "Hodnota je požadovaná"
+
+#: xforms.src#RID_STR_XFORMS_VALUE_FRACTION_DIGITS.string.text
+msgid "$2 fraction digits allowed at most."
+msgstr "Dovolené sú(je) najviac $2 zlomkové(á) číslice(ic)."
+
+#: xforms.src#RID_STR_XFORMS_VALUE_IS_NOT_A.string.text
+msgid "The value is not of the type '$2'."
+msgstr "Hodnota nie je typu '$2'."
+
+#: xforms.src#RID_STR_XFORMS_VALUE_LENGTH.string.text
+msgid "The string must be $2 characters long."
+msgstr "Reťazec musí obsahovať $2 znakov(ky)."
+
+#: xforms.src#RID_STR_XFORMS_VALUE_MAX_EXCL.string.text
+msgid "The value must be smaller than $2."
+msgstr "Hodnota musí byť menšia ako $2."
+
+#: xforms.src#RID_STR_XFORMS_VALUE_MAX_INCL.string.text
+msgid "The value must be smaller than or equal to $2."
+msgstr "Hodnota musí byť menšia alebo rovná $2."
+
+#: xforms.src#RID_STR_XFORMS_VALUE_MAX_LENGTH.string.text
+msgid "The string can only be $2 characters long at most."
+msgstr "Reťazec môže obsahovať maximálne $2 znakov(ky)."
+
+#: xforms.src#RID_STR_XFORMS_VALUE_MIN_EXCL.string.text
+msgid "The value must be greater than $2."
+msgstr "Hodnota musí byť väčšia ako $2."
+
+#: xforms.src#RID_STR_XFORMS_VALUE_MIN_INCL.string.text
+msgid "The value must be greater than or equal to $2."
+msgstr "Hodnota musí byť väčšia alebo rovná $2."
+
+#: xforms.src#RID_STR_XFORMS_VALUE_MIN_LENGTH.string.text
+msgid "The string must be at least $2 characters long."
+msgstr "Reťazec musí obsahovať minimálne $2 znakov(ky)."
+
+#: xforms.src#RID_STR_XFORMS_VALUE_PATTERN.string.text
+msgid "The value does not match the pattern '$2'."
+msgstr "Hodnota nezodpovedá vzoru '$2'."
+
+#: xforms.src#RID_STR_XFORMS_VALUE_TOTAL_DIGITS.string.text
+msgid "$2 digits allowed at most."
+msgstr "Dovolené sú najviac $2 číslice."

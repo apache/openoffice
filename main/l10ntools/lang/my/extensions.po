@@ -1,0 +1,2837 @@
+
+#: updatehdl.src#RID_UPDATE_STR_CHECKING.string.text
+msgid "Checking..."
+msgstr "စစ်ဆေးနေသည်..."
+
+#: updatehdl.src#RID_UPDATE_STR_CHECKING_ERR.string.text
+msgid "Checking for an update failed."
+msgstr "နောက်ဆုံးအချက်အလက်များ မသိမ်းဆည်းနိုင်မှုအတွက် စစ်ဆေးပါ။"
+
+#: updatehdl.src#RID_UPDATE_STR_NO_UPD_FOUND.string.text
+msgid "%PRODUCTNAME %PRODUCTVERSION is up to date."
+msgstr "နောက်ဆုံးပေါ် %PRODUCTNAME %PRODUCTVERSION"
+
+#: updatehdl.src#RID_UPDATE_STR_UPD_FOUND.string.text
+msgid ""
+"%PRODUCTNAME %NEXTVERSION is available.\n"
+"\n"
+"The installed version is %PRODUCTNAME %PRODUCTVERSION.\n"
+"\n"
+"Note: Before downloading  an update, please ensure that you have sufficient "
+"access rights to install it.\n"
+"A password, usually the administrator's or root password, may be required."
+msgstr ""
+"%PRODUCTNAME %NEXTVERSION ကိုအသုံးပြု နိုင်သည်။ \n"
+"\n"
+"%PRODUCTNAME %PRODUCTVERSION ပုံစံကို ထည့်သွင်းခဲ့သည်။ \n"
+"\n"
+"မှတ်ချက်- နောက်ဆုံးအချက်အလက်များ မရယူမီ ၎င်းကိုထည့်သွင်းရန် လုံလောက်သည့် "
+"အခွင့်အရေး ရှိရန်လိုသည်။ စီမံအုပ်ချုပ်သူ၏ စကားဝှက် လိုအပ်သည်။  "
+
+#: updatehdl.src#RID_UPDATE_STR_DLG_TITLE.string.text
+msgid "Check for Updates"
+msgstr "နောက်ဆုံးအချက်အလက်များရယူမှု ကို စစ်ဆေးပါ"
+
+#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_PAUSE.string.text
+msgid "Downloading %PRODUCTNAME %NEXTVERSION paused at..."
+msgstr "%PRODUCTNAME %NEXTVERSION ဖိုင်ဆွဲယူမှု ကို ခေတ္တရပ်ထားသည်..."
+
+#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_ERR.string.text
+msgid "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
+msgstr "%PRODUCTNAME %NEXTVERSION ဖိုင်ဆွဲယူမှု ကို ရပ်ထားသည်..."
+
+#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.string.text
+msgid ""
+"The download location is: %DOWNLOAD_PATH.\n"
+"\n"
+"Under Tools – Options... - %PRODUCTNAME – Online Update you can change the "
+"download location."
+msgstr ""
+"ဖိုင်ဆွဲယူခြင်းလုပ်ရန် - %DOWNLOAD_PATH.\n"
+"\n"
+"‘ကိရိယာများ’ အောက်မှ ‘ရွေးပိုင်ခွင့်များ’ -  %PRODUCTNAME ကို သုံးပါ။ "
+"အွန်းလိုင်းမှ နောက်ဆုံးအချက်အလက်များ ရယူရန် ဖိုင်ဆွဲယူသည့် နေရာကို "
+"ပြောင်းပါ။"
+
+#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.string.text
+msgid "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
+msgstr "%DOWNLOAD_PATH ဆွဲယူရန် %FILE_NAME "
+
+#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.string.text
+msgid ""
+"The automatic download of the update is currently not available.\n"
+"\n"
+"Click 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the "
+"web site."
+msgstr ""
+"နောက်ဆုံးအချက်အလက်များကို အလိုအလျှာက် ဆွဲချယူရန် လက်ရှိအခြေအနေတွင် "
+"မဖြစ်နိုင်ပါ။ \n"
+"\n"
+"%PRODUCTNAME %NEXTVERSION ကိုရယူရန် ဝဘ်ဆိုဒ်မှ   ‘ဒေါင်းလုပ်’ ကို "
+"ကလစ်နှိပ်ပါ။"
+
+#: updatehdl.src#RID_UPDATE_STR_DOWNLOADING.string.text
+msgid "Downloading %PRODUCTNAME %NEXTVERSION..."
+msgstr "%PRODUCTNAME %NEXTVERSION ဖိုင်ဆွဲယူခြင်းလုပ်နေသည်..."
+
+#: updatehdl.src#RID_UPDATE_STR_READY_INSTALL.string.text
+msgid ""
+"Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
+msgstr ""
+"%PRODUCTNAME %NEXTVERSION ဖိုင်ဆွဲယူခြင်း ပြည့်စုံပြီ။ ထည့်သွင်းရန် "
+"အဆင်သင့်ဖြစ်ပြီ။"
+
+#: updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.string.text
+msgid "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
+
+#: updatehdl.src#RID_UPDATE_STR_CANCEL_DOWNLOAD.string.text
+msgid "Do you really want to cancel the download?"
+msgstr "ဖိုင်ဆွဲယူခြင်းကို သင် တကယ်ြငင်းပယ်လိုပါသလား?"
+
+#: updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.string.text
+msgid ""
+"To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do "
+"you want to install the update now?"
+msgstr ""
+"နောက်ဆုံးအချက်အလက်များပါဝင်မှု ကို ထည့်သွင်းရန် %PRODUCTNAME %NEXTVERSION "
+"ကိုပိတ်ရန် လိုသည်။ ယခု ထည့်သွင်းရန် ဆန္ဒရှိပါသလား"
+
+#: updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.string.text
+msgid "Install ~now"
+msgstr "ယခု ထည့်သွင်းမှုလုပ်ပါ"
+
+#: updatehdl.src#RID_UPDATE_STR_INSTALL_LATER.string.text
+msgid "Install ~later"
+msgstr "နောက်မှ ထည့်သွင်းမှုလုပ်ပါ"
+
+#: updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.string.text
+msgid ""
+"Could not run the installer application, please run %FILE_NAME in %"
+"DOWNLOAD_PATH manually."
+msgstr ""
+"ထည့်သွင်းမှုအသုံးချပရိုဂရမ် အလုပ်မလုပ်ပါ။ အလုပ်လုပ်ရန် %DOWNLOAD_PATH "
+"အတွင်းရှိ %FILE_NAME ကို အသုံးပြုပါ။"
+
+#: updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.string.text
+msgid ""
+"A file with that name already exists! Do you want to overwrite the existing "
+"file?"
+msgstr ""
+"ဖိုင်အမည်ရှိပြီးဖြစ်သည်။ ရှိပြီးဖိုင်ကို ဖျက်ပြီးအခြားတစ်ခုဖြင့် "
+"အစားထိုးလိုပါသလား"
+
+#: updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.string.text
+msgid ""
+"A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you "
+"want to continue with the download or delete and reload the file?"
+msgstr ""
+"'%DOWNLOAD_PATH'! တွင် '%FILENAME' အမည်ဖြင့် ဖိုင်တစ်ခုရှိပြီးဖြစ်သည်။ "
+"ဒေါင်းလုတ် ဆက်လက်ပြုလုပ်လိုပါသလား (သို့) ဖျက်ပစ်လိုပါသလား။ သို့မဟုတ် "
+"ဖိုင်ကိုပြန်ဆွဲယူလိုပါသလား။"
+
+#: updatehdl.src#RID_UPDATE_STR_RELOAD_RELOAD.string.text
+msgid "Reload File"
+msgstr "ဖိုင်ကိုပြန်ဆွဲယူခြင်း"
+
+#: updatehdl.src#RID_UPDATE_STR_RELOAD_CONTINUE.string.text
+msgid "Continue"
+msgstr "ဆက်လုပ်ပါ"
+
+#: updatehdl.src#RID_UPDATE_STR_PERCENT.string.text
+msgid "%PERCENT%"
+msgstr "%PERCENT%"
+
+#: updatehdl.src#RID_UPDATE_FT_STATUS.string.text
+msgid "Status"
+msgstr "အ‌ခြေအနေ"
+
+#: updatehdl.src#RID_UPDATE_FT_DESCRIPTION.string.text
+msgid "Description"
+msgstr "ဖော်ပြချက်"
+
+#: updatehdl.src#RID_UPDATE_BTN_CLOSE.string.text
+msgid "Close"
+msgstr "ပိတ်ပါ"
+
+#: updatehdl.src#RID_UPDATE_BTN_DOWNLOAD.string.text
+msgid "~Download"
+msgstr "~ဒေါင်းလုတ်"
+
+#: updatehdl.src#RID_UPDATE_BTN_INSTALL.string.text
+msgid "~Install"
+msgstr "~ထည့်သွင်းရန်"
+
+#: updatehdl.src#RID_UPDATE_BTN_PAUSE.string.text
+msgid "~Pause"
+msgstr "~ခေတ္တရပ်ပါ"
+
+#: updatehdl.src#RID_UPDATE_BTN_RESUME.string.text
+msgid "~Resume"
+msgstr "~ဆက်လုပ်ပါ"
+
+#: updatehdl.src#RID_UPDATE_BTN_CANCEL.string.text
+msgid "Cancel"
+msgstr "ရုတ်သိမ်းပါ"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.string.text
+msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.string.text"
+msgid "%PRODUCTNAME update available"
+msgstr "%PRODUCTNAME နောက်ဆုံးအချက်အလက်များကို အသုံးပြု နိုင်သည်။"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_AVAIL.string.text
+msgid "Click here to start the download."
+msgstr "ဖိုင်ဆွဲယူခြင်းစလုပ်ရန် ဤ နေရာကို ကလစ်နှိပ်ပါ။"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.string.text
+msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.string.text"
+msgid "%PRODUCTNAME update available"
+msgstr "%PRODUCTNAME နောက်ဆုံးအချက်အလက်များ ပါဝင်မှု အသုံးပြု နိုင်သည်။"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.string.text
+msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.string.text"
+msgid "Click here for more information."
+msgstr "သတင်းအချက်အလက်များအတွက် ဤ နေရာကို ကလစ်နှိပ်ပါ။"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.string.text
+msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.string.text"
+msgid "%PRODUCTNAME update available"
+msgstr "%PRODUCTNAME နောက်ဆုံးအချက်အလက်များကို အသုံးပြု နိုင်သည်။"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_AUTO_START.string.text
+msgid "Download of update begins."
+msgstr "နောက်ဆုံးအချက်အလက်များ ဖိုင်ဆွဲယူခြင်း စပြီ။"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOADING.string.text
+msgid "Download of update in progress"
+msgstr "တိုးတက်မှုတွင် နောက်ဆုံးအချက်အလက်များပါဝင်မှု ကို ဖိုင်ဆွဲယူမှုလုပ်သည်။"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_PAUSED.string.text
+msgid "Download of update paused"
+msgstr "နောက်ဆုံးအချက်အလက်များ ဖိုင်ဆွဲယူမှု ခေတ္တရပ်ပါ"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_PAUSED.string.text
+msgid "Click here to resume."
+msgstr "ဆက်လုပ်ရန် ဤ နေရာ ကို နှိပ်ပါ။"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_ERROR_DOWNLOADING.string.text
+msgid "Download of update stalled"
+msgstr "နောက်ဆုံးအချက်အလက်များ ဆွဲချယူမှု ကို ရပ်ထားသည်"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.string.text
+msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.string.text"
+msgid "Click here for more information."
+msgstr "သတင်းအချက်အလက်များအတွက် ဤ နေရာ ကို ကလစ်နှိပ်ပါ။"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_AVAIL.string.text
+msgid "Download of update completed"
+msgstr "နောက်ဆုံးအချက်အလက်များ ဖိုင်ဆွဲယူမှုပြည့်စုံပြီ"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_AVAIL.string.text
+msgid "Click here to start the installation."
+msgstr "ထည့်သွင်းရန် ဤ နေရာ ကို ကလစ်နှိပ်ပါ။"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_EXT_UPD_AVAIL.string.text
+msgid "Updates for extensions available"
+msgstr "တိုးချဲ့အသုံးပြုရန် နောက်ဆုံးအချက်အလက်များ ရယူပါ"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.string.text
+msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.string.text"
+msgid "Click here for more information."
+msgstr "သတင်းအချက်အလက်များအတွက် ဤ နေရာ ကို ကလစ်နှိပ်ပါ။"
+
+#: Addons.xcu#.Addons.AddonUI.OfficeHelp.UpdateCheckJob.Title.value.text
+msgid "Check for ~Updates..."
+msgstr "~နောက်ဆုံးအချက်အလက်များ ရယူမှု ကို စစ်ဆေးပါ..."
+
+#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.FL_DATA.fixedline.text
+msgctxt "commonpagesdbp.src#RID_PAGE_TABLESELECTION.FL_DATA.fixedline.text"
+msgid "Data"
+msgstr "အချက်အလက်များ"
+
+#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.fixedtext.text
+msgid ""
+"Currently, the form the control belongs to is not (or not completely) bound "
+"to a data source.\n"
+"\n"
+"Please choose a data source and a table.\n"
+"\n"
+"\n"
+"Please note that the settings made on this page will take effect immediately "
+"upon leaving the page."
+msgstr ""
+"လက်ရှိအခြေအနေတွင် အချက်အလက်မူရင်းကို ကန့်သတ်ထားသည့် ပုံစံရှိသည်။\n"
+"\n"
+"အချက်အလက်မူရင်းနှင့်ဇယားတစ်ခုရွေးချယ်ပါ။\n"
+"\n"
+"\n"
+"ကျန်ရှိခဲ့သည့် စာမျက်နှာပေါ်တွင် ပြင်ဆင်ချိန်ညှိမှုများ "
+"ချက်ချင်းသက်ရောက်မှုရှိသည်ကို မှတ်သားပါ။"
+
+#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.fixedtext.text
+msgid "~Data source:"
+msgstr "~အချက်အလက်မူရင်း -"
+
+#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.PB_FORMDATASOURCE.pushbutton.text
+msgid "~..."
+msgstr "~..."
+
+#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_TABLE.fixedtext.text
+msgid "~Table / Query:"
+msgstr "~ဇယား/ကွာရီ -"
+
+#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.tabpage.text
+msgctxt "commonpagesdbp.src#RID_PAGE_TABLESELECTION.tabpage.text"
+msgid "Data"
+msgstr "အချက်အလက်များ"
+
+#: commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.FT_DATABASEFIELD_QUEST.fixedtext.text
+msgid "Do you want to save the value in a database field?"
+msgstr "ဒေတာဘေ့စ်နေရာကွက်တစ်ခုတွင် တန်ဖိုးသိမ်းရန် ဆန္ဒရှိပါသလား "
+
+#: commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_YES.radiobutton.text
+msgid "~Yes, I want to save it in the following database field:"
+msgstr "~ဟုတ်သည်။ အောက်ပါဒေတာဘေ့စ်နေရာကွက်တွင် သိမ်းရန်ဆန္ဒရှိပါသည်။"
+
+#: commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_NO.radiobutton.text
+msgid "~No, I only want to save the value in the form."
+msgstr "~မဟုတ်ပါ။ တန်ဖိုးကို ပုံစံတစ်ခုပေါ်တွင်သာ သိမ်းရန် ဆန္ဒရှိပါသည်။ "
+
+#: commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.tabpage.text
+msgid "Database Field"
+msgstr "ဒေတာဘေ့စ် နေရာကွက်"
+
+#: commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FL_FORMSETINGS.fixedline.text
+msgid "Form"
+msgstr "ပုံစံ"
+
+#: commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMDATASOURCELABEL.fixedtext.text
+msgid "Data source"
+msgstr "အချက်အလက်မူရင်း"
+
+#: commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMCONTENTTYPELABEL.fixedtext.text
+msgid "Content type"
+msgstr "မာတိကာ အမျိုးအစား"
+
+#: commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMTABLELABEL.fixedtext.text
+msgid "Content"
+msgstr "မာတိကာ"
+
+#: commonpagesdbp.src#RID_STR_TYPE_TABLE.string.text
+msgid "Table"
+msgstr "ဇယား"
+
+#: commonpagesdbp.src#RID_STR_TYPE_QUERY.string.text
+msgid "Query"
+msgstr "ကွာရီ"
+
+#: commonpagesdbp.src#RID_STR_TYPE_COMMAND.string.text
+msgid "SQL command"
+msgstr "SQL ညွှန်ကြားချက်"
+
+#: dbpilots.src#RID_DLG_GROUPBOXWIZARD.modaldialog.text
+msgid "Group Element Wizard"
+msgstr "အချက်အလက်အုပ်စုလမ်းညွှန်၀ဇ္ဇတ်"
+
+#: dbpilots.src#RID_DLG_GRIDWIZARD.modaldialog.text
+msgid "Table Element Wizard"
+msgstr "ဇယားပါအချက်အလက်လမ်းညွှန်၀ဇ္ဇတ်"
+
+#: dbpilots.src#RID_STR_LISTWIZARD_TITLE.string.text
+msgid "List Box Wizard"
+msgstr "စာရင်းသေတ္တာလမ်းညွှန်၀ဇ္ဇတ်"
+
+#: dbpilots.src#RID_STR_COMBOWIZARD_TITLE.string.text
+msgid "Combo Box Wizard"
+msgstr "ကွန်ဘိုသေတ္တာဝဇ္ဇတ်"
+
+#: dbpilots.src#RID_STR_COULDNOTOPENTABLE.string.text
+msgid "The table connection to the data source could not be established."
+msgstr "ဇယားဆက်သွယ်မှုမှ မူရင်းအချက်အလက်များသို့ ချိတ်ဆက်မှုမရှိပါ။"
+
+#: gridpages.src#RID_PAGE_GW_FIELDSELECTION.FL_FRAME.fixedline.text
+msgid "Table element"
+msgstr "ဇယားပါအချက်အလက်"
+
+#: gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.fixedtext.text
+msgctxt "gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.fixedtext.text"
+msgid "Existing fields"
+msgstr "ရှိပြီးနေရာကွက်များ"
+
+#: gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_SELECTED_FIELDS.fixedtext.text
+msgid "Selected fields"
+msgstr "ရွေးချယ်ထားသည့်နေရာကွက်များ"
+
+#: gridpages.src#RID_PAGE_GW_FIELDSELECTION.tabpage.text
+msgctxt "gridpages.src#RID_PAGE_GW_FIELDSELECTION.tabpage.text"
+msgid "Field Selection"
+msgstr "နေရာရွေးချယ်မှု"
+
+#: gridpages.src#RID_STR_DATEPOSTFIX.string.text
+msgid " (Date)"
+msgstr "(ရက်စွဲ)"
+
+#: gridpages.src#RID_STR_TIMEPOSTFIX.string.text
+msgid " (Time)"
+msgstr "(အချိန်)"
+
+#: groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOLABELS.fixedtext.text
+msgid "Which ~names do you want to give the option fields?"
+msgstr "ရွေးချယ်ထားသော နေရာကွက်ကို မည်သည့်နာမည်ပေးလိုပါသလဲ။"
+
+#: groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.fixedtext.text
+msgctxt "groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.fixedtext.text"
+msgid "~Option fields"
+msgstr "~ရွေးနိုင်သောနေရာများ"
+
+#: groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.tabpage.text
+msgctxt "groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.tabpage.text"
+msgid "Data"
+msgstr "အချက်အလက်များ"
+
+#: groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.FT_DEFAULTSELECTION.fixedtext.text
+msgid "Should one option field be selected as a default?"
+msgstr ""
+"ရွေးနိုင်ခွင့်တစ်ခုသာရှိသောနေရာကွက် ကို နဂိုမူလအဖြစ် ရွေးချယ်သင့်ပါသလား။"
+
+#: groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_YES.radiobutton.text
+msgid "~Yes, the following:"
+msgstr "~ဟုတ်ပါသည်။ အောက်ပါအတိုင်း-"
+
+#: groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_NO.radiobutton.text
+msgid "No, one particular field is not going to be selected."
+msgstr "မဟုတ်ပါ။ သီးခြားသတ်မှတ်ထားသော နေရာကွက်ကိုရွေးချယ်လိမ့်မည်မဟုတ်ပါ။"
+
+#: groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.tabpage.text
+msgid "Default Field Selection"
+msgstr "နဂိုမူလနေရာကွက်ရွေးချယ်မှု"
+
+#: groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES_EXPL.fixedtext.text
+msgid "When you select an option, the option group is given a specific value."
+msgstr ""
+"ရွေးချယ်မှုတစ်ခုပြုပြီးသောအခါ ရွေးပိုင်ခွင့်အုပ်စုကို "
+"သီးခြားတန်ဖိုးတစ်ခုပေးသည်။"
+
+#: groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES.fixedtext.text
+msgid "Which ~value do you want to assign to each option?"
+msgstr "ဤရွေးပိုင်ခွင့်တစ်ခုစီအတွက် မည်သည့်တန်ဖိုးကို အသုံးပြုလိုပါသလဲ"
+
+#: groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_RADIOBUTTONS.fixedtext.text
+msgctxt "groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_RADIOBUTTONS.fixedtext.text"
+msgid "~Option fields"
+msgstr "~ရွေးနိုင်သောနေရာများ"
+
+#: groupboxpages.src#RID_PAGE_OPTIONVALUES.tabpage.text
+msgid "Field Values"
+msgstr "နေရာကွက် တန်ဖိုးများ"
+
+#: groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_NAMEIT.fixedtext.text
+msgid "Which ~caption is to be given to your option group?"
+msgstr "သင်၏ရွေးပိုင်ခွင့်အုပ်စုအတွက် မည်သည့်သက်သေခံလက်မှတ် ပေးလိုပါသလဲ"
+
+#: groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_THATSALL.fixedtext.text
+msgid "These were all details needed to create the option group."
+msgstr "ရွေးပိုင်ခွင့်အုပ်စုဖန်တီးရန် အသေးစိတ်အချက်အလက်များအားလုံးလိုအပ်သည်။"
+
+#: groupboxpages.src#RID_PAGE_OPTIONS_FINAL.tabpage.text
+msgid "Create Option Group"
+msgstr "ရွေးပိုင်ခွင့်အုပ်စုဖန်တီးပါ"
+
+#: groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.string.text
+msgid ""
+"You can either save the value of the option group in a database field or use "
+"it for a later action."
+msgstr ""
+"ဒေတာဘေစ့် နေရာကွက်တွင် ရွေးပိုင်ခွင့်အုပ်စု တန်ဖိုးကိုသိမ်းလိုပါသလား (သို့) "
+"နောက်ပိုင်း လုပ်ဆောင်ချက်တွင်မှ ၎င်းကိုအသုံးပြု လိုပါသလား။"
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FL_FRAME.fixedline.text
+msgid "Control"
+msgstr "ထိန်းချုပ်မှု"
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.fixedtext.text
+msgid ""
+"On the right side, you see all the tables from the data source of the form.\n"
+"\n"
+"\n"
+"Choose the table from which the data should be used as basis for the list "
+"content:"
+msgstr ""
+"ညာဘက်တွင် ပုံစံတစ်ခုရှိ မူရင်းအချက်အလက်များမှ ဇယားများအားလုံးကို "
+"မြင်နိုင်သည်။ \n"
+"\n"
+"\n"
+"စာရင်းအတွက် အခြေခံအားဖြင့် မည်သည့်အချက်အလက်များ အသုံးပြုရမည်ဆိုသည်မှ "
+"ဇယားတစ်ခုရွေးချယ်ပါ။"
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.tabpage.text
+msgid "Table Selection"
+msgstr "ဇယားရွေးချယ်မှု"
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_TABLEFIELDS.fixedtext.text
+msgctxt "listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_TABLEFIELDS.fixedtext.text"
+msgid "Existing fields"
+msgstr "ရှိပြီးနေရာကွက်များ"
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_DISPLAYEDFIELD.fixedtext.text
+msgid "Display field"
+msgstr "ဖော်ပြရန်နေရာကွက်"
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_COMBOBOX.string.text
+msgid "The contents of the field selected will be shown in the combo box list."
+msgstr "ရွေးချယ်ထားသော နေရာကွက်ကို ကွန်ဗိုသေတ္တာစာရင်းတွင် ပြလိမ့်မည်။"
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.string.text
+msgid ""
+"The contents of the selected field will be shown in the list box if the "
+"linked fields are identical."
+msgstr ""
+"ချိတ်ဆက်ထားသော နေရာကွက်များ တစ်ထပ်တည်းဖြစ်လျှင် ရွေးချယ်ထားသော "
+"နေရာကွက်၏ပါဝင်သည့်အရာများကို စာရင်းသေတ္တာတွင် ပြလိမ့်မည်။"
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.tabpage.text
+msgctxt "listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.tabpage.text"
+msgid "Field Selection"
+msgstr "နေရာရွေးချယ်မှု"
+
+#: listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.fixedtext.text
+msgid ""
+"This is where you select fields with matching contents so that the value "
+"from the display field will be shown."
+msgstr ""
+"ရွေးချယ်ထားသော နေရာကွက်များနှင့် ပါဝင်မှုများ ကိုက်ညီသည်။ ထို့ကြောင့် "
+"ဖော်ြပသည့် နေရာကွက်မှ တန်ဖိုးကို ပြသလိမ့်မည်။"
+
+#: listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.fixedtext.text
+msgid "Field from the ~Value Table"
+msgstr "တန်ဖိုးဇယားမှ~နေရာကွက်"
+
+#: listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_TABLEFIELD.fixedtext.text
+msgid "Field from the ~List Table"
+msgstr "စာရင်းဇယားမှ~နေရာကွက်"
+
+#: listcombopages.src#RID_PAGE_LCW_FIELDLINK.tabpage.text
+msgid "Field Link"
+msgstr "နေရာကွက်အချိတ်အဆက်"
+
+#: listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.string.text
+msgid ""
+"You can either save the value of the combo box in a database field or use it "
+"for display purposes."
+msgstr ""
+"ဒေတာဘေ့စ်နေရာကွက်တစ်ခုရှိ ကွန်ဗိုသေတ္တာတွင် တန်ဖိုးကိုသိမ်းလိုပါသလား။ (သို့) "
+"ဖော်ပြရန်အတွက်သာ ၎င်းကို အသုံးပြု လိုပါသလား။"
+
+#: fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.pageitem.text
+msgctxt "fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.pageitem.text"
+msgid "Font"
+msgstr "ဖောင့်"
+
+#: fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS_EXT.pageitem.text
+msgid "Font Effects"
+msgstr "ဖောင့်အကျိုးသက်ရောက်မှုများ"
+
+#: fontdialog.src#RID_TABDLG_FONTDIALOG.tabdialog.text
+msgid "Character"
+msgstr "အက္ခရာ"
+
+#: formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.fixedtext.text
+msgid ""
+"Sub forms can be used to display detailed data about the current record of "
+"the master form. To do this, you can specify which columns in the sub form "
+"match which columns in the master form."
+msgstr ""
+"လက်ရှိပင်မပုံစံ၏ မှတ်တမ်းမှတ်ရာများအကြောင်းအသေးစိတ်ပြသရန် ပုံစံအခွဲများကို "
+"အသုံးပြုနိုင်သည်။ သင်ပြုလုပ်ရန်မှာ မည်သည့်ကော်လံသည် ပင်မပုံစံနှင့် "
+"ကိုက်ညီမှုရှိသည်၊ မည်သည့်ကော်လံသည် ပုံစံအခွဲများနှင့် ကိုက်ညီမှုရှိသည်ကို "
+"ခွဲခြားပေးရန် ဖြစ်သည်။  "
+
+#: formlinkdialog.src#RID_DLG_FORMLINKS.modaldialog.text
+msgid "Link fields"
+msgstr "နေရာကွက်များချိတ်ဆက်မှု"
+
+#: formlinkdialog.src#PB_SUGGEST.pushbutton.text
+msgid "Suggest"
+msgstr "အကြံပြုချက်"
+
+#: formlinkdialog.src#STR_DETAIL_FORM.string.text
+msgid "Sub Form"
+msgstr "ပုံစံအခွဲ"
+
+#: formlinkdialog.src#STR_MASTER_FORM.string.text
+msgid "Master Form"
+msgstr "ပင်မပုံစံ"
+
+#: formlinkdialog.src#STR_ERROR_RETRIEVING_COLUMNS.string.text
+msgid "The columns of '#' could not be retrieved."
+msgstr "ကော်လံ'#' ကို ဆွဲထုတ်မယူနိုင်ပါ။"
+
+#: formres.src#RID_STR_EDITMASK.string.text
+msgid "Edit mask"
+msgstr "အကန့်အသတ်အတွင်းတည်းဖြတ်နိုင်မှု"
+
+#: formres.src#RID_STR_LITERALMASK.string.text
+msgid "Literal mask"
+msgstr "အရှိအတိုင်းအကန့်အသတ်"
+
+#: formres.src#RID_STR_READONLY.string.text
+msgctxt "formres.src#RID_STR_READONLY.string.text"
+msgid "Read-only"
+msgstr "ဖတ်ရန်သာ"
+
+#: formres.src#RID_STR_ENABLED.string.text
+msgid "Enabled"
+msgstr "အသုံးမပြုနိုင်ပါ"
+
+#: formres.src#RID_STR_ENABLE_VISIBLE.string.text
+msgid "Visible"
+msgstr "မြင်နိုင်သည်"
+
+#: formres.src#RID_STR_AUTOCOMPLETE.string.text
+msgid "AutoFill"
+msgstr "အလိုအလျှောက်ဖြည့်သည်"
+
+#: formres.src#RID_STR_LINECOUNT.string.text
+msgid "Line count"
+msgstr "မျဉ်းအရေအတွက်"
+
+#: formres.src#RID_STR_MAXTEXTLEN.string.text
+msgid "Max. text length"
+msgstr "စာသားအရှည်ဆုံးအလျား"
+
+#: formres.src#RID_STR_SPIN.string.text
+msgid "Spin Button"
+msgstr "ရွေးချယ်မှု ခလုတ်"
+
+#: formres.src#RID_STR_STRICTFORMAT.string.text
+msgid "Strict format"
+msgstr "တိကျသောစီစဉ်ဖွဲ့စည်းမှုပုံစံ"
+
+#: formres.src#RID_STR_SHOWTHOUSANDSEP.string.text
+msgid "Thousands separator"
+msgstr "ထောင်ဂဏန်းများ ပိုင်းခြားမှု"
+
+#: formres.src#RID_STR_PRINTABLE.string.text
+msgid "Printable"
+msgstr "ပရင့်ထုတ်သည်"
+
+#: formres.src#RID_STR_TARGET_URL.string.text
+msgctxt "formres.src#RID_STR_TARGET_URL.string.text"
+msgid "URL"
+msgstr "URL"
+
+#: formres.src#RID_STR_TARGET_FRAME.string.text
+msgctxt "formres.src#RID_STR_TARGET_FRAME.string.text"
+msgid "Frame"
+msgstr "ဘောင်"
+
+#: formres.src#RID_STR_HELPTEXT.string.text
+msgid "Help text"
+msgstr "စာသားကူညီမှု"
+
+#: formres.src#RID_STR_HELPURL.string.text
+msgid "Help URL"
+msgstr "URLကူညီမှု "
+
+#: formres.src#RID_STR_TAG.string.text
+msgid "Additional information"
+msgstr "ထပ်ဖြည့်ထားသောသတင်းအချက်အလက်"
+
+#: formres.src#RID_STR_ECHO_CHAR.string.text
+msgid "Password character"
+msgstr "လျို့ဝှက်အက္ခရာ"
+
+#: formres.src#RID_STR_TRISTATE.string.text
+msgid "Tristate"
+msgstr "အခြေအနေသုံးမျိုး"
+
+#: formres.src#RID_STR_EMPTY_IS_NULL.string.text
+msgid "Empty string is NULL"
+msgstr "စာသားအလွတ်သည် NULL ဖြစ်သည်"
+
+#: formres.src#RID_STR_DECIMAL_ACCURACY.string.text
+msgid "Decimal accuracy"
+msgstr "ဒသမနေရာတိကျမှု"
+
+#: formres.src#RID_STR_IMAGE_URL.string.text
+msgid "Graphics"
+msgstr "ရုပ်ပုံများ"
+
+#: formres.src#RID_STR_DEFAULT_SELECT_SEQ.string.text
+msgid "Default selection"
+msgstr "ပုံသေရွေးချယ်မှု"
+
+#: formres.src#RID_STR_DEFAULT_BUTTON.string.text
+msgid "Default button"
+msgstr "ပုံသေခလုတ်"
+
+#: formres.src#RID_STR_LABELCONTROL.string.text
+msgctxt "formres.src#RID_STR_LABELCONTROL.string.text"
+msgid "Label Field"
+msgstr "အညွှန်းနေရာကွက်"
+
+#: formres.src#RID_STR_LABEL.string.text
+msgid "Label"
+msgstr "အညွှန်း"
+
+#: formres.src#RID_STR_ALIGN.string.text
+msgid "Alignment"
+msgstr "ဖြောင့်တန်းမှု"
+
+#: formres.src#RID_STR_VERTICAL_ALIGN.string.text
+msgid "Vert. Alignment"
+msgstr "စာလုံးဖြောင့်တန်းမှု အလုပ်လုပ်ပါ"
+
+#: formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.1.string.text
+msgid "Top"
+msgstr "ထိပ်"
+
+#: formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.2.string.text
+msgid "Middle"
+msgstr "အလယ်"
+
+#: formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.3.string.text
+msgid "Bottom"
+msgstr "အောက်ခြေ"
+
+#: formres.src#RID_STR_IMAGEPOSITION.string.text
+msgid "Graphics alignment"
+msgstr "ရုပ်ပုံများချိန်ညှိမှု"
+
+#: formres.src#RID_STR_FONT.string.text
+msgctxt "formres.src#RID_STR_FONT.string.text"
+msgid "Font"
+msgstr "ဖောင့်"
+
+#: formres.src#RID_STR_BACKGROUNDCOLOR.string.text
+msgid "Background color"
+msgstr "နောက်ခံအရောင်"
+
+#: formres.src#RID_STR_BORDER.string.text
+msgid "Border"
+msgstr "နယ်နမိတ်"
+
+#: formres.src#RID_STR_ICONSIZE.string.text
+msgid "Icon size"
+msgstr "အိုင်ကွန်အရွယ်အစား"
+
+#: formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.1.string.text
+msgid "Small"
+msgstr "အသေး"
+
+#: formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.2.string.text
+msgid "Large"
+msgstr "ကြီးသော"
+
+#: formres.src#RID_STR_SHOW_POSITION.string.text
+msgid "Positioning"
+msgstr "နေရာချထားခြင်း"
+
+#: formres.src#RID_STR_SHOW_NAVIGATION.string.text
+msgid "Navigation"
+msgstr "လမ်းညွှန်ကိရိယာ"
+
+#: formres.src#RID_STR_SHOW_RECORDACTIONS.string.text
+msgid "Acting on a record"
+msgstr "မှတ်တမ်းတစ်ခုပေါ်တွင်သက်ရောက်နေသည်"
+
+#: formres.src#RID_STR_SHOW_FILTERSORT.string.text
+msgid "Filtering / Sorting"
+msgstr "စစ်ထုတ်သည်/စနစ်တကျစီထားသည်"
+
+#: formres.src#RID_STR_HSCROLL.string.text
+msgid "Horizontal scroll bar"
+msgstr "ရေပြင်ညီ ဘယ်၊ညာရွေ့သည့်ဘား"
+
+#: formres.src#RID_STR_VSCROLL.string.text
+msgid "Vertical scroll bar"
+msgstr "ထောင်လိုက်ထက်အောက်ရွေ့သည့်ဘား"
+
+#: formres.src#RID_STR_WORDBREAK.string.text
+msgid "Word break"
+msgstr "စကားလုံးဖြတ်တောက်မှု"
+
+#: formres.src#RID_STR_MULTILINE.string.text
+msgid "Multiline input"
+msgstr "အချက်အလက်သွင်းရန်မျဉ်းများ"
+
+#: formres.src#RID_STR_MULTISELECTION.string.text
+msgid "Multiselection"
+msgstr "ရွေးချယ်မှုအမျိုးမျိုး"
+
+#: formres.src#RID_STR_NAME.string.text
+msgid "Name"
+msgstr "အမည်"
+
+#: formres.src#RID_STR_TABINDEX.string.text
+msgid "Tab order"
+msgstr "တက်ဘ်အစီအစဉ်အတိုင်း"
+
+#: formres.src#RID_STR_WHEEL_BEHAVIOR.string.text
+msgid "Mouse wheel scroll"
+msgstr "မောက်စ်ကိုရွေ့သည်"
+
+#: formres.src#RID_STR_FILTER.string.text
+msgid "Filter"
+msgstr "စစ်ထုတ်ကိရိယာ"
+
+#: formres.src#RID_STR_SORT_CRITERIA.string.text
+msgid "Sort"
+msgstr "စီတန်းပါ"
+
+#: formres.src#RID_STR_RECORDMARKER.string.text
+msgid "Record marker"
+msgstr "မှတ်တမ်းမှတ်ရာ မှတ်သားသူ"
+
+#: formres.src#RID_STR_FILTERPROPOSAL.string.text
+msgid "Filter proposal"
+msgstr "စစ်ထုတ်အဆိုပြုချက်"
+
+#: formres.src#RID_STR_NAVIGATION.string.text
+msgid "Navigation bar"
+msgstr "လမ်းညွှန်ကိရိယာဘား"
+
+#: formres.src#RID_STR_CYCLE.string.text
+msgid "Cycle"
+msgstr "စက်ဝိုင်း"
+
+#: formres.src#RID_STR_TABSTOP.string.text
+msgid "Tabstop"
+msgstr "တက်ဘ်ရပ်ပါ"
+
+#: formres.src#RID_STR_CONTROLSOURCE.string.text
+msgid "Data field"
+msgstr "အချက်အလက်သွင်းရန်နေရာ"
+
+#: formres.src#RID_STR_DROPDOWN.string.text
+msgid "Dropdown"
+msgstr "ရွေးချယ်မှုပြုနိုင်သည့်စာရင်း"
+
+#: formres.src#RID_STR_BOUNDCOLUMN.string.text
+msgid "Bound field"
+msgstr "ကန့်သတ်နေရာကွက်"
+
+#: formres.src#RID_STR_LISTSOURCE.string.text
+msgid "List content"
+msgstr "စာရင်းမာတိကာ"
+
+#: formres.src#RID_STR_LISTSOURCETYPE.string.text
+msgid "Type of list contents"
+msgstr "မာတိကာစာရင်းအမျိုးအစား"
+
+#: formres.src#RID_STR_CURSORSOURCE.string.text
+msgid "Content"
+msgstr "မာတိကာ"
+
+#: formres.src#RID_STR_CURSORSOURCETYPE.string.text
+msgid "Content type"
+msgstr "မာတိကာပုံစံ"
+
+#: formres.src#RID_STR_ALLOW_ADDITIONS.string.text
+msgid "Allow additions"
+msgstr "ထပ်ဖြည့်ရန် ခွင့်ပြုပါ"
+
+#: formres.src#RID_STR_ALLOW_DELETIONS.string.text
+msgid "Allow deletions"
+msgstr "ဖျက်ရန် ခွင့်ပြုပါ"
+
+#: formres.src#RID_STR_ALLOW_EDITS.string.text
+msgid "Allow modifications"
+msgstr "အထူးပြုချက်များခွင့်ပြုပါ"
+
+#: formres.src#RID_STR_DATAENTRY.string.text
+msgid "Add data only"
+msgstr "အချက်အလက်များအတွက်သာ"
+
+#: formres.src#RID_STR_DATASOURCE.string.text
+msgid "Data source"
+msgstr "အချက်အလက်မူရင်း"
+
+#: formres.src#RID_STR_MASTERFIELDS.string.text
+msgid "Link master fields"
+msgstr "ပင်မနေရာကွက်များသို့ချိတ်ဆက်မှု"
+
+#: formres.src#RID_STR_SLAVEFIELDS.string.text
+msgid "Link slave fields"
+msgstr "နေရာကွက်အခွဲများသို့ချိတ်ဆက်မှု"
+
+#: formres.src#RID_STR_VALUEMIN.string.text
+msgid "Value min."
+msgstr "တန်ဖိုး အနည်း"
+
+#: formres.src#RID_STR_VALUEMAX.string.text
+msgid "Value max."
+msgstr "တန်ဖိုး အများ"
+
+#: formres.src#RID_STR_VALUESTEP.string.text
+msgid "Incr./decrement value"
+msgstr "အတိုး /အလျော့ တန်ဖိုး"
+
+#: formres.src#RID_STR_CURRENCYSYMBOL.string.text
+msgid "Currency symbol"
+msgstr "ငွေကြေးသင်္ကေတ"
+
+#: formres.src#RID_STR_DATEMIN.string.text
+msgid "Date min."
+msgstr "ရက်စွဲ အနည်း"
+
+#: formres.src#RID_STR_DATEMAX.string.text
+msgid "Date max."
+msgstr "ရက်စွဲ အများ"
+
+#: formres.src#RID_STR_DATEFORMAT.string.text
+msgid "Date format"
+msgstr "ရက်စွဲပုံစံ"
+
+#: formres.src#RID_STR_SELECTEDITEMS.string.text
+msgid "Selection"
+msgstr "ရွေးချယ်မှု"
+
+#: formres.src#RID_STR_TIMEMIN.string.text
+msgid "Time min."
+msgstr "အနည်းဆုံးအချိန်"
+
+#: formres.src#RID_STR_TIMEMAX.string.text
+msgid "Time max."
+msgstr "အများဆုံးအချိန်"
+
+#: formres.src#RID_STR_TIMEFORMAT.string.text
+msgid "Time format"
+msgstr "အချိန်စီစဉ်ဖွဲ့စည်းမှုပုံစံ"
+
+#: formres.src#RID_STR_CURRSYM_POSITION.string.text
+msgid "Prefix symbol"
+msgstr "သင်္ကေတအမှတ်လက္ခဏာများ"
+
+#: formres.src#RID_STR_VALUE.string.text
+msgid "Value"
+msgstr "တန်ဖိုး"
+
+#: formres.src#RID_STR_FORMATKEY.string.text
+msgid "Formatting"
+msgstr "စီစဉ်ဖွဲ့စည်းမှုပုံစံ"
+
+#: formres.src#RID_STR_CLASSID.string.text
+msgid "Class ID"
+msgstr "အိုင်ဒီ အမျိုးအစား"
+
+#: formres.src#RID_STR_HEIGHT.string.text
+msgid "Height"
+msgstr "အမြင့်"
+
+#: formres.src#RID_STR_WIDTH.string.text
+msgid "Width"
+msgstr "အကျယ်"
+
+#: formres.src#RID_STR_LISTINDEX.string.text
+msgid "List index"
+msgstr "စာရင်းအညွှန်း"
+
+#: formres.src#RID_STR_ROWHEIGHT.string.text
+msgid "Row height"
+msgstr "အတန်းအမြင့်..."
+
+#: formres.src#RID_STR_FILLCOLOR.string.text
+msgid "Fill color"
+msgstr "အရောင် ဖြည့်ပါ"
+
+#: formres.src#RID_STR_LINECOLOR.string.text
+msgid "Line color"
+msgstr "မျဉ်းအရောင်"
+
+#: formres.src#RID_STR_REFVALUE.string.text
+msgid "Reference value (on)"
+msgstr "ရည်ညွှန်းချက်တန်ဖိုး (ဖွင့်)"
+
+#: formres.src#RID_STR_UNCHECKEDREFVALUE.string.text
+msgid "Reference value (off)"
+msgstr "ရည်ညွှန်းချက်တန်ဖိုး (ပိတ်)"
+
+#: formres.src#RID_STR_STRINGITEMLIST.string.text
+msgid "List entries"
+msgstr "စာရင်းသွင်းသည်"
+
+#: formres.src#RID_STR_BUTTONTYPE.string.text
+msgid "Action"
+msgstr "လုပ်ဆောင်ချက်"
+
+#: formres.src#RID_STR_SUBMIT_ACTION.string.text
+msgctxt "formres.src#RID_STR_SUBMIT_ACTION.string.text"
+msgid "URL"
+msgstr "URL"
+
+#: formres.src#RID_STR_SUBMIT_METHOD.string.text
+msgid "Type of submission"
+msgstr "တင်ပြမှုပုံစံ"
+
+#: formres.src#RID_STR_DEFAULT_STATE.string.text
+msgid "Default status"
+msgstr "နဂိုမူလ အခြေအနေ"
+
+#: formres.src#RID_STR_SUBMIT_ENCODING.string.text
+msgid "Submission encoding"
+msgstr "တင်ပြချက်အားလျို့ဝှက်ထားသည်"
+
+#: formres.src#RID_STR_DEFAULTVALUE.string.text
+msgid "Default value"
+msgstr "နဂိုမူလ တန်ဖိုး"
+
+#: formres.src#RID_STR_DEFAULTTEXT.string.text
+msgid "Default text"
+msgstr "နဂိုမူလ စာသား"
+
+#: formres.src#RID_STR_DEFAULTDATE.string.text
+msgid "Default date"
+msgstr "နဂိုမူလ ရက်စွဲ"
+
+#: formres.src#RID_STR_DEFAULTTIME.string.text
+msgid "Default time"
+msgstr "နဂိုမူလ အချိန်"
+
+#: formres.src#RID_STR_SUBMIT_TARGET.string.text
+msgctxt "formres.src#RID_STR_SUBMIT_TARGET.string.text"
+msgid "Frame"
+msgstr "ဘောင်"
+
+#: formres.src#RID_RSC_ENUM_BORDER_TYPE.1.string.text
+msgid "Without frame"
+msgstr "ဘောင်မရှိပါ"
+
+#: formres.src#RID_RSC_ENUM_BORDER_TYPE.2.string.text
+msgid "3D look"
+msgstr "သုံးဖက်မြင်ကြည့်ရန်"
+
+#: formres.src#RID_RSC_ENUM_BORDER_TYPE.3.string.text
+msgctxt "formres.src#RID_RSC_ENUM_BORDER_TYPE.3.string.text"
+msgid "Flat"
+msgstr "အပြား"
+
+#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.1.string.text
+msgid "Valuelist"
+msgstr "တန်ဖိုးစာရင်း"
+
+#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.string.text
+msgctxt "formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.string.text"
+msgid "Table"
+msgstr "ဇယား"
+
+#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.string.text
+msgctxt "formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.string.text"
+msgid "Query"
+msgstr "ကွာရီ"
+
+#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.4.string.text
+msgid "Sql"
+msgstr "Sql"
+
+#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.5.string.text
+msgid "Sql [Native]"
+msgstr "Sql [Native]"
+
+#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.6.string.text
+msgid "Tablefields"
+msgstr "ဇယားနေရာကွက်များ"
+
+#: formres.src#RID_RSC_ENUM_ALIGNMENT.1.string.text
+msgid "Left"
+msgstr "ဘယ်ဖက်"
+
+#: formres.src#RID_RSC_ENUM_ALIGNMENT.2.string.text
+msgid "Center"
+msgstr "ဗဟို"
+
+#: formres.src#RID_RSC_ENUM_ALIGNMENT.3.string.text
+msgid "Right"
+msgstr "ညာဖက်"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_BUTTONTYPE.1.string.text"
+msgid "None"
+msgstr "ဘာမျှမရှိပါ"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.2.string.text
+msgid "Submit form"
+msgstr "အဆိုပြုလွှာပုံစံ"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.3.string.text
+msgid "Reset form"
+msgstr "မူလပုံစံ"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.4.string.text
+msgid "Open document/web page"
+msgstr "စာမျက်နှာအစုအဝေး / အင်တာနက်စာမျက်နှာ ဖွင့်ပါ"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.5.string.text
+msgid "First record"
+msgstr "ပထမဆုံးမှတ်တမ်း"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.6.string.text
+msgid "Previous record"
+msgstr "ယခင်မှတ်တမ်း"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.7.string.text
+msgid "Next record"
+msgstr "နောက်ထပ်မှတ်တမ်း"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.8.string.text
+msgid "Last record"
+msgstr "နောက်ဆုံးမှတ်တမ်း"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.9.string.text
+msgid "Save record"
+msgstr "မှတ်တမ်းသိမ်းပါ"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.10.string.text
+msgid "Undo data entry"
+msgstr "အချက်အလက်သွင်းမှု နောက်ကြောင်းပြန်ပါ"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.11.string.text
+msgid "New record"
+msgstr "မှတ်တမ်းအသစ်"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.12.string.text
+msgid "Delete record"
+msgstr "အစီရင်ခံစာ ဖျက်ပါ"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.13.string.text
+msgid "Refresh form"
+msgstr "ပြန်လည်သစ်လွင်သည့်ပုံစံ"
+
+#: formres.src#RID_RSC_ENUM_SUBMIT_METHOD.1.string.text
+msgid "Get"
+msgstr "ရယူပါ"
+
+#: formres.src#RID_RSC_ENUM_SUBMIT_METHOD.2.string.text
+msgid "Post"
+msgstr "နေရာ"
+
+#: formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.string.text"
+msgid "URL"
+msgstr "URL"
+
+#: formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.2.string.text
+msgid "Multipart"
+msgstr "အစိတ်အပိုင်းများ"
+
+#: formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.string.text
+msgctxt "formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.string.text"
+msgid "Text"
+msgstr "စာသား"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.1.string.text
+msgid "Standard (short)"
+msgstr "စံနှုန်း (အတို)"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.2.string.text
+msgid "Standard (short YY)"
+msgstr "စံနှုန်း (အတိုYY)"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.3.string.text
+msgid "Standard (short YYYY)"
+msgstr "စံနှုန်း (အတိုYYY)"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.4.string.text
+msgid "Standard (long)"
+msgstr "စံနှုန်း (အရှည်)"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.5.string.text
+msgid "DD/MM/YY"
+msgstr "နေ့/လ/နှစ် (ဥပမာ-၀၁/၀၁/၉၇)"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.6.string.text
+msgid "MM/DD/YY"
+msgstr "လ/ရက်/နှစ် (ဥပမာ-၀၁/၀၁/၉၇)"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.7.string.text
+msgid "YY/MM/DD"
+msgstr "နှစ်/လ/ရက် (ဥပမာ-၀၁/၀၁/၉၇)"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.8.string.text
+msgid "DD/MM/YYYY"
+msgstr "နေ့/လ/နှစ်(ဥပမာ-၀၁/၀၁/၁၉၉၇)"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.9.string.text
+msgid "MM/DD/YYYY"
+msgstr "လ/ရက်/နှစ်(ဥပမာ-၀၁/၀၁/၁၉၉၇)"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.10.string.text
+msgid "YYYY/MM/DD"
+msgstr "နှစ်/လ/ရက် (ဥပမာ ၁၉၉၇/၀၁/၀၁)"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.11.string.text
+msgid "YY-MM-DD"
+msgstr "နှစ်-လ-ရက် (ဥပမာ ၉၇-၀၁-၀၁)"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.12.string.text
+msgid "YYYY-MM-DD"
+msgstr "နှစ်-လ-ရက် (ဥပမာ ၁၉၉၇-၀၁-၀၁)"
+
+#: formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.1.string.text
+msgid "13:45"
+msgstr "၁၃း၄၅"
+
+#: formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.2.string.text
+msgid "13:45:00"
+msgstr "၁၃း၄၅း၀၀"
+
+#: formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.3.string.text
+msgid "01:45 PM"
+msgstr "၀၁း၄၅ ညပိုင်း"
+
+#: formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.4.string.text
+msgid "01:45:00 PM"
+msgstr "၀၁း၄၅း၀၀ ညပိုင်း"
+
+#: formres.src#RID_RSC_ENUM_CHECKED.1.string.text
+msgid "Not Selected"
+msgstr "ရွေးချယ်ထားခြင်းမရှိ"
+
+#: formres.src#RID_RSC_ENUM_CHECKED.2.string.text
+msgid "Selected"
+msgstr "ရွေးချယ်ထားသည်"
+
+#: formres.src#RID_RSC_ENUM_CHECKED.3.string.text
+msgid "Not Defined"
+msgstr "ပုံသေသတ်မှတ်ထားခြင်းမရှိ"
+
+#: formres.src#RID_RSC_ENUM_CYCLE.1.string.text
+msgid "All records"
+msgstr "မှတ်တမ်းများ အားလုံး"
+
+#: formres.src#RID_RSC_ENUM_CYCLE.2.string.text
+msgid "Active record"
+msgstr "မှတ်တမ်းလုပ်ဆောင်ချက်"
+
+#: formres.src#RID_RSC_ENUM_CYCLE.3.string.text
+msgid "Current page"
+msgstr "လက်ရှိစာမျက်နှာ"
+
+#: formres.src#RID_RSC_ENUM_NAVIGATION.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_NAVIGATION.1.string.text"
+msgid "No"
+msgstr "မဟုတ်"
+
+#: formres.src#RID_RSC_ENUM_NAVIGATION.2.string.text
+msgctxt "formres.src#RID_RSC_ENUM_NAVIGATION.2.string.text"
+msgid "Yes"
+msgstr "ဟုတ်"
+
+#: formres.src#RID_RSC_ENUM_NAVIGATION.3.string.text
+msgid "Parent Form"
+msgstr "ဇစ်မြစ်ပုံစံ"
+
+#: formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.string.text"
+msgid "None"
+msgstr "ဘာမျှမရှိပါ"
+
+#: formres.src#RID_RSC_ENUM_SELECTION_TYPE.2.string.text
+msgid "Single"
+msgstr "တစ်ခုတည်း"
+
+#: formres.src#RID_RSC_ENUM_SELECTION_TYPE.3.string.text
+msgid "Multi"
+msgstr "အများ"
+
+#: formres.src#RID_RSC_ENUM_SELECTION_TYPE.4.string.text
+msgid "Range"
+msgstr "ကန့်သတ်အပိုင်းအခြား"
+
+#: formres.src#RID_STR_EVT_APPROVEPARAMETER.string.text
+msgid "Fill parameters"
+msgstr "ကိုယ်စားပြုအရာများဖြည့်ပါ"
+
+#: formres.src#RID_STR_EVT_ACTIONPERFORMED.string.text
+msgid "Execute action"
+msgstr "စတင်သောအခါ"
+
+#: formres.src#RID_STR_EVT_AFTERUPDATE.string.text
+msgid "After updating"
+msgstr "နောက်ဆုံးသစ်လွင်မှုများသိမ်းဆည်းပြီးနောက်"
+
+#: formres.src#RID_STR_EVT_BEFOREUPDATE.string.text
+msgid "Before updating"
+msgstr "နောက်ဆုံးသစ်လွင်မှုများမလုပ်ဆောင်မီ"
+
+#: formres.src#RID_STR_EVT_APPROVEROWCHANGE.string.text
+msgid "Before record action"
+msgstr "မှတ်တမ်းလုပ်ဆောင်ချက်မပြုမီ"
+
+#: formres.src#RID_STR_EVT_ROWCHANGE.string.text
+msgid "After record action"
+msgstr "မှတ်တမ်းလုပ်ဆောင်ချက်ပြုပြီး"
+
+#: formres.src#RID_STR_EVT_CONFIRMDELETE.string.text
+msgid "Confirm deletion"
+msgstr "ဖျက်ခြင်းကို အတည်ပြုပါ"
+
+#: formres.src#RID_STR_EVT_ERROROCCURED.string.text
+msgid "Error occurred"
+msgstr "အမှား ဖြစ်ပွားသည်"
+
+#: formres.src#RID_STR_EVT_FOCUSGAINED.string.text
+msgid "When receiving focus"
+msgstr "ဆုံမှတ်ကိုလက်ခံပြီးသောအခါ"
+
+#: formres.src#RID_STR_EVT_FOCUSLOST.string.text
+msgid "When losing focus"
+msgstr "ဆုံမှတ်ပျောက်ဆုံးသောအခါ"
+
+#: formres.src#RID_STR_EVT_ITEMSTATECHANGED.string.text
+msgid "Item status changed"
+msgstr "အမျိုးအစားအခြေအနေပြောင်းလဲခဲ့သည်"
+
+#: formres.src#RID_STR_EVT_KEYTYPED.string.text
+msgid "Key pressed"
+msgstr "ကီး နှိပ်ထားသည်"
+
+#: formres.src#RID_STR_EVT_KEYUP.string.text
+msgid "Key released"
+msgstr "ကီး လွတ်လိုက်သည်"
+
+#: formres.src#RID_STR_EVT_LOADED.string.text
+msgid "When loading"
+msgstr "ဆွဲတင်နေသောအခါ"
+
+#: formres.src#RID_STR_EVT_RELOADING.string.text
+msgid "Before reloading"
+msgstr "ပြန်လည်ဆွဲတင်မှုမပြုမီ"
+
+#: formres.src#RID_STR_EVT_RELOADED.string.text
+msgid "When reloading"
+msgstr "ပြန်လည်ဆွဲတင်နေချိန်"
+
+#: formres.src#RID_STR_EVT_MOUSEDRAGGED.string.text
+msgid "Mouse moved while key pressed"
+msgstr "ကီးနှိတ်ထားစဉ်မောက်စ်ကို ရွေ့ခဲ့သည်"
+
+#: formres.src#RID_STR_EVT_MOUSEENTERED.string.text
+msgid "Mouse inside"
+msgstr "မောက်စ်အတွင်းရှိ"
+
+#: formres.src#RID_STR_EVT_MOUSEEXITED.string.text
+msgid "Mouse outside"
+msgstr "မောက်စ်အပြင်ရှိ "
+
+#: formres.src#RID_STR_EVT_MOUSEMOVED.string.text
+msgid "Mouse moved"
+msgstr "မောက်စ် ရွှေ့သည်"
+
+#: formres.src#RID_STR_EVT_MOUSEPRESSED.string.text
+msgid "Mouse button pressed"
+msgstr "မောက်စ်ခလုပ်နှိပ်ထားသည်"
+
+#: formres.src#RID_STR_EVT_MOUSERELEASED.string.text
+msgid "Mouse button released"
+msgstr "မောက်စ်ခလုပ်လွှတ်သည်"
+
+#: formres.src#RID_STR_EVT_POSITIONING.string.text
+msgid "Before record change"
+msgstr "မှတ်တမ်းပြောင်းလဲမှုမပြုမီ"
+
+#: formres.src#RID_STR_EVT_POSITIONED.string.text
+msgid "After record change"
+msgstr "မှတ်တမ်းပြောင်းလဲမှုပြုပြီးနောက်"
+
+#: formres.src#RID_STR_EVT_RESETTED.string.text
+msgid "After resetting"
+msgstr "ပြန်လည်စတင်မှုပြုပြီးနောက်"
+
+#: formres.src#RID_STR_EVT_APPROVERESETTED.string.text
+msgid "Prior to reset"
+msgstr "ယခင်အနေထားအတိုင်းပြန်လည်စတင်ရန်"
+
+#: formres.src#RID_STR_EVT_APPROVEACTIONPERFORMED.string.text
+msgid "Approve action"
+msgstr "လုပ်ဆောက်ချက်အတည်ပြုပါ"
+
+#: formres.src#RID_STR_EVT_SUBMITTED.string.text
+msgid "Before submitting"
+msgstr "ပေးအပ်မှုမပြုမီ"
+
+#: formres.src#RID_STR_EVT_TEXTCHANGED.string.text
+msgid "Text modified"
+msgstr "စာသားအထူးပြုထားသည်"
+
+#: formres.src#RID_STR_EVT_UNLOADING.string.text
+msgid "Before unloading"
+msgstr "ဆွဲတင်မှုမပြုမီ"
+
+#: formres.src#RID_STR_EVT_UNLOADED.string.text
+msgid "When unloading"
+msgstr "ဆွဲမတင်တော့သောအခါ"
+
+#: formres.src#RID_STR_EVT_CHANGED.string.text
+msgid "Changed"
+msgstr "ပြောင်းလဲခဲ့သည်"
+
+#: formres.src#RID_STR_EVENTS.string.text
+msgid "Events"
+msgstr "အဖြစ်အပျက်များ"
+
+#: formres.src#RID_STR_ESCAPE_PROCESSING.string.text
+msgid "Analyze SQL command"
+msgstr "SQL ညွှန်ကြားချက်ကို ခွဲခြမ်းစိတ်ဖြာပါ"
+
+#: formres.src#RID_STR_POSITIONX.string.text
+msgid "PositionX"
+msgstr "နေရာX"
+
+#: formres.src#RID_STR_POSITIONY.string.text
+msgid "PositionY"
+msgstr "နေရာY"
+
+#: formres.src#RID_STR_TITLE.string.text
+msgid "Title"
+msgstr "ခေါင်းစဉ်"
+
+#: formres.src#RID_STR_STEP.string.text
+msgid "Page (step)"
+msgstr "စာမျက်နှာ (အဆင့်)"
+
+#: formres.src#RID_STR_PROGRESSVALUE.string.text
+msgid "Progress value"
+msgstr "တိုးတက်မှုတန်ဖိုး"
+
+#: formres.src#RID_STR_PROGRESSVALUE_MIN.string.text
+msgid "Progress value min."
+msgstr "အနည်းဆုံးတန်ဖိုးတိုးခြင်း"
+
+#: formres.src#RID_STR_PROGRESSVALUE_MAX.string.text
+msgid "Progress value max."
+msgstr "အများဆုံးတန်ဖိုးတိုးခြင်း"
+
+#: formres.src#RID_STR_SCROLLVALUE.string.text
+msgid "Scroll value"
+msgstr "အရွေ့တန်ဖိုး"
+
+#: formres.src#RID_STR_SCROLLVALUE_MAX.string.text
+msgid "Scroll value max."
+msgstr "အများဆုံးတန်ဖိုးရွေ့ပါ။"
+
+#: formres.src#RID_STR_SCROLLVALUE_MIN.string.text
+msgid "Scroll value min."
+msgstr "အနည်းဆုံးတန်ဖိုးရွေ့ပါ။"
+
+#: formres.src#RID_STR_DEFAULT_SCROLLVALUE.string.text
+msgid "Default scroll value"
+msgstr "နဂိုမူလရွေ့မည့်တန်ဖိုး"
+
+#: formres.src#RID_STR_LINEINCREMENT.string.text
+msgid "Small change"
+msgstr "သေးငယ်သောပြောင်းလဲမှု"
+
+#: formres.src#RID_STR_BLOCKINCREMENT.string.text
+msgid "Large change"
+msgstr "ကြီးမားသောပြောင်းလဲမှု"
+
+#: formres.src#RID_STR_REPEAT_DELAY.string.text
+msgid "Delay"
+msgstr "နှောင့်နှေးသည်"
+
+#: formres.src#RID_STR_REPEAT.string.text
+msgid "Repeat"
+msgstr "ထပ်လုပ်ပါ"
+
+#: formres.src#RID_STR_VISIBLESIZE.string.text
+msgid "Visible size"
+msgstr "မြင်နိုင်သော အရွယ်အစား"
+
+#: formres.src#RID_STR_ORIENTATION.string.text
+msgid "Orientation"
+msgstr "စာမျက်နှာအနေအထား"
+
+#: formres.src#RID_RSC_ENUM_ORIENTATION.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_ORIENTATION.1.string.text"
+msgid "Horizontal"
+msgstr "ရေပြင်ညီ"
+
+#: formres.src#RID_RSC_ENUM_ORIENTATION.2.string.text
+msgctxt "formres.src#RID_RSC_ENUM_ORIENTATION.2.string.text"
+msgid "Vertical"
+msgstr "ဒေါင်လိုက်"
+
+#: formres.src#RID_STR_EVT_ADJUSTMENTVALUECHANGED.string.text
+msgid "While adjusting"
+msgstr "ချိန်ညှိစဉ်"
+
+#: formres.src#RID_STR_DATE.string.text
+msgid "Date"
+msgstr "ရက်စွဲ"
+
+#: formres.src#RID_STR_STATE.string.text
+msgid "State"
+msgstr "ပြည်နယ်"
+
+#: formres.src#RID_STR_TIME.string.text
+msgid "Time"
+msgstr "အချိန်"
+
+#: formres.src#RID_STR_SCALEIMAGE.string.text
+msgid "Scale"
+msgstr "စကေး"
+
+#: formres.src#RID_STR_PUSHBUTTONTYPE.string.text
+msgid "Button type"
+msgstr "ခလုတ်အမျိုးအစား"
+
+#: formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.string.text"
+msgid "Default"
+msgstr "နဂိုမူလ"
+
+#: formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.2.string.text
+msgid "OK"
+msgstr "အိုကေ"
+
+#: formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.3.string.text
+msgid "Cancel"
+msgstr "ရုတ်သိမ်းပါ"
+
+#: formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.string.text
+msgctxt "formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.string.text"
+msgid "Help"
+msgstr "ကူညီပါ"
+
+#: formres.src#RID_STR_UNABLETOCONNECT.string.text
+msgid "The connection to the data source \"$name$\" could not be established."
+msgstr "\"$name$\" အချက်အလက်များမူရင်းသို့ ချိတ်ဆက်ထားခြင်းမရှိပါ။"
+
+#: formres.src#RID_STR_TEXT.string.text
+msgctxt "formres.src#RID_STR_TEXT.string.text"
+msgid "Text"
+msgstr "စာသား"
+
+#: formres.src#RID_STR_BOUND_CELL.string.text
+msgid "Linked cell"
+msgstr "ချိတ်ဆက်ပြီးဆဲလ်အကွက်များ"
+
+#: formres.src#RID_STR_LIST_CELL_RANGE.string.text
+msgid "Source cell range"
+msgstr "ဆဲလ်အကွက်ကန့်သတ်မှုရင်းမြစ်"
+
+#: formres.src#RID_STR_CELL_EXCHANGE_TYPE.string.text
+msgid "Contents of the linked cell"
+msgstr "အကွက်များချိတ်ဆက်ထားမှုမာတိကာ"
+
+#: formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.1.string.text
+msgid "The selected entry"
+msgstr "ရွေးချယ်ဝင်ရောက်မှု"
+
+#: formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.2.string.text
+msgid "Position of the selected entry"
+msgstr "ရွေးချယ်ဝင်ရောက်မှုနေရာချထားခြင်း"
+
+#: formres.src#RID_STR_SHOW_SCROLLBARS.string.text
+msgid "Scrollbars"
+msgstr "အထက်အောက်ရွေ့သည့်ဘားများ"
+
+#: formres.src#RID_RSC_ENUM_TEXTTYPE.1.string.text
+msgid "Single-line"
+msgstr "တစ်ကြောင်းမျဉ်း"
+
+#: formres.src#RID_RSC_ENUM_TEXTTYPE.2.string.text
+msgid "Multi-line"
+msgstr "မျဉ်းကြောင်းများ"
+
+#: formres.src#RID_RSC_ENUM_TEXTTYPE.3.string.text
+msgid "Multi-line with formatting"
+msgstr "မျဉ်းများစီစဉ်ဖွဲ့စည်းမှု"
+
+#: formres.src#RID_STR_SYMBOLCOLOR.string.text
+msgid "Symbol color"
+msgstr "နမူနာအရောင်"
+
+#: formres.src#RID_STR_LINEEND_FORMAT.string.text
+msgid "Text lines end with"
+msgstr "စာသားမျဉ်းများ၏အဆုံးသတ်နှင့်အတူ"
+
+#: formres.src#RID_RSC_ENUM_LINEEND_FORMAT.1.string.text
+msgid "LF (Unix)"
+msgstr "LF (Unix)"
+
+#: formres.src#RID_RSC_ENUM_LINEEND_FORMAT.2.string.text
+msgid "CR+LF (Windows)"
+msgstr "CR+LF (Windows)"
+
+#: formres.src#RID_RSC_ENUM_SCROLLBARS.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_SCROLLBARS.1.string.text"
+msgid "None"
+msgstr "ဘာမျှမရှိပါ"
+
+#: formres.src#RID_RSC_ENUM_SCROLLBARS.2.string.text
+msgctxt "formres.src#RID_RSC_ENUM_SCROLLBARS.2.string.text"
+msgid "Horizontal"
+msgstr "ရေပြင်ညီ"
+
+#: formres.src#RID_RSC_ENUM_SCROLLBARS.3.string.text
+msgctxt "formres.src#RID_RSC_ENUM_SCROLLBARS.3.string.text"
+msgid "Vertical"
+msgstr "ဒေါင်လိုက်"
+
+#: formres.src#RID_RSC_ENUM_SCROLLBARS.4.string.text
+msgid "Both"
+msgstr "နှစ်ခုလုံး"
+
+#: formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.string.text"
+msgid "Table"
+msgstr "ဇယား"
+
+#: formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.string.text
+msgctxt "formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.string.text"
+msgid "Query"
+msgstr "ကွာရီ"
+
+#: formres.src#RID_RSC_ENUM_COMMAND_TYPE.3.string.text
+msgid "SQL command"
+msgstr "SQL  ညွှန်ကြားချက်"
+
+#: formres.src#RID_STR_TOGGLE.string.text
+msgid "Toggle"
+msgstr "အပြောင်းအလဲနှစ်ခုမှတစ်ခုခုကိုရွေးချယ်ခြင်း"
+
+#: formres.src#RID_STR_FOCUSONCLICK.string.text
+msgid "Take Focus on Click"
+msgstr "ဆုံမှတ်ယူရန်ကလစ်နှိပ်ပါ"
+
+#: formres.src#RID_STR_HIDEINACTIVESELECTION.string.text
+msgid "Hide selection"
+msgstr "ရွေးချယ်မှု ကိုဖုံးထားသည်"
+
+#: formres.src#RID_STR_VISUALEFFECT.string.text
+msgid "Style"
+msgstr "စတိုင်လ်"
+
+#: formres.src#RID_RSC_ENUM_VISUALEFFECT.1.string.text
+msgid "3D"
+msgstr "သုံးဖက်မြင် "
+
+#: formres.src#RID_RSC_ENUM_VISUALEFFECT.2.string.text
+msgctxt "formres.src#RID_RSC_ENUM_VISUALEFFECT.2.string.text"
+msgid "Flat"
+msgstr "အပြား"
+
+#: formres.src#RID_STR_BORDERCOLOR.string.text
+msgid "Border color"
+msgstr "နယ်နမိတ် အရောင်"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.1.string.text
+msgid "Left top"
+msgstr "ဘယ်ဖက်/ထိပ်"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.2.string.text
+msgid "Left centered"
+msgstr "ဘယ်ဘက်အလယ်တည့်တည့်"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.3.string.text
+msgid "Left bottom"
+msgstr "ဘယ်ဖက်အောက်ခြေ"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.4.string.text
+msgid "Right top"
+msgstr "ညာဖက်ထိပ်"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.5.string.text
+msgid "Right centered"
+msgstr "ညာဘက်အလယ်တည့်တည့်"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.6.string.text
+msgid "Right bottom"
+msgstr "ညာဖက်အောက်ခြေ"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.7.string.text
+msgid "Above left"
+msgstr "အပေါ်၏ဘယ်ဘက်"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.8.string.text
+msgid "Above centered"
+msgstr "အပေါ်၏အလယ်တည့်တည့်တွင်"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.9.string.text
+msgid "Above right"
+msgstr "အပေါ်၏ညာဘက်"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.10.string.text
+msgid "Below left"
+msgstr "အောက်ခြေ၏ဘယ်ဘက်"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.11.string.text
+msgid "Below centered"
+msgstr "အလယ်တည့်တည့်အောက်တွင်"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.12.string.text
+msgid "Below right"
+msgstr "အောက်ခြေ၏ညာဘက်"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.13.string.text
+msgid "Centered"
+msgstr "ဗဟိုဖြစ်သည်"
+
+#: formres.src#RID_STR_AUTOLINEBREAK.string.text
+msgid "Wrap text automatically"
+msgstr "စာသားကိုအလိုအ​လျောက်ရစ်ပတ်နေရာချသည်"
+
+#: formres.src#RID_STR_TEXTTYPE.string.text
+msgid "Text type"
+msgstr "စာသားပုံစံ"
+
+#: formres.src#RID_RSC_ENUM_SHOWHIDE.1.string.text
+msgid "Hide"
+msgstr "ဝှက်ထားပါ"
+
+#: formres.src#RID_RSC_ENUM_SHOWHIDE.2.string.text
+msgid "Show"
+msgstr "ပြသပါ"
+
+#: formres.src#RID_STR_XML_DATA_MODEL.string.text
+msgid "XML data model"
+msgstr "XML အချက်အလက်များပုံစံ"
+
+#: formres.src#RID_STR_BIND_EXPRESSION.string.text
+msgid "Binding expression"
+msgstr "ချုပ်နှောင်မှုဖော်ပြချက်"
+
+#: formres.src#RID_STR_XSD_REQUIRED.string.text
+msgid "Required"
+msgstr "လိုအပ်သည်"
+
+#: formres.src#RID_STR_LIST_BINDING.string.text
+msgid "List entry source"
+msgstr "အရင်းအမြစ်ဝင်ရောက်မှုစာရင်း"
+
+#: formres.src#RID_STR_XSD_RELEVANT.string.text
+msgid "Relevant"
+msgstr "နှီးနွယ်ဆက်စပ်လျက်ရှိသော"
+
+#: formres.src#RID_STR_XSD_READONLY.string.text
+msgctxt "formres.src#RID_STR_XSD_READONLY.string.text"
+msgid "Read-only"
+msgstr "ဖတ်ရန်သာ"
+
+#: formres.src#RID_STR_XSD_CONSTRAINT.string.text
+msgid "Constraint"
+msgstr "ကန့်သတ်ချက်"
+
+#: formres.src#RID_STR_XSD_CALCULATION.string.text
+msgid "Calculation"
+msgstr "တွက်ချက်မှု"
+
+#: formres.src#RID_STR_XSD_DATA_TYPE.string.text
+msgid "Data type"
+msgstr "အချက်အလက်များပုံစံ"
+
+#: formres.src#RID_STR_XSD_WHITESPACES.string.text
+msgid "Whitespaces"
+msgstr "အဖြူရောင်နေရာလွတ်များ"
+
+#: formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.1.string.text
+msgid "Preserve"
+msgstr "ကာကွယ်သည်"
+
+#: formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.2.string.text
+msgid "Replace"
+msgstr "အစားထိုးပါ"
+
+#: formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.3.string.text
+msgid "Collapse"
+msgstr "ပြိုကျသည်"
+
+#: formres.src#RID_STR_XSD_PATTERN.string.text
+msgid "Pattern"
+msgstr "အကွက်ပုံစံ"
+
+#: formres.src#RID_STR_XSD_LENGTH.string.text
+msgid "Length"
+msgstr "အရှည်"
+
+#: formres.src#RID_STR_XSD_MIN_LENGTH.string.text
+msgid "Length (at least)"
+msgstr "အလျား (အနည်းဆုံး)"
+
+#: formres.src#RID_STR_XSD_MAX_LENGTH.string.text
+msgid "Length (at most)"
+msgstr "အလျား (အများဆုံး)"
+
+#: formres.src#RID_STR_XSD_TOTAL_DIGITS.string.text
+msgid "Digits (total)"
+msgstr "ဂဏန်းများ (စုစုပေါင်း)"
+
+#: formres.src#RID_STR_XSD_FRACTION_DIGITS.string.text
+msgid "Digits (fraction)"
+msgstr "ကိန်းဂဏန်းများ (ပိုင်းဖြတ်မှု)"
+
+#: formres.src#RID_STR_XSD_MAX_INCLUSIVE.string.text
+msgid "Max. (inclusive)"
+msgstr "အများဆုံး (ပါဝင်မှု) "
+
+#: formres.src#RID_STR_XSD_MAX_EXCLUSIVE.string.text
+msgid "Max. (exclusive)"
+msgstr "အများဆုံး (ထုတ်ပယ်မှု)"
+
+#: formres.src#RID_STR_XSD_MIN_INCLUSIVE.string.text
+msgid "Min. (inclusive)"
+msgstr "အနည်းဆုံး (ပါဝင်မှု)"
+
+#: formres.src#RID_STR_XSD_MIN_EXCLUSIVE.string.text
+msgid "Min. (exclusive)"
+msgstr "အများဆုံး (ထုတ်ပယ်မှု)"
+
+#: formres.src#RID_STR_SUBMISSION_ID.string.text
+msgid "Submission"
+msgstr "တင်သွင်းချက်"
+
+#: formres.src#RID_STR_BINDING_UI_NAME.string.text
+msgid "Binding"
+msgstr "ချုပ်နှောင်ခြင်း"
+
+#: formres.src#RID_STR_SELECTION_TYPE.string.text
+msgid "Selection type"
+msgstr "ရွေးချယ်မှုအမျိးအစား"
+
+#: formres.src#RID_STR_ROOT_DISPLAYED.string.text
+msgid "Root displayed"
+msgstr "ရင်းမြစ်ဖော်ထားသည်"
+
+#: formres.src#RID_STR_SHOWS_HANDLES.string.text
+msgid "Show handles"
+msgstr "လက်ကိုင်များပြပါ"
+
+#: formres.src#RID_STR_SHOWS_ROOT_HANDLES.string.text
+msgid "Show root handles"
+msgstr "ရင်းမြစ်ထိန်းချုပ်မှုများပြပါ"
+
+#: formres.src#RID_STR_EDITABLE.string.text
+msgid "Editable"
+msgstr "တည်းဖြတ်နိုင်သော"
+
+#: formres.src#RID_STR_INVOKES_STOP_NOT_EDITING.string.text
+msgid "Invokes stop node editing"
+msgstr "အပိုင်းတည်းဖြတ်မှု ကိုရပ်ရန်တောင်းဆိုသည်"
+
+#: formres.src#RID_STR_DECORATION.string.text
+msgid "With title bar"
+msgstr "ခေါင်းစဉ်ဘားနှင့်အတူ"
+
+#: formres.src#RID_STR_NOLABEL.string.text
+msgid "No Label"
+msgstr "အညွှန်းမရှိ"
+
+#: formres.src#RID_RSC_ENUM_SCALE_MODE.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_SCALE_MODE.1.string.text"
+msgid "No"
+msgstr "မဟုတ်"
+
+#: formres.src#RID_RSC_ENUM_SCALE_MODE.2.string.text
+msgid "Keep Ratio"
+msgstr "အချိုး ဆောင်ရွက်ချက်"
+
+#: formres.src#RID_RSC_ENUM_SCALE_MODE.3.string.text
+msgid "Fit to Size"
+msgstr "အံဝင်ခွင်ကျအရွယ်အစား"
+
+#: formres.src#RID_STR_INPUT_REQUIRED.string.text
+msgid "Input required"
+msgstr "အချက်အလက်သွင်းရန်လိုအပ်သည်"
+
+#: formres.src#RID_STR_WRITING_MODE.string.text
+msgid "Text direction"
+msgstr "စာသားဦးတည်ရာ"
+
+#: formres.src#RID_RSC_ENUM_WRITING_MODE.1.string.text
+msgid "Left-to-right"
+msgstr "ဘယ်မှညာသို့"
+
+#: formres.src#RID_RSC_ENUM_WRITING_MODE.2.string.text
+msgid "Right-to-left"
+msgstr "ညာမှဘယ်သို့"
+
+#: formres.src#RID_RSC_ENUM_WRITING_MODE.3.string.text
+msgid "Use superordinate object settings"
+msgstr "စူပါအောဒိနိတ် ပြင်ဆင်ချိန်ညှိမှု အသုံးပြုပါ"
+
+#: formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.1.string.text
+msgid "Never"
+msgstr "ဘယ်တော့မှ"
+
+#: formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.2.string.text
+msgid "When focused"
+msgstr "ဆုံမှတ်သိုဦးတည်ချိန်"
+
+#: formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.3.string.text
+msgid "Always"
+msgstr "အစဉ်အမြဲ"
+
+#: formres.src#RID_STR_ANCHOR_TYPE.string.text
+msgid "Anchor"
+msgstr "ကျောက်ဆူး"
+
+#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.1.string.text
+msgid "To Paragraph"
+msgstr "စာပိုဒ်သို့"
+
+#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.2.string.text
+msgid "As Character"
+msgstr "အက္ခရာများအဖြစ်"
+
+#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.string.text
+msgctxt "formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.string.text"
+msgid "To Page"
+msgstr "စာမျက်နှာသို့"
+
+#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.4.string.text
+msgid "To Frame"
+msgstr "ဘောင်သို့"
+
+#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.5.string.text
+msgid "To Character"
+msgstr "အက္ခရာများသို့"
+
+#: formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.1.string.text"
+msgid "To Page"
+msgstr "စာမျက်နှာသို့"
+
+#: formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.2.string.text
+msgid "To Cell"
+msgstr "ဆဲလ်အကွက်သို့"
+
+#: formres.src#RID_STR_FONTSTYLE_REGULAR.string.text
+msgid "Regular"
+msgstr "ပုံမှန်"
+
+#: formres.src#RID_STR_FONTSTYLE_BOLD_ITALIC.string.text
+msgid "Bold Italic"
+msgstr "စာလုံးစောင်းအမဲ"
+
+#: formres.src#RID_STR_FONTSTYLE_ITALIC.string.text
+msgid "Italic"
+msgstr "စာလုံးစောင်း"
+
+#: formres.src#RID_STR_FONTSTYLE_BOLD.string.text
+msgid "Bold"
+msgstr "စာလုံးမဲ"
+
+#: formres.src#RID_STR_FONT_DEFAULT.string.text
+msgid "(Default)"
+msgstr "နဂိုမူလ"
+
+#: newdatatype.src#RID_DLG_NEW_DATA_TYPE.FT_LABEL.fixedtext.text
+msgid "Type a name for the new data type:"
+msgstr "အချက်အလက်သစ်အမျိုးအစားအတွက် အမည်တစ်ခုရိုက်ထည့်ပါ"
+
+#: newdatatype.src#RID_DLG_NEW_DATA_TYPE.modaldialog.text
+msgid "New Data Type"
+msgstr "အချက်အလက်သစ်အမျိုးအစား"
+
+#: pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.string.text
+msgid ""
+"Do you want to delete the data type '#type#' from the model?\n"
+"Please note that this will affect all controls which are bound to this data "
+"type."
+msgstr ""
+"စံပြပုံစံမှ အချက်အလက်အမျိုးအစား '#type#' ကိုဖျက်လိုပါသလား \n"
+"ကန့်သတ်ထားသည့် အချက်အလက်အမျိုးအစားအားလုံးပေါ်သို့ "
+"ထိန်းချုပ်သက်ရောက်မှုရှိသည်ကို မှတ်သားပါ။"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.string.text
+msgid "Button"
+msgstr "ခလုတ်"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_RADIOBUTTON.string.text
+msgid "Option Button"
+msgstr "ရွေးချယ်မှုခလုတ်"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_CHECKBOX.string.text
+msgid "Check Box"
+msgstr "ရွေးချယ်ရန် လေးထောင့်သေတ္တာ"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.string.text
+msgctxt "pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.string.text"
+msgid "Label Field"
+msgstr "အညွှန်းနေရာ"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_GROUPBOX.string.text
+msgid "Group Box"
+msgstr "အုပ်စုသေတ္တာ "
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_EDIT.string.text
+msgid "Text Box"
+msgstr "စာသားသေတ္တာ"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_FORMATTED.string.text
+msgid "Formatted Field"
+msgstr "ပုံစံချထားသည့်နေရာ"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_LISTBOX.string.text
+msgid "List Box"
+msgstr "စာရင်းသေတ္တာ"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_COMBOBOX.string.text
+msgid "Combo Box"
+msgstr "ကွန်ဘိုသေတ္တာ"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_IMAGEBUTTON.string.text
+msgid "Image Button"
+msgstr "ရုပ်ပုံခလုတ်"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_HIDDENCONTROL.string.text
+msgid "Hidden Control"
+msgstr "ဖုံးကွယ်ထိန်းချုပ်မှု"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_UNKNOWNCONTROL.string.text
+msgid "Control (unknown type)"
+msgstr "ထိန်းချုပ်မှု (မသိကိန်းအမျိုးအစား)"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_IMAGECONTROL.string.text
+msgid "Image Control"
+msgstr "ရုပ်ပုံထိန်းချုပ်မှု"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_FILECONTROL.string.text
+msgid "File Selection"
+msgstr "ဖိုင်ရွေးချယ်မှု"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_DATEFIELD.string.text
+msgid "Date Field"
+msgstr "ရက်စွဲနေရာကွက်"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_TIMEFIELD.string.text
+msgid "Time Field"
+msgstr "အချိန်နေရာကွက်"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_NUMERICFIELD.string.text
+msgid "Numeric Field"
+msgstr "ကိန်းဂဏန်းများနေရာကွက်"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_CURRENCYFIELD.string.text
+msgid "Currency Field"
+msgstr "ငွေကြေးဆိုင်ရာနေရာကွက်"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_PATTERNFIELD.string.text
+msgid "Pattern Field"
+msgstr "အကွက်ပုံစံနေရာ"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_DBGRID.string.text
+msgid "Table Control "
+msgstr "ဇယားထိန်းချုပ်မှု"
+
+#: propres.src#RID_STR_STANDARD.string.text
+msgctxt "propres.src#RID_STR_STANDARD.string.text"
+msgid "Default"
+msgstr "နဂိုမူလ"
+
+#: propres.src#RID_STR_PROPPAGE_DEFAULT.string.text
+msgid "General"
+msgstr "အထွေထွေ"
+
+#: propres.src#RID_STR_PROPPAGE_DATA.string.text
+msgid "Data"
+msgstr "အချက်အလက်များ"
+
+#: propres.src#RID_RSC_ENUM_YESNO.1.string.text
+msgctxt "propres.src#RID_RSC_ENUM_YESNO.1.string.text"
+msgid "No"
+msgstr "မဟုတ်"
+
+#: propres.src#RID_RSC_ENUM_YESNO.2.string.text
+msgctxt "propres.src#RID_RSC_ENUM_YESNO.2.string.text"
+msgid "Yes"
+msgstr "ဟုတ်"
+
+#: propres.src#RID_STR_HELP_SECTION_LABEL.string.text
+msgctxt "propres.src#RID_STR_HELP_SECTION_LABEL.string.text"
+msgid "Help"
+msgstr "ကူညီပါ"
+
+#: propres.src#RID_EMBED_IMAGE_PLACEHOLDER.string.text
+msgid "<Embedded-Image>"
+msgstr "(ဖုံးကွယ်ထားသော - ရုပ်ပုံ)"
+
+#: propres.src#RID_STR_TEXT_FORMAT.string.text
+msgctxt "propres.src#RID_STR_TEXT_FORMAT.string.text"
+msgid "Text"
+msgstr "စာသား"
+
+#: selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.fixedtext.text
+msgid ""
+"These are control fields that can be used as label fields for the "
+"$control_class$ $control_name$."
+msgstr ""
+"$control_class$ $control_name$ အတွက် အညွှန်းနေရာကွက်များ သုံးနိုင်သော "
+"ထိန်းချုပ်နိုင်သည့် နေရာကွက်များ ဖြစ်သည်။"
+
+#: selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.checkbox.text
+msgid "~No assignment"
+msgstr "⁠⁠~အဆိုပြုချက်မရှိ"
+
+#: selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.modaldialog.text
+msgid "Label Field Selection"
+msgstr "အညွှန်းနေရာကွက်ရွေးချယ်မှု"
+
+#: selectlabeldialog.src#RID_STR_FORMS.string.text
+msgid "Forms"
+msgstr "ပုံစံများ"
+
+#: taborder.src#RID_DLG_TABORDER.FT_CONTROLS.fixedtext.text
+msgid "Controls"
+msgstr "ထိန်းချုပ်မှုများ"
+
+#: taborder.src#RID_DLG_TABORDER.PB_MOVE_UP.pushbutton.text
+msgid "Move Up"
+msgstr "အပေါ်သို့ ရွှေ့ပါ"
+
+#: taborder.src#RID_DLG_TABORDER.PB_MOVE_DOWN.pushbutton.text
+msgid "Move Down"
+msgstr "အောက်သို့ရွှေ့ပါ"
+
+#: taborder.src#RID_DLG_TABORDER.PB_AUTO_ORDER.pushbutton.text
+msgid "Automatic Sort"
+msgstr "အလိုအလျောက် စီပါ"
+
+#: taborder.src#RID_DLG_TABORDER.modaldialog.text
+msgid "Tab Order"
+msgstr "တက်ဘ်အစီအစဉ်အတိုင်း"
+
+#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_SELECT_ABTYPE.string.text
+msgid "Address book type"
+msgstr "လိပ်စာစာအုပ်အမျိုးအစား"
+
+#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_INVOKE_ADMIN_DIALOG.string.text
+msgid "Connection Settings"
+msgstr "ချိတ်ဆက်မှုအတွက် ပြင်ဆင်ချိန်ညှိမှုများ"
+
+#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_TABLE_SELECTION.string.text
+msgid "Table selection"
+msgstr "ဇယား ရွေးချယ်မှု"
+
+#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.string.text
+msgctxt "abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.string.text"
+msgid "Field Assignment"
+msgstr "နေရာကွက်ချထားမှု"
+
+#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_FINAL_CONFIRM.string.text
+msgid "Data Source Title"
+msgstr "အချက်အလက်မူရင်းခေါင်းစဉ်"
+
+#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.modaldialog.text
+msgid "Address Book Data Source Wizard"
+msgstr "အချက်အလက်ရင်းမြစ်လိပ်စာစာအုပ်လမ်းညွှန်"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.fixedtext.text
+msgid ""
+"%PRODUCTNAME lets you access address data already present in your system. To "
+"do this, a %PRODUCTNAME data source will be created in which your address "
+"data is available in tabular form.\n"
+"\n"
+"This wizard helps you create the data source."
+msgstr ""
+"သင်၏ကွန်ပျူတာတွင် ရှိပြီးသား အချက်အလက်လိပ်စာများကို ရယူရန် %PRODUCTNAMEမှ "
+"ခွင့်ပြုသည်။ ထိုသို့ပြုလုပ်ရန် %PRODUCTNAME အချက်အလက်ရင်းမြစ်သည် "
+"ဇယားပုံစံဖြင့်အသုံးပြုနိုင်သောအချက်အလက်လိပ်စာစာအုပ်ကို ဖန်တီးမည်။\n"
+"အချက်အလက်ရင်းမြစ်ကိုဖန်တီးရန်ဝဇ္ဇတ်လမ်းညွှန်က ကူညီသည်။"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.fixedline.text
+msgid "Please select the type of your external address book:"
+msgstr "သင့်ပြင်ပလိပ်စာစာအုပ်အမျိုးအစားကိုရွေးချယ်ပါ"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION.radiobutton.text
+msgid "Evolution"
+msgstr "အဆင့်ဆင့်ပြောင်းလဲခြင်း"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_GROUPWISE.radiobutton.text
+msgid "Groupwise"
+msgstr "အုပ်စုနည်းစနစ်"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_LDAP.radiobutton.text
+msgid "Evolution LDAP"
+msgstr "LDAP အဆင့်ဆင့်ပြောင်းလဲခြင်း"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_MORK.radiobutton.text
+msgid "Mozilla / Netscape"
+msgstr "မော်ဇီလာ/နက်စကေ့"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_THUNDERBIRD.radiobutton.text
+msgid "Thunderbird"
+msgstr "သန်းဒါးဘတ်"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_KAB.radiobutton.text
+msgid "KDE address book"
+msgstr "KDE လိပ်စာစာအုပ်"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_MACAB.radiobutton.text
+msgid "Mac OS X address book"
+msgstr "Mac OS X လိပ်စာစာအုပ်"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_LDAP.radiobutton.text
+msgid "LDAP address data"
+msgstr "LDAP လိပ်စာစာအုပ်"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOK.radiobutton.text
+msgid "Outlook address book"
+msgstr "Outlook လိပ်စာစာအုပ်"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOKEXPRESS.radiobutton.text
+msgid "Windows system address book"
+msgstr "ဝင်ဒိုးစနစ်လိပ်စာစာအုပ်"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_OTHER.radiobutton.text
+msgid "Other external data source"
+msgstr "အခြားပြင်ပအချက်အလက်မူရင်း"
+
+#: abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.fixedtext.text
+msgid ""
+"To set up the new data source, additional information is required.\n"
+"\n"
+"Click the following button to open another dialog in which you then enter "
+"the necessary information."
+msgstr ""
+"အချက်အလက်ရင်းမြစ်အသစ်များ စတင်အသုံးပြုရန် သတင်းအချက်အလက်များ ထပ်ဖြည့်ရန် "
+"လိုအပ်သည်။ \n"
+"\n"
+"အခြားဒိုင်ယာလော့ဂ်တစ်ခုကိုဖွင့်ပြီး လိုအပ်သည့် သတင်းအချက်အလက်များ "
+"ရိုက်ထည့်ရန် အောက်ပါခလုတ်ကို ကလစ်နှိပ်ပါ။"
+
+#: abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.pushbutton.text
+msgid "Settings"
+msgstr "ပြင်ဆင်ချိန်ညှိနိုင်မှုများ"
+
+#: abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.fixedtext.text
+msgid ""
+"The connection to the data source could not be established.\n"
+"Before you proceed, please check the settings made, or (on the previous "
+"page) choose another address data source type."
+msgstr ""
+"အချက်အလက်များမူရင်းကို ချိတ်ဆက်ထားခြင်းမရှိပါ။ \n"
+"လုပ်ဆောင်မှုများမစတင်မီ ပြင်ဆင်ချိန်ညှိမှုများကို စစ်ဆေးပါ (သို့) "
+"(ရှေ့စာမျက်နှာပေါ်ရှိ) အခြားအချက်အလက်များမူရင်းလိပ်စာကို ရွေးချယ်ပါ။"
+
+#: abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.fixedtext.text
+msgid ""
+"The external data source you have chosen contains more than one address "
+"book.\n"
+"Please select the one you mainly want to work with:"
+msgstr ""
+"သင်ရွေးချယ်ထားသောပြင်ပအချက်အလက်များမူရင်းသည် တစ်ခုထက်မကသော "
+"လိပ်စာစာအုပ်များတွင်ပါဝင်သည်။ \n"
+"သင်အလုပ်များတွင် အဓိကအသုံးချင်သည့်တစ်ခုကိုရွေးချယ်ပါ။"
+
+#: abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.fixedtext.text
+msgid ""
+"To incorporate the address data in your templates, %PRODUCTNAME has to know "
+"which fields contain which data.\n"
+"\n"
+"For instance, you could have stored the e-mail addresses in a field named "
+"\"email\", or \"E-mail\" or \"EM\" - or something completely different.\n"
+"\n"
+"Click the button below to open another dialog where you can enter the "
+"settings for your data source."
+msgstr ""
+"သင်၏ပုံစံပြားပေါ်တွင် အချက်အလက်များလိပ်စာများ စုစည်းရန် %PRODUCTNAME မှ "
+"မည်သည့်နေရာကွက်တွင် မည်သည့်အချက်အလက်များ ပါဝင်သည်ကို သိရှိရသည်။ \n"
+"\n"
+"ဥပမာ။ \"email\" သို့ \"E-mail\" သို့ \"EM\" နေရာကွက်တွင် အီးမေးလ်လိပ်စာများ "
+"သိမ်းဆည်းရန်။ သို့ မတူညီသော အခြားတစ်ခုဖြင့် ပြည့်စုံစွာ ဖြည့်ရန်။ \n"
+"သင်၏အချက်အလက်မူရင်းအတွက် ပြင်ဆင်ချိန်ညှိမှုများ ပြုသည့်နေရာတွင် "
+"အခြားဒိုင်ယာလော့ဒ်ကို ဖွင့်ရန် အောက်ပါခလုတ်ကို ကလစ်နှိပ်ပါ။ "
+
+#: abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.pushbutton.text
+msgctxt "abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.pushbutton.text"
+msgid "Field Assignment"
+msgstr "နေရာကွက်ချထားမှု"
+
+#: abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.fixedtext.text
+msgid ""
+"That was all the information necessary to integrate your address data into %"
+"PRODUCTNAME.\n"
+"\n"
+"Now, just enter the name under which you want to register the data source in "
+"%PRODUCTNAME."
+msgstr ""
+"%PRODUCTNAME အတွင်းတွင် သင်၏ အချက်အလက်လိပ်စာများ စုစည်းရန် "
+"သတင်းအချက်အလက်များအားလုံးရရန် လိုအပ်သည်။ \n"
+"\n"
+"%PRODUCTNAME တွင် သင်လိုအပ်သော အချက်အလက်များမူရင်းကို မှတ်ပုံတင်ရန် "
+"အောက်တွင် အမည်ကိုရိုက်ထည့်ပါ။"
+
+#: abspilot.src#RID_PAGE_FINAL.FT_LOCATION.fixedtext.text
+msgid "Location"
+msgstr "နေရာ"
+
+#: abspilot.src#RID_PAGE_FINAL.PB_BROWSE.pushbutton.text
+msgid "Browse..."
+msgstr "ဝင်ရောက်ရှာဖွေကြည့်ရှုရန်နေရာ..."
+
+#: abspilot.src#RID_PAGE_FINAL.CB_REGISTER_DS.checkbox.text
+msgid "Make this address book available to all modules in %PRODUCTNAME."
+msgstr ""
+"%PRODUCTNAME ရှိ မော်ကျူးများအားလုံးကို အသုံးပြုနိုင်ရန် လိပ်စာစာအုပ် "
+"ပြုလုပ်ပါ။"
+
+#: abspilot.src#RID_PAGE_FINAL.FT_NAME_EXPL.fixedtext.text
+msgid "Address book name"
+msgstr "လိပ်စာစာအုပ်အမည်"
+
+#: abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.fixedtext.text
+msgid ""
+"Another data source already has this name. As data sources have to have "
+"globally unique names, you need to choose another one."
+msgstr ""
+"အခြားအချက်အလက်များမူရင်းအတွက် အမည်ရှိပြီးဖြစ်သည်။ အချက်အလက်များမူရင်းသည် "
+"ကမ္ဘာလုံးဆိုင်ရာ အမည်တစ်ခုရှိပြီးဖြစ်၍ အခြားအမည်တစ်ခုကို ရွေးချယ်ရန်လိုသည်။ "
+" "
+
+#: abspilot.src#RID_ERR_NEEDTYPESELECTION.errorbox.text
+msgid "Please select a type of address book."
+msgstr "လိပ်စာစာအုပ်အမျိုးအစားရွေးချယ်ပါ။"
+
+#: abspilot.src#RID_QRY_NOTABLES.querybox.text
+msgid ""
+"The data source does not contain any tables.\n"
+"Do you want to set it up as an address data source, anyway?"
+msgstr ""
+"မည်သည့်ဇယားတွင်မှ အချက်အလက်များမူရင်း ပါဝင်မှုမရှိပါ။\n"
+"လိပ်စာအချက်အလက်များမူရင်းကို တနည်းနည်းဖြင့် စတင်လုပ်ဆောင်ရန် ဆန္ဒရှိပါသလား။"
+
+#: abspilot.src#RID_STR_DEFAULT_NAME.string.text
+msgid "Addresses"
+msgstr "လိပ်စာများ"
+
+#: abspilot.src#RID_STR_ADMINDIALOGTITLE.string.text
+msgid "Create Address Data Source"
+msgstr "လိပ်စာအချက်အလက်များမူရင်းကိုဖန်တီးပါ"
+
+#: abspilot.src#RID_STR_NOCONNECTION.string.text
+msgid "The connection could not be established."
+msgstr "ချိတ်ဆက်ထားမှုမရှိပါ"
+
+#: abspilot.src#RID_STR_PLEASECHECKSETTINGS.string.text
+msgid "Please check the settings made for the data source."
+msgstr "အချက်အလက်များမူရင်းအတွက် ပြင်ဆင်ချိန်ညှိမှုများပြုရန် စစ်ဆေးပါ။"
+
+#: abspilot.src#RID_STR_FIELDDIALOGTITLE.string.text
+msgid "Address Data - Field Assignment"
+msgstr "လိပ်စာအချက်အလက်များ - နေရာကွက်ချထားခြင်း"
+
+#: abspilot.src#RID_STR_NOFIELDSASSIGNED.string.text
+msgid ""
+"There are no fields assigned at this time.\n"
+"You can either assign fields now or do so later by first choosing:\n"
+"\"File - Template - Address Book Source...\""
+msgstr ""
+"ဤအချိန်တွင် နေရာကွက် အသုံးပြုမှုမရှိပါ။ \n"
+"ယခု(သို့)နောက်ပိုင်းတွင် အသုံးပြုရန် နေရာကွက်များကို ပထမဆုံး ရွေးချယ်ထားပါ။ \n"
+"\"ဖိုင် -ပုံစံပြား-လိပ်စာစာအုပ်ရင်းမြစ်...\"သို့ ဝင်ရောက်အသုံးပြုပါ။"
+
+#: bib.src#RID_BIB_STR_FIELDSELECTION.string.text
+msgid "Field selection:"
+msgstr "နေရာကွက်ရွေးချယ်မှု"
+
+#: bib.src#RID_BIB_STR_TABWIN_PREFIX.string.text
+msgid "Table;Query;Sql;Sql [Native]"
+msgstr "Table;Query;Sql;Sql [Native]"
+
+#: bib.src#RID_BIB_STR_FRAME_TITLE.string.text
+msgid "Bibliography Database"
+msgstr "ကိုးကားချက်များစုထားသောဒေတာဘေ့စ်"
+
+#: bib.src#RID_MAP_QUESTION.string.text
+msgid "Do you want to edit the column arrangement?"
+msgstr "ကော်လံနေရာချထားမှုကို ပြင်ဆင်တည်းဖြတ်လိုပါသလား"
+
+#: datman.src#RID_DLG_MAPPING.GB_MAPPING.fixedline.text
+msgid "Column names"
+msgstr "ကော်လံအမည်များ"
+
+#: datman.src#RID_DLG_MAPPING.ST_NONE.string.text
+msgid "<none>"
+msgstr "<ဘာမျှမရှိပါ>"
+
+#: datman.src#RID_DLG_MAPPING.modaldialog.text
+msgid "Column Layout for Table %1"
+msgstr "ဇယား%၁အတွက် ကော်လံအပြင်အဆင်"
+
+#: datman.src#RID_DLG_DBCHANGE.ST_ENTRY.string.text
+msgid "Entry"
+msgstr "ဝင်ရောက်မှု"
+
+#: datman.src#RID_DLG_DBCHANGE.modaldialog.text
+msgid "Choose Data Source"
+msgstr "အချက်အလက်မူရင်းတစ်ခုရွေးပါ"
+
+#: sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.string.text
+msgid "The following column names could not be assigned:\n"
+msgstr "အောက်ဖေါ်ပြပါကော်လံအမည်များအားသတ်မှတ်ထားခြင်းမရှိ\n"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.string.text
+msgid "Article"
+msgstr "ဆောင်းပါး"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_BOOK.string.text
+msgid "Book"
+msgstr "စာအုပ်"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_BOOKLET.string.text
+msgid "Brochures"
+msgstr "ပုံနှိပ်စာစောင်ငယ်"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_CONFERENCE.string.text
+msgctxt "sections.src#RID_TP_GENERAL.ST_TYPE_CONFERENCE.string.text"
+msgid "Conference proceedings"
+msgstr "အစည်းအဝေးဆောင်ရွက်ခြင်း"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_INBOOK.string.text
+msgid "Book excerpt"
+msgstr "စာအုပ်ကောက်နှုတ်ချက်"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_INCOLLECTION.string.text
+msgid "Book excerpt with title"
+msgstr "ခေါင်းစဉ်နှင့်စာအုပ်ကောက်နှုတ်ချက်"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_INPROCEEDINGS.string.text
+msgctxt "sections.src#RID_TP_GENERAL.ST_TYPE_INPROCEEDINGS.string.text"
+msgid "Conference proceedings"
+msgstr "အစည်းအဝေးဆောင်ရွက်ခြင်း"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_JOURNAL.string.text
+msgid "Journal"
+msgstr "ဂျာနယ်"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_MANUAL.string.text
+msgid "Techn. documentation"
+msgstr "နည်းပညာမှတ်တမ်းတင်ထားခြင်း"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_MASTERSTHESIS.string.text
+msgid "Thesis"
+msgstr "ကျမ်း"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_MISC.string.text
+msgid "Miscellaneous"
+msgstr "ရောနေသော"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_PHDTHESIS.string.text
+msgid "Dissertation"
+msgstr "အကျယ်တဝင့်​ပြောဆိုရေးသားချက်"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_PROCEEDINGS.string.text
+msgctxt "sections.src#RID_TP_GENERAL.ST_TYPE_PROCEEDINGS.string.text"
+msgid "Conference proceedings"
+msgstr "အစည်းအဝေးဆောင်ရွက်ခြင်း"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_TECHREPORT.string.text
+msgid "Research report"
+msgstr "သုတေသန အစီရင်ခံစာ"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_UNPUBLISHED.string.text
+msgid "Unpublished"
+msgstr "ထုတ်ဝေထားခြင်းမရှိ"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_EMAIL.string.text
+msgid "e-mail"
+msgstr "အီးမေးလ်"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_WWW.string.text
+msgid "WWW document"
+msgstr "WWW မှတ်တမ်းမှတ်ရာ"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM1.string.text
+msgid "User-defined1"
+msgstr "အသုံးပြုသူအမည်-၁"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM2.string.text
+msgid "User-defined2"
+msgstr "အသုံးပြုသူအမည်-၂"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM3.string.text
+msgid "User-defined3"
+msgstr "အသုံးပြုသူအမည်-၃"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM4.string.text
+msgid "User-defined4"
+msgstr "အသုံးပြုသူအမည်-၄"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM5.string.text
+msgid "User-defined5"
+msgstr "အသုံးပြုသူအမည်-၅"
+
+#: sections.src#RID_TP_GENERAL.tabpage.text
+msgid "General"
+msgstr "အထွေထွေ"
+
+#: sections.src#RID_POPUP_ME_VIEW.PU_INSERT.menuitem.text
+msgid "Insert Section..."
+msgstr "အပိုင်းလိုက်ထပ်ထည့်ပါ.."
+
+#: sections.src#RID_POPUP_ME_VIEW.PU_REMOVE.menuitem.text
+msgid "Delete Section..."
+msgstr "အပိုင်းလိုက်ဖျက်ပါ...."
+
+#: sections.src#RID_POPUP_ME_VIEW.PU_CHG_NAME.menuitem.text
+msgid "Modify Name..."
+msgstr "အထူးပြုအမည်"
+
+#: sections.src#ST_IDENTIFIER.string.text
+msgid "~Short name"
+msgstr "~နာမည်တို"
+
+#: sections.src#ST_AUTHTYPE.string.text
+msgid "~Type"
+msgstr "~အမျိုးအစား"
+
+#: sections.src#ST_YEAR.string.text
+msgid "~Year"
+msgstr "~နှစ်"
+
+#: sections.src#ST_AUTHOR.string.text
+msgid "Author(s)"
+msgstr "စာရေးဆရာ(များ)"
+
+#: sections.src#ST_TITLE.string.text
+msgid "Tit~le"
+msgstr "ခေါင်း~စဉ်"
+
+#: sections.src#ST_PUBLISHER.string.text
+msgid "~Publisher"
+msgstr "~⁠ထုတ်ဝေသူ"
+
+#: sections.src#ST_ADDRESS.string.text
+msgid "A~ddress"
+msgstr "လိပ်~စာ"
+
+#: sections.src#ST_ISBN.string.text
+msgid "~ISBN"
+msgstr "~ISBN"
+
+#: sections.src#ST_CHAPTER.string.text
+msgid "~Chapter"
+msgstr "~သင်ခန်းစာခေါင်းစဉ်"
+
+#: sections.src#ST_PAGE.string.text
+msgid "Pa~ge(s)"
+msgstr "စာ~မျက်နှာ(များ)"
+
+#: sections.src#ST_EDITOR.string.text
+msgid "Editor"
+msgstr "တည်းဖြတ်သူ"
+
+#: sections.src#ST_EDITION.string.text
+msgid "Ed~ition"
+msgstr "ပြင်ဆင်~တည်းဖြတ်မှု"
+
+#: sections.src#ST_BOOKTITLE.string.text
+msgid "~Book title"
+msgstr "~စာအုပ်ခေါင်းစဉ်"
+
+#: sections.src#ST_VOLUME.string.text
+msgid "Volume"
+msgstr "အတွဲ"
+
+#: sections.src#ST_HOWPUBLISHED.string.text
+msgid "Publication t~ype"
+msgstr "ပုံနှိပ်ထုတ်ဝေမှု~အမျိုးအစား"
+
+#: sections.src#ST_ORGANIZATION.string.text
+msgid "Organi~zation"
+msgstr "အဖွဲ့~အစည်း"
+
+#: sections.src#ST_INSTITUTION.string.text
+msgid "Instit~ution"
+msgstr "ဖွဲ့စည်းတည်ထောင်ခြင်း"
+
+#: sections.src#ST_SCHOOL.string.text
+msgid "University"
+msgstr "တက္ကသိုလ်"
+
+#: sections.src#ST_REPORT.string.text
+msgid "Type of re~port"
+msgstr "အစီရင်ခံစာအမျိုး~အစား"
+
+#: sections.src#ST_MONTH.string.text
+msgid "~Month"
+msgstr "~လ"
+
+#: sections.src#ST_JOURNAL.string.text
+msgid "~Journal"
+msgstr "~ဂျာနယ်"
+
+#: sections.src#ST_NUMBER.string.text
+msgid "Numb~er"
+msgstr "နံ~ပါတ်"
+
+#: sections.src#ST_SERIES.string.text
+msgid "Se~ries"
+msgstr "အတွဲ~လိုက်"
+
+#: sections.src#ST_ANNOTE.string.text
+msgid "Ann~otation"
+msgstr "မှတ်~သားချက်"
+
+#: sections.src#ST_NOTE.string.text
+msgid "~Note"
+msgstr "~မှတ်စု"
+
+#: sections.src#ST_URL.string.text
+msgid "URL"
+msgstr "URL"
+
+#: sections.src#ST_CUSTOM1.string.text
+msgid "User-defined field ~1"
+msgstr "အသုံးပြုသူသတ်မှတ်ထားသည့်နေရာကွက်-၁"
+
+#: sections.src#ST_CUSTOM2.string.text
+msgid "User-defined field ~2"
+msgstr "အသုံးပြုသူသတ်မှတ်ထားသည့်နေရာကွက်-၂"
+
+#: sections.src#ST_CUSTOM3.string.text
+msgid "User-defined field ~3"
+msgstr "အသုံးပြုသူသတ်မှတ်ထားသည့်နေရာကွက်-၂"
+
+#: sections.src#ST_CUSTOM4.string.text
+msgid "User-defined field ~4"
+msgstr "အသုံးပြုသူသတ်မှတ်ထားသည့်နေရာကွက်-၄"
+
+#: sections.src#ST_CUSTOM5.string.text
+msgid "User-defined field ~5"
+msgstr "အသုံးပြုသူသတ်မှတ်ထားသည့်နေရာကွက်-၅"
+
+#: toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.toolboxitem.text
+msgid "Table"
+msgstr "ဇယား "
+
+#: toolbar.src#RID_BIB_TOOLBAR.TBC_FT_QUERY.toolboxitem.text
+msgid "Search Key"
+msgstr "ရှာဖွေမှုသော့ချက်"
+
+#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_AUTOFILTER.toolboxitem.text
+msgid "AutoFilter"
+msgstr "အလိုအလျောက်စစ်ထုတ်ကိရိယာ"
+
+#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_FILTERCRIT.toolboxitem.text
+msgid "Standard Filter"
+msgstr "စစ်ထုတ်ကိရိယာစံနှုန်း"
+
+#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_REMOVEFILTER.toolboxitem.text
+msgid "Remove Filter"
+msgstr "စစ်ထုတ်ကိရိယာဖယ်ရှားပါ"
+
+#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_COL_ASSIGN.toolboxitem.text
+msgid "Column Arrangement"
+msgstr "ကော်လံနေရာချထားမှု..."
+
+#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_CHANGESOURCE.toolboxitem.text
+msgid "Data Source"
+msgstr "အချက်အလက်မူရင်း"
+
+#: grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.pushbutton.text
+msgctxt "grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.pushbutton.text"
+msgid "Set"
+msgstr "အစု"
+
+#: grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_ASCENDING.string.text
+msgid "Linear ascending"
+msgstr "ငယ်စဉ်ကြီးလိုက် စနစ်တကျစီထားပါ"
+
+#: grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_DESCENDING.string.text
+msgid "Linear descending"
+msgstr "ကြီးစဉ်ငယ်လိုက် စနစ်တကျစီထားပါ"
+
+#: grid.src#GRID_DIALOG.RESET_TYPE_RESET.string.text
+msgid "Original values"
+msgstr "မူလတန်ဖိုးများ"
+
+#: grid.src#GRID_DIALOG.RESET_TYPE_EXPONENTIAL.string.text
+msgid "Exponential increasing"
+msgstr "ထပ်ညွှန်းဆိုင်ရာတိုးတက်မှု"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.pushbutton.text
+msgid ""
+"About\n"
+" Dev~ice"
+msgstr ""
+"ကိရိယာ\n"
+"အကြောင်း"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.pushbutton.text
+msgid ""
+"Create\n"
+"Preview"
+msgstr ""
+"နမူနာကြည့်ရန် \n"
+"ဖန်တီးပါ"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.fixedline.text
+msgid "Preview"
+msgstr "နမူနာကြည့်ရန်"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCANAREA_BOX.fixedline.text
+msgid "Scan area"
+msgstr "စကန်ဖတ်မည့်ဧရိယာ"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_LEFT_TXT.fixedtext.text
+msgid "Left:"
+msgstr "ဘယ်ဖက် -"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_TOP_TXT.fixedtext.text
+msgid "Top:"
+msgstr "ထိပ်ဖက် -"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RIGHT_TXT.fixedtext.text
+msgid "Right:"
+msgstr "ညာဖက် -"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BOTTOM_TXT.fixedtext.text
+msgid "Bottom:"
+msgstr "အောက်ခြေ-"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_DEVICE_BOX_TXT.fixedtext.text
+msgid "Device used:"
+msgstr "ကိရိယာသုံးထားသည်"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RESOLUTION_TXT.fixedtext.text
+msgid "Resolution [~DPI]"
+msgstr "ပုံရိပ်ြပတ်သားမှု [~DPI]"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_ADVANCED_TXT.fixedtext.text
+msgid "Show advanced options"
+msgstr "ကြိုတင်ရွေးချယ်ခွင့်များကိုပြသပါ"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_OPTION_TXT.fixedtext.text
+msgid "Options:"
+msgstr "ရွေးပိုင်ခွင့်များ -"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_NUMERIC_VECTOR_TXT.fixedtext.text
+msgid "Vector element"
+msgstr "ဗက်တာအချက်အလက်များ"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.pushbutton.text
+msgctxt "sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.pushbutton.text"
+msgid "Set"
+msgstr "အစု"
+
+#: sanedlg.src#RID_SANE_DIALOG.modaldialog.text
+msgid "Scanner"
+msgstr "စကန်ဖတ်ရန်"
+
+#: sanedlg.src#RID_SANE_DEVICEINFO_TXT.string.text
+msgid ""
+"Device: %s\n"
+"Vendor: %s\n"
+"Model: %s\n"
+"Type: %s"
+msgstr ""
+"ကိရိယာ - %s\n"
+"ရောင်းချသူ - %s\n"
+"ပုံစံ- %s\n"
+"အမျိုးအစာ: - %s"
+
+#: sanedlg.src#RID_SANE_SCANERROR_TXT.string.text
+msgid "An error occurred while scanning."
+msgstr "စကန်ဖတ်စဉ် အမှားတစ်ခု ဖြစ်ပွားသည်။"
+
+#: sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.string.text
+msgid ""
+"The device does not offer a preview option. Therefore, a normal scan will be "
+"used as a preview instead. This may take a considerable amount of time."
+msgstr ""
+"ကိရိယာဖြင့် နမူနာကြည့်ခွင့်မရပါ။ ထို့ကြောင့် နမူနာကြည့်မည့်အစား "
+"ရိုးရိုးစကန်နာကို သုံးရလိမ့်မည်။ ထို့အတွက် ပြည့်စုံလုံလောက်သောအချိန်ကို "
+"ယူပါ။"
+
+#: sanedlg.src#RID_SANE_NOSANELIB_TXT.string.text
+msgid "The SANE interface could not be initialized. Scanning is not possible."
+msgstr "SANE ကြားခံမှ အစပြုလုပ်ဆောင်ခြင်းမရှိပါ။ စကန်ဖတ်ခြင်း မဖြစ်နိုင်ပါ။"
+
+#: preload.src#RID_DLG_OEMWIZARD.PB_PREV.pushbutton.text
+msgid "<< Back"
+msgstr "<<အနောက်"
+
+#: preload.src#RID_DLG_OEMWIZARD.PB_NEXT.pushbutton.text
+msgid "Next >>"
+msgstr "နောက်ထပ် >>"
+
+#: preload.src#RID_DLG_OEMWIZARD.ST_ACCEPT.string.text
+msgid "Accept"
+msgstr "လက်ခံပါ"
+
+#: preload.src#RID_DLG_OEMWIZARD.ST_FINISH.string.text
+msgid "Finish"
+msgstr "ပြီးပြီ"
+
+#: preload.src#RID_DLG_OEMWIZARD.ST_LICENSE_AGREEMENT.string.text
+msgid " - Software License Agreement"
+msgstr "- ဆော့ဖ်ဝဲ လိုင်စင် သဘောတူညီမှု"
+
+#: preload.src#RID_DLG_OEMWIZARD.ST_INSERT_USER_DATA.string.text
+msgid "- User Data"
+msgstr "- အသုံးပြုသူအချက်အလက်"
+
+#: preload.src#RID_TP_WELCOME.FT_INFO.fixedtext.text
+msgid ""
+"Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n"
+"\n"
+"To start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal "
+"data in the dialog following the license text. Important information is "
+"contained in the readme files which are located in the %PRODUCTNAME product "
+"directory. Please read these files carefully. You can also find detailed "
+"information at the Oracle website \n"
+"\n"
+"http://www.oracle.com/us/products/applications/open-office."
+msgstr ""
+"%PRODUCTNAME %PRODUCTVERSION OEM မှ ကြိုဆိုပါ၏\n"
+"\n"
+"%PRODUCTNAME %PRODUCTVERSION OEM စတင်ရန် အောက်ဖော်ပြပါ လိုင်စင်စာသား "
+"ဒိုင်ယာလော့ဂ်တွင် သင့်ကိုယ်ရေးအချက်အလက်များ ရိုက်ထည့်ပေးပါ။ %PRODUCTNAME "
+"ဒိုင်ယာထရီရှိ ဖတ်ရုံသာ ဖတ်နိုင်သော ဖိုင်များတွင် အရေးကြီးသည့် အချက်အလက်များ "
+"ပါဝင်သည်။ ၎င်းဖိုင်များကို ဂရုတစိုက် သေချာစွာဖတ်ပေးပါ။ အော်ရကယ် "
+"ဝဘ်ဆိုဒ်တွင်လည်း အသေးစိတ်အချက်အလက်များကို ရှာဖွေတွေ့ရှိနိုင်ပါသည်။\n"
+"\n"
+"http://www.oracle.com/us/products/applications/open-office."
+
+#: preload.src#RID_TP_WELCOME.tabpage.text
+msgid "Welcome"
+msgstr "ကြိုဆိုပါ၏"
+
+#: preload.src#RID_TP_LICENSE.FT_INFO1.fixedtext.text
+msgid "Please follow these steps to proceed with the installation:"
+msgstr "ထည့်သွင်းမှုများလုပ်ဆောင်ရန် အောက်ပါအဆင့်များအတိုင်းလုပ်ဆောင်ပါ။"
+
+#: preload.src#RID_TP_LICENSE.FT_INFO2_1.fixedtext.text
+msgid "1."
+msgstr "၁၊"
+
+#: preload.src#RID_TP_LICENSE.FT_INFO2.fixedtext.text
+msgid ""
+"View the complete License Agreement. Please use the scroll bar or the '%"
+"PAGEDOWN' button in this dialog to view the entire license text."
+msgstr ""
+"ပြည့်စုံသော လိုင်စင်ခွင့်ပြုချက်ကို ကြည့်ပါ။ ခွင့်ပြုချက်စာသားတစ်ခုလုံးကို "
+"မြင်နိုင်ရန် အထက်အောက်ရွေ့သည့် ဘားကို အသုံးပြုပြီး ဒိုင်ယာလော့ဂ်ရှိ '%"
+"PAGEDOWN' ခလုတ်ကိုနှိပ်ပါ။ "
+
+#: preload.src#RID_TP_LICENSE.PB_PAGEDOWN.pushbutton.text
+msgid "Page Down"
+msgstr "စာမျက်နှာအောက်သို့"
+
+#: preload.src#RID_TP_LICENSE.FT_INFO3_1.fixedtext.text
+msgid "2."
+msgstr "၂၊"
+
+#: preload.src#RID_TP_LICENSE.FT_INFO3.fixedtext.text
+msgid "Accept the License Agreement."
+msgstr "လိုင်စင် သဘောတူညီမှုကို လက်ခံပါသည်။"
+
+#: preload.src#RID_TP_LICENSE.CB_ACCEPT.checkbox.text
+msgid "I accept the terms of the Agreement."
+msgstr "သဘောတူခွင့်ပြုချက်ကိုလက်ခံပါသည်။"
+
+#: preload.src#RID_TP_LICENSE.LICENCE_ACCEPT.string.text
+msgid "~Accept"
+msgstr "~လက်ခံပါ"
+
+#: preload.src#RID_TP_LICENSE.LICENCE_NOTACCEPT.string.text
+msgid "Decline"
+msgstr "ငြင်းပယ်ပါ"
+
+#: preload.src#RID_TP_LICENSE.tabpage.text
+msgid "License Agreement"
+msgstr "လိုင်စင်သဘောတူညီမှု"

@@ -1,0 +1,811 @@
+
+#: conn_error_message.src#256___2_100___0.string.text
+msgid "The record operation has been vetoed."
+msgstr "Zapisovacia operácia bola vetovaná."
+
+#: conn_error_message.src#256___2_200___0.string.text
+msgid "The statement contains a cyclic reference to one or more sub queries."
+msgstr "Výraz obsahuje cyklický odkaz na jeden alebo viac poddotazov."
+
+#: conn_error_message.src#256___2_300___0.string.text
+msgid "The name must not contain any slashes ('/')."
+msgstr "Názov nesmie obsahovať znak lomka ('/')."
+
+#: conn_error_message.src#256___2_301___0.string.text
+msgid "$1$ is no SQL conform identifier."
+msgstr "$1$ nie je identifikátor zhodný s SQL."
+
+#: conn_error_message.src#256___2_302___0.string.text
+msgid "Query names must not contain quote characters."
+msgstr "Názvy dotazov nesmú obsahovať znaky úvodzoviek."
+
+#: conn_error_message.src#256___2_303___0.string.text
+msgid "The name '$1$' is already in use in the database."
+msgstr "Názov '$1$' je už v databáze použitý."
+
+#: conn_error_message.src#256___2_304___0.string.text
+msgid "No connection to the database exists."
+msgstr "Spojenie na databázu neexistuje."
+
+#: conn_error_message.src#256___2_500___0.string.text
+msgid "No $1$ exists."
+msgstr "Neexituje $1$."
+
+#: conn_error_message.src#256___2_550___0.string.text
+msgid "Unable to display the complete table content. Please apply a filter."
+msgstr "Nebolo možné zobraziť celý obsah tabuľky. Prosím použite filter."
+
+#: conn_shared_res.src#STR_CANNOT_CONVERT_STRING.string.text
+msgid ""
+"The string '$string$' cannot be converted using the encoding '$charset$'."
+msgstr ""
+"Reťazec '$string$' nemôže byť prevedený s použitím kódovania '$charset$'."
+
+#: conn_shared_res.src#STR_CANNOT_OPEN_BOOK.string.text
+msgid "Cannot open Evolution address book."
+msgstr "Nemôžem otvoriť adresár Evolution."
+
+#: conn_shared_res.src#STR_CANT_FIND_CARD_FOR_ROW.string.text
+msgid "Can't find the card for the requested row."
+msgstr "Nemôžem nájsť kartu požadovaného riadku."
+
+#: conn_shared_res.src#STR_CANT_FIND_ROW.string.text
+msgid "Can't find the requested row."
+msgstr "Nemôžem nájsť požadovaný riadok."
+
+#: conn_shared_res.src#STR_CAN_NOT_CANCEL_ROW_UPDATE.string.text
+msgid "The row update can not be canceled."
+msgstr "Aktualizácia riadku nemôže byť zrušená."
+
+#: conn_shared_res.src#STR_CAN_NOT_CREATE_ROW.string.text
+msgid "A new row can not be created."
+msgstr "Nemôže byť vytvorený nový riadok."
+
+#: conn_shared_res.src#STR_COLUMN_NOT_ADDABLE.string.text
+msgid ""
+"The column '$columnname$' could not be added. May be the file system is "
+"write protected."
+msgstr ""
+"Stĺpec '$columnname$' nemohol byť pridaný. Je možné, že súborový systém je "
+"chránený proti zápisu."
+
+#: conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.string.text
+msgid ""
+"The column '$columnname$' could not be altered. May be the file system is "
+"write protected."
+msgstr ""
+"Stĺpec '$columnname$' nemohol byť zmenený. Je možné, že súborový systém je "
+"chránený proti zápisu."
+
+#: conn_shared_res.src#STR_COLUMN_NOT_DROP.string.text
+msgid ""
+"The column at position '$position$' could not be dropped. May be the file "
+"system is write protected."
+msgstr ""
+"Stĺpec na pozícii '$position$' nemohol byť zahodený. Je možné, že súborový "
+"systém je chránený proti zápisu."
+
+#: conn_shared_res.src#STR_COLUMN_NOT_UPDATEABLE.string.text
+msgid "The column at position '$position$' could not be updated."
+msgstr "Stĺpec na pozícii '$position$' nemohol byť aktualizovaný."
+
+#: conn_shared_res.src#STR_COMMAND_NOT_FOUND.string.text
+msgid ""
+"The database '$databasename$' could not be started because the command "
+"'$progname$' could not be executed."
+msgstr ""
+"Databáza '$databasename$' nemohla byť spustená pretože program '$progname$' "
+"nemohol byť vykonaný."
+
+#: conn_shared_res.src#STR_COMMIT_ROW.string.text
+msgid "Please commit row '$position$' before update rows or insert new rows."
+msgstr ""
+"Prosím pošlite zmeny v riadku '$position$' pred aktualizáciou riadkov alebo "
+"vkladaním nových riadkov."
+
+#: conn_shared_res.src#STR_COULD_NOT_ALTER_TABLE.string.text
+msgid "The table could not be altered."
+msgstr "Tabuľka nemohla byť zmenená."
+
+#: conn_shared_res.src#STR_COULD_NOT_CONNECT_LDAP.string.text
+msgid "The connection to the LDAP server could not be established."
+msgstr "Nemohlo byť vytvorené spojenie s LDAP serverom."
+
+#: conn_shared_res.src#STR_COULD_NOT_CREATE_ADDRESSBOOK.string.text
+msgid "Could not create a new address book. Mozilla error code is $1$."
+msgstr "Nebolo možné vytvoriť nový adresár. Chyby Mozilla $1$."
+
+#: conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX.string.text
+msgid "The index could not be created. An unknown error appeared."
+msgstr "Nemohol byť vytvorený index. Objavila sa neznáma chyba."
+
+#: conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_KEYSIZE.string.text
+msgid ""
+"The index could not be created. The size of the chosen column is to big."
+msgstr "Nemohol byť vytvorený index. Veľkosť zvoleného stĺpca je príliš veľká."
+
+#: conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NAME.string.text
+msgid ""
+"The index could not be created. The file '$filename$' is used by an other "
+"index."
+msgstr ""
+"Nemohol byť vytvorený index. Súbor '$filename$' je používaný iným indexom."
+
+#: conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NOT_UNIQUE.string.text
+msgid "The index could not be created. The values are not unique."
+msgstr "Nemohol byť vytvorený index. Hodnoty nie sú jedinečné."
+
+#: conn_shared_res.src#STR_COULD_NOT_DELETE_FILE.string.text
+msgid "The file $filename$ could not be deleted."
+msgstr "Súbor $filename$ nemohol byť zmazaný."
+
+#: conn_shared_res.src#STR_COULD_NOT_DELETE_INDEX.string.text
+msgid ""
+"The index could not be deleted. An unknown error while accessing the file "
+"system occured."
+msgstr ""
+"Index nemohol byť zmazaný. Pri pristupovaní k súborovému systému sa vyskytla "
+"neznáma chyba."
+
+#: conn_shared_res.src#STR_COULD_NOT_GET_DIRECTORY_NAME.string.text
+msgid ""
+"An address book directory name could not be retrieved, an unknown error "
+"occurred."
+msgstr ""
+"Nemohol byť získaný názov podadresára v adresári, objavila sa neznáma chyba."
+
+#: conn_shared_res.src#STR_COULD_NOT_LOAD_FILE.string.text
+msgid "The file $filename$ could not be loaded."
+msgstr "Súbor $filename$ nemohol byť načítaný."
+
+#: conn_shared_res.src#STR_COULD_NOT_LOAD_LIB.string.text
+msgid "The library '$libname$' could not be loaded."
+msgstr "Knižnica '$libname$' nemohla byť načítaná."
+
+#: conn_shared_res.src#STR_COULD_NOT_RETRIEVE_AB_ENTRY.string.text
+msgid ""
+"An address book entry could not be retrieved, an unknown error occurred."
+msgstr "Nemohla byť získaná položka adresára, objavila sa neznáma chyba."
+
+#: conn_shared_res.src#STR_DATABASE_NEEDS_CONVERTING.string.text
+msgid ""
+"The current database need to be converted. Please insert control user  and "
+"password."
+msgstr ""
+"Aktuálna databáza musí byť prevedená. Prosím zadajte riadiaceho používateľa "
+" a heslo."
+
+#: conn_shared_res.src#STR_DELETE_ROW.string.text
+msgid ""
+"The row could not be deleted. The option \"Display inactive records\" is set."
+msgstr ""
+"Riadok nemohol byť zmazaný. Je nastavená možnosť \"Zobraziť neaktívne "
+"záznamy\"."
+
+#: conn_shared_res.src#STR_DUPLICATE_VALUE_IN_COLUMN.string.text
+msgid "Duplicate value found in column '$columnname$'."
+msgstr "V stĺpci '$columnname$' bola nájdená duplicitná hodnota."
+
+#: conn_shared_res.src#STR_ERRORMSG_SEQUENCE.string.text
+msgid "Function sequence error."
+msgstr "Chyba postupnosti vo funkcii."
+
+#: conn_shared_res.src#STR_ERROR_GET_ROW.string.text
+msgid "An error occured while getting the current row."
+msgstr "Pri získavaní aktuálneho riadku sa vyskytla chyba."
+
+#: conn_shared_res.src#STR_ERROR_REFRESH_ROW.string.text
+msgid "An error occured while refreshing the current row."
+msgstr "Pri obnovovaní aktuálneho riadku sa vyskytla chyba."
+
+#: conn_shared_res.src#STR_ERR_EXECUTING_QUERY.string.text
+msgid "An error occurred while executing the query."
+msgstr "Počas vykonávania dotazu sa objavila chyba."
+
+#: conn_shared_res.src#STR_FOREIGN_PROCESS_CHANGED_AB.string.text
+msgid ""
+"Mozilla Address Book has been changed out of this process, we can't modify "
+"it in this condition."
+msgstr ""
+"Adresár Mozilla Address Book bol zmenený mimo tohto procesu, v tomto stave "
+"sa nedá upravovať."
+
+#: conn_shared_res.src#STR_FORMULA_WRONG.string.text
+msgid "The formula for TypeInfoSettings is wrong!"
+msgstr "Vzorec pre TypeInfoSettings je nesprávny!"
+
+#: conn_shared_res.src#STR_ILLEGAL_MOVEMENT.string.text
+msgid "Illegal cursor movement occured."
+msgstr "Objavil sa zakázaný pohyb kurzora."
+
+#: conn_shared_res.src#STR_INPUTSTREAM_WRONG_LEN.string.text
+msgid ""
+"End of InputStream reached before satisfying length specified when "
+"InputStream was set."
+msgstr ""
+"Bol dosiahnutý koniec InputStream pred uspokojením dĺžky uvedenej v "
+"nastavení InputStream."
+
+#: conn_shared_res.src#STR_INVALID_BOOKMARK.string.text
+msgid "Invalid bookmark value"
+msgstr "Neplatná hodnota záložky"
+
+#: conn_shared_res.src#STR_INVALID_COLUMNNAME.string.text
+msgid "The column name '$columnname$' is not valid."
+msgstr "Stĺpec s názvom '$columnname$' nie je platný."
+
+#: conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.string.text
+msgid ""
+"The '$columnname$' column has been defined as a \"Decimal\" type, the max. "
+"length is $precision$ characters (with $scale$ decimal places).\n"
+"\n"
+"The specified value \"$value$ is longer than the number of digits allowed."
+msgstr ""
+"Stĺpec '$columnname$' bol definovaný ako \"Desatinný\" typ, pričom maximálna "
+"dĺžka je $precision$ znakov (s $scale$ desatinnými miestami).\n"
+"\n"
+"Zadaná hodnota \"$value$ je dlhšia ako povolený počet číslic."
+
+#: conn_shared_res.src#STR_INVALID_COLUMN_DESCRIPTOR_ERROR.string.text
+msgid "Could not append column: invalid column descriptor."
+msgstr "Nebolo možné pripojiť stĺpec: neplatný popis stĺpca."
+
+#: conn_shared_res.src#STR_INVALID_COLUMN_NAME_LENGTH.string.text
+msgid "Invalid column name length for column '$columnname$'."
+msgstr "Neplatná dĺžka názvu stĺpca pre stĺpec '$columnname$'."
+
+#: conn_shared_res.src#STR_INVALID_COLUMN_PRECISION.string.text
+msgid "Invalid precision for column '$columnname$'."
+msgstr "Neplatná presnosť pre stĺpec '$columnname$'."
+
+#: conn_shared_res.src#STR_INVALID_COLUMN_SELECTION.string.text
+msgid "The statement contains an invalid selection of columns."
+msgstr "Príkaz obsahuje neplatný výber stĺpcov."
+
+#: conn_shared_res.src#STR_INVALID_COLUMN_TYPE.string.text
+msgid "Invalid column type for column '$columnname$'."
+msgstr "Neplatný typ stĺpca pre stĺpec '$columnname$'."
+
+#: conn_shared_res.src#STR_INVALID_COLUMN_VALUE.string.text
+msgid ""
+"The column '$columnname$' could not be updated. The value is invalid for "
+"that column."
+msgstr ""
+"Stĺpec '$columnname$' nemohol byť aktualizovaný. Hodnota je neplatná pre "
+"tento stĺpec."
+
+#: conn_shared_res.src#STR_INVALID_DBASE_FILE.string.text
+msgid "The file '$filename$' is an invalid (or unrecognized) dBase file."
+msgstr "Súbor '$filename$' je neplatný (alebo nerozpoznateľný) dBase súbor."
+
+#: conn_shared_res.src#STR_INVALID_FILE_URL.string.text
+msgid ""
+"The given URL contains no valid local file system path. Please check the "
+"location of your database file."
+msgstr ""
+"Zadaná URL neobsahuje žiadnu platnú cestu súborového systému. Prosím "
+"skontrolujte váš databázový súbor."
+
+#: conn_shared_res.src#STR_INVALID_GROUP_DESCRIPTOR_ERROR.string.text
+msgid "Could not create group: invalid object descriptor."
+msgstr "Nebolo možné vytvoriť skupinu: neplatný popis objektu."
+
+#: conn_shared_res.src#STR_INVALID_INDEX.string.text
+msgid "Invalid descriptor index."
+msgstr "Neplatný popisný index."
+
+#: conn_shared_res.src#STR_INVALID_INDEX_DESCRIPTOR_ERROR.string.text
+msgid "Could not create index: invalid object descriptor."
+msgstr "Nebolo možné vytvoriť index: neplatný popis objektu."
+
+#: conn_shared_res.src#STR_INVALID_KEY_DESCRIPTOR_ERROR.string.text
+msgid "Could not create key: invalid object descriptor."
+msgstr "Nebolo možné vytvoriť kľúč: neplatný popis objektu."
+
+#: conn_shared_res.src#STR_INVALID_PARA_COUNT.string.text
+msgid "The count of the given parameter values doesn't match the parameters."
+msgstr "Počet zadaných hodnôt parametra nesúhlasí s parametrami."
+
+#: conn_shared_res.src#STR_INVALID_PRECISION_SCALE.string.text
+msgid "Precision is less than scale for column '$columnname$'."
+msgstr "Presnosť je menšia ako mierka pre stĺpec '$columnname$'."
+
+#: conn_shared_res.src#STR_INVALID_ROW_UPDATE.string.text
+msgid "The update call can not be executed. The row is invalid."
+msgstr "Aktualizácia nemôže byť vykonaná. Riadok je neplatný."
+
+#: conn_shared_res.src#STR_INVALID_TABLE_DESCRIPTOR_ERROR.string.text
+msgid "Could not create table: invalid object descriptor."
+msgstr "Nebolo možné vytvoriť tabuľku: neplatný popis objektu."
+
+#: conn_shared_res.src#STR_INVALID_USER_DESCRIPTOR_ERROR.string.text
+msgid "Could not create user: invalid object descriptor."
+msgstr "Nebolo možné vytvoriť používateľa: neplatný popis objektu."
+
+#: conn_shared_res.src#STR_INVALID_VIEW_DESCRIPTOR_ERROR.string.text
+msgid "Could not create view: invalid object descriptor."
+msgstr "Nebolo možné vytvoriť pohľad: neplatný popis objektu."
+
+#: conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.string.text
+msgid "The found KDE version is too new. Only KDE up to version $major$.$minor$ is "
+"known to work with this product.\n"
+msgstr "Nájdená verzia KDE je príliš nová. Len verzie KDE do $major$.$minor$ môžu "
+"fungovať s týmto produktom.\n"
+
+#: conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.string.text
+msgid ""
+"If you are sure that your KDE version works, you might execute the following "
+"Basic macro to disable this version check:\n"
+"\n"
+msgstr ""
+"Ak ste si istý, že vaša verzia KDE funguje, môžete spustiť nasledujúce makro "
+"BASICu pre vypnutie overovania tejto verzie:\n"
+"\n"
+
+#: conn_shared_res.src#STR_KDE_VERSION_TOO_OLD.string.text
+msgid ""
+"KDE version $major$.$minor$ or higher is required to access the KDE Address "
+"Book."
+msgstr ""
+"Pre prístup ku Adresáru KDE je potrebná verzia KDE $major$.$minor$ alebo "
+"vyššia."
+
+#: conn_shared_res.src#STR_LOAD_FILE_ERROR_MESSAGE.string.text
+msgid ""
+"The attempt to load the file resulted in the following error message "
+"($exception_type$):\n"
+"\n"
+"$error_message$"
+msgstr ""
+"Pokus o načítanie súboru viedol k nasledujúcej chybovej správe "
+"($exception_type$):\n"
+"\n"
+"$error_message$"
+
+#: conn_shared_res.src#STR_MOZILLA_ADDRESSBOOKS.string.text
+msgid "Mozilla/Seamonkey Addressbook Directory"
+msgstr "Adresár Mozilla/Seamonkey"
+
+#: conn_shared_res.src#STR_MOZILLA_IS_RUNNIG_NO_CHANGES.string.text
+msgid ""
+"You can't make any changes to mozilla address book when mozilla is running."
+msgstr "Nemôžete upravovať mozilla adresár, pokým je spustený program mozilla."
+
+#: conn_shared_res.src#STR_MOZILLA_IS_RUNNING.string.text
+msgid "Cannot create new address books while Mozilla is running."
+msgstr "Nieje možné vytvárať nové adresára pokým je spustená Mozilla."
+
+#: conn_shared_res.src#STR_NO_BASEDN.string.text
+msgid "No Base DN was provided."
+msgstr "Nebolo zadané základné DN."
+
+#: conn_shared_res.src#STR_NO_CLASSNAME.string.text
+msgid "The driver class '$classname$' could not be loaded."
+msgstr "Trieda ovládača '$classname$' nemohla byť načítaná."
+
+#: conn_shared_res.src#STR_NO_CLASSNAME_PATH.string.text
+msgid "The additional driver class path is '$classpath$'."
+msgstr "Ďalšia cesta triedy odvláča je '$classpath$'."
+
+#: conn_shared_res.src#STR_NO_CONNECTION.string.text
+msgid ""
+"The connection could not be created. May be the necessary data provider is "
+"not installed."
+msgstr ""
+"Spojenie nemohlo byť vytvorené. Možno nie je nainštalovaný potrebný "
+"poskytovateľ dát."
+
+#: conn_shared_res.src#STR_NO_CONNECTION_GIVEN.string.text
+msgid "It doesn't exist a connection to the database."
+msgstr "Spojenie na databázu neexistuje."
+
+#: conn_shared_res.src#STR_NO_COUNT_SUPPORT.string.text
+msgid "The driver does not support the 'COUNT' function."
+msgstr "Ovládač nepodporuje funkciu 'COUNT'."
+
+#: conn_shared_res.src#STR_NO_DISK_SPACE.string.text
+msgid ""
+"The database file '$filename$' could not be created. Please check your disk "
+"space."
+msgstr ""
+"Databázový súbor '$filename$' nemohol byť vytvorený. Prosím skontrolujte "
+"miesto na disku."
+
+#: conn_shared_res.src#STR_NO_DOCUMENTUI.string.text
+msgid "The provided DocumentUI is not allowed to be NULL."
+msgstr "Poskytnuté DocumentUI nemôže byť NULL."
+
+#: conn_shared_res.src#STR_NO_ELEMENT_NAME.string.text
+msgid "There is no element named '$name$'."
+msgstr "Prvok s názvom '$name$' neexistuje."
+
+#: conn_shared_res.src#STR_NO_HOSTNAME.string.text
+msgid "No hostname was provided."
+msgstr "Nebol zadaný hostiteľ."
+
+#: conn_shared_res.src#STR_NO_INPUTSTREAM.string.text
+msgid "The input stream was not set."
+msgstr "Nebol nastavený vstupný tok."
+
+#: conn_shared_res.src#STR_NO_JAVA.string.text
+msgid "No Java installation could be found. Please check your installation."
+msgstr "Nebola nájdená inštalácia Java. Prosím overte vašu inštaláciu."
+
+#: conn_shared_res.src#STR_NO_KDE_INST.string.text
+msgid "No suitable KDE installation was found."
+msgstr "Nebola nájdená vhodná inštalácia KDE."
+
+#: conn_shared_res.src#STR_NO_MAC_OS_FOUND.string.text
+msgid "No suitable Mac OS installation was found."
+msgstr "Nebola nájdená žiadna vhodná inštalácia Mac OS."
+
+#: conn_shared_res.src#STR_NO_RESULTSET.string.text
+msgid "The execution of the query doesn't return a valid result set."
+msgstr "Vykonanie dotazu nevracia platný súbor výsledkov."
+
+#: conn_shared_res.src#STR_NO_ROWCOUNT.string.text
+msgid "The execution of the update statement doesn't effect any rows."
+msgstr "Vykonanie príkazu aktualizácie neupravý žiadne riadky."
+
+#: conn_shared_res.src#STR_NO_STROAGE.string.text
+msgid "The connection can not be established. No storage or URL was given."
+msgstr "Spojenie nemôže byť nadviazané. Nebolo zadané úložné miesto alebo URL."
+
+#: conn_shared_res.src#STR_NO_TABLE.string.text
+msgid "No such table!"
+msgstr "Takáto tabuľka neexistuje!"
+
+#: conn_shared_res.src#STR_NO_TABLENAME.string.text
+msgid "There is no table named '$tablename$'."
+msgstr "Tabuľka s názvom '$tablename$' neexistuje."
+
+#: conn_shared_res.src#STR_NO_TABLE_CONTAINER.string.text
+msgid "An error occured while obtaining the connection's table container."
+msgstr "Pri získavaní zoznamu tabuliek spojenia sa vyskytla chyba."
+
+#: conn_shared_res.src#STR_NO_TABLE_CREATION_SUPPORT.string.text
+msgid "Creating tables is not supported for this kind of address books."
+msgstr "Vytváranie tabuliek nie je podporované pre tento druh adresárov."
+
+#: conn_shared_res.src#STR_NO_TABLE_EDITOR_DIALOG.string.text
+msgid "An error occured while creating the table editor dialog."
+msgstr "Pri vytváraní dialógu editora tabuľky sa vyskytla chyba."
+
+#: conn_shared_res.src#STR_NO_VALID_FILE_URL.string.text
+msgid "The URL '$URL$' is not valid. A connection can not be created."
+msgstr "URL '$URL$' je neplatné. Spojenie nemôže byť vytvorené."
+
+#: conn_shared_res.src#STR_OE_ADDRESSBOOK.string.text
+msgid "Outlook Express Addressbook"
+msgstr "Adresár Outlook Express"
+
+#: conn_shared_res.src#STR_ONL_ONE_COLUMN_PER_INDEX.string.text
+msgid "The index could not be created. Only one column per index is allowed."
+msgstr ""
+"Nemohol byť vytvorený index. Je povolený len jeden stĺpec pre každý index."
+
+#: conn_shared_res.src#STR_OPERATOR_TOO_COMPLEX.string.text
+msgid "The query can not be executed. The operator is too complex."
+msgstr "Dotaz nemôže byť vykonaný. Operátor je príliš komplexný."
+
+#: conn_shared_res.src#STR_OUTLOOK_MAPI_ADDRESSBOOK.string.text
+msgid "Outlook (MAPI) Addressbook"
+msgstr "Adresár Outlook (MAPI)"
+
+#: conn_shared_res.src#STR_PARA_ONLY_PREPARED.string.text
+msgid "Parameters can appear only in prepared statements."
+msgstr "Parametre sa môžu objaviť len v pripravených príkazoch."
+
+#: conn_shared_res.src#STR_PRIVILEGE_NOT_GRANTED.string.text
+msgid "Privilege not granted: Only table privileges can be granted."
+msgstr "Neboli udelené práva: Len práva pre tabuľky môžu byť udelené."
+
+#: conn_shared_res.src#STR_PRIVILEGE_NOT_REVOKED.string.text
+msgid "Privilege not revoked: Only table privileges can be revoked."
+msgstr "Práva neboli odvolané: Len práva pre tabuľky môžu byť odvolané."
+
+#: conn_shared_res.src#STR_QUERY_AT_LEAST_ONE_TABLES.string.text
+msgid "The query can not be executed. It needs at least one table."
+msgstr "Dotaz nemôže byť vykonaný. Vyžaduje aspoň jednu tabuľku."
+
+#: conn_shared_res.src#STR_QUERY_COMPLEX_COUNT.string.text
+msgid ""
+"The query can not be executed. It is too complex. Only \"COUNT(*)\" is "
+"supported."
+msgstr ""
+"Dotaz nemôže byť vykonaný. Je príliš komplexný. Podporované je len "
+"\"COUNT(*)\"."
+
+#: conn_shared_res.src#STR_QUERY_FUNCTION_NOT_SUPPORTED.string.text
+msgid "The query can not be executed. The function is not supported."
+msgstr "Dotaz nemôže byť vykonaný. Funkcia nie je podporovaná."
+
+#: conn_shared_res.src#STR_QUERY_INVALID_BETWEEN.string.text
+msgid "The query can not be executed. The 'BETWEEN' arguments are not correct."
+msgstr "Dotaz nemôže byť vykonaný. Argumenty 'BETWEEN' nie sú správne."
+
+#: conn_shared_res.src#STR_QUERY_INVALID_IS_NULL_COLUMN.string.text
+msgid ""
+"The query can not be executed. The 'IS NULL' can only be used with a column "
+"name."
+msgstr ""
+"Dotaz nemôže byť vykonaný. 'IS NULL' môže byť použité len s názvom stĺpca."
+
+#: conn_shared_res.src#STR_QUERY_INVALID_LIKE_COLUMN.string.text
+msgid ""
+"The query can not be executed. You cannot use 'LIKE' with columns of this "
+"type."
+msgstr ""
+"Dotaz nemôže byť vykonaný. Nie je možné použiť 'LIKE' pri stĺpcoch tohto "
+"typu."
+
+#: conn_shared_res.src#STR_QUERY_INVALID_LIKE_STRING.string.text
+msgid ""
+"The query can not be executed. 'LIKE' can be used with a string argument "
+"only."
+msgstr ""
+"Dotaz nemôže byť vykonaný. 'LIKE' môže byť použité len s textovým "
+"argumentom."
+
+#: conn_shared_res.src#STR_QUERY_LIKE_WILDCARD.string.text
+msgid ""
+"The query can not be executed. The 'LIKE' condition contains wildcard in the "
+"middle."
+msgstr ""
+"Dotaz nemôže byť vykonaný. Podmienka 'LIKE' obsahuje v strede zástupný znak."
+
+#: conn_shared_res.src#STR_QUERY_LIKE_WILDCARD_MANY.string.text
+msgid ""
+"The query can not be executed. The 'LIKE' condition contains too many "
+"wildcards."
+msgstr ""
+"Dotaz nemôže byť vykonaný. Podmienka 'LIKE' obsahuje príliš veľa zástupných "
+"znakov."
+
+#: conn_shared_res.src#STR_QUERY_MORE_TABLES.string.text
+msgid "The query can not be executed. It contains more than one table."
+msgstr "Dotaz nemôže byť vykonaný. Obsahuje viac ako jednu tabuľku."
+
+#: conn_shared_res.src#STR_QUERY_NOT_LIKE_TOO_COMPLEX.string.text
+msgid "The query can not be executed. The 'NOT LIKE' condition is too complex."
+msgstr "Dotaz nemôže byť vykonaný. Podmienka 'NOT LIKE' je príliš komplexná."
+
+#: conn_shared_res.src#STR_QUERY_NO_COLUMN.string.text
+msgid "The query can not be executed. It contains no valid columns."
+msgstr "Dotaz nemôže byť vykonaný. Neobsahuje žiadne platné stĺpce."
+
+#: conn_shared_res.src#STR_QUERY_NO_TABLE.string.text
+msgid "The query can not be executed. It contains no valid table."
+msgstr "Dotaz nemôže byť vykonaný. Neobsahuje žiadnu platnú tabuľku."
+
+#: conn_shared_res.src#STR_QUERY_TOO_COMPLEX.string.text
+msgid "The query can not be executed. It is too complex."
+msgstr "Dotaz nemôže byť vykonaný. Je príliš komplexný."
+
+#: conn_shared_res.src#STR_ROW_ALREADY_DELETED.string.text
+msgid "The row could not be deleted. It is already deleted."
+msgstr "Riadok nemohol byť zmazaný. Už zmazaný je."
+
+#: conn_shared_res.src#STR_ROW_CAN_NOT_SAVE.string.text
+msgid "The current row can not be saved."
+msgstr "Aktuálny riadok nemôže byť uložený."
+
+#: conn_shared_res.src#STR_SORT_BY_COL_ONLY.string.text
+msgid "Can only sort by table columns."
+msgstr "Tabuľka sa môže zoradiť len podľa stĺpcov."
+
+#: conn_shared_res.src#STR_SQL_NAME_ERROR.string.text
+msgid "The name '$name$' doesn't match SQL naming constraints."
+msgstr "Názov '$name$' nesúhlasí s kritériami SQL názvov."
+
+#: conn_shared_res.src#STR_STMT_TYPE_NOT_SUPPORTED.string.text
+msgid "This statement type not supported by this database driver."
+msgstr "Typ príkazu nie je podporovaný týmto databázovým ovládačom."
+
+#: conn_shared_res.src#STR_STRING_LENGTH_EXCEEDED.string.text
+msgid ""
+"The string '$string$' exceeds the maximum length of $maxlen$ characters when "
+"converted to the target character set '$charset$'."
+msgstr ""
+"Po prevode do cieľovej znakovej sady '$charset$' reťazec '$string$' "
+"presahuje maximálnu dĺžku $maxlen$ znakov."
+
+#: conn_shared_res.src#STR_TABLE_NOT_DROP.string.text
+msgid ""
+"The table '$tablename$' could not be dropped. May be the file system is "
+"write protected."
+msgstr ""
+"Tabuľka '$tablename$' nemohla byť zahodená. Je možné, že súborový systém je "
+"chránený proti zápisu."
+
+#: conn_shared_res.src#STR_TABLE_READONLY.string.text
+msgid "The table can not be changed. It is read only."
+msgstr "Tabuľka nemôže byť zmenená. Je iba na čítanie."
+
+#: conn_shared_res.src#STR_THUNDERBIRD_ADDRESSBOOKS.string.text
+msgid "Thunderbird Addressbook Directory"
+msgstr "Adresár Thunderbird"
+
+#: conn_shared_res.src#STR_TIMEOUT_WAITING.string.text
+msgid "Timed out while waiting for the result."
+msgstr "Time out počas čakania na výsledok."
+
+#: conn_shared_res.src#STR_TYPE_NOT_CONVERT.string.text
+msgid "The type could not be converted."
+msgstr "Typ nemohol byť prevedený."
+
+#: conn_shared_res.src#STR_UNKNOWN_COLUMN_NAME.string.text
+msgid "The column name '$columnname$' is unknown."
+msgstr "Stĺpec s názvom '$columnname$' je neznámy."
+
+#: conn_shared_res.src#STR_UNKNOWN_COLUMN_TYPE.string.text
+msgid "The type of column at position '$position$' is unknown."
+msgstr "Typ stĺpca na pozícii '$position$' je neznámy."
+
+#: conn_shared_res.src#STR_UNKNOWN_PARA_TYPE.string.text
+msgid "The type of parameter at position '$position$' is unknown."
+msgstr "Typ parametra na pozícii '$position$' je neznámy."
+
+#: conn_shared_res.src#STR_UNSPECIFIED_ERROR.string.text
+msgid "An unknown error occured."
+msgstr "Objavila sa neznáma chyba."
+
+#: conn_shared_res.src#STR_UNSUPPORTED_FEATURE.string.text
+msgid ""
+"The driver does not support the functionality for '$featurename$'. It is not "
+"implemented."
+msgstr ""
+"Ovládač nepodporuje funkcionalitu pre '$featurename$'. Nie je "
+"implementovaná."
+
+#: conn_shared_res.src#STR_UNSUPPORTED_FUNCTION.string.text
+msgid "The driver does not support the function '$functionname$'."
+msgstr "Ovládač nepodporuje funkciu '$functionname$'."
+
+#: conn_shared_res.src#STR_URI_SYNTAX_ERROR.string.text
+msgid "The connection URL is invalid."
+msgstr "URL pripojenia je neplatná."
+
+#: conn_shared_res.src#STR_USER_NO_DELETE.string.text
+msgid ""
+"This user couldn't be deleted. Otherwise the database stays in a "
+"inconsistent state."
+msgstr ""
+"Tento používateľ nemohol byť zmazaný. V opačnom prípade by databáza zostala "
+"v nekonzistentnom stave."
+
+#: conn_shared_res.src#STR_VIEW_NO_COMMAND_ERROR.string.text
+msgid "Could not create view: no command object."
+msgstr "Nebolo možné vytvoriť pohľad: neexistuje príkazový objekt."
+
+#: conn_shared_res.src#STR_WRONG_PARAM_INDEX.string.text
+msgid ""
+"You tried to set a parameter at position '$pos$' but there is/are only "
+"'$count$' parameter(s) allowed. One reason may be that the property "
+"\"ParameterNameSubstitution\" is not set to TRUE in the data source."
+msgstr ""
+"Pokúsili ste sa nastaviť parameter na pozícii '$pos$', ale je možné nastaviť "
+"len '$count$' parametru(ov). Jenou z príčin môže byť že vlastnosť "
+"\"ParameterNameSubstitution\" nie je nastavená na TRUE v zdroji dát."
+
+#: ado.xcu#.Drivers.Installed.sdbc_ado__.DriverTypeDisplayName.value.text
+msgid "ADO"
+msgstr "ADO"
+
+#: ado.xcu#.Drivers.Installed.sdbc_ado_access_PROVIDER_Microsoft.Jet.OLEDB.4.0_DATA_SOURCE__.DriverTypeDisplayName.value.text
+msgid "Microsoft Access"
+msgstr "Microsoft Access"
+
+#: ado.xcu#.Drivers.Installed.sdbc_ado_access_Provider_Microsoft.ACE.OLEDB.12.0_DATA_SOURCE__.DriverTypeDisplayName.value.text
+msgid "Microsoft Access 2007"
+msgstr "Microsoft Access 2007"
+
+#: hsqldb.xcu#.Drivers.Installed.sdbc_embedded_hsqldb.DriverTypeDisplayName.value.text
+msgid "HSQL database engine"
+msgstr "HSQL databázový engine"
+
+#: odbc.xcu#.Drivers.Installed.sdbc_odbc__.DriverTypeDisplayName.value.text
+msgid "ODBC"
+msgstr "ODBC"
+
+#: calc.xcu#.Drivers.Installed.sdbc_calc__.DriverTypeDisplayName.value.text
+msgid "Spreadsheet"
+msgstr "Zošit"
+
+#: macab.xcu#.Drivers.Installed.sdbc_address_macab.DriverTypeDisplayName.value.text
+msgid "Mac OS X Address Book"
+msgstr "Adresár Mac OS X"
+
+#: jdbc.xcu#.Drivers.Installed.jdbc__.DriverTypeDisplayName.value.text
+msgid "JDBC"
+msgstr "JDBC"
+
+#: jdbc.xcu#.Drivers.Installed.jdbc_oracle_thin__.DriverTypeDisplayName.value.text
+msgid "Oracle JDBC"
+msgstr "Oracle JDBC"
+
+#: evoab2.xcu#.Drivers.Installed.sdbc_address_evolution_groupwise.DriverTypeDisplayName.value.text
+msgid "Groupwise"
+msgstr "Groupwise"
+
+#: evoab2.xcu#.Drivers.Installed.sdbc_address_evolution_ldap.DriverTypeDisplayName.value.text
+msgid "Evolution LDAP"
+msgstr "Evolution LDAP"
+
+#: evoab2.xcu#.Drivers.Installed.sdbc_address_evolution_local.DriverTypeDisplayName.value.text
+msgid "Evolution Local"
+msgstr "Evolution lokálny"
+
+#: evoab.xcu#.Drivers.Installed.sdbc_address_evolution_groupwise.DriverTypeDisplayName.value.text
+msgid "Groupwise"
+msgstr "Groupwise"
+
+#: evoab.xcu#.Drivers.Installed.sdbc_address_evolution_ldap.DriverTypeDisplayName.value.text
+msgid "Evolution LDAP"
+msgstr "Evolution LDAP"
+
+#: flat.xcu#.Drivers.Installed.sdbc_flat__.DriverTypeDisplayName.value.text
+msgid "Text"
+msgstr "Text"
+
+#: adabas.xcu#.Drivers.Installed.sdbc_adabas__.DriverTypeDisplayName.value.text
+msgid "Adabas D"
+msgstr "Adabas D"
+
+#: dbase.xcu#.Drivers.Installed.sdbc_dbase__.DriverTypeDisplayName.value.text
+msgid "dBASE"
+msgstr "dBASE"
+
+#: mysql.xcu#.Drivers.Installed.sdbc_mysql_jdbc__.DriverTypeDisplayName.value.text
+msgid "MySQL (JDBC)"
+msgstr "MySQL (JDBC)"
+
+#: mysql.xcu#.Drivers.Installed.sdbc_mysql_mysqlc__.DriverTypeDisplayName.value.text
+msgid "MySQL (Native)"
+msgstr "MySQL (Natívne)"
+
+#: mysql.xcu#.Drivers.Installed.sdbc_mysql_odbc__.DriverTypeDisplayName.value.text
+msgid "MySQL (ODBC)"
+msgstr "MySQL (ODBC)"
+
+#: mozab.xcu#.Drivers.Installed.sdbc_address_ldap__.DriverTypeDisplayName.value.text
+msgctxt "mozab.xcu#.Drivers.Installed.sdbc_address_ldap__.DriverTypeDisplayName.value.text"
+msgid "LDAP Address Book"
+msgstr "Adresár LDAP"
+
+#: mozab.xcu#.Drivers.Installed.sdbc_address_mozilla_.DriverTypeDisplayName.value.text
+msgctxt "mozab.xcu#.Drivers.Installed.sdbc_address_mozilla_.DriverTypeDisplayName.value.text"
+msgid "SeaMonkey Address Book"
+msgstr "Adresár SeaMonkey"
+
+#: mozab.xcu#.Drivers.Installed.sdbc_address_outlook.DriverTypeDisplayName.value.text
+msgid "Microsoft Outlook Address Book"
+msgstr "Adresár Microsoft Outlook"
+
+#: mozab.xcu#.Drivers.Installed.sdbc_address_outlookexp.DriverTypeDisplayName.value.text
+msgid "Microsoft Windows Address Book"
+msgstr "Adresár Microsoft Windows"
+
+#: mozab.xcu#.Drivers.Installed.sdbc_address_thunderbird_.DriverTypeDisplayName.value.text
+msgctxt "mozab.xcu#.Drivers.Installed.sdbc_address_thunderbird_.DriverTypeDisplayName.value.text"
+msgid "Thunderbird Address Book"
+msgstr "Adresár Thunderbird"
+
+#: mozab2.xcu#.Drivers.Installed.sdbc_address_ldap__.DriverTypeDisplayName.value.text
+msgctxt "mozab2.xcu#.Drivers.Installed.sdbc_address_ldap__.DriverTypeDisplayName.value.text"
+msgid "LDAP Address Book"
+msgstr "Adresár LDAP"
+
+#: mozab2.xcu#.Drivers.Installed.sdbc_address_mozilla_.DriverTypeDisplayName.value.text
+msgctxt "mozab2.xcu#.Drivers.Installed.sdbc_address_mozilla_.DriverTypeDisplayName.value.text"
+msgid "SeaMonkey Address Book"
+msgstr "Adresár SeaMonkey"
+
+#: mozab2.xcu#.Drivers.Installed.sdbc_address_thunderbird_.DriverTypeDisplayName.value.text
+msgctxt "mozab2.xcu#.Drivers.Installed.sdbc_address_thunderbird_.DriverTypeDisplayName.value.text"
+msgid "Thunderbird Address Book"
+msgstr "Adresár Thunderbird"
+
+#: kab.xcu#.Drivers.Installed.sdbc_address_kab.DriverTypeDisplayName.value.text
+msgid "KDE Address Book"
+msgstr "Adresár KDE"

@@ -1,0 +1,2510 @@
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: ~\n"
+
+#: view.src#STR_NODEFPRINTER.string.text
+msgid ""
+"No default printer found.\n"
+"Please choose a printer and try again."
+msgstr ""
+"Не обнаружен принтер по умолчанию.\n"
+"Выберите принтер и попробуйте ещё раз."
+
+#: view.src#STR_NOSTARTPRINTER.string.text
+msgid ""
+"Could not start printer.\n"
+"Please check your printer configuration."
+msgstr ""
+"Невозможно запустить принтер.\n"
+"Проверьте конфигурацию принтера."
+
+#: view.src#STR_PRINTER_NOTAVAIL.string.text
+msgid ""
+"This document has been formatted for the printer $1. The specified printer "
+"is not available. \n"
+"Do you want to use the standard printer $2 ?"
+msgstr ""
+"Этот документ отформатирован для принтера $1, который в настоящее время "
+"недоступен.\n"
+"Использовать принтер $2?"
+
+#: view.src#STR_PRINT_OPTIONS.string.text
+msgid "Options..."
+msgstr "Параметры..."
+
+#: view.src#STR_PRINT_OPTIONS_TITLE.string.text
+msgid "Printer Options"
+msgstr "Параметры печати"
+
+#: view.src#STR_ERROR_PRINTER_BUSY.string.text
+msgid "Printer busy"
+msgstr "Принтер занят"
+
+#: view.src#STR_ERROR_PRINT.string.text
+msgid "Error while printing"
+msgstr "Ошибка печати"
+
+#: view.src#STR_PRINTING.string.text
+msgid "Printing"
+msgstr "Печать"
+
+#: view.src#STR_PAGE.string.text
+msgid "Page "
+msgstr "Страница "
+
+#: view.src#STR_ERROR_SAVE_TEMPLATE.string.text
+msgid "Error saving template "
+msgstr "Ошибка сохранения шаблона "
+
+#: view.src#STR_READONLY.string.text
+msgid " (read-only)"
+msgstr " (только для чтения)"
+
+#: view.src#STR_PRINT_NEWORI.string.text
+msgctxt "view.src#STR_PRINT_NEWORI.string.text"
+msgid ""
+"The page size and orientation have been modified.\n"
+"Would you like to save the new settings in the\n"
+"active document?"
+msgstr ""
+"Изменена текущая ориентация страницы.\n"
+"Сохранить эти изменения\n"
+"в активном документе?"
+
+#: view.src#STR_PRINT_NEWSIZE.string.text
+msgid ""
+"The page size has been modified.\n"
+"Should the new settings be saved\n"
+"in the active document?"
+msgstr ""
+"Размер страницы изменён.\n"
+"Сохранить эти изменения\n"
+"в активном документе?"
+
+#: view.src#STR_PRINT_NEWORISIZE.string.text
+msgctxt "view.src#STR_PRINT_NEWORISIZE.string.text"
+msgid ""
+"The page size and orientation have been modified.\n"
+"Would you like to save the new settings in the\n"
+"active document?"
+msgstr ""
+"Размер и ориентация страницы изменены.\n"
+"Сохранить эти изменения в активном документе?"
+
+#: view.src#STR_PREVIEW_DOCINFO.string.text
+msgid ""
+"<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$("
+"TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt>"
+"<b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
+msgstr ""
+"<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Заголовок:</b><d"
+"d>$(TITEL)<dt><b>Тема:</b><dd>$(THEME)<dt><b>Ключевые слова:</b><dd>$(KEYWOR"
+"DS)<dt><b>Описание:</b><dd>$(TEXT)</dl></font></body></html>"
+
+#: view.src#STR_PREVIEW_NODOCINFO.string.text
+msgid ""
+"<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document "
+"properties found.</B></FONT></P></BODY></HTML>"
+msgstr ""
+"<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>Свойства "
+"документа не обнаружены.</B></FONT></P></BODY></HTML>"
+
+#: view.src#MSG_CANT_CLOSE.infobox.text
+msgid ""
+"The document cannot be closed because a\n"
+" print job is being carried out."
+msgstr ""
+"Невозможно в данный момент закрыть этот документ,\n"
+"поскольку выполняется ещё одно задание печати."
+
+#: view.src#DLG_PRINTMONITOR_TEXT.#define.text
+msgid "Print Monitor"
+msgstr "Монитор печати"
+
+#: view.src#DLG_PRINTMONITOR.FT_PRINTING.fixedtext.text
+msgid "is being printed on"
+msgstr "печатается на"
+
+#: view.src#DLG_PRINTMONITOR.STR_FT_PREPARATION.string.text
+msgid "is being prepared for printing"
+msgstr "подготовка к печати"
+
+#: view.src#MSG_ERROR_SEND_MAIL.infobox.text
+msgid ""
+"An error occurred in sending the message. Possible errors could be a missing "
+"user account or a defective setup.\n"
+"Please check the %PRODUCTNAME settings or your e-mail program settings."
+msgstr ""
+"Ошибка отправки сообщения. Возможно, ошибка возникла из-за отсутствия "
+"учётной записи пользователя или неполадок в установке.\n"
+"Проверьте настройки %PRODUCTNAME и программы электронной почты."
+
+#: view.src#MSG_QUERY_OPENASTEMPLATE.querybox.text
+msgid ""
+"This document cannot be edited, possibly due to missing access rights. Do "
+"you want to edit a copy of the document?"
+msgstr ""
+"Невозможно открыть этот документ для редактирования\n"
+"(вероятно, из-за отсутствия прав). Использовать его в качестве шаблона\n"
+"для нового документа?"
+
+#: view.src#STR_REPAIREDDOCUMENT.string.text
+msgid " (repaired document)"
+msgstr " (документ восстановлен)"
+
+#: view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.errorbox.text
+msgid ""
+"%PRODUCTNAME could not find a web browser on your system. Please check your "
+"Desktop Preferences or install a web browser (for example, Mozilla) in the "
+"default  location requested during the browser installation."
+msgstr ""
+"%PRODUCTNAME не может найти установленного браузера. Проверьте установки "
+"рабочего стола или установите браузер (например, Mozilla) в путь установки "
+"по умолчанию."
+
+#: menu.src#STR_MENU_CFGITEM.string.text
+msgid "Configuration Menu"
+msgstr "Меню конфигурации"
+
+#: menu.src#STR_MENU_ADDONS.string.text
+msgid "~Add-Ons"
+msgstr "Расширения"
+
+#: menu.src#MN_CLIPBOARDFUNCS.SID_CUT.menuitem.text
+msgid "Cu~t"
+msgstr "Вырезать"
+
+#: menu.src#MN_CLIPBOARDFUNCS.SID_COPY.menuitem.text
+msgid "~Copy"
+msgstr "Копировать"
+
+#: menu.src#MN_CLIPBOARDFUNCS.SID_PASTE.menuitem.text
+msgid "~Paste"
+msgstr "Вставить"
+
+#: menu.src#SID_WIN_FULLSCREEN.string.text
+msgid "Leave Full-Screen Mode"
+msgstr "Выйти из полноэкранного режима"
+
+#: menu.src#STR_MENU_ADDONHELP.string.text
+msgid "Add-~On Help"
+msgstr "Справка по дополнениям"
+
+#: menu.src#STR_MENU_SYNONYMS.string.text
+msgid "Synonyms"
+msgstr "Синонимы"
+
+#: menu.src#STR_MENU_NO_SYNONYM_FOUND.string.text
+msgid "(none)"
+msgstr "(нет)"
+
+#: menu.src#STR_MENU_THESAURUS.string.text
+msgid "~Thesaurus..."
+msgstr "Тезаурус"
+
+#: fltfnc.src#STR_FILTER_NOT_INSTALLED.string.text
+msgid ""
+"The selected filter $(FILTER) has not been installed.\n"
+"Would you like to do this now?"
+msgstr ""
+"Выбранный фильтр $(FILTER) не установлен.\n"
+"Установить сейчас?"
+
+#: fltfnc.src#STR_FILTER_CONSULT_SERVICE.string.text
+msgid ""
+"The selected filter $(FILTER) is not included in your edition.\n"
+"You can find information about orders on our homepage."
+msgstr ""
+"Выбранный фильтр $(FILTER) не включен в вашу версию.\n"
+"Информацию о возможностях получения фильтра вы найдете на нашей странице."
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: ~\n"
+
+#: app.src#STR_NONAME.string.text
+msgid "Untitled"
+msgstr "Безымянный"
+
+#: app.src#STR_CLOSE.string.text
+msgid "Close"
+msgstr "Закрыть"
+
+#: app.src#STR_STYLE_FILTER_AUTO.string.text
+msgid "Automatic"
+msgstr "Автоматически"
+
+#: app.src#STR_STANDARD_SHORTCUT.string.text
+msgctxt "app.src#STR_STANDARD_SHORTCUT.string.text"
+msgid "Standard"
+msgstr "По умолчанию"
+
+#: app.src#STR_BYTES.string.text
+msgid "Bytes"
+msgstr "Байт"
+
+#: app.src#STR_KB.string.text
+msgid "KB"
+msgstr "Кб"
+
+#: app.src#STR_MB.string.text
+msgid "MB"
+msgstr "Мб"
+
+#: app.src#STR_GB.string.text
+msgid "GB"
+msgstr "Гб"
+
+#: app.src#MSG_QUERY_LASTVERSION.querybox.text
+msgid "Cancel all changes?"
+msgstr "Отменить все изменения?"
+
+#: app.src#RID_DOCALREADYLOADED_DLG.infobox.text
+msgid "Document already open."
+msgstr "Документ уже открыт."
+
+#: app.src#MSG_ERR_NO_WEBBROWSER_FOUND.errorbox.text
+msgid ""
+"%PRODUCTNAME could not find a web browser on your system. Please check your "
+"Desktop Preferences or install a web browser (for example, Mozilla) in the "
+"default  location requested during the browser installation."
+msgstr ""
+"%PRODUCTNAME не смог обнаружить установленный браузер. Проверьте установки "
+"вашего рабочего стола или установите браузер (например, Mozilla) в папку, "
+"которая предлагается по умолчанию при установке."
+
+#: app.src#GID_INTERN.string.text
+msgid "Internal"
+msgstr "Внутренний"
+
+#: app.src#GID_APPLICATION.string.text
+msgid "Application"
+msgstr "Приложение"
+
+#: app.src#GID_VIEW.string.text
+msgid "View"
+msgstr "Вид"
+
+#: app.src#GID_DOCUMENT.string.text
+msgid "Documents"
+msgstr "Документы"
+
+#: app.src#GID_EDIT.string.text
+msgid "Edit"
+msgstr "Правка"
+
+#: app.src#GID_MACRO.string.text
+msgid "BASIC"
+msgstr "Бэйсик"
+
+#: app.src#GID_OPTIONS.string.text
+msgid "Options"
+msgstr "Параметры"
+
+#: app.src#GID_MATH.string.text
+msgid "Math"
+msgstr "Math"
+
+#: app.src#GID_NAVIGATOR.string.text
+msgid "Navigate"
+msgstr "Навигация"
+
+#: app.src#GID_INSERT.string.text
+msgid "Insert"
+msgstr "Вставить"
+
+#: app.src#GID_FORMAT.string.text
+msgid "Format"
+msgstr "Формат"
+
+#: app.src#GID_TEMPLATE.string.text
+msgid "Templates"
+msgstr "Шаблоны"
+
+#: app.src#GID_TEXT.string.text
+msgid "Text"
+msgstr "Текст"
+
+#: app.src#GID_FRAME.string.text
+msgid "Frame"
+msgstr "Рамка"
+
+#: app.src#GID_GRAPHIC.string.text
+msgctxt "app.src#GID_GRAPHIC.string.text"
+msgid "Graphic"
+msgstr "Графический объект"
+
+#: app.src#GID_TABLE.string.text
+msgid "Table"
+msgstr "Таблица"
+
+#: app.src#GID_ENUMERATION.string.text
+msgid "Numbering"
+msgstr "Нумерация"
+
+#: app.src#GID_DATA.string.text
+msgid "Data"
+msgstr "Данные"
+
+#: app.src#GID_SPECIAL.string.text
+msgid "Special Functions"
+msgstr "Специальные функции"
+
+#: app.src#GID_IMAGE.string.text
+msgid "Image"
+msgstr "Изображение"
+
+#: app.src#GID_CHART.string.text
+msgid "Chart"
+msgstr "Диаграмма"
+
+#: app.src#GID_EXPLORER.string.text
+msgid "Explorer"
+msgstr "Проводник"
+
+#: app.src#GID_CONNECTOR.string.text
+msgid "Connector"
+msgstr "Соединительная линия"
+
+#: app.src#GID_MODIFY.string.text
+msgid "Modify"
+msgstr "Изменить"
+
+#: app.src#GID_DRAWING.string.text
+msgid "Drawing"
+msgstr "Рисование"
+
+#: app.src#GID_CONTROLS.string.text
+msgid "Controls"
+msgstr "Элементы управления"
+
+#: app.src#MSG_CANT_QUIT.infobox.text
+msgid ""
+"The application cannot be terminated at the moment.\n"
+"Please wait until all print jobs and/or\n"
+"OLE actions have finished and close all dialogs."
+msgstr ""
+"Выход из приложения в данный момент невозможен.\n"
+"Подождите окончания всех заданий печати и/или\n"
+" действий OLE и закройте все диалоги."
+
+#: app.src#STR_ISMODIFIED.string.text
+msgid "Do you want to save the changes to %1?"
+msgstr "Сохранить изменения в %1 ?"
+
+#: app.src#STR_QUITAPP.string.text
+msgid "E~xit"
+msgstr "В~ыход"
+
+#: app.src#RID_STR_HELP.string.text
+msgid "Help"
+msgstr "Справка"
+
+#: app.src#RID_STR_NOAUTOSTARTHELPAGENT.string.text
+msgid "No automatic start at 'XX'"
+msgstr "Без автоматического запуска при «XX»"
+
+#: app.src#RID_HELPBAR.string.text
+msgid "Help Bar"
+msgstr "Панель Справки"
+
+#: app.src#RID_STR_HLPFILENOTEXIST.string.text
+msgid "The help file for this topic is not installed."
+msgstr "Не установлены справочные файлы для этого раздела."
+
+#: app.src#RID_ENVTOOLBOX.string.text
+msgid "Function Bar"
+msgstr "Панель функций"
+
+#: app.src#RID_SPECIALCONFIG_ERROR.string.text
+msgid ""
+"An error has occurred in the special configuration.\n"
+"Please contact your administrator."
+msgstr ""
+"Ошибка в специальной конфигурации.\n"
+"Свяжитесь с вашим администратором."
+
+#: app.src#STR_QUICKSTART_EXIT.string.text
+msgid "Exit Quickstarter"
+msgstr "Выход из быстрого запуска"
+
+#: app.src#STR_QUICKSTART_TIP.string.text
+msgid "%PRODUCTNAME %PRODUCTVERSION Quickstarter"
+msgstr "Быстрый запуск %PRODUCTNAME %PRODUCTVERSION"
+
+#: app.src#STR_QUICKSTART_FILEOPEN.string.text
+msgid "Open Document..."
+msgstr "Открыть документ..."
+
+#: app.src#STR_QUICKSTART_FROMTEMPLATE.string.text
+msgid "From Template..."
+msgstr "На основе шаблона..."
+
+#: app.src#STR_QUICKSTART_PRELAUNCH.string.text
+msgid "Load %PRODUCTNAME During System Start-Up"
+msgstr "Загружать %PRODUCTNAME во время запуска системы"
+
+#: app.src#STR_QUICKSTART_PRELAUNCH_UNX.string.text
+msgid "Disable systray Quickstarter"
+msgstr "Отключить быстрый запуск"
+
+#: app.src#STR_QUICKSTART_LNKNAME.string.text
+msgid "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
+
+#: app.src#STR_QUICKSTART_FILE.string.text
+msgid "File"
+msgstr "Файл"
+
+#: app.src#STR_QUICKSTART_STARTCENTER.string.text
+msgid "Startcenter"
+msgstr "Стартовый центр"
+
+#: app.src#STR_QUICKSTART_RECENTDOC.string.text
+msgid "Recent Documents"
+msgstr "Предыдущие документы"
+
+#: app.src#STR_QUERY_UPDATE_LINKS.string.text
+msgid "Update all links?"
+msgstr "Обновить все ссылки?"
+
+#: app.src#STR_DDE_ERROR.string.text
+msgid "DDE link to % for % area % are not available."
+msgstr "Невозможно создать связь по DDE с % для % области %."
+
+#: app.src#RID_SECURITY_WARNING_HYPERLINK.warningbox.text
+msgid "This hyperlink is going to open \"%s\". Do you want to proceed?"
+msgstr "Эта гиперссылка открывает «%s». Продолжить?"
+
+#: app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.warningbox.text
+msgid ""
+"For security reasons, the hyperlink cannot be executed.\n"
+"The stated address will not be opened."
+msgstr ""
+"Из соображений безопасности гиперссылка не будет запущена.\n"
+"Указанный адрес не будет открыт."
+
+#: app.src#RID_SECURITY_WARNING_TITLE.string.text
+msgid "Security Warning"
+msgstr "Предупреждение о безопасности"
+
+#: app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.querybox.text
+msgid ""
+"Saving will remove all existing signatures.\n"
+"Do you want to continue saving the document?"
+msgstr ""
+"При сохранении все существующие подписи будут удалены.\n"
+"Продолжить сохранение документа?"
+
+#: app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.querybox.text
+msgid ""
+"The document has to be saved before it can be signed.\n"
+"Do you want to save the document?"
+msgstr ""
+"Прежде чем подписывать документ, необходимо его сохранить.\n"
+"Сохранить документ?"
+
+#: app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.infobox.text
+msgid ""
+"This document must be saved in OpenDocument file format before it can be "
+"digitally signed."
+msgstr ""
+"Прежде чем поставить цифровую подпись под документом, его необходимо "
+"сохранить в формате файла OpenDocument."
+
+#: app.src#RID_XMLSEC_DOCUMENTSIGNED.string.text
+msgid " (Signed)"
+msgstr "(Подписано)"
+
+#: app.src#STR_STANDARD.string.text
+msgctxt "app.src#STR_STANDARD.string.text"
+msgid "Standard"
+msgstr "По умолчанию"
+
+#: app.src#RID_SVXSTR_FILELINK.string.text
+msgid "Document"
+msgstr "Документ"
+
+#: app.src#STR_NONE.string.text
+msgid "- None -"
+msgstr "- Нет -"
+
+#: app.src#RID_SVXSTR_GRAFIKLINK.string.text
+msgctxt "app.src#RID_SVXSTR_GRAFIKLINK.string.text"
+msgid "Graphic"
+msgstr "Графический объект"
+
+#: app.src#STR_SFX_FILTERNAME_ALL.string.text
+msgid "All files (*.*)"
+msgstr "Все файлы (*.*)"
+
+#: app.src#RID_SVXSTR_EDITGRFLINK.string.text
+msgid "Link graphics"
+msgstr "Ссылка на графический объект"
+
+#: app.src#STR_ERRUNOEVENTBINDUNG.string.text
+msgid ""
+"An appropriate component method %1\n"
+"could not be found.\n"
+"\n"
+"Check spelling of method name."
+msgstr ""
+"Подходящий метод %1 компонента\n"
+"не найден.\n"
+"\n"
+"Проверьте правильность названия метода."
+
+#: app.src#RID_SVXSTR_GRFILTER_OPENERROR.string.text
+msgid "Graphics file cannot be opened"
+msgstr "Невозможно открыть графический файл"
+
+#: app.src#RID_SVXSTR_GRFILTER_IOERROR.string.text
+msgid "Graphics file cannot be read"
+msgstr "Невозможно прочитать графический файл"
+
+#: app.src#RID_SVXSTR_GRFILTER_FORMATERROR.string.text
+msgid "Unknown graphics format"
+msgstr "Неизвестный графический формат"
+
+#: app.src#RID_SVXSTR_GRFILTER_VERSIONERROR.string.text
+msgid "This version of the graphics file is not supported"
+msgstr "Эта версия графического файла не поддерживается"
+
+#: app.src#RID_SVXSTR_GRFILTER_FILTERERROR.string.text
+msgid "Graphics filter not found"
+msgstr "Графический фильтр не найден"
+
+#: app.src#RID_SVXSTR_GRFILTER_TOOBIG.string.text
+msgid "Not enough memory to insert graphic"
+msgstr "Недостаточно памяти для вставки графического объекта"
+
+#: dde.src#MD_DDE_LINKEDIT.FT_DDE_APP.fixedtext.text
+msgid "~Application:"
+msgstr "Приложение:"
+
+#: dde.src#MD_DDE_LINKEDIT.FT_DDE_TOPIC.fixedtext.text
+msgid "~File:"
+msgstr "Файл:"
+
+#: dde.src#MD_DDE_LINKEDIT.FT_DDE_ITEM.fixedtext.text
+msgid "~Category:"
+msgstr "Категория:"
+
+#: dde.src#MD_DDE_LINKEDIT.GROUP_DDE_CHG.fixedline.text
+msgid "Modify link"
+msgstr "Изменить ссылку"
+
+#: dde.src#MD_DDE_LINKEDIT.modaldialog.text
+msgid "Modify Link"
+msgstr "Изменить ссылку"
+
+#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_CONTENTS.pageitem.text
+msgid "Contents"
+msgstr "Содержание"
+
+#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_INDEX.pageitem.text
+msgid "Index"
+msgstr "Индекс"
+
+#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_SEARCH.pageitem.text
+msgid "Find"
+msgstr "Найти"
+
+#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_BOOKMARKS.pageitem.text
+msgid "Bookmarks"
+msgstr "Закладки"
+
+#: newhelp.src#TP_HELP_INDEX.FT_EXPRESSION.fixedtext.text
+msgid "~Search term"
+msgstr "Иско~мое понятие"
+
+#: newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.pushbutton.text
+msgctxt "newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.pushbutton.text"
+msgid "~Display"
+msgstr "~Показать"
+
+#: newhelp.src#TP_HELP_SEARCH.FT_SEARCH.fixedtext.text
+msgid "S~earch term"
+msgstr "Иско~мое понятие"
+
+#: newhelp.src#TP_HELP_SEARCH.PB_SEARCH.pushbutton.text
+msgid "~Find"
+msgstr "Найти"
+
+#: newhelp.src#TP_HELP_SEARCH.CB_FULLWORDS.checkbox.text
+msgid "~Complete words only"
+msgstr "~Только слово целиком"
+
+#: newhelp.src#TP_HELP_SEARCH.CB_SCOPE.checkbox.text
+msgid "Find in ~headings only"
+msgstr "~Искать только в заголовках"
+
+#: newhelp.src#TP_HELP_SEARCH.PB_OPEN_SEARCH.pushbutton.text
+msgctxt "newhelp.src#TP_HELP_SEARCH.PB_OPEN_SEARCH.pushbutton.text"
+msgid "~Display"
+msgstr "~Показать"
+
+#: newhelp.src#TP_HELP_BOOKMARKS.FT_BOOKMARKS.fixedtext.text
+msgid "~Bookmarks"
+msgstr "Закладки"
+
+#: newhelp.src#TP_HELP_BOOKMARKS.PB_BOOKMARKS.pushbutton.text
+msgctxt "newhelp.src#TP_HELP_BOOKMARKS.PB_BOOKMARKS.pushbutton.text"
+msgid "~Display"
+msgstr "~Показать"
+
+#: newhelp.src#STR_HELP_WINDOW_TITLE.string.text
+msgid "%PRODUCTNAME Help"
+msgstr "Справка %PRODUCTNAME"
+
+#: newhelp.src#STR_HELP_BUTTON_INDEX_ON.string.text
+msgid "Show Navigation Pane"
+msgstr "Показать панель навигации"
+
+#: newhelp.src#STR_HELP_BUTTON_INDEX_OFF.string.text
+msgid "Hide Navigation Pane"
+msgstr "Скрыть панель навигации"
+
+#: newhelp.src#STR_HELP_BUTTON_START.string.text
+msgid "First Page"
+msgstr "Первая страница"
+
+#: newhelp.src#STR_HELP_BUTTON_PREV.string.text
+msgid "Previous Page"
+msgstr "Предыдущая страница"
+
+#: newhelp.src#STR_HELP_BUTTON_NEXT.string.text
+msgid "Next Page"
+msgstr "Следующая страница"
+
+#: newhelp.src#STR_HELP_BUTTON_PRINT.string.text
+msgid "Print..."
+msgstr "Печать..."
+
+#: newhelp.src#STR_HELP_BUTTON_ADDBOOKMARK.string.text
+msgid "Add to Bookmarks..."
+msgstr "Добавить закладку..."
+
+#: newhelp.src#STR_HELP_BUTTON_SEARCHDIALOG.string.text
+msgid "Find on this Page..."
+msgstr "Найти на этой странице..."
+
+#: newhelp.src#STR_HELP_BUTTON_SOURCEVIEW.string.text
+msgid "HTML Source"
+msgstr "Исходный HTML-текст"
+
+#: newhelp.src#STR_HELP_FIRST_MESSAGE.string.text
+msgid "The Help is being started..."
+msgstr "Запуск Справки..."
+
+#: newhelp.src#STR_HELP_MENU_TEXT_SELECTION_MODE.string.text
+msgid "Select Text"
+msgstr "Использовать текстовый курсор для выделения"
+
+#: newhelp.src#STR_HELP_MENU_TEXT_COPY.string.text
+msgid "~Copy"
+msgstr "Копировать"
+
+#: newhelp.src#DLG_HELP_ADDBOOKMARK.FT_BOOKMARK_TITLE.fixedtext.text
+msgid "Bookmark:"
+msgstr "Закладка:"
+
+#: newhelp.src#DLG_HELP_ADDBOOKMARK.STR_BOOKMARK_RENAME.string.text
+msgid "Rename Bookmark"
+msgstr "Переименовать закладку"
+
+#: newhelp.src#DLG_HELP_ADDBOOKMARK.modaldialog.text
+msgid "Add to Bookmarks"
+msgstr "Добавить закладку"
+
+#: newhelp.src#MENU_HELP_BOOKMARKS.MID_OPEN.menuitem.text
+msgid "Display"
+msgstr "Показать"
+
+#: newhelp.src#MENU_HELP_BOOKMARKS.MID_RENAME.menuitem.text
+msgid "Rename..."
+msgstr "Переименовать..."
+
+#: newhelp.src#MENU_HELP_BOOKMARKS.MID_DELETE.menuitem.text
+msgid "Delete"
+msgstr "Удалить"
+
+#: newhelp.src#RID_INFO_NOSEARCHRESULTS.infobox.text
+msgid "No topics found."
+msgstr "Искомый термин не найден."
+
+#: newhelp.src#RID_INFO_NOSEARCHTEXTFOUND.infobox.text
+msgid "The text you entered was not found."
+msgstr "Введённый текст не найден."
+
+#: newhelp.src#RID_HELP_ONSTARTUP_TEXT.string.text
+msgid "~Display %PRODUCTNAME %MODULENAME Help at Startup"
+msgstr "Показывать помощь %PRODUCTNAME %MODULENAME при старте"
+
+#: sfx.src#STR_ACCTITLE_PRODUCTIVITYTOOLS.string.text
+msgid "%PRODUCTNAME"
+msgstr "%PRODUCTNAME"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: ~\n"
+
+#: doc.src#MSG_CONFIRM_FILTER.querybox.text
+msgid ""
+"Saving in external formats may have caused\n"
+" information loss. Do you still want to close?"
+msgstr ""
+"Сохранение во внешних форматах может\n"
+"привести к потере информации. Закрыть?"
+
+#: doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.querybox.text
+msgid ""
+"Name already in use.\n"
+"Do you want to overwrite document template?"
+msgstr ""
+"Шаблон с таким именем уже существует.\n"
+"Заменить?"
+
+#: doc.src#STR_DELETE_REGION.string.text
+msgid "Are you sure you want to delete the region \"$1\"?"
+msgstr "Удалить область «$1»?"
+
+#: doc.src#STR_DELETE_TEMPLATE.string.text
+msgid "Are you sure you want to delete the entry \"$1\"?"
+msgstr "Удалить элемент «$1»?"
+
+#: doc.src#MSG_REGION_NOTEMPTY.querybox.text
+msgid ""
+"The category is not empty.\n"
+"Delete anyway?"
+msgstr ""
+"Категория не является пустой.\n"
+"Удалить, несмотря на это?"
+
+#: doc.src#STR_QUERY_SAVE_DOCUMENT.string.text
+msgid ""
+"The document \"$(DOC)\" has been modified.\n"
+"Do you want to save your changes?"
+msgstr ""
+"Документ «$(DOC)» изменён.\n"
+"Сохранить изменения?"
+
+#: doc.src#STR_STYLES.string.text
+msgid "Styles"
+msgstr "Стили"
+
+#: doc.src#STR_MACROS.string.text
+msgid "Macros"
+msgstr "Макросы"
+
+#: doc.src#STR_CONFIG.string.text
+msgid "Configuration"
+msgstr "Конфигурация"
+
+#: doc.src#STR_PRINT_STYLES_HEADER.string.text
+msgid "Styles in "
+msgstr "Стили в "
+
+#: doc.src#STR_PRINT_STYLES.string.text
+msgid "Printing Styles"
+msgstr "Печать стилей"
+
+#: doc.src#MSG_PRINT_ERROR.errorbox.text
+msgid "The print job could not be started."
+msgstr "Невозможно запустить процесс печати."
+
+#: doc.src#STR_BACKUP_COPY.string.text
+msgid "Copy"
+msgstr "Копия"
+
+#: doc.src#MSG_CANT_OPEN_TEMPLATE.infobox.text
+msgid "The template could not be opened."
+msgstr "Невозможно открыть шаблон."
+
+#: doc.src#MSG_VIEW_OPEN_CANT_SAVE.infobox.text
+msgid "Document already open for editing."
+msgstr "Документ уже открыт для редактирования."
+
+#: doc.src#STR_ERROR_SAVE.string.text
+msgid "Error recording document "
+msgstr "Ошибка записи документа "
+
+#: doc.src#STR_TEMPLATE_FILTER.string.text
+msgctxt "doc.src#STR_TEMPLATE_FILTER.string.text"
+msgid "Templates"
+msgstr "Шаблоны"
+
+#: doc.src#STR_ERROR_COPY_TEMPLATE.string.text
+msgid ""
+"Error copying template \"$1\". \n"
+"A template with this name may already exist."
+msgstr ""
+"Ошибка копирования шаблона «$1».\n"
+"Вероятно, шаблон с таким именем уже существует."
+
+#: doc.src#STR_ERROR_DELETE_TEMPLATE.string.text
+msgid "The template \"$1\" can not be deleted."
+msgstr "Невозможно удалить шаблон «$1»."
+
+#: doc.src#STR_ERROR_MOVE_TEMPLATE.string.text
+msgid "Error moving template \"$1\"."
+msgstr "Ошибка перемещения шаблона «$1»."
+
+#: doc.src#MSG_ERROR_RESCAN.errorbox.text
+msgid "The update could not be saved."
+msgstr "Невозможно сохранить обновления."
+
+#: doc.src#STR_ERROR_SAVE_TEMPLATE.string.text
+msgid "Error saving template "
+msgstr "Ошибка сохранения шаблона "
+
+#: doc.src#MSG_ERROR_RENAME_TEMPLATE.errorbox.text
+msgid "Error renaming template."
+msgstr "Ошибка переименования шаблона."
+
+#: doc.src#MSG_ERROR_RENAME_TEMPLATE_REGION.errorbox.text
+msgid "Error renaming template category."
+msgstr "Ошибка переименования категории шаблона."
+
+#: doc.src#MSG_ERROR_EMPTY_NAME.errorbox.text
+msgid "Please specify a name."
+msgstr "Укажите имя."
+
+#: doc.src#MSG_ERROR_UNIQ_NAME.errorbox.text
+msgid ""
+"Please specify a unique name.\n"
+"Entries must not be case specific."
+msgstr ""
+"Укажите уникальное имя.\n"
+"Регистр учитываться не будет."
+
+#: doc.src#STR_QUERY_DEFAULT_TEMPLATE.string.text
+msgid "Should the template \"$(TEXT)\" become the default template?"
+msgstr "Сделать шаблон «$(TEXT)» стандартным?"
+
+#: doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.querybox.text
+msgid "Do you want to reset the default template?"
+msgstr "Восстановить стандартный шаблон?"
+
+#: doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.infobox.text
+msgid ""
+"Template directory\n"
+"$(DIR)\n"
+"does not exist."
+msgstr ""
+"Каталог шаблонов\n"
+"$(DIR)\n"
+"не существует."
+
+#: doc.src#MSG_DOCINFO_CANTREAD.infobox.text
+msgid "Document info cannot be read."
+msgstr "Не удается прочитать информацию документа."
+
+#: doc.src#STR_ERROR_NOSTORAGE.string.text
+msgid "The selected file has an incorrect format."
+msgstr "Неправильный формат выбранного файла."
+
+#: doc.src#STR_QUERY_MUSTOWNFORMAT.string.text
+msgid ""
+"Documents cannot be saved in $(FORMAT) format. Do you\n"
+"want to save your changes using the $(OWNFORMAT) format?"
+msgstr ""
+"Невозможно сохранить документы в формате $(FORMAT).\n"
+"Сохранить в формате $(OWNFORMAT)?"
+
+#: doc.src#STR_SAVEDOC.string.text
+msgid "~Save"
+msgstr "Сохранить"
+
+#: doc.src#STR_UPDATEDOC.string.text
+msgid "~Update"
+msgstr "Обновить"
+
+#: doc.src#STR_SAVEASDOC.string.text
+msgid "Save ~As..."
+msgstr "Сохранить как..."
+
+#: doc.src#STR_SAVECOPYDOC.string.text
+msgid "Save Copy ~as..."
+msgstr "Сохранить копию как..."
+
+#: doc.src#STR_CLOSEDOC.string.text
+msgid "~Close"
+msgstr "~Закрыть"
+
+#: doc.src#STR_CLOSEDOC_ANDRETURN.string.text
+msgid "~Close & Return to "
+msgstr "Закрыть и вернуться к "
+
+#: doc.src#STR_WIZARD.string.text
+msgid " AutoPilot"
+msgstr " Мастер"
+
+#: doc.src#RID_STR_FILTCONFIG.string.text
+msgid "Configurations"
+msgstr "Конфигурации"
+
+#: doc.src#RID_STR_FILTBASIC.string.text
+msgid "%PRODUCTNAME Basic libraries"
+msgstr "Библиотеки %PRODUCTNAME Basic"
+
+#: doc.src#RID_STR_WARNSTYLEOVERWRITE.string.text
+msgid "Should the \"$(ARG1)\" Style be replaced?"
+msgstr "Заменить стиль «$(ARG1)»?"
+
+#: doc.src#STR_DOC_LOADING.string.text
+msgid "Loading Document"
+msgstr "Документ загружается"
+
+#: doc.src#RID_DLSTATUS.INET_NAME_RESOLVE_START.string.text
+msgid "Connection to: $(HOST). Waiting for response..."
+msgstr "Подключение к: $(HOST). Ожидание отклика..."
+
+#: doc.src#RID_DLSTATUS.INET_CONNECT_START.string.text
+msgid "Opening $(TARGET) at $(HOST)"
+msgstr "$(TARGET) будет открыт в $(HOST)"
+
+#: doc.src#RID_DLSTATUS.INET_READ_STATUS.string.text
+msgid "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
+msgstr "Передается: $(TARGET) из $(HOST). Загружено: $(BYTE)"
+
+#: doc.src#RID_DLSTATUS.INET_CONNECTION_CLOSED.string.text
+msgid "Disconnected"
+msgstr "Связь прервана"
+
+#: doc.src#MSG_OPEN_READONLY.querybox.text
+msgid ""
+"Document cannot be opened for editing.\n"
+"Do you want to open it as read-only?"
+msgstr ""
+"Невозможно открыть документ для правки.\n"
+"Открыть его только для чтения?"
+
+#: doc.src#STR_EDIT.string.text
+msgid "Edit"
+msgstr "Правка"
+
+#: doc.src#RID_OFFICEFILTER.string.text
+msgid "%PRODUCTNAME Documents"
+msgstr "Документы %PRODUCTNAME"
+
+#: doc.src#STR_FRAMEOBJECT_PROPERTIES.string.text
+msgid "Propert~ies..."
+msgstr "Свойства ..."
+
+#: doc.src#STR_FSET_FILTERNAME0.string.text
+msgid "HTML (FrameSet)"
+msgstr "HTML (Набор кадров)"
+
+#: doc.src#STR_FSET_FILTERNAME1.string.text
+msgid "%PRODUCTNAME Frame Document"
+msgstr "Фрейм %PRODUCTNAME"
+
+#: doc.src#STR_TEMPL_MOVED.string.text
+msgid ""
+"The template \"$(TEMPLATE)\" was not found at the original location. A "
+"template with the same name exists at \"$(FOUND)\". Should this template be "
+"used in the future when comparing?"
+msgstr ""
+"Шаблон «$(TEMPLATE)» не найден в исходном месте. Шаблон с таким же именем "
+"находится в «$(FOUND)». Использовать этот шаблон в будущем для сравнения?"
+
+#: doc.src#STR_TEMPL_RESET.string.text
+msgid ""
+"The template \"$(TEMPLATE)\" has not been found. Should the template be looked "
+"for the next time the document is opened ?"
+msgstr ""
+"Шаблон «$(TEMPLATE)» не найден. Искать его в следующий раз при открытии "
+"документа?"
+
+#: doc.src#STR_AUTOMATICVERSION.string.text
+msgid "Automatically saved version"
+msgstr "Автоматически сохранённая версия"
+
+#: doc.src#STR_DOCTYPENAME_SW.string.text
+msgid "Text Document"
+msgstr "Текстовый документ"
+
+#: doc.src#STR_DOCTYPENAME_SWWEB.string.text
+msgid "HTML Document"
+msgstr "Документ HTML"
+
+#: doc.src#STR_DOCTYPENAME_SWGLOB.string.text
+msgid "Master Document"
+msgstr "Составной документ"
+
+#: doc.src#STR_DOCTYPENAME_SC.string.text
+msgid "Spreadsheet"
+msgstr "Электронная таблица"
+
+#: doc.src#STR_DOCTYPENAME_SI.string.text
+msgid "Presentation"
+msgstr "Презентация"
+
+#: doc.src#STR_DOCTYPENAME_SD.string.text
+msgid "Drawing"
+msgstr "Рисунок"
+
+#: doc.src#STR_DOCTYPENAME_MESSAGE.string.text
+msgid "Message"
+msgstr "Сообщение"
+
+#: doc.src#STR_NOSAVEANDCLOSE.string.text
+msgid "~Discard"
+msgstr "Не сохранять"
+
+#: doc.src#STR_PACKNGO_NOACCESS.string.text
+msgid "Access to the current data medium not possible."
+msgstr "Текущий носитель данных недоступен."
+
+#: doc.src#STR_PACKNGO_NEWMEDIUM.string.text
+msgid "Insert the next data carrier and click OK."
+msgstr "Вставьте следующий носитель данных и нажмите Да."
+
+#: doc.src#STR_OBJECT.string.text
+msgid "Object"
+msgstr "Объект"
+
+#: doc.src#DLG_MACROQUERY.querybox.text
+msgid "This document contains macros. $(TEXT)"
+msgstr "Документ содержит макросы. $(TEXT)"
+
+#: doc.src#DLG_MACROQUERY.querybox.title
+msgid "Run Macro"
+msgstr "Выполнить макрос"
+
+#: doc.src#BTN_OK.string.text
+msgid "Run"
+msgstr "Выполнить"
+
+#: doc.src#BTN_CANCEL.string.text
+msgid "Do Not Run"
+msgstr "Не выполнять"
+
+#: doc.src#FT_CANCEL.string.text
+msgid ""
+"According to the security settings, the macros in this document should not "
+"be run. Do you want to run them anyway?"
+msgstr ""
+"В соответствии с настройками безопасности, макросы из этого документа не "
+"должны выполняться. Разрешить их выполнение, несмотря на это?"
+
+#: doc.src#FT_OK.string.text
+msgid "Do you want to allow these macros to be run?"
+msgstr "Разрешить выполнение макросов?"
+
+#: doc.src#STR_EXPORTASPDF_TITLE.string.text
+msgid "Export as PDF"
+msgstr "Экспорт в PDF"
+
+#: doc.src#STR_EXPORTWITHCFGBUTTON.string.text
+msgid "Export..."
+msgstr "Экспорт..."
+
+#: doc.src#STR_EXPORTBUTTON.string.text
+msgid "Export"
+msgstr "Экспорт"
+
+#: doc.src#RID_SVXSTR_SECURITY_ADDPATH.string.text
+msgid "Add this directory to the list of secure paths: "
+msgstr "Добавить данный каталог в список надёжных: "
+
+#: doc.src#STR_LABEL_FILEFORMAT.string.text
+msgid "File format:"
+msgstr "Формат файла:"
+
+#: doc.src#STR_HIDDENINFO_CONTAINS.string.text
+msgid ""
+"This document contains:\n"
+"\n"
+msgstr ""
+"Этот документ содержит:\n"
+"\n"
+
+#: doc.src#STR_HIDDENINFO_RECORDCHANGES.string.text
+msgid "Recorded changes"
+msgstr "Запись изменений"
+
+#: doc.src#STR_HIDDENINFO_NOTES.string.text
+msgid "Notes"
+msgstr "Примечания"
+
+#: doc.src#STR_HIDDENINFO_DOCVERSIONS.string.text
+msgid "Document versions"
+msgstr "Версии документа"
+
+#: doc.src#STR_HIDDENINFO_FIELDS.string.text
+msgid "Fields"
+msgstr "Поля"
+
+#: doc.src#STR_HIDDENINFO_LINKDATA.string.text
+msgid "Linked data..."
+msgstr "Связанные данные..."
+
+#: doc.src#STR_HIDDENINFO_CONTINUE_SAVING.string.text
+msgid "Do you want to continue saving the document?"
+msgstr "Вы хотите продолжить сохранение документа?"
+
+#: doc.src#STR_HIDDENINFO_CONTINUE_PRINTING.string.text
+msgid "Do you want to continue printing the document?"
+msgstr "Вы хотите продолжить печать документа?"
+
+#: doc.src#STR_HIDDENINFO_CONTINUE_SIGNING.string.text
+msgid "Do you want to continue signing the document?"
+msgstr "Вы хотите продолжить подписывание документа цифровой подписью?"
+
+#: doc.src#STR_HIDDENINFO_CONTINUE_CREATEPDF.string.text
+msgid "Do you want to continue creating a PDF file?"
+msgstr "Вы хотите продолжить создание файла в формате PDF?"
+
+#: doc.src#STR_NEW_FILENAME_SAVE.string.text
+msgid ""
+"If you do not want to overwrite the original document, you should save your "
+"work under a new filename."
+msgstr ""
+"Если Вы не хотите сохранять изменения в первоначальном документе, сохраните "
+"свою работу в новом файле."
+
+#: doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.string.text
+msgid "Some template files are protected and can not be deleted."
+msgstr "Некоторые файлы шаблонов защищены и не могут быть удалены."
+
+#: doc.src#STR_DOCINFO_INFOFIELD.string.text
+msgid "Info %1"
+msgstr "Поле %1"
+
+#: doc.src#STR_SHARED.string.text
+msgid " (shared)"
+msgstr " (общий доступ)"
+
+#: doc.src#STR_XMLSEC_ODF12_EXPECTED.string.text
+msgid ""
+"The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-"
+"Options-Load/Save-General. Signing documents requires ODF 1.2 "
+"(OpenOffice.org 3.x)."
+msgstr ""
+"Версия формата документа установлена в ODF 1.1 (OpenOffice.org 2.x) в Сервис "
+"-Параметры - Загрузка/сохранение - Общие. Для подписи документов необходима "
+"версия ODF 1.2 (OpenOffice.org 3.x)."
+
+#: doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.querybox.text
+msgid ""
+"The document has to be saved before it can be signed. Saving the document "
+"removes all present signatures.\n"
+"Do you want to save the document?"
+msgstr ""
+"Документ необходимо сохранить перед добавлением подписей. Сохранение "
+"документа приведёт к удалению всех текущих подписей.\n"
+"Сохранить документ?"
+
+#: doc.src#STR_QRYTEMPL_MESSAGE.string.text
+msgid ""
+"The template '$(ARG1)' on which this document is based, has been modified. "
+"Do you want to update style based formattings according to the modified "
+"template?"
+msgstr ""
+"Шаблон «$(ARG1)», на котором основан данный документ, был изменён. Хотите "
+"обновить базовые стили форматирования в соответствии с изменённым шаблоном?"
+
+#: doc.src#STR_QRYTEMPL_UPDATE_BTN.string.text
+msgid "~Update Styles"
+msgstr "Обновить стили"
+
+#: doc.src#STR_QRYTEMPL_KEEP_BTN.string.text
+msgid "~Keep Old Styles"
+msgstr "Сохранить старые стили"
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.FL_EDIT.fixedline.text
+msgid "New template"
+msgstr "Новый шаблон"
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.fixedline.text
+msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.fixedline.text"
+msgid "Templates"
+msgstr "Шаблоны"
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.fixedtext.text
+msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.fixedtext.text"
+msgid "~Categories"
+msgstr "Категории"
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.FT_STYLESHEETS.fixedtext.text
+msgid "~Templates"
+msgstr "Шаблоны"
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.pushbutton.text
+msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.pushbutton.text"
+msgid "~Edit"
+msgstr "~Правка"
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.BT_ORGANIZE.pushbutton.text
+msgid "~Organizer..."
+msgstr "Управление..."
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.modaldialog.text
+msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.modaldialog.text"
+msgid "Templates"
+msgstr "Шаблоны"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.1.itemlist.text
+msgid "My Templates"
+msgstr "Мои шаблоны"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.2.itemlist.text
+msgid "Business Correspondence"
+msgstr "Деловая корреспонденция"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.3.itemlist.text
+msgid "Other Business Documents"
+msgstr "Прочие деловые документы"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.4.itemlist.text
+msgid "Personal Correspondence and Documents"
+msgstr "Личная корреспонденция и документы"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.5.itemlist.text
+msgid "Forms and Contracts"
+msgstr "Формы и контакты"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.6.itemlist.text
+msgid "Finances"
+msgstr "Финансы"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.7.itemlist.text
+msgid "Education"
+msgstr "Образование"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.8.itemlist.text
+msgid "Presentation Backgrounds"
+msgstr "Фоны презентаций"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.9.itemlist.text
+msgid "Presentations"
+msgstr "Презентации"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.10.itemlist.text
+msgid "Miscellaneous"
+msgstr "Прочее"
+
+#: doctempl.src#RID_CNT_STR_WAITING.string.text
+msgid "The templates are being initialized for first-time usage."
+msgstr "Перед первым использованием выполняется инициализация шаблонов."
+
+#: docvor.src#DLG_ORGANIZE.BTN_OK.okbutton.text
+msgid "Close"
+msgstr "Закрыть"
+
+#: docvor.src#DLG_ORGANIZE.BTN_FILES.pushbutton.text
+msgid "~File..."
+msgstr "Файл..."
+
+#: docvor.src#DLG_ORGANIZE.BTN_ADDRESSTEMPLATE.pushbutton.text
+msgid "~Address Book..."
+msgstr "~Адресная книга..."
+
+#: docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.1.stringlist.text
+msgctxt "docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.1.stringlist.text"
+msgid "Templates"
+msgstr "Шаблоны"
+
+#: docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.2.stringlist.text
+msgctxt "docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.2.stringlist.text"
+msgid "Documents"
+msgstr "Документы"
+
+#: docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.1.stringlist.text
+msgctxt "docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.1.stringlist.text"
+msgid "Templates"
+msgstr "Шаблоны"
+
+#: docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.2.stringlist.text
+msgctxt "docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.2.stringlist.text"
+msgid "Documents"
+msgstr "Документы"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_NEW.menuitem.text
+msgid "~New"
+msgstr "Созд~ать"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DELETE.menuitem.text
+msgid "~Delete"
+msgstr "Удалить"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.menuitem.text
+msgctxt "docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.menuitem.text"
+msgid "~Edit"
+msgstr "~Правка"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_FROM.menuitem.text
+msgid "Import Template..."
+msgstr "Импорт шаблона..."
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_TO.menuitem.text
+msgid "Export Template..."
+msgstr "Экспорт шаблона..."
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINT.menuitem.text
+msgid "~Print"
+msgstr "Печать"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINTER_SETUP.menuitem.text
+msgid "Printer Settings..."
+msgstr "Настройки принтера..."
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESCAN.menuitem.text
+msgid "Update"
+msgstr "Обновить"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DEFAULT_TEMPLATE.menuitem.text
+msgid "Set As Default Template"
+msgstr "Сделать шаблоном по умолчанию"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESET_DEFAULT_TEMPLATE.menuitem.text
+msgid "Reset Default Template"
+msgstr "Восстановить стандартный шаблон"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.menubutton.text
+msgid "Commands"
+msgstr "Команды"
+
+#: docvor.src#DLG_ORGANIZE.modaldialog.text
+msgid "Template Management"
+msgstr "Управление шаблонами"
+
+#: new.src#DLG_NEW_FILE.FT_REGION.fixedtext.text
+msgctxt "new.src#DLG_NEW_FILE.FT_REGION.fixedtext.text"
+msgid "~Categories"
+msgstr "Категории"
+
+#: new.src#DLG_NEW_FILE.FT_TEMPLATE.fixedtext.text
+msgid "T~emplates"
+msgstr "Шаблоны"
+
+#: new.src#DLG_NEW_FILE.BT_MORE.morebutton.text
+msgid "~More"
+msgstr "Е~щё"
+
+#: new.src#DLG_NEW_FILE.BTN_PREVIEW.checkbox.text
+msgid "Pre~view"
+msgstr "Предварительный просмотр"
+
+#: new.src#DLG_NEW_FILE.GB_DOCINFO.fixedline.text
+msgid "Description"
+msgstr "Описание"
+
+#: new.src#DLG_NEW_FILE.CB_TEXT_STYLE.checkbox.text
+msgid "Te~xt"
+msgstr "Текст"
+
+#: new.src#DLG_NEW_FILE.CB_FRAME_STYLE.checkbox.text
+msgid "~Frame"
+msgstr "Фрейм"
+
+#: new.src#DLG_NEW_FILE.CB_PAGE_STYLE.checkbox.text
+msgid "~Pages"
+msgstr "Страницы"
+
+#: new.src#DLG_NEW_FILE.CB_NUM_STYLE.checkbox.text
+msgid "N~umbering"
+msgstr "Нумерация"
+
+#: new.src#DLG_NEW_FILE.CB_MERGE_STYLE.checkbox.text
+msgid "~Overwrite"
+msgstr "Заменить"
+
+#: new.src#DLG_NEW_FILE.PB_LOAD_FILE.pushbutton.text
+msgid "From File..."
+msgstr "Из файла..."
+
+#: new.src#DLG_NEW_FILE.STR_LOAD_TEMPLATE.string.text
+msgid "Load Styles"
+msgstr "Загрузить стили"
+
+#: new.src#DLG_NEW_FILE.FT_TITLE.fixedtext.text
+msgid "~Title"
+msgstr "Заголовок"
+
+#: new.src#DLG_NEW_FILE.FT_THEMA.fixedtext.text
+msgid "Subject"
+msgstr "Тема"
+
+#: new.src#DLG_NEW_FILE.FT_KEYWORDS.fixedtext.text
+msgid "~Key words"
+msgstr "Ключевые слова"
+
+#: new.src#DLG_NEW_FILE.FT_DESC.fixedtext.text
+msgid "~Description"
+msgstr "Описание"
+
+#: new.src#DLG_NEW_FILE.modaldialog.text
+msgid "New"
+msgstr "Создать"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: ~\n"
+
+#: alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.fixedtext.text
+msgid ""
+"This document may contain formatting or content that cannot be saved in the "
+"%FORMATNAME file format. Do you want to save the document in this format "
+"anyway?\n"
+"\n"
+"Use the latest ODF file format and be sure all formatting and content is "
+"saved correctly."
+msgstr ""
+"Возможно, этот документ включает форматирование или содержимое, которое не "
+"может быть сохранено в формате файла %FORMATNAME. Сохранить документ в этом "
+"формате?\n"
+"\n"
+"Используйте последний формат файла ODF и убедитесь, что всё форматирование и "
+"содержимое сохранены правильно."
+
+#: alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.okbutton.text
+msgid "~Keep Current Format"
+msgstr "Использовать текущий формат"
+
+#: alienwarn.src#RID_DLG_ALIEN_WARNING.PB_YES.cancelbutton.text
+msgid "~Save in ODF Format"
+msgstr "Сохранить в формат ODF"
+
+#: alienwarn.src#RID_DLG_ALIEN_WARNING.PB_MOREINFO.helpbutton.text
+msgid "~More Information..."
+msgstr "Дополнительно..."
+
+#: alienwarn.src#RID_DLG_ALIEN_WARNING.CB_WARNING_OFF.checkbox.text
+msgid "~Ask when not saving in ODF format"
+msgstr "~Предупреждать при невозможности сохранения в формате ODF"
+
+#: dialog.src#STR_RESET.string.text
+msgid "~Reset"
+msgstr "~Восстановить"
+
+#: dialog.src#STR_APPLY.string.text
+msgid "Apply"
+msgstr "Применить"
+
+#: dialog.src#STR_TABPAGE_MANAGESTYLES.string.text
+msgid "Organizer"
+msgstr "Управление"
+
+#: dialog.src#MSG_TABPAGE_INVALIDNAME.infobox.text
+msgid "This name is already in use."
+msgstr "Это имя уже используется."
+
+#: dialog.src#MSG_TABPAGE_INVALIDSTYLE.infobox.text
+msgid "This Style does not exist."
+msgstr "Стиль не существует."
+
+#: dialog.src#MSG_TABPAGE_INVALIDPARENT.infobox.text
+msgid ""
+"This Style cannot be used as a base Style,\n"
+"because it would result in a recursive reference."
+msgstr ""
+"Невозможно применить этот стиль в качестве основы, \n"
+"так как возникнет рекурсия."
+
+#: dialog.src#MSG_POOL_STYLE_NAME.infobox.text
+msgid ""
+"Name already exists as a default Style.\n"
+"Please choose another name."
+msgstr ""
+"Это имя уже присвоено встроенному стилю. \n"
+"Выберите другое имя."
+
+#: dialog.src#STR_DELETE_STYLE.string.text
+msgid "Do you really want to delete Style $1?"
+msgstr "Вы действительно хотите удалить стиль $1?"
+
+#: dialog.src#STR_DELETE_STYLE_USED.string.text
+msgid "You are deleting an applied Style!\n"
+msgstr "Вы удаляете применяемый стиль!\n"
+
+#: dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.menuitem.text
+msgid "New..."
+msgstr "Создать..."
+
+#: dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.menuitem.text
+msgid "Modify..."
+msgstr "Изменить..."
+
+#: dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.menuitem.text
+msgid "Delete..."
+msgstr "Удалить..."
+
+#: dialog.src#SID_NAVIGATOR.string.text
+msgid "Navigator"
+msgstr "Навигатор"
+
+#: dialog.src#SID_TASKPANE.string.text
+msgid "Task Pane"
+msgstr "Панель задач"
+
+#: dialog.src#MSG_ERROR_WRONG_CONFIRM.errorbox.text
+msgid "Faulty password confirmation"
+msgstr "Ошибка подтверждения пароля"
+
+#: dialog.src#STR_PDF_EXPORT_SEND.string.text
+msgid "Send"
+msgstr "Отправить"
+
+#: dinfdlg.src#STR_SFX_NEWOFFICEDOC.string.text
+msgid "%PRODUCTNAME document"
+msgstr "Документ %PRODUCTNAME"
+
+#: dinfdlg.src#TP_DOCINFODESC.FT_TITLE.fixedtext.text
+msgid "~Title"
+msgstr "Заголовок"
+
+#: dinfdlg.src#TP_DOCINFODESC.FT_THEMA.fixedtext.text
+msgid "~Subject"
+msgstr "Тема"
+
+#: dinfdlg.src#TP_DOCINFODESC.FT_KEYWORDS.fixedtext.text
+msgid "~Keywords"
+msgstr "Ключевые слова"
+
+#: dinfdlg.src#TP_DOCINFODESC.FT_COMMENT.fixedtext.text
+msgid "~Comments"
+msgstr "П~римечания"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.fixedtext.text
+msgid "Type:"
+msgstr "Тип:"
+
+#: dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.checkbox.text
+msgctxt "dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.checkbox.text"
+msgid "~Read-only"
+msgstr "~Только для чтения"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_FILE.fixedtext.text
+msgid "Location:"
+msgstr "Расположение:"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_FILE_SIZE.fixedtext.text
+msgid "Size:"
+msgstr "Размер:"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_CREATE.fixedtext.text
+msgid "Created:"
+msgstr "Создан:"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_CHANGE.fixedtext.text
+msgid "Modified:"
+msgstr "Изменён:"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_SIGNED.fixedtext.text
+msgid "Digitally signed:"
+msgstr "Цифровая подпись:"
+
+#: dinfdlg.src#TP_DOCINFODOC.BTN_SIGNATURE.pushbutton.text
+msgid "Digital Signature..."
+msgstr "Цифровая подпись..."
+
+#: dinfdlg.src#TP_DOCINFODOC.STR_MULTSIGNED.string.text
+msgid "Multiply signed document"
+msgstr "Документ с множественными подписями"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_PRINT.fixedtext.text
+msgid "Last printed:"
+msgstr "Напечатан:"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_TIMELOG.fixedtext.text
+msgid "Total editing time:"
+msgstr "Время редактирования:"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_DOCNO.fixedtext.text
+msgid "Revision number:"
+msgstr "Редакция:"
+
+#: dinfdlg.src#TP_DOCINFODOC.BTN_DELETE.pushbutton.text
+msgid "Reset"
+msgstr "Сбросить"
+
+#: dinfdlg.src#TP_DOCINFODOC.CB_USE_USERDATA.checkbox.text
+msgid "~Apply user data"
+msgstr "Применить данные пользователя"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_TEMPL.fixedtext.text
+msgid "Template:"
+msgstr "Шаблон:"
+
+#: dinfdlg.src#TP_DOCINFODOC.STR_UNKNOWNSIZE.string.text
+msgid "unknown"
+msgstr "неизвестно"
+
+#: dinfdlg.src#TP_DOCINFODOC.EDIT_FILE_NAME.string.text
+msgid "File Name"
+msgstr "Имя файла"
+
+#: dinfdlg.src#TP_DOCINFOUSER.BTN_EDITLABEL.pushbutton.text
+msgid "~Info fields..."
+msgstr "Поля сведений..."
+
+#: dinfdlg.src#TP_DOCINFORELOAD.RB_NOAUTOUPDATE.radiobutton.text
+msgid "Do not refresh automatically"
+msgstr "Не обновлять автоматически"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.RB_RELOADUPDATE.radiobutton.text
+msgid "Refresh this document"
+msgstr "Обновлять этот документ"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.FT_EVERY.fixedtext.text
+msgid "every"
+msgstr "каждые"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.fixedtext.text
+msgctxt "dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.fixedtext.text"
+msgid "seconds"
+msgstr "сек."
+
+#: dinfdlg.src#TP_DOCINFORELOAD.RB_FORWARDUPDATE.radiobutton.text
+msgid "Redirect from this document"
+msgstr "Перенаправлять из этого документа"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.fixedtext.text
+msgid "after"
+msgstr "через"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.fixedtext.text
+msgctxt "dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.fixedtext.text"
+msgid "seconds"
+msgstr "сек."
+
+#: dinfdlg.src#TP_DOCINFORELOAD.FT_URL.fixedtext.text
+msgid "to URL"
+msgstr "URL"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.FT_FRAME.fixedtext.text
+msgid "to frame"
+msgstr "фрейм"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.STR_FORWARD_ERRMSSG.string.text
+msgid "If you select the option \"%PLACEHOLDER%\", you must enter a URL."
+msgstr "При выборе опции «%PLACEHOLDER%» необходимо ввести URL."
+
+#: dinfdlg.src#TP_CUSTOMPROPERTIES.FT_PROPERTIES.fixedtext.text
+msgid "~Properties"
+msgstr "Свойства"
+
+#: dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.string.text
+msgid "Name"
+msgstr "Имя"
+
+#: dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.string.text
+msgid "Type"
+msgstr "Тип"
+
+#: dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_VALUE.string.text
+msgid "Value"
+msgstr "Значение"
+
+#: dinfdlg.src#TP_CUSTOMPROPERTIES.BTN_ADD.pushbutton.text
+msgid "~Add"
+msgstr "Добавить"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.combobox.text
+msgctxt "dinfdlg.src#SFX_CB_PROPERTY_NAME.combobox.text"
+msgid "-"
+msgstr "-"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.combobox.quickhelptext
+msgid "Property Name"
+msgstr "Имя свойства"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.1.stringlist.text
+msgid "Checked by"
+msgstr "Проверен"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.2.stringlist.text
+msgid "Client"
+msgstr "Клиент"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.3.stringlist.text
+msgid "Date completed"
+msgstr "Дата завершения"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.4.stringlist.text
+msgid "Department"
+msgstr "Отдел"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.5.stringlist.text
+msgid "Destinations"
+msgstr "Место назначения"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.6.stringlist.text
+msgid "Disposition"
+msgstr "Размещение"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.7.stringlist.text
+msgid "Division"
+msgstr "Подразделение"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.8.stringlist.text
+msgid "Document number"
+msgstr "Номер документа"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.9.stringlist.text
+msgid "Editor"
+msgstr "Редактор"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.10.stringlist.text
+msgid "E-Mail"
+msgstr "E-Mail"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.11.stringlist.text
+msgid "Forward to"
+msgstr "Переадресован:"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.12.stringlist.text
+msgid "Group"
+msgstr "Группа"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.13.stringlist.text
+msgid "Info"
+msgstr "Информация"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.14.stringlist.text
+msgid "Language"
+msgstr "Язык"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.15.stringlist.text
+msgid "Mailstop"
+msgstr "Аб. ящик"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.16.stringlist.text
+msgid "Matter"
+msgstr "Тема письма"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.17.stringlist.text
+msgid "Office"
+msgstr "Офис"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.18.stringlist.text
+msgid "Owner"
+msgstr "Владелец"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.19.stringlist.text
+msgid "Project"
+msgstr "Проект"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.20.stringlist.text
+msgid "Publisher"
+msgstr "Публикатор"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.21.stringlist.text
+msgid "Purpose"
+msgstr "Назначение"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.22.stringlist.text
+msgid "Received from"
+msgstr "Получен от"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.23.stringlist.text
+msgid "Recorded by"
+msgstr "Записан:"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.24.stringlist.text
+msgid "Recorded date"
+msgstr "Дата записи"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.25.stringlist.text
+msgid "Reference"
+msgstr "Ссылка"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.26.stringlist.text
+msgid "Source"
+msgstr "Источник"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.27.stringlist.text
+msgid "Status"
+msgstr "Состояние"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.28.stringlist.text
+msgid "Telephone number"
+msgstr "Номер телефона"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.29.stringlist.text
+msgid "Typist"
+msgstr "Машинистка"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.30.stringlist.text
+msgid "URL"
+msgstr "URL"
+
+#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.1.stringlist.text
+msgid "Text"
+msgstr "Текст"
+
+#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.2.stringlist.text
+msgid "DateTime"
+msgstr "Дата и время"
+
+#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.3.stringlist.text
+msgid "Date"
+msgstr "Дата"
+
+#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.4.stringlist.text
+msgctxt "dinfdlg.src#SFX_LB_PROPERTY_TYPE.4.stringlist.text"
+msgid "Duration"
+msgstr "Продолжительность"
+
+#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.5.stringlist.text
+msgid "Number"
+msgstr "Номер"
+
+#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.6.stringlist.text
+msgid "Yes or no"
+msgstr "Да или нет"
+
+#: dinfdlg.src#SFX_ST_DURATION_FORMAT.string.text
+msgid " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
+msgstr " Г: %1 М: %2 Д: %3 Ч: %4 М: %5 С: %6"
+
+#: dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.radiobutton.text
+msgid "Yes"
+msgstr "Да"
+
+#: dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_NO.radiobutton.text
+msgid "No"
+msgstr "Нет"
+
+#: dinfdlg.src#SFX_PB_PROPERTY_REMOVE.imagebutton.text
+msgctxt "dinfdlg.src#SFX_PB_PROPERTY_REMOVE.imagebutton.text"
+msgid "-"
+msgstr "-"
+
+#: dinfdlg.src#SFX_PB_PROPERTY_REMOVE.imagebutton.quickhelptext
+msgid "Remove Property"
+msgstr "Удалить свойство"
+
+#: dinfdlg.src#SFX_QB_WRONG_TYPE.querybox.text
+msgid ""
+"The value entered does not match the specified type.\n"
+"The value will be stored as text."
+msgstr "Введённое значение не соответствует типу и будет сохранено как текст."
+
+#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.pageitem.text
+msgid "General"
+msgstr "Общие"
+
+#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.pageitem.text
+msgid "Description"
+msgstr "Описание"
+
+#: dinfdlg.src#SID_DOCINFO.1.TP_CUSTOMPROPERTIES.pageitem.text
+msgid "Custom Properties"
+msgstr "Свойства пользователя"
+
+#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.pageitem.text
+msgid "Internet"
+msgstr "Интернет"
+
+#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFOSECURITY.pageitem.text
+msgid "Security"
+msgstr "Безопасность"
+
+#: dinfdlg.src#SID_DOCINFO.tabdialog.text
+msgid "Properties of "
+msgstr "Свойства "
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FL_DURATION.fixedline.text
+msgctxt "dinfdlg.src#RID_EDIT_DURATIONS.FL_DURATION.fixedline.text"
+msgid "Duration"
+msgstr "Продолжительность"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.CB_NEGATIVE.checkbox.text
+msgid "~Negative"
+msgstr "Отрицательный"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_YEAR.fixedtext.text
+msgid "~Years"
+msgstr "Годы"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_MONTH.fixedtext.text
+msgid "~Months"
+msgstr "Месяцы"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_DAY.fixedtext.text
+msgid "~Days"
+msgstr "Дни"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_HOUR.fixedtext.text
+msgid "H~ours"
+msgstr "Часы"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_MINUTE.fixedtext.text
+msgid "Min~utes"
+msgstr "Минуты"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_SECOND.fixedtext.text
+msgid "~Seconds"
+msgstr "сек."
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_MSECOND.fixedtext.text
+msgid "Millise~conds"
+msgstr "Миллисекунды"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.modaldialog.text
+msgid "Edit Duration"
+msgstr "Изменить продолжительность"
+
+#: dinfedt.src#DLG_DOCINFO_EDT.FL_INFO.fixedline.text
+msgid "Names"
+msgstr "Имена"
+
+#: dinfedt.src#DLG_DOCINFO_EDT.modaldialog.text
+msgid "Edit Field Names"
+msgstr "Правка имен полей"
+
+#: filedlghelper.src#STR_SFX_FILEDLG_ACTUALVERSION.string.text
+msgid "Current version"
+msgstr "Текущая версия"
+
+#: filedlghelper.src#STR_SFX_EXPLORERFILE_EXPORT.string.text
+msgid "Export"
+msgstr "Экспорт"
+
+#: filedlghelper.src#STR_SFX_EXPLORERFILE_INSERT.string.text
+msgid "Insert"
+msgstr "Вставить"
+
+#: filedlghelper.src#STR_SFX_EXPLORERFILE_BUTTONINSERT.string.text
+msgid "~Insert"
+msgstr "Вставить"
+
+#: filedlghelper.src#STR_SFX_IMPORT_ALL.string.text
+msgid "<All formats>"
+msgstr "<Все форматы>"
+
+#: filedlghelper.src#STR_CB_AUTO_EXTENSION.string.text
+msgid "~Automatic file name extension"
+msgstr "Автоматическое расширение"
+
+#: filedlghelper.src#STR_CB_SELECTION.string.text
+msgid "~Selection"
+msgstr "Выделение"
+
+#: filedlghelper.src#STR_CB_INSERT_AS_LINK.string.text
+msgid "~Link"
+msgstr "Связать"
+
+#: filedlghelper.src#STR_CB_SHOW_PREVIEW.string.text
+msgid "Pr~eview"
+msgstr "Предварительный просмотр"
+
+#: filedlghelper.src#STR_CB_READONLY.string.text
+msgctxt "filedlghelper.src#STR_CB_READONLY.string.text"
+msgid "~Read-only"
+msgstr "Только для чтения"
+
+#: filedlghelper.src#STR_CB_PASSWORD.string.text
+msgid "Save with ~password"
+msgstr "Сохранить с паролем"
+
+#: filedlghelper.src#STR_CB_FILTER_OPTIONS.string.text
+msgid "Edit ~filter settings"
+msgstr "~Изменение настроек фильтра"
+
+#: filedlghelper.src#STR_PB_PLAY.string.text
+msgid "~Play"
+msgstr "Воспроизвести"
+
+#: filedlghelper.src#STR_PB_STOP.string.text
+msgid "Sto~p"
+msgstr "Стоп"
+
+#: filedlghelper.src#STR_PB_OPEN.string.text
+msgid "~Open"
+msgstr "Открыть"
+
+#: filedlghelper.src#STR_PB_SAVE.string.text
+msgid "~Save"
+msgstr "Сохранить"
+
+#: filedlghelper.src#STR_LB_IMAGE_TEMPLATE.string.text
+msgid "Style:"
+msgstr "Стиль:"
+
+#: filedlghelper.src#STR_LB_TEMPLATES.string.text
+msgid "~Templates:"
+msgstr "Шаблоны:"
+
+#: filedlghelper.src#STR_LB_VERSION.string.text
+msgid "~Version:"
+msgstr "Версия:"
+
+#: mailwindow.src#RID_ERRBOX_MAIL_CONFIG.errorbox.text
+msgid ""
+"%PRODUCTNAME was unable to find a working e-mail configuration. Please save "
+"this document locally instead and attach it from within your e-mail client."
+msgstr ""
+"%PRODUCTNAME не может найти настроенного клиента электронной почты. "
+"Сохраните документ и прикрепите его из почтового клиента."
+
+#: mgetempl.src#TP_MANAGE_STYLES.FT_NAME.fixedtext.text
+msgid "~Name"
+msgstr "Имя"
+
+#: mgetempl.src#TP_MANAGE_STYLES.CB_AUTO.checkbox.text
+msgid "~AutoUpdate"
+msgstr "Автообновление"
+
+#: mgetempl.src#TP_MANAGE_STYLES.FT_NEXT.fixedtext.text
+msgid "Ne~xt Style"
+msgstr "Следующий стиль"
+
+#: mgetempl.src#TP_MANAGE_STYLES.FT_BASE.fixedtext.text
+msgid "Linked with"
+msgstr "Связан с"
+
+#: mgetempl.src#TP_MANAGE_STYLES.FT_REGION.fixedtext.text
+msgid "~Category"
+msgstr "Категория"
+
+#: mgetempl.src#TP_MANAGE_STYLES.GB_DESC.fixedline.text
+msgid "Contains"
+msgstr "Параметры"
+
+#: newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.FL_COL.fixedline.text
+msgid "Style name"
+msgstr "Название стиля"
+
+#: newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MSG_OVERWRITE.querybox.text
+msgid "Style already exists. Overwrite?"
+msgstr "Стиль уже существует. Переписать?"
+
+#: newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.modaldialog.text
+msgid "Create Style"
+msgstr "Новый стиль"
+
+#: passwd.src#DLG_PASSWD.FT_PASSWD_USER.fixedtext.text
+msgid "~User"
+msgstr "Пользователь"
+
+#: passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD.fixedtext.text
+msgid "~Password"
+msgstr "Пароль"
+
+#: passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM.fixedtext.text
+msgid "~Confirm"
+msgstr "Подтверждение"
+
+#: passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.fixedline.text
+msgctxt "passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.fixedline.text"
+msgid "Password"
+msgstr "Пароль"
+
+#: passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD2.fixedtext.text
+msgid "P~assword"
+msgstr "Пароль"
+
+#: passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM2.fixedtext.text
+msgid "Confir~m"
+msgstr "Подтверждение"
+
+#: passwd.src#DLG_PASSWD.TEXT_PASSWD.string.text
+msgctxt "passwd.src#DLG_PASSWD.TEXT_PASSWD.string.text"
+msgid "Password"
+msgstr "Пароль"
+
+#: passwd.src#DLG_PASSWD.modaldialog.text
+msgid "Enter Password"
+msgstr "Введите пароль"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.fixedline.text
+msgid "Reduce print data"
+msgstr "Сократить данные печати"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.FT_OUTPUTTYPE.fixedtext.text
+msgid "Settings for"
+msgstr "Настройки для"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTEROUTPUT.radiobutton.text
+msgid "~Printer"
+msgstr "принтера"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTFILEOUTPUT.radiobutton.text
+msgid "Print to ~file"
+msgstr "печати в файл"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCETRANSPARENCY.checkbox.text
+msgid "~Reduce transparency"
+msgstr "Сокра~тить прозрачность"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_AUTO.radiobutton.text
+msgid "Auto~matically"
+msgstr "Автоматически"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_NONE.radiobutton.text
+msgid "~No transparency"
+msgstr "~Без прозрачности"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEGRADIENTS.checkbox.text
+msgid "Reduce ~gradients"
+msgstr "Сократить градиент"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_STRIPES.radiobutton.text
+msgid "Gradient ~stripes"
+msgstr "Градиентные полосы"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_COLOR.radiobutton.text
+msgid "Intermediate ~color"
+msgstr "Промежуточный цвет"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS.checkbox.text
+msgid "Reduce ~bitmaps"
+msgstr "Сократить растровые ~изображения"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_OPTIMAL.radiobutton.text
+msgid "~High print quality"
+msgstr "~Высокое качество печати"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_NORMAL.radiobutton.text
+msgid "N~ormal print quality"
+msgstr "Нормальное качество печати"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_RESOLUTION.radiobutton.text
+msgid "Reso~lution"
+msgstr "Разрешение"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.1.stringlist.text
+msgid "72 DPI"
+msgstr "72 DPI"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.2.stringlist.text
+msgid "96 DPI"
+msgstr "96 DPI"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.3.stringlist.text
+msgid "150 DPI (Fax)"
+msgstr "150 dpi (факс)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.4.stringlist.text
+msgid "200 DPI (default)"
+msgstr "200 dpi (по умолчанию)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.5.stringlist.text
+msgid "300 DPI"
+msgstr "300 DPI"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.6.stringlist.text
+msgid "600 DPI"
+msgstr "600 DPI"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS_TRANSPARENCY.checkbox.text
+msgid "Include transparent ob~jects"
+msgstr "Включить прозрачные объекты"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_CONVERTTOGREYSCALES.checkbox.text
+msgid "Con~vert colors to grayscale"
+msgstr "Преобразовать цвета в оттенки серого"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.GB_PRINT_WARN.fixedline.text
+msgid "Printer warnings"
+msgstr "Предупреждения принтера"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERSIZE.checkbox.text
+msgid "P~aper size"
+msgstr "Размер бумаги"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERORIENTATION.checkbox.text
+msgid "Pap~er orientation"
+msgstr "Ориентация бумаги"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_TRANSPARENCY.checkbox.text
+msgid "~Transparency"
+msgstr "Прозрачность"
+
+#: printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.fixedtext.text
+msgid ""
+"Your document contains transparent objects.\n"
+"This may lead to longer printing time on certain\n"
+"printers. Should the aspect of transparency\n"
+"be reduced?"
+msgstr ""
+"В документе содержатся прозрачные объекты.\n"
+"Печать таких объектов может занять некоторое\n"
+"время. Игнорировать прозрачность печати?"
+
+#: printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.okbutton.text
+msgid "~Yes"
+msgstr "~Да"
+
+#: printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_NO.pushbutton.text
+msgid "~No"
+msgstr "~Нет"
+
+#: printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_CANCEL.cancelbutton.text
+msgid "~Cancel"
+msgstr "Отменить"
+
+#: printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.checkbox.text
+msgid "~Do not show warning again"
+msgstr "Больше не показывать предупреждение"
+
+#: printopt.src#RID_WARN_PRINTTRANSPARENCY.modaldialog.text
+msgid "Warning"
+msgstr "Предупреждение"
+
+#: recfloat.src#SID_RECORDING_FLOATWINDOW.floatingwindow.text
+msgid "Record Macro"
+msgstr "Запись макроса"
+
+#: recfloat.src#STR_MACRO_LOSS.string.text
+msgid ""
+"Do you really want to cancel the recording? Any steps recorded up to this "
+"point will be lost."
+msgstr ""
+"Вы действительно хотите прервать запись? Все ранее записанные шаги будут "
+"утеряны."
+
+#: recfloat.src#STR_CANCEL_RECORDING.string.text
+msgid "Cancel Recording"
+msgstr "Отменить запись"
+
+#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FL.fixedline.text
+msgid "File encryption password"
+msgstr "Пароль для шифрования файла"
+
+#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FT.fixedtext.text
+msgid "~Enter password to open"
+msgstr "Пароль для открытия"
+
+#: securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_OPEN_FT.fixedtext.text
+msgid "~Reenter password to open"
+msgstr "Повторите пароль"
+
+#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FL.fixedline.text
+msgid "File sharing password"
+msgstr "Пароль для совместного использования файла"
+
+#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FT.fixedtext.text
+msgid "Enter password to modify"
+msgstr "Пароль для изменения"
+
+#: securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_MODIFY_FT.fixedtext.text
+msgid "Reenter password to modify"
+msgstr "Повторите пароль"
+
+#: securitypage.src#TP_DOCINFOSECURITY.OPTIONS_FL.fixedline.text
+msgid "File sharing options"
+msgstr "Настройки совместного использования файла"
+
+#: securitypage.src#TP_DOCINFOSECURITY.OPEN_READONLY_CB.checkbox.text
+msgid "~Open file read-only"
+msgstr "Открывать только для чтения"
+
+#: securitypage.src#TP_DOCINFOSECURITY.RECORD_CHANGES_CB.checkbox.text
+msgid "Record ~changes"
+msgstr "Записывать изменения"
+
+#: securitypage.src#TP_DOCINFOSECURITY.STR_PROTECT.string.text
+msgid "~Protect..."
+msgstr "Защитить..."
+
+#: securitypage.src#TP_DOCINFOSECURITY.STR_UNPROTECT.string.text
+msgid "~Unprotect..."
+msgstr "Снять защиту..."
+
+#: securitypage.src#TP_DOCINFOSECURITY.STR_END_REDLINING_WARNING.string.text
+msgid ""
+"This action will exit the change recording mode.\n"
+"Any information about changes will be lost.\n"
+"\n"
+"Exit change recording mode?\n"
+"\n"
+msgstr ""
+"Выбран выход из режима записи изменений.\n"
+"Вся информация об изменениях будет потеряна.\n"
+"\n"
+"Выйти из режима записи изменений?\n"
+"\n"
+
+#: securitypage.src#RID_SFX_PROTECT_RECORDS.string.text
+msgid "Protect Records"
+msgstr "Защитить запись"
+
+#: securitypage.src#RID_SFX_UNPROTECT_RECORDS.string.text
+msgid "Unprotect Records"
+msgstr "Снять защиту записи"
+
+#: securitypage.src#RID_SFX_INCORRECT_PASSWORD.string.text
+msgid "Incorrect password"
+msgstr "Неправильный пароль"
+
+#: srchdlg.src#RID_DLG_SEARCH.FT_SEARCH.fixedtext.text
+msgid "~Search for"
+msgstr "Найти"
+
+#: srchdlg.src#RID_DLG_SEARCH.CB_WHOLEWORDS.checkbox.text
+msgid "~Whole words only"
+msgstr "~Только слово целиком"
+
+#: srchdlg.src#RID_DLG_SEARCH.CB_MATCHCASE.checkbox.text
+msgid "~Match case"
+msgstr "С учётом регистра"
+
+#: srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.checkbox.text
+msgctxt "srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.checkbox.text"
+msgid "Wrap ~around"
+msgstr "Обтекание вокруг"
+
+#: srchdlg.src#RID_DLG_SEARCH.CB_BACKWARDS.checkbox.text
+msgid "~Backwards"
+msgstr "Назад"
+
+#: srchdlg.src#RID_DLG_SEARCH.PB_FIND.pushbutton.text
+msgid "~Find"
+msgstr "Найти"
+
+#: srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.cancelbutton.text
+msgctxt "srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.cancelbutton.text"
+msgid "~Close"
+msgstr "Закрыть"
+
+#: srchdlg.src#RID_DLG_SEARCH.STR_TOGGLE.string.text
+msgctxt "srchdlg.src#RID_DLG_SEARCH.STR_TOGGLE.string.text"
+msgid "Wrap ~around"
+msgstr "Обтекание вокруг"
+
+#: srchdlg.src#RID_DLG_SEARCH.modelessdialog.text
+msgid "Find on this Page"
+msgstr "Найти на этой странице"
+
+#: taskpane.src#STR_SFX_DOCK.string.text
+msgid "Dock"
+msgstr "Пристыковать"
+
+#: taskpane.src#STR_SFX_UNDOCK.string.text
+msgid "Undock"
+msgstr "Отстыковать"
+
+#: taskpane.src#STR_SFX_TASK_PANE_VIEW.string.text
+msgid "View"
+msgstr "Просмотр"
+
+#: taskpane.src#STR_SFX_TASKS.string.text
+msgid "Tasks"
+msgstr "Задачи"
+
+#: templdlg.src#RID_STYLECATALOG.BT_ORG.pushbutton.text
+msgid "~Organizer..."
+msgstr "Управление..."
+
+#: templdlg.src#RID_STYLECATALOG.BT_DEL.pushbutton.text
+msgid "~Delete..."
+msgstr "Удалить..."
+
+#: templdlg.src#RID_STYLECATALOG.BT_EDIT.pushbutton.text
+msgid "~Modify..."
+msgstr "Изменить..."
+
+#: templdlg.src#RID_STYLECATALOG.BT_NEW.pushbutton.text
+msgid "~New..."
+msgstr "Создать..."
+
+#: templdlg.src#RID_STYLECATALOG.modaldialog.text
+msgid "Style Catalog"
+msgstr "Каталог стилей"
+
+#: templdlg.src#STR_STYLE_ELEMTLIST.string.text
+msgid "Style List"
+msgstr "Список стилей"
+
+#: templdlg.src#STR_STYLE_FILTER_HIERARCHICAL.string.text
+msgid "Hierarchical"
+msgstr "По иерархии"
+
+#: templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_WATERCAN.toolboxitem.text
+msgid "Fill Format Mode"
+msgstr "Стилевая заливка"
+
+#: templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_NEW_BY_EXAMPLE.toolboxitem.text
+msgid "New Style from Selection"
+msgstr "Создать стиль из выделенного"
+
+#: templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_UPDATE_BY_EXAMPLE.toolboxitem.text
+msgid "Update Style"
+msgstr "Обновить стиль по образцу"
+
+#: templdlg.src#DLG_STYLE_DESIGNER.dockingwindow.text
+msgid "Styles and Formatting"
+msgstr "Стили и форматирование"
+
+#: versdlg.src#DLG_VERSIONS.GB_NEWVERSIONS.fixedline.text
+msgid "New versions"
+msgstr "Новые версии"
+
+#: versdlg.src#DLG_VERSIONS.PB_SAVE.pushbutton.text
+msgid "Save ~New Version"
+msgstr "Сохранить..."
+
+#: versdlg.src#DLG_VERSIONS.CB_SAVEONCLOSE.checkbox.text
+msgid "~Always save a version on closing"
+msgstr "Автоматически сохранять версию при закрытии"
+
+#: versdlg.src#DLG_VERSIONS.GB_OLDVERSIONS.fixedline.text
+msgid "Existing versions"
+msgstr "Имеющиеся версии"
+
+#: versdlg.src#DLG_VERSIONS.FT_DATETIME.fixedtext.text
+msgid "Date and time"
+msgstr "Дата и время"
+
+#: versdlg.src#DLG_VERSIONS.FT_SAVEDBY.fixedtext.text
+msgid "Saved by"
+msgstr "Сохранено"
+
+#: versdlg.src#DLG_VERSIONS.FT_COMMENTS.fixedtext.text
+msgid "Comments"
+msgstr "Примечания"
+
+#: versdlg.src#DLG_VERSIONS.PB_CLOSE.cancelbutton.text
+msgid "Close"
+msgstr "Закрыть"
+
+#: versdlg.src#DLG_VERSIONS.PB_OPEN.pushbutton.text
+msgid "Open"
+msgstr "Открыть"
+
+#: versdlg.src#DLG_VERSIONS.PB_VIEW.pushbutton.text
+msgid "~Show..."
+msgstr "Примечание..."
+
+#: versdlg.src#DLG_VERSIONS.PB_DELETE.pushbutton.text
+msgid "~Delete"
+msgstr "Удалить"
+
+#: versdlg.src#DLG_VERSIONS.PB_COMPARE.pushbutton.text
+msgid "Compare"
+msgstr "Сравнить"
+
+#: versdlg.src#DLG_VERSIONS.modaldialog.text
+msgid "Versions of"
+msgstr "Версии"
+
+#: versdlg.src#DLG_COMMENTS.FT_DATETIME.fixedtext.text
+msgid "Date and time : "
+msgstr "Дата и время: "
+
+#: versdlg.src#DLG_COMMENTS.FT_SAVEDBY.fixedtext.text
+msgid "Saved by "
+msgstr "Сохранено: "
+
+#: versdlg.src#DLG_COMMENTS.PB_CLOSE.pushbutton.text
+msgctxt "versdlg.src#DLG_COMMENTS.PB_CLOSE.pushbutton.text"
+msgid "~Close"
+msgstr "Закрыть"
+
+#: versdlg.src#DLG_COMMENTS.modaldialog.text
+msgid "Insert Version Comment"
+msgstr "Вставить примечание к версии"
+
+#: versdlg.src#DLG_COMMENTS.string.text
+msgid "Version comment"
+msgstr "Примечание к версии"

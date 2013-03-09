@@ -1,0 +1,4108 @@
+
+#: importwi.src#sHelpButton.string.text
+msgid "~Help"
+msgstr "උදව් (~H)"
+
+#: importwi.src#sCancelButton.string.text
+msgid "~Cancel"
+msgstr "වසන්න (~C)"
+
+#: importwi.src#sBackButton.string.text
+msgid "<< ~Back"
+msgstr "<< ආපසු (~B)"
+
+#: importwi.src#sNextButton.string.text
+msgid "Ne~xt >>"
+msgstr "ඊළඟ >> (~x)"
+
+#: importwi.src#sBeginButton.string.text
+msgid "~Convert"
+msgstr "පෙරලුම (~C)"
+
+#: importwi.src#sCloseButton.string.text
+msgid "~Close"
+msgstr "වහන්න (~C)"
+
+#: importwi.src#sWelcometextLabel1.string.text
+msgid ""
+"This wizard converts documents in %PRODUCTNAME format and Microsoft Office "
+"documents to the new OpenDocument format."
+msgstr ""
+"මෙම විශාරදය %PRODUCTNAME ආකෘතියේ ලිපි සහ Microsoft Office ලිපි නව "
+"OpenDocument ආකෘතියට පරිවර්තනය කරයි."
+
+#: importwi.src#sWelcometextLabel2.string.text
+msgid ""
+"Please note that when converting Microsoft documents any attached VBA macros "
+"lose their functionality."
+msgstr ""
+"Microsoft ලිපි පරිවර්තනය කිරීමේදී ඈඳා ඇති VBA මැක්‍රෝවල ක්‍රියාකාරිත්වය නැති "
+"වන බව කරුණාකර සටහන් කරන්න."
+
+#: importwi.src#sWelcometextLabel3.string.text
+msgid "Select the document type for conversion:"
+msgstr "පරිවර්තනය සඳහා ලිපි ආකාරය තෝරන්න:"
+
+#: importwi.src#sMSTemplateCheckbox_1_.string.text
+msgid "Word templates"
+msgstr "Word ආකෘති"
+
+#: importwi.src#sMSTemplateCheckbox_2_.string.text
+msgid "Excel templates"
+msgstr "Excel ආකෘති"
+
+#: importwi.src#sMSTemplateCheckbox_3_.string.text
+msgid "PowerPoint templates"
+msgstr "PowerPoint ආකෘති"
+
+#: importwi.src#sMSDocumentCheckbox_1_.string.text
+msgid "Word documents"
+msgstr "Word ලේඛන"
+
+#: importwi.src#sMSDocumentCheckbox_2_.string.text
+msgid "Excel documents"
+msgstr "Excel ලේඛන"
+
+#: importwi.src#sMSDocumentCheckbox_3_.string.text
+msgid "PowerPoint documents"
+msgstr "PowerPoint ලේඛන"
+
+#: importwi.src#sSearchInSubDir.string.text
+msgid "Including subdirectories"
+msgstr "උප බහලුම් ඇතුළත්ව"
+
+#: importwi.src#sMSContainerName.string.text
+msgid "Microsoft Office"
+msgstr "Microsoft Office"
+
+#: importwi.src#sSummaryHeader.string.text
+msgid "Summary:"
+msgstr "සාරාංශය:"
+
+#: importwi.src#sTextImportLabel.string.text
+msgid "Import from:"
+msgstr "ගෙන් ආයාත කල:"
+
+#: importwi.src#sTextExportLabel.string.text
+msgid "Save to:"
+msgstr "වෙත සුරකින්න:"
+
+#: importwi.src#sGroupnameDefault.string.text
+msgid "Imported_Templates"
+msgstr "ආයාත කළ ආකෘති"
+
+#: importwi.src#sProgressDesc1.string.text
+msgid "Progress: "
+msgstr "ප්‍රගතිය:"
+
+#: importwi.src#sProgressOneDoc.string.text
+msgid "Document"
+msgstr "ලේඛනය"
+
+#: importwi.src#sProgressMoreDocs.string.text
+msgid "Documents"
+msgstr "ලේඛන"
+
+#: importwi.src#sProgressMoreTemplates.string.text
+msgid "Templates"
+msgstr "ආකෘති"
+
+#: importwi.src#sNoDirCreation.string.text
+msgid "The '%1' directory cannot be created: "
+msgstr "'%1' බහලුම සෑදීමට නොහැක: "
+
+#: importwi.src#sMsgDirNotThere.string.text
+msgid "The '%1' directory does not exist."
+msgstr "'%1' බහලුම නොපවතී."
+
+#: importwi.src#sQueryfornewCreation.string.text
+msgid "Do you want to create it now?"
+msgstr "ඔබට දැන් එය සෑදීමට අවශ්‍යද?"
+
+#: importwi.src#sFileExists.string.text
+msgid "The '<1>' file already exists.<CR>Do you want to overwrite it?"
+msgstr "'<1>' ගොනුව දැනටමත් පවතී.<CR>ඔබට එය මත ලිවීමට අවශ්‍යද?"
+
+#: importwi.src#sMorePathsError3.string.text
+msgid "Directories do not exist"
+msgstr "බහලුම් නොමැත"
+
+#: importwi.src#sOverwriteallFiles.string.text
+msgid "Do you want to overwrite documents without being asked?"
+msgstr "ඔබට විමසීමෙන් තොරව ලිපි මත ලිවීමට අවශ්‍යද?"
+
+#: importwi.src#sreeditMacro.string.text
+msgid "Document macro has to be revised."
+msgstr "ලිපියේ මැක්‍රෝව සංශෝධනය කිරීමට සිදු වී ඇත."
+
+#: importwi.src#scouldNotsaveDocument.string.text
+msgid "Document '<1>' could not be saved."
+msgstr "'<1>' ලිපිය සුරැකීමට නොහැකි විය."
+
+#: importwi.src#scouldNotopenDocument.string.text
+msgid "Document '<1>' could not be opened."
+msgstr "'<1>' ලිපිය විවෘත කිරීමට නොහැකි විය."
+
+#: importwi.src#sConvertError1.string.text
+msgid "Do you really want to terminate conversion at this point?"
+msgstr "ඔබට ඇත්ත වශයෙන්ම මෙම අවස්ථාවේදී සංවාදය නැවැත්වීමට අවශ්‍යද?"
+
+#: importwi.src#sConvertError2.string.text
+msgid "Cancel Wizard"
+msgstr "විශාරදය අවලංගු කරන්න"
+
+#: importwi.src#sRTErrorDesc.string.text
+msgid "An unexpected error has occurred in the wizard."
+msgstr "විශාරදයේ බලාපොරොත්තු නොවූ දෝෂයක් මතු වී ඇත."
+
+#: importwi.src#sRTErrorHeader.string.text
+msgid "Error"
+msgstr "දෝෂය"
+
+#: importwi.src#sPathDialogMessage.string.text
+msgid "Select a directory"
+msgstr "බහලුම තෝරන්න"
+
+#: importwi.src#sDialogTitle.string.text
+msgid "Document Converter"
+msgstr "ලිපි පරිවර්තකය"
+
+#: importwi.src#sProgressPage1.string.text
+msgid "Progress"
+msgstr "ප්‍රගතිය"
+
+#: importwi.src#sProgressPage2.string.text
+msgid "Retrieving the relevant documents:"
+msgstr "අදාළ ලිපි සොයා ලබා ගනිමින්:"
+
+#: importwi.src#sProgressPage3.string.text
+msgid "Converting the documents"
+msgstr "ලිපි පරිවර්තනය කරමින්"
+
+#: importwi.src#sProgressFound.string.text
+msgid "Found:"
+msgstr "සොයාගත්:"
+
+#: importwi.src#sProgressPage5.string.text
+msgid "%1 found"
+msgstr "%1 සොයාගන්නා ලදි"
+
+#: importwi.src#sReady.string.text
+msgid "Finished"
+msgstr "නිම කරන ලද"
+
+#: importwi.src#sXMLTemplateCheckbox_1_.string.text
+msgid "Text templates"
+msgstr "පෙළ අච්චු"
+
+#: importwi.src#sXMLTemplateCheckbox_2_.string.text
+msgid "Spreadsheet templates"
+msgstr "පැතුරුම්පත් අච්චු"
+
+#: importwi.src#sXMLTemplateCheckbox_3_.string.text
+msgid "Drawing/presentation templates"
+msgstr "ඇඳීමේ/ඉදිරිපත් කිරීමේ අච්චු"
+
+#: importwi.src#sXMLTemplateCheckbox_4_.string.text
+msgctxt "importwi.src#sXMLTemplateCheckbox_4_.string.text"
+msgid "Master documents"
+msgstr "ප්‍රධාන ලිපි"
+
+#: importwi.src#sXMLDocumentCheckbox_1_.string.text
+msgid "Text documents"
+msgstr "පෙළ ලිපි"
+
+#: importwi.src#sXMLDocumentCheckbox_2_.string.text
+msgid "Spreadsheets"
+msgstr "පැතුරුම්පත්"
+
+#: importwi.src#sXMLDocumentCheckbox_3_.string.text
+msgid "Drawing/presentation documents"
+msgstr "ඇඳීමේ/ඉදිරිපත් කිරීමේ ලිපි"
+
+#: importwi.src#sXMLDocumentCheckbox_4_.string.text
+msgid "Master documents/formulas"
+msgstr "ප්‍රධාන ලිපි/සූත්‍ර"
+
+#: importwi.src#sXMLHelperApplications_1.string.text
+msgctxt "importwi.src#sXMLHelperApplications_1.string.text"
+msgid "Master documents"
+msgstr "ප්‍රධාන ලිපි"
+
+#: importwi.src#sXMLHelperApplications_2.string.text
+msgid "Formulas"
+msgstr "සූත්‍ර"
+
+#: importwi.src#sSourceDocuments.string.text
+msgid "Source documents"
+msgstr "මූල ලිපි"
+
+#: importwi.src#sTargetDocuments.string.text
+msgid "Target documents"
+msgstr "ඉලක්ක ලිපි"
+
+#: importwi.src#sCreateLogfile.string.text
+msgid "Create log file"
+msgstr "ලොග් ගොනුව සාදන්න"
+
+#: importwi.src#sLogfileSummary.string.text
+msgid "<COUNT> documents converted"
+msgstr "<COUNT> ලිපි පරිවර්තනය කරන ලදි"
+
+#: importwi.src#sLogfileHelpText.string.text
+msgid "A log file will be created in your work directory"
+msgstr "ඔබගේ වැඩ කරන බහලුමේ ලොග් ගොනුවක් සෑදෙනු ඇත"
+
+#: importwi.src#sshowLogfile.string.text
+msgid "Show log file"
+msgstr "ලොග් ගොනුව පෙන්නන්න"
+
+#: importwi.src#sSumInclusiveSubDir.string.text
+msgid "All subdirectories will be taken into account"
+msgstr "සෑම උප බහලුමක්ම සැලකිල්ලට ගැනෙනු ඇත"
+
+#: importwi.src#sSumSaveDokumente.string.text
+msgid "These will be exported to the following directory:"
+msgstr "මේවා පහත බහලුමට නිර්යාත වනු ඇත:"
+
+#: importwi.src#sSumSOTextDocuments.string.text
+msgid ""
+"All %PRODUCTNAME text documents contained in the following directory will be "
+"imported:"
+msgstr "පහත බහලුමේ අඩංගු සියළු %PRODUCTNAME පෙළ ලේඛන ආයාත වනු ඇත:"
+
+#: importwi.src#sSumSOTableDocuments.string.text
+msgid ""
+"All %PRODUCTNAME spreadsheets contained in the following directory will be "
+"imported:"
+msgstr "පහත බහලුමේ සියළු %PRODUCTNAME පැතුරුම්පත් ආයාත වනු ඇත:"
+
+#: importwi.src#sSumSODrawDocuments.string.text
+msgid ""
+"All %PRODUCTNAME drawing and presentation documents contained in the "
+"following directory will be imported:"
+msgstr ""
+"පහත බහලුමේ අඩංගු සියළු %PRODUCTNAME ඇඳීම් සහ ඉදිරිපත් කිරීමේ ලේඛන ආයාත වනු "
+"ඇත:"
+
+#: importwi.src#sSumSOMathDocuments.string.text
+msgid ""
+"All %PRODUCTNAME formula documents contained in the following directory will "
+"be imported:"
+msgstr "පහත බහලුමේ අඩංගු සියළු %PRODUCTNAME සූත්‍ර ලේඛන ආයාත වනු ඇත:"
+
+#: importwi.src#sSumSOTextTemplates.string.text
+msgid ""
+"All %PRODUCTNAME text templates contained in the following directory will be "
+"imported:"
+msgstr "පහත බහලුමේ අඩංගු සියළු %PRODUCTNAME පෙළ අච්චු ආයාත වනු ඇත:"
+
+#: importwi.src#sSumSOTableTemplates.string.text
+msgid ""
+"All %PRODUCTNAME table templates contained in the following directory will "
+"be imported:"
+msgstr "පහත බහලුමේ අඩංගු සියළු %PRODUCTNAME වගු ආකෘති ආයාත වනු ඇත:"
+
+#: importwi.src#sSumSODrawTemplates.string.text
+msgid ""
+"All %PRODUCTNAME drawing and presentation templates contained in the "
+"following directory will be imported:"
+msgstr ""
+"පහත බහලුමේ අඩංගු සියළු %PRODUCTNAME ඇඳීම් සහ ඉදිරිපත් කිරීමේ ආකෘති ආයාත වනු "
+"ඇත:"
+
+#: importwi.src#sSumSOGlobalDocuments.string.text
+msgid ""
+"All %PRODUCTNAME master documents contained in the following directory will "
+"be imported:"
+msgstr "පහත බහලුමේ අඩංගු සියළු %PRODUCTNAME ප්‍රධාන ලේඛණ ආයාත වනු ඇත:"
+
+#: importwi.src#sSumMSTextDocuments.string.text
+msgid ""
+"All Word documents contained in the following directory will be imported:"
+msgstr "පහත බහලුමේ අඩංගු සියළු Word ලේඛන ආයාත වනු ඇත:"
+
+#: importwi.src#sSumMSTableDocuments.string.text
+msgid ""
+"All Excel documents contained in the following directory will be imported:"
+msgstr "පහත බහලුමේ අඩංගු සියළු Excel ලේඛන ආයාත වනු ඇත:"
+
+#: importwi.src#sSumMSDrawDocuments.string.text
+msgid ""
+"All PowerPoint documents contained in the following directory will be "
+"imported:"
+msgstr "පහත බහලුමේ අඩංගු සියළු PowerPoint ලේඛන ආයාත වනු ඇත:"
+
+#: importwi.src#sSumMSTextTemplates.string.text
+msgid ""
+"All Word templates contained in the following directory will be imported:"
+msgstr "පහත බහලුමේ අඩංගු සියළු Word ආකෘති ආයාත වනු ඇත:"
+
+#: importwi.src#sSumMSTableTemplates.string.text
+msgid ""
+"All Excel templates contained in the following directory will be imported:"
+msgstr "පහත බහලුමේ අඩංගු සියළු Excel ආකෘති ආයාත වනු ඇත:"
+
+#: importwi.src#sSumMSDrawTemplates.string.text
+msgid ""
+"All PowerPoint templates contained in the following directory will be "
+"imported:"
+msgstr "පහත බහලුමේ අඩංගු සියළු PowerPoint ආකෘති ආයාත වනු ඇත:"
+
+#: dbwizres.src#RID_COMMON_START___0.string.text
+msgid ""
+"The directory '%1' could not be created.<BR>There may not be enough space "
+"left on your hard disk."
+msgstr ""
+"'%1' බහලුම සෑදීමට නොහැකි විය. <BR>ඔබගේ දෘඩ තැටියේ ප්‍රමාණවත් ඉඩ ඉතිරිව "
+"නොතිබෙන්නට හැක."
+
+#: dbwizres.src#RID_COMMON_START___1.string.text
+msgid ""
+"The text document could not be created.<BR>Please check if the module "
+"'PRODUCTNAME Writer' is installed."
+msgstr ""
+"පෙළ ලේඛනය සෑදීමට නොහැකි විය.<BR>'PRODUCTNAME Writer' මොඩියුලය ස්ථාපනය කර ඇත් "
+"දැයි කරුණාකර පරීක්ෂා කරන්න."
+
+#: dbwizres.src#RID_COMMON_START___2.string.text
+msgid ""
+"The spreadsheet could not be created.<BR>Please check if the module "
+"'PRODUCTNAME Calc' is installed."
+msgstr ""
+"පැතුරුම්පත සෑදීමට නොහැකි විය.<BR>'PRODUCTNAME Calc' මොඩියුලය ස්ථාපනය කර ඇත් "
+"දැයි කරුණාකර පරීක්ෂා කරන්න."
+
+#: dbwizres.src#RID_COMMON_START___3.string.text
+msgid ""
+"The presentation could not be created.<BR>Please check if the module "
+"'PRODUCTNAME Impress' is installed."
+msgstr ""
+"ඉදිරිපත් කිරීම සෑදීමට නොහැකි විය.<BR>'PRODUCTNAME Impress' මොඩියුලය ස්ථාපනය "
+"කර ඇතිදැයි කරුණාකර පරීක්ෂා කරන්න."
+
+#: dbwizres.src#RID_COMMON_START___4.string.text
+msgid ""
+"The drawing could not be created.<BR>Please check if the module 'PRODUCTNAME "
+"Draw' is installed."
+msgstr ""
+"ඇඳීම සෑදීමට නොහැකි විය.<BR>'PRODUCTNAME Draw' මොඩියුලය ස්ථාපනය කර ඇත් දැයි "
+"කරුණාකර පරීක්ෂා කරන්න."
+
+#: dbwizres.src#RID_COMMON_START___5.string.text
+msgid ""
+"The formula could not be created.<BR>Please check if the module 'PRODUCTNAME "
+"Math' is installed."
+msgstr ""
+"සූත්‍රය සෑදීමට නොහැකි විය.<BR>'PRODUCTNAME Math' මොඩියුලය ස්ථාපනය කර ඇත් "
+"දැයි කරුණාකර පරීක්ෂා කරන්න."
+
+#: dbwizres.src#RID_COMMON_START___6.string.text
+msgid ""
+"The files required could not be found.<BR>Please start the %PRODUCTNAME "
+"Setup and choose 'Repair'."
+msgstr ""
+"අවශ්‍ය ගොනුව සොයා ගැනීමට නොහැකි විය.<BR>කරුණාකර %PRODUCTNAME පිහිටු වීම "
+"ආරම්භ කර 'අලුත් වැඩියා කරන්න' තෝරන්න."
+
+#: dbwizres.src#RID_COMMON_START___7.string.text
+msgid ""
+"The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the "
+"existing file?"
+msgstr ""
+"'<PATH>' ගොනුව දැනටමත් පවතී.<BR><BR>ඔබ දැනට පවතින ගොනුව මත ලිවීමට කැමතිද?"
+
+#: dbwizres.src#RID_COMMON_START___8.string.text
+msgid "Yes"
+msgstr "ඔව්"
+
+#: dbwizres.src#RID_COMMON_START___9.string.text
+msgid "Yes to All"
+msgstr "සියල්ලටම ඔව්"
+
+#: dbwizres.src#RID_COMMON_START___10.string.text
+msgid "No"
+msgstr "නැත"
+
+#: dbwizres.src#RID_COMMON_START___11.string.text
+msgid "Cancel"
+msgstr "වසන්න"
+
+#: dbwizres.src#RID_COMMON_START___12.string.text
+msgid "~Finish"
+msgstr "නිමි (~F)"
+
+#: dbwizres.src#RID_COMMON_START___13.string.text
+msgid "< ~Back"
+msgstr "< ආපසු (~B)"
+
+#: dbwizres.src#RID_COMMON_START___14.string.text
+msgid "~Next >"
+msgstr "ඊළඟ > (~N)"
+
+#: dbwizres.src#RID_COMMON_START___15.string.text
+msgctxt "dbwizres.src#RID_COMMON_START___15.string.text"
+msgid "~Help"
+msgstr "උදව් (~H)"
+
+#: dbwizres.src#RID_COMMON_START___16.string.text
+msgid "Steps"
+msgstr "පියවර"
+
+#: dbwizres.src#RID_COMMON_START___17.string.text
+msgid "Close"
+msgstr "වහන්න"
+
+#: dbwizres.src#RID_COMMON_START___18.string.text
+msgid "OK"
+msgstr "හරි"
+
+#: dbwizres.src#RID_COMMON_START___19.string.text
+msgid "The file already exists. Do you want to overwrite it?"
+msgstr "ගොනුව දැනටමත් පවතී. ඔබට එය මත ලිවීමට අවශ්‍යද?"
+
+#: dbwizres.src#RID_COMMON_START___20.string.text
+msgid "Template created via <wizard_name> on <current_date>."
+msgstr "<current_date> දින <wizard_name> හරහා සෑදූ ආකෘතිය."
+
+#: dbwizres.src#RID_COMMON_START___21.string.text
+msgid ""
+"The wizard could not be run, because important files were not found.\n"
+"Under 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to "
+"reset the paths to the original default settings.\n"
+"Then run the wizard again."
+msgstr ""
+"වැදගත් ගොනු හමු නොවුණු නිසා විශාරදය ධාවනය කිරීමට නොහැකි විය.\n"
+"මාර්‍ග මූලික පෙරනිමි සැකසීම් වලට යළි පිහිටිවීමට 'මෙවලම් - විකල්ප - %"
+"PRODUCTNAME - මාර්‍ගය' යටතේ ඇති 'පෙරනිමි' බොත්තම ක්ලික් කරන්න.\n"
+"පසුව විශාරදය යළි ක්‍රියාත්මක කරන්න."
+
+#: dbwizres.src#RID_DB_COMMON_START___0.string.text
+msgid "C~reate"
+msgstr "සාදන්න (~r)"
+
+#: dbwizres.src#RID_DB_COMMON_START___1.string.text
+msgid "~Cancel"
+msgstr "වසන්න (~C)"
+
+#: dbwizres.src#RID_DB_COMMON_START___2.string.text
+msgid "<< ~Back"
+msgstr "<< ආපසු (~B)"
+
+#: dbwizres.src#RID_DB_COMMON_START___3.string.text
+msgid "~Next >>"
+msgstr "ඊළඟ >> (~N)"
+
+#: dbwizres.src#RID_DB_COMMON_START___4.string.text
+msgid "~Database"
+msgstr "දත්ත ගබඩාව (~D)"
+
+#: dbwizres.src#RID_DB_COMMON_START___5.string.text
+msgid "~Table name"
+msgstr "වගු නමය (~T)"
+
+#: dbwizres.src#RID_DB_COMMON_START___6.string.text
+msgid ""
+"An error occurred while running the wizard. The wizard will be terminated."
+msgstr "විශාරදය ධාවනය වීමේදී දෝෂයක් මති විය. විශාරදය අවසාන වනු ඇත."
+
+#: dbwizres.src#RID_DB_COMMON_START___14.string.text
+msgid "No connection to the database could be established."
+msgstr "දත්ත ගබඩාවට සම්බන්ධතාවය ගොඩනැගීමට නොහැකි විය."
+
+#: dbwizres.src#RID_DB_COMMON_START___20.string.text
+msgctxt "dbwizres.src#RID_DB_COMMON_START___20.string.text"
+msgid "~Help"
+msgstr "උදව් (~H)"
+
+#: dbwizres.src#RID_DB_COMMON_START___21.string.text
+msgid "~Stop"
+msgstr "නවත්තන්න (~S)"
+
+#: dbwizres.src#RID_DB_COMMON_START___30.string.text
+msgid "The document could not be saved."
+msgstr "ලිපිය සුරැකීමට නොහැකි විය."
+
+#: dbwizres.src#RID_DB_COMMON_START___33.string.text
+msgid "Exiting the wizard"
+msgstr "විශාරදයෙන් ඉවත් වෙමින්"
+
+#: dbwizres.src#RID_DB_COMMON_START___34.string.text
+msgid "Connecting to data source..."
+msgstr "දත්ත මූලයට සම්බන්ධ වෙමින්..."
+
+#: dbwizres.src#RID_DB_COMMON_START___35.string.text
+msgid "The connection to the data source could not be established."
+msgstr "දත්ත මූලයට සම්බන්ධතාවය ගොඩනැඟීමට නොහැකි විය."
+
+#: dbwizres.src#RID_DB_COMMON_START___36.string.text
+msgid "The file path entered is not valid."
+msgstr "ඇතුල් කළ ගොනු මාර්‍ගය වලංගු නැත."
+
+#: dbwizres.src#RID_DB_COMMON_START___37.string.text
+msgid "Please select a data source"
+msgstr "කරුණාකර දත්ත මූලයක් තෝරන්න"
+
+#: dbwizres.src#RID_DB_COMMON_START___38.string.text
+msgid "Please select a table or query"
+msgstr "කරුණාකර වගුවක් හෝ විමසුමක් තෝරන්න"
+
+#: dbwizres.src#RID_DB_COMMON_START___39.string.text
+msgid "Add field"
+msgstr "ක්ෂේත්‍රය එක් කරන්න"
+
+#: dbwizres.src#RID_DB_COMMON_START___40.string.text
+msgid "Remove field"
+msgstr "ක්ෂේත්‍රය ඉවත් කරන්න"
+
+#: dbwizres.src#RID_DB_COMMON_START___41.string.text
+msgid "Add all fields"
+msgstr "සියළු ක්ෂේත්‍ර එක් කරන්න"
+
+#: dbwizres.src#RID_DB_COMMON_START___42.string.text
+msgid "Remove all fields"
+msgstr "සියළු ක්ෂේත්‍ර ඉවත් කරන්න"
+
+#: dbwizres.src#RID_DB_COMMON_START___43.string.text
+msgid "Move field up"
+msgstr "ක්ෂේත්‍රය ඉහළට ගමන් කරවන්න"
+
+#: dbwizres.src#RID_DB_COMMON_START___44.string.text
+msgid "Move field down"
+msgstr "ක්ෂේත්‍රය පහළට ගමන් කරවන්න"
+
+#: dbwizres.src#RID_DB_COMMON_START___45.string.text
+msgid "The field names from '%NAME' could not be retrieved."
+msgstr "'%NAME' ගෙන් ක්ෂේත්‍ර නාමය සොයා ලබා ගත නොහැකි විය."
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___0.string.text
+msgid "Form Wizard"
+msgstr "පෝරම විශාරදය"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___1.string.text
+msgid "Fields in ~the form"
+msgstr "පෝරමයේ ක්ෂේත්‍ර (~t)"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___2.string.text
+msgid ""
+"Binary fields are always listed and selectable from the left list.\n"
+"If possible, they are interpreted as images."
+msgstr ""
+"ද්වීමය ක්ෂේත්‍ර හැමවිටම ලැයිස්තු ගත කර ඇති අතර වම් ලැයිස්තුවෙන් තෝරා ගත හැක.\n"
+"හැකි නම් ඒවා පින්තූර ලෙසද අර්ථ දක්වනු ඇත."
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___3.string.text
+msgid ""
+"A subform is a form that is inserted in another form.\n"
+"Use subforms to show data from tables or queries with a one-to-many "
+"relationship."
+msgstr ""
+"උප පෝරමයක් යනු වෙනත් පෝරමයක් තුල ඇතුල් කළ පෝරමයකි.\n"
+"එකට-බහු සම්බන්ධතා ඇති වගු හෝ විමසුම් වලින් දත්ත පෙන්වීමට උප පෝරම භාවිතා "
+"කරන්න."
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___4.string.text
+msgid "~Add Subform"
+msgstr "උප පෝරමය එක් කරන්න (~A)"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___5.string.text
+msgid "~Subform based on existing relation"
+msgstr "දැනට පවතිම සම්බන්ධය මත පදනම් වූ උප පෝරමය (~S)"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___6.string.text
+msgid "Tables or queries"
+msgstr "වගු හෝ විමසුම්"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___7.string.text
+msgid "Subform based on ~manual selection of fields"
+msgstr "ක්ෂේත්‍ර වල අතින් තේරීම මත පදනම් වූ උප පෝරමය (~m)"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___8.string.text
+msgid "~Which relation do you want to add?"
+msgstr "ඔබට එක් කිරීමට අවශ්‍ය කුමන සම්බන්ධතාවයද? (~W)"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___9.string.text
+msgid "Fields in the ~subform"
+msgstr "උප පෝරමයේ ඇති ක්ෂේත්‍ර (~s)"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___12.string.text
+msgid "~Available fields"
+msgstr "භාවිතයට ඇති ක්ෂේත්‍ර (~A)"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___13.string.text
+msgid "Fields in form"
+msgstr "පෝරමයේ ක්ෂේත්‍ර"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___19.string.text
+msgid ""
+"The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\n"
+"But joins may only be used once."
+msgstr ""
+"'<FIELDNAME1>' සහ '<FIELDNAME2>' ඈඳුම දෙවරක් තෝරා ඇත.\n"
+"නමුත් ඈඳුම් භාවිතා කළ හැක්කේ එක් වතාවක් පමණි."
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___20.string.text
+msgid "~First joined subform field"
+msgstr "පළමුව සම්බන්ධ කළ උප පෝරම ක්ෂේත්‍රය (~F)"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___21.string.text
+msgid "~Second joined subform field"
+msgstr "දෙවනුව සම්බන්ඳ කළ උප පෝරම ක්ෂේත්‍රය (~S)"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___22.string.text
+msgid "~Third joined subform field"
+msgstr "තෙවනුව සම්බන්ධ කළ උප පෝරම ක්ෂේත්‍රය (~T)"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___23.string.text
+msgid "~Fourth joined subform field"
+msgstr "හතරවනුව සම්බන්ධ කළ උප පෝරම ක්ෂේත්‍රය (~F)"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___24.string.text
+msgid "F~irst joined main form field"
+msgstr "පළමුව සම්බන්ධ කළ ප්‍රධාන පෝරම ක්ෂේත්‍රය (~i)"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___25.string.text
+msgid "S~econd joined main form field"
+msgstr "දෙවනුව සම්බන්ධ කළ ප්‍රධාන පෝරමය (~e)"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___26.string.text
+msgid "T~hird joined main form field"
+msgstr "තෙවනුව සම්බන්ධ කළ ප්‍රධාන පෝරම ක්ෂේත්‍රය (~h)"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___27.string.text
+msgid "F~ourth joined main form field"
+msgstr "සිව්වනුව සම්බන්ධ කළ ප්‍රධාන පෝරම ක්ෂේත්‍රය (~o)"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___28.string.text
+msgid "Field border"
+msgstr "ක්ෂේත්‍ර මායිම"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___29.string.text
+msgid "No border"
+msgstr "මායිම් නැත"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___30.string.text
+msgid "3D look"
+msgstr "3D පෙනුම"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___31.string.text
+msgid "Flat"
+msgstr "පැතලි"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___32.string.text
+msgid "Label placement"
+msgstr "ලේබලය පිහිටුවීම"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___33.string.text
+msgid "Align left"
+msgstr "වමට පෙළගැසීම"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___34.string.text
+msgid "Align right"
+msgstr "දකුණට පෙළගැසීම"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___35.string.text
+msgid "Arrangement of DB fields"
+msgstr "DB ක්ෂේත්‍ර වල සැකසීම්"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___36.string.text
+msgid "Columnar - Labels Left"
+msgstr "ස්තම්භාකාර - ලේබල වමේ"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___37.string.text
+msgid "Columnar - Labels on Top"
+msgstr "ස්තම්භාකාර - ලේබල උඩ"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___38.string.text
+msgid "In Blocks - Labels Left"
+msgstr "කට්ට වල - ලේබල වමේ"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___39.string.text
+msgid "In Blocks - Labels Above"
+msgstr "කට්ට වල - ලේබල ඉහළ"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___40.string.text
+msgid "As Data Sheet"
+msgstr "දත්ත පත්‍රය ලෙස"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___41.string.text
+msgid "Arrangement of the main form"
+msgstr "ප්‍රධාන පෝරමයේ සැකසීම"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___42.string.text
+msgid "Arrangement of the subform"
+msgstr "උප පෝරමයේ සැකසීම"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___44.string.text
+msgid "The form is to be ~used for entering new data only."
+msgstr "පෝරමය නව දත්ත ඇතුල් කිරීමට පමණක් භාවිතා කරයි. (~u)"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___45.string.text
+msgid "Existing data will not be displayed "
+msgstr "දැනට පවතින දත්ත දර්ශනය නොකරනු ඇත"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___46.string.text
+msgid "T~he form is to display all data"
+msgstr "පෝරමය සියළු දත්ත දර්ශනය කිරීමට වේ (~h)"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___47.string.text
+msgid "Do not allow ~modification of existing data"
+msgstr "දැනට පවතින දත්ත වෙනස් කිරීමට ඉඩ දෙන්න එපා (~m)"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___48.string.text
+msgid "Do not allow ~deletion of existing data"
+msgstr "දැනට පවතින දත්ත මැකීමට ඉඩ දෙන්න එපා (~d)"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___49.string.text
+msgid "Do not allow ~addition of new data"
+msgstr "නව දත්ත එක් කිරීමට ඉඩ දෙන්න එපා (~a)"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___50.string.text
+msgid "Name of ~the form"
+msgstr "පෝරම නමය (~t)"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___51.string.text
+msgid "How do you want to proceed after creating the form?"
+msgstr "පෝරමය සෑදීමෙන් පසු ඔබට ඉදිරියට යාමට අවශ්‍ය කෙසේද?"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___52.string.text
+msgid "~Work with the form"
+msgstr "පෝරමය සමඟ වැඩ කරන්න (~W)"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___53.string.text
+msgid "~Modify the form"
+msgstr "පෝරමය වෙනස් කරන්න (~M)"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___55.string.text
+msgid "~Page Styles"
+msgstr "පිටු මෝස්තර (~P)"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___80.string.text
+msgctxt "dbwizres.src#RID_DB_FORM_WIZARD_START___80.string.text"
+msgid "Field selection"
+msgstr "ක්ෂේත්‍ර තේරීම"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___81.string.text
+msgid "Set up a subform"
+msgstr "උප පෝරමයක් සාදන්න"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___82.string.text
+msgid "Add subform fields"
+msgstr "උප පෝරම ක්ෂේත්‍ර එක් කරන්න"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___83.string.text
+msgid "Get joined fields"
+msgstr "ඒකබද්ධ වූ ක්ෂේත්‍ර ලබා ගන්න"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___84.string.text
+msgid "Arrange controls"
+msgstr "පාලක සකසන්න"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___85.string.text
+msgid "Set data entry"
+msgstr "දත්ත ප්‍රවේශනය යොදන්න"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___86.string.text
+msgid "Apply styles"
+msgstr "මෝස්තර යොදන්න"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___87.string.text
+msgid "Set name"
+msgstr "නම යොදන්න"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___88.string.text
+msgid "(Date)"
+msgstr "(දිනය)"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___89.string.text
+msgid "(Time)"
+msgstr "(වේලාව)"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___90.string.text
+msgid "Select the fields of your form"
+msgstr "ඔබගේ පෝරමයේ ක්ෂේත්‍ර තෝරන්න"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___91.string.text
+msgid "Decide if you want to set up a subform"
+msgstr "ඔබට උප පෝරමයක් සෑදීමට අවශ්‍ය දැයි තීරණය කරන්න"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___92.string.text
+msgid "Select the fields of your subform"
+msgstr "ඔබගේ උප පෝරමයේ ක්ෂේත්‍ර තෝරන්න"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___93.string.text
+msgid "Select the joins between your forms"
+msgstr "ඔබගේ පෝරම අතර අති බැඳීම් තෝරන්න"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___94.string.text
+msgid "Arrange the controls on your form"
+msgstr "ඔබගේ පෝරමයේ පාලක සකසන්න"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___95.string.text
+msgid "Select the data entry mode"
+msgstr "දත්ත ප්‍රවේශ ආකාරය තෝරන්න"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___96.string.text
+msgid "Apply the style of your form"
+msgstr "ඔබගේ පෝරමයේ මෝස්තරය යොදන්න"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___97.string.text
+msgid "Set the name of the form"
+msgstr "පෝරමයේ නම යොදන්න"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___98.string.text
+msgid ""
+"A form with the name '%FORMNAME' already exists.\n"
+"Choose another name."
+msgstr ""
+"'%FORMNAME' නමින් පෝරමයක් දැනටමත් පවතී.\n"
+"වෙනත් නමක් තෝරන්න."
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___0.string.text
+msgctxt "dbwizres.src#RID_DB_QUERY_WIZARD_START___0.string.text"
+msgid "Query Wizard"
+msgstr "විමසීම් විශාරදය"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___1.string.text
+msgid "Query"
+msgstr "විමසීම"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___2.string.text
+msgctxt "dbwizres.src#RID_DB_QUERY_WIZARD_START___2.string.text"
+msgid "Query Wizard"
+msgstr "විමසීම් විශාරදය"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___3.string.text
+msgid "~Tables"
+msgstr "වගු (~T)"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___4.string.text
+msgctxt "dbwizres.src#RID_DB_QUERY_WIZARD_START___4.string.text"
+msgid "A~vailable fields"
+msgstr "භාවිතයට ඇති ක්ෂේත්‍ර (~v)"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___5.string.text
+msgid "Name ~of the query"
+msgstr "විමසුමේ නම (~o)"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___6.string.text
+msgid "Display ~Query"
+msgstr "විමසුම පෙන්වන්න (~Q)"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___7.string.text
+msgid "~Modify Query"
+msgstr "විමසුම වෙනස් කරන්න (~M)"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___8.string.text
+msgid "~How do you want to proceed after creating the query?"
+msgstr "විමසුම සෑදීමෙන් පසු ඉදිරියට යාමට ඔබට අවශ්‍ය කෙසේද? (~H)"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___9.string.text
+msgid "Match ~all of the following"
+msgstr "පහත සියල්ල ගළපන්න (~a)"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___10.string.text
+msgid "~Match any of the following"
+msgstr "පහත ඒවායින් කුමක් හෝ ගළපන්න (~M)"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___11.string.text
+msgid "~Detailed query (Shows all records of the query.)"
+msgstr "විස්තරාත්මක විමසුම (විමසුමේ සියළු වාර්තා පෙන්නන්න.) (~D)"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___12.string.text
+msgid "~Summary query (Shows only results of aggregate functions.)"
+msgstr "සාරාංශ විමසුම (සමූහ ක්‍රියා වල ප්‍රතිඵල පමණක් පෙන්වයි.) (~S)"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___16.string.text
+msgid "Aggregate functions"
+msgstr "සමූහ ක්‍රියා"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___17.string.text
+msgctxt "dbwizres.src#RID_DB_QUERY_WIZARD_START___17.string.text"
+msgid "Fields"
+msgstr "ක්ෂේත්‍ර"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___18.string.text
+msgid "~Group by"
+msgstr "අනුව කාණ්ඩ කරන්න (~G)"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___19.string.text
+msgctxt "dbwizres.src#RID_DB_QUERY_WIZARD_START___19.string.text"
+msgid "Field"
+msgstr "ක්ෂේත්‍රය"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___20.string.text
+msgid "Alias"
+msgstr "අන්වර්ථ නාමය"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___21.string.text
+msgid "Table: "
+msgstr "වගුව:"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___22.string.text
+msgid "Query: "
+msgstr "විමසීම:"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___24.string.text
+msgid "Condition"
+msgstr "කොන්දේසිය"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___25.string.text
+msgid "Value"
+msgstr "අගය"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___26.string.text
+msgid "is equal to"
+msgstr "සමාන"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___27.string.text
+msgid "is not equal to"
+msgstr "සමාන නොවන"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___28.string.text
+msgid "is smaller than"
+msgstr "වඩා කුඩා"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___29.string.text
+msgid "is greater than"
+msgstr "වඩා විශාල"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___30.string.text
+msgid "is equal or less than "
+msgstr "සමාන හෝ වඩා කුඩා"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___31.string.text
+msgid "is equal or greater than"
+msgstr "සමාන හෝ වඩා විශාල"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___32.string.text
+msgid "like"
+msgstr "වගේ"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___33.string.text
+msgid "not like"
+msgstr "ලෙස නොවේ"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___34.string.text
+msgid "is null"
+msgstr "අභිශූන්‍යයි"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___35.string.text
+msgid "is not null"
+msgstr "අභිශූන්‍ය නොවේ"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___36.string.text
+msgid "true"
+msgstr "සත්‍ය"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___37.string.text
+msgid "false"
+msgstr "අසත්‍ය"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___38.string.text
+msgid "and"
+msgstr "සහ"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___39.string.text
+msgid "or"
+msgstr "හෝ"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___40.string.text
+msgid "get the sum of"
+msgstr "එකතුව ලබා ගන්න"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___41.string.text
+msgid "get the average of"
+msgstr "සාමාන්‍යය ලබා ගන්න"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___42.string.text
+msgid "get the minimum of"
+msgstr "අවමය ලබා ගන්න"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___43.string.text
+msgid "get the maximum of"
+msgstr "උපරිමය ලබා ගන්න"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___44.string.text
+msgid "get the sum of <FIELD>"
+msgstr "<FIELD> හි එකතුව ලබා ගන්න"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___45.string.text
+msgid "get the average of <FIELD>"
+msgstr "<FIELD> හි සාමාන්‍යය ලබා ගන්න"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___46.string.text
+msgid "get the minimum of <FIELD>"
+msgstr "<FIELD> හි අවමය ලබා ගන්න"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___47.string.text
+msgid "get the maximum of <FIELD>"
+msgstr "<FIELD> හි උපරිමය ලබා ගන්න"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___48.string.text
+msgid "(none)"
+msgstr "(කිසිවක් නැත)"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___50.string.text
+msgid "Fie~lds in the Query: "
+msgstr "විමසුමේ ක්ෂේත්‍ර (~l)"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___51.string.text
+msgid "Sorting order: "
+msgstr "පෙළගැසීමේ අනුපිළිවෙල:"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___52.string.text
+msgid "No sorting fields were assigned."
+msgstr "තේරීමේ ක්ෂේත්‍ර ආදේශ කර නැත."
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___53.string.text
+msgid "Search conditions: "
+msgstr "සෙවීමේ කොන්දේසි:"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___54.string.text
+msgid "No conditions were assigned."
+msgstr "කොන්දේසි ආදේශ කර නැත."
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___55.string.text
+msgid "Aggregate functions: "
+msgstr "සමූහ ක්‍රියා:"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___56.string.text
+msgid "No aggregate functions were assigned."
+msgstr "සමූහ ක්‍රියා ආදේශ කර නැත."
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___57.string.text
+msgid "Grouped by: "
+msgstr "අනුව සමූහනය කළ:"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___58.string.text
+msgid "No Groups were assigned."
+msgstr "සමූහ ආදේශ කර නැත."
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___59.string.text
+msgid "Grouping conditions: "
+msgstr "සමූහනය කිරීමේ කොන්දේසි:"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___60.string.text
+msgid "No grouping conditions were assigned."
+msgstr "සමූහනය කිරීමේ කොන්දේසි ආදේශ කිරීමට නොහැකි විය."
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___70.string.text
+msgid "Select the fields (columns) for your query"
+msgstr "ඔබගේ විමසුමේ ක්ෂේත්‍ර (තීරු) තෝරන්න"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___71.string.text
+msgid "Select the sorting order"
+msgstr "පෙළගැසීමේ අනුපිළිවෙල තෝරන්න"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___72.string.text
+msgid "Select the search conditions"
+msgstr "සෙවීමේ කොන්දේසි තෝරන්න"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___73.string.text
+msgid "Select the type of query"
+msgstr "විමසුමේ වර්ගය තෝරන්න"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___74.string.text
+msgid "Select the groups"
+msgstr "සමූහ තෝරන්න"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___75.string.text
+msgid "Select the grouping conditions"
+msgstr "සමූහනය කිරීමේ කොන්දේසි තෝරන්න"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___76.string.text
+msgid "Assign aliases if desired"
+msgstr "අවශ්‍ය නම් අන්වර්ථ නාම ආදේශ කරන්න"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___77.string.text
+msgid "Check the overview and decide how to proceed"
+msgstr "දළ විශ්ලේෂණය පරීක්ෂා කර ඉදිරියට යන්නේ කෙසේ දැයි තීරණය කරන්න"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___80.string.text
+msgctxt "dbwizres.src#RID_DB_QUERY_WIZARD_START___80.string.text"
+msgid "Field selection"
+msgstr "ක්ෂේත්‍ර තේරීම"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___81.string.text
+msgid "Sorting order"
+msgstr "පෙළගැසීමේ අනුපිළිවෙල"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___82.string.text
+msgid "Search conditions"
+msgstr "සෙවීමේ කොන්දේසි"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___83.string.text
+msgid "Detail or summary"
+msgstr "විස්තර හෝ සාරාංශය"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___84.string.text
+msgctxt "dbwizres.src#RID_DB_QUERY_WIZARD_START___84.string.text"
+msgid "Grouping"
+msgstr "සමූහනය කිරීම"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___85.string.text
+msgid "Grouping conditions"
+msgstr "සමූහනය කිරීමේ කොන්දේසි"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___86.string.text
+msgid "Aliases"
+msgstr "අන්වර්ථ නාම"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___87.string.text
+msgid "Overview"
+msgstr "දළ විශ්ලේෂණය"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___88.string.text
+msgid ""
+"A field that has not been assigned an aggregate function must be used in a "
+"group."
+msgstr "සමූහ ක්‍රියාවක් ආදේශ කර නොමැති ක්ෂේත්‍රය සමූහයක භාවිතා කළ යුතුය."
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___89.string.text
+msgid ""
+"The condition '<FIELDNAME> <LOGICOPERATOR> <VALUE>' was chosen twice. Each "
+"condition can only be chosen once"
+msgstr ""
+"'<FIELDNAME> <LOGICOPERATOR> <VALUE>' කොන්දේසිය දෙවරක් තෝරා ඇත. සෑම "
+"කොන්දේසියක්ම තේරිය හැක්කේ එක් වතාවක් පමණි."
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___90.string.text
+msgid ""
+"The aggregate function <FUNCTION> has been assigned twice to the fieldname "
+"'<NUMERICFIELD>'."
+msgstr ""
+"<FUNCTION> සමූහ ක්‍රියාව '<NUMERICFIELD>' ක්ෂේත්‍ර නාමයට දෙවරක් ආදේශ කර ඇත."
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___91.string.text
+msgid ", "
+msgstr ", "
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___92.string.text
+msgid "<FIELDTITLE> (<FIELDNAME>)"
+msgstr "<FIELDTITLE> (<FIELDNAME>)"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___93.string.text
+msgid "<FIELDNAME> (<SORTMODE>)"
+msgstr "<FIELDNAME> (<SORTMODE>)"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___94.string.text
+msgctxt "dbwizres.src#RID_DB_QUERY_WIZARD_START___94.string.text"
+msgid "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+msgstr "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___95.string.text
+msgid "<CALCULATEDFUNCTION> <FIELDNAME>"
+msgstr "<CALCULATEDFUNCTION> <FIELDNAME>"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___96.string.text
+msgctxt "dbwizres.src#RID_DB_QUERY_WIZARD_START___96.string.text"
+msgid "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+msgstr "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___0.string.text
+msgid "Report Wizard"
+msgstr "වාර්තා විශාරදය"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___3.string.text
+msgid "~Table"
+msgstr "වගුව (~T)"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___4.string.text
+msgid "Colu~mns"
+msgstr "තීරු (~m)"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___7.string.text
+msgid "Report_"
+msgstr "වාර්තාව_"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___8.string.text
+msgid "- undefined -"
+msgstr "- අර්ථ නොදැක්වූ -"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___9.string.text
+msgid "~Fields in report"
+msgstr "වාර්තාවේ ඇති ක්ෂේත්‍ර (~F)"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___11.string.text
+msgctxt "dbwizres.src#RID_DB_REPORT_WIZARD_START___11.string.text"
+msgid "Grouping"
+msgstr "සමූහනය කිරීම"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___12.string.text
+msgid "Sort options"
+msgstr "පෙළගැසීමේ විකල්ප"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___13.string.text
+msgid "Choose layout"
+msgstr "පිරිසැලසුම තෝරන්න"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___14.string.text
+msgctxt "dbwizres.src#RID_DB_REPORT_WIZARD_START___14.string.text"
+msgid "Create report"
+msgstr "වාර්තාව සාදන්න"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___15.string.text
+msgid "Layout of data"
+msgstr "දත්ත වල පිරිසැලසුම"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___16.string.text
+msgid "Layout of headers and footers"
+msgstr "ශීර්ෂ සහ පාදක වල පිරිසැලසුම"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___19.string.text
+msgctxt "dbwizres.src#RID_DB_REPORT_WIZARD_START___19.string.text"
+msgid "Fields"
+msgstr "ක්ෂේත්‍ර"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___20.string.text
+msgid "~Sort by"
+msgstr "අනුව පෙළගස්වන්න (~S)"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___21.string.text
+msgid "T~hen by"
+msgstr "එවිට (~h)"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___22.string.text
+msgid "Orientation"
+msgstr "දිශානතිය"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___23.string.text
+msgid "Portrait"
+msgstr "පිළිරුව"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___24.string.text
+msgid "Landscape"
+msgstr "තිරස්"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___28.string.text
+msgid "Which fields do you want to have in your report?"
+msgstr "ඔබට ඔබගේ වාර්තාවේ තිබීමට අවශ්‍ය කුමන ක්ෂේත්‍රද?"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___29.string.text
+msgid "Do you want to add grouping levels?"
+msgstr "ඔබට සමූහනය කිරීමේ මට්ටම් එක් කිරීමට අවශ්‍යද?"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___30.string.text
+msgid "According to which fields do you want to sort the data?"
+msgstr "ඔබට දත්ත පෙළගැස්සීමට අවශ්‍ය කුමන ක්ෂේත්‍රයට අනුවද?"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___31.string.text
+msgid "How do you want your report to look?"
+msgstr "ඔබට ඔබගේ වාර්තාව පෙනීමට අවශ්‍ය කෙසේද?"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___32.string.text
+msgid "Decide how you want to proceed"
+msgstr "ඔබට ඉදිරියට යාමට අවශ්‍ය කෙසේදැයි තීරණය කරන්න"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___33.string.text
+msgid "Title of report"
+msgstr "වාර්තාවේ තේමාව"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___34.string.text
+msgid "Display report"
+msgstr "වාර්තාව පෙන්නන්න"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___35.string.text
+msgctxt "dbwizres.src#RID_DB_REPORT_WIZARD_START___35.string.text"
+msgid "Create report"
+msgstr "වාර්තාව සාදන්න"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___36.string.text
+msgid "Ascending"
+msgstr "ආරෝහණ"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___37.string.text
+msgid "Descending"
+msgstr "අවරෝහණ"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___40.string.text
+msgid "~Dynamic report"
+msgstr "ගතික වාර්තාව (~D)"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___41.string.text
+msgid "~Create report now"
+msgstr "දැන් වාර්තාව සාදන්න (~C)"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___42.string.text
+msgid "~Modify report layout"
+msgstr "වාර්තා පිරිසැලසුම විකරණය කරන්න (~M)"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___43.string.text
+msgid "Static report"
+msgstr "ස්ථිතික වාර්තාව"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___44.string.text
+msgid "Save as"
+msgstr "ලෙස සුරකින්න"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___50.string.text
+msgid "Groupings"
+msgstr "සමූහනය කිරීම්"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___51.string.text
+msgid "Then b~y"
+msgstr "එවිට (~y)"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___52.string.text
+msgid "~Then by"
+msgstr "එවිට (~T)"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___53.string.text
+msgid "Asc~ending"
+msgstr "ආරෝහණ (~e)"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___54.string.text
+msgid "Ascend~ing"
+msgstr "ආරෝහණ (~i)"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___55.string.text
+msgid "Ascendin~g"
+msgstr "ආරෝහණ (~g)"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___56.string.text
+msgctxt "dbwizres.src#RID_DB_REPORT_WIZARD_START___56.string.text"
+msgid "De~scending"
+msgstr "අවරෝහණ (~s)"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___57.string.text
+msgid "Des~cending"
+msgstr "අවරෝහණ (~c)"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___58.string.text
+msgctxt "dbwizres.src#RID_DB_REPORT_WIZARD_START___58.string.text"
+msgid "De~scending"
+msgstr "අවරෝහණ (~s)"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___60.string.text
+msgid "Binary fields cannot be displayed in the report."
+msgstr "වාර්තාවේ ද්වීමය ක්ෂේත්‍ර දර්ශනය කළ නොහැක."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___61.string.text
+msgid "The table '<TABLENAME>' does not exist."
+msgstr "'<TABLENAME>' වගුව නොපවතී."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___62.string.text
+msgid "Creating Report..."
+msgstr "වාර්තාව සාදමින්..."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___63.string.text
+msgid "Number of records inserted: <COUNT>"
+msgstr "ඇතුල් කළ වාර්තා ගණන: <COUNT>"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___64.string.text
+msgid "The form '<REPORTFORM>' does not exist."
+msgstr "'<REPORTFORM>' පෝරමය නොපවතී."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___65.string.text
+msgid ""
+"The query with the statement <BR>'<STATEMENT>' <BR> could not be run. <BR> "
+"Check your data source."
+msgstr ""
+"<BR>'<STATEMENT>' <BR>සහිත විමසුම ධාවනය කළ නොහැක. <BR>ඔබගේ දත්ත මූලය පරීක්ෂා "
+"කරන්න."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___66.string.text
+msgid ""
+"The following hidden control in the form '<REPORTFORM>' could not be read: "
+"'<CONTROLNAME>'."
+msgstr ""
+"'<REPORTFORM>' පෝරමයේ පහත සැඟවූ පාලක කියවීමට නොහැකි විය: '<CONTROLNAME>'."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___67.string.text
+msgid "Importing data..."
+msgstr "දත්ත ආයාත කරමින්..."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___68.string.text
+msgid "Labeling fields"
+msgstr "ලේබල් කිරීමේ ක්ෂේත්‍ර"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___69.string.text
+msgid "How do you want to label the fields?"
+msgstr "ඔබට ක්ෂේත්‍ර ලේබල් කිරීමට අවශ්‍ය කෙසේද?"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___70.string.text
+msgid "Label"
+msgstr "ලේබලය"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___71.string.text
+msgctxt "dbwizres.src#RID_DB_REPORT_WIZARD_START___71.string.text"
+msgid "Field"
+msgstr "ක්ෂේත්‍රය"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___72.string.text
+msgid ""
+"An error occurred in the wizard.<BR>The template '%PATH' could be "
+"erroneous.<BR>Either the required sections or tables do not exist or exist "
+"under the wrong name.<BR>See the Help for more detailed "
+"information.<BR>Please select another template."
+msgstr ""
+"විශාරදයේ දෝෂයක් මතු විය.<BR>'%PATH' අච්චුව අසත්‍ය විය හැක.<BR>එක්කෝ අවශ්‍ය "
+"අංශ හෝ වගු නොපවතී හෝ වැරදි නම යටතේ පවතී.<BR>වැඩි සවිස්තරාත්මක තොරතුරු සඳහා "
+"උදව් බලන්න.<BR>කරුණාකර වෙනත් අච්චුවක් තෝරන්න."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___73.string.text
+msgid "There is an invalid user field in a table."
+msgstr "වගුවක වලංගු නැති භාවිතා කරන්නාගේ ක්ෂේත්‍රයක් අඩංගු වේ."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___74.string.text
+msgid ""
+"The sort criterium '<FIELDNAME>' was chosen twice. Each criterium can only "
+"be chosen once."
+msgstr ""
+"'<FIELDNAME>' තේරීමේ පටිපාටිය දෙවරක් තෝර ඇත. එක් පටිපාටියක් තේරිය හැක්කේ එක් "
+"වතාවක් පමණි."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___75.string.text
+msgid ""
+"Note: The dummy text will be replaced by data from the database when the "
+"report is created."
+msgstr ""
+"සටහන : වාර්තාව සෑදූ පසු ව්‍යාජ පෙළ දත්ත ගබඩාවේ දත්ත වලින් ප්‍රතිස්ථාපනය වනු "
+"ඇත."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___76.string.text
+msgid ""
+"A report '%REPORTNAME' already exists in the database. Please assign another "
+"name."
+msgstr ""
+"'%REPORTNAME' වාර්තාවක් දැනටමත් දත්ත ගබඩාවේ පවතී. කරුණාකර වෙනත් නමක් ආදේශ "
+"කරන්න."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___78.string.text
+msgid "How do you want to proceed after creating the report?"
+msgstr "වාර්තාව සෑදීමෙන් පසු ඔබට ඉදිරියට යාමට අවශ්‍ය කෙසේද?"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___79.string.text
+msgid "What kind of report do you want to create?"
+msgstr "ඔබට සෑදීමට අවශ්‍ය කුමන ආකාරයේ වාර්තාවක්ද?"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___80.string.text
+msgid "Tabular"
+msgstr "වගු වශයෙන්"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___81.string.text
+msgid "Columnar, single-column"
+msgstr "ස්තම්භාකාර, ඒක ස්තම්භ"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___82.string.text
+msgid "Columnar, two columns"
+msgstr "ස්තම්භාකාර, ද්වී ස්ථම්භ"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___83.string.text
+msgid "Columnar, three columns"
+msgstr "ස්තම්භාකාර, ත්‍රිත්ව ස්ථම්භ"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___84.string.text
+msgid "In blocks, labels left"
+msgstr "කට්ට වල, ලේබල වමේ"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___85.string.text
+msgid "In blocks, labels above"
+msgstr "කට්ට වල, ලේබල ඉහළ"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___86.string.text
+msgctxt "dbwizres.src#RID_DB_REPORT_WIZARD_START___86.string.text"
+msgid "Title:"
+msgstr "තේමාව:"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___87.string.text
+msgid "Author:"
+msgstr "කර්තෘ:"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___88.string.text
+msgctxt "dbwizres.src#RID_DB_REPORT_WIZARD_START___88.string.text"
+msgid "Date:"
+msgstr "දිනය:"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___89.string.text
+msgid "Page #page# of #count#"
+msgstr "#count# කින් #page# වෙනි පිටුව"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___90.string.text
+msgid "Page number:"
+msgstr "පිටු  අංකය:"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___91.string.text
+msgid "Page count:"
+msgstr "පිටු ගණන:"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___92.string.text
+msgid "No valid report template was found."
+msgstr "වලංගු වාර්තා අච්චුවක් හමු නොවුණි."
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___1.string.text
+msgid "Table Wizard"
+msgstr "වගු විශාරදය"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___2.string.text
+msgid "Select fields"
+msgstr "ක්ෂේත්‍ර තෝරන්න"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___3.string.text
+msgid "Set types and formats"
+msgstr "වර්ග සහ ආකෘති යොදන්න"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___4.string.text
+msgctxt "dbwizres.src#RID_DB_TABLE_WIZARD_START___4.string.text"
+msgid "Set primary key"
+msgstr "ප්‍රාථමික යතුර යොදන්න"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___5.string.text
+msgctxt "dbwizres.src#RID_DB_TABLE_WIZARD_START___5.string.text"
+msgid "Create table"
+msgstr "වගුව සාදන්න"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___8.string.text
+msgid "Select fields for your table"
+msgstr "ඔබගේ වගුව සඳහා ක්ෂේත්‍ර තෝරන්න"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___9.string.text
+msgid "Set field types and formats"
+msgstr "ක්ෂේත්‍ර වර්ග සහ ආකෘති යොදන්න"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___10.string.text
+msgctxt "dbwizres.src#RID_DB_TABLE_WIZARD_START___10.string.text"
+msgid "Set primary key"
+msgstr "ප්‍රාථමික යතුර යොදන්න"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___11.string.text
+msgctxt "dbwizres.src#RID_DB_TABLE_WIZARD_START___11.string.text"
+msgid "Create table"
+msgstr "වගුව සාදන්න"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___14.string.text
+msgid ""
+"This wizard helps you to create a table for your database. After selecting a "
+"table category and a sample table, choose the fields you want to include in "
+"your table. You can include fields from more than one sample table."
+msgstr ""
+"මෙම විශාරදය ඔබට ඔබේ දත්ත ගබඩාව සඳහා වගුවක් සෑදීමට උදව් කරයි. වගු ප්‍රභේදයක් "
+"සහ නියැඳි වගුවක් තේරීමෙන් පසු ඔබගේ වගුවේ අඩංගු කිරීමට අවශ්‍ය ක්ෂේත්‍ර "
+"තෝරන්න. ඔබට නියැඳි වගු එකකට වඩා වැඩි ගණනකින් ක්ෂේත්‍ර අඩංගු කළ හැක."
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___15.string.text
+msgid "Ca~tegory"
+msgstr "ප්‍රභේදය (~t)"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___16.string.text
+msgid "B~usiness"
+msgstr "ව්‍යාපාරික (~u)"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___17.string.text
+msgid "P~ersonal"
+msgstr "පුද්ගලික (~e)"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___18.string.text
+msgid "~Sample tables"
+msgstr "නියැඳි වගු (~S)"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___19.string.text
+msgctxt "dbwizres.src#RID_DB_TABLE_WIZARD_START___19.string.text"
+msgid "A~vailable fields"
+msgstr "ප්‍රයෝජනයට ගත හැකි ක්ෂේත්‍ර (~v)"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___20.string.text
+msgid "Field information"
+msgstr "ක්ෂේත්‍ර තොරතුරු"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___21.string.text
+msgid "+"
+msgstr "+"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___22.string.text
+msgid "-"
+msgstr "-"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___23.string.text
+msgid "Field name"
+msgstr "ක්ෂේත්‍ර නම"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___24.string.text
+msgid "Field type"
+msgstr "ක්ෂේත්‍ර වර්ගය"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___25.string.text
+msgid "~Selected fields"
+msgstr "තේරූ ක්ෂේත්‍ර (~S)"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___26.string.text
+msgid ""
+"A primary key uniquely identifies each record in a database table. Primary "
+"keys ease the linking of information in separate tables, and it is "
+"recommended that you have a primary key in every table. Without a primary "
+"key, it will not be possible to enter data into this table."
+msgstr ""
+"ප්‍රථමික යතුර දත්ත ගබඩා වගුවක ඇති සෑම දත්තයක්ම අනන්‍ය ලෙස හඳුනා ගනී. "
+"ප්‍රථමික යතුරු වෙන් වූ වගු වල තොරතුරු බැඳීම පහසු කරයි සහ සෑම වගුවක ප්‍රාථමික "
+"යතුරක් තිබීම නිර්දේශ කරයි. ප්‍රථමික යතුරක් නැතිව මෙම වගුවට දත්ත ඇතුල් කිරීම "
+"කළ නොහැක."
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___27.string.text
+msgid "~Create a primary key"
+msgstr "ප්‍රථමික යතුරක් සාදන්න (~C)"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___28.string.text
+msgid "~Automatically add a primary key"
+msgstr "ස්වයංක්‍රීයව ප්‍රථමික යතුරක් එක් කරන්න (~A)"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___29.string.text
+msgid "~Use an existing field as a primary key"
+msgstr "ප්‍රාථමික යතුර ලෙස දැනට පවතින ක්ෂේත්‍රයක් භාවිතා කරන්න (~U)"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___30.string.text
+msgid "Define p~rimary key as a combination of several fields "
+msgstr "ප්‍රාථමික යතුර ක්ෂේත්‍ර කීපයක සංකලනයක් ලෙස අර්ථ දක්වන්න (~r)"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___31.string.text
+msgid "F~ieldname"
+msgstr "ක්ෂේත්‍ර නම (~i)"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___32.string.text
+msgid "~Primary key fields"
+msgstr "ප්‍රථමික යතුරු ක්ෂේත්‍ර (~P)"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___33.string.text
+msgid "Auto ~value"
+msgstr "ස්වයංක්‍රීය අගය (~v)"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___34.string.text
+msgid "What do you want to name your table?"
+msgstr "ඔබට ඔබගේ වගුව නම් කිරීමට අවශ්‍ය කුමන නමකින්ද?"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___35.string.text
+msgid ""
+"Congratulations. You have entered all the information needed to create your "
+"table."
+msgstr "සුභපැතුම්. ඔබ ඔබගේ වගුව සෑදීමට අවශ්‍ය සියළු තොරතුරු ඇතුල් කරන ඇත."
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___36.string.text
+msgctxt "dbwizres.src#RID_DB_TABLE_WIZARD_START___36.string.text"
+msgid "What do you want to do next?"
+msgstr "ඔබට ඊළඟට කිරීමට අවශ්‍ය කුමක්ද?"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___37.string.text
+msgid "Modify the table design"
+msgstr "වගු සැලසුම වෙනස් කරන්න"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___38.string.text
+msgid "Insert data immediately"
+msgstr "ක්ෂණිකව දත්ත ඇතුල් කරන්න"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___39.string.text
+msgid "C~reate a form based on this table"
+msgstr "මෙම වගුව මත පදනම්ව පෝරමයක් සාදන්න (~r)"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___40.string.text
+msgid "The table you have created could not be opened."
+msgstr "ඔබ සෑදූ වගුව විවෘත කිරීමට නොහැකි විය."
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___41.string.text
+msgid ""
+"The table name '%TABLENAME' contains a character ('%SPECIALCHAR') that might "
+"not be supported by the database."
+msgstr ""
+"'%TABLENAME' හි දත්ත ගබඩාව සහය නොදැක්විය හැකි අක්ෂරයක් ('%SPECIALCHAR') "
+"අඩංගු වේ."
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___42.string.text
+msgid ""
+"The field name '%FIELDNAME' contains a special character ('%SPECIALCHAR') "
+"that might not be supported by the database."
+msgstr ""
+"'%FIELDNAME' ක්ෂේත්‍රයේ දත්ත ගබඩාව සහය නොදැක්විය හැකි විශේෂ අක්ෂරයක් ('%"
+"SPECIALCHAR') අඩංගු වේ."
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___43.string.text
+msgctxt "dbwizres.src#RID_DB_TABLE_WIZARD_START___43.string.text"
+msgid "Field"
+msgstr "ක්ෂේත්‍රය"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___44.string.text
+msgid "MyTable"
+msgstr "මගේ වගුව"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___45.string.text
+msgid "Add a Field"
+msgstr "ක්ෂේත්‍රයක් එක් කරන්න"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___46.string.text
+msgid "Remove the selected Field"
+msgstr "තේරූ ක්ෂේත්‍රය ඉවත් කරන්න"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___47.string.text
+msgid ""
+"The field cannot be inserted because this would exceed the maximum number of "
+"%COUNT possible fields in the database table"
+msgstr ""
+"මෙය දත්ත ගබඩා වගුවේ උපරිම ක්ෂේත්‍ර ගණන වන %COUNT ඉක්මවිය හැකි නිසා මෙම "
+"ක්ෂේත්‍රය ඇතුල් කිරීමට නොහැක"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___48.string.text
+msgid ""
+"The name '%TABLENAME' already exists.\n"
+"Please enter another name."
+msgstr ""
+"'%TABLENAME' නම දැනටමත් පවතී.\n"
+"කරුණාකර වෙනත් නමක් තෝරන්න."
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___49.string.text
+msgid "Catalog of the table"
+msgstr "වගුවේ ලයිස්තුව"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___50.string.text
+msgid "Schema of the table"
+msgstr "වගුවේ පටිපාටිය"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___51.string.text
+msgid "The field '%FIELDNAME' already exists."
+msgstr "'%FIELDNAME' ක්ෂේත්‍රය දැනටමත් පවතී."
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___1.string.text
+msgid "Letter Wizard"
+msgstr "ලිපි විශාරදය"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___2.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___2.string.text"
+msgid "Label9"
+msgstr "ලේබලය9"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___3.string.text
+msgid "~Business letter"
+msgstr "ව්‍යාපාරික ලිපිය (~B)"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___4.string.text
+msgid "~Formal personal letter"
+msgstr "විධිමත් පුද්ගලික ලිපිය (~F)"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___5.string.text
+msgid "~Personal letter"
+msgstr "පුද්ගලික ලිපිය (~P)"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___6.string.text
+msgid "~Use letterhead paper with pre-printed elements"
+msgstr "පෙර මුද්‍රණය කළ මූලාවයව සහිත ලිපි ශීර්ෂය භාවිතා කරන්න (~U)"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___7.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___7.string.text"
+msgid "~Logo"
+msgstr "සංකේතය (~L)"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___8.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___8.string.text"
+msgid "Return address"
+msgstr "ආපසු ලිපිනය"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___9.string.text
+msgid "~Include footer"
+msgstr "පාදකය අඩංගු කරන්න (~I)"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___10.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___10.string.text"
+msgid "~Return address in envelope window"
+msgstr "ලියුම් කවර කවුළුවේ ආපසු ලිපිනය (~R)"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___11.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___11.string.text"
+msgid "~Logo"
+msgstr "සංකේතය (~L)"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___12.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___12.string.text"
+msgid "~Return address in envelope window"
+msgstr "ලියුම් කවර කවුළුවේ ආපසු ලිපිනය (~R)"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___13.string.text
+msgid "Letter Signs"
+msgstr "ලිපි අත්සන්"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___14.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___14.string.text"
+msgid "S~ubject line"
+msgstr "මාතෘකා රේඛාව (~u)"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___15.string.text
+msgid "Salu~tation"
+msgstr "ආචාරය (~t)"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___16.string.text
+msgid "Fold ~marks"
+msgstr "නැමි සලකුණු (~m)"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___17.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___17.string.text"
+msgid "~Complimentary close"
+msgstr "අනුපූරක වැසීම (~C)"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___18.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___18.string.text"
+msgid "~Footer"
+msgstr "පාදකය (~F)"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___19.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___19.string.text"
+msgid "~Use user data for return address"
+msgstr "ආපසු ලිපිනය සඳහා භාවිතා කරන්නාගේ දත්ත භාවිතා කරන්න (~U)"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___20.string.text
+msgid "~New sender address:"
+msgstr "නව ප්‍රේරක ලිපිනය: (~N)"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___21.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___21.string.text"
+msgid "Use placeholders for ~recipient's address"
+msgstr "ප්‍රතිග්‍රාහකයාගේ ලිපිනය සඳහා තැන් දරණුවක් භාවිතා කරන්න (~r)"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___22.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___22.string.text"
+msgid "Use address database for ~mail merge"
+msgstr "තැපැල් ඒකාබද්ධ කිරීම සඳහා ලිපින දත්ත ගබඩාව භාවිතා කරන්න (~m)"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___23.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___23.string.text"
+msgid "Include ~only on second and following pages"
+msgstr "දෙවන සහ ඊළඟ පිටු වල පමණක් අඩංගු කරන්න (~o)"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___24.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___24.string.text"
+msgid "~Include page number"
+msgstr "පිටු අංකය අඩංගු කරන්න (~I)"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___25.string.text
+msgid "Letter Template"
+msgstr "ලිපි අකෘතිය"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___26.string.text
+msgid "Create a ~letter from this template"
+msgstr "මෙම අච්චුවෙන් ලිපියක් සාදන්න (~l)"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___27.string.text
+msgid "Make ~manual changes to this letter template"
+msgstr "මෙම ලිපි අච්චුවට අතින් වෙනස්කම් කරන්න (~m)"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___28.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___28.string.text"
+msgid "Page design"
+msgstr "පිටු මෝස්තරය"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___29.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___29.string.text"
+msgid "Page design"
+msgstr "පිටු මෝස්තරය"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___30.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___30.string.text"
+msgid "Page design"
+msgstr "පිටු මෝස්තරය"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___31.string.text
+msgid ""
+"This wizard helps you to create a letter template. You can then use the "
+"template as the basis for writing letters as often as desired."
+msgstr ""
+"මෙම විශාරදය ඔබට ලිපි අච්චුවක් සෑදීමට උදව් කරයි. එවිට එම අච්චුව අවශ්‍ය ඕනෑම "
+"අවස්ථාවක ලිපියක් ලිවීමේ පාදම ලෙස භාවිතා කළ හැක."
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___32.string.text
+msgid "~Height:"
+msgstr "උස: (~H)"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___33.string.text
+msgid "~Width:"
+msgstr "පළල: (~W)"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___34.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___34.string.text"
+msgid "S~pacing to left margin:"
+msgstr "වම් මායිමට ඉඩ: (~p)"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___35.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___35.string.text"
+msgid "Spacing ~to top margin:"
+msgstr "ඉහළ මායිම්ට ඉඩ: (~t)"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___36.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___36.string.text"
+msgid "Height:"
+msgstr "උස:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___37.string.text
+msgid "Width:"
+msgstr "පළල:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___38.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___38.string.text"
+msgid "S~pacing to left margin:"
+msgstr "වම් මායිමට ඉඩ: (~p)"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___39.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___39.string.text"
+msgid "Spacing ~to top margin:"
+msgstr "ඉහළ මායිම්ට ඉඩ: (~t)"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___40.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___40.string.text"
+msgid "Height:"
+msgstr "උස:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___41.string.text
+msgid "Use a typical letter format for this country:"
+msgstr "මෙම රට සඳහා ආකෘතික ලිපි ආකෘතියක් භාවිතා කරන්න:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___42.string.text
+msgid "Sender's address"
+msgstr "ප්‍රේරක ලිපිනය"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___43.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___43.string.text"
+msgid "Name:"
+msgstr "නම:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___44.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___44.string.text"
+msgid "Street:"
+msgstr "වීදිය:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___45.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___45.string.text"
+msgid "ZIP code/State/City:"
+msgstr "ZIP කේතය/ජනපදය/නගරය:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___46.string.text
+msgid "Recipient's address"
+msgstr "ලබන්නාගේ ලිපිනය"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___47.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___47.string.text"
+msgid "Footer"
+msgstr "පාදකය"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___48.string.text
+msgid ""
+"This wizard creates a letter template which enables you to create multiple "
+"letters with the same layout and settings."
+msgstr ""
+"මෙම විශාරදය එකම පිරිසැලසුමෙන් සහ සැකසීම් වලින් බහු ලිපි සෑදිය හැකි ලිපි "
+"අච්චුවක් සාදයි."
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___49.string.text
+msgid ""
+"To create another new letter out of the template just navigate to the "
+"template location and double-click it."
+msgstr ""
+"අච්චුවෙන් නව ලිපියක් සෑදීමට අච්චුවේ පිහිටීමට යාත්‍ර කර එය දෙවරක් ක්ලික් "
+"කරන්න."
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___50.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___50.string.text"
+msgid "Template name:"
+msgstr "ආකෘති නාමය:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___51.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___51.string.text"
+msgid "Location and file name:"
+msgstr "පිහිටීම සහ ගොනු නාමය:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___52.string.text
+msgid "How do you want to proceed?"
+msgstr "ඔබට ඉදිරියට යාමට අවශ්‍ය කෙසේද?"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___53.string.text
+msgid "Please choose the type of letter and page design"
+msgstr "කරුණාකර ලිපි වර්ගය සහ පිටු මෝස්තරය තෝරන්න"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___54.string.text
+msgid "Select the items to be printed"
+msgstr "මුද්‍රණය කළ යුතු අයිතම තෝරන්න"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___55.string.text
+msgid "Specify items already on your letterhead paper"
+msgstr "දැනටමත් ඔබේ ලිපි ශීර්ෂ පත්‍රය තුළ ඇති අයිතම විශේෂණය කරන්න"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___56.string.text
+msgid "Specify the sender and recipient information"
+msgstr "ප්‍රේරක සහ ප්‍රතිග්‍රාහක තොරතුරු විශේෂණය කරන්න"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___57.string.text
+msgid "Fill in the information you would like in the footer"
+msgstr "ඔබට පාදකයේ තිබීමට අවශ්‍ය තොරතුරු පුරවන්න"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___58.string.text
+msgid "Please specify last settings"
+msgstr "කරුණාකර අවසාන සැකසීම් විශේෂණය කරන්න"
+
+#: dbwizres.src#RID_LETTERWIZARDSALUTATION_START___1.string.text
+msgid "To Whom it May Concern"
+msgstr "අදාළ වන ඕනෑම කෙනෙකුට"
+
+#: dbwizres.src#RID_LETTERWIZARDSALUTATION_START___2.string.text
+msgid "Dear Sir or Madam"
+msgstr "දයාබර මහතාණෙනි/මහත්මියනි"
+
+#: dbwizres.src#RID_LETTERWIZARDSALUTATION_START___3.string.text
+msgid "Hello"
+msgstr "ආයුබෝවන්"
+
+#: dbwizres.src#RID_LETTERWIZARDGREETING_START___1.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDGREETING_START___1.string.text"
+msgid "Sincerely"
+msgstr "අවංක"
+
+#: dbwizres.src#RID_LETTERWIZARDGREETING_START___2.string.text
+msgid "Best regards"
+msgstr "විශිෂ්ට සුභාශිංසන"
+
+#: dbwizres.src#RID_LETTERWIZARDGREETING_START___3.string.text
+msgid "Cheers"
+msgstr "ජයවේවා"
+
+#: dbwizres.src#RID_LETTERWIZARDROADMAP_START___1.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDROADMAP_START___1.string.text"
+msgid "Page design"
+msgstr "පිටු මෝස්තරය"
+
+#: dbwizres.src#RID_LETTERWIZARDROADMAP_START___2.string.text
+msgid "Letterhead layout"
+msgstr "ලිපි ශීර්ෂ පිරිසැලසුම"
+
+#: dbwizres.src#RID_LETTERWIZARDROADMAP_START___3.string.text
+msgid "Printed items"
+msgstr "මුද්‍රණය කළ අයිතම"
+
+#: dbwizres.src#RID_LETTERWIZARDROADMAP_START___4.string.text
+msgid "Recipient and sender"
+msgstr "ප්‍රතිග්‍රාහකයා සහ ප්‍රේරකයා"
+
+#: dbwizres.src#RID_LETTERWIZARDROADMAP_START___5.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDROADMAP_START___5.string.text"
+msgid "Footer"
+msgstr "පාදකය"
+
+#: dbwizres.src#RID_LETTERWIZARDROADMAP_START___6.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDROADMAP_START___6.string.text"
+msgid "Name and location"
+msgstr "නම සහ පිහිටීම"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___1.string.text
+msgid "Fax Wizard"
+msgstr "ෆැක්ස් විශාරදය"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___2.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___2.string.text"
+msgid "Label9"
+msgstr "ලේබලය9"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___3.string.text
+msgid "~Business Fax"
+msgstr "ව්‍යාපාරික ෆැක්ස් (~B)"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___4.string.text
+msgid "~Personal Fax"
+msgstr "පුද්ගලික ෆැක්ස් (~P)"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___5.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___5.string.text"
+msgid "~Logo"
+msgstr "සංකේතය (~L)"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___6.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___6.string.text"
+msgid "S~ubject line"
+msgstr "මාතෘකා රේඛාව (~u)"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___7.string.text
+msgid "S~alutation"
+msgstr "ආචාරය (~a)"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___8.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___8.string.text"
+msgid "~Complimentary close"
+msgstr "අනුපූරක වැසීම (~C)"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___9.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___9.string.text"
+msgid "~Footer"
+msgstr "පාදකය (~F)"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___10.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___10.string.text"
+msgid "~Use user data for return address"
+msgstr "ආපසු ලිපිනය සඳහා භාවිතා කරන්නාගේ දත්ත භාවිතා කරන්න (~U)"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___11.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___11.string.text"
+msgid "~New return address"
+msgstr "නව ආපසු ලිපිනය (~N)"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___12.string.text
+msgid "My Fax Template"
+msgstr "මගේ ෆැක්ස් පිටපත් අච්චුව"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___13.string.text
+msgid "Create a ~fax from this template"
+msgstr "මෙම අච්චුවෙන් ෆැක්ස් පිටපතක් සාදන්න (~f)"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___14.string.text
+msgid "Make ~manual changes to this fax template"
+msgstr "මෙම ෆැක්ස් පිටපත් අච්චුවට අතින් වෙනස්කම් කරන්න (~m)"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___15.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___15.string.text"
+msgid "Page design"
+msgstr "පිටු මෝස්තරය"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___16.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___16.string.text"
+msgid "Page design"
+msgstr "පිටු මෝස්තරය"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___17.string.text
+msgid ""
+"This wizard helps you to create a fax template. The template can then be "
+"used to create a fax whenever needed."
+msgstr ""
+"මෙම විශාරදය ඔබට ෆැක්ස් පිටපත් ආකෘතියක් සෑදීමට උදව් කරයි. එවිට එම ආකෘතිය "
+"අවශ්‍ය ඕනෑම අවස්ථාවක ෆැක්ස් පිටපතක් සැදීම සඳහා භාවිතා කළ හැක."
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___18.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___18.string.text"
+msgid "Return address"
+msgstr "ආපසු ලිපිනය"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___19.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___19.string.text"
+msgid "Name:"
+msgstr "නම:"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___20.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___20.string.text"
+msgid "Street:"
+msgstr "වීදිය:"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___21.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___21.string.text"
+msgid "ZIP code/State/City:"
+msgstr "ZIP කේතය/ජනපදය/නගරය:"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___22.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___22.string.text"
+msgid "Footer"
+msgstr "පාදකය"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___23.string.text
+msgid ""
+"This wizard creates a fax template which enables you to create multiple "
+"faxes with the same layout and settings."
+msgstr ""
+"මෙම විශාරදය එකම පිරිසැලසුමෙන් සහ සැකසීම් වලින් බහු ෆැක්ස් පිටපත් සෑදිය හැකි "
+"ෆැක්ස් පිටපත් ආකෘතියක් සාදයි."
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___24.string.text
+msgid ""
+"To create another new fax out of the template, go to the location where you "
+"saved the template and double-click the file."
+msgstr ""
+"අකෘතියෙන් ෆැක්ස් පිටපතක් සෑදීමට ඔබ ආකෘතිය සුරැකි ස්ථානයට ගොස් ගොනුව දෙවරක් "
+"ක්ලික් කරන්න."
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___25.string.text
+msgid "Template Name:"
+msgstr "ආකෘති නාමය:"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___26.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___26.string.text"
+msgid "Location and file name:"
+msgstr "පිහිටීම සහ ගොනු නාමය:"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___27.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___27.string.text"
+msgid "What do you want to do next?"
+msgstr "ඔබට ඊළඟට කිරීමට අවශ්‍ය කුමක්ද?"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___28.string.text
+msgid "Choose the type of fax and a page design"
+msgstr "ෆැක්ස් වර්ගය සහ පිටු සැලසුමක් තෝරන්න"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___29.string.text
+msgid "Select items to include in the fax template"
+msgstr "ෆැක්ස් අච්චුවේ අඩංගු කිරීමට අයිතම තෝරන්න"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___30.string.text
+msgid "Specify sender and recipient information"
+msgstr "ප්‍රේරක සහ ප්‍රතිග්‍රාහක තොරතුරු විශේෂණය කරන්න"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___31.string.text
+msgid "Enter text for the footer"
+msgstr "පාදකය සඳහා පෙළ ඇතුල් කරන්න"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___32.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___32.string.text"
+msgid "Choose a name and save the template"
+msgstr "නමක් තෝර අච්චුව සුරකින්න"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___33.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___33.string.text"
+msgid "Include ~only on second and following pages"
+msgstr "දෙවන සහ ඊළඟ පිටු වල පමණක් අඩංගු කරන්න (~o)"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___34.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___34.string.text"
+msgid "~Include page number"
+msgstr "පිටු අංකය අඩංගු කරන්න (~I)"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___35.string.text
+msgid "~Date"
+msgstr "දිනය (~D)"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___36.string.text
+msgid "~Type of message"
+msgstr "පණිවිඩයේ වර්ගය (~T)"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___37.string.text
+msgid "Fax Number:"
+msgstr "ෆැක්ස් අංකය:"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___38.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___38.string.text"
+msgid "Use placeholders for ~recipient's address"
+msgstr "ප්‍රතිග්‍රාහකයාගේ ලිපිනය සඳහා තැන් දරණුවක් භාවිතා කරන්න (~r)"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___39.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___39.string.text"
+msgid "Use address database for ~mail merge"
+msgstr "තැපැල් ඒකාබද්ධ කිරීම සඳහා ලිපින දත්ත ගබඩාව භාවිතා කරන්න (~m)"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___40.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___40.string.text"
+msgid "~New return address"
+msgstr "නව ආපසු ලිපිනය (~N)"
+
+#: dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START___1.string.text
+msgid "Important Information!"
+msgstr "වැදගත් තොරතුර!"
+
+#: dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START___2.string.text
+msgid "For your information"
+msgstr "ඔබගේ තොරතුරු සඳහා"
+
+#: dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START___3.string.text
+msgid "News!"
+msgstr "ප්‍රවෘත්ති!"
+
+#: dbwizres.src#RID_FAXWIZARDSALUTATION_START___1.string.text
+msgid "To whom it may concern,"
+msgstr "අදාළ වන ඕනෑම කෙනෙකුට,"
+
+#: dbwizres.src#RID_FAXWIZARDSALUTATION_START___2.string.text
+msgid "Dear Sir or Madam,"
+msgstr "දයාබර මහතාණෙනි/මහත්මියනි,"
+
+#: dbwizres.src#RID_FAXWIZARDSALUTATION_START___3.string.text
+msgid "Hello,"
+msgstr "ආයුබෝවන්,"
+
+#: dbwizres.src#RID_FAXWIZARDSALUTATION_START___4.string.text
+msgid "Hi,"
+msgstr "කොහොමද?,"
+
+#: dbwizres.src#RID_FAXWIZARDGREETING_START___1.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDGREETING_START___1.string.text"
+msgid "Sincerely"
+msgstr "අවංක"
+
+#: dbwizres.src#RID_FAXWIZARDGREETING_START___2.string.text
+msgid "Yours faithfully"
+msgstr "ඔබගේම විශ්වාසී"
+
+#: dbwizres.src#RID_FAXWIZARDGREETING_START___3.string.text
+msgid "Regards"
+msgstr "ශුභාසිංසන"
+
+#: dbwizres.src#RID_FAXWIZARDGREETING_START___4.string.text
+msgid "Love"
+msgstr "ආදරය"
+
+#: dbwizres.src#RID_FAXWIZARDROADMAP_START___1.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDROADMAP_START___1.string.text"
+msgid "Page design"
+msgstr "පිටු මෝස්තරය"
+
+#: dbwizres.src#RID_FAXWIZARDROADMAP_START___2.string.text
+msgid "Items to include"
+msgstr "අඩංගු කිරීමට අයිතම"
+
+#: dbwizres.src#RID_FAXWIZARDROADMAP_START___3.string.text
+msgid "Sender and Recipient"
+msgstr "ප්‍රේරක සහ ප්‍රතිග්‍රාහක"
+
+#: dbwizres.src#RID_FAXWIZARDROADMAP_START___4.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDROADMAP_START___4.string.text"
+msgid "Footer"
+msgstr "පාදකය"
+
+#: dbwizres.src#RID_FAXWIZARDROADMAP_START___5.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDROADMAP_START___5.string.text"
+msgid "Name and location"
+msgstr "නම සහ පිහිටීම"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__1.string.text
+msgid "Web Wizard"
+msgstr "වියුණු විශාරදය"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__2.string.text
+msgid ""
+"This Web Wizard is to aid you in publishing documents on the Internet.\n"
+"\n"
+"It will convert the documents so that they can be viewed by a web browser. "
+"In addition, it will generate a Table of Contents page with links for easy "
+"access to the documents. The Web Wizard will also allow you to customize the "
+"design and layout of your web site.\n"
+"\n"
+"You will be able to keep the documents you have published on the web up-to-"
+"date and add or remove documents at any time."
+msgstr ""
+"මෙම වෙබ් විශාරදය අන්තර්ජාලයේ ලිපි ප්‍රකාශයට පත් කිරීමේදී ඔබට සහය වීම සඳහා "
+"වේ.\n"
+"\n"
+"එය ලිපි වෙබ් බ්‍රවුසරයෙන් බලා ගත හැකි වන සේ පරිවර්තනය කරනු ඇත. ඊට අමතරව, එය "
+"ලිපි වලට පහසුවෙන් ප්‍රවේශ වීම සඳහා ඈඳුම් සමඟ පටුනක් ජනනය කරනු ඇත. වෙබ් "
+"විශාරදය ඔබට ඔබගේ වෙබ් අඩවියේ සහ පිරිසැලසුම රිසිකරණය කිරීමටද ඉඩ දෙනු ඇත.‍\n"
+"\n"
+"ඔබ වෙබ්හි ප්‍රකාශයට පත් කළ ලිපි ඉතා අලුත් ලෙස පවත්වා ගැනීමට සහ ලිපි අවශය "
+"ඕනෑම අවස්ථාවක එක් කිරීමට සහ ඉවත් කිරීමට ඔබට හැකි වනු ඇත."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__4.string.text
+msgid "~Delete"
+msgstr "මකන්න (~D)"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__5.string.text
+msgid "Introduction"
+msgstr "හැඳින්වීම"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__6.string.text
+msgid "Select the documents you want to publish"
+msgstr "ඔබට ප්‍රකාශයට පත් කිරීමට අවශ්‍ය ලිපි තෝරන්න"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__8.string.text
+msgid "Document information "
+msgstr "ලේඛන තොරතුරු"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__9.string.text
+msgid "~Title:"
+msgstr "තේමාව: (~T)"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__10.string.text
+msgid "~Summary: "
+msgstr "සාරාංශය: (~S)"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__11.string.text
+msgid "Au~thor:"
+msgstr "කර්තෘ: (~t)"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__12.string.text
+msgid "~Export to file format:"
+msgstr "ගොනු ආකෘතියට නිර්යාත කරන්න: (~E)"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__13.string.text
+msgid "Enter general information for your web site"
+msgstr "ඔබගේ වියුණු කාලය සඳහා සාමාන්‍ය තොරතුරු ඇතුල් කරන්න"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__14.string.text
+msgctxt "dbwizres.src#RID_WEBWIZARDDIALOG_START__14.string.text"
+msgid "Title:"
+msgstr "තේමාව:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__16.string.text
+msgid "Description:"
+msgstr "විස්තරය:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__18.string.text
+msgid "Created:"
+msgstr "සෑදූ:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__20.string.text
+msgid "E-mail:"
+msgstr "විද්‍යුත් තැපෑල:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__21.string.text
+msgid "Copyright notice:"
+msgstr "ප්‍රකාශන හිමිකම් සටහන:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__22.string.text
+msgid "Modified:"
+msgstr "විකරණය කළ:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__24.string.text
+msgid "~Preview"
+msgstr "පෙර දැක්ම (~P)"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__25.string.text
+msgid "Where do you want to publish your web site?"
+msgstr "ඔබට ඔබගේ වියුණු ජාලය ප්‍රකාශයට පත් කිරීමට අවශ්‍ය කොහේද?"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__26.string.text
+msgid "Publish the new web site:"
+msgstr "නව වියුණු ජාලය ප්‍රකාශයට පත් කරමින්..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__27.string.text
+msgid "To a ~local folder"
+msgstr "පෙදෙසි ෆෝල්ඩරයකට (~l)"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__28.string.text
+msgctxt "dbwizres.src#RID_WEBWIZARDDIALOG_START__28.string.text"
+msgid "..."
+msgstr "..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__29.string.text
+msgid "To a ~web server via FTP"
+msgstr "FTP හරහා වියුණු සේවයකට (~w)"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__31.string.text
+msgid "~Configure..."
+msgstr "වින්‍යාසගත කරන්න... (~C)"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__32.string.text
+msgid "To a ZIP ~archive"
+msgstr "ZIP ලේඛනයකට (~a)"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__33.string.text
+msgctxt "dbwizres.src#RID_WEBWIZARDDIALOG_START__33.string.text"
+msgid "..."
+msgstr "..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__34.string.text
+msgid "~Save settings (recommended)"
+msgstr "සැකසීම් සුරකින්න (නිර්දේශිත) (~S)"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__35.string.text
+msgid "Save ~as:"
+msgstr "සුරකින අයුර (~a):"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__36.string.text
+msgid "~Choose settings for the Web Wizard"
+msgstr "වියුණු විශාරදය සඳහා සැකසීම් තෝරන්න (~C)"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__37.string.text
+msgid "Web site content "
+msgstr "වියුණු ජාලයේ අන්තර්ගතය"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__38.string.text
+msgid "~Add..."
+msgstr "එක් කරන්න... (~A)"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__39.string.text
+msgid "Remo~ve"
+msgstr "ඉවත් කරන්න (~v)"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__40.string.text
+msgid "Choose a layout for the table of contents of your web site"
+msgstr "ඔබගේ වියුණු ජාලයේ පටුන සඳහා පිරිසැලසුමක් තෝරන්න"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__41.string.text
+msgid "Select a style for the table of contents page"
+msgstr "ඔබගේ පටුන අඩංගු පිටුව සඳහා මෝස්තරයක් තෝරන්න"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__42.string.text
+msgid "~Style:"
+msgstr "රටාව (~S):"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__48.string.text
+msgid "~Layouts: "
+msgstr "පිරිසැලසුම් (~L):"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__50.string.text
+msgid "~Description"
+msgstr "විස්තරය (~D)"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__51.string.text
+msgid "~Author"
+msgstr "කර්තෘ (~A)"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__52.string.text
+msgid "Cr~eation date"
+msgstr "සෑදීමේ දිනය (~e)"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__53.string.text
+msgid "~Last change date"
+msgstr "අවසාන වෙනස් කළ දිනය (~L)"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__54.string.text
+msgid "~File name"
+msgstr "ගොනු නාමය (~F)"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__55.string.text
+msgid "File forma~t"
+msgstr "ගොනු ආකෘතිය (~t)"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__56.string.text
+msgid "File format ~icon"
+msgstr "ගොනු ආකෘති අයිකනය (~i)"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__57.string.text
+msgid "Number ~of pages"
+msgstr "පිටු ගණන (~o)"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__58.string.text
+msgid "~Size in KB"
+msgstr "ප්‍රමාණය KB වලින් (~S)"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__59.string.text
+msgid "Click 'Preview' to see a preview in your browser:"
+msgstr "ඔබගේ ගවේශකයේ පෙර දැක්මක් බලාගැනීමට 'පෙර දැක්ම' ක්ලික් කරන්න:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__60.string.text
+msgid "Customize the selected layout"
+msgstr "තේරූ පිරිසැලසුම රිසිකරණය කරන්න"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__61.string.text
+msgid ""
+"Include the following information for each document in the table of "
+"contents:"
+msgstr "පටුනේ සෑම ලිපියකටම පහත තොරතුරු අඩංගු කරන්න:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__62.string.text
+msgid "Optimize the layout for screen resolution:"
+msgstr "තිර විභේදනය සඳහා පිරිසැලසුම වඩා යහපත් ලෙස සකසන්න:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__64.string.text
+msgid "~640x480"
+msgstr "~640x480"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__65.string.text
+msgid "~800x600"
+msgstr "~800x600"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__66.string.text
+msgid "~1024x768"
+msgstr "~1024x768"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__70.string.text
+msgid "Generating Your Web Site"
+msgstr "ඔබගේ වියුණු ජාලය ජනනය කරමින්"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__71.string.text
+msgid "%START - %END/%TOTAL"
+msgstr "%START - %END/%TOTAL"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__72.string.text
+msgid "myWebsite"
+msgstr "myWebsite"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__73.string.text
+msgid "FTP target '%FILENAME' is a file."
+msgstr "'%FILENAME' FTP ඉලක්කය ගොනුවකි."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__74.string.text
+msgid "The local target '%FILENAME' is a file."
+msgstr "'%FILENAME' පෙදෙසි ඉලක්කය ගොනුවකි."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__75.string.text
+msgid ""
+"The ZIP target '%FILENAME' already exists. Do you want to overwrite the "
+"existing target? "
+msgstr ""
+"'%FILENAME' ZIP ඉලක්කය දැනටමත් පවතී. ඔබට දැනට පවතින ඉලක්කය උඩින් ලිවීමට "
+"අවශ්‍යද?"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__76.string.text
+msgid ""
+"The FTP target directory '%FILENAME' is not empty. Some files might be "
+"overwritten. Do you want to continue?"
+msgstr ""
+"'%FILENAME' FTP ඉලක්ක නාමාවලිය හිස් නැත. සමහර ගොනු උඩින් ලියවෙනු ඇත. ඔබට "
+"දිගටම කරගෙන යාමට අවශ්‍යද?"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__77.string.text
+msgid ""
+"The local target directory '%FILENAME' is not empty. Some files might be "
+"overwritten. Do you want to continue?"
+msgstr ""
+"'%FILENAME' පෙදෙසි ඉලක්ක නාමාවලිය හිස් නැත. සමහර ගොනු උඩින් ලිවිය හැක. ඔබට "
+"දිගටම කරගෙන යාමට අවශ්‍යද?"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__78.string.text
+msgid ""
+"Settings already exist under the given name. Do you want to overwrite the "
+"existing settings? "
+msgstr ""
+"දි ඇති නම යටතේ සැකසීම් දැනටමත් පවතී. ඔබට දැනට පවතින සැකසීම් උඩින් ලිවීමට "
+"අවශ්‍යද?"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__79.string.text
+msgid "Exporting documents..."
+msgstr "ලිපි නිර්යාත කරමින්..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__80.string.text
+msgid "Preparing export..."
+msgstr "නිර්යාත කිරීමට සූදානම් කරමින්..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__81.string.text
+msgid "Copying layout files..."
+msgstr "පිරිසැලසුම් ගොනු පිටපත් කරමින්..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__82.string.text
+msgid "Preparing table of contents generation..."
+msgstr "පටුන ජනනය කිරීමට සූදානම් කරමින්..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__83.string.text
+msgid "Generating table of contents..."
+msgstr "පටුන ජනනය කරමින්..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__84.string.text
+msgid "Initializing..."
+msgstr "ආරම්භ කරමින්..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__86.string.text
+msgid "Preparing to publish..."
+msgstr "ප්‍රකාශයට පත් කිරීමට සූදානම් කරමින්..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__87.string.text
+msgid "Publishing to local directory..."
+msgstr "පෙදෙසි නාමාවලියට ප්‍රකාශයට පත් කරමින්..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__88.string.text
+msgid "Publishing to FTP destination..."
+msgstr "FTP ගමනාන්තයට ප්‍රකාශයට පත් කරමින්..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__89.string.text
+msgid "Publishing to a ZIP archive..."
+msgstr "ZIP ලේඛනයකට ප්‍රකාශයට පත් කරමින්..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START___90.string.text
+msgid "Finishing..."
+msgstr "නිම කරමින්..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START___94.string.text
+msgid "Graphic files"
+msgstr "චිත්‍රක ගොනු"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START___95.string.text
+msgid "All files"
+msgstr "සියළු ගොනු"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START___96.string.text
+msgid "~ZIP archive files"
+msgstr "~ZIP ලේඛනාගාර ගොනු"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START___98.string.text
+msgid "Background images"
+msgstr "පසුබිම් රූප"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START___99.string.text
+msgid "Choose a background image: "
+msgstr "පසුබිම් රූපයක් තෝරන්න:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START___100.string.text
+msgid "Icon sets"
+msgstr "අයිකන කුලක"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START___101.string.text
+msgid "Choose an icon set:"
+msgstr "අයිකන කුලකයක් තෝරන්න:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__102.string.text
+msgid "Other..."
+msgstr "වෙනත්..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__103.string.text
+msgid "None"
+msgstr "කිසිවක් නැත"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__104.string.text
+msgid "Your web site was created successfully into: %FILENAME"
+msgstr "ඔබගේ වියුණු ජාලය සාර්ථක ලෙස %FILENAME ට සාදන ලදි"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__105.string.text
+msgid "One or more errors occurred when generating the web site."
+msgstr "වියුණු ජාලය ජනනය කිරීමේදී දෝෂ එකක් හෝ කීපයක් මතු විය."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__106.string.text
+msgid "An error occurred while generating the table of contents page(s). "
+msgstr "පටුනේ පිටුව (පිටු) ජනනය කිරීමේදී දෝෂයක් මතු විය."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__107.string.text
+msgid "An error occurred while copying the layout files. "
+msgstr "පිරිසැලසුම් ගොනු පිටපත් කිරීමේදී දෝෂයක් මතු විය."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__108.string.text
+msgid ""
+"An error occurred while gathering document information for '%FILENAME'. "
+msgstr "'%FILENAME' සඳහා ලිපි තොරතුරු එක් රැස් කිරීමේදී දෝෂයක් මතු විය."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__109.string.text
+msgid "An error occurred while exporting the document '%FILENAME'."
+msgstr "'%FILENAME' ලිපිය නිර්යාත කිරීමේදී දෝෂයක් මතු විය."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__110.string.text
+msgid "An error occurred while creating a directory for exporting '%FILENAME'."
+msgstr "'%FILENAME' නිර්යාතය සඳහා නාමාවලියක් සෑදීමේදී දෝෂයක් මති විය."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__111.string.text
+msgid "A security error occurred while exporting the document '%FILENAME'."
+msgstr "'%FILENAME' ලිපින නිර්යාත කිරීමේදී ආරක්ෂක දෝෂයක් මතු විය."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__112.string.text
+msgid ""
+"An input/output error occurred while exporting the document '%FILENAME'."
+msgstr "'%FILENAME' ලිපිය නිර්යාත කිරීමේදී ප්‍රදාන/ප්‍රතිදාන දෝෂයක් මතු විය."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__113.string.text
+msgid "An error occurred while copying media files to the temporary directory."
+msgstr "මාධ්‍ය ගොනු තාවකාලික නාමාවලියට පිටපත් කිරීමේදී දෝෂයක් මතු විය."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__114.string.text
+msgid "The web site could not be copied to the following destination: %URL"
+msgstr "වියුණු ජාලය පහත ගමනාන්තයට පිටපත් කිරීමට නොහැකි විය: %URL"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__115.string.text
+msgid "An unexpected error occurred: %ERROR"
+msgstr "බලාපොරොත්තු නොවූ දෝෂයක් මතු විය: %ERROR"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__116.string.text
+msgid "An unexpected error occurred while validating the file: '%FILENAME'"
+msgstr "'%FILENAME' තහවුරු කිරීමේදී බලාපොරොත්තු නොවූ දෝෂයක් මතු විය."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__117.string.text
+msgid "%FILENAME' is a folder."
+msgstr "%FILENAME' ෆෝල්ඩරයකි."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__118.string.text
+msgid "Loading Web Wizard Settings..."
+msgstr "වියුණු විශාරද සැකසීම් ප්‍රවේශ කරමින්..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__119.string.text
+msgid "An unexpected error occurred."
+msgstr "බලාපොරොත්තු නොවූ දෝෂයක් මතු විය."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__120.string.text
+msgid "Validating documents..."
+msgstr "ලිපි අගය කරමින්..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__121.string.text
+msgid "My Archive"
+msgstr "මගේ ලේඛනය"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__122.string.text
+msgid "Introduction "
+msgstr "හැඳින්වීම"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__123.string.text
+msgid "Documents "
+msgstr "ලේඛන"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__124.string.text
+msgid "Main layout"
+msgstr "ප්‍රධාන ආකෘතිය"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__125.string.text
+msgid "Layout details"
+msgstr "ආකෘතිය තොරතුරු"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__126.string.text
+msgid "Style"
+msgstr "රටාව"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__127.string.text
+msgid "Web site information"
+msgstr "වෙබ් අඩවියේ තොරතුරු"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__128.string.text
+msgid "Preview"
+msgstr "පෙර දැක්ම"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__130.string.text
+msgid ""
+"The selected settings will be deleted.\n"
+"\n"
+"Do you really want to delete these settings? "
+msgstr ""
+"තේරූ සැකසීම් මැකෙනු ඇත.\n"
+"\n"
+"ඔබට ඇත්තටම මෙම සැකසීම් මැකීමට අවශ්‍යද? "
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__131.string.text
+msgid "%NUMBER pages"
+msgstr "පිටු %NUMBER"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__132.string.text
+msgid "%NUMBER slides"
+msgstr "කදා %NUMBER"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__133.string.text
+msgid "Created: %DATE"
+msgstr "සෑදූ: %DATE"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__134.string.text
+msgid "Last modified: %DATE"
+msgstr "අවසාන වතාවට වෙනස් කළ: %DATE"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__135.string.text
+msgid "Web Wizard Settings"
+msgstr "වෙබ් විශාරදයේ සැකසීම්"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__136.string.text
+msgid "Background image:"
+msgstr "පසුබිම් රූපය:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__137.string.text
+msgid "Icon set:"
+msgstr "අයිකන කුලකය:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__138.string.text
+msgid "The icon set is used for presentations in HTML format."
+msgstr "අයිකන කුලකය HTML ආකෘතියෙන් ඉදිරිපත් කිරීම් සඳහා භාවිතා කරයි."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__139.string.text
+msgid "HTML Metadata"
+msgstr "HTML මෙටා දත්ත"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__140.string.text
+msgctxt "dbwizres.src#RID_WEBWIZARDDIALOG_START__140.string.text"
+msgid "Choose..."
+msgstr "තෝරන්න..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__141.string.text
+msgctxt "dbwizres.src#RID_WEBWIZARDDIALOG_START__141.string.text"
+msgid "Choose..."
+msgstr "තෝරන්න..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__142.string.text
+msgid "<default>"
+msgstr "<පෙරනිමි>"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__143.string.text
+msgid "Publishing via FTP Proxy is not supported."
+msgstr "FTP ප්‍රොක්සි හරහා ප්‍රකාශයට පත් කිරීම සහය දක්වන්නේ නැත."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__144.string.text
+msgid "<no background image>"
+msgstr "<පසුබිම් පින්තූරයක් නැත>"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__145.string.text
+msgid "<no icon set>"
+msgstr "<අයිකන කුලකයක් නැත>"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__146.string.text
+msgid "The FTP directory '%FILENAME' could not be created."
+msgstr "'%FILENAME' FTP නාමාවලිය සෑදීමට නොහැකි විය."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__147.string.text
+msgid ""
+"The FTP directory '%FILENAME' does not exist. \n"
+"Create the directory now?"
+msgstr "'%FILENAME' FTP නාමාවලිය නොපවතීග \\‍‍‍‍nදැන් නාමාවලිය සාදන්නද?"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__148.string.text
+msgid ""
+"The Zip file '%FILENAME' cannot be created: a directory of the same name "
+"already exists."
+msgstr "'%FILENAME' Zip ගොනුව සෑදීමට නොහැක: එම නමින් නාමාවලියක් දැනටමත් පවතී."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__149.string.text
+msgid ""
+"The local directory '%FILENAME' cannot be created. \n"
+"Please check your write-access."
+msgstr ""
+"'%FILENAME' ප්‍රාදේශීය නාමාවලිය සෑදීමට නොහැක. \n"
+"කරුණාකර ඔබගේ ලිවීමේ-හැකියාව පරීක්ෂා කරන්න."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__150.string.text
+msgid ""
+"The local directory '%FILENAME' does not exist. \n"
+"Create the directory now?"
+msgstr ""
+"'%FILENAME' පෙදෙසි නාමාවලිය නොපවතී. ‍‍\n"
+"දැන් නාමාවලිය සාදන්නද ?"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__151.string.text
+msgid "Size: %NUMBERKB"
+msgstr "ප්‍රමාණය: %NUMBERKB"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__152.string.text
+msgid "File not found. Would you like to specify a new file location?"
+msgstr "ගොනුව හමු නොවිණි. ඔබට නම ගොනු පිහිටීමක් විශේෂණය කිරීමට අවශ්‍යද?"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__0.string.text
+msgid "FTP Connection"
+msgstr "FTP සම්බන්ධතාවය"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__1.string.text
+msgid "~User name:"
+msgstr "භාවිතා කරන්නාගේ නම (~U):"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__2.string.text
+msgid "~Password:"
+msgstr "රහස්පදය (~P):"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__3.string.text
+msgid "Connect"
+msgstr "සම්බන්ධ කරන්න"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__4.string.text
+msgid "1. Enter FTP connection information."
+msgstr "1. FTP සම්බන්ධතා තොරතුරු ඇතුල් කරන්න."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__5.string.text
+msgid "~Server name or IP address:"
+msgstr "සේවාදායකයාගේ නම හෝ IP ලිපිනය (~S)"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__6.string.text
+msgid "2. Connect to the server."
+msgstr "2. සේවකයට සම්බන්ධ වෙන්න."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__7.string.text
+msgid "3. ~Choose a remote directory (optional)."
+msgstr "3. දුරස්ථ නාමාවලියක් තෝරන්න (විකල්ප). (~C)"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__8.string.text
+msgctxt "dbwizres.src#RID_WEBWIZARDDIALOG_FTP__8.string.text"
+msgid "..."
+msgstr "..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__9.string.text
+msgid "Connection status is unknown"
+msgstr "සම්බන්ධතාවයේ තත්වය නොදනී"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__10.string.text
+msgid "Connection was established successfully"
+msgstr "සම්බන්ධතාවය සාර්ථක ලෙස ගොඩනගන ලදි"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__11.string.text
+msgid "Username or password is wrong"
+msgstr "භාවිතා කරන්නාගේ නම හෝ රහස්පදය වැරදිය"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__12.string.text
+msgid "Could not resolve server name"
+msgstr "සේවක නම නිශ්චය කිරීමට නොහැකි විය"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__13.string.text
+msgid "You do not have sufficient user rights"
+msgstr "ඔබට ප්‍රමාණවත් භාවිතා කරන්නාගේ අයිතීන් නොමැත"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__14.string.text
+msgid "Cannot connect to server"
+msgstr "සේවකයාට සම්බන්ධ විය නොහැක"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__15.string.text
+msgid "Unexpected error"
+msgstr "බලාපොරොත්තු නොවූ දෝෂයක්"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__16.string.text
+msgid "FTP publishing directory"
+msgstr "FTP ප්‍රකාශයට පත් කිරීමේ බහලුම"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__17.string.text
+msgid "This is not an FTP folder"
+msgstr "FTP බහලුමක් නැත."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__18.string.text
+msgid "Connecting..."
+msgstr "සම්බන්ධ වෙමින්..."
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__1.string.text
+msgid "Agenda Wizard"
+msgstr "න්‍යාය පත්‍ර විශාරදය"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__2.string.text
+msgid "Make ~manual changes to this agenda template"
+msgstr "මෙම න්‍යය පත්‍ර අච්චුවට අතින් වෙනස්කම් කරන්න (~m)"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__3.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__3.string.text"
+msgid "Template name:"
+msgstr "අච්චුවේ නම:"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START___4.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START___4.string.text"
+msgid "Location and file name:"
+msgstr "පිහිටීම සහ ගොනු නාමය:"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__5.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__5.string.text"
+msgid "What do you want to do next?"
+msgstr "ඔබට ඊළඟට කිරීමට අවශ්‍ය කුමක්ද?"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__6.string.text
+msgid "Please choose the page design for the agenda"
+msgstr "කරුණාකර න්‍යාය පත්‍රය සඳහා පිටු මෝස්තරය තෝරන්න"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__7.string.text
+msgid "Please select the headings you wish to include in your agenda template"
+msgstr "කරුණාකර ඔබගේ න්‍යාය පත්‍ර අච්චුවේ අඩංගු කිරීමට අවශ්‍ය ශීර්ෂ තෝරන්න"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__8.string.text
+msgid "Please enter general information for the event"
+msgstr "කරුණාකර වැඩසටහන සඳහා සාමාන්‍ය තොරතුරු ඇතුල් කරන්න"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__9.string.text
+msgid "Please specify items for the agenda"
+msgstr "කරුණාකර න්‍යාය පත්‍රය සඳහා අයිතම විශේෂණය කරන්න"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__10.string.text
+msgid "Please select the names you wish to include in your agenda template"
+msgstr "කරුණාකර ඔබගේ න්‍යාය පත්‍ර අච්චුවේ අඩංගු කිරීමට අවශ්‍ය නම් තෝරන්න"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__11.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__11.string.text"
+msgid "Choose a name and save the template"
+msgstr "නමක් තෝර අච්චුව සුරකින්න"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__12.string.text
+msgid "Include form for recording minutes"
+msgstr "වාර්තා පටිගත කිරීම සඳහා පෝරමය අඩංගු කරන්න"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__13.string.text
+msgid ""
+"This wizard helps you to create an agenda template. The template can then be "
+"used to create an agenda whenever needed."
+msgstr ""
+"මෙම විශාරදය ඔබට න්‍යායපත්‍ර අච්චුවක් සෑදීමට උදව් කරයි. එවිට එම අච්චුව අවශ්‍ය "
+"ඕනෑම අවස්ථාවක න්‍යායපත්‍රයක් සැදීම සඳහා භාවිතා කළ හැක."
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__14.string.text
+msgid "Time:"
+msgstr "වෙලාව:"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__15.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__15.string.text"
+msgid "Name:"
+msgstr "නම:"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START___16.string.text
+msgid "Location:"
+msgstr "පිහිටීම:"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__17.string.text
+msgid ""
+"Placeholders will be used in empty fields. You can replace placeholders with "
+"text later."
+msgstr ""
+"හිස් ක්ෂේත්‍ර වල තැන් දරණු භාවිතා කෙරෙනු ඇත. ඔබට පසුව තැන් දරණු පෙළ වලින් "
+"ප්‍රතිස්ථාපනය කළ හැක."
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__18.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__18.string.text"
+msgid "..."
+msgstr "..."
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__19.string.text
+msgid "Create an ~agenda from this template"
+msgstr "මෙම අච්චුවෙන් න්‍යාය පත්‍රයක් සාදන්න (~a)"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__20.string.text
+msgid ""
+"To create a new agenda out of the template, go to the location where you "
+"saved the template and double-click the file."
+msgstr ""
+"අච්චුවෙන් නව න්‍යාය පත්‍රයක් සෑදීමට ඔබ අච්චුව සුරැකි ස්ථානයට ගොස් ගොනුව "
+"දෙවරක් ක්ලික් කරන්න."
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__21.string.text
+msgid "Agenda item"
+msgstr "න්‍යාය පත්‍ර අයිතමය"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__22.string.text
+msgid "Responsible"
+msgstr "වගකියයුතු"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__23.string.text
+msgid "Duration"
+msgstr "කාල සීමාව"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__24.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__24.string.text"
+msgid "Meeting called by"
+msgstr "හමුවීම කැඳවනු ලැබුවේ"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__25.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__25.string.text"
+msgid "Chairperson"
+msgstr "සභාපති"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__26.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__26.string.text"
+msgid "Minute keeper"
+msgstr "වාර්තා තබා ගන්නා"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__27.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__27.string.text"
+msgid "Moderator"
+msgstr "විකරණය කරන්නා"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__28.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__28.string.text"
+msgid "Attendees"
+msgstr "පැමිණ සිටින්නන්"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__29.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__29.string.text"
+msgid "Observers"
+msgstr "නිරීක්ෂකයින්"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__30.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__30.string.text"
+msgid "Facility personnel"
+msgstr "පුද්ගලික දක්ෂකම"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__31.string.text
+msgid ""
+"The agenda template will include placeholders for the names of the selected "
+"people. When creating an agenda from the template, you can replace these "
+"placeholder with the appropriate names."
+msgstr ""
+"තෝරාගත් පුද්ගලයින්ගේ නම් සඳහා තැන් දරණු න්‍යාය පත්‍ර අච්චුවේ අඩංගු වනු ඇත. "
+"අච්චුවෙන් න්‍යාය පත්‍රයක් සෑදීමේදී, ඔබට මෙම තැන් දරණු සුදුසු නම් වලින් "
+"ප්‍රතිස්ථාපනය කළ හැක."
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__32.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__32.string.text"
+msgid "Type of meeting"
+msgstr "රැස්වීමේ ආකාරය"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__33.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__33.string.text"
+msgid "Please read"
+msgstr "කරුණාකර කියවන්න"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__34.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__34.string.text"
+msgid "Please bring"
+msgstr "කරුණාකර රැගෙන එන්න"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__35.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__35.string.text"
+msgid "Notes"
+msgstr "සටහන්"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__36.string.text
+msgid "The agenda template will include placeholders for the selected items."
+msgstr "තෝරාගත් අයිතම සඳහා තැන් දරණු න්‍යාය පත්‍ර අච්චුවේ අඩංගු වනු ඇත."
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__38.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__38.string.text"
+msgid "Date:"
+msgstr "දිනය:"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__39.string.text
+msgid ""
+"This wizard creates an agenda template which enables you to create multiple "
+"agendas with the same layout and settings."
+msgstr ""
+"මෙම විශාරදය එකම පිරිසැලසුමෙන් සහ සැකසීම් වලින් බහු න්‍යායපත්‍ර සෑදිය හැකි "
+"න්‍යායපත්‍ර අච්චුවක් සාදයි."
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__40.string.text
+msgid "Page design:"
+msgstr "පිටු මෝස්තරය:"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__41.string.text
+msgid "myAgendaTemplate.stw"
+msgstr "myAgendaTemplate.stw"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__42.string.text
+msgid "My Agenda Template"
+msgstr "මගේ න්‍යාය පත්‍ර අච්චුව"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__43.string.text
+msgid "An unexpected error occurred while saving the agenda template."
+msgstr "න්‍යාය පත්‍ර අච්චුව සුරැකීමේදී බලාපොරොත්තු නොවූ දෝෂයක් මතු විය."
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__44.string.text
+msgid "Name"
+msgstr "නම"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__45.string.text
+msgid "Date"
+msgstr "දිනය:"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__46.string.text
+msgid "Time"
+msgstr "වෙලාව"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START___47.string.text
+msgid "Location"
+msgstr "පිහිටීම"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__48.string.text
+msgid "Click to replace this text"
+msgstr "මෙම පෙළ ප්‍රතිස්ථාපනය කිරීමට ක්ලික් කරන්න"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__50.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__50.string.text"
+msgid "Page design"
+msgstr "පිටු මෝස්තරය"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__51.string.text
+msgid "General information"
+msgstr "සාමාන්‍ය තොරතුරු"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__52.string.text
+msgid "Headings to include"
+msgstr "අඩංගු කිරීමට ශීර්ෂ"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__53.string.text
+msgid "Names"
+msgstr "නම්"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__54.string.text
+msgid "Agenda items"
+msgstr "න්‍යාය පත්‍ර අයිතම"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__55.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__55.string.text"
+msgid "Name and location"
+msgstr "නම සහ පිහිටීම"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__56.string.text
+msgid "An unexpected error occurred while opening the agenda template."
+msgstr "න්‍යාය පත්‍ර අච්චුව විවෘත කිරීමේදී බලාපොරොත්තු නොවූ දෝෂයක් මතු විය."
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__57.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__57.string.text"
+msgid "Type of meeting"
+msgstr "රැස්වීමේ ආකාරය"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__58.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__58.string.text"
+msgid "Please bring"
+msgstr "කරුණාකර රැගෙන එන්න"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__59.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__59.string.text"
+msgid "Please read"
+msgstr "කරුණාකර කියවන්න"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__60.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__60.string.text"
+msgid "Notes"
+msgstr "සටහන්"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__61.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__61.string.text"
+msgid "Meeting called by"
+msgstr "හමුවීම කැඳවනු ලැබුවේ"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__62.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__62.string.text"
+msgid "Chairperson"
+msgstr "සභාපති"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__63.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__63.string.text"
+msgid "Attendees"
+msgstr "පැමිණ සිටින්නන්"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__64.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__64.string.text"
+msgid "Minute keeper"
+msgstr "වාර්තා තබා ගන්නා"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__65.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__65.string.text"
+msgid "Moderator"
+msgstr "විකරණය කරන්නා"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__66.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__66.string.text"
+msgid "Observers"
+msgstr "නිරීක්ෂකයින්"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__67.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__67.string.text"
+msgid "Facility personnel"
+msgstr "පුද්ගලික දක්ෂකම"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__68.string.text
+msgid "Insert"
+msgstr "ඇතුල් කරන්න"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__69.string.text
+msgid "Remove"
+msgstr "ඉවත් කරන්න"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__70.string.text
+msgid "Move up"
+msgstr "ඉහළට ගමන් කරවන්න"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__71.string.text
+msgid "Move down"
+msgstr "පහළට ගමන් කරවන්න"
+
+#: template.src#SAMPLES.string.text
+msgid ""
+"In order to use the full functionality of this sample, create a document "
+"that is based on this template."
+msgstr ""
+"මෙම නියැඳියේ සම්පූර්ණ ක්‍රියාකාරිත්වය භාවිතා කිරීම සඳහා, මෙම අච්චුව මත පදනම් "
+"වූ ලිපියක් සාදන්න."
+
+#: template.src#SAMPLES___1.string.text
+msgid "Remarks"
+msgstr "සටහන"
+
+#: template.src#STYLES.string.text
+msgid "Theme Selection"
+msgstr "තේමා තේරීම"
+
+#: template.src#STYLES___1.string.text
+msgid ""
+"Error while saving the document to the clipboard! The following action "
+"cannot be undone."
+msgstr ""
+"ලිපිය ඈඳුම් පුවරුවට සුරැකීමේදී දෝෂයකි! පහත ක්‍රියාව පෙර සේ සැකසීමට නොහැක."
+
+#: template.src#STYLES___2.string.text
+msgid "~Cancel"
+msgstr "වසන්න (~C)"
+
+#: template.src#STYLES___3.string.text
+msgid "~OK"
+msgstr "හරි (~O)"
+
+#: template.src#AgendaDlgName.string.text
+msgid "Minutes Template"
+msgstr "වාර්තා අච්චුව"
+
+#: template.src#AgendaDlgNoCancel.string.text
+msgid "An option must be confirmed."
+msgstr "විකල්පයක් ස්ථිර කල යුතුය."
+
+#: template.src#AgendaDlgFrame.string.text
+msgid "Minutes Type"
+msgstr "වාර්තා වර්ගය"
+
+#: template.src#AgendaDlgButton1.string.text
+msgid "Results Minutes"
+msgstr "ප්‍රතිඵල මිනිත්තු"
+
+#: template.src#AgendaDlgButton2.string.text
+msgid "Evaluation Minutes"
+msgstr "ඇගයීමේ මිනිත්තු"
+
+#: template.src#CorrespondenceNoTextmark.string.text
+msgid "The bookmark 'Recipient' is missing."
+msgstr "'ප්‍රතිග්‍රාහකයා' පිටු සළකුණ නැතිවී ඇත."
+
+#: template.src#CorrespondenceNoTextmark_1.string.text
+msgid "Form letter fields can not be included."
+msgstr "පෝරම ලිපි ක්ෂේත්‍රය ඇතුළත් කිරීමට නොහැක."
+
+#: template.src#CorrespondenceMsgError.string.text
+msgid "An error has occurred."
+msgstr "දෝෂයක් මතු වී ඇත."
+
+#: template.src#CorrespondenceDialog.string.text
+msgid "Addressee"
+msgstr "ලිපි හිමියා"
+
+#: template.src#CorrespondenceDialog_1.string.text
+msgid "One recipient"
+msgstr "එක් ප්‍රතිග්‍රාහකයෙක්"
+
+#: template.src#CorrespondenceDialog_2.string.text
+msgid "Several recipients (address database)"
+msgstr "බහු ප්‍රතිග්‍රාහකයන් (ලිපින දත්ත ගබඩාව)"
+
+#: template.src#CorrespondenceDialog_3.string.text
+msgid "Use of This Template"
+msgstr "මෙම අච්චුවේ භාවිතය"
+
+#: template.src#CorrespondenceFields.string.text
+msgid "Click placeholder and overwrite"
+msgstr "පිහිටුම්දාරකය ක්ලික් කර එය මත ලියන්න"
+
+#: template.src#CorrespondenceFields_1.string.text
+msgid "Company"
+msgstr "සමාගම"
+
+#: template.src#CorrespondenceFields_2.string.text
+msgid "Department"
+msgstr "අංශය"
+
+#: template.src#CorrespondenceFields_3.string.text
+msgid "First Name"
+msgstr "මුල් නම"
+
+#: template.src#CorrespondenceFields_4.string.text
+msgid "Last Name"
+msgstr "අවසාන නාමය"
+
+#: template.src#CorrespondenceFields_5.string.text
+msgid "Street"
+msgstr "වීදිය"
+
+#: template.src#CorrespondenceFields_6.string.text
+msgid "Country"
+msgstr "රට"
+
+#: template.src#CorrespondenceFields_7.string.text
+msgid "ZIP/Postal Code"
+msgstr "ZIP/තැපැල් කේතය"
+
+#: template.src#CorrespondenceFields_8.string.text
+msgid "City"
+msgstr "නගරය"
+
+#: template.src#CorrespondenceFields_9.string.text
+msgid "Title"
+msgstr "තේමාව"
+
+#: template.src#CorrespondenceFields_10.string.text
+msgid "Position"
+msgstr "පිහිටීම"
+
+#: template.src#CorrespondenceFields_11.string.text
+msgid "Form of Address"
+msgstr "ලිපිනයක් සාදන්න"
+
+#: template.src#CorrespondenceFields_12.string.text
+msgid "Initials"
+msgstr "මුලකුරු"
+
+#: template.src#CorrespondenceFields_13.string.text
+msgid "Salutation"
+msgstr "ආචාරය"
+
+#: template.src#CorrespondenceFields_14.string.text
+msgid "Home Phone"
+msgstr "නිවසේ දුරකථනය"
+
+#: template.src#CorrespondenceFields_15.string.text
+msgid "Work Phone"
+msgstr "වැඩ කරන ස්ථානයේ දුරකථනය"
+
+#: template.src#CorrespondenceFields_16.string.text
+msgid "Fax"
+msgstr "ෆැක්ස්"
+
+#: template.src#CorrespondenceFields_17.string.text
+msgid "E-Mail"
+msgstr "විද්‍යුත් ලිපිය"
+
+#: template.src#CorrespondenceFields_18.string.text
+msgid "URL"
+msgstr "URL"
+
+#: template.src#CorrespondenceFields_19.string.text
+msgid "Notes"
+msgstr "සටහන්"
+
+#: template.src#CorrespondenceFields_20.string.text
+msgid "Alt. Field 1"
+msgstr "විකල්ප ක්ෂේත්‍රය 1"
+
+#: template.src#CorrespondenceFields_21.string.text
+msgid "Alt. Field 2"
+msgstr "විකල්ප ක්ෂේත්‍රය 2"
+
+#: template.src#CorrespondenceFields_22.string.text
+msgid "Alt. Field 3"
+msgstr "විකල්ප ක්ෂේත්‍රය 3"
+
+#: template.src#CorrespondenceFields_23.string.text
+msgid "Alt. Field 4"
+msgstr "විකල්ප ක්ෂේත්‍රය 4"
+
+#: template.src#CorrespondenceFields_24.string.text
+msgid "ID"
+msgstr "ID"
+
+#: template.src#CorrespondenceFields_25.string.text
+msgid "State"
+msgstr "තත්වය"
+
+#: template.src#CorrespondenceFields_26.string.text
+msgid "Office Phone"
+msgstr "කාර්යාල දුරකථනය"
+
+#: template.src#CorrespondenceFields_27.string.text
+msgid "Pager"
+msgstr "පේජරය"
+
+#: template.src#CorrespondenceFields_28.string.text
+msgid "Mobile Phone"
+msgstr "ජංගම දුරකථනය"
+
+#: template.src#CorrespondenceFields_29.string.text
+msgid "Other Phone"
+msgstr "වෙනත් දුරකථන"
+
+#: template.src#CorrespondenceFields_30.string.text
+msgid "Calendar URL"
+msgstr "දිනදර්ශන URL"
+
+#: template.src#CorrespondenceFields_31.string.text
+msgid "Invite"
+msgstr "ආරාධනා කරන්න"
+
+#: template.src#TextField.string.text
+msgid "User data field is not defined!"
+msgstr "භාවිතා කරන්නාගේ දත්ත ක්ෂේත්‍රය අර්ථ දක්වා නැත!"
+
+#: template.src#Newsletter.string.text
+msgid "General layout"
+msgstr "සාමාන්‍ය පිරිසැලසුම"
+
+#: template.src#Newsletter___1.string.text
+msgid "Default layout"
+msgstr "පෙරනිමි පිරිසැලසුම"
+
+#: template.src#Newsletter___2.string.text
+msgid "Commemorative publication layout"
+msgstr "සමරු ප්‍රකාශනයේ පිරිසැලසුම"
+
+#: template.src#Newsletter___3.string.text
+msgid "Brochure layout"
+msgstr "පොත් පිංචේ පිරිසැලසුම"
+
+#: template.src#Newsletter___10.string.text
+msgid "Format"
+msgstr "ආකෘතිය"
+
+#: template.src#Newsletter___11.string.text
+msgid "Single-sided"
+msgstr "ඒක-පාර්ශ්වික"
+
+#: template.src#Newsletter___12.string.text
+msgid "Double-sided"
+msgstr "ද්වී-ප්‍රමාණ"
+
+#: euro.src#STEP_ZERO.string.text
+msgid "~Cancel"
+msgstr "වසන්න (~C)"
+
+#: euro.src#STEP_ZERO___1.string.text
+msgid "~Help"
+msgstr "උදව් (~H)"
+
+#: euro.src#STEP_ZERO___2.string.text
+msgid "<<~Back"
+msgstr "<< ආපසු (~B)"
+
+#: euro.src#STEP_ZERO___3.string.text
+msgid "~Convert"
+msgstr "පෙරලුම (~C)"
+
+#: euro.src#STEP_ZERO___4.string.text
+msgid ""
+"Note: Currency amounts from external links and currency conversion factors "
+"in formulas cannot be converted."
+msgstr ""
+"සටහන: බාහිර ඈඳුම් වලින් මුදල් ප්‍රමාණය සහ සූත්‍ර වල ඇති මුදල් පරිවර්තනය "
+"කිරීමේ සාධක පරිවර්තනය කළ නොහැක."
+
+#: euro.src#STEP_ZERO___5.string.text
+msgid "First, unprotect all sheets."
+msgstr "පළමුව සියළු කොල අනාරක්ෂිත කරන්න."
+
+#: euro.src#STEP_ZERO___6.string.text
+msgid "Currencies:"
+msgstr "මුදල්:"
+
+#: euro.src#STEP_ZERO___7.string.text
+msgid "C~ontinue>>"
+msgstr "දිගටම කරගෙන යන්න>> (~o)"
+
+#: euro.src#STEP_ZERO___8.string.text
+msgid "C~lose"
+msgstr "වසන්න (~l)"
+
+#: euro.src#STEP_CONVERTER.string.text
+msgid "~Entire document"
+msgstr "මුළු ලේඛනයම (~E)"
+
+#: euro.src#STEP_CONVERTER___1.string.text
+msgid "Selection"
+msgstr "තේරීම"
+
+#: euro.src#STEP_CONVERTER___2.string.text
+msgid "Cell S~tyles"
+msgstr "කොටු මෝස්තර (~t)"
+
+#: euro.src#STEP_CONVERTER___3.string.text
+msgid "Currency cells in the current ~sheet"
+msgstr "දැනට පවතින කොලයේ මුදල් සෙල් (~s)"
+
+#: euro.src#STEP_CONVERTER___4.string.text
+msgid "Currency cells in the entire ~document"
+msgstr "මුළු කොලයේම මුදල් සෙල් (~d)"
+
+#: euro.src#STEP_CONVERTER___5.string.text
+msgid "~Selected range"
+msgstr "තේරු පරාසය (~S)"
+
+#: euro.src#STEP_CONVERTER___6.string.text
+msgid "Select Cell Styles"
+msgstr "කොටු මෝස්තර තෝරන්න"
+
+#: euro.src#STEP_CONVERTER___7.string.text
+msgid "Select currency cells"
+msgstr "මුදල් සෙල් තෝරන්න"
+
+#: euro.src#STEP_CONVERTER___8.string.text
+msgid "Currency ranges:"
+msgstr "මුදල් පරාස:"
+
+#: euro.src#STEP_CONVERTER___9.string.text
+msgid "Templates:"
+msgstr "ආකෘති:"
+
+#: euro.src#STEP_AUTOPILOT.string.text
+msgid "Extent"
+msgstr "ප්‍රමාණය"
+
+#: euro.src#STEP_AUTOPILOT___1.string.text
+msgid "~Single %PRODUCTNAME Calc document"
+msgstr "තනි %PRODUCTNAME Calc ලිපිය (~S)"
+
+#: euro.src#STEP_AUTOPILOT___2.string.text
+msgid "Complete ~directory"
+msgstr "බහලුම සම්පූර්ණ කරන්න (~d)"
+
+#: euro.src#STEP_AUTOPILOT___3.string.text
+msgid "Source Document:"
+msgstr "මූල ලිපිය:"
+
+#: euro.src#STEP_AUTOPILOT___4.string.text
+msgid "Source directory:"
+msgstr "මූල බහලුම:"
+
+#: euro.src#STEP_AUTOPILOT___5.string.text
+msgid "~Including subfolders"
+msgstr "උප බහලුම ඇතුළුව (~I)"
+
+#: euro.src#STEP_AUTOPILOT___6.string.text
+msgid "Target directory:"
+msgstr "ඉලක්ක බහලුම:"
+
+#: euro.src#STEP_AUTOPILOT___7.string.text
+msgid "Temporarily unprotect sheet without query"
+msgstr "විමසීමකින් තොරව පත්‍ර තාවකාලිකව අනාරක්ෂිත කරන්න"
+
+#: euro.src#STEP_AUTOPILOT___10.string.text
+msgid "Also convert fields and tables in text documents"
+msgstr "පෙළ ලිපි වල ඇති ක්ෂේත්‍ර සහ වගු පවා පරිවර්තනය කරන්න"
+
+#: euro.src#STATUSLINE.string.text
+msgid "Conversion status: "
+msgstr "පරිවර්තන තත්වය:"
+
+#: euro.src#STATUSLINE___1.string.text
+msgid "Conversion status of the cell templates:"
+msgstr "කොටු අච්චු වල පරිවර්තන තත්වය:"
+
+#: euro.src#STATUSLINE___2.string.text
+msgid ""
+"Registration of the relevant ranges: Sheet %1Number%1 of %2TotPageCount%2"
+msgstr "අදාළ පරාස වල ලියාපදිංචි කිරීම: %2TotPageCount%2 හි %1Number%1 පත්‍රය"
+
+#: euro.src#STATUSLINE___3.string.text
+msgid "Entry of the ranges to be converted..."
+msgstr "පරිවර්තනය කළ යුතු පරාසයේ ඇතුළත් කිරීම..."
+
+#: euro.src#STATUSLINE___4.string.text
+msgid "Sheet protection for each sheet will be restored..."
+msgstr "සෑම පත්‍රයක් සඳහාම පත්‍ර ආරක්ෂණය යළි පිහිටුවෙනු ඇත..."
+
+#: euro.src#STATUSLINE___5.string.text
+msgid "Conversion of the currency units in the cell templates..."
+msgstr "කොටු අච්චුවේ ඇති මුදල් ඒකක වල පරිවර්තනය"
+
+#: euro.src#MESSAGES.string.text
+msgid "~Finish"
+msgstr "නිම කරන්න (~F)"
+
+#: euro.src#MESSAGES___1.string.text
+msgid "Select directory"
+msgstr "බහලුම තෝරන්න"
+
+#: euro.src#MESSAGES___2.string.text
+msgid "Select file"
+msgstr "ගොනුව තෝරන්න"
+
+#: euro.src#MESSAGES___3.string.text
+msgid "Select target directory"
+msgstr "ඉලක්ක බහලුම තොරන්න"
+
+#: euro.src#MESSAGES___4.string.text
+msgid "non-existant"
+msgstr "නොපවතින"
+
+#: euro.src#MESSAGES___5.string.text
+msgid "Euro Converter"
+msgstr "යුරෝ පරිවර්තකය"
+
+#: euro.src#MESSAGES___6.string.text
+msgid "Should protected spreadsheets be temporarily unprotected?"
+msgstr "ආරක්ෂණය කළ පත්‍ර තාවකාලිකව අනාරක්ෂිත කළ යුතුද?"
+
+#: euro.src#MESSAGES___7.string.text
+msgid "Enter the password to unprotect the table %1TableName%1"
+msgstr "%1TableName%1 වගුව අනාරක්ෂිත කිරීමට රහස්පදය ඇතුල් කරන්න"
+
+#: euro.src#MESSAGES___8.string.text
+msgid "Wrong Password!"
+msgstr "වැරදි රහස්පදය!"
+
+#: euro.src#MESSAGES___9.string.text
+msgid "Protected Sheet"
+msgstr "ආරක්ෂාළ පත්‍රය"
+
+#: euro.src#MESSAGES___10.string.text
+msgid "Warning!"
+msgstr "අනතුරු හැඟවීම!"
+
+#: euro.src#MESSAGES___11.string.text
+msgid "Protection for the sheets will not be removed."
+msgstr "පත්‍ර සඳහා ආරක්ෂණය ඉවත් නොවනු ඇත."
+
+#: euro.src#MESSAGES___12.string.text
+msgid "Sheet cannot be unprotected"
+msgstr "පත්‍රය අනාරක්ෂිත කල නොහැක"
+
+#: euro.src#MESSAGES___13.string.text
+msgid ""
+"The Wizard cannot edit this document as cell formats cannot be modified in "
+"documents containing protected spreadsheets."
+msgstr ""
+"ආරක්ෂිත පැතුරුම්පත් අඩංගු ලිපි වල ඇති කොටු ආකෘති විකරණය කළ නොහැකි නිසා "
+"විශාරදයට මෙම ලිපිය විකරණය කළ නොහැක."
+
+#: euro.src#MESSAGES___14.string.text
+msgid ""
+"Please note that the Euro Converter will, otherwise, not be able to edit "
+"this document!"
+msgstr ""
+
+#: euro.src#MESSAGES___15.string.text
+msgid "Please choose a currency to be converted first!"
+msgstr "පළමුව පරිවර්තනය කිරීමට මුදලක් තෝරන්න!"
+
+#: euro.src#MESSAGES___16.string.text
+msgid "Password:"
+msgstr "රහස්පදය:"
+
+#: euro.src#MESSAGES___17.string.text
+msgid "OK"
+msgstr "හරි"
+
+#: euro.src#MESSAGES___18.string.text
+msgid "Cancel"
+msgstr "වසන්න"
+
+#: euro.src#MESSAGES___19.string.text
+msgid "Please select a %PRODUCTNAME Calc document for editing!"
+msgstr "කරුණාකර සංස්කරණය සඳහා %PRODUCTNAME Calc ලිපියක් තෝරන්න!"
+
+#: euro.src#MESSAGES___20.string.text
+msgid "'<1>' is not a directory!"
+msgstr "'<1>' නාමාවලියක් නොවේ!"
+
+#: euro.src#MESSAGES___21.string.text
+msgid "Document is read-only!"
+msgstr "ලිපිය කියවීමට පමණයි!"
+
+#: euro.src#MESSAGES___22.string.text
+msgid "The '<1>' file already exists.<CR>Do you want to overwrite it?"
+msgstr "'<1>' ගොනුව දැනටමත් පවතී.<CR>ඔබට එය උඩින් ලිවීමට අවශ්‍යද?"
+
+#: euro.src#MESSAGES___23.string.text
+msgid "Do you really want to terminate conversion at this point?"
+msgstr "ඔබට ඇත්ත වශයෙන්ම මෙම අවස්ථාවේදී සංවාදය නැවැත්වීමට අවශ්‍යද?"
+
+#: euro.src#MESSAGES___24.string.text
+msgid "Cancel Wizard"
+msgstr "විශාරදය අවලංගු කරන්න"
+
+#: euro.src#CURRENCIES.string.text
+msgid "Portuguese Escudo"
+msgstr ""
+
+#: euro.src#CURRENCIES___1.string.text
+msgid "Dutch Guilder"
+msgstr ""
+
+#: euro.src#CURRENCIES___2.string.text
+msgid "French Franc"
+msgstr ""
+
+#: euro.src#CURRENCIES___3.string.text
+msgid "Spanish Peseta"
+msgstr ""
+
+#: euro.src#CURRENCIES___4.string.text
+msgid "Italian Lira"
+msgstr ""
+
+#: euro.src#CURRENCIES___5.string.text
+msgid "German Mark"
+msgstr ""
+
+#: euro.src#CURRENCIES___6.string.text
+msgid "Belgian Franc"
+msgstr ""
+
+#: euro.src#CURRENCIES___7.string.text
+msgid "Irish Punt"
+msgstr ""
+
+#: euro.src#CURRENCIES___8.string.text
+msgid "Luxembourg Franc"
+msgstr ""
+
+#: euro.src#CURRENCIES___9.string.text
+msgid "Austrian Schilling"
+msgstr ""
+
+#: euro.src#CURRENCIES___10.string.text
+msgid "Finnish Mark"
+msgstr ""
+
+#: euro.src#CURRENCIES___11.string.text
+msgid "Greek Drachma"
+msgstr ""
+
+#: euro.src#CURRENCIES___12.string.text
+msgid "Slovenian Tolar"
+msgstr ""
+
+#: euro.src#CURRENCIES___13.string.text
+msgid "Cypriot Pound"
+msgstr ""
+
+#: euro.src#CURRENCIES___14.string.text
+msgid "Maltese Lira"
+msgstr ""
+
+#: euro.src#CURRENCIES___15.string.text
+msgid "Slovak Koruna"
+msgstr ""
+
+#: euro.src#CURRENCIES___16.string.text
+msgid "The currency set for the document is not a European currency!"
+msgstr "මෙම ලිපියට යොදා ඇති මුදල් ඒකකය යුරෝපීය මුදල් ඒකකයක් නොවේ!"
+
+#: euro.src#CURRENCIES___17.string.text
+msgid ""
+"The language set for your operating system is not a language of the European "
+"Monetary Union."
+msgstr ""
+"ඔබගේ මෙහෙයුම් පද්ධතිය සඳහා යොදා ඇති භාෂාව යුරෝපීය මූල්‍ය සංසදයේ භාෂාවක් "
+"නොවේ."
+
+#: euro.src#STEP_LASTPAGE.string.text
+msgid "Progress"
+msgstr "ප්‍රගතිය"
+
+#: euro.src#STEP_LASTPAGE___1.string.text
+msgid "Retrieving the relevant documents..."
+msgstr "අදාළ ලිපි සොයා ලබා ගනිමින්..."
+
+#: euro.src#STEP_LASTPAGE___2.string.text
+msgid "Converting the documents..."
+msgstr "ලිපි පරිවර්තනය කරමින්..."
+
+#: euro.src#STEP_LASTPAGE___3.string.text
+msgid "Settings:"
+msgstr "සැකසුම්:"
+
+#: euro.src#STEP_LASTPAGE___4.string.text
+msgid "Sheet is always unprotected"
+msgstr "පත්‍රය සැමවිටම අනාරක්ෂිතයි"
+
+#: schedule.src#dlgCalTitle.string.text
+msgid "%PRODUCTNAME Calendar"
+msgstr "%PRODUCTNAME දිනදර්ශනය"
+
+#: schedule.src#dlgCalTitleBack.string.text
+msgid "Back"
+msgstr "ආපසු"
+
+#: schedule.src#dlgCalTitleOwnData.string.text
+msgctxt "schedule.src#dlgCalTitleOwnData.string.text"
+msgid "Personal Data"
+msgstr "පුද්ගලික දත්ත"
+
+#: schedule.src#dlgSchdlTitle.string.text
+msgid "Add Holidays to Calendar"
+msgstr "දිනදර්ශනයට නිවාඩුවක් එක් කරන්න"
+
+#: schedule.src#dlgOK.string.text
+msgid "Create"
+msgstr "සාදන්න"
+
+#: schedule.src#dlgCancel.string.text
+msgid "Cancel"
+msgstr "වසන්න"
+
+#: schedule.src#dlgCalFrameOption.string.text
+msgctxt "schedule.src#dlgCalFrameOption.string.text"
+msgid "Calendar"
+msgstr "දිනදර්ශනය"
+
+#: schedule.src#dlgCalOptionYear.string.text
+msgid "~Year Overview"
+msgstr "වර්ෂයේ දළ සැකැස්ම (~Y)"
+
+#: schedule.src#dlgCalOptionMonth.string.text
+msgid "~Month"
+msgstr "මාසය (~M)"
+
+#: schedule.src#dlgSchdlDescription.string.text
+msgid "Add holidays for"
+msgstr "සඳහා නිවාඩුවක් එක් කරන්න"
+
+#: schedule.src#dlgSchdlCountry.string.text
+msgid "USA"
+msgstr "USA"
+
+#: schedule.src#dlgTime.string.text
+msgid "Time Frame"
+msgstr "කාල රාමුව"
+
+#: schedule.src#dlgYear.string.text
+msgctxt "schedule.src#dlgYear.string.text"
+msgid "Year"
+msgstr "වර්ෂය"
+
+#: schedule.src#dlgCalMonth.string.text
+msgctxt "schedule.src#dlgCalMonth.string.text"
+msgid "Month"
+msgstr "මාසය"
+
+#: schedule.src#dlgSpecificBankholidays.string.text
+msgid "-"
+msgstr "-"
+
+#: schedule.src#dlgCalOwnData.string.text
+msgctxt "schedule.src#dlgCalOwnData.string.text"
+msgid "Personal Data"
+msgstr "පුද්ගලික දත්ත"
+
+#: schedule.src#dlgCalInsert.string.text
+msgid "~Insert"
+msgstr "එක් කරන්න (~I)"
+
+#: schedule.src#dlgCalDelete.string.text
+msgid "~Delete"
+msgstr "මකන්න (~D)"
+
+#: schedule.src#dlgCalNewEvent.string.text
+msgid "New Event"
+msgstr "නව වැඩසටහන"
+
+#: schedule.src#dlgCalEvent.string.text
+msgid "Event"
+msgstr "වැඩසටහන"
+
+#: schedule.src#dlgCalEventOnce.string.text
+msgid "One-Time"
+msgstr "එක් වෙලාවක්"
+
+#: schedule.src#dlgCalEventDay.string.text
+msgid "Day"
+msgstr "දවස"
+
+#: schedule.src#dlgCalEventMonth.string.text
+msgctxt "schedule.src#dlgCalEventMonth.string.text"
+msgid "Month"
+msgstr "මාසය"
+
+#: schedule.src#dlgCalEventYear.string.text
+msgctxt "schedule.src#dlgCalEventYear.string.text"
+msgid "Year"
+msgstr "වර්ෂය"
+
+#: schedule.src#dlgBitmapFile.string.text
+msgid "usa.bmp"
+msgstr "usa.bmp"
+
+#: schedule.src#dlgState.string.text
+msgid "Public holidays"
+msgstr "ප්‍රසිද්ධ නිවාඩු"
+
+#: schedule.src#dlgMonth.string.text
+msgid "January"
+msgstr "ජනවාරි"
+
+#: schedule.src#dlgMonth_1.string.text
+msgid "February"
+msgstr "පෙබරවාරි"
+
+#: schedule.src#dlgMonth_2.string.text
+msgid "March"
+msgstr "මාර්තු"
+
+#: schedule.src#dlgMonth_3.string.text
+msgid "April"
+msgstr "අප්‍රේල්"
+
+#: schedule.src#dlgMonth_4.string.text
+msgid "May"
+msgstr "මැයි"
+
+#: schedule.src#dlgMonth_5.string.text
+msgid "June"
+msgstr "ජුනි"
+
+#: schedule.src#dlgMonth_6.string.text
+msgid "July"
+msgstr "ජූලි"
+
+#: schedule.src#dlgMonth_7.string.text
+msgid "August"
+msgstr "අගෝස්තු"
+
+#: schedule.src#dlgMonth_8.string.text
+msgid "September"
+msgstr "සැප්තැම්බර්"
+
+#: schedule.src#dlgMonth_9.string.text
+msgid "October"
+msgstr "ඔක්තෝබර්"
+
+#: schedule.src#dlgMonth_10.string.text
+msgid "November"
+msgstr "නොවැම්බර්"
+
+#: schedule.src#dlgMonth_11.string.text
+msgid "December"
+msgstr "දෙසැම්බර්"
+
+#: schedule.src#msgCalErrorTitle.string.text
+msgid "Yearly / Monthly Calendar"
+msgstr "වර්ෂික / මාසික දිනදර්ශනය"
+
+#: schedule.src#msgCalError.string.text
+msgid "An error occurred while creating the calendar."
+msgstr "දිනදර්ශනය සෑදීමේදී දෝෂයක් මතු විය."
+
+#: schedule.src#msgCalRemoveTitle.string.text
+msgid "Delete event entries"
+msgstr "වැඩසටහන් ප්‍රවේශ මකන්න"
+
+#: schedule.src#msgCalRemove.string.text
+msgid "Delete the selected entries?"
+msgstr "තේරයය ප්‍රවේශ මකන්නද?"
+
+#: schedule.src#stlWorkday.string.text
+msgid "Workweek"
+msgstr "වැඩ කරන සතිය"
+
+#: schedule.src#stlWeekend.string.text
+msgid "Weekend"
+msgstr "සති අන්තය"
+
+#: schedule.src#nameCalYear.string.text
+msgctxt "schedule.src#nameCalYear.string.text"
+msgid "Calendar"
+msgstr "දිනදර්ශනය"
+
+#: schedule.src#nameCalMonth.string.text
+msgctxt "schedule.src#nameCalMonth.string.text"
+msgid "Month"
+msgstr "මාසය"
+
+#: schedule.src#sProgress.string.text
+msgid "Progress:"
+msgstr "ප්‍රගතිය:"

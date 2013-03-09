@@ -1,0 +1,232 @@
+
+#: resource.src#STR_MENU_ADDONS.string.text
+msgid "Add-Ons"
+msgstr "Mosaajjii-Xiqqaa"
+
+#: resource.src#STR_MENU_ADDONHELP.string.text
+msgid "Add-~On Help"
+msgstr "Gargaarsa Mosaajjii-Xiqqaa"
+
+#: resource.src#STR_MENU_HEADFOOTALL.string.text
+msgid "All"
+msgstr "Mara"
+
+#: resource.src#STR_UPDATEDOC.string.text
+msgid "~Update"
+msgstr "Haaromsi"
+
+#: resource.src#STR_CLOSEDOC_ANDRETURN.string.text
+msgid "~Close & Return to "
+msgstr "Cufiitii kanatti deebi'i "
+
+#: resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_VISIBLEBUTTON.menuitem.text
+msgid "Visible ~Buttons"
+msgstr "Qabdoota Mul'atan"
+
+#: resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_CUSTOMIZETOOLBAR.menuitem.text
+msgid "~Customize Toolbar..."
+msgstr "Kamshaa Maamileessi..."
+
+#: resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_DOCKTOOLBAR.menuitem.text
+msgid "~Dock Toolbar"
+msgstr "Kamshaa Hidhi"
+
+#: resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_DOCKALLTOOLBAR.menuitem.text
+msgid "Dock ~All Toolbars"
+msgstr "Kamshaalee Mara Hidhi"
+
+#: resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_LOCKTOOLBARPOSITION.menuitem.text
+msgid "~Lock Toolbar Position"
+msgstr "Qubannoo Kamshaa Iggiteessi"
+
+#: resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_CLOSE.menuitem.text
+msgid "Close ~Toolbar"
+msgstr "Kamshaa Cufi"
+
+#: resource.src#STR_SAVECOPYDOC.string.text
+msgid "Save Copy ~as..."
+msgstr "Garagalcha akka kanaatti olkaa'i..."
+
+#: resource.src#STR_NODOCUMENT.string.text
+msgid "No Documents"
+msgstr "Galmeewwan homtuu hin jiran"
+
+#: resource.src#STR_TOOLBAR_TITLE_ADDON.string.text
+msgid "Add-On %num%"
+msgstr "%num% Mosaajjii-Xiqqaa"
+
+#: resource.src#STR_STATUSBAR_LOGOTEXT.string.text
+msgid "A %PRODUCTNAME product by Oracle"
+msgstr ""
+
+#: resource.src#DLG_LICENSE.FT_INFO1.fixedtext.text
+msgid "Please follow these steps to proceed with the installation:"
+msgstr "Ijaarsa itti fufuuf ejjatoowwan kanneen hordofi:"
+
+#: resource.src#DLG_LICENSE.FT_INFO2_1.fixedtext.text
+msgid "1."
+msgstr "1."
+
+#: resource.src#DLG_LICENSE.FT_INFO2.fixedtext.text
+msgid ""
+"View the complete License Agreement. Please use the scroll bar or the '%"
+"PAGEDOWN' button in this dialog to view the entire license text."
+msgstr ""
+"Waliigaltee Hayyamtaa guutuu ilaali. Barruu hayyamtaa waamaraa ilaaluuf "
+"kabala maraa ykn qabduu '%PAGEDOWN' qaaqa kana kessaa fayyadami."
+
+#: resource.src#DLG_LICENSE.PB_PAGEDOWN.pushbutton.text
+msgid "Scroll Down"
+msgstr "Gadi Mari"
+
+#: resource.src#DLG_LICENSE.FT_INFO3_1.fixedtext.text
+msgid "2."
+msgstr "2."
+
+#: resource.src#DLG_LICENSE.FT_INFO3.fixedtext.text
+msgid "Accept the License Agreement."
+msgstr "Waliigaltee Hayyamtaa fudhu."
+
+#: resource.src#DLG_LICENSE.LICENSE_ACCEPT.string.text
+msgid "~Accept"
+msgstr "Fudhu"
+
+#: resource.src#DLG_LICENSE.LICENSE_NOTACCEPT.string.text
+msgid "Decline"
+msgstr "Didi"
+
+#: resource.src#DLG_LICENSE.modaldialog.text
+msgid "License Agreement"
+msgstr "Waliigaltee Hayyamtaa"
+
+#: resource.src#STR_FULL_DISC_RETRY_BUTTON.string.text
+msgid "Retry"
+msgstr "Lamuu Yaali"
+
+#: resource.src#STR_FULL_DISC_MSG.string.text
+msgid ""
+"%PRODUCTNAME could not save important internal information due to "
+"insufficient free disk space at the following location:\n"
+"%PATH\n"
+"\n"
+"You will not be able to continue working with %PRODUCTNAME without "
+"allocating more free disk space at that location.\n"
+"\n"
+"Press the 'Retry' button after you have allocated more free disk space to "
+"retry saving the data.\n"
+"\n"
+msgstr ""
+"Sababii hanqina iddoo duwwaa baxxee bakka armaan gadiitti mudateen %"
+"PRODUCTNAME odeeffannoo keessoo barbaachisaa olkaa'uu hin dandeenye:\n"
+"%PATH\n"
+"\n"
+"Iddoo sanatti iddoo duwwaa baxxee osoo hin ramadin %PRODUCTNAME ittiin "
+"fayyadamuu itti fufuu hin dandeessu.\n"
+"\n"
+"Deetaa olkaa'uu lamuu yaaluuf iddoo duwwaa baxxee erga ramaddee booda qabduu "
+"'Lamuu Yaali' dhiibi.\n"
+"\n"
+
+#: resource.src#STR_RESTORE_TOOLBARS.string.text
+msgid "~Reset"
+msgstr "Haaromsi"
+
+#: resource.src#STR_CORRUPT_UICFG_SHARE.string.text
+msgid ""
+"An error occurred while loading the user interface configuration data. The "
+"application will be terminated now.\n"
+"Please try to reinstall the application."
+msgstr ""
+"Osoo walquunnama deetaa qindaa'inaa fe'uu dogoggorri uumame. Fayyadamni amma "
+"addaan cita.\n"
+"Mee fayyadama kana lamuu ijaaruu yaali."
+
+#: resource.src#STR_CORRUPT_UICFG_USER.string.text
+msgid ""
+"An error occurred while loading the user interface configuration data. The "
+"application will be terminated now.\n"
+"Please try to remove your user profile for the application."
+msgstr ""
+"Osoo walquunnama deetaa qindaa'inaa fe'uu dogoggorri uumame. Fayyadamni amma "
+"addaan cita.\n"
+"Mee danaa fayyadamaa kee kan fayyadamaa balleessuu yaali."
+
+#: resource.src#STR_CORRUPT_UICFG_GENERAL.string.text
+msgid ""
+"An error occurred while loading the user interface configuration data. The "
+"application will be terminated now.\n"
+"Please try to remove your user profile for the application first or try to "
+"reinstall the application."
+msgstr ""
+"Osoo walquunnama deetaa qindaa'inaa fe'uu dogoggorri uumame. Fayyadamni amma "
+"addaan cita.\n"
+"Mee danaa fayyadamaa kee kan fayyadamaa balleessuu yaali ykn fayyadama kana "
+"lamuu ijaaruu yaali."
+
+#: resource.src#STR_UNTITLED_DOCUMENT.string.text
+msgid "Untitled"
+msgstr "Moggaasa dhabdee"
+
+#: resource.src#STR_LANGSTATUS_MULTIPLE_LANGUAGES.string.text
+msgid "Multiple Languages"
+msgstr "Afaanoota Hedduu"
+
+#: resource.src#STR_LANGSTATUS_NONE.string.text
+msgid "None (Do not check spelling)"
+msgstr "Homaa (Qubeeffannoo hin mirkaneessin)"
+
+#: resource.src#STR_RESET_TO_DEFAULT_LANGUAGE.string.text
+msgid "Reset to Default Language"
+msgstr ""
+
+#: resource.src#STR_LANGSTATUS_MORE.string.text
+msgid "More..."
+msgstr "Dabalata..."
+
+#: resource.src#STR_SET_LANGUAGE_FOR_SELECTION.string.text
+msgid "Set Language for Selection"
+msgstr "Filannoodhaaf Afaan Qindeessi"
+
+#: resource.src#STR_SET_LANGUAGE_FOR_PARAGRAPH.string.text
+msgid "Set Language for Paragraph"
+msgstr "Keewwataaf Afaan Qindeessi"
+
+#: resource.src#STR_SET_LANGUAGE_FOR_ALL_TEXT.string.text
+msgid "Set Language for all Text"
+msgstr "Barruu Maraaf Afaan Qindeessi"
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_WELCOME.string.text
+msgid "Welcome to"
+msgstr "Baga nagaan"
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_WELCOMEPRODUCT.string.text
+msgid "%PRODUCTNAME"
+msgstr "%PRODUCTNAMEtti dhufte"
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_CREATE.string.text
+msgid "Create a new document"
+msgstr "Galmee haaraa uumi"
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_TEMPLATE.string.text
+msgid "~Templates..."
+msgstr "Qajojiilee..."
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_FILE.string.text
+msgid "~Open..."
+msgstr ""
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_EXTHELP.string.text
+msgid "Add new features to %PRODUCTNAME"
+msgstr "%PRODUCTNAME tti amaloota haaraa ida'i"
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_REGHELP.string.text
+msgid "Register your %PRODUCTNAME"
+msgstr "%PRODUCTNAME kee galmeessi"
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_INFOHELP.string.text
+msgid "Get more information about %PRODUCTNAME"
+msgstr "Odeeffannoo dabalataa waa'ee %PRODUCTNAME argadhu"
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_TPLREP.string.text
+msgid "Get more templates for %PRODUCTNAME"
+msgstr "%PRODUCTNAMEtiif qajojiilee dabalataa argadhu"

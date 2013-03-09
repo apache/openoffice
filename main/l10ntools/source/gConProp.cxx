@@ -33,7 +33,7 @@
 /**********************   I M P L E M E N T A T I O N   **********************/
 convert_prop::convert_prop(l10nMem& crMemory) : convert_gen_impl(crMemory)
 {
-  throw std::string("convert_prop not implemented");
+  throw mcMemory.showError(std::string("convert_prop not implemented"));
 }
 
 
@@ -48,5 +48,5 @@ convert_prop::~convert_prop()
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_prop::execute()
 {
-  throw std::string("convert_prop::execute not implemented");
+  throw mcMemory.showError(std::string("convert_prop::execute not implemented"));
 }

@@ -1,0 +1,383 @@
+
+#: certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.FT_HINT_SELECT.fixedtext.text
+msgid "Select the certificate you want to use for signing"
+msgstr "Изаберите сертификат који желите да користите за потписивање"
+
+#: certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.string.text
+msgctxt "certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.string.text"
+msgid "Issued to\tIssued by\tExpiration date"
+msgstr "Издато\tОд стране\tВажи до"
+
+#: certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.pushbutton.text
+msgctxt "certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.pushbutton.text"
+msgid "View Certificate..."
+msgstr "Погледај сертификат..."
+
+#: certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.modaldialog.text
+msgid "Select Certificate"
+msgstr "Изаберите сертификат"
+
+#: certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_GENERAL.pageitem.text
+msgid "General"
+msgstr "Опште"
+
+#: certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_DETAILS.pageitem.text
+msgid "Details"
+msgstr "Детаљи"
+
+#: certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_CERTPATH.pageitem.text
+msgid "Certification Path"
+msgstr "Путања сертификације"
+
+#: certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.tabdialog.text
+msgid "View Certificate"
+msgstr "Погледај сертификат"
+
+#: certificateviewer.src#RID_XMLSECTP_GENERAL.FI_CERTINFO.fixedtext.text
+msgid " Certificate Information"
+msgstr "Подаци о сертификату"
+
+#: certificateviewer.src#RID_XMLSECTP_GENERAL.FI_HINTNOTTRUST.fixedtext.text
+msgid "This certificate is intended for the following purpose(s):"
+msgstr "Овај сертификат је намењен у следеће сврхе:"
+
+#: certificateviewer.src#RID_XMLSECTP_GENERAL.FI_ISSTOLABEL.fixedtext.text
+msgid "Issued to:"
+msgstr "Издат:"
+
+#: certificateviewer.src#RID_XMLSECTP_GENERAL.FI_ISSBYLABEL.fixedtext.text
+msgid "Issued by:"
+msgstr "Од стране:"
+
+#: certificateviewer.src#RID_XMLSECTP_GENERAL.FI_VALIDDATE.fixedtext.text
+msgid "Valid from %SDATE% to %EDATE%"
+msgstr "Важи од %SDATE% до %EDATE%"
+
+#: certificateviewer.src#RID_XMLSECTP_GENERAL.FI_CORRPRIVKEY.fixedtext.text
+msgid "You have a private key that corresponds to this certificate."
+msgstr "Имате приватни кључ који одговара овом сертификату."
+
+#: certificateviewer.src#RID_XMLSECTP_GENERAL.STR_CERTIFICATE_NOT_VALIDATED.string.text
+msgctxt "certificateviewer.src#RID_XMLSECTP_GENERAL.STR_CERTIFICATE_NOT_VALIDATED.string.text"
+msgid "The certificate could not be validated."
+msgstr "Није било могуће потврдити сертификат."
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_HEADERBAR.string.text
+msgid "Field\tValue"
+msgstr "Поље\tВредност"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VERSION.string.text
+msgid "Version"
+msgstr "Издање"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SERIALNUM.string.text
+msgid "Serial Number"
+msgstr "Серијски број"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGALGORITHM.string.text
+msgctxt "certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGALGORITHM.string.text"
+msgid "Signature Algorithm"
+msgstr "Алгоритам потписа"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_ISSUER.string.text
+msgid "Issuer"
+msgstr "Издавач"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_ISSUER_ID.string.text
+msgid "Issuer Unique ID"
+msgstr "Јединствени ИБ издавача"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VALIDFROM.string.text
+msgid "Valid From"
+msgstr "Важи од"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VALIDTO.string.text
+msgid "Valid to"
+msgstr "Важи до"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT.string.text
+msgid "Subject"
+msgstr "Тема"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_ID.string.text
+msgid "Subject Unique ID"
+msgstr "Јединствени ИБ субјекта"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_PUBKEY_ALGO.string.text
+msgid "Subject Algorithm"
+msgstr "Алгоритам у употреби"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_PUBKEY_VAL.string.text
+msgid "Public Key"
+msgstr "Јавни кључ"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGNATURE_ALGO.string.text
+msgctxt "certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGNATURE_ALGO.string.text"
+msgid "Signature Algorithm"
+msgstr "Алгоритам потписа"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_THUMBPRINT_SHA1.string.text
+msgid "Thumbprint SHA1"
+msgstr "СХА1 отисак прста"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_THUMBPRINT_MD5.string.text
+msgid "Thumbprint MD5"
+msgstr "МД5 отисак прста"
+
+#: certificateviewer.src#RID_XMLSECTP_CERTPATH.FT_CERTPATH.fixedtext.text
+msgid "Certification path"
+msgstr "Путања сертификације"
+
+#: certificateviewer.src#RID_XMLSECTP_CERTPATH.BTN_VIEWCERT.pushbutton.text
+msgctxt "certificateviewer.src#RID_XMLSECTP_CERTPATH.BTN_VIEWCERT.pushbutton.text"
+msgid "View Certificate..."
+msgstr "Погледај сертификат..."
+
+#: certificateviewer.src#RID_XMLSECTP_CERTPATH.FT_CERTSTATUS.fixedtext.text
+msgid "Certification status"
+msgstr "Стање сертификације"
+
+#: certificateviewer.src#RID_XMLSECTP_CERTPATH.STR_PATH_CERT_OK.string.text
+msgid "The certificate is OK."
+msgstr "Сертификат је у реду."
+
+#: certificateviewer.src#RID_XMLSECTP_CERTPATH.STR_PATH_CERT_NOT_VALIDATED.string.text
+msgctxt "certificateviewer.src#RID_XMLSECTP_CERTPATH.STR_PATH_CERT_NOT_VALIDATED.string.text"
+msgid "The certificate could not be validated."
+msgstr "Није било могуће потврдити сертификат."
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_DOC.fixedtext.text
+msgid "The following have signed the document content:"
+msgstr "Садржај документа су потписали:"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_BASIC.fixedtext.text
+msgid "The following have signed the document macro:"
+msgstr "Макро документа су потписали:"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_PACK.fixedtext.text
+msgid "The following have signed this package:"
+msgstr "Овај пакет су потписали:"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_HEADERBAR.string.text
+msgid "\tSigned by\tDigital ID issued by\tDate"
+msgstr "\tПотписано\tИздавач сертификата\tДатум"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_VALID_SIGNATURE.string.text
+msgid "Valid signature"
+msgstr "Важећи потпис"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_NO_INFO_TO_VERIFY.string.text
+msgid "Certificate could not be validated"
+msgstr "Није било могуће проверити сертификат"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_INVALID_SIGNATURE.string.text
+msgctxt "digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_INVALID_SIGNATURE.string.text"
+msgid "The signatures in this document are invalid"
+msgstr "Потписи у овом документу нису важећи"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_VALID.fixedtext.text
+msgid "The signatures in this document are valid"
+msgstr "Потписи у овом документу су важећи"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_OLDSIGNATURE.fixedtext.text
+msgid "Not all parts of the document are signed"
+msgstr "Нису потписани сви делови документа"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_BROKEN.fixedtext.text
+msgctxt "digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_BROKEN.fixedtext.text"
+msgid "The signatures in this document are invalid"
+msgstr "Потписи у овом документу нису важећи"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_VIEWCERT.pushbutton.text
+msgctxt "digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_VIEWCERT.pushbutton.text"
+msgid "View Certificate..."
+msgstr "Погледај сертификат..."
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_ADDCERT.pushbutton.text
+msgid "Sign Document..."
+msgstr "Потпиши документ..."
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_REMOVECERT.pushbutton.text
+msgctxt "digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_REMOVECERT.pushbutton.text"
+msgid "Remove"
+msgstr "Уклони"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_OK.okbutton.text
+msgid "Close"
+msgstr "Затвори"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.modaldialog.text
+msgid "Digital Signatures"
+msgstr "Електронски потписи"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_OLD_ODF_FORMAT.errorbox.text
+msgid ""
+"This document contains signatures in ODF 1.1 (OpenOffice.org 2.x) format. "
+"Signing documents in %PRODUCTNAME %PRODUCTVERSION requires ODF 1.2 format "
+"version. Thus no signatures can be added or removed to this document.\n"
+"\n"
+"Save document in ODF 1.2 format and add all desired signatures again."
+msgstr ""
+"Овај документ садржи потписе у формату ОДФ 1.1 (OpenOffice.org 2.x). "
+"Потписивање докумената у %PRODUCTNAME %PRODUCTVERSION захтева ОДФ 1.2 издање "
+"формата. Стога не можете додати или уклонити потписе у овом документу.\n"
+"\n"
+"Сачувајте документ у ОДФ 1.2 формату и додајте све жељене потписе поново."
+
+#: digitalsignaturesdialog.src#MSG_XMLSECDLG_QUERY_REMOVEDOCSIGNBEFORESIGN.querybox.text
+msgid ""
+"Adding or removing a macro signature will remove all document signatures.\n"
+"Do you really want to continue?"
+msgstr ""
+"Додавање или уклањање потписа макроа ће уклонити све постојеће потписе.\n"
+"Желите ли да наставите?"
+
+#: macrosecurity.src#RID_XMLSECTP_MACROSEC.1.RID_XMLSECTP_SECLEVEL.pageitem.text
+msgid "Security Level"
+msgstr "Сигурносни ниво"
+
+#: macrosecurity.src#RID_XMLSECTP_MACROSEC.1.RID_XMLSECTP_TRUSTSOURCES.pageitem.text
+msgid "Trusted Sources"
+msgstr "Поверење"
+
+#: macrosecurity.src#RID_XMLSECTP_MACROSEC.BTN_RESET.pushbutton.text
+msgid "Reset"
+msgstr "Ресетуј"
+
+#: macrosecurity.src#RID_XMLSECTP_MACROSEC.tabdialog.text
+msgid "Macro Security"
+msgstr "Сигурност макроа"
+
+#: macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.radiobutton.text
+msgid ""
+"~Very high.\n"
+"Only macros from trusted file locations are allowed to run. All other "
+"macros, regardless whether signed or not, are disabled."
+msgstr ""
+"~Врло висока.\n"
+"Дозвољено је покретање само макроа који потичу са поверљивих локација "
+"датотека. Сви остали макрои су онемогућени, без обзира на то да ли су "
+"потписани или не."
+
+#: macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.radiobutton.text
+msgid ""
+"H~igh.\n"
+"Only signed macros from trusted sources are allowed to run. Unsigned macros "
+"are disabled."
+msgstr ""
+"В~исока.\n"
+"Дозвољено је покретање само потписаних макроа из поверљивих извора. "
+"Непотписани макрои су онемогућени."
+
+#: macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.radiobutton.text
+msgid ""
+"~Medium.\n"
+"Confirmation required before executing macros from untrusted sources."
+msgstr ""
+"Сред~ња.\n"
+"Ручна потврда пре покретања макроа из неповерљивих извора."
+
+#: macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.radiobutton.text
+msgid ""
+"~Low (not recommended).\n"
+"All macros will be executed without confirmation. Use this setting only if "
+"you are certain that all documents that will be opened are safe."
+msgstr ""
+"Нис~ка (није препоручљиво).\n"
+"Сви макрои ће бити извршени без икакве потврде. Користите ово подешавање "
+"само ако сте сигурни да су сви документи који се отварају безбедни."
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.fixedline.text
+msgid "Trusted certificates"
+msgstr "Сертификати"
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.STR_HEADERBAR.string.text
+msgctxt "macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.STR_HEADERBAR.string.text"
+msgid "Issued to\tIssued by\tExpiration date"
+msgstr "Издато за\tОд стране\tВажи до"
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_ADD_TRUSTCERT.pushbutton.text
+msgctxt "macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_ADD_TRUSTCERT.pushbutton.text"
+msgid "Add..."
+msgstr "Додај..."
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_VIEW_TRUSTCERT.pushbutton.text
+msgid "View..."
+msgstr "Погледај..."
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_REMOVE_TRUSTCERT.pushbutton.text
+msgctxt "macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_REMOVE_TRUSTCERT.pushbutton.text"
+msgid "Remove"
+msgstr "Уклони"
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTFILELOC.fixedline.text
+msgid "Trusted file locations"
+msgstr "Места датотека"
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FI_TRUSTFILELOC.fixedtext.text
+msgid ""
+"Document macros are always executed if they have been opened from one of the "
+"following locations."
+msgstr ""
+"Макрои ће увек бити покренути када се датотека отвара са наведених места или "
+"подфасцикли унутар њих."
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_ADD_TRUSTFILELOC.pushbutton.text
+msgctxt "macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_ADD_TRUSTFILELOC.pushbutton.text"
+msgid "Add..."
+msgstr "Додај..."
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_REMOVE_TRUSTFILELOC.pushbutton.text
+msgctxt "macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_REMOVE_TRUSTFILELOC.pushbutton.text"
+msgid "Remove"
+msgstr "Уклони"
+
+#: macrosecurity.src#RID_XMLSECTP_READONLY_CONFIG_TIP.string.text
+msgid "This setting is protected by the Administrator"
+msgstr "Подешавање је заштићено са стране администратора"
+
+#: warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR1A.fixedtext.text
+msgid "The document contains document macros signed by:"
+msgstr "Документ садржи макрое потписани на име:"
+
+#: warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR1B.fixedtext.text
+msgid "The document contains document macros."
+msgstr "Документ садржи макрое."
+
+#: warnings.src#RID_XMLSECTP_MACROWARN.PB_VIEWSIGNS.pushbutton.text
+msgid "View Signatures..."
+msgstr "Погледај потписе..."
+
+#: warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR2.fixedtext.text
+msgid ""
+"Macros may contain viruses. Disabling macros for a document is always save. "
+"If you disable macros you may lose functionality provided by the document "
+"macros."
+msgstr ""
+"Макрои могу да садрже вирусе. Онемогућавање макроа документа је увек "
+"сигурно. Уколико искључите макрое можете изгубити функционалност коју макро "
+"пружа документу."
+
+#: warnings.src#RID_XMLSECTP_MACROWARN.CB_ALWAYSTRUST.checkbox.text
+msgid "Always trust macros from this source"
+msgstr "Увек веруј макроима са овог извора"
+
+#: warnings.src#RID_XMLSECTP_MACROWARN.PB_ENABLE.pushbutton.text
+msgid "Enable Macros"
+msgstr "Омогући маркое"
+
+#: warnings.src#RID_XMLSECTP_MACROWARN.PB_DISABLE.cancelbutton.text
+msgid "Disable Macros"
+msgstr "Онемогући макрое"
+
+#: warnings.src#RID_XMLSECTP_MACROWARN.modaldialog.text
+msgid "Security Warning"
+msgstr "Безбедносно упозорење"
+
+#: warnbox.src#RID_XMLSECWB_NO_MOZILLA_PROFILE.warningbox.text
+msgid ""
+"Digital signatures functionality could not be used, because no Mozilla user "
+"profile was found. Please check the Mozilla installation."
+msgstr ""
+"Не можете користити електронске потписе јер није пронађен кориснички профил "
+"у Мозилиним програмима. Прегледајте инсталацију неког од Мозилиних програма."

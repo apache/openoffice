@@ -1,0 +1,982 @@
+
+#: dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.string.text
+msgid "Properties: "
+msgstr "లక్షణాలు"
+
+#: dlgresid.src#RID_STR_BRWTITLE_NO_PROPERTIES.string.text
+msgid "No Control marked"
+msgstr "నియంత్రణను గుర్తించబడలేదు"
+
+#: dlgresid.src#RID_STR_BRWTITLE_MULTISELECT.string.text
+msgid "Multiselection"
+msgstr "ఎక్కువ ఎంపిక "
+
+#: managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_LANGUAGE.fixedtext.text
+msgid "Present Languages"
+msgstr "ప్రస్తుత భాషలు"
+
+#: managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_ADD_LANG.pushbutton.text
+msgid "Add..."
+msgstr "కలుపు"
+
+#: managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_DEL_LANG.pushbutton.text
+msgid "Delete"
+msgstr "తీసివేయు"
+
+#: managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_MAKE_DEFAULT.pushbutton.text
+msgid "Default"
+msgstr "అప్రమేయం"
+
+#: managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.fixedtext.text
+msgid ""
+"The default language is used if no localization for a user interface locale "
+"is present. Furthermore all strings from the default language are copied to "
+"resources of newly added languages."
+msgstr "కొరకు నుండి కు."
+
+#: managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.okbutton.text
+msgid "~Close"
+msgstr "మూయుము"
+
+#: managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DEF_LANG.string.text
+msgid "[Default Language]"
+msgstr "[Default Language]"
+
+#: managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DELETE.string.text
+msgid "~Delete"
+msgstr "(~D) తొలగించుము"
+
+#: managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_CREATE_LANG.string.text
+msgid "<Press 'Add' to create language resources>"
+msgstr "<భాషా వనరులను సృష్టించుటకు 'జతచేయి' నొక్కుము>"
+
+#: managelang.src#RID_DLG_MANAGE_LANGUAGE.modaldialog.text
+msgid "Manage User Interface Languages [$1]"
+msgstr "వినియోగదారి ఇంటర్‌ఫేస్ భాషలను [$1] నిర్వహించుము"
+
+#: managelang.src#RID_QRYBOX_LANGUAGE.querybox.text
+msgid ""
+"You are about to delete the resources for the selected language(s). All user "
+"interface strings for this language(s) will be deleted.\n"
+"\n"
+"Do you want to delete the resources of the selected language(s)?"
+msgstr ""
+"ఎంపికచేసిన భాష(ల) కొరకు వనరులను తొలగించబోతున్నారు. ఈ భాష(ల) కొరకు అన్ని "
+"వినియోగదారి ఇంటర్‌ఫేస్ స్ట్రింగులు తొలగించబడతాయి.\n"
+"\n"
+"ఎంపికచేసిన భాష(ల) యొక్క వనరులను మీరు తొలగించుదామని అనుకొనుచున్నారా?"
+
+#: managelang.src#RID_QRYBOX_LANGUAGE.querybox.title
+msgid "Delete Language Resources"
+msgstr "భాషా వనరులను తొలగించుము"
+
+#: managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_LANGUAGE.fixedtext.text
+msgid "Default language"
+msgstr "అప్రమేయ భాష"
+
+#: managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.fixedtext.text
+msgid ""
+"Select a language to define the default user interface language. All "
+"currently present strings will be assigned to the resources created for the "
+"selected language."
+msgstr ""
+"అప్రమేయ వినియోగదారి ఇంటర్ఫేస్ భాష నిర్వచించుటకు భాషను యెంపికచేయుము. అన్ని "
+"ప్రస్తుతము వున్నటువంటి స్ట్రింగులు ఎంపికచేసిన భాషకొరకు సృష్టించబడిన వనరులకు "
+"అప్పగించబడతాయి."
+
+#: managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_TITLE.string.text
+msgid "Add User Interface Languages"
+msgstr "వినియోగదారి ఇంటర్‌ఫేస్ భాషలను"
+
+#: managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_LABEL.string.text
+msgid "Available Languages"
+msgstr "అందుబాటులోవున్న భాషలు"
+
+#: managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_INFO.string.text
+msgid ""
+"Select languages to be added. Resources for these languages will be created "
+"in the library. Strings of the current default user interface language will "
+"be copied to these new resources by default."
+msgstr "ఎంపిక కొరకు లోపల కు దాని బట్టి."
+
+#: managelang.src#RID_DLG_SETDEF_LANGUAGE.modaldialog.text
+msgid "Set Default User Interface Language"
+msgstr "అప్రమేయ వినియోగదారి యింటర్ఫేస్ భాషను అమర్చుము"
+"X-Accelerator-Marker: ~\n"
+
+#: basicprint.src#RID_PRINTDLG_STRLIST.1.itemlist.text
+msgid "Print range"
+msgstr "ముద్రణ విస్తృతి"
+
+#: basicprint.src#RID_PRINTDLG_STRLIST.2.itemlist.text
+msgid "All ~Pages"
+msgstr "అన్ని పేజీలు (~P)"
+
+#: basicprint.src#RID_PRINTDLG_STRLIST.3.itemlist.text
+msgid "Pa~ges"
+msgstr "పేజీలు (g~)"
+
+#: basidesh.src#RID_STR_FILTER_ALLFILES.string.text
+msgid "<All>"
+msgstr "<అన్ని>"
+
+#: basidesh.src#RID_STR_NOMODULE.string.text
+msgid "< No Module >"
+msgstr "<అధిభాగం లేదు>"
+
+#: basidesh.src#RID_STR_WRONGPASSWORD.string.text
+msgid "Incorrect Password"
+msgstr "తప్పిదమైన రహస్యపదం"
+
+#: basidesh.src#RID_STR_OPEN.string.text
+msgid "Load"
+msgstr "దిగుమతి"
+
+#: basidesh.src#RID_STR_SAVE.string.text
+msgid "Save"
+msgstr "దాచు"
+
+#: basidesh.src#RID_STR_SOURCETOBIG.string.text
+msgid ""
+"The source text is too large and can be neither compiled nor saved.\n"
+"Delete some of the comments or transfer some methods into another module."
+msgstr ""
+"మూలాధార పాఠము చాలా పెద్దదిగా ఉన్నది కావున దీనిని క్రోడీకరించడం మరియు పొదుపు "
+"చేయడం సాధ్యం కాదు.\n"
+"కొన్ని వ్యాఖ్యలను తొలగించు లేద కొన్ని పద్ధతులను అధిభాగమునకు బదిలి చేయుము."
+
+#: basidesh.src#RID_STR_ERROROPENSTORAGE.string.text
+msgid "Error opening file"
+msgstr "దోషం తెరుచుచున్న దస్త్రం"
+
+#: basidesh.src#RID_STR_ERROROPENLIB.string.text
+msgid "Error loading library"
+msgstr "దోషం దిగుమతి గ్రంధాలయం"
+
+#: basidesh.src#RID_STR_NOLIBINSTORAGE.string.text
+msgid "The file does not contain any BASIC libraries"
+msgstr "దన్త్రము బేసిక్ గ్రంధాలయములను కలిగియుండదు"
+
+#: basidesh.src#RID_STR_BADSBXNAME.string.text
+msgid "Invalid Name"
+msgstr "నిస్సారమైన నామము"
+
+#: basidesh.src#RID_STR_LIBNAMETOLONG.string.text
+msgid "A library name can have up to 30 characters."
+msgstr "గ్రంధాలయము యొక్క నామము 30 అక్షరముల వరకు కలిగియుండును."
+
+#: basidesh.src#RID_STR_ERRORCHOOSEMACRO.string.text
+msgid "Macros from other documents are not accessible."
+msgstr "ఇతర పత్రముల నుండి స్ధూలములను సాంగత్యం చేయలేము."
+
+#: basidesh.src#RID_STR_LIBISREADONLY.string.text
+msgid "This library is read-only."
+msgstr "ఈ గ్రంధాలయం చదువుటకు మాత్రమే."
+
+#: basidesh.src#RID_STR_REPLACELIB.string.text
+msgid "'XX' cannot be replaced."
+msgstr "'XX' ను పునఃస్థాపించబడదు."
+
+#: basidesh.src#RID_STR_IMPORTNOTPOSSIBLE.string.text
+msgid "'XX' cannot be added."
+msgstr "'XX' ను కలపబడదు."
+
+#: basidesh.src#RID_STR_NOIMPORT.string.text
+msgid "'XX' was not added."
+msgstr "'XX' కలపలేము."
+
+#: basidesh.src#RID_STR_ENTERPASSWORD.string.text
+msgid "Enter password for 'XX'"
+msgstr "'XX' కొరకు రహస్యపదమును ప్రవేశపెట్టు."
+
+#: basidesh.src#RID_STR_SBXNAMEALLREADYUSED.string.text
+msgid "Name already exists"
+msgstr "నామము ముందుగానే వున్నది"
+
+#: basidesh.src#RID_STR_SIGNED.string.text
+msgid "(Signed)"
+msgstr "(సంతకం చేసెను)"
+
+#: basidesh.src#RID_STR_SBXNAMEALLREADYUSED2.string.text
+msgid "Object with same name already exists"
+msgstr "తాత్పర్యము తో మార్పు లేని నామము ముందుగానే వున్నది."
+
+#: basidesh.src#RID_STR_FILEEXISTS.string.text
+msgid "The 'XX' file already exists"
+msgstr "'XX' దస్త్రము ముందుగానే వున్నది"
+
+#: basidesh.src#RID_STR_CANNOTRUNMACRO.string.text
+msgid ""
+"For security reasons, you cannot run this macro.\n"
+"\n"
+"For more information, check the security settings."
+msgstr ""
+"తనిఖీ కారణాల కొరకు,నీవు స్థూలమును నడుపలేవు.\n"
+"\n"
+"ఎక్కువ సమాచారము కొరకు,అమరికల తనిఖీ చేయుము."
+
+#: basidesh.src#RID_STR_COMPILEERROR.string.text
+msgid "Compile Error: "
+msgstr "క్రోడీకరించుటయందు తప్పు :"
+
+#: basidesh.src#RID_STR_RUNTIMEERROR.string.text
+msgid "Runtime Error: #"
+msgstr "నడుపునపుడు దోషము:  #"
+
+#: basidesh.src#RID_STR_SEARCHNOTFOUND.string.text
+msgid "Search key not found"
+msgstr " వెతుకు మీట దొరకలేదు"
+
+#: basidesh.src#RID_STR_SEARCHFROMSTART.string.text
+msgid "Search to last module complete. Continue at first module?"
+msgstr "చివరి అధిభాగమును వెతుకుము.మొదటి అధిభాగములో కొనసాగించు?"
+
+#: basidesh.src#RID_STR_SEARCHREPLACES.string.text
+msgid "Search key replaced XX times"
+msgstr "వెతుకు మీటను XX సార్లు పునఃస్థాపించారు"
+
+#: basidesh.src#RID_STR_COULDNTREAD.string.text
+msgid "The file could not be read"
+msgstr "దస్త్రమును చదువుట సాధ్యము కాదు"
+
+#: basidesh.src#RID_STR_COULDNTWRITE.string.text
+msgid "The file could not be saved"
+msgstr "దస్త్రమును దాచుటకు సాధ్యము కాదు"
+
+#: basidesh.src#RID_STR_CANNOTCHANGENAMESTDLIB.string.text
+msgid "The name of the default library cannot be changed."
+msgstr "అప్రమేయము యొక్క గ్రంధాలయ నామమును మార్పు చేయుట సాధ్యపడదు."
+
+#: basidesh.src#RID_STR_CANNOTCHANGENAMEREFLIB.string.text
+msgid "The name of a referenced library cannot be changed."
+msgstr "నివేదన యొక్క గ్రంధాలయ నామమును మార్పు చేయుట సాధ్యపడదు."
+
+#: basidesh.src#RID_STR_CANNOTUNLOADSTDLIB.string.text
+msgid "The default library cannot be deactivated"
+msgstr "అప్రమేయ గ్రంధాలయం క్రియాహీనము చేయబడదు"
+
+#: basidesh.src#RID_STR_GENERATESOURCE.string.text
+msgid "Generating source"
+msgstr "వనరు ఉత్పత్తిచేయుచున్నది"
+
+#: basidesh.src#RID_STR_FILENAME.string.text
+msgid "File name:"
+msgstr "దస్త్రపు నామము:"
+
+#: basidesh.src#RID_STR_APPENDLIBS.string.text
+msgid "Import Libraries"
+msgstr "గ్రంధాలయములను దిగుమతిచేయి"
+
+#: basidesh.src#RID_STR_QUERYDELMACRO.string.text
+msgid "Do you want to delete the macro XX?"
+msgstr "నీవు మాక్రో XX తీసివేయాలని అనుకుంటున్నావా?"
+
+#: basidesh.src#RID_STR_QUERYDELDIALOG.string.text
+msgid "Do you want to delete the XX dialog?"
+msgstr "నీవు XX వివరణనను తీసివేయాలని అనుకుంటున్నావా?"
+
+#: basidesh.src#RID_STR_QUERYDELLIB.string.text
+msgid "Do you want to delete the XX library?"
+msgstr "నీవు XX గ్రంధాలయమును తీసివేయాలని అనుకుంటున్నావా?"
+
+#: basidesh.src#RID_STR_QUERYDELLIBREF.string.text
+msgid "Do you want to delete the reference to the XX library?"
+msgstr "నీవు XX గ్రంధాలయము యొక్క నివేదనను తీసివేయాలని అనుకుంటున్నావా?"
+
+#: basidesh.src#RID_STR_QUERYDELMODULE.string.text
+msgid "Do you want to delete the XX module?"
+msgstr "నీవు XX మాడ్యూల్‌ను తీసివేయాలని అనుకుంటున్నావా?"
+
+#: basidesh.src#RID_STR_OBJNOTFOUND.string.text
+msgid "Object or method not found"
+msgstr "ఆబ్జక్టు లేక పద్దతి కనుగొనలేదు"
+
+#: basidesh.src#RID_STR_BASIC.string.text
+msgid "BASIC"
+msgstr "ప్రాధమిక"
+
+#: basidesh.src#RID_STR_LINE.string.text
+msgid "Ln"
+msgstr "Ln"
+
+#: basidesh.src#RID_STR_COLUMN.string.text
+msgid "Col"
+msgstr "Col"
+
+#: basidesh.src#RID_STR_DOC.string.text
+msgid "Document"
+msgstr "పత్రం"
+
+#: basidesh.src#RID_BASICIDE_OBJECTBAR.string.text
+msgid "Macro Bar"
+msgstr "స్థాలము పట్టీ"
+
+#: basidesh.src#RID_STR_CANNOTCLOSE.string.text
+msgid "The window cannot be closed while BASIC is running."
+msgstr "బేసిక్ నడుస్తుండంగా గవాక్షమును మూసివేయబడదు."
+
+#: basidesh.src#RID_STR_REPLACESTDLIB.string.text
+msgid "The default library cannot be replaced."
+msgstr "అప్రమేయ గ్రంధాలయం పునఃస్థాపించుట సాధ్యము కాదు."
+
+#: basidesh.src#RID_STR_REFNOTPOSSIBLE.string.text
+msgid "Reference to 'XX' not possible."
+msgstr "నివేదనకు 'XX' సాధ్యము కాదు"
+
+#: basidesh.src#RID_STR_WATCHNAME.string.text
+msgid "Watch"
+msgstr "నిఘా"
+
+#: basidesh.src#RID_STR_WATCHVARIABLE.string.text
+msgid "Variable"
+msgstr "చరరాశి"
+
+#: basidesh.src#RID_STR_WATCHVALUE.string.text
+msgid "Value"
+msgstr "విలువ"
+
+#: basidesh.src#RID_STR_WATCHTYPE.string.text
+msgid "Type"
+msgstr "రకం"
+
+#: basidesh.src#RID_STR_STACKNAME.string.text
+msgid "Call Stack"
+msgstr "దొంతర పిలుచు"
+
+#: basidesh.src#RID_STR_INITIDE.string.text
+msgid "BASIC Initialization"
+msgstr "బేసిక్ సంసిద్ధపరుచు"
+
+#: basidesh.src#RID_STR_STDMODULENAME.string.text
+msgid "Module"
+msgstr "మాడ్యూల్"
+
+#: basidesh.src#RID_STR_STDDIALOGNAME.string.text
+msgctxt "basidesh.src#RID_STR_STDDIALOGNAME.string.text"
+msgid "Dialog"
+msgstr "డైలాగ్"
+
+#: basidesh.src#RID_STR_STDLIBNAME.string.text
+msgid "Library"
+msgstr "గ్రంధాలయం"
+
+#: basidesh.src#RID_STR_NEWLIB.string.text
+msgid "New Library"
+msgstr "క్రొత్త గ్రంధాలయం"
+
+#: basidesh.src#RID_STR_NEWMOD.string.text
+msgid "New Module"
+msgstr "క్రొత్త అధిభాగం"
+
+#: basidesh.src#RID_STR_NEWDLG.string.text
+msgid "New Dialog"
+msgstr "క్రొత్త వివరణ"
+
+#: basidesh.src#RID_STR_ALL.string.text
+msgid "All"
+msgstr "అన్ని"
+
+#: basidesh.src#RID_STR_PAGE.string.text
+msgid "Page"
+msgstr "పుట"
+
+#: basidesh.src#RID_STR_MACRONAMEREQ.string.text
+msgid "A name must be entered."
+msgstr "ఒక నామమును ఖచ్ఛితముగా ప్రవేశించవలెను."
+
+#: basidesh.src#RID_STR_WILLSTOPPRG.string.text
+msgid ""
+"You will have to restart the program after this edit.\n"
+"Continue?"
+msgstr ""
+"సరిచేసిన తరువాత నీవు ఖచ్చితమముగా కార్యక్రమమును మళ్ళీప్రారంభం చేయాలి.\n"
+"కొనసాగుట?"
+
+#: basidesh.src#RID_STR_SEARCHALLMODULES.string.text
+msgid "Do you want to replace the text in all active modules?"
+msgstr "నీవు అన్ని క్రియాహీన అధిభాగముల పాఠమును పునఃస్థాపించాలనుకుంటున్నావ?"
+
+#: basidesh.src#RID_IMGBTN_REMOVEWATCH.imagebutton.text
+msgid "-"
+msgstr "-"
+
+#: basidesh.src#RID_IMGBTN_REMOVEWATCH.imagebutton.quickhelptext
+msgid "Remove Watch"
+msgstr "నిఘా తొలగించు"
+
+#: basidesh.src#RID_STR_REMOVEWATCH.string.text
+msgid "Watch:"
+msgstr "నిఘా:"
+
+#: basidesh.src#RID_STR_STACK.string.text
+msgid "Calls: "
+msgstr "పిలుపులు:"
+
+#: basidesh.src#RID_STR_USERMACROS.string.text
+msgid "My Macros"
+msgstr "నా యొక్క స్థూలములు "
+
+#: basidesh.src#RID_STR_USERDIALOGS.string.text
+msgid "My Dialogs"
+msgstr "నా యొక్క వివరణలు "
+
+#: basidesh.src#RID_STR_USERMACROSDIALOGS.string.text
+msgid "My Macros & Dialogs"
+msgstr "నా యొక్క స్థూలములు మరియు వివరణలు"
+
+#: basidesh.src#RID_STR_SHAREMACROS.string.text
+msgid "%PRODUCTNAME Macros"
+msgstr "%PRODUCTNAME స్థూలములు"
+
+#: basidesh.src#RID_STR_SHAREDIALOGS.string.text
+msgid "%PRODUCTNAME Dialogs"
+msgstr "%PRODUCTNAME వివరణలు"
+
+#: basidesh.src#RID_STR_SHAREMACROSDIALOGS.string.text
+msgid "%PRODUCTNAME Macros & Dialogs"
+msgstr "%PRODUCTNAME స్థూలములు మరియు వివరణలు"
+
+#: basidesh.src#RID_POPUP_BRKPROPS.RID_ACTIV.menuitem.text
+msgctxt "basidesh.src#RID_POPUP_BRKPROPS.RID_ACTIV.menuitem.text"
+msgid "Active"
+msgstr "క్రియాశీలముచేయి"
+
+#: basidesh.src#RID_POPUP_BRKPROPS.RID_BRKPROPS.menuitem.text
+msgctxt "basidesh.src#RID_POPUP_BRKPROPS.RID_BRKPROPS.menuitem.text"
+msgid "Properties..."
+msgstr "లక్షణాలు..."
+
+#: basidesh.src#RID_POPUP_BRKPROPS.menu.text
+#, fuzzy
+msgid "Properties"
+msgstr "లక్షణాలు"
+
+#: basidesh.src#RID_POPUP_BRKDLG.RID_BRKDLG.menuitem.text
+msgid "Manage Breakpoints..."
+msgstr "నిలుపు బిందువులను నిర్వహించు..."
+
+#: basidesh.src#RID_POPUP_BRKDLG.menu.text
+msgctxt "basidesh.src#RID_POPUP_BRKDLG.menu.text"
+msgid "Manage Breakpoints"
+msgstr "నిలుపు బిందువులను నిర్వహించు"
+
+#: basidesh.src#RID_POPUP_TABBAR.RID_INSERT.SID_BASICIDE_NEWMODULE.menuitem.text
+msgid "BASIC Module"
+msgstr "బేసిక్ మాడ్యూల్"
+
+#: basidesh.src#RID_POPUP_TABBAR.RID_INSERT.SID_BASICIDE_NEWDIALOG.menuitem.text
+msgid "BASIC Dialog"
+msgstr "బేసిక్ సంభాషణ"
+
+#: basidesh.src#RID_POPUP_TABBAR.RID_INSERT.menuitem.text
+msgid "Insert"
+msgstr "ప్రవేశించు"
+
+#: basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_DELETECURRENT.menuitem.text
+msgctxt "basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_DELETECURRENT.menuitem.text"
+msgid "Delete"
+msgstr "తీసివేయు"
+
+#: basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_RENAMECURRENT.menuitem.text
+msgctxt "basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_RENAMECURRENT.menuitem.text"
+msgid "Rename"
+msgstr "పునర్నామకరణ"
+
+#: basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_HIDECURPAGE.menuitem.text
+msgid "Hide"
+msgstr "మరుగునవుంచు"
+
+#: basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_MODULEDLG.menuitem.text
+msgid "Modules..."
+msgstr "మాడ్యూళ్ళు..."
+
+#: basidesh.src#RID_POPUP_DLGED.SID_SHOW_PROPERTYBROWSER.menuitem.text
+msgctxt "basidesh.src#RID_POPUP_DLGED.SID_SHOW_PROPERTYBROWSER.menuitem.text"
+msgid "Properties..."
+msgstr "లక్షణాలు..."
+
+#: basidesh.src#RID_STR_QUERYREPLACEMACRO.string.text
+msgid "Do you want to overwrite the XX macro?"
+msgstr "నీవు XX స్థూలమును చెరిపిరాత చేయాలని అనుకుంటున్నావా?"
+
+#: basidesh.src#RID_STR_TRANSLATION_NOTLOCALIZED.string.text
+msgid "<Not localized>"
+msgstr "<స్థానీకరించని>"
+
+#: basidesh.src#RID_STR_TRANSLATION_DEFAULT.string.text
+msgid "[Default Language]"
+msgstr "[అప్రమేయ భాష]"
+
+#: basidesh.src#RID_STR_DOCUMENT_OBJECTS.string.text
+msgid "Document Objects"
+msgstr "పత్రము ఆబ్జక్టులు"
+
+#: basidesh.src#RID_STR_USERFORMS.string.text
+msgid "Forms"
+msgstr "ఫారములు"
+
+#: basidesh.src#RID_STR_NORMAL_MODULES.string.text
+msgctxt "basidesh.src#RID_STR_NORMAL_MODULES.string.text"
+msgid "Modules"
+msgstr "మాడ్యూళ్ళు"
+
+#: basidesh.src#RID_STR_CLASS_MODULES.string.text
+msgid "Class Modules"
+msgstr "క్లాస్ మాడ్యూళ్ళు"
+
+#: basidesh.src#RID_STR_DLGIMP_CLASH_RENAME.string.text
+msgctxt "basidesh.src#RID_STR_DLGIMP_CLASH_RENAME.string.text"
+msgid "Rename"
+msgstr "పునర్నామకరణ"
+
+#: basidesh.src#RID_STR_DLGIMP_CLASH_REPLACE.string.text
+msgid "Replace"
+msgstr "పునఃస్థాపించు"
+
+#: basidesh.src#RID_STR_DLGIMP_CLASH_TITLE.string.text
+msgid "Dialog Import - Name already used"
+msgstr "డైలాగ్ దిగుమతి - నామము యిప్పటికే వుపయోగించబడింది."
+
+#: basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.string.text
+msgid ""
+"The library already contains a dialog with the name:\n"
+"\n"
+"$(ARG1)\n"
+"\n"
+"Rename dialog to keep current dialog or replace existing dialog.\n"
+" "
+msgstr ""
+"లైబ్రరీ యిప్పటికే ఆ నామముతో డైలాగును కలిగివుంది:\n"
+"\n"
+"$(ARG1)\n"
+"\n"
+"ప్రస్తుత డైలాగును కలిగివుండుటకు ఆ డైలాగును పునఃనామకరణ చేయుము లేదా వున్న "
+"డైలాగ్‌ను పునఃస్థాపించుము.\n"
+" "
+
+#: basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.string.text
+msgid "Add"
+msgstr "జతచేయి"
+
+#: basidesh.src#RID_STR_DLGIMP_MISMATCH_OMIT.string.text
+msgid "Omit"
+msgstr "వదిలివేయి"
+
+#: basidesh.src#RID_STR_DLGIMP_MISMATCH_TITLE.string.text
+msgid "Dialog Import - Language Mismatch"
+msgstr "డైలాగ్ దిగుమతి - భాష సరిపోలలేదు."
+
+#: basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.string.text
+msgid ""
+"The dialog to be imported supports other languages than the target library.\n"
+"\n"
+"Add these languages to the library to keep additional language resources "
+"provided by the dialog or omit them to stay with the current library "
+"languages.\n"
+"\n"
+"Note: For languages not supported by the dialog the resources of the "
+"dialog's default language will be used.\n"
+" "
+msgstr ""
+"దిగుమతి చేయు డైలాగ్ లక్ష్యపు లైబ్రరీ కన్నా యితర భాషలను మద్దతిస్తుంది.\n"
+"\n"
+"డైలాగు ద్వారా అందించబడు అదనపు భాషా మూలాలను కలగివుండుటకు ఈ భాషలను లైబ్రరీకు "
+"జతచేయుము లేదా ప్రస్తుత లైబ్రరీ భాషలతోనే వుండుటకు వాటిని వదిలివేయుము.\n"
+"\n"
+"గమనిక: డైలాగు ద్వారా మద్దతీయబడని భాషల కొరకు, డైలాగు ఆప్రమేయ భాషా మూలములు "
+"వుపయోగించబడతాయి.\n"
+" "
+
+#: brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_NEW.pushbutton.text
+msgid "New"
+msgstr "క్రొత్త"
+
+#: brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_DEL.pushbutton.text
+msgctxt "brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_DEL.pushbutton.text"
+msgid "Delete"
+msgstr "తీసివేయు"
+
+#: brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_CHKB_ACTIVE.checkbox.text
+msgctxt "brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_CHKB_ACTIVE.checkbox.text"
+msgid "Active"
+msgstr "క్రియాశీలముచేయి"
+
+#: brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_PASS.fixedtext.text
+msgid "Pass Count:"
+msgstr "విజయముల లెక్క :"
+
+#: brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_BRKPOINTS.fixedtext.text
+msgid "Breakpoints"
+msgstr "నిలుపు బిందువులు"
+
+#: brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.modaldialog.text
+msgctxt "brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.modaldialog.text"
+msgid "Manage Breakpoints"
+msgstr "నిలుపు బిందువులను నిర్వహించు"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACROSIN.fixedtext.text
+msgid "Existing macros ~in:"
+msgstr "(~i) కలిగియున్న స్థూలం:"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACRONAME.fixedtext.text
+msgid "~Macro name"
+msgstr "(~M) స్థూల నామము"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACROFROM.fixedtext.text
+msgid "Macro ~from"
+msgstr "(~f) స్థూలనుండి"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_TXT_SAVEMACRO.fixedtext.text
+msgid "Save m~acro in"
+msgstr "(~a) స్ధూలమును దాచు"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_TXT_DESCRIPTION.fixedtext.text
+msgid "De~scription"
+msgstr "(~D) వివరణ"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_PB_RUN.pushbutton.text
+msgid "R~un"
+msgstr "(~u) నడుపు"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_PB_CLOSE.cancelbutton.text
+msgctxt "macrodlg.src#RID_MACROCHOOSER.RID_PB_CLOSE.cancelbutton.text"
+msgid "Close"
+msgstr "మూయుము"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_PB_ASSIGN.pushbutton.text
+msgid "~Assign..."
+msgstr "(~A) స్థానం ఇచ్చు"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_PB_EDIT.pushbutton.text
+msgctxt "macrodlg.src#RID_MACROCHOOSER.RID_PB_EDIT.pushbutton.text"
+msgid "~Edit"
+msgstr "(~E) సరిచేయు"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_PB_NEWLIB.pushbutton.text
+msgid "New ~Library"
+msgstr "(~L) క్రొత్త గ్రంధాలయం"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_PB_NEWMOD.pushbutton.text
+msgid "New M~odule"
+msgstr "(~o) క్రొత్త అధిభాగం"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_PB_DEL.pushbutton.text
+msgctxt "macrodlg.src#RID_MACROCHOOSER.RID_PB_DEL.pushbutton.text"
+msgid "~Delete"
+msgstr "(~D) తొలగించుము"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_PB_ORG.pushbutton.text
+msgid "~Organizer..."
+msgstr "(~O) కార్యనిర్వహకుడు..."
+
+#: macrodlg.src#RID_MACROCHOOSER.modaldialog.text
+msgid "%PRODUCTNAME Basic Macros"
+msgstr "%PRODUCTNAME యొక్క సాధారణ స్థూలము"
+
+#: macrodlg.src#RID_STR_STDMACRONAME.string.text
+msgid "Macro"
+msgstr "స్థూలము"
+
+#: macrodlg.src#RID_STR_BTNDEL.string.text
+msgctxt "macrodlg.src#RID_STR_BTNDEL.string.text"
+msgid "~Delete"
+msgstr "(~D) తొలగించుము"
+
+#: macrodlg.src#RID_STR_BTNNEW.string.text
+msgid "~New"
+msgstr "(~N) కొత్త"
+
+#: macrodlg.src#RID_STR_CLOSE.string.text
+msgctxt "macrodlg.src#RID_STR_CLOSE.string.text"
+msgid "Close"
+msgstr "మూయుము"
+
+#: macrodlg.src#RID_STR_CHOOSE.string.text
+msgid "Choose"
+msgstr "ఎన్నుకొను"
+
+#: macrodlg.src#RID_STR_RUN.string.text
+msgid "Run"
+msgstr "నడుపు"
+
+#: macrodlg.src#RID_STR_RECORD.string.text
+msgid "~Save"
+msgstr "(~S) దాచు"
+
+#: moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_MOD.pageitem.text
+msgctxt "moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_MOD.pageitem.text"
+msgid "Modules"
+msgstr "మాడ్యూళ్ళు"
+
+#: moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_DLG.pageitem.text
+msgid "Dialogs"
+msgstr " వివరణలు"
+
+#: moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_LIB.pageitem.text
+msgid "Libraries"
+msgstr "గ్రంధాలయాలు"
+
+#: moduldlg.src#RID_TD_ORGANIZE.tabdialog.text
+msgid "%PRODUCTNAME Basic Macro Organizer"
+msgstr "%PRODUCTNAME బేసిక్ స్థూల కార్యనిర్వహకుడు"
+
+#: moduldlg.src#RID_TP_MODULS.RID_STR_LIB.fixedtext.text
+msgid "M~odule"
+msgstr "(~o) అధిభాగం"
+
+#: moduldlg.src#RID_TP_MODULS.RID_PB_EDIT.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_MODULS.RID_PB_EDIT.pushbutton.text"
+msgid "~Edit"
+msgstr "(~E) సరిచేయు"
+
+#: moduldlg.src#RID_TP_MODULS.RID_PB_CLOSE.cancelbutton.text
+msgctxt "moduldlg.src#RID_TP_MODULS.RID_PB_CLOSE.cancelbutton.text"
+msgid "Close"
+msgstr "మూయుము"
+
+#: moduldlg.src#RID_TP_MODULS.RID_PB_NEWMOD.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_MODULS.RID_PB_NEWMOD.pushbutton.text"
+msgid "~New..."
+msgstr "(~N) క్రొత్తది..."
+
+#: moduldlg.src#RID_TP_MODULS.RID_PB_NEWDLG.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_MODULS.RID_PB_NEWDLG.pushbutton.text"
+msgid "~New..."
+msgstr "(~N) క్రొత్తది..."
+
+#: moduldlg.src#RID_TP_MODULS.RID_PB_DELETE.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_MODULS.RID_PB_DELETE.pushbutton.text"
+msgid "~Delete"
+msgstr "(~D) తొలగించుము"
+
+#: moduldlg.src#RID_TP_DLGS.RID_STR_LIB.fixedtext.text
+msgctxt "moduldlg.src#RID_TP_DLGS.RID_STR_LIB.fixedtext.text"
+msgid "Dialog"
+msgstr "డైలాగ్"
+
+#: moduldlg.src#RID_TP_DLGS.RID_PB_EDIT.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_DLGS.RID_PB_EDIT.pushbutton.text"
+msgid "~Edit"
+msgstr "(~E) సరిచేయు"
+
+#: moduldlg.src#RID_TP_DLGS.RID_PB_CLOSE.cancelbutton.text
+msgctxt "moduldlg.src#RID_TP_DLGS.RID_PB_CLOSE.cancelbutton.text"
+msgid "Close"
+msgstr "మూయుము"
+
+#: moduldlg.src#RID_TP_DLGS.RID_PB_NEWMOD.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_DLGS.RID_PB_NEWMOD.pushbutton.text"
+msgid "~New..."
+msgstr "(~N) క్రొత్తది..."
+
+#: moduldlg.src#RID_TP_DLGS.RID_PB_NEWDLG.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_DLGS.RID_PB_NEWDLG.pushbutton.text"
+msgid "~New..."
+msgstr "(~N) క్రొత్తది..."
+
+#: moduldlg.src#RID_TP_DLGS.RID_PB_DELETE.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_DLGS.RID_PB_DELETE.pushbutton.text"
+msgid "~Delete"
+msgstr "(~D) తొలగించుము"
+
+#: moduldlg.src#RID_TP_LIBS.RID_STR_BASICS.fixedtext.text
+msgid "L~ocation"
+msgstr "(~o) స్థానం"
+
+#: moduldlg.src#RID_TP_LIBS.RID_STR_LIB.fixedtext.text
+msgid "~Library"
+msgstr "(~L) గ్రంధాలయం"
+
+#: moduldlg.src#RID_TP_LIBS.RID_PB_EDIT.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_LIBS.RID_PB_EDIT.pushbutton.text"
+msgid "~Edit"
+msgstr "(~E) సరిచేయు"
+
+#: moduldlg.src#RID_TP_LIBS.RID_PB_CLOSE.cancelbutton.text
+msgctxt "moduldlg.src#RID_TP_LIBS.RID_PB_CLOSE.cancelbutton.text"
+msgid "Close"
+msgstr "మూయుము"
+
+#: moduldlg.src#RID_TP_LIBS.RID_PB_PASSWORD.pushbutton.text
+msgid "~Password..."
+msgstr "(~P) రహస్యపదము..."
+
+#: moduldlg.src#RID_TP_LIBS.RID_PB_NEWLIB.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_LIBS.RID_PB_NEWLIB.pushbutton.text"
+msgid "~New..."
+msgstr "(~N) క్రొత్తది..."
+
+#: moduldlg.src#RID_TP_LIBS.RID_PB_APPEND.pushbutton.text
+msgid "~Import..."
+msgstr "(~I) దిగుమతి..."
+
+#: moduldlg.src#RID_TP_LIBS.RID_PB_EXPORT.pushbutton.text
+msgid "E~xport..."
+msgstr "(~x) ఎగుమతి..."
+
+#: moduldlg.src#RID_TP_LIBS.RID_PB_DELETE.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_LIBS.RID_PB_DELETE.pushbutton.text"
+msgid "~Delete"
+msgstr "(~D) తొలగించుము"
+
+#: moduldlg.src#RID_DLG_LIBS.RID_FL_OPTIONS.fixedline.text
+msgid "Options"
+msgstr "ఇచ్ఛాపూర్వకాలు"
+
+#: moduldlg.src#RID_DLG_LIBS.RID_CB_REF.checkbox.text
+msgid "Insert as reference (read-only)"
+msgstr "నివేదన వలే ప్రవేశపెట్టు(చదువుట మాత్రమే)"
+
+#: moduldlg.src#RID_DLG_LIBS.RID_CB_REPL.checkbox.text
+msgid "Replace existing libraries"
+msgstr "ఉన్న గ్రంధాలయాలను పునఃస్థాపించు"
+
+#: moduldlg.src#RID_DLG_NEWLIB.RID_FT_NEWLIB.fixedtext.text
+msgid "~Name:"
+msgstr "(~N) నామము:"
+
+#: moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASPACKAGE.radiobutton.text
+msgid "Export as ~extension"
+msgstr "(~e) పొడిగింపు వలె ఎగుమతిచేయుము"
+
+#: moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASBASIC.radiobutton.text
+msgctxt "moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASBASIC.radiobutton.text"
+msgid "Export as BASIC library"
+msgstr "‌బేసిక్ గ్రంధాలయంవలె ఎగుమతిచేయుము"
+
+#: moduldlg.src#RID_DLG_EXPORT.modaldialog.text
+msgid "Export Basic library"
+msgstr "బేసిక్ గ్రంధాలయంను ఎగుమతిచేయుము"
+
+#: moduldlg.src#RID_STR_EXPORTPACKAGE.string.text
+msgid "Export library as extension"
+msgstr "గ్రంధాలయంను పొడిగింపువలె ఎగుమతిచేయుము"
+
+#: moduldlg.src#RID_STR_EXPORTBASIC.string.text
+msgctxt "moduldlg.src#RID_STR_EXPORTBASIC.string.text"
+msgid "Export as BASIC library"
+msgstr "‌బేసిక్ గ్రంధాలయంవలె ఎగుమతిచేయుము"
+
+#: moduldlg.src#RID_STR_PACKAGE_BUNDLE.string.text
+msgid "Extension"
+msgstr "పొడిగింపు"
+
+#: moptions.src#RID_MACROOPTIONS.RID_FT_DESCR.fixedtext.text
+msgctxt "moptions.src#RID_MACROOPTIONS.RID_FT_DESCR.fixedtext.text"
+msgid "Description"
+msgstr "వివరణ"
+
+#: moptions.src#RID_MACROOPTIONS.RID_FL_HELP.fixedline.text
+msgid "Help information"
+msgstr "సహాయం సమాచారం"
+
+#: moptions.src#RID_MACROOPTIONS.RID_FT_HELPID.fixedtext.text
+msgid "Help ID"
+msgstr "సహాయం గుచి"
+
+#: moptions.src#RID_MACROOPTIONS.RID_FT_HELPNAME.fixedtext.text
+msgid "Help file name"
+msgstr "సహాయపు దస్త్రపు నామం"
+
+#: moptions.src#RID_MACROOPTIONS.modaldialog.text
+msgctxt "moptions.src#RID_MACROOPTIONS.modaldialog.text"
+msgid "Description"
+msgstr "వివరణ"
+
+#: objdlg.src#RID_BASICIDE_OBJCAT.RID_TB_TOOLBOX.TBITEM_SHOW.toolboxitem.text
+msgid "Show"
+msgstr "కనబర్చు"
+
+#: objdlg.src#RID_BASICIDE_OBJCAT.floatingwindow.text
+msgid "Objects"
+msgstr "తాత్పర్యాలు"
+
+#: objdlg.src#RID_STR_TLB_MACROS.string.text
+msgid "Objects Tree"
+msgstr ""
+
+#~ msgid "Print all pages of the printable content."
+#~ msgstr "ముద్రించదగు సారము యొక్క అన్ని పేజీలను ముద్రించుము."
+
+#~ msgid "Print only some pages of the printable content."
+#~ msgstr "ముద్రించదగు సారము యొక్క కొన్ని పేజీలను మాత్రమే ముద్రించుము."
+
+#~ msgctxt "tbxctl.src#RID_TBXCONTROLS.RID_TOOLBOX.string.text"
+#~ msgid "Controls"
+#~ msgstr "నియంత్రణలు"
+
+#~ msgctxt "tbxctl.src#RID_TBXCONTROLS.floatingwindow.text"
+#~ msgid "Controls"
+#~ msgstr "నియంత్రణలు"
+
+#~ msgid "Button"
+#~ msgstr "బొత్తం"
+
+#~ msgid "Check Box"
+#~ msgstr "ఎన్నుకున్న పేటిక"
+
+#~ msgid "Label field"
+#~ msgstr "లేబుల్ క్షేత్రం"
+
+#~ msgid "List Box"
+#~ msgstr "జాబితా పేటిక"
+
+#~ msgid "Horizontal Scroll Bar"
+#~ msgstr "సమతలంగావున్న జరుపు పట్టా"
+
+#~ msgid "Group Box"
+#~ msgstr "గ్రూప్ పేటిక"
+
+#~ msgid "Horizontal Line"
+#~ msgstr "అడ్డు వరుస"
+
+#~ msgid "Date Field"
+#~ msgstr "తేది  యొక్క  క్షేత్రం"
+
+#~ msgid "Numeric Field"
+#~ msgstr "పూర్ణసంఖ్యా క్షేత్రం"
+
+#~ msgid "Formatted Field"
+#~ msgstr "ఫార్మాటెడ్"
+
+#~ msgid "File Selection"
+#~ msgstr "దస్త్రపు ఎంపిక"
+
+#~ msgid "Tree Control"
+#~ msgstr "ట్రీ నియంత్రిక"
+
+#~ msgid "Image Control"
+#~ msgstr "ప్రతిరూప  నియంత్రణ"
+
+#~ msgid "Option Button"
+#~ msgstr "ఇచ్ఛాపూర్వక బొత్తం"
+
+#~ msgid "Text Box"
+#~ msgstr "పాఠం పేటిక"
+
+#~ msgid "Combo Box"
+#~ msgstr "కోంబో పేటిక"
+
+#~ msgid "Vertical Scroll Bar"
+#~ msgstr "నిలువుగా జరుపు పట్టా"
+
+#~ msgid "Progress Bar"
+#~ msgstr "పురోగమన పట్టి"
+
+#~ msgid "Vertical Line"
+#~ msgstr "నిలువు వరుస"
+
+#~ msgid "Time Field"
+#~ msgstr "కాల క్షేత్రము"
+
+#~ msgid "Currency Field"
+#~ msgstr " క్షేత్ర ద్రవ్యం"
+
+#~ msgid "Pattern Field"
+#~ msgstr "సరళి క్షేత్రం"
+
+#~ msgid "Select"
+#~ msgstr "ఎంపిక"
+
+#~ msgid "Activate Test Mode"
+#~ msgstr " ప్రస్తుత పరీక్ష విధం"

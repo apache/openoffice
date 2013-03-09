@@ -1,0 +1,4130 @@
+
+#: importwi.src#sHelpButton.string.text
+msgid "~Help"
+msgstr "Bantua~n"
+
+#: importwi.src#sCancelButton.string.text
+msgid "~Cancel"
+msgstr "Ba~tal"
+
+#: importwi.src#sBackButton.string.text
+msgid "<< ~Back"
+msgstr "<< Kem~bali"
+
+#: importwi.src#sNextButton.string.text
+msgid "Ne~xt >>"
+msgstr "Lan~jut >>"
+
+#: importwi.src#sBeginButton.string.text
+msgid "~Convert"
+msgstr "~Konversi"
+
+#: importwi.src#sCloseButton.string.text
+msgid "~Close"
+msgstr "~Tutup"
+
+#: importwi.src#sWelcometextLabel1.string.text
+msgid ""
+"This wizard converts documents in %PRODUCTNAME format and Microsoft Office "
+"documents to the new OpenDocument format."
+msgstr ""
+"Wahana ini akan memandu Anda dalam mengubah dokumen %PRODUCTNAME maupun "
+"Microsoft Office ke dalam format baru OpenDocument."
+
+#: importwi.src#sWelcometextLabel2.string.text
+msgid ""
+"Please note that when converting Microsoft documents any attached VBA macros "
+"lose their functionality."
+msgstr ""
+"Mohon diperhatikan bahwa saat mengubah dokumen Microsoft, semua makro VBA "
+"yang ada akan kehilangan fungsionalitasnya."
+
+#: importwi.src#sWelcometextLabel3.string.text
+msgid "Select the document type for conversion:"
+msgstr "Pilih jenis dokumen untuk dikonversi:"
+
+#: importwi.src#sMSTemplateCheckbox_1_.string.text
+msgid "Word templates"
+msgstr "Palet Word"
+
+#: importwi.src#sMSTemplateCheckbox_2_.string.text
+msgid "Excel templates"
+msgstr "Palet Excel"
+
+#: importwi.src#sMSTemplateCheckbox_3_.string.text
+msgid "PowerPoint templates"
+msgstr "Palet PowerPoint"
+
+#: importwi.src#sMSDocumentCheckbox_1_.string.text
+msgid "Word documents"
+msgstr "Dokumen Word"
+
+#: importwi.src#sMSDocumentCheckbox_2_.string.text
+msgid "Excel documents"
+msgstr "Dokumen Excel"
+
+#: importwi.src#sMSDocumentCheckbox_3_.string.text
+msgid "PowerPoint documents"
+msgstr "Dokumen PowerPoint"
+
+#: importwi.src#sSearchInSubDir.string.text
+msgid "Including subdirectories"
+msgstr "Termasuk subdirektori"
+
+#: importwi.src#sMSContainerName.string.text
+msgid "Microsoft Office"
+msgstr "Microsoft Office"
+
+#: importwi.src#sSummaryHeader.string.text
+msgid "Summary:"
+msgstr "Ringkasan:"
+
+#: importwi.src#sTextImportLabel.string.text
+msgid "Import from:"
+msgstr "Impor dari:"
+
+#: importwi.src#sTextExportLabel.string.text
+msgid "Save to:"
+msgstr "Simpan ke:"
+
+#: importwi.src#sGroupnameDefault.string.text
+msgid "Imported_Templates"
+msgstr "Palet_Impor"
+
+#: importwi.src#sProgressDesc1.string.text
+msgid "Progress: "
+msgstr "Proses: "
+
+#: importwi.src#sProgressOneDoc.string.text
+msgid "Document"
+msgstr "Dokumen"
+
+#: importwi.src#sProgressMoreDocs.string.text
+msgid "Documents"
+msgstr "Dokumen"
+
+#: importwi.src#sProgressMoreTemplates.string.text
+msgid "Templates"
+msgstr "Palet"
+
+#: importwi.src#sNoDirCreation.string.text
+msgid "The '%1' directory cannot be created: "
+msgstr "Direktori '%1'  tidak bisa dibuat: "
+
+#: importwi.src#sMsgDirNotThere.string.text
+msgid "The '%1' directory does not exist."
+msgstr "Direktori '%1' tidak ada."
+
+#: importwi.src#sQueryfornewCreation.string.text
+msgid "Do you want to create it now?"
+msgstr "Buat sekarang?"
+
+#: importwi.src#sFileExists.string.text
+msgid "The '<1>' file already exists.<CR>Do you want to overwrite it?"
+msgstr "Berkas '<1>' sudah ada. <CR>Anda ingin menimpanya?"
+
+#: importwi.src#sMorePathsError3.string.text
+msgid "Directories do not exist"
+msgstr "Direktori tidak ada"
+
+#: importwi.src#sOverwriteallFiles.string.text
+msgid "Do you want to overwrite documents without being asked?"
+msgstr "Anda ingin menimpa dokumen tanpa harus ditanya lebih dulu?"
+
+#: importwi.src#sreeditMacro.string.text
+msgid "Document macro has to be revised."
+msgstr "Dokumen makro harus diperbaiki."
+
+#: importwi.src#scouldNotsaveDocument.string.text
+msgid "Document '<1>' could not be saved."
+msgstr "Berkas '<1>'  tidak bisa disimpan."
+
+#: importwi.src#scouldNotopenDocument.string.text
+msgid "Document '<1>' could not be opened."
+msgstr "Dokument '<1>' tidak bisa dibuka."
+
+#: importwi.src#sConvertError1.string.text
+msgid "Do you really want to terminate conversion at this point?"
+msgstr "Anda yakin hendak menghentikan proses konversi di sini?"
+
+#: importwi.src#sConvertError2.string.text
+msgid "Cancel Wizard"
+msgstr "Batalkan Wahana"
+
+#: importwi.src#sRTErrorDesc.string.text
+msgid "An unexpected error has occurred in the wizard."
+msgstr "Kesalahan yang tidak diharapkan muncul pada wahana ini."
+
+#: importwi.src#sRTErrorHeader.string.text
+msgid "Error"
+msgstr "Kesalahan"
+
+#: importwi.src#sPathDialogMessage.string.text
+msgid "Select a directory"
+msgstr "Pilih direktori"
+
+#: importwi.src#sDialogTitle.string.text
+msgid "Document Converter"
+msgstr "Konverter Dokumen"
+
+#: importwi.src#sProgressPage1.string.text
+msgid "Progress"
+msgstr "Proses"
+
+#: importwi.src#sProgressPage2.string.text
+msgid "Retrieving the relevant documents:"
+msgstr "Memperoleh dokumen bersangkutan:"
+
+#: importwi.src#sProgressPage3.string.text
+msgid "Converting the documents"
+msgstr "Mengonversi dokumen"
+
+#: importwi.src#sProgressFound.string.text
+msgid "Found:"
+msgstr "Ditemukan:"
+
+#: importwi.src#sProgressPage5.string.text
+msgid "%1 found"
+msgstr "%1 ditemukan"
+
+#: importwi.src#sReady.string.text
+msgid "Finished"
+msgstr "Selesai"
+
+#: importwi.src#sXMLTemplateCheckbox_1_.string.text
+msgid "Text templates"
+msgstr "Palet teks"
+
+#: importwi.src#sXMLTemplateCheckbox_2_.string.text
+msgid "Spreadsheet templates"
+msgstr "Palet lembar kerja"
+
+#: importwi.src#sXMLTemplateCheckbox_3_.string.text
+msgid "Drawing/presentation templates"
+msgstr "Palet menggambar/presentasi"
+
+#: importwi.src#sXMLTemplateCheckbox_4_.string.text
+msgctxt "importwi.src#sXMLTemplateCheckbox_4_.string.text"
+msgid "Master documents"
+msgstr "Dokumen induk"
+
+#: importwi.src#sXMLDocumentCheckbox_1_.string.text
+msgid "Text documents"
+msgstr "Dokument teks"
+
+#: importwi.src#sXMLDocumentCheckbox_2_.string.text
+msgid "Spreadsheets"
+msgstr "Lembar kerja"
+
+#: importwi.src#sXMLDocumentCheckbox_3_.string.text
+msgid "Drawing/presentation documents"
+msgstr "Dokumen menggambar/presentasi"
+
+#: importwi.src#sXMLDocumentCheckbox_4_.string.text
+msgid "Master documents/formulas"
+msgstr "Dokumen induk/rumus"
+
+#: importwi.src#sXMLHelperApplications_1.string.text
+msgctxt "importwi.src#sXMLHelperApplications_1.string.text"
+msgid "Master documents"
+msgstr "Dokumen induk"
+
+#: importwi.src#sXMLHelperApplications_2.string.text
+msgid "Formulas"
+msgstr "Rumus"
+
+#: importwi.src#sSourceDocuments.string.text
+msgid "Source documents"
+msgstr "Dokumen sumber"
+
+#: importwi.src#sTargetDocuments.string.text
+msgid "Target documents"
+msgstr "Dokumen sasaran"
+
+#: importwi.src#sCreateLogfile.string.text
+msgid "Create log file"
+msgstr "Buat berkas log"
+
+#: importwi.src#sLogfileSummary.string.text
+msgid "<COUNT> documents converted"
+msgstr "<COUNT> dokumen sudah diubah"
+
+#: importwi.src#sLogfileHelpText.string.text
+msgid "A log file will be created in your work directory"
+msgstr "Berkas log akan dibuat dalam direktori kerja Anda"
+
+#: importwi.src#sshowLogfile.string.text
+msgid "Show log file"
+msgstr "Tampilkan berkas log"
+
+#: importwi.src#sSumInclusiveSubDir.string.text
+msgid "All subdirectories will be taken into account"
+msgstr "Semua subdirektori akan disertakan pada akun"
+
+#: importwi.src#sSumSaveDokumente.string.text
+msgid "These will be exported to the following directory:"
+msgstr "Akan diekspor ke direktori berikut:"
+
+#: importwi.src#sSumSOTextDocuments.string.text
+msgid ""
+"All %PRODUCTNAME text documents contained in the following directory will be "
+"imported:"
+msgstr ""
+"Semua dokumen teks %PRODUCTNAME dalam direktori berikut ini akan diimpor:"
+
+#: importwi.src#sSumSOTableDocuments.string.text
+msgid ""
+"All %PRODUCTNAME spreadsheets contained in the following directory will be "
+"imported:"
+msgstr ""
+"Semua dokumen lembar kerja %PRODUCTNAME dalam direktori berikut ini akan "
+"diimpor:"
+
+#: importwi.src#sSumSODrawDocuments.string.text
+msgid ""
+"All %PRODUCTNAME drawing and presentation documents contained in the "
+"following directory will be imported:"
+msgstr ""
+"Semua dokumen gambar dan presentasi %PRODUCTNAME dalam direktori berikut ini "
+"akan diimpor:"
+
+#: importwi.src#sSumSOMathDocuments.string.text
+msgid ""
+"All %PRODUCTNAME formula documents contained in the following directory will "
+"be imported:"
+msgstr ""
+"Semua dokumen rumus %PRODUCTNAME dalam direktori berikut ini akan diimpor:"
+
+#: importwi.src#sSumSOTextTemplates.string.text
+msgid ""
+"All %PRODUCTNAME text templates contained in the following directory will be "
+"imported:"
+msgstr "Semua palet teks %PRODUCTNAME dalam direktori berikut ini akan diimpor:"
+
+#: importwi.src#sSumSOTableTemplates.string.text
+msgid ""
+"All %PRODUCTNAME table templates contained in the following directory will "
+"be imported:"
+msgstr ""
+"Semua palet tabel %PRODUCTNAME dalam direktori berikut ini akan diimpor:"
+
+#: importwi.src#sSumSODrawTemplates.string.text
+msgid ""
+"All %PRODUCTNAME drawing and presentation templates contained in the "
+"following directory will be imported:"
+msgstr ""
+"Semua palet menggambar dan presentasi %PRODUCTNAME dalam direktori berikut "
+"ini akan diimpor:"
+
+#: importwi.src#sSumSOGlobalDocuments.string.text
+msgid ""
+"All %PRODUCTNAME master documents contained in the following directory will "
+"be imported:"
+msgstr ""
+"Semua dokumen induk %PRODUCTNAME dalam direktori berikut ini akan diimpor:"
+
+#: importwi.src#sSumMSTextDocuments.string.text
+msgid ""
+"All Word documents contained in the following directory will be imported:"
+msgstr "Semua dokumen Word dalam direktori berikut ini akan diimpor:"
+
+#: importwi.src#sSumMSTableDocuments.string.text
+msgid ""
+"All Excel documents contained in the following directory will be imported:"
+msgstr "Semua dokumen Excel dalam direktori berikut ini akan diimpor:"
+
+#: importwi.src#sSumMSDrawDocuments.string.text
+msgid ""
+"All PowerPoint documents contained in the following directory will be "
+"imported:"
+msgstr "Semua dokumen PowerPoint dalam direktori berikut ini akan diimpor:"
+
+#: importwi.src#sSumMSTextTemplates.string.text
+msgid ""
+"All Word templates contained in the following directory will be imported:"
+msgstr "Semua palet Word dalam direktori berikut ini akan diimpor:"
+
+#: importwi.src#sSumMSTableTemplates.string.text
+msgid ""
+"All Excel templates contained in the following directory will be imported:"
+msgstr "Semua palet Excel dalam direktori berikut ini akan diimpor:"
+
+#: importwi.src#sSumMSDrawTemplates.string.text
+msgid ""
+"All PowerPoint templates contained in the following directory will be "
+"imported:"
+msgstr "Semua palet PowerPoint dalam direktori berikut ini akan diimpor:"
+"X-Accelerator-Marker: ~\n"
+
+#: dbwizres.src#RID_COMMON_START___0.string.text
+msgid ""
+"The directory '%1' could not be created.<BR>There may not be enough space "
+"left on your hard disk."
+msgstr ""
+"Direktori '%1' tidak bisa dibuat.<BR>Ruang kosong media simpan mungkin tidak "
+"cukup."
+
+#: dbwizres.src#RID_COMMON_START___1.string.text
+msgid ""
+"The text document could not be created.<BR>Please check if the module "
+"'PRODUCTNAME Writer' is installed."
+msgstr ""
+"Dokumen teks tidak bisa dibuat.<BR>Silakan periksa apakah modul 'PRODUCTNAME "
+"Writer' sudah terpasang."
+
+#: dbwizres.src#RID_COMMON_START___2.string.text
+msgid ""
+"The spreadsheet could not be created.<BR>Please check if the module "
+"'PRODUCTNAME Calc' is installed."
+msgstr ""
+"Dokumen lembar kerja tidak bisa dibuat.<BR>Silakan periksa apakah modul "
+"'PRODUCTNAME Calc' telah terpasang."
+
+#: dbwizres.src#RID_COMMON_START___3.string.text
+msgid ""
+"The presentation could not be created.<BR>Please check if the module "
+"'PRODUCTNAME Impress' is installed."
+msgstr ""
+"Dokumen presentasi tidak bisa dibuat.<BR>Silakan periksa apakah modul "
+"'PRODUCTNAME Impress' telah terpasang."
+
+#: dbwizres.src#RID_COMMON_START___4.string.text
+msgid ""
+"The drawing could not be created.<BR>Please check if the module 'PRODUCTNAME "
+"Draw' is installed."
+msgstr ""
+"Dokumen menggambar tidak bisa dibuat.<BR>Silakan periksa apakah modul "
+"'PRODUCTNAME Draw' telah terpasang."
+
+#: dbwizres.src#RID_COMMON_START___5.string.text
+msgid ""
+"The formula could not be created.<BR>Please check if the module 'PRODUCTNAME "
+"Math' is installed."
+msgstr ""
+"Rumus tidak bisa dibuat.<BR>Silakan periksa apakah modul 'PRODUCTNAME Math' "
+"telah terpasang."
+
+#: dbwizres.src#RID_COMMON_START___6.string.text
+msgid ""
+"The files required could not be found.<BR>Please start the %PRODUCTNAME "
+"Setup and choose 'Repair'."
+msgstr ""
+"Berkas-berkas yang diperlukan tidak ketemu.<BR>Mohon jalankan Wahana Setel %"
+"PRODUCTNAME dan pilih 'Perbaiki'."
+
+#: dbwizres.src#RID_COMMON_START___7.string.text
+msgid ""
+"The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the "
+"existing file?"
+msgstr "Berkas '<PATH>' sudah ada.<BR><BR>Anda ingin menimpa berkas tersebut?"
+
+#: dbwizres.src#RID_COMMON_START___8.string.text
+msgid "Yes"
+msgstr "Ya"
+
+#: dbwizres.src#RID_COMMON_START___9.string.text
+msgid "Yes to All"
+msgstr "Ya untuk Semua"
+
+#: dbwizres.src#RID_COMMON_START___10.string.text
+msgid "No"
+msgstr "Tidak"
+
+#: dbwizres.src#RID_COMMON_START___11.string.text
+msgid "Cancel"
+msgstr "Batal"
+
+#: dbwizres.src#RID_COMMON_START___12.string.text
+msgid "~Finish"
+msgstr "~Selesai"
+
+#: dbwizres.src#RID_COMMON_START___13.string.text
+msgid "< ~Back"
+msgstr "< Kem~bali"
+
+#: dbwizres.src#RID_COMMON_START___14.string.text
+msgid "~Next >"
+msgstr "La~njut >"
+
+#: dbwizres.src#RID_COMMON_START___15.string.text
+msgctxt "dbwizres.src#RID_COMMON_START___15.string.text"
+msgid "~Help"
+msgstr "Bantua~n"
+
+#: dbwizres.src#RID_COMMON_START___16.string.text
+msgid "Steps"
+msgstr "Langkah"
+
+#: dbwizres.src#RID_COMMON_START___17.string.text
+msgid "Close"
+msgstr "Tutup"
+
+#: dbwizres.src#RID_COMMON_START___18.string.text
+msgid "OK"
+msgstr "Oke"
+
+#: dbwizres.src#RID_COMMON_START___19.string.text
+msgid "The file already exists. Do you want to overwrite it?"
+msgstr "Berkas sudah ada. Timpa?"
+
+#: dbwizres.src#RID_COMMON_START___20.string.text
+msgid "Template created via <wizard_name> on <current_date>."
+msgstr "Palet dibuat dengan <wizard_name> pada <current_date>."
+
+#: dbwizres.src#RID_COMMON_START___21.string.text
+msgid ""
+"The wizard could not be run, because important files were not found.\n"
+"Under 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to "
+"reset the paths to the original default settings.\n"
+"Then run the wizard again."
+msgstr ""
+"Wahana tidak bisa dijalankan, karena berkas penting untuk wahana ini tidak "
+"ditemukan.\n"
+"Pada 'Perkakas - Opsi - %PRODUCTNAME - Direktori' klik tombol 'Baku' untuk "
+"mengembalikan direktori ke setelan sebelumnya.\n"
+"Lalu, jalankan wahana ini lagi."
+
+#: dbwizres.src#RID_DB_COMMON_START___0.string.text
+msgid "C~reate"
+msgstr "B~uat"
+
+#: dbwizres.src#RID_DB_COMMON_START___1.string.text
+msgid "~Cancel"
+msgstr "B~atal"
+
+#: dbwizres.src#RID_DB_COMMON_START___2.string.text
+msgid "<< ~Back"
+msgstr "<< Kem~bali"
+
+#: dbwizres.src#RID_DB_COMMON_START___3.string.text
+msgid "~Next >>"
+msgstr "La~njut >>"
+
+#: dbwizres.src#RID_DB_COMMON_START___4.string.text
+msgid "~Database"
+msgstr "Basis ~Data"
+
+#: dbwizres.src#RID_DB_COMMON_START___5.string.text
+msgid "~Table name"
+msgstr "Nama ~tabel"
+
+#: dbwizres.src#RID_DB_COMMON_START___6.string.text
+msgid ""
+"An error occurred while running the wizard. The wizard will be terminated."
+msgstr ""
+"Sebuah kesalahan terjadi saat menjalankan wahana pandu. Wahana akan ditutup."
+
+#: dbwizres.src#RID_DB_COMMON_START___14.string.text
+msgid "No connection to the database could be established."
+msgstr "Koneksi ke basis data tidak bisa dilakukan."
+
+#: dbwizres.src#RID_DB_COMMON_START___20.string.text
+msgctxt "dbwizres.src#RID_DB_COMMON_START___20.string.text"
+msgid "~Help"
+msgstr "Bantua~n"
+
+#: dbwizres.src#RID_DB_COMMON_START___21.string.text
+msgid "~Stop"
+msgstr "~Henti"
+
+#: dbwizres.src#RID_DB_COMMON_START___30.string.text
+msgid "The document could not be saved."
+msgstr "Dokumen tidak akan disimpan."
+
+#: dbwizres.src#RID_DB_COMMON_START___33.string.text
+msgid "Exiting the wizard"
+msgstr "Keluar dari wahana"
+
+#: dbwizres.src#RID_DB_COMMON_START___34.string.text
+msgid "Connecting to data source..."
+msgstr "Menghubungi sumber data..."
+
+#: dbwizres.src#RID_DB_COMMON_START___35.string.text
+msgid "The connection to the data source could not be established."
+msgstr "Tidak dapat terhubung ke sumber data."
+
+#: dbwizres.src#RID_DB_COMMON_START___36.string.text
+msgid "The file path entered is not valid."
+msgstr "Jalur berkas yang diberikan tidak sah."
+
+#: dbwizres.src#RID_DB_COMMON_START___37.string.text
+msgid "Please select a data source"
+msgstr "Silakan pilih sumber data"
+
+#: dbwizres.src#RID_DB_COMMON_START___38.string.text
+msgid "Please select a table or query"
+msgstr "Silakan pilih tabel atau kuiri"
+
+#: dbwizres.src#RID_DB_COMMON_START___39.string.text
+msgid "Add field"
+msgstr "Tambah kolom"
+
+#: dbwizres.src#RID_DB_COMMON_START___40.string.text
+msgid "Remove field"
+msgstr "Hapus kolom"
+
+#: dbwizres.src#RID_DB_COMMON_START___41.string.text
+msgid "Add all fields"
+msgstr "Tambah semua kolom"
+
+#: dbwizres.src#RID_DB_COMMON_START___42.string.text
+msgid "Remove all fields"
+msgstr "Hapus semua kolom"
+
+#: dbwizres.src#RID_DB_COMMON_START___43.string.text
+msgid "Move field up"
+msgstr "Naikkan kolom"
+
+#: dbwizres.src#RID_DB_COMMON_START___44.string.text
+msgid "Move field down"
+msgstr "Turunkan kolom"
+
+#: dbwizres.src#RID_DB_COMMON_START___45.string.text
+msgid "The field names from '%NAME' could not be retrieved."
+msgstr "Nama kolom dari '%NAME' tidak bisa diperoleh."
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___0.string.text
+msgid "Form Wizard"
+msgstr "Wahana Pandu Formulir"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___1.string.text
+msgid "Fields in ~the form"
+msgstr "Kolom pada ~formulir"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___2.string.text
+msgid ""
+"Binary fields are always listed and selectable from the left list.\n"
+"If possible, they are interpreted as images."
+msgstr ""
+"Kolom biner selalu ditampilkan dan dapat dipilih dari daftar sebelah kiri.\n"
+"Jika mungkin, kolom ditampilkan sebagai gambar."
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___3.string.text
+msgid ""
+"A subform is a form that is inserted in another form.\n"
+"Use subforms to show data from tables or queries with a one-to-many "
+"relationship."
+msgstr ""
+"Subformulir adalah formulir yang disisipkan pada formulir lain.\n"
+"Gunakan subformulir untuk menampilkan data dari tabel atau kuiri dengan "
+"relasi satu-ke-banyak."
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___4.string.text
+msgid "~Add Subform"
+msgstr "T~ambah Subformulir"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___5.string.text
+msgid "~Subform based on existing relation"
+msgstr "~Subformulir berdasarkan relasi yang ada"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___6.string.text
+msgid "Tables or queries"
+msgstr "Tabel atau kuiri"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___7.string.text
+msgid "Subform based on ~manual selection of fields"
+msgstr "Subformulir berbasis seleksi kolom ~manual"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___8.string.text
+msgid "~Which relation do you want to add?"
+msgstr "~Relasi mana yang ingin ditambah?"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___9.string.text
+msgid "Fields in the ~subform"
+msgstr "Kolom dalam ~subformulir"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___12.string.text
+msgid "~Available fields"
+msgstr "Kolom yang ~ada"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___13.string.text
+msgid "Fields in form"
+msgstr "Kolom pada formulir"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___19.string.text
+msgid ""
+"The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\n"
+"But joins may only be used once."
+msgstr ""
+"Join antara '<FIELDNAME1>' dan '<FIELDNAME2>' dipilih dua kali.\n"
+"Sedangkan join hanya boleh sekali."
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___20.string.text
+msgid "~First joined subform field"
+msgstr "Kolom join pertama pada sub~formulir"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___21.string.text
+msgid "~Second joined subform field"
+msgstr "Kolom join kedua pada ~subformulir"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___22.string.text
+msgid "~Third joined subform field"
+msgstr "Kolom join ke~tiga pada subformulir"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___23.string.text
+msgid "~Fourth joined subform field"
+msgstr "Kolom join keempat pada sub~formulir"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___24.string.text
+msgid "F~irst joined main form field"
+msgstr "Kolom join pertama pada formul~ir utama"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___25.string.text
+msgid "S~econd joined main form field"
+msgstr "Kolom join k~edua pada formulir utama"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___26.string.text
+msgid "T~hird joined main form field"
+msgstr "Kolom join keti~ga pada formulir utama"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___27.string.text
+msgid "F~ourth joined main form field"
+msgstr "K~olom join keempat pada formulir utama"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___28.string.text
+msgid "Field border"
+msgstr "Bingkai kolom"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___29.string.text
+msgid "No border"
+msgstr "Tanpa bingkai"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___30.string.text
+msgid "3D look"
+msgstr "Tampil 3D"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___31.string.text
+msgid "Flat"
+msgstr "Datar"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___32.string.text
+msgid "Label placement"
+msgstr "Peletakan label"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___33.string.text
+msgid "Align left"
+msgstr "Rata kiri"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___34.string.text
+msgid "Align right"
+msgstr "Rata kanan"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___35.string.text
+msgid "Arrangement of DB fields"
+msgstr "Penataan kolom DB"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___36.string.text
+msgid "Columnar - Labels Left"
+msgstr "Kolom - Label Kiri"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___37.string.text
+msgid "Columnar - Labels on Top"
+msgstr "Kolom - Label Atas"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___38.string.text
+msgid "In Blocks - Labels Left"
+msgstr "Dalam Blok - Label Kiri"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___39.string.text
+msgid "In Blocks - Labels Above"
+msgstr "Dalam Blok - Label Atas"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___40.string.text
+msgid "As Data Sheet"
+msgstr "Sebagai Lembar Data"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___41.string.text
+msgid "Arrangement of the main form"
+msgstr "Penataan formulir utama"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___42.string.text
+msgid "Arrangement of the subform"
+msgstr "Penataan subformulir"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___44.string.text
+msgid "The form is to be ~used for entering new data only."
+msgstr "Formulir hanya dipakai ~untuk memasukkan data baru."
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___45.string.text
+msgid "Existing data will not be displayed "
+msgstr "Data yang ada tak akan ditampilkan "
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___46.string.text
+msgid "T~he form is to display all data"
+msgstr "Formulir un~tuk menampilkan semua data"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___47.string.text
+msgid "Do not allow ~modification of existing data"
+msgstr "Tidak diperbolehkan ~mengubah data yang ada"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___48.string.text
+msgid "Do not allow ~deletion of existing data"
+msgstr "Tidak diperbolehkan menghapus ~data yang ada"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___49.string.text
+msgid "Do not allow ~addition of new data"
+msgstr "Tidak diperbolehkan men~ambah data"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___50.string.text
+msgid "Name of ~the form"
+msgstr "Na~ma formulir"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___51.string.text
+msgid "How do you want to proceed after creating the form?"
+msgstr "Apa yang ingin Anda lakukan setelah membuat formulir?"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___52.string.text
+msgid "~Work with the form"
+msgstr "~Bekerja dengan formulir"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___53.string.text
+msgid "~Modify the form"
+msgstr "~Mengubah formulir"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___55.string.text
+msgid "~Page Styles"
+msgstr "Gaya ~Halaman"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___80.string.text
+msgctxt "dbwizres.src#RID_DB_FORM_WIZARD_START___80.string.text"
+msgid "Field selection"
+msgstr "Seleksi kolom"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___81.string.text
+msgid "Set up a subform"
+msgstr "Setel subformulir"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___82.string.text
+msgid "Add subform fields"
+msgstr "Tambah kolom subformulir"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___83.string.text
+msgid "Get joined fields"
+msgstr "Ambil kolom join"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___84.string.text
+msgid "Arrange controls"
+msgstr "Atur kontrol"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___85.string.text
+msgid "Set data entry"
+msgstr "Tentukan entri data"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___86.string.text
+msgid "Apply styles"
+msgstr "Terapkan gaya"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___87.string.text
+msgid "Set name"
+msgstr "Tentukan nama"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___88.string.text
+msgid "(Date)"
+msgstr "(Tanggal)"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___89.string.text
+msgid "(Time)"
+msgstr "(Waktu)"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___90.string.text
+msgid "Select the fields of your form"
+msgstr "Pilih kolom untuk formulir Anda"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___91.string.text
+msgid "Decide if you want to set up a subform"
+msgstr "Putuskan apabila Anda ingin mengatur subformulir"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___92.string.text
+msgid "Select the fields of your subform"
+msgstr "Pilih kolom untuk subformulir Anda"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___93.string.text
+msgid "Select the joins between your forms"
+msgstr "Pilih cara join antarformulir Anda"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___94.string.text
+msgid "Arrange the controls on your form"
+msgstr "Atur kontrol pada formulir Anda"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___95.string.text
+msgid "Select the data entry mode"
+msgstr "Pilih modus pengisian data"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___96.string.text
+msgid "Apply the style of your form"
+msgstr "Terapkan gaya pada formulir Anda"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___97.string.text
+msgid "Set the name of the form"
+msgstr "Beri nama formulir"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___98.string.text
+msgid ""
+"A form with the name '%FORMNAME' already exists.\n"
+"Choose another name."
+msgstr ""
+"Formulir dengan nama '%FORMNAME' sudah ada.\n"
+"Gunakan nama lain."
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___0.string.text
+msgctxt "dbwizres.src#RID_DB_QUERY_WIZARD_START___0.string.text"
+msgid "Query Wizard"
+msgstr "Wahana Pandu Kuiri"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___1.string.text
+msgid "Query"
+msgstr "Kuiri"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___2.string.text
+msgctxt "dbwizres.src#RID_DB_QUERY_WIZARD_START___2.string.text"
+msgid "Query Wizard"
+msgstr "Wahana Pandu Kuiri"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___3.string.text
+msgid "~Tables"
+msgstr "~Tabel"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___4.string.text
+msgctxt "dbwizres.src#RID_DB_QUERY_WIZARD_START___4.string.text"
+msgid "A~vailable fields"
+msgstr "Kolom yang ~ada"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___5.string.text
+msgid "Name ~of the query"
+msgstr "Na~ma kuiri"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___6.string.text
+msgid "Display ~Query"
+msgstr "Tampilkan ~Kuiri"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___7.string.text
+msgid "~Modify Query"
+msgstr "~Ubah Kuiri"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___8.string.text
+msgid "~How do you want to proceed after creating the query?"
+msgstr "Apa yang dilakukan selanjutnya setela~h membuat kuiri?"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___9.string.text
+msgid "Match ~all of the following"
+msgstr "Cocokk~an semua hal berikut ini"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___10.string.text
+msgid "~Match any of the following"
+msgstr "Cocok~kan apapun dari hal berikut ini"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___11.string.text
+msgid "~Detailed query (Shows all records of the query.)"
+msgstr "Kuiri ~detail (Semua rekaman hasil kuiri.)"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___12.string.text
+msgid "~Summary query (Shows only results of aggregate functions.)"
+msgstr "Ringka~san kuiri (Hanya hasil dari fungsi agregat.)"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___16.string.text
+msgid "Aggregate functions"
+msgstr "Fungsi agregat"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___17.string.text
+msgctxt "dbwizres.src#RID_DB_QUERY_WIZARD_START___17.string.text"
+msgid "Fields"
+msgstr "Kolom"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___18.string.text
+msgid "~Group by"
+msgstr "~Dikelompokkan berdasar"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___19.string.text
+msgctxt "dbwizres.src#RID_DB_QUERY_WIZARD_START___19.string.text"
+msgid "Field"
+msgstr "Kolom"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___20.string.text
+msgid "Alias"
+msgstr "Alias"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___21.string.text
+msgid "Table: "
+msgstr "Tabel: "
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___22.string.text
+msgid "Query: "
+msgstr "Kuiri: "
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___24.string.text
+msgid "Condition"
+msgstr "Kondisi"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___25.string.text
+msgid "Value"
+msgstr "Nilai"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___26.string.text
+msgid "is equal to"
+msgstr "sama dengan"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___27.string.text
+msgid "is not equal to"
+msgstr "tidak sama dengan"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___28.string.text
+msgid "is smaller than"
+msgstr "lebih kecil dari"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___29.string.text
+msgid "is greater than"
+msgstr "lebih besar dari"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___30.string.text
+msgid "is equal or less than "
+msgstr "sama dengan atau kurang dari"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___31.string.text
+msgid "is equal or greater than"
+msgstr "sama dengan atau lebih dari"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___32.string.text
+msgid "like"
+msgstr "seperti"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___33.string.text
+msgid "not like"
+msgstr "tidak seperti"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___34.string.text
+msgid "is null"
+msgstr "kosong"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___35.string.text
+msgid "is not null"
+msgstr "tidak kosong"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___36.string.text
+msgid "true"
+msgstr "benar"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___37.string.text
+msgid "false"
+msgstr "salah"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___38.string.text
+msgid "and"
+msgstr "dan"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___39.string.text
+msgid "or"
+msgstr "atau"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___40.string.text
+msgid "get the sum of"
+msgstr "hitung jumlah dari"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___41.string.text
+msgid "get the average of"
+msgstr "hitung rata-rata dari"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___42.string.text
+msgid "get the minimum of"
+msgstr "hitung nilai minimum dari"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___43.string.text
+msgid "get the maximum of"
+msgstr "hitung nilai maksimum dari"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___44.string.text
+msgid "get the sum of <FIELD>"
+msgstr "hitung jumlah dari <FIELD>"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___45.string.text
+msgid "get the average of <FIELD>"
+msgstr "hitung rata-rata dari <FIELD>"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___46.string.text
+msgid "get the minimum of <FIELD>"
+msgstr "hitung nilai minimum dari <FIELD>"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___47.string.text
+msgid "get the maximum of <FIELD>"
+msgstr "hitung nilai maksimum dari <FIELD>"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___48.string.text
+msgid "(none)"
+msgstr "(nihil)"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___50.string.text
+msgid "Fie~lds in the Query: "
+msgstr "Ko~lom pada Kuiri: "
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___51.string.text
+msgid "Sorting order: "
+msgstr "Susunan urut: "
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___52.string.text
+msgid "No sorting fields were assigned."
+msgstr "Kolom belum dipilih."
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___53.string.text
+msgid "Search conditions: "
+msgstr "Kondisi pencarian: "
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___54.string.text
+msgid "No conditions were assigned."
+msgstr "Kondisi belum dipilih."
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___55.string.text
+msgid "Aggregate functions: "
+msgstr "Fungsi agregat: "
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___56.string.text
+msgid "No aggregate functions were assigned."
+msgstr "Fungsi agregat belum dipilih."
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___57.string.text
+msgid "Grouped by: "
+msgstr "Dikelompokkan oleh: "
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___58.string.text
+msgid "No Groups were assigned."
+msgstr "Kelompok belum dipilih."
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___59.string.text
+msgid "Grouping conditions: "
+msgstr "Kondisi pengelompokan: "
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___60.string.text
+msgid "No grouping conditions were assigned."
+msgstr "Kondisi pengelompokan belum dipilih."
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___70.string.text
+msgid "Select the fields (columns) for your query"
+msgstr "Pilih kolom untuk kuiri Anda"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___71.string.text
+msgid "Select the sorting order"
+msgstr "Pilih susunan urut"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___72.string.text
+msgid "Select the search conditions"
+msgstr "Pilih kondisi pencarian"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___73.string.text
+msgid "Select the type of query"
+msgstr "Pilih jenis kuiri"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___74.string.text
+msgid "Select the groups"
+msgstr "Pilih kelompok"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___75.string.text
+msgid "Select the grouping conditions"
+msgstr "Pilih kondisi pengelompokan"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___76.string.text
+msgid "Assign aliases if desired"
+msgstr "Beri alias jika diinginkan"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___77.string.text
+msgid "Check the overview and decide how to proceed"
+msgstr "Tinjaulah dulu dan putuskan bagaimana prosesnya"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___80.string.text
+msgctxt "dbwizres.src#RID_DB_QUERY_WIZARD_START___80.string.text"
+msgid "Field selection"
+msgstr "Seleksi kolom"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___81.string.text
+msgid "Sorting order"
+msgstr "Susunan urut"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___82.string.text
+msgid "Search conditions"
+msgstr "Kondisi pencarian"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___83.string.text
+msgid "Detail or summary"
+msgstr "Detail atau ringkasan"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___84.string.text
+msgctxt "dbwizres.src#RID_DB_QUERY_WIZARD_START___84.string.text"
+msgid "Grouping"
+msgstr "Pengelompokan"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___85.string.text
+msgid "Grouping conditions"
+msgstr "Kondisi pengelompokan"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___86.string.text
+msgid "Aliases"
+msgstr "Alias"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___87.string.text
+msgid "Overview"
+msgstr "Tinjauan"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___88.string.text
+msgid ""
+"A field that has not been assigned an aggregate function must be used in a "
+"group."
+msgstr ""
+"Kolom yang tidak termasuk fungsi agregat harus digunakan dalam kelompok."
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___89.string.text
+msgid ""
+"The condition '<FIELDNAME> <LOGICOPERATOR> <VALUE>' was chosen twice. Each "
+"condition can only be chosen once"
+msgstr ""
+"Kondisi '<FIELDNAME> <LOGICOPERATOR> <VALUE>' telah dipilih dua kali. Tiap "
+"kondisi hanya boleh dipilih sekali."
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___90.string.text
+msgid ""
+"The aggregate function <FUNCTION> has been assigned twice to the fieldname "
+"'<NUMERICFIELD>'."
+msgstr ""
+"Fungsi agregat <FUNCTION> digunakan dua kali pada kolom '<NUMERICFIELD>'."
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___91.string.text
+msgid ", "
+msgstr ", "
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___92.string.text
+msgid "<FIELDTITLE> (<FIELDNAME>)"
+msgstr "<FIELDTITLE> (<FIELDNAME>)"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___93.string.text
+msgid "<FIELDNAME> (<SORTMODE>)"
+msgstr "<FIELDNAME> (<SORTMODE>)"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___94.string.text
+msgctxt "dbwizres.src#RID_DB_QUERY_WIZARD_START___94.string.text"
+msgid "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+msgstr "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___95.string.text
+msgid "<CALCULATEDFUNCTION> <FIELDNAME>"
+msgstr "<CALCULATEDFUNCTION> <FIELDNAME>"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___96.string.text
+msgctxt "dbwizres.src#RID_DB_QUERY_WIZARD_START___96.string.text"
+msgid "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+msgstr "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___0.string.text
+msgid "Report Wizard"
+msgstr "Wahana Pandu Laporan"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___3.string.text
+msgid "~Table"
+msgstr "~Tabel"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___4.string.text
+msgid "Colu~mns"
+msgstr "Kolo~m"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___7.string.text
+msgid "Report_"
+msgstr "Laporan_"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___8.string.text
+msgid "- undefined -"
+msgstr "- belum ditentukan -"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___9.string.text
+msgid "~Fields in report"
+msgstr "~Kolom pada laporan"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___11.string.text
+msgctxt "dbwizres.src#RID_DB_REPORT_WIZARD_START___11.string.text"
+msgid "Grouping"
+msgstr "Pengelompokan"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___12.string.text
+msgid "Sort options"
+msgstr "Opsi pengurutan"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___13.string.text
+msgid "Choose layout"
+msgstr "Pilih tata letak"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___14.string.text
+msgctxt "dbwizres.src#RID_DB_REPORT_WIZARD_START___14.string.text"
+msgid "Create report"
+msgstr "Buat laporan"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___15.string.text
+msgid "Layout of data"
+msgstr "Tata letak data"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___16.string.text
+msgid "Layout of headers and footers"
+msgstr "Tata letak tajuk dan kaki"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___19.string.text
+msgctxt "dbwizres.src#RID_DB_REPORT_WIZARD_START___19.string.text"
+msgid "Fields"
+msgstr "Kolom"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___20.string.text
+msgid "~Sort by"
+msgstr "Urut berda~sar"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___21.string.text
+msgid "T~hen by"
+msgstr "Lalu ole~h"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___22.string.text
+msgid "Orientation"
+msgstr "Orientasi"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___23.string.text
+msgid "Portrait"
+msgstr "Tegak"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___24.string.text
+msgid "Landscape"
+msgstr "Tumbang"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___28.string.text
+msgid "Which fields do you want to have in your report?"
+msgstr "Kolom apa saja yang hendak disertakan pada laporan?"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___29.string.text
+msgid "Do you want to add grouping levels?"
+msgstr "Tambah tingkat pengelompokan?"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___30.string.text
+msgid "According to which fields do you want to sort the data?"
+msgstr "Berdasarkan kolom manakah data akan diurut?"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___31.string.text
+msgid "How do you want your report to look?"
+msgstr "Seperti apa tampilan laporan?"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___32.string.text
+msgid "Decide how you want to proceed"
+msgstr "Tentukan proses yang diinginkan"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___33.string.text
+msgid "Title of report"
+msgstr "Judul laporan"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___34.string.text
+msgid "Display report"
+msgstr "Tampilkan laporan"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___35.string.text
+msgctxt "dbwizres.src#RID_DB_REPORT_WIZARD_START___35.string.text"
+msgid "Create report"
+msgstr "Buat laporan"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___36.string.text
+msgid "Ascending"
+msgstr "Menaik"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___37.string.text
+msgid "Descending"
+msgstr "Menurun"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___40.string.text
+msgid "~Dynamic report"
+msgstr "Laporan ~dinamis"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___41.string.text
+msgid "~Create report now"
+msgstr "~Buat laporan sekarang"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___42.string.text
+msgid "~Modify report layout"
+msgstr "~Ubah tata letak laporan"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___43.string.text
+msgid "Static report"
+msgstr "Laporan statis"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___44.string.text
+msgid "Save as"
+msgstr "Simpan sebagai"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___50.string.text
+msgid "Groupings"
+msgstr "Pengelompokan"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___51.string.text
+msgid "Then b~y"
+msgstr "La~lu secara"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___52.string.text
+msgid "~Then by"
+msgstr "Lalu se~cara"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___53.string.text
+msgid "Asc~ending"
+msgstr "M~enaik"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___54.string.text
+msgid "Ascend~ing"
+msgstr "Menur~un"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___55.string.text
+msgid "Ascendin~g"
+msgstr "Menai~k"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___56.string.text
+msgctxt "dbwizres.src#RID_DB_REPORT_WIZARD_START___56.string.text"
+msgid "De~scending"
+msgstr "Menu~run"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___57.string.text
+msgid "Des~cending"
+msgstr "Menuru~n"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___58.string.text
+msgctxt "dbwizres.src#RID_DB_REPORT_WIZARD_START___58.string.text"
+msgid "De~scending"
+msgstr "Menu~run"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___60.string.text
+msgid "Binary fields cannot be displayed in the report."
+msgstr "Kolom biner tidak bisa ditampilkan pada laporan."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___61.string.text
+msgid "The table '<TABLENAME>' does not exist."
+msgstr "Tabel '<TABLENAME>' tidak ada."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___62.string.text
+msgid "Creating Report..."
+msgstr "Membuat Laporan..."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___63.string.text
+msgid "Number of records inserted: <COUNT>"
+msgstr "Jumlah rekaman yang disisipkan: <COUNT>"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___64.string.text
+msgid "The form '<REPORTFORM>' does not exist."
+msgstr "Formulir '<REPORTFORM>' tidak ada."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___65.string.text
+msgid ""
+"The query with the statement <BR>'<STATEMENT>' <BR> could not be run. <BR> "
+"Check your data source."
+msgstr ""
+"Kuiri dengan pernyataan <BR>'<STATEMENT>' <BR> tidak dapat dijalankan. "
+"<BR>Periksa sumber data Anda."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___66.string.text
+msgid ""
+"The following hidden control in the form '<REPORTFORM>' could not be read: "
+"'<CONTROLNAME>'."
+msgstr ""
+"Kontrol tersembunyi pada formulir '<REPORTFORM>' berikut tidak dapat dibaca: "
+"'<CONTROLNAME>'."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___67.string.text
+msgid "Importing data..."
+msgstr "Mengimpor data..."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___68.string.text
+msgid "Labeling fields"
+msgstr "Melabeli kolom"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___69.string.text
+msgid "How do you want to label the fields?"
+msgstr "Bagaimana kolom akan diberi label?"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___70.string.text
+msgid "Label"
+msgstr "Label"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___71.string.text
+msgctxt "dbwizres.src#RID_DB_REPORT_WIZARD_START___71.string.text"
+msgid "Field"
+msgstr "Kolom"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___72.string.text
+msgid ""
+"An error occurred in the wizard.<BR>The template '%PATH' could be "
+"erroneous.<BR>Either the required sections or tables do not exist or exist "
+"under the wrong name.<BR>See the Help for more detailed "
+"information.<BR>Please select another template."
+msgstr ""
+"Kesalahan terjadi pada wahana pandu.<BR>Palet '%PATH' mungkin mengandung "
+"kesalahan.<BR>Mungkin, bagian atau tabel tertentu tidak ada, atau ada namun "
+"memiliki nama berbeda.<BR>Lihat Bantuan untuk informasi lebih "
+"lanjut.<BR>Silakan pilih palet lain."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___73.string.text
+msgid "There is an invalid user field in a table."
+msgstr "Terdapat kolom tidak sah pada tabel."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___74.string.text
+msgid ""
+"The sort criterium '<FIELDNAME>' was chosen twice. Each criterium can only "
+"be chosen once."
+msgstr ""
+"Kriteria urut '<FIELDNAME>' dipilih dua kali. Tiap kriteria hanya boleh "
+"dipilih sekali."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___75.string.text
+msgid ""
+"Note: The dummy text will be replaced by data from the database when the "
+"report is created."
+msgstr ""
+"Catatan: Teks contoh akan diganti dengan data dari basis data ketika laporan "
+"dibuat."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___76.string.text
+msgid ""
+"A report '%REPORTNAME' already exists in the database. Please assign another "
+"name."
+msgstr "Laporan '%REPORTNAME' sudah ada di basis data. Pilih nama lain."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___78.string.text
+msgid "How do you want to proceed after creating the report?"
+msgstr "Apa yang hendak dilakukan setelah membuat laporan?"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___79.string.text
+msgid "What kind of report do you want to create?"
+msgstr "Jenis laporan apa yang hendak Anda buat?"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___80.string.text
+msgid "Tabular"
+msgstr "Tabular"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___81.string.text
+msgid "Columnar, single-column"
+msgstr "Kolom, satu kolom"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___82.string.text
+msgid "Columnar, two columns"
+msgstr "Kolom, dua kolom"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___83.string.text
+msgid "Columnar, three columns"
+msgstr "Kolom, tiga kolom"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___84.string.text
+msgid "In blocks, labels left"
+msgstr "Dalam blok, label kiri"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___85.string.text
+msgid "In blocks, labels above"
+msgstr "Dalam blok, label atas"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___86.string.text
+msgctxt "dbwizres.src#RID_DB_REPORT_WIZARD_START___86.string.text"
+msgid "Title:"
+msgstr "Judul:"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___87.string.text
+msgid "Author:"
+msgstr "Penulis:"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___88.string.text
+msgctxt "dbwizres.src#RID_DB_REPORT_WIZARD_START___88.string.text"
+msgid "Date:"
+msgstr "Tanggal:"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___89.string.text
+msgid "Page #page# of #count#"
+msgstr "Halaman #page# dari #count#"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___90.string.text
+msgid "Page number:"
+msgstr "Nomor halaman:"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___91.string.text
+msgid "Page count:"
+msgstr "Jumlah halaman:"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___92.string.text
+msgid "No valid report template was found."
+msgstr "Tidak menemukan palet laporan yang sah."
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___1.string.text
+msgid "Table Wizard"
+msgstr "Wahana Pandu Tabel"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___2.string.text
+msgid "Select fields"
+msgstr "Pilih kolom"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___3.string.text
+msgid "Set types and formats"
+msgstr "Atur jenis dan format"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___4.string.text
+msgctxt "dbwizres.src#RID_DB_TABLE_WIZARD_START___4.string.text"
+msgid "Set primary key"
+msgstr "Tentukan kunci utama"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___5.string.text
+msgctxt "dbwizres.src#RID_DB_TABLE_WIZARD_START___5.string.text"
+msgid "Create table"
+msgstr "Buat tabel"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___8.string.text
+msgid "Select fields for your table"
+msgstr "Pilih kolom untuk tabel Anda"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___9.string.text
+msgid "Set field types and formats"
+msgstr "Tentukan jenis dan format"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___10.string.text
+msgctxt "dbwizres.src#RID_DB_TABLE_WIZARD_START___10.string.text"
+msgid "Set primary key"
+msgstr "Tentukan kunci utama"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___11.string.text
+msgctxt "dbwizres.src#RID_DB_TABLE_WIZARD_START___11.string.text"
+msgid "Create table"
+msgstr "Buat tabel"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___14.string.text
+msgid ""
+"This wizard helps you to create a table for your database. After selecting a "
+"table category and a sample table, choose the fields you want to include in "
+"your table. You can include fields from more than one sample table."
+msgstr ""
+"Wahana ini akan membimbing Anda dalam membuat tabel basis data. Setelah "
+"memilih kategori tabel beserta contohnya, lalu pilih kolom yang ingin "
+"disertakan dalam tabel. Anda bisa menyertakan kolom lebih dari satu tabel "
+"contoh."
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___15.string.text
+msgid "Ca~tegory"
+msgstr "Ka~tegori"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___16.string.text
+msgid "B~usiness"
+msgstr "Bisni~s"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___17.string.text
+msgid "P~ersonal"
+msgstr "Pr~ibadi"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___18.string.text
+msgid "~Sample tables"
+msgstr "~Tabel contoh"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___19.string.text
+msgctxt "dbwizres.src#RID_DB_TABLE_WIZARD_START___19.string.text"
+msgid "A~vailable fields"
+msgstr "~Kolom yang ada"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___20.string.text
+msgid "Field information"
+msgstr "Informasi kolom"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___21.string.text
+msgid "+"
+msgstr "+"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___22.string.text
+msgid "-"
+msgstr "-"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___23.string.text
+msgid "Field name"
+msgstr "Nama kolom"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___24.string.text
+msgid "Field type"
+msgstr "Jenis kolom"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___25.string.text
+msgid "~Selected fields"
+msgstr "Kolom yang ~dipilih"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___26.string.text
+msgid ""
+"A primary key uniquely identifies each record in a database table. Primary "
+"keys ease the linking of information in separate tables, and it is "
+"recommended that you have a primary key in every table. Without a primary "
+"key, it will not be possible to enter data into this table."
+msgstr ""
+"Kunci utama akan mengidentifikasi rekaman secara unik dalam tabel basis "
+"data. Kunci utama mempermudah pentautan informasi pada tabel yang berbeda, "
+"dan disarankan agar setiap tabel Anda mempunyai kunci utama tersebut. Tanpa "
+"kunci utama, tidak mungkin memasukkan data ke dalam tabel ini."
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___27.string.text
+msgid "~Create a primary key"
+msgstr "~Buat kunci utama"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___28.string.text
+msgid "~Automatically add a primary key"
+msgstr "Otom~atis tambah kunci utama"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___29.string.text
+msgid "~Use an existing field as a primary key"
+msgstr "G~unakan kolom yang ada sebagai kunci utama"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___30.string.text
+msgid "Define p~rimary key as a combination of several fields "
+msgstr "Tentukan kunc~i utama sebagai kombinasi beberapa kolom "
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___31.string.text
+msgid "F~ieldname"
+msgstr "N~ama kolom"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___32.string.text
+msgid "~Primary key fields"
+msgstr "Kolom kunci ~utama"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___33.string.text
+msgid "Auto ~value"
+msgstr "N~ilai otomatis"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___34.string.text
+msgid "What do you want to name your table?"
+msgstr "Apa nama tabel Anda?"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___35.string.text
+msgid ""
+"Congratulations. You have entered all the information needed to create your "
+"table."
+msgstr ""
+"Selamat. Anda telah memberikan semua informasi yang diperlukan untuk membuat "
+"tabel."
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___36.string.text
+msgctxt "dbwizres.src#RID_DB_TABLE_WIZARD_START___36.string.text"
+msgid "What do you want to do next?"
+msgstr "Apa yang hendak Anda perbuat selanjutnya?"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___37.string.text
+msgid "Modify the table design"
+msgstr "Ubah desain tabel"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___38.string.text
+msgid "Insert data immediately"
+msgstr "Segera menyisipkan data"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___39.string.text
+msgid "C~reate a form based on this table"
+msgstr "Buat fo~rmulir berdasarkan tabel ini"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___40.string.text
+msgid "The table you have created could not be opened."
+msgstr "Tabel yang baru saja Anda buat tidak bisa dibuka."
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___41.string.text
+msgid ""
+"The table name '%TABLENAME' contains a character ('%SPECIALCHAR') that might "
+"not be supported by the database."
+msgstr ""
+"Nama tabel '%TABLENAME' mengandung karakter ('%SPECIALCHAR') yang "
+"kemungkinan tidak didukung oleh basis data."
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___42.string.text
+msgid ""
+"The field name '%FIELDNAME' contains a special character ('%SPECIALCHAR') "
+"that might not be supported by the database."
+msgstr ""
+"Nama kolom '%FIELDNAME' mengandung karakter ('%SPECIALCHAR') yang "
+"kemungkinan tidak didukung oleh basis data."
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___43.string.text
+msgctxt "dbwizres.src#RID_DB_TABLE_WIZARD_START___43.string.text"
+msgid "Field"
+msgstr "Kolom"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___44.string.text
+msgid "MyTable"
+msgstr "TabelKu"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___45.string.text
+msgid "Add a Field"
+msgstr "Tambah Kolom"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___46.string.text
+msgid "Remove the selected Field"
+msgstr "Hapus Kolom Terpilih"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___47.string.text
+msgid ""
+"The field cannot be inserted because this would exceed the maximum number of "
+"%COUNT possible fields in the database table"
+msgstr ""
+"Kolom tidak bisa ditambah karena akan melampaui jumlah kolom maksimum %COUNT "
+"dalam tabel basis data."
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___48.string.text
+msgid ""
+"The name '%TABLENAME' already exists.\n"
+"Please enter another name."
+msgstr ""
+"Nama '%TABLENAME' sudah ada.\n"
+"Pilih nama lain."
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___49.string.text
+msgid "Catalog of the table"
+msgstr "Katalog tabel"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___50.string.text
+msgid "Schema of the table"
+msgstr "Skema tabel"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___51.string.text
+msgid "The field '%FIELDNAME' already exists."
+msgstr "Kolom '%FIELDNAME' sudah ada."
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___1.string.text
+msgid "Letter Wizard"
+msgstr "Wahana Pandu Surat"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___2.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___2.string.text"
+msgid "Label9"
+msgstr "Label9"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___3.string.text
+msgid "~Business letter"
+msgstr "Surat ~bisnis"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___4.string.text
+msgid "~Formal personal letter"
+msgstr "Surat re~smi pribadi"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___5.string.text
+msgid "~Personal letter"
+msgstr "Surat ~pribadi"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___6.string.text
+msgid "~Use letterhead paper with pre-printed elements"
+msgstr "G~unakan kertas dengan bagian ujung yang sudah dicetak."
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___7.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___7.string.text"
+msgid "~Logo"
+msgstr "~Logo"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___8.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___8.string.text"
+msgid "Return address"
+msgstr "Alamat balasan"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___9.string.text
+msgid "~Include footer"
+msgstr "Sertakan kak~i"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___10.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___10.string.text"
+msgid "~Return address in envelope window"
+msgstr "Alamat balasan pada jendela ampl~op"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___11.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___11.string.text"
+msgid "~Logo"
+msgstr "~Logo"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___12.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___12.string.text"
+msgid "~Return address in envelope window"
+msgstr "Alamat balasan pada jendela ampl~op"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___13.string.text
+msgid "Letter Signs"
+msgstr "Tanda Tangan Surat"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___14.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___14.string.text"
+msgid "S~ubject line"
+msgstr "Baris s~ubjek"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___15.string.text
+msgid "Salu~tation"
+msgstr "Salu~tasi"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___16.string.text
+msgid "Fold ~marks"
+msgstr "Ta~nda lipatan"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___17.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___17.string.text"
+msgid "~Complimentary close"
+msgstr "Kalimat ~penutup"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___18.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___18.string.text"
+msgid "~Footer"
+msgstr "Kak~i"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___19.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___19.string.text"
+msgid "~Use user data for return address"
+msgstr "G~unakan data pengguna sebagai alamat balasan"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___20.string.text
+msgid "~New sender address:"
+msgstr "Alamat baru pe~ngirim:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___21.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___21.string.text"
+msgid "Use placeholders for ~recipient's address"
+msgstr "Gunakan pewakil bagi alamat pene~rima"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___22.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___22.string.text"
+msgid "Use address database for ~mail merge"
+msgstr "Gunakan basis data alamat untuk surat ~massal"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___23.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___23.string.text"
+msgid "Include ~only on second and following pages"
+msgstr "Sertakan han~ya di halaman kedua dan seterusnya"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___24.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___24.string.text"
+msgid "~Include page number"
+msgstr "~Sertakan nomor halaman"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___25.string.text
+msgid "Letter Template"
+msgstr "Palet Surat"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___26.string.text
+msgid "Create a ~letter from this template"
+msgstr "Buat surat dari pa~let ini"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___27.string.text
+msgid "Make ~manual changes to this letter template"
+msgstr "Buat perubahan ~manual pada palet surat ini"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___28.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___28.string.text"
+msgid "Page design"
+msgstr "Desain halaman"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___29.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___29.string.text"
+msgid "Page design"
+msgstr "Desain halaman"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___30.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___30.string.text"
+msgid "Page design"
+msgstr "Desain halaman"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___31.string.text
+msgid ""
+"This wizard helps you to create a letter template. You can then use the "
+"template as the basis for writing letters as often as desired."
+msgstr ""
+"Wahana ini membantu Anda untuk membuat palet surat. Palet itu kemudian bisa "
+"dijadikan basis menulis surat sesering yang diinginkan."
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___32.string.text
+msgid "~Height:"
+msgstr "~Tinggi:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___33.string.text
+msgid "~Width:"
+msgstr "~Lebar:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___34.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___34.string.text"
+msgid "S~pacing to left margin:"
+msgstr "~Jarak dari margin kiri:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___35.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___35.string.text"
+msgid "Spacing ~to top margin:"
+msgstr "Jarak dari margin a~tas:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___36.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___36.string.text"
+msgid "Height:"
+msgstr "Tinggi:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___37.string.text
+msgid "Width:"
+msgstr "Lebar:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___38.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___38.string.text"
+msgid "S~pacing to left margin:"
+msgstr "~Jarak dari margin kiri:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___39.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___39.string.text"
+msgid "Spacing ~to top margin:"
+msgstr "Jarak dari margin a~tas:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___40.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___40.string.text"
+msgid "Height:"
+msgstr "Tinggi:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___41.string.text
+msgid "Use a typical letter format for this country:"
+msgstr "Gunakan format surat khas untuk negara ini:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___42.string.text
+msgid "Sender's address"
+msgstr "Alamat pengirim"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___43.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___43.string.text"
+msgid "Name:"
+msgstr "Nama:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___44.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___44.string.text"
+msgid "Street:"
+msgstr "Jalan:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___45.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___45.string.text"
+msgid "ZIP code/State/City:"
+msgstr "Kode pos/Provinsi/Kota:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___46.string.text
+msgid "Recipient's address"
+msgstr "Alamat penerima"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___47.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___47.string.text"
+msgid "Footer"
+msgstr "Kaki"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___48.string.text
+msgid ""
+"This wizard creates a letter template which enables you to create multiple "
+"letters with the same layout and settings."
+msgstr ""
+"Dengan wahana ini, Anda bisa membuat palet surat yang bisa Anda pakai untuk "
+"menulis banyak surat dengan tata letak dan pengaturan yang sama."
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___49.string.text
+msgid ""
+"To create another new letter out of the template just navigate to the "
+"template location and double-click it."
+msgstr ""
+"Untuk membuat surat baru berdasarkan palet ini, silakan cari lokasi palet "
+"dan klik ganda berkasnya."
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___50.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___50.string.text"
+msgid "Template name:"
+msgstr "Nama palet:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___51.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___51.string.text"
+msgid "Location and file name:"
+msgstr "Lokasi dan nama berkas:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___52.string.text
+msgid "How do you want to proceed?"
+msgstr "Apa yang akan Anda lakukan selanjutnya?"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___53.string.text
+msgid "Please choose the type of letter and page design"
+msgstr "Silakan pilih jenis surat dan desain halaman"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___54.string.text
+msgid "Select the items to be printed"
+msgstr "Pilih bagian yang hendak dicetak"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___55.string.text
+msgid "Specify items already on your letterhead paper"
+msgstr "Tentukan bagian ujung kertas surat yang sudah dicetak"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___56.string.text
+msgid "Specify the sender and recipient information"
+msgstr "Tentukan informasi pengirim dan penerima"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___57.string.text
+msgid "Fill in the information you would like in the footer"
+msgstr "Isikan informasi yang ingin ditampilkan pada kaki"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___58.string.text
+msgid "Please specify last settings"
+msgstr "Tentukan setelan terakhir"
+
+#: dbwizres.src#RID_LETTERWIZARDSALUTATION_START___1.string.text
+msgid "To Whom it May Concern"
+msgstr "Kepada Yang Berkepentingan"
+
+#: dbwizres.src#RID_LETTERWIZARDSALUTATION_START___2.string.text
+msgid "Dear Sir or Madam"
+msgstr "Yth. Bapak atau Ibu"
+
+#: dbwizres.src#RID_LETTERWIZARDSALUTATION_START___3.string.text
+msgid "Hello"
+msgstr "Halo"
+
+#: dbwizres.src#RID_LETTERWIZARDGREETING_START___1.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDGREETING_START___1.string.text"
+msgid "Sincerely"
+msgstr "Hormat saya"
+
+#: dbwizres.src#RID_LETTERWIZARDGREETING_START___2.string.text
+msgid "Best regards"
+msgstr "Hormat kami"
+
+#: dbwizres.src#RID_LETTERWIZARDGREETING_START___3.string.text
+msgid "Cheers"
+msgstr "Terima kasih"
+
+#: dbwizres.src#RID_LETTERWIZARDROADMAP_START___1.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDROADMAP_START___1.string.text"
+msgid "Page design"
+msgstr "Desain halaman"
+
+#: dbwizres.src#RID_LETTERWIZARDROADMAP_START___2.string.text
+msgid "Letterhead layout"
+msgstr "Tata letak ujung kertas"
+
+#: dbwizres.src#RID_LETTERWIZARDROADMAP_START___3.string.text
+msgid "Printed items"
+msgstr "Hendak dicetak"
+
+#: dbwizres.src#RID_LETTERWIZARDROADMAP_START___4.string.text
+msgid "Recipient and sender"
+msgstr "Penerima dan pengirim"
+
+#: dbwizres.src#RID_LETTERWIZARDROADMAP_START___5.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDROADMAP_START___5.string.text"
+msgid "Footer"
+msgstr "Kaki"
+
+#: dbwizres.src#RID_LETTERWIZARDROADMAP_START___6.string.text
+msgctxt "dbwizres.src#RID_LETTERWIZARDROADMAP_START___6.string.text"
+msgid "Name and location"
+msgstr "Nama dan Lokasi"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___1.string.text
+msgid "Fax Wizard"
+msgstr "Wahana Pandu Faks"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___2.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___2.string.text"
+msgid "Label9"
+msgstr "Label9"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___3.string.text
+msgid "~Business Fax"
+msgstr "Faks ~Bisnis"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___4.string.text
+msgid "~Personal Fax"
+msgstr "Faks ~Pribadi"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___5.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___5.string.text"
+msgid "~Logo"
+msgstr "~Logo"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___6.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___6.string.text"
+msgid "S~ubject line"
+msgstr "Baris s~ubjek"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___7.string.text
+msgid "S~alutation"
+msgstr "S~alutasi"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___8.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___8.string.text"
+msgid "~Complimentary close"
+msgstr "Kalimat ~penutup"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___9.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___9.string.text"
+msgid "~Footer"
+msgstr "~Kaki"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___10.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___10.string.text"
+msgid "~Use user data for return address"
+msgstr "G~unakan data pengguna untuk alamat balasan"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___11.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___11.string.text"
+msgid "~New return address"
+msgstr "Alamat balasa~n yang baru"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___12.string.text
+msgid "My Fax Template"
+msgstr "Palet Faksimiliku"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___13.string.text
+msgid "Create a ~fax from this template"
+msgstr "Buat ~faks dari palet ini"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___14.string.text
+msgid "Make ~manual changes to this fax template"
+msgstr "Buat perubahan ~manual pada palet faksi ini"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___15.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___15.string.text"
+msgid "Page design"
+msgstr "Desain halaman"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___16.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___16.string.text"
+msgid "Page design"
+msgstr "Desain halaman"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___17.string.text
+msgid ""
+"This wizard helps you to create a fax template. The template can then be "
+"used to create a fax whenever needed."
+msgstr ""
+"Dengan wahana ini, Anda bisa membuat palet faks. Palet tersebut bisa dipakai "
+"untuk membuat faks lain di kemudian hari."
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___18.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___18.string.text"
+msgid "Return address"
+msgstr "Alamat balasan"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___19.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___19.string.text"
+msgid "Name:"
+msgstr "Nama:"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___20.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___20.string.text"
+msgid "Street:"
+msgstr "Jalan:"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___21.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___21.string.text"
+msgid "ZIP code/State/City:"
+msgstr "Kode pos/Provinsi/Kota:"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___22.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___22.string.text"
+msgid "Footer"
+msgstr "Kaki"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___23.string.text
+msgid ""
+"This wizard creates a fax template which enables you to create multiple "
+"faxes with the same layout and settings."
+msgstr ""
+"Dengan wahana ini, Anda bisa membuat palet faks. Palet tersebut dapat "
+"digunakan untuk membuat banyak faks dengan tata letak dan pengaturan yang "
+"seragam."
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___24.string.text
+msgid ""
+"To create another new fax out of the template, go to the location where you "
+"saved the template and double-click the file."
+msgstr ""
+"Untuk membuat faks baru berdasarkan palet ini, carilah lokasi palet disimpan "
+"dan klik ganda berkasnya."
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___25.string.text
+msgid "Template Name:"
+msgstr "Nama Palet:"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___26.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___26.string.text"
+msgid "Location and file name:"
+msgstr "Lokasi dan nama berkas:"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___27.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___27.string.text"
+msgid "What do you want to do next?"
+msgstr "Apa yang hendak Anda perbuat selanjutnya?"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___28.string.text
+msgid "Choose the type of fax and a page design"
+msgstr "Pilih jenis faks dan desain halaman"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___29.string.text
+msgid "Select items to include in the fax template"
+msgstr "Pilih item yang akan disertakan pada palet faks"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___30.string.text
+msgid "Specify sender and recipient information"
+msgstr "Berikan informasi pengirim dan penerima"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___31.string.text
+msgid "Enter text for the footer"
+msgstr "Masukkan teks untuk kaki"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___32.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___32.string.text"
+msgid "Choose a name and save the template"
+msgstr "Masukkan nama dan simpan palet"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___33.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___33.string.text"
+msgid "Include ~only on second and following pages"
+msgstr "Sertakan han~ya di halaman kedua dan seterusnya"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___34.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___34.string.text"
+msgid "~Include page number"
+msgstr "Ser~takan nomor halaman"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___35.string.text
+msgid "~Date"
+msgstr "~Tanggal"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___36.string.text
+msgid "~Type of message"
+msgstr "~Jenis pesan"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___37.string.text
+msgid "Fax Number:"
+msgstr "Nomor Faks:"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___38.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___38.string.text"
+msgid "Use placeholders for ~recipient's address"
+msgstr "Gunakan pewakil untuk alamat pene~rima"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___39.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___39.string.text"
+msgid "Use address database for ~mail merge"
+msgstr "Gunakan basis data alamat untuk surat ~massal"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___40.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___40.string.text"
+msgid "~New return address"
+msgstr "Alamat balasa~n yang baru"
+
+#: dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START___1.string.text
+msgid "Important Information!"
+msgstr "Informasi Penting!"
+
+#: dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START___2.string.text
+msgid "For your information"
+msgstr "Informasi bagi Anda"
+
+#: dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START___3.string.text
+msgid "News!"
+msgstr "Berita!"
+
+#: dbwizres.src#RID_FAXWIZARDSALUTATION_START___1.string.text
+msgid "To whom it may concern,"
+msgstr "Kepada yang berkepentingan,"
+
+#: dbwizres.src#RID_FAXWIZARDSALUTATION_START___2.string.text
+msgid "Dear Sir or Madam,"
+msgstr "Yth. Tuan atau Nyonya,"
+
+#: dbwizres.src#RID_FAXWIZARDSALUTATION_START___3.string.text
+msgid "Hello,"
+msgstr "Halo,"
+
+#: dbwizres.src#RID_FAXWIZARDSALUTATION_START___4.string.text
+msgid "Hi,"
+msgstr "Hai,"
+
+#: dbwizres.src#RID_FAXWIZARDGREETING_START___1.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDGREETING_START___1.string.text"
+msgid "Sincerely"
+msgstr "Salam"
+
+#: dbwizres.src#RID_FAXWIZARDGREETING_START___2.string.text
+msgid "Yours faithfully"
+msgstr "Salam hormat"
+
+#: dbwizres.src#RID_FAXWIZARDGREETING_START___3.string.text
+msgid "Regards"
+msgstr "Hormat kami"
+
+#: dbwizres.src#RID_FAXWIZARDGREETING_START___4.string.text
+msgid "Love"
+msgstr "Cinta"
+
+#: dbwizres.src#RID_FAXWIZARDROADMAP_START___1.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDROADMAP_START___1.string.text"
+msgid "Page design"
+msgstr "Desain halaman"
+
+#: dbwizres.src#RID_FAXWIZARDROADMAP_START___2.string.text
+msgid "Items to include"
+msgstr "Item yang disertakan"
+
+#: dbwizres.src#RID_FAXWIZARDROADMAP_START___3.string.text
+msgid "Sender and Recipient"
+msgstr "Pengirim dan Penerima"
+
+#: dbwizres.src#RID_FAXWIZARDROADMAP_START___4.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDROADMAP_START___4.string.text"
+msgid "Footer"
+msgstr "Kaki"
+
+#: dbwizres.src#RID_FAXWIZARDROADMAP_START___5.string.text
+msgctxt "dbwizres.src#RID_FAXWIZARDROADMAP_START___5.string.text"
+msgid "Name and location"
+msgstr "Nama dan Lokasi"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__1.string.text
+msgid "Web Wizard"
+msgstr "Wahana Pandu Web"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__2.string.text
+msgid ""
+"This Web Wizard is to aid you in publishing documents on the Internet.\n"
+"\n"
+"It will convert the documents so that they can be viewed by a web browser. "
+"In addition, it will generate a Table of Contents page with links for easy "
+"access to the documents. The Web Wizard will also allow you to customize the "
+"design and layout of your web site.\n"
+"\n"
+"You will be able to keep the documents you have published on the web up-to-"
+"date and add or remove documents at any time."
+msgstr ""
+"Wahana Pandu Web membantu Anda mempublikasi dokumen ke Internet.\n"
+"\n"
+"Wahana akan mengonversi dokumen agar dapat dilihat menggunakan penelusur "
+"web. Halaman daftar isi juga akan dibuat yang berisi taut ke halaman-halaman "
+"dokumen. Wahana Pandu Web juga memungkinkan Anda membuat sendiri desain dan "
+"tata letak situs web Anda.\n"
+"\n"
+"Anda dapat menjaga agar dokumen yang dipublikasikan selalu mutakhir dan Anda "
+"dapat menambah dan mengurangi halaman setiap saat."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__4.string.text
+msgid "~Delete"
+msgstr "~Hapus"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__5.string.text
+msgid "Introduction"
+msgstr "Pendahuluan"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__6.string.text
+msgid "Select the documents you want to publish"
+msgstr "Pilih dokumen yang akan dipublikasikan"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__8.string.text
+msgid "Document information "
+msgstr "Informasi dokumen "
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__9.string.text
+msgid "~Title:"
+msgstr "Jud~ul:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__10.string.text
+msgid "~Summary: "
+msgstr "Ringka~san: "
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__11.string.text
+msgid "Au~thor:"
+msgstr "P~enulis:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__12.string.text
+msgid "~Export to file format:"
+msgstr "~Ekspor berkas ke format:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__13.string.text
+msgid "Enter general information for your web site"
+msgstr "Masukkan info umum situs web Anda"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__14.string.text
+msgctxt "dbwizres.src#RID_WEBWIZARDDIALOG_START__14.string.text"
+msgid "Title:"
+msgstr "Judul:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__16.string.text
+msgid "Description:"
+msgstr "Deskripsi:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__18.string.text
+msgid "Created:"
+msgstr "Dibuat:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__20.string.text
+msgid "E-mail:"
+msgstr "Surel:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__21.string.text
+msgid "Copyright notice:"
+msgstr "Catatan hak cipta:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__22.string.text
+msgid "Modified:"
+msgstr "Diubah:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__24.string.text
+msgid "~Preview"
+msgstr "~Pratinjau"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__25.string.text
+msgid "Where do you want to publish your web site?"
+msgstr "Di mana situs web Anda dipublikasikan?"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__26.string.text
+msgid "Publish the new web site:"
+msgstr "Publikasikan situs web baru:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__27.string.text
+msgid "To a ~local folder"
+msgstr "Ke folder ~lokal"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__28.string.text
+msgctxt "dbwizres.src#RID_WEBWIZARDDIALOG_START__28.string.text"
+msgid "..."
+msgstr "..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__29.string.text
+msgid "To a ~web server via FTP"
+msgstr "Ke server ~web via FTP"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__31.string.text
+msgid "~Configure..."
+msgstr "~Konfigurasi..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__32.string.text
+msgid "To a ZIP ~archive"
+msgstr "Ke ~arsip ZIP"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__33.string.text
+msgctxt "dbwizres.src#RID_WEBWIZARDDIALOG_START__33.string.text"
+msgid "..."
+msgstr "..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__34.string.text
+msgid "~Save settings (recommended)"
+msgstr "~Simpan pengaturan (disarankan)"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__35.string.text
+msgid "Save ~as:"
+msgstr "Simpan seb~agai:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__36.string.text
+msgid "~Choose settings for the Web Wizard"
+msgstr "~Pilih pengaturan untuk Wahana Pandu Web"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__37.string.text
+msgid "Web site content "
+msgstr "Isi situs web "
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__38.string.text
+msgid "~Add..."
+msgstr "T~ambah..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__39.string.text
+msgid "Remo~ve"
+msgstr "Ha~pus"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__40.string.text
+msgid "Choose a layout for the table of contents of your web site"
+msgstr "Pilih tata letak untuk daftar isi situs web Anda"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__41.string.text
+msgid "Select a style for the table of contents page"
+msgstr "Pilih gaya untuk halaman daftar isi"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__42.string.text
+msgid "~Style:"
+msgstr "~Gaya:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__48.string.text
+msgid "~Layouts: "
+msgstr "Tata ~Letak: "
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__50.string.text
+msgid "~Description"
+msgstr "~Deskripsi"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__51.string.text
+msgid "~Author"
+msgstr "Pen~ulis"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__52.string.text
+msgid "Cr~eation date"
+msgstr "Tan~ggal dibuat"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__53.string.text
+msgid "~Last change date"
+msgstr "Tangga~l terakhir diubah"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__54.string.text
+msgid "~File name"
+msgstr "Nama berka~s"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__55.string.text
+msgid "File forma~t"
+msgstr "Forma~t berkas"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__56.string.text
+msgid "File format ~icon"
+msgstr "~Ikon format berkas"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__57.string.text
+msgid "Number ~of pages"
+msgstr "Jumlah halama~n"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__58.string.text
+msgid "~Size in KB"
+msgstr "~Ukuran dalam KB"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__59.string.text
+msgid "Click 'Preview' to see a preview in your browser:"
+msgstr "Klik 'Pratinjau' untuk melihat hasilnya pada penelusur web:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__60.string.text
+msgid "Customize the selected layout"
+msgstr "Ubah tata letak yang dipilih"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__61.string.text
+msgid ""
+"Include the following information for each document in the table of "
+"contents:"
+msgstr "Sertakan informasi berikut untuk tiap dokumen dalam daftar isi:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__62.string.text
+msgid "Optimize the layout for screen resolution:"
+msgstr "Optimalkan tata letak untuk layar beresolusi:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__64.string.text
+msgid "~640x480"
+msgstr "~640x480"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__65.string.text
+msgid "~800x600"
+msgstr "~800x600"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__66.string.text
+msgid "~1024x768"
+msgstr "~1024x768"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__70.string.text
+msgid "Generating Your Web Site"
+msgstr "Membuat Situs Web Anda"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__71.string.text
+msgid "%START - %END/%TOTAL"
+msgstr "%START - %END/%TOTAL"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__72.string.text
+msgid "myWebsite"
+msgstr "SitusWebKu"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__73.string.text
+msgid "FTP target '%FILENAME' is a file."
+msgstr "FTP '%FILENAME' yang dituju adalah berkas."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__74.string.text
+msgid "The local target '%FILENAME' is a file."
+msgstr "Tujuan lokal '%FILENAME' adalah berkas."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__75.string.text
+msgid ""
+"The ZIP target '%FILENAME' already exists. Do you want to overwrite the "
+"existing target? "
+msgstr "Berkas ZIP '%FILENAME' yang dituju sudah ada. Timpa?"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__76.string.text
+msgid ""
+"The FTP target directory '%FILENAME' is not empty. Some files might be "
+"overwritten. Do you want to continue?"
+msgstr ""
+"Direktori FTP '%FILENAME' yang dituju tidak kosong. Beberapa berkas bisa "
+"tertimpa. Lanjutkan?"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__77.string.text
+msgid ""
+"The local target directory '%FILENAME' is not empty. Some files might be "
+"overwritten. Do you want to continue?"
+msgstr ""
+"Direktori lokal '%FILENAME' yang dituju tidak kosong. Beberapa berkas bisa "
+"tertimpa. Lanjutkan?"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__78.string.text
+msgid ""
+"Settings already exist under the given name. Do you want to overwrite the "
+"existing settings? "
+msgstr ""
+"Sudah ada pengaturan dengan nama yang sama. Apakah pengaturan lama akan "
+"ditimpa?"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__79.string.text
+msgid "Exporting documents..."
+msgstr "Mengekspor dokumen..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__80.string.text
+msgid "Preparing export..."
+msgstr "Menyiapkan ekspor..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__81.string.text
+msgid "Copying layout files..."
+msgstr "Menyalin berkas tata letak..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__82.string.text
+msgid "Preparing table of contents generation..."
+msgstr "Persiapan membuat daftar isi..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__83.string.text
+msgid "Generating table of contents..."
+msgstr "Sedang membuat daftar isi..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__84.string.text
+msgid "Initializing..."
+msgstr "Pengaturan awal..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__86.string.text
+msgid "Preparing to publish..."
+msgstr "Bersiap untuk publikasi..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__87.string.text
+msgid "Publishing to local directory..."
+msgstr "Melakukan publikasi ke direktori lokal..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__88.string.text
+msgid "Publishing to FTP destination..."
+msgstr "Melakukan publikasi ke FTP..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__89.string.text
+msgid "Publishing to a ZIP archive..."
+msgstr "Melakukan publikasi ke arsip ZIP..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START___90.string.text
+msgid "Finishing..."
+msgstr "Pengaturan akhir..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START___94.string.text
+msgid "Graphic files"
+msgstr "Berkas grafik"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START___95.string.text
+msgid "All files"
+msgstr "Semua berkas"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START___96.string.text
+msgid "~ZIP archive files"
+msgstr "Berkas arsip ~ZIP"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START___98.string.text
+msgid "Background images"
+msgstr "Gambar latar belakang"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START___99.string.text
+msgid "Choose a background image: "
+msgstr "Pilih gambar latar belakang: "
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START___100.string.text
+msgid "Icon sets"
+msgstr "Kumpulan ikon"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START___101.string.text
+msgid "Choose an icon set:"
+msgstr "Pilih kumpulan ikon:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__102.string.text
+msgid "Other..."
+msgstr "Lainnya..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__103.string.text
+msgid "None"
+msgstr "Nihil"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__104.string.text
+msgid "Your web site was created successfully into: %FILENAME"
+msgstr "Situs web Anda berhasil dibuat di: %FILENAME"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__105.string.text
+msgid "One or more errors occurred when generating the web site."
+msgstr "Terjadi kesalahan saat membuat situs web Anda."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__106.string.text
+msgid "An error occurred while generating the table of contents page(s). "
+msgstr "Terjadi kesalahan saat membuat halaman daftar isi. "
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__107.string.text
+msgid "An error occurred while copying the layout files. "
+msgstr "Terjadi kesalahan saat menyalin berkas tata letak. "
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__108.string.text
+msgid ""
+"An error occurred while gathering document information for '%FILENAME'. "
+msgstr ""
+"Terjadi kesalahan saat mengumpulkan informasi dokumen bagi '%FILENAME'. "
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__109.string.text
+msgid "An error occurred while exporting the document '%FILENAME'."
+msgstr "Terjadi kesalahan saat mengekspor dokumen '%FILENAME'."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__110.string.text
+msgid "An error occurred while creating a directory for exporting '%FILENAME'."
+msgstr "Terjadi kesalahan saat membuat direktori untuk mengekspor '%FILENAME'."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__111.string.text
+msgid "A security error occurred while exporting the document '%FILENAME'."
+msgstr "Terjadi kesalahan sekuritas saat mengekspor dokumen '%FILENAME'."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__112.string.text
+msgid ""
+"An input/output error occurred while exporting the document '%FILENAME'."
+msgstr "Terjadi kesalahan masukan/keluaran saat mengekspr dokumen '%FILENAME'."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__113.string.text
+msgid "An error occurred while copying media files to the temporary directory."
+msgstr "Terjadi kesalahan saat menyalin berkas media ke direktori temporer."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__114.string.text
+msgid "The web site could not be copied to the following destination: %URL"
+msgstr "Situs web tidak dapat disalin ke tujuan berikut: %URL"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__115.string.text
+msgid "An unexpected error occurred: %ERROR"
+msgstr "Terjadi kesalahan yang tak terduga: %ERROR"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__116.string.text
+msgid "An unexpected error occurred while validating the file: '%FILENAME'"
+msgstr ""
+"Terjadi kesalahan tak terduga saat memeriksa keabsahan berkas: '%FILENAME'"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__117.string.text
+msgid "%FILENAME' is a folder."
+msgstr "%FILENAME' adalah folder."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__118.string.text
+msgid "Loading Web Wizard Settings..."
+msgstr "Memuat Pengaturan Wahana Pandu Web..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__119.string.text
+msgid "An unexpected error occurred."
+msgstr "Terjadi kesalahan yang tak terduga."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__120.string.text
+msgid "Validating documents..."
+msgstr "Memeriksa keabsahan dokumen..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__121.string.text
+msgid "My Archive"
+msgstr "Arsipku"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__122.string.text
+msgid "Introduction "
+msgstr "Pendahuluan "
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__123.string.text
+msgid "Documents "
+msgstr "Dokumen "
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__124.string.text
+msgid "Main layout"
+msgstr "Tata letak utama"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__125.string.text
+msgid "Layout details"
+msgstr "Detail tata letak"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__126.string.text
+msgid "Style"
+msgstr "Gaya"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__127.string.text
+msgid "Web site information"
+msgstr "Informasi situs Web"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__128.string.text
+msgid "Preview"
+msgstr "Pratinjau"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__130.string.text
+msgid ""
+"The selected settings will be deleted.\n"
+"\n"
+"Do you really want to delete these settings? "
+msgstr ""
+"Pengaturan yang dipilih akan dihapus.\n"
+"\n"
+"Anda yakin akan menghapusnya? "
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__131.string.text
+msgid "%NUMBER pages"
+msgstr "%NUMBER halaman"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__132.string.text
+msgid "%NUMBER slides"
+msgstr "%NUMBER salindia"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__133.string.text
+msgid "Created: %DATE"
+msgstr "Dibuat: %DATE"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__134.string.text
+msgid "Last modified: %DATE"
+msgstr "Terakhir diubah: %DATE"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__135.string.text
+msgid "Web Wizard Settings"
+msgstr "Pengaturan Wahana Pandu Web"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__136.string.text
+msgid "Background image:"
+msgstr "Gambar latar belakang:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__137.string.text
+msgid "Icon set:"
+msgstr "Kumpulan ikon:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__138.string.text
+msgid "The icon set is used for presentations in HTML format."
+msgstr "Kumpulan ikon digunakan untuk presentasi dalam format HTML."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__139.string.text
+msgid "HTML Metadata"
+msgstr "Metadata HTML"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__140.string.text
+msgctxt "dbwizres.src#RID_WEBWIZARDDIALOG_START__140.string.text"
+msgid "Choose..."
+msgstr "Pilih..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__141.string.text
+msgctxt "dbwizres.src#RID_WEBWIZARDDIALOG_START__141.string.text"
+msgid "Choose..."
+msgstr "Pilih..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__142.string.text
+msgid "<default>"
+msgstr "<baku>"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__143.string.text
+msgid "Publishing via FTP Proxy is not supported."
+msgstr "Publikasi via proksi FTP tidak didukung."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__144.string.text
+msgid "<no background image>"
+msgstr "<nihil>"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__145.string.text
+msgid "<no icon set>"
+msgstr "<nihil>"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__146.string.text
+msgid "The FTP directory '%FILENAME' could not be created."
+msgstr "Direktori FTP '%FILENAME' tidak dapat dibuat."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__147.string.text
+msgid ""
+"The FTP directory '%FILENAME' does not exist. \n"
+"Create the directory now?"
+msgstr ""
+"Direktori FTP '%FILENAME' tidak ada. \n"
+"Buat direktorinya sekarang?"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__148.string.text
+msgid ""
+"The Zip file '%FILENAME' cannot be created: a directory of the same name "
+"already exists."
+msgstr ""
+"Berkas ZIP '%FILENAME' tidak bisa dibuat: direktori dengan nama yang sama "
+"telah ada."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__149.string.text
+msgid ""
+"The local directory '%FILENAME' cannot be created. \n"
+"Please check your write-access."
+msgstr ""
+"Direktori lokal '%FILENAME' tidak dapat dibuat. \n"
+"Mohon periksa izin tulis Anda."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__150.string.text
+msgid ""
+"The local directory '%FILENAME' does not exist. \n"
+"Create the directory now?"
+msgstr ""
+"Direktori lokal '%FILENAME' tidak ada. \n"
+"Buat direktorinya sekarang?"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__151.string.text
+msgid "Size: %NUMBERKB"
+msgstr "Ukuran: %NUMBERKB"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__152.string.text
+msgid "File not found. Would you like to specify a new file location?"
+msgstr "Berkas tidak ditemukan. Anda ingin memilih lokasi baru?"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__0.string.text
+msgid "FTP Connection"
+msgstr "Hubungan FTP"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__1.string.text
+msgid "~User name:"
+msgstr "Nama pengg~una:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__2.string.text
+msgid "~Password:"
+msgstr "San~di:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__3.string.text
+msgid "Connect"
+msgstr "Hubungi"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__4.string.text
+msgid "1. Enter FTP connection information."
+msgstr "1. Masukkan informasi koneksi FTP."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__5.string.text
+msgid "~Server name or IP address:"
+msgstr "Nama ~server atau alamat IP:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__6.string.text
+msgid "2. Connect to the server."
+msgstr "2. Hubungi server."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__7.string.text
+msgid "3. ~Choose a remote directory (optional)."
+msgstr "3. Pilih direktori ~kendali jarak jauh (opsional)."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__8.string.text
+msgctxt "dbwizres.src#RID_WEBWIZARDDIALOG_FTP__8.string.text"
+msgid "..."
+msgstr "..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__9.string.text
+msgid "Connection status is unknown"
+msgstr "Status koneksi tidak diketahui"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__10.string.text
+msgid "Connection was established successfully"
+msgstr "Koneksi berhasil dilakukan"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__11.string.text
+msgid "Username or password is wrong"
+msgstr "Nama pengguna dan sandi salah"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__12.string.text
+msgid "Could not resolve server name"
+msgstr "Tidak dapat menentukan nama server"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__13.string.text
+msgid "You do not have sufficient user rights"
+msgstr "Anda tidak memiliki hak yang cukup"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__14.string.text
+msgid "Cannot connect to server"
+msgstr "Tidak dapat menghubungi server"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__15.string.text
+msgid "Unexpected error"
+msgstr "Kesalahan tidak diharapkan"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__16.string.text
+msgid "FTP publishing directory"
+msgstr "Direktori publikasi FTP"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__17.string.text
+msgid "This is not an FTP folder"
+msgstr "Ini bukan folder FTP"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__18.string.text
+msgid "Connecting..."
+msgstr "Menghubungi..."
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__1.string.text
+msgid "Agenda Wizard"
+msgstr "Wahana Pandu Agenda"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__2.string.text
+msgid "Make ~manual changes to this agenda template"
+msgstr "Buat perubahan ~manual pada palet agenda ini"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__3.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__3.string.text"
+msgid "Template name:"
+msgstr "Nama palet:"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START___4.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START___4.string.text"
+msgid "Location and file name:"
+msgstr "Lokasi dan nama berkas:"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__5.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__5.string.text"
+msgid "What do you want to do next?"
+msgstr "Apa yang ingin Anda lakukan selanjutnya?"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__6.string.text
+msgid "Please choose the page design for the agenda"
+msgstr "Silakan pilih desain halaman untuk agenda"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__7.string.text
+msgid "Please select the headings you wish to include in your agenda template"
+msgstr "Silakan pilih tajuk yang ingin disertakan dalam palet agenda"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__8.string.text
+msgid "Please enter general information for the event"
+msgstr "Silakan isi informasi umum untuk kegiatan"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__9.string.text
+msgid "Please specify items for the agenda"
+msgstr "Silakan beri informasi untuk agenda"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__10.string.text
+msgid "Please select the names you wish to include in your agenda template"
+msgstr "Silakan pilih nama yang ingin disertakan pada palet agenda Anda"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__11.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__11.string.text"
+msgid "Choose a name and save the template"
+msgstr "Pilih nama dan simpan palet"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__12.string.text
+msgid "Include form for recording minutes"
+msgstr "Sertakan formulir untuk catatan waktu"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__13.string.text
+msgid ""
+"This wizard helps you to create an agenda template. The template can then be "
+"used to create an agenda whenever needed."
+msgstr ""
+"Wahana ini membantu Anda dalam membuat palet agenda. Palet dapat digunakan "
+"untuk membuat agenda ketika diperlukan."
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__14.string.text
+msgid "Time:"
+msgstr "Waktu:"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__15.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__15.string.text"
+msgid "Name:"
+msgstr "Nama:"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START___16.string.text
+msgid "Location:"
+msgstr "Lokasi:"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__17.string.text
+msgid ""
+"Placeholders will be used in empty fields. You can replace placeholders with "
+"text later."
+msgstr ""
+"Pewakil digunakan pada kolom isian yang kosong. Anda dapat mengganti pewakil "
+"tersebut dengan teks yang Anda ingini nantinya."
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__18.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__18.string.text"
+msgid "..."
+msgstr "..."
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__19.string.text
+msgid "Create an ~agenda from this template"
+msgstr "Buat ~agenda berdasarkan palet ini"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__20.string.text
+msgid ""
+"To create a new agenda out of the template, go to the location where you "
+"saved the template and double-click the file."
+msgstr ""
+"Untuk membuat agenda dari palet ini, silakan cari lokasi penyimpanan palet "
+"dan klik ganda berkasnya."
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__21.string.text
+msgid "Agenda item"
+msgstr "Topik agenda"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__22.string.text
+msgid "Responsible"
+msgstr "Penanggung jawab"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__23.string.text
+msgid "Duration"
+msgstr "Durasi"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__24.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__24.string.text"
+msgid "Meeting called by"
+msgstr "Rapat diadakan oleh"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__25.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__25.string.text"
+msgid "Chairperson"
+msgstr "Pemimpin rapat"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__26.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__26.string.text"
+msgid "Minute keeper"
+msgstr "Penjaga waktu"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__27.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__27.string.text"
+msgid "Moderator"
+msgstr "Moderator"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__28.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__28.string.text"
+msgid "Attendees"
+msgstr "Peserta"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__29.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__29.string.text"
+msgid "Observers"
+msgstr "Peninjau"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__30.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__30.string.text"
+msgid "Facility personnel"
+msgstr "Personel fasilitas"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__31.string.text
+msgid ""
+"The agenda template will include placeholders for the names of the selected "
+"people. When creating an agenda from the template, you can replace these "
+"placeholder with the appropriate names."
+msgstr ""
+"Palet agenda akan menyertakan pewakil untuk nama-nama orang tertentu. Jika "
+"membuat agenda berdasarkan palet, pewakil dapat diganti dengan nama-nama "
+"yang sesuai."
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__32.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__32.string.text"
+msgid "Type of meeting"
+msgstr "Jenis pertemuan"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__33.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__33.string.text"
+msgid "Please read"
+msgstr "Mohon dibaca"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__34.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__34.string.text"
+msgid "Please bring"
+msgstr "Mohon dibawa"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__35.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__35.string.text"
+msgid "Notes"
+msgstr "Catatan"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__36.string.text
+msgid "The agenda template will include placeholders for the selected items."
+msgstr "Palet agenda menyertakan pewakil untuk item yang dipilih."
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__38.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__38.string.text"
+msgid "Date:"
+msgstr "Tanggal:"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__39.string.text
+msgid ""
+"This wizard creates an agenda template which enables you to create multiple "
+"agendas with the same layout and settings."
+msgstr ""
+"Wahana ini membuat palet agenda yang memungkinkan Anda membuat banyak agenda "
+"dengan tata letak dan pengaturan seragam."
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__40.string.text
+msgid "Page design:"
+msgstr "Desain halaman:"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__41.string.text
+msgid "myAgendaTemplate.stw"
+msgstr "PaletAgendaKu.stw"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__42.string.text
+msgid "My Agenda Template"
+msgstr "Palet Agendaku"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__43.string.text
+msgid "An unexpected error occurred while saving the agenda template."
+msgstr "Kesalahan yang tidak terduga muncul saat menyimpan palet agenda."
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__44.string.text
+msgid "Name"
+msgstr "Nama"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__45.string.text
+msgid "Date"
+msgstr "Tanggal"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__46.string.text
+msgid "Time"
+msgstr "Waktu"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START___47.string.text
+msgid "Location"
+msgstr "Lokasi"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__48.string.text
+msgid "Click to replace this text"
+msgstr "Klik untuk mengganti teks ini"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__50.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__50.string.text"
+msgid "Page design"
+msgstr "Desain halaman"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__51.string.text
+msgid "General information"
+msgstr "Informasi umum"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__52.string.text
+msgid "Headings to include"
+msgstr "Tajuk yang disertakan"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__53.string.text
+msgid "Names"
+msgstr "Nama"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__54.string.text
+msgid "Agenda items"
+msgstr "Topik agenda"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__55.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__55.string.text"
+msgid "Name and location"
+msgstr "Nama dan lokasi"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__56.string.text
+msgid "An unexpected error occurred while opening the agenda template."
+msgstr "Terjadi kesalahan tak terduga saat membuka palet agenda."
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__57.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__57.string.text"
+msgid "Type of meeting"
+msgstr "Jenis pertemuan"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__58.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__58.string.text"
+msgid "Please bring"
+msgstr "Mohon dibawa"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__59.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__59.string.text"
+msgid "Please read"
+msgstr "Mohon dibaca"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__60.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__60.string.text"
+msgid "Notes"
+msgstr "Catatan"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__61.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__61.string.text"
+msgid "Meeting called by"
+msgstr "Rapat diadakan oleh"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__62.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__62.string.text"
+msgid "Chairperson"
+msgstr "Pemimpin rapat"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__63.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__63.string.text"
+msgid "Attendees"
+msgstr "Peserta"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__64.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__64.string.text"
+msgid "Minute keeper"
+msgstr "Penjaga waktu"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__65.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__65.string.text"
+msgid "Moderator"
+msgstr "Moderator"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__66.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__66.string.text"
+msgid "Observers"
+msgstr "Peninjau"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__67.string.text
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__67.string.text"
+msgid "Facility personnel"
+msgstr "Personel fasilitas"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__68.string.text
+msgid "Insert"
+msgstr "Sisip"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__69.string.text
+msgid "Remove"
+msgstr "Buang"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__70.string.text
+msgid "Move up"
+msgstr "Naikkan"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__71.string.text
+msgid "Move down"
+msgstr "Turunkan"
+
+#: template.src#SAMPLES.string.text
+msgid ""
+"In order to use the full functionality of this sample, create a document "
+"that is based on this template."
+msgstr ""
+"Untuk memperoleh fungsionalitas penuh dari palet ini, maka buatlah sebuah "
+"dokumen dari palet ini."
+
+#: template.src#SAMPLES___1.string.text
+msgid "Remarks"
+msgstr "Ucapan"
+
+#: template.src#STYLES.string.text
+msgid "Theme Selection"
+msgstr "Pemilihan Tema"
+
+#: template.src#STYLES___1.string.text
+msgid ""
+"Error while saving the document to the clipboard! The following action "
+"cannot be undone."
+msgstr ""
+"Kesalahan ketika menyimpan dokumen pada papan klip! Aksi berikut tidak bisa "
+"dibatalkan."
+
+#: template.src#STYLES___2.string.text
+msgid "~Cancel"
+msgstr "~Batal"
+
+#: template.src#STYLES___3.string.text
+msgid "~OK"
+msgstr "~Oke"
+
+#: template.src#AgendaDlgName.string.text
+msgid "Minutes Template"
+msgstr "Palet Menit"
+
+#: template.src#AgendaDlgNoCancel.string.text
+msgid "An option must be confirmed."
+msgstr "Opsi harus dikonfirmasikan."
+
+#: template.src#AgendaDlgFrame.string.text
+msgid "Minutes Type"
+msgstr "Jenis Menit"
+
+#: template.src#AgendaDlgButton1.string.text
+msgid "Results Minutes"
+msgstr "Hasil Menit"
+
+#: template.src#AgendaDlgButton2.string.text
+msgid "Evaluation Minutes"
+msgstr "Evaluasi Menit"
+
+#: template.src#CorrespondenceNoTextmark.string.text
+msgid "The bookmark 'Recipient' is missing."
+msgstr "Penanda buku 'Penerima' hilang."
+
+#: template.src#CorrespondenceNoTextmark_1.string.text
+msgid "Form letter fields can not be included."
+msgstr "Kolom formulir surat tidak bisa disertakan."
+
+#: template.src#CorrespondenceMsgError.string.text
+msgid "An error has occurred."
+msgstr "Sebuah kesalahan telah terjadi."
+
+#: template.src#CorrespondenceDialog.string.text
+msgid "Addressee"
+msgstr "Alamat"
+
+#: template.src#CorrespondenceDialog_1.string.text
+msgid "One recipient"
+msgstr "Satu penerima"
+
+#: template.src#CorrespondenceDialog_2.string.text
+msgid "Several recipients (address database)"
+msgstr "Beberapa penerima (basis data alamat)"
+
+#: template.src#CorrespondenceDialog_3.string.text
+msgid "Use of This Template"
+msgstr "Gunakan Palet Ini"
+
+#: template.src#CorrespondenceFields.string.text
+msgid "Click placeholder and overwrite"
+msgstr "Klik pewakil dan timpa"
+
+#: template.src#CorrespondenceFields_1.string.text
+msgid "Company"
+msgstr "Perusahaan"
+
+#: template.src#CorrespondenceFields_2.string.text
+msgid "Department"
+msgstr "Departemen"
+
+#: template.src#CorrespondenceFields_3.string.text
+msgid "First Name"
+msgstr "Nama Depan"
+
+#: template.src#CorrespondenceFields_4.string.text
+msgid "Last Name"
+msgstr "Nama Belakang"
+
+#: template.src#CorrespondenceFields_5.string.text
+msgid "Street"
+msgstr "Jalan"
+
+#: template.src#CorrespondenceFields_6.string.text
+msgid "Country"
+msgstr "Negara"
+
+#: template.src#CorrespondenceFields_7.string.text
+msgid "ZIP/Postal Code"
+msgstr "Kode Pos"
+
+#: template.src#CorrespondenceFields_8.string.text
+msgid "City"
+msgstr "Kota"
+
+#: template.src#CorrespondenceFields_9.string.text
+msgid "Title"
+msgstr "Gelar"
+
+#: template.src#CorrespondenceFields_10.string.text
+msgid "Position"
+msgstr "Posisi"
+
+#: template.src#CorrespondenceFields_11.string.text
+msgid "Form of Address"
+msgstr "Formulir Alamat"
+
+#: template.src#CorrespondenceFields_12.string.text
+msgid "Initials"
+msgstr "Inisial"
+
+#: template.src#CorrespondenceFields_13.string.text
+msgid "Salutation"
+msgstr "Salutasi"
+
+#: template.src#CorrespondenceFields_14.string.text
+msgid "Home Phone"
+msgstr "Telepon Rumah"
+
+#: template.src#CorrespondenceFields_15.string.text
+msgid "Work Phone"
+msgstr "Telepon Kantor"
+
+#: template.src#CorrespondenceFields_16.string.text
+msgid "Fax"
+msgstr "Faks"
+
+#: template.src#CorrespondenceFields_17.string.text
+msgid "E-Mail"
+msgstr "Surel"
+
+#: template.src#CorrespondenceFields_18.string.text
+msgid "URL"
+msgstr "URL"
+
+#: template.src#CorrespondenceFields_19.string.text
+msgid "Notes"
+msgstr "Catatan"
+
+#: template.src#CorrespondenceFields_20.string.text
+msgid "Alt. Field 1"
+msgstr "Kolom Alt. 1"
+
+#: template.src#CorrespondenceFields_21.string.text
+msgid "Alt. Field 2"
+msgstr "Kolom Alt. 2"
+
+#: template.src#CorrespondenceFields_22.string.text
+msgid "Alt. Field 3"
+msgstr "Kolom Alt. 3"
+
+#: template.src#CorrespondenceFields_23.string.text
+msgid "Alt. Field 4"
+msgstr "Kolom Alt. 4"
+
+#: template.src#CorrespondenceFields_24.string.text
+msgid "ID"
+msgstr "ID"
+
+#: template.src#CorrespondenceFields_25.string.text
+msgid "State"
+msgstr "Provinsi"
+
+#: template.src#CorrespondenceFields_26.string.text
+msgid "Office Phone"
+msgstr "Telepon Kantor"
+
+#: template.src#CorrespondenceFields_27.string.text
+msgid "Pager"
+msgstr "Penyeranta"
+
+#: template.src#CorrespondenceFields_28.string.text
+msgid "Mobile Phone"
+msgstr "Ponsel"
+
+#: template.src#CorrespondenceFields_29.string.text
+msgid "Other Phone"
+msgstr "Nomor Telepon Lain"
+
+#: template.src#CorrespondenceFields_30.string.text
+msgid "Calendar URL"
+msgstr "URL Kalender"
+
+#: template.src#CorrespondenceFields_31.string.text
+msgid "Invite"
+msgstr "Undang"
+
+#: template.src#TextField.string.text
+msgid "User data field is not defined!"
+msgstr "Kolom data pengguna tidak didefinisikan!"
+
+#: template.src#Newsletter.string.text
+msgid "General layout"
+msgstr "Tata letak umum"
+
+#: template.src#Newsletter___1.string.text
+msgid "Default layout"
+msgstr "Tata letak baku"
+
+#: template.src#Newsletter___2.string.text
+msgid "Commemorative publication layout"
+msgstr "Tata letak publikasi komemoratif"
+
+#: template.src#Newsletter___3.string.text
+msgid "Brochure layout"
+msgstr "Tata letak brosur"
+
+#: template.src#Newsletter___10.string.text
+msgid "Format"
+msgstr "Format"
+
+#: template.src#Newsletter___11.string.text
+msgid "Single-sided"
+msgstr "Satu sisi"
+
+#: template.src#Newsletter___12.string.text
+msgid "Double-sided"
+msgstr "Dua sisi"
+
+#: euro.src#STEP_ZERO.string.text
+msgid "~Cancel"
+msgstr "Ba~tal"
+
+#: euro.src#STEP_ZERO___1.string.text
+msgid "~Help"
+msgstr "Bantua~n"
+
+#: euro.src#STEP_ZERO___2.string.text
+msgid "<<~Back"
+msgstr "<<Kem~bali"
+
+#: euro.src#STEP_ZERO___3.string.text
+msgid "~Convert"
+msgstr "~Konversi"
+
+#: euro.src#STEP_ZERO___4.string.text
+msgid ""
+"Note: Currency amounts from external links and currency conversion factors "
+"in formulas cannot be converted."
+msgstr ""
+"Catatan: Jumlah mata uang dari taut luar maupun faktor konversi mata uang "
+"pada rumus tidak dapat dikonversi."
+
+#: euro.src#STEP_ZERO___5.string.text
+msgid "First, unprotect all sheets."
+msgstr "Pertama-tama, hapus proteksi pada semua lembar kerja."
+
+#: euro.src#STEP_ZERO___6.string.text
+msgid "Currencies:"
+msgstr "Mata uang:"
+
+#: euro.src#STEP_ZERO___7.string.text
+msgid "C~ontinue>>"
+msgstr "L~anjutkan>>"
+
+#: euro.src#STEP_ZERO___8.string.text
+msgid "C~lose"
+msgstr "T~utup"
+
+#: euro.src#STEP_CONVERTER.string.text
+msgid "~Entire document"
+msgstr "S~eluruh dokumen"
+
+#: euro.src#STEP_CONVERTER___1.string.text
+msgid "Selection"
+msgstr "Seleksi"
+
+#: euro.src#STEP_CONVERTER___2.string.text
+msgid "Cell S~tyles"
+msgstr "Gaya Se~l"
+
+#: euro.src#STEP_CONVERTER___3.string.text
+msgid "Currency cells in the current ~sheet"
+msgstr "Sel mata uang pada lembar kerja ~saat ini"
+
+#: euro.src#STEP_CONVERTER___4.string.text
+msgid "Currency cells in the entire ~document"
+msgstr "Sel mata uang pada keseluruhan ~dokumen"
+
+#: euro.src#STEP_CONVERTER___5.string.text
+msgid "~Selected range"
+msgstr "Jangkauan ~terpilih"
+
+#: euro.src#STEP_CONVERTER___6.string.text
+msgid "Select Cell Styles"
+msgstr "Pilih Gaya Sel"
+
+#: euro.src#STEP_CONVERTER___7.string.text
+msgid "Select currency cells"
+msgstr "Pilih sel mata uang"
+
+#: euro.src#STEP_CONVERTER___8.string.text
+msgid "Currency ranges:"
+msgstr "Jangkauan mata uang:"
+
+#: euro.src#STEP_CONVERTER___9.string.text
+msgid "Templates:"
+msgstr "Palet:"
+
+#: euro.src#STEP_AUTOPILOT.string.text
+msgid "Extent"
+msgstr "Perluas"
+
+#: euro.src#STEP_AUTOPILOT___1.string.text
+msgid "~Single %PRODUCTNAME Calc document"
+msgstr "Dokumen %PRODUCTNAME Calc ~tungggal"
+
+#: euro.src#STEP_AUTOPILOT___2.string.text
+msgid "Complete ~directory"
+msgstr "~Direktori lengkap"
+
+#: euro.src#STEP_AUTOPILOT___3.string.text
+msgid "Source Document:"
+msgstr "Dokumen Sumber:"
+
+#: euro.src#STEP_AUTOPILOT___4.string.text
+msgid "Source directory:"
+msgstr "Direktori sumber:"
+
+#: euro.src#STEP_AUTOPILOT___5.string.text
+msgid "~Including subfolders"
+msgstr "~Termasuk subfolder"
+
+#: euro.src#STEP_AUTOPILOT___6.string.text
+msgid "Target directory:"
+msgstr "Direktori tujuan:"
+
+#: euro.src#STEP_AUTOPILOT___7.string.text
+msgid "Temporarily unprotect sheet without query"
+msgstr "Tidak memproteksi lembar kerja untuk sementara tanpa kuiri"
+
+#: euro.src#STEP_AUTOPILOT___10.string.text
+msgid "Also convert fields and tables in text documents"
+msgstr "Juga konversi ruas dan tabel pada dokumen teks"
+
+#: euro.src#STATUSLINE.string.text
+msgid "Conversion status: "
+msgstr "Status konversi: "
+
+#: euro.src#STATUSLINE___1.string.text
+msgid "Conversion status of the cell templates:"
+msgstr "Status konversi pada palet sel:"
+
+#: euro.src#STATUSLINE___2.string.text
+msgid ""
+"Registration of the relevant ranges: Sheet %1Number%1 of %2TotPageCount%2"
+msgstr ""
+"Registrasi jangkauan yang relevan: Lembar kerja %1Number%1 dari %"
+"2TotPageCount%2"
+
+#: euro.src#STATUSLINE___3.string.text
+msgid "Entry of the ranges to be converted..."
+msgstr "Entri jangkauan yang hendak dikonversi..."
+
+#: euro.src#STATUSLINE___4.string.text
+msgid "Sheet protection for each sheet will be restored..."
+msgstr "Proteksi dari tiap lembar kerja akan dikembalikan..."
+
+#: euro.src#STATUSLINE___5.string.text
+msgid "Conversion of the currency units in the cell templates..."
+msgstr "Konversi unit mata uang pada palet sel..."
+
+#: euro.src#MESSAGES.string.text
+msgid "~Finish"
+msgstr "~Selesai"
+
+#: euro.src#MESSAGES___1.string.text
+msgid "Select directory"
+msgstr "Pilih direktori"
+
+#: euro.src#MESSAGES___2.string.text
+msgid "Select file"
+msgstr "Pilih berkas"
+
+#: euro.src#MESSAGES___3.string.text
+msgid "Select target directory"
+msgstr "Pilih direktori tujuan"
+
+#: euro.src#MESSAGES___4.string.text
+msgid "non-existant"
+msgstr "tidak ada"
+
+#: euro.src#MESSAGES___5.string.text
+msgid "Euro Converter"
+msgstr "Konverter Euro"
+
+#: euro.src#MESSAGES___6.string.text
+msgid "Should protected spreadsheets be temporarily unprotected?"
+msgstr "Apakah lembar kerja yang diproteksi dibuka proteksinya untuk sementara?"
+
+#: euro.src#MESSAGES___7.string.text
+msgid "Enter the password to unprotect the table %1TableName%1"
+msgstr "Masukkan sandi untuk membuka proteksi tabel %1TableName%1"
+
+#: euro.src#MESSAGES___8.string.text
+msgid "Wrong Password!"
+msgstr "Sandi Salah!"
+
+#: euro.src#MESSAGES___9.string.text
+msgid "Protected Sheet"
+msgstr "Lembar Kerja yang Diproteksi"
+
+#: euro.src#MESSAGES___10.string.text
+msgid "Warning!"
+msgstr "Peringatan!"
+
+#: euro.src#MESSAGES___11.string.text
+msgid "Protection for the sheets will not be removed."
+msgstr "Proteksi lembar kerja tidak akan dihapus."
+
+#: euro.src#MESSAGES___12.string.text
+msgid "Sheet cannot be unprotected"
+msgstr "Proteksi lembar kerja tidak dapat dibuka"
+
+#: euro.src#MESSAGES___13.string.text
+msgid ""
+"The Wizard cannot edit this document as cell formats cannot be modified in "
+"documents containing protected spreadsheets."
+msgstr ""
+"Wahana tidak dapat menyunting dokumen ini, karena format sel pada dokumen "
+"yang diproteksi tidak bisa diubah."
+
+#: euro.src#MESSAGES___14.string.text
+msgid ""
+"Please note that the Euro Converter will, otherwise, not be able to edit "
+"this document!"
+msgstr ""
+"Harap perhatikan bahwa Konverter Euro akan, jika tidak sebaliknya, tidak "
+"mampu menyunting dokumen ini!"
+
+#: euro.src#MESSAGES___15.string.text
+msgid "Please choose a currency to be converted first!"
+msgstr "Pilih mata uang yang ingin dikonversi lebih dulu!"
+
+#: euro.src#MESSAGES___16.string.text
+msgid "Password:"
+msgstr "Sandi:"
+
+#: euro.src#MESSAGES___17.string.text
+msgid "OK"
+msgstr "Oke"
+
+#: euro.src#MESSAGES___18.string.text
+msgid "Cancel"
+msgstr "Batal"
+
+#: euro.src#MESSAGES___19.string.text
+msgid "Please select a %PRODUCTNAME Calc document for editing!"
+msgstr "Harap pilih dokumen %PRODUCTNAME untuk disunting!"
+
+#: euro.src#MESSAGES___20.string.text
+msgid "'<1>' is not a directory!"
+msgstr "'<1>' bukan direktori!"
+
+#: euro.src#MESSAGES___21.string.text
+msgid "Document is read-only!"
+msgstr "Dokumen hanya bisa dibaca!"
+
+#: euro.src#MESSAGES___22.string.text
+msgid "The '<1>' file already exists.<CR>Do you want to overwrite it?"
+msgstr "Berkas '<1>' sudah ada.<CR>Anda ingin menimpanya?"
+
+#: euro.src#MESSAGES___23.string.text
+msgid "Do you really want to terminate conversion at this point?"
+msgstr "Anda ingin menghentikan konversi pada tahap ini?"
+
+#: euro.src#MESSAGES___24.string.text
+msgid "Cancel Wizard"
+msgstr "Batalkan Wahana"
+
+#: euro.src#CURRENCIES.string.text
+msgid "Portuguese Escudo"
+msgstr "Escudo Portugis"
+
+#: euro.src#CURRENCIES___1.string.text
+msgid "Dutch Guilder"
+msgstr "Guilder Belanda"
+
+#: euro.src#CURRENCIES___2.string.text
+msgid "French Franc"
+msgstr "Franc Perancis"
+
+#: euro.src#CURRENCIES___3.string.text
+msgid "Spanish Peseta"
+msgstr "Peseta Spanyol"
+
+#: euro.src#CURRENCIES___4.string.text
+msgid "Italian Lira"
+msgstr "Lira Italia"
+
+#: euro.src#CURRENCIES___5.string.text
+msgid "German Mark"
+msgstr "Mark Jerman"
+
+#: euro.src#CURRENCIES___6.string.text
+msgid "Belgian Franc"
+msgstr "Franc Belgia"
+
+#: euro.src#CURRENCIES___7.string.text
+msgid "Irish Punt"
+msgstr "Punt Irlandia"
+
+#: euro.src#CURRENCIES___8.string.text
+msgid "Luxembourg Franc"
+msgstr "Franc Luksemburg"
+
+#: euro.src#CURRENCIES___9.string.text
+msgid "Austrian Schilling"
+msgstr "Schilling Austria"
+
+#: euro.src#CURRENCIES___10.string.text
+msgid "Finnish Mark"
+msgstr "Mark Finlandia"
+
+#: euro.src#CURRENCIES___11.string.text
+msgid "Greek Drachma"
+msgstr "Drachma Yunani"
+
+#: euro.src#CURRENCIES___12.string.text
+msgid "Slovenian Tolar"
+msgstr "Tolar Slovenia"
+
+#: euro.src#CURRENCIES___13.string.text
+msgid "Cypriot Pound"
+msgstr "Pound Sipriot"
+
+#: euro.src#CURRENCIES___14.string.text
+msgid "Maltese Lira"
+msgstr "Lira Maltesa"
+
+#: euro.src#CURRENCIES___15.string.text
+msgid "Slovak Koruna"
+msgstr "Koruna Slovakia"
+
+#: euro.src#CURRENCIES___16.string.text
+msgid "The currency set for the document is not a European currency!"
+msgstr "Satuan mata uang untuk dokumen bukan mata uang Eropa!"
+
+#: euro.src#CURRENCIES___17.string.text
+msgid ""
+"The language set for your operating system is not a language of the European "
+"Monetary Union."
+msgstr ""
+"Satuan bahasa untuk sistem operasi Anda bukan bahasa dari European Monetary "
+"Union."
+
+#: euro.src#STEP_LASTPAGE.string.text
+msgid "Progress"
+msgstr "Proses"
+
+#: euro.src#STEP_LASTPAGE___1.string.text
+msgid "Retrieving the relevant documents..."
+msgstr "Menerima dokumen yang relevan..."
+
+#: euro.src#STEP_LASTPAGE___2.string.text
+msgid "Converting the documents..."
+msgstr "Mengonversi dokumen..."
+
+#: euro.src#STEP_LASTPAGE___3.string.text
+msgid "Settings:"
+msgstr "Pengaturan:"
+
+#: euro.src#STEP_LASTPAGE___4.string.text
+msgid "Sheet is always unprotected"
+msgstr "Lembar kerja selalu tanpa proteksi"
+
+#: schedule.src#dlgCalTitle.string.text
+msgid "%PRODUCTNAME Calendar"
+msgstr "Kalender %PRODUCTNAME"
+
+#: schedule.src#dlgCalTitleBack.string.text
+msgid "Back"
+msgstr "Kembali"
+
+#: schedule.src#dlgCalTitleOwnData.string.text
+msgctxt "schedule.src#dlgCalTitleOwnData.string.text"
+msgid "Personal Data"
+msgstr "Data Pribadi"
+
+#: schedule.src#dlgSchdlTitle.string.text
+msgid "Add Holidays to Calendar"
+msgstr "Tambah Hari Libur pada Kalender"
+
+#: schedule.src#dlgOK.string.text
+msgid "Create"
+msgstr "Buat"
+
+#: schedule.src#dlgCancel.string.text
+msgid "Cancel"
+msgstr "Batal"
+
+#: schedule.src#dlgCalFrameOption.string.text
+msgctxt "schedule.src#dlgCalFrameOption.string.text"
+msgid "Calendar"
+msgstr "Kalender"
+
+#: schedule.src#dlgCalOptionYear.string.text
+msgid "~Year Overview"
+msgstr "Ikhtisar ~Tahunan"
+
+#: schedule.src#dlgCalOptionMonth.string.text
+msgid "~Month"
+msgstr "~Bulan"
+
+#: schedule.src#dlgSchdlDescription.string.text
+msgid "Add holidays for"
+msgstr "Tambah hari libur untuk"
+
+#: schedule.src#dlgSchdlCountry.string.text
+msgid "USA"
+msgstr "AS"
+
+#: schedule.src#dlgTime.string.text
+msgid "Time Frame"
+msgstr "Bingkai Waktu"
+
+#: schedule.src#dlgYear.string.text
+msgctxt "schedule.src#dlgYear.string.text"
+msgid "Year"
+msgstr "Tahun"
+
+#: schedule.src#dlgCalMonth.string.text
+msgctxt "schedule.src#dlgCalMonth.string.text"
+msgid "Month"
+msgstr "Bulan"
+
+#: schedule.src#dlgSpecificBankholidays.string.text
+msgid "-"
+msgstr "-"
+
+#: schedule.src#dlgCalOwnData.string.text
+msgctxt "schedule.src#dlgCalOwnData.string.text"
+msgid "Personal Data"
+msgstr "Data Pribadi"
+
+#: schedule.src#dlgCalInsert.string.text
+msgid "~Insert"
+msgstr "S~isipkan"
+
+#: schedule.src#dlgCalDelete.string.text
+msgid "~Delete"
+msgstr "~Hapus"
+
+#: schedule.src#dlgCalNewEvent.string.text
+msgid "New Event"
+msgstr "Kegiatan Baru"
+
+#: schedule.src#dlgCalEvent.string.text
+msgid "Event"
+msgstr "Kegiatan"
+
+#: schedule.src#dlgCalEventOnce.string.text
+msgid "One-Time"
+msgstr "Sekali"
+
+#: schedule.src#dlgCalEventDay.string.text
+msgid "Day"
+msgstr "Hari"
+
+#: schedule.src#dlgCalEventMonth.string.text
+msgctxt "schedule.src#dlgCalEventMonth.string.text"
+msgid "Month"
+msgstr "Bulan"
+
+#: schedule.src#dlgCalEventYear.string.text
+msgctxt "schedule.src#dlgCalEventYear.string.text"
+msgid "Year"
+msgstr "Tahun"
+
+#: schedule.src#dlgBitmapFile.string.text
+msgid "usa.bmp"
+msgstr "usa.bmp"
+
+#: schedule.src#dlgState.string.text
+msgid "Public holidays"
+msgstr "Hari libur umum"
+
+#: schedule.src#dlgMonth.string.text
+msgid "January"
+msgstr "Januari"
+
+#: schedule.src#dlgMonth_1.string.text
+msgid "February"
+msgstr "Februari"
+
+#: schedule.src#dlgMonth_2.string.text
+msgid "March"
+msgstr "Maret"
+
+#: schedule.src#dlgMonth_3.string.text
+msgid "April"
+msgstr "April"
+
+#: schedule.src#dlgMonth_4.string.text
+msgid "May"
+msgstr "Mei"
+
+#: schedule.src#dlgMonth_5.string.text
+msgid "June"
+msgstr "Juni"
+
+#: schedule.src#dlgMonth_6.string.text
+msgid "July"
+msgstr "Juli"
+
+#: schedule.src#dlgMonth_7.string.text
+msgid "August"
+msgstr "Agustus"
+
+#: schedule.src#dlgMonth_8.string.text
+msgid "September"
+msgstr "September"
+
+#: schedule.src#dlgMonth_9.string.text
+msgid "October"
+msgstr "Oktober"
+
+#: schedule.src#dlgMonth_10.string.text
+msgid "November"
+msgstr "November"
+
+#: schedule.src#dlgMonth_11.string.text
+msgid "December"
+msgstr "Desember"
+
+#: schedule.src#msgCalErrorTitle.string.text
+msgid "Yearly / Monthly Calendar"
+msgstr "Kalender Tahunan / Bulanan"
+
+#: schedule.src#msgCalError.string.text
+msgid "An error occurred while creating the calendar."
+msgstr "Sebuah kesalahan terjadi ketika membuat kalender."
+
+#: schedule.src#msgCalRemoveTitle.string.text
+msgid "Delete event entries"
+msgstr "Hapus entri kegiatan"
+
+#: schedule.src#msgCalRemove.string.text
+msgid "Delete the selected entries?"
+msgstr "Hapus entri yang dipilih?"
+
+#: schedule.src#stlWorkday.string.text
+msgid "Workweek"
+msgstr "Hari kerja"
+
+#: schedule.src#stlWeekend.string.text
+msgid "Weekend"
+msgstr "Akhir pekan"
+
+#: schedule.src#nameCalYear.string.text
+msgctxt "schedule.src#nameCalYear.string.text"
+msgid "Calendar"
+msgstr "Kalender"
+
+#: schedule.src#nameCalMonth.string.text
+msgctxt "schedule.src#nameCalMonth.string.text"
+msgid "Month"
+msgstr "Bulan"
+
+#: schedule.src#sProgress.string.text
+msgid "Progress:"
+msgstr "Perkembangan:"

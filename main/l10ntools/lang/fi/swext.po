@@ -1,0 +1,914 @@
+
+#: wiki.xhp#tit.help.text
+msgctxt "wiki.xhp#tit.help.text"
+msgid "@WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@"
+
+#: wiki.xhp#bm_id3154408.help.text
+msgid ""
+"<bookmark_value>Wiki;@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_va"
+"lue>@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>extensions;Me"
+"diaWiki</bookmark_value>"
+msgstr ""
+"<bookmark_value>Wiki;@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_va"
+"lue>@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>laajennukset;"
+"MediaWiki</bookmark_value><bookmark_value>extensions;MediaWiki</bookmark_val"
+"ue>"
+
+#: wiki.xhp#hd_id5993530.help.text
+msgctxt "wiki.xhp#hd_id5993530.help.text"
+msgid "@WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@"
+
+#: wiki.xhp#par_id9647511.help.text
+msgid ""
+"<ahelp hid=\".\">By using the @WIKIEXTENSIONPRODUCTNAME@ you can upload your "
+"current Writer text document to a MediaWiki server. After uploading, all "
+"Wiki users can read your document on the Wiki.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">Käsiteltävä Writerin tekstiasiakirja on kopioitavissa "
+"MediaWiki-palvelimelle ohjelmalla @WIKIEXTENSIONPRODUCTNAME@. Kopioinnin "
+"jälkeen kaikki Wiki-käyttäjät voivat lukea tämän asiakirjan Wiki-"
+"sivustolta.</ahelp>"
+
+#: wiki.xhp#par_id6468703.help.text
+msgid ""
+"<ahelp hid=\".\">Choose <item type=\"menuitem\">File - Send - To "
+"MediaWiki</item> to upload the current Writer document to a MediaWiki "
+"server.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">Valitse <item type=\"menuitem\">Tiedosto - Lähetä - "
+"MediaWikiin</item> käsiteltävän Writer-asiakirjan kopioimiseksi MediaWiki-"
+"palvelimelle.</ahelp>"
+
+#: wiki.xhp#hd_id4554582.help.text
+msgid "System Requirements"
+msgstr "Järjestelmävaatimukset"
+
+#: wiki.xhp#par_id2597430.help.text
+msgid "StarOffice/StarSuite 9"
+msgstr "StarOffice/StarSuite 9"
+
+#: wiki.xhp#par_id8430738.help.text
+msgid "OpenOffice.org 3.0"
+msgstr "OpenOffice.org 3.0"
+
+#: wiki.xhp#par_id9340495.help.text
+msgid "Java Runtime Environment 1.4"
+msgstr "Java-ajoympäristö 1.4"
+
+#: wiki.xhp#par_id7387615.help.text
+msgid ""
+"A Wiki account on a supported <link "
+"href=\"http://www.mediawiki.org/wiki/MediaWiki\">MediaWiki</link> server"
+msgstr ""
+"Wiki-tunnus tuetulla <link "
+"href=\"http://www.mediawiki.org/wiki/MediaWiki\">MediaWiki</link>-palvelimella"
+
+#: wiki.xhp#hd_id8047120.help.text
+msgid "Installing @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "Asennetaan @WIKIEXTENSIONPRODUCTNAME@"
+
+#: wiki.xhp#par_id4277169.help.text
+msgid ""
+"Before you install the @WIKIEXTENSIONPRODUCTNAME@, ensure that %PRODUCTNAME "
+"uses a Java Runtime Environment (JRE). To check the status of the JRE, "
+"choose <item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Java</item>. "
+"Ensure that \"Use a Java runtime environment\" is marked and that a Java "
+"runtime folder is selected in the big listbox. If no JRE was activated, then "
+"activate a JRE 1.4 or later and restart %PRODUCTNAME."
+msgstr ""
+"Ennen @WIKIEXTENSIONPRODUCTNAME@ -ohjelman asentamista varmistetaan, että %"
+"PRODUCTNAME käyttää Java-ajoympäristöä (JRE). JRE:n tilan tarkistamiseksi "
+"valitaan <item type=\"menuitem\">Työkalut - Asetukset - %PRODUCTNAME - "
+"Java</item>. Varmistetaan, että \"Käytä Java-ajoympäristöä\" on merkitty ja "
+"että Java-ajoympäristön kansio on valittuna suuressa luetteloruudussa. Jos "
+"mitään JRE:tä ei ole aktiivisena, niin aktivoidaan JRE 1.4 tai uudempi "
+"versio ja käynnistetään uudestaan %PRODUCTNAME."
+
+#: wiki.xhp#hd_id567339.help.text
+msgid "To Install the @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@-lisäosan asentaminen"
+
+#: wiki.xhp#par_id1732230.help.text
+msgctxt "wiki.xhp#par_id1732230.help.text"
+msgid ""
+"In a Writer window, choose <item type=\"menuitem\">Tools - Extension "
+"Manager</item>."
+msgstr ""
+"Writerin ikkunassa valitse <item type=\"menuitem\">Työkalut - Lisäosien "
+"hallinta</item>."
+
+#: wiki.xhp#par_id4338511.help.text
+msgid "In the Extension Manager dialog, click Add."
+msgstr "Lisäosien hallinta -valintaikkunassa napsauta Lisää-painiketta."
+
+#: wiki.xhp#par_id5882442.help.text
+msgid ""
+"Locate the @WIKIEXTENSIONFILENAME@.oxt file, click Open, and then click "
+"Close. "
+msgstr ""
+"Paikallista @WIKIEXTENSIONFILENAME@.oxt-tiedosto, napsauta Avaa ja sitten "
+"napsauta Sulje. "
+
+#: wiki.xhp#par_id4008911.help.text
+msgid "Close %PRODUCTNAME, and close also the Quickstarter if enabled."
+msgstr "Sulje %PRODUCTNAME ja sulje tarvittaessa myös pikakäynnistys."
+
+#: wiki.xhp#par_id265511.help.text
+msgid ""
+"Restart the software, open a text document, then choose <item "
+"type=\"menuitem\">Tools - Options - Internet - MediaWiki</item> to enter your "
+"Wiki settings. See \"To Connect To a Wiki\" below."
+msgstr ""
+"Käynnistä ohjelmisto uudestaan, avaa tekstiasiakirja ja valitse sitten <item "
+"type=\"menuitem\">Työkalut - Asetukset - Internet - MediaWiki</item> Wiki-"
+"asetusten syöttämiseksi. Katso \"Yhdistäminen Wikiin\" alempaa."
+
+#: wiki.xhp#hd_id3569444.help.text
+msgid "To Remove the @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@-lisäosan poistaminen"
+
+#: wiki.xhp#par_id2655110.help.text
+msgctxt "wiki.xhp#par_id2655110.help.text"
+msgid ""
+"In a Writer window, choose <item type=\"menuitem\">Tools - Extension "
+"Manager</item>."
+msgstr ""
+"Writerin ikkunassa valitse <item type=\"menuitem\">Työkalut - Lisäosien "
+"hallinta</item>."
+
+#: wiki.xhp#par_id9504379.help.text
+msgid "Click the plus sign (+) in front of My Extensions."
+msgstr "Napsauta plus-merkkiä (+) lisäosan edessä."
+
+#: wiki.xhp#par_id8431348.help.text
+msgid "Select the extension, click Remove, and then click Close."
+msgstr ""
+"Varmista, että oikea lisäosa on valittu, napsauta Poista ja napsauta sitten "
+"Sulje."
+
+#: wiki.xhp#hd_id5316019.help.text
+msgid "To Connect to a Wiki"
+msgstr "Wikiin yhdistäminen"
+
+#: wiki.xhp#par_id2381969.help.text
+msgid ""
+"Note: You can store your user name and password for all respective dialogs "
+"inside %PRODUCTNAME. The password will be stored in a secure way, where "
+"access is maintained by a master password. To enable the master password, "
+"choose <item type=\"menuitem\">Tools - Options - %PRODUCTNAME - "
+"Security</item>."
+msgstr ""
+"Käyttäjä voi tallentaa kaikille asiaankuuluville valintaikkunoille "
+"käyttäjätunnuksensa ja salasanansa %PRODUCTNAMEin sisällä. Salasana "
+"säilötään suojatulla tavalla, jossa pääsyyn vaaditaan pääsalasana. "
+"Pääsalasanan käyttöönottamiseksi valitaan <item type=\"menuitem\">Työkalut - "
+"Asetukset - %PRODUCTNAME - Suojaus</item>."
+
+#: wiki.xhp#par_id3751640.help.text
+msgid ""
+"Note: If you connect to the web using a proxy server, enter the proxy "
+"information to <item type=\"menuitem\">Tools - Options - Internet - "
+"Proxy</item>, and restart the software."
+msgstr ""
+"Jos nettiin ollaa yhteydessä välityspalvelinta käyttäen, välityspalvelimen "
+"tiedot syötetään <item type=\"menuitem\">Työkalut - Asetukset - Internet - "
+"Välityspalvelin</item> -välilehdellä ja ohjelmisto käynnistetään uudestaan."
+
+#: wiki.xhp#par_id9533677.help.text
+msgid ""
+"Open a Writer document, and choose <item type=\"menuitem\">Tools - Options - "
+"Internet - MediaWiki</item>."
+msgstr ""
+"Avaa Writer-asiakirja ja valitse <item type=\"menuitem\">Työkalut - Asetukset "
+"- Internet - MediaWiki</item>."
+
+#: wiki.xhp#par_id368968.help.text
+msgid ""
+"In the <link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\">Options</link> "
+"dialog, click Add."
+msgstr ""
+"<link "
+"href=\"@WIKIEXTENSIONID@/wikisettings.xhp\">Asetukset</link>-valintaikkunassa "
+"napsauta Lisää."
+
+#: wiki.xhp#par_id6962187.help.text
+msgid ""
+"In the <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> "
+"dialog, enter the account information for the Wiki."
+msgstr ""
+"<link "
+"href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link>-valintaikkunassa "
+"syötä Wiki-sivuston tunnustiedot."
+
+#: wiki.xhp#par_id5328836.help.text
+msgid ""
+"In the URL textbox, enter the address of a Wiki that you want to connect to."
+msgstr "URL-tekstiruudussa syötä yhdistettävän Wiki-sivuston tiedot."
+
+#: wiki.xhp#par_id389416.help.text
+msgid "You can copy the URL from a web browser and paste it into the textbox."
+msgstr "URL-osoite voidaan kopioida www-selaimesta ja liittää tekstiruutuun."
+
+#: wiki.xhp#par_id5906552.help.text
+msgid "In the Username box, enter your user ID for your Wiki account."
+msgstr "Käyttäjätunnus-ruutuun syötä Wiki-tilillä käyttämäsi nimi."
+
+#: wiki.xhp#par_id9297158.help.text
+msgid ""
+"If the Wiki allows anonymous write access, you can leave the Username and "
+"Password boxes empty."
+msgstr ""
+"Jos Wiki-sivusto sallii nimettömän kirjautumisen, käyttäjätunnus- ja "
+"salasanakentät voidaan jättää tyhjiksi."
+
+#: wiki.xhp#par_id8869594.help.text
+msgid ""
+"In the Password box, enter the password for your Wiki account, then click "
+"OK."
+msgstr ""
+"Salasanaruudussa kirjoita Wiki-tilin salasanasi ja hyväksy sitten OK:lla."
+
+#: wiki.xhp#par_id292062.help.text
+msgid ""
+"Optionally enable \"Save password\" to save the password between sessions. A "
+"master password is used to maintain access to all saved passwords. Choose "
+"<item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Security</item> to "
+"enable the master password. \"Save password\" is unavailable when the master "
+"password is not enabled."
+msgstr ""
+"Vaihtoehtoisesti merkitään \"Tallenna salasana\" salasanan säilyttämiseksi "
+"istuntojen välilläkin. Pääsalasanaa käytetään tallennettuihin salasanoihin "
+"käsiksi pääsemiseen. Valitaan <item type=\"menuitem\">Työkalut - Asetukset - %"
+"PRODUCTNAME - Suojaus</item> pääsalasanan käyttämiseksi. \"Tallenna salasana\" "
+"ei ole saatavilla, jos pääsalasana ei ole otettu käyttöön."
+
+#: wiki.xhp#hd_id7044892.help.text
+msgid "To Create a New Wiki Page"
+msgstr "Uuden Wiki-sivun luominen"
+
+#: wiki.xhp#par_id3514206.help.text
+msgid "Open a Writer document."
+msgstr "Avaa Writer-asiakirja."
+
+#: wiki.xhp#par_id944853.help.text
+msgid ""
+"Write the content of the Wiki page. You can use formatting like text "
+"formats, headings, footnotes, and more. See the <link "
+"href=\"@WIKIEXTENSIONID@/wikiformats.xhp\">list of supported formats</link>."
+msgstr ""
+"Kirjoita Wiki-sivun sisältö. Käytettävissä on muotoiluja kuten tekstin "
+"muotoilu, otsikot, alaviitteet, ynnä muuta. Katso <link "
+"href=\"@WIKIEXTENSIONID@/wikiformats.xhp\">tuettujen muotoilujen "
+"luetteloa</link>."
+
+#: wiki.xhp#par_id4566484.help.text
+msgid "Choose <item type=\"menuitem\">File - Send - To MediaWiki</item>."
+msgstr "Valitse <item type=\"menuitem\">Tiedosto - Lähetä - MediaWikiin</item>."
+
+#: wiki.xhp#par_id228278.help.text
+msgid ""
+"In the <link href=\"@WIKIEXTENSIONID@/wikisend.xhp\">Send to MediaWiki</link> "
+"dialog, specify the settings for your entry."
+msgstr ""
+"<link href=\"@WIKIEXTENSIONID@/wikisend.xhp\">Lähetä MediaWikiin</link> "
+"-valintaikkunassa määritä kirjauksesi asetukset."
+
+#: wiki.xhp#par_id2564165.help.text
+msgid "<emph>MediaWiki server</emph>: Select the Wiki."
+msgstr "<emph>MediaWiki-palvelin</emph>: Valitse Wiki-sivusto."
+
+#: wiki.xhp#par_id5566576.help.text
+msgid ""
+"<emph>Title</emph>: Type the title of your page. Type the title of an "
+"existing page to overwrite the page with your current text document. Type a "
+"new title to create a new page on the Wiki."
+msgstr ""
+"<emph>Otsikko</emph>: Kirjoita sivusi otsikko. Jo olemassa olevan sivun "
+"otsikko kirjoitetaan, kun sivun teksti korvataan käsiteltävän asiakirjan "
+"tekstillä. Kirjoittamalla uusi otsikko luodaan uusi sivu Wiki-sivustolle."
+
+#: wiki.xhp#par_id9688711.help.text
+msgid "<emph>Summary</emph>: Enter an optional short summary of your page."
+msgstr "<emph>Yhteenveto</emph>: Anna valinnainen lyhyt tiivistelmä sivustasi."
+
+#: wiki.xhp#par_id4123661.help.text
+msgid ""
+"<emph>This is a minor edit</emph>: Check this box to mark the uploaded page "
+"as a minor edit of the already existing page with the same title."
+msgstr ""
+"<emph>Tämä on täydennys</emph>: Merkitsemällä tämän ruudun merkitset "
+"kopioitavan sivun jo samalla otsikolla olevan sivun täydennykseksi."
+
+#: wiki.xhp#par_id452284.help.text
+msgid ""
+"<emph>Show in web browser</emph>: Check this box to open your system web "
+"browser and show the uploaded Wiki page."
+msgstr ""
+"<emph>Näytä www-selaimessa</emph>: Merkitsemällä tämän ruudun avaat "
+"järjestelmän www-selaimen, jossa näkyy kopioitu Wiki-sivu."
+
+#: wiki.xhp#par_id8346812.help.text
+msgid "Click Send."
+msgstr "Napsauta Lähetä-painiketta."
+
+#: wikiaccount.xhp#tit.help.text
+msgctxt "wikiaccount.xhp#tit.help.text"
+msgid "MediaWiki"
+msgstr "MediaWiki"
+
+#: wikiaccount.xhp#hd_id960722.help.text
+msgctxt "wikiaccount.xhp#hd_id960722.help.text"
+msgid "MediaWiki"
+msgstr "MediaWiki"
+
+#: wikiaccount.xhp#par_id4571672.help.text
+msgid ""
+"Use the MediaWiki dialog to add or edit your MediaWiki account settings."
+msgstr ""
+"MediaWiki-valintaikkunassa lisätään tai muokataan MediaWiki-tilin asetuksia."
+
+#: wikiaccount.xhp#par_id7631458.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Enter the URL of a MediaWiki server, "
+"starting with http://</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">Kirjoita MediaWiki-palvelimen URL-osoite "
+"aloittaen http://</ahelp>"
+
+#: wikiaccount.xhp#par_id7862483.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Enter your user name on the MediaWiki "
+"server. Leave empty for anonymous access.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">Kirjoita MediaWiki-palvelimen "
+"käyttäjätunnuksesi. Nimettömästi käyttäessäsi jätä tyhjäksi.</ahelp>"
+
+#: wikiaccount.xhp#par_id1113010.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Enter your password on the MediaWiki "
+"server. Leave empty for anonymous access.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">Kirjoita MediaWiki-palvelimen salasanasi. "
+"Nimettömästi käyttäessäsi jätä tyhjäksi.</ahelp>"
+
+#: wikiaccount.xhp#par_id656758.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Enable to store your password between "
+"sessions. The master password must be enabled, see <item "
+"type=\"menuitem\">Tools - Options - %PRODUCTNAME - Security</item>.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">Sallitaan salasanan säilöminen istuntojen "
+"välillä. Pääsalasana pitää olla käytössä, katso <item "
+"type=\"menuitem\">Työkalut - Asetukset - %PRODUCTNAME - "
+"Suojaus</item>.</ahelp>"
+
+#: wikiaccount.xhp#par_id3112582.help.text
+msgid ""
+"Enter the Internet address of a Wiki server in a format like "
+"http://wiki.services.openoffice.org/wiki or copy the URL from a web browser."
+msgstr ""
+"Syötetään Wiki-palvelimen Internet-osoite muodossa "
+"http://wiki.services.openoffice.org/wiki tai kopioidaan URL-osoite www-"
+"selaimesta."
+
+#: wikiaccount.xhp#par_id628070.help.text
+msgid ""
+"If the Wiki allows anonymous access, you can leave the account text boxes "
+"empty. Else enter your user name and password."
+msgstr ""
+"Jos Wiki-sivusto sallii nimettömänä kirjoittamisen, tilin eli tunnuksen "
+"tekstiruudut voi jättää tyhjiksi. Muutoin syötetään käyttäjätunnus ja "
+"salasana."
+
+#: wikiaccount.xhp#par_id9046601.help.text
+msgid ""
+"If you have enabled the master password feature on the Security tab page of "
+"the Tools - Options - %PRODUCTNAME dialog, then the software can store your "
+"password and automatically insert the data where necessary. Enable the \"Save "
+"password\" checkbox to store your password."
+msgstr ""
+"Jos pääsalasana-ominaisuus on otettu käyttöön Työkalut - Asetukset - %"
+"PRODUCTNAME -valintaikkunan Suojaus-välilehdellä, niin ohjelmisto voi säilöä "
+"salasanan ja automaattisesti lisätä tiedot tarvittaessa. Merkitään "
+"\"Tallenna salasana\" -valintaruutu salasanan säilömiseksi."
+
+#: wikiformats.xhp#tit.help.text
+msgctxt "wikiformats.xhp#tit.help.text"
+msgid "MediaWiki Formats"
+msgstr "MediaWikin muotoilut"
+
+#: wikiformats.xhp#hd_id3743095.help.text
+msgctxt "wikiformats.xhp#hd_id3743095.help.text"
+msgid "MediaWiki Formats"
+msgstr "MediaWikin muotoilut"
+
+#: wikiformats.xhp#par_id8654133.help.text
+msgid ""
+"The following list gives an overview of the text formats that the "
+"@WIKIEXTENSIONPRODUCTNAME@ can upload to the Wiki server."
+msgstr ""
+"Oheinen luettelo antaa yleiskuvan niistä tekstimuotoiluista, jotka "
+"@WIKIEXTENSIONPRODUCTNAME@ voi kopioida Wiki-palvelimelle."
+
+#: wikiformats.xhp#par_id5630664.help.text
+msgid ""
+"The OpenDocument format used by Writer and the WikiMedia format are quite "
+"different. Only a subset of all features can be transformed from one format "
+"to the other."
+msgstr ""
+"OpenDocument-tiedostomuoto, jota Writer käyttää ja WikiMedia-tiedostomuoto "
+"ovat hyvin erilaisia. Vain piirteiden osajoukko on muunnettavissa "
+"tiedostomuodosta toiseen."
+
+#: wikiformats.xhp#hd_id7178868.help.text
+msgid "Headings"
+msgstr "Otsikot"
+
+#: wikiformats.xhp#par_id508133.help.text
+msgid ""
+"Apply a heading paragraph style to the headings in your Writer document. The "
+"Wiki will show the heading styles of the same outline level, formatted as "
+"defined by the Wiki engine."
+msgstr ""
+"Writerin asiakirjan otsikoihin käytetään otsikko-kappaletyyliä. Wiki esittää "
+"saman jäsennystason otsikkotyylit, jotka muotoillaan Wiki-ohjelman "
+"määritysten mukaan."
+
+#: wikiformats.xhp#hd_id7217627.help.text
+msgid "Hyperlinks"
+msgstr "Hyperlinkit"
+
+#: wikiformats.xhp#par_id3735465.help.text
+msgid ""
+"Native OpenDocument hyperlinks are transformed into \"external\" Wiki links. "
+"Therefore, the built-in linking facility of OpenDocument should only be used "
+"to create links that point to other sites outside the Wiki web. For "
+"creating Wiki links that point to other subjects of the same Wiki domain, "
+"use Wiki links."
+msgstr ""
+"Alkuperäiset OpenDocument-hyperlinkit muunnetaan \"ulkoisiksi\" Wiki-"
+"linkeiksi. Tämän vuoksi ODF:n sisäänrakennettua linkkiominaisuutta pitäisi "
+"käyttää vain luotaessa linkkejä, jotka osoittavat Wiki-verkon ulkopuolisiin "
+"sivustoihin. Luotaessa Wiki-linkkejä, jotka osoittavat samalle Wiki-"
+"alueelle, käytetään Wiki-linkkejä."
+
+#: wikiformats.xhp#hd_id941190.help.text
+msgid "Lists"
+msgstr "Luettelot"
+
+#: wikiformats.xhp#par_id8942838.help.text
+msgid ""
+"Lists can reliably be exported when the whole list uses a consistent list "
+"style. Use the Numbering or Bullets icon to generate a list in Writer. If "
+"you need a list without numbering or bullets, use Format - Bullets and "
+"Numbering to define and apply the respective list style."
+msgstr ""
+"Luetelmat voidaan viedä luotettavasti, kun koko luettelo käyttää samaa "
+"luetelmatyyliä. Writerin luetelmien tuottamiseen käytetään Numerointi- tai "
+"Luettelomerkit-kuvaketta. Mikäli tarvitaan luetelmaa ilman numerointia tai "
+"luetelmamerkkejä, käytetään Muotoilu - Luettelomerkit ja numeroinnit "
+"-toimintoa sopivan luetelmatyylin määrittämiseen."
+
+#: wikiformats.xhp#hd_id7026886.help.text
+msgid "Paragraphs"
+msgstr "Kappaleet"
+
+#: wikiformats.xhp#hd_id4436475.help.text
+msgid "Alignment"
+msgstr "Tasaus"
+
+#: wikiformats.xhp#par_id376598.help.text
+msgid ""
+"Explicit text alignment should not be used in Wiki articles. Nevertheless, "
+"text alignment is supported for left, centered, and right alignment of text."
+msgstr ""
+"Wiki-artikkeleissa ei tulisi käyttää tiettyä tasausta. Tekstin tasauksista "
+"on kuitenkin tuettuina vasen, keskitetty ja oikea tasaus."
+
+#: wikiformats.xhp#hd_id7486190.help.text
+msgid "Pre-formatted text"
+msgstr "Esimuotoiltu teksti"
+
+#: wikiformats.xhp#par_id1459395.help.text
+msgid ""
+"A paragraph style with a fixed-width font is transformed as pre-formatted "
+"text. Pre-formatted text is shown on the Wiki with a border around the text."
+msgstr ""
+"Tasaleveää fonttia käyttävä kappaletyyli muunnetaan esimuotoilluksi "
+"tekstiksi, joka esitetään Wikissä kehystettynä."
+
+#: wikiformats.xhp#hd_id4834131.help.text
+msgid "Character styles"
+msgstr "Merkkityylit"
+
+#: wikiformats.xhp#par_id6397595.help.text
+msgid ""
+"Character styles modify the appearance of parts of a paragraph. The "
+"transformation supports bold, italics, bold/italics, subscript and "
+"superscript. All fixed width fonts are transformed into the Wiki typewriter "
+"style."
+msgstr ""
+"Merkkityylit muuntavat kappaleen osan ulkonäköä. Muunnos tukee lihavointia, "
+"kursivointia, lihavoitua kursivointia, alaindeksiä ja yläindeksiä. Kaikki "
+"tasaleveät fontit muunnetaan Wikin konekirjoitustyyliksi."
+
+#: wikiformats.xhp#hd_id5152745.help.text
+msgid "Footnotes"
+msgstr "Alaviitteet"
+
+#: wikiformats.xhp#par_id5238196.help.text
+msgid ""
+"Note: The transformation uses the new style of footnotes with <ref> and "
+"<references> tags that requires the Cite.php extension to be installed into "
+"MediaWiki. If those tags occur as plain text in the transformation result, "
+"ask the Wiki administrator to install this extension."
+msgstr ""
+"Muunnos käyttää uutta alaviitetyyliä <ref>- ja <references>-muotoilukoodein. "
+"Vaatimuksena on, että MediaWikiin on asennettu Cite.php-laajennus. Jos "
+"muotoilukoodit esiintyvät pelkkänä tekstinä muunnostuloksessa, Wiki-"
+"ylläpitoa pitää pyytää asentamaan tarvittava laajennus."
+
+#: wikiformats.xhp#hd_id9405499.help.text
+msgid "Images"
+msgstr "Kuvat"
+
+#: wikiformats.xhp#par_id3541673.help.text
+msgid ""
+"Images cannot be exported by a transformation producing a single file of "
+"Wiki text. However, if the image is already uploaded to the target Wiki "
+"domain (e. g. WikiMedia Commons), then the transformation produces a valid "
+"image tag that includes the image. Image captions are also supported."
+msgstr ""
+"Kuvia ei voida viedä muunnoksessa, joka tuottaa yksittäisen Wiki-tekstin "
+"tiedoston. Jos kuitenkin kuva on jo kopioitu kohteena olevan Wikin alueelle "
+"(esim. kohteeseen WikiMedia Commons), muunnos tuottaa tällöin kelvollisen "
+"kuvamuotoilukoodin, johon kuva sisältyy. Myös kuvatekstit ovat tuettuja."
+
+#: wikiformats.xhp#hd_id2162236.help.text
+msgid "Tables"
+msgstr "Taulukot"
+
+#: wikiformats.xhp#par_id3037202.help.text
+msgid ""
+"Simple tables are supported well. Table headers are translated into "
+"corresponding Wiki style table headers. However, custom formatting of table "
+"borders, column sizes and background colors is ignored."
+msgstr ""
+"Yksinkertaisten taulukkojen tuki on kattava. Taulukkojen otsikot muunnetaan "
+"vastaaviksi Wiki-tyylin mukaisiksi taulukkojen otsikoiksi. Mukautetut "
+"taulukkojen reunojen, sarakeleveyksien ja taustavärien muotoilut kuitenkin "
+"ohitetaan."
+
+#: wikiformats.xhp#hd_id2954496.help.text
+msgid "Joined Cells"
+msgstr "Yhdistetyt solut"
+
+#: wikiformats.xhp#par_id8253730.help.text
+msgid ""
+"OpenDocument and especially OpenOffice.org represent tables that have joined "
+"cells that span rows as tables with nested tables. In contrast, the wiki "
+"model of table is to declare column and row spans for such joined cells. "
+msgstr ""
+"OpenDocument (ODF) ja erityisesti OpenOffice.org esittävät taulukot, joissa "
+"on yhdistettyjä, rivien yli ulottuvia, soluja, sisäkkäisinä taulukoina. "
+"Wiki-taulukkomallissa taas määritetään sarakkeiden ja rivien ylitykset "
+"tämäntapaisille yhdistetyille soluille. "
+
+#: wikiformats.xhp#par_id8163090.help.text
+msgid ""
+"If only columns of the same row are joined, the result of the transformation "
+"resembles the source document very well."
+msgstr ""
+"Jos vain yhden rivin sarakkeet yhdistetään, muunnoksen tulos muistuttaa "
+"tarkasti lähdeasiakirjaa."
+
+#: wikiformats.xhp#hd_id425122.help.text
+msgid "Borders"
+msgstr "Reunat"
+
+#: wikiformats.xhp#par_id1831110.help.text
+msgid ""
+"Irrespective of custom table styles for border and background, a table is "
+"always exported as \"<emph>prettytable\"</emph>, which renders in the Wiki "
+"engine with simple borders and bold header."
+msgstr ""
+"Riippumatta reunojen ja taustan mukautetuista taulukkotyyleistä taulukko "
+"viedään aina \"<emph>prettytable\"</emph>-määritteisenä, jonka Wiki-ohjelma "
+"piirtää yksinkertaisin reunoin ja lihavoiduin otsikoin."
+
+#: wikiformats.xhp#hd_id6255073.help.text
+msgid "Charset and special characters"
+msgstr "Merkistö ja erikoismerkit"
+
+#: wikiformats.xhp#par_id8216193.help.text
+msgid ""
+"The charset of the transformation result is fixed to UTF-8. Depending on "
+"your system, this might not be the default charset. This might cause "
+"\"special characters\" to look broken when viewed with default settings. "
+"However, you can switch your editor to UTF-8 encoding to fix this. If your "
+"editor does not support switching the encoding, you can display the result "
+"of the transformation in the Firefox browser and switch the encoding to "
+"UTF-8 there. Now, you can cut and paste the transformation result to your "
+"program of choice."
+msgstr ""
+"Muunnoksen tuloksen merkistöksi on vakioitu UTF-8. Järjestelmästä riippuen "
+"tämä voi olla oletusmerkistö tai ei ole sitä. Tämä voi aiheuttaa "
+"\"erikoismerkkien\" näkymisen rikkinäisinä oletusasetuksin tarkasteltaessa. "
+"Muokkaimen voi kuitenkin vaihtaa UTF-8 -koodaustavalle tämän korjaamiseksi. "
+"Jos muokkaimesi ei tue koodaustavan vaihtoa, muunnoksen tulosta voi "
+"tarkastella Firefox-selaimessa vaihtaen merkistökoodauksen  UTF-8:een. Tämän "
+"jälkeen muunnoksen tulos on leikattavissa ja liitettävissä käyttäjän "
+"valitsemaan ohjelmaan."
+
+#: wikisend.xhp#tit.help.text
+msgctxt "wikisend.xhp#tit.help.text"
+msgid "Send to MediaWiki"
+msgstr "Lähetä MediaWikiin"
+
+#: wikisend.xhp#hd_id108340.help.text
+msgctxt "wikisend.xhp#hd_id108340.help.text"
+msgid "Send to MediaWiki"
+msgstr "Lähetä MediaWikiin"
+
+#: wikisend.xhp#par_id1743827.help.text
+msgid ""
+"In the Send to MediaWiki dialog, specify the settings for your current Wiki "
+"upload."
+msgstr ""
+"Lähetä MediaWikiin -valintaikkunassa määritä käsiteltävän Wiki-kopion "
+"asetukset."
+
+#: wikisend.xhp#par_id664082.help.text
+msgid ""
+"<ahelp hid=\".\">Select the MediaWiki server where you want to publish your "
+"document. Click Add to add a new server to the list.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">Valitaan MediaWiki-palvelin, jossa asiakirja julkaistaan. "
+"Napsautetaan Lisää, mikäli lisätään uusi palvelin luetteloon.</ahelp>"
+
+#: wikisend.xhp#par_id2794885.help.text
+msgid ""
+"<ahelp hid=\".\">Enter the title of your Wiki entry. This is the top heading "
+"of your Wiki entry. For a new entry, the title must be unique on this Wiki. "
+"If you enter an existing title, your upload will overwrite the existing Wiki "
+"entry.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">Annetaan Wiki-kirjauksen otsikko. Tämä on Wiki-sivun "
+"pääotsikko. Uusille kirjauksille otsikon tulee olla aiemmista erottuva tällä "
+"Wiki-sivustolla. Jos annetaan jo olemassa oleva otsikko, kopiointi korvaa "
+"aiemman Wiki-merkinnän.</ahelp>"
+
+#: wikisend.xhp#par_id2486342.help.text
+msgid ""
+"<ahelp hid=\".\">Enter an optional short summary or comment.</ahelp> See <link "
+"href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\">http://meta.wikimed"
+"ia.org/wiki/Help:Edit_summary</link>."
+msgstr ""
+"<ahelp hid=\".\">Annetaan valinnainen lyhyt yhteenveto tai kommentti.</ahelp> "
+"Katso <link href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\">http://m"
+"eta.wikimedia.org/wiki/Help:Edit_summary</link> (englanniksi olevalta "
+"sivulta voi löytyä linkki suomenkieliselle ohjesivulle)."
+
+#: wikisend.xhp#par_id823999.help.text
+msgid ""
+"<emph>This is a minor edit</emph>: <ahelp hid=\".\">Check this box to mark the "
+"uploaded page as a minor edit of the already existing page with the same "
+"title.</ahelp>"
+msgstr ""
+"<emph>Tämä on täydennys</emph>: <ahelp hid=\".\">Merkitsemällä tämä ruutu "
+"kopioitava sivu merkitään jo samalla otsikolla olevan sivun "
+"täydennykseksi.</ahelp>"
+
+#: wikisend.xhp#par_id6592913.help.text
+msgid ""
+"<emph>Show in web browser</emph>: <ahelp hid=\".\">Check this box to open your "
+"system web browser and show the uploaded Wiki page.</ahelp>"
+msgstr ""
+"<emph>Näytä www-selaimessa</emph>: <ahelp hid=\".\">Merkitsemällä tämä ruutu "
+"avataan järjestelmän www-selain, jossa näkyy kopioitu Wiki-sivu.</ahelp>"
+
+#: wikisettings.xhp#tit.help.text
+msgctxt "wikisettings.xhp#tit.help.text"
+msgid "MediaWiki Options"
+msgstr "MediaWikin asetukset"
+
+#: wikisettings.xhp#hd_id6425672.help.text
+msgctxt "wikisettings.xhp#hd_id6425672.help.text"
+msgid "MediaWiki Options"
+msgstr "MediaWikin asetukset"
+
+#: wikisettings.xhp#par_id1188390.help.text
+msgid ""
+"You can add, edit and remove MediaWiki servers. Open the dialog by <item "
+"type=\"menuitem\">Tools - Options - Internet - MediaWiki</item>. "
+"Alternatively, choose <item type=\"menuitem\">Tools - Extension "
+"Manager</item>, select the @WIKIEXTENSIONPRODUCTNAME@, and click the Options "
+"button."
+msgstr ""
+"MediaWiki-palvelimia voi lisätä, muokata ja poistaa. Valintaikkuna avataan "
+"toiminnossa <item type=\"menuitem\">Työkalut - Asetukset - Internet - "
+"MediaWiki</item>. Vaihtoehtoisesti valitaan <item type=\"menuitem\">Työkalut - "
+"Lisäosien hallinta</item>, valitaan @WIKIEXTENSIONPRODUCTNAME@ ja "
+"napsautetaan Asetukset-painiketta."
+
+#: wikisettings.xhp#par_id300607.help.text
+msgid ""
+"<ahelp hid=\".\">Click Add to add a new Wiki server.<br/>Select an entry and "
+"click Edit to edit the account settings.<br/>Select an entry and click "
+"Remove to remove the entry from the list.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">Napsauttamalla Lisää-painiketta lisätään uusi Wiki-"
+"palvelin.<br/>Valitaan kirjaus ja napsautetaan Muokkaa tiliasetusten "
+"muokkaamiseksi.<br/>Valitaan kirjaus ja napsautetaan Poista kirjauksen "
+"poistamiseksi luettelosta.</ahelp>"
+
+#: wikisettings.xhp#par_id9786065.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Opens the MediaWiki dialog to add a new "
+"entry to the list.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">Avataan MediaWiki-valintaikkuna uuden "
+"kirjauksen lisäämiseksi luetteloon.</ahelp>"
+
+#: wikisettings.xhp#par_id3386333.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Opens the MediaWiki dialog to edit the "
+"selected entry.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">Avataan MediaWiki-valintaikkuna valitun "
+"kirjauksen muokkaamiseksi.</ahelp>"
+
+#: wikisettings.xhp#par_id7285073.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Removes the selected entry from the "
+"list.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">Poistetaan valittu rivi "
+"luettelosta.</ahelp>"
+
+#: wikisettings.xhp#par_id1029084.help.text
+msgid ""
+"When you click Add or Edit, the <link "
+"href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> dialog opens."
+msgstr ""
+"Kun napsautetaan painikkeita Lisää tai Muokkaa, <link "
+"href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link>-valintaikkuna "
+"avautuu."
+"X-Accelerator-Marker: ~\n"
+
+#: Addons.xcu#.Addons.AddonUI.OfficeMenuBarMerging.com.sun.star.wiki.S1.MenuItems.M2.Title.value.text
+msgid "To Media~Wiki..."
+msgstr "MediaWikiin..."
+
+#: OptionsDialog.xcu#.OptionsDialog.Nodes.Internet.Leaves.com.sun.star.wiki.options.Label.value.text
+msgid "MediaWiki"
+msgstr "MediaWiki"
+"X-Accelerator-Marker: ~\n"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.GeneralSendError.value.text
+msgid "The operation 'Send to MediaWiki' could not be completed successfully."
+msgstr "'Lähetä MediaWikiin' -toiminto ei onnistunut."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.NoWikiFilter.value.text
+msgid ""
+"The MediaWiki export filter cannot be found. Choose 'Tools-XML Filter "
+"Settings' to install the filter, or use the setup to install the component."
+msgstr ""
+"MediaWikin vientisuodatinta ei löydy. Valitse 'Työkalut - XML-suodattimien "
+"asetukset' asentaaksesi suodattimen tai asenna komponentti asetuksista."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.NoConnectionToURL.value.text
+msgid "A connection to the MediaWiki system at '$ARG1' could not be created."
+msgstr "Yhteyttä MediaWiki-järjestelmään '$ARG1' ei voitu luoda."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.WrongLogin.value.text
+msgid ""
+"User name or password is incorrect. Please try again, or leave the fields "
+"blank for an anonymous connection."
+msgstr ""
+"Käyttäjätunnus tai salasana on virheellinen. Yritä uudestaan tai jätä kentät "
+"tyhjiksi yhdistäessäsi nimettömänä."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.InvalidURL.value.text
+msgid "A connection could not be created because the URL is invalid."
+msgstr "Yhteyttä ei voitu luoda kelpaamattoman URL-osoitteen vuoksi."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.NoURL.value.text
+msgid "Specify a MediaWiki server by providing a URL."
+msgstr "Määritä MediaWiki-palvelin antamalla URL-osoite."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.CancelSending.value.text
+msgid ""
+"The transfer has been interrupted. Please check the integrity of the wiki "
+"article."
+msgstr "Siirto on keskeytynyt. Tarkista wiki-artikkelin eheys."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_UrlLabel.value.text
+msgid "U~RL"
+msgstr "URL"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_UsernameLabel.value.text
+msgid "~Username"
+msgstr "Käyttäjätunnus"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_PasswordLabel.value.text
+msgid "~Password"
+msgstr "~Salasana"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendTitle.value.text
+msgid "Send to MediaWiki"
+msgstr "Lähetä MediaWikiin"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_WikiArticle.value.text
+msgid "Wiki article"
+msgstr "Wiki-artikkeli"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_No.value.text
+msgid "No"
+msgstr "Ei"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_OK.value.text
+msgid "OK"
+msgstr "OK"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_Yes.value.text
+msgid "Yes"
+msgstr "Kyllä"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_AddButton.value.text
+msgid "~Add..."
+msgstr "~Lisää..."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditButton.value.text
+msgid "~Edit..."
+msgstr "~Muokkaa..."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendButton.value.text
+msgid "~Send"
+msgstr "~Lähetä"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_RemoveButton.value.text
+msgid "~Remove"
+msgstr "Poista"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_NewWikiPage_Label1.value.text
+msgid ""
+"A wiki article with the title '$ARG1' does not exist yet. Do you want to "
+"create a new article with that name?"
+msgstr ""
+"'$ARG1' -otsikoitua wiki-artikkelia ei ole olemassa. Haluatko luoda uuden "
+"artikkelin tällä nimellä?"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_Label1.value.text
+msgid "Media~Wiki Server"
+msgstr "Media~Wiki-palvelin"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_Label2.value.text
+msgid "~Title"
+msgstr "Otsikko"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_Label3.value.text
+msgid "S~ummary"
+msgstr "Yhteenveto"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_MinorCheck.value.text
+msgid "This is a ~minor edit"
+msgstr "Tämä on täydennys"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_BrowserCheck.value.text
+msgid "Show in web ~browser"
+msgstr "Näytä www-selaimessa"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.UnknownCert.value.text
+msgid "The certificate of the selected site is unknown."
+msgstr "Valitun sivuston varmenne on tuntematon."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_MediaWiki_Title.value.text
+msgid "MediaWiki"
+msgstr "MediaWiki"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_AccountLine.value.text
+msgid "Account"
+msgstr "Tunnus"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_WikiLine.value.text
+msgid "MediaWiki Server"
+msgstr "MediaWiki-palvelin"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_SaveBox.value.text
+msgid "~Save password"
+msgstr "~Tallenna salasana"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_MediaWiki_Extension_String.value.text
+msgid "@WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_WikiPageExists_Label1.value.text
+msgid ""
+"A wiki article with the title '$ARG1' already exists.&#13;&#13;Do you want "
+"to replace the current article with your article?&#13;&#13;"
+msgstr ""
+"'$ARG1' -otsikoitu wiki-artikkeli on jo olemassa.&#13;&#13;Haluatko korvata "
+"sen uudella artikkelillasi?&#13;&#13;"

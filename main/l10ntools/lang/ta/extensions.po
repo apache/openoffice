@@ -1,0 +1,2828 @@
+
+#: updatehdl.src#RID_UPDATE_STR_CHECKING.string.text
+msgid "Checking..."
+msgstr "சரிபார்க்கப்படுகிறது..."
+
+#: updatehdl.src#RID_UPDATE_STR_CHECKING_ERR.string.text
+msgid "Checking for an update failed."
+msgstr "புதுப்பிக்கப் பார்த்த தோல்விகண்டது."
+
+#: updatehdl.src#RID_UPDATE_STR_NO_UPD_FOUND.string.text
+msgid "%PRODUCTNAME %PRODUCTVERSION is up to date."
+msgstr "%PRODUCTNAME %PRODUCTVERSION புதுப்பிக்கப்பட்டுள்ளது."
+
+#: updatehdl.src#RID_UPDATE_STR_UPD_FOUND.string.text
+msgid ""
+"%PRODUCTNAME %NEXTVERSION is available.\n"
+"\n"
+"The installed version is %PRODUCTNAME %PRODUCTVERSION.\n"
+"\n"
+"Note: Before downloading  an update, please ensure that you have sufficient "
+"access rights to install it.\n"
+"A password, usually the administrator's or root password, may be required."
+msgstr ""
+"%PRODUCTNAME %NEXTVERSION is available.\n"
+"\n"
+"The installed version is %PRODUCTNAME %PRODUCTVERSION.\n"
+"\n"
+"Note: Before downloading  an update, please ensure that you have sufficient "
+"access rights to install it.\n"
+"A password, usually the administrator's or root password, may be required."
+
+#: updatehdl.src#RID_UPDATE_STR_DLG_TITLE.string.text
+msgid "Check for Updates"
+msgstr "மேம்படுத்தலுக்கு சரி பார்"
+
+#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_PAUSE.string.text
+msgid "Downloading %PRODUCTNAME %NEXTVERSION paused at..."
+msgstr "%PRODUCTNAME %NEXTVERSION பதிவிறக்கம் இடைநிறுத்தப்பட்டுள்ளது..."
+
+#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_ERR.string.text
+msgid "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
+msgstr "%PRODUCTNAME %NEXTVERSION பதிவிறக்கம் துவக்குகிறது"
+
+#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.string.text
+msgid ""
+"The download location is: %DOWNLOAD_PATH.\n"
+"\n"
+"Under Tools – Options... - %PRODUCTNAME – Online Update you can change the "
+"download location."
+msgstr ""
+"பதிவிறக்கம் இடமானது: %DOWNLOAD_PATH.\n"
+"\n"
+"கருவிகளின் கீழ் – விருப்பங்கள்... - %PRODUCTNAME – ஆன்லைன் புதுப்பித்தலில் "
+"நீங்கள் பதிவிறக்க இடத்தை மாற்றலாம்."
+
+#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.string.text
+msgid "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
+msgstr "%FILE_NAME %DOWNLOAD_PATH என்ற இடத்தில் பதிவிறக்கப்பட்டுள்ளது."
+
+#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.string.text
+msgid ""
+"The automatic download of the update is currently not available.\n"
+"\n"
+"Click 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the "
+"web site."
+msgstr ""
+"தானான பதிவிறக்கம் நடப்பு புதிப்பித்தலில் கிடைக்கப் பெறவில்லை.\n"
+"\n"
+"'பதிவிறக்கு...'  %PRODUCTNAME %NEXTVERSION கைமுறையாக இணைய தளத்திலிருந்து  "
+"என்பதை பதிவிறக்க  க்ளிக் செய்யவும்."
+
+#: updatehdl.src#RID_UPDATE_STR_DOWNLOADING.string.text
+msgid "Downloading %PRODUCTNAME %NEXTVERSION..."
+msgstr "%PRODUCTNAME %NEXTVERSION பதிவிறக்கப்படுகின்றது..."
+
+#: updatehdl.src#RID_UPDATE_STR_READY_INSTALL.string.text
+msgid ""
+"Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
+msgstr ""
+"%PRODUCTNAME %NEXTVERSION ன் பதிவிறக்கம் முடிந்துவிட்டது. நிறுவதற்குத் "
+"தயாராக உள்ளது."
+
+#: updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.string.text
+msgid "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
+
+#: updatehdl.src#RID_UPDATE_STR_CANCEL_DOWNLOAD.string.text
+msgid "Do you really want to cancel the download?"
+msgstr "பதிவிறக்கத்தை நீங்கள் ரத்துசெய்ய  விரும்புகிறீர்களா?"
+
+#: updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.string.text
+msgid ""
+"To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do "
+"you want to install the update now?"
+msgstr ""
+"நிறுவலைப் புதுபிக்க, %PRODUCTNAME %PRODUCTVERSION மூடப்பட வேண்டும். இப்போது "
+"நீங்கள் புதுப்பித்தலை விரும்புகிறீர்களா?"
+
+#: updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.string.text
+msgid "Install ~now"
+msgstr "இப்போது நிறுவு (~n)"
+
+#: updatehdl.src#RID_UPDATE_STR_INSTALL_LATER.string.text
+msgid "Install ~later"
+msgstr "பின்னர் நிறுவு (~l)"
+
+#: updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.string.text
+msgid ""
+"Could not run the installer application, please run %FILE_NAME in %"
+"DOWNLOAD_PATH manually."
+msgstr ""
+"நிறுவலர் பயன்பாட்டை இயக்க முடியவில்லை, கைமுறையாக %FILE_NAME in %"
+"DOWNLOAD_PATHஐ இயக்கவும் ."
+
+#: updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.string.text
+msgid ""
+"A file with that name already exists! Do you want to overwrite the existing "
+"file?"
+msgstr ""
+"அப்பெயருடைய கோப்பு ஏற்கனவே உள்ளது! அக்கோப்பின் மேல் எழுத விரும்புகிறீர்களா?"
+
+#: updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.string.text
+msgid ""
+"A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you "
+"want to continue with the download or delete and reload the file?"
+msgstr ""
+
+#: updatehdl.src#RID_UPDATE_STR_RELOAD_RELOAD.string.text
+msgid "Reload File"
+msgstr ""
+
+#: updatehdl.src#RID_UPDATE_STR_RELOAD_CONTINUE.string.text
+msgid "Continue"
+msgstr ""
+
+#: updatehdl.src#RID_UPDATE_STR_PERCENT.string.text
+msgid "%PERCENT%"
+msgstr "%PERCENT%"
+
+#: updatehdl.src#RID_UPDATE_FT_STATUS.string.text
+msgid "Status"
+msgstr "நிலை"
+
+#: updatehdl.src#RID_UPDATE_FT_DESCRIPTION.string.text
+msgid "Description"
+msgstr "விளக்கம்"
+
+#: updatehdl.src#RID_UPDATE_BTN_CLOSE.string.text
+msgid "Close"
+msgstr "மூடு"
+
+#: updatehdl.src#RID_UPDATE_BTN_DOWNLOAD.string.text
+msgid "~Download"
+msgstr "பதிவிறக்கு (~D)"
+
+#: updatehdl.src#RID_UPDATE_BTN_INSTALL.string.text
+msgid "~Install"
+msgstr "நிறுவு (~I)"
+
+#: updatehdl.src#RID_UPDATE_BTN_PAUSE.string.text
+msgid "~Pause"
+msgstr "இடைநிறுத்து (~P)"
+
+#: updatehdl.src#RID_UPDATE_BTN_RESUME.string.text
+msgid "~Resume"
+msgstr "மீண்டும் தொடர் (~R)"
+
+#: updatehdl.src#RID_UPDATE_BTN_CANCEL.string.text
+msgid "Cancel"
+msgstr "ரத்துசெய்"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.string.text
+msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.string.text"
+msgid "%PRODUCTNAME update available"
+msgstr "%PRODUCTNAME புதுப்பித்தல் கிடைக்கப்பெறும்"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_AVAIL.string.text
+msgid "Click here to start the download."
+msgstr "பதிவிறக்கத்தைத் தொடங்க இங்கு க்ளிக்செய்."
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.string.text
+msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.string.text"
+msgid "%PRODUCTNAME update available"
+msgstr "%PRODUCTNAME மேம்படுத்தல் கிடைக்கப்பெறும்"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.string.text
+msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.string.text"
+msgid "Click here for more information."
+msgstr "கூடுதல் விவரங்களுக்கு இங்கு க்ளிக்செய்."
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.string.text
+#, fuzzy
+msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.string.text"
+msgid "%PRODUCTNAME update available"
+msgstr "%PRODUCTNAME மேம்படுத்தல் கிடைக்கப்பெறும்"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_AUTO_START.string.text
+msgid "Download of update begins."
+msgstr "புதுப்பித்தலின் பதிவிறக்கம் தொடங்குகிறது."
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOADING.string.text
+msgid "Download of update in progress"
+msgstr "மேம்படுத்தலின் பதிவிறக்கம் செயல்பாடில் உள்ளது"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_PAUSED.string.text
+msgid "Download of update paused"
+msgstr "மேம்படுத்தலின் பதிவிறக்கம் இடைநிறுத்தப்பட்டது"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_PAUSED.string.text
+msgid "Click here to resume."
+msgstr "மீண்டும் தொடர இங்கு க்ளிக்செய்."
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_ERROR_DOWNLOADING.string.text
+msgid "Download of update stalled"
+msgstr "மேம்படுத்தலின் பதிவிறக்கும் நிறுத்தப்பட்டது"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.string.text
+msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.string.text"
+msgid "Click here for more information."
+msgstr "கூடுதல் விவரங்களுக்கு இங்கு க்ளிக்செய்."
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_AVAIL.string.text
+msgid "Download of update completed"
+msgstr "மேம்படுத்தலின் பதிவிறக்கம் முடிந்தது"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_AVAIL.string.text
+msgid "Click here to start the installation."
+msgstr "நிறுவலைத் துவங்க இங்கு க்ளிக்செய்."
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_EXT_UPD_AVAIL.string.text
+msgid "Updates for extensions available"
+msgstr "விரிவாக்கத்தின் மேம்படுத்தல்கள் உள்ளது"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.string.text
+msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.string.text"
+msgid "Click here for more information."
+msgstr "கூடுதல் விவரங்களுக்கு இங்கு க்ளிக்செய்."
+
+#: Addons.xcu#.Addons.AddonUI.OfficeHelp.UpdateCheckJob.Title.value.text
+msgid "Check for ~Updates..."
+msgstr "புதுப்பித்தல்களை சரிப்பார் (~U)..."
+
+#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.FL_DATA.fixedline.text
+msgctxt "commonpagesdbp.src#RID_PAGE_TABLESELECTION.FL_DATA.fixedline.text"
+msgid "Data"
+msgstr "தரவு"
+
+#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.fixedtext.text
+msgid ""
+"Currently, the form the control belongs to is not (or not completely) bound "
+"to a data source.\n"
+"\n"
+"Please choose a data source and a table.\n"
+"\n"
+"\n"
+"Please note that the settings made on this page will take effect immediately "
+"upon leaving the page."
+msgstr ""
+"தற்போது, இந்த கட்டுப்டுத்தி (முழுவதுமாக இல்லை)  இந்த தரவு மூலத்தில் "
+"கட்டவில்லை.\n"
+"\n"
+"தரவு மூலத்தையும் ஒரு அட்டவணையும் தேர்ந்தெடுக்கவும்.\n"
+"\n"
+"\n"
+"இந்த அமைவுகளை இந்த பக்கத்தில் உடனடியாக செயல்படும் என்பதை நினைவுக் கொள்ளவும். "
+""
+
+#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.fixedtext.text
+msgid "~Data source:"
+msgstr "தரவு மூலம் (~D):"
+
+#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.PB_FORMDATASOURCE.pushbutton.text
+msgid "~..."
+msgstr "~..."
+
+#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_TABLE.fixedtext.text
+msgid "~Table / Query:"
+msgstr "அட்டவணை /கேள்வி (~T)"
+
+#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.tabpage.text
+msgctxt "commonpagesdbp.src#RID_PAGE_TABLESELECTION.tabpage.text"
+msgid "Data"
+msgstr "தரவு"
+
+#: commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.FT_DATABASEFIELD_QUEST.fixedtext.text
+msgid "Do you want to save the value in a database field?"
+msgstr "தரவுத்தள மூலத்தில் மதிப்பை நீங்கள் சேமிக்க விரும்புகிறீர்களா?"
+
+#: commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_YES.radiobutton.text
+msgid "~Yes, I want to save it in the following database field:"
+msgstr "ஆம், இந்த மதிப்பை தரவுத்தளத்தில் இதை சேமிக்கவும் (~Y)"
+
+#: commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_NO.radiobutton.text
+msgid "~No, I only want to save the value in the form."
+msgstr "இல்லை, இந்த மதிப்பை படிவத்தில் நான் சேமிக்க விரும்புகிறேன். (~N)"
+
+#: commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.tabpage.text
+msgid "Database Field"
+msgstr "தரவுதளப் புலம்"
+
+#: commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FL_FORMSETINGS.fixedline.text
+msgid "Form"
+msgstr "படிவம்"
+
+#: commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMDATASOURCELABEL.fixedtext.text
+msgid "Data source"
+msgstr "தரவு மூலம்"
+
+#: commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMCONTENTTYPELABEL.fixedtext.text
+msgid "Content type"
+msgstr "உள்ளடக்க வகை"
+
+#: commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMTABLELABEL.fixedtext.text
+msgid "Content"
+msgstr "உள்ளடக்கம்"
+
+#: commonpagesdbp.src#RID_STR_TYPE_TABLE.string.text
+msgid "Table"
+msgstr "அட்டவணை"
+
+#: commonpagesdbp.src#RID_STR_TYPE_QUERY.string.text
+msgid "Query"
+msgstr "வினவல்"
+
+#: commonpagesdbp.src#RID_STR_TYPE_COMMAND.string.text
+msgid "SQL command"
+msgstr "SQL கட்டளை"
+
+#: dbpilots.src#RID_DLG_GROUPBOXWIZARD.modaldialog.text
+msgid "Group Element Wizard"
+msgstr "குழு உருப்படி வழிகாட்டி"
+
+#: dbpilots.src#RID_DLG_GRIDWIZARD.modaldialog.text
+msgid "Table Element Wizard"
+msgstr "அட்டவணை உருப்படி வழிகாட்டி"
+
+#: dbpilots.src#RID_STR_LISTWIZARD_TITLE.string.text
+msgid "List Box Wizard"
+msgstr "பட்டியல் பெட்டி வழிகாட்டி"
+
+#: dbpilots.src#RID_STR_COMBOWIZARD_TITLE.string.text
+msgid "Combo Box Wizard"
+msgstr "காம்போ பெட்டி வழிகாட்டி"
+
+#: dbpilots.src#RID_STR_COULDNOTOPENTABLE.string.text
+msgid "The table connection to the data source could not be established."
+msgstr "அட்டவணை இணைப்பு இந்த தரவு மூலத்துக்கு ஏற்படுத்தவியலாது."
+
+#: gridpages.src#RID_PAGE_GW_FIELDSELECTION.FL_FRAME.fixedline.text
+msgid "Table element"
+msgstr "அட்டவணை உருப்படி "
+
+#: gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.fixedtext.text
+msgctxt "gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.fixedtext.text"
+msgid "Existing fields"
+msgstr "இருக்கும் புலங்கள்"
+
+#: gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_SELECTED_FIELDS.fixedtext.text
+msgid "Selected fields"
+msgstr "தேர்ந்தெடுக்கப்பட்ட புலங்கள்"
+
+#: gridpages.src#RID_PAGE_GW_FIELDSELECTION.tabpage.text
+msgctxt "gridpages.src#RID_PAGE_GW_FIELDSELECTION.tabpage.text"
+msgid "Field Selection"
+msgstr "புலம் தேர்ந்தெடுத்தல்"
+
+#: gridpages.src#RID_STR_DATEPOSTFIX.string.text
+msgid " (Date)"
+msgstr " (நாள்)"
+
+#: gridpages.src#RID_STR_TIMEPOSTFIX.string.text
+msgid " (Time)"
+msgstr " (நேரம்)"
+
+#: groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOLABELS.fixedtext.text
+msgid "Which ~names do you want to give the option fields?"
+msgstr "எந்த பெயர்களை விருப்பப் புலங்களுக்கு அளிக்க விரும்புகிறீர்கள்? (~n)"
+
+#: groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.fixedtext.text
+msgctxt "groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.fixedtext.text"
+msgid "~Option fields"
+msgstr "விருப்பப் புலங்கள் (~O)"
+
+#: groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.tabpage.text
+msgctxt "groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.tabpage.text"
+msgid "Data"
+msgstr "தரவு"
+
+#: groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.FT_DEFAULTSELECTION.fixedtext.text
+msgid "Should one option field be selected as a default?"
+msgstr "ஒரு விருப்ப புலமானது முன்னிருப்பாக தேர்ந்தெடுக்க வேண்டுமா?"
+
+#: groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_YES.radiobutton.text
+msgid "~Yes, the following:"
+msgstr "ஆம், பின்வருவன (~Y):"
+
+#: groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_NO.radiobutton.text
+msgid "No, one particular field is not going to be selected."
+msgstr "இல்லை, ஒரு குறிப்பிட்ட புலம் தேர்ந்தெடுக்கப்பட வேண்டும். "
+
+#: groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.tabpage.text
+msgid "Default Field Selection"
+msgstr "முன்னிருப்பு புலத் தேர்ந்தெடுப்பு "
+
+#: groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES_EXPL.fixedtext.text
+msgid "When you select an option, the option group is given a specific value."
+msgstr ""
+"ஒரு விருப்பத்தை தேர்ந்தெடுத்தால், ஒவ்வொரு விருப்ப குழுவிற்கும் ஒரு மதிப்பை "
+"அளிக்கவும்."
+
+#: groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES.fixedtext.text
+msgid "Which ~value do you want to assign to each option?"
+msgstr "ஒவ்வொரு விருப்பத்திற்கும் எந்த மதிப்பை ஒதுக்க விரும்புகிறீர்களா? (~v)"
+
+#: groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_RADIOBUTTONS.fixedtext.text
+msgctxt "groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_RADIOBUTTONS.fixedtext.text"
+msgid "~Option fields"
+msgstr "விருப்ப புலங்கள் (~O)"
+
+#: groupboxpages.src#RID_PAGE_OPTIONVALUES.tabpage.text
+msgid "Field Values"
+msgstr "புல மதிப்புக்கள்"
+
+#: groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_NAMEIT.fixedtext.text
+msgid "Which ~caption is to be given to your option group?"
+msgstr "எந்த பெயரை உங்கள் விருப்ப குழுவிற்கு அளிக்க வேண்டும்? (~c)"
+
+#: groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_THATSALL.fixedtext.text
+msgid "These were all details needed to create the option group."
+msgstr "இவையனைத்தும் விருப்ப குழுவினை உருவாக்கத் தேவையான விவரங்களாகும்."
+
+#: groupboxpages.src#RID_PAGE_OPTIONS_FINAL.tabpage.text
+msgid "Create Option Group"
+msgstr "விருப்ப குழுவை உருவாக்கு"
+
+#: groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.string.text
+msgid ""
+"You can either save the value of the option group in a database field or use "
+"it for a later action."
+msgstr ""
+"விருப்ப குழுவின் மதிப்பை தரவுதளத்தில் பலம் அல்லது ஒரு செயலாபாட்டிற்கு "
+"சேமித்து பிறகு பயன்படுத்தலாம்."
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FL_FRAME.fixedline.text
+msgid "Control"
+msgstr "கட்டுப்பாடு"
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.fixedtext.text
+msgid ""
+"On the right side, you see all the tables from the data source of the form.\n"
+"\n"
+"\n"
+"Choose the table from which the data should be used as basis for the list "
+"content:"
+msgstr ""
+"வலது பக்கத்தில், தரவு மூலத்திலிருந்து அவற்றை அனைத்து அட்டவணைகளையும் "
+"பார்க்கவும். \n"
+"\n"
+"\n"
+"பட்டியல் உள்ளடக்கத்தை சார்ந்து பயன்படுத்தும் அட்டவணையிலிருந்து "
+"தேர்ந்தெடுக்கவும். "
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.tabpage.text
+msgid "Table Selection"
+msgstr "அட்டவணையை தேர்ந்தெடு "
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_TABLEFIELDS.fixedtext.text
+msgctxt "listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_TABLEFIELDS.fixedtext.text"
+msgid "Existing fields"
+msgstr "இருக்கும் புலங்கள்"
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_DISPLAYEDFIELD.fixedtext.text
+msgid "Display field"
+msgstr "புலத்தைக் காட்டு"
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_COMBOBOX.string.text
+msgid "The contents of the field selected will be shown in the combo box list."
+msgstr ""
+"புல தேர்ந்தெடுக்கப்பட்ட உள்ளடக்கங்கள் காம்போ பெட்டி பட்டியில் காட்டப்படும்."
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.string.text
+msgid ""
+"The contents of the selected field will be shown in the list box if the "
+"linked fields are identical."
+msgstr ""
+"தேர்ந்தெடுக்கப்பட்ட புலத்தின் அடக்க விவரங்கள் பட்டியல் பெட்டியில் "
+"அப்புலங்கள் இணைக்கப்பட்டிருப்பின் காட்டப்படும்."
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.tabpage.text
+msgctxt "listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.tabpage.text"
+msgid "Field Selection"
+msgstr "புல தேர்ந்தெடுத்தல்"
+
+#: listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.fixedtext.text
+msgid ""
+"This is where you select fields with matching contents so that the value "
+"from the display field will be shown."
+msgstr ""
+"நீங்கள் தேர்ந்தெடுக்கப்பட்ட புலங்களில் ஒத்துபோகும் உள்ளடக்கம் "
+"புலத்திலிருந்து காட்டப்படும் மதிப்பு."
+
+#: listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.fixedtext.text
+msgid "Field from the ~Value Table"
+msgstr "மதிப்பு அட்டவணையிலிருந்து புலம் (~V)"
+
+#: listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_TABLEFIELD.fixedtext.text
+msgid "Field from the ~List Table"
+msgstr "பட்டியல் அட்டவணையிலிருந்து புலம் (~L)"
+
+#: listcombopages.src#RID_PAGE_LCW_FIELDLINK.tabpage.text
+msgid "Field Link"
+msgstr "புல இணைப்பு"
+
+#: listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.string.text
+msgid ""
+"You can either save the value of the combo box in a database field or use it "
+"for display purposes."
+msgstr ""
+"தரவுதள புலத்திலுள்ளஉள்ள காம்போ பெட்டியில் மதிப்பினை சேமிக்கலாம் அல்லது "
+"காட்டும் செயல்பாட்டிற்காக இதை பயன்படுத்தலாம்."
+
+#: fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.pageitem.text
+msgctxt "fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.pageitem.text"
+msgid "Font"
+msgstr "எழுத்துரு"
+
+#: fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS_EXT.pageitem.text
+msgid "Font Effects"
+msgstr "எழுத்துரு விளைவுகள்"
+
+#: fontdialog.src#RID_TABDLG_FONTDIALOG.tabdialog.text
+msgid "Character"
+msgstr "எழுத்து"
+
+#: formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.fixedtext.text
+msgid ""
+"Sub forms can be used to display detailed data about the current record of "
+"the master form. To do this, you can specify which columns in the sub form "
+"match which columns in the master form."
+msgstr ""
+"Subforms can be used to display detailed data about the current record of "
+"the master form. To do this, you can specify which columns in the subform "
+"match which columns in the master form."
+
+#: formlinkdialog.src#RID_DLG_FORMLINKS.modaldialog.text
+msgid "Link fields"
+msgstr "இணைப்பு புலங்கள்"
+
+#: formlinkdialog.src#PB_SUGGEST.pushbutton.text
+msgid "Suggest"
+msgstr "பரிந்துரை"
+
+#: formlinkdialog.src#STR_DETAIL_FORM.string.text
+msgid "Sub Form"
+msgstr "உள் படிவம்"
+
+#: formlinkdialog.src#STR_MASTER_FORM.string.text
+msgid "Master Form"
+msgstr "முதன்மை படிவம்"
+
+#: formlinkdialog.src#STR_ERROR_RETRIEVING_COLUMNS.string.text
+msgid "The columns of '#' could not be retrieved."
+msgstr "'#' இன் நிரல்களை மீட்டெடுக்க முடிவில்லை."
+
+#: formres.src#RID_STR_EDITMASK.string.text
+msgid "Edit mask"
+msgstr "மாஸ்க்கை திருத்து"
+
+#: formres.src#RID_STR_LITERALMASK.string.text
+msgid "Literal mask"
+msgstr "உண்மை மாஸ்க்"
+
+#: formres.src#RID_STR_READONLY.string.text
+msgctxt "formres.src#RID_STR_READONLY.string.text"
+msgid "Read-only"
+msgstr "வாசிக்க மட்டும்"
+
+#: formres.src#RID_STR_ENABLED.string.text
+msgid "Enabled"
+msgstr "செயல்படுத்தப்பட்டது"
+
+#: formres.src#RID_STR_ENABLE_VISIBLE.string.text
+msgid "Visible"
+msgstr "தெரிதல்"
+
+#: formres.src#RID_STR_AUTOCOMPLETE.string.text
+msgid "AutoFill"
+msgstr "தன்னியக்க நிரப்பல்"
+
+#: formres.src#RID_STR_LINECOUNT.string.text
+msgid "Line count"
+msgstr "வரி எண்ணிக்கை"
+
+#: formres.src#RID_STR_MAXTEXTLEN.string.text
+msgid "Max. text length"
+msgstr "அதிகப்பட்ச. உரை நீளம்"
+
+#: formres.src#RID_STR_SPIN.string.text
+msgid "Spin Button"
+msgstr "சுழற் பட்டன்"
+
+#: formres.src#RID_STR_STRICTFORMAT.string.text
+msgid "Strict format"
+msgstr "கட்டாய வடிவம்"
+
+#: formres.src#RID_STR_SHOWTHOUSANDSEP.string.text
+msgid "Thousands separator"
+msgstr "ஆயிரங்கள் பிரிப்பான்"
+
+#: formres.src#RID_STR_PRINTABLE.string.text
+msgid "Printable"
+msgstr "அச்சிடக்கூடிய"
+
+#: formres.src#RID_STR_TARGET_URL.string.text
+msgctxt "formres.src#RID_STR_TARGET_URL.string.text"
+msgid "URL"
+msgstr "URL"
+
+#: formres.src#RID_STR_TARGET_FRAME.string.text
+msgctxt "formres.src#RID_STR_TARGET_FRAME.string.text"
+msgid "Frame"
+msgstr "சட்டம்"
+
+#: formres.src#RID_STR_HELPTEXT.string.text
+msgid "Help text"
+msgstr "உதவி உரை"
+
+#: formres.src#RID_STR_HELPURL.string.text
+msgid "Help URL"
+msgstr "உதவி URL"
+
+#: formres.src#RID_STR_TAG.string.text
+msgid "Additional information"
+msgstr "மேற்படி தகவல்"
+
+#: formres.src#RID_STR_ECHO_CHAR.string.text
+msgid "Password character"
+msgstr "கடவுச்சொல் எழுத்து"
+
+#: formres.src#RID_STR_TRISTATE.string.text
+msgid "Tristate"
+msgstr "மூன்றுநிலை"
+
+#: formres.src#RID_STR_EMPTY_IS_NULL.string.text
+msgid "Empty string is NULL"
+msgstr "வெற்று சரமானது சுழியாகும்"
+
+#: formres.src#RID_STR_DECIMAL_ACCURACY.string.text
+msgid "Decimal accuracy"
+msgstr "தசமத் துல்லியம்"
+
+#: formres.src#RID_STR_IMAGE_URL.string.text
+msgid "Graphics"
+msgstr "வரைவியல்"
+
+#: formres.src#RID_STR_DEFAULT_SELECT_SEQ.string.text
+msgid "Default selection"
+msgstr "முன்னிருப்பு தேர்ந்தெடுப்பு"
+
+#: formres.src#RID_STR_DEFAULT_BUTTON.string.text
+msgid "Default button"
+msgstr "முன்னிருப்பு பட்டன்"
+
+#: formres.src#RID_STR_LABELCONTROL.string.text
+msgctxt "formres.src#RID_STR_LABELCONTROL.string.text"
+msgid "Label Field"
+msgstr "விளக்கச்சீட்டு புலம்"
+
+#: formres.src#RID_STR_LABEL.string.text
+msgid "Label"
+msgstr "விளக்கச்சீட்டு"
+
+#: formres.src#RID_STR_ALIGN.string.text
+msgid "Alignment"
+msgstr "ஒதுக்கீடு"
+
+#: formres.src#RID_STR_VERTICAL_ALIGN.string.text
+msgid "Vert. Alignment"
+msgstr "செங்குத்து. ஒழுங்கு"
+
+#: formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.1.string.text
+msgid "Top"
+msgstr "மேல்"
+
+#: formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.2.string.text
+msgid "Middle"
+msgstr "மையம்"
+
+#: formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.3.string.text
+msgid "Bottom"
+msgstr "கீழ்"
+
+#: formres.src#RID_STR_IMAGEPOSITION.string.text
+msgid "Graphics alignment"
+msgstr "வரைகலை ஒழுங்கு"
+
+#: formres.src#RID_STR_FONT.string.text
+msgctxt "formres.src#RID_STR_FONT.string.text"
+msgid "Font"
+msgstr "எழுத்துரு"
+
+#: formres.src#RID_STR_BACKGROUNDCOLOR.string.text
+msgid "Background color"
+msgstr "பின்னணி நிறம்"
+
+#: formres.src#RID_STR_BORDER.string.text
+msgid "Border"
+msgstr "எல்லை"
+
+#: formres.src#RID_STR_ICONSIZE.string.text
+msgid "Icon size"
+msgstr "சின்னத்தின் அளவு"
+
+#: formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.1.string.text
+msgid "Small"
+msgstr "சிறியது"
+
+#: formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.2.string.text
+msgid "Large"
+msgstr "பெரியது"
+
+#: formres.src#RID_STR_SHOW_POSITION.string.text
+msgid "Positioning"
+msgstr "ஒழுங்குப்படுத்தல்"
+
+#: formres.src#RID_STR_SHOW_NAVIGATION.string.text
+msgid "Navigation"
+msgstr "திசையமைப்பு"
+
+#: formres.src#RID_STR_SHOW_RECORDACTIONS.string.text
+msgid "Acting on a record"
+msgstr "ஒரு பதிவில் உள்ள செயல்"
+
+#: formres.src#RID_STR_SHOW_FILTERSORT.string.text
+msgid "Filtering / Sorting"
+msgstr "வடித்தல் / வரிசைப்படுத்தல்"
+
+#: formres.src#RID_STR_HSCROLL.string.text
+msgid "Horizontal scroll bar"
+msgstr "கிடைமட்ட இழு பட்டை"
+
+#: formres.src#RID_STR_VSCROLL.string.text
+msgid "Vertical scroll bar"
+msgstr "செங்குத்து இழு பட்டை"
+
+#: formres.src#RID_STR_WORDBREAK.string.text
+msgid "Word break"
+msgstr "சொல் பிரிப்பு"
+
+#: formres.src#RID_STR_MULTILINE.string.text
+msgid "Multiline input"
+msgstr "பல வரி உள்ளீடு"
+
+#: formres.src#RID_STR_MULTISELECTION.string.text
+msgid "Multiselection"
+msgstr "பல தேர்வு"
+
+#: formres.src#RID_STR_NAME.string.text
+msgid "Name"
+msgstr "பெயர்"
+
+#: formres.src#RID_STR_TABINDEX.string.text
+msgid "Tab order"
+msgstr "தத்தல் வரிசை"
+
+#: formres.src#RID_STR_WHEEL_BEHAVIOR.string.text
+msgid "Mouse wheel scroll"
+msgstr "சுட்டி வீல் சுருளுதல்"
+
+#: formres.src#RID_STR_FILTER.string.text
+msgid "Filter"
+msgstr "வடிப்பி"
+
+#: formres.src#RID_STR_SORT_CRITERIA.string.text
+msgid "Sort"
+msgstr "வரிசைப்படுத்தல்"
+
+#: formres.src#RID_STR_RECORDMARKER.string.text
+msgid "Record marker"
+msgstr "பதிவு குறி"
+
+#: formres.src#RID_STR_FILTERPROPOSAL.string.text
+msgid "Filter proposal"
+msgstr "வடிப்பி தீர்மானம்"
+
+#: formres.src#RID_STR_NAVIGATION.string.text
+msgid "Navigation bar"
+msgstr "திசையமைப்பு பட்டை"
+
+#: formres.src#RID_STR_CYCLE.string.text
+msgid "Cycle"
+msgstr "சுழற்சி"
+
+#: formres.src#RID_STR_TABSTOP.string.text
+msgid "Tabstop"
+msgstr "தத்தல் நிறுத்தம்"
+
+#: formres.src#RID_STR_CONTROLSOURCE.string.text
+msgid "Data field"
+msgstr "தரவு புலம்"
+
+#: formres.src#RID_STR_DROPDOWN.string.text
+msgid "Dropdown"
+msgstr "கீயே இழு"
+
+#: formres.src#RID_STR_BOUNDCOLUMN.string.text
+msgid "Bound field"
+msgstr "இணைக்கப்பட்ட புலம்"
+
+#: formres.src#RID_STR_LISTSOURCE.string.text
+msgid "List content"
+msgstr "பட்டியல் உள்ளடக்கம்"
+
+#: formres.src#RID_STR_LISTSOURCETYPE.string.text
+msgid "Type of list contents"
+msgstr "பட்டியல் உள்ளடக்கங்களின் வகை"
+
+#: formres.src#RID_STR_CURSORSOURCE.string.text
+msgid "Content"
+msgstr "உள்ளடக்கம்"
+
+#: formres.src#RID_STR_CURSORSOURCETYPE.string.text
+msgid "Content type"
+msgstr "உள்ளடக்க வகை"
+
+#: formres.src#RID_STR_ALLOW_ADDITIONS.string.text
+msgid "Allow additions"
+msgstr "சேர்க்கைகளை அனுமதித்தல்"
+
+#: formres.src#RID_STR_ALLOW_DELETIONS.string.text
+msgid "Allow deletions"
+msgstr "அழித்தல்களை அனுமதித்தல்"
+
+#: formres.src#RID_STR_ALLOW_EDITS.string.text
+msgid "Allow modifications"
+msgstr "மாற்றங்களை அனுமதித்தல்"
+
+#: formres.src#RID_STR_DATAENTRY.string.text
+msgid "Add data only"
+msgstr "தரவை மட்டும் சேர்த்தல்"
+
+#: formres.src#RID_STR_DATASOURCE.string.text
+msgid "Data source"
+msgstr "தரவு மூலம்"
+
+#: formres.src#RID_STR_MASTERFIELDS.string.text
+msgid "Link master fields"
+msgstr "முதன்மை புலங்களை இணைத்தல்"
+
+#: formres.src#RID_STR_SLAVEFIELDS.string.text
+msgid "Link slave fields"
+msgstr "இரண்டாம் புலங்களை இணைத்தல்"
+
+#: formres.src#RID_STR_VALUEMIN.string.text
+msgid "Value min."
+msgstr "குறைந்தபட்ச மதிப்பு."
+
+#: formres.src#RID_STR_VALUEMAX.string.text
+msgid "Value max."
+msgstr "அதிகபட்ச மதிப்பு."
+
+#: formres.src#RID_STR_VALUESTEP.string.text
+msgid "Incr./decrement value"
+msgstr "அதிகரிக்கும்./குறையும் மதிப்பு"
+
+#: formres.src#RID_STR_CURRENCYSYMBOL.string.text
+msgid "Currency symbol"
+msgstr "நாணய குறியீடு"
+
+#: formres.src#RID_STR_DATEMIN.string.text
+msgid "Date min."
+msgstr "குறைந்தபட்ச தேதி"
+
+#: formres.src#RID_STR_DATEMAX.string.text
+msgid "Date max."
+msgstr "அதிகபட்ச தேதி."
+
+#: formres.src#RID_STR_DATEFORMAT.string.text
+msgid "Date format"
+msgstr "தேதி வடிவம்"
+
+#: formres.src#RID_STR_SELECTEDITEMS.string.text
+msgid "Selection"
+msgstr "தேர்ந்தெடுத்தல்"
+
+#: formres.src#RID_STR_TIMEMIN.string.text
+msgid "Time min."
+msgstr "குறைந்தபட்ச நேரம்."
+
+#: formres.src#RID_STR_TIMEMAX.string.text
+msgid "Time max."
+msgstr "அதிகபட்ச நேரம்."
+
+#: formres.src#RID_STR_TIMEFORMAT.string.text
+msgid "Time format"
+msgstr "நேர வடிவம்"
+
+#: formres.src#RID_STR_CURRSYM_POSITION.string.text
+msgid "Prefix symbol"
+msgstr "முன்பொருத்த குறியீடு"
+
+#: formres.src#RID_STR_VALUE.string.text
+msgid "Value"
+msgstr "மதிப்பு"
+
+#: formres.src#RID_STR_FORMATKEY.string.text
+msgid "Formatting"
+msgstr "சீரமைத்தல்"
+
+#: formres.src#RID_STR_CLASSID.string.text
+msgid "Class ID"
+msgstr "வகுப்பு குறியீடு"
+
+#: formres.src#RID_STR_HEIGHT.string.text
+msgid "Height"
+msgstr "உயரம்"
+
+#: formres.src#RID_STR_WIDTH.string.text
+msgid "Width"
+msgstr "அகலம்"
+
+#: formres.src#RID_STR_LISTINDEX.string.text
+msgid "List index"
+msgstr "பட்டியல் வரிசை"
+
+#: formres.src#RID_STR_ROWHEIGHT.string.text
+msgid "Row height"
+msgstr "வரிசை உயரம்"
+
+#: formres.src#RID_STR_FILLCOLOR.string.text
+msgid "Fill color"
+msgstr "நிரப்பும் நிறம்"
+
+#: formres.src#RID_STR_LINECOLOR.string.text
+msgid "Line color"
+msgstr "வரி நிறம்"
+
+#: formres.src#RID_STR_REFVALUE.string.text
+msgid "Reference value (on)"
+msgstr "குறிப்பு மதிப்பு (ஆம்)"
+
+#: formres.src#RID_STR_UNCHECKEDREFVALUE.string.text
+msgid "Reference value (off)"
+msgstr "குறிப்பு மதிப்பு (இல்லை)"
+
+#: formres.src#RID_STR_STRINGITEMLIST.string.text
+msgid "List entries"
+msgstr "பட்டியல் உள்ளீடுகள்"
+
+#: formres.src#RID_STR_BUTTONTYPE.string.text
+msgid "Action"
+msgstr "செயல்"
+
+#: formres.src#RID_STR_SUBMIT_ACTION.string.text
+msgctxt "formres.src#RID_STR_SUBMIT_ACTION.string.text"
+msgid "URL"
+msgstr "URL"
+
+#: formres.src#RID_STR_SUBMIT_METHOD.string.text
+msgid "Type of submission"
+msgstr "சமர்பிக்கும் வகை"
+
+#: formres.src#RID_STR_DEFAULT_STATE.string.text
+msgid "Default status"
+msgstr "முன்னிருப்பு நிலை"
+
+#: formres.src#RID_STR_SUBMIT_ENCODING.string.text
+msgid "Submission encoding"
+msgstr "சமர்ப்பித்தல் மறைகுறி"
+
+#: formres.src#RID_STR_DEFAULTVALUE.string.text
+msgid "Default value"
+msgstr "முன்னிருப்பு மதிப்பு"
+
+#: formres.src#RID_STR_DEFAULTTEXT.string.text
+msgid "Default text"
+msgstr "முன்னிருப்பு உரை"
+
+#: formres.src#RID_STR_DEFAULTDATE.string.text
+msgid "Default date"
+msgstr "முன்னிருப்பு தேதி"
+
+#: formres.src#RID_STR_DEFAULTTIME.string.text
+msgid "Default time"
+msgstr "முன்னிருப்பு நேரம்"
+
+#: formres.src#RID_STR_SUBMIT_TARGET.string.text
+msgctxt "formres.src#RID_STR_SUBMIT_TARGET.string.text"
+msgid "Frame"
+msgstr "சட்டம்"
+
+#: formres.src#RID_RSC_ENUM_BORDER_TYPE.1.string.text
+msgid "Without frame"
+msgstr "சட்டம் இல்லாமல்"
+
+#: formres.src#RID_RSC_ENUM_BORDER_TYPE.2.string.text
+msgid "3D look"
+msgstr "முப்பரிமாண பார்வை"
+
+#: formres.src#RID_RSC_ENUM_BORDER_TYPE.3.string.text
+msgctxt "formres.src#RID_RSC_ENUM_BORDER_TYPE.3.string.text"
+msgid "Flat"
+msgstr "தட்டை"
+
+#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.1.string.text
+msgid "Valuelist"
+msgstr "மதிப்பு பட்டியல்"
+
+#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.string.text
+msgctxt "formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.string.text"
+msgid "Table"
+msgstr "அட்டவணை"
+
+#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.string.text
+msgctxt "formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.string.text"
+msgid "Query"
+msgstr "வினா"
+
+#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.4.string.text
+msgid "Sql"
+msgstr "Sql"
+
+#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.5.string.text
+msgid "Sql [Native]"
+msgstr "Sql [சொந்த]"
+
+#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.6.string.text
+msgid "Tablefields"
+msgstr "அட்டவணை புலங்கள்"
+
+#: formres.src#RID_RSC_ENUM_ALIGNMENT.1.string.text
+msgid "Left"
+msgstr "இடது"
+
+#: formres.src#RID_RSC_ENUM_ALIGNMENT.2.string.text
+msgid "Center"
+msgstr "மையம்"
+
+#: formres.src#RID_RSC_ENUM_ALIGNMENT.3.string.text
+msgid "Right"
+msgstr "வலது"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_BUTTONTYPE.1.string.text"
+msgid "None"
+msgstr "ஒன்றுமில்லை"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.2.string.text
+msgid "Submit form"
+msgstr "சமர்ப்பண படிவம்"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.3.string.text
+msgid "Reset form"
+msgstr "மறுஅமைவு படிவம்"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.4.string.text
+msgid "Open document/web page"
+msgstr "ஆவணம்/இணைய பக்கத்தைத் திறத்தல்"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.5.string.text
+msgid "First record"
+msgstr "முதல் பதிவு"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.6.string.text
+msgid "Previous record"
+msgstr "முந்தைய பதிவு"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.7.string.text
+msgid "Next record"
+msgstr "அடுத்த பதிவு"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.8.string.text
+msgid "Last record"
+msgstr "கடைசி பதிவு"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.9.string.text
+msgid "Save record"
+msgstr "பதிவை சேமித்தல்"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.10.string.text
+msgid "Undo data entry"
+msgstr "தரவு உள்ளீட்டை நீக்கு"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.11.string.text
+msgid "New record"
+msgstr "புதிய பதிவு"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.12.string.text
+msgid "Delete record"
+msgstr "பதிவை அழித்தல்"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.13.string.text
+msgid "Refresh form"
+msgstr "புதுப்பித்தல் படிவம்"
+
+#: formres.src#RID_RSC_ENUM_SUBMIT_METHOD.1.string.text
+msgid "Get"
+msgstr "பெறுதல்"
+
+#: formres.src#RID_RSC_ENUM_SUBMIT_METHOD.2.string.text
+msgid "Post"
+msgstr "அஞ்சல்"
+
+#: formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.string.text"
+msgid "URL"
+msgstr "URL"
+
+#: formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.2.string.text
+msgid "Multipart"
+msgstr "பல பகுதி"
+
+#: formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.string.text
+msgctxt "formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.string.text"
+msgid "Text"
+msgstr "உரை"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.1.string.text
+msgid "Standard (short)"
+msgstr "நிலையானது (குறைவு)"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.2.string.text
+msgid "Standard (short YY)"
+msgstr "நிலையானது (குறைந்த YY)"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.3.string.text
+msgid "Standard (short YYYY)"
+msgstr "நிலையானது (குறைந்த YYYY)"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.4.string.text
+msgid "Standard (long)"
+msgstr "நிலையானது (நீளமானது)"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.5.string.text
+msgid "DD/MM/YY"
+msgstr "DD/MM/YY"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.6.string.text
+msgid "MM/DD/YY"
+msgstr "MM/DD/YY"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.7.string.text
+msgid "YY/MM/DD"
+msgstr "YY/MM/DD"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.8.string.text
+msgid "DD/MM/YYYY"
+msgstr "DD/MM/YYYY"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.9.string.text
+msgid "MM/DD/YYYY"
+msgstr "MM/DD/YYYY"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.10.string.text
+msgid "YYYY/MM/DD"
+msgstr "YYYY/MM/DD"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.11.string.text
+msgid "YY-MM-DD"
+msgstr "YY-MM-DD"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.12.string.text
+msgid "YYYY-MM-DD"
+msgstr "YYYY-MM-DD"
+
+#: formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.1.string.text
+msgid "13:45"
+msgstr "13:45"
+
+#: formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.2.string.text
+msgid "13:45:00"
+msgstr "13:45:00"
+
+#: formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.3.string.text
+msgid "01:45 PM"
+msgstr "01:45 PM"
+
+#: formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.4.string.text
+msgid "01:45:00 PM"
+msgstr "01:45:00 PM"
+
+#: formres.src#RID_RSC_ENUM_CHECKED.1.string.text
+msgid "Not Selected"
+msgstr "தேர்ந்தெடுக்கப்படவில்லை"
+
+#: formres.src#RID_RSC_ENUM_CHECKED.2.string.text
+msgid "Selected"
+msgstr "தேர்ந்தெடுக்கப்பட்டது"
+
+#: formres.src#RID_RSC_ENUM_CHECKED.3.string.text
+msgid "Not Defined"
+msgstr "வரையறுக்கப்படவில்லை"
+
+#: formres.src#RID_RSC_ENUM_CYCLE.1.string.text
+msgid "All records"
+msgstr "அனைத்து பதிவுகள்"
+
+#: formres.src#RID_RSC_ENUM_CYCLE.2.string.text
+msgid "Active record"
+msgstr "செயல்படுத்தப்பட்ட பதிவு"
+
+#: formres.src#RID_RSC_ENUM_CYCLE.3.string.text
+msgid "Current page"
+msgstr "நடப்பு பக்கம்"
+
+#: formres.src#RID_RSC_ENUM_NAVIGATION.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_NAVIGATION.1.string.text"
+msgid "No"
+msgstr "இல்லை"
+
+#: formres.src#RID_RSC_ENUM_NAVIGATION.2.string.text
+msgctxt "formres.src#RID_RSC_ENUM_NAVIGATION.2.string.text"
+msgid "Yes"
+msgstr "ஆம்"
+
+#: formres.src#RID_RSC_ENUM_NAVIGATION.3.string.text
+msgid "Parent Form"
+msgstr "தாய் படிவம்"
+
+#: formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.string.text"
+msgid "None"
+msgstr "ஒன்றுமில்லை"
+
+#: formres.src#RID_RSC_ENUM_SELECTION_TYPE.2.string.text
+msgid "Single"
+msgstr "ஒற்றை"
+
+#: formres.src#RID_RSC_ENUM_SELECTION_TYPE.3.string.text
+msgid "Multi"
+msgstr "பல"
+
+#: formres.src#RID_RSC_ENUM_SELECTION_TYPE.4.string.text
+msgid "Range"
+msgstr "வரம்பு"
+
+#: formres.src#RID_STR_EVT_APPROVEPARAMETER.string.text
+msgid "Fill parameters"
+msgstr "அளவுருக்கள் நிரப்பு"
+
+#: formres.src#RID_STR_EVT_ACTIONPERFORMED.string.text
+msgid "Execute action"
+msgstr "செயலை இயக்கு"
+
+#: formres.src#RID_STR_EVT_AFTERUPDATE.string.text
+msgid "After updating"
+msgstr "மேம்படுத்திய பின்"
+
+#: formres.src#RID_STR_EVT_BEFOREUPDATE.string.text
+msgid "Before updating"
+msgstr "மேம்படுத்தும் முன்பு"
+
+#: formres.src#RID_STR_EVT_APPROVEROWCHANGE.string.text
+msgid "Before record action"
+msgstr "பதிவு செயலுக்கு முன்"
+
+#: formres.src#RID_STR_EVT_ROWCHANGE.string.text
+msgid "After record action"
+msgstr "பதிவு செயலுக்கு பின்"
+
+#: formres.src#RID_STR_EVT_CONFIRMDELETE.string.text
+msgid "Confirm deletion"
+msgstr "அழித்தலை உறுதி செய்தல்"
+
+#: formres.src#RID_STR_EVT_ERROROCCURED.string.text
+msgid "Error occurred"
+msgstr "பிழை ஏற்பட்டுள்ளது"
+
+#: formres.src#RID_STR_EVT_FOCUSGAINED.string.text
+msgid "When receiving focus"
+msgstr "முன்னிலைப்படுத்தலை பெறும் போது"
+
+#: formres.src#RID_STR_EVT_FOCUSLOST.string.text
+msgid "When losing focus"
+msgstr "முன்னிலைப்படுத்தலை இழக்கும் போது"
+
+#: formres.src#RID_STR_EVT_ITEMSTATECHANGED.string.text
+msgid "Item status changed"
+msgstr "உருப்படி நிலை மாற்றப்பட்டது"
+
+#: formres.src#RID_STR_EVT_KEYTYPED.string.text
+msgid "Key pressed"
+msgstr "விசை அழுத்தும் போது"
+
+#: formres.src#RID_STR_EVT_KEYUP.string.text
+msgid "Key released"
+msgstr "விசை விடப்பட்ட போது"
+
+#: formres.src#RID_STR_EVT_LOADED.string.text
+msgid "When loading"
+msgstr "ஏற்றும்போது"
+
+#: formres.src#RID_STR_EVT_RELOADING.string.text
+msgid "Before reloading"
+msgstr "மறுஏற்றத்திற்கு முன்"
+
+#: formres.src#RID_STR_EVT_RELOADED.string.text
+msgid "When reloading"
+msgstr "மறுஏற்றத்தின் போது"
+
+#: formres.src#RID_STR_EVT_MOUSEDRAGGED.string.text
+msgid "Mouse moved while key pressed"
+msgstr "விசை அழுத்திய போது சுட்டி நகர்ந்தது"
+
+#: formres.src#RID_STR_EVT_MOUSEENTERED.string.text
+msgid "Mouse inside"
+msgstr "சுட்டி உள்ளே"
+
+#: formres.src#RID_STR_EVT_MOUSEEXITED.string.text
+msgid "Mouse outside"
+msgstr "சுட்டி வெளியே"
+
+#: formres.src#RID_STR_EVT_MOUSEMOVED.string.text
+msgid "Mouse moved"
+msgstr "சுட்டி நகர்ந்தது"
+
+#: formres.src#RID_STR_EVT_MOUSEPRESSED.string.text
+msgid "Mouse button pressed"
+msgstr "சுட்டி பட்டன் அழுத்தப்பட்டது"
+
+#: formres.src#RID_STR_EVT_MOUSERELEASED.string.text
+msgid "Mouse button released"
+msgstr "சுட்டி பட்டன் விடப்பட்டது"
+
+#: formres.src#RID_STR_EVT_POSITIONING.string.text
+msgid "Before record change"
+msgstr "பதிவு மாற்றத்திற்கு முன்"
+
+#: formres.src#RID_STR_EVT_POSITIONED.string.text
+msgid "After record change"
+msgstr "பதிவு மாற்றத்திற்கு பின்"
+
+#: formres.src#RID_STR_EVT_RESETTED.string.text
+msgid "After resetting"
+msgstr "மாற்றியமைத்த பின்"
+
+#: formres.src#RID_STR_EVT_APPROVERESETTED.string.text
+msgid "Prior to reset"
+msgstr "மாற்றியமைக்கு முன்"
+
+#: formres.src#RID_STR_EVT_APPROVEACTIONPERFORMED.string.text
+msgid "Approve action"
+msgstr "செயலை ஏற்கவும்"
+
+#: formres.src#RID_STR_EVT_SUBMITTED.string.text
+msgid "Before submitting"
+msgstr "சமர்பிக்கும் முன்"
+
+#: formres.src#RID_STR_EVT_TEXTCHANGED.string.text
+msgid "Text modified"
+msgstr "உரை மாற்றப்பட்டது"
+
+#: formres.src#RID_STR_EVT_UNLOADING.string.text
+msgid "Before unloading"
+msgstr "பதிவேற்றப்படும் முன்"
+
+#: formres.src#RID_STR_EVT_UNLOADED.string.text
+msgid "When unloading"
+msgstr "பதிவேற்றும் போது"
+
+#: formres.src#RID_STR_EVT_CHANGED.string.text
+msgid "Changed"
+msgstr "மாற்றப்பட்டது"
+
+#: formres.src#RID_STR_EVENTS.string.text
+msgid "Events"
+msgstr "நிகழ்வுகள்"
+
+#: formres.src#RID_STR_ESCAPE_PROCESSING.string.text
+msgid "Analyze SQL command"
+msgstr " SQL கட்டளையை ஆய்வுசெய்"
+
+#: formres.src#RID_STR_POSITIONX.string.text
+msgid "PositionX"
+msgstr "இடம் X"
+
+#: formres.src#RID_STR_POSITIONY.string.text
+msgid "PositionY"
+msgstr "இடம் Y"
+
+#: formres.src#RID_STR_TITLE.string.text
+msgid "Title"
+msgstr "தலைப்பு"
+
+#: formres.src#RID_STR_STEP.string.text
+msgid "Page (step)"
+msgstr "பக்கம் (படி)"
+
+#: formres.src#RID_STR_PROGRESSVALUE.string.text
+msgid "Progress value"
+msgstr "செயற்பாடு மதிப்பு"
+
+#: formres.src#RID_STR_PROGRESSVALUE_MIN.string.text
+msgid "Progress value min."
+msgstr "செயற்பாடு  குறைந்தபட்ச மதிப்பு."
+
+#: formres.src#RID_STR_PROGRESSVALUE_MAX.string.text
+msgid "Progress value max."
+msgstr "செயற்பாடு அதிகபட்ச மதிப்பு."
+
+#: formres.src#RID_STR_SCROLLVALUE.string.text
+msgid "Scroll value"
+msgstr "இழு மதிப்பு"
+
+#: formres.src#RID_STR_SCROLLVALUE_MAX.string.text
+msgid "Scroll value max."
+msgstr "அதிகபட்ச உருளை மதிப்பு"
+
+#: formres.src#RID_STR_SCROLLVALUE_MIN.string.text
+msgid "Scroll value min."
+msgstr "குறைந்தபட்ச உருளை மதிப்பு."
+
+#: formres.src#RID_STR_DEFAULT_SCROLLVALUE.string.text
+msgid "Default scroll value"
+msgstr "முன்னிருப்பு உருளை மதிப்பு"
+
+#: formres.src#RID_STR_LINEINCREMENT.string.text
+msgid "Small change"
+msgstr "சிறு மாற்றம்"
+
+#: formres.src#RID_STR_BLOCKINCREMENT.string.text
+msgid "Large change"
+msgstr "பெரிய மாற்றம்"
+
+#: formres.src#RID_STR_REPEAT_DELAY.string.text
+msgid "Delay"
+msgstr "தாமதி"
+
+#: formres.src#RID_STR_REPEAT.string.text
+msgid "Repeat"
+msgstr "திரும்பச் செய்"
+
+#: formres.src#RID_STR_VISIBLESIZE.string.text
+msgid "Visible size"
+msgstr "தெரியும் அளவு"
+
+#: formres.src#RID_STR_ORIENTATION.string.text
+msgid "Orientation"
+msgstr "அமைவு"
+
+#: formres.src#RID_RSC_ENUM_ORIENTATION.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_ORIENTATION.1.string.text"
+msgid "Horizontal"
+msgstr "கிடைமட்டம்"
+
+#: formres.src#RID_RSC_ENUM_ORIENTATION.2.string.text
+msgctxt "formres.src#RID_RSC_ENUM_ORIENTATION.2.string.text"
+msgid "Vertical"
+msgstr "செங்குத்து"
+
+#: formres.src#RID_STR_EVT_ADJUSTMENTVALUECHANGED.string.text
+msgid "While adjusting"
+msgstr "சரிபார்க்கும் போது"
+
+#: formres.src#RID_STR_DATE.string.text
+msgid "Date"
+msgstr "தேதி"
+
+#: formres.src#RID_STR_STATE.string.text
+msgid "State"
+msgstr "நிலை"
+
+#: formres.src#RID_STR_TIME.string.text
+msgid "Time"
+msgstr "காலம்"
+
+#: formres.src#RID_STR_SCALEIMAGE.string.text
+msgid "Scale"
+msgstr "அளவிடு"
+
+#: formres.src#RID_STR_PUSHBUTTONTYPE.string.text
+msgid "Button type"
+msgstr "பட்டன் வகை"
+
+#: formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.string.text"
+msgid "Default"
+msgstr "முன்னிருப்பு"
+
+#: formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.2.string.text
+msgid "OK"
+msgstr "சரி"
+
+#: formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.3.string.text
+msgid "Cancel"
+msgstr "நீக்கு"
+
+#: formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.string.text
+msgctxt "formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.string.text"
+msgid "Help"
+msgstr "உதவி"
+
+#: formres.src#RID_STR_UNABLETOCONNECT.string.text
+msgid "The connection to the data source \"$name$\" could not be established."
+msgstr "தரவு மூலத்தின்\"$name$\"இணைப்பினை ஏற்படுத்தவும்."
+
+#: formres.src#RID_STR_TEXT.string.text
+msgctxt "formres.src#RID_STR_TEXT.string.text"
+msgid "Text"
+msgstr "உரை"
+
+#: formres.src#RID_STR_BOUND_CELL.string.text
+msgid "Linked cell"
+msgstr "இணைக்கப்பட்ட செல்"
+
+#: formres.src#RID_STR_LIST_CELL_RANGE.string.text
+msgid "Source cell range"
+msgstr "மூல செல் வரம்பு"
+
+#: formres.src#RID_STR_CELL_EXCHANGE_TYPE.string.text
+msgid "Contents of the linked cell"
+msgstr "இணைக்கப்பட்ட செல்லின் உள்ளடக்கங்கள்"
+
+#: formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.1.string.text
+msgid "The selected entry"
+msgstr "தேர்ந்தெடுக்கப்பட்ட உள்ளீடு"
+
+#: formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.2.string.text
+msgid "Position of the selected entry"
+msgstr "தேர்ந்தெடுக்கப்பட்ட உள்ளீட்டின் நிலை"
+
+#: formres.src#RID_STR_SHOW_SCROLLBARS.string.text
+msgid "Scrollbars"
+msgstr "உருள்பட்டைகள்"
+
+#: formres.src#RID_RSC_ENUM_TEXTTYPE.1.string.text
+msgid "Single-line"
+msgstr "ஒற்றை-கோடு"
+
+#: formres.src#RID_RSC_ENUM_TEXTTYPE.2.string.text
+msgid "Multi-line"
+msgstr "பல -கோடு"
+
+#: formres.src#RID_RSC_ENUM_TEXTTYPE.3.string.text
+msgid "Multi-line with formatting"
+msgstr "வடிவமைபுடன் பல-கோடு"
+
+#: formres.src#RID_STR_SYMBOLCOLOR.string.text
+msgid "Symbol color"
+msgstr "அடையாள நிறம்"
+
+#: formres.src#RID_STR_LINEEND_FORMAT.string.text
+msgid "Text lines end with"
+msgstr "உரை வரிகளுடன் முடிகிறது"
+
+#: formres.src#RID_RSC_ENUM_LINEEND_FORMAT.1.string.text
+msgid "LF (Unix)"
+msgstr "LF (Unix)"
+
+#: formres.src#RID_RSC_ENUM_LINEEND_FORMAT.2.string.text
+msgid "CR+LF (Windows)"
+msgstr "CR+LF (விண்டோஸ்)"
+
+#: formres.src#RID_RSC_ENUM_SCROLLBARS.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_SCROLLBARS.1.string.text"
+msgid "None"
+msgstr "ஒன்றுமில்லை"
+
+#: formres.src#RID_RSC_ENUM_SCROLLBARS.2.string.text
+msgctxt "formres.src#RID_RSC_ENUM_SCROLLBARS.2.string.text"
+msgid "Horizontal"
+msgstr "கிடைமட்டம்"
+
+#: formres.src#RID_RSC_ENUM_SCROLLBARS.3.string.text
+msgctxt "formres.src#RID_RSC_ENUM_SCROLLBARS.3.string.text"
+msgid "Vertical"
+msgstr "செங்குத்து"
+
+#: formres.src#RID_RSC_ENUM_SCROLLBARS.4.string.text
+msgid "Both"
+msgstr "இரண்டும்"
+
+#: formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.string.text"
+msgid "Table"
+msgstr "அட்டவணை"
+
+#: formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.string.text
+msgctxt "formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.string.text"
+msgid "Query"
+msgstr "வினா"
+
+#: formres.src#RID_RSC_ENUM_COMMAND_TYPE.3.string.text
+msgid "SQL command"
+msgstr "SQL கட்டளை"
+
+#: formres.src#RID_STR_TOGGLE.string.text
+msgid "Toggle"
+msgstr "மாற்று"
+
+#: formres.src#RID_STR_FOCUSONCLICK.string.text
+msgid "Take Focus on Click"
+msgstr "க்ளிக் செய்வதில் ஃபோகஸை எடுக்கவும்"
+
+#: formres.src#RID_STR_HIDEINACTIVESELECTION.string.text
+msgid "Hide selection"
+msgstr "தேர்ந்தெடுப்பை மறை"
+
+#: formres.src#RID_STR_VISUALEFFECT.string.text
+msgid "Style"
+msgstr "பாணி"
+
+#: formres.src#RID_RSC_ENUM_VISUALEFFECT.1.string.text
+msgid "3D"
+msgstr "முப்பரிமாணம்"
+
+#: formres.src#RID_RSC_ENUM_VISUALEFFECT.2.string.text
+msgctxt "formres.src#RID_RSC_ENUM_VISUALEFFECT.2.string.text"
+msgid "Flat"
+msgstr "தட்டை"
+
+#: formres.src#RID_STR_BORDERCOLOR.string.text
+msgid "Border color"
+msgstr "எல்லை நிறம்"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.1.string.text
+msgid "Left top"
+msgstr "இடதின் மேல்"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.2.string.text
+msgid "Left centered"
+msgstr "இடதின் நடு"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.3.string.text
+msgid "Left bottom"
+msgstr "இடதின் கீழ்"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.4.string.text
+msgid "Right top"
+msgstr "வலதின் மேல்"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.5.string.text
+msgid "Right centered"
+msgstr "வலதின் நடு"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.6.string.text
+msgid "Right bottom"
+msgstr "வலதின் கீழ்"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.7.string.text
+msgid "Above left"
+msgstr "மேல் இடது"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.8.string.text
+msgid "Above centered"
+msgstr "மேல் நடுவில்"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.9.string.text
+msgid "Above right"
+msgstr "மேல் வலது"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.10.string.text
+msgid "Below left"
+msgstr "கீழ் இடது"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.11.string.text
+msgid "Below centered"
+msgstr "கீழ் நடுவில்"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.12.string.text
+msgid "Below right"
+msgstr "கீழ் வலது"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.13.string.text
+msgid "Centered"
+msgstr "மையப்படுத்தப்பட்ட"
+
+#: formres.src#RID_STR_AUTOLINEBREAK.string.text
+msgid "Wrap text automatically"
+msgstr "உரையை தானாக மூடு"
+
+#: formres.src#RID_STR_TEXTTYPE.string.text
+msgid "Text type"
+msgstr "உரை வகை"
+
+#: formres.src#RID_RSC_ENUM_SHOWHIDE.1.string.text
+msgid "Hide"
+msgstr "மறை"
+
+#: formres.src#RID_RSC_ENUM_SHOWHIDE.2.string.text
+msgid "Show"
+msgstr "காட்டு"
+
+#: formres.src#RID_STR_XML_DATA_MODEL.string.text
+msgid "XML data model"
+msgstr "XML தரவு மாதிரி"
+
+#: formres.src#RID_STR_BIND_EXPRESSION.string.text
+msgid "Binding expression"
+msgstr "இணைக்கும் விளைவு"
+
+#: formres.src#RID_STR_XSD_REQUIRED.string.text
+msgid "Required"
+msgstr "தேவைப்படுகிறது "
+
+#: formres.src#RID_STR_LIST_BINDING.string.text
+msgid "List entry source"
+msgstr "பட்டியல் உள்ளீடு மூலம்"
+
+#: formres.src#RID_STR_XSD_RELEVANT.string.text
+msgid "Relevant"
+msgstr "தொடபுள்ள"
+
+#: formres.src#RID_STR_XSD_READONLY.string.text
+msgctxt "formres.src#RID_STR_XSD_READONLY.string.text"
+msgid "Read-only"
+msgstr "வாசிக்க மட்டும்"
+
+#: formres.src#RID_STR_XSD_CONSTRAINT.string.text
+msgid "Constraint"
+msgstr "கட்டுப்பாடு"
+
+#: formres.src#RID_STR_XSD_CALCULATION.string.text
+msgid "Calculation"
+msgstr "கணக்கீடு"
+
+#: formres.src#RID_STR_XSD_DATA_TYPE.string.text
+msgid "Data type"
+msgstr "தரவு வகை"
+
+#: formres.src#RID_STR_XSD_WHITESPACES.string.text
+msgid "Whitespaces"
+msgstr "காலி இடங்கள்"
+
+#: formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.1.string.text
+msgid "Preserve"
+msgstr "பாதுகாத்தல்"
+
+#: formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.2.string.text
+msgid "Replace"
+msgstr "மாற்று"
+
+#: formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.3.string.text
+msgid "Collapse"
+msgstr "வீழ்ச்சி"
+
+#: formres.src#RID_STR_XSD_PATTERN.string.text
+msgid "Pattern"
+msgstr "பாணி"
+
+#: formres.src#RID_STR_XSD_LENGTH.string.text
+msgid "Length"
+msgstr "நீளம்"
+
+#: formres.src#RID_STR_XSD_MIN_LENGTH.string.text
+msgid "Length (at least)"
+msgstr "நீளம் (குறைந்தது)"
+
+#: formres.src#RID_STR_XSD_MAX_LENGTH.string.text
+msgid "Length (at most)"
+msgstr "நீளம் (அதிகபட்சம்)"
+
+#: formres.src#RID_STR_XSD_TOTAL_DIGITS.string.text
+msgid "Digits (total)"
+msgstr "இலக்கங்கள் (மொத்தம்)"
+
+#: formres.src#RID_STR_XSD_FRACTION_DIGITS.string.text
+msgid "Digits (fraction)"
+msgstr "இலக்கங்கள் (பின்னம்)"
+
+#: formres.src#RID_STR_XSD_MAX_INCLUSIVE.string.text
+msgid "Max. (inclusive)"
+msgstr "அதிகம் (சேர்த்து)"
+
+#: formres.src#RID_STR_XSD_MAX_EXCLUSIVE.string.text
+msgid "Max. (exclusive)"
+msgstr "அதிகம். (சேர்க்காமல்)"
+
+#: formres.src#RID_STR_XSD_MIN_INCLUSIVE.string.text
+msgid "Min. (inclusive)"
+msgstr "குறைந்தது. (சேர்த்து)"
+
+#: formres.src#RID_STR_XSD_MIN_EXCLUSIVE.string.text
+msgid "Min. (exclusive)"
+msgstr "குறைந்தது (சேர்க்காமல்)"
+
+#: formres.src#RID_STR_SUBMISSION_ID.string.text
+msgid "Submission"
+msgstr "சமர்பித்தல்"
+
+#: formres.src#RID_STR_BINDING_UI_NAME.string.text
+msgid "Binding"
+msgstr "பிணைக்கிறது"
+
+#: formres.src#RID_STR_SELECTION_TYPE.string.text
+msgid "Selection type"
+msgstr "தேர்ந்தெடுத்தல் வகை"
+
+#: formres.src#RID_STR_ROOT_DISPLAYED.string.text
+msgid "Root displayed"
+msgstr "ரூட் காட்டப்பட்டது"
+
+#: formres.src#RID_STR_SHOWS_HANDLES.string.text
+msgid "Show handles"
+msgstr "கையாளுதல்களை காட்டவும்"
+
+#: formres.src#RID_STR_SHOWS_ROOT_HANDLES.string.text
+msgid "Show root handles"
+msgstr "ரூட் கையாளுதலைக் காட்டு"
+
+#: formres.src#RID_STR_EDITABLE.string.text
+msgid "Editable"
+msgstr "தொகுக்கக்கூடியது"
+
+#: formres.src#RID_STR_INVOKES_STOP_NOT_EDITING.string.text
+msgid "Invokes stop node editing"
+msgstr "முனை திருத்துதலை நிறுத்த விழைகிறது"
+
+#: formres.src#RID_STR_DECORATION.string.text
+msgid "With title bar"
+msgstr "தலைப்பு பட்டையுடன்"
+
+#: formres.src#RID_STR_NOLABEL.string.text
+msgid "No Label"
+msgstr "விளக்கச்சீட்டு இல்லை"
+
+#: formres.src#RID_RSC_ENUM_SCALE_MODE.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_SCALE_MODE.1.string.text"
+msgid "No"
+msgstr "இல்லை"
+
+#: formres.src#RID_RSC_ENUM_SCALE_MODE.2.string.text
+msgid "Keep Ratio"
+msgstr "விகிதத்தை வை"
+
+#: formres.src#RID_RSC_ENUM_SCALE_MODE.3.string.text
+msgid "Fit to Size"
+msgstr "அளவுடன் பொருத்து"
+
+#: formres.src#RID_STR_INPUT_REQUIRED.string.text
+msgid "Input required"
+msgstr "உள்ளீடு தேவைப்படுகிறது"
+
+#: formres.src#RID_STR_WRITING_MODE.string.text
+msgid "Text direction"
+msgstr "உரையின் திசை"
+
+#: formres.src#RID_RSC_ENUM_WRITING_MODE.1.string.text
+msgid "Left-to-right"
+msgstr "இடமிருந்து வலம்"
+
+#: formres.src#RID_RSC_ENUM_WRITING_MODE.2.string.text
+msgid "Right-to-left"
+msgstr "வலமிருந்து இடம்"
+
+#: formres.src#RID_RSC_ENUM_WRITING_MODE.3.string.text
+msgid "Use superordinate object settings"
+msgstr "சிறப்பான பொருள் அமைவுகளை பயன்படுத்து"
+
+#: formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.1.string.text
+msgid "Never"
+msgstr "ஒருபோதும்"
+
+#: formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.2.string.text
+msgid "When focused"
+msgstr "முன்னிலைப்படுத்தப்பட்ட போது"
+
+#: formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.3.string.text
+msgid "Always"
+msgstr "எப்போதும்"
+
+#: formres.src#RID_STR_ANCHOR_TYPE.string.text
+msgid "Anchor"
+msgstr "நங்கூரம்"
+
+#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.1.string.text
+msgid "To Paragraph"
+msgstr "பத்திக்கு"
+
+#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.2.string.text
+msgid "As Character"
+msgstr "எழுத்தாக"
+
+#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.string.text
+msgctxt "formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.string.text"
+msgid "To Page"
+msgstr "பக்கத்திற்கு"
+
+#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.4.string.text
+msgid "To Frame"
+msgstr "சட்டத்திற்கு"
+
+#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.5.string.text
+msgid "To Character"
+msgstr "எழுத்துக்கு"
+
+#: formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.1.string.text"
+msgid "To Page"
+msgstr "பக்கத்திற்கு"
+
+#: formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.2.string.text
+msgid "To Cell"
+msgstr "அறைக்கு"
+
+#: formres.src#RID_STR_FONTSTYLE_REGULAR.string.text
+msgid "Regular"
+msgstr "இயல்பான"
+
+#: formres.src#RID_STR_FONTSTYLE_BOLD_ITALIC.string.text
+msgid "Bold Italic"
+msgstr "சாய்வு தடிமன்"
+
+#: formres.src#RID_STR_FONTSTYLE_ITALIC.string.text
+msgid "Italic"
+msgstr "சாய்வு"
+
+#: formres.src#RID_STR_FONTSTYLE_BOLD.string.text
+msgid "Bold"
+msgstr "தடிமன்"
+
+#: formres.src#RID_STR_FONT_DEFAULT.string.text
+msgid "(Default)"
+msgstr "(முன்னிருப்பு)"
+
+#: newdatatype.src#RID_DLG_NEW_DATA_TYPE.FT_LABEL.fixedtext.text
+msgid "Type a name for the new data type:"
+msgstr "புதிய தரவு வகைக்கு ஒரு பெயரை அச்சிடவும்:"
+
+#: newdatatype.src#RID_DLG_NEW_DATA_TYPE.modaldialog.text
+msgid "New Data Type"
+msgstr "புதிய தரவு வகை"
+
+#: pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.string.text
+msgid ""
+"Do you want to delete the data type '#type#' from the model?\n"
+"Please note that this will affect all controls which are bound to this data "
+"type."
+msgstr ""
+"நீங்கள் '#type#' தரவு வகையை மாதியிலிருந்து அழிக்க விரும்புகிறீர்களா?\n"
+"இத்தரவு வகையுடன் தொடர்புள்ள அனைத்து கட்டுப்படுத்திகளையும் இது பாதிக்கும் "
+"என்பதைக் கருத்தில் கொள்ளவும்."
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.string.text
+msgid "Button"
+msgstr "பொத்தான்"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_RADIOBUTTON.string.text
+msgid "Option Button"
+msgstr "விருப்ப பொத்தான்"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_CHECKBOX.string.text
+msgid "Check Box"
+msgstr "சரிபார்க்கும் பெட்டி"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.string.text
+msgctxt "pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.string.text"
+msgid "Label Field"
+msgstr "விளக்கச்சீட்டு புலம்"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_GROUPBOX.string.text
+msgid "Group Box"
+msgstr "குழுப் பெட்டி"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_EDIT.string.text
+msgid "Text Box"
+msgstr "உரைப் பெட்டி"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_FORMATTED.string.text
+msgid "Formatted Field"
+msgstr "வடிவமைக்கப்பட்ட புலம்"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_LISTBOX.string.text
+msgid "List Box"
+msgstr "பட்டியல் பெட்டி"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_COMBOBOX.string.text
+msgid "Combo Box"
+msgstr "காம்போ பெட்டி"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_IMAGEBUTTON.string.text
+msgid "Image Button"
+msgstr "பட பட்டன்"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_HIDDENCONTROL.string.text
+msgid "Hidden Control"
+msgstr "மறைந்த கட்டுப்பாடு"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_UNKNOWNCONTROL.string.text
+msgid "Control (unknown type)"
+msgstr "கட்டுப்பாடு (தெரியாத வகை)"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_IMAGECONTROL.string.text
+msgid "Image Control"
+msgstr "படக் கட்டுப்பாடு"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_FILECONTROL.string.text
+msgid "File Selection"
+msgstr "கோப்பு தேர்ந்தெடுப்பு"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_DATEFIELD.string.text
+msgid "Date Field"
+msgstr "தேதிப்புலம்"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_TIMEFIELD.string.text
+msgid "Time Field"
+msgstr "நேரப்புலம்"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_NUMERICFIELD.string.text
+msgid "Numeric Field"
+msgstr "எண் புலம்"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_CURRENCYFIELD.string.text
+msgid "Currency Field"
+msgstr "நோட்டுக்கான புலம்"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_PATTERNFIELD.string.text
+msgid "Pattern Field"
+msgstr "பாணி புலம்"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_DBGRID.string.text
+msgid "Table Control "
+msgstr "அட்டவணை கட்டுப்பாடு"
+
+#: propres.src#RID_STR_STANDARD.string.text
+msgctxt "propres.src#RID_STR_STANDARD.string.text"
+msgid "Default"
+msgstr "யமுன்னிருப்பு"
+
+#: propres.src#RID_STR_PROPPAGE_DEFAULT.string.text
+msgid "General"
+msgstr "பொது"
+
+#: propres.src#RID_STR_PROPPAGE_DATA.string.text
+msgid "Data"
+msgstr "தரவு"
+
+#: propres.src#RID_RSC_ENUM_YESNO.1.string.text
+msgctxt "propres.src#RID_RSC_ENUM_YESNO.1.string.text"
+msgid "No"
+msgstr "இல்லை"
+
+#: propres.src#RID_RSC_ENUM_YESNO.2.string.text
+msgctxt "propres.src#RID_RSC_ENUM_YESNO.2.string.text"
+msgid "Yes"
+msgstr "ஆம்"
+
+#: propres.src#RID_STR_HELP_SECTION_LABEL.string.text
+msgctxt "propres.src#RID_STR_HELP_SECTION_LABEL.string.text"
+msgid "Help"
+msgstr "உதவி"
+
+#: propres.src#RID_EMBED_IMAGE_PLACEHOLDER.string.text
+msgid "<Embedded-Image>"
+msgstr "<உட்பொதியப்பட்ட-படம்>"
+
+#: propres.src#RID_STR_TEXT_FORMAT.string.text
+msgctxt "propres.src#RID_STR_TEXT_FORMAT.string.text"
+msgid "Text"
+msgstr "உரை"
+
+#: selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.fixedtext.text
+msgid ""
+"These are control fields that can be used as label fields for the "
+"$control_class$ $control_name$."
+msgstr ""
+"கட்டுப்பாட்டு புலங்களான இவற்றை, $control_class$ $control_name$ ன் முத்திரைச் "
+"சீட்டு புலங்களாகப் பயன்படுத்தலாம்."
+
+#: selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.checkbox.text
+msgid "~No assignment"
+msgstr "ஒதுக்கீடு இல்லை (~N)"
+
+#: selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.modaldialog.text
+msgid "Label Field Selection"
+msgstr "விளக்கச்சீட்டு புலத்தை தேர்ந்தெடு"
+
+#: selectlabeldialog.src#RID_STR_FORMS.string.text
+msgid "Forms"
+msgstr "படிவங்கள்"
+
+#: taborder.src#RID_DLG_TABORDER.FT_CONTROLS.fixedtext.text
+msgid "Controls"
+msgstr "கட்டுப்பாடுகள்"
+
+#: taborder.src#RID_DLG_TABORDER.PB_MOVE_UP.pushbutton.text
+msgid "Move Up"
+msgstr "மேலே நகர்த்து"
+
+#: taborder.src#RID_DLG_TABORDER.PB_MOVE_DOWN.pushbutton.text
+msgid "Move Down"
+msgstr "கீழாக நகர்த்து"
+
+#: taborder.src#RID_DLG_TABORDER.PB_AUTO_ORDER.pushbutton.text
+msgid "Automatic Sort"
+msgstr "தானே வரிசைப்படுத்து"
+
+#: taborder.src#RID_DLG_TABORDER.modaldialog.text
+msgid "Tab Order"
+msgstr "தத்தல் வரிசை"
+
+#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_SELECT_ABTYPE.string.text
+msgid "Address book type"
+msgstr "முகவரி புத்தக வகை"
+
+#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_INVOKE_ADMIN_DIALOG.string.text
+msgid "Connection Settings"
+msgstr "இணைப்பு அமைவுகள்"
+
+#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_TABLE_SELECTION.string.text
+msgid "Table selection"
+msgstr "அட்டவணை தேர்ந்தெடுத்தல்"
+
+#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.string.text
+msgctxt "abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.string.text"
+msgid "Field Assignment"
+msgstr "மூல ஒதுக்கீடு"
+
+#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_FINAL_CONFIRM.string.text
+msgid "Data Source Title"
+msgstr "தரவு மூல தலைப்பு"
+
+#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.modaldialog.text
+msgid "Address Book Data Source Wizard"
+msgstr "முகவரி புத்தக தரவு மூல வழிகாட்டி"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.fixedtext.text
+msgid ""
+"%PRODUCTNAME lets you access address data already present in your system. To "
+"do this, a %PRODUCTNAME data source will be created in which your address "
+"data is available in tabular form.\n"
+"\n"
+"This wizard helps you create the data source."
+msgstr ""
+"%PRODUCTNAME lets you access address data already present in your system. To "
+"do this, a %PRODUCTNAME data source will be created in which your address "
+"data is available in tabular form.\n"
+"\n"
+"This wizard helps you create the data source."
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.fixedline.text
+msgid "Please select the type of your external address book:"
+msgstr "உங்கள் வெளி முகவரி புத்தகத்தின் வகையை தேர்ந்தெடுக்கவும்:"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION.radiobutton.text
+msgid "Evolution"
+msgstr "Evolution"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_GROUPWISE.radiobutton.text
+msgid "Groupwise"
+msgstr "குழுவாரியாக"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_LDAP.radiobutton.text
+msgid "Evolution LDAP"
+msgstr "Evolution LDAP"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_MORK.radiobutton.text
+msgid "Mozilla / Netscape"
+msgstr "Mozilla / Netscape"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_THUNDERBIRD.radiobutton.text
+msgid "Thunderbird"
+msgstr "Thunderbird"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_KAB.radiobutton.text
+msgid "KDE address book"
+msgstr "KDE முகவரி புத்தகம்"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_MACAB.radiobutton.text
+msgid "Mac OS X address book"
+msgstr "Mac OS X முகவரி புத்தகம்"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_LDAP.radiobutton.text
+msgid "LDAP address data"
+msgstr "LDAP முகவரி தரவு"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOK.radiobutton.text
+msgid "Outlook address book"
+msgstr "Outlook முகவரி புத்தகம்"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOKEXPRESS.radiobutton.text
+msgid "Windows system address book"
+msgstr "Windows கணினி முகவரி புத்தகம்"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_OTHER.radiobutton.text
+msgid "Other external data source"
+msgstr "மற்ற வெளி தரவு மூலம்"
+
+#: abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.fixedtext.text
+msgid ""
+"To set up the new data source, additional information is required.\n"
+"\n"
+"Click the following button to open another dialog in which you then enter "
+"the necessary information."
+msgstr ""
+"புதிய தகவல் மூலத்தை அமைக்க, மேலும் தகவல் தேவை.\n"
+"\n"
+"கீழ்வரும் பட்டன் மேல் அழுத்தி நீங்கள் உள்ளிட மற்றொரு உரையாடல் துவக்கலாம். "
+
+#: abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.pushbutton.text
+msgid "Settings"
+msgstr "அமைவுகள்"
+
+#: abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.fixedtext.text
+msgid ""
+"The connection to the data source could not be established.\n"
+"Before you proceed, please check the settings made, or (on the previous "
+"page) choose another address data source type."
+msgstr ""
+"தரவு மூலத்துடன் இணைப்பை நிர்னயிக்க முடியவில்லை.\n"
+"தொடர்வதற்கு முன், அமைவுகளைச் சரி பார்க்கவும், அல்லது (இதற்கு முன்னுள்ள "
+"பக்கத்தில்) வேறொரு முகவரி தரவு மூல வகையைத் தேர்ந்தெடுக்கவும்."
+
+#: abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.fixedtext.text
+msgid ""
+"The external data source you have chosen contains more than one address "
+"book.\n"
+"Please select the one you mainly want to work with:"
+msgstr ""
+"நீங்கள் தேர்ந்தெடுத்த வெளித்தகவல் மூலத்தில் பல முகவரிப் புத்தகம் உள்ளன.\n"
+"நீங்கள் விரும்புவதை பணிபுரிய தேர்ந்தெடுக்கவும்: "
+
+#: abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.fixedtext.text
+msgid ""
+"To incorporate the address data in your templates, %PRODUCTNAME has to know "
+"which fields contain which data.\n"
+"\n"
+"For instance, you could have stored the e-mail addresses in a field named "
+"\"email\", or \"E-mail\" or \"EM\" - or something completely different.\n"
+"\n"
+"Click the button below to open another dialog where you can enter the "
+"settings for your data source."
+msgstr ""
+"உங்கள் வார்ப்புருகளில் முகவரித் தரவை இணைக்க %PRODUCTNAMEக்கு எப் புலங்களில் "
+"எத்தரவு உள்ளது என்பது தெரியவேண்டும்.n\n"
+"எடுத்துக்காட்டிற்கு, உங்கள் மின்னஞ்சல் முகவரிகளை \"மின்னஞ்சல்\", \"E-mail\", "
+"\"EM\" போன்ற பெயர் கொண்ட ஏதாவதொரு புலத்தில் சேமித்திருக்கலாம்.\n"
+"\n"
+"கீழுள்ள பொத்தானை சொடுக்குவதால் தோன்றும் உரையாடல் பெட்டியில் உங்கள் தரவு "
+"மூலத்தின் அமைவுகளை உள்ளிடவும்."
+
+#: abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.pushbutton.text
+msgctxt "abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.pushbutton.text"
+msgid "Field Assignment"
+msgstr "புல ஒதுக்கீடு"
+
+#: abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.fixedtext.text
+msgid ""
+"That was all the information necessary to integrate your address data into %"
+"PRODUCTNAME.\n"
+"\n"
+"Now, just enter the name under which you want to register the data source in "
+"%PRODUCTNAME."
+msgstr ""
+"தேவைப்பட்ட தகவல் கிடைத்துவிட்டது உங்கள் முகவரி புத்தக தரவு %PRODUCTNAMEஇல் "
+"உள்ளன\n"
+"\n"
+"இப்போது, %PRODUCTNAMEஇல் தரவு மூலத்தை பதிவுசெய்ய விரும்ப பெயரை உள்ளிடவும். "
+
+#: abspilot.src#RID_PAGE_FINAL.FT_LOCATION.fixedtext.text
+msgid "Location"
+msgstr "இடம்"
+
+#: abspilot.src#RID_PAGE_FINAL.PB_BROWSE.pushbutton.text
+msgid "Browse..."
+msgstr "உலாவுதல்..."
+
+#: abspilot.src#RID_PAGE_FINAL.CB_REGISTER_DS.checkbox.text
+msgid "Make this address book available to all modules in %PRODUCTNAME."
+msgstr ""
+"%PRODUCTNAME இல் அனைத்து தொகுதியிலும் இந்த முகவரி புத்தகத்தை கொண்டிருக்க "
+"வேண்டும்."
+
+#: abspilot.src#RID_PAGE_FINAL.FT_NAME_EXPL.fixedtext.text
+msgid "Address book name"
+msgstr "முகவரி புத்தகப் பெயர்"
+
+#: abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.fixedtext.text
+msgid ""
+"Another data source already has this name. As data sources have to have "
+"globally unique names, you need to choose another one."
+msgstr ""
+"ஏற்கனவே மற்றொரு தரவு மூலம் இப்பெயரைக் கொண்டுள்ளதால். உலகம் முழுவதும்ஒரே "
+"பெயரை தரவு மூலங்கள் கொண்டுள்ளன, நீங்கள் வேறொரு பெயரை தேர்ந்தெடுக்கவும்."
+
+#: abspilot.src#RID_ERR_NEEDTYPESELECTION.errorbox.text
+msgid "Please select a type of address book."
+msgstr "முகவரி புத்தகத்தின் வகையை தேர்ந்தெடுக்கவும்."
+
+#: abspilot.src#RID_QRY_NOTABLES.querybox.text
+msgid ""
+"The data source does not contain any tables.\n"
+"Do you want to set it up as an address data source, anyway?"
+msgstr ""
+"தகவல் மூலத்தில் அட்டவணை எதுவும் இல்லை.\n"
+"முகவரித் தகவல் தரவு மூலமாக அமைக்க வேண்டுமா, எப்படியிருப்பினும்? "
+
+#: abspilot.src#RID_STR_DEFAULT_NAME.string.text
+msgid "Addresses"
+msgstr "முகவரிகள்"
+
+#: abspilot.src#RID_STR_ADMINDIALOGTITLE.string.text
+msgid "Create Address Data Source"
+msgstr "முகவரி தரவு மூலத்தை உருவாக்குதல்"
+
+#: abspilot.src#RID_STR_NOCONNECTION.string.text
+msgid "The connection could not be established."
+msgstr "இணைப்பை ஏற்படுத்த முடியவில்லை."
+
+#: abspilot.src#RID_STR_PLEASECHECKSETTINGS.string.text
+msgid "Please check the settings made for the data source."
+msgstr "தரவு மூலத்திற்கான அமைவுகளை சரிபார்க்கவும்."
+
+#: abspilot.src#RID_STR_FIELDDIALOGTITLE.string.text
+msgid "Address Data - Field Assignment"
+msgstr "தரவு முகவரி - புலம் ஒதுக்குதல்"
+
+#: abspilot.src#RID_STR_NOFIELDSASSIGNED.string.text
+msgid ""
+"There are no fields assigned at this time.\n"
+"You can either assign fields now or do so later by first choosing:\n"
+"\"File - Template - Address Book Source...\""
+msgstr ""
+"எந்தப் புலமும் இவ்வேளையில் குறிப்பிடப்படவில்லை.\n"
+"நீங்கள் இப்போதே அல்லது பின்வரும் கோப்பை தெரிவுசெய்த பின்னர் புலங்களைக் "
+"குறிப்பிடலாம்:\n"
+"\"கோப்பு - வார்ப்புரு - முகவரிப் புத்தக மூலம்...\""
+
+#: bib.src#RID_BIB_STR_FIELDSELECTION.string.text
+msgid "Field selection:"
+msgstr "புலத் தேர்வு:"
+
+#: bib.src#RID_BIB_STR_TABWIN_PREFIX.string.text
+msgid "Table;Query;Sql;Sql [Native]"
+msgstr "அட்டவணை;கேள்வி;Sql;Sql [சொந்த]"
+
+#: bib.src#RID_BIB_STR_FRAME_TITLE.string.text
+msgid "Bibliography Database"
+msgstr "விவரக்குறிப்பு தரவுதளம்"
+
+#: bib.src#RID_MAP_QUESTION.string.text
+msgid "Do you want to edit the column arrangement?"
+msgstr "நிரல் முன்னேற்பாட்டினை திருத்த விரும்புகிறீர்களா?"
+
+#: datman.src#RID_DLG_MAPPING.GB_MAPPING.fixedline.text
+msgid "Column names"
+msgstr "நிரல் பெயர்கள்"
+
+#: datman.src#RID_DLG_MAPPING.ST_NONE.string.text
+msgid "<none>"
+msgstr "<எதுமில்லை>"
+
+#: datman.src#RID_DLG_MAPPING.modaldialog.text
+msgid "Column Layout for Table %1"
+msgstr "அட்டவணை %1க்கான நிரல் அமைப்பு"
+
+#: datman.src#RID_DLG_DBCHANGE.ST_ENTRY.string.text
+msgid "Entry"
+msgstr "பதிவு"
+
+#: datman.src#RID_DLG_DBCHANGE.modaldialog.text
+msgid "Choose Data Source"
+msgstr "தரவு மூலத்தை தேர்ந்தெடு"
+
+#: sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.string.text
+msgid "The following column names could not be assigned:\n"
+msgstr "பின்வரும் நிரல் பெயர்கள் ஒதுக்கப்டடவில்லை.\n"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.string.text
+msgid "Article"
+msgstr "கட்டுரை"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_BOOK.string.text
+msgid "Book"
+msgstr "புத்தகம்"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_BOOKLET.string.text
+msgid "Brochures"
+msgstr "சிறுபுத்தகங்கள்"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_CONFERENCE.string.text
+msgctxt "sections.src#RID_TP_GENERAL.ST_TYPE_CONFERENCE.string.text"
+msgid "Conference proceedings"
+msgstr "கலந்துரையாடல் செயற்படுத்தல்"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_INBOOK.string.text
+msgid "Book excerpt"
+msgstr "புத்தக சாராம்சம்"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_INCOLLECTION.string.text
+msgid "Book excerpt with title"
+msgstr "புத்தக சாராம்சம் தலைப்புடன்"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_INPROCEEDINGS.string.text
+msgctxt "sections.src#RID_TP_GENERAL.ST_TYPE_INPROCEEDINGS.string.text"
+msgid "Conference proceedings"
+msgstr "கலந்துரையாடல் செயற்படுத்தல்"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_JOURNAL.string.text
+msgid "Journal"
+msgstr "பத்திரிக்கை"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_MANUAL.string.text
+msgid "Techn. documentation"
+msgstr "நுட்ப. ஆவணம்"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_MASTERSTHESIS.string.text
+msgid "Thesis"
+msgstr "ஆய்வறிக்கை"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_MISC.string.text
+msgid "Miscellaneous"
+msgstr "மற்றவை"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_PHDTHESIS.string.text
+msgid "Dissertation"
+msgstr "ஆய்வறிக்கை"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_PROCEEDINGS.string.text
+msgctxt "sections.src#RID_TP_GENERAL.ST_TYPE_PROCEEDINGS.string.text"
+msgid "Conference proceedings"
+msgstr "கலந்துரையாடல் செயற்படுத்தல்"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_TECHREPORT.string.text
+msgid "Research report"
+msgstr "ஆய்வறிக்கை"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_UNPUBLISHED.string.text
+msgid "Unpublished"
+msgstr "பிரசுரிக்கப்படாதது"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_EMAIL.string.text
+msgid "e-mail"
+msgstr "மின்னஞ்சல்"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_WWW.string.text
+msgid "WWW document"
+msgstr "WWW ஆவணம்"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM1.string.text
+msgid "User-defined1"
+msgstr "பயனர்-வரையறுத்தது1"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM2.string.text
+msgid "User-defined2"
+msgstr "பயனர்-வரையறுத்தது2"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM3.string.text
+msgid "User-defined3"
+msgstr "பயனர்-வரையறுத்தது3"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM4.string.text
+msgid "User-defined4"
+msgstr "பயனர்-வரையறுத்தது4"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM5.string.text
+msgid "User-defined5"
+msgstr "பயனர்-வரையறுத்தது5"
+
+#: sections.src#RID_TP_GENERAL.tabpage.text
+msgid "General"
+msgstr "பொது"
+
+#: sections.src#RID_POPUP_ME_VIEW.PU_INSERT.menuitem.text
+msgid "Insert Section..."
+msgstr "பிரிவைச் சேர்க்க..."
+
+#: sections.src#RID_POPUP_ME_VIEW.PU_REMOVE.menuitem.text
+msgid "Delete Section..."
+msgstr "பிரிவை நீக்கு..."
+
+#: sections.src#RID_POPUP_ME_VIEW.PU_CHG_NAME.menuitem.text
+msgid "Modify Name..."
+msgstr "பெயரை மாற்று..."
+
+#: sections.src#ST_IDENTIFIER.string.text
+msgid "~Short name"
+msgstr "சிறு பெயர் (~S)"
+
+#: sections.src#ST_AUTHTYPE.string.text
+msgid "~Type"
+msgstr "வகை (~T)"
+
+#: sections.src#ST_YEAR.string.text
+msgid "~Year"
+msgstr "வருடம் (~T)"
+
+#: sections.src#ST_AUTHOR.string.text
+msgid "Author(s)"
+msgstr "ஆசிரியர்(கள்)"
+
+#: sections.src#ST_TITLE.string.text
+msgid "Tit~le"
+msgstr "தலைப்பு (~l)"
+
+#: sections.src#ST_PUBLISHER.string.text
+msgid "~Publisher"
+msgstr "பிரசுரிப்போர் (~P)"
+
+#: sections.src#ST_ADDRESS.string.text
+msgid "A~ddress"
+msgstr "முகவரி (~P)"
+
+#: sections.src#ST_ISBN.string.text
+msgid "~ISBN"
+msgstr "~ISBN"
+
+#: sections.src#ST_CHAPTER.string.text
+msgid "~Chapter"
+msgstr "அத்தியாயம் (~C)"
+
+#: sections.src#ST_PAGE.string.text
+msgid "Pa~ge(s)"
+msgstr "பக்கங் (கள்) (~g)"
+
+#: sections.src#ST_EDITOR.string.text
+msgid "Editor"
+msgstr "ஆசிரியர்"
+
+#: sections.src#ST_EDITION.string.text
+msgid "Ed~ition"
+msgstr "பதிப்பி (~i)"
+
+#: sections.src#ST_BOOKTITLE.string.text
+msgid "~Book title"
+msgstr "புத்தக தலைப்பு (~B)"
+
+#: sections.src#ST_VOLUME.string.text
+msgid "Volume"
+msgstr "அளவு"
+
+#: sections.src#ST_HOWPUBLISHED.string.text
+msgid "Publication t~ype"
+msgstr "பிரசுரிப்பு வகை (~y)"
+
+#: sections.src#ST_ORGANIZATION.string.text
+msgid "Organi~zation"
+msgstr "நிறுவனம் (~z)"
+
+#: sections.src#ST_INSTITUTION.string.text
+msgid "Instit~ution"
+msgstr "நிறுவனம் (~u)"
+
+#: sections.src#ST_SCHOOL.string.text
+msgid "University"
+msgstr "பல்கலைக்கழகம்"
+
+#: sections.src#ST_REPORT.string.text
+msgid "Type of re~port"
+msgstr "அறிக்கை வகை (~p)"
+
+#: sections.src#ST_MONTH.string.text
+msgid "~Month"
+msgstr "மாதம் (~M)"
+
+#: sections.src#ST_JOURNAL.string.text
+msgid "~Journal"
+msgstr "பத்திரிக்கை (~J)"
+
+#: sections.src#ST_NUMBER.string.text
+msgid "Numb~er"
+msgstr "எண் (~e)"
+
+#: sections.src#ST_SERIES.string.text
+msgid "Se~ries"
+msgstr "வரிசை (~r)"
+
+#: sections.src#ST_ANNOTE.string.text
+msgid "Ann~otation"
+msgstr "குறிப்பு (~o)"
+
+#: sections.src#ST_NOTE.string.text
+msgid "~Note"
+msgstr "குறிப்பு (~N)"
+
+#: sections.src#ST_URL.string.text
+msgid "URL"
+msgstr "வலைமனை"
+
+#: sections.src#ST_CUSTOM1.string.text
+msgid "User-defined field ~1"
+msgstr "பயனர்-வரையறுத்த புலம் ~1"
+
+#: sections.src#ST_CUSTOM2.string.text
+msgid "User-defined field ~2"
+msgstr "பயனர்-வரையறுத்த புலம் ~2"
+
+#: sections.src#ST_CUSTOM3.string.text
+msgid "User-defined field ~3"
+msgstr "பயனர்-வரையறுத்த புலம்~3"
+
+#: sections.src#ST_CUSTOM4.string.text
+msgid "User-defined field ~4"
+msgstr "பயனர்-வரையறுத்த புலம் ~4"
+
+#: sections.src#ST_CUSTOM5.string.text
+msgid "User-defined field ~5"
+msgstr "பயனர்-வரையறுத்த புலம் ~5"
+
+#: toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.toolboxitem.text
+msgid "Table"
+msgstr "அட்டவணை"
+
+#: toolbar.src#RID_BIB_TOOLBAR.TBC_FT_QUERY.toolboxitem.text
+msgid "Search Key"
+msgstr "தேடும் சாவி"
+
+#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_AUTOFILTER.toolboxitem.text
+msgid "AutoFilter"
+msgstr "தன்னியக்கவடிகட்டி"
+
+#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_FILTERCRIT.toolboxitem.text
+msgid "Standard Filter"
+msgstr "நிலையான வடிப்பு"
+
+#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_REMOVEFILTER.toolboxitem.text
+msgid "Remove Filter"
+msgstr "வட்டியை நீக்கவும்"
+
+#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_COL_ASSIGN.toolboxitem.text
+msgid "Column Arrangement"
+msgstr "நிரல் முன்னேற்பாடு"
+
+#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_CHANGESOURCE.toolboxitem.text
+msgid "Data Source"
+msgstr "தரவு மூலம்"
+
+#: grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.pushbutton.text
+msgctxt "grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.pushbutton.text"
+msgid "Set"
+msgstr "அமைத்தல்"
+
+#: grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_ASCENDING.string.text
+msgid "Linear ascending"
+msgstr "நேரான ஏறுமுகம்"
+
+#: grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_DESCENDING.string.text
+msgid "Linear descending"
+msgstr "நேர்கோட்டு இறங்குமுகம்"
+
+#: grid.src#GRID_DIALOG.RESET_TYPE_RESET.string.text
+msgid "Original values"
+msgstr "அசல் மதிப்புக்கள்"
+
+#: grid.src#GRID_DIALOG.RESET_TYPE_EXPONENTIAL.string.text
+msgid "Exponential increasing"
+msgstr "அடுக்கு ஏறுமுகம்"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.pushbutton.text
+msgid ""
+"About\n"
+" Dev~ice"
+msgstr ""
+"பற்றி\n"
+"சாதனம் (~i)"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.pushbutton.text
+msgid ""
+"Create\n"
+"Preview"
+msgstr ""
+"உருவாக்கு\n"
+"முன்னோட்டம்"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.fixedline.text
+msgid "Preview"
+msgstr "முன்னோட்டம்"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCANAREA_BOX.fixedline.text
+msgid "Scan area"
+msgstr "ஸ்கேன் பகுதி"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_LEFT_TXT.fixedtext.text
+msgid "Left:"
+msgstr "இடது:"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_TOP_TXT.fixedtext.text
+msgid "Top:"
+msgstr "மேலே:"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RIGHT_TXT.fixedtext.text
+msgid "Right:"
+msgstr "வலது:"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BOTTOM_TXT.fixedtext.text
+msgid "Bottom:"
+msgstr "கீழே:"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_DEVICE_BOX_TXT.fixedtext.text
+msgid "Device used:"
+msgstr "பயன்படுத்திய சாதனம்:"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RESOLUTION_TXT.fixedtext.text
+msgid "Resolution [~DPI]"
+msgstr "மறுத்தீர்வு [~DPI]"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_ADVANCED_TXT.fixedtext.text
+msgid "Show advanced options"
+msgstr "கூடுதல் விருப்பங்களைக் காட்டு"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_OPTION_TXT.fixedtext.text
+msgid "Options:"
+msgstr "விருப்பங்கள்:"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_NUMERIC_VECTOR_TXT.fixedtext.text
+msgid "Vector element"
+msgstr "வெக்டர் உருப்படி"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.pushbutton.text
+msgctxt "sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.pushbutton.text"
+msgid "Set"
+msgstr "அமைத்தல்"
+
+#: sanedlg.src#RID_SANE_DIALOG.modaldialog.text
+msgid "Scanner"
+msgstr "ஸ்கேனர்"
+
+#: sanedlg.src#RID_SANE_DEVICEINFO_TXT.string.text
+msgid ""
+"Device: %s\n"
+"Vendor: %s\n"
+"Model: %s\n"
+"Type: %s"
+msgstr ""
+"சாதனம்: %s\n"
+"விற்பவர்: %s\n"
+"மாதிரி: %s\n"
+"வகை: %s"
+
+#: sanedlg.src#RID_SANE_SCANERROR_TXT.string.text
+msgid "An error occurred while scanning."
+msgstr "ஸ்கேன் செய்யும் ஒரு  போது பிழை ஏற்பட்டது."
+
+#: sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.string.text
+msgid ""
+"The device does not offer a preview option. Therefore, a normal scan will be "
+"used as a preview instead. This may take a considerable amount of time."
+msgstr ""
+"இந்த சாதனம் முன்காட்சி காட்டும் வசதியை பெற்றிருக்கவில்லை. ஆகையால், சாதாரண  "
+"முன்காட்சியாக பயன்படுத்தப்படும். இது போதுமான நேரத்தை உட்கொள்ளும்."
+
+#: sanedlg.src#RID_SANE_NOSANELIB_TXT.string.text
+msgid "The SANE interface could not be initialized. Scanning is not possible."
+msgstr " SANE இடைமுகம் துவங்கப்படவில்லை. ஸ்கேன் சாத்தியமல்ல."
+
+#: preload.src#RID_DLG_OEMWIZARD.PB_PREV.pushbutton.text
+msgid "<< Back"
+msgstr "<< பின்"
+
+#: preload.src#RID_DLG_OEMWIZARD.PB_NEXT.pushbutton.text
+msgid "Next >>"
+msgstr "அடுத்து >>"
+
+#: preload.src#RID_DLG_OEMWIZARD.ST_ACCEPT.string.text
+msgid "Accept"
+msgstr "ஏற்றுக்கொள்"
+
+#: preload.src#RID_DLG_OEMWIZARD.ST_FINISH.string.text
+msgid "Finish"
+msgstr "முடிந்தது"
+
+#: preload.src#RID_DLG_OEMWIZARD.ST_LICENSE_AGREEMENT.string.text
+msgid " - Software License Agreement"
+msgstr " - மென்பொருள் உரிமை ஒப்பந்தம்"
+
+#: preload.src#RID_DLG_OEMWIZARD.ST_INSERT_USER_DATA.string.text
+msgid "- User Data"
+msgstr "- பயனர் தரவு"
+
+#: preload.src#RID_TP_WELCOME.FT_INFO.fixedtext.text
+msgid ""
+"Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n"
+"\n"
+"To start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal "
+"data in the dialog following the license text. Important information is "
+"contained in the readme files which are located in the %PRODUCTNAME product "
+"directory. Please read these files carefully. You can also find detailed "
+"information at the Oracle website \n"
+"\n"
+"http://www.oracle.com/us/products/applications/open-office."
+msgstr ""
+"Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n"
+"\n"
+"To start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal "
+"data in the dialog following the license text. Important information is "
+"contained in the readme files which are located in the %PRODUCTNAME product "
+"directory. Please read these files carefully. You can also find detailed "
+"information at the Oracle website \n"
+"\n"
+"http://www.oracle.com/us/products/applications/open-office."
+
+#: preload.src#RID_TP_WELCOME.tabpage.text
+msgid "Welcome"
+msgstr "நல்வரவு"
+
+#: preload.src#RID_TP_LICENSE.FT_INFO1.fixedtext.text
+msgid "Please follow these steps to proceed with the installation:"
+msgstr "நிறுவலைத் தொடர இப்படிகளைப் பின்பற்றிவும்:"
+
+#: preload.src#RID_TP_LICENSE.FT_INFO2_1.fixedtext.text
+msgid "1."
+msgstr "1."
+
+#: preload.src#RID_TP_LICENSE.FT_INFO2.fixedtext.text
+msgid ""
+"View the complete License Agreement. Please use the scroll bar or the '%"
+"PAGEDOWN' button in this dialog to view the entire license text."
+msgstr ""
+"உரிமை ஒப்பந்தத்தை முழுமையாக பார். தயவுசெய்து நகர்த்தும் பட்டையை அல்லது '%"
+"PAGEDOWN' பொத்தாணை உரையாடல் முழுமையாக உரிமை உரையை பார்க்கவும்."
+
+#: preload.src#RID_TP_LICENSE.PB_PAGEDOWN.pushbutton.text
+msgid "Page Down"
+msgstr "பக்கத்தை கீழே நகர்த்து"
+
+#: preload.src#RID_TP_LICENSE.FT_INFO3_1.fixedtext.text
+msgid "2."
+msgstr "2."
+
+#: preload.src#RID_TP_LICENSE.FT_INFO3.fixedtext.text
+msgid "Accept the License Agreement."
+msgstr "உரிமை ஒப்பந்தத்தை ஏற்றுக்கொள்."
+
+#: preload.src#RID_TP_LICENSE.CB_ACCEPT.checkbox.text
+msgid "I accept the terms of the Agreement."
+msgstr "நாண் ஒப்பந்தத்தின் முறைகளை ஏற்றுக்கொள்கிறேன்."
+
+#: preload.src#RID_TP_LICENSE.LICENCE_ACCEPT.string.text
+msgid "~Accept"
+msgstr "ஏற்றுக்கொள் (~A)"
+
+#: preload.src#RID_TP_LICENSE.LICENCE_NOTACCEPT.string.text
+msgid "Decline"
+msgstr "மறு"
+
+#: preload.src#RID_TP_LICENSE.tabpage.text
+msgid "License Agreement"
+msgstr "அனுமதி ஒப்பந்தம்"

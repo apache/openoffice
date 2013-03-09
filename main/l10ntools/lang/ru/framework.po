@@ -1,0 +1,240 @@
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: ~\n"
+
+#: resource.src#STR_MENU_ADDONS.string.text
+msgid "Add-Ons"
+msgstr "Дополнения"
+
+#: resource.src#STR_MENU_ADDONHELP.string.text
+msgid "Add-~On Help"
+msgstr "Справка по дополнениям"
+
+#: resource.src#STR_MENU_HEADFOOTALL.string.text
+msgid "All"
+msgstr "Все"
+
+#: resource.src#STR_UPDATEDOC.string.text
+msgid "~Update"
+msgstr "Обновить"
+
+#: resource.src#STR_CLOSEDOC_ANDRETURN.string.text
+msgid "~Close & Return to "
+msgstr "Закрыть и вернуться к"
+
+#: resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_VISIBLEBUTTON.menuitem.text
+msgid "Visible ~Buttons"
+msgstr "Показать кнопки"
+
+#: resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_CUSTOMIZETOOLBAR.menuitem.text
+msgid "~Customize Toolbar..."
+msgstr "Настройка панели инструментов..."
+
+#: resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_DOCKTOOLBAR.menuitem.text
+msgid "~Dock Toolbar"
+msgstr "Закрепить панель инструментов"
+
+#: resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_DOCKALLTOOLBAR.menuitem.text
+msgid "Dock ~All Toolbars"
+msgstr "Закрепить все панели инструментов"
+
+#: resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_LOCKTOOLBARPOSITION.menuitem.text
+msgid "~Lock Toolbar Position"
+msgstr "Фиксировать позицию панели инструментов"
+
+#: resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_CLOSE.menuitem.text
+msgid "Close ~Toolbar"
+msgstr "Закрыть панель инструментов"
+
+#: resource.src#STR_SAVECOPYDOC.string.text
+msgid "Save Copy ~as..."
+msgstr "Сохранить копию как..."
+
+#: resource.src#STR_NODOCUMENT.string.text
+msgid "No Documents"
+msgstr "Документов нет"
+
+#: resource.src#STR_TOOLBAR_TITLE_ADDON.string.text
+msgid "Add-On %num%"
+msgstr "Расширения %num%"
+
+#: resource.src#STR_STATUSBAR_LOGOTEXT.string.text
+msgid "A %PRODUCTNAME product by Oracle"
+msgstr "%PRODUCTNAME является продуктом Oracle"
+
+#: resource.src#DLG_LICENSE.FT_INFO1.fixedtext.text
+msgid "Please follow these steps to proceed with the installation:"
+msgstr "Выполните следующие действия для продолжения установки:"
+
+#: resource.src#DLG_LICENSE.FT_INFO2_1.fixedtext.text
+msgid "1."
+msgstr "1."
+
+#: resource.src#DLG_LICENSE.FT_INFO2.fixedtext.text
+msgid ""
+"View the complete License Agreement. Please use the scroll bar or the '%"
+"PAGEDOWN' button in this dialog to view the entire license text."
+msgstr ""
+"Просмотрите лицензионное соглашение полностью. Используйте полосу прокрутки "
+"или кнопку %PAGEDOWN для просмотра текста лицензии.  "
+
+#: resource.src#DLG_LICENSE.PB_PAGEDOWN.pushbutton.text
+msgid "Scroll Down"
+msgstr "Прокрутить вниз"
+
+#: resource.src#DLG_LICENSE.FT_INFO3_1.fixedtext.text
+msgid "2."
+msgstr "2."
+
+#: resource.src#DLG_LICENSE.FT_INFO3.fixedtext.text
+msgid "Accept the License Agreement."
+msgstr "Принять лицензионное соглашение"
+
+#: resource.src#DLG_LICENSE.LICENSE_ACCEPT.string.text
+msgid "~Accept"
+msgstr "Принять"
+
+#: resource.src#DLG_LICENSE.LICENSE_NOTACCEPT.string.text
+msgid "Decline"
+msgstr "Отклонить"
+
+#: resource.src#DLG_LICENSE.modaldialog.text
+msgid "License Agreement"
+msgstr "Лицензионное соглашение"
+
+#: resource.src#STR_FULL_DISC_RETRY_BUTTON.string.text
+msgid "Retry"
+msgstr "Повторить"
+
+#: resource.src#STR_FULL_DISC_MSG.string.text
+msgid ""
+"%PRODUCTNAME could not save important internal information due to "
+"insufficient free disk space at the following location:\n"
+"%PATH\n"
+"\n"
+"You will not be able to continue working with %PRODUCTNAME without "
+"allocating more free disk space at that location.\n"
+"\n"
+"Press the 'Retry' button after you have allocated more free disk space to "
+"retry saving the data.\n"
+"\n"
+msgstr ""
+"%PRODUCTNAME не может сохранить важную внутреннюю информацию из-за "
+"недостаточного места на диске в следующем расположении:\n"
+"%PATH\n"
+"\n"
+"Невозможно будет продолжить работу с %PRODUCTNAME без выделения "
+"дополнительного свободного места на диске в этом расположении.\n"
+"\n"
+"После выделения дополнительного места на диске нажмите кнопку «Повторить» "
+"для повторения попытки сохранения данных.\n"
+"\n"
+
+#: resource.src#STR_RESTORE_TOOLBARS.string.text
+msgid "~Reset"
+msgstr "Восстановить"
+
+#: resource.src#STR_CORRUPT_UICFG_SHARE.string.text
+msgid ""
+"An error occurred while loading the user interface configuration data. The "
+"application will be terminated now.\n"
+"Please try to reinstall the application."
+msgstr ""
+"Ошибка загрузки конфигураций пользовательского интерфейса. Приложение будет "
+"закрыто.\n"
+"Попробуйте переустановить приложение."
+
+#: resource.src#STR_CORRUPT_UICFG_USER.string.text
+msgid ""
+"An error occurred while loading the user interface configuration data. The "
+"application will be terminated now.\n"
+"Please try to remove your user profile for the application."
+msgstr ""
+"Ошибка загрузки конфигураций пользовательского интерфейса. Приложение будет "
+"закрыто.\n"
+"Попробуйте удалить пользовательский профиль приложения."
+
+#: resource.src#STR_CORRUPT_UICFG_GENERAL.string.text
+msgid ""
+"An error occurred while loading the user interface configuration data. The "
+"application will be terminated now.\n"
+"Please try to remove your user profile for the application first or try to "
+"reinstall the application."
+msgstr ""
+"Ошибка загрузки конфигураций пользовательского интерфейса. Приложение будет "
+"закрыто.\n"
+"Попробуйте удалить пользовательский профиль и переустановить приложение."
+
+#: resource.src#STR_UNTITLED_DOCUMENT.string.text
+msgid "Untitled"
+msgstr "Без имени"
+
+#: resource.src#STR_LANGSTATUS_MULTIPLE_LANGUAGES.string.text
+msgid "Multiple Languages"
+msgstr "Несколько языков"
+
+#: resource.src#STR_LANGSTATUS_NONE.string.text
+msgid "None (Do not check spelling)"
+msgstr "Нет (не проверять орфографию)"
+
+#: resource.src#STR_RESET_TO_DEFAULT_LANGUAGE.string.text
+msgid "Reset to Default Language"
+msgstr "Установить язык по умолчанию"
+
+#: resource.src#STR_LANGSTATUS_MORE.string.text
+msgid "More..."
+msgstr "Е~щё..."
+
+#: resource.src#STR_SET_LANGUAGE_FOR_SELECTION.string.text
+msgid "Set Language for Selection"
+msgstr "Установить язык для выделения"
+
+#: resource.src#STR_SET_LANGUAGE_FOR_PARAGRAPH.string.text
+msgid "Set Language for Paragraph"
+msgstr "Установить язык для абзаца"
+
+#: resource.src#STR_SET_LANGUAGE_FOR_ALL_TEXT.string.text
+msgid "Set Language for all Text"
+msgstr "Установить язык для всего текста"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: ~\n"
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_WELCOME.string.text
+msgid "Welcome to"
+msgstr "Добро пожаловать в"
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_WELCOMEPRODUCT.string.text
+msgid "%PRODUCTNAME"
+msgstr "%PRODUCTNAME"
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_CREATE.string.text
+msgid "Create a new document"
+msgstr "Создать документ"
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_TEMPLATE.string.text
+msgid "~Templates..."
+msgstr "Шаблоны..."
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_FILE.string.text
+msgid "~Open..."
+msgstr "Открыть..."
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_EXTHELP.string.text
+msgid "Add new features to %PRODUCTNAME"
+msgstr "Добавить расширения для %PRODUCTNAME (загрузка из Интернет)"
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_REGHELP.string.text
+msgid "Register your %PRODUCTNAME"
+msgstr "Зарегистрировать %PRODUCTNAME"
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_INFOHELP.string.text
+msgid "Get more information about %PRODUCTNAME"
+msgstr "Подробнее об %PRODUCTNAME"
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_TPLREP.string.text
+msgid "Get more templates for %PRODUCTNAME"
+msgstr "Добавить шаблоны для %PRODUCTNAME (загрузка из Интернета)"

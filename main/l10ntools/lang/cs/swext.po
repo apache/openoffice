@@ -1,0 +1,895 @@
+"X-Accelerator-Marker: ~\n"
+
+#: wiki.xhp#tit.help.text
+msgctxt "wiki.xhp#tit.help.text"
+msgid "@WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@"
+
+#: wiki.xhp#bm_id3154408.help.text
+msgid ""
+"<bookmark_value>Wiki;@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_va"
+"lue>@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>extensions;Me"
+"diaWiki</bookmark_value>"
+msgstr ""
+"<bookmark_value>Wiki;@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_va"
+"lue>@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>rozšíření;Med"
+"iaWiki</bookmark_value>"
+
+#: wiki.xhp#hd_id5993530.help.text
+msgctxt "wiki.xhp#hd_id5993530.help.text"
+msgid "@WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@"
+
+#: wiki.xhp#par_id9647511.help.text
+msgid ""
+"<ahelp hid=\".\">By using the @WIKIEXTENSIONPRODUCTNAME@ you can upload your "
+"current Writer text document to a MediaWiki server. After uploading, all "
+"Wiki users can read your document on the Wiki.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">Pomocí @WIKIEXTENSIONPRODUCTNAME@ můžete odeslat aktuální "
+"dokument Writeru přímo na server MediaWiki. Poté si mohou váš článek přečíst "
+"všichni návštěvníci dané wiki.</ahelp>"
+
+#: wiki.xhp#par_id6468703.help.text
+msgid ""
+"<ahelp hid=\".\">Choose <item type=\"menuitem\">File - Send - To "
+"MediaWiki</item> to upload the current Writer document to a MediaWiki "
+"server.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">Chcete-li odeslat aktuální dokument Writeru na server "
+"MediaWiki, zvolte <item type=\"menuitem\">Soubor - Odeslat - Do "
+"MediaWiki</item>.</ahelp>"
+
+#: wiki.xhp#hd_id4554582.help.text
+msgid "System Requirements"
+msgstr "Systémové požadavky"
+
+#: wiki.xhp#par_id2597430.help.text
+msgid "StarOffice/StarSuite 9"
+msgstr "StarOffice/StarSuite 9"
+
+#: wiki.xhp#par_id8430738.help.text
+msgid "OpenOffice.org 3.0"
+msgstr "OpenOffice.org 3.0"
+
+#: wiki.xhp#par_id9340495.help.text
+msgid "Java Runtime Environment 1.4"
+msgstr "Java Runtime Environment 1.4"
+
+#: wiki.xhp#par_id7387615.help.text
+msgid ""
+"A Wiki account on a supported <link "
+"href=\"http://www.mediawiki.org/wiki/MediaWiki\">MediaWiki</link> server"
+msgstr ""
+"Wiki účet na podporovaném serveru <link "
+"href=\"http://www.mediawiki.org/wiki/MediaWiki\">MediaWiki</link> "
+
+#: wiki.xhp#hd_id8047120.help.text
+msgid "Installing @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "Instalace @WIKIEXTENSIONPRODUCTNAME@"
+
+#: wiki.xhp#par_id4277169.help.text
+msgid ""
+"Before you install the @WIKIEXTENSIONPRODUCTNAME@, ensure that %PRODUCTNAME "
+"uses a Java Runtime Environment (JRE). To check the status of the JRE, "
+"choose <item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Java</item>. "
+"Ensure that \"Use a Java runtime environment\" is marked and that a Java "
+"runtime folder is selected in the big listbox. If no JRE was activated, then "
+"activate a JRE 1.4 or later and restart %PRODUCTNAME."
+msgstr ""
+"Před instalací @WIKIEXTENSIONPRODUCTNAME@ se ujistěte, že %PRODUCTNAME "
+"používá Java Runtime Environment (JRE). Stav JRE můžete zkontrolovat v "
+"dialogu  <item type=\"menuitem\">Nástroje - Volby - %PRODUCTNAME -  "
+"Java</item>. Ujistěte se, zda je zaškrtnuto \"Použít běhové prostředí jazyka "
+"Java (JRE)\" a v seznamu je označen adresář, kde je Java nainstalována. Pokud "
+"není JRE aktivováno, aktivujte JRE 1.4 nebo novější a restartujte %"
+"PRODUCTNAME."
+
+#: wiki.xhp#hd_id567339.help.text
+msgid "To Install the @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "Instalace @WIKIEXTENSIONPRODUCTNAME@"
+
+#: wiki.xhp#par_id1732230.help.text
+msgctxt "wiki.xhp#par_id1732230.help.text"
+msgid ""
+"In a Writer window, choose <item type=\"menuitem\">Tools - Extension "
+"Manager</item>."
+msgstr ""
+"V okně Writer zvolte  <item type=\"menuitem\">Nástroje - Správce "
+"rozšíření</item>."
+
+#: wiki.xhp#par_id4338511.help.text
+msgid "In the Extension Manager dialog, click Add."
+msgstr "V okně Správce rozšíření klepněte na Přidat."
+
+#: wiki.xhp#par_id5882442.help.text
+msgid ""
+"Locate the @WIKIEXTENSIONFILENAME@.oxt file, click Open, and then click "
+"Close. "
+msgstr ""
+"Vyberte soubor @WIKIEXTENSIONFILENAME@.oxt, klepněte na Otevřít a poté "
+"klepněte na Zavřít."
+
+#: wiki.xhp#par_id4008911.help.text
+msgid "Close %PRODUCTNAME, and close also the Quickstarter if enabled."
+msgstr "Ukončete %PRODUCTNAME a také Rychlé spuštení, pokud je zapnuto."
+
+#: wiki.xhp#par_id265511.help.text
+msgid ""
+"Restart the software, open a text document, then choose <item "
+"type=\"menuitem\">Tools - Options - Internet - MediaWiki</item> to enter your "
+"Wiki settings. See \"To Connect To a Wiki\" below."
+msgstr ""
+"Spusťte aplikaci znovu, otevřete textový dokument a volbou <item "
+"type=\"menuitem\">Nástroje - Volby - Internet - MediaWiki</item> se dostanete "
+"k nastavení Wiki. Více v části \"Připojení k Wiki\"."
+
+#: wiki.xhp#hd_id3569444.help.text
+msgid "To Remove the @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "Odebrání @WIKIEXTENSIONPRODUCTNAME@"
+
+#: wiki.xhp#par_id2655110.help.text
+msgctxt "wiki.xhp#par_id2655110.help.text"
+msgid ""
+"In a Writer window, choose <item type=\"menuitem\">Tools - Extension "
+"Manager</item>."
+msgstr ""
+"V okně Writer zvolte  <item type=\"menuitem\">Nástroje - Správce "
+"rozšíření</item>."
+
+#: wiki.xhp#par_id9504379.help.text
+msgid "Click the plus sign (+) in front of My Extensions."
+msgstr "Klepněte na znak plus (+) před Moje rozšíření."
+
+#: wiki.xhp#par_id8431348.help.text
+msgid "Select the extension, click Remove, and then click Close."
+msgstr "Zvolte rozšíření, klepněte na Odebrat a poté klepněte na Zavřít."
+
+#: wiki.xhp#hd_id5316019.help.text
+msgid "To Connect to a Wiki"
+msgstr "Připojení k Wiki"
+
+#: wiki.xhp#par_id2381969.help.text
+msgid ""
+"Note: You can store your user name and password for all respective dialogs "
+"inside %PRODUCTNAME. The password will be stored in a secure way, where "
+"access is maintained by a master password. To enable the master password, "
+"choose <item type=\"menuitem\">Tools - Options - %PRODUCTNAME - "
+"Security</item>."
+msgstr ""
+"Poznámka: Uživatelské jméno a heslo si můžete uložit v "
+"StarOffice/OpenOffice.org. Heslo se uloží v bezpečném úložišti, chráněném "
+"hlavním heslem. Hlavní heslo nastavíte v <item type=\"menuitem\">Nástroje - "
+"Volby - %PRODUCTNAME - Bezpečnost</item>."
+
+#: wiki.xhp#par_id3751640.help.text
+msgid ""
+"Note: If you connect to the web using a proxy server, enter the proxy "
+"information to <item type=\"menuitem\">Tools - Options - Internet - "
+"Proxy</item>, and restart the software."
+msgstr ""
+"Poznámka: Pokud se na web připojujete přes proxy, zadejte nastavení proxy do "
+"dialogu <item type=\"menuitem\">Nástroje - Volby - Internet - Proxy</item> a "
+"restartujte aplikaci."
+
+#: wiki.xhp#par_id9533677.help.text
+msgid ""
+"Open a Writer document, and choose <item type=\"menuitem\">Tools - Options - "
+"Internet - MediaWiki</item>."
+msgstr ""
+"Otevřete dokument Writeru a zvolte <item type=\"menuitem\">Nástroje - Volby - "
+"Internet - MediaWiki</item>."
+
+#: wiki.xhp#par_id368968.help.text
+msgid ""
+"In the <link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\">Options</link> "
+"dialog, click Add."
+msgstr ""
+"V dialogu <link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\">Volby</link> "
+"klepněte na Přidat."
+
+#: wiki.xhp#par_id6962187.help.text
+msgid ""
+"In the <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> "
+"dialog, enter the account information for the Wiki."
+msgstr ""
+"V dialogu <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> "
+"zadejte informace o účtu na Wiki."
+
+#: wiki.xhp#par_id5328836.help.text
+msgid ""
+"In the URL textbox, enter the address of a Wiki that you want to connect to."
+msgstr "Do pole URL zadejte adresu serveru Wiki, ke kterému se chcete připojit."
+
+#: wiki.xhp#par_id389416.help.text
+msgid "You can copy the URL from a web browser and paste it into the textbox."
+msgstr "URL můžete zkopírovat z webového prohlížeče a vložit do pole."
+
+#: wiki.xhp#par_id5906552.help.text
+msgid "In the Username box, enter your user ID for your Wiki account."
+msgstr "Do pole Uživatelské jméno zadejte své uživatelské jméno na Wiki."
+
+#: wiki.xhp#par_id9297158.help.text
+msgid ""
+"If the Wiki allows anonymous write access, you can leave the Username and "
+"Password boxes empty."
+msgstr ""
+"Pokud Wiki umožňuje anonymní zápis, můžete pole Uživatelské jméno a Heslo "
+"nechat prázdné."
+
+#: wiki.xhp#par_id8869594.help.text
+msgid ""
+"In the Password box, enter the password for your Wiki account, then click "
+"OK."
+msgstr "Do pole Heslo zadejte své heslo pro přístup k Wiki a klepněte na OK."
+
+#: wiki.xhp#par_id292062.help.text
+msgid ""
+"Optionally enable \"Save password\" to save the password between sessions. A "
+"master password is used to maintain access to all saved passwords. Choose "
+"<item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Security</item> to "
+"enable the master password. \"Save password\" is unavailable when the master "
+"password is not enabled."
+msgstr ""
+"Můžete také zaškrtnout pole \"Uložit heslo\", pokud chcete uložit heslo. "
+"Přístup k uloženým heslům je chráněn pomocí hlavního hesla. Hlavní heslo "
+"můžete nastavit v dialogu <item type=\"menuitem\">Nástroje - Volby - %"
+"PRODUCTNAME - Bezpečnost</item>. Pokud není hlavní heslo nastaveno, volba "
+"\"Uložit heslo\" není aktivní."
+
+#: wiki.xhp#hd_id7044892.help.text
+msgid "To Create a New Wiki Page"
+msgstr "Vytvoření nové Wiki stránky"
+
+#: wiki.xhp#par_id3514206.help.text
+msgid "Open a Writer document."
+msgstr "Otevřete dokument Writeru."
+
+#: wiki.xhp#par_id944853.help.text
+msgid ""
+"Write the content of the Wiki page. You can use formatting like text "
+"formats, headings, footnotes, and more. See the <link "
+"href=\"@WIKIEXTENSIONID@/wikiformats.xhp\">list of supported formats</link>."
+msgstr ""
+"Zapište obsah Wiki stránky. Můžete použít formátování, např. formát písma, "
+"záhlaví, poznámky pod čarou apod. Podívejte se na <link "
+"href=\"@WIKIEXTENSIONID@/wikiformats.xhp\">seznam podporovaných "
+"formátů</link>."
+
+#: wiki.xhp#par_id4566484.help.text
+msgid "Choose <item type=\"menuitem\">File - Send - To MediaWiki</item>."
+msgstr "Zvolte <item type=\"menuitem\">Soubor - Odeslat - Do MediaWiki</item>."
+
+#: wiki.xhp#par_id228278.help.text
+msgid ""
+"In the <link href=\"@WIKIEXTENSIONID@/wikisend.xhp\">Send to MediaWiki</link> "
+"dialog, specify the settings for your entry."
+msgstr ""
+"V dialogu <link href=\"@WIKIEXTENSIONID@/wikisend.xhp\">Odeslat do "
+"MediaWiki</link>  zadejte nastavení článku."
+
+#: wiki.xhp#par_id2564165.help.text
+msgid "<emph>MediaWiki server</emph>: Select the Wiki."
+msgstr "<emph>Server MediaWiki</emph>: Vyberte Wiki."
+
+#: wiki.xhp#par_id5566576.help.text
+msgid ""
+"<emph>Title</emph>: Type the title of your page. Type the title of an "
+"existing page to overwrite the page with your current text document. Type a "
+"new title to create a new page on the Wiki."
+msgstr ""
+"<emph>Nadpis</emph>: Zadejte nadpis stránky. Chcete-li přepsat existující "
+"stránku, zadejte její název. Pokud zadáte nový nadpis, vytvoříte novou "
+"stránku na Wiki."
+
+#: wiki.xhp#par_id9688711.help.text
+msgid "<emph>Summary</emph>: Enter an optional short summary of your page."
+msgstr "<emph>Souhrn</emph>: Můžete zadat krátký souhrn článku."
+
+#: wiki.xhp#par_id4123661.help.text
+msgid ""
+"<emph>This is a minor edit</emph>: Check this box to mark the uploaded page "
+"as a minor edit of the already existing page with the same title."
+msgstr ""
+"<emph>Toto je malá úprava</emph>: Zaškrtněte toto pole, pokud je odesílaná "
+"stránka jen malou úpravou existující stránky."
+
+#: wiki.xhp#par_id452284.help.text
+msgid ""
+"<emph>Show in web browser</emph>: Check this box to open your system web "
+"browser and show the uploaded Wiki page."
+msgstr ""
+"<emph>Zobrazit v prohlížeči</emph>: Zaškrtněte toto pole, pokud chcete "
+"odeslanou Wiki stránku otevřít ve webovém prohlížeči."
+
+#: wiki.xhp#par_id8346812.help.text
+msgid "Click Send."
+msgstr "Klepněte na Odeslat."
+
+#: wikiaccount.xhp#tit.help.text
+msgctxt "wikiaccount.xhp#tit.help.text"
+msgid "MediaWiki"
+msgstr "MediaWiki"
+
+#: wikiaccount.xhp#hd_id960722.help.text
+msgctxt "wikiaccount.xhp#hd_id960722.help.text"
+msgid "MediaWiki"
+msgstr "MediaWiki"
+
+#: wikiaccount.xhp#par_id4571672.help.text
+msgid ""
+"Use the MediaWiki dialog to add or edit your MediaWiki account settings."
+msgstr ""
+"Pomocí dialogu MediaWiki můžete přidat nebo upravit nastavení účtu "
+"MediaWiki."
+
+#: wikiaccount.xhp#par_id7631458.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Enter the URL of a MediaWiki server, "
+"starting with http://</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">Zadejte URL serveru MediaWiki, začínající "
+"na http://</ahelp>"
+
+#: wikiaccount.xhp#par_id7862483.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Enter your user name on the MediaWiki "
+"server. Leave empty for anonymous access.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">Zadejte své uživatelské jméno na serveru "
+"MediaWiki. Pro anonymní přístup ponechte prázdné.</ahelp>"
+
+#: wikiaccount.xhp#par_id1113010.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Enter your password on the MediaWiki "
+"server. Leave empty for anonymous access.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">Zadejte své heslo na serveru MediaWiki. "
+"Pro anonymní přístup ponechte prázdné.</ahelp>"
+
+#: wikiaccount.xhp#par_id656758.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Enable to store your password between "
+"sessions. The master password must be enabled, see <item "
+"type=\"menuitem\">Tools - Options - %PRODUCTNAME - Security</item>.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">Umožňuje trvale uložit heslo. Musí být "
+"nastaveno hlavní heslo, to nastavíte v dialogu <item "
+"type=\"menuitem\">Nástroje - Volby - %PRODUCTNAME - Bezpečnost</item>.</ahelp>"
+
+#: wikiaccount.xhp#par_id3112582.help.text
+msgid ""
+"Enter the Internet address of a Wiki server in a format like "
+"http://wiki.services.openoffice.org/wiki or copy the URL from a web browser."
+msgstr ""
+"Zadejte URL adresu serveru Wiki ve formátu např. "
+"http://wiki.services.openoffice.org/wiki (také můžete zkopírovat URL z "
+"prohlížeče)."
+
+#: wikiaccount.xhp#par_id628070.help.text
+msgid ""
+"If the Wiki allows anonymous access, you can leave the account text boxes "
+"empty. Else enter your user name and password."
+msgstr ""
+"Pokud Wiki umožňuje anonymní přístup, můžete obě pole ponechat prázdná. V "
+"opačném případě zadejte uživatelské jméno a heslo."
+
+#: wikiaccount.xhp#par_id9046601.help.text
+msgid ""
+"If you have enabled the master password feature on the Security tab page of "
+"the Tools - Options - %PRODUCTNAME dialog, then the software can store your "
+"password and automatically insert the data where necessary. Enable the \"Save "
+"password\" checkbox to store your password."
+msgstr ""
+"Pokud jste na záložce Bezpečnost dialogu Nástroje - Volby - %PRODUCTNAME "
+"nastavil hlavní heslo, může aplikace trvale ukládat hesla a automaticky je "
+"použít v případě potřeby. Chcete-li heslo uložit, zaškrtněte pole \"Uložit "
+"heslo\"."
+
+#: wikiformats.xhp#tit.help.text
+msgctxt "wikiformats.xhp#tit.help.text"
+msgid "MediaWiki Formats"
+msgstr "Formáty MediaWiki"
+
+#: wikiformats.xhp#hd_id3743095.help.text
+msgctxt "wikiformats.xhp#hd_id3743095.help.text"
+msgid "MediaWiki Formats"
+msgstr "Formáty MediaWiki"
+
+#: wikiformats.xhp#par_id8654133.help.text
+msgid ""
+"The following list gives an overview of the text formats that the "
+"@WIKIEXTENSIONPRODUCTNAME@ can upload to the Wiki server."
+msgstr ""
+"Následující seznam poskytuje přehled textových formátů, které může "
+"@WIKIEXTENSIONPRODUCTNAME@ odeslat na server Wiki."
+
+#: wikiformats.xhp#par_id5630664.help.text
+msgid ""
+"The OpenDocument format used by Writer and the WikiMedia format are quite "
+"different. Only a subset of all features can be transformed from one format "
+"to the other."
+msgstr ""
+"Formát OpenDocument, používaný ve Writeru, a formát MediaWiki se od sebe "
+"výrazně liší. Z jednoho formátu do druhého lze převést jen část vlastností."
+
+#: wikiformats.xhp#hd_id7178868.help.text
+msgid "Headings"
+msgstr "Nadpisy"
+
+#: wikiformats.xhp#par_id508133.help.text
+msgid ""
+"Apply a heading paragraph style to the headings in your Writer document. The "
+"Wiki will show the heading styles of the same outline level, formatted as "
+"defined by the Wiki engine."
+msgstr ""
+"Použije na nadpisy v textovém dokumentu styl nadpisů. Ve Wiki se nadpisy "
+"zobrazí ve formátu určeném aplikací Wiki."
+
+#: wikiformats.xhp#hd_id7217627.help.text
+msgid "Hyperlinks"
+msgstr "Hypertextové odkazy"
+
+#: wikiformats.xhp#par_id3735465.help.text
+msgid ""
+"Native OpenDocument hyperlinks are transformed into \"external\" Wiki links. "
+"Therefore, the built-in linking facility of OpenDocument should only be used "
+"to create links that point to other sites outside the Wiki web. For "
+"creating Wiki links that point to other subjects of the same Wiki domain, "
+"use Wiki links."
+msgstr ""
+"Nativní hypertextové odkazy OpenDocument se převedou na \"externí\" Wiki "
+"odkazy. Vestavěnou podporu odkazů v OpenDocumentu tedy využívejte jen pro "
+"vytváření odkazů na stránky mimo Wiki web. Pro vytvoření Wiki odkazů, které "
+"odkazují na jiné články na stejné Wiki doméně, použijte Wiki odkazy."
+
+#: wikiformats.xhp#hd_id941190.help.text
+msgid "Lists"
+msgstr "Seznamy"
+
+#: wikiformats.xhp#par_id8942838.help.text
+msgid ""
+"Lists can reliably be exported when the whole list uses a consistent list "
+"style. Use the Numbering or Bullets icon to generate a list in Writer. If "
+"you need a list without numbering or bullets, use Format - Bullets and "
+"Numbering to define and apply the respective list style."
+msgstr ""
+"Seznamy lze spolehlivě převést, pokud celý seznam používá jednotný styl. Ve "
+"Writeru vytvořete seznam pomocí ikony Číslování a odrážky. Pokud potřebujete "
+"seznam bez číslování či odrážek, nastavte požadovaný styl v dialogu Formát "
+"- Číslování a odrážky."
+
+#: wikiformats.xhp#hd_id7026886.help.text
+msgid "Paragraphs"
+msgstr "Odstavce"
+
+#: wikiformats.xhp#hd_id4436475.help.text
+msgid "Alignment"
+msgstr "Zarovnání"
+
+#: wikiformats.xhp#par_id376598.help.text
+msgid ""
+"Explicit text alignment should not be used in Wiki articles. Nevertheless, "
+"text alignment is supported for left, centered, and right alignment of text."
+msgstr ""
+"Ve Wiki článcích by nemělo být použito explicitní zarovnání textu. Nicméně "
+"je podporováno zarovnání textu vlevo, na střed a vpravo."
+
+#: wikiformats.xhp#hd_id7486190.help.text
+msgid "Pre-formatted text"
+msgstr "Předformátovaný text"
+
+#: wikiformats.xhp#par_id1459395.help.text
+msgid ""
+"A paragraph style with a fixed-width font is transformed as pre-formatted "
+"text. Pre-formatted text is shown on the Wiki with a border around the text."
+msgstr ""
+"Odstavec s písmem pevné šířky se převede na předformátovaný text. Ten se ve "
+"Wiki zobrazí s okrajem kolem textu."
+
+#: wikiformats.xhp#hd_id4834131.help.text
+msgid "Character styles"
+msgstr "Styly znaků"
+
+#: wikiformats.xhp#par_id6397595.help.text
+msgid ""
+"Character styles modify the appearance of parts of a paragraph. The "
+"transformation supports bold, italics, bold/italics, subscript and "
+"superscript. All fixed width fonts are transformed into the Wiki typewriter "
+"style."
+msgstr ""
+"Styly znaků upravují vzhled částí odstavce. Převod podporuje tučné písmo, "
+"kurzívu, tučnou kurzívu, horní a dolní index. Všechna písma s pevnou šířkou "
+"se převedou na styl s pevnou šířku znaků."
+
+#: wikiformats.xhp#hd_id5152745.help.text
+msgid "Footnotes"
+msgstr "Poznámky pod čarou"
+
+#: wikiformats.xhp#par_id5238196.help.text
+msgid ""
+"Note: The transformation uses the new style of footnotes with <ref> and "
+"<references> tags that requires the Cite.php extension to be installed into "
+"MediaWiki. If those tags occur as plain text in the transformation result, "
+"ask the Wiki administrator to install this extension."
+msgstr ""
+"Poznámka: Převod používá nový styl poznámek se značkami <ref> a "
+"<references>, pro které je potřeba do MediaWiki doinstalovat rozšíření "
+"Cite.php. Pokud se ve výsledném textu zobrazí přímo tyto značky, požádejte "
+"administrátora Wiki o instalaci tohoto rozšíření."
+
+#: wikiformats.xhp#hd_id9405499.help.text
+msgid "Images"
+msgstr "Obrázky"
+
+#: wikiformats.xhp#par_id3541673.help.text
+msgid ""
+"Images cannot be exported by a transformation producing a single file of "
+"Wiki text. However, if the image is already uploaded to the target Wiki "
+"domain (e. g. WikiMedia Commons), then the transformation produces a valid "
+"image tag that includes the image. Image captions are also supported."
+msgstr ""
+"Obrázky nelze exportovat, protože převod vytváří pouze jeden soubor s Wiki "
+"textem. Ovšem pokud už jsou obrázky nahrány na cílové Wiki doméně (např. "
+"WikiMedia Commons), převod vytvoří správnou značku pro obrázek. Jsou "
+"podporovány také popisky obrázků."
+
+#: wikiformats.xhp#hd_id2162236.help.text
+msgid "Tables"
+msgstr "Tabulky"
+
+#: wikiformats.xhp#par_id3037202.help.text
+msgid ""
+"Simple tables are supported well. Table headers are translated into "
+"corresponding Wiki style table headers. However, custom formatting of table "
+"borders, column sizes and background colors is ignored."
+msgstr ""
+"Jednoduché tabulky jsou podporovány dobře. Záhlaví tabulky se změní na "
+"odpovídající Wiki styl pro záhlaví tabulky. Ovšem ignoruje se uživatelské "
+"nastavení okrajů tabulky, šířky sloupců a barvy pozadí."
+
+#: wikiformats.xhp#hd_id2954496.help.text
+msgid "Joined Cells"
+msgstr "Spojené buňky"
+
+#: wikiformats.xhp#par_id8253730.help.text
+msgid ""
+"OpenDocument and especially OpenOffice.org represent tables that have joined "
+"cells that span rows as tables with nested tables. In contrast, the wiki "
+"model of table is to declare column and row spans for such joined cells. "
+msgstr ""
+"OpenDocument a OpenOffice.org vytváří tabulky, které obsahují buňky spojené "
+"přes více řádků, jako tabulku s vnořenou tabulkou. Naopak Wiki model tabulek "
+"označuje spojení řádků nebo sloupců."
+
+#: wikiformats.xhp#par_id8163090.help.text
+msgid ""
+"If only columns of the same row are joined, the result of the transformation "
+"resembles the source document very well."
+msgstr ""
+"Pokud jsou spojeny sloupce v jednom řádku, výsledná tabulka je velmi podobná "
+"zdrojovému dokumentu."
+
+#: wikiformats.xhp#hd_id425122.help.text
+msgid "Borders"
+msgstr "Okraje"
+
+#: wikiformats.xhp#par_id1831110.help.text
+msgid ""
+"Irrespective of custom table styles for border and background, a table is "
+"always exported as \"<emph>prettytable\"</emph>, which renders in the Wiki "
+"engine with simple borders and bold header."
+msgstr ""
+"Bez ohledu na uživatelské nastavení stylů okrajů a pozadí se tabulka vždy "
+"exportuje jako  \"<emph>prettytable\"</emph>, která se ve Wiki vykreslí jako "
+"obyčejná tabulka s tučným záhlavím."
+
+#: wikiformats.xhp#hd_id6255073.help.text
+msgid "Charset and special characters"
+msgstr "Znakové sady a speciání znaky"
+
+#: wikiformats.xhp#par_id8216193.help.text
+msgid ""
+"The charset of the transformation result is fixed to UTF-8. Depending on "
+"your system, this might not be the default charset. This might cause "
+"\"special characters\" to look broken when viewed with default settings. "
+"However, you can switch your editor to UTF-8 encoding to fix this. If your "
+"editor does not support switching the encoding, you can display the result "
+"of the transformation in the Firefox browser and switch the encoding to "
+"UTF-8 there. Now, you can cut and paste the transformation result to your "
+"program of choice."
+msgstr ""
+"Znaková sada exportovaného souboru je pevně nastavena na UTF-8. Ve vašem "
+"systému to nemusí být výchozí znaková sada. Pokud soubor otevřete v textovém "
+"editoru s výchozím nastavením, mohou \"speciální znaky\" vypadat jinak. Stačí "
+"ale přepnout editor na kódování UTF-8. Pokud váš textový editor nepodporuje "
+"změnu kódování, můžete si výsledek prohlédnout např. ve Firefoxu a přepnout "
+"se na UTF-8 tam. Výsledek transformace můžete zkopírovat a vložit do "
+"libovolné aplikace."
+
+#: wikisend.xhp#tit.help.text
+msgctxt "wikisend.xhp#tit.help.text"
+msgid "Send to MediaWiki"
+msgstr "Odeslat do MediaWiki"
+
+#: wikisend.xhp#hd_id108340.help.text
+msgctxt "wikisend.xhp#hd_id108340.help.text"
+msgid "Send to MediaWiki"
+msgstr "Odeslat do MediaWiki"
+
+#: wikisend.xhp#par_id1743827.help.text
+msgid ""
+"In the Send to MediaWiki dialog, specify the settings for your current Wiki "
+"upload."
+msgstr ""
+"V dialogu Odeslat do MediaWiki nastavíte volby pro odeslání článku do Wiki."
+
+#: wikisend.xhp#par_id664082.help.text
+msgid ""
+"<ahelp hid=\".\">Select the MediaWiki server where you want to publish your "
+"document. Click Add to add a new server to the list.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">Zvolte server MediaWiki, na kterém chcete uveřejnit svůj "
+"dokument. Klepnutím na tlačítko Přidat můžete přidat nový server do "
+"seznamu.</ahelp>"
+
+#: wikisend.xhp#par_id2794885.help.text
+msgid ""
+"<ahelp hid=\".\">Enter the title of your Wiki entry. This is the top heading "
+"of your Wiki entry. For a new entry, the title must be unique on this Wiki. "
+"If you enter an existing title, your upload will overwrite the existing Wiki "
+"entry.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">Zadejte nadpis svého Wiki článku. Pokud chcete vytvořit nový "
+"článek, nesmí existovat článek se stejným názvem. Pokud zadáte existující "
+"název, odeslaný soubor přepíše existující Wiki záznam.</ahelp>"
+
+#: wikisend.xhp#par_id2486342.help.text
+msgid ""
+"<ahelp hid=\".\">Enter an optional short summary or comment.</ahelp> See <link "
+"href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\">http://meta.wikimed"
+"ia.org/wiki/Help:Edit_summary</link>."
+msgstr ""
+"<ahelp hid=\".\">Můžete zadat krátký souhrn nebo komentář.</ahelp> Viz také "
+"<link href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\">http://meta.wi"
+"kimedia.org/wiki/Help:Edit_summary</link>."
+
+#: wikisend.xhp#par_id823999.help.text
+msgid ""
+"<emph>This is a minor edit</emph>: <ahelp hid=\".\">Check this box to mark the "
+"uploaded page as a minor edit of the already existing page with the same "
+"title.</ahelp>"
+msgstr ""
+"<emph>Toto je malá úprava</emph>: <ahelp hid=\".\">Zaškrtněte toto pole, pokud "
+"je odesílaná stránka jen malou úpravou existující stránky.</ahelp>"
+
+#: wikisend.xhp#par_id6592913.help.text
+msgid ""
+"<emph>Show in web browser</emph>: <ahelp hid=\".\">Check this box to open your "
+"system web browser and show the uploaded Wiki page.</ahelp>"
+msgstr ""
+"<emph>Zobrazit v prohlížeči</emph>: <ahelp hid=\".\">Zaškrtněte toto pole, "
+"pokud chcete odeslanou Wiki stránku otevřít ve webovém prohlížeči.</ahelp>"
+
+#: wikisettings.xhp#tit.help.text
+msgctxt "wikisettings.xhp#tit.help.text"
+msgid "MediaWiki Options"
+msgstr "Volby MediaWiki"
+
+#: wikisettings.xhp#hd_id6425672.help.text
+msgctxt "wikisettings.xhp#hd_id6425672.help.text"
+msgid "MediaWiki Options"
+msgstr "Volby MediaWiki"
+
+#: wikisettings.xhp#par_id1188390.help.text
+msgid ""
+"You can add, edit and remove MediaWiki servers. Open the dialog by <item "
+"type=\"menuitem\">Tools - Options - Internet - MediaWiki</item>. "
+"Alternatively, choose <item type=\"menuitem\">Tools - Extension "
+"Manager</item>, select the @WIKIEXTENSIONPRODUCTNAME@, and click the Options "
+"button."
+msgstr ""
+"Můžete přidávat, upravovat a odebírat servery MediaWiki. Dialog otevřete "
+"příkazem <item type=\"menuitem\">Nástroje - Volby - Internet - "
+"MediaWiki</item>. Také můžete vybrat <item type=\"menuitem\">Nástroje - "
+"Správce rozšíření</item>, označit @WIKIEXTENSIONPRODUCTNAME@ a klepnout na "
+"tlačítko Volby."
+
+#: wikisettings.xhp#par_id300607.help.text
+msgid ""
+"<ahelp hid=\".\">Click Add to add a new Wiki server.<br/>Select an entry and "
+"click Edit to edit the account settings.<br/>Select an entry and click "
+"Remove to remove the entry from the list.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">Pro přidání nového Wiki serveru klepněte na Přidat.<br/>Pro "
+"úpravu nastavení označte server a klepněte na Upravit.<br/>Pro odebrání "
+"serveru ze seznamu označte server a klepněte na Odebrat.</ahelp>"
+
+#: wikisettings.xhp#par_id9786065.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Opens the MediaWiki dialog to add a new "
+"entry to the list.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">Otevře dialog MediaWiki pro přidání "
+"nového serveru do seznamu.</ahelp>"
+
+#: wikisettings.xhp#par_id3386333.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Opens the MediaWiki dialog to edit the "
+"selected entry.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">Otevře dialog MediaWiki pro úpravu "
+"vybraného serveru.</ahelp>"
+
+#: wikisettings.xhp#par_id7285073.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Removes the selected entry from the "
+"list.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">Odebere vybraný server ze "
+"seznamu.</ahelp>"
+
+#: wikisettings.xhp#par_id1029084.help.text
+msgid ""
+"When you click Add or Edit, the <link "
+"href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> dialog opens."
+msgstr ""
+"Když klepnete na Přidat nebo Upravit, otevře se dialog <link "
+"href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link>."
+"X-Accelerator-Marker: ~\n"
+
+#: Addons.xcu#.Addons.AddonUI.OfficeMenuBarMerging.com.sun.star.wiki.S1.MenuItems.M2.Title.value.text
+msgid "To Media~Wiki..."
+msgstr "Do Media~Wiki..."
+
+#: OptionsDialog.xcu#.OptionsDialog.Nodes.Internet.Leaves.com.sun.star.wiki.options.Label.value.text
+msgid "MediaWiki"
+msgstr "MediaWiki"
+"X-Accelerator-Marker: ~\n"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.GeneralSendError.value.text
+msgid "The operation 'Send to MediaWiki' could not be completed successfully."
+msgstr "Operaci 'Odeslat do MediaWiki' se nepodařilo úspěšně dokončit."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.NoWikiFilter.value.text
+msgid ""
+"The MediaWiki export filter cannot be found. Choose 'Tools-XML Filter "
+"Settings' to install the filter, or use the setup to install the component."
+msgstr ""
+"Nebyl nalezen filtr pro export do MediaWiki. Nainstalujte filtr pomocí 'N"
+"ástroje-Nastavení XML filtru' nebo pomocí instalátoru přidejte potřebnou "
+"součást."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.NoConnectionToURL.value.text
+msgid "A connection to the MediaWiki system at '$ARG1' could not be created."
+msgstr "Nelze vytvořit spojení s MediaWiki systémem na '$ARG1'."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.WrongLogin.value.text
+msgid ""
+"User name or password is incorrect. Please try again, or leave the fields "
+"blank for an anonymous connection."
+msgstr ""
+"Neplatné uživatelské jméno nebo heslo. Zkuste to prosím znovu, nebo ponechte "
+"pole prázdná pro anonymní připojení."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.InvalidURL.value.text
+msgid "A connection could not be created because the URL is invalid."
+msgstr "Nelze vytvořit spojení, protože URL je neplatné."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.NoURL.value.text
+msgid "Specify a MediaWiki server by providing a URL."
+msgstr "Pomocí URL určete server MediaWiki."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.CancelSending.value.text
+msgid ""
+"The transfer has been interrupted. Please check the integrity of the wiki "
+"article."
+msgstr "Přenos byl přerušen. Prosím, zkontrolujte článek na wiki."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_UrlLabel.value.text
+msgid "U~RL"
+msgstr "U~RL"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_UsernameLabel.value.text
+msgid "~Username"
+msgstr "Uživatelské jméno"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_PasswordLabel.value.text
+msgid "~Password"
+msgstr "Heslo"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendTitle.value.text
+msgid "Send to MediaWiki"
+msgstr "Odeslat do MediaWiki"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_WikiArticle.value.text
+msgid "Wiki article"
+msgstr "Wiki článek"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_No.value.text
+msgid "No"
+msgstr "Ne"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_OK.value.text
+msgid "OK"
+msgstr "OK"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_Yes.value.text
+msgid "Yes"
+msgstr "Ano"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_AddButton.value.text
+msgid "~Add..."
+msgstr "Přidat..."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditButton.value.text
+msgid "~Edit..."
+msgstr "Upravit..."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendButton.value.text
+msgid "~Send"
+msgstr "Odeslat"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_RemoveButton.value.text
+msgid "~Remove"
+msgstr "Odstranit"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_NewWikiPage_Label1.value.text
+msgid ""
+"A wiki article with the title '$ARG1' does not exist yet. Do you want to "
+"create a new article with that name?"
+msgstr ""
+"Wiki článek s nadpisem  '$ARG1' ještě neexistuje. Chcete vytvořit nový "
+"článek s tímto nadpisem?"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_Label1.value.text
+msgid "Media~Wiki Server"
+msgstr "Server Media~Wiki"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_Label2.value.text
+msgid "~Title"
+msgstr "Nadpis"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_Label3.value.text
+msgid "S~ummary"
+msgstr "Souhrn"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_MinorCheck.value.text
+msgid "This is a ~minor edit"
+msgstr "Toto je malá úprava"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_BrowserCheck.value.text
+msgid "Show in web ~browser"
+msgstr "Zobrazit v prohlížeči"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.UnknownCert.value.text
+msgid "The certificate of the selected site is unknown."
+msgstr "Certifikát zvolené stránky není znám."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_MediaWiki_Title.value.text
+msgid "MediaWiki"
+msgstr "MediaWiki"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_AccountLine.value.text
+msgid "Account"
+msgstr "Účet"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_WikiLine.value.text
+msgid "MediaWiki Server"
+msgstr "Server MediaWiki"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_SaveBox.value.text
+msgid "~Save password"
+msgstr "Uložit heslo"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_MediaWiki_Extension_String.value.text
+msgid "@WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_WikiPageExists_Label1.value.text
+msgid ""
+"A wiki article with the title '$ARG1' already exists.&#13;&#13;Do you want "
+"to replace the current article with your article?&#13;&#13;"
+msgstr ""
+"Wiki článek s názvem '$ARG1' již exustuje.&#13;&#13;Chcete aktuální článek "
+"nahradit svým článkem?&#13;&#13;"

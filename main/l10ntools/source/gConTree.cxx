@@ -35,7 +35,7 @@ convert_tree::convert_tree(l10nMem& crMemory) : convert_gen_impl(crMemory)
 {
 // extension,     program,     parameter,          collectMode, xxx
 // ".tree",       "xhtex",     "",                 "negative",  "noiso"
-  throw std::string("convert_tree not implemented");
+  throw mcMemory.showError(std::string("convert_tree not implemented"));
 }
 
 
@@ -50,5 +50,5 @@ convert_tree::~convert_tree()
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_tree::execute()
 {
-  throw std::string("convert_tree::execute not implemented");
+  throw mcMemory.showError(std::string("convert_tree::execute not implemented"));
 }

@@ -1,0 +1,272 @@
+
+#: crashrep.ulf#_WELCOME_CAPTION_.LngText.text
+msgctxt "crashrep.ulf#_WELCOME_CAPTION_.LngText.text"
+msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "Oznámení chyby %PRODUCTNAME% %PRODUCTVERSION%"
+
+#: crashrep.ulf#_WELCOME_HEADER_.LngText.text
+msgid "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "Vítejte v nástroji pro oznamování chyb %PRODUCTNAME% %PRODUCTVERSION%"
+
+#: crashrep.ulf#_WELCOME_BODY1_.LngText.text
+msgid ""
+"This error report tool gathers information about how %PRODUCTNAME% is "
+"working and sends it to Oracle to help improve future versions.\n"
+"\n"
+msgstr ""
+"Tento systém pro hlášení chyb shromažďuje informace o funkci %PRODUCTNAME% a "
+"zasílá je firmě Oracle, aby bylo možné vylepšit další verze.\n"
+"\n"
+
+#: crashrep.ulf#_WELCOME_BODY2_.LngText.text
+msgid ""
+"It's easy - just send the report without any further effort on your part by "
+"clicking 'Send' in the next dialog, or you can briefly describe how the "
+"error occurred and then click 'Send'. If you want to see the report, click "
+"the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n"
+"\n"
+msgstr ""
+"Je to snadné, stačí zprávu odeslat klepnutím na tlačítko 'Odeslat' v "
+"následujícím dialogu. Případně můžete popsat, jak k chybě došlo a teprve "
+"potom hlášení odeslat. Pokud chcete vidět jaká data se odesílají klepněte na "
+"tlačítko 'Zobrazit hlášení'. Pokud klepnete na 'Neodesílat', žádné "
+"informace odeslány nebudou.\n"
+"\n"
+
+#: crashrep.ulf#_WELCOME_BODY3_.LngText.text
+msgid ""
+"Customer Privacy\n"
+"The information gathered is limited to data concerning the state of %"
+"PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information "
+"about passwords or document contents is not collected.\n"
+"\n"
+"The information will only be used to improve the quality of %PRODUCTNAME% "
+"and will not be shared with third parties.\n"
+"For more information on Oracle's privacy policy, visit\n"
+msgstr ""
+"Ochrana soukromí\n"
+"Získáváme pouze informace o stavu %PRODUCTNAME% %PRODUCTVERSION% v okamžiku "
+"vzniku chyby. Žádné další informace, jako např. hesla nebo obsah editovaných "
+"dokumentů, nejsou získávány.\n"
+"\n"
+"Informace budou použity výhradně pro zlepšení kvality %PRODUCTNAME% a "
+"nebudou poskytnuty třetím stranám.\n"
+"Více informací o ochraně soukromí společností Oracle je možné získat na "
+"adrese\n"
+
+#: crashrep.ulf#_PRIVACY_URL_.LngText.text
+msgid "http://www.oracle.com/html/services-privacy-policy.html"
+msgstr "http://www.oracle.com/html/services-privacy-policy.html"
+
+#: crashrep.ulf#_NEXT_BUTTON_.LngText.text
+msgid "~Next >>"
+msgstr "Další >>"
+
+#: crashrep.ulf#_CANCEL_BUTTON_.LngText.text
+msgid "Cancel"
+msgstr "Zrušit"
+
+#: crashrep.ulf#_OK_BUTTON_.LngText.text
+msgid "OK"
+msgstr "OK"
+
+#: crashrep.ulf#_REPORT_CAPTION_.LngText.text
+msgctxt "crashrep.ulf#_REPORT_CAPTION_.LngText.text"
+msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "Oznámení chyby %PRODUCTNAME% %PRODUCTVERSION%"
+
+#: crashrep.ulf#_REPORT_HEADER_.LngText.text
+msgid "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
+msgstr "Při běhu %PRODUCTNAME% %PRODUCTVERSION% došlo k chybě"
+
+#: crashrep.ulf#_REPORT_BODY_.LngText.text
+msgid ""
+"The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information "
+"that could help Oracle improve %PRODUCTNAME%.\n"
+"In the spaces below, you can enter a title for your crash report and "
+"describe the action you were trying to carry out when the error occurred. "
+"Then click 'Send'.\n"
+msgstr ""
+"Byly získány informace o %PRODUCTNAME% %PRODUCTVERSION%, které napomohou "
+"zlepšení příštích verzí %PRODUCTNAME%.\n"
+"Nyní můžete vyplnit titulek chybového hlášení a popsat, jak k chybě došlo, "
+"jaká akce měla být provedena, když došlo k chybě. Potom klepněte na tlačítko "
+"'Odeslat'.\n"
+
+#: crashrep.ulf#_ENTER_TITLE_.LngText.text
+msgid ""
+"Which type of document (e.g. presentation) were you using when the error "
+"occurred?"
+msgstr ""
+"S jakým typem dokumentu (například prezentace) jste pracoval když došlo k "
+"chybě?"
+
+#: crashrep.ulf#_ALLOW_CONTACT_.LngText.text
+msgid "~I allow Oracle to contact me regarding this report."
+msgstr "Mohu být Oraclem kontaktován ohledně tohoto oznámení."
+
+#: crashrep.ulf#_ENTER_EMAIL_.LngText.text
+msgid "Please enter your e-mail address."
+msgstr "Zadejte, prosím, vaši adresu elektronické pošty."
+
+#: crashrep.ulf#_ENTER_DESCRIPTION_.LngText.text
+msgid "~How were you using %PRODUCTNAME% when the error occurred ?"
+msgstr "Jak jste používali %PRODUCTNAME% předtím, než došlo k chybě?"
+
+#: crashrep.ulf#_BACK_BUTTON_.LngText.text
+msgid " << ~Back"
+msgstr " << Zpět"
+
+#: crashrep.ulf#_SEND_BUTTON_.LngText.text
+msgid "S~end"
+msgstr "Odeslat"
+
+#: crashrep.ulf#_DONOT_SEND_BUTTON_.LngText.text
+msgid "Do ~Not Send"
+msgstr "Neodesílat"
+
+#: crashrep.ulf#_SHOW_REPORT_BUTTON_.LngText.text
+msgid "Show ~Report..."
+msgstr "Zobrazit oznámení chyby..."
+
+#: crashrep.ulf#_SAVE_REPORT_BUTTON_.LngText.text
+msgid "~Save Report..."
+msgstr "Uložit oznámení chyby..."
+
+#: crashrep.ulf#_SAVE_REPORT_TITLE_.LngText.text
+msgid "Save Report to"
+msgstr "Uložit oznámení chyby do"
+
+#: crashrep.ulf#_ERROR_MSG_SIMPLE_MAPI_.LngText.text
+msgid ""
+"The error report could not be sent because the default e-mail program does "
+"not support MAPI.\n"
+" Please use a MAPI-compatible e-mail program."
+msgstr ""
+"Chybové hlášení nemohlo být odesláno, protože výchozí klient elektronické "
+"pošty nepodporuje rozhraní MAPI.\n"
+"Použijte, prosím, klient, který je s rozhraním MAPI kompatibilní."
+
+#: crashrep.ulf#_ERROR_MSG_DISK_FULL_.LngText.text
+msgid ""
+"The error report could not be temporarily saved and could therefore not be "
+"sent."
+msgstr ""
+"Oznámení o chybě nemohlo být dočasně uloženo, a proto nemohlo být odesláno."
+
+#: crashrep.ulf#_ERROR_MSG_SENDMAIL_.LngText.text
+msgid ""
+"The error report could not be sent because 'sendmail' could not be started.\n"
+"Please check the 'sendmail' settings."
+msgstr ""
+"Chybové hlášení nebylo odesláno, protože se nepodařilo spustit program "
+"sendmail.\n"
+"Překontrolujte, prosím, jeho konfiguraci."
+
+#: crashrep.ulf#_ERROR_MSG_PROXY_.LngText.text
+msgid ""
+"The error report could not be sent. Please check the proxy settings under "
+"'Options' in the Error Report Tool."
+msgstr ""
+"Oznámení o chybě nemohlo být odesláno, protože není k dispozici připojení k "
+"síti Internet. Zkontrolujte, prosím, nastavení serveru proxy v příkazu "
+"'Volby', nástroje pro oznamování chyb."
+
+#: crashrep.ulf#_ERROR_MSG_NOCONNECT_.LngText.text
+msgid ""
+"The error report could not be sent because there is no Internet connection. "
+"Please check your Internet settings."
+msgstr ""
+"Oznámení o chybě nemohlo být odesláno, protože není k dispozici připojení k "
+"síti Internet. Zkontrolujte, prosím, vaše nastavení Internetu."
+
+#: crashrep.ulf#_OPTIONS_BUTTON_.LngText.text
+msgid "~Options..."
+msgstr "Volby..."
+
+#: crashrep.ulf#_OPTIONS_TITLE_.LngText.text
+msgid "Options"
+msgstr "Volby"
+
+#: crashrep.ulf#_PROXY_SETTINGS_HEADER_.LngText.text
+msgid "Proxy settings"
+msgstr "Nastavení proxy"
+
+#: crashrep.ulf#_PROXY_SETTINGS_SYSTEM_.LngText.text
+msgid "Use ~system settings"
+msgstr "Použít nastavení systému"
+
+#: crashrep.ulf#_PROXY_SETTINGS_DIRECT_.LngText.text
+msgid "Use ~direct connection to the Internet"
+msgstr "Přímé připojení k síti Internet"
+
+#: crashrep.ulf#_PROXY_SETTINGS_MANUAL_.LngText.text
+msgid "Use ~manual settings"
+msgstr "Použít manuální nastavení"
+
+#: crashrep.ulf#_PROXY_SETTINGS_ADDRESS_.LngText.text
+msgid "HT~TP Proxy"
+msgstr "HTTP proxy"
+
+#: crashrep.ulf#_PROXY_SETTINGS_PORT_.LngText.text
+msgid "~Port"
+msgstr "Port"
+
+#: crashrep.ulf#_PROXY_SETTINGS_DESCRIPTION_.LngText.text
+msgid ""
+"The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to "
+"be able to send error reports.\n"
+"\n"
+"Companies often use proxy servers in conjunction with a firewall to protect "
+"the network.\n"
+"\n"
+"If this applies to your situation, you have to specify the address and port "
+"for the server."
+msgstr ""
+"Nástroj pro hlášení chyb %PRODUCTNAME% potřebuje pro svou funkci připojení "
+"na Internet.\n"
+"\n"
+"Firmy často používají pro připojení proxy servery a firewally.\n"
+"\n"
+"Pokud to platí i pro vaši síť, musíte zadat adresu a port proxy serveru."
+
+#: crashrep.ulf#_SENDING_REPORT_HEADER_.LngText.text
+msgid "Sending Error Report"
+msgstr "Odeslání oznámení chyby"
+
+#: crashrep.ulf#_SENDING_REPORT_STATUS_.LngText.text
+msgid "Status: Sending error report"
+msgstr "Stav: Odesílám oznámení o chybě."
+
+#: crashrep.ulf#_SENDING_REPORT_STATUS_FINISHED_.LngText.text
+msgid "Status: The error report has been sent successfully."
+msgstr "Stav: Oznámení chyby bylo úspěšně odesláno."
+
+#: crashrep.ulf#_ERROR_MSG_NOEMAILADDRESS_.LngText.text
+msgid ""
+"You have marked the option 'I allow Oracle to contact me regarding this "
+"report.'\n"
+"Please enter your e-mail address."
+msgstr ""
+"Zvolil jste variantu 'Mohu být Oraclem kontaktován ohledně tohoto oznámení.'\n"
+"Zadejte, prosím, vaši adresu elektronické pošty."
+
+#: crashrep.ulf#_MSG_CMDLINE_USAGE_.LngText.text
+msgid "Usage:"
+msgstr "Použití:"
+
+#: crashrep.ulf#_MSG_PARAM_PROCESSID_.LngText.text
+msgid "-p <process ID>"
+msgstr "-p <ID procesu>"
+
+#: crashrep.ulf#_MSG_PARAM_PROCESSID_DESCRIPTION_.LngText.text
+msgid "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
+msgstr "Přiřadí ID procesu %PRODUCTNAME% (PID) nástroji pro oznamování chyb."
+
+#: crashrep.ulf#_MSG_PARAM_HELP_DESCRIPTION_.LngText.text
+msgid ""
+"Shows this help text.\n"
+"Detailed information can be found in the Setup Guide."
+msgstr ""
+"Zobrazí tento pomocný text.\n"
+"Detailní informace naleznete v Instalačním příručce."

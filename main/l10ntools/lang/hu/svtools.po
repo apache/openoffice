@@ -1,0 +1,3733 @@
+
+#: roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_WELCOME.string.text
+msgid "Welcome"
+msgstr "Üdvözlet"
+
+#: roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_PREPARE.string.text
+msgid "Prepare"
+msgstr "Előkészítés"
+
+#: roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_SETUP.string.text
+msgid "Setup"
+msgstr "Telepítés"
+
+#: roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_FINISH.string.text
+msgid "Finish"
+msgstr "Befejezés"
+
+#: roadmapskeleton.src#DLG_ROADMAP_SKELETON.modaldialog.text
+msgid "Roadmap Skeleton Demo"
+msgstr "Roadmap Skeleton Demo"
+"X-Accelerator-Marker: ~\n"
+
+#: addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FL_DATASOURCEFRAME.fixedline.text
+msgid "Address Book Source"
+msgstr "Címjegyzék-adatforrás"
+
+#: addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_DATASOURCE.fixedtext.text
+msgid "Data source"
+msgstr "Adatforrás"
+
+#: addresstemplate.src#DLG_ADDRESSBOOKSOURCE.PB_ADMINISTATE_DATASOURCES.pushbutton.text
+msgid "~Address Data Source..."
+msgstr "~Címadatforrás..."
+
+#: addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_TABLE.fixedtext.text
+msgid "Table"
+msgstr "Adattábla"
+
+#: addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_FIELDS.fixedtext.text
+msgid "Field assignment"
+msgstr "Mező-hozzárendelés"
+
+#: addresstemplate.src#DLG_ADDRESSBOOKSOURCE.modaldialog.text
+msgid "Templates: Address Book Assignment"
+msgstr "Sablonok: címjegyzék hozzárendelése"
+
+#: addresstemplate.src#STR_NO_FIELD_SELECTION.string.text
+msgid "<none>"
+msgstr "<semmi>"
+
+#: addresstemplate.src#STR_FIELD_COMPANY.string.text
+msgid "Company"
+msgstr "Szervezet"
+
+#: addresstemplate.src#STR_FIELD_DEPARTMENT.string.text
+msgid "Department"
+msgstr "Részleg"
+
+#: addresstemplate.src#STR_FIELD_FIRSTNAME.string.text
+msgid "First name"
+msgstr "Utónév"
+
+#: addresstemplate.src#STR_FIELD_LASTNAME.string.text
+msgid "Last name"
+msgstr "Vezetéknév"
+
+#: addresstemplate.src#STR_FIELD_STREET.string.text
+msgid "Street"
+msgstr "Utca"
+
+#: addresstemplate.src#STR_FIELD_COUNTRY.string.text
+msgid "Country"
+msgstr "Ország"
+
+#: addresstemplate.src#STR_FIELD_ZIPCODE.string.text
+msgid "ZIP Code"
+msgstr "Irányítószám"
+
+#: addresstemplate.src#STR_FIELD_CITY.string.text
+msgid "City"
+msgstr "Város"
+
+#: addresstemplate.src#STR_FIELD_TITLE.string.text
+msgid "Title"
+msgstr "Cím"
+
+#: addresstemplate.src#STR_FIELD_POSITION.string.text
+msgid "Position"
+msgstr "Pozíció"
+
+#: addresstemplate.src#STR_FIELD_ADDRFORM.string.text
+msgid "Addr. Form"
+msgstr "Címűrlap"
+
+#: addresstemplate.src#STR_FIELD_INITIALS.string.text
+msgid "Initials"
+msgstr "Monogram"
+
+#: addresstemplate.src#STR_FIELD_SALUTATION.string.text
+msgid "Complimentary close"
+msgstr "Udvarias befejezés"
+
+#: addresstemplate.src#STR_FIELD_HOMETEL.string.text
+msgid "Tel: Home"
+msgstr "Otthoni tel:"
+
+#: addresstemplate.src#STR_FIELD_WORKTEL.string.text
+msgid "Tel: Work"
+msgstr "Mh. tel:"
+
+#: addresstemplate.src#STR_FIELD_FAX.string.text
+msgid "FAX"
+msgstr "Fax"
+
+#: addresstemplate.src#STR_FIELD_EMAIL.string.text
+msgid "E-mail"
+msgstr "E-mail"
+
+#: addresstemplate.src#STR_FIELD_URL.string.text
+msgid "URL"
+msgstr "URL"
+
+#: addresstemplate.src#STR_FIELD_NOTE.string.text
+msgid "Note"
+msgstr "Megjegyzés"
+
+#: addresstemplate.src#STR_FIELD_USER1.string.text
+msgid "User 1"
+msgstr "Felhasználói 1"
+
+#: addresstemplate.src#STR_FIELD_USER2.string.text
+msgid "User 2"
+msgstr "Felhasználói 2"
+
+#: addresstemplate.src#STR_FIELD_USER3.string.text
+msgid "User 3"
+msgstr "Felhasználói 3"
+
+#: addresstemplate.src#STR_FIELD_USER4.string.text
+msgid "User 4"
+msgstr "Felhasználói 4"
+
+#: addresstemplate.src#STR_FIELD_ID.string.text
+msgid "ID"
+msgstr "Azonosító"
+
+#: addresstemplate.src#STR_FIELD_STATE.string.text
+msgid "State"
+msgstr "Állam"
+
+#: addresstemplate.src#STR_FIELD_OFFICETEL.string.text
+msgid "Tel: Office"
+msgstr "Mh. tel:"
+
+#: addresstemplate.src#STR_FIELD_PAGER.string.text
+msgid "Pager"
+msgstr "Személyhívó"
+
+#: addresstemplate.src#STR_FIELD_MOBILE.string.text
+msgid "Mobile"
+msgstr "Mobil"
+
+#: addresstemplate.src#STR_FIELD_TELOTHER.string.text
+msgid "Tel: Other"
+msgstr "Egyéb tel:"
+
+#: addresstemplate.src#STR_FIELD_CALENDAR.string.text
+msgid "Calendar"
+msgstr "Naptár"
+
+#: addresstemplate.src#STR_FIELD_INVITE.string.text
+msgid "Invite"
+msgstr "Meghívás"
+
+#: filedlg2.src#STR_FILEDLG_SELECT.string.text
+msgid "Select Directory"
+msgstr "Könyvtár választása"
+
+#: filedlg2.src#STR_FILEDLG_CANTCHDIR.string.text
+msgid "Cannot change to directory"
+msgstr "Nem sikerült belépni a könyvtárba"
+
+#: filedlg2.src#STR_FILEDLG_OPEN.string.text
+msgid "Open"
+msgstr "Megnyitás"
+
+#: filedlg2.src#STR_FILEDLG_FILE.string.text
+msgid "~File"
+msgstr "~Fájl"
+
+#: filedlg2.src#STR_FILEDLG_DIR.string.text
+msgid "~Directory"
+msgstr "~Könyvtár"
+
+#: filedlg2.src#STR_FILEDLG_TYPE.string.text
+msgid "File ~type"
+msgstr "Fájl~típus"
+
+#: filedlg2.src#STR_FILEDLG_CANTOPENFILE.string.text
+msgid "Can't open file"
+msgstr "A fájl nem nyitható meg"
+
+#: filedlg2.src#STR_FILEDLG_CANTOPENDIR.string.text
+msgid "Can't open directory"
+msgstr "A könyvtár nem nyitható meg"
+
+#: filedlg2.src#STR_FILEDLG_OVERWRITE.string.text
+msgid ""
+"This file already exists. \n"
+"Overwrite ?"
+msgstr ""
+"A fájl már létezik.\n"
+"Felülírja?"
+
+#: filedlg2.src#STR_FILEDLG_GOUP.string.text
+msgid "Up One Level"
+msgstr "Egy szinttel feljebb"
+
+#: filedlg2.src#STR_FILEDLG_SAVE.string.text
+msgid "Save"
+msgstr "Mentés"
+
+#: filedlg2.src#STR_FILEDLG_DRIVES.string.text
+msgid "D~rive"
+msgstr "~Meghajtó"
+
+#: filedlg2.src#STR_FILEDLG_HOME.string.text
+msgid "User Directory"
+msgstr "Saját könyvtár"
+
+#: filedlg2.src#STR_FILEDLG_NEWDIR.string.text
+msgid "Create Directory"
+msgstr "Könyvtár létrehozása"
+
+#: filedlg2.src#STR_FILEDLG_ASKNEWDIR.string.text
+msgid "Do you want the directory %s to be created ?"
+msgstr "Létre kívánja hozni a(z) %s könyvtárat?"
+
+#: formats.src#STR_FORMAT_STRING.string.text
+msgid "Unformatted text"
+msgstr "Formázatlan szöveg"
+
+#: formats.src#STR_FORMAT_BITMAP.string.text
+msgid "Bitmap"
+msgstr "Bitkép"
+
+#: formats.src#STR_FORMAT_GDIMETAFILE.string.text
+msgid "GDI metafile"
+msgstr "GDI-metafájl"
+
+#: formats.src#STR_FORMAT_RTF.string.text
+msgid "Formatted text [RTF]"
+msgstr "Formázott szöveg [RTF]"
+
+#: formats.src#STR_FORMAT_ID_DRAWING.string.text
+msgid "Drawing format"
+msgstr "Rajzformátum"
+
+#: formats.src#STR_FORMAT_ID_SVXB.string.text
+msgid "SVXB (StarView bitmap/animation)"
+msgstr "SVXB (StarView-bitkép/animáció)"
+
+#: formats.src#STR_FORMAT_ID_INTERNALLINK_STATE.string.text
+msgid "Status Info from Svx Internal Link"
+msgstr "Állapot lekérdezése az Svx belső hivatkozáson keresztül"
+
+#: formats.src#STR_FORMAT_ID_SOLK.string.text
+msgid "SOLK (%PRODUCTNAME Link)"
+msgstr "SOLK (%PRODUCTNAME-kapcsolat)"
+
+#: formats.src#STR_FORMAT_ID_NETSCAPE_BOOKMARK.string.text
+msgid "Netscape Bookmark"
+msgstr "Netscape-könyvjelző"
+
+#: formats.src#STR_FORMAT_ID_STARSERVER.string.text
+msgid "Star server format"
+msgstr "Star-kiszolgálóformátum"
+
+#: formats.src#STR_FORMAT_ID_STAROBJECT.string.text
+msgid "Star object format"
+msgstr "Star-objektumformátum"
+
+#: formats.src#STR_FORMAT_ID_APPLETOBJECT.string.text
+msgid "Applet object"
+msgstr "Kisalkalmazás-objektum"
+
+#: formats.src#STR_FORMAT_ID_PLUGIN_OBJECT.string.text
+msgid "Plug-in object"
+msgstr "Bővítőmodul-objektum"
+
+#: formats.src#STR_FORMAT_ID_STARWRITER_30.string.text
+msgid "StarWriter 3.0 object"
+msgstr "StarWriter 3.0-objektum"
+
+#: formats.src#STR_FORMAT_ID_STARWRITER_40.string.text
+msgid "StarWriter 4.0 object"
+msgstr "StarWriter 4.0-objektum"
+
+#: formats.src#STR_FORMAT_ID_STARWRITER_50.string.text
+msgid "StarWriter 5.0 object"
+msgstr "StarWriter 5.0-objektum"
+
+#: formats.src#STR_FORMAT_ID_STARWRITERWEB_40.string.text
+msgid "StarWriter/Web 4.0 object"
+msgstr "StarWriter/Web 4.0-objektum"
+
+#: formats.src#STR_FORMAT_ID_STARWRITERWEB_50.string.text
+msgid "StarWriter/Web 5.0 object"
+msgstr "StarWriter/Web 5.0-objektum"
+
+#: formats.src#STR_FORMAT_ID_STARWRITERGLOB_40.string.text
+msgid "StarWriter/Master 4.0 object"
+msgstr "StarWriter/Master 4.0-objektum"
+
+#: formats.src#STR_FORMAT_ID_STARWRITERGLOB_50.string.text
+msgid "StarWriter/Master 5.0 object"
+msgstr "StarWriter/Master 5.0-objektum"
+
+#: formats.src#STR_FORMAT_ID_STARDRAW.string.text
+msgid "StarDraw object"
+msgstr "StarDraw-objektum"
+
+#: formats.src#STR_FORMAT_ID_STARDRAW_40.string.text
+msgid "StarDraw 4.0 object"
+msgstr "StarDraw 4.0-objektum"
+
+#: formats.src#STR_FORMAT_ID_STARIMPRESS_50.string.text
+msgid "StarImpress 5.0 object"
+msgstr "StarImpress 5.0-objektum"
+
+#: formats.src#STR_FORMAT_ID_STARDRAW_50.string.text
+msgid "StarDraw 5.0 object"
+msgstr "StarDraw 5.0-objektum"
+
+#: formats.src#STR_FORMAT_ID_STARCALC.string.text
+msgid "StarCalc object"
+msgstr "StarCalc-objektum"
+
+#: formats.src#STR_FORMAT_ID_STARCALC_40.string.text
+msgid "StarCalc  4.0 object"
+msgstr "StarCalc 4.0-objektum"
+
+#: formats.src#STR_FORMAT_ID_STARCALC_50.string.text
+msgid "StarCalc 5.0 object"
+msgstr "StarCalc 5.0-objektum"
+
+#: formats.src#STR_FORMAT_ID_STARCHART.string.text
+msgid "StarChart object"
+msgstr "StarChart-objektum"
+
+#: formats.src#STR_FORMAT_ID_STARCHART_40.string.text
+msgid "StarChart 4.0 object"
+msgstr "StarChart 4.0-objektum"
+
+#: formats.src#STR_FORMAT_ID_STARCHART_50.string.text
+msgctxt "formats.src#STR_FORMAT_ID_STARCHART_50.string.text"
+msgid "StarChart 5.0 object"
+msgstr "StarChart 5.0-objektum"
+
+#: formats.src#STR_FORMAT_ID_STARIMAGE.string.text
+msgid "StarImage object"
+msgstr "StarImage-objektum"
+
+#: formats.src#STR_FORMAT_ID_STARIMAGE_40.string.text
+msgid "StarImage 4.0 object"
+msgstr "StarImage 4.0-objektum"
+
+#: formats.src#STR_FORMAT_ID_STARIMAGE_50.string.text
+msgid "StarImage 5.0 object"
+msgstr "StarImage 5.0-objektum"
+
+#: formats.src#STR_FORMAT_ID_STARMATH.string.text
+msgid "StarMath object"
+msgstr "StarMath-objektum"
+
+#: formats.src#STR_FORMAT_ID_STARMATH_40.string.text
+msgid "StarMath 4.0 object"
+msgstr "StarMath 4.0-objektum"
+
+#: formats.src#STR_FORMAT_ID_STARMATH_50.string.text
+msgid "StarMath 5.0 object"
+msgstr "StarMath 5.0-objektum"
+
+#: formats.src#STR_FORMAT_ID_STAROBJECT_PAINTDOC.string.text
+msgid "StarObject Paint object"
+msgstr "StarObject Paint-objektum"
+
+#: formats.src#STR_FORMAT_ID_HTML.string.text
+msgid "HTML (HyperText Markup Language)"
+msgstr "HTML"
+
+#: formats.src#STR_FORMAT_ID_HTML_SIMPLE.string.text
+msgid "HTML format"
+msgstr "HTML formátum"
+
+#: formats.src#STR_FORMAT_ID_BIFF_5.string.text
+msgid "Biff5 (Microsoft Excel 5.0/95)"
+msgstr "Biff5 (Microsoft Excel 5.0/95)"
+
+#: formats.src#STR_FORMAT_ID_BIFF_8.string.text
+msgid "Biff8 (Microsoft Excel 97/2000/XP)"
+msgstr "Biff8 (Microsoft Excel 97/2000/XP)"
+
+#: formats.src#STR_FORMAT_ID_SYLK.string.text
+msgid "Sylk"
+msgstr "Sylk"
+
+#: formats.src#STR_FORMAT_ID_LINK.string.text
+msgid "DDE link"
+msgstr "DDE-kapcsolat"
+
+#: formats.src#STR_FORMAT_ID_DIF.string.text
+msgid "DIF"
+msgstr "DIF"
+
+#: formats.src#STR_FORMAT_ID_MSWORD_DOC.string.text
+msgid "Microsoft Word object"
+msgstr "Microsoft Word-objektum"
+
+#: formats.src#STR_FORMAT_ID_STAR_FRAMESET_DOC.string.text
+msgid "StarFrameSet object"
+msgstr "StarFrameSet-objektum"
+
+#: formats.src#STR_FORMAT_ID_OFFICE_DOC.string.text
+msgid "Office document object"
+msgstr "Office-dokumentumobjektum"
+
+#: formats.src#STR_FORMAT_ID_NOTES_DOCINFO.string.text
+msgid "Notes document info"
+msgstr "Notes-dokumentuminformáció"
+
+#: formats.src#STR_FORMAT_ID_SFX_DOC.string.text
+msgid "Sfx document"
+msgstr "Sfx-dokumentum"
+
+#: formats.src#STR_FORMAT_ID_STARCHARTDOCUMENT_50.string.text
+msgctxt "formats.src#STR_FORMAT_ID_STARCHARTDOCUMENT_50.string.text"
+msgid "StarChart 5.0 object"
+msgstr "StarChart 5.0-objektum"
+
+#: formats.src#STR_FORMAT_ID_GRAPHOBJ.string.text
+msgid "Graphic object"
+msgstr "Grafikus objektum"
+
+#: formats.src#STR_FORMAT_ID_STARWRITER_60.string.text
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer object"
+msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer-objektum"
+
+#: formats.src#STR_FORMAT_ID_STARWRITERWEB_60.string.text
+msgid ""
+"%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Web object"
+msgstr ""
+"%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Web-objektum"
+
+#: formats.src#STR_FORMAT_ID_STARWRITERGLOB_60.string.text
+msgid ""
+"%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Master object"
+msgstr ""
+"%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Master-"
+"objektum"
+
+#: formats.src#STR_FORMAT_ID_STARDRAW_60.string.text
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Draw object"
+msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Draw-objektum"
+
+#: formats.src#STR_FORMAT_ID_STARIMPRESS_60.string.text
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Impress object"
+msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Impress-objektum"
+
+#: formats.src#STR_FORMAT_ID_STARCALC_60.string.text
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Calc object"
+msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Calc-objektum"
+
+#: formats.src#STR_FORMAT_ID_STARCHART_60.string.text
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart object"
+msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION-diagramobjektum"
+
+#: formats.src#STR_FORMAT_ID_STARMATH_60.string.text
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Math object"
+msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Math-objektum"
+
+#: formats.src#STR_FORMAT_ID_WMF.string.text
+msgid "Windows metafile"
+msgstr "Windows-metafájl"
+
+#: formats.src#STR_FORMAT_ID_DBACCESS_QUERY.string.text
+msgid "Data source object"
+msgstr "Adatforrás-objektum"
+
+#: formats.src#STR_FORMAT_ID_DBACCESS_TABLE.string.text
+msgid "Data source table"
+msgstr "Adatforrástábla"
+
+#: formats.src#STR_FORMAT_ID_DBACCESS_COMMAND.string.text
+msgid "SQL query"
+msgstr "SQL-lekérdezés"
+
+#: formats.src#STR_FORMAT_ID_DIALOG_60.string.text
+msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION dialog"
+msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION-párbeszédablak"
+
+#: formats.src#STR_FORMAT_ID_FILEGRPDESCRIPTOR.string.text
+msgid "Link"
+msgstr "Hivatkozás"
+
+#: formats.src#STR_FORMAT_ID_HTML_NO_COMMENT.string.text
+msgid "HTML format without comments"
+msgstr "HTML formátum megjegyzések nélkül"
+
+#: prnsetup.src#STR_SVT_PRNDLG_READY.string.text
+msgid "Ready"
+msgstr "Kész"
+
+#: prnsetup.src#STR_SVT_PRNDLG_PAUSED.string.text
+msgid "Paused"
+msgstr "Felfüggesztve"
+
+#: prnsetup.src#STR_SVT_PRNDLG_PENDING.string.text
+msgid "Pending deletion"
+msgstr "Törlés folyamatban"
+
+#: prnsetup.src#STR_SVT_PRNDLG_BUSY.string.text
+msgid "Busy"
+msgstr "Foglalt"
+
+#: prnsetup.src#STR_SVT_PRNDLG_INITIALIZING.string.text
+msgid "Initializing"
+msgstr "Felkészülés"
+
+#: prnsetup.src#STR_SVT_PRNDLG_WAITING.string.text
+msgid "Waiting"
+msgstr "Várakozás"
+
+#: prnsetup.src#STR_SVT_PRNDLG_WARMING_UP.string.text
+msgid "Warming up"
+msgstr "Bemelegítés"
+
+#: prnsetup.src#STR_SVT_PRNDLG_PROCESSING.string.text
+msgid "Processing"
+msgstr "Feldolgozás"
+
+#: prnsetup.src#STR_SVT_PRNDLG_PRINTING.string.text
+msgid "Printing"
+msgstr "Nyomtatás"
+
+#: prnsetup.src#STR_SVT_PRNDLG_OFFLINE.string.text
+msgid "Offline"
+msgstr "Offline"
+
+#: prnsetup.src#STR_SVT_PRNDLG_ERROR.string.text
+msgid "Error"
+msgstr "Hiba"
+
+#: prnsetup.src#STR_SVT_PRNDLG_SERVER_UNKNOWN.string.text
+msgid "Unknown Server"
+msgstr "Ismeretlen kiszolgáló"
+
+#: prnsetup.src#STR_SVT_PRNDLG_PAPER_JAM.string.text
+msgid "Paper jam"
+msgstr "Papírelakadás"
+
+#: prnsetup.src#STR_SVT_PRNDLG_PAPER_OUT.string.text
+msgid "Not enough paper"
+msgstr "Nincs elég papír"
+
+#: prnsetup.src#STR_SVT_PRNDLG_MANUAL_FEED.string.text
+msgid "Manual feed"
+msgstr "Kézi adagolás"
+
+#: prnsetup.src#STR_SVT_PRNDLG_PAPER_PROBLEM.string.text
+msgid "Paper problem"
+msgstr "Papírhiba"
+
+#: prnsetup.src#STR_SVT_PRNDLG_IO_ACTIVE.string.text
+msgid "I/O active"
+msgstr "I/O-aktivitás"
+
+#: prnsetup.src#STR_SVT_PRNDLG_OUTPUT_BIN_FULL.string.text
+msgid "Output bin full"
+msgstr "A kimeneti tálca megtelt"
+
+#: prnsetup.src#STR_SVT_PRNDLG_TONER_LOW.string.text
+msgid "Toner low"
+msgstr "Kevés a festék"
+
+#: prnsetup.src#STR_SVT_PRNDLG_NO_TONER.string.text
+msgid "No toner"
+msgstr "Nincs festék"
+
+#: prnsetup.src#STR_SVT_PRNDLG_PAGE_PUNT.string.text
+msgid "Delete Page"
+msgstr "Oldal törlése"
+
+#: prnsetup.src#STR_SVT_PRNDLG_USER_INTERVENTION.string.text
+msgid "User intervention necessary"
+msgstr "Felhasználói beavatkozás szükséges"
+
+#: prnsetup.src#STR_SVT_PRNDLG_OUT_OF_MEMORY.string.text
+msgid "Insufficient memory"
+msgstr "Kevés a memória"
+
+#: prnsetup.src#STR_SVT_PRNDLG_DOOR_OPEN.string.text
+msgid "Cover open"
+msgstr "A fedél nyitva van"
+
+#: prnsetup.src#STR_SVT_PRNDLG_POWER_SAVE.string.text
+msgid "Power save mode"
+msgstr "Energiatakarékos üzemmód"
+
+#: prnsetup.src#STR_SVT_PRNDLG_DEFPRINTER.string.text
+msgid "Default printer"
+msgstr "Alapértelmezett nyomtató"
+
+#: prnsetup.src#STR_SVT_PRNDLG_JOBCOUNT.string.text
+msgid "%d documents"
+msgstr "%d dokumentum"
+
+#: prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FL_PRINTER.fixedline.text
+msgid "Printer"
+msgstr "Nyomtató"
+
+#: prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_NAME.fixedtext.text
+msgid "~Name"
+msgstr "~Név"
+
+#: prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.BTN_PROPERTIES.pushbutton.text
+msgid "Propert~ies..."
+msgstr "T~ulajdonságok..."
+
+#: prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_STATUS.fixedtext.text
+msgid "Status"
+msgstr "Állapot"
+
+#: prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_TYPE.fixedtext.text
+msgid "Type"
+msgstr "Típus"
+
+#: prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_LOCATION.fixedtext.text
+msgid "Location"
+msgstr "Hely"
+
+#: prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_COMMENT.fixedtext.text
+msgid "Comment"
+msgstr "Megjegyzés"
+
+#: prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.BTN_OPTIONS.pushbutton.text
+msgid "~Options..."
+msgstr "~Beállítások..."
+
+#: prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.modaldialog.text
+msgid "Printer Setup"
+msgstr "Nyomtató beállítása"
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_GENERALERROR_S_MAX.string.text
+msgid "General OLE error."
+msgstr "Általános OLE-hiba."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_CANT_BINDTOSOURCE_S_MAX.string.text
+msgid "The connection to the object cannot be established."
+msgstr "Nem létesíthető kapcsolat az objektummal."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOCACHE_UPDATED_S_MAX.string.text
+msgid "No cache files were updated."
+msgstr "A gyorsítótárfájlok nem lettek frissítve."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_SOMECACHES_NOTUPDATED_S_MAX.string.text
+msgid "Some cache files were not updated."
+msgstr "Egyes gyorsítótárfájlok aktualizálása nem történt meg."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_UNAVAILABLE_S_MAX.string.text
+msgid "Status of object cannot be determined in a timely manner."
+msgstr "Az objektum állapota jelenleg nem határozható meg ."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_E_CLASSDIFF_S_MAX.string.text
+msgid "Source of the OLE link has been converted."
+msgstr "Az OLE-hivatkozás forrása konvertálódott."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_OBJECT_S_MAX.string.text
+msgid "The object could not be found."
+msgstr "Az objektum nem található."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_EXCEEDED_DEADLINE_S_MAX.string.text
+msgid "The process could not be completed within the specified time period."
+msgstr "A folyamat nem fejeződött be a meghatározott időn belül."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_CONNECT_MANUALLY_S_MAX.string.text
+msgid "OLE could not connect to a network device (server)."
+msgstr "Az OLE nem tud csatlakozni egy hálózati eszközhöz (kiszolgálóhoz)."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_INTERMEDIATE_INTERFACE_NOT_SUPPORTED_S_MAX.string.text
+msgid ""
+"The object found does not support the interface required for the desired "
+"operation."
+msgstr ""
+"A megtalált objektum nem támogatja a kívánt művelethez szükséges interfészt."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NO_INTERFACE_S_MAX.string.text
+msgid "Interface not supported."
+msgstr "Az interfész nem támogatott."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_OUT_OF_MEMORY_S_MAX.string.text
+msgid "Insufficient memory."
+msgstr "Kevés a memória."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_SYNTAX_S_MAX.string.text
+msgid "The connection name could not be processed."
+msgstr "A kapcsolat nevét nem lehetett feldolgozni."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_REDUCED_TO_SELF_S_MAX.string.text
+msgid "The connection name could not be reduced further."
+msgstr "A kapcsolat neve tovább nem rövidíthető."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_INVERSE_S_MAX.string.text
+msgid "The connection name has no inverse."
+msgstr "A kapcsolat nevének nincs inverze."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_PREFIX_S_MAX.string.text
+msgid "No common prefix exists."
+msgstr "Nincs közös előtag."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_HIM_S_MAX.string.text
+msgctxt "so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_HIM_S_MAX.string.text"
+msgid "The connection name is contained in the other one."
+msgstr "A kapcsolat nevét a másik tartalmazza."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_US_S_MAX.string.text
+msgid ""
+"The connection names (the receiver and the other moniker) are identical."
+msgstr "A kapcsolatnevek (a fogadóé és a másik monikeré) megegyeznek."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_ME_S_MAX.string.text
+msgctxt "so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_ME_S_MAX.string.text"
+msgid "The connection name is contained in the other one."
+msgstr "A kapcsolat nevét a másik tartalmazza."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NOT_BINDABLE_S_MAX.string.text
+msgid "The connection name cannot be connected. This is a relative name."
+msgstr "A megadott kapcsolat nem jöhet létre. Ez egy relatív név."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOT_IMPLEMENTED_S_MAX.string.text
+msgid "Operation not implemented."
+msgstr "A művelet nincs implementálva."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_STORAGE_S_MAX.string.text
+msgid "No storage."
+msgstr "Nincs tároló."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_FALSE_S_MAX.string.text
+msgid "False."
+msgstr "Hamis."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NEED_GENERIC_S_MAX.string.text
+msgid "Monikers must be composed generically."
+msgstr "A monikereket általánosan kell megszerkeszteni."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_PENDING_S_MAX.string.text
+msgid "Data not available at this time."
+msgstr "Jelenleg nem érhető el az adat."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOT_INPLACEACTIVE___S_MAX.string.text
+msgid "Object could not be activated InPlace."
+msgstr "Az objektum nem aktiválható helyben (InPlace)."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_LINDEX___S_MAX.string.text
+msgid "Invalid index."
+msgstr "Érvénytelen index."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_CANNOT_DOVERB_NOW___S_MAX.string.text
+msgid "The action cannot be executed in the object's current state."
+msgstr "A művelet nem nem hajtható végre az objektum jelenlegi állapotában."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_OLEOBJ_INVALIDHWND___S_MAX.string.text
+msgid "An invalid window was passed when activated."
+msgstr "Aktiváláskor egy érvénytelen ablak lett átadva."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOVERBS___S_MAX.string.text
+msgid "The object does not support any actions."
+msgstr "Az objektum nem támogat egyetlen műveletet sem."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_INVALIDVERB___S_MAX.string.text
+msgid "The action is not defined. The default action will be executed."
+msgstr ""
+"Ez a művelet nincs definiálva. Az alapértelmezett művelet lesz végrehajtva."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_CONNECT___S_MAX.string.text
+msgid "A link to the network could not be re-established."
+msgstr "A hálózati kapcsolatot nem sikerült újra létrehozni."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOTIMPL___S_MAX.string.text
+msgid "Object does not support this action."
+msgstr "Az objektum nem támogatja ezt a műveletet."
+
+#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_CANTOPENFILE___S_MAX.string.text
+msgid "The specified file could not be opened."
+msgstr "A megadott fájl nem nyitható meg."
+
+#: so3res.src#RID_SO_ERRCTX.ERRCTX_SO_DOVERB.string.text
+msgid "$(ERR) activating object"
+msgstr "$(ERR) történt az objektum aktiválása közben."
+
+#: so3res.src#STR_INS_OBJECT.string.text
+msgid "Inserts a new %1-Object into your document."
+msgstr "Egy új %1-objektumot szúr be a dokumentumba."
+
+#: so3res.src#STR_INS_OBJECT_ICON.string.text
+msgid "Inserts a new %1-Object into your document as a symbol."
+msgstr "Egy új %1-objektumot szúr be a dokumentumba szimbólumként."
+
+#: so3res.src#STR_INS_FILE.string.text
+msgid ""
+"Inserts the contents of the file into your document to enable later editing "
+"in the original application."
+msgstr ""
+"Beszúrja a fájl tartalmát a dokumentumba úgy, hogy később az eredeti "
+"alkalmazással is szerkeszthető lesz."
+
+#: so3res.src#STR_INS_PLUGIN.string.text
+msgid ""
+"Inserts a plug-in object into your document with a reference to the plug-in "
+"data. When the object is activated, the plug-in is automatically executed."
+msgstr ""
+"Egy bővítőmodul-adatra hivatkozó bővítőmodul-objektumot helyez a "
+"dokumentumba. Az objektum előhívásakor a bővítőmodul automatikusan "
+"végrehajtódik."
+
+#: so3res.src#STR_INS_APPLET.string.text
+msgid ""
+"Inserts an applet object into your document. When the object is activated, "
+"the applet is automatically executed."
+msgstr ""
+"Kisalkalmazást helyez a dokumentumba. Az objektum előhívásakor a "
+"kisalkalmazás automatikusan végrehajtódik."
+
+#: so3res.src#STR_INS_FILE_ICON.string.text
+msgid "Inserts the contents of the file as an icon into your document."
+msgstr "Egy fájl tartalmát ikonként illeszti be a dokumentumba."
+
+#: so3res.src#STR_INS_FILE_LINK.string.text
+msgid ""
+"Inserts the contents of the file into your document and creates a link to "
+"the source file. Changes made to the source file will be reflected in your "
+"document."
+msgstr ""
+"A fájl tartalmát beszúrja a dokumentumba, és forrásfájlra való hivatkozást "
+"hoz létre. A forrásfájlban történő módosítások tükröződnek a dokumentumban."
+
+#: so3res.src#STR_INS_FILE_ICON_LINK.string.text
+msgid ""
+"Inserts an icon into your document representing the file. Changes made to "
+"the source file will be reflected in your document."
+msgstr ""
+"A fájlt reprezentáló ikont illeszt a dokumentumba. A forrásfájlban történő "
+"változások ebben a dokumentumban is megjelennek."
+
+#: so3res.src#STR_PASTE.string.text
+msgid "Pastes the contents of the clipboard as %1 in your document."
+msgstr "A vágólap tartalmát %1ként beilleszti a dokumentumba."
+
+#: so3res.src#STR_CONVERT_TO.string.text
+msgid "Converts the selected %1object to the object type %2."
+msgstr "Átalakítja a kijelölt %1 objektumot %2 objektumtípusra."
+
+#: so3res.src#STR_ACTIVATE_AS.string.text
+msgid "All objects of type %1 are activated as %2, but not converted"
+msgstr ""
+"Az összes %1 típusú objektumot %2 típusúként aktiválja, de nem konvertálja"
+
+#: so3res.src#STR_VERB_OPEN.string.text
+msgid "~Open"
+msgstr "~Megnyitás"
+
+#: so3res.src#STR_VERB_PROPS.string.text
+msgid "~Properties"
+msgstr "~Tulajdonságok"
+
+#: so3res.src#STR_PLUGIN_CANT_SHOW.string.text
+msgid "Plug-in % cannot be displayed."
+msgstr "A(z) % bővítőmodul nem jeleníthető meg."
+
+#: so3res.src#STR_ERROR_DDE.string.text
+msgid "DDE link to % for % area % are not available."
+msgstr "A DDE-hivatkozás nem érhető el: % % %"
+
+#: so3res.src#STR_ERROR_OBJNOCREATE.string.text
+msgid "Object % could not be inserted."
+msgstr "A(z) % objektumot nem sikerült beilleszteni."
+
+#: so3res.src#STR_ERROR_OBJNOCREATE_FROM_FILE.string.text
+msgid "Object from file % could not be inserted."
+msgstr "Az objektumot nem sikerült beilleszteni a következő fájlból: %"
+
+#: so3res.src#STR_ERROR_OBJNOCREATE_PLUGIN.string.text
+msgid "Plug-in from document % could not be inserted."
+msgstr "A(z) % dokumentum bővítőmodulját nem lehet beszúrni."
+
+#: so3res.src#STR_QUERYUPDATELINKS.string.text
+msgid "Update all links?"
+msgstr "Frissíti az összes hivatkozást?"
+
+#: so3res.src#STR_FURTHER_OBJECT.string.text
+msgid "Further objects"
+msgstr "További objektumok"
+
+#: so3res.src#STR_EDIT_APPLET.string.text
+msgid "Edit Applet"
+msgstr "Kisalkalmazás szerkesztése"
+
+#: so3res.src#MI_PLUGIN.MI_PLUGIN_DEACTIVATE.menuitem.text
+msgid "Deactivate"
+msgstr "Kikapcsolás"
+
+#: so3res.src#STR_UNKNOWN_SOURCE.string.text
+msgid "Unknown source"
+msgstr "Ismeretlen forrás"
+
+#: wizardmachine.src#STR_WIZDLG_FINISH.string.text
+msgid "~Finish"
+msgstr "~Befejezés"
+
+#: wizardmachine.src#STR_WIZDLG_NEXT.string.text
+msgid "~Next >>"
+msgstr "~Tovább >>"
+
+#: wizardmachine.src#STR_WIZDLG_PREVIOUS.string.text
+msgid "<< Bac~k"
+msgstr "<< ~Vissza"
+
+#: wizardmachine.src#STR_WIZDLG_ROADMAP_TITLE.string.text
+msgid "Steps"
+msgstr "Lépések"
+
+#~ msgid "~Cyan"
+#~ msgstr "~Ciánkék"
+
+#~ msgid "~Magenta"
+#~ msgstr "~Lila"
+
+#~ msgid "~Yellow"
+#~ msgstr "Sá~rga"
+
+#~ msgid "~Key"
+#~ msgstr "~Fekete"
+
+#~ msgid "~Red"
+#~ msgstr "~Vörös"
+
+#~ msgid "~Green"
+#~ msgstr "~Zöld"
+
+#~ msgid "~Blue"
+#~ msgstr "~Kék"
+
+#~ msgid "H~ue"
+#~ msgstr "Árny~alat"
+
+#~ msgid "~Saturation"
+#~ msgstr "T~elítettség"
+
+#~ msgid "Bright~ness"
+#~ msgstr "Fé~nyerő"
+
+#~ msgid "Color"
+#~ msgstr "Szín"
+
+#~ msgid "RGB(%1, %2, %3) Hue:%4 Saturation:%5 Brightness:%6"
+#~ msgstr "RGB(%1, %2, %3) Árnyalat:%4 Telítettség:%5 Fényerő:%6"
+
+#~ msgid "Fax number"
+#~ msgstr "Faxszám"
+
+#~ msgid "Print to file"
+#~ msgstr "Nyomtatás fájlba"
+
+#~ msgctxt "printdlg.src#DLG_SVT_PRNDLG_PRINTDLG.FL_PRINT.fixedline.text"
+#~ msgid "Print"
+#~ msgstr "Nyomtatás"
+
+#~ msgid "All sheets"
+#~ msgstr "Minden munkalap"
+
+#~ msgid "Selected sheets"
+#~ msgstr "Kijelölt munkalapok"
+
+#~ msgid "Selected cells"
+#~ msgstr "Kijelölt cellák"
+
+#~ msgid "Print range"
+#~ msgstr "Nyomtatási tartomány"
+
+#~ msgid "All pages"
+#~ msgstr "Összes oldal"
+
+#~ msgid "Pages"
+#~ msgstr "Oldalak"
+
+#~ msgid "Selection"
+#~ msgstr "Kijelölés"
+
+#~ msgid "Copies"
+#~ msgstr "Másolatok"
+
+#~ msgid "Number of copies"
+#~ msgstr "Másolatok száma"
+
+#~ msgid "Co~llate"
+#~ msgstr "~Leválogatás"
+
+#~ msgid "<All>"
+#~ msgstr "<Mind>"
+
+#~ msgctxt "printdlg.src#DLG_SVT_PRNDLG_PRINTDLG.modaldialog.text"
+#~ msgid "Print"
+#~ msgstr "Nyomtatás"
+
+#: fileview.src#STR_SVT_FILEVIEW_COLUMN_TITLE.string.text
+msgctxt "fileview.src#STR_SVT_FILEVIEW_COLUMN_TITLE.string.text"
+msgid "Title"
+msgstr "Cím"
+
+#: fileview.src#STR_SVT_FILEVIEW_COLUMN_SIZE.string.text
+msgctxt "fileview.src#STR_SVT_FILEVIEW_COLUMN_SIZE.string.text"
+msgid "Size"
+msgstr "Méret"
+
+#: fileview.src#STR_SVT_FILEVIEW_COLUMN_DATE.string.text
+msgid "Date modified"
+msgstr "Módosítás dátuma"
+
+#: fileview.src#STR_SVT_FILEVIEW_COLUMN_TYPE.string.text
+msgctxt "fileview.src#STR_SVT_FILEVIEW_COLUMN_TYPE.string.text"
+msgid "Type"
+msgstr "Típus"
+
+#: fileview.src#STR_SVT_FILEVIEW_ERR_MAKEFOLDER.string.text
+msgid "Could not create the folder %1."
+msgstr "A(z) %1 mappa létrehozása nem sikerült"
+
+#: fileview.src#STR_SVT_BYTES.string.text
+msgid "Bytes"
+msgstr "byte"
+
+#: fileview.src#STR_SVT_KB.string.text
+msgid "KB"
+msgstr "kB"
+
+#: fileview.src#STR_SVT_MB.string.text
+msgid "MB"
+msgstr "MB"
+
+#: fileview.src#STR_SVT_GB.string.text
+msgid "GB"
+msgstr "GB"
+
+#: fileview.src#RID_FILEVIEW_CONTEXTMENU.MID_FILEVIEW_DELETE.menuitem.text
+msgctxt "fileview.src#RID_FILEVIEW_CONTEXTMENU.MID_FILEVIEW_DELETE.menuitem.text"
+msgid "~Delete"
+msgstr "~Törlés"
+
+#: fileview.src#RID_FILEVIEW_CONTEXTMENU.MID_FILEVIEW_RENAME.menuitem.text
+msgid "~Rename"
+msgstr "Á~tnevezés"
+
+#: fileview.src#DLG_SVT_QUERYDELETE.TXT_ENTRY.fixedtext.text
+msgid "Entry:"
+msgstr "Bejegyzés:"
+
+#: fileview.src#DLG_SVT_QUERYDELETE.TXT_QUERYMSG.fixedtext.text
+msgid "Are you sure you want to delete the selected data?"
+msgstr "Biztosan törölni kívánja a kiválasztott adatokat?"
+
+#: fileview.src#DLG_SVT_QUERYDELETE.BTN_YES.pushbutton.text
+msgctxt "fileview.src#DLG_SVT_QUERYDELETE.BTN_YES.pushbutton.text"
+msgid "~Delete"
+msgstr "~Törlés"
+
+#: fileview.src#DLG_SVT_QUERYDELETE.BTN_ALL.pushbutton.text
+msgid "Delete ~All"
+msgstr "Mindent ~töröl"
+
+#: fileview.src#DLG_SVT_QUERYDELETE.BTN_NO.pushbutton.text
+msgid "Do ~Not Delete"
+msgstr "~Ne törölje"
+
+#: fileview.src#DLG_SVT_QUERYDELETE.modaldialog.text
+msgid "Confirm Delete"
+msgstr "Törlés jóváhagyása"
+
+#: svcontnr.src#STR_SVT_ACC_DESC_TABLISTBOX.string.text
+msgid "Row: %1, Column: %2"
+msgstr "Sor: %1, oszlop: %2"
+
+#: svcontnr.src#STR_SVT_ACC_DESC_FILEVIEW.string.text
+msgid ", Type: %1, URL: %2"
+msgstr ", Típus: %1, URL: %2"
+
+#: svcontnr.src#STR_SVT_ACC_DESC_FOLDER.string.text
+msgid "Folder"
+msgstr "Mappa"
+
+#: svcontnr.src#STR_SVT_ACC_DESC_FILE.string.text
+msgid "File"
+msgstr "Fájl"
+
+#: svcontnr.src#STR_SVT_ACC_EMPTY_FIELD.string.text
+msgid "Empty Field"
+msgstr "Üres mező"
+
+#: templwin.src#STR_SVT_NEWDOC.string.text
+msgid "New Document"
+msgstr "Új dokumentum"
+
+#: templwin.src#STR_SVT_MYDOCS.string.text
+msgid "My Documents"
+msgstr "Dokumentumok"
+
+#: templwin.src#STR_SVT_TEMPLATES.string.text
+msgid "Templates"
+msgstr "Sablonok"
+
+#: templwin.src#STR_SVT_SAMPLES.string.text
+msgid "Samples"
+msgstr "Minták"
+
+#: templwin.src#TB_SVT_FILEVIEW.TI_DOCTEMPLATE_BACK.toolboxitem.text
+msgid "Back"
+msgstr "Vissza"
+
+#: templwin.src#TB_SVT_FILEVIEW.TI_DOCTEMPLATE_PREV.toolboxitem.text
+msgid "Up One Level"
+msgstr "Egy szinttel feljebb"
+
+#: templwin.src#TB_SVT_FILEVIEW.TI_DOCTEMPLATE_PRINT.toolboxitem.text
+msgid "Print"
+msgstr "Nyomtatás"
+
+#: templwin.src#TB_SVT_FRAMEWIN.TI_DOCTEMPLATE_DOCINFO.toolboxitem.text
+msgid "Document Properties"
+msgstr "Dokumentum tulajdonságai"
+
+#: templwin.src#TB_SVT_FRAMEWIN.TI_DOCTEMPLATE_PREVIEW.toolboxitem.text
+msgid "Preview"
+msgstr "Előnézet"
+
+#: templwin.src#DLG_DOCTEMPLATE.FT_DOCTEMPLATE_LINK.fixedtext.text
+msgid "~Get more templates online..."
+msgstr "~További sablonok letöltése..."
+
+#: templwin.src#DLG_DOCTEMPLATE.BTN_DOCTEMPLATE_MANAGE.pushbutton.text
+msgid "Organi~ze..."
+msgstr "~Szervező..."
+
+#: templwin.src#DLG_DOCTEMPLATE.BTN_DOCTEMPLATE_EDIT.pushbutton.text
+msgid "~Edit"
+msgstr "~Szerkesztés"
+
+#: templwin.src#DLG_DOCTEMPLATE.BTN_DOCTEMPLATE_OPEN.okbutton.text
+msgid "~Open"
+msgstr "~Megnyitás"
+
+#: templwin.src#DLG_DOCTEMPLATE.modaldialog.text
+msgid "Templates and Documents"
+msgstr "Sablonok és dokumentumok"
+
+#: templwin.src#STRARY_SVT_DOCINFO.1.itemlist.text
+msgctxt "templwin.src#STRARY_SVT_DOCINFO.1.itemlist.text"
+msgid "Title"
+msgstr "Cím"
+
+#: templwin.src#STRARY_SVT_DOCINFO.2.itemlist.text
+msgid "By"
+msgstr "Szerző"
+
+#: templwin.src#STRARY_SVT_DOCINFO.3.itemlist.text
+msgid "Date"
+msgstr "Dátum"
+
+#: templwin.src#STRARY_SVT_DOCINFO.4.itemlist.text
+msgid "Keywords"
+msgstr "Kulcsszavak"
+
+#: templwin.src#STRARY_SVT_DOCINFO.5.itemlist.text
+msgid "Description"
+msgstr "Leírás"
+
+#: templwin.src#STRARY_SVT_DOCINFO.6.itemlist.text
+msgctxt "templwin.src#STRARY_SVT_DOCINFO.6.itemlist.text"
+msgid "Type"
+msgstr "Típus"
+
+#: templwin.src#STRARY_SVT_DOCINFO.7.itemlist.text
+msgid "Modified on"
+msgstr "Változtatás dátuma"
+
+#: templwin.src#STRARY_SVT_DOCINFO.8.itemlist.text
+msgid "Modified by"
+msgstr "Utolsó változás szerzője"
+
+#: templwin.src#STRARY_SVT_DOCINFO.9.itemlist.text
+msgid "Printed on"
+msgstr "Nyomtatás dátuma"
+
+#: templwin.src#STRARY_SVT_DOCINFO.10.itemlist.text
+msgid "Printed by"
+msgstr "Utoljára nyomtatta"
+
+#: templwin.src#STRARY_SVT_DOCINFO.11.itemlist.text
+msgid "Subject"
+msgstr "Tárgy"
+
+#: templwin.src#STRARY_SVT_DOCINFO.12.itemlist.text
+msgctxt "templwin.src#STRARY_SVT_DOCINFO.12.itemlist.text"
+msgid "Size"
+msgstr "Méret"
+
+#: templwin.src#STR_SVT_NEWDOC_HELP.string.text
+msgid "Click here to create new documents."
+msgstr "Kattintson ide új dokumentum létrehozásához."
+
+#: templwin.src#STR_SVT_MYDOCS_HELP.string.text
+msgid "Contains your letters, reports and other documents"
+msgstr "Leveleket, jelentéseket és más dokumentumokat tartalmaz."
+
+#: templwin.src#STR_SVT_TEMPLATES_HELP.string.text
+msgid "Contains templates for creating new documents"
+msgstr "Új dokumentumok létrehozásához való sablonokat tartalmaz."
+
+#: templwin.src#STR_SVT_SAMPLES_HELP.string.text
+msgid "Contains a selection of sample letters, reports and other documents"
+msgstr "Mintaleveleket, jelentéseket és más dokumentumokat tartalmaz."
+"X-Accelerator-Marker: ~\n"
+
+#: calendar.src#STR_SVT_CALENDAR_DAY.string.text
+msgid "Day"
+msgstr "Nap"
+
+#: calendar.src#STR_SVT_CALENDAR_WEEK.string.text
+msgid "Week"
+msgstr "Hét"
+
+#: calendar.src#STR_SVT_CALENDAR_TODAY.string.text
+msgid "Today"
+msgstr "Ma"
+
+#: calendar.src#STR_SVT_CALENDAR_NONE.string.text
+msgid "None"
+msgstr "Nincs"
+
+#: ctrlbox.src#STR_SVT_AUTOMATIC_COLOR.string.text
+msgid "Automatic"
+msgstr "Automatikus"
+
+#: ctrlbox.src#STR_SVT_COLLATE_ALPHANUMERIC.string.text
+msgctxt "ctrlbox.src#STR_SVT_COLLATE_ALPHANUMERIC.string.text"
+msgid "Alphanumeric"
+msgstr "Alfanumerikus"
+
+#: ctrlbox.src#STR_SVT_COLLATE_NORMAL.string.text
+msgid "Normal"
+msgstr "Normál"
+
+#: ctrlbox.src#STR_SVT_COLLATE_CHARSET.string.text
+msgid "Character set"
+msgstr "Karakterkészlet"
+
+#: ctrlbox.src#STR_SVT_COLLATE_DICTIONARY.string.text
+msgctxt "ctrlbox.src#STR_SVT_COLLATE_DICTIONARY.string.text"
+msgid "Dictionary"
+msgstr "Szótár"
+
+#: ctrlbox.src#STR_SVT_COLLATE_PINYIN.string.text
+msgctxt "ctrlbox.src#STR_SVT_COLLATE_PINYIN.string.text"
+msgid "Pinyin"
+msgstr "Pinyin"
+
+#: ctrlbox.src#STR_SVT_COLLATE_STROKE.string.text
+msgctxt "ctrlbox.src#STR_SVT_COLLATE_STROKE.string.text"
+msgid "Stroke"
+msgstr "Ecsetvonás"
+
+#: ctrlbox.src#STR_SVT_COLLATE_RADICAL.string.text
+msgctxt "ctrlbox.src#STR_SVT_COLLATE_RADICAL.string.text"
+msgid "Radical"
+msgstr "Gyök"
+
+#: ctrlbox.src#STR_SVT_COLLATE_UNICODE.string.text
+msgid "Unicode"
+msgstr "Unicode"
+
+#: ctrlbox.src#STR_SVT_COLLATE_ZHUYIN.string.text
+msgctxt "ctrlbox.src#STR_SVT_COLLATE_ZHUYIN.string.text"
+msgid "Zhuyin"
+msgstr "Zhuyin"
+
+#: ctrlbox.src#STR_SVT_COLLATE_PHONEBOOK.string.text
+msgid "Phone book"
+msgstr "Telefonkönyv"
+
+#: ctrlbox.src#STR_SVT_COLLATE_PHONETIC_F.string.text
+msgid "Phonetic (alphanumeric first)"
+msgstr "Fonetikus (alfanumerikus először)"
+
+#: ctrlbox.src#STR_SVT_COLLATE_PHONETIC_L.string.text
+msgid "Phonetic (alphanumeric last)"
+msgstr "Fonetikus (alfanumerikus utoljára)"
+
+#: ctrlbox.src#STR_SVT_INDEXENTRY_ALPHANUMERIC.string.text
+msgctxt "ctrlbox.src#STR_SVT_INDEXENTRY_ALPHANUMERIC.string.text"
+msgid "Alphanumeric"
+msgstr "Alfanumerikus"
+
+#: ctrlbox.src#STR_SVT_INDEXENTRY_DICTIONARY.string.text
+msgctxt "ctrlbox.src#STR_SVT_INDEXENTRY_DICTIONARY.string.text"
+msgid "Dictionary"
+msgstr "Szótár"
+
+#: ctrlbox.src#STR_SVT_INDEXENTRY_PINYIN.string.text
+msgctxt "ctrlbox.src#STR_SVT_INDEXENTRY_PINYIN.string.text"
+msgid "Pinyin"
+msgstr "Pinyin"
+
+#: ctrlbox.src#STR_SVT_INDEXENTRY_RADICAL.string.text
+msgctxt "ctrlbox.src#STR_SVT_INDEXENTRY_RADICAL.string.text"
+msgid "Radical"
+msgstr "Gyök"
+
+#: ctrlbox.src#STR_SVT_INDEXENTRY_STROKE.string.text
+msgctxt "ctrlbox.src#STR_SVT_INDEXENTRY_STROKE.string.text"
+msgid "Stroke"
+msgstr "Ecsetvonás"
+
+#: ctrlbox.src#STR_SVT_INDEXENTRY_ZHUYIN.string.text
+msgctxt "ctrlbox.src#STR_SVT_INDEXENTRY_ZHUYIN.string.text"
+msgid "Zhuyin"
+msgstr "Zhuyin"
+
+#: ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_FS.string.text
+msgid "Phonetic (alphanumeric first, grouped by syllables)"
+msgstr "Fonetikus (alfanumerikus először, szótagok szerint csoportosítva)"
+
+#: ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_FC.string.text
+msgid "Phonetic (alphanumeric first, grouped by consonants)"
+msgstr "Fonetikus (alfanumerikus először, mássalhangzók szerint csoportosítva)"
+
+#: ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_LS.string.text
+msgid "Phonetic (alphanumeric last, grouped by syllables)"
+msgstr "Fonetikus (alfanumerikus utoljára, szótagok szerint csoportosítva)"
+
+#: ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_LC.string.text
+msgid "Phonetic (alphanumeric last, grouped by consonants)"
+msgstr "Fonetikus (alfanumerikus utoljára, mássalhangzók szerint csoportosítva)"
+
+#: ctrltool.src#STR_SVT_STYLE_LIGHT.string.text
+msgid "Light"
+msgstr "Vékony"
+
+#: ctrltool.src#STR_SVT_STYLE_LIGHT_ITALIC.string.text
+msgid "Light Italic"
+msgstr "Vékony dőlt"
+
+#: ctrltool.src#STR_SVT_STYLE_NORMAL.string.text
+msgid "Regular"
+msgstr "Általános"
+
+#: ctrltool.src#STR_SVT_STYLE_NORMAL_ITALIC.string.text
+msgid "Italic"
+msgstr "Dőlt"
+
+#: ctrltool.src#STR_SVT_STYLE_BOLD.string.text
+msgid "Bold"
+msgstr "Félkövér"
+
+#: ctrltool.src#STR_SVT_STYLE_BOLD_ITALIC.string.text
+msgid "Bold Italic"
+msgstr "Félkövér dőlt"
+
+#: ctrltool.src#STR_SVT_STYLE_BLACK.string.text
+msgid "Black"
+msgstr "Fekete"
+
+#: ctrltool.src#STR_SVT_STYLE_BLACK_ITALIC.string.text
+msgid "Black Italic"
+msgstr "Gót dőlt"
+
+#: ctrltool.src#STR_SVT_FONTMAP_BOTH.string.text
+msgid "The same font will be used on both your printer and your screen."
+msgstr "Ugyanez a betűkészlet jelenik meg képernyőn és a nyomtatón is."
+
+#: ctrltool.src#STR_SVT_FONTMAP_PRINTERONLY.string.text
+msgid "This is a printer font. The screen image may differ."
+msgstr "Ez egy nyomtató-betűkészlet. A képernyőn megjelenő kép különbözhet."
+
+#: ctrltool.src#STR_SVT_FONTMAP_SCREENONLY.string.text
+msgid "This is a screen font. The printer image may differ."
+msgstr "Ez egy képernyő-betűkészlet. A nyomtatott kép különbözhet."
+
+#: ctrltool.src#STR_SVT_FONTMAP_SIZENOTAVAILABLE.string.text
+msgid ""
+"This font size has not been installed. The closest available size will be "
+"used."
+msgstr ""
+"A megadott betűméret nincs telepítve. A legközelebbi elérhető méret jelenik "
+"meg."
+
+#: ctrltool.src#STR_SVT_FONTMAP_STYLENOTAVAILABLE.string.text
+msgid ""
+"This font style will be simulated or the closest matching style will be "
+"used."
+msgstr ""
+"Ez a betűstílus más stílus átalakításával, vagy a leginkább hasonló stílus "
+"alkalmazásával jeleníthető csak meg."
+
+#: ctrltool.src#STR_SVT_FONTMAP_NOTAVAILABLE.string.text
+msgid ""
+"This font has not been installed. The closest available font will be used."
+msgstr ""
+"Ez a betűkészlet nincs telepítve. A leginkább hasonló betűkészlet lesz "
+"látható."
+
+#: filectrl.src#STR_FILECTRL_BUTTONTEXT.string.text
+msgid "Browse..."
+msgstr "Tallózás..."
+
+#: filectrl.src#STR_TABBAR_PUSHBUTTON_MOVET0HOME.string.text
+msgid "Move To Home"
+msgstr "Sor elejére mozgás"
+
+#: filectrl.src#STR_TABBAR_PUSHBUTTON_MOVELEFT.string.text
+msgid "Move Left"
+msgstr "Mozgás balra"
+
+#: filectrl.src#STR_TABBAR_PUSHBUTTON_MOVERIGHT.string.text
+msgid "Move Right"
+msgstr "Mozgás jobbra"
+
+#: filectrl.src#STR_TABBAR_PUSHBUTTON_MOVETOEND.string.text
+msgid "Move To End"
+msgstr "Mozgás a sor végére"
+
+#: toolpanel.src#STR_SVT_TOOL_PANEL_BUTTON_FWD.string.text
+msgid "Tab Panel Scroll Button, backward"
+msgstr "Füles lap gördítőgombja, vissza"
+
+#: toolpanel.src#STR_SVT_TOOL_PANEL_BUTTON_BACK.string.text
+msgid "Tab Panel Scroll Button, forward"
+msgstr "Füles lap gördítőgombja, előre"
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: ~\n"
+
+#: exportdialog.src#DLG_EXPORT_TITLE.string.text
+msgid " Options"
+msgstr " Beállítások"
+
+#: exportdialog.src#DLG_EXPORT.FL_EXPORT_SIZE.fixedline.text
+msgid "Size"
+msgstr "Méret"
+
+#: exportdialog.src#DLG_EXPORT.FT_SIZEX.fixedtext.text
+msgid "Width:"
+msgstr "Szélesség:"
+
+#: exportdialog.src#DLG_EXPORT.LB_SIZEX.1.stringlist.text
+msgctxt "exportdialog.src#DLG_EXPORT.LB_SIZEX.1.stringlist.text"
+msgid "inches"
+msgstr "hüvelyk"
+
+#: exportdialog.src#DLG_EXPORT.LB_SIZEX.2.stringlist.text
+msgctxt "exportdialog.src#DLG_EXPORT.LB_SIZEX.2.stringlist.text"
+msgid "cm"
+msgstr "cm"
+
+#: exportdialog.src#DLG_EXPORT.LB_SIZEX.3.stringlist.text
+msgctxt "exportdialog.src#DLG_EXPORT.LB_SIZEX.3.stringlist.text"
+msgid "mm"
+msgstr "mm"
+
+#: exportdialog.src#DLG_EXPORT.LB_SIZEX.4.stringlist.text
+msgctxt "exportdialog.src#DLG_EXPORT.LB_SIZEX.4.stringlist.text"
+msgid "points"
+msgstr "pont"
+
+#: exportdialog.src#DLG_EXPORT.LB_SIZEX.5.stringlist.text
+msgctxt "exportdialog.src#DLG_EXPORT.LB_SIZEX.5.stringlist.text"
+msgid "pixels"
+msgstr "pixel"
+
+#: exportdialog.src#DLG_EXPORT.FT_SIZEY.fixedtext.text
+msgid "Height:"
+msgstr "Magasság:"
+
+#: exportdialog.src#DLG_EXPORT.LB_SIZEY.1.stringlist.text
+msgctxt "exportdialog.src#DLG_EXPORT.LB_SIZEY.1.stringlist.text"
+msgid "inches"
+msgstr "hüvelyk"
+
+#: exportdialog.src#DLG_EXPORT.LB_SIZEY.2.stringlist.text
+msgctxt "exportdialog.src#DLG_EXPORT.LB_SIZEY.2.stringlist.text"
+msgid "cm"
+msgstr "cm"
+
+#: exportdialog.src#DLG_EXPORT.LB_SIZEY.3.stringlist.text
+msgctxt "exportdialog.src#DLG_EXPORT.LB_SIZEY.3.stringlist.text"
+msgid "mm"
+msgstr "mm"
+
+#: exportdialog.src#DLG_EXPORT.LB_SIZEY.4.stringlist.text
+msgctxt "exportdialog.src#DLG_EXPORT.LB_SIZEY.4.stringlist.text"
+msgid "points"
+msgstr "pont"
+
+#: exportdialog.src#DLG_EXPORT.LB_SIZEY.5.stringlist.text
+msgctxt "exportdialog.src#DLG_EXPORT.LB_SIZEY.5.stringlist.text"
+msgid "pixels"
+msgstr "pixel"
+
+#: exportdialog.src#DLG_EXPORT.FT_RESOLUTION.fixedtext.text
+msgid "Resolution:"
+msgstr "Felbontás:"
+
+#: exportdialog.src#DLG_EXPORT.LB_RESOLUTION.1.stringlist.text
+msgid "pixels/cm"
+msgstr "pixel/cm"
+
+#: exportdialog.src#DLG_EXPORT.LB_RESOLUTION.2.stringlist.text
+msgid "pixels/inch"
+msgstr "pixel/hüvelyk"
+
+#: exportdialog.src#DLG_EXPORT.LB_RESOLUTION.3.stringlist.text
+msgid "pixels/meter"
+msgstr "pixel/méter"
+
+#: exportdialog.src#DLG_EXPORT.FL_COLOR_DEPTH.fixedline.text
+msgid "Color Depth"
+msgstr "Színmélység"
+
+#: exportdialog.src#DLG_EXPORT.STR_1BIT_THRESHOLD.string.text
+msgid "1 bit threshold"
+msgstr "1 bites küszöbérték"
+
+#: exportdialog.src#DLG_EXPORT.STR_1BIT_DITHERED.string.text
+msgid "1 bit dithered"
+msgstr "1 bites színcsökkentés"
+
+#: exportdialog.src#DLG_EXPORT.STR_4BIT_GRAYSCALE.string.text
+msgid "4 bit grayscale"
+msgstr "4 bites szürkeárnyalatos"
+
+#: exportdialog.src#DLG_EXPORT.STR_4BIT_COLOR_PALETTE.string.text
+msgid "4 bit color"
+msgstr "4 bites színes"
+
+#: exportdialog.src#DLG_EXPORT.STR_8BIT_GRAYSCALE.string.text
+msgid "8 bit grayscale"
+msgstr "8 bites szürkeárnyalatos"
+
+#: exportdialog.src#DLG_EXPORT.STR_8BIT_COLOR_PALETTE.string.text
+msgid "8 bit color"
+msgstr "8 bites színes"
+
+#: exportdialog.src#DLG_EXPORT.STR_24BIT_TRUE_COLOR.string.text
+msgid "24 bit true color"
+msgstr "24 bites valósághű"
+
+#: exportdialog.src#DLG_EXPORT.FL_JPG_QUALITY.fixedline.text
+msgid "Quality"
+msgstr "Minőség"
+
+#: exportdialog.src#DLG_EXPORT.FL_COMPRESSION.fixedline.text
+msgid "Compression"
+msgstr "Tömörítés"
+
+#: exportdialog.src#DLG_EXPORT.FL_MODE.fixedline.text
+msgid "Mode"
+msgstr "Mód"
+
+#: exportdialog.src#DLG_EXPORT.FL_PBM_OPTIONS.fixedline.text
+msgid "File Format"
+msgstr "Fájl formátum"
+
+#: exportdialog.src#DLG_EXPORT.FT_JPG_MIN.fixedtext.text
+msgid "1 is minimum Quality and smallest file size."
+msgstr "1 a legkisebb fájl méret és minimális minőség"
+
+#: exportdialog.src#DLG_EXPORT.FT_JPG_MAX.fixedtext.text
+msgid "100 is maximum Quality and biggest file size."
+msgstr "100 a legnagyobb fájlméret maximális minőség"
+
+#: exportdialog.src#DLG_EXPORT.FT_PNG_MIN.fixedtext.text
+msgid "0 is biggest file size and fastest loading."
+msgstr "0 a legnagyobb fájlméret és leggyorsabb betöltődés"
+
+#: exportdialog.src#DLG_EXPORT.FT_PNG_MAX.fixedtext.text
+msgid "9 is smallest file size and slowest loading."
+msgstr "9 a legkisebb fájl és a leglassabb betöltődés "
+
+#: exportdialog.src#DLG_EXPORT.CB_JPG_PREVIEW.checkbox.text
+msgctxt "exportdialog.src#DLG_EXPORT.CB_JPG_PREVIEW.checkbox.text"
+msgid "Preview"
+msgstr "Előnézet"
+
+#: exportdialog.src#DLG_EXPORT.CB_INTERLACED.checkbox.text
+msgid "Interlaced"
+msgstr "Váltott soros"
+
+#: exportdialog.src#DLG_EXPORT.CB_RLE_ENCODING.checkbox.text
+msgid "RLE encoding"
+msgstr "RLE kódolás"
+
+#: exportdialog.src#DLG_EXPORT.FL_GIF_DRAWING_OBJECTS.fixedline.text
+msgid "Drawing Objects"
+msgstr "Rajz objektum"
+
+#: exportdialog.src#DLG_EXPORT.CB_SAVE_TRANSPARENCY.checkbox.text
+msgid "Save transparency"
+msgstr "Átlátszóság mentése"
+
+#: exportdialog.src#DLG_EXPORT.RB_BINARY.radiobutton.text
+msgid "Binary"
+msgstr "Bináris"
+
+#: exportdialog.src#DLG_EXPORT.RB_TEXT.radiobutton.text
+msgid "Text"
+msgstr "Szöveg"
+
+#: exportdialog.src#DLG_EXPORT.FL_EPS_PREVIEW.fixedline.text
+msgctxt "exportdialog.src#DLG_EXPORT.FL_EPS_PREVIEW.fixedline.text"
+msgid "Preview"
+msgstr "Előnézet"
+
+#: exportdialog.src#DLG_EXPORT.CB_EPS_PREVIEW_TIFF.checkbox.text
+msgid "Image Preview (TIFF)"
+msgstr "Kép előnézet (TIFF)"
+
+#: exportdialog.src#DLG_EXPORT.CB_EPS_PREVIEW_EPSI.checkbox.text
+msgid "Interchange (EPSI)"
+msgstr "Csere (EPSI)"
+
+#: exportdialog.src#DLG_EXPORT.FL_EPS_VERSION.fixedline.text
+msgid "Version"
+msgstr "Változat"
+
+#: exportdialog.src#DLG_EXPORT.RB_EPS_LEVEL1.radiobutton.text
+msgid "Level 1"
+msgstr "1. szint"
+
+#: exportdialog.src#DLG_EXPORT.RB_EPS_LEVEL2.radiobutton.text
+msgid "Level 2"
+msgstr "2. szint"
+
+#: exportdialog.src#DLG_EXPORT.FL_EPS_COLOR_FORMAT.fixedline.text
+msgid "Color format"
+msgstr "Színformátum"
+
+#: exportdialog.src#DLG_EXPORT.RB_EPS_COLOR_FORMAT1.radiobutton.text
+msgid "Color"
+msgstr "Szín"
+
+#: exportdialog.src#DLG_EXPORT.RB_EPS_COLOR_FORMAT2.radiobutton.text
+msgid "Grayscale"
+msgstr "Szürkeárnyalatos"
+
+#: exportdialog.src#DLG_EXPORT.RB_EPS_COMPRESSION_LZW.radiobutton.text
+msgid "LZW encoding"
+msgstr "LZW kódolás"
+
+#: exportdialog.src#DLG_EXPORT.RB_EPS_COMPRESSION_NONE.radiobutton.text
+msgid "None"
+msgstr "Nincs"
+
+#: exportdialog.src#DLG_EXPORT.STR_ESTIMATED_SIZE_PIX_1.string.text
+msgid "The picture needs about %1 KB of memory."
+msgstr "A képhez szükséges %1 KB memória."
+
+#: exportdialog.src#DLG_EXPORT.STR_ESTIMATED_SIZE_PIX_2.string.text
+msgid ""
+"The picture needs about %1 KB of memory,\n"
+" the file size is %2 KB."
+msgstr ""
+"A képhez szükséges %1 KB memória, \n"
+" a fájl mérete %2 KB."
+
+#: exportdialog.src#DLG_EXPORT.STR_ESTIMATED_SIZE_VEC.string.text
+msgid "The file size is %1 KB."
+msgstr "A fájl mérete %1 KB."
+"X-Accelerator-Marker: ~\n"
+
+#: javaerror.src#WARNINGBOX_JAVANOTFOUND.warningbox.text
+msgid ""
+"%PRODUCTNAME requires a Java runtime environment (JRE) to perform this task. "
+"Please install a JRE and restart %PRODUCTNAME."
+msgstr ""
+"Az %PRODUCTNAME Java-futattókörnyezetet (JRE-t) igényel a feladat "
+"végrehajtásához. Telepítsen egy JRE-t, és indítsa újra az %PRODUCTNAME "
+"programot."
+
+#: javaerror.src#WARNINGBOX_INVALIDJAVASETTINGS.warningbox.text
+msgid ""
+"The %PRODUCTNAME configuration has been changed. Under Tools - Options - %"
+"PRODUCTNAME - Java, select the Java runtime environment you want to have "
+"used by %PRODUCTNAME."
+msgstr ""
+"Az %PRODUCTNAME konfigurációja megváltozott. Az Eszközök - Beállítások - %"
+"PRODUCTNAME - Java panelen válassza ki az %PRODUCTNAME programmal együtt "
+"használandó Java-futtatókörnyezetet."
+
+#: javaerror.src#QBX_JAVADISABLED.querybox.text
+msgid ""
+"%PRODUCTNAME requires a Java runtime environment (JRE) to perform this task. "
+"However, use of a JRE has been disabled. Do you want to enable the use of a "
+"JRE now?"
+msgstr ""
+"Az %PRODUCTNAME Java-futattókörnyezetet (JRE-t) igényel a feladat "
+"végrehajtásához. Viszont a JRE használata tiltva van. Szeretné most "
+"engedélyezni a JRE használatát?"
+
+#: javaerror.src#ERRORBOX_JVMCREATIONFAILED.errorbox.text
+msgid ""
+"%PRODUCTNAME requires a Java runtime environment (JRE) to perform this task. "
+"The selected JRE is defective. Please select another version or install a "
+"new JRE and select  it under Tools - Options - %PRODUCTNAME - Java."
+msgstr ""
+"Az %PRODUCTNAME Java-futattókörnyezetet (JRE-t) igényel a feladat "
+"végrehajtásához. A kiválasztott JRE hibás. Válasszon másik verziót, vagy "
+"telepítsen egy új JRE-t, majd válassza ki az Eszközök- Beállítások - %"
+"PRODUCTNAME - Java panelen."
+
+#: javaerror.src#ERRORBOX_RESTARTREQUIRED.errorbox.text
+msgid ""
+"For the selected Java runtime environment to work properly, %PRODUCTNAME "
+"must be restarted. Please restart %PRODUCTNAME now."
+msgstr ""
+"A kiválasztott Java-futtatókörnyezet helyes működéséhez az %PRODUCTNAME "
+"programot újra kell indítani. Indítsa újra most az %PRODUCTNAME programot."
+
+#: javaerror.src#STR_WARNING_JAVANOTFOUND.string.text
+msgid "JRE Required"
+msgstr "JRE szükséges"
+
+#: javaerror.src#STR_WARNING_INVALIDJAVASETTINGS.string.text
+msgid "Select JRE"
+msgstr "JRE választása"
+
+#: javaerror.src#STR_ERROR_RESTARTREQUIRED.string.text
+msgid "Restart Required"
+msgstr "Újraindítás szükséges"
+
+#: javaerror.src#STR_QUESTION_JAVADISABLED.string.text
+msgid "Enable JRE"
+msgstr "JRE engedélyezése"
+
+#: javaerror.src#STR_ERROR_JVMCREATIONFAILED.string.text
+msgid "JRE is Defective"
+msgstr "A JRE hibás"
+
+#: testtool.src#DisplayHidToolBox.TT_SHOW.toolboxitem.text
+msgid "Display IDs"
+msgstr "Display ID-k"
+
+#: testtool.src#DisplayHidToolBox.TT_OUTPUT.toolboxitem.text
+msgid "This is the input window"
+msgstr "Ez a beviteli ablak"
+
+#: testtool.src#DisplayHidToolBox.TT_SEND_DATA.toolboxitem.text
+msgid "Transfer to TestTool"
+msgstr "Átvitel a TestToolba"
+
+#: testtool.src#DisplayHidToolBox.TT_ALLWIN.toolboxitem.text
+msgid "Show all windows"
+msgstr "Minden ablak megjelenítése"
+
+#: testtool.src#DisplayHidToolBox.TT_KURZNAME.toolboxitem.text
+msgid "Show short names (if available)"
+msgstr "Rövid nevek megjelenítése (ha vannak)"
+
+#: testtool.src#DisplayHidToolBox.TT_LANGNAME.toolboxitem.text
+msgid "Always show long-name"
+msgstr "Mindig a hosszú nevek megjelenítése"
+
+#: testtool.src#DisplayHidToolBox.toolbox.text
+msgid "DisplayHID"
+msgstr "DisplayHID"
+
+#: testtool.src#TT_INLINE_TRANSLATION.TT_GB_TRANSLATION.groupbox.text
+msgid "Translation"
+msgstr "Fordítás"
+
+#: testtool.src#TT_INLINE_TRANSLATION.TT_E_NEW.edit.text
+msgid "~Edit"
+msgstr "~Szerkesztés"
+
+#: testtool.src#TT_INLINE_TRANSLATION.TT_FT_OLD.fixedtext.text
+msgid "Original Text"
+msgstr "Eredeti szöveg"
+
+#: testtool.src#TT_INLINE_TRANSLATION.TT_GB_COMMENT.groupbox.text
+msgid "Comment"
+msgstr "Megjegyzés"
+
+#: testtool.src#TT_INLINE_TRANSLATION.TT_E_COMMENT.edit.text
+msgid "~Comment"
+msgstr "~Megjegyzés"
+
+#: testtool.src#TT_INLINE_TRANSLATION.TT_PB_SELECT.pushbutton.text
+msgid "~Select"
+msgstr "~Kijelölés"
+
+#: testtool.src#TT_INLINE_TRANSLATION.TT_PB_RESTORE.pushbutton.text
+msgid "~Restore"
+msgstr "~Visszaállítás"
+
+#: testtool.src#TT_INLINE_TRANSLATION.TT_PB_ACCEPT.pushbutton.text
+msgid "~Accept"
+msgstr "~Elfogadás"
+
+#: testtool.src#TT_INLINE_TRANSLATION.TT_PB_NEXT.pushbutton.text
+msgid "~Next"
+msgstr "~Következő"
+
+#: testtool.src#TT_INLINE_TRANSLATION.workwindow.text
+msgid "Inplace Translation"
+msgstr "Helyben fordítás"
+
+#: testtool.src#TT_DISCARD_CHANGED_DATA.messbox.text
+msgid "The Translation will be lost. Proceed anyway?"
+msgstr "A fordítás el fog veszni. Folytatja?"
+
+#: testtool.src#TT_NO_CONTROL.errorbox.text
+msgid "The Control is no longer valid. The Translation cannot be saved."
+msgstr "A vezérlőelem nem érvényes többé. A fordítás nem menthető."
+
+#: testtool.src#TT_GPF.string.text
+msgid "GPF occurred"
+msgstr "Általános védelmi hiba történt"
+
+#: testtool.src#TT_ALTERNATE_CAPTION.string.text
+msgid "HelpID does not match UniqueID: "
+msgstr "A HelpID nem egyezik meg az UniqueID-val: "
+"X-Accelerator-Marker: ~\n"
+
+#: imagemgr.src#STR_DESCRIPTION_SOURCEFILE.string.text
+msgid "Source code"
+msgstr "Forráskód"
+
+#: imagemgr.src#STR_DESCRIPTION_BOOKMARKFILE.string.text
+msgid "Bookmark file"
+msgstr "Könyvjelzőfájl"
+
+#: imagemgr.src#STR_DESCRIPTION_GRAPHIC_DOC.string.text
+msgid "Graphics"
+msgstr "Kép"
+
+#: imagemgr.src#STR_DESCRIPTION_CFGFILE.string.text
+msgid "Configuration file"
+msgstr "Konfigurációs fájl"
+
+#: imagemgr.src#STR_DESCRIPTION_APPLICATION.string.text
+msgid "Application"
+msgstr "Alkalmazás"
+
+#: imagemgr.src#STR_DESCRIPTION_DATABASE_TABLE.string.text
+msgid "Database table"
+msgstr "Adatbázistábla"
+
+#: imagemgr.src#STR_DESCRIPTION_SYSFILE.string.text
+msgid "System file"
+msgstr "Rendszerfájl"
+
+#: imagemgr.src#STR_DESCRIPTION_WORD_DOC.string.text
+msgid "MS Word document"
+msgstr "MS Word-dokumentum"
+
+#: imagemgr.src#STR_DESCRIPTION_HELP_DOC.string.text
+msgid "Help file"
+msgstr "Súgófájl"
+
+#: imagemgr.src#STR_DESCRIPTION_HTMLFILE.string.text
+msgctxt "imagemgr.src#STR_DESCRIPTION_HTMLFILE.string.text"
+msgid "HTML document"
+msgstr "HTML-dokumentum"
+
+#: imagemgr.src#STR_DESCRIPTION_ARCHIVFILE.string.text
+msgid "Archive file"
+msgstr "Archívumfájl"
+
+#: imagemgr.src#STR_DESCRIPTION_LOGFILE.string.text
+msgid "Log file"
+msgstr "Naplófájl"
+
+#: imagemgr.src#STR_DESCRIPTION_SDATABASE_DOC.string.text
+msgid "%STAROFFICE Database"
+msgstr "%STAROFFICE-adatbázis"
+
+#: imagemgr.src#STR_DESCRIPTION_GLOBALDOC.string.text
+msgid "StarWriter 4.0 / 5.0 Master Document"
+msgstr "StarWriter 4.0 / 5.0-fődokumentum"
+
+#: imagemgr.src#STR_DESCRIPTION_SIMAGE_DOC.string.text
+msgid "%STAROFFICE Image"
+msgstr "%STAROFFICE-kép"
+
+#: imagemgr.src#STR_DESCRIPTION_TEXTFILE.string.text
+msgid "Text file"
+msgstr "Szövegfájl"
+
+#: imagemgr.src#STR_DESCRIPTION_LINK.string.text
+msgid "Link"
+msgstr "Hivatkozás"
+
+#: imagemgr.src#STR_DESCRIPTION_SOFFICE_TEMPLATE_DOC.string.text
+msgid "%STAROFFICE 3.0 - 5.0 Template"
+msgstr "%STAROFFICE 3.0 - 5.0-sablon"
+
+#: imagemgr.src#STR_DESCRIPTION_EXCEL_DOC.string.text
+msgid "MS Excel document"
+msgstr "MS Excel-dokumentum"
+
+#: imagemgr.src#STR_DESCRIPTION_EXCEL_TEMPLATE_DOC.string.text
+msgid "MS Excel template"
+msgstr "MS Excel-sablon"
+
+#: imagemgr.src#STR_DESCRIPTION_BATCHFILE.string.text
+msgid "Batch file"
+msgstr "Parancsfájl"
+
+#: imagemgr.src#STR_DESCRIPTION_FILE.string.text
+msgid "File"
+msgstr "Fájl"
+
+#: imagemgr.src#STR_DESCRIPTION_FOLDER.string.text
+msgid "Folder"
+msgstr "Mappa"
+
+#: imagemgr.src#STR_DESCRIPTION_FACTORY_WRITER.string.text
+msgid "Text Document"
+msgstr "Szöveges dokumentum"
+
+#: imagemgr.src#STR_DESCRIPTION_FACTORY_CALC.string.text
+msgid "Spreadsheet"
+msgstr "Munkafüzet"
+
+#: imagemgr.src#STR_DESCRIPTION_FACTORY_IMPRESS.string.text
+msgid "Presentation"
+msgstr "Bemutató"
+
+#: imagemgr.src#STR_DESCRIPTION_FACTORY_DRAW.string.text
+msgid "Drawing"
+msgstr "Rajz"
+
+#: imagemgr.src#STR_DESCRIPTION_FACTORY_WRITERWEB.string.text
+msgctxt "imagemgr.src#STR_DESCRIPTION_FACTORY_WRITERWEB.string.text"
+msgid "HTML document"
+msgstr "HTML-dokumentum"
+
+#: imagemgr.src#STR_DESCRIPTION_FACTORY_GLOBALDOC.string.text
+msgid "Master document"
+msgstr "Fődokumentum"
+
+#: imagemgr.src#STR_DESCRIPTION_FACTORY_MATH.string.text
+msgid "Formula"
+msgstr "Képlet"
+
+#: imagemgr.src#STR_DESCRIPTION_FACTORY_DATABASE.string.text
+msgid "Database"
+msgstr "Adatbázis"
+
+#: imagemgr.src#STR_DESCRIPTION_CALC_TEMPLATE.string.text
+msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet Template"
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION-munkafüzetsablon"
+
+#: imagemgr.src#STR_DESCRIPTION_DRAW_TEMPLATE.string.text
+msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Drawing Template"
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION-rajzsablon"
+
+#: imagemgr.src#STR_DESCRIPTION_IMPRESS_TEMPLATE.string.text
+msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Presentation Template"
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION-bemutatósablon"
+
+#: imagemgr.src#STR_DESCRIPTION_WRITER_TEMPLATE.string.text
+msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Text Document Template"
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION-szövegesdokumentumsablon"
+
+#: imagemgr.src#STR_DESCRIPTION_LOCALE_VOLUME.string.text
+msgid "Local drive"
+msgstr "Helyi meghajtó"
+
+#: imagemgr.src#STR_DESCRIPTION_FLOPPY_VOLUME.string.text
+msgid "Disk drive"
+msgstr "Lemezmeghajtó"
+
+#: imagemgr.src#STR_DESCRIPTION_CDROM_VOLUME.string.text
+msgid "CD-ROM drive"
+msgstr "CD-ROM meghajtó"
+
+#: imagemgr.src#STR_DESCRIPTION_REMOTE_VOLUME.string.text
+msgid "Network connection"
+msgstr "Hálózati kapcsolat"
+
+#: imagemgr.src#STR_DESCRIPTION_POWERPOINT.string.text
+msgid "MS PowerPoint Document"
+msgstr "MS PowerPoint-dokumentum"
+
+#: imagemgr.src#STR_DESCRIPTION_POWERPOINT_TEMPLATE.string.text
+msgid "MS PowerPoint Template"
+msgstr "MS PowerPoint-sablon"
+
+#: imagemgr.src#STR_DESCRIPTION_POWERPOINT_SHOW.string.text
+msgid "MS PowerPoint Show"
+msgstr "MS PowerPoint-bemutató"
+
+#: imagemgr.src#STR_DESCRIPTION_SXMATH_DOC.string.text
+msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Formula"
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION-képlet"
+
+#: imagemgr.src#STR_DESCRIPTION_SXCHART_DOC.string.text
+msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Chart"
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION-diagram"
+
+#: imagemgr.src#STR_DESCRIPTION_SXDRAW_DOC.string.text
+msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Drawing"
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION-rajz"
+
+#: imagemgr.src#STR_DESCRIPTION_SXCALC_DOC.string.text
+msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet"
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION-munkafüzet"
+
+#: imagemgr.src#STR_DESCRIPTION_SXIMPRESS_DOC.string.text
+msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Presentation"
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION-bemutató"
+
+#: imagemgr.src#STR_DESCRIPTION_SXWRITER_DOC.string.text
+msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Text Document"
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION-szövegesdokumentum"
+
+#: imagemgr.src#STR_DESCRIPTION_SXGLOBAL_DOC.string.text
+msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Master Document"
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION-fődokumentum"
+
+#: imagemgr.src#STR_DESCRIPTION_MATHML_DOC.string.text
+msgid "MathML Document"
+msgstr "MathML-dokumentum"
+
+#: imagemgr.src#STR_DESCRIPTION_OO_DATABASE_DOC.string.text
+msgid "OpenDocument Database"
+msgstr "OpenDocument-adatbázis"
+
+#: imagemgr.src#STR_DESCRIPTION_OO_DRAW_DOC.string.text
+msgid "OpenDocument Drawing"
+msgstr "OpenDocument-rajz"
+
+#: imagemgr.src#STR_DESCRIPTION_OO_MATH_DOC.string.text
+msgid "OpenDocument Formula"
+msgstr "OpenDocument-képlet"
+
+#: imagemgr.src#STR_DESCRIPTION_OO_GLOBAL_DOC.string.text
+msgid "OpenDocument Master Document"
+msgstr "OpenDocument-fődokumentum"
+
+#: imagemgr.src#STR_DESCRIPTION_OO_IMPRESS_DOC.string.text
+msgid "OpenDocument Presentation"
+msgstr "OpenDocument-bemutató"
+
+#: imagemgr.src#STR_DESCRIPTION_OO_CALC_DOC.string.text
+msgid "OpenDocument Spreadsheet"
+msgstr "OpenDocument-munkafüzet"
+
+#: imagemgr.src#STR_DESCRIPTION_OO_WRITER_DOC.string.text
+msgid "OpenDocument Text"
+msgstr "OpenDocument-szöveg"
+
+#: imagemgr.src#STR_DESCRIPTION_OO_CALC_TEMPLATE.string.text
+msgid "OpenDocument Spreadsheet Template"
+msgstr "OpenDocument-munkafüzetsablon"
+
+#: imagemgr.src#STR_DESCRIPTION_OO_DRAW_TEMPLATE.string.text
+msgid "OpenDocument Drawing Template"
+msgstr "OpenDocument-rajzsablon"
+
+#: imagemgr.src#STR_DESCRIPTION_OO_IMPRESS_TEMPLATE.string.text
+msgid "OpenDocument Presentation Template"
+msgstr "OpenDocument-bemutatósablon"
+
+#: imagemgr.src#STR_DESCRIPTION_OO_WRITER_TEMPLATE.string.text
+msgid "OpenDocument Text Template"
+msgstr "OpenDocument-szövegsablon"
+
+#: imagemgr.src#STR_DESCRIPTION_EXTENSION.string.text
+msgid "%PRODUCTNAME Extension"
+msgstr "%PRODUCTNAME-kiterjesztés"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NONE.pairedlist.text
+msgid "[None]"
+msgstr "[Nincs]"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DONTKNOW.pairedlist.text
+msgid "Unknown"
+msgstr "Ismeretlen"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SYSTEM.pairedlist.text
+msgid "Default"
+msgstr "Alapértelmezett"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AFRIKAANS.pairedlist.text
+msgid "Afrikaans (South Africa)"
+msgstr "Afrikaans (Dél-Afrika)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ALBANIAN.pairedlist.text
+msgid "Albanian"
+msgstr "Albán"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_PRIMARY_ONLY.pairedlist.text
+msgid "Arabic"
+msgstr "Arab"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_ALGERIA.pairedlist.text
+msgid "Arabic (Algeria)"
+msgstr "Arab (Algéria)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_BAHRAIN.pairedlist.text
+msgid "Arabic (Bahrain)"
+msgstr "Arab (Bahrein)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_CHAD.pairedlist.text
+msgid "Arabic (Chad)"
+msgstr "Arab (Csád)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_COMOROS.pairedlist.text
+msgid "Arabic (Comoros)"
+msgstr "Arab (Comore-szigetek)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_DJIBOUTI.pairedlist.text
+msgid "Arabic (Djibouti)"
+msgstr "Arab (Dzsibuti)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_EGYPT.pairedlist.text
+msgid "Arabic (Egypt)"
+msgstr "Arab (Egyiptom)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_ERITREA.pairedlist.text
+msgid "Arabic (Eritrea)"
+msgstr "Arab (Eritrea)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_IRAQ.pairedlist.text
+msgid "Arabic (Iraq)"
+msgstr "Arab (Irak)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_ISRAEL.pairedlist.text
+msgid "Arabic (Israel)"
+msgstr "Arab (Izrael)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_JORDAN.pairedlist.text
+msgid "Arabic (Jordan)"
+msgstr "Arab (Jordánia)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_KUWAIT.pairedlist.text
+msgid "Arabic (Kuwait)"
+msgstr "Arab (Kuvait)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_LEBANON.pairedlist.text
+msgid "Arabic (Lebanon)"
+msgstr "Arab (Libanon)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_LIBYA.pairedlist.text
+msgid "Arabic (Libya)"
+msgstr "Arab (Líbia)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_MAURITANIA.pairedlist.text
+msgid "Arabic (Mauritania)"
+msgstr "Arab (Mauritánia)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_MOROCCO.pairedlist.text
+msgid "Arabic (Morocco)"
+msgstr "Arab (Marokkó)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_OMAN.pairedlist.text
+msgid "Arabic (Oman)"
+msgstr "Arab (Omán)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_PALESTINE.pairedlist.text
+msgid "Arabic (Palestine)"
+msgstr "Arab (Palesztina)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_QATAR.pairedlist.text
+msgid "Arabic (Qatar)"
+msgstr "Arab (Katar)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_SAUDI_ARABIA.pairedlist.text
+msgid "Arabic (Saudi Arabia)"
+msgstr "Arab (Szaúd-Arábia)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_SOMALIA.pairedlist.text
+msgid "Arabic (Somalia)"
+msgstr "Arab (Szomália)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_SUDAN.pairedlist.text
+msgid "Arabic (Sudan)"
+msgstr "Arab (Szudán)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_SYRIA.pairedlist.text
+msgid "Arabic (Syria)"
+msgstr "Arab (Szíria)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_TUNISIA.pairedlist.text
+msgid "Arabic (Tunisia)"
+msgstr "Arab (Tunézia)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_UAE.pairedlist.text
+msgid "Arabic (UAE)"
+msgstr "Arab (Egyesült Arab Emírségek)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_YEMEN.pairedlist.text
+msgid "Arabic (Yemen)"
+msgstr "Arab (Jemen)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARMENIAN.pairedlist.text
+msgid "Armenian"
+msgstr "Örmény"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ASSAMESE.pairedlist.text
+msgid "Assami"
+msgstr "Asszámi"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AZERI_LATIN.pairedlist.text
+msgid "Azerbaijani Latin"
+msgstr "Azerbajdzsán (Latin)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AZERI_CYRILLIC.pairedlist.text
+msgid "Azerbaijani Cyrillic"
+msgstr "Azerbajdzsán (Cirill)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BASQUE.pairedlist.text
+msgid "Basque"
+msgstr "Baszk"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BENGALI.pairedlist.text
+msgid "Bengali (India)"
+msgstr "Bengáli (India)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BULGARIAN.pairedlist.text
+msgid "Bulgarian"
+msgstr "Bolgár"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BELARUSIAN.pairedlist.text
+msgid "Belarusian"
+msgstr "Belarusz"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CATALAN.pairedlist.text
+msgid "Catalan"
+msgstr "Katalán"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_TRADITIONAL.pairedlist.text
+msgid "Chinese (traditional)"
+msgstr "Kínai (hagyományos)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_SIMPLIFIED.pairedlist.text
+msgid "Chinese (simplified)"
+msgstr "Kínai (egyszerűsített)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_HONGKONG.pairedlist.text
+msgid "Chinese (Hong Kong)"
+msgstr "Kínai (Hong Kong)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_SINGAPORE.pairedlist.text
+msgid "Chinese (Singapore)"
+msgstr "Kínai (Szingapúr)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_MACAU.pairedlist.text
+msgid "Chinese (Macau)"
+msgstr "Kínai (Makaó)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CROATIAN.pairedlist.text
+msgid "Croatian"
+msgstr "Horvát"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CZECH.pairedlist.text
+msgid "Czech"
+msgstr "Cseh"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DANISH.pairedlist.text
+msgid "Danish"
+msgstr "Dán"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DUTCH.pairedlist.text
+msgid "Dutch (Netherlands)"
+msgstr "Holland (Hollandia)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DUTCH_BELGIAN.pairedlist.text
+msgid "Dutch (Belgium)"
+msgstr "Holland (Belgium)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_US.pairedlist.text
+msgid "English (USA)"
+msgstr "Angol (USA)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_UK.pairedlist.text
+msgid "English (UK)"
+msgstr "Angol (UK)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_AUS.pairedlist.text
+msgid "English (Australia)"
+msgstr "Angol (Ausztrália)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_CAN.pairedlist.text
+msgid "English (Canada)"
+msgstr "Angol (Kanada)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_NZ.pairedlist.text
+msgid "English (New Zealand)"
+msgstr "Angol (Új-Zéland)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_EIRE.pairedlist.text
+msgid "English (Eire)"
+msgstr "Angol (Írország)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_SAFRICA.pairedlist.text
+msgid "English (South Africa)"
+msgstr "Angol (Dél-Afrika)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_JAMAICA.pairedlist.text
+msgid "English (Jamaica)"
+msgstr "Angol (Jamaica)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_CARRIBEAN.pairedlist.text
+msgid "English (Caribbean)"
+msgstr "Angol (Karib-tenger)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_BELIZE.pairedlist.text
+msgid "English (Belize)"
+msgstr "Angol (Belize)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_TRINIDAD.pairedlist.text
+msgid "English (Trinidad)"
+msgstr "Angol (Trinidad)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_ZIMBABWE.pairedlist.text
+msgid "English (Zimbabwe)"
+msgstr "Angol (Zimbabwe)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_PHILIPPINES.pairedlist.text
+msgid "English (Philippines)"
+msgstr "Angol (Fülöp-szigetek)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_INDIA.pairedlist.text
+msgid "English (India)"
+msgstr "Angol (India)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ESTONIAN.pairedlist.text
+msgid "Estonian"
+msgstr "Észt"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FINNISH.pairedlist.text
+msgid "Finnish"
+msgstr "Finn"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FAEROESE.pairedlist.text
+msgid "Faroese"
+msgstr "Färöi"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FARSI.pairedlist.text
+msgid "Farsi"
+msgstr "Fárszi"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH.pairedlist.text
+msgid "French (France)"
+msgstr "Francia (Franciaország)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_BELGIAN.pairedlist.text
+msgid "French (Belgium)"
+msgstr "Francia (Belgium)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_CANADIAN.pairedlist.text
+msgid "French (Canada)"
+msgstr "Francia (Kanada)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_SWISS.pairedlist.text
+msgid "French (Switzerland)"
+msgstr "Francia (Svájc)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_LUXEMBOURG.pairedlist.text
+msgid "French (Luxembourg)"
+msgstr "Francia (Luxemburg)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_MONACO.pairedlist.text
+msgid "French (Monaco)"
+msgstr "Francia (Monaco)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GASCON.pairedlist.text
+msgid "Gascon"
+msgstr "Gaszkonyi"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN.pairedlist.text
+msgid "German (Germany)"
+msgstr "Német (Németország)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_SWISS.pairedlist.text
+msgid "German (Switzerland)"
+msgstr "Német (Svájc)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_AUSTRIAN.pairedlist.text
+msgid "German (Austria)"
+msgstr "Német (Ausztria)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_LUXEMBOURG.pairedlist.text
+msgid "German (Luxembourg)"
+msgstr "Német (Luxemburg)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_LIECHTENSTEIN.pairedlist.text
+msgid "German (Liechtenstein)"
+msgstr "Német (Liechtenstein)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GREEK.pairedlist.text
+msgid "Greek"
+msgstr "Görög"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GUJARATI.pairedlist.text
+msgid "Gujarati"
+msgstr "Gudzsarati"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HEBREW.pairedlist.text
+msgid "Hebrew"
+msgstr "Héber"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HINDI.pairedlist.text
+msgid "Hindi"
+msgstr "Hindi"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HUNGARIAN.pairedlist.text
+msgid "Hungarian"
+msgstr "Magyar"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ICELANDIC.pairedlist.text
+msgid "Icelandic"
+msgstr "Izlandi"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_INDONESIAN.pairedlist.text
+msgid "Indonesian"
+msgstr "Indonéz"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ITALIAN.pairedlist.text
+msgid "Italian (Italy)"
+msgstr "Olasz (Olaszország)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ITALIAN_SWISS.pairedlist.text
+msgid "Italian (Switzerland)"
+msgstr "Olasz (Svájc)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_JAPANESE.pairedlist.text
+msgid "Japanese"
+msgstr "Japán"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KANNADA.pairedlist.text
+msgid "Kannada"
+msgstr "Kannada"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KASHMIRI.pairedlist.text
+msgid "Kashmiri (Kashmir)"
+msgstr "Kasmíri (Kasmír)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KASHMIRI_INDIA.pairedlist.text
+msgid "Kashmiri (India)"
+msgstr "Kasmíri (India)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KAZAK.pairedlist.text
+msgid "Kazak"
+msgstr "Kazah"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KONKANI.pairedlist.text
+msgid "Konkani"
+msgstr "Konkani"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KOREAN.pairedlist.text
+msgid "Korean (RoK)"
+msgstr "Koreai (Dél-Korea)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LATVIAN.pairedlist.text
+msgid "Latvian"
+msgstr "Lett"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LITHUANIAN.pairedlist.text
+msgid "Lithuanian"
+msgstr "Litván"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MACEDONIAN.pairedlist.text
+msgid "Macedonian"
+msgstr "Macedón"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAY_MALAYSIA.pairedlist.text
+msgid "Malay (Malaysia)"
+msgstr "Maláj (Malajzia)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAY_BRUNEI_DARUSSALAM.pairedlist.text
+msgid "Malay (Brunei Darussalam)"
+msgstr "Maláj (Brunei Darussalam)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAYALAM.pairedlist.text
+msgid "Malayalam"
+msgstr "Malajálam"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MANIPURI.pairedlist.text
+msgid "Manipuri"
+msgstr "Manipuri"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MARATHI.pairedlist.text
+msgid "Marathi"
+msgstr "Maráthi"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NEPALI.pairedlist.text
+msgid "Nepali (Nepal)"
+msgstr "Nepáli (Nepál)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NEPALI_INDIA.pairedlist.text
+msgid "Nepali (India)"
+msgstr "Nepáli (India)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NORWEGIAN_BOKMAL.pairedlist.text
+msgid "Norwegian, Bokmål"
+msgstr "Norvég (Bokmål)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NORWEGIAN_NYNORSK.pairedlist.text
+msgid "Norwegian, Nynorsk"
+msgstr "Norvég (Nynorsk)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ORIYA.pairedlist.text
+msgid "Oriya"
+msgstr "Orija"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_POLISH.pairedlist.text
+msgid "Polish"
+msgstr "Lengyel"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PORTUGUESE.pairedlist.text
+msgid "Portuguese (Portugal)"
+msgstr "Portugál (Portugália)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PORTUGUESE_BRAZILIAN.pairedlist.text
+msgid "Portuguese (Brazil)"
+msgstr "Portugál (Brazília)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PUNJABI.pairedlist.text
+msgid "Punjabi"
+msgstr "Pandzsábi"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_RHAETO_ROMAN.pairedlist.text
+msgid "Rhaeto-Romance"
+msgstr "Rétoromán"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ROMANIAN.pairedlist.text
+msgid "Romanian"
+msgstr "Román"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_RUSSIAN.pairedlist.text
+msgid "Russian"
+msgstr "Orosz"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SANSKRIT.pairedlist.text
+msgid "Sanskrit"
+msgstr "Szanszkrit"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SERBIAN_CYRILLIC.pairedlist.text
+msgid "Serbian Cyrillic (Serbia and Montenegro)"
+msgstr "Szerb (cirill)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SERBIAN_LATIN.pairedlist.text
+msgid "Serbian Latin (Serbia and Montenegro)"
+msgstr "Szerb (latin)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_CYRILLIC_SERBIA.pairedlist.text
+msgid "Serbian Cyrillic (Serbia)"
+msgstr "Szerb (cirill) (Szerbia)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_LATIN_SERBIA.pairedlist.text
+msgid "Serbian Latin (Serbia)"
+msgstr "Szerb (latin) (Szerbia)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_CYRILLIC_MONTENEGRO.pairedlist.text
+msgid "Serbian Cyrillic (Montenegro)"
+msgstr "Szerb (cirill) (Montenegró)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_LATIN_MONTENEGRO.pairedlist.text
+msgid "Serbian Latin (Montenegro)"
+msgstr "Szerb (latin) (Montenegró)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SINDHI.pairedlist.text
+msgid "Sindhi"
+msgstr "Szindhi"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SLOVAK.pairedlist.text
+msgid "Slovak"
+msgstr "Szlovák"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SLOVENIAN.pairedlist.text
+msgid "Slovenian"
+msgstr "Szlovén"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH.pairedlist.text
+msgid "Spanish (Spain)"
+msgstr "Spanyol (Spanyolország)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_MEXICAN.pairedlist.text
+msgid "Spanish (Mexico)"
+msgstr "Spanyol (Mexikó)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_GUATEMALA.pairedlist.text
+msgid "Spanish (Guatemala)"
+msgstr "Spanyol (Guatemala)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_COSTARICA.pairedlist.text
+msgid "Spanish (Costa Rica)"
+msgstr "Spanyol (Costa Rica)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PANAMA.pairedlist.text
+msgid "Spanish (Panama)"
+msgstr "Spanyol (Panama)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_DOMINICAN_REPUBLIC.pairedlist.text
+msgid "Spanish (Dom. Rep.)"
+msgstr "Spanyol (Dominikai Köztársaság)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_VENEZUELA.pairedlist.text
+msgid "Spanish (Venezuela)"
+msgstr "Spanyol (Venezuela)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_COLOMBIA.pairedlist.text
+msgid "Spanish (Colombia)"
+msgstr "Spanyol (Kolumbia)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PERU.pairedlist.text
+msgid "Spanish (Peru)"
+msgstr "Spanyol (Peru)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_ARGENTINA.pairedlist.text
+msgid "Spanish (Argentina)"
+msgstr "Spanyol (Argentína)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_ECUADOR.pairedlist.text
+msgid "Spanish (Ecuador)"
+msgstr "Spanyol (Ecuador)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_CHILE.pairedlist.text
+msgid "Spanish (Chile)"
+msgstr "Spanyol (Chile)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_URUGUAY.pairedlist.text
+msgid "Spanish (Uruguay)"
+msgstr "Spanyol (Uruguay)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PARAGUAY.pairedlist.text
+msgid "Spanish (Paraguay)"
+msgstr "Spanyol (Paraguay)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_BOLIVIA.pairedlist.text
+msgid "Spanish (Bolivia)"
+msgstr "Spanyol (Bolívia)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_EL_SALVADOR.pairedlist.text
+msgid "Spanish (El Salvador)"
+msgstr "Spanyol (El Salvador)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_HONDURAS.pairedlist.text
+msgid "Spanish (Honduras)"
+msgstr "Spanyol (Honduras)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_NICARAGUA.pairedlist.text
+msgid "Spanish (Nicaragua)"
+msgstr "Spanyol (Nicaragua)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PUERTO_RICO.pairedlist.text
+msgid "Spanish (Puerto Rico)"
+msgstr "Spanyol (Puerto Rico)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWAHILI.pairedlist.text
+msgid "Swahili (Kenya)"
+msgstr "Szuahéli (Kenya)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWEDISH.pairedlist.text
+msgid "Swedish (Sweden)"
+msgstr "Svéd (Svédország)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWEDISH_FINLAND.pairedlist.text
+msgid "Swedish (Finland)"
+msgstr "Svéd (Finnország)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TAJIK.pairedlist.text
+msgid "Tajik"
+msgstr "Tádzsik"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TAMIL.pairedlist.text
+msgid "Tamil"
+msgstr "Tamil"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TATAR.pairedlist.text
+msgid "Tatar"
+msgstr "Tatár"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TELUGU.pairedlist.text
+msgid "Telugu"
+msgstr "Telugu"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_THAI.pairedlist.text
+msgid "Thai"
+msgstr "Thai"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TURKISH.pairedlist.text
+msgid "Turkish"
+msgstr "Török"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_URDU_PAKISTAN.pairedlist.text
+msgid "Urdu (Pakistan)"
+msgstr "Urdu (Pakisztán)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_URDU_INDIA.pairedlist.text
+msgid "Urdu (India)"
+msgstr "Urdu (India)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UKRAINIAN.pairedlist.text
+msgid "Ukrainian"
+msgstr "Ukrán"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UZBEK_LATIN.pairedlist.text
+msgid "Uzbek Latin"
+msgstr "Üzbég (latin)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_WELSH.pairedlist.text
+msgid "Welsh"
+msgstr "Velszi"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER1.pairedlist.text
+msgid "User 1"
+msgstr "Felhasználói 1"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER2.pairedlist.text
+msgid "User 2"
+msgstr "Felhasználói 2"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER3.pairedlist.text
+msgid "User 3"
+msgstr "Felhasználói 3"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER4.pairedlist.text
+msgid "User 4"
+msgstr "Felhasználói 4"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER5.pairedlist.text
+msgid "User 5"
+msgstr "Felhasználói 5"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER6.pairedlist.text
+msgid "User 6"
+msgstr "Felhasználói 6"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER7.pairedlist.text
+msgid "User 7"
+msgstr "Felhasználói 7"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER8.pairedlist.text
+msgid "User 8"
+msgstr "Felhasználói 8"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER9.pairedlist.text
+msgid "User 9"
+msgstr "Felhasználói 9"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LATIN.pairedlist.text
+msgid "Latin"
+msgstr "Latin"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ESPERANTO.pairedlist.text
+msgid "Esperanto"
+msgstr "Eszperantó"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KINYARWANDA.pairedlist.text
+msgid "Kinyarwanda (Rwanda)"
+msgstr "Kinyarwanda (Ruanda)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MAORI_NEW_ZEALAND.pairedlist.text
+msgid "Maori (New Zealand)"
+msgstr "Maori (Új-Zéland)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GALICIAN.pairedlist.text
+msgid "Galician"
+msgstr "Galíciai"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DHIVEHI.pairedlist.text
+msgid "Dhivehi"
+msgstr "Divehi"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SEPEDI.pairedlist.text
+msgid "Northern Sotho"
+msgstr "Északi sotho"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GAELIC_SCOTLAND.pairedlist.text
+msgid "Gaelic (Scotland)"
+msgstr "Gael (Skócia)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MONGOLIAN.pairedlist.text
+msgid "Mongolian"
+msgstr "Mongol"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_INTERLINGUA.pairedlist.text
+msgid "Interlingua"
+msgstr "Interlingua"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BOSNIAN_BOSNIA_HERZEGOVINA.pairedlist.text
+msgid "Bosnian"
+msgstr "Bosnyák"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BENGALI_BANGLADESH.pairedlist.text
+msgid "Bengali (Bangladesh)"
+msgstr "Bengáli (Bangladesh)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_OCCITAN.pairedlist.text
+msgid "Occitan"
+msgstr "Okcitán"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KHMER.pairedlist.text
+msgid "Khmer"
+msgstr "Khmer"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_TURKEY.pairedlist.text
+msgid "Kurdish (Turkey)"
+msgstr "Kurd (Törökország)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_SYRIA.pairedlist.text
+msgid "Kurdish (Syria)"
+msgstr "Kurd (Szíria)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_IRAQ.pairedlist.text
+msgid "Kurdish (Iraq)"
+msgstr "Kurd (Irak)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_IRAN.pairedlist.text
+msgid "Kurdish (Iran)"
+msgstr "Kurd (Irán)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN.pairedlist.text
+msgid "Sardinian"
+msgstr "Szárd"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DZONGKHA.pairedlist.text
+msgid "Dzongkha"
+msgstr "Dzongkha"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SWAHILI_TANZANIA.pairedlist.text
+msgid "Swahili (Tanzania)"
+msgstr "Szuahéli (Tanzánia)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LAO.pairedlist.text
+msgid "Lao"
+msgstr "Lao"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GAELIC_IRELAND.pairedlist.text
+msgid "Irish"
+msgstr "Ír"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TIBETAN.pairedlist.text
+msgid "Tibetan (PR China)"
+msgstr "Tibeti (Kína)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GEORGIAN.pairedlist.text
+msgid "Georgian"
+msgstr "Grúz"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRISIAN_NETHERLANDS.pairedlist.text
+msgid "Frisian"
+msgstr "Fríz"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TSWANA.pairedlist.text
+msgid "Tswana (South Africa)"
+msgstr "Csvana (Dél-Afrika)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ZULU.pairedlist.text
+msgid "Zulu"
+msgstr "Zulu"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_VIETNAMESE.pairedlist.text
+msgid "Vietnamese"
+msgstr "Vietnami"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BRETON.pairedlist.text
+msgid "Breton"
+msgstr "Breton"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KALAALLISUT.pairedlist.text
+msgid "Kalaallisut"
+msgstr "Kalaallisut"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_NDEBELE_SOUTH.pairedlist.text
+msgid "Ndebele, South"
+msgstr "Ndebele (déli)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SESOTHO.pairedlist.text
+msgid "Southern Sotho"
+msgstr "Déli sotho"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SWAZI.pairedlist.text
+msgid "Swazi"
+msgstr "Szvázi"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TSONGA.pairedlist.text
+msgid "Tsonga"
+msgstr "Conga"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_VENDA.pairedlist.text
+msgid "Venda"
+msgstr "Venda"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TSWANA_BOTSWANA.pairedlist.text
+msgid "Tswana (Botswana)"
+msgstr "Csvana (Botswana)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_XHOSA.pairedlist.text
+msgid "Xhosa"
+msgstr "Xhosza"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SINHALESE_SRI_LANKA.pairedlist.text
+msgid "Sinhala"
+msgstr "Szingaléz"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MOORE.pairedlist.text
+msgid "Moore"
+msgstr "More"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BAMBARA.pairedlist.text
+msgid "Bambara"
+msgstr "Bambara"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_AKAN.pairedlist.text
+msgid "Akan"
+msgstr "Akan"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LUXEMBOURGISH.pairedlist.text
+msgid "Luxembourgish"
+msgstr "Luxemburgi"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_FRIULIAN.pairedlist.text
+msgid "Friulian"
+msgstr "Friuli"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_FIJIAN.pairedlist.text
+msgid "Fijian"
+msgstr "Fidzsi"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_AFRIKAANS_NAMIBIA.pairedlist.text
+msgid "Afrikaans (Namibia)"
+msgstr "Afrikaans (Namíbia)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ENGLISH_NAMIBIA.pairedlist.text
+msgid "English (Namibia)"
+msgstr "Angol (Namíbia)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_WALLOON.pairedlist.text
+msgid "Walloon"
+msgstr "Vallon"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_COPTIC.pairedlist.text
+msgid "Coptic"
+msgstr "Kopt"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TIGRIGNA_ERITREA.pairedlist.text
+msgid "Tigrigna (Eritrea)"
+msgstr "Tigrinya (Eritrea)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TIGRIGNA_ETHIOPIA.pairedlist.text
+msgid "Tigrigna (Ethiopia)"
+msgstr "Tigrinya (Etiópia)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AMHARIC_ETHIOPIA.pairedlist.text
+msgid "Amharic"
+msgstr "Amhara"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KIRGHIZ.pairedlist.text
+msgid "Kirghiz"
+msgstr "Kirgiz"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GERMAN_BELGIUM.pairedlist.text
+msgid "German (Belgium)"
+msgstr "Német (Belgium)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_CHUVASH.pairedlist.text
+msgid "Chuvash"
+msgstr "Csuvas"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BURMESE.pairedlist.text
+msgid "Burmese"
+msgstr "Burmai"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HAUSA_NIGERIA.pairedlist.text
+msgid "Hausa (Nigeria)"
+msgstr "Hausza (Nigéria)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_HAUSA_GHANA.pairedlist.text
+msgid "Hausa (Ghana)"
+msgstr "Hausza (Ghána)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_EWE_GHANA.pairedlist.text
+msgid "Éwé"
+msgstr "Eve"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ENGLISH_GHANA.pairedlist.text
+msgid "English (Ghana)"
+msgstr "Angol (Ghána)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SANGO.pairedlist.text
+msgid "Sango"
+msgstr "Szango"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TAGALOG.pairedlist.text
+msgid "Tagalog"
+msgstr "Tagalog"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GANDA.pairedlist.text
+msgid "Ganda"
+msgstr "Ganda"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LINGALA_DRCONGO.pairedlist.text
+msgid "Lingala"
+msgstr "Lingala"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LOW_GERMAN.pairedlist.text
+msgid "Low German"
+msgstr "Alnémet"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_HILIGAYNON.pairedlist.text
+msgid "Hiligaynon"
+msgstr "Hiligaynon"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_NYANJA.pairedlist.text
+msgid "Nyanja"
+msgstr "Nyandzsa"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KASHUBIAN.pairedlist.text
+msgid "Kashubian"
+msgstr "Kasub"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SPANISH_CUBA.pairedlist.text
+msgid "Spanish (Cuba)"
+msgstr "Spanyol (Kuba)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TETUN.pairedlist.text
+msgid "Tetun (Indonesia)"
+msgstr "Tetun (Indonézia)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_QUECHUA_NORTH_BOLIVIA.pairedlist.text
+msgid "Quechua (Bolivia, North)"
+msgstr "Kecsua (Észak-Bolívia)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_QUECHUA_SOUTH_BOLIVIA.pairedlist.text
+msgid "Quechua (Bolivia, South)"
+msgstr "Kecsua (Dél-Bolívia)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SOMALI.pairedlist.text
+msgid "Somali"
+msgstr "Szomáli"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_INARI.pairedlist.text
+msgid "Sami, Inari (Finland)"
+msgstr "Lapp, inari (Finnország)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_LULE_NORWAY.pairedlist.text
+msgid "Sami, Lule (Norway)"
+msgstr "Lapp, lule (Norvégia)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_LULE_SWEDEN.pairedlist.text
+msgid "Sami, Lule (Sweden)"
+msgstr "Lapp, lule (Svédország)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_NORTHERN_FINLAND.pairedlist.text
+msgid "Sami, Northern (Finland)"
+msgstr "Lapp, északi (Finnország)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_NORTHERN_NORWAY.pairedlist.text
+msgid "Sami, Northern (Norway)"
+msgstr "Lapp, északi (Norvégia)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_NORTHERN_SWEDEN.pairedlist.text
+msgid "Sami, Northern (Sweden)"
+msgstr "Lapp, északi (Svédország)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_SKOLT.pairedlist.text
+msgid "Sami, Skolt (Finland)"
+msgstr "Lapp, skolt (Finnország)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_SOUTHERN_NORWAY.pairedlist.text
+msgid "Sami, Southern (Norway)"
+msgstr "Lapp, déli (Norvégia)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_SOUTHERN_SWEDEN.pairedlist.text
+msgid "Sami, Southern (Sweden)"
+msgstr "Lapp, déli (Svédország)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SAMI_KILDIN_RUSSIA.pairedlist.text
+msgid "Sami, Kildin (Russia)"
+msgstr "Lapp, kildin (Oroszország)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GUARANI_PARAGUAY.pairedlist.text
+msgid "Guaraní, Paraguayan"
+msgstr "Guaraní, Paraguay"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BODO_INDIA.pairedlist.text
+msgid "Bodo"
+msgstr "Bodo"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_DOGRI_INDIA.pairedlist.text
+msgid "Dogri"
+msgstr "Dogri"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MAITHILI_INDIA.pairedlist.text
+msgid "Maithili"
+msgstr "Maithili"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SANTALI_INDIA.pairedlist.text
+msgid "Santali"
+msgstr "Szantáli"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TETUN_TIMOR_LESTE.pairedlist.text
+msgid "Tetun (Timor-Leste)"
+msgstr "Tetun (Kelet-Timor)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TURKMEN.pairedlist.text
+msgid "Turkmen"
+msgstr "Türkmén"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALTESE.pairedlist.text
+msgid "Maltese"
+msgstr "Máltai"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TOK_PISIN.pairedlist.text
+msgid "Tok Pisin"
+msgstr "Tok-piszin"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SHUSWAP.pairedlist.text
+msgid "Shuswap"
+msgstr "Shuswap"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_OROMO.pairedlist.text
+msgid "Oromo"
+msgstr "Oromo"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ANCIENT_GREEK.pairedlist.text
+msgid "Greek, Ancient"
+msgstr "Ógörög"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_YIDDISH.pairedlist.text
+msgid "Yiddish (Israel)"
+msgstr "Jiddis (Izrael)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_QUECHUA_ECUADOR.pairedlist.text
+msgid "Quechua (Ecuador)"
+msgstr "Kecsua (Ecuador)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UIGHUR_CHINA.pairedlist.text
+msgid "Uyghur"
+msgstr "Ujgur"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ASTURIAN.pairedlist.text
+msgid "Asturian"
+msgstr "Asztúriai"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UPPER_SORBIAN_GERMANY.pairedlist.text
+msgid "Sorbian, Upper"
+msgstr "Felső-szorb"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LOWER_SORBIAN_GERMANY.pairedlist.text
+msgid "Sorbian, Lower"
+msgstr "Alsó-szorb"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LATGALIAN.pairedlist.text
+msgid "Latgalian"
+msgstr "Latgal"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MAORE.pairedlist.text
+msgid "Maore"
+msgstr "Maore"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BUSHI.pairedlist.text
+msgid "Bushi"
+msgstr "Bushi"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TAHITIAN.pairedlist.text
+msgid "Tahitian"
+msgstr "Tahiti"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MALAGASY_PLATEAU.pairedlist.text
+msgid "Malagasy, Plateau"
+msgstr "Malgas, magasföldi"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PAPIAMENTU.pairedlist.text
+msgid "Papiamentu (Netherlands Antilles)"
+msgstr "Papiamentu (Holland-Antillák)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_PAPIAMENTU_ARUBA.pairedlist.text
+msgid "Papiamento (Aruba)"
+msgstr "Papiamento (Aruba)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN_CAMPIDANESE.pairedlist.text
+msgid "Sardinian, Campidanese"
+msgstr "Szárd, Campidanese"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN_GALLURESE.pairedlist.text
+msgid "Sardinian, Gallurese"
+msgstr "Szárd, Gallurese"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN_LOGUDORESE.pairedlist.text
+msgid "Sardinian, Logudorese"
+msgstr "Szárd, Logudorese"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN_SASSARESE.pairedlist.text
+msgid "Sardinian, Sassarese"
+msgstr "Szárd, Sassarese"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BAFIA.pairedlist.text
+msgid "Bafia"
+msgstr "Bafia"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GIKUYU.pairedlist.text
+msgid "Gikuyu"
+msgstr "Gikuyu"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_YORUBA.pairedlist.text
+msgid "Yoruba"
+msgstr "Joruba"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_RUSYN_UKRAINE.pairedlist.text
+msgid "Rusyn (Ukraine)"
+msgstr "Ruszin (Ukrajna)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_RUSYN_SLOVAKIA.pairedlist.text
+msgid "Rusyn (Slovakia)"
+msgstr "Ruszin (Szlovákia)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_YIDDISH_US.pairedlist.text
+msgid "Yiddish (USA)"
+msgstr "Jiddis (USA)"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HAWAIIAN_UNITED_STATES.pairedlist.text
+msgid "Hawaiian"
+msgstr "Hawai"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LIMBU.pairedlist.text
+msgid "Limbu"
+msgstr "Limbu"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LOJBAN.pairedlist.text
+msgid "Lojban"
+msgstr "Lojban"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KABYLE.pairedlist.text
+msgid "Kabyle"
+msgstr "Kabil"
+
+#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_HAITIAN.pairedlist.text
+msgid "Haitian"
+msgstr "Haiti"
+
+#: undo.src#STR_UNDO.string.text
+msgid "Undo: "
+msgstr "Visszavonás"
+
+#: undo.src#STR_REDO.string.text
+msgid "Re~do: "
+msgstr "Új~ra"
+
+#: undo.src#STR_REPEAT.string.text
+msgid "~Repeat: "
+msgstr "Is~mét:"
+
+#~ msgid "Slovakian"
+#~ msgstr "Szlovák"
+
+#~ msgid "Yiddish"
+#~ msgstr "Jiddis"
+
+#~ msgid "Error"
+#~ msgstr "Hiba"
+
+#~ msgid "Warning"
+#~ msgstr "Figyelmeztetés"
+
+#~ msgid "$(ERR) loading the template $(ARG1)"
+#~ msgstr "Hiba a(z) $(ARG1) sablon betöltése közben: $(ERR)"
+
+#~ msgctxt "errtxt.src#RID_ERRCTX.ERRCTX_SFX_SAVEDOC.string.text"
+#~ msgid "$(ERR) saving the document $(ARG1)"
+#~ msgstr "Hiba a(z) $(ARG1) dokumentum mentése közben: $(ERR)"
+
+#~ msgctxt "errtxt.src#RID_ERRCTX.ERRCTX_SFX_SAVEASDOC.string.text"
+#~ msgid "$(ERR) saving the document $(ARG1)"
+#~ msgstr "Hiba a(z) $(ARG1) dokumentum mentése közben: $(ERR)"
+
+#~ msgid "$(ERR) displaying doc. information for document $(ARG1)"
+#~ msgstr ""
+#~ "Hiba a(z) $(ARG1) dokumentumhoz kapcsolódó adatok megjelenítése közben: "
+#~ "$(ERR)"
+
+#~ msgid "$(ERR) writing document $(ARG1) as template"
+#~ msgstr "Hiba a(z) $(ARG1) dokumentum sablonként mentése közben: $(ERR)"
+
+#~ msgid "$(ERR) copying or moving document contents"
+#~ msgstr "Hiba a dokumentum tartalmának másolása vagy áthelyezése közben: $(ERR)"
+
+#~ msgid "$(ERR) starting the Document Manager"
+#~ msgstr "Hiba a Dokumentumkezelő indítása közben: $(ERR)"
+
+#~ msgid "$(ERR) loading document $(ARG1)"
+#~ msgstr "Hiba a(z) $(ARG1) dokumentum betöltése közben: $(ERR)"
+
+#~ msgctxt "errtxt.src#RID_ERRCTX.ERRCTX_SFX_NEWDOCDIRECT.string.text"
+#~ msgid "$(ERR) creating a new document"
+#~ msgstr "Hiba az új dokumentum létrehozása közben: $(ERR)"
+
+#~ msgctxt "errtxt.src#RID_ERRCTX.ERRCTX_SFX_NEWDOC.string.text"
+#~ msgid "$(ERR) creating a new document"
+#~ msgstr "Hiba az új dokumentum létrehozása közben: $(ERR)"
+
+#~ msgid "$(ERR) expanding entry"
+#~ msgstr "Hiba a bejegyzés kiterjesztése közben: $(ERR)"
+
+#~ msgid "$(ERR) loading BASIC of document $(ARG1)"
+#~ msgstr "Hiba a(z) $(ARG1) dokumentum BASIC-elemeinek betöltése közben: $(ERR)"
+
+#~ msgid "$(ERR) searching for an address"
+#~ msgstr "Hiba címkeresés közben: $(ERR)"
+
+#~ msgid "Abort"
+#~ msgstr "Megszakítás"
+
+#~ msgid "Nonexistent object"
+#~ msgstr "Nem létező objektum"
+
+#~ msgid "Object already exists"
+#~ msgstr "Az objektum már létezik"
+
+#~ msgid "Object not accessible"
+#~ msgstr "Az objektum nem hozzáférhető"
+
+#~ msgid "Inadmissible path"
+#~ msgstr "Nem engedélyezett útvonal"
+
+#~ msgid "Locking problem"
+#~ msgstr "Zárolási probléma"
+
+#~ msgid "Wrong parameter"
+#~ msgstr "Rossz paraméter"
+
+#~ msgid "Resource exhausted"
+#~ msgstr "Az erőforrás kimerült"
+
+#~ msgid "Action not supported"
+#~ msgstr "A művelet nem támogatott"
+
+#~ msgid "Read-Error"
+#~ msgstr "Olvasási hiba"
+
+#~ msgid "Write Error"
+#~ msgstr "Írási hiba"
+
+#~ msgid "unknown"
+#~ msgstr "ismeretlen"
+
+#~ msgid "Version Incompatibility"
+#~ msgstr "Nem kompatibilis verzió"
+
+#~ msgctxt "errtxt.src#RID_ERRHDL.ERRCODE_CLASS_GENERAL.string.text"
+#~ msgid "General Error"
+#~ msgstr "Általános hiba"
+
+#~ msgid "Incorrect format"
+#~ msgstr "Nem megfelelő formátum"
+
+#~ msgid "Error creating object"
+#~ msgstr "Hiba az objektum létrehozása közben"
+
+#~ msgid "Inadmissible value or data type"
+#~ msgstr "Nem engedélyezett érték vagy adattípus"
+
+#~ msgid "BASIC runtime error"
+#~ msgstr "Hiba történt a BASIC-program futtatása közben."
+
+#~ msgid "BASIC syntax error"
+#~ msgstr "BASIC szintaktikai hiba"
+
+#~ msgctxt "errtxt.src#RID_ERRHDL.1.string.text"
+#~ msgid "General Error"
+#~ msgstr "Általános hiba"
+
+#~ msgid "General input/output error."
+#~ msgstr "Általános I/O-hiba."
+
+#~ msgid "Invalid file name."
+#~ msgstr "Hibás fájlnév."
+
+#~ msgid "Nonexistent file."
+#~ msgstr "Nemlétező fájl."
+
+#~ msgid "File already exists."
+#~ msgstr "A fájl már létezik."
+
+#~ msgid "The object is not a directory."
+#~ msgstr "Az objektum nem könyvtár."
+
+#~ msgid "The object is not a file."
+#~ msgstr "Az objektum nem fájl."
+
+#~ msgid "The specified device is invalid."
+#~ msgstr "A megadott eszköz érvénytelen."
+
+#~ msgid ""
+#~ "The object cannot be accessed\n"
+#~ "due to insufficient user rights."
+#~ msgstr ""
+#~ "Az objektum nem érhető el, mert a felhasználó\n"
+#~ "nem rendelkezik a szükséges jogosultságokkal."
+
+#~ msgid "Sharing violation while accessing the object."
+#~ msgstr "Megosztási hiba lépett fel. Az objektum nem hozzáférhető."
+
+#~ msgid "No more space on device."
+#~ msgstr "Az eszközön nincs több szabad hely."
+
+#~ msgid ""
+#~ "This operation cannot be run on\n"
+#~ "files containing wildcards."
+#~ msgstr ""
+#~ "Ez a művelet nem hajtható végre, ha a megadott\n"
+#~ "fájlnév helyettesítő karaktert tartalmaz."
+
+#~ msgid "This operation is not supported on this operating system."
+#~ msgstr "Ezt a műveletet ez az operációs rendszer nem támogatja."
+
+#~ msgid "There are too many files open."
+#~ msgstr "Túl sok fájl van nyitva."
+
+#~ msgid "Data could not be read from the file."
+#~ msgstr "A fájl olvasása nem sikerült."
+
+#~ msgid "The file could not be written."
+#~ msgstr "A fájl írása nem sikerült."
+
+#~ msgid "The operation could not be run due to insufficient memory."
+#~ msgstr "A művelet végrehajtásához kevés a memória."
+
+#~ msgid "The seek operation could not be run."
+#~ msgstr "A „seek” művelet nem hajtható végre."
+
+#~ msgid "The tell operation could not be run."
+#~ msgstr "A „tell” művelet nem hajtható végre."
+
+#~ msgid "Incorrect file version."
+#~ msgstr "Nem megfelelő fájlverzió."
+
+#~ msgid "Incorrect file format."
+#~ msgstr "Nem megfelelő fájlformátum."
+
+#~ msgid "The file name contains invalid characters."
+#~ msgstr "A fájlnév nem megengedett karaktereket tartalmaz"
+
+#~ msgid "An unknown I/O error has occurred."
+#~ msgstr "Ismeretlen I/O-hiba."
+
+#~ msgid "An invalid attempt was made to access the file."
+#~ msgstr "Hibás fájlhozzáférési műveletet kezdeményeztek."
+
+#~ msgid "The file could not be created."
+#~ msgstr "A fájl nem hozható létre."
+
+#~ msgid "The operation was started under an invalid parameter."
+#~ msgstr "A műveletet hibás paraméterekkel próbálták indítani."
+
+#~ msgid "The operation on the file was aborted."
+#~ msgstr "A fájlművelet megszakadt."
+
+#~ msgid "Path to the file does not exist."
+#~ msgstr "A fájl elérési útja nem létezik."
+
+#~ msgid "An object cannot be copied into itself."
+#~ msgstr "Az objektum nem másolható önmagába"
+
+#~ msgid "The default template could not be opened."
+#~ msgstr "Az alapértelmezett sablont nem lehet megnyitni."
+
+#~ msgid "The specified template could not be found."
+#~ msgstr "A megadott sablon nem található."
+
+#~ msgid "The file cannot be used as template."
+#~ msgstr "A fájl nem használható sablonként."
+
+#~ msgid ""
+#~ "Document information could not be read from the file because\n"
+#~ "the document information format is unknown or because document information "
+#~ "does not\n"
+#~ "exist."
+#~ msgstr ""
+#~ "A dokumentuminformáció nem nyerhető ki\n"
+#~ "a fájlból, mert a formátuma ismeretlen,\n"
+#~ "vagy nem szerepel a fájlban."
+
+#~ msgid "This document has already been opened for editing."
+#~ msgstr "Ez a dokumentum már meg van nyitva szerkesztésre."
+
+#~ msgid "The wrong password has been entered."
+#~ msgstr "A megadott jelszó hibás."
+
+#~ msgid "Error reading file."
+#~ msgstr "Hiba a fájl olvasása közben."
+
+#~ msgid "The document was opened as read-only."
+#~ msgstr "A dokumentum csak olvashatóként van megnyitva."
+
+#~ msgid "General OLE Error."
+#~ msgstr "Általános OLE-hiba."
+
+#~ msgid "The host name $(ARG1) could not be resolved."
+#~ msgstr "$(ARG1): a gépnév nem oldható fel."
+
+#~ msgid "Could not establish network connection to $(ARG1)."
+#~ msgstr "Nem létesíthető hálózati kapcsolat a(z) $(ARG1) géppel."
+
+#~ msgid ""
+#~ "Error reading data from the network.\n"
+#~ "Server error message: $(ARG1)."
+#~ msgstr ""
+#~ "Hiba a hálózatról történő adatolvasás közben.\n"
+#~ "A kiszolgáló hibaüzenete: $(ARG1)."
+
+#~ msgid ""
+#~ "Error transferring data to the network.\n"
+#~ "Server error message: $(ARG1)."
+#~ msgstr ""
+#~ "Hiba történt az adat hálózatra továbbítása közben.\n"
+#~ "A kiszolgáló hibaüzenete: $(ARG1)."
+
+#~ msgid "General network error has occurred."
+#~ msgstr "Általános hálózathiba."
+
+#~ msgid ""
+#~ "The requested network data is not available in the cache and cannot be "
+#~ "transmitted as the Online mode has not be activated."
+#~ msgstr ""
+#~ "A kért adat nem található a gyorsítótárban, és kapcsolat nélküli módban nem "
+#~ "szerezhető be a hálózaton keresztül sem."
+
+#~ msgid "Should the $(ARG1) Style be replaced?"
+#~ msgstr "Kívánja cserélni a(z) $(ARG1) stílust?"
+
+#~ msgid "A filter has not been found."
+#~ msgstr "Nem található szűrő."
+
+#~ msgid "The original could not be determined."
+#~ msgstr "Az eredeti nem határozható meg."
+
+#~ msgid "The contents could not be created."
+#~ msgstr "A tartalom nem hozható létre."
+
+#~ msgid "The link could not be created."
+#~ msgstr "A hivatkozás nem hozható létre."
+
+#~ msgid "The link format is invalid."
+#~ msgstr "A hivatkozás formátuma érvénytelen."
+
+#~ msgid "The configuration of the icon display is invalid."
+#~ msgstr "Az ikon megjelenítésének beállítása hibás."
+
+#~ msgid "The configuration of the icon display can not be saved."
+#~ msgstr "Az ikon megjelenítésének beállítása nem menthető."
+
+#~ msgid "The configuration of the icon display could not be deleted."
+#~ msgstr "Az ikon megjelenítésének beállítása nem törölhető."
+
+#~ msgid "Contents cannot be renamed."
+#~ msgstr "A tartalom nem nevezhető át."
+
+#~ msgid "The bookmark folder is invalid."
+#~ msgstr "A könyvjelzőmappa érvénytelen."
+
+#~ msgid "The configuration of the URLs to be saved locally could not be saved."
+#~ msgstr "A helyben tárolandó URL-ek beállításai nem menthetőek."
+
+#~ msgid "The configuration format of the URLs to be saved locally is invalid."
+#~ msgstr "A helyben tárolandó URL-ek beállításának formátuma nem megfelelő."
+
+#~ msgid "This action cannot be applied to a document that does not exist."
+#~ msgstr "A művelet nem hajtható végre nem létező dokumentumon."
+
+#~ msgid "The link refers to an invalid target."
+#~ msgstr "A hivatkozás érvénytelen célra mutat."
+
+#~ msgid "The Recycle Bin path is invalid."
+#~ msgstr "A Lomtár elérési útja érvénytelen."
+
+#~ msgid "The entry could not be restored."
+#~ msgstr "A bejegyzés nem állítható vissza."
+
+#~ msgid "The file name is too long for the target file system."
+#~ msgstr "A megadott fájlnév túl hosszú a célfájlrendszer számára."
+
+#~ msgid "The details for running the function are incomplete."
+#~ msgstr "A függvény futtatásához nem áll rendelkezésre minden szükséges részlet."
+
+#~ msgctxt "errtxt.src#RID_ERRHDL.ERRCODE_SFX_INVALIDSYNTAX.string.text"
+#~ msgid "The input syntax is invalid."
+#~ msgstr "A beviteli szintaxis érvénytelen."
+
+#~ msgctxt "errtxt.src#RID_ERRHDL.ERRCODE_SFX_CANTCREATEFOLDER.string.text"
+#~ msgid "The input syntax is invalid."
+#~ msgstr "A beviteli szintaxis érvénytelen."
+
+#~ msgctxt "errtxt.src#RID_ERRHDL.ERRCODE_SFX_CANTRENAMEFOLDER.string.text"
+#~ msgid "The input syntax is invalid."
+#~ msgstr "A beviteli szintaxis érvénytelen."
+
+#~ msgid "The channel document has an invalid format."
+#~ msgstr "A csatornadokumentum formátuma érvénytelen."
+
+#~ msgid "The server must not be empty."
+#~ msgstr "A kiszolgáló neve nem lehet üres."
+
+#~ msgid "A subscription folder is required to install a Channel."
+#~ msgstr "Egy feliratkozási mappa szükséges a csatorna telepítéséhez."
+
+#~ msgid ""
+#~ "This document contains attributes that cannot be saved in the selected "
+#~ "format.\n"
+#~ "Please save the document in a %PRODUCTNAME %PRODUCTVERSION file format."
+#~ msgstr ""
+#~ "A dokumentum olyan elemeket tartalmaz, amelyeket a kiválasztott formátumban "
+#~ "nem lehet menteni.\n"
+#~ "Mentse a dokumentumot %PRODUCTNAME %PRODUCTVERSION fájlformátumban."
+
+#~ msgid ""
+#~ "The file $(FILENAME) cannot be saved. Please check your system settings. You "
+#~ "can find an automatically generated backup copy of this file in folder "
+#~ "$(PATH) named $(BACKUPNAME)."
+#~ msgstr ""
+#~ "A(z) $(FILENAME) fájlt nem lehet menteni. Ellenőrizze a "
+#~ "rendszerbeállításokat. A(z) $(PATH) mappában talál egy automatikusan "
+#~ "létrehozott biztonsági másolatot a fájlról $(BACKUPNAME) néven."
+
+#~ msgid ""
+#~ "The maximum number of documents that can be opened at the same time has been "
+#~ "reached. You need to close one or more documents before you can open a new "
+#~ "document."
+#~ msgstr ""
+#~ "Elérte az egyszerre megnyitható dokumentumok számának maximumát. Új "
+#~ "dokumentum megnyitása előtt be kell zárnia egy vagy több dokumentumot."
+
+#~ msgid "Could not create backup copy."
+#~ msgstr "Nem sikerült létrehozni a biztonsági mentést."
+
+#~ msgid ""
+#~ "An attempt was made to execute a macro.\n"
+#~ "For security reasons, macro support is disabled."
+#~ msgstr ""
+#~ "Kísérlet történt makró futtatására.\\Biztonsági okokból a makrók futtatása "
+#~ "tiltva van."
+
+#~ msgid ""
+#~ "This document contains macros.\n"
+#~ "\n"
+#~ "Macros may contain viruses. Execution of macros is disabled due to the "
+#~ "current macro security setting in Tools - Options - %PRODUCTNAME - Security.\n"
+#~ "\n"
+#~ "Therefore, some functionality may not be available."
+#~ msgstr ""
+#~ "Ez a dokumentum makrókat tartalmaz.\n"
+#~ "\n"
+#~ "A makrók vírusokat tartalmazhatnak. A makrók végrehajtása le van tiltva a "
+#~ "jelenlegi makróbiztonsági beállításoknak megfelelően, az Eszközök - "
+#~ "Beállítások - %PRODUCTNAME - Biztonság oldalon.\n"
+#~ "\n"
+#~ "Ezért bizonyos funkciók nem lesznek elérhetők."
+
+#~ msgid ""
+#~ "The digitally signed document content and/or macros do not match the current "
+#~ "document signature.\n"
+#~ "\n"
+#~ "This could be the result of document manipulation or of structural document "
+#~ "damage due to data transmission.\n"
+#~ "\n"
+#~ "We recommend that you do not trust the content of the current document.\n"
+#~ "Execution of macros is disabled for this document.\n"
+#~ " "
+#~ msgstr ""
+#~ "A digitálisan aláírt dokumentum tartalma vagy makrói nem egyeznek meg a "
+#~ "dokumentum digitális aláírásával.\n"
+#~ "\n"
+#~ "Ezt a dokumentum illetéktelenek által történő manipulálása vagy a dokumentum "
+#~ "megsérülése okozhatja.\n"
+#~ "\n"
+#~ "Ez indíték arra, hogy ne bízzon meg az aktuális dokumentum tartalmában.\n"
+#~ "A dokumentum makróinak futtatása tiltva lesz.\n"
+#~ " "
+
+#~ msgid ""
+#~ "The encrypted document contains unexpected non-encrypted streams.\n"
+#~ "\n"
+#~ "This could be the result of document manipulation.\n"
+#~ "\n"
+#~ "We recommend that you do not trust the content of the current document.\n"
+#~ "Execution of macros is disabled for this document.\n"
+#~ " "
+#~ msgstr ""
+#~ "A titkosított dokumentum nem várt módon nem titkosított adatfolyamokat is "
+#~ "tartalmaz.\n"
+#~ "\n"
+#~ "Ezt a dokumentum manipulálása okozhatja.\n"
+#~ "\n"
+#~ "Javasoljuk, hogy ne bízzon meg az aktuális dokumentum tartalmában.\n"
+#~ "A dokumentum makróinak futtatása tiltva lesz.\n"
+#~ " "
+
+#~ msgid "Invalid data length."
+#~ msgstr "Hibás adathossz."
+
+#~ msgid "Function not possible: path contains current directory."
+#~ msgstr ""
+#~ "A művelet nem lehetséges: az útvonal tartalmazza az aktuális könyvtárat."
+
+#~ msgid "Function not possible: device (drive) not identical."
+#~ msgstr "A művelet nem hajtható végre: az eszköz (meghajtó) nem egyezik."
+
+#~ msgid "Device (drive) not ready."
+#~ msgstr "Az eszköz (meghajtó) nem áll rendelkezésre."
+
+#~ msgid "Wrong check amount."
+#~ msgstr "Hibás ellenőrzőösszeg."
+
+#~ msgid "Function not possible: write protected."
+#~ msgstr "A művelet nem hajtható végre: írásvédett."
+
+#~ msgid ""
+#~ "The password of a shared spreadsheet cannot be set or changed.\n"
+#~ "Deactivate sharing mode first."
+#~ msgstr ""
+#~ "Megosztott munkafüzet jelszava nem állítható be és nem is módosítható.\n"
+#~ "Először kapcsolja ki a megosztást."

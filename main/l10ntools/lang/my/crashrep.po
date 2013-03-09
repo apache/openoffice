@@ -1,0 +1,274 @@
+
+#: crashrep.ulf#_WELCOME_CAPTION_.LngText.text
+msgctxt "crashrep.ulf#_WELCOME_CAPTION_.LngText.text"
+msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "%PRODUCTNAME% %PRODUCTVERSION% ၏အမှားအစီရင်ခံစာ"
+
+#: crashrep.ulf#_WELCOME_HEADER_.LngText.text
+msgid "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "%PRODUCTNAME% %PRODUCTVERSION%အမှားအစီရင်ခံစာကိုကြိုဆိုပါသည်"
+
+#: crashrep.ulf#_WELCOME_BODY1_.LngText.text
+msgid ""
+"This error report tool gathers information about how %PRODUCTNAME% is "
+"working and sends it to Oracle to help improve future versions.\n"
+"\n"
+msgstr ""
+"ဤအမှားအစီရင်ခံစာသည် %PRODUCTNAME% များအလုပ်လုပ်ပုံနှင့်ပတ်သတ်သည့် "
+"သတင်းအချက်အလက်များကို စုဆောင်းပြီး  "
+"အနာဂတ်လုပ်ဆောင်ချက်များပိုမိုကောင်းမွန်လာစေရန် Oracle သို့ ကူညီပေးပို့သည်။\n"
+"\n"
+
+#: crashrep.ulf#_WELCOME_BODY2_.LngText.text
+msgid ""
+"It's easy - just send the report without any further effort on your part by "
+"clicking 'Send' in the next dialog, or you can briefly describe how the "
+"error occurred and then click 'Send'. If you want to see the report, click "
+"the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n"
+"\n"
+msgstr ""
+"လွယ်ကူသောနည်း -ရှေ့ဒိုင်ယာလော့ဂ်တွင် ‘ပို့ပါ’ကိုကလစ်နှိပ်ခြင်းဖြင့် "
+"သင့်အစိတ်အပိုင်းပေါ်တွင် မည်သည့် သက်ရောက်မှုမှ မရှိစေဘဲ အစီရင်ခံစာကို "
+"ပို့နိုင်သည်၊ (သို့) အမှားဖြစ်ပွားပုံကို အကျဉ်းချုံးဖော်ပြပြီး "
+"‘ပို့ပါ’ကိုကလစ်နှိပ်ပါ။ အကယ်၍ အစီရင်ခံစာကို ကြည့်လိုပါက "
+"‘အစီရင်ခံစာပြပါ’ကိုကလစ်နှိပ်ပါ။ အချက်အလက်များမပေးပို့လိုပါက ‘မပို့ပါ’ "
+"ကိုကလစ်နှိပ်ပါ\n"
+"\n"
+
+#: crashrep.ulf#_WELCOME_BODY3_.LngText.text
+msgid ""
+"Customer Privacy\n"
+"The information gathered is limited to data concerning the state of %"
+"PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information "
+"about passwords or document contents is not collected.\n"
+"\n"
+"The information will only be used to improve the quality of %PRODUCTNAME% "
+"and will not be shared with third parties.\n"
+"For more information on Oracle's privacy policy, visit\n"
+msgstr ""
+"သုံးစွဲသူများအတွက် လျို့ဝှက်ထားခြင်း\n"
+"အမှားဖြစ်ပွားသောအခါ %PRODUCTNAME% %PRODUCTVERSION% "
+"ပေါ်တွင်သက်ရောက်မှုရှိစေမည့် သတင်းအချက်အလက်စုဆောင်းမှုကို ကန့်သတ်ထားသည်။ "
+"အခြားသတင်းအချက်အလက်အနေဖြင့် "
+"လျို့ဝှက်နံပါတ်များ(သို့)မှတ်တမ်းမှတ်ရာများအ​ကြောင်းကို မစုဆောင်းပါ။ \n"
+"\n"
+"%PRODUCTNAME% ၏ အရည်အသွေးတိုးတက်ရန်သာအသုံးပြုလိမ့်မည်ဖြစ်ပြီး "
+"တတိယပုဂ္ဂိုလ်နှင့်အတူဝေမျှထားလိမ့်မည်မဟုတ်ပါ\n"
+"အခြားသတင်းအချက်များကို Oracleပေါ်တွင်ရနိုင်သည်\n"
+
+#: crashrep.ulf#_PRIVACY_URL_.LngText.text
+msgid "http://www.oracle.com/html/services-privacy-policy.html"
+msgstr "http://www.oracle.com/html/services-privacy-policy.html"
+
+#: crashrep.ulf#_NEXT_BUTTON_.LngText.text
+msgid "~Next >>"
+msgstr "~နောက်ထပ် >>"
+
+#: crashrep.ulf#_CANCEL_BUTTON_.LngText.text
+msgid "Cancel"
+msgstr "ရုတ်သိမ်းပါ"
+
+#: crashrep.ulf#_OK_BUTTON_.LngText.text
+msgid "OK"
+msgstr "အိုကေ"
+
+#: crashrep.ulf#_REPORT_CAPTION_.LngText.text
+msgctxt "crashrep.ulf#_REPORT_CAPTION_.LngText.text"
+msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "%PRODUCTNAME% %PRODUCTVERSION% ၏အမှား အစီရင်ခံစာ"
+
+#: crashrep.ulf#_REPORT_HEADER_.LngText.text
+msgid "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
+msgstr "%PRODUCTNAME% %PRODUCTVERSION%အလုပ်လုပ်စဉ်အမှားဖြစ်ပွားသည်"
+
+#: crashrep.ulf#_REPORT_BODY_.LngText.text
+msgid ""
+"The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information "
+"that could help Oracle improve %PRODUCTNAME%.\n"
+"In the spaces below, you can enter a title for your crash report and "
+"describe the action you were trying to carry out when the error occurred. "
+"Then click 'Send'.\n"
+msgstr ""
+"%PRODUCTNAME% %PRODUCTVERSION% အမှားအစီရင်ခံစာသည် %PRODUCTNAM% တိုးတက်ရန် "
+"Oracle ကကူညီနိုင်သည့်သတင်းအချက်အလက်များကိုစုဆောင်းထားသည်။ \n"
+"အောက်ပါနေရာလွတ်များတွင်သင်၏ ရုတ်တရက်ရပ်ခဲ့သော အစီရင်ခံစာအတွက် ခေါင်းစဉ်တစ်ခု "
+"သုံးနိုင်ပြီး အမှားဖြစ်ပွားသောအခါ သင်မည်သို့မည်ပုံ "
+"ကြိုးပမ်းလုပ်ဆောင်ခဲ့သည်ကိုဖော်ပြပါ။ ပြီးလျှင်‘ပို့ပါ’ကိုကလစ်နှိပ်ပါ\n"
+
+#: crashrep.ulf#_ENTER_TITLE_.LngText.text
+msgid ""
+"Which type of document (e.g. presentation) were you using when the error "
+"occurred?"
+msgstr ""
+"အမှားဖြစ်ပွားသောအခါမည်သည့်မှတ်တမ်းမှတ်ရာအမျိုးအစားကိုအသုံးပြုသနည်း။(ဥပမာ-တင်"
+"ပြမှုပုံစံ)"
+
+#: crashrep.ulf#_ALLOW_CONTACT_.LngText.text
+msgid "~I allow Oracle to contact me regarding this report."
+msgstr "ဤအစီရင်ခံစာကို အသိအမှတ်ပြုဆက်သွယ်ရန်Oracleကိုခွင့်ပြုသည်။"
+
+#: crashrep.ulf#_ENTER_EMAIL_.LngText.text
+msgid "Please enter your e-mail address."
+msgstr "သင့်အီးမေးလ်လိပ်စာကိုရိုက်ထည့်ပါ။"
+
+#: crashrep.ulf#_ENTER_DESCRIPTION_.LngText.text
+msgid "~How were you using %PRODUCTNAME% when the error occurred ?"
+msgstr "အမှားဖြစ်ပွားသောအခါ%PRODUCTNAME%ကိုမည်သို့အသုံးပြုသနည်း။"
+
+#: crashrep.ulf#_BACK_BUTTON_.LngText.text
+msgid " << ~Back"
+msgstr " << ~နောက်သို့"
+
+#: crashrep.ulf#_SEND_BUTTON_.LngText.text
+msgid "S~end"
+msgstr "ပို့ပါ"
+
+#: crashrep.ulf#_DONOT_SEND_BUTTON_.LngText.text
+msgid "Do ~Not Send"
+msgstr "မပို့ပါ"
+
+#: crashrep.ulf#_SHOW_REPORT_BUTTON_.LngText.text
+msgid "Show ~Report..."
+msgstr "အစီရင်ခံ~စာပြပါ"
+
+#: crashrep.ulf#_SAVE_REPORT_BUTTON_.LngText.text
+msgid "~Save Report..."
+msgstr "~အစီရင်ခံစာသိမ်းပါ"
+
+#: crashrep.ulf#_SAVE_REPORT_TITLE_.LngText.text
+msgid "Save Report to"
+msgstr "သို့ အစီရင်ခံစာ သိမ်းပါ"
+
+#: crashrep.ulf#_ERROR_MSG_SIMPLE_MAPI_.LngText.text
+msgid ""
+"The error report could not be sent because the default e-mail program does "
+"not support MAPI.\n"
+" Please use a MAPI-compatible e-mail program."
+msgstr ""
+"အမှားအစီရင်ခံစာမပို့နိုင်သောအကြောင်းမှာမူလရှိသောအီးမေးလ်ပရိုဂရမ်သည်MAPIကိုမက"
+"ူညီနိုင်ပါ။ \n"
+"တိုက်ရိုက်အသုံးပြု နိုင်သည့်MAPI-အီးမေးလ်ပရိုဂရမ်ကိုသုံးပါ။"
+
+#: crashrep.ulf#_ERROR_MSG_DISK_FULL_.LngText.text
+msgid ""
+"The error report could not be temporarily saved and could therefore not be "
+"sent."
+msgstr ""
+"အမှားအစီရင်ခံစာကိုယာယီမသိမ်းနိုင်ပါ၊ထို့ကြောင့်ပို့နိုင်လိမ့်မည်မဟုတ်ပါ။"
+
+#: crashrep.ulf#_ERROR_MSG_SENDMAIL_.LngText.text
+msgid ""
+"The error report could not be sent because 'sendmail' could not be started.\n"
+"Please check the 'sendmail' settings."
+msgstr ""
+"‘မေးလ်ပို့ရန်’အလုပ်မလုပ်သောကြောင့် အမှားအစီရင်ခံစာကို မပို့နိုင်ပါ။ "
+"‘မေးလ်ပို့ရန်’ကိုပြင်ဆင်မှုပြု နိုင်ရန်စစ်ဆေးပါ။"
+
+#: crashrep.ulf#_ERROR_MSG_PROXY_.LngText.text
+msgid ""
+"The error report could not be sent. Please check the proxy settings under "
+"'Options' in the Error Report Tool."
+msgstr ""
+"အမှားအစီရင်ခံစာကိုမပို့နိုင်ပါ။ Proxyပြင်ဆင်မှုများပြုလုပ်နိုင်ရန် "
+"အမှားအစီရင်ခံစာကိရိယာများရှိ ‘ရွေးချယ်ပိုင်ခွင့်များ’ကို စစ်ဆေးပါ။"
+
+#: crashrep.ulf#_ERROR_MSG_NOCONNECT_.LngText.text
+msgid ""
+"The error report could not be sent because there is no Internet connection. "
+"Please check your Internet settings."
+msgstr ""
+"အင်တာနက်ချိတ်ဆက်မှုမရှိ၍ အမှားအစီရင်ခံစာကို မပို့နိုင်ပါ။ အင်တာနက်တွင် "
+"ပြင်ဆင်မှုများပြုရန် စစ်ဆေးပါ။"
+
+#: crashrep.ulf#_OPTIONS_BUTTON_.LngText.text
+msgid "~Options..."
+msgstr "~ရွေးပိုင်ခွင့်များ..."
+
+#: crashrep.ulf#_OPTIONS_TITLE_.LngText.text
+msgid "Options"
+msgstr "ရွေးပိုင်ခွင့်များ"
+
+#: crashrep.ulf#_PROXY_SETTINGS_HEADER_.LngText.text
+msgid "Proxy settings"
+msgstr "Proxy ပြင်ဆင်နိုင်မှုများ"
+
+#: crashrep.ulf#_PROXY_SETTINGS_SYSTEM_.LngText.text
+msgid "Use ~system settings"
+msgstr "သုံးပါ~စနစ်ပြင်ဆင်မှုများ"
+
+#: crashrep.ulf#_PROXY_SETTINGS_DIRECT_.LngText.text
+msgid "Use ~direct connection to the Internet"
+msgstr "အင်တာနက်သို့တိုက်ရိုက်ချိတ်ဆက်သုံးပါ"
+
+#: crashrep.ulf#_PROXY_SETTINGS_MANUAL_.LngText.text
+msgid "Use ~manual settings"
+msgstr "လက်ဖြင့်ပြင်ဆင်မှုများပြုပါ"
+
+#: crashrep.ulf#_PROXY_SETTINGS_ADDRESS_.LngText.text
+msgid "HT~TP Proxy"
+msgstr "HT~TP Proxy"
+
+#: crashrep.ulf#_PROXY_SETTINGS_PORT_.LngText.text
+msgid "~Port"
+msgstr "~ပေါထ်"
+
+#: crashrep.ulf#_PROXY_SETTINGS_DESCRIPTION_.LngText.text
+msgid ""
+"The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to "
+"be able to send error reports.\n"
+"\n"
+"Companies often use proxy servers in conjunction with a firewall to protect "
+"the network.\n"
+"\n"
+"If this applies to your situation, you have to specify the address and port "
+"for the server."
+msgstr ""
+"%PRODUCTNAME% အမှားအစီရင်ခံစာ ကိရိယာသည် အစီရင်ခံစာများပို့ရန် အင်တာနက်သို့ "
+"ချိတ်ဆက်ရန်လိုသည်။ \n"
+"\n"
+"ကုမ္ပဏီသည် ကွန်ရက်စနစ် ကာကွယ်ရန် ကာကွယ်ရေးစနစ်တစ်ခုနှင့်အတူ ချိတ်ထားသော "
+"ကွန်ပျူတာများသို့ အချက်အလက်ပေးပို့ခြင်း ကိုယ်စားလှယ်ကို တခါတရံ သုံးသည်။ \n"
+"\n"
+"အကယ်၍ လက်တွေ့ အသုံးချပါက၊ ချိတ်ထားသော ကွန်ပျူတာများသို့ "
+"အချက်အလက်ပေးပို့ရန်အတွက် ကွန်ယက်လိပ်စာနှင့်ပေါ့ထ် သတ်မှတ်ရန်ဖြစ်သည်။"
+
+#: crashrep.ulf#_SENDING_REPORT_HEADER_.LngText.text
+msgid "Sending Error Report"
+msgstr "အမှားအစီရင်ခံစာပေးပို့ခြင်း"
+
+#: crashrep.ulf#_SENDING_REPORT_STATUS_.LngText.text
+msgid "Status: Sending error report"
+msgstr "လက်ရှိအခြေအနေ -အမှားအစီရင်ခံစာပေးပိုခြင်း"
+
+#: crashrep.ulf#_SENDING_REPORT_STATUS_FINISHED_.LngText.text
+msgid "Status: The error report has been sent successfully."
+msgstr "လက်ရှိအခြေအနေ - အမှားအစီရင်ခံစာကို အောင်မြင်စွာ ပို့ထားပြီး။"
+
+#: crashrep.ulf#_ERROR_MSG_NOEMAILADDRESS_.LngText.text
+msgid ""
+"You have marked the option 'I allow Oracle to contact me regarding this "
+"report.'\n"
+"Please enter your e-mail address."
+msgstr ""
+"ဤအစီရင်ခံစာနှင့် ပတ်သက်ပြီး ဆက်သွယ်ရန်  Oracle ကို ကျွနုပ်ခွင့်ပြုသည်။ \n"
+"သင့် အီးမေးလ် လိပ်စာကို ရိုက်ထည့်ပေးပါ။"
+
+#: crashrep.ulf#_MSG_CMDLINE_USAGE_.LngText.text
+msgid "Usage:"
+msgstr "အသုံးအနှုန်း"
+
+#: crashrep.ulf#_MSG_PARAM_PROCESSID_.LngText.text
+msgid "-p <process ID>"
+msgstr "-p <process ID>"
+
+#: crashrep.ulf#_MSG_PARAM_PROCESSID_DESCRIPTION_.LngText.text
+msgid "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
+msgstr "အမှားအစီရင်ခံစာကိရိယာသို့ ID(PID)ဖြစ်စဉ် %PRODUCTNAME% သတ်မှတ်ပါ"
+
+#: crashrep.ulf#_MSG_PARAM_HELP_DESCRIPTION_.LngText.text
+msgid ""
+"Shows this help text.\n"
+"Detailed information can be found in the Setup Guide."
+msgstr ""
+"ဤအကူစာသားပြပါ။ \n"
+"အသေးစိတ်သတင်းအချက်အလက်ကို စတင်သုံးသော လမ်းညွှန်ချက်တွင် ရှာတွေ့နိုင်သည်။"

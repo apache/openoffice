@@ -1,0 +1,233 @@
+"X-Accelerator-Marker: ~\n"
+
+#: resource.src#STR_MENU_ADDONS.string.text
+msgid "Add-Ons"
+msgstr "Add-on"
+
+#: resource.src#STR_MENU_ADDONHELP.string.text
+msgid "Add-~On Help"
+msgstr "Guida Add-on"
+
+#: resource.src#STR_MENU_HEADFOOTALL.string.text
+msgid "All"
+msgstr "Tutto"
+
+#: resource.src#STR_UPDATEDOC.string.text
+msgid "~Update"
+msgstr "~Aggiorna"
+
+#: resource.src#STR_CLOSEDOC_ANDRETURN.string.text
+msgid "~Close & Return to "
+msgstr "Chiudi e ritorna a "
+
+#: resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_VISIBLEBUTTON.menuitem.text
+msgid "Visible ~Buttons"
+msgstr "~Pulsanti visibili"
+
+#: resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_CUSTOMIZETOOLBAR.menuitem.text
+msgid "~Customize Toolbar..."
+msgstr "~Personalizza barra degli strumenti..."
+
+#: resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_DOCKTOOLBAR.menuitem.text
+msgid "~Dock Toolbar"
+msgstr "~Ancora barra degli strumenti"
+
+#: resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_DOCKALLTOOLBAR.menuitem.text
+msgid "Dock ~All Toolbars"
+msgstr "Ancora ~tutte le barre degli strumenti"
+
+#: resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_LOCKTOOLBARPOSITION.menuitem.text
+msgid "~Lock Toolbar Position"
+msgstr "~Blocca posizione della barra degli strumenti"
+
+#: resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_CLOSE.menuitem.text
+msgid "Close ~Toolbar"
+msgstr "Chiudi ~barra degli strumenti"
+
+#: resource.src#STR_SAVECOPYDOC.string.text
+msgid "Save Copy ~as..."
+msgstr "Salva copia con ~nome..."
+
+#: resource.src#STR_NODOCUMENT.string.text
+msgid "No Documents"
+msgstr "Nessun documento"
+
+#: resource.src#STR_TOOLBAR_TITLE_ADDON.string.text
+msgid "Add-On %num%"
+msgstr "Add-on %num%"
+
+#: resource.src#STR_STATUSBAR_LOGOTEXT.string.text
+msgid "A %PRODUCTNAME product by Oracle"
+msgstr "Un %PRODUCTNAME prodotto da Oracle"
+
+#: resource.src#DLG_LICENSE.FT_INFO1.fixedtext.text
+msgid "Please follow these steps to proceed with the installation:"
+msgstr "Eseguite le seguenti fasi per procedere con l'installazione:"
+
+#: resource.src#DLG_LICENSE.FT_INFO2_1.fixedtext.text
+msgid "1."
+msgstr "1."
+
+#: resource.src#DLG_LICENSE.FT_INFO2.fixedtext.text
+msgid ""
+"View the complete License Agreement. Please use the scroll bar or the '%"
+"PAGEDOWN' button in this dialog to view the entire license text."
+msgstr ""
+"Leggete il seguente contratto di licenza. Con la barra o il tasto  '%"
+"PAGEDOWN' potete visualizzare il resto del contratto."
+
+#: resource.src#DLG_LICENSE.PB_PAGEDOWN.pushbutton.text
+msgid "Scroll Down"
+msgstr "Scorri in avanti"
+
+#: resource.src#DLG_LICENSE.FT_INFO3_1.fixedtext.text
+msgid "2."
+msgstr "2."
+
+#: resource.src#DLG_LICENSE.FT_INFO3.fixedtext.text
+msgid "Accept the License Agreement."
+msgstr "Accetto i termini del contratto."
+
+#: resource.src#DLG_LICENSE.LICENSE_ACCEPT.string.text
+msgid "~Accept"
+msgstr "~Accetto"
+
+#: resource.src#DLG_LICENSE.LICENSE_NOTACCEPT.string.text
+msgid "Decline"
+msgstr "Non accetto"
+
+#: resource.src#DLG_LICENSE.modaldialog.text
+msgid "License Agreement"
+msgstr "Contratto di licenza"
+
+#: resource.src#STR_FULL_DISC_RETRY_BUTTON.string.text
+msgid "Retry"
+msgstr "Riprova"
+
+#: resource.src#STR_FULL_DISC_MSG.string.text
+msgid ""
+"%PRODUCTNAME could not save important internal information due to "
+"insufficient free disk space at the following location:\n"
+"%PATH\n"
+"\n"
+"You will not be able to continue working with %PRODUCTNAME without "
+"allocating more free disk space at that location.\n"
+"\n"
+"Press the 'Retry' button after you have allocated more free disk space to "
+"retry saving the data.\n"
+"\n"
+msgstr ""
+"%PRODUCTNAME non è riuscito a salvare alcune informazioni interne "
+"importanti. Lo spazio su disco nella seguente posizione non è sufficiente:\n"
+"%PATH\n"
+"\n"
+"Per proseguire con l'utilizzo di %PRODUCTNAME dovrete liberare più spazio in "
+"tale posizione.\n"
+"\n"
+"Premete il pulsante 'Riprova' dopo aver allocato più spazio libero per "
+"riprovare il salvataggio dei dati.\n"
+"\n"
+
+#: resource.src#STR_RESTORE_TOOLBARS.string.text
+msgid "~Reset"
+msgstr "~Ripristina"
+
+#: resource.src#STR_CORRUPT_UICFG_SHARE.string.text
+msgid ""
+"An error occurred while loading the user interface configuration data. The "
+"application will be terminated now.\n"
+"Please try to reinstall the application."
+msgstr ""
+"Si è verificato un errore durante il caricamento dei dati di configurazione "
+"dell'interfaccia utente. L'applicazione verrà terminata ora.\n"
+" Provate a reinstallare l'applicazione."
+
+#: resource.src#STR_CORRUPT_UICFG_USER.string.text
+msgid ""
+"An error occurred while loading the user interface configuration data. The "
+"application will be terminated now.\n"
+"Please try to remove your user profile for the application."
+msgstr ""
+"Si è verificato un errore durante il caricamento dei dati di configurazione "
+"dell'interfaccia utente. L'applicazione verrà terminata ora.\n"
+" Provate a rimuovere il vostro profilo utente per l'applicazione."
+
+#: resource.src#STR_CORRUPT_UICFG_GENERAL.string.text
+msgid ""
+"An error occurred while loading the user interface configuration data. The "
+"application will be terminated now.\n"
+"Please try to remove your user profile for the application first or try to "
+"reinstall the application."
+msgstr ""
+"Si è verificato un errore durante il caricamento dei dati di configurazione "
+"dell'interfaccia utente. L'applicazione verrà terminata ora.\n"
+" Provate a rimuovere il vostro profilo utente per l'applicazione oppure "
+"reinstallate l'applicazione."
+
+#: resource.src#STR_UNTITLED_DOCUMENT.string.text
+msgid "Untitled"
+msgstr "Senza nome"
+
+#: resource.src#STR_LANGSTATUS_MULTIPLE_LANGUAGES.string.text
+msgid "Multiple Languages"
+msgstr "Più lingue"
+
+#: resource.src#STR_LANGSTATUS_NONE.string.text
+msgid "None (Do not check spelling)"
+msgstr "Nessuna (non eseguire il controllo ortografico)"
+
+#: resource.src#STR_RESET_TO_DEFAULT_LANGUAGE.string.text
+msgid "Reset to Default Language"
+msgstr "Ripristina la lingua predefinita"
+
+#: resource.src#STR_LANGSTATUS_MORE.string.text
+msgid "More..."
+msgstr "Extra..."
+
+#: resource.src#STR_SET_LANGUAGE_FOR_SELECTION.string.text
+msgid "Set Language for Selection"
+msgstr "Imposta la lingua per la selezione"
+
+#: resource.src#STR_SET_LANGUAGE_FOR_PARAGRAPH.string.text
+msgid "Set Language for Paragraph"
+msgstr "Imposta la lingua per il paragrafo"
+
+#: resource.src#STR_SET_LANGUAGE_FOR_ALL_TEXT.string.text
+msgid "Set Language for all Text"
+msgstr "Imposta la lingua per tutto il testo"
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_WELCOME.string.text
+msgid "Welcome to"
+msgstr "Benvenuti in"
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_WELCOMEPRODUCT.string.text
+msgid "%PRODUCTNAME"
+msgstr "%PRODUCTNAME"
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_CREATE.string.text
+msgid "Create a new document"
+msgstr "Crea un nuovo documento"
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_TEMPLATE.string.text
+msgid "~Templates..."
+msgstr "~Modelli..."
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_FILE.string.text
+msgid "~Open..."
+msgstr "~Apri..."
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_EXTHELP.string.text
+msgid "Add new features to %PRODUCTNAME"
+msgstr "Aggiungi nuove funzionalità a %PRODUCTNAME"
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_REGHELP.string.text
+msgid "Register your %PRODUCTNAME"
+msgstr "Registra il tuo %PRODUCTNAME"
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_INFOHELP.string.text
+msgid "Get more information about %PRODUCTNAME"
+msgstr "Ulteriori informazioni su %PRODUCTNAME"
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_TPLREP.string.text
+msgid "Get more templates for %PRODUCTNAME"
+msgstr "Ulteriori modelli per %PRODUCTNAME"

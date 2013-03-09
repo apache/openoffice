@@ -1,0 +1,2834 @@
+
+#: updatehdl.src#RID_UPDATE_STR_CHECKING.string.text
+msgid "Checking..."
+msgstr "Sjekkar …"
+
+#: updatehdl.src#RID_UPDATE_STR_CHECKING_ERR.string.text
+msgid "Checking for an update failed."
+msgstr "Klarte ikkje sjå etter oppdatering."
+
+#: updatehdl.src#RID_UPDATE_STR_NO_UPD_FOUND.string.text
+msgid "%PRODUCTNAME %PRODUCTVERSION is up to date."
+msgstr "%PRODUCTNAME %PRODUCTVERSION er allereie oppdatert."
+
+#: updatehdl.src#RID_UPDATE_STR_UPD_FOUND.string.text
+msgid ""
+"%PRODUCTNAME %NEXTVERSION is available.\n"
+"\n"
+"The installed version is %PRODUCTNAME %PRODUCTVERSION.\n"
+"\n"
+"Note: Before downloading  an update, please ensure that you have sufficient "
+"access rights to install it.\n"
+"A password, usually the administrator's or root password, may be required."
+msgstr ""
+"%PRODUCTNAME %NEXTVERSION er tilgjengeleg.\n"
+"\n"
+"Den installerte versjonen er %PRODUCTNAME %PRODUCTVERSION.\n"
+"\n"
+"Merk: Før du lastar ned ei oppdatering, sjå til at du har tilstrekkeleg "
+"tilgang til å installera henne.\n"
+"Det kan henda du treng eit passord, vanlegvis administrator- eller "
+"rotpassordet."
+
+#: updatehdl.src#RID_UPDATE_STR_DLG_TITLE.string.text
+msgid "Check for Updates"
+msgstr "Sjå etter oppdateringar"
+
+#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_PAUSE.string.text
+msgid "Downloading %PRODUCTNAME %NEXTVERSION paused at..."
+msgstr "Pause i nedlastinga av %PRODUCTNAME %NEXTVERSION ved …"
+
+#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_ERR.string.text
+msgid "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
+msgstr "Nedlastinga av %PRODUCTNAME %NEXTVERSION stoppa ved"
+
+#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.string.text
+msgid ""
+"The download location is: %DOWNLOAD_PATH.\n"
+"\n"
+"Under Tools – Options... - %PRODUCTNAME – Online Update you can change the "
+"download location."
+msgstr ""
+"Nedlastinga skjer til: %DOWNLOAD_PATH\n"
+"\n"
+"Under «Verktøy – Innstillingar – %PRODUCTNAME – Nettoppdatering» kan du "
+"velja ein annan stad."
+
+#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.string.text
+msgid "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
+msgstr "%FILE_NAME er lasta ned til %DOWNLOAD_PATH."
+
+#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.string.text
+msgid ""
+"The automatic download of the update is currently not available.\n"
+"\n"
+"Click 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the "
+"web site."
+msgstr ""
+"Automatisk nedlasting av oppdateringa er ikkje tilgjengeleg nett no.\n"
+"\n"
+"Trykk på «Last ned» for å lasta ned %PRODUCTNAME %NEXTVERSION manuelt frå "
+"nettsida."
+
+#: updatehdl.src#RID_UPDATE_STR_DOWNLOADING.string.text
+msgid "Downloading %PRODUCTNAME %NEXTVERSION..."
+msgstr "Lastar ned %PRODUCTNAME %NEXTVERSION …"
+
+#: updatehdl.src#RID_UPDATE_STR_READY_INSTALL.string.text
+msgid ""
+"Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
+msgstr ""
+"Nedlastinga av %PRODUCTNAME %NEXTVERSION er ferdig. Klar til installasjon."
+
+#: updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.string.text
+msgid "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
+
+#: updatehdl.src#RID_UPDATE_STR_CANCEL_DOWNLOAD.string.text
+msgid "Do you really want to cancel the download?"
+msgstr "Vil du verkeleg avbryta nedlastinga?"
+
+#: updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.string.text
+msgid ""
+"To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do "
+"you want to install the update now?"
+msgstr ""
+"%PRODUCTNAME %PRODUCTVERSION må lukkast for å installera oppdateringa. Vil "
+"du installera oppdateringa no?"
+
+#: updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.string.text
+msgid "Install ~now"
+msgstr "Installer ~no"
+
+#: updatehdl.src#RID_UPDATE_STR_INSTALL_LATER.string.text
+msgid "Install ~later"
+msgstr "Installer ~seinare"
+
+#: updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.string.text
+msgid ""
+"Could not run the installer application, please run %FILE_NAME in %"
+"DOWNLOAD_PATH manually."
+msgstr ""
+"Klarte ikkje køyra installasjonsprogrammet. Køyr %FILE_NAME i %DOWNLOAD_PATH "
+"manuelt i staden."
+
+#: updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.string.text
+msgid ""
+"A file with that name already exists! Do you want to overwrite the existing "
+"file?"
+msgstr "Ei fil med det namnet finst frå før. Vil du skriva over fila?"
+
+#: updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.string.text
+msgid ""
+"A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you "
+"want to continue with the download or delete and reload the file?"
+msgstr ""
+
+#: updatehdl.src#RID_UPDATE_STR_RELOAD_RELOAD.string.text
+msgid "Reload File"
+msgstr ""
+
+#: updatehdl.src#RID_UPDATE_STR_RELOAD_CONTINUE.string.text
+msgid "Continue"
+msgstr ""
+
+#: updatehdl.src#RID_UPDATE_STR_PERCENT.string.text
+msgid "%PERCENT%"
+msgstr "%PERCENT %"
+
+#: updatehdl.src#RID_UPDATE_FT_STATUS.string.text
+msgid "Status"
+msgstr "Status"
+
+#: updatehdl.src#RID_UPDATE_FT_DESCRIPTION.string.text
+msgid "Description"
+msgstr "Skildring"
+
+#: updatehdl.src#RID_UPDATE_BTN_CLOSE.string.text
+msgid "Close"
+msgstr "Lukk"
+
+#: updatehdl.src#RID_UPDATE_BTN_DOWNLOAD.string.text
+msgid "~Download"
+msgstr "~Last ned"
+
+#: updatehdl.src#RID_UPDATE_BTN_INSTALL.string.text
+msgid "~Install"
+msgstr "~Installer"
+
+#: updatehdl.src#RID_UPDATE_BTN_PAUSE.string.text
+msgid "~Pause"
+msgstr "~Pause"
+
+#: updatehdl.src#RID_UPDATE_BTN_RESUME.string.text
+msgid "~Resume"
+msgstr "~Hald fram"
+
+#: updatehdl.src#RID_UPDATE_BTN_CANCEL.string.text
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.string.text
+msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.string.text"
+msgid "%PRODUCTNAME update available"
+msgstr "%PRODUCTNAME-oppdatering tilgjengeleg"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_AVAIL.string.text
+msgid "Click here to start the download."
+msgstr "Trykk her for å starta nedlastinga."
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.string.text
+msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.string.text"
+msgid "%PRODUCTNAME update available"
+msgstr "%PRODUCTNAME-oppdatering tilgjengeleg"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.string.text
+msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.string.text"
+msgid "Click here for more information."
+msgstr "Trykk her for meir informasjon."
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.string.text
+msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.string.text"
+msgid "%PRODUCTNAME update available"
+msgstr "%PRODUCTNAME-oppdatering tilgjengeleg"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_AUTO_START.string.text
+msgid "Download of update begins."
+msgstr "Byrjar å lasta ned oppdateringa."
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOADING.string.text
+msgid "Download of update in progress"
+msgstr "Lastar ned oppdateringa"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_PAUSED.string.text
+msgid "Download of update paused"
+msgstr "Pause i nedlastinga"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_PAUSED.string.text
+msgid "Click here to resume."
+msgstr "Trykk her for å halda fram"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_ERROR_DOWNLOADING.string.text
+msgid "Download of update stalled"
+msgstr "Nedlastinga stoppa"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.string.text
+msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.string.text"
+msgid "Click here for more information."
+msgstr "Trykk her for meir informasjon."
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_AVAIL.string.text
+msgid "Download of update completed"
+msgstr "Oppdateringa er ferdig nedlasta"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_AVAIL.string.text
+msgid "Click here to start the installation."
+msgstr "Trykk her for å installera."
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_EXT_UPD_AVAIL.string.text
+msgid "Updates for extensions available"
+msgstr "Det finst oppdateringar for utvidingar"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.string.text
+msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.string.text"
+msgid "Click here for more information."
+msgstr "Trykk her for meir informasjon."
+
+#: Addons.xcu#.Addons.AddonUI.OfficeHelp.UpdateCheckJob.Title.value.text
+msgid "Check for ~Updates..."
+msgstr "Sjå etter ~oppdateringar …"
+
+#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.FL_DATA.fixedline.text
+msgctxt "commonpagesdbp.src#RID_PAGE_TABLESELECTION.FL_DATA.fixedline.text"
+msgid "Data"
+msgstr "Data"
+
+#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.fixedtext.text
+msgid ""
+"Currently, the form the control belongs to is not (or not completely) bound "
+"to a data source.\n"
+"\n"
+"Please choose a data source and a table.\n"
+"\n"
+"\n"
+"Please note that the settings made on this page will take effect immediately "
+"upon leaving the page."
+msgstr ""
+"Skjemaet som kontrollen høyrer til er ikkje bunde (eller ikkje fullstendig "
+"bunde) til ei datakjelde.\n"
+"\n"
+"Vel ei datakjelde og ein tabell.\n"
+"\n"
+"\n"
+"Innstillingane på denne sida trer i kraft med ein gong du lukkar sida."
+
+#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.fixedtext.text
+msgid "~Data source:"
+msgstr "~Datakjelde:"
+
+#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.PB_FORMDATASOURCE.pushbutton.text
+msgid "~..."
+msgstr "~ …"
+
+#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_TABLE.fixedtext.text
+msgid "~Table / Query:"
+msgstr "~Tabell/spørjing:"
+
+#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.tabpage.text
+msgctxt "commonpagesdbp.src#RID_PAGE_TABLESELECTION.tabpage.text"
+msgid "Data"
+msgstr "Data"
+
+#: commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.FT_DATABASEFIELD_QUEST.fixedtext.text
+msgid "Do you want to save the value in a database field?"
+msgstr "Vil du lagra verdien i eit databasefelt?"
+
+#: commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_YES.radiobutton.text
+msgid "~Yes, I want to save it in the following database field:"
+msgstr "~Ja, den skal lagrast i følgjande databasefelt:"
+
+#: commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_NO.radiobutton.text
+msgid "~No, I only want to save the value in the form."
+msgstr "~Nei, eg vil berre lagra verdien i skjemaet."
+
+#: commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.tabpage.text
+msgid "Database Field"
+msgstr "Databasefelt"
+
+#: commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FL_FORMSETINGS.fixedline.text
+msgid "Form"
+msgstr "Skjema"
+
+#: commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMDATASOURCELABEL.fixedtext.text
+msgid "Data source"
+msgstr "Datakjelde"
+
+#: commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMCONTENTTYPELABEL.fixedtext.text
+msgid "Content type"
+msgstr "Innhaldstype"
+
+#: commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMTABLELABEL.fixedtext.text
+msgid "Content"
+msgstr "Innhald"
+
+#: commonpagesdbp.src#RID_STR_TYPE_TABLE.string.text
+msgid "Table"
+msgstr "Tabell"
+
+#: commonpagesdbp.src#RID_STR_TYPE_QUERY.string.text
+msgid "Query"
+msgstr "Spørjing"
+
+#: commonpagesdbp.src#RID_STR_TYPE_COMMAND.string.text
+msgid "SQL command"
+msgstr "SQL-kommando"
+
+#: dbpilots.src#RID_DLG_GROUPBOXWIZARD.modaldialog.text
+msgid "Group Element Wizard"
+msgstr "Vegvisar for gruppeelement"
+
+#: dbpilots.src#RID_DLG_GRIDWIZARD.modaldialog.text
+msgid "Table Element Wizard"
+msgstr "Vegvisar for tabellelement"
+
+#: dbpilots.src#RID_STR_LISTWIZARD_TITLE.string.text
+msgid "List Box Wizard"
+msgstr "Vegvisar for listeboks"
+
+#: dbpilots.src#RID_STR_COMBOWIZARD_TITLE.string.text
+msgid "Combo Box Wizard"
+msgstr "Vegvisar for kombinasjonsboks"
+
+#: dbpilots.src#RID_STR_COULDNOTOPENTABLE.string.text
+msgid "The table connection to the data source could not be established."
+msgstr "Tabellsambandet til datakjelda kunne ikkje opprettast."
+
+#: gridpages.src#RID_PAGE_GW_FIELDSELECTION.FL_FRAME.fixedline.text
+msgid "Table element"
+msgstr "Tabellelement"
+
+#: gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.fixedtext.text
+msgctxt "gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.fixedtext.text"
+msgid "Existing fields"
+msgstr "Eksisterande felt"
+
+#: gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_SELECTED_FIELDS.fixedtext.text
+msgid "Selected fields"
+msgstr "Utvalde felt"
+
+#: gridpages.src#RID_PAGE_GW_FIELDSELECTION.tabpage.text
+msgctxt "gridpages.src#RID_PAGE_GW_FIELDSELECTION.tabpage.text"
+msgid "Field Selection"
+msgstr "Feltutval"
+
+#: gridpages.src#RID_STR_DATEPOSTFIX.string.text
+msgid " (Date)"
+msgstr "(Dato)"
+
+#: gridpages.src#RID_STR_TIMEPOSTFIX.string.text
+msgid " (Time)"
+msgstr " (Klokkeslett)"
+
+#: groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOLABELS.fixedtext.text
+msgid "Which ~names do you want to give the option fields?"
+msgstr "Kva for ~namn vil du bruka på alternativfelta?"
+
+#: groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.fixedtext.text
+msgctxt "groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.fixedtext.text"
+msgid "~Option fields"
+msgstr "~Alternativfelt"
+
+#: groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.tabpage.text
+msgctxt "groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.tabpage.text"
+msgid "Data"
+msgstr "Data"
+
+#: groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.FT_DEFAULTSELECTION.fixedtext.text
+msgid "Should one option field be selected as a default?"
+msgstr "Vil du ha eit alternativfelt valt som standard?"
+
+#: groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_YES.radiobutton.text
+msgid "~Yes, the following:"
+msgstr "~Ja, dette:"
+
+#: groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_NO.radiobutton.text
+msgid "No, one particular field is not going to be selected."
+msgstr "Nei, ikkje vel eit standardfelt."
+
+#: groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.tabpage.text
+msgid "Default Field Selection"
+msgstr "Val av standardfelt"
+
+#: groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES_EXPL.fixedtext.text
+msgid "When you select an option, the option group is given a specific value."
+msgstr "Dersom du vel eit alternativ, vil alternativgruppa få ein viss verdi."
+
+#: groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES.fixedtext.text
+msgid "Which ~value do you want to assign to each option?"
+msgstr "Kva for ~verdi til du gi kvart alternativ?"
+
+#: groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_RADIOBUTTONS.fixedtext.text
+msgctxt "groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_RADIOBUTTONS.fixedtext.text"
+msgid "~Option fields"
+msgstr "~Alternativfelt"
+
+#: groupboxpages.src#RID_PAGE_OPTIONVALUES.tabpage.text
+msgid "Field Values"
+msgstr "Feltverdiar"
+
+#: groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_NAMEIT.fixedtext.text
+msgid "Which ~caption is to be given to your option group?"
+msgstr "Kva for ~forklaringstekst vil du bruka til alternativgruppa?"
+
+#: groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_THATSALL.fixedtext.text
+msgid "These were all details needed to create the option group."
+msgstr "Dette var all informasjonen som trongst for å lage ei alternativgruppe."
+
+#: groupboxpages.src#RID_PAGE_OPTIONS_FINAL.tabpage.text
+msgid "Create Option Group"
+msgstr "Lag alternativgruppe"
+
+#: groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.string.text
+msgid ""
+"You can either save the value of the option group in a database field or use "
+"it for a later action."
+msgstr ""
+"Verdien for alternativgruppa kan anten lagrast i eit databasefelt eller "
+"brukast til ei seinare handling."
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FL_FRAME.fixedline.text
+msgid "Control"
+msgstr "Kontroll"
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.fixedtext.text
+msgid ""
+"On the right side, you see all the tables from the data source of the form.\n"
+"\n"
+"\n"
+"Choose the table from which the data should be used as basis for the list "
+"content:"
+msgstr ""
+"På høgre side ser du alle tabellane frå datakjelda til skjemaet.\n"
+"\n"
+"\n"
+"Vel tabellen som inneheld dataa som skal brukast som basis for innhaldet i "
+"lista:"
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.tabpage.text
+msgid "Table Selection"
+msgstr "Tabellutval"
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_TABLEFIELDS.fixedtext.text
+msgctxt "listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_TABLEFIELDS.fixedtext.text"
+msgid "Existing fields"
+msgstr "Eksisterande felt"
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_DISPLAYEDFIELD.fixedtext.text
+msgid "Display field"
+msgstr "Vis felt"
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_COMBOBOX.string.text
+msgid "The contents of the field selected will be shown in the combo box list."
+msgstr "Innhaldet i det valde feltet blir vist i kombinasjonsboksen."
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.string.text
+msgid ""
+"The contents of the selected field will be shown in the list box if the "
+"linked fields are identical."
+msgstr ""
+"Innhaldet i det valde feltet blir vist i listeboksen dersom dei kopla felta "
+"er identiske."
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.tabpage.text
+msgctxt "listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.tabpage.text"
+msgid "Field Selection"
+msgstr "Feltutval"
+
+#: listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.fixedtext.text
+msgid ""
+"This is where you select fields with matching contents so that the value "
+"from the display field will be shown."
+msgstr ""
+"Her kan du velja felt med likt innhald, slik at verdien frå visingsfeltet "
+"blir vist."
+
+#: listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.fixedtext.text
+msgid "Field from the ~Value Table"
+msgstr "Felt frå ~verditabellen"
+
+#: listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_TABLEFIELD.fixedtext.text
+msgid "Field from the ~List Table"
+msgstr "Felt frå ~listetabellen"
+
+#: listcombopages.src#RID_PAGE_LCW_FIELDLINK.tabpage.text
+msgid "Field Link"
+msgstr "Feltlenkje"
+
+#: listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.string.text
+msgid ""
+"You can either save the value of the combo box in a database field or use it "
+"for display purposes."
+msgstr ""
+"Du kan velja om du vil lagra verdien frå kombinasjonsboksen i eit "
+"databasefelt eller bruka han til vising."
+
+#: fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.pageitem.text
+msgctxt "fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.pageitem.text"
+msgid "Font"
+msgstr "Skrift"
+
+#: fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS_EXT.pageitem.text
+msgid "Font Effects"
+msgstr "Skrifteffektar"
+
+#: fontdialog.src#RID_TABDLG_FONTDIALOG.tabdialog.text
+msgid "Character"
+msgstr "Teikn"
+
+#: formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.fixedtext.text
+msgid ""
+"Sub forms can be used to display detailed data about the current record of "
+"the master form. To do this, you can specify which columns in the sub form "
+"match which columns in the master form."
+msgstr ""
+"Underskjema kan brukast til å visa detaljerte data om den valde posten i "
+"hovudskjemaet. Du kan setja opp skjemaet ved å velja kva for kolonnar i "
+"underskjemaet som tilsvarar kolonnane i hovudskjemaet."
+
+#: formlinkdialog.src#RID_DLG_FORMLINKS.modaldialog.text
+msgid "Link fields"
+msgstr "Kopla saman felt"
+
+#: formlinkdialog.src#PB_SUGGEST.pushbutton.text
+msgid "Suggest"
+msgstr "Føreslå"
+
+#: formlinkdialog.src#STR_DETAIL_FORM.string.text
+msgid "Sub Form"
+msgstr "Underskjema"
+
+#: formlinkdialog.src#STR_MASTER_FORM.string.text
+msgid "Master Form"
+msgstr "Hovudskjema"
+
+#: formlinkdialog.src#STR_ERROR_RETRIEVING_COLUMNS.string.text
+msgid "The columns of '#' could not be retrieved."
+msgstr "Klarte ikkje henta kolonnane i «#»."
+
+#: formres.src#RID_STR_EDITMASK.string.text
+msgid "Edit mask"
+msgstr "Rediger maske"
+
+#: formres.src#RID_STR_LITERALMASK.string.text
+msgid "Literal mask"
+msgstr "Teiknmaske"
+
+#: formres.src#RID_STR_READONLY.string.text
+msgctxt "formres.src#RID_STR_READONLY.string.text"
+msgid "Read-only"
+msgstr "Skriveverna"
+
+#: formres.src#RID_STR_ENABLED.string.text
+msgid "Enabled"
+msgstr "På"
+
+#: formres.src#RID_STR_ENABLE_VISIBLE.string.text
+msgid "Visible"
+msgstr "Synleg"
+
+#: formres.src#RID_STR_AUTOCOMPLETE.string.text
+msgid "AutoFill"
+msgstr "Autoutfylling"
+
+#: formres.src#RID_STR_LINECOUNT.string.text
+msgid "Line count"
+msgstr "Tal på linjer"
+
+#: formres.src#RID_STR_MAXTEXTLEN.string.text
+msgid "Max. text length"
+msgstr "Største tekstlengd"
+
+#: formres.src#RID_STR_SPIN.string.text
+msgid "Spin Button"
+msgstr "Rulleknapp"
+
+#: formres.src#RID_STR_STRICTFORMAT.string.text
+msgid "Strict format"
+msgstr "Strengt format"
+
+#: formres.src#RID_STR_SHOWTHOUSANDSEP.string.text
+msgid "Thousands separator"
+msgstr "Tusenskilje"
+
+#: formres.src#RID_STR_PRINTABLE.string.text
+msgid "Printable"
+msgstr "Kan skrivast ut"
+
+#: formres.src#RID_STR_TARGET_URL.string.text
+msgctxt "formres.src#RID_STR_TARGET_URL.string.text"
+msgid "URL"
+msgstr "URL"
+
+#: formres.src#RID_STR_TARGET_FRAME.string.text
+msgctxt "formres.src#RID_STR_TARGET_FRAME.string.text"
+msgid "Frame"
+msgstr "Ramme"
+
+#: formres.src#RID_STR_HELPTEXT.string.text
+msgid "Help text"
+msgstr "Hjelpetekst"
+
+#: formres.src#RID_STR_HELPURL.string.text
+msgid "Help URL"
+msgstr "Hjelp-URL"
+
+#: formres.src#RID_STR_TAG.string.text
+msgid "Additional information"
+msgstr "Meir informasjon"
+
+#: formres.src#RID_STR_ECHO_CHAR.string.text
+msgid "Password character"
+msgstr "Passordteikn"
+
+#: formres.src#RID_STR_TRISTATE.string.text
+msgid "Tristate"
+msgstr "Trenivå"
+
+#: formres.src#RID_STR_EMPTY_IS_NULL.string.text
+msgid "Empty string is NULL"
+msgstr "Tom streng er NULL"
+
+#: formres.src#RID_STR_DECIMAL_ACCURACY.string.text
+msgid "Decimal accuracy"
+msgstr "Desimalpresisjon"
+
+#: formres.src#RID_STR_IMAGE_URL.string.text
+msgid "Graphics"
+msgstr "Bilete"
+
+#: formres.src#RID_STR_DEFAULT_SELECT_SEQ.string.text
+msgid "Default selection"
+msgstr "Standardval"
+
+#: formres.src#RID_STR_DEFAULT_BUTTON.string.text
+msgid "Default button"
+msgstr "Standardknapp"
+
+#: formres.src#RID_STR_LABELCONTROL.string.text
+msgctxt "formres.src#RID_STR_LABELCONTROL.string.text"
+msgid "Label Field"
+msgstr "Etikettfelt"
+
+#: formres.src#RID_STR_LABEL.string.text
+msgid "Label"
+msgstr "Etikett"
+
+#: formres.src#RID_STR_ALIGN.string.text
+msgid "Alignment"
+msgstr "Justering"
+
+#: formres.src#RID_STR_VERTICAL_ALIGN.string.text
+msgid "Vert. Alignment"
+msgstr "Loddrett justering"
+
+#: formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.1.string.text
+msgid "Top"
+msgstr "Oppe"
+
+#: formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.2.string.text
+msgid "Middle"
+msgstr "Midt på"
+
+#: formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.3.string.text
+msgid "Bottom"
+msgstr "Nede"
+
+#: formres.src#RID_STR_IMAGEPOSITION.string.text
+msgid "Graphics alignment"
+msgstr "Biletjustering"
+
+#: formres.src#RID_STR_FONT.string.text
+msgctxt "formres.src#RID_STR_FONT.string.text"
+msgid "Font"
+msgstr "Skrift"
+
+#: formres.src#RID_STR_BACKGROUNDCOLOR.string.text
+msgid "Background color"
+msgstr "Bakgrunnsfarge"
+
+#: formres.src#RID_STR_BORDER.string.text
+msgid "Border"
+msgstr "Kantlinje"
+
+#: formres.src#RID_STR_ICONSIZE.string.text
+msgid "Icon size"
+msgstr "Ikonstorleik"
+
+#: formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.1.string.text
+msgid "Small"
+msgstr "Små"
+
+#: formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.2.string.text
+msgid "Large"
+msgstr "Store"
+
+#: formres.src#RID_STR_SHOW_POSITION.string.text
+msgid "Positioning"
+msgstr "Plassering"
+
+#: formres.src#RID_STR_SHOW_NAVIGATION.string.text
+msgid "Navigation"
+msgstr "Navigering"
+
+#: formres.src#RID_STR_SHOW_RECORDACTIONS.string.text
+msgid "Acting on a record"
+msgstr "Handling ved post"
+
+#: formres.src#RID_STR_SHOW_FILTERSORT.string.text
+msgid "Filtering / Sorting"
+msgstr "Filtrering/sortering"
+
+#: formres.src#RID_STR_HSCROLL.string.text
+msgid "Horizontal scroll bar"
+msgstr "Vassrett rullefelt"
+
+#: formres.src#RID_STR_VSCROLL.string.text
+msgid "Vertical scroll bar"
+msgstr "Loddrett rullefelt"
+
+#: formres.src#RID_STR_WORDBREAK.string.text
+msgid "Word break"
+msgstr "Tekstbryting"
+
+#: formres.src#RID_STR_MULTILINE.string.text
+msgid "Multiline input"
+msgstr "Skrivefelt med fleire linjer"
+
+#: formres.src#RID_STR_MULTISELECTION.string.text
+msgid "Multiselection"
+msgstr "Fleirmerking"
+
+#: formres.src#RID_STR_NAME.string.text
+msgid "Name"
+msgstr "Namn"
+
+#: formres.src#RID_STR_TABINDEX.string.text
+msgid "Tab order"
+msgstr "Tabulatorrekkjefølgje"
+
+#: formres.src#RID_STR_WHEEL_BEHAVIOR.string.text
+msgid "Mouse wheel scroll"
+msgstr "Rulling på musehjulet"
+
+#: formres.src#RID_STR_FILTER.string.text
+msgid "Filter"
+msgstr "Filter"
+
+#: formres.src#RID_STR_SORT_CRITERIA.string.text
+msgid "Sort"
+msgstr "Sorter"
+
+#: formres.src#RID_STR_RECORDMARKER.string.text
+msgid "Record marker"
+msgstr "Postmerke"
+
+#: formres.src#RID_STR_FILTERPROPOSAL.string.text
+msgid "Filter proposal"
+msgstr "Filterframlegg"
+
+#: formres.src#RID_STR_NAVIGATION.string.text
+msgid "Navigation bar"
+msgstr "Navigasjonslinje"
+
+#: formres.src#RID_STR_CYCLE.string.text
+msgid "Cycle"
+msgstr "Syklus"
+
+#: formres.src#RID_STR_TABSTOP.string.text
+msgid "Tabstop"
+msgstr "Tabulator"
+
+#: formres.src#RID_STR_CONTROLSOURCE.string.text
+msgid "Data field"
+msgstr "Datafelt"
+
+#: formres.src#RID_STR_DROPDOWN.string.text
+msgid "Dropdown"
+msgstr "Rullegardin"
+
+#: formres.src#RID_STR_BOUNDCOLUMN.string.text
+msgid "Bound field"
+msgstr "Bunde felt"
+
+#: formres.src#RID_STR_LISTSOURCE.string.text
+msgid "List content"
+msgstr "Listeinnhald"
+
+#: formres.src#RID_STR_LISTSOURCETYPE.string.text
+msgid "Type of list contents"
+msgstr "Type listeinnhald"
+
+#: formres.src#RID_STR_CURSORSOURCE.string.text
+msgid "Content"
+msgstr "Innhald"
+
+#: formres.src#RID_STR_CURSORSOURCETYPE.string.text
+msgid "Content type"
+msgstr "Innhaldstype"
+
+#: formres.src#RID_STR_ALLOW_ADDITIONS.string.text
+msgid "Allow additions"
+msgstr "Tillat tillegg"
+
+#: formres.src#RID_STR_ALLOW_DELETIONS.string.text
+msgid "Allow deletions"
+msgstr "Tillat sletting"
+
+#: formres.src#RID_STR_ALLOW_EDITS.string.text
+msgid "Allow modifications"
+msgstr "Tillat endringar"
+
+#: formres.src#RID_STR_DATAENTRY.string.text
+msgid "Add data only"
+msgstr "Legg berre til data"
+
+#: formres.src#RID_STR_DATASOURCE.string.text
+msgid "Data source"
+msgstr "Datakjelde"
+
+#: formres.src#RID_STR_MASTERFIELDS.string.text
+msgid "Link master fields"
+msgstr "Lenk saman hovudfelta"
+
+#: formres.src#RID_STR_SLAVEFIELDS.string.text
+msgid "Link slave fields"
+msgstr "Lenk saman slavefelta"
+
+#: formres.src#RID_STR_VALUEMIN.string.text
+msgid "Value min."
+msgstr "Lågaste verdi"
+
+#: formres.src#RID_STR_VALUEMAX.string.text
+msgid "Value max."
+msgstr "Høgaste verdi"
+
+#: formres.src#RID_STR_VALUESTEP.string.text
+msgid "Incr./decrement value"
+msgstr "Auk/senk verdien"
+
+#: formres.src#RID_STR_CURRENCYSYMBOL.string.text
+msgid "Currency symbol"
+msgstr "Valutasymbol"
+
+#: formres.src#RID_STR_DATEMIN.string.text
+msgid "Date min."
+msgstr "Lågaste dato"
+
+#: formres.src#RID_STR_DATEMAX.string.text
+msgid "Date max."
+msgstr "Høgaste dato"
+
+#: formres.src#RID_STR_DATEFORMAT.string.text
+msgid "Date format"
+msgstr "Datoformat"
+
+#: formres.src#RID_STR_SELECTEDITEMS.string.text
+msgid "Selection"
+msgstr "Utval"
+
+#: formres.src#RID_STR_TIMEMIN.string.text
+msgid "Time min."
+msgstr "Lågaste tid"
+
+#: formres.src#RID_STR_TIMEMAX.string.text
+msgid "Time max."
+msgstr "Høgaste tid"
+
+#: formres.src#RID_STR_TIMEFORMAT.string.text
+msgid "Time format"
+msgstr "Tidsformat"
+
+#: formres.src#RID_STR_CURRSYM_POSITION.string.text
+msgid "Prefix symbol"
+msgstr "Prefikssymbol"
+
+#: formres.src#RID_STR_VALUE.string.text
+msgid "Value"
+msgstr "Verdi"
+
+#: formres.src#RID_STR_FORMATKEY.string.text
+msgid "Formatting"
+msgstr "Formatering"
+
+#: formres.src#RID_STR_CLASSID.string.text
+msgid "Class ID"
+msgstr "Klasse-ID"
+
+#: formres.src#RID_STR_HEIGHT.string.text
+msgid "Height"
+msgstr "Høgd"
+
+#: formres.src#RID_STR_WIDTH.string.text
+msgid "Width"
+msgstr "Breidd"
+
+#: formres.src#RID_STR_LISTINDEX.string.text
+msgid "List index"
+msgstr "Listeindeks"
+
+#: formres.src#RID_STR_ROWHEIGHT.string.text
+msgid "Row height"
+msgstr "Radhøgd"
+
+#: formres.src#RID_STR_FILLCOLOR.string.text
+msgid "Fill color"
+msgstr "Fyllfarge"
+
+#: formres.src#RID_STR_LINECOLOR.string.text
+msgid "Line color"
+msgstr "Linjefarge"
+
+#: formres.src#RID_STR_REFVALUE.string.text
+msgid "Reference value (on)"
+msgstr "Referanseverdi (på)"
+
+#: formres.src#RID_STR_UNCHECKEDREFVALUE.string.text
+msgid "Reference value (off)"
+msgstr "Referanseverdi (av)"
+
+#: formres.src#RID_STR_STRINGITEMLIST.string.text
+msgid "List entries"
+msgstr "Listeoppføringar"
+
+#: formres.src#RID_STR_BUTTONTYPE.string.text
+msgid "Action"
+msgstr "Handling"
+
+#: formres.src#RID_STR_SUBMIT_ACTION.string.text
+msgctxt "formres.src#RID_STR_SUBMIT_ACTION.string.text"
+msgid "URL"
+msgstr "URL"
+
+#: formres.src#RID_STR_SUBMIT_METHOD.string.text
+msgid "Type of submission"
+msgstr "Sendemåte"
+
+#: formres.src#RID_STR_DEFAULT_STATE.string.text
+msgid "Default status"
+msgstr "Standardstatus"
+
+#: formres.src#RID_STR_SUBMIT_ENCODING.string.text
+msgid "Submission encoding"
+msgstr "Sendingskoding"
+
+#: formres.src#RID_STR_DEFAULTVALUE.string.text
+msgid "Default value"
+msgstr "Standardverdi"
+
+#: formres.src#RID_STR_DEFAULTTEXT.string.text
+msgid "Default text"
+msgstr "Standardtekst"
+
+#: formres.src#RID_STR_DEFAULTDATE.string.text
+msgid "Default date"
+msgstr "Standarddato"
+
+#: formres.src#RID_STR_DEFAULTTIME.string.text
+msgid "Default time"
+msgstr "Standardtid"
+
+#: formres.src#RID_STR_SUBMIT_TARGET.string.text
+msgctxt "formres.src#RID_STR_SUBMIT_TARGET.string.text"
+msgid "Frame"
+msgstr "Ramme"
+
+#: formres.src#RID_RSC_ENUM_BORDER_TYPE.1.string.text
+msgid "Without frame"
+msgstr "Utan ramme"
+
+#: formres.src#RID_RSC_ENUM_BORDER_TYPE.2.string.text
+msgid "3D look"
+msgstr "3D-utsjånad"
+
+#: formres.src#RID_RSC_ENUM_BORDER_TYPE.3.string.text
+msgctxt "formres.src#RID_RSC_ENUM_BORDER_TYPE.3.string.text"
+msgid "Flat"
+msgstr "Flat"
+
+#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.1.string.text
+msgid "Valuelist"
+msgstr "Verdiliste"
+
+#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.string.text
+msgctxt "formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.string.text"
+msgid "Table"
+msgstr "Tabell"
+
+#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.string.text
+msgctxt "formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.string.text"
+msgid "Query"
+msgstr "Spørjing"
+
+#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.4.string.text
+msgid "Sql"
+msgstr "SQL"
+
+#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.5.string.text
+msgid "Sql [Native]"
+msgstr "SQL [lokalt]"
+
+#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.6.string.text
+msgid "Tablefields"
+msgstr "Tabellfelt"
+
+#: formres.src#RID_RSC_ENUM_ALIGNMENT.1.string.text
+msgid "Left"
+msgstr "Venstre"
+
+#: formres.src#RID_RSC_ENUM_ALIGNMENT.2.string.text
+msgid "Center"
+msgstr "Midtstilt"
+
+#: formres.src#RID_RSC_ENUM_ALIGNMENT.3.string.text
+msgid "Right"
+msgstr "Høgre"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.1.string.text
+#, fuzzy
+msgctxt "formres.src#RID_RSC_ENUM_BUTTONTYPE.1.string.text"
+msgid "None"
+msgstr "Ingen"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.2.string.text
+msgid "Submit form"
+msgstr "Send inn skjema"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.3.string.text
+msgid "Reset form"
+msgstr "Nullstill skjema"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.4.string.text
+msgid "Open document/web page"
+msgstr "Opna dokument/nettside"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.5.string.text
+msgid "First record"
+msgstr "Første post"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.6.string.text
+msgid "Previous record"
+msgstr "Førre post"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.7.string.text
+msgid "Next record"
+msgstr "Neste post"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.8.string.text
+msgid "Last record"
+msgstr "Siste post"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.9.string.text
+msgid "Save record"
+msgstr "Lagra post"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.10.string.text
+msgid "Undo data entry"
+msgstr "Angra innskriving"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.11.string.text
+msgid "New record"
+msgstr "Ny post"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.12.string.text
+msgid "Delete record"
+msgstr "Slett post"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.13.string.text
+msgid "Refresh form"
+msgstr "Frisk opp skjema"
+
+#: formres.src#RID_RSC_ENUM_SUBMIT_METHOD.1.string.text
+msgid "Get"
+msgstr "Get"
+
+#: formres.src#RID_RSC_ENUM_SUBMIT_METHOD.2.string.text
+msgid "Post"
+msgstr "Post"
+
+#: formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.string.text"
+msgid "URL"
+msgstr "URL"
+
+#: formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.2.string.text
+msgid "Multipart"
+msgstr "Fleirdelt"
+
+#: formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.string.text
+msgctxt "formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.string.text"
+msgid "Text"
+msgstr "Tekst"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.1.string.text
+#, fuzzy
+msgid "Standard (short)"
+msgstr "Standard (kort ÅÅ)"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.2.string.text
+msgid "Standard (short YY)"
+msgstr "Standard (kort ÅÅ)"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.3.string.text
+msgid "Standard (short YYYY)"
+msgstr "Standard (kort ÅÅÅÅ)"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.4.string.text
+msgid "Standard (long)"
+msgstr "Standard (lang)"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.5.string.text
+msgid "DD/MM/YY"
+msgstr "DD/MM/ÅÅ"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.6.string.text
+msgid "MM/DD/YY"
+msgstr "MM/DD/ÅÅ"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.7.string.text
+msgid "YY/MM/DD"
+msgstr "ÅÅ/MM/DD"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.8.string.text
+msgid "DD/MM/YYYY"
+msgstr "DD/MM/ÅÅÅÅ"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.9.string.text
+msgid "MM/DD/YYYY"
+msgstr "MM/DD/ÅÅÅÅ"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.10.string.text
+msgid "YYYY/MM/DD"
+msgstr "ÅÅÅÅ/MM/DD"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.11.string.text
+msgid "YY-MM-DD"
+msgstr "ÅÅ-MM-DD"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.12.string.text
+msgid "YYYY-MM-DD"
+msgstr "ÅÅÅÅ-MM-DD"
+
+#: formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.1.string.text
+msgid "13:45"
+msgstr "13:45"
+
+#: formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.2.string.text
+msgid "13:45:00"
+msgstr "13:45:00"
+
+#: formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.3.string.text
+msgid "01:45 PM"
+msgstr "01:45 PM"
+
+#: formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.4.string.text
+msgid "01:45:00 PM"
+msgstr "01:45:00 PM"
+
+#: formres.src#RID_RSC_ENUM_CHECKED.1.string.text
+msgid "Not Selected"
+msgstr "Ikkje vald"
+
+#: formres.src#RID_RSC_ENUM_CHECKED.2.string.text
+msgid "Selected"
+msgstr "Vald"
+
+#: formres.src#RID_RSC_ENUM_CHECKED.3.string.text
+msgid "Not Defined"
+msgstr "Open"
+
+#: formres.src#RID_RSC_ENUM_CYCLE.1.string.text
+msgid "All records"
+msgstr "Alle postar"
+
+#: formres.src#RID_RSC_ENUM_CYCLE.2.string.text
+msgid "Active record"
+msgstr "Denne posten"
+
+#: formres.src#RID_RSC_ENUM_CYCLE.3.string.text
+msgid "Current page"
+msgstr "Denne sida"
+
+#: formres.src#RID_RSC_ENUM_NAVIGATION.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_NAVIGATION.1.string.text"
+msgid "No"
+msgstr "Nei"
+
+#: formres.src#RID_RSC_ENUM_NAVIGATION.2.string.text
+msgctxt "formres.src#RID_RSC_ENUM_NAVIGATION.2.string.text"
+msgid "Yes"
+msgstr "Ja"
+
+#: formres.src#RID_RSC_ENUM_NAVIGATION.3.string.text
+msgid "Parent Form"
+msgstr "Overordna skjema"
+
+#: formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.string.text"
+msgid "None"
+msgstr "Ingen"
+
+#: formres.src#RID_RSC_ENUM_SELECTION_TYPE.2.string.text
+msgid "Single"
+msgstr "Éi linje"
+
+#: formres.src#RID_RSC_ENUM_SELECTION_TYPE.3.string.text
+msgid "Multi"
+msgstr "Fleire linjer"
+
+#: formres.src#RID_RSC_ENUM_SELECTION_TYPE.4.string.text
+msgid "Range"
+msgstr "Område"
+
+#: formres.src#RID_STR_EVT_APPROVEPARAMETER.string.text
+msgid "Fill parameters"
+msgstr "Fyllparametrar"
+
+#: formres.src#RID_STR_EVT_ACTIONPERFORMED.string.text
+msgid "Execute action"
+msgstr "Utfør handling"
+
+#: formres.src#RID_STR_EVT_AFTERUPDATE.string.text
+msgid "After updating"
+msgstr "Etter oppdatering"
+
+#: formres.src#RID_STR_EVT_BEFOREUPDATE.string.text
+msgid "Before updating"
+msgstr "Før oppdatering"
+
+#: formres.src#RID_STR_EVT_APPROVEROWCHANGE.string.text
+msgid "Before record action"
+msgstr "Før posthandling"
+
+#: formres.src#RID_STR_EVT_ROWCHANGE.string.text
+msgid "After record action"
+msgstr "Etter posthandling"
+
+#: formres.src#RID_STR_EVT_CONFIRMDELETE.string.text
+msgid "Confirm deletion"
+msgstr "Stadfest sletting"
+
+#: formres.src#RID_STR_EVT_ERROROCCURED.string.text
+msgid "Error occurred"
+msgstr "Det oppstod ein feil"
+
+#: formres.src#RID_STR_EVT_FOCUSGAINED.string.text
+msgid "When receiving focus"
+msgstr "Når han får fokus"
+
+#: formres.src#RID_STR_EVT_FOCUSLOST.string.text
+msgid "When losing focus"
+msgstr "Når han mistar fokus"
+
+#: formres.src#RID_STR_EVT_ITEMSTATECHANGED.string.text
+msgid "Item status changed"
+msgstr "Elementstatus endra"
+
+#: formres.src#RID_STR_EVT_KEYTYPED.string.text
+msgid "Key pressed"
+msgstr "Ved tastetrykk"
+
+#: formres.src#RID_STR_EVT_KEYUP.string.text
+msgid "Key released"
+msgstr "Etter tastetrykk"
+
+#: formres.src#RID_STR_EVT_LOADED.string.text
+msgid "When loading"
+msgstr "Ved lasting"
+
+#: formres.src#RID_STR_EVT_RELOADING.string.text
+msgid "Before reloading"
+msgstr "Før lasting på nytt"
+
+#: formres.src#RID_STR_EVT_RELOADED.string.text
+msgid "When reloading"
+msgstr "Ved lasting på nytt"
+
+#: formres.src#RID_STR_EVT_MOUSEDRAGGED.string.text
+msgid "Mouse moved while key pressed"
+msgstr "Musrørsle medan ein tast er trykt"
+
+#: formres.src#RID_STR_EVT_MOUSEENTERED.string.text
+msgid "Mouse inside"
+msgstr "Mus innanfor"
+
+#: formres.src#RID_STR_EVT_MOUSEEXITED.string.text
+msgid "Mouse outside"
+msgstr "Mus utanfor"
+
+#: formres.src#RID_STR_EVT_MOUSEMOVED.string.text
+msgid "Mouse moved"
+msgstr "Musrørsle"
+
+#: formres.src#RID_STR_EVT_MOUSEPRESSED.string.text
+msgid "Mouse button pressed"
+msgstr "Museknapp trykt inn"
+
+#: formres.src#RID_STR_EVT_MOUSERELEASED.string.text
+msgid "Mouse button released"
+msgstr "Museknapp sleppt"
+
+#: formres.src#RID_STR_EVT_POSITIONING.string.text
+msgid "Before record change"
+msgstr "Før endring av post"
+
+#: formres.src#RID_STR_EVT_POSITIONED.string.text
+msgid "After record change"
+msgstr "Etter endring av post"
+
+#: formres.src#RID_STR_EVT_RESETTED.string.text
+msgid "After resetting"
+msgstr "Etter tilbakestilling"
+
+#: formres.src#RID_STR_EVT_APPROVERESETTED.string.text
+msgid "Prior to reset"
+msgstr "Før tilbakestilling"
+
+#: formres.src#RID_STR_EVT_APPROVEACTIONPERFORMED.string.text
+msgid "Approve action"
+msgstr "Godta handling"
+
+#: formres.src#RID_STR_EVT_SUBMITTED.string.text
+msgid "Before submitting"
+msgstr "Før sending"
+
+#: formres.src#RID_STR_EVT_TEXTCHANGED.string.text
+msgid "Text modified"
+msgstr "Tekst endra"
+
+#: formres.src#RID_STR_EVT_UNLOADING.string.text
+msgid "Before unloading"
+msgstr "Før utlasting"
+
+#: formres.src#RID_STR_EVT_UNLOADED.string.text
+msgid "When unloading"
+msgstr "Ved utlasting"
+
+#: formres.src#RID_STR_EVT_CHANGED.string.text
+msgid "Changed"
+msgstr "Endra"
+
+#: formres.src#RID_STR_EVENTS.string.text
+msgid "Events"
+msgstr "Hendingar"
+
+#: formres.src#RID_STR_ESCAPE_PROCESSING.string.text
+msgid "Analyze SQL command"
+msgstr "Analyser SQL-kommando"
+
+#: formres.src#RID_STR_POSITIONX.string.text
+msgid "PositionX"
+msgstr "PosisjonX"
+
+#: formres.src#RID_STR_POSITIONY.string.text
+msgid "PositionY"
+msgstr "PosisjonY"
+
+#: formres.src#RID_STR_TITLE.string.text
+msgid "Title"
+msgstr "Overskrift"
+
+#: formres.src#RID_STR_STEP.string.text
+msgid "Page (step)"
+msgstr "Side (steg)"
+
+#: formres.src#RID_STR_PROGRESSVALUE.string.text
+msgid "Progress value"
+msgstr "Framdriftsverdi"
+
+#: formres.src#RID_STR_PROGRESSVALUE_MIN.string.text
+msgid "Progress value min."
+msgstr "Lågaste framdriftsverdi"
+
+#: formres.src#RID_STR_PROGRESSVALUE_MAX.string.text
+msgid "Progress value max."
+msgstr "Høgaste framdriftsverdi"
+
+#: formres.src#RID_STR_SCROLLVALUE.string.text
+msgid "Scroll value"
+msgstr "Rulleverdi"
+
+#: formres.src#RID_STR_SCROLLVALUE_MAX.string.text
+msgid "Scroll value max."
+msgstr "Høgaste rulleverdi"
+
+#: formres.src#RID_STR_SCROLLVALUE_MIN.string.text
+msgid "Scroll value min."
+msgstr "Minste rulleverdi"
+
+#: formres.src#RID_STR_DEFAULT_SCROLLVALUE.string.text
+msgid "Default scroll value"
+msgstr "Standard rulleverdi"
+
+#: formres.src#RID_STR_LINEINCREMENT.string.text
+msgid "Small change"
+msgstr "Lita endring"
+
+#: formres.src#RID_STR_BLOCKINCREMENT.string.text
+msgid "Large change"
+msgstr "Stor endring"
+
+#: formres.src#RID_STR_REPEAT_DELAY.string.text
+msgid "Delay"
+msgstr "Seinking"
+
+#: formres.src#RID_STR_REPEAT.string.text
+msgid "Repeat"
+msgstr "Gjenta"
+
+#: formres.src#RID_STR_VISIBLESIZE.string.text
+msgid "Visible size"
+msgstr "Synleg storleik"
+
+#: formres.src#RID_STR_ORIENTATION.string.text
+msgid "Orientation"
+msgstr "Retning"
+
+#: formres.src#RID_RSC_ENUM_ORIENTATION.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_ORIENTATION.1.string.text"
+msgid "Horizontal"
+msgstr "Vassrett"
+
+#: formres.src#RID_RSC_ENUM_ORIENTATION.2.string.text
+msgctxt "formres.src#RID_RSC_ENUM_ORIENTATION.2.string.text"
+msgid "Vertical"
+msgstr "Loddrett"
+
+#: formres.src#RID_STR_EVT_ADJUSTMENTVALUECHANGED.string.text
+msgid "While adjusting"
+msgstr "Ved justering"
+
+#: formres.src#RID_STR_DATE.string.text
+msgid "Date"
+msgstr "Dato"
+
+#: formres.src#RID_STR_STATE.string.text
+msgid "State"
+msgstr "Tilstand"
+
+#: formres.src#RID_STR_TIME.string.text
+msgid "Time"
+msgstr "Tid"
+
+#: formres.src#RID_STR_SCALEIMAGE.string.text
+msgid "Scale"
+msgstr "Skala"
+
+#: formres.src#RID_STR_PUSHBUTTONTYPE.string.text
+msgid "Button type"
+msgstr "Knapptype"
+
+#: formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.string.text"
+msgid "Default"
+msgstr "Standard"
+
+#: formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.2.string.text
+msgid "OK"
+msgstr "OK"
+
+#: formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.3.string.text
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.string.text
+msgctxt "formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.string.text"
+msgid "Help"
+msgstr "Hjelp"
+
+#: formres.src#RID_STR_UNABLETOCONNECT.string.text
+msgid "The connection to the data source \"$name$\" could not be established."
+msgstr "Klarte ikkje oppretta samband til datakjelda «$name$»."
+
+#: formres.src#RID_STR_TEXT.string.text
+msgctxt "formres.src#RID_STR_TEXT.string.text"
+msgid "Text"
+msgstr "Tekst"
+
+#: formres.src#RID_STR_BOUND_CELL.string.text
+msgid "Linked cell"
+msgstr "Lenkja celle"
+
+#: formres.src#RID_STR_LIST_CELL_RANGE.string.text
+msgid "Source cell range"
+msgstr "Kjeldeområde"
+
+#: formres.src#RID_STR_CELL_EXCHANGE_TYPE.string.text
+msgid "Contents of the linked cell"
+msgstr "Innhald i den lenkja cella"
+
+#: formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.1.string.text
+msgid "The selected entry"
+msgstr "Den valde oppføringa"
+
+#: formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.2.string.text
+msgid "Position of the selected entry"
+msgstr "Posisjonen til den valde oppføringa"
+
+#: formres.src#RID_STR_SHOW_SCROLLBARS.string.text
+msgid "Scrollbars"
+msgstr "Rullefelt"
+
+#: formres.src#RID_RSC_ENUM_TEXTTYPE.1.string.text
+msgid "Single-line"
+msgstr "Éi linje"
+
+#: formres.src#RID_RSC_ENUM_TEXTTYPE.2.string.text
+msgid "Multi-line"
+msgstr "Fleire linjer"
+
+#: formres.src#RID_RSC_ENUM_TEXTTYPE.3.string.text
+msgid "Multi-line with formatting"
+msgstr "Fleire linjer med formatering"
+
+#: formres.src#RID_STR_SYMBOLCOLOR.string.text
+msgid "Symbol color"
+msgstr "Symbolfarge"
+
+#: formres.src#RID_STR_LINEEND_FORMAT.string.text
+msgid "Text lines end with"
+msgstr "Tekstlinjene sluttar med"
+
+#: formres.src#RID_RSC_ENUM_LINEEND_FORMAT.1.string.text
+msgid "LF (Unix)"
+msgstr "LF (Unix)"
+
+#: formres.src#RID_RSC_ENUM_LINEEND_FORMAT.2.string.text
+msgid "CR+LF (Windows)"
+msgstr "CR+LF (Windows)"
+
+#: formres.src#RID_RSC_ENUM_SCROLLBARS.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_SCROLLBARS.1.string.text"
+msgid "None"
+msgstr "Ingen"
+
+#: formres.src#RID_RSC_ENUM_SCROLLBARS.2.string.text
+msgctxt "formres.src#RID_RSC_ENUM_SCROLLBARS.2.string.text"
+msgid "Horizontal"
+msgstr "Vassrett"
+
+#: formres.src#RID_RSC_ENUM_SCROLLBARS.3.string.text
+msgctxt "formres.src#RID_RSC_ENUM_SCROLLBARS.3.string.text"
+msgid "Vertical"
+msgstr "Loddrett"
+
+#: formres.src#RID_RSC_ENUM_SCROLLBARS.4.string.text
+msgid "Both"
+msgstr "Begge"
+
+#: formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.string.text"
+msgid "Table"
+msgstr "Tabell"
+
+#: formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.string.text
+msgctxt "formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.string.text"
+msgid "Query"
+msgstr "Spørjing"
+
+#: formres.src#RID_RSC_ENUM_COMMAND_TYPE.3.string.text
+msgid "SQL command"
+msgstr "SQL-kommando"
+
+#: formres.src#RID_STR_TOGGLE.string.text
+msgid "Toggle"
+msgstr "Brytar"
+
+#: formres.src#RID_STR_FOCUSONCLICK.string.text
+msgid "Take Focus on Click"
+msgstr "Ta fokus ved klikk"
+
+#: formres.src#RID_STR_HIDEINACTIVESELECTION.string.text
+msgid "Hide selection"
+msgstr "Gøym utval"
+
+#: formres.src#RID_STR_VISUALEFFECT.string.text
+msgid "Style"
+msgstr "Stil"
+
+#: formres.src#RID_RSC_ENUM_VISUALEFFECT.1.string.text
+msgid "3D"
+msgstr "3D"
+
+#: formres.src#RID_RSC_ENUM_VISUALEFFECT.2.string.text
+msgctxt "formres.src#RID_RSC_ENUM_VISUALEFFECT.2.string.text"
+msgid "Flat"
+msgstr "Flat"
+
+#: formres.src#RID_STR_BORDERCOLOR.string.text
+msgid "Border color"
+msgstr "Kantfarge"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.1.string.text
+msgid "Left top"
+msgstr ""
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.2.string.text
+msgid "Left centered"
+msgstr "Midt på til venstre"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.3.string.text
+msgid "Left bottom"
+msgstr "Nede til venstre"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.4.string.text
+msgid "Right top"
+msgstr "Oppe til høgre"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.5.string.text
+msgid "Right centered"
+msgstr "Midt på til høgre"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.6.string.text
+msgid "Right bottom"
+msgstr "Nede til høgre"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.7.string.text
+msgid "Above left"
+msgstr "Over til venstre"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.8.string.text
+msgid "Above centered"
+msgstr "Over midt på"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.9.string.text
+msgid "Above right"
+msgstr "Over til høgre"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.10.string.text
+msgid "Below left"
+msgstr "Under til venstre"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.11.string.text
+msgid "Below centered"
+msgstr "Under midt på"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.12.string.text
+msgid "Below right"
+msgstr "Under til høgre"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.13.string.text
+msgid "Centered"
+msgstr "Midtstilt"
+
+#: formres.src#RID_STR_AUTOLINEBREAK.string.text
+msgid "Wrap text automatically"
+msgstr "Bryt tekst automatisk"
+
+#: formres.src#RID_STR_TEXTTYPE.string.text
+msgid "Text type"
+msgstr "Teksttype"
+
+#: formres.src#RID_RSC_ENUM_SHOWHIDE.1.string.text
+msgid "Hide"
+msgstr "Gøym"
+
+#: formres.src#RID_RSC_ENUM_SHOWHIDE.2.string.text
+msgid "Show"
+msgstr "Vis"
+
+#: formres.src#RID_STR_XML_DATA_MODEL.string.text
+msgid "XML data model"
+msgstr "XML-datamodell"
+
+#: formres.src#RID_STR_BIND_EXPRESSION.string.text
+msgid "Binding expression"
+msgstr "Bindeuttrykk"
+
+#: formres.src#RID_STR_XSD_REQUIRED.string.text
+msgid "Required"
+msgstr "Nødvendig"
+
+#: formres.src#RID_STR_LIST_BINDING.string.text
+msgid "List entry source"
+msgstr "Listekjelde"
+
+#: formres.src#RID_STR_XSD_RELEVANT.string.text
+msgid "Relevant"
+msgstr "Relevant"
+
+#: formres.src#RID_STR_XSD_READONLY.string.text
+msgctxt "formres.src#RID_STR_XSD_READONLY.string.text"
+msgid "Read-only"
+msgstr "Skriveverna"
+
+#: formres.src#RID_STR_XSD_CONSTRAINT.string.text
+msgid "Constraint"
+msgstr "Avgrensing"
+
+#: formres.src#RID_STR_XSD_CALCULATION.string.text
+msgid "Calculation"
+msgstr "Utrekning"
+
+#: formres.src#RID_STR_XSD_DATA_TYPE.string.text
+msgid "Data type"
+msgstr "Datatype"
+
+#: formres.src#RID_STR_XSD_WHITESPACES.string.text
+msgid "Whitespaces"
+msgstr "Blankteikn"
+
+#: formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.1.string.text
+msgid "Preserve"
+msgstr "Ta vare på"
+
+#: formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.2.string.text
+msgid "Replace"
+msgstr "Byt ut"
+
+#: formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.3.string.text
+msgid "Collapse"
+msgstr "Fald saman"
+
+#: formres.src#RID_STR_XSD_PATTERN.string.text
+msgid "Pattern"
+msgstr "Mønster"
+
+#: formres.src#RID_STR_XSD_LENGTH.string.text
+msgid "Length"
+msgstr "Lengd"
+
+#: formres.src#RID_STR_XSD_MIN_LENGTH.string.text
+msgid "Length (at least)"
+msgstr "Lengd (minst)"
+
+#: formres.src#RID_STR_XSD_MAX_LENGTH.string.text
+msgid "Length (at most)"
+msgstr "Lengd (høgst)"
+
+#: formres.src#RID_STR_XSD_TOTAL_DIGITS.string.text
+msgid "Digits (total)"
+msgstr "Siffer (i alt)"
+
+#: formres.src#RID_STR_XSD_FRACTION_DIGITS.string.text
+msgid "Digits (fraction)"
+msgstr "Siffer (brøk)"
+
+#: formres.src#RID_STR_XSD_MAX_INCLUSIVE.string.text
+msgid "Max. (inclusive)"
+msgstr "Høgst (inklusiv)"
+
+#: formres.src#RID_STR_XSD_MAX_EXCLUSIVE.string.text
+msgid "Max. (exclusive)"
+msgstr "Høgst (eksklusiv)"
+
+#: formres.src#RID_STR_XSD_MIN_INCLUSIVE.string.text
+msgid "Min. (inclusive)"
+msgstr "Minst (inklusiv)"
+
+#: formres.src#RID_STR_XSD_MIN_EXCLUSIVE.string.text
+msgid "Min. (exclusive)"
+msgstr "Minst (eksklusiv)"
+
+#: formres.src#RID_STR_SUBMISSION_ID.string.text
+msgid "Submission"
+msgstr "Sending"
+
+#: formres.src#RID_STR_BINDING_UI_NAME.string.text
+msgid "Binding"
+msgstr "Binding"
+
+#: formres.src#RID_STR_SELECTION_TYPE.string.text
+msgid "Selection type"
+msgstr "Utvalstype"
+
+#: formres.src#RID_STR_ROOT_DISPLAYED.string.text
+msgid "Root displayed"
+msgstr "Rot vist"
+
+#: formres.src#RID_STR_SHOWS_HANDLES.string.text
+msgid "Show handles"
+msgstr "Vis handtak"
+
+#: formres.src#RID_STR_SHOWS_ROOT_HANDLES.string.text
+msgid "Show root handles"
+msgstr "Vis rothandtak"
+
+#: formres.src#RID_STR_EDITABLE.string.text
+msgid "Editable"
+msgstr "Redigerbar"
+
+#: formres.src#RID_STR_INVOKES_STOP_NOT_EDITING.string.text
+msgid "Invokes stop node editing"
+msgstr "Startar redigering av stoppnodar"
+
+#: formres.src#RID_STR_DECORATION.string.text
+msgid "With title bar"
+msgstr "Med tittellinje"
+
+#: formres.src#RID_STR_NOLABEL.string.text
+msgid "No Label"
+msgstr "Ingen etikett"
+
+#: formres.src#RID_RSC_ENUM_SCALE_MODE.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_SCALE_MODE.1.string.text"
+msgid "No"
+msgstr "Nei"
+
+#: formres.src#RID_RSC_ENUM_SCALE_MODE.2.string.text
+msgid "Keep Ratio"
+msgstr "Behald storleiksforholdet"
+
+#: formres.src#RID_RSC_ENUM_SCALE_MODE.3.string.text
+msgid "Fit to Size"
+msgstr "Tilpass til storleiken"
+
+#: formres.src#RID_STR_INPUT_REQUIRED.string.text
+msgid "Input required"
+msgstr "Treng inndata"
+
+#: formres.src#RID_STR_WRITING_MODE.string.text
+msgid "Text direction"
+msgstr "Tekstretning"
+
+#: formres.src#RID_RSC_ENUM_WRITING_MODE.1.string.text
+msgid "Left-to-right"
+msgstr "Venstre til høgre"
+
+#: formres.src#RID_RSC_ENUM_WRITING_MODE.2.string.text
+msgid "Right-to-left"
+msgstr "Høgre til venstre"
+
+#: formres.src#RID_RSC_ENUM_WRITING_MODE.3.string.text
+msgid "Use superordinate object settings"
+msgstr "Bruk overordna objektinnstillingar"
+
+#: formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.1.string.text
+msgid "Never"
+msgstr "Aldri"
+
+#: formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.2.string.text
+msgid "When focused"
+msgstr "Når han er i fokus"
+
+#: formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.3.string.text
+msgid "Always"
+msgstr "Alltid"
+
+#: formres.src#RID_STR_ANCHOR_TYPE.string.text
+msgid "Anchor"
+msgstr "Forankre"
+
+#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.1.string.text
+msgid "To Paragraph"
+msgstr "Til avsnitt"
+
+#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.2.string.text
+msgid "As Character"
+msgstr "Som teikn"
+
+#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.string.text
+msgctxt "formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.string.text"
+msgid "To Page"
+msgstr "Til side"
+
+#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.4.string.text
+msgid "To Frame"
+msgstr "Til ramme"
+
+#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.5.string.text
+msgid "To Character"
+msgstr "Til teikn"
+
+#: formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.1.string.text
+msgctxt "formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.1.string.text"
+msgid "To Page"
+msgstr "Til side"
+
+#: formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.2.string.text
+msgid "To Cell"
+msgstr "Til celle"
+
+#: formres.src#RID_STR_FONTSTYLE_REGULAR.string.text
+msgid "Regular"
+msgstr "Vanleg"
+
+#: formres.src#RID_STR_FONTSTYLE_BOLD_ITALIC.string.text
+msgid "Bold Italic"
+msgstr "Halvfeit kursiv"
+
+#: formres.src#RID_STR_FONTSTYLE_ITALIC.string.text
+msgid "Italic"
+msgstr "Kursiv"
+
+#: formres.src#RID_STR_FONTSTYLE_BOLD.string.text
+msgid "Bold"
+msgstr "Halvfeit"
+
+#: formres.src#RID_STR_FONT_DEFAULT.string.text
+msgid "(Default)"
+msgstr "(Standard)"
+
+#: newdatatype.src#RID_DLG_NEW_DATA_TYPE.FT_LABEL.fixedtext.text
+msgid "Type a name for the new data type:"
+msgstr "Vel eit namn på den nye datatypen:"
+
+#: newdatatype.src#RID_DLG_NEW_DATA_TYPE.modaldialog.text
+msgid "New Data Type"
+msgstr "Ny datatype"
+
+#: pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.string.text
+msgid ""
+"Do you want to delete the data type '#type#' from the model?\n"
+"Please note that this will affect all controls which are bound to this data "
+"type."
+msgstr ""
+"Vil du sletta datatypen «#type#» frå modellen?\n"
+"Ver klar over at dette påverkar alle kontrollelementa som er bundne til "
+"denne datatypen."
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.string.text
+msgid "Button"
+msgstr "Knapp"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_RADIOBUTTON.string.text
+msgid "Option Button"
+msgstr "Valknapp"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_CHECKBOX.string.text
+msgid "Check Box"
+msgstr "Avkryssingsboks"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.string.text
+msgctxt "pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.string.text"
+msgid "Label Field"
+msgstr "Etikettfelt"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_GROUPBOX.string.text
+msgid "Group Box"
+msgstr "Grupperamme"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_EDIT.string.text
+msgid "Text Box"
+msgstr "Tekstfelt"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_FORMATTED.string.text
+msgid "Formatted Field"
+msgstr "Formatert felt"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_LISTBOX.string.text
+msgid "List Box"
+msgstr "Listeboks"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_COMBOBOX.string.text
+msgid "Combo Box"
+msgstr "Kombinasjonsboks"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_IMAGEBUTTON.string.text
+msgid "Image Button"
+msgstr "Biletknapp"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_HIDDENCONTROL.string.text
+msgid "Hidden Control"
+msgstr "Gøymd kontroll"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_UNKNOWNCONTROL.string.text
+msgid "Control (unknown type)"
+msgstr "Kontroll (ukjend type)"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_IMAGECONTROL.string.text
+msgid "Image Control"
+msgstr "Biletfelt"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_FILECONTROL.string.text
+msgid "File Selection"
+msgstr "Filutval"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_DATEFIELD.string.text
+msgid "Date Field"
+msgstr "Datofelt"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_TIMEFIELD.string.text
+msgid "Time Field"
+msgstr "Tidsfelt"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_NUMERICFIELD.string.text
+msgid "Numeric Field"
+msgstr "Talfelt"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_CURRENCYFIELD.string.text
+msgid "Currency Field"
+msgstr "Valutafelt"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_PATTERNFIELD.string.text
+msgid "Pattern Field"
+msgstr "Mønsterfelt"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_DBGRID.string.text
+msgid "Table Control "
+msgstr "Tabellkontroll"
+
+#: propres.src#RID_STR_STANDARD.string.text
+msgctxt "propres.src#RID_STR_STANDARD.string.text"
+msgid "Default"
+msgstr "Standard"
+
+#: propres.src#RID_STR_PROPPAGE_DEFAULT.string.text
+msgid "General"
+msgstr "Generelt"
+
+#: propres.src#RID_STR_PROPPAGE_DATA.string.text
+msgid "Data"
+msgstr "Data"
+
+#: propres.src#RID_RSC_ENUM_YESNO.1.string.text
+msgctxt "propres.src#RID_RSC_ENUM_YESNO.1.string.text"
+msgid "No"
+msgstr "Nei"
+
+#: propres.src#RID_RSC_ENUM_YESNO.2.string.text
+msgctxt "propres.src#RID_RSC_ENUM_YESNO.2.string.text"
+msgid "Yes"
+msgstr "Ja"
+
+#: propres.src#RID_STR_HELP_SECTION_LABEL.string.text
+msgctxt "propres.src#RID_STR_HELP_SECTION_LABEL.string.text"
+msgid "Help"
+msgstr "Hjelp"
+
+#: propres.src#RID_EMBED_IMAGE_PLACEHOLDER.string.text
+msgid "<Embedded-Image>"
+msgstr "<Innebygd bilete>"
+
+#: propres.src#RID_STR_TEXT_FORMAT.string.text
+#, fuzzy
+msgctxt "propres.src#RID_STR_TEXT_FORMAT.string.text"
+msgid "Text"
+msgstr "Tekst"
+
+#: selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.fixedtext.text
+msgid ""
+"These are control fields that can be used as label fields for the "
+"$control_class$ $control_name$."
+msgstr ""
+"Desse kontrollfelta kan brukast som etikettfelt for $control_class$ "
+"$control_name$."
+
+#: selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.checkbox.text
+msgid "~No assignment"
+msgstr "~Inga tildeling"
+
+#: selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.modaldialog.text
+msgid "Label Field Selection"
+msgstr "Valt etikettfelt"
+
+#: selectlabeldialog.src#RID_STR_FORMS.string.text
+msgid "Forms"
+msgstr "Skjema"
+
+#: taborder.src#RID_DLG_TABORDER.FT_CONTROLS.fixedtext.text
+msgid "Controls"
+msgstr "Kontrollelement"
+
+#: taborder.src#RID_DLG_TABORDER.PB_MOVE_UP.pushbutton.text
+msgid "Move Up"
+msgstr "Flytt opp"
+
+#: taborder.src#RID_DLG_TABORDER.PB_MOVE_DOWN.pushbutton.text
+msgid "Move Down"
+msgstr "Flytt ned"
+
+#: taborder.src#RID_DLG_TABORDER.PB_AUTO_ORDER.pushbutton.text
+msgid "Automatic Sort"
+msgstr "Automatisk sortering"
+
+#: taborder.src#RID_DLG_TABORDER.modaldialog.text
+msgid "Tab Order"
+msgstr "Tabulatorrekkjefølgje"
+
+#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_SELECT_ABTYPE.string.text
+msgid "Address book type"
+msgstr "Type adressebok"
+
+#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_INVOKE_ADMIN_DIALOG.string.text
+msgid "Connection Settings"
+msgstr "Innstillingar for tilkopling"
+
+#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_TABLE_SELECTION.string.text
+msgid "Table selection"
+msgstr "Tabellval"
+
+#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.string.text
+msgctxt "abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.string.text"
+msgid "Field Assignment"
+msgstr "Tildeling av felt"
+
+#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_FINAL_CONFIRM.string.text
+msgid "Data Source Title"
+msgstr "Tittel på datakjelde"
+
+#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.modaldialog.text
+msgid "Address Book Data Source Wizard"
+msgstr "Vegvisar for datakjelde til adressebok"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.fixedtext.text
+msgid ""
+"%PRODUCTNAME lets you access address data already present in your system. To "
+"do this, a %PRODUCTNAME data source will be created in which your address "
+"data is available in tabular form.\n"
+"\n"
+"This wizard helps you create the data source."
+msgstr ""
+"%PRODUCTNAME gir deg tilgang til adresseinformasjon som er i systemet frå "
+"før. Det blir laga ei %PRODUCTNAME-datakjelde der adresseinformasjonen er "
+"tilgjengeleg i tabellform.\n"
+"\n"
+"Denne vegvisaren hjelper deg med å laga datakjelda."
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.fixedline.text
+msgid "Please select the type of your external address book:"
+msgstr "Vel formatet på den eksterne adresseboka:"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION.radiobutton.text
+msgid "Evolution"
+msgstr "Evolution"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_GROUPWISE.radiobutton.text
+msgid "Groupwise"
+msgstr "Groupwise"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_LDAP.radiobutton.text
+msgid "Evolution LDAP"
+msgstr "Evolution LDAP"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_MORK.radiobutton.text
+msgid "Mozilla / Netscape"
+msgstr "Mozilla / Netscape 6.x"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_THUNDERBIRD.radiobutton.text
+msgid "Thunderbird"
+msgstr "Thunderbird"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_KAB.radiobutton.text
+msgid "KDE address book"
+msgstr "KDE-adressebok"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_MACAB.radiobutton.text
+msgid "Mac OS X address book"
+msgstr "Mac OS X-adressebok"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_LDAP.radiobutton.text
+msgid "LDAP address data"
+msgstr "LDAP-adressedata"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOK.radiobutton.text
+msgid "Outlook address book"
+msgstr "Outlook-adressebok"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOKEXPRESS.radiobutton.text
+msgid "Windows system address book"
+msgstr "Windows-adressebok"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_OTHER.radiobutton.text
+msgid "Other external data source"
+msgstr "Anna ekstern datakjelde"
+
+#: abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.fixedtext.text
+msgid ""
+"To set up the new data source, additional information is required.\n"
+"\n"
+"Click the following button to open another dialog in which you then enter "
+"the necessary information."
+msgstr ""
+"Meir informasjon trengst for å setja opp den nye datakjelda.\n"
+"\n"
+"Trykk på knappen nedanfor for å opna eit nytt dialogvindauge der kan du "
+"skriva inn det som trengst."
+
+#: abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.pushbutton.text
+msgid "Settings"
+msgstr "Innstillingar"
+
+#: abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.fixedtext.text
+msgid ""
+"The connection to the data source could not be established.\n"
+"Before you proceed, please check the settings made, or (on the previous "
+"page) choose another address data source type."
+msgstr ""
+"Fekk ikkje kontakt med datakjelda.\n"
+"Før du held fram bør du sjekka innstillingane, eller vel ein annan "
+"kjeldetype på den førre sida."
+
+#: abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.fixedtext.text
+msgid ""
+"The external data source you have chosen contains more than one address "
+"book.\n"
+"Please select the one you mainly want to work with:"
+msgstr ""
+"Den eksterne datakjelda du har valt inneheld meir enn éi adressebok.\n"
+"Vel den du vil bruka som hovuddatakjelde:"
+
+#: abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.fixedtext.text
+msgid ""
+"To incorporate the address data in your templates, %PRODUCTNAME has to know "
+"which fields contain which data.\n"
+"\n"
+"For instance, you could have stored the e-mail addresses in a field named "
+"\"email\", or \"E-mail\" or \"EM\" - or something completely different.\n"
+"\n"
+"Click the button below to open another dialog where you can enter the "
+"settings for your data source."
+msgstr ""
+"For å leggja adresseinformasjonen inn i malen, må %PRODUCTNAME vita kva for "
+"felt som inneheld kva for data. \n"
+"\n"
+"Du kan til dømes ha lagra e-postadressene i feltet «e-post», «E-post», «E-P» "
+"eller noko heilt anna.\n"
+"\n"
+"Trykk på knappen nedanfor for å opna eit nytt vindauge der du kan gjera "
+"innstillingar for datakjelda."
+
+#: abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.pushbutton.text
+msgctxt "abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.pushbutton.text"
+msgid "Field Assignment"
+msgstr "Tildeling av felt"
+
+#: abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.fixedtext.text
+msgid ""
+"That was all the information necessary to integrate your address data into %"
+"PRODUCTNAME.\n"
+"\n"
+"Now, just enter the name under which you want to register the data source in "
+"%PRODUCTNAME."
+msgstr ""
+"Det var all den informasjonen som trongst for å integrera adresseboka i %"
+"PRODUCTNAME.\n"
+"\n"
+"Skriv inn det namnet du vil registrera datakjelda under (i %PRODUCTNAME)."
+
+#: abspilot.src#RID_PAGE_FINAL.FT_LOCATION.fixedtext.text
+msgid "Location"
+msgstr "Plassering"
+
+#: abspilot.src#RID_PAGE_FINAL.PB_BROWSE.pushbutton.text
+msgid "Browse..."
+msgstr "Bla gjennom …"
+
+#: abspilot.src#RID_PAGE_FINAL.CB_REGISTER_DS.checkbox.text
+msgid "Make this address book available to all modules in %PRODUCTNAME."
+msgstr "Gjer denne adresseboka tilgjengeleg for alle modulane i %PRODUCTNAME."
+
+#: abspilot.src#RID_PAGE_FINAL.FT_NAME_EXPL.fixedtext.text
+msgid "Address book name"
+msgstr "Namn på adressebok"
+
+#: abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.fixedtext.text
+msgid ""
+"Another data source already has this name. As data sources have to have "
+"globally unique names, you need to choose another one."
+msgstr ""
+"Det finst ei datakjelde med dette namnet frå før. Sidan datakjelder må ha "
+"kvar sine unike namn, må du velja eit anna namn."
+
+#: abspilot.src#RID_ERR_NEEDTYPESELECTION.errorbox.text
+msgid "Please select a type of address book."
+msgstr "Vel ein adresseboktype."
+
+#: abspilot.src#RID_QRY_NOTABLES.querybox.text
+msgid ""
+"The data source does not contain any tables.\n"
+"Do you want to set it up as an address data source, anyway?"
+msgstr ""
+"Datakjelda inneheld ingen tabellar.\n"
+"Vil du bruka henne som kjelde for adresseboka likevel?"
+
+#: abspilot.src#RID_STR_DEFAULT_NAME.string.text
+msgid "Addresses"
+msgstr "Adresser"
+
+#: abspilot.src#RID_STR_ADMINDIALOGTITLE.string.text
+msgid "Create Address Data Source"
+msgstr "Lag datakjelde for adresser"
+
+#: abspilot.src#RID_STR_NOCONNECTION.string.text
+msgid "The connection could not be established."
+msgstr "Klarte ikkje oppretta sambandet"
+
+#: abspilot.src#RID_STR_PLEASECHECKSETTINGS.string.text
+msgid "Please check the settings made for the data source."
+msgstr "Du bør sjekka innstillingane for datakjelda."
+
+#: abspilot.src#RID_STR_FIELDDIALOGTITLE.string.text
+msgid "Address Data - Field Assignment"
+msgstr "Adresseinformasjon – Felttildeling"
+
+#: abspilot.src#RID_STR_NOFIELDSASSIGNED.string.text
+msgid ""
+"There are no fields assigned at this time.\n"
+"You can either assign fields now or do so later by first choosing:\n"
+"\"File - Template - Address Book Source...\""
+msgstr ""
+"Ingen felt er tildelte.\n"
+"Du kan anten tildela felt no, eller du kan gjera det seinare ved å velja:\n"
+"«Fil – Mal – Adressebokkjelde …»"
+
+#: bib.src#RID_BIB_STR_FIELDSELECTION.string.text
+msgid "Field selection:"
+msgstr "Feltval:"
+
+#: bib.src#RID_BIB_STR_TABWIN_PREFIX.string.text
+msgid "Table;Query;Sql;Sql [Native]"
+msgstr "Tabell;Spørjing;SQL;SQL [lokalt]"
+
+#: bib.src#RID_BIB_STR_FRAME_TITLE.string.text
+msgid "Bibliography Database"
+msgstr "Litteraturdatabase"
+
+#: bib.src#RID_MAP_QUESTION.string.text
+msgid "Do you want to edit the column arrangement?"
+msgstr "Vil du redigera kolonneoppsettet?"
+
+#: datman.src#RID_DLG_MAPPING.GB_MAPPING.fixedline.text
+msgid "Column names"
+msgstr "Kolonnenamn"
+
+#: datman.src#RID_DLG_MAPPING.ST_NONE.string.text
+msgid "<none>"
+msgstr "<ingen>"
+
+#: datman.src#RID_DLG_MAPPING.modaldialog.text
+msgid "Column Layout for Table %1"
+msgstr "Kolonneoppsett for tabellen %1"
+
+#: datman.src#RID_DLG_DBCHANGE.ST_ENTRY.string.text
+msgid "Entry"
+msgstr "Oppføring"
+
+#: datman.src#RID_DLG_DBCHANGE.modaldialog.text
+msgid "Choose Data Source"
+msgstr "Vel datakjelde"
+
+#: sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.string.text
+msgid "The following column names could not be assigned:\n"
+msgstr "Klarte ikkje tildela følgjande kolonnenamn:\n"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.string.text
+msgid "Article"
+msgstr "Artikkel"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_BOOK.string.text
+msgid "Book"
+msgstr "Bok"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_BOOKLET.string.text
+msgid "Brochures"
+msgstr "Brosjyre"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_CONFERENCE.string.text
+msgctxt "sections.src#RID_TP_GENERAL.ST_TYPE_CONFERENCE.string.text"
+msgid "Conference proceedings"
+msgstr "Konferansereferat"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_INBOOK.string.text
+msgid "Book excerpt"
+msgstr "Bokutdrag"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_INCOLLECTION.string.text
+msgid "Book excerpt with title"
+msgstr "Bokutdrag med tittel"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_INPROCEEDINGS.string.text
+msgctxt "sections.src#RID_TP_GENERAL.ST_TYPE_INPROCEEDINGS.string.text"
+msgid "Conference proceedings"
+msgstr "Konferansereferat"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_JOURNAL.string.text
+msgid "Journal"
+msgstr "Tidsskrift"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_MANUAL.string.text
+msgid "Techn. documentation"
+msgstr "Teknisk dokumentasjon"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_MASTERSTHESIS.string.text
+msgid "Thesis"
+msgstr "Avhandling"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_MISC.string.text
+msgid "Miscellaneous"
+msgstr "Ymse"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_PHDTHESIS.string.text
+msgid "Dissertation"
+msgstr "Avhandling"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_PROCEEDINGS.string.text
+msgctxt "sections.src#RID_TP_GENERAL.ST_TYPE_PROCEEDINGS.string.text"
+msgid "Conference proceedings"
+msgstr "Konferansereferat"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_TECHREPORT.string.text
+msgid "Research report"
+msgstr "Forskingsrapport"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_UNPUBLISHED.string.text
+msgid "Unpublished"
+msgstr "Upublisert"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_EMAIL.string.text
+msgid "e-mail"
+msgstr "E-post"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_WWW.string.text
+msgid "WWW document"
+msgstr "Nettside"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM1.string.text
+msgid "User-defined1"
+msgstr "Anna 1"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM2.string.text
+msgid "User-defined2"
+msgstr "Anna 2"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM3.string.text
+msgid "User-defined3"
+msgstr "Anna 3"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM4.string.text
+msgid "User-defined4"
+msgstr "Anna 4"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM5.string.text
+msgid "User-defined5"
+msgstr "Anna 5"
+
+#: sections.src#RID_TP_GENERAL.tabpage.text
+msgid "General"
+msgstr "Generelt"
+
+#: sections.src#RID_POPUP_ME_VIEW.PU_INSERT.menuitem.text
+msgid "Insert Section..."
+msgstr "Set inn område …"
+
+#: sections.src#RID_POPUP_ME_VIEW.PU_REMOVE.menuitem.text
+msgid "Delete Section..."
+msgstr "Slett område …"
+
+#: sections.src#RID_POPUP_ME_VIEW.PU_CHG_NAME.menuitem.text
+msgid "Modify Name..."
+msgstr "Endra namn …"
+
+#: sections.src#ST_IDENTIFIER.string.text
+msgid "~Short name"
+msgstr "~Kortnamn"
+
+#: sections.src#ST_AUTHTYPE.string.text
+msgid "~Type"
+msgstr "~Type"
+
+#: sections.src#ST_YEAR.string.text
+msgid "~Year"
+msgstr "~År"
+
+#: sections.src#ST_AUTHOR.string.text
+msgid "Author(s)"
+msgstr "Forfattar(ar)"
+
+#: sections.src#ST_TITLE.string.text
+msgid "Tit~le"
+msgstr "~Tittel"
+
+#: sections.src#ST_PUBLISHER.string.text
+msgid "~Publisher"
+msgstr "~Forlag"
+
+#: sections.src#ST_ADDRESS.string.text
+msgid "A~ddress"
+msgstr "~Adresse"
+
+#: sections.src#ST_ISBN.string.text
+msgid "~ISBN"
+msgstr "~ISBN"
+
+#: sections.src#ST_CHAPTER.string.text
+msgid "~Chapter"
+msgstr "~Kapittel"
+
+#: sections.src#ST_PAGE.string.text
+msgid "Pa~ge(s)"
+msgstr "~Side(r)"
+
+#: sections.src#ST_EDITOR.string.text
+msgid "Editor"
+msgstr "Redaktør"
+
+#: sections.src#ST_EDITION.string.text
+msgid "Ed~ition"
+msgstr "~Utgåve"
+
+#: sections.src#ST_BOOKTITLE.string.text
+msgid "~Book title"
+msgstr "~Boktittel"
+
+#: sections.src#ST_VOLUME.string.text
+msgid "Volume"
+msgstr "Bind"
+
+#: sections.src#ST_HOWPUBLISHED.string.text
+msgid "Publication t~ype"
+msgstr "~Publikasjonstype"
+
+#: sections.src#ST_ORGANIZATION.string.text
+msgid "Organi~zation"
+msgstr "~Organisasjon"
+
+#: sections.src#ST_INSTITUTION.string.text
+msgid "Instit~ution"
+msgstr "~Institusjon"
+
+#: sections.src#ST_SCHOOL.string.text
+msgid "University"
+msgstr "Universitet"
+
+#: sections.src#ST_REPORT.string.text
+msgid "Type of re~port"
+msgstr "~Rapporttype"
+
+#: sections.src#ST_MONTH.string.text
+msgid "~Month"
+msgstr "~Månad"
+
+#: sections.src#ST_JOURNAL.string.text
+msgid "~Journal"
+msgstr "~Tidsskrift"
+
+#: sections.src#ST_NUMBER.string.text
+msgid "Numb~er"
+msgstr "~Nummer"
+
+#: sections.src#ST_SERIES.string.text
+msgid "Se~ries"
+msgstr "~Serie"
+
+#: sections.src#ST_ANNOTE.string.text
+msgid "Ann~otation"
+msgstr "~Merknad"
+
+#: sections.src#ST_NOTE.string.text
+msgid "~Note"
+msgstr "~Notat"
+
+#: sections.src#ST_URL.string.text
+msgid "URL"
+msgstr "URL"
+
+#: sections.src#ST_CUSTOM1.string.text
+msgid "User-defined field ~1"
+msgstr "Anna felt ~1"
+
+#: sections.src#ST_CUSTOM2.string.text
+msgid "User-defined field ~2"
+msgstr "Anna felt ~2"
+
+#: sections.src#ST_CUSTOM3.string.text
+msgid "User-defined field ~3"
+msgstr "Anna felt ~3"
+
+#: sections.src#ST_CUSTOM4.string.text
+msgid "User-defined field ~4"
+msgstr "Anna felt ~4"
+
+#: sections.src#ST_CUSTOM5.string.text
+msgid "User-defined field ~5"
+msgstr "Anna felt ~5"
+
+#: toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.toolboxitem.text
+msgid "Table"
+msgstr "Tabell"
+
+#: toolbar.src#RID_BIB_TOOLBAR.TBC_FT_QUERY.toolboxitem.text
+msgid "Search Key"
+msgstr "Søkjeord"
+
+#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_AUTOFILTER.toolboxitem.text
+msgid "AutoFilter"
+msgstr "Autofilter"
+
+#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_FILTERCRIT.toolboxitem.text
+msgid "Standard Filter"
+msgstr ""
+
+#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_REMOVEFILTER.toolboxitem.text
+msgid "Remove Filter"
+msgstr ""
+
+#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_COL_ASSIGN.toolboxitem.text
+msgid "Column Arrangement"
+msgstr "Kolonneoppsett"
+
+#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_CHANGESOURCE.toolboxitem.text
+msgid "Data Source"
+msgstr "Datakjelde"
+
+#: grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.pushbutton.text
+msgctxt "grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.pushbutton.text"
+msgid "Set"
+msgstr "Vel"
+
+#: grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_ASCENDING.string.text
+msgid "Linear ascending"
+msgstr "Lineært stigande"
+
+#: grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_DESCENDING.string.text
+msgid "Linear descending"
+msgstr "Lineært synkande"
+
+#: grid.src#GRID_DIALOG.RESET_TYPE_RESET.string.text
+msgid "Original values"
+msgstr "Originalverdiar"
+
+#: grid.src#GRID_DIALOG.RESET_TYPE_EXPONENTIAL.string.text
+msgid "Exponential increasing"
+msgstr "Eksponentielt aukande"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.pushbutton.text
+msgid ""
+"About\n"
+" Dev~ice"
+msgstr ""
+"Informasjon\n"
+" om ~eininga"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.pushbutton.text
+msgid ""
+"Create\n"
+"Preview"
+msgstr ""
+"Lag\n"
+"førehandsvising"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.fixedline.text
+msgid "Preview"
+msgstr "Førehandsvising"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCANAREA_BOX.fixedline.text
+msgid "Scan area"
+msgstr "Område som skal skannast"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_LEFT_TXT.fixedtext.text
+msgid "Left:"
+msgstr "Venstre:"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_TOP_TXT.fixedtext.text
+msgid "Top:"
+msgstr "Oppe:"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RIGHT_TXT.fixedtext.text
+msgid "Right:"
+msgstr "Høgre:"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BOTTOM_TXT.fixedtext.text
+msgid "Bottom:"
+msgstr "Nede:"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_DEVICE_BOX_TXT.fixedtext.text
+msgid "Device used:"
+msgstr "Eining som blir brukt:"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RESOLUTION_TXT.fixedtext.text
+msgid "Resolution [~DPI]"
+msgstr "Oppløysing (~ppt)"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_ADVANCED_TXT.fixedtext.text
+msgid "Show advanced options"
+msgstr "Vis avanserte alternativ"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_OPTION_TXT.fixedtext.text
+msgid "Options:"
+msgstr "Alternativ:"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_NUMERIC_VECTOR_TXT.fixedtext.text
+msgid "Vector element"
+msgstr "Vektorelement"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.pushbutton.text
+msgctxt "sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.pushbutton.text"
+msgid "Set"
+msgstr "Vel"
+
+#: sanedlg.src#RID_SANE_DIALOG.modaldialog.text
+msgid "Scanner"
+msgstr "Skannar"
+
+#: sanedlg.src#RID_SANE_DEVICEINFO_TXT.string.text
+msgid ""
+"Device: %s\n"
+"Vendor: %s\n"
+"Model: %s\n"
+"Type: %s"
+msgstr ""
+"Eining: %s\n"
+"Forhandlar: %s\n"
+"Modell: %s\n"
+"Type: %s"
+
+#: sanedlg.src#RID_SANE_SCANERROR_TXT.string.text
+msgid "An error occurred while scanning."
+msgstr "Det oppstod ein feil under skanning."
+
+#: sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.string.text
+msgid ""
+"The device does not offer a preview option. Therefore, a normal scan will be "
+"used as a preview instead. This may take a considerable amount of time."
+msgstr ""
+"Eininga kan ikkje gi førehandsvising. Difor blir vanleg skanning brukt som "
+"førehandsvising i staden. Dette kan ta ganske lang tid."
+
+#: sanedlg.src#RID_SANE_NOSANELIB_TXT.string.text
+msgid "The SANE interface could not be initialized. Scanning is not possible."
+msgstr "Klarte ikkje klargjera SANE-grensesnittet. Kan difor ikkje skanna."
+
+#: preload.src#RID_DLG_OEMWIZARD.PB_PREV.pushbutton.text
+msgid "<< Back"
+msgstr "<< Førre"
+
+#: preload.src#RID_DLG_OEMWIZARD.PB_NEXT.pushbutton.text
+msgid "Next >>"
+msgstr "Neste >>"
+
+#: preload.src#RID_DLG_OEMWIZARD.ST_ACCEPT.string.text
+msgid "Accept"
+msgstr "Godta"
+
+#: preload.src#RID_DLG_OEMWIZARD.ST_FINISH.string.text
+msgid "Finish"
+msgstr "Fullfør"
+
+#: preload.src#RID_DLG_OEMWIZARD.ST_LICENSE_AGREEMENT.string.text
+msgid " - Software License Agreement"
+msgstr " – Lisensavtale for programvare"
+
+#: preload.src#RID_DLG_OEMWIZARD.ST_INSERT_USER_DATA.string.text
+msgid "- User Data"
+msgstr "- Brukardata"
+
+#: preload.src#RID_TP_WELCOME.FT_INFO.fixedtext.text
+msgid ""
+"Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n"
+"\n"
+"To start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal "
+"data in the dialog following the license text. Important information is "
+"contained in the readme files which are located in the %PRODUCTNAME product "
+"directory. Please read these files carefully. You can also find detailed "
+"information at the Oracle website \n"
+"\n"
+"http://www.oracle.com/us/products/applications/open-office."
+msgstr ""
+"Velkommen til %PRODUCTNAME %PRODUCTVERSION OEM\n"
+"\n"
+"For å starta %PRODUCTNAME %PRODUCTVERSION OEM, skriv inn personleg "
+"informasjon i dialogvindauget som kjem etter lisensteksten. Viktig "
+"informasjon finst i «readme»-filene, som ligg i produktmappa til %"
+"PRODUCTNAME. Les desse filene nøye. Det finst òg detaljert informasjon på "
+"nettstaden til Sun:\n"
+"\n"
+"http://www.sun.com/staroffice.\n"
+"\n"
+"Brukarstøtte og opplæring.\n"
+"\n"
+"Få GRATIS brukarstøtte og fri tilgang til eit nettkurs i %PRODUCTNAME frå "
+"opplæringssenteret til Sun («Sun(tm) Web Learning Center»). (Gjeld i 60 "
+"dagar frå kjøpsdatoen). Gå til nettsida nedanfor for å nytta deg av dette "
+"tilbodet:\n"
+"\n"
+"http://www.sun.com/star/service\n"
+"\n"
+"Vi håpar du har glede av å arbeida med %PRODUCTNAME."
+
+#: preload.src#RID_TP_WELCOME.tabpage.text
+msgid "Welcome"
+msgstr "Velkommen"
+
+#: preload.src#RID_TP_LICENSE.FT_INFO1.fixedtext.text
+msgid "Please follow these steps to proceed with the installation:"
+msgstr "Les lisensavtalen nøye. Bruk rullefeltet for å visa heile teksten."
+
+#: preload.src#RID_TP_LICENSE.FT_INFO2_1.fixedtext.text
+msgid "1."
+msgstr "1."
+
+#: preload.src#RID_TP_LICENSE.FT_INFO2.fixedtext.text
+msgid ""
+"View the complete License Agreement. Please use the scroll bar or the '%"
+"PAGEDOWN' button in this dialog to view the entire license text."
+msgstr ""
+"Trykk «%1» dersom du godtek alle vilkåra i lisensavtalen. Viss ikkje, kan du "
+"trykkja «%2» for å avbryta installasjonen."
+
+#: preload.src#RID_TP_LICENSE.PB_PAGEDOWN.pushbutton.text
+msgid "Page Down"
+msgstr "Ei side ned"
+
+#: preload.src#RID_TP_LICENSE.FT_INFO3_1.fixedtext.text
+msgid "2."
+msgstr "2."
+
+#: preload.src#RID_TP_LICENSE.FT_INFO3.fixedtext.text
+msgid "Accept the License Agreement."
+msgstr "Godta lisensavtalen"
+
+#: preload.src#RID_TP_LICENSE.CB_ACCEPT.checkbox.text
+msgid "I accept the terms of the Agreement."
+msgstr "Eg godtek vilkåra i avtalen."
+
+#: preload.src#RID_TP_LICENSE.LICENCE_ACCEPT.string.text
+msgid "~Accept"
+msgstr "~Godta"
+
+#: preload.src#RID_TP_LICENSE.LICENCE_NOTACCEPT.string.text
+msgid "Decline"
+msgstr "Avslå"
+
+#: preload.src#RID_TP_LICENSE.tabpage.text
+msgid "License Agreement"
+msgstr "Lisensavtale"

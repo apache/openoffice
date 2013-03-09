@@ -1,0 +1,983 @@
+
+#: dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.string.text
+msgid "Properties: "
+msgstr "Amaloota: "
+
+#: dlgresid.src#RID_STR_BRWTITLE_NO_PROPERTIES.string.text
+msgid "No Control marked"
+msgstr "Too'annaan mallatteeffame hinjiru"
+
+#: dlgresid.src#RID_STR_BRWTITLE_MULTISELECT.string.text
+msgid "Multiselection"
+msgstr "Filannoo hedduu"
+
+#: managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_LANGUAGE.fixedtext.text
+msgid "Present Languages"
+msgstr "Afaanota Ammaa"
+
+#: managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_ADD_LANG.pushbutton.text
+msgid "Add..."
+msgstr "Ida'i..."
+
+#: managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_DEL_LANG.pushbutton.text
+msgid "Delete"
+msgstr "Haqi"
+
+#: managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_MAKE_DEFAULT.pushbutton.text
+msgid "Default"
+msgstr "Durtii"
+
+#: managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.fixedtext.text
+msgid ""
+"The default language is used if no localization for a user interface locale "
+"is present. Furthermore all strings from the default language are copied to "
+"resources of newly added languages."
+msgstr ""
+"Gitoo-biyyaa walqunnama fayyadamaaf biyyoomni yoo hin jiraanne, afaan durtii "
+"faayidaarra oola. Dabalatees, diroonni afaan durtiirraa marti qabeenya "
+"afaan haaraa ida'ameetti gargalfamu."
+
+#: managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.okbutton.text
+msgid "~Close"
+msgstr "Cufi"
+
+#: managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DEF_LANG.string.text
+msgid "[Default Language]"
+msgstr "[Afaan Durtii]"
+
+#: managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DELETE.string.text
+msgid "~Delete"
+msgstr "Haqi"
+
+#: managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_CREATE_LANG.string.text
+msgid "<Press 'Add' to create language resources>"
+msgstr "<Qabeenyota afaanii uumuuf 'Ida'i' dhiibi>"
+
+#: managelang.src#RID_DLG_MANAGE_LANGUAGE.modaldialog.text
+msgid "Manage User Interface Languages [$1]"
+msgstr "Afaanota walquunnama fayyadamaa taliigi [$1]"
+
+#: managelang.src#RID_QRYBOX_LANGUAGE.querybox.text
+msgid ""
+"You are about to delete the resources for the selected language(s). All user "
+"interface strings for this language(s) will be deleted.\n"
+"\n"
+"Do you want to delete the resources of the selected language(s)?"
+msgstr ""
+"Qabeenyota afaan(ota) filatamee(anii) haquuf deemta. Diroonni walquunnama "
+"fayyadamaa afaan(ota) kanaa marti ni haqamu.\n"
+"\n"
+"Qabeenya afaan(ota) filatamee(anii) haquu ni barbaaddaa?"
+
+#: managelang.src#RID_QRYBOX_LANGUAGE.querybox.title
+msgid "Delete Language Resources"
+msgstr "Qabeenya afaannii haqi"
+
+#: managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_LANGUAGE.fixedtext.text
+msgid "Default language"
+msgstr "Afaan durtii"
+
+#: managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.fixedtext.text
+msgid ""
+"Select a language to define the default user interface language. All "
+"currently present strings will be assigned to the resources created for the "
+"selected language."
+msgstr ""
+"Afaan walquunnama fayyadamaa durtii ibsuuf afaan tokko filadhu. Diroonni "
+"amma jiran marti qabeenyota afaan filatameef uumamaniif ramadamu."
+
+#: managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_TITLE.string.text
+msgid "Add User Interface Languages"
+msgstr "Afaanota Walquunnama Fayyadamaa Ida'i"
+
+#: managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_LABEL.string.text
+msgid "Available Languages"
+msgstr "Afaanota Jiran"
+
+#: managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_INFO.string.text
+msgid ""
+"Select languages to be added. Resources for these languages will be created "
+"in the library. Strings of the current default user interface language will "
+"be copied to these new resources by default."
+msgstr ""
+"Afaanota ida'amuu qaban fili. Qabeenyonni afaanota kanneenii manbarroo "
+"keessatti uumamu. Diroonni afaan walquunnama fayyadamaa durtii ammaa gara "
+"qabeenyota haaraa kanneeniitti durtiidhaan garagalfamu."
+
+#: managelang.src#RID_DLG_SETDEF_LANGUAGE.modaldialog.text
+msgid "Set Default User Interface Language"
+msgstr "Afaan Walquunnama Fayyadamaa Durtii Qindeessi"
+
+#: basicprint.src#RID_PRINTDLG_STRLIST.1.itemlist.text
+msgid "Print range"
+msgstr ""
+
+#: basicprint.src#RID_PRINTDLG_STRLIST.2.itemlist.text
+msgid "All ~Pages"
+msgstr ""
+
+#: basicprint.src#RID_PRINTDLG_STRLIST.3.itemlist.text
+msgid "Pa~ges"
+msgstr ""
+
+#: basidesh.src#RID_STR_FILTER_ALLFILES.string.text
+msgid "<All>"
+msgstr "<Mara>"
+
+#: basidesh.src#RID_STR_NOMODULE.string.text
+msgid "< No Module >"
+msgstr "< Mojuuliin Hin Jiru >"
+
+#: basidesh.src#RID_STR_WRONGPASSWORD.string.text
+msgid "Incorrect Password"
+msgstr "Iggitaa dogoggoraa"
+
+#: basidesh.src#RID_STR_OPEN.string.text
+msgid "Load"
+msgstr "Fe'i"
+
+#: basidesh.src#RID_STR_SAVE.string.text
+msgid "Save"
+msgstr "Olkaa'i"
+
+#: basidesh.src#RID_STR_SOURCETOBIG.string.text
+msgid ""
+"The source text is too large and can be neither compiled nor saved.\n"
+"Delete some of the comments or transfer some methods into another module."
+msgstr ""
+"Barruun maddaa kun baay'ee guuddaa waan ta'eef rogeessuunis olkaa'uunis hin "
+"danda'amu.\n"
+"Yaadoota tokko tokko haqi ykn toftaalee hamma tokkoo muraa kabirotti "
+"dabarsi."
+
+#: basidesh.src#RID_STR_ERROROPENSTORAGE.string.text
+msgid "Error opening file"
+msgstr "Dogoggora faayilii banuu"
+
+#: basidesh.src#RID_STR_ERROROPENLIB.string.text
+msgid "Error loading library"
+msgstr "Dogoggora manbarroo fe'uu"
+
+#: basidesh.src#RID_STR_NOLIBINSTORAGE.string.text
+msgid "The file does not contain any BASIC libraries"
+msgstr "Faayiliin kun manbarroota BASIC homaayyuu ofkeessaa hin qabu"
+
+#: basidesh.src#RID_STR_BADSBXNAME.string.text
+msgid "Invalid Name"
+msgstr "Maqaa Fashala"
+
+#: basidesh.src#RID_STR_LIBNAMETOLONG.string.text
+msgid "A library name can have up to 30 characters."
+msgstr "Maqaan manbarroo haga arfiilee 30 ofkeessatti qabachuu danda'a."
+
+#: basidesh.src#RID_STR_ERRORCHOOSEMACRO.string.text
+msgid "Macros from other documents are not accessible."
+msgstr "Maakrootni galmeelee biroorraa gahiinsa hin qaban."
+
+#: basidesh.src#RID_STR_LIBISREADONLY.string.text
+msgid "This library is read-only."
+msgstr "Manbarroon kun dubbisqofaa dha."
+
+#: basidesh.src#RID_STR_REPLACELIB.string.text
+msgid "'XX' cannot be replaced."
+msgstr "'XX' bakka buusuun hindanda'amu."
+
+#: basidesh.src#RID_STR_IMPORTNOTPOSSIBLE.string.text
+msgid "'XX' cannot be added."
+msgstr "'XX' Ida'uun hindanda'amu."
+
+#: basidesh.src#RID_STR_NOIMPORT.string.text
+msgid "'XX' was not added."
+msgstr "'XX' hin ida'amne."
+
+#: basidesh.src#RID_STR_ENTERPASSWORD.string.text
+msgid "Enter password for 'XX'"
+msgstr "'XX' dhaaf iggitaa galchi"
+
+#: basidesh.src#RID_STR_SBXNAMEALLREADYUSED.string.text
+msgid "Name already exists"
+msgstr "Maqaan kun duraan jira"
+
+#: basidesh.src#RID_STR_SIGNED.string.text
+msgid "(Signed)"
+msgstr "(Mallattaa'eera)"
+
+#: basidesh.src#RID_STR_SBXNAMEALLREADYUSED2.string.text
+msgid "Object with same name already exists"
+msgstr "Wanti maqaa kana qabu duraan jira"
+
+#: basidesh.src#RID_STR_FILEEXISTS.string.text
+msgid "The 'XX' file already exists"
+msgstr "Faayiliin 'XX' duraan jira"
+
+#: basidesh.src#RID_STR_CANNOTRUNMACRO.string.text
+msgid ""
+"For security reasons, you cannot run this macro.\n"
+"\n"
+"For more information, check the security settings."
+msgstr ""
+"Sababii ittisaatiif, maakroo kana kaasuu hin dandessu.\n"
+"\n"
+"Odeeffannoo Dabalataaf, qindaa'inoota ittisaa mirkaneeffadhu."
+
+#: basidesh.src#RID_STR_COMPILEERROR.string.text
+msgid "Compile Error: "
+msgstr "Dogoggora rogeessuu: "
+
+#: basidesh.src#RID_STR_RUNTIMEERROR.string.text
+msgid "Runtime Error: #"
+msgstr "Dogoggora Yeroo-ka'iinsaa: #"
+
+#: basidesh.src#RID_STR_SEARCHNOTFOUND.string.text
+msgid "Search key not found"
+msgstr "Furtuu barbaachaa hinargamne"
+
+#: basidesh.src#RID_STR_SEARCHFROMSTART.string.text
+msgid "Search to last module complete. Continue at first module?"
+msgstr ""
+"Barbaachi haga moojuulii xumuraatti dhumee jira. Moojuulii jalqabaarraa itti "
+"haa fufuu?"
+
+#: basidesh.src#RID_STR_SEARCHREPLACES.string.text
+msgid "Search key replaced XX times"
+msgstr "Furtuun barbaachaa si'a XX bakka buusame"
+
+#: basidesh.src#RID_STR_COULDNTREAD.string.text
+msgid "The file could not be read"
+msgstr "Faayilii dubbisuun hin danda'amne"
+
+#: basidesh.src#RID_STR_COULDNTWRITE.string.text
+msgid "The file could not be saved"
+msgstr "Faayilii olkaa'uun hin danda'amne"
+
+#: basidesh.src#RID_STR_CANNOTCHANGENAMESTDLIB.string.text
+msgid "The name of the default library cannot be changed."
+msgstr "Maqaa manbarroo durtii jijjiiruun hin danda'amu."
+
+#: basidesh.src#RID_STR_CANNOTCHANGENAMEREFLIB.string.text
+msgid "The name of a referenced library cannot be changed."
+msgstr "Maqaa manbarroo waabeffamee jijjiiruun hin danda'amu."
+
+#: basidesh.src#RID_STR_CANNOTUNLOADSTDLIB.string.text
+msgid "The default library cannot be deactivated"
+msgstr "Manbarroo durtii kaka'umsaleessuun hin danda'amu"
+
+#: basidesh.src#RID_STR_GENERATESOURCE.string.text
+msgid "Generating source"
+msgstr "Madda"
+
+#: basidesh.src#RID_STR_FILENAME.string.text
+msgid "File name:"
+msgstr "Maqaa faayilii:"
+
+#: basidesh.src#RID_STR_APPENDLIBS.string.text
+msgid "Import Libraries"
+msgstr "Manbarroota Alaagi"
+
+#: basidesh.src#RID_STR_QUERYDELMACRO.string.text
+msgid "Do you want to delete the macro XX?"
+msgstr "Maakroo XX haquu barbaaddaa?"
+
+#: basidesh.src#RID_STR_QUERYDELDIALOG.string.text
+msgid "Do you want to delete the XX dialog?"
+msgstr "Qaaqa XX haquu barbaaddaa?"
+
+#: basidesh.src#RID_STR_QUERYDELLIB.string.text
+msgid "Do you want to delete the XX library?"
+msgstr "Manbarroo XX haquu barbaaddaa?"
+
+#: basidesh.src#RID_STR_QUERYDELLIBREF.string.text
+msgid "Do you want to delete the reference to the XX library?"
+msgstr "Wabii manbarroo XX haquu barbaaddaa?"
+
+#: basidesh.src#RID_STR_QUERYDELMODULE.string.text
+msgid "Do you want to delete the XX module?"
+msgstr "Moojuulii XX haquu barbaaddaa?"
+
+#: basidesh.src#RID_STR_OBJNOTFOUND.string.text
+msgid "Object or method not found"
+msgstr "Wanta ykn toftaa hinargamne"
+
+#: basidesh.src#RID_STR_BASIC.string.text
+msgid "BASIC"
+msgstr "BASIC"
+
+#: basidesh.src#RID_STR_LINE.string.text
+msgid "Ln"
+msgstr "Sr"
+
+#: basidesh.src#RID_STR_COLUMN.string.text
+msgid "Col"
+msgstr "Tarjaa"
+
+#: basidesh.src#RID_STR_DOC.string.text
+msgid "Document"
+msgstr "Galmee"
+
+#: basidesh.src#RID_BASICIDE_OBJECTBAR.string.text
+msgid "Macro Bar"
+msgstr "Kabala Maakroo"
+
+#: basidesh.src#RID_STR_CANNOTCLOSE.string.text
+msgid "The window cannot be closed while BASIC is running."
+msgstr "Yoo BASIC kaa'ee jiru foddaa cufuun hin danda'amu."
+
+#: basidesh.src#RID_STR_REPLACESTDLIB.string.text
+msgid "The default library cannot be replaced."
+msgstr "Manbarroo durtii bakka buusuun hin danda'amu."
+
+#: basidesh.src#RID_STR_REFNOTPOSSIBLE.string.text
+msgid "Reference to 'XX' not possible."
+msgstr "Wabiin 'XX' hindanda'amu."
+
+#: basidesh.src#RID_STR_WATCHNAME.string.text
+msgid "Watch"
+msgstr "Ilaali"
+
+#: basidesh.src#RID_STR_WATCHVARIABLE.string.text
+msgid "Variable"
+msgstr "Jijjiiramaa"
+
+#: basidesh.src#RID_STR_WATCHVALUE.string.text
+msgid "Value"
+msgstr "Gatii"
+
+#: basidesh.src#RID_STR_WATCHTYPE.string.text
+msgid "Type"
+msgstr "Akaakuu"
+
+#: basidesh.src#RID_STR_STACKNAME.string.text
+msgid "Call Stack"
+msgstr "Tartiiba Waamichaa"
+
+#: basidesh.src#RID_STR_INITIDE.string.text
+msgid "BASIC Initialization"
+msgstr "Kaafama BASIC"
+
+#: basidesh.src#RID_STR_STDMODULENAME.string.text
+msgid "Module"
+msgstr "Moojuulii"
+
+#: basidesh.src#RID_STR_STDDIALOGNAME.string.text
+msgctxt "basidesh.src#RID_STR_STDDIALOGNAME.string.text"
+msgid "Dialog"
+msgstr "Qaaqa"
+
+#: basidesh.src#RID_STR_STDLIBNAME.string.text
+msgid "Library"
+msgstr "Manbarroo"
+
+#: basidesh.src#RID_STR_NEWLIB.string.text
+msgid "New Library"
+msgstr "Manbarroo Haaraa"
+
+#: basidesh.src#RID_STR_NEWMOD.string.text
+msgid "New Module"
+msgstr "Moojuulii Haaraa"
+
+#: basidesh.src#RID_STR_NEWDLG.string.text
+msgid "New Dialog"
+msgstr "Daaqa Haaraa"
+
+#: basidesh.src#RID_STR_ALL.string.text
+msgid "All"
+msgstr "Mara"
+
+#: basidesh.src#RID_STR_PAGE.string.text
+msgid "Page"
+msgstr "Fuula"
+
+#: basidesh.src#RID_STR_MACRONAMEREQ.string.text
+msgid "A name must be entered."
+msgstr "Maqaan galuu qaba."
+
+#: basidesh.src#RID_STR_WILLSTOPPRG.string.text
+msgid ""
+"You will have to restart the program after this edit.\n"
+"Continue?"
+msgstr ""
+"Gulaallii kana booda saganticha lamkaasuu qabda.\n"
+"Itti haa fufuu?"
+
+#: basidesh.src#RID_STR_SEARCHALLMODULES.string.text
+msgid "Do you want to replace the text in all active modules?"
+msgstr "Barruu moojuuloota ka'oo keessaa mara bakka buusuu barabaaddaa?"
+
+#: basidesh.src#RID_IMGBTN_REMOVEWATCH.imagebutton.text
+msgid "-"
+msgstr "-"
+
+#: basidesh.src#RID_IMGBTN_REMOVEWATCH.imagebutton.quickhelptext
+msgid "Remove Watch"
+msgstr "Ilaalii Haqi"
+
+#: basidesh.src#RID_STR_REMOVEWATCH.string.text
+msgid "Watch:"
+msgstr "Ilaali:"
+
+#: basidesh.src#RID_STR_STACK.string.text
+msgid "Calls: "
+msgstr "Waamichoota: "
+
+#: basidesh.src#RID_STR_USERMACROS.string.text
+msgid "My Macros"
+msgstr "Maakroota Koo"
+
+#: basidesh.src#RID_STR_USERDIALOGS.string.text
+msgid "My Dialogs"
+msgstr "Qaaqota Koo"
+
+#: basidesh.src#RID_STR_USERMACROSDIALOGS.string.text
+msgid "My Macros & Dialogs"
+msgstr "Maakroota & Qaaqota Koo"
+
+#: basidesh.src#RID_STR_SHAREMACROS.string.text
+msgid "%PRODUCTNAME Macros"
+msgstr "Maakroota %PRODUCTNAME"
+
+#: basidesh.src#RID_STR_SHAREDIALOGS.string.text
+msgid "%PRODUCTNAME Dialogs"
+msgstr "Qaaqota %PRODUCTNAME"
+
+#: basidesh.src#RID_STR_SHAREMACROSDIALOGS.string.text
+msgid "%PRODUCTNAME Macros & Dialogs"
+msgstr "Maakroota & Qaaqota %PRODUCTNAME"
+
+#: basidesh.src#RID_POPUP_BRKPROPS.RID_ACTIV.menuitem.text
+msgctxt "basidesh.src#RID_POPUP_BRKPROPS.RID_ACTIV.menuitem.text"
+msgid "Active"
+msgstr "Ka'aa"
+
+#: basidesh.src#RID_POPUP_BRKPROPS.RID_BRKPROPS.menuitem.text
+msgctxt "basidesh.src#RID_POPUP_BRKPROPS.RID_BRKPROPS.menuitem.text"
+msgid "Properties..."
+msgstr "Amaloota..."
+
+#: basidesh.src#RID_POPUP_BRKPROPS.menu.text
+#, fuzzy
+msgid "Properties"
+msgstr "Amaloota"
+
+#: basidesh.src#RID_POPUP_BRKDLG.RID_BRKDLG.menuitem.text
+msgid "Manage Breakpoints..."
+msgstr "Sarqurxaalee Taliig..."
+
+#: basidesh.src#RID_POPUP_BRKDLG.menu.text
+msgctxt "basidesh.src#RID_POPUP_BRKDLG.menu.text"
+msgid "Manage Breakpoints"
+msgstr "Sarqurxaalee Taliigi"
+
+#: basidesh.src#RID_POPUP_TABBAR.RID_INSERT.SID_BASICIDE_NEWMODULE.menuitem.text
+msgid "BASIC Module"
+msgstr "Moojuulii BASIC"
+
+#: basidesh.src#RID_POPUP_TABBAR.RID_INSERT.SID_BASICIDE_NEWDIALOG.menuitem.text
+msgid "BASIC Dialog"
+msgstr "Qaaqa BASIC"
+
+#: basidesh.src#RID_POPUP_TABBAR.RID_INSERT.menuitem.text
+msgid "Insert"
+msgstr "Saagi"
+
+#: basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_DELETECURRENT.menuitem.text
+msgctxt "basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_DELETECURRENT.menuitem.text"
+msgid "Delete"
+msgstr "Haqi"
+
+#: basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_RENAMECURRENT.menuitem.text
+msgctxt "basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_RENAMECURRENT.menuitem.text"
+msgid "Rename"
+msgstr "Maqaa jijjiiri"
+
+#: basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_HIDECURPAGE.menuitem.text
+msgid "Hide"
+msgstr "Dhoksi"
+
+#: basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_MODULEDLG.menuitem.text
+msgid "Modules..."
+msgstr "Moojuulota..."
+
+#: basidesh.src#RID_POPUP_DLGED.SID_SHOW_PROPERTYBROWSER.menuitem.text
+msgctxt "basidesh.src#RID_POPUP_DLGED.SID_SHOW_PROPERTYBROWSER.menuitem.text"
+msgid "Properties..."
+msgstr "Amaloota..."
+
+#: basidesh.src#RID_STR_QUERYREPLACEMACRO.string.text
+msgid "Do you want to overwrite the XX macro?"
+msgstr "Maakroo XX irrabuu barbaaddaa?"
+
+#: basidesh.src#RID_STR_TRANSLATION_NOTLOCALIZED.string.text
+msgid "<Not localized>"
+msgstr "<Hin biyyoomne>"
+
+#: basidesh.src#RID_STR_TRANSLATION_DEFAULT.string.text
+msgid "[Default Language]"
+msgstr "[Afaan Durtii]"
+
+#: basidesh.src#RID_STR_DOCUMENT_OBJECTS.string.text
+msgid "Document Objects"
+msgstr ""
+
+#: basidesh.src#RID_STR_USERFORMS.string.text
+msgid "Forms"
+msgstr ""
+
+#: basidesh.src#RID_STR_NORMAL_MODULES.string.text
+#, fuzzy
+msgctxt "basidesh.src#RID_STR_NORMAL_MODULES.string.text"
+msgid "Modules"
+msgstr "Moojuulii"
+
+#: basidesh.src#RID_STR_CLASS_MODULES.string.text
+msgid "Class Modules"
+msgstr ""
+
+#: basidesh.src#RID_STR_DLGIMP_CLASH_RENAME.string.text
+msgctxt "basidesh.src#RID_STR_DLGIMP_CLASH_RENAME.string.text"
+msgid "Rename"
+msgstr "Maqaa Jijjiiri"
+
+#: basidesh.src#RID_STR_DLGIMP_CLASH_REPLACE.string.text
+msgid "Replace"
+msgstr "Bakkabuusi"
+
+#: basidesh.src#RID_STR_DLGIMP_CLASH_TITLE.string.text
+msgid "Dialog Import - Name already used"
+msgstr "Alaaga Qaaqaa - Maqaa kanaan dura faayidaarra oole"
+
+#: basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.string.text
+msgid ""
+"The library already contains a dialog with the name:\n"
+"\n"
+"$(ARG1)\n"
+"\n"
+"Rename dialog to keep current dialog or replace existing dialog.\n"
+" "
+msgstr ""
+"Manbarroon qaaqa maqaa kana qabu ofkeessaa qaba:\n"
+"\n"
+"$(ARG1)\n"
+"\n"
+"Qaaqa ammaa kaa'uuf maqaa qaaqaa jijjiiri ykn qaaqa jiru bakkabuusi.\n"
+
+#: basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.string.text
+msgid "Add"
+msgstr "Ida'i"
+
+#: basidesh.src#RID_STR_DLGIMP_MISMATCH_OMIT.string.text
+msgid "Omit"
+msgstr "Balleessi"
+
+#: basidesh.src#RID_STR_DLGIMP_MISMATCH_TITLE.string.text
+msgid "Dialog Import - Language Mismatch"
+msgstr "Alaaga Qaaqaa - Walsima Dhaba Afaanii"
+
+#: basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.string.text
+msgid ""
+"The dialog to be imported supports other languages than the target library.\n"
+"\n"
+"Add these languages to the library to keep additional language resources "
+"provided by the dialog or omit them to stay with the current library "
+"languages.\n"
+"\n"
+"Note: For languages not supported by the dialog the resources of the "
+"dialog's default language will be used.\n"
+" "
+msgstr ""
+"Qaaqni alaagamu afaanota biroo manbarroo galteetiin alaa deeggara.\n"
+"\n"
+"Qabeenyota afaanii dabalataa qaaqichaan laataman kaa'uuf afaanota kanneen "
+"manbarrootti ida'i ykn afaanota manbarroo ammaa waliin turuuf jara kana "
+"balleessi.\n"
+"\n"
+"Yaadannoo: Afaanota qaaqichaan hin deeggaramneef qaabeenyonni afaan durtii "
+"qaaqaa ni fayyadamu.\n"
+
+#: brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_NEW.pushbutton.text
+msgid "New"
+msgstr "Haaraa"
+
+#: brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_DEL.pushbutton.text
+msgctxt "brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_DEL.pushbutton.text"
+msgid "Delete"
+msgstr "Haqi"
+
+#: brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_CHKB_ACTIVE.checkbox.text
+msgctxt "brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_CHKB_ACTIVE.checkbox.text"
+msgid "Active"
+msgstr "Ka'aa"
+
+#: brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_PASS.fixedtext.text
+msgid "Pass Count:"
+msgstr "Lakkoofsa Darbaa:"
+
+#: brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_BRKPOINTS.fixedtext.text
+msgid "Breakpoints"
+msgstr "Sarqurxaalee"
+
+#: brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.modaldialog.text
+msgctxt "brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.modaldialog.text"
+msgid "Manage Breakpoints"
+msgstr "Sarqurxaalee Taliigi"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACROSIN.fixedtext.text
+msgid "Existing macros ~in:"
+msgstr "Maakroota as keessa jiran:"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACRONAME.fixedtext.text
+msgid "~Macro name"
+msgstr "Maqaa maakroo"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACROFROM.fixedtext.text
+msgid "Macro ~from"
+msgstr "Irraa maakroo"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_TXT_SAVEMACRO.fixedtext.text
+msgid "Save m~acro in"
+msgstr "Keessa maakroo olkaa'i"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_TXT_DESCRIPTION.fixedtext.text
+msgid "De~scription"
+msgstr "Ibsa"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_PB_RUN.pushbutton.text
+msgid "R~un"
+msgstr "Ka'iinsa"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_PB_CLOSE.cancelbutton.text
+msgctxt "macrodlg.src#RID_MACROCHOOSER.RID_PB_CLOSE.cancelbutton.text"
+msgid "Close"
+msgstr "Cufi"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_PB_ASSIGN.pushbutton.text
+msgid "~Assign..."
+msgstr "Ramadi..."
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_PB_EDIT.pushbutton.text
+msgctxt "macrodlg.src#RID_MACROCHOOSER.RID_PB_EDIT.pushbutton.text"
+msgid "~Edit"
+msgstr "Gulaali"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_PB_NEWLIB.pushbutton.text
+msgid "New ~Library"
+msgstr "Manbarroo Haaraa"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_PB_NEWMOD.pushbutton.text
+msgid "New M~odule"
+msgstr "Moojuulii Haaraa"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_PB_DEL.pushbutton.text
+msgctxt "macrodlg.src#RID_MACROCHOOSER.RID_PB_DEL.pushbutton.text"
+msgid "~Delete"
+msgstr "Haqi"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_PB_ORG.pushbutton.text
+msgid "~Organizer..."
+msgstr "Qindeessituu..."
+
+#: macrodlg.src#RID_MACROCHOOSER.modaldialog.text
+msgid "%PRODUCTNAME Basic Macros"
+msgstr "Maakroota Bu'uuraa %PRODUCTNAME"
+
+#: macrodlg.src#RID_STR_STDMACRONAME.string.text
+msgid "Macro"
+msgstr "Maakroo"
+
+#: macrodlg.src#RID_STR_BTNDEL.string.text
+msgctxt "macrodlg.src#RID_STR_BTNDEL.string.text"
+msgid "~Delete"
+msgstr "Haqi"
+
+#: macrodlg.src#RID_STR_BTNNEW.string.text
+msgid "~New"
+msgstr "Haaraa"
+
+#: macrodlg.src#RID_STR_CLOSE.string.text
+msgctxt "macrodlg.src#RID_STR_CLOSE.string.text"
+msgid "Close"
+msgstr "Cufi"
+
+#: macrodlg.src#RID_STR_CHOOSE.string.text
+msgid "Choose"
+msgstr "Fili"
+
+#: macrodlg.src#RID_STR_RUN.string.text
+msgid "Run"
+msgstr "Ka'iinsa"
+
+#: macrodlg.src#RID_STR_RECORD.string.text
+msgid "~Save"
+msgstr "Olkaa'i"
+
+#: moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_MOD.pageitem.text
+#, fuzzy
+msgctxt "moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_MOD.pageitem.text"
+msgid "Modules"
+msgstr "Moojuulii"
+
+#: moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_DLG.pageitem.text
+msgid "Dialogs"
+msgstr "Qaaqota"
+
+#: moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_LIB.pageitem.text
+msgid "Libraries"
+msgstr "Manbarroota"
+
+#: moduldlg.src#RID_TD_ORGANIZE.tabdialog.text
+msgid "%PRODUCTNAME Basic Macro Organizer"
+msgstr "Qindeessituu Maakroo Bu'uuraa %PRODUCTNAME"
+
+#: moduldlg.src#RID_TP_MODULS.RID_STR_LIB.fixedtext.text
+msgid "M~odule"
+msgstr "Moojuulii"
+
+#: moduldlg.src#RID_TP_MODULS.RID_PB_EDIT.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_MODULS.RID_PB_EDIT.pushbutton.text"
+msgid "~Edit"
+msgstr "Gulaali"
+
+#: moduldlg.src#RID_TP_MODULS.RID_PB_CLOSE.cancelbutton.text
+msgctxt "moduldlg.src#RID_TP_MODULS.RID_PB_CLOSE.cancelbutton.text"
+msgid "Close"
+msgstr "Cufi"
+
+#: moduldlg.src#RID_TP_MODULS.RID_PB_NEWMOD.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_MODULS.RID_PB_NEWMOD.pushbutton.text"
+msgid "~New..."
+msgstr "Haaraa..."
+
+#: moduldlg.src#RID_TP_MODULS.RID_PB_NEWDLG.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_MODULS.RID_PB_NEWDLG.pushbutton.text"
+msgid "~New..."
+msgstr "Haaraa..."
+
+#: moduldlg.src#RID_TP_MODULS.RID_PB_DELETE.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_MODULS.RID_PB_DELETE.pushbutton.text"
+msgid "~Delete"
+msgstr "Haqi"
+
+#: moduldlg.src#RID_TP_DLGS.RID_STR_LIB.fixedtext.text
+msgctxt "moduldlg.src#RID_TP_DLGS.RID_STR_LIB.fixedtext.text"
+msgid "Dialog"
+msgstr "Qaaqa"
+
+#: moduldlg.src#RID_TP_DLGS.RID_PB_EDIT.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_DLGS.RID_PB_EDIT.pushbutton.text"
+msgid "~Edit"
+msgstr "Gulaali"
+
+#: moduldlg.src#RID_TP_DLGS.RID_PB_CLOSE.cancelbutton.text
+msgctxt "moduldlg.src#RID_TP_DLGS.RID_PB_CLOSE.cancelbutton.text"
+msgid "Close"
+msgstr "Cufi"
+
+#: moduldlg.src#RID_TP_DLGS.RID_PB_NEWMOD.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_DLGS.RID_PB_NEWMOD.pushbutton.text"
+msgid "~New..."
+msgstr "Haaraa..."
+
+#: moduldlg.src#RID_TP_DLGS.RID_PB_NEWDLG.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_DLGS.RID_PB_NEWDLG.pushbutton.text"
+msgid "~New..."
+msgstr "Haaraa..."
+
+#: moduldlg.src#RID_TP_DLGS.RID_PB_DELETE.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_DLGS.RID_PB_DELETE.pushbutton.text"
+msgid "~Delete"
+msgstr "Haqi"
+
+#: moduldlg.src#RID_TP_LIBS.RID_STR_BASICS.fixedtext.text
+msgid "L~ocation"
+msgstr "Iddoo"
+
+#: moduldlg.src#RID_TP_LIBS.RID_STR_LIB.fixedtext.text
+msgid "~Library"
+msgstr "Manbarroo"
+
+#: moduldlg.src#RID_TP_LIBS.RID_PB_EDIT.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_LIBS.RID_PB_EDIT.pushbutton.text"
+msgid "~Edit"
+msgstr "Gulaali"
+
+#: moduldlg.src#RID_TP_LIBS.RID_PB_CLOSE.cancelbutton.text
+msgctxt "moduldlg.src#RID_TP_LIBS.RID_PB_CLOSE.cancelbutton.text"
+msgid "Close"
+msgstr "Cufi"
+
+#: moduldlg.src#RID_TP_LIBS.RID_PB_PASSWORD.pushbutton.text
+msgid "~Password..."
+msgstr "Iggitaa..."
+
+#: moduldlg.src#RID_TP_LIBS.RID_PB_NEWLIB.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_LIBS.RID_PB_NEWLIB.pushbutton.text"
+msgid "~New..."
+msgstr "Haaraa..."
+
+#: moduldlg.src#RID_TP_LIBS.RID_PB_APPEND.pushbutton.text
+msgid "~Import..."
+msgstr "Alaagi..."
+
+#: moduldlg.src#RID_TP_LIBS.RID_PB_EXPORT.pushbutton.text
+msgid "E~xport..."
+msgstr "Alergii..."
+
+#: moduldlg.src#RID_TP_LIBS.RID_PB_DELETE.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_LIBS.RID_PB_DELETE.pushbutton.text"
+msgid "~Delete"
+msgstr "Haqi"
+
+#: moduldlg.src#RID_DLG_LIBS.RID_FL_OPTIONS.fixedline.text
+msgid "Options"
+msgstr "Dirqalaalee"
+
+#: moduldlg.src#RID_DLG_LIBS.RID_CB_REF.checkbox.text
+msgid "Insert as reference (read-only)"
+msgstr "Akka wabiitti saagi (dubbisqofaa)"
+
+#: moduldlg.src#RID_DLG_LIBS.RID_CB_REPL.checkbox.text
+msgid "Replace existing libraries"
+msgstr "Manbarroota jiran bakka buusi"
+
+#: moduldlg.src#RID_DLG_NEWLIB.RID_FT_NEWLIB.fixedtext.text
+msgid "~Name:"
+msgstr "Maqaa:"
+
+#: moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASPACKAGE.radiobutton.text
+msgid "Export as ~extension"
+msgstr "Aka dheertootti alergi"
+
+#: moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASBASIC.radiobutton.text
+msgctxt "moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASBASIC.radiobutton.text"
+msgid "Export as BASIC library"
+msgstr "Akka manbarroo BASIC alergi"
+
+#: moduldlg.src#RID_DLG_EXPORT.modaldialog.text
+msgid "Export Basic library"
+msgstr "Manbarroo Basic alergi"
+
+#: moduldlg.src#RID_STR_EXPORTPACKAGE.string.text
+msgid "Export library as extension"
+msgstr "Manbarroo akka dheertootti alergi"
+
+#: moduldlg.src#RID_STR_EXPORTBASIC.string.text
+msgctxt "moduldlg.src#RID_STR_EXPORTBASIC.string.text"
+msgid "Export as BASIC library"
+msgstr "Akka manbarroo BASIC alergi"
+
+#: moduldlg.src#RID_STR_PACKAGE_BUNDLE.string.text
+msgid "Extension"
+msgstr "Dheertoo"
+
+#: moptions.src#RID_MACROOPTIONS.RID_FT_DESCR.fixedtext.text
+msgctxt "moptions.src#RID_MACROOPTIONS.RID_FT_DESCR.fixedtext.text"
+msgid "Description"
+msgstr "Ibsa"
+
+#: moptions.src#RID_MACROOPTIONS.RID_FL_HELP.fixedline.text
+msgid "Help information"
+msgstr "Odeeffannoo gargaarsaa"
+
+#: moptions.src#RID_MACROOPTIONS.RID_FT_HELPID.fixedtext.text
+msgid "Help ID"
+msgstr "ID Gargaarsaa"
+
+#: moptions.src#RID_MACROOPTIONS.RID_FT_HELPNAME.fixedtext.text
+msgid "Help file name"
+msgstr "Maqaa faayilii gargaarsaa"
+
+#: moptions.src#RID_MACROOPTIONS.modaldialog.text
+msgctxt "moptions.src#RID_MACROOPTIONS.modaldialog.text"
+msgid "Description"
+msgstr "Ibsa"
+
+#: objdlg.src#RID_BASICIDE_OBJCAT.RID_TB_TOOLBOX.TBITEM_SHOW.toolboxitem.text
+msgid "Show"
+msgstr "Mul'isi"
+
+#: objdlg.src#RID_BASICIDE_OBJCAT.floatingwindow.text
+msgid "Objects"
+msgstr "Wantoota"
+
+#: objdlg.src#RID_STR_TLB_MACROS.string.text
+msgid "Objects Tree"
+msgstr ""
+
+#~ msgctxt "tbxctl.src#RID_TBXCONTROLS.RID_TOOLBOX.string.text"
+#~ msgid "Controls"
+#~ msgstr "Too'atamtoota"
+
+#~ msgctxt "tbxctl.src#RID_TBXCONTROLS.floatingwindow.text"
+#~ msgid "Controls"
+#~ msgstr "Too'atamtoota"
+
+#~ msgid "Button"
+#~ msgstr "Qabduu"
+
+#~ msgid "Check Box"
+#~ msgstr "Sanduuqa Filannoo"
+
+#~ msgid "Label field"
+#~ msgstr "Dirree moggaasaa"
+
+#~ msgid "List Box"
+#~ msgstr "Sanduuqa Tarree"
+
+#~ msgid "Horizontal Scroll Bar"
+#~ msgstr "Kabala Marfata Sardalaa"
+
+#~ msgid "Group Box"
+#~ msgstr "Sanduuqa Gurmuu"
+
+#~ msgid "Horizontal Line"
+#~ msgstr "Sarara Sardalaa"
+
+#~ msgid "Date Field"
+#~ msgstr "Dirree Guyyaa"
+
+#~ msgid "Numeric Field"
+#~ msgstr "Dirree Lakkofsaa"
+
+#~ msgid "Formatted Field"
+#~ msgstr "Dirree Dhangi'ame"
+
+#~ msgid "File Selection"
+#~ msgstr "Filannoo Faayilii"
+
+#~ msgid "Tree Control"
+#~ msgstr "To'annaa Damee"
+
+#~ msgid "Image Control"
+#~ msgstr "To'annaa Fakkaattii"
+
+#~ msgid "Option Button"
+#~ msgstr "Qabduu Dirqalaa"
+
+#~ msgid "Text Box"
+#~ msgstr "Sanduuqa Barruu"
+
+#~ msgid "Combo Box"
+#~ msgstr "Sanduuqa Koomboo"
+
+#~ msgid "Vertical Scroll Bar"
+#~ msgstr "Kabala Marfata Sarjaa"
+
+#~ msgid "Progress Bar"
+#~ msgstr "Kabala Guddinaa"
+
+#~ msgid "Vertical Line"
+#~ msgstr "Sarara Sarjaa"
+
+#~ msgid "Time Field"
+#~ msgstr "Dirree Yeroo"
+
+#~ msgid "Currency Field"
+#~ msgstr "Dirree Maallaqaa"
+
+#~ msgid "Pattern Field"
+#~ msgstr "Dirree Sarxaa"
+
+#~ msgid "Select"
+#~ msgstr "Fili"
+
+#~ msgid "Activate Test Mode"
+#~ msgstr "Haalata Yaalii Kakaasi"

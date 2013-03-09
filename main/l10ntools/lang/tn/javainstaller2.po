@@ -1,0 +1,807 @@
+
+#: setupstrings.ulf#STRING_PREVIOUS.LngText.text
+msgid "Back"
+msgstr "Terug"
+
+#: setupstrings.ulf#STRING_NEXT.LngText.text
+msgid "Next"
+msgstr "Volgende"
+
+#: setupstrings.ulf#STRING_CANCEL.LngText.text
+msgid "Cancel"
+msgstr "Kanselleer"
+
+#: setupstrings.ulf#STRING_FINISH.LngText.text
+msgid "Finish"
+msgstr "Klaar"
+
+#: setupstrings.ulf#STRING_DECLINE.LngText.text
+msgid "Decline"
+msgstr "Afwys"
+
+#: setupstrings.ulf#STRING_INSTALL.LngText.text
+msgid "Install now"
+msgstr "Installeer nou"
+
+#: setupstrings.ulf#STRING_UNINSTALL.LngText.text
+msgid "Remove Now"
+msgstr "Verwyder nou"
+
+#: setupstrings.ulf#STRING_HELP.LngText.text
+msgid "Help"
+msgstr "Hulp"
+
+#: setupstrings.ulf#STRING_OK.LngText.text
+msgid "OK"
+msgstr "OK"
+
+#: setupstrings.ulf#STRING_ERROR.LngText.text
+msgid "Error"
+msgstr "Fout"
+
+#: setupstrings.ulf#STRING_FILE_NOT_FOUND.LngText.text
+msgid "Error: File not found"
+msgstr "Probleem: Lêer nie gevind nie"
+
+#: setupstrings.ulf#STRING_APPLICATIONTITLE.LngText.text
+msgid "${PRODUCT_FULLNAME} Installation Wizard"
+msgstr "${PRODUCT_FULLNAME}-installasieslimmerd"
+
+#: setupstrings.ulf#STRING_APPLICATIONTITLEUNINSTALLATION.LngText.text
+msgid "${PRODUCT_FULLNAME} Uninstallation Wizard"
+msgstr "${PRODUCT_FULLNAME}-deïnstallasieslimmerd"
+
+#: setupstrings.ulf#STRING_CANCEL_DIALOG_TITLE.LngText.text
+msgid "Exit"
+msgstr "Afsluit"
+
+#: setupstrings.ulf#STRING_CANCEL_DIALOG.LngText.text
+msgid "Do you really want to exit the Installation Wizard?"
+msgstr "Wil u regtig die installasieslimmerd afsluit?"
+
+#: setupstrings.ulf#STRING_CANCEL_DIALOG_UNINSTALLATION.LngText.text
+msgid "Do you really want to exit the Uninstallation Wizard?"
+msgstr "Wil u regtig die deïnstallasieslimmerd afsluit?"
+
+#: setupstrings.ulf#STRING_STOP_DIALOG.LngText.text
+msgid "Do you really want to abort the installation process?"
+msgstr "Wil u regtig die installasieproses laat staak?"
+
+#: setupstrings.ulf#STRING_STOP_DIALOG_TITLE.LngText.text
+msgid "Abort installation?"
+msgstr "Staak installasie?"
+
+#: setupstrings.ulf#STRING_STOP_DIALOG_UNINSTALLATION.LngText.text
+msgid "Do you really want to abort the uninstallation process?"
+msgstr "Wil u regtig die deïnstallasieproses laat staak?"
+
+#: setupstrings.ulf#STRING_STOP_DIALOG_TITLE_UNINSTALLATION.LngText.text
+msgid "Abort uninstallation?"
+msgstr "Staak deïnstallasie?"
+
+#: setupstrings.ulf#STRING_ACCEPTLICENSE.LngText.text
+msgid "Accept License"
+msgstr "Aanvaar lisensie"
+
+#: setupstrings.ulf#STRING_ACCEPTLICENSE1.LngText.text
+msgid "Software License Agreement"
+msgstr "Sagtewarelisensieooreenkoms"
+
+#: setupstrings.ulf#STRING_ACCEPTLICENSE2.LngText.text
+msgid "Please read the following license agreement carefully."
+msgstr "Lees die volgende lisensieooreenkoms asseblief versigtig deur."
+
+#: setupstrings.ulf#STRING_ACCEPTLICENSE3.LngText.text
+msgctxt "setupstrings.ulf#STRING_ACCEPTLICENSE3.LngText.text"
+msgid ""
+"If you have read and accept all the terms of the entire Software License "
+"Agreement, click 'Accept License' to continue with the installation."
+msgstr ""
+"As u al die bepalings van die hele sagtewarelisensieooreenkoms gelees het en "
+"daartoe instem, kliek 'Aanvaar lisensie' om met die installasie voort te "
+"gaan."
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY1.LngText.text
+msgid "Select Installation Directory"
+msgstr "Kies installasiegids"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY1_UPDATE.LngText.text
+msgid "Update the Installed Version"
+msgstr "Werk die geïnstalleerde weergawe by"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY1_MAINTAIN.LngText.text
+msgid "Adding Components to the Installed Version"
+msgstr "Komponente byvoeg by die geïnstalleerde weergawe"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY2.LngText.text
+msgid "Install ${PRODUCT_FULLNAME} in this directory"
+msgstr "Installeer ${PRODUCT_FULLNAME} in hierdie gids"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY3.LngText.text
+msgid "Browse..."
+msgstr "Blaai..."
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY4_QUESTION_TITLE.LngText.text
+msgid "Create New Directory"
+msgstr "Skep nuwe gids"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE.LngText.text
+msgid ""
+"The directory '${DIR}' does not exist.\n"
+"Do you want to create it now?"
+msgstr ""
+"Die gids '${DIR}' bestaan nie.\n"
+"Wil u dit nou skep?"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2.LngText.text
+msgid ""
+"The directory '${DIR}' does not exist.\n"
+"Do you want to create it now or choose another directory?"
+msgstr ""
+"Die gids '${DIR}' bestaan nie.\n"
+"Wil u dit nou skep of 'n ander gids kies?"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY6.LngText.text
+msgid "Select root directory"
+msgstr "Kies wortelgids"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY_NO_WRITE_ACCESS.LngText.text
+msgid "You do not have write access in the directory"
+msgstr "U het nie skryftoegang in die gids nie"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY_NOT_ALLOWED.LngText.text
+msgid "You are not allowed to create the directory"
+msgstr "U word nie toegelaat om 'n gids te skep nie"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY_NO_SUCCESS.LngText.text
+msgid "Failed to create the directory"
+msgstr "Kon nie die gids skep nie"
+
+#: setupstrings.ulf#STRING_CHOOSECOMPONENTS1.LngText.text
+msgid "Select Components"
+msgstr "Kies komponente"
+
+#: setupstrings.ulf#STRING_CHOOSECOMPONENTS1_MAINTAIN.LngText.text
+msgid "Select Additional Components"
+msgstr "Kies bykomende komponente"
+
+#: setupstrings.ulf#STRING_CHOOSECOMPONENTS2.LngText.text
+msgid "Marked components will be installed. Please mark them accordingly"
+msgstr ""
+"Gemerkte komponente sal geïnstalleer word. Merk hulle asseblief daarvolgens"
+
+#: setupstrings.ulf#STRING_CHOOSECOMPONENTS3.LngText.text
+msgid "Feature Description"
+msgstr "Kenmerkbeskrywing"
+
+#: setupstrings.ulf#STRING_CHOOSECOMPONENTS4.LngText.text
+msgid "Size (kB):"
+msgstr "Grootte (kB):"
+
+#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE1.LngText.text
+msgctxt "setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE1.LngText.text"
+msgid "Select the Type of Installation"
+msgstr "Kies die soort installasie"
+
+#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE2.LngText.text
+msgid "Select the type of installation that best suits your needs:"
+msgstr "Kies die soort installering wat die beste aan u behoeftes voldoen:"
+
+#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE3.LngText.text
+msgctxt "setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE3.LngText.text"
+msgid "Select the Type of Installation"
+msgstr "Kies die soort installasie"
+
+#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE4.LngText.text
+msgid "The main components will be installed. Recommended for most users."
+msgstr ""
+"Die hoofkomponente sal geïnstalleer word. Aanbeveel vir die meeste "
+"gebruikers."
+
+#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE5.LngText.text
+msgid ""
+"You choose the components you want to install and where they are stored. "
+"Recommended for advanced users."
+msgstr ""
+"U kies die komponente wat u wil installeer, en waar hulle geïnstalleer moet "
+"word. Aanbeveel vir gevorderde gebruikers."
+
+#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE6.LngText.text
+msgid "Typical"
+msgstr "Tipies"
+
+#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE7.LngText.text
+msgid "Custom"
+msgstr "Doelgemaak"
+
+#: setupstrings.ulf#STRING_INSTALLATIONIMMINENT1.LngText.text
+msgid "Ready to Install"
+msgstr "Gereed vir installering"
+
+#: setupstrings.ulf#STRING_INSTALLATIONIMMINENT1_UPDATE.LngText.text
+msgid "Ready to Update"
+msgstr "Gereed vir bywerking"
+
+#: setupstrings.ulf#STRING_INSTALLATIONIMMINENT2.LngText.text
+msgid "The following ${PRODUCT_FULLNAME} components will be installed:"
+msgstr "Die volgende ${PRODUCT_FULLNAME}-komponente sal geïnstalleer word:"
+
+#: setupstrings.ulf#STRING_INSTALLATIONONGOING1.LngText.text
+msgid "Installing..."
+msgstr "Installeer tans..."
+
+#: setupstrings.ulf#STRING_INSTALLATIONONGOING3.LngText.text
+msgid "Stop"
+msgstr "Stop"
+
+#: setupstrings.ulf#STRING_INSTALLATIONONGOING_PACKAGEPATH_NOT_FOUND.LngText.text
+msgid "ERROR: Path with installation packages not found!"
+msgstr "FOUT: Pad met installasiepakkette nie gevind nie!"
+
+#: setupstrings.ulf#STRING_PROLOGUE1.LngText.text
+msgid "Welcome"
+msgstr "Welkom"
+
+#: setupstrings.ulf#STRING_PROLOGUE2.LngText.text
+msgid ""
+"This Installation Wizard will install ${PRODUCT_FULLNAME} on your computer."
+msgstr ""
+"Hierdie installeerslimmerd sal ${PRODUCT_FULLNAME} op u rekenaar installeer."
+
+#: setupstrings.ulf#STRING_PROLOGUE3.LngText.text
+msgid "To continue, click 'Next'."
+msgstr "Om voort te gaan, kliek 'Volgende'."
+
+#: setupstrings.ulf#STRING_PROLOGUE4.LngText.text
+msgid ""
+"Note: This installation will be done without root privileges. Therefore you "
+"will have a reduced functionality (Java Runtime Environment (JRE) not "
+"installable, system integration not possible).\n"
+"Click 'Cancel' and change your privileges to root privileges, if you want to "
+"use the complete functionality."
+msgstr ""
+"Nota: Hierdie installasie sal sonder wortelregte gedoen word. U sal dus "
+"verminderde funksionaliteit hê (geen stelselintegrasie nie, geen Java-"
+"looptydomgewing nie).\n"
+"Kliek 'Kanselleer' en verander u regte na wortelregte indien u wel volledige "
+"funksionaliteit wil hê."
+
+#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1.LngText.text
+msgid "Installation Completed"
+msgstr "Installasie voltooi"
+
+#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1_ABORT.LngText.text
+msgid "Installation Aborted"
+msgstr "Installasie gestaak"
+
+#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1_ERROR.LngText.text
+msgid "Installation Failed"
+msgstr "Installasie misluk"
+
+#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2.LngText.text
+msgid ""
+"The Installation Wizard has successfully installed ${PRODUCT_FULLNAME} on "
+"your computer."
+msgstr ""
+"Die installeerslimmerd het ${PRODUCT_FULLNAME} suksesvol op u rekenaar "
+"geïnstalleer."
+
+#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ABORT.LngText.text
+msgid ""
+"The Installation Wizard was aborted. ${PRODUCT_NAME} is not installed on "
+"your computer."
+msgstr ""
+"Die installasieslimmerd is gestaak. ${PRODUCT_NAME} is nie op u rekenaar "
+"geïnstalleer nie."
+
+#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ERROR.LngText.text
+msgid ""
+"An error has occurred. Thus the Installation Wizard could not install "
+"${PRODUCT_NAME} on your computer successfully. Click 'Details...' for more "
+"information."
+msgstr ""
+"'n Fout het voorgekom. Die installeerslimmerd kon dus nie ${PRODUCT_NAME} "
+"suksesvol op jou rekenaar installeer nie. Kliek 'Details...' vir nadere "
+"besonderhede."
+
+#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED3.LngText.text
+msgid "Click 'Finish' to exit the Wizard."
+msgstr "Kliek 'Klaar' om die slimmerd af te sluit."
+
+#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED_BUTTON.LngText.text
+msgid "Details..."
+msgstr "Besonderhede..."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE2.LngText.text
+msgid ""
+"The ${PRODUCT_FULLNAME} Uninstallation Wizard will remove "
+"${PRODUCT_FULLNAME} from your computer."
+msgstr ""
+"Die ${PRODUCT_FULLNAME}-deïnstallasieslimmerd sal ${PRODUCT_FULLNAME} van u "
+"rekenaar verwyder."
+
+#: setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_ROOT.LngText.text
+msgid ""
+"Sorry, wrong privileges. Installation was done with User privilges, but you "
+"have Root privileges."
+msgstr ""
+"Jammer, verkeerde regte. Installasie is gedoen met gebruikerregte, maar u "
+"het wortelregte."
+
+#: setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_USER.LngText.text
+msgid ""
+"Sorry, wrong privileges. Installation was done with Root privilges, but you "
+"have User privileges."
+msgstr ""
+"Jammer, verkeerde regte. Installasie is gedoen met wortelregte, maar u het "
+"gebruikerregte."
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE1.LngText.text
+msgid "Select the Type of Uninstallation"
+msgstr "Kies die soort deïnstallasie"
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE2.LngText.text
+msgid "Select the type of uninstallation that best suits your needs:"
+msgstr "Kies die soort deïnstallering wat die beste aan u behoeftes voldoen:"
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE3.LngText.text
+msgid "Partial"
+msgstr "Gedeeltelik"
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE4.LngText.text
+msgid ""
+"Completely removes ${PRODUCT_FULLNAME} and all its components from your "
+"system."
+msgstr ""
+"Verwyder ${PRODUCT_FULLNAME} en al sy komponente geheel en al van u stelsel."
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE5.LngText.text
+msgid "You choose the program features you want to remove."
+msgstr "U kies die programkenmerke wat u wil verwyder."
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE6.LngText.text
+msgid "Complete"
+msgstr "Volledig"
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS2.LngText.text
+msgid ""
+"Components marked with an X will be removed. Mark the components you want to "
+"remove."
+msgstr ""
+"Komponente gemerk met X sal verwyder word. Merk die komponente wat u wil "
+"verwyder."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT1.LngText.text
+msgid "Ready to Remove"
+msgstr "Gereed vir verwydering"
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT2.LngText.text
+msgid "The following ${PRODUCT_FULLNAME} components will be removed: "
+msgstr "Die volgende ${PRODUCT_FULLNAME}-komponente sal verwyder word: "
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONONGOING1.LngText.text
+msgid "Uninstalling..."
+msgstr "Deïnstalleer..."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1.LngText.text
+msgid "Uninstallation Completed"
+msgstr "Deïnstallasie voltooi"
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1_ABORT.LngText.text
+msgid "Uninstallation Aborted"
+msgstr "Deïnstallasie gestaak"
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1_ERROR.LngText.text
+msgid "Uninstallation Failed"
+msgstr "Deïnstallasie misluk"
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2.LngText.text
+msgid ""
+"The Uninstallation Wizard has successfully removed ${PRODUCT_FULLNAME} from "
+"your computer."
+msgstr ""
+"Die deïnstalleerslimmerd het ${PRODUCT_FULLNAME} suksesvol van u rekenaar "
+"verwyder."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_PARTIAL.LngText.text
+msgid ""
+"The Uninstallation Wizard has successfully removed the selected components "
+"of ${PRODUCT_NAME} from your computer."
+msgstr ""
+"Die deïnstalleerslimmerd het die gemerkte komponente van ${PRODUCT_NAME} "
+"suksesvol van u rekenaar verwyder."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ABORT.LngText.text
+msgid ""
+"The Uninstallation Wizard was aborted before completely removing "
+"${PRODUCT_NAME} from your computer."
+msgstr ""
+"Die deïnstalleerslimmerd is gestaak voor dit ${PRODUCT_NAME} volledig van u "
+"rekenaar kon verwyder."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ERROR.LngText.text
+msgid ""
+"An error has occurred. Thus the Uninstallation Wizard could not remove "
+"${PRODUCT_NAME} from your computer successfully. Click 'Details...' for more "
+"information."
+msgstr ""
+"'n Fout het voorgekom. Daarom kon die deïnstalleerslimmerd nie "
+"${PRODUCT_NAME} van u rekenaar verwyder nie. Kliek 'Details...' vir nadere "
+"besonderhede."
+
+#: setupstrings.ulf#STRING_INSTALLERFACTORY_OS_NOT_SUPPORTED.LngText.text
+msgid "Sorry, this Operating System is not supported yet."
+msgstr "Jammer, hierdie bedryfstelsel word nog nie ondersteun nie."
+
+#: setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_FOUND.LngText.text
+msgid "An older version of ${PRODUCT_NAME} was found on your system in:"
+msgstr "'n Ouer weergawe van ${PRODUCT_NAME} is op u rekenaar gevind in:"
+
+#: setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_REMOVE.LngText.text
+msgid ""
+"You have to remove the older version of ${PRODUCT_NAME} before you can "
+"install the newer one."
+msgstr ""
+"U moet die ouer weergawe van ${PRODUCT_NAME} verwyder voor u die nuwer een "
+"kan installeer."
+
+#: setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_FOUND.LngText.text
+msgid "A newer version of ${PRODUCT_NAME} was found on your system in:"
+msgstr "'n Nuwer weergawe van ${PRODUCT_NAME} is gevind op u stelsel in:"
+
+#: setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_REMOVE.LngText.text
+msgid ""
+"You have to remove the newer version of ${PRODUCT_NAME} before you can "
+"install the older one."
+msgstr ""
+"U moet die nuwer weergawe van ${PRODUCT_NAME} verwyder voor u die ouer "
+"weergawe kan installeer."
+
+#: setupstrings.ulf#STRING_NEWER_VERSION_DATABASE.LngText.text
+msgid "Database"
+msgstr "Databasis"
+
+#: setupstrings.ulf#STRING_NEWER_VERSION_TIP.LngText.text
+msgid "Please choose another installation directory."
+msgstr "Kies 'n ander installasiegids."
+
+#: setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_1.LngText.text
+msgid "The user you are logged in as cannot run the Installation Wizard."
+msgstr ""
+"Die gebruiker as wie u aangemeld is, kan nie die installasieslimmerd laat "
+"loop nie."
+
+#: setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_2.LngText.text
+msgid ""
+"Please log out and log back in as a user with system administrator rights."
+msgstr ""
+"Meld asseblief af en meld weer aan as 'n gebruiker met "
+"stelseladministrateurregte."
+
+#: setupstrings.ulf#STRING_DISCSPACE_INSUFFICIENT.LngText.text
+msgid "Not enough discspace available for installation."
+msgstr "Nie genoeg skyfspasie vir installasie beskikbaar nie."
+
+#: setupstrings.ulf#STRING_DISCSPACE_REQUIRED.LngText.text
+msgid "Required disc space"
+msgstr "Vereiste skyfspasie"
+
+#: setupstrings.ulf#STRING_DISCSPACE_AVAILABLE.LngText.text
+msgid "Available disc space"
+msgstr "Beskikbare skyfspasie"
+
+#: setupstrings.ulf#STRING_DISCSPACE_TIP.LngText.text
+msgid ""
+"Please use another directory for installation or change your module "
+"selection."
+msgstr ""
+"Gebruik asseblief 'n ander gids vir installasie of verander u modulekeuse."
+
+#: setupstrings.ulf#STRING_ANALYZING_DATABASE1.LngText.text
+msgid "Analyzing ..."
+msgstr "Ontleed tans..."
+
+#: setupstrings.ulf#STRING_ANALYZING_DATABASE2.LngText.text
+msgid ""
+"Analyzing database\n"
+"Please wait a moment ..."
+msgstr ""
+"Ontleed tans databasis\n"
+"Wag 'n oomblik..."
+
+#: setupstrings.ulf#STRING_PROLOGUE_1.LngText.text
+msgid ""
+"Welcome to the Installation Wizard.<p>This wizard asks you to supply "
+"configuration settings.<p>At the bottom of each page are navigation buttons "
+"that let you move through the Installation Wizard:"
+msgstr ""
+"Welkom by die installasieslimmerd.<p>Hierdie slimmerd vra u vir "
+"opstellinginstellings.<p>Onderaan elke bladsy is navigasieknoppies waarmee u "
+"deur die installasieslimmerd kan beweeg:"
+
+#: setupstrings.ulf#STRING_PROLOGUE_2.LngText.text
+msgctxt "setupstrings.ulf#STRING_PROLOGUE_2.LngText.text"
+msgid "'Back' returns you to the previous page."
+msgstr "'Terug' laat u na die vorige bladsy terugkeer."
+
+#: setupstrings.ulf#STRING_PROLOGUE_3.LngText.text
+msgctxt "setupstrings.ulf#STRING_PROLOGUE_3.LngText.text"
+msgid "'Next' takes you to the next page. "
+msgstr "'Volgende' neem u na die volgende bladsy. "
+
+#: setupstrings.ulf#STRING_PROLOGUE_4.LngText.text
+msgid "'Cancel' ends the Installation Wizard without installing this software."
+msgstr ""
+"'Kanselleer' beëindig die installasieslimmerd sonder om hierdie sagteware te "
+"installeer."
+
+#: setupstrings.ulf#STRING_PROLOGUE_5.LngText.text
+msgctxt "setupstrings.ulf#STRING_PROLOGUE_5.LngText.text"
+msgid ""
+"'Help' displays the Help with further information about the page currently "
+"displayed."
+msgstr ""
+"'Hulp' wys die Hulp met verdere inligting oor die bladsy wat tans gewys "
+"word."
+
+#: setupstrings.ulf#STRING_PROLOGUE_6.LngText.text
+msgid "'OK' exits the Help page and returns you to the Installation Wizard."
+msgstr "'OK' sluit die Hulp-bladsy af en keer na die installasieslimmerd terug."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_1.LngText.text
+msgid ""
+"Welcome to the Uninstallation Wizard.<p>This wizard asks you to supply "
+"configuration settings.<p>At the bottom of each page are navigation buttons "
+"that let you move through the Uninstallation Wizard:"
+msgstr ""
+"Welkom by die deïnstallasieslimmerd.<p>Hierdie slimmerd vra u vir "
+"opstellinginstellings.<p>Onderaan elke bladsy is navigasieknoppies waarmee u "
+"deur die deïnstallasieslimmerd kan beweeg:"
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_2.LngText.text
+msgctxt "setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_2.LngText.text"
+msgid "'Back' returns you to the previous page."
+msgstr "'Terug' laat u na die vorige bladsy terugkeer."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_3.LngText.text
+msgctxt "setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_3.LngText.text"
+msgid "'Next' takes you to the next page. "
+msgstr "'Volgende' neem u na die volgende bladsy. "
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_4.LngText.text
+msgid "'Cancel' ends the Uninstallation Wizard without removing this software."
+msgstr ""
+"'Kanselleer' beëindig die deïnstallasieslimmerd sonder om hierdie sagteware "
+"te verwyder."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_5.LngText.text
+msgctxt "setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_5.LngText.text"
+msgid ""
+"'Help' displays the Help with further information about the page currently "
+"displayed."
+msgstr ""
+"'Hulp' wys die Hulp met verdere inligting oor die bladsy wat tans gewys "
+"word."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_6.LngText.text
+msgid "'OK' exits the Help page and returns you to the Uninstallation Wizard."
+msgstr ""
+"'OK' sluit die Hulp-bladsy af en keer na die deïnstallasieslimmerd terug."
+
+#: setupstrings.ulf#STRING_ACCEPTLICENSE_1.LngText.text
+msgid ""
+"Before you install this product, you must read and accept the entire "
+"Software License Agreement under which this software is licensed for your "
+"use."
+msgstr ""
+"Voor u hierdie produk installeer, moet u die hele "
+"sagtewarelisensieooreenkoms lees en daartoe instem, ingevolge waarvan "
+"hierdie sagteware aan u gelisensieer word."
+
+#: setupstrings.ulf#STRING_ACCEPTLICENSE_2.LngText.text
+msgctxt "setupstrings.ulf#STRING_ACCEPTLICENSE_2.LngText.text"
+msgid ""
+"If you have read and accept all the terms of the entire Software License "
+"Agreement, click 'Accept License' to continue with the installation."
+msgstr ""
+"As u al die bepalings van die hele sagtewarelisensieooreenkoms gelees het en "
+"daartoe instem, kliek 'Aanvaar lisensie' om met die installasie voort te "
+"gaan."
+
+#: setupstrings.ulf#STRING_ACCEPTLICENSE_3.LngText.text
+msgid ""
+"If you do not accept all the terms of the Software License Agreement, click "
+"'Decline' to end the Installation Wizard without installing this product."
+msgstr ""
+"As u nie tot al die bepalings van die hele sagtewarelisensieooreenkoms "
+"instem nie, kliek 'Wys van die hand' om die installasieslimmerd af te sluit "
+"sonder om hierdie produk te installeer."
+
+#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE_1.LngText.text
+msgid ""
+"Select the type of product installation to perform from the following "
+"choices. This will determine how much information you need to provide for "
+"product configuration."
+msgstr ""
+"Kies die soort produkinstallasie om te doen, met die volgende opsies. Dit "
+"sal bepaal hoeveel inligting u vir die produkopstelling moet verskaf."
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY_1.LngText.text
+msgid ""
+"It is recommended that you install this product in the directory suggested "
+"by this Installation Wizard. <p>To choose a different location, click "
+"'Browse...' or specify the full path of the directory to use in the text box "
+"below. <p>If this product is already installed, you cannot change the "
+"destination directory."
+msgstr ""
+"Ons beveel aan dat u hierdie produk installeer in die gids wat deur die "
+"installasieslimmerd voorgestel word. <p>Om 'n ander ligging te kies, kliek "
+"'Blaai...' of spesifiseer die volle pad van die gids om te gebruik in die "
+"tekshokkie hier onder. <p>As die produk reeds geïnstalleer is, kan u nie die "
+"bestemminggids verander nie."
+
+#: setupstrings.ulf#STRING_CHOOSECOMPONENTS_1.LngText.text
+msgid ""
+"Components marked in color will be installed. Click the icon of a component "
+"to mark or unmark the component.<p>All already installed components cannot "
+"be selected for installation."
+msgstr ""
+"Komponente wat in kleur gemerk is, sal geïnstalleer word. Kliek die ikoon "
+"van 'n komponent om die komponent te merk of te ontmerk.<p>Al die komponente "
+"wat reeds geïnstalleer is, kan nie vir installasie gemerk word nie."
+
+#: setupstrings.ulf#STRING_INSTALLATIONIMMINENT_1.LngText.text
+msgid ""
+"The listed components are ready for installation based on your configuration "
+"settings. <p>If you are satisfied with your selection, click 'Install Now' "
+"to begin. <p>To check or modify your settings on the previous pages, click "
+"'Back'."
+msgstr ""
+"Die gelyste rekenaars is reg vir installasie, gebaseer op u "
+"opstellinginstellings. <p>Indien u met u keuse tevrede is, kliek 'Installeer "
+"nou' om te begin. <p>Om u instellings op die vorige bladsye te kontroleer "
+"of te wysig, kliek 'Terug'."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT_1.LngText.text
+msgid ""
+"The listed components are ready for uninstallation based on your "
+"configuration settings. <p>If you are satisfied with your selection, click "
+"'Remove Now' to begin. <p>To check or modify your settings on the previous "
+"pages, click 'Back'."
+msgstr ""
+"Die gelyste komponente is reg vir deïnstallasie, gebaseer op u "
+"opstellinginstellings. <p>Indien u met u keuse tevrede is, kliek 'Verwyder "
+"nou' om te begin. <p>Om u instellings op die vorige bladsye te kontroleer of "
+"te wysig, kliek 'Terug'."
+
+#: setupstrings.ulf#STRING_INSTALLATIONONGOING_1.LngText.text
+msgid ""
+"This page indicates the progress of the installation with the aid of a "
+"progress bar. To abort the installation process, click 'Stop'."
+msgstr ""
+"Hierdie bladsy dui die vordering aan van die installasie, met behulp van 'n "
+"vorderingstaaf. Om die installasieproses te staak, kliek 'Stop'."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONONGOING_1.LngText.text
+msgid ""
+"This page indicates the progress of the uninstallation with the aid of a "
+"progress bar. To abort the uninstallation, click 'Stop'."
+msgstr ""
+"Hierdie bladsy dui die vordering aan van die deïnstallasie, met behulp van "
+"'n vorderingstaaf. Om die deïnstallasieproses te staak, kliek 'Stop'."
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE_1.LngText.text
+msgid ""
+"Complete: This will remove all installed components of your "
+"version.<p>Partial: This removes only the components you will choose out of "
+"the components list."
+msgstr ""
+"Volledig: Dit sal alle geïnstalleerde komponente van u weergawe "
+"verwyder.<p>Gedeeltelik: Dit verwyder net die komponente wat u uit die "
+"komponentelys kies."
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS_1.LngText.text
+msgid ""
+"Components marked with an X will be removed. Click next to a component to "
+"mark or unmark it with an X."
+msgstr ""
+"Komponente gemerk met X sal verwyder word. Kliek langs die komponent om dit "
+"te merk of te ontmerk met 'n X."
+
+#: setupstrings.ulf#STRING_PACKAGEFORMAT_NOT_SUPPORTED.LngText.text
+msgid ""
+"This package format is currently not supported for your operating system!"
+msgstr ""
+"Hierdie pakketformaat word tans nie deur u bedryfstelsel ondersteun nie!"
+
+#: setupstrings.ulf#STRING_OPERATING_SYSTEM.LngText.text
+msgid "Operating system"
+msgstr "Bedryfstelsel"
+
+#: setupstrings.ulf#STRING_PACKAGEFORMAT.LngText.text
+msgid "Package format"
+msgstr "Pakketformaat"
+
+#: setupstrings.ulf#STRING_NOTHING_TO_INSTALL.LngText.text
+msgid "Nothing to install"
+msgstr "Niks om te installeer nie"
+
+#: setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_1.LngText.text
+msgid "No components have been selected for installation."
+msgstr "Geen komponente is vir installasie gekies nie."
+
+#: setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_2.LngText.text
+msgid ""
+"Click 'OK' to select one or more components for installation or to exit the "
+"Installation Wizard."
+msgstr ""
+"Kliek 'OK' om een of meer komponente vir installasie te merk, of om die "
+"installasieslimmerd af te sluit."
+
+#: setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_1.LngText.text
+msgid "No languages have been selected for installation."
+msgstr "Geen tale is gekies om geïnstalleer te word nie."
+
+#: setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_2.LngText.text
+msgid ""
+"Click 'OK' to select one or more languages for installation or to exit the "
+"Installation Wizard."
+msgstr ""
+"Kliek 'OK' om een of meer tale vir installasie te merk, of om die "
+"installasieslimmerd af te sluit."
+
+#: setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_1.LngText.text
+msgid "No applications have been selected for installation."
+msgstr "Geen toepassings is gekies om geïnstalleer te word nie."
+
+#: setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_2.LngText.text
+msgid ""
+"Click 'OK' to select one or more application for installation or to exit the "
+"Installation Wizard."
+msgstr ""
+"Kliek 'OK' om een of meer toepassing vir installering te merk, of om die "
+"installeerslimmerd af te sluit."
+
+#: setupstrings.ulf#STRING_NOTHING_TO_UNINSTALL.LngText.text
+msgid "Nothing to uninstall"
+msgstr "Niks om te deïnstalleer nie"
+
+#: setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_1.LngText.text
+msgid "No components have been selected for uninstallation."
+msgstr "Geen komponente is vir deïnstallasie gekies nie."
+
+#: setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_2.LngText.text
+msgid ""
+"Click 'OK' to select one or more components for uninstallation or to exit "
+"the Uninstallation Wizard."
+msgstr ""
+"Kliek 'OK' om een of meer komponente vir deïnstallasie te kies of om die "
+"deïnstallasieslimmerd af te sluit."
+
+#: setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_1.LngText.text
+msgid "All language components have been selected for uninstallation."
+msgstr "Alle taalkomponente is gekies vir deïnstallasie."
+
+#: setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_2.LngText.text
+msgid ""
+"Click 'OK' to select one or more language components not for uninstallation "
+"or to exit the Uninstallation Wizard."
+msgstr ""
+"Kliek 'OK' om een of meer tale te kies wat nie gedeïnstalleer moet word nie, "
+"of om die deïnstallasieslimmerd af te sluit."
+
+#: setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_1.LngText.text
+msgid "All application components have been selected for uninstallation."
+msgstr "Alle toepassingkomponente is vir deïnstallering gekies."
+
+#: setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_2.LngText.text
+msgid ""
+"Click 'OK' to select one or more application components not for "
+"uninstallation or to exit the Uninstallation Wizard."
+msgstr ""
+"Kliek 'OK' om een of meer toepassingskomponente te kies wat nie "
+"gedeïnstalleer moet word nie, of om die deïnstallasieslimmerd af te sluit."
+
+#: setupstrings.ulf#STRING_CHANGE_SELECTION.LngText.text
+msgid "Please change selection"
+msgstr "Verander asseblief die seleksie"

@@ -1,0 +1,1778 @@
+
+#: sb.src#RID_BASIC_START.SbERR_SYNTAX___ERRCODE_RES_MASK.string.text
+msgid "Syntax error."
+msgstr "Szintaktikai hiba."
+
+#: sb.src#RID_BASIC_START.SbERR_NO_GOSUB___ERRCODE_RES_MASK.string.text
+msgid "Return without Gosub."
+msgstr "Return Gosub nélkül."
+
+#: sb.src#RID_BASIC_START.SbERR_REDO_FROM_START___ERRCODE_RES_MASK.string.text
+msgid "Incorrect entry; please retry."
+msgstr "Helytelen bemenet; próbálja újra."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_ARGUMENT___ERRCODE_RES_MASK.string.text
+msgid "Invalid procedure call."
+msgstr "Érvénytelen eljáráshívás."
+
+#: sb.src#RID_BASIC_START.SbERR_MATH_OVERFLOW___ERRCODE_RES_MASK.string.text
+msgid "Overflow."
+msgstr "Túlcsordulás."
+
+#: sb.src#RID_BASIC_START.SbERR_NO_MEMORY___ERRCODE_RES_MASK.string.text
+msgid "Not enough memory."
+msgstr "Nincs elég memória."
+
+#: sb.src#RID_BASIC_START.SbERR_ALREADY_DIM___ERRCODE_RES_MASK.string.text
+msgid "Array already dimensioned."
+msgstr "A tömb már dimenzionálva van."
+
+#: sb.src#RID_BASIC_START.SbERR_OUT_OF_RANGE___ERRCODE_RES_MASK.string.text
+msgid "Index out of defined range."
+msgstr "Az index a definiált határokon kívülre mutat."
+
+#: sb.src#RID_BASIC_START.SbERR_DUPLICATE_DEF___ERRCODE_RES_MASK.string.text
+msgid "Duplicate definition."
+msgstr "Többszörös definíció."
+
+#: sb.src#RID_BASIC_START.SbERR_ZERODIV___ERRCODE_RES_MASK.string.text
+msgid "Division by zero."
+msgstr "Osztás nullával."
+
+#: sb.src#RID_BASIC_START.SbERR_VAR_UNDEFINED___ERRCODE_RES_MASK.string.text
+msgid "Variable not defined."
+msgstr "A változó nincs definiálva."
+
+#: sb.src#RID_BASIC_START.SbERR_CONVERSION___ERRCODE_RES_MASK.string.text
+msgid "Data type mismatch."
+msgstr "Az adattípus nem egyezik."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_PARAMETER___ERRCODE_RES_MASK.string.text
+msgid "Invalid parameter."
+msgstr "Érvénytelen paraméter."
+
+#: sb.src#RID_BASIC_START.SbERR_USER_ABORT___ERRCODE_RES_MASK.string.text
+msgid "Process interrupted by user."
+msgstr "A felhasználó megszakította a folyamatot."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_RESUME___ERRCODE_RES_MASK.string.text
+msgid "Resume without error."
+msgstr "Hiba nélküli folytatás."
+
+#: sb.src#RID_BASIC_START.SbERR_STACK_OVERFLOW___ERRCODE_RES_MASK.string.text
+msgid "Not enough stack memory."
+msgstr "Nincs elég veremmemória."
+
+#: sb.src#RID_BASIC_START.SbERR_PROC_UNDEFINED___ERRCODE_RES_MASK.string.text
+msgid "Sub-procedure or function procedure not defined."
+msgstr "Aleljárás vagy függvényeljárás nincsen definiálva."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_DLL_LOAD___ERRCODE_RES_MASK.string.text
+msgid "Error loading DLL file."
+msgstr "Hiba a DLL-fájl betöltésekor."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_DLL_CALL___ERRCODE_RES_MASK.string.text
+msgid "Wrong DLL call convention."
+msgstr "Hibás DLL-hívási konvenció."
+
+#: sb.src#RID_BASIC_START.SbERR_INTERNAL_ERROR___ERRCODE_RES_MASK.string.text
+msgid "Internal error $(ARG1)."
+msgstr "Belső hiba $(ARG1)."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_CHANNEL___ERRCODE_RES_MASK.string.text
+msgid "Invalid file name or file number."
+msgstr "Érvénytelen fájlnév vagy fájlszám."
+
+#: sb.src#RID_BASIC_START.SbERR_FILE_NOT_FOUND___ERRCODE_RES_MASK.string.text
+msgid "File not found."
+msgstr "Fájl nem található."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_FILE_MODE___ERRCODE_RES_MASK.string.text
+msgid "Incorrect file mode."
+msgstr "Helytelen fájlmód."
+
+#: sb.src#RID_BASIC_START.SbERR_FILE_ALREADY_OPEN___ERRCODE_RES_MASK.string.text
+msgid "File already open."
+msgstr "A fájl már meg van nyitva."
+
+#: sb.src#RID_BASIC_START.SbERR_IO_ERROR___ERRCODE_RES_MASK.string.text
+msgid "Device I/O error."
+msgstr "Eszköz I/O hiba."
+
+#: sb.src#RID_BASIC_START.SbERR_FILE_EXISTS___ERRCODE_RES_MASK.string.text
+msgid "File already exists."
+msgstr "A fájl már létezik."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_RECORD_LENGTH___ERRCODE_RES_MASK.string.text
+msgid "Incorrect record length."
+msgstr "Helytelen rekordhossz."
+
+#: sb.src#RID_BASIC_START.SbERR_DISK_FULL___ERRCODE_RES_MASK.string.text
+msgid "Disk or hard drive full."
+msgstr "A lemez megtelt."
+
+#: sb.src#RID_BASIC_START.SbERR_READ_PAST_EOF___ERRCODE_RES_MASK.string.text
+msgid "Reading exceeds EOF."
+msgstr "Olvasás a fájl vége (EOF) után."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_RECORD_NUMBER___ERRCODE_RES_MASK.string.text
+msgid "Incorrect record number."
+msgstr "Helytelen rekordszám."
+
+#: sb.src#RID_BASIC_START.SbERR_TOO_MANY_FILES___ERRCODE_RES_MASK.string.text
+msgid "Too many files."
+msgstr "Túl sok fájl."
+
+#: sb.src#RID_BASIC_START.SbERR_NO_DEVICE___ERRCODE_RES_MASK.string.text
+msgid "Device not available."
+msgstr "Az eszköz nem hozzáférhető."
+
+#: sb.src#RID_BASIC_START.SbERR_ACCESS_DENIED___ERRCODE_RES_MASK.string.text
+msgid "Access denied."
+msgstr "Hozzáférés megtagadva."
+
+#: sb.src#RID_BASIC_START.SbERR_NOT_READY___ERRCODE_RES_MASK.string.text
+msgid "Disk not ready."
+msgstr "A lemez nem üzemkész."
+
+#: sb.src#RID_BASIC_START.SbERR_NOT_IMPLEMENTED___ERRCODE_RES_MASK.string.text
+msgid "Not implemented."
+msgstr "Nincs megvalósítva."
+
+#: sb.src#RID_BASIC_START.SbERR_DIFFERENT_DRIVE___ERRCODE_RES_MASK.string.text
+msgid "Renaming on different drives impossible."
+msgstr "A különböző meghajtók közötti átnevezés nem lehetséges."
+
+#: sb.src#RID_BASIC_START.SbERR_ACCESS_ERROR___ERRCODE_RES_MASK.string.text
+msgid "Path/File access error."
+msgstr "A megadott útvonal/fájl nem érhető el."
+
+#: sb.src#RID_BASIC_START.SbERR_PATH_NOT_FOUND___ERRCODE_RES_MASK.string.text
+msgid "Path not found."
+msgstr "Az útvonal nem található."
+
+#: sb.src#RID_BASIC_START.SbERR_NO_OBJECT___ERRCODE_RES_MASK.string.text
+msgid "Object variable not set."
+msgstr "Az objektumváltozó nincs beállítva."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_PATTERN___ERRCODE_RES_MASK.string.text
+msgid "Invalid string pattern."
+msgstr "Helytelen karakterlánc-minta."
+
+#: sb.src#RID_BASIC_START.SBERR_IS_NULL___ERRCODE_RES_MASK.string.text
+msgid "Use of zero not permitted."
+msgstr "Itt nem állhat nulla."
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_ERROR___ERRCODE_RES_MASK.string.text
+msgid "DDE Error."
+msgstr "DDE-hiba."
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_WAITINGACK___ERRCODE_RES_MASK.string.text
+msgid "Awaiting response to DDE connection."
+msgstr "Várakozás a DDE-kapcsolat válaszára."
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_OUTOFCHANNELS___ERRCODE_RES_MASK.string.text
+msgid "No DDE channels available."
+msgstr "A DDE-csatornák elérhetetlenek."
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_NO_RESPONSE___ERRCODE_RES_MASK.string.text
+msgid "No application responded to DDE connect initiation."
+msgstr "Egy alkalmazás sem válaszolt a DDE-kapcsolat kezdeményezésre."
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_MULT_RESPONSES___ERRCODE_RES_MASK.string.text
+msgid "Too many applications responded to DDE connect initiation."
+msgstr "Túl sok alkalmazás válaszolt a DDE-kapcsolat kezdeményezésre."
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_CHANNEL_LOCKED___ERRCODE_RES_MASK.string.text
+msgid "DDE channel locked."
+msgstr "A DDE-csatorna lezárva."
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_NOTPROCESSED___ERRCODE_RES_MASK.string.text
+msgid "External application cannot execute DDE operation."
+msgstr "Külső alkalmazás nem hajthat végre DDE-műveletet."
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_TIMEOUT___ERRCODE_RES_MASK.string.text
+msgid "Timeout while waiting for DDE response."
+msgstr "Időtúllépés a DDE válaszára várva."
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_USER_INTERRUPT___ERRCODE_RES_MASK.string.text
+msgid "User pressed ESCAPE during DDE operation."
+msgstr "A felhasználó a DDE-művelet közben megnyomta az Esc billentyűt."
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_BUSY___ERRCODE_RES_MASK.string.text
+msgid "External application busy."
+msgstr "A külső alkalmazás foglalt."
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_NO_DATA___ERRCODE_RES_MASK.string.text
+msgid "DDE operation without data."
+msgstr "DDE-művelet adat nélkül."
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_WRONG_DATA_FORMAT___ERRCODE_RES_MASK.string.text
+msgid "Data are in wrong format."
+msgstr "Adat helytelen formában."
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_PARTNER_QUIT___ERRCODE_RES_MASK.string.text
+msgid "External application has been terminated."
+msgstr "A külső alkalmazás befejeződött."
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_CONV_CLOSED___ERRCODE_RES_MASK.string.text
+msgid "DDE connection interrupted or modified."
+msgstr "DDE-kapcsolat megszakítva vagy módosítva."
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_NO_CHANNEL___ERRCODE_RES_MASK.string.text
+msgid "DDE method invoked with no channel open."
+msgstr "A DDE-metódus meghívásakor nem volt nyitott csatorna."
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_INVALID_LINK___ERRCODE_RES_MASK.string.text
+msgid "Invalid DDE link format."
+msgstr "Érvénytelen DDE-hivatkozásformátum."
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_QUEUE_OVERFLOW___ERRCODE_RES_MASK.string.text
+msgid "DDE message has been lost."
+msgstr "A DDE-üzenet elveszett."
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_LINK_ALREADY_EST___ERRCODE_RES_MASK.string.text
+msgid "Paste link already performed."
+msgstr "A hivatkozás beillesztése már megtörtént."
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_LINK_INV_TOPIC___ERRCODE_RES_MASK.string.text
+msgid "Link mode cannot be set due to invalid link topic."
+msgstr "A hivatkozás érvénytelen tárgya miatt nem lehet beállítani a módját."
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_DLL_NOT_FOUND___ERRCODE_RES_MASK.string.text
+msgid "DDE requires the DDEML.DLL file."
+msgstr "A DDE-nek szüksége van a DDEML.DLL fájlra."
+
+#: sb.src#RID_BASIC_START.SbERR_CANNOT_LOAD___ERRCODE_RES_MASK.string.text
+msgid "Module cannot be loaded; invalid format."
+msgstr "A modult nem lehet betölteni; rossz formátum."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_INDEX___ERRCODE_RES_MASK.string.text
+msgid "Invalid object index."
+msgstr "Érvénytelen objektumindex."
+
+#: sb.src#RID_BASIC_START.SbERR_NO_ACTIVE_OBJECT___ERRCODE_RES_MASK.string.text
+msgid "Object is not available."
+msgstr "Az objektum nem érhető el."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_PROP_VALUE___ERRCODE_RES_MASK.string.text
+msgid "Incorrect property value."
+msgstr "Rossz tulajdonságérték."
+
+#: sb.src#RID_BASIC_START.SbERR_PROP_READONLY___ERRCODE_RES_MASK.string.text
+msgid "This property is read-only."
+msgstr "Ez a tulajdonság csak olvasható."
+
+#: sb.src#RID_BASIC_START.SbERR_PROP_WRITEONLY___ERRCODE_RES_MASK.string.text
+msgid "This property is write only."
+msgstr "Ez a tulajdonság csak írható."
+
+#: sb.src#RID_BASIC_START.SbERR_INVALID_OBJECT___ERRCODE_RES_MASK.string.text
+msgid "Invalid object reference."
+msgstr "Rossz objektumhivatkozás."
+
+#: sb.src#RID_BASIC_START.SbERR_NO_METHOD___ERRCODE_RES_MASK.string.text
+msgid "Property or method not found: $(ARG1)."
+msgstr "A tulajdonság vagy metódus nem található: $(ARG1)."
+
+#: sb.src#RID_BASIC_START.SbERR_NEEDS_OBJECT___ERRCODE_RES_MASK.string.text
+msgid "Object required."
+msgstr "Objektum szükséges."
+
+#: sb.src#RID_BASIC_START.SbERR_INVALID_USAGE_OBJECT___ERRCODE_RES_MASK.string.text
+msgid "Invalid use of an object."
+msgstr "Objektum helytelen használata."
+
+#: sb.src#RID_BASIC_START.SbERR_NO_OLE___ERRCODE_RES_MASK.string.text
+msgid "OLE Automation is not supported by this object."
+msgstr "Az objektum nem támogatja az OLE Automationt."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_METHOD___ERRCODE_RES_MASK.string.text
+msgid "This property or method is not supported by the object."
+msgstr "Az objektum nem rendelkezik ilyen tulajdonsággal vagy metódussal."
+
+#: sb.src#RID_BASIC_START.SbERR_OLE_ERROR___ERRCODE_RES_MASK.string.text
+msgid "OLE Automation Error."
+msgstr "OLE Automation hiba."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_ACTION___ERRCODE_RES_MASK.string.text
+msgid "This action is not supported by given object."
+msgstr "Az objektum nem támogatja a műveletet."
+
+#: sb.src#RID_BASIC_START.SbERR_NO_NAMED_ARGS___ERRCODE_RES_MASK.string.text
+msgid "Named arguments are not supported by given object."
+msgstr "A megadott objektum nem támogatja a nevesített argumentumokat."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_LOCALE___ERRCODE_RES_MASK.string.text
+msgid "The current locale setting is not supported by the given object."
+msgstr "A megadott objektum nem támogatja a jelenlegi területi beállításokat."
+
+#: sb.src#RID_BASIC_START.SbERR_NAMED_NOT_FOUND___ERRCODE_RES_MASK.string.text
+msgid "Named argument not found."
+msgstr "A nevesített argumentum nem található."
+
+#: sb.src#RID_BASIC_START.SbERR_NOT_OPTIONAL___ERRCODE_RES_MASK.string.text
+msgid "Argument is not optional."
+msgstr "Az argumentum nem elhagyható."
+
+#: sb.src#RID_BASIC_START.SbERR_WRONG_ARGS___ERRCODE_RES_MASK.string.text
+msgctxt "sb.src#RID_BASIC_START.SbERR_WRONG_ARGS___ERRCODE_RES_MASK.string.text"
+msgid "Invalid number of arguments."
+msgstr "Érvénytelen számú paraméter."
+
+#: sb.src#RID_BASIC_START.SbERR_NOT_A_COLL___ERRCODE_RES_MASK.string.text
+msgid "Object is not a list."
+msgstr "Az objektum nem lista."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_ORDINAL___ERRCODE_RES_MASK.string.text
+msgid "Invalid ordinal number."
+msgstr "Érvénytelen sorszám."
+
+#: sb.src#RID_BASIC_START.SbERR_DLLPROC_NOT_FOUND___ERRCODE_RES_MASK.string.text
+msgid "Specified DLL function not found."
+msgstr "A megadott DLL-függvény nem található."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_CLIPBD_FORMAT___ERRCODE_RES_MASK.string.text
+msgid "Invalid clipboard format."
+msgstr "Érvénytelen vágólapformátum."
+
+#: sb.src#RID_BASIC_START.SbERR_PROPERTY_NOT_FOUND___ERRCODE_RES_MASK.string.text
+msgid "Object does not have this property."
+msgstr "Az objektumnak nincs ilyen tulajdonsága."
+
+#: sb.src#RID_BASIC_START.SbERR_METHOD_NOT_FOUND___ERRCODE_RES_MASK.string.text
+msgid "Object does not have this method."
+msgstr "Az objektumnak nincs ilyen metódusa."
+
+#: sb.src#RID_BASIC_START.SbERR_ARG_MISSING___ERRCODE_RES_MASK.string.text
+msgid "Required argument lacking."
+msgstr "Szükséges argumentum hiányzik."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_NUMBER_OF_ARGS___ERRCODE_RES_MASK.string.text
+msgctxt "sb.src#RID_BASIC_START.SbERR_BAD_NUMBER_OF_ARGS___ERRCODE_RES_MASK.string.text"
+msgid "Invalid number of arguments."
+msgstr "Érvénytelen számú paraméter."
+
+#: sb.src#RID_BASIC_START.SbERR_METHOD_FAILED___ERRCODE_RES_MASK.string.text
+msgid "Error executing a method."
+msgstr "Hiba a metódus végrehajtása során."
+
+#: sb.src#RID_BASIC_START.SbERR_SETPROP_FAILED___ERRCODE_RES_MASK.string.text
+msgid "Unable to set property."
+msgstr "A tulajdonság nem állítható be."
+
+#: sb.src#RID_BASIC_START.SbERR_GETPROP_FAILED___ERRCODE_RES_MASK.string.text
+msgid "Unable to determine property."
+msgstr "A tulajdonság nem meghatározható."
+
+#: sb.src#RID_BASIC_START.SbERR_UNEXPECTED___ERRCODE_RES_MASK.string.text
+msgid "Unexpected symbol: $(ARG1)."
+msgstr "Nem várt szimbólum: $(ARG1)."
+
+#: sb.src#RID_BASIC_START.SbERR_EXPECTED___ERRCODE_RES_MASK.string.text
+msgid "Expected: $(ARG1)."
+msgstr "Szükséges: $(ARG1)."
+
+#: sb.src#RID_BASIC_START.SbERR_SYMBOL_EXPECTED___ERRCODE_RES_MASK.string.text
+msgid "Symbol expected."
+msgstr "Szimbólum szükséges."
+
+#: sb.src#RID_BASIC_START.SbERR_VAR_EXPECTED___ERRCODE_RES_MASK.string.text
+msgid "Variable expected."
+msgstr "Változó szükséges."
+
+#: sb.src#RID_BASIC_START.SbERR_LABEL_EXPECTED___ERRCODE_RES_MASK.string.text
+msgid "Label expected."
+msgstr "Címke szükséges."
+
+#: sb.src#RID_BASIC_START.SbERR_LVALUE_EXPECTED___ERRCODE_RES_MASK.string.text
+msgid "Value cannot be applied."
+msgstr "Az érték nem alkalmazható."
+
+#: sb.src#RID_BASIC_START.SbERR_VAR_DEFINED___ERRCODE_RES_MASK.string.text
+msgid "Variable $(ARG1) already defined."
+msgstr "A változó már létezik: $(ARG1)."
+
+#: sb.src#RID_BASIC_START.SbERR_PROC_DEFINED___ERRCODE_RES_MASK.string.text
+msgid "Sub procedure or function procedure $(ARG1) already defined."
+msgstr "Az aleljárás vagy függvény már létezik: $(ARG1)."
+
+#: sb.src#RID_BASIC_START.SbERR_LABEL_DEFINED___ERRCODE_RES_MASK.string.text
+msgid "Label $(ARG1) already defined."
+msgstr "A címke már létezik $(ARG1)."
+
+#: sb.src#RID_BASIC_START.SbERR_UNDEF_VAR___ERRCODE_RES_MASK.string.text
+msgid "Variable $(ARG1) not found."
+msgstr "A változó nem létezik: $(ARG1)."
+
+#: sb.src#RID_BASIC_START.SbERR_UNDEF_ARRAY___ERRCODE_RES_MASK.string.text
+msgid "Array or procedure $(ARG1) not found."
+msgstr "A tömb vagy eljárás nem található: $(ARG1)."
+
+#: sb.src#RID_BASIC_START.SbERR_UNDEF_PROC___ERRCODE_RES_MASK.string.text
+msgid "Procedure $(ARG1) not found."
+msgstr "Az eljárás nem található: $(ARG1)."
+
+#: sb.src#RID_BASIC_START.SbERR_UNDEF_LABEL___ERRCODE_RES_MASK.string.text
+msgid "Label $(ARG1) undefined."
+msgstr "A címke nem létezik: $(ARG1)."
+
+#: sb.src#RID_BASIC_START.SbERR_UNDEF_TYPE___ERRCODE_RES_MASK.string.text
+msgid "Unknown data type $(ARG1)."
+msgstr "Ismeretlen adattípus: $(ARG1)."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_EXIT___ERRCODE_RES_MASK.string.text
+msgid "Exit $(ARG1) expected."
+msgstr "Kilépés szükséges: $(ARG1)."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_BLOCK___ERRCODE_RES_MASK.string.text
+msgid "Statement block still open: $(ARG1) missing."
+msgstr "A kódblokk még mindig nyitott, hiányzik: $(ARG1)."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_BRACKETS___ERRCODE_RES_MASK.string.text
+msgid "Parentheses do not match."
+msgstr "A zárójelezés nem megfelelő."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_DECLARATION___ERRCODE_RES_MASK.string.text
+msgid "Symbol $(ARG1) already defined differently."
+msgstr "A következő szimbólum már máshogy lett definiálva: $(ARG1)."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_PARAMETERS___ERRCODE_RES_MASK.string.text
+msgid "Parameters do not correspond to procedure."
+msgstr "A paraméterek nem felelnek meg az eljárásnak."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_CHAR_IN_NUMBER___ERRCODE_RES_MASK.string.text
+msgid "Invalid character in number."
+msgstr "Érvénytelen karakter a számban."
+
+#: sb.src#RID_BASIC_START.SbERR_MUST_HAVE_DIMS___ERRCODE_RES_MASK.string.text
+msgid "Array must be dimensioned."
+msgstr "Meg kell adni a tömb méreteit."
+
+#: sb.src#RID_BASIC_START.SbERR_NO_IF___ERRCODE_RES_MASK.string.text
+msgid "Else/Endif without If."
+msgstr "If nélküli Else/Endif."
+
+#: sb.src#RID_BASIC_START.SbERR_NOT_IN_SUBR___ERRCODE_RES_MASK.string.text
+msgid "$(ARG1) not allowed within a procedure."
+msgstr "$(ARG1) nem engedélyezett eljáráson belül."
+
+#: sb.src#RID_BASIC_START.SbERR_NOT_IN_MAIN___ERRCODE_RES_MASK.string.text
+msgid "$(ARG1) not allowed outside a procedure."
+msgstr "$(ARG1) nem engedélyezett eljáráson kívül."
+
+#: sb.src#RID_BASIC_START.SbERR_WRONG_DIMS___ERRCODE_RES_MASK.string.text
+msgid "Dimension specifications do not match."
+msgstr "A méretmegadások nem egyeznek."
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_OPTION___ERRCODE_RES_MASK.string.text
+msgid "Unknown option: $(ARG1)."
+msgstr "Ismeretlen opció: $(ARG1)."
+
+#: sb.src#RID_BASIC_START.SbERR_CONSTANT_REDECLARED___ERRCODE_RES_MASK.string.text
+msgid "Constant $(ARG1) redefined."
+msgstr "A(z) $(ARG1) konstans újradefiniálva."
+
+#: sb.src#RID_BASIC_START.SbERR_PROG_TOO_LARGE___ERRCODE_RES_MASK.string.text
+msgid "Program too large."
+msgstr "A program túl nagy."
+
+#: sb.src#RID_BASIC_START.SbERR_NO_STRINGS_ARRAYS___ERRCODE_RES_MASK.string.text
+msgid "Strings or arrays not permitted."
+msgstr "Karakterláncok vagy tömbök nem megengedettek."
+
+#: sb.src#RID_BASIC_START.ERRCODE_BASIC_EXCEPTION___ERRCODE_RES_MASK.string.text
+msgid "An exception occurred $(ARG1)."
+msgstr "A következő kivétel történt: $(ARG1)."
+
+#: sb.src#RID_BASIC_START.ERRCODE_BASIC_ARRAY_FIX___ERRCODE_RES_MASK.string.text
+msgid "This array is fixed or temporarily locked."
+msgstr "Ez a tömb rögzített vagy ideiglenesen zárolt."
+
+#: sb.src#RID_BASIC_START.ERRCODE_BASIC_STRING_OVERFLOW___ERRCODE_RES_MASK.string.text
+msgid "Out of string space."
+msgstr "A karakterláncok számára lefoglalt terület elfogyott."
+
+#: sb.src#RID_BASIC_START.ERRCODE_BASIC_EXPR_TOO_COMPLEX___ERRCODE_RES_MASK.string.text
+msgid "Expression Too Complex."
+msgstr "A kifejezés túl bonyolult."
+
+#: sb.src#RID_BASIC_START.ERRCODE_BASIC_OPER_NOT_PERFORM___ERRCODE_RES_MASK.string.text
+msgid "Can't perform requested operation."
+msgstr "A kért művelet nem hajtható végre."
+
+#: sb.src#RID_BASIC_START.ERRCODE_BASIC_TOO_MANY_DLL___ERRCODE_RES_MASK.string.text
+msgid "Too many DLL application clients."
+msgstr "Túl sok DLL-alkalmazásügyfél van."
+
+#: sb.src#RID_BASIC_START.ERRCODE_BASIC_LOOP_NOT_INIT___ERRCODE_RES_MASK.string.text
+msgid "For loop not initialized."
+msgstr "A for ciklus nincs inicializálva."
+
+#: sb.src#RID_BASIC_START.ERRCODE_BASIC_COMPAT___ERRCODE_RES_MASK.string.text
+msgid "$(ARG1)"
+msgstr "$(ARG1)"
+
+#: sb.src#IDS_SBERR_TERMINATED.string.text
+msgid "The macro running has been interrupted"
+msgstr "A makró futása megszakadt"
+
+#: sb.src#IDS_SBERR_STOREREF.string.text
+msgid "Reference will not be saved: "
+msgstr "A hivatkozás nem lesz mentve: "
+
+#: sb.src#ERRCODE_BASMGR_LIBLOAD___ERRCODE_RES_MASK.string.text
+msgid "Error loading library '$(ARG1)'."
+msgstr "Hiba a programkönyvtár betöltésekor: „$(ARG1)”."
+
+#: sb.src#ERRCODE_BASMGR_LIBSAVE___ERRCODE_RES_MASK.string.text
+msgid "Error saving library: '$(ARG1)'."
+msgstr "Hiba a programkönyvtár mentésekor: „$(ARG1)”."
+
+#: sb.src#ERRCODE_BASMGR_MGROPEN___ERRCODE_RES_MASK.string.text
+msgid "The BASIC from the file '$(ARG1)' could not be initialized."
+msgstr "Nem lehet inicializálni a BASIC-et a megadott fájlból: „$(ARG1)”."
+
+#: sb.src#ERRCODE_BASMGR_MGRSAVE___ERRCODE_RES_MASK.string.text
+msgid "Error saving BASIC: '$(ARG1)'."
+msgstr "Hiba a BASIC mentésekor: „$(ARG1)”."
+
+#: sb.src#ERRCODE_BASMGR_REMOVELIB___ERRCODE_RES_MASK.string.text
+msgid "Error removing library."
+msgstr "Hiba a programkönyvtár eltávolításakor."
+
+#: sb.src#ERRCODE_BASMGR_UNLOADLIB___ERRCODE_RES_MASK.string.text
+msgid "The library could not be removed from memory."
+msgstr "A programkönyvtárat nem lehet eltávolítani a memóriából."
+"X-Accelerator-Marker: ~\n"
+
+#: basic.src#RID_CALLDLG.modaldialog.text
+msgid "Dynamic Link No. "
+msgstr "Dinamikus kapcsolat száma"
+
+#: basic.src#IDD_TT_ABOUT_DIALOG.1.fixedtext.text
+msgctxt "basic.src#IDD_TT_ABOUT_DIALOG.1.fixedtext.text"
+msgid "VCLTestTool"
+msgstr "VCLTestTool"
+
+#: basic.src#IDD_TT_ABOUT_DIALOG.4.fixedtext.text
+msgid "©1995-2010 Oracle"
+msgstr "©1995-2010 Oracle"
+
+#: basic.src#IDD_TT_ABOUT_DIALOG.modaldialog.text
+msgid "About VCLTestTool"
+msgstr "A VCLTestTool névjegye"
+
+#: basic.src#IDD_FIND_DIALOG.RID_FIXEDTEXT1.fixedtext.text
+msgid "~Text"
+msgstr "~Szöveg"
+
+#: basic.src#IDD_FIND_DIALOG.RID_OK.okbutton.text
+msgid "~Find"
+msgstr "~Keres"
+
+#: basic.src#IDD_FIND_DIALOG.RID_CANCEL.cancelbutton.text
+msgctxt "basic.src#IDD_FIND_DIALOG.RID_CANCEL.cancelbutton.text"
+msgid "~Cancel"
+msgstr "~Mégsem"
+
+#: basic.src#IDD_FIND_DIALOG.modaldialog.text
+msgid "Testtool: Find Text"
+msgstr "Testtool: Szöveg keresés"
+
+#: basic.src#IDD_REPLACE_DIALOG.RID_FIXEDTEXT1.fixedtext.text
+msgid "~Search for"
+msgstr "~Keresés "
+
+#: basic.src#IDD_REPLACE_DIALOG.RID_FIXEDTEXT2.fixedtext.text
+msgid "~Replace by"
+msgstr "~Csere erre"
+
+#: basic.src#IDD_REPLACE_DIALOG.RID_OK.okbutton.text
+msgid "~Replace"
+msgstr "~Csere"
+
+#: basic.src#IDD_REPLACE_DIALOG.RID_CANCEL.cancelbutton.text
+msgctxt "basic.src#IDD_REPLACE_DIALOG.RID_CANCEL.cancelbutton.text"
+msgid "~Cancel"
+msgstr "~Mégsem"
+
+#: basic.src#IDD_REPLACE_DIALOG.modaldialog.text
+msgid "Testtool: Replace Text"
+msgstr "Testtool: Szöveg csere"
+
+#: basic.src#IDS_NOPRINTERERROR.infobox.text
+msgid "The print function is not available!"
+msgstr "A nyomtatási funkció nem elérhető!"
+
+#: basic.src#IDS_CANTLOAD.errorbox.text
+msgid "Library cannot be loaded!"
+msgstr "A könyvtár nem betölthető!"
+
+#: basic.src#IDS_CANTLOAD.errorbox.title
+msgctxt "basic.src#IDS_CANTLOAD.errorbox.title"
+msgid "Testtool Error"
+msgstr "Testtool Hiba"
+
+#: basic.src#IDS_CANTSAVE.errorbox.text
+msgid "Library cannot be saved!"
+msgstr "A könyvtár nem menthető!"
+
+#: basic.src#IDS_CANTSAVE.errorbox.title
+msgctxt "basic.src#IDS_CANTSAVE.errorbox.title"
+msgid "Testtool Error"
+msgstr "Testtool hiba"
+
+#: basic.src#IDS_NOMAINPGM.errorbox.text
+msgid "This window does not contain a main program!"
+msgstr "Ez az ablak nem tartalmazza a főprogramot!"
+
+#: basic.src#IDS_NOMAINPGM.errorbox.title
+msgctxt "basic.src#IDS_NOMAINPGM.errorbox.title"
+msgid "Testtool Error"
+msgstr "Testtool Hiba"
+
+#: basic.src#IDS_READERROR.errorbox.text
+msgid "File cannot be read!"
+msgstr "A fájl nem olvasható!"
+
+#: basic.src#IDS_READERROR.errorbox.title
+msgctxt "basic.src#IDS_READERROR.errorbox.title"
+msgid "Testtool Error"
+msgstr "Testtool hiba"
+
+#: basic.src#IDS_WRITEERROR.errorbox.text
+msgid "File cannot be saved!"
+msgstr "A fájl nem menthető!"
+
+#: basic.src#IDS_WRITEERROR.errorbox.title
+msgctxt "basic.src#IDS_WRITEERROR.errorbox.title"
+msgid "Testtool Error"
+msgstr "Testtool Hiba"
+
+#: basic.src#IDS_PATTERNNOTFOUND.errorbox.text
+msgid "Search key not found!"
+msgstr "A keresési kulcs nem található!"
+
+#: basic.src#IDS_PATTERNNOTFOUND.errorbox.title
+msgctxt "basic.src#IDS_PATTERNNOTFOUND.errorbox.title"
+msgid "Testtool Error"
+msgstr "Testtool Hiba"
+
+#: basic.src#IDS_INVALID_VALUE.errorbox.text
+msgid "The value is invalid and cannot be set."
+msgstr "Az érték érvénytelen és nem beállítható."
+
+#: basic.src#IDS_INVALID_VALUE.errorbox.title
+msgctxt "basic.src#IDS_INVALID_VALUE.errorbox.title"
+msgid "Testtool Error"
+msgstr "Testtool Hiba"
+
+#: basic.src#IDS_ASKSAVEERROR.querybox.text
+msgid "Error saving files! Run anyway?"
+msgstr "Fáj mentési hibák! Futtassam mindenképpen?"
+
+#: basic.src#IDS_ASKSAVEERROR.querybox.title
+msgctxt "basic.src#IDS_ASKSAVEERROR.querybox.title"
+msgid "Testtool"
+msgstr "Testtool"
+
+#: basic.src#IDS_ASK_DIRTY_SAVE.querybox.text
+msgid "File has been changed. Save?"
+msgstr "A fájl megváltozott. Menti a módosításokat?"
+
+#: basic.src#IDS_ASK_DIRTY_SAVE.querybox.title
+msgctxt "basic.src#IDS_ASK_DIRTY_SAVE.querybox.title"
+msgid "Testtool"
+msgstr "Testtool"
+
+#: basic.src#IDS_ASK_DIRTY_AND_DISKCHANGE_SAVE.querybox.text
+msgid ""
+"File has been changed on data medium\n"
+"and in the Editor. Save?"
+msgstr ""
+"A fájl megváltozott az adathordozón\n"
+"és a szerkesztőben. Menti a módosításokat?"
+
+#: basic.src#IDS_ASK_DIRTY_AND_DISKCHANGE_SAVE.querybox.title
+msgctxt "basic.src#IDS_ASK_DIRTY_AND_DISKCHANGE_SAVE.querybox.title"
+msgid "Testtool"
+msgstr "Testtool"
+
+#: basic.src#IDS_ASK_DISKCHANGE_SAVE.querybox.text
+msgid ""
+"File has been changed on data medium.\n"
+"Overwrite?"
+msgstr ""
+"A fájl megváltozott az adathordozón.\n"
+"Felülírja?"
+
+#: basic.src#IDS_ASK_DISKCHANGE_SAVE.querybox.title
+msgctxt "basic.src#IDS_ASK_DISKCHANGE_SAVE.querybox.title"
+msgid "Testtool"
+msgstr "Testtool"
+
+#: basic.src#IDS_ASKRELOAD.querybox.text
+msgid "File has been changed on data medium. Reload?"
+msgstr "A fájl megváltozott az adathordozón. Újra betöltsem?"
+
+#: basic.src#IDS_ASKRELOAD.querybox.title
+msgctxt "basic.src#IDS_ASKRELOAD.querybox.title"
+msgid "Testtool"
+msgstr "Testtool"
+
+#: basic.src#IDS_ASKDIRTYRELOAD.querybox.text
+msgid ""
+"File has been changed on data medium\n"
+"and in the Editor. Reload?"
+msgstr ""
+"A fájl megváltozott az adathordozón\n"
+"és a szerkesztőben. Újra betöltsem?"
+
+#: basic.src#IDS_ASKDIRTYRELOAD.querybox.title
+msgctxt "basic.src#IDS_ASKDIRTYRELOAD.querybox.title"
+msgid "Testtool"
+msgstr "Testtool"
+
+#: basic.src#IDS_RUNNING.querybox.text
+msgid "BASIC is still running! Exit anyway?"
+msgstr "BASIC még fut! Mindenképpen kilép?"
+
+#: basic.src#IDS_RUNNING.querybox.title
+msgctxt "basic.src#IDS_RUNNING.querybox.title"
+msgid "Testtool"
+msgstr "Testtool"
+
+#: basic.src#IDS_LOSS_OF_INFORMATION.querybox.text
+msgid "Saving in an external format causes information loss."
+msgstr "A külső adatformátumban való mentés információ vesztést okozhat."
+
+#: basic.src#IDS_LOSS_OF_INFORMATION.querybox.title
+msgctxt "basic.src#IDS_LOSS_OF_INFORMATION.querybox.title"
+msgid "Testtool"
+msgstr "Testtool"
+
+#: basic.src#IDS_NOT_YET_IMPLEMENTED.infobox.text
+msgid "Not yet implemented"
+msgstr "Még nincs implementálva"
+
+#: basic.src#IDS_WARNING1.string.text
+msgid "Warning "
+msgstr "Figyelmeztetés"
+
+#: basic.src#IDS_ERROR1.string.text
+msgid "Error "
+msgstr "Hiba"
+
+#: basic.src#IDS_ERROR2.string.text
+msgid " in line "
+msgstr " sorban "
+
+#: basic.src#IDS_NO_LONGNAME.string.text
+msgid "No entries in Hid.Lst"
+msgstr "Nincs bejegyzés a Hid.Lst-ben."
+
+#: basic.src#IDS_WARNING_PREFIX.string.text
+msgctxt "basic.src#IDS_WARNING_PREFIX.string.text"
+msgid "Warning: "
+msgstr "Figyelmeztetés:"
+
+#: basic.src#IDS_OBJECT.string.text
+msgid "Object"
+msgstr "Objektum"
+
+#: basic.src#IDS_EDIT_VAR.string.text
+msgid "Edit ($Arg1)"
+msgstr "Szerkesztés ($Arg1)"
+
+#: basic.src#IDS_APPNAME.string.text
+msgctxt "basic.src#IDS_APPNAME.string.text"
+msgid "Testtool"
+msgstr "Testtool"
+
+#: basic.src#IDS_APPNAME2.string.text
+msgctxt "basic.src#IDS_APPNAME2.string.text"
+msgid "VCLTestTool"
+msgstr "VCLTestTool"
+
+#: basic.src#IDS_APPMODE_BREAK.string.text
+msgid "Break"
+msgstr "Megszakítás"
+
+#: basic.src#IDS_APPMODE_RUN.string.text
+msgid "Run"
+msgstr "Futtatás"
+
+#: basic.src#IDS_NONAME.string.text
+msgid "Unnamed"
+msgstr "Névtelen"
+
+#: basic.src#IDS_LOADDLG.string.text
+msgid "Testtool: Load File"
+msgstr "Testtool: Fájl betöltés"
+
+#: basic.src#IDS_SAVEDLG.string.text
+msgid "Testtool: Save File"
+msgstr "Testtool: Fájl mentése"
+
+#: basic.src#IDS_BASFILTER.string.text
+msgid "Source files (*.BAS)"
+msgstr "Forrásfájlok (*.BAS)"
+
+#: basic.src#IDS_INCFILTER.string.text
+msgid "Include files (*.INC)"
+msgstr "Beépülő fájlok (*.INC)"
+
+#: basic.src#IDS_LIBFILTER.string.text
+msgid "Libraries (*.SB)"
+msgstr "Könyvtárak (*.SB)"
+
+#: basic.src#IDS_RESFILTER.string.text
+msgid "Result files (*.RES)"
+msgstr "Eredmény fájlok (*.RES)"
+
+#: basic.src#IDS_TXTFILTER.string.text
+msgid "Results as text file (*.TXT)"
+msgstr "Eredmények mint szöveg fájl (*.TXT)"
+
+#: basic.src#IDS_PAGE.string.text
+msgid "Page "
+msgstr "Oldal "
+
+#: basic.src#IDS_PRINTMSG.string.text
+msgid "Printout of "
+msgstr "Nyomtatás"
+
+#: basic.src#IDS_CONTINUE.string.text
+msgid "Continue"
+msgstr "Folytatás"
+
+#: basic.src#IDS_CANCEL.string.text
+msgctxt "basic.src#IDS_CANCEL.string.text"
+msgid "Cancel"
+msgstr "Mégsem"
+
+#: basic.src#IDS_DISASWIN.string.text
+msgid "Disassembly"
+msgstr "Disassembly"
+
+#: basic.src#RID_APPMENUBAR.RID_APPFILE.menuitem.text
+msgid "~File"
+msgstr "~Fájl"
+
+#: basic.src#RID_APPMENUBAR.RID_APPEDIT.menuitem.text
+msgid "~Edit"
+msgstr "~Szerkesztés"
+
+#: basic.src#RID_APPMENUBAR.RID_APPRUN.menuitem.text
+msgid "~Program"
+msgstr "~Program"
+
+#: basic.src#RID_APPMENUBAR.RID_APPWINDOW.menuitem.text
+msgid "~Window"
+msgstr "~Ablak"
+
+#: basic.src#RID_APPMENUBAR.RID_APPHELP.menuitem.text
+msgid "~Help"
+msgstr "~Súgó"
+
+#: basic.src#RID_FILE.RID_FILENEW.menuitem.text
+msgid "~New"
+msgstr "~Új"
+
+#: basic.src#RID_FILE.RID_FILEOPEN.menuitem.text
+msgid "~Open..."
+msgstr "~Megnyitás..."
+
+#: basic.src#RID_FILE.RID_FILECLOSE.menuitem.text
+msgid "~Close"
+msgstr "~Bezárás"
+
+#: basic.src#RID_FILE.RID_FILESAVE.menuitem.text
+msgid "~Save"
+msgstr "~Mentés"
+
+#: basic.src#RID_FILE.RID_FILESAVEAS.menuitem.text
+msgid "Save~ As..."
+msgstr "Men~tés másként..."
+
+#: basic.src#RID_FILE.RID_FILELOADLIB.menuitem.text
+msgid "~Load Library..."
+msgstr "Könyvtár ~betöltése..."
+
+#: basic.src#RID_FILE.RID_FILESAVELIB.menuitem.text
+msgid "Save Li~brary..."
+msgstr "Könyvtár ~mentése"
+
+#: basic.src#RID_FILE.RID_FILEPRINT.menuitem.text
+msgid "~Print"
+msgstr "~Nyomtatás"
+
+#: basic.src#RID_FILE.RID_FILESETUP.menuitem.text
+msgid "P~rinter Setting..."
+msgstr "Nyomt~atóbeállítások..."
+
+#: basic.src#RID_FILE.RID_QUIT.menuitem.text
+msgid "~Exit"
+msgstr "~Kilépés"
+
+#: basic.src#RID_EDIT.RID_EDITUNDO.menuitem.text
+msgid "~Undo"
+msgstr "~Visszavonás"
+
+#: basic.src#RID_EDIT.RID_EDITREDO.menuitem.text
+msgid "~Redo"
+msgstr "~Ismét"
+
+#: basic.src#RID_EDIT.RID_EDITCUT.menuitem.text
+msgid "~Cut"
+msgstr "~Kivágás"
+
+#: basic.src#RID_EDIT.RID_EDITCOPY.menuitem.text
+msgid "~Copy"
+msgstr "~Másolás"
+
+#: basic.src#RID_EDIT.RID_EDITPASTE.menuitem.text
+msgid "~Paste"
+msgstr "~Beillesztés"
+
+#: basic.src#RID_EDIT.RID_EDITDEL.menuitem.text
+msgid "~Delete"
+msgstr "~Törlés"
+
+#: basic.src#RID_EDIT.RID_EDITSEARCH.menuitem.text
+msgid "~Find..."
+msgstr "~Keresés..."
+
+#: basic.src#RID_EDIT.RID_EDITREPLACE.menuitem.text
+msgid "~Replace..."
+msgstr "~Csere..."
+
+#: basic.src#RID_EDIT.RID_EDITREPEAT.menuitem.text
+msgid "Repeat S~earch"
+msgstr "Újra k~eresés"
+
+#: basic.src#RID_RUN.RID_RUNCOMPILE.menuitem.text
+msgid "~Compile"
+msgstr "~Összeállítás"
+
+#: basic.src#RID_RUN.RID_RUNDISAS.menuitem.text
+msgid "~Disassemble"
+msgstr "~Disassemble"
+
+#: basic.src#RID_RUN.RID_RUNSTART.menuitem.text
+msgid "~Start"
+msgstr "~Futtatás"
+
+#: basic.src#RID_RUN.RID_RUNSTEPINTO.menuitem.text
+msgid "~Single Step"
+msgstr "~Egy lépés"
+
+#: basic.src#RID_RUN.RID_RUNSTEPOVER.menuitem.text
+msgid "Si~ngle Step over Procedure"
+msgstr "Eljárás egy lépésben "
+
+#: basic.src#RID_RUN.RID_TOGLEBRKPNT.menuitem.text
+msgid "Set / Delete Break Point"
+msgstr "Megszakítási pont beállítása / törlése"
+
+#: basic.src#RID_RUN.RID_RUNBREAK.menuitem.text
+msgid "~Break"
+msgstr "~Megszakítás"
+
+#: basic.src#RID_RUN.RID_RUNSTOP.menuitem.text
+msgid "~Stop"
+msgstr "Megállítá~s"
+
+#: basic.src#RID_RUN.RID_RUNNEXTERR.menuitem.text
+msgid "~Next Error"
+msgstr "~Következő hiba"
+
+#: basic.src#RID_RUN.RID_RUNPREVERR.menuitem.text
+msgid "~Previous Error"
+msgstr "~Előző hiba"
+
+#: basic.src#RID_TT_EXTRAS_NAME.string.text
+msgid "E~xtra"
+msgstr "K~ülön"
+
+#: basic.src#RID_TT_EXTRAS.RID_OPTIONS.menuitem.text
+msgid "~Settings"
+msgstr "~Beállítások"
+
+#: basic.src#RID_HELP.menuitem.text
+msgid "~About..."
+msgstr "~Névjegy..."
+
+#: basic.src#IDD_PRINT_DIALOG.RID_TEXT.fixedtext.text
+msgid "Print "
+msgstr "Nyomtatás "
+
+#: basic.src#IDD_PRINT_DIALOG.RID_CANCEL.cancelbutton.text
+msgctxt "basic.src#IDD_PRINT_DIALOG.RID_CANCEL.cancelbutton.text"
+msgid "Cancel"
+msgstr "Mégse"
+
+#: basic.src#IDD_PRINT_DIALOG.modelessdialog.text
+msgid "Testtool: Print File"
+msgstr "Testtool: Fájl nyomtatása"
+
+#: basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_GEN.pageitem.text
+msgid "Generic"
+msgstr "Általános"
+
+#: basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_PRO.pageitem.text
+msgctxt "basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_PRO.pageitem.text"
+msgid "Profile"
+msgstr "Profil"
+
+#: basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_CRA.pageitem.text
+msgctxt "basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_CRA.pageitem.text"
+msgid "Crashreport"
+msgstr "Összeomlás-bejelentés"
+
+#: basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_MIS.pageitem.text
+msgid "Misc"
+msgstr "Egyebek"
+
+#: basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_FON.pageitem.text
+msgid "Font"
+msgstr "Betűtípus"
+
+#: basic.src#IDD_OPTIONS_DLG.tabdialog.text
+msgid "Settings"
+msgstr "Beállítások"
+
+#: basic.src#RID_TP_GENERIC.RID_FL_AREA.fixedline.text
+msgid "Area"
+msgstr "Terület"
+
+#: basic.src#RID_TP_GENERIC.RID_PB_NEW_AREA.pushbutton.text
+msgctxt "basic.src#RID_TP_GENERIC.RID_PB_NEW_AREA.pushbutton.text"
+msgid "New"
+msgstr "Új"
+
+#: basic.src#RID_TP_GENERIC.RID_PD_DEL_AREA.pushbutton.text
+msgctxt "basic.src#RID_TP_GENERIC.RID_PD_DEL_AREA.pushbutton.text"
+msgid "Delete"
+msgstr "Törlés"
+
+#: basic.src#RID_TP_GENERIC.RID_FL_VALUE.fixedline.text
+msgid "Setting"
+msgstr "Beállítás"
+
+#: basic.src#RID_TP_GENERIC.RID_PB_SELECT_FILE.pushbutton.text
+msgid "Path ..."
+msgstr "Útvonal ..."
+
+#: basic.src#RID_TP_GENERIC.RID_PB_NEW_VALUE.pushbutton.text
+msgctxt "basic.src#RID_TP_GENERIC.RID_PB_NEW_VALUE.pushbutton.text"
+msgid "New"
+msgstr "Új"
+
+#: basic.src#RID_TP_GENERIC.RID_PB_DEL_VALUE.pushbutton.text
+msgctxt "basic.src#RID_TP_GENERIC.RID_PB_DEL_VALUE.pushbutton.text"
+msgid "Delete"
+msgstr "Törlés"
+
+#: basic.src#RID_TP_PROFILE.RID_FL_PROFILE.fixedline.text
+msgctxt "basic.src#RID_TP_PROFILE.RID_FL_PROFILE.fixedline.text"
+msgid "Profile"
+msgstr "Profil"
+
+#: basic.src#RID_TP_PROFILE.RID_PB_NEW_PROFILE.pushbutton.text
+msgctxt "basic.src#RID_TP_PROFILE.RID_PB_NEW_PROFILE.pushbutton.text"
+msgid "New"
+msgstr "Új"
+
+#: basic.src#RID_TP_PROFILE.RID_PD_DEL_PROFILE.pushbutton.text
+msgctxt "basic.src#RID_TP_PROFILE.RID_PD_DEL_PROFILE.pushbutton.text"
+msgid "Delete"
+msgstr "Törlés"
+
+#: basic.src#RID_TP_PROFILE.FL_DIRECTORIES.fixedline.text
+msgid "Profile settings"
+msgstr "Profil beállítások"
+
+#: basic.src#RID_TP_PROFILE.LOG_TEXT.fixedtext.text
+msgid "Log base directory"
+msgstr "Naplófájl alap könyvtára"
+
+#: basic.src#RID_TP_PROFILE.BASIS_TEXT.fixedtext.text
+msgid "Base directory"
+msgstr "Alap könyvtár"
+
+#: basic.src#RID_TP_PROFILE.HID_CHECK.checkbox.text
+msgid "Default HID directory"
+msgstr "Alapértelmezett HID könyvtár"
+
+#: basic.src#RID_TP_PROFILE.LOG_SET.pushbutton.text
+msgctxt "basic.src#RID_TP_PROFILE.LOG_SET.pushbutton.text"
+msgid "..."
+msgstr "..."
+
+#: basic.src#RID_TP_PROFILE.BASIS_SET.pushbutton.text
+msgctxt "basic.src#RID_TP_PROFILE.BASIS_SET.pushbutton.text"
+msgid "..."
+msgstr "..."
+
+#: basic.src#RID_TP_PROFILE.HID_SET.pushbutton.text
+msgctxt "basic.src#RID_TP_PROFILE.HID_SET.pushbutton.text"
+msgid "..."
+msgstr "..."
+
+#: basic.src#RID_TP_PROFILE.CB_AUTORELOAD.checkbox.text
+msgid "AutoReload"
+msgstr "AutoReload"
+
+#: basic.src#RID_TP_PROFILE.CB_AUTOSAVE.checkbox.text
+msgid "Save before execute"
+msgstr "A futtatás előtt mentsen"
+
+#: basic.src#RID_TP_PROFILE.CB_STOPONSYNTAXERRORS.checkbox.text
+msgid "Stop on Syntax Errors"
+msgstr "Megállás a szintaktikai hibáknál"
+
+#: basic.src#RID_TP_CRASH.FL_CRASHREPORT.fixedline.text
+msgctxt "basic.src#RID_TP_CRASH.FL_CRASHREPORT.fixedline.text"
+msgid "Crashreport"
+msgstr "Összeomlás jelentés"
+
+#: basic.src#RID_TP_CRASH.CB_USEPROXY.checkbox.text
+msgid "Use Proxy"
+msgstr "Proxy használata"
+
+#: basic.src#RID_TP_CRASH.FT_CRHOST.fixedtext.text
+msgctxt "basic.src#RID_TP_CRASH.FT_CRHOST.fixedtext.text"
+msgid "Host"
+msgstr "Host"
+
+#: basic.src#RID_TP_CRASH.FT_CRPORT.fixedtext.text
+msgid "Port"
+msgstr "Port"
+
+#: basic.src#RID_TP_CRASH.CB_ALLOWCONTACT.checkbox.text
+msgid "Allow Contact"
+msgstr "Kapcsolat engedélyezése"
+
+#: basic.src#RID_TP_CRASH.FT_EMAIL.fixedtext.text
+msgid "EMail"
+msgstr "e-mail"
+
+#: basic.src#RID_TP_MISC.FL_COMMUNICATION.fixedline.text
+msgid "Communication"
+msgstr "Kommunikáció"
+
+#: basic.src#RID_TP_MISC.FT_HOST.fixedtext.text
+msgctxt "basic.src#RID_TP_MISC.FT_HOST.fixedtext.text"
+msgid "Host"
+msgstr "Host"
+
+#: basic.src#RID_TP_MISC.FT_TTPORT.fixedtext.text
+msgid "Testtool Port"
+msgstr "Testtool Port"
+
+#: basic.src#RID_TP_MISC.FT_UNOPORT.fixedtext.text
+msgid "Remote UNO Port"
+msgstr "Távoli UNO port"
+
+#: basic.src#RID_TP_MISC.FL_OTHER.fixedline.text
+msgid "Other settings"
+msgstr "egyéb beállítások"
+
+#: basic.src#RID_TP_MISC.TIMEOUT_TEXT.fixedtext.text
+msgid "Server Timeout"
+msgstr "Szerver időtúllépés"
+
+#: basic.src#RID_TP_MISC.FT_LRU.fixedtext.text
+msgid "Max LRU Files"
+msgstr "Max LRU Fiájlok"
+
+#: basic.src#RID_TP_MISC.FT_PROGDIR.fixedtext.text
+msgid "OOo Program Dir"
+msgstr "OOo Program könyvtár"
+
+#: basic.src#RID_TP_MISC.PB_PROGDIR.pushbutton.text
+msgctxt "basic.src#RID_TP_MISC.PB_PROGDIR.pushbutton.text"
+msgid "..."
+msgstr "..."
+
+#: basic.src#RID_TP_FONT.FT_FONTNAME.fixedtext.text
+msgid "Type"
+msgstr "Típus"
+
+#: basic.src#RID_TP_FONT.FT_FONTSTYLE.fixedtext.text
+msgid "Typeface"
+msgstr "Betűstílus"
+
+#: basic.src#RID_TP_FONT.FT_FONTSIZE.fixedtext.text
+msgid "Size"
+msgstr "Méret"
+
+#: basic.src#IDD_DISPLAY_HID.RID_FT_CONTROLS.fixedtext.text
+msgid "Controls"
+msgstr "Beállítások"
+
+#: basic.src#IDD_DISPLAY_HID.RID_FT_SLOTS.fixedtext.text
+msgid "Slots"
+msgstr "Slots"
+
+#: basic.src#IDD_DISPLAY_HID.RID_PB_KOPIEREN.pushbutton.text
+msgid "Copy"
+msgstr "Másolás"
+
+#: basic.src#IDD_DISPLAY_HID.RID_PB_BENENNEN.pushbutton.text
+msgctxt "basic.src#IDD_DISPLAY_HID.RID_PB_BENENNEN.pushbutton.text"
+msgid "Name"
+msgstr "Név"
+
+#: basic.src#IDD_DISPLAY_HID.RID_PB_SELECTALL.pushbutton.text
+msgid "Select all"
+msgstr "Összes kijelölése"
+
+#: basic.src#IDD_DISPLAY_HID.RID_OK_CLOSE.okbutton.text
+msgid "Close"
+msgstr "Bezár"
+
+#: basic.src#IDD_DISPLAY_HID.floatingwindow.text
+msgid "Display HId"
+msgstr "HID mutatása"
+
+#: basic.src#IDD_EDIT_VAR.RID_FT_NAME.fixedtext.text
+msgctxt "basic.src#IDD_EDIT_VAR.RID_FT_NAME.fixedtext.text"
+msgid "Name"
+msgstr "Név"
+
+#: basic.src#IDD_EDIT_VAR.RID_FT_CONTENT.fixedtext.text
+msgid "Content"
+msgstr "Tartalom"
+
+#: basic.src#IDD_EDIT_VAR.RID_FT_NEW_CONTENT.fixedtext.text
+msgid "New content"
+msgstr "Új tartalom"
+
+#: basic.src#IDD_EDIT_VAR.RID_FT_NAME_VALUE.fixedtext.text
+msgid "Name of variable"
+msgstr "Változó neve"
+
+#: basic.src#IDD_EDIT_VAR.RID_FT_CONTENT_VALUE.fixedtext.text
+msgid "Previous contents"
+msgstr "Előző tartalom"
+
+#: basic.src#IDD_EDIT_VAR.RID_RB_NEW_BOOL_T.radiobutton.text
+msgid "True"
+msgstr "Igaz"
+
+#: basic.src#IDD_EDIT_VAR.RID_RB_NEW_BOOL_F.radiobutton.text
+msgid "False"
+msgstr "Hamis"
+
+#: basic.src#IDD_EDIT_VAR.RID_ED_NEW_STRING.edit.text
+msgid "Edit"
+msgstr "Szerkesztés"
+
+#: basic.src#IDD_EDIT_VAR.modelessdialog.text
+msgid "Edit variable"
+msgstr "Változó szerkesztése"
+
+#: basic.src#LOAD_CONF.WORK.fixedtext.text
+msgid "Slot IDs"
+msgstr "Slot azonosítók"
+
+#: basic.src#LOAD_CONF.FILENAME.fixedtext.text
+msgid "File.win"
+msgstr "File.win"
+
+#: basic.src#LOAD_CONF.floatingwindow.text
+msgid "Reading Configuration Files"
+msgstr "Konfigurációs fájlok olvasása"
+
+#: basmsg.src#S_PROG_START.string.text
+msgid "Program start: ($Arg1); ($Arg2)"
+msgstr "Program indítást: ($Arg1); ($Arg2)"
+
+#: basmsg.src#S_ERROR_OUTSIDE_TESTCASE.string.text
+msgid "Error outside of test case"
+msgstr "A teszteseten kívüli hiba"
+
+#: basmsg.src#S_WARNING_PREFIX.string.text
+msgctxt "basmsg.src#S_WARNING_PREFIX.string.text"
+msgid "Warning: "
+msgstr "Figyelmeztetés: "
+
+#: svtmsg.src#S_GPF_ABORT.string.text
+msgid "Program aborted with GPF"
+msgstr "A program általános védelmi hibával kilépett"
+
+#: svtmsg.src#S_APP_SHUTDOWN.string.text
+msgid "Application has been shut down"
+msgstr "Az alkalmazás le lett állítva"
+
+#: svtmsg.src#S_SID_EXECUTE_FAILED_NO_DISPATCHER.string.text
+msgid "Slot ID cannot be executed. No ActiveDispatcher"
+msgstr "A tárolóhely-azonosító nem végrehajtható. Nincs ActiveDispatcher"
+
+#: svtmsg.src#S_SID_EXECUTE_FAILED.string.text
+msgid "Slot ID could not be executed"
+msgstr "A tárolóhely-azonosítót nem sikerült végrehajtani"
+
+#: svtmsg.src#S_UNO_PROPERTY_NITIALIZE_FAILED.string.text
+msgid "UnoSlot: Properties could not be initialized"
+msgstr "UnoSlot: A tulajdonságok inicializálása sikertelen volt"
+
+#: svtmsg.src#S_RESETAPPLICATION_FAILED_COMPLEX.string.text
+msgid "ResetApplication failed: too complex"
+msgstr "ResetApplication sikertelen: túl bonyolult"
+
+#: svtmsg.src#S_RESETAPPLICATION_FAILED_UNKNOWN.string.text
+msgid "ResetApplication failed: unknown window type"
+msgstr "ResetApplication sikertelen: ismeretlen ablaktípus"
+
+#: svtmsg.src#S_NO_ACTIVE_WINDOW.string.text
+msgid "No active window found (GetNextCloseWindow)"
+msgstr "Nem található aktív ablak (GetNextCloseWindow)"
+
+#: svtmsg.src#S_NO_DIALOG_IN_GETACTIVE.string.text
+msgid "GetActive does not return a dialog! Inform development"
+msgstr ""
+"A GetActive nem párbeszédablakot adott vissza! Értesítse a fejlesztőket."
+
+#: svtmsg.src#S_NO_POPUP.string.text
+msgid "Pop-up menu not open"
+msgstr "Az előugró menü nincs nyitva"
+
+#: svtmsg.src#S_NO_SUBMENU.string.text
+msgid "Submenu does not exist"
+msgstr "Az almenü nem létezik"
+
+#: svtmsg.src#S_CONTROLTYPE_NOT_SUPPORTED.string.text
+msgid "ControlType ($Arg1) is not supported"
+msgstr "A(z) ($Arg1) ControlType nem támogatott"
+
+#: svtmsg.src#S_SELECTION_BY_ATTRIBUTE_ONLY_DIRECTORIES.string.text
+msgid "Selection by attributes only possible for directories"
+msgstr "Az attribútumok szerinti kijelölés csak könyvtárakra lehetséges"
+
+#: svtmsg.src#S_NO_MORE_FILES.string.text
+msgid "No more files"
+msgstr "Nincs több fájl"
+
+#: svtmsg.src#S_UNKNOWN_METHOD.string.text
+msgid "Unknown method '($Arg1)' on ($Arg2)"
+msgstr "Ismeretlen metódus: „($Arg1)” itt: ($Arg2)"
+
+#: svtmsg.src#S_INVALID_PARAMETERS.string.text
+msgid "Invalid Parameters"
+msgstr "Érvénytelen paraméter"
+
+#: svtmsg.src#S_POINTER_OUTSIDE_APPWIN.string.text
+msgid "Pointer not inside application window at '($Arg1)'"
+msgstr "A mutató nem az alkalmazásablak belsejében van a(z) „($Arg1)” helyen"
+
+#: svtmsg.src#S_UNKNOWN_COMMAND.string.text
+msgid "Unknown command '($Arg1)'"
+msgstr "Ismeretlen parancs: „($Arg1)”"
+
+#: svtmsg.src#S_WIN_NOT_FOUND.string.text
+msgid "($Arg1) could not be found"
+msgstr "A(z) ($Arg1) nem található"
+
+#: svtmsg.src#S_WIN_INVISIBLE.string.text
+msgid "($Arg1) is not visible"
+msgstr "A(z) ($Arg1) nem látható"
+
+#: svtmsg.src#S_WIN_DISABLED.string.text
+msgid "($Arg1) could not be accessed. Disabled"
+msgstr "A(z) ($Arg1) nem érhető el."
+
+#: svtmsg.src#S_NUMBER_TOO_BIG.string.text
+msgid "Entry number ($Arg2) is too large in ($Arg1). Max. allowed is ($Arg3)"
+msgstr ""
+"A(z) „($Arg2)” bejegyzés értéke túl nagy a(z) ($Arg1) helyen. Maximálisan "
+"megengedett érték: ($Arg3)"
+
+#: svtmsg.src#S_NUMBER_TOO_SMALL.string.text
+msgid ""
+"The entry number ($Arg2) is too small in ($Arg1). Min allowed is ($Arg3)"
+msgstr ""
+"A(z) „($Arg2)” bejegyzés értéke túl kicsi a(z) ($Arg1) helyen. Minimálisan "
+"megengedett érték: ($Arg3)"
+
+#: svtmsg.src#S_WINDOW_DISAPPEARED.string.text
+msgid "Window disappeared in the meantime at ($Arg1)"
+msgstr "Az ablak eltűnt időközben itt: ($Arg1)"
+
+#: svtmsg.src#S_ERROR_SAVING_IMAGE.string.text
+msgid "Error #($Arg1) when saving the image"
+msgstr "A(z) #($Arg1) számú hiba jelentkezett a kép mentése közben"
+
+#: svtmsg.src#S_INVALID_POSITION.string.text
+msgid "Invalid position at ($Arg1)"
+msgstr "Érvénytelen pozíció a(z) ($Arg1) helyen"
+
+#: svtmsg.src#S_SPLITWIN_NOT_FOUND.string.text
+msgid "SplitWindow not found at ($Arg1)"
+msgstr "SplitWindow nem található a(z) ($Arg1) helyen"
+
+#: svtmsg.src#S_INTERNAL_ERROR.string.text
+msgid "Internal error at ($Arg1)"
+msgstr "Belső hiba a(z) ($Arg1) helyen"
+
+#: svtmsg.src#S_NO_STATUSBAR.string.text
+msgid "No status bar at ($Arg1)"
+msgstr "Nincs állapotsor a(z) ($Arg1) helyen"
+
+#: svtmsg.src#S_ITEMS_INVISIBLE.string.text
+msgid "The items are hidden at ($Arg1)"
+msgstr "Az elemek rejtettek a(z) ($Arg1) helyen"
+
+#: svtmsg.src#S_TABPAGE_NOT_FOUND.string.text
+msgid "Tab page not found at ($Arg1)"
+msgstr "Ablaklap nem található a(z) ($Arg1) helyen"
+
+#: svtmsg.src#S_TRISTATE_NOT_ALLOWED.string.text
+msgid "Tristate cannot be set at ($Arg1)"
+msgstr "A háromállapotú vezérlőelem nem állítható be a(z) ($Arg1) helyen"
+
+#: svtmsg.src#S_ERROR_IN_SET_TEXT.string.text
+msgid "Set text did not function"
+msgstr "A szöveg beállítása funkció nem működik"
+
+#: svtmsg.src#S_ATTEMPT_TO_WRITE_READONLY.string.text
+msgid "Attempt to write on read-only ($Arg1)"
+msgstr "Kísérlet a csak olvasható ($Arg1) írására"
+
+#: svtmsg.src#S_NO_SELECT_FALSE.string.text
+msgid "Select FALSE not allowed. Use MultiSelect at ($Arg1)"
+msgstr "HAMIS választása nem megengedett. Használjon MultiSelectet itt: ($Arg1)"
+
+#: svtmsg.src#S_ENTRY_NOT_FOUND.string.text
+msgid "\"($Arg2)\" entry at ($Arg1) not found"
+msgstr "A(z) „($Arg2)” bejegyzés nem található a(z) ($Arg1) helyen"
+
+#: svtmsg.src#S_METHOD_FAILED.string.text
+msgid "($Arg1) of entry \"($Arg2)\" failed"
+msgstr "A(z) „($Arg2)” bejegyzés hibás a(z) ($Arg1) helyen"
+
+#: svtmsg.src#S_HELPID_ON_TOOLBOX_NOT_FOUND.string.text
+msgid "HelpID in ToolBox not found at ($Arg1)"
+msgstr "HelpID nincs a ToolBoxban itt: ($Arg1)"
+
+#: svtmsg.src#S_BUTTON_DISABLED_ON_TOOLBOX.string.text
+msgid "The button is disabled in ToolBox at ($Arg1)"
+msgstr "A gomb le van tiltva a ToolBoxban a(z) ($Arg1) helyen"
+
+#: svtmsg.src#S_BUTTON_HIDDEN_ON_TOOLBOX.string.text
+msgid "The button is hidden in ToolBox at ($Arg1)"
+msgstr "A gomb rejtett a ToolBoxban a(z) ($Arg1) helyen"
+
+#: svtmsg.src#S_CANNOT_MAKE_BUTTON_VISIBLE_IN_TOOLBOX.string.text
+msgid "Button cannot be made visible in ToolBox at ($Arg1)"
+msgstr "A gomb nem tehető láthatóvá a ToolBoxban a(z) ($Arg1) helyen"
+
+#: svtmsg.src#S_TEAROFF_FAILED.string.text
+msgid "TearOff failed in ToolBox at ($Arg1)"
+msgstr "TearOff sikertelen a Toolboxnál itt: ($Arg1)"
+
+#: svtmsg.src#S_NO_SELECTED_ENTRY_DEPRECATED.string.text
+msgid "No entry is selected in TreeListBox at ($Arg1)"
+msgstr "Nincs elem kiválasztva a TreeListBoxban itt: ($Arg1)"
+
+#: svtmsg.src#S_NO_SELECTED_ENTRY.string.text
+msgid "No entry is selected in ($Arg2) at ($Arg1)"
+msgstr "Nincs elem kiválasztva ebből: ($Arg2) itt: ($Arg1)"
+
+#: svtmsg.src#S_SELECT_DESELECT_VIA_STRING_NOT_IMPLEMENTED.string.text
+msgid "Select/Deselect with string not implemented at ($Arg1)"
+msgstr ""
+"A karakterlánc kiválasztása és a kiválasztás törlése nincs elkészítve a(z) "
+"($Arg1) helyen"
+
+#: svtmsg.src#S_ALLOWED_ONLY_IN_FLOATING_MODE.string.text
+msgid "Method only allowed in floating mode at ($Arg1)"
+msgstr "A metódus csak lebegő módban engedélyezett itt: ($Arg1)"
+
+#: svtmsg.src#S_ALLOWED_ONLY_IN_DOCKING_MODE.string.text
+msgid "Method only allowed in docking mode at ($Arg1)"
+msgstr "A metódus csak dokkolt módban engedélyezett itt: ($Arg1)"
+
+#: svtmsg.src#S_SIZE_NOT_CHANGEABLE.string.text
+msgid "Size cannot be altered at ($Arg1)"
+msgstr "Méret nem változtatható meg a(z) ($Arg1) helyen"
+
+#: svtmsg.src#S_NO_OK_BUTTON.string.text
+msgid "There is no OK button at ($Arg1)"
+msgstr "Nincs „OK” gomb a következőn: ($Arg1)"
+
+#: svtmsg.src#S_NO_CANCEL_BUTTON.string.text
+msgid "There is no Cancel button at ($Arg1)"
+msgstr "Nincs „Mégse” gomb a következőn: ($Arg1)"
+
+#: svtmsg.src#S_NO_YES_BUTTON.string.text
+msgid "There is no Yes button at ($Arg1)"
+msgstr "Nincs „Igen” gomb a következőn: ($Arg1)"
+
+#: svtmsg.src#S_NO_NO_BUTTON.string.text
+msgid "There is no No button at ($Arg1)"
+msgstr "Nincs „Nem” gomb a következőn: ($Arg1)"
+
+#: svtmsg.src#S_NO_RETRY_BUTTON.string.text
+msgid "There is no Repeat button at ($Arg1)"
+msgstr "Nincs „Ismétlés” gomb a következőn: ($Arg1)"
+
+#: svtmsg.src#S_NO_HELP_BUTTON.string.text
+msgid "There is no Help button at ($Arg1)"
+msgstr "Nincs „Súgó” gomb a következőn: ($Arg1)"
+
+#: svtmsg.src#S_NO_DEFAULT_BUTTON.string.text
+msgid "There is no Default button defined at ($Arg1)"
+msgstr "Nincs „Alapértelmezett” gomb definiálva a következőn: ($Arg1)"
+
+#: svtmsg.src#S_BUTTON_ID_NOT_THERE.string.text
+msgid "There is no button with ID ($Arg1) at ($Arg2)"
+msgstr "Nincs gomb ($Arg1) azonosítóval a következőn: ($Arg2)"
+
+#: svtmsg.src#S_BUTTONID_REQUIRED.string.text
+msgid "A button ID needs to be given at ($Arg1)"
+msgstr "A gombazonosítót meg kell adnia a következőn: ($Arg1)"
+
+#: svtmsg.src#S_UNKNOWN_TYPE.string.text
+msgid "Unknown object type ($Arg1) from UId or method '($Arg2)' not supported"
+msgstr ""
+"Az ismeretlen objektumtípus ($Arg1) a(z) ($Arg2) Uid-tól vagy metódustól nem "
+"támogatott."
+
+#: svtmsg.src#S_UNPACKING_STORAGE_FAILED.string.text
+msgid "Unpacking storage \"($Arg1)\" to \"($Arg2)\" failed"
+msgstr "„($Arg1)” tároló kicsomagolása „($Arg2)” helyre sikertelen"
+
+#: svtmsg.src#S_NO_LIST_BOX_BUTTON.string.text
+msgid "ListBoxButton does not exist in ($Arg1)"
+msgstr "ListBoxButton nem található a(z) ($Arg1) helyen"
+
+#: svtmsg.src#S_UNO_URL_EXECUTE_FAILED_NO_DISPATCHER.string.text
+msgid "UNO URL \"($Arg1)\" could not be executed: No dispatcher was found."
+msgstr ""
+"A(z) „($Arg1)” UNO URL nem végrehajtható, mert nem található dispatcher."
+
+#: svtmsg.src#S_UNO_URL_EXECUTE_FAILED_NO_FRAME.string.text
+msgid "UNO URL \"($Arg1)\" could not be executed: No ActiveFrame on desktop."
+msgstr ""
+"A(z) „($Arg1)” UNO URL nem végrehajtható, mert nincs ActiveFrame beállítva "
+"az asztalon."
+
+#: svtmsg.src#S_NO_MENU.string.text
+msgid "There is no menu at ($Arg1)"
+msgstr "Nincs menü a következőn: ($Arg1)"
+
+#: svtmsg.src#S_UNO_URL_EXECUTE_FAILED_DISABLED.string.text
+msgid "UNO URL \"($Arg1)\" could not be run: Disabled"
+msgstr "A(z) „($Arg1)” UNO URL nem végrehajtható, mert le van tiltva."
+
+#: svtmsg.src#S_NO_SCROLLBAR.string.text
+msgid "No scroll bar at ($Arg1)"
+msgstr "Nincs gördítősáv a következőn: ($Arg1)"
+
+#: svtmsg.src#S_NO_SAX_PARSER.string.text
+msgid "No SAX Parser when using ($Arg1). Initialize with 'SAXReadFile' first."
+msgstr ""
+"Nincs SAX-elemző a(z) ($Arg1) használatakor. Inicializálja először a "
+"SAXReadFile-lal."
+
+#: svtmsg.src#S_CANNOT_CREATE_DIRECTORY.string.text
+msgid "Cannot create Directory: \"($Arg1)\""
+msgstr "Könyvtár létrehozása sikertelen: „($Arg1)”"
+
+#: svtmsg.src#S_DIRECTORY_NOT_EMPTY.string.text
+msgid "Directory has to be Empty to unpack to. Directory: \"($Arg1)\""
+msgstr "A kicsomagolás célkönyvtárának üresnek kell lennie. Könyvtár: „($Arg1)”"
+
+#: svtmsg.src#S_DEPRECATED.string.text
+msgid "Deprecated! Please change the script."
+msgstr "Elavult! Változtassa meg a parancsfájlt."
+
+#: svtmsg.src#S_SIZE_BELOW_MINIMUM.string.text
+msgid "The Size is below the minimum. x=($Arg1) ,y=($Arg2)"
+msgstr "A méret a minimum alatt van. x=($Arg1) ,y=($Arg2)"
+
+#: svtmsg.src#S_CANNOT_FIND_FLOATING_WIN.string.text
+msgid "Cannot find FloatingWindow for floating DockingWindow at ($Arg1)."
+msgstr "A lebegő DockingWindow-hoz nem található FloatingWindow itt: ($Arg1)"
+
+#: svtmsg.src#S_NO_LIST_BOX_STRING.string.text
+msgid "String does not exist in ($Arg1)"
+msgstr "A karakterlánc nem létezik itt: ($Arg1)"
+
+#: svtmsg.src#S_SLOT_IN_EXECUTE.string.text
+msgid "Another Slot is being executed already."
+msgstr "Egy másik Slot már végrehajtás alatt van."
+
+#: svtmsg.src#S_MENU_NOT_CLOSING.string.text
+msgid "Menu not closing."
+msgstr "A menü nem záródik be."
+
+#: testtool.src#S_INVALID_KEYCODE.string.text
+msgid "Is an invalid KeyCode!"
+msgstr "Érvénytelen KeyCode!"
+
+#: testtool.src#S_MANDATORY_FILE.string.text
+msgid ""
+"\n"
+"could not be found.\n"
+"This file is indispensable."
+msgstr ""
+"\n"
+"nem található.\n"
+"A fájlra mindenképpen szükség van."
+
+#: testtool.src#S_READING_LONGNAMES.string.text
+msgid "Reading long-names"
+msgstr "Hosszú nevek olvasása"
+
+#: testtool.src#S_READING_SLOT_IDS.string.text
+msgid "Reading Slot IDs"
+msgstr "Csatlakozó-azonosítók beolvasása"
+
+#: testtool.src#S_READING_CONTROLS.string.text
+msgid "Reading Controls"
+msgstr "Vezérlőelemek beolvasása"
+
+#: testtool.src#S_READING_BASIC_MODULE.string.text
+msgid "Reading BASIC module"
+msgstr "BASIC-modul beolvasása"
+
+#: testtool.src#S_STARTING_APPLICATION.string.text
+msgid "Starting application"
+msgstr "Alkalmazás indítása"
+
+#: ttmsg.src#S_NAME_NOT_THERE.string.text
+msgid "Name doesn't exist: #($Arg1)"
+msgstr "A név nem létezik: #($Arg1)"
+
+#: ttmsg.src#S_DOUBLE_NAME.string.text
+msgid "Name double: ($Arg1)"
+msgstr "Dupla név: ($Arg1)"
+
+#: ttmsg.src#S_READING_FILE.string.text
+msgid "Reading the files"
+msgstr "Fájlok beolvasása"
+
+#: ttmsg.src#S_CANNOT_OPEN_FILE.string.text
+msgid "File cannot be opened: ($Arg1)"
+msgstr "A fájl megnyitása nem sikerült: ($Arg1)"
+
+#: ttmsg.src#S_INVALID_LINE.string.text
+msgid "Line \"($Arg1)\" is invalid."
+msgstr "A(z) „($Arg1)” sor érvénytelen."
+
+#: ttmsg.src#S_SHORTNAME_UNKNOWN.string.text
+msgid "Short-name unknown during copying: ($Arg1)"
+msgstr "A következő rövid név ismeretlen: ($Arg1)"
+
+#: ttmsg.src#S_LONGNAME_UNKNOWN.string.text
+msgid "Long-name unknown: ($Arg1)"
+msgstr "Ismeretlen hosszú név: ($Arg1)"
+
+#: ttmsg.src#S_FIRST_SHORTNAME_REQ_ASTRX.string.text
+msgid "First short-name must start with * . Ignoring."
+msgstr "Az első rövid névnek * karakterrel kell kezdődnie. Ki lesz hagyva."
+
+#: ttmsg.src#S_TIMOUT_WAITING.string.text
+msgid "Server Timeout while waiting for answer. Sequence No: ($Arg1)"
+msgstr ""
+"A válaszra várakozás közben kiszolgáló-időtúllépés lépett fel. Sorozatszám: "
+"($Arg1)"
+
+#: ttmsg.src#S_APPLICATION_RESTARTED.string.text
+msgid "Application has been restarted."
+msgstr "Az alkalmazás újra lett indítva."
+
+#: ttmsg.src#S_APPLICATION_START_FAILED.string.text
+msgid "Application \"($Arg1)\" cannot be started. "
+msgstr "A(z) „($Arg1)” alkalmazás nem indítható el. "
+
+#: ttmsg.src#S_TIMOUT_SENDING.string.text
+msgid "Server Timeout while sending. Sequence No: ($Arg1)"
+msgstr "A küldés során kiszolgáló-időtúllépés lépett fel. Sorozatszám: ($Arg1)"
+
+#: ttmsg.src#S_NO_CONNECTION.string.text
+msgid "No connection. Sequence No: ($Arg1)"
+msgstr "Nincs kapcsolat. Sorozatszám: ($Arg1)"
+
+#: ttmsg.src#S_NO_FILES_FOUND.string.text
+msgid "No ($Arg1) files found"
+msgstr "A(z) ($Arg1) fájl nem található."
+
+#: ttmsg.src#S_ERRORS_DETECTED.string.text
+msgid "** ($Arg1) errors occurred"
+msgstr "** ($Arg1) hiba történt"
+
+#: ttmsg.src#S_NO_ERRORS_DETECTED.string.text
+msgid "** No errors have occurred"
+msgstr "** Nem történt hiba"
+
+#: ttmsg.src#S_WARNINGS_DETECTED.string.text
+msgid "** ($Arg1) warnings occurred"
+msgstr "** ($Arg1) figyelmeztetés volt"
+
+#: ttmsg.src#S_NO_WARNINGS_DETECTED.string.text
+msgid "** No warnings have occurred"
+msgstr "** Nem volt figyelmeztetés"
+
+#: ttmsg.src#S_INCLUDE_FILE_WARNINGS_DETECTED.string.text
+msgid "** ($Arg1) warnings occurred during initialization"
+msgstr "** ($Arg1) figyelmeztetés volt az inicializálás során"
+
+#: ttmsg.src#S_NO_INCLUDE_FILE_WARNINGS_DETECTED.string.text
+msgid "** No warnings occurred during initialization"
+msgstr "** Nem volt figyelmeztetés az inicializálás során"
+
+#: ttmsg.src#S_UNKNOWN_SLOT_CONTROL.string.text
+msgid "Slot/Control unknown :\"($Arg1)\""
+msgstr "A tárolóhely vagy vezérlőelem ismeretlen: „($Arg1)”"
+
+#: ttmsg.src#S_RETURN_SEQUENCE_MISSMATCH.string.text
+msgid "Return Stream has wrong sequence: ($Arg1) instead of ($Arg2)"
+msgstr ""
+"A visszatérő adatfolyam rossz sorrendben van: ($Arg1). A helyes sorrend: "
+"($Arg2)."
+
+#: ttmsg.src#S_RETURNED_VALUE_ID_MISSMATCH.string.text
+msgid "Return value received but different Id expected"
+msgstr "A visszatérési érték megérkezett, de az azonosító eltér."
+
+#: ttmsg.src#S_RETURNED_VALUE_NO_RECEIVER.string.text
+msgid "Return value received but no receiver defined"
+msgstr "A visszatérési érték megérkezett, de nincs fogadó definiálva."
+
+#: ttmsg.src#S_UNKNOWN_METHOD.string.text
+msgid "Unknown method on object :($Arg1).($Arg2)"
+msgstr "Ismeretlen metódus az objektumon: ($Arg1).($Arg2)"
+
+#: format.src#STR_BASICKEY_FORMAT_ON.string.text
+msgid "On"
+msgstr "Be"
+
+#: format.src#STR_BASICKEY_FORMAT_OFF.string.text
+msgid "Off"
+msgstr "Ki"
+
+#: format.src#STR_BASICKEY_FORMAT_TRUE.string.text
+msgid "True"
+msgstr "Igaz"
+
+#: format.src#STR_BASICKEY_FORMAT_FALSE.string.text
+msgid "False"
+msgstr "Hamis"
+
+#: format.src#STR_BASICKEY_FORMAT_YES.string.text
+msgid "Yes"
+msgstr "Igen"
+
+#: format.src#STR_BASICKEY_FORMAT_NO.string.text
+msgid "No"
+msgstr "Nem"
+
+#: format.src#STR_BASICKEY_FORMAT_CURRENCY.string.text
+msgid "@0.00 $;@(0.00 $)"
+msgstr "@0.00 $;@(0.00 $)"

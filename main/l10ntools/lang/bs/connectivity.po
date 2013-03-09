@@ -1,0 +1,821 @@
+
+#: conn_error_message.src#256___2_100___0.string.text
+msgid "The record operation has been vetoed."
+msgstr "Operacija nad slogom je dobila veto."
+
+#: conn_error_message.src#256___2_200___0.string.text
+msgid "The statement contains a cyclic reference to one or more sub queries."
+msgstr "Izjava sadrži ciklične reference na jedan ili više podupita."
+
+#: conn_error_message.src#256___2_300___0.string.text
+msgid "The name must not contain any slashes ('/')."
+msgstr "Ime ne smije sadržavati kose crte ('/')."
+
+#: conn_error_message.src#256___2_301___0.string.text
+msgid "$1$ is no SQL conform identifier."
+msgstr "$1$ nije SQL identifikator."
+
+#: conn_error_message.src#256___2_302___0.string.text
+msgid "Query names must not contain quote characters."
+msgstr "Imena upita"
+
+#: conn_error_message.src#256___2_303___0.string.text
+msgid "The name '$1$' is already in use in the database."
+msgstr "Ime '$1$' se već koristi u bazi podataka."
+
+#: conn_error_message.src#256___2_304___0.string.text
+msgid "No connection to the database exists."
+msgstr ""
+
+#: conn_error_message.src#256___2_500___0.string.text
+msgid "No $1$ exists."
+msgstr ""
+
+#: conn_error_message.src#256___2_550___0.string.text
+msgid "Unable to display the complete table content. Please apply a filter."
+msgstr ""
+
+#: conn_shared_res.src#STR_MOZILLA_ADDRESSBOOKS.string.text
+msgid "Mozilla/Seamonkey Addressbook Directory"
+msgstr ""
+
+#: conn_shared_res.src#STR_THUNDERBIRD_ADDRESSBOOKS.string.text
+msgid "Thunderbird Addressbook Directory"
+msgstr ""
+
+#: conn_shared_res.src#STR_OE_ADDRESSBOOK.string.text
+msgid "Outlook Express Addressbook"
+msgstr ""
+
+#: conn_shared_res.src#STR_OUTLOOK_MAPI_ADDRESSBOOK.string.text
+msgid "Outlook (MAPI) Addressbook"
+msgstr ""
+
+#: conn_shared_res.src#STR_NO_TABLE_CREATION_SUPPORT.string.text
+msgid "Creating tables is not supported for this kind of address books."
+msgstr "Kreiranje tabela nije podržano za ovakav tip adresara."
+
+#: conn_shared_res.src#STR_MOZILLA_IS_RUNNING.string.text
+msgid "Cannot create new address books while Mozilla is running."
+msgstr "Ne možete kreirati novi adresar dok Mozilla radi."
+
+#: conn_shared_res.src#STR_COULD_NOT_RETRIEVE_AB_ENTRY.string.text
+msgid ""
+"An address book entry could not be retrieved, an unknown error occurred."
+msgstr "Unos u adresar nije moguće pronaći. Nepoznata greška se pojavila."
+
+#: conn_shared_res.src#STR_COULD_NOT_GET_DIRECTORY_NAME.string.text
+msgid ""
+"An address book directory name could not be retrieved, an unknown error "
+"occurred."
+msgstr ""
+"Ime direktorija adresara nije moguće dobiti, nepoznata greška se pojavila."
+
+#: conn_shared_res.src#STR_TIMEOUT_WAITING.string.text
+msgid "Timed out while waiting for the result."
+msgstr "Pauzirano zbog čekanja rezultata."
+
+#: conn_shared_res.src#STR_ERR_EXECUTING_QUERY.string.text
+msgid "An error occurred while executing the query."
+msgstr "Greška se pojavila prilikom pokretanja upita."
+
+#: conn_shared_res.src#STR_MOZILLA_IS_RUNNIG_NO_CHANGES.string.text
+msgid ""
+"You can't make any changes to mozilla address book when mozilla is running."
+msgstr "Ne možete vršiti promjene u Mozilla adresaru dok Mozilla radi."
+
+#: conn_shared_res.src#STR_FOREIGN_PROCESS_CHANGED_AB.string.text
+msgid ""
+"Mozilla Address Book has been changed out of this process, we can't modify "
+"it in this condition."
+msgstr ""
+"Mozilla adresar je promijenjen iz ovog procesa, ne možemo ga izmijeniti u "
+"ovom stanju."
+
+#: conn_shared_res.src#STR_CANT_FIND_ROW.string.text
+msgid "Can't find the requested row."
+msgstr "Ne mogu naći traženi red."
+
+#: conn_shared_res.src#STR_CANT_FIND_CARD_FOR_ROW.string.text
+msgid "Can't find the card for the requested row."
+msgstr "Ne mogu naći karticu za traženi redak."
+
+#: conn_shared_res.src#STR_QUERY_AT_LEAST_ONE_TABLES.string.text
+msgid "The query can not be executed. It needs at least one table."
+msgstr "Upit se ne može izvršiti. Potrebna najmanje jedna tabela."
+
+#: conn_shared_res.src#STR_NO_COUNT_SUPPORT.string.text
+msgid "The driver does not support the 'COUNT' function."
+msgstr "Drajver ne podržava 'COUNT' funkciju."
+
+#: conn_shared_res.src#STR_STMT_TYPE_NOT_SUPPORTED.string.text
+msgid "This statement type not supported by this database driver."
+msgstr "Baza podataka ne podržava vrstu ovog iskaza."
+
+#: conn_shared_res.src#STR_UNSPECIFIED_ERROR.string.text
+msgid "An unknown error occured."
+msgstr "Došlo je do nepoznate greške."
+
+#: conn_shared_res.src#STR_COULD_NOT_CREATE_ADDRESSBOOK.string.text
+msgid "Could not create a new address book. Mozilla error code is $1$."
+msgstr ""
+
+#: conn_shared_res.src#STR_COULD_NOT_LOAD_LIB.string.text
+msgid "The library '$libname$' could not be loaded."
+msgstr "Biblioteku '$libname$' nije moguće učitati."
+
+#: conn_shared_res.src#STR_ERROR_REFRESH_ROW.string.text
+msgid "An error occured while refreshing the current row."
+msgstr "Greška se pojavila prilikom osvježavanja trenutnog reda."
+
+#: conn_shared_res.src#STR_ERROR_GET_ROW.string.text
+msgid "An error occured while getting the current row."
+msgstr "Greška se pojavila prilikom dobijanja trenutnog reda."
+
+#: conn_shared_res.src#STR_CAN_NOT_CANCEL_ROW_UPDATE.string.text
+msgid "The row update can not be canceled."
+msgstr "Ažuriranje reda ne može biti prekinuto."
+
+#: conn_shared_res.src#STR_CAN_NOT_CREATE_ROW.string.text
+msgid "A new row can not be created."
+msgstr "Red ne može biti napravljen."
+
+#: conn_shared_res.src#STR_QUERY_INVALID_IS_NULL_COLUMN.string.text
+msgid ""
+"The query can not be executed. The 'IS NULL' can only be used with a column "
+"name."
+msgstr ""
+"Upit nije moguće izvršiti. 'IS NULL' može biti korišteno samo sa imenom "
+"kolone."
+
+#: conn_shared_res.src#STR_ILLEGAL_MOVEMENT.string.text
+msgid "Illegal cursor movement occured."
+msgstr "Ilegalno pokretanje kursora se desilo."
+
+#: conn_shared_res.src#STR_COMMIT_ROW.string.text
+msgid "Please commit row '$position$' before update rows or insert new rows."
+msgstr ""
+"Molimo vas potvrdite red '$position$' prije ažuriranja redova ili unošenja "
+"novih."
+
+#: conn_shared_res.src#STR_INVALID_ROW_UPDATE.string.text
+msgid "The update call can not be executed. The row is invalid."
+msgstr "Poziv za ažuriranje ne može biti izvršen. Red je neispravan."
+
+#: conn_shared_res.src#STR_ROW_CAN_NOT_SAVE.string.text
+msgid "The current row can not be saved."
+msgstr "Red se ne može sačuvati."
+
+#: conn_shared_res.src#STR_NO_HOSTNAME.string.text
+msgid "No hostname was provided."
+msgstr "Ime hosta je dostavljeno."
+
+#: conn_shared_res.src#STR_NO_BASEDN.string.text
+msgid "No Base DN was provided."
+msgstr "Base DN nije omogućen."
+
+#: conn_shared_res.src#STR_COULD_NOT_CONNECT_LDAP.string.text
+msgid "The connection to the LDAP server could not be established."
+msgstr "Nije se mogla ispostaviti veza na LDAP server."
+
+#: conn_shared_res.src#STR_NO_CONNECTION_GIVEN.string.text
+msgid "It doesn't exist a connection to the database."
+msgstr "Konekcija na bazu podataka ne postoji."
+
+#: conn_shared_res.src#STR_WRONG_PARAM_INDEX.string.text
+msgid ""
+"You tried to set a parameter at position '$pos$' but there is/are only "
+"'$count$' parameter(s) allowed. One reason may be that the property "
+"\"ParameterNameSubstitution\" is not set to TRUE in the data source."
+msgstr ""
+"Pokušali ste postaviti parametar na poziciji '$pos$' ali tu su samo "
+"'$count$' parametri dozvoljeni. Razlog tome može biti svojstvo "
+"\"ParameterNameSubstiution\" nije postavljeno na TAČNO u izvoru podataka."
+
+#: conn_shared_res.src#STR_INPUTSTREAM_WRONG_LEN.string.text
+msgid ""
+"End of InputStream reached before satisfying length specified when "
+"InputStream was set."
+msgstr ""
+"Kraj InputStream dostignut prije zadovoljenja dužine koja je navedena kada "
+"je InputStream setovan."
+
+#: conn_shared_res.src#STR_NO_INPUTSTREAM.string.text
+msgid "The input stream was not set."
+msgstr "Input stream nije postavljen."
+
+#: conn_shared_res.src#STR_NO_ELEMENT_NAME.string.text
+msgid "There is no element named '$name$'."
+msgstr "Nema elementa pod nazivom '$name$'."
+
+#: conn_shared_res.src#STR_INVALID_BOOKMARK.string.text
+msgid "Invalid bookmark value"
+msgstr "Pogrešna vrijednost zabilješke."
+
+#: conn_shared_res.src#STR_PRIVILEGE_NOT_GRANTED.string.text
+msgid "Privilege not granted: Only table privileges can be granted."
+msgstr ""
+"Privilegije nisu odobrene: Samo tabele sa privilegijama mogu biti odobrene."
+
+#: conn_shared_res.src#STR_PRIVILEGE_NOT_REVOKED.string.text
+msgid "Privilege not revoked: Only table privileges can be revoked."
+msgstr ""
+"Privilegije nisu poništene: Samo tabele sa privilegijama mogu biti "
+"poništene."
+
+#: conn_shared_res.src#STR_UNKNOWN_COLUMN_NAME.string.text
+msgid "The column name '$columnname$' is unknown."
+msgstr "Ime kolone '$columnname$' je nepoznato."
+
+#: conn_shared_res.src#STR_ERRORMSG_SEQUENCE.string.text
+msgid "Function sequence error."
+msgstr "Greška funkcije sekvence."
+
+#: conn_shared_res.src#STR_INVALID_INDEX.string.text
+msgid "Invalid descriptor index."
+msgstr "Neispravan opis indeksa."
+
+#: conn_shared_res.src#STR_UNSUPPORTED_FUNCTION.string.text
+msgid "The driver does not support the function '$functionname$'."
+msgstr "Drajver ne podržava funkciju '$functionname$'."
+
+#: conn_shared_res.src#STR_UNSUPPORTED_FEATURE.string.text
+msgid ""
+"The driver does not support the functionality for '$featurename$'. It is not "
+"implemented."
+msgstr ""
+"Drajver ne podržava funkcionalnost za '$featurename$'. Nije implementirana."
+
+#: conn_shared_res.src#STR_FORMULA_WRONG.string.text
+msgid "The formula for TypeInfoSettings is wrong!"
+msgstr "Formula za TypeInfoSettings je pogrešna!"
+
+#: conn_shared_res.src#STR_STRING_LENGTH_EXCEEDED.string.text
+msgid ""
+"The string '$string$' exceeds the maximum length of $maxlen$ characters when "
+"converted to the target character set '$charset$'."
+msgstr ""
+"Alfanumerički niz znakova '$charset$' premašuje maksimum dužine $maxlen$ "
+"karaktera kad se konvertuje znakova ciljnih skupina '$charset$'."
+
+#: conn_shared_res.src#STR_CANNOT_CONVERT_STRING.string.text
+msgid ""
+"The string '$string$' cannot be converted using the encoding '$charset$'."
+msgstr ""
+"String '$string$' ne moze biti konvertovan koristeci encoding '$charset$'."
+
+#: conn_shared_res.src#STR_URI_SYNTAX_ERROR.string.text
+msgid "The connection URL is invalid."
+msgstr "URL konekcije je neispravan."
+
+#: conn_shared_res.src#STR_QUERY_TOO_COMPLEX.string.text
+msgid "The query can not be executed. It is too complex."
+msgstr "Upit nije moguće izvršiti. Previše je kompleksan."
+
+#: conn_shared_res.src#STR_OPERATOR_TOO_COMPLEX.string.text
+msgid "The query can not be executed. The operator is too complex."
+msgstr "Upit nije moguće izvršiti. Operator je previše kompleksan."
+
+#: conn_shared_res.src#STR_QUERY_INVALID_LIKE_COLUMN.string.text
+msgid ""
+"The query can not be executed. You cannot use 'LIKE' with columns of this "
+"type."
+msgstr ""
+"Upit nije moguće izvršiti. 'LIKE' može biti korišteno samo sa imenom kolone."
+
+#: conn_shared_res.src#STR_QUERY_INVALID_LIKE_STRING.string.text
+msgid ""
+"The query can not be executed. 'LIKE' can be used with a string argument "
+"only."
+msgstr ""
+"Upit nije moguće izvršiti. 'LIKE' može biti korišteno samo sa string "
+"argumentom."
+
+#: conn_shared_res.src#STR_QUERY_NOT_LIKE_TOO_COMPLEX.string.text
+msgid "The query can not be executed. The 'NOT LIKE' condition is too complex."
+msgstr "Upit nije moguće izvršiti. 'NOT LIKE' je previše kompleksno."
+
+#: conn_shared_res.src#STR_QUERY_LIKE_WILDCARD.string.text
+msgid ""
+"The query can not be executed. The 'LIKE' condition contains wildcard in the "
+"middle."
+msgstr "Upit nije moguće izvršiti. 'LIKE' sadrži wildcard u sredini."
+
+#: conn_shared_res.src#STR_QUERY_LIKE_WILDCARD_MANY.string.text
+msgid ""
+"The query can not be executed. The 'LIKE' condition contains too many "
+"wildcards."
+msgstr "Upit nije moguće izvršiti. 'LIKE' sadrži previše wildcards."
+
+#: conn_shared_res.src#STR_INVALID_COLUMNNAME.string.text
+msgid "The column name '$columnname$' is not valid."
+msgstr "Ime kolone '$columnname$' nije validno."
+
+#: conn_shared_res.src#STR_INVALID_COLUMN_SELECTION.string.text
+msgid "The statement contains an invalid selection of columns."
+msgstr "Izjava sadrži pogrešnu selekciju kolona."
+
+#: conn_shared_res.src#STR_COLUMN_NOT_UPDATEABLE.string.text
+msgid "The column at position '$position$' could not be updated."
+msgstr "Kolonu na poziciji '$position$' nije moguće ažurirati"
+
+#: conn_shared_res.src#STR_COULD_NOT_LOAD_FILE.string.text
+msgid "The file $filename$ could not be loaded."
+msgstr "Datoteku $filename$ nije moguće učitati."
+
+#: conn_shared_res.src#STR_LOAD_FILE_ERROR_MESSAGE.string.text
+msgid ""
+"The attempt to load the file resulted in the following error message "
+"($exception_type$):\n"
+"\n"
+"$error_message$"
+msgstr ""
+"Pokušaj učitavanja datoteke uzrokovao je sljedeću poruku greške "
+"($exception_type$):\n"
+"\n"
+"$error_message$"
+
+#: conn_shared_res.src#STR_TYPE_NOT_CONVERT.string.text
+msgid "The type could not be converted."
+msgstr "Vrstu nije moguće konvertovati."
+
+#: conn_shared_res.src#STR_INVALID_COLUMN_DESCRIPTOR_ERROR.string.text
+msgid "Could not append column: invalid column descriptor."
+msgstr "Nije moguće dodati kolonu: Pogrešan opis kolone."
+
+#: conn_shared_res.src#STR_INVALID_GROUP_DESCRIPTOR_ERROR.string.text
+msgid "Could not create group: invalid object descriptor."
+msgstr "Nije moguće kreirati grupu: neispravan opis objekta."
+
+#: conn_shared_res.src#STR_INVALID_INDEX_DESCRIPTOR_ERROR.string.text
+msgid "Could not create index: invalid object descriptor."
+msgstr "Nije moguće kreirati indeks: neispravan objekat opisa."
+
+#: conn_shared_res.src#STR_INVALID_KEY_DESCRIPTOR_ERROR.string.text
+msgid "Could not create key: invalid object descriptor."
+msgstr "Nije moguće kreirati ključ: neispravan objekat opisa."
+
+#: conn_shared_res.src#STR_INVALID_TABLE_DESCRIPTOR_ERROR.string.text
+msgid "Could not create table: invalid object descriptor."
+msgstr "Nije moguće kreirati tabelu. Neispravan objekat opisa."
+
+#: conn_shared_res.src#STR_INVALID_USER_DESCRIPTOR_ERROR.string.text
+msgid "Could not create user: invalid object descriptor."
+msgstr "Nije moguće kreirati korisnika. Neispravan objekat opisa."
+
+#: conn_shared_res.src#STR_INVALID_VIEW_DESCRIPTOR_ERROR.string.text
+msgid "Could not create view: invalid object descriptor."
+msgstr "Nije moguće kreirati pogled. Neispravan objekat opisa."
+
+#: conn_shared_res.src#STR_VIEW_NO_COMMAND_ERROR.string.text
+msgid "Could not create view: no command object."
+msgstr "Nije moguće kreirati pregled: objekt bez komande."
+
+#: conn_shared_res.src#STR_NO_CONNECTION.string.text
+msgid ""
+"The connection could not be created. May be the necessary data provider is "
+"not installed."
+msgstr "Konekciju nije moguće kreirati. Potrebni data provider nije instaliran."
+
+#: conn_shared_res.src#STR_COULD_NOT_DELETE_INDEX.string.text
+msgid ""
+"The index could not be deleted. An unknown error while accessing the file "
+"system occured."
+msgstr ""
+"Indeks nije moguće obrisati. Nepoznata greška se pojavila prilikom pristupa "
+"datotečnom sistemu."
+
+#: conn_shared_res.src#STR_ONL_ONE_COLUMN_PER_INDEX.string.text
+msgid "The index could not be created. Only one column per index is allowed."
+msgstr ""
+"Indeks nije moguće kreirati. Samo jedna kolona po indeksu je dozvoljena."
+
+#: conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NOT_UNIQUE.string.text
+msgid "The index could not be created. The values are not unique."
+msgstr "Indeks nije moguće kreirati. Vrijednosti nisu unikatne."
+
+#: conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX.string.text
+msgid "The index could not be created. An unknown error appeared."
+msgstr "Indeks nije moguće kreirati. Nepoznata greška se pojavila."
+
+#: conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NAME.string.text
+msgid ""
+"The index could not be created. The file '$filename$' is used by an other "
+"index."
+msgstr ""
+"Indeks nije moguće kreirati. Datoteka '$filename$' je korištena od strane "
+"drugog indeksa."
+
+#: conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_KEYSIZE.string.text
+msgid ""
+"The index could not be created. The size of the chosen column is to big."
+msgstr ""
+
+#: conn_shared_res.src#STR_SQL_NAME_ERROR.string.text
+msgid "The name '$name$' doesn't match SQL naming constraints."
+msgstr "Naziv '$name$' se ne podudara sa SQL imenovanim ograničenjima."
+
+#: conn_shared_res.src#STR_COULD_NOT_DELETE_FILE.string.text
+msgid "The file $filename$ could not be deleted."
+msgstr "Datoteku $filename$ nije moguće obrisati."
+
+#: conn_shared_res.src#STR_INVALID_COLUMN_TYPE.string.text
+msgid "Invalid column type for column '$columnname$'."
+msgstr "Neispravan tip kolone za '$columnname$'."
+
+#: conn_shared_res.src#STR_INVALID_COLUMN_PRECISION.string.text
+msgid "Invalid precision for column '$columnname$'."
+msgstr "Pogrešna preciznost za kolonu '$columnname$'."
+
+#: conn_shared_res.src#STR_INVALID_PRECISION_SCALE.string.text
+msgid "Precision is less than scale for column '$columnname$'."
+msgstr "Preciznost je manja od skale za kolonu '$columnname$'."
+
+#: conn_shared_res.src#STR_INVALID_COLUMN_NAME_LENGTH.string.text
+msgid "Invalid column name length for column '$columnname$'."
+msgstr "Pogrešna dužina imena kolone za kolonu '$columnname$'."
+
+#: conn_shared_res.src#STR_DUPLICATE_VALUE_IN_COLUMN.string.text
+msgid "Duplicate value found in column '$columnname$'."
+msgstr "Duple vrijednosti pronađene u koloni '$columnname$'."
+
+#: conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.string.text
+msgid ""
+"The '$columnname$' column has been defined as a \"Decimal\" type, the max. "
+"length is $precision$ characters (with $scale$ decimal places).\n"
+"\n"
+"The specified value \"$value$ is longer than the number of digits allowed."
+msgstr ""
+"$columnname$' kolona je definisana kao \"Decimal\" tip, maksimalna dužina je "
+"$precision$ karaktera (sa $scale$ decimalnih mjesta).\n"
+"\n"
+" Navedena vrijednost \"$value$ je veća od broja dopuštenih cifara."
+
+#: conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.string.text
+msgid ""
+"The column '$columnname$' could not be altered. May be the file system is "
+"write protected."
+msgstr ""
+"Kolona '$columnname$' se ne može promijeniti. Datoteka je možda zaštićena od "
+"pisanja"
+
+#: conn_shared_res.src#STR_INVALID_COLUMN_VALUE.string.text
+msgid ""
+"The column '$columnname$' could not be updated. The value is invalid for "
+"that column."
+msgstr ""
+"Kolonu '$columnname$' nije moguće ažurirati. Vrijednost je neispravna za tu "
+"kolonu."
+
+#: conn_shared_res.src#STR_COLUMN_NOT_ADDABLE.string.text
+msgid ""
+"The column '$columnname$' could not be added. May be the file system is "
+"write protected."
+msgstr ""
+"Kolona '$columnname$' se ne može dodati. Datoteka je možda zaštićena od "
+"pisanja."
+
+#: conn_shared_res.src#STR_COLUMN_NOT_DROP.string.text
+msgid ""
+"The column at position '$position$' could not be dropped. May be the file "
+"system is write protected."
+msgstr ""
+"Kolona na poziciji '$position$' se ne može obrisati.  Datoteka je možda "
+"zaštićena od pisanja"
+
+#: conn_shared_res.src#STR_TABLE_NOT_DROP.string.text
+msgid ""
+"The table '$tablename$' could not be dropped. May be the file system is "
+"write protected."
+msgstr ""
+"Tabelu '$tablename$' nije moguće izostaviti. Moguća zaštita od pisanja "
+"sistema datoteka. "
+
+#: conn_shared_res.src#STR_COULD_NOT_ALTER_TABLE.string.text
+msgid "The table could not be altered."
+msgstr "Tabelu nije moguće promijeniti."
+
+#: conn_shared_res.src#STR_INVALID_DBASE_FILE.string.text
+msgid "The file '$filename$' is an invalid (or unrecognized) dBase file."
+msgstr ""
+"Datoteka '$filename$' je neispravna ili neprepoznatljiva dBase datoteka."
+
+#: conn_shared_res.src#STR_CANNOT_OPEN_BOOK.string.text
+msgid "Cannot open Evolution address book."
+msgstr ""
+
+#: conn_shared_res.src#STR_SORT_BY_COL_ONLY.string.text
+msgid "Can only sort by table columns."
+msgstr ""
+
+#: conn_shared_res.src#STR_QUERY_COMPLEX_COUNT.string.text
+msgid ""
+"The query can not be executed. It is too complex. Only \"COUNT(*)\" is "
+"supported."
+msgstr ""
+"Upit nije moguće izvršiti. Previše kompleksan. Samo \"COUNT(*)\" je podržano."
+
+#: conn_shared_res.src#STR_QUERY_INVALID_BETWEEN.string.text
+msgid "The query can not be executed. The 'BETWEEN' arguments are not correct."
+msgstr "Upit nije moguće izvršiti. 'BETWEEN' argumenti nisu tačni."
+
+#: conn_shared_res.src#STR_QUERY_FUNCTION_NOT_SUPPORTED.string.text
+msgid "The query can not be executed. The function is not supported."
+msgstr "Upit nije moguće izvršiti. Funkcija nije podržana"
+
+#: conn_shared_res.src#STR_TABLE_READONLY.string.text
+msgid "The table can not be changed. It is read only."
+msgstr "Tabelu nije moguće promijeniti. Samo za čitanje."
+
+#: conn_shared_res.src#STR_DELETE_ROW.string.text
+msgid ""
+"The row could not be deleted. The option \"Display inactive records\" is set."
+msgstr ""
+"Red nije moguće obrisati. Opcija \"Prikaži neaktivne unose\" je postavljena."
+
+#: conn_shared_res.src#STR_ROW_ALREADY_DELETED.string.text
+msgid "The row could not be deleted. It is already deleted."
+msgstr "Red nije moguće izbrisati. Već je izbrisan."
+
+#: conn_shared_res.src#STR_QUERY_MORE_TABLES.string.text
+msgid "The query can not be executed. It contains more than one table."
+msgstr "Upit nije moguće izvršiti. Sadrži više od jedne tabele."
+
+#: conn_shared_res.src#STR_QUERY_NO_TABLE.string.text
+msgid "The query can not be executed. It contains no valid table."
+msgstr "Upit nije moguće izvršiti. Sadrži neispravne tabele."
+
+#: conn_shared_res.src#STR_QUERY_NO_COLUMN.string.text
+msgid "The query can not be executed. It contains no valid columns."
+msgstr "Upit nije moguće izvršiti. Sadrži neispravne kolone."
+
+#: conn_shared_res.src#STR_INVALID_PARA_COUNT.string.text
+msgid "The count of the given parameter values doesn't match the parameters."
+msgstr "Broj zadatih vrijednosti parametara ne odgovara parametrima."
+
+#: conn_shared_res.src#STR_NO_VALID_FILE_URL.string.text
+msgid "The URL '$URL$' is not valid. A connection can not be created."
+msgstr "URL '$URL$' nije validan. Konekciju nije moguće uspostaviti."
+
+#: conn_shared_res.src#STR_NO_CLASSNAME.string.text
+msgid "The driver class '$classname$' could not be loaded."
+msgstr "Drajversku klasu '$classname$' nije moguće učitati."
+
+#: conn_shared_res.src#STR_NO_JAVA.string.text
+msgid "No Java installation could be found. Please check your installation."
+msgstr "Java instalacija nije pronađena. Molimo provjerite svoju konfiguraciju."
+
+#: conn_shared_res.src#STR_NO_RESULTSET.string.text
+msgid "The execution of the query doesn't return a valid result set."
+msgstr "Pokretanje upita ne vraća validan skup rezultata."
+
+#: conn_shared_res.src#STR_NO_ROWCOUNT.string.text
+msgid "The execution of the update statement doesn't effect any rows."
+msgstr "Pokretanje update naredbe nema efekta na redove."
+
+#: conn_shared_res.src#STR_NO_CLASSNAME_PATH.string.text
+msgid "The additional driver class path is '$classpath$'."
+msgstr "Dodatni put klase drajvera je '$classpath$'."
+
+#: conn_shared_res.src#STR_UNKNOWN_PARA_TYPE.string.text
+msgid "The type of parameter at position '$position$' is unknown."
+msgstr "Nepoznata vrsta parametra na poziciji '$position$'."
+
+#: conn_shared_res.src#STR_UNKNOWN_COLUMN_TYPE.string.text
+msgid "The type of column at position '$position$' is unknown."
+msgstr "Nepoznata vrsta kolone na poziciji '$position$'."
+
+#: conn_shared_res.src#STR_NO_KDE_INST.string.text
+msgid "No suitable KDE installation was found."
+msgstr "Nije pronađena prikladna KDE instalacija."
+
+#: conn_shared_res.src#STR_KDE_VERSION_TOO_OLD.string.text
+msgid ""
+"KDE version $major$.$minor$ or higher is required to access the KDE Address "
+"Book."
+msgstr ""
+"KDE verzija $major$.$minor$ ili viša je potrebna da se pristupi KDE "
+"adresaru."
+
+#: conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.string.text
+msgid "The found KDE version is too new. Only KDE up to version $major$.$minor$ is "
+"known to work with this product.\n"
+msgstr "Nađena KDE verzija je previše nova. Samo KDE do verzije $major$.$minor$ radi "
+"s ovim proizvodom.\n"
+
+#: conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.string.text
+msgid ""
+"If you are sure that your KDE version works, you might execute the following "
+"Basic macro to disable this version check:\n"
+"\n"
+msgstr ""
+"Ukoliko ste sigurni da vaša KDE verzija radi, možete pokrenuti sljedeći "
+"Basic makro da isključite provjeru verzije:\n"
+"\n"
+
+#: conn_shared_res.src#STR_PARA_ONLY_PREPARED.string.text
+msgid "Parameters can appear only in prepared statements."
+msgstr "Parametri se mogu pojaviti u pripremljenim izjavama."
+
+#: conn_shared_res.src#STR_NO_TABLE.string.text
+msgid "No such table!"
+msgstr "Nema takve tabele!"
+
+#: conn_shared_res.src#STR_NO_MAC_OS_FOUND.string.text
+msgid "No suitable Mac OS installation was found."
+msgstr "Nije pronađena prikladna Mac OS instalacija."
+
+#: conn_shared_res.src#STR_NO_DISK_SPACE.string.text
+msgid ""
+"The database file '$filename$' could not be created. Please check your disk "
+"space."
+msgstr ""
+"Datoteku baze podataka '$filename$' nije moguće kreirati. Provjerite "
+"slobodan prostor na disku."
+
+#: conn_shared_res.src#STR_COMMAND_NOT_FOUND.string.text
+msgid ""
+"The database '$databasename$' could not be started because the command "
+"'$progname$' could not be executed."
+msgstr ""
+"Bazu podataka '$databasename$' nije moguće pokrenuti zato što se naredba "
+"'$progname$' ne može izvršiti."
+
+#: conn_shared_res.src#STR_DATABASE_NEEDS_CONVERTING.string.text
+msgid ""
+"The current database need to be converted. Please insert control user  and "
+"password."
+msgstr ""
+"Trenutnu bazu podataka potrebno je konvertovati. Molimo vas unesite "
+"korisnika i lozinku."
+
+#: conn_shared_res.src#STR_USER_NO_DELETE.string.text
+msgid ""
+"This user couldn't be deleted. Otherwise the database stays in a "
+"inconsistent state."
+msgstr ""
+"Korisnika nije moguće izbrisati. Inače baza podataka ostaje u nestalnom "
+"stanju."
+
+#: conn_shared_res.src#STR_NO_STROAGE.string.text
+msgid "The connection can not be established. No storage or URL was given."
+msgstr ""
+"Konekciju nije moguće uspostaviti. Mjesto za pohranjivanje ili URL nisu "
+"dati."
+
+#: conn_shared_res.src#STR_INVALID_FILE_URL.string.text
+msgid ""
+"The given URL contains no valid local file system path. Please check the "
+"location of your database file."
+msgstr ""
+"URL sadrži neispravan put na lokalnom datotečnom sistemu. Provjerite "
+"lokaciju vaše baze podataka."
+
+#: conn_shared_res.src#STR_NO_TABLE_CONTAINER.string.text
+msgid "An error occured while obtaining the connection's table container."
+msgstr ""
+"Greška se pojavila pri pokušaju pribavljanja kontejnera tabela za konekciju."
+
+#: conn_shared_res.src#STR_NO_TABLE_EDITOR_DIALOG.string.text
+msgid "An error occured while creating the table editor dialog."
+msgstr "Greška se pojavila prilikom kreiranja dijaloga za editor tabele."
+
+#: conn_shared_res.src#STR_NO_TABLENAME.string.text
+msgid "There is no table named '$tablename$'."
+msgstr "Ne postoji tabela s nazivom '$tablename$'."
+
+#: conn_shared_res.src#STR_NO_DOCUMENTUI.string.text
+msgid "The provided DocumentUI is not allowed to be NULL."
+msgstr "Dostavljeni DocumentUI nije dozvoljeno da bude nula."
+
+#: ado.xcu#.Drivers.Installed.sdbc_ado__.DriverTypeDisplayName.value.text
+msgid "ADO"
+msgstr "ADO"
+
+#: ado.xcu#.Drivers.Installed.sdbc_ado_access_PROVIDER_Microsoft.Jet.OLEDB.4.0_DATA_SOURCE__.DriverTypeDisplayName.value.text
+msgid "Microsoft Access"
+msgstr "Microsoft Access"
+
+#: ado.xcu#.Drivers.Installed.sdbc_ado_access_Provider_Microsoft.ACE.OLEDB.12.0_DATA_SOURCE__.DriverTypeDisplayName.value.text
+msgid "Microsoft Access 2007"
+msgstr "Microsoft Access 2007"
+
+#: hsqldb.xcu#.Drivers.Installed.sdbc_embedded_hsqldb.DriverTypeDisplayName.value.text
+msgid "HSQL database engine"
+msgstr "HSQL baza podataka"
+
+#: odbc.xcu#.Drivers.Installed.sdbc_odbc__.DriverTypeDisplayName.value.text
+msgid "ODBC"
+msgstr "ODBC"
+
+#: calc.xcu#.Drivers.Installed.sdbc_calc__.DriverTypeDisplayName.value.text
+msgid "Spreadsheet"
+msgstr "Proračunska tablica"
+
+#: macab.xcu#.Drivers.Installed.sdbc_address_macab.DriverTypeDisplayName.value.text
+msgid "Mac OS X Address Book"
+msgstr "Mac OS X adresar"
+
+#: jdbc.xcu#.Drivers.Installed.jdbc__.DriverTypeDisplayName.value.text
+msgid "JDBC"
+msgstr "JDBC"
+
+#: jdbc.xcu#.Drivers.Installed.jdbc_oracle_thin__.DriverTypeDisplayName.value.text
+msgid "Oracle JDBC"
+msgstr "Oracle JDBC"
+
+#: evoab2.xcu#.Drivers.Installed.sdbc_address_evolution_local.DriverTypeDisplayName.value.text
+msgid "Evolution Local"
+msgstr "Evolution lokalni"
+
+#: evoab2.xcu#.Drivers.Installed.sdbc_address_evolution_ldap.DriverTypeDisplayName.value.text
+msgid "Evolution LDAP"
+msgstr "Evolution LDAP"
+
+#: evoab2.xcu#.Drivers.Installed.sdbc_address_evolution_groupwise.DriverTypeDisplayName.value.text
+msgid "Groupwise"
+msgstr "Groupwise"
+
+#: evoab.xcu#.Drivers.Installed.sdbc_address_evolution_ldap.DriverTypeDisplayName.value.text
+msgid "Evolution LDAP"
+msgstr "Evolution LDAP"
+
+#: evoab.xcu#.Drivers.Installed.sdbc_address_evolution_groupwise.DriverTypeDisplayName.value.text
+msgid "Groupwise"
+msgstr "Groupwise"
+
+#: flat.xcu#.Drivers.Installed.sdbc_flat__.DriverTypeDisplayName.value.text
+msgid "Text"
+msgstr "Tekst"
+
+#: adabas.xcu#.Drivers.Installed.sdbc_adabas__.DriverTypeDisplayName.value.text
+msgid "Adabas D"
+msgstr "Adabas D"
+
+#: dbase.xcu#.Drivers.Installed.sdbc_dbase__.DriverTypeDisplayName.value.text
+msgid "dBASE"
+msgstr "dBASE"
+
+#: mysql.xcu#.Drivers.Installed.sdbc_mysql_jdbc__.DriverTypeDisplayName.value.text
+msgid "MySQL (JDBC)"
+msgstr "MySQL (JDBC)"
+
+#: mysql.xcu#.Drivers.Installed.sdbc_mysql_odbc__.DriverTypeDisplayName.value.text
+msgid "MySQL (ODBC)"
+msgstr "MySQL (ODBC)"
+
+#: mysql.xcu#.Drivers.Installed.sdbc_mysql_mysqlc__.DriverTypeDisplayName.value.text
+msgid "MySQL (Native)"
+msgstr "MySQL (Native)"
+"X-Generator: Pootle 2.1.6\n"
+"X-Accelerator-Marker: ~\n"
+
+#: mozab.xcu#.Drivers.Installed.sdbc_address_outlook.DriverTypeDisplayName.value.text
+msgid "Microsoft Outlook Address Book"
+msgstr "Microsoft Outlook adresar"
+
+#: mozab.xcu#.Drivers.Installed.sdbc_address_outlookexp.DriverTypeDisplayName.value.text
+msgid "Microsoft Windows Address Book"
+msgstr "Microsoft Windows adresar"
+
+#: mozab.xcu#.Drivers.Installed.sdbc_address_mozilla_.DriverTypeDisplayName.value.text
+msgctxt "mozab.xcu#.Drivers.Installed.sdbc_address_mozilla_.DriverTypeDisplayName.value.text"
+msgid "SeaMonkey Address Book"
+msgstr ""
+
+#: mozab.xcu#.Drivers.Installed.sdbc_address_thunderbird_.DriverTypeDisplayName.value.text
+msgctxt "mozab.xcu#.Drivers.Installed.sdbc_address_thunderbird_.DriverTypeDisplayName.value.text"
+msgid "Thunderbird Address Book"
+msgstr "Thunderbird adresar"
+
+#: mozab.xcu#.Drivers.Installed.sdbc_address_ldap__.DriverTypeDisplayName.value.text
+msgctxt "mozab.xcu#.Drivers.Installed.sdbc_address_ldap__.DriverTypeDisplayName.value.text"
+msgid "LDAP Address Book"
+msgstr "LDAP adresar"
+
+#: mozab2.xcu#.Drivers.Installed.sdbc_address_mozilla_.DriverTypeDisplayName.value.text
+msgctxt "mozab2.xcu#.Drivers.Installed.sdbc_address_mozilla_.DriverTypeDisplayName.value.text"
+msgid "SeaMonkey Address Book"
+msgstr ""
+
+#: mozab2.xcu#.Drivers.Installed.sdbc_address_thunderbird_.DriverTypeDisplayName.value.text
+msgctxt "mozab2.xcu#.Drivers.Installed.sdbc_address_thunderbird_.DriverTypeDisplayName.value.text"
+msgid "Thunderbird Address Book"
+msgstr "Thunderbird adresar"
+
+#: mozab2.xcu#.Drivers.Installed.sdbc_address_ldap__.DriverTypeDisplayName.value.text
+msgctxt "mozab2.xcu#.Drivers.Installed.sdbc_address_ldap__.DriverTypeDisplayName.value.text"
+msgid "LDAP Address Book"
+msgstr "LDAP adresar"
+
+#~ msgctxt "mozab2.xcu#.Drivers.Installed.sdbc_address_mozilla_.DriverTypeDisplayName.value.text"
+#~ msgid "Mozilla Address Book"
+#~ msgstr "Mozilla adresar"
+
+#~ msgctxt "mozab.xcu#.Drivers.Installed.sdbc_address_mozilla_.DriverTypeDisplayName.value.text"
+#~ msgid "Mozilla Address Book"
+#~ msgstr "Mozilla adresar"
+
+#: kab.xcu#.Drivers.Installed.sdbc_address_kab.DriverTypeDisplayName.value.text
+msgid "KDE Address Book"
+msgstr "KDE adresar"

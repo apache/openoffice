@@ -1,0 +1,4053 @@
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_DBSETTINGS.fixedline.text
+msgid "Database settings"
+msgstr "数据库设置"
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_USER.fixedline.text
+msgid "User settings"
+msgstr "用户设置"
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CACHE_SIZE.fixedtext.text
+msgid "Data ~buffer size (MB)"
+msgstr "数据缓冲区大小(~B)(MB)"
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CONUSR.fixedtext.text
+msgid "~Control user"
+msgstr "控制权限用户(~C)"
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATABASENAME.fixedtext.text
+msgid "Database ~name"
+msgstr "数据库名称(~N)"
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE.fixedtext.text
+msgid "DATAD~EVSPACE"
+msgstr "DATAD~EVSPACE"
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE_SIZE.fixedtext.text
+msgid "Data~base size (MB)"
+msgstr "数据库大小(~B)(MB)"
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DOMAIN_USR.fixedtext.text
+msgid "~Domain user"
+msgstr "域用户(~D)"
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_RESTORE.fixedtext.text
+msgid "~Backup file"
+msgstr "备份文件(~B)"
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSDEVSPACE.fixedtext.text
+msgid "S~YSDEVSPACE"
+msgstr "S~YSDEVSPACE"
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSUSR.fixedtext.text
+msgid "~Administrator"
+msgstr "管理员(~A)"
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG.fixedtext.text
+msgid "TRANSACTI~ONLOG"
+msgstr "TRANSACTI~ONLOG"
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG_SIZE.fixedtext.text
+msgid "Transaction ~file (MB)"
+msgstr "事务文件(~F)(MB)"
+
+#: AdabasNewDb.src#INFO_STR_MAX_FILE_LENGTH.infobox.text
+msgid "The fully qualified file cannot be longer than \\'#\\' characters."
+msgstr "完整路径名文件不能多于 \\'#\\' 个字符。"
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.modaldialog.text
+msgid "Create New Adabas D Database"
+msgstr "创建新 Adabas D 数据库"
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_CONPWD.pushbutton.text
+msgid "~Password..."
+msgstr "密码(~P)..."
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DATADEVSPACE.pushbutton.text
+msgctxt "AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DATADEVSPACE.pushbutton.text"
+msgid "..."
+msgstr "..."
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DOMAINPWD.pushbutton.text
+msgid "Passwo~rd..."
+msgstr "密码(~R)..."
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_RESTORE.pushbutton.text
+msgctxt "AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_RESTORE.pushbutton.text"
+msgid "..."
+msgstr "..."
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSDEVSPACE.pushbutton.text
+msgctxt "AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSDEVSPACE.pushbutton.text"
+msgid "..."
+msgstr "..."
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSPWD.pushbutton.text
+msgid "P~assword..."
+msgstr "密码(~A)..."
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_TRANSACTIONLOG.pushbutton.text
+msgctxt "AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_TRANSACTIONLOG.pushbutton.text"
+msgid "..."
+msgstr "..."
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.STR_BACKUPFILE_LOAD.string.text
+msgid "Backup file information"
+msgstr "备份文件信息"
+
+#: AdabasNewDb.src#STR_ADABAS_CANNOT_CONVERT.string.text
+msgid ""
+"The current database need to be converted. Please insert control user  and "
+"password."
+msgstr "当前数据库需要转换。请输入控制权限用户和密码。"
+
+#: AdabasNewDb.src#STR_ADABAS_CREATEFILES.string.text
+msgid "Creating database files."
+msgstr "正在创建数据库文件。"
+
+#: AdabasNewDb.src#STR_ADABAS_CREATEPARAM_FILE.string.text
+msgid "Creating database configuration file."
+msgstr "正在创建数据库配置文件。"
+
+#: AdabasNewDb.src#STR_ADABAS_DB_EXISTS.string.text
+msgid "The name entered already exists."
+msgstr "输入的名称已存在。"
+
+#: AdabasNewDb.src#STR_ADABAS_NO_ACCESSRIGHTS.string.text
+msgid ""
+"No default names could be set for the database files. There is no write "
+"access."
+msgstr "无法为数据库文件设置默认名称。没有写入权限。"
+
+#: AdabasNewDb.src#STR_ADABAS_NO_BACKUP_FILE.string.text
+msgid "The backup file entered does not exist."
+msgstr "输入的备份文件不存在。"
+
+#: AdabasNewDb.src#STR_ADABAS_NO_DB_CREATED.string.text
+msgid "An error occurred as the DB files were being created."
+msgstr "创建 DB 文件时发生错误。"
+
+#: AdabasNewDb.src#STR_ADABAS_NO_DEFAULTNAME.string.text
+msgid ""
+"No default names could be set for the database files. The total length is "
+"more than 40 characters."
+msgstr "无法为数据库文件设置默认名称。名称总长度超过 40 个字符。"
+
+#: AdabasNewDb.src#STR_ADABAS_NO_PARAM_SET.string.text
+msgid "No entry could be written in the configuration file."
+msgstr "无法向配置文件写入条目。"
+
+#: AdabasNewDb.src#STR_ADABAS_NO_SYSTEM_TABLES.string.text
+msgid "An error occurred as the system tables were being created."
+msgstr "创建系统表格时发生错误。"
+
+#: AdabasNewDb.src#STR_ADABAS_PASSWORD_ILLEGAL.string.text
+msgid "Spaces are not permitted in the password. Please enter a new password."
+msgstr "密码中不允许使用空格。请输入一个新密码。"
+
+#: AdabasNewDb.src#STR_ADABAS_START_DATABASE.string.text
+msgid "Starting database for the first time."
+msgstr "正在初次启动数据库。"
+
+#: AdabasNewDb.src#STR_DEVSPACE_NO_FILE.string.text
+msgid "No name has been entered for the $name$ file!"
+msgstr "未为 $name$ 文件输入名称！"
+
+#: AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.string.text
+msgid ""
+"No new database can be created.\n"
+"Please check your Adabas D installation, especially the variables \"DBROOT\" "
+"and \"DBWORK\"."
+msgstr ""
+"无法创建新数据库。\n"
+"请检查 Adabas D 安装，特别要检查变量 \"DBROOT\" 和 \"DBWORK\"。"
+
+#: AdabasNewDb.src#STR_FILE_OR_DIR_UNKNOWN.string.text
+msgid "The specified file name or directory does not exist."
+msgstr "指定的文件名或目录不存在。"
+
+#: AdabasNewDb.src#STR_NO_PERMISSION.string.text
+msgid "You have to have administrator rights to create a new database!"
+msgstr "您必须有管理员权限才能创建新数据库！"
+
+#: AdabasNewDb.src#STR_NO_SAME_USER.string.text
+msgid "The administrator and the control user cannot have the same name!"
+msgstr "管理员和控制权限用户不能使用相同的名称！"
+
+#: AdabasNewDb.src#STR_STAT_WARNING.string.text
+msgid "Warning!"
+msgstr "警告！"
+
+#: macromigration.src#ERR_INVALID_BACKUP_LOCATION.errorbox.text
+msgid ""
+"You need to choose a backup location other than the document location "
+"itself."
+msgstr "您需要选择一个备份位置（不能与该文档位置相同）。"
+
+#: macromigration.src#TP_MIGRATE.FT_ALL_PROGRESS_LABEL.fixedtext.text
+msgid "Overall progress:"
+msgstr "总进度："
+
+#: macromigration.src#TP_MIGRATE.FT_CURRENT_OBJECT_LABEL.fixedtext.text
+msgid "Current object:"
+msgstr "当前对象:"
+
+#: macromigration.src#TP_MIGRATE.FT_CURRENT_PROGRESS_LABEL.fixedtext.text
+msgid "Current progress:"
+msgstr "当前进度："
+
+#: macromigration.src#TP_MIGRATE.FT_HEADER.fixedtext.text
+msgid "Migration Progress"
+msgstr "移埴进度"
+
+#: macromigration.src#TP_MIGRATE.FT_MIGRATION_DONE.fixedtext.text
+msgid ""
+"All forms and reports have been successfully processed. Press 'Next' to show "
+"a detailed summary."
+msgstr "所有表单和报表都已经成功处理。请单击“下一步”以显示详细摘要。"
+
+#: macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT.fixedtext.text
+msgid ""
+"The database document contains $forms$ form(s) and $reports$ report(s), "
+"which are currently being processed:"
+msgstr "数据库文档包含 $forms$ 个表单和 $reports$ 份报表。当前，它们正在被处理中："
+
+#: macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT_PROGRESS.fixedtext.text
+msgctxt "macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT_PROGRESS.fixedtext.text"
+msgid "document $current$ of $overall$"
+msgstr "文档 $current$，共 $overall$ "
+
+#: macromigration.src#TP_PREPARE.FT_CLOSE_DOC_ERROR.fixedtext.text
+msgid ""
+"Not all objects could be closed. Please close them manually, and re-start "
+"the wizard."
+msgstr "不是所有的对象都能被关闭。请手动关闭它们，然后重新启动向导。"
+
+#: macromigration.src#TP_PREPARE.FT_HEADER.fixedtext.text
+msgid "Welcome to the Database Macro Migration Wizard"
+msgstr "欢迎使用数据库宏移植向导"
+
+#: macromigration.src#TP_PREPARE.FT_INTRODUCTION.fixedtext.text
+msgid ""
+"This wizard will guide you through the task of migrating your macros.\n"
+"\n"
+"After you finished it, all macros which were formerly embedded into the "
+"forms and reports of the current database document will have been moved to "
+"the document itself. In this course, libraries will be renamed as needed.\n"
+"\n"
+"If your forms and reports contain references to those macros, they will be "
+"adjusted, where possible.\n"
+"\n"
+"Before the migration can start, all forms, reports, queries and tables "
+"belonging to the document must be closed. Press 'Next' to do so."
+msgstr ""
+"该向导将引导您完成移植宏的任务。\n"
+"\n"
+"完成后，所有之前嵌入到当前数据库文档表单和报表中的宏将会被移植到文档本身之中。在此过程中，库将会根据需要被重命名。\n"
+"\n"
+"如果您的表单和报表包含到那些宏的引用，在可能的地方，它们将会有所调整。\n"
+"\n"
+"在开始移植前，必须关闭所有属于该文档的表单、报表、查询和表。请单击“下一步”执行以上操作。"
+
+#: macromigration.src#TP_SAVE_DBDOC_AS.FT_EXPLANATION.fixedtext.text
+msgid ""
+"To allow you to go back to the state before the migration, the database "
+"document will be backed up to a location of your choice. Every change done "
+"by the wizard will be made to the original document, the backup will stay "
+"untouched."
+msgstr "为了允许您回到移植前的状态，数据库文档将被备份到您选择的位置下。向导所做的每一个更改都将修改原始文档，副本不会被改变。"
+
+#: macromigration.src#TP_SAVE_DBDOC_AS.FT_HEADER.fixedtext.text
+msgid "Backup your Document"
+msgstr "备份您的文档"
+
+#: macromigration.src#TP_SAVE_DBDOC_AS.FT_SAVE_AS_LABEL.fixedtext.text
+msgid "Save To:"
+msgstr "保存到："
+
+#: macromigration.src#TP_SAVE_DBDOC_AS.FT_START_MIGRATION.fixedtext.text
+msgid ""
+"Press 'Next' to save a copy of your document, and to begin the migration."
+msgstr "请按“下一步”以保存文档的副本，然后开始移植。"
+
+#: macromigration.src#TP_SUMMARY.FT_HEADER.fixedtext.text
+msgctxt "macromigration.src#TP_SUMMARY.FT_HEADER.fixedtext.text"
+msgid "Summary"
+msgstr "摘要"
+
+#: macromigration.src#DLG_MACRO_MIGRATION.modaldialog.text
+msgid "Database Document Macro Migration"
+msgstr "数据库文档宏移植"
+
+#: macromigration.src#TP_SAVE_DBDOC_AS.PB_BROWSE_SAVE_AS_LOCATION.pushbutton.text
+msgid "Browse ..."
+msgstr "浏览 ..."
+
+#: macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_BACKUP_DBDOC.string.text
+msgid "Backup Document"
+msgstr "备份文档"
+
+#: macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_CLOSE_SUB_DOCS.string.text
+msgid "Prepare"
+msgstr "准备"
+
+#: macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_MIGRATE.string.text
+msgid "Migrate"
+msgstr "移植"
+
+#: macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_SUMMARY.string.text
+msgctxt "macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_SUMMARY.string.text"
+msgid "Summary"
+msgstr "摘要"
+
+#: macromigration.src#STR_BEAN_SHELL.string.text
+msgid "BeanShell"
+msgstr "BeanShell"
+
+#: macromigration.src#STR_DATABASE_DOCUMENT.string.text
+msgid "Database Document"
+msgstr "数据库文档"
+
+#: macromigration.src#STR_DIALOG.string.text
+msgid "dialog"
+msgstr "对话框"
+
+#: macromigration.src#STR_ERRORS.string.text
+msgid "Error(s)"
+msgstr "错误"
+
+#: macromigration.src#STR_EXCEPTION.string.text
+msgid "caught exception: "
+msgstr "捕获异常： "
+
+#: macromigration.src#STR_FORM.string.text
+msgid "Form '$name$'"
+msgstr "表单 '$name$'"
+
+#: macromigration.src#STR_INVALID_NUMBER_ARGS.string.text
+msgid "Invalid number of initialization arguments. Expected 1."
+msgstr "初始化参数无效，要求 1"
+
+#: macromigration.src#STR_JAVA.string.text
+msgid "Java"
+msgstr "Java"
+
+#: macromigration.src#STR_JAVA_SCRIPT.string.text
+msgid "JavaScript"
+msgstr "JavaScript"
+
+#: macromigration.src#STR_LIBRARY_TYPE_AND_NAME.string.text
+msgid "$type$ library '$library$'"
+msgstr "$type$ 库 '$library$'"
+
+#: macromigration.src#STR_MIGRATING_LIBS.string.text
+msgid "migrating libraries ..."
+msgstr "正在移植库..."
+
+#: macromigration.src#STR_MOVED_LIBRARY.string.text
+msgid "migrated $type$ library '$old$' to '$new$'"
+msgstr "移植 $type$ 库 '$old$' 到 '$new$'"
+
+#: macromigration.src#STR_NOT_READONLY.string.text
+msgid "Not applicable to read-only documents."
+msgstr "无法应用于只读文档。"
+
+#: macromigration.src#STR_NO_DATABASE.string.text
+msgid "No database document found in the initialization arguments."
+msgstr "初始化参数中未发现数据库文档。"
+
+#: macromigration.src#STR_OOO_BASIC.string.text
+msgid "%PRODUCTNAME Basic"
+msgstr "%PRODUCTNAME Basic"
+
+#: macromigration.src#STR_OVERALL_PROGRESS.string.text
+msgctxt "macromigration.src#STR_OVERALL_PROGRESS.string.text"
+msgid "document $current$ of $overall$"
+msgstr "$overall$ 的文档 $current$"
+
+#: macromigration.src#STR_PYTHON.string.text
+msgid "Python"
+msgstr "Python"
+
+#: macromigration.src#STR_REPORT.string.text
+msgid "Report '$name$'"
+msgstr "报表 '$name$'"
+
+#: macromigration.src#STR_SAVED_COPY_TO.string.text
+msgid "saved copy to $location$"
+msgstr "保存副本到 $location$"
+
+#: macromigration.src#STR_WARNINGS.string.text
+msgid "Warnings"
+msgstr "警告"
+
+#: macromigration.src#TP_SUMMARY.STR_SUCCESSFUL.string.text
+msgid ""
+"The migration was successful. Below is a log of the actions which have been "
+"taken to your document."
+msgstr "移植成功。以下是对您文档进行操作的日志。"
+
+#: macromigration.src#TP_SUMMARY.STR_UNSUCCESSFUL.string.text
+msgid ""
+"The migration was not successful. Examine the migration log below for "
+"details."
+msgstr "移植不成功。请检查下面的移植日志以获得详细信息。"
+
+#: bcommon.src#RID_STR_TBL_TITLE.string.text
+msgctxt "bcommon.src#RID_STR_TBL_TITLE.string.text"
+msgid "Table #"
+msgstr "表格 #"
+
+#: sbabrw.src#MID_ADMINISTRATE.#define.text
+msgid "Registered databases ..."
+msgstr "已注册的数据库..."
+
+#: sbabrw.src#MID_CLOSECONN.#define.text
+msgid "Disco~nnect"
+msgstr "退出连接(~N)"
+
+#: sbabrw.src#MID_EDIT_DATABASE.#define.text
+msgid "Edit ~Database File..."
+msgstr "编辑数据库文件(~D)..."
+
+#: sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.menuitem.text
+msgid "Rebuild"
+msgstr "重建"
+
+#: sbabrw.src#QUERY_BRW_DELETE_QUERY_CONFIRM.querybox.text
+msgid "The query already exists. Do you want to delete it?"
+msgstr "查询已经存在。是否要删除它？"
+
+#: sbabrw.src#QUERY_BRW_DELETE_ROWS.querybox.text
+msgid "Do you want to delete the selected data?"
+msgstr "是否要删除选中的数据？"
+
+#: sbabrw.src#QUERY_BRW_SAVEMODIFIED.querybox.text
+msgid ""
+"The current record has been changed.\n"
+"Do you want to save the changes?"
+msgstr ""
+"当前的数据条目已经被修改。\n"
+"是否要保存修改后的数据条目？"
+
+#: sbabrw.src#QUERY_CONNECTION_LOST.querybox.text
+msgid "The connection to the database has been lost. Do you want to reconnect?"
+msgstr "和数据库的连接已经中断。是否要重新和数据库连接？"
+
+#: sbabrw.src#RID_STR_CONNECTION_LOST.string.text
+msgid "Connection lost"
+msgstr "失去连接"
+
+#: sbabrw.src#RID_STR_DATABROWSER_FILTERED.string.text
+msgid "(filtered)"
+msgstr "(已经筛选)"
+
+#: sbabrw.src#RID_STR_QUERIES_CONTAINER.string.text
+msgid "Queries"
+msgstr "查询"
+
+#: sbabrw.src#RID_STR_TABLES_CONTAINER.string.text
+msgid "Tables"
+msgstr "表格"
+
+#: sbabrw.src#SBA_BROWSER_SETTING_FILTER.string.text
+msgid "Error setting the filter criteria"
+msgstr "在设置筛选条件时发生错误"
+
+#: sbabrw.src#SBA_BROWSER_SETTING_ORDER.string.text
+msgid "Error setting the sort criteria"
+msgstr "在设置排序条件时发生错误"
+
+#: sbabrw.src#STR_CONNECTING_DATASOURCE.string.text
+msgid "Connecting to \"$name$\" ..."
+msgstr "和 \"$name$\" 连接..."
+
+#: sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.string.text
+msgid "The connection to the data source \"$name$\" could not be established."
+msgstr "无法建立指向数据源 $name$ 的连接。"
+
+#: sbabrw.src#STR_LOADING_QUERY.string.text
+msgid "Loading query $name$ ..."
+msgstr "正在载入查询 $name$ ..."
+
+#: sbabrw.src#STR_LOADING_TABLE.string.text
+msgid "Loading table $name$ ..."
+msgstr "正在载入表格 $name$ ..."
+
+#: sbabrw.src#STR_NO_TABLE_FORMAT_INSIDE.string.text
+msgid "No table format could be found."
+msgstr "未找到任何表格格式。"
+
+#: sbabrw.src#STR_OPENTABLES_WARNINGS.string.text
+msgid "Warnings encountered"
+msgstr "遇到警告"
+
+#: sbabrw.src#STR_OPENTABLES_WARNINGS_DETAILS.string.text
+msgid ""
+"While retrieving the tables, warnings were reported by the database "
+"connection."
+msgstr "在读取表格时发出一个数据库连接的警告。"
+
+#: sbabrw.src#STR_QUERY_DELETE_TABLE.string.text
+msgid "Do you want to delete the table '%1'?"
+msgstr "是否要删除这个表格 '%1'？"
+
+#: sbabrw.src#STR_TITLE_CONFIRM_DELETION.string.text
+msgid "Confirm Deletion"
+msgstr "确定删除"
+
+#: sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.menuitem.text
+msgid "Column ~Format..."
+msgstr "列格式(~F)..."
+
+#: sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLUMNINFO.menuitem.text
+msgid "Copy Column D~escription"
+msgstr "复制列标题(~E)"
+
+#: sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_ROWHEIGHT.menuitem.text
+msgid "Row Height..."
+msgstr "行高..."
+
+#: sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_TABLEATTR.menuitem.text
+msgid "Table Format..."
+msgstr "表格格式..."
+
+#: sbagrid.src#RID_STR_SAVE_CURRENT_RECORD.string.text
+msgid "Save current record"
+msgstr "保存当前的数据条目"
+
+#: sbagrid.src#RID_STR_UNDO_MODIFY_RECORD.string.text
+msgid "Undo: Data Input"
+msgstr "撤消: 输入数据"
+
+#: sbagrid.src#STR_DATASOURCE_GRIDCONTROL_DESC.string.text
+msgid "Shows the selected table or query."
+msgstr "显示已经选择的表格或查询。"
+
+#: sbagrid.src#STR_DATASOURCE_GRIDCONTROL_NAME.string.text
+msgid "Data source table view"
+msgstr "数据源的表格视图"
+
+#: sbagrid.src#STR_ERROR_OCCURED_WHILE_COPYING.string.text
+msgid "An error occurred. Do you want to continue copying?"
+msgstr "出现一个错误！是否要继续复制？"
+
+#: sbagrid.src#STR_NAME_ALREADY_EXISTS.string.text
+msgid "The name \"#\" already exists."
+msgstr "名称 \"#\" 已经存在。"
+
+#: sbagrid.src#STR_NO_COLUMNNAME_MATCHING.string.text
+msgid "No matching column names were found."
+msgstr "无法找到相符的列名称！"
+
+#: sbagrid.src#STR_QRY_TITLE.string.text
+msgid "Query #"
+msgstr "查询 #"
+
+#: sbagrid.src#STR_TBL_TITLE.string.text
+msgctxt "sbagrid.src#STR_TBL_TITLE.string.text"
+msgid "Table #"
+msgstr "表格 #"
+
+#: sbagrid.src#STR_VIEW_TITLE.string.text
+msgid "View #"
+msgstr "视图 #"
+
+#: AdabasStat.src#DLG_ADABASSTAT.FL_FILES.fixedline.text
+msgid "Database files"
+msgstr "数据库文件"
+
+#: AdabasStat.src#DLG_ADABASSTAT.FL_SIZES.fixedline.text
+msgid "Database sizes"
+msgstr "数据库大小"
+
+#: AdabasStat.src#DLG_ADABASSTAT.FT_DATADEVSPACE.fixedtext.text
+msgid "DATAD~EVSPACE:"
+msgstr "DATAD~EVSPACE："
+
+#: AdabasStat.src#DLG_ADABASSTAT.FT_FREESIZE.fixedtext.text
+msgid "~Free memory space (MB):"
+msgstr "可用空间(MB)(~F)："
+
+#: AdabasStat.src#DLG_ADABASSTAT.FT_MEMORYUSING.fixedtext.text
+msgid "~Memory utilization (in %):"
+msgstr "内存使用率(%)(~M)："
+
+#: AdabasStat.src#DLG_ADABASSTAT.FT_SIZE.fixedtext.text
+msgid "S~ize (MB):"
+msgstr "总计大小(MB)(~I)："
+
+#: AdabasStat.src#DLG_ADABASSTAT.FT_SYSDEVSPACE.fixedtext.text
+msgid "S~YSDEVSPACE:"
+msgstr "S~YSDEVSPACE："
+
+#: AdabasStat.src#DLG_ADABASSTAT.FT_TRANSACTIONLOG.fixedtext.text
+msgid "~TRANSACTIONLOG:"
+msgstr "~TRANSACTIONLOG："
+
+#: AdabasStat.src#DLG_ADABASSTAT.modaldialog.text
+msgid "Database Statistics"
+msgstr "数据库统计"
+
+#: AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.string.text
+msgid ""
+"No information could be displayed because no access rights exist for the "
+"required system tables."
+msgstr "因为不具备读取需要的系统表格的权限而无法显示任何信息。"
+
+#: AdabasStat.src#STR_ADABAS_HELP_DATADEVSPACES.string.text
+msgid "Contains all data files"
+msgstr "含有全部的数据文件"
+
+#: AdabasStat.src#STR_ADABAS_HELP_FREESIZE.string.text
+msgid "Currently available space before a new datadev file is created."
+msgstr "在新建一个 datadev 文件之前的可用空间。"
+
+#: AdabasStat.src#STR_ADABAS_HELP_MEMORYUSING.string.text
+msgid "Currently used memory"
+msgstr "当前占用的内存"
+
+#: AdabasStat.src#STR_ADABAS_HELP_SIZE.string.text
+msgid "Total size of the database files"
+msgstr "数据库文件的总计大小"
+
+#: AdabasStat.src#STR_ADABAS_HELP_SYSDEVSPACE.string.text
+msgid "Contains the system tables"
+msgstr "含有系统表格"
+
+#: AdabasStat.src#STR_ADABAS_HELP_TRANSACT.string.text
+msgid "Contains information about transaction"
+msgstr "含有有关传递的信息"
+
+#: AutoControls.src#STR_ADABAS_DATABASE_NAME.string.text
+msgid "Name of the Adabas D database"
+msgstr "Adabas D 数据库的名称"
+
+#: AutoControls.src#STR_CALC_PATH_OR_FILE.string.text
+msgid "Path to the spreadsheet document"
+msgstr "电子表格文档的路径"
+
+#: AutoControls.src#STR_COMMONURL.string.text
+msgid "Datasource URL"
+msgstr "数据源 URL"
+
+#: AutoControls.src#STR_DBASE_PATH_OR_FILE.string.text
+msgid "Path to the dBASE files"
+msgstr "dBASE 文件的路径"
+
+#: AutoControls.src#STR_FLAT_PATH_OR_FILE.string.text
+msgid "Path to the text files"
+msgstr "文本文件的路径"
+
+#: AutoControls.src#STR_HOSTNAME.string.text
+msgctxt "AutoControls.src#STR_HOSTNAME.string.text"
+msgid "~Host name"
+msgstr "主机名(~H)"
+
+#: AutoControls.src#STR_MOZILLA_PROFILE_NAME.string.text
+msgid "~Mozilla profile name"
+msgstr "~Mozilla 配置文件名称"
+
+#: AutoControls.src#STR_MSACCESS_MDB_FILE.string.text
+msgid "Microsoft Access database file"
+msgstr "Microsoft Access 数据库文件"
+
+#: AutoControls.src#STR_MYSQL_DATABASE_NAME.string.text
+msgid "Name of the MySQL database"
+msgstr "MySQL 数据库的名称"
+
+#: AutoControls.src#STR_NAME_OF_ODBC_DATASOURCE.string.text
+msgid "Name of the ODBC data source on your system"
+msgstr "系统上 ODBC 数据源的名称"
+
+#: AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.string.text
+msgid ""
+"No more settings are necessary. To verify that the connection is working, "
+"click the '%test' button."
+msgstr "不需更多其他设置。要确认连接是否起作用，请单击 %test 按钮。"
+
+#: AutoControls.src#STR_ORACLE_DATABASE_NAME.string.text
+msgid "Name of the Oracle database"
+msgstr "Oracle 数据库的名称"
+
+#: AutoControls.src#STR_THUNDERBIRD_PROFILE_NAME.string.text
+msgid "~Thunderbird profile name"
+msgstr "~Thunderbird 配置文件名称"
+
+#: AutoControls_tmpl.hrc#CB_AUTOHEADER.checkbox.text
+msgid "~Text contains headers"
+msgstr "文本包含页眉(~T)"
+
+#: AutoControls_tmpl.hrc#AUTO_CHARSET__AUTO_Y__AUTOPAGE_X__.FL_DATACONVERT.fixedline.text
+msgid "Data conversion"
+msgstr "数据转换"
+
+#: AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP_AUTO_Y_AUTOPAGE_X_.FL_AUTOSEPARATOR2.fixedline.text
+msgid "Row Format"
+msgstr "行格式"
+
+#: AutoControls_tmpl.hrc#AUTO_BASEDNCONTROLGROUP_AUTO_Y__AUTO_HID_.FT_AUTOBASEDN.fixedtext.text
+msgid "Base ~DN"
+msgstr "基本 ~DN"
+
+#: AutoControls_tmpl.hrc#AUTO_CHARSET__AUTO_Y__AUTOPAGE_X__.FT_CHARSET.fixedtext.text
+msgid "~Character set"
+msgstr "字符集(~C)"
+
+#: AutoControls_tmpl.hrc#AUTO_HOSTCONTROLGROUP_AUTO_Y__AUTO_HID_.FT_AUTOHOSTNAME.fixedtext.text
+msgid "Server"
+msgstr "服务器"
+
+#: AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP_AUTO_Y__AUTO_HID__AUTO_HID2_.FT_AUTOJDBCDRIVERCLASS.fixedtext.text
+msgid "JDBC d~river class"
+msgstr "JDBC 驱动程序类(~R)"
+
+#: AutoControls_tmpl.hrc#AUTO_NAMECONTROLGROUP_AUTO_Y__AUTO_HID_.FT_AUTODATABASENAME.fixedtext.text
+msgid "Database name"
+msgstr "数据库名称"
+
+#: AutoControls_tmpl.hrc#AUTO_PORTCONTROLGROUP_AUTO_Y__AUTO_HID_.FT_AUTOPORTNUMBER.fixedtext.text
+msgctxt "AutoControls_tmpl.hrc#AUTO_PORTCONTROLGROUP_AUTO_Y__AUTO_HID_.FT_AUTOPORTNUMBER.fixedtext.text"
+msgid "~Port number"
+msgstr "端口号(~P)"
+
+#: AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP_AUTO_Y_AUTOPAGE_X_.FT_AUTODECIMALSEPARATOR.fixedtext.text
+msgid "Decimal separator"
+msgstr "小数分隔符"
+
+#: AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP_AUTO_Y_AUTOPAGE_X_.FT_AUTOEXTENSIONHEADER.fixedtext.text
+msgid "Specify the type of files you want to access"
+msgstr "指定要访问的文件类型"
+
+#: AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP_AUTO_Y_AUTOPAGE_X_.FT_AUTOFIELDSEPARATOR.fixedtext.text
+msgid "Field separator"
+msgstr "字段分隔符"
+
+#: AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP_AUTO_Y_AUTOPAGE_X_.FT_AUTOOWNEXTENSIONAPPENDIX.fixedtext.text
+msgid "Custom: *.abc"
+msgstr "自定义：*.abc"
+
+#: AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP_AUTO_Y_AUTOPAGE_X_.FT_AUTOTEXTSEPARATOR.fixedtext.text
+msgid "Text separator"
+msgstr "文本分隔符"
+
+#: AutoControls_tmpl.hrc#AUTO_SOCKETCONTROLGROUP_AUTO_Y_.FT_SOCKET.fixedtext.text
+msgid "Socket"
+msgstr "套接字"
+
+#: AutoControls_tmpl.hrc#FT_AUTOTHOUSANDSSEPARATOR.fixedtext.text
+msgid "Thousands separator"
+msgstr "千位分隔符"
+
+#: AutoControls_tmpl.hrc#AUTO_BROWSECONTROLGROUP__AUTO_X__AUTO_Y__AUTOPAGE_X__AUTO_HID__AUTO_HID2_.PB_AUTOBROWSEURL.pushbutton.text
+msgid "Browse"
+msgstr "浏览"
+
+#: AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP_AUTO_Y__AUTO_HID__AUTO_HID2_.PB_AUTOTESTDRIVERCLASS.pushbutton.text
+msgctxt "AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP_AUTO_Y__AUTO_HID__AUTO_HID2_.PB_AUTOTESTDRIVERCLASS.pushbutton.text"
+msgid "Test class"
+msgstr "测试类"
+
+#: AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP_AUTO_Y_AUTOPAGE_X_.RB_AUTOACCESSCCSVFILES.radiobutton.text
+msgid "'Comma separated value' files (*.csv)"
+msgstr "“值以逗号分割”的文件 (*.csv)"
+
+#: AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP_AUTO_Y_AUTOPAGE_X_.RB_AUTOACCESSCTEXTFILES.radiobutton.text
+msgid "Plain text files (*.txt)"
+msgstr "纯文本文件 (*.txt)"
+
+#: AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP_AUTO_Y_AUTOPAGE_X_.RB_AUTOACCESSOTHERS.radiobutton.text
+msgid "Custom:"
+msgstr "自定义:"
+
+#: AutoControls_tmpl.hrc#STR_AUTODELIMITER_MISSING.string.text
+msgid "#1 must be set."
+msgstr "必须设置 #1。"
+
+#: AutoControls_tmpl.hrc#STR_AUTODELIMITER_MUST_DIFFER.string.text
+msgid "#1 and #2 must be different."
+msgstr "#1 和 #2 不能相同。"
+
+#: AutoControls_tmpl.hrc#STR_AUTOFIELDSEPARATORLIST.string.text
+msgid ";\t59\t,\t44\t:\t58\t{Tab}\t9\t{Space}\t32"
+msgstr ";\t59\t,\t44\t:\t58\t{Tab}\t9\t{Space}\t32"
+
+#: AutoControls_tmpl.hrc#STR_AUTONO_WILDCARDS.string.text
+msgid "Wildcards such as ?,* are not allowed in #1."
+msgstr "#1 中不允许有通配符，如：?、*。"
+
+#: AutoControls_tmpl.hrc#STR_AUTOTEXT_FIELD_SEP_NONE.string.text
+msgid "{None}"
+msgstr "{无}"
+
+#: CollectionView.src#DLG_COLLECTION_VIEW.FT_EXPLORERFILE_FILENAME.fixedtext.text
+msgid "File ~name:"
+msgstr "文件名(~N):"
+
+#: CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_NEWFOLDER.imagebutton.text
+msgctxt "CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_NEWFOLDER.imagebutton.text"
+msgid "-"
+msgstr "-"
+
+#: CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_NEWFOLDER.imagebutton.quickhelptext
+msgid "Create New Directory"
+msgstr "创建新目录!"
+
+#: CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_UP.imagebutton.text
+msgctxt "CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_UP.imagebutton.text"
+msgid "-"
+msgstr "-"
+
+#: CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_UP.imagebutton.quickhelptext
+msgid "Up One Level"
+msgstr "向上一级!"
+
+#: CollectionView.src#DLG_COLLECTION_VIEW.modaldialog.text
+msgctxt "CollectionView.src#DLG_COLLECTION_VIEW.modaldialog.text"
+msgid "Save"
+msgstr "保存"
+
+#: CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_SAVE.pushbutton.text
+msgctxt "CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_SAVE.pushbutton.text"
+msgid "Save"
+msgstr "保存"
+
+#: CollectionView.src#DLG_COLLECTION_VIEW.STR_PATHNAME.string.text
+msgid "~Path:"
+msgstr "路径(~P):"
+
+#: CollectionView.src#STR_ALREADYEXISTOVERWRITE.string.text
+msgid "The file already exists. Overwrite?"
+msgstr "该文件已存在。是否要覆盖？"
+
+#: CollectionView.src#STR_NEW_FOLDER.string.text
+msgid "Folder"
+msgstr "文件夹"
+
+#: ConnectionPage.src#PAGE_CONNECTION.CB_PASSWORD_REQUIRED.checkbox.text
+msgctxt "ConnectionPage.src#PAGE_CONNECTION.CB_PASSWORD_REQUIRED.checkbox.text"
+msgid "Password required"
+msgstr "必须输入密码"
+
+#: ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR1.fixedline.text
+msgctxt "ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR1.fixedline.text"
+msgid "General"
+msgstr "常规"
+
+#: ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR2.fixedline.text
+msgctxt "ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR2.fixedline.text"
+msgid "User authentication"
+msgstr "用户验证"
+
+#: ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR3.fixedline.text
+msgid "JDBC properties"
+msgstr "JDBC 属性"
+
+#: ConnectionPage.src#PAGE_CONNECTION.FT_HOSTNAME.fixedtext.text
+msgctxt "ConnectionPage.src#PAGE_CONNECTION.FT_HOSTNAME.fixedtext.text"
+msgid "~Host name"
+msgstr "主机名(~H)"
+
+#: ConnectionPage.src#PAGE_CONNECTION.FT_JDBCDRIVERCLASS.fixedtext.text
+msgid "~JDBC driver class"
+msgstr "~JDBC 驱动程序类"
+
+#: ConnectionPage.src#PAGE_CONNECTION.FT_USERNAME.fixedtext.text
+msgctxt "ConnectionPage.src#PAGE_CONNECTION.FT_USERNAME.fixedtext.text"
+msgid "~User name"
+msgstr "用户名(~U)"
+
+#: ConnectionPage.src#PAGE_CONNECTION.PB_TESTCONNECTION.pushbutton.text
+msgid "Test Connection"
+msgstr "测试连接"
+
+#: ConnectionPage.src#PAGE_CONNECTION.PB_TESTDRIVERCLASS.pushbutton.text
+msgid "Test Class"
+msgstr "测试类"
+
+#: ConnectionPage.src#STR_CONNECTION_NO_SUCCESS.string.text
+msgid "The connection could not be established."
+msgstr "无法建立连接。"
+
+#: ConnectionPage.src#STR_CONNECTION_SUCCESS.string.text
+msgid "The connection was established successfully."
+msgstr "成功建立连接。"
+
+#: ConnectionPage.src#STR_CONNECTION_TEST.string.text
+msgid "Connection Test"
+msgstr "连接测试"
+
+#: ConnectionPage.src#STR_JDBCDRIVER_NO_SUCCESS.string.text
+msgid "The JDBC driver could not be loaded."
+msgstr "无法加载 JDBC 驱动程序。"
+
+#: ConnectionPage.src#STR_JDBCDRIVER_SUCCESS.string.text
+msgid "The JDBC driver was loaded successfully."
+msgstr "JDBC 驱动程序加载成功。"
+
+#: ConnectionPage.src#STR_MSACCESS_2007_FILTERNAME.string.text
+msgid "MS Access 2007 file"
+msgstr "MS Access 2007 文件"
+
+#: ConnectionPage.src#STR_MSACCESS_FILTERNAME.string.text
+msgid "MS Access file"
+msgstr "MS Access 文件"
+
+#: ConnectionPage.src#STR_NO_ADABASE_DATASOURCES.string.text
+msgid "No Adabas D data sources were found on your system."
+msgstr "未在系统中找到任何 Adabas D 数据源。"
+
+#: RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_DEL.fixedline.text
+msgid "Delete options"
+msgstr "删除的选项"
+
+#: RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_UPD.fixedline.text
+msgid "Update options"
+msgstr "更新选项"
+
+#: RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_FIELDS.fixedline.text
+msgid "Fields involved"
+msgstr "关联字段"
+
+#: RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_TABLES.fixedline.text
+msgid "Tables involved"
+msgstr "关联表格"
+
+#: RelationDlg.src#DLG_REL_PROPERTIES.modaldialog.text
+msgid "Relations"
+msgstr "关系"
+
+#: RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL.radiobutton.text
+msgid "Delete ~cascade"
+msgstr "删除层叠(~C)"
+
+#: RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_DEFAULT.radiobutton.text
+msgctxt "RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_DEFAULT.radiobutton.text"
+msgid "Set ~default"
+msgstr "设置默认值(~D)"
+
+#: RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_NULL.radiobutton.text
+msgctxt "RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_NULL.radiobutton.text"
+msgid "~Set null"
+msgstr "设置null(~S)"
+
+#: RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD.radiobutton.text
+msgid "~Update cascade"
+msgstr "更新层叠(~U)"
+
+#: RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_DEFAULT.radiobutton.text
+msgctxt "RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_DEFAULT.radiobutton.text"
+msgid "Set ~default"
+msgstr "设置默认值(~D)"
+
+#: RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_NULL.radiobutton.text
+msgctxt "RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_NULL.radiobutton.text"
+msgid "~Set null"
+msgstr "设置null(~S)"
+
+#: RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_DEL.radiobutton.text
+msgctxt "RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_DEL.radiobutton.text"
+msgid "~No action"
+msgstr "无操作(~N)"
+
+#: RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_UPD.radiobutton.text
+msgctxt "RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_UPD.radiobutton.text"
+msgid "~No action"
+msgstr "无操作(~N)"
+
+#: UserAdmin.src#DLG_PASSWORD.FL_USER.fixedline.text
+msgid "User \"$name$:  $\""
+msgstr "用户 $Name:  $"
+
+#: UserAdmin.src#TAB_PAGE_USERADMIN.FL_TABLE_GRANTS.fixedline.text
+msgid "Access rights for selected user"
+msgstr "用于已经选中使用者的使用权限"
+
+#: UserAdmin.src#TAB_PAGE_USERADMIN.FL_USER.fixedline.text
+msgid "User selection"
+msgstr "使用者选择"
+
+#: UserAdmin.src#DLG_PASSWORD.FT_OLDPASSWORD.fixedtext.text
+msgid "Old p~assword"
+msgstr "旧密码(~A)"
+
+#: UserAdmin.src#DLG_PASSWORD.FT_PASSWORD.fixedtext.text
+msgid "~Password"
+msgstr "密码(~P)"
+
+#: UserAdmin.src#DLG_PASSWORD.FT_PASSWORD_REPEAT.fixedtext.text
+msgid "~Confirm  password"
+msgstr "确认密码(~C)"
+
+#: UserAdmin.src#TAB_PAGE_USERADMIN.FT_USER.fixedtext.text
+msgid "Us~er:"
+msgstr "使用者(~E)："
+
+#: UserAdmin.src#DLG_PASSWORD.modaldialog.text
+msgid "Change Password"
+msgstr "修改密码"
+
+#: UserAdmin.src#TAB_PAGE_USERADMIN.PB_CHANGEPWD.pushbutton.text
+msgid "Change ~Password..."
+msgstr "修改密码(~P)..."
+
+#: UserAdmin.src#TAB_PAGE_USERADMIN.PB_DELETEUSER.pushbutton.text
+msgid "~Delete User..."
+msgstr "删除使用者(~D)..."
+
+#: UserAdmin.src#TAB_PAGE_USERADMIN.PB_NEWUSER.pushbutton.text
+msgid "~Add User..."
+msgstr "新增使用者(~A)..."
+
+#: UserAdmin.src#QUERY_USERADMIN_DELETE_USER.querybox.text
+msgid "Do you really want to delete the user?"
+msgstr "您真的要删除这个使用者？"
+
+#: UserAdmin.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.string.text
+msgid "The passwords do not match. Please enter the password again."
+msgstr "这两个密码不一致，请重新输入密码！"
+
+#: UserAdmin.src#STR_USERADMIN_NOT_AVAILABLE.string.text
+msgid "The database does not support user administration."
+msgstr "数据库不支持用户管理。"
+
+#: UserAdminDlg.src#DLG_DATABASE_USERADMIN.STR_PAGETITLE_USERADMIN.string.text
+msgid "User Settings"
+msgstr "用户设置"
+
+#: UserAdminDlg.src#DLG_DATABASE_USERADMIN.tabdialog.text
+msgid "User administration"
+msgstr "用户管理"
+
+#: admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_HOST_NAME.fixedtext.text
+msgid "~Server"
+msgstr "服务器(~S)"
+
+#: admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT.fixedtext.text
+msgid "~Port"
+msgstr "端口(~P)"
+
+#: admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT_DEFAULT.fixedtext.text
+msgctxt "admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT_DEFAULT.fixedtext.text"
+msgid "Default: 3306"
+msgstr "默认值：3306"
+
+#: admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_MYSQL_DATABASE_NAME.fixedtext.text
+msgid "~Database name"
+msgstr "数据库名称(~D)"
+
+#: admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_HOST_PORT.radiobutton.text
+msgid "Se~rver / Port"
+msgstr "服务器/端口(~R)"
+
+#: admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_NAMED_PIPE.radiobutton.text
+msgid "Named p~ipe"
+msgstr "已命名的 pipe(~I)"
+
+#: admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_SOCKET.radiobutton.text
+msgid "So~cket"
+msgstr "套接字(~C)"
+
+#: adtabdlg.src#DLG_JOIN_TABADD.PB_CLOSE.cancelbutton.text
+msgctxt "adtabdlg.src#DLG_JOIN_TABADD.PB_CLOSE.cancelbutton.text"
+msgid "~Close"
+msgstr "关闭(~C)"
+
+#: adtabdlg.src#DLG_JOIN_TABADD.PB_ADDTABLE.pushbutton.text
+msgid "~Add"
+msgstr "新增(~A)"
+
+#: adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_QUERIES.radiobutton.text
+msgid "Queries"
+msgstr "查询"
+
+#: adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_TABLES.radiobutton.text
+msgid "Tables"
+msgstr "表格"
+
+#: adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLES.string.text
+msgid "Add Tables"
+msgstr "添加表格"
+
+#: adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLE_OR_QUERY.string.text
+msgid "Add Table or Query"
+msgstr "添加表格或查询"
+
+#: advancedsettings.src#AUTO_APPENDTABLEALIAS_AUTO_Y_.CB_APPENDTABLEALIAS.checkbox.text
+msgid "Append the table alias name on SELECT statements"
+msgstr "在 SELECT 语句中追加表格别名"
+
+#: advancedsettings.src#AUTO_AS_BEFORE_CORR_NAME_AUTO_Y_.CB_AS_BEFORE_CORR_NAME.checkbox.text
+msgid "Use keyword AS before table alias names"
+msgstr "在表格别名之前使用关键字 AS"
+
+#: advancedsettings.src#AUTO_CATALOG_AUTO_Y_.CB_CATALOG.checkbox.text
+msgid "Use catalog name in SELECT statements"
+msgstr "在 SELECT 语句中使用类别名称"
+
+#: advancedsettings.src#AUTO_CHECKREQUIRED_AUTO_Y_.CB_CHECK_REQUIRED.checkbox.text
+msgid "Form data input checks for required fields"
+msgstr "表格必填字段数据输入检查"
+
+#: advancedsettings.src#AUTO_DOSLINEENDS_AUTO_Y_.CB_DOSLINEENDS.checkbox.text
+msgid "End text lines with CR+LF"
+msgstr "使用 CR+LF 结束文本行"
+
+#: advancedsettings.src#AUTO_ENABLEOUTERJOIN_AUTO_Y_.CB_ENABLEOUTERJOIN.checkbox.text
+msgid "Use Outer Join syntax '{OJ }'"
+msgstr "使用外部连接语法 {OJ }"
+
+#: advancedsettings.src#AUTO_ESCAPE_DATETIME_AUTO_Y_.CB_ESCAPE_DATETIME.checkbox.text
+msgid "Use ODBC conformant date/time literals"
+msgstr "使用 ODBC 日期/时间统一格式"
+
+#: advancedsettings.src#AUTO_IGNORECURRENCY_AUTO_Y_.CB_IGNORECURRENCY.checkbox.text
+msgid "Ignore currency field information"
+msgstr "忽略货币字段信息"
+
+#: advancedsettings.src#AUTO_IGNOREDRIVER_PRIV_AUTO_Y_.CB_IGNOREDRIVER_PRIV.checkbox.text
+msgid "Ignore the privileges from the database driver"
+msgstr "忽略数据库驱动程序的权限"
+
+#: advancedsettings.src#AUTO_IGNOREINDEXAPPENDIX_AUTO_Y_.CB_IGNOREINDEXAPPENDIX.checkbox.text
+msgid "Create index with ASC or DESC statement"
+msgstr "使用 ASC 或 DESC 语句创建索引"
+
+#: advancedsettings.src#AUTO_PARAMETERNAMESUBST_AUTO_Y_.CB_PARAMETERNAMESUBST.checkbox.text
+msgid "Replace named parameters with '?'"
+msgstr "用 ? 替换已命名的参数"
+
+#: advancedsettings.src#AUTO_PRIMARY_KEY_SUPPORT_AUTO_Y_.CB_PRIMARY_KEY_SUPPORT.checkbox.text
+msgid "Supports primary keys"
+msgstr "支持主键"
+
+#: advancedsettings.src#AUTO_RESPECTRESULTSETTYPE_AUTO_Y_.CB_RESPECTRESULTSETTYPE.checkbox.text
+msgid "Respect the result set type from the database driver"
+msgstr "遵守来自数据库驱动的结果集类型"
+
+#: advancedsettings.src#AUTO_SCHEMA_AUTO_Y_.CB_SCHEMA.checkbox.text
+msgid "Use schema name in SELECT statements"
+msgstr "在 SELECT 语句中使用架构名称"
+
+#: advancedsettings.src#AUTO_SQL92CHECK_AUTO_Y_.CB_SQL92CHECK.checkbox.text
+msgid "Use SQL92 naming constraints"
+msgstr "使用 SQL92 命名限制"
+
+#: advancedsettings.src#AUTO_SUPPRESVERSIONCOLUMN_AUTO_Y_.CB_SUPPRESVERSIONCL.checkbox.text
+msgid "Display version columns (when available)"
+msgstr "显示版本列（如果可以）"
+
+#: advancedsettings.src#PAGE_GENERATED_VALUES.CB_RETRIEVE_AUTO.checkbox.text
+msgid "Re~trieve generated values"
+msgstr "检索生成的值(~T)"
+
+#: advancedsettings.src#AUTO_DATAHANDLING_AUTO_Y_.FL_DATAHANDLING.fixedline.text
+msgid "Options"
+msgstr "选项"
+
+#: advancedsettings.src#PAGE_GENERATED_VALUES.FL_SEPARATORAUTO.fixedline.text
+msgid "Settings"
+msgstr "设置"
+
+#: advancedsettings.src#AUTO_BOOLEANCOMPARISON_AUTO_Y_.FT_BOOLEANCOMPARISON.fixedtext.text
+msgid "Comparison of Boolean values"
+msgstr "比较布尔值"
+
+#: advancedsettings.src#AUTO_MAXROWSCAN_AUTO_Y_.FT_MAXROWSCAN.fixedtext.text
+msgid "Rows to scan column types"
+msgstr "扫描列类型的行"
+
+#: advancedsettings.src#PAGE_GENERATED_VALUES.FT_AUTOINCREMENTVALUE.fixedtext.text
+msgid "~Auto-increment statement"
+msgstr "自动递增语句(~A)"
+
+#: advancedsettings.src#PAGE_GENERATED_VALUES.FT_RETRIEVE_AUTO.fixedtext.text
+msgid "~Query of generated values"
+msgstr "查询生成的值(~Q)"
+
+#: advancedsettings.src#DLG_DATABASE_ADVANCED.STR_DS_BEHAVIOUR.string.text
+msgid "Special Settings"
+msgstr "特殊设置"
+
+#: advancedsettings.src#DLG_DATABASE_ADVANCED.STR_GENERATED_VALUE.string.text
+msgid "Generated Values"
+msgstr "生成值"
+
+#: advancedsettings.src#WORKAROUND.1.stringlist.text
+msgid "Default"
+msgstr "默认"
+
+#: advancedsettings.src#WORKAROUND.2.stringlist.text
+msgid "SQL"
+msgstr "SQL"
+
+#: advancedsettings.src#WORKAROUND.3.stringlist.text
+msgid "Mixed"
+msgstr "混合"
+
+#: advancedsettings.src#WORKAROUND.4.stringlist.text
+msgid "MS Access"
+msgstr "MS Access"
+
+#: advancedsettings.src#DLG_DATABASE_ADVANCED.tabdialog.text
+msgid "Advanced Settings"
+msgstr "高级设置"
+
+#: dbadmin.src#AUTO_USECATALOG_AUTO_Y_.CB_USECATALOG.checkbox.text
+msgid "Use catalog for file-based databases"
+msgstr "对基于文件的数据库使用类别"
+
+#: dbadmin.src#PAGE_ADABAS.CB_SHUTDB.checkbox.text
+msgid "~Shut down service when closing %PRODUCTNAME"
+msgstr "关闭 %PRODUCTNAME 时停止服务(~S)"
+
+#: dbadmin.src#PAGE_DBASE.CB_SHOWDELETEDROWS.checkbox.text
+msgid "Display deleted records as well"
+msgstr "同时显示已删除的记录"
+
+#: dbadmin.src#PAGE_LDAP.CB_USESSL.checkbox.text
+msgid "Use secure connection(SSL)"
+msgstr "使用安全连接 (SSL)"
+
+#: dbadmin.src#PAGE_MYSQL_NATIVE.CB_PASSWORD_REQUIRED.checkbox.text
+msgctxt "dbadmin.src#PAGE_MYSQL_NATIVE.CB_PASSWORD_REQUIRED.checkbox.text"
+msgid "Password required"
+msgstr "必须输入密码"
+
+#: dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS_AUTO_Y_.FL_SEPARATOR1.fixedline.text
+msgctxt "dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS_AUTO_Y_.FL_SEPARATOR1.fixedline.text"
+msgid "Connection Settings"
+msgstr "连接设置"
+
+#: dbadmin.src#PAGE_ADABAS.FL_SEPARATOR1.fixedline.text
+msgctxt "dbadmin.src#PAGE_ADABAS.FL_SEPARATOR1.fixedline.text"
+msgid "Connection Settings"
+msgstr "连接设置"
+
+#: dbadmin.src#PAGE_ADABAS.FL_SEPARATOR2.fixedline.text
+msgid "Administration"
+msgstr "管理"
+
+#: dbadmin.src#PAGE_DBASE.FL_SEPARATOR1.fixedline.text
+msgid "Optional settings"
+msgstr "可选设置"
+
+#: dbadmin.src#PAGE_LDAP.FL_SEPARATOR1.fixedline.text
+msgctxt "dbadmin.src#PAGE_LDAP.FL_SEPARATOR1.fixedline.text"
+msgid "Connection Settings"
+msgstr "连接设置"
+
+#: dbadmin.src#PAGE_MYSQL_NATIVE.FL_SEPARATOR2.fixedline.text
+msgctxt "dbadmin.src#PAGE_MYSQL_NATIVE.FL_SEPARATOR2.fixedline.text"
+msgid "User authentication"
+msgstr "用户验证"
+
+#: dbadmin.src#PAGE_ODBC.FL_SEPARATOR1.fixedline.text
+msgid "Optional Settings"
+msgstr "可选设置"
+
+#: dbadmin.src#AUTO_HOST_AND_PORT_AUTO_Y_.FT_HOSTNAME.fixedtext.text
+msgctxt "dbadmin.src#AUTO_HOST_AND_PORT_AUTO_Y_.FT_HOSTNAME.fixedtext.text"
+msgid "~Host name"
+msgstr "主机名(~H)"
+
+#: dbadmin.src#AUTO_HOST_AND_PORT_AUTO_Y_.FT_PORTNUMBER.fixedtext.text
+msgctxt "dbadmin.src#AUTO_HOST_AND_PORT_AUTO_Y_.FT_PORTNUMBER.fixedtext.text"
+msgid "~Port number"
+msgstr "端口号(~P)"
+
+#: dbadmin.src#PAGE_ADABAS.FT_CACHE_SIZE.fixedtext.text
+msgid "Data ~buffer size (MB)"
+msgstr "数据缓冲区大小 (M~B)"
+
+#: dbadmin.src#PAGE_ADABAS.FT_CTRLPASSWORD.fixedtext.text
+msgid "Control ~password"
+msgstr "控件密码(~P)"
+
+#: dbadmin.src#PAGE_ADABAS.FT_CTRLUSERNAME.fixedtext.text
+msgid "Control ~user name"
+msgstr "控件用户名(~U)"
+
+#: dbadmin.src#PAGE_ADABAS.FT_DATA_INCREMENT.fixedtext.text
+msgid "~Data increment (MB)"
+msgstr "数据增量 (MB)(~D)"
+
+#: dbadmin.src#PAGE_ADABAS.FT_HOSTNAME.fixedtext.text
+msgctxt "dbadmin.src#PAGE_ADABAS.FT_HOSTNAME.fixedtext.text"
+msgid "~Host name"
+msgstr "主机名(~H)"
+
+#: dbadmin.src#PAGE_DBASE.FT_SPECIAL_MESSAGE.fixedtext.text
+msgid ""
+"Note: When deleted, and thus inactive, records are  displayed, you will not "
+"be able to delete records from the data source."
+msgstr "注意：记录删除后将处于非活动状态，并仍将显示，无法从数据源中将其删除。"
+
+#: dbadmin.src#PAGE_GENERAL.FT_DATASOURCEHEADER.fixedtext.text
+msgid "What do you want to do?"
+msgstr "您想做什么？"
+
+#: dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.fixedtext.text
+msgid ""
+"On the following pages, you can make detailed settings for the connection.\n"
+"\n"
+"The new settings you make will overwrite your existing settings."
+msgstr ""
+"在后续页面中，您可以对连接进行详细设置。\n"
+"\n"
+"所做的新设置将覆盖现有设置。"
+
+#: dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_PRE.fixedtext.text
+msgid ""
+"Select the type of database to which you want to establish a connection."
+msgstr "选择要建立连接的数据库的类型。"
+
+#: dbadmin.src#PAGE_GENERAL.FT_DATATYPE.fixedtext.text
+msgid "Database ~type "
+msgstr "数据库类型 (~T)"
+
+#: dbadmin.src#PAGE_GENERAL.FT_DATATYPEAPPENDIX.fixedtext.text
+msgid "Database"
+msgstr "数据库"
+
+#: dbadmin.src#PAGE_GENERAL.FT_DOCLISTLABEL.fixedtext.text
+msgid "Recently used"
+msgstr "最近使用的"
+
+#: dbadmin.src#PAGE_GENERAL.FT_GENERALHEADERTEXT.fixedtext.text
+msgid "Welcome to the %PRODUCTNAME Database Wizard"
+msgstr "欢迎使用 %PRODUCTNAME 数据库向导"
+
+#: dbadmin.src#PAGE_GENERAL.FT_GENERALHELPTEXT.fixedtext.text
+msgid ""
+"Use the Database Wizard to create a new database, open an existing database "
+"file, or connect to a database stored on a server."
+msgstr "使用“数据库向导”创建一个新的数据库、打开现有的数据库文件或连接到已存储在服务器上的数据库。"
+
+#: dbadmin.src#PAGE_LDAP.FT_BASEDN.fixedtext.text
+msgid "~Base DN"
+msgstr "~Base DN"
+
+#: dbadmin.src#PAGE_LDAP.FT_LDAPROWCOUNT.fixedtext.text
+msgid "Maximum number of ~records"
+msgstr "最大记录数(~R)"
+
+#: dbadmin.src#PAGE_LDAP.FT_PORTNUMBER.fixedtext.text
+msgctxt "dbadmin.src#PAGE_LDAP.FT_PORTNUMBER.fixedtext.text"
+msgid "~Port number"
+msgstr "端口号码(~P)"
+
+#: dbadmin.src#PAGE_MYSQL_JDBC.FT_JDBCDRIVERCLASS.fixedtext.text
+msgid "MySQL JDBC d~river class"
+msgstr "MySQL JDBC 驱动程序类(~R)"
+
+#: dbadmin.src#PAGE_MYSQL_NATIVE.FT_USERNAME.fixedtext.text
+msgctxt "dbadmin.src#PAGE_MYSQL_NATIVE.FT_USERNAME.fixedtext.text"
+msgid "~User name"
+msgstr "用户名(~U)"
+
+#: dbadmin.src#PAGE_ODBC.FT_OPTIONS.fixedtext.text
+msgid "ODBC ~options"
+msgstr "ODBC 选项(~O)"
+
+#: dbadmin.src#PAGE_ORACLE_JDBC.FT_JDBCDRIVERCLASS.fixedtext.text
+msgid "Oracle JDBC d~river class"
+msgstr "Oracle JDBC 驱动程序类(~R)"
+
+#: dbadmin.src#PAGE_USERDRIVER.FT_HOSTNAME.fixedtext.text
+msgid "~Hostname"
+msgstr "主机名(~H)"
+
+#: dbadmin.src#PAGE_USERDRIVER.FT_OPTIONS.fixedtext.text
+msgid "~Driver settings"
+msgstr "驱动程序设置(~D)"
+
+#: dbadmin.src#PAGE_USERDRIVER.FT_PORTNUMBER.fixedtext.text
+msgctxt "dbadmin.src#PAGE_USERDRIVER.FT_PORTNUMBER.fixedtext.text"
+msgid "~Port number"
+msgstr "端口号(~P)"
+
+#: dbadmin.src#DLG_DATABASE_TYPE_CHANGE.modaldialog.text
+msgctxt "dbadmin.src#DLG_DATABASE_TYPE_CHANGE.modaldialog.text"
+msgid "Database properties"
+msgstr "数据库属性"
+
+#: dbadmin.src#PAGE_ADABAS.PB_STAT.pushbutton.text
+msgid "E~xtended..."
+msgstr "扩展(~X)..."
+
+#: dbadmin.src#PAGE_DBASE.PB_INDICIES.pushbutton.text
+msgid "Indexes..."
+msgstr "标志..."
+
+#: dbadmin.src#PAGE_MYSQL_JDBC.PB_TESTDRIVERCLASS.pushbutton.text
+msgctxt "dbadmin.src#PAGE_MYSQL_JDBC.PB_TESTDRIVERCLASS.pushbutton.text"
+msgid "Test class"
+msgstr "测试类"
+
+#: dbadmin.src#PAGE_ORACLE_JDBC.PB_TESTDRIVERCLASS.pushbutton.text
+msgctxt "dbadmin.src#PAGE_ORACLE_JDBC.PB_TESTDRIVERCLASS.pushbutton.text"
+msgid "Test class"
+msgstr "测试类"
+
+#: dbadmin.src#PAGE_GENERAL.RB_CREATEDBDATABASE.radiobutton.text
+msgid "Create a n~ew database"
+msgstr "新建数据库(~E)"
+
+#: dbadmin.src#PAGE_GENERAL.RB_GETEXISTINGDATABASE.radiobutton.text
+msgid "Connect to an e~xisting database"
+msgstr "连接到现有数据库(~X)"
+
+#: dbadmin.src#PAGE_GENERAL.RB_OPENEXISTINGDOC.radiobutton.text
+msgid "Open an existing database ~file"
+msgstr "打开一个现有的数据库文件(~F)"
+
+#: dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_ADVANCED.string.text
+msgid "Additional Settings"
+msgstr "其他设置"
+
+#: dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_CONNECTION.string.text
+msgid "Connection settings"
+msgstr "连接设置"
+
+#: dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_GENERAL.string.text
+msgid "Advanced Properties"
+msgstr "高级属性"
+
+#: dbadmin.src#PAGE_GENERAL.STR_COULDNOTLOAD_ODBCLIB.string.text
+msgid ""
+"Could not load the program library #lib# or it is corrupted. The ODBC data "
+"source selection is not available."
+msgstr "无法装入程序库 #lib# 或已经损坏。无法选择 ODBC 数据源。"
+
+#: dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.string.text
+msgid "MySQL"
+msgstr "MySQL"
+
+#: dbadmin.src#PAGE_GENERAL.STR_PARENTTITLE.string.text
+msgid "Data Source Properties: #"
+msgstr "数据源属性:#"
+
+#: dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.string.text
+msgid ""
+"This kind of data source is not supported on this platform.\n"
+"You are allowed to change the settings, but you probably will not be able to "
+"connect to the database."
+msgstr ""
+"这个操作系统不支持这个数据库类型。\n"
+"您可以修改设置，但是可能无法和一个数据库建立连接。"
+
+#: dbadmin.src#STR_ERR_USE_CONNECT_TO.string.text
+msgid ""
+"Please choose 'Connect to an existing database' to connect to an existing "
+"database instead."
+msgstr "请选择“连接到一个已经存在的数据库”以改为连接到一个已经存在的数据库。"
+
+#: dbadmin.src#DLG_DATABASE_ADMINISTRATION.tabdialog.text
+msgctxt "dbadmin.src#DLG_DATABASE_ADMINISTRATION.tabdialog.text"
+msgid "Database properties"
+msgstr "数据库属性"
+
+#: dbadmin.src#PAGE_GENERAL.tabpage.text
+msgctxt "dbadmin.src#PAGE_GENERAL.tabpage.text"
+msgid "General"
+msgstr "常规"
+
+#: dbadmin2.src#DLG_DOMAINPASSWORD.FT_PASSWORD.fixedline.text
+msgid "Please enter the ~password for the user 'DOMAIN'."
+msgstr "请为使用者 'DOMAIN' 输入密码(~P)。"
+
+#: dbadmin2.src#PAGE_TABLESUBSCRIPTION.FL_SEPARATOR1.fixedline.text
+msgid "Tables and table filter"
+msgstr "表格和表格过滤器"
+
+#: dbadmin2.src#PAGE_TABLESUBSCRIPTION.FT_FILTER_EXPLANATION.fixedtext.text
+msgid "Mark the tables that should be visible for the applications."
+msgstr "标记允许应用程序访问的表格。"
+
+#: dbadmin2.src#DLG_DOMAINPASSWORD.modaldialog.text
+msgid "Convert Database"
+msgstr "转换数据库"
+
+#: dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.string.text
+msgid ""
+"The directory\n"
+"\n"
+"$path$\n"
+"\n"
+"does not exist. Should it be created?"
+msgstr ""
+"这个目录\n"
+"\n"
+"$path$\n"
+"\n"
+"不存在。要新建这个目录？"
+
+#: dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.string.text
+msgid "The directory $name$ could not be created."
+msgstr "无法创建目录 $name$ 。"
+
+#: dbadmin2.src#STR_ENTER_CONNECTION_PASSWORD.string.text
+msgid "A password is needed to connect to the data source \"$name$\"."
+msgstr "读取数据源 \"$name$\" 要求您输入密码。"
+
+#: dbadmin2.src#PAGE_TABLESUBSCRIPTION.tabpage.text
+msgid "Tables Filter"
+msgstr "表格过滤器"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.CB_GENERALPASSWORDREQUIRED.checkbox.text
+msgid "Password re~quired"
+msgstr "需要输入密码(~Q)"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_OPENAFTERWARDS.checkbox.text
+msgid "Open the database for editing"
+msgstr "打开数据库进行编辑"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_STARTTABLEWIZARD.checkbox.text
+msgid "Create tables using the table wizard"
+msgstr "使用表格向导创建表格"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_LDAP.CB_WIZ_USESSL.checkbox.text
+msgid "Use ~secure connection (SSL)"
+msgstr "使用安全连接 (~SSL)"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.CB_SPREADSHEETPASSWORDREQUIRED.checkbox.text
+msgid "~Password required"
+msgstr "需要输入密码(~P)"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHEADERTEXT.fixedtext.text
+msgid "Set up the user authentication"
+msgstr "设置用户验证"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHELPTEXT.fixedtext.text
+msgid "Some databases require you to enter a user name."
+msgstr "某些数据库需要您输入用户名。"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_GENERALUSERNAME.fixedtext.text
+msgctxt "dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_GENERALUSERNAME.fixedtext.text"
+msgid "~User name"
+msgstr "用户名(~U)"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_ADDITIONALSETTINGS.fixedtext.text
+msgid "After the database file has been saved, what do you want to do?"
+msgstr "保存数据库文件后，您想做什么？"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHEADER.fixedtext.text
+msgid "Decide how to proceed after saving the database"
+msgstr "确定在保存数据库后继续执行何种操作"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHELPTEXT.fixedtext.text
+msgid "Do you want the wizard to register the database in %PRODUCTNAME?"
+msgstr "是否要向导在 %PRODUCTNAME 中注册数据库？"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALTEXT.fixedtext.text
+msgid "Click 'Finish' to save the database."
+msgstr "单击“完成”以保存数据库。"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HEADERTEXT.fixedtext.text
+msgid "Set up a connection to an LDAP directory"
+msgstr "设置一个到 LDAP 目录的连接"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.fixedtext.text
+msgid ""
+"Please enter the required information to connect to an LDAP directory.\n"
+"Please contact your system administrator if you are unsure about the "
+"following settings."
+msgstr ""
+"请输入连接到 LDAP 目录时所需的信息。\n"
+"如果不确定以下设置是否正确，请联系您的系统管理员。"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.fixedtext.text
+msgid "How do you want to connect to your MySQL database?"
+msgstr "您想如何连接到 MySQL 数据库？"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HEADERTEXT.fixedtext.text
+msgid "Set up a connection to a MySQL database"
+msgstr "设置一个到 MySQL 数据库的连接。"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.fixedtext.text
+msgid ""
+"You can connect to a MySQL database using either ODBC or JDBC.\n"
+"Please contact your system administrator if you are unsure about the "
+"following settings."
+msgstr ""
+"可使用 ODBC 或 JDBC 连接到 MySQL 数据库。\n"
+"如果不确定以下设置是否正确，请联系您的系统管理员。"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HEADER.fixedtext.text
+msgid "Set up connection to a MySQL database"
+msgstr "设置一个到 MySQL 数据库的连接"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HELP.fixedtext.text
+msgid "Please enter the required information to connect to a MySQL database."
+msgstr "请输入连接到 MySQL 数据库所需的信息。"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.modaldialog.text
+msgctxt "dbadminsetup.src#DLG_DATABASE_WIZARD.modaldialog.text"
+msgid "Database Wizard"
+msgstr "数据库向导"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.PB_TESTCONNECTION.pushbutton.text
+msgid "~Test Connection"
+msgstr "测试连接(~T)"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_DONTREGISTERDATASOURCE.radiobutton.text
+msgid "N~o, do not register the database"
+msgstr "否，请不要注册数据库(~O)"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_REGISTERDATASOURCE.radiobutton.text
+msgid "~Yes, register the database for me"
+msgstr "是，请为我注册数据库(~Y)"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAJDBC.radiobutton.text
+msgid "Connect using JDBC (Java Database Connectivity)"
+msgstr "使用 JDBC（Java 数据库连接）连接"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIANATIVE.radiobutton.text
+msgid "Connect directly"
+msgstr "直接连接"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAODBC.radiobutton.text
+msgid "Connect using ODBC (Open Database Connectivity)"
+msgstr "使用 ODBC（开放式数据库连接）连接"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_DBWIZARDTITLE.string.text
+msgctxt "dbadminsetup.src#DLG_DATABASE_WIZARD.STR_DBWIZARDTITLE.string.text"
+msgid "Database Wizard"
+msgstr "数据库向导"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADABAS.string.text
+msgid "Set up Adabas D connection"
+msgstr "设置 Adabas D 连接"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADO.string.text
+msgid "Set up ADO connection"
+msgstr "设置 ADO 连接"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_AUTHENTIFICATION.string.text
+msgid "Set up user authentication"
+msgstr "设置用户验证"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_DBASE.string.text
+msgid "Set up dBASE connection"
+msgstr "设置 dBASE 连接"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_FINAL.string.text
+msgid "Save and proceed"
+msgstr "保存并继续操作"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_INTROPAGE.string.text
+msgid "Select database"
+msgstr "选择数据库"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_JDBC.string.text
+msgid "Set up JDBC connection"
+msgstr "设置 JDBC 连接"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_LDAP.string.text
+msgid "Set up LDAP connection"
+msgstr "设置 LDAP 连接"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MSACCESS.string.text
+msgid "Set up Microsoft Access connection"
+msgstr "设置 Microsoft Access 连接"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL.string.text
+msgid "Set up MySQL connection"
+msgstr "设置 MySQL 连接"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL_NATIVE.string.text
+msgid "Set up MySQL server data"
+msgstr "设置 MySQL 服务器数据"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ODBC.string.text
+msgid "Set up ODBC connection"
+msgstr "设置 ODBC 连接"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ORACLE.string.text
+msgid "Set up Oracle database connection"
+msgstr "设置 Oracle 数据库连接"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_SPREADSHEET.string.text
+msgid "Set up Spreadsheet connection"
+msgstr "设置电子表格连接"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_TEXT.string.text
+msgctxt "dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_TEXT.string.text"
+msgid "Set up a connection to text files"
+msgstr "设置一个到文本文件的连接"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HEADERTEXT.string.text
+msgid "Set up a connection to an Adabas D database"
+msgstr "设置一个到 Adabas D 数据库的连接"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.string.text
+msgid ""
+"Enter the name of the Adabas D database you want to connect to.\n"
+"Click 'Browse...' to select an Adabas D database that is already registered "
+"in %PRODUCTNAME."
+msgstr ""
+"输入要连接的 Adabas D 数据库的名称。\n"
+"单击“浏览...”选择一个已在 %PRODUCTNAME 中注册的 Adabas D 数据库。"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.string.text
+msgid "Set up a connection to an ADO database"
+msgstr "设置一个到 ADO 数据库的连接"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.string.text
+msgid ""
+"Please enter the URL of the ADO data source you want to connect to.\n"
+"Click 'Browse' to configure provider-specific settings.\n"
+"Please contact your system administrator if you are unsure about the "
+"following settings."
+msgstr ""
+"请输入要连接的 ADO 数据源的 URL。\n"
+"单击“浏览”以配置特定于提供商的设置。\n"
+"如果不确定以下设置是否正确，请联系您的系统管理员。"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HEADERTEXT.string.text
+msgid "Set up a connection to dBASE files"
+msgstr "设置一个到 dBASE 文件的连接"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HELPTEXT.string.text
+msgid "Select the folder where the dBASE files are stored."
+msgstr "选择保存 dBASE 文件的文件夹。"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.string.text
+msgid "Set up a connection to a JDBC database"
+msgstr "设置一个到 JDBC 数据库的连接。"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.string.text
+msgid ""
+"Please enter the required information to connect to a JDBC database.\n"
+"Please contact your system administrator if you are unsure about the "
+"following settings."
+msgstr ""
+"请输入连接到 JDBC 数据库所需的信息。\n"
+"如果不确定以下设置是否正确，请联系您的系统管理员。"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.string.text
+msgid "Default: 389"
+msgstr "默认值: 389"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HEADERTEXT.string.text
+msgid "Set up a connection to a Microsoft Access database"
+msgstr "设置一个到 Microsoft Access 数据库的连接"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HELPTEXT.string.text
+msgid "Please select the Microsoft Access file you want to access."
+msgstr "请选择要访问的 Microsoft Access 文件。"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HEADERTEXT.string.text
+msgid "Set up connection to a MySQL database using JDBC"
+msgstr "使用 JDBC 设置到 MySQL 数据库的连接"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.string.text
+msgid ""
+"Please enter the required information to connect to a MySQL database using "
+"JDBC. Note that a JDBC driver class must be installed on your system and "
+"registered with %PRODUCTNAME.\n"
+"Please contact your system administrator if you are unsure about the "
+"following settings."
+msgstr ""
+"请输入使用 JDBC 连接到 MySQL 数据库时所需的信息。请注意，必须已在您的系统上安装 JDBC 驱动程序类，并且将其与 %PRODUCTNAME "
+"䶀同³¨册。\n"
+"如果不确定以下设置是否正确，请联系您的系统管理员。"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DEFAULT.string.text
+msgctxt "dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DEFAULT.string.text"
+msgid "Default: 3306"
+msgstr "默认值: 3306"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.string.text
+msgid "MySQL JDBC d~river class:"
+msgstr "MySQL JDBC 驱动程序类(~R):"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.string.text
+msgid "Set up a connection to an ODBC database"
+msgstr "设置一个到 ODBC 数据库的连接"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.string.text
+msgid ""
+"Enter the name of the ODBC database you want to connect to.\n"
+"Click 'Browse...' to select an ODBC database that is already registered in %"
+"PRODUCTNAME.\n"
+"Please contact your system administrator if you are unsure about the "
+"following settings."
+msgstr ""
+"输入要连接的 ODBC 数据库的名称。\n"
+"单击“浏览...”选择一个已在 %PRODUCTNAME 中注册的 ODBC 数据库。\n"
+"如果不确定以下设置是否正确，请联系您的系统管理员。"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DEFAULT.string.text
+msgid "Default: 1521"
+msgstr "默认值: 1521"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DRIVERCLASSTEXT.string.text
+msgid "Oracle JDBC ~driver class"
+msgstr "Oracle JDBC 驱动程序类(~D)"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.string.text
+msgid "Set up a connection to an Oracle database"
+msgstr "设置一个到 Oracle 数据库的连接。"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.string.text
+msgid ""
+"Please enter the required information to connect to an Oracle database.Note "
+"that a JDBC Driver Class must be installed on your system and registered "
+"with %PRODUCTNAME.\n"
+"Please contact your system administrator if you are unsure about the "
+"following settings."
+msgstr ""
+"请输入连接到 Oracle 数据库所需的信息。请注意，必须已在您的系统上安装“JDBC 驱动程序类”，并且将其与 %PRODUCTNAME 一同注册。\n"
+"如果不确定以下设置是否正确，请联系您的系统管理员。"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.string.text
+msgid "~Location and file name"
+msgstr "位置和文件名(~L)"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.string.text
+msgid "Set up a connection to spreadsheets"
+msgstr "设置一个到电子表格的连接"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.string.text
+msgid ""
+"Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel "
+"workbook.\n"
+"%PRODUCTNAME will open this file in read-only mode."
+msgstr ""
+"单击“浏览...”选择一个 %PRODUCTNAME 电子表格或 Microsoft Excel 工作簿。\n"
+"%PRODUCTNAME 将以只读模式打开此文件。"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HEADERTEXT.string.text
+msgctxt "dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HEADERTEXT.string.text"
+msgid "Set up a connection to text files"
+msgstr "设置一个到文本文件的连接"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HELPTEXT.string.text
+msgid ""
+"Select the folder where the CSV (Comma Separated Values) text files are "
+"stored. %PRODUCTNAME Base will open these files in read-only mode."
+msgstr "选择保存 CSV （逗号分隔值）文本文件的文件夹。%PRODUCTNAME Base将以只读模式打开这些文件。"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_PATH_OR_FILE.string.text
+msgid "Path to text files"
+msgstr "文本文件的路径"
+
+#: dbadminsetup.src#STR_DATABASEDEFAULTNAME.string.text
+msgid "New Database"
+msgstr "新建数据库"
+
+#: dbfindex.src#DLG_DBASE_INDEXES.FL_INDEXES.fixedline.text
+msgid "Assignment"
+msgstr "指定"
+
+#: dbfindex.src#DLG_DBASE_INDEXES.FT_ALLINDEXES.fixedtext.text
+msgid "~Free indexes"
+msgstr "自由标志(~F)"
+
+#: dbfindex.src#DLG_DBASE_INDEXES.FT_TABLEINDEXES.fixedtext.text
+msgid "T~able indexes"
+msgstr "表格标志(~A)"
+
+#: dbfindex.src#DLG_DBASE_INDEXES.FT_TABLES.fixedtext.text
+msgid "~Table"
+msgstr "表格(~T)"
+
+#: dbfindex.src#DLG_DBASE_INDEXES.modaldialog.text
+msgctxt "dbfindex.src#DLG_DBASE_INDEXES.modaldialog.text"
+msgid "Indexes"
+msgstr "标志"
+
+#: directsql.src#DLG_DIRECTSQL.FL_SQL.fixedline.text
+msgid "SQL command"
+msgstr "SQL 命令"
+
+#: directsql.src#DLG_DIRECTSQL.FL_STATUS.fixedline.text
+msgid "Status"
+msgstr "状态"
+
+#: directsql.src#DLG_DIRECTSQL.FT_HISTORY.fixedtext.text
+msgid "Previous commands"
+msgstr "前一个命令"
+
+#: directsql.src#DLG_DIRECTSQL.FT_SQL.fixedtext.text
+msgid "Command to execute"
+msgstr "要执行的命令"
+
+#: directsql.src#DLG_DIRECTSQL.modaldialog.text
+msgid "Execute SQL Statement"
+msgstr "直接执行 SQL 命令"
+
+#: directsql.src#DLG_DIRECTSQL.PB_CLOSE.pushbutton.text
+msgid "Close"
+msgstr "关闭"
+
+#: directsql.src#DLG_DIRECTSQL.PB_EXECUTE.pushbutton.text
+msgid "Execute"
+msgstr "执行"
+
+#: directsql.src#STR_COMMAND_EXECUTED_SUCCESSFULLY.string.text
+msgid "Command successfully executed."
+msgstr "执行命令已经成功。"
+
+#: directsql.src#STR_DIRECTSQL_CONNECTIONLOST.string.text
+msgid ""
+"The connection to the database has been lost. This dialog will be closed."
+msgstr "已经退出和数据库的连接。对话框将被关闭。"
+
+#: dlgattr.src#DLG_ATTR.1.pushbutton.text
+msgid "Bac~k"
+msgstr "返回(~K)"
+
+#: dlgattr.src#DLG_ATTR.ST_ROW.string.text
+msgid "Table Format"
+msgstr "表格格式"
+
+#: dlgattr.src#DLG_ATTR.TP_ATTR_ALIGN.string.text
+msgid "Alignment"
+msgstr "对齐"
+
+#: dlgattr.src#DLG_ATTR.TP_ATTR_CHAR.string.text
+msgid "Font"
+msgstr "字体"
+
+#: dlgattr.src#DLG_ATTR.TP_ATTR_NUMBER.string.text
+msgid "Format"
+msgstr "格式"
+
+#: dlgattr.src#DLG_ATTR.tabdialog.text
+msgid "Field Format"
+msgstr "字段格式"
+
+#: dlgsave.src#DLG_SAVE_AS.FT_CATALOG.fixedtext.text
+msgid "~Catalog"
+msgstr "分类(~C)"
+
+#: dlgsave.src#DLG_SAVE_AS.FT_DESCRIPTION.fixedtext.text
+msgid "Please enter a name for the object to be created:"
+msgstr "请您输入一个要新建对象的名称："
+
+#: dlgsave.src#DLG_SAVE_AS.FT_SCHEMA.fixedtext.text
+msgid "~Schema"
+msgstr "略图(~S)"
+
+#: dlgsave.src#DLG_SAVE_AS.modaldialog.text
+msgid "Save As"
+msgstr "另存为"
+
+#: dlgsave.src#DLG_SAVE_AS.STR_QRY_LABEL.string.text
+msgid "~Query name"
+msgstr "查询名称(~Q)"
+
+#: dlgsave.src#DLG_SAVE_AS.STR_TBL_LABEL.string.text
+msgid "~Table Name"
+msgstr "表格名称(~T)"
+
+#: dlgsave.src#DLG_SAVE_AS.STR_TITLE_PASTE_AS.string.text
+msgid "Insert as"
+msgstr "插入方式为"
+
+#: dlgsave.src#DLG_SAVE_AS.STR_TITLE_RENAME.string.text
+msgid "Rename to"
+msgstr "重命名为"
+
+#: dlgsave.src#DLG_SAVE_AS.STR_VW_LABEL.string.text
+msgid "~Name of table view"
+msgstr "表格视图名称(~N)"
+
+#: dlgsize.src#DLG_COLWIDTH.CB_STANDARD.checkbox.text
+msgctxt "dlgsize.src#DLG_COLWIDTH.CB_STANDARD.checkbox.text"
+msgid "~Automatic"
+msgstr "自动(~A)"
+
+#: dlgsize.src#DLG_ROWHEIGHT.CB_STANDARD.checkbox.text
+msgctxt "dlgsize.src#DLG_ROWHEIGHT.CB_STANDARD.checkbox.text"
+msgid "~Automatic"
+msgstr "自动(~A)"
+
+#: dlgsize.src#DLG_COLWIDTH.FT_VALUE.fixedtext.text
+msgid "~Width"
+msgstr "宽度(~W)"
+
+#: dlgsize.src#DLG_ROWHEIGHT.FT_VALUE.fixedtext.text
+msgid "~Height"
+msgstr "高度(~H)"
+
+#: dlgsize.src#DLG_COLWIDTH.modaldialog.text
+msgid "Column Width"
+msgstr "列宽"
+
+#: dlgsize.src#DLG_ROWHEIGHT.modaldialog.text
+msgid "Row Height"
+msgstr "行高"
+
+#: dsselect.src#DLG_DATASOURCE_SELECTION.FT_DESCRIPTION.fixedtext.text
+msgid "Choose a data source:"
+msgstr "请您选择一个数据源："
+
+#: dsselect.src#DLG_DATASOURCE_SELECTION.modaldialog.text
+msgid "Data Source"
+msgstr "数据源"
+
+#: dsselect.src#DLG_DATASOURCE_SELECTION.PB_CREATE.pushbutton.text
+msgid "Create..."
+msgstr "创建..."
+
+#: dsselect.src#DLG_DATASOURCE_SELECTION.PB_MANAGE.pushbutton.text
+msgid "Organize..."
+msgstr "管理..."
+
+#: dsselect.src#DLG_DATASOURCE_SELECTION.STR_DESCRIPTION2.string.text
+msgid "Choose a database"
+msgstr "选择一个数据库"
+
+#: dsselect.src#DLG_DATASOURCE_SELECTION.STR_LOCAL_DATASOURCES.string.text
+msgid "Local Databases"
+msgstr "本地数据库"
+
+#: indexdialog.src#DLG_INDEXDESIGN.CB_UNIQUE.checkbox.text
+msgid "~Unique"
+msgstr "明确的(~U)"
+
+#: indexdialog.src#ERR_NEED_INDEX_FIELDS.errorbox.text
+msgid "The index must contain at least one field."
+msgstr "索引必须至少含有一个字段。"
+
+#: indexdialog.src#ERR_NEED_INDEX_FIELDS.errorbox.title
+msgid "Save Index"
+msgstr "存盘索引"
+
+#: indexdialog.src#DLG_INDEXDESIGN.FL_INDEXDETAILS.fixedline.text
+msgid "Index details"
+msgstr "索引细节"
+
+#: indexdialog.src#DLG_INDEXDESIGN.FT_DESC_LABEL.fixedtext.text
+msgid "Index identifier:"
+msgstr "索引标志："
+
+#: indexdialog.src#DLG_INDEXDESIGN.FT_FIELDS.fixedtext.text
+msgid "Fields"
+msgstr "字段"
+
+#: indexdialog.src#DLG_INDEXDESIGN.modaldialog.text
+msgctxt "indexdialog.src#DLG_INDEXDESIGN.modaldialog.text"
+msgid "Indexes"
+msgstr "索引"
+
+#: indexdialog.src#DLG_INDEXDESIGN.PB_CLOSE.pushbutton.text
+msgctxt "indexdialog.src#DLG_INDEXDESIGN.PB_CLOSE.pushbutton.text"
+msgid "~Close"
+msgstr "关闭(~C)"
+
+#: indexdialog.src#QUERY_SAVE_CURRENT_INDEX.querybox.text
+msgid "Do you want to save the changes made to the current index?"
+msgstr "要保存当前索引的修改内容？"
+
+#: indexdialog.src#QUERY_SAVE_CURRENT_INDEX.querybox.title
+msgid "Exit Index Design"
+msgstr "关闭索引设计"
+
+#: indexdialog.src#STR_CONFIRM_DROP_INDEX.string.text
+msgid "Do you really want to delete the index '$name$'?"
+msgstr "真要删除索引'$name$'？"
+
+#: indexdialog.src#STR_INDEXDESIGN_DOUBLE_COLUMN_NAME.string.text
+msgid ""
+"In an index definition, no table column may occur more than once. However, "
+"you have entered column \"$name$\" twice."
+msgstr "在一个索引定义之中仅允许一次使用一个列名称。但是您第二次使用列名称 \"$name$\" 。"
+
+#: indexdialog.src#STR_INDEX_NAME_ALREADY_USED.string.text
+msgid "There is already another index named \"$name$\"."
+msgstr "There's already another index named \"$name$\"."
+
+#: indexdialog.src#STR_LOGICAL_INDEX_NAME.string.text
+msgid "index"
+msgstr "索引"
+
+#: indexdialog.src#STR_ORDER_ASCENDING.string.text
+msgid "Ascending"
+msgstr "向上"
+
+#: indexdialog.src#STR_ORDER_DESCENDING.string.text
+msgid "Descending"
+msgstr "向下"
+
+#: indexdialog.src#STR_TAB_INDEX_FIELD.string.text
+msgid "Index field"
+msgstr "索引字段"
+
+#: indexdialog.src#STR_TAB_INDEX_SORTORDER.string.text
+msgctxt "indexdialog.src#STR_TAB_INDEX_SORTORDER.string.text"
+msgid "Sort order"
+msgstr "排序规则"
+
+#: indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_DROP.toolboxitem.text
+msgid "Delete Current Index"
+msgstr "删除当前的索引"
+
+#: indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_NEW.toolboxitem.text
+msgid "New Index"
+msgstr "新建索引"
+
+#: indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RENAME.toolboxitem.text
+msgid "Rename Current Index"
+msgstr "重命名当前的索引"
+
+#: indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RESET.toolboxitem.text
+msgid "Reset Current Index"
+msgstr "重设当前的索引"
+
+#: indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_SAVE.toolboxitem.text
+msgid "Save Current Index"
+msgstr "保存当前的索引"
+
+#: paramdialog.src#DLG_PARAMETERS.FL_PARAMS.fixedline.text
+msgid "~Parameters"
+msgstr "参数(~P)"
+
+#: paramdialog.src#DLG_PARAMETERS.FT_VALUE.fixedtext.text
+msgid "~Value"
+msgstr "数值(~V)"
+
+#: paramdialog.src#DLG_PARAMETERS.modaldialog.text
+msgid "Parameter Input"
+msgstr "输入参数值"
+
+#: paramdialog.src#DLG_PARAMETERS.BT_TRAVELNEXT.pushbutton.text
+msgid "~Next"
+msgstr "下一个(~N)"
+
+#: paramdialog.src#DLG_PARAMETERS.STR_COULD_NOT_CONVERT_PARAM.string.text
+msgid ""
+"The entry could not be converted to a valid value for the \"$name$\"column"
+msgstr "输入的内容无法转换成一个用于列\"$name$\"的有效数值。"
+
+#: queryfilter.src#DLG_FILTERCRIT.FL_FIELDS.fixedline.text
+msgid "Criteria"
+msgstr "条件"
+
+#: queryfilter.src#DLG_FILTERCRIT.FT_WHERECOMP.fixedtext.text
+msgid "Condition"
+msgstr "条件"
+
+#: queryfilter.src#DLG_FILTERCRIT.FT_WHEREFIELD.fixedtext.text
+msgctxt "queryfilter.src#DLG_FILTERCRIT.FT_WHEREFIELD.fixedtext.text"
+msgid "Field name"
+msgstr "字段名称"
+
+#: queryfilter.src#DLG_FILTERCRIT.FT_WHEREOPER.fixedtext.text
+msgctxt "queryfilter.src#DLG_FILTERCRIT.FT_WHEREOPER.fixedtext.text"
+msgid "Operator"
+msgstr "运算符"
+
+#: queryfilter.src#DLG_FILTERCRIT.FT_WHEREVALUE.fixedtext.text
+msgid "Value"
+msgstr "数值"
+
+#: queryfilter.src#DLG_FILTERCRIT.modaldialog.text
+msgid "Standard Filter"
+msgstr "标准筛选"
+
+#: queryfilter.src#DLG_FILTERCRIT.STR_COMPARE_OPERATORS.string.text
+msgid "=;<>;<;<=;>;>=;like;not like;null;not null"
+msgstr "=;<>;<;<=;>;>=;等于;不等于;空缺;不空缺"
+
+#: queryfilter.src#DLG_FILTERCRIT.STR_NOENTRY.string.text
+msgid "- none -"
+msgstr "- 无 -"
+
+#: queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.1.stringlist.text
+msgctxt "queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.1.stringlist.text"
+msgid "AND"
+msgstr "AND"
+
+#: queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.2.stringlist.text
+msgctxt "queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.2.stringlist.text"
+msgid "OR"
+msgstr "OR"
+
+#: queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.1.stringlist.text
+msgctxt "queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.1.stringlist.text"
+msgid "AND"
+msgstr "AND"
+
+#: queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.2.stringlist.text
+msgctxt "queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.2.stringlist.text"
+msgid "OR"
+msgstr "OR"
+
+#: queryorder.src#DLG_ORDERCRIT.FL_ORDER.fixedline.text
+msgctxt "queryorder.src#DLG_ORDERCRIT.FL_ORDER.fixedline.text"
+msgid "Sort order"
+msgstr "排序"
+
+#: queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER1.fixedtext.text
+msgctxt "queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER1.fixedtext.text"
+msgid "and then"
+msgstr "之后"
+
+#: queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER2.fixedtext.text
+msgctxt "queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER2.fixedtext.text"
+msgid "and then"
+msgstr "之后"
+
+#: queryorder.src#DLG_ORDERCRIT.FT_ORDERDIR.fixedtext.text
+msgid "Order"
+msgstr "顺序"
+
+#: queryorder.src#DLG_ORDERCRIT.FT_ORDERFIELD.fixedtext.text
+msgctxt "queryorder.src#DLG_ORDERCRIT.FT_ORDERFIELD.fixedtext.text"
+msgid "Field name"
+msgstr "字段名称"
+
+#: queryorder.src#DLG_ORDERCRIT.FT_ORDEROPER.fixedtext.text
+msgctxt "queryorder.src#DLG_ORDERCRIT.FT_ORDEROPER.fixedtext.text"
+msgid "Operator"
+msgstr "运算符"
+
+#: queryorder.src#DLG_ORDERCRIT.modaldialog.text
+msgid "Sort Order"
+msgstr "排序"
+
+#: queryorder.src#DLG_ORDERCRIT.STR_NOENTRY.string.text
+msgid "<none>"
+msgstr "<无>"
+
+#: queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.1.stringlist.text
+msgctxt "queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.1.stringlist.text"
+msgid "ascending"
+msgstr "升序"
+
+#: queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.2.stringlist.text
+msgctxt "queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.2.stringlist.text"
+msgid "descending"
+msgstr "降序"
+
+#: queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.1.stringlist.text
+msgctxt "queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.1.stringlist.text"
+msgid "ascending"
+msgstr "升序"
+
+#: queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.2.stringlist.text
+msgctxt "queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.2.stringlist.text"
+msgid "descending"
+msgstr "降序"
+
+#: queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.1.stringlist.text
+msgctxt "queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.1.stringlist.text"
+msgid "ascending"
+msgstr "升序"
+
+#: queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.2.stringlist.text
+msgctxt "queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.2.stringlist.text"
+msgid "descending"
+msgstr "降序"
+
+#: sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FL_DETAILS.fixedline.text
+msgctxt "sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FL_DETAILS.fixedline.text"
+msgid "Details"
+msgstr "细节"
+
+#: sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_DESCRIPTION.fixedtext.text
+msgid "~Description:"
+msgstr "说明(~D)："
+
+#: sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_ERRORLIST.fixedtext.text
+msgid "Error ~list:"
+msgstr "错误列单(~L)："
+
+#: sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.modaldialog.text
+msgid "%PRODUCTNAME Base"
+msgstr "%PRODUCTNAME Base"
+
+#: sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_ERRORCODE.string.text
+msgid "Error code"
+msgstr "错误码"
+
+#: sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_STATUS.string.text
+msgid "SQL Status"
+msgstr "SQL 状态"
+
+#: sqlmessage.src#STR_EXCEPTION_DETAILS.string.text
+msgctxt "sqlmessage.src#STR_EXCEPTION_DETAILS.string.text"
+msgid "Details"
+msgstr "详细信息"
+
+#: sqlmessage.src#STR_EXCEPTION_ERROR.string.text
+msgid "Error"
+msgstr "错误"
+
+#: sqlmessage.src#STR_EXCEPTION_INFO.string.text
+msgid "Information"
+msgstr "信息"
+
+#: sqlmessage.src#STR_EXCEPTION_WARNING.string.text
+msgid "Warning"
+msgstr "警告"
+
+#: sqlmessage.src#STR_EXPLAN_STRINGCONVERSION_ERROR.string.text
+msgid ""
+"A frequent reason for this error is an inappropriate character set setting "
+"for the language of your database. Check the setting by choosing Edit - "
+"Database - Properties."
+msgstr "此错误的常见原因是数据库语言的字符集设置不正确。请通过选择“编辑”-“数据库”-“属性”来检查此设置。"
+
+#: textconnectionsettings.src#DLG_TEXT_CONNECTION_SETTINGS.modaldialog.text
+msgid "Text Connection Settings"
+msgstr "文本连接设置"
+
+#: query.src#ERR_QRY_AMB_FIELD.errorbox.text
+msgid "Field name not found or not unique"
+msgstr "没有找到字段名称或者字段名称不明确。"
+
+#: query.src#ERR_QRY_CRITERIA_ON_ASTERISK.errorbox.text
+msgid "A condition cannot be applied to field [*]"
+msgstr "条件无法用于字段 [*]"
+
+#: query.src#ERR_QRY_NOCRITERIA.errorbox.text
+msgid "No query could be created because no fields were selected."
+msgstr "因为没有选中任何字段而无法建立查询！"
+
+#: query.src#ERR_QRY_NOSTATEMENT.errorbox.text
+msgid "No query could be created."
+msgstr "无法建立任何查询！"
+
+#: query.src#ERR_QRY_ORDERBY_ON_ASTERISK.errorbox.text
+msgid "[*] cannot be used as a sort criterion."
+msgstr "无法按照 [*] 排序。"
+
+#: query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_ALIASNAME.menuitem.text
+msgid "Alias"
+msgstr "别名"
+
+#: query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_DISTINCT.menuitem.text
+msgid "Distinct Values"
+msgstr "明确的数值"
+
+#: query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_FUNCTION.menuitem.text
+msgid "Functions"
+msgstr "功能"
+
+#: query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_TABLENAME.menuitem.text
+msgid "Table Name"
+msgstr "表格名称"
+
+#: query.src#RID_STR_FIELD_DOESNT_EXIST.string.text
+msgid "Invalid expression, field name '$name$' does not exist."
+msgstr "这个表达式无效，因为无法确认字段名称 '$name$' ！"
+
+#: query.src#RID_STR_TABLE_DOESNT_EXIST.string.text
+msgid "Invalid expression, table '$name$' does not exist."
+msgstr "表达式无效，因为表格 '$name$' 不存在。"
+
+#: query.src#RID_STR_TOMUCHTABLES.string.text
+msgid ""
+"The query covers #num# tables. The selected database type, however, can only "
+"process a maximum of #maxnum# table(s) per statement."
+msgstr "查询涵盖 #num# 个表格。所选定的数据库类型在处理每个语句时最多只能够查询 #maxnum# 个表格。"
+
+#: query.src#RSC_QUERY_OBJECT_TYPE.1.string.text
+msgid "The table view"
+msgstr "表视图"
+
+#: query.src#RSC_QUERY_OBJECT_TYPE.2.string.text
+msgid "The query"
+msgstr "查询"
+
+#: query.src#RSC_QUERY_OBJECT_TYPE.3.string.text
+msgid "The SQL statement"
+msgstr "SQL 语句"
+
+#: query.src#STR_DATASOURCE_DELETED.string.text
+msgid ""
+"The corresponding data source has been deleted. Therefore, data relevant to "
+"that data source cannot be saved."
+msgstr "这个数据库已经被删除。因此无法保存任何相关数据。"
+
+#: query.src#STR_ERROR_PARSING_STATEMENT.string.text
+msgid "$object$ is based on an SQL command which could not be parsed."
+msgstr "$object$ 基于的 SQL 命令未能解析。"
+
+#: query.src#STR_INFO_OPENING_IN_SQL_VIEW.string.text
+msgid "$object$ will be opened in SQL view."
+msgstr "将在 SQL 视图中打开 $object$。"
+
+#: query.src#STR_NO_ALTER_VIEW_SUPPORT.string.text
+msgid "This database does not support altering of existing table views."
+msgstr "此数据库不支持更改已存在的表格视图。"
+
+#: query.src#STR_NO_DATASOURCE_OR_CONNECTION.string.text
+msgid ""
+"Both the ActiveConnection and the DataSourceName parameter are missing or "
+"wrong - cannot initialize the query designer."
+msgstr "ActiveConnection 和 DataSourceName 参数丢失或错误 - 无法初始化“查询设计器”。"
+
+#: query.src#STR_QRY_CHECK_CASESENSITIVE.string.text
+msgid ""
+"The column could not be found. Please note that the database is case-"
+"sensitive."
+msgstr "无法找到列。请注意本数据库区分字母的大小写。"
+
+#: query.src#STR_QRY_COLUMN_NOT_FOUND.string.text
+msgid "The column '$name$' is unknown."
+msgstr "列 '$name$' 不明！"
+
+#: query.src#STR_QRY_ILLEGAL_JOIN.string.text
+msgid "Join could not be processed"
+msgstr "无法执行连结功能"
+
+#: query.src#STR_QRY_JOIN_COLUMN_COMPARE.string.text
+msgid "Columns can only be compared using '='."
+msgstr "要比较列，只可以使用等号 '=' 。"
+
+#: query.src#STR_QRY_LIKE_LEFT_NO_COLUMN.string.text
+msgid "You must use a column name before 'LIKE'."
+msgstr "在 LIKE 之前必须输入一个列名称。"
+
+#: query.src#STR_QRY_NATIVE.string.text
+msgid ""
+"The statement will not be applied when querying in the SQL dialect of the "
+"database."
+msgstr "不接受数据库的 SQL 方言查询指令。"
+
+#: query.src#STR_QRY_NOSELECT.string.text
+msgid "Nothing has been selected."
+msgstr "没有选择任何内容。"
+
+#: query.src#STR_QRY_ORDERBY_UNRELATED.string.text
+msgid "The database only supports sorting for visible fields."
+msgstr "数据库只支持可显示字段的排序。"
+
+#: query.src#STR_QRY_SYNTAX.string.text
+msgid "SQL syntax error"
+msgstr "SQL 语法错误"
+
+#: query.src#STR_QRY_TOOCOMPLEX.string.text
+msgid "Query is too complex"
+msgstr "查询内容太复杂"
+
+#: query.src#STR_QRY_TOOMANYCOND.string.text
+msgid "Too many search criteria"
+msgstr "太多的查找规则"
+
+#: query.src#STR_QRY_TOO_LONG_STATEMENT.string.text
+msgid "The SQL statement created is too long."
+msgstr "生成的 SQL 表达式太长。"
+
+#: query.src#STR_QRY_TOO_MANY_COLUMNS.string.text
+msgid "There are too many columns."
+msgstr "有太多的列。"
+
+#: query.src#STR_QRY_TOO_MANY_TABLES.string.text
+msgid "There are too many tables."
+msgstr "表格数目太多。"
+
+#: query.src#STR_QUERYDESIGN.string.text
+msgid " - %PRODUCTNAME Base: Query Design"
+msgstr "- %PRODUCTNAME Base: 查询设计"
+
+#: query.src#STR_QUERYDESIGN_NO_VIEW_ASK.string.text
+msgid "Do you want to create a query instead?"
+msgstr "要改为生成一个查询？"
+
+#: query.src#STR_QUERYDESIGN_NO_VIEW_SUPPORT.string.text
+msgid "This database does not support table views."
+msgstr "这个数据库不支持表格视图的功能。"
+
+#: query.src#STR_QUERY_FUNCTIONS.string.text
+msgid "(no function);Group"
+msgstr "（无函数）；组合"
+
+#: query.src#STR_QUERY_HANDLETEXT.string.text
+msgid "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
+msgstr "字段;别名;表格;排序;可见的;功能;条件;或者;或者"
+
+#: query.src#STR_QUERY_NOTABLE.string.text
+msgid "(no table)"
+msgstr "(无表格)"
+
+#: query.src#STR_QUERY_SAVEMODIFIED.string.text
+msgid ""
+"$object$ has been changed.\n"
+"Do you want to save the changes?"
+msgstr ""
+"$object$ 已更改。\n"
+"是否要保存更改？"
+
+#: query.src#STR_QUERY_SORTTEXT.string.text
+msgid "(not sorted);ascending;descending"
+msgstr "(不排序);向上;向下"
+
+#: query.src#STR_QUERY_UNDO_INSERTCONNECTION.string.text
+msgid "Insert Join"
+msgstr "插入连结"
+
+#: query.src#STR_QUERY_UNDO_MODIFY_CELL.string.text
+msgid "Edit Column Description"
+msgstr "修改列标题"
+
+#: query.src#STR_QUERY_UNDO_MOVETABWIN.string.text
+msgid "Move table window"
+msgstr "移动表格窗口"
+
+#: query.src#STR_QUERY_UNDO_REMOVECONNECTION.string.text
+msgid "Delete Join"
+msgstr "删除连结"
+
+#: query.src#STR_QUERY_UNDO_SIZETABWIN.string.text
+msgid "Resize table window"
+msgstr "修改表格窗口大小"
+
+#: query.src#STR_QUERY_UNDO_SIZE_COLUMN.string.text
+msgid "Adjust column width"
+msgstr "修改列宽"
+
+#: query.src#STR_QUERY_UNDO_TABFIELDCREATE.string.text
+msgid "Add Column"
+msgstr "新增列"
+
+#: query.src#STR_QUERY_UNDO_TABFIELDDELETE.string.text
+msgid "Delete Column"
+msgstr "删除列"
+
+#: query.src#STR_QUERY_UNDO_TABFIELDMOVED.string.text
+msgid "Move column"
+msgstr "移动列"
+
+#: query.src#STR_QUERY_UNDO_TABWINDELETE.string.text
+msgid "Delete Table Window"
+msgstr "清除表格窗口"
+
+#: query.src#STR_QUERY_UNDO_TABWINSHOW.string.text
+msgid "Add Table Window"
+msgstr "新增表格窗口"
+
+#: query.src#STR_STATEMENT_WITHOUT_RESULT_SET.string.text
+msgid ""
+"The query does not create a result set, and thus cannot be part of another "
+"query."
+msgstr "查询不创建结果集，因此不能是另一个查询的一部分。"
+
+#: query.src#STR_SVT_SQL_SYNTAX_ERROR.string.text
+msgid "Syntax error in SQL statement"
+msgstr "SQL 表达式语法错误"
+
+#: query.src#STR_VIEWDESIGN.string.text
+msgid " - %PRODUCTNAME Base: View Design"
+msgstr "- %PRODUCTNAME Base: 视图设计"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.checkbox.text
+msgid "Natural"
+msgstr "自然"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.fixedline.text
+msgid "Fields involved"
+msgstr "关联字段"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.fixedline.text
+msgid "Tables involved"
+msgstr "关联表格"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.fixedline.text
+msgid "Options"
+msgstr "选项"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.fixedtext.text
+msgid "~Type"
+msgstr "类型(~T)"
+
+#: querydlg.src#DLG_QRY_JOIN.modaldialog.text
+msgid "Join Properties"
+msgstr "连结属性"
+
+#: querydlg.src#STR_JOIN_TYPE_HINT.string.text
+msgid "Please note that some databases may not support this join type."
+msgstr "请注意：某些数据库可能不支持此联接类型。"
+
+#: querydlg.src#STR_QUERY_CROSS_JOIN.string.text
+msgid "Contains the cartesian product of ALL records from '%1' and from '%2'."
+msgstr "包含来自 '%1' 和来自 '%2' 的所有记录的笛卡尔积。"
+
+#: querydlg.src#STR_QUERY_FULL_JOIN.string.text
+msgid "Contains ALL records from '%1' and from '%2'."
+msgstr "含有 '%1'和'%2'内全部的数据条目"
+
+#: querydlg.src#STR_QUERY_INNER_JOIN.string.text
+msgid ""
+"Includes only records for which the contents of the related fields of both "
+"tables are identical."
+msgstr "只包含两个表格中引用字段相同的数据条目。"
+
+#: querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.string.text
+msgid ""
+"Contains ALL records from table '%1' but only records from table '%2' where "
+"the values in the related fields are matching."
+msgstr "含有'%1'中的所有数据条目和'%2'中两个表格引用字段相同的数据条目。"
+
+#: querydlg.src#STR_QUERY_NATURAL_JOIN.string.text
+msgid ""
+"Contains only one column for each pair of equally-named columns from '%1' "
+"and from '%2'."
+msgstr "对于来自 '%1' 和来自 '%2' 的列，每一对相同名称的列只保留一列。"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.1.stringlist.text
+msgid "Inner join"
+msgstr "内联接"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.2.stringlist.text
+msgid "Left join"
+msgstr "左联接"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.3.stringlist.text
+msgid "Right join"
+msgstr "右联接"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.4.stringlist.text
+msgid "Full (outer) join"
+msgstr "完整（外）联接"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.5.stringlist.text
+msgid "Cross join"
+msgstr "交叉联接"
+
+#: app.src#RID_MENU_APP_EDIT.MN_PROPS.menuitem.text
+msgid "~Database"
+msgstr "数据库(~D)"
+
+#: app.src#RID_MENU_APP_EDIT.SID_APP_NEW_REPORT_PRE_SEL.menuitem.text
+msgctxt "app.src#RID_MENU_APP_EDIT.SID_APP_NEW_REPORT_PRE_SEL.menuitem.text"
+msgid "Report..."
+msgstr "报表..."
+
+#: app.src#RID_MENU_APP_EDIT.SID_DB_APP_CONVERTTOVIEW.menuitem.text
+msgid "Create as View"
+msgstr "创建为视图"
+
+#: app.src#RID_MENU_APP_EDIT.SID_DB_APP_DELETE.menuitem.text
+msgid "Delete"
+msgstr "删除"
+
+#: app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT.menuitem.text
+msgid "Edit"
+msgstr "编辑"
+
+#: app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT_SQL_VIEW.menuitem.text
+msgid "Edit in SQL View..."
+msgstr "在SQL视图中编辑..."
+
+#: app.src#RID_MENU_APP_EDIT.SID_DB_APP_OPEN.menuitem.text
+msgid "Open"
+msgstr "打开"
+
+#: app.src#RID_MENU_APP_EDIT.SID_DB_APP_PASTE_SPECIAL.menuitem.text
+msgid "Paste Special..."
+msgstr "选择性粘贴..."
+
+#: app.src#RID_MENU_APP_EDIT.SID_DB_APP_RENAME.menuitem.text
+msgid "Rename"
+msgstr "重命名"
+
+#: app.src#RID_MENU_APP_EDIT.SID_FORM_CREATE_REPWIZ_PRE_SEL.menuitem.text
+msgid "Form Wizard..."
+msgstr "窗体向导..."
+
+#: app.src#RID_MENU_APP_EDIT.SID_REPORT_CREATE_REPWIZ_PRE_SEL.menuitem.text
+msgid "Report Wizard..."
+msgstr "报表向导..."
+
+#: app.src#RID_MENU_APP_EDIT.SID_SELECTALL.menuitem.text
+msgid "Select All"
+msgstr "全选"
+
+#: app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSADVANCED_SETTINGS.menuitem.text
+msgid "Advanced Settings..."
+msgstr "高级设置..."
+
+#: app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSCONNECTION_TYPE.menuitem.text
+msgid "Connection Type..."
+msgstr "连接类型..."
+
+#: app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSPROPS.menuitem.text
+msgid "Properties..."
+msgstr "属性..."
+
+#: app.src#RID_MENU_APP_NEW.SID_APP_NEW_FORM.menuitem.text
+msgid "Form..."
+msgstr "窗体..."
+
+#: app.src#RID_MENU_APP_NEW.SID_APP_NEW_REPORT.menuitem.text
+msgctxt "app.src#RID_MENU_APP_NEW.SID_APP_NEW_REPORT.menuitem.text"
+msgid "Report..."
+msgstr "报表..."
+
+#: app.src#RID_MENU_APP_NEW.SID_DB_NEW_VIEW_SQL.menuitem.text
+msgid "View (Simple)..."
+msgstr "视图（简单）..."
+
+#: app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.menuitem.text
+msgid "None"
+msgstr "无"
+
+#: app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOCINFO_PREVIEW.menuitem.text
+msgid "Document Information"
+msgstr "文档信息"
+
+#: app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOC_PREVIEW.menuitem.text
+msgid "Document"
+msgstr "文档"
+
+#: app.src#APP_CLOSEDOCUMENTS.querybox.text
+msgid ""
+"The connection type has been altered.\n"
+"For the changes to take effect, all forms, reports, queries and tables must "
+"be closed.\n"
+"\n"
+"Do you want to close all documents now?"
+msgstr ""
+"连接类型已改变。\n"
+"要使修改生效，必须关闭所有窗体、报表、查询和表格。\n"
+"\n"
+"是否要立即关闭所有文档？"
+
+#: app.src#APP_SAVEMODIFIED.querybox.text
+msgid ""
+"The database has been modified.\n"
+"Do you want to save the changes?"
+msgstr ""
+"数据库已经被修改。\n"
+"是否要保存修改？"
+
+#: app.src#RID_STR_EMBEDDED_DATABASE.string.text
+msgid "Embedded database"
+msgstr "嵌入数据库"
+
+#: app.src#RID_STR_FORM.string.text
+msgid "Form"
+msgstr "表单"
+
+#: app.src#RID_STR_FORMS_CONTAINER.string.text
+msgid "Forms"
+msgstr "窗体"
+
+#: app.src#RID_STR_FORMS_HELP_TEXT.string.text
+msgid ""
+"Create a form by specifying the record source, controls, and control "
+"properties."
+msgstr "通过指定记录源、控件和控件属性创建窗体。"
+
+#: app.src#RID_STR_FORMS_HELP_TEXT_WIZARD.string.text
+msgid "The wizard will guide you through the steps necessary to create a form."
+msgstr "向导将引导您完成创建窗体所需的步骤。"
+
+#: app.src#RID_STR_NEW_FORM.string.text
+msgid "Create Form in Design View..."
+msgstr "在设计视图中创建窗体..."
+
+#: app.src#RID_STR_NEW_FORM_AUTO.string.text
+msgid "Use Wizard to Create Form..."
+msgstr "使用向导创建窗体..."
+
+#: app.src#RID_STR_NEW_QUERY.string.text
+msgid "Create Query in Design View..."
+msgstr "在设计视图中创建查询..."
+
+#: app.src#RID_STR_NEW_QUERY_AUTO.string.text
+msgid "Use Wizard to Create Query..."
+msgstr "使用向导创建查询..."
+
+#: app.src#RID_STR_NEW_QUERY_SQL.string.text
+msgid "Create Query in SQL View..."
+msgstr "在 SQL 视图中创建查询..."
+
+#: app.src#RID_STR_NEW_REPORT.string.text
+msgid "Create Report in Design View..."
+msgstr "在“设计视图”中创建报表..."
+
+#: app.src#RID_STR_NEW_REPORT_AUTO.string.text
+msgid "Use Wizard to Create Report..."
+msgstr "使用向导创建报表..."
+
+#: app.src#RID_STR_NEW_TABLE.string.text
+msgid "Create Table in Design View..."
+msgstr "在设计视图中创建表格..."
+
+#: app.src#RID_STR_NEW_TABLE_AUTO.string.text
+msgid "Use Wizard to Create Table..."
+msgstr "使用向导创建表格..."
+
+#: app.src#RID_STR_NEW_VIEW.string.text
+msgid "Create View..."
+msgstr "创建视图..."
+
+#: app.src#RID_STR_NO_DIFF_CAT.string.text
+msgid "You cannot select different categories."
+msgstr "您不能选择不同类别。"
+
+#: app.src#RID_STR_QUERIES_HELP_TEXT.string.text
+msgid ""
+"Create a query by specifying the filters, input tables, field names,  and  "
+"properties for sorting or grouping."
+msgstr "通过指定过滤器、输入表、字段名称以及排序或组合属性创建查询。"
+
+#: app.src#RID_STR_QUERIES_HELP_TEXT_SQL.string.text
+msgid "Create a query  entering an SQL statement directly."
+msgstr "直接输入 SQL 语句创建查询。"
+
+#: app.src#RID_STR_QUERIES_HELP_TEXT_WIZARD.string.text
+msgid ""
+"The wizard will guide you through the steps necessary to create a query."
+msgstr "向导将引导您完成创建查询所需的步骤。"
+
+#: app.src#RID_STR_REPORT.string.text
+msgid "Report"
+msgstr "报表"
+
+#: app.src#RID_STR_REPORTS_CONTAINER.string.text
+msgid "Reports"
+msgstr "报表"
+
+#: app.src#RID_STR_REPORTS_HELP_TEXT_WIZARD.string.text
+msgid ""
+"The wizard will guide you through the steps necessary to create a report."
+msgstr "向导将引导您完成创建报表所需的步骤。"
+
+#: app.src#RID_STR_REPORT_HELP_TEXT.string.text
+msgid ""
+"Create a report by specifying the record source, controls, and control "
+"properties."
+msgstr "通过指定记录源、控件和控件属性创建报表。"
+
+#: app.src#RID_STR_TABLES_HELP_TEXT_DESIGN.string.text
+msgid ""
+"Create a table by specifying the field names and properties, as well as the "
+"data types."
+msgstr "通过指定字段的名称、属性以及数据类型创建表格。"
+
+#: app.src#RID_STR_TABLES_HELP_TEXT_WIZARD.string.text
+msgid ""
+"Choose from a selection of business and personal table samples, which you "
+"customize to create a table."
+msgstr "从企业或个人表格示例中选择一个创建自定义表格。"
+
+#: app.src#RID_STR_UNSUPPORTED_OBJECT_TYPE.string.text
+msgid "Unsupported object type found ($type$)."
+msgstr "发现不支持的对象类型 ($type$)。"
+
+#: app.src#RID_STR_VIEWS_HELP_TEXT_DESIGN.string.text
+msgid ""
+"Create a view by specifying the tables and field names you would like to "
+"have visible."
+msgstr "通过指定希望显示的表格和字段名称创建视图。"
+
+#: app.src#RID_STR_VIEWS_HELP_TEXT_WIZARD.string.text
+msgid "Opens the view wizard"
+msgstr "打开视图向导"
+
+#: app.src#STR_APP_TITLE.string.text
+msgid " - %PRODUCTNAME Base"
+msgstr "- %PRODUCTNAME Base"
+
+#: app.src#STR_DATABASE.string.text
+msgid "Database"
+msgstr "数据库"
+
+#: app.src#STR_DESCRIPTION.string.text
+msgid "Description"
+msgstr "说明"
+
+#: app.src#STR_DISABLEPREVIEW.string.text
+msgid "Disable Preview"
+msgstr "禁用预览"
+
+#: app.src#STR_FOLDER_LABEL.string.text
+msgid "F~older name"
+msgstr "文件夹名称(~O)"
+
+#: app.src#STR_FRM_LABEL.string.text
+msgid "F~orm name"
+msgstr "窗体名称(~O)"
+
+#: app.src#STR_PREVIEW.string.text
+msgid "Preview"
+msgstr "预览"
+
+#: app.src#STR_QUERY_DELETE_DATASOURCE.string.text
+msgid "Do you want to delete the data source '%1'?"
+msgstr "是否要删除数据源 %1？"
+
+#: app.src#STR_RPT_LABEL.string.text
+msgid "~Report name"
+msgstr "报表名称(~R)"
+
+#: app.src#STR_SUB_DOCS_WITH_SCRIPTS.string.text
+msgid "The document contains forms or reports with embedded macros."
+msgstr "该文档包含已嵌入宏的表单或报表。"
+
+#: app.src#STR_SUB_DOCS_WITH_SCRIPTS_DETAIL.string.text
+msgid ""
+"Macros should be embedded into the database document itself.\n"
+"\n"
+"You can continue to use your document as before, however, you are encouraged "
+"to migrate your macros. The menu item 'Tools / Migrate Macros ...' will "
+"assist you with this.\n"
+"\n"
+"Note that you won't be able to embed macros into the database document "
+"itself until this migration is done. "
+msgstr ""
+"宏应当嵌入到数据库文档本身之中。\n"
+"\n"
+"您可以像先前一样继续使用文档，然而，推荐您移植宏。菜单项“工具/移植宏...”将帮助您完成该操作。\n"
+"\n"
+"请注意，在该移植完成之前，您不能将宏嵌入到数据库文档中。 "
+
+#: app.src#STR_TASKS.string.text
+msgid "Tasks"
+msgstr "任务"
+
+#: TableGrantCtrl.src#STR_TABLE_PRIV_ALTER.string.text
+msgid "Alter structure"
+msgstr "修改结构"
+
+#: TableGrantCtrl.src#STR_TABLE_PRIV_DELETE.string.text
+msgid "Delete data"
+msgstr "删除数据"
+
+#: TableGrantCtrl.src#STR_TABLE_PRIV_DROP.string.text
+msgid "Drop structure"
+msgstr "删除结构"
+
+#: TableGrantCtrl.src#STR_TABLE_PRIV_INSERT.string.text
+msgid "Insert data"
+msgstr "插入数据"
+
+#: TableGrantCtrl.src#STR_TABLE_PRIV_NAME.string.text
+msgid "Table name"
+msgstr "表格名称"
+
+#: TableGrantCtrl.src#STR_TABLE_PRIV_REFERENCE.string.text
+msgid "Modify references"
+msgstr "修改引用"
+
+#: TableGrantCtrl.src#STR_TABLE_PRIV_SELECT.string.text
+msgid "Read data"
+msgstr "读取数据"
+
+#: TableGrantCtrl.src#STR_TABLE_PRIV_UPDATE.string.text
+msgid "Modify data"
+msgstr "修改数据"
+
+#: tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_ASCENDING.menuitem.text
+msgid "Sort Ascending"
+msgstr "向上排序"
+
+#: tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_DECENDING.menuitem.text
+msgid "Sort Descending"
+msgstr "向下排序"
+
+#: tabletree.src#STR_ALL_TABLES.string.text
+msgid "All tables"
+msgstr "全部的表格"
+
+#: tabletree.src#STR_ALL_TABLES_AND_VIEWS.string.text
+msgid "All tables and views"
+msgstr "全部的表格和表格视图"
+
+#: tabletree.src#STR_ALL_VIEWS.string.text
+msgid "All views"
+msgstr "全部的表格视图"
+
+#: tabletree.src#STR_COULDNOTCONNECT.string.text
+msgid "No connection could be established for the URL #connurl#."
+msgstr "无法和 URL #connurl# 建立连接。"
+
+#: tabletree.src#STR_COULDNOTCONNECT_PLEASECHECK.string.text
+msgid "Please check the current settings, for example user name and password."
+msgstr "请您检查当前的设置，如用户名和密码。"
+
+#: tabletree.src#STR_COULDNOTCREATE_DRIVERMANAGER.string.text
+msgid "Cannot connect to the SDBC driver manager (#servicename#)."
+msgstr "无法和 SDBC 驱动程式管理器(#servicename#)建立连接。"
+
+#: tabletree.src#STR_NOREGISTEREDDRIVER.string.text
+msgid "A driver is not registered for the URL #connurl#."
+msgstr "没有为 URL #connurl# 登记驱动程序。"
+
+#: tabletree.src#STR_NOTABLEINFO.string.text
+msgid ""
+"Successfully connected, but information about database tables is not "
+"available."
+msgstr "连接已经成功，但是无法获得相关的数据库表格数据。"
+
+#: undosqledit.src#STR_QUERY_UNDO_MODIFYSQLEDIT.string.text
+msgid "Modify SQL statement(s)"
+msgstr "修改 SQL"
+
+#: copytablewizard.src#STR_CTW_COPY_SOURCE_NEEDS_BOOKMARKS.string.text
+msgid "The copy source's result set must support bookmarks."
+msgstr "此副本源头的结果集必须支持书签。"
+
+#: copytablewizard.src#STR_CTW_ERROR_DURING_INITIALIZATION.string.text
+msgid "An error occurred during initialization."
+msgstr "初始化时出错。"
+
+#: copytablewizard.src#STR_CTW_ERROR_INVALID_INTERACTIONHANDLER.string.text
+msgid "The given interaction handler is invalid."
+msgstr "给定的交互句柄无效。"
+
+#: copytablewizard.src#STR_CTW_ERROR_NO_QUERY.string.text
+msgid "To copy a query, your connection must be able to provide queries."
+msgstr "要复制查询，您的连接必须能提供查询。"
+
+#: copytablewizard.src#STR_CTW_ERROR_UNSUPPORTED_SETTING.string.text
+msgid "Unsupported setting in the copy source descriptor: $name$."
+msgstr "副本源描述符中不支持的设置：$name$。"
+
+#: copytablewizard.src#STR_CTW_ILLEGAL_PARAMETER_COUNT.string.text
+msgid "Illegal number of initialization parameters."
+msgstr "初始化参数中的非法数字。"
+
+#: copytablewizard.src#STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR.string.text
+msgid ""
+"no data access descriptor found, or no data access descriptor able to "
+"provide all necessary information"
+msgstr "找不到数据访问描述符，或没有数据访问描述符能够提供必需的所有信息"
+
+#: copytablewizard.src#STR_CTW_NO_PRIMARY_KEY_SUPPORT.string.text
+msgid "The destination database does not support primary keys."
+msgstr "此目标数据库不支持主键。"
+
+#: copytablewizard.src#STR_CTW_NO_VIEWS_SUPPORT.string.text
+msgid "The destination database does not support views."
+msgstr "此目标数据库不支持视图。"
+
+#: copytablewizard.src#STR_CTW_ONLY_TABLES_AND_QUERIES_SUPPORT.string.text
+msgid "Only tables and queries are supported at the moment."
+msgstr "当前只支持表格和查询。"
+
+#: copytablewizard.src#STR_CTW_UNSUPPORTED_COLUMN_TYPE.string.text
+msgid "Unsupported source column type ($type$) at column position $pos$."
+msgstr "在列 $pos$ 位置，不支持源列类型 ($type$)。"
+
+#: dbinteraction.src#STR_REMEMBERPASSWORD_PERSISTENT.string.text
+msgid "~Remember password"
+msgstr "保存密码(~R)"
+
+#: dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.string.text
+msgid "~Remember password until end of session"
+msgstr "记住密码直至会话结束(~R)"
+
+#: toolbox_tmpl.hrc#MID_COLUMN_WIDTH.#define.text
+msgid "Column ~Width..."
+msgstr "列宽(~W)..."
+
+#: toolbox_tmpl.hrc#MID_DBUI_QUERY_EDIT_JOINCONNECTION.#define.text
+msgid "Edit..."
+msgstr "编辑..."
+
+#: toolbox_tmpl.hrc#MID_DOCUMENT_CREATE_REPWIZ.#define.text
+msgid "Report Wizard..."
+msgstr "报表向导..."
+
+#: toolbox_tmpl.hrc#MID_DOCUMENT_NEW_AUTOPILOT.#define.text
+msgid "Form AutoPilot..."
+msgstr "窗体自动文件助理..."
+
+#: toolbox_tmpl.hrc#MID_NEW_TABLE_DESIGN.#define.text
+msgid "New ~Table Design"
+msgstr "新表格设计(~T)"
+
+#: toolbox_tmpl.hrc#MID_NEW_VIEW_DESIGN.#define.text
+msgid "New ~View Design"
+msgstr "新视图设计(~V)"
+
+#: toolbox_tmpl.hrc#MID_QUERY_EDIT_DESIGN.#define.text
+msgid "~Edit Query"
+msgstr "编辑查询(~E)"
+
+#: toolbox_tmpl.hrc#MID_QUERY_NEW_DESIGN.#define.text
+msgid "New ~Query (Design View)"
+msgstr "新建查询（设计视图）(~Q)"
+
+#: toolbox_tmpl.hrc#MID_QUERY_NEW_SQL.#define.text
+msgid "New Query (~SQL View)"
+msgstr "新建查询（~SQL 视图）"
+
+#: toolbox_tmpl.hrc#MID_QUERY_WIZARD.#define.text
+msgid "Query AutoPilot..."
+msgstr "查询向导..."
+
+#: toolbox_tmpl.hrc#MID_SBA_QRY_REFRESH.#define.text
+msgid "Refresh"
+msgstr "更新"
+
+#: table.src#ERR_INVALID_LISTBOX_ENTRY.errorbox.text
+msgid "The text you entered is not a list element. "
+msgstr "输入的文字不是列单单元。"
+
+#: table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_INSERTROWS.menuitem.text
+msgid "Insert Rows"
+msgstr "插入行"
+
+#: table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_TABED_PRIMARYKEY.menuitem.text
+msgid "Primary Key"
+msgstr "主键"
+
+#: table.src#PB_FORMAT.pushbutton.text
+msgid "~..."
+msgstr "~..."
+
+#: table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.querybox.text
+msgid ""
+"Before you can edit the indexes of a table, you have to save it.\n"
+"Do you want to save the changes now?"
+msgstr ""
+"在修改一个表格的索引之前必须先保存表格。\n"
+"是否要保存表格结构的修改内容？"
+
+#: table.src#TABLE_DESIGN_ALL_ROWS_DELETED.querybox.text
+msgid ""
+"You are trying to delete all the columns in the table. A table cannot exist "
+"without columns. Should the table be deleted from the database? If not, the "
+"table will remain unchanged."
+msgstr "您正在试图删除表格中所有的列。每个表格必须至少含有一列。要删除这个表格吗？否则，将不会修改这个表格的内容。"
+
+#: table.src#TABLE_DESIGN_SAVEMODIFIED.querybox.text
+msgid ""
+"The table has been changed.\n"
+"Do you want to save the changes?"
+msgstr ""
+"表格已经被修改。\n"
+"是否要保存修改的内容？"
+
+#: table.src#TABLE_QUERY_CONNECTION_LOST.querybox.text
+msgid ""
+"The connection to the database was lost! The table design can only be used "
+"with limited functionality without a connection.\n"
+"Reconnect?"
+msgstr ""
+"和数据库的连接已经关闭！您只能有限地使用表格设计的功能。\n"
+"是否要和数据库重建连接？"
+
+#: table.src#STR_AUTOINCREMENT_VALUE.string.text
+msgid "A~uto-increment statement"
+msgstr "自动递增陈述(~U)"
+
+#: table.src#STR_CHANGE_COLUMN_ATTRIBUTE.string.text
+msgid "change field attribute"
+msgstr "修改字段属性"
+
+#: table.src#STR_CHANGE_COLUMN_DESCRIPTION.string.text
+msgid "change field description"
+msgstr "修改字段说明"
+
+#: table.src#STR_CHANGE_COLUMN_NAME.string.text
+msgid "change field name"
+msgstr "修改字段名称"
+
+#: table.src#STR_CHANGE_COLUMN_TYPE.string.text
+msgid "change field type"
+msgstr "修改字段类型"
+
+#: table.src#STR_COLUMN_DESCRIPTION.string.text
+msgid "Column Description"
+msgstr "列说明"
+
+#: table.src#STR_COLUMN_NAME.string.text
+msgid "Column"
+msgstr "列"
+
+#: table.src#STR_DEFAULT_VALUE.string.text
+msgid "~Default value"
+msgstr "默认值(~D)"
+
+#: table.src#STR_FIELD_AUTOINCREMENT.string.text
+msgid "~AutoValue"
+msgstr "自动数值(~A)"
+
+#: table.src#STR_FIELD_REQUIRED.string.text
+msgid "~Entry required"
+msgstr "要求输入(~E)"
+
+#: table.src#STR_FORMAT.string.text
+msgid "Format example"
+msgstr "格式示范"
+
+#: table.src#STR_HELP_AUTOINCREMENT.string.text
+msgid ""
+"Choose if this field should contain AutoIncrement values.\n"
+"\n"
+"You can not enter data in fields of this type. An intrinsic value will be "
+"assigned to each new record automatically (resulting from the increment of "
+"the previous record)."
+msgstr ""
+"请选择这个字段是否应该含有自动递增的数值。\n"
+"\n"
+"您不能手动输入数据，因为每个新数据组会自动得到一个自己的数值(从它之前的数据组中通过递增方式得到)。"
+
+#: table.src#STR_HELP_AUTOINCREMENT_VALUE.string.text
+msgid ""
+"Enter an SQL statement for the auto-increment field.\n"
+"\n"
+"This statement will be directly transferred to the database when the table "
+"is created."
+msgstr ""
+"在此输入一个用于自动递增字段的 SQL 陈述。\n"
+"\n"
+"在生成表格的同时，这个陈述就会被直接传给数据库。"
+
+#: table.src#STR_HELP_BOOL_DEFAULT.string.text
+msgid ""
+"Select a value that is to appear in all new records as default.\n"
+"If the field is not to have a default value, select the empty string."
+msgstr ""
+"请选择一个用于每新增数据条目的标准数值。\n"
+"如果字段不应含有这个标准数值，您就选择一个空白的字串。"
+
+#: table.src#STR_HELP_DEFAULT_VALUE.string.text
+msgid ""
+"Enter a default value for this field.\n"
+"\n"
+"When you later enter data in the table, this string will be used in each new "
+"record for the field selected. It should, therefore, correspond to the cell "
+"format that needs to be entered below."
+msgstr ""
+"请在此为这个字段输入一个默认值。\n"
+"\n"
+"如果您以后在表格中输入数据，每个新的数据条目会采用这个数据格式。这样的设置可以满足以下的单元格格式的要求。"
+
+#: table.src#STR_HELP_FIELD_REQUIRED.string.text
+msgid ""
+"Activate this option if this field cannot contain NULL values, i.e. the user "
+"must always enter data."
+msgstr "如果这个字段内不允许使用零值而要求必须输入数据，请选中这个选项。"
+
+#: table.src#STR_HELP_FORMAT_BUTTON.string.text
+msgid "This is where you determine the output format of the data."
+msgstr "您能够在这里设置表格的打印格式。"
+
+#: table.src#STR_HELP_FORMAT_CODE.string.text
+msgid ""
+"This is where you see how the data would be displayed in the current format "
+"(use the button on the right to modify the format)."
+msgstr "您看到的是当前列数据采用的显示格式（您可以使用右边的按钮改变它）。"
+
+#: table.src#STR_HELP_LENGTH.string.text
+msgid ""
+"Determine the length data can have in this field.\n"
+"\n"
+"If decimal fields, then the maximum length of the number to be entered, if "
+"binary fields, then the length of the data block.\n"
+"The value will be corrected accordingly when it exceeds the maximum for this "
+"database."
+msgstr ""
+"请您设置这个字段中的数据长度。\n"
+"\n"
+"在十进制字段中设置的是数据最大长度，在二进制字段中设置的是数据块长度。\n"
+"如果这个数值大于数据库允许的最大值，数据库就会相应地更正这个数值。"
+
+#: table.src#STR_HELP_NUMERIC_TYPE.string.text
+msgid "Enter the number format."
+msgstr "请您在此设置数字类型。"
+
+#: table.src#STR_HELP_SCALE.string.text
+msgid "Specify the number of decimal places permitted in this field."
+msgstr "请为这个字段内的数字设置小数点位数。"
+
+#: table.src#STR_HELP_TEXT_LENGTH.string.text
+msgid "Enter the maximum text length permitted."
+msgstr "请设置输入文本的最大长度。"
+
+#: table.src#STR_LENGTH.string.text
+msgctxt "table.src#STR_LENGTH.string.text"
+msgid "~Length"
+msgstr "长度(~L)"
+
+#: table.src#STR_NO_TYPE_INFO_AVAILABLE.string.text
+msgid ""
+"No type information could be retrieved from the database.\n"
+"The table design mode is not available for this data source."
+msgstr ""
+"无法从数据库获得类型信息。\n"
+"不提供此数据源的表格设计模式。"
+
+#: table.src#STR_NUMERIC_TYPE.string.text
+msgid "~Type"
+msgstr "类型(~T)"
+
+#: table.src#STR_QRY_CONTINUE.string.text
+msgid "Continue anyway?"
+msgstr "您还是要继续？"
+
+#: table.src#STR_SCALE.string.text
+msgid "Decimal ~places"
+msgstr "小数点位数(~P)"
+
+#: table.src#STR_STAT_WARNING.string.text
+msgid "Warning!"
+msgstr "警告！"
+
+#: table.src#STR_TABED_UNDO_CELLMODIFIED.string.text
+msgid "Modify cell"
+msgstr "修改单元格"
+
+#: table.src#STR_TABED_UNDO_NEWROWINSERTED.string.text
+msgid "Insert new row"
+msgstr "新增行"
+
+#: table.src#STR_TABED_UNDO_PRIMKEY.string.text
+msgctxt "table.src#STR_TABED_UNDO_PRIMKEY.string.text"
+msgid "Insert/remove primary key"
+msgstr "新增或删除主关键字"
+
+#: table.src#STR_TABED_UNDO_ROWDELETED.string.text
+msgid "Delete row"
+msgstr "删除行"
+
+#: table.src#STR_TABED_UNDO_ROWINSERTED.string.text
+msgid "Insert row"
+msgstr "插入行"
+
+#: table.src#STR_TABED_UNDO_TYPE_CHANGED.string.text
+msgid "Modify field type"
+msgstr "修改字段类型"
+
+#: table.src#STR_TABLEDESIGN_ALTER_ERROR.string.text
+msgid ""
+"The column \"$column$\" could not be changed. Should the column instead be "
+"deleted and the new format appended?"
+msgstr "无法修改列 \"$column$\" 。是否要重新设置这个列的格式？"
+
+#: table.src#STR_TABLEDESIGN_CONNECTION_MISSING.string.text
+msgid ""
+"The table could not be saved due to problems connecting to the database."
+msgstr "未能够和数据库建立连接，因此无法保存表格。"
+
+#: table.src#STR_TABLEDESIGN_COULD_NOT_DROP_COL.string.text
+msgid "The column $column$ could not be deleted."
+msgstr "无法删除 $column$ 列。"
+
+#: table.src#STR_TABLEDESIGN_DATASOURCE_DELETED.string.text
+msgid ""
+"The table filter could not be adjusted because the data source has been "
+"deleted."
+msgstr "无法调整表格筛选，因为数据源已经被删除。"
+
+#: table.src#STR_TABLEDESIGN_DBFIELDTYPES.string.text
+msgid ""
+"Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;T"
+"ext (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small "
+"Integer;Tiny Integer;SQL "
+"Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
+msgstr ""
+"不明;文字;数字;日期/时间;日期;时间;是/否;货币;备忘录;计数器;图像;文字(固定);十进制;二进制(固定);二进制;BigInt;Double;"
+"Float;Real;Integer;Small Integer;Tiny Integer;SQL "
+"Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;其它;位(固定)"
+
+#: table.src#STR_TABLEDESIGN_DUPLICATE_NAME.string.text
+msgid ""
+"The table cannot be saved because column name \"$column$\" was assigned twice."
+msgstr "因为重复使用列名称 \"$column$\" ，所以无法保存这个表格。"
+
+#: table.src#STR_TABLEDESIGN_NO_PRIM_KEY.string.text
+msgid ""
+"A unique index or primary key is required for data record identification in "
+"this database.\n"
+"You can only enter data into this table when one of these two structural "
+"conditions has been met.\n"
+"\n"
+"Should a primary key be created now?"
+msgstr ""
+"识别数据库中的数据条目要求使用明确的索引或主关键字，\n"
+"在设置索引或主关键字后才能在表格中输入数据。\n"
+"\n"
+"现在要生成一个主关键字？"
+
+#: table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.string.text
+msgid "No primary key"
+msgstr "没有主关键字"
+
+#: table.src#STR_TABLEDESIGN_SAVE_ERROR.string.text
+msgid "Error while saving the table design"
+msgstr "保存表格设计时出错"
+
+#: table.src#STR_TABLEDESIGN_TITLE.string.text
+msgid " - %PRODUCTNAME Base: Table Design"
+msgstr "- %PRODUCTNAME Base: 表格设计"
+
+#: table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.string.text
+msgctxt "table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.string.text"
+msgid "Insert/remove primary key"
+msgstr "新增或删除主关键字"
+
+#: table.src#STR_TABPAGE_GENERAL.string.text
+msgid "General"
+msgstr "常规"
+
+#: table.src#STR_TAB_FIELD_COLUMN_DATATYPE.string.text
+msgid "Field Type"
+msgstr "字段类型"
+
+#: table.src#STR_TAB_FIELD_COLUMN_NAME.string.text
+msgid "Field Name"
+msgstr "字段名称"
+
+#: table.src#STR_TAB_FIELD_DATATYPE.string.text
+msgid "Field ~type"
+msgstr "字段类型(T)"
+
+#: table.src#STR_TAB_FIELD_LENGTH.string.text
+msgid "Field length"
+msgstr "字段长度"
+
+#: table.src#STR_TAB_FIELD_NAME.string.text
+msgid "Field name"
+msgstr "字段名称"
+
+#: table.src#STR_TAB_FIELD_NULLABLE.string.text
+msgid "Input required"
+msgstr "要求输入"
+
+#: table.src#STR_TAB_HELP_TEXT.string.text
+msgid "Description"
+msgstr "说明"
+
+#: table.src#STR_TAB_PROPERTIES.string.text
+msgid "Field Properties"
+msgstr "字段属性"
+
+#: table.src#STR_TAB_TABLE_DESCRIPTION.string.text
+msgid "Description:"
+msgstr "说明："
+
+#: table.src#STR_TAB_TABLE_PROPERTIES.string.text
+msgid "Table properties"
+msgstr "表格属性"
+
+#: table.src#STR_TBL_COLUMN_IS_KEYCOLUMN.string.text
+msgid ""
+"The column \"$column$\" belongs to the primary key. If the column is deleted, "
+"the primary key will also be deleted. Do you really want to continue?"
+msgstr "这个字段 \"$column$\" 属于主关键字。如果您删除这个字段，主关键字也将被一起删除。您真要删除这个字段？"
+
+#: table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.string.text
+msgid "Primary Key Affected"
+msgstr "和主关键字关联"
+
+#: table.src#STR_TEXT_LENGTH.string.text
+msgctxt "table.src#STR_TEXT_LENGTH.string.text"
+msgid "~Length"
+msgstr "长度(~L)"
+
+#: table.src#STR_VALUE_ASC.string.text
+msgid "Ascending"
+msgstr "向上"
+
+#: table.src#STR_VALUE_DESC.string.text
+msgid "Descending"
+msgstr "向下"
+
+#: table.src#STR_VALUE_NO.string.text
+msgid "No"
+msgstr "否"
+
+#: table.src#STR_VALUE_NONE.string.text
+msgid "<none>"
+msgstr "<无>"
+
+#: table.src#STR_VALUE_YES.string.text
+msgid "Yes"
+msgstr "是"
+
+#: relation.src#RELATION_DESIGN_SAVEMODIFIED.querybox.text
+msgid ""
+"The relation design has been changed.\n"
+"Do you want to save the changes?"
+msgstr ""
+"这个关系设计已经被修改。\n"
+"是否要保存这些修改内容？"
+
+#: relation.src#STR_QUERY_REL_COULD_NOT_CREATE.string.text
+msgid ""
+"The database could not create the relation. May be foreign keys for this "
+"kind of table aren't supported.\n"
+"Please check your documentation of the database."
+msgstr ""
+"数据库无法创建关系。可能不支持此种表的外键。\n"
+"请检查您的数据库文档。"
+
+#: relation.src#STR_QUERY_REL_CREATE.string.text
+msgid "Create..."
+msgstr "创建..."
+
+#: relation.src#STR_QUERY_REL_DELETE_WINDOW.string.text
+msgid ""
+"When you delete this table all corresponding relations will be deleted as "
+"well. Continue?"
+msgstr "如果删除这个表格，就会一同删除所有的从属关系。要继续？"
+
+#: relation.src#STR_QUERY_REL_EDIT.string.text
+msgid "Edit..."
+msgstr "编辑..."
+
+#: relation.src#STR_QUERY_REL_EDIT_RELATION.string.text
+msgid ""
+"This relation already exists. Do you want to edit it or create a new one?"
+msgstr "此关系已经存在。您是编辑它，还是创建一个新关系？"
+
+#: relation.src#STR_RELATIONDESIGN.string.text
+msgid " - %PRODUCTNAME Base: Relation design"
+msgstr "- %PRODUCTNAME Base: 关系设计"
+
+#: relation.src#STR_RELATIONDESIGN_NOT_AVAILABLE.string.text
+msgid "The database does not support relations."
+msgstr "这个数据库不支持关系功能！"
+
+#: WizardPages.src#WIZ_RTFCOPYTABLE.PB_CANCEL.cancelbutton.text
+msgid "~Cancel"
+msgstr "取消(~C)"
+
+#: WizardPages.src#TAB_WIZ_COPYTABLE.CB_PRIMARY_COLUMN.checkbox.text
+msgid "Crea~te primary key"
+msgstr "创建主关键字(~T)"
+
+#: WizardPages.src#TAB_WIZ_COPYTABLE.CB_USEHEADERLINE.checkbox.text
+msgid "Use first ~line as column names"
+msgstr "用首行作列名(~L)"
+
+#: WizardPages.src#TAB_WIZ_COLUMN_SELECT.FL_COLUMN_SELECT.fixedline.text
+msgid "Existing columns"
+msgstr "现存的列"
+
+#: WizardPages.src#TAB_WIZ_COPYTABLE.FL_OPTIONS.fixedline.text
+msgid "Options"
+msgstr "选项"
+
+#: WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_AUTO_TYPE.fixedline.text
+msgid "Automatic type recognition"
+msgstr "自动识别类型"
+
+#: WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_COLUMN_NAME.fixedline.text
+msgid "Column information"
+msgstr "列的信息"
+
+#: WizardPages.src#TAB_WIZ_COPYTABLE.FT_KEYNAME.fixedtext.text
+msgid "Name"
+msgstr "名称"
+
+#: WizardPages.src#TAB_WIZ_COPYTABLE.FT_TABLENAME.fixedtext.text
+msgid "Ta~ble name"
+msgstr "表格名称(~B)"
+
+#: WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.fixedtext.text
+msgid "Source table: \n"
+msgstr "源表格：\n"
+
+#: WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.fixedtext.text
+msgid "Destination table: \n"
+msgstr "目标表格：\n"
+
+#: WizardPages.src#TAB_WIZ_TYPE_SELECT.FT_AUTO.fixedtext.text
+msgid "Lines (ma~x)"
+msgstr "(最多的)行(~X)"
+
+#: WizardPages.src#WIZ_RTFCOPYTABLE.PB_HELP.helpbutton.text
+msgid "~Help"
+msgstr "帮助(~H)"
+
+#: WizardPages.src#RID_SBA_RTF_PKEYPOPUP.SID_TABLEDESIGN_TABED_PRIMARYKEY.menuitem.text
+msgid "Primary Key"
+msgstr "主键"
+
+#: WizardPages.src#WIZ_RTFCOPYTABLE.modaldialog.text
+msgid "Copy RTF Table"
+msgstr "复制 RTF 表格"
+
+#: WizardPages.src#WIZ_RTFCOPYTABLE.PB_OK.okbutton.text
+msgid "C~reate"
+msgstr "完成(~R)"
+
+#: WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.pushbutton.text
+msgctxt "WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.pushbutton.text"
+msgid "~All"
+msgstr "全部(~A)"
+
+#: WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_NONE.pushbutton.text
+msgid "Non~e"
+msgstr "无(~E)"
+
+#: WizardPages.src#WIZ_RTFCOPYTABLE.PB_NEXT.pushbutton.text
+msgid "~Next>"
+msgstr "继续 (~N)>"
+
+#: WizardPages.src#WIZ_RTFCOPYTABLE.PB_PREV.pushbutton.text
+msgid "< ~Back"
+msgstr "< 返回(~B)"
+
+#: WizardPages.src#TAB_WIZ_COPYTABLE.RB_APPENDDATA.radiobutton.text
+msgid "Append ~data"
+msgstr "附加数据(~D)"
+
+#: WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEF.radiobutton.text
+msgid "Def~inition"
+msgstr "定义(~I)"
+
+#: WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEFDATA.radiobutton.text
+msgid "De~finition and data"
+msgstr "定义和数据(~F)"
+
+#: WizardPages.src#TAB_WIZ_COPYTABLE.RB_VIEW.radiobutton.text
+msgid "A~s table view"
+msgstr "当作表格视图(~S)"
+
+#: WizardPages.src#STR_COPYTABLE_TITLE_COPY.string.text
+msgctxt "WizardPages.src#STR_COPYTABLE_TITLE_COPY.string.text"
+msgid "Copy table"
+msgstr "复制表格"
+
+#: WizardPages.src#STR_INVALID_TABLE_NAME.string.text
+msgid "This table name is not valid in the current database."
+msgstr "这不是当前数据库有效的表格名称。"
+
+#: WizardPages.src#STR_INVALID_TABLE_NAME_LENGTH.string.text
+msgid "Please change the table name. It is too long."
+msgstr "请您修改表格的名称。当前的名称太长了。"
+
+#: WizardPages.src#STR_SUGGEST_APPEND_TABLE_DATA.string.text
+msgid ""
+"Choose the option 'Append data' on the first page to append data to an "
+"existing table."
+msgstr "选择第一页上的“附加数据”选项可向现有表格中附加数据。"
+
+#: WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.string.text
+msgid "Apply columns"
+msgstr "采用列"
+
+#: WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.string.text
+msgid "Assign columns"
+msgstr "编排列"
+
+#: WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.string.text
+msgid "The following fields have already been set as primary keys:\n"
+msgstr "已经将下列字段设置为主关键字：\n"
+
+#: WizardPages.src#STR_WIZ_TABLE_COPY.string.text
+msgctxt "WizardPages.src#STR_WIZ_TABLE_COPY.string.text"
+msgid "Copy table"
+msgstr "复制表格"
+
+#: WizardPages.src#STR_WIZ_TYPE_SELECT_TITEL.string.text
+msgid "Type formatting"
+msgstr "类型格式化"
+
+#: dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.string.text
+msgid "The report, \"$file$\", requires the extension Oracle Report Builder."
+msgstr "报表 \"$file$\" 需要 Sun 报表构建器扩展。"
+
+#: dbumiscres.src#RSC_CHARSETS.1.string.text
+msgid "System"
+msgstr "系统"
+
+#: dbumiscres.src#STR_BUTTON_TEXT_ALL.string.text
+msgctxt "dbumiscres.src#STR_BUTTON_TEXT_ALL.string.text"
+msgid "~All"
+msgstr "全部(~A)"
+
+#: dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.string.text
+msgid "The document \"$file$\" could not be opened."
+msgstr "无法打开文档 \"$file$\"。"
+
+#: dbumiscres.src#STR_ERROR_DURING_CREATION.string.text
+msgid "Error during creation"
+msgstr "创建时出错"
+
+#: dbumiscres.src#STR_FILE_DOES_NOT_EXIST.string.text
+msgid "The file \"$file$\" does not exist."
+msgstr "文件 \"$file$\" 不存在。"
+
+#: dbumiscres.src#STR_MISSING_TABLES_XDROP.string.text
+msgid ""
+"The table cannot be deleted because the database connection does not support "
+"this."
+msgstr "因为数据库的连接不支持这个功能而无法删除这个表格。"
+
+#: dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.string.text
+msgid ""
+"The name '$#$' already exists.\n"
+"Please enter another name."
+msgstr ""
+"名称 '$#$' 已经存在。\n"
+"请输入其他名称。"
+
+#: dbumiscres.src#STR_REDO_COLON.string.text
+msgid "Redo:"
+msgstr "恢复撤消命令："
+
+#: dbumiscres.src#STR_UNDO_COLON.string.text
+msgid "Undo:"
+msgstr "撤消命令："
+
+#: dbumiscres.src#STR_UNEXPECTED_ERROR.string.text
+msgid "An unexpected error occurred. The operation could not be performed."
+msgstr "发生一个意外的错误。无法执行这个操作。"
+
+#: dbumiscres.src#STR_UNKNOWN_TYPE_FOUND.string.text
+msgid "No corresponding column type could be found for column '#1'."
+msgstr "无法为列'#1'找到合适的列类型。"
+
+#: dbumiscres.src#STR_WARNINGS_DURING_CONNECT.string.text
+msgid ""
+"Warnings were encountered while connecting to the data source. Press "
+"\"$buttontext$\" to view them."
+msgstr "连接到数据源时出现警告消息。按 \"$buttontext$\" 可查看这些警告消息。"
+
+#: sdbt_strings.src#STR_BASENAME_QUERY.string.text
+msgid "Query"
+msgstr "查询"
+
+#: sdbt_strings.src#STR_BASENAME_TABLE.string.text
+msgid "Table"
+msgstr "表格"
+
+#: sdbt_strings.src#STR_CONN_WITHOUT_QUERIES_OR_TABLES.string.text
+msgid "The given connection is no valid query and/or tables supplier."
+msgstr "给定的连接不是有效的查询和/或表格提供者。"
+
+#: sdbt_strings.src#STR_INVALID_COMMAND_TYPE.string.text
+msgid ""
+"Invalid command type - only TABLE and QUERY from "
+"com.sun.star.sdb.CommandType are allowed."
+msgstr "无效的命令类型 - 只允许使用 com.sun.star.sdb.CommandType 的 TABLE 和 QUERY 命令。"
+
+#: sdbt_strings.src#STR_INVALID_COMPOSITION_TYPE.string.text
+msgid ""
+"Invalid composition type - need a value from "
+"com.sun.star.sdb.tools.CompositionType."
+msgstr "无效的复合类型 - 需从 com.sun.star.sdb.tools.CompositionType 上获取值。"
+
+#: sdbt_strings.src#STR_NO_TABLE_OBJECT.string.text
+msgid "The given object is no table object."
+msgstr "给定的对象中没有表对象。"
+
+#: sdbt_strings.src#STR_QUERY_AND_TABLE_DISTINCT_NAMES.string.text
+msgid ""
+"You cannot give a table and a query the same name. Please use a name which "
+"is not yet used by a query or table."
+msgstr "表格和查询不能使用同一名称。请使用表格或查询尚未使用的名称。"
+
+#: strings.src#RID_NO_SUCH_DATA_SOURCE.string.text
+msgid ""
+"Error accessing data source '$name$':\n"
+"$error$"
+msgstr ""
+"访问数据源 '$name$' 错误：\n"
+"$error$"
+
+#: strings.src#RID_STR_COLUMN_ALTER_BY_INDEX.string.text
+msgid ""
+"The driver does not support the modification of column descriptions by "
+"changing the index."
+msgstr "驱动程序不支持通过修改索引修改列说明。"
+
+#: strings.src#RID_STR_COLUMN_ALTER_BY_NAME.string.text
+msgid ""
+"The driver does not support the modification of column descriptions by "
+"changing the name."
+msgstr "驱动程序不支持通过修改名称修改列说明。"
+
+#: strings.src#RID_STR_COLUMN_MUST_VISIBLE.string.text
+msgid "The column '%name' must be visible as a column."
+msgstr "列 %name 必须为可见列。"
+
+#: strings.src#RID_STR_COLUMN_NOT_SEARCHABLE.string.text
+msgid "The column is not searchable!"
+msgstr "该列不可搜索！"
+
+#: strings.src#RID_STR_COLUMN_NOT_VALID.string.text
+msgid "The column is not valid."
+msgstr "该列无效。"
+
+#: strings.src#RID_STR_COLUMN_UNKNOWN_PROP.string.text
+msgid "The column does not support the property '%value'."
+msgstr "该列不支持属性 %value。"
+
+#: strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.string.text
+msgid ""
+"The SQL command leading to this error is:\n"
+"\n"
+"$command$"
+msgstr ""
+"导致出现此错误的 SQL 命令是:\n"
+"\n"
+"$command$"
+
+#: strings.src#RID_STR_CONFLICTING_NAMES.string.text
+msgid ""
+"There are tables in the database whose names conflict with the names of "
+"existing queries. To make full use of all queries and tables, make sure they "
+"have distinct names."
+msgstr "数据库中的表格名称与现有查询冲突。要充分使用所有的查询和表格，请确保它们具有不同的名称。"
+
+#: strings.src#RID_STR_CONNECTION_INVALID.string.text
+msgid "No connection could be established."
+msgstr "无法建立连接！"
+
+#: strings.src#RID_STR_CONNECTION_REQUEST.string.text
+msgid "A connection for the following URL was requested \"$name$\"."
+msgstr "已请求以下 URL \"$name$\" 连接。"
+
+#: strings.src#RID_STR_COULDNOTCONNECT_NODRIVER.string.text
+msgid ""
+"The connection to the external data source could not be established. No SDBC "
+"driver was found for the given URL."
+msgstr "无法与外部数据源建立连接。无法在指定的 URL 处找到 SDBC 驱动程序。"
+
+#: strings.src#RID_STR_COULDNOTCONNECT_UNSPECIFIED.string.text
+msgid ""
+"The connection to the external data source could not be established. An "
+"unknown error occurred. The driver is probably defective."
+msgstr "无法与外部数据源建立连接。出现了一个不明的错误。可能是驱动程序已经损坏。"
+
+#: strings.src#RID_STR_COULDNOTLOAD_MANAGER.string.text
+msgid ""
+"The connection to the external data source could not be established. The "
+"SDBC driver manager could not be loaded."
+msgstr "无法与外部数据源建立连接。无法装入 SDBC 驱动程序管理器。"
+
+#: strings.src#RID_STR_CURSOR_BEFORE_OR_AFTER.string.text
+msgid "The cursor points to before the first or after the last row."
+msgstr "游标指向第一行之前或最后一行之后。"
+
+#: strings.src#RID_STR_DATASOURCE_NOT_STORED.string.text
+msgid ""
+"The data source was not saved. Please use the interface XStorable to save "
+"the data source."
+msgstr "未保存数据源。请使用界面 XStorable 保存数据源。"
+
+#: strings.src#RID_STR_ERROR_WHILE_SAVING.string.text
+msgid ""
+"Could not save the document to $location$:\n"
+"$message$"
+msgstr ""
+"无法保存文档到 $location$：\n"
+"$message$"
+
+#: strings.src#RID_STR_EXPRESSION1.string.text
+msgid "Expression1"
+msgstr "Expression1"
+
+#: strings.src#RID_STR_FILE_DOES_NOT_EXIST.string.text
+msgid "The file \"$file$\" does not exist."
+msgstr "文件 \"$file$\" 不存在。"
+
+#: strings.src#RID_STR_FORM.string.text
+msgid "Form"
+msgstr "表单"
+
+#: strings.src#RID_STR_INTERNAL_ERROR.string.text
+msgid "Internal error: no statement object provided by the database driver."
+msgstr "内部错误：数据库驱动没有提供语句对象。"
+
+#: strings.src#RID_STR_INVALID_CURSOR_STATE.string.text
+msgid "Invalid cursor state."
+msgstr "游标状态无效。"
+
+#: strings.src#RID_STR_INVALID_INDEX.string.text
+msgid "Invalid column index."
+msgstr "列索引无效。"
+
+#: strings.src#RID_STR_MISSING_EXTENSION.string.text
+msgid "The extension is not installed."
+msgstr "扩展没有安装。"
+
+#: strings.src#RID_STR_NAME_ALREADY_USED.string.text
+msgid "There already is an object with the given name."
+msgstr "给定名称的对象已存在。"
+
+#: strings.src#RID_STR_NAME_MUST_NOT_BE_EMPTY.string.text
+msgid "The name must not be empty."
+msgstr "名称不能为空。"
+
+#: strings.src#RID_STR_NAME_NOT_FOUND.string.text
+msgid "Unable to find the document '$name$'."
+msgstr "无法找到文档 '$name$'。"
+
+#: strings.src#RID_STR_NEED_CONFIG_WRITE_ACCESS.string.text
+msgid ""
+"You have no write access to the configuration data the object is based on."
+msgstr "您没有权限读取这个对象的配置数据。"
+
+#: strings.src#RID_STR_NOT_SEQUENCE_INT8.string.text
+msgid "The value of the columns is not of the type Sequence<sal_Int8>."
+msgstr "该列的值类型不是 Sequence<sal_Int8>。"
+
+#: strings.src#RID_STR_NOT_SUPPORTED_BY_DRIVER.string.text
+msgid "The driver does not support this function."
+msgstr "驱动程序不支持这项功能。"
+
+#: strings.src#RID_STR_NO_ABS_ZERO.string.text
+msgid "An 'absolute(0)' call is not allowed."
+msgstr "不允许 absolute(0) 调用。"
+
+#: strings.src#RID_STR_NO_ALTER_COLUMN_DEF.string.text
+msgid "The driver does not support the modification of column descriptions."
+msgstr "驱动程序不支持修改列说明。"
+
+#: strings.src#RID_STR_NO_BOOKMARK_BEFORE_OR_AFTER.string.text
+msgid "The rows before the first and after the last row don't have a bookmark."
+msgstr "第一行之前或最后一行之后的行没有书签。"
+
+#: strings.src#RID_STR_NO_BOOKMARK_DELETED.string.text
+msgid "The current row is deleted, and thus doesn't have a bookmark."
+msgstr "当前行被删除，因此没有书签。"
+
+#: strings.src#RID_STR_NO_COLUMN_ADD.string.text
+msgid "The adding of columns is not supported."
+msgstr "不支持添加列。"
+
+#: strings.src#RID_STR_NO_COLUMN_DROP.string.text
+msgid "The dropping of columns is not supported."
+msgstr "不支持删除列。"
+
+#: strings.src#RID_STR_NO_CONDITION_FOR_PK.string.text
+msgid "The WHERE condition could not be created for the primary key."
+msgstr "无法为主关键字创建 WHERE 条件。"
+
+#: strings.src#RID_STR_NO_DELETEROW.string.text
+msgid "A row cannot be deleted in this state."
+msgstr "在此状态下无法删除行。"
+
+#: strings.src#RID_STR_NO_DELETE_BEFORE_AFTER.string.text
+msgid "Cannot delete the before-first or after-last row."
+msgstr "无法删除第一行之前或最后一行之后的行。"
+
+#: strings.src#RID_STR_NO_DELETE_INSERT_ROW.string.text
+msgid "Cannot delete the insert-row."
+msgstr "无法删除插入的行。"
+
+#: strings.src#RID_STR_NO_DELETE_PRIVILEGE.string.text
+msgid "DELETE privilege not available."
+msgstr "没有删除权限。"
+
+#: strings.src#RID_STR_NO_EMBEDDING.string.text
+msgid "Embedding of database documents is not supported."
+msgstr "不支持数据库文档嵌入。"
+
+#: strings.src#RID_STR_NO_INSERT_PRIVILEGE.string.text
+msgid "INSERT privilege not available."
+msgstr "没有插入权限。"
+
+#: strings.src#RID_STR_NO_MOVETOINSERTROW_CALLED.string.text
+msgid ""
+"A new row cannot be inserted when the ResultSet is not first moved to the "
+"insert row."
+msgstr "如果未先将 ResultSet 移到插入行，则无法插入新行。"
+
+#: strings.src#RID_STR_NO_NULL_OBJECTS_IN_CONTAINER.string.text
+msgid "The container cannot contain NULL objects."
+msgstr "容器不包含 NULL 对象。"
+
+#: strings.src#RID_STR_NO_REFESH_AFTERLAST.string.text
+msgid ""
+"A row cannot be refreshed when the ResultSet is positioned after the last "
+"row."
+msgstr "ResultSet 位于最后一行之后时，无法刷新行。"
+
+#: strings.src#RID_STR_NO_RELATIVE.string.text
+msgid "Relative positioning is not allowed in this state."
+msgstr "此状态下不允许相对定位。"
+
+#: strings.src#RID_STR_NO_SQL_COMMAND.string.text
+msgid "No SQL command was provided."
+msgstr "未提供 SQL 命令。"
+
+#: strings.src#RID_STR_NO_SUB_FOLDER.string.text
+msgid "There exists no folder named \"$folder$\"."
+msgstr "不存在名为 \"$folder$\" 的文件夹。"
+
+#: strings.src#RID_STR_NO_TABLE_RENAME.string.text
+msgid "The driver does not support table renaming."
+msgstr "驱动程序不支持表格重命名。"
+
+#: strings.src#RID_STR_NO_UPDATEROW.string.text
+msgid "A row cannot be modified in this state"
+msgstr "在此状态下无法修改行"
+
+#: strings.src#RID_STR_NO_UPDATE_MISSING_CONDITION.string.text
+msgid "Values could not be modified, due to a missing condition statement."
+msgstr "无法修改值，因为缺少条件语句。"
+
+#: strings.src#RID_STR_NO_VALUE_CHANGED.string.text
+msgid "No values were modified."
+msgstr "未修改任何值。"
+
+#: strings.src#RID_STR_NO_XQUERIESSUPPLIER.string.text
+msgid "The interface XQueriesSupplier is not available."
+msgstr "接口 XQueriesSupplier 不可用。"
+
+#: strings.src#RID_STR_NO_XRESULTSETUPDATE.string.text
+msgid ""
+"Values could not be inserted. The XResultSetUpdate interface is not "
+"supported by ResultSet."
+msgstr "无法插入值。ResultSet 不支持 XResultSetUpdate 接口。"
+
+#: strings.src#RID_STR_NO_XROWUPDATE.string.text
+msgid ""
+"Values could not be inserted. The XRowUpdate interface is not supported by "
+"ResultSet."
+msgstr "无法插入值。ResultSet 不支持 XRowUpdate 接口。"
+
+#: strings.src#RID_STR_OBJECT_ALREADY_CONTAINED.string.text
+msgid "The object already is, with a different name, part of the container."
+msgstr "有不同名称的对象属于此容器。"
+
+#: strings.src#RID_STR_OBJECT_CONTAINER_MISMATCH.string.text
+msgid "This object cannot be part of this container."
+msgstr "对象不属于此容器。"
+
+#: strings.src#RID_STR_ONLY_QUERY.string.text
+msgid ""
+"The given command is not a SELECT statement.\n"
+"Only queries are allowed."
+msgstr ""
+"所给命令不是 SELECT 语句。\n"
+"仅允许查询。"
+
+#: strings.src#RID_STR_QUERY_DOES_NOT_EXIST.string.text
+msgid "There exists no query named \"$table$\"."
+msgstr "不存在名为 \"$table$\" 的查询。"
+
+#: strings.src#RID_STR_REPORT.string.text
+msgid "Report"
+msgstr "报表"
+
+#: strings.src#RID_STR_RESULT_IS_READONLY.string.text
+msgid "Result set is read only."
+msgstr "结果数据只读。"
+
+#: strings.src#RID_STR_ROW_ALREADY_DELETED.string.text
+msgid "Current row is already deleted."
+msgstr "当前行已经删除。"
+
+#: strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.string.text
+msgid "The SQL command does not describe a result set."
+msgstr "SQL 命令无法描述结果集。"
+
+#: strings.src#RID_STR_TABLE_DOES_NOT_EXIST.string.text
+msgid "There exists no table named \"$table$\"."
+msgstr "不存在名为 \"$table$\" 的表格。"
+
+#: strings.src#RID_STR_TABLE_IS_FILTERED.string.text
+msgid ""
+"The table $name$ already exists. It is not visible because it has been "
+"filtered out."
+msgstr "表格 $name$ 已经存在。因为已经筛选出这个表格，所以无法显示它。"
+
+#: strings.src#RID_STR_TRIED_OPEN_TABLE.string.text
+msgid "Tried to open the table $name$."
+msgstr "已经尝试过打开表格 $name$ 。"
+
+#: strings.src#RID_STR_UPDATE_FAILED.string.text
+msgid "Current row could not be updated."
+msgstr "当前行可能不会被更新。"

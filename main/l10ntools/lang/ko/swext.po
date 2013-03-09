@@ -1,0 +1,836 @@
+"X-Accelerator-Marker: ~\n"
+
+#: wiki.xhp#tit.help.text
+msgctxt "wiki.xhp#tit.help.text"
+msgid "@WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@"
+
+#: wiki.xhp#bm_id3154408.help.text
+msgid ""
+"<bookmark_value>Wiki;@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_va"
+"lue>@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>extensions;Me"
+"diaWiki</bookmark_value>"
+msgstr ""
+"<bookmark_value>위키;@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_valu"
+"e>@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>확장;MediaWiki</b"
+"ookmark_value>"
+
+#: wiki.xhp#hd_id5993530.help.text
+msgctxt "wiki.xhp#hd_id5993530.help.text"
+msgid "@WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@"
+
+#: wiki.xhp#par_id9647511.help.text
+msgid ""
+"<ahelp hid=\".\">By using the @WIKIEXTENSIONPRODUCTNAME@ you can upload your "
+"current Writer text document to a MediaWiki server. After uploading, all "
+"Wiki users can read your document on the Wiki.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">@WIKIEXTENSIONPRODUCTNAME@을 사용함으로써 현재의 Writer 텍스트 문서를 "
+"MediaWiki 서버로 올릴 수 있습니다. 올린 후에는 모든 위키 사용자들이 위키에서 문서를 읽을 수 있게 됩니다.</ahelp>"
+
+#: wiki.xhp#par_id6468703.help.text
+msgid ""
+"<ahelp hid=\".\">Choose <item type=\"menuitem\">File - Send - To "
+"MediaWiki</item> to upload the current Writer document to a MediaWiki "
+"server.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\"><item type=\"menuitem\">파일 - 보내기 - MediaWiki로</item>를 선택하면 현재의 "
+"Writer 문서가 MediaWiki 로 업로드합니다.</ahelp>"
+
+#: wiki.xhp#hd_id4554582.help.text
+msgid "System Requirements"
+msgstr "시스템 요구사항"
+
+#: wiki.xhp#par_id2597430.help.text
+msgid "StarOffice/StarSuite 9"
+msgstr "StarOffice/StarSuite 9"
+
+#: wiki.xhp#par_id8430738.help.text
+msgid "OpenOffice.org 3.0"
+msgstr "OpenOffice.org 3.0"
+
+#: wiki.xhp#par_id9340495.help.text
+msgid "Java Runtime Environment 1.4"
+msgstr "Java Runtime Environment 1.4"
+
+#: wiki.xhp#par_id7387615.help.text
+msgid ""
+"A Wiki account on a supported <link "
+"href=\"http://www.mediawiki.org/wiki/MediaWiki\">MediaWiki</link> server"
+msgstr ""
+"<link href=\"http://www.mediawiki.org/wiki/MediaWiki\">MediaWiki</link> 서버의 위키 "
+"계정"
+
+#: wiki.xhp#hd_id8047120.help.text
+msgid "Installing @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@ 설치 과정"
+
+#: wiki.xhp#par_id4277169.help.text
+msgid ""
+"Before you install the @WIKIEXTENSIONPRODUCTNAME@, ensure that %PRODUCTNAME "
+"uses a Java Runtime Environment (JRE). To check the status of the JRE, "
+"choose <item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Java</item>. "
+"Ensure that \"Use a Java runtime environment\" is marked and that a Java "
+"runtime folder is selected in the big listbox. If no JRE was activated, then "
+"activate a JRE 1.4 or later and restart %PRODUCTNAME."
+msgstr ""
+"@WIKIEXTENSIONPRODUCTNAME@을 설치하기 전에 StarOffice 또는 OpenOffice.org 에서 JRE(Java "
+"Runtime Environment)를 사용하고 있는지 확인하십시요. JRE의 상태를 확인하려면, <item "
+"type=\"menuitem\">도구 - 옵션 - StarOffice/OpenOffice.org - Java</item>를 선택하십시요. "
+"\"Java runtime environment 사용\"의 체크 여부와 큰 목록상자에서 Java 런타임 폴더가 선택되었는지 확인하십시요. "
+"JRE가 활성화되지 않았다면, JRE 1.4 또는 그 이상의 버전을 활성화한 후 StarOffice/OpenOffice.org를 "
+"재시작하십시요."
+
+#: wiki.xhp#hd_id567339.help.text
+msgid "To Install the @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@ 설치하기"
+
+#: wiki.xhp#par_id1732230.help.text
+msgctxt "wiki.xhp#par_id1732230.help.text"
+msgid ""
+"In a Writer window, choose <item type=\"menuitem\">Tools - Extension "
+"Manager</item>."
+msgstr "라이터 창에서 <item type=\"menuitem\">도구 - 확장 관리자</item>를 선택하십시오."
+
+#: wiki.xhp#par_id4338511.help.text
+msgid "In the Extension Manager dialog, click Add."
+msgstr "확장 관리자 대화 상자에서 추가를 클릭하십시요."
+
+#: wiki.xhp#par_id5882442.help.text
+msgid ""
+"Locate the @WIKIEXTENSIONFILENAME@.oxt file, click Open, and then click "
+"Close. "
+msgstr "@WIKIEXTENSIONFILENAME@.oxt 파일의 위치를 지정한 후, 열기를 클릭하고 닫기를 클릭합니다. "
+
+#: wiki.xhp#par_id4008911.help.text
+msgid "Close %PRODUCTNAME, and close also the Quickstarter if enabled."
+msgstr "%PRODUCTNAME을(를) 닫고 빠른 시작(활성화되어 있는 경우)을 닫습니다."
+
+#: wiki.xhp#par_id265511.help.text
+msgid ""
+"Restart the software, open a text document, then choose <item "
+"type=\"menuitem\">Tools - Options - Internet - MediaWiki</item> to enter your "
+"Wiki settings. See \"To Connect To a Wiki\" below."
+msgstr ""
+"소프트웨어를 재시작한 다음, 텍스트 문서를 열고 <item type=\"menuitem\">도구 - 옵션 - 인터넷 - "
+"MediaWiki</item>를 열어 위키 개인 설정 내용을 입력합니다. \"위키에 연결하기\" 항목을 참조하십시요."
+
+#: wiki.xhp#hd_id3569444.help.text
+msgid "To Remove the @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@ 제거하기"
+
+#: wiki.xhp#par_id2655110.help.text
+msgctxt "wiki.xhp#par_id2655110.help.text"
+msgid ""
+"In a Writer window, choose <item type=\"menuitem\">Tools - Extension "
+"Manager</item>."
+msgstr "Writer 창에서 <item type=\"menuitem\">도구 - 확장 관리자</item>를 선택하십시요."
+
+#: wiki.xhp#par_id9504379.help.text
+msgid "Click the plus sign (+) in front of My Extensions."
+msgstr "내 확장 앞에 있는 더하기 기호(+)를 클릭하십시요."
+
+#: wiki.xhp#par_id8431348.help.text
+msgid "Select the extension, click Remove, and then click Close."
+msgstr "확장을 선택한 후, 제거를 클릭하고 닫기를 클릭합니다."
+
+#: wiki.xhp#hd_id5316019.help.text
+msgid "To Connect to a Wiki"
+msgstr "위키에 연결하기"
+
+#: wiki.xhp#par_id2381969.help.text
+msgid ""
+"Note: You can store your user name and password for all respective dialogs "
+"inside %PRODUCTNAME. The password will be stored in a secure way, where "
+"access is maintained by a master password. To enable the master password, "
+"choose <item type=\"menuitem\">Tools - Options - %PRODUCTNAME - "
+"Security</item>."
+msgstr ""
+"참고: 각각의 모든 대화 상자에 사용되는 사용자 이름과 암호를 StarOffice/OpenOffice.org 내부에 저장할 수 있습니다. "
+"암호는 보안된 방식으로 저장되며 마스터 암호에 의해 접근할 수 있습니다. 마스터 암호를 사용하려면, <item "
+"type=\"menuitem\">도구 - 옵션 - StarOffice/OpenOffice.org - 보안</item>을 선택하십시요."
+
+#: wiki.xhp#par_id3751640.help.text
+msgid ""
+"Note: If you connect to the web using a proxy server, enter the proxy "
+"information to <item type=\"menuitem\">Tools - Options - Internet - "
+"Proxy</item>, and restart the software."
+msgstr ""
+"참고: 프록시 서버를 통해 웹에 접속한다면, 프록시 정보를 <item type=\"menuitem\">도구 - 정보 - 인터넷 - "
+"프록시</item>를 선택하여 입력하고, 소프트웨어를 재시작해주십시요."
+
+#: wiki.xhp#par_id9533677.help.text
+msgid ""
+"Open a Writer document, and choose <item type=\"menuitem\">Tools - Options - "
+"Internet - MediaWiki</item>."
+msgstr ""
+"Writer 문서를 연 뒤, <item type=\"menuitem\">도구 - 옵션 - 인터넷 - MediaWiki</item>를 "
+"선택하십시요."
+
+#: wiki.xhp#par_id368968.help.text
+msgid ""
+"In the <link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\">Options</link> "
+"dialog, click Add."
+msgstr ""
+"<link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\">옵션</link> 대화 상자에서 추가를 누르십시요."
+
+#: wiki.xhp#par_id6962187.help.text
+msgid ""
+"In the <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> "
+"dialog, enter the account information for the Wiki."
+msgstr ""
+"<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link>대화 상자에서 위키에 "
+"관한 계정 정보를 입력하십시요."
+
+#: wiki.xhp#par_id5328836.help.text
+msgid ""
+"In the URL textbox, enter the address of a Wiki that you want to connect to."
+msgstr "URL 텍스트 상자에 연결하고자 하는 위키의 주소를 입력하십시요."
+
+#: wiki.xhp#par_id389416.help.text
+msgid "You can copy the URL from a web browser and paste it into the textbox."
+msgstr "웹브라우저에서 URL을 복사해서 텍스트 상자에 붙여넣을 수 있습니다."
+
+#: wiki.xhp#par_id5906552.help.text
+msgid "In the Username box, enter your user ID for your Wiki account."
+msgstr "사용자 이름 상자에 위키 계정의 사용자 ID를 입력합니다."
+
+#: wiki.xhp#par_id9297158.help.text
+msgid ""
+"If the Wiki allows anonymous write access, you can leave the Username and "
+"Password boxes empty."
+msgstr "위키가 익명으로 기록을 할 수 있을 때에는 사용자 이름과 암호를 입력하는 상자를 비워둘 수 있습니다."
+
+#: wiki.xhp#par_id8869594.help.text
+msgid ""
+"In the Password box, enter the password for your Wiki account, then click "
+"OK."
+msgstr "암호 상자에 위키 계정의 암호를 입력하고, 확인을 클릭합니다."
+
+#: wiki.xhp#par_id292062.help.text
+msgid ""
+"Optionally enable \"Save password\" to save the password between sessions. A "
+"master password is used to maintain access to all saved passwords. Choose "
+"<item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Security</item> to "
+"enable the master password. \"Save password\" is unavailable when the master "
+"password is not enabled."
+msgstr ""
+"세션에 암호를 저정하기 위한 \"암호 저장\"은 선택적으로 활성화할 수 있습니다. 마스터 암호는 저장된 모든 암호에 접근하는 데에 "
+"사용됩니다. <item type=\"menuitem\">도구 - 옵션 - StarOffice/OpenOffice.org - "
+"보안</item>을 선택하면 마스터 암호를 활성화할 수 있습니다. \"암호 저장\"은 마스터 암호가 활성화되지 않은 경우 사용할 수 "
+"없습니다."
+
+#: wiki.xhp#hd_id7044892.help.text
+msgid "To Create a New Wiki Page"
+msgstr "새 위키 페이지 만들기"
+
+#: wiki.xhp#par_id3514206.help.text
+msgid "Open a Writer document."
+msgstr "Writer 문서를 엽니다."
+
+#: wiki.xhp#par_id944853.help.text
+msgid ""
+"Write the content of the Wiki page. You can use formatting like text "
+"formats, headings, footnotes, and more. See the <link "
+"href=\"@WIKIEXTENSIONID@/wikiformats.xhp\">list of supported formats</link>."
+msgstr ""
+"위키 페이지의 내용을 씁니다. 텍스트 형식이나 제목, 설명 등의 형식을 사용할 수 있습니다. <link "
+"href=\"@WIKIEXTENSIONID@/wikiformats.xhp\">지원되는 형식 목록</link>을 참조하십시요."
+
+#: wiki.xhp#par_id4566484.help.text
+msgid "Choose <item type=\"menuitem\">File - Send - To MediaWiki</item>."
+msgstr "<item type=\"menuitem\">파일 - 보내기 - MediaWiki로</item>를 선택합니다."
+
+#: wiki.xhp#par_id228278.help.text
+msgid ""
+"In the <link href=\"@WIKIEXTENSIONID@/wikisend.xhp\">Send to MediaWiki</link> "
+"dialog, specify the settings for your entry."
+msgstr ""
+"<link href=\"@WIKIEXTENSIONID@/wikisend.xhp\">MediaWiki로 보내기</link> 대화 상자에 설정 "
+"사항을 입력합니다."
+
+#: wiki.xhp#par_id2564165.help.text
+msgid "<emph>MediaWiki server</emph>: Select the Wiki."
+msgstr "<emph>MediaWiki 서버</emph>: 위키를 선택합니다."
+
+#: wiki.xhp#par_id5566576.help.text
+msgid ""
+"<emph>Title</emph>: Type the title of your page. Type the title of an "
+"existing page to overwrite the page with your current text document. Type a "
+"new title to create a new page on the Wiki."
+msgstr ""
+"<emph>주제</emph>: 페이지의 주제를 입력하십시요. 현재 텍스트 문서로 이루어진 페이지로 덮어쓰려면 존재하는 주제를 "
+"입력하십시요. 위키에 새 페이지를 만드려면 새 주제를 입력하십시요."
+
+#: wiki.xhp#par_id9688711.help.text
+msgid "<emph>Summary</emph>: Enter an optional short summary of your page."
+msgstr "<emph>요약</emph>: 페이지에 대한 선택적인 간단한 요약을 입력합니다."
+
+#: wiki.xhp#par_id4123661.help.text
+msgid ""
+"<emph>This is a minor edit</emph>: Check this box to mark the uploaded page "
+"as a minor edit of the already existing page with the same title."
+msgstr ""
+"<emph>사소한 수정</emph>: 이미 같은 이름으로 존재하는 페이지에 업로드할 때 사소한 수정임을 표시하려면 이 상자에 "
+"체크하십시요."
+
+#: wiki.xhp#par_id452284.help.text
+msgid ""
+"<emph>Show in web browser</emph>: Check this box to open your system web "
+"browser and show the uploaded Wiki page."
+msgstr "<emph>웹브라우저로 보기</emph>: 시스템의 웹브라우저를 열어서 업로드된 위키페이지를 보려면 이 상자를 체크하십시요."
+
+#: wiki.xhp#par_id8346812.help.text
+msgid "Click Send."
+msgstr "보내기를 누릅니다."
+
+#: wikiaccount.xhp#tit.help.text
+msgctxt "wikiaccount.xhp#tit.help.text"
+msgid "MediaWiki"
+msgstr "MediaWiki"
+
+#: wikiaccount.xhp#hd_id960722.help.text
+msgctxt "wikiaccount.xhp#hd_id960722.help.text"
+msgid "MediaWiki"
+msgstr "MediaWiki"
+
+#: wikiaccount.xhp#par_id4571672.help.text
+msgid ""
+"Use the MediaWiki dialog to add or edit your MediaWiki account settings."
+msgstr "MediaWiki 대화 상자를 사용하여 MediaWiki 계정 설정을 추가하거나 편집할 수 있습니다."
+
+#: wikiaccount.xhp#par_id7631458.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Enter the URL of a MediaWiki server, "
+"starting with http://</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">http:// 로 시작하는 MediaWiki 서버의 URL을 "
+"입력하십시요</ahelp>"
+
+#: wikiaccount.xhp#par_id7862483.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Enter your user name on the MediaWiki "
+"server. Leave empty for anonymous access.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">MediaWiki 서버에서의 사용자명을 입력하십시요. 익명 연결을 하려면 "
+"빈칸으로 남겨두십시요.</ahelp>"
+
+#: wikiaccount.xhp#par_id1113010.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Enter your password on the MediaWiki "
+"server. Leave empty for anonymous access.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">MediaWiki 서버에서의 암호를 입력하십시요. 익명 연결을 하려면 "
+"빈칸으로 남겨두십시요.</ahelp>"
+
+#: wikiaccount.xhp#par_id656758.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Enable to store your password between "
+"sessions. The master password must be enabled, see <item "
+"type=\"menuitem\">Tools - Options - %PRODUCTNAME - Security</item>.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">세선 내에 암호를 저장하는 기능흘 활성화합니다. 마스터 암호는 반드시 "
+"활성화되어있어야 하며, <item type=\"menuitem\">도구 - 옵션 - StarOffice/OpenOffice.org - "
+"보안</item>을 참조하십시요.</ahelp>"
+
+#: wikiaccount.xhp#par_id3112582.help.text
+msgid ""
+"Enter the Internet address of a Wiki server in a format like "
+"http://wiki.services.openoffice.org/wiki or copy the URL from a web browser."
+msgstr ""
+"http://wiki.services.openoffice.org/wiki 또는 웹브라우저에서 복사한 URL과 같은 위키 서버의 인터넷 "
+"주소를 입력하십시요."
+
+#: wikiaccount.xhp#par_id628070.help.text
+msgid ""
+"If the Wiki allows anonymous access, you can leave the account text boxes "
+"empty. Else enter your user name and password."
+msgstr "위키가 익명 연결을 허락한다면, 계정 텍스트 상자를 비워둘 수 있습니다. 그렇지 않다면 사용자 이름과 암호를 입력하십시요."
+
+#: wikiaccount.xhp#par_id9046601.help.text
+msgid ""
+"If you have enabled the master password feature on the Security tab page of "
+"the Tools - Options - %PRODUCTNAME dialog, then the software can store your "
+"password and automatically insert the data where necessary. Enable the \"Save "
+"password\" checkbox to store your password."
+msgstr ""
+"도구 - 옵션 - StarOffice/OpenOffice.org 대화 상자의 보안 탭에서 마스터 암호 기능을 사용하도록 설정하셨다면, "
+"소프트웨어는 암호를 저장할 수 있으며 자동적으로 필요에 따라서 자료를 삽입할 수 있습니다. 암호를 저장하려면 \"암호 저장\" 체크 상자를 "
+"사용가능하도록 하십시요."
+
+#: wikiformats.xhp#tit.help.text
+msgctxt "wikiformats.xhp#tit.help.text"
+msgid "MediaWiki Formats"
+msgstr "MediaWiki 형식"
+
+#: wikiformats.xhp#hd_id3743095.help.text
+msgctxt "wikiformats.xhp#hd_id3743095.help.text"
+msgid "MediaWiki Formats"
+msgstr "MediaWiki 형식"
+
+#: wikiformats.xhp#par_id8654133.help.text
+msgid ""
+"The following list gives an overview of the text formats that the "
+"@WIKIEXTENSIONPRODUCTNAME@ can upload to the Wiki server."
+msgstr ""
+"아래 목록은 @WIKIEXTENSIONPRODUCTNAME@가 위키 서버에 업로드할 수 있는 텍스트 형식에 대한 예시로 주어집니다."
+
+#: wikiformats.xhp#par_id5630664.help.text
+msgid ""
+"The OpenDocument format used by Writer and the WikiMedia format are quite "
+"different. Only a subset of all features can be transformed from one format "
+"to the other."
+msgstr ""
+"Writer에서 사용되는 OpenDocument 형식은 WikiMedia의 형식과 다소 다릅니다. 모든 기능에 대한 부분적으로만 형식을 "
+"상호변환할 수 있습니다."
+
+#: wikiformats.xhp#hd_id7178868.help.text
+msgid "Headings"
+msgstr "제목"
+
+#: wikiformats.xhp#par_id508133.help.text
+msgid ""
+"Apply a heading paragraph style to the headings in your Writer document. The "
+"Wiki will show the heading styles of the same outline level, formatted as "
+"defined by the Wiki engine."
+msgstr ""
+"제목 단락 스타일을 Writer 문서에 있는 제목으로 적용합니다. 위키는 같은 개요 수준의 제목 스타일을 위키 엔진에 정의된 서식을 "
+"적용하여 보여줍니다."
+
+#: wikiformats.xhp#hd_id7217627.help.text
+msgid "Hyperlinks"
+msgstr "하이퍼링크"
+
+#: wikiformats.xhp#par_id3735465.help.text
+msgid ""
+"Native OpenDocument hyperlinks are transformed into \"external\" Wiki links. "
+"Therefore, the built-in linking facility of OpenDocument should only be used "
+"to create links that point to other sites outside the Wiki web. For "
+"creating Wiki links that point to other subjects of the same Wiki domain, "
+"use Wiki links."
+msgstr ""
+"표준 OpenDocument 하이퍼링크는 \"외부\" 위키 링크로 변환됩니다. 따라서 OpenDocument의 내장 링크 기능은 반드시 위키 "
+"웹의 외부의 사이트로 향하도록 만들어집니다. 위키 링크가 같은 위키 도메인에서 다른 주제로 향하게 하려면 위키 링크를 사용하십시요."
+
+#: wikiformats.xhp#hd_id941190.help.text
+msgid "Lists"
+msgstr "목록"
+
+#: wikiformats.xhp#par_id8942838.help.text
+msgid ""
+"Lists can reliably be exported when the whole list uses a consistent list "
+"style. Use the Numbering or Bullets icon to generate a list in Writer. If "
+"you need a list without numbering or bullets, use Format - Bullets and "
+"Numbering to define and apply the respective list style."
+msgstr ""
+"목록은 일관된 목록 스타일을 쓰는 전체 목록을 이용하여 확실하게 출력될 수 있습니다. Writer에서 목록을 만들 때 수나 점 아이콘을 "
+"이용하십시요. 점과 수는 각각의 목록 스타일을 정의하고 적용하기 위한 것이므로 수나 점 아이콘이 없는 목록이 필요할 때는 형식을 "
+"이용하십시요."
+
+#: wikiformats.xhp#hd_id7026886.help.text
+msgid "Paragraphs"
+msgstr "단락"
+
+#: wikiformats.xhp#hd_id4436475.help.text
+msgid "Alignment"
+msgstr "맞춤"
+
+#: wikiformats.xhp#par_id376598.help.text
+msgid ""
+"Explicit text alignment should not be used in Wiki articles. Nevertheless, "
+"text alignment is supported for left, centered, and right alignment of text."
+msgstr ""
+"뚜렷한 텍스트 정렬은 위키 페이지에 이용되지 못할 수 있습니다. 그렇지만 왼쪽, 중간, 오른쪽 정렬 등의 텍스트 정렬은 지원됩니다."
+
+#: wikiformats.xhp#hd_id7486190.help.text
+msgid "Pre-formatted text"
+msgstr "형식이 미리 정의된 텍스트"
+
+#: wikiformats.xhp#par_id1459395.help.text
+msgid ""
+"A paragraph style with a fixed-width font is transformed as pre-formatted "
+"text. Pre-formatted text is shown on the Wiki with a border around the text."
+msgstr ""
+"고정폭 폰트를 사용한 단락 스타일은 미리 형식화된 텍스트로 변환됩니다. 미리 형식화된 텍스트는 위키에서 텍스트에 경계선이 주어져서 "
+"보여집니다."
+
+#: wikiformats.xhp#hd_id4834131.help.text
+msgid "Character styles"
+msgstr "문자 스타일"
+
+#: wikiformats.xhp#par_id6397595.help.text
+msgid ""
+"Character styles modify the appearance of parts of a paragraph. The "
+"transformation supports bold, italics, bold/italics, subscript and "
+"superscript. All fixed width fonts are transformed into the Wiki typewriter "
+"style."
+msgstr ""
+"글자 스타일은 단락 일부의 외관을 수정합니다. 변환시에는 굵게, 이탤릭체, 굵게 이탤릭체, 위첨자, 아래첨자가 지원됩니다. 모든 고정폭 "
+"폰트는 위키 타자체 스타일로 변환됩니다."
+
+#: wikiformats.xhp#hd_id5152745.help.text
+msgid "Footnotes"
+msgstr "바닥글"
+
+#: wikiformats.xhp#par_id5238196.help.text
+msgid ""
+"Note: The transformation uses the new style of footnotes with <ref> and "
+"<references> tags that requires the Cite.php extension to be installed into "
+"MediaWiki. If those tags occur as plain text in the transformation result, "
+"ask the Wiki administrator to install this extension."
+msgstr ""
+"참고: 변환은 <ref>와 <references> 태그를 사용한 바닥글의 새 스타일을 사용하는데 MidiaWiki에 Cite.php "
+"확장의 설치가 필요합니다. 변환 결과에서 이 태그들이 일반 텍스트로 변환되는 일이 발생한다면, 위키 관리자에게 이 확장을 설치하도록 "
+"요청하십시요."
+
+#: wikiformats.xhp#hd_id9405499.help.text
+msgid "Images"
+msgstr "그림"
+
+#: wikiformats.xhp#par_id3541673.help.text
+msgid ""
+"Images cannot be exported by a transformation producing a single file of "
+"Wiki text. However, if the image is already uploaded to the target Wiki "
+"domain (e. g. WikiMedia Commons), then the transformation produces a valid "
+"image tag that includes the image. Image captions are also supported."
+msgstr ""
+"이미지는 위키 텍스트의 단일 파일로의 변환 제작과정을 통해 추출할 수 없습니다.그러나, 이미지가 이미 위키 도메인(예: WikiMedia "
+"Commons)에 업로드되어있다면, 변환은 이미지가 포함된 유효한 이미지 태그를 만들어냅니다. 이미지 캡션도 지원됩니다."
+
+#: wikiformats.xhp#hd_id2162236.help.text
+msgid "Tables"
+msgstr "테이블"
+
+#: wikiformats.xhp#par_id3037202.help.text
+msgid ""
+"Simple tables are supported well. Table headers are translated into "
+"corresponding Wiki style table headers. However, custom formatting of table "
+"borders, column sizes and background colors is ignored."
+msgstr ""
+"간단한 표는 잘 지원됩니다. 표 헤더는 위키 스타일의 표 헤더와 대응되어 변환됩니다. 그러나, 개별적으로 지정한 표 경계선 설정, 행 "
+"크기, 배경 색상은 무시됩니다."
+
+#: wikiformats.xhp#hd_id2954496.help.text
+msgid "Joined Cells"
+msgstr "추가된 셀"
+
+#: wikiformats.xhp#par_id8253730.help.text
+msgid ""
+"OpenDocument and especially OpenOffice.org represent tables that have joined "
+"cells that span rows as tables with nested tables. In contrast, the wiki "
+"model of table is to declare column and row spans for such joined cells. "
+msgstr ""
+"OpenDocument 와 특히 OpenOffice.org는 표에 포개진 형태를 취하는 확장된 열이 삽입된 셀을 가지는 표를 표현합니다. "
+"그에 반해, 표에 관한 위키의 모델은 각각의 삽입된 셀의 행과 열이 명확합니다."
+
+#: wikiformats.xhp#par_id8163090.help.text
+msgid ""
+"If only columns of the same row are joined, the result of the transformation "
+"resembles the source document very well."
+msgstr "같은 열에 행들이 들어왔다면, 변환 결과는 소스 문서와 매우 닮게 될 것입니다."
+
+#: wikiformats.xhp#hd_id425122.help.text
+msgid "Borders"
+msgstr "경계선"
+
+#: wikiformats.xhp#par_id1831110.help.text
+msgid ""
+"Irrespective of custom table styles for border and background, a table is "
+"always exported as \"<emph>prettytable\"</emph>, which renders in the Wiki "
+"engine with simple borders and bold header."
+msgstr ""
+"경계나 배경과 같은 개별 젹용된 표 스타일에 상관없이 표는 항상 \"<emph>prettytable\"</emph>와 같이 출력되고 위키 "
+"엔진에서는 간단한 경계선과 굵은 헤더로 그려집니다."
+
+#: wikiformats.xhp#hd_id6255073.help.text
+msgid "Charset and special characters"
+msgstr "문자 집합과 특수 문자"
+
+#: wikiformats.xhp#par_id8216193.help.text
+msgid ""
+"The charset of the transformation result is fixed to UTF-8. Depending on "
+"your system, this might not be the default charset. This might cause "
+"\"special characters\" to look broken when viewed with default settings. "
+"However, you can switch your editor to UTF-8 encoding to fix this. If your "
+"editor does not support switching the encoding, you can display the result "
+"of the transformation in the Firefox browser and switch the encoding to "
+"UTF-8 there. Now, you can cut and paste the transformation result to your "
+"program of choice."
+msgstr ""
+"변환 결과로서의 문자 인코딩은 UTF-8로 고정됩니다. 이는 시스템에 따라 기본 문자 인코딩이 아닐 수 있습니다. 이는 기본 설정으로 볼 "
+"때 \"특수 문자\"가 깨져보일 수 있습니다. 하지만 이를 고칠 때 에디터가 UTF-8을 사용하도록 전환할 수 있습니다. 에디터가 인코딩을 "
+"변환하는 것을 제공하지 않는다면 변환 결과를 Firefox 브라우저로 띄워서 인코딩을 UTF-8로 변환하십시요. 그리고, 변환 결과에서 "
+"잘라내어 선택한 프로그램으로 붙여넣기하십시요."
+
+#: wikisend.xhp#tit.help.text
+msgctxt "wikisend.xhp#tit.help.text"
+msgid "Send to MediaWiki"
+msgstr "MediaWiki로 보내기"
+
+#: wikisend.xhp#hd_id108340.help.text
+msgctxt "wikisend.xhp#hd_id108340.help.text"
+msgid "Send to MediaWiki"
+msgstr "MediaWiki로 보내기"
+
+#: wikisend.xhp#par_id1743827.help.text
+msgid ""
+"In the Send to MediaWiki dialog, specify the settings for your current Wiki "
+"upload."
+msgstr "MediaWiki로 보내기 대화 상자에서는 현재 위키 업로드에 관한 설정을 지정합니다."
+
+#: wikisend.xhp#par_id664082.help.text
+msgid ""
+"<ahelp hid=\".\">Select the MediaWiki server where you want to publish your "
+"document. Click Add to add a new server to the list.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">문서를 발행하기를 희망하는 MediaWiki 서버를 선택합니다. 목록에 새 서버를 추가하려면 추가를 "
+"클릭하십시요.</ahelp>"
+
+#: wikisend.xhp#par_id2794885.help.text
+msgid ""
+"<ahelp hid=\".\">Enter the title of your Wiki entry. This is the top heading "
+"of your Wiki entry. For a new entry, the title must be unique on this Wiki. "
+"If you enter an existing title, your upload will overwrite the existing Wiki "
+"entry.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">위키 입력값의 주제를 입력합니다. 이것은 위키 입력값의 상단 제목입니다. 새 입력값을 위해서 주제는 위키에서 "
+"유일해야 합니다. 존재하는 주제로 입력한다면, 업로드하는 것이 존재하는 위키 입력값을 덮어쓸 것입니다.</ahelp>"
+
+#: wikisend.xhp#par_id2486342.help.text
+msgid ""
+"<ahelp hid=\".\">Enter an optional short summary or comment.</ahelp> See <link "
+"href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\">http://meta.wikimed"
+"ia.org/wiki/Help:Edit_summary</link>."
+msgstr ""
+"<ahelp hid=\".\">간단한 요약이나 댓글을 입력합니다.</ahelp> <link href=\"http://meta.wikimedia"
+".org/wiki/Help:Edit_summary\">http://meta.wikimedia.org/wiki/Help:Edit_summar"
+"y</link>를 참조하십시요."
+
+#: wikisend.xhp#par_id823999.help.text
+msgid ""
+"<emph>This is a minor edit</emph>: <ahelp hid=\".\">Check this box to mark the "
+"uploaded page as a minor edit of the already existing page with the same "
+"title.</ahelp>"
+msgstr ""
+"<emph>사소한 수정</emph>: <ahelp hid=\".\">이미 같은 이름으로 존재하는 페이지에 업로드할 때 사소한 수정임을 "
+"표시하려면 이 상자에 체크하십시요.</ahelp>"
+
+#: wikisend.xhp#par_id6592913.help.text
+msgid ""
+"<emph>Show in web browser</emph>: <ahelp hid=\".\">Check this box to open your "
+"system web browser and show the uploaded Wiki page.</ahelp>"
+msgstr ""
+"<emph>웹브라우저로 보기</emph>: <ahelp hid=\".\">시스템의 웹브라우저를 열어서 업로드된 위키페이지를 보려면 이 상자를 "
+"체크하십시요.</ahelp>"
+
+#: wikisettings.xhp#tit.help.text
+msgctxt "wikisettings.xhp#tit.help.text"
+msgid "MediaWiki Options"
+msgstr "MediaWiki 옵션"
+
+#: wikisettings.xhp#hd_id6425672.help.text
+msgctxt "wikisettings.xhp#hd_id6425672.help.text"
+msgid "MediaWiki Options"
+msgstr "MediaWiki 옵션"
+
+#: wikisettings.xhp#par_id1188390.help.text
+msgid ""
+"You can add, edit and remove MediaWiki servers. Open the dialog by <item "
+"type=\"menuitem\">Tools - Options - Internet - MediaWiki</item>. "
+"Alternatively, choose <item type=\"menuitem\">Tools - Extension "
+"Manager</item>, select the @WIKIEXTENSIONPRODUCTNAME@, and click the Options "
+"button."
+msgstr ""
+"MediaWiki 서버를 추가, 수정, 제거할 수 있습니다. <item type=\"menuitem\">도구 - 옵션 - 인터넷 - "
+"MediaWiki</item>로 대화 상자를 엽니다. 다른 방법으로 열려면, <item type=\"menuitem\">도구 - 확장 "
+"관리자</item>를 선택하고  @WIKIEXTENSIONPRODUCTNAME@를 선택한 후 옵션 버튼을 누릅니다."
+
+#: wikisettings.xhp#par_id300607.help.text
+msgid ""
+"<ahelp hid=\".\">Click Add to add a new Wiki server.<br/>Select an entry and "
+"click Edit to edit the account settings.<br/>Select an entry and click "
+"Remove to remove the entry from the list.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">새 위키 서버를 추가하려면 추가를 클릭합니다.<br/>계정 설정을 수정하려면 입력값을 선택하고 수정을 "
+"클릭합니다.<br/>목록에서 입력값을 제거하려면 입력값을 선택하고 제거를 클릭합니다.</ahelp>"
+
+#: wikisettings.xhp#par_id9786065.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Opens the MediaWiki dialog to add a new "
+"entry to the list.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">새 값을 입력하기 위해 MediaWiki 대화 상자를 "
+"엽니다.</ahelp>"
+
+#: wikisettings.xhp#par_id3386333.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Opens the MediaWiki dialog to edit the "
+"selected entry.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">선택된 입력값을 수정하기 위해 MediaWiki 대화 상자를 "
+"엽니다.</ahelp>"
+
+#: wikisettings.xhp#par_id7285073.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Removes the selected entry from the "
+"list.</ahelp>"
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">목록에 있는 선택된 입력값을 지웁니다.</ahelp>"
+
+#: wikisettings.xhp#par_id1029084.help.text
+msgid ""
+"When you click Add or Edit, the <link "
+"href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> dialog opens."
+msgstr ""
+"추가나 수정을 누르면 <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> "
+"대화 상자가 열립니다."
+"X-Accelerator-Marker: ~\n"
+
+#: Addons.xcu#.Addons.AddonUI.OfficeMenuBarMerging.com.sun.star.wiki.S1.MenuItems.M2.Title.value.text
+msgid "To Media~Wiki..."
+msgstr "미디어위키로 보내기(~W)..."
+
+#: OptionsDialog.xcu#.OptionsDialog.Nodes.Internet.Leaves.com.sun.star.wiki.options.Label.value.text
+msgid "MediaWiki"
+msgstr "미디어위키"
+"X-Accelerator-Marker: ~\n"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.GeneralSendError.value.text
+msgid "The operation 'Send to MediaWiki' could not be completed successfully."
+msgstr "'MediaWiki로 보내기' 동작을 성공적으로 완료하지 못하였습니다."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.NoWikiFilter.value.text
+msgid ""
+"The MediaWiki export filter cannot be found. Choose 'Tools-XML Filter "
+"Settings' to install the filter, or use the setup to install the component."
+msgstr ""
+"MediaWiki 출력 필터를 찾지 못하였습니다. 필터를 설치하려면 '도구-XML 필터 설정'을 선택하거나 설치 파일을 통해 구성 요소를 "
+"설치하십시요."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.NoConnectionToURL.value.text
+msgid "A connection to the MediaWiki system at '$ARG1' could not be created."
+msgstr "MediaWiki 시스템의 '$ARG1'으로의 연결이 생성되지 않았습니다."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.WrongLogin.value.text
+msgid ""
+"User name or password is incorrect. Please try again, or leave the fields "
+"blank for an anonymous connection."
+msgstr "사용자 이름과 암호가 일치하지 않습니다. 다시 시도하시거나 익명 연결을 하기 위해 필드를 비워두십시요."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.InvalidURL.value.text
+msgid "A connection could not be created because the URL is invalid."
+msgstr "URL이 올바르지 않아 연결이 생성되지 않았습니다."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.NoURL.value.text
+msgid "Specify a MediaWiki server by providing a URL."
+msgstr "MediaWiki 서버에 접근할 수 있는 URL을 입력하십시요."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.CancelSending.value.text
+msgid ""
+"The transfer has been interrupted. Please check the integrity of the wiki "
+"article."
+msgstr "전송이 중단되었습니다. 위키 페이지의 내용이 망가지지 않았는지 확인하십시요."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_UrlLabel.value.text
+msgid "U~RL"
+msgstr "URL(~R)"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_UsernameLabel.value.text
+msgid "~Username"
+msgstr "사용자 이름(~U)"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_PasswordLabel.value.text
+msgid "~Password"
+msgstr "암호(~P)"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendTitle.value.text
+msgid "Send to MediaWiki"
+msgstr "MediaWiki로 보내기"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_WikiArticle.value.text
+msgid "Wiki article"
+msgstr "위키 페이지"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_No.value.text
+msgid "No"
+msgstr "아니요"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_OK.value.text
+msgid "OK"
+msgstr "확인"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_Yes.value.text
+msgid "Yes"
+msgstr "예"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_AddButton.value.text
+msgid "~Add..."
+msgstr "추가(~A)..."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditButton.value.text
+msgid "~Edit..."
+msgstr "수정(~E)..."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendButton.value.text
+msgid "~Send"
+msgstr "보내기(~S)"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_RemoveButton.value.text
+msgid "~Remove"
+msgstr "제거(~R)"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_NewWikiPage_Label1.value.text
+msgid ""
+"A wiki article with the title '$ARG1' does not exist yet. Do you want to "
+"create a new article with that name?"
+msgstr "'$ARG1' (이)라는 주제의 위키 페이지가 아직 존재하지 않습니다. 이 주제로 새 페이지를 만드시겠습니까?"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_Label1.value.text
+msgid "Media~Wiki Server"
+msgstr "MediaWiki 서버(~W)"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_Label2.value.text
+msgid "~Title"
+msgstr "제목(~T)"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_Label3.value.text
+msgid "S~ummary"
+msgstr "요약(~U)"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_MinorCheck.value.text
+msgid "This is a ~minor edit"
+msgstr "사소한 수정(~M)"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_BrowserCheck.value.text
+msgid "Show in web ~browser"
+msgstr "웹브라우저로 보기(~B)"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.UnknownCert.value.text
+msgid "The certificate of the selected site is unknown."
+msgstr "선택된 사이트에 대한 인증이 확인되지 않았습니다."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_MediaWiki_Title.value.text
+msgid "MediaWiki"
+msgstr "MediaWiki"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_AccountLine.value.text
+msgid "Account"
+msgstr "계정"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_WikiLine.value.text
+msgid "MediaWiki Server"
+msgstr "MediaWiki 서버"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_SaveBox.value.text
+msgid "~Save password"
+msgstr "암호 저장(~S)"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_MediaWiki_Extension_String.value.text
+msgid "@WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_WikiPageExists_Label1.value.text
+msgid ""
+"A wiki article with the title '$ARG1' already exists.&#13;&#13;Do you want "
+"to replace the current article with your article?&#13;&#13;"
+msgstr "'$ARG1'(이)라는 제목의 위키 페이지가 이미 있습니다.&#13;&#13;현재 페이지를 바꾸시겠습니까?&#13;&#13;"

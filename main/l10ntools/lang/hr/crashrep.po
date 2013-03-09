@@ -1,0 +1,277 @@
+
+#: crashrep.ulf#_ALLOW_CONTACT_.LngText.text
+msgid "~I allow Oracle to contact me regarding this report."
+msgstr "~Dopuštam da me Sun Microsystems kontaktira glede ovoga izvještaja."
+
+#: crashrep.ulf#_BACK_BUTTON_.LngText.text
+msgid " << ~Back"
+msgstr "<< ~Nazad"
+
+#: crashrep.ulf#_CANCEL_BUTTON_.LngText.text
+msgid "Cancel"
+msgstr "Odustani"
+
+#: crashrep.ulf#_DONOT_SEND_BUTTON_.LngText.text
+msgid "Do ~Not Send"
+msgstr "Nemoj slati"
+
+#: crashrep.ulf#_ENTER_DESCRIPTION_.LngText.text
+msgid "~How were you using %PRODUCTNAME% when the error occurred ?"
+msgstr "~Kako ste koristili %PRODUCTNAME% kada se dogodila greška?"
+
+#: crashrep.ulf#_ENTER_EMAIL_.LngText.text
+msgid "Please enter your e-mail address."
+msgstr "Molimo, unesite vašu adresu e-pošte."
+
+#: crashrep.ulf#_ENTER_TITLE_.LngText.text
+msgid ""
+"Which type of document (e.g. presentation) were you using when the error "
+"occurred?"
+msgstr ""
+"Kojeg je tipa bio dokument (npr. prezentacija) kojeg ste koristili kada se "
+"dogodila greška?"
+
+#: crashrep.ulf#_ERROR_MSG_DISK_FULL_.LngText.text
+msgid ""
+"The error report could not be temporarily saved and could therefore not be "
+"sent."
+msgstr ""
+"Izvještaj o grešci nije moguće privremeno pohraniti i prema tome ga nije "
+"moguće poslati."
+
+#: crashrep.ulf#_ERROR_MSG_NOCONNECT_.LngText.text
+msgid ""
+"The error report could not be sent because there is no Internet connection. "
+"Please check your Internet settings."
+msgstr ""
+"Izvještaj o grešci nije mogao biti poslan zbog nepostojanja Internet veze. "
+"Molim provjerite Vaše Internet postavke."
+
+#: crashrep.ulf#_ERROR_MSG_NOEMAILADDRESS_.LngText.text
+msgid ""
+"You have marked the option 'I allow Oracle to contact me regarding this "
+"report.'\n"
+"Please enter your e-mail address."
+msgstr ""
+"Označili se mogućnost 'Dopuštam da me Sun Microsystems kontaktira glede "
+"ovoga izvještaja'.\n"
+"Molimo vas unesite Vašu adresu e-pošte."
+
+#: crashrep.ulf#_ERROR_MSG_PROXY_.LngText.text
+msgid ""
+"The error report could not be sent. Please check the proxy settings under "
+"'Options' in the Error Report Tool."
+msgstr ""
+"Izvještaj o grešci nije moguće poslati. Molimo Vas provjerite proxy postavke "
+"pod 'Opcije' u Alatu za prijavu grešaka."
+
+#: crashrep.ulf#_ERROR_MSG_SENDMAIL_.LngText.text
+msgid ""
+"The error report could not be sent because 'sendmail' could not be started.\n"
+"Please check the 'sendmail' settings."
+msgstr ""
+"Izvještaj o grešci nije uspješno poslan jer nije moguće pokrenuti "
+"'sendmail'.\n"
+"Molimo Vas provjerite 'sendmail' postavke."
+
+#: crashrep.ulf#_ERROR_MSG_SIMPLE_MAPI_.LngText.text
+msgid ""
+"The error report could not be sent because the default e-mail program does "
+"not support MAPI.\n"
+" Please use a MAPI-compatible e-mail program."
+msgstr ""
+"Izvještaj za grešku nije moguće poslati zato što Vaš uobičajeni program za "
+"e-poštu ne podržava MAPI.\n"
+"Molimo Vas da koristiti MAPI kompatibilan program za e-poštu."
+
+#: crashrep.ulf#_MSG_CMDLINE_USAGE_.LngText.text
+msgid "Usage:"
+msgstr "Uporaba:"
+
+#: crashrep.ulf#_MSG_PARAM_HELP_DESCRIPTION_.LngText.text
+msgid ""
+"Shows this help text.\n"
+"Detailed information can be found in the Setup Guide."
+msgstr ""
+"Prikazuje ovaj tekst pomoći.\n"
+"Detaljne informacije mogu se naći u Vodiču kroz postavke."
+
+#: crashrep.ulf#_MSG_PARAM_PROCESSID_.LngText.text
+msgid "-p <process ID>"
+msgstr "-p <ID procesa>"
+
+#: crashrep.ulf#_MSG_PARAM_PROCESSID_DESCRIPTION_.LngText.text
+msgid "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
+msgstr ""
+"Dodjeljuje ID procesa (PID) %PRODUCTNAME%-a u Alat za izvješćivanje o "
+"greškama"
+
+#: crashrep.ulf#_NEXT_BUTTON_.LngText.text
+msgid "~Next >>"
+msgstr "~Dalje >>"
+
+#: crashrep.ulf#_OK_BUTTON_.LngText.text
+msgid "OK"
+msgstr "U redu"
+
+#: crashrep.ulf#_OPTIONS_BUTTON_.LngText.text
+msgid "~Options..."
+msgstr "~Odrednice..."
+
+#: crashrep.ulf#_OPTIONS_TITLE_.LngText.text
+msgid "Options"
+msgstr "Odrednice"
+
+#: crashrep.ulf#_PRIVACY_URL_.LngText.text
+msgid "http://www.oracle.com/html/services-privacy-policy.html"
+msgstr "http://www.sun.com/privacy/"
+
+#: crashrep.ulf#_PROXY_SETTINGS_ADDRESS_.LngText.text
+msgid "HT~TP Proxy"
+msgstr "HT~TP Proxy"
+
+#: crashrep.ulf#_PROXY_SETTINGS_DESCRIPTION_.LngText.text
+msgid ""
+"The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to "
+"be able to send error reports.\n"
+"\n"
+"Companies often use proxy servers in conjunction with a firewall to protect "
+"the network.\n"
+"\n"
+"If this applies to your situation, you have to specify the address and port "
+"for the server."
+msgstr ""
+"Alat za prijavu grešaka %PRODUCTNAME% mora biti povezan na Internet kako bi "
+"mogao poslati izvjštaj o greškama.\n"
+"\n"
+"Tvrtke često koriste proxy poslužitelje u spoju s vatrozidom kako bi "
+"zaštitili vlastitu mrežu.\n"
+"\n"
+"Ukoliko je ovo primjenjivo u Vašem slučaju, morate navesti adresu i port za "
+"poslužitelj."
+
+#: crashrep.ulf#_PROXY_SETTINGS_DIRECT_.LngText.text
+msgid "Use ~direct connection to the Internet"
+msgstr "Koristi ~direktnu vezu na Internet"
+
+#: crashrep.ulf#_PROXY_SETTINGS_HEADER_.LngText.text
+msgid "Proxy settings"
+msgstr "Proxy postavke"
+
+#: crashrep.ulf#_PROXY_SETTINGS_MANUAL_.LngText.text
+msgid "Use ~manual settings"
+msgstr "Koristi ~ručne postavke"
+
+#: crashrep.ulf#_PROXY_SETTINGS_PORT_.LngText.text
+msgid "~Port"
+msgstr "~Port"
+
+#: crashrep.ulf#_PROXY_SETTINGS_SYSTEM_.LngText.text
+msgid "Use ~system settings"
+msgstr "Koristi ~sistemske postavke"
+
+#: crashrep.ulf#_REPORT_BODY_.LngText.text
+msgid ""
+"The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information "
+"that could help Oracle improve %PRODUCTNAME%.\n"
+"In the spaces below, you can enter a title for your crash report and "
+"describe the action you were trying to carry out when the error occurred. "
+"Then click 'Send'.\n"
+msgstr ""
+"Izvještaj grešaka za %PRODUCTNAME% %PRODUCTVERSION% je prikupio podatke koje "
+"će pomoći Sun Microsystems da unaprijedi %PRODUCTVERSION%.\n"
+"U ispod namijenjenom prostoru možete unijeti naslov i opisati aktivnost koju "
+"ste pokušavali izvršiti kad se greška dogodila. Nakon toga kliknite "
+"'Pošalji'.\n"
+
+#: crashrep.ulf#_REPORT_CAPTION_.LngText.text
+msgctxt "crashrep.ulf#_REPORT_CAPTION_.LngText.text"
+msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "%PRODUCTNAME% %PRODUCTVERSION% izvještaj o greški"
+
+#: crashrep.ulf#_REPORT_HEADER_.LngText.text
+msgid "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
+msgstr "Dogodila se greška tijekom izvršavanja %PRODUCTNAME% %PRODUCTVERSION%"
+
+#: crashrep.ulf#_SAVE_REPORT_BUTTON_.LngText.text
+msgid "~Save Report..."
+msgstr "~Snimi Izvještaj..."
+
+#: crashrep.ulf#_SAVE_REPORT_TITLE_.LngText.text
+msgid "Save Report to"
+msgstr "Spremi izvještaj u"
+
+#: crashrep.ulf#_SENDING_REPORT_HEADER_.LngText.text
+msgid "Sending Error Report"
+msgstr "Slanje izvještaja o grešci"
+
+#: crashrep.ulf#_SENDING_REPORT_STATUS_.LngText.text
+msgid "Status: Sending error report"
+msgstr "Status: Šaljem izvještaj o grešci"
+
+#: crashrep.ulf#_SENDING_REPORT_STATUS_FINISHED_.LngText.text
+msgid "Status: The error report has been sent successfully."
+msgstr "Status: Izvještaj o grešci je uspješno poslan."
+
+#: crashrep.ulf#_SEND_BUTTON_.LngText.text
+msgid "S~end"
+msgstr "~Pošalji"
+
+#: crashrep.ulf#_SHOW_REPORT_BUTTON_.LngText.text
+msgid "Show ~Report..."
+msgstr "Pokaži ~izvještaj..."
+
+#: crashrep.ulf#_WELCOME_BODY1_.LngText.text
+msgid ""
+"This error report tool gathers information about how %PRODUCTNAME% is "
+"working and sends it to Oracle to help improve future versions.\n"
+"\n"
+msgstr ""
+"Ovaj alat za prijavu grešaka prikuplja informacije o tome kako radi %"
+"PRODUCTNAME% šalje ih Sun Microsystems kako bi pomogao unaprijediti buduće "
+"inačice.\n"
+"\n"
+
+#: crashrep.ulf#_WELCOME_BODY2_.LngText.text
+msgid ""
+"It's easy - just send the report without any further effort on your part by "
+"clicking 'Send' in the next dialog, or you can briefly describe how the "
+"error occurred and then click 'Send'. If you want to see the report, click "
+"the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n"
+"\n"
+msgstr ""
+"Lagano je - samo pošaljite izvješće bez daljnjeg truda s vaše strane klikom "
+"na 'Pošalji' u sljedećem dijalogu ili možete ukratko opisati kako je došlo "
+"do greške i tada kliknite 'Pošalji'. Ako želite pogledati izvještaj, "
+"kliknite na gumb 'Pokaži izvještaj'. Podaci neće biti poslani ako kliknete "
+"na 'Bez slanja'.\n"
+"\n"
+
+#: crashrep.ulf#_WELCOME_BODY3_.LngText.text
+msgid ""
+"Customer Privacy\n"
+"The information gathered is limited to data concerning the state of %"
+"PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information "
+"about passwords or document contents is not collected.\n"
+"\n"
+"The information will only be used to improve the quality of %PRODUCTNAME% "
+"and will not be shared with third parties.\n"
+"For more information on Oracle's privacy policy, visit\n"
+msgstr ""
+"Privatnost korisnika\n"
+"Informacija koja je prikupljena je ograničena na podatke koji se odnose na "
+"stanje %PRODUCTNAME% %PRODUCTVERSION% u trenutku pojavljivanja greške. "
+"Ostale informacije o zaporkama ili sadržaju dokumenta se ne prikupljaju.\n"
+"\n"
+"Informacije se neće iskoristiti za poboljšanje kvalitete %PRODUCTNAME% i "
+"neće biti dijeljenji s trećom stranom.\n"
+"Za više informacija o politici privatnosti Sun Microsystems, posjetite\n"
+
+#: crashrep.ulf#_WELCOME_CAPTION_.LngText.text
+msgctxt "crashrep.ulf#_WELCOME_CAPTION_.LngText.text"
+msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "%PRODUCTNAME% %PRODUCTVERSION% izvještaj o greški"
+
+#: crashrep.ulf#_WELCOME_HEADER_.LngText.text
+msgid "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "Dobrodošli u %PRODUCTNAME% %PRODUCTVERSION% izvještaj o greškama"

@@ -1,0 +1,849 @@
+
+#: wiki.xhp#tit.help.text
+msgctxt "wiki.xhp#tit.help.text"
+msgid "@WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@"
+
+#: wiki.xhp#bm_id3154408.help.text
+msgid ""
+"<bookmark_value>Wiki;@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_va"
+"lue>@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>extensions;Me"
+"diaWiki</bookmark_value>"
+msgstr ""
+"<bookmark_value>Wiki;@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_va"
+"lue>@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>拡張機能;MediaWik"
+"i</bookmark_value>"
+
+#: wiki.xhp#hd_id5993530.help.text
+msgctxt "wiki.xhp#hd_id5993530.help.text"
+msgid "@WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@"
+
+#: wiki.xhp#par_id9647511.help.text
+msgid ""
+"<ahelp hid=\".\">By using the @WIKIEXTENSIONPRODUCTNAME@ you can upload your "
+"current Writer text document to a MediaWiki server. After uploading, all "
+"Wiki users can read your document on the Wiki.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">@WIKIEXTENSIONPRODUCTNAME@ を使用すると、現在の Writer テキストドキュメントを "
+"MediaWiki サーバーにアップロードできます。アップロードされた記事は、その Wiki のすべての Wiki "
+"ユーザーが読むことができます。</ahelp>"
+
+#: wiki.xhp#par_id6468703.help.text
+msgid ""
+"<ahelp hid=\".\">Choose <item type=\"menuitem\">File - Send - To "
+"MediaWiki</item> to upload the current Writer document to a MediaWiki "
+"server.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">現在の Writer ドキュメントを MediaWiki サーバーにアップロードするには、<item "
+"type=\"menuitem\">「ファイル」→「送る」→「MediaWiki へ」</item>を選択してください。</ahelp>"
+
+#: wiki.xhp#hd_id4554582.help.text
+msgid "System Requirements"
+msgstr "システム要件"
+
+#: wiki.xhp#par_id2597430.help.text
+msgid "StarOffice/StarSuite 9"
+msgstr "StarOffice/StarSuite 9"
+
+#: wiki.xhp#par_id8430738.help.text
+msgid "OpenOffice.org 3.0"
+msgstr "OpenOffice.org 3.0"
+
+#: wiki.xhp#par_id9340495.help.text
+msgid "Java Runtime Environment 1.4"
+msgstr "Java Runtime Environment 1.4"
+
+#: wiki.xhp#par_id7387615.help.text
+msgid ""
+"A Wiki account on a supported <link "
+"href=\"http://www.mediawiki.org/wiki/MediaWiki\">MediaWiki</link> server"
+msgstr ""
+"サポートされている <link "
+"href=\"http://www.mediawiki.org/wiki/MediaWiki\">MediaWiki</link> サーバーでの Wiki "
+"アカウント"
+
+#: wiki.xhp#hd_id8047120.help.text
+msgid "Installing @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@ のインストール"
+
+#: wiki.xhp#par_id4277169.help.text
+msgid ""
+"Before you install the @WIKIEXTENSIONPRODUCTNAME@, ensure that %PRODUCTNAME "
+"uses a Java Runtime Environment (JRE). To check the status of the JRE, "
+"choose <item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Java</item>. "
+"Ensure that \"Use a Java runtime environment\" is marked and that a Java "
+"runtime folder is selected in the big listbox. If no JRE was activated, then "
+"activate a JRE 1.4 or later and restart %PRODUCTNAME."
+msgstr ""
+"@WIKIEXTENSIONPRODUCTNAME@ をインストールする前に、%PRODUCTNAME が Java Runtime 環境 (JRE) "
+"を使用していることを確認してください。JRE の状態を調べるには、<item type=\"menuitem\">「ツール」→「オプション」→「%"
+"PRODUCTNAME」→「Java」</item>を選択します。「Java Runtime 環境を使用」がオンになっていることと、リストボックスで "
+"Java Runtime のフォルダが選択されていることを確認してください。JRE がアクティブ化されていない場合は、JRE 1.4 "
+"以降をアクティブ化して %PRODUCTNAME を再起動してください。"
+
+#: wiki.xhp#hd_id567339.help.text
+msgid "To Install the @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@ をインストールするには"
+
+#: wiki.xhp#par_id1732230.help.text
+msgctxt "wiki.xhp#par_id1732230.help.text"
+msgid ""
+"In a Writer window, choose <item type=\"menuitem\">Tools - Extension "
+"Manager</item>."
+msgstr "Writer のウィンドウで、<item type=\"menuitem\">「ツール」→「拡張機能マネージャー」</item>を選択します。"
+
+#: wiki.xhp#par_id4338511.help.text
+msgid "In the Extension Manager dialog, click Add."
+msgstr "「拡張機能マネージャー」ダイアログの「追加」をクリックします。"
+
+#: wiki.xhp#par_id5882442.help.text
+msgid ""
+"Locate the @WIKIEXTENSIONFILENAME@.oxt file, click Open, and then click "
+"Close. "
+msgstr "@WIKIEXTENSIONFILENAME@.oxt ファイルを選択して「開く」をクリックし、次に「閉じる」をクリックします。"
+
+#: wiki.xhp#par_id4008911.help.text
+msgid "Close %PRODUCTNAME, and close also the Quickstarter if enabled."
+msgstr "%PRODUCTNAME を閉じ、有効化されている場合はクイック起動も閉じます。"
+
+#: wiki.xhp#par_id265511.help.text
+msgid ""
+"Restart the software, open a text document, then choose <item "
+"type=\"menuitem\">Tools - Options - Internet - MediaWiki</item> to enter your "
+"Wiki settings. See \"To Connect To a Wiki\" below."
+msgstr ""
+"ソフトウェアを再起動し、テキストドキュメントを開いてから、<item "
+"type=\"menuitem\">「ツール」→「オプション」→「インターネット」→「MediaWiki」</item>の順に選択して Wiki "
+"の設定を入力します。後述する「Wiki に接続するには」を参照してください。"
+
+#: wiki.xhp#hd_id3569444.help.text
+msgid "To Remove the @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@ を削除するには"
+
+#: wiki.xhp#par_id2655110.help.text
+msgctxt "wiki.xhp#par_id2655110.help.text"
+msgid ""
+"In a Writer window, choose <item type=\"menuitem\">Tools - Extension "
+"Manager</item>."
+msgstr "Writer のウィンドウで、<item type=\"menuitem\">「ツール」→「拡張機能マネージャー」</item>を選択します。"
+
+#: wiki.xhp#par_id9504379.help.text
+msgid "Click the plus sign (+) in front of My Extensions."
+msgstr "「マイ拡張機能」の前のプラス記号 (+) をクリックします。"
+
+#: wiki.xhp#par_id8431348.help.text
+msgid "Select the extension, click Remove, and then click Close."
+msgstr "拡張機能を選択して「削除」をクリックし、「閉じる」をクリックします。"
+
+#: wiki.xhp#hd_id5316019.help.text
+msgid "To Connect to a Wiki"
+msgstr "Wiki に接続するには"
+
+#: wiki.xhp#par_id2381969.help.text
+msgid ""
+"Note: You can store your user name and password for all respective dialogs "
+"inside %PRODUCTNAME. The password will be stored in a secure way, where "
+"access is maintained by a master password. To enable the master password, "
+"choose <item type=\"menuitem\">Tools - Options - %PRODUCTNAME - "
+"Security</item>."
+msgstr ""
+"注: %PRODUCTNAME のすべてのダイアログのユーザー名とパスワードを保存しておくことができます。パスワードは安全に保存され、アクセスするにはマ"
+"スターパスワードを入力する必要があります。マスターパスワードを有効にするには、<item type=\"menuitem\">「ツール」→「オプション」→「"
+"%PRODUCTNAME」→「セキュリティ」</item>を選択します。"
+
+#: wiki.xhp#par_id3751640.help.text
+msgid ""
+"Note: If you connect to the web using a proxy server, enter the proxy "
+"information to <item type=\"menuitem\">Tools - Options - Internet - "
+"Proxy</item>, and restart the software."
+msgstr ""
+"注: Web への接続にプロキシサーバーを使用する場合は、プロキシ情報を<item type=\"menuitem\">「ツール」→「オプション」→「インタ"
+"ーネット」→「プロキシ」</item>で入力してから、ソフトウェアを再起動してください。"
+
+#: wiki.xhp#par_id9533677.help.text
+msgid ""
+"Open a Writer document, and choose <item type=\"menuitem\">Tools - Options - "
+"Internet - MediaWiki</item>."
+msgstr ""
+"Writer ドキュメントを開き、<item "
+"type=\"menuitem\">「ツール」→「オプション」→「インターネット」→「MediaWiki」</item>を選択します。"
+
+#: wiki.xhp#par_id368968.help.text
+msgid ""
+"In the <link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\">Options</link> "
+"dialog, click Add."
+msgstr ""
+"<link "
+"href=\"@WIKIEXTENSIONID@/wikisettings.xhp\">「オプション」</link>ダイアログの「追加」をクリックします。"
+
+#: wiki.xhp#par_id6962187.help.text
+msgid ""
+"In the <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> "
+"dialog, enter the account information for the Wiki."
+msgstr ""
+"<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">「MediaWiki」</link>ダイアログで、Wiki "
+"のアカウント情報を入力します。"
+
+#: wiki.xhp#par_id5328836.help.text
+msgid ""
+"In the URL textbox, enter the address of a Wiki that you want to connect to."
+msgstr "「URL」テキストボックスに、接続先の Wiki のアドレスを入力します。"
+
+#: wiki.xhp#par_id389416.help.text
+msgid "You can copy the URL from a web browser and paste it into the textbox."
+msgstr "Web ブラウザから URL をコピーしてテキストボックスに貼り付けることもできます。"
+
+#: wiki.xhp#par_id5906552.help.text
+msgid "In the Username box, enter your user ID for your Wiki account."
+msgstr "「ユーザー名」ボックスに、Wiki アカウントのユーザー ID を入力します。"
+
+#: wiki.xhp#par_id9297158.help.text
+msgid ""
+"If the Wiki allows anonymous write access, you can leave the Username and "
+"Password boxes empty."
+msgstr "Wiki で匿名書き込みアクセスが許可されている場合は、「ユーザー名」と「パスワード」のボックスを空白のままにしてもかまいません。"
+
+#: wiki.xhp#par_id8869594.help.text
+msgid ""
+"In the Password box, enter the password for your Wiki account, then click "
+"OK."
+msgstr "「パスワード」ボックスに Wiki アカウントのパスワードを入力して、「OK」をクリックします。"
+
+#: wiki.xhp#par_id292062.help.text
+msgid ""
+"Optionally enable \"Save password\" to save the password between sessions. A "
+"master password is used to maintain access to all saved passwords. Choose "
+"<item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Security</item> to "
+"enable the master password. \"Save password\" is unavailable when the master "
+"password is not enabled."
+msgstr ""
+"セッションのたびにパスワードを入力しなくても済むようにパスワードを保存しておくには、「パスワードの保存」をオンにします。保存されているパスワードには、マ"
+"スターパスワードを使用してアクセスします。マスターパスワードを有効にするには、<item type=\"menuitem\">「ツール」→「オプション」→「"
+"%PRODUCTNAME」→「セキュリティ」</item>を選択します。マスターパスワードが有効になっていない場合は、「パスワードの保存」は選択できませ"
+"ん。"
+
+#: wiki.xhp#hd_id7044892.help.text
+msgid "To Create a New Wiki Page"
+msgstr "新しい Wiki ページを作成するには"
+
+#: wiki.xhp#par_id3514206.help.text
+msgid "Open a Writer document."
+msgstr "Writer ドキュメントを開きます。"
+
+#: wiki.xhp#par_id944853.help.text
+msgid ""
+"Write the content of the Wiki page. You can use formatting like text "
+"formats, headings, footnotes, and more. See the <link "
+"href=\"@WIKIEXTENSIONID@/wikiformats.xhp\">list of supported formats</link>."
+msgstr ""
+"Wiki ページの内容を執筆します。テキスト書式、見出し、脚注などの書式設定を使用できます。<link "
+"href=\"@WIKIEXTENSIONID@/wikiformats.xhp\">サポートされる書式設定の一覧</link>を参照してください。"
+
+#: wiki.xhp#par_id4566484.help.text
+msgid "Choose <item type=\"menuitem\">File - Send - To MediaWiki</item>."
+msgstr "<item type=\"menuitem\">「ファイル」→「送る」→「MediaWiki へ」</item>を選択します。"
+
+#: wiki.xhp#par_id228278.help.text
+msgid ""
+"In the <link href=\"@WIKIEXTENSIONID@/wikisend.xhp\">Send to MediaWiki</link> "
+"dialog, specify the settings for your entry."
+msgstr ""
+"<link href=\"@WIKIEXTENSIONID@/wikisend.xhp\">「MediaWiki "
+"へ送信」</link>ダイアログで、エントリの設定を指定します。"
+
+#: wiki.xhp#par_id2564165.help.text
+msgid "<emph>MediaWiki server</emph>: Select the Wiki."
+msgstr "<emph>MediaWiki サーバー</emph>: Wiki を選択します。"
+
+#: wiki.xhp#par_id5566576.help.text
+msgid ""
+"<emph>Title</emph>: Type the title of your page. Type the title of an "
+"existing page to overwrite the page with your current text document. Type a "
+"new title to create a new page on the Wiki."
+msgstr ""
+"<emph>タイトル</emph>: "
+"ページのタイトルを入力します。既存のページのタイトルを入力した場合は、そのページが現在のテキストドキュメントによって上書きされます。Wiki "
+"の新しいページを作成するには、新しいタイトルを入力してください。"
+
+#: wiki.xhp#par_id9688711.help.text
+msgid "<emph>Summary</emph>: Enter an optional short summary of your page."
+msgstr "<emph>概要</emph>: ページの短い概要を入力します (省略可能)。"
+
+#: wiki.xhp#par_id4123661.help.text
+msgid ""
+"<emph>This is a minor edit</emph>: Check this box to mark the uploaded page "
+"as a minor edit of the already existing page with the same title."
+msgstr ""
+"<emph>これは小さな編集です</emph>: "
+"このチェックボックスをオンにすると、アップロードされるページは、同じタイトルの既存のページに対する小さな編集であると見なされます。"
+
+#: wiki.xhp#par_id452284.help.text
+msgid ""
+"<emph>Show in web browser</emph>: Check this box to open your system web "
+"browser and show the uploaded Wiki page."
+msgstr ""
+"<emph>Web ブラウザで表示</emph>: このチェックボックスをオンにすると、システムの Web ブラウザが開いて、アップロードされた "
+"Wiki ページが表示されます。"
+
+#: wiki.xhp#par_id8346812.help.text
+msgid "Click Send."
+msgstr "「送信」をクリックします。"
+
+#: wikiaccount.xhp#tit.help.text
+msgctxt "wikiaccount.xhp#tit.help.text"
+msgid "MediaWiki"
+msgstr "MediaWiki"
+
+#: wikiaccount.xhp#hd_id960722.help.text
+msgctxt "wikiaccount.xhp#hd_id960722.help.text"
+msgid "MediaWiki"
+msgstr "MediaWiki"
+
+#: wikiaccount.xhp#par_id4571672.help.text
+msgid ""
+"Use the MediaWiki dialog to add or edit your MediaWiki account settings."
+msgstr "「MediaWiki」ダイアログでは、MediaWiki アカウント設定の追加または編集を行います。"
+
+#: wikiaccount.xhp#par_id7631458.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Enter the URL of a MediaWiki server, "
+"starting with http://</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">MediaWiki サーバーの URL を、http:// "
+"から始まる形式で入力します。</ahelp>"
+
+#: wikiaccount.xhp#par_id7862483.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Enter your user name on the MediaWiki "
+"server. Leave empty for anonymous access.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">MediaWiki "
+"サーバーでのユーザー名を入力します。匿名アクセスの場合は空白のままにしてください。</ahelp>"
+
+#: wikiaccount.xhp#par_id1113010.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Enter your password on the MediaWiki "
+"server. Leave empty for anonymous access.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">MediaWiki "
+"サーバーでのパスワードを入力します。匿名アクセスの場合は空白のままにしてください。</ahelp>"
+
+#: wikiaccount.xhp#par_id656758.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Enable to store your password between "
+"sessions. The master password must be enabled, see <item "
+"type=\"menuitem\">Tools - Options - %PRODUCTNAME - Security</item>.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">セッションのたびにパスワードを入力しなくても済むように、パスワードを保存しておくこ"
+"とができます。マスターパスワードが有効化されている必要があります。<item type=\"menuitem\">「ツール」→「オプション」→「%"
+"PRODUCTNAME」→「セキュリティ」</item>を参照してください。</ahelp>"
+
+#: wikiaccount.xhp#par_id3112582.help.text
+msgid ""
+"Enter the Internet address of a Wiki server in a format like "
+"http://wiki.services.openoffice.org/wiki or copy the URL from a web browser."
+msgstr ""
+"Wiki "
+"サーバーのインターネットアドレスを「http://wiki.services.openoffice.org/wiki」のような形式で入力するか、URL "
+"を Web ブラウザからコピーします。"
+
+#: wikiaccount.xhp#par_id628070.help.text
+msgid ""
+"If the Wiki allows anonymous access, you can leave the account text boxes "
+"empty. Else enter your user name and password."
+msgstr ""
+"Wiki で匿名アクセスが許可されている場合は、アカウントのテキストボックスが空白のままでもかまいません。そうでない場合は、ユーザー名とパスワードを入力"
+"してください。"
+
+#: wikiaccount.xhp#par_id9046601.help.text
+msgid ""
+"If you have enabled the master password feature on the Security tab page of "
+"the Tools - Options - %PRODUCTNAME dialog, then the software can store your "
+"password and automatically insert the data where necessary. Enable the \"Save "
+"password\" checkbox to store your password."
+msgstr ""
+"「ツール」→「オプション」→「%PRODUCTNAME」ダイアログの「セキュリティ」タブページでマスターパスワード機能を有効にした場合は、パスワードが保"
+"存され、必要に応じて自動的にデータに挿入されます。パスワードを保存するには、「パスワードの保存」チェックボックスをオンにしてください。"
+
+#: wikiformats.xhp#tit.help.text
+msgctxt "wikiformats.xhp#tit.help.text"
+msgid "MediaWiki Formats"
+msgstr "MediaWiki のフォーマット"
+
+#: wikiformats.xhp#hd_id3743095.help.text
+msgctxt "wikiformats.xhp#hd_id3743095.help.text"
+msgid "MediaWiki Formats"
+msgstr "MediaWiki のフォーマット"
+
+#: wikiformats.xhp#par_id8654133.help.text
+msgid ""
+"The following list gives an overview of the text formats that the "
+"@WIKIEXTENSIONPRODUCTNAME@ can upload to the Wiki server."
+msgstr ""
+"次の一覧は、@WIKIEXTENSIONPRODUCTNAME@ から Wiki "
+"サーバーにアップロードできるテキストフォーマットの概要をまとめたものです。"
+
+#: wikiformats.xhp#par_id5630664.help.text
+msgid ""
+"The OpenDocument format used by Writer and the WikiMedia format are quite "
+"different. Only a subset of all features can be transformed from one format "
+"to the other."
+msgstr ""
+"Writer で使用される OpenDocument フォーマットと WikiMedia "
+"フォーマットは大きく異なります。一方のフォーマットから他方のフォーマットに変換できるのは、一部の機能だけです。"
+
+#: wikiformats.xhp#hd_id7178868.help.text
+msgid "Headings"
+msgstr "見出し"
+
+#: wikiformats.xhp#par_id508133.help.text
+msgid ""
+"Apply a heading paragraph style to the headings in your Writer document. The "
+"Wiki will show the heading styles of the same outline level, formatted as "
+"defined by the Wiki engine."
+msgstr ""
+"見出し段落スタイルを Writer ドキュメントの見出しに適用します。Wiki では同じアウトラインレベルの見出しが表示され、Wiki "
+"エンジンでの定義に従って書式設定されます。"
+
+#: wikiformats.xhp#hd_id7217627.help.text
+msgid "Hyperlinks"
+msgstr "ハイパーリンク"
+
+#: wikiformats.xhp#par_id3735465.help.text
+msgid ""
+"Native OpenDocument hyperlinks are transformed into \"external\" Wiki links. "
+"Therefore, the built-in linking facility of OpenDocument should only be used "
+"to create links that point to other sites outside the Wiki web. For "
+"creating Wiki links that point to other subjects of the same Wiki domain, "
+"use Wiki links."
+msgstr ""
+"OpenDocument ネイティブのハイパーリンクは、「外部」Wiki リンクに変換されます。したがって、OpenDocument "
+"のリンク機能は、Wiki Web の外にあるサイトへのリンクを作成するときにのみ使用してください。同じ Wiki ドメイン内の別のテーマへの Wiki "
+"リンクを作成する場合は、Wiki リンクを使用します。"
+
+#: wikiformats.xhp#hd_id941190.help.text
+msgid "Lists"
+msgstr "リスト"
+
+#: wikiformats.xhp#par_id8942838.help.text
+msgid ""
+"Lists can reliably be exported when the whole list uses a consistent list "
+"style. Use the Numbering or Bullets icon to generate a list in Writer. If "
+"you need a list without numbering or bullets, use Format - Bullets and "
+"Numbering to define and apply the respective list style."
+msgstr ""
+"リスト全体で同じリストスタイルが使用されていれば、リストは確実にエクスポートできます。Writer でリストを生成するには、番号付けまたは箇条書きのアイ"
+"コンを使用してください。番号付けも箇条書き記号も使用しないリストが必要な場合は、「書式」→「箇条書きと番号付け」を使用して対応するリストスタイルを定義し"
+"てください。"
+
+#: wikiformats.xhp#hd_id7026886.help.text
+msgid "Paragraphs"
+msgstr "段落"
+
+#: wikiformats.xhp#hd_id4436475.help.text
+msgid "Alignment"
+msgstr "配置"
+
+#: wikiformats.xhp#par_id376598.help.text
+msgid ""
+"Explicit text alignment should not be used in Wiki articles. Nevertheless, "
+"text alignment is supported for left, centered, and right alignment of text."
+msgstr ""
+"Wiki 記事では、明示的なテキスト配置を使用しないことが推奨されていますが、テキストを左、中央、または右に揃えるテキスト配置はサポートされます。"
+
+#: wikiformats.xhp#hd_id7486190.help.text
+msgid "Pre-formatted text"
+msgstr "事前整形テキスト"
+
+#: wikiformats.xhp#par_id1459395.help.text
+msgid ""
+"A paragraph style with a fixed-width font is transformed as pre-formatted "
+"text. Pre-formatted text is shown on the Wiki with a border around the text."
+msgstr "固定幅フォントを使用する段落スタイルは、事前整形テキストとして変換されます。Wiki では、事前整形テキストの周りに枠が表示されます。"
+
+#: wikiformats.xhp#hd_id4834131.help.text
+msgid "Character styles"
+msgstr "文字スタイル"
+
+#: wikiformats.xhp#par_id6397595.help.text
+msgid ""
+"Character styles modify the appearance of parts of a paragraph. The "
+"transformation supports bold, italics, bold/italics, subscript and "
+"superscript. All fixed width fonts are transformed into the Wiki typewriter "
+"style."
+msgstr ""
+"文字スタイルを設定すると、段落の一部分の表示方法が変更されます。変換がサポートされているのは太字、斜体、太字斜体、下付き、および上付きです。固定幅フォン"
+"トはすべて、Wiki タイプライタースタイルに変換されます。"
+
+#: wikiformats.xhp#hd_id5152745.help.text
+msgid "Footnotes"
+msgstr "脚注"
+
+#: wikiformats.xhp#par_id5238196.help.text
+msgid ""
+"Note: The transformation uses the new style of footnotes with <ref> and "
+"<references> tags that requires the Cite.php extension to be installed into "
+"MediaWiki. If those tags occur as plain text in the transformation result, "
+"ask the Wiki administrator to install this extension."
+msgstr ""
+"注: 変換時には脚注の新しいスタイル (<ref> タグおよび <references> タグ) が使用されますが、これらのタグを使用するには "
+"Cite.php 拡張機能が MediaWiki "
+"にインストールされている必要があります。変換結果の中で、これらのタグがプレーンテキストとなっている場合は、Wiki "
+"管理者にこの拡張機能のインストールを依頼してください。"
+
+#: wikiformats.xhp#hd_id9405499.help.text
+msgid "Images"
+msgstr "画像"
+
+#: wikiformats.xhp#par_id3541673.help.text
+msgid ""
+"Images cannot be exported by a transformation producing a single file of "
+"Wiki text. However, if the image is already uploaded to the target Wiki "
+"domain (e. g. WikiMedia Commons), then the transformation produces a valid "
+"image tag that includes the image. Image captions are also supported."
+msgstr ""
+"Wiki テキストのファイルを 1 つだけ生成する変換方法の場合は、画像はエクスポートできません。ただし、画像がすでにアップロード先の Wiki "
+"ドメイン (たとえば WikiMedia Commons) "
+"にアップロードされている場合は、その画像をインクルードする有効なイメージタグが変換時に作成されます。画像の図表番号もサポートされます。"
+
+#: wikiformats.xhp#hd_id2162236.help.text
+msgid "Tables"
+msgstr "表"
+
+#: wikiformats.xhp#par_id3037202.help.text
+msgid ""
+"Simple tables are supported well. Table headers are translated into "
+"corresponding Wiki style table headers. However, custom formatting of table "
+"borders, column sizes and background colors is ignored."
+msgstr ""
+"単純な表は問題なくサポートされます。表のヘッダーは、対応する Wiki "
+"スタイルの表ヘッダーに変換されます。ただし、ユーザー定義の表枠線の書式設定、列サイズ、および背景色は無視されます。"
+
+#: wikiformats.xhp#hd_id2954496.help.text
+msgid "Joined Cells"
+msgstr "結合セル"
+
+#: wikiformats.xhp#par_id8253730.help.text
+msgid ""
+"OpenDocument and especially OpenOffice.org represent tables that have joined "
+"cells that span rows as tables with nested tables. In contrast, the wiki "
+"model of table is to declare column and row spans for such joined cells. "
+msgstr ""
+"OpenDocument と特に OpenOffice.org "
+"では、複数の行にまたがる結合セルを持つ表は、入れ子の表を持つ表として表現されます。一方、Wiki の表モデルでは、このような結合セルについては列スパン "
+"(結合する列数) および行スパン (結合する行数) を宣言することになっています。"
+
+#: wikiformats.xhp#par_id8163090.help.text
+msgid ""
+"If only columns of the same row are joined, the result of the transformation "
+"resembles the source document very well."
+msgstr "同じ行の列のみを結合している場合は、変換結果は元のドキュメントにかなり近くなります。"
+
+#: wikiformats.xhp#hd_id425122.help.text
+msgid "Borders"
+msgstr "枠線"
+
+#: wikiformats.xhp#par_id1831110.help.text
+msgid ""
+"Irrespective of custom table styles for border and background, a table is "
+"always exported as \"<emph>prettytable\"</emph>, which renders in the Wiki "
+"engine with simple borders and bold header."
+msgstr ""
+"枠線および背景に関するユーザー定義の表スタイルとは無関係に、表は常に \"<emph>prettytable\"</emph> "
+"としてエクスポートされます。つまり、Wiki エンジンでは単純な枠線と太字のヘッダーを持つ表としてレンダリングされます。"
+
+#: wikiformats.xhp#hd_id6255073.help.text
+msgid "Charset and special characters"
+msgstr "文字セットと特殊文字"
+
+#: wikiformats.xhp#par_id8216193.help.text
+msgid ""
+"The charset of the transformation result is fixed to UTF-8. Depending on "
+"your system, this might not be the default charset. This might cause "
+"\"special characters\" to look broken when viewed with default settings. "
+"However, you can switch your editor to UTF-8 encoding to fix this. If your "
+"editor does not support switching the encoding, you can display the result "
+"of the transformation in the Firefox browser and switch the encoding to "
+"UTF-8 there. Now, you can cut and paste the transformation result to your "
+"program of choice."
+msgstr ""
+"変換結果の文字セットは UTF-8 に固定されています。システムによっては、これがデフォルトの文字セットではないこともあり、その場合は「特殊文字」がデフ"
+"ォルトの設定では化けて見えることがあります。この問題は、エディタを UTF-8 "
+"エンコーディングに切り替えれば解決します。エンコーディングの切り替えをサポートしていないエディタの場合は、変換結果を Firefox "
+"ブラウザで表示してブラウザのエンコーディングを UTF-8 "
+"に切り替えてください。これで、変換結果を任意のプログラムへカット＆ペーストできるようになります。"
+
+#: wikisend.xhp#tit.help.text
+msgctxt "wikisend.xhp#tit.help.text"
+msgid "Send to MediaWiki"
+msgstr "MediaWiki へ送信"
+
+#: wikisend.xhp#hd_id108340.help.text
+msgctxt "wikisend.xhp#hd_id108340.help.text"
+msgid "Send to MediaWiki"
+msgstr "MediaWiki へ送信"
+
+#: wikisend.xhp#par_id1743827.help.text
+msgid ""
+"In the Send to MediaWiki dialog, specify the settings for your current Wiki "
+"upload."
+msgstr "「MediaWiki へ送信」ダイアログでは、現在の Wiki アップロードの設定を指定します。"
+
+#: wikisend.xhp#par_id664082.help.text
+msgid ""
+"<ahelp hid=\".\">Select the MediaWiki server where you want to publish your "
+"document. Click Add to add a new server to the list.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">ドキュメントを公開する MediaWiki "
+"サーバーを選択します。新しいサーバーを追加するには「追加」をクリックします。</ahelp>"
+
+#: wikisend.xhp#par_id2794885.help.text
+msgid ""
+"<ahelp hid=\".\">Enter the title of your Wiki entry. This is the top heading "
+"of your Wiki entry. For a new entry, the title must be unique on this Wiki. "
+"If you enter an existing title, your upload will overwrite the existing Wiki "
+"entry.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">Wiki エントリのタイトルを入力します。これは、Wiki エントリの先頭の見出しです。新しいエントリの場合は、この "
+"Wiki にまだ存在しないタイトルを付ける必要があります。既存のタイトルを入力した場合は、アップロードを実行すると既存の Wiki "
+"エントリが上書きされます。</ahelp>"
+
+#: wikisend.xhp#par_id2486342.help.text
+msgid ""
+"<ahelp hid=\".\">Enter an optional short summary or comment.</ahelp> See <link "
+"href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\">http://meta.wikimed"
+"ia.org/wiki/Help:Edit_summary</link>."
+msgstr ""
+"<ahelp hid=\".\">短い概要またはコメントを入力します (省略可能)。</ahelp><link href=\"http://meta.wiki"
+"media.org/wiki/Help:Edit_summary\">http://meta.wikimedia.org/wiki/Help:Edit_s"
+"ummary</link> を参照してください。"
+
+#: wikisend.xhp#par_id823999.help.text
+msgid ""
+"<emph>This is a minor edit</emph>: <ahelp hid=\".\">Check this box to mark the "
+"uploaded page as a minor edit of the already existing page with the same "
+"title.</ahelp>"
+msgstr ""
+"<emph>これは小さな編集です</emph>: <ahelp hid=\".\">このチェックボックスをオンにすると、アップロードされるページは、同じタイ"
+"トルの既存のページに対する小さな編集であると見なされます。</ahelp>"
+
+#: wikisend.xhp#par_id6592913.help.text
+msgid ""
+"<emph>Show in web browser</emph>: <ahelp hid=\".\">Check this box to open your "
+"system web browser and show the uploaded Wiki page.</ahelp>"
+msgstr ""
+"<emph>Web ブラウザで表示</emph>: <ahelp hid=\".\">このチェックボックスをオンにすると、システムの Web "
+"ブラウザが開いて、アップロードされた Wiki ページが表示されます。</ahelp>"
+
+#: wikisettings.xhp#tit.help.text
+msgctxt "wikisettings.xhp#tit.help.text"
+msgid "MediaWiki Options"
+msgstr "MediaWiki のオプション"
+
+#: wikisettings.xhp#hd_id6425672.help.text
+msgctxt "wikisettings.xhp#hd_id6425672.help.text"
+msgid "MediaWiki Options"
+msgstr "MediaWiki のオプション"
+
+#: wikisettings.xhp#par_id1188390.help.text
+msgid ""
+"You can add, edit and remove MediaWiki servers. Open the dialog by <item "
+"type=\"menuitem\">Tools - Options - Internet - MediaWiki</item>. "
+"Alternatively, choose <item type=\"menuitem\">Tools - Extension "
+"Manager</item>, select the @WIKIEXTENSIONPRODUCTNAME@, and click the Options "
+"button."
+msgstr ""
+"MediaWiki サーバーの追加、編集、および削除が可能です。ダイアログを開くには、<item "
+"type=\"menuitem\">「ツール」→「オプション」→「インターネット」→「MediaWiki」</item>をクリックします。または、<item "
+"type=\"menuitem\">「ツール」→「拡張機能マネージャ」</item>を選択して「@WIKIEXTENSIONPRODUCTNAME@」を選"
+"択し、「オプション」ボタンをクリックします。"
+
+#: wikisettings.xhp#par_id300607.help.text
+msgid ""
+"<ahelp hid=\".\">Click Add to add a new Wiki server.<br/>Select an entry and "
+"click Edit to edit the account settings.<br/>Select an entry and click "
+"Remove to remove the entry from the list.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">新しい Wiki サーバーを追加するには「追加」をクリックします。<br/>アカウント設定を編集するには、エントリを選択し"
+"て「編集」をクリックします。<br/>エントリを選択して「削除」をクリックすると、そのエントリがリストから削除されます。</ahelp>"
+
+#: wikisettings.xhp#par_id9786065.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Opens the MediaWiki dialog to add a new "
+"entry to the list.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" "
+"visibility=\"hidden\">新しいエントリをリストに追加するための「MediaWiki」ダイアログを開きます。</ahelp>"
+
+#: wikisettings.xhp#par_id3386333.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Opens the MediaWiki dialog to edit the "
+"selected entry.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" "
+"visibility=\"hidden\">選択されているエントリを編集するための「MediaWiki」ダイアログを開きます。</ahelp>"
+
+#: wikisettings.xhp#par_id7285073.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Removes the selected entry from the "
+"list.</ahelp>"
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">選択されているエントリをリストから削除します。</ahelp>"
+
+#: wikisettings.xhp#par_id1029084.help.text
+msgid ""
+"When you click Add or Edit, the <link "
+"href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> dialog opens."
+msgstr ""
+"「追加」または「編集」をクリックすると、<link "
+"href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">「MediaWiki」</link>ダイアログが開きます。"
+"X-Accelerator-Marker: ~\n"
+
+#: Addons.xcu#.Addons.AddonUI.OfficeMenuBarMerging.com.sun.star.wiki.S1.MenuItems.M2.Title.value.text
+msgid "To Media~Wiki..."
+msgstr "MediaWiki へ(~W)..."
+
+#: OptionsDialog.xcu#.OptionsDialog.Nodes.Internet.Leaves.com.sun.star.wiki.options.Label.value.text
+msgid "MediaWiki"
+msgstr "MediaWiki"
+"X-Accelerator-Marker: ~\n"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.GeneralSendError.value.text
+msgid "The operation 'Send to MediaWiki' could not be completed successfully."
+msgstr "「MediaWiki へ送信」を正常に完了できませんでした。"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.NoWikiFilter.value.text
+msgid ""
+"The MediaWiki export filter cannot be found. Choose 'Tools-XML Filter "
+"Settings' to install the filter, or use the setup to install the component."
+msgstr ""
+"MediaWiki エクスポートフィルタが見つかりません。「ツール」→「XML "
+"フィルタ設定」を選択してフィルタをインストールするか、セットアップを実行してコンポーネントをインストールしてください。"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.NoConnectionToURL.value.text
+msgid "A connection to the MediaWiki system at '$ARG1' could not be created."
+msgstr "'$ARG1' の MediaWiki システムへの接続を作成できませんでした。"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.WrongLogin.value.text
+msgid ""
+"User name or password is incorrect. Please try again, or leave the fields "
+"blank for an anonymous connection."
+msgstr "ユーザー名またはパスワードが正しくありません。もう一度入力してください。匿名で接続する場合は両方のフィールドを空白にしてください。"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.InvalidURL.value.text
+msgid "A connection could not be created because the URL is invalid."
+msgstr "接続を作成できませんでした。URL が正しくありません。"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.NoURL.value.text
+msgid "Specify a MediaWiki server by providing a URL."
+msgstr "URL を入力して MediaWiki サーバーを指定してください。"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.CancelSending.value.text
+msgid ""
+"The transfer has been interrupted. Please check the integrity of the wiki "
+"article."
+msgstr "転送が中断されました。Wiki 記事が完全であることを確認してください。"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_UrlLabel.value.text
+msgid "U~RL"
+msgstr "URL(~R)"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_UsernameLabel.value.text
+msgid "~Username"
+msgstr "ユーザー名(~U)"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_PasswordLabel.value.text
+msgid "~Password"
+msgstr "パスワード(~P)"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendTitle.value.text
+msgid "Send to MediaWiki"
+msgstr "MediaWiki へ送信"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_WikiArticle.value.text
+msgid "Wiki article"
+msgstr "Wiki 記事"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_No.value.text
+msgid "No"
+msgstr "いいえ"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_OK.value.text
+msgid "OK"
+msgstr "OK"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_Yes.value.text
+msgid "Yes"
+msgstr "はい"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_AddButton.value.text
+msgid "~Add..."
+msgstr "追加(~A)..."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditButton.value.text
+msgid "~Edit..."
+msgstr "編集(~E)..."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendButton.value.text
+msgid "~Send"
+msgstr "送信(~S)"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_RemoveButton.value.text
+msgid "~Remove"
+msgstr "削除(~R)"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_NewWikiPage_Label1.value.text
+msgid ""
+"A wiki article with the title '$ARG1' does not exist yet. Do you want to "
+"create a new article with that name?"
+msgstr "'$ARG1' というタイトルの wiki 記事は存在しません。この名前の記事を新規作成しますか ?  "
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_Label1.value.text
+msgid "Media~Wiki Server"
+msgstr "MediaWiki サーバー(~W)"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_Label2.value.text
+msgid "~Title"
+msgstr "タイトル(~T)"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_Label3.value.text
+msgid "S~ummary"
+msgstr "概要(~U)"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_MinorCheck.value.text
+msgid "This is a ~minor edit"
+msgstr "これは小さな編集です(~M)"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_BrowserCheck.value.text
+msgid "Show in web ~browser"
+msgstr "Web ブラウザで表示(~B)"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.UnknownCert.value.text
+msgid "The certificate of the selected site is unknown."
+msgstr "選択されているサイトの証明書が不明です。"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_MediaWiki_Title.value.text
+msgid "MediaWiki"
+msgstr "MediaWiki"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_AccountLine.value.text
+msgid "Account"
+msgstr "アカウント"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_WikiLine.value.text
+msgid "MediaWiki Server"
+msgstr "MediaWiki サーバー"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_SaveBox.value.text
+msgid "~Save password"
+msgstr "パスワードの保存(~S)"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_MediaWiki_Extension_String.value.text
+msgid "@WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_WikiPageExists_Label1.value.text
+msgid ""
+"A wiki article with the title '$ARG1' already exists.&#13;&#13;Do you want "
+"to replace the current article with your article?&#13;&#13;"
+msgstr "タイトル '$ARG1' の wiki 記事はすでに存在します。&#13;&#13;現在の記事を置き換えますか。&#13;&#13;"

@@ -1,0 +1,779 @@
+
+#: setupstrings.ulf#STRING_PREVIOUS.LngText.text
+msgid "Back"
+msgstr "Tagasi"
+
+#: setupstrings.ulf#STRING_NEXT.LngText.text
+msgid "Next"
+msgstr "Edasi"
+
+#: setupstrings.ulf#STRING_CANCEL.LngText.text
+msgid "Cancel"
+msgstr "Loobu"
+
+#: setupstrings.ulf#STRING_FINISH.LngText.text
+msgid "Finish"
+msgstr "Lõpeta"
+
+#: setupstrings.ulf#STRING_DECLINE.LngText.text
+msgid "Decline"
+msgstr "Keeldun"
+
+#: setupstrings.ulf#STRING_INSTALL.LngText.text
+msgid "Install now"
+msgstr "Paigalda nüüd"
+
+#: setupstrings.ulf#STRING_UNINSTALL.LngText.text
+msgid "Remove Now"
+msgstr "Eemalda nüüd"
+
+#: setupstrings.ulf#STRING_HELP.LngText.text
+msgid "Help"
+msgstr "Abi"
+
+#: setupstrings.ulf#STRING_OK.LngText.text
+msgid "OK"
+msgstr "Sobib"
+
+#: setupstrings.ulf#STRING_ERROR.LngText.text
+msgid "Error"
+msgstr "Viga"
+
+#: setupstrings.ulf#STRING_FILE_NOT_FOUND.LngText.text
+msgid "Error: File not found"
+msgstr "Viga: faili ei leitud"
+
+#: setupstrings.ulf#STRING_APPLICATIONTITLE.LngText.text
+msgid "${PRODUCT_FULLNAME} Installation Wizard"
+msgstr "${PRODUCT_FULLNAME} paigaldusnõustaja"
+
+#: setupstrings.ulf#STRING_APPLICATIONTITLEUNINSTALLATION.LngText.text
+msgid "${PRODUCT_FULLNAME} Uninstallation Wizard"
+msgstr "${PRODUCT_FULLNAME} eemaldusnõustaja"
+
+#: setupstrings.ulf#STRING_CANCEL_DIALOG_TITLE.LngText.text
+msgid "Exit"
+msgstr "Välju"
+
+#: setupstrings.ulf#STRING_CANCEL_DIALOG.LngText.text
+msgid "Do you really want to exit the Installation Wizard?"
+msgstr "Kas soovid tõesti paigaldusnõustajast väljuda?"
+
+#: setupstrings.ulf#STRING_CANCEL_DIALOG_UNINSTALLATION.LngText.text
+msgid "Do you really want to exit the Uninstallation Wizard?"
+msgstr "Kas soovid tõesti eemaldusnõustajast väljuda?"
+
+#: setupstrings.ulf#STRING_STOP_DIALOG.LngText.text
+msgid "Do you really want to abort the installation process?"
+msgstr "Kas soovid tõesti paigaldamise katkestada?"
+
+#: setupstrings.ulf#STRING_STOP_DIALOG_TITLE.LngText.text
+msgid "Abort installation?"
+msgstr "Kas katkestada paigaldamine?"
+
+#: setupstrings.ulf#STRING_STOP_DIALOG_UNINSTALLATION.LngText.text
+msgid "Do you really want to abort the uninstallation process?"
+msgstr "Kas soovid tõesti eemaldamise katkestada?"
+
+#: setupstrings.ulf#STRING_STOP_DIALOG_TITLE_UNINSTALLATION.LngText.text
+msgid "Abort uninstallation?"
+msgstr "Kas katkestada eemaldamine?"
+
+#: setupstrings.ulf#STRING_ACCEPTLICENSE.LngText.text
+msgid "Accept License"
+msgstr "Nõustun litsentsiga"
+
+#: setupstrings.ulf#STRING_ACCEPTLICENSE1.LngText.text
+msgid "Software License Agreement"
+msgstr "Tarkvara litsentsileping"
+
+#: setupstrings.ulf#STRING_ACCEPTLICENSE2.LngText.text
+msgid "Please read the following license agreement carefully."
+msgstr "Palun loe järgnevat litsentsilepingut tähelepanelikult."
+
+#: setupstrings.ulf#STRING_ACCEPTLICENSE3.LngText.text
+msgctxt "setupstrings.ulf#STRING_ACCEPTLICENSE3.LngText.text"
+msgid ""
+"If you have read and accept all the terms of the entire Software License "
+"Agreement, click 'Accept License' to continue with the installation."
+msgstr ""
+"Kui oled läbi lugenud kõik tarkvara litsentsilepingu tingimused, klõpsa "
+"paigalduse jätkamiseks 'Nõustun litsentsiga'."
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY1.LngText.text
+msgid "Select Installation Directory"
+msgstr "Paigalduskataloogi valimine"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY1_UPDATE.LngText.text
+msgid "Update the Installed Version"
+msgstr "Paigaldatud versiooni uuendamine"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY1_MAINTAIN.LngText.text
+msgid "Adding Components to the Installed Version"
+msgstr "Komponentide lisamine paigaldatud versioonile"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY2.LngText.text
+msgid "Install ${PRODUCT_FULLNAME} in this directory"
+msgstr "${PRODUCT_FULLNAME} paigaldatakse kataloogi"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY3.LngText.text
+msgid "Browse..."
+msgstr "Lehitse..."
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY4_QUESTION_TITLE.LngText.text
+msgid "Create New Directory"
+msgstr "Loo uus kataloog"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE.LngText.text
+msgid ""
+"The directory '${DIR}' does not exist.\n"
+"Do you want to create it now?"
+msgstr ""
+"Kataloogi '${DIR}' pole olemas.\n"
+"Kas soovid selle luua?"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2.LngText.text
+msgid ""
+"The directory '${DIR}' does not exist.\n"
+"Do you want to create it now or choose another directory?"
+msgstr ""
+"Kataloogi '${DIR}' pole olemas.\n"
+"Kas soovid selle luua või valid teise kataloogi?"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY6.LngText.text
+msgid "Select root directory"
+msgstr "Juurkataloogi valimine"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY_NO_WRITE_ACCESS.LngText.text
+msgid "You do not have write access in the directory"
+msgstr "Sul pole sellesse kataloogi kirjutamise õigusi"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY_NOT_ALLOWED.LngText.text
+msgid "You are not allowed to create the directory"
+msgstr "Sul pole õigusi seda kataloogi luua"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY_NO_SUCCESS.LngText.text
+msgid "Failed to create the directory"
+msgstr "Kataloogi loomine nurjus"
+
+#: setupstrings.ulf#STRING_CHOOSECOMPONENTS1.LngText.text
+msgid "Select Components"
+msgstr "Komponentide valimine"
+
+#: setupstrings.ulf#STRING_CHOOSECOMPONENTS1_MAINTAIN.LngText.text
+msgid "Select Additional Components"
+msgstr "Lisakomponentide valimine"
+
+#: setupstrings.ulf#STRING_CHOOSECOMPONENTS2.LngText.text
+msgid "Marked components will be installed. Please mark them accordingly"
+msgstr "Paigaldatakse märgistatud komponendid. Palun märgista need vastavalt"
+
+#: setupstrings.ulf#STRING_CHOOSECOMPONENTS3.LngText.text
+msgid "Feature Description"
+msgstr "Omaduse kirjeldus"
+
+#: setupstrings.ulf#STRING_CHOOSECOMPONENTS4.LngText.text
+msgid "Size (kB):"
+msgstr "Suurus (kB):"
+
+#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE1.LngText.text
+msgctxt "setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE1.LngText.text"
+msgid "Select the Type of Installation"
+msgstr "Paigalduse tüübi valimine"
+
+#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE2.LngText.text
+msgid "Select the type of installation that best suits your needs:"
+msgstr "Vali paigalduse tüüp, mis vastab kõige paremini su vajadustele:"
+
+#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE3.LngText.text
+msgctxt "setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE3.LngText.text"
+msgid "Select the Type of Installation"
+msgstr "Paigalduse tüübi valimine"
+
+#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE4.LngText.text
+msgid "The main components will be installed. Recommended for most users."
+msgstr ""
+"Paigaldatakse põhikomponendid. See on soovitatav enamikule kasutajatele."
+
+#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE5.LngText.text
+msgid ""
+"You choose the components you want to install and where they are stored. "
+"Recommended for advanced users."
+msgstr ""
+"Võimalik on valida komponendid, mida soovid paigaldada, ja nende "
+"paigaldamise sihtkoht. See on soovituslik edasijõudnud kasutajatele."
+
+#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE6.LngText.text
+msgid "Typical"
+msgstr "Tüüpiline"
+
+#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE7.LngText.text
+msgid "Custom"
+msgstr "Kohandatud"
+
+#: setupstrings.ulf#STRING_INSTALLATIONIMMINENT1.LngText.text
+msgid "Ready to Install"
+msgstr "Paigaldamiseks valmis"
+
+#: setupstrings.ulf#STRING_INSTALLATIONIMMINENT1_UPDATE.LngText.text
+msgid "Ready to Update"
+msgstr "Uuendamiseks valmis"
+
+#: setupstrings.ulf#STRING_INSTALLATIONIMMINENT2.LngText.text
+msgid "The following ${PRODUCT_FULLNAME} components will be installed:"
+msgstr "Paigaldatakse järgnevad ${PRODUCT_FULLNAME} komponendid:"
+
+#: setupstrings.ulf#STRING_INSTALLATIONONGOING1.LngText.text
+msgid "Installing..."
+msgstr "Paigaldamine..."
+
+#: setupstrings.ulf#STRING_INSTALLATIONONGOING3.LngText.text
+msgid "Stop"
+msgstr "Peata"
+
+#: setupstrings.ulf#STRING_INSTALLATIONONGOING_PACKAGEPATH_NOT_FOUND.LngText.text
+msgid "ERROR: Path with installation packages not found!"
+msgstr "VIGA: paigalduspakettide asukohta ei leitud!"
+
+#: setupstrings.ulf#STRING_PROLOGUE1.LngText.text
+msgid "Welcome"
+msgstr "Tere tulemast"
+
+#: setupstrings.ulf#STRING_PROLOGUE2.LngText.text
+msgid ""
+"This Installation Wizard will install ${PRODUCT_FULLNAME} on your computer."
+msgstr "Paigaldusnõustaja paigaldab ${PRODUCT_FULLNAME} sinu arvutisse."
+
+#: setupstrings.ulf#STRING_PROLOGUE3.LngText.text
+msgid "To continue, click 'Next'."
+msgstr "Klõpsa jätkamiseks 'Edasi'."
+
+#: setupstrings.ulf#STRING_PROLOGUE4.LngText.text
+msgid ""
+"Note: This installation will be done without root privileges. Therefore you "
+"will have a reduced functionality (Java Runtime Environment (JRE) not "
+"installable, system integration not possible).\n"
+"Click 'Cancel' and change your privileges to root privileges, if you want to "
+"use the complete functionality."
+msgstr ""
+"Märkus: paigaldamine sooritatakse ilma administraatori õigusteta. Seetõttu "
+"on võimalik kasutada ainult piiratud funktsionaalsust (Java käitusaja "
+"keskkond (JRE) pole paigaldatav, süsteemne integreerimine pole võimalik).\n"
+"Kui soovid kasutada täisfunktsionaalsust, klõpsa 'Loobu' ja käivita "
+"paigaldamine administraatori õigustes."
+
+#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1.LngText.text
+msgid "Installation Completed"
+msgstr "Paigaldamine on lõpetatud"
+
+#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1_ABORT.LngText.text
+msgid "Installation Aborted"
+msgstr "Paigaldamine katkes"
+
+#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1_ERROR.LngText.text
+msgid "Installation Failed"
+msgstr "Paigaldamine nurjus"
+
+#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2.LngText.text
+msgid ""
+"The Installation Wizard has successfully installed ${PRODUCT_FULLNAME} on "
+"your computer."
+msgstr "Paigaldusnõustaja paigaldas ${PRODUCT_FULLNAME} edukalt sinu arvutisse."
+
+#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ABORT.LngText.text
+msgid ""
+"The Installation Wizard was aborted. ${PRODUCT_NAME} is not installed on "
+"your computer."
+msgstr ""
+"Paigaldusnõustaja töö katkes. ${PRODUCT_NAME} ei paigaldatud sinu arvutisse."
+
+#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ERROR.LngText.text
+msgid ""
+"An error has occurred. Thus the Installation Wizard could not install "
+"${PRODUCT_NAME} on your computer successfully. Click 'Details...' for more "
+"information."
+msgstr ""
+"Tekkis viga. Seetõttu ei saanud paigaldusnõustaja ${PRODUCT_NAME} sinu "
+"arvutisse paigaldada. Rohkema teabe jaoks klõpsa 'Üksikasjad...'."
+
+#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED3.LngText.text
+msgid "Click 'Finish' to exit the Wizard."
+msgstr "Nõustajast väljumiseks klõpsa 'Lõpeta'."
+
+#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED_BUTTON.LngText.text
+msgid "Details..."
+msgstr "Üksikasjad..."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE2.LngText.text
+msgid ""
+"The ${PRODUCT_FULLNAME} Uninstallation Wizard will remove "
+"${PRODUCT_FULLNAME} from your computer."
+msgstr ""
+"${PRODUCT_FULLNAME} eemaldusnõustaja eemaldab ${PRODUCT_FULLNAME} sinu "
+"arvutist."
+
+#: setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_ROOT.LngText.text
+msgid ""
+"Sorry, wrong privileges. Installation was done with User privilges, but you "
+"have Root privileges."
+msgstr ""
+"Sul on valed õigused. Paigaldamine sooritati kasutaja õigustega, kuid praegu "
+"on sul administraatori õigused."
+
+#: setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_USER.LngText.text
+msgid ""
+"Sorry, wrong privileges. Installation was done with Root privilges, but you "
+"have User privileges."
+msgstr ""
+"Sul on valed õigused. Paigaldamine sooritati administraatori õigustega, kuid "
+"praegu on sul kasutaja õigused."
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE1.LngText.text
+msgid "Select the Type of Uninstallation"
+msgstr "Eemaldamise tüübi valimine"
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE2.LngText.text
+msgid "Select the type of uninstallation that best suits your needs:"
+msgstr "Vali eemaldamise tüüp, mis vastab kõige paremini sinu vajadustele:"
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE3.LngText.text
+msgid "Partial"
+msgstr "Osaline"
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE4.LngText.text
+msgid ""
+"Completely removes ${PRODUCT_FULLNAME} and all its components from your "
+"system."
+msgstr ""
+"Eemaldab ${PRODUCT_FULLNAME} ja kõik tema komponendid täielikult sinu "
+"süsteemist."
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE5.LngText.text
+msgid "You choose the program features you want to remove."
+msgstr "Vali rakenduse omadused, mida soovid eemaldada."
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE6.LngText.text
+msgid "Complete"
+msgstr "Täielik"
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS2.LngText.text
+msgid ""
+"Components marked with an X will be removed. Mark the components you want to "
+"remove."
+msgstr ""
+"Eemaldatakse X-iga märgitud komponendid. Märgista komponendid, mida soovid "
+"eemaldada."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT1.LngText.text
+msgid "Ready to Remove"
+msgstr "Eemaldamiseks valmis"
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT2.LngText.text
+msgid "The following ${PRODUCT_FULLNAME} components will be removed: "
+msgstr "Eemaldatakse järgnevad ${PRODUCT_FULLNAME} komponendid: "
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONONGOING1.LngText.text
+msgid "Uninstalling..."
+msgstr "Eemaldamine..."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1.LngText.text
+msgid "Uninstallation Completed"
+msgstr "Eemaldamine on lõpetatud"
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1_ABORT.LngText.text
+msgid "Uninstallation Aborted"
+msgstr "Eemaldamine katkes"
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1_ERROR.LngText.text
+msgid "Uninstallation Failed"
+msgstr "Eemaldamine nurjus"
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2.LngText.text
+msgid ""
+"The Uninstallation Wizard has successfully removed ${PRODUCT_FULLNAME} from "
+"your computer."
+msgstr "Eemaldusnõustaja eemaldas ${PRODUCT_FULLNAME} edukalt sinu arvutist."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_PARTIAL.LngText.text
+msgid ""
+"The Uninstallation Wizard has successfully removed the selected components "
+"of ${PRODUCT_NAME} from your computer."
+msgstr ""
+"Eemaldusnõustaja eemaldas ${PRODUCT_NAME} valitud komponendid edukalt sinu "
+"arvutist."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ABORT.LngText.text
+msgid ""
+"The Uninstallation Wizard was aborted before completely removing "
+"${PRODUCT_NAME} from your computer."
+msgstr ""
+"Eemaldusnõustaja töö katkes enne ${PRODUCT_NAME} eemaldamist sinu arvutist."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ERROR.LngText.text
+msgid ""
+"An error has occurred. Thus the Uninstallation Wizard could not remove "
+"${PRODUCT_NAME} from your computer successfully. Click 'Details...' for more "
+"information."
+msgstr ""
+"Tekkis viga. Seetõttu ei saanud eemaldusnõustaja ${PRODUCT_NAME} sinu "
+"arvutist eemaldada. Rohkema teabe jaoks klõpsa 'Üksikasjad...'."
+
+#: setupstrings.ulf#STRING_INSTALLERFACTORY_OS_NOT_SUPPORTED.LngText.text
+msgid "Sorry, this Operating System is not supported yet."
+msgstr "Kahjuks pole see operatsioonisüsteem veel toetatud."
+
+#: setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_FOUND.LngText.text
+msgid "An older version of ${PRODUCT_NAME} was found on your system in:"
+msgstr "Sinu süsteemist leiti vanem ${PRODUCT_NAME} versioon, mis asub:"
+
+#: setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_REMOVE.LngText.text
+msgid ""
+"You have to remove the older version of ${PRODUCT_NAME} before you can "
+"install the newer one."
+msgstr ""
+"Sa pead enne uuema ${PRODUCT_NAME} versiooni paigaldamist vanema eemaldama."
+
+#: setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_FOUND.LngText.text
+msgid "A newer version of ${PRODUCT_NAME} was found on your system in:"
+msgstr "Sinu süsteemist leiti uuem ${PRODUCT_NAME} versioon, mis asub:"
+
+#: setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_REMOVE.LngText.text
+msgid ""
+"You have to remove the newer version of ${PRODUCT_NAME} before you can "
+"install the older one."
+msgstr ""
+"Sa pead enne vanema ${PRODUCT_NAME} versiooni paigaldamist uuema eemaldama."
+
+#: setupstrings.ulf#STRING_NEWER_VERSION_DATABASE.LngText.text
+msgid "Database"
+msgstr "Andmebaas"
+
+#: setupstrings.ulf#STRING_NEWER_VERSION_TIP.LngText.text
+msgid "Please choose another installation directory."
+msgstr "Palun vali teine paigalduskataloog."
+
+#: setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_1.LngText.text
+msgid "The user you are logged in as cannot run the Installation Wizard."
+msgstr ""
+"Kasutaja, kellena sa oled sisse loginud, ei saa paigaldusnõustajat "
+"käivitada."
+
+#: setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_2.LngText.text
+msgid ""
+"Please log out and log back in as a user with system administrator rights."
+msgstr ""
+"Palun logi esmalt välja ja seejärel uuesti sisse administraatori õigustega."
+
+#: setupstrings.ulf#STRING_DISCSPACE_INSUFFICIENT.LngText.text
+msgid "Not enough discspace available for installation."
+msgstr "Paigaldamiseks ei jätku vaba kettaruumi."
+
+#: setupstrings.ulf#STRING_DISCSPACE_REQUIRED.LngText.text
+msgid "Required disc space"
+msgstr "Vajalik kettaruum"
+
+#: setupstrings.ulf#STRING_DISCSPACE_AVAILABLE.LngText.text
+msgid "Available disc space"
+msgstr "Saadaolev kettaruum"
+
+#: setupstrings.ulf#STRING_DISCSPACE_TIP.LngText.text
+msgid ""
+"Please use another directory for installation or change your module "
+"selection."
+msgstr ""
+"Palun kasuta paigaldamiseks teist kataloogi või muuda moodulite valikut."
+
+#: setupstrings.ulf#STRING_ANALYZING_DATABASE1.LngText.text
+msgid "Analyzing ..."
+msgstr "Analüüsimine ..."
+
+#: setupstrings.ulf#STRING_ANALYZING_DATABASE2.LngText.text
+msgid ""
+"Analyzing database\n"
+"Please wait a moment ..."
+msgstr ""
+"Andmebaasi analüüsimine\n"
+"Palun oota natuke ..."
+
+#: setupstrings.ulf#STRING_PROLOGUE_1.LngText.text
+msgid ""
+"Welcome to the Installation Wizard.<p>This wizard asks you to supply "
+"configuration settings.<p>At the bottom of each page are navigation buttons "
+"that let you move through the Installation Wizard:"
+msgstr ""
+"Tere tulemast paigaldusnõustajasse.<p>See nõustaja palub sul määrata "
+"häälestuse sätted.<p>Iga nõustaja lehe alaosas on navigeerimisnupud, mis "
+"võimaldavad liikuda läbi paigaldusnõustaja:"
+
+#: setupstrings.ulf#STRING_PROLOGUE_2.LngText.text
+msgctxt "setupstrings.ulf#STRING_PROLOGUE_2.LngText.text"
+msgid "'Back' returns you to the previous page."
+msgstr "'Tagasi' viib tagasi eelmisele lehele."
+
+#: setupstrings.ulf#STRING_PROLOGUE_3.LngText.text
+msgctxt "setupstrings.ulf#STRING_PROLOGUE_3.LngText.text"
+msgid "'Next' takes you to the next page. "
+msgstr "'Edasi' viib sind järgmisele lehele. "
+
+#: setupstrings.ulf#STRING_PROLOGUE_4.LngText.text
+msgid "'Cancel' ends the Installation Wizard without installing this software."
+msgstr "'Loobu' lõpetab paigaldusnõustaja töö ilma tarkvara paigaldamata."
+
+#: setupstrings.ulf#STRING_PROLOGUE_5.LngText.text
+msgctxt "setupstrings.ulf#STRING_PROLOGUE_5.LngText.text"
+msgid ""
+"'Help' displays the Help with further information about the page currently "
+"displayed."
+msgstr "'Abi' kuvab abiteavet parajasti kuvatava lehe kohta."
+
+#: setupstrings.ulf#STRING_PROLOGUE_6.LngText.text
+msgid "'OK' exits the Help page and returns you to the Installation Wizard."
+msgstr "'Sobib' sulgeb abi lehe ja viib tagasi paigaldusnõustajasse."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_1.LngText.text
+msgid ""
+"Welcome to the Uninstallation Wizard.<p>This wizard asks you to supply "
+"configuration settings.<p>At the bottom of each page are navigation buttons "
+"that let you move through the Uninstallation Wizard:"
+msgstr ""
+"Tere tulemast eemaldusnõustajasse.<p>See nõustaja palub sul määrata "
+"häälestuse sätted.<p>Iga nõustaja lehe alaosas on navigeerimisnupud, mis "
+"võimaldavad liikuda läbi eemaldusnõustaja:"
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_2.LngText.text
+msgctxt "setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_2.LngText.text"
+msgid "'Back' returns you to the previous page."
+msgstr "'Tagasi' viib tagasi eelmisele lehele."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_3.LngText.text
+msgctxt "setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_3.LngText.text"
+msgid "'Next' takes you to the next page. "
+msgstr "'Edasi' viib sind järgmisele lehele. "
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_4.LngText.text
+msgid "'Cancel' ends the Uninstallation Wizard without removing this software."
+msgstr "'Loobu' lõpetab eemaldusnõustaja töö ilma tarkvara eemaldamata."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_5.LngText.text
+msgctxt "setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_5.LngText.text"
+msgid ""
+"'Help' displays the Help with further information about the page currently "
+"displayed."
+msgstr "'Abi' kuvab abiteavet parajasti kuvatava lehe kohta."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_6.LngText.text
+msgid "'OK' exits the Help page and returns you to the Uninstallation Wizard."
+msgstr "'Sobib' sulgeb abi lehe ja viib tagasi eemaldusnõustajasse."
+
+#: setupstrings.ulf#STRING_ACCEPTLICENSE_1.LngText.text
+msgid ""
+"Before you install this product, you must read and accept the entire "
+"Software License Agreement under which this software is licensed for your "
+"use."
+msgstr ""
+"Enne tarkvara paigaldamist pead sa lugema läbi tarkvara kasutamistingimusi "
+"kirjeldava litsentsilepingu ja sellega nõustuma."
+
+#: setupstrings.ulf#STRING_ACCEPTLICENSE_2.LngText.text
+msgctxt "setupstrings.ulf#STRING_ACCEPTLICENSE_2.LngText.text"
+msgid ""
+"If you have read and accept all the terms of the entire Software License "
+"Agreement, click 'Accept License' to continue with the installation."
+msgstr ""
+"Kui oled läbi lugenud kõik tarkvara litsentsilepingu tingimused, klõpsa "
+"paigalduse jätkamiseks 'Nõustun litsentsiga'."
+
+#: setupstrings.ulf#STRING_ACCEPTLICENSE_3.LngText.text
+msgid ""
+"If you do not accept all the terms of the Software License Agreement, click "
+"'Decline' to end the Installation Wizard without installing this product."
+msgstr ""
+"Kui sa pole nõus kõikide tarkvara litsentsilepingu tingimustega, klõpsa "
+"paigaldusnõustajast väljumiseks ilma toodet paigaldamata 'Keeldun'."
+
+#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE_1.LngText.text
+msgid ""
+"Select the type of product installation to perform from the following "
+"choices. This will determine how much information you need to provide for "
+"product configuration."
+msgstr ""
+"Vali järgnevate võimaluste hulgast toote paigaldamise tüüp. See määrab, kui "
+"palju teavet sult toote häälestamiseks küsitakse."
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY_1.LngText.text
+msgid ""
+"It is recommended that you install this product in the directory suggested "
+"by this Installation Wizard. <p>To choose a different location, click "
+"'Browse...' or specify the full path of the directory to use in the text box "
+"below. <p>If this product is already installed, you cannot change the "
+"destination directory."
+msgstr ""
+"Soovitatav oleks paigaldada toode paigaldusnõustaja poolt pakutavasse "
+"kataloogi. <p>Teise asukoha valimiseks klõpsa 'Lehitse...' või sisesta "
+"allpool asuvasse tekstikasti kataloogi täielik aadress. <p>Kui toode on juba "
+"paigaldatud, ei saa sihtkataloogi muuta."
+
+#: setupstrings.ulf#STRING_CHOOSECOMPONENTS_1.LngText.text
+msgid ""
+"Components marked in color will be installed. Click the icon of a component "
+"to mark or unmark the component.<p>All already installed components cannot "
+"be selected for installation."
+msgstr ""
+"Paigaldatakse värviliselt tähistatud komponendid. Klõpsa märgistamiseks või "
+"märgistuse eemaldamiseks komponendi ikoonil.<p>Juba paigaldatud komponente "
+"ei saa enam paigaldamiseks valida."
+
+#: setupstrings.ulf#STRING_INSTALLATIONIMMINENT_1.LngText.text
+msgid ""
+"The listed components are ready for installation based on your configuration "
+"settings. <p>If you are satisfied with your selection, click 'Install Now' "
+"to begin. <p>To check or modify your settings on the previous pages, click "
+"'Back'."
+msgstr ""
+"Loetletud komponendid on vastavalt sinu määratud sätetele paigaldamiseks "
+"valmis. <p>Kui oled valikuga rahul, klõpsa paigaldamise alustamiseks "
+"'Paigalda nüüd'. <p>Eelmistel lehtedel asuvate sätete kontrollimiseks või "
+"muutmiseks klõpsa 'Tagasi'."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT_1.LngText.text
+msgid ""
+"The listed components are ready for uninstallation based on your "
+"configuration settings. <p>If you are satisfied with your selection, click "
+"'Remove Now' to begin. <p>To check or modify your settings on the previous "
+"pages, click 'Back'."
+msgstr ""
+"Loetletud komponendid on vastavalt sinu määratud sätetele eemaldamiseks "
+"valmis. <p>Kui oled valikuga rahul, klõpsa eemaldamise alustamiseks 'Eemalda "
+"nüüd'. <p>Eelmistel lehtedel asuvate sätete kontrollimiseks või muutmiseks "
+"klõpsa 'Tagasi'."
+
+#: setupstrings.ulf#STRING_INSTALLATIONONGOING_1.LngText.text
+msgid ""
+"This page indicates the progress of the installation with the aid of a "
+"progress bar. To abort the installation process, click 'Stop'."
+msgstr ""
+"See leht kuvab edenemisriba abil paigaldamise käiku. Paigaldamise "
+"peatamiseks klõpsa 'Peata'."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONONGOING_1.LngText.text
+msgid ""
+"This page indicates the progress of the uninstallation with the aid of a "
+"progress bar. To abort the uninstallation, click 'Stop'."
+msgstr ""
+"See leht kuvab edenemisriba abil eemaldamise käiku. Eemaldamise peatamiseks "
+"klõpsa 'Peata'."
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE_1.LngText.text
+msgid ""
+"Complete: This will remove all installed components of your "
+"version.<p>Partial: This removes only the components you will choose out of "
+"the components list."
+msgstr ""
+"Täielik: see eemaldab sinu versiooni kõik paigaldatud "
+"komponendid.<p>Osaline: see eemaldab ainult need komponendid, mida sa "
+"komponentide nimekirjast valid."
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS_1.LngText.text
+msgid ""
+"Components marked with an X will be removed. Click next to a component to "
+"mark or unmark it with an X."
+msgstr ""
+"Eemaldatakse X-iga märgitud komponendid. Klõpsa komponendil X-i lisamiseks "
+"või selle eemaldamiseks."
+
+#: setupstrings.ulf#STRING_PACKAGEFORMAT_NOT_SUPPORTED.LngText.text
+msgid ""
+"This package format is currently not supported for your operating system!"
+msgstr "Sinu operatsioonisüteem ei toeta seda paketi vormingut!"
+
+#: setupstrings.ulf#STRING_OPERATING_SYSTEM.LngText.text
+msgid "Operating system"
+msgstr "Operatsioonisüsteem"
+
+#: setupstrings.ulf#STRING_PACKAGEFORMAT.LngText.text
+msgid "Package format"
+msgstr "Paketi vorming"
+
+#: setupstrings.ulf#STRING_NOTHING_TO_INSTALL.LngText.text
+msgid "Nothing to install"
+msgstr "Midagi pole paigaldada"
+
+#: setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_1.LngText.text
+msgid "No components have been selected for installation."
+msgstr "Paigaldamiseks pole valitud ühtki komponenti."
+
+#: setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_2.LngText.text
+msgid ""
+"Click 'OK' to select one or more components for installation or to exit the "
+"Installation Wizard."
+msgstr ""
+"Klõpsa ühe või mitme paigaldatava komponendi valimiseks või "
+"paigaldusnõustajast väljumiseks 'Sobib'."
+
+#: setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_1.LngText.text
+msgid "No languages have been selected for installation."
+msgstr "Paigaldamiseks pole valitud ühtki keelt."
+
+#: setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_2.LngText.text
+msgid ""
+"Click 'OK' to select one or more languages for installation or to exit the "
+"Installation Wizard."
+msgstr ""
+"Klõpsa ühe või mitme paigaldatava keele valimiseks või paigaldusnõustajast "
+"väljumiseks 'Sobib'."
+
+#: setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_1.LngText.text
+msgid "No applications have been selected for installation."
+msgstr "Paigaldamiseks pole valitud ühtki rakendust."
+
+#: setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_2.LngText.text
+msgid ""
+"Click 'OK' to select one or more application for installation or to exit the "
+"Installation Wizard."
+msgstr ""
+"Klõpsa ühe või mitme paigaldatava rakenduse valimiseks või "
+"paigaldusnõustajast väljumiseks 'Sobib'."
+
+#: setupstrings.ulf#STRING_NOTHING_TO_UNINSTALL.LngText.text
+msgid "Nothing to uninstall"
+msgstr "Midagi pole eemaldada"
+
+#: setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_1.LngText.text
+msgid "No components have been selected for uninstallation."
+msgstr "Eemaldamiseks pole valitud ühtki komponenti."
+
+#: setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_2.LngText.text
+msgid ""
+"Click 'OK' to select one or more components for uninstallation or to exit "
+"the Uninstallation Wizard."
+msgstr ""
+"Klõpsa ühe või mitme eemaldatava komponendi valimiseks või "
+"eemaldusnõustajast väljumiseks 'Sobib'."
+
+#: setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_1.LngText.text
+msgid "All language components have been selected for uninstallation."
+msgstr "Eemaldamiseks on valitud kõik keeled."
+
+#: setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_2.LngText.text
+msgid ""
+"Click 'OK' to select one or more language components not for uninstallation "
+"or to exit the Uninstallation Wizard."
+msgstr ""
+"Klõpsa ühe või mitme eemaldatava keele valimise tühistamiseks või "
+"eemaldusnõustajast väljumiseks 'Sobib'."
+
+#: setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_1.LngText.text
+msgid "All application components have been selected for uninstallation."
+msgstr "Eemaldamiseks on valitud kõik rakenduse komponendid."
+
+#: setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_2.LngText.text
+msgid ""
+"Click 'OK' to select one or more application components not for "
+"uninstallation or to exit the Uninstallation Wizard."
+msgstr ""
+"Klõpsa ühe või mitme eemaldatava komponendi valiku tühistamiseks või "
+"eemaldusnõustajast väljumiseks 'Sobib'."
+
+#: setupstrings.ulf#STRING_CHANGE_SELECTION.LngText.text
+msgid "Please change selection"
+msgstr "Palun muuda valikut"

@@ -1,0 +1,793 @@
+"X-Accelerator-Marker: ~\n"
+
+#: conn_error_message.src#256___2_100___0.string.text
+msgid "The record operation has been vetoed."
+msgstr "פעולת הרישום נפסלה."
+
+#: conn_error_message.src#256___2_200___0.string.text
+msgid "The statement contains a cyclic reference to one or more sub queries."
+msgstr "המשפט כולל הפניה לולאית לתת שאילתא אחת או יותר."
+
+#: conn_error_message.src#256___2_300___0.string.text
+msgid "The name must not contain any slashes ('/')."
+msgstr "אין להקליד קו נטוי ('/') בתוך שם."
+
+#: conn_error_message.src#256___2_301___0.string.text
+msgid "$1$ is no SQL conform identifier."
+msgstr "המחרוזת $1$ אינו מזהה SQL מאושר."
+
+#: conn_error_message.src#256___2_302___0.string.text
+msgid "Query names must not contain quote characters."
+msgstr "אין להקליד גרשיים בשמות שאילתות."
+
+#: conn_error_message.src#256___2_303___0.string.text
+msgid "The name '$1$' is already in use in the database."
+msgstr "השם '$1$' כבר נמצא בשימוש במסד הנתונים."
+
+#: conn_error_message.src#256___2_304___0.string.text
+msgid "No connection to the database exists."
+msgstr "החיבור לבסיס הנתונים לא קיים."
+
+#: conn_error_message.src#256___2_500___0.string.text
+msgid "No $1$ exists."
+msgstr "$1$ לא קיים."
+
+#: conn_error_message.src#256___2_550___0.string.text
+msgid "Unable to display the complete table content. Please apply a filter."
+msgstr "אין אפשרות להציג את כל תוכן הטבלה, יש להחיל פילטר."
+
+#: conn_shared_res.src#STR_MOZILLA_ADDRESSBOOKS.string.text
+msgid "Mozilla/Seamonkey Addressbook Directory"
+msgstr "ספר כתובות של מוזילה/Seamonkey"
+
+#: conn_shared_res.src#STR_THUNDERBIRD_ADDRESSBOOKS.string.text
+msgid "Thunderbird Addressbook Directory"
+msgstr "ספר כתובות של Thunderbird"
+
+#: conn_shared_res.src#STR_OE_ADDRESSBOOK.string.text
+msgid "Outlook Express Addressbook"
+msgstr "ספר כתובות של אאוטלוק אקספרס"
+
+#: conn_shared_res.src#STR_OUTLOOK_MAPI_ADDRESSBOOK.string.text
+msgid "Outlook (MAPI) Addressbook"
+msgstr "ספר כתובות של אוטלוק (MAPI)"
+
+#: conn_shared_res.src#STR_NO_TABLE_CREATION_SUPPORT.string.text
+msgid "Creating tables is not supported for this kind of address books."
+msgstr "יצירת טבלאות אינה נתמכת עבור סוג זה של ספר כתובות"
+
+#: conn_shared_res.src#STR_MOZILLA_IS_RUNNING.string.text
+msgid "Cannot create new address books while Mozilla is running."
+msgstr "לא ניתן ליצור ספר כתובות חדש בעת הפעלת מוזילה"
+
+#: conn_shared_res.src#STR_COULD_NOT_RETRIEVE_AB_ENTRY.string.text
+msgid ""
+"An address book entry could not be retrieved, an unknown error occurred."
+msgstr "אחזור הרשומה מספר הכתובות נכשל מסיבה לא ידועה"
+
+#: conn_shared_res.src#STR_COULD_NOT_GET_DIRECTORY_NAME.string.text
+msgid ""
+"An address book directory name could not be retrieved, an unknown error "
+"occurred."
+msgstr "האחזור של שם התיקיה של ספר הכתובות נכשל מסיבה לא ידועה"
+
+#: conn_shared_res.src#STR_TIMEOUT_WAITING.string.text
+msgid "Timed out while waiting for the result."
+msgstr "אין תגובה תוך פרק הזמן הקצוב"
+
+#: conn_shared_res.src#STR_ERR_EXECUTING_QUERY.string.text
+msgid "An error occurred while executing the query."
+msgstr "ארעה שגיאה בעת ביצוע השאילתה"
+
+#: conn_shared_res.src#STR_MOZILLA_IS_RUNNIG_NO_CHANGES.string.text
+msgid ""
+"You can't make any changes to mozilla address book when mozilla is running."
+msgstr "לא ניתן לבצע שינוים לספר כתובות של מוזילה בעת הפעלת מוזילה"
+
+#: conn_shared_res.src#STR_FOREIGN_PROCESS_CHANGED_AB.string.text
+msgid ""
+"Mozilla Address Book has been changed out of this process, we can't modify "
+"it in this condition."
+msgstr ""
+"ספר הכתובות של מוזילה שונה על ידי תהליך אחר. במצב זה אין אפשרות לשנות אותו "
+"מתוך אופן אופיס"
+
+#: conn_shared_res.src#STR_CANT_FIND_ROW.string.text
+msgid "Can't find the requested row."
+msgstr "השורה המבוקשת לא נמצאת"
+
+#: conn_shared_res.src#STR_CANT_FIND_CARD_FOR_ROW.string.text
+msgid "Can't find the card for the requested row."
+msgstr "הכרטיס של השורה המבוקשת לא נמצא"
+
+#: conn_shared_res.src#STR_QUERY_AT_LEAST_ONE_TABLES.string.text
+msgid "The query can not be executed. It needs at least one table."
+msgstr "אי אפשר להריץ את השאילתה. לשאילתה דרושה לפחות טבלה אחת."
+
+#: conn_shared_res.src#STR_NO_COUNT_SUPPORT.string.text
+msgid "The driver does not support the 'COUNT' function."
+msgstr "מנהל התקן זה אינו תומך בפונקציה 'COUNT'."
+
+#: conn_shared_res.src#STR_STMT_TYPE_NOT_SUPPORTED.string.text
+msgid "This statement type not supported by this database driver."
+msgstr "סוג ביטוי זה אינו נתמך ע\"י מנהל ההתקן של מסד נתונים הנוכחי."
+
+#: conn_shared_res.src#STR_UNSPECIFIED_ERROR.string.text
+msgid "An unknown error occured."
+msgstr "אירעה שגיאה לא מוכרת."
+
+#: conn_shared_res.src#STR_COULD_NOT_CREATE_ADDRESSBOOK.string.text
+msgid "Could not create a new address book. Mozilla error code is $1$."
+msgstr "לא ניתן ליצור פנקס כתובות חדש. קוד השגיאה של מוזילה הוא $1$."
+
+#: conn_shared_res.src#STR_COULD_NOT_LOAD_LIB.string.text
+msgid "The library '$libname$' could not be loaded."
+msgstr "לא ניתן לטעון את הספריה $filename$."
+
+#: conn_shared_res.src#STR_ERROR_REFRESH_ROW.string.text
+msgid "An error occured while refreshing the current row."
+msgstr "התרחשה שגיאה בעת רענון השורה הנוכחית."
+
+#: conn_shared_res.src#STR_ERROR_GET_ROW.string.text
+msgid "An error occured while getting the current row."
+msgstr "התרחש שגיאה בעת קבלת השורה הנוכחית."
+
+#: conn_shared_res.src#STR_CAN_NOT_CANCEL_ROW_UPDATE.string.text
+msgid "The row update can not be canceled."
+msgstr "לא ניתן לבטל את עדכון השורה."
+
+#: conn_shared_res.src#STR_CAN_NOT_CREATE_ROW.string.text
+msgid "A new row can not be created."
+msgstr "לא ניתן ליצור שורה חדשה."
+
+#: conn_shared_res.src#STR_QUERY_INVALID_IS_NULL_COLUMN.string.text
+msgid ""
+"The query can not be executed. The 'IS NULL' can only be used with a column "
+"name."
+msgstr "לא ניתן להריץ את השאילתה. \"'IS NULL\" ניתן לשימוש רק עם שם עמודה."
+
+#: conn_shared_res.src#STR_ILLEGAL_MOVEMENT.string.text
+msgid "Illegal cursor movement occured."
+msgstr "אירעה תנועת סמן בלתי חוקית."
+
+#: conn_shared_res.src#STR_COMMIT_ROW.string.text
+msgid "Please commit row '$position$' before update rows or insert new rows."
+msgstr "בבקשה לקבע את שורה $position$' לפני עדכון שורות או הכנסת שורות חדשות."
+
+#: conn_shared_res.src#STR_INVALID_ROW_UPDATE.string.text
+msgid "The update call can not be executed. The row is invalid."
+msgstr "הקריאה לעדכון לא יכולה להתבצע. השורה לא תקינה."
+
+#: conn_shared_res.src#STR_ROW_CAN_NOT_SAVE.string.text
+msgid "The current row can not be saved."
+msgstr "לא ניתן לשמור את השורה הנוכחית."
+
+#: conn_shared_res.src#STR_NO_HOSTNAME.string.text
+msgid "No hostname was provided."
+msgstr "לא סופק שם המארח.‏"
+
+#: conn_shared_res.src#STR_NO_BASEDN.string.text
+msgid "No Base DN was provided."
+msgstr "לא סופק מסד ‏‪DN‬‏.‏"
+
+#: conn_shared_res.src#STR_COULD_NOT_CONNECT_LDAP.string.text
+msgid "The connection to the LDAP server could not be established."
+msgstr "לא ניתן לכונן חיבור לשרת ה ‏‪LDAP‬‏.‏"
+
+#: conn_shared_res.src#STR_NO_CONNECTION_GIVEN.string.text
+msgid "It doesn't exist a connection to the database."
+msgstr "החיבור לבסיס הנתונים לא קיים."
+
+#: conn_shared_res.src#STR_WRONG_PARAM_INDEX.string.text
+msgid ""
+"You tried to set a parameter at position '$pos$' but there is/are only "
+"'$count$' parameter(s) allowed. One reason may be that the property "
+"\"ParameterNameSubstitution\" is not set to TRUE in the data source."
+msgstr ""
+"ניסית להגדיר פרמטר במיקום '$pos$' אבל מותר להגדיר רק '$count$' פרמטר(ים). "
+"אחת הסיבות לכך עשויה להיות שמאפיין \"ParameterNameSubstitution\" לא מוגדר "
+"כ-TRUE במקור הנתונים."
+
+#: conn_shared_res.src#STR_INPUTSTREAM_WRONG_LEN.string.text
+msgid ""
+"End of InputStream reached before satisfying length specified when "
+"InputStream was set."
+msgstr "סוף זרימת קלט הגיע לפני הגעה לאורך שנקבע בתחילת זרימת הקלט."
+
+#: conn_shared_res.src#STR_NO_INPUTSTREAM.string.text
+msgid "The input stream was not set."
+msgstr "זרימת הקלט לא הוגדרה."
+
+#: conn_shared_res.src#STR_NO_ELEMENT_NAME.string.text
+msgid "There is no element named '$name$'."
+msgstr "אין שום אלמנט בשם '$name$'."
+
+#: conn_shared_res.src#STR_INVALID_BOOKMARK.string.text
+msgid "Invalid bookmark value"
+msgstr "ערך סימנייה לא חוקי"
+
+#: conn_shared_res.src#STR_PRIVILEGE_NOT_GRANTED.string.text
+msgid "Privilege not granted: Only table privileges can be granted."
+msgstr "הרשאה לא ניתנה: ניתן לקבל רק הרשאות טבלה."
+
+#: conn_shared_res.src#STR_PRIVILEGE_NOT_REVOKED.string.text
+msgid "Privilege not revoked: Only table privileges can be revoked."
+msgstr "הרשאה לא בוטלה: ניתן לבטל רק הרשאות טבלה."
+
+#: conn_shared_res.src#STR_UNKNOWN_COLUMN_NAME.string.text
+msgid "The column name '$columnname$' is unknown."
+msgstr "העמודה בשם '$columnname$' לא מוכרת."
+
+#: conn_shared_res.src#STR_ERRORMSG_SEQUENCE.string.text
+msgid "Function sequence error."
+msgstr "שגיאת רצף פונקציה."
+
+#: conn_shared_res.src#STR_INVALID_INDEX.string.text
+msgid "Invalid descriptor index."
+msgstr "מתאר אינדקס לא חוקי."
+
+#: conn_shared_res.src#STR_UNSUPPORTED_FUNCTION.string.text
+msgid "The driver does not support the function '$functionname$'."
+msgstr "מנהל התקן זה אינו תומך בפונקציה '$functionname$'."
+
+#: conn_shared_res.src#STR_UNSUPPORTED_FEATURE.string.text
+msgid ""
+"The driver does not support the functionality for '$featurename$'. It is not "
+"implemented."
+msgstr "מנהל התקן זה אינו תומך בפונקציות של '$featurename$'. היא אינה ממומשת."
+
+#: conn_shared_res.src#STR_FORMULA_WRONG.string.text
+msgid "The formula for TypeInfoSettings is wrong!"
+msgstr "הנוסחה ל־TypeInfoSettings שגויה!"
+
+#: conn_shared_res.src#STR_STRING_LENGTH_EXCEEDED.string.text
+msgid ""
+"The string '$string$' exceeds the maximum length of $maxlen$ characters when "
+"converted to the target character set '$charset$'."
+msgstr ""
+"המחרוזת ‏‪'$string$'‬‏, המומרת לסדרת תוי היעד ‏‪'$charset$'‬‏, חורגת מהאורך "
+"המקסימלי של ‏‪$maxlen$‬‏"
+
+#: conn_shared_res.src#STR_CANNOT_CONVERT_STRING.string.text
+msgid ""
+"The string '$string$' cannot be converted using the encoding '$charset$'."
+msgstr "לא ניתן להמיר את המחרוזת ‏‪'$string$'‬‏ ע\"י קידוד ‏‪'$charset'‬‏.‏"
+
+#: conn_shared_res.src#STR_URI_SYNTAX_ERROR.string.text
+msgid "The connection URL is invalid."
+msgstr "חיבור ה ‏‪URL‬‏ אינו חוקי"
+
+#: conn_shared_res.src#STR_QUERY_TOO_COMPLEX.string.text
+msgid "The query can not be executed. It is too complex."
+msgstr "לא ניתו להריץ את השאילתה. היא מורכבת מדי."
+
+#: conn_shared_res.src#STR_OPERATOR_TOO_COMPLEX.string.text
+msgid "The query can not be executed. The operator is too complex."
+msgstr "לא ניתן להריץ את השאילתה. האופרטור מורכב מדי."
+
+#: conn_shared_res.src#STR_QUERY_INVALID_LIKE_COLUMN.string.text
+msgid ""
+"The query can not be executed. You cannot use 'LIKE' with columns of this "
+"type."
+msgstr "לא ניתן להריץ את השאילתה. אי אפשר להשתמש ב- 'LIKE' עם עמודות מסוג זה."
+
+#: conn_shared_res.src#STR_QUERY_INVALID_LIKE_STRING.string.text
+msgid ""
+"The query can not be executed. 'LIKE' can be used with a string argument "
+"only."
+msgstr ""
+"לא ניתן להריץ את השאילתה. ניתן להשתמש ב- 'LIKE' רק עם ארגומנט מסוג מחרוזת."
+
+#: conn_shared_res.src#STR_QUERY_NOT_LIKE_TOO_COMPLEX.string.text
+msgid "The query can not be executed. The 'NOT LIKE' condition is too complex."
+msgstr "לא ניתן להריץ את השאילתה. התנאי 'NOT LIKE' מורכב מדי."
+
+#: conn_shared_res.src#STR_QUERY_LIKE_WILDCARD.string.text
+msgid ""
+"The query can not be executed. The 'LIKE' condition contains wildcard in the "
+"middle."
+msgstr "השאילתה לא יכולה להתבצע. התנאי 'LIKE' מכיל תו חופשי באמצע."
+
+#: conn_shared_res.src#STR_QUERY_LIKE_WILDCARD_MANY.string.text
+msgid ""
+"The query can not be executed. The 'LIKE' condition contains too many "
+"wildcards."
+msgstr "השאילתה לא יכולה להתבצע. התנאי 'LIKE' מכיל יותר מדי תוים חופשיים."
+
+#: conn_shared_res.src#STR_INVALID_COLUMNNAME.string.text
+msgid "The column name '$columnname$' is not valid."
+msgstr "שם העמודה '$columnname$' הוא לא חוקי."
+
+#: conn_shared_res.src#STR_INVALID_COLUMN_SELECTION.string.text
+msgid "The statement contains an invalid selection of columns."
+msgstr "ההצהרה מכילה בחירה לא חוקית של עמודות."
+
+#: conn_shared_res.src#STR_COLUMN_NOT_UPDATEABLE.string.text
+msgid "The column at position '$position$' could not be updated."
+msgstr "העמודה במיקום '$position$' לא ניתנת לעדכון."
+
+#: conn_shared_res.src#STR_COULD_NOT_LOAD_FILE.string.text
+msgid "The file $filename$ could not be loaded."
+msgstr "לא ניתן לטעון קובץ $filename$."
+
+#: conn_shared_res.src#STR_LOAD_FILE_ERROR_MESSAGE.string.text
+msgid ""
+"The attempt to load the file resulted in the following error message "
+"($exception_type$):\n"
+"\n"
+"$error_message$"
+msgstr ""
+"נסיון טעינת הקובץ הסתיימה בשגיאה הבאה ($exception_type$):\n"
+"\n"
+"$error_message$"
+
+#: conn_shared_res.src#STR_TYPE_NOT_CONVERT.string.text
+msgid "The type could not be converted."
+msgstr "לא ניתן להמיר סוג זה."
+
+#: conn_shared_res.src#STR_INVALID_COLUMN_DESCRIPTOR_ERROR.string.text
+msgid "Could not append column: invalid column descriptor."
+msgstr "לא ניתן להוסיף עמודות: מתאר עמודה לא חוקית."
+
+#: conn_shared_res.src#STR_INVALID_GROUP_DESCRIPTOR_ERROR.string.text
+msgid "Could not create group: invalid object descriptor."
+msgstr "לא ניתן ליצור את הקבוצה: מתאר אובייקט לא חוקי."
+
+#: conn_shared_res.src#STR_INVALID_INDEX_DESCRIPTOR_ERROR.string.text
+msgid "Could not create index: invalid object descriptor."
+msgstr "לא ניתן ליצור אינדקס: מתאר אובייקט לא חוקי."
+
+#: conn_shared_res.src#STR_INVALID_KEY_DESCRIPTOR_ERROR.string.text
+msgid "Could not create key: invalid object descriptor."
+msgstr "לא ניתן ליצור את המפתח: מתאר אובייקט לא חוקי."
+
+#: conn_shared_res.src#STR_INVALID_TABLE_DESCRIPTOR_ERROR.string.text
+msgid "Could not create table: invalid object descriptor."
+msgstr "לא ניתן ליצור את הטבלה: מתאר אובייקט לא חוקי."
+
+#: conn_shared_res.src#STR_INVALID_USER_DESCRIPTOR_ERROR.string.text
+msgid "Could not create user: invalid object descriptor."
+msgstr "לא ניתן ליצור משתמש: מתאר אובייקט לא חוקי."
+
+#: conn_shared_res.src#STR_INVALID_VIEW_DESCRIPTOR_ERROR.string.text
+msgid "Could not create view: invalid object descriptor."
+msgstr "לא ניתן ליצור תצוגה: מתאר אובייקט לא חוקי."
+
+#: conn_shared_res.src#STR_VIEW_NO_COMMAND_ERROR.string.text
+msgid "Could not create view: no command object."
+msgstr "לא ניתן ליצור תצוגה: אין אובייקט פקודה."
+
+#: conn_shared_res.src#STR_NO_CONNECTION.string.text
+msgid ""
+"The connection could not be created. May be the necessary data provider is "
+"not installed."
+msgstr "לא ניתן ליצור את החיבור. יכול להיות שספק הנתונים הדרושים לא הותקן."
+
+#: conn_shared_res.src#STR_COULD_NOT_DELETE_INDEX.string.text
+msgid ""
+"The index could not be deleted. An unknown error while accessing the file "
+"system occured."
+msgstr "לא יכול למחוק את האינדקס. התרחשה שגיאה לא מוכרת בעת גישה למערכת הקבצים."
+
+#: conn_shared_res.src#STR_ONL_ONE_COLUMN_PER_INDEX.string.text
+msgid "The index could not be created. Only one column per index is allowed."
+msgstr "לא יכול ליצור את האינדקס. רק עמודה אחת אפרית באינדקס."
+
+#: conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NOT_UNIQUE.string.text
+msgid "The index could not be created. The values are not unique."
+msgstr "לא ניתן ליצוד את האינדקס. הערכים אינם ייחודיים."
+
+#: conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX.string.text
+msgid "The index could not be created. An unknown error appeared."
+msgstr "לא ניתן ליצור את האינדקס. הופיעה שגיאה לא מוכרת."
+
+#: conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NAME.string.text
+msgid ""
+"The index could not be created. The file '$filename$' is used by an other "
+"index."
+msgstr ""
+"לא ניתן ליצור את האינדקס. הקובץ '$filename$' נמצא בשימוש על ידי אינדקס אחר."
+
+#: conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_KEYSIZE.string.text
+msgid ""
+"The index could not be created. The size of the chosen column is to big."
+msgstr "לא ניתן ליצור את האינדקס. גודל העמודה שנבחרה גדול מדי."
+
+#: conn_shared_res.src#STR_SQL_NAME_ERROR.string.text
+msgid "The name '$name$' doesn't match SQL naming constraints."
+msgstr "השם '$name$' אינו תואם מגבלות שמות SQL."
+
+#: conn_shared_res.src#STR_COULD_NOT_DELETE_FILE.string.text
+msgid "The file $filename$ could not be deleted."
+msgstr "לא ניתן למחוק את הקובץ $filename$."
+
+#: conn_shared_res.src#STR_INVALID_COLUMN_TYPE.string.text
+msgid "Invalid column type for column '$columnname$'."
+msgstr "סוג עמודה לא חוקי עבור עמודה '$columnname$'."
+
+#: conn_shared_res.src#STR_INVALID_COLUMN_PRECISION.string.text
+msgid "Invalid precision for column '$columnname$'."
+msgstr "דיוק לא קביל לעמודה '$columnname$'."
+
+#: conn_shared_res.src#STR_INVALID_PRECISION_SCALE.string.text
+msgid "Precision is less than scale for column '$columnname$'."
+msgstr "רמת הדיוק הוא פחות מהטיפוס לעמודה '$columnname$'."
+
+#: conn_shared_res.src#STR_INVALID_COLUMN_NAME_LENGTH.string.text
+msgid "Invalid column name length for column '$columnname$'."
+msgstr "אורך שם עמודה לא קביל לעמודה '$columnname$'."
+
+#: conn_shared_res.src#STR_DUPLICATE_VALUE_IN_COLUMN.string.text
+msgid "Duplicate value found in column '$columnname$'."
+msgstr "נמצאו ערכים כפולים בעמודה '$columnname$'."
+
+#: conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.string.text
+msgid ""
+"The '$columnname$' column has been defined as a \"Decimal\" type, the max. "
+"length is $precision$ characters (with $scale$ decimal places).\n"
+"\n"
+"The specified value \"$value$ is longer than the number of digits allowed."
+msgstr ""
+"העמודה '$columnname$' הוגדר כנתונים מסוג \"עשרונים\", האורך המקסימלי הוא "
+"$precision$ תווים (עם $scale$ מקומות עשרונים).הערך שצוין \"$value$ הוא ארוך "
+"יותר ממספר הספרות שהותרו."
+
+#: conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.string.text
+msgid ""
+"The column '$columnname$' could not be altered. May be the file system is "
+"write protected."
+msgstr ""
+"העמודה '$columnname$' לא ניתנת לשינוי. יכול להיות שמערכת הקבצים מוגנת "
+"מכתיבה."
+
+#: conn_shared_res.src#STR_INVALID_COLUMN_VALUE.string.text
+msgid ""
+"The column '$columnname$' could not be updated. The value is invalid for "
+"that column."
+msgstr "העמודה '$columnname$' לא ניתנת לעדכון. הערך לא חוקי לעמודה זו."
+
+#: conn_shared_res.src#STR_COLUMN_NOT_ADDABLE.string.text
+msgid ""
+"The column '$columnname$' could not be added. May be the file system is "
+"write protected."
+msgstr ""
+"לא יכול להוסיף את העמודה '$columnname$'. יכול להיות שמערכת הקבצים מוגנת "
+"מכתיבה."
+
+#: conn_shared_res.src#STR_COLUMN_NOT_DROP.string.text
+msgid ""
+"The column at position '$position$' could not be dropped. May be the file "
+"system is write protected."
+msgstr ""
+"העמודה במיקום '$position$' לא ניתנת לשמיטה. יכול להיות שמערכת הקבצים מוגנת "
+"מכתיבה."
+
+#: conn_shared_res.src#STR_TABLE_NOT_DROP.string.text
+msgid ""
+"The table '$tablename$' could not be dropped. May be the file system is "
+"write protected."
+msgstr ""
+"הטבלה '$position$' לא ניתנת לשמיטה. יכול להיות שמערכת הקבצים מוגנת מכתיבה."
+
+#: conn_shared_res.src#STR_COULD_NOT_ALTER_TABLE.string.text
+msgid "The table could not be altered."
+msgstr "הטבלה לא ניתנת לשינוי."
+
+#: conn_shared_res.src#STR_INVALID_DBASE_FILE.string.text
+msgid "The file '$filename$' is an invalid (or unrecognized) dBase file."
+msgstr "הקובץ '$filename$' הוא קובץ dBase לא חוקי (או לא מזוהה)."
+
+#: conn_shared_res.src#STR_CANNOT_OPEN_BOOK.string.text
+msgid "Cannot open Evolution address book."
+msgstr "לא יכול לפתוח את פנקס הכתובות של Evolution."
+
+#: conn_shared_res.src#STR_SORT_BY_COL_ONLY.string.text
+msgid "Can only sort by table columns."
+msgstr "ניתן למיין רק לפי עמודות טבלה."
+
+#: conn_shared_res.src#STR_QUERY_COMPLEX_COUNT.string.text
+msgid ""
+"The query can not be executed. It is too complex. Only \"COUNT(*)\" is "
+"supported."
+msgstr "השאילתה לא יכולה להתבצע. היא מורכבת מדי. רק \"COUNT(*)\" נתמכת."
+
+#: conn_shared_res.src#STR_QUERY_INVALID_BETWEEN.string.text
+msgid "The query can not be executed. The 'BETWEEN' arguments are not correct."
+msgstr "השאילתה לא יכולה להתבצע. ארגומנטי 'BETWEEN' אינם נכונים."
+
+#: conn_shared_res.src#STR_QUERY_FUNCTION_NOT_SUPPORTED.string.text
+msgid "The query can not be executed. The function is not supported."
+msgstr "השאילתה לא יכולה להתבצע. הפונקציה אינה נתמכת."
+
+#: conn_shared_res.src#STR_TABLE_READONLY.string.text
+msgid "The table can not be changed. It is read only."
+msgstr "הטבלה לא ניתנת לשינוי. היא לקריאה בלבד."
+
+#: conn_shared_res.src#STR_DELETE_ROW.string.text
+msgid ""
+"The row could not be deleted. The option \"Display inactive records\" is set."
+msgstr "השורה לא יכולה להימחק. נבחרה אפשרות \"הצג רשומות לא פעילות\"."
+
+#: conn_shared_res.src#STR_ROW_ALREADY_DELETED.string.text
+msgid "The row could not be deleted. It is already deleted."
+msgstr "אי אפשר למחוק את השורה. היא כבר נמחקה."
+
+#: conn_shared_res.src#STR_QUERY_MORE_TABLES.string.text
+msgid "The query can not be executed. It contains more than one table."
+msgstr "השאילתה לא יכולה להתבצע. היא מכילה יותר מטבלה אחת."
+
+#: conn_shared_res.src#STR_QUERY_NO_TABLE.string.text
+msgid "The query can not be executed. It contains no valid table."
+msgstr "השאילתה לא יכולה להתבצע. היא לא מכילה טבלה חוקית."
+
+#: conn_shared_res.src#STR_QUERY_NO_COLUMN.string.text
+msgid "The query can not be executed. It contains no valid columns."
+msgstr "השאילתה לא יכולה להתבצע. היא לא מכילה עמודות חוקיות."
+
+#: conn_shared_res.src#STR_INVALID_PARA_COUNT.string.text
+msgid "The count of the given parameter values doesn't match the parameters."
+msgstr "הספירה של ערכי הפרמטרים שניתנו אינה תואמת את הפרמטרים."
+
+#: conn_shared_res.src#STR_NO_VALID_FILE_URL.string.text
+msgid "The URL '$URL$' is not valid. A connection can not be created."
+msgstr "כתובת ה- URL '$URL$' לא חוקית. לא ניתן ליצור את החיבור."
+
+#: conn_shared_res.src#STR_NO_CLASSNAME.string.text
+msgid "The driver class '$classname$' could not be loaded."
+msgstr "אין אפשרות לטעון את מחלקת מנהל ההתקן '$classname$'."
+
+#: conn_shared_res.src#STR_NO_JAVA.string.text
+msgid "No Java installation could be found. Please check your installation."
+msgstr "לא נמצא התקנת Java. נא לבדוק את ההתקנה."
+
+#: conn_shared_res.src#STR_NO_RESULTSET.string.text
+msgid "The execution of the query doesn't return a valid result set."
+msgstr "הרצת השאילתה לא מחזירה סט תוצאת חוקי."
+
+#: conn_shared_res.src#STR_NO_ROWCOUNT.string.text
+msgid "The execution of the update statement doesn't effect any rows."
+msgstr "הרצת הצהרת העדכון לא השפיעה על שורות כלשהן."
+
+#: conn_shared_res.src#STR_NO_CLASSNAME_PATH.string.text
+msgid "The additional driver class path is '$classpath$'."
+msgstr "הנתיב למנהל התקן נוסף הוא '$classpath$'."
+
+#: conn_shared_res.src#STR_UNKNOWN_PARA_TYPE.string.text
+msgid "The type of parameter at position '$position$' is unknown."
+msgstr "הסוג של הפרמטר במיקום '$position$' אינו מוכר."
+
+#: conn_shared_res.src#STR_UNKNOWN_COLUMN_TYPE.string.text
+msgid "The type of column at position '$position$' is unknown."
+msgstr "הסוג של העמודה במיקום '$position$' אינו מוכר."
+
+#: conn_shared_res.src#STR_NO_KDE_INST.string.text
+msgid "No suitable KDE installation was found."
+msgstr "לא נמצאה התקנה תואמת KDE."
+
+#: conn_shared_res.src#STR_KDE_VERSION_TOO_OLD.string.text
+msgid ""
+"KDE version $major$.$minor$ or higher is required to access the KDE Address "
+"Book."
+msgstr "עבור גישה לפנקס הכתובות של KDE, דרוש גירסת KDE  $major$.$minor$ ומעלה."
+
+#: conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.string.text
+msgid "The found KDE version is too new. Only KDE up to version $major$.$minor$ is "
+"known to work with this product.\n"
+msgstr "גירסת ה- KDE שזוהתה היא חדשה מדי. מוצר זה מסוגל לעבוד רק עם KDE עד גירסה "
+"$major$.$minor$.\n"
+
+#: conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.string.text
+msgid ""
+"If you are sure that your KDE version works, you might execute the following "
+"Basic macro to disable this version check:\n"
+"\n"
+msgstr ""
+"אם הינך בטוח שגירסת ה- KDE שלך תואמת, תוכל להריץ את המאקרו הבסיסי הבא לביטול "
+"בדיקת הגירסה:\n"
+"\n"
+
+#: conn_shared_res.src#STR_PARA_ONLY_PREPARED.string.text
+msgid "Parameters can appear only in prepared statements."
+msgstr "פרמטרים יכולים להופיע רק בהצהרות מוכנות."
+
+#: conn_shared_res.src#STR_NO_TABLE.string.text
+msgid "No such table!"
+msgstr "אין טבלה כזאת!"
+
+#: conn_shared_res.src#STR_NO_MAC_OS_FOUND.string.text
+msgid "No suitable Mac OS installation was found."
+msgstr "לא נמצא התקנה תואמת עבור מערכת הפעלה Mac."
+
+#: conn_shared_res.src#STR_NO_DISK_SPACE.string.text
+msgid ""
+"The database file '$filename$' could not be created. Please check your disk "
+"space."
+msgstr "לא ניתן ליצור את קובץ מסד הנתונים '$filename$'. אנא בדוק את שטח הדיסק."
+
+#: conn_shared_res.src#STR_COMMAND_NOT_FOUND.string.text
+msgid ""
+"The database '$databasename$' could not be started because the command "
+"'$progname$' could not be executed."
+msgstr ""
+"לא ניתן להפעיל את מסד הנתונים '$databasename$' בגלל שהפקודה '$progname$' לא "
+"ניתן לביצוע."
+
+#: conn_shared_res.src#STR_DATABASE_NEEDS_CONVERTING.string.text
+msgid ""
+"The current database need to be converted. Please insert control user  and "
+"password."
+msgstr "דרושה המרה למסד הנתונים הנוכחי. אנא הכנס את פרטי שם המשתמש וסיסמה."
+
+#: conn_shared_res.src#STR_USER_NO_DELETE.string.text
+msgid ""
+"This user couldn't be deleted. Otherwise the database stays in a "
+"inconsistent state."
+msgstr "לא ניתן למחוק את המשתמש הזה. אחרת מסד הנתונים ישאר במצב לא עקבי."
+
+#: conn_shared_res.src#STR_NO_STROAGE.string.text
+msgid "The connection can not be established. No storage or URL was given."
+msgstr "לא ניתן ליצור את החיבור. לא צוין מיקום אחסון או כתובת URL."
+
+#: conn_shared_res.src#STR_INVALID_FILE_URL.string.text
+msgid ""
+"The given URL contains no valid local file system path. Please check the "
+"location of your database file."
+msgstr ""
+"כתובת ה- URL שצוינה לא מכילה נתיב חוקי במערכת הקבצים. אנא בדוק את המיקום של "
+"קובץ מסד הנתונים."
+
+#: conn_shared_res.src#STR_NO_TABLE_CONTAINER.string.text
+msgid "An error occured while obtaining the connection's table container."
+msgstr "התרחשה שגיאה בקבלת טבלת החיבורים."
+
+#: conn_shared_res.src#STR_NO_TABLE_EDITOR_DIALOG.string.text
+msgid "An error occured while creating the table editor dialog."
+msgstr "אירעה שגיאה ביצירת הדו-שיח לעורך הטבלאות."
+
+#: conn_shared_res.src#STR_NO_TABLENAME.string.text
+msgid "There is no table named '$tablename$'."
+msgstr "אין טבלה בשם '$tablename$'."
+
+#: conn_shared_res.src#STR_NO_DOCUMENTUI.string.text
+msgid "The provided DocumentUI is not allowed to be NULL."
+msgstr "ה־DocumentUI שסופק אינו יכול להיות NULL."
+
+#: ado.xcu#.Drivers.Installed.sdbc_ado__.DriverTypeDisplayName.value.text
+msgid "ADO"
+msgstr "ADO"
+
+#: ado.xcu#.Drivers.Installed.sdbc_ado_access_PROVIDER_Microsoft.Jet.OLEDB.4.0_DATA_SOURCE__.DriverTypeDisplayName.value.text
+msgid "Microsoft Access"
+msgstr "מיקרוסופט אקסס"
+
+#: ado.xcu#.Drivers.Installed.sdbc_ado_access_Provider_Microsoft.ACE.OLEDB.12.0_DATA_SOURCE__.DriverTypeDisplayName.value.text
+msgid "Microsoft Access 2007"
+msgstr "מיקרוסופט אקסס 2007"
+"X-Accelerator-Marker: ~\n"
+
+#: hsqldb.xcu#.Drivers.Installed.sdbc_embedded_hsqldb.DriverTypeDisplayName.value.text
+msgid "HSQL database engine"
+msgstr "מנוע מסד נתונים HSQL"
+"X-Accelerator-Marker: ~\n"
+
+#: odbc.xcu#.Drivers.Installed.sdbc_odbc__.DriverTypeDisplayName.value.text
+msgid "ODBC"
+msgstr "ODBC"
+
+#: calc.xcu#.Drivers.Installed.sdbc_calc__.DriverTypeDisplayName.value.text
+msgid "Spreadsheet"
+msgstr "גיליון אלקטרוני"
+"X-Accelerator-Marker: ~\n"
+
+#: macab.xcu#.Drivers.Installed.sdbc_address_macab.DriverTypeDisplayName.value.text
+msgid "Mac OS X Address Book"
+msgstr "ספר הכתובות של Mac OS X"
+"X-Accelerator-Marker: ~\n"
+
+#: jdbc.xcu#.Drivers.Installed.jdbc__.DriverTypeDisplayName.value.text
+msgid "JDBC"
+msgstr "JDBC"
+
+#: jdbc.xcu#.Drivers.Installed.jdbc_oracle_thin__.DriverTypeDisplayName.value.text
+msgid "Oracle JDBC"
+msgstr "Oracle JDBC"
+"X-Accelerator-Marker: ~\n"
+
+#: evoab2.xcu#.Drivers.Installed.sdbc_address_evolution_local.DriverTypeDisplayName.value.text
+msgid "Evolution Local"
+msgstr "Evolution מקומי"
+
+#: evoab2.xcu#.Drivers.Installed.sdbc_address_evolution_ldap.DriverTypeDisplayName.value.text
+msgid "Evolution LDAP"
+msgstr "Evolution LDAP"
+
+#: evoab2.xcu#.Drivers.Installed.sdbc_address_evolution_groupwise.DriverTypeDisplayName.value.text
+msgid "Groupwise"
+msgstr "Groupwise"
+"X-Accelerator-Marker: ~\n"
+
+#: evoab.xcu#.Drivers.Installed.sdbc_address_evolution_ldap.DriverTypeDisplayName.value.text
+msgid "Evolution LDAP"
+msgstr "Evolution LDAP"
+
+#: evoab.xcu#.Drivers.Installed.sdbc_address_evolution_groupwise.DriverTypeDisplayName.value.text
+msgid "Groupwise"
+msgstr "Groupwise"
+
+#: flat.xcu#.Drivers.Installed.sdbc_flat__.DriverTypeDisplayName.value.text
+msgid "Text"
+msgstr "קובץ טקסט"
+
+#: adabas.xcu#.Drivers.Installed.sdbc_adabas__.DriverTypeDisplayName.value.text
+msgid "Adabas D"
+msgstr "Adabas D"
+
+#: dbase.xcu#.Drivers.Installed.sdbc_dbase__.DriverTypeDisplayName.value.text
+msgid "dBASE"
+msgstr "dBASE"
+"X-Accelerator-Marker: ~\n"
+
+#: mysql.xcu#.Drivers.Installed.sdbc_mysql_jdbc__.DriverTypeDisplayName.value.text
+msgid "MySQL (JDBC)"
+msgstr "MySQL (JDBC)"
+
+#: mysql.xcu#.Drivers.Installed.sdbc_mysql_odbc__.DriverTypeDisplayName.value.text
+msgid "MySQL (ODBC)"
+msgstr "MySQL (ODBC)"
+
+#: mysql.xcu#.Drivers.Installed.sdbc_mysql_mysqlc__.DriverTypeDisplayName.value.text
+msgid "MySQL (Native)"
+msgstr "MySQL (Native)"
+"X-Accelerator-Marker: ~\n"
+
+#: mozab.xcu#.Drivers.Installed.sdbc_address_outlook.DriverTypeDisplayName.value.text
+msgid "Microsoft Outlook Address Book"
+msgstr "פנקס הכתובות של Microsoft Outlook"
+
+#: mozab.xcu#.Drivers.Installed.sdbc_address_outlookexp.DriverTypeDisplayName.value.text
+msgid "Microsoft Windows Address Book"
+msgstr "פנקס הכתובות של Microsoft Windows"
+
+#: mozab.xcu#.Drivers.Installed.sdbc_address_mozilla_.DriverTypeDisplayName.value.text
+msgctxt "mozab.xcu#.Drivers.Installed.sdbc_address_mozilla_.DriverTypeDisplayName.value.text"
+msgid "SeaMonkey Address Book"
+msgstr "פנקס הכתובות של SeaMonkey"
+
+#: mozab.xcu#.Drivers.Installed.sdbc_address_thunderbird_.DriverTypeDisplayName.value.text
+msgctxt "mozab.xcu#.Drivers.Installed.sdbc_address_thunderbird_.DriverTypeDisplayName.value.text"
+msgid "Thunderbird Address Book"
+msgstr "פנקס הכתובות של Thunderbird"
+
+#: mozab.xcu#.Drivers.Installed.sdbc_address_ldap__.DriverTypeDisplayName.value.text
+msgctxt "mozab.xcu#.Drivers.Installed.sdbc_address_ldap__.DriverTypeDisplayName.value.text"
+msgid "LDAP Address Book"
+msgstr "פנקס הכתובות של LDAP"
+
+#: mozab2.xcu#.Drivers.Installed.sdbc_address_mozilla_.DriverTypeDisplayName.value.text
+msgctxt "mozab2.xcu#.Drivers.Installed.sdbc_address_mozilla_.DriverTypeDisplayName.value.text"
+msgid "SeaMonkey Address Book"
+msgstr "פנקס הכתובות של SeaMonkey"
+
+#: mozab2.xcu#.Drivers.Installed.sdbc_address_thunderbird_.DriverTypeDisplayName.value.text
+msgctxt "mozab2.xcu#.Drivers.Installed.sdbc_address_thunderbird_.DriverTypeDisplayName.value.text"
+msgid "Thunderbird Address Book"
+msgstr "פנקס הכתובות של Thunderbird"
+
+#: mozab2.xcu#.Drivers.Installed.sdbc_address_ldap__.DriverTypeDisplayName.value.text
+msgctxt "mozab2.xcu#.Drivers.Installed.sdbc_address_ldap__.DriverTypeDisplayName.value.text"
+msgid "LDAP Address Book"
+msgstr "פנקס הכתובות של LDAP"
+
+#, fuzzy
+#~ msgctxt "mozab.xcu#.Drivers.Installed.sdbc_address_mozilla_.DriverTypeDisplayName.value.text"
+#~ msgid "Mozilla Address Book"
+#~ msgstr "פנקס הכתובות של מוזילה"
+
+#~ msgctxt "mozab2.xcu#.Drivers.Installed.sdbc_address_mozilla_.DriverTypeDisplayName.value.text"
+#~ msgid "Mozilla Address Book"
+#~ msgstr "פנקס הכתובות של מוזילה"
+"X-Accelerator-Marker: ~\n"
+
+#: kab.xcu#.Drivers.Installed.sdbc_address_kab.DriverTypeDisplayName.value.text
+msgid "KDE Address Book"
+msgstr "פנקס הכתובות של KDE"

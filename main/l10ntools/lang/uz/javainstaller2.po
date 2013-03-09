@@ -1,0 +1,781 @@
+
+#: setupstrings.ulf#STRING_PREVIOUS.LngText.text
+msgid "Back"
+msgstr "Orqaga"
+
+#: setupstrings.ulf#STRING_NEXT.LngText.text
+msgid "Next"
+msgstr "Keyingi"
+
+#: setupstrings.ulf#STRING_CANCEL.LngText.text
+msgid "Cancel"
+msgstr "Bekor qilish"
+
+#: setupstrings.ulf#STRING_FINISH.LngText.text
+msgid "Finish"
+msgstr "Tayyor"
+
+#: setupstrings.ulf#STRING_DECLINE.LngText.text
+msgid "Decline"
+msgstr "Voz kechish"
+
+#: setupstrings.ulf#STRING_INSTALL.LngText.text
+msgid "Install now"
+msgstr "Hozir oʻrnatish"
+
+#: setupstrings.ulf#STRING_UNINSTALL.LngText.text
+msgid "Remove Now"
+msgstr "Hozir olib tashlash"
+
+#: setupstrings.ulf#STRING_HELP.LngText.text
+msgid "Help"
+msgstr "Yordam"
+
+#: setupstrings.ulf#STRING_OK.LngText.text
+msgid "OK"
+msgstr "OK"
+
+#: setupstrings.ulf#STRING_ERROR.LngText.text
+msgid "Error"
+msgstr "Xato"
+
+#: setupstrings.ulf#STRING_FILE_NOT_FOUND.LngText.text
+msgid "Error: File not found"
+msgstr "Xato: Fayl topilmadi"
+
+#: setupstrings.ulf#STRING_APPLICATIONTITLE.LngText.text
+msgid "${PRODUCT_FULLNAME} Installation Wizard"
+msgstr "${PRODUCT_FULLNAME} oʻrnatish ustasi"
+
+#: setupstrings.ulf#STRING_APPLICATIONTITLEUNINSTALLATION.LngText.text
+msgid "${PRODUCT_FULLNAME} Uninstallation Wizard"
+msgstr "${PRODUCT_FULLNAME} tizimdan olib tashlash ustasi"
+
+#: setupstrings.ulf#STRING_CANCEL_DIALOG_TITLE.LngText.text
+msgid "Exit"
+msgstr "Chiqish"
+
+#: setupstrings.ulf#STRING_CANCEL_DIALOG.LngText.text
+msgid "Do you really want to exit the Installation Wizard?"
+msgstr "Rostdan ham oʻrnatish ustasidan chiqishni istaysizmi?"
+
+#: setupstrings.ulf#STRING_CANCEL_DIALOG_UNINSTALLATION.LngText.text
+msgid "Do you really want to exit the Uninstallation Wizard?"
+msgstr "Tizimdan olib tashlash ustasidan chiqmoqchimisiz?"
+
+#: setupstrings.ulf#STRING_STOP_DIALOG.LngText.text
+msgid "Do you really want to abort the installation process?"
+msgstr "Rostdan ham oʻrnatish jarayonini toʻxtatmoqchimisiz?"
+
+#: setupstrings.ulf#STRING_STOP_DIALOG_TITLE.LngText.text
+msgid "Abort installation?"
+msgstr "Oʻrnatish toʻxtatilsinmi?"
+
+#: setupstrings.ulf#STRING_STOP_DIALOG_UNINSTALLATION.LngText.text
+msgid "Do you really want to abort the uninstallation process?"
+msgstr "Tizimdan olib tashlash toʻxtatilsinmi?"
+
+#: setupstrings.ulf#STRING_STOP_DIALOG_TITLE_UNINSTALLATION.LngText.text
+msgid "Abort uninstallation?"
+msgstr "Tizimdan olib tashlash toʻxtatilsinmi?"
+
+#: setupstrings.ulf#STRING_ACCEPTLICENSE.LngText.text
+msgid "Accept License"
+msgstr "Litsenziyani qabul qilish"
+
+#: setupstrings.ulf#STRING_ACCEPTLICENSE1.LngText.text
+msgid "Software License Agreement"
+msgstr "Litsenziya kelishuvi"
+
+#: setupstrings.ulf#STRING_ACCEPTLICENSE2.LngText.text
+msgid "Please read the following license agreement carefully."
+msgstr "Iltimos quyidagi litsenziya kelishuvini diqqat bilan oʻqib chiqing."
+
+#: setupstrings.ulf#STRING_ACCEPTLICENSE3.LngText.text
+msgctxt "setupstrings.ulf#STRING_ACCEPTLICENSE3.LngText.text"
+msgid ""
+"If you have read and accept all the terms of the entire Software License "
+"Agreement, click 'Accept License' to continue with the installation."
+msgstr ""
+"Litsenziya kelishuvi oʻqib chiqib, qabul qilgan boʻlsangiz, oʻrnatishni "
+"davom ettirish uchun 'Litsenziyani qabul qilish' tugmasini bosing."
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY1.LngText.text
+msgid "Select Installation Directory"
+msgstr "Oʻrnatish direktoriyani tanlang"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY1_UPDATE.LngText.text
+msgid "Update the Installed Version"
+msgstr "Oʻrnatilgan versiyani yangilash"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY1_MAINTAIN.LngText.text
+msgid "Adding Components to the Installed Version"
+msgstr "Oʻrnatilgan versiyaga komponentlarni qoʻshish"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY2.LngText.text
+msgid "Install ${PRODUCT_FULLNAME} in this directory"
+msgstr "${PRODUCT_FULLNAME} 'ni ushbu direktoriyaga oʻrnatish"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY3.LngText.text
+msgid "Browse..."
+msgstr "Tanlash..."
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY4_QUESTION_TITLE.LngText.text
+msgid "Create New Directory"
+msgstr "Yangi direktoriya yaratish"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE.LngText.text
+msgid ""
+"The directory '${DIR}' does not exist.\n"
+"Do you want to create it now?"
+msgstr ""
+"'${DIR}' direktoriyasi mavjud emas.\n"
+"Uni yaratishni istaysizmi?"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2.LngText.text
+msgid ""
+"The directory '${DIR}' does not exist.\n"
+"Do you want to create it now or choose another directory?"
+msgstr ""
+"'${DIR}' direktoriyasi mavjud emas.\n"
+"Uni yaratishni istaysizmi yoki boshqa direktoriyani tanlaysizmi?"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY6.LngText.text
+msgid "Select root directory"
+msgstr "root direktoriyani tanlash"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY_NO_WRITE_ACCESS.LngText.text
+msgid "You do not have write access in the directory"
+msgstr "Sizda ushbu direktoriga yozish huquqi yoʻq"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY_NOT_ALLOWED.LngText.text
+msgid "You are not allowed to create the directory"
+msgstr "Sizga yangi direktoriya tuzishga ruxsat yoʻq"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY_NO_SUCCESS.LngText.text
+msgid "Failed to create the directory"
+msgstr "Yangi direktoriya yaratib boʻlmadi"
+
+#: setupstrings.ulf#STRING_CHOOSECOMPONENTS1.LngText.text
+msgid "Select Components"
+msgstr "Komponentlarni tanlash"
+
+#: setupstrings.ulf#STRING_CHOOSECOMPONENTS1_MAINTAIN.LngText.text
+msgid "Select Additional Components"
+msgstr "Qoʻshimcha komponentlarni tanlash"
+
+#: setupstrings.ulf#STRING_CHOOSECOMPONENTS2.LngText.text
+msgid "Marked components will be installed. Please mark them accordingly"
+msgstr ""
+"Belgilangan komponentlar oʻrnatiladi. Iltimos kerakli komponentlarni "
+"belgilang."
+
+#: setupstrings.ulf#STRING_CHOOSECOMPONENTS3.LngText.text
+msgid "Feature Description"
+msgstr "Komponent taʼrifi"
+
+#: setupstrings.ulf#STRING_CHOOSECOMPONENTS4.LngText.text
+msgid "Size (kB):"
+msgstr "Hajmi (kb):"
+
+#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE1.LngText.text
+msgctxt "setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE1.LngText.text"
+msgid "Select the Type of Installation"
+msgstr "Oʻrnatish turini tanlang"
+
+#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE2.LngText.text
+msgid "Select the type of installation that best suits your needs:"
+msgstr "Oʻzingizga mos oʻrnatish turini tanlang:"
+
+#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE3.LngText.text
+msgctxt "setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE3.LngText.text"
+msgid "Select the Type of Installation"
+msgstr "Oʻrnatish turini tanlang"
+
+#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE4.LngText.text
+msgid "The main components will be installed. Recommended for most users."
+msgstr ""
+"Asosiy komponentlar oʻrnatiladi. Koʻpchilik foydalanuvchilarga tavsiya "
+"etiladi."
+
+#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE5.LngText.text
+msgid ""
+"You choose the components you want to install and where they are stored. "
+"Recommended for advanced users."
+msgstr ""
+"Kerakli paketlarni tanlab, ularni qaerga oʻrnatishni koʻrsatishingiz mumkin. "
+"Tajribali foydalanuvchilarga tavsiya etiladi."
+
+#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE6.LngText.text
+msgid "Typical"
+msgstr "Oddiy"
+
+#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE7.LngText.text
+msgid "Custom"
+msgstr "Boshqa"
+
+#: setupstrings.ulf#STRING_INSTALLATIONIMMINENT1.LngText.text
+msgid "Ready to Install"
+msgstr "Oʻrnatishga tayyor"
+
+#: setupstrings.ulf#STRING_INSTALLATIONIMMINENT1_UPDATE.LngText.text
+msgid "Ready to Update"
+msgstr "Yangilashga tayyor"
+
+#: setupstrings.ulf#STRING_INSTALLATIONIMMINENT2.LngText.text
+msgid "The following ${PRODUCT_FULLNAME} components will be installed:"
+msgstr "Quyidagi ${PRODUCT_FULLNAME} komponentlari oʻrnatiladi:"
+
+#: setupstrings.ulf#STRING_INSTALLATIONONGOING1.LngText.text
+msgid "Installing..."
+msgstr "Oʻrnatilmoqda..."
+
+#: setupstrings.ulf#STRING_INSTALLATIONONGOING3.LngText.text
+msgid "Stop"
+msgstr "Toʻxtatish"
+
+#: setupstrings.ulf#STRING_INSTALLATIONONGOING_PACKAGEPATH_NOT_FOUND.LngText.text
+msgid "ERROR: Path with installation packages not found!"
+msgstr "XATO: Oʻrnatish paketlariga yoʻl topilmadi!"
+
+#: setupstrings.ulf#STRING_PROLOGUE1.LngText.text
+msgid "Welcome"
+msgstr "Marhamat"
+
+#: setupstrings.ulf#STRING_PROLOGUE2.LngText.text
+msgid ""
+"This Installation Wizard will install ${PRODUCT_FULLNAME} on your computer."
+msgstr "Oʻrnatish ustasi kompyuteringizga ${PRODUCT_FULLNAME}'ni oʻrnatadi."
+
+#: setupstrings.ulf#STRING_PROLOGUE3.LngText.text
+msgid "To continue, click 'Next'."
+msgstr "Davom etish uchun 'Keyingi' tugmasini bosing."
+
+#: setupstrings.ulf#STRING_PROLOGUE4.LngText.text
+msgid ""
+"Note: This installation will be done without root privileges. Therefore you "
+"will have a reduced functionality (Java Runtime Environment (JRE) not "
+"installable, system integration not possible).\n"
+"Click 'Cancel' and change your privileges to root privileges, if you want to "
+"use the complete functionality."
+msgstr ""
+"Izoh: Oʻrnatish boshqaruvchi huquqlarisiz davom ettiriladi. Bunda dastur "
+"toʻliq imkoniyatlarsiz oʻrnatiladi (Java Runtime Environment (JRE) "
+"oʻrnatilmaydi, tizim bilan integratsiyalashuv boʻlmaydi).\n"
+"Toʻliq imkoniyatlarga ega boʻlishni istasangiz, 'Bekor qilish' tugmasini "
+"bosing va oʻrnatishni boshqaruvchi huquqlari ostida davom ettiring."
+
+#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1.LngText.text
+msgid "Installation Completed"
+msgstr "Oʻrnatish tugatildi"
+
+#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1_ABORT.LngText.text
+msgid "Installation Aborted"
+msgstr "Oʻrnatish toʻxtatildi"
+
+#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1_ERROR.LngText.text
+msgid "Installation Failed"
+msgstr "Oʻrnatish muvaffaqiyatsiz tugadi"
+
+#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2.LngText.text
+msgid ""
+"The Installation Wizard has successfully installed ${PRODUCT_FULLNAME} on "
+"your computer."
+msgstr "Oʻrnatish ustasi ${PRODUCT_FULLNAME}'ni muvaffaqiyatli oʻrnatdi."
+
+#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ABORT.LngText.text
+msgid ""
+"The Installation Wizard was aborted. ${PRODUCT_NAME} is not installed on "
+"your computer."
+msgstr "Oʻrnatish ustasi toʻxtatildi. ${PRODUCT_NAME} oʻrnatilmadi."
+
+#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ERROR.LngText.text
+msgid ""
+"An error has occurred. Thus the Installation Wizard could not install "
+"${PRODUCT_NAME} on your computer successfully. Click 'Details...' for more "
+"information."
+msgstr ""
+"Xatolik roʻy berdi. Oʻrnatish ustasi ${PRODUCT_NAME} ni oʻrnata olmadi. "
+"Bitafsil maʼlumot uchun 'Tafsilotlar...' tugmasini bosing."
+
+#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED3.LngText.text
+msgid "Click 'Finish' to exit the Wizard."
+msgstr "Oʻrnatish ustasidan chiqish uchun 'Tayyor' tugmasini bosing."
+
+#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED_BUTTON.LngText.text
+msgid "Details..."
+msgstr "Tafsilotlar..."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE2.LngText.text
+msgid ""
+"The ${PRODUCT_FULLNAME} Uninstallation Wizard will remove "
+"${PRODUCT_FULLNAME} from your computer."
+msgstr ""
+"${PRODUCT_FULLNAME} olib tashlash ustasi kompyuteringizdan "
+"${PRODUCT_FULLNAME} ni olib tashlaydi."
+
+#: setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_ROOT.LngText.text
+msgid ""
+"Sorry, wrong privileges. Installation was done with User privilges, but you "
+"have Root privileges."
+msgstr ""
+"Kechirasiz, xato huquq. Oʻrnatish oddiy foydalanuvchi tomonidan amalga "
+"oshirilgan, ammo sizda boshqaruvchi huquqlari mavjud."
+
+#: setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_USER.LngText.text
+msgid ""
+"Sorry, wrong privileges. Installation was done with Root privilges, but you "
+"have User privileges."
+msgstr ""
+"Kechirasiz, xato huquq. Oʻrnatish boshqaruvchi tomonidan amalga oshirilgan, "
+"ammo sizda boshqaruvchi huquqlari mavjud emas."
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE1.LngText.text
+msgid "Select the Type of Uninstallation"
+msgstr "Olib tashlash turini tanlang"
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE2.LngText.text
+msgid "Select the type of uninstallation that best suits your needs:"
+msgstr "Oʻzingizga mos olib tashlash turini tanlang:"
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE3.LngText.text
+msgid "Partial"
+msgstr "Qisman"
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE4.LngText.text
+msgid ""
+"Completely removes ${PRODUCT_FULLNAME} and all its components from your "
+"system."
+msgstr "${PRODUCT_FULLNAME} va uning komponentlarini toʻliq olib tashlaydi."
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE5.LngText.text
+msgid "You choose the program features you want to remove."
+msgstr "Olib tashlashni istagan dastur xossalarini tanlang."
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE6.LngText.text
+msgid "Complete"
+msgstr "Toʻliq"
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS2.LngText.text
+msgid ""
+"Components marked with an X will be removed. Mark the components you want to "
+"remove."
+msgstr ""
+"X bilan belgilangan komponent olib tashlanadi. Keraksiz komponentlarni "
+"tanlang."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT1.LngText.text
+msgid "Ready to Remove"
+msgstr "Olib tashlash uchun tayyor"
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT2.LngText.text
+msgid "The following ${PRODUCT_FULLNAME} components will be removed: "
+msgstr "Quyidagi ${PRODUCT_FULLNAME} komponentlari olib tashlanadi: "
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONONGOING1.LngText.text
+msgid "Uninstalling..."
+msgstr "Olib tashlanmoqda..."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1.LngText.text
+msgid "Uninstallation Completed"
+msgstr "Olib tashlandi"
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1_ABORT.LngText.text
+msgid "Uninstallation Aborted"
+msgstr "Olib tashlash toʻxtatildi"
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1_ERROR.LngText.text
+msgid "Uninstallation Failed"
+msgstr "Olib tashlash mavaffaqiyatsiz tugatildi"
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2.LngText.text
+msgid ""
+"The Uninstallation Wizard has successfully removed ${PRODUCT_FULLNAME} from "
+"your computer."
+msgstr "${PRODUCT_FULLNAME} kompyuterdan muvaffaqiyatli olib tashlandi."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_PARTIAL.LngText.text
+msgid ""
+"The Uninstallation Wizard has successfully removed the selected components "
+"of ${PRODUCT_NAME} from your computer."
+msgstr ""
+"Tanlangan ${PRODUCT_NAME} komponentlari kompyuteringizdan muvoffaqiyatli "
+"olib tashlandi."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ABORT.LngText.text
+msgid ""
+"The Uninstallation Wizard was aborted before completely removing "
+"${PRODUCT_NAME} from your computer."
+msgstr ""
+"${PRODUCT_NAME} toʻliq olib tashlanmasdan, olib tashlash jarayoni "
+"toʻxtatildi."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ERROR.LngText.text
+msgid ""
+"An error has occurred. Thus the Uninstallation Wizard could not remove "
+"${PRODUCT_NAME} from your computer successfully. Click 'Details...' for more "
+"information."
+msgstr ""
+"Xatolik roʻy berdi. Oʻrnatish ustasi ${PRODUCT_NAME} ni tizimdan olib "
+"tashlay olmadi. Bitafsil maʼlumot uchun 'Tafsilotlar...' tugmasini bosing."
+
+#: setupstrings.ulf#STRING_INSTALLERFACTORY_OS_NOT_SUPPORTED.LngText.text
+msgid "Sorry, this Operating System is not supported yet."
+msgstr "Kechirasiz, ushbu operatsion tizim hozircha qoʻllanilmaydi."
+
+#: setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_FOUND.LngText.text
+msgid "An older version of ${PRODUCT_NAME} was found on your system in:"
+msgstr "Tizimda ${PRODUCT_NAME} ning eskiroq versiyasi topildi:"
+
+#: setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_REMOVE.LngText.text
+msgid ""
+"You have to remove the older version of ${PRODUCT_NAME} before you can "
+"install the newer one."
+msgstr ""
+"Yangi versiyani oʻrnatishdan avval ${PRODUCT_NAME} ning eski versiyasini "
+"olib tashlashingiz kerak."
+
+#: setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_FOUND.LngText.text
+msgid "A newer version of ${PRODUCT_NAME} was found on your system in:"
+msgstr "Tizimda ${PRODUCT_NAME} 'ning yangiroq versiyasi oʻrnatilgan:"
+
+#: setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_REMOVE.LngText.text
+msgid ""
+"You have to remove the newer version of ${PRODUCT_NAME} before you can "
+"install the older one."
+msgstr ""
+"Eski versiyani oʻrnatishdan avval ${PRODUCT_NAME} ning yangi versiyasini "
+"olib tashlang."
+
+#: setupstrings.ulf#STRING_NEWER_VERSION_DATABASE.LngText.text
+msgid "Database"
+msgstr "Maʼlumotlar bazasi"
+
+#: setupstrings.ulf#STRING_NEWER_VERSION_TIP.LngText.text
+msgid "Please choose another installation directory."
+msgstr "Iltimos boshqa oʻrnatish direktoriyasini tanlang."
+
+#: setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_1.LngText.text
+msgid "The user you are logged in as cannot run the Installation Wizard."
+msgstr "Ushbu foydalanuvchi oʻrnatish ustasini ishga tushira olmaydi."
+
+#: setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_2.LngText.text
+msgid ""
+"Please log out and log back in as a user with system administrator rights."
+msgstr "Iltimos tizimga boshqaruvi huquqi bilan kiring."
+
+#: setupstrings.ulf#STRING_DISCSPACE_INSUFFICIENT.LngText.text
+msgid "Not enough discspace available for installation."
+msgstr "Oʻrnatish uchun diskda joy yetarli emas."
+
+#: setupstrings.ulf#STRING_DISCSPACE_REQUIRED.LngText.text
+msgid "Required disc space"
+msgstr "Talab qilinadigan joy"
+
+#: setupstrings.ulf#STRING_DISCSPACE_AVAILABLE.LngText.text
+msgid "Available disc space"
+msgstr "Mavjud joy"
+
+#: setupstrings.ulf#STRING_DISCSPACE_TIP.LngText.text
+msgid ""
+"Please use another directory for installation or change your module "
+"selection."
+msgstr ""
+"Iltimos oʻrnatish uchun boshqa direktoriyani tanlang yoki modul "
+"tanlovingizni oʻzgartiring."
+
+#: setupstrings.ulf#STRING_ANALYZING_DATABASE1.LngText.text
+msgid "Analyzing ..."
+msgstr "Tahlil qilinmoqda ..."
+
+#: setupstrings.ulf#STRING_ANALYZING_DATABASE2.LngText.text
+msgid ""
+"Analyzing database\n"
+"Please wait a moment ..."
+msgstr ""
+"Maʻlumot bazasi tahlil qilinmoqda\n"
+"Iltimos kutib turing ..."
+
+#: setupstrings.ulf#STRING_PROLOGUE_1.LngText.text
+msgid ""
+"Welcome to the Installation Wizard.<p>This wizard asks you to supply "
+"configuration settings.<p>At the bottom of each page are navigation buttons "
+"that let you move through the Installation Wizard:"
+msgstr ""
+"Oʻrnatish ustasiga xush kelibsiz.<p>Ushbu usta oʻrnatish parametrlarini "
+"tanlash imkoniyatini beradi.<p>Har bir sahifa ostida quyidagi navigatsiya "
+"tugmalari koʻrsatiladi:"
+
+#: setupstrings.ulf#STRING_PROLOGUE_2.LngText.text
+msgctxt "setupstrings.ulf#STRING_PROLOGUE_2.LngText.text"
+msgid "'Back' returns you to the previous page."
+msgstr "'Orqaga', bir sahifa orqaga qaytaradi."
+
+#: setupstrings.ulf#STRING_PROLOGUE_3.LngText.text
+msgctxt "setupstrings.ulf#STRING_PROLOGUE_3.LngText.text"
+msgid "'Next' takes you to the next page. "
+msgstr "'Keyingi', navbatdagi sahifaga oʻtadi. "
+
+#: setupstrings.ulf#STRING_PROLOGUE_4.LngText.text
+msgid "'Cancel' ends the Installation Wizard without installing this software."
+msgstr ""
+"'Bekor qilish' tugmasi oʻrnatish ustasini ushbu dasturni oʻrnatmasdan ishini "
+"toʻxtatadi."
+
+#: setupstrings.ulf#STRING_PROLOGUE_5.LngText.text
+msgctxt "setupstrings.ulf#STRING_PROLOGUE_5.LngText.text"
+msgid ""
+"'Help' displays the Help with further information about the page currently "
+"displayed."
+msgstr "'Yordam', joriy sahifa uchun yordam sahifasini koʻrsatadi."
+
+#: setupstrings.ulf#STRING_PROLOGUE_6.LngText.text
+msgid "'OK' exits the Help page and returns you to the Installation Wizard."
+msgstr "'OK', yordam sahifasidan chiqadi va oʻrnatish ustasiga qaytadi."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_1.LngText.text
+msgid ""
+"Welcome to the Uninstallation Wizard.<p>This wizard asks you to supply "
+"configuration settings.<p>At the bottom of each page are navigation buttons "
+"that let you move through the Uninstallation Wizard:"
+msgstr ""
+"Olib tashlash ustasiga xush kelibsiz.<p>Ushbu usta olib tashlash "
+"parametrlarini tanlash imkoniyatini beradi.<p>Har bir sahifa ostida quyidagi "
+"navigatsiya tugmalari koʻrsatiladi:"
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_2.LngText.text
+msgctxt "setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_2.LngText.text"
+msgid "'Back' returns you to the previous page."
+msgstr "'Orqaga', bir sahifa orqaga qaytaradi."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_3.LngText.text
+msgctxt "setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_3.LngText.text"
+msgid "'Next' takes you to the next page. "
+msgstr "'Keyingi', navbatdagi sahifaga oʻtadi. "
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_4.LngText.text
+msgid "'Cancel' ends the Uninstallation Wizard without removing this software."
+msgstr ""
+"'Bekor qilish', olib tashlash ustasidan chiqadi va dasturni tizimda "
+"qoldiradi."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_5.LngText.text
+msgctxt "setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_5.LngText.text"
+msgid ""
+"'Help' displays the Help with further information about the page currently "
+"displayed."
+msgstr "'Yordam', joriy sahifa uchun yordam sahifasini koʻrsatadi."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_6.LngText.text
+msgid "'OK' exits the Help page and returns you to the Uninstallation Wizard."
+msgstr "'OK', yordam sahifasidan chiqadi va olib tashlash ustasiga qaytadi."
+
+#: setupstrings.ulf#STRING_ACCEPTLICENSE_1.LngText.text
+msgid ""
+"Before you install this product, you must read and accept the entire "
+"Software License Agreement under which this software is licensed for your "
+"use."
+msgstr ""
+"Ushbu dasturni oʻrnatishdan avval, u tarqatiladigan litsenziya kelishuvini "
+"oʻqib chiqishingiz va qabul qilishingiz shart."
+
+#: setupstrings.ulf#STRING_ACCEPTLICENSE_2.LngText.text
+msgctxt "setupstrings.ulf#STRING_ACCEPTLICENSE_2.LngText.text"
+msgid ""
+"If you have read and accept all the terms of the entire Software License "
+"Agreement, click 'Accept License' to continue with the installation."
+msgstr ""
+"Litsenziya kelishuvi oʻqib chiqib, qabul qilgan boʻlsangiz, oʻrnatishni "
+"davom ettirish uchun 'Litsenziyani qabul qilish' tugmasini bosing."
+
+#: setupstrings.ulf#STRING_ACCEPTLICENSE_3.LngText.text
+msgid ""
+"If you do not accept all the terms of the Software License Agreement, click "
+"'Decline' to end the Installation Wizard without installing this product."
+msgstr ""
+"Agar Litsenziya kelishuvi sizga toʻgʻri kelmasa, dasturni oʻrnatishdan "
+"chiqish uchun 'Voz kechish' tugmasini bosing."
+
+#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE_1.LngText.text
+msgid ""
+"Select the type of product installation to perform from the following "
+"choices. This will determine how much information you need to provide for "
+"product configuration."
+msgstr ""
+"Quyidagilardan oʻrnatish usulini tanlang. Bu mahsulotni moslash uchun qanaqa "
+"ma'lumotlar taqdim etishingizni aniqlaydi."
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY_1.LngText.text
+msgid ""
+"It is recommended that you install this product in the directory suggested "
+"by this Installation Wizard. <p>To choose a different location, click "
+"'Browse...' or specify the full path of the directory to use in the text box "
+"below. <p>If this product is already installed, you cannot change the "
+"destination directory."
+msgstr ""
+"Oʻrnatishni Usta taklif etgan jildda amalga oshirish tavsiya etiladi.. "
+"<p>Boshqa joyga oʻrnatish uchun 'Tanlash...' tugmasini bosing yoki quyida "
+"toʻliq manzilni yozing. <p>Agar mahsulot allaqachon oʻnatilgan boʻlsa, "
+"direktoriyani oʻzgartira olmaysiz."
+
+#: setupstrings.ulf#STRING_CHOOSECOMPONENTS_1.LngText.text
+msgid ""
+"Components marked in color will be installed. Click the icon of a component "
+"to mark or unmark the component.<p>All already installed components cannot "
+"be selected for installation."
+msgstr ""
+"Rang bilan ajratilgan komponentlar oʻrnatiladi. Komponentni tanlash yoki "
+"olib tashlash uchun komponent nishonchasini bosing.<p>Allaqachon oʻrnatilgan "
+"komponentlarni, oʻrnatish uchun yana tanlab boʻlmaydi."
+
+#: setupstrings.ulf#STRING_INSTALLATIONIMMINENT_1.LngText.text
+msgid ""
+"The listed components are ready for installation based on your configuration "
+"settings. <p>If you are satisfied with your selection, click 'Install Now' "
+"to begin. <p>To check or modify your settings on the previous pages, click "
+"'Back'."
+msgstr ""
+"Quyidagi komponentlar oʻrnatishga tayyor. <p>Agar hammasi toʻgʻri boʻlsa "
+"'Hozir oʻrnatish' tugmasini bosing. <p>Oldingi sahifadagi moslamalarni "
+"oʻzgartirish uchun 'Orqaga' tugmasini bosing."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT_1.LngText.text
+msgid ""
+"The listed components are ready for uninstallation based on your "
+"configuration settings. <p>If you are satisfied with your selection, click "
+"'Remove Now' to begin. <p>To check or modify your settings on the previous "
+"pages, click 'Back'."
+msgstr ""
+"Quyidagi komponentlar olib tashlash uchun tayyor. <p>Agar hammasi toʻgʻri "
+"boʻlsa 'Hozir olib tashlash' tugmasini bosing. <p>Oldingi sahifadagi "
+"moslamalarni oʻzgartirish uchun 'Orqaga' tugmasini bosing."
+
+#: setupstrings.ulf#STRING_INSTALLATIONONGOING_1.LngText.text
+msgid ""
+"This page indicates the progress of the installation with the aid of a "
+"progress bar. To abort the installation process, click 'Stop'."
+msgstr ""
+"Ushbu sahfada oʻrnatish jarayoni koʻrsatiladi. Oʻrnatishni bekor qilish "
+"uchun 'Toʻxtatish' tugmasini bosing."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONONGOING_1.LngText.text
+msgid ""
+"This page indicates the progress of the uninstallation with the aid of a "
+"progress bar. To abort the uninstallation, click 'Stop'."
+msgstr ""
+"Ushbu sahfada olib tashlash jarayoni koʻrsatiladi. Olib tashlashni bekor "
+"qilish uchun 'Toʻxtatish' tugmasini bosing."
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE_1.LngText.text
+msgid ""
+"Complete: This will remove all installed components of your "
+"version.<p>Partial: This removes only the components you will choose out of "
+"the components list."
+msgstr ""
+"Toʻliq: Barcha oʻrnatilgan komponentlarni olib tashlaydi. <p>Qisman: Faqat "
+"tanlangan komponentlarni olib tashlaydi."
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS_1.LngText.text
+msgid ""
+"Components marked with an X will be removed. Click next to a component to "
+"mark or unmark it with an X."
+msgstr ""
+"X bilan belgilangan komponentlar olib tashlanadi. Keyingi tugmasi yordamida "
+"komponentlarni X bilan belgilang yoki belgini olib tashlang."
+
+#: setupstrings.ulf#STRING_PACKAGEFORMAT_NOT_SUPPORTED.LngText.text
+msgid ""
+"This package format is currently not supported for your operating system!"
+msgstr "Ushbu paket formati operatsion tizimingiz tomonidan qoʻllanilmaydi!"
+
+#: setupstrings.ulf#STRING_OPERATING_SYSTEM.LngText.text
+msgid "Operating system"
+msgstr "Operatsion tizim"
+
+#: setupstrings.ulf#STRING_PACKAGEFORMAT.LngText.text
+msgid "Package format"
+msgstr "Paket formati"
+
+#: setupstrings.ulf#STRING_NOTHING_TO_INSTALL.LngText.text
+msgid "Nothing to install"
+msgstr "Oʻrnatish uchun hech narsa yoʻq"
+
+#: setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_1.LngText.text
+msgid "No components have been selected for installation."
+msgstr "Oʻrnatish uchun komponentlar tanlanmagan."
+
+#: setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_2.LngText.text
+msgid ""
+"Click 'OK' to select one or more components for installation or to exit the "
+"Installation Wizard."
+msgstr ""
+"Oʻrnatish uchun bir yoki bir necha komponentni tanlash, yoki oʻrnatish "
+"ustasidan chiqish uchun 'OK' tugmasini bosing."
+
+#: setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_1.LngText.text
+msgid "No languages have been selected for installation."
+msgstr "Oʻrnatish uchun til komponentlari tanlanmagan."
+
+#: setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_2.LngText.text
+msgid ""
+"Click 'OK' to select one or more languages for installation or to exit the "
+"Installation Wizard."
+msgstr ""
+"Oʻrnatish uchun bir yoki bir necha til komponentini tanlash, yoki oʻrnatish "
+"ustasidan chiqish uchun 'OK' tugmasini bosing."
+
+#: setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_1.LngText.text
+msgid "No applications have been selected for installation."
+msgstr "Oʻrnatish uchun komponentlar tanlanmagan."
+
+#: setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_2.LngText.text
+msgid ""
+"Click 'OK' to select one or more application for installation or to exit the "
+"Installation Wizard."
+msgstr ""
+"Oʻrnatiladigan bir yoki bir necha komponentni tanlash uchun 'OK' tugmasini "
+"bosing yoki oʻrnatish ustasidan chiqing."
+
+#: setupstrings.ulf#STRING_NOTHING_TO_UNINSTALL.LngText.text
+msgid "Nothing to uninstall"
+msgstr "Olib tashlash uchun hech narsa yoʻq"
+
+#: setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_1.LngText.text
+msgid "No components have been selected for uninstallation."
+msgstr "Olib tashlash uchun komponentlar tanlanmagan."
+
+#: setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_2.LngText.text
+msgid ""
+"Click 'OK' to select one or more components for uninstallation or to exit "
+"the Uninstallation Wizard."
+msgstr ""
+"Olib tashlash uchun bir yoki bir necha komponentni tanlash, yoki olib "
+"tashlash ustasidan chiqish uchun 'OK' tugmasini bosing."
+
+#: setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_1.LngText.text
+msgid "All language components have been selected for uninstallation."
+msgstr "Barcha til komponentlari olib tashlash uchun tanlandi."
+
+#: setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_2.LngText.text
+msgid ""
+"Click 'OK' to select one or more language components not for uninstallation "
+"or to exit the Uninstallation Wizard."
+msgstr ""
+"Bir yoki bir necha til komponentlarini qoldirishni tanlash uchun 'OK' "
+"tugmasini bosing  yoki olib tashlash ustasidan chiqing."
+
+#: setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_1.LngText.text
+msgid "All application components have been selected for uninstallation."
+msgstr "Barcha komponentlar olib tashlash uchun tanlandi."
+
+#: setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_2.LngText.text
+msgid ""
+"Click 'OK' to select one or more application components not for "
+"uninstallation or to exit the Uninstallation Wizard."
+msgstr ""
+"Bir yoki bir necha komponentni qoldirishni tanlash uchun 'OK' tugmasini "
+"bosing  yoki olib tashlash ustasidan chiqing."
+
+#: setupstrings.ulf#STRING_CHANGE_SELECTION.LngText.text
+msgid "Please change selection"
+msgstr "Iltimos tanlovni oʻzgartiring"

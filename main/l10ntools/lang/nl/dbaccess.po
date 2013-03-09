@@ -1,0 +1,4330 @@
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATABASENAME.fixedtext.text
+msgid "Database ~name"
+msgstr "Database~naam"
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_USER.fixedline.text
+msgid "User settings"
+msgstr "Gebruikersinstellingen"
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CONUSR.fixedtext.text
+msgid "~Control user"
+msgstr "~Beheerder"
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSUSR.fixedtext.text
+msgid "~Administrator"
+msgstr "~Systeembeheerder"
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DOMAIN_USR.fixedtext.text
+msgid "~Domain user"
+msgstr "~Domeingebruiker"
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSPWD.pushbutton.text
+msgid "P~assword..."
+msgstr "W~achtwoord..."
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_CONPWD.pushbutton.text
+msgid "~Password..."
+msgstr "~Wachtwoord..."
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DOMAINPWD.pushbutton.text
+msgid "Passwo~rd..."
+msgstr "Wachtwoo~rd..."
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_RESTORE.fixedtext.text
+msgid "~Backup file"
+msgstr "~Veiligheidskopie"
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_RESTORE.pushbutton.text
+msgctxt "AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_RESTORE.pushbutton.text"
+msgid "..."
+msgstr "..."
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_DBSETTINGS.fixedline.text
+msgid "Database settings"
+msgstr "Database-instellingen"
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSDEVSPACE.fixedtext.text
+msgid "S~YSDEVSPACE"
+msgstr "S~YSDEVSPACE"
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG.fixedtext.text
+msgid "TRANSACTI~ONLOG"
+msgstr "TRANSACTI~ELOGBOEK"
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE.fixedtext.text
+msgid "DATAD~EVSPACE"
+msgstr "DATAD~EVSPACE"
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSDEVSPACE.pushbutton.text
+msgctxt "AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSDEVSPACE.pushbutton.text"
+msgid "..."
+msgstr "..."
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_TRANSACTIONLOG.pushbutton.text
+msgctxt "AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_TRANSACTIONLOG.pushbutton.text"
+msgid "..."
+msgstr "..."
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DATADEVSPACE.pushbutton.text
+msgctxt "AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DATADEVSPACE.pushbutton.text"
+msgid "..."
+msgstr "..."
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG_SIZE.fixedtext.text
+msgid "Transaction ~file (MB)"
+msgstr "Transactie~bestand (MB)"
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE_SIZE.fixedtext.text
+msgid "Data~base size (MB)"
+msgstr "Data~basegrootte (MB)"
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CACHE_SIZE.fixedtext.text
+msgid "Data ~buffer size (MB)"
+msgstr "Grootte gegevens~buffer (MB)"
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.STR_BACKUPFILE_LOAD.string.text
+msgid "Backup file information"
+msgstr "Informatie over veiligheidskopie"
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.modaldialog.text
+msgid "Create New Adabas D Database"
+msgstr "Nieuwe Adabas D-database maken"
+
+#: AdabasNewDb.src#STR_ADABAS_NO_PARAM_SET.string.text
+msgid "No entry could be written in the configuration file."
+msgstr "Er kon geen item worden geschreven in het configuratiebestand."
+
+#: AdabasNewDb.src#STR_ADABAS_NO_DB_CREATED.string.text
+msgid "An error occurred as the DB files were being created."
+msgstr "er trad een fout op toen de DB-bestanden werden gemaakt."
+
+#: AdabasNewDb.src#STR_ADABAS_NO_SYSTEM_TABLES.string.text
+msgid "An error occurred as the system tables were being created."
+msgstr "Er trad een fout op toen de systeemtabellen werden gemaakt."
+
+#: AdabasNewDb.src#STR_ADABAS_NO_BACKUP_FILE.string.text
+msgid "The backup file entered does not exist."
+msgstr "Het ingevoerde veiligheidskopie-bestand bestaat niet."
+
+#: AdabasNewDb.src#INFO_STR_MAX_FILE_LENGTH.infobox.text
+msgid "The fully qualified file cannot be longer than \\'#\\' characters."
+msgstr ""
+"Het volledig gekwalificeerde bestand kan niet langer zijn dan \\'#\\' tekens."
+
+#: AdabasNewDb.src#STR_NO_SAME_USER.string.text
+msgid "The administrator and the control user cannot have the same name!"
+msgstr "De systeembeheerder en de beheerder mogen niet dezelfde naam hebben!"
+
+#: AdabasNewDb.src#STR_DEVSPACE_NO_FILE.string.text
+msgid "No name has been entered for the $name$ file!"
+msgstr "Er werd geen naam ingevoerd voor het $name$-bestand!"
+
+#: AdabasNewDb.src#STR_NO_PERMISSION.string.text
+msgid "You have to have administrator rights to create a new database!"
+msgstr "Heeft u systeembeheerdersrechten om een nieuwe database te maken!"
+
+#: AdabasNewDb.src#STR_FILE_OR_DIR_UNKNOWN.string.text
+msgid "The specified file name or directory does not exist."
+msgstr "De gespecificeerde bestandsnaam of map bestaat niet."
+
+#: AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.string.text
+msgid ""
+"No new database can be created.\n"
+"Please check your Adabas D installation, especially the variables \"DBROOT\" "
+"and \"DBWORK\"."
+msgstr ""
+"Er kan geen nieuwe database worden gemaakt.\n"
+"Controleer alstublieft uw Adabas D-installatie, speciaal de variabelen "
+"\"DBROOT\" en \"DBWORK\"."
+
+#: AdabasNewDb.src#STR_STAT_WARNING.string.text
+msgid "Warning!"
+msgstr "Waarschuwing!"
+
+#: AdabasNewDb.src#STR_ADABAS_CREATEFILES.string.text
+msgid "Creating database files."
+msgstr "Databasebestanden maken."
+
+#: AdabasNewDb.src#STR_ADABAS_CREATEPARAM_FILE.string.text
+msgid "Creating database configuration file."
+msgstr "Databaseconfiguratie-bestand maken."
+
+#: AdabasNewDb.src#STR_ADABAS_START_DATABASE.string.text
+msgid "Starting database for the first time."
+msgstr "Database voor de eerste keer starten."
+
+#: AdabasNewDb.src#STR_ADABAS_DB_EXISTS.string.text
+msgid "The name entered already exists."
+msgstr "De ingevoerde naam bestaat al."
+
+#: AdabasNewDb.src#STR_ADABAS_NO_DEFAULTNAME.string.text
+msgid ""
+"No default names could be set for the database files. The total length is "
+"more than 40 characters."
+msgstr ""
+"Er konden geen standaardnamen worden ingesteld voor de databasebestanden. De "
+"totale lengte is meer dan 40 tekens."
+
+#: AdabasNewDb.src#STR_ADABAS_NO_ACCESSRIGHTS.string.text
+msgid ""
+"No default names could be set for the database files. There is no write "
+"access."
+msgstr ""
+"Er konden geen standaardnamen worden ingesteld voor de databasebestanden. Er "
+"is geen schrijf-toegang."
+
+#: AdabasNewDb.src#STR_ADABAS_CANNOT_CONVERT.string.text
+msgid ""
+"The current database need to be converted. Please insert control user  and "
+"password."
+msgstr ""
+"De huidige database moet worden geconverteerd. Voer alstublieft beheerder  "
+"en wachtwoord in."
+
+#: AdabasNewDb.src#STR_ADABAS_PASSWORD_ILLEGAL.string.text
+msgid "Spaces are not permitted in the password. Please enter a new password."
+msgstr ""
+"Spaties zijn niet toegestaan in het wachtwoord. Voer alstublieft een nieuw "
+"wachtwoord in."
+"X-Accelerator-Marker: ~\n"
+
+#: macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_CLOSE_SUB_DOCS.string.text
+msgid "Prepare"
+msgstr "Voorbereiden"
+
+#: macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_BACKUP_DBDOC.string.text
+msgid "Backup Document"
+msgstr "Veiligheidskopie-document"
+
+#: macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_MIGRATE.string.text
+msgid "Migrate"
+msgstr "Migreren"
+
+#: macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_SUMMARY.string.text
+msgctxt "macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_SUMMARY.string.text"
+msgid "Summary"
+msgstr "Overzicht"
+
+#: macromigration.src#DLG_MACRO_MIGRATION.modaldialog.text
+msgid "Database Document Macro Migration"
+msgstr "Databasedocument Macro Migratie"
+
+#: macromigration.src#TP_PREPARE.FT_HEADER.fixedtext.text
+msgid "Welcome to the Database Macro Migration Wizard"
+msgstr "Welkom bij de Database Macro Migratie-assistent"
+
+#: macromigration.src#TP_PREPARE.FT_INTRODUCTION.fixedtext.text
+msgid ""
+"This wizard will guide you through the task of migrating your macros.\n"
+"\n"
+"After you finished it, all macros which were formerly embedded into the "
+"forms and reports of the current database document will have been moved to "
+"the document itself. In this course, libraries will be renamed as needed.\n"
+"\n"
+"If your forms and reports contain references to those macros, they will be "
+"adjusted, where possible.\n"
+"\n"
+"Before the migration can start, all forms, reports, queries and tables "
+"belonging to the document must be closed. Press 'Next' to do so."
+msgstr ""
+"Deze assistent zal u door het migreren van uw macro's en scripts leiden.\n"
+"\n"
+"Alle macro's en scripts die eerst waren ingebed in uw formulieren en "
+"rapporten zullen zijn verplaatst naar het database-document als u het "
+"voltooid hebt. Tijdens deze verwerking zullen bibliotheken worden hernoemd "
+"zoals dat nodig is.\n"
+"\n"
+"Indien uw formulieren en rapporten verwijzingen bevatten naar deze macro's "
+"en scripts zullen zij, waar mogelijk, worden aangepast.\n"
+"\n"
+"Voordat de migratie kan beginnen moeten alle formulieren, rapporten, query's "
+"en tabellen zijn gesloten. Druk op 'Volgende' om dat te doen."
+
+#: macromigration.src#TP_PREPARE.FT_CLOSE_DOC_ERROR.fixedtext.text
+msgid ""
+"Not all objects could be closed. Please close them manually, and re-start "
+"the wizard."
+msgstr ""
+"Niet alle objecten konden worden gesloten. Sluit ze alstublieft handmatif en "
+"herstart de assistent."
+
+#: macromigration.src#TP_SAVE_DBDOC_AS.FT_HEADER.fixedtext.text
+msgid "Backup your Document"
+msgstr "Maak een veiligheidskopie van document"
+
+#: macromigration.src#TP_SAVE_DBDOC_AS.FT_EXPLANATION.fixedtext.text
+msgid ""
+"To allow you to go back to the state before the migration, the database "
+"document will be backed up to a location of your choice. Every change done "
+"by the wizard will be made to the original document, the backup will stay "
+"untouched."
+msgstr ""
+"Van het databasedocument zal een veiligheidskopie worden gemaakt op de "
+"locatie van uw keuze om u in staat te stellen terug te gaan naar de situatie "
+"van vóór de migratie. Elke door de assistent gemaakte wijziging zal worden "
+"gemaakt in het originele document, de veiligheidskopie blijft onaangetast."
+
+#: macromigration.src#TP_SAVE_DBDOC_AS.FT_SAVE_AS_LABEL.fixedtext.text
+msgid "Save To:"
+msgstr "Opslaan naar:"
+
+#: macromigration.src#TP_SAVE_DBDOC_AS.PB_BROWSE_SAVE_AS_LOCATION.pushbutton.text
+msgid "Browse ..."
+msgstr "Bladeren ..."
+
+#: macromigration.src#TP_SAVE_DBDOC_AS.FT_START_MIGRATION.fixedtext.text
+msgid ""
+"Press 'Next' to save a copy of your document, and to begin the migration."
+msgstr ""
+"Druk op 'Volgende' om een kopie van uw document op te slaan en te beginnen "
+"met de migratie."
+
+#: macromigration.src#TP_MIGRATE.FT_HEADER.fixedtext.text
+msgid "Migration Progress"
+msgstr "Migratievoortgang"
+
+#: macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT.fixedtext.text
+msgid ""
+"The database document contains $forms$ form(s) and $reports$ report(s), "
+"which are currently being processed:"
+msgstr ""
+"Het databasedocument bevat $forms$ formulier(en) en $reports$ rapport(en), "
+"die momenteel worden verwerkt:"
+
+#: macromigration.src#TP_MIGRATE.FT_CURRENT_OBJECT_LABEL.fixedtext.text
+msgid "Current object:"
+msgstr "Huidig object:"
+
+#: macromigration.src#TP_MIGRATE.FT_CURRENT_PROGRESS_LABEL.fixedtext.text
+msgid "Current progress:"
+msgstr "Huidige voortgang:"
+
+#: macromigration.src#TP_MIGRATE.FT_ALL_PROGRESS_LABEL.fixedtext.text
+msgid "Overall progress:"
+msgstr "Algehele voortgang:"
+
+#: macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT_PROGRESS.fixedtext.text
+msgctxt "macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT_PROGRESS.fixedtext.text"
+msgid "document $current$ of $overall$"
+msgstr "document $current$ van $overall$"
+
+#: macromigration.src#TP_MIGRATE.FT_MIGRATION_DONE.fixedtext.text
+msgid ""
+"All forms and reports have been successfully processed. Press 'Next' to show "
+"a detailed summary."
+msgstr ""
+"Alle documenten zijn succesvol verwerkt. Druk op 'Volgende' om een "
+"gedetailleerd overzicht weer te geven."
+
+#: macromigration.src#TP_SUMMARY.FT_HEADER.fixedtext.text
+msgctxt "macromigration.src#TP_SUMMARY.FT_HEADER.fixedtext.text"
+msgid "Summary"
+msgstr "Overzicht"
+
+#: macromigration.src#TP_SUMMARY.STR_SUCCESSFUL.string.text
+msgid ""
+"The migration was successful. Below is a log of the actions which have been "
+"taken to your document."
+msgstr ""
+"De migratie werd succesvol uitgevoerd. Hieronder staat een log van de acties "
+"die op uw document werden uitgevoerd."
+
+#: macromigration.src#TP_SUMMARY.STR_UNSUCCESSFUL.string.text
+msgid ""
+"The migration was not successful. Examine the migration log below for "
+"details."
+msgstr ""
+"De migratie werd NIET succesvol uitgevoerd. Bekijk het migratie-log "
+"hieronder voor de details."
+
+#: macromigration.src#STR_FORM.string.text
+msgid "Form '$name$'"
+msgstr "Formulier '$name$'"
+
+#: macromigration.src#STR_REPORT.string.text
+msgid "Report '$name$'"
+msgstr "Rapport '$name$'"
+
+#: macromigration.src#STR_OVERALL_PROGRESS.string.text
+msgctxt "macromigration.src#STR_OVERALL_PROGRESS.string.text"
+msgid "document $current$ of $overall$"
+msgstr "document $current$ van $overall$"
+
+#: macromigration.src#STR_DATABASE_DOCUMENT.string.text
+msgid "Database Document"
+msgstr "Databasedocument"
+
+#: macromigration.src#STR_SAVED_COPY_TO.string.text
+msgid "saved copy to $location$"
+msgstr "kopie opgeslagen in $location$"
+
+#: macromigration.src#STR_MOVED_LIBRARY.string.text
+msgid "migrated $type$ library '$old$' to '$new$'"
+msgstr "verplaatst $type$ bibliotheek '$old$' naar '$new$'"
+
+#: macromigration.src#STR_LIBRARY_TYPE_AND_NAME.string.text
+msgid "$type$ library '$library$'"
+msgstr "$type$ bibliotheek '$library$'"
+
+#: macromigration.src#STR_MIGRATING_LIBS.string.text
+msgid "migrating libraries ..."
+msgstr "bibliotheken migreren ..."
+
+#: macromigration.src#STR_OOO_BASIC.string.text
+msgid "%PRODUCTNAME Basic"
+msgstr "%PRODUCTNAME BASIC"
+
+#: macromigration.src#STR_JAVA_SCRIPT.string.text
+msgid "JavaScript"
+msgstr "JavaScript"
+
+#: macromigration.src#STR_BEAN_SHELL.string.text
+msgid "BeanShell"
+msgstr "BeanShell"
+
+#: macromigration.src#STR_JAVA.string.text
+msgid "Java"
+msgstr "Java"
+
+#: macromigration.src#STR_PYTHON.string.text
+msgid "Python"
+msgstr "Python"
+
+#: macromigration.src#STR_DIALOG.string.text
+msgid "dialog"
+msgstr "dialoogvenster"
+
+#: macromigration.src#STR_ERRORS.string.text
+msgid "Error(s)"
+msgstr "Fout(en)"
+
+#: macromigration.src#STR_WARNINGS.string.text
+msgid "Warnings"
+msgstr "Waarschuwingen"
+
+#: macromigration.src#STR_EXCEPTION.string.text
+msgid "caught exception: "
+msgstr "uitzondering gevonden: "
+
+#: macromigration.src#ERR_INVALID_BACKUP_LOCATION.errorbox.text
+msgid ""
+"You need to choose a backup location other than the document location "
+"itself."
+msgstr ""
+"U moet een andere locatie voor de veiligheidskopie opgeven dan de locatie "
+"van het document zelf."
+
+#: macromigration.src#STR_INVALID_NUMBER_ARGS.string.text
+msgid "Invalid number of initialization arguments. Expected 1."
+msgstr "Ongeldig aantal argumenten voor initialisatie. Verwacht 1."
+
+#: macromigration.src#STR_NO_DATABASE.string.text
+msgid "No database document found in the initialization arguments."
+msgstr "Geen databasedocument gevonden in de argumenten voor de initialisatie."
+
+#: macromigration.src#STR_NOT_READONLY.string.text
+msgid "Not applicable to read-only documents."
+msgstr "Niet toe te passen op alleen-lezen documenten."
+
+#: bcommon.src#RID_STR_TBL_TITLE.string.text
+msgctxt "bcommon.src#RID_STR_TBL_TITLE.string.text"
+msgid "Table #"
+msgstr "Tabel #"
+
+#: sbabrw.src#QUERY_BRW_SAVEMODIFIED.querybox.text
+msgid ""
+"The current record has been changed.\n"
+"Do you want to save the changes?"
+msgstr ""
+"De huidige record is gewijzigd.\n"
+"Wilt u de wijzigingen opslaan?"
+
+#: sbabrw.src#QUERY_BRW_DELETE_ROWS.querybox.text
+msgid "Do you want to delete the selected data?"
+msgstr "Wilt u de geselecteerde gegevens verwijderen?"
+
+#: sbabrw.src#RID_STR_DATABROWSER_FILTERED.string.text
+msgid "(filtered)"
+msgstr "(gefilterd)"
+
+#: sbabrw.src#SBA_BROWSER_SETTING_ORDER.string.text
+msgid "Error setting the sort criteria"
+msgstr "Fout bij instellen van sorteercriteria"
+
+#: sbabrw.src#SBA_BROWSER_SETTING_FILTER.string.text
+msgid "Error setting the filter criteria"
+msgstr "Fout bij instellen van filtercriteria"
+
+#: sbabrw.src#RID_STR_CONNECTION_LOST.string.text
+msgid "Connection lost"
+msgstr "Verbinding verbroken"
+
+#: sbabrw.src#RID_STR_QUERIES_CONTAINER.string.text
+msgid "Queries"
+msgstr "Query's"
+
+#: sbabrw.src#RID_STR_TABLES_CONTAINER.string.text
+msgid "Tables"
+msgstr "Tabellen"
+
+#: sbabrw.src#MID_EDIT_DATABASE.#define.text
+msgid "Edit ~Database File..."
+msgstr "~Databasebestand bewerken..."
+
+#: sbabrw.src#MID_ADMINISTRATE.#define.text
+msgid "Registered databases ..."
+msgstr "Geregistreerde databases ..."
+
+#: sbabrw.src#MID_CLOSECONN.#define.text
+msgid "Disco~nnect"
+msgstr "~Verbinding verbreken"
+
+#: sbabrw.src#STR_TITLE_CONFIRM_DELETION.string.text
+msgid "Confirm Deletion"
+msgstr "Verwijdering Bevestigen"
+
+#: sbabrw.src#STR_QUERY_DELETE_TABLE.string.text
+msgid "Do you want to delete the table '%1'?"
+msgstr "Wilt u de tabel '%1' verwijderen?"
+
+#: sbabrw.src#QUERY_BRW_DELETE_QUERY_CONFIRM.querybox.text
+msgid "The query already exists. Do you want to delete it?"
+msgstr "De query bestaat al. Wilt u deze verwijderen?"
+
+#: sbabrw.src#QUERY_CONNECTION_LOST.querybox.text
+msgid "The connection to the database has been lost. Do you want to reconnect?"
+msgstr "De verbinding met de database is verbroken. Wilt u opnieuw verbinden?"
+
+#: sbabrw.src#STR_OPENTABLES_WARNINGS.string.text
+msgid "Warnings encountered"
+msgstr "Waarschuwingen opgetreden"
+
+#: sbabrw.src#STR_OPENTABLES_WARNINGS_DETAILS.string.text
+msgid ""
+"While retrieving the tables, warnings were reported by the database "
+"connection."
+msgstr ""
+"Bij het ophalen van de tabellen zijn waarschuwingen gemeld door de "
+"databaseverbinding."
+
+#: sbabrw.src#STR_CONNECTING_DATASOURCE.string.text
+msgid "Connecting to \"$name$\" ..."
+msgstr "Verbinden met \"$name$\" ..."
+
+#: sbabrw.src#STR_LOADING_QUERY.string.text
+msgid "Loading query $name$ ..."
+msgstr "Laden query $name$ ..."
+
+#: sbabrw.src#STR_LOADING_TABLE.string.text
+msgid "Loading table $name$ ..."
+msgstr "Laden tabel $name$ ..."
+
+#: sbabrw.src#STR_NO_TABLE_FORMAT_INSIDE.string.text
+msgid "No table format could be found."
+msgstr "Geen tabelopmaak gevonden."
+
+#: sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.string.text
+msgid "The connection to the data source \"$name$\" could not be established."
+msgstr ""
+"De verbinding met de gegevensbron \"$name$\" kon niet tot stand worden "
+"gebracht."
+
+#: sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.menuitem.text
+msgid "Rebuild"
+msgstr "Opnieuw opbouwen"
+
+#: sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.menuitem.text
+msgid "Column ~Format..."
+msgstr "~Kolomopmaak..."
+
+#: sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLUMNINFO.menuitem.text
+msgid "Copy Column D~escription"
+msgstr "~Kolombeschrijving kopiëren"
+
+#: sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_TABLEATTR.menuitem.text
+msgid "Table Format..."
+msgstr "Tabelopmaak..."
+
+#: sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_ROWHEIGHT.menuitem.text
+msgid "Row Height..."
+msgstr "Rijhoogte..."
+
+#: sbagrid.src#RID_STR_UNDO_MODIFY_RECORD.string.text
+msgid "Undo: Data Input"
+msgstr "Ongedaan maken: gegevensinvoer"
+
+#: sbagrid.src#RID_STR_SAVE_CURRENT_RECORD.string.text
+msgid "Save current record"
+msgstr "Huidige record opslaan"
+
+#: sbagrid.src#STR_QRY_TITLE.string.text
+msgid "Query #"
+msgstr "Query #"
+
+#: sbagrid.src#STR_TBL_TITLE.string.text
+msgctxt "sbagrid.src#STR_TBL_TITLE.string.text"
+msgid "Table #"
+msgstr "Tabel #"
+
+#: sbagrid.src#STR_VIEW_TITLE.string.text
+msgid "View #"
+msgstr "Weergave #"
+
+#: sbagrid.src#STR_NAME_ALREADY_EXISTS.string.text
+msgid "The name \"#\" already exists."
+msgstr "De naam \"#\" bestaat reeds."
+
+#: sbagrid.src#STR_NO_COLUMNNAME_MATCHING.string.text
+msgid "No matching column names were found."
+msgstr "Geen overeenkomende kolomnamen gevonden."
+
+#: sbagrid.src#STR_ERROR_OCCURED_WHILE_COPYING.string.text
+msgid "An error occurred. Do you want to continue copying?"
+msgstr "Er is een fout opgetreden. Wilt u doorgaan met kopiëren?"
+
+#: sbagrid.src#STR_DATASOURCE_GRIDCONTROL_NAME.string.text
+msgid "Data source table view"
+msgstr "Weergave gegevensbronnentabel"
+
+#: sbagrid.src#STR_DATASOURCE_GRIDCONTROL_DESC.string.text
+msgid "Shows the selected table or query."
+msgstr "Toont de geselecteerde tabel of query."
+"X-Accelerator-Marker: ~\n"
+
+#: AdabasStat.src#DLG_ADABASSTAT.FL_FILES.fixedline.text
+msgid "Database files"
+msgstr "Databasebestanden"
+
+#: AdabasStat.src#DLG_ADABASSTAT.FT_SYSDEVSPACE.fixedtext.text
+msgid "S~YSDEVSPACE:"
+msgstr "S~YSDEVSPACE:"
+
+#: AdabasStat.src#DLG_ADABASSTAT.FT_TRANSACTIONLOG.fixedtext.text
+msgid "~TRANSACTIONLOG:"
+msgstr "~TRANSACTIONLOG:"
+
+#: AdabasStat.src#DLG_ADABASSTAT.FT_DATADEVSPACE.fixedtext.text
+msgid "DATAD~EVSPACE:"
+msgstr "DATAD~EVSPACE:"
+
+#: AdabasStat.src#DLG_ADABASSTAT.FL_SIZES.fixedline.text
+msgid "Database sizes"
+msgstr "Grootte van databases"
+
+#: AdabasStat.src#DLG_ADABASSTAT.FT_SIZE.fixedtext.text
+msgid "S~ize (MB):"
+msgstr "Gr~ootte (MB):"
+
+#: AdabasStat.src#DLG_ADABASSTAT.FT_FREESIZE.fixedtext.text
+msgid "~Free memory space (MB):"
+msgstr "~Vrij geheugen (MB):"
+
+#: AdabasStat.src#DLG_ADABASSTAT.FT_MEMORYUSING.fixedtext.text
+msgid "~Memory utilization (in %):"
+msgstr "~Gebruikt geheugen (in %):"
+
+#: AdabasStat.src#DLG_ADABASSTAT.modaldialog.text
+msgid "Database Statistics"
+msgstr "Databasestatistieken"
+
+#: AdabasStat.src#STR_ADABAS_HELP_SYSDEVSPACE.string.text
+msgid "Contains the system tables"
+msgstr "Bevat de systeemtabellen"
+
+#: AdabasStat.src#STR_ADABAS_HELP_TRANSACT.string.text
+msgid "Contains information about transaction"
+msgstr "Bevat gegevens over de transactie"
+
+#: AdabasStat.src#STR_ADABAS_HELP_DATADEVSPACES.string.text
+msgid "Contains all data files"
+msgstr "Bevat alle gegevensbestanden"
+
+#: AdabasStat.src#STR_ADABAS_HELP_SIZE.string.text
+msgid "Total size of the database files"
+msgstr "Totale grootte van de databasebestanden"
+
+#: AdabasStat.src#STR_ADABAS_HELP_FREESIZE.string.text
+msgid "Currently available space before a new datadev file is created."
+msgstr ""
+"Nog beschikbare vrije ruimte voordat een nieuw Datadev-bestand wordt "
+"gemaakt."
+
+#: AdabasStat.src#STR_ADABAS_HELP_MEMORYUSING.string.text
+msgid "Currently used memory"
+msgstr "Momenteel gebruikte vrije ruimte"
+
+#: AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.string.text
+msgid ""
+"No information could be displayed because no access rights exist for the "
+"required system tables."
+msgstr ""
+"Er kunnen geen gegevens worden weergegeven omdat er geen toegangsrecht "
+"bestaat voor de vereiste systeemtabellen."
+
+#: admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_MYSQL_DATABASE_NAME.fixedtext.text
+msgid "~Database name"
+msgstr "Naam ~database"
+
+#: admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_HOST_PORT.radiobutton.text
+msgid "Se~rver / Port"
+msgstr "Se~rver / Poort"
+
+#: admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_HOST_NAME.fixedtext.text
+msgid "~Server"
+msgstr "~Server"
+
+#: admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT.fixedtext.text
+msgid "~Port"
+msgstr "~Poort"
+
+#: admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT_DEFAULT.fixedtext.text
+msgctxt "admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT_DEFAULT.fixedtext.text"
+msgid "Default: 3306"
+msgstr "Standaard: 3306"
+
+#: admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_SOCKET.radiobutton.text
+msgid "So~cket"
+msgstr "So~cket"
+
+#: admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_NAMED_PIPE.radiobutton.text
+msgid "Named p~ipe"
+msgstr "Benoemde p~ipe"
+
+#: adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_TABLES.radiobutton.text
+msgid "Tables"
+msgstr "Tabellen"
+
+#: adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_QUERIES.radiobutton.text
+msgid "Queries"
+msgstr "Query's"
+
+#: adtabdlg.src#DLG_JOIN_TABADD.PB_ADDTABLE.pushbutton.text
+msgid "~Add"
+msgstr "Toe~voegen"
+
+#: adtabdlg.src#DLG_JOIN_TABADD.PB_CLOSE.cancelbutton.text
+msgctxt "adtabdlg.src#DLG_JOIN_TABADD.PB_CLOSE.cancelbutton.text"
+msgid "~Close"
+msgstr "~Sluiten"
+
+#: adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLES.string.text
+msgid "Add Tables"
+msgstr "Tabellen toevoegen"
+
+#: adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLE_OR_QUERY.string.text
+msgid "Add Table or Query"
+msgstr "Tabel of query toevoegen"
+
+#: advancedsettings.src#AUTO_DATAHANDLING_AUTO_Y_.FL_DATAHANDLING.fixedline.text
+msgid "Options"
+msgstr "Opties"
+
+#: advancedsettings.src#AUTO_SQL92CHECK_AUTO_Y_.CB_SQL92CHECK.checkbox.text
+msgid "Use SQL92 naming constraints"
+msgstr "SQL92 naamconventies gebruiken"
+
+#: advancedsettings.src#AUTO_APPENDTABLEALIAS_AUTO_Y_.CB_APPENDTABLEALIAS.checkbox.text
+msgid "Append the table alias name on SELECT statements"
+msgstr "De aliasnaam van de tabel toevoegen aan SELECT-instructies"
+
+#: advancedsettings.src#AUTO_AS_BEFORE_CORR_NAME_AUTO_Y_.CB_AS_BEFORE_CORR_NAME.checkbox.text
+msgid "Use keyword AS before table alias names"
+msgstr "Het trefwoord AS gebruiken vóór aliasnamen van tabellen"
+
+#: advancedsettings.src#AUTO_ENABLEOUTERJOIN_AUTO_Y_.CB_ENABLEOUTERJOIN.checkbox.text
+msgid "Use Outer Join syntax '{OJ }'"
+msgstr "Gebruik Outer Join syntaxis '{OJ }'"
+
+#: advancedsettings.src#AUTO_IGNOREDRIVER_PRIV_AUTO_Y_.CB_IGNOREDRIVER_PRIV.checkbox.text
+msgid "Ignore the privileges from the database driver"
+msgstr "De privileges vanaf het databasestuurprogramma negeren"
+
+#: advancedsettings.src#AUTO_PARAMETERNAMESUBST_AUTO_Y_.CB_PARAMETERNAMESUBST.checkbox.text
+msgid "Replace named parameters with '?'"
+msgstr "Benoemde parameters vervangen door '?'"
+
+#: advancedsettings.src#AUTO_SUPPRESVERSIONCOLUMN_AUTO_Y_.CB_SUPPRESVERSIONCL.checkbox.text
+msgid "Display version columns (when available)"
+msgstr "Versiekolommen tonen (indien beschikbaar)"
+
+#: advancedsettings.src#AUTO_CATALOG_AUTO_Y_.CB_CATALOG.checkbox.text
+msgid "Use catalog name in SELECT statements"
+msgstr "Catalogusnaam gebruiken in SELECT-instructies"
+
+#: advancedsettings.src#AUTO_SCHEMA_AUTO_Y_.CB_SCHEMA.checkbox.text
+msgid "Use schema name in SELECT statements"
+msgstr "Schemanaam gebruiken in SELECT-instructies"
+
+#: advancedsettings.src#AUTO_IGNOREINDEXAPPENDIX_AUTO_Y_.CB_IGNOREINDEXAPPENDIX.checkbox.text
+msgid "Create index with ASC or DESC statement"
+msgstr "Index maken met ASC- of DESC-instructie"
+
+#: advancedsettings.src#AUTO_DOSLINEENDS_AUTO_Y_.CB_DOSLINEENDS.checkbox.text
+msgid "End text lines with CR+LF"
+msgstr "Tekstregels afsluiten met CR+LF"
+
+#: advancedsettings.src#AUTO_IGNORECURRENCY_AUTO_Y_.CB_IGNORECURRENCY.checkbox.text
+msgid "Ignore currency field information"
+msgstr "Valutaveldinformatie negeren"
+
+#: advancedsettings.src#AUTO_CHECKREQUIRED_AUTO_Y_.CB_CHECK_REQUIRED.checkbox.text
+msgid "Form data input checks for required fields"
+msgstr "Controle van ingevoerde formuliergegevens voor verplichte velden"
+
+#: advancedsettings.src#AUTO_ESCAPE_DATETIME_AUTO_Y_.CB_ESCAPE_DATETIME.checkbox.text
+msgid "Use ODBC conformant date/time literals"
+msgstr "Gebruik letterlijke datum/tijd die zich conformeert aan ODBC"
+
+#: advancedsettings.src#AUTO_PRIMARY_KEY_SUPPORT_AUTO_Y_.CB_PRIMARY_KEY_SUPPORT.checkbox.text
+msgid "Supports primary keys"
+msgstr "Ondersteunt primaire sleutels"
+
+#: advancedsettings.src#AUTO_RESPECTRESULTSETTYPE_AUTO_Y_.CB_RESPECTRESULTSETTYPE.checkbox.text
+msgid "Respect the result set type from the database driver"
+msgstr ""
+"Houdt rekening met het type resultaat van het besturingsprogramma van de "
+"database"
+
+#: advancedsettings.src#WORKAROUND.1.stringlist.text
+msgid "Default"
+msgstr "Standaard"
+
+#: advancedsettings.src#WORKAROUND.2.stringlist.text
+msgid "SQL"
+msgstr "SQL"
+
+#: advancedsettings.src#WORKAROUND.3.stringlist.text
+msgid "Mixed"
+msgstr "Gemengd"
+
+#: advancedsettings.src#WORKAROUND.4.stringlist.text
+msgid "MS Access"
+msgstr "MS Access"
+
+#: advancedsettings.src#AUTO_BOOLEANCOMPARISON_AUTO_Y_.FT_BOOLEANCOMPARISON.fixedtext.text
+msgid "Comparison of Boolean values"
+msgstr "Vergelijking van Booleaanse waarden"
+
+#: advancedsettings.src#AUTO_MAXROWSCAN_AUTO_Y_.FT_MAXROWSCAN.fixedtext.text
+msgid "Rows to scan column types"
+msgstr "Rijen om kolomtypes te scannen"
+
+#: advancedsettings.src#PAGE_GENERATED_VALUES.FL_SEPARATORAUTO.fixedline.text
+msgid "Settings"
+msgstr "Instellingen"
+
+#: advancedsettings.src#PAGE_GENERATED_VALUES.CB_RETRIEVE_AUTO.checkbox.text
+msgid "Re~trieve generated values"
+msgstr "Gegenereerde waarden ophalen"
+
+#: advancedsettings.src#PAGE_GENERATED_VALUES.FT_AUTOINCREMENTVALUE.fixedtext.text
+msgid "~Auto-increment statement"
+msgstr "Instructie automatisch-ophogen"
+
+#: advancedsettings.src#PAGE_GENERATED_VALUES.FT_RETRIEVE_AUTO.fixedtext.text
+msgid "~Query of generated values"
+msgstr "Query van gegenereerde waarden"
+
+#: advancedsettings.src#DLG_DATABASE_ADVANCED.STR_GENERATED_VALUE.string.text
+msgid "Generated Values"
+msgstr "Gegenereerde waarden"
+
+#: advancedsettings.src#DLG_DATABASE_ADVANCED.STR_DS_BEHAVIOUR.string.text
+msgid "Special Settings"
+msgstr "Speciale instellingen"
+
+#: advancedsettings.src#DLG_DATABASE_ADVANCED.tabdialog.text
+msgid "Advanced Settings"
+msgstr "Geavanceerde instellingen"
+
+#: AutoControls.src#STR_DBASE_PATH_OR_FILE.string.text
+msgid "Path to the dBASE files"
+msgstr "Pad naar de dBASE-bestanden"
+
+#: AutoControls.src#STR_FLAT_PATH_OR_FILE.string.text
+msgid "Path to the text files"
+msgstr "Pad naar de tekstbestanden"
+
+#: AutoControls.src#STR_CALC_PATH_OR_FILE.string.text
+msgid "Path to the spreadsheet document"
+msgstr "Pad naar het werkbladdocument"
+
+#: AutoControls.src#STR_NAME_OF_ODBC_DATASOURCE.string.text
+msgid "Name of the ODBC data source on your system"
+msgstr "Naam van de ODBC-gegevensbron op uw systeem"
+
+#: AutoControls.src#STR_MYSQL_DATABASE_NAME.string.text
+msgid "Name of the MySQL database"
+msgstr "Naam van de MySQL-database"
+
+#: AutoControls.src#STR_ORACLE_DATABASE_NAME.string.text
+msgid "Name of the Oracle database"
+msgstr "Naam van de Oracle-database"
+
+#: AutoControls.src#STR_ADABAS_DATABASE_NAME.string.text
+msgid "Name of the Adabas D database"
+msgstr "Naam van de Adabas D-database"
+
+#: AutoControls.src#STR_MSACCESS_MDB_FILE.string.text
+msgid "Microsoft Access database file"
+msgstr "Microsoft Access-databasebestand"
+
+#: AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.string.text
+msgid ""
+"No more settings are necessary. To verify that the connection is working, "
+"click the '%test' button."
+msgstr ""
+"De instellingen zijn compleet. Teneinde vast te stellen dat de verbinding "
+"werkt, klikt u op de '%test' knop."
+
+#: AutoControls.src#STR_COMMONURL.string.text
+msgid "Datasource URL"
+msgstr "URL van gegevensbron"
+
+#: AutoControls.src#STR_HOSTNAME.string.text
+msgctxt "AutoControls.src#STR_HOSTNAME.string.text"
+msgid "~Host name"
+msgstr "~Hostnaam"
+
+#: AutoControls.src#STR_MOZILLA_PROFILE_NAME.string.text
+msgid "~Mozilla profile name"
+msgstr "~Mozilla-profielnaam"
+
+#: AutoControls.src#STR_THUNDERBIRD_PROFILE_NAME.string.text
+msgid "~Thunderbird profile name"
+msgstr "~Thunderbird-profielnaam"
+
+#: CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_NEWFOLDER.imagebutton.text
+msgctxt "CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_NEWFOLDER.imagebutton.text"
+msgid "-"
+msgstr "-"
+
+#: CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_NEWFOLDER.imagebutton.quickhelptext
+msgid "Create New Directory"
+msgstr "Nieuwe map maken"
+
+#: CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_UP.imagebutton.text
+msgctxt "CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_UP.imagebutton.text"
+msgid "-"
+msgstr "-"
+
+#: CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_UP.imagebutton.quickhelptext
+msgid "Up One Level"
+msgstr "Eén niveau hoger"
+
+#: CollectionView.src#DLG_COLLECTION_VIEW.FT_EXPLORERFILE_FILENAME.fixedtext.text
+msgid "File ~name:"
+msgstr "Bestands~naam:"
+
+#: CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_SAVE.pushbutton.text
+msgctxt "CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_SAVE.pushbutton.text"
+msgid "Save"
+msgstr "Opslaan"
+
+#: CollectionView.src#DLG_COLLECTION_VIEW.STR_PATHNAME.string.text
+msgid "~Path:"
+msgstr "~Pad:"
+
+#: CollectionView.src#DLG_COLLECTION_VIEW.modaldialog.text
+msgctxt "CollectionView.src#DLG_COLLECTION_VIEW.modaldialog.text"
+msgid "Save"
+msgstr "Opslaan"
+
+#: CollectionView.src#STR_NEW_FOLDER.string.text
+msgid "Folder"
+msgstr "Map"
+
+#: CollectionView.src#STR_ALREADYEXISTOVERWRITE.string.text
+msgid "The file already exists. Overwrite?"
+msgstr "Het bestand bestaat reeds. Vervangen?"
+
+#: ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR1.fixedline.text
+msgctxt "ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR1.fixedline.text"
+msgid "General"
+msgstr "Algemeen"
+
+#: ConnectionPage.src#PAGE_CONNECTION.FT_HOSTNAME.fixedtext.text
+msgctxt "ConnectionPage.src#PAGE_CONNECTION.FT_HOSTNAME.fixedtext.text"
+msgid "~Host name"
+msgstr "~Hostnaam"
+
+#: ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR2.fixedline.text
+msgctxt "ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR2.fixedline.text"
+msgid "User authentication"
+msgstr "Gebruikersverificatie"
+
+#: ConnectionPage.src#PAGE_CONNECTION.FT_USERNAME.fixedtext.text
+msgctxt "ConnectionPage.src#PAGE_CONNECTION.FT_USERNAME.fixedtext.text"
+msgid "~User name"
+msgstr "~Gebruikersnaam"
+
+#: ConnectionPage.src#PAGE_CONNECTION.CB_PASSWORD_REQUIRED.checkbox.text
+msgctxt "ConnectionPage.src#PAGE_CONNECTION.CB_PASSWORD_REQUIRED.checkbox.text"
+msgid "Password required"
+msgstr "Wachtwoord vereist"
+
+#: ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR3.fixedline.text
+msgid "JDBC properties"
+msgstr "JDBC eigenschappen"
+
+#: ConnectionPage.src#PAGE_CONNECTION.FT_JDBCDRIVERCLASS.fixedtext.text
+msgid "~JDBC driver class"
+msgstr "~JDBC-stuurprogrammaklasse"
+
+#: ConnectionPage.src#PAGE_CONNECTION.PB_TESTDRIVERCLASS.pushbutton.text
+msgid "Test Class"
+msgstr "Klasse testen"
+
+#: ConnectionPage.src#PAGE_CONNECTION.PB_TESTCONNECTION.pushbutton.text
+msgid "Test Connection"
+msgstr "Verbinding testen"
+
+#: ConnectionPage.src#STR_NO_ADABASE_DATASOURCES.string.text
+msgid "No Adabas D data sources were found on your system."
+msgstr "Er zijn geen Adabas D-gegevensbronnen gevonden op uw systeem."
+
+#: ConnectionPage.src#STR_CONNECTION_TEST.string.text
+msgid "Connection Test"
+msgstr "Verbindingstest"
+
+#: ConnectionPage.src#STR_CONNECTION_SUCCESS.string.text
+msgid "The connection was established successfully."
+msgstr "De verbinding is tot stand gebracht."
+
+#: ConnectionPage.src#STR_CONNECTION_NO_SUCCESS.string.text
+msgid "The connection could not be established."
+msgstr "De verbinding kon niet tot stand worden gebracht."
+
+#: ConnectionPage.src#STR_JDBCDRIVER_SUCCESS.string.text
+msgid "The JDBC driver was loaded successfully."
+msgstr "Het JDBC-stuurprogramma is geladen."
+
+#: ConnectionPage.src#STR_JDBCDRIVER_NO_SUCCESS.string.text
+msgid "The JDBC driver could not be loaded."
+msgstr "Het JDBC-stuurprogramma kan niet worden geladen."
+
+#: ConnectionPage.src#STR_MSACCESS_FILTERNAME.string.text
+msgid "MS Access file"
+msgstr "MS Access-bestand"
+
+#: ConnectionPage.src#STR_MSACCESS_2007_FILTERNAME.string.text
+msgid "MS Access 2007 file"
+msgstr "MS Access 2007-bestand"
+
+#: dbadmin.src#AUTO_USECATALOG_AUTO_Y_.CB_USECATALOG.checkbox.text
+msgid "Use catalog for file-based databases"
+msgstr "Catalogus gebruiken voor op bestanden gebaseerde databases"
+
+#: dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS_AUTO_Y_.FL_SEPARATOR1.fixedline.text
+msgctxt "dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS_AUTO_Y_.FL_SEPARATOR1.fixedline.text"
+msgid "Connection Settings"
+msgstr "Instellingen verbinding"
+
+#: dbadmin.src#AUTO_HOST_AND_PORT_AUTO_Y_.FT_HOSTNAME.fixedtext.text
+msgctxt "dbadmin.src#AUTO_HOST_AND_PORT_AUTO_Y_.FT_HOSTNAME.fixedtext.text"
+msgid "~Host name"
+msgstr "~Hostnaam"
+
+#: dbadmin.src#AUTO_HOST_AND_PORT_AUTO_Y_.FT_PORTNUMBER.fixedtext.text
+msgctxt "dbadmin.src#AUTO_HOST_AND_PORT_AUTO_Y_.FT_PORTNUMBER.fixedtext.text"
+msgid "~Port number"
+msgstr "~Poortnummer"
+
+#: dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_GENERAL.string.text
+msgid "Advanced Properties"
+msgstr "Geavanceerde eigenschappen"
+
+#: dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_ADVANCED.string.text
+msgid "Additional Settings"
+msgstr "Overige instellingen"
+
+#: dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_CONNECTION.string.text
+msgid "Connection settings"
+msgstr "Instellingen verbinding"
+
+#: dbadmin.src#DLG_DATABASE_ADMINISTRATION.tabdialog.text
+msgctxt "dbadmin.src#DLG_DATABASE_ADMINISTRATION.tabdialog.text"
+msgid "Database properties"
+msgstr "Database-eigenschappen"
+
+#: dbadmin.src#DLG_DATABASE_TYPE_CHANGE.modaldialog.text
+msgctxt "dbadmin.src#DLG_DATABASE_TYPE_CHANGE.modaldialog.text"
+msgid "Database properties"
+msgstr "Database-eigenschappen"
+
+#: dbadmin.src#PAGE_GENERAL.FT_GENERALHEADERTEXT.fixedtext.text
+msgid "Welcome to the %PRODUCTNAME Database Wizard"
+msgstr "Welkom bij de assistent Database van %PRODUCTNAME"
+
+#: dbadmin.src#PAGE_GENERAL.FT_GENERALHELPTEXT.fixedtext.text
+msgid ""
+"Use the Database Wizard to create a new database, open an existing database "
+"file, or connect to a database stored on a server."
+msgstr ""
+"Gebruik de assistent Database om een nieuwe database te maken, open een "
+"bestaand databasebestand, of open een database die op een server is "
+"opgeslagen."
+
+#: dbadmin.src#PAGE_GENERAL.FT_DATASOURCEHEADER.fixedtext.text
+msgid "What do you want to do?"
+msgstr "Wat wilt u doen?"
+
+#: dbadmin.src#PAGE_GENERAL.RB_CREATEDBDATABASE.radiobutton.text
+msgid "Create a n~ew database"
+msgstr "Een n~ieuwe database maken"
+
+#: dbadmin.src#PAGE_GENERAL.RB_OPENEXISTINGDOC.radiobutton.text
+msgid "Open an existing database ~file"
+msgstr "Een ~bestaand databasebestand openen"
+
+#: dbadmin.src#PAGE_GENERAL.FT_DOCLISTLABEL.fixedtext.text
+msgid "Recently used"
+msgstr "Onlangs gebruikt"
+
+#: dbadmin.src#PAGE_GENERAL.RB_GETEXISTINGDATABASE.radiobutton.text
+msgid "Connect to an e~xisting database"
+msgstr "Met een bestaande database ~verbinden"
+
+#: dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_PRE.fixedtext.text
+msgid ""
+"Select the type of database to which you want to establish a connection."
+msgstr ""
+"Het type database selecteren waarmee u een verbinding tot stand wilt "
+"brengen."
+
+#: dbadmin.src#PAGE_GENERAL.FT_DATATYPE.fixedtext.text
+msgid "Database ~type "
+msgstr "Database~type "
+
+#: dbadmin.src#PAGE_GENERAL.FT_DATATYPEAPPENDIX.fixedtext.text
+msgid "Database"
+msgstr "Database"
+
+#: dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.fixedtext.text
+msgid ""
+"On the following pages, you can make detailed settings for the connection.\n"
+"\n"
+"The new settings you make will overwrite your existing settings."
+msgstr ""
+"Op de volgenda pagina's kunt u in detail instellingen maken voor de "
+"verbinding.\n"
+"\n"
+"De nieuwe instellingen zullen uw bestaande instellingen vervangen."
+
+#: dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.string.text
+msgid "MySQL"
+msgstr "MySQL"
+
+#: dbadmin.src#PAGE_GENERAL.STR_PARENTTITLE.string.text
+msgid "Data Source Properties: #"
+msgstr "Eigenschappen gegevensbron: #"
+
+#: dbadmin.src#PAGE_GENERAL.STR_COULDNOTLOAD_ODBCLIB.string.text
+msgid ""
+"Could not load the program library #lib# or it is corrupted. The ODBC data "
+"source selection is not available."
+msgstr ""
+"De programmabibliotheek #lib# kan niet worden geladen of is defect. De "
+"functie ODBC gegevensbronnen kiezen is niet beschikbaar."
+
+#: dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.string.text
+msgid ""
+"This kind of data source is not supported on this platform.\n"
+"You are allowed to change the settings, but you probably will not be able to "
+"connect to the database."
+msgstr ""
+"Dit type gegevensbron wordt op dit platform niet ondersteund.\n"
+"U kunt wel de instellingen wijzigen, maar vermoedelijk geen verbinding met "
+"de database tot stand brengen."
+
+#: dbadmin.src#PAGE_GENERAL.tabpage.text
+msgctxt "dbadmin.src#PAGE_GENERAL.tabpage.text"
+msgid "General"
+msgstr "Algemeen"
+
+#: dbadmin.src#PAGE_DBASE.FL_SEPARATOR1.fixedline.text
+msgid "Optional settings"
+msgstr "Optionele instellingen"
+
+#: dbadmin.src#PAGE_DBASE.CB_SHOWDELETEDROWS.checkbox.text
+msgid "Display deleted records as well"
+msgstr "I~nactieve records weergeven"
+
+#: dbadmin.src#PAGE_DBASE.FT_SPECIAL_MESSAGE.fixedtext.text
+msgid ""
+"Note: When deleted, and thus inactive, records are  displayed, you will not "
+"be able to delete records from the data source."
+msgstr ""
+"N.B.: Wanneer verwijderde, en dus inactieve records worden getoond, zult u "
+"niet in staat zijn records te verwijderen uit de gegevensbron."
+
+#: dbadmin.src#PAGE_DBASE.PB_INDICIES.pushbutton.text
+msgid "Indexes..."
+msgstr "~Indices..."
+
+#: dbadmin.src#PAGE_ODBC.FL_SEPARATOR1.fixedline.text
+msgid "Optional Settings"
+msgstr "Optionele instellingen"
+
+#: dbadmin.src#PAGE_ODBC.FT_OPTIONS.fixedtext.text
+msgid "ODBC ~options"
+msgstr "~ODBC-opties"
+
+#: dbadmin.src#PAGE_ADABAS.FL_SEPARATOR1.fixedline.text
+msgctxt "dbadmin.src#PAGE_ADABAS.FL_SEPARATOR1.fixedline.text"
+msgid "Connection Settings"
+msgstr "Instellingen verbinding"
+
+#: dbadmin.src#PAGE_ADABAS.FT_HOSTNAME.fixedtext.text
+msgctxt "dbadmin.src#PAGE_ADABAS.FT_HOSTNAME.fixedtext.text"
+msgid "~Host name"
+msgstr "~Hostnaam"
+
+#: dbadmin.src#PAGE_ADABAS.FT_CACHE_SIZE.fixedtext.text
+msgid "Data ~buffer size (MB)"
+msgstr "Grootte gegevens~buffer (MB)"
+
+#: dbadmin.src#PAGE_ADABAS.FT_DATA_INCREMENT.fixedtext.text
+msgid "~Data increment (MB)"
+msgstr "~Gegevens increment (MB)"
+
+#: dbadmin.src#PAGE_ADABAS.FL_SEPARATOR2.fixedline.text
+msgid "Administration"
+msgstr "Beheer"
+
+#: dbadmin.src#PAGE_ADABAS.FT_CTRLUSERNAME.fixedtext.text
+msgid "Control ~user name"
+msgstr "~Gebruikersnaamcontrole"
+
+#: dbadmin.src#PAGE_ADABAS.FT_CTRLPASSWORD.fixedtext.text
+msgid "Control ~password"
+msgstr "Wachtwoord~controle"
+
+#: dbadmin.src#PAGE_ADABAS.CB_SHUTDB.checkbox.text
+msgid "~Shut down service when closing %PRODUCTNAME"
+msgstr "Service af~sluiten bij het sluiten van %PRODUCTNAME"
+
+#: dbadmin.src#PAGE_ADABAS.PB_STAT.pushbutton.text
+msgid "E~xtended..."
+msgstr "~Uitgebreid..."
+
+#: dbadmin.src#PAGE_MYSQL_JDBC.FT_JDBCDRIVERCLASS.fixedtext.text
+msgid "MySQL JDBC d~river class"
+msgstr "MySQL JDBC-stuu~rprogrammaklasse"
+
+#: dbadmin.src#PAGE_MYSQL_JDBC.PB_TESTDRIVERCLASS.pushbutton.text
+msgctxt "dbadmin.src#PAGE_MYSQL_JDBC.PB_TESTDRIVERCLASS.pushbutton.text"
+msgid "Test class"
+msgstr "Testklasse"
+
+#: dbadmin.src#PAGE_MYSQL_NATIVE.FL_SEPARATOR2.fixedline.text
+msgctxt "dbadmin.src#PAGE_MYSQL_NATIVE.FL_SEPARATOR2.fixedline.text"
+msgid "User authentication"
+msgstr "Gebruikersverificatie"
+
+#: dbadmin.src#PAGE_MYSQL_NATIVE.FT_USERNAME.fixedtext.text
+msgctxt "dbadmin.src#PAGE_MYSQL_NATIVE.FT_USERNAME.fixedtext.text"
+msgid "~User name"
+msgstr "~Gebruikersnaam"
+
+#: dbadmin.src#PAGE_MYSQL_NATIVE.CB_PASSWORD_REQUIRED.checkbox.text
+msgctxt "dbadmin.src#PAGE_MYSQL_NATIVE.CB_PASSWORD_REQUIRED.checkbox.text"
+msgid "Password required"
+msgstr "Wachtwoord vereist"
+
+#: dbadmin.src#PAGE_ORACLE_JDBC.FT_JDBCDRIVERCLASS.fixedtext.text
+msgid "Oracle JDBC d~river class"
+msgstr "Oracle JDBC-stuu~rprogrammaklasse"
+
+#: dbadmin.src#PAGE_ORACLE_JDBC.PB_TESTDRIVERCLASS.pushbutton.text
+msgctxt "dbadmin.src#PAGE_ORACLE_JDBC.PB_TESTDRIVERCLASS.pushbutton.text"
+msgid "Test class"
+msgstr "Testklasse"
+
+#: dbadmin.src#PAGE_LDAP.FL_SEPARATOR1.fixedline.text
+msgctxt "dbadmin.src#PAGE_LDAP.FL_SEPARATOR1.fixedline.text"
+msgid "Connection Settings"
+msgstr "Instellingen verbinding"
+
+#: dbadmin.src#PAGE_LDAP.FT_BASEDN.fixedtext.text
+msgid "~Base DN"
+msgstr "~Basis-DN"
+
+#: dbadmin.src#PAGE_LDAP.CB_USESSL.checkbox.text
+msgid "Use secure connection(SSL)"
+msgstr "Beveiligde verbinding(SSL) gebruiken"
+
+#: dbadmin.src#PAGE_LDAP.FT_PORTNUMBER.fixedtext.text
+msgctxt "dbadmin.src#PAGE_LDAP.FT_PORTNUMBER.fixedtext.text"
+msgid "~Port number"
+msgstr "~Poortnummer"
+
+#: dbadmin.src#PAGE_LDAP.FT_LDAPROWCOUNT.fixedtext.text
+msgid "Maximum number of ~records"
+msgstr "~Records (max.)"
+
+#: dbadmin.src#PAGE_USERDRIVER.FT_HOSTNAME.fixedtext.text
+msgid "~Hostname"
+msgstr "~Hostnaam"
+
+#: dbadmin.src#PAGE_USERDRIVER.FT_PORTNUMBER.fixedtext.text
+msgctxt "dbadmin.src#PAGE_USERDRIVER.FT_PORTNUMBER.fixedtext.text"
+msgid "~Port number"
+msgstr "~Poortnummer"
+
+#: dbadmin.src#PAGE_USERDRIVER.FT_OPTIONS.fixedtext.text
+msgid "~Driver settings"
+msgstr "~Stuurprogrammainstellingen"
+
+#: dbadmin.src#STR_ERR_USE_CONNECT_TO.string.text
+msgid ""
+"Please choose 'Connect to an existing database' to connect to an existing "
+"database instead."
+msgstr ""
+"Kies 'Verbinden met een bestaande database' om, in plaats daarvan, te "
+"verbinden met een bestaande database."
+
+#: dbadmin2.src#STR_ENTER_CONNECTION_PASSWORD.string.text
+msgid "A password is needed to connect to the data source \"$name$\"."
+msgstr ""
+"Er is een wachtwoord vereist om met de gegevensbron $name$ te verbinden."
+
+#: dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.string.text
+msgid ""
+"The directory\n"
+"\n"
+"$path$\n"
+"\n"
+"does not exist. Should it be created?"
+msgstr ""
+"De map\n"
+"\n"
+"$path$\n"
+"\n"
+"bestaat niet. Wilt u deze maken?"
+
+#: dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.string.text
+msgid "The directory $name$ could not be created."
+msgstr "De map $name$ kan niet worden gemaakt."
+
+#: dbadmin2.src#DLG_DOMAINPASSWORD.FT_PASSWORD.fixedline.text
+msgid "Please enter the ~password for the user 'DOMAIN'."
+msgstr "Voer het ~wachtwoord voor de gebruiker DOMAIN in."
+
+#: dbadmin2.src#DLG_DOMAINPASSWORD.modaldialog.text
+msgid "Convert Database"
+msgstr "Database converteren"
+
+#: dbadmin2.src#PAGE_TABLESUBSCRIPTION.FL_SEPARATOR1.fixedline.text
+msgid "Tables and table filter"
+msgstr "Tabellen en tabelfilter"
+
+#: dbadmin2.src#PAGE_TABLESUBSCRIPTION.FT_FILTER_EXPLANATION.fixedtext.text
+msgid "Mark the tables that should be visible for the applications."
+msgstr "De tabellen markeren die zichtbaar moeten zijn voor de toepassingen."
+
+#: dbadmin2.src#PAGE_TABLESUBSCRIPTION.tabpage.text
+msgid "Tables Filter"
+msgstr "Tabellenfilter"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_DBWIZARDTITLE.string.text
+msgctxt "dbadminsetup.src#DLG_DATABASE_WIZARD.STR_DBWIZARDTITLE.string.text"
+msgid "Database Wizard"
+msgstr "Assistent Database"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_INTROPAGE.string.text
+msgid "Select database"
+msgstr "Database selecteren"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_DBASE.string.text
+msgid "Set up dBASE connection"
+msgstr "dBASE-verbinding instellen"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_TEXT.string.text
+msgctxt "dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_TEXT.string.text"
+msgid "Set up a connection to text files"
+msgstr "Een verbinding naar tekstbestanden instellen"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MSACCESS.string.text
+msgid "Set up Microsoft Access connection"
+msgstr "Microsoft Access-verbinding instellen"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_LDAP.string.text
+msgid "Set up LDAP connection"
+msgstr "LDAP-verbinding instellen"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADABAS.string.text
+msgid "Set up Adabas D connection"
+msgstr "Adabas D verbinding instellen"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADO.string.text
+msgid "Set up ADO connection"
+msgstr "ADO verbinding instellen"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_JDBC.string.text
+msgid "Set up JDBC connection"
+msgstr "JDBC verbinding instellen"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ORACLE.string.text
+msgid "Set up Oracle database connection"
+msgstr "Oracle database verbinding instellen"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL.string.text
+msgid "Set up MySQL connection"
+msgstr "MySQL-verbinding instellen"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ODBC.string.text
+msgid "Set up ODBC connection"
+msgstr "ODBC-verbinding instellen"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_SPREADSHEET.string.text
+msgid "Set up Spreadsheet connection"
+msgstr "Werkbladverbinding instellen"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_AUTHENTIFICATION.string.text
+msgid "Set up user authentication"
+msgstr "Gebruikersverificatie instellen"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL_NATIVE.string.text
+msgid "Set up MySQL server data"
+msgstr "Instellen van servergegevens voor MySQL"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_FINAL.string.text
+msgid "Save and proceed"
+msgstr "Opslaan en verder gaan"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.modaldialog.text
+msgctxt "dbadminsetup.src#DLG_DATABASE_WIZARD.modaldialog.text"
+msgid "Database Wizard"
+msgstr "Assistent Database"
+
+#: dbadminsetup.src#STR_DATABASEDEFAULTNAME.string.text
+msgid "New Database"
+msgstr "Nieuwe Database"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HEADERTEXT.fixedtext.text
+msgid "Set up a connection to a MySQL database"
+msgstr "Een verbinding instellen naar een MySQL-database"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.fixedtext.text
+msgid ""
+"You can connect to a MySQL database using either ODBC or JDBC.\n"
+"Please contact your system administrator if you are unsure about the "
+"following settings."
+msgstr ""
+"U kunt een verbinding maken naar een MySQL-database via ODBC of JDBC.\n"
+"Neem contact op met uw systeembeheerder bij twijfel over de volgende "
+"instellingen."
+
+#: dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.fixedtext.text
+msgid "How do you want to connect to your MySQL database?"
+msgstr "Hoe wilt u de verbinding maken met uw MySQL-database?"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAODBC.radiobutton.text
+msgid "Connect using ODBC (Open Database Connectivity)"
+msgstr "Verbinden met ODBC (Open Database Connectivity)"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAJDBC.radiobutton.text
+msgid "Connect using JDBC (Java Database Connectivity)"
+msgstr "Verbinden met JDBC (Java Database Connectivity)"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIANATIVE.radiobutton.text
+msgid "Connect directly"
+msgstr "Direct verbinden"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHEADERTEXT.fixedtext.text
+msgid "Set up the user authentication"
+msgstr "Gebruikerverificatie instellen"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHELPTEXT.fixedtext.text
+msgid "Some databases require you to enter a user name."
+msgstr "Sommige databases vereisen dat u een gebruikersnaam invoert."
+
+#: dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_GENERALUSERNAME.fixedtext.text
+msgctxt "dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_GENERALUSERNAME.fixedtext.text"
+msgid "~User name"
+msgstr "~Gebruikersnaam"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.CB_GENERALPASSWORDREQUIRED.checkbox.text
+msgid "Password re~quired"
+msgstr "Wachtwoord v~ereist"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.PB_TESTCONNECTION.pushbutton.text
+msgid "~Test Connection"
+msgstr "Verbinding ~testen"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHEADER.fixedtext.text
+msgid "Decide how to proceed after saving the database"
+msgstr "Beslissen hoe verder te gaan na het opslaan van de database"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHELPTEXT.fixedtext.text
+msgid "Do you want the wizard to register the database in %PRODUCTNAME?"
+msgstr "Wilt u dat de assistent de database in %PRODUCTNAME registreert?"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_REGISTERDATASOURCE.radiobutton.text
+msgid "~Yes, register the database for me"
+msgstr "~Ja, de database registreren"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_DONTREGISTERDATASOURCE.radiobutton.text
+msgid "N~o, do not register the database"
+msgstr "~Nee, de database niet registreren"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_ADDITIONALSETTINGS.fixedtext.text
+msgid "After the database file has been saved, what do you want to do?"
+msgstr "Wat wilt u doen nadat het databasebestand is opgeslagen?"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_OPENAFTERWARDS.checkbox.text
+msgid "Open the database for editing"
+msgstr "Open de database voor bewerking"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_STARTTABLEWIZARD.checkbox.text
+msgid "Create tables using the table wizard"
+msgstr "Maak tabellen met behulp van de tabelassistent"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALTEXT.fixedtext.text
+msgid "Click 'Finish' to save the database."
+msgstr "Klik op 'Voltooien' om de database op te slaan."
+
+#: dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HEADERTEXT.string.text
+msgid "Set up connection to a MySQL database using JDBC"
+msgstr "Verbinding instellen naar een MySQL-database via JDBC"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.string.text
+msgid ""
+"Please enter the required information to connect to a MySQL database using "
+"JDBC. Note that a JDBC driver class must be installed on your system and "
+"registered with %PRODUCTNAME.\n"
+"Please contact your system administrator if you are unsure about the "
+"following settings."
+msgstr ""
+"De benodigde informatie invoeren voor het verbinden met een MySQL-database "
+"via JDBC. Merk op dat er een JDBC-stuurprogrammaklasse op uw systeem moet "
+"zijn geïnstalleerd, en geregistreerd in %PRODUCTNAME.\n"
+"Neem contact op met uw systeembeheerder bij twijfel over de volgende "
+"instellingen."
+
+#: dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.string.text
+msgid "MySQL JDBC d~river class:"
+msgstr "MySQL JDBC-stuu~rprogrammaklasse:"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DEFAULT.string.text
+msgctxt "dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DEFAULT.string.text"
+msgid "Default: 3306"
+msgstr "Standaard: 3306"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HEADER.fixedtext.text
+msgid "Set up connection to a MySQL database"
+msgstr "Verbinding naar een MySQL-database instellen"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HELP.fixedtext.text
+msgid "Please enter the required information to connect to a MySQL database."
+msgstr ""
+"Voer alstublieft de vereiste informatie in om met een MySQL-database te "
+"verbinden."
+
+#: dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HEADERTEXT.string.text
+msgid "Set up a connection to dBASE files"
+msgstr "Een verbinding instellen met dBASE-bestanden"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HELPTEXT.string.text
+msgid "Select the folder where the dBASE files are stored."
+msgstr "De map selecteren waar de dBASE-bestanden zijn opgeslagen."
+
+#: dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HEADERTEXT.string.text
+msgctxt "dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HEADERTEXT.string.text"
+msgid "Set up a connection to text files"
+msgstr "Een verbinding instellen naar tekstbestanden"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HELPTEXT.string.text
+msgid ""
+"Select the folder where the CSV (Comma Separated Values) text files are "
+"stored. %PRODUCTNAME Base will open these files in read-only mode."
+msgstr ""
+"De map selecteren waar de CSV (Comma Separated Values) tekstbestanden zijn "
+"opgeslagen. %PRODUCTNAME Base zal de bestanden in alleen-lezen modus openen."
+
+#: dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_PATH_OR_FILE.string.text
+msgid "Path to text files"
+msgstr "Pad naar tekstbestanden"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HEADERTEXT.string.text
+msgid "Set up a connection to a Microsoft Access database"
+msgstr "Een verbinding instellen met een Microsoft Access database"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HELPTEXT.string.text
+msgid "Please select the Microsoft Access file you want to access."
+msgstr "Het Microsoft Access bestand selecteren dat u wilt oproepen."
+
+#: dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HEADERTEXT.fixedtext.text
+msgid "Set up a connection to an LDAP directory"
+msgstr "Een verbinding instellen met een LDAP-directory"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.fixedtext.text
+msgid ""
+"Please enter the required information to connect to an LDAP directory.\n"
+"Please contact your system administrator if you are unsure about the "
+"following settings."
+msgstr ""
+"De benodigde informatie invoeren voor het verbinden met een LDAP-directory.\n"
+"Neem contact op met uw systeembeheerder bij twijfel over de volgende "
+"instellingen."
+
+#: dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.string.text
+msgid "Default: 389"
+msgstr "Standaard: 389"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_LDAP.CB_WIZ_USESSL.checkbox.text
+msgid "Use ~secure connection (SSL)"
+msgstr "Beveiligde verbinding (SSL) gebruiken"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HEADERTEXT.string.text
+msgid "Set up a connection to an Adabas D database"
+msgstr "Een verbinding instellen met een Adabas D database"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.string.text
+msgid ""
+"Enter the name of the Adabas D database you want to connect to.\n"
+"Click 'Browse...' to select an Adabas D database that is already registered "
+"in %PRODUCTNAME."
+msgstr ""
+"De naam invoeren van de Adabas D database waarmee u wilt verbinden.\n"
+"Op 'Bladeren...' klikken om een reeds %PRODUCTNAME geregistreerde Adabas D "
+"database te kiezen."
+
+#: dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.string.text
+msgid "Set up a connection to an ADO database"
+msgstr "Een verbinding instellen met een ADO database"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.string.text
+msgid ""
+"Please enter the URL of the ADO data source you want to connect to.\n"
+"Click 'Browse' to configure provider-specific settings.\n"
+"Please contact your system administrator if you are unsure about the "
+"following settings."
+msgstr ""
+"Voer de URL in van de ADO-gegevensbron waarmee u een verbinding wilt maken.\n"
+"Klik op 'Bladeren' om provider-specifieke instellingen te configureren.\n"
+"Neem contact op met uw systeembeheerder als u niet zeker bent van de "
+"volgende instellingen."
+
+#: dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.string.text
+msgid "Set up a connection to an ODBC database"
+msgstr "Een verbinding instellen met een ODBC-database"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.string.text
+msgid ""
+"Enter the name of the ODBC database you want to connect to.\n"
+"Click 'Browse...' to select an ODBC database that is already registered in %"
+"PRODUCTNAME.\n"
+"Please contact your system administrator if you are unsure about the "
+"following settings."
+msgstr ""
+"De naam invoeren van de ODBC-database waarmee u wilt verbinden.\n"
+"Op 'Bladeren...' klikken om een al in %PRODUCTNAME geregistreerde ODBC-"
+"database te selecteren.\n"
+"Neem contact op met uw systeembeheerder bij twijfel over de volgende "
+"instellingen."
+
+#: dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.string.text
+msgid "Set up a connection to a JDBC database"
+msgstr "Een verbinding instellen met een JDBC-database"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.string.text
+msgid ""
+"Please enter the required information to connect to a JDBC database.\n"
+"Please contact your system administrator if you are unsure about the "
+"following settings."
+msgstr ""
+"De benodigde informatie invoeren voor het verbinden met een JDBC-database.\n"
+"Neem contact op met uw systeembeheerder bij twijfel over de volgende "
+"instellingen."
+
+#: dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.string.text
+msgid "Set up a connection to an Oracle database"
+msgstr "Een verbinding instellen met een Oracle-database"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DEFAULT.string.text
+msgid "Default: 1521"
+msgstr "Standaard: 1521"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DRIVERCLASSTEXT.string.text
+msgid "Oracle JDBC ~driver class"
+msgstr "Oracle ~JDBC-stuurprogrammaklasse"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.string.text
+msgid ""
+"Please enter the required information to connect to an Oracle database.Note "
+"that a JDBC Driver Class must be installed on your system and registered "
+"with %PRODUCTNAME.\n"
+"Please contact your system administrator if you are unsure about the "
+"following settings."
+msgstr ""
+"De benodigde informatie invoeren voor het verbinden met een Oracle-database. "
+"Merk op dat er een JDBC-stuurprogrammaklasse op uw systeem moet zijn "
+"geïnstalleerd, en geregistreerd in %PRODUCTNAME.\n"
+"Neem contact op met uw systeembeheerder bij twijfel over de volgende "
+"instellingen."
+
+#: dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.string.text
+msgid "Set up a connection to spreadsheets"
+msgstr "Een verbinding instellen met werkbladen"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.string.text
+msgid ""
+"Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel "
+"workbook.\n"
+"%PRODUCTNAME will open this file in read-only mode."
+msgstr ""
+"Klik op 'Bladeren...' om een %PRODUCTNAME-werkblad of Microsoft Excel-"
+"werkmap te selecteren.\n"
+"%PRODUCTNAME opent dit bestand in alleen-lezen modus."
+
+#: dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.string.text
+msgid "~Location and file name"
+msgstr "~Locatie en bestandsnaam"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.CB_SPREADSHEETPASSWORDREQUIRED.checkbox.text
+msgid "~Password required"
+msgstr "~Wachtwoord vereist"
+
+#: dbfindex.src#DLG_DBASE_INDEXES.FT_TABLES.fixedtext.text
+msgid "~Table"
+msgstr "~Tabel"
+
+#: dbfindex.src#DLG_DBASE_INDEXES.FL_INDEXES.fixedline.text
+msgid "Assignment"
+msgstr "Toewijzing"
+
+#: dbfindex.src#DLG_DBASE_INDEXES.FT_TABLEINDEXES.fixedtext.text
+msgid "T~able indexes"
+msgstr "Tabel~lenregister"
+
+#: dbfindex.src#DLG_DBASE_INDEXES.FT_ALLINDEXES.fixedtext.text
+msgid "~Free indexes"
+msgstr "~Vrije indices"
+
+#: dbfindex.src#DLG_DBASE_INDEXES.modaldialog.text
+msgctxt "dbfindex.src#DLG_DBASE_INDEXES.modaldialog.text"
+msgid "Indexes"
+msgstr "Indices"
+
+#: directsql.src#DLG_DIRECTSQL.FL_SQL.fixedline.text
+msgid "SQL command"
+msgstr "SQL-opdracht"
+
+#: directsql.src#DLG_DIRECTSQL.FT_SQL.fixedtext.text
+msgid "Command to execute"
+msgstr "Uit te voeren opdracht"
+
+#: directsql.src#DLG_DIRECTSQL.PB_EXECUTE.pushbutton.text
+msgid "Execute"
+msgstr "Uitvoeren"
+
+#: directsql.src#DLG_DIRECTSQL.FT_HISTORY.fixedtext.text
+msgid "Previous commands"
+msgstr "Vorige opdrachten"
+
+#: directsql.src#DLG_DIRECTSQL.FL_STATUS.fixedline.text
+msgid "Status"
+msgstr "Status"
+
+#: directsql.src#DLG_DIRECTSQL.PB_CLOSE.pushbutton.text
+msgid "Close"
+msgstr "Sluiten"
+
+#: directsql.src#DLG_DIRECTSQL.modaldialog.text
+msgid "Execute SQL Statement"
+msgstr "SQL-instructie uitvoeren"
+
+#: directsql.src#STR_COMMAND_EXECUTED_SUCCESSFULLY.string.text
+msgid "Command successfully executed."
+msgstr "Opdracht is uitgevoerd."
+
+#: directsql.src#STR_DIRECTSQL_CONNECTIONLOST.string.text
+msgid ""
+"The connection to the database has been lost. This dialog will be closed."
+msgstr ""
+"Er bestaat geen verbinding met de database. Dit dialoogvenster wordt "
+"gesloten."
+
+#: dlgattr.src#DLG_ATTR.1.pushbutton.text
+msgid "Bac~k"
+msgstr "~Vorige"
+
+#: dlgattr.src#DLG_ATTR.TP_ATTR_CHAR.string.text
+msgid "Font"
+msgstr "Lettertype"
+
+#: dlgattr.src#DLG_ATTR.TP_ATTR_NUMBER.string.text
+msgid "Format"
+msgstr "Formaat"
+
+#: dlgattr.src#DLG_ATTR.TP_ATTR_ALIGN.string.text
+msgid "Alignment"
+msgstr "Uitlijning"
+
+#: dlgattr.src#DLG_ATTR.ST_ROW.string.text
+msgid "Table Format"
+msgstr "Tabelopmaak"
+
+#: dlgattr.src#DLG_ATTR.tabdialog.text
+msgid "Field Format"
+msgstr "Veldopmaak"
+
+#: dlgsave.src#DLG_SAVE_AS.FT_DESCRIPTION.fixedtext.text
+msgid "Please enter a name for the object to be created:"
+msgstr "Vul een naam in voor het object dat u wilt maken:"
+
+#: dlgsave.src#DLG_SAVE_AS.FT_CATALOG.fixedtext.text
+msgid "~Catalog"
+msgstr "~Catalogus"
+
+#: dlgsave.src#DLG_SAVE_AS.FT_SCHEMA.fixedtext.text
+msgid "~Schema"
+msgstr "~Schema"
+
+#: dlgsave.src#DLG_SAVE_AS.STR_TBL_LABEL.string.text
+msgid "~Table Name"
+msgstr "~Naam tabel"
+
+#: dlgsave.src#DLG_SAVE_AS.STR_VW_LABEL.string.text
+msgid "~Name of table view"
+msgstr "~Naam tabelweergave"
+
+#: dlgsave.src#DLG_SAVE_AS.STR_QRY_LABEL.string.text
+msgid "~Query name"
+msgstr "~Naam query"
+
+#: dlgsave.src#DLG_SAVE_AS.STR_TITLE_RENAME.string.text
+msgid "Rename to"
+msgstr "Hernoemen als"
+
+#: dlgsave.src#DLG_SAVE_AS.STR_TITLE_PASTE_AS.string.text
+msgid "Insert as"
+msgstr "Invoegen als"
+
+#: dlgsave.src#DLG_SAVE_AS.modaldialog.text
+msgid "Save As"
+msgstr "Opslaan als"
+
+#: dlgsize.src#DLG_ROWHEIGHT.FT_VALUE.fixedtext.text
+msgid "~Height"
+msgstr "H~oogte"
+
+#: dlgsize.src#DLG_ROWHEIGHT.CB_STANDARD.checkbox.text
+msgctxt "dlgsize.src#DLG_ROWHEIGHT.CB_STANDARD.checkbox.text"
+msgid "~Automatic"
+msgstr "~Automatisch"
+
+#: dlgsize.src#DLG_ROWHEIGHT.modaldialog.text
+msgid "Row Height"
+msgstr "Rijhoogte"
+
+#: dlgsize.src#DLG_COLWIDTH.FT_VALUE.fixedtext.text
+msgid "~Width"
+msgstr "~Breedte"
+
+#: dlgsize.src#DLG_COLWIDTH.CB_STANDARD.checkbox.text
+msgctxt "dlgsize.src#DLG_COLWIDTH.CB_STANDARD.checkbox.text"
+msgid "~Automatic"
+msgstr "~Automatisch"
+
+#: dlgsize.src#DLG_COLWIDTH.modaldialog.text
+msgid "Column Width"
+msgstr "Kolombreedte"
+
+#: dsselect.src#DLG_DATASOURCE_SELECTION.FT_DESCRIPTION.fixedtext.text
+msgid "Choose a data source:"
+msgstr "Kies een gegevensbron:"
+
+#: dsselect.src#DLG_DATASOURCE_SELECTION.PB_MANAGE.pushbutton.text
+msgid "Organize..."
+msgstr "Beheren..."
+
+#: dsselect.src#DLG_DATASOURCE_SELECTION.PB_CREATE.pushbutton.text
+msgid "Create..."
+msgstr "Maken..."
+
+#: dsselect.src#DLG_DATASOURCE_SELECTION.STR_LOCAL_DATASOURCES.string.text
+msgid "Local Databases"
+msgstr "lokale gegevensbronnen"
+
+#: dsselect.src#DLG_DATASOURCE_SELECTION.STR_DESCRIPTION2.string.text
+msgid "Choose a database"
+msgstr "Een database kiezen"
+
+#: dsselect.src#DLG_DATASOURCE_SELECTION.modaldialog.text
+msgid "Data Source"
+msgstr "Gegevensbron"
+
+#: indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_NEW.toolboxitem.text
+msgid "New Index"
+msgstr "Nieuwe index"
+
+#: indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_DROP.toolboxitem.text
+msgid "Delete Current Index"
+msgstr "Huidige index verwijderen"
+
+#: indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RENAME.toolboxitem.text
+msgid "Rename Current Index"
+msgstr "Naam huidige index wijzigen"
+
+#: indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_SAVE.toolboxitem.text
+msgid "Save Current Index"
+msgstr "Huidige index opslaan"
+
+#: indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RESET.toolboxitem.text
+msgid "Reset Current Index"
+msgstr "Huidige index herstellen"
+
+#: indexdialog.src#DLG_INDEXDESIGN.FL_INDEXDETAILS.fixedline.text
+msgid "Index details"
+msgstr "Indexdetails"
+
+#: indexdialog.src#DLG_INDEXDESIGN.FT_DESC_LABEL.fixedtext.text
+msgid "Index identifier:"
+msgstr "Indexidentificator:"
+
+#: indexdialog.src#DLG_INDEXDESIGN.CB_UNIQUE.checkbox.text
+msgid "~Unique"
+msgstr "~Uniek"
+
+#: indexdialog.src#DLG_INDEXDESIGN.FT_FIELDS.fixedtext.text
+msgid "Fields"
+msgstr "Velden"
+
+#: indexdialog.src#DLG_INDEXDESIGN.PB_CLOSE.pushbutton.text
+msgctxt "indexdialog.src#DLG_INDEXDESIGN.PB_CLOSE.pushbutton.text"
+msgid "~Close"
+msgstr "~Sluiten"
+
+#: indexdialog.src#DLG_INDEXDESIGN.modaldialog.text
+msgctxt "indexdialog.src#DLG_INDEXDESIGN.modaldialog.text"
+msgid "Indexes"
+msgstr "Indices"
+
+#: indexdialog.src#STR_TAB_INDEX_SORTORDER.string.text
+msgctxt "indexdialog.src#STR_TAB_INDEX_SORTORDER.string.text"
+msgid "Sort order"
+msgstr "Sorteervolgorde"
+
+#: indexdialog.src#STR_TAB_INDEX_FIELD.string.text
+msgid "Index field"
+msgstr "Indexveld"
+
+#: indexdialog.src#STR_ORDER_ASCENDING.string.text
+msgid "Ascending"
+msgstr "Oplopend"
+
+#: indexdialog.src#STR_ORDER_DESCENDING.string.text
+msgid "Descending"
+msgstr "Aflopend"
+
+#: indexdialog.src#STR_CONFIRM_DROP_INDEX.string.text
+msgid "Do you really want to delete the index '$name$'?"
+msgstr "Wilt u de index '$name$' werkelijk verwijderen?"
+
+#: indexdialog.src#STR_LOGICAL_INDEX_NAME.string.text
+msgid "index"
+msgstr "index"
+
+#: indexdialog.src#ERR_NEED_INDEX_FIELDS.errorbox.text
+msgid "The index must contain at least one field."
+msgstr "De index moet minstens één veld bevatten."
+
+#: indexdialog.src#ERR_NEED_INDEX_FIELDS.errorbox.title
+msgid "Save Index"
+msgstr "Index opslaan"
+
+#: indexdialog.src#QUERY_SAVE_CURRENT_INDEX.querybox.text
+msgid "Do you want to save the changes made to the current index?"
+msgstr "Wilt u de wijzigingen in de huidige index opslaan?"
+
+#: indexdialog.src#QUERY_SAVE_CURRENT_INDEX.querybox.title
+msgid "Exit Index Design"
+msgstr "Index-ontwerp afsluiten"
+
+#: indexdialog.src#STR_INDEX_NAME_ALREADY_USED.string.text
+msgid "There is already another index named \"$name$\"."
+msgstr "Er bestaat reeds een andere index met de naam \"$name$\"."
+
+#: indexdialog.src#STR_INDEXDESIGN_DOUBLE_COLUMN_NAME.string.text
+msgid ""
+"In an index definition, no table column may occur more than once. However, "
+"you have entered column \"$name$\" twice."
+msgstr ""
+"In een indexdefinitie mag elke tabelkolom hoogstens eenmaal voorkomen. U "
+"hebt echter de kolom \"$name$\" tweemaal gebruikt."
+
+#: paramdialog.src#DLG_PARAMETERS.FL_PARAMS.fixedline.text
+msgid "~Parameters"
+msgstr "~Parameters"
+
+#: paramdialog.src#DLG_PARAMETERS.FT_VALUE.fixedtext.text
+msgid "~Value"
+msgstr "~Waarde"
+
+#: paramdialog.src#DLG_PARAMETERS.BT_TRAVELNEXT.pushbutton.text
+msgid "~Next"
+msgstr "~Volgende"
+
+#: paramdialog.src#DLG_PARAMETERS.STR_COULD_NOT_CONVERT_PARAM.string.text
+msgid ""
+"The entry could not be converted to a valid value for the \"$name$\"column"
+msgstr ""
+"De ingevoerde gegevens kunnen niet worden geconverteerd naar een geldige "
+"waarde voor de kolom \"$name$\""
+
+#: paramdialog.src#DLG_PARAMETERS.modaldialog.text
+msgid "Parameter Input"
+msgstr "Parameter opgeven"
+
+#: queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.1.stringlist.text
+msgctxt "queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.1.stringlist.text"
+msgid "AND"
+msgstr "EN"
+
+#: queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.2.stringlist.text
+msgctxt "queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.2.stringlist.text"
+msgid "OR"
+msgstr "OF"
+
+#: queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.1.stringlist.text
+msgctxt "queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.1.stringlist.text"
+msgid "AND"
+msgstr "EN"
+
+#: queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.2.stringlist.text
+msgctxt "queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.2.stringlist.text"
+msgid "OR"
+msgstr "OF"
+
+#: queryfilter.src#DLG_FILTERCRIT.FT_WHEREFIELD.fixedtext.text
+msgctxt "queryfilter.src#DLG_FILTERCRIT.FT_WHEREFIELD.fixedtext.text"
+msgid "Field name"
+msgstr "Veldnaam"
+
+#: queryfilter.src#DLG_FILTERCRIT.FT_WHERECOMP.fixedtext.text
+msgid "Condition"
+msgstr "Voorwaarde"
+
+#: queryfilter.src#DLG_FILTERCRIT.FT_WHEREVALUE.fixedtext.text
+msgid "Value"
+msgstr "Waarde"
+
+#: queryfilter.src#DLG_FILTERCRIT.FT_WHEREOPER.fixedtext.text
+msgctxt "queryfilter.src#DLG_FILTERCRIT.FT_WHEREOPER.fixedtext.text"
+msgid "Operator"
+msgstr "Operator"
+
+#: queryfilter.src#DLG_FILTERCRIT.FL_FIELDS.fixedline.text
+msgid "Criteria"
+msgstr "Criteria"
+
+#: queryfilter.src#DLG_FILTERCRIT.STR_NOENTRY.string.text
+msgid "- none -"
+msgstr "- geen -"
+
+#: queryfilter.src#DLG_FILTERCRIT.STR_COMPARE_OPERATORS.string.text
+msgid "=;<>;<;<=;>;>=;like;not like;null;not null"
+msgstr "=;<>;<;<=;>;>=;gelijk;niet gelijk aan;leeg;niet leeg"
+
+#: queryfilter.src#DLG_FILTERCRIT.modaldialog.text
+msgid "Standard Filter"
+msgstr "Standaardfilter"
+
+#: queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.1.stringlist.text
+msgctxt "queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.1.stringlist.text"
+msgid "ascending"
+msgstr "oplopend"
+
+#: queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.2.stringlist.text
+msgctxt "queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.2.stringlist.text"
+msgid "descending"
+msgstr "aflopend"
+
+#: queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.1.stringlist.text
+msgctxt "queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.1.stringlist.text"
+msgid "ascending"
+msgstr "oplopend"
+
+#: queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.2.stringlist.text
+msgctxt "queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.2.stringlist.text"
+msgid "descending"
+msgstr "aflopend"
+
+#: queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.1.stringlist.text
+msgctxt "queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.1.stringlist.text"
+msgid "ascending"
+msgstr "oplopend"
+
+#: queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.2.stringlist.text
+msgctxt "queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.2.stringlist.text"
+msgid "descending"
+msgstr "aflopend"
+
+#: queryorder.src#DLG_ORDERCRIT.FT_ORDERFIELD.fixedtext.text
+msgctxt "queryorder.src#DLG_ORDERCRIT.FT_ORDERFIELD.fixedtext.text"
+msgid "Field name"
+msgstr "Veldnaam"
+
+#: queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER1.fixedtext.text
+msgctxt "queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER1.fixedtext.text"
+msgid "and then"
+msgstr "vervolgens"
+
+#: queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER2.fixedtext.text
+msgctxt "queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER2.fixedtext.text"
+msgid "and then"
+msgstr "vervolgens"
+
+#: queryorder.src#DLG_ORDERCRIT.FT_ORDEROPER.fixedtext.text
+msgctxt "queryorder.src#DLG_ORDERCRIT.FT_ORDEROPER.fixedtext.text"
+msgid "Operator"
+msgstr "Operator"
+
+#: queryorder.src#DLG_ORDERCRIT.FT_ORDERDIR.fixedtext.text
+msgid "Order"
+msgstr "Volgorde"
+
+#: queryorder.src#DLG_ORDERCRIT.FL_ORDER.fixedline.text
+msgctxt "queryorder.src#DLG_ORDERCRIT.FL_ORDER.fixedline.text"
+msgid "Sort order"
+msgstr "Sorteervolgorde"
+
+#: queryorder.src#DLG_ORDERCRIT.STR_NOENTRY.string.text
+msgid "<none>"
+msgstr "<geen>"
+
+#: queryorder.src#DLG_ORDERCRIT.modaldialog.text
+msgid "Sort Order"
+msgstr "Sorteervolgorde"
+
+#: RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_TABLES.fixedline.text
+msgid "Tables involved"
+msgstr "betrokken tabellen"
+
+#: RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_FIELDS.fixedline.text
+msgid "Fields involved"
+msgstr "betrokken velden"
+
+#: RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_UPD.fixedline.text
+msgid "Update options"
+msgstr "Bijwerkopties"
+
+#: RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_UPD.radiobutton.text
+msgctxt "RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_UPD.radiobutton.text"
+msgid "~No action"
+msgstr "~Geen handeling"
+
+#: RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD.radiobutton.text
+msgid "~Update cascade"
+msgstr "~Trapsgewijs bijwerken"
+
+#: RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_NULL.radiobutton.text
+msgctxt "RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_NULL.radiobutton.text"
+msgid "~Set null"
+msgstr "~Op nul instellen"
+
+#: RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_DEFAULT.radiobutton.text
+msgctxt "RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_DEFAULT.radiobutton.text"
+msgid "Set ~default"
+msgstr "Op ~standaard instellen"
+
+#: RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_DEL.fixedline.text
+msgid "Delete options"
+msgstr "Wisopties"
+
+#: RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_DEL.radiobutton.text
+msgctxt "RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_DEL.radiobutton.text"
+msgid "~No action"
+msgstr "G~een handeling"
+
+#: RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL.radiobutton.text
+msgid "Delete ~cascade"
+msgstr "~Trapsgewijs verwijderen"
+
+#: RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_NULL.radiobutton.text
+msgctxt "RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_NULL.radiobutton.text"
+msgid "~Set null"
+msgstr "Op n~ul instellen"
+
+#: RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_DEFAULT.radiobutton.text
+msgctxt "RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_DEFAULT.radiobutton.text"
+msgid "Set ~default"
+msgstr "Op standaard ~instellen"
+
+#: RelationDlg.src#DLG_REL_PROPERTIES.modaldialog.text
+msgid "Relations"
+msgstr "Relaties"
+
+#: sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FL_DETAILS.fixedline.text
+msgctxt "sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FL_DETAILS.fixedline.text"
+msgid "Details"
+msgstr "Details"
+
+#: sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_ERRORLIST.fixedtext.text
+msgid "Error ~list:"
+msgstr "Lijst met ~fouten:"
+
+#: sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_DESCRIPTION.fixedtext.text
+msgid "~Description:"
+msgstr "~Beschrijving:"
+
+#: sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_STATUS.string.text
+msgid "SQL Status"
+msgstr "SQL-status"
+
+#: sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_ERRORCODE.string.text
+msgid "Error code"
+msgstr "Foutcode"
+
+#: sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.modaldialog.text
+msgid "%PRODUCTNAME Base"
+msgstr "%PRODUCTNAME Base"
+
+#: sqlmessage.src#STR_EXPLAN_STRINGCONVERSION_ERROR.string.text
+msgid ""
+"A frequent reason for this error is an inappropriate character set setting "
+"for the language of your database. Check the setting by choosing Edit - "
+"Database - Properties."
+msgstr ""
+"Een veelvoorkomende reden voor deze fout is een verkeerde instelling van de "
+"tekenset voor de taal van uw database. Controleer de instellingen via menu "
+"Bewerken - Database - Eigenschappen."
+
+#: sqlmessage.src#STR_EXCEPTION_ERROR.string.text
+msgid "Error"
+msgstr "Fout"
+
+#: sqlmessage.src#STR_EXCEPTION_WARNING.string.text
+msgid "Warning"
+msgstr "Waarschuwing"
+
+#: sqlmessage.src#STR_EXCEPTION_INFO.string.text
+msgid "Information"
+msgstr "Informatie"
+
+#: sqlmessage.src#STR_EXCEPTION_DETAILS.string.text
+msgctxt "sqlmessage.src#STR_EXCEPTION_DETAILS.string.text"
+msgid "Details"
+msgstr "Details"
+
+#: textconnectionsettings.src#DLG_TEXT_CONNECTION_SETTINGS.modaldialog.text
+msgid "Text Connection Settings"
+msgstr "Tekst verbindingsinstellingen"
+
+#: UserAdmin.src#TAB_PAGE_USERADMIN.FL_USER.fixedline.text
+msgid "User selection"
+msgstr "Gebruikerselectie"
+
+#: UserAdmin.src#TAB_PAGE_USERADMIN.FT_USER.fixedtext.text
+msgid "Us~er:"
+msgstr "Gebr~uiker:"
+
+#: UserAdmin.src#TAB_PAGE_USERADMIN.PB_NEWUSER.pushbutton.text
+msgid "~Add User..."
+msgstr "Gebruiker ~toevoegen..."
+
+#: UserAdmin.src#TAB_PAGE_USERADMIN.PB_CHANGEPWD.pushbutton.text
+msgid "Change ~Password..."
+msgstr "~Wachtwoord wijzigen..."
+
+#: UserAdmin.src#TAB_PAGE_USERADMIN.PB_DELETEUSER.pushbutton.text
+msgid "~Delete User..."
+msgstr "~Gebruiker verwijderen..."
+
+#: UserAdmin.src#TAB_PAGE_USERADMIN.FL_TABLE_GRANTS.fixedline.text
+msgid "Access rights for selected user"
+msgstr "Toegangsrechten voor geselecteerde gebruiker"
+
+#: UserAdmin.src#QUERY_USERADMIN_DELETE_USER.querybox.text
+msgid "Do you really want to delete the user?"
+msgstr "Wilt u deze gebruikersnaam werkelijk verwijderen?"
+
+#: UserAdmin.src#STR_USERADMIN_NOT_AVAILABLE.string.text
+msgid "The database does not support user administration."
+msgstr "De database ondersteunt geen gebruikersbeheer."
+
+#: UserAdmin.src#DLG_PASSWORD.FL_USER.fixedline.text
+msgid "User \"$name$:  $\""
+msgstr "Gebruiker \"$name$:  $\""
+
+#: UserAdmin.src#DLG_PASSWORD.FT_OLDPASSWORD.fixedtext.text
+msgid "Old p~assword"
+msgstr "Oud w~achtwoord"
+
+#: UserAdmin.src#DLG_PASSWORD.FT_PASSWORD.fixedtext.text
+msgid "~Password"
+msgstr "~Wachtwoord"
+
+#: UserAdmin.src#DLG_PASSWORD.FT_PASSWORD_REPEAT.fixedtext.text
+msgid "~Confirm  password"
+msgstr "~Wachtwoord bevestigen"
+
+#: UserAdmin.src#DLG_PASSWORD.modaldialog.text
+msgid "Change Password"
+msgstr "Wachtwoord wijzigen"
+
+#: UserAdmin.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.string.text
+msgid "The passwords do not match. Please enter the password again."
+msgstr ""
+"De beide wachtwoorden komen niet overeen. Voer het wachtwoord nogmaals in."
+
+#: UserAdminDlg.src#DLG_DATABASE_USERADMIN.STR_PAGETITLE_USERADMIN.string.text
+msgid "User Settings"
+msgstr "Gebruikerinstellingen"
+
+#: UserAdminDlg.src#DLG_DATABASE_USERADMIN.tabdialog.text
+msgid "User administration"
+msgstr "Gebruikersbeheer"
+
+#: AutoControls_tmpl.hrc#AUTO_BROWSECONTROLGROUP__AUTO_X__AUTO_Y__AUTOPAGE_X__AUTO_HID__AUTO_HID2_.PB_AUTOBROWSEURL.pushbutton.text
+msgid "Browse"
+msgstr "Bladeren"
+
+#: AutoControls_tmpl.hrc#AUTO_NAMECONTROLGROUP_AUTO_Y__AUTO_HID_.FT_AUTODATABASENAME.fixedtext.text
+msgid "Database name"
+msgstr "Naam database"
+
+#: AutoControls_tmpl.hrc#AUTO_HOSTCONTROLGROUP_AUTO_Y__AUTO_HID_.FT_AUTOHOSTNAME.fixedtext.text
+msgid "Server"
+msgstr "Server"
+
+#: AutoControls_tmpl.hrc#AUTO_BASEDNCONTROLGROUP_AUTO_Y__AUTO_HID_.FT_AUTOBASEDN.fixedtext.text
+msgid "Base ~DN"
+msgstr "Basis-~DN"
+
+#: AutoControls_tmpl.hrc#AUTO_PORTCONTROLGROUP_AUTO_Y__AUTO_HID_.FT_AUTOPORTNUMBER.fixedtext.text
+msgctxt "AutoControls_tmpl.hrc#AUTO_PORTCONTROLGROUP_AUTO_Y__AUTO_HID_.FT_AUTOPORTNUMBER.fixedtext.text"
+msgid "~Port number"
+msgstr "~Poortnummer"
+
+#: AutoControls_tmpl.hrc#AUTO_CHARSET__AUTO_Y__AUTOPAGE_X__.FL_DATACONVERT.fixedline.text
+msgid "Data conversion"
+msgstr "Gegevensconversie"
+
+#: AutoControls_tmpl.hrc#AUTO_CHARSET__AUTO_Y__AUTOPAGE_X__.FT_CHARSET.fixedtext.text
+msgid "~Character set"
+msgstr "~Tekenset"
+
+#: AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP_AUTO_Y_AUTOPAGE_X_.FT_AUTOEXTENSIONHEADER.fixedtext.text
+msgid "Specify the type of files you want to access"
+msgstr "Specificeer het type bestand dat u wilt openen"
+
+#: AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP_AUTO_Y_AUTOPAGE_X_.RB_AUTOACCESSCTEXTFILES.radiobutton.text
+msgid "Plain text files (*.txt)"
+msgstr "Plain text-bestanden (*.txt)"
+
+#: AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP_AUTO_Y_AUTOPAGE_X_.RB_AUTOACCESSCCSVFILES.radiobutton.text
+msgid "'Comma separated value' files (*.csv)"
+msgstr "'Comma separated value'-bestanden (*.csv)"
+
+#: AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP_AUTO_Y_AUTOPAGE_X_.RB_AUTOACCESSOTHERS.radiobutton.text
+msgid "Custom:"
+msgstr "Aangepast:"
+
+#: AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP_AUTO_Y_AUTOPAGE_X_.FT_AUTOOWNEXTENSIONAPPENDIX.fixedtext.text
+msgid "Custom: *.abc"
+msgstr "Aangepast: *.abc"
+
+#: AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP_AUTO_Y_AUTOPAGE_X_.FL_AUTOSEPARATOR2.fixedline.text
+msgid "Row Format"
+msgstr "Regelindeling"
+
+#: AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP_AUTO_Y_AUTOPAGE_X_.FT_AUTOFIELDSEPARATOR.fixedtext.text
+msgid "Field separator"
+msgstr "Veldscheidingsteken"
+
+#: AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP_AUTO_Y_AUTOPAGE_X_.FT_AUTOTEXTSEPARATOR.fixedtext.text
+msgid "Text separator"
+msgstr "Tekstscheidingsteken"
+
+#: AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP_AUTO_Y_AUTOPAGE_X_.FT_AUTODECIMALSEPARATOR.fixedtext.text
+msgid "Decimal separator"
+msgstr "Decimaalteken"
+
+#: AutoControls_tmpl.hrc#FT_AUTOTHOUSANDSSEPARATOR.fixedtext.text
+msgid "Thousands separator"
+msgstr "Scheidingsteken voor duizendtallen"
+
+#: AutoControls_tmpl.hrc#CB_AUTOHEADER.checkbox.text
+msgid "~Text contains headers"
+msgstr "~Tekst bevat koptekst"
+
+#: AutoControls_tmpl.hrc#STR_AUTOTEXT_FIELD_SEP_NONE.string.text
+msgid "{None}"
+msgstr "{Geen}"
+
+#: AutoControls_tmpl.hrc#STR_AUTOFIELDSEPARATORLIST.string.text
+msgid ";\t59\t,\t44\t:\t58\t{Tab}\t9\t{Space}\t32"
+msgstr ";\t59\t,\t44\t:\t58\t{Tab}\t9\t{Spatie}\t32"
+
+#: AutoControls_tmpl.hrc#STR_AUTODELIMITER_MISSING.string.text
+msgid "#1 must be set."
+msgstr "#1 moet ingesteld zijn."
+
+#: AutoControls_tmpl.hrc#STR_AUTODELIMITER_MUST_DIFFER.string.text
+msgid "#1 and #2 must be different."
+msgstr "#1 en #2 moeten verschillend zijn."
+
+#: AutoControls_tmpl.hrc#STR_AUTONO_WILDCARDS.string.text
+msgid "Wildcards such as ?,* are not allowed in #1."
+msgstr "Jokertekens zoals ?,* zijn in #1 niet toegestaan."
+
+#: AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP_AUTO_Y__AUTO_HID__AUTO_HID2_.FT_AUTOJDBCDRIVERCLASS.fixedtext.text
+msgid "JDBC d~river class"
+msgstr "JDBC-stuu~rprogrammaklasse"
+
+#: AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP_AUTO_Y__AUTO_HID__AUTO_HID2_.PB_AUTOTESTDRIVERCLASS.pushbutton.text
+msgctxt "AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP_AUTO_Y__AUTO_HID__AUTO_HID2_.PB_AUTOTESTDRIVERCLASS.pushbutton.text"
+msgid "Test class"
+msgstr "Testklasse"
+
+#: AutoControls_tmpl.hrc#AUTO_SOCKETCONTROLGROUP_AUTO_Y_.FT_SOCKET.fixedtext.text
+msgid "Socket"
+msgstr "Socket"
+
+#~ msgid ""
+#~ "To open a report you require the extension Sun™ Report Builder.\n"
+#~ "\n"
+#~ "Click 'Download...' to download and install the extension."
+#~ msgstr ""
+#~ "U hebt de extensie Sun™ Report Builder nodig om een rapport te kunnen "
+#~ "openen.\n"
+#~ "\n"
+#~ "Klik op 'Downloaden...' om de extensie te downloaden en te installeren."
+
+#~ msgid "~Download..."
+#~ msgstr "~Downloaden..."
+
+#~ msgid "%PRODUCTNAME %PRODUCTVERSION"
+#~ msgstr "%PRODUCTNAME %PRODUCTVERSION"
+
+#~ msgid "Do you want to delete all selected items?"
+#~ msgstr "Wilt u alle geselecteerde items verwijderen?"
+
+#~ msgid "Windows address book"
+#~ msgstr "Windows adresboek"
+
+#~ msgid "MS Outlook"
+#~ msgstr "MS Outlook"
+
+#~ msgid "Mozilla address book"
+#~ msgstr "Mozilla adresboek"
+
+#~ msgid "Thunderbird address book"
+#~ msgstr "Thunderbird-adresboek"
+
+#~ msgid "Evolution address book"
+#~ msgstr "Evolution adresboek"
+
+#~ msgid "LDAP address book"
+#~ msgstr "LDAP-adresboek"
+
+#~ msgid "(Connection is read-only)"
+#~ msgstr "(verbinding is alleen-lezen)"
+
+#~ msgid "(Not supported by this connection)"
+#~ msgstr "(niet ondersteund door deze verbinding)"
+"X-Accelerator-Marker: ~\n"
+
+#: query.src#STR_QUERY_UNDO_TABWINSHOW.string.text
+msgid "Add Table Window"
+msgstr "Tabelvenster toevoegen"
+
+#: query.src#STR_QUERY_UNDO_MOVETABWIN.string.text
+msgid "Move table window"
+msgstr "Tabelvenster verplaatsen"
+
+#: query.src#STR_QUERY_UNDO_INSERTCONNECTION.string.text
+msgid "Insert Join"
+msgstr "Join invoegen"
+
+#: query.src#STR_QUERY_UNDO_REMOVECONNECTION.string.text
+msgid "Delete Join"
+msgstr "Join verwijderen"
+
+#: query.src#STR_QUERY_UNDO_SIZETABWIN.string.text
+msgid "Resize table window"
+msgstr "Tabelvenster - grootte wijzigen"
+
+#: query.src#STR_QUERY_UNDO_TABFIELDDELETE.string.text
+msgid "Delete Column"
+msgstr "Kolom verwijderen"
+
+#: query.src#STR_QUERY_UNDO_TABFIELDMOVED.string.text
+msgid "Move column"
+msgstr "Kolumn verplaatsen"
+
+#: query.src#STR_QUERY_UNDO_TABFIELDCREATE.string.text
+msgid "Add Column"
+msgstr "Kolom toevoegen"
+
+#: query.src#RID_STR_TABLE_DOESNT_EXIST.string.text
+msgid "Invalid expression, table '$name$' does not exist."
+msgstr "De expressie is ongeldig omdat de tabel $name$ niet bestaat."
+
+#: query.src#RID_STR_FIELD_DOESNT_EXIST.string.text
+msgid "Invalid expression, field name '$name$' does not exist."
+msgstr "De expressie is ongeldig, de veldnaam '$name$' bestaat niet."
+
+#: query.src#RID_STR_TOMUCHTABLES.string.text
+msgid ""
+"The query covers #num# tables. The selected database type, however, can only "
+"process a maximum of #maxnum# table(s) per statement."
+msgstr ""
+"Query bevat #num# tabellen. Het geselecteerde databasetype kan echter "
+"maximaal #maxnum# tabel(len) per instructie verwerken."
+
+#: query.src#STR_QUERY_UNDO_TABWINDELETE.string.text
+msgid "Delete Table Window"
+msgstr "Tabelvenster verwijderen"
+
+#: query.src#STR_QUERY_UNDO_MODIFY_CELL.string.text
+msgid "Edit Column Description"
+msgstr "Kolombeschrijving bewerken"
+
+#: query.src#STR_QUERY_UNDO_SIZE_COLUMN.string.text
+msgid "Adjust column width"
+msgstr "Kolombreedte aanpassen"
+
+#: query.src#STR_QUERY_SORTTEXT.string.text
+msgid "(not sorted);ascending;descending"
+msgstr "(niet gesorteerd);oplopend;aflopend"
+
+#: query.src#STR_QUERY_FUNCTIONS.string.text
+msgid "(no function);Group"
+msgstr "(geen functie);Groeperen"
+
+#: query.src#STR_QUERY_NOTABLE.string.text
+msgid "(no table)"
+msgstr "(geen tabel)"
+
+#: query.src#STR_QRY_ORDERBY_UNRELATED.string.text
+msgid "The database only supports sorting for visible fields."
+msgstr "De database ondersteunt alleen de sortering voor zichtbare velden."
+
+#: query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_FUNCTION.menuitem.text
+msgid "Functions"
+msgstr "Functies"
+
+#: query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_TABLENAME.menuitem.text
+msgid "Table Name"
+msgstr "Tabelnaam"
+
+#: query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_ALIASNAME.menuitem.text
+msgid "Alias"
+msgstr "Alias"
+
+#: query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_DISTINCT.menuitem.text
+msgid "Distinct Values"
+msgstr "Duidelijke waarden"
+
+#: query.src#STR_QUERY_HANDLETEXT.string.text
+msgid "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
+msgstr "Veld;Alias;Tabel;Volgorde;Zichtbaar;Functie;Criterium;of;of"
+
+#: query.src#STR_QRY_TOO_MANY_COLUMNS.string.text
+msgid "There are too many columns."
+msgstr "Er zijn teveel kolommen."
+
+#: query.src#ERR_QRY_CRITERIA_ON_ASTERISK.errorbox.text
+msgid "A condition cannot be applied to field [*]"
+msgstr "Een voorwaarde voor veld [*] is niet mogelijk"
+
+#: query.src#STR_QRY_TOO_LONG_STATEMENT.string.text
+msgid "The SQL statement created is too long."
+msgstr "Deze SQL-instructie is te lang."
+
+#: query.src#STR_QRY_TOOCOMPLEX.string.text
+msgid "Query is too complex"
+msgstr "De query is te complex"
+
+#: query.src#STR_QRY_NOSELECT.string.text
+msgid "Nothing has been selected."
+msgstr "De selectie ontbreekt."
+
+#: query.src#STR_QRY_TOOMANYCOND.string.text
+msgid "Too many search criteria"
+msgstr "Teveel zoekcriteria"
+
+#: query.src#STR_QRY_SYNTAX.string.text
+msgid "SQL syntax error"
+msgstr "SQL-syntaxisfout"
+
+#: query.src#ERR_QRY_ORDERBY_ON_ASTERISK.errorbox.text
+msgid "[*] cannot be used as a sort criterion."
+msgstr "Er kan niet worden gesorteerd naar [*]."
+
+#: query.src#STR_QRY_TOO_MANY_TABLES.string.text
+msgid "There are too many tables."
+msgstr "Er zijn teveel tabellen."
+
+#: query.src#STR_QRY_NATIVE.string.text
+msgid ""
+"The statement will not be applied when querying in the SQL dialect of the "
+"database."
+msgstr ""
+"Bij een query in SQL-dialect van database wordt instructie niet overgenomen."
+
+#: query.src#ERR_QRY_AMB_FIELD.errorbox.text
+msgid "Field name not found or not unique"
+msgstr "Veldnaam niet gevonden of niet duidelijk"
+
+#: query.src#STR_QRY_ILLEGAL_JOIN.string.text
+msgid "Join could not be processed"
+msgstr "Join kan niet tot stand worden gebracht"
+
+#: query.src#STR_SVT_SQL_SYNTAX_ERROR.string.text
+msgid "Syntax error in SQL statement"
+msgstr "Foutieve syntaxis in SQL-instructie"
+
+#: query.src#STR_QUERYDESIGN_NO_VIEW_SUPPORT.string.text
+msgid "This database does not support table views."
+msgstr "Deze database ondersteunt geen tabelweergaven."
+
+#: query.src#STR_NO_ALTER_VIEW_SUPPORT.string.text
+msgid "This database does not support altering of existing table views."
+msgstr "Deze database ondersteunt geen wijziging van bestaande tabelweergaven."
+
+#: query.src#STR_QUERYDESIGN_NO_VIEW_ASK.string.text
+msgid "Do you want to create a query instead?"
+msgstr "Wilt u in plaats daarvan een query definiëren?"
+
+#: query.src#ERR_QRY_NOSTATEMENT.errorbox.text
+msgid "No query could be created."
+msgstr "Er kon geen query worden gemaakt."
+
+#: query.src#ERR_QRY_NOCRITERIA.errorbox.text
+msgid "No query could be created because no fields were selected."
+msgstr ""
+"Er kan geen query worden gemaakt omdat er geen velden zijn geselecteerd."
+
+#: query.src#STR_DATASOURCE_DELETED.string.text
+msgid ""
+"The corresponding data source has been deleted. Therefore, data relevant to "
+"that data source cannot be saved."
+msgstr ""
+"De bijbehorende gegevensbron is verwijderd. De desbetreffende gegevens "
+"kunnen niet worden opgeslagen."
+
+#: query.src#STR_QRY_COLUMN_NOT_FOUND.string.text
+msgid "The column '$name$' is unknown."
+msgstr "De kolom $name$ is onbekend."
+
+#: query.src#STR_QRY_JOIN_COLUMN_COMPARE.string.text
+msgid "Columns can only be compared using '='."
+msgstr "Kolommen kunnen alleen vergeleken worden met behulp van '='."
+
+#: query.src#STR_QRY_LIKE_LEFT_NO_COLUMN.string.text
+msgid "You must use a column name before 'LIKE'."
+msgstr ""
+"Aan de linkerkant van een LIKE-instructie is alleen een kolomnaam "
+"toegestaan."
+
+#: query.src#STR_QRY_CHECK_CASESENSITIVE.string.text
+msgid ""
+"The column could not be found. Please note that the database is case-"
+"sensitive."
+msgstr "Controleer of u de juiste kleine en hoofdletters opgegeven hebt."
+
+#: query.src#STR_QUERYDESIGN.string.text
+msgid " - %PRODUCTNAME Base: Query Design"
+msgstr " - %PRODUCTNAME Base: Queryontwerp"
+
+#: query.src#STR_VIEWDESIGN.string.text
+msgid " - %PRODUCTNAME Base: View Design"
+msgstr " - %PRODUCTNAME Base: Ontwerp weergeven"
+
+#: query.src#STR_QUERY_SAVEMODIFIED.string.text
+msgid ""
+"$object$ has been changed.\n"
+"Do you want to save the changes?"
+msgstr ""
+"$object$ is gewijzigd.\n"
+"Wilt u de wijzigingen opslaan?"
+
+#: query.src#STR_ERROR_PARSING_STATEMENT.string.text
+msgid "$object$ is based on an SQL command which could not be parsed."
+msgstr "$object$ is gebaseerd op een SQL-opdracht die niet geparsed kon worden."
+
+#: query.src#STR_INFO_OPENING_IN_SQL_VIEW.string.text
+msgid "$object$ will be opened in SQL view."
+msgstr "$object$ zal worden geopend in SQL-weergave."
+
+#: query.src#RSC_QUERY_OBJECT_TYPE.1.string.text
+msgid "The table view"
+msgstr "De tabelweergave"
+
+#: query.src#RSC_QUERY_OBJECT_TYPE.2.string.text
+msgid "The query"
+msgstr "De query"
+
+#: query.src#RSC_QUERY_OBJECT_TYPE.3.string.text
+msgid "The SQL statement"
+msgstr "De SQL-instructie"
+
+#: query.src#STR_STATEMENT_WITHOUT_RESULT_SET.string.text
+msgid ""
+"The query does not create a result set, and thus cannot be part of another "
+"query."
+msgstr ""
+"De query maakt geen resultatenset en kan daarom geen deel uitmaken van een "
+"andere query."
+
+#: query.src#STR_NO_DATASOURCE_OR_CONNECTION.string.text
+msgid ""
+"Both the ActiveConnection and the DataSourceName parameter are missing or "
+"wrong - cannot initialize the query designer."
+msgstr ""
+"Beide parameters ActiveConnection en DataSourceName ontbreken of zijn "
+"foutief - de queryontwerper kan niet worden geïnitialiseerd."
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.fixedline.text
+msgid "Options"
+msgstr "Opties"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.fixedtext.text
+msgid "~Type"
+msgstr "~Type"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.1.stringlist.text
+msgid "Inner join"
+msgstr "Inner join"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.2.stringlist.text
+msgid "Left join"
+msgstr "Left join"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.3.stringlist.text
+msgid "Right join"
+msgstr "Right join"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.4.stringlist.text
+msgid "Full (outer) join"
+msgstr "Full (outer) join"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.5.stringlist.text
+msgid "Cross join"
+msgstr "Cross join"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.checkbox.text
+msgid "Natural"
+msgstr "Natuurlijk"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.fixedline.text
+msgid "Tables involved"
+msgstr "betrokken tabellen"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.fixedline.text
+msgid "Fields involved"
+msgstr "betrokken velden"
+
+#: querydlg.src#DLG_QRY_JOIN.modaldialog.text
+msgid "Join Properties"
+msgstr "Join-eigenschappen"
+
+#: querydlg.src#STR_JOIN_TYPE_HINT.string.text
+msgid "Please note that some databases may not support this join type."
+msgstr "Merk op dat niet alle databases dit type join ondersteunen."
+
+#: querydlg.src#STR_QUERY_INNER_JOIN.string.text
+msgid ""
+"Includes only records for which the contents of the related fields of both "
+"tables are identical."
+msgstr ""
+"Bevat alleen records waarbij de inhoud van de gekoppelde velden in beide "
+"tabellen gelijk is."
+
+#: querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.string.text
+msgid ""
+"Contains ALL records from table '%1' but only records from table '%2' where "
+"the values in the related fields are matching."
+msgstr ""
+"Bevat ALLE records uit '%1' en alleen de records uit '%2' waarbij de inhoud "
+"van de gekoppelde velden in beide tabellen gelijk is."
+
+#: querydlg.src#STR_QUERY_FULL_JOIN.string.text
+msgid "Contains ALL records from '%1' and from '%2'."
+msgstr "Bevat ALLE records uit '%1' en '%2'."
+
+#: querydlg.src#STR_QUERY_CROSS_JOIN.string.text
+msgid "Contains the cartesian product of ALL records from '%1' and from '%2'."
+msgstr "Bevat het cartesiaanse product van ALLE records van '%1' en van '%2'."
+
+#: querydlg.src#STR_QUERY_NATURAL_JOIN.string.text
+msgid ""
+"Contains only one column for each pair of equally-named columns from '%1' "
+"and from '%2'."
+msgstr ""
+"Bevat slechts één kolom voor ieder paar gelijkgenaamde kolommen uit '%1' en "
+"uit '%2'."
+
+#~ msgid "TRUE"
+#~ msgstr "WAAR"
+
+#~ msgid "FALSE"
+#~ msgstr "ONWAAR"
+"X-Accelerator-Marker: ~\n"
+
+#: app.src#RID_STR_NEW_FORM.string.text
+msgid "Create Form in Design View..."
+msgstr "Formulier maken in ontwerpweergave..."
+
+#: app.src#RID_STR_NEW_FORM_AUTO.string.text
+msgid "Use Wizard to Create Form..."
+msgstr "Formulier maken met assistent..."
+
+#: app.src#RID_STR_NEW_REPORT_AUTO.string.text
+msgid "Use Wizard to Create Report..."
+msgstr "Rapport maken met assistent..."
+
+#: app.src#RID_STR_NEW_REPORT.string.text
+msgid "Create Report in Design View..."
+msgstr "Rapport maken in ontwerpweergave..."
+
+#: app.src#RID_STR_NEW_QUERY.string.text
+msgid "Create Query in Design View..."
+msgstr "Query maken in ontwerpweergave..."
+
+#: app.src#RID_STR_NEW_QUERY_SQL.string.text
+msgid "Create Query in SQL View..."
+msgstr "Query maken in SQL-weergave..."
+
+#: app.src#RID_STR_NEW_QUERY_AUTO.string.text
+msgid "Use Wizard to Create Query..."
+msgstr "Query maken met assistent..."
+
+#: app.src#RID_STR_NEW_TABLE.string.text
+msgid "Create Table in Design View..."
+msgstr "Tabel maken in ontwerpweergave..."
+
+#: app.src#RID_STR_NEW_TABLE_AUTO.string.text
+msgid "Use Wizard to Create Table..."
+msgstr "Tabel maken met assistent..."
+
+#: app.src#RID_STR_NEW_VIEW.string.text
+msgid "Create View..."
+msgstr "Weergave maken..."
+
+#: app.src#RID_STR_FORMS_CONTAINER.string.text
+msgid "Forms"
+msgstr "Formulieren"
+
+#: app.src#RID_STR_REPORTS_CONTAINER.string.text
+msgid "Reports"
+msgstr "Rapporten"
+
+#: app.src#RID_MENU_APP_NEW.SID_APP_NEW_FORM.menuitem.text
+msgid "Form..."
+msgstr "Formulier..."
+
+#: app.src#RID_MENU_APP_NEW.SID_APP_NEW_REPORT.menuitem.text
+msgctxt "app.src#RID_MENU_APP_NEW.SID_APP_NEW_REPORT.menuitem.text"
+msgid "Report..."
+msgstr "Rapport..."
+
+#: app.src#RID_MENU_APP_NEW.SID_DB_NEW_VIEW_SQL.menuitem.text
+msgid "View (Simple)..."
+msgstr "Weergave (eenvoudig)..."
+
+#: app.src#RID_MENU_APP_EDIT.SID_DB_APP_PASTE_SPECIAL.menuitem.text
+msgid "Paste Special..."
+msgstr "Plakken speciaal..."
+
+#: app.src#RID_MENU_APP_EDIT.SID_DB_APP_DELETE.menuitem.text
+msgid "Delete"
+msgstr "Verwijderen"
+
+#: app.src#RID_MENU_APP_EDIT.SID_DB_APP_RENAME.menuitem.text
+msgid "Rename"
+msgstr "Naam wijzigen"
+
+#: app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT.menuitem.text
+msgid "Edit"
+msgstr "Bewerken"
+
+#: app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT_SQL_VIEW.menuitem.text
+msgid "Edit in SQL View..."
+msgstr "In SQL-weergave bewerken..."
+
+#: app.src#RID_MENU_APP_EDIT.SID_DB_APP_OPEN.menuitem.text
+msgid "Open"
+msgstr "Openen"
+
+#: app.src#RID_MENU_APP_EDIT.SID_DB_APP_CONVERTTOVIEW.menuitem.text
+msgid "Create as View"
+msgstr "Maken als weergave"
+
+#: app.src#RID_MENU_APP_EDIT.SID_FORM_CREATE_REPWIZ_PRE_SEL.menuitem.text
+msgid "Form Wizard..."
+msgstr "Assistent Formulier..."
+
+#: app.src#RID_MENU_APP_EDIT.SID_APP_NEW_REPORT_PRE_SEL.menuitem.text
+msgctxt "app.src#RID_MENU_APP_EDIT.SID_APP_NEW_REPORT_PRE_SEL.menuitem.text"
+msgid "Report..."
+msgstr "Rapport..."
+
+#: app.src#RID_MENU_APP_EDIT.SID_REPORT_CREATE_REPWIZ_PRE_SEL.menuitem.text
+msgid "Report Wizard..."
+msgstr "Assistent Rapport..."
+
+#: app.src#RID_MENU_APP_EDIT.SID_SELECTALL.menuitem.text
+msgid "Select All"
+msgstr "Alles selecteren"
+
+#: app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSPROPS.menuitem.text
+msgid "Properties..."
+msgstr "Eigenschappen..."
+
+#: app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSCONNECTION_TYPE.menuitem.text
+msgid "Connection Type..."
+msgstr "Verbindingstype..."
+
+#: app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSADVANCED_SETTINGS.menuitem.text
+msgid "Advanced Settings..."
+msgstr "Geavanceerde instellingen..."
+
+#: app.src#RID_MENU_APP_EDIT.MN_PROPS.menuitem.text
+msgid "~Database"
+msgstr "~Database"
+
+#: app.src#STR_QUERY_DELETE_DATASOURCE.string.text
+msgid "Do you want to delete the data source '%1'?"
+msgstr "Wilt u de gegevensbron %1 verwijderen?"
+
+#: app.src#STR_APP_TITLE.string.text
+msgid " - %PRODUCTNAME Base"
+msgstr " - %PRODUCTNAME Base"
+
+#: app.src#RID_STR_REPORTS_HELP_TEXT_WIZARD.string.text
+msgid ""
+"The wizard will guide you through the steps necessary to create a report."
+msgstr ""
+"De assistent zal u begeleiden bij de stappen die nodig zijn om een rapport "
+"te maken."
+
+#: app.src#RID_STR_FORMS_HELP_TEXT.string.text
+msgid ""
+"Create a form by specifying the record source, controls, and control "
+"properties."
+msgstr ""
+"Een formulier maken door de record-bron, besturingselementen en "
+"eigenschappen van besturingselementen te specificeren."
+
+#: app.src#RID_STR_REPORT_HELP_TEXT.string.text
+msgid ""
+"Create a report by specifying the record source, controls, and control "
+"properties."
+msgstr ""
+"Een rapport maken door de recordbron, besturingselementen en eigenschappen "
+"van besturingselementen te specificeren."
+
+#: app.src#RID_STR_FORMS_HELP_TEXT_WIZARD.string.text
+msgid "The wizard will guide you through the steps necessary to create a form."
+msgstr ""
+"De assistent zal u begeleiden bij de stappen die nodig zijn om een formulier "
+"te maken."
+
+#: app.src#RID_STR_QUERIES_HELP_TEXT.string.text
+msgid ""
+"Create a query by specifying the filters, input tables, field names,  and  "
+"properties for sorting or grouping."
+msgstr ""
+"Een query maken door de filters, invoertabellen, veldnamen en eigenschappen "
+"voor sorteren of groeperen te specificeren."
+
+#: app.src#RID_STR_QUERIES_HELP_TEXT_SQL.string.text
+msgid "Create a query  entering an SQL statement directly."
+msgstr "Een query maken door direct een SQL-instructie in te voeren."
+
+#: app.src#RID_STR_QUERIES_HELP_TEXT_WIZARD.string.text
+msgid ""
+"The wizard will guide you through the steps necessary to create a query."
+msgstr ""
+"De assistent zal u begeleiden bij de stappen die nodig zijn om een query te "
+"maken."
+
+#: app.src#RID_STR_TABLES_HELP_TEXT_DESIGN.string.text
+msgid ""
+"Create a table by specifying the field names and properties, as well as the "
+"data types."
+msgstr ""
+"Een tabel maken door de veldnamen en eigenschappen, en de gegevenstypen te "
+"specificeren."
+
+#: app.src#RID_STR_TABLES_HELP_TEXT_WIZARD.string.text
+msgid ""
+"Choose from a selection of business and personal table samples, which you "
+"customize to create a table."
+msgstr ""
+"Een keuze maken uit zakelijke en persoonlijke tabelvoorbeelden, die u kunt "
+"aanpassen om een tabel te maken."
+
+#: app.src#RID_STR_VIEWS_HELP_TEXT_DESIGN.string.text
+msgid ""
+"Create a view by specifying the tables and field names you would like to "
+"have visible."
+msgstr ""
+"Een weergave maken door de tabellen en veldnamen die u wilt tonen te "
+"specificeren."
+
+#: app.src#RID_STR_VIEWS_HELP_TEXT_WIZARD.string.text
+msgid "Opens the view wizard"
+msgstr "Opent de assistent Weergave"
+
+#: app.src#STR_DATABASE.string.text
+msgid "Database"
+msgstr "Database"
+
+#: app.src#STR_TASKS.string.text
+msgid "Tasks"
+msgstr "Taken"
+
+#: app.src#STR_DESCRIPTION.string.text
+msgid "Description"
+msgstr "Beschrijving"
+
+#: app.src#STR_PREVIEW.string.text
+msgid "Preview"
+msgstr "Voorbeeld"
+
+#: app.src#STR_DISABLEPREVIEW.string.text
+msgid "Disable Preview"
+msgstr "Voorbeeldweergave uitschakelen"
+
+#: app.src#APP_SAVEMODIFIED.querybox.text
+msgid ""
+"The database has been modified.\n"
+"Do you want to save the changes?"
+msgstr ""
+"De database is gewijzigd.\n"
+"Wilt u de wijzigingen opslaan?"
+
+#: app.src#APP_CLOSEDOCUMENTS.querybox.text
+msgid ""
+"The connection type has been altered.\n"
+"For the changes to take effect, all forms, reports, queries and tables must "
+"be closed.\n"
+"\n"
+"Do you want to close all documents now?"
+msgstr ""
+"Het type verbinding is gewijzigd.\n"
+"Opdat de wijzigingen effectief worden, moeten alle formulieren, rapporten, "
+"query's en tabellen worden gesloten.\n"
+"\n"
+"Wilt u alle documenten nu sluiten?"
+
+#: app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.menuitem.text
+msgid "None"
+msgstr "Geen"
+
+#: app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOCINFO_PREVIEW.menuitem.text
+msgid "Document Information"
+msgstr "Documentinformatie"
+
+#: app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOC_PREVIEW.menuitem.text
+msgid "Document"
+msgstr "Document"
+
+#: app.src#RID_STR_FORM.string.text
+msgid "Form"
+msgstr "Formulier"
+
+#: app.src#RID_STR_REPORT.string.text
+msgid "Report"
+msgstr "Rapport"
+
+#: app.src#STR_FRM_LABEL.string.text
+msgid "F~orm name"
+msgstr "F~ormuliernaam"
+
+#: app.src#STR_RPT_LABEL.string.text
+msgid "~Report name"
+msgstr "~Rapportnaam"
+
+#: app.src#STR_FOLDER_LABEL.string.text
+msgid "F~older name"
+msgstr "M~apnaam"
+
+#: app.src#STR_SUB_DOCS_WITH_SCRIPTS.string.text
+msgid "The document contains forms or reports with embedded macros."
+msgstr "Het document bevat formulieren of rapporten met ingebedde macro's."
+
+#: app.src#STR_SUB_DOCS_WITH_SCRIPTS_DETAIL.string.text
+msgid ""
+"Macros should be embedded into the database document itself.\n"
+"\n"
+"You can continue to use your document as before, however, you are encouraged "
+"to migrate your macros. The menu item 'Tools / Migrate Macros ...' will "
+"assist you with this.\n"
+"\n"
+"Note that you won't be able to embed macros into the database document "
+"itself until this migration is done. "
+msgstr ""
+"Scripts en macro's zouden moeten zijn ingebed in het database-document zelf.\n"
+"\n"
+"U kunt doorgaan met het document te gebruiken zoals voorheen, u wordt echter "
+"geadviseerd uw scripts en macro's te migreren. Het menuitem 'Extra / "
+"Scripts en macro's migreren ...' zal u hierbij assisteren.\n"
+"\n"
+"Merk op dat u geen macro's of scripts in het database-document kunt inbedden "
+"totdat deze migratie is uitgevoerd. "
+
+#: app.src#RID_STR_EMBEDDED_DATABASE.string.text
+msgid "Embedded database"
+msgstr "Ingebedde database"
+
+#: app.src#RID_STR_NO_DIFF_CAT.string.text
+msgid "You cannot select different categories."
+msgstr "U kunt geen andere categorieën selecteren."
+
+#: app.src#RID_STR_UNSUPPORTED_OBJECT_TYPE.string.text
+msgid "Unsupported object type found ($type$)."
+msgstr "Niet ondersteund objecttype gevonden ($type$)."
+
+#: TableGrantCtrl.src#STR_TABLE_PRIV_NAME.string.text
+msgid "Table name"
+msgstr "Tabelnaam"
+
+#: TableGrantCtrl.src#STR_TABLE_PRIV_INSERT.string.text
+msgid "Insert data"
+msgstr "Gegevens invoegen"
+
+#: TableGrantCtrl.src#STR_TABLE_PRIV_DELETE.string.text
+msgid "Delete data"
+msgstr "Gegevens verwijderen"
+
+#: TableGrantCtrl.src#STR_TABLE_PRIV_UPDATE.string.text
+msgid "Modify data"
+msgstr "Gegevens wijzigen"
+
+#: TableGrantCtrl.src#STR_TABLE_PRIV_ALTER.string.text
+msgid "Alter structure"
+msgstr "Structuur wijzigen"
+
+#: TableGrantCtrl.src#STR_TABLE_PRIV_SELECT.string.text
+msgid "Read data"
+msgstr "Gegevens lezen"
+
+#: TableGrantCtrl.src#STR_TABLE_PRIV_REFERENCE.string.text
+msgid "Modify references"
+msgstr "Verwijzingen wijzigen"
+
+#: TableGrantCtrl.src#STR_TABLE_PRIV_DROP.string.text
+msgid "Drop structure"
+msgstr "Structuur wissen"
+
+#: tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_ASCENDING.menuitem.text
+msgid "Sort Ascending"
+msgstr "Oplopend sorteren"
+
+#: tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_DECENDING.menuitem.text
+msgid "Sort Descending"
+msgstr "Aflopend sorteren"
+
+#: tabletree.src#STR_COULDNOTCREATE_DRIVERMANAGER.string.text
+msgid "Cannot connect to the SDBC driver manager (#servicename#)."
+msgstr ""
+"Kan de verbinding met het SDBC-stuurprogrammabeheer (#servicename#) niet tot "
+"stand brengen."
+
+#: tabletree.src#STR_NOREGISTEREDDRIVER.string.text
+msgid "A driver is not registered for the URL #connurl#."
+msgstr "Geen stuurprogramma voor URL #connurl# geregistreerd."
+
+#: tabletree.src#STR_COULDNOTCONNECT.string.text
+msgid "No connection could be established for the URL #connurl#."
+msgstr "Er kan geen verbinding met de URL #connurl# tot stand worden gebracht."
+
+#: tabletree.src#STR_COULDNOTCONNECT_PLEASECHECK.string.text
+msgid "Please check the current settings, for example user name and password."
+msgstr ""
+"Controleer de huidige instellingen, zoals de gebruikersnaam en het "
+"wachtwoord."
+
+#: tabletree.src#STR_NOTABLEINFO.string.text
+msgid ""
+"Successfully connected, but information about database tables is not "
+"available."
+msgstr ""
+"Verbinding is tot stand gebracht, er zijn echter geen gegevens over tabellen "
+"in de database gevonden."
+
+#: tabletree.src#STR_ALL_TABLES.string.text
+msgid "All tables"
+msgstr "Alle tabellen"
+
+#: tabletree.src#STR_ALL_VIEWS.string.text
+msgid "All views"
+msgstr "Alle tabelmodi"
+
+#: tabletree.src#STR_ALL_TABLES_AND_VIEWS.string.text
+msgid "All tables and views"
+msgstr "Alle tabellen en tabelmodi"
+
+#: undosqledit.src#STR_QUERY_UNDO_MODIFYSQLEDIT.string.text
+msgid "Modify SQL statement(s)"
+msgstr "SQL-instructie(s) wijzigen"
+
+#: copytablewizard.src#STR_CTW_NO_VIEWS_SUPPORT.string.text
+msgid "The destination database does not support views."
+msgstr "De doeldatabase ondersteunt geen weergaven."
+
+#: copytablewizard.src#STR_CTW_NO_PRIMARY_KEY_SUPPORT.string.text
+msgid "The destination database does not support primary keys."
+msgstr "De doeldatabase ondersteunt geen primaire sleutels."
+
+#: copytablewizard.src#STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR.string.text
+msgid ""
+"no data access descriptor found, or no data access descriptor able to "
+"provide all necessary information"
+msgstr ""
+"Geen gegevenstoegangsdescriptor gevonden, of geen die in staat is om alle "
+"benodigde informatie te leveren"
+
+#: copytablewizard.src#STR_CTW_ONLY_TABLES_AND_QUERIES_SUPPORT.string.text
+msgid "Only tables and queries are supported at the moment."
+msgstr "Momenteel worden alleen tabellen en query's ondersteund."
+
+#: copytablewizard.src#STR_CTW_COPY_SOURCE_NEEDS_BOOKMARKS.string.text
+msgid "The copy source's result set must support bookmarks."
+msgstr "De resultaatverzameling van de kopiebron moet bladwijzers ondersteunen."
+
+#: copytablewizard.src#STR_CTW_UNSUPPORTED_COLUMN_TYPE.string.text
+msgid "Unsupported source column type ($type$) at column position $pos$."
+msgstr "Niet ondersteund bronkolomtype ($type$) op kolompositie $pos$."
+
+#: copytablewizard.src#STR_CTW_ILLEGAL_PARAMETER_COUNT.string.text
+msgid "Illegal number of initialization parameters."
+msgstr "Ongeldig aantal initialisatieparameters."
+
+#: copytablewizard.src#STR_CTW_ERROR_DURING_INITIALIZATION.string.text
+msgid "An error occurred during initialization."
+msgstr "Er is een fout opgetreden bij het initialiseren."
+
+#: copytablewizard.src#STR_CTW_ERROR_UNSUPPORTED_SETTING.string.text
+msgid "Unsupported setting in the copy source descriptor: $name$."
+msgstr ""
+"Niet ondersteunde instelling in de kopie van de bronbeschrijving: $name$."
+
+#: copytablewizard.src#STR_CTW_ERROR_NO_QUERY.string.text
+msgid "To copy a query, your connection must be able to provide queries."
+msgstr ""
+"Uw verbinding moet in staat zijn om queries te verschaffen om een query te "
+"kopiëren."
+
+#: copytablewizard.src#STR_CTW_ERROR_INVALID_INTERACTIONHANDLER.string.text
+msgid "The given interaction handler is invalid."
+msgstr "De opgegeven afhandeling voor de interactie is ongeldig."
+
+#: dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.string.text
+msgid "~Remember password until end of session"
+msgstr "~Wachtwoord onthouden tot einde van de sessie"
+
+#: dbinteraction.src#STR_REMEMBERPASSWORD_PERSISTENT.string.text
+msgid "~Remember password"
+msgstr "Wachtwoord ~opslaan"
+
+#: toolbox_tmpl.hrc#MID_SBA_QRY_REFRESH.#define.text
+msgid "Refresh"
+msgstr "Vernieuwen"
+
+#: toolbox_tmpl.hrc#MID_NEW_VIEW_DESIGN.#define.text
+msgid "New ~View Design"
+msgstr "Nieuw ~weergave-ontwerp"
+
+#: toolbox_tmpl.hrc#MID_NEW_TABLE_DESIGN.#define.text
+msgid "New ~Table Design"
+msgstr "Nieuw ~tabelontwerp"
+
+#: toolbox_tmpl.hrc#MID_QUERY_WIZARD.#define.text
+msgid "Query AutoPilot..."
+msgstr "Assistent Query..."
+
+#: toolbox_tmpl.hrc#MID_QUERY_NEW_DESIGN.#define.text
+msgid "New ~Query (Design View)"
+msgstr "Nieuwe ~query (ontwerpweergave)"
+
+#: toolbox_tmpl.hrc#MID_QUERY_EDIT_DESIGN.#define.text
+msgid "~Edit Query"
+msgstr "Query b~ewerken"
+
+#: toolbox_tmpl.hrc#MID_QUERY_NEW_SQL.#define.text
+msgid "New Query (~SQL View)"
+msgstr "Nieuwe query (~SQL-weergave)"
+
+#: toolbox_tmpl.hrc#MID_DBUI_QUERY_EDIT_JOINCONNECTION.#define.text
+msgid "Edit..."
+msgstr "Bewerken..."
+
+#: toolbox_tmpl.hrc#MID_COLUMN_WIDTH.#define.text
+msgid "Column ~Width..."
+msgstr "Kolom~breedte..."
+
+#: toolbox_tmpl.hrc#MID_DOCUMENT_CREATE_REPWIZ.#define.text
+msgid "Report Wizard..."
+msgstr "Rapportassistent..."
+
+#: toolbox_tmpl.hrc#MID_DOCUMENT_NEW_AUTOPILOT.#define.text
+msgid "Form AutoPilot..."
+msgstr "Assistent Formulier..."
+
+#: table.src#STR_TABLEDESIGN_DBFIELDTYPES.string.text
+msgid ""
+"Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;T"
+"ext (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;Small "
+"Integer;Tiny Integer;SQL "
+"Null;Object;Distinct;Structure;Field;BLOB;CLOB;REF;OTHER;Bit (fix)"
+msgstr ""
+"Onbekend;Tekst;Nummer;Datum/Tijd;Datum;Tijd;Ja/Nee;Valuta;Memo;Teller;Afbeel"
+"ding;Tekst (vast);Decimaal;Binair "
+"(vast);Binair;BigInt;Double;Float;Real;Geheel getal;Klein geheel getal;Zeer "
+"klein geheel getal;SQL "
+"Null;Object;Distinct;Structuur;Veld;BLOB;CLOB;REF;OTHER"
+
+#: table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.string.text
+msgctxt "table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.string.text"
+msgid "Insert/remove primary key"
+msgstr "Primaire sleutel invoegen/verwijderen"
+
+#: table.src#STR_VALUE_YES.string.text
+msgid "Yes"
+msgstr "Ja"
+
+#: table.src#STR_VALUE_NO.string.text
+msgid "No"
+msgstr "Nee"
+
+#: table.src#STR_VALUE_ASC.string.text
+msgid "Ascending"
+msgstr "Oplopend"
+
+#: table.src#STR_VALUE_DESC.string.text
+msgid "Descending"
+msgstr "Aflopend"
+
+#: table.src#STR_VALUE_NONE.string.text
+msgid "<none>"
+msgstr "<geen>"
+
+#: table.src#STR_TAB_FIELD_NAME.string.text
+msgid "Field name"
+msgstr "Veldnaam"
+
+#: table.src#STR_TAB_FIELD_COLUMN_NAME.string.text
+msgid "Field Name"
+msgstr "Veldnaam"
+
+#: table.src#STR_TAB_FIELD_DATATYPE.string.text
+msgid "Field ~type"
+msgstr "Veld~type"
+
+#: table.src#STR_TAB_FIELD_COLUMN_DATATYPE.string.text
+msgid "Field Type"
+msgstr "Veldtype"
+
+#: table.src#STR_TAB_FIELD_LENGTH.string.text
+msgid "Field length"
+msgstr "Veldlengte"
+
+#: table.src#STR_TAB_HELP_TEXT.string.text
+msgid "Description"
+msgstr "Omschrijving"
+
+#: table.src#STR_COLUMN_DESCRIPTION.string.text
+msgid "Column Description"
+msgstr "Kolombeschrijving"
+
+#: table.src#STR_TAB_FIELD_NULLABLE.string.text
+msgid "Input required"
+msgstr "Invoer vereist"
+
+#: table.src#STR_FIELD_AUTOINCREMENT.string.text
+msgid "~AutoValue"
+msgstr "~AutoWaarde"
+
+#: table.src#STR_TAB_PROPERTIES.string.text
+msgid "Field Properties"
+msgstr "Veldeigenschappen"
+
+#: table.src#STR_TABPAGE_GENERAL.string.text
+msgid "General"
+msgstr "Algemeen"
+
+#: table.src#STR_TAB_TABLE_DESCRIPTION.string.text
+msgid "Description:"
+msgstr "Omschrijving:"
+
+#: table.src#STR_TAB_TABLE_PROPERTIES.string.text
+msgid "Table properties"
+msgstr "Tabeleigenschappen"
+
+#: table.src#ERR_INVALID_LISTBOX_ENTRY.errorbox.text
+msgid "The text you entered is not a list element. "
+msgstr "De ingevoerde tekst is geen element van de lijst. "
+
+#: table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_INSERTROWS.menuitem.text
+msgid "Insert Rows"
+msgstr "Rijen invoegen"
+
+#: table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_TABED_PRIMARYKEY.menuitem.text
+msgid "Primary Key"
+msgstr "Primaire sleutel"
+
+#: table.src#STR_TABED_UNDO_CELLMODIFIED.string.text
+msgid "Modify cell"
+msgstr "Cel wijzigen"
+
+#: table.src#STR_TABED_UNDO_ROWDELETED.string.text
+msgid "Delete row"
+msgstr "Rij verwijderen"
+
+#: table.src#STR_TABED_UNDO_TYPE_CHANGED.string.text
+msgid "Modify field type"
+msgstr "Veldtype wijzigen"
+
+#: table.src#STR_TABED_UNDO_ROWINSERTED.string.text
+msgid "Insert row"
+msgstr "Rij invoegen"
+
+#: table.src#STR_TABED_UNDO_NEWROWINSERTED.string.text
+msgid "Insert new row"
+msgstr "Nieuwe rij invoegen"
+
+#: table.src#STR_TABED_UNDO_PRIMKEY.string.text
+msgctxt "table.src#STR_TABED_UNDO_PRIMKEY.string.text"
+msgid "Insert/remove primary key"
+msgstr "Primaire sleutel invoegen/verwijderen"
+
+#: table.src#STR_DEFAULT_VALUE.string.text
+msgid "~Default value"
+msgstr "~Standaardwaarde"
+
+#: table.src#STR_FIELD_REQUIRED.string.text
+msgid "~Entry required"
+msgstr "~Invoer vereist"
+
+#: table.src#STR_TEXT_LENGTH.string.text
+msgctxt "table.src#STR_TEXT_LENGTH.string.text"
+msgid "~Length"
+msgstr "~Lengte"
+
+#: table.src#STR_NUMERIC_TYPE.string.text
+msgid "~Type"
+msgstr "~Type"
+
+#: table.src#STR_LENGTH.string.text
+msgctxt "table.src#STR_LENGTH.string.text"
+msgid "~Length"
+msgstr "~Lengte"
+
+#: table.src#STR_SCALE.string.text
+msgid "Decimal ~places"
+msgstr "Aantal de~cimalen"
+
+#: table.src#STR_FORMAT.string.text
+msgid "Format example"
+msgstr "Opmaakvoorbeeld"
+
+#: table.src#STR_HELP_BOOL_DEFAULT.string.text
+msgid ""
+"Select a value that is to appear in all new records as default.\n"
+"If the field is not to have a default value, select the empty string."
+msgstr ""
+"Kies een waarde die in elke nieuwe ingevoegde record als standaard moet "
+"verschijnen.\n"
+"Kies een lege tekenreeks als u niet wilt dat het veld de standaardwaarde "
+"krijgt toegewezen."
+
+#: table.src#STR_HELP_DEFAULT_VALUE.string.text
+msgid ""
+"Enter a default value for this field.\n"
+"\n"
+"When you later enter data in the table, this string will be used in each new "
+"record for the field selected. It should, therefore, correspond to the cell "
+"format that needs to be entered below."
+msgstr ""
+"Geef hier een standaardwaarde voor dit veld op.\n"
+"\n"
+"Als u later gegevens invoert in de tabel, wordt deze tekenreeks in elke "
+"nieuwe record gebruikt voor het geselecteerde veld. De tekenreeks moet "
+"daarom corresponderen met de hierna te definiëren celopmaak."
+
+#: table.src#STR_HELP_FIELD_REQUIRED.string.text
+msgid ""
+"Activate this option if this field cannot contain NULL values, i.e. the user "
+"must always enter data."
+msgstr ""
+"Activeer deze optie als in dit veld geen NULL-waarde is toegestaan, d.w.z. "
+"dat de gebruiker hier altijd iets moet invullen."
+
+#: table.src#STR_HELP_TEXT_LENGTH.string.text
+msgid "Enter the maximum text length permitted."
+msgstr "Geef de maximaal toelaatbare tekstlengte op."
+
+#: table.src#STR_HELP_NUMERIC_TYPE.string.text
+msgid "Enter the number format."
+msgstr "Geef de getalnotatie op."
+
+#: table.src#STR_HELP_LENGTH.string.text
+msgid ""
+"Determine the length data can have in this field.\n"
+"\n"
+"If decimal fields, then the maximum length of the number to be entered, if "
+"binary fields, then the length of the data block.\n"
+"The value will be corrected accordingly when it exceeds the maximum for this "
+"database."
+msgstr ""
+"Geef de lengte van dit veldtype op.\n"
+"\n"
+"Voor decimale velden is dit de maximale lengte van het in te vullen getal, "
+"voor binaire velden de lengte van het gegevensblok.\n"
+"Als het veld langer is dan voor deze database maximaal is toegestaan, wordt "
+"de lengte gecorrigeerd."
+
+#: table.src#STR_HELP_SCALE.string.text
+msgid "Specify the number of decimal places permitted in this field."
+msgstr "Geef het aantal decimalen op."
+
+#: table.src#STR_HELP_FORMAT_CODE.string.text
+msgid ""
+"This is where you see how the data would be displayed in the current format "
+"(use the button on the right to modify the format)."
+msgstr ""
+"Hier ziet u hoe de gegevens in de huidige kolom eruit zouden zien met de "
+"momenteel ingestelde opmaak. (Deze opmaak kunt u wijzigen met de knop aan de "
+"rechterkant)."
+
+#: table.src#STR_HELP_FORMAT_BUTTON.string.text
+msgid "This is where you determine the output format of the data."
+msgstr "Hiermee kunt u instellen hoe u de gegevens in de tabel wilt opmaken."
+
+#: table.src#STR_HELP_AUTOINCREMENT.string.text
+msgid ""
+"Choose if this field should contain AutoIncrement values.\n"
+"\n"
+"You can not enter data in fields of this type. An intrinsic value will be "
+"assigned to each new record automatically (resulting from the increment of "
+"the previous record)."
+msgstr ""
+"U kunt dit veld een Automatisch vergroten-waarde toewijzen.\n"
+"\n"
+"In dat geval kunt u hierin geen gegevens typen, maar elke nieuwe record "
+"krijgt automatisch een eigen waarde toegewezen (die het resultaat is van het "
+"verhogen van de vorige)."
+
+#: table.src#PB_FORMAT.pushbutton.text
+msgid "~..."
+msgstr "~..."
+
+#: table.src#STR_TABLEDESIGN_DUPLICATE_NAME.string.text
+msgid ""
+"The table cannot be saved because column name \"$column$\" was assigned twice."
+msgstr ""
+"De tabel kan niet worden opgeslagen omdat de kolomnaam \"$column$\" reeds "
+"bestaat."
+
+#: table.src#STR_TBL_COLUMN_IS_KEYCOLUMN.string.text
+msgid ""
+"The column \"$column$\" belongs to the primary key. If the column is deleted, "
+"the primary key will also be deleted. Do you really want to continue?"
+msgstr ""
+"De kolom \"$column$\" behoort tot de primaire sleutel. Verwijdert u deze "
+"kolom, dan wordt ook de primaire sleutel verwijderd. Wilt u de kolom "
+"werkelijk verwijderen?"
+
+#: table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.string.text
+msgid "Primary Key Affected"
+msgstr "Betrokken primaire sleutel"
+
+#: table.src#STR_COLUMN_NAME.string.text
+msgid "Column"
+msgstr "Kolom"
+
+#: table.src#STR_QRY_CONTINUE.string.text
+msgid "Continue anyway?"
+msgstr "Wilt u toch doorgaan?"
+
+#: table.src#STR_STAT_WARNING.string.text
+msgid "Warning!"
+msgstr "Waarschuwing!"
+
+#: table.src#TABLE_DESIGN_SAVEMODIFIED.querybox.text
+msgid ""
+"The table has been changed.\n"
+"Do you want to save the changes?"
+msgstr ""
+"De tabel is gewijzigd.\n"
+"Wilt u de wijzigingen opslaan?"
+
+#: table.src#TABLE_QUERY_CONNECTION_LOST.querybox.text
+msgid ""
+"The connection to the database was lost! The table design can only be used "
+"with limited functionality without a connection.\n"
+"Reconnect?"
+msgstr ""
+"De verbinding met de database is verwijderd! Zonder deze verbinding kan de "
+"ontwerptabel slechts beperkt worden gebruikt.\n"
+"Wilt u de verbinding met de database weer tot stand brengen?"
+
+#: table.src#STR_TABLEDESIGN_CONNECTION_MISSING.string.text
+msgid ""
+"The table could not be saved due to problems connecting to the database."
+msgstr ""
+"De tabel kan niet worden opgeslagen omdat de koppeling met de database niet "
+"tot stand kan worden gebracht."
+
+#: table.src#STR_TABLEDESIGN_DATASOURCE_DELETED.string.text
+msgid ""
+"The table filter could not be adjusted because the data source has been "
+"deleted."
+msgstr ""
+"De tabellenfilter kan niet worden aangepast omdat de gegevensbron is "
+"verwijderd."
+
+#: table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.querybox.text
+msgid ""
+"Before you can edit the indexes of a table, you have to save it.\n"
+"Do you want to save the changes now?"
+msgstr ""
+"Voordat u de indices van een tabel kunt wijzigen, moeten deze worden "
+"opgeslagen.\n"
+"Wilt u de wijzigingen in de tabelstructuur nu opslaan?"
+
+#: table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.string.text
+msgid "No primary key"
+msgstr "Geen primaire sleutel"
+
+#: table.src#STR_TABLEDESIGN_NO_PRIM_KEY.string.text
+msgid ""
+"A unique index or primary key is required for data record identification in "
+"this database.\n"
+"You can only enter data into this table when one of these two structural "
+"conditions has been met.\n"
+"\n"
+"Should a primary key be created now?"
+msgstr ""
+"In deze database is een 'unieke index', ofwel een primaire sleutel, vereist "
+"ter identificatie van records.\n"
+"U kunt alleen gegevens invoeren in de tabel als u voldoet aan één van deze "
+"beide criteria.\n"
+"\n"
+"Wilt u nu een primaire sleutel definiëren?"
+
+#: table.src#STR_TABLEDESIGN_TITLE.string.text
+msgid " - %PRODUCTNAME Base: Table Design"
+msgstr " - %PRODUCTNAME Base: Tabelontwerp"
+
+#: table.src#STR_TABLEDESIGN_ALTER_ERROR.string.text
+msgid ""
+"The column \"$column$\" could not be changed. Should the column instead be "
+"deleted and the new format appended?"
+msgstr ""
+"De kolom '$column$' kan niet worden gewijzigd. Wilt u de kolom in plaats "
+"daarvan verwijderen en van de nieuwe opmaak voorzien?"
+
+#: table.src#STR_TABLEDESIGN_SAVE_ERROR.string.text
+msgid "Error while saving the table design"
+msgstr "Fout tijdens opslaan van tabelontwerp"
+
+#: table.src#STR_TABLEDESIGN_COULD_NOT_DROP_COL.string.text
+msgid "The column $column$ could not be deleted."
+msgstr "De kolom $column$ kan niet worden verwijderd."
+
+#: table.src#TABLE_DESIGN_ALL_ROWS_DELETED.querybox.text
+msgid ""
+"You are trying to delete all the columns in the table. A table cannot exist "
+"without columns. Should the table be deleted from the database? If not, the "
+"table will remain unchanged."
+msgstr ""
+"U probeert alle kolommen in de tabel te verwijderen. Een tabel kan niet "
+"zonder kolommen bestaan. Wilt u de tabel verwijderen uit de database? Zo "
+"nee, wordt de tabel niet gewijzigd."
+
+#: table.src#STR_AUTOINCREMENT_VALUE.string.text
+msgid "A~uto-increment statement"
+msgstr "Instructies a~utomatisch vergroten"
+
+#: table.src#STR_HELP_AUTOINCREMENT_VALUE.string.text
+msgid ""
+"Enter an SQL statement for the auto-increment field.\n"
+"\n"
+"This statement will be directly transferred to the database when the table "
+"is created."
+msgstr ""
+"Voer een SQL-instructie in voor het veld voor automatisch vergroten.\n"
+"\n"
+"Deze instructie wordt direct overgebracht naar de database wanneer de tabel "
+"wordt gemaakt."
+
+#: table.src#STR_NO_TYPE_INFO_AVAILABLE.string.text
+msgid ""
+"No type information could be retrieved from the database.\n"
+"The table design mode is not available for this data source."
+msgstr ""
+"Er kan geen type-informatie worden verkregen uit de database.\n"
+"De tabelontwerpmodus is niet beschikbaar voor deze gegevensbron."
+
+#: table.src#STR_CHANGE_COLUMN_NAME.string.text
+msgid "change field name"
+msgstr "Veldnaam wijzigen"
+
+#: table.src#STR_CHANGE_COLUMN_TYPE.string.text
+msgid "change field type"
+msgstr "Veldtype wijzigen"
+
+#: table.src#STR_CHANGE_COLUMN_DESCRIPTION.string.text
+msgid "change field description"
+msgstr "Veldbeschrijving wijzigen"
+
+#: table.src#STR_CHANGE_COLUMN_ATTRIBUTE.string.text
+msgid "change field attribute"
+msgstr "Veldattribuut wijzigen"
+"X-Accelerator-Marker: ~\n"
+
+#: relation.src#STR_QUERY_REL_EDIT_RELATION.string.text
+msgid ""
+"This relation already exists. Do you want to edit it or create a new one?"
+msgstr "Deze relatie bestaat al. Wilt u deze bewerken of een nieuwe maken?"
+
+#: relation.src#STR_QUERY_REL_EDIT.string.text
+msgid "Edit..."
+msgstr "Bewerken..."
+
+#: relation.src#STR_QUERY_REL_CREATE.string.text
+msgid "Create..."
+msgstr "Maken..."
+
+#: relation.src#STR_RELATIONDESIGN.string.text
+msgid " - %PRODUCTNAME Base: Relation design"
+msgstr " - %PRODUCTNAME Base: Relatie-ontwerp"
+
+#: relation.src#STR_RELATIONDESIGN_NOT_AVAILABLE.string.text
+msgid "The database does not support relations."
+msgstr "De database ondersteunt geen relaties."
+
+#: relation.src#RELATION_DESIGN_SAVEMODIFIED.querybox.text
+msgid ""
+"The relation design has been changed.\n"
+"Do you want to save the changes?"
+msgstr ""
+"Het relatie-ontwerp is gewijzigd.\n"
+"Wilt u de wijzigingen opslaan?"
+
+#: relation.src#STR_QUERY_REL_DELETE_WINDOW.string.text
+msgid ""
+"When you delete this table all corresponding relations will be deleted as "
+"well. Continue?"
+msgstr ""
+"Als u deze tabel verwijdert, worden alle bijbehorende relaties eveneens "
+"verwijderd. Wilt u doorgaan?"
+
+#: relation.src#STR_QUERY_REL_COULD_NOT_CREATE.string.text
+msgid ""
+"The database could not create the relation. May be foreign keys for this "
+"kind of table aren't supported.\n"
+"Please check your documentation of the database."
+msgstr ""
+"De database kon de relatie niet maken. Misschien worden vreemde sleutels "
+"niet ondersteund voor dit soort tabel.\n"
+"Controleer uw documentatie voor de database."
+"X-Accelerator-Marker: ~\n"
+
+#: dbumiscres.src#RSC_CHARSETS.1.string.text
+msgid "System"
+msgstr "Systeem"
+
+#: dbumiscres.src#STR_ERROR_DURING_CREATION.string.text
+msgid "Error during creation"
+msgstr "Fout tijdens maken"
+
+#: dbumiscres.src#STR_UNEXPECTED_ERROR.string.text
+msgid "An unexpected error occurred. The operation could not be performed."
+msgstr ""
+"Er is een onverwachte fout opgetreden. De bewerking kan niet worden "
+"uitgevoerd."
+
+#: dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.string.text
+msgid "The document \"$file$\" could not be opened."
+msgstr "Het document \"$file$\" kon niet worden geopend."
+
+#: dbumiscres.src#STR_MISSING_TABLES_XDROP.string.text
+msgid ""
+"The table cannot be deleted because the database connection does not support "
+"this."
+msgstr ""
+"De tabel kan niet worden verwijderd omdat deze niet wordt ondersteund door "
+"de database."
+
+#: dbumiscres.src#STR_BUTTON_TEXT_ALL.string.text
+msgctxt "dbumiscres.src#STR_BUTTON_TEXT_ALL.string.text"
+msgid "~All"
+msgstr "~Alles"
+
+#: dbumiscres.src#STR_UNDO_COLON.string.text
+msgid "Undo:"
+msgstr "Ongedaan maken:"
+
+#: dbumiscres.src#STR_REDO_COLON.string.text
+msgid "Redo:"
+msgstr "Opnieuw:"
+
+#: dbumiscres.src#STR_UNKNOWN_TYPE_FOUND.string.text
+msgid "No corresponding column type could be found for column '#1'."
+msgstr "Er kan geen overeenkomstig kolomtype worden gevonden voor kolom '#1'."
+
+#: dbumiscres.src#STR_FILE_DOES_NOT_EXIST.string.text
+msgid "The file \"$file$\" does not exist."
+msgstr "Het bestand $file$ bestaat niet."
+
+#: dbumiscres.src#STR_WARNINGS_DURING_CONNECT.string.text
+msgid ""
+"Warnings were encountered while connecting to the data source. Press "
+"\"$buttontext$\" to view them."
+msgstr ""
+"Waarschuwingen tijdens maken van verbinding met de gegevensbron. Klik op "
+"'$buttontext$' om ze te bekijken."
+
+#: dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.string.text
+msgid ""
+"The name '$#$' already exists.\n"
+"Please enter another name."
+msgstr ""
+"De naam $#$ bestaat reeds.\n"
+"Voer een nieuwe naam in."
+
+#: dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.string.text
+msgid "The report, \"$file$\", requires the extension Oracle Report Builder."
+msgstr "Het rapport, \"$file$\", vereist de extensie Oracle Report Builder."
+
+#: WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.string.text
+msgid "Apply columns"
+msgstr "Kolommen toepassen"
+
+#: WizardPages.src#STR_WIZ_TYPE_SELECT_TITEL.string.text
+msgid "Type formatting"
+msgstr "Opmaaktype"
+
+#: WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.string.text
+msgid "The following fields have already been set as primary keys:\n"
+msgstr "De volgende velden zijn reeds als primaire sleutel gedefinieerd:\n"
+
+#: WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.string.text
+msgid "Assign columns"
+msgstr "Kolommen toewijzen"
+
+#: WizardPages.src#WIZ_RTFCOPYTABLE.PB_HELP.helpbutton.text
+msgid "~Help"
+msgstr "~Help"
+
+#: WizardPages.src#WIZ_RTFCOPYTABLE.PB_CANCEL.cancelbutton.text
+msgid "~Cancel"
+msgstr "~Annuleren"
+
+#: WizardPages.src#WIZ_RTFCOPYTABLE.PB_PREV.pushbutton.text
+msgid "< ~Back"
+msgstr "< V~orige"
+
+#: WizardPages.src#WIZ_RTFCOPYTABLE.PB_NEXT.pushbutton.text
+msgid "~Next>"
+msgstr "~Volgende>"
+
+#: WizardPages.src#WIZ_RTFCOPYTABLE.PB_OK.okbutton.text
+msgid "C~reate"
+msgstr "~Maken"
+
+#: WizardPages.src#WIZ_RTFCOPYTABLE.modaldialog.text
+msgid "Copy RTF Table"
+msgstr "RTF-tabel kopiëren"
+
+#: WizardPages.src#TAB_WIZ_COLUMN_SELECT.FL_COLUMN_SELECT.fixedline.text
+msgid "Existing columns"
+msgstr "Bestaande kolommen"
+
+#: WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_COLUMN_NAME.fixedline.text
+msgid "Column information"
+msgstr "Kolomgegevens"
+
+#: WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_AUTO_TYPE.fixedline.text
+msgid "Automatic type recognition"
+msgstr "Autom. herkenning van type"
+
+#: WizardPages.src#TAB_WIZ_TYPE_SELECT.FT_AUTO.fixedtext.text
+msgid "Lines (ma~x)"
+msgstr "(max.) ~regels"
+
+#: WizardPages.src#RID_SBA_RTF_PKEYPOPUP.SID_TABLEDESIGN_TABED_PRIMARYKEY.menuitem.text
+msgid "Primary Key"
+msgstr "Primaire sleutel"
+
+#: WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.fixedtext.text
+msgid "Source table: \n"
+msgstr "Brontabel: \n"
+
+#: WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.fixedtext.text
+msgid "Destination table: \n"
+msgstr "Doeltabel: \n"
+
+#: WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.pushbutton.text
+msgctxt "WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.pushbutton.text"
+msgid "~All"
+msgstr "A~lle"
+
+#: WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_NONE.pushbutton.text
+msgid "Non~e"
+msgstr "~geen"
+
+#: WizardPages.src#TAB_WIZ_COPYTABLE.FT_TABLENAME.fixedtext.text
+msgid "Ta~ble name"
+msgstr "~Tabelnaam"
+
+#: WizardPages.src#TAB_WIZ_COPYTABLE.FL_OPTIONS.fixedline.text
+msgid "Options"
+msgstr "Opties"
+
+#: WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEFDATA.radiobutton.text
+msgid "De~finition and data"
+msgstr "~Definitie en gegevens"
+
+#: WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEF.radiobutton.text
+msgid "Def~inition"
+msgstr "~Definitie"
+
+#: WizardPages.src#TAB_WIZ_COPYTABLE.RB_VIEW.radiobutton.text
+msgid "A~s table view"
+msgstr "Al~s tabelweergave"
+
+#: WizardPages.src#TAB_WIZ_COPYTABLE.RB_APPENDDATA.radiobutton.text
+msgid "Append ~data"
+msgstr "Gegevens ~toevoegen"
+
+#: WizardPages.src#TAB_WIZ_COPYTABLE.CB_USEHEADERLINE.checkbox.text
+msgid "Use first ~line as column names"
+msgstr "Gebruik eerste ~regel als kolomnamen"
+
+#: WizardPages.src#TAB_WIZ_COPYTABLE.CB_PRIMARY_COLUMN.checkbox.text
+msgid "Crea~te primary key"
+msgstr "~Primaire sleutel maken"
+
+#: WizardPages.src#TAB_WIZ_COPYTABLE.FT_KEYNAME.fixedtext.text
+msgid "Name"
+msgstr "Naam"
+
+#: WizardPages.src#STR_WIZ_TABLE_COPY.string.text
+msgctxt "WizardPages.src#STR_WIZ_TABLE_COPY.string.text"
+msgid "Copy table"
+msgstr "Tabel kopiëren"
+
+#: WizardPages.src#STR_COPYTABLE_TITLE_COPY.string.text
+msgctxt "WizardPages.src#STR_COPYTABLE_TITLE_COPY.string.text"
+msgid "Copy table"
+msgstr "Tabel kopiëren"
+
+#: WizardPages.src#STR_INVALID_TABLE_NAME.string.text
+msgid "This table name is not valid in the current database."
+msgstr "Dit is geen geldige tabelnaam in de huidige database."
+
+#: WizardPages.src#STR_SUGGEST_APPEND_TABLE_DATA.string.text
+msgid ""
+"Choose the option 'Append data' on the first page to append data to an "
+"existing table."
+msgstr ""
+"Kies de optie Gegevens toevoegen op de eerste pagina om gegevens aan een "
+"bestaande tabel toe te voegen."
+
+#: WizardPages.src#STR_INVALID_TABLE_NAME_LENGTH.string.text
+msgid "Please change the table name. It is too long."
+msgstr "De tabelnaam is te lang. Kiest u een kortere."
+
+#: sdbt_strings.src#STR_QUERY_AND_TABLE_DISTINCT_NAMES.string.text
+msgid ""
+"You cannot give a table and a query the same name. Please use a name which "
+"is not yet used by a query or table."
+msgstr ""
+"U kunt een tabel en een query niet dezelfde naam geven. Gebruik een naam die "
+"nog niet door een query of tabel gebruikt wordt."
+
+#: sdbt_strings.src#STR_BASENAME_TABLE.string.text
+msgid "Table"
+msgstr "Tabel"
+
+#: sdbt_strings.src#STR_BASENAME_QUERY.string.text
+msgid "Query"
+msgstr "Query"
+
+#: sdbt_strings.src#STR_CONN_WITHOUT_QUERIES_OR_TABLES.string.text
+msgid "The given connection is no valid query and/or tables supplier."
+msgstr ""
+"De opgegeven verbinding is geen geldige bron van query's en/of tabellen."
+
+#: sdbt_strings.src#STR_NO_TABLE_OBJECT.string.text
+msgid "The given object is no table object."
+msgstr "Het opgegeven object is geen tabelobject."
+
+#: sdbt_strings.src#STR_INVALID_COMPOSITION_TYPE.string.text
+msgid ""
+"Invalid composition type - need a value from "
+"com.sun.star.sdb.tools.CompositionType."
+msgstr ""
+"Ongeldig samenstellingstype - er is een waarde nodig van "
+"com.sun.star.sdb.tools.CompositionType."
+
+#: sdbt_strings.src#STR_INVALID_COMMAND_TYPE.string.text
+msgid ""
+"Invalid command type - only TABLE and QUERY from "
+"com.sun.star.sdb.CommandType are allowed."
+msgstr ""
+"Ongeldig type opdracht - alleen TABLE en QUERY van "
+"com.sun.star.sdb.CommandType zijn toegestaan."
+"X-Accelerator-Marker: ~\n"
+
+#: strings.src#RID_STR_TRIED_OPEN_TABLE.string.text
+msgid "Tried to open the table $name$."
+msgstr "Geprobeerd de tabel $name$ te openen."
+
+#: strings.src#RID_STR_CONNECTION_INVALID.string.text
+msgid "No connection could be established."
+msgstr "Er kon geen verbinding tot stand worden gebracht."
+
+#: strings.src#RID_STR_TABLE_IS_FILTERED.string.text
+msgid ""
+"The table $name$ already exists. It is not visible because it has been "
+"filtered out."
+msgstr ""
+"De tabel $name$ bestaat reeds. Hij is alleen niet zichtbaar omdat hij is "
+"uitgefilterd."
+
+#: strings.src#RID_STR_NEED_CONFIG_WRITE_ACCESS.string.text
+msgid ""
+"You have no write access to the configuration data the object is based on."
+msgstr "U hebt geen schrijfrechten op de configuratiegegevens van het object."
+
+#: strings.src#RID_STR_COULDNOTCONNECT_UNSPECIFIED.string.text
+msgid ""
+"The connection to the external data source could not be established. An "
+"unknown error occurred. The driver is probably defective."
+msgstr ""
+"Er kan geen verbinding met de externe gegevensbron tot stand worden "
+"gebracht. Er is een onbekende fout opgetreden. Waarschijnlijk is het "
+"stuurprogramma niet in orde."
+
+#: strings.src#RID_STR_COULDNOTCONNECT_NODRIVER.string.text
+msgid ""
+"The connection to the external data source could not be established. No SDBC "
+"driver was found for the given URL."
+msgstr ""
+"De verbinding met de externe gegevensbron kan niet tot stand worden gebracht "
+"omdat er geen SDBC-stuurprogramma voor de opgegeven URL is gevonden."
+
+#: strings.src#RID_STR_COULDNOTLOAD_MANAGER.string.text
+msgid ""
+"The connection to the external data source could not be established. The "
+"SDBC driver manager could not be loaded."
+msgstr ""
+"De verbinding met de externe gegevensbron kan niet tot stand worden gebracht "
+"omdat het SDBC-stuurprogrammabeheer niet kan worden geladen."
+
+#: strings.src#RID_STR_FORM.string.text
+msgid "Form"
+msgstr "Formulier"
+
+#: strings.src#RID_STR_REPORT.string.text
+msgid "Report"
+msgstr "Rapport"
+
+#: strings.src#RID_STR_DATASOURCE_NOT_STORED.string.text
+msgid ""
+"The data source was not saved. Please use the interface XStorable to save "
+"the data source."
+msgstr ""
+"De gegevensbron was niet opgeslagen. Gebruik de interface XStorable om de "
+"gegevensbron op te slaan."
+
+#: strings.src#RID_STR_ONLY_QUERY.string.text
+msgid ""
+"The given command is not a SELECT statement.\n"
+"Only queries are allowed."
+msgstr ""
+"De gegeven opdracht is geen SELECT-instructie.\n"
+"Alleen query's zijn toegestaan."
+
+#: strings.src#RID_STR_NO_VALUE_CHANGED.string.text
+msgid "No values were modified."
+msgstr "Geen waarden gewijzigd."
+
+#: strings.src#RID_STR_NO_XROWUPDATE.string.text
+msgid ""
+"Values could not be inserted. The XRowUpdate interface is not supported by "
+"ResultSet."
+msgstr ""
+"Waarden kunnen niet worden ingevoegd. De XRowUpdate-interface wordt niet "
+"ondersteund door ResultSet."
+
+#: strings.src#RID_STR_NO_XRESULTSETUPDATE.string.text
+msgid ""
+"Values could not be inserted. The XResultSetUpdate interface is not "
+"supported by ResultSet."
+msgstr ""
+"Waarden kunnen niet worden ingevoegd. De XResultSetUpdate-interface wordt "
+"niet ondersteund door ResultSet."
+
+#: strings.src#RID_STR_NO_UPDATE_MISSING_CONDITION.string.text
+msgid "Values could not be modified, due to a missing condition statement."
+msgstr ""
+"Waarden kunnen niet worden gewijzigd, vanwege een ontbrekend "
+"voorwaardeninstructie."
+
+#: strings.src#RID_STR_NO_COLUMN_ADD.string.text
+msgid "The adding of columns is not supported."
+msgstr "Toevoegen van kolommen wordt niet ondersteund."
+
+#: strings.src#RID_STR_NO_COLUMN_DROP.string.text
+msgid "The dropping of columns is not supported."
+msgstr "Laten vervallen van kolommen wordt niet ondersteund."
+
+#: strings.src#RID_STR_NO_CONDITION_FOR_PK.string.text
+msgid "The WHERE condition could not be created for the primary key."
+msgstr "De WHERE-voorwaarde kan niet worden gemaakt voor de primaire sleutel."
+
+#: strings.src#RID_STR_COLUMN_UNKNOWN_PROP.string.text
+msgid "The column does not support the property '%value'."
+msgstr "De kolom ondersteunt niet de eigenschap '%value'."
+
+#: strings.src#RID_STR_COLUMN_NOT_SEARCHABLE.string.text
+msgid "The column is not searchable!"
+msgstr "De kolom is niet doorzoekbaar!"
+
+#: strings.src#RID_STR_NOT_SEQUENCE_INT8.string.text
+msgid "The value of the columns is not of the type Sequence<sal_Int8>."
+msgstr "De waarde van de kolommen is niet van het type Sequence<sal_Int8>."
+
+#: strings.src#RID_STR_COLUMN_NOT_VALID.string.text
+msgid "The column is not valid."
+msgstr "De kolom is ongeldig."
+
+#: strings.src#RID_STR_COLUMN_MUST_VISIBLE.string.text
+msgid "The column '%name' must be visible as a column."
+msgstr "De kolom '%name' moet zichtbaar zijn als een kolom."
+
+#: strings.src#RID_STR_NO_XQUERIESSUPPLIER.string.text
+msgid "The interface XQueriesSupplier is not available."
+msgstr "De interface XQueriesSupplier is niet beschikbaar."
+
+#: strings.src#RID_STR_NOT_SUPPORTED_BY_DRIVER.string.text
+msgid "The driver does not support this function."
+msgstr "Het stuurprogramma ondersteunt deze functie niet."
+
+#: strings.src#RID_STR_NO_ABS_ZERO.string.text
+msgid "An 'absolute(0)' call is not allowed."
+msgstr "Een 'absolute(0)' aanroep is niet toegestaan."
+
+#: strings.src#RID_STR_NO_RELATIVE.string.text
+msgid "Relative positioning is not allowed in this state."
+msgstr "Relatieve positionering is niet toegestaan in deze toestand."
+
+#: strings.src#RID_STR_NO_REFESH_AFTERLAST.string.text
+msgid ""
+"A row cannot be refreshed when the ResultSet is positioned after the last "
+"row."
+msgstr ""
+"Een rij kan niet worden vernieuwd wanneer de ResultSet achter de laatste rij "
+"is gepositioneerd."
+
+#: strings.src#RID_STR_NO_MOVETOINSERTROW_CALLED.string.text
+msgid ""
+"A new row cannot be inserted when the ResultSet is not first moved to the "
+"insert row."
+msgstr ""
+"Een nieuwe rij kan niet worden ingevoegd wanneer de ResultSet niet eerst "
+"naar de invoegrij is verplaatst."
+
+#: strings.src#RID_STR_NO_UPDATEROW.string.text
+msgid "A row cannot be modified in this state"
+msgstr "Een rij kan niet worden gewijzigd in deze status"
+
+#: strings.src#RID_STR_NO_DELETEROW.string.text
+msgid "A row cannot be deleted in this state."
+msgstr "Een rij kan niet worden verwijderd in deze toestand."
+
+#: strings.src#RID_STR_NO_TABLE_RENAME.string.text
+msgid "The driver does not support table renaming."
+msgstr "Het stuurprogramma ondersteunt niet het hernoemen van tabellen."
+
+#: strings.src#RID_STR_NO_ALTER_COLUMN_DEF.string.text
+msgid "The driver does not support the modification of column descriptions."
+msgstr ""
+"Het stuurprogramma ondersteunt niet het veranderen van kolombeschrijvingen."
+
+#: strings.src#RID_STR_COLUMN_ALTER_BY_NAME.string.text
+msgid ""
+"The driver does not support the modification of column descriptions by "
+"changing the name."
+msgstr ""
+"Het stuurprogramma ondersteunt niet het veranderen van kolombeschrijvingen "
+"door de naam te veranderen."
+
+#: strings.src#RID_STR_COLUMN_ALTER_BY_INDEX.string.text
+msgid ""
+"The driver does not support the modification of column descriptions by "
+"changing the index."
+msgstr ""
+"Het stuurprogramma ondersteunt niet het veranderen van kolombeschrijvingen "
+"door de index te veranderen."
+
+#: strings.src#RID_STR_FILE_DOES_NOT_EXIST.string.text
+msgid "The file \"$file$\" does not exist."
+msgstr "Het bestand \"$file$\" bestaat niet."
+
+#: strings.src#RID_STR_TABLE_DOES_NOT_EXIST.string.text
+msgid "There exists no table named \"$table$\"."
+msgstr "Er bestaat geen tabel met de naam \"$table$\"."
+
+#: strings.src#RID_STR_QUERY_DOES_NOT_EXIST.string.text
+msgid "There exists no query named \"$table$\"."
+msgstr "Er bestaat geen query met de naam \"$table$\"."
+
+#: strings.src#RID_STR_CONFLICTING_NAMES.string.text
+msgid ""
+"There are tables in the database whose names conflict with the names of "
+"existing queries. To make full use of all queries and tables, make sure they "
+"have distinct names."
+msgstr ""
+"De naam van sommige tabellen in de database conflicteert met de naam van "
+"bestaande query's. Zorg ervoor dat alle query's en tabellen duidelijk "
+"verschillende namen hebben om ze optimaal te kunnen benutten."
+
+#: strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.string.text
+msgid ""
+"The SQL command leading to this error is:\n"
+"\n"
+"$command$"
+msgstr ""
+"De SQL-opdracht die deze fout veroorzaakt is:\n"
+"\n"
+"$command$"
+
+#: strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.string.text
+msgid "The SQL command does not describe a result set."
+msgstr "De SQL-opdracht beschrijft geen resultatenset."
+
+#: strings.src#RID_STR_NAME_MUST_NOT_BE_EMPTY.string.text
+msgid "The name must not be empty."
+msgstr "De naam mag niet leeg zijn."
+
+#: strings.src#RID_STR_NO_NULL_OBJECTS_IN_CONTAINER.string.text
+msgid "The container cannot contain NULL objects."
+msgstr "De container kan geen NULL-objecten bevatten."
+
+#: strings.src#RID_STR_NAME_ALREADY_USED.string.text
+msgid "There already is an object with the given name."
+msgstr "Er is al een object met de gegeven naam."
+
+#: strings.src#RID_STR_OBJECT_CONTAINER_MISMATCH.string.text
+msgid "This object cannot be part of this container."
+msgstr "Dit object kan geen deel uitmaken van deze container."
+
+#: strings.src#RID_STR_OBJECT_ALREADY_CONTAINED.string.text
+msgid "The object already is, with a different name, part of the container."
+msgstr ""
+"Dit object maakt, onder een andere naam, reeds deel uit van de container."
+
+#: strings.src#RID_STR_NAME_NOT_FOUND.string.text
+msgid "Unable to find the document '$name$'."
+msgstr "Document '$name$' werd niet gevonden."
+
+#: strings.src#RID_STR_ERROR_WHILE_SAVING.string.text
+msgid ""
+"Could not save the document to $location$:\n"
+"$message$"
+msgstr ""
+"Kon het document niet opslaan naar $location$:\n"
+"$message$"
+
+#: strings.src#RID_NO_SUCH_DATA_SOURCE.string.text
+msgid ""
+"Error accessing data source '$name$':\n"
+"$error$"
+msgstr ""
+"Fout bij toegang tot gegevensbron '$name$':\n"
+"$error$"
+
+#: strings.src#RID_STR_NO_SUB_FOLDER.string.text
+msgid "There exists no folder named \"$folder$\"."
+msgstr "Er bestaat geen map genaamd \"$folder$\"."
+
+#: strings.src#RID_STR_NO_DELETE_BEFORE_AFTER.string.text
+msgid "Cannot delete the before-first or after-last row."
+msgstr "Kan de voorlaatste rij of de rij na de laatste niet verwijderen."
+
+#: strings.src#RID_STR_NO_DELETE_INSERT_ROW.string.text
+msgid "Cannot delete the insert-row."
+msgstr "Kan de invoeg-rij niet verwijderen."
+
+#: strings.src#RID_STR_RESULT_IS_READONLY.string.text
+msgid "Result set is read only."
+msgstr "De resultaten zijn alleen-lezen."
+
+#: strings.src#RID_STR_NO_DELETE_PRIVILEGE.string.text
+msgid "DELETE privilege not available."
+msgstr "privilege DELETE is niet beschikbaar."
+
+#: strings.src#RID_STR_ROW_ALREADY_DELETED.string.text
+msgid "Current row is already deleted."
+msgstr "Huidige rij is al verwijderd."
+
+#: strings.src#RID_STR_UPDATE_FAILED.string.text
+msgid "Current row could not be updated."
+msgstr "Huidige rij kon niet worden bijgewerkt."
+
+#: strings.src#RID_STR_NO_INSERT_PRIVILEGE.string.text
+msgid "INSERT privilege not available."
+msgstr "privilege INSERT is niet beschikbaar."
+
+#: strings.src#RID_STR_INTERNAL_ERROR.string.text
+msgid "Internal error: no statement object provided by the database driver."
+msgstr ""
+"Interne fout: geen instructie-object gegeven door besturingsprogramma van de "
+"database."
+
+#: strings.src#RID_STR_EXPRESSION1.string.text
+msgid "Expression1"
+msgstr "Expressie1"
+
+#: strings.src#RID_STR_NO_SQL_COMMAND.string.text
+msgid "No SQL command was provided."
+msgstr "Er werd geen SQL-opdracht gegeven."
+
+#: strings.src#RID_STR_INVALID_INDEX.string.text
+msgid "Invalid column index."
+msgstr "Ongeldige kolomindex."
+
+#: strings.src#RID_STR_INVALID_CURSOR_STATE.string.text
+msgid "Invalid cursor state."
+msgstr "Ongeldige cursorstatus."
+
+#: strings.src#RID_STR_CURSOR_BEFORE_OR_AFTER.string.text
+msgid "The cursor points to before the first or after the last row."
+msgstr "De cursor wijst naar vóór de eerste of na de laatste rij."
+
+#: strings.src#RID_STR_NO_BOOKMARK_BEFORE_OR_AFTER.string.text
+msgid "The rows before the first and after the last row don't have a bookmark."
+msgstr "De rijen vóór de eerste en na de laatste rij hebben geen bladwijzer."
+
+#: strings.src#RID_STR_NO_BOOKMARK_DELETED.string.text
+msgid "The current row is deleted, and thus doesn't have a bookmark."
+msgstr "De huidige rij is verwijderd en dus heeft die geen bladwijzer."
+
+#: strings.src#RID_STR_NO_EMBEDDING.string.text
+msgid "Embedding of database documents is not supported."
+msgstr "Inbedding van databasedocumenten wordt niet ondersteund."
+
+#: strings.src#RID_STR_CONNECTION_REQUEST.string.text
+msgid "A connection for the following URL was requested \"$name$\"."
+msgstr "Er werd een verbinding voor de volgende URL gevraagd \"$name$\"."
+
+#: strings.src#RID_STR_MISSING_EXTENSION.string.text
+msgid "The extension is not installed."
+msgstr "De extensie is niet geïnstalleerd."

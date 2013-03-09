@@ -1,0 +1,44 @@
+
+#: solver.src#RID_SOLVER_COMPONENT.string.text
+msgid "%PRODUCTNAME Linear Solver"
+msgstr "%PRODUCTNAME سىزىقلىق يەشكۈچ"
+
+#: solver.src#RID_PROPERTY_NONNEGATIVE.string.text
+msgid "Assume variables as non-negative"
+msgstr "مۆلچەر ئۆزگەرگۈچى مىقدار مەنپى سان ئەمەس"
+
+#: solver.src#RID_PROPERTY_INTEGER.string.text
+msgid "Assume variables as integer"
+msgstr "مۆلچە ئۆزگەرگۈچى مىقدار پۈتۈن سان"
+
+#: solver.src#RID_PROPERTY_TIMEOUT.string.text
+msgid "Solving time limit (seconds)"
+msgstr "يېشىش ۋاقىت چېكى (سېكۇنت)"
+
+#: solver.src#RID_PROPERTY_EPSILONLEVEL.string.text
+msgid "Epsilon level (0-3)"
+msgstr "ئەڭ كىچىك مۇسبەت سان دەرىجىسى (0-3)"
+
+#: solver.src#RID_PROPERTY_LIMITBBDEPTH.string.text
+msgid "Limit branch-and-bound depth"
+msgstr "تارماق چېگرا چوڭقۇرلۇق چەكلىمىسى"
+
+#: solver.src#RID_ERROR_NONLINEAR.string.text
+msgid "The model is not linear."
+msgstr "بۇ بۆلەك سىزىقلىق ئەمەس."
+
+#: solver.src#RID_ERROR_EPSILONLEVEL.string.text
+msgid "The epsilon level is invalid."
+msgstr "ئەڭ كىچىك مۇسبەت سان دەرىجىسى ئىناۋەتسىز."
+
+#: solver.src#RID_ERROR_INFEASIBLE.string.text
+msgid "The model is infeasible. Check limiting conditions."
+msgstr "بۆلەكنى ئىشلەتكىلى بولمايدۇ. چەكلەش شەرتىنى تەكشۈرۈڭ."
+
+#: solver.src#RID_ERROR_UNBOUNDED.string.text
+msgid "The model is unbounded."
+msgstr "بۆلەكنىڭ چېگرىسى يوق."
+
+#: solver.src#RID_ERROR_TIMEOUT.string.text
+msgid "The time limit was reached."
+msgstr "ۋاقىت چەكلىمىسىگە يەتتى."

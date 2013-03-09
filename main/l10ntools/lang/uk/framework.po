@@ -1,0 +1,231 @@
+
+#: resource.src#STR_MENU_ADDONS.string.text
+msgid "Add-Ons"
+msgstr "~Доповнення"
+
+#: resource.src#STR_MENU_ADDONHELP.string.text
+msgid "Add-~On Help"
+msgstr "~Довідка з доповнень"
+
+#: resource.src#STR_MENU_HEADFOOTALL.string.text
+msgid "All"
+msgstr "Усі"
+
+#: resource.src#STR_UPDATEDOC.string.text
+msgid "~Update"
+msgstr "~Оновити"
+
+#: resource.src#STR_CLOSEDOC_ANDRETURN.string.text
+msgid "~Close & Return to "
+msgstr "~Закрити та повернутися до"
+
+#: resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_VISIBLEBUTTON.menuitem.text
+msgid "Visible ~Buttons"
+msgstr "Показати ~кнопки"
+
+#: resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_CUSTOMIZETOOLBAR.menuitem.text
+msgid "~Customize Toolbar..."
+msgstr "~Налаштувати панелі інструментів..."
+
+#: resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_DOCKTOOLBAR.menuitem.text
+msgid "~Dock Toolbar"
+msgstr "~Закріпити панель інструментів"
+
+#: resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_DOCKALLTOOLBAR.menuitem.text
+msgid "Dock ~All Toolbars"
+msgstr "Закріпити ~всі панелі інструментів"
+
+#: resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_LOCKTOOLBARPOSITION.menuitem.text
+msgid "~Lock Toolbar Position"
+msgstr "~Блокувати позицію панелі інструментів"
+
+#: resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_CLOSE.menuitem.text
+msgid "Close ~Toolbar"
+msgstr "Закрити п~анель інструментів"
+
+#: resource.src#STR_SAVECOPYDOC.string.text
+msgid "Save Copy ~as..."
+msgstr "Зберегти копію ~як..."
+
+#: resource.src#STR_NODOCUMENT.string.text
+msgid "No Documents"
+msgstr "Немає документів"
+
+#: resource.src#STR_TOOLBAR_TITLE_ADDON.string.text
+msgid "Add-On %num%"
+msgstr "Розширення %num%"
+
+#: resource.src#STR_STATUSBAR_LOGOTEXT.string.text
+msgid "A %PRODUCTNAME product by Oracle"
+msgstr ""
+
+#: resource.src#DLG_LICENSE.FT_INFO1.fixedtext.text
+msgid "Please follow these steps to proceed with the installation:"
+msgstr "Виконайте наступні дії, щоб продовжити встановлення:"
+
+#: resource.src#DLG_LICENSE.FT_INFO2_1.fixedtext.text
+msgid "1."
+msgstr "1."
+
+#: resource.src#DLG_LICENSE.FT_INFO2.fixedtext.text
+msgid ""
+"View the complete License Agreement. Please use the scroll bar or the '%"
+"PAGEDOWN' button in this dialog to view the entire license text."
+msgstr ""
+"Перегляньте повністю ліцензійну угоду. Користуйтесь смугою прокрутки або "
+"кнопкою '%PAGEDOWN' для перегляду тексту ліцензії."
+
+#: resource.src#DLG_LICENSE.PB_PAGEDOWN.pushbutton.text
+msgid "Scroll Down"
+msgstr "Прокрутити вниз"
+
+#: resource.src#DLG_LICENSE.FT_INFO3_1.fixedtext.text
+msgid "2."
+msgstr "2."
+
+#: resource.src#DLG_LICENSE.FT_INFO3.fixedtext.text
+msgid "Accept the License Agreement."
+msgstr "Прийняти ліцензійну угоду."
+
+#: resource.src#DLG_LICENSE.LICENSE_ACCEPT.string.text
+msgid "~Accept"
+msgstr "~Прийняти"
+
+#: resource.src#DLG_LICENSE.LICENSE_NOTACCEPT.string.text
+msgid "Decline"
+msgstr "Відхилити"
+
+#: resource.src#DLG_LICENSE.modaldialog.text
+msgid "License Agreement"
+msgstr "Ліцензійна угода"
+
+#: resource.src#STR_FULL_DISC_RETRY_BUTTON.string.text
+msgid "Retry"
+msgstr "Повторити"
+
+#: resource.src#STR_FULL_DISC_MSG.string.text
+msgid ""
+"%PRODUCTNAME could not save important internal information due to "
+"insufficient free disk space at the following location:\n"
+"%PATH\n"
+"\n"
+"You will not be able to continue working with %PRODUCTNAME without "
+"allocating more free disk space at that location.\n"
+"\n"
+"Press the 'Retry' button after you have allocated more free disk space to "
+"retry saving the data.\n"
+"\n"
+msgstr ""
+"%PRODUCTNAME не може зберігати важливу внутрішню інформацію через брак місця "
+"на диску за наступним шляхом:\n"
+"%PATH\n"
+"\n"
+"Буде неможливо продовжити роботу з %PRODUCTNAME без виділення додаткового "
+"вільного місця на диску за цією адресою.\n"
+"\n"
+"Після виділення додаткового місця на диску натисніть кнопку \"Повторити\" для "
+"повторення спроби збереження даних.\n"
+"\n"
+
+#: resource.src#STR_RESTORE_TOOLBARS.string.text
+msgid "~Reset"
+msgstr "~Відновити"
+
+#: resource.src#STR_CORRUPT_UICFG_SHARE.string.text
+msgid ""
+"An error occurred while loading the user interface configuration data. The "
+"application will be terminated now.\n"
+"Please try to reinstall the application."
+msgstr ""
+"Помилка при завантаженні конфігурації інтерфейсу користувача. Програму буде "
+"закрито.\n"
+"Спробуйте перевстановити програму."
+
+#: resource.src#STR_CORRUPT_UICFG_USER.string.text
+msgid ""
+"An error occurred while loading the user interface configuration data. The "
+"application will be terminated now.\n"
+"Please try to remove your user profile for the application."
+msgstr ""
+"Помилка при завантаженні конфігурації інтерфейсу користувача. Програму буде "
+"закрито.\n"
+"Спробуйте видалити профіль користувача програми."
+
+#: resource.src#STR_CORRUPT_UICFG_GENERAL.string.text
+msgid ""
+"An error occurred while loading the user interface configuration data. The "
+"application will be terminated now.\n"
+"Please try to remove your user profile for the application first or try to "
+"reinstall the application."
+msgstr ""
+"Помилка завантаження конфігурацій інтерфейсу користувача. Програму буде "
+"закрито.\n"
+"Спробуйте видалити профіль користувача та перевстановити програму."
+
+#: resource.src#STR_UNTITLED_DOCUMENT.string.text
+msgid "Untitled"
+msgstr "Без назви"
+
+#: resource.src#STR_LANGSTATUS_MULTIPLE_LANGUAGES.string.text
+msgid "Multiple Languages"
+msgstr "Декілька мов"
+
+#: resource.src#STR_LANGSTATUS_NONE.string.text
+msgid "None (Do not check spelling)"
+msgstr "Немає (не перевіряти орфографію)"
+
+#: resource.src#STR_RESET_TO_DEFAULT_LANGUAGE.string.text
+msgid "Reset to Default Language"
+msgstr ""
+
+#: resource.src#STR_LANGSTATUS_MORE.string.text
+msgid "More..."
+msgstr "Додатково..."
+
+#: resource.src#STR_SET_LANGUAGE_FOR_SELECTION.string.text
+msgid "Set Language for Selection"
+msgstr "Встановити мову для виділення"
+
+#: resource.src#STR_SET_LANGUAGE_FOR_PARAGRAPH.string.text
+msgid "Set Language for Paragraph"
+msgstr "Встановити мову для абзацу"
+
+#: resource.src#STR_SET_LANGUAGE_FOR_ALL_TEXT.string.text
+msgid "Set Language for all Text"
+msgstr "Встановити мову для всього тексту"
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_WELCOME.string.text
+msgid "Welcome to"
+msgstr "Ласкаво просимо до"
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_WELCOMEPRODUCT.string.text
+msgid "%PRODUCTNAME"
+msgstr "%PRODUCTNAME"
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_CREATE.string.text
+msgid "Create a new document"
+msgstr "Створити новий документ"
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_TEMPLATE.string.text
+msgid "~Templates..."
+msgstr "~Шаблони..."
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_FILE.string.text
+msgid "~Open..."
+msgstr ""
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_EXTHELP.string.text
+msgid "Add new features to %PRODUCTNAME"
+msgstr "Додати нову властивість до %PRODUCTNAME"
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_REGHELP.string.text
+msgid "Register your %PRODUCTNAME"
+msgstr "Зареєструвати вашу копію %PRODUCTNAME"
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_INFOHELP.string.text
+msgid "Get more information about %PRODUCTNAME"
+msgstr "Отримати додаткову інформацію про %PRODUCTNAME"
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_TPLREP.string.text
+msgid "Get more templates for %PRODUCTNAME"
+msgstr "Завантажити ще шаблони для %PRODUCTNAME"

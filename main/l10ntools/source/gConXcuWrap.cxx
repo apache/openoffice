@@ -115,7 +115,7 @@ void convert_xcu::startCollectData(char *syyText)
     if (sTag.substr(nL,5) != "en-US")
     {
       std::string sErr = sTag.substr(nL,5) + " is not en-US";
-      showError((char *)sErr.c_str());
+      mcMemory.showError(sErr);
     }
     else
       mbNoCollectingData = false;
@@ -168,9 +168,9 @@ void convert_xcu::stopCollectData(char *syyText)
     }
 #endif
   }
-  else
-    if (useText.size())
-      mcMemory.setEnUsKey(miLineNo, useKey, "value", useText);
+//JIX  else
+//JIX    if (useText.size())
+//JIX      mcMemory.setEnUsKey(miLineNo, useKey, "value", useText);
 }  
 
 

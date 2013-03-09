@@ -1,0 +1,259 @@
+
+#: strings.src#RID_BASELISTBOX_ERROR_FILLLIST.string.text
+msgid "The contents of a combo box or list field could not be determined."
+msgstr "Неможливо визначити зміст поля зі списком або поля списку."
+
+#: strings.src#RID_STR_IMPORT_GRAPHIC.string.text
+msgid "Insert graphics"
+msgstr "Вставити графічний об'єкт"
+
+#: strings.src#RID_STR_CONTROL_SUBSTITUTED_NAME.string.text
+msgid "substituted"
+msgstr "замінено"
+
+#: strings.src#RID_STR_CONTROL_SUBSTITUTED_EPXPLAIN.string.text
+msgid ""
+"An error occurred while this control was being loaded. It was therefore "
+"replaced with a placeholder."
+msgstr ""
+"Помилка при завантаженні елементу керування. Тому його замінено на полем "
+"заміни."
+
+#: strings.src#RID_STR_READERROR.string.text
+msgid "Error reading data from database"
+msgstr "Помилка при читанні з бази даних"
+
+#: strings.src#RID_STR_CONNECTERROR.string.text
+msgid "Connection failed"
+msgstr "Підключення не встановлено"
+
+#: strings.src#RID_ERR_LOADING_FORM.string.text
+msgid "The data content could not be loaded."
+msgstr "Не вдається завантажити дані."
+
+#: strings.src#RID_ERR_REFRESHING_FORM.string.text
+msgid "The data content could not be updated"
+msgstr "Не вдається оновити зміст даних"
+
+#: strings.src#RID_STR_ERR_INSERTRECORD.string.text
+msgid "Error inserting the new record"
+msgstr "Помилка при вставці нового запису"
+
+#: strings.src#RID_STR_ERR_UPDATERECORD.string.text
+msgid "Error updating the current record"
+msgstr "Помилка при оновленні поточного запису"
+
+#: strings.src#RID_STR_ERR_DELETERECORD.string.text
+msgid "Error deleting the current record"
+msgstr "Помилка видалення поточного запису"
+
+#: strings.src#RID_STR_ERR_DELETERECORDS.string.text
+msgid "Error deleting the specified records"
+msgstr "Помилка видалення вказаного запису"
+
+#: strings.src#RID_STR_NEED_NON_NULL_OBJECT.string.text
+msgid "The object cannot be NULL."
+msgstr "Об'єкт не може бути NULL."
+
+#: strings.src#RID_STR_OPEN_GRAPHICS.string.text
+msgid "Insert graphics from..."
+msgstr "Вставити графічні об'єкти з..."
+
+#: strings.src#RID_STR_CLEAR_GRAPHICS.string.text
+msgid "Remove graphics"
+msgstr "Видалити графічні об'єкти"
+
+#: strings.src#RID_STR_INVALIDSTREAM.string.text
+msgid "The given stream is invalid."
+msgstr "Даний потік некоректний."
+
+#: strings.src#RID_STR_SYNTAXERROR.string.text
+msgid "Syntax error in query expression"
+msgstr "Синтаксична помилка у виразі запиту"
+
+#: strings.src#RID_STR_INCOMPATIBLE_TYPES.string.text
+msgid ""
+"The value types supported by the binding cannot be used for exchanging data "
+"with this control."
+msgstr ""
+"Значення, що підтримується зв'язкою не може бути використане для обміну "
+"даних з цим елементом керування."
+
+#: strings.src#RID_STR_LABEL_RECORD.string.text
+msgid "Record"
+msgstr "Запис"
+
+#: strings.src#RID_STR_INVALID_VALIDATOR.string.text
+msgid ""
+"The control is connected to an external value binding, which at the same "
+"time acts as validator. You need to revoke the value binding, before you can "
+"set a new validator."
+msgstr ""
+"Елемент керування, що підключається до вашого зовнішнього зв'язуючого "
+"значення, яке в одночасно виступає як перевірочний елемент. Необхідно "
+"роз'єднати зв'язуюче значення, перш ніж зможете встановити новий "
+"перевірочний елемент."
+
+#: strings.src#RID_STR_LABEL_OF.string.text
+msgid "of"
+msgstr "розмір:"
+
+#: strings.src#RID_STR_QUERY_SAVE_MODIFIED_ROW.string.text
+msgid ""
+"The content of the current form has been modified.\n"
+"Do you want to save your changes?"
+msgstr ""
+"Зміст цієї форми було змінено.\n"
+"Зберегти зміни?"
+
+#: strings.src#RID_STR_COULD_NOT_SET_ORDER.string.text
+msgid "Error setting the sort criteria"
+msgstr "Помилка при встановленні умови сортування"
+
+#: strings.src#RID_STR_COULD_NOT_SET_FILTER.string.text
+msgid "Error setting the filter criteria"
+msgstr "Помилка при встановленні умови фільтру"
+
+#: strings.src#RID_STR_FEATURE_REQUIRES_PARAMETERS.string.text
+msgid "To execute this function, parameters are needed."
+msgstr "Параметри є обов'язковими для запуску цієї функції."
+
+#: strings.src#RID_STR_FEATURE_NOT_EXECUTABLE.string.text
+msgid "This function cannot be executed, but is only for status queries."
+msgstr "Ця функція не може бути запущена, вона лише для запитів стану."
+
+#: strings.src#RID_STR_FEATURE_UNKNOWN.string.text
+msgid "Unknown function."
+msgstr "Невідома функція."
+
+#: xforms.src#RID_STR_XFORMS_NO_BINDING_EXPRESSION.string.text
+msgid "Please enter a binding expression."
+msgstr "Введіть вираз зв'язування."
+
+#: xforms.src#RID_STR_XFORMS_INVALID_BINDING_EXPRESSION.string.text
+msgid "This is an invalid binding expression."
+msgstr "Цей вираз зв'язування некоректний."
+
+#: xforms.src#RID_STR_XFORMS_INVALID_VALUE.string.text
+msgid "Value is invalid."
+msgstr "Значення некоректне."
+
+#: xforms.src#RID_STR_XFORMS_REQUIRED.string.text
+msgid "A value is required."
+msgstr "Потрібно вказати значення."
+
+#: xforms.src#RID_STR_XFORMS_INVALID_CONSTRAINT.string.text
+msgid "The constraint '$1' not validated."
+msgstr "Обмеження '$1' не перевірено."
+
+#: xforms.src#RID_STR_XFORMS_VALUE_IS_NOT_A.string.text
+msgid "The value is not of the type '$2'."
+msgstr "Значення має бути типу '$2'."
+
+#: xforms.src#RID_STR_XFORMS_VALUE_MAX_INCL.string.text
+msgid "The value must be smaller than or equal to $2."
+msgstr "Величина має бути меншою або дорівнювати $2."
+
+#: xforms.src#RID_STR_XFORMS_VALUE_MAX_EXCL.string.text
+msgid "The value must be smaller than $2."
+msgstr "Величина має бути меншою за $2."
+
+#: xforms.src#RID_STR_XFORMS_VALUE_MIN_INCL.string.text
+msgid "The value must be greater than or equal to $2."
+msgstr "Величина має бути більшою або дорівнювати $2."
+
+#: xforms.src#RID_STR_XFORMS_VALUE_MIN_EXCL.string.text
+msgid "The value must be greater than $2."
+msgstr "Величина має бути більшою за $2."
+
+#: xforms.src#RID_STR_XFORMS_VALUE_PATTERN.string.text
+msgid "The value does not match the pattern '$2'."
+msgstr "Величина не відповідає шаблону '$2'."
+
+#: xforms.src#RID_STR_XFORMS_VALUE_TOTAL_DIGITS.string.text
+msgid "$2 digits allowed at most."
+msgstr "Допустимо $2 цифр."
+
+#: xforms.src#RID_STR_XFORMS_VALUE_FRACTION_DIGITS.string.text
+msgid "$2 fraction digits allowed at most."
+msgstr "Допустимо $2 цифр після коми."
+
+#: xforms.src#RID_STR_XFORMS_VALUE_LENGTH.string.text
+msgid "The string must be $2 characters long."
+msgstr "Рядок має містити $2 символи."
+
+#: xforms.src#RID_STR_XFORMS_VALUE_MIN_LENGTH.string.text
+msgid "The string must be at least $2 characters long."
+msgstr "Рядок має містити принаймні $2 символи."
+
+#: xforms.src#RID_STR_XFORMS_VALUE_MAX_LENGTH.string.text
+msgid "The string can only be $2 characters long at most."
+msgstr "Рядок може містити максимум $2 символів."
+
+#: xforms.src#RID_STR_DATATYPE_STRING.string.text
+msgid "String"
+msgstr "Рядки"
+
+#: xforms.src#RID_STR_DATATYPE_URL.string.text
+msgid "Hyperlink"
+msgstr "Гіперпосилання"
+
+#: xforms.src#RID_STR_DATATYPE_BOOLEAN.string.text
+msgid "True/False (Boolean)"
+msgstr "True/False (Булеве)"
+
+#: xforms.src#RID_STR_DATATYPE_DECIMAL.string.text
+msgid "Decimal"
+msgstr "Десятковий"
+
+#: xforms.src#RID_STR_DATATYPE_FLOAT.string.text
+msgid "Floating point"
+msgstr "Плаваюча кома"
+
+#: xforms.src#RID_STR_DATATYPE_DOUBLE.string.text
+msgid "Double"
+msgstr "Подвійний"
+
+#: xforms.src#RID_STR_DATATYPE_DATE.string.text
+msgid "Date"
+msgstr "Дата"
+
+#: xforms.src#RID_STR_DATATYPE_TIME.string.text
+msgid "Time"
+msgstr "Час"
+
+#: xforms.src#RID_STR_DATATYPE_DATETIME.string.text
+msgid "Date and Time"
+msgstr "Дата та час"
+
+#: xforms.src#RID_STR_DATATYPE_YEARMONTH.string.text
+msgid "Month and year"
+msgstr "Місяць та рік"
+
+#: xforms.src#RID_STR_DATATYPE_YEAR.string.text
+msgid "Year"
+msgstr "Рік"
+
+#: xforms.src#RID_STR_DATATYPE_MONTHDAY.string.text
+msgid "Month and day"
+msgstr "Місяць та день"
+
+#: xforms.src#RID_STR_DATATYPE_MONTH.string.text
+msgid "Month"
+msgstr "Місяць"
+
+#: xforms.src#RID_STR_DATATYPE_DAY.string.text
+msgid "Day"
+msgstr "День"
+
+#: xforms.src#RID_STR_XFORMS_CANT_EVALUATE.string.text
+msgid "Error during evaluation"
+msgstr "Помилка при виконанні"
+
+#: xforms.src#RID_STR_XFORMS_PATTERN_DOESNT_MATCH.string.text
+msgid "The string '$1' does not match the required regular expression '$2'."
+msgstr "Рядок '$1' не відповідає необхідному регулярному виразу '$2'."
+
+#: xforms.src#RID_STR_XFORMS_BINDING_UI_NAME.string.text
+msgid "Binding"
+msgstr "Зв'язування"

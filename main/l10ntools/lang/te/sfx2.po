@@ -1,0 +1,2760 @@
+
+#: view.src#STR_NODEFPRINTER.string.text
+msgid ""
+"No default printer found.\n"
+"Please choose a printer and try again."
+msgstr ""
+"అప్రమేయ ముద్రణా యంత్రం కనుక్కొనబడలేదు.\n"
+"దయచేసి ముద్రణా యంత్రంను ఎంచుకొని మరల ప్రయత్నించుము."
+
+#: view.src#STR_NOSTARTPRINTER.string.text
+msgid ""
+"Could not start printer.\n"
+"Please check your printer configuration."
+msgstr ""
+"ముద్రణా యంత్రం ప్రారంభంకాదు.\n"
+"దయచేసి మీ ముద్రణా యంత్రపు రూపశిల్పంను తనిఖీ చేపుకొనుము."
+
+#: view.src#STR_PRINTER_NOTAVAIL.string.text
+msgid ""
+"This document has been formatted for the printer $1. The specified printer "
+"is not available. \n"
+"Do you want to use the standard printer $2 ?"
+msgstr ""
+"ఈ పత్రము $1 ముద్రణా యంత్రం కొరకు మార్చబడినది. నిర్దేశిత ముద్రణా యంత్రం "
+"అందుబాటులో లేదు.\n"
+"మీరు $2 ముద్రణా యంత్రంను ఉపయోగించాలి అనుకుంటున్నారా?"
+
+#: view.src#STR_PRINT_OPTIONS.string.text
+msgid "Options..."
+msgstr "ఇచ్ఛాపూర్వకాలు..."
+
+#: view.src#STR_PRINT_OPTIONS_TITLE.string.text
+msgid "Printer Options"
+msgstr "ముద్రణా యంత్ర ఇచ్ఛాపూర్వకాలు"
+
+#: view.src#STR_ERROR_PRINTER_BUSY.string.text
+msgid "Printer busy"
+msgstr "ముద్రణా యంత్రమున కు తీరికలేదు"
+
+#: view.src#STR_ERROR_PRINT.string.text
+msgid "Error while printing"
+msgstr "ముద్రించుటలో దోషం"
+
+#: view.src#STR_PRINTING.string.text
+msgid "Printing"
+msgstr "ముద్రించుచున్నది"
+
+#: view.src#STR_PAGE.string.text
+msgid "Page "
+msgstr "పుట"
+
+#: view.src#STR_ERROR_SAVE_TEMPLATE.string.text
+msgid "Error saving template "
+msgstr "మాదిరి బద్రపరచు దోషము."
+
+#: view.src#STR_READONLY.string.text
+msgid " (read-only)"
+msgstr "(చదువుట-మాత్రమే)"
+
+#: view.src#STR_PRINT_NEWORI.string.text
+msgctxt "view.src#STR_PRINT_NEWORI.string.text"
+msgid ""
+"The page size and orientation have been modified.\n"
+"Would you like to save the new settings in the\n"
+"active document?"
+msgstr "పరిమాణం మరియు వలె లోపల?"
+
+#: view.src#STR_PRINT_NEWSIZE.string.text
+msgid ""
+"The page size has been modified.\n"
+"Should the new settings be saved\n"
+"in the active document?"
+msgstr ""
+"పుట పరిమాణము మార్చబడినది.\n"
+"క్రియాశీల పత్రములో కొత్త అమరికలను బద్రపరుచవలెనా?"
+
+#: view.src#STR_PRINT_NEWORISIZE.string.text
+msgctxt "view.src#STR_PRINT_NEWORISIZE.string.text"
+msgid ""
+"The page size and orientation have been modified.\n"
+"Would you like to save the new settings in the\n"
+"active document?"
+msgstr "పరిమాణం మరియు వలె లోపల?"
+
+#: view.src#STR_PREVIEW_DOCINFO.string.text
+msgid ""
+"<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$("
+"TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt>"
+"<b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
+msgstr ""
+"<హెచ్  టిఎంఎల్><భాగము బిజివర్ణము=\"#సి0సి0సి0\"><అక్షరశైలి ముఖము=\"ఏరియల్\"><డిఎ"
+"ల్><డిటి><బి>శీర్షిక:</బి><డిడి>$(శీర్షిక)<డిటి><బి>విషయము:</బి><డిడి>$(వైవి"
+"ద్యాంశం)<డిటి><బి>మీటపదములు:</బి><డిడి>$(మీటపదములు)<డిటి><బి>వివరణ:</బి><డిడ"
+"ి>$(పాఠము)</డిఎల్></అక్షరశైలి></భాగము></హెచ్  టిఎంఎల్>"
+
+#: view.src#STR_PREVIEW_NODOCINFO.string.text
+msgid ""
+"<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document "
+"properties found.</B></FONT></P></BODY></HTML>"
+msgstr ""
+"<హెచ్  టిఎంఎల్><భాగము బిజివర్ణము=\"#సి0సి0సి0\"><బిఆర్><బిఆర్><పి><అక్షరశైలి "
+"ముఖము=\"ఏరియల్\"><బి>పత్ర లక్షణములు "
+"దొరకలేదు.</బి></అక్షరశైలి></పి></భాగము></హెచ్  టిఎంఎల్>"
+
+#: view.src#MSG_CANT_CLOSE.infobox.text
+msgid ""
+"The document cannot be closed because a\n"
+" print job is being carried out."
+msgstr ""
+"పత్రము మూయబడి లేదు ఎందుకనగా\n"
+"ముద్రణా యంత్రము పనిజరుగుచున్నది."
+
+#: view.src#DLG_PRINTMONITOR_TEXT.#define.text
+msgid "Print Monitor"
+msgstr "దర్శిని ముద్రించు"
+
+#: view.src#DLG_PRINTMONITOR.FT_PRINTING.fixedtext.text
+msgid "is being printed on"
+msgstr "పై ముద్రించు"
+
+#: view.src#DLG_PRINTMONITOR.STR_FT_PREPARATION.string.text
+msgid "is being prepared for printing"
+msgstr "ముద్రణ కొరకు సిద్దమౌతోంది"
+
+#: view.src#MSG_ERROR_SEND_MAIL.infobox.text
+msgid ""
+"An error occurred in sending the message. Possible errors could be a missing "
+"user account or a defective setup.\n"
+"Please check the %PRODUCTNAME settings or your e-mail program settings."
+msgstr ""
+"సందేశము పంపునపుడు దోషము ఎదురైనది. దోషములు మీ ఖాతాను తప్పించును. \n"
+"దయచేసి %PRODUCTNAMEఅమరికలు లేదా మీ ఇ-తపాలా కార్యక్రమములను  తనిఖీ చేసుకొనుము."
+
+#: view.src#MSG_QUERY_OPENASTEMPLATE.querybox.text
+msgid ""
+"This document cannot be edited, possibly due to missing access rights. Do "
+"you want to edit a copy of the document?"
+msgstr ""
+"అర్హతలను కోల్పోయిన కారణముచేత, ఈ పత్రము సవరించబడదు. ఈ పత్రము యొక్క నకలును "
+"సవరించాలనుకుంటున్నారా?"
+
+#: view.src#STR_REPAIREDDOCUMENT.string.text
+msgid " (repaired document)"
+msgstr "(బాగుచేయబడిన పత్రము)"
+
+#: view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.errorbox.text
+msgid ""
+"%PRODUCTNAME could not find a web browser on your system. Please check your "
+"Desktop Preferences or install a web browser (for example, Mozilla) in the "
+"default  location requested during the browser installation."
+msgstr ""
+"%PRODUCTNAME   మీ వ్యవస్థలో వల అన్వేషి దొరకలేదు. మీ డెస్క్టాప్ లక్షణాలను "
+"తనిఖీ చేయండి లేదా వల అన్వేషిని ప్రతిష్టించుము(ఉదాహరణకు, మోజిల్లా) అన్వేషిని "
+"ప్రతిష్టించునపుడు అప్రమేయ స్థానములు అడుగును."
+
+#: menu.src#STR_MENU_CFGITEM.string.text
+msgid "Configuration Menu"
+msgstr "రూపకరణ జాబితా"
+
+#: menu.src#STR_MENU_ADDONS.string.text
+msgid "~Add-Ons"
+msgstr "ఆడ్-ఆన్స్"
+
+#: menu.src#MN_CLIPBOARDFUNCS.SID_CUT.menuitem.text
+msgid "Cu~t"
+msgstr "కోయుట"
+
+#: menu.src#MN_CLIPBOARDFUNCS.SID_COPY.menuitem.text
+msgid "~Copy"
+msgstr "నకలు"
+
+#: menu.src#MN_CLIPBOARDFUNCS.SID_PASTE.menuitem.text
+msgid "~Paste"
+msgstr "అతికించు"
+
+#: menu.src#SID_WIN_FULLSCREEN.string.text
+msgid "Leave Full-Screen Mode"
+msgstr "తెర మొత్తం విధం వదిలివేయు"
+
+#: menu.src#STR_MENU_ADDONHELP.string.text
+msgid "Add-~On Help"
+msgstr "ఆడ్-ఆన్స్ సహాయము"
+
+#: menu.src#STR_MENU_SYNONYMS.string.text
+msgid "Synonyms"
+msgstr "పర్యాయపదాలు"
+
+#: menu.src#STR_MENU_NO_SYNONYM_FOUND.string.text
+msgid "(none)"
+msgstr "(ఏదీ కాదు)"
+
+#: menu.src#STR_MENU_THESAURUS.string.text
+msgid "~Thesaurus..."
+msgstr "పదకోశము (~T)"
+
+#: fltfnc.src#STR_FILTER_NOT_INSTALLED.string.text
+msgid ""
+"The selected filter $(FILTER) has not been installed.\n"
+"Would you like to do this now?"
+msgstr ""
+"ఎంచుకున్న వడపోత $(వడపోత)ప్రతిష్టించబడలేదు.\n"
+"అది చేయాలనుకుంటున్నారా?"
+
+#: fltfnc.src#STR_FILTER_CONSULT_SERVICE.string.text
+msgid ""
+"The selected filter $(FILTER) is not included in your edition.\n"
+"You can find information about orders on our homepage."
+msgstr ""
+"ఎంచుకున్న వడపోత $(వడపోత) మీ ప్రచూరణలో లేదు.\n"
+"మీకు పత్రముల సమాచారము నివాస పుటములో దొరుకును. "
+"X-Accelerator-Marker: ~\n"
+
+#: app.src#STR_NONAME.string.text
+msgid "Untitled"
+msgstr "శీర్షికలేని"
+
+#: app.src#STR_CLOSE.string.text
+msgid "Close"
+msgstr "మూయుము"
+
+#: app.src#STR_STYLE_FILTER_AUTO.string.text
+msgid "Automatic"
+msgstr "స్వయంచాలక"
+
+#: app.src#STR_STANDARD_SHORTCUT.string.text
+#, fuzzy
+msgctxt "app.src#STR_STANDARD_SHORTCUT.string.text"
+msgid "Standard"
+msgstr "నాన్యత"
+
+#: app.src#STR_BYTES.string.text
+msgid "Bytes"
+msgstr "బైట్స్"
+
+#: app.src#STR_KB.string.text
+msgid "KB"
+msgstr "కెబి"
+
+#: app.src#STR_MB.string.text
+msgid "MB"
+msgstr "ఎమ్ బి"
+
+#: app.src#STR_GB.string.text
+msgid "GB"
+msgstr "జిబి"
+
+#: app.src#MSG_QUERY_LASTVERSION.querybox.text
+msgid "Cancel all changes?"
+msgstr "అన్ని మార్పులను రద్దు చేయవలెనా?"
+
+#: app.src#RID_DOCALREADYLOADED_DLG.infobox.text
+msgid "Document already open."
+msgstr "పత్రము పూర్వమే తెరిచియున్నది."
+
+#: app.src#MSG_ERR_NO_WEBBROWSER_FOUND.errorbox.text
+msgid ""
+"%PRODUCTNAME could not find a web browser on your system. Please check your "
+"Desktop Preferences or install a web browser (for example, Mozilla) in the "
+"default  location requested during the browser installation."
+msgstr ""
+"%PRODUCTNAME   మీ వ్యవస్థలో వల అన్వేషి దొరకలేదు. మీ డెస్క్టాప్ లక్షణాలను "
+"తనిఖీ చేయండి లేదా వల అన్వేషిని ప్రతిష్టించుము(ఉదాహరణకు, మోజిల్లా) అన్వేషిని "
+"ప్రతిష్టించునపుడు అప్రమేయ స్థానములు అడుగును."
+
+#: app.src#GID_INTERN.string.text
+msgid "Internal"
+msgstr "అంతర్గత"
+
+#: app.src#GID_APPLICATION.string.text
+msgid "Application"
+msgstr "కార్యక్షేత్రం"
+
+#: app.src#GID_VIEW.string.text
+msgid "View"
+msgstr "దర్శనం"
+
+#: app.src#GID_DOCUMENT.string.text
+msgid "Documents"
+msgstr "పత్రములు"
+
+#: app.src#GID_EDIT.string.text
+msgid "Edit"
+msgstr "సరిచేయు"
+
+#: app.src#GID_MACRO.string.text
+msgid "BASIC"
+msgstr "ప్రాధమిక"
+
+#: app.src#GID_OPTIONS.string.text
+#, fuzzy
+msgid "Options"
+msgstr "ఇచ్ఛాపూర్వకాలు"
+
+#: app.src#GID_MATH.string.text
+msgid "Math"
+msgstr "మ్యాత్"
+
+#: app.src#GID_NAVIGATOR.string.text
+msgid "Navigate"
+msgstr "విహరించు"
+
+#: app.src#GID_INSERT.string.text
+msgid "Insert"
+msgstr "ప్రవేశించు"
+
+#: app.src#GID_FORMAT.string.text
+msgid "Format"
+msgstr "రూపలావణ్యం"
+
+#: app.src#GID_TEMPLATE.string.text
+#, fuzzy
+msgid "Templates"
+msgstr "మాదిరులు"
+
+#: app.src#GID_TEXT.string.text
+msgid "Text"
+msgstr "పాఠం"
+
+#: app.src#GID_FRAME.string.text
+msgid "Frame"
+msgstr "చట్రం"
+
+#: app.src#GID_GRAPHIC.string.text
+msgctxt "app.src#GID_GRAPHIC.string.text"
+msgid "Graphic"
+msgstr "గ్రాఫిక్"
+
+#: app.src#GID_TABLE.string.text
+msgid "Table"
+msgstr "పట్టిక"
+
+#: app.src#GID_ENUMERATION.string.text
+msgid "Numbering"
+msgstr "సంఖ్యనిచ్చుట"
+
+#: app.src#GID_DATA.string.text
+msgid "Data"
+msgstr "దత్తాంశం"
+
+#: app.src#GID_SPECIAL.string.text
+msgid "Special Functions"
+msgstr " ప్రత్యేక కార్యములు"
+
+#: app.src#GID_IMAGE.string.text
+msgid "Image"
+msgstr "ప్రతిరూపం"
+
+#: app.src#GID_CHART.string.text
+msgid "Chart"
+msgstr "పటము"
+
+#: app.src#GID_EXPLORER.string.text
+msgid "Explorer"
+msgstr "అన్వేషిణి"
+
+#: app.src#GID_CONNECTOR.string.text
+msgid "Connector"
+msgstr "సంధానం"
+
+#: app.src#GID_MODIFY.string.text
+msgid "Modify"
+msgstr "మార్చు"
+
+#: app.src#GID_DRAWING.string.text
+msgid "Drawing"
+msgstr "చిత్రలేఖనము"
+
+#: app.src#GID_CONTROLS.string.text
+msgid "Controls"
+msgstr "నియంత్రణలు"
+
+#: app.src#MSG_CANT_QUIT.infobox.text
+msgid ""
+"The application cannot be terminated at the moment.\n"
+"Please wait until all print jobs and/or\n"
+"OLE actions have finished and close all dialogs."
+msgstr ""
+"ఈ సమయమున కార్యక్షేత్రము అంతము కాదు.\n"
+" అన్ని ముద్రణ పనులు మరియు/లేదా ఓ ఎల్ ఇ క్రయలను ఆపి అన్ని వివరణలను ముగించు "
+"వరకు వేచియుండుము."
+
+#: app.src#STR_ISMODIFIED.string.text
+msgid "Do you want to save the changes to %1?"
+msgstr "మీరు %1కు మార్పులను బద్రపరచాలనుకుంటున్నారా?"
+
+#: app.src#STR_QUITAPP.string.text
+msgid "E~xit"
+msgstr "బయటకు దారి (~x)"
+
+#: app.src#RID_STR_HELP.string.text
+#, fuzzy
+msgid "Help"
+msgstr "సహాయం"
+
+#: app.src#RID_STR_NOAUTOSTARTHELPAGENT.string.text
+msgid "No automatic start at 'XX'"
+msgstr "'ఎక్స్ ఎక్స్'వద్ద స్వయంచాలకముగా మొదలుకాదు"
+
+#: app.src#RID_HELPBAR.string.text
+msgid "Help Bar"
+msgstr "సహాయపు పట్టి"
+
+#: app.src#RID_STR_HLPFILENOTEXIST.string.text
+msgid "The help file for this topic is not installed."
+msgstr "ఈ సంగతి యొక్క సహాయపు దస్త్రము ప్రతిష్టించలేదు."
+
+#: app.src#RID_ENVTOOLBOX.string.text
+msgid "Function Bar"
+msgstr "కార్యం పట్ట"
+
+#: app.src#RID_SPECIALCONFIG_ERROR.string.text
+msgid ""
+"An error has occurred in the special configuration.\n"
+"Please contact your administrator."
+msgstr ""
+"ప్రత్యేక రూపశిల్పం లో దోషము ఎదురైనది.\n"
+"దయచేసి మీ నిర్వాహకుడిని సంప్రదించుము."
+
+#: app.src#STR_QUICKSTART_EXIT.string.text
+msgid "Exit Quickstarter"
+msgstr "క్విక్ స్టార్ట్ నుండి బయటకు"
+
+#: app.src#STR_QUICKSTART_TIP.string.text
+msgid "%PRODUCTNAME %PRODUCTVERSION Quickstarter"
+msgstr "%PRODUCTNAME %PRODUCTVERSION ము క్విక్ స్టార్ట్"
+
+#: app.src#STR_QUICKSTART_FILEOPEN.string.text
+msgid "Open Document..."
+msgstr "తెరచు పత్రం."
+
+#: app.src#STR_QUICKSTART_FROMTEMPLATE.string.text
+msgid "From Template..."
+msgstr "మాదిరి నుంది..."
+
+#: app.src#STR_QUICKSTART_PRELAUNCH.string.text
+msgid "Load %PRODUCTNAME During System Start-Up"
+msgstr "వ్యవస్త మొదలైనపుడు %PRODUCTNAME ను దిగుమతి"
+
+#: app.src#STR_QUICKSTART_PRELAUNCH_UNX.string.text
+msgid "Disable systray Quickstarter"
+msgstr "త్వరగా ప్రారంభించునది"
+
+#: app.src#STR_QUICKSTART_LNKNAME.string.text
+msgid "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSIONము"
+
+#: app.src#STR_QUICKSTART_FILE.string.text
+msgid "File"
+msgstr "దస్త్రం"
+
+#: app.src#STR_QUICKSTART_STARTCENTER.string.text
+msgid "Startcenter"
+msgstr "కేంద్రప్రారంభము"
+
+#: app.src#STR_QUICKSTART_RECENTDOC.string.text
+msgid "Recent Documents"
+msgstr "ఇటీవలి పత్రములు"
+
+#: app.src#STR_QUERY_UPDATE_LINKS.string.text
+msgid "Update all links?"
+msgstr " అన్ని జోడింపులను తాజాపరుచవలెన?"
+
+#: app.src#STR_DDE_ERROR.string.text
+msgid "DDE link to % for % area % are not available."
+msgstr "%కు డిడిఇ జోడింపు %స్థానము %అందుబాటులోలేదు"
+
+#: app.src#RID_SECURITY_WARNING_HYPERLINK.warningbox.text
+msgid "This hyperlink is going to open \"%s\". Do you want to proceed?"
+msgstr ""
+"ఈ మహాతలానికి జోడింపు %ఎస్ ను తెరవబోతున్నది. మీరు ముందుకు "
+"కొనసాగాలనుకుంటున్నారా?"
+
+#: app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.warningbox.text
+msgid ""
+"For security reasons, the hyperlink cannot be executed.\n"
+"The stated address will not be opened."
+msgstr ""
+"సురక్షిత సంభందిత కారణాల వల్ల మహాతలానికి జోడింపును నడపలేదు \n"
+" పేర్కొన్న చిరునామా తెరవలేనిది"
+
+#: app.src#RID_SECURITY_WARNING_TITLE.string.text
+msgid "Security Warning"
+msgstr "రక్షణ హెచ్చరిక"
+
+#: app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.querybox.text
+msgid ""
+"Saving will remove all existing signatures.\n"
+"Do you want to continue saving the document?"
+msgstr ""
+"దాయుట వలన వున్న అన్ని సంతకములు తీసివేయబడతాయి.\n"
+"మీరు పత్రమును దాయవలెనని అనుకొనుచున్నారా?"
+
+#: app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.querybox.text
+msgid ""
+"The document has to be saved before it can be signed.\n"
+"Do you want to save the document?"
+msgstr ""
+"పత్రమును సంతకముచేసే కన్న ముందుగానే బద్రపరుచవలెను.\n"
+"పత్రమును బద్రపరుచవలెననుకుంటున్నారా?"
+
+#: app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.infobox.text
+msgid ""
+"This document must be saved in OpenDocument file format before it can be "
+"digitally signed."
+msgstr ""
+"ముందుగా ఈ పత్రమును డిజిటల్ లో సంతకముచేసి  తెరచుపత్ర దస్త్రములో బద్రపరుచుము."
+
+#: app.src#RID_XMLSEC_DOCUMENTSIGNED.string.text
+msgid " (Signed)"
+msgstr " (సంతకముచేసిన)"
+
+#: app.src#STR_STANDARD.string.text
+#, fuzzy
+msgctxt "app.src#STR_STANDARD.string.text"
+msgid "Standard"
+msgstr "నాన్యత"
+
+#: app.src#RID_SVXSTR_FILELINK.string.text
+msgid "Document"
+msgstr "పత్రము"
+
+#: app.src#STR_NONE.string.text
+msgid "- None -"
+msgstr "- ఏదీ కాదు -"
+
+#: app.src#RID_SVXSTR_GRAFIKLINK.string.text
+msgctxt "app.src#RID_SVXSTR_GRAFIKLINK.string.text"
+msgid "Graphic"
+msgstr "గ్రాఫిక్"
+
+#: app.src#STR_SFX_FILTERNAME_ALL.string.text
+msgid "All files (*.*)"
+msgstr "అన్ని దస్త్రములు (*.*)"
+
+#: app.src#RID_SVXSTR_EDITGRFLINK.string.text
+msgid "Link graphics"
+msgstr "జోడింపు చిత్రరూపములు "
+
+#: app.src#STR_ERRUNOEVENTBINDUNG.string.text
+msgid ""
+"An appropriate component method %1\n"
+"could not be found.\n"
+"\n"
+"Check spelling of method name."
+msgstr ""
+"సరైన మూలకపు పద్దతి %1\n"
+"కనుగొనబడలేక పోయింది.\n"
+"\n"
+"పద్దతి నామము యొక్క స్పెల్లింగ్‌ను పరిశీలించుము."
+
+#: app.src#RID_SVXSTR_GRFILTER_OPENERROR.string.text
+msgid "Graphics file cannot be opened"
+msgstr "చిత్రరూపముల దస్త్రం తెరచుకొనబడదు"
+
+#: app.src#RID_SVXSTR_GRFILTER_IOERROR.string.text
+msgid "Graphics file cannot be read"
+msgstr "చిత్రరూపముల దస్త్రం చదవబడదు"
+
+#: app.src#RID_SVXSTR_GRFILTER_FORMATERROR.string.text
+msgid "Unknown graphics format"
+msgstr "తెలియని చిత్రరూపముల రూపలావణ్యం"
+
+#: app.src#RID_SVXSTR_GRFILTER_VERSIONERROR.string.text
+msgid "This version of the graphics file is not supported"
+msgstr "ఈ చిత్రరూపముల దస్త్ర వివరణ సహకరించుటలేదు"
+
+#: app.src#RID_SVXSTR_GRFILTER_FILTERERROR.string.text
+msgid "Graphics filter not found"
+msgstr "చిత్రరూపముల వడపోత దొరకలేదు"
+
+#: app.src#RID_SVXSTR_GRFILTER_TOOBIG.string.text
+msgid "Not enough memory to insert graphic"
+msgstr "గ్రాఫిక్‌ను చేర్చుటకు సరిపోవునంత మెమొరీ లేదు"
+
+#: dde.src#MD_DDE_LINKEDIT.FT_DDE_APP.fixedtext.text
+msgid "~Application:"
+msgstr "కార్యక్షేత్రం (~A):"
+
+#: dde.src#MD_DDE_LINKEDIT.FT_DDE_TOPIC.fixedtext.text
+msgid "~File:"
+msgstr "దస్త్రము (~F):"
+
+#: dde.src#MD_DDE_LINKEDIT.FT_DDE_ITEM.fixedtext.text
+msgid "~Category:"
+msgstr "విధాగము (~C):"
+
+#: dde.src#MD_DDE_LINKEDIT.GROUP_DDE_CHG.fixedline.text
+msgid "Modify link"
+msgstr "జోడింపును మార్చు"
+
+#: dde.src#MD_DDE_LINKEDIT.modaldialog.text
+msgid "Modify Link"
+msgstr "జోడింపును మార్చు"
+
+#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_CONTENTS.pageitem.text
+msgid "Contents"
+msgstr "సారములు"
+
+#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_INDEX.pageitem.text
+msgid "Index"
+msgstr "సూచిక"
+
+#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_SEARCH.pageitem.text
+msgid "Find"
+msgstr "కనిపెట్టు"
+
+#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_BOOKMARKS.pageitem.text
+msgid "Bookmarks"
+msgstr "పుస్తకచిహ్నాలు"
+
+#: newhelp.src#TP_HELP_INDEX.FT_EXPRESSION.fixedtext.text
+msgid "~Search term"
+msgstr "పదం వెతుకు (~S)"
+
+#: newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.pushbutton.text
+msgctxt "newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.pushbutton.text"
+msgid "~Display"
+msgstr "ప్రదర్శించు (~D)"
+
+#: newhelp.src#TP_HELP_SEARCH.FT_SEARCH.fixedtext.text
+msgid "S~earch term"
+msgstr "పదం వెతుకు (~e)"
+
+#: newhelp.src#TP_HELP_SEARCH.PB_SEARCH.pushbutton.text
+msgid "~Find"
+msgstr "కనిపెట్టు (~F)"
+
+#: newhelp.src#TP_HELP_SEARCH.CB_FULLWORDS.checkbox.text
+msgid "~Complete words only"
+msgstr "మొత్తం పదములు మాత్రమే (~C)"
+
+#: newhelp.src#TP_HELP_SEARCH.CB_SCOPE.checkbox.text
+msgid "Find in ~headings only"
+msgstr "పీఠికలలో మాత్రమే వెతకు (~h)"
+
+#: newhelp.src#TP_HELP_SEARCH.PB_OPEN_SEARCH.pushbutton.text
+msgctxt "newhelp.src#TP_HELP_SEARCH.PB_OPEN_SEARCH.pushbutton.text"
+msgid "~Display"
+msgstr "ప్రదర్శించు (~D)"
+
+#: newhelp.src#TP_HELP_BOOKMARKS.FT_BOOKMARKS.fixedtext.text
+msgid "~Bookmarks"
+msgstr "పుస్తకచిహ్నాలు (~B)"
+
+#: newhelp.src#TP_HELP_BOOKMARKS.PB_BOOKMARKS.pushbutton.text
+msgctxt "newhelp.src#TP_HELP_BOOKMARKS.PB_BOOKMARKS.pushbutton.text"
+msgid "~Display"
+msgstr "ప్రదర్శించు (~D)"
+
+#: newhelp.src#STR_HELP_WINDOW_TITLE.string.text
+msgid "%PRODUCTNAME Help"
+msgstr "%PRODUCTNAME సహాయం"
+
+#: newhelp.src#STR_HELP_BUTTON_INDEX_ON.string.text
+msgid "Show Navigation Pane"
+msgstr "విహరించు తలమును చూపుము"
+
+#: newhelp.src#STR_HELP_BUTTON_INDEX_OFF.string.text
+msgid "Hide Navigation Pane"
+msgstr "విహరించు తలమును దాచు"
+
+#: newhelp.src#STR_HELP_BUTTON_START.string.text
+msgid "First Page"
+msgstr "మొదటి పుట"
+
+#: newhelp.src#STR_HELP_BUTTON_PREV.string.text
+msgid "Previous Page"
+msgstr "పూర్వపు పుట"
+
+#: newhelp.src#STR_HELP_BUTTON_NEXT.string.text
+msgid "Next Page"
+msgstr "తర్వాతి పుట"
+
+#: newhelp.src#STR_HELP_BUTTON_PRINT.string.text
+msgid "Print..."
+msgstr "ముద్రించు..."
+
+#: newhelp.src#STR_HELP_BUTTON_ADDBOOKMARK.string.text
+msgid "Add to Bookmarks..."
+msgstr "పుస్తకచిహ్నాలకు చేర్చుము"
+
+#: newhelp.src#STR_HELP_BUTTON_SEARCHDIALOG.string.text
+msgid "Find on this Page..."
+msgstr "ఈ పుట లో వెతకు..."
+
+#: newhelp.src#STR_HELP_BUTTON_SOURCEVIEW.string.text
+msgid "HTML Source"
+msgstr "హెచ్  టిఎంఎల్  మూలాధారం"
+
+#: newhelp.src#STR_HELP_FIRST_MESSAGE.string.text
+msgid "The Help is being started..."
+msgstr "సహాయము మొదలవుతున్నది..."
+
+#: newhelp.src#STR_HELP_MENU_TEXT_SELECTION_MODE.string.text
+msgid "Select Text"
+msgstr "పాఠం ఎంచుకొనుము"
+
+#: newhelp.src#STR_HELP_MENU_TEXT_COPY.string.text
+msgid "~Copy"
+msgstr "నకలు (~C)"
+
+#: newhelp.src#DLG_HELP_ADDBOOKMARK.FT_BOOKMARK_TITLE.fixedtext.text
+msgid "Bookmark:"
+msgstr "పుస్తకచిహ్నాము:"
+
+#: newhelp.src#DLG_HELP_ADDBOOKMARK.STR_BOOKMARK_RENAME.string.text
+msgid "Rename Bookmark"
+msgstr "పుస్తకచిహ్నా పునర్నామకరణ"
+
+#: newhelp.src#DLG_HELP_ADDBOOKMARK.modaldialog.text
+msgid "Add to Bookmarks"
+msgstr "పుస్తకచిహ్నాలకు చేర్చుము"
+
+#: newhelp.src#MENU_HELP_BOOKMARKS.MID_OPEN.menuitem.text
+msgid "Display"
+msgstr "ప్రదర్శించు"
+
+#: newhelp.src#MENU_HELP_BOOKMARKS.MID_RENAME.menuitem.text
+msgid "Rename..."
+msgstr "పునర్నామకరణ..."
+
+#: newhelp.src#MENU_HELP_BOOKMARKS.MID_DELETE.menuitem.text
+msgid "Delete"
+msgstr "తీసివేయు"
+
+#: newhelp.src#RID_INFO_NOSEARCHRESULTS.infobox.text
+msgid "No topics found."
+msgstr "ఏ విషయము దొరకలేదు."
+
+#: newhelp.src#RID_INFO_NOSEARCHTEXTFOUND.infobox.text
+msgid "The text you entered was not found."
+msgstr "మీరు ప్రవేశపెట్టిన పాఠము దొరకలేదు."
+
+#: newhelp.src#RID_HELP_ONSTARTUP_TEXT.string.text
+msgid "~Display %PRODUCTNAME %MODULENAME Help at Startup"
+msgstr "%PRODUCTNAME %MODULENAME ప్రదర్శించు ప్రారంధము వద్ద సహాయము (~D)"
+
+#: sfx.src#STR_ACCTITLE_PRODUCTIVITYTOOLS.string.text
+msgid "%PRODUCTNAME"
+msgstr ""
+
+#~ msgid "Applied Styles"
+#~ msgstr "శైలులు అనుసంధించుట"
+
+#~ msgid "Custom Styles"
+#~ msgstr "వాడుక శైలులు"
+
+#~ msgid "All Styles"
+#~ msgstr "అన్ని శైలులు"
+
+#~ msgid "Cannot open document."
+#~ msgstr "పత్రమును తెరువబడదు."
+
+#~ msgid "Error reading configuration file."
+#~ msgstr "రూపకరణ దస్త్రం చదువుటలో దోషము."
+
+#~ msgid "Error writing configuration file."
+#~ msgstr "రూపకరణ దస్త్రం వ్రాయునపుడు దోషము."
+
+#~ msgid "Error opening configuration file."
+#~ msgstr "రూపకరణ దస్త్రం తెరచునపుడు దోషము."
+
+#~ msgid "File is not a configuration file."
+#~ msgstr "దస్త్రం రూపకరణ దస్త్రం కాదు."
+
+#~ msgid "Configuration file contains the wrong version."
+#~ msgstr "రూపకరణ దస్త్రం తప్పు వివరణను కల్గియున్నది."
+
+#~ msgid ""
+#~ "Error recording BASIC library in\n"
+#~ "'@'."
+#~ msgstr ""
+#~ "బేసిక్ గ్రంధాలయములో ఙ్ఞపకార్థమువ్రాయునపుడు దోషము\n"
+#~ "'@'."
+
+#~ msgid ""
+#~ "An unexpected program error has occurred.\n"
+#~ "\n"
+#~ "Do you want to try to save your changes in all open documents before the "
+#~ "program is terminated?"
+#~ msgstr ""
+#~ "కార్యక్రమములో అనుకోకుండా దోషము ఎదురయినది.\n"
+#~ "\n"
+#~ "కార్యక్రమము అంతము కంటే ముందుగా అన్ని తెరచినటువంటి పత్రములలో చేసినమార్పులను "
+#~ "దాచుట కొరకు ప్రయత్నించవలెన?"
+
+#~ msgid ""
+#~ "A form is to be sent by e-mail.\n"
+#~ "This means that the receiver will get to see your e-mail address."
+#~ msgstr ""
+#~ "పత్రమును ఇ-తపాలా ద్వారా పంపబడును.\n"
+#~ "అనగా గ్రహీతలు తమ ఇ-తపాలా చిరునామాను చూసుకొనవలె."
+
+#~ msgid "File Recovery"
+#~ msgstr "దస్త్రంను తిరిగిపొందు "
+
+#~ msgid "Should the file \"$1\" be restored?"
+#~ msgstr "దస్త్రం\"$1\" తిరిగిపొందునా?"
+
+#~ msgid "General"
+#~ msgstr "సాధారణ"
+
+#~ msgid "Save"
+#~ msgstr "దాచు"
+
+#~ msgid "Paths"
+#~ msgstr "మార్గములు"
+
+#~ msgid "Spellcheck"
+#~ msgstr "ఉచ్ఛారణా తనిఖీ"
+
+#~ msgid ""
+#~ "This application is as object or print server active.\n"
+#~ "Do you want to terminate anyway?"
+#~ msgstr ""
+#~ "ఈ కార్యక్షేత్రము తాత్పర్యముగా లేదా సేవికాముద్రణ ను క్రియాశీలముగాచేయును.\n"
+#~ " మీరు ఏవిధముగా అయినా ఆపవలెననుకుంటున్నారా?"
+
+#~ msgid "%PRODUCTNAME cannot be started more than once."
+#~ msgstr "%PRODUCTNAME ఒక్కమారుకంటే ఎక్కువ ప్రారంభించబడదు."
+
+#~ msgid ""
+#~ "Some %PRODUCTNAME functions will not work properly without a printer driver.\n"
+#~ "Please install a printer driver."
+#~ msgstr ""
+#~ "ముద్రణా యంత్రపు చోదకి లేకుండా %PRODUCTNAME కార్యక్రమములు సరిగా పనిచేయవు.\n"
+#~ "ముద్రణా యంత్రపు చోదకిని నెలకొల్పుము."
+
+#~ msgid "AutoSave"
+#~ msgstr "స్వయంగా దాచు"
+
+#~ msgid ""
+#~ "Limited system resources. Please quit other applications or close some "
+#~ "windows before continuing."
+#~ msgstr ""
+#~ "వ్యవస్థ నుక్షేపాలు అవధిగా ఉన్నాయి.ముందుకు కొనసాగుటకై ఇతర కార్యక్షేత్రములను "
+#~ "ఆపుము లేదా కొన్ని గవాక్షములను మూసివేయుము."
+
+#~ msgid "There are files missing. Please check application setup."
+#~ msgstr ""
+#~ "అక్కడ దస్త్రములు తప్పిపోయానవి. దయచేసి కార్యక్షేత్ర అమరికను తనిఖీ చేయుము."
+
+#~ msgid ""
+#~ "Another error occurred during the save recovery.\n"
+#~ "Possibly, the data could not be entirely saved."
+#~ msgstr ""
+#~ "బద్రపరచే తిరిగిపొందు సమయములో వేరొక దోషము ఎదురైనది.\n"
+#~ " జరుగును, దత్తంశము మొత్తము బద్రపరుచలేదు."
+
+#~ msgid "System resources exhausted. Please restart the application."
+#~ msgstr "వ్యవస్థ నుక్షేపాలు ఆవిరైనవి. దయచేసి కార్యక్షేత్రమును పునఃప్రారంభించుము."
+
+#~ msgid "Error initializing object-system."
+#~ msgstr "దోషము తాత్పర్య వ్యవస్థను సంసిద్ధపరుచు."
+
+#~ msgid "The file $(FILE) doesn't exist."
+#~ msgstr "$(దస్త్రము)అను దస్త్రము లేదు."
+
+#~ msgid "The path to file $(FILE) doesn't exist."
+#~ msgstr "$(దస్త్రము)అను దస్త్రమునకు మార్గము లేదు."
+
+#~ msgid ""
+#~ "The file $(FILE) could not be opened,\n"
+#~ "because too many files are open.\n"
+#~ "Please close some files and try again."
+#~ msgstr ""
+#~ "$(దస్త్రము)అను దస్త్రము తెరవబడదు.\n"
+#~ "ఎందుకనగా చాలా దస్త్రములు తెరవబడినవి.\n"
+#~ "దయచేసి కొన్ని దస్త్రములను మూసి ప్రయత్నించుము."
+
+#~ msgid "The file $(FILE) could not be opened due to missing access rights."
+#~ msgstr "అర్హతలను కోల్పోయినందున $(దస్త్రము)అను దస్త్రము తెరవబడదు."
+
+#~ msgid "The file $(FILE) could not be accessed."
+#~ msgstr "$(దస్త్రము)అను దస్త్రము ప్రవేశించిబడదు."
+
+#~ msgid "The file $(FILE) could not be opened due to an invalid file handle."
+#~ msgstr ""
+#~ "దస్త్రమును తప్పుగా ఉపయోగించిన కారణముచే $(దస్త్రము)అను దస్త్రము తెరవబడదు."
+
+#~ msgid "The file $(FILE) could not be created."
+#~ msgstr "$(దస్త్రము)అను దస్త్రము నిర్మించమబదు."
+
+#~ msgid "Error by shared access to $(FILE)."
+#~ msgstr "$(దస్త్రము)కు పంచుకొను ప్రవేశ దోషము."
+
+#~ msgid "General I/O error accessing $(FILE)."
+#~ msgstr "$(దస్త్రము)కు సర్వసాధారణమైన ఎ/ది దోషము."
+
+#~ msgid "The selected template has an incorrect format"
+#~ msgstr "ఎంచుకున్న మాదిరి రూపలావణ్యము తప్పుగా ఉన్నది"
+
+#~ msgid "Can't open file $."
+#~ msgstr "$ అను దస్త్రము తెరవలేము."
+
+#~ msgid "E~xit & return to "
+#~ msgstr "బయటకు & తిరిగి (~x)"
+
+#~ msgid "Select a command or click to select a theme."
+#~ msgstr "ఆదేశమును ఎంచుకొనుము లేదా క్లిక్ చేసి థీమ్ ను ఎంచుకొనుము."
+
+#~ msgid "Mail"
+#~ msgstr "తపాలా"
+
+#~ msgid "Addresses"
+#~ msgstr "చిరునామాలు"
+
+#~ msgid "Don't display tips"
+#~ msgstr "చిట్కాలను ప్రదర్శించకు"
+
+#~ msgid "The help system could not be started"
+#~ msgstr "సహాయపు వ్యవస్థ మొదలు కాదు"
+
+#~ msgid "Enable plug-ins"
+#~ msgstr "ప్లగ్ - ఇన్స్ ఉపయోగించు"
+
+#~ msgid ""
+#~ "Important program components could not be initialized correctly.\n"
+#~ "Please start the setup program with the option /Repair."
+#~ msgstr ""
+#~ "ముఖ్యమైన కార్యక్రమ విభాగములు తప్పుగా చేర్చబడినవి.\n"
+#~ "దయచేసి అమర్చిపెట్టిన కార్యక్రమమును /బాగుచేయు అను ఇచ్ఛాపూర్వకముతో "
+#~ "ప్రారంభించుము."
+
+#~ msgid "Reference will not be saved: "
+#~ msgstr "నివేదన దాచబడినది"
+
+#~ msgid "Configuration"
+#~ msgstr "రూపకరణ"
+
+#~ msgid "My Documents"
+#~ msgstr "నా పత్రములు"
+
+#~ msgid "Graphics"
+#~ msgstr "చిత్రరూపాలు"
+
+#~ msgid "Icons"
+#~ msgstr "ప్రతిమలు"
+
+#~ msgid "Palettes"
+#~ msgstr "వర్ణపలకములు"
+
+#~ msgid "Backups"
+#~ msgstr "దాచిపెట్టు"
+
+#~ msgid "Modules"
+#~ msgstr "అధిభాగములు"
+
+#~ msgid "AutoText"
+#~ msgstr "స్వయంపాఠం"
+
+#~ msgid "Dictionaries"
+#~ msgstr "వివరణలు"
+
+#~ msgid "Gallery"
+#~ msgstr "ప్రదర్శనశాల"
+
+#~ msgid "Message Storage"
+#~ msgstr "సందేశమును బద్రపరచు"
+
+#~ msgid "Temporary files"
+#~ msgstr "తాత్కాలిక దస్త్రములు"
+
+#~ msgid "Plug-ins"
+#~ msgstr " ప్లగ్ - ఇన్స్"
+
+#~ msgid "Folder Bookmarks"
+#~ msgstr "సంచయం గుర్తులు"
+
+#~ msgid "Filters"
+#~ msgstr "వడపోతలు"
+
+#~ msgid "Add-ins"
+#~ msgstr "మరియొక దానిని చేర్చుము"
+
+#~ msgid "User Configuration"
+#~ msgstr "వినియోగదారు రూపశిల్పం"
+
+#~ msgid "User-defined dictionaries"
+#~ msgstr "వినియోగదారు నిర్వచించిన వివరణలు"
+
+#~ msgid "AutoCorrect"
+#~ msgstr "స్వయం సరియైన"
+
+#~ msgid "Writing aids"
+#~ msgstr "వ్రాత సహాయములు"
+
+#~ msgid "The URL is not valid."
+#~ msgstr "యూ ఆర్ ఎల్ చెల్లుదు."
+
+#~ msgid "Undo: "
+#~ msgstr "చేసింది రద్దు చేయి:"
+
+#~ msgid "Re~do: "
+#~ msgstr "మరల చేయి (~d):"
+
+#~ msgid "~Repeat: "
+#~ msgstr "మళ్ళీచేయు (~R):"
+
+#~ msgid "New task"
+#~ msgstr "కొత్త పని"
+"X-Accelerator-Marker: ~\n"
+
+#: doc.src#MSG_CONFIRM_FILTER.querybox.text
+msgid ""
+"Saving in external formats may have caused\n"
+" information loss. Do you still want to close?"
+msgstr ""
+"బయటి రూపకం లో బద్రపరచుట వలన సమాచారం నష్టం జరుగును.\n"
+"మీరు ఇంకనూ మూయవలెననుకుంటున్నారా?"
+
+#: doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.querybox.text
+msgid ""
+"Name already in use.\n"
+"Do you want to overwrite document template?"
+msgstr ""
+"నామము ఉపయోగములో ఉన్నది.\n"
+" పత్రం మాదిరి చెరిపిరాత రాయాలనుకుంటున్నారా?"
+
+#: doc.src#STR_DELETE_REGION.string.text
+msgid "Are you sure you want to delete the region \"$1\"?"
+msgstr "\"$1\"అను ప్రాంతమును తొలగిచాలి అని అనుకుంటున్నారా?"
+
+#: doc.src#STR_DELETE_TEMPLATE.string.text
+msgid "Are you sure you want to delete the entry \"$1\"?"
+msgstr "\"$1\"అను ప్రవేశమును తొలగిచాలి అని అనుకుంటున్నారా?"
+
+#: doc.src#MSG_REGION_NOTEMPTY.querybox.text
+msgid ""
+"The category is not empty.\n"
+"Delete anyway?"
+msgstr ""
+"విభాగము ఖాళీగా లేదు.\n"
+"ఏవిధంగా అయినను తొలగించవలెనా?"
+
+#: doc.src#STR_QUERY_SAVE_DOCUMENT.string.text
+msgid ""
+"The document \"$(DOC)\" has been modified.\n"
+"Do you want to save your changes?"
+msgstr ""
+"\"$(డిఓసి)\"అను పత్రము మార్చబడినది. మార్పులను బద్రపరచాలి అని అనుకుంటున్నారా? "
+
+#: doc.src#STR_STYLES.string.text
+msgid "Styles"
+msgstr "శైలిలు"
+
+#: doc.src#STR_MACROS.string.text
+msgid "Macros"
+msgstr "స్థూలములు"
+
+#: doc.src#STR_CONFIG.string.text
+msgid "Configuration"
+msgstr "రూపకరణ"
+
+#: doc.src#STR_PRINT_STYLES_HEADER.string.text
+msgid "Styles in "
+msgstr "లో శైలులు"
+
+#: doc.src#STR_PRINT_STYLES.string.text
+msgid "Printing Styles"
+msgstr "ముద్రణా  శైలి"
+
+#: doc.src#MSG_PRINT_ERROR.errorbox.text
+msgid "The print job could not be started."
+msgstr "ముద్రించు పని మొదలు కాదు."
+
+#: doc.src#STR_BACKUP_COPY.string.text
+msgid "Copy"
+msgstr "నకలు"
+
+#: doc.src#MSG_CANT_OPEN_TEMPLATE.infobox.text
+msgid "The template could not be opened."
+msgstr "మాదిరి తెరవబడదు."
+
+#: doc.src#MSG_VIEW_OPEN_CANT_SAVE.infobox.text
+msgid "Document already open for editing."
+msgstr "పత్రము సవరణకై తెరవబడినది."
+
+#: doc.src#STR_ERROR_SAVE.string.text
+msgid "Error recording document "
+msgstr "పత్రమును దాచు దోషము"
+
+#: doc.src#STR_TEMPLATE_FILTER.string.text
+msgctxt "doc.src#STR_TEMPLATE_FILTER.string.text"
+msgid "Templates"
+msgstr "మాదిరులు"
+
+#: doc.src#STR_ERROR_COPY_TEMPLATE.string.text
+msgid ""
+"Error copying template \"$1\". \n"
+"A template with this name may already exist."
+msgstr ""
+"\"$1\"అను మాదిరిను నకలుపరచు దోషము.\n"
+" ఈ నామము కల మాదిరి పూర్వమే కలదు."
+
+#: doc.src#STR_ERROR_DELETE_TEMPLATE.string.text
+msgid "The template \"$1\" can not be deleted."
+msgstr "\"$1\"అను మాదిరి తొలగించబడదు."
+
+#: doc.src#STR_ERROR_MOVE_TEMPLATE.string.text
+msgid "Error moving template \"$1\"."
+msgstr "\"$1\"నకు మాదిరిని తరల్చు దోషము."
+
+#: doc.src#MSG_ERROR_RESCAN.errorbox.text
+msgid "The update could not be saved."
+msgstr "తాజాపరుచినది బద్రపరచబడదు."
+
+#: doc.src#STR_ERROR_SAVE_TEMPLATE.string.text
+msgid "Error saving template "
+msgstr "మాదిరి బద్రపరచు దోషము."
+
+#: doc.src#MSG_ERROR_RENAME_TEMPLATE.errorbox.text
+msgid "Error renaming template."
+msgstr "మిగతా మాదిరి దోషము."
+
+#: doc.src#MSG_ERROR_RENAME_TEMPLATE_REGION.errorbox.text
+msgid "Error renaming template category."
+msgstr "మిగతా మాదిరి విభాగ దోషము."
+
+#: doc.src#MSG_ERROR_EMPTY_NAME.errorbox.text
+msgid "Please specify a name."
+msgstr "దయచేసి నామమును ఇవ్వగలరు."
+
+#: doc.src#MSG_ERROR_UNIQ_NAME.errorbox.text
+msgid ""
+"Please specify a unique name.\n"
+"Entries must not be case specific."
+msgstr ""
+"దయచేసి అసమానమైన నామమును ఇవ్వగలరు.\n"
+"ప్రవేశములు సందర్భము చెప్పినవి కాకూడదు."
+
+#: doc.src#STR_QUERY_DEFAULT_TEMPLATE.string.text
+msgid "Should the template \"$(TEXT)\" become the default template?"
+msgstr "\"$(పాఠం)\"అను మాదిరి అప్రమేయమాదిరా?"
+
+#: doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.querybox.text
+msgid "Do you want to reset the default template?"
+msgstr "అప్రమేయమాదిరిలను పునః ప్రారంభించవలెనా?"
+
+#: doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.infobox.text
+msgid ""
+"Template directory\n"
+"$(DIR)\n"
+"does not exist."
+msgstr ""
+" \n"
+"$(డిఐఆర్)\n"
+" మాదిరి వివరణ లేదు."
+
+#: doc.src#MSG_DOCINFO_CANTREAD.infobox.text
+msgid "Document info cannot be read."
+msgstr "పత్రము యొక్క సమాచారము చదవబడదు."
+
+#: doc.src#STR_ERROR_NOSTORAGE.string.text
+msgid "The selected file has an incorrect format."
+msgstr "ఎంచుకున్న దస్త్రము సరియైన రూపకం కాదు."
+
+#: doc.src#STR_QUERY_MUSTOWNFORMAT.string.text
+msgid ""
+"Documents cannot be saved in $(FORMAT) format. Do you\n"
+"want to save your changes using the $(OWNFORMAT) format?"
+msgstr ""
+"పత్రములు $(రూపకం) రూపకముగా దాచబడవు.\n"
+"$(సొంతరూపకం)రూపకమునుపయోగించి మార్పులను బద్రపరచాలనుకుంటున్నారా?"
+
+#: doc.src#STR_SAVEDOC.string.text
+msgid "~Save"
+msgstr "(~S) దాచు"
+
+#: doc.src#STR_UPDATEDOC.string.text
+msgid "~Update"
+msgstr "తాజా~పరుచు"
+
+#: doc.src#STR_SAVEASDOC.string.text
+msgid "Save ~As..."
+msgstr "దాచు"
+
+#: doc.src#STR_SAVECOPYDOC.string.text
+msgid "Save Copy ~as..."
+msgstr "~నకలుగా దాయు..."
+
+#: doc.src#STR_CLOSEDOC.string.text
+msgid "~Close"
+msgstr "మూయుము"
+
+#: doc.src#STR_CLOSEDOC_ANDRETURN.string.text
+msgid "~Close & Return to "
+msgstr "మూయుము & కు పునరాగమనం"
+
+#: doc.src#STR_WIZARD.string.text
+msgid " AutoPilot"
+msgstr "స్వయంచుక్కాని"
+
+#: doc.src#RID_STR_FILTCONFIG.string.text
+msgid "Configurations"
+msgstr "రూపకరణలు"
+
+#: doc.src#RID_STR_FILTBASIC.string.text
+msgid "%PRODUCTNAME Basic libraries"
+msgstr "%PRODUCTNAME బేసిక్ గ్రంధాలయాలు"
+
+#: doc.src#RID_STR_WARNSTYLEOVERWRITE.string.text
+msgid "Should the \"$(ARG1)\" Style be replaced?"
+msgstr "\"$(ఎ ఆర్ జి1)"
+
+#: doc.src#STR_DOC_LOADING.string.text
+msgid "Loading Document"
+msgstr "పత్రమును దిగుమతి చేయుట"
+
+#: doc.src#RID_DLSTATUS.INET_NAME_RESOLVE_START.string.text
+msgid "Connection to: $(HOST). Waiting for response..."
+msgstr "బంధించుచున్నది :$(ఆతిథ్యం).ప్రత్యుత్తరము కొరకు వేచియుండు"
+
+#: doc.src#RID_DLSTATUS.INET_CONNECT_START.string.text
+msgid "Opening $(TARGET) at $(HOST)"
+msgstr "తెరుచు $(ఆతిథ్యం) లో $(గమ్యం)"
+
+#: doc.src#RID_DLSTATUS.INET_READ_STATUS.string.text
+msgid "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
+msgstr "దిగుమతి: $(ఆతిథ్యం) నుండి $(గమ్యం). దిగుమతి అయినవి :$(బైట్స్)"
+
+#: doc.src#RID_DLSTATUS.INET_CONNECTION_CLOSED.string.text
+msgid "Disconnected"
+msgstr "తెంచుట"
+
+#: doc.src#MSG_OPEN_READONLY.querybox.text
+msgid ""
+"Document cannot be opened for editing.\n"
+"Do you want to open it as read-only?"
+msgstr ""
+"సరిచేయుకై పత్రము తెరవబడదు.\n"
+"చదువుట కొరకు మాత్రమే తెరువవలెనా?"
+
+#: doc.src#STR_EDIT.string.text
+msgid "Edit"
+msgstr "సరిచేయు"
+
+#: doc.src#RID_OFFICEFILTER.string.text
+msgid "%PRODUCTNAME Documents"
+msgstr "%PRODUCTNAME పత్రములు"
+
+#: doc.src#STR_FRAMEOBJECT_PROPERTIES.string.text
+msgid "Propert~ies..."
+msgstr "లక్షణాలు ..."
+
+#: doc.src#STR_FSET_FILTERNAME0.string.text
+msgid "HTML (FrameSet)"
+msgstr "హెచ్  టిఎంఎల్(చట్రం)"
+
+#: doc.src#STR_FSET_FILTERNAME1.string.text
+msgid "%PRODUCTNAME Frame Document"
+msgstr "%PRODUCTNAME చట్రం పత్రము"
+
+#: doc.src#STR_TEMPL_MOVED.string.text
+msgid ""
+"The template \"$(TEMPLATE)\" was not found at the original location. A "
+"template with the same name exists at \"$(FOUND)\". Should this template be "
+"used in the future when comparing?"
+msgstr ""
+"మాదిరి\"$(మాదిరి)\" అసలైన ప్రదేవములో దొరక లేదు. అదే నామము కలిగినటువంటి "
+"మాదిరి\"$(దొరకినది)\" వద్ద ఉన్నది. పోల్చడములో అ మాదిరి ఉపయోగపడునా?"
+
+#: doc.src#STR_TEMPL_RESET.string.text
+msgid ""
+"The template \"$(TEMPLATE)\" has not been found. Should the template be looked "
+"for the next time the document is opened ?"
+msgstr "మాదిరి\"$(మాదిరి)\" దొరకలేదు.పత్రము తెరచినప్పుడు మాదిరి చూడవలెనా?"
+
+#: doc.src#STR_AUTOMATICVERSION.string.text
+msgid "Automatically saved version"
+msgstr "వివరణ స్వయంచాలకముగా దాచు "
+
+#: doc.src#STR_DOCTYPENAME_SW.string.text
+msgid "Text Document"
+msgstr "పాఠ పత్రం"
+
+#: doc.src#STR_DOCTYPENAME_SWWEB.string.text
+msgid "HTML Document"
+msgstr "హెచ్  టిఎంఎల్ పత్రం"
+
+#: doc.src#STR_DOCTYPENAME_SWGLOB.string.text
+msgid "Master Document"
+msgstr "యజమాని పత్రం"
+
+#: doc.src#STR_DOCTYPENAME_SC.string.text
+msgid "Spreadsheet"
+msgstr "స్ర్పెడ్ షీట్"
+
+#: doc.src#STR_DOCTYPENAME_SI.string.text
+msgid "Presentation"
+msgstr "సమర్పణం"
+
+#: doc.src#STR_DOCTYPENAME_SD.string.text
+msgid "Drawing"
+msgstr "చిత్రలేఖనము"
+
+#: doc.src#STR_DOCTYPENAME_MESSAGE.string.text
+msgid "Message"
+msgstr "సందేశము"
+
+#: doc.src#STR_NOSAVEANDCLOSE.string.text
+msgid "~Discard"
+msgstr "వద్దు"
+
+#: doc.src#STR_PACKNGO_NOACCESS.string.text
+msgid "Access to the current data medium not possible."
+msgstr "ఇప్పటి దత్తంశ మాధ్యమికము ప్రవేశము సాద్యముకాదు"
+
+#: doc.src#STR_PACKNGO_NEWMEDIUM.string.text
+msgid "Insert the next data carrier and click OK."
+msgstr "తరువాతి దత్తంశ వాహినిని ప్రవేశపెట్టుము మరియు ఓకే ను క్లిక్ చేయుము."
+
+#: doc.src#STR_OBJECT.string.text
+msgid "Object"
+msgstr "ప్రతిమ"
+
+#: doc.src#DLG_MACROQUERY.querybox.text
+msgid "This document contains macros. $(TEXT)"
+msgstr "ఈ పత్రము స్థూలములను కలిగియున్నది. $(పాఠం)"
+
+#: doc.src#DLG_MACROQUERY.querybox.title
+msgid "Run Macro"
+msgstr "స్థూలముగా  నడుపు"
+
+#: doc.src#BTN_OK.string.text
+msgid "Run"
+msgstr "నడుపు"
+
+#: doc.src#BTN_CANCEL.string.text
+msgid "Do Not Run"
+msgstr "నడుపకు"
+
+#: doc.src#FT_CANCEL.string.text
+msgid ""
+"According to the security settings, the macros in this document should not "
+"be run. Do you want to run them anyway?"
+msgstr ""
+"రక్షణా అమరికలను అనుసరించి ఈ పత్రములోని స్థూలములు నడవబడవు.మీరు ఎలాగైనా "
+"నడపాలనుకుంటున్నారా?"
+
+#: doc.src#FT_OK.string.text
+msgid "Do you want to allow these macros to be run?"
+msgstr "మీరు ఈ స్థూలములను నడుపుటకు అనుమతించెదరా?"
+
+#: doc.src#STR_EXPORTASPDF_TITLE.string.text
+msgid "Export as PDF"
+msgstr "పిడిఉఎఫ్ గా ఎగుమత"
+
+#: doc.src#STR_EXPORTWITHCFGBUTTON.string.text
+msgid "Export..."
+msgstr "ఎగుమతి..."
+
+#: doc.src#STR_EXPORTBUTTON.string.text
+msgid "Export"
+msgstr "ఎగుమతి"
+
+#: doc.src#RID_SVXSTR_SECURITY_ADDPATH.string.text
+msgid "Add this directory to the list of secure paths: "
+msgstr "రక్షణా మార్గములగుండా ఈ వివరణను కూడుము:"
+
+#: doc.src#STR_LABEL_FILEFORMAT.string.text
+msgid "File format:"
+msgstr "దస్త్రపు రూపకం :"
+
+#: doc.src#STR_HIDDENINFO_CONTAINS.string.text
+msgid ""
+"This document contains:\n"
+"\n"
+msgstr ""
+"ఈ పత్రము కలిగియున్నవి:\n"
+"\n"
+
+#: doc.src#STR_HIDDENINFO_RECORDCHANGES.string.text
+msgid "Recorded changes"
+msgstr "మార్పులు బద్రపరుచబడినవి "
+
+#: doc.src#STR_HIDDENINFO_NOTES.string.text
+msgid "Notes"
+msgstr "గమనికలు"
+
+#: doc.src#STR_HIDDENINFO_DOCVERSIONS.string.text
+msgid "Document versions"
+msgstr "పత్రం వివరణములు"
+
+#: doc.src#STR_HIDDENINFO_FIELDS.string.text
+msgid "Fields"
+msgstr "క్షేత్రములు"
+
+#: doc.src#STR_HIDDENINFO_LINKDATA.string.text
+msgid "Linked data..."
+msgstr "దత్తాంశం జోడి"
+
+#: doc.src#STR_HIDDENINFO_CONTINUE_SAVING.string.text
+msgid "Do you want to continue saving the document?"
+msgstr "పత్రమును బద్రపరచుట కొనసాగాలనుకుంటున్నారా?"
+
+#: doc.src#STR_HIDDENINFO_CONTINUE_PRINTING.string.text
+msgid "Do you want to continue printing the document?"
+msgstr "పత్రము ముద్రించుట కొనసాగాలనుకుంటున్నారా?"
+
+#: doc.src#STR_HIDDENINFO_CONTINUE_SIGNING.string.text
+msgid "Do you want to continue signing the document?"
+msgstr "పత్రములో సంతకము చేయుటను కొనసాగాలనుకుంటున్నారా?"
+
+#: doc.src#STR_HIDDENINFO_CONTINUE_CREATEPDF.string.text
+msgid "Do you want to continue creating a PDF file?"
+msgstr "పిడిఎఫ్ దస్త్రము నిర్మించి కొనసాగాలనుకుంటున్నారా?"
+
+#: doc.src#STR_NEW_FILENAME_SAVE.string.text
+msgid ""
+"If you do not want to overwrite the original document, you should save your "
+"work under a new filename."
+msgstr ""
+"మీ అసలు పత్రమును చెరిపిరాయలనుకోపోతే మీ కార్యమును కొత్త దస్త్ర నామం తో దాయండి"
+
+#: doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.string.text
+msgid "Some template files are protected and can not be deleted."
+msgstr "కొన్ని మరియు."
+
+#: doc.src#STR_DOCINFO_INFOFIELD.string.text
+msgid "Info %1"
+msgstr "సమాచారము 1"
+
+#: doc.src#STR_SHARED.string.text
+msgid " (shared)"
+msgstr " (భాగస్వామ్యమైన)"
+
+#: doc.src#STR_XMLSEC_ODF12_EXPECTED.string.text
+msgid ""
+"The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-"
+"Options-Load/Save-General. Signing documents requires ODF 1.2 "
+"(OpenOffice.org 3.x)."
+msgstr "లోపల పనిముట్లు ఇచ్ఛాపూర్వకాలు దిగుమతి దాచు General."
+
+#: doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.querybox.text
+msgid ""
+"The document has to be saved before it can be signed. Saving the document "
+"removes all present signatures.\n"
+"Do you want to save the document?"
+msgstr ""
+"పత్రము మార్చబడుటకు ముందుగానే దాయబడాలి. పత్రమును దాయుటవలన ప్రస్తుతం వున్న "
+"సంతకములు తీసివేయబడతాయి.\n"
+"మీరు పత్రమును దాయవలెనని అనుకొనుచున్నారా?"
+
+#: doc.src#STR_QRYTEMPL_MESSAGE.string.text
+msgid ""
+"The template '$(ARG1)' on which this document is based, has been modified. "
+"Do you want to update style based formattings according to the modified "
+"template?"
+msgstr "మీద?"
+
+#: doc.src#STR_QRYTEMPL_UPDATE_BTN.string.text
+msgid "~Update Styles"
+msgstr "తాజాపరచు శైలిలు"
+
+#: doc.src#STR_QRYTEMPL_KEEP_BTN.string.text
+msgid "~Keep Old Styles"
+msgstr "శైలిలు"
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.FL_EDIT.fixedline.text
+msgid "New template"
+msgstr "క్రొత్త మాదిరి"
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.fixedline.text
+msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.fixedline.text"
+msgid "Templates"
+msgstr "మాదిరులు"
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.fixedtext.text
+msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.fixedtext.text"
+msgid "~Categories"
+msgstr "వర్గములు (~C)"
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.FT_STYLESHEETS.fixedtext.text
+msgid "~Templates"
+msgstr "మాదిరులు"
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.pushbutton.text
+msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.pushbutton.text"
+msgid "~Edit"
+msgstr "సరిచేయు"
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.BT_ORGANIZE.pushbutton.text
+msgid "~Organizer..."
+msgstr "(~O) కార్యనిర్వహకుడు..."
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.modaldialog.text
+msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.modaldialog.text"
+msgid "Templates"
+msgstr "మాదిరులు"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.1.itemlist.text
+msgid "My Templates"
+msgstr "నా మాదిరిలు"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.2.itemlist.text
+msgid "Business Correspondence"
+msgstr "వ్యాపార పొందిక"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.3.itemlist.text
+msgid "Other Business Documents"
+msgstr "ఇతర వ్యాపార పత్రములు"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.4.itemlist.text
+msgid "Personal Correspondence and Documents"
+msgstr "వ్యక్తిగత పొందిక మరియు పత్రములు"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.5.itemlist.text
+msgid "Forms and Contracts"
+msgstr "ఫారములు మరియు గుత్తలు "
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.6.itemlist.text
+msgid "Finances"
+msgstr "ఆర్థికము"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.7.itemlist.text
+msgid "Education"
+msgstr "విద్య"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.8.itemlist.text
+msgid "Presentation Backgrounds"
+msgstr "సమర్పణం పూర్వరంగములు"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.9.itemlist.text
+msgid "Presentations"
+msgstr "సమర్పణములు"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.10.itemlist.text
+msgid "Miscellaneous"
+msgstr "నానారకములైన "
+
+#: doctempl.src#RID_CNT_STR_WAITING.string.text
+msgid "The templates are being initialized for first-time usage."
+msgstr "మొదటిసారి ఉపయోగమునకై మాదిరిలు సంసిద్ధపరుచుబడియవి."
+
+#: docvor.src#DLG_ORGANIZE.BTN_OK.okbutton.text
+msgid "Close"
+msgstr "మూయుము"
+
+#: docvor.src#DLG_ORGANIZE.BTN_FILES.pushbutton.text
+msgid "~File..."
+msgstr "దస్త్రము..."
+
+#: docvor.src#DLG_ORGANIZE.BTN_ADDRESSTEMPLATE.pushbutton.text
+msgid "~Address Book..."
+msgstr "చిరునామాల పుస్తకం"
+
+#: docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.1.stringlist.text
+msgctxt "docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.1.stringlist.text"
+msgid "Templates"
+msgstr "మాదిరులు"
+
+#: docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.2.stringlist.text
+msgctxt "docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.2.stringlist.text"
+msgid "Documents"
+msgstr "పత్రములు"
+
+#: docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.1.stringlist.text
+msgctxt "docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.1.stringlist.text"
+msgid "Templates"
+msgstr "మాదిరులు"
+
+#: docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.2.stringlist.text
+msgctxt "docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.2.stringlist.text"
+msgid "Documents"
+msgstr "పత్రములు"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_NEW.menuitem.text
+msgid "~New"
+msgstr "కొత్త"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DELETE.menuitem.text
+msgid "~Delete"
+msgstr "(~D) తొలగించుము"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.menuitem.text
+msgctxt "docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.menuitem.text"
+msgid "~Edit"
+msgstr "సరిచేయు"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_FROM.menuitem.text
+msgid "Import Template..."
+msgstr "మాదిరిదిగుమత"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_TO.menuitem.text
+msgid "Export Template..."
+msgstr "మాదిరి ఎగుమతి"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINT.menuitem.text
+msgid "~Print"
+msgstr "ముద్రణ"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINTER_SETUP.menuitem.text
+msgid "Printer Settings..."
+msgstr "ముద్రణా యంత్రం అమరికలు..."
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESCAN.menuitem.text
+msgid "Update"
+msgstr "తాజాపరచు"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DEFAULT_TEMPLATE.menuitem.text
+msgid "Set As Default Template"
+msgstr "అప్రమేయ మాదిరిలుగా మార్చు"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESET_DEFAULT_TEMPLATE.menuitem.text
+msgid "Reset Default Template"
+msgstr "అప్రమేయ మాదిరిలను పునః ప్రారంభం"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.menubutton.text
+msgid "Commands"
+msgstr "ఆదేశములు"
+
+#: docvor.src#DLG_ORGANIZE.modaldialog.text
+msgid "Template Management"
+msgstr "మాదిరి అభికర్త"
+
+#: new.src#DLG_NEW_FILE.FT_REGION.fixedtext.text
+msgctxt "new.src#DLG_NEW_FILE.FT_REGION.fixedtext.text"
+msgid "~Categories"
+msgstr "వర్గములు (~C)"
+
+#: new.src#DLG_NEW_FILE.FT_TEMPLATE.fixedtext.text
+msgid "T~emplates"
+msgstr "మాదిరులు"
+
+#: new.src#DLG_NEW_FILE.BT_MORE.morebutton.text
+msgid "~More"
+msgstr "అధికము"
+
+#: new.src#DLG_NEW_FILE.BTN_PREVIEW.checkbox.text
+msgid "Pre~view"
+msgstr "~ఉపదర్శనం"
+
+#: new.src#DLG_NEW_FILE.GB_DOCINFO.fixedline.text
+msgid "Description"
+msgstr "వివరణ"
+
+#: new.src#DLG_NEW_FILE.CB_TEXT_STYLE.checkbox.text
+msgid "Te~xt"
+msgstr "పాఠం"
+
+#: new.src#DLG_NEW_FILE.CB_FRAME_STYLE.checkbox.text
+msgid "~Frame"
+msgstr "చట్రం"
+
+#: new.src#DLG_NEW_FILE.CB_PAGE_STYLE.checkbox.text
+msgid "~Pages"
+msgstr "పుటలు"
+
+#: new.src#DLG_NEW_FILE.CB_NUM_STYLE.checkbox.text
+msgid "N~umbering"
+msgstr "సంఖ్యనిచ్చుట"
+
+#: new.src#DLG_NEW_FILE.CB_MERGE_STYLE.checkbox.text
+msgid "~Overwrite"
+msgstr "చెరిపిరాత"
+
+#: new.src#DLG_NEW_FILE.PB_LOAD_FILE.pushbutton.text
+msgid "From File..."
+msgstr "దస్త్రము నుండి"
+
+#: new.src#DLG_NEW_FILE.STR_LOAD_TEMPLATE.string.text
+msgid "Load Styles"
+msgstr "దిగుమతి శైలులు"
+
+#: new.src#DLG_NEW_FILE.FT_TITLE.fixedtext.text
+msgid "~Title"
+msgstr "శీర్షి~క"
+
+#: new.src#DLG_NEW_FILE.FT_THEMA.fixedtext.text
+msgid "Subject"
+msgstr "విషయం"
+
+#: new.src#DLG_NEW_FILE.FT_KEYWORDS.fixedtext.text
+msgid "~Key words"
+msgstr "మీటపదములు"
+
+#: new.src#DLG_NEW_FILE.FT_DESC.fixedtext.text
+msgid "~Description"
+msgstr "వివరణ"
+
+#: new.src#DLG_NEW_FILE.modaldialog.text
+msgid "New"
+msgstr "క్రొత్త"
+
+#~ msgid ""
+#~ "The Styles in this document do not match your current Styles. Should your "
+#~ "current Styles be applied to this document?"
+#~ msgstr ""
+#~ "పత్రంలోని శైలులు ప్రస్తుత శైలులతో జతకావు.ప్రస్తుత శైలులు ఈ పత్రంనకు "
+#~ "వర్తింపచేయవలెనా?"
+"X-Accelerator-Marker: ~\n"
+
+#: alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.fixedtext.text
+msgid ""
+"This document may contain formatting or content that cannot be saved in the "
+"%FORMATNAME file format. Do you want to save the document in this format "
+"anyway?\n"
+"\n"
+"Use the latest ODF file format and be sure all formatting and content is "
+"saved correctly."
+msgstr "లేదా లోపల లోపల మరియు మరియు."
+
+#: alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.okbutton.text
+msgid "~Keep Current Format"
+msgstr "రూపలావణ్యం (~K)"
+
+#: alienwarn.src#RID_DLG_ALIEN_WARNING.PB_YES.cancelbutton.text
+msgid "~Save in ODF Format"
+msgstr "దాచు లోపల రూపలావణ్యం (~S)"
+
+#: alienwarn.src#RID_DLG_ALIEN_WARNING.PB_MOREINFO.helpbutton.text
+msgid "~More Information..."
+msgstr "ఎక్కువ సమాచారము... (~M)"
+
+#: alienwarn.src#RID_DLG_ALIEN_WARNING.CB_WARNING_OFF.checkbox.text
+msgid "~Ask when not saving in ODF format"
+msgstr "ODF ఫార్మాట్‌లో దాయబడనప్పుడు అడుగుము (~A)"
+
+#: dialog.src#STR_RESET.string.text
+msgid "~Reset"
+msgstr "పునః ప్రారంభం (~R)"
+
+#: dialog.src#STR_APPLY.string.text
+msgid "Apply"
+msgstr "అనుసంధించుట"
+
+#: dialog.src#STR_TABPAGE_MANAGESTYLES.string.text
+msgid "Organizer"
+msgstr "కార్యనిర్వహకుడు"
+
+#: dialog.src#MSG_TABPAGE_INVALIDNAME.infobox.text
+msgid "This name is already in use."
+msgstr "ఈ నామము ఇంతకుముందే కలదు."
+
+#: dialog.src#MSG_TABPAGE_INVALIDSTYLE.infobox.text
+msgid "This Style does not exist."
+msgstr "ఈ శైలి లేదు."
+
+#: dialog.src#MSG_TABPAGE_INVALIDPARENT.infobox.text
+msgid ""
+"This Style cannot be used as a base Style,\n"
+"because it would result in a recursive reference."
+msgstr ""
+"ఈ శైలి ఆధార శైలిగా వాడకూడదు,\n"
+"ఎందుకనగా మరలమరల నివేదన జరుగును."
+
+#: dialog.src#MSG_POOL_STYLE_NAME.infobox.text
+msgid ""
+"Name already exists as a default Style.\n"
+"Please choose another name."
+msgstr ""
+"నామము పూరమే అప్రమేయ శైలిగా ఉన్నది.\n"
+"దయచేసి వేరే నామమును ఎంచుకొనుము."
+
+#: dialog.src#STR_DELETE_STYLE.string.text
+msgid "Do you really want to delete Style $1?"
+msgstr "$1 అను శైలిని నిజముగానే తొలగించవలెనా?"
+
+#: dialog.src#STR_DELETE_STYLE_USED.string.text
+msgid "You are deleting an applied Style!\n"
+msgstr "అప్లై చేయబడిన శైలిని తొలగించచున్నది!\n"
+
+#: dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.menuitem.text
+msgid "New..."
+msgstr "క్రొత..."
+
+#: dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.menuitem.text
+msgid "Modify..."
+msgstr "మార్చు..."
+
+#: dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.menuitem.text
+msgid "Delete..."
+msgstr "తొలగించు..."
+
+#: dialog.src#SID_NAVIGATOR.string.text
+msgid "Navigator"
+msgstr "విహరించునది"
+
+#: dialog.src#SID_TASKPANE.string.text
+msgid "Task Pane"
+msgstr "కార్య చట్రం"
+
+#: dialog.src#MSG_ERROR_WRONG_CONFIRM.errorbox.text
+msgid "Faulty password confirmation"
+msgstr "రహస్యపదంధృవీకరణ లోపం "
+
+#: dialog.src#STR_PDF_EXPORT_SEND.string.text
+msgid "Send"
+msgstr "పంపుము"
+
+#: dinfdlg.src#STR_SFX_NEWOFFICEDOC.string.text
+msgid "%PRODUCTNAME document"
+msgstr "%PRODUCTNAME పత్రము"
+
+#: dinfdlg.src#TP_DOCINFODESC.FT_TITLE.fixedtext.text
+msgid "~Title"
+msgstr "శీర్షిక (~T)"
+
+#: dinfdlg.src#TP_DOCINFODESC.FT_THEMA.fixedtext.text
+msgid "~Subject"
+msgstr "విషయము (~S)"
+
+#: dinfdlg.src#TP_DOCINFODESC.FT_KEYWORDS.fixedtext.text
+msgid "~Keywords"
+msgstr "మీటపదములు (~K)"
+
+#: dinfdlg.src#TP_DOCINFODESC.FT_COMMENT.fixedtext.text
+msgid "~Comments"
+msgstr "వ్యాఖ్యలు (~C)"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.fixedtext.text
+msgid "Type:"
+msgstr "రకము:"
+
+#: dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.checkbox.text
+msgctxt "dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.checkbox.text"
+msgid "~Read-only"
+msgstr "చదువుట మాత్రమే (~R)"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_FILE.fixedtext.text
+msgid "Location:"
+msgstr "స్ఠానము:"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_FILE_SIZE.fixedtext.text
+msgid "Size:"
+msgstr "పరిమాణము:"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_CREATE.fixedtext.text
+msgid "Created:"
+msgstr "నిర్మించబడినది:"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_CHANGE.fixedtext.text
+msgid "Modified:"
+msgstr "మార్చబడినది:"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_SIGNED.fixedtext.text
+msgid "Digitally signed:"
+msgstr "డిజిటల్‌గా సంతకంచేసిన:"
+
+#: dinfdlg.src#TP_DOCINFODOC.BTN_SIGNATURE.pushbutton.text
+msgid "Digital Signature..."
+msgstr "సంకేతిక సంతకం..."
+
+#: dinfdlg.src#TP_DOCINFODOC.STR_MULTSIGNED.string.text
+msgid "Multiply signed document"
+msgstr "బహుసంతకముల పత్రము"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_PRINT.fixedtext.text
+msgid "Last printed:"
+msgstr "వెనుకగా ముద్రణఅయినది:"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_TIMELOG.fixedtext.text
+msgid "Total editing time:"
+msgstr "మొత్త సరికూర్పు సమయం:"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_DOCNO.fixedtext.text
+msgid "Revision number:"
+msgstr "పునర్విమర్శన సంఖ్య:"
+
+#: dinfdlg.src#TP_DOCINFODOC.BTN_DELETE.pushbutton.text
+msgid "Reset"
+msgstr "తిరిగివుంచు"
+
+#: dinfdlg.src#TP_DOCINFODOC.CB_USE_USERDATA.checkbox.text
+msgid "~Apply user data"
+msgstr "వినియోగదారుని దత్తాంశం అనుసంధించు (~A)"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_TEMPL.fixedtext.text
+msgid "Template:"
+msgstr "మాదిరి"
+
+#: dinfdlg.src#TP_DOCINFODOC.STR_UNKNOWNSIZE.string.text
+msgid "unknown"
+msgstr "అపరిచిత"
+
+#: dinfdlg.src#TP_DOCINFODOC.EDIT_FILE_NAME.string.text
+msgid "File Name"
+msgstr ""
+
+#: dinfdlg.src#TP_DOCINFOUSER.BTN_EDITLABEL.pushbutton.text
+msgid "~Info fields..."
+msgstr "సముచారం క్షేత్రములు.... (~I)"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.RB_NOAUTOUPDATE.radiobutton.text
+msgid "Do not refresh automatically"
+msgstr "స్వయం చాలకంగా పునర్వికాసించకు "
+
+#: dinfdlg.src#TP_DOCINFORELOAD.RB_RELOADUPDATE.radiobutton.text
+msgid "Refresh this document"
+msgstr "ఈ పత్రమును పునర్వికాసించుము"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.FT_EVERY.fixedtext.text
+msgid "every"
+msgstr "ప్రతి"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.fixedtext.text
+msgctxt "dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.fixedtext.text"
+msgid "seconds"
+msgstr "సెకన్లు"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.RB_FORWARDUPDATE.radiobutton.text
+msgid "Redirect from this document"
+msgstr "ఈ పత్రము నుండి తిరిగిపంపు"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.fixedtext.text
+msgid "after"
+msgstr "తర్వాత"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.fixedtext.text
+msgctxt "dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.fixedtext.text"
+msgid "seconds"
+msgstr "సెకన్లు"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.FT_URL.fixedtext.text
+msgid "to URL"
+msgstr "కు యు  ఆర్ ఎల్"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.FT_FRAME.fixedtext.text
+msgid "to frame"
+msgstr "కు చట్రం"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.STR_FORWARD_ERRMSSG.string.text
+msgid "If you select the option \"%PLACEHOLDER%\", you must enter a URL."
+msgstr ""
+"\"%స్థల అధినేత%\" అను ఇచ్ఛాపూర్వకమును ఎంచుకున్నచో, యు ఆర్ ఎల్ ను ఖచ్చితముగా "
+"ప్రవేశపెట్టవలెను."
+
+#: dinfdlg.src#TP_CUSTOMPROPERTIES.FT_PROPERTIES.fixedtext.text
+msgid "~Properties"
+msgstr "లక్షణాలు (~P)"
+
+#: dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.string.text
+msgid "Name"
+msgstr "నామము"
+
+#: dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.string.text
+msgid "Type"
+msgstr "రకం"
+
+#: dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_VALUE.string.text
+msgid "Value"
+msgstr "విలువ"
+
+#: dinfdlg.src#TP_CUSTOMPROPERTIES.BTN_ADD.pushbutton.text
+msgid "~Add"
+msgstr "కలుపు (~A)"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.combobox.text
+msgctxt "dinfdlg.src#SFX_CB_PROPERTY_NAME.combobox.text"
+msgid "-"
+msgstr "-"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.combobox.quickhelptext
+msgid "Property Name"
+msgstr "లక్షణం నామము"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.1.stringlist.text
+msgid "Checked by"
+msgstr "దాని బట్టి"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.2.stringlist.text
+msgid "Client"
+msgstr "కక్షిదారి"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.3.stringlist.text
+msgid "Date completed"
+msgstr "తేద"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.4.stringlist.text
+msgid "Department"
+msgstr "విభాగం"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.5.stringlist.text
+msgid "Destinations"
+msgstr "గమ్యములు"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.6.stringlist.text
+msgid "Disposition"
+msgstr "స్థానభ్రంశము"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.7.stringlist.text
+msgid "Division"
+msgstr "విభాగము"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.8.stringlist.text
+msgid "Document number"
+msgstr "పత్రం సంఖ్య"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.9.stringlist.text
+msgid "Editor"
+msgstr "సంపాదకుడు"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.10.stringlist.text
+msgid "E-Mail"
+msgstr "ఇ-తపాలా"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.11.stringlist.text
+msgid "Forward to"
+msgstr "మునుముందుకు"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.12.stringlist.text
+msgid "Group"
+msgstr "గ్రూప్"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.13.stringlist.text
+msgid "Info"
+msgstr "సమాచారము"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.14.stringlist.text
+msgid "Language"
+msgstr "భాష"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.15.stringlist.text
+msgid "Mailstop"
+msgstr "మెయిల్‌స్టాప్"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.16.stringlist.text
+msgid "Matter"
+msgstr "సంగతి, విషయము"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.17.stringlist.text
+msgid "Office"
+msgstr "కార్యలయం"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.18.stringlist.text
+msgid "Owner"
+msgstr "యజమాని"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.19.stringlist.text
+msgid "Project"
+msgstr "పథకం"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.20.stringlist.text
+msgid "Publisher"
+msgstr "ప్రచురుణకర్త"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.21.stringlist.text
+msgid "Purpose"
+msgstr "ప్రయోజనము"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.22.stringlist.text
+msgid "Received from"
+msgstr "నుండి"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.23.stringlist.text
+msgid "Recorded by"
+msgstr "దాని బట్టి"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.24.stringlist.text
+msgid "Recorded date"
+msgstr "రికార్డుచేయబడిన తేది"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.25.stringlist.text
+msgid "Reference"
+msgstr "నివేదన"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.26.stringlist.text
+msgid "Source"
+msgstr "మూలము"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.27.stringlist.text
+msgid "Status"
+msgstr "సుస్థితి"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.28.stringlist.text
+msgid "Telephone number"
+msgstr "సంఖ్య"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.29.stringlist.text
+msgid "Typist"
+msgstr "టైపుచేయువారు"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.30.stringlist.text
+msgid "URL"
+msgstr "యు ఆర్ ఎల్"
+
+#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.1.stringlist.text
+msgid "Text"
+msgstr "పాఠం"
+
+#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.2.stringlist.text
+msgid "DateTime"
+msgstr "తేదిసమయం"
+
+#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.3.stringlist.text
+msgid "Date"
+msgstr "తేద"
+
+#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.4.stringlist.text
+msgctxt "dinfdlg.src#SFX_LB_PROPERTY_TYPE.4.stringlist.text"
+msgid "Duration"
+msgstr "వ్యవధి"
+
+#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.5.stringlist.text
+msgid "Number"
+msgstr "సంఖ్య"
+
+#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.6.stringlist.text
+msgid "Yes or no"
+msgstr "అవును లేదా"
+
+#: dinfdlg.src#SFX_ST_DURATION_FORMAT.string.text
+msgid " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
+msgstr " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
+
+#: dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.radiobutton.text
+msgid "Yes"
+msgstr "అవును"
+
+#: dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_NO.radiobutton.text
+msgid "No"
+msgstr "వద్దు"
+
+#: dinfdlg.src#SFX_PB_PROPERTY_REMOVE.imagebutton.text
+msgctxt "dinfdlg.src#SFX_PB_PROPERTY_REMOVE.imagebutton.text"
+msgid "-"
+msgstr "-"
+
+#: dinfdlg.src#SFX_PB_PROPERTY_REMOVE.imagebutton.quickhelptext
+msgid "Remove Property"
+msgstr "తొలగించు లక్షణం"
+
+#: dinfdlg.src#SFX_QB_WRONG_TYPE.querybox.text
+msgid ""
+"The value entered does not match the specified type.\n"
+"The value will be stored as text."
+msgstr "విలువ విలువ పాఠ్యము."
+
+#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.pageitem.text
+msgid "General"
+msgstr "సాధారణ"
+
+#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.pageitem.text
+msgid "Description"
+msgstr "వివరణ"
+
+#: dinfdlg.src#SID_DOCINFO.1.TP_CUSTOMPROPERTIES.pageitem.text
+msgid "Custom Properties"
+msgstr "మలచుకొనిన లక్షణాలు"
+
+#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.pageitem.text
+msgid "Internet"
+msgstr "ఇంటర్ నెట్"
+
+#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFOSECURITY.pageitem.text
+msgid "Security"
+msgstr "రక్షణ"
+
+#: dinfdlg.src#SID_DOCINFO.tabdialog.text
+msgid "Properties of "
+msgstr "లక్షణాలు "
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FL_DURATION.fixedline.text
+msgctxt "dinfdlg.src#RID_EDIT_DURATIONS.FL_DURATION.fixedline.text"
+msgid "Duration"
+msgstr "వ్యవధి"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.CB_NEGATIVE.checkbox.text
+msgid "~Negative"
+msgstr "నెగటివ్ (~N)"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_YEAR.fixedtext.text
+msgid "~Years"
+msgstr "సంవత్సరములు (~Y)"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_MONTH.fixedtext.text
+msgid "~Months"
+msgstr "నెలలు (~M)"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_DAY.fixedtext.text
+msgid "~Days"
+msgstr "రోజులు (~D)"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_HOUR.fixedtext.text
+msgid "H~ours"
+msgstr "గంటలు (~o)"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_MINUTE.fixedtext.text
+msgid "Min~utes"
+msgstr "నిముషములు (~u)"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_SECOND.fixedtext.text
+msgid "~Seconds"
+msgstr "సెకన్లు (~S)"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_MSECOND.fixedtext.text
+msgid "Millise~conds"
+msgstr "మిల్లీసెకన్లు (~c)"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.modaldialog.text
+msgid "Edit Duration"
+msgstr "నిడివిని సరిచేయి"
+
+#: dinfedt.src#DLG_DOCINFO_EDT.FL_INFO.fixedline.text
+msgid "Names"
+msgstr "నామములు"
+
+#: dinfedt.src#DLG_DOCINFO_EDT.modaldialog.text
+msgid "Edit Field Names"
+msgstr "క్షేత్రం నామంలను సవరించు"
+
+#: filedlghelper.src#STR_SFX_FILEDLG_ACTUALVERSION.string.text
+msgid "Current version"
+msgstr "ప్రస్తుత వివరణం"
+
+#: filedlghelper.src#STR_SFX_EXPLORERFILE_EXPORT.string.text
+msgid "Export"
+msgstr "ఎగుమతి"
+
+#: filedlghelper.src#STR_SFX_EXPLORERFILE_INSERT.string.text
+msgid "Insert"
+msgstr "ప్రవేశించు"
+
+#: filedlghelper.src#STR_SFX_EXPLORERFILE_BUTTONINSERT.string.text
+msgid "~Insert"
+msgstr "ప్రవేశపెట్టు (~I)"
+
+#: filedlghelper.src#STR_SFX_IMPORT_ALL.string.text
+msgid "<All formats>"
+msgstr "<అన్ని రూపకములు>"
+
+#: filedlghelper.src#STR_CB_AUTO_EXTENSION.string.text
+msgid "~Automatic file name extension"
+msgstr "స్వయంచాలకముగా దస్త్రనామ పొడిగింపు (~A)"
+
+#: filedlghelper.src#STR_CB_SELECTION.string.text
+msgid "~Selection"
+msgstr "ఎంపిక (~S)"
+
+#: filedlghelper.src#STR_CB_INSERT_AS_LINK.string.text
+msgid "~Link"
+msgstr "జోడింపు (~L)"
+
+#: filedlghelper.src#STR_CB_SHOW_PREVIEW.string.text
+msgid "Pr~eview"
+msgstr "ఉపదర్శనము (~e)"
+
+#: filedlghelper.src#STR_CB_READONLY.string.text
+msgctxt "filedlghelper.src#STR_CB_READONLY.string.text"
+msgid "~Read-only"
+msgstr "చదువుట మాత్రమే (~R)"
+
+#: filedlghelper.src#STR_CB_PASSWORD.string.text
+msgid "Save with ~password"
+msgstr "రహస్యపదంతో దాచు (~p)"
+
+#: filedlghelper.src#STR_CB_FILTER_OPTIONS.string.text
+msgid "Edit ~filter settings"
+msgstr "వడపోత అమరికలను సరిచేయు (~f)"
+
+#: filedlghelper.src#STR_PB_PLAY.string.text
+msgid "~Play"
+msgstr "ఆట (~P)"
+
+#: filedlghelper.src#STR_PB_STOP.string.text
+msgid "Sto~p"
+msgstr "ఆపు (~p)"
+
+#: filedlghelper.src#STR_PB_OPEN.string.text
+msgid "~Open"
+msgstr "తెరచిన (~O)"
+
+#: filedlghelper.src#STR_PB_SAVE.string.text
+msgid "~Save"
+msgstr "(~S) దాచు"
+
+#: filedlghelper.src#STR_LB_IMAGE_TEMPLATE.string.text
+msgid "Style:"
+msgstr "శైలి:"
+
+#: filedlghelper.src#STR_LB_TEMPLATES.string.text
+msgid "~Templates:"
+msgstr "మాదిరులు (~T):"
+
+#: filedlghelper.src#STR_LB_VERSION.string.text
+msgid "~Version:"
+msgstr "వివరణం (~V):"
+
+#: mailwindow.src#RID_ERRBOX_MAIL_CONFIG.errorbox.text
+msgid ""
+"%PRODUCTNAME was unable to find a working e-mail configuration. Please save "
+"this document locally instead and attach it from within your e-mail client."
+msgstr ""
+"%PRODUCTNAME పనిచేయుచున్నటువంటి ఇ-తపాలా రూపకరణను కనుగోనుట సాధ్యము కాలేదు. "
+"దయచేసి ఈ పత్రమును స్థానికంగా దాచు మరియు దీనిని మీ ఇ-తపాలా బంట్రౌతునకు "
+"అతికించుము."
+
+#: mgetempl.src#TP_MANAGE_STYLES.FT_NAME.fixedtext.text
+msgid "~Name"
+msgstr "నామము (~N)"
+
+#: mgetempl.src#TP_MANAGE_STYLES.CB_AUTO.checkbox.text
+msgid "~AutoUpdate"
+msgstr "స్వయం తాజాపరుచు (~A)"
+
+#: mgetempl.src#TP_MANAGE_STYLES.FT_NEXT.fixedtext.text
+msgid "Ne~xt Style"
+msgstr "తర్వాత శైలి (~x)"
+
+#: mgetempl.src#TP_MANAGE_STYLES.FT_BASE.fixedtext.text
+msgid "Linked with"
+msgstr "తో జోడ్చిబడియది"
+
+#: mgetempl.src#TP_MANAGE_STYLES.FT_REGION.fixedtext.text
+msgid "~Category"
+msgstr "విభాగము (~C)"
+
+#: mgetempl.src#TP_MANAGE_STYLES.GB_DESC.fixedline.text
+msgid "Contains"
+msgstr "కలిగియుండుట"
+
+#: newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.FL_COL.fixedline.text
+msgid "Style name"
+msgstr "శైలి నామము"
+
+#: newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MSG_OVERWRITE.querybox.text
+msgid "Style already exists. Overwrite?"
+msgstr "శైలి యిప్పటికే వుంది. తిరిగివ్రాయాలా?"
+
+#: newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.modaldialog.text
+msgid "Create Style"
+msgstr "శైలిని నిర్మించు"
+
+#: passwd.src#DLG_PASSWD.FT_PASSWD_USER.fixedtext.text
+msgid "~User"
+msgstr "వినియోగదారు (~U)"
+
+#: passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD.fixedtext.text
+msgid "~Password"
+msgstr "సంకేతపదము (~P)"
+
+#: passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM.fixedtext.text
+msgid "~Confirm"
+msgstr "స్ధిరపరుచు (~C)"
+
+#: passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.fixedline.text
+#, fuzzy
+msgctxt "passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.fixedline.text"
+msgid "Password"
+msgstr "రహస్యపదం"
+
+#: passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD2.fixedtext.text
+#, fuzzy
+msgid "P~assword"
+msgstr "రహస్యపదం"
+
+#: passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM2.fixedtext.text
+#, fuzzy
+msgid "Confir~m"
+msgstr "స్ధిరపరుచు (~C)"
+
+#: passwd.src#DLG_PASSWD.TEXT_PASSWD.string.text
+#, fuzzy
+msgctxt "passwd.src#DLG_PASSWD.TEXT_PASSWD.string.text"
+msgid "Password"
+msgstr "రహస్యపదం"
+
+#: passwd.src#DLG_PASSWD.modaldialog.text
+msgid "Enter Password"
+msgstr "రహస్యపదమును ప్రవేశపెట్టుము"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.fixedline.text
+msgid "Reduce print data"
+msgstr "ముద్రించు దత్తాంశమును తగ్గించు"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.FT_OUTPUTTYPE.fixedtext.text
+msgid "Settings for"
+msgstr "కొరకు అమరికలు"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTEROUTPUT.radiobutton.text
+msgid "~Printer"
+msgstr "ముద్రణా యంత్రం (~P)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTFILEOUTPUT.radiobutton.text
+msgid "Print to ~file"
+msgstr "దస్త్రమున కు ముద్రించు (~f)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCETRANSPARENCY.checkbox.text
+msgid "~Reduce transparency"
+msgstr "పరదర్శరతను తగ్గించు (~R)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_AUTO.radiobutton.text
+msgid "Auto~matically"
+msgstr "స్వయంచాలక (~m)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_NONE.radiobutton.text
+msgid "~No transparency"
+msgstr "పాకదర్శకత లేదు (~N)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEGRADIENTS.checkbox.text
+msgid "Reduce ~gradients"
+msgstr "ఏటవాలు ప్రమాణములను తగ్గించు (~g)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_STRIPES.radiobutton.text
+msgid "Gradient ~stripes"
+msgstr "ఏటవాలు ప్రమాణ స్రిప్పులు (~s)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_COLOR.radiobutton.text
+msgid "Intermediate ~color"
+msgstr "మాధ్యమిక వర్ణం (~c)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS.checkbox.text
+msgid "Reduce ~bitmaps"
+msgstr "బిట్ మాపులను తగ్గించు (~b)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_OPTIMAL.radiobutton.text
+msgid "~High print quality"
+msgstr "ఎక్కువ నాణ్యత కలిగిన ముద్రణ (~H)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_NORMAL.radiobutton.text
+msgid "N~ormal print quality"
+msgstr "సాధారణ నాణ్యత కలిగిన ముద్రణ (~o)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_RESOLUTION.radiobutton.text
+msgid "Reso~lution"
+msgstr "రిసల్యూషన్ (~l)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.1.stringlist.text
+msgid "72 DPI"
+msgstr "72 డిపిఐ"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.2.stringlist.text
+msgid "96 DPI"
+msgstr "96 డిపిఐ"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.3.stringlist.text
+msgid "150 DPI (Fax)"
+msgstr "156 డిపిఐ (ఫాక్స్)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.4.stringlist.text
+msgid "200 DPI (default)"
+msgstr "200 డిపిఐ(అప్రమేయము)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.5.stringlist.text
+msgid "300 DPI"
+msgstr "300 డిపిఐ"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.6.stringlist.text
+msgid "600 DPI"
+msgstr "600 డిపిఐ"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS_TRANSPARENCY.checkbox.text
+msgid "Include transparent ob~jects"
+msgstr "పారదర్శక వప్తువులను కలుపుకొని (~j)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_CONVERTTOGREYSCALES.checkbox.text
+msgid "Con~vert colors to grayscale"
+msgstr "వర్ణములను గ్రేస్కేలు కు పరివర్తించు (~v)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.GB_PRINT_WARN.fixedline.text
+msgid "Printer warnings"
+msgstr "ముద్రణా యంత్రపు హెచ్చరికలు"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERSIZE.checkbox.text
+msgid "P~aper size"
+msgstr "కాగిత పరిమాణం (~a)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERORIENTATION.checkbox.text
+msgid "Pap~er orientation"
+msgstr "కాగిత పునశ్ఛరణ (~e)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_TRANSPARENCY.checkbox.text
+msgid "~Transparency"
+msgstr "పారదర్శకత (~T)"
+
+#: printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.fixedtext.text
+msgid ""
+"Your document contains transparent objects.\n"
+"This may lead to longer printing time on certain\n"
+"printers. Should the aspect of transparency\n"
+"be reduced?"
+msgstr ""
+"మీ పత్రము పారదర్శక తాత్పర్యములను కలిగియున్నది.\n"
+"ఇది కొన్ని ముద్రణా యంత్రములలో ఎక్కువ సమయం ముద్రించుటకు దారితీయును.\n"
+"పారదర్శకత అను విషయము తగ్గించవలెనా?"
+
+#: printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.okbutton.text
+msgid "~Yes"
+msgstr "అవును (~Y)"
+
+#: printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_NO.pushbutton.text
+msgid "~No"
+msgstr "కాదు (~N)"
+
+#: printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_CANCEL.cancelbutton.text
+msgid "~Cancel"
+msgstr "రద్దు (~C)"
+
+#: printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.checkbox.text
+msgid "~Do not show warning again"
+msgstr "హెచ్చరికను మరల చూపకు (~D)"
+
+#: printopt.src#RID_WARN_PRINTTRANSPARENCY.modaldialog.text
+msgid "Warning"
+msgstr "హెచ్చరికల"
+
+#: recfloat.src#SID_RECORDING_FLOATWINDOW.floatingwindow.text
+msgid "Record Macro"
+msgstr "రికార్డు స్థూలం"
+
+#: recfloat.src#STR_MACRO_LOSS.string.text
+msgid ""
+"Do you really want to cancel the recording? Any steps recorded up to this "
+"point will be lost."
+msgstr ""
+"బద్రపరుచుటను నిజముగానే ఆపవలె అని అనుకుంటున్నారా? ఇప్పటి వరకు "
+"బద్రపరుచినటువంటి అన్నియూ పోవును."
+
+#: recfloat.src#STR_CANCEL_RECORDING.string.text
+msgid "Cancel Recording"
+msgstr "బద్రపరుచుట మూయు"
+
+#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FL.fixedline.text
+msgid "File encryption password"
+msgstr "ఫైల్ యెన్క్రిప్షన్ సంకేతపదము"
+
+#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FT.fixedtext.text
+msgid "~Enter password to open"
+msgstr "తెరుచుటకు సంకేతపదమును ప్రవేశపెట్టుము (~E)"
+
+#: securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_OPEN_FT.fixedtext.text
+msgid "~Reenter password to open"
+msgstr "తెరుచుటకు సంకేతపదమును తిరిగిప్రవేశపెట్టుము (~R)"
+
+#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FL.fixedline.text
+msgid "File sharing password"
+msgstr "ఫైల్ భాగస్వామ్యపు సంకేతపదము"
+
+#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FT.fixedtext.text
+msgid "Enter password to modify"
+msgstr "సవరించుటకు సంకేతపదమును ప్రవేశపెట్టుము"
+
+#: securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_MODIFY_FT.fixedtext.text
+msgid "Reenter password to modify"
+msgstr "సవరించుటకు సంకేతపదమును ప్రవేశపెట్టుము"
+
+#: securitypage.src#TP_DOCINFOSECURITY.OPTIONS_FL.fixedline.text
+msgid "File sharing options"
+msgstr "ఫైలును పంచుకొను ఐచ్చికములు"
+
+#: securitypage.src#TP_DOCINFOSECURITY.OPEN_READONLY_CB.checkbox.text
+msgid "~Open file read-only"
+msgstr "చదువుటకు-మాత్రమే ఫైలు తెరువుము (~O)"
+
+#: securitypage.src#TP_DOCINFOSECURITY.RECORD_CHANGES_CB.checkbox.text
+msgid "Record ~changes"
+msgstr "మార్పులను నమోదుచేయుము (~c)"
+
+#: securitypage.src#TP_DOCINFOSECURITY.STR_PROTECT.string.text
+msgid "~Protect..."
+msgstr "రక్షించు... (~P)"
+
+#: securitypage.src#TP_DOCINFOSECURITY.STR_UNPROTECT.string.text
+msgid "~Unprotect..."
+msgstr "రక్షించవద్దు... (~U)"
+
+#: securitypage.src#TP_DOCINFOSECURITY.STR_END_REDLINING_WARNING.string.text
+msgid ""
+"This action will exit the change recording mode.\n"
+"Any information about changes will be lost.\n"
+"\n"
+"Exit change recording mode?\n"
+"\n"
+msgstr ""
+"This action will exit the change recording mode.\n"
+"Any information about changes will be lost.\n"
+"\n"
+"Exit change recording mode?\n"
+"\n"
+
+#: securitypage.src#RID_SFX_PROTECT_RECORDS.string.text
+msgid "Protect Records"
+msgstr "రక్షిత రికార్డులు"
+
+#: securitypage.src#RID_SFX_UNPROTECT_RECORDS.string.text
+msgid "Unprotect Records"
+msgstr "రక్షణలేని  రికార్డులు"
+
+#: securitypage.src#RID_SFX_INCORRECT_PASSWORD.string.text
+msgid "Incorrect password"
+msgstr "సరికాని సంకేతపదము"
+
+#: srchdlg.src#RID_DLG_SEARCH.FT_SEARCH.fixedtext.text
+msgid "~Search for"
+msgstr "కోరకు  వెతుకు (~S)"
+
+#: srchdlg.src#RID_DLG_SEARCH.CB_WHOLEWORDS.checkbox.text
+msgid "~Whole words only"
+msgstr "పూర్తి పదములు మాత్రమే (~W)"
+
+#: srchdlg.src#RID_DLG_SEARCH.CB_MATCHCASE.checkbox.text
+msgid "~Match case"
+msgstr "సందర్భమును జతపరచు (~M)"
+
+#: srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.checkbox.text
+msgctxt "srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.checkbox.text"
+msgid "Wrap ~around"
+msgstr "మడత (~a)"
+
+#: srchdlg.src#RID_DLG_SEARCH.CB_BACKWARDS.checkbox.text
+msgid "~Backwards"
+msgstr "వెనక వైపులకు (~B)"
+
+#: srchdlg.src#RID_DLG_SEARCH.PB_FIND.pushbutton.text
+msgid "~Find"
+msgstr "కనిపెట్టు (~F)"
+
+#: srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.cancelbutton.text
+msgctxt "srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.cancelbutton.text"
+msgid "~Close"
+msgstr "మూయుము (~C)"
+
+#: srchdlg.src#RID_DLG_SEARCH.STR_TOGGLE.string.text
+msgctxt "srchdlg.src#RID_DLG_SEARCH.STR_TOGGLE.string.text"
+msgid "Wrap ~around"
+msgstr "మడత (~a)"
+
+#: srchdlg.src#RID_DLG_SEARCH.modelessdialog.text
+msgid "Find on this Page"
+msgstr "ఈ పుటలో వెతకు"
+
+#: taskpane.src#STR_SFX_DOCK.string.text
+msgid "Dock"
+msgstr "జతపరచు"
+
+#: taskpane.src#STR_SFX_UNDOCK.string.text
+msgid "Undock"
+msgstr "అన్‌డాక్"
+
+#: taskpane.src#STR_SFX_TASK_PANE_VIEW.string.text
+msgid "View"
+msgstr "దర్శనం"
+
+#: taskpane.src#STR_SFX_TASKS.string.text
+msgid "Tasks"
+msgstr "కర్తవ్యాలు"
+
+#: templdlg.src#RID_STYLECATALOG.BT_ORG.pushbutton.text
+msgid "~Organizer..."
+msgstr "(~O) కార్యనిర్వహకుడు..."
+
+#: templdlg.src#RID_STYLECATALOG.BT_DEL.pushbutton.text
+msgid "~Delete..."
+msgstr "తొలగించు... (~D)"
+
+#: templdlg.src#RID_STYLECATALOG.BT_EDIT.pushbutton.text
+msgid "~Modify..."
+msgstr "మార్చు... (~M)"
+
+#: templdlg.src#RID_STYLECATALOG.BT_NEW.pushbutton.text
+msgid "~New..."
+msgstr "క్రొత్తది... (~N)"
+
+#: templdlg.src#RID_STYLECATALOG.modaldialog.text
+msgid "Style Catalog"
+msgstr "శైలిజాబితా"
+
+#: templdlg.src#STR_STYLE_ELEMTLIST.string.text
+msgid "Style List"
+msgstr ""
+
+#: templdlg.src#STR_STYLE_FILTER_HIERARCHICAL.string.text
+msgid "Hierarchical"
+msgstr "వరుసక్రమం"
+
+#: templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_WATERCAN.toolboxitem.text
+msgid "Fill Format Mode"
+msgstr "నింపురూపక  విధానం"
+
+#: templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_NEW_BY_EXAMPLE.toolboxitem.text
+msgid "New Style from Selection"
+msgstr "ఎంపిక నుండి కొత్త శైలి"
+
+#: templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_UPDATE_BY_EXAMPLE.toolboxitem.text
+msgid "Update Style"
+msgstr "శైలి ని తాజాపరుచు"
+
+#: templdlg.src#DLG_STYLE_DESIGNER.dockingwindow.text
+msgid "Styles and Formatting"
+msgstr "శైలులు మరియు రూపలావణ్యము"
+
+#: versdlg.src#DLG_VERSIONS.GB_NEWVERSIONS.fixedline.text
+msgid "New versions"
+msgstr "క్రొత్త వివరణములు"
+
+#: versdlg.src#DLG_VERSIONS.PB_SAVE.pushbutton.text
+msgid "Save ~New Version"
+msgstr "దాచువివరణం (~N)"
+
+#: versdlg.src#DLG_VERSIONS.CB_SAVEONCLOSE.checkbox.text
+msgid "~Always save a version on closing"
+msgstr "ఎప్పుడయినా మూయునపుడు వివరణను బద్రపరచు (~A)"
+
+#: versdlg.src#DLG_VERSIONS.GB_OLDVERSIONS.fixedline.text
+msgid "Existing versions"
+msgstr "ఉన్న వివరణాలు"
+
+#: versdlg.src#DLG_VERSIONS.FT_DATETIME.fixedtext.text
+msgid "Date and time"
+msgstr "తేది& కాలము"
+
+#: versdlg.src#DLG_VERSIONS.FT_SAVEDBY.fixedtext.text
+msgid "Saved by"
+msgstr " తో దాచబడినది "
+
+#: versdlg.src#DLG_VERSIONS.FT_COMMENTS.fixedtext.text
+msgid "Comments"
+msgstr "వ్యాఖ్యలు"
+
+#: versdlg.src#DLG_VERSIONS.PB_CLOSE.cancelbutton.text
+msgid "Close"
+msgstr "మూయుము"
+
+#: versdlg.src#DLG_VERSIONS.PB_OPEN.pushbutton.text
+msgid "Open"
+msgstr "తెరచు"
+
+#: versdlg.src#DLG_VERSIONS.PB_VIEW.pushbutton.text
+msgid "~Show..."
+msgstr "కనబర్చు... (~S)"
+
+#: versdlg.src#DLG_VERSIONS.PB_DELETE.pushbutton.text
+msgid "~Delete"
+msgstr "(~D) తొలగించుము"
+
+#: versdlg.src#DLG_VERSIONS.PB_COMPARE.pushbutton.text
+msgid "Compare"
+msgstr "పోల్చు"
+
+#: versdlg.src#DLG_VERSIONS.modaldialog.text
+msgid "Versions of"
+msgstr "వివరణం"
+
+#: versdlg.src#DLG_COMMENTS.FT_DATETIME.fixedtext.text
+msgid "Date and time : "
+msgstr "తేది& కాలము:"
+
+#: versdlg.src#DLG_COMMENTS.FT_SAVEDBY.fixedtext.text
+msgid "Saved by "
+msgstr "తో దాచబడినది "
+
+#: versdlg.src#DLG_COMMENTS.PB_CLOSE.pushbutton.text
+msgctxt "versdlg.src#DLG_COMMENTS.PB_CLOSE.pushbutton.text"
+msgid "~Close"
+msgstr "మూయుము (~C)"
+
+#: versdlg.src#DLG_COMMENTS.modaldialog.text
+msgid "Insert Version Comment"
+msgstr "వివరణము వ్యాఖ్యను  ప్రవేశపెట్టు"
+
+#: versdlg.src#DLG_COMMENTS.string.text
+msgid "Version comment"
+msgstr "వివరణం వ్యాఖ్య"
+
+#~ msgid "Confirm password"
+#~ msgstr "పాస్ వర్డ్"
+
+#~ msgid "Confirm password"
+#~ msgstr "పాస్ వర్డ్"

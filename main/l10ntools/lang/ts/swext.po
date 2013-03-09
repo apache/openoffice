@@ -1,0 +1,913 @@
+
+#: wiki.xhp#tit.help.text
+msgctxt "wiki.xhp#tit.help.text"
+msgid "@WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@"
+
+#: wiki.xhp#bm_id3154408.help.text
+msgid ""
+"<bookmark_value>Wiki;@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_va"
+"lue>@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>extensions;Me"
+"diaWiki</bookmark_value>"
+msgstr ""
+"<bookmark_value>Wiki;@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_va"
+"lue>@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>extensions;Me"
+"diaWiki</bookmark_value>"
+
+#: wiki.xhp#hd_id5993530.help.text
+msgctxt "wiki.xhp#hd_id5993530.help.text"
+msgid "@WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@"
+
+#: wiki.xhp#par_id9647511.help.text
+msgid ""
+"<ahelp hid=\".\">By using the @WIKIEXTENSIONPRODUCTNAME@ you can upload your "
+"current Writer text document to a MediaWiki server. After uploading, all "
+"Wiki users can read your document on the Wiki.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">Deur die @WIKIEXTENSIONPRODUCTNAME@ te gebruik kan jy jou "
+"huidige Writer-teksdokumente na 'n MediaWiki-bediener oplaai. Nadat jy dit "
+"opgelaai het, kan alle wikigebruikers jou dokument op die wiki lees.</ahelp>"
+
+#: wiki.xhp#par_id6468703.help.text
+msgid ""
+"<ahelp hid=\".\">Choose <item type=\"menuitem\">File - Send - To "
+"MediaWiki</item> to upload the current Writer document to a MediaWiki "
+"server.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">Kies <item type=\"menuitem\">Lêer- Stuur - Na MediaWiki</item> "
+"om die huidige Writer-dokument na 'n MediaWiki-bediener op te laai.</ahelp>"
+
+#: wiki.xhp#hd_id4554582.help.text
+msgid "System Requirements"
+msgstr "Stelselvereistes"
+
+#: wiki.xhp#par_id2597430.help.text
+msgid "StarOffice/StarSuite 9"
+msgstr "StarOffice/StarSuite 9"
+
+#: wiki.xhp#par_id8430738.help.text
+msgid "OpenOffice.org 3.0"
+msgstr "OpenOffice.org 3.0"
+
+#: wiki.xhp#par_id9340495.help.text
+msgid "Java Runtime Environment 1.4"
+msgstr "Java-looptydomgewing 1.4"
+
+#: wiki.xhp#par_id7387615.help.text
+msgid ""
+"A Wiki account on a supported <link "
+"href=\"http://www.mediawiki.org/wiki/MediaWiki\">MediaWiki</link> server"
+msgstr ""
+"'n Wiki-rekening op 'n ondersteunde <link "
+"href=\"http://www.mediawiki.org/wiki/MediaWiki\">MediaWiki</link>-bediener"
+
+#: wiki.xhp#hd_id8047120.help.text
+msgid "Installing @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "Installeer van @WIKIEXTENSIONPRODUCTNAME@"
+
+#: wiki.xhp#par_id4277169.help.text
+msgid ""
+"Before you install the @WIKIEXTENSIONPRODUCTNAME@, ensure that %PRODUCTNAME "
+"uses a Java Runtime Environment (JRE). To check the status of the JRE, "
+"choose <item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Java</item>. "
+"Ensure that \"Use a Java runtime environment\" is marked and that a Java "
+"runtime folder is selected in the big listbox. If no JRE was activated, then "
+"activate a JRE 1.4 or later and restart %PRODUCTNAME."
+msgstr ""
+"Voordat u die @WIKIEXTENSIONPRODUCTNAME@ installeer, maak seker dat %"
+"PRODUCTNAME 'n Java-looptydomgewing (JRE) gebruik. Om die stand van die JRE "
+"te kontroleer, kies <item type=\"menuitem\">Nuts - Opsies - %PRODUCTNAME - "
+"Java</item>. Maak seker dat \"Gebruik 'n Java-looptydomgewing\" gemerk is en "
+"dat 'n Java-looptydvouer in die groot lyskassie gekies is. As daar geen JRE "
+"geaktiveer is nie, aktiveer dan 'n JRE 1.4 of jonger, en herbegin %"
+"PRODUCTNAME."
+
+#: wiki.xhp#hd_id567339.help.text
+msgid "To Install the @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "Om die @WIKIEXTENSIONPRODUCTNAME@ te installeer"
+
+#: wiki.xhp#par_id1732230.help.text
+msgctxt "wiki.xhp#par_id1732230.help.text"
+msgid ""
+"In a Writer window, choose <item type=\"menuitem\">Tools - Extension "
+"Manager</item>."
+msgstr ""
+"In 'n Writer-venster, kies <item type=\"menuitem\">Nuts - "
+"Uitbreidingbestuurder</item>."
+
+#: wiki.xhp#par_id4338511.help.text
+msgid "In the Extension Manager dialog, click Add."
+msgstr "In die uitbreidingbestuurder-dialoog, kliek Voeg by."
+
+#: wiki.xhp#par_id5882442.help.text
+msgid ""
+"Locate the @WIKIEXTENSIONFILENAME@.oxt file, click Open, and then click "
+"Close. "
+msgstr ""
+"Vind die @WIKIEXTENSIONFILENAME@.oxt-lêer, kliek Open, en kliek dan Afsluit. "
+""
+
+#: wiki.xhp#par_id4008911.help.text
+msgid "Close %PRODUCTNAME, and close also the Quickstarter if enabled."
+msgstr ""
+"Sluit %PRODUCTNAME en sluit ook die Snelbeginner, indien dit geaktiveer is."
+
+#: wiki.xhp#par_id265511.help.text
+msgid ""
+"Restart the software, open a text document, then choose <item "
+"type=\"menuitem\">Tools - Options - Internet - MediaWiki</item> to enter your "
+"Wiki settings. See \"To Connect To a Wiki\" below."
+msgstr ""
+"Herbegin die sagteware, open 'n teksdokument, en kies dan <item "
+"type=\"menuitem\">Nuts - Opsies - Internet - MediaWiki</item> om jou wiki-"
+"instellings in te tik. Kyk \"Om aan 'n wiki te koppel\" hier onder."
+
+#: wiki.xhp#hd_id3569444.help.text
+msgid "To Remove the @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "Om die @WIKIEXTENSIONPRODUCTNAME@ te verwyder"
+
+#: wiki.xhp#par_id2655110.help.text
+msgctxt "wiki.xhp#par_id2655110.help.text"
+msgid ""
+"In a Writer window, choose <item type=\"menuitem\">Tools - Extension "
+"Manager</item>."
+msgstr ""
+"In 'n Writer-venster, kies <item type=\"menuitem\">Nuts - "
+"Uitbreidingbestuurder</item>."
+
+#: wiki.xhp#par_id9504379.help.text
+msgid "Click the plus sign (+) in front of My Extensions."
+msgstr "Kliek die plusteken (+) voor My Uitbreidings."
+
+#: wiki.xhp#par_id8431348.help.text
+msgid "Select the extension, click Remove, and then click Close."
+msgstr "Kies die uitbreiding, kliek Verwyder, en kliek dan Afsluit."
+
+#: wiki.xhp#hd_id5316019.help.text
+msgid "To Connect to a Wiki"
+msgstr "Om aan 'n wiki te koppel"
+
+#: wiki.xhp#par_id2381969.help.text
+msgid ""
+"Note: You can store your user name and password for all respective dialogs "
+"inside %PRODUCTNAME. The password will be stored in a secure way, where "
+"access is maintained by a master password. To enable the master password, "
+"choose <item type=\"menuitem\">Tools - Options - %PRODUCTNAME - "
+"Security</item>."
+msgstr ""
+"Let wel: U kan u gebruikernaam en wagwoord vir al die onderskeie dialoë in %"
+"PRODUCTNAME stoor. Die wagwoord word op 'n veilige manier bewaar waar "
+"toegang deur 'n meesterwagwoord beheer word. Om die meesterwagwoord te "
+"aktiveer, kies <item type=\"menuitem\">Nuts - Opsies - %PRODUCTNAME - "
+"Sekuriteit</item>."
+
+#: wiki.xhp#par_id3751640.help.text
+msgid ""
+"Note: If you connect to the web using a proxy server, enter the proxy "
+"information to <item type=\"menuitem\">Tools - Options - Internet - "
+"Proxy</item>, and restart the software."
+msgstr ""
+"Let wel: As jy aan die web koppel met 'n instaanbediener, tik die "
+"instaanbedienerinligting by <item type=\"menuitem\">Nuts - Opsies - Internet - "
+"Instaan</item>, en herbegin die sagteware."
+
+#: wiki.xhp#par_id9533677.help.text
+msgid ""
+"Open a Writer document, and choose <item type=\"menuitem\">Tools - Options - "
+"Internet - MediaWiki</item>."
+msgstr ""
+"Open 'n Writer-dokument en kies <item type=\"menuitem\">Nuts - Opsies - "
+"Internet - MediaWiki</item>."
+
+#: wiki.xhp#par_id368968.help.text
+msgid ""
+"In the <link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\">Options</link> "
+"dialog, click Add."
+msgstr ""
+"In die <link "
+"href=\"@WIKIEXTENSIONID@/wikisettings.xhp\">Options</link>-dialoog, kliek "
+"'Voeg by'."
+
+#: wiki.xhp#par_id6962187.help.text
+msgid ""
+"In the <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> "
+"dialog, enter the account information for the Wiki."
+msgstr ""
+"Tik die rekeninginligting vir die wiki by die <link "
+"href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link>-dialoog in."
+
+#: wiki.xhp#par_id5328836.help.text
+msgid ""
+"In the URL textbox, enter the address of a Wiki that you want to connect to."
+msgstr ""
+"Tik die adres van 'n wiki in die URL-tekskassie in waaraan u wil koppel."
+
+#: wiki.xhp#par_id389416.help.text
+msgid "You can copy the URL from a web browser and paste it into the textbox."
+msgstr "U kan die URL uit 'n webblaaier kopieer en dit in die tekskassie plak."
+
+#: wiki.xhp#par_id5906552.help.text
+msgid "In the Username box, enter your user ID for your Wiki account."
+msgstr "Tik u gebruiker-ID vir u wikirekening in die gebruikersnaamveld in."
+
+#: wiki.xhp#par_id9297158.help.text
+msgid ""
+"If the Wiki allows anonymous write access, you can leave the Username and "
+"Password boxes empty."
+msgstr ""
+"As die wiki kan anonieme skryftoegang toelaat, kan jy die gebruikernaam- en "
+"wagwoordvelde leeg laat."
+
+#: wiki.xhp#par_id8869594.help.text
+msgid ""
+"In the Password box, enter the password for your Wiki account, then click "
+"OK."
+msgstr "Tik die wagwoord van u wikirekening in die wagwoordveld, en kliek OK."
+
+#: wiki.xhp#par_id292062.help.text
+msgid ""
+"Optionally enable \"Save password\" to save the password between sessions. A "
+"master password is used to maintain access to all saved passwords. Choose "
+"<item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Security</item> to "
+"enable the master password. \"Save password\" is unavailable when the master "
+"password is not enabled."
+msgstr ""
+"Aktiveer opsioneel \"Stoor wagwoord\" om die wagwoord tussen sessies te stoor. "
+"'n Meesterwagwoord word gebruik om toegang tot alle gestoorde wagwoorde te "
+"verkry. Kies <item type=\"menuitem\">Nuts - Opsies - %PRODUCTNAME - Sekuriteit "
+"</item> om die meesterwagwoord te aktiveer. \"Stoor wagwoord\" werk nie "
+"wanneer daar nie 'n meesterwagwoord is nie."
+
+#: wiki.xhp#hd_id7044892.help.text
+msgid "To Create a New Wiki Page"
+msgstr "Om nuwe wikibladsy te skep"
+
+#: wiki.xhp#par_id3514206.help.text
+msgid "Open a Writer document."
+msgstr "Open 'n Writer-dokument."
+
+#: wiki.xhp#par_id944853.help.text
+msgid ""
+"Write the content of the Wiki page. You can use formatting like text "
+"formats, headings, footnotes, and more. See the <link "
+"href=\"@WIKIEXTENSIONID@/wikiformats.xhp\">list of supported formats</link>."
+msgstr ""
+"Skryf die inhoud van die wikibladsy. Jy kan formatering gebruik soos "
+"teksformatering, opskrifte, voetnote, en nog baie meer. Kyk die <link "
+"href=\"@WIKIEXTENSIONID@/wikiformats.xhp\">-lys ondersteunde formate</link>."
+
+#: wiki.xhp#par_id4566484.help.text
+msgid "Choose <item type=\"menuitem\">File - Send - To MediaWiki</item>."
+msgstr "Kies <item type=\"menuitem\">Lêer - Stuur - Na MediaWiki</item>."
+
+#: wiki.xhp#par_id228278.help.text
+msgid ""
+"In the <link href=\"@WIKIEXTENSIONID@/wikisend.xhp\">Send to MediaWiki</link> "
+"dialog, specify the settings for your entry."
+msgstr ""
+"In die <link href=\"@WIKIEXTENSIONID@/wikisend.xhp\">Stuur na "
+"MediaWiki</link>-dialoog, spesifiseer die instellings vir jou inskrywing."
+
+#: wiki.xhp#par_id2564165.help.text
+msgid "<emph>MediaWiki server</emph>: Select the Wiki."
+msgstr "<emph>MediaWiki-bediener</emph>: Kies die wiki."
+
+#: wiki.xhp#par_id5566576.help.text
+msgid ""
+"<emph>Title</emph>: Type the title of your page. Type the title of an "
+"existing page to overwrite the page with your current text document. Type a "
+"new title to create a new page on the Wiki."
+msgstr ""
+"<emph>Titel</emph>: Tik die titel van jou bladsy. Tik die titel van 'n "
+"bestaande bladsy om oorheen te skryf met jou huidige teksdokument. Tik 'n "
+"nuwe titel om 'n nuwe bladsy op die wiki te skep."
+
+#: wiki.xhp#par_id9688711.help.text
+msgid "<emph>Summary</emph>: Enter an optional short summary of your page."
+msgstr ""
+"<emph>Opsomming</emph>: Tik 'n opsionele kort opsomming van jou bladsy in."
+
+#: wiki.xhp#par_id4123661.help.text
+msgid ""
+"<emph>This is a minor edit</emph>: Check this box to mark the uploaded page "
+"as a minor edit of the already existing page with the same title."
+msgstr ""
+"<emph>Dit is 'n klein redigering</emph>: Merk hierdie blokkie om die "
+"opgelaaide bladsy as 'n klein redigering van die reeds bestaande bladsy met "
+"dieselfde titel te merk."
+
+#: wiki.xhp#par_id452284.help.text
+msgid ""
+"<emph>Show in web browser</emph>: Check this box to open your system web "
+"browser and show the uploaded Wiki page."
+msgstr ""
+"<emph>Wys in webblaaier</emph>: Merk hierdie blokkie om jou rekenaar se "
+"webblaaier te open en die opgelaaide wikibladsy te wys."
+
+#: wiki.xhp#par_id8346812.help.text
+msgid "Click Send."
+msgstr "Kliek Stuur."
+
+#: wikiaccount.xhp#tit.help.text
+msgctxt "wikiaccount.xhp#tit.help.text"
+msgid "MediaWiki"
+msgstr "MediaWiki"
+
+#: wikiaccount.xhp#hd_id960722.help.text
+msgctxt "wikiaccount.xhp#hd_id960722.help.text"
+msgid "MediaWiki"
+msgstr "MediaWiki"
+
+#: wikiaccount.xhp#par_id4571672.help.text
+msgid ""
+"Use the MediaWiki dialog to add or edit your MediaWiki account settings."
+msgstr ""
+"Gebruik die MediaWiki-dialoog om by te voeg of jou MediaWiki-"
+"rekeninginstellings te redigeer."
+
+#: wikiaccount.xhp#par_id7631458.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Enter the URL of a MediaWiki server, "
+"starting with http://</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">Tik die URL van 'n MediaWiki-bediener in, "
+"en begin met http://</ahelp>"
+
+#: wikiaccount.xhp#par_id7862483.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Enter your user name on the MediaWiki "
+"server. Leave empty for anonymous access.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">Tik jou gebruikernaam op die MediaWiki-"
+"bediener in. Laat leeg vir anonieme toegang.</ahelp>"
+
+#: wikiaccount.xhp#par_id1113010.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Enter your password on the MediaWiki "
+"server. Leave empty for anonymous access.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">Tik u wagwoord op die MediaWiki-bediener. "
+"Laat oop vir anonieme toegang.</ahelp>"
+
+#: wikiaccount.xhp#par_id656758.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Enable to store your password between "
+"sessions. The master password must be enabled, see <item "
+"type=\"menuitem\">Tools - Options - %PRODUCTNAME - Security</item>.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">Aktiveer om jou wagwoord tussen sessies "
+"te stoor. Die meesterwagwoord moet geaktiveer word, kyk <item "
+"type=\"menuitem\">Nuts - Opsies - %PRODUCTNAME - Sekuriteit</item>.</ahelp>"
+
+#: wikiaccount.xhp#par_id3112582.help.text
+msgid ""
+"Enter the Internet address of a Wiki server in a format like "
+"http://wiki.services.openoffice.org/wiki or copy the URL from a web browser."
+msgstr ""
+"Tik die internetadres van 'n wikibediener in 'n formaat soos "
+"http://wiki.services.openoffice.org/wiki of kopieer die URL van 'n "
+"webblaaier."
+
+#: wikiaccount.xhp#par_id628070.help.text
+msgid ""
+"If the Wiki allows anonymous access, you can leave the account text boxes "
+"empty. Else enter your user name and password."
+msgstr ""
+"As die wiki anonieme skryftoegang toelaat, kan jy die gebruikernaam- en "
+"wagwoordvelde leeg laat. Of tik jou gebruikernaam en wagwoord."
+
+#: wikiaccount.xhp#par_id9046601.help.text
+msgid ""
+"If you have enabled the master password feature on the Security tab page of "
+"the Tools - Options - %PRODUCTNAME dialog, then the software can store your "
+"password and automatically insert the data where necessary. Enable the \"Save "
+"password\" checkbox to store your password."
+msgstr ""
+"As jy die meesterwagwoordfunksie op die Sekuriteit-oortjie van die dialoog "
+"Nuts - Opsies - %PRODUCTNAME geaktiveer het, sal die sagteware jou wagwoord "
+"kan stoor en die inligting outomaties invoeg waar nodig. Aktiveer die \"Stoor "
+"wagwoord\"-merkblokkie om jou wagwoord te stoor."
+
+#: wikiformats.xhp#tit.help.text
+msgctxt "wikiformats.xhp#tit.help.text"
+msgid "MediaWiki Formats"
+msgstr "MediaWiki-formate"
+
+#: wikiformats.xhp#hd_id3743095.help.text
+msgctxt "wikiformats.xhp#hd_id3743095.help.text"
+msgid "MediaWiki Formats"
+msgstr "MediaWiki-formate"
+
+#: wikiformats.xhp#par_id8654133.help.text
+msgid ""
+"The following list gives an overview of the text formats that the "
+"@WIKIEXTENSIONPRODUCTNAME@ can upload to the Wiki server."
+msgstr ""
+"Die volgende lys gee 'n oorsig oor die teksformate wat die "
+"@WIKIEXTENSIONPRODUCTNAME@ kan oplaai na die wikibediener."
+
+#: wikiformats.xhp#par_id5630664.help.text
+msgid ""
+"The OpenDocument format used by Writer and the WikiMedia format are quite "
+"different. Only a subset of all features can be transformed from one format "
+"to the other."
+msgstr ""
+"Die OpenDocument-formaat wat deur Writer gebruik word, en die WikiMedia-"
+"formaat, verskil baie. Net 'n substel van al die kenmerke kan van een "
+"formaat na die ander omskep word."
+
+#: wikiformats.xhp#hd_id7178868.help.text
+msgid "Headings"
+msgstr "Opskrifte"
+
+#: wikiformats.xhp#par_id508133.help.text
+msgid ""
+"Apply a heading paragraph style to the headings in your Writer document. The "
+"Wiki will show the heading styles of the same outline level, formatted as "
+"defined by the Wiki engine."
+msgstr ""
+"Pas 'n opskrifparagraafstyl op die opskrifte in jou Writer-dokument toe. Die "
+"wiki sal die opskrifstyle van dieselfde skemavlak wys, geformateer soos "
+"deur die wiki-enjin gedefinieer."
+
+#: wikiformats.xhp#hd_id7217627.help.text
+msgid "Hyperlinks"
+msgstr "Hiperskakels"
+
+#: wikiformats.xhp#par_id3735465.help.text
+msgid ""
+"Native OpenDocument hyperlinks are transformed into \"external\" Wiki links. "
+"Therefore, the built-in linking facility of OpenDocument should only be used "
+"to create links that point to other sites outside the Wiki web. For "
+"creating Wiki links that point to other subjects of the same Wiki domain, "
+"use Wiki links."
+msgstr ""
+"Eie OpenDocument-hiperskakels is omgeskep in \"eksterne\" wikiskakels. Daarom "
+"behoort die ingeboude skakelingsfasiliteit van OpenDocument net gebruik om "
+"skakels te skep wat na ander webwerwe buite die wikiweb wys. Om wikiskakels "
+"te skep wat na ander onderwerpe in dieselfde wikidomein wys, gebruik "
+"wikiskakels."
+
+#: wikiformats.xhp#hd_id941190.help.text
+msgid "Lists"
+msgstr "Lyste"
+
+#: wikiformats.xhp#par_id8942838.help.text
+msgid ""
+"Lists can reliably be exported when the whole list uses a consistent list "
+"style. Use the Numbering or Bullets icon to generate a list in Writer. If "
+"you need a list without numbering or bullets, use Format - Bullets and "
+"Numbering to define and apply the respective list style."
+msgstr ""
+"Lyste kan betroubaar uitgevoer word wanneer die hele lys 'n konsekwente "
+"lysstyl gebruik. Gebruik die Nommering- of Koeëltjies-ikoon om 'n lys in "
+"Writer te genereer. As jy 'n lys sonder nommering of koeëltjies wil hê, "
+"gebruik Formaat - Koeëltjies en nommering, om die onderskeie lysstyle te "
+"definieer en toe te pas."
+
+#: wikiformats.xhp#hd_id7026886.help.text
+msgid "Paragraphs"
+msgstr "Paragrawe"
+
+#: wikiformats.xhp#hd_id4436475.help.text
+msgid "Alignment"
+msgstr "Belyning"
+
+#: wikiformats.xhp#par_id376598.help.text
+msgid ""
+"Explicit text alignment should not be used in Wiki articles. Nevertheless, "
+"text alignment is supported for left, centered, and right alignment of text."
+msgstr ""
+"Uitdruklike teksbelyning moenie in wikiartikels gebruik word nie. "
+"Teksbelyning is wel beskikbaar vir linker-, middel- en regterbelyning van "
+"teks."
+
+#: wikiformats.xhp#hd_id7486190.help.text
+msgid "Pre-formatted text"
+msgstr "Voorgeformateerde teks"
+
+#: wikiformats.xhp#par_id1459395.help.text
+msgid ""
+"A paragraph style with a fixed-width font is transformed as pre-formatted "
+"text. Pre-formatted text is shown on the Wiki with a border around the text."
+msgstr ""
+"'n Paragraafstyl met 'n vastewydte-font is omskep na voorgeformateerde teks. "
+"Voorgeformateerde teks kom op die Wiki voor met 'n grens rondom die teks."
+
+#: wikiformats.xhp#hd_id4834131.help.text
+msgid "Character styles"
+msgstr "Karakterstyle"
+
+#: wikiformats.xhp#par_id6397595.help.text
+msgid ""
+"Character styles modify the appearance of parts of a paragraph. The "
+"transformation supports bold, italics, bold/italics, subscript and "
+"superscript. All fixed width fonts are transformed into the Wiki typewriter "
+"style."
+msgstr ""
+"Karakterstyle wysig die voorkoms van dele van 'n paragraaf. Die beskikbare "
+"transformasies is vetdruk, skuinsdruk, vetdruk/skuinsdruk, subskrif en "
+"superskrif. Alle vastewydte-fonte word na die wikitikmasjien-styl omskep."
+
+#: wikiformats.xhp#hd_id5152745.help.text
+msgid "Footnotes"
+msgstr "Voetnote"
+
+#: wikiformats.xhp#par_id5238196.help.text
+msgid ""
+"Note: The transformation uses the new style of footnotes with <ref> and "
+"<references> tags that requires the Cite.php extension to be installed into "
+"MediaWiki. If those tags occur as plain text in the transformation result, "
+"ask the Wiki administrator to install this extension."
+msgstr ""
+"Let wel: Die transformasie gebruik die nuwe styl van voetnote met <ref>- en "
+"<references>-merkers wat vereis dat die Cite.php-uitbreiding in MediaWiki "
+"geïnstalleer word. As hierdie etikette as skoon teks in die "
+"omskakelingsresultaat wys, vra die wikiadministrateur om hierdie uitbreiding "
+"te installeer."
+
+#: wikiformats.xhp#hd_id9405499.help.text
+msgid "Images"
+msgstr "Beelde"
+
+#: wikiformats.xhp#par_id3541673.help.text
+msgid ""
+"Images cannot be exported by a transformation producing a single file of "
+"Wiki text. However, if the image is already uploaded to the target Wiki "
+"domain (e. g. WikiMedia Commons), then the transformation produces a valid "
+"image tag that includes the image. Image captions are also supported."
+msgstr ""
+"Prente kan nie uitgevoer word deur 'n omskakeling wat 'n enkele lêer "
+"wikiteks produseer nie. Maar as die prent reeds opgelaai is na die "
+"bestemmingswikidomein (bv. WikiMedia Commons), dan skep die omskakeling 'n "
+"geldige prentmerker wat daardie prent insluit. Prentonderskrifte word ook "
+"ondersteun."
+
+#: wikiformats.xhp#hd_id2162236.help.text
+msgid "Tables"
+msgstr "Tabelle"
+
+#: wikiformats.xhp#par_id3037202.help.text
+msgid ""
+"Simple tables are supported well. Table headers are translated into "
+"corresponding Wiki style table headers. However, custom formatting of table "
+"borders, column sizes and background colors is ignored."
+msgstr ""
+"Eenvoudige tabelle word goed ondersteun. Tabelopskrifte word na die "
+"ooreenstemmende wikistyl-tabelopskrifte omgeskakel. Doelgemaakte formatering "
+"van tabelgrense, kolomgroottes en agtergrondkleure word egter geïgnoreer."
+
+#: wikiformats.xhp#hd_id2954496.help.text
+msgid "Joined Cells"
+msgstr "Saamgevoegde selle"
+
+#: wikiformats.xhp#par_id8253730.help.text
+msgid ""
+"OpenDocument and especially OpenOffice.org represent tables that have joined "
+"cells that span rows as tables with nested tables. In contrast, the wiki "
+"model of table is to declare column and row spans for such joined cells. "
+msgstr ""
+"OpenDocument en veral OpenOffice.org wys tabelle met saamgevoegde selle wat "
+"oor rye span, as geneste tafels. In teenstelling hiermee verklaar die "
+"wikimodel van tabelle kolom- en ryoorspanne vir sulke saamgevoegde selle. "
+
+#: wikiformats.xhp#par_id8163090.help.text
+msgid ""
+"If only columns of the same row are joined, the result of the transformation "
+"resembles the source document very well."
+msgstr ""
+"As net kolomme uit dieselfde ry saamgevoeg word, lyk die transformasie nogal "
+"baie soos die brondokument."
+
+#: wikiformats.xhp#hd_id425122.help.text
+msgid "Borders"
+msgstr "Grense"
+
+#: wikiformats.xhp#par_id1831110.help.text
+msgid ""
+"Irrespective of custom table styles for border and background, a table is "
+"always exported as \"<emph>prettytable\"</emph>, which renders in the Wiki "
+"engine with simple borders and bold header."
+msgstr ""
+"Ongeag enige doelgemaakte tabelstyle vir grens en agtergrond word 'n tabel "
+"altyd uitgevoer as \"<emph>prettytable\"</emph>, wat in die wiki voorkom as "
+"eenvoudige grense en 'n vet opskrif."
+
+#: wikiformats.xhp#hd_id6255073.help.text
+msgid "Charset and special characters"
+msgstr "Karakterstel en spesiale karakters"
+
+#: wikiformats.xhp#par_id8216193.help.text
+msgid ""
+"The charset of the transformation result is fixed to UTF-8. Depending on "
+"your system, this might not be the default charset. This might cause "
+"\"special characters\" to look broken when viewed with default settings. "
+"However, you can switch your editor to UTF-8 encoding to fix this. If your "
+"editor does not support switching the encoding, you can display the result "
+"of the transformation in the Firefox browser and switch the encoding to "
+"UTF-8 there. Now, you can cut and paste the transformation result to your "
+"program of choice."
+msgstr ""
+"Die karakterstel van die omskakelingsresultaat word vasgestel op UTF-8. "
+"Afhangende van u stelsel kan dit dalk nie die verstek karakterstel wees nie. "
+"Dit veroorsaak dalk dat \"spesiale karakters\" gebreek voorkom wanneer dit "
+"met die verstek instellings bekyk word. Jy kan egter jou teksprogram "
+"omskakel na UTF-8-enkodering om hierdie probleem op te los. As jou "
+"teksprogram nie van enkodering kan verander nie, kan jy die resultaat van "
+"die omskakeling in die Firefox-webblaaier bekyk en dáár na UTF-8-enkodering "
+"omskakel. Dan kan jy die omskakelingsresultaat na die program van jou keuse "
+"knip en plak."
+
+#: wikisend.xhp#tit.help.text
+msgctxt "wikisend.xhp#tit.help.text"
+msgid "Send to MediaWiki"
+msgstr "Stuur na MediaWiki"
+
+#: wikisend.xhp#hd_id108340.help.text
+msgctxt "wikisend.xhp#hd_id108340.help.text"
+msgid "Send to MediaWiki"
+msgstr "Stuur na MediaWiki"
+
+#: wikisend.xhp#par_id1743827.help.text
+msgid ""
+"In the Send to MediaWiki dialog, specify the settings for your current Wiki "
+"upload."
+msgstr ""
+"In die 'Stuur na MediaWiki'-dialoog, spesifiseer die instellings vir u "
+"huidige wikioplaaiing."
+
+#: wikisend.xhp#par_id664082.help.text
+msgid ""
+"<ahelp hid=\".\">Select the MediaWiki server where you want to publish your "
+"document. Click Add to add a new server to the list.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">Kies die MediaWiki-bediener waarop u u dokument wil "
+"publiseer. Klik 'Voeg by' om 'n nuwe bediener by die lys te voeg.</ahelp>"
+
+#: wikisend.xhp#par_id2794885.help.text
+msgid ""
+"<ahelp hid=\".\">Enter the title of your Wiki entry. This is the top heading "
+"of your Wiki entry. For a new entry, the title must be unique on this Wiki. "
+"If you enter an existing title, your upload will overwrite the existing Wiki "
+"entry.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">Tik die titel van jou wiki-inskrywing. Dit is die boonste "
+"opskrif van jou wiki-inskrywing. Vir 'n nuwe inskrywing moet die titel uniek "
+"op hierdie wiki wees. As jy 'n bestaande titel intik, sal jou oplaai die "
+"bestaande wiki-inskrywing vervang.</ahelp>"
+
+#: wikisend.xhp#par_id2486342.help.text
+msgid ""
+"<ahelp hid=\".\">Enter an optional short summary or comment.</ahelp> See <link "
+"href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\">http://meta.wikimed"
+"ia.org/wiki/Help:Edit_summary</link>."
+msgstr ""
+"<ahelp hid=\".\">Tik 'n opsionele kort opsomming of opmerking in.</ahelp> See "
+"<link href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\">http://meta.wi"
+"kimedia.org/wiki/Help:Edit_summary</link>."
+
+#: wikisend.xhp#par_id823999.help.text
+msgid ""
+"<emph>This is a minor edit</emph>: <ahelp hid=\".\">Check this box to mark the "
+"uploaded page as a minor edit of the already existing page with the same "
+"title.</ahelp>"
+msgstr ""
+"<emph>Dit is 'n klein redigering</emph>: <ahelp hid=\".\">Merk hierdie blokkie "
+"om die opgelaaide bladsy as 'n klein redigering te merk van 'n reeds "
+"bestaande bladsy met dieselfde titel.</ahelp>"
+
+#: wikisend.xhp#par_id6592913.help.text
+msgid ""
+"<emph>Show in web browser</emph>: <ahelp hid=\".\">Check this box to open your "
+"system web browser and show the uploaded Wiki page.</ahelp>"
+msgstr ""
+"<emph>Wys in webblaaier</emph>: <ahelp hid=\".\">Merk hierdie blokkie op jou "
+"rekenaar se blaaier te open en die opgelaaie wikibladsy te wys.</ahelp>"
+
+#: wikisettings.xhp#tit.help.text
+msgctxt "wikisettings.xhp#tit.help.text"
+msgid "MediaWiki Options"
+msgstr "MediaWiki-opsies"
+
+#: wikisettings.xhp#hd_id6425672.help.text
+msgctxt "wikisettings.xhp#hd_id6425672.help.text"
+msgid "MediaWiki Options"
+msgstr "MediaWiki-opsies"
+
+#: wikisettings.xhp#par_id1188390.help.text
+msgid ""
+"You can add, edit and remove MediaWiki servers. Open the dialog by <item "
+"type=\"menuitem\">Tools - Options - Internet - MediaWiki</item>. "
+"Alternatively, choose <item type=\"menuitem\">Tools - Extension "
+"Manager</item>, select the @WIKIEXTENSIONPRODUCTNAME@, and click the Options "
+"button."
+msgstr ""
+"Jy kan MediaWiki-bedieners byvoeg, redigeer en verwyder. Open die dialoog "
+"van <item type=\"menuitem\">Nuts - Opsies - Internet - MediaWiki</item>. Of "
+"kies <item type=\"menuitem\">Nuts - Uitbreidingsbestuurder</item>, kies die "
+"@WIKIEXTENSIONPRODUCTNAME@, en kliek die Opsies-knoppie."
+
+#: wikisettings.xhp#par_id300607.help.text
+msgid ""
+"<ahelp hid=\".\">Click Add to add a new Wiki server.<br/>Select an entry and "
+"click Edit to edit the account settings.<br/>Select an entry and click "
+"Remove to remove the entry from the list.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">Kliek 'Voeg by' om 'n nuwe wikibediener by te voeg.<br/>Kies "
+"'n inskrywing en kliek Redigeer om die rekeninginstellings te "
+"redigeer.<br/>Kies 'n inskrywing en kliek Verwyder om die inskrywing uit die "
+"lys te verwyder.</ahelp>"
+
+#: wikisettings.xhp#par_id9786065.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Opens the MediaWiki dialog to add a new "
+"entry to the list.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">Open die MediaWiki-dialoog om 'n nuwe "
+"inskrywing by die lys te voeg.</ahelp>"
+
+#: wikisettings.xhp#par_id3386333.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Opens the MediaWiki dialog to edit the "
+"selected entry.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">Open die MediaWiki-dialoog om die "
+"gemerkte inskrywing te redigeer.</ahelp>"
+
+#: wikisettings.xhp#par_id7285073.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Removes the selected entry from the "
+"list.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">Verwyder die gemerkte inskrywing uit die "
+"lys.</ahelp>"
+
+#: wikisettings.xhp#par_id1029084.help.text
+msgid ""
+"When you click Add or Edit, the <link "
+"href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> dialog opens."
+msgstr ""
+"Wanneer jy Byvoeg of Redigeer kliek, open die <link "
+"href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link>-dialoog."
+"X-Accelerator-Marker: ~\n"
+
+#: Addons.xcu#.Addons.AddonUI.OfficeMenuBarMerging.com.sun.star.wiki.S1.MenuItems.M2.Title.value.text
+msgid "To Media~Wiki..."
+msgstr "Na Media~Wiki..."
+
+#: OptionsDialog.xcu#.OptionsDialog.Nodes.Internet.Leaves.com.sun.star.wiki.options.Label.value.text
+msgid "MediaWiki"
+msgstr "MediaWiki"
+"X-Accelerator-Marker: ~\n"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.GeneralSendError.value.text
+msgid "The operation 'Send to MediaWiki' could not be completed successfully."
+msgstr "Die aksie 'Stuur na MediaWiki' kon nie suksesvol voltooi word nie."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.NoWikiFilter.value.text
+msgid ""
+"The MediaWiki export filter cannot be found. Choose 'Tools-XML Filter "
+"Settings' to install the filter, or use the setup to install the component."
+msgstr ""
+"Die MediaWiki-uitvoerfilter kan nie gevind word nie. Kies 'Nuts-XML-"
+"filterinstellings' om die filter te installeer, of gebruik die opsteller om "
+"die komponent te installeer."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.NoConnectionToURL.value.text
+msgid "A connection to the MediaWiki system at '$ARG1' could not be created."
+msgstr ""
+"'n Verbinding met die MediaWiki-stelsel by '$ARG1' kon nie bewerkstellig "
+"word nie."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.WrongLogin.value.text
+msgid ""
+"User name or password is incorrect. Please try again, or leave the fields "
+"blank for an anonymous connection."
+msgstr ""
+"Gebruikernaam of wagwoord is verkeerd. Probeer asseblief weer, of laat die "
+"veld leeg vir 'n anonieme verbinding."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.InvalidURL.value.text
+msgid "A connection could not be created because the URL is invalid."
+msgstr "'n Verbinding kon nie bewerkstellig word nie omdat die URL ongeldig is."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.NoURL.value.text
+msgid "Specify a MediaWiki server by providing a URL."
+msgstr "Spesifiseer 'n MediaWiki-bediener deur 'n URL te gee."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.CancelSending.value.text
+msgid ""
+"The transfer has been interrupted. Please check the integrity of the wiki "
+"article."
+msgstr ""
+"Die oordrag is onderbreek. Kontroleer asseblief die integriteit van die "
+"wikiartikel."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_UrlLabel.value.text
+msgid "U~RL"
+msgstr "~URL"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_UsernameLabel.value.text
+msgid "~Username"
+msgstr "~Gebruikernaam"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_PasswordLabel.value.text
+msgid "~Password"
+msgstr "~Wagwoord"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendTitle.value.text
+msgid "Send to MediaWiki"
+msgstr "Stuur na MediaWiki"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_WikiArticle.value.text
+msgid "Wiki article"
+msgstr "Wikiartikel"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_No.value.text
+msgid "No"
+msgstr "Nee"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_OK.value.text
+msgid "OK"
+msgstr "OK"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_Yes.value.text
+msgid "Yes"
+msgstr "Ja"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_AddButton.value.text
+msgid "~Add..."
+msgstr "~Voeg by..."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditButton.value.text
+msgid "~Edit..."
+msgstr "~Redigeer..."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendButton.value.text
+msgid "~Send"
+msgstr "~Stuur"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_RemoveButton.value.text
+msgid "~Remove"
+msgstr "~Verwyder"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_NewWikiPage_Label1.value.text
+msgid ""
+"A wiki article with the title '$ARG1' does not exist yet. Do you want to "
+"create a new article with that name?"
+msgstr ""
+"'n Wiki-artikel met die titel '$ARG1' bestaan nog nie. Wil u 'n nuwe artikel "
+"met daardie naam begin?"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_Label1.value.text
+msgid "Media~Wiki Server"
+msgstr "MediaWi~ki-bediener"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_Label2.value.text
+msgid "~Title"
+msgstr "~Titel"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_Label3.value.text
+msgid "S~ummary"
+msgstr "~Opsomming"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_MinorCheck.value.text
+msgid "This is a ~minor edit"
+msgstr "Dit is 'n ~klein redigering"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_BrowserCheck.value.text
+msgid "Show in web ~browser"
+msgstr "Wys in ~webblaaier"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.UnknownCert.value.text
+msgid "The certificate of the selected site is unknown."
+msgstr "Die sertifikaat van die gemerkte werf is onbekend."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_MediaWiki_Title.value.text
+msgid "MediaWiki"
+msgstr "MediaWiki"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_AccountLine.value.text
+msgid "Account"
+msgstr "Rekening"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_WikiLine.value.text
+msgid "MediaWiki Server"
+msgstr "MediaWiki-bediener"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_SaveBox.value.text
+msgid "~Save password"
+msgstr "~Stoor wagwoord"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_MediaWiki_Extension_String.value.text
+msgid "@WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_WikiPageExists_Label1.value.text
+msgid ""
+"A wiki article with the title '$ARG1' already exists.&#13;&#13;Do you want "
+"to replace the current article with your article?&#13;&#13;"
+msgstr ""
+"'n Wikiartikel met die titel '$ARG1' bestaan reeds.&#13;&#13;Wil jy die "
+"huidige artikel met jou artikel vervang?&#13;&#13;"

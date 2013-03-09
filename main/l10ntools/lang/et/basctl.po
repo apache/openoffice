@@ -1,0 +1,982 @@
+"X-Accelerator-Marker: ~\n"
+
+#: dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.string.text
+msgid "Properties: "
+msgstr "Omadused: "
+
+#: dlgresid.src#RID_STR_BRWTITLE_NO_PROPERTIES.string.text
+msgid "No Control marked"
+msgstr "Ükski juhtelement pole märgitud"
+
+#: dlgresid.src#RID_STR_BRWTITLE_MULTISELECT.string.text
+msgid "Multiselection"
+msgstr "Mitmene valik"
+
+#: managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_LANGUAGE.fixedtext.text
+msgid "Present Languages"
+msgstr "Olemasolevad keeled"
+
+#: managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_ADD_LANG.pushbutton.text
+msgid "Add..."
+msgstr "Lisa..."
+
+#: managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_DEL_LANG.pushbutton.text
+msgid "Delete"
+msgstr "Kustuta"
+
+#: managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_MAKE_DEFAULT.pushbutton.text
+msgid "Default"
+msgstr "Määra vaikekeeleks"
+
+#: managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.fixedtext.text
+msgid ""
+"The default language is used if no localization for a user interface locale "
+"is present. Furthermore all strings from the default language are copied to "
+"resources of newly added languages."
+msgstr ""
+"Vaikekeelt kasutatakse, kui kasutajaliidesele vastavate keelte tõlge puudub. "
+"Lisaks kopeeritakse kõik vaikekeele stringid uute lisatud keelte "
+"ressursifailidesse."
+
+#: managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.okbutton.text
+msgid "~Close"
+msgstr "~Sulge"
+
+#: managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DEF_LANG.string.text
+msgid "[Default Language]"
+msgstr "[Vaikekeel]"
+
+#: managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DELETE.string.text
+msgid "~Delete"
+msgstr "Kustuta"
+
+#: managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_CREATE_LANG.string.text
+msgid "<Press 'Add' to create language resources>"
+msgstr ""
+
+#: managelang.src#RID_DLG_MANAGE_LANGUAGE.modaldialog.text
+msgid "Manage User Interface Languages [$1]"
+msgstr "Kasutajaliidese keelte haldamine [$1]"
+
+#: managelang.src#RID_QRYBOX_LANGUAGE.querybox.text
+msgid ""
+"You are about to delete the resources for the selected language(s). All user "
+"interface strings for this language(s) will be deleted.\n"
+"\n"
+"Do you want to delete the resources of the selected language(s)?"
+msgstr ""
+"See käsk kustutab valitud keelte ressursid. Kõik nende keelte "
+"kasutajaliidese stringid kustutatakse.\n"
+"\n"
+"Kas soovid tõesti valitud keelte ressursse kustutada?"
+
+#: managelang.src#RID_QRYBOX_LANGUAGE.querybox.title
+msgid "Delete Language Resources"
+msgstr "Keeleressursside kustutamine"
+
+#: managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_LANGUAGE.fixedtext.text
+msgid "Default language"
+msgstr "Vaikekeel"
+
+#: managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.fixedtext.text
+msgid ""
+"Select a language to define the default user interface language. All "
+"currently present strings will be assigned to the resources created for the "
+"selected language."
+msgstr ""
+"Kasutajaliidese vaikekeele määramiseks vali keel. Kõik praegu eksisteerivad "
+"stringid omistatakse valitud keele jaoks loodud ressurssidele."
+
+#: managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_TITLE.string.text
+msgid "Add User Interface Languages"
+msgstr "Kasutajaliidese keelte lisamine"
+
+#: managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_LABEL.string.text
+msgid "Available Languages"
+msgstr "Saadaolevad keeled"
+
+#: managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_INFO.string.text
+msgid ""
+"Select languages to be added. Resources for these languages will be created "
+"in the library. Strings of the current default user interface language will "
+"be copied to these new resources by default."
+msgstr ""
+"Vali lisatavad keeled. Teeki luuakse nende keelte ressursid. Praeguse "
+"kasutajaliidese vaikekeele stringid kopeeritakse vaikimisi uutesse "
+"ressursifailidesse."
+
+#: managelang.src#RID_DLG_SETDEF_LANGUAGE.modaldialog.text
+msgid "Set Default User Interface Language"
+msgstr "Kasutajaliidese vaikekeele valimine"
+"X-Accelerator-Marker: ~\n"
+
+#: basicprint.src#RID_PRINTDLG_STRLIST.1.itemlist.text
+msgid "Print range"
+msgstr ""
+
+#: basicprint.src#RID_PRINTDLG_STRLIST.2.itemlist.text
+msgid "All ~Pages"
+msgstr ""
+
+#: basicprint.src#RID_PRINTDLG_STRLIST.3.itemlist.text
+msgid "Pa~ges"
+msgstr ""
+
+#: basidesh.src#RID_STR_FILTER_ALLFILES.string.text
+msgid "<All>"
+msgstr "<Kõik>"
+
+#: basidesh.src#RID_STR_NOMODULE.string.text
+msgid "< No Module >"
+msgstr "< Moodulit pole >"
+
+#: basidesh.src#RID_STR_WRONGPASSWORD.string.text
+msgid "Incorrect Password"
+msgstr "Vale parool"
+
+#: basidesh.src#RID_STR_OPEN.string.text
+msgid "Load"
+msgstr "Laadi"
+
+#: basidesh.src#RID_STR_SAVE.string.text
+msgid "Save"
+msgstr "Salvesta"
+
+#: basidesh.src#RID_STR_SOURCETOBIG.string.text
+msgid ""
+"The source text is too large and can be neither compiled nor saved.\n"
+"Delete some of the comments or transfer some methods into another module."
+msgstr ""
+"Lähtetekst on salvestamise ja kompileerimise jaoks liiga suur.\n"
+"Kustuta mõned kommentaarid või tõsta mõned meetodid teise moodulisse."
+
+#: basidesh.src#RID_STR_ERROROPENSTORAGE.string.text
+msgid "Error opening file"
+msgstr "Faili avamisel tekkis viga"
+
+#: basidesh.src#RID_STR_ERROROPENLIB.string.text
+msgid "Error loading library"
+msgstr "Teegi laadimisel tekkis viga"
+
+#: basidesh.src#RID_STR_NOLIBINSTORAGE.string.text
+msgid "The file does not contain any BASIC libraries"
+msgstr "Fail ei sisalda BASICu teeke"
+
+#: basidesh.src#RID_STR_BADSBXNAME.string.text
+msgid "Invalid Name"
+msgstr "Vigane nimi"
+
+#: basidesh.src#RID_STR_LIBNAMETOLONG.string.text
+msgid "A library name can have up to 30 characters."
+msgstr "Teegi nime pikkus võib olla kuni 30 sümbolit."
+
+#: basidesh.src#RID_STR_ERRORCHOOSEMACRO.string.text
+msgid "Macros from other documents are not accessible."
+msgstr "Teiste dokumentide makrod ei ole kättesaadavad."
+
+#: basidesh.src#RID_STR_LIBISREADONLY.string.text
+msgid "This library is read-only."
+msgstr "See teek on kirjutuskaitstud."
+
+#: basidesh.src#RID_STR_REPLACELIB.string.text
+msgid "'XX' cannot be replaced."
+msgstr "Ei saa asendada 'XX'."
+
+#: basidesh.src#RID_STR_IMPORTNOTPOSSIBLE.string.text
+msgid "'XX' cannot be added."
+msgstr "Ei saa lisada 'XX'."
+
+#: basidesh.src#RID_STR_NOIMPORT.string.text
+msgid "'XX' was not added."
+msgstr "Ei lisatud 'XX'."
+
+#: basidesh.src#RID_STR_ENTERPASSWORD.string.text
+msgid "Enter password for 'XX'"
+msgstr "Sisesta 'XX' parool"
+
+#: basidesh.src#RID_STR_SBXNAMEALLREADYUSED.string.text
+msgid "Name already exists"
+msgstr "Nimi on juba olemas"
+
+#: basidesh.src#RID_STR_SIGNED.string.text
+msgid "(Signed)"
+msgstr "(Signeeeritud)"
+
+#: basidesh.src#RID_STR_SBXNAMEALLREADYUSED2.string.text
+msgid "Object with same name already exists"
+msgstr "Sama nimega objekt on juba olemas"
+
+#: basidesh.src#RID_STR_FILEEXISTS.string.text
+msgid "The 'XX' file already exists"
+msgstr "Fail 'XX' on juba olemas"
+
+#: basidesh.src#RID_STR_CANNOTRUNMACRO.string.text
+msgid ""
+"For security reasons, you cannot run this macro.\n"
+"\n"
+"For more information, check the security settings."
+msgstr ""
+"Seda makrot ei saa turvakaalutluste tõttu käivitada.\n"
+"\n"
+"Rohkema teabe saamiseks uuri turvalisuse sätteid."
+
+#: basidesh.src#RID_STR_COMPILEERROR.string.text
+msgid "Compile Error: "
+msgstr "Kompileerimisviga: "
+
+#: basidesh.src#RID_STR_RUNTIMEERROR.string.text
+msgid "Runtime Error: #"
+msgstr "Käitusviga: #"
+
+#: basidesh.src#RID_STR_SEARCHNOTFOUND.string.text
+msgid "Search key not found"
+msgstr "Otsinguvõtit ei leitud"
+
+#: basidesh.src#RID_STR_SEARCHFROMSTART.string.text
+msgid "Search to last module complete. Continue at first module?"
+msgstr "Otsing viimases moodulis lõpetatud. Kas jätkata esimesest moodulist?"
+
+#: basidesh.src#RID_STR_SEARCHREPLACES.string.text
+msgid "Search key replaced XX times"
+msgstr "Otsinguvõtit asendati XX kord(a)"
+
+#: basidesh.src#RID_STR_COULDNTREAD.string.text
+msgid "The file could not be read"
+msgstr "Ei suuda lugeda faili"
+
+#: basidesh.src#RID_STR_COULDNTWRITE.string.text
+msgid "The file could not be saved"
+msgstr "Ei suuda salvestada faili"
+
+#: basidesh.src#RID_STR_CANNOTCHANGENAMESTDLIB.string.text
+msgid "The name of the default library cannot be changed."
+msgstr "Vaikimisi teegi nime ei saa muuta."
+
+#: basidesh.src#RID_STR_CANNOTCHANGENAMEREFLIB.string.text
+msgid "The name of a referenced library cannot be changed."
+msgstr "Viidatud teegi nime ei saa muuta."
+
+#: basidesh.src#RID_STR_CANNOTUNLOADSTDLIB.string.text
+msgid "The default library cannot be deactivated"
+msgstr "Vaikimisi teeki ei saa deaktiveerida"
+
+#: basidesh.src#RID_STR_GENERATESOURCE.string.text
+msgid "Generating source"
+msgstr "Lähtekoodi genereerimine"
+
+#: basidesh.src#RID_STR_FILENAME.string.text
+msgid "File name:"
+msgstr "Faili nimi:"
+
+#: basidesh.src#RID_STR_APPENDLIBS.string.text
+msgid "Import Libraries"
+msgstr "Teekide importimine"
+
+#: basidesh.src#RID_STR_QUERYDELMACRO.string.text
+msgid "Do you want to delete the macro XX?"
+msgstr "Kas soovid kustutada makrot XX?"
+
+#: basidesh.src#RID_STR_QUERYDELDIALOG.string.text
+msgid "Do you want to delete the XX dialog?"
+msgstr "Kas sa soovid kustutada dialoogi XX?"
+
+#: basidesh.src#RID_STR_QUERYDELLIB.string.text
+msgid "Do you want to delete the XX library?"
+msgstr "Kas sa soovid kustutada teeki XX?"
+
+#: basidesh.src#RID_STR_QUERYDELLIBREF.string.text
+msgid "Do you want to delete the reference to the XX library?"
+msgstr "Kas sa soovid kustutada viidet teegile XX?"
+
+#: basidesh.src#RID_STR_QUERYDELMODULE.string.text
+msgid "Do you want to delete the XX module?"
+msgstr "Kas sa soovid kustutada moodulit XX?"
+
+#: basidesh.src#RID_STR_OBJNOTFOUND.string.text
+msgid "Object or method not found"
+msgstr "Objekti või meetodit ei leitud"
+
+#: basidesh.src#RID_STR_BASIC.string.text
+msgid "BASIC"
+msgstr "BASIC"
+
+#: basidesh.src#RID_STR_LINE.string.text
+msgid "Ln"
+msgstr "Rida"
+
+#: basidesh.src#RID_STR_COLUMN.string.text
+msgid "Col"
+msgstr "Veerg"
+
+#: basidesh.src#RID_STR_DOC.string.text
+msgid "Document"
+msgstr "Dokument"
+
+#: basidesh.src#RID_BASICIDE_OBJECTBAR.string.text
+msgid "Macro Bar"
+msgstr "Makroriba"
+
+#: basidesh.src#RID_STR_CANNOTCLOSE.string.text
+msgid "The window cannot be closed while BASIC is running."
+msgstr "Akna sulgemine pole võimalik seni, kuni BASIC töötab."
+
+#: basidesh.src#RID_STR_REPLACESTDLIB.string.text
+msgid "The default library cannot be replaced."
+msgstr "Vaikimisi teeki ei saa asendada."
+
+#: basidesh.src#RID_STR_REFNOTPOSSIBLE.string.text
+msgid "Reference to 'XX' not possible."
+msgstr "'XX'-le ei saa viidata."
+
+#: basidesh.src#RID_STR_WATCHNAME.string.text
+msgid "Watch"
+msgstr "Jälgimine"
+
+#: basidesh.src#RID_STR_WATCHVARIABLE.string.text
+msgid "Variable"
+msgstr "Muutuja"
+
+#: basidesh.src#RID_STR_WATCHVALUE.string.text
+msgid "Value"
+msgstr "Väärtus"
+
+#: basidesh.src#RID_STR_WATCHTYPE.string.text
+msgid "Type"
+msgstr "Tüüp"
+
+#: basidesh.src#RID_STR_STACKNAME.string.text
+msgid "Call Stack"
+msgstr "Väljakutsete pinu (stack)"
+
+#: basidesh.src#RID_STR_INITIDE.string.text
+msgid "BASIC Initialization"
+msgstr "BASICu lähtestamine"
+
+#: basidesh.src#RID_STR_STDMODULENAME.string.text
+msgid "Module"
+msgstr "Moodul"
+
+#: basidesh.src#RID_STR_STDDIALOGNAME.string.text
+msgctxt "basidesh.src#RID_STR_STDDIALOGNAME.string.text"
+msgid "Dialog"
+msgstr "Dialoog"
+
+#: basidesh.src#RID_STR_STDLIBNAME.string.text
+msgid "Library"
+msgstr "Teek"
+
+#: basidesh.src#RID_STR_NEWLIB.string.text
+msgid "New Library"
+msgstr "Uus teek"
+
+#: basidesh.src#RID_STR_NEWMOD.string.text
+msgid "New Module"
+msgstr "Uus moodul"
+
+#: basidesh.src#RID_STR_NEWDLG.string.text
+msgid "New Dialog"
+msgstr "Uus dialoog"
+
+#: basidesh.src#RID_STR_ALL.string.text
+msgid "All"
+msgstr "Kõik"
+
+#: basidesh.src#RID_STR_PAGE.string.text
+msgid "Page"
+msgstr "Lehekülg"
+
+#: basidesh.src#RID_STR_MACRONAMEREQ.string.text
+msgid "A name must be entered."
+msgstr "Nimi peab olema sisestatud."
+
+#: basidesh.src#RID_STR_WILLSTOPPRG.string.text
+msgid ""
+"You will have to restart the program after this edit.\n"
+"Continue?"
+msgstr ""
+"Pärast seda muudatust peab programmi uuesti käivitama.\n"
+"Kas jätkata?"
+
+#: basidesh.src#RID_STR_SEARCHALLMODULES.string.text
+msgid "Do you want to replace the text in all active modules?"
+msgstr "Kas sa soovid asendada selle teksti kõigis aktiivsetes moodulites?"
+
+#: basidesh.src#RID_IMGBTN_REMOVEWATCH.imagebutton.text
+msgid "-"
+msgstr "-"
+
+#: basidesh.src#RID_IMGBTN_REMOVEWATCH.imagebutton.quickhelptext
+msgid "Remove Watch"
+msgstr "Eemalda jälgimine"
+
+#: basidesh.src#RID_STR_REMOVEWATCH.string.text
+msgid "Watch:"
+msgstr "Jälgimine:"
+
+#: basidesh.src#RID_STR_STACK.string.text
+msgid "Calls: "
+msgstr "Väljakutsed: "
+
+#: basidesh.src#RID_STR_USERMACROS.string.text
+msgid "My Macros"
+msgstr "Minu makrod"
+
+#: basidesh.src#RID_STR_USERDIALOGS.string.text
+msgid "My Dialogs"
+msgstr "Minu dialoogid"
+
+#: basidesh.src#RID_STR_USERMACROSDIALOGS.string.text
+msgid "My Macros & Dialogs"
+msgstr "Minu makrod ja dialoogid"
+
+#: basidesh.src#RID_STR_SHAREMACROS.string.text
+msgid "%PRODUCTNAME Macros"
+msgstr "%PRODUCTNAME-i makrod"
+
+#: basidesh.src#RID_STR_SHAREDIALOGS.string.text
+msgid "%PRODUCTNAME Dialogs"
+msgstr "%PRODUCTNAME-i dialoogid"
+
+#: basidesh.src#RID_STR_SHAREMACROSDIALOGS.string.text
+msgid "%PRODUCTNAME Macros & Dialogs"
+msgstr "%PRODUCTNAME-i makrod ja dialoogid"
+
+#: basidesh.src#RID_POPUP_BRKPROPS.RID_ACTIV.menuitem.text
+msgctxt "basidesh.src#RID_POPUP_BRKPROPS.RID_ACTIV.menuitem.text"
+msgid "Active"
+msgstr "Aktiivne"
+
+#: basidesh.src#RID_POPUP_BRKPROPS.RID_BRKPROPS.menuitem.text
+msgctxt "basidesh.src#RID_POPUP_BRKPROPS.RID_BRKPROPS.menuitem.text"
+msgid "Properties..."
+msgstr "Omadused..."
+
+#: basidesh.src#RID_POPUP_BRKPROPS.menu.text
+#, fuzzy
+msgid "Properties"
+msgstr "Omadused"
+
+#: basidesh.src#RID_POPUP_BRKDLG.RID_BRKDLG.menuitem.text
+msgid "Manage Breakpoints..."
+msgstr "Halda katkestuspunkte..."
+
+#: basidesh.src#RID_POPUP_BRKDLG.menu.text
+msgctxt "basidesh.src#RID_POPUP_BRKDLG.menu.text"
+msgid "Manage Breakpoints"
+msgstr "Katkestuspunktide haldamine"
+
+#: basidesh.src#RID_POPUP_TABBAR.RID_INSERT.SID_BASICIDE_NEWMODULE.menuitem.text
+msgid "BASIC Module"
+msgstr "BASICu moodul"
+
+#: basidesh.src#RID_POPUP_TABBAR.RID_INSERT.SID_BASICIDE_NEWDIALOG.menuitem.text
+msgid "BASIC Dialog"
+msgstr "BASICu dialoog"
+
+#: basidesh.src#RID_POPUP_TABBAR.RID_INSERT.menuitem.text
+msgid "Insert"
+msgstr "Lisa"
+
+#: basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_DELETECURRENT.menuitem.text
+msgctxt "basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_DELETECURRENT.menuitem.text"
+msgid "Delete"
+msgstr "Kustuta"
+
+#: basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_RENAMECURRENT.menuitem.text
+msgctxt "basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_RENAMECURRENT.menuitem.text"
+msgid "Rename"
+msgstr "Muuda nime"
+
+#: basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_HIDECURPAGE.menuitem.text
+msgid "Hide"
+msgstr "Peida"
+
+#: basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_MODULEDLG.menuitem.text
+msgid "Modules..."
+msgstr "Moodulid..."
+
+#: basidesh.src#RID_POPUP_DLGED.SID_SHOW_PROPERTYBROWSER.menuitem.text
+msgctxt "basidesh.src#RID_POPUP_DLGED.SID_SHOW_PROPERTYBROWSER.menuitem.text"
+msgid "Properties..."
+msgstr "Omadused..."
+
+#: basidesh.src#RID_STR_QUERYREPLACEMACRO.string.text
+msgid "Do you want to overwrite the XX macro?"
+msgstr "Kas sa soovid makrot XX üle kirjutada?"
+
+#: basidesh.src#RID_STR_TRANSLATION_NOTLOCALIZED.string.text
+msgid "<Not localized>"
+msgstr "<Tõlkimata>"
+
+#: basidesh.src#RID_STR_TRANSLATION_DEFAULT.string.text
+msgid "[Default Language]"
+msgstr "[Vaikekeel]"
+
+#: basidesh.src#RID_STR_DOCUMENT_OBJECTS.string.text
+msgid "Document Objects"
+msgstr ""
+
+#: basidesh.src#RID_STR_USERFORMS.string.text
+msgid "Forms"
+msgstr ""
+
+#: basidesh.src#RID_STR_NORMAL_MODULES.string.text
+#, fuzzy
+msgctxt "basidesh.src#RID_STR_NORMAL_MODULES.string.text"
+msgid "Modules"
+msgstr "Moodulid"
+
+#: basidesh.src#RID_STR_CLASS_MODULES.string.text
+msgid "Class Modules"
+msgstr ""
+
+#: basidesh.src#RID_STR_DLGIMP_CLASH_RENAME.string.text
+msgctxt "basidesh.src#RID_STR_DLGIMP_CLASH_RENAME.string.text"
+msgid "Rename"
+msgstr "Muuda nime"
+
+#: basidesh.src#RID_STR_DLGIMP_CLASH_REPLACE.string.text
+msgid "Replace"
+msgstr "Asenda"
+
+#: basidesh.src#RID_STR_DLGIMP_CLASH_TITLE.string.text
+msgid "Dialog Import - Name already used"
+msgstr "Dialoogi importimine - nimi on juba kasutusel"
+
+#: basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.string.text
+msgid ""
+"The library already contains a dialog with the name:\n"
+"\n"
+"$(ARG1)\n"
+"\n"
+"Rename dialog to keep current dialog or replace existing dialog.\n"
+" "
+msgstr ""
+"Teek sisaldab juba dialoogi nimega:\n"
+"\n"
+"$(ARG1)\n"
+"\n"
+"Olemasoleva dialoogi säilitamiseks muuda dialoogi nime või asenda olemasolev "
+"dialoog.\n"
+" "
+
+#: basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.string.text
+msgid "Add"
+msgstr "Lisa"
+
+#: basidesh.src#RID_STR_DLGIMP_MISMATCH_OMIT.string.text
+msgid "Omit"
+msgstr "Jäta vahele"
+
+#: basidesh.src#RID_STR_DLGIMP_MISMATCH_TITLE.string.text
+msgid "Dialog Import - Language Mismatch"
+msgstr "Dialoogi importimine - keelte sobimatus"
+
+#: basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.string.text
+msgid ""
+"The dialog to be imported supports other languages than the target library.\n"
+"\n"
+"Add these languages to the library to keep additional language resources "
+"provided by the dialog or omit them to stay with the current library "
+"languages.\n"
+"\n"
+"Note: For languages not supported by the dialog the resources of the "
+"dialog's default language will be used.\n"
+" "
+msgstr ""
+"Imporditav dialoog toetab sihtteegist erinevaid keeli.\n"
+"\n"
+"Dialoogi pakutavate keeleressursside säilitamiseks lisa need teeki või jäta "
+"need teegi praeguste keelte säilitamiseks välja .\n"
+"\n"
+"Märkus: dialoogi poolt toetamata keelte puhul kasutatakse dialoogi vaikimisi "
+"keele ressursse.\n"
+" "
+
+#: brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_NEW.pushbutton.text
+msgid "New"
+msgstr "Uus"
+
+#: brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_DEL.pushbutton.text
+msgctxt "brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_DEL.pushbutton.text"
+msgid "Delete"
+msgstr "Kustuta"
+
+#: brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_CHKB_ACTIVE.checkbox.text
+msgctxt "brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_CHKB_ACTIVE.checkbox.text"
+msgid "Active"
+msgstr "Aktiivne"
+
+#: brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_PASS.fixedtext.text
+msgid "Pass Count:"
+msgstr "Läbimiste arv:"
+
+#: brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_BRKPOINTS.fixedtext.text
+msgid "Breakpoints"
+msgstr "Katkestuspunktid"
+
+#: brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.modaldialog.text
+msgctxt "brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.modaldialog.text"
+msgid "Manage Breakpoints"
+msgstr "Katkestuspunktide haldamine"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACROSIN.fixedtext.text
+msgid "Existing macros ~in:"
+msgstr "~Olemasolevad makrod:"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACRONAME.fixedtext.text
+msgid "~Macro name"
+msgstr "~Makro nimi"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACROFROM.fixedtext.text
+msgid "Macro ~from"
+msgstr "Makro mujal~t"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_TXT_SAVEMACRO.fixedtext.text
+msgid "Save m~acro in"
+msgstr "Salvesta m~akro"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_TXT_DESCRIPTION.fixedtext.text
+msgid "De~scription"
+msgstr "~Kirjeldus"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_PB_RUN.pushbutton.text
+msgid "R~un"
+msgstr "~Käivita"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_PB_CLOSE.cancelbutton.text
+msgctxt "macrodlg.src#RID_MACROCHOOSER.RID_PB_CLOSE.cancelbutton.text"
+msgid "Close"
+msgstr "Sulge"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_PB_ASSIGN.pushbutton.text
+msgid "~Assign..."
+msgstr "~Omista..."
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_PB_EDIT.pushbutton.text
+msgctxt "macrodlg.src#RID_MACROCHOOSER.RID_PB_EDIT.pushbutton.text"
+msgid "~Edit"
+msgstr "Redigeeri"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_PB_NEWLIB.pushbutton.text
+msgid "New ~Library"
+msgstr "Uus ~teek"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_PB_NEWMOD.pushbutton.text
+msgid "New M~odule"
+msgstr "Uus m~oodul"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_PB_DEL.pushbutton.text
+msgctxt "macrodlg.src#RID_MACROCHOOSER.RID_PB_DEL.pushbutton.text"
+msgid "~Delete"
+msgstr "Kustuta"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_PB_ORG.pushbutton.text
+msgid "~Organizer..."
+msgstr "K~orraldaja..."
+
+#: macrodlg.src#RID_MACROCHOOSER.modaldialog.text
+msgid "%PRODUCTNAME Basic Macros"
+msgstr "%PRODUCTNAME-i BASICu makrod"
+
+#: macrodlg.src#RID_STR_STDMACRONAME.string.text
+msgid "Macro"
+msgstr "Makro"
+
+#: macrodlg.src#RID_STR_BTNDEL.string.text
+msgctxt "macrodlg.src#RID_STR_BTNDEL.string.text"
+msgid "~Delete"
+msgstr "Kustuta"
+
+#: macrodlg.src#RID_STR_BTNNEW.string.text
+msgid "~New"
+msgstr "~Uus"
+
+#: macrodlg.src#RID_STR_CLOSE.string.text
+msgctxt "macrodlg.src#RID_STR_CLOSE.string.text"
+msgid "Close"
+msgstr "Sulge"
+
+#: macrodlg.src#RID_STR_CHOOSE.string.text
+msgid "Choose"
+msgstr "Vali"
+
+#: macrodlg.src#RID_STR_RUN.string.text
+msgid "Run"
+msgstr "Käivita"
+
+#: macrodlg.src#RID_STR_RECORD.string.text
+msgid "~Save"
+msgstr "~Salvesta"
+
+#: moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_MOD.pageitem.text
+msgctxt "moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_MOD.pageitem.text"
+msgid "Modules"
+msgstr "Moodulid"
+
+#: moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_DLG.pageitem.text
+msgid "Dialogs"
+msgstr "Dialoogid"
+
+#: moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_LIB.pageitem.text
+msgid "Libraries"
+msgstr "Teegid"
+
+#: moduldlg.src#RID_TD_ORGANIZE.tabdialog.text
+msgid "%PRODUCTNAME Basic Macro Organizer"
+msgstr "%PRODUCTNAME-i BASICu makrode korraldaja"
+
+#: moduldlg.src#RID_TP_MODULS.RID_STR_LIB.fixedtext.text
+msgid "M~odule"
+msgstr "M~oodul"
+
+#: moduldlg.src#RID_TP_MODULS.RID_PB_EDIT.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_MODULS.RID_PB_EDIT.pushbutton.text"
+msgid "~Edit"
+msgstr "Redigeeri"
+
+#: moduldlg.src#RID_TP_MODULS.RID_PB_CLOSE.cancelbutton.text
+msgctxt "moduldlg.src#RID_TP_MODULS.RID_PB_CLOSE.cancelbutton.text"
+msgid "Close"
+msgstr "Sulge"
+
+#: moduldlg.src#RID_TP_MODULS.RID_PB_NEWMOD.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_MODULS.RID_PB_NEWMOD.pushbutton.text"
+msgid "~New..."
+msgstr "Uus..."
+
+#: moduldlg.src#RID_TP_MODULS.RID_PB_NEWDLG.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_MODULS.RID_PB_NEWDLG.pushbutton.text"
+msgid "~New..."
+msgstr "Uus..."
+
+#: moduldlg.src#RID_TP_MODULS.RID_PB_DELETE.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_MODULS.RID_PB_DELETE.pushbutton.text"
+msgid "~Delete"
+msgstr "Kustuta"
+
+#: moduldlg.src#RID_TP_DLGS.RID_STR_LIB.fixedtext.text
+msgctxt "moduldlg.src#RID_TP_DLGS.RID_STR_LIB.fixedtext.text"
+msgid "Dialog"
+msgstr "Dialoog"
+
+#: moduldlg.src#RID_TP_DLGS.RID_PB_EDIT.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_DLGS.RID_PB_EDIT.pushbutton.text"
+msgid "~Edit"
+msgstr "Redigeeri"
+
+#: moduldlg.src#RID_TP_DLGS.RID_PB_CLOSE.cancelbutton.text
+msgctxt "moduldlg.src#RID_TP_DLGS.RID_PB_CLOSE.cancelbutton.text"
+msgid "Close"
+msgstr "Sulge"
+
+#: moduldlg.src#RID_TP_DLGS.RID_PB_NEWMOD.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_DLGS.RID_PB_NEWMOD.pushbutton.text"
+msgid "~New..."
+msgstr "Uus..."
+
+#: moduldlg.src#RID_TP_DLGS.RID_PB_NEWDLG.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_DLGS.RID_PB_NEWDLG.pushbutton.text"
+msgid "~New..."
+msgstr "Uus..."
+
+#: moduldlg.src#RID_TP_DLGS.RID_PB_DELETE.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_DLGS.RID_PB_DELETE.pushbutton.text"
+msgid "~Delete"
+msgstr "Kustuta"
+
+#: moduldlg.src#RID_TP_LIBS.RID_STR_BASICS.fixedtext.text
+msgid "L~ocation"
+msgstr "~Asukoht"
+
+#: moduldlg.src#RID_TP_LIBS.RID_STR_LIB.fixedtext.text
+msgid "~Library"
+msgstr "~Teek"
+
+#: moduldlg.src#RID_TP_LIBS.RID_PB_EDIT.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_LIBS.RID_PB_EDIT.pushbutton.text"
+msgid "~Edit"
+msgstr "Redigeeri"
+
+#: moduldlg.src#RID_TP_LIBS.RID_PB_CLOSE.cancelbutton.text
+msgctxt "moduldlg.src#RID_TP_LIBS.RID_PB_CLOSE.cancelbutton.text"
+msgid "Close"
+msgstr "Sulge"
+
+#: moduldlg.src#RID_TP_LIBS.RID_PB_PASSWORD.pushbutton.text
+msgid "~Password..."
+msgstr "~Parool..."
+
+#: moduldlg.src#RID_TP_LIBS.RID_PB_NEWLIB.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_LIBS.RID_PB_NEWLIB.pushbutton.text"
+msgid "~New..."
+msgstr "Uus..."
+
+#: moduldlg.src#RID_TP_LIBS.RID_PB_APPEND.pushbutton.text
+msgid "~Import..."
+msgstr "Impordi..."
+
+#: moduldlg.src#RID_TP_LIBS.RID_PB_EXPORT.pushbutton.text
+msgid "E~xport..."
+msgstr "Ekspordi..."
+
+#: moduldlg.src#RID_TP_LIBS.RID_PB_DELETE.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_LIBS.RID_PB_DELETE.pushbutton.text"
+msgid "~Delete"
+msgstr "Kustuta"
+
+#: moduldlg.src#RID_DLG_LIBS.RID_FL_OPTIONS.fixedline.text
+msgid "Options"
+msgstr "Sätted"
+
+#: moduldlg.src#RID_DLG_LIBS.RID_CB_REF.checkbox.text
+msgid "Insert as reference (read-only)"
+msgstr "Sisestamine viitena (kirjutuskaitstud)"
+
+#: moduldlg.src#RID_DLG_LIBS.RID_CB_REPL.checkbox.text
+msgid "Replace existing libraries"
+msgstr "Asendatakse olemasolevad teegid"
+
+#: moduldlg.src#RID_DLG_NEWLIB.RID_FT_NEWLIB.fixedtext.text
+msgid "~Name:"
+msgstr "~Nimi:"
+
+#: moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASPACKAGE.radiobutton.text
+msgid "Export as ~extension"
+msgstr "Eksportimine laiendusena"
+
+#: moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASBASIC.radiobutton.text
+msgctxt "moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASBASIC.radiobutton.text"
+msgid "Export as BASIC library"
+msgstr "Eksportimine BASICu teegina"
+
+#: moduldlg.src#RID_DLG_EXPORT.modaldialog.text
+msgid "Export Basic library"
+msgstr "BASICu teegi eksportimine"
+
+#: moduldlg.src#RID_STR_EXPORTPACKAGE.string.text
+msgid "Export library as extension"
+msgstr "Teegi eksportimine laiendusena"
+
+#: moduldlg.src#RID_STR_EXPORTBASIC.string.text
+msgctxt "moduldlg.src#RID_STR_EXPORTBASIC.string.text"
+msgid "Export as BASIC library"
+msgstr "Eksportimine BASICu teegina"
+
+#: moduldlg.src#RID_STR_PACKAGE_BUNDLE.string.text
+msgid "Extension"
+msgstr "Laiendus"
+
+#: moptions.src#RID_MACROOPTIONS.RID_FT_DESCR.fixedtext.text
+msgctxt "moptions.src#RID_MACROOPTIONS.RID_FT_DESCR.fixedtext.text"
+msgid "Description"
+msgstr "Kirjeldus"
+
+#: moptions.src#RID_MACROOPTIONS.RID_FL_HELP.fixedline.text
+msgid "Help information"
+msgstr "Abiinfo"
+
+#: moptions.src#RID_MACROOPTIONS.RID_FT_HELPID.fixedtext.text
+msgid "Help ID"
+msgstr "Abi ID"
+
+#: moptions.src#RID_MACROOPTIONS.RID_FT_HELPNAME.fixedtext.text
+msgid "Help file name"
+msgstr "Abifaili nimi"
+
+#: moptions.src#RID_MACROOPTIONS.modaldialog.text
+msgctxt "moptions.src#RID_MACROOPTIONS.modaldialog.text"
+msgid "Description"
+msgstr "Kirjeldus"
+
+#: objdlg.src#RID_BASICIDE_OBJCAT.RID_TB_TOOLBOX.TBITEM_SHOW.toolboxitem.text
+msgid "Show"
+msgstr "Näita"
+
+#: objdlg.src#RID_BASICIDE_OBJCAT.floatingwindow.text
+msgid "Objects"
+msgstr "Objektid"
+
+#: objdlg.src#RID_STR_TLB_MACROS.string.text
+msgid "Objects Tree"
+msgstr ""
+
+#~ msgctxt "tbxctl.src#RID_TBXCONTROLS.RID_TOOLBOX.string.text"
+#~ msgid "Controls"
+#~ msgstr "Juhtelemendid"
+
+#~ msgctxt "tbxctl.src#RID_TBXCONTROLS.floatingwindow.text"
+#~ msgid "Controls"
+#~ msgstr "Juhtelemendid"
+
+#~ msgid "Button"
+#~ msgstr "Nupp"
+
+#~ msgid "Check Box"
+#~ msgstr "Märkeruut"
+
+#~ msgid "Label field"
+#~ msgstr "Pealdis"
+
+#~ msgid "List Box"
+#~ msgstr "Loendiboks"
+
+#~ msgid "Horizontal Scroll Bar"
+#~ msgstr "Horisontaalne kerimisriba"
+
+#~ msgid "Group Box"
+#~ msgstr "Rühmaboks"
+
+#~ msgid "Horizontal Line"
+#~ msgstr "Rõhtjoon"
+
+#~ msgid "Date Field"
+#~ msgstr "Kuupäevaväli"
+
+#~ msgid "Numeric Field"
+#~ msgstr "Arvuväli"
+
+#~ msgid "Formatted Field"
+#~ msgstr "Vormindatud väli"
+
+#~ msgid "File Selection"
+#~ msgstr "Faili valimine"
+
+#~ msgid "Tree Control"
+#~ msgstr "Kataloogipuu juhtelement"
+
+#~ msgid "Image Control"
+#~ msgstr "Pilt"
+
+#~ msgid "Option Button"
+#~ msgstr "Raadionupp"
+
+#~ msgid "Text Box"
+#~ msgstr "Tekstiboks"
+
+#~ msgid "Combo Box"
+#~ msgstr "Liitboks"
+
+#~ msgid "Vertical Scroll Bar"
+#~ msgstr "Vertikaalne kerimisriba"
+
+#~ msgid "Progress Bar"
+#~ msgstr "Edenemisnäitur"
+
+#~ msgid "Vertical Line"
+#~ msgstr "Vertikaaljoon"
+
+#~ msgid "Time Field"
+#~ msgstr "Ajaväli"
+
+#~ msgid "Currency Field"
+#~ msgstr "Rahaväli"
+
+#~ msgid "Pattern Field"
+#~ msgstr "Mustriväli"
+
+#~ msgid "Select"
+#~ msgstr "Vali"
+
+#~ msgid "Activate Test Mode"
+#~ msgstr "Aktiveeri testirežiim"

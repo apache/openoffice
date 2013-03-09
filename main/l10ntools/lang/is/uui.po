@@ -1,0 +1,952 @@
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: ~\n"
+
+#: alreadyopen.src#STR_ALREADYOPEN_MSG.string.text
+msgid ""
+"Document file '$(ARG1)' is locked for editing by yourself on a different "
+"system since $(ARG2)\n"
+"\n"
+"Open document read-only, or ignore own file locking and open the document "
+"for editing.\n"
+"\n"
+msgstr ""
+"Skjal '$(ARG1)' er læst fyrir breytingum af þér á annarri tölvu síðan "
+"$(ARG2)\n"
+"\n"
+"Opnaðu skjalið í lesham, eða hunsaðu skráarlásinn og opnaðu skjalið fyrir "
+"breytingar.\n"
+"\n"
+
+#: alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.string.text
+msgctxt "alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.string.text"
+msgid "Open ~Read-Only"
+msgstr "Opna ~skrifvarið"
+
+#: alreadyopen.src#STR_ALREADYOPEN_OPEN_BTN.string.text
+msgid "~Open"
+msgstr "~Opna"
+
+#: alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.string.text
+msgid ""
+"Document file '$(ARG1)' is locked for editing by yourself on a different "
+"system since $(ARG2)\n"
+"\n"
+"Close document on other system and retry saving or ignore own file locking "
+"and save current document.\n"
+"\n"
+msgstr ""
+"Skjal '$(ARG1)' er læst fyrir breytingum af þér á annarri tölvu síðan "
+"$(ARG2)\n"
+"\n"
+"Lokaðu skjalinu á hinni tölvunni og reyndu að vista aftur eða hunsaðu "
+"skráarlásinn og vistaðu skjalið.\n"
+"\n"
+
+#: alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.string.text
+msgctxt "alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.string.text"
+msgid "~Retry Saving"
+msgstr "~Reyna vistun aftur"
+
+#: alreadyopen.src#STR_ALREADYOPEN_SAVE_BTN.string.text
+msgid "~Save"
+msgstr "~Vista"
+
+#: cookiedg.src#DLG_COOKIES.RB_INFUTURE_SEND.radiobutton.text
+msgctxt "cookiedg.src#DLG_COOKIES.RB_INFUTURE_SEND.radiobutton.text"
+msgid "~Send"
+msgstr "~Senda"
+
+#: cookiedg.src#DLG_COOKIES.RB_INFUTURE_IGNORE.radiobutton.text
+msgid "I~gnore"
+msgstr "~Hunsa"
+
+#: cookiedg.src#DLG_COOKIES.RB_INFUTURE_INTERACTIVE.radiobutton.text
+msgid "I~nteractive"
+msgstr "~Gagnvirkt"
+
+#: cookiedg.src#DLG_COOKIES.GB_INFUTURE.groupbox.text
+msgid "Future Cookie Handling"
+msgstr "Framtíðarmeðhöndlun á smákökum"
+
+#: cookiedg.src#DLG_COOKIES.BTN_COOKIES_CANCEL.pushbutton.text
+msgid "~Ignore"
+msgstr "~Hunsa"
+
+#: cookiedg.src#DLG_COOKIES.BTN_COOKIES_OK.pushbutton.text
+msgctxt "cookiedg.src#DLG_COOKIES.BTN_COOKIES_OK.pushbutton.text"
+msgid "~Send"
+msgstr "~Senda"
+
+#: cookiedg.src#STR_COOKIES_RECV_START.string.text
+msgid ""
+"The '${HOST}' server wishes to set one or more cookies.\n"
+"Cookies contain information referring to certain URL classes. If %"
+"PRODUCTNAME later requests a document with a URL corresponding to the class "
+"of a previously set cookie, %PRODUCTNAME will send this information to the "
+"server. This allows a server to recognize the status of a WWW application, "
+"e.g., when shopping online.\n"
+"\n"
+"The following Cookies should be set:\n"
+"\n"
+msgstr ""
+"'${HOST}' þjónninn vill breyta einni eða fleirum smákökum.\n"
+"Smákökur innihalda upplýsingar sem vísa á ákveðna klassa vefslóða. Ef %"
+"PRODUCTNAME biður seinna um skjal með vefslóð sem sem passar við klasa af "
+"smáköku sem þegar hefur verið vistuð, mun %PRODUCTNAME senda þessar "
+"upplýsingar á vefþjóninn. Þetta gerir vefþjóninum kleyft að bera kennsl á "
+"stöðu vefforrits, T.d., þegar verslað er á netinu.\n"
+"\n"
+"Eftirfarandi smákökum verður breytt:\n"
+"\n"
+
+#: cookiedg.src#STR_COOKIES_RECV_COOKIES.string.text
+msgctxt "cookiedg.src#STR_COOKIES_RECV_COOKIES.string.text"
+msgid "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
+msgstr "Lén: ${DOMAIN}, Slóð: ${PATH}, Smákaka: ${COOKIE}.\n"
+
+#: cookiedg.src#STR_COOKIES_RECV_TITLE.string.text
+msgid "Cookie Reception"
+msgstr "Móttaka á smákökum"
+
+#: cookiedg.src#STR_COOKIES_SEND_START.string.text
+msgid ""
+"%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent "
+"when requesting the document ${PATH}.\n"
+"Cookies contain information which refers to certain URL classes. They are "
+"sent by some servers to %PRODUCTNAME where they are saved when certain "
+"documents are accessed. If %PRODUCTNAME loads a document that, according to "
+"the URL, corresponds to a class of one of the previously received Cookies, %"
+"PRODUCTNAME will send this information to that server. This enables a server "
+"to keep track of the status of a WWW application, e.g., when shopping "
+"online.\n"
+"\n"
+"The following Cookies should be set:\n"
+"\n"
+msgstr ""
+"%PRODUCTNAME er búinn að vista smákökur fyrir þjóninn '${HOST}' sem verða "
+"sendar þegar beðið er um skjalið ${PATH}.\n"
+"Smákökur innihalda upplýsingar sem vísa á ákveðna klassa vefslóða, Þær eru "
+"sendar af sumum þjónum til %PRODUCTNAME þar sem þær eru vistaðar þegar opnuð "
+"eru ákveðin skjöl. Ef %PRODUCTNAME hleður inn skjal sem, með tilliti til "
+"vefslóðar, passar við einn af þeim klösum sem eru í áðurnefndum mótteknum "
+"smákökum, mun %PRODUCTNAME senda þessar upplýsingar á vefþjóninn. Þetta "
+"gerir vefþjóninum kleyft að bera kennsl á stöðu vefforrits, t.d., þegar "
+"verslað er á netinu.\n"
+"\n"
+"Eftirfarandi smákökum verður breytt:\n"
+"\n"
+
+#: cookiedg.src#STR_COOKIES_SEND_COOKIES.string.text
+msgctxt "cookiedg.src#STR_COOKIES_SEND_COOKIES.string.text"
+msgid "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
+msgstr "Lén: ${DOMAIN}, Slóð: ${PATH}, Smákaka: ${COOKIE}.\n"
+
+#: cookiedg.src#STR_COOKIES_SEND_TITLE.string.text
+msgid "Send Cookies"
+msgstr "Senda smákökur"
+
+#: filechanged.src#STR_FILECHANGED_TITLE.string.text
+msgid "Document Has Been Changed by Others"
+msgstr "Skjali hefur verið breytt af öðrum"
+
+#: filechanged.src#STR_FILECHANGED_MSG.string.text
+msgid ""
+"The file has been changed since it was opened for editing in %PRODUCTNAME. "
+"Saving your version of the document will overwrite changes made by others.\n"
+"\n"
+"Do you want to save anyway?\n"
+"\n"
+msgstr ""
+"Skránni hefur verið breytt frá því að þú opnaðir skjalið í %PRODUCTNAME. Ef "
+"þú vistar skjalið muntu skrifa yfir breytingar sem hafa verið gerðar af "
+"öðrum.\n"
+"\n"
+"Viltu samt halda áfram og vista?\n"
+"\n"
+
+#: filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.string.text
+msgid "~Save Anyway"
+msgstr "~Vista samt"
+
+#: fltdlg.src#DLG_FILTER_SELECT.modaldialog.text
+msgid "Filter Selection"
+msgstr "Velja síu"
+
+#: ids.src#RID_KEEP_PASSWORD.string.text
+msgid "~Remember password until end of session"
+msgstr "~Muna lykilorð til loka setu"
+
+#: ids.src#RID_SAVE_PASSWORD.string.text
+msgctxt "ids.src#RID_SAVE_PASSWORD.string.text"
+msgid "~Remember password"
+msgstr "~Muna lykilorð"
+
+#: ids.src#STR_WARNING_BROKENSIGNATURE_TITLE.string.text
+msgid "Invalid Document Signature"
+msgstr "Ógild undirritun skjals"
+
+#: ids.src#STR_WARNING_INCOMPLETE_ENCRYPTION_TITLE.string.text
+msgid "Non-Encrypted Streams"
+msgstr "Ekki-dulkóðaðir straumar"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_ABORT___ERRCODE_RES_MASK_.string.text
+msgid "The operation executed on $(ARG1) was aborted."
+msgstr "Hætt var við aðgerð sem var keyrð á $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_ACCESSDENIED___ERRCODE_RES_MASK_.string.text
+msgid "Access to $(ARG1) was denied."
+msgstr "Aðgangur að $(ARG1) var ekki heimilaður."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_ALREADYEXISTS___ERRCODE_RES_MASK_.string.text
+msgid "$(ARG1) already exists."
+msgstr "$(ARG1) er þegar til."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_TARGETALREADYEXISTS___ERRCODE_RES_MASK_.string.text
+msgid "Target already exists."
+msgstr "Úttakið er þegar til."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_MODULESIZEEXCEEDED___ERRCODE_RES_MASK_.string.text
+msgid ""
+"You are about to save/export a password protected basic library containing "
+"module(s) \n"
+"$(ARG1)\n"
+"which are too large to store in binary format. If you wish users that don't "
+"have access to the library password to be able to run macros in those "
+"module(s) you must split those modules into a number of smaller modules. Do "
+"you wish to continue to save/export this library?"
+msgstr ""
+"Þú ert að fara að vista/flytja út basic forritasafn sem er varið af "
+"lykilorði og inniheldur einingar \n"
+"$(ARG1)\n"
+"sem eru of stórar til að geyma á gagnaformi. Ef þú vilt að notendur sem hafa "
+"ekki aðgang að lykilorðinu geti keyrt fjölva í einingunum verðurðu að "
+"skipta einingunum niður í einhvern fjölda af smærri einingum. Viltu halda "
+"áfram að vista/flytja út þetta forritasafn?"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_BADCRC___ERRCODE_RES_MASK_.string.text
+msgid "The data from $(ARG1) has an incorrect checksum."
+msgstr "Gögnin frá $(ARG1) eru með rangri gátsummu."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_CANTCREATE___ERRCODE_RES_MASK_.string.text
+msgid "The object $(ARG1) cannot be created in directory $(ARG2)."
+msgstr "Hlutinn $(ARG1) cer ekki hægt að búa ril í möppunni $(ARG2)."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_CANTREAD___ERRCODE_RES_MASK_.string.text
+msgid "Data of $(ARG1) could not be read."
+msgstr "Ómögulegt reyndist að lesa gögn úr $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_CANTSEEK___ERRCODE_RES_MASK_.string.text
+msgid "The seek operation on $(ARG1) could not be performed."
+msgstr "Ekki var hægt að framkvæma leit á $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_CANTTELL___ERRCODE_RES_MASK_.string.text
+msgid "The tell operation on $(ARG1) could not be performed."
+msgstr "Ekki var hægt að framkvæma \"segja\" aðgerð á $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_CANTWRITE___ERRCODE_RES_MASK_.string.text
+msgid "Data for $(ARG1) could not be written."
+msgstr "Ekki var hægt að skrifa gögn frá $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_CURRENTDIR___ERRCODE_RES_MASK_.string.text
+msgid "Action impossible: $(ARG1) is the current directory."
+msgstr "Ómöguleg aðgerð: $(ARG1) er núverandi mappan."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTREADY___ERRCODE_RES_MASK_.string.text
+msgid "$(ARG1) is not ready."
+msgstr "$(ARG1) er ekki tilbúið."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTSAMEDEVICE___ERRCODE_RES_MASK_.string.text
+msgid "Action impossible: $(ARG1) and $(ARG2) are different devices (drives)."
+msgstr "Aðgerð ómöguleg: $(ARG1) og $(ARG2) eru mismunandi tæki (drif)."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_GENERAL___ERRCODE_RES_MASK_.string.text
+msgid "General input/output error while accessing $(ARG1)."
+msgstr "Almenn inntaks/úttaksvilla þegar verið var að fá aðgang að $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_INVALIDACCESS___ERRCODE_RES_MASK_.string.text
+msgid "An attempt was made to access $(ARG1) in an invalid way."
+msgstr "Reynt var að tengjast við $(ARG1) á ógildan hátt."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_INVALIDCHAR___ERRCODE_RES_MASK_.string.text
+msgid "$(ARG1) contains invalid characters."
+msgstr "$(ARG1) inniheldur ógilda stafi."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_INVALIDDEVICE___ERRCODE_RES_MASK_.string.text
+msgid "The device (drive) $(ARG1) is invalid."
+msgstr "Tækið (drifið) $(ARG1) er ógilt."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_INVALIDLENGTH___ERRCODE_RES_MASK_.string.text
+msgid "The data from $(ARG1) has an invalid length."
+msgstr "Lengd gagna frá $(ARG1) er ógild."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_INVALIDPARAMETER___ERRCODE_RES_MASK_.string.text
+msgid "The operation on $(ARG1) was started with an invalid parameter."
+msgstr "Aðgerðin $(ARG1) var ræst með ógildri breytu."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_ISWILDCARD___ERRCODE_RES_MASK_.string.text
+msgid "The operation cannot be performed because $(ARG1) contains wildcards."
+msgstr ""
+"Ekki er hægt að framkvæma aðgerð þar sem $(ARG1) inniheldur algildistaf."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_LOCKVIOLATION___ERRCODE_RES_MASK_.string.text
+msgid "Error during shared access to $(ARG1)."
+msgstr "Villa á samnýttum aðgangi að $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_MISPLACEDCHAR___ERRCODE_RES_MASK_.string.text
+msgid "$(ARG1) contains misplaced characters."
+msgstr "$(ARG1) inniheldur tákn á röngum stað."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NAMETOOLONG___ERRCODE_RES_MASK_.string.text
+msgid "The name $(ARG1) contains too many characters."
+msgstr "Nafnið $(ARG1) inniheldur of mörg tákn."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTEXISTS___ERRCODE_RES_MASK_.string.text
+msgid "$(ARG1) does not exist."
+msgstr "$(ARG1) er ekki til."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTEXISTSPATH___ERRCODE_RES_MASK_.string.text
+msgid "The path $(ARG1) does not exist."
+msgstr "Slóðin $(ARG1) er ekki til."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTSUPPORTED___ERRCODE_RES_MASK_.string.text
+msgid "The operation on $(ARG1) is not supported on this operating system."
+msgstr "Aðgerðin $(ARG1) er ekki möguleg á þessu stýrikerfi."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTADIRECTORY___ERRCODE_RES_MASK_.string.text
+msgid "$(ARG1) is not a directory."
+msgstr "$(ARG1) er ekki mappa."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTAFILE___ERRCODE_RES_MASK_.string.text
+msgid "$(ARG1) is not a file."
+msgstr "$(ARG1) er ekki skrá."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_OUTOFSPACE___ERRCODE_RES_MASK_.string.text
+msgid "There is no space left on device $(ARG1)."
+msgstr "Ekki er til meira pláss á tæki $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_TOOMANYOPENFILES___ERRCODE_RES_MASK_.string.text
+msgid ""
+"The operation on $(ARG1) cannot be performed because too many files are "
+"already open."
+msgstr "Ekki er hægt að framkvæma aðgerð á $(ARG1) því of mörg skjöl eru opin."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_OUTOFMEMORY___ERRCODE_RES_MASK_.string.text
+msgid ""
+"The operation on $(ARG1) cannot be performed because there is no more memory "
+"available."
+msgstr "Aðgerðin á $(ARG1) er ómöguleg því ekki er til meira laust minni."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_PENDING___ERRCODE_RES_MASK_.string.text
+msgid "The operation on $(ARG1) cannot continue because more data is pending."
+msgstr "Ekki er hægt að framkvæma aðgerð $(ARG1) því fleiri gögn eru ókláruð."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_RECURSIVE___ERRCODE_RES_MASK_.string.text
+msgid "$(ARG1) cannot be copied into itself."
+msgstr "Ekki er hægt að afrita $(ARG1) yfir sjálfan sig."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_UNKNOWN___ERRCODE_RES_MASK_.string.text
+msgid "Unknown input/output error while accessing $(ARG1)."
+msgstr "Óþekkt inntaks/úttaksvilla við aðgang að $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_WRITEPROTECTED___ERRCODE_RES_MASK_.string.text
+msgid "$(ARG1) is write protected."
+msgstr "$(ARG1) er skrifvarið."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_WRONGFORMAT___ERRCODE_RES_MASK_.string.text
+msgid "$(ARG1) is not in the correct format."
+msgstr "$(ARG1) er ekki á réttu sniði."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_WRONGVERSION___ERRCODE_RES_MASK_.string.text
+msgid "The version of $(ARG1) is not correct."
+msgstr "Ekki er rétt útgáfa af $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTEXISTS_VOLUME___ERRCODE_RES_MASK_.string.text
+msgid "Drive $(ARG1) does not exist."
+msgstr "Drifið $(ARG1) er ekki til."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTEXISTS_FOLDER___ERRCODE_RES_MASK_.string.text
+msgid "Folder $(ARG1) does not exist."
+msgstr "Mappan $(ARG1) er ekki til."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_WRONGJAVA___ERRCODE_RES_MASK_.string.text
+msgid "The installed Java version is not supported."
+msgstr "Ekki er stuðningur við þá útgáfu af Java sem er uppsett."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_WRONGJAVA_VERSION___ERRCODE_RES_MASK_.string.text
+msgid "The installed Java version $(ARG1) is not supported."
+msgstr "Ekki er stuðningur við uppsetta Java útgáfu $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_WRONGJAVA_MIN___ERRCODE_RES_MASK_.string.text
+msgid ""
+"The installed Java version is not supported, at least version $(ARG1) is "
+"required."
+msgstr ""
+"Ekki er stuðningur við þá útgáfu Java sem er uppsett, nauðsynlegt er að hafa "
+"að minnsta kosti útgáfu $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_WRONGJAVA_VERSION_MIN___ERRCODE_RES_MASK_.string.text
+msgid ""
+"The installed Java version $(ARG1) is not supported, at least version "
+"$(ARG2) is required."
+msgstr ""
+"Ekki er stuðningur við uppsetta útgáfu Java $(ARG1), nauðsynlegt er að hafa "
+"að minnsta kosti útgáfu $(ARG2)."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_BADPARTNERSHIP___ERRCODE_RES_MASK_.string.text
+msgid "The data associated with the partnership is corrupted."
+msgstr "Gögnin sem er tengd við tengslin eru ógild."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_BADPARTNERSHIP_NAME___ERRCODE_RES_MASK_.string.text
+msgid "The data associated with the partnership $(ARG1) is corrupted."
+msgstr "Gögnin sem er tengd við tengslin $(ARG1) eru ógild."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTREADY_VOLUME___ERRCODE_RES_MASK_.string.text
+msgid "Volume $(ARG1) is not ready."
+msgstr "Gagnageymslan $(ARG1) er ekki tilbúin."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTREADY_REMOVABLE___ERRCODE_RES_MASK_.string.text
+msgid "$(ARG1) is not ready; please insert a storage medium."
+msgstr "$(ARG1) er ekki tilbúið; vinsamlega settu inn geymslumiðil."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTREADY_VOLUME_REMOVABLE___ERRCODE_RES_MASK_.string.text
+msgid "Volume $(ARG1) is not ready; please insert a storage medium."
+msgstr ""
+"Gagnageymslan $(ARG1) er ekki tilbúin; vinsamlega setu inn geymslumiðil."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_WRONGMEDIUM___ERRCODE_RES_MASK_.string.text
+msgid "Please insert disk $(ARG1)."
+msgstr "Settu inn disk $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_CANTCREATE_NONAME___ERRCODE_RES_MASK_.string.text
+msgid "The object cannot be created in directory $(ARG1)."
+msgstr "Ekki er hægt að búa til hlutinn í möppu $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_UNSUPPORTEDOVERWRITE___ERRCODE_RES_MASK_.string.text
+msgid ""
+"%PRODUCTNAME cannot keep files from being overwritten when this transmission "
+"protocol is used. Do you want to continue anyway?"
+msgstr ""
+"%PRODUCTNAME getur ekki komið í veg fyrir að skrár verði yfirskrifaðar ef "
+"þessi samskiptaregla er notuð. Viltu samt halda áfram?"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_BROKENPACKAGE___ERRCODE_RES_MASK_.string.text
+msgid ""
+"The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME "
+"can try to repair the file.\n"
+"\n"
+"The corruption could be the result of document manipulation or of structural "
+"document damage due to data transmission.\n"
+"\n"
+"We recommend that you do not trust the content of the repaired document.\n"
+"Execution of macros is disabled for this document.\n"
+"\n"
+"Should %PRODUCTNAME repair the file?\n"
+msgstr ""
+"Skráin '$(ARG1)' er skemmd og því er ekki hægt að opna hana. %PRODUCTNAME "
+"getur hinsvegar reynt að gera við skrána.\n"
+"\n"
+"Skemmdirnar gætu komið til vegna einhverrar meðhöndlunar á skjalinu en "
+"einnig gæti verið um að ræða skemmdir í uppbyggingu skjals sem komið hafa "
+"til við sendingu skjalsins.\n"
+"\n"
+"Við mælum með því að þú treystir ekki fullkomlega innihaldi viðgerða "
+"skjalsins, nema eftir yfirferð á gögnunum.\n"
+"Keyrsla fjölva er óvirk í þessu skjali.\n"
+"\n"
+"Ætti %PRODUCTNAME að gera við skrána?\n"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR___ERRCODE_RES_MASK_.string.text
+msgid ""
+"The file '$(ARG1)' could not be repaired and therefore cannot be opened."
+msgstr ""
+"Ekki var hægt að laga skjalið '$(ARG1)' og því er ekki hægt að opna það."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE___ERRCODE_RES_MASK_.string.text
+msgid ""
+"Configuration data in '$(ARG1)' is corrupted. Without this data some "
+"functions may not operate correctly.\n"
+"Do you want to continue startup of %PRODUCTNAME without the corrupted "
+"configuration data?"
+msgstr ""
+"Gagnagjafi stillinga '$(ARG1)' er gallaður. Án þessara gagna er hugsanlegt "
+"að einhverjar aðgerðir virki ekki rétt.\n"
+"Viltu halda áfram að ræsa upp %PRODUCTNAME án þess að hafa þessi stilligögn?"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE___ERRCODE_RES_MASK_.string.text
+msgid ""
+"The personal configuration file '$(ARG1)' is corrupted and must be deleted "
+"to continue. Some of your personal settings may be lost.\n"
+"Do you want to continue startup of %PRODUCTNAME without the corrupted "
+"configuration data?"
+msgstr ""
+"Persónulega stillingaskráin '$(ARG1)' er gölluð og nauðsynlegt er að eyða "
+"henni til að geta haldið áfram. Hugsanlegt er að það tapist einhverjar "
+"persónulegar stillingar.\n"
+"Viltu halda áfram að ræsa upp %PRODUCTNAME án þess að hafa þessi stilligögn?"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_CONFIGURATION_BACKENDMISSING___ERRCODE_RES_MASK_.string.text
+msgid ""
+"The configuration data source '$(ARG1)' is unavailable. Without this data "
+"some functions may not operate correctly."
+msgstr ""
+"Gagnagjafi stillinga '$(ARG1)' er ekki tiltækur. Án hans er hugsanlegt að "
+"einhverjar aðgerðir virki ekki rétt."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER___ERRCODE_RES_MASK_.string.text
+msgid ""
+"The configuration data source '$(ARG1)' is unavailable. Without this data "
+"some functions may not operate correctly.\n"
+"Do you want to continue startup of %PRODUCTNAME without the missing "
+"configuration data?"
+msgstr ""
+"Gagnagjafi stillinga '$(ARG1)' er ekki tiltækur. Án þessara gagna er "
+"hugsanlegt að einhverjar aðgerðir virki ekki rétt.\n"
+"Viltu halda áfram að ræsa upp %PRODUCTNAME án þess að hafa þessi stilligögn?"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA___ERRCODE_RES_MASK_.string.text
+msgid "The form contains invalid data. Do you still want to continue?"
+msgstr "Eyðublaðið inniheldur ógild gögn. Viltu samt halda áfram?"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_LOCKING_LOCKED___ERRCODE_RES_MASK_.string.text
+msgid ""
+"The file $(ARG1) is locked by another user. Currently, another write access "
+"to this file cannot be granted."
+msgstr ""
+"Skráin $(ARG1) er læst af öðrum notanda. Ekki er hægt að leyfa skrifaðgang í "
+"þessa skrá."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_LOCKING_LOCKED_SELF___ERRCODE_RES_MASK_.string.text
+msgid ""
+"The file $(ARG1) is locked by yourself. Currently, another write access to "
+"this file cannot be granted."
+msgstr ""
+"Skráin $(ARG1) er læst af þér. Ekki er hægt að leyfa skrifaðgang í þessa "
+"skrá."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_LOCKING_NOT_LOCKED___ERRCODE_RES_MASK_.string.text
+msgid "The file $(ARG1) is currently not locked by yourself."
+msgstr "Skráin $(ARG1) er ekki læst af þér."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_LOCKING_LOCK_EXPIRED___ERRCODE_RES_MASK_.string.text
+msgid ""
+"The previously obtained lock for file $(ARG1) has expired.\n"
+"This can happen due to problems on the server managing the file lock. It "
+"cannot be guaranteed that write operations on this file will not overwrite "
+"changes done by other users!"
+msgstr ""
+"Læsingin sem var þegar til fyrir $(ARG1) er útrunnin.\n"
+"Þetta gæti gerst vegna vandræða á netþjóni sem sér um læsingarnar. Ekki er "
+"hægt að ábyrgjast að skrifaðgerðir á þessa skrá muni ekki skrifa yfir "
+"breytingar frá öðrum notendum!"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_UNKNOWNAUTH_UNTRUSTED_.string.text
+msgid ""
+"Unable to verify the identity of $(ARG1) site.\n"
+"\n"
+"Before accepting this certificate, you should examine this site's "
+"certificate carefully. Are you willing to accept this certificate for the "
+"purpose of identifying the Web site $(ARG1)?"
+msgstr ""
+"Get ekki sannreynt auðkenni $(ARG1) vefsvæðis.\n"
+"\n"
+"Áður en þú samþykkir þetta skilríki, ættirðu að athuga það vandlega. Viltu "
+"samþykkja þetta skilríki fyrir þann tilgang að bera kennsl á vefsvæðið "
+"$(ARG1)?"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_SSLWARN_EXPIRED_1_.string.text
+msgid ""
+"$(ARG1) is a site that uses a security certificate to encrypt data during "
+"transmission, but its certificate expired on $(ARG2).\n"
+"\n"
+"You should check to make sure that your computer's time is correct."
+msgstr ""
+"$(ARG1) er vefsvæði sem notar öryggisskilríki til að dulkóða gögn í "
+"sendingu, en skilríki þess rann út þann $(ARG2).\n"
+"\n"
+"Þú ættir að athuga hvort klukkan á tölvunni þinni sé örugglega ekki rétt."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_SSLWARN_DOMAINMISMATCH_1_.string.text
+msgid ""
+"You have attempted to establish a connection with $(ARG1). However, the "
+"security certificate presented belongs to $(ARG2). It is possible, though "
+"unlikely, that someone may be trying to intercept your communication with "
+"this web site.\n"
+"\n"
+"If you suspect the certificate shown does not belong to $(ARG1), please "
+"cancel the connection and notify the site administrator.\n"
+"\n"
+"Would you like to continue anyway?"
+msgstr ""
+"Þú reyndir að tengjast við $(ARG1). En, skilríkið sem var sent tilheyrir "
+"$(ARG2). Hugsanlegt er, þótt það sé frekar ólíklegt, að einhver sé að reyna "
+"að hlusta á samskipti þín við þetta vefsvæði.\n"
+"\n"
+"Ef þig grunar að skilríkið tilheyri ekki $(ARG1), hættu þá við tenginguna og "
+"hafðu samband við kerfisstjóra vefsvæðisins.\n"
+"\n"
+"Viltu samt halda áfram?"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_SSLWARN_INVALID_1_.string.text
+msgid ""
+"The certificate could not be validated. You should examine this site's "
+"certificate carefully.\n"
+"\n"
+"If you suspect the certificate shown, please cancel the connection and "
+"notify the site administrator."
+msgstr ""
+"Ekki tókst að sannreyna þetta skilríki. Þú ættir að athuga þetta skilríki "
+"vandlega.\n"
+"\n"
+"Ef þig grunar þetta skilríki um eitthvað grunsamlegt, hættu þá við "
+"tenginguna og hafðu samband við kerfisstjóra vefsvæðis."
+
+#: ids.src#RID_UUI_ERRHDL._TITLE_UUI_SSLWARN_DOMAINMISMATCH_.string.text
+msgid "Security Warning: Domain Name Mismatch"
+msgstr "Öryggisaðvörun: Misræmi í lénaheitum"
+
+#: ids.src#RID_UUI_ERRHDL._TITLE_UUI_SSLWARN_EXPIRED_.string.text
+msgid "Security Warning: Server Certificate Expired"
+msgstr "Öryggisaðvörun: Skilríki miðlara útrunnið"
+
+#: ids.src#RID_UUI_ERRHDL._TITLE_UUI_SSLWARN_INVALID_.string.text
+msgid "Security Warning: Server Certificate Invalid"
+msgstr "Öryggisaðvörun: Skilríki miðlara ógilt"
+
+#: lockfailed.src#STR_LOCKFAILED_MSG.string.text
+msgid ""
+"The file could not be locked for exclusive access by %PRODUCTNAME, due to "
+"missing permission to create a lock file on that file location."
+msgstr ""
+"Ekki tókst að læsa skránni fyrir einkaaðgang með %PRODUCTNAME, þar sem "
+"heimildir vantaði til að geta búið til læsiskrá á þessari staðsetningu."
+
+#: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_ERROR.fixedtext.text
+msgid "Message from server:"
+msgstr "Skilaboð frá miðlara:"
+
+#: logindlg.src#DLG_UUI_LOGIN.FT_INFO_LOGIN_REQUEST.fixedtext.text
+msgid ""
+"Enter user name and password for: \n"
+"%1"
+msgstr ""
+"Sláðu inn notandanafn og lykilorð fyrir:\n"
+"%1"
+
+#: logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.string.text
+msgid ""
+"Enter user name and password for: \n"
+"\"%2\" on %1"
+msgstr ""
+"Sláðu inn notandanafn og lykilorð fyrir:\n"
+"\"%2\" á %1"
+
+#: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.fixedtext.text
+msgid "~Path"
+msgstr "~Slóð"
+
+#: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_USERNAME.fixedtext.text
+msgid "~User name"
+msgstr "~Notandanafn"
+
+#: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PASSWORD.fixedtext.text
+msgid "Pass~word"
+msgstr "~Lykilorð"
+
+#: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_ACCOUNT.fixedtext.text
+msgid "A~ccount"
+msgstr "~Þjónusta"
+
+#: logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_SAVEPASSWORD.checkbox.text
+msgctxt "logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_SAVEPASSWORD.checkbox.text"
+msgid "~Remember password"
+msgstr "~Muna lykilorð"
+
+#: logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_USESYSCREDS.checkbox.text
+msgid "~Use system credentials"
+msgstr "Nota kerfisa~uðkenningu"
+
+#: logindlg.src#DLG_UUI_LOGIN.modaldialog.text
+msgid "Authentication Required"
+msgstr "Vantar auðkenni"
+
+#: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_INFOTEXT.fixedtext.text
+msgid ""
+"Passwords for web connections are protected by a master password. You will "
+"be asked to enter it once per session, if %PRODUCTNAME retrieves a password "
+"from the protected password list."
+msgstr ""
+"Lykilorð fyrir vefinnskráningu eru varin af aðallykilorði. Þú verður spurður "
+"um aðallykilorðið einu sinni í hverri setu, ef %PRODUCTNAME getur nálgast "
+"upplýsingar um lykilorð úr lykilorðalistanum."
+
+#: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_CRT.fixedtext.text
+msgid "~Enter password"
+msgstr "~Sláðu inn lykilorð"
+
+#: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_REPEAT.fixedtext.text
+msgid "~Reenter password"
+msgstr "~Sláðu aftur inn lykilorð"
+
+#: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_CAUTIONTEXT.fixedtext.text
+msgid ""
+"Caution: If you forget the master password, you will be unable to access any "
+"of the information protected by it. Passwords are case-sensitive."
+msgstr ""
+"Varúð: Vertu viss um að muna aðallykilorðið sem þú valdir. Ef þú gleymir "
+"aðallykilorði þínu munt þú ekki geta komist í þær upplýsingar sem eru varðar "
+"með því. Lykilorð verða að vera að minnsta kosti fimm tákn og gerður er "
+"greinarmunur á hástöfum og lágstöfum."
+
+#: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.modaldialog.text
+msgid "Set Master Password"
+msgstr "Setja aðal lykilorð"
+
+#: masterpassworddlg.src#DLG_UUI_MASTERPASSWORD.FT_MASTERPASSWORD.fixedtext.text
+msgid "Enter password"
+msgstr "Sláðu inn lykilorð"
+
+#: masterpassworddlg.src#DLG_UUI_MASTERPASSWORD.modaldialog.text
+msgid "Enter Master Password"
+msgstr "Sláðu inn aðallykilorð"
+
+#: nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.BTN_OVERWRITE.pushbutton.text
+msgid "Replace"
+msgstr "Skipta út"
+
+#: nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.BTN_RENAME.pushbutton.text
+msgid "Rename"
+msgstr "Endurnefna"
+
+#: nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.modaldialog.text
+msgid "File Exists"
+msgstr "Skrá er þegar til"
+
+#: newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.fixedtext.text
+msgid ""
+"This document was created by a newer version of %PRODUCTNAME. It may contain "
+"features not supported by your current version.\n"
+"\n"
+"Click 'Update Now...' to run online update and get the latest version of %"
+"PRODUCTNAME."
+msgstr ""
+"Þetta skjal var búið til í nýrri útgáfu af %PRODUCTNAME. Það gæti innihaldið "
+"eiginleika sem ekki eru studdir af útgáfunni þinni.\n"
+"\n"
+"Smelltu á 'Uppfæra núna...' til að keyra netuppfærsluforritið og ná í "
+"nýjustu útgáfu %PRODUCTNAME."
+
+#: newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.pushbutton.text
+msgid "~Update Now..."
+msgstr "~Uppfæra núna..."
+
+#: newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_LATER.cancelbutton.text
+msgid "~Later"
+msgstr "Sein~na"
+
+#: newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.modaldialog.text
+msgid "%PRODUCTNAME Update Available"
+msgstr "Til er uppfærsla fyrir %PRODUCTNAME"
+
+#: openlocked.src#STR_OPENLOCKED_TITLE.string.text
+msgctxt "openlocked.src#STR_OPENLOCKED_TITLE.string.text"
+msgid "Document in Use"
+msgstr "Skjal í notkun"
+
+#: openlocked.src#STR_OPENLOCKED_MSG.string.text
+msgid ""
+"Document file '$(ARG1)' is locked for editing by:\n"
+"\n"
+"$(ARG2)\n"
+"\n"
+"Open document read-only or open a copy of the document for editing.\n"
+"\n"
+msgstr ""
+"Skjalið '$(ARG1)' er breytingalæst af:\n"
+"\n"
+"$(ARG2)\n"
+"\n"
+"Opna skjalið skrifvarið eða opna afrit af skjalinu til að vinna með.\n"
+"\n"
+
+#: openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.string.text
+msgctxt "openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.string.text"
+msgid "Open ~Read-Only"
+msgstr "Opna ~skrifvarið"
+
+#: openlocked.src#STR_OPENLOCKED_OPENCOPY_BTN.string.text
+msgid "Open ~Copy"
+msgstr "O~pna afrit"
+
+#: openlocked.src#STR_UNKNOWNUSER.string.text
+msgid "Unknown User"
+msgstr "Óþekktur notandi"
+
+#: passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_OPEN.string.text
+msgid "Enter password to open file: \n"
+msgstr "Sláðu inn lykilorð til að opna skrána: \n"
+
+#: passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_MODIFY.string.text
+msgid "Enter password to modify file: \n"
+msgstr "Sláðu inn lykilorð til að opna skrána: \n"
+
+#: passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_SIMPLE_PASSWORD.string.text
+msgid "Enter password: "
+msgstr "Sláðu inn lykilorð: "
+
+#: passworddlg.src#DLG_UUI_PASSWORD.STR_CONFIRM_SIMPLE_PASSWORD.string.text
+msgid "Confirm password: "
+msgstr "Staðfesta lykilorð: "
+
+#: passworddlg.src#DLG_UUI_PASSWORD.STR_TITLE_CREATE_PASSWORD.string.text
+msgid "Set Password"
+msgstr "Setja lykilorð"
+
+#: passworddlg.src#DLG_UUI_PASSWORD.STR_TITLE_ENTER_PASSWORD.string.text
+msgid "Enter Password"
+msgstr "Sláðu inn lykilorð"
+
+#: passworddlg.src#DLG_UUI_PASSWORD.STR_PASSWORD_MISMATCH.string.text
+msgid ""
+"The confirmation password did not match the password. Set the password again "
+"by entering the same password in both boxes."
+msgstr ""
+"Staðfestingaraðgangsorðið passaði ekki við aðgangsorðið. Settu inn "
+"aðgangsorð með því að slá inn sama aðgangsorðið aftur inn í bæði svæðin."
+
+#: passworderrs.src#STR_ERROR_PASSWORD_TO_OPEN_WRONG.string.text
+msgid "The password is incorrect. The file cannot be opened."
+msgstr "Lykilorðið er ekki rétt. Ekki er hægt að opna skjalið."
+
+#: passworderrs.src#STR_ERROR_PASSWORD_TO_MODIFY_WRONG.string.text
+msgid "The password is incorrect. The file cannot be modified."
+msgstr "Lykilorðið er ekki rétt. Ekki er hægt að opna skjalið."
+
+#: passworderrs.src#STR_ERROR_MASTERPASSWORD_WRONG.string.text
+msgid "The master password is incorrect."
+msgstr "Rangt aðallykilorð var slegið inn."
+
+#: passworderrs.src#STR_ERROR_SIMPLE_PASSWORD_WRONG.string.text
+msgid "The password is incorrect."
+msgstr "Lykilorðið er ekki rétt."
+
+#: passworderrs.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.string.text
+msgid "The password confirmation does not match."
+msgstr "Lykilorðin voru ekki eins."
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR1A.fixedtext.text
+msgid "The document contains document macros signed by:"
+msgstr "Skjalið inniheldur fjölva sem undirritaðir eru af:"
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR1B.fixedtext.text
+msgid "The document contains document macros."
+msgstr "Skjalið inniheldur skjalafjölva."
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_VIEWSIGNS.pushbutton.text
+msgid "View Signatures..."
+msgstr "Skoða undirskriftir..."
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR2.fixedtext.text
+msgid ""
+"Macros may contain viruses. Disabling macros for a document is always safe. "
+"If you disable macros you may lose functionality provided by the document "
+"macros."
+msgstr ""
+"Fjölvar geta innihaldið vírusa. Að afvirkja fjölva í skjölum er alltaf "
+"öruggast. Ef þú afvirkjar fjölva gætirðu misst af einhverri virkni í skjali "
+"sem fjölvar sjá um að framkvæma."
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.CB_ALWAYSTRUST.checkbox.text
+msgid "Always trust macros from this source"
+msgstr "Alltaf að treysta fjölvum frá þessum aðila"
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_ENABLE.okbutton.text
+msgid "~Enable Macros"
+msgstr "~Gera fjölva virka"
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_DISABLE.cancelbutton.text
+msgid "~Disable Macros"
+msgstr "~Gera fjölva óvirka"
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.modaldialog.text
+msgid "%PRODUCTNAME - Security Warning"
+msgstr "%PRODUCTNAME - Öryggisviðvörun"
+
+#: sslwarndlg.src#DLG_UUI_SSLWARN.FT_LABEL_1.fixedtext.text
+msgctxt "sslwarndlg.src#DLG_UUI_SSLWARN.FT_LABEL_1.fixedtext.text"
+msgid "No Text"
+msgstr "Enginn texti"
+
+#: sslwarndlg.src#DLG_UUI_SSLWARN.PB_VIEW__CERTIFICATE.pushbutton.text
+msgid "View Certificate"
+msgstr "Skoða skilríki"
+
+#: sslwarndlg.src#DLG_UUI_SSLWARN.PB_CANCEL.cancelbutton.text
+msgid "Cancel Connection"
+msgstr "Hætta við tengingu"
+
+#: sslwarndlg.src#DLG_UUI_SSLWARN.PB_OK.pushbutton.text
+msgid "Continue"
+msgstr "Áfram"
+
+#: sslwarndlg.src#DLG_UUI_SSLWARN.modaldialog.text
+msgid "Security Warning: "
+msgstr "Öryggisaðvörun: "
+
+#: trylater.src#STR_TRYLATER_TITLE.string.text
+msgctxt "trylater.src#STR_TRYLATER_TITLE.string.text"
+msgid "Document in Use"
+msgstr "Skjal í notkun"
+
+#: trylater.src#STR_TRYLATER_MSG.string.text
+msgid ""
+"Document file '$(ARG1)' is locked for editing by:\n"
+"\n"
+"$(ARG2)\n"
+"\n"
+"Try again later to save document or save a copy of that document.\n"
+"\n"
+msgstr ""
+"Skjalið '$(ARG1)' er læst fyrir breytingum af:\n"
+"\n"
+"$(ARG2)\n"
+"\n"
+"Reyndu seinna að vista skjalið eða vistaðu afrit af þessu skjali.\n"
+"\n"
+
+#: trylater.src#STR_TRYLATER_RETRYSAVING_BTN.string.text
+msgctxt "trylater.src#STR_TRYLATER_RETRYSAVING_BTN.string.text"
+msgid "~Retry Saving"
+msgstr "~Reyna aftur vistun"
+
+#: trylater.src#STR_TRYLATER_SAVEAS_BTN.string.text
+msgid "~Save As..."
+msgstr "~Vista sem..."
+
+#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_VIEW__CERTIFICATE.pushbutton.text
+msgid "Examine Certificate..."
+msgstr "Skoða skilríki..."
+
+#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_HELP.helpbutton.text
+msgid "Help"
+msgstr "Hjálp"
+
+#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_OK.pushbutton.text
+msgid "OK"
+msgstr "Í lagi"
+
+#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.RB_ACCEPT_1.radiobutton.text
+msgid "Accept this certificate temporarily for this session"
+msgstr "Samþykkja þetta skilríki tímabundið fyrir lotu"
+
+#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.RB_DONTACCEPT_2.radiobutton.text
+msgid "Do not accept this certificate and do not connect to this Web site"
+msgstr "Ekki samþykkja þetta skilríki og ekki tengjast vefsvæði"
+
+#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.FT_LABEL_1.fixedtext.text
+msgctxt "unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.FT_LABEL_1.fixedtext.text"
+msgid "No Text"
+msgstr "Enginn texti"
+
+#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.modaldialog.text
+msgid "Website Certified by an Unknown Authority"
+msgstr "Vefsvæði vottað af óþekktri vottunarstöð"

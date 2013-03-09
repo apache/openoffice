@@ -1,0 +1,277 @@
+
+#: crashrep.ulf#_ALLOW_CONTACT_.LngText.text
+msgid "~I allow Oracle to contact me regarding this report."
+msgstr ""
+"Aotren a ran Sun Microsystem da vont e darempred ganin evit forzh peseurt "
+"goulenn a-fet an danevell-mañ."
+
+#: crashrep.ulf#_BACK_BUTTON_.LngText.text
+msgid " << ~Back"
+msgstr " << Kent"
+
+#: crashrep.ulf#_CANCEL_BUTTON_.LngText.text
+msgid "Cancel"
+msgstr "Nullañ"
+
+#: crashrep.ulf#_DONOT_SEND_BUTTON_.LngText.text
+msgid "Do ~Not Send"
+msgstr "Na gas ket"
+
+#: crashrep.ulf#_ENTER_DESCRIPTION_.LngText.text
+msgid "~How were you using %PRODUCTNAME% when the error occurred ?"
+msgstr ""
+"Resisadurioù diwar-benn ar fazi c'hoarvezet e-pad an arver eus %PRODUCTNAME%"
+
+#: crashrep.ulf#_ENTER_EMAIL_.LngText.text
+msgid "Please enter your e-mail address."
+msgstr "Ho chomlec'h postel"
+
+#: crashrep.ulf#_ENTER_TITLE_.LngText.text
+msgid ""
+"Which type of document (e.g. presentation) were you using when the error "
+"occurred?"
+msgstr "Rizh teul (testenn, kinnigadenn, h.a.) war arver da vare ar fazi :"
+
+#: crashrep.ulf#_ERROR_MSG_DISK_FULL_.LngText.text
+msgid ""
+"The error report could not be temporarily saved and could therefore not be "
+"sent."
+msgstr ""
+"N'haller ket kas an danevell fazioù : c'hwitet en deus e enrolladur "
+"padennek."
+
+#: crashrep.ulf#_ERROR_MSG_NOCONNECT_.LngText.text
+msgid ""
+"The error report could not be sent because there is no Internet connection. "
+"Please check your Internet settings."
+msgstr ""
+"N'haller ket kas an danevell fazioù : kennask Internet ebet. Gwiriit an "
+"arventennoù a zo anv anezho."
+
+#: crashrep.ulf#_ERROR_MSG_NOEMAILADDRESS_.LngText.text
+msgid ""
+"You have marked the option 'I allow Oracle to contact me regarding this "
+"report.'\n"
+"Please enter your e-mail address."
+msgstr ""
+"Gweredekaet hoc'h eus an dibarzh 'Reiñ a ran an aotre da Sun Microsystems da "
+"vont e darempred ganin a-fet pep goulenn a-zivout an danevell-mañ.'\n"
+"Trugarez da euvriñ ho chomlec'h postel."
+
+#: crashrep.ulf#_ERROR_MSG_PROXY_.LngText.text
+msgid ""
+"The error report could not be sent. Please check the proxy settings under "
+"'Options' in the Error Report Tool."
+msgstr ""
+"N'haller ket kas an danevell fazioù : gwiriit arventennoù ar Proksi dindan "
+"'Dibarzhioù' er benveg danevellañ fazioù."
+
+#: crashrep.ulf#_ERROR_MSG_SENDMAIL_.LngText.text
+msgid ""
+"The error report could not be sent because 'sendmail' could not be started.\n"
+"Please check the 'sendmail' settings."
+msgstr ""
+"N'haller ket kas an danevell fazioù : c'hwitet en deus loc'hadur 'sendmail'.\n"
+"Gwiriit arventennoù 'sendmail'."
+
+#: crashrep.ulf#_ERROR_MSG_SIMPLE_MAPI_.LngText.text
+msgid ""
+"The error report could not be sent because the default e-mail program does "
+"not support MAPI.\n"
+" Please use a MAPI-compatible e-mail program."
+msgstr ""
+"N'haller ket kas an danevell fazioù : an arval postelerezh dre ziouer ne "
+"skor ket MAPI.\n"
+"Aliañ a reomp deoc'h arverañ un arval postelerezh keverlec'h gant MAPI."
+
+#: crashrep.ulf#_MSG_CMDLINE_USAGE_.LngText.text
+msgid "Usage:"
+msgstr "Arver :"
+
+#: crashrep.ulf#_MSG_PARAM_HELP_DESCRIPTION_.LngText.text
+msgid ""
+"Shows this help text.\n"
+"Detailed information can be found in the Setup Guide."
+msgstr ""
+"Skrammañ an destenn skoazell-mañ.\n"
+"Evit muioc'h a ditouroù, en em zaveit da zornlevr an arveriad."
+
+#: crashrep.ulf#_MSG_PARAM_PROCESSID_.LngText.text
+msgid "-p <process ID>"
+msgstr "p <naoudi araezad>"
+
+#: crashrep.ulf#_MSG_PARAM_PROCESSID_DESCRIPTION_.LngText.text
+msgid "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
+msgstr ""
+"Deverkañ a ra naoudi argerzh (PID) %PRODUCTNAME% ouzh ar benveg danevellañ "
+"fazioù."
+
+#: crashrep.ulf#_NEXT_BUTTON_.LngText.text
+msgid "~Next >>"
+msgstr "War-lerc'h >>"
+
+#: crashrep.ulf#_OK_BUTTON_.LngText.text
+msgid "OK"
+msgstr "Mat eo"
+
+#: crashrep.ulf#_OPTIONS_BUTTON_.LngText.text
+msgid "~Options..."
+msgstr "Dibarzhioù..."
+
+#: crashrep.ulf#_OPTIONS_TITLE_.LngText.text
+msgid "Options"
+msgstr "Dibarzhioù"
+
+#: crashrep.ulf#_PRIVACY_URL_.LngText.text
+msgid "http://www.oracle.com/html/services-privacy-policy.html"
+msgstr "http://fr.sun.com/sun-by-sun/privacy/"
+
+#: crashrep.ulf#_PROXY_SETTINGS_ADDRESS_.LngText.text
+msgid "HT~TP Proxy"
+msgstr "Proxy HTTP"
+
+#: crashrep.ulf#_PROXY_SETTINGS_DESCRIPTION_.LngText.text
+msgid ""
+"The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to "
+"be able to send error reports.\n"
+"\n"
+"Companies often use proxy servers in conjunction with a firewall to protect "
+"the network.\n"
+"\n"
+"If this applies to your situation, you have to specify the address and port "
+"for the server."
+msgstr ""
+"Ret-holl eo ur c'hennask Internet da gas danevelloù fazioù %PRODUCTNAME%.\n"
+"\n"
+"Alies kenañ e vez gwarezet ar rouedadoù gant reizhiadoù o kenarverañ "
+"dafariaded Proksi ha tanvogerioù (fire-wall).\n"
+"\n"
+"Gant pleg ar seurt-se e vez ret deoc'h erspizañ chomlec'h ha porzh an "
+"dafariad."
+
+#: crashrep.ulf#_PROXY_SETTINGS_DIRECT_.LngText.text
+msgid "Use ~direct connection to the Internet"
+msgstr "Arver ur c'hennask Internet eeun"
+
+#: crashrep.ulf#_PROXY_SETTINGS_HEADER_.LngText.text
+msgid "Proxy settings"
+msgstr "Arventennoù ar Proksi"
+
+#: crashrep.ulf#_PROXY_SETTINGS_MANUAL_.LngText.text
+msgid "Use ~manual settings"
+msgstr "Arver an arventennañ dorn"
+
+#: crashrep.ulf#_PROXY_SETTINGS_PORT_.LngText.text
+msgid "~Port"
+msgstr "Porzh"
+
+#: crashrep.ulf#_PROXY_SETTINGS_SYSTEM_.LngText.text
+msgid "Use ~system settings"
+msgstr "Arver arventennoù ar reizhiad"
+
+#: crashrep.ulf#_REPORT_BODY_.LngText.text
+msgid ""
+"The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information "
+"that could help Oracle improve %PRODUCTNAME%.\n"
+"In the spaces below, you can enter a title for your crash report and "
+"describe the action you were trying to carry out when the error occurred. "
+"Then click 'Send'.\n"
+msgstr ""
+"An danevell fazioù eus %PRODUCTNAME% %PRODUCTVERSION% he deus paket stlennoù "
+"hag a c'hallfe skoazellañ Sun Microsystems a-benn arwellaat %PRODUCTNAME%.\n"
+"Gallout a rit menegiñ amañ dindan amkan an danevell hag un toulladig "
+"spisadurioù diwar-benn an troioù ma 'z eo c'hoarvezet ar fazi ganto. Ur wech "
+"graet, klikit war 'Kas'.\n"
+
+#: crashrep.ulf#_REPORT_CAPTION_.LngText.text
+msgctxt "crashrep.ulf#_REPORT_CAPTION_.LngText.text"
+msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "Danevell fazioù eus %PRODUCTNAME% %PRODUCTVERSION%"
+
+#: crashrep.ulf#_REPORT_HEADER_.LngText.text
+msgid "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
+msgstr ""
+"C'hoarvezet ez eus bet ur fazi e-pad erounit %PRODUCTNAME% %PRODUCTVERSION%."
+
+#: crashrep.ulf#_SAVE_REPORT_BUTTON_.LngText.text
+msgid "~Save Report..."
+msgstr "Enrollañ an danevell..."
+
+#: crashrep.ulf#_SAVE_REPORT_TITLE_.LngText.text
+msgid "Save Report to"
+msgstr "Enrollañ an danevell dindan"
+
+#: crashrep.ulf#_SENDING_REPORT_HEADER_.LngText.text
+msgid "Sending Error Report"
+msgstr "Kas an danevell fazioù"
+
+#: crashrep.ulf#_SENDING_REPORT_STATUS_.LngText.text
+msgid "Status: Sending error report"
+msgstr "Stad : Kasadur an danevell fazioù"
+
+#: crashrep.ulf#_SENDING_REPORT_STATUS_FINISHED_.LngText.text
+msgid "Status: The error report has been sent successfully."
+msgstr "Stad : Kasadur an danevell fazioù echu"
+
+#: crashrep.ulf#_SEND_BUTTON_.LngText.text
+msgid "S~end"
+msgstr "Kas"
+
+#: crashrep.ulf#_SHOW_REPORT_BUTTON_.LngText.text
+msgid "Show ~Report..."
+msgstr "Skrammañ an danevell..."
+
+#: crashrep.ulf#_WELCOME_BODY1_.LngText.text
+msgid ""
+"This error report tool gathers information about how %PRODUCTNAME% is "
+"working and sends it to Oracle to help improve future versions.\n"
+"\n"
+msgstr ""
+"Dastumañ a ra ar benveg danevellañ fazioù stlennoù diwar-benn arc'hwelerezh "
+"%PRODUCTNAME ha kas a ra da Sun Microsystems a-benn arwellaat an handelvoù "
+"da zont.\n"
+"\n"
+
+#: crashrep.ulf#_WELCOME_BODY2_.LngText.text
+msgid ""
+"It's easy - just send the report without any further effort on your part by "
+"clicking 'Send' in the next dialog, or you can briefly describe how the "
+"error occurred and then click 'Send'. If you want to see the report, click "
+"the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n"
+"\n"
+msgstr ""
+"N'hoc'h eus ket ezhomm ober tra pe dra : ur c'hlik war 'Kas' er voestad "
+"emziviz da-heul zo a-walc'h. Mar fell deoc'h e c'hallit ouzhpennañ "
+"resisadurioù zo a-fet ar gudenn hoc'h eus kejet outi kent klikañ war 'Kas'. "
+"Da lenn an danevell, klikit war an afell 'Skrammañ an danevell'. Ne vo "
+"treuzkaset roadenn ebet mar bez kliket ganeoc'h war 'Na gas ket'.\n"
+"\n"
+
+#: crashrep.ulf#_WELCOME_BODY3_.LngText.text
+msgid ""
+"Customer Privacy\n"
+"The information gathered is limited to data concerning the state of %"
+"PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information "
+"about passwords or document contents is not collected.\n"
+"\n"
+"The information will only be used to improve the quality of %PRODUCTNAME% "
+"and will not be shared with third parties.\n"
+"For more information on Oracle's privacy policy, visit\n"
+msgstr ""
+"Dangelded\n"
+"Ar stlennoù adpaket a-fet stad %PRODUCTNAME% %PRODUCTVERSION% a sell ouzh ar "
+"fazi c'hoarvezet hepken ; Ezlakaat a ra neuze forzh pe stlennoù all, evel "
+"ar gerioù tremen pe endalc'had an teulioù.\n"
+"\n"
+"Pal nemetañ an atoriñ stlennoù-mañ eo gwellaat %PRODUCTNAME% ; ne vint biken "
+"kehentet d'un tredeour.\n"
+"Evit muioc'h a ditouroù a-fet leviadurezh dangelded Sun Microsystems, lennit\n"
+
+#: crashrep.ulf#_WELCOME_CAPTION_.LngText.text
+msgctxt "crashrep.ulf#_WELCOME_CAPTION_.LngText.text"
+msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "Danevell fazioù eus %PRODUCTNAME% %PRODUCTVERSION%"
+
+#: crashrep.ulf#_WELCOME_HEADER_.LngText.text
+msgid "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "Danevell fazioù eus %PRODUCTNAME% %PRODUCTVERSION% - Degemer mat "

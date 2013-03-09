@@ -1,0 +1,267 @@
+
+#: crashrep.ulf#_WELCOME_CAPTION_.LngText.text
+msgctxt "crashrep.ulf#_WELCOME_CAPTION_.LngText.text"
+msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "%PRODUCTNAME% %PRODUCTVERSION% kļūdu ziņojums"
+
+#: crashrep.ulf#_WELCOME_HEADER_.LngText.text
+msgid "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "Laipni lūgti %PRODUCTNAME% %PRODUCTVERSION% kļūdu ziņotājā"
+
+#: crashrep.ulf#_WELCOME_BODY1_.LngText.text
+msgid ""
+"This error report tool gathers information about how %PRODUCTNAME% is "
+"working and sends it to Oracle to help improve future versions.\n"
+"\n"
+msgstr ""
+"Kļūdu ziņotāja rīks apkopo informāciju par %PRODUCTNAME% darbību un nosūta "
+"to uz Oracle, lai palīdzētu uzlabot nākotnes versijas.\n"
+"\n"
+
+#: crashrep.ulf#_WELCOME_BODY2_.LngText.text
+msgid ""
+"It's easy - just send the report without any further effort on your part by "
+"clicking 'Send' in the next dialog, or you can briefly describe how the "
+"error occurred and then click 'Send'. If you want to see the report, click "
+"the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n"
+"\n"
+msgstr ""
+"Tas ir vienkārši - jūs variet vienkārši nosūtīt ziņojumu neveicot papildus "
+"darbības, vai arī aprakstīt, kā kļūda notika un tad nospiest 'Sūtīt'. Ja "
+"vēlaties redzēt ziņojumu, nospiediet pogu 'Rādīt ziņojumu'. Ja nospiedīsiet "
+"pogu 'Nesūtīt', nekādi dati netiks sūtīti.\n"
+"\n"
+
+#: crashrep.ulf#_WELCOME_BODY3_.LngText.text
+msgid ""
+"Customer Privacy\n"
+"The information gathered is limited to data concerning the state of %"
+"PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information "
+"about passwords or document contents is not collected.\n"
+"\n"
+"The information will only be used to improve the quality of %PRODUCTNAME% "
+"and will not be shared with third parties.\n"
+"For more information on Oracle's privacy policy, visit\n"
+msgstr ""
+"Lietotāja privātums\n"
+"Apkopotā informācija ir ierobežoti dati par %PRODUCTNAME% %PRODUCTVERSION% "
+"statusu kļūdas brīdī. Paroles un citi lietotāja dati netiek apkopoti.\n"
+"\n"
+"Informācija tiks lietota tikai, lai uzlabotu %PRODUCTNAME% %PRODUCTVERSION% "
+"kvalitāti, un tā netiks piedāvāta trešajām personām.\n"
+"Vairāk informācijas par Oracle privātuma politiku lasiet\n"
+
+#: crashrep.ulf#_PRIVACY_URL_.LngText.text
+msgid "http://www.oracle.com/html/services-privacy-policy.html"
+msgstr "http://www.oracle.com/html/services-privacy-policy.html"
+
+#: crashrep.ulf#_NEXT_BUTTON_.LngText.text
+msgid "~Next >>"
+msgstr "~Nākamais >>"
+
+#: crashrep.ulf#_CANCEL_BUTTON_.LngText.text
+msgid "Cancel"
+msgstr "Atsaukt"
+
+#: crashrep.ulf#_OK_BUTTON_.LngText.text
+msgid "OK"
+msgstr "Labi"
+
+#: crashrep.ulf#_REPORT_CAPTION_.LngText.text
+msgctxt "crashrep.ulf#_REPORT_CAPTION_.LngText.text"
+msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "%PRODUCTNAME% %PRODUCTVERSION% kļūdu ziņojums"
+
+#: crashrep.ulf#_REPORT_HEADER_.LngText.text
+msgid "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
+msgstr "Darbinot %PRODUCTNAME% %PRODUCTVERSION%, gadījās kļūda"
+
+#: crashrep.ulf#_REPORT_BODY_.LngText.text
+msgid ""
+"The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information "
+"that could help Oracle improve %PRODUCTNAME%.\n"
+"In the spaces below, you can enter a title for your crash report and "
+"describe the action you were trying to carry out when the error occurred. "
+"Then click 'Send'.\n"
+msgstr ""
+"%PRODUCTNAME% %PRODUCTVERSION% kļūdu ziņotājs ir apkopojis informāciju, kas "
+"palīdzes Oracle uzlabot %PRODUCTNAME%.\n"
+"Zemāk varat norādīt ziņojuma nosaukumu un aprakstīt, kuras darbības "
+"rezultātā kļūme notika. Tad nospiediet 'Sūtīt'.\n"
+
+#: crashrep.ulf#_ENTER_TITLE_.LngText.text
+msgid ""
+"Which type of document (e.g. presentation) were you using when the error "
+"occurred?"
+msgstr ""
+"Kuru dokumenta tipu (piem. prezentācija) jūs lietojāt, kad notika kļūda?"
+
+#: crashrep.ulf#_ALLOW_CONTACT_.LngText.text
+msgid "~I allow Oracle to contact me regarding this report."
+msgstr "~Es atļauju Oracle sazināties ar mani šīs atskaites sakarā."
+
+#: crashrep.ulf#_ENTER_EMAIL_.LngText.text
+msgid "Please enter your e-mail address."
+msgstr "Lūdzu, norādiet savu e-pasta adresi."
+
+#: crashrep.ulf#_ENTER_DESCRIPTION_.LngText.text
+msgid "~How were you using %PRODUCTNAME% when the error occurred ?"
+msgstr "~Ko jūs darījāt ar %PRODUCTNAME%, kad notika kļūda?"
+
+#: crashrep.ulf#_BACK_BUTTON_.LngText.text
+msgid " << ~Back"
+msgstr " << ~Atpakaļ"
+
+#: crashrep.ulf#_SEND_BUTTON_.LngText.text
+msgid "S~end"
+msgstr "N~osūtīt"
+
+#: crashrep.ulf#_DONOT_SEND_BUTTON_.LngText.text
+msgid "Do ~Not Send"
+msgstr "~Nesūtīt"
+
+#: crashrep.ulf#_SHOW_REPORT_BUTTON_.LngText.text
+msgid "Show ~Report..."
+msgstr "~Rādīt ziņojumu..."
+
+#: crashrep.ulf#_SAVE_REPORT_BUTTON_.LngText.text
+msgid "~Save Report..."
+msgstr "~Saglabāt ziņojumu..."
+
+#: crashrep.ulf#_SAVE_REPORT_TITLE_.LngText.text
+msgid "Save Report to"
+msgstr "Saglabāt ziņojumu uz"
+
+#: crashrep.ulf#_ERROR_MSG_SIMPLE_MAPI_.LngText.text
+msgid ""
+"The error report could not be sent because the default e-mail program does "
+"not support MAPI.\n"
+" Please use a MAPI-compatible e-mail program."
+msgstr ""
+"Kļūdu ziņojumu nevar nosūtīt, jo noklusētā e-pasta programma neatbalsta "
+"MAPI.\n"
+" Lūdzu, lietojiet MAPI-savietojamu e-pasta programmu."
+
+#: crashrep.ulf#_ERROR_MSG_DISK_FULL_.LngText.text
+msgid ""
+"The error report could not be temporarily saved and could therefore not be "
+"sent."
+msgstr ""
+"Kļūdas atskaiti nav iespējams saglabāt uz diska, un tamdēļ to nevar nosūtīt."
+
+#: crashrep.ulf#_ERROR_MSG_SENDMAIL_.LngText.text
+msgid ""
+"The error report could not be sent because 'sendmail' could not be started.\n"
+"Please check the 'sendmail' settings."
+msgstr ""
+"Kļūdu ziņojumu nevar nosūtīt, jo nevar palaist 'sendmail'.\n"
+"Lūdzu, pārbaudiet 'sendmail' iestatījumus."
+
+#: crashrep.ulf#_ERROR_MSG_PROXY_.LngText.text
+msgid ""
+"The error report could not be sent. Please check the proxy settings under "
+"'Options' in the Error Report Tool."
+msgstr ""
+"Kļūdas atskaiti nevar nosūtīt. Lūdzu, pārbaudiet starpniekservera (proxy) "
+"iestatījumus kļūdu atskaites ziņotāja 'Opciju' sadaļā."
+
+#: crashrep.ulf#_ERROR_MSG_NOCONNECT_.LngText.text
+msgid ""
+"The error report could not be sent because there is no Internet connection. "
+"Please check your Internet settings."
+msgstr ""
+"Kļūdas atskaiti nevar nosūtīt, jo nav interneta savienojuma. Lūdzu, "
+"pārbaudiet Interneta iestatījumus."
+
+#: crashrep.ulf#_OPTIONS_BUTTON_.LngText.text
+msgid "~Options..."
+msgstr "~Opcijas..."
+
+#: crashrep.ulf#_OPTIONS_TITLE_.LngText.text
+msgid "Options"
+msgstr "Opcijas"
+
+#: crashrep.ulf#_PROXY_SETTINGS_HEADER_.LngText.text
+msgid "Proxy settings"
+msgstr "Starpniekservera (proxy) iestatījumi"
+
+#: crashrep.ulf#_PROXY_SETTINGS_SYSTEM_.LngText.text
+msgid "Use ~system settings"
+msgstr "Lietot ~sistēmas iestatījumus"
+
+#: crashrep.ulf#_PROXY_SETTINGS_DIRECT_.LngText.text
+msgid "Use ~direct connection to the Internet"
+msgstr "Lietot ~tiešo interneta savienojumu"
+
+#: crashrep.ulf#_PROXY_SETTINGS_MANUAL_.LngText.text
+msgid "Use ~manual settings"
+msgstr "Lietot ~pašrocīgus pārlūka iestatījumus"
+
+#: crashrep.ulf#_PROXY_SETTINGS_ADDRESS_.LngText.text
+msgid "HT~TP Proxy"
+msgstr "HT~TP starpniekserveris"
+
+#: crashrep.ulf#_PROXY_SETTINGS_PORT_.LngText.text
+msgid "~Port"
+msgstr "~Ports"
+
+#: crashrep.ulf#_PROXY_SETTINGS_DESCRIPTION_.LngText.text
+msgid ""
+"The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to "
+"be able to send error reports.\n"
+"\n"
+"Companies often use proxy servers in conjunction with a firewall to protect "
+"the network.\n"
+"\n"
+"If this applies to your situation, you have to specify the address and port "
+"for the server."
+msgstr ""
+"%PRODUCTNAME% kļūdas ziņotājam nepieciešams interneta savienojums, lai būtu "
+"iespējama ziņojuma nosūtīšana.\n"
+"\n"
+"Tīkla aizsardzībai kompānijas parasti izmanto starpnieka (proxy) un "
+"ugunsienas serverus.\n"
+"\n"
+"Ja tas atbilst jūsu situācijai, jums jānorāda servera adrese un ports."
+
+#: crashrep.ulf#_SENDING_REPORT_HEADER_.LngText.text
+msgid "Sending Error Report"
+msgstr "Nosūta kļūdas atskaiti"
+
+#: crashrep.ulf#_SENDING_REPORT_STATUS_.LngText.text
+msgid "Status: Sending error report"
+msgstr "Statuss: Sūta kļūdas atskaiti"
+
+#: crashrep.ulf#_SENDING_REPORT_STATUS_FINISHED_.LngText.text
+msgid "Status: The error report has been sent successfully."
+msgstr "Statuss: Kļūdas atskaite veiksmīgi nosūtīta."
+
+#: crashrep.ulf#_ERROR_MSG_NOEMAILADDRESS_.LngText.text
+msgid ""
+"You have marked the option 'I allow Oracle to contact me regarding this "
+"report.'\n"
+"Please enter your e-mail address."
+msgstr ""
+"Jūs izvēlējāties opciju 'Es atļauju Oracle sazināties ar mani šīs atskaites "
+"sakarā'.\n"
+"Lūdzu, norādiet savu e-pasta adresi."
+
+#: crashrep.ulf#_MSG_CMDLINE_USAGE_.LngText.text
+msgid "Usage:"
+msgstr "Lietošana:"
+
+#: crashrep.ulf#_MSG_PARAM_PROCESSID_.LngText.text
+msgid "-p <process ID>"
+msgstr "-p <procesa ID>"
+
+#: crashrep.ulf#_MSG_PARAM_PROCESSID_DESCRIPTION_.LngText.text
+msgid "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
+msgstr "Pievieno %PRODUCTNAME% procesa ID (PID) kļūdas atskaites rīkam"
+
+#: crashrep.ulf#_MSG_PARAM_HELP_DESCRIPTION_.LngText.text
+msgid ""
+"Shows this help text.\n"
+"Detailed information can be found in the Setup Guide."
+msgstr ""
+"Attēlo palīdzības tekstu.\n"
+"Detalizētu informāciju jūs atradīsiet uzstādīšanas rokasgrāmatā."

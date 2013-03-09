@@ -1,0 +1,281 @@
+"X-Accelerator-Marker: ~\n"
+
+#: crashrep.ulf#_ALLOW_CONTACT_.LngText.text
+msgid "~I allow Oracle to contact me regarding this report."
+msgstr ""
+"~Autorizo a Oracle para que me contacte en lo concerniente a este informe."
+
+#: crashrep.ulf#_BACK_BUTTON_.LngText.text
+msgid " << ~Back"
+msgstr "  << ~Regresar"
+
+#: crashrep.ulf#_CANCEL_BUTTON_.LngText.text
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: crashrep.ulf#_DONOT_SEND_BUTTON_.LngText.text
+msgid "Do ~Not Send"
+msgstr "~No enviar"
+
+#: crashrep.ulf#_ENTER_DESCRIPTION_.LngText.text
+msgid "~How were you using %PRODUCTNAME% when the error occurred ?"
+msgstr ""
+"~Describa la tarea que estaba realizando en %PRODUCTNAME% cuando se produjo "
+"el error. "
+
+#: crashrep.ulf#_ENTER_EMAIL_.LngText.text
+msgid "Please enter your e-mail address."
+msgstr "Introduzca su dirección de correo-e."
+
+#: crashrep.ulf#_ENTER_TITLE_.LngText.text
+msgid ""
+"Which type of document (e.g. presentation) were you using when the error "
+"occurred?"
+msgstr ""
+"¿Qué tipo de documento (texto, presentación, etc.) estaba utilizando cuando "
+"se produjo el error?"
+
+#: crashrep.ulf#_ERROR_MSG_DISK_FULL_.LngText.text
+msgid ""
+"The error report could not be temporarily saved and could therefore not be "
+"sent."
+msgstr ""
+"El informe de errores no se pudo guardar temporalmente y por eso no se pudo "
+"enviar."
+
+#: crashrep.ulf#_ERROR_MSG_NOCONNECT_.LngText.text
+msgid ""
+"The error report could not be sent because there is no Internet connection. "
+"Please check your Internet settings."
+msgstr ""
+"El informe de errores no se pudo enviar por no haber conexión a Internet. "
+"Compruebe la configuración de Internet."
+
+#: crashrep.ulf#_ERROR_MSG_NOEMAILADDRESS_.LngText.text
+msgid ""
+"You have marked the option 'I allow Oracle to contact me regarding this "
+"report.'\n"
+"Please enter your e-mail address."
+msgstr ""
+"Ha marcado la opción 'Autorizo a Oracle para que me contacte en lo "
+"concerniente a este informe.'\n"
+"Introduzca su dirección de correo electrónico."
+
+#: crashrep.ulf#_ERROR_MSG_PROXY_.LngText.text
+msgid ""
+"The error report could not be sent. Please check the proxy settings under "
+"'Options' in the Error Report Tool."
+msgstr ""
+"El informe de errores no se pudo enviar. Compruebe la configuración del "
+"proxy en 'Opciones', en el programa de informe de errores. "
+
+#: crashrep.ulf#_ERROR_MSG_SENDMAIL_.LngText.text
+msgid ""
+"The error report could not be sent because 'sendmail' could not be started.\n"
+"Please check the 'sendmail' settings."
+msgstr ""
+"El informe de errores no se pudo enviar porque 'sendmail' no se pudo "
+"iniciar. \n"
+"Compruebe la configuración de 'sendmail'."
+
+#: crashrep.ulf#_ERROR_MSG_SIMPLE_MAPI_.LngText.text
+msgid ""
+"The error report could not be sent because the default e-mail program does "
+"not support MAPI.\n"
+" Please use a MAPI-compatible e-mail program."
+msgstr ""
+"El programa de informes no se pudo enviar porque el programa de mensajería "
+"predeterminado no admite MAPI.\n"
+"Utilice un programa de mensajería compatible con MAPI."
+
+#: crashrep.ulf#_MSG_CMDLINE_USAGE_.LngText.text
+msgid "Usage:"
+msgstr "Uso:"
+
+#: crashrep.ulf#_MSG_PARAM_HELP_DESCRIPTION_.LngText.text
+msgid ""
+"Shows this help text.\n"
+"Detailed information can be found in the Setup Guide."
+msgstr ""
+"Muestra este texto de ayuda.\n"
+"Encontrará información más detallada en el manual de instalación."
+
+#: crashrep.ulf#_MSG_PARAM_PROCESSID_.LngText.text
+msgid "-p <process ID>"
+msgstr "-p <process ID>"
+
+#: crashrep.ulf#_MSG_PARAM_PROCESSID_DESCRIPTION_.LngText.text
+msgid "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
+msgstr ""
+"Asigna el identificador de proceso (PID) de %PRODUCTNAME% al programa de "
+"informe de errores"
+
+#: crashrep.ulf#_NEXT_BUTTON_.LngText.text
+msgid "~Next >>"
+msgstr "~Siguiente >>"
+
+#: crashrep.ulf#_OK_BUTTON_.LngText.text
+msgid "OK"
+msgstr "Aceptar"
+
+#: crashrep.ulf#_OPTIONS_BUTTON_.LngText.text
+msgid "~Options..."
+msgstr "~Opciones..."
+
+#: crashrep.ulf#_OPTIONS_TITLE_.LngText.text
+msgid "Options"
+msgstr "Opciones"
+
+#: crashrep.ulf#_PRIVACY_URL_.LngText.text
+msgid "http://www.oracle.com/html/services-privacy-policy.html"
+msgstr "http://www.oracle.com/html/services-privacy-policy.html"
+
+#: crashrep.ulf#_PROXY_SETTINGS_ADDRESS_.LngText.text
+msgid "HT~TP Proxy"
+msgstr "Proxy HT~TP"
+
+#: crashrep.ulf#_PROXY_SETTINGS_DESCRIPTION_.LngText.text
+msgid ""
+"The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to "
+"be able to send error reports.\n"
+"\n"
+"Companies often use proxy servers in conjunction with a firewall to protect "
+"the network.\n"
+"\n"
+"If this applies to your situation, you have to specify the address and port "
+"for the server."
+msgstr ""
+"El programa de informe de errores de %PRODUCTNAME% debe estar conectado a "
+"Internet para poder enviar los informes.\n"
+"\n"
+"Muchas empresas utilizan a menudo servidores de proxy junto con un "
+"cortafuegos para proteger la red.\n"
+"\n"
+"Si este es su caso, deberá indicar la dirección y el puerto del servidor."
+
+#: crashrep.ulf#_PROXY_SETTINGS_DIRECT_.LngText.text
+msgid "Use ~direct connection to the Internet"
+msgstr "~Utilizar una conexión directa a Internet"
+
+#: crashrep.ulf#_PROXY_SETTINGS_HEADER_.LngText.text
+msgid "Proxy settings"
+msgstr "Configuración de proxy"
+
+#: crashrep.ulf#_PROXY_SETTINGS_MANUAL_.LngText.text
+msgid "Use ~manual settings"
+msgstr "~Utilizar configuración manual"
+
+#: crashrep.ulf#_PROXY_SETTINGS_PORT_.LngText.text
+msgid "~Port"
+msgstr "~Puerto"
+
+#: crashrep.ulf#_PROXY_SETTINGS_SYSTEM_.LngText.text
+msgid "Use ~system settings"
+msgstr "Utilizar la ~configuración del sistema"
+
+#: crashrep.ulf#_REPORT_BODY_.LngText.text
+msgid ""
+"The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information "
+"that could help Oracle improve %PRODUCTNAME%.\n"
+"In the spaces below, you can enter a title for your crash report and "
+"describe the action you were trying to carry out when the error occurred. "
+"Then click 'Send'.\n"
+msgstr ""
+"El informe de errores de %PRODUCTNAME% %PRODUCTVERSION% ha reunido "
+"información que puede ayudar a Oracle a mejorar %PRODUCTNAME%.\n"
+"En los siguientes campos, puede indicar un título para su informe de fallo y "
+"describir las acciones que intentaba llevar a cabo cuando ocurrió el error. "
+"Luego pulse 'Enviar'.\n"
+
+#: crashrep.ulf#_REPORT_CAPTION_.LngText.text
+msgctxt "crashrep.ulf#_REPORT_CAPTION_.LngText.text"
+msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "Informe de errores de %PRODUCTNAME% %PRODUCTVERSION%"
+
+#: crashrep.ulf#_REPORT_HEADER_.LngText.text
+msgid "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
+msgstr ""
+"Se ha producido un error durante la ejecución de %PRODUCTNAME% %"
+"PRODUCTVERSION%"
+
+#: crashrep.ulf#_SAVE_REPORT_BUTTON_.LngText.text
+msgid "~Save Report..."
+msgstr "Guardar ~informe..."
+
+#: crashrep.ulf#_SAVE_REPORT_TITLE_.LngText.text
+msgid "Save Report to"
+msgstr "Guardar informe como"
+
+#: crashrep.ulf#_SENDING_REPORT_HEADER_.LngText.text
+msgid "Sending Error Report"
+msgstr "Envío del informe de errores"
+
+#: crashrep.ulf#_SENDING_REPORT_STATUS_.LngText.text
+msgid "Status: Sending error report"
+msgstr "Estado: envío del informe de errores"
+
+#: crashrep.ulf#_SENDING_REPORT_STATUS_FINISHED_.LngText.text
+msgid "Status: The error report has been sent successfully."
+msgstr "Estado: el informe de errores se ha enviado."
+
+#: crashrep.ulf#_SEND_BUTTON_.LngText.text
+msgid "S~end"
+msgstr "En~viar"
+
+#: crashrep.ulf#_SHOW_REPORT_BUTTON_.LngText.text
+msgid "Show ~Report..."
+msgstr "Mostrar ~informe..."
+
+#: crashrep.ulf#_WELCOME_BODY1_.LngText.text
+msgid ""
+"This error report tool gathers information about how %PRODUCTNAME% is "
+"working and sends it to Oracle to help improve future versions.\n"
+"\n"
+msgstr ""
+"La herramienta de informe de errores reúne información acerca del "
+"funcionamiento de %PRODUCTNAME% y la envía a Oracle para ayudar a mejorar "
+"las próximas versiones.\n"
+"\n"
+
+#: crashrep.ulf#_WELCOME_BODY2_.LngText.text
+msgid ""
+"It's easy - just send the report without any further effort on your part by "
+"clicking 'Send' in the next dialog, or you can briefly describe how the "
+"error occurred and then click 'Send'. If you want to see the report, click "
+"the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n"
+"\n"
+msgstr ""
+"El envío de datos es muy sencillo, basta con pulsar en el siguiente diálogo "
+"el botón 'Enviar'. Para ver el informe, pulse en 'Mostrar informe'. No se "
+"enviará ningún dato si pulsa el botón 'No enviar'.\n"
+"\n"
+" "
+
+#: crashrep.ulf#_WELCOME_BODY3_.LngText.text
+msgid ""
+"Customer Privacy\n"
+"The information gathered is limited to data concerning the state of %"
+"PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information "
+"about passwords or document contents is not collected.\n"
+"\n"
+"The information will only be used to improve the quality of %PRODUCTNAME% "
+"and will not be shared with third parties.\n"
+"For more information on Oracle's privacy policy, visit\n"
+msgstr ""
+"Privacidad del cliente\n"
+"La información reunida se limita a los datos relativos al estado de %"
+"PRODUCTNAME% %PRODUCTVERSION% cuando se produjo el error. No se reúne "
+"ninguna otra información sobre contraseñas ni el contenido del documento.\n"
+"\n"
+"La información se utilizará únicamente para mejorar la calidad de %"
+"PRODUCTNAME% y no se compartirá con terceros.\n"
+"Para más información sobre la política de privacidad de Oracle, visite\n"
+
+#: crashrep.ulf#_WELCOME_CAPTION_.LngText.text
+msgctxt "crashrep.ulf#_WELCOME_CAPTION_.LngText.text"
+msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "Informe de errores de %PRODUCTNAME% %PRODUCTVERSION%"
+
+#: crashrep.ulf#_WELCOME_HEADER_.LngText.text
+msgid "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "Bienvenido al informe de errores de %PRODUCTNAME% %PRODUCTVERSION%"

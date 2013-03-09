@@ -1,0 +1,2780 @@
+
+#: view.src#STR_NODEFPRINTER.string.text
+msgid ""
+"No default printer found.\n"
+"Please choose a printer and try again."
+msgstr ""
+"કોઈ મૂળભૂત પ્રિન્ટર મળ્યું નહી.\n"
+"મહેરબાની કરીને પ્રિન્ટર પસંદ કરો અને ફરીથી પ્રયત્ન કરો."
+
+#: view.src#STR_NOSTARTPRINTER.string.text
+msgid ""
+"Could not start printer.\n"
+"Please check your printer configuration."
+msgstr ""
+"પ્રિન્ટર શરૂ કરી શક્યા નહી.\n"
+"મહેરબાની કરી તમારુ પ્રિન્ટર રૂપરેખાંકન ચકાસો."
+
+#: view.src#STR_PRINTER_NOTAVAIL.string.text
+msgid ""
+"This document has been formatted for the printer $1. The specified printer "
+"is not available. \n"
+"Do you want to use the standard printer $2 ?"
+msgstr ""
+"પ્રિન્ટર $1 માટે દસ્તાવેજનું બંધારણ ઘડાયેલ છે. સ્પષ્ટ કરેલ પ્રિન્ટર ઉપલબ્ધ "
+"નથી. \n"
+"શું તમે પ્રમાણભૂત પ્રિન્ટર $2 વાપરવા માંગો છો ?"
+
+#: view.src#STR_PRINT_OPTIONS.string.text
+msgid "Options..."
+msgstr "વિકલ્પો..."
+
+#: view.src#STR_PRINT_OPTIONS_TITLE.string.text
+msgid "Printer Options"
+msgstr "પ્રિન્ટર વિકલ્પો"
+
+#: view.src#STR_ERROR_PRINTER_BUSY.string.text
+msgid "Printer busy"
+msgstr "પ્રિન્ટર વ્યસ્ત છે"
+
+#: view.src#STR_ERROR_PRINT.string.text
+msgid "Error while printing"
+msgstr "છાપતી વખતે ક્ષતિ આવી"
+
+#: view.src#STR_PRINTING.string.text
+msgid "Printing"
+msgstr "છાપી રહ્યા છીએ"
+
+#: view.src#STR_PAGE.string.text
+msgid "Page "
+msgstr "પાનું "
+
+#: view.src#STR_ERROR_SAVE_TEMPLATE.string.text
+msgid "Error saving template "
+msgstr "ટેમ્પલેટનો સંગ્રહ કરવામાં ક્ષતિ"
+
+#: view.src#STR_READONLY.string.text
+msgid " (read-only)"
+msgstr " (ફક્ત વાંચી શકાય તેવુ)"
+
+#: view.src#STR_PRINT_NEWORI.string.text
+msgctxt "view.src#STR_PRINT_NEWORI.string.text"
+msgid ""
+"The page size and orientation have been modified.\n"
+"Would you like to save the new settings in the\n"
+"active document?"
+msgstr ""
+"પાનાં માપ અને દિશા બદલાઇ ગયેલ છે.\n"
+"શું તમે સક્રિય દસ્તાવેજમાં નવા સુયોજનો સંગ્રહ કરવા\n"
+"માંગો છો?"
+
+#: view.src#STR_PRINT_NEWSIZE.string.text
+msgid ""
+"The page size has been modified.\n"
+"Should the new settings be saved\n"
+"in the active document?"
+msgstr ""
+"પાનાં માપ બદલાઇ ગયેલ છે.\n"
+"શું નવા સુયોજનો સક્રિય દસ્તાવેજમાં\n"
+"સંગ્રહાવા જોઈએ?"
+
+#: view.src#STR_PRINT_NEWORISIZE.string.text
+msgctxt "view.src#STR_PRINT_NEWORISIZE.string.text"
+msgid ""
+"The page size and orientation have been modified.\n"
+"Would you like to save the new settings in the\n"
+"active document?"
+msgstr ""
+"પાનાં માપ અને દિશા બદલાઇ ગયેલ છે.\n"
+"શું તમે સક્રિય દસ્તાવેજમાં નવા સુયોજનો સંગ્રહ કરવા\n"
+"માંગો છો?"
+
+#: view.src#STR_PREVIEW_DOCINFO.string.text
+msgid ""
+"<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$("
+"TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt>"
+"<b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
+msgstr ""
+"<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>શીર્ષક:</b><dd>$"
+"(TITEL)<dt><b>વિષય:</b><dd>$(THEME)<dt><b>મુખ્ય શબ્દો:</b><dd>$(KEYWORDS)<dt"
+"><b>વર્ણન:</b><dd>$(TEXT)</dl></font></body></html>"
+
+#: view.src#STR_PREVIEW_NODOCINFO.string.text
+msgid ""
+"<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document "
+"properties found.</B></FONT></P></BODY></HTML>"
+msgstr ""
+"<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>કોઈ દસ્તાવેજ "
+"ગુણધર્મો મળ્યા નથી.</B></FONT></P></BODY></HTML>"
+
+#: view.src#MSG_CANT_CLOSE.infobox.text
+msgid ""
+"The document cannot be closed because a\n"
+" print job is being carried out."
+msgstr ""
+"દસ્તાવેજને બંધ કરી શકાતો નથી કારણ કે\n"
+" છાપન ક્રિયા લેવામાં આવેલ છે."
+
+#: view.src#DLG_PRINTMONITOR_TEXT.#define.text
+msgid "Print Monitor"
+msgstr "છાપવાનુ મોનિટર"
+
+#: view.src#DLG_PRINTMONITOR.FT_PRINTING.fixedtext.text
+msgid "is being printed on"
+msgstr "પર છપાઈ રહ્યુ છે"
+
+#: view.src#DLG_PRINTMONITOR.STR_FT_PREPARATION.string.text
+msgid "is being prepared for printing"
+msgstr "છાપવા માટે તૈયાર કરી દેવામાં આવ્યુ છે"
+
+#: view.src#MSG_ERROR_SEND_MAIL.infobox.text
+msgid ""
+"An error occurred in sending the message. Possible errors could be a missing "
+"user account or a defective setup.\n"
+"Please check the %PRODUCTNAME settings or your e-mail program settings."
+msgstr ""
+"સંદેશો મોકલવામાં ક્ષતિ ઉદ્ભવી. શક્ય ક્ષતિઓ ગુમ થયેલ વપરાશકર્તા ખાતું અથવા "
+"બગડેલ સુયોજન હોઈ શકે.\n"
+"મહેરબાની કરીને %PRODUCTNAME સુયોજનો અથવા તમારા ઈ-મેઈલ કાર્યક્રમનાં સુયોજનો "
+"ચકાસો."
+
+#: view.src#MSG_QUERY_OPENASTEMPLATE.querybox.text
+msgid ""
+"This document cannot be edited, possibly due to missing access rights. Do "
+"you want to edit a copy of the document?"
+msgstr ""
+"આ દસ્તાવેજમાં બદલાવ કરી શકાતા નથી, કદાચ તેને પ્રાપ્ત કરવા માટે જરુરી અધિકારો "
+"નહિ હોય. શું તમે દસ્તાવેજની નકલમાં બદલાવ કરવા માગો છો?"
+
+#: view.src#STR_REPAIREDDOCUMENT.string.text
+msgid " (repaired document)"
+msgstr " (સુધારેલ દસ્તાવેજ)"
+
+#: view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.errorbox.text
+msgid ""
+"%PRODUCTNAME could not find a web browser on your system. Please check your "
+"Desktop Preferences or install a web browser (for example, Mozilla) in the "
+"default  location requested during the browser installation."
+msgstr ""
+"%PRODUCTNAME તમારી સિસ્ટમમાં વેબ બ્રાઉઝર શોધી શક્યું નહી. મહેરબાની કરી તમારી "
+"ડેસ્કટોપ પ્રાથમિકતાઓ ચકાસો અથવા સ્થાપન દરમિયાન બ્રાઉઝરે સૂચવેલ મૂળભૂત "
+"જગ્યાએ વેબ બ્રાઉઝર (દા.ત. મોઝિલ્લા) સ્થાપિત કરો."
+
+#: menu.src#STR_MENU_CFGITEM.string.text
+msgid "Configuration Menu"
+msgstr "રૂપરેખાંકન મેનુ"
+
+#: menu.src#STR_MENU_ADDONS.string.text
+msgid "~Add-Ons"
+msgstr "ઊમેરાઓ (~A)"
+
+#: menu.src#MN_CLIPBOARDFUNCS.SID_CUT.menuitem.text
+msgid "Cu~t"
+msgstr "કાપો (~t)"
+
+#: menu.src#MN_CLIPBOARDFUNCS.SID_COPY.menuitem.text
+msgid "~Copy"
+msgstr "નકલ કરો (~C)"
+
+#: menu.src#MN_CLIPBOARDFUNCS.SID_PASTE.menuitem.text
+msgid "~Paste"
+msgstr "ચોંટાડો (~P)"
+
+#: menu.src#SID_WIN_FULLSCREEN.string.text
+msgid "Leave Full-Screen Mode"
+msgstr "આખી-સ્ક્રીનની સ્થિતિ રહેવા દો"
+
+#: menu.src#STR_MENU_ADDONHELP.string.text
+msgid "Add-~On Help"
+msgstr "વધારાની મદદ (~O)"
+
+#: menu.src#STR_MENU_SYNONYMS.string.text
+msgid "Synonyms"
+msgstr "પર્યાય"
+
+#: menu.src#STR_MENU_NO_SYNONYM_FOUND.string.text
+msgid "(none)"
+msgstr "(કઇ નહિં)"
+
+#: menu.src#STR_MENU_THESAURUS.string.text
+msgid "~Thesaurus..."
+msgstr "માહિતીનો ભંડાર (~T)..."
+
+#: fltfnc.src#STR_FILTER_NOT_INSTALLED.string.text
+msgid ""
+"The selected filter $(FILTER) has not been installed.\n"
+"Would you like to do this now?"
+msgstr ""
+"પસંદ કરેલ ગાળક $(FILTER) સ્થાપિત થયેલ નથી.\n"
+"શું તમે આવું હમણાં કરવા માંગો છો?"
+
+#: fltfnc.src#STR_FILTER_CONSULT_SERVICE.string.text
+msgid ""
+"The selected filter $(FILTER) is not included in your edition.\n"
+"You can find information about orders on our homepage."
+msgstr ""
+"પસંદ કરેલ ગાળક $(FILTER) તમારા સંપાદનમાં સમાવાયેલ નથી.\n"
+"તમે ઓર્ડરો વિશેની જાણકારી તમારા ઘરપાનાં પર મેળવી શકો છો."
+"X-Accelerator-Marker: ~\n"
+
+#: app.src#STR_NONAME.string.text
+msgid "Untitled"
+msgstr "શીર્ષક વગરનું"
+
+#: app.src#STR_CLOSE.string.text
+msgid "Close"
+msgstr "બંધ કરો"
+
+#: app.src#STR_STYLE_FILTER_AUTO.string.text
+msgid "Automatic"
+msgstr "આપમેળે"
+
+#: app.src#STR_STANDARD_SHORTCUT.string.text
+#, fuzzy
+msgctxt "app.src#STR_STANDARD_SHORTCUT.string.text"
+msgid "Standard"
+msgstr "પ્રમાણભૂત"
+
+#: app.src#STR_BYTES.string.text
+msgid "Bytes"
+msgstr "બાઈટો"
+
+#: app.src#STR_KB.string.text
+msgid "KB"
+msgstr "કેબી"
+
+#: app.src#STR_MB.string.text
+msgid "MB"
+msgstr "એમબી"
+
+#: app.src#STR_GB.string.text
+msgid "GB"
+msgstr "જીબી"
+
+#: app.src#MSG_QUERY_LASTVERSION.querybox.text
+msgid "Cancel all changes?"
+msgstr "બધા બદલાવો રદ કરશો?"
+
+#: app.src#RID_DOCALREADYLOADED_DLG.infobox.text
+msgid "Document already open."
+msgstr "દસ્તાવેજ પહેલેથી ખૂલ્લો છે."
+
+#: app.src#MSG_ERR_NO_WEBBROWSER_FOUND.errorbox.text
+msgid ""
+"%PRODUCTNAME could not find a web browser on your system. Please check your "
+"Desktop Preferences or install a web browser (for example, Mozilla) in the "
+"default  location requested during the browser installation."
+msgstr ""
+"%PRODUCTNAME તમારી સિસ્ટમ પર વેબ બ્રાઉઝર શોધી શક્યું નહી. મહેરબાની કરીને "
+"તમારી ડેસ્કટોપ પસંદગીઓ ચકાસો અથવા વેબ બ્રાઉઝર (ઉદાહરણ તરીકે, મોઝિલ્લા) ને "
+"મૂળભુત સ્થાને સ્થાપિત કરો જેની બ્રાઉઝર સ્થાપન દરમ્યાન વિનંતી થયેલ છે."
+
+#: app.src#GID_INTERN.string.text
+msgid "Internal"
+msgstr "આંતરિક"
+
+#: app.src#GID_APPLICATION.string.text
+msgid "Application"
+msgstr "કાર્યક્રમ"
+
+#: app.src#GID_VIEW.string.text
+msgid "View"
+msgstr "જુઓ"
+
+#: app.src#GID_DOCUMENT.string.text
+msgid "Documents"
+msgstr "દસ્તાવેજો"
+
+#: app.src#GID_EDIT.string.text
+msgid "Edit"
+msgstr "ફેરફાર"
+
+#: app.src#GID_MACRO.string.text
+msgid "BASIC"
+msgstr "BASIC"
+
+#: app.src#GID_OPTIONS.string.text
+#, fuzzy
+msgid "Options"
+msgstr "વિકલ્પો"
+
+#: app.src#GID_MATH.string.text
+msgid "Math"
+msgstr "ગણિત"
+
+#: app.src#GID_NAVIGATOR.string.text
+msgid "Navigate"
+msgstr "શોધખોળ"
+
+#: app.src#GID_INSERT.string.text
+msgid "Insert"
+msgstr "ઉમેરો"
+
+#: app.src#GID_FORMAT.string.text
+msgid "Format"
+msgstr "બંધારણ"
+
+#: app.src#GID_TEMPLATE.string.text
+#, fuzzy
+msgid "Templates"
+msgstr "ટેમ્પલેટ્સ"
+
+#: app.src#GID_TEXT.string.text
+msgid "Text"
+msgstr "લખાણ"
+
+#: app.src#GID_FRAME.string.text
+msgid "Frame"
+msgstr "ચોકઠું"
+
+#: app.src#GID_GRAPHIC.string.text
+msgctxt "app.src#GID_GRAPHIC.string.text"
+msgid "Graphic"
+msgstr "ગ્રાફિક"
+
+#: app.src#GID_TABLE.string.text
+msgid "Table"
+msgstr "કોષ્ટક"
+
+#: app.src#GID_ENUMERATION.string.text
+msgid "Numbering"
+msgstr "ક્રમ આપવો"
+
+#: app.src#GID_DATA.string.text
+msgid "Data"
+msgstr "માહિતી"
+
+#: app.src#GID_SPECIAL.string.text
+msgid "Special Functions"
+msgstr "વિશિષ્ટ વિધેયો"
+
+#: app.src#GID_IMAGE.string.text
+msgid "Image"
+msgstr "ચિત્ર"
+
+#: app.src#GID_CHART.string.text
+msgid "Chart"
+msgstr "આલેખ"
+
+#: app.src#GID_EXPLORER.string.text
+msgid "Explorer"
+msgstr "શોધક"
+
+#: app.src#GID_CONNECTOR.string.text
+msgid "Connector"
+msgstr "સાંકળનાર"
+
+#: app.src#GID_MODIFY.string.text
+msgid "Modify"
+msgstr "સુધારો"
+
+#: app.src#GID_DRAWING.string.text
+msgid "Drawing"
+msgstr "ચિત્રકામ"
+
+#: app.src#GID_CONTROLS.string.text
+msgid "Controls"
+msgstr "નિયંત્રણો"
+
+#: app.src#MSG_CANT_QUIT.infobox.text
+msgid ""
+"The application cannot be terminated at the moment.\n"
+"Please wait until all print jobs and/or\n"
+"OLE actions have finished and close all dialogs."
+msgstr ""
+"આ ક્ષણે કાર્યક્રમ બંધ કરી શકાતો નથી.\n"
+"મહેરબાની કરીને જ્યાં સુધી છાપન ક્રિયાઓ અને/અથવા OLE ક્રિયાઓ\n"
+"સમાપ્ત થાય ત્યાં સુધી રાહ જુઓ અને બધા સંવાદો બંધ કરો."
+
+#: app.src#STR_ISMODIFIED.string.text
+msgid "Do you want to save the changes to %1?"
+msgstr "શું તમે %1 માં કરેલ ફેરફારો સંગ્રહ કરવા માગો છો?"
+
+#: app.src#STR_QUITAPP.string.text
+msgid "E~xit"
+msgstr "બહાર નીકળો (~x)"
+
+#: app.src#RID_STR_HELP.string.text
+#, fuzzy
+msgid "Help"
+msgstr "મદદ"
+
+#: app.src#RID_STR_NOAUTOSTARTHELPAGENT.string.text
+msgid "No automatic start at 'XX'"
+msgstr "'XX' આગળ આપમેળે શરુ કરી શકાતુ નથી"
+
+#: app.src#RID_HELPBAR.string.text
+msgid "Help Bar"
+msgstr "મદદ પટ્ટી"
+
+#: app.src#RID_STR_HLPFILENOTEXIST.string.text
+msgid "The help file for this topic is not installed."
+msgstr "આ મુદ્દા માટે મદદ ફાઇલ સ્થાપિત નથી."
+
+#: app.src#RID_ENVTOOLBOX.string.text
+msgid "Function Bar"
+msgstr "વિધેય પટ્ટી"
+
+#: app.src#RID_SPECIALCONFIG_ERROR.string.text
+msgid ""
+"An error has occurred in the special configuration.\n"
+"Please contact your administrator."
+msgstr ""
+"વિશિષ્ટ રૂપરેખાંકનમાં ભૂલ ઉદ્ભવી હતી.\n"
+"મહેરબાની કરીને તમારા સંચાલકનો સંપર્ક કરો."
+
+#: app.src#STR_QUICKSTART_EXIT.string.text
+msgid "Exit Quickstarter"
+msgstr "ઝડપી શરુ કરનારથી બહાર"
+
+#: app.src#STR_QUICKSTART_TIP.string.text
+msgid "%PRODUCTNAME %PRODUCTVERSION Quickstarter"
+msgstr "%PRODUCTNAME %PRODUCTVERSION ઝડપી શરુ કરનાર"
+
+#: app.src#STR_QUICKSTART_FILEOPEN.string.text
+msgid "Open Document..."
+msgstr "દસ્તાવેજ ખોલો..."
+
+#: app.src#STR_QUICKSTART_FROMTEMPLATE.string.text
+msgid "From Template..."
+msgstr "ટેમ્પલેટ માંથી..."
+
+#: app.src#STR_QUICKSTART_PRELAUNCH.string.text
+msgid "Load %PRODUCTNAME During System Start-Up"
+msgstr "સિસ્ટમ શરુ થતી હોય ત્યારે %PRODUCTNAME લાવો"
+
+#: app.src#STR_QUICKSTART_PRELAUNCH_UNX.string.text
+msgid "Disable systray Quickstarter"
+msgstr "સિસટ્રે ઝડપી શરુ કરનાર નિષ્ક્રીય કરો"
+
+#: app.src#STR_QUICKSTART_LNKNAME.string.text
+msgid "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
+
+#: app.src#STR_QUICKSTART_FILE.string.text
+msgid "File"
+msgstr "ફાઇલ"
+
+#: app.src#STR_QUICKSTART_STARTCENTER.string.text
+msgid "Startcenter"
+msgstr "કેન્દ્રને શરૂ કરો"
+
+#: app.src#STR_QUICKSTART_RECENTDOC.string.text
+msgid "Recent Documents"
+msgstr "તાજેતરનાં દસ્તાવેજો"
+
+#: app.src#STR_QUERY_UPDATE_LINKS.string.text
+msgid "Update all links?"
+msgstr "બધી કડીઓ સુધારશો?"
+
+#: app.src#STR_DDE_ERROR.string.text
+msgid "DDE link to % for % area % are not available."
+msgstr "% વિસ્તારની % માટેની % ની DDE કડી ઉપલબ્ધ નથી."
+
+#: app.src#RID_SECURITY_WARNING_HYPERLINK.warningbox.text
+msgid "This hyperlink is going to open \"%s\". Do you want to proceed?"
+msgstr "આ હાઇપરલિંક \"%s\" ને શરુ કરશે. શું તમે આગળ વધવા માગો છો?"
+
+#: app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.warningbox.text
+msgid ""
+"For security reasons, the hyperlink cannot be executed.\n"
+"The stated address will not be opened."
+msgstr ""
+"સુરક્ષા કારણોસર, હાયપરલિંક ચલાવી શકાતી નથી.\n"
+"આપવામાં આવેલ સરનામું ખૂલશે નહિં."
+
+#: app.src#RID_SECURITY_WARNING_TITLE.string.text
+msgid "Security Warning"
+msgstr "સુરક્ષા ચેતવણી"
+
+#: app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.querybox.text
+msgid ""
+"Saving will remove all existing signatures.\n"
+"Do you want to continue saving the document?"
+msgstr ""
+"સંગ્રહ કરતાં હાલની બધી સહીઓ દૂર થઇ જશે.\n"
+"તમે તમારો દસ્તાવેજ સંગ્રહ કરવાનું ચાલુ રાખવા માંગો છો?"
+
+#: app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.querybox.text
+msgid ""
+"The document has to be saved before it can be signed.\n"
+"Do you want to save the document?"
+msgstr ""
+"દસ્તાવેજ સહી કરી શકાય તે પહેલાં સંગ્રહાયેલ હોવો જોઈએ.\n"
+"શું તમે દસ્તાવેજ સંગ્રહવા માંગો છો?"
+
+#: app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.infobox.text
+msgid ""
+"This document must be saved in OpenDocument file format before it can be "
+"digitally signed."
+msgstr ""
+"આ દસ્તાવેજ તેને ડિજીટલપણે સહી કરી શકાય તે પહેલાં ઓપનદસ્તાવેજ ફાઈલ બંધારણમાં "
+"જ સંગ્રહાવું જોઈએ."
+
+#: app.src#RID_XMLSEC_DOCUMENTSIGNED.string.text
+msgid " (Signed)"
+msgstr " (સહી થયેલ)"
+
+#: app.src#STR_STANDARD.string.text
+#, fuzzy
+msgctxt "app.src#STR_STANDARD.string.text"
+msgid "Standard"
+msgstr "પ્રમાણભૂત"
+
+#: app.src#RID_SVXSTR_FILELINK.string.text
+msgid "Document"
+msgstr "દસ્તાવેજ"
+
+#: app.src#STR_NONE.string.text
+msgid "- None -"
+msgstr "- કંઇ નહી -"
+
+#: app.src#RID_SVXSTR_GRAFIKLINK.string.text
+msgctxt "app.src#RID_SVXSTR_GRAFIKLINK.string.text"
+msgid "Graphic"
+msgstr "ગ્રાફિક"
+
+#: app.src#STR_SFX_FILTERNAME_ALL.string.text
+msgid "All files (*.*)"
+msgstr "બધી ફાઇલો (*.*)"
+
+#: app.src#RID_SVXSTR_EDITGRFLINK.string.text
+msgid "Link graphics"
+msgstr "ગ્રાફિક્સની કડી કરો"
+
+#: app.src#STR_ERRUNOEVENTBINDUNG.string.text
+msgid ""
+"An appropriate component method %1\n"
+"could not be found.\n"
+"\n"
+"Check spelling of method name."
+msgstr ""
+"યોગ્ય ભાગરૂપ રીત %1\n"
+"મળી નહી.\n"
+"\n"
+"રીત નામની જોડણી ચકાસો."
+
+#: app.src#RID_SVXSTR_GRFILTER_OPENERROR.string.text
+msgid "Graphics file cannot be opened"
+msgstr "ગ્રાફિક્સ ફાઇલને ખોલી શકાતી નથી"
+
+#: app.src#RID_SVXSTR_GRFILTER_IOERROR.string.text
+msgid "Graphics file cannot be read"
+msgstr "ગ્રાફિક્સ ફાઇલને વાંચી શકાતી નથી"
+
+#: app.src#RID_SVXSTR_GRFILTER_FORMATERROR.string.text
+msgid "Unknown graphics format"
+msgstr "અજ્ઞાત ગ્રાફિક્સ બંધારણ"
+
+#: app.src#RID_SVXSTR_GRFILTER_VERSIONERROR.string.text
+msgid "This version of the graphics file is not supported"
+msgstr "ગ્રાફિક્સ ફાઇલનું આ બંધારણ આધારભૂત નથી"
+
+#: app.src#RID_SVXSTR_GRFILTER_FILTERERROR.string.text
+msgid "Graphics filter not found"
+msgstr "ગ્રાફિક્સ ગાળક મળ્યુ નહિં"
+
+#: app.src#RID_SVXSTR_GRFILTER_TOOBIG.string.text
+msgid "Not enough memory to insert graphic"
+msgstr "ગ્રાફિકને દાખલ કરવા માટે પૂરતી મેમરી નથી"
+
+#: dde.src#MD_DDE_LINKEDIT.FT_DDE_APP.fixedtext.text
+msgid "~Application:"
+msgstr "કાર્યક્રમ (~A):"
+
+#: dde.src#MD_DDE_LINKEDIT.FT_DDE_TOPIC.fixedtext.text
+msgid "~File:"
+msgstr "ફાઇલ (~F):"
+
+#: dde.src#MD_DDE_LINKEDIT.FT_DDE_ITEM.fixedtext.text
+msgid "~Category:"
+msgstr "વર્ગ (~C):"
+
+#: dde.src#MD_DDE_LINKEDIT.GROUP_DDE_CHG.fixedline.text
+msgid "Modify link"
+msgstr "કડી સુધારો"
+
+#: dde.src#MD_DDE_LINKEDIT.modaldialog.text
+msgid "Modify Link"
+msgstr "કડી સુધારો"
+
+#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_CONTENTS.pageitem.text
+msgid "Contents"
+msgstr "સમાવિષ્ટો"
+
+#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_INDEX.pageitem.text
+msgid "Index"
+msgstr "અનુક્રમણિકા"
+
+#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_SEARCH.pageitem.text
+msgid "Find"
+msgstr "શોધો"
+
+#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_BOOKMARKS.pageitem.text
+msgid "Bookmarks"
+msgstr "બુકમાર્કો"
+
+#: newhelp.src#TP_HELP_INDEX.FT_EXPRESSION.fixedtext.text
+msgid "~Search term"
+msgstr "પદ શોધો (~S)"
+
+#: newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.pushbutton.text
+msgctxt "newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.pushbutton.text"
+msgid "~Display"
+msgstr "દેખાવ (~D)"
+
+#: newhelp.src#TP_HELP_SEARCH.FT_SEARCH.fixedtext.text
+msgid "S~earch term"
+msgstr "પદ શોધો (~e)"
+
+#: newhelp.src#TP_HELP_SEARCH.PB_SEARCH.pushbutton.text
+msgid "~Find"
+msgstr "શોધો (~F)"
+
+#: newhelp.src#TP_HELP_SEARCH.CB_FULLWORDS.checkbox.text
+msgid "~Complete words only"
+msgstr "ફક્ત સંપૂર્ણ શબ્દો (~C)"
+
+#: newhelp.src#TP_HELP_SEARCH.CB_SCOPE.checkbox.text
+msgid "Find in ~headings only"
+msgstr "ફક્ત શીર્ષકમાં શોધો (~h)"
+
+#: newhelp.src#TP_HELP_SEARCH.PB_OPEN_SEARCH.pushbutton.text
+msgctxt "newhelp.src#TP_HELP_SEARCH.PB_OPEN_SEARCH.pushbutton.text"
+msgid "~Display"
+msgstr "દેખાવ (~D)"
+
+#: newhelp.src#TP_HELP_BOOKMARKS.FT_BOOKMARKS.fixedtext.text
+msgid "~Bookmarks"
+msgstr "બુકમાર્કો (~B)"
+
+#: newhelp.src#TP_HELP_BOOKMARKS.PB_BOOKMARKS.pushbutton.text
+msgctxt "newhelp.src#TP_HELP_BOOKMARKS.PB_BOOKMARKS.pushbutton.text"
+msgid "~Display"
+msgstr "દેખાવ (~D)"
+
+#: newhelp.src#STR_HELP_WINDOW_TITLE.string.text
+msgid "%PRODUCTNAME Help"
+msgstr "%PRODUCTNAME મદદ"
+
+#: newhelp.src#STR_HELP_BUTTON_INDEX_ON.string.text
+msgid "Show Navigation Pane"
+msgstr "શોધખોળની તકતી દર્શાવો"
+
+#: newhelp.src#STR_HELP_BUTTON_INDEX_OFF.string.text
+msgid "Hide Navigation Pane"
+msgstr "શોધખોળની તકતી સંતાડો"
+
+#: newhelp.src#STR_HELP_BUTTON_START.string.text
+msgid "First Page"
+msgstr "પહેલુ પાનું"
+
+#: newhelp.src#STR_HELP_BUTTON_PREV.string.text
+msgid "Previous Page"
+msgstr "પહેલાનું પાનું"
+
+#: newhelp.src#STR_HELP_BUTTON_NEXT.string.text
+msgid "Next Page"
+msgstr "પછીનું પાનું"
+
+#: newhelp.src#STR_HELP_BUTTON_PRINT.string.text
+msgid "Print..."
+msgstr "છાપો..."
+
+#: newhelp.src#STR_HELP_BUTTON_ADDBOOKMARK.string.text
+msgid "Add to Bookmarks..."
+msgstr "બુકમાર્કોમાં ઉમેરો..."
+
+#: newhelp.src#STR_HELP_BUTTON_SEARCHDIALOG.string.text
+msgid "Find on this Page..."
+msgstr "આ પાનાં પર શોધો..."
+
+#: newhelp.src#STR_HELP_BUTTON_SOURCEVIEW.string.text
+msgid "HTML Source"
+msgstr "HTML સ્ત્રોત"
+
+#: newhelp.src#STR_HELP_FIRST_MESSAGE.string.text
+msgid "The Help is being started..."
+msgstr "મદદ શરુ કરવામાં આવે છે..."
+
+#: newhelp.src#STR_HELP_MENU_TEXT_SELECTION_MODE.string.text
+msgid "Select Text"
+msgstr "લખાણ પસંદ કરો"
+
+#: newhelp.src#STR_HELP_MENU_TEXT_COPY.string.text
+msgid "~Copy"
+msgstr "નકલ (~C)"
+
+#: newhelp.src#DLG_HELP_ADDBOOKMARK.FT_BOOKMARK_TITLE.fixedtext.text
+msgid "Bookmark:"
+msgstr "બુકમાર્ક:"
+
+#: newhelp.src#DLG_HELP_ADDBOOKMARK.STR_BOOKMARK_RENAME.string.text
+msgid "Rename Bookmark"
+msgstr "બુકમાર્કનું નામ બદલો"
+
+#: newhelp.src#DLG_HELP_ADDBOOKMARK.modaldialog.text
+msgid "Add to Bookmarks"
+msgstr "બુકમાર્કોમાં ઉમેરો"
+
+#: newhelp.src#MENU_HELP_BOOKMARKS.MID_OPEN.menuitem.text
+msgid "Display"
+msgstr "દેખાવ"
+
+#: newhelp.src#MENU_HELP_BOOKMARKS.MID_RENAME.menuitem.text
+msgid "Rename..."
+msgstr "નામ બદલો..."
+
+#: newhelp.src#MENU_HELP_BOOKMARKS.MID_DELETE.menuitem.text
+msgid "Delete"
+msgstr "દૂર કરો"
+
+#: newhelp.src#RID_INFO_NOSEARCHRESULTS.infobox.text
+msgid "No topics found."
+msgstr "કોઇ મુદ્દાઓ મળ્યા નહી."
+
+#: newhelp.src#RID_INFO_NOSEARCHTEXTFOUND.infobox.text
+msgid "The text you entered was not found."
+msgstr "તમે દાખલ કરેલ લખાણ મળ્યું ન હતું."
+
+#: newhelp.src#RID_HELP_ONSTARTUP_TEXT.string.text
+msgid "~Display %PRODUCTNAME %MODULENAME Help at Startup"
+msgstr "શરૂઆત કરવા પર %PRODUCTNAME %MODULENAME મદદ દર્શાવો (~D)"
+
+#: sfx.src#STR_ACCTITLE_PRODUCTIVITYTOOLS.string.text
+msgid "%PRODUCTNAME"
+msgstr ""
+
+#~ msgid "Applied Styles"
+#~ msgstr "શૈલીઓ લાગુ પાડો"
+
+#~ msgid "Custom Styles"
+#~ msgstr "વૈવિધ્યપૂર્ણ શૈલીઓ"
+
+#~ msgid "All Styles"
+#~ msgstr "બધી શૈલીઓ"
+
+#~ msgid "Cannot open document."
+#~ msgstr "દસ્તાવેજ ખોલી શકાતો નથી."
+
+#~ msgid "Error reading configuration file."
+#~ msgstr "રુપરેખાંકન ફાઇલ વાંચવામાં ભૂલ."
+
+#~ msgid "Error writing configuration file."
+#~ msgstr "રુપરેખાંકન ફાઇલમાં લખવામાં ભૂલ."
+
+#~ msgid "Error opening configuration file."
+#~ msgstr "રુપરેખાંકન ફાઇલ ખોલવામાં ભૂલ."
+
+#~ msgid "File is not a configuration file."
+#~ msgstr "ફાઇલ એ રુપરેખાંકન ફાઇલ નથી."
+
+#~ msgid "Configuration file contains the wrong version."
+#~ msgstr "રુપરેખાંકન ફાઇલ ખોટી આવૃત્તિ ધરાવે છે."
+
+#~ msgid ""
+#~ "Error recording BASIC library in\n"
+#~ "'@'."
+#~ msgstr ""
+#~ "BASIC લાઈબ્રેરીને '@' માં રેકોર્ડ કરતાં\n"
+#~ "ભૂલ."
+
+#~ msgid ""
+#~ "An unexpected program error has occurred.\n"
+#~ "\n"
+#~ "Do you want to try to save your changes in all open documents before the "
+#~ "program is terminated?"
+#~ msgstr ""
+#~ "એક અનિચ્છનીય કાર્યક્રમ ભૂલ ઉદ્ભવી.\n"
+#~ "\n"
+#~ "શું તમે તમારા ખૂલેલા બધા દસ્તાવેજોમાં કરેલા ફેરફારો કાર્યક્રમ બંધ થઈ જાય તે "
+#~ "પહેલાં સંગ્રહવા માંગો છો?"
+
+#~ msgid ""
+#~ "A form is to be sent by e-mail.\n"
+#~ "This means that the receiver will get to see your e-mail address."
+#~ msgstr ""
+#~ "ઈ-મેઈલ મારફતે મોકલવાનું ફોર્મ.\n"
+#~ "આનો અર્થ એ થાય કે મેળવનાર તમારા ઈ-મેઈલ સરનામાને જોઇ શકશે."
+
+#~ msgid "File Recovery"
+#~ msgstr "ફાઈલ પુનઃ પ્રાપ્તિ"
+
+#~ msgid "Should the file \"$1\" be restored?"
+#~ msgstr "ફાઈલ \"$1\" પાછી લાવવી જોઈએ?"
+
+#~ msgid "General"
+#~ msgstr "સામાન્ય"
+
+#~ msgid "Save"
+#~ msgstr "સંગ્રહ કરો"
+
+#~ msgid "Paths"
+#~ msgstr "પથ"
+
+#~ msgid "Spellcheck"
+#~ msgstr "જોડણી ચકાસો"
+
+#~ msgid ""
+#~ "This application is as object or print server active.\n"
+#~ "Do you want to terminate anyway?"
+#~ msgstr ""
+#~ "આ કાર્યક્રમ એ ઓબ્જેક્ટ અથવા છાપન સર્વર તરીકે સક્રિય છે.\n"
+#~ "શું તમે તેને તેમ છતાં પણ બંધ કરવા માંગો છો?"
+
+#~ msgid "%PRODUCTNAME cannot be started more than once."
+#~ msgstr "%PRODUCTNAME એક કરતા વધારે વખત ચાલુ કરી શકાતો નથી."
+
+#~ msgid ""
+#~ "Some %PRODUCTNAME functions will not work properly without a printer driver.\n"
+#~ "Please install a printer driver."
+#~ msgstr ""
+#~ "અમુક %PRODUCTNAME વિધેયો કોઈપણ પ્રિન્ટર ડ્રાઈવર વિના કામ કરશે નહી.\n"
+#~ "મહેરબાની કરીને પ્રિન્ટર ડ્રાઈવર સ્થાપિત કરો."
+
+#~ msgid "AutoSave"
+#~ msgstr "આપમેળે સંગ્રહો"
+
+#~ msgid ""
+#~ "Limited system resources. Please quit other applications or close some "
+#~ "windows before continuing."
+#~ msgstr ""
+#~ "મર્યાદિત સિસ્ટમ સ્ત્રોતો. મહેરબાની કરીને બીજા કાર્યક્રમો બહાર નીકળો અથવા "
+#~ "ચાલુ રાખતા પહેલા કેટલીક વિન્ડોઝ બંધ કરો."
+
+#~ msgid "There are files missing. Please check application setup."
+#~ msgstr "ફાઇલો ખૂટે છે. મહેરબાની કરીને કાર્યક્રમની સુયોજના તપાસો."
+
+#~ msgid ""
+#~ "Another error occurred during the save recovery.\n"
+#~ "Possibly, the data could not be entirely saved."
+#~ msgstr ""
+#~ "સંગ્રહ પુનઃપ્રાપ્તિ દરમ્યાન એક બીજી ભૂલ ઉદ્ભવી.\n"
+#~ "કદાચ, માહિતી સંપૂર્ણપણે સંગ્રહાયેલ નહિં હોઈ શકે."
+
+#~ msgid "System resources exhausted. Please restart the application."
+#~ msgstr ""
+#~ "સિસ્ટમના બધા સ્ત્રોતો વપરાઇ ચૂક્યા છે. મહેરબાની કરીને કાર્યક્રમ ફરીથી શરુ "
+#~ "કરો."
+
+#~ msgid "Error initializing object-system."
+#~ msgstr "વસ્તુ-સિસ્ટમની શરુઆત કરવામાં ભૂલ."
+
+#~ msgid "The file $(FILE) doesn't exist."
+#~ msgstr "ફાઇલ $(FILE) અસ્તિત્વ ધરાવતી નથી."
+
+#~ msgid "The path to file $(FILE) doesn't exist."
+#~ msgstr "ફાઇલ $(FILE) નો પથ અસ્તિત્વ ધરાવતો નથી."
+
+#~ msgid ""
+#~ "The file $(FILE) could not be opened,\n"
+#~ "because too many files are open.\n"
+#~ "Please close some files and try again."
+#~ msgstr ""
+#~ "ફાઈલ $(FILE) ખોલી શક્યા નહિં,\n"
+#~ "કારણ કે ઘણી બધી ફાઈલો ખૂલેલી છે.\n"
+#~ "મહેરબાની કરીને અમુક ફાઈલો બંધ કરો અને ફરીથી પ્રયત્ન કરો."
+
+#~ msgid "The file $(FILE) could not be opened due to missing access rights."
+#~ msgstr ""
+#~ "ફાઇલ $(FILE) ખોલી શકાતી નથી કારણકે તેને પ્રાપ્ત કરવા માટેની પરવાનગી ખૂટે છે."
+
+#~ msgid "The file $(FILE) could not be accessed."
+#~ msgstr "ફાઇલ $(FILE) પ્રાપ્ત કરી શકાતી નથી."
+
+#~ msgid "The file $(FILE) could not be opened due to an invalid file handle."
+#~ msgstr "ફાઇલ $(FILE) અયોગ્ય ફાઇલ હેન્ડલના લીધે ખોલી શકાતી નથી."
+
+#~ msgid "The file $(FILE) could not be created."
+#~ msgstr "ફાઇલ $(FILE) બનાવી શકાતી નથી."
+
+#~ msgid "Error by shared access to $(FILE)."
+#~ msgstr "$(FILE) ને સહભાગી પ્રાપ્ત કરવામાં ભૂલ."
+
+#~ msgid "General I/O error accessing $(FILE)."
+#~ msgstr "$(FILE) ને પ્રાપ્ત કરવામાં સામાન્ય I/O ભૂલ."
+
+#~ msgid "The selected template has an incorrect format"
+#~ msgstr "પસંદ કરેલ ટેમ્પલેટનુ બંધારણ અયોગ્ય છે"
+
+#~ msgid "Can't open file $."
+#~ msgstr "ફાઇલ $ ખોલી શકાતી નથી."
+
+#~ msgid "E~xit & return to "
+#~ msgstr "બહાર નીકળો અને આમાં પાછા ફરો"
+
+#~ msgid "Select a command or click to select a theme."
+#~ msgstr "આદેશ પસંદ કરો અથવા થીમ પસંદ કરવા ક્લીક કરો."
+
+#~ msgid "Mail"
+#~ msgstr "મેઈલ"
+
+#~ msgid "Addresses"
+#~ msgstr "સરનામાંઓ"
+
+#~ msgid "Don't display tips"
+#~ msgstr "ટીપ્પણીઓ દર્શાવી શકાતી નથી"
+
+#~ msgid "The help system could not be started"
+#~ msgstr "મદદ સિસ્ટમ શરુ કરી શકાતી નથી"
+
+#~ msgid "Enable plug-ins"
+#~ msgstr "પ્લગ-ઇન સક્રિય કરો"
+
+#~ msgid ""
+#~ "Important program components could not be initialized correctly.\n"
+#~ "Please start the setup program with the option /Repair."
+#~ msgstr ""
+#~ "અગત્યના કાર્યક્રમ ઘટકો યોગ્ય રીતે આરંભ થઈ શક્યા નહિં.\n"
+#~ "મહેરબાની કરીને વિકલ્પ /Repair સાથે સુયોજન કાર્યક્રમ શરૂ કરો."
+
+#~ msgid "Reference will not be saved: "
+#~ msgstr "સંદર્ભ સંગ્રહ થઈ શક્યો નહિ: "
+
+#~ msgid "Configuration"
+#~ msgstr "રુપરેખાંકન"
+
+#~ msgid "My Documents"
+#~ msgstr "મારા દસ્તાવેજો"
+
+#~ msgid "Graphics"
+#~ msgstr "ગ્રાફિક્સ"
+
+#~ msgid "Icons"
+#~ msgstr "ચિહ્નો"
+
+#~ msgid "Palettes"
+#~ msgstr "પેલેટ"
+
+#~ msgid "Backups"
+#~ msgstr "બૅકઅપ"
+
+#~ msgid "Modules"
+#~ msgstr "મોડ્યુલો"
+
+#~ msgid "AutoText"
+#~ msgstr "આપમેળેલખાણ"
+
+#~ msgid "Dictionaries"
+#~ msgstr "શબ્દકોશો"
+
+#~ msgid "Gallery"
+#~ msgstr "સંગ્રહાલય"
+
+#~ msgid "Message Storage"
+#~ msgstr "સંદેશા સંગ્રહસ્થાન"
+
+#~ msgid "Temporary files"
+#~ msgstr "કામચલાઉ ફાઇલો"
+
+#~ msgid "Plug-ins"
+#~ msgstr "પ્લગ-ઇન"
+
+#~ msgid "Folder Bookmarks"
+#~ msgstr "ફોલ્ડર બુકમાર્કો"
+
+#~ msgid "Filters"
+#~ msgstr "ગાળકો"
+
+#~ msgid "Add-ins"
+#~ msgstr "ઉમેરાઓ"
+
+#~ msgid "User Configuration"
+#~ msgstr "વપરાશકર્તા રુપરેખાંકન"
+
+#~ msgid "User-defined dictionaries"
+#~ msgstr "વપરાશકર્તા-વ્યાખ્યાયિત શબ્દકોષ"
+
+#~ msgid "AutoCorrect"
+#~ msgstr "આપમેળે સાચુ કરો"
+
+#~ msgid "Writing aids"
+#~ msgstr "લખવાની મદદો"
+
+#~ msgid "The URL is not valid."
+#~ msgstr "URL યોગ્ય નથી."
+
+#~ msgid "Undo: "
+#~ msgstr "છેલ્લી ક્રિયા રદ કરો: "
+
+#~ msgid "Re~do: "
+#~ msgstr "ફરી કરો (~d): "
+
+#~ msgid "~Repeat: "
+#~ msgstr "પુનરાવર્તન (~R): "
+
+#~ msgid "New task"
+#~ msgstr "નવું કામ"
+"X-Accelerator-Marker: ~\n"
+
+#: doc.src#MSG_CONFIRM_FILTER.querybox.text
+msgid ""
+"Saving in external formats may have caused\n"
+" information loss. Do you still want to close?"
+msgstr ""
+"બાહ્ય બંધારણોમાં સંગ્રહવાથી જાણકારી નાશ થવામાં\n"
+" પરિણમી હશે. શું તમે હજુ પણ બંધ કરવા માંગો છો?"
+
+#: doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.querybox.text
+msgid ""
+"Name already in use.\n"
+"Do you want to overwrite document template?"
+msgstr ""
+"નામ પહેલાથી જ વપરાશમાં છે.\n"
+"શું તમે દસ્તાવેજ ટેમ્પલેટ પર ફરીથી લખવા માંગો છો?"
+
+#: doc.src#STR_DELETE_REGION.string.text
+msgid "Are you sure you want to delete the region \"$1\"?"
+msgstr "શું ચોક્કસ તમે વિસ્તાર \"$1\" કાઢી નાખવા માગો છો?"
+
+#: doc.src#STR_DELETE_TEMPLATE.string.text
+msgid "Are you sure you want to delete the entry \"$1\"?"
+msgstr "શું ચોક્કસ તમે દાખલો \"$1\" કાઢી નાખવા માગો છો?"
+
+#: doc.src#MSG_REGION_NOTEMPTY.querybox.text
+msgid ""
+"The category is not empty.\n"
+"Delete anyway?"
+msgstr ""
+"વર્ગ ખાલી નથી.\n"
+"શું ગમે તે રીતે કાઢી નાંખવા માંગો છો?"
+
+#: doc.src#STR_QUERY_SAVE_DOCUMENT.string.text
+msgid ""
+"The document \"$(DOC)\" has been modified.\n"
+"Do you want to save your changes?"
+msgstr ""
+"દસ્તાવેજ \"$(DOC)\" બદલાઈ ગયેલ છે.\n"
+"શું તમે તમારા ફેરફારો સંગ્રહવા માંગો છો?"
+
+#: doc.src#STR_STYLES.string.text
+msgid "Styles"
+msgstr "શૈલીઓ"
+
+#: doc.src#STR_MACROS.string.text
+msgid "Macros"
+msgstr "મેક્રો"
+
+#: doc.src#STR_CONFIG.string.text
+msgid "Configuration"
+msgstr "રુપરેખાંકન"
+
+#: doc.src#STR_PRINT_STYLES_HEADER.string.text
+msgid "Styles in "
+msgstr "માં શૈલી"
+
+#: doc.src#STR_PRINT_STYLES.string.text
+msgid "Printing Styles"
+msgstr "છાપવાની શૈલીઓ"
+
+#: doc.src#MSG_PRINT_ERROR.errorbox.text
+msgid "The print job could not be started."
+msgstr "છાપવાનું કામ શરુ થઇ શક્યુ નથી."
+
+#: doc.src#STR_BACKUP_COPY.string.text
+msgid "Copy"
+msgstr "નકલ કરો"
+
+#: doc.src#MSG_CANT_OPEN_TEMPLATE.infobox.text
+msgid "The template could not be opened."
+msgstr "ટેમ્પલેટ ખોલી શકાયું નહી."
+
+#: doc.src#MSG_VIEW_OPEN_CANT_SAVE.infobox.text
+msgid "Document already open for editing."
+msgstr "દસ્તાવેજ પહેલેથી બદલાવ કરવા માટે ખૂલ્લો છે."
+
+#: doc.src#STR_ERROR_SAVE.string.text
+msgid "Error recording document "
+msgstr "દસ્તાવેજને રેકોર્ડ કરવામાં ભૂલ"
+
+#: doc.src#STR_TEMPLATE_FILTER.string.text
+msgctxt "doc.src#STR_TEMPLATE_FILTER.string.text"
+msgid "Templates"
+msgstr "ટેમ્પલેટ્સ"
+
+#: doc.src#STR_ERROR_COPY_TEMPLATE.string.text
+msgid ""
+"Error copying template \"$1\". \n"
+"A template with this name may already exist."
+msgstr ""
+"ટેમ્પલેટ \"$1\" ની નકલ કરવામાં ભૂલ. \n"
+"આ નામ સાથેનું ટેમ્પલેટ પહેલાથી જ હાજર હોઈ શકે."
+
+#: doc.src#STR_ERROR_DELETE_TEMPLATE.string.text
+msgid "The template \"$1\" can not be deleted."
+msgstr "ટેમ્પલેટ \"$1\" કાઢી શકાતુ નથી."
+
+#: doc.src#STR_ERROR_MOVE_TEMPLATE.string.text
+msgid "Error moving template \"$1\"."
+msgstr "ટેમ્પલેટ \"$1\" ને ફેરવવામાં ભૂલ."
+
+#: doc.src#MSG_ERROR_RESCAN.errorbox.text
+msgid "The update could not be saved."
+msgstr "સુધારેલ સંગ્રહી શકાતું નથી."
+
+#: doc.src#STR_ERROR_SAVE_TEMPLATE.string.text
+msgid "Error saving template "
+msgstr "ટેમ્પલેટનો સંગ્રહ કરવામાં ભૂલ"
+
+#: doc.src#MSG_ERROR_RENAME_TEMPLATE.errorbox.text
+msgid "Error renaming template."
+msgstr "ટેમ્પલેટને ફરીથી નામ આપવામાં ભૂલ."
+
+#: doc.src#MSG_ERROR_RENAME_TEMPLATE_REGION.errorbox.text
+msgid "Error renaming template category."
+msgstr "ટેમ્પલેટ વર્ગને ફરીથી નામ આપવામાં ભૂલ."
+
+#: doc.src#MSG_ERROR_EMPTY_NAME.errorbox.text
+msgid "Please specify a name."
+msgstr "મહેરબાની કરી નામ સ્પષ્ટ કરો."
+
+#: doc.src#MSG_ERROR_UNIQ_NAME.errorbox.text
+msgid ""
+"Please specify a unique name.\n"
+"Entries must not be case specific."
+msgstr ""
+"મહેરબાની કરીને અનન્ય નામ સ્પષ્ટ કરો.\n"
+"પ્રવેશો કેસને લાગતીવળગતી જ નહી હોવી જોઈએ."
+
+#: doc.src#STR_QUERY_DEFAULT_TEMPLATE.string.text
+msgid "Should the template \"$(TEXT)\" become the default template?"
+msgstr "શું ટેમ્પલેટ \"$(TEXT)\" મૂળભૂત ટેમ્પલેટ બની જવું જોઇએ?"
+
+#: doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.querybox.text
+msgid "Do you want to reset the default template?"
+msgstr "શુ તમે મૂળભૂત ટેમ્પલેટને ફરીથી સુયોજિત કરવા માગો છો?"
+
+#: doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.infobox.text
+msgid ""
+"Template directory\n"
+"$(DIR)\n"
+"does not exist."
+msgstr ""
+"ટેમ્પલેટ ડિરેક્ટરી\n"
+"$(DIR)\n"
+"અસ્તિત્વમાં નથી."
+
+#: doc.src#MSG_DOCINFO_CANTREAD.infobox.text
+msgid "Document info cannot be read."
+msgstr "દસ્તાવેજની જાણકારી વાંચી શકાતી નથી."
+
+#: doc.src#STR_ERROR_NOSTORAGE.string.text
+msgid "The selected file has an incorrect format."
+msgstr "પસંદ કરેલ ફાઇલનું બંધારણ અયોગ્ય છે."
+
+#: doc.src#STR_QUERY_MUSTOWNFORMAT.string.text
+msgid ""
+"Documents cannot be saved in $(FORMAT) format. Do you\n"
+"want to save your changes using the $(OWNFORMAT) format?"
+msgstr ""
+"દસ્તાવેજો $(FORMAT) બંધારણમાં સંગ્રહી શકાતા નથી. શું તમે\n"
+"તમારા ફેરફારો $(OWNFORMAT) બંધારણમાં સંગ્રહવા માંગો છો?"
+
+#: doc.src#STR_SAVEDOC.string.text
+msgid "~Save"
+msgstr "સંગ્રહ કરો (~S)"
+
+#: doc.src#STR_UPDATEDOC.string.text
+msgid "~Update"
+msgstr "ફેરફાર (~U)"
+
+#: doc.src#STR_SAVEASDOC.string.text
+msgid "Save ~As..."
+msgstr "આ રીતે સંગ્રહ કરો (~A)..."
+
+#: doc.src#STR_SAVECOPYDOC.string.text
+msgid "Save Copy ~as..."
+msgstr "આ રીતે નકલ કરો (~a)..."
+
+#: doc.src#STR_CLOSEDOC.string.text
+msgid "~Close"
+msgstr "બંધ કરો (~C)"
+
+#: doc.src#STR_CLOSEDOC_ANDRETURN.string.text
+msgid "~Close & Return to "
+msgstr "બંધ કરો & આ તરફ જાઓ (~C)"
+
+#: doc.src#STR_WIZARD.string.text
+msgid " AutoPilot"
+msgstr " ઓટોપાયલોટ"
+
+#: doc.src#RID_STR_FILTCONFIG.string.text
+msgid "Configurations"
+msgstr "રુપરેખાંકનો"
+
+#: doc.src#RID_STR_FILTBASIC.string.text
+msgid "%PRODUCTNAME Basic libraries"
+msgstr "%PRODUCTNAME મૂળભૂત લાઇબ્રેરી"
+
+#: doc.src#RID_STR_WARNSTYLEOVERWRITE.string.text
+msgid "Should the \"$(ARG1)\" Style be replaced?"
+msgstr "શું \"$(ARG1)\" શૈલી બદલી નાખવી જોઇએ?"
+
+#: doc.src#STR_DOC_LOADING.string.text
+msgid "Loading Document"
+msgstr "દસ્તાવેજ લાવી રહ્યા છે"
+
+#: doc.src#RID_DLSTATUS.INET_NAME_RESOLVE_START.string.text
+msgid "Connection to: $(HOST). Waiting for response..."
+msgstr "$(HOST) સાથે જોડાણ. પ્રત્યુત્તર માટે રાહ જોઇ રહ્યા છે..."
+
+#: doc.src#RID_DLSTATUS.INET_CONNECT_START.string.text
+msgid "Opening $(TARGET) at $(HOST)"
+msgstr "$(HOST) આગળ $(TARGET) ખોલી રહ્યા છે"
+
+#: doc.src#RID_DLSTATUS.INET_READ_STATUS.string.text
+msgid "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
+msgstr "$(HOST) માંથી $(TARGET) લાવી રહ્યા છે. $(BYTE) લવાઇ ગયેલ છે"
+
+#: doc.src#RID_DLSTATUS.INET_CONNECTION_CLOSED.string.text
+msgid "Disconnected"
+msgstr "સંપર્ક તૂટી ગયો"
+
+#: doc.src#MSG_OPEN_READONLY.querybox.text
+msgid ""
+"Document cannot be opened for editing.\n"
+"Do you want to open it as read-only?"
+msgstr ""
+"દસ્તાવેજ સંપાદન માટે ખોલી શકાતું નથી.\n"
+"શું તમે તેને માત્ર-વાંચી શકાય તે રીતે ખોલવા માંગો છો?"
+
+#: doc.src#STR_EDIT.string.text
+msgid "Edit"
+msgstr "ફેરફાર"
+
+#: doc.src#RID_OFFICEFILTER.string.text
+msgid "%PRODUCTNAME Documents"
+msgstr "%PRODUCTNAME દસ્તાવેજો"
+
+#: doc.src#STR_FRAMEOBJECT_PROPERTIES.string.text
+msgid "Propert~ies..."
+msgstr "ગુણધર્મો (~i)..."
+
+#: doc.src#STR_FSET_FILTERNAME0.string.text
+msgid "HTML (FrameSet)"
+msgstr "HTML (ફ્રેમસમૂહ)"
+
+#: doc.src#STR_FSET_FILTERNAME1.string.text
+msgid "%PRODUCTNAME Frame Document"
+msgstr "%PRODUCTNAME ફ્રેમ દસ્તાવેજ"
+
+#: doc.src#STR_TEMPL_MOVED.string.text
+msgid ""
+"The template \"$(TEMPLATE)\" was not found at the original location. A "
+"template with the same name exists at \"$(FOUND)\". Should this template be "
+"used in the future when comparing?"
+msgstr ""
+"ટેમ્પલેટ \"$(TEMPLATE)\" મૂળભૂત જગ્યાએ મળતો નથી. આ જ નામનો ટેમ્પલેટ \"$(FOUND)\" "
+"જગ્યાએ અસ્તત્વ ધરાવે છે.શું ભવિષ્ચમાં જ્યારે સરખાવાનુ હોય ત્યારે આ "
+"ટેમ્પલેટનો ઉપયોગ કરવો?"
+
+#: doc.src#STR_TEMPL_RESET.string.text
+msgid ""
+"The template \"$(TEMPLATE)\" has not been found. Should the template be looked "
+"for the next time the document is opened ?"
+msgstr ""
+"ટેમ્પલેટ \"$(TEMPLATE)\" મળ્યો નહી. શું પછી દસ્તાવેજ ખોલવામાં આવે ત્યારે "
+"ટેમ્પલેટ માટે જોવું છે?"
+
+#: doc.src#STR_AUTOMATICVERSION.string.text
+msgid "Automatically saved version"
+msgstr "આપમેળે સંગ્રહિત આવૃત્તિ"
+
+#: doc.src#STR_DOCTYPENAME_SW.string.text
+msgid "Text Document"
+msgstr "લખાણ દસ્તાવેજ"
+
+#: doc.src#STR_DOCTYPENAME_SWWEB.string.text
+msgid "HTML Document"
+msgstr "HTML દસ્તાવેજ"
+
+#: doc.src#STR_DOCTYPENAME_SWGLOB.string.text
+msgid "Master Document"
+msgstr "મુખ્ય દસ્તાવેજ"
+
+#: doc.src#STR_DOCTYPENAME_SC.string.text
+msgid "Spreadsheet"
+msgstr "સ્પ્રેડશીટ"
+
+#: doc.src#STR_DOCTYPENAME_SI.string.text
+msgid "Presentation"
+msgstr "રજૂઆત"
+
+#: doc.src#STR_DOCTYPENAME_SD.string.text
+msgid "Drawing"
+msgstr "ચિત્રકામ"
+
+#: doc.src#STR_DOCTYPENAME_MESSAGE.string.text
+msgid "Message"
+msgstr "સંદેશો"
+
+#: doc.src#STR_NOSAVEANDCLOSE.string.text
+msgid "~Discard"
+msgstr "છોડી દો (~D)"
+
+#: doc.src#STR_PACKNGO_NOACCESS.string.text
+msgid "Access to the current data medium not possible."
+msgstr "વર્તમાન માહિતીના માધ્યમને પ્રાપ્ત કરવાનુ શક્ય નથી."
+
+#: doc.src#STR_PACKNGO_NEWMEDIUM.string.text
+msgid "Insert the next data carrier and click OK."
+msgstr "પછીનુ માહિતી કેરીયર ઉમેરો અને બરાબર પર ક્લિક કરો."
+
+#: doc.src#STR_OBJECT.string.text
+msgid "Object"
+msgstr "વસ્તુ"
+
+#: doc.src#DLG_MACROQUERY.querybox.text
+msgid "This document contains macros. $(TEXT)"
+msgstr "આ દસ્તાવેજ મેક્રો ધરાવે છે. $(TEXT)"
+
+#: doc.src#DLG_MACROQUERY.querybox.title
+msgid "Run Macro"
+msgstr "મેક્રો ચલાવો"
+
+#: doc.src#BTN_OK.string.text
+msgid "Run"
+msgstr "ચલાવો"
+
+#: doc.src#BTN_CANCEL.string.text
+msgid "Do Not Run"
+msgstr "ચલાવશો નહી"
+
+#: doc.src#FT_CANCEL.string.text
+msgid ""
+"According to the security settings, the macros in this document should not "
+"be run. Do you want to run them anyway?"
+msgstr ""
+"સુરક્ષાની સુયોજના પ્રમાણે, આ મેક્રો ચાલવો જોઇએ નહી. શું કોઇપણ રીતે તેને "
+"ચલાવવા માગો છો?"
+
+#: doc.src#FT_OK.string.text
+msgid "Do you want to allow these macros to be run?"
+msgstr "શુ તમે આ મેક્રોને ચાલવા માટે પરવાનગી આપવા માહો છો?"
+
+#: doc.src#STR_EXPORTASPDF_TITLE.string.text
+msgid "Export as PDF"
+msgstr "PDF તરીકે નિકાસ કરો"
+
+#: doc.src#STR_EXPORTWITHCFGBUTTON.string.text
+msgid "Export..."
+msgstr "નિકાસ..."
+
+#: doc.src#STR_EXPORTBUTTON.string.text
+msgid "Export"
+msgstr "નિકાસ"
+
+#: doc.src#RID_SVXSTR_SECURITY_ADDPATH.string.text
+msgid "Add this directory to the list of secure paths: "
+msgstr "આ ડિરેક્ટરીને સુરક્ષા પથની યાદીમાં મૂકો: "
+
+#: doc.src#STR_LABEL_FILEFORMAT.string.text
+msgid "File format:"
+msgstr "ફાઈલ બંધારણ:"
+
+#: doc.src#STR_HIDDENINFO_CONTAINS.string.text
+msgid ""
+"This document contains:\n"
+"\n"
+msgstr ""
+"આ દસ્તાવેજ આ બધું સમાવે છે:\n"
+"\n"
+
+#: doc.src#STR_HIDDENINFO_RECORDCHANGES.string.text
+msgid "Recorded changes"
+msgstr "રેકોર્ડ થયેલ ફેરફારો"
+
+#: doc.src#STR_HIDDENINFO_NOTES.string.text
+msgid "Notes"
+msgstr "નોંધો"
+
+#: doc.src#STR_HIDDENINFO_DOCVERSIONS.string.text
+msgid "Document versions"
+msgstr "દસ્તાવેજ આવૃત્તિઓ"
+
+#: doc.src#STR_HIDDENINFO_FIELDS.string.text
+msgid "Fields"
+msgstr "ક્ષેત્રો"
+
+#: doc.src#STR_HIDDENINFO_LINKDATA.string.text
+msgid "Linked data..."
+msgstr "કડી થયેલ માહિતી..."
+
+#: doc.src#STR_HIDDENINFO_CONTINUE_SAVING.string.text
+msgid "Do you want to continue saving the document?"
+msgstr "શું તમે દસ્તાવેજ સંગ્રહવા સાથે ચાલુ રાખવા માંગો છો?"
+
+#: doc.src#STR_HIDDENINFO_CONTINUE_PRINTING.string.text
+msgid "Do you want to continue printing the document?"
+msgstr "શું તમે દસ્તાવેજ છાપવા સાથે ચાલુ રાખવા માંગો છો?"
+
+#: doc.src#STR_HIDDENINFO_CONTINUE_SIGNING.string.text
+msgid "Do you want to continue signing the document?"
+msgstr "શું તમે દસ્તાવેજ સહી કરવા સાથે ચાલુ રાખવા માંગો છો?"
+
+#: doc.src#STR_HIDDENINFO_CONTINUE_CREATEPDF.string.text
+msgid "Do you want to continue creating a PDF file?"
+msgstr "શું તમે PDF ફાઈલ બનાવવા સાથે ચાલુ રાખવા માંગો છો?"
+
+#: doc.src#STR_NEW_FILENAME_SAVE.string.text
+msgid ""
+"If you do not want to overwrite the original document, you should save your "
+"work under a new filename."
+msgstr ""
+"જો તમે મૂળ દસ્તાવેજ પર ફરીથી લખવા નહી માંગો, તો તમારે તમારું કામ નવી ફાઈલનામ "
+"હેઠળ સંગ્રહવું જોઈએ."
+
+#: doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.string.text
+msgid "Some template files are protected and can not be deleted."
+msgstr "કેટલીક ટેમ્પલેટ ફાઇલો રક્ષિત કરેલ છે અને દૂર થઇ શકશે નહી."
+
+#: doc.src#STR_DOCINFO_INFOFIELD.string.text
+msgid "Info %1"
+msgstr "માહિતી %1"
+
+#: doc.src#STR_SHARED.string.text
+msgid " (shared)"
+msgstr " (વહેંચાયેલ)"
+
+#: doc.src#STR_XMLSEC_ODF12_EXPECTED.string.text
+msgid ""
+"The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-"
+"Options-Load/Save-General. Signing documents requires ODF 1.2 "
+"(OpenOffice.org 3.x)."
+msgstr ""
+"દસ્તાવેજ બંધારણ આવૃત્તિ Tools-Options-Load/Save-General માં ODF 1.1 "
+"(OpenOffice.org 2.x) માં સુયોજિત છે. સહી કરેલ દસ્તાવેજો ને ODF 1.2 "
+"(OpenOffice.org 3.x) ની જરૂર છે."
+
+#: doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.querybox.text
+msgid ""
+"The document has to be saved before it can be signed. Saving the document "
+"removes all present signatures.\n"
+"Do you want to save the document?"
+msgstr ""
+"તે સહી થયેલ હોઇ શકે છે તે પહેલા દસ્તાવેજ સંગ્રહ થયેલ હશે. સંગ્રહ થયેલ "
+"દસ્તાવેજ એ બધી હાલનાં હસ્તાક્ષરો ને દૂર કરે છે.\n"
+"શું તમે દસ્તાવેજ ને સંગ્રહવા માંગો છો?"
+
+#: doc.src#STR_QRYTEMPL_MESSAGE.string.text
+msgid ""
+"The template '$(ARG1)' on which this document is based, has been modified. "
+"Do you want to update style based formattings according to the modified "
+"template?"
+msgstr ""
+"ક્યા આ દસ્તાવેજ આધારિત છે તે પર ટેમ્પલેટ '$(ARG1)' ને બદલી દેવામાં આવ્યા છે. "
+"શું તમે બદલાયેલ ટેમ્પલેટ ને અનુસાર શૈલી આધારિત બંધારણો ને સુધારવા માંગો છો?"
+
+#: doc.src#STR_QRYTEMPL_UPDATE_BTN.string.text
+msgid "~Update Styles"
+msgstr "શૈલીઓ ને સુધારો (~U)"
+
+#: doc.src#STR_QRYTEMPL_KEEP_BTN.string.text
+msgid "~Keep Old Styles"
+msgstr "જૂની શૈલીઓ ને રાખો (~K)"
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.FL_EDIT.fixedline.text
+msgid "New template"
+msgstr "નવું ટેમ્પલેટ"
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.fixedline.text
+msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.fixedline.text"
+msgid "Templates"
+msgstr "ટેમ્પલેટ્સ"
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.fixedtext.text
+msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.fixedtext.text"
+msgid "~Categories"
+msgstr "વર્ગો (~C)"
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.FT_STYLESHEETS.fixedtext.text
+msgid "~Templates"
+msgstr "ટેમ્પલેટ્સ (~T)"
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.pushbutton.text
+msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.pushbutton.text"
+msgid "~Edit"
+msgstr "ફેરફાર (~E)"
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.BT_ORGANIZE.pushbutton.text
+msgid "~Organizer..."
+msgstr "આયોજક (~O)..."
+
+#: doctdlg.src#DLG_DOC_TEMPLATE.modaldialog.text
+msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.modaldialog.text"
+msgid "Templates"
+msgstr "ટેમ્પલેટ્સ"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.1.itemlist.text
+msgid "My Templates"
+msgstr "મારા ટેમ્પલેટ્સ"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.2.itemlist.text
+msgid "Business Correspondence"
+msgstr "વ્યાપારી સંપર્ક"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.3.itemlist.text
+msgid "Other Business Documents"
+msgstr "બીજા વ્યાપારી દસ્તાવેજો"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.4.itemlist.text
+msgid "Personal Correspondence and Documents"
+msgstr "ખાનગી સંપર્ક અને દસ્તાવેજો"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.5.itemlist.text
+msgid "Forms and Contracts"
+msgstr "ફોર્મ અને કરારો "
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.6.itemlist.text
+msgid "Finances"
+msgstr "નાણાંકીય"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.7.itemlist.text
+msgid "Education"
+msgstr "ભણતર"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.8.itemlist.text
+msgid "Presentation Backgrounds"
+msgstr "રજૂઆત પાશ્ર્વભાગો"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.9.itemlist.text
+msgid "Presentations"
+msgstr "રજુઆતો"
+
+#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.10.itemlist.text
+msgid "Miscellaneous"
+msgstr "મિશ્રિત"
+
+#: doctempl.src#RID_CNT_STR_WAITING.string.text
+msgid "The templates are being initialized for first-time usage."
+msgstr "પ્રથમ સમયે ઉપયોગ માટે ટેમ્પલેટ શરુ કરવામાં આવ્યા છે."
+
+#: docvor.src#DLG_ORGANIZE.BTN_OK.okbutton.text
+msgid "Close"
+msgstr "બંધ કરો"
+
+#: docvor.src#DLG_ORGANIZE.BTN_FILES.pushbutton.text
+msgid "~File..."
+msgstr "ફાઇલ (~F)..."
+
+#: docvor.src#DLG_ORGANIZE.BTN_ADDRESSTEMPLATE.pushbutton.text
+msgid "~Address Book..."
+msgstr "સરનામાં પુસ્તિકા (~A)..."
+
+#: docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.1.stringlist.text
+msgctxt "docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.1.stringlist.text"
+msgid "Templates"
+msgstr "ટેમ્પલેટ્સ"
+
+#: docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.2.stringlist.text
+msgctxt "docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.2.stringlist.text"
+msgid "Documents"
+msgstr "દસ્તાવેજો"
+
+#: docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.1.stringlist.text
+msgctxt "docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.1.stringlist.text"
+msgid "Templates"
+msgstr "ટેમ્પલેટ્સ"
+
+#: docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.2.stringlist.text
+msgctxt "docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.2.stringlist.text"
+msgid "Documents"
+msgstr "દસ્તાવેજો"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_NEW.menuitem.text
+msgid "~New"
+msgstr "નવું (~N)"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DELETE.menuitem.text
+msgid "~Delete"
+msgstr "દૂર કરો (~D)"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.menuitem.text
+msgctxt "docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.menuitem.text"
+msgid "~Edit"
+msgstr "ફેરફાર (~E)"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_FROM.menuitem.text
+msgid "Import Template..."
+msgstr "ટેમ્પલેટ આયાત કરો..."
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_TO.menuitem.text
+msgid "Export Template..."
+msgstr "ટેમ્પલેટ નિકાસ કરો..."
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINT.menuitem.text
+msgid "~Print"
+msgstr "છાપો (~P)"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINTER_SETUP.menuitem.text
+msgid "Printer Settings..."
+msgstr "પ્રિન્ટર સુયોજનો..."
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESCAN.menuitem.text
+msgid "Update"
+msgstr "સુધારો"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DEFAULT_TEMPLATE.menuitem.text
+msgid "Set As Default Template"
+msgstr "મૂળભૂત ટેમ્પેલટ તરીકે સુયોજિત કરો"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESET_DEFAULT_TEMPLATE.menuitem.text
+msgid "Reset Default Template"
+msgstr "મૂળભૂત ટેમ્પેલટને ફરી સુયોજિત કરો"
+
+#: docvor.src#DLG_ORGANIZE.BTN_EDIT.menubutton.text
+msgid "Commands"
+msgstr "આદેશો"
+
+#: docvor.src#DLG_ORGANIZE.modaldialog.text
+msgid "Template Management"
+msgstr "ટેમ્પલેટ વ્યવસ્થાપક"
+
+#: new.src#DLG_NEW_FILE.FT_REGION.fixedtext.text
+msgctxt "new.src#DLG_NEW_FILE.FT_REGION.fixedtext.text"
+msgid "~Categories"
+msgstr "વર્ગો (~C)"
+
+#: new.src#DLG_NEW_FILE.FT_TEMPLATE.fixedtext.text
+msgid "T~emplates"
+msgstr "ટેમ્પલેટ્સ (~e)"
+
+#: new.src#DLG_NEW_FILE.BT_MORE.morebutton.text
+msgid "~More"
+msgstr "વધારે (~M)"
+
+#: new.src#DLG_NEW_FILE.BTN_PREVIEW.checkbox.text
+msgid "Pre~view"
+msgstr "પૂર્વદર્શન (~v)"
+
+#: new.src#DLG_NEW_FILE.GB_DOCINFO.fixedline.text
+msgid "Description"
+msgstr "વર્ણન"
+
+#: new.src#DLG_NEW_FILE.CB_TEXT_STYLE.checkbox.text
+msgid "Te~xt"
+msgstr "લખાણ (~x)"
+
+#: new.src#DLG_NEW_FILE.CB_FRAME_STYLE.checkbox.text
+msgid "~Frame"
+msgstr "ચોકઠું (~F)"
+
+#: new.src#DLG_NEW_FILE.CB_PAGE_STYLE.checkbox.text
+msgid "~Pages"
+msgstr "પાનાંઓ (~P)"
+
+#: new.src#DLG_NEW_FILE.CB_NUM_STYLE.checkbox.text
+msgid "N~umbering"
+msgstr "ક્રમાંકિત કરો (~u)"
+
+#: new.src#DLG_NEW_FILE.CB_MERGE_STYLE.checkbox.text
+msgid "~Overwrite"
+msgstr "ઉપર ફરી લખો (~O)"
+
+#: new.src#DLG_NEW_FILE.PB_LOAD_FILE.pushbutton.text
+msgid "From File..."
+msgstr "ફાઇલ માંથી..."
+
+#: new.src#DLG_NEW_FILE.STR_LOAD_TEMPLATE.string.text
+msgid "Load Styles"
+msgstr "શૈલીઓ લાવો"
+
+#: new.src#DLG_NEW_FILE.FT_TITLE.fixedtext.text
+msgid "~Title"
+msgstr "શીર્ષક (~T)"
+
+#: new.src#DLG_NEW_FILE.FT_THEMA.fixedtext.text
+msgid "Subject"
+msgstr "વિષય"
+
+#: new.src#DLG_NEW_FILE.FT_KEYWORDS.fixedtext.text
+msgid "~Key words"
+msgstr "કળ શબ્દો (~K)"
+
+#: new.src#DLG_NEW_FILE.FT_DESC.fixedtext.text
+msgid "~Description"
+msgstr "વર્ણન (~D)"
+
+#: new.src#DLG_NEW_FILE.modaldialog.text
+msgid "New"
+msgstr "નવું"
+
+#~ msgid ""
+#~ "The Styles in this document do not match your current Styles. Should your "
+#~ "current Styles be applied to this document?"
+#~ msgstr ""
+#~ "આ દસ્તાવેજની શૈલી તમારી વર્તમાન શૈલીને બંધબેસતી નથી. શું તમારી વર્તમાન શૈલી "
+#~ "આ દસ્તાવેજમાં અમલમાં મૂકવા માગો છો?"
+"X-Accelerator-Marker: ~\n"
+
+#: alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.fixedtext.text
+msgid ""
+"This document may contain formatting or content that cannot be saved in the "
+"%FORMATNAME file format. Do you want to save the document in this format "
+"anyway?\n"
+"\n"
+"Use the latest ODF file format and be sure all formatting and content is "
+"saved correctly."
+msgstr ""
+"આ દસ્તાવેજ બંધારણ અથવા સમાવિષ્ટ સમાવી શકે કે જે %FORMATNAME ફાઈલ બંધારણમાં "
+"સંગ્રહી શકાય નહી. શું તમે દસ્તાવેજને આ બંધારણમાં ગમે તે રીતે સંગ્રહવા માંગો?\n"
+"\n"
+"તાજેતરનું ODF ફાઇલ બંધારણ વાપરો અને બધા બંધારણ અને સમાવિષ્ટ યોગ્ય રીતે "
+"સંગ્રહાયેલ છે તેની ખાતરી કરો."
+
+#: alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.okbutton.text
+msgid "~Keep Current Format"
+msgstr "હાલનાં બંધારણ ને રાખો (~K)"
+
+#: alienwarn.src#RID_DLG_ALIEN_WARNING.PB_YES.cancelbutton.text
+msgid "~Save in ODF Format"
+msgstr "ODF બંધારણ માં સંગ્રહો (~S)"
+
+#: alienwarn.src#RID_DLG_ALIEN_WARNING.PB_MOREINFO.helpbutton.text
+msgid "~More Information..."
+msgstr "વધુ જાણકારી (~M)..."
+
+#: alienwarn.src#RID_DLG_ALIEN_WARNING.CB_WARNING_OFF.checkbox.text
+msgid "~Ask when not saving in ODF format"
+msgstr "પૂછો જ્યારે ODF બંધારણમાં સંગ્રહ ન કરી રહ્યા હોય (~A)"
+
+#: dialog.src#STR_RESET.string.text
+msgid "~Reset"
+msgstr "ફરી ગોઠવો (~R)"
+
+#: dialog.src#STR_APPLY.string.text
+msgid "Apply"
+msgstr "અમલમાં મૂકો"
+
+#: dialog.src#STR_TABPAGE_MANAGESTYLES.string.text
+msgid "Organizer"
+msgstr "આયોજક"
+
+#: dialog.src#MSG_TABPAGE_INVALIDNAME.infobox.text
+msgid "This name is already in use."
+msgstr "આ નામ પહેલેથી ઉપયોગમાં છે."
+
+#: dialog.src#MSG_TABPAGE_INVALIDSTYLE.infobox.text
+msgid "This Style does not exist."
+msgstr "આ શૈલી અસ્તિત્વ ધરાવતી નથી."
+
+#: dialog.src#MSG_TABPAGE_INVALIDPARENT.infobox.text
+msgid ""
+"This Style cannot be used as a base Style,\n"
+"because it would result in a recursive reference."
+msgstr ""
+"આ શૈલી આધાર શૈલી તરીકે વાપરી શકાતી નથી,\n"
+"કારણ કે તે પુનરાવર્તી સંદર્ભમાં પરિણમશે."
+
+#: dialog.src#MSG_POOL_STYLE_NAME.infobox.text
+msgid ""
+"Name already exists as a default Style.\n"
+"Please choose another name."
+msgstr ""
+"મૂળભૂત શૈલી તરીકે નામ પહેલાથી જ હાજર છે.\n"
+"મહેરબાની કરીને અન્ય નામ પસંદ કરો."
+
+#: dialog.src#STR_DELETE_STYLE.string.text
+msgid "Do you really want to delete Style $1?"
+msgstr "શું ખરેખર તમે શૈલી $1 કાઢી નાખવા માગો છો?"
+
+#: dialog.src#STR_DELETE_STYLE_USED.string.text
+msgid "You are deleting an applied Style!\n"
+msgstr "તમે લાગુ કરેલ શૈલી કાઢી રહ્યા છો!\n"
+
+#: dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.menuitem.text
+msgid "New..."
+msgstr "નવું..."
+
+#: dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.menuitem.text
+msgid "Modify..."
+msgstr "બદલો..."
+
+#: dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.menuitem.text
+msgid "Delete..."
+msgstr "દૂર કરો..."
+
+#: dialog.src#SID_NAVIGATOR.string.text
+msgid "Navigator"
+msgstr "નેવિગેટર"
+
+#: dialog.src#SID_TASKPANE.string.text
+msgid "Task Pane"
+msgstr "કાર્ય પટ્ટી"
+
+#: dialog.src#MSG_ERROR_WRONG_CONFIRM.errorbox.text
+msgid "Faulty password confirmation"
+msgstr "ભૂલભરેલી પાસવર્ડની ખાતરી"
+
+#: dialog.src#STR_PDF_EXPORT_SEND.string.text
+msgid "Send"
+msgstr "મોકલો"
+
+#: dinfdlg.src#STR_SFX_NEWOFFICEDOC.string.text
+msgid "%PRODUCTNAME document"
+msgstr "%PRODUCTNAME દસ્તાવેજ"
+
+#: dinfdlg.src#TP_DOCINFODESC.FT_TITLE.fixedtext.text
+msgid "~Title"
+msgstr "શીર્ષક (~T)"
+
+#: dinfdlg.src#TP_DOCINFODESC.FT_THEMA.fixedtext.text
+msgid "~Subject"
+msgstr "વિષય (~S)"
+
+#: dinfdlg.src#TP_DOCINFODESC.FT_KEYWORDS.fixedtext.text
+msgid "~Keywords"
+msgstr "મુખ્ય શબ્દો (~K)"
+
+#: dinfdlg.src#TP_DOCINFODESC.FT_COMMENT.fixedtext.text
+msgid "~Comments"
+msgstr "ટિપ્પણીઓ (~C)"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.fixedtext.text
+msgid "Type:"
+msgstr "પ્રકાર:"
+
+#: dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.checkbox.text
+msgctxt "dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.checkbox.text"
+msgid "~Read-only"
+msgstr "ફક્ત-વાંચી શકાય (~R)"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_FILE.fixedtext.text
+msgid "Location:"
+msgstr "સ્થાન:"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_FILE_SIZE.fixedtext.text
+msgid "Size:"
+msgstr "માપ:"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_CREATE.fixedtext.text
+msgid "Created:"
+msgstr "બનાવેલ:"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_CHANGE.fixedtext.text
+msgid "Modified:"
+msgstr "બદલાયેલ:"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_SIGNED.fixedtext.text
+msgid "Digitally signed:"
+msgstr "ડિજીટલપણે સહી થયેલ:"
+
+#: dinfdlg.src#TP_DOCINFODOC.BTN_SIGNATURE.pushbutton.text
+msgid "Digital Signature..."
+msgstr "ડિજીટલ સહી..."
+
+#: dinfdlg.src#TP_DOCINFODOC.STR_MULTSIGNED.string.text
+msgid "Multiply signed document"
+msgstr "સહી થયેલ દસ્તાવેજ ગુણો"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_PRINT.fixedtext.text
+msgid "Last printed:"
+msgstr "છેલ્લે છાપેલ:"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_TIMELOG.fixedtext.text
+msgid "Total editing time:"
+msgstr "કુલ સંપાદન સમય:"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_DOCNO.fixedtext.text
+msgid "Revision number:"
+msgstr "પુનરાવર્તન નંબર:"
+
+#: dinfdlg.src#TP_DOCINFODOC.BTN_DELETE.pushbutton.text
+msgid "Reset"
+msgstr "ફરી ગોઠવો"
+
+#: dinfdlg.src#TP_DOCINFODOC.CB_USE_USERDATA.checkbox.text
+msgid "~Apply user data"
+msgstr "વપરાશકર્તા માહિતી લાગુ પાડો (~A)"
+
+#: dinfdlg.src#TP_DOCINFODOC.FT_TEMPL.fixedtext.text
+msgid "Template:"
+msgstr "ટેમ્પ્લેટ:"
+
+#: dinfdlg.src#TP_DOCINFODOC.STR_UNKNOWNSIZE.string.text
+msgid "unknown"
+msgstr "અજાણ્યું"
+
+#: dinfdlg.src#TP_DOCINFODOC.EDIT_FILE_NAME.string.text
+msgid "File Name"
+msgstr ""
+
+#: dinfdlg.src#TP_DOCINFOUSER.BTN_EDITLABEL.pushbutton.text
+msgid "~Info fields..."
+msgstr "જાણકારી ક્ષેત્રો (~I)..."
+
+#: dinfdlg.src#TP_DOCINFORELOAD.RB_NOAUTOUPDATE.radiobutton.text
+msgid "Do not refresh automatically"
+msgstr "આપમેળે તાજું ન કરો"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.RB_RELOADUPDATE.radiobutton.text
+msgid "Refresh this document"
+msgstr "આ દસ્તાવેજ ફરી તાજું કરો"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.FT_EVERY.fixedtext.text
+msgid "every"
+msgstr "દરેક"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.fixedtext.text
+msgctxt "dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.fixedtext.text"
+msgid "seconds"
+msgstr "સેકન્ડ્સ"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.RB_FORWARDUPDATE.radiobutton.text
+msgid "Redirect from this document"
+msgstr "આ દસ્તાવેજથી ફરી દિશા આપો"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.fixedtext.text
+msgid "after"
+msgstr "પછી"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.fixedtext.text
+msgctxt "dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.fixedtext.text"
+msgid "seconds"
+msgstr "સેકન્ડ્સ"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.FT_URL.fixedtext.text
+msgid "to URL"
+msgstr "URL ને"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.FT_FRAME.fixedtext.text
+msgid "to frame"
+msgstr "ચોકઠા ને"
+
+#: dinfdlg.src#TP_DOCINFORELOAD.STR_FORWARD_ERRMSSG.string.text
+msgid "If you select the option \"%PLACEHOLDER%\", you must enter a URL."
+msgstr ""
+"જો તમે વિકલ્પ \"%PLACEHOLDER%\" પસંદ કરો તો, તમારે URL દાખલ કરવુ જરુરી છે."
+
+#: dinfdlg.src#TP_CUSTOMPROPERTIES.FT_PROPERTIES.fixedtext.text
+msgid "~Properties"
+msgstr "ગુણધર્મો (~P)"
+
+#: dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.string.text
+msgid "Name"
+msgstr "નામ"
+
+#: dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.string.text
+msgid "Type"
+msgstr "પ્રકાર"
+
+#: dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_VALUE.string.text
+msgid "Value"
+msgstr "મૂલ્ય"
+
+#: dinfdlg.src#TP_CUSTOMPROPERTIES.BTN_ADD.pushbutton.text
+msgid "~Add"
+msgstr "ઉમેરો (~A)"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.combobox.text
+msgctxt "dinfdlg.src#SFX_CB_PROPERTY_NAME.combobox.text"
+msgid "-"
+msgstr "-"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.combobox.quickhelptext
+msgid "Property Name"
+msgstr "ગુણધર્મનું નામ"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.1.stringlist.text
+msgid "Checked by"
+msgstr "દ્રારા ચકાસેલ છે"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.2.stringlist.text
+msgid "Client"
+msgstr "ક્લાઇન્ટ"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.3.stringlist.text
+msgid "Date completed"
+msgstr "તારીખ સમાપ્ત થયેલ છે"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.4.stringlist.text
+msgid "Department"
+msgstr "વિભાગ"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.5.stringlist.text
+msgid "Destinations"
+msgstr "લક્ષ્ય"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.6.stringlist.text
+msgid "Disposition"
+msgstr "નિકાલ"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.7.stringlist.text
+msgid "Division"
+msgstr "વિભાગ"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.8.stringlist.text
+msgid "Document number"
+msgstr "દસ્તાવેજ નંબર"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.9.stringlist.text
+msgid "Editor"
+msgstr "સંપાદક"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.10.stringlist.text
+msgid "E-Mail"
+msgstr "ઇ-મેઇલ"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.11.stringlist.text
+msgid "Forward to"
+msgstr "ને આગળ કરો"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.12.stringlist.text
+msgid "Group"
+msgstr "જૂથ"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.13.stringlist.text
+msgid "Info"
+msgstr "જાણકારી"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.14.stringlist.text
+msgid "Language"
+msgstr "ભાષા"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.15.stringlist.text
+msgid "Mailstop"
+msgstr "મેઇલ બંધ"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.16.stringlist.text
+msgid "Matter"
+msgstr "બાબત"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.17.stringlist.text
+msgid "Office"
+msgstr "ઓફિસ"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.18.stringlist.text
+msgid "Owner"
+msgstr "માલિક"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.19.stringlist.text
+msgid "Project"
+msgstr "પ્રોજેક્ટ"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.20.stringlist.text
+msgid "Publisher"
+msgstr "પ્રકાશક"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.21.stringlist.text
+msgid "Purpose"
+msgstr "હેતુ"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.22.stringlist.text
+msgid "Received from"
+msgstr "માંથી મળેલ છે"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.23.stringlist.text
+msgid "Recorded by"
+msgstr "દ્દારા રેકોર્ડ થયેલ છે"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.24.stringlist.text
+msgid "Recorded date"
+msgstr "રેકોર્ડ થયેલ તારીખ"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.25.stringlist.text
+msgid "Reference"
+msgstr "સંદર્ભ"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.26.stringlist.text
+msgid "Source"
+msgstr "સ્ત્રોત"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.27.stringlist.text
+msgid "Status"
+msgstr "સ્થિતિ"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.28.stringlist.text
+msgid "Telephone number"
+msgstr "ટેલિફોન નંબર"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.29.stringlist.text
+msgid "Typist"
+msgstr "ટાઇપિસ્ટ"
+
+#: dinfdlg.src#SFX_CB_PROPERTY_NAME.30.stringlist.text
+msgid "URL"
+msgstr "URL"
+
+#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.1.stringlist.text
+msgid "Text"
+msgstr "લખાણ"
+
+#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.2.stringlist.text
+msgid "DateTime"
+msgstr "DateTime"
+
+#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.3.stringlist.text
+msgid "Date"
+msgstr "તારીખ"
+
+#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.4.stringlist.text
+msgctxt "dinfdlg.src#SFX_LB_PROPERTY_TYPE.4.stringlist.text"
+msgid "Duration"
+msgstr "સમયગાળો"
+
+#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.5.stringlist.text
+msgid "Number"
+msgstr "નંબર"
+
+#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.6.stringlist.text
+msgid "Yes or no"
+msgstr "હા અથવા ના"
+
+#: dinfdlg.src#SFX_ST_DURATION_FORMAT.string.text
+msgid " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
+msgstr " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
+
+#: dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.radiobutton.text
+msgid "Yes"
+msgstr "હા"
+
+#: dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_NO.radiobutton.text
+msgid "No"
+msgstr "ના"
+
+#: dinfdlg.src#SFX_PB_PROPERTY_REMOVE.imagebutton.text
+msgctxt "dinfdlg.src#SFX_PB_PROPERTY_REMOVE.imagebutton.text"
+msgid "-"
+msgstr "-"
+
+#: dinfdlg.src#SFX_PB_PROPERTY_REMOVE.imagebutton.quickhelptext
+msgid "Remove Property"
+msgstr "ગુણધર્મ ને દૂર કરો"
+
+#: dinfdlg.src#SFX_QB_WRONG_TYPE.querybox.text
+msgid ""
+"The value entered does not match the specified type.\n"
+"The value will be stored as text."
+msgstr ""
+"દાખલ થયેલ મૂલ્ય એ સ્પષ્ટ થયેલ પ્રકાર સાથે બંધબેસતુ નથી.\n"
+"મૂલ્ય એ લખાણ તરીકે સંગ્રહ થયેલ હશે."
+
+#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.pageitem.text
+msgid "General"
+msgstr "સામાન્ય"
+
+#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.pageitem.text
+msgid "Description"
+msgstr "વર્ણન"
+
+#: dinfdlg.src#SID_DOCINFO.1.TP_CUSTOMPROPERTIES.pageitem.text
+msgid "Custom Properties"
+msgstr "વૈવિધ્ય ગુણધર્મો"
+
+#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.pageitem.text
+msgid "Internet"
+msgstr "ઈન્ટરનેટ"
+
+#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFOSECURITY.pageitem.text
+msgid "Security"
+msgstr "સુરક્ષા"
+
+#: dinfdlg.src#SID_DOCINFO.tabdialog.text
+msgid "Properties of "
+msgstr "ના ગુણધર્મો "
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FL_DURATION.fixedline.text
+msgctxt "dinfdlg.src#RID_EDIT_DURATIONS.FL_DURATION.fixedline.text"
+msgid "Duration"
+msgstr "સમયગાળો"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.CB_NEGATIVE.checkbox.text
+msgid "~Negative"
+msgstr "નકારાત્મક (~N)"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_YEAR.fixedtext.text
+msgid "~Years"
+msgstr "વર્ષો (~Y)"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_MONTH.fixedtext.text
+msgid "~Months"
+msgstr "મહિનાઓ (~M)"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_DAY.fixedtext.text
+msgid "~Days"
+msgstr "દિવસો (~D)"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_HOUR.fixedtext.text
+msgid "H~ours"
+msgstr "કલાકો (~o)"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_MINUTE.fixedtext.text
+msgid "Min~utes"
+msgstr "મિનિટો (~u)"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_SECOND.fixedtext.text
+msgid "~Seconds"
+msgstr "સેકંડો (~S)"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.FT_MSECOND.fixedtext.text
+msgid "Millise~conds"
+msgstr "મિલિસેકંડો (~c)"
+
+#: dinfdlg.src#RID_EDIT_DURATIONS.modaldialog.text
+msgid "Edit Duration"
+msgstr "સમયગાળામાં ફેરફાર કરો"
+
+#: dinfedt.src#DLG_DOCINFO_EDT.FL_INFO.fixedline.text
+msgid "Names"
+msgstr "નામો"
+
+#: dinfedt.src#DLG_DOCINFO_EDT.modaldialog.text
+msgid "Edit Field Names"
+msgstr "ક્ષેત્ર નામોમાં ફેરફાર કરો"
+
+#: filedlghelper.src#STR_SFX_FILEDLG_ACTUALVERSION.string.text
+msgid "Current version"
+msgstr "વર્તમાન આવૃત્તિ"
+
+#: filedlghelper.src#STR_SFX_EXPLORERFILE_EXPORT.string.text
+msgid "Export"
+msgstr "નિકાસ"
+
+#: filedlghelper.src#STR_SFX_EXPLORERFILE_INSERT.string.text
+msgid "Insert"
+msgstr "ઉમેરો"
+
+#: filedlghelper.src#STR_SFX_EXPLORERFILE_BUTTONINSERT.string.text
+msgid "~Insert"
+msgstr "ઉમેરો (~I)"
+
+#: filedlghelper.src#STR_SFX_IMPORT_ALL.string.text
+msgid "<All formats>"
+msgstr "<બધાં બંધારણો>"
+
+#: filedlghelper.src#STR_CB_AUTO_EXTENSION.string.text
+msgid "~Automatic file name extension"
+msgstr "આપમેળે ફાઇલ નામ પ્રત્યય (~A)"
+
+#: filedlghelper.src#STR_CB_SELECTION.string.text
+msgid "~Selection"
+msgstr "પસંદગી (~S)"
+
+#: filedlghelper.src#STR_CB_INSERT_AS_LINK.string.text
+msgid "~Link"
+msgstr "કડી (~L)"
+
+#: filedlghelper.src#STR_CB_SHOW_PREVIEW.string.text
+msgid "Pr~eview"
+msgstr "પૂર્વદર્શન (~e)"
+
+#: filedlghelper.src#STR_CB_READONLY.string.text
+msgctxt "filedlghelper.src#STR_CB_READONLY.string.text"
+msgid "~Read-only"
+msgstr "ફક્ત-વાંચી શકાય (~R)"
+
+#: filedlghelper.src#STR_CB_PASSWORD.string.text
+msgid "Save with ~password"
+msgstr "પાસવર્ડ સાથે સંગ્રહિત કરો (~p)"
+
+#: filedlghelper.src#STR_CB_FILTER_OPTIONS.string.text
+msgid "Edit ~filter settings"
+msgstr "ગાળક સુયોજના ફેરફાર કરો (~f)"
+
+#: filedlghelper.src#STR_PB_PLAY.string.text
+msgid "~Play"
+msgstr "વગાડો (~P)"
+
+#: filedlghelper.src#STR_PB_STOP.string.text
+msgid "Sto~p"
+msgstr "અટકાવો (~p)"
+
+#: filedlghelper.src#STR_PB_OPEN.string.text
+msgid "~Open"
+msgstr "ખોલો (~O)"
+
+#: filedlghelper.src#STR_PB_SAVE.string.text
+msgid "~Save"
+msgstr "સંગ્રહ કરો (~S)"
+
+#: filedlghelper.src#STR_LB_IMAGE_TEMPLATE.string.text
+msgid "Style:"
+msgstr "શૈલી:"
+
+#: filedlghelper.src#STR_LB_TEMPLATES.string.text
+msgid "~Templates:"
+msgstr "ટેમ્પ્લેટ્સ (~T):"
+
+#: filedlghelper.src#STR_LB_VERSION.string.text
+msgid "~Version:"
+msgstr "આવૃત્તિ (~V):"
+
+#: mailwindow.src#RID_ERRBOX_MAIL_CONFIG.errorbox.text
+msgid ""
+"%PRODUCTNAME was unable to find a working e-mail configuration. Please save "
+"this document locally instead and attach it from within your e-mail client."
+msgstr ""
+"%PRODUCTNAME એ ઈ-મેઈલ રૂપરેખાંકન સાથે કામ કરીને શોધવામાં અસમર્થ હતું. "
+"મહેરબાની કરીને આ દસ્તાવેજને સ્થાનિક રીતે સંગ્રહ કરો અને તેને તમારા ઈ-મેઈલ "
+"ક્લાયન્ટ સાથે જોડો."
+
+#: mgetempl.src#TP_MANAGE_STYLES.FT_NAME.fixedtext.text
+msgid "~Name"
+msgstr "નામ (~N)"
+
+#: mgetempl.src#TP_MANAGE_STYLES.CB_AUTO.checkbox.text
+msgid "~AutoUpdate"
+msgstr "આપમેળે સુધારો (~A)"
+
+#: mgetempl.src#TP_MANAGE_STYLES.FT_NEXT.fixedtext.text
+msgid "Ne~xt Style"
+msgstr "પછીની શૈલી (~x)"
+
+#: mgetempl.src#TP_MANAGE_STYLES.FT_BASE.fixedtext.text
+msgid "Linked with"
+msgstr "સાથે સંકળાયેલ છે"
+
+#: mgetempl.src#TP_MANAGE_STYLES.FT_REGION.fixedtext.text
+msgid "~Category"
+msgstr "વર્ગ (~C)"
+
+#: mgetempl.src#TP_MANAGE_STYLES.GB_DESC.fixedline.text
+msgid "Contains"
+msgstr "સમાવે છે"
+
+#: newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.FL_COL.fixedline.text
+msgid "Style name"
+msgstr "શૈલી નામ"
+
+#: newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MSG_OVERWRITE.querybox.text
+msgid "Style already exists. Overwrite?"
+msgstr "શૈલી પહેલેથી હાજર છે. ઉપર લખશો?"
+
+#: newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.modaldialog.text
+msgid "Create Style"
+msgstr "શૈલી બનાવો"
+
+#: passwd.src#DLG_PASSWD.FT_PASSWD_USER.fixedtext.text
+msgid "~User"
+msgstr "વપરાશકર્તા (~U)"
+
+#: passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD.fixedtext.text
+msgid "~Password"
+msgstr "પાસવર્ડ (~P)"
+
+#: passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM.fixedtext.text
+msgid "~Confirm"
+msgstr "ખાતરી (~C)"
+
+#: passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.fixedline.text
+#, fuzzy
+msgctxt "passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.fixedline.text"
+msgid "Password"
+msgstr "પાસવર્ડ"
+
+#: passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD2.fixedtext.text
+#, fuzzy
+msgid "P~assword"
+msgstr "પાસવર્ડ"
+
+#: passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM2.fixedtext.text
+#, fuzzy
+msgid "Confir~m"
+msgstr "ખાતરી (~C)"
+
+#: passwd.src#DLG_PASSWD.TEXT_PASSWD.string.text
+#, fuzzy
+msgctxt "passwd.src#DLG_PASSWD.TEXT_PASSWD.string.text"
+msgid "Password"
+msgstr "પાસવર્ડ"
+
+#: passwd.src#DLG_PASSWD.modaldialog.text
+msgid "Enter Password"
+msgstr "પાસવર્ડ દાખલ કરો"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.fixedline.text
+msgid "Reduce print data"
+msgstr "છાપવાની માહિતી ઘટાડો"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.FT_OUTPUTTYPE.fixedtext.text
+msgid "Settings for"
+msgstr "ના માટેની સુયોજના"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTEROUTPUT.radiobutton.text
+msgid "~Printer"
+msgstr "પ્રિન્ટર (~P)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTFILEOUTPUT.radiobutton.text
+msgid "Print to ~file"
+msgstr "ફાઇલ પર છાપો (~f)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCETRANSPARENCY.checkbox.text
+msgid "~Reduce transparency"
+msgstr "પારદર્શકતા ઘટાડો (~R)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_AUTO.radiobutton.text
+msgid "Auto~matically"
+msgstr "આપમેળે (~m)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_NONE.radiobutton.text
+msgid "~No transparency"
+msgstr "પારદર્શકતા નહી (~N)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEGRADIENTS.checkbox.text
+msgid "Reduce ~gradients"
+msgstr "ઢાળ ઘટાડો (~g)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_STRIPES.radiobutton.text
+msgid "Gradient ~stripes"
+msgstr "ઢાળ પટ્ટીઓ (~s)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_COLOR.radiobutton.text
+msgid "Intermediate ~color"
+msgstr "વચ્ચેનો રંગ (~c)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS.checkbox.text
+msgid "Reduce ~bitmaps"
+msgstr "બીટમેપો ઘટાડો (~b)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_OPTIMAL.radiobutton.text
+msgid "~High print quality"
+msgstr "ઊંચી છાપવાની ગુણવત્તા (~H)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_NORMAL.radiobutton.text
+msgid "N~ormal print quality"
+msgstr "સામાન્ય છાપવાની ગુણવત્તા (~o)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_RESOLUTION.radiobutton.text
+msgid "Reso~lution"
+msgstr "રીઝોલ્યુશન (~l)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.1.stringlist.text
+msgid "72 DPI"
+msgstr "૭૨ DPI"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.2.stringlist.text
+msgid "96 DPI"
+msgstr "૯૬ DPI"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.3.stringlist.text
+msgid "150 DPI (Fax)"
+msgstr "૧૫૦ DPI (ફેક્સ)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.4.stringlist.text
+msgid "200 DPI (default)"
+msgstr "૨૦૦ DPI (મૂળભુત)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.5.stringlist.text
+msgid "300 DPI"
+msgstr "૩૦૦ DPI"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.6.stringlist.text
+msgid "600 DPI"
+msgstr "૬૦૦ DPI"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS_TRANSPARENCY.checkbox.text
+msgid "Include transparent ob~jects"
+msgstr "પારદર્શક વસ્તુઓ ઉમેરો (~j)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_CONVERTTOGREYSCALES.checkbox.text
+msgid "Con~vert colors to grayscale"
+msgstr "રંગોને ગ્રેસ્કેલમાં રુપાંતરીત કરો (~v)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.GB_PRINT_WARN.fixedline.text
+msgid "Printer warnings"
+msgstr "પ્રિન્ટરની ચેતવણીઓ"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERSIZE.checkbox.text
+msgid "P~aper size"
+msgstr "કાગળનું માપ (~a)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERORIENTATION.checkbox.text
+msgid "Pap~er orientation"
+msgstr "કાગળની દિશા (~e)"
+
+#: printopt.src#TP_COMMONPRINTOPTIONS.CB_TRANSPARENCY.checkbox.text
+msgid "~Transparency"
+msgstr "પારદર્શકતા (~T)"
+
+#: printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.fixedtext.text
+msgid ""
+"Your document contains transparent objects.\n"
+"This may lead to longer printing time on certain\n"
+"printers. Should the aspect of transparency\n"
+"be reduced?"
+msgstr ""
+"તમારું દસ્તાવેજ પારદર્શક ઓબ્જેક્ટો સમાવે છે.\n"
+"આ ચોક્કસ પ્રિન્ટરો પર લાંબો છાપન સમય લઈ\n"
+"શકે છે. શું પારદર્શકતાનો મુદ્દો ઘટાડવો\n"
+"જોઈએ?"
+
+#: printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.okbutton.text
+msgid "~Yes"
+msgstr "હા (~Y)"
+
+#: printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_NO.pushbutton.text
+msgid "~No"
+msgstr "ના (~N)"
+
+#: printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_CANCEL.cancelbutton.text
+msgid "~Cancel"
+msgstr "રદ કરો (~C)"
+
+#: printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.checkbox.text
+msgid "~Do not show warning again"
+msgstr "ફરી ચેતવણી દેખાડશો નહી (~D)"
+
+#: printopt.src#RID_WARN_PRINTTRANSPARENCY.modaldialog.text
+msgid "Warning"
+msgstr "ચેતવણી"
+
+#: recfloat.src#SID_RECORDING_FLOATWINDOW.floatingwindow.text
+msgid "Record Macro"
+msgstr "મેક્રો રેકોર્ડ કરો"
+
+#: recfloat.src#STR_MACRO_LOSS.string.text
+msgid ""
+"Do you really want to cancel the recording? Any steps recorded up to this "
+"point will be lost."
+msgstr ""
+"શુ ખરેખર તમે રેકોર્ડ કરવાનું બંધ કરવા માગો છો? અત્યાર સુધી કરેલુ બધુ રેકોર્ડ "
+"દૂર થઇ જશે."
+
+#: recfloat.src#STR_CANCEL_RECORDING.string.text
+msgid "Cancel Recording"
+msgstr "રેકોર્ડ કરવાનુ રદ કરો"
+
+#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FL.fixedline.text
+msgid "File encryption password"
+msgstr "ફાઇલ એનક્રિપ્શન પાસવર્ડ"
+
+#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FT.fixedtext.text
+msgid "~Enter password to open"
+msgstr "ખોલવા માટે પાસવર્ડને દાખલ કરો (~E)"
+
+#: securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_OPEN_FT.fixedtext.text
+msgid "~Reenter password to open"
+msgstr "ખોલવા માટે પાસવર્ડને પુન:દાખલ કરો (~R)"
+
+#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FL.fixedline.text
+msgid "File sharing password"
+msgstr "ફાઇલ વહેંચણી પાસવર્ડ"
+
+#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FT.fixedtext.text
+msgid "Enter password to modify"
+msgstr "બદલવા માટે પાસવર્ડને દાખલ કરો"
+
+#: securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_MODIFY_FT.fixedtext.text
+msgid "Reenter password to modify"
+msgstr "બદલવા માટે પાસવર્ડને પુન:દાખલ કરો"
+
+#: securitypage.src#TP_DOCINFOSECURITY.OPTIONS_FL.fixedline.text
+msgid "File sharing options"
+msgstr "ફાઇલ વહેંચણી વિકલ્પો"
+
+#: securitypage.src#TP_DOCINFOSECURITY.OPEN_READONLY_CB.checkbox.text
+msgid "~Open file read-only"
+msgstr "ફક્ત વાંચી શકાય તેવી ફાઇલને ખોલો (~O)"
+
+#: securitypage.src#TP_DOCINFOSECURITY.RECORD_CHANGES_CB.checkbox.text
+msgid "Record ~changes"
+msgstr "બદલાવોને નોંધો (~c)"
+
+#: securitypage.src#TP_DOCINFOSECURITY.STR_PROTECT.string.text
+msgid "~Protect..."
+msgstr "સુરક્ષિત રાખો (~P)..."
+
+#: securitypage.src#TP_DOCINFOSECURITY.STR_UNPROTECT.string.text
+msgid "~Unprotect..."
+msgstr "અસુરક્ષિત રાખો (~U)..."
+
+#: securitypage.src#TP_DOCINFOSECURITY.STR_END_REDLINING_WARNING.string.text
+msgid ""
+"This action will exit the change recording mode.\n"
+"Any information about changes will be lost.\n"
+"\n"
+"Exit change recording mode?\n"
+"\n"
+msgstr ""
+"આ ક્રિયા રેકોર્ડિંગ સ્થિતિને બદલતા જ બહાર નીકળી જશે.\n"
+"બદલાવો વિશે કોઇપણ જાણકારી ગુમ થઇ જશે.\n"
+"\n"
+"શું તમે રેકોર્ડિંગ સ્થિતિ બદલાવમાંથી બહાર નીકળવા માંગો છો?\n"
+"\n"
+
+#: securitypage.src#RID_SFX_PROTECT_RECORDS.string.text
+msgid "Protect Records"
+msgstr "નોંધોને સુરક્ષિત રાખો"
+
+#: securitypage.src#RID_SFX_UNPROTECT_RECORDS.string.text
+msgid "Unprotect Records"
+msgstr "નોંધોને અસુરક્ષિત રાખો"
+
+#: securitypage.src#RID_SFX_INCORRECT_PASSWORD.string.text
+msgid "Incorrect password"
+msgstr "અયોગ્ય પાસવર્ડ"
+
+#: srchdlg.src#RID_DLG_SEARCH.FT_SEARCH.fixedtext.text
+msgid "~Search for"
+msgstr "ના માટે શોધો (~S)"
+
+#: srchdlg.src#RID_DLG_SEARCH.CB_WHOLEWORDS.checkbox.text
+msgid "~Whole words only"
+msgstr "માત્ર આખો શબ્દ (~W)"
+
+#: srchdlg.src#RID_DLG_SEARCH.CB_MATCHCASE.checkbox.text
+msgid "~Match case"
+msgstr "કેસ સરખાવો (~M)"
+
+#: srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.checkbox.text
+msgctxt "srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.checkbox.text"
+msgid "Wrap ~around"
+msgstr "આસપાસ લપેટો (~a)"
+
+#: srchdlg.src#RID_DLG_SEARCH.CB_BACKWARDS.checkbox.text
+msgid "~Backwards"
+msgstr "પાછળ તરફ (~B)"
+
+#: srchdlg.src#RID_DLG_SEARCH.PB_FIND.pushbutton.text
+msgid "~Find"
+msgstr "શોધો (~F)"
+
+#: srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.cancelbutton.text
+msgctxt "srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.cancelbutton.text"
+msgid "~Close"
+msgstr "બંધ કરો (~C)"
+
+#: srchdlg.src#RID_DLG_SEARCH.STR_TOGGLE.string.text
+msgctxt "srchdlg.src#RID_DLG_SEARCH.STR_TOGGLE.string.text"
+msgid "Wrap ~around"
+msgstr "આસપાસ લપેટો (~a)"
+
+#: srchdlg.src#RID_DLG_SEARCH.modelessdialog.text
+msgid "Find on this Page"
+msgstr "આ પાનાં પર શોધો"
+
+#: taskpane.src#STR_SFX_DOCK.string.text
+msgid "Dock"
+msgstr "ડૉક કરો "
+
+#: taskpane.src#STR_SFX_UNDOCK.string.text
+msgid "Undock"
+msgstr "ડૉક ન કરો"
+
+#: taskpane.src#STR_SFX_TASK_PANE_VIEW.string.text
+msgid "View"
+msgstr "દૃશ્ય"
+
+#: taskpane.src#STR_SFX_TASKS.string.text
+msgid "Tasks"
+msgstr "કાર્યો"
+
+#: templdlg.src#RID_STYLECATALOG.BT_ORG.pushbutton.text
+msgid "~Organizer..."
+msgstr "આયોજક (~O)..."
+
+#: templdlg.src#RID_STYLECATALOG.BT_DEL.pushbutton.text
+msgid "~Delete..."
+msgstr "કાઢી નાંખો (~D)..."
+
+#: templdlg.src#RID_STYLECATALOG.BT_EDIT.pushbutton.text
+msgid "~Modify..."
+msgstr "સુધારો (~M)..."
+
+#: templdlg.src#RID_STYLECATALOG.BT_NEW.pushbutton.text
+msgid "~New..."
+msgstr "નવું (~N)..."
+
+#: templdlg.src#RID_STYLECATALOG.modaldialog.text
+msgid "Style Catalog"
+msgstr "શૈલી માહિતીપુસ્તિકા"
+
+#: templdlg.src#STR_STYLE_ELEMTLIST.string.text
+msgid "Style List"
+msgstr ""
+
+#: templdlg.src#STR_STYLE_FILTER_HIERARCHICAL.string.text
+msgid "Hierarchical"
+msgstr "વંશવેલાવાળું"
+
+#: templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_WATERCAN.toolboxitem.text
+msgid "Fill Format Mode"
+msgstr "બંધારણ ભરવાની સ્થિતિ"
+
+#: templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_NEW_BY_EXAMPLE.toolboxitem.text
+msgid "New Style from Selection"
+msgstr "પસંદગીમાંથી નવી શૈલી"
+
+#: templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_UPDATE_BY_EXAMPLE.toolboxitem.text
+msgid "Update Style"
+msgstr "શૈલી સુધારો"
+
+#: templdlg.src#DLG_STYLE_DESIGNER.dockingwindow.text
+msgid "Styles and Formatting"
+msgstr "શૈલીઓ અને બંધારણ"
+
+#: versdlg.src#DLG_VERSIONS.GB_NEWVERSIONS.fixedline.text
+msgid "New versions"
+msgstr "નવી આવૃત્તિઓ"
+
+#: versdlg.src#DLG_VERSIONS.PB_SAVE.pushbutton.text
+msgid "Save ~New Version"
+msgstr "નવી આવૃત્તિ સંગ્રહો (~N)"
+
+#: versdlg.src#DLG_VERSIONS.CB_SAVEONCLOSE.checkbox.text
+msgid "~Always save a version on closing"
+msgstr "હંમેશા બંધ કરતી વખતે આવૃત્તિને સંગ્રહો (~A)"
+
+#: versdlg.src#DLG_VERSIONS.GB_OLDVERSIONS.fixedline.text
+msgid "Existing versions"
+msgstr "અસ્તિત્વ ધરાવતી આવૃત્તિઓ"
+
+#: versdlg.src#DLG_VERSIONS.FT_DATETIME.fixedtext.text
+msgid "Date and time"
+msgstr "તારીખ અને સમય"
+
+#: versdlg.src#DLG_VERSIONS.FT_SAVEDBY.fixedtext.text
+msgid "Saved by"
+msgstr "વડે સંગ્રહિત"
+
+#: versdlg.src#DLG_VERSIONS.FT_COMMENTS.fixedtext.text
+msgid "Comments"
+msgstr "ટિપ્પણીઓ"
+
+#: versdlg.src#DLG_VERSIONS.PB_CLOSE.cancelbutton.text
+msgid "Close"
+msgstr "બંધ કરો"
+
+#: versdlg.src#DLG_VERSIONS.PB_OPEN.pushbutton.text
+msgid "Open"
+msgstr "ખોલો"
+
+#: versdlg.src#DLG_VERSIONS.PB_VIEW.pushbutton.text
+msgid "~Show..."
+msgstr "બતાવો (~S)..."
+
+#: versdlg.src#DLG_VERSIONS.PB_DELETE.pushbutton.text
+msgid "~Delete"
+msgstr "દૂર કરો (~D)"
+
+#: versdlg.src#DLG_VERSIONS.PB_COMPARE.pushbutton.text
+msgid "Compare"
+msgstr "સરખાવો"
+
+#: versdlg.src#DLG_VERSIONS.modaldialog.text
+msgid "Versions of"
+msgstr "આની આવૃત્તિઓ"
+
+#: versdlg.src#DLG_COMMENTS.FT_DATETIME.fixedtext.text
+msgid "Date and time : "
+msgstr "તારીખ અને સમય : "
+
+#: versdlg.src#DLG_COMMENTS.FT_SAVEDBY.fixedtext.text
+msgid "Saved by "
+msgstr "આના વડે સંગ્રહિત "
+
+#: versdlg.src#DLG_COMMENTS.PB_CLOSE.pushbutton.text
+msgctxt "versdlg.src#DLG_COMMENTS.PB_CLOSE.pushbutton.text"
+msgid "~Close"
+msgstr "બંધ કરો (~C)"
+
+#: versdlg.src#DLG_COMMENTS.modaldialog.text
+msgid "Insert Version Comment"
+msgstr "આવૃત્તિ ટિપ્પણી ઉમેરો"
+
+#: versdlg.src#DLG_COMMENTS.string.text
+msgid "Version comment"
+msgstr "આવૃત્તિ ટિપ્પણી"
+
+#~ msgid "Confirm password"
+#~ msgstr "ખાતરી માટેનો પાસવર્ડ"

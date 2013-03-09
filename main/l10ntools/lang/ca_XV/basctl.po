@@ -1,0 +1,907 @@
+"X-Language: ca-XV\n"
+
+#: dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.string.text
+msgid "Properties: "
+msgstr "Propietats: "
+
+#: dlgresid.src#RID_STR_BRWTITLE_NO_PROPERTIES.string.text
+msgid "No Control marked"
+msgstr "Sense marques de control"
+
+#: dlgresid.src#RID_STR_BRWTITLE_MULTISELECT.string.text
+msgid "Multiselection"
+msgstr "Selecció múltiple"
+
+#: managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_LANGUAGE.fixedtext.text
+msgid "Present Languages"
+msgstr "Llengües presents"
+
+#: managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_ADD_LANG.pushbutton.text
+msgid "Add..."
+msgstr "Afig..."
+
+#: managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_DEL_LANG.pushbutton.text
+msgid "Delete"
+msgstr "Suprimeix"
+
+#: managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_MAKE_DEFAULT.pushbutton.text
+msgid "Default"
+msgstr "Per defecte"
+
+#: managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.fixedtext.text
+msgid ""
+"The default language is used if no localization for a user interface locale "
+"is present. Furthermore all strings from the default language are copied to "
+"resources of newly added languages."
+msgstr ""
+"La llengua per defecte s'utilitza si no hi ha cap localització d'interfície "
+"d'usuari local present. A més, totes les cadenes de la llengua per defecte "
+"es copien als recursos de les llengües afegides."
+
+#: managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.okbutton.text
+msgid "~Close"
+msgstr "~Tanca"
+
+#: managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DEF_LANG.string.text
+msgid "[Default Language]"
+msgstr "[Llengua per defecte]"
+
+#: managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DELETE.string.text
+msgid "~Delete"
+msgstr "~Suprimeix"
+
+#: managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_CREATE_LANG.string.text
+msgid "<Press 'Add' to create language resources>"
+msgstr "<Premeu 'Afig' per crear recursos de llengua>"
+
+#: managelang.src#RID_DLG_MANAGE_LANGUAGE.modaldialog.text
+msgid "Manage User Interface Languages [$1]"
+msgstr "Gestiona les llengües de la interfície d'usuari [$1]"
+
+#: managelang.src#RID_QRYBOX_LANGUAGE.querybox.text
+msgid ""
+"You are about to delete the resources for the selected language(s). All user "
+"interface strings for this language(s) will be deleted.\n"
+"\n"
+"Do you want to delete the resources of the selected language(s)?"
+msgstr ""
+"Se suprimiran els recursos de les llengües seleccionades, incloses totes les "
+"cadenes de la interfície d'usuari.\n"
+"\n"
+"Voleu suprimir els recursos de les llengües seleccionades?"
+
+#: managelang.src#RID_QRYBOX_LANGUAGE.querybox.title
+msgid "Delete Language Resources"
+msgstr "Elimina els recursos de llengües"
+
+#: managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_LANGUAGE.fixedtext.text
+msgid "Default language"
+msgstr "Llengua per defecte"
+
+#: managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.fixedtext.text
+msgid ""
+"Select a language to define the default user interface language. All "
+"currently present strings will be assigned to the resources created for the "
+"selected language."
+msgstr ""
+"Seleccioneu una llengua per definir la llengua per defecte de la interfície "
+"d'usuari. Totes les cadenes actuals s'assignaran als recursos creats per a "
+"la llengua seleccionada."
+
+#: managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_TITLE.string.text
+msgid "Add User Interface Languages"
+msgstr "Afig llengües de la interfície d'usuari"
+
+#: managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_LABEL.string.text
+msgid "Available Languages"
+msgstr "Llengües disponibles"
+
+#: managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_INFO.string.text
+msgid ""
+"Select languages to be added. Resources for these languages will be created "
+"in the library. Strings of the current default user interface language will "
+"be copied to these new resources by default."
+msgstr ""
+"Seleccioneu les llengües que voleu afegir. Els recursos per estes llengües "
+"es crearan a la biblioteca. Les cadenes de la llengua per defecte actual de "
+"la interfície d'usuari es copiaran a estos nous recursos per defecte."
+
+#: managelang.src#RID_DLG_SETDEF_LANGUAGE.modaldialog.text
+msgid "Set Default User Interface Language"
+msgstr "Estableix la llengua per defecte de la interfície d'usuari"
+"X-Accelerator-Marker: ~\n"
+"X-Language: ca-XV\n"
+
+#: basicprint.src#RID_PRINTDLG_STRLIST.1.itemlist.text
+msgid "Print range"
+msgstr "Àrea d'impressió"
+
+#: basicprint.src#RID_PRINTDLG_STRLIST.2.itemlist.text
+msgid "All ~Pages"
+msgstr "Totes les ~pàgines"
+
+#: basicprint.src#RID_PRINTDLG_STRLIST.3.itemlist.text
+msgid "Pa~ges"
+msgstr "Pà~gines"
+
+#: basidesh.src#RID_STR_FILTER_ALLFILES.string.text
+msgid "<All>"
+msgstr "<Tot>"
+
+#: basidesh.src#RID_STR_NOMODULE.string.text
+msgid "< No Module >"
+msgstr "<Cap mòdul>"
+
+#: basidesh.src#RID_STR_WRONGPASSWORD.string.text
+msgid "Incorrect Password"
+msgstr "Contrasenya incorrecta"
+
+#: basidesh.src#RID_STR_OPEN.string.text
+msgid "Load"
+msgstr "Carrega"
+
+#: basidesh.src#RID_STR_SAVE.string.text
+msgid "Save"
+msgstr "Alça"
+
+#: basidesh.src#RID_STR_SOURCETOBIG.string.text
+msgid ""
+"The source text is too large and can be neither compiled nor saved.\n"
+"Delete some of the comments or transfer some methods into another module."
+msgstr ""
+"El codi font és massa gran i no es pot compilar ni alçar.\n"
+"Suprimiu alguns dels comentaris o transferiu alguns mètodes a un altre "
+"mòdul."
+
+#: basidesh.src#RID_STR_ERROROPENSTORAGE.string.text
+msgid "Error opening file"
+msgstr "S'ha produït un error en obrir el fitxer"
+
+#: basidesh.src#RID_STR_ERROROPENLIB.string.text
+msgid "Error loading library"
+msgstr "S'ha produït un error en carregar la biblioteca"
+
+#: basidesh.src#RID_STR_NOLIBINSTORAGE.string.text
+msgid "The file does not contain any BASIC libraries"
+msgstr "El fitxer no conté cap biblioteca del BASIC"
+
+#: basidesh.src#RID_STR_BADSBXNAME.string.text
+msgid "Invalid Name"
+msgstr "El nom no és vàlid"
+
+#: basidesh.src#RID_STR_LIBNAMETOLONG.string.text
+msgid "A library name can have up to 30 characters."
+msgstr "Un nom de biblioteca pot tindre fins a 30 caràcters."
+
+#: basidesh.src#RID_STR_ERRORCHOOSEMACRO.string.text
+msgid "Macros from other documents are not accessible."
+msgstr "Les macros d'altres documents no són accessibles."
+
+#: basidesh.src#RID_STR_LIBISREADONLY.string.text
+msgid "This library is read-only."
+msgstr "Esta biblioteca és només de lectura."
+
+#: basidesh.src#RID_STR_REPLACELIB.string.text
+msgid "'XX' cannot be replaced."
+msgstr "No es pot reemplaçar 'XX'."
+
+#: basidesh.src#RID_STR_IMPORTNOTPOSSIBLE.string.text
+msgid "'XX' cannot be added."
+msgstr "No es pot afegir 'XX'."
+
+#: basidesh.src#RID_STR_NOIMPORT.string.text
+msgid "'XX' was not added."
+msgstr "No s'ha afegit 'XX'."
+
+#: basidesh.src#RID_STR_ENTERPASSWORD.string.text
+msgid "Enter password for 'XX'"
+msgstr "Introduïu la contrasenya per a 'XX'"
+
+#: basidesh.src#RID_STR_SBXNAMEALLREADYUSED.string.text
+msgid "Name already exists"
+msgstr "Este nom ja existeix"
+
+#: basidesh.src#RID_STR_SIGNED.string.text
+msgid "(Signed)"
+msgstr "(Signat)"
+
+#: basidesh.src#RID_STR_SBXNAMEALLREADYUSED2.string.text
+msgid "Object with same name already exists"
+msgstr "Ja hi ha un objecte amb el mateix nom"
+
+#: basidesh.src#RID_STR_FILEEXISTS.string.text
+msgid "The 'XX' file already exists"
+msgstr "El fitxer 'XX' ja existeix"
+
+#: basidesh.src#RID_STR_CANNOTRUNMACRO.string.text
+msgid ""
+"For security reasons, you cannot run this macro.\n"
+"\n"
+"For more information, check the security settings."
+msgstr ""
+"Per raons de seguretat, no podeu executar esta macro.\n"
+"\n"
+"Per a més informació, comproveu els paràmetres de seguretat."
+
+#: basidesh.src#RID_STR_COMPILEERROR.string.text
+msgid "Compile Error: "
+msgstr "S'ha produït un error de compilació: "
+
+#: basidesh.src#RID_STR_RUNTIMEERROR.string.text
+msgid "Runtime Error: #"
+msgstr "S'ha produït un error d'execució: #"
+
+#: basidesh.src#RID_STR_SEARCHNOTFOUND.string.text
+msgid "Search key not found"
+msgstr "La clau de cerca no s'ha trobat"
+
+#: basidesh.src#RID_STR_SEARCHFROMSTART.string.text
+msgid "Search to last module complete. Continue at first module?"
+msgstr ""
+"S'ha completat la cerca fins a l'últim mòdul. Voleu continuar des del "
+"primer?"
+
+#: basidesh.src#RID_STR_SEARCHREPLACES.string.text
+msgid "Search key replaced XX times"
+msgstr "La clau de cerca s'ha reemplaçat XX vegades"
+
+#: basidesh.src#RID_STR_COULDNTREAD.string.text
+msgid "The file could not be read"
+msgstr "El fitxer no s'ha pogut llegir"
+
+#: basidesh.src#RID_STR_COULDNTWRITE.string.text
+msgid "The file could not be saved"
+msgstr "El fitxer no s'ha pogut alçar"
+
+#: basidesh.src#RID_STR_CANNOTCHANGENAMESTDLIB.string.text
+msgid "The name of the default library cannot be changed."
+msgstr "El nom de la biblioteca per defecte no es pot canviar."
+
+#: basidesh.src#RID_STR_CANNOTCHANGENAMEREFLIB.string.text
+msgid "The name of a referenced library cannot be changed."
+msgstr "El nom d'una biblioteca referenciada no es pot canviar."
+
+#: basidesh.src#RID_STR_CANNOTUNLOADSTDLIB.string.text
+msgid "The default library cannot be deactivated"
+msgstr "La biblioteca per defecte no es pot desactivar"
+
+#: basidesh.src#RID_STR_GENERATESOURCE.string.text
+msgid "Generating source"
+msgstr "S'està generant la font"
+
+#: basidesh.src#RID_STR_FILENAME.string.text
+msgid "File name:"
+msgstr "Nom del fitxer:"
+
+#: basidesh.src#RID_STR_APPENDLIBS.string.text
+msgid "Import Libraries"
+msgstr "Importa biblioteques"
+
+#: basidesh.src#RID_STR_QUERYDELMACRO.string.text
+msgid "Do you want to delete the macro XX?"
+msgstr "Voleu suprimir la macro XX?"
+
+#: basidesh.src#RID_STR_QUERYDELDIALOG.string.text
+msgid "Do you want to delete the XX dialog?"
+msgstr "Voleu suprimir el diàleg XX?"
+
+#: basidesh.src#RID_STR_QUERYDELLIB.string.text
+msgid "Do you want to delete the XX library?"
+msgstr "Voleu suprimir la biblioteca XX?"
+
+#: basidesh.src#RID_STR_QUERYDELLIBREF.string.text
+msgid "Do you want to delete the reference to the XX library?"
+msgstr "Voleu suprimir la referència a la biblioteca XX?"
+
+#: basidesh.src#RID_STR_QUERYDELMODULE.string.text
+msgid "Do you want to delete the XX module?"
+msgstr "Voleu suprimir el mòdul XX?"
+
+#: basidesh.src#RID_STR_OBJNOTFOUND.string.text
+msgid "Object or method not found"
+msgstr "No s'ha trobat l'objecte o el mètode"
+
+#: basidesh.src#RID_STR_BASIC.string.text
+msgid "BASIC"
+msgstr "BASIC"
+
+#: basidesh.src#RID_STR_LINE.string.text
+msgid "Ln"
+msgstr "Lín"
+
+#: basidesh.src#RID_STR_COLUMN.string.text
+msgid "Col"
+msgstr "Col"
+
+#: basidesh.src#RID_STR_DOC.string.text
+msgid "Document"
+msgstr "Document"
+
+#: basidesh.src#RID_BASICIDE_OBJECTBAR.string.text
+msgid "Macro Bar"
+msgstr "Barra de macros"
+
+#: basidesh.src#RID_STR_CANNOTCLOSE.string.text
+msgid "The window cannot be closed while BASIC is running."
+msgstr "La finestra no es pot tancar mentre s'executa el BASIC."
+
+#: basidesh.src#RID_STR_REPLACESTDLIB.string.text
+msgid "The default library cannot be replaced."
+msgstr "La biblioteca per defecte no es pot reemplaçar."
+
+#: basidesh.src#RID_STR_REFNOTPOSSIBLE.string.text
+msgid "Reference to 'XX' not possible."
+msgstr "La referència a 'XX' no és possible."
+
+#: basidesh.src#RID_STR_WATCHNAME.string.text
+msgid "Watch"
+msgstr "Observador"
+
+#: basidesh.src#RID_STR_WATCHVARIABLE.string.text
+msgid "Variable"
+msgstr "Variable"
+
+#: basidesh.src#RID_STR_WATCHVALUE.string.text
+msgid "Value"
+msgstr "Valor"
+
+#: basidesh.src#RID_STR_WATCHTYPE.string.text
+msgid "Type"
+msgstr "Tipus"
+
+#: basidesh.src#RID_STR_STACKNAME.string.text
+msgid "Call Stack"
+msgstr "Pila de crides"
+
+#: basidesh.src#RID_STR_INITIDE.string.text
+msgid "BASIC Initialization"
+msgstr "Inicialització del BASIC"
+
+#: basidesh.src#RID_STR_STDMODULENAME.string.text
+msgid "Module"
+msgstr "Mòdul"
+
+#: basidesh.src#RID_STR_STDDIALOGNAME.string.text
+msgctxt "basidesh.src#RID_STR_STDDIALOGNAME.string.text"
+msgid "Dialog"
+msgstr "Quadre de diàleg"
+
+#: basidesh.src#RID_STR_STDLIBNAME.string.text
+msgid "Library"
+msgstr "Biblioteca"
+
+#: basidesh.src#RID_STR_NEWLIB.string.text
+msgid "New Library"
+msgstr "Biblioteca nova"
+
+#: basidesh.src#RID_STR_NEWMOD.string.text
+msgid "New Module"
+msgstr "Mòdul nou"
+
+#: basidesh.src#RID_STR_NEWDLG.string.text
+msgid "New Dialog"
+msgstr "Diàleg nou"
+
+#: basidesh.src#RID_STR_ALL.string.text
+msgid "All"
+msgstr "Tot"
+
+#: basidesh.src#RID_STR_PAGE.string.text
+msgid "Page"
+msgstr "Pàgina"
+
+#: basidesh.src#RID_STR_MACRONAMEREQ.string.text
+msgid "A name must be entered."
+msgstr "S'ha d'introduir un nom."
+
+#: basidesh.src#RID_STR_WILLSTOPPRG.string.text
+msgid ""
+"You will have to restart the program after this edit.\n"
+"Continue?"
+msgstr ""
+"Haureu de reiniciar el programa després d'esta edició.\n"
+"Voleu continuar?"
+
+#: basidesh.src#RID_STR_SEARCHALLMODULES.string.text
+msgid "Do you want to replace the text in all active modules?"
+msgstr "Voleu reemplaçar el text de tots els mòduls actius?"
+
+#: basidesh.src#RID_IMGBTN_REMOVEWATCH.imagebutton.text
+msgid "-"
+msgstr "-"
+
+#: basidesh.src#RID_IMGBTN_REMOVEWATCH.imagebutton.quickhelptext
+msgid "Remove Watch"
+msgstr "Suprimeix l'observador"
+
+#: basidesh.src#RID_STR_REMOVEWATCH.string.text
+msgid "Watch:"
+msgstr "Observador:"
+
+#: basidesh.src#RID_STR_STACK.string.text
+msgid "Calls: "
+msgstr "Crides: "
+
+#: basidesh.src#RID_STR_USERMACROS.string.text
+msgid "My Macros"
+msgstr "Les meues macros"
+
+#: basidesh.src#RID_STR_USERDIALOGS.string.text
+msgid "My Dialogs"
+msgstr "Els meus diàlegs"
+
+#: basidesh.src#RID_STR_USERMACROSDIALOGS.string.text
+msgid "My Macros & Dialogs"
+msgstr "Les meues macros i els meus diàlegs"
+
+#: basidesh.src#RID_STR_SHAREMACROS.string.text
+msgid "%PRODUCTNAME Macros"
+msgstr "Macros de l'%PRODUCTNAME"
+
+#: basidesh.src#RID_STR_SHAREDIALOGS.string.text
+msgid "%PRODUCTNAME Dialogs"
+msgstr "Diàlegs de l'%PRODUCTNAME"
+
+#: basidesh.src#RID_STR_SHAREMACROSDIALOGS.string.text
+msgid "%PRODUCTNAME Macros & Dialogs"
+msgstr "Macros i diàlegs de l'%PRODUCTNAME"
+
+#: basidesh.src#RID_POPUP_BRKPROPS.RID_ACTIV.menuitem.text
+msgctxt "basidesh.src#RID_POPUP_BRKPROPS.RID_ACTIV.menuitem.text"
+msgid "Active"
+msgstr "Actiu"
+
+#: basidesh.src#RID_POPUP_BRKPROPS.RID_BRKPROPS.menuitem.text
+msgctxt "basidesh.src#RID_POPUP_BRKPROPS.RID_BRKPROPS.menuitem.text"
+msgid "Properties..."
+msgstr "Propietats..."
+
+#: basidesh.src#RID_POPUP_BRKPROPS.menu.text
+msgid "Properties"
+msgstr "Propietats"
+
+#: basidesh.src#RID_POPUP_BRKDLG.RID_BRKDLG.menuitem.text
+msgid "Manage Breakpoints..."
+msgstr "Gestió de punts de ruptura..."
+
+#: basidesh.src#RID_POPUP_BRKDLG.menu.text
+msgctxt "basidesh.src#RID_POPUP_BRKDLG.menu.text"
+msgid "Manage Breakpoints"
+msgstr "Gestiona els punts de ruptura"
+
+#: basidesh.src#RID_POPUP_TABBAR.RID_INSERT.SID_BASICIDE_NEWMODULE.menuitem.text
+msgid "BASIC Module"
+msgstr "Mòdul del BASIC"
+
+#: basidesh.src#RID_POPUP_TABBAR.RID_INSERT.SID_BASICIDE_NEWDIALOG.menuitem.text
+msgid "BASIC Dialog"
+msgstr "Diàleg del BASIC"
+
+#: basidesh.src#RID_POPUP_TABBAR.RID_INSERT.menuitem.text
+msgid "Insert"
+msgstr "Insereix"
+
+#: basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_DELETECURRENT.menuitem.text
+msgctxt "basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_DELETECURRENT.menuitem.text"
+msgid "Delete"
+msgstr "Suprimeix"
+
+#: basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_RENAMECURRENT.menuitem.text
+msgctxt "basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_RENAMECURRENT.menuitem.text"
+msgid "Rename"
+msgstr "Reanomena"
+
+#: basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_HIDECURPAGE.menuitem.text
+msgid "Hide"
+msgstr "Amaga"
+
+#: basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_MODULEDLG.menuitem.text
+msgid "Modules..."
+msgstr "Mòduls..."
+
+#: basidesh.src#RID_POPUP_DLGED.SID_SHOW_PROPERTYBROWSER.menuitem.text
+msgctxt "basidesh.src#RID_POPUP_DLGED.SID_SHOW_PROPERTYBROWSER.menuitem.text"
+msgid "Properties..."
+msgstr "Propietats..."
+
+#: basidesh.src#RID_STR_QUERYREPLACEMACRO.string.text
+msgid "Do you want to overwrite the XX macro?"
+msgstr "Voleu sobreescriure la macro XX?"
+
+#: basidesh.src#RID_STR_TRANSLATION_NOTLOCALIZED.string.text
+msgid "<Not localized>"
+msgstr "<Sense localitzar>"
+
+#: basidesh.src#RID_STR_TRANSLATION_DEFAULT.string.text
+msgid "[Default Language]"
+msgstr "[Llengua per defecte]"
+
+#: basidesh.src#RID_STR_DOCUMENT_OBJECTS.string.text
+msgid "Document Objects"
+msgstr "Objectes del document"
+
+#: basidesh.src#RID_STR_USERFORMS.string.text
+msgid "Forms"
+msgstr "Formularis"
+
+#: basidesh.src#RID_STR_NORMAL_MODULES.string.text
+msgctxt "basidesh.src#RID_STR_NORMAL_MODULES.string.text"
+msgid "Modules"
+msgstr "Mòduls"
+
+#: basidesh.src#RID_STR_CLASS_MODULES.string.text
+msgid "Class Modules"
+msgstr "Mòduls de classe"
+
+#: basidesh.src#RID_STR_DLGIMP_CLASH_RENAME.string.text
+msgctxt "basidesh.src#RID_STR_DLGIMP_CLASH_RENAME.string.text"
+msgid "Rename"
+msgstr "Reanomena"
+
+#: basidesh.src#RID_STR_DLGIMP_CLASH_REPLACE.string.text
+msgid "Replace"
+msgstr "Substitueix"
+
+#: basidesh.src#RID_STR_DLGIMP_CLASH_TITLE.string.text
+msgid "Dialog Import - Name already used"
+msgstr "Importació de diàlegs - El nom ja s'està fent servir"
+
+#: basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.string.text
+msgid ""
+"The library already contains a dialog with the name:\n"
+"\n"
+"$(ARG1)\n"
+"\n"
+"Rename dialog to keep current dialog or replace existing dialog.\n"
+" "
+msgstr ""
+"La biblioteca ja conté un diàleg amb el nom\n"
+"\n"
+"$(ARG1)\n"
+"\n"
+"Reanomeneu el nou diàleg per conservar-lo, o bé substituïu el diàleg "
+"existent.\n"
+" "
+
+#: basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.string.text
+msgid "Add"
+msgstr "Afig"
+
+#: basidesh.src#RID_STR_DLGIMP_MISMATCH_OMIT.string.text
+msgid "Omit"
+msgstr "Omet"
+
+#: basidesh.src#RID_STR_DLGIMP_MISMATCH_TITLE.string.text
+msgid "Dialog Import - Language Mismatch"
+msgstr "Importació de diàlegs - Les llengües no concorden"
+
+#: basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.string.text
+msgid ""
+"The dialog to be imported supports other languages than the target library.\n"
+"\n"
+"Add these languages to the library to keep additional language resources "
+"provided by the dialog or omit them to stay with the current library "
+"languages.\n"
+"\n"
+"Note: For languages not supported by the dialog the resources of the "
+"dialog's default language will be used.\n"
+" "
+msgstr ""
+"El diàleg que voleu importar és compatible amb llengües diferents de les de "
+"la biblioteca de destí.\n"
+"\n"
+"Afegiu estes llengües a la biblioteca per conservar els recursos lingüístics "
+"addicionals proporcionats pel diàleg, o ometeu-les per mantindre les "
+"llengües actuals de la biblioteca.\n"
+"\n"
+"Nota: En aquelles llengües no compatibles amb el diàleg, s'empraran els "
+"recursos de la llengua per defecte del diàleg.\n"
+" "
+
+#: brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_NEW.pushbutton.text
+msgid "New"
+msgstr "Nou"
+
+#: brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_DEL.pushbutton.text
+msgctxt "brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_DEL.pushbutton.text"
+msgid "Delete"
+msgstr "Suprimeix"
+
+#: brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_CHKB_ACTIVE.checkbox.text
+msgctxt "brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_CHKB_ACTIVE.checkbox.text"
+msgid "Active"
+msgstr "Actiu"
+
+#: brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_PASS.fixedtext.text
+msgid "Pass Count:"
+msgstr "Recompte de passades:"
+
+#: brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_BRKPOINTS.fixedtext.text
+msgid "Breakpoints"
+msgstr "Punts de ruptura"
+
+#: brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.modaldialog.text
+msgctxt "brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.modaldialog.text"
+msgid "Manage Breakpoints"
+msgstr "Gestiona els punts de ruptura"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACROSIN.fixedtext.text
+msgid "Existing macros ~in:"
+msgstr "Macros ex~istents a:"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACRONAME.fixedtext.text
+msgid "~Macro name"
+msgstr "Nom de la ~macro"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACROFROM.fixedtext.text
+msgid "Macro ~from"
+msgstr "Macro ~des de"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_TXT_SAVEMACRO.fixedtext.text
+msgid "Save m~acro in"
+msgstr "Alça la m~acro a"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_TXT_DESCRIPTION.fixedtext.text
+msgid "De~scription"
+msgstr "De~scripció"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_PB_RUN.pushbutton.text
+msgid "R~un"
+msgstr "Exec~uta"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_PB_CLOSE.cancelbutton.text
+msgctxt "macrodlg.src#RID_MACROCHOOSER.RID_PB_CLOSE.cancelbutton.text"
+msgid "Close"
+msgstr "Tanca"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_PB_ASSIGN.pushbutton.text
+msgid "~Assign..."
+msgstr "~Assigna..."
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_PB_EDIT.pushbutton.text
+msgctxt "macrodlg.src#RID_MACROCHOOSER.RID_PB_EDIT.pushbutton.text"
+msgid "~Edit"
+msgstr "~Edita"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_PB_NEWLIB.pushbutton.text
+msgid "New ~Library"
+msgstr "Bib~lioteca nova"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_PB_NEWMOD.pushbutton.text
+msgid "New M~odule"
+msgstr "Mòdul n~ou"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_PB_DEL.pushbutton.text
+msgctxt "macrodlg.src#RID_MACROCHOOSER.RID_PB_DEL.pushbutton.text"
+msgid "~Delete"
+msgstr "~Suprimeix"
+
+#: macrodlg.src#RID_MACROCHOOSER.RID_PB_ORG.pushbutton.text
+msgid "~Organizer..."
+msgstr "~Organitzador..."
+
+#: macrodlg.src#RID_MACROCHOOSER.modaldialog.text
+msgid "%PRODUCTNAME Basic Macros"
+msgstr "Macros de l'%PRODUCTNAME Basic"
+
+#: macrodlg.src#RID_STR_STDMACRONAME.string.text
+msgid "Macro"
+msgstr "Macro"
+
+#: macrodlg.src#RID_STR_BTNDEL.string.text
+msgctxt "macrodlg.src#RID_STR_BTNDEL.string.text"
+msgid "~Delete"
+msgstr "~Suprimeix"
+
+#: macrodlg.src#RID_STR_BTNNEW.string.text
+msgid "~New"
+msgstr "~Nou"
+
+#: macrodlg.src#RID_STR_CLOSE.string.text
+msgctxt "macrodlg.src#RID_STR_CLOSE.string.text"
+msgid "Close"
+msgstr "Tanca"
+
+#: macrodlg.src#RID_STR_CHOOSE.string.text
+msgid "Choose"
+msgstr "Seleccioneu"
+
+#: macrodlg.src#RID_STR_RUN.string.text
+msgid "Run"
+msgstr "Executa"
+
+#: macrodlg.src#RID_STR_RECORD.string.text
+msgid "~Save"
+msgstr "~Alça"
+
+#: moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_MOD.pageitem.text
+msgctxt "moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_MOD.pageitem.text"
+msgid "Modules"
+msgstr "Mòduls"
+
+#: moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_DLG.pageitem.text
+msgid "Dialogs"
+msgstr "Diàlegs"
+
+#: moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_LIB.pageitem.text
+msgid "Libraries"
+msgstr "Biblioteques"
+
+#: moduldlg.src#RID_TD_ORGANIZE.tabdialog.text
+msgid "%PRODUCTNAME Basic Macro Organizer"
+msgstr "Organitzador de macros de l'%PRODUCTNAME Basic"
+
+#: moduldlg.src#RID_TP_MODULS.RID_STR_LIB.fixedtext.text
+msgid "M~odule"
+msgstr "Mò~dul"
+
+#: moduldlg.src#RID_TP_MODULS.RID_PB_EDIT.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_MODULS.RID_PB_EDIT.pushbutton.text"
+msgid "~Edit"
+msgstr "~Edita"
+
+#: moduldlg.src#RID_TP_MODULS.RID_PB_CLOSE.cancelbutton.text
+msgctxt "moduldlg.src#RID_TP_MODULS.RID_PB_CLOSE.cancelbutton.text"
+msgid "Close"
+msgstr "Tanca"
+
+#: moduldlg.src#RID_TP_MODULS.RID_PB_NEWMOD.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_MODULS.RID_PB_NEWMOD.pushbutton.text"
+msgid "~New..."
+msgstr "~Nou..."
+
+#: moduldlg.src#RID_TP_MODULS.RID_PB_NEWDLG.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_MODULS.RID_PB_NEWDLG.pushbutton.text"
+msgid "~New..."
+msgstr "~Nou..."
+
+#: moduldlg.src#RID_TP_MODULS.RID_PB_DELETE.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_MODULS.RID_PB_DELETE.pushbutton.text"
+msgid "~Delete"
+msgstr "~Suprimeix"
+
+#: moduldlg.src#RID_TP_DLGS.RID_STR_LIB.fixedtext.text
+msgctxt "moduldlg.src#RID_TP_DLGS.RID_STR_LIB.fixedtext.text"
+msgid "Dialog"
+msgstr "Quadre de diàleg"
+
+#: moduldlg.src#RID_TP_DLGS.RID_PB_EDIT.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_DLGS.RID_PB_EDIT.pushbutton.text"
+msgid "~Edit"
+msgstr "~Edita"
+
+#: moduldlg.src#RID_TP_DLGS.RID_PB_CLOSE.cancelbutton.text
+msgctxt "moduldlg.src#RID_TP_DLGS.RID_PB_CLOSE.cancelbutton.text"
+msgid "Close"
+msgstr "Tanca"
+
+#: moduldlg.src#RID_TP_DLGS.RID_PB_NEWMOD.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_DLGS.RID_PB_NEWMOD.pushbutton.text"
+msgid "~New..."
+msgstr "~Nou..."
+
+#: moduldlg.src#RID_TP_DLGS.RID_PB_NEWDLG.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_DLGS.RID_PB_NEWDLG.pushbutton.text"
+msgid "~New..."
+msgstr "~Nou..."
+
+#: moduldlg.src#RID_TP_DLGS.RID_PB_DELETE.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_DLGS.RID_PB_DELETE.pushbutton.text"
+msgid "~Delete"
+msgstr "~Suprimeix"
+
+#: moduldlg.src#RID_TP_LIBS.RID_STR_BASICS.fixedtext.text
+msgid "L~ocation"
+msgstr "U~bicació"
+
+#: moduldlg.src#RID_TP_LIBS.RID_STR_LIB.fixedtext.text
+msgid "~Library"
+msgstr "Bib~lioteca"
+
+#: moduldlg.src#RID_TP_LIBS.RID_PB_EDIT.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_LIBS.RID_PB_EDIT.pushbutton.text"
+msgid "~Edit"
+msgstr "~Edita"
+
+#: moduldlg.src#RID_TP_LIBS.RID_PB_CLOSE.cancelbutton.text
+msgctxt "moduldlg.src#RID_TP_LIBS.RID_PB_CLOSE.cancelbutton.text"
+msgid "Close"
+msgstr "Tanca"
+
+#: moduldlg.src#RID_TP_LIBS.RID_PB_PASSWORD.pushbutton.text
+msgid "~Password..."
+msgstr "~Contrasenya..."
+
+#: moduldlg.src#RID_TP_LIBS.RID_PB_NEWLIB.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_LIBS.RID_PB_NEWLIB.pushbutton.text"
+msgid "~New..."
+msgstr "~Nou..."
+
+#: moduldlg.src#RID_TP_LIBS.RID_PB_APPEND.pushbutton.text
+msgid "~Import..."
+msgstr "~Afig..."
+
+#: moduldlg.src#RID_TP_LIBS.RID_PB_EXPORT.pushbutton.text
+msgid "E~xport..."
+msgstr "E~xporta..."
+
+#: moduldlg.src#RID_TP_LIBS.RID_PB_DELETE.pushbutton.text
+msgctxt "moduldlg.src#RID_TP_LIBS.RID_PB_DELETE.pushbutton.text"
+msgid "~Delete"
+msgstr "~Suprimeix"
+
+#: moduldlg.src#RID_DLG_LIBS.RID_FL_OPTIONS.fixedline.text
+msgid "Options"
+msgstr "Opcions"
+
+#: moduldlg.src#RID_DLG_LIBS.RID_CB_REF.checkbox.text
+msgid "Insert as reference (read-only)"
+msgstr "Insereix com a referència (només de lectura)"
+
+#: moduldlg.src#RID_DLG_LIBS.RID_CB_REPL.checkbox.text
+msgid "Replace existing libraries"
+msgstr "Reemplaça les biblioteques existents"
+
+#: moduldlg.src#RID_DLG_NEWLIB.RID_FT_NEWLIB.fixedtext.text
+msgid "~Name:"
+msgstr "~Nom:"
+
+#: moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASPACKAGE.radiobutton.text
+msgid "Export as ~extension"
+msgstr "~Exporta com a paquet"
+
+#: moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASBASIC.radiobutton.text
+msgctxt "moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASBASIC.radiobutton.text"
+msgid "Export as BASIC library"
+msgstr "Exporta com a biblioteca de BASIC"
+
+#: moduldlg.src#RID_DLG_EXPORT.modaldialog.text
+msgid "Export Basic library"
+msgstr "Exporta biblioteca de BASIC"
+
+#: moduldlg.src#RID_STR_EXPORTPACKAGE.string.text
+msgid "Export library as extension"
+msgstr "Exporta biblioteca com a paquet"
+
+#: moduldlg.src#RID_STR_EXPORTBASIC.string.text
+msgctxt "moduldlg.src#RID_STR_EXPORTBASIC.string.text"
+msgid "Export as BASIC library"
+msgstr "Exporta com a biblioteca de BASIC"
+
+#: moduldlg.src#RID_STR_PACKAGE_BUNDLE.string.text
+msgid "Extension"
+msgstr "Conjunt de paquets UNO"
+
+#: moptions.src#RID_MACROOPTIONS.RID_FT_DESCR.fixedtext.text
+msgctxt "moptions.src#RID_MACROOPTIONS.RID_FT_DESCR.fixedtext.text"
+msgid "Description"
+msgstr "Descripció"
+
+#: moptions.src#RID_MACROOPTIONS.RID_FL_HELP.fixedline.text
+msgid "Help information"
+msgstr "Informació d'ajuda"
+
+#: moptions.src#RID_MACROOPTIONS.RID_FT_HELPID.fixedtext.text
+msgid "Help ID"
+msgstr "Identificador d'ajuda"
+
+#: moptions.src#RID_MACROOPTIONS.RID_FT_HELPNAME.fixedtext.text
+msgid "Help file name"
+msgstr "Nom del fitxer d'ajuda"
+
+#: moptions.src#RID_MACROOPTIONS.modaldialog.text
+msgctxt "moptions.src#RID_MACROOPTIONS.modaldialog.text"
+msgid "Description"
+msgstr "Descripció"
+
+#: objdlg.src#RID_BASICIDE_OBJCAT.RID_TB_TOOLBOX.TBITEM_SHOW.toolboxitem.text
+msgid "Show"
+msgstr "Mostra"
+
+#: objdlg.src#RID_BASICIDE_OBJCAT.floatingwindow.text
+msgid "Objects"
+msgstr "Objectes"
+
+#: objdlg.src#RID_STR_TLB_MACROS.string.text
+msgid "Objects Tree"
+msgstr "Arbre d'objectes"

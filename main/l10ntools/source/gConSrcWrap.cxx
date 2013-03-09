@@ -93,7 +93,7 @@ void convert_src::setLang(char *syyText, bool bEnUs)
 
   mbEnUs = bEnUs;
   if (!bEnUs && mbExpectValue)
-    showError((char *)useText.c_str());
+    mcMemory.showError(useText);
 }
 
 
@@ -207,8 +207,8 @@ void convert_src::setNL(char *syyText, bool bMacro)
     }
 
     sObject = msCmd + "." + msTextName;
-    if (msValue.size() && msValue != "-")
-      mcMemory.setEnUsKey(miLineNo, sKey, sObject, msValue);
+//JIX    if (msValue.size() && msValue != "-")
+//JIX      mcMemory.setEnUsKey(miLineNo, sKey, sObject, msValue);
   }
 
   if (!bMacro && mbExpectMacro)
@@ -294,7 +294,7 @@ void convert_src::setListItem(char *syyText, bool bIsStart)
 
       // check key or add seq.
       buildKey(myKey);
-      if (!mcMemory.checkKey(myKey, (msCmd + "." + msTextName)))
+//JIX      if (!mcMemory.checkKey(myKey, (msCmd + "." + msTextName)))
       {
         ssBuf  << miListCount;
         msName  += ".uniq" + ssBuf.str();

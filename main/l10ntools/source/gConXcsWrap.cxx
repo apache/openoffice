@@ -153,8 +153,8 @@ void convert_xcs::stopCollectData(char *syyText)
     }
 #endif
   }
-  else
-    mcMemory.setEnUsKey(miLineNo, sKey, std::string("dummy"), sText);
+//JIX  else
+//JIX    mcMemory.setEnUsKey(miLineNo, sKey, std::string("dummy"), sText);
 
   mbCollectingData = false;
 }  

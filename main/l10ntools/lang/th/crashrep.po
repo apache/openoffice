@@ -1,0 +1,269 @@
+
+#: crashrep.ulf#_WELCOME_CAPTION_.LngText.text
+msgctxt "crashrep.ulf#_WELCOME_CAPTION_.LngText.text"
+msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "รายงานข้อผิดพลาด %PRODUCTNAME% %PRODUCTVERSION%"
+
+#: crashrep.ulf#_WELCOME_HEADER_.LngText.text
+msgid "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "ยินดีต้อนรับสู่ การรายงานข้อผิดพลาดของ %PRODUCTNAME% %PRODUCTVERSION%"
+
+#: crashrep.ulf#_WELCOME_BODY1_.LngText.text
+msgid ""
+"This error report tool gathers information about how %PRODUCTNAME% is "
+"working and sends it to Oracle to help improve future versions.\n"
+"\n"
+msgstr ""
+"เครื่องมือการรายงานข้อผิดพลาดนี้จะรวบรวมข้อมูลเกี่ยวกับการทำงานของ %"
+"PRODUCTNAME% แล้วส่งไปยัง Sun Microsystems เพื่อช่วยให้รุ่นต่อๆ ไปดีขึ้น\n"
+"\n"
+
+#: crashrep.ulf#_WELCOME_BODY2_.LngText.text
+msgid ""
+"It's easy - just send the report without any further effort on your part by "
+"clicking 'Send' in the next dialog, or you can briefly describe how the "
+"error occurred and then click 'Send'. If you want to see the report, click "
+"the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n"
+"\n"
+msgstr ""
+"ไม่ยากอย่างที่คิด - เพียงแค่คุณส่งรายงานโดยการคลิกที่ 'ส่ง' "
+"ในกล่องโต้ตอบถัดไป หรือคุณสามารถอธิบายเกี่ยวกับความผิดพลาดที่เกิดขึ้นคร่าวๆ "
+"แล้วคลิก 'ส่ง' ถ้าคุณต้องการดูรายงานให้คลิกที่ปุ่ม 'แสดงรายงาน' "
+"ถ้าคุณคลิกที่ 'ไม่ส่ง' ก็จะไม่มีการส่งข้อมูลใดๆ\n"
+"\n"
+
+#: crashrep.ulf#_WELCOME_BODY3_.LngText.text
+msgid ""
+"Customer Privacy\n"
+"The information gathered is limited to data concerning the state of %"
+"PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information "
+"about passwords or document contents is not collected.\n"
+"\n"
+"The information will only be used to improve the quality of %PRODUCTNAME% "
+"and will not be shared with third parties.\n"
+"For more information on Oracle's privacy policy, visit\n"
+msgstr ""
+"ความเป็นส่วนตัวของลูกค้า\n"
+"ข้อมูลที่ได้รวบรวมจะถูกจำกัดเฉพาะข้อมูลที่เกี่ยวกับความผิดพลาดของ %"
+"PRODUCTNAME% %PRODUCTVERSION% ที่เกิดขึ้น ส่วนข้อมูลอื่นๆ เกี่ยวกับรหัสผ่าน "
+"หรือเนื้อหาของเอกสารจะไม่มีการรวบรวมด้วย\n"
+"\n"
+"ข้อมูลที่ได้จะใช้สำหรับการพัฒนาคุณภาพของ %PRODUCTNAME% "
+"และจะไม่เผยแพร่กับบุคคลที่สาม\n"
+"รายละเอียดเพิ่มเติมเกี่ยวกับนโยบายความเป็นส่วนตัวของ Sun Microsystems "
+"เข้าไปดูได้ที่\n"
+
+#: crashrep.ulf#_PRIVACY_URL_.LngText.text
+msgid "http://www.oracle.com/html/services-privacy-policy.html"
+msgstr ""
+
+#: crashrep.ulf#_NEXT_BUTTON_.LngText.text
+msgid "~Next >>"
+msgstr "~ถัดไป >>"
+
+#: crashrep.ulf#_CANCEL_BUTTON_.LngText.text
+msgid "Cancel"
+msgstr "ยกเลิก"
+
+#: crashrep.ulf#_OK_BUTTON_.LngText.text
+msgid "OK"
+msgstr "ตกลง"
+
+#: crashrep.ulf#_REPORT_CAPTION_.LngText.text
+msgctxt "crashrep.ulf#_REPORT_CAPTION_.LngText.text"
+msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "รายงานข้อผิดพลาด %PRODUCTNAME% %PRODUCTVERSION% "
+
+#: crashrep.ulf#_REPORT_HEADER_.LngText.text
+msgid "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
+msgstr "ข้อผิดพลาดเกิดขึ้นขณะใช้งาน %PRODUCTNAME% %PRODUCTVERSION%"
+
+#: crashrep.ulf#_REPORT_BODY_.LngText.text
+msgid ""
+"The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information "
+"that could help Oracle improve %PRODUCTNAME%.\n"
+"In the spaces below, you can enter a title for your crash report and "
+"describe the action you were trying to carry out when the error occurred. "
+"Then click 'Send'.\n"
+msgstr ""
+"การรายงานข้อผิดพลาดของ %PRODUCTNAME% %PRODUCTVERSION% "
+"จะทำการรวบรวมข้อมูลที่จะช่วยให้ Sun Microsystems พัฒนา %PRODUCTNAME% "
+"ให้ดีขึ้น\n"
+"คุณสามารถกรอกชื่อเรื่องของรายงานข้อผิดพลาดของคุณ "
+"และอธิบายเกี่ยวกับสิ่งที่ได้ทำเมื่อคุณพยายามที่จะแก้ไขปัญหา "
+"เมื่อเกิดข้อผิดพลาดขึ้น จากนั้นคลิก 'ส่ง'\n"
+
+#: crashrep.ulf#_ENTER_TITLE_.LngText.text
+msgid ""
+"Which type of document (e.g. presentation) were you using when the error "
+"occurred?"
+msgstr ""
+"ตามชนิดของเอกสาร (เช่น งานนำเสนอ) ที่คุณกำลังใช้งานแล้วเกิดข้อผิดพลาดขึ้น?"
+
+#: crashrep.ulf#_ALLOW_CONTACT_.LngText.text
+msgid "~I allow Oracle to contact me regarding this report."
+msgstr "~ฉันอนุญาตให้ Sun Microsystems ติดต่อฉันตามการรายงานนี้"
+
+#: crashrep.ulf#_ENTER_EMAIL_.LngText.text
+msgid "Please enter your e-mail address."
+msgstr "กรุณาใส่ที่อยู่อีเมลของคุณ"
+
+#: crashrep.ulf#_ENTER_DESCRIPTION_.LngText.text
+msgid "~How were you using %PRODUCTNAME% when the error occurred ?"
+msgstr "~How were you using %PRODUCTNAME% when the error occurred ?"
+
+#: crashrep.ulf#_BACK_BUTTON_.LngText.text
+msgid " << ~Back"
+msgstr "<< ~ย้อนกลับ"
+
+#: crashrep.ulf#_SEND_BUTTON_.LngText.text
+msgid "S~end"
+msgstr "~ส่ง"
+
+#: crashrep.ulf#_DONOT_SEND_BUTTON_.LngText.text
+msgid "Do ~Not Send"
+msgstr "~ไม่ส่ง"
+
+#: crashrep.ulf#_SHOW_REPORT_BUTTON_.LngText.text
+msgid "Show ~Report..."
+msgstr "แสดง~รายงาน..."
+
+#: crashrep.ulf#_SAVE_REPORT_BUTTON_.LngText.text
+msgid "~Save Report..."
+msgstr "~บันทึกรายงาน..."
+
+#: crashrep.ulf#_SAVE_REPORT_TITLE_.LngText.text
+msgid "Save Report to"
+msgstr "บันทึกรายงานไปยัง"
+
+#: crashrep.ulf#_ERROR_MSG_SIMPLE_MAPI_.LngText.text
+msgid ""
+"The error report could not be sent because the default e-mail program does "
+"not support MAPI.\n"
+" Please use a MAPI-compatible e-mail program."
+msgstr ""
+"ไม่สามารถส่งรายงานข้อผิดพลาดได้ เพราะโปรแกรมอีเมลปริยายไม่สนับสนุน MAPI\n"
+" กรุณาใช้โปรแกรมอีเมลที่ไปกันได้กับ MAPI"
+
+#: crashrep.ulf#_ERROR_MSG_DISK_FULL_.LngText.text
+msgid ""
+"The error report could not be temporarily saved and could therefore not be "
+"sent."
+msgstr "ไม่สามารถบันทึกรายงานข้อผิดพลาดได้ชั่วคราว ดังนั้นจึงไม่สามารถส่งไปได้"
+
+#: crashrep.ulf#_ERROR_MSG_SENDMAIL_.LngText.text
+msgid ""
+"The error report could not be sent because 'sendmail' could not be started.\n"
+"Please check the 'sendmail' settings."
+msgstr ""
+"ไม่สามารถส่งรายงานข้อผิดพลาดได้เนื่องจากรายการ 'ส่งเมล' "
+"ไม่สามารถเริ่มทำงานได้\n"
+"กรุณาตรวจสอบการตั้งค่า 'ส่งเมล' "
+
+#: crashrep.ulf#_ERROR_MSG_PROXY_.LngText.text
+msgid ""
+"The error report could not be sent. Please check the proxy settings under "
+"'Options' in the Error Report Tool."
+msgstr ""
+"ไม่สามารถส่งรายงานข้อผิดพลาดได้ กรุณาตรวจสอบการตั้งค่าพร็อกซีภายใต้หัวข้อ "
+"'ตัวเลือก' ในเครื่องมือรายงานข้อผิดพลาด"
+
+#: crashrep.ulf#_ERROR_MSG_NOCONNECT_.LngText.text
+msgid ""
+"The error report could not be sent because there is no Internet connection. "
+"Please check your Internet settings."
+msgstr ""
+"ไม่สามารถส่งรายงานข้อผิดพลาดได้ เพราะว่าไม่มีการเชื่อมต่ออินเทอร์เน็ต "
+"กรุณาตรวจสอบการตั้งค่าอินเทอร์เน็ตของคุณ"
+
+#: crashrep.ulf#_OPTIONS_BUTTON_.LngText.text
+msgid "~Options..."
+msgstr "~ตัวเลือก..."
+
+#: crashrep.ulf#_OPTIONS_TITLE_.LngText.text
+msgid "Options"
+msgstr "ตัวเลือก"
+
+#: crashrep.ulf#_PROXY_SETTINGS_HEADER_.LngText.text
+msgid "Proxy settings"
+msgstr "การตั้งค่าพร็อกซี"
+
+#: crashrep.ulf#_PROXY_SETTINGS_SYSTEM_.LngText.text
+msgid "Use ~system settings"
+msgstr "ใช้การตั้งค่าจาก~ระบบ"
+
+#: crashrep.ulf#_PROXY_SETTINGS_DIRECT_.LngText.text
+msgid "Use ~direct connection to the Internet"
+msgstr "ใช้การเชื่อมต่อโดย~ตรงกับอินเทอร์เน็ต"
+
+#: crashrep.ulf#_PROXY_SETTINGS_MANUAL_.LngText.text
+msgid "Use ~manual settings"
+msgstr "ใช้การ~ตั้งค่าเอง"
+
+#: crashrep.ulf#_PROXY_SETTINGS_ADDRESS_.LngText.text
+msgid "HT~TP Proxy"
+msgstr "พร็อกซี HT~TP"
+
+#: crashrep.ulf#_PROXY_SETTINGS_PORT_.LngText.text
+msgid "~Port"
+msgstr "~พอร์ต"
+
+#: crashrep.ulf#_PROXY_SETTINGS_DESCRIPTION_.LngText.text
+msgid ""
+"The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to "
+"be able to send error reports.\n"
+"\n"
+"Companies often use proxy servers in conjunction with a firewall to protect "
+"the network.\n"
+"\n"
+"If this applies to your situation, you have to specify the address and port "
+"for the server."
+msgstr ""
+"เครื่องมือรายงานข้อผิดพลาด %PRODUCTNAME% ต้องการการเชื่อมต่อกับอินเทอร์เน็ต "
+"เพื่อให้สามารถส่งรายงานข้อผิดพลาดได้\n"
+"\n"
+"บริษัทมักจะใช้เซิร์ฟเวอร์พร็อกซีในการเชื่อมกับไฟร์วอลเพื่อป้องกันเน็ตเวิร์ก\n"
+"\n"
+"ถ้าจะนำมาใช้กับกรณีของคุณ คุณจะต้องระบุที่อยู่และพอร์ตให้กับเซิร์ฟเวอร์"
+
+#: crashrep.ulf#_SENDING_REPORT_HEADER_.LngText.text
+msgid "Sending Error Report"
+msgstr "กำลังส่งรายงานข้อผิดพลาด"
+
+#: crashrep.ulf#_SENDING_REPORT_STATUS_.LngText.text
+msgid "Status: Sending error report"
+msgstr "สถานะ: กำลังส่งรายงานข้อผิดพลาด"
+
+#: crashrep.ulf#_SENDING_REPORT_STATUS_FINISHED_.LngText.text
+msgid "Status: The error report has been sent successfully."
+msgstr "สถานะ: รายงานข้อผิดพลาดส่งสำเร็จเรียบร้อย"
+
+#: crashrep.ulf#_ERROR_MSG_NOEMAILADDRESS_.LngText.text
+msgid ""
+"You have marked the option 'I allow Oracle to contact me regarding this "
+"report.'\n"
+"Please enter your e-mail address."
+msgstr ""
+"คุณจะต้องทำเครื่องหมายที่ตัวเลือก 'ฉันอนุญาตให้ Sun Microsystems "
+"ติดต่อฉันตามการรายงานนี้'\n"
+"กรุณาใส่ที่อยู่อีเมลของคุณ"
+
+#: crashrep.ulf#_MSG_CMDLINE_USAGE_.LngText.text
+msgid "Usage:"
+msgstr "วิธีใช้:"
+
+#: crashrep.ulf#_MSG_PARAM_PROCESSID_.LngText.text
+msgid "-p <process ID>"
+msgstr "-p <process ID>"
+
+#: crashrep.ulf#_MSG_PARAM_PROCESSID_DESCRIPTION_.LngText.text
+msgid "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
+msgstr "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
+
+#: crashrep.ulf#_MSG_PARAM_HELP_DESCRIPTION_.LngText.text
+msgid ""
+"Shows this help text.\n"
+"Detailed information can be found in the Setup Guide."
+msgstr ""
+"แสดงข้อความช่วยเหลือนี้\n"
+"ข้อมูลที่เป็นรายละเอียดสามารถพบได้ในคำแนะนำการติดตั้ง"

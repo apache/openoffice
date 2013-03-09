@@ -1,0 +1,224 @@
+
+#: resource.src#STR_MENU_ADDONS.string.text
+msgid "Add-Ons"
+msgstr "アドオン"
+
+#: resource.src#STR_MENU_ADDONHELP.string.text
+msgid "Add-~On Help"
+msgstr "アドオンヘルプ(~O)"
+
+#: resource.src#STR_MENU_HEADFOOTALL.string.text
+msgid "All"
+msgstr "すべて"
+
+#: resource.src#STR_UPDATEDOC.string.text
+msgid "~Update"
+msgstr "更新(~U)"
+
+#: resource.src#STR_CLOSEDOC_ANDRETURN.string.text
+msgid "~Close & Return to "
+msgstr "閉じる & 戻る(~C)"
+
+#: resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_VISIBLEBUTTON.menuitem.text
+msgid "Visible ~Buttons"
+msgstr "ボタンを表示/非表示(~B)"
+
+#: resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_CUSTOMIZETOOLBAR.menuitem.text
+msgid "~Customize Toolbar..."
+msgstr "ツールバーをカスタマイズ(~C)..."
+
+#: resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_DOCKTOOLBAR.menuitem.text
+msgid "~Dock Toolbar"
+msgstr "ツールバーを格納(~D)"
+
+#: resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_DOCKALLTOOLBAR.menuitem.text
+msgid "Dock ~All Toolbars"
+msgstr "すべてのツールバーを格納(~A)"
+
+#: resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_LOCKTOOLBARPOSITION.menuitem.text
+msgid "~Lock Toolbar Position"
+msgstr "ツールバーの位置を固定(~L)"
+
+#: resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_CLOSE.menuitem.text
+msgid "Close ~Toolbar"
+msgstr "ツールバーを閉じる(~T)"
+
+#: resource.src#STR_SAVECOPYDOC.string.text
+msgid "Save Copy ~as..."
+msgstr "コピーに名前を付けて保存(~A)..."
+
+#: resource.src#STR_NODOCUMENT.string.text
+msgid "No Documents"
+msgstr "ドキュメントなし"
+
+#: resource.src#STR_TOOLBAR_TITLE_ADDON.string.text
+msgid "Add-On %num%"
+msgstr "アドオンの %num%"
+
+#: resource.src#STR_STATUSBAR_LOGOTEXT.string.text
+msgid "A %PRODUCTNAME product by Oracle"
+msgstr "Oracle による %PRODUCTNAME 製品"
+
+#: resource.src#DLG_LICENSE.FT_INFO1.fixedtext.text
+msgid "Please follow these steps to proceed with the installation:"
+msgstr "インストールを継続するには、次の手順に従ってください:"
+
+#: resource.src#DLG_LICENSE.FT_INFO2_1.fixedtext.text
+msgid "1."
+msgstr "1."
+
+#: resource.src#DLG_LICENSE.FT_INFO2.fixedtext.text
+msgid ""
+"View the complete License Agreement. Please use the scroll bar or the '%"
+"PAGEDOWN' button in this dialog to view the entire license text."
+msgstr ""
+"ライセンス条項を最後までよくお読みください。条項をすべて読むには、このダイアログのスクロールバーまたは '%PAGEDOWN' ボタンを使用します。"
+
+#: resource.src#DLG_LICENSE.PB_PAGEDOWN.pushbutton.text
+msgid "Scroll Down"
+msgstr "下へスクロール"
+
+#: resource.src#DLG_LICENSE.FT_INFO3_1.fixedtext.text
+msgid "2."
+msgstr "2."
+
+#: resource.src#DLG_LICENSE.FT_INFO3.fixedtext.text
+msgid "Accept the License Agreement."
+msgstr "ライセンス条項に同意します。"
+
+#: resource.src#DLG_LICENSE.LICENSE_ACCEPT.string.text
+msgid "~Accept"
+msgstr "同意する(~A)"
+
+#: resource.src#DLG_LICENSE.LICENSE_NOTACCEPT.string.text
+msgid "Decline"
+msgstr "同意しない"
+
+#: resource.src#DLG_LICENSE.modaldialog.text
+msgid "License Agreement"
+msgstr "ライセンス条項"
+
+#: resource.src#STR_FULL_DISC_RETRY_BUTTON.string.text
+msgid "Retry"
+msgstr "再試行"
+
+#: resource.src#STR_FULL_DISC_MSG.string.text
+msgid ""
+"%PRODUCTNAME could not save important internal information due to "
+"insufficient free disk space at the following location:\n"
+"%PATH\n"
+"\n"
+"You will not be able to continue working with %PRODUCTNAME without "
+"allocating more free disk space at that location.\n"
+"\n"
+"Press the 'Retry' button after you have allocated more free disk space to "
+"retry saving the data.\n"
+"\n"
+msgstr ""
+"%PRODUCTNAME は、次の位置に十分な空きディスク容量がないため、重要な内部情報を保存できませんでした。\n"
+"%PATH\n"
+"\n"
+"この位置により多くの空きディスク容量を割り当てない限り、%PRODUCTNAME の作業を継続することはできません。\n"
+"\n"
+"より多くの空きディスク容量を割り当ててデータの保存を再試行したあと、「再試行」ボタンを押してください。\n"
+"\n"
+
+#: resource.src#STR_RESTORE_TOOLBARS.string.text
+msgid "~Reset"
+msgstr "元に戻す(~R)"
+
+#: resource.src#STR_CORRUPT_UICFG_SHARE.string.text
+msgid ""
+"An error occurred while loading the user interface configuration data. The "
+"application will be terminated now.\n"
+"Please try to reinstall the application."
+msgstr ""
+"ユーザーインタフェース設定データの読み込み中にエラーが発生しました。アプリケーションはすぐに終了します。\n"
+"アプリケーションをもう一度インストールしてください。"
+
+#: resource.src#STR_CORRUPT_UICFG_USER.string.text
+msgid ""
+"An error occurred while loading the user interface configuration data. The "
+"application will be terminated now.\n"
+"Please try to remove your user profile for the application."
+msgstr ""
+"ユーザーインタフェース設定データの読み込み中にエラーが発生しました。アプリケーションはすぐに終了します。\n"
+"アプリケーションのユーザープロファイルを削除してください。"
+
+#: resource.src#STR_CORRUPT_UICFG_GENERAL.string.text
+msgid ""
+"An error occurred while loading the user interface configuration data. The "
+"application will be terminated now.\n"
+"Please try to remove your user profile for the application first or try to "
+"reinstall the application."
+msgstr ""
+"ユーザーインタフェース設定データの読み込み中にエラーが発生しました。アプリケーションはすぐに終了します。\n"
+"アプリケーションのユーザープロファイルを最初に削除するか、アプリケーションをもう一度インストールしてください。"
+
+#: resource.src#STR_UNTITLED_DOCUMENT.string.text
+msgid "Untitled"
+msgstr "無題"
+
+#: resource.src#STR_LANGSTATUS_MULTIPLE_LANGUAGES.string.text
+msgid "Multiple Languages"
+msgstr "複数の言語"
+
+#: resource.src#STR_LANGSTATUS_NONE.string.text
+msgid "None (Do not check spelling)"
+msgstr "なし(スペルチェックを行わない)"
+
+#: resource.src#STR_RESET_TO_DEFAULT_LANGUAGE.string.text
+msgid "Reset to Default Language"
+msgstr "標準の言語に戻す"
+
+#: resource.src#STR_LANGSTATUS_MORE.string.text
+msgid "More..."
+msgstr "詳細..."
+
+#: resource.src#STR_SET_LANGUAGE_FOR_SELECTION.string.text
+msgid "Set Language for Selection"
+msgstr "選択する言語の設定"
+
+#: resource.src#STR_SET_LANGUAGE_FOR_PARAGRAPH.string.text
+msgid "Set Language for Paragraph"
+msgstr "段落の言語の設定"
+
+#: resource.src#STR_SET_LANGUAGE_FOR_ALL_TEXT.string.text
+msgid "Set Language for all Text"
+msgstr "すべてのテキストの言語の設定"
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_WELCOME.string.text
+msgid "Welcome to"
+msgstr "ようこそ"
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_WELCOMEPRODUCT.string.text
+msgid "%PRODUCTNAME"
+msgstr "%PRODUCTNAME"
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_CREATE.string.text
+msgid "Create a new document"
+msgstr "ドキュメントの新規作成"
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_TEMPLATE.string.text
+msgid "~Templates..."
+msgstr "テンプレート(~T)..."
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_FILE.string.text
+msgid "~Open..."
+msgstr "開く(~O)..."
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_EXTHELP.string.text
+msgid "Add new features to %PRODUCTNAME"
+msgstr "%PRODUCTNAME に新しい機能を追加"
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_REGHELP.string.text
+msgid "Register your %PRODUCTNAME"
+msgstr "%PRODUCTNAME を登録"
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_INFOHELP.string.text
+msgid "Get more information about %PRODUCTNAME"
+msgstr "%PRODUCTNAME に関する詳細情報を取得"
+
+#: fwk_services.src#DLG_BACKING.STR_BACKING_TPLREP.string.text
+msgid "Get more templates for %PRODUCTNAME"
+msgstr "%PRODUCTNAME のほかのテンプレートを取得"

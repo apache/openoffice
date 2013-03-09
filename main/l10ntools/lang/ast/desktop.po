@@ -1,0 +1,1391 @@
+"X-Accelerator-Marker: ~\n"
+
+#: wizard.src#DLG_FIRSTSTART_WIZARD.modaldialog.text
+msgctxt "wizard.src#DLG_FIRSTSTART_WIZARD.modaldialog.text"
+msgid "Welcome to %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Bienllegáu a %PRODUCTNAME %PRODUCTVERSION"
+
+#: wizard.src#STR_STATE_WELCOME.string.text
+msgid "Welcome"
+msgstr "Bienveníu"
+
+#: wizard.src#STR_STATE_LICENSE.string.text
+msgid "License Agreement"
+msgstr "Llicencia d'Alcuerdu"
+
+#: wizard.src#STR_STATE_MIGRATION.string.text
+msgid "Personal Data"
+msgstr "Datos Personales"
+
+#: wizard.src#STR_STATE_USER.string.text
+msgid "User name"
+msgstr "Nome d'usuariu"
+
+#: wizard.src#STR_STATE_UPDATE_CHECK.string.text
+msgctxt "wizard.src#STR_STATE_UPDATE_CHECK.string.text"
+msgid "Online Update"
+msgstr "Anovamientu per Internet"
+
+#: wizard.src#STR_STATE_REGISTRATION.string.text
+msgid "Registration"
+msgstr "Rexistru"
+
+#: wizard.src#STR_WELCOME_MIGRATION.string.text
+msgid ""
+"This wizard will guide you through the license agreement, the transfer of "
+"user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n"
+"\n"
+"Click 'Next' to continue."
+msgstr ""
+"L'asistente guiaráte pel alcuerdu de llicencia, la tresferencia de los datos "
+"vieyos de %OLD_VERSION y el rexistru de %PRODUCTNAME.\n"
+"\n"
+"Calca 'Siguir' pa continuar."
+
+#: wizard.src#STR_WELCOME_WITHOUT_LICENSE.string.text
+msgid ""
+"This wizard will guide you through the registration of %PRODUCTNAME.\n"
+"\n"
+"Click 'Next' to continue."
+msgstr ""
+"Esti asistente guíate pel procesu de rexistru de %PRODUCTNAME.\n"
+"\n"
+"Calca en 'Siguir' pa continuar."
+
+#: wizard.src#STR_FINISH.string.text
+msgid "~Finish"
+msgstr "~Finar"
+
+#: wizard.src#STR_REGISTRATION_OOO.string.text
+msgid ""
+"You now have the opportunity to support and contribute to the fastest "
+"growing open source community in the world.\n"
+"\n"
+"Help us prove that %PRODUCTNAME has already gained significant market share "
+"by registering.\n"
+"\n"
+"Registering is voluntary and without obligation."
+msgstr ""
+"Agora tien la oportunidá de sofitar y contribuyir al rápidu xorrecimientu de "
+"la comunidá de códigu abiertu (open source) nel mundu.\n"
+"\n"
+"Aidenos a prebar que %PRODUCTNAME tien una significativa cuota de mercáu pa "
+"rexistralu.\n"
+"\n"
+"El rexistro ye voluntariu y nun implica denguna obligación."
+
+#: wizard.src#ERRBOX_REG_NOSYSBROWSER.errorbox.text
+msgid ""
+"An error occurred in starting the web browser.\n"
+"Please check the %PRODUCTNAME and web browser settings."
+msgstr ""
+"Hebo un fallu al arrancar el restolador web.\n"
+"Por favor, comprueba los axustes de %PRODUCTNAME y restolador."
+
+#: wizard.src#QB_ASK_DECLINE.querybox.text
+msgid "Do you really want to decline?"
+msgstr "¿De xuru que quies renunciar?"
+
+#: wizard.src#TP_WELCOME.FT_WELCOME_HEADER.fixedtext.text
+msgctxt "wizard.src#TP_WELCOME.FT_WELCOME_HEADER.fixedtext.text"
+msgid "Welcome to %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Bienveníu a %PRODUCTNAME %PRODUCTVERSION"
+
+#: wizard.src#TP_WELCOME.FT_WELCOME_BODY.fixedtext.text
+msgid ""
+"This wizard will guide you through the license agreement and the "
+"registration of %PRODUCTNAME.\n"
+"\n"
+"Click 'Next' to continue."
+msgstr ""
+"L'asistente guiarálu pela llicencia d'alcuerdu y el rexistru de %"
+"PRODUCTNAME.\n"
+"\n"
+"Calca 'Siguir' pa continuar."
+
+#: wizard.src#TP_LICENSE.FT_LICENSE_HEADER.fixedtext.text
+msgid "Please follow these steps to accept the license"
+msgstr "Por favor, sigui estos pasos p'aceutar la llicencia"
+
+#: wizard.src#TP_LICENSE.FT_LICENSE_BODY_1.fixedtext.text
+msgid "1."
+msgstr "1."
+
+#: wizard.src#TP_LICENSE.FT_LICENSE_BODY_1_TXT.fixedtext.text
+msgid ""
+"View the complete License Agreement. Please use the scrollbar or the '%"
+"PAGEDOWN' button in this dialog to view the entire license text."
+msgstr ""
+"Pa ver completa la Llicencia d'alcuerdu. Por favor calca na fleca de p'abaxo "
+"o la tecla '%PAGEDOWN' nesti diálogu pa ver el testu completu de la "
+"llicencia."
+
+#: wizard.src#TP_LICENSE.FT_LICENSE_BODY_2.fixedtext.text
+msgid "2."
+msgstr "2."
+
+#: wizard.src#TP_LICENSE.FT_LICENSE_BODY_2_TXT.fixedtext.text
+msgid "Click 'Accept' to accept the terms of the Agreement."
+msgstr "Calca 'Aceutar' p'aceutar los términos del Alcuerdu."
+
+#: wizard.src#TP_LICENSE.PB_LICENSE_DOWN.pushbutton.text
+msgid "Scroll Do~wn"
+msgstr "Baxar p'Aba~xo"
+
+#: wizard.src#STR_LICENSE_ACCEPT.string.text
+msgid "~Accept"
+msgstr "~Aceutar"
+
+#: wizard.src#STR_LICENSE_DECLINE.string.text
+msgid "~Decline"
+msgstr "~Dexalo pa prau"
+
+#: wizard.src#TP_MIGRATION.FT_MIGRATION_HEADER.fixedtext.text
+msgctxt "wizard.src#TP_MIGRATION.FT_MIGRATION_HEADER.fixedtext.text"
+msgid "Transfer personal data"
+msgstr "Tresferir datos personales"
+
+#: wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.fixedtext.text
+msgid ""
+"Most personal data from %OLDPRODUCT installation can be reused in %"
+"PRODUCTNAME %PRODUCTVERSION.\n"
+"\n"
+"If you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, "
+"unmark the check box."
+msgstr ""
+"Casi tolos datos personales de la instalación de %OLDPRODUCT valen tamién en "
+"%PRODUCTNAME %PRODUCTVERSION.\n"
+"\n"
+"Si nun quies volver a usar dengún valor de %PRODUCTNAME %PRODUCTVERSION, "
+"despincha la casiella de verificación."
+
+#: wizard.src#TP_MIGRATION.CB_MIGRATION.checkbox.text
+msgctxt "wizard.src#TP_MIGRATION.CB_MIGRATION.checkbox.text"
+msgid "Transfer personal data"
+msgstr "Tresferir datos personales"
+
+#: wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_HEADER.fixedtext.text
+msgctxt "wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_HEADER.fixedtext.text"
+msgid "Online Update"
+msgstr "Anovación n'Internet"
+
+#: wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_BODY.fixedtext.text
+msgid ""
+"%PRODUCTNAME searches automatically at regular intervals for new versions.\n"
+"In doing so online update does not transfer personal data.\n"
+"As soon as a new version is available, you will be notified.\n"
+"\n"
+"You can configure this feature at Tools / Options... / %PRODUCTNAME / Online "
+"Update."
+msgstr ""
+"%PRODUCTNAME busca versiones nueves n'intervalos de tiempu regulares de "
+"manera automática.\n"
+"Nun se tresfieren datos personales nel anovamientu per Internet.\n"
+"Avisaránte cuando heba una versión nueva disponible.\n"
+"\n"
+"Pues configurar esta función en Ferramientes/ Opciones... / %PRODUCTNAME / "
+"Anovamientu per Internet."
+
+#: wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.checkbox.text
+msgid "~Check for updates automatically"
+msgstr "~Buscar anovaciones automáticamente"
+
+#: wizard.src#TP_USER.FT_USER_HEADER.fixedtext.text
+msgid "Provide your full name and initials below"
+msgstr "Ponga'l so nome ya iniciales darréu"
+
+#: wizard.src#TP_USER.FT_USER_BODY.fixedtext.text
+msgid ""
+"The user name will be used in the document properties, templates and when "
+"you record changes made to documents."
+msgstr ""
+"El nome d'usuariu usaráse nes propiedaes del documentu, les plantíes y "
+"cuando rexistres los cambios nos documentos,"
+
+#: wizard.src#TP_USER.FT_USER_FIRST.fixedtext.text
+msgid "~First name"
+msgstr "~Nome"
+
+#: wizard.src#TP_USER.FT_USER_LAST.fixedtext.text
+msgid "~Last name"
+msgstr "Ape~llíu"
+
+#: wizard.src#TP_USER.FT_USER_INITIALS.fixedtext.text
+msgid "~Initials"
+msgstr "~Iniciales"
+
+#: wizard.src#TP_USER.FT_USER_FATHER.fixedtext.text
+msgid "~Father's name"
+msgstr "~Primer apellíu"
+
+#: wizard.src#TP_REGISTRATION.FT_REGISTRATION_HEADER.fixedtext.text
+msgid "%PRODUCTNAME Registration"
+msgstr "Rexistru de %PRODUCTNAME"
+
+#: wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.fixedtext.text
+msgid ""
+"You now have the opportunity to register as a %PRODUCTNAME user. "
+"Registration is voluntary and is without obligation.\n"
+"\n"
+"If you register, we can inform you about new developments concerning this "
+"product."
+msgstr ""
+"Agora pues rexistrate como usuariu de %PRODUCTNAME. El rexistru ye "
+"voluntariu.\n"
+"\n"
+"Al rexistrate, recibirás información tocante a les novedaes d'esti productu."
+
+#: wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.radiobutton.text
+msgid "I want to register ~now"
+msgstr "Prestaríame rexistra~me darréu"
+
+#: wizard.src#TP_REGISTRATION.RB_REGISTRATION_LATER.radiobutton.text
+msgid "I want to register ~later"
+msgstr "Prestaríame ~rexistrame más sero"
+
+#: wizard.src#TP_REGISTRATION.RB_REGISTRATION_NEVER.radiobutton.text
+msgid "I do not want to ~register"
+msgstr "Nun quiero ~rexistrame"
+
+#: wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.fixedtext.text
+msgid ""
+"We hope you enjoy working with %PRODUCTNAME.\n"
+"\n"
+"To exit the wizard, click 'Finish'."
+msgstr ""
+"Te deseamos un prestosu trabayu con %PRODUCTNAME.\n"
+"\n"
+"Pa salir del asistente, calca 'Finar'."
+"X-Generator: Virtaal 0.7.1\n"
+"X-Accelerator-Marker: ~\n"
+"X-Project-Style: openoffice\n"
+
+#: desktop.src#STR_RECOVER_QUERY.string.text
+msgid "Should the file \"$1\" be restored?"
+msgstr "¿Quies restaurar el ficheru \"$1\"?"
+
+#: desktop.src#STR_RECOVER_TITLE.string.text
+msgid "File Recovery"
+msgstr "Recuperar ficheru"
+
+#: desktop.src#STR_RECOVER_PREPARED.warningbox.text
+msgid ""
+"An unrecoverable error has occurred.\n"
+"\n"
+"All modified files have been saved and can\n"
+"probably be recovered at program restart."
+msgstr ""
+"Ocurrió un fallu irreparable\n"
+"\n"
+"Se guardaron tolos ficheros modificaos y, seique,\n"
+"puen recuperase al reaniciar e'l programa."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_CANNOT_START.string.text
+msgid "The application cannot be started. "
+msgstr "Nun se puede entamar l'aplicación. "
+
+#: desktop.src#STR_BOOTSTRAP_ERR_DIR_MISSING.string.text
+msgid "The configuration directory \"$1\" could not be found."
+msgstr "Nun s'atopó'l directoriu de configuración \"$1\"."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_PATH_INVALID.string.text
+msgid "The installation path is invalid."
+msgstr "El camín d'instalación nun val."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_NO_PATH.string.text
+msgid "The installation path is not available."
+msgstr "El camín d'instalación nun s'atopa."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_INTERNAL.string.text
+msgid "An internal error occurred."
+msgstr "Hebo un fallu internu."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_FILE_CORRUPT.string.text
+msgid "The configuration file \"$1\" is corrupt."
+msgstr "El ficheru de configuración \"$1\" ta toyíu."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_FILE_MISSING.string.text
+msgid "The configuration file \"$1\" was not found."
+msgstr "Nun s'atopó'l ficheru de configuración \"$1\"."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_NO_SUPPORT.string.text
+msgid "The configuration file \"$1\" does not support the current version."
+msgstr "El ficheru de configuración \"$1\" nun sofita esta versión."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_LANGUAGE_MISSING.string.text
+msgid "The user interface language cannot be determined."
+msgstr "Nun se ye quien a pescanciar la llingua del interfaz d'usuariu."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_NO_SERVICE.string.text
+msgid "The component manager is not available."
+msgstr "El xestor de componentes nun ta disponible."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_NO_CFG_SERVICE.string.text
+msgid "The configuration service is not available."
+msgstr "Nun se puede crear el xestor de configuración."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_MULTISESSION.string.text
+msgid ""
+"You have another instance running in a different terminal session. Close "
+"that instance and then try again."
+msgstr ""
+"Tienes otra instancia funcionando n'otra sesión de terminal. Zarra esa "
+"instancia ya intentalo entós."
+
+#: desktop.src#STR_ASK_START_SETUP_MANUALLY.string.text
+msgid ""
+"Start the setup application to repair the installation from the CD or the "
+"folder containing the installation packages."
+msgstr ""
+"Pa iguar la instalación, arranca l'aplicación de Configuración dende'l CD o "
+"dende la carpeta que contenga los ficheros d'instalación."
+
+#: desktop.src#STR_CONFIG_ERR_SETTINGS_INCOMPLETE.string.text
+msgid ""
+"The startup settings for accessing the central configuration are incomplete. "
+""
+msgstr ""
+"La configuración d'entamu p'acceder a la configuración central nun ta "
+"completa. "
+
+#: desktop.src#STR_CONFIG_ERR_CANNOT_CONNECT.string.text
+msgid "A connection to the central configuration could not be established. "
+msgstr "Nun se pudo afitar denguna conexón cola configuración central. "
+
+#: desktop.src#STR_CONFIG_ERR_RIGHTS_MISSING.string.text
+msgid ""
+"You cannot access the central configuration because of missing access "
+"rights. "
+msgstr ""
+"Nun puede accedese a la configuración central por falta de permisos "
+"d'accesu. "
+
+#: desktop.src#STR_CONFIG_ERR_ACCESS_GENERAL.string.text
+msgid "A general error occurred while accessing your central configuration. "
+msgstr "Hebo un fallu xeneral mentanto s'accedía a la configuración central. "
+
+#: desktop.src#STR_CONFIG_ERR_NO_WRITE_ACCESS.string.text
+msgid ""
+"The changes to your personal settings cannot be stored centrally because of "
+"missing access rights. "
+msgstr ""
+"Los cambeos fechos na configuración personal nun se pueden grabar de manera "
+"central por falta de drechos d'accesu. "
+
+#: desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.string.text
+msgid ""
+"%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME "
+"configuration data.\n"
+"\n"
+"Please contact your system administrator."
+msgstr ""
+"%PRODUCTNAME nun se puede arrancar por un fallu qu'hebo al acceder a los "
+"datos de la configuración de %PRODUCTNAME.\n"
+"\n"
+"Contauta col to alministrador de sistema."
+
+#: desktop.src#STR_INTERNAL_ERRMSG.string.text
+msgid "The following internal error has occurred: "
+msgstr "Hebo'l siguiente fallu internu: "
+
+#: desktop.src#QBX_USERDATALOCKED.querybox.text
+msgid ""
+"Either another instance of %PRODUCTNAME is accessing your personal settings "
+"or your personal settings are locked.\n"
+"Simultaneous access can lead to inconsistencies in your personal settings. "
+"Before continuing, you should make sure user '$u' closes %PRODUCTNAME on "
+"host '$h'.\n"
+"\n"
+"Do you really want to continue?"
+msgstr ""
+"Otra instancia de %PRODUCTNAME ta accediendo a la to configuración personal "
+"o la configuración personal ta bloqueada.\n"
+"Un accesu al tiempu puede producir incoherencies na configuración personal. "
+"Enantes de siguir, asegúrate de que l'usuariu '$u' zarre %PRODUCTNAME nel "
+"ordenador '$h'.\n"
+"\n"
+"¿Tas seguru de querer siguir?"
+
+#: desktop.src#STR_TITLE_USERDATALOCKED.string.text
+msgctxt "desktop.src#STR_TITLE_USERDATALOCKED.string.text"
+msgid "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
+
+#: desktop.src#EBX_ERR_PRINTDISABLED.errorbox.text
+msgid "Printing is disabled. No documents can be printed."
+msgstr "Impresión desactivada. Nun se pueden emprentar documentos."
+
+#: desktop.src#INFOBOX_EXPIRED.infobox.text
+msgid ""
+"This Evaluation Version has expired. To find out more about %PRODUCTNAME,\n"
+"visit http://www.oracle.com/us/products/applications/open-office."
+msgstr ""
+"Esta versión d'evaluación caducó. Pa saber más tocante a %PRODUCTNAME,\n"
+"visita http://www.oracle.com/us/products/applications/open-office."
+
+#: desktop.src#STR_TITLE_EXPIRED.string.text
+msgctxt "desktop.src#STR_TITLE_EXPIRED.string.text"
+msgid "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
+
+#: desktop.src#STR_BOOTSTRAP_ERR_NO_PATHSET_SERVICE.string.text
+msgid "The path manager is not available.\n"
+msgstr "L'alministrador de camín nun ta disponible.\n"
+
+#: desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.string.text
+msgid ""
+"%PRODUCTNAME user installation could not be completed due to insufficient "
+"free disk space. Please free more disc space at the following location and "
+"restart %PRODUCTNAME:\n"
+"\n"
+msgstr ""
+"Nun se pudo completar la instalación del usuariu de %PRODUCTNAME porque nun "
+"hai abondu espaciu llibre nel discu. Llibera más espaciu nel discu nel "
+"allugamientu que t'indica y reanicia %PRODUCTNAME:\n"
+"\n"
+
+#: desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.string.text
+msgid ""
+"%PRODUCTNAME user installation could not be processed due to missing access "
+"rights. Please make sure that you have sufficient access rights for the "
+"following location and restart %PRODUCTNAME:\n"
+"\n"
+msgstr ""
+"Nun se pudo procesar la instalación del usuariu de %PRODUCTNAME por que nun "
+"tienes derechos d'accesu. Asegúrate de que tengas suficientes derechos "
+"d'accesu pal allugamientu que t'indica y reanicia %PRODUCTNAME:\n"
+"\n"
+"X-Generator: Pootle 2.1.6\n"
+"X-Accelerator-Marker: ~\n"
+
+#: dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.fixedtext.text
+msgid ""
+"The extension cannot be installed as the following\n"
+"system dependencies are not fulfilled:"
+msgstr ""
+"La estensión nun pudo instalase yá que les siguientes\n"
+"dependencies del sistema nun tán satisfeches:"
+
+#: dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.modaldialog.text
+msgid "System dependencies check"
+msgstr "Chequeando dependencies del sistema"
+
+#: dp_gui_dialog.src#RID_STR_ADD_PACKAGES.string.text
+msgid "Add Extension(s)"
+msgstr "Amestar Estensión(es)"
+
+#: dp_gui_dialog.src#RID_CTX_ITEM_REMOVE.string.text
+msgid "~Remove"
+msgstr "~Desaniciar"
+
+#: dp_gui_dialog.src#RID_CTX_ITEM_ENABLE.string.text
+msgid "~Enable"
+msgstr "~Habilitar"
+
+#: dp_gui_dialog.src#RID_CTX_ITEM_DISABLE.string.text
+msgid "~Disable"
+msgstr "~Deshabilitar"
+
+#: dp_gui_dialog.src#RID_CTX_ITEM_CHECK_UPDATE.string.text
+msgid "~Update..."
+msgstr "~Anovar..."
+
+#: dp_gui_dialog.src#RID_CTX_ITEM_OPTIONS.string.text
+msgid "~Options..."
+msgstr "~Opciones..."
+
+#: dp_gui_dialog.src#RID_STR_ADDING_PACKAGES.string.text
+msgctxt "dp_gui_dialog.src#RID_STR_ADDING_PACKAGES.string.text"
+msgid "Adding %EXTENSION_NAME"
+msgstr "Amestar %EXTENSION_NAME"
+
+#: dp_gui_dialog.src#RID_STR_REMOVING_PACKAGES.string.text
+msgid "Removing %EXTENSION_NAME"
+msgstr "Desaniciar %EXTENSION_NAME"
+
+#: dp_gui_dialog.src#RID_STR_ENABLING_PACKAGES.string.text
+msgid "Enabling %EXTENSION_NAME"
+msgstr "Activando %EXTENSION_NAME"
+
+#: dp_gui_dialog.src#RID_STR_DISABLING_PACKAGES.string.text
+msgid "Disabling %EXTENSION_NAME"
+msgstr "Desactivar %EXTENSION_NAME"
+
+#: dp_gui_dialog.src#RID_STR_ACCEPT_LICENSE.string.text
+msgid "Accept license for %EXTENSION_NAME"
+msgstr "Aceutar la llicencia pa %EXTENSION_NAME"
+
+#: dp_gui_dialog.src#RID_STR_INSTALL_FOR_ALL.string.text
+msgid "~For all users"
+msgstr "~Pa tolos usuarios"
+
+#: dp_gui_dialog.src#RID_STR_INSTALL_FOR_ME.string.text
+msgid "~Only for me"
+msgstr "~Namái pa mín"
+
+#: dp_gui_dialog.src#RID_STR_ERROR_UNKNOWN_STATUS.string.text
+msgid "Error: The status of this extension is unknown"
+msgstr "Fallu: Desconózse l'estáu d'esta estensión"
+
+#: dp_gui_dialog.src#RID_STR_CLOSE_BTN.string.text
+msgctxt "dp_gui_dialog.src#RID_STR_CLOSE_BTN.string.text"
+msgid "Close"
+msgstr "Zarrar"
+
+#: dp_gui_dialog.src#RID_STR_EXIT_BTN.string.text
+msgid "Quit"
+msgstr "Colar"
+
+#: dp_gui_dialog.src#RID_STR_NO_ADMIN_PRIVILEGE.string.text
+msgid ""
+"%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME "
+"extensions are not compatible with this version and need to be updated "
+"before %PRODUCTNAME can be started.\n"
+"\n"
+"Updating of shared extension requires administrator privileges. Contact your "
+"system administrator to update the following shared extensions:"
+msgstr ""
+"%PRODUCTNAME s'anovó a una nueva versión. Dalgunes estensiones compartíes de "
+"%PRODUCTNAME nun son compatibles con esta versión y ye necesario anovales "
+"enantes que s'anicie %PRODUCTNAME.\n"
+"\n"
+"L'anovamientu de la estensión compartida requier privilexos d'alministrador. "
+"Contauta col alministrador del sistema p'anovar les siguientes estensiones "
+"compartíes:"
+
+#: dp_gui_dialog.src#RID_STR_ERROR_MISSING_DEPENDENCIES.string.text
+msgid ""
+"The extension cannot be enabled as the following system dependencies are not "
+"fulfilled:"
+msgstr ""
+"La estensión nun pudo instalase yá que les siguientes dependencies del "
+"sistema nun tán satisfeches:"
+
+#: dp_gui_dialog.src#RID_STR_ERROR_MISSING_LICENSE.string.text
+msgid "This extension is disabled because you haven't accepted the license yet.\n"
+msgstr "Esta estensión ta desactivada porque aínda nun aceutaste la llicencia.\n"
+
+#: dp_gui_dialog.src#RID_STR_SHOW_LICENSE_CMD.string.text
+msgid "Show license"
+msgstr "Amosar la llicencia"
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_HEADER.fixedtext.text
+msgid ""
+"Please follow these steps to proceed with the installation of the extension:"
+msgstr ""
+"Por favor, sigui los pasos pa proceder cola instalación de la estensión:"
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1.fixedtext.text
+msgid "1."
+msgstr "1."
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1_TXT.fixedtext.text
+msgid ""
+"Read the complete License Agreement. Use the scroll bar or the \\'Scroll "
+"Down\\' button in this dialog to view the entire license text."
+msgstr ""
+"Llei'l Términu de Llicencia completu. Usa la barra de scroll o el botón "
+"\\'Scroll Down\\' nel diálogu pa ver el testu de llicencia enteru."
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2.fixedtext.text
+msgid "2."
+msgstr "2."
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2_TXT.fixedtext.text
+msgid ""
+"Accept the License Agreement for the extension by pressing the \\'Accept\\' "
+"button."
+msgstr ""
+"Aceuta'l Términu de Llicencia pa la estensión calcando'l botón \\'Accept\\'."
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.PB_LICENSE_DOWN.pushbutton.text
+msgid "~Scroll Down"
+msgstr "~Scroll Abaxo"
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_ACCEPT.okbutton.text
+msgid "Accept"
+msgstr "Aceutar"
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_DECLINE.cancelbutton.text
+msgid "Decline"
+msgstr "Refugar"
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.modaldialog.text
+msgctxt "dp_gui_dialog.src#RID_DLG_LICENSE.modaldialog.text"
+msgid "Extension Software License Agreement"
+msgstr "Términu de Llicencia de Software d'Estensiones"
+
+#: dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.RID_EM_BTN_CLOSE.okbutton.text
+msgctxt "dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.RID_EM_BTN_CLOSE.okbutton.text"
+msgid "Close"
+msgstr "Zarrar"
+
+#: dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.modaldialog.text
+msgctxt "dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.modaldialog.text"
+msgid "Extension Software License Agreement"
+msgstr "Términu de Llicencia de Software d'Estensiones"
+
+#: dp_gui_dialog.src#RID_WARNINGBOX_INSTALL_EXTENSION.warningbox.text
+msgid ""
+"You are about to install the extension \\'%NAME\\'.\n"
+"Click \\'OK\\' to proceed with the installation.\n"
+"Click \\'Cancel\\' to stop the installation."
+msgstr ""
+"Vas instalar la estensión \\'%NAME\\'.\n"
+"Calca \\'Aceutar\\' pa proceder cola instalación.\n"
+"Calca \\'Encaboxar\\' p'albortar la instalación."
+
+#: dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_EXTENSION.warningbox.text
+msgid ""
+"You are about to remove the extension \\'%NAME\\'.\n"
+"Click \\'OK\\' to remove the extension.\n"
+"Click \\'Cancel\\' to stop removing the extension."
+msgstr ""
+"Vas a desaniciar la estensión \\'%NAME\\'.\n"
+"Calca \\'Aceutar\\' pa desaniciar la estensión.\n"
+"Calca \\'Encaboxar\\' pa detener el desaniciu de la estensión."
+
+#: dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_SHARED_EXTENSION.warningbox.text
+msgid ""
+"Make sure that no further users are working with the same %PRODUCTNAME, when "
+"changing shared extensions in a multi user environment.\n"
+"Click \\'OK\\' to remove the extension.\n"
+"Click \\'Cancel\\' to stop removing the extension."
+msgstr ""
+"Asegúrate de que nun hai otros usuarios trabayando col mesmu %PRODUCTNAME, "
+"cuando camudes estensiones compartíes nun entornu multiusuariu.\n"
+"Calca \\'Aceutar\\' pa desaniciar la estensión.\n"
+"Calca \\'Encaboxar\\' pa detener el desaniciu de la estensión."
+
+#: dp_gui_dialog.src#RID_WARNINGBOX_ENABLE_SHARED_EXTENSION.warningbox.text
+msgid ""
+"Make sure that no further users are working with the same %PRODUCTNAME, when "
+"changing shared extensions in a multi user environment.\n"
+"Click \\'OK\\' to enable the extension.\n"
+"Click \\'Cancel\\' to stop enabling the extension."
+msgstr ""
+"Asegúrate de que nun hai otros usuarios trabayando col mesmu %PRODUCTNAME, "
+"cuando camudes estensiones compartíes nun entornu multiusuariu.\n"
+"Calca \\'Aceutar\\' p'activar la estensión.\n"
+"Calca \\'Encaboxar\\' pa detener l'activación de la estensión."
+
+#: dp_gui_dialog.src#RID_WARNINGBOX_DISABLE_SHARED_EXTENSION.warningbox.text
+msgid ""
+"Make sure that no further users are working with the same %PRODUCTNAME, when "
+"changing shared extensions in a multi user environment.\n"
+"Click \\'OK\\' to disable the extension.\n"
+"Click \\'Cancel\\' to stop disabling the extension."
+msgstr ""
+"Asegúrate de que nun hai otros usuarios trabayando col mesmu %PRODUCTNAME, "
+"cuando camudes estensiones compartíes nun entornu multiusuariu.\n"
+"Calca \\'Aceutar\\' pa desactivar la estensión.\n"
+"Calca \\'Encaboxar\\' pa detener la desactivación de la estensión."
+
+#: dp_gui_dialog.src#RID_STR_UNSUPPORTED_PLATFORM.string.text
+msgid "The extension \\'%Name\\' does not work on this computer."
+msgstr "La estensión \\'%Name\\' nun funciona nesti ordenador."
+
+#: dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_ADD.pushbutton.text
+msgid "~Add..."
+msgstr "~Amestar..."
+
+#: dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CHECK_UPDATES.pushbutton.text
+msgctxt "dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CHECK_UPDATES.pushbutton.text"
+msgid "Check for ~Updates..."
+msgstr "Comprobar ~Anovamientos..."
+
+#: dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_FT_GET_EXTENSIONS.fixedtext.text
+msgid "Get more extensions online..."
+msgstr "Obtener más estensiones equí..."
+
+#: dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_FT_PROGRESS.fixedtext.text
+msgctxt "dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_FT_PROGRESS.fixedtext.text"
+msgid "Adding %EXTENSION_NAME"
+msgstr "Amestando %EXTENSION_NAME"
+
+#: dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CLOSE.okbutton.text
+msgctxt "dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CLOSE.okbutton.text"
+msgid "Close"
+msgstr "Zarrar"
+
+#: dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.modelessdialog.text
+msgid "Extension Manager"
+msgstr "Xestor d'Estensiones"
+
+#: dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_MSG.fixedtext.text
+msgid ""
+"%PRODUCTNAME has been updated to a new version. Some installed %PRODUCTNAME "
+"extensions are not compatible with this version and need to be updated "
+"before they can be used."
+msgstr ""
+"%PRODUCTNAME s'anovó a una nueva versión. Dalgunes estensiones instalaes de "
+"%PRODUCTNAME nun son compatibles con esta versión y ye necesario anovales "
+"enantes de que se puedan usar."
+
+#: dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_PROGRESS.fixedtext.text
+msgctxt "dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_PROGRESS.fixedtext.text"
+msgid "Adding %EXTENSION_NAME"
+msgstr "Amestando %EXTENSION_NAME"
+
+#: dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CHECK_UPDATES.pushbutton.text
+msgctxt "dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CHECK_UPDATES.pushbutton.text"
+msgid "Check for ~Updates..."
+msgstr "Comprobar ~Anovamientos..."
+
+#: dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CLOSE.pushbutton.text
+msgid "Disable all"
+msgstr "Desactivar too"
+
+#: dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.modaldialog.text
+msgid "Extension Update Required"
+msgstr "Requierse Anovamientu d'estensión"
+
+#: dp_gui_dialog2.src#RID_QUERYBOX_INSTALL_FOR_ALL.querybox.text
+msgid ""
+"Make sure that no further users are working with the same %PRODUCTNAME, when "
+"installing an extension for all users in a multi user environment.\n"
+"\n"
+"For whom do you want to install the extension?\n"
+msgstr ""
+"Asegúrate de que nun hai otros usuarios trabayando col mesmu %PRODUCTNAME, "
+"cuando camudes estensiones compartíes nun entornu multiusuariu.\n"
+"\n"
+"Pa quién quies instalar la estensión?\n"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CHECKING.fixedtext.text
+msgid "Checking..."
+msgstr "Chequeando..."
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_UPDATE.fixedtext.text
+msgid "~Available extension updates"
+msgstr "~Anovando estensiones disponibles"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ALL.checkbox.text
+msgid "~Show all updates"
+msgstr "~Amosar tolos anovamientos"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_DESCRIPTION.fixedline.text
+msgid "Description"
+msgstr "Descripción"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_PUBLISHER_LABEL.fixedtext.text
+msgid "Publisher:"
+msgstr "Editor:"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_RELEASENOTES_LABEL.fixedtext.text
+msgid "What is new:"
+msgstr "Qué hai nuevo:"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_RELEASENOTES_LINK.fixedtext.text
+msgid "Release Notes"
+msgstr "Notes de la versión"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_OK.pushbutton.text
+msgid "~Install"
+msgstr "~Instalar"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CLOSE.pushbutton.text
+msgctxt "dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CLOSE.pushbutton.text"
+msgid "Close"
+msgstr "Zarrar"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ERROR.string.text
+msgid "Error"
+msgstr "Error"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NONE.string.text
+msgid "No new updates are available."
+msgstr "Nun hai anovamientos disponibles."
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALLABLE.string.text
+msgid ""
+"No installable updates are available. To see ignored or disabled updates, "
+"mark the check box 'Show all updates'."
+msgstr ""
+"Nun hai anovamientos disponibles. Pa ver tolos anovamientos, marca la "
+"caxella 'Amosar tolos anovamientos'."
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_FAILURE.string.text
+msgid "An error occurred:"
+msgstr "Asocedió un error:"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_UNKNOWNERROR.string.text
+msgid "Unknown error."
+msgstr "Error desconocíu."
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODESCRIPTION.string.text
+msgid "No more details are available for this update."
+msgstr "Nun hai más detalles disponibles pa esti anovamientu."
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALL.string.text
+msgid "The extension cannot be updated because:"
+msgstr "La estensión nun puede anovase porque:"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY.string.text
+msgid "Required OpenOffice.org version doesn't match:"
+msgstr "La versión que se requier d'OpenOffice.org nun ye la indicada."
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY_CUR_VER.string.text
+msgid "You have OpenOffice.org %VERSION"
+msgstr "Tienes OpenOffice.org %VERSION"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_BROWSERBASED.string.text
+msgid "browser based update"
+msgstr "anovamientu dende'l restolador"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_VERSION.string.text
+msgid "Version"
+msgstr "Versión"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORE.string.text
+msgid "Ignore this Update"
+msgstr "Inorar esti anovamientu"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORE_ALL.string.text
+msgid "Ignore all Updates"
+msgstr "Inorar tolos anovamientos"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ENABLE.string.text
+msgid "Enable Updates"
+msgstr "Habilitar los anovamientos"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORED_UPDATE.string.text
+msgid "This update will be ignored.\n"
+msgstr "Va inorase esti anovamientu.\n"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.modaldialog.text
+msgid "Extension Update"
+msgstr "Anovar Estensión"
+
+#: dp_gui_updatedialog.src#RID_WARNINGBOX_UPDATE_SHARED_EXTENSION.warningbox.text
+msgid ""
+"Make sure that no further users are working with the same %PRODUCTNAME, when "
+"changing shared extensions in a multi user environment.\n"
+"Click \\'OK\\' to update the extensions.\n"
+"Click \\'Cancel\\' to stop updating the extensions."
+msgstr ""
+"Asegúrate de que nun hai otros usuarios trabayando col mesmu %PRODUCTNAME, "
+"cuando camudes estensiones compartíes nun entornu multiusuariu.\n"
+"Clic \\'Aceutar\\' p'anovar les estensiones.\n"
+"Clic \\'Encaboxar\\' pa detener l'anovamientu de les estensiones."
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_DOWNLOADING.fixedtext.text
+msgid "Downloading extensions..."
+msgstr "Descargando estensiones..."
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_RESULTS.fixedtext.text
+msgid "Result"
+msgstr "Resultáu"
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_OK.okbutton.text
+msgid "OK"
+msgstr "Aceutar"
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ABORT.cancelbutton.text
+msgid "Cancel Update"
+msgstr "Detener Anovamientu"
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_INSTALLING.string.text
+msgid "Installing extensions..."
+msgstr "Instalando estensiones..."
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_FINISHED.string.text
+msgid "Installation finished"
+msgstr "Instalación finada"
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_NO_ERRORS.string.text
+msgid "No errors."
+msgstr "Ensin errores."
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_DOWNLOAD.string.text
+msgid "Error while downloading extension %NAME. "
+msgstr "Error descargando estensión %NAME. "
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_THIS_ERROR_OCCURRED.string.text
+msgid "The error message is: "
+msgstr "El mensaxe d'error ye: "
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_INSTALLATION.string.text
+msgid "Error while installing extension %NAME. "
+msgstr "Error instalando estensión %NAME. "
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_LIC_DECLINED.string.text
+msgid "The license agreement for extension %NAME was refused. "
+msgstr "Los términos de llicencia pa la estensión %NAME refugáronse. "
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_EXTENSION_NOINSTALL.string.text
+msgid "The extension will not be installed."
+msgstr "La estensión nun s'instalará."
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.modaldialog.text
+msgid "Download and Installation"
+msgstr "Descargar ya Instalar"
+
+#: dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.warningbox.text
+msgid ""
+"You are about to install version $NEW of the extension \\'$NAME\\'.\n"
+"The newer version $DEPLOYED is already installed.\n"
+"Click \\'OK\\' to replace the installed extension.\n"
+"Click \\'Cancel\\' to stop the installation."
+msgstr ""
+"Tas a piques d'instalar la versión $NEW de la estensión \\'$NAME\\'.\n"
+"La versión nueva $DEPLOYED yá ta instalada.\n"
+"Calca \\'Aceutar\\' pa trocar la estensión instalada.\n"
+"Calca \\'Encaboxar\\' pa encaboxar la instalación."
+
+#: dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_LESS_DIFFERENT_NAMES.string.text
+msgid ""
+"You are about to install version $NEW of the extension \\'$NAME\\'.\n"
+"The newer version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\n"
+"Click \\'OK\\' to replace the installed extension.\n"
+"Click \\'Cancel\\' to stop the installation."
+msgstr ""
+"Tas a piques d'instalar la versión $NEW de la estensión \\'$NAME\\'.\n"
+"La versión nueva $DEPLOYED, denomada \\'$OLDNAME\\', yá ta instalada.\n"
+"Calca \\'Aceutar\\' pa trocar la estensión instalada.\n"
+"Calca \\'Encaboxar\\' pa encaboxar la instalación."
+
+#: dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_EQUAL.warningbox.text
+msgid ""
+"You are about to install version $NEW of the extension \\'$NAME\\'.\n"
+"That version is already installed.\n"
+"Click \\'OK\\' to replace the installed extension.\n"
+"Click \\'Cancel\\' to stop the installation."
+msgstr ""
+"Tas a piques d'instalar la versión $NEW de la estensión \\'$NAME\\'.\n"
+"Esa versión yá ta instalada.\n"
+"Calca \\'Aceutar\\' pa trocar la estensión instalada.\n"
+"Calca \\'Encaboxar\\' pa encaboxar la instalación."
+
+#: dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_EQUAL_DIFFERENT_NAMES.string.text
+msgid ""
+"You are about to install version $NEW of the extension \\'$NAME\\'.\n"
+"That version, named \\'$OLDNAME\\', is already installed.\n"
+"Click \\'OK\\' to replace the installed extension.\n"
+"Click \\'Cancel\\' to stop the installation."
+msgstr ""
+"Tas a piques d'instalar la versión $NEW de la estensión \\'$NAME\\'.\n"
+"Esa versión, denomada \\'$OLDNAME\\', yá ta instalada.\n"
+"Calca \\'Aceutar\\' pa trocar la estensión instalada.\n"
+"Calca \\'Encaboxar\\' pa encaboxar la instalación."
+
+#: dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_GREATER.warningbox.text
+msgid ""
+"You are about to install version $NEW of the extension \\'$NAME\\'.\n"
+"The older version $DEPLOYED is already installed.\n"
+"Click \\'OK\\' to replace the installed extension.\n"
+"Click \\'Cancel\\' to stop the installation."
+msgstr ""
+"Tas a piques d'instalar la versión $NEW de la estensión  \\'$NAME\\'.\n"
+"La versión antigua $DEPLOYED yá ta instalada.\n"
+"Calca \\'Aceutar\\' pa trocar la estensión instalada.\n"
+"Calca \\'Encaboxar\\' pa encaboxar la instalación."
+
+#: dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_GREATER_DIFFERENT_NAMES.string.text
+msgid ""
+"You are about to install version $NEW of the extension \\'$NAME\\'.\n"
+"The older version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\n"
+"Click \\'OK\\' to replace the installed extension.\n"
+"Click \\'Cancel\\' to stop the installation."
+msgstr ""
+"Tas a piques d'instalar la versión $NEW de la estensión \\'$NAME\\'.\n"
+"La versión antigua $DEPLOYED, denomada \\'$OLDNAME\\', yá ta instalada.\n"
+"Calca \\'Aceutar\\' pa trocar la estensión instalada.\n"
+"Calca \\'Encaboxar\\' pa encaboxar la instalación."
+
+#~ msgid "No descriptions available for this extension."
+#~ msgstr "Nun hai descripciones disponibles pa esta estensión."
+
+#: dp_manager.src#RID_STR_COPYING_PACKAGE.string.text
+msgid "Copying: "
+msgstr "Copiando: "
+
+#: dp_manager.src#RID_STR_ERROR_WHILE_ADDING.string.text
+msgid "Error while adding: "
+msgstr "Error al amestar: "
+
+#: dp_manager.src#RID_STR_ERROR_WHILE_REMOVING.string.text
+msgid "Error while removing: "
+msgstr "Error al borrar: "
+
+#: dp_manager.src#RID_STR_PACKAGE_ALREADY_ADDED.string.text
+msgid "Extension has already been added: "
+msgstr "La estensión añadiose ya : "
+
+#: dp_manager.src#RID_STR_NO_SUCH_PACKAGE.string.text
+msgid "There is no such extension deployed: "
+msgstr "Esa estensión nun ta desplegada: "
+
+#: dp_manager.src#RID_STR_SYNCHRONIZING_REPOSITORY.string.text
+msgid "Synchronizing repository for %NAME extensions"
+msgstr "Sincronización del repositoriu pa les estensiones %NAME"
+
+#: dp_registry.src#RID_STR_REGISTERING_PACKAGE.string.text
+msgid "Enabling: "
+msgstr "Activando: "
+
+#: dp_registry.src#RID_STR_REVOKING_PACKAGE.string.text
+msgid "Disabling: "
+msgstr "Desactivando: "
+
+#: dp_registry.src#RID_STR_CANNOT_DETECT_MEDIA_TYPE.string.text
+msgid "Cannot detect media-type: "
+msgstr "Nun puede deteutar tipu de mediu: "
+
+#: dp_registry.src#RID_STR_UNSUPPORTED_MEDIA_TYPE.string.text
+msgid "This media-type is not supported: "
+msgstr "Esti tipu de mediu nun ta soportáu: "
+
+#: dp_registry.src#RID_STR_ERROR_WHILE_REGISTERING.string.text
+msgid "An error occurred while enabling: "
+msgstr "Hubo un error al activar: "
+
+#: dp_registry.src#RID_STR_ERROR_WHILE_REVOKING.string.text
+msgid "An error occurred while disabling: "
+msgstr "Hubo un error al desactivar: "
+"X-Accelerator-Marker: ~\n"
+
+#: dp_configuration.src#RID_STR_CONF_SCHEMA.string.text
+msgid "Configuration Schema"
+msgstr "Esquema de configuración"
+
+#: dp_configuration.src#RID_STR_CONF_DATA.string.text
+msgid "Configuration Data"
+msgstr "Datos de configuración"
+"X-Accelerator-Marker: ~\n"
+
+#: dp_component.src#RID_STR_DYN_COMPONENT.string.text
+msgid "UNO Dynamic Library Component"
+msgstr "Componente Biblioteca Dinámica UNO"
+
+#: dp_component.src#RID_STR_JAVA_COMPONENT.string.text
+msgid "UNO Java Component"
+msgstr "Componente Java UNO"
+
+#: dp_component.src#RID_STR_PYTHON_COMPONENT.string.text
+msgid "UNO Python Component"
+msgstr "Componente Python UNO"
+
+#: dp_component.src#RID_STR_COMPONENTS.string.text
+msgid "UNO Components"
+msgstr "Componentes UNO"
+
+#: dp_component.src#RID_STR_RDB_TYPELIB.string.text
+msgid "UNO RDB Type Library"
+msgstr "Biblioteca de Tipu RDB UNO"
+
+#: dp_component.src#RID_STR_JAVA_TYPELIB.string.text
+msgid "UNO Java Type Library"
+msgstr "Biblioteca de Tipu Java UNO"
+
+#: dp_package.src#RID_STR_PACKAGE_BUNDLE.string.text
+msgid "Extension"
+msgstr "Estensión"
+"X-Accelerator-Marker: ~\n"
+
+#: dp_script.src#RID_STR_BASIC_LIB.string.text
+msgid "%PRODUCTNAME Basic Library"
+msgstr "Biblioteca Básica %PRODUCTNAME"
+
+#: dp_script.src#RID_STR_DIALOG_LIB.string.text
+msgid "Dialog Library"
+msgstr "Biblioteca de Diálogu"
+
+#: dp_script.src#RID_STR_CANNOT_DETERMINE_LIBNAME.string.text
+msgid "The library name could not be determined."
+msgstr "Nun pudo determinase'l nome de la biblioteca."
+
+#: dp_script.src#RID_STR_LIBNAME_ALREADY_EXISTS.string.text
+msgid "This library name already exists. Please choose a different name."
+msgstr "Yá esiste esta biblioteca. Por favor, escueyi un nome estremáu."
+"X-Generator: Virtaal 0.7.1\n"
+"X-Accelerator-Marker: ~\n"
+"X-Project-Style: openoffice\n"
+
+#: dp_help.src#RID_STR_HELP.string.text
+msgid "Help"
+msgstr "Ayuda"
+
+#: dp_help.src#RID_STR_HELPPROCESSING_GENERAL_ERROR.string.text
+msgid "The extension cannot be installed because:\n"
+msgstr "La estensión nun puede instalase por:\n"
+
+#: dp_help.src#RID_STR_HELPPROCESSING_XMLPARSING_ERROR.string.text
+msgid "The extension will not be installed because an error occurred in the Help "
+"files:\n"
+msgstr "La estensión nun s'instalará porque asocedió un fallu nos ficheros d'ayuda:\n"
+
+#: dp_sfwk.src#RID_STR_SFWK_LIB.string.text
+msgid "%MACROLANG Library"
+msgstr "Biblioteca %MACROLANG"
+
+#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_1.string.text
+msgid "Extension Software License Agreement of $NAME:"
+msgstr "Alcuerdu de llicencia de la estensión de software $NAME:"
+
+#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_2.string.text
+msgid ""
+"Read the complete License Agreement displayed above. Accept the License "
+"Agreement by typing \"yes\" on the console then press the Return key. Type "
+"\"no\" to decline and to abort the extension setup."
+msgstr ""
+"Por favor, llei el contratu llicencia amosáu embazo. P'aceptar los términos "
+"del contratu, escribi \"sí\" na consola, darréu calca na tecla Entrada. Pa "
+"encaboxar los términos del contratu o anular la instalación de la estensión, "
+"escribi \"non\"."
+
+#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_3.string.text
+msgid "[Enter \"yes\" or \"no\"]:"
+msgstr "[Meter \"si\" o non\"]:"
+
+#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_4.string.text
+msgid "Your input was not correct. Please enter \"yes\" or \"no\":"
+msgstr "La entrada nun ta bien. Escribi \"sí\" o \"non\":"
+
+#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.string.text
+msgid "YES"
+msgstr "SÍ"
+
+#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_Y.string.text
+msgid "Y"
+msgstr "S"
+
+#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_NO.string.text
+msgid "NO"
+msgstr "NON"
+
+#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_N.string.text
+msgid "N"
+msgstr "N"
+
+#: unopkg.src#RID_STR_CONCURRENTINSTANCE.string.text
+msgid ""
+"unopkg cannot be started. The lock file indicates it as already running. If "
+"this does not apply, delete the lock file at:"
+msgstr ""
+"unopkg nun puede aniciase.  be started. El ficheru de bloquéu indica que yá "
+"se ta executando. Si esto nun s'aplica, desanicie'l ficheru de bloquéu en:"
+
+#: unopkg.src#RID_STR_UNOPKG_ERROR.string.text
+msgid "ERROR: "
+msgstr "ERROR: "
+"X-Accelerator-Marker: ~\n"
+
+#: dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_UNKNOWN.string.text
+msgid "Unknown"
+msgstr "Desconocíu"
+
+#: dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MIN.string.text
+msgid "Extension requires at least OpenOffice.org %VERSION"
+msgstr "La estensión requier polo menos OpenOffice.org %VERSION"
+
+#: dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MAX.string.text
+msgid ""
+"Extension doesn't support versions greater than: OpenOffice.org %VERSION"
+msgstr "La estensión nun sofita versiones superiores a OpenOffice.org %VERSION"
+"X-Generator: Pootle 2.1.6\n"
+"X-Accelerator-Marker: ~\n"
+"X-Project-Style: openoffice\n"
+
+#: setup.ulf#_APP_TITLE_.LngText.text
+msgid "Setup"
+msgstr "Configuración"
+
+#: setup.ulf#_APP_PROD_TITLE_.LngText.text
+msgid "The %PRODUCTNAME Setup"
+msgstr "Instalación de %PRODUCTNAME"
+
+#: setup.ulf#_OUTOFMEM_.LngText.text
+msgid "Out of Memory"
+msgstr "Ensin Memoria"
+
+#: setup.ulf#_NOMSI_.LngText.text
+msgid "Setup was unable to find the msi package."
+msgstr "L'instalador nun atopó'l paquete msi."
+
+#: setup.ulf#_USER_CANCELLED_.LngText.text
+msgid "Setup was cancelled"
+msgstr "Encaboxóse la instalación"
+
+#: setup.ulf#_REQUIRES_ADMIN_PRIV_.LngText.text
+msgid ""
+"Administrator privileges are required for upgrading the Windows Installer."
+msgstr "Necesites privilexos d'alministrador p'anovar l'instalador de Windows."
+
+#: setup.ulf#_FILE_NOT_FOUND_.LngText.text
+msgid "Setup was unable to find the file '%s'."
+msgstr "L'instalador nun atopó'l ficheru '%s'."
+
+#: setup.ulf#_INVALID_PARAM_.LngText.text
+msgid "Invalid command line option '%s'. Please use '/?' for help."
+msgstr "Opción de llinia de comandos inválida '%s'. Usa '/?' pa tener ayuda."
+
+#: setup.ulf#_SETUP_TO_OLD_.LngText.text
+msgid ""
+"This package requires at least the version '%s' of the Windows Installer. \n"
+"You have Windows Installer '%s' on your system!"
+msgstr ""
+"Esti paquete requier polo menos de la version '%s' del instalador de "
+"Windows. \n"
+"Tienes l'instalador de Windows '%s' nel to sistema!"
+
+#: setup.ulf#_SETUP_NOT_FOUND_.LngText.text
+msgid ""
+"This package requires the Windows Installer. \n"
+"You need at least Windows Installer '%s' on your system!"
+msgstr ""
+"Esti paquete requier l'instalador de Windows. \n"
+"Necesites la cabera versión de Windows Installer '%s' nel to sistema!"
+
+#: setup.ulf#_USAGE_.LngText.text
+msgid ""
+"Usage:\n"
+"   /? :  Shows this dialog.\n"
+"   /a :  Performs an administrative installation.\n"
+"   /j[u|m] :  Performs an advertising installation.\n"
+"   /q[n] : Do not show any user interface (silent mode).\n"
+msgstr ""
+"Usu:\n"
+"   /? : Amuesa esti diálogu.\n"
+"   /a : Fai una instalación d'alministrador.\n"
+"   /j[u|m] : Fai una instalación de publicidá.\n"
+"   /q[n] : Non amosar interface d'usuariu (mou silenciosu).\n"
+
+#: setup.ulf#_ALREADY_RUNNING_.LngText.text
+msgid "There is already a setup process running."
+msgstr "Yá hai un procesu d'instalación furrulando."
+
+#: setup.ulf#_UNKNOWN_ERROR_.LngText.text
+msgid "An Unknown Error occured!"
+msgstr "¡Hebo un Fallu Desconocíu!"
+
+#: setup.ulf#_INVALID_PROFILE_.LngText.text
+msgid "Invalid or incomplete profile."
+msgstr "Perfil non válidu o incompletu."
+
+#: setup.ulf#_UNKNOWN_LANG_.LngText.text
+msgid "Unknown Language: %d"
+msgstr "Llingua Desconocida: %d"
+
+#: setup.ulf#_LANGUAGE_ZH_TW_.LngText.text
+msgid "Chinese (traditional)"
+msgstr "Chinu (tradicional)"
+
+#: setup.ulf#_LANGUAGE_CS_.LngText.text
+msgid "Czech"
+msgstr "Checu"
+
+#: setup.ulf#_LANGUAGE_DA_.LngText.text
+msgid "Danish"
+msgstr "Danés"
+
+#: setup.ulf#_LANGUAGE_DE_DE_.LngText.text
+msgid "German (Germany)"
+msgstr "Alemán (Alemaña)"
+
+#: setup.ulf#_LANGUAGE_EL_.LngText.text
+msgid "Greek"
+msgstr "Griegu"
+
+#: setup.ulf#_LANGUAGE_EN_US_.LngText.text
+msgid "English (USA)"
+msgstr "Inglés (EE.XX.)"
+
+#: setup.ulf#_LANGUAGE_ES_.LngText.text
+msgid "Spanish (Spain)"
+msgstr "Español (España)"
+
+#: setup.ulf#_LANGUAGE_FI_.LngText.text
+msgid "Finnish"
+msgstr "Finés"
+
+#: setup.ulf#_LANGUAGE_FR_FR_.LngText.text
+msgid "French (France)"
+msgstr "Francés (Francia)"
+
+#: setup.ulf#_LANGUAGE_HE_.LngText.text
+msgid "Hebrew"
+msgstr "Hebréu"
+
+#: setup.ulf#_LANGUAGE_HU_.LngText.text
+msgid "Hungarian"
+msgstr "Húngaru"
+
+#: setup.ulf#_LANGUAGE_IT_IT_.LngText.text
+msgid "Italian (Italy)"
+msgstr "Italianu (Italia)"
+
+#: setup.ulf#_LANGUAGE_JA_.LngText.text
+msgid "Japanese"
+msgstr "Xaponés"
+
+#: setup.ulf#_LANGUAGE_KO_.LngText.text
+msgid "Korean"
+msgstr "Coreanu"
+
+#: setup.ulf#_LANGUAGE_NL_NL_.LngText.text
+msgid "Dutch (Netherlands)"
+msgstr "Holandés (Holanda)"
+
+#: setup.ulf#_LANGUAGE_NO_NO_.LngText.text
+msgid "Norwegian (Bokmål)"
+msgstr "Noruegu (Bokmål)"
+
+#: setup.ulf#_LANGUAGE_PL_.LngText.text
+msgid "Polish"
+msgstr "Polacu"
+
+#: setup.ulf#_LANGUAGE_PT_BR_.LngText.text
+msgid "Portuguese (Brazil)"
+msgstr "Portugués (Brasil)"
+
+#: setup.ulf#_LANGUAGE_RU_.LngText.text
+msgid "Russian"
+msgstr "Rusu"
+
+#: setup.ulf#_LANGUAGE_SK_.LngText.text
+msgid "Slovak"
+msgstr "Eslovacu"
+
+#: setup.ulf#_LANGUAGE_SV_SE_.LngText.text
+msgid "Swedish (Sweden)"
+msgstr "Suecu (Suecia)"
+
+#: setup.ulf#_LANGUAGE_TH_.LngText.text
+msgid "Thai"
+msgstr "Tailandés (thai)"
+
+#: setup.ulf#_LANGUAGE_TR_.LngText.text
+msgid "Turkish"
+msgstr "Turcu"
+
+#: setup.ulf#_LANGUAGE_ET_.LngText.text
+msgid "Estonian"
+msgstr "Estoniu"
+
+#: setup.ulf#_LANGUAGE_ZH_CN_.LngText.text
+msgid "Chinese (Simplified)"
+msgstr "Chinu (Simplificáu)"
+
+#: setup.ulf#_LANGUAGE_PT_PT_.LngText.text
+msgid "Portuguese (Portugal)"
+msgstr "Portugués (Portugal)"
+
+#~ msgid "Slovakian"
+#~ msgstr "Eslovacu"
+
+#: rebasegui.ulf#_APP_TITLE_.LngText.text
+msgid "Installation Status"
+msgstr "Estáu d'instalación"
+
+#: rebasegui.ulf#_MSG_OPTIMIZED_FOR_CLIENT_.LngText.text
+msgid "Installation is optimized for clients."
+msgstr "La instalación ye optimizada pa veceros"
+
+#: rebasegui.ulf#_MSG_OPTIMIZED_FOR_SERVER_.LngText.text
+msgid "Installation is optimized for servers."
+msgstr "La instalación ye optimizada pa sirvidores"
+
+#: rebasegui.ulf#_MSG_NO_INSTALLATION_FOUND_.LngText.text
+msgid "Cannot find Office installation."
+msgstr "Nun s'alcuentra instalación ofimática"

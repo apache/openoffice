@@ -107,7 +107,7 @@ void convert_po::stopCollectData(char *syyText)
 #endif
   }
   else
-    mcMemory.setEnUsKey(miLineNo, useKey, std::string("dummy"), sCollectedText);
+//JIX    mcMemory.setEnUsKey(miLineNo, useKey, std::string("dummy"), sCollectedText);
 
 //  mbCollectingData = false;
   msCollector.clear();

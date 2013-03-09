@@ -1,0 +1,1773 @@
+#: sb.src#RID_BASIC_START.SbERR_SYNTAX___ERRCODE_RES_MASK.string.text
+msgid "Syntax error."
+msgstr "Błąd składni"
+
+#: sb.src#RID_BASIC_START.SbERR_NO_GOSUB___ERRCODE_RES_MASK.string.text
+msgid "Return without Gosub."
+msgstr "Return bez Gosub"
+
+#: sb.src#RID_BASIC_START.SbERR_REDO_FROM_START___ERRCODE_RES_MASK.string.text
+msgid "Incorrect entry; please retry."
+msgstr "Nieprawidłowy wpis; popraw"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_ARGUMENT___ERRCODE_RES_MASK.string.text
+msgid "Invalid procedure call."
+msgstr "Nieprawidłowe wywołanie procedury"
+
+#: sb.src#RID_BASIC_START.SbERR_MATH_OVERFLOW___ERRCODE_RES_MASK.string.text
+msgid "Overflow."
+msgstr "Przepełnienie"
+
+#: sb.src#RID_BASIC_START.SbERR_NO_MEMORY___ERRCODE_RES_MASK.string.text
+msgid "Not enough memory."
+msgstr "Za mało pamięci"
+
+#: sb.src#RID_BASIC_START.SbERR_ALREADY_DIM___ERRCODE_RES_MASK.string.text
+msgid "Array already dimensioned."
+msgstr "Tablica została już zwymiarowana"
+
+#: sb.src#RID_BASIC_START.SbERR_OUT_OF_RANGE___ERRCODE_RES_MASK.string.text
+msgid "Index out of defined range."
+msgstr "Indeks poza zdefiniowanym zakresem"
+
+#: sb.src#RID_BASIC_START.SbERR_DUPLICATE_DEF___ERRCODE_RES_MASK.string.text
+msgid "Duplicate definition."
+msgstr "Zduplikowana definicja"
+
+#: sb.src#RID_BASIC_START.SbERR_ZERODIV___ERRCODE_RES_MASK.string.text
+msgid "Division by zero."
+msgstr "Dzielenie przez zero"
+
+#: sb.src#RID_BASIC_START.SbERR_VAR_UNDEFINED___ERRCODE_RES_MASK.string.text
+msgid "Variable not defined."
+msgstr "Zmienna niezdefiniowana"
+
+#: sb.src#RID_BASIC_START.SbERR_CONVERSION___ERRCODE_RES_MASK.string.text
+msgid "Data type mismatch."
+msgstr "Niezgodne typy danych"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_PARAMETER___ERRCODE_RES_MASK.string.text
+msgid "Invalid parameter."
+msgstr "Nieprawidłowy parametr"
+
+#: sb.src#RID_BASIC_START.SbERR_USER_ABORT___ERRCODE_RES_MASK.string.text
+msgid "Process interrupted by user."
+msgstr "Proces przerwany przez użytkownika"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_RESUME___ERRCODE_RES_MASK.string.text
+msgid "Resume without error."
+msgstr "Wznowienie bez błędu"
+
+#: sb.src#RID_BASIC_START.SbERR_STACK_OVERFLOW___ERRCODE_RES_MASK.string.text
+msgid "Not enough stack memory."
+msgstr "Za mało pamięci stosowej"
+
+#: sb.src#RID_BASIC_START.SbERR_PROC_UNDEFINED___ERRCODE_RES_MASK.string.text
+msgid "Sub-procedure or function procedure not defined."
+msgstr "Nie zdefiniowano procedury lub funkcji"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_DLL_LOAD___ERRCODE_RES_MASK.string.text
+msgid "Error loading DLL file."
+msgstr "Błąd ładowania pliku DLL"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_DLL_CALL___ERRCODE_RES_MASK.string.text
+msgid "Wrong DLL call convention."
+msgstr "Nieprawidłowa konwencja wywołania DLL"
+
+#: sb.src#RID_BASIC_START.SbERR_INTERNAL_ERROR___ERRCODE_RES_MASK.string.text
+msgid "Internal error $(ARG1)."
+msgstr "Błąd wewnętrzny $(ARG1)"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_CHANNEL___ERRCODE_RES_MASK.string.text
+msgid "Invalid file name or file number."
+msgstr "Nieprawidłowa nazwa pliku lub nieprawidłowy numer pliku"
+
+#: sb.src#RID_BASIC_START.SbERR_FILE_NOT_FOUND___ERRCODE_RES_MASK.string.text
+msgid "File not found."
+msgstr "Nie znaleziono pliku"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_FILE_MODE___ERRCODE_RES_MASK.string.text
+msgid "Incorrect file mode."
+msgstr "Nieprawidłowy tryb pliku"
+
+#: sb.src#RID_BASIC_START.SbERR_FILE_ALREADY_OPEN___ERRCODE_RES_MASK.string.text
+msgid "File already open."
+msgstr "Plik jest już otwarty"
+
+#: sb.src#RID_BASIC_START.SbERR_IO_ERROR___ERRCODE_RES_MASK.string.text
+msgid "Device I/O error."
+msgstr "Błąd wejścia/wyjścia urządzenia"
+
+#: sb.src#RID_BASIC_START.SbERR_FILE_EXISTS___ERRCODE_RES_MASK.string.text
+msgid "File already exists."
+msgstr "Plik już istnieje"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_RECORD_LENGTH___ERRCODE_RES_MASK.string.text
+msgid "Incorrect record length."
+msgstr "Nieprawidłowa długość rekordu"
+
+#: sb.src#RID_BASIC_START.SbERR_DISK_FULL___ERRCODE_RES_MASK.string.text
+msgid "Disk or hard drive full."
+msgstr "Dyskietka lub dysk twardy są pełne"
+
+#: sb.src#RID_BASIC_START.SbERR_READ_PAST_EOF___ERRCODE_RES_MASK.string.text
+msgid "Reading exceeds EOF."
+msgstr "Odczyt przekracza koniec pliku"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_RECORD_NUMBER___ERRCODE_RES_MASK.string.text
+msgid "Incorrect record number."
+msgstr "Nieprawidłowa ilość rekordów"
+
+#: sb.src#RID_BASIC_START.SbERR_TOO_MANY_FILES___ERRCODE_RES_MASK.string.text
+msgid "Too many files."
+msgstr "Zbyt wiele plików"
+
+#: sb.src#RID_BASIC_START.SbERR_NO_DEVICE___ERRCODE_RES_MASK.string.text
+msgid "Device not available."
+msgstr "Urządzenie niedostępne"
+
+#: sb.src#RID_BASIC_START.SbERR_ACCESS_DENIED___ERRCODE_RES_MASK.string.text
+msgid "Access denied."
+msgstr "Brak dostępu"
+
+#: sb.src#RID_BASIC_START.SbERR_NOT_READY___ERRCODE_RES_MASK.string.text
+msgid "Disk not ready."
+msgstr "Dysk nie jest gotowy"
+
+#: sb.src#RID_BASIC_START.SbERR_NOT_IMPLEMENTED___ERRCODE_RES_MASK.string.text
+msgid "Not implemented."
+msgstr "Niezaimplementowane"
+
+#: sb.src#RID_BASIC_START.SbERR_DIFFERENT_DRIVE___ERRCODE_RES_MASK.string.text
+msgid "Renaming on different drives impossible."
+msgstr "Zmiana nazwy na różnych dyskach jest niemożliwa"
+
+#: sb.src#RID_BASIC_START.SbERR_ACCESS_ERROR___ERRCODE_RES_MASK.string.text
+msgid "Path/File access error."
+msgstr "Błąd dostępu do ścieżki/pliku"
+
+#: sb.src#RID_BASIC_START.SbERR_PATH_NOT_FOUND___ERRCODE_RES_MASK.string.text
+msgid "Path not found."
+msgstr "Ścieżka nie została znaleziona"
+
+#: sb.src#RID_BASIC_START.SbERR_NO_OBJECT___ERRCODE_RES_MASK.string.text
+msgid "Object variable not set."
+msgstr "Nie ustawiono zmiennej obiektu"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_PATTERN___ERRCODE_RES_MASK.string.text
+msgid "Invalid string pattern."
+msgstr "Nieprawidłowy wzorzec ciągu znaków"
+
+#: sb.src#RID_BASIC_START.SBERR_IS_NULL___ERRCODE_RES_MASK.string.text
+msgid "Use of zero not permitted."
+msgstr "Użycie zera jest niedozwolone"
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_ERROR___ERRCODE_RES_MASK.string.text
+msgid "DDE Error."
+msgstr "Błąd DDE"
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_WAITINGACK___ERRCODE_RES_MASK.string.text
+msgid "Awaiting response to DDE connection."
+msgstr "Oczekiwanie na odpowiedź w połączeniu DDE"
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_OUTOFCHANNELS___ERRCODE_RES_MASK.string.text
+msgid "No DDE channels available."
+msgstr "Nie jest dostępny żaden kanał DDE"
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_NO_RESPONSE___ERRCODE_RES_MASK.string.text
+msgid "No application responded to DDE connect initiation."
+msgstr "Żadna aplikacja nie odpowiedziała na inicjację połączenia DDE"
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_MULT_RESPONSES___ERRCODE_RES_MASK.string.text
+msgid "Too many applications responded to DDE connect initiation."
+msgstr "Zbyt wiele aplikacji odpowiedziało na inicjację połączenia DDE"
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_CHANNEL_LOCKED___ERRCODE_RES_MASK.string.text
+msgid "DDE channel locked."
+msgstr "Kanał DDE jest zablokowany"
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_NOTPROCESSED___ERRCODE_RES_MASK.string.text
+msgid "External application cannot execute DDE operation."
+msgstr "Zewnętrzna aplikacja nie może wykonać operacji DDE"
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_TIMEOUT___ERRCODE_RES_MASK.string.text
+msgid "Timeout while waiting for DDE response."
+msgstr "Przekroczenie limitu czasu podczas czekania na odpowiedź DDE"
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_USER_INTERRUPT___ERRCODE_RES_MASK.string.text
+msgid "User pressed ESCAPE during DDE operation."
+msgstr "Naciśnięcie klawisza ESCAPE podczas operacji DDE"
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_BUSY___ERRCODE_RES_MASK.string.text
+msgid "External application busy."
+msgstr "Zewnętrzna aplikacja jest zajęta"
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_NO_DATA___ERRCODE_RES_MASK.string.text
+msgid "DDE operation without data."
+msgstr "Operacja DDE bez danych"
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_WRONG_DATA_FORMAT___ERRCODE_RES_MASK.string.text
+msgid "Data are in wrong format."
+msgstr "Zły format danych"
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_PARTNER_QUIT___ERRCODE_RES_MASK.string.text
+msgid "External application has been terminated."
+msgstr "Zewnętrzna aplikacja została zakończona"
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_CONV_CLOSED___ERRCODE_RES_MASK.string.text
+msgid "DDE connection interrupted or modified."
+msgstr "Połączenie DDE zostało przerwane lub zmodyfikowane"
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_NO_CHANNEL___ERRCODE_RES_MASK.string.text
+msgid "DDE method invoked with no channel open."
+msgstr "Wywołano metodę DDE bez otwarcia kanału"
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_INVALID_LINK___ERRCODE_RES_MASK.string.text
+msgid "Invalid DDE link format."
+msgstr "Nieprawidłowy format łącza DDE"
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_QUEUE_OVERFLOW___ERRCODE_RES_MASK.string.text
+msgid "DDE message has been lost."
+msgstr "Komunikat DDE został utracony"
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_LINK_ALREADY_EST___ERRCODE_RES_MASK.string.text
+msgid "Paste link already performed."
+msgstr "Polecenie Wklej łącze zostało już wykonane"
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_LINK_INV_TOPIC___ERRCODE_RES_MASK.string.text
+msgid "Link mode cannot be set due to invalid link topic."
+msgstr ""
+"Nie można skonfigurować trybu połączenia z powodu nieprawidłowego tematu "
+"łącza"
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_DLL_NOT_FOUND___ERRCODE_RES_MASK.string.text
+msgid "DDE requires the DDEML.DLL file."
+msgstr "DDE wymaga pliku DDEML.DLL"
+
+#: sb.src#RID_BASIC_START.SbERR_CANNOT_LOAD___ERRCODE_RES_MASK.string.text
+msgid "Module cannot be loaded; invalid format."
+msgstr "Modułu nie można załadować, nieprawidłowy format"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_INDEX___ERRCODE_RES_MASK.string.text
+msgid "Invalid object index."
+msgstr "Nieprawidłowy indeks obiektu"
+
+#: sb.src#RID_BASIC_START.SbERR_NO_ACTIVE_OBJECT___ERRCODE_RES_MASK.string.text
+msgid "Object is not available."
+msgstr "Obiekt jest niedostępny"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_PROP_VALUE___ERRCODE_RES_MASK.string.text
+msgid "Incorrect property value."
+msgstr "Nieprawidłowa wartość właściwości"
+
+#: sb.src#RID_BASIC_START.SbERR_PROP_READONLY___ERRCODE_RES_MASK.string.text
+msgid "This property is read-only."
+msgstr "Właściwość tylko do odczytu"
+
+#: sb.src#RID_BASIC_START.SbERR_PROP_WRITEONLY___ERRCODE_RES_MASK.string.text
+msgid "This property is write only."
+msgstr "Właściwość tylko do zapisu"
+
+#: sb.src#RID_BASIC_START.SbERR_INVALID_OBJECT___ERRCODE_RES_MASK.string.text
+msgid "Invalid object reference."
+msgstr "Nieprawidłowe odwołanie do obiektu"
+
+#: sb.src#RID_BASIC_START.SbERR_NO_METHOD___ERRCODE_RES_MASK.string.text
+msgid "Property or method not found: $(ARG1)."
+msgstr "Nie znaleziono właściwości lub metody: $(ARG1)."
+
+#: sb.src#RID_BASIC_START.SbERR_NEEDS_OBJECT___ERRCODE_RES_MASK.string.text
+msgid "Object required."
+msgstr "Wymagany obiekt"
+
+#: sb.src#RID_BASIC_START.SbERR_INVALID_USAGE_OBJECT___ERRCODE_RES_MASK.string.text
+msgid "Invalid use of an object."
+msgstr "Nieprawidłowe użycie obiektu"
+
+#: sb.src#RID_BASIC_START.SbERR_NO_OLE___ERRCODE_RES_MASK.string.text
+msgid "OLE Automation is not supported by this object."
+msgstr "Automatyzacja OLE nie jest obsługiwana przez ten obiekt"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_METHOD___ERRCODE_RES_MASK.string.text
+msgid "This property or method is not supported by the object."
+msgstr "Obiekt nie obsługuje tej właściwości lub metody"
+
+#: sb.src#RID_BASIC_START.SbERR_OLE_ERROR___ERRCODE_RES_MASK.string.text
+msgid "OLE Automation Error."
+msgstr "Błąd przy automatyzacji OLE"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_ACTION___ERRCODE_RES_MASK.string.text
+msgid "This action is not supported by given object."
+msgstr "Ta akcja nie jest obsługiwana przez podany obiekt"
+
+#: sb.src#RID_BASIC_START.SbERR_NO_NAMED_ARGS___ERRCODE_RES_MASK.string.text
+msgid "Named arguments are not supported by given object."
+msgstr "Nazwane argumenty nie są obsługiwane przez podany obiekt"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_LOCALE___ERRCODE_RES_MASK.string.text
+msgid "The current locale setting is not supported by the given object."
+msgstr "Bieżące ustawienie narodowe nie jest obsługiwane przez podany obiekt"
+
+#: sb.src#RID_BASIC_START.SbERR_NAMED_NOT_FOUND___ERRCODE_RES_MASK.string.text
+msgid "Named argument not found."
+msgstr "Nie znaleziono nazwanego argumentu"
+
+#: sb.src#RID_BASIC_START.SbERR_NOT_OPTIONAL___ERRCODE_RES_MASK.string.text
+msgid "Argument is not optional."
+msgstr "Argument nie jest opcjonalny"
+
+#: sb.src#RID_BASIC_START.SbERR_WRONG_ARGS___ERRCODE_RES_MASK.string.text
+msgctxt ""
+"sb.src#RID_BASIC_START.SbERR_WRONG_ARGS___ERRCODE_RES_MASK.string.text"
+msgid "Invalid number of arguments."
+msgstr "Nieprawidłowa liczba argumentów"
+
+#: sb.src#RID_BASIC_START.SbERR_NOT_A_COLL___ERRCODE_RES_MASK.string.text
+msgid "Object is not a list."
+msgstr "Obiekt nie jest listą"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_ORDINAL___ERRCODE_RES_MASK.string.text
+msgid "Invalid ordinal number."
+msgstr "Nieprawidłowa liczba porządkowa"
+
+#: sb.src#RID_BASIC_START.SbERR_DLLPROC_NOT_FOUND___ERRCODE_RES_MASK.string.text
+msgid "Specified DLL function not found."
+msgstr "Podanej funkcji DLL nie znaleziono"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_CLIPBD_FORMAT___ERRCODE_RES_MASK.string.text
+msgid "Invalid clipboard format."
+msgstr "Nieprawidłowy format zawartości schowka"
+
+#: sb.src#RID_BASIC_START.SbERR_PROPERTY_NOT_FOUND___ERRCODE_RES_MASK.string.text
+msgid "Object does not have this property."
+msgstr "Obiekt nie ma tej właściwości"
+
+#: sb.src#RID_BASIC_START.SbERR_METHOD_NOT_FOUND___ERRCODE_RES_MASK.string.text
+msgid "Object does not have this method."
+msgstr "Obiekt nie ma tej metody"
+
+#: sb.src#RID_BASIC_START.SbERR_ARG_MISSING___ERRCODE_RES_MASK.string.text
+msgid "Required argument lacking."
+msgstr "Brakuje wymaganego argumentu"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_NUMBER_OF_ARGS___ERRCODE_RES_MASK.string.text
+msgctxt ""
+"sb.src#RID_BASIC_START.SbERR_BAD_NUMBER_OF_ARGS___ERRCODE_RES_MASK.string."
+"text"
+msgid "Invalid number of arguments."
+msgstr "Nieprawidłowa liczba argumentów"
+
+#: sb.src#RID_BASIC_START.SbERR_METHOD_FAILED___ERRCODE_RES_MASK.string.text
+msgid "Error executing a method."
+msgstr "Błąd wykonania metody"
+
+#: sb.src#RID_BASIC_START.SbERR_SETPROP_FAILED___ERRCODE_RES_MASK.string.text
+msgid "Unable to set property."
+msgstr "Nie można ustawić właściwości"
+
+#: sb.src#RID_BASIC_START.SbERR_GETPROP_FAILED___ERRCODE_RES_MASK.string.text
+msgid "Unable to determine property."
+msgstr "Nie można ustalić właściwości"
+
+#: sb.src#RID_BASIC_START.SbERR_UNEXPECTED___ERRCODE_RES_MASK.string.text
+msgid "Unexpected symbol: $(ARG1)."
+msgstr "Nieoczekiwany symbol: $(ARG1)"
+
+#: sb.src#RID_BASIC_START.SbERR_EXPECTED___ERRCODE_RES_MASK.string.text
+msgid "Expected: $(ARG1)."
+msgstr "Oczekiwano: $(ARG1)"
+
+#: sb.src#RID_BASIC_START.SbERR_SYMBOL_EXPECTED___ERRCODE_RES_MASK.string.text
+msgid "Symbol expected."
+msgstr "Oczekiwano symbolu"
+
+#: sb.src#RID_BASIC_START.SbERR_VAR_EXPECTED___ERRCODE_RES_MASK.string.text
+msgid "Variable expected."
+msgstr "Oczekiwano zmiennej"
+
+#: sb.src#RID_BASIC_START.SbERR_LABEL_EXPECTED___ERRCODE_RES_MASK.string.text
+msgid "Label expected."
+msgstr "Oczekiwano etykiety"
+
+#: sb.src#RID_BASIC_START.SbERR_LVALUE_EXPECTED___ERRCODE_RES_MASK.string.text
+msgid "Value cannot be applied."
+msgstr "Nie można zastosować wartości"
+
+#: sb.src#RID_BASIC_START.SbERR_VAR_DEFINED___ERRCODE_RES_MASK.string.text
+msgid "Variable $(ARG1) already defined."
+msgstr "Zmienna $(ARG1) została już zdefiniowana"
+
+#: sb.src#RID_BASIC_START.SbERR_PROC_DEFINED___ERRCODE_RES_MASK.string.text
+msgid "Sub procedure or function procedure $(ARG1) already defined."
+msgstr "Procedura lub funkcja została już zdefiniowana $(ARG1)"
+
+#: sb.src#RID_BASIC_START.SbERR_LABEL_DEFINED___ERRCODE_RES_MASK.string.text
+msgid "Label $(ARG1) already defined."
+msgstr "Etykieta $(ARG1) już jest zdefiniowana"
+
+#: sb.src#RID_BASIC_START.SbERR_UNDEF_VAR___ERRCODE_RES_MASK.string.text
+msgid "Variable $(ARG1) not found."
+msgstr "Zmiennej $(ARG1) nie znaleziono"
+
+#: sb.src#RID_BASIC_START.SbERR_UNDEF_ARRAY___ERRCODE_RES_MASK.string.text
+msgid "Array or procedure $(ARG1) not found."
+msgstr "Nie znaleziono tablicy lub procedury $(ARG1)"
+
+#: sb.src#RID_BASIC_START.SbERR_UNDEF_PROC___ERRCODE_RES_MASK.string.text
+msgid "Procedure $(ARG1) not found."
+msgstr "Nie znaleziono procedury $(ARG1)"
+
+#: sb.src#RID_BASIC_START.SbERR_UNDEF_LABEL___ERRCODE_RES_MASK.string.text
+msgid "Label $(ARG1) undefined."
+msgstr "Etykieta $(ARG1) nie jest zdefiniowana"
+
+#: sb.src#RID_BASIC_START.SbERR_UNDEF_TYPE___ERRCODE_RES_MASK.string.text
+msgid "Unknown data type $(ARG1)."
+msgstr "Nieznany typ danych $(ARG1)"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_EXIT___ERRCODE_RES_MASK.string.text
+msgid "Exit $(ARG1) expected."
+msgstr "Oczekiwano zakończenia $(ARG1)"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_BLOCK___ERRCODE_RES_MASK.string.text
+msgid "Statement block still open: $(ARG1) missing."
+msgstr "Otwarty blok instrukcji: brak $(ARG1)"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_BRACKETS___ERRCODE_RES_MASK.string.text
+msgid "Parentheses do not match."
+msgstr "Niezgodność nawiasów"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_DECLARATION___ERRCODE_RES_MASK.string.text
+msgid "Symbol $(ARG1) already defined differently."
+msgstr "Symbol $(ARG1) został już inaczej zdefiniowany"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_PARAMETERS___ERRCODE_RES_MASK.string.text
+msgid "Parameters do not correspond to procedure."
+msgstr "Parametry nie odpowiadają procedurze"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_CHAR_IN_NUMBER___ERRCODE_RES_MASK.string.text
+msgid "Invalid character in number."
+msgstr "Nieprawidłowy znak w liczbie"
+
+#: sb.src#RID_BASIC_START.SbERR_MUST_HAVE_DIMS___ERRCODE_RES_MASK.string.text
+msgid "Array must be dimensioned."
+msgstr "Tablicę należy zwymiarować"
+
+#: sb.src#RID_BASIC_START.SbERR_NO_IF___ERRCODE_RES_MASK.string.text
+msgid "Else/Endif without If."
+msgstr "Else/Endif bez If"
+
+#: sb.src#RID_BASIC_START.SbERR_NOT_IN_SUBR___ERRCODE_RES_MASK.string.text
+msgid "$(ARG1) not allowed within a procedure."
+msgstr "$(ARG1) jest niedozwolony w procedurze"
+
+#: sb.src#RID_BASIC_START.SbERR_NOT_IN_MAIN___ERRCODE_RES_MASK.string.text
+msgid "$(ARG1) not allowed outside a procedure."
+msgstr "$(ARG1) jest niedozwolony poza procedurą"
+
+#: sb.src#RID_BASIC_START.SbERR_WRONG_DIMS___ERRCODE_RES_MASK.string.text
+msgid "Dimension specifications do not match."
+msgstr "Dane wymiarowe nie są zgodne"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_OPTION___ERRCODE_RES_MASK.string.text
+msgid "Unknown option: $(ARG1)."
+msgstr "Nieznana opcja: $(ARG1)"
+
+#: sb.src#RID_BASIC_START.SbERR_CONSTANT_REDECLARED___ERRCODE_RES_MASK.string.text
+msgid "Constant $(ARG1) redefined."
+msgstr "Stała $(ARG1) zdefiniowana ponownie"
+
+#: sb.src#RID_BASIC_START.SbERR_PROG_TOO_LARGE___ERRCODE_RES_MASK.string.text
+msgid "Program too large."
+msgstr "Program jest zbyt duży"
+
+#: sb.src#RID_BASIC_START.SbERR_NO_STRINGS_ARRAYS___ERRCODE_RES_MASK.string.text
+msgid "Strings or arrays not permitted."
+msgstr "Ciągi znaków i tablice są niedozwolone"
+
+#: sb.src#RID_BASIC_START.ERRCODE_BASIC_EXCEPTION___ERRCODE_RES_MASK.string.text
+msgid "An exception occurred $(ARG1)."
+msgstr "Wystąpił wyjątek $(ARG1)"
+
+#: sb.src#RID_BASIC_START.ERRCODE_BASIC_ARRAY_FIX___ERRCODE_RES_MASK.string.text
+msgid "This array is fixed or temporarily locked."
+msgstr "Macierz ta ma stały rozmiar lub jest tymczasowo zablokowana."
+
+#: sb.src#RID_BASIC_START.ERRCODE_BASIC_STRING_OVERFLOW___ERRCODE_RES_MASK.string.text
+msgid "Out of string space."
+msgstr "Poza obszarem łańcucha."
+
+#: sb.src#RID_BASIC_START.ERRCODE_BASIC_EXPR_TOO_COMPLEX___ERRCODE_RES_MASK.string.text
+msgid "Expression Too Complex."
+msgstr "Wyrażenie zbyt złożone."
+
+#: sb.src#RID_BASIC_START.ERRCODE_BASIC_OPER_NOT_PERFORM___ERRCODE_RES_MASK.string.text
+msgid "Can't perform requested operation."
+msgstr "Nie można wykonać żądanej operacji."
+
+#: sb.src#RID_BASIC_START.ERRCODE_BASIC_TOO_MANY_DLL___ERRCODE_RES_MASK.string.text
+msgid "Too many DLL application clients."
+msgstr "Zbyt wiele klientów biblioteki DLL."
+
+#: sb.src#RID_BASIC_START.ERRCODE_BASIC_LOOP_NOT_INIT___ERRCODE_RES_MASK.string.text
+msgid "For loop not initialized."
+msgstr "Pętla for nie została zainicjalizowana."
+
+#: sb.src#RID_BASIC_START.ERRCODE_BASIC_COMPAT___ERRCODE_RES_MASK.string.text
+msgid "$(ARG1)"
+msgstr "$(ARG1)"
+
+#: sb.src#IDS_SBERR_TERMINATED.string.text
+msgid "The macro running has been interrupted"
+msgstr "Wykonywane makro zostało przerwane"
+
+#: sb.src#IDS_SBERR_STOREREF.string.text
+msgid "Reference will not be saved: "
+msgstr "Odwołanie nie zostanie zapisane: "
+
+#: sb.src#ERRCODE_BASMGR_LIBLOAD___ERRCODE_RES_MASK.string.text
+msgid "Error loading library '$(ARG1)'."
+msgstr "Błąd ładowania biblioteki \"$(ARG1)\""
+
+#: sb.src#ERRCODE_BASMGR_LIBSAVE___ERRCODE_RES_MASK.string.text
+msgid "Error saving library: '$(ARG1)'."
+msgstr "Błąd zapisu biblioteki \"$(ARG1)\""
+
+#: sb.src#ERRCODE_BASMGR_MGROPEN___ERRCODE_RES_MASK.string.text
+msgid "The BASIC from the file '$(ARG1)' could not be initialized."
+msgstr "Nie można zainicjować kodu BASIC z pliku \"$(ARG1)\""
+
+#: sb.src#ERRCODE_BASMGR_MGRSAVE___ERRCODE_RES_MASK.string.text
+msgid "Error saving BASIC: '$(ARG1)'."
+msgstr "Błąd zapisu biblioteki BASIC: \"$(ARG1)\""
+
+#: sb.src#ERRCODE_BASMGR_REMOVELIB___ERRCODE_RES_MASK.string.text
+msgid "Error removing library."
+msgstr "Błąd usuwania biblioteki"
+
+#: sb.src#ERRCODE_BASMGR_UNLOADLIB___ERRCODE_RES_MASK.string.text
+msgid "The library could not be removed from memory."
+msgstr "Biblioteki nie można było usunąć z pamięci."
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+
+#: basic.src#RID_CALLDLG.modaldialog.text
+msgid "Dynamic Link No. "
+msgstr "Nr odnośnika dynamicznego"
+
+#: basic.src#IDD_TT_ABOUT_DIALOG.1.fixedtext.text
+msgctxt "basic.src#IDD_TT_ABOUT_DIALOG.1.fixedtext.text"
+msgid "VCLTestTool"
+msgstr "Narzędzie VCLTest"
+
+#: basic.src#IDD_TT_ABOUT_DIALOG.4.fixedtext.text
+msgid "©1995-2010 Oracle"
+msgstr "©1995-2010 Oracle"
+
+#: basic.src#IDD_TT_ABOUT_DIALOG.modaldialog.text
+msgid "About VCLTestTool"
+msgstr "O narzędziu VCLTest"
+
+#: basic.src#IDD_FIND_DIALOG.RID_FIXEDTEXT1.fixedtext.text
+msgid "~Text"
+msgstr "~Tekst"
+
+#: basic.src#IDD_FIND_DIALOG.RID_OK.okbutton.text
+msgid "~Find"
+msgstr "~Znajdź"
+
+#: basic.src#IDD_FIND_DIALOG.RID_CANCEL.cancelbutton.text
+msgctxt "basic.src#IDD_FIND_DIALOG.RID_CANCEL.cancelbutton.text"
+msgid "~Cancel"
+msgstr "~Anuluj"
+
+#: basic.src#IDD_FIND_DIALOG.modaldialog.text
+msgid "Testtool: Find Text"
+msgstr "Testtool: Znajdź tekst"
+
+#: basic.src#IDD_REPLACE_DIALOG.RID_FIXEDTEXT1.fixedtext.text
+msgid "~Search for"
+msgstr "~Znajdź"
+
+#: basic.src#IDD_REPLACE_DIALOG.RID_FIXEDTEXT2.fixedtext.text
+msgid "~Replace by"
+msgstr "~Zamień tym"
+
+#: basic.src#IDD_REPLACE_DIALOG.RID_OK.okbutton.text
+msgid "~Replace"
+msgstr "~Zamień"
+
+#: basic.src#IDD_REPLACE_DIALOG.RID_CANCEL.cancelbutton.text
+msgctxt "basic.src#IDD_REPLACE_DIALOG.RID_CANCEL.cancelbutton.text"
+msgid "~Cancel"
+msgstr "~Anuluj"
+
+#: basic.src#IDD_REPLACE_DIALOG.modaldialog.text
+msgid "Testtool: Replace Text"
+msgstr "Testtool: Zamień tekst"
+
+#: basic.src#IDS_NOPRINTERERROR.infobox.text
+msgid "The print function is not available!"
+msgstr "Funkcja drukowania jest niedostępna!"
+
+#: basic.src#IDS_CANTLOAD.errorbox.text
+msgid "Library cannot be loaded!"
+msgstr "Nie można załadować biblioteki"
+
+#: basic.src#IDS_CANTLOAD.errorbox.title
+msgctxt "basic.src#IDS_CANTLOAD.errorbox.title"
+msgid "Testtool Error"
+msgstr "Błąd Testtool"
+
+#: basic.src#IDS_CANTSAVE.errorbox.text
+msgid "Library cannot be saved!"
+msgstr "Nie można zapisać biblioteki"
+
+#: basic.src#IDS_CANTSAVE.errorbox.title
+msgctxt "basic.src#IDS_CANTSAVE.errorbox.title"
+msgid "Testtool Error"
+msgstr "Błąd Testtool"
+
+#: basic.src#IDS_NOMAINPGM.errorbox.text
+msgid "This window does not contain a main program!"
+msgstr "To okno nie zawiera programu głównego!"
+
+#: basic.src#IDS_NOMAINPGM.errorbox.title
+msgctxt "basic.src#IDS_NOMAINPGM.errorbox.title"
+msgid "Testtool Error"
+msgstr "Błąd Testtool"
+
+#: basic.src#IDS_READERROR.errorbox.text
+msgid "File cannot be read!"
+msgstr "Nie można otworzyć pliku"
+
+#: basic.src#IDS_READERROR.errorbox.title
+msgctxt "basic.src#IDS_READERROR.errorbox.title"
+msgid "Testtool Error"
+msgstr "Błąd Testtool"
+
+#: basic.src#IDS_WRITEERROR.errorbox.text
+msgid "File cannot be saved!"
+msgstr "Nie można zapisać pliku"
+
+#: basic.src#IDS_WRITEERROR.errorbox.title
+msgctxt "basic.src#IDS_WRITEERROR.errorbox.title"
+msgid "Testtool Error"
+msgstr "Błąd Testtool"
+
+#: basic.src#IDS_PATTERNNOTFOUND.errorbox.text
+msgid "Search key not found!"
+msgstr "Nie można znaleźć klucza wyszukiwania"
+
+#: basic.src#IDS_PATTERNNOTFOUND.errorbox.title
+msgctxt "basic.src#IDS_PATTERNNOTFOUND.errorbox.title"
+msgid "Testtool Error"
+msgstr "Błąd Testtool"
+
+#: basic.src#IDS_INVALID_VALUE.errorbox.text
+msgid "The value is invalid and cannot be set."
+msgstr "Wartość jest niepoprawna, nie można ustawić takiej wartości"
+
+#: basic.src#IDS_INVALID_VALUE.errorbox.title
+msgctxt "basic.src#IDS_INVALID_VALUE.errorbox.title"
+msgid "Testtool Error"
+msgstr "Błąd Testtool"
+
+#: basic.src#IDS_ASKSAVEERROR.querybox.text
+msgid "Error saving files! Run anyway?"
+msgstr "Błąd zapisywania plików! Uruchomić mimo wszystko?"
+
+#: basic.src#IDS_ASKSAVEERROR.querybox.title
+msgctxt "basic.src#IDS_ASKSAVEERROR.querybox.title"
+msgid "Testtool"
+msgstr "Błąd Testtool"
+
+#: basic.src#IDS_ASK_DIRTY_SAVE.querybox.text
+msgid "File has been changed. Save?"
+msgstr "Plik został zmieniony. Zapisać?"
+
+#: basic.src#IDS_ASK_DIRTY_SAVE.querybox.title
+msgctxt "basic.src#IDS_ASK_DIRTY_SAVE.querybox.title"
+msgid "Testtool"
+msgstr "Błąd Testtool"
+
+#: basic.src#IDS_ASK_DIRTY_AND_DISKCHANGE_SAVE.querybox.text
+msgid ""
+"File has been changed on data medium\n"
+"and in the Editor. Save?"
+msgstr ""
+"Plik został zmieniony w data medium\n"
+"i w edytorze. Zapisać?"
+
+#: basic.src#IDS_ASK_DIRTY_AND_DISKCHANGE_SAVE.querybox.title
+msgctxt "basic.src#IDS_ASK_DIRTY_AND_DISKCHANGE_SAVE.querybox.title"
+msgid "Testtool"
+msgstr "Błąd Testtool"
+
+#: basic.src#IDS_ASK_DISKCHANGE_SAVE.querybox.text
+msgid ""
+"File has been changed on data medium.\n"
+"Overwrite?"
+msgstr ""
+"Plik został zmieniony dnia data medium\n"
+" and w edytorze. Nadpisać?"
+
+#: basic.src#IDS_ASK_DISKCHANGE_SAVE.querybox.title
+msgctxt "basic.src#IDS_ASK_DISKCHANGE_SAVE.querybox.title"
+msgid "Testtool"
+msgstr "Błąd Testtool"
+
+#: basic.src#IDS_ASKRELOAD.querybox.text
+msgid "File has been changed on data medium. Reload?"
+msgstr "Plik na nośniku został zmodyfikowany. Załadować ponownie?"
+
+#: basic.src#IDS_ASKRELOAD.querybox.title
+msgctxt "basic.src#IDS_ASKRELOAD.querybox.title"
+msgid "Testtool"
+msgstr "Błąd Testtool"
+
+#: basic.src#IDS_ASKDIRTYRELOAD.querybox.text
+msgid ""
+"File has been changed on data medium\n"
+"and in the Editor. Reload?"
+msgstr ""
+"Plik na nośniku\n"
+"i w edytorze został zmodyfikowany. Załadować ponownie?"
+
+#: basic.src#IDS_ASKDIRTYRELOAD.querybox.title
+msgctxt "basic.src#IDS_ASKDIRTYRELOAD.querybox.title"
+msgid "Testtool"
+msgstr "Błąd Testtool"
+
+#: basic.src#IDS_RUNNING.querybox.text
+msgid "BASIC is still running! Exit anyway?"
+msgstr "BASIC wciąż pracuje! Wyjść mimo wszystko?"
+
+#: basic.src#IDS_RUNNING.querybox.title
+msgctxt "basic.src#IDS_RUNNING.querybox.title"
+msgid "Testtool"
+msgstr "Błąd Testtool"
+
+#: basic.src#IDS_LOSS_OF_INFORMATION.querybox.text
+msgid "Saving in an external format causes information loss."
+msgstr "Zapisywanie w innym formacie spowoduje utratę danych."
+
+#: basic.src#IDS_LOSS_OF_INFORMATION.querybox.title
+msgctxt "basic.src#IDS_LOSS_OF_INFORMATION.querybox.title"
+msgid "Testtool"
+msgstr "Błąd Testtool"
+
+#: basic.src#IDS_NOT_YET_IMPLEMENTED.infobox.text
+msgid "Not yet implemented"
+msgstr "Jeszcze nie zaimplementowano"
+
+#: basic.src#IDS_WARNING1.string.text
+msgid "Warning "
+msgstr "Ostrzeżenie"
+
+#: basic.src#IDS_ERROR1.string.text
+msgid "Error "
+msgstr "Błąd"
+
+#: basic.src#IDS_ERROR2.string.text
+msgid " in line "
+msgstr "w linii"
+
+#: basic.src#IDS_NO_LONGNAME.string.text
+msgid "No entries in Hid.Lst"
+msgstr "Brak wpisów w Hid.Lst"
+
+#: basic.src#IDS_WARNING_PREFIX.string.text
+msgctxt "basic.src#IDS_WARNING_PREFIX.string.text"
+msgid "Warning: "
+msgstr "Ostrzeżenie"
+
+#: basic.src#IDS_OBJECT.string.text
+msgid "Object"
+msgstr "Obiekt"
+
+#: basic.src#IDS_EDIT_VAR.string.text
+msgid "Edit ($Arg1)"
+msgstr "Edytuj"
+
+#: basic.src#IDS_APPNAME.string.text
+msgctxt "basic.src#IDS_APPNAME.string.text"
+msgid "Testtool"
+msgstr "Testtool"
+
+#: basic.src#IDS_APPNAME2.string.text
+msgctxt "basic.src#IDS_APPNAME2.string.text"
+msgid "VCLTestTool"
+msgstr "VCLTestTool"
+
+#: basic.src#IDS_APPMODE_BREAK.string.text
+msgid "Break"
+msgstr "Przerwij"
+
+#: basic.src#IDS_APPMODE_RUN.string.text
+msgid "Run"
+msgstr "Uruchom"
+
+#: basic.src#IDS_NONAME.string.text
+msgid "Unnamed"
+msgstr "Bez nazwy"
+
+#: basic.src#IDS_LOADDLG.string.text
+msgid "Testtool: Load File"
+msgstr "Testtool: Załaduj plik"
+
+#: basic.src#IDS_SAVEDLG.string.text
+msgid "Testtool: Save File"
+msgstr "Testtool: Zapisz plik"
+
+#: basic.src#IDS_BASFILTER.string.text
+msgid "Source files (*.BAS)"
+msgstr "Plik źródłowy (*.BAS)"
+
+#: basic.src#IDS_INCFILTER.string.text
+msgid "Include files (*.INC)"
+msgstr "Plik nagłówkowy (*.INC)"
+
+#: basic.src#IDS_LIBFILTER.string.text
+msgid "Libraries (*.SB)"
+msgstr "Biblioteki (*.SB)"
+
+#: basic.src#IDS_RESFILTER.string.text
+msgid "Result files (*.RES)"
+msgstr "Pliki wynikowe (*.RES)"
+
+#: basic.src#IDS_TXTFILTER.string.text
+msgid "Results as text file (*.TXT)"
+msgstr "Wyniki jako plik tekstowy (*.TXT)"
+
+#: basic.src#IDS_PAGE.string.text
+msgid "Page "
+msgstr "Strona"
+
+#: basic.src#IDS_PRINTMSG.string.text
+msgid "Printout of "
+msgstr "Wydruk"
+
+#: basic.src#IDS_CONTINUE.string.text
+msgid "Continue"
+msgstr "Kontynuuj"
+
+#: basic.src#IDS_CANCEL.string.text
+msgctxt "basic.src#IDS_CANCEL.string.text"
+msgid "Cancel"
+msgstr "Anuluj"
+
+#: basic.src#IDS_DISASWIN.string.text
+msgid "Disassembly"
+msgstr "Demontaż"
+
+#: basic.src#RID_APPMENUBAR.RID_APPFILE.menuitem.text
+msgid "~File"
+msgstr "~Plik"
+
+#: basic.src#RID_APPMENUBAR.RID_APPEDIT.menuitem.text
+msgid "~Edit"
+msgstr "~Edycja"
+
+#: basic.src#RID_APPMENUBAR.RID_APPRUN.menuitem.text
+msgid "~Program"
+msgstr "~Program"
+
+#: basic.src#RID_APPMENUBAR.RID_APPWINDOW.menuitem.text
+msgid "~Window"
+msgstr "~Okno"
+
+#: basic.src#RID_APPMENUBAR.RID_APPHELP.menuitem.text
+msgid "~Help"
+msgstr "~Pomoc"
+
+#: basic.src#RID_FILE.RID_FILENEW.menuitem.text
+msgid "~New"
+msgstr "~Nowy"
+
+#: basic.src#RID_FILE.RID_FILEOPEN.menuitem.text
+msgid "~Open..."
+msgstr "~Otwórz..."
+
+#: basic.src#RID_FILE.RID_FILECLOSE.menuitem.text
+msgid "~Close"
+msgstr "~Zamknij"
+
+#: basic.src#RID_FILE.RID_FILESAVE.menuitem.text
+msgid "~Save"
+msgstr "~Zapisz"
+
+#: basic.src#RID_FILE.RID_FILESAVEAS.menuitem.text
+msgid "Save~ As..."
+msgstr "Z~apisz jako..."
+
+#: basic.src#RID_FILE.RID_FILELOADLIB.menuitem.text
+msgid "~Load Library..."
+msgstr "Ładuj Bibl~iotekę"
+
+#: basic.src#RID_FILE.RID_FILESAVELIB.menuitem.text
+msgid "Save Li~brary..."
+msgstr "Zapisz Bibliotekę"
+
+#: basic.src#RID_FILE.RID_FILEPRINT.menuitem.text
+msgid "~Print"
+msgstr "Drukuj"
+
+#: basic.src#RID_FILE.RID_FILESETUP.menuitem.text
+msgid "P~rinter Setting..."
+msgstr "Ustawienia drukarki"
+
+#: basic.src#RID_FILE.RID_QUIT.menuitem.text
+msgid "~Exit"
+msgstr "~Wyjdź"
+
+#: basic.src#RID_EDIT.RID_EDITUNDO.menuitem.text
+msgid "~Undo"
+msgstr "Cofnij"
+
+#: basic.src#RID_EDIT.RID_EDITREDO.menuitem.text
+msgid "~Redo"
+msgstr "Ponów"
+
+#: basic.src#RID_EDIT.RID_EDITCUT.menuitem.text
+msgid "~Cut"
+msgstr "Wytnij"
+
+#: basic.src#RID_EDIT.RID_EDITCOPY.menuitem.text
+msgid "~Copy"
+msgstr "Kopiuj"
+
+#: basic.src#RID_EDIT.RID_EDITPASTE.menuitem.text
+msgid "~Paste"
+msgstr "Wklej"
+
+#: basic.src#RID_EDIT.RID_EDITDEL.menuitem.text
+msgid "~Delete"
+msgstr "Usuń"
+
+#: basic.src#RID_EDIT.RID_EDITSEARCH.menuitem.text
+msgid "~Find..."
+msgstr "Znajdź..."
+
+#: basic.src#RID_EDIT.RID_EDITREPLACE.menuitem.text
+msgid "~Replace..."
+msgstr "Zamień..."
+
+#: basic.src#RID_EDIT.RID_EDITREPEAT.menuitem.text
+msgid "Repeat S~earch"
+msgstr "Powtórz wyszukiwanie"
+
+#: basic.src#RID_RUN.RID_RUNCOMPILE.menuitem.text
+msgid "~Compile"
+msgstr "Kompiluj"
+
+#: basic.src#RID_RUN.RID_RUNDISAS.menuitem.text
+msgid "~Disassemble"
+msgstr "Demontaż"
+
+#: basic.src#RID_RUN.RID_RUNSTART.menuitem.text
+msgid "~Start"
+msgstr "Start"
+
+#: basic.src#RID_RUN.RID_RUNSTEPINTO.menuitem.text
+msgid "~Single Step"
+msgstr "Krok"
+
+#: basic.src#RID_RUN.RID_RUNSTEPOVER.menuitem.text
+msgid "Si~ngle Step over Procedure"
+msgstr "Procedura krok po kroku"
+
+#: basic.src#RID_RUN.RID_TOGLEBRKPNT.menuitem.text
+msgid "Set / Delete Break Point"
+msgstr "Ustaw / Usuń punkt przerwania"
+
+#: basic.src#RID_RUN.RID_RUNBREAK.menuitem.text
+msgid "~Break"
+msgstr "Przerwij"
+
+#: basic.src#RID_RUN.RID_RUNSTOP.menuitem.text
+msgid "~Stop"
+msgstr "Zatrzymaj"
+
+#: basic.src#RID_RUN.RID_RUNNEXTERR.menuitem.text
+msgid "~Next Error"
+msgstr "Następny błąd"
+
+#: basic.src#RID_RUN.RID_RUNPREVERR.menuitem.text
+msgid "~Previous Error"
+msgstr "Poprzedni błąd"
+
+#: basic.src#RID_TT_EXTRAS_NAME.string.text
+msgid "E~xtra"
+msgstr "Dodatkowe"
+
+#: basic.src#RID_TT_EXTRAS.RID_OPTIONS.menuitem.text
+msgid "~Settings"
+msgstr "Ustawienia"
+
+#: basic.src#RID_HELP.menuitem.text
+msgid "~About..."
+msgstr "O programie..."
+
+#: basic.src#IDD_PRINT_DIALOG.RID_TEXT.fixedtext.text
+msgid "Print "
+msgstr "Drukuj"
+
+#: basic.src#IDD_PRINT_DIALOG.RID_CANCEL.cancelbutton.text
+msgctxt "basic.src#IDD_PRINT_DIALOG.RID_CANCEL.cancelbutton.text"
+msgid "Cancel"
+msgstr "Anuluj"
+
+#: basic.src#IDD_PRINT_DIALOG.modelessdialog.text
+msgid "Testtool: Print File"
+msgstr "Testtool: Drukuj plik"
+
+#: basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_GEN.pageitem.text
+msgid "Generic"
+msgstr "Ogólne"
+
+#: basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_PRO.pageitem.text
+msgctxt "basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_PRO.pageitem.text"
+msgid "Profile"
+msgstr "Profil"
+
+#: basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_CRA.pageitem.text
+msgctxt "basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_CRA.pageitem.text"
+msgid "Crashreport"
+msgstr "Raport o błędach"
+
+#: basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_MIS.pageitem.text
+msgid "Misc"
+msgstr "Pozostałe"
+
+#: basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_FON.pageitem.text
+msgid "Font"
+msgstr "Czcionka"
+
+#: basic.src#IDD_OPTIONS_DLG.tabdialog.text
+msgid "Settings"
+msgstr "Ustawienia"
+
+#: basic.src#RID_TP_GENERIC.RID_FL_AREA.fixedline.text
+msgid "Area"
+msgstr "Obszar"
+
+#: basic.src#RID_TP_GENERIC.RID_PB_NEW_AREA.pushbutton.text
+msgctxt "basic.src#RID_TP_GENERIC.RID_PB_NEW_AREA.pushbutton.text"
+msgid "New"
+msgstr "Nowy"
+
+#: basic.src#RID_TP_GENERIC.RID_PD_DEL_AREA.pushbutton.text
+msgctxt "basic.src#RID_TP_GENERIC.RID_PD_DEL_AREA.pushbutton.text"
+msgid "Delete"
+msgstr "Usuń"
+
+#: basic.src#RID_TP_GENERIC.RID_FL_VALUE.fixedline.text
+msgid "Setting"
+msgstr "Ustawienie"
+
+#: basic.src#RID_TP_GENERIC.RID_PB_SELECT_FILE.pushbutton.text
+msgid "Path ..."
+msgstr "Ścieżka..."
+
+#: basic.src#RID_TP_GENERIC.RID_PB_NEW_VALUE.pushbutton.text
+msgctxt "basic.src#RID_TP_GENERIC.RID_PB_NEW_VALUE.pushbutton.text"
+msgid "New"
+msgstr "Nowy"
+
+#: basic.src#RID_TP_GENERIC.RID_PB_DEL_VALUE.pushbutton.text
+msgctxt "basic.src#RID_TP_GENERIC.RID_PB_DEL_VALUE.pushbutton.text"
+msgid "Delete"
+msgstr "Usuń"
+
+#: basic.src#RID_TP_PROFILE.RID_FL_PROFILE.fixedline.text
+msgctxt "basic.src#RID_TP_PROFILE.RID_FL_PROFILE.fixedline.text"
+msgid "Profile"
+msgstr "Profil"
+
+#: basic.src#RID_TP_PROFILE.RID_PB_NEW_PROFILE.pushbutton.text
+msgctxt "basic.src#RID_TP_PROFILE.RID_PB_NEW_PROFILE.pushbutton.text"
+msgid "New"
+msgstr "Nowy"
+
+#: basic.src#RID_TP_PROFILE.RID_PD_DEL_PROFILE.pushbutton.text
+msgctxt "basic.src#RID_TP_PROFILE.RID_PD_DEL_PROFILE.pushbutton.text"
+msgid "Delete"
+msgstr "Usuń"
+
+#: basic.src#RID_TP_PROFILE.FL_DIRECTORIES.fixedline.text
+msgid "Profile settings"
+msgstr "Ustawienia profilu"
+
+#: basic.src#RID_TP_PROFILE.LOG_TEXT.fixedtext.text
+msgid "Log base directory"
+msgstr "Podst. lokalizacja logów"
+
+#: basic.src#RID_TP_PROFILE.BASIS_TEXT.fixedtext.text
+msgid "Base directory"
+msgstr "Podstawowa lokalizacja"
+
+#: basic.src#RID_TP_PROFILE.HID_CHECK.checkbox.text
+msgid "Default HID directory"
+msgstr "Domyślna lokalizacja HID"
+
+#: basic.src#RID_TP_PROFILE.LOG_SET.pushbutton.text
+msgctxt "basic.src#RID_TP_PROFILE.LOG_SET.pushbutton.text"
+msgid "..."
+msgstr "..."
+
+#: basic.src#RID_TP_PROFILE.BASIS_SET.pushbutton.text
+msgctxt "basic.src#RID_TP_PROFILE.BASIS_SET.pushbutton.text"
+msgid "..."
+msgstr "..."
+
+#: basic.src#RID_TP_PROFILE.HID_SET.pushbutton.text
+msgctxt "basic.src#RID_TP_PROFILE.HID_SET.pushbutton.text"
+msgid "..."
+msgstr "..."
+
+#: basic.src#RID_TP_PROFILE.CB_AUTORELOAD.checkbox.text
+msgid "AutoReload"
+msgstr "Auto przeładowanie"
+
+#: basic.src#RID_TP_PROFILE.CB_AUTOSAVE.checkbox.text
+msgid "Save before execute"
+msgstr "Zapisz przed uruchomieniem"
+
+#: basic.src#RID_TP_PROFILE.CB_STOPONSYNTAXERRORS.checkbox.text
+msgid "Stop on Syntax Errors"
+msgstr "Zatrzymaj przy wystąpieniu błędu"
+
+#: basic.src#RID_TP_CRASH.FL_CRASHREPORT.fixedline.text
+msgctxt "basic.src#RID_TP_CRASH.FL_CRASHREPORT.fixedline.text"
+msgid "Crashreport"
+msgstr "Raport o błędach"
+
+#: basic.src#RID_TP_CRASH.CB_USEPROXY.checkbox.text
+msgid "Use Proxy"
+msgstr "Używaj Proxy"
+
+#: basic.src#RID_TP_CRASH.FT_CRHOST.fixedtext.text
+msgctxt "basic.src#RID_TP_CRASH.FT_CRHOST.fixedtext.text"
+msgid "Host"
+msgstr "Host"
+
+#: basic.src#RID_TP_CRASH.FT_CRPORT.fixedtext.text
+msgid "Port"
+msgstr "Port"
+
+#: basic.src#RID_TP_CRASH.CB_ALLOWCONTACT.checkbox.text
+msgid "Allow Contact"
+msgstr "Zezwól na połączenie"
+
+#: basic.src#RID_TP_CRASH.FT_EMAIL.fixedtext.text
+msgid "EMail"
+msgstr "EMail"
+
+#: basic.src#RID_TP_MISC.FL_COMMUNICATION.fixedline.text
+msgid "Communication"
+msgstr "Komunikacja"
+
+#: basic.src#RID_TP_MISC.FT_HOST.fixedtext.text
+msgctxt "basic.src#RID_TP_MISC.FT_HOST.fixedtext.text"
+msgid "Host"
+msgstr "Host"
+
+#: basic.src#RID_TP_MISC.FT_TTPORT.fixedtext.text
+msgid "Testtool Port"
+msgstr "Port Testtool'a"
+
+#: basic.src#RID_TP_MISC.FT_UNOPORT.fixedtext.text
+msgid "Remote UNO Port"
+msgstr "Zdalny port UNO"
+
+#: basic.src#RID_TP_MISC.FL_OTHER.fixedline.text
+msgid "Other settings"
+msgstr "Inne ustawienia"
+
+#: basic.src#RID_TP_MISC.TIMEOUT_TEXT.fixedtext.text
+msgid "Server Timeout"
+msgstr "Timeout Server'a"
+
+#: basic.src#RID_TP_MISC.FT_LRU.fixedtext.text
+msgid "Max LRU Files"
+msgstr "Maksymalna ilość plików LRU"
+
+#: basic.src#RID_TP_MISC.FT_PROGDIR.fixedtext.text
+msgid "OOo Program Dir"
+msgstr "Lokalizacja programowa OOo"
+
+#: basic.src#RID_TP_MISC.PB_PROGDIR.pushbutton.text
+msgctxt "basic.src#RID_TP_MISC.PB_PROGDIR.pushbutton.text"
+msgid "..."
+msgstr "..."
+
+#: basic.src#RID_TP_FONT.FT_FONTNAME.fixedtext.text
+msgid "Type"
+msgstr "Typ"
+
+#: basic.src#RID_TP_FONT.FT_FONTSTYLE.fixedtext.text
+msgid "Typeface"
+msgstr "Krój"
+
+#: basic.src#RID_TP_FONT.FT_FONTSIZE.fixedtext.text
+msgid "Size"
+msgstr "Rozmiar"
+
+#: basic.src#IDD_DISPLAY_HID.RID_FT_CONTROLS.fixedtext.text
+msgid "Controls"
+msgstr "Kontrolki"
+
+#: basic.src#IDD_DISPLAY_HID.RID_FT_SLOTS.fixedtext.text
+msgid "Slots"
+msgstr "Sloty"
+
+#: basic.src#IDD_DISPLAY_HID.RID_PB_KOPIEREN.pushbutton.text
+msgid "Copy"
+msgstr "Kopia"
+
+#: basic.src#IDD_DISPLAY_HID.RID_PB_BENENNEN.pushbutton.text
+msgctxt "basic.src#IDD_DISPLAY_HID.RID_PB_BENENNEN.pushbutton.text"
+msgid "Name"
+msgstr "Nazwa"
+
+#: basic.src#IDD_DISPLAY_HID.RID_PB_SELECTALL.pushbutton.text
+msgid "Select all"
+msgstr "Zaznacz wszystko"
+
+#: basic.src#IDD_DISPLAY_HID.RID_OK_CLOSE.okbutton.text
+msgid "Close"
+msgstr "Zamknij"
+
+#: basic.src#IDD_DISPLAY_HID.floatingwindow.text
+msgid "Display HId"
+msgstr "HID Wyświetlacza"
+
+#: basic.src#IDD_EDIT_VAR.RID_FT_NAME.fixedtext.text
+msgctxt "basic.src#IDD_EDIT_VAR.RID_FT_NAME.fixedtext.text"
+msgid "Name"
+msgstr "Nazwa"
+
+#: basic.src#IDD_EDIT_VAR.RID_FT_CONTENT.fixedtext.text
+msgid "Content"
+msgstr "Zawartość"
+
+#: basic.src#IDD_EDIT_VAR.RID_FT_NEW_CONTENT.fixedtext.text
+msgid "New content"
+msgstr "Nowa zawartość"
+
+#: basic.src#IDD_EDIT_VAR.RID_FT_NAME_VALUE.fixedtext.text
+msgid "Name of variable"
+msgstr "Nazwa zmienne"
+
+#: basic.src#IDD_EDIT_VAR.RID_FT_CONTENT_VALUE.fixedtext.text
+msgid "Previous contents"
+msgstr "Poprzednia zawartość"
+
+#: basic.src#IDD_EDIT_VAR.RID_RB_NEW_BOOL_T.radiobutton.text
+msgid "True"
+msgstr "Prawda"
+
+#: basic.src#IDD_EDIT_VAR.RID_RB_NEW_BOOL_F.radiobutton.text
+msgid "False"
+msgstr "Fałsz"
+
+#: basic.src#IDD_EDIT_VAR.RID_ED_NEW_STRING.edit.text
+msgid "Edit"
+msgstr "Edycja"
+
+#: basic.src#IDD_EDIT_VAR.modelessdialog.text
+msgid "Edit variable"
+msgstr "Edytuj zmienną"
+
+#: basic.src#LOAD_CONF.WORK.fixedtext.text
+msgid "Slot IDs"
+msgstr "ID slotu"
+
+#: basic.src#LOAD_CONF.FILENAME.fixedtext.text
+msgid "File.win"
+msgstr "Plik.win"
+
+#: basic.src#LOAD_CONF.floatingwindow.text
+msgid "Reading Configuration Files"
+msgstr "Pliki Konfiguracyjne Czytania"
+
+#: basmsg.src#S_PROG_START.string.text
+msgid "Program start: ($Arg1); ($Arg2)"
+msgstr "Start Programu"
+
+#: basmsg.src#S_ERROR_OUTSIDE_TESTCASE.string.text
+msgid "Error outside of test case"
+msgstr "Błąd poza testowanym obszarem"
+
+#: basmsg.src#S_WARNING_PREFIX.string.text
+msgctxt "basmsg.src#S_WARNING_PREFIX.string.text"
+msgid "Warning: "
+msgstr "Ostrzeżenie"
+
+#: svtmsg.src#S_GPF_ABORT.string.text
+msgid "Program aborted with GPF"
+msgstr "Program wstrzymany poprzez GPF "
+
+#: svtmsg.src#S_APP_SHUTDOWN.string.text
+msgid "Application has been shut down"
+msgstr "Aplikacja została zamknięta"
+
+#: svtmsg.src#S_SID_EXECUTE_FAILED_NO_DISPATCHER.string.text
+msgid "Slot ID cannot be executed. No ActiveDispatcher"
+msgstr "ID slotu nie może być wykonane. Brak aktywnego dyspozytora"
+
+#: svtmsg.src#S_SID_EXECUTE_FAILED.string.text
+msgid "Slot ID could not be executed"
+msgstr "ID slotu nie może być wykonane."
+
+#: svtmsg.src#S_UNO_PROPERTY_NITIALIZE_FAILED.string.text
+msgid "UnoSlot: Properties could not be initialized"
+msgstr "SlotUno: Właściwości nie mogą być zainicjowane"
+
+#: svtmsg.src#S_RESETAPPLICATION_FAILED_COMPLEX.string.text
+msgid "ResetApplication failed: too complex"
+msgstr "Nieudany ResetAplikacji: zbyt skomplikowane"
+
+#: svtmsg.src#S_RESETAPPLICATION_FAILED_UNKNOWN.string.text
+msgid "ResetApplication failed: unknown window type"
+msgstr "Nieudany ResetAplikacji: nieznane okno"
+
+#: svtmsg.src#S_NO_ACTIVE_WINDOW.string.text
+msgid "No active window found (GetNextCloseWindow)"
+msgstr "Nieznaleziono aktywnego okna (GetNextCloseWindow)"
+
+#: svtmsg.src#S_NO_DIALOG_IN_GETACTIVE.string.text
+msgid "GetActive does not return a dialog! Inform development"
+msgstr "GetActive nie zwraca okna! Skontaktuj się z wydawcą"
+
+#: svtmsg.src#S_NO_POPUP.string.text
+msgid "Pop-up menu not open"
+msgstr "Wyskakujące menu nie otwarte"
+
+#: svtmsg.src#S_NO_SUBMENU.string.text
+msgid "Submenu does not exist"
+msgstr "Podmenu nie istnieje"
+
+#: svtmsg.src#S_CONTROLTYPE_NOT_SUPPORTED.string.text
+msgid "ControlType ($Arg1) is not supported"
+msgstr "ControlType  ($Arg1) nie jest obsługiwany"
+
+#: svtmsg.src#S_SELECTION_BY_ATTRIBUTE_ONLY_DIRECTORIES.string.text
+msgid "Selection by attributes only possible for directories"
+msgstr "Wybór wg. atrybutów dostępny tylko dla folderów"
+
+#: svtmsg.src#S_NO_MORE_FILES.string.text
+msgid "No more files"
+msgstr "Nie ma więcej plików"
+
+#: svtmsg.src#S_UNKNOWN_METHOD.string.text
+msgid "Unknown method '($Arg1)' on ($Arg2)"
+msgstr "Nieznana metoda '($Arg1)' w ($Arg2)"
+
+#: svtmsg.src#S_INVALID_PARAMETERS.string.text
+msgid "Invalid Parameters"
+msgstr "Niepoprawne parametry"
+
+#: svtmsg.src#S_POINTER_OUTSIDE_APPWIN.string.text
+msgid "Pointer not inside application window at '($Arg1)'"
+msgstr "Wskaźnik poza oknem aplikacji w '($Arg1)'"
+
+#: svtmsg.src#S_UNKNOWN_COMMAND.string.text
+msgid "Unknown command '($Arg1)'"
+msgstr "Nieznana komenda '($Arg1)'"
+
+#: svtmsg.src#S_WIN_NOT_FOUND.string.text
+msgid "($Arg1) could not be found"
+msgstr "Nie można znaleźć ($Arg1)"
+
+#: svtmsg.src#S_WIN_INVISIBLE.string.text
+msgid "($Arg1) is not visible"
+msgstr "($Arg1) jest niewidoczny"
+
+#: svtmsg.src#S_WIN_DISABLED.string.text
+msgid "($Arg1) could not be accessed. Disabled"
+msgstr "Odmowa dostępu do ($Arg1). Wyłączony"
+
+#: svtmsg.src#S_NUMBER_TOO_BIG.string.text
+msgid "Entry number ($Arg2) is too large in ($Arg1). Max. allowed is ($Arg3)"
+msgstr ""
+"Wpis numer ($Arg2) jest za duży w ($Arg1). Maks. dopuszczalne to ($Arg3)"
+
+#: svtmsg.src#S_NUMBER_TOO_SMALL.string.text
+msgid ""
+"The entry number ($Arg2) is too small in ($Arg1). Min allowed is ($Arg3)"
+msgstr ""
+"Wpis numer ($Arg2) jest za mały w ($Arg1). Min. dopuszczalne to ($Arg3)"
+
+#: svtmsg.src#S_WINDOW_DISAPPEARED.string.text
+msgid "Window disappeared in the meantime at ($Arg1)"
+msgstr "Okno zniknęło podczas ($Arg1)"
+
+#: svtmsg.src#S_ERROR_SAVING_IMAGE.string.text
+msgid "Error #($Arg1) when saving the image"
+msgstr "Błąd #(Arg1) podczas zapisywania obrazu"
+
+#: svtmsg.src#S_INVALID_POSITION.string.text
+msgid "Invalid position at ($Arg1)"
+msgstr "Niewłaściwa pozycja w ($Arg1)"
+
+#: svtmsg.src#S_SPLITWIN_NOT_FOUND.string.text
+msgid "SplitWindow not found at ($Arg1)"
+msgstr "Nieznaleziono podziału okna w ($Arg1)"
+
+#: svtmsg.src#S_INTERNAL_ERROR.string.text
+msgid "Internal error at ($Arg1)"
+msgstr "Błąd wewnętrzny w ($Arg1)"
+
+#: svtmsg.src#S_NO_STATUSBAR.string.text
+msgid "No status bar at ($Arg1)"
+msgstr "Brak paska stanu w ($Arg1)"
+
+#: svtmsg.src#S_ITEMS_INVISIBLE.string.text
+msgid "The items are hidden at ($Arg1)"
+msgstr "Żadne elementy nie są ukryte w ($Arg1)"
+
+#: svtmsg.src#S_TABPAGE_NOT_FOUND.string.text
+msgid "Tab page not found at ($Arg1)"
+msgstr "Strona zakładki nieodnaleziona w ($Arg1)"
+
+#: svtmsg.src#S_TRISTATE_NOT_ALLOWED.string.text
+msgid "Tristate cannot be set at ($Arg1)"
+msgstr "Tristate nie może być ustawiony w ($Arg1)"
+
+#: svtmsg.src#S_ERROR_IN_SET_TEXT.string.text
+msgid "Set text did not function"
+msgstr "Ustaw tekst nie zadziałał"
+
+#: svtmsg.src#S_ATTEMPT_TO_WRITE_READONLY.string.text
+msgid "Attempt to write on read-only ($Arg1)"
+msgstr "Próba zapisu do pliku ($Arg1) tylko do odczytu"
+
+#: svtmsg.src#S_NO_SELECT_FALSE.string.text
+msgid "Select FALSE not allowed. Use MultiSelect at ($Arg1)"
+msgstr "Wybór Fałsz niedozwolony. Użyj wielowyboru w ($Arg1)"
+
+#: svtmsg.src#S_ENTRY_NOT_FOUND.string.text
+msgid "\"($Arg2)\" entry at ($Arg1) not found"
+msgstr "nieodnaleziony w wpis \"($Arg2)\" w ($Arg1)"
+
+#: svtmsg.src#S_METHOD_FAILED.string.text
+msgid "($Arg1) of entry \"($Arg2)\" failed"
+msgstr "($Arg1) wpisu \"($Arg2)\" nieudany"
+
+#: svtmsg.src#S_HELPID_ON_TOOLBOX_NOT_FOUND.string.text
+msgid "HelpID in ToolBox not found at ($Arg1)"
+msgstr "Nie znaleziono HelpID w ($Arg1)"
+
+#: svtmsg.src#S_BUTTON_DISABLED_ON_TOOLBOX.string.text
+msgid "The button is disabled in ToolBox at ($Arg1)"
+msgstr "Przycisk jest wyłączony w Toolboxie w ($Arg1)"
+
+#: svtmsg.src#S_BUTTON_HIDDEN_ON_TOOLBOX.string.text
+msgid "The button is hidden in ToolBox at ($Arg1)"
+msgstr "Przycisk jest ukryty w Toolboxie w ($Arg1)"
+
+#: svtmsg.src#S_CANNOT_MAKE_BUTTON_VISIBLE_IN_TOOLBOX.string.text
+msgid "Button cannot be made visible in ToolBox at ($Arg1)"
+msgstr "Przycisk nie może stać się widoczny w przyborniku w ($Arg1)"
+
+#: svtmsg.src#S_TEAROFF_FAILED.string.text
+msgid "TearOff failed in ToolBox at ($Arg1)"
+msgstr "Nieudany TearOff w przyborniku w ($Arg1)"
+
+#: svtmsg.src#S_NO_SELECTED_ENTRY_DEPRECATED.string.text
+msgid "No entry is selected in TreeListBox at ($Arg1)"
+msgstr "Nie wybrano wpisu z TreeListBox'a ($Arg1)"
+
+#: svtmsg.src#S_NO_SELECTED_ENTRY.string.text
+msgid "No entry is selected in ($Arg2) at ($Arg1)"
+msgstr "Nie wybrano wpisu w ($Arg2) at ($Arg1)"
+
+#: svtmsg.src#S_SELECT_DESELECT_VIA_STRING_NOT_IMPLEMENTED.string.text
+msgid "Select/Deselect with string not implemented at ($Arg1)"
+msgstr "Zaznacz/Odznacz napisem nie zaimplementowane w ($Arg1)"
+
+#: svtmsg.src#S_ALLOWED_ONLY_IN_FLOATING_MODE.string.text
+msgid "Method only allowed in floating mode at ($Arg1)"
+msgstr "Metoda dostępna tylko w trybie zmiennoprzecinkowym w ($Arg1)"
+
+#: svtmsg.src#S_ALLOWED_ONLY_IN_DOCKING_MODE.string.text
+msgid "Method only allowed in docking mode at ($Arg1)"
+msgstr "Metoda dostępna tylko w trybie dokowania w ($Arg1)"
+
+#: svtmsg.src#S_SIZE_NOT_CHANGEABLE.string.text
+msgid "Size cannot be altered at ($Arg1)"
+msgstr "Rozmiar nie może być modyfikowana w ($Arg1)"
+
+#: svtmsg.src#S_NO_OK_BUTTON.string.text
+msgid "There is no OK button at ($Arg1)"
+msgstr "W ($Arg1) nie ma przycisku OK"
+
+#: svtmsg.src#S_NO_CANCEL_BUTTON.string.text
+msgid "There is no Cancel button at ($Arg1)"
+msgstr "W ($Arg1) nie ma przycisku Anuluj"
+
+#: svtmsg.src#S_NO_YES_BUTTON.string.text
+msgid "There is no Yes button at ($Arg1)"
+msgstr "W ($Arg1) nie ma przycisku Tak"
+
+#: svtmsg.src#S_NO_NO_BUTTON.string.text
+msgid "There is no No button at ($Arg1)"
+msgstr "W ($Arg1) nie ma przycisku Nie"
+
+#: svtmsg.src#S_NO_RETRY_BUTTON.string.text
+msgid "There is no Repeat button at ($Arg1)"
+msgstr "W ($Arg1) nie ma przycisku Powtórz"
+
+#: svtmsg.src#S_NO_HELP_BUTTON.string.text
+msgid "There is no Help button at ($Arg1)"
+msgstr "W ($Arg1) nie ma przycisku Pomoc"
+
+#: svtmsg.src#S_NO_DEFAULT_BUTTON.string.text
+msgid "There is no Default button defined at ($Arg1)"
+msgstr "W ($Arg1) nie ma zdefiniowanego domyślnego przycisku"
+
+#: svtmsg.src#S_BUTTON_ID_NOT_THERE.string.text
+msgid "There is no button with ID ($Arg1) at ($Arg2)"
+msgstr "W ($Arg2) nie ma przycisku o identyfikatorze ($Arg1)"
+
+#: svtmsg.src#S_BUTTONID_REQUIRED.string.text
+msgid "A button ID needs to be given at ($Arg1)"
+msgstr "W ($Arg1) trzeba podać ID przycisku"
+
+#: svtmsg.src#S_UNKNOWN_TYPE.string.text
+msgid "Unknown object type ($Arg1) from UId or method '($Arg2)' not supported"
+msgstr ""
+"Nieznany typ obiektu w ($Arg1) z UId lub metoda  '($Arg2)' nieobsługiwana"
+
+#: svtmsg.src#S_UNPACKING_STORAGE_FAILED.string.text
+msgid "Unpacking storage \"($Arg1)\" to \"($Arg2)\" failed"
+msgstr "Wypakowywanie archiwum \"($Arg1)\" do \"($Arg2)\" nie powiodło się"
+
+#: svtmsg.src#S_NO_LIST_BOX_BUTTON.string.text
+msgid "ListBoxButton does not exist in ($Arg1)"
+msgstr "Przycisk pola listy nie istnieje w ($Arg1)"
+
+#: svtmsg.src#S_UNO_URL_EXECUTE_FAILED_NO_DISPATCHER.string.text
+msgid "UNO URL \"($Arg1)\" could not be executed: No dispatcher was found."
+msgstr "UNO URL \"($Arg1)\" nie może być wykonany: Nie znaleziono dyspozytora"
+
+#: svtmsg.src#S_UNO_URL_EXECUTE_FAILED_NO_FRAME.string.text
+msgid "UNO URL \"($Arg1)\" could not be executed: No ActiveFrame on desktop."
+msgstr ""
+"UNO URL \"($Arg1)\" nie może być wykonany: Brak ActiveFrame na pulpicie."
+
+#: svtmsg.src#S_NO_MENU.string.text
+msgid "There is no menu at ($Arg1)"
+msgstr "W ($Arg1) nie ma menu"
+
+#: svtmsg.src#S_UNO_URL_EXECUTE_FAILED_DISABLED.string.text
+msgid "UNO URL \"($Arg1)\" could not be run: Disabled"
+msgstr "UNO URL \"($Arg1)\" nie może być uruchomiony: Wyłączony"
+
+#: svtmsg.src#S_NO_SCROLLBAR.string.text
+msgid "No scroll bar at ($Arg1)"
+msgstr "Brak paska przewijania w ($Arg1)"
+
+#: svtmsg.src#S_NO_SAX_PARSER.string.text
+msgid "No SAX Parser when using ($Arg1). Initialize with 'SAXReadFile' first."
+msgstr ""
+"Nie znaleziono parsera SAX podczas używania ($Arg1). Zainicjuj najpierw "
+"\"SAXReadFile\"."
+
+#: svtmsg.src#S_CANNOT_CREATE_DIRECTORY.string.text
+msgid "Cannot create Directory: \"($Arg1)\""
+msgstr "Nie można utworzyć folderu: ($Arg1)"
+
+#: svtmsg.src#S_DIRECTORY_NOT_EMPTY.string.text
+msgid "Directory has to be Empty to unpack to. Directory: \"($Arg1)\""
+msgstr ""
+"Folder musi być pusty aby do niego wypakować. \n"
+"Folder:  \"($Arg1)\" nie jest pusty"
+
+#: svtmsg.src#S_DEPRECATED.string.text
+msgid "Deprecated! Please change the script."
+msgstr "Potępiam! Proszę zmienić skrypt."
+
+#: svtmsg.src#S_SIZE_BELOW_MINIMUM.string.text
+msgid "The Size is below the minimum. x=($Arg1) ,y=($Arg2)"
+msgstr "Rozmiar jest poniżej minimum. x=($Arg1) ,y=($Arg2)"
+
+#: svtmsg.src#S_CANNOT_FIND_FLOATING_WIN.string.text
+msgid "Cannot find FloatingWindow for floating DockingWindow at ($Arg1)."
+msgstr "Nie można znaleźć FloatingWindow dla floating DockingWindow w ($Arg1)"
+
+#: svtmsg.src#S_NO_LIST_BOX_STRING.string.text
+msgid "String does not exist in ($Arg1)"
+msgstr "Napis nie istnieje w ($Arg1)"
+
+#: svtmsg.src#S_SLOT_IN_EXECUTE.string.text
+msgid "Another Slot is being executed already."
+msgstr "Inny slot jest już wykonywany"
+
+#: svtmsg.src#S_MENU_NOT_CLOSING.string.text
+msgid "Menu not closing."
+msgstr "Menu nie zamyka się"
+
+#: testtool.src#S_INVALID_KEYCODE.string.text
+msgid "Is an invalid KeyCode!"
+msgstr "Niewłaściwy kod przaycisku (KeyCode)"
+
+#: testtool.src#S_MANDATORY_FILE.string.text
+msgid ""
+"\n"
+"could not be found.\n"
+"This file is indispensable."
+msgstr ""
+"\n"
+"nie znaleziony.\n"
+"Ten plik jest niezbędny."
+
+#: testtool.src#S_READING_LONGNAMES.string.text
+msgid "Reading long-names"
+msgstr "Odczyt długich nazw"
+
+#: testtool.src#S_READING_SLOT_IDS.string.text
+msgid "Reading Slot IDs"
+msgstr "Odczyt ID slotów"
+
+#: testtool.src#S_READING_CONTROLS.string.text
+msgid "Reading Controls"
+msgstr "Odczyt Kontrolek"
+
+#: testtool.src#S_READING_BASIC_MODULE.string.text
+msgid "Reading BASIC module"
+msgstr "Odczyt modułów BASIC"
+
+#: testtool.src#S_STARTING_APPLICATION.string.text
+msgid "Starting application"
+msgstr "Uruchamianie aplikacji"
+
+#: ttmsg.src#S_NAME_NOT_THERE.string.text
+msgid "Name doesn't exist: #($Arg1)"
+msgstr "Nazwa #($Arg1) nieistnieje"
+
+#: ttmsg.src#S_DOUBLE_NAME.string.text
+msgid "Name double: ($Arg1)"
+msgstr "Nazwa podwójna: ($Arg1)"
+
+#: ttmsg.src#S_READING_FILE.string.text
+msgid "Reading the files"
+msgstr "Otwieram pliki"
+
+#: ttmsg.src#S_CANNOT_OPEN_FILE.string.text
+msgid "File cannot be opened: ($Arg1)"
+msgstr "Plik ($Arg1) nie może zostać otwarty"
+
+#: ttmsg.src#S_INVALID_LINE.string.text
+msgid "Line \"($Arg1)\" is invalid."
+msgstr "Linia \"($Arg1)\" jest niepoprawna"
+
+#: ttmsg.src#S_SHORTNAME_UNKNOWN.string.text
+msgid "Short-name unknown during copying: ($Arg1)"
+msgstr "Nieznana krótka nazwa podczas kopiowania: ($Arg1)"
+
+#: ttmsg.src#S_LONGNAME_UNKNOWN.string.text
+msgid "Long-name unknown: ($Arg1)"
+msgstr "Nieznana długa nazwa podczas kopiowania: ($Arg1)"
+
+#: ttmsg.src#S_FIRST_SHORTNAME_REQ_ASTRX.string.text
+msgid "First short-name must start with * . Ignoring."
+msgstr "Pierwsza krótka nazwa musi zaczynać się znakiem *. Ignoruję"
+
+#: ttmsg.src#S_TIMOUT_WAITING.string.text
+msgid "Server Timeout while waiting for answer. Sequence No: ($Arg1)"
+msgstr ""
+"Timeout serwera podczas oczekiwania na odpowiedź. Nr. Sekwencji: ($Arg1)"
+
+#: ttmsg.src#S_APPLICATION_RESTARTED.string.text
+msgid "Application has been restarted."
+msgstr "Ponownie uruchomiono aplikację"
+
+#: ttmsg.src#S_APPLICATION_START_FAILED.string.text
+msgid "Application \"($Arg1)\" cannot be started. "
+msgstr "Aplikacja  \"($Arg1)\" nie może być uruchomiona. "
+
+#: ttmsg.src#S_TIMOUT_SENDING.string.text
+msgid "Server Timeout while sending. Sequence No: ($Arg1)"
+msgstr "Timeout serwera podczas wysyłania. Nr. Sekwencji: ($Arg1)"
+
+#: ttmsg.src#S_NO_CONNECTION.string.text
+msgid "No connection. Sequence No: ($Arg1)"
+msgstr "Brak połączenia. Nr. Sekwencji: ($Arg1)"
+
+#: ttmsg.src#S_NO_FILES_FOUND.string.text
+msgid "No ($Arg1) files found"
+msgstr "Nie znaleziono plików ($Arg1)"
+
+#: ttmsg.src#S_ERRORS_DETECTED.string.text
+msgid "** ($Arg1) errors occurred"
+msgstr "** wystąpiło ($Arg1) błędów"
+
+#: ttmsg.src#S_NO_ERRORS_DETECTED.string.text
+msgid "** No errors have occurred"
+msgstr "** Nie wystąpiły błędy"
+
+#: ttmsg.src#S_WARNINGS_DETECTED.string.text
+msgid "** ($Arg1) warnings occurred"
+msgstr "** Wystąpiły ($Arg1) ostrzeżenia"
+
+#: ttmsg.src#S_NO_WARNINGS_DETECTED.string.text
+msgid "** No warnings have occurred"
+msgstr "** Nie wystąpiły ostrzeżenia"
+
+#: ttmsg.src#S_INCLUDE_FILE_WARNINGS_DETECTED.string.text
+msgid "** ($Arg1) warnings occurred during initialization"
+msgstr "** Wystąpiło ($Arg1) ostrzeżeń podczas inicjalizacji"
+
+#: ttmsg.src#S_NO_INCLUDE_FILE_WARNINGS_DETECTED.string.text
+msgid "** No warnings occurred during initialization"
+msgstr "** Przy inicjacji nie wystąpiły błędy"
+
+#: ttmsg.src#S_UNKNOWN_SLOT_CONTROL.string.text
+msgid "Slot/Control unknown :\"($Arg1)\""
+msgstr "Nieznany Slot/Kontrolka : \"($Arg1)\""
+
+#: ttmsg.src#S_RETURN_SEQUENCE_MISSMATCH.string.text
+msgid "Return Stream has wrong sequence: ($Arg1) instead of ($Arg2)"
+msgstr "Nwracany napis ma niewłaściwą sekwencję: ($Arg1) instead of ($Arg2)"
+
+#: ttmsg.src#S_RETURNED_VALUE_ID_MISSMATCH.string.text
+msgid "Return value received but different Id expected"
+msgstr "Otrzymano zwracaną wartość ale inny Id oczekiwane"
+
+#: ttmsg.src#S_RETURNED_VALUE_NO_RECEIVER.string.text
+msgid "Return value received but no receiver defined"
+msgstr "Otrzymano zwracaną wartość ale nie zdefiniowano odbiornika"
+
+#: ttmsg.src#S_UNKNOWN_METHOD.string.text
+msgid "Unknown method on object :($Arg1).($Arg2)"
+msgstr "Nieznana metoda w obiekcie :($Arg1).($Arg2)"
+#: format.src#STR_BASICKEY_FORMAT_ON.string.text
+msgid "On"
+msgstr "Włącz"
+
+#: format.src#STR_BASICKEY_FORMAT_OFF.string.text
+msgid "Off"
+msgstr "Wyłącz"
+
+#: format.src#STR_BASICKEY_FORMAT_TRUE.string.text
+msgid "True"
+msgstr "Prawda"
+
+#: format.src#STR_BASICKEY_FORMAT_FALSE.string.text
+msgid "False"
+msgstr "Fałsz"
+
+#: format.src#STR_BASICKEY_FORMAT_YES.string.text
+msgid "Yes"
+msgstr "Tak"
+
+#: format.src#STR_BASICKEY_FORMAT_NO.string.text
+msgid "No"
+msgstr "Nie"
+
+#: format.src#STR_BASICKEY_FORMAT_CURRENCY.string.text
+msgid "@0.00 $;@(0.00 $)"
+msgstr "@0,00 zł;@(0.00 zł)"

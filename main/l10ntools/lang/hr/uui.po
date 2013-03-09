@@ -1,0 +1,860 @@
+
+#: alreadyopen.src#STR_ALREADYOPEN_MSG.string.text
+msgid ""
+"Document file '$(ARG1)' is locked for editing by yourself on a different "
+"system since $(ARG2)\n"
+"\n"
+"Open document read-only, or ignore own file locking and open the document "
+"for editing.\n"
+"\n"
+msgstr ""
+
+#: alreadyopen.src#STR_ALREADYOPEN_OPEN_BTN.string.text
+msgid "~Open"
+msgstr ""
+
+#: alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.string.text
+msgctxt "alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.string.text"
+msgid "Open ~Read-Only"
+msgstr ""
+
+#: alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.string.text
+msgctxt "alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.string.text"
+msgid "~Retry Saving"
+msgstr ""
+
+#: alreadyopen.src#STR_ALREADYOPEN_SAVE_BTN.string.text
+msgid "~Save"
+msgstr ""
+
+#: alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.string.text
+msgid ""
+"Document file '$(ARG1)' is locked for editing by yourself on a different "
+"system since $(ARG2)\n"
+"\n"
+"Close document on other system and retry saving or ignore own file locking "
+"and save current document.\n"
+"\n"
+msgstr ""
+
+#: cookiedg.src#DLG_COOKIES.GB_INFUTURE.groupbox.text
+msgid "Future Cookie Handling"
+msgstr "Buduće rukovanje kolačićima"
+
+#: cookiedg.src#DLG_COOKIES.BTN_COOKIES_CANCEL.pushbutton.text
+msgid "~Ignore"
+msgstr "~Zanemari"
+
+#: cookiedg.src#DLG_COOKIES.BTN_COOKIES_OK.pushbutton.text
+msgctxt "cookiedg.src#DLG_COOKIES.BTN_COOKIES_OK.pushbutton.text"
+msgid "~Send"
+msgstr "~Pošalji"
+
+#: cookiedg.src#DLG_COOKIES.RB_INFUTURE_IGNORE.radiobutton.text
+msgid "I~gnore"
+msgstr "~Zanemari"
+
+#: cookiedg.src#DLG_COOKIES.RB_INFUTURE_INTERACTIVE.radiobutton.text
+msgid "I~nteractive"
+msgstr "I~nteraktivno"
+
+#: cookiedg.src#DLG_COOKIES.RB_INFUTURE_SEND.radiobutton.text
+msgctxt "cookiedg.src#DLG_COOKIES.RB_INFUTURE_SEND.radiobutton.text"
+msgid "~Send"
+msgstr "~Pošalji"
+
+#: cookiedg.src#STR_COOKIES_RECV_COOKIES.string.text
+msgctxt "cookiedg.src#STR_COOKIES_RECV_COOKIES.string.text"
+msgid "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
+msgstr "Domena: ${DOMAIN}, Put: ${PATH}, Kolačić: ${COOKIE}.\n"
+
+#: cookiedg.src#STR_COOKIES_RECV_START.string.text
+msgid ""
+"The '${HOST}' server wishes to set one or more cookies.\n"
+"Cookies contain information referring to certain URL classes. If %"
+"PRODUCTNAME later requests a document with a URL corresponding to the class "
+"of a previously set cookie, %PRODUCTNAME will send this information to the "
+"server. This allows a server to recognize the status of a WWW application, "
+"e.g., when shopping online.\n"
+"\n"
+"The following Cookies should be set:\n"
+"\n"
+msgstr ""
+"${HOST}' poslužitelj želi postaviti jedan ili više kolačića.\n"
+"Kolačić sadrži informacije koje se odnose na određenu URL klasu. Ukoliko %"
+"PRODUCTNAME kasnije zahtjeva dokument s URL koji odgovara klasi s prethodno "
+"postavljenim kolačićem, %PRODUCTNAME će tu informaciju poslati poslužitelju. "
+"To omogućava poslužitelju prepoznavanje statusa WWW aplikacije, npr. kod "
+"on-line kupovine.\n"
+"\n"
+"Sljedeći kolačić treba biti postavljen:\n"
+"\n"
+
+#: cookiedg.src#STR_COOKIES_RECV_TITLE.string.text
+msgid "Cookie Reception"
+msgstr "Primitak kolačića"
+
+#: cookiedg.src#STR_COOKIES_SEND_COOKIES.string.text
+msgctxt "cookiedg.src#STR_COOKIES_SEND_COOKIES.string.text"
+msgid "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
+msgstr "Domena: ${DOMAIN}, Put: ${PATH}, Kolačić: ${COOKIE}.\n"
+
+#: cookiedg.src#STR_COOKIES_SEND_START.string.text
+msgid ""
+"%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent "
+"when requesting the document ${PATH}.\n"
+"Cookies contain information which refers to certain URL classes. They are "
+"sent by some servers to %PRODUCTNAME where they are saved when certain "
+"documents are accessed. If %PRODUCTNAME loads a document that, according to "
+"the URL, corresponds to a class of one of the previously received Cookies, %"
+"PRODUCTNAME will send this information to that server. This enables a server "
+"to keep track of the status of a WWW application, e.g., when shopping "
+"online.\n"
+"\n"
+"The following Cookies should be set:\n"
+"\n"
+msgstr ""
+"%PRODUCTNAME je spremio kolačić za poslužitelj '${HOST}' te će biti poslan "
+"na zahtjev dokumenta ${PATH}.\n"
+"Kolačići sadrže informacije koje se odnose na određenu URL klasu. Oni su "
+"poslani od određenih poslužitelja prema %PRODUCTNAME gdje su spremljeni kad "
+"je pristupljeno određenom dokumentu. Ako %PRODUCTNAME učitava dokument koji, "
+"ovisno o URL, odgovara klasi jednog od prije primljenih kolačića, %"
+"PRODUCTNAME će poslati tu informaciju poslužitelju. To omogućava "
+"poslužitelju praćenje statusa WWW aplikacije, npr. kod on-line trgovine.\n"
+"\n"
+"Sljedeći kolačić treba biti postavljen:\n"
+"\n"
+
+#: cookiedg.src#STR_COOKIES_SEND_TITLE.string.text
+msgid "Send Cookies"
+msgstr "Pošalji kolačić"
+
+#: filechanged.src#STR_FILECHANGED_MSG.string.text
+msgid ""
+"The file has been changed since it was opened for editing in %PRODUCTNAME. "
+"Saving your version of the document will overwrite changes made by others.\n"
+"\n"
+"Do you want to save anyway?\n"
+"\n"
+msgstr ""
+
+#: filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.string.text
+msgid "~Save Anyway"
+msgstr ""
+
+#: filechanged.src#STR_FILECHANGED_TITLE.string.text
+msgid "Document Has Been Changed by Others"
+msgstr ""
+
+#: fltdlg.src#DLG_FILTER_SELECT.modaldialog.text
+msgid "Filter Selection"
+msgstr "Odabir filtara"
+
+#: ids.src#RID_KEEP_PASSWORD.string.text
+msgid "~Remember password until end of session"
+msgstr "~Zapamti lozinku do kraja sesije"
+
+#: ids.src#RID_SAVE_PASSWORD.string.text
+msgctxt "ids.src#RID_SAVE_PASSWORD.string.text"
+msgid "~Remember password"
+msgstr "~Zapamti lozinku"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_BADPARTNERSHIP___ERRCODE_RES_MASK_.string.text
+msgid "The data associated with the partnership is corrupted."
+msgstr "Podaci povezani s partnerstvom su neispravni."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_BADPARTNERSHIP_NAME___ERRCODE_RES_MASK_.string.text
+msgid "The data associated with the partnership $(ARG1) is corrupted."
+msgstr "Podaci povezani s partnerstvom $(ARG1) su neispravni."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_CONFIGURATION_BACKENDMISSING___ERRCODE_RES_MASK_.string.text
+msgid ""
+"The configuration data source '$(ARG1)' is unavailable. Without this data "
+"some functions may not operate correctly."
+msgstr ""
+"Izvor konfiguracijskih podataka '$(ARG1)' je nedostupan. Bez tih podataka "
+"neke vunkcije neće ispravno raditi."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER___ERRCODE_RES_MASK_.string.text
+msgid ""
+"The configuration data source '$(ARG1)' is unavailable. Without this data "
+"some functions may not operate correctly.\n"
+"Do you want to continue startup of %PRODUCTNAME without the missing "
+"configuration data?"
+msgstr ""
+"Izvor konfiguracijskih podataka '$(ARG1)' je nedostupan. Bez tih podataka "
+"neke funkcije se neće ispravno izvoditi.\n"
+" Želite li nastaviti pokretanje %PRODUCTNAME bez nepostojećih "
+"konfiguracijskih podataka?"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE___ERRCODE_RES_MASK_.string.text
+msgid ""
+"Configuration data in '$(ARG1)' is corrupted. Without this data some "
+"functions may not operate correctly.\n"
+"Do you want to continue startup of %PRODUCTNAME without the corrupted "
+"configuration data?"
+msgstr ""
+"Osobna konfiguracijska datoteka '$(ARG1)' je oštećena. Bez tih podataka neke "
+"vunkcije neće ispravno raditi.\n"
+" Želite li nastaviti pokretanje %PRODUCTNAME bez nepostojećih "
+"konfiguracijskih podataka?"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE___ERRCODE_RES_MASK_.string.text
+msgid ""
+"The personal configuration file '$(ARG1)' is corrupted and must be deleted "
+"to continue. Some of your personal settings may be lost.\n"
+"Do you want to continue startup of %PRODUCTNAME without the corrupted "
+"configuration data?"
+msgstr ""
+"Osobna konfiguracijska datoteka '$(ARG1)' je oštećena i za nastavak se mora "
+"obrisati. Postoji mogućnost da će neke vaše osobne postavke biti izgubljene.\n"
+" Želite li nastaviti pokretanje %PRODUCTNAME bez nepostojećih "
+"konfiguracijskih podataka?"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA___ERRCODE_RES_MASK_.string.text
+msgid "The form contains invalid data. Do you still want to continue?"
+msgstr "The form contains invalid data. Do you still want to continue?"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_ABORT___ERRCODE_RES_MASK_.string.text
+msgid "The operation executed on $(ARG1) was aborted."
+msgstr "Operacija izvršena na $(ARG1) je prekinuta"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_ACCESSDENIED___ERRCODE_RES_MASK_.string.text
+msgid "Access to $(ARG1) was denied."
+msgstr "."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_ALREADYEXISTS___ERRCODE_RES_MASK_.string.text
+msgid "$(ARG1) already exists."
+msgstr "$(ARG1) već postoji"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_BADCRC___ERRCODE_RES_MASK_.string.text
+msgid "The data from $(ARG1) has an incorrect checksum."
+msgstr "Podaci iz $(ARG1) ima neispravan zaštitnu sumu"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_BROKENPACKAGE___ERRCODE_RES_MASK_.string.text
+msgid ""
+"The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME "
+"can try to repair the file.\n"
+"\n"
+"The corruption could be the result of document manipulation or of structural "
+"document damage due to data transmission.\n"
+"\n"
+"We recommend that you do not trust the content of the repaired document.\n"
+"Execution of macros is disabled for this document.\n"
+"\n"
+"Should %PRODUCTNAME repair the file?\n"
+msgstr ""
+"Datoteka '$(ARG1)' je oštećena i stoga ne može biti otvorena. Treba li %"
+"PRODUCTNAME popraviti datoteku?"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR___ERRCODE_RES_MASK_.string.text
+msgid ""
+"The file '$(ARG1)' could not be repaired and therefore cannot be opened."
+msgstr ""
+"Datoteka '$(ARG1)' ne može biti popravljena i stoga ne može biti otvorena."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_CANTCREATE___ERRCODE_RES_MASK_.string.text
+msgid "The object $(ARG1) cannot be created in directory $(ARG2)."
+msgstr "Objekt $(ARG1) ne može biti stvoren u mapi $(ARG2)"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_CANTCREATE_NONAME___ERRCODE_RES_MASK_.string.text
+msgid "The object cannot be created in directory $(ARG1)."
+msgstr "Objekt ne može biti stvoren u direktoriju $(ARG1)"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_CANTREAD___ERRCODE_RES_MASK_.string.text
+msgid "Data of $(ARG1) could not be read."
+msgstr "Podaci od $(ARG1) nisu se mogli pročitati"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_CANTSEEK___ERRCODE_RES_MASK_.string.text
+msgid "The seek operation on $(ARG1) could not be performed."
+msgstr "Operacija pretraživanja na $(ARG1) nije se mogla izvršiti."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_CANTTELL___ERRCODE_RES_MASK_.string.text
+msgid "The tell operation on $(ARG1) could not be performed."
+msgstr "Nije se mogla izvršiti operacija "
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_CANTWRITE___ERRCODE_RES_MASK_.string.text
+msgid "Data for $(ARG1) could not be written."
+msgstr "Podaci za $(ARG1) nisu se mogli zapisati"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_CURRENTDIR___ERRCODE_RES_MASK_.string.text
+msgid "Action impossible: $(ARG1) is the current directory."
+msgstr "Nemogući postupak: $(ARG1) je trenutna mapa"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_GENERAL___ERRCODE_RES_MASK_.string.text
+msgid "General input/output error while accessing $(ARG1)."
+msgstr "Općenita ulazno/izlazna greška za vrijeme pristupa $(ARG1)"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_INVALIDACCESS___ERRCODE_RES_MASK_.string.text
+msgid "An attempt was made to access $(ARG1) in an invalid way."
+msgstr "Namjera je bila pristupiti $(ARG1) na krivi način."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_INVALIDCHAR___ERRCODE_RES_MASK_.string.text
+msgid "$(ARG1) contains invalid characters."
+msgstr "$(ARG1) sadrži neispravne znakove"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_INVALIDDEVICE___ERRCODE_RES_MASK_.string.text
+msgid "The device (drive) $(ARG1) is invalid."
+msgstr "Uređaj (pogon) $(ARG1) je neispravan"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_INVALIDLENGTH___ERRCODE_RES_MASK_.string.text
+msgid "The data from $(ARG1) has an invalid length."
+msgstr "Podaci iz $(ARG1) imaju neispravnu duljinu"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_INVALIDPARAMETER___ERRCODE_RES_MASK_.string.text
+msgid "The operation on $(ARG1) was started with an invalid parameter."
+msgstr "Postupak na $(ARG1) je bio pokrenut s neispravnim parametrima"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_ISWILDCARD___ERRCODE_RES_MASK_.string.text
+msgid "The operation cannot be performed because $(ARG1) contains wildcards."
+msgstr "Postupak ne može biti pokrenut jer $(ARG1) sadrži zamjenske znakove"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_LOCKVIOLATION___ERRCODE_RES_MASK_.string.text
+msgid "Error during shared access to $(ARG1)."
+msgstr "Greška tijekom dijeljenog pristupa na $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_MISPLACEDCHAR___ERRCODE_RES_MASK_.string.text
+msgid "$(ARG1) contains misplaced characters."
+msgstr "$(ARG1) sadrži znakove na krivom mjestu"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_MODULESIZEEXCEEDED___ERRCODE_RES_MASK_.string.text
+msgid ""
+"You are about to save/export a password protected basic library containing "
+"module(s) \n"
+"$(ARG1)\n"
+"which are too large to store in binary format. If you wish users that don't "
+"have access to the library password to be able to run macros in those "
+"module(s) you must split those modules into a number of smaller modules. Do "
+"you wish to continue to save/export this library?"
+msgstr ""
+"Namjeravate spremiti/izvesti lozinkom zaštićenu osnovnu knjižnicu koja "
+"sadrži modul(e)\n"
+"$(ARG1)\n"
+"a koji su preveliki za zapisivanje u binarnom obliku. Ukoliko želite da "
+"korisnici, koji nemaju pristup lozinki knjižnice, mogu pokrenuti makro "
+"naredbe u tom modulu ili modulima morate razlomiti te module u više manjih "
+"modula. Želite li nastaviti sa spremanjem/izvozom ove knjižnice?"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NAMETOOLONG___ERRCODE_RES_MASK_.string.text
+msgid "The name $(ARG1) contains too many characters."
+msgstr "Ime $(ARG1) sadrži previše znakova"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTADIRECTORY___ERRCODE_RES_MASK_.string.text
+msgid "$(ARG1) is not a directory."
+msgstr "$(ARG1) nije mapa"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTAFILE___ERRCODE_RES_MASK_.string.text
+msgid "$(ARG1) is not a file."
+msgstr "$(ARG1) nije datoteka"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTEXISTS___ERRCODE_RES_MASK_.string.text
+msgid "$(ARG1) does not exist."
+msgstr "$(ARG1) ne postoji"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTEXISTSPATH___ERRCODE_RES_MASK_.string.text
+msgid "The path $(ARG1) does not exist."
+msgstr "Putanja $(ARG1) ne postoji"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTEXISTS_FOLDER___ERRCODE_RES_MASK_.string.text
+msgid "Folder $(ARG1) does not exist."
+msgstr "Mapa $(ARG1) ne postoji"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTEXISTS_VOLUME___ERRCODE_RES_MASK_.string.text
+msgid "Drive $(ARG1) does not exist."
+msgstr "Pogon $(ARG1) ne postoji"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTREADY___ERRCODE_RES_MASK_.string.text
+msgid "$(ARG1) is not ready."
+msgstr "$(ARG1) nije spreman"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTREADY_REMOVABLE___ERRCODE_RES_MASK_.string.text
+msgid "$(ARG1) is not ready; please insert a storage medium."
+msgstr "$(ARG1) nije spreman; molimo, umetnite medij za pohranu."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTREADY_VOLUME___ERRCODE_RES_MASK_.string.text
+msgid "Volume $(ARG1) is not ready."
+msgstr "Oznaka $(ARG1) nije spremna."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTREADY_VOLUME_REMOVABLE___ERRCODE_RES_MASK_.string.text
+msgid "Volume $(ARG1) is not ready; please insert a storage medium."
+msgstr "Oznaka $(ARG1) nije spremna; molim, umetnite medij za pohranu"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTSAMEDEVICE___ERRCODE_RES_MASK_.string.text
+msgid "Action impossible: $(ARG1) and $(ARG2) are different devices (drives)."
+msgstr "Nemogući postupak: $(ARG1) i $(ARG2) su različiti uređaji (pogoni)"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTSUPPORTED___ERRCODE_RES_MASK_.string.text
+msgid "The operation on $(ARG1) is not supported on this operating system."
+msgstr "Operacija na $(ARG1) nije podržana na ovom operativnom sustavu"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_OUTOFMEMORY___ERRCODE_RES_MASK_.string.text
+msgid ""
+"The operation on $(ARG1) cannot be performed because there is no more memory "
+"available."
+msgstr "Operacija na $(ARG1) ne može biti izvršena zbog nedostatka memorije"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_OUTOFSPACE___ERRCODE_RES_MASK_.string.text
+msgid "There is no space left on device $(ARG1)."
+msgstr "Nema dovoljno prostora na uređaju $(ARG1)"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_PENDING___ERRCODE_RES_MASK_.string.text
+msgid "The operation on $(ARG1) cannot continue because more data is pending."
+msgstr "Operacija na $(ARG1) ne može se nastaviti zbog čekanja podataka"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_RECURSIVE___ERRCODE_RES_MASK_.string.text
+msgid "$(ARG1) cannot be copied into itself."
+msgstr "$(ARG1) ne može biti kopirano samo u sebe"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_TARGETALREADYEXISTS___ERRCODE_RES_MASK_.string.text
+msgid "Target already exists."
+msgstr "Cilj već postoji"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_TOOMANYOPENFILES___ERRCODE_RES_MASK_.string.text
+msgid ""
+"The operation on $(ARG1) cannot be performed because too many files are "
+"already open."
+msgstr ""
+"Operacija na $(ARG1) ne može biti izvršena zbog previše otvorenih datoteka"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_UNKNOWN___ERRCODE_RES_MASK_.string.text
+msgid "Unknown input/output error while accessing $(ARG1)."
+msgstr "Nepoznata ulazno/izlazna greška kod pristupanja $(ARG1)"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_UNSUPPORTEDOVERWRITE___ERRCODE_RES_MASK_.string.text
+msgid ""
+"%PRODUCTNAME cannot keep files from being overwritten when this transmission "
+"protocol is used. Do you want to continue anyway?"
+msgstr ""
+"%PRODUCTNAME ne može sadržavati datoteke iz ponovo napisanih dok se koristi "
+"ovaj transmisijski protokol. Želite li nastaviti?"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_WRITEPROTECTED___ERRCODE_RES_MASK_.string.text
+msgid "$(ARG1) is write protected."
+msgstr "$(ARG1) je zaštićeno od pisanja"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_WRONGFORMAT___ERRCODE_RES_MASK_.string.text
+msgid "$(ARG1) is not in the correct format."
+msgstr "$(ARG1) nije u ispravnom formatu"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_WRONGVERSION___ERRCODE_RES_MASK_.string.text
+msgid "The version of $(ARG1) is not correct."
+msgstr "Inačica od $(ARG1) nije ispravna"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_LOCKING_LOCKED___ERRCODE_RES_MASK_.string.text
+msgid ""
+"The file $(ARG1) is locked by another user. Currently, another write access "
+"to this file cannot be granted."
+msgstr ""
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_LOCKING_LOCKED_SELF___ERRCODE_RES_MASK_.string.text
+msgid ""
+"The file $(ARG1) is locked by yourself. Currently, another write access to "
+"this file cannot be granted."
+msgstr ""
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_LOCKING_LOCK_EXPIRED___ERRCODE_RES_MASK_.string.text
+msgid ""
+"The previously obtained lock for file $(ARG1) has expired.\n"
+"This can happen due to problems on the server managing the file lock. It "
+"cannot be guaranteed that write operations on this file will not overwrite "
+"changes done by other users!"
+msgstr ""
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_LOCKING_NOT_LOCKED___ERRCODE_RES_MASK_.string.text
+msgid "The file $(ARG1) is currently not locked by yourself."
+msgstr ""
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_SSLWARN_DOMAINMISMATCH_1_.string.text
+msgid ""
+"You have attempted to establish a connection with $(ARG1). However, the "
+"security certificate presented belongs to $(ARG2). It is possible, though "
+"unlikely, that someone may be trying to intercept your communication with "
+"this web site.\n"
+"\n"
+"If you suspect the certificate shown does not belong to $(ARG1), please "
+"cancel the connection and notify the site administrator.\n"
+"\n"
+"Would you like to continue anyway?"
+msgstr ""
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_SSLWARN_EXPIRED_1_.string.text
+msgid ""
+"$(ARG1) is a site that uses a security certificate to encrypt data during "
+"transmission, but its certificate expired on $(ARG2).\n"
+"\n"
+"You should check to make sure that your computer's time is correct."
+msgstr ""
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_SSLWARN_INVALID_1_.string.text
+msgid ""
+"The certificate could not be validated. You should examine this site's "
+"certificate carefully.\n"
+"\n"
+"If you suspect the certificate shown, please cancel the connection and "
+"notify the site administrator."
+msgstr ""
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_UNKNOWNAUTH_UNTRUSTED_.string.text
+msgid ""
+"Unable to verify the identity of $(ARG1) site.\n"
+"\n"
+"Before accepting this certificate, you should examine this site's "
+"certificate carefully. Are you willing to accept this certificate for the "
+"purpose of identifying the Web site $(ARG1)?"
+msgstr ""
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_WRONGJAVA___ERRCODE_RES_MASK_.string.text
+msgid "The installed Java version is not supported."
+msgstr "Nije podržana instalirana inačica Java-e."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_WRONGJAVA_MIN___ERRCODE_RES_MASK_.string.text
+msgid ""
+"The installed Java version is not supported, at least version $(ARG1) is "
+"required."
+msgstr ""
+"Instalirana inačica Java-e nije podržana, potrebna je inačica $(ARG1) ili "
+"novija."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_WRONGJAVA_VERSION___ERRCODE_RES_MASK_.string.text
+msgid "The installed Java version $(ARG1) is not supported."
+msgstr "Nije podržana instalirana inačica $(ARG1) Java-e."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_WRONGJAVA_VERSION_MIN___ERRCODE_RES_MASK_.string.text
+msgid ""
+"The installed Java version $(ARG1) is not supported, at least version "
+"$(ARG2) is required."
+msgstr ""
+"Instalirana inačica $(ARG1) Java-e nije podržana, potrebna je inačica "
+"$(ARG2) ili novija."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_WRONGMEDIUM___ERRCODE_RES_MASK_.string.text
+msgid "Please insert disk $(ARG1)."
+msgstr "Molimo, umetnite disk $(ARG1)"
+
+#: ids.src#RID_UUI_ERRHDL._TITLE_UUI_SSLWARN_DOMAINMISMATCH_.string.text
+msgid "Security Warning: Domain Name Mismatch"
+msgstr ""
+
+#: ids.src#RID_UUI_ERRHDL._TITLE_UUI_SSLWARN_EXPIRED_.string.text
+msgid "Security Warning: Server Certificate Expired"
+msgstr ""
+
+#: ids.src#RID_UUI_ERRHDL._TITLE_UUI_SSLWARN_INVALID_.string.text
+msgid "Security Warning: Server Certificate Invalid"
+msgstr ""
+
+#: ids.src#STR_WARNING_BROKENSIGNATURE_TITLE.string.text
+msgid "Invalid Document Signature"
+msgstr ""
+
+#: ids.src#STR_WARNING_INCOMPLETE_ENCRYPTION_TITLE.string.text
+msgid "Non-Encrypted Streams"
+msgstr ""
+
+#: lockfailed.src#STR_LOCKFAILED_MSG.string.text
+msgid ""
+"The file could not be locked for exclusive access by %PRODUCTNAME, due to "
+"missing permission to create a lock file on that file location."
+msgstr ""
+
+#: logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_SAVEPASSWORD.checkbox.text
+msgctxt "logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_SAVEPASSWORD.checkbox.text"
+msgid "~Remember password"
+msgstr "~Spremi lozinku"
+
+#: logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_USESYSCREDS.checkbox.text
+msgid "~Use system credentials"
+msgstr ""
+
+#: logindlg.src#DLG_UUI_LOGIN.FT_INFO_LOGIN_REQUEST.fixedtext.text
+msgid ""
+"Enter user name and password for: \n"
+"%1"
+msgstr ""
+
+#: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_ACCOUNT.fixedtext.text
+msgid "A~ccount"
+msgstr "~Račun"
+
+#: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_ERROR.fixedtext.text
+msgid "Message from server:"
+msgstr ""
+
+#: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PASSWORD.fixedtext.text
+msgid "Pass~word"
+msgstr "~Lozinka"
+
+#: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.fixedtext.text
+msgid "~Path"
+msgstr "~Putanja"
+
+#: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_USERNAME.fixedtext.text
+msgid "~User name"
+msgstr "~Korisničko ime"
+
+#: logindlg.src#DLG_UUI_LOGIN.modaldialog.text
+msgid "Authentication Required"
+msgstr "Korisničko ime i lozinka su nužni"
+
+#: logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.string.text
+msgid ""
+"Enter user name and password for: \n"
+"\"%2\" on %1"
+msgstr "Molim, unesite ovdje korisničko ime i lozinku za \"%2\" na %1."
+
+#: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_CAUTIONTEXT.fixedtext.text
+msgid ""
+"Caution: If you forget the master password, you will be unable to access any "
+"of the information protected by it. Passwords are case-sensitive."
+msgstr ""
+
+#: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_INFOTEXT.fixedtext.text
+msgid ""
+"Passwords for web connections are protected by a master password. You will "
+"be asked to enter it once per session, if %PRODUCTNAME retrieves a password "
+"from the protected password list."
+msgstr ""
+
+#: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_CRT.fixedtext.text
+msgid "~Enter password"
+msgstr "Glavna lozinka"
+
+#: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_REPEAT.fixedtext.text
+msgid "~Reenter password"
+msgstr "~Potvrdi glavnu lozinku"
+
+#: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.modaldialog.text
+msgid "Set Master Password"
+msgstr "Unesite glavnu lozinku"
+
+#: masterpassworddlg.src#DLG_UUI_MASTERPASSWORD.FT_MASTERPASSWORD.fixedtext.text
+msgid "Enter password"
+msgstr "Glavna lozinka"
+
+#: masterpassworddlg.src#DLG_UUI_MASTERPASSWORD.modaldialog.text
+msgid "Enter Master Password"
+msgstr "Unesite glavnu lozinku"
+
+#: nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.modaldialog.text
+msgid "File Exists"
+msgstr ""
+
+#: nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.BTN_OVERWRITE.pushbutton.text
+msgid "Replace"
+msgstr ""
+
+#: nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.BTN_RENAME.pushbutton.text
+msgid "Rename"
+msgstr ""
+
+#: newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_LATER.cancelbutton.text
+msgid "~Later"
+msgstr ""
+
+#: newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.fixedtext.text
+msgid ""
+"This document was created by a newer version of %PRODUCTNAME. It may contain "
+"features not supported by your current version.\n"
+"\n"
+"Click 'Update Now...' to run online update and get the latest version of %"
+"PRODUCTNAME."
+msgstr ""
+
+#: newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.modaldialog.text
+msgid "%PRODUCTNAME Update Available"
+msgstr ""
+
+#: newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.pushbutton.text
+msgid "~Update Now..."
+msgstr ""
+
+#: openlocked.src#STR_OPENLOCKED_MSG.string.text
+msgid ""
+"Document file '$(ARG1)' is locked for editing by:\n"
+"\n"
+"$(ARG2)\n"
+"\n"
+"Open document read-only or open a copy of the document for editing.\n"
+"\n"
+msgstr ""
+
+#: openlocked.src#STR_OPENLOCKED_OPENCOPY_BTN.string.text
+msgid "Open ~Copy"
+msgstr ""
+
+#: openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.string.text
+msgctxt "openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.string.text"
+msgid "Open ~Read-Only"
+msgstr ""
+
+#: openlocked.src#STR_OPENLOCKED_TITLE.string.text
+msgctxt "openlocked.src#STR_OPENLOCKED_TITLE.string.text"
+msgid "Document in Use"
+msgstr ""
+
+#: openlocked.src#STR_UNKNOWNUSER.string.text
+msgid "Unknown User"
+msgstr ""
+
+#: passworddlg.src#DLG_UUI_PASSWORD.STR_CONFIRM_SIMPLE_PASSWORD.string.text
+msgid "Confirm password: "
+msgstr ""
+
+#: passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_MODIFY.string.text
+msgid "Enter password to modify file: \n"
+msgstr ""
+
+#: passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_OPEN.string.text
+msgid "Enter password to open file: \n"
+msgstr ""
+
+#: passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_SIMPLE_PASSWORD.string.text
+msgid "Enter password: "
+msgstr ""
+
+#: passworddlg.src#DLG_UUI_PASSWORD.STR_PASSWORD_MISMATCH.string.text
+msgid ""
+"The confirmation password did not match the password. Set the password again "
+"by entering the same password in both boxes."
+msgstr ""
+
+#: passworddlg.src#DLG_UUI_PASSWORD.STR_TITLE_CREATE_PASSWORD.string.text
+msgid "Set Password"
+msgstr ""
+
+#: passworddlg.src#DLG_UUI_PASSWORD.STR_TITLE_ENTER_PASSWORD.string.text
+msgid "Enter Password"
+msgstr ""
+
+#: passworderrs.src#STR_ERROR_MASTERPASSWORD_WRONG.string.text
+msgid "The master password is incorrect."
+msgstr "Unesena je kriva glavna lozinka. Molimo, ponovno unesite lozinku."
+
+#: passworderrs.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.string.text
+msgid "The password confirmation does not match."
+msgstr "Lozinke se ne podudaraju. Molimo, unesite lozinku ponovo."
+
+#: passworderrs.src#STR_ERROR_PASSWORD_TO_MODIFY_WRONG.string.text
+msgid "The password is incorrect. The file cannot be modified."
+msgstr ""
+
+#: passworderrs.src#STR_ERROR_PASSWORD_TO_OPEN_WRONG.string.text
+msgid "The password is incorrect. The file cannot be opened."
+msgstr ""
+
+#: passworderrs.src#STR_ERROR_SIMPLE_PASSWORD_WRONG.string.text
+msgid "The password is incorrect."
+msgstr ""
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_DISABLE.cancelbutton.text
+msgid "~Disable Macros"
+msgstr "Onemogući makronaredbe"
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.CB_ALWAYSTRUST.checkbox.text
+msgid "Always trust macros from this source"
+msgstr "Uvijek vjeruj makronaredbama od ovog izvora"
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR1A.fixedtext.text
+msgid "The document contains document macros signed by:"
+msgstr "Dokument sadrži makronaredbe potpisane od:"
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR1B.fixedtext.text
+msgid "The document contains document macros."
+msgstr "Dokument sadrži makronaredbe."
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR2.fixedtext.text
+msgid ""
+"Macros may contain viruses. Disabling macros for a document is always safe. "
+"If you disable macros you may lose functionality provided by the document "
+"macros."
+msgstr ""
+"Makronaredbe mogu sadržavati viruse. Onemogućavanje makronaredbi za dokument "
+"je uvijek sigurno. Ako onemogućite makronaredbe možete izgubiti "
+"funkcionalnost koju oni pružaju."
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.modaldialog.text
+msgid "%PRODUCTNAME - Security Warning"
+msgstr "%PRODUCTNAME - Sigurnosno upozorenje"
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_ENABLE.okbutton.text
+msgid "~Enable Macros"
+msgstr "Omogući makronaredbe"
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_VIEWSIGNS.pushbutton.text
+msgid "View Signatures..."
+msgstr "Pogledaj potpise..."
+
+#: sslwarndlg.src#DLG_UUI_SSLWARN.PB_CANCEL.cancelbutton.text
+msgid "Cancel Connection"
+msgstr ""
+
+#: sslwarndlg.src#DLG_UUI_SSLWARN.FT_LABEL_1.fixedtext.text
+msgctxt "sslwarndlg.src#DLG_UUI_SSLWARN.FT_LABEL_1.fixedtext.text"
+msgid "No Text"
+msgstr ""
+
+#: sslwarndlg.src#DLG_UUI_SSLWARN.modaldialog.text
+msgid "Security Warning: "
+msgstr ""
+
+#: sslwarndlg.src#DLG_UUI_SSLWARN.PB_OK.pushbutton.text
+msgid "Continue"
+msgstr ""
+
+#: sslwarndlg.src#DLG_UUI_SSLWARN.PB_VIEW__CERTIFICATE.pushbutton.text
+msgid "View Certificate"
+msgstr ""
+
+#: trylater.src#STR_TRYLATER_MSG.string.text
+msgid ""
+"Document file '$(ARG1)' is locked for editing by:\n"
+"\n"
+"$(ARG2)\n"
+"\n"
+"Try again later to save document or save a copy of that document.\n"
+"\n"
+msgstr ""
+
+#: trylater.src#STR_TRYLATER_RETRYSAVING_BTN.string.text
+msgctxt "trylater.src#STR_TRYLATER_RETRYSAVING_BTN.string.text"
+msgid "~Retry Saving"
+msgstr ""
+
+#: trylater.src#STR_TRYLATER_SAVEAS_BTN.string.text
+msgid "~Save As..."
+msgstr ""
+
+#: trylater.src#STR_TRYLATER_TITLE.string.text
+msgctxt "trylater.src#STR_TRYLATER_TITLE.string.text"
+msgid "Document in Use"
+msgstr ""
+
+#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.FT_LABEL_1.fixedtext.text
+msgctxt "unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.FT_LABEL_1.fixedtext.text"
+msgid "No Text"
+msgstr ""
+
+#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_HELP.helpbutton.text
+msgid "Help"
+msgstr ""
+
+#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.modaldialog.text
+msgid "Website Certified by an Unknown Authority"
+msgstr ""
+
+#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_OK.pushbutton.text
+msgid "OK"
+msgstr ""
+
+#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_VIEW__CERTIFICATE.pushbutton.text
+msgid "Examine Certificate..."
+msgstr ""
+
+#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.RB_ACCEPT_1.radiobutton.text
+msgid "Accept this certificate temporarily for this session"
+msgstr ""
+
+#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.RB_DONTACCEPT_2.radiobutton.text
+msgid "Do not accept this certificate and do not connect to this Web site"
+msgstr ""

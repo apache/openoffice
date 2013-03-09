@@ -1,0 +1,268 @@
+
+#: crashrep.ulf#_WELCOME_CAPTION_.LngText.text
+msgctxt "crashrep.ulf#_WELCOME_CAPTION_.LngText.text"
+msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "%PRODUCTNAME% %PRODUCTVERSION% Hata Raporu"
+
+#: crashrep.ulf#_WELCOME_HEADER_.LngText.text
+msgid "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "%PRODUCTNAME% %PRODUCTVERSION% Hata Raporuna Hoş Geldiniz"
+
+#: crashrep.ulf#_WELCOME_BODY1_.LngText.text
+msgid ""
+"This error report tool gathers information about how %PRODUCTNAME% is "
+"working and sends it to Oracle to help improve future versions.\n"
+"\n"
+msgstr ""
+"Bu hata raporlama aracı, %PRODUCTNAME% ürününün çalışması hakkında bilgiler "
+"toplar ve bunları daha ileride geliştirilecek olan yeni sürümler için "
+"Oracle'a gönderir.\n"
+"\n"
+
+#: crashrep.ulf#_WELCOME_BODY2_.LngText.text
+msgid ""
+"It's easy - just send the report without any further effort on your part by "
+"clicking 'Send' in the next dialog, or you can briefly describe how the "
+"error occurred and then click 'Send'. If you want to see the report, click "
+"the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n"
+"\n"
+msgstr ""
+"İşlem çok kolaydır. Sadece bir sonraki pencerede karşınıza çıkan 'Gönder' "
+"düğmesine tıklayın, ya da bu hatanın nasıl oluştuğunu kısaca belirttikten "
+"sonra 'Gönder' tuşuna tıklayın. Eğer raporu görmek istiyorsanız, 'Raporu "
+"Göster' düğmesine tıklamak yeterlidir. Eğer 'Gönderme' düğmesine tıklarsanız "
+"bilgisayarınız hiç bir veri göndermeyecektir.\n"
+"\n"
+
+#: crashrep.ulf#_WELCOME_BODY3_.LngText.text
+msgid ""
+"Customer Privacy\n"
+"The information gathered is limited to data concerning the state of %"
+"PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information "
+"about passwords or document contents is not collected.\n"
+"\n"
+"The information will only be used to improve the quality of %PRODUCTNAME% "
+"and will not be shared with third parties.\n"
+"For more information on Oracle's privacy policy, visit\n"
+msgstr ""
+"Müşteri Gizliliği \n"
+"Hata oluştuğunda toplanan bilgi %PRODUCTNAME% %PRODUCTVERSION% durumuyla "
+"sınırlıdır. Şifreler veya belge içeriğiyle ilgili bır bilgi toplanmaz.\n"
+"\n"
+"Bu bilgi sadece %PRODUCTNAME% kalitesini arttırmak amacıyla kulanılacaktır "
+"ve üçüncü partilerle paylaşılmayacaktır. \n"
+"Oracle'ın gizlilik politikası hakkında daha fazla bilgi için \n"
+
+#: crashrep.ulf#_PRIVACY_URL_.LngText.text
+msgid "http://www.oracle.com/html/services-privacy-policy.html"
+msgstr "http://www.oracle.com/html/services-privacy-policy.html"
+
+#: crashrep.ulf#_NEXT_BUTTON_.LngText.text
+msgid "~Next >>"
+msgstr "Sonraki >>"
+
+#: crashrep.ulf#_CANCEL_BUTTON_.LngText.text
+msgid "Cancel"
+msgstr "İptal"
+
+#: crashrep.ulf#_OK_BUTTON_.LngText.text
+msgid "OK"
+msgstr "Tamam"
+
+#: crashrep.ulf#_REPORT_CAPTION_.LngText.text
+msgctxt "crashrep.ulf#_REPORT_CAPTION_.LngText.text"
+msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "%PRODUCTNAME% %PRODUCTVERSION% Hata Raporu"
+
+#: crashrep.ulf#_REPORT_HEADER_.LngText.text
+msgid "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
+msgstr "%PRODUCTNAME% %PRODUCTVERSION% çalışırken bir hata oluştu"
+
+#: crashrep.ulf#_REPORT_BODY_.LngText.text
+msgid ""
+"The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information "
+"that could help Oracle improve %PRODUCTNAME%.\n"
+"In the spaces below, you can enter a title for your crash report and "
+"describe the action you were trying to carry out when the error occurred. "
+"Then click 'Send'.\n"
+msgstr ""
+"%PRODUCTNAME% %PRODUCTVERSION% Hata Raporu, Oracle'ın %PRODUCTNAME% ürününü "
+"iyileştirebilmesi için gerekli bilgileri toplamıştır. \n"
+"Aşağıdaki alanlarda, çökme raporunuza başlık yazabilir ve hata oluştuğu anda "
+"ne yaptığınızı tanımlayabilirsiniz. Sonra 'Gönder' düğmesine tıklayınız.\n"
+
+#: crashrep.ulf#_ENTER_TITLE_.LngText.text
+msgid ""
+"Which type of document (e.g. presentation) were you using when the error "
+"occurred?"
+msgstr "Hata oluştuğu zaman hangi tür belgeyi (örnek: sunum) kullanıyordunuz?"
+
+#: crashrep.ulf#_ALLOW_CONTACT_.LngText.text
+msgid "~I allow Oracle to contact me regarding this report."
+msgstr "Oracle bu hata raporu ~ile ilgili olarak bana ulaşabilir."
+
+#: crashrep.ulf#_ENTER_EMAIL_.LngText.text
+msgid "Please enter your e-mail address."
+msgstr "Lütfen e-posta adresinizi giriniz."
+
+#: crashrep.ulf#_ENTER_DESCRIPTION_.LngText.text
+msgid "~How were you using %PRODUCTNAME% when the error occurred ?"
+msgstr "Bu hata oluştuğunda %PRODUCTNAME% programını nasıl kullanıyordunuz?"
+
+#: crashrep.ulf#_BACK_BUTTON_.LngText.text
+msgid " << ~Back"
+msgstr " << Geri"
+
+#: crashrep.ulf#_SEND_BUTTON_.LngText.text
+msgid "S~end"
+msgstr "Gönder"
+
+#: crashrep.ulf#_DONOT_SEND_BUTTON_.LngText.text
+msgid "Do ~Not Send"
+msgstr "Gönderme"
+
+#: crashrep.ulf#_SHOW_REPORT_BUTTON_.LngText.text
+msgid "Show ~Report..."
+msgstr "Raporu Göster..."
+
+#: crashrep.ulf#_SAVE_REPORT_BUTTON_.LngText.text
+msgid "~Save Report..."
+msgstr "Raporu Kaydet..."
+
+#: crashrep.ulf#_SAVE_REPORT_TITLE_.LngText.text
+msgid "Save Report to"
+msgstr "Raporu Farklı Kaydet"
+
+#: crashrep.ulf#_ERROR_MSG_SIMPLE_MAPI_.LngText.text
+msgid ""
+"The error report could not be sent because the default e-mail program does "
+"not support MAPI.\n"
+" Please use a MAPI-compatible e-mail program."
+msgstr ""
+"Hata raporu yollanamadı çünkü varsayılan e-posta programı MAPI "
+"desteklemiyor.\n"
+"  Lütfen MAPI destekli bir e-posta programı kullanın."
+
+#: crashrep.ulf#_ERROR_MSG_DISK_FULL_.LngText.text
+msgid ""
+"The error report could not be temporarily saved and could therefore not be "
+"sent."
+msgstr "Hata raporu geçici olarak kaydedilemedi, bu nedenle gönderilemedi."
+
+#: crashrep.ulf#_ERROR_MSG_SENDMAIL_.LngText.text
+msgid ""
+"The error report could not be sent because 'sendmail' could not be started.\n"
+"Please check the 'sendmail' settings."
+msgstr ""
+"Hata raporu gönderilemedi, çünkü 'sendmail' programı başlatılamadı.\n"
+"Lütfen 'sendmail' ayarlarınızı gözden geçirin."
+
+#: crashrep.ulf#_ERROR_MSG_PROXY_.LngText.text
+msgid ""
+"The error report could not be sent. Please check the proxy settings under "
+"'Options' in the Error Report Tool."
+msgstr ""
+"Hata raporu gönderilemedi. Lütfen Hata Raporlama Aracının 'Seçenekler' "
+"menüsünden vekil sunucu ayarlarını kontrol edin."
+
+#: crashrep.ulf#_ERROR_MSG_NOCONNECT_.LngText.text
+msgid ""
+"The error report could not be sent because there is no Internet connection. "
+"Please check your Internet settings."
+msgstr ""
+"Hata raporu gönderilemedi, çünkü bir İnternet bağlantısı yok. Lütfen "
+"İnternet ayarlarınızı kontrol edin."
+
+#: crashrep.ulf#_OPTIONS_BUTTON_.LngText.text
+msgid "~Options..."
+msgstr "Seçenekler..."
+
+#: crashrep.ulf#_OPTIONS_TITLE_.LngText.text
+msgid "Options"
+msgstr "Seçenekler"
+
+#: crashrep.ulf#_PROXY_SETTINGS_HEADER_.LngText.text
+msgid "Proxy settings"
+msgstr "Vekil sunucu ayarları"
+
+#: crashrep.ulf#_PROXY_SETTINGS_SYSTEM_.LngText.text
+msgid "Use ~system settings"
+msgstr "~Sistem ayarlarını kullan"
+
+#: crashrep.ulf#_PROXY_SETTINGS_DIRECT_.LngText.text
+msgid "Use ~direct connection to the Internet"
+msgstr "İnternete ~doğrudan bağlantı kullan"
+
+#: crashrep.ulf#_PROXY_SETTINGS_MANUAL_.LngText.text
+msgid "Use ~manual settings"
+msgstr "Elle ayarla~ma yap"
+
+#: crashrep.ulf#_PROXY_SETTINGS_ADDRESS_.LngText.text
+msgid "HT~TP Proxy"
+msgstr "HTTP Vekil Sunucu"
+
+#: crashrep.ulf#_PROXY_SETTINGS_PORT_.LngText.text
+msgid "~Port"
+msgstr "~Port"
+
+#: crashrep.ulf#_PROXY_SETTINGS_DESCRIPTION_.LngText.text
+msgid ""
+"The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to "
+"be able to send error reports.\n"
+"\n"
+"Companies often use proxy servers in conjunction with a firewall to protect "
+"the network.\n"
+"\n"
+"If this applies to your situation, you have to specify the address and port "
+"for the server."
+msgstr ""
+"%PRODUCTNAME% Hata Raporu aracının hataları iletebilmesi için İnternet "
+"bağlantısına ihtiyaç vardır.\n"
+"\n"
+"Kurumlar genellikle ağlarını korumak için vekil (proxy) sunucularla birlikte "
+"güvenlik duvarı kullanır.\n"
+"\n"
+"Eğer bu durum sizin için de geçerli ise, sunucunun adresini ve port "
+"numarasını girmelisiniz."
+
+#: crashrep.ulf#_SENDING_REPORT_HEADER_.LngText.text
+msgid "Sending Error Report"
+msgstr "Hata Raporu Gönderiliyor"
+
+#: crashrep.ulf#_SENDING_REPORT_STATUS_.LngText.text
+msgid "Status: Sending error report"
+msgstr "Durum: Hata raporu gönderiliyor"
+
+#: crashrep.ulf#_SENDING_REPORT_STATUS_FINISHED_.LngText.text
+msgid "Status: The error report has been sent successfully."
+msgstr "Durum: Hata raporu başarıyla gönderildi."
+
+#: crashrep.ulf#_ERROR_MSG_NOEMAILADDRESS_.LngText.text
+msgid ""
+"You have marked the option 'I allow Oracle to contact me regarding this "
+"report.'\n"
+"Please enter your e-mail address."
+msgstr ""
+"Oracle'ın bu hata raporu ile ilgili olarak sizinle bağlantı kurabileceğini "
+"belirtmişsiniz.\n"
+"Lütfen e-posta adresinizi girin."
+
+#: crashrep.ulf#_MSG_CMDLINE_USAGE_.LngText.text
+msgid "Usage:"
+msgstr "Kullanım:"
+
+#: crashrep.ulf#_MSG_PARAM_PROCESSID_.LngText.text
+msgid "-p <process ID>"
+msgstr "-p <süreç no>"
+
+#: crashrep.ulf#_MSG_PARAM_PROCESSID_DESCRIPTION_.LngText.text
+msgid "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
+msgstr "Hata Rapor Aracına %PRODUCTNAME% süreç kimlik bilgisini (PID) atar"
+
+#: crashrep.ulf#_MSG_PARAM_HELP_DESCRIPTION_.LngText.text
+msgid ""
+"Shows this help text.\n"
+"Detailed information can be found in the Setup Guide."
+msgstr ""
+"Bu yardım metnini gösterir.\n"
+"Detaylı bilgi Kurulum Kılavuzundan alınabilir."

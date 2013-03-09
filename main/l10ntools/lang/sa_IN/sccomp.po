@@ -1,0 +1,44 @@
+
+#: solver.src#RID_ERROR_EPSILONLEVEL.string.text
+msgid "The epsilon level is invalid."
+msgstr "एफ्लिसेन्स्तरः असिद्धमस्ति।"
+
+#: solver.src#RID_ERROR_INFEASIBLE.string.text
+msgid "The model is infeasible. Check limiting conditions."
+msgstr "मोडेल् करणीयम्स्ति।परिमितोपधयः परीक्षस्व।"
+
+#: solver.src#RID_ERROR_NONLINEAR.string.text
+msgid "The model is not linear."
+msgstr "मोडेल् लीनियर् नास्ति।  "
+
+#: solver.src#RID_ERROR_TIMEOUT.string.text
+msgid "The time limit was reached."
+msgstr "समयपरिमितिः अनुप्राप्ता। "
+
+#: solver.src#RID_ERROR_UNBOUNDED.string.text
+msgid "The model is unbounded."
+msgstr "मोडेल् न निबद्धम्। "
+
+#: solver.src#RID_PROPERTY_EPSILONLEVEL.string.text
+msgid "Epsilon level (0-3)"
+msgstr "एप्लिसेन् स्तरः (0-3)"
+
+#: solver.src#RID_PROPERTY_INTEGER.string.text
+msgid "Assume variables as integer"
+msgstr "परिवर्तनीयानि पूर्णाङ्कमिव उरीकुरु "
+
+#: solver.src#RID_PROPERTY_LIMITBBDEPTH.string.text
+msgid "Limit branch-and-bound depth"
+msgstr "परिमितशाखा तथा निबद्धगंभीरम्  "
+
+#: solver.src#RID_PROPERTY_NONNEGATIVE.string.text
+msgid "Assume variables as non-negative"
+msgstr "अव्यतिरेकमिव परिवर्तनीयानि उरीकुरु "
+
+#: solver.src#RID_PROPERTY_TIMEOUT.string.text
+msgid "Solving time limit (seconds)"
+msgstr "समयपरिमितिं प्रतिसमाधति (निमेषाः)"
+
+#: solver.src#RID_SOLVER_COMPONENT.string.text
+msgid "%PRODUCTNAME Linear Solver"
+msgstr "%PRODUCTNAME लिनीयर् प्रतिसमाधकः "

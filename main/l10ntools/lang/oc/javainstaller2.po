@@ -1,0 +1,824 @@
+
+#: setupstrings.ulf#STRING_PREVIOUS.LngText.text
+msgid "Back"
+msgstr "Precedent"
+
+#: setupstrings.ulf#STRING_NEXT.LngText.text
+msgid "Next"
+msgstr "Seguent"
+
+#: setupstrings.ulf#STRING_CANCEL.LngText.text
+msgid "Cancel"
+msgstr "Anullar"
+
+#: setupstrings.ulf#STRING_FINISH.LngText.text
+msgid "Finish"
+msgstr "Acabar"
+
+#: setupstrings.ulf#STRING_DECLINE.LngText.text
+msgid "Decline"
+msgstr "Refusar"
+
+#: setupstrings.ulf#STRING_INSTALL.LngText.text
+msgid "Install now"
+msgstr "Installar ara"
+
+#: setupstrings.ulf#STRING_UNINSTALL.LngText.text
+msgid "Remove Now"
+msgstr "Suprimir ara"
+
+#: setupstrings.ulf#STRING_HELP.LngText.text
+msgid "Help"
+msgstr "Ajuda"
+
+#: setupstrings.ulf#STRING_OK.LngText.text
+msgid "OK"
+msgstr "ÒC"
+
+#: setupstrings.ulf#STRING_ERROR.LngText.text
+msgid "Error"
+msgstr "Error"
+
+#: setupstrings.ulf#STRING_FILE_NOT_FOUND.LngText.text
+msgid "Error: File not found"
+msgstr "Error : Fichièr introbable"
+
+#: setupstrings.ulf#STRING_APPLICATIONTITLE.LngText.text
+msgid "${PRODUCT_FULLNAME} Installation Wizard"
+msgstr "Assistent d'installacion de ${PRODUCT_FULLNAME}"
+
+#: setupstrings.ulf#STRING_APPLICATIONTITLEUNINSTALLATION.LngText.text
+msgid "${PRODUCT_FULLNAME} Uninstallation Wizard"
+msgstr "Assistent de desintallacion de ${PRODUCT_FULLNAME}"
+
+#: setupstrings.ulf#STRING_CANCEL_DIALOG_TITLE.LngText.text
+msgid "Exit"
+msgstr "Quitar"
+
+#: setupstrings.ulf#STRING_CANCEL_DIALOG.LngText.text
+msgid "Do you really want to exit the Installation Wizard?"
+msgstr "Sètz segur que volètz quitar l'assistent d'installacion ?"
+
+#: setupstrings.ulf#STRING_CANCEL_DIALOG_UNINSTALLATION.LngText.text
+msgid "Do you really want to exit the Uninstallation Wizard?"
+msgstr "Sètz segur que volètz quitar l'assistent de desinstallacion ?"
+
+#: setupstrings.ulf#STRING_STOP_DIALOG.LngText.text
+msgid "Do you really want to abort the installation process?"
+msgstr "Sètz segur que volètz quitar l'installacion ?"
+
+#: setupstrings.ulf#STRING_STOP_DIALOG_TITLE.LngText.text
+msgid "Abort installation?"
+msgstr "Quitar l'installacion?"
+
+#: setupstrings.ulf#STRING_STOP_DIALOG_UNINSTALLATION.LngText.text
+msgid "Do you really want to abort the uninstallation process?"
+msgstr "Sètz segur que volètz quitar la desinstallacion ?"
+
+#: setupstrings.ulf#STRING_STOP_DIALOG_TITLE_UNINSTALLATION.LngText.text
+msgid "Abort uninstallation?"
+msgstr "Quitar la desinstallacion?"
+
+#: setupstrings.ulf#STRING_ACCEPTLICENSE.LngText.text
+msgid "Accept License"
+msgstr "Acceptar la licéncia"
+
+#: setupstrings.ulf#STRING_ACCEPTLICENSE1.LngText.text
+msgid "Software License Agreement"
+msgstr "Contracte de licéncia del logicial"
+
+#: setupstrings.ulf#STRING_ACCEPTLICENSE2.LngText.text
+msgid "Please read the following license agreement carefully."
+msgstr "Legissètz aqueste contracte de licéncia amb atencion."
+
+#: setupstrings.ulf#STRING_ACCEPTLICENSE3.LngText.text
+msgctxt "setupstrings.ulf#STRING_ACCEPTLICENSE3.LngText.text"
+msgid ""
+"If you have read and accept all the terms of the entire Software License "
+"Agreement, click 'Accept License' to continue with the installation."
+msgstr ""
+"S'avètz legit e acceptat entièrament totes los tèrmes del contracte de "
+"licéncia del logicial, clicatz sus 'Acceptar la licéncia' per contunhar "
+"l'installacion."
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY1.LngText.text
+msgid "Select Installation Directory"
+msgstr "Seleccionatz lo repertòri d'installacion"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY1_UPDATE.LngText.text
+msgid "Update the Installed Version"
+msgstr "Mesa a jorn de la version installada"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY1_MAINTAIN.LngText.text
+msgid "Adding Components to the Installed Version"
+msgstr "Apondons de compausants a la version installada"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY2.LngText.text
+msgid "Install ${PRODUCT_FULLNAME} in this directory"
+msgstr "Installar ${PRODUCT_FULLNAME} dins aqueste repertòri"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY3.LngText.text
+msgid "Browse..."
+msgstr "Percórrer..."
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY4_QUESTION_TITLE.LngText.text
+msgid "Create New Directory"
+msgstr "Crear un repertòri novèl"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE.LngText.text
+msgid ""
+"The directory '${DIR}' does not exist.\n"
+"Do you want to create it now?"
+msgstr ""
+"Lo repertòri '${DIR}' existís pas.\n"
+"Deu èsser creat?"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2.LngText.text
+msgid ""
+"The directory '${DIR}' does not exist.\n"
+"Do you want to create it now or choose another directory?"
+msgstr ""
+"Lo repertòri '${DIR}' existís pas.\n"
+"Deu èsser creat o volètz causir un autre repertòri?"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY6.LngText.text
+msgid "Select root directory"
+msgstr "Seleccionar un repertòri raiç"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY_NO_WRITE_ACCESS.LngText.text
+msgid "You do not have write access in the directory"
+msgstr "Avètz pas los dreches d'accès en escritura al repertòri"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY_NOT_ALLOWED.LngText.text
+msgid "You are not allowed to create the directory"
+msgstr "Sètz pas autorizat a crear lo repertòri"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY_NO_SUCCESS.LngText.text
+msgid "Failed to create the directory"
+msgstr "Fracàs a la creacion del repertòri"
+
+#: setupstrings.ulf#STRING_CHOOSECOMPONENTS1.LngText.text
+msgid "Select Components"
+msgstr "Seleccionatz de compausants"
+
+#: setupstrings.ulf#STRING_CHOOSECOMPONENTS1_MAINTAIN.LngText.text
+msgid "Select Additional Components"
+msgstr "Seleccionatz de compausants suplementaris"
+
+#: setupstrings.ulf#STRING_CHOOSECOMPONENTS2.LngText.text
+msgid "Marked components will be installed. Please mark them accordingly"
+msgstr ""
+"Los compausants marcats van èsser installats. Marcatz-los en consequéncia"
+
+#: setupstrings.ulf#STRING_CHOOSECOMPONENTS3.LngText.text
+msgid "Feature Description"
+msgstr "Descripcion de la foncionalitat"
+
+#: setupstrings.ulf#STRING_CHOOSECOMPONENTS4.LngText.text
+msgid "Size (kB):"
+msgstr "Talha (ko):"
+
+#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE1.LngText.text
+msgctxt "setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE1.LngText.text"
+msgid "Select the Type of Installation"
+msgstr "Seleccionatz lo tipe d'installacion"
+
+#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE2.LngText.text
+msgid "Select the type of installation that best suits your needs:"
+msgstr "Seleccionatz lo tipe d'installacion desirada:"
+
+#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE3.LngText.text
+msgctxt "setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE3.LngText.text"
+msgid "Select the Type of Installation"
+msgstr "Seleccionatz lo tipe d'installacion"
+
+#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE4.LngText.text
+msgid "The main components will be installed. Recommended for most users."
+msgstr ""
+"Los compausants principals van èsser installats. Recomandat per la màger "
+"part dels utilizaires."
+
+#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE5.LngText.text
+msgid ""
+"You choose the components you want to install and where they are stored. "
+"Recommended for advanced users."
+msgstr ""
+"Causissètz los compausants d'installar e l'endrech ont los estocar. "
+"Recomandat pels utilizaires avançats."
+
+#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE6.LngText.text
+msgid "Typical"
+msgstr "Estandarda"
+
+#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE7.LngText.text
+msgid "Custom"
+msgstr "Personalizat"
+
+#: setupstrings.ulf#STRING_INSTALLATIONIMMINENT1.LngText.text
+msgid "Ready to Install"
+msgstr "Prèst per l'installacion"
+
+#: setupstrings.ulf#STRING_INSTALLATIONIMMINENT1_UPDATE.LngText.text
+msgid "Ready to Update"
+msgstr "Prèst per la mesa a jorn"
+
+#: setupstrings.ulf#STRING_INSTALLATIONIMMINENT2.LngText.text
+msgid "The following ${PRODUCT_FULLNAME} components will be installed:"
+msgstr "Los compausants ${PRODUCT_FULLNAME} seguents van èsser installats:"
+
+#: setupstrings.ulf#STRING_INSTALLATIONONGOING1.LngText.text
+msgid "Installing..."
+msgstr "Installacion..."
+
+#: setupstrings.ulf#STRING_INSTALLATIONONGOING3.LngText.text
+msgid "Stop"
+msgstr "Arrestar"
+
+#: setupstrings.ulf#STRING_INSTALLATIONONGOING_PACKAGEPATH_NOT_FOUND.LngText.text
+msgid "ERROR: Path with installation packages not found!"
+msgstr "ERROR : camin cap als paquets d'installacion introbable!"
+
+#: setupstrings.ulf#STRING_PROLOGUE1.LngText.text
+msgid "Welcome"
+msgstr "Benvenguda"
+
+#: setupstrings.ulf#STRING_PROLOGUE2.LngText.text
+msgid ""
+"This Installation Wizard will install ${PRODUCT_FULLNAME} on your computer."
+msgstr ""
+"Aqueste assistent d'installacion va installar ${PRODUCT_FULLNAME} sus vòstre "
+"ordenador."
+
+#: setupstrings.ulf#STRING_PROLOGUE3.LngText.text
+msgid "To continue, click 'Next'."
+msgstr "Per contunhar, clicatz sus 'Seguent'."
+
+#: setupstrings.ulf#STRING_PROLOGUE4.LngText.text
+msgid ""
+"Note: This installation will be done without root privileges. Therefore you "
+"will have a reduced functionality (Java Runtime Environment (JRE) not "
+"installable, system integration not possible).\n"
+"Click 'Cancel' and change your privileges to root privileges, if you want to "
+"use the complete functionality."
+msgstr ""
+"Remarca : l'installacion va èsser facha sens los privilègis root. Doncas, "
+"auretz accès a de foncionalitats reduchas (Java Runtime Environment (JRE) "
+"pas installable, integracion sistèma impossibla).\n"
+"Clicatz sus 'Anullar' e modificatz vòstres privilègis en privilègis root se "
+"volètz aver accès a totas las foncionalitats."
+
+#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1.LngText.text
+msgid "Installation Completed"
+msgstr "Installacion acabada"
+
+#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1_ABORT.LngText.text
+msgid "Installation Aborted"
+msgstr "Installacion interrompuda"
+
+#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1_ERROR.LngText.text
+msgid "Installation Failed"
+msgstr "L'installacion a fracassat"
+
+#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2.LngText.text
+msgid ""
+"The Installation Wizard has successfully installed ${PRODUCT_FULLNAME} on "
+"your computer."
+msgstr ""
+"L'assistent d'installacion a acabat l'installacion de ${PRODUCT_FULLNAME} "
+"sus vòstre ordenador amb succès."
+
+#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ABORT.LngText.text
+msgid ""
+"The Installation Wizard was aborted. ${PRODUCT_NAME} is not installed on "
+"your computer."
+msgstr ""
+"L'assistent d'installacion s'es interromput. ${PRODUCT_NAME} es pas "
+"installat sus vòstre ordenador."
+
+#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ERROR.LngText.text
+msgid ""
+"An error has occurred. Thus the Installation Wizard could not install "
+"${PRODUCT_NAME} on your computer successfully. Click 'Details...' for more "
+"information."
+msgstr ""
+"I a agut una error. L'Assistent d'installacion a pas capitat l'installacion "
+"de ${PRODUCT_NAME} sus vòstre ordenador. Clicatz sus 'Detalhs...' per mai "
+"d'informacions."
+
+#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED3.LngText.text
+msgid "Click 'Finish' to exit the Wizard."
+msgstr "Clicatz sus 'Acabar' per quitar l'assistent."
+
+#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED_BUTTON.LngText.text
+msgid "Details..."
+msgstr "Detalhs..."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE2.LngText.text
+msgid ""
+"The ${PRODUCT_FULLNAME} Uninstallation Wizard will remove "
+"${PRODUCT_FULLNAME} from your computer."
+msgstr ""
+"L'assistent de desinstallacion ${PRODUCT_FULLNAME} va suprimir "
+"${PRODUCT_FULLNAME} de vòstre ordenador."
+
+#: setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_ROOT.LngText.text
+msgid ""
+"Sorry, wrong privileges. Installation was done with User privilges, but you "
+"have Root privileges."
+msgstr ""
+"Privilègis incorrèctes. L'installacion es estada facha amb los privilègis "
+"utilizaires çaquelà avètz los privilègis root."
+
+#: setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_USER.LngText.text
+msgid ""
+"Sorry, wrong privileges. Installation was done with Root privilges, but you "
+"have User privileges."
+msgstr ""
+"Privilègis incorrèctes. L'installacion es estada facha amb los privilègis "
+"utilizaires çaquelà avètz los privilègis d'utilizaire."
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE1.LngText.text
+msgid "Select the Type of Uninstallation"
+msgstr "Seleccionatz lo tipe de desinstallacion"
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE2.LngText.text
+msgid "Select the type of uninstallation that best suits your needs:"
+msgstr "Seleccionatz lo tipe de desinstallacion desirada:"
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE3.LngText.text
+msgid "Partial"
+msgstr "Parciala"
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE4.LngText.text
+msgid ""
+"Completely removes ${PRODUCT_FULLNAME} and all its components from your "
+"system."
+msgstr ""
+"Suprimís completament ${PRODUCT_FULLNAME} e totes sos compausants de vòstre "
+"sistèma."
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE5.LngText.text
+msgid "You choose the program features you want to remove."
+msgstr "Causissètz las foncionalitats del programa de suprimir."
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE6.LngText.text
+msgid "Complete"
+msgstr "Completa"
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS2.LngText.text
+msgid ""
+"Components marked with an X will be removed. Mark the components you want to "
+"remove."
+msgstr ""
+"Los compausants marcats d'un X seràn suprimits. Marcatz los compausants de "
+"suprimir."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT1.LngText.text
+msgid "Ready to Remove"
+msgstr "Prèst per la supression"
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT2.LngText.text
+msgid "The following ${PRODUCT_FULLNAME} components will be removed: "
+msgstr "Los compausants seguents de ${PRODUCT_FULLNAME} van èsser suprimits: "
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONONGOING1.LngText.text
+msgid "Uninstalling..."
+msgstr "Desinstallacion..."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1.LngText.text
+msgid "Uninstallation Completed"
+msgstr "Desinstallacion acabada"
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1_ABORT.LngText.text
+msgid "Uninstallation Aborted"
+msgstr "Desinstallacion interrompuda"
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1_ERROR.LngText.text
+msgid "Uninstallation Failed"
+msgstr "La desinstallacion a fracassat"
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2.LngText.text
+msgid ""
+"The Uninstallation Wizard has successfully removed ${PRODUCT_FULLNAME} from "
+"your computer."
+msgstr ""
+"L'assistent de desinstallacion a désinstallat ${PRODUCT_FULLNAME} amb succès "
+"de vòstre ordenador."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_PARTIAL.LngText.text
+msgid ""
+"The Uninstallation Wizard has successfully removed the selected components "
+"of ${PRODUCT_NAME} from your computer."
+msgstr ""
+"L'assistent de desinstallacion a suprimit amb succès los compausants "
+"seleccionats de ${PRODUCT_NAME} de vòstre ordenador."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ABORT.LngText.text
+msgid ""
+"The Uninstallation Wizard was aborted before completely removing "
+"${PRODUCT_NAME} from your computer."
+msgstr ""
+"L'assistent de desinstallacion es estat arrestat abans d'aver completament "
+"suprimit ${PRODUCT_NAME} de vòstre ordenador."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ERROR.LngText.text
+msgid ""
+"An error has occurred. Thus the Uninstallation Wizard could not remove "
+"${PRODUCT_NAME} from your computer successfully. Click 'Details...' for more "
+"information."
+msgstr ""
+"Una error s'es producha. L'assistent de desinstallacion a pas pogut suprimir "
+"${PRODUCT_NAME} de vòstre ordenador. Clicatz sus 'Detalhs...' per mai "
+"d'entresenhas."
+
+#: setupstrings.ulf#STRING_INSTALLERFACTORY_OS_NOT_SUPPORTED.LngText.text
+msgid "Sorry, this Operating System is not supported yet."
+msgstr "Aqueste sistèma d'espleitacion es actualament pas suportat."
+
+#: setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_FOUND.LngText.text
+msgid "An older version of ${PRODUCT_NAME} was found on your system in:"
+msgstr ""
+"Una version mai anciana de ${PRODUCT_NAME} es estada trobada sus vòstre "
+"sistèma, dins:"
+
+#: setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_REMOVE.LngText.text
+msgid ""
+"You have to remove the older version of ${PRODUCT_NAME} before you can "
+"install the newer one."
+msgstr ""
+"D'en primièr, vos cal suprimir la version mai anciana de ${PRODUCT_NAME} "
+"abans de poder installar una version mai recenta."
+
+#: setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_FOUND.LngText.text
+msgid "A newer version of ${PRODUCT_NAME} was found on your system in:"
+msgstr ""
+"Una version mai recenta de ${PRODUCT_NAME} es estada trobada sus vòstre "
+"sistèma, dins:"
+
+#: setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_REMOVE.LngText.text
+msgid ""
+"You have to remove the newer version of ${PRODUCT_NAME} before you can "
+"install the older one."
+msgstr ""
+"D'en primièr, vos cal suprimir la version mai recenta de ${PRODUCT_NAME} "
+"abans de poder installar una version mai anciana."
+
+#: setupstrings.ulf#STRING_NEWER_VERSION_DATABASE.LngText.text
+msgid "Database"
+msgstr "Banca de donadas"
+
+#: setupstrings.ulf#STRING_NEWER_VERSION_TIP.LngText.text
+msgid "Please choose another installation directory."
+msgstr "Causissètz un autre repertòri d'installacion."
+
+#: setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_1.LngText.text
+msgid "The user you are logged in as cannot run the Installation Wizard."
+msgstr ""
+"Lo perfil d'utilizaire amb qual sètz connectat pòt pas executar l'assistent "
+"d'installacion."
+
+#: setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_2.LngText.text
+msgid ""
+"Please log out and log back in as a user with system administrator rights."
+msgstr ""
+"Vos cal vos desconnectar e vos tornar connectar en tant qu'utilizaire qu'aja "
+"los dreches d'aministrator."
+
+#: setupstrings.ulf#STRING_DISCSPACE_INSUFFICIENT.LngText.text
+msgid "Not enough discspace available for installation."
+msgstr "Espaci de disc insufisent per l'installacion."
+
+#: setupstrings.ulf#STRING_DISCSPACE_REQUIRED.LngText.text
+msgid "Required disc space"
+msgstr "Espaci de disc necessari"
+
+#: setupstrings.ulf#STRING_DISCSPACE_AVAILABLE.LngText.text
+msgid "Available disc space"
+msgstr "Espaci de disc disponible"
+
+#: setupstrings.ulf#STRING_DISCSPACE_TIP.LngText.text
+msgid ""
+"Please use another directory for installation or change your module "
+"selection."
+msgstr ""
+"Utilizatz un autre repertòri per l'installacion o modificatz la seleccion "
+"del modul."
+
+#: setupstrings.ulf#STRING_ANALYZING_DATABASE1.LngText.text
+msgid "Analyzing ..."
+msgstr "Analisi ..."
+
+#: setupstrings.ulf#STRING_ANALYZING_DATABASE2.LngText.text
+msgid ""
+"Analyzing database\n"
+"Please wait a moment ..."
+msgstr ""
+"Analisi de la banca de donadas\n"
+"pacientatz ..."
+
+#: setupstrings.ulf#STRING_PROLOGUE_1.LngText.text
+msgid ""
+"Welcome to the Installation Wizard.<p>This wizard asks you to supply "
+"configuration settings.<p>At the bottom of each page are navigation buttons "
+"that let you move through the Installation Wizard:"
+msgstr ""
+"Benvenguda dins l'assistent d'installacion.<p>Aqueste assistent vos demanda "
+"de provesir vòstres paramètres de configuracion.<p>En bas de cada pagina, de "
+"botons de navigacion vos permeton de vos desplaçar dins l'assistent "
+"d'installacion :"
+
+#: setupstrings.ulf#STRING_PROLOGUE_2.LngText.text
+msgctxt "setupstrings.ulf#STRING_PROLOGUE_2.LngText.text"
+msgid "'Back' returns you to the previous page."
+msgstr "'Precedent' vos tòrna menar a la pagina precedenta."
+
+#: setupstrings.ulf#STRING_PROLOGUE_3.LngText.text
+msgctxt "setupstrings.ulf#STRING_PROLOGUE_3.LngText.text"
+msgid "'Next' takes you to the next page. "
+msgstr "'Seguent' vos mèna a la pagina seguenta. "
+
+#: setupstrings.ulf#STRING_PROLOGUE_4.LngText.text
+msgid "'Cancel' ends the Installation Wizard without installing this software."
+msgstr ""
+"'Anullar' met fin a l'assistent d'installacion sens installar aqueste "
+"logicial."
+
+#: setupstrings.ulf#STRING_PROLOGUE_5.LngText.text
+msgctxt "setupstrings.ulf#STRING_PROLOGUE_5.LngText.text"
+msgid ""
+"'Help' displays the Help with further information about the page currently "
+"displayed."
+msgstr ""
+"'Ajuda' aficha l'ajuda e mai d'entresenhas complementàrias sus la pagina "
+"afichada actualament."
+
+#: setupstrings.ulf#STRING_PROLOGUE_6.LngText.text
+msgid "'OK' exits the Help page and returns you to the Installation Wizard."
+msgstr ""
+"'ÒC' tampa la pagina d'ajuda e vos tòrna menar a l'assistent d'installacion."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_1.LngText.text
+msgid ""
+"Welcome to the Uninstallation Wizard.<p>This wizard asks you to supply "
+"configuration settings.<p>At the bottom of each page are navigation buttons "
+"that let you move through the Uninstallation Wizard:"
+msgstr ""
+"Benvenguda dins l'assistent de desinstallacion.<p>Aqueste assistent vos "
+"demanda de provesir vòstres paramètres de configuracion.<p>En bas de cada "
+"pagina, de botons de navigacion vos permeton de navigar dins l'assistent de "
+"desinstallacion :"
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_2.LngText.text
+msgctxt "setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_2.LngText.text"
+msgid "'Back' returns you to the previous page."
+msgstr "'Precedent' vos tòrna menar a la pagina precedenta."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_3.LngText.text
+msgctxt "setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_3.LngText.text"
+msgid "'Next' takes you to the next page. "
+msgstr "'Seguent' vos mèna a la pagina seguenta. "
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_4.LngText.text
+msgid "'Cancel' ends the Uninstallation Wizard without removing this software."
+msgstr ""
+"'Anullar' met fin a l'assistent de desinstallacion sens suprimir lo "
+"logicial."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_5.LngText.text
+msgctxt "setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_5.LngText.text"
+msgid ""
+"'Help' displays the Help with further information about the page currently "
+"displayed."
+msgstr ""
+"'Ajuda' aficha l'ajuda e mai d'entresenhas complementàrias sus la pagina "
+"actualament afichada."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_6.LngText.text
+msgid "'OK' exits the Help page and returns you to the Uninstallation Wizard."
+msgstr "'ÒC' tampa la pagina d'ajuda e tòrna a l'assistent de desinstallacion."
+
+#: setupstrings.ulf#STRING_ACCEPTLICENSE_1.LngText.text
+msgid ""
+"Before you install this product, you must read and accept the entire "
+"Software License Agreement under which this software is licensed for your "
+"use."
+msgstr ""
+"Abans d'installar aqueste produch, vos cal legir e acceptar entièrament lo "
+"contracte de licéncia del logicial que vos permet d'utilizar aqueste "
+"logicial."
+
+#: setupstrings.ulf#STRING_ACCEPTLICENSE_2.LngText.text
+msgctxt "setupstrings.ulf#STRING_ACCEPTLICENSE_2.LngText.text"
+msgid ""
+"If you have read and accept all the terms of the entire Software License "
+"Agreement, click 'Accept License' to continue with the installation."
+msgstr ""
+"S'avètz legit e acceptat entièrament totes los tèrmes del contracte de "
+"licéncia del logicial, clicatz sus 'Acceptar la licéncia' per contunhar "
+"l'installacion."
+
+#: setupstrings.ulf#STRING_ACCEPTLICENSE_3.LngText.text
+msgid ""
+"If you do not accept all the terms of the Software License Agreement, click "
+"'Decline' to end the Installation Wizard without installing this product."
+msgstr ""
+"S'acceptatz pas totes los tèrmes del contracte de licéncia del logicial, "
+"clicatz sus 'Refusar' per metre fin a l'assistent d'installacion sens "
+"installar aqueste produch."
+
+#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE_1.LngText.text
+msgid ""
+"Select the type of product installation to perform from the following "
+"choices. This will determine how much information you need to provide for "
+"product configuration."
+msgstr ""
+"Seleccionatz lo tipe d'installacion a partir de las causidas seguentas. Aquò "
+"determinarà las entresenhas necessàrias de provesir per la configuracion "
+"del produch."
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY_1.LngText.text
+msgid ""
+"It is recommended that you install this product in the directory suggested "
+"by this Installation Wizard. <p>To choose a different location, click "
+"'Browse...' or specify the full path of the directory to use in the text box "
+"below. <p>If this product is already installed, you cannot change the "
+"destination directory."
+msgstr ""
+"Es recomandat d'installar lo produch dins lo repertòri suggerit per aqueste "
+"assistent d'installacion. <p>Per causir un emplaçament diferent, clicatz sus "
+"'Percórrer...' o especificatz lo camin complet del repertòri d'utilizar "
+"dins l'airal de tèxte çaijós. <p>S'aqueste produch ja es installat, podètz "
+"pas modificar lo repertòri de destinacion."
+
+#: setupstrings.ulf#STRING_CHOOSECOMPONENTS_1.LngText.text
+msgid ""
+"Components marked in color will be installed. Click the icon of a component "
+"to mark or unmark the component.<p>All already installed components cannot "
+"be selected for installation."
+msgstr ""
+"Los compausants marcats en color van èsser installats. Clicatz sus l'icòna "
+"d'un compausant per lo marcar o lo desmarcar.<p>Totes los compausants ja "
+"installats pòdon pas èsser seleccionats per l'installacion."
+
+#: setupstrings.ulf#STRING_INSTALLATIONIMMINENT_1.LngText.text
+msgid ""
+"The listed components are ready for installation based on your configuration "
+"settings. <p>If you are satisfied with your selection, click 'Install Now' "
+"to begin. <p>To check or modify your settings on the previous pages, click "
+"'Back'."
+msgstr ""
+"Los compausants listats son prèstes per èsser installats en foncion dels "
+"paramètres de configuracion provesits. <p>Se sètz segur de vòstra seleccion, "
+"clicatz sus 'Installar ara'. <p>Per verificar o modificar los paramètres de "
+"las paginas precedentas, clicatz sus 'Precedent'."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT_1.LngText.text
+msgid ""
+"The listed components are ready for uninstallation based on your "
+"configuration settings. <p>If you are satisfied with your selection, click "
+"'Remove Now' to begin. <p>To check or modify your settings on the previous "
+"pages, click 'Back'."
+msgstr ""
+"Los compausants listats son prèstes per la desinstallacion en foncion dels "
+"paramètres de configuracion provesits. <p>S'aquesta seleccion vos conven, "
+"clicatz sus 'Suprimir ara' per començar. <p>Per verificar o modificar los "
+"paramètres de las paginas precedentas, clicatz sus 'Precedent'."
+
+#: setupstrings.ulf#STRING_INSTALLATIONONGOING_1.LngText.text
+msgid ""
+"This page indicates the progress of the installation with the aid of a "
+"progress bar. To abort the installation process, click 'Stop'."
+msgstr ""
+"Aquesta pagina indica la progression de l'installacion amb l'ajuda d'una "
+"barra de progression. Per interrompre l'installacion, clicatz sus "
+"'Arrestar'."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONONGOING_1.LngText.text
+msgid ""
+"This page indicates the progress of the uninstallation with the aid of a "
+"progress bar. To abort the uninstallation, click 'Stop'."
+msgstr ""
+"Aquesta pagina indica la progression de la desinstallacion amb l'ajuda d'une "
+"barra de progression. Per quitar la desinstallacion, clicatz sus "
+"'Arrestar'."
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE_1.LngText.text
+msgid ""
+"Complete: This will remove all installed components of your "
+"version.<p>Partial: This removes only the components you will choose out of "
+"the components list."
+msgstr ""
+"Completa : Aquò suprimirà totes los compausants installats de vòstra "
+"version.<p>Parciala : Aquò suprimirà unicament los compausants que causiretz "
+"dins la tièra."
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS_1.LngText.text
+msgid ""
+"Components marked with an X will be removed. Click next to a component to "
+"mark or unmark it with an X."
+msgstr ""
+"Los compausants marcats d'un X seràn suprimits. Clicatz al costat d'un "
+"compausant per lo marcar o pas d'un X."
+
+#: setupstrings.ulf#STRING_PACKAGEFORMAT_NOT_SUPPORTED.LngText.text
+msgid ""
+"This package format is currently not supported for your operating system!"
+msgstr ""
+"Aqueste format de paquet es actualament pas suportat per vòstre sistèma "
+"d'espleitacion!"
+
+#: setupstrings.ulf#STRING_OPERATING_SYSTEM.LngText.text
+msgid "Operating system"
+msgstr "Sistèma d'espleitacion"
+
+#: setupstrings.ulf#STRING_PACKAGEFORMAT.LngText.text
+msgid "Package format"
+msgstr "Format del paquet"
+
+#: setupstrings.ulf#STRING_NOTHING_TO_INSTALL.LngText.text
+msgid "Nothing to install"
+msgstr "Pas res d'installar"
+
+#: setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_1.LngText.text
+msgid "No components have been selected for installation."
+msgstr "Cap de compausant es pas estat seleccionat per l'installacion."
+
+#: setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_2.LngText.text
+msgid ""
+"Click 'OK' to select one or more components for installation or to exit the "
+"Installation Wizard."
+msgstr ""
+"Clicatz sus 'ÒC' per seleccionar una o maites compausants d'installar o per "
+"quitar l'assistent d'installacion."
+
+#: setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_1.LngText.text
+msgid "No languages have been selected for installation."
+msgstr "Cap de lenga es pas estada seleccionada per l'installacion."
+
+#: setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_2.LngText.text
+msgid ""
+"Click 'OK' to select one or more languages for installation or to exit the "
+"Installation Wizard."
+msgstr ""
+"Clicatz sus 'ÒC' per seleccionar una o maitas lengas d'installar o per "
+"quitar l'assistent d'installacion."
+
+#: setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_1.LngText.text
+msgid "No applications have been selected for installation."
+msgstr "Cap d'aplicacion es pas estada seleccionada per l'installacion."
+
+#: setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_2.LngText.text
+msgid ""
+"Click 'OK' to select one or more application for installation or to exit the "
+"Installation Wizard."
+msgstr ""
+"Clicatz sus 'ÒC' per seleccionar una o maitas aplicacions d'installar o per "
+"quitar l'assistent d'installacion."
+
+#: setupstrings.ulf#STRING_NOTHING_TO_UNINSTALL.LngText.text
+msgid "Nothing to uninstall"
+msgstr "Pas res de desinstallar"
+
+#: setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_1.LngText.text
+msgid "No components have been selected for uninstallation."
+msgstr "Cap de compausant es pas estat seleccionat per la desinstallacion."
+
+#: setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_2.LngText.text
+msgid ""
+"Click 'OK' to select one or more components for uninstallation or to exit "
+"the Uninstallation Wizard."
+msgstr ""
+"Clicatz sus 'ÒC' per seleccionar una o maites compausants d'installar o per "
+"quitar l'assistent de desinstallacion."
+
+#: setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_1.LngText.text
+msgid "All language components have been selected for uninstallation."
+msgstr ""
+"Totes los compausants de lenga son estats seleccionats per la "
+"desinstallacion."
+
+#: setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_2.LngText.text
+msgid ""
+"Click 'OK' to select one or more language components not for uninstallation "
+"or to exit the Uninstallation Wizard."
+msgstr ""
+"Clicatz sus 'OK' per seleccionar un o mantun compausant de lenga de "
+"desinstallar pas o per quitar l'assistent de desinstallacion."
+
+#: setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_1.LngText.text
+msgid "All application components have been selected for uninstallation."
+msgstr ""
+"Totes los compausants de l'aplicacion son estats seleccionats per la "
+"desinstallacion."
+
+#: setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_2.LngText.text
+msgid ""
+"Click 'OK' to select one or more application components not for "
+"uninstallation or to exit the Uninstallation Wizard."
+msgstr ""
+"Clicatz sus 'OK' per seleccionar un o mantun compausant de desinstallar pas "
+"o per quitar l'assistent de desinstallacion."
+
+#: setupstrings.ulf#STRING_CHANGE_SELECTION.LngText.text
+msgid "Please change selection"
+msgstr "Modificatz la seleccion"

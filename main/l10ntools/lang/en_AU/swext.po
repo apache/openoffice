@@ -1,0 +1,1037 @@
+"X-Accelerator-Marker: ~\n"
+
+#: wiki.xhp#tit.help.text
+#, fuzzy
+msgctxt "wiki.xhp#tit.help.text"
+msgid "@WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@"
+
+#: wiki.xhp#bm_id3154408.help.text
+#, fuzzy
+msgid ""
+"<bookmark_value>Wiki;@WIKIEXTENSIONPRODUCTNAME@</"
+"bookmark_value><bookmark_value>@WIKIEXTENSIONPRODUCTNAME@</"
+"bookmark_value><bookmark_value>extensions;MediaWiki</bookmark_value>"
+msgstr ""
+"<bookmark_value>Wiki;@WIKIEXTENSIONPRODUCTNAME@</"
+"bookmark_value><bookmark_value>@WIKIEXTENSIONPRODUCTNAME@</"
+"bookmark_value><bookmark_value>extensions;MediaWiki</bookmark_value>"
+
+#: wiki.xhp#hd_id5993530.help.text
+#, fuzzy
+msgctxt "wiki.xhp#hd_id5993530.help.text"
+msgid "@WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@"
+
+#: wiki.xhp#par_id9647511.help.text
+#, fuzzy
+msgid ""
+"<ahelp hid=\".\">By using the @WIKIEXTENSIONPRODUCTNAME@ you can upload your "
+"current Writer text document to a MediaWiki server. After uploading, all "
+"Wiki users can read your document on the Wiki.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">By using the @WIKIEXTENSIONPRODUCTNAME@ you can upload your "
+"current Writer text document to a MediaWiki server. After uploading, all "
+"Wiki users can read your document on the Wiki.</ahelp>"
+
+#: wiki.xhp#par_id6468703.help.text
+#, fuzzy
+msgid ""
+"<ahelp hid=\".\">Choose <item type=\"menuitem\">File - Send - To MediaWiki</"
+"item> to upload the current Writer document to a MediaWiki server.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">Choose <item type=\"menuitem\">File - Send - To MediaWiki</"
+"item> to upload the current Writer document to a MediaWiki server.</ahelp>"
+
+#: wiki.xhp#hd_id4554582.help.text
+#, fuzzy
+msgid "System Requirements"
+msgstr "System Requirements"
+
+#: wiki.xhp#par_id2597430.help.text
+#, fuzzy
+msgid "StarOffice/StarSuite 9"
+msgstr "StarOffice/StarSuite 9"
+
+#: wiki.xhp#par_id8430738.help.text
+#, fuzzy
+msgid "OpenOffice.org 3.0"
+msgstr "OpenOffice.org 3.0"
+
+#: wiki.xhp#par_id9340495.help.text
+#, fuzzy
+msgid "Java Runtime Environment 1.4"
+msgstr "Java Runtime Environment 1.4"
+
+#: wiki.xhp#par_id7387615.help.text
+#, fuzzy
+msgid ""
+"A Wiki account on a supported <link href=\"http://www.mediawiki.org/wiki/"
+"MediaWiki\">MediaWiki</link> server"
+msgstr ""
+"A Wiki account on a supported <link href=\"http://www.mediawiki.org/wiki/"
+"MediaWiki\">MediaWiki</link> server"
+
+#: wiki.xhp#hd_id8047120.help.text
+#, fuzzy
+msgid "Installing @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "Installing @WIKIEXTENSIONPRODUCTNAME@"
+
+#: wiki.xhp#par_id4277169.help.text
+#, fuzzy
+msgid ""
+"Before you install the @WIKIEXTENSIONPRODUCTNAME@, ensure that %PRODUCTNAME "
+"uses a Java Runtime Environment (JRE). To check the status of the JRE, "
+"choose <item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Java</item>. "
+"Ensure that \"Use a Java runtime environment\" is marked and that a Java "
+"runtime folder is selected in the big listbox. If no JRE was activated, then "
+"activate a JRE 1.4 or later and restart %PRODUCTNAME."
+msgstr ""
+"Before you install the @WIKIEXTENSIONPRODUCTNAME@, ensure that %PRODUCTNAME "
+"uses a Java Runtime Environment (JRE). To check the status of the JRE, "
+"choose <item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Java</item>. "
+"Ensure that \"Use a Java runtime environment\" is marked and that a Java "
+"runtime folder is selected in the big list box. If no JRE was activated, "
+"then activate a JRE 1.4 or later and restart %PRODUCTNAME."
+
+#: wiki.xhp#hd_id567339.help.text
+#, fuzzy
+msgid "To Install the @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "To Install the @WIKIEXTENSIONPRODUCTNAME@"
+
+#: wiki.xhp#par_id1732230.help.text
+#, fuzzy
+msgctxt "wiki.xhp#par_id1732230.help.text"
+msgid ""
+"In a Writer window, choose <item type=\"menuitem\">Tools - Extension "
+"Manager</item>."
+msgstr ""
+"In a Writer window, choose <item type=\"menuitem\">Tools - Extension "
+"Manager</item>."
+
+#: wiki.xhp#par_id4338511.help.text
+#, fuzzy
+msgid "In the Extension Manager dialog, click Add."
+msgstr "In the Extension Manager dialogue box, click Add."
+
+#: wiki.xhp#par_id5882442.help.text
+#, fuzzy
+msgid ""
+"Locate the @WIKIEXTENSIONFILENAME@.oxt file, click Open, and then click "
+"Close. "
+msgstr ""
+"Locate the @WIKIEXTENSIONFILENAME@.oxt file, click Open and then click "
+"Close. "
+
+#: wiki.xhp#par_id4008911.help.text
+#, fuzzy
+msgid "Close %PRODUCTNAME, and close also the Quickstarter if enabled."
+msgstr "Close %PRODUCTNAME, and also close the Quickstarter if enabled."
+
+#: wiki.xhp#par_id265511.help.text
+#, fuzzy
+msgid ""
+"Restart the software, open a text document, then choose <item type=\"menuitem"
+"\">Tools - Options - Internet - MediaWiki</item> to enter your Wiki "
+"settings. See \"To Connect To a Wiki\" below."
+msgstr ""
+"Restart the software, open a text document, then choose <item type=\"menuitem"
+"\">Tools - Options - Internet - MediaWiki</item> to enter your Wiki "
+"settings. See \"To Connect To a Wiki\" below."
+
+#: wiki.xhp#hd_id3569444.help.text
+#, fuzzy
+msgid "To Remove the @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "To Remove the @WIKIEXTENSIONPRODUCTNAME@"
+
+#: wiki.xhp#par_id2655110.help.text
+#, fuzzy
+msgctxt "wiki.xhp#par_id2655110.help.text"
+msgid ""
+"In a Writer window, choose <item type=\"menuitem\">Tools - Extension "
+"Manager</item>."
+msgstr ""
+"In a Writer window, choose <item type=\"menuitem\">Tools - Extension "
+"Manager</item>."
+
+#: wiki.xhp#par_id9504379.help.text
+#, fuzzy
+msgid "Click the plus sign (+) in front of My Extensions."
+msgstr "Click the plus sign (+) in front of My Extensions."
+
+#: wiki.xhp#par_id8431348.help.text
+#, fuzzy
+msgid "Select the extension, click Remove, and then click Close."
+msgstr "Select the extension, click Remove and then click Close."
+
+#: wiki.xhp#hd_id5316019.help.text
+#, fuzzy
+msgid "To Connect to a Wiki"
+msgstr "To Connect to a Wiki"
+
+#: wiki.xhp#par_id2381969.help.text
+#, fuzzy
+msgid ""
+"Note: You can store your user name and password for all respective dialogs "
+"inside %PRODUCTNAME. The password will be stored in a secure way, where "
+"access is maintained by a master password. To enable the master password, "
+"choose <item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Security</"
+"item>."
+msgstr ""
+"Note: You can store your user name and password for all respective dialogue "
+"boxes inside %PRODUCTNAME. The password will be stored in a secure way, "
+"where access is maintained by a master password. To enable the master "
+"password, choose <item type=\"menuitem\">Tools - Options - %PRODUCTNAME - "
+"Security</item>."
+
+#: wiki.xhp#par_id3751640.help.text
+#, fuzzy
+msgid ""
+"Note: If you connect to the web using a proxy server, enter the proxy "
+"information to <item type=\"menuitem\">Tools - Options - Internet - Proxy</"
+"item>, and restart the software."
+msgstr ""
+"Note: If you connect to the web using a proxy server, enter the proxy "
+"information to <item type=\"menuitem\">Tools - Options - Internet - Proxy</"
+"item> and restart the software."
+
+#: wiki.xhp#par_id9533677.help.text
+#, fuzzy
+msgid ""
+"Open a Writer document, and choose <item type=\"menuitem\">Tools - Options - "
+"Internet - MediaWiki</item>."
+msgstr ""
+"Open a Writer document and choose <item type=\"menuitem\">Tools - Options - "
+"Internet - MediaWiki</item>."
+
+#: wiki.xhp#par_id368968.help.text
+#, fuzzy
+msgid ""
+"In the <link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\">Options</link> "
+"dialog, click Add."
+msgstr ""
+"In the <link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\">Options</link> "
+"dialogue box, click Add."
+
+#: wiki.xhp#par_id6962187.help.text
+#, fuzzy
+msgid ""
+"In the <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> "
+"dialog, enter the account information for the Wiki."
+msgstr ""
+"In the <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> "
+"dialogue box, enter the account information for the Wiki."
+
+#: wiki.xhp#par_id5328836.help.text
+#, fuzzy
+msgid ""
+"In the URL textbox, enter the address of a Wiki that you want to connect to."
+msgstr ""
+"In the URL text box, enter the address of a Wiki to which you want to "
+"connect."
+
+#: wiki.xhp#par_id389416.help.text
+#, fuzzy
+msgid "You can copy the URL from a web browser and paste it into the textbox."
+msgstr ""
+"You can copy the URL from a web browser and paste it into the text box."
+
+#: wiki.xhp#par_id5906552.help.text
+#, fuzzy
+msgid "In the Username box, enter your user ID for your Wiki account."
+msgstr "In the Username box, enter your user ID for your Wiki account."
+
+#: wiki.xhp#par_id9297158.help.text
+#, fuzzy
+msgid ""
+"If the Wiki allows anonymous write access, you can leave the Username and "
+"Password boxes empty."
+msgstr ""
+"If the Wiki allows anonymous write access, you can leave the Username and "
+"Password boxes empty."
+
+#: wiki.xhp#par_id8869594.help.text
+#, fuzzy
+msgid ""
+"In the Password box, enter the password for your Wiki account, then click OK."
+msgstr ""
+"In the Password box, enter the password for your Wiki account, then click OK."
+
+#: wiki.xhp#par_id292062.help.text
+#, fuzzy
+msgid ""
+"Optionally enable \"Save password\" to save the password between sessions. A "
+"master password is used to maintain access to all saved passwords. Choose "
+"<item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Security</item> to "
+"enable the master password. \"Save password\" is unavailable when the master "
+"password is not enabled."
+msgstr ""
+"Optionally enable \"Save password\" to save the password between sessions. A "
+"master password is used to maintain access to all saved passwords. Choose "
+"<item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Security</item> to "
+"enable the master password. \"Save password\" is unavailable when the master "
+"password is not enabled."
+
+#: wiki.xhp#hd_id7044892.help.text
+#, fuzzy
+msgid "To Create a New Wiki Page"
+msgstr "To Create a New Wiki Page"
+
+#: wiki.xhp#par_id3514206.help.text
+#, fuzzy
+msgid "Open a Writer document."
+msgstr "Open a Writer document."
+
+#: wiki.xhp#par_id944853.help.text
+#, fuzzy
+msgid ""
+"Write the content of the Wiki page. You can use formatting like text "
+"formats, headings, footnotes, and more. See the <link href="
+"\"@WIKIEXTENSIONID@/wikiformats.xhp\">list of supported formats</link>."
+msgstr ""
+"Write the content of the Wiki page. You can use formatting like text "
+"formats, headings, footnotes and more. See the <link href="
+"\"@WIKIEXTENSIONID@/wikiformats.xhp\">list of supported formats</link>."
+
+#: wiki.xhp#par_id4566484.help.text
+#, fuzzy
+msgid "Choose <item type=\"menuitem\">File - Send - To MediaWiki</item>."
+msgstr "Choose <item type=\"menuitem\">File - Send - To MediaWiki</item>."
+
+#: wiki.xhp#par_id228278.help.text
+#, fuzzy
+msgid ""
+"In the <link href=\"@WIKIEXTENSIONID@/wikisend.xhp\">Send to MediaWiki</"
+"link> dialog, specify the settings for your entry."
+msgstr ""
+"In the <link href=\"@WIKIEXTENSIONID@/wikisend.xhp\">Send to MediaWiki</"
+"link> dialogue box, specify the settings for your entry."
+
+#: wiki.xhp#par_id2564165.help.text
+#, fuzzy
+msgid "<emph>MediaWiki server</emph>: Select the Wiki."
+msgstr "<emph>MediaWiki server</emph>: Select the Wiki."
+
+#: wiki.xhp#par_id5566576.help.text
+#, fuzzy
+msgid ""
+"<emph>Title</emph>: Type the title of your page. Type the title of an "
+"existing page to overwrite the page with your current text document. Type a "
+"new title to create a new page on the Wiki."
+msgstr ""
+"<emph>Title</emph>: Type the title of your page. Type the title of an "
+"existing page to overwrite the page with your current text document. Type a "
+"new title to create a new page on the Wiki."
+
+#: wiki.xhp#par_id9688711.help.text
+#, fuzzy
+msgid "<emph>Summary</emph>: Enter an optional short summary of your page."
+msgstr "<emph>Summary</emph>: Enter an optional short summary of your page."
+
+#: wiki.xhp#par_id4123661.help.text
+#, fuzzy
+msgid ""
+"<emph>This is a minor edit</emph>: Check this box to mark the uploaded page "
+"as a minor edit of the already existing page with the same title."
+msgstr ""
+"<emph>This is a minor edit</emph>: Check this box to mark the uploaded page "
+"as a minor edit of the already existing page with the same title."
+
+#: wiki.xhp#par_id452284.help.text
+#, fuzzy
+msgid ""
+"<emph>Show in web browser</emph>: Check this box to open your system web "
+"browser and show the uploaded Wiki page."
+msgstr ""
+"<emph>Show in web browser</emph>: Check this box to open your system web "
+"browser and show the uploaded Wiki page."
+
+#: wiki.xhp#par_id8346812.help.text
+#, fuzzy
+msgid "Click Send."
+msgstr "Click Send."
+
+#: wikiaccount.xhp#tit.help.text
+#, fuzzy
+msgctxt "wikiaccount.xhp#tit.help.text"
+msgid "MediaWiki"
+msgstr "MediaWiki"
+
+#: wikiaccount.xhp#hd_id960722.help.text
+#, fuzzy
+msgctxt "wikiaccount.xhp#hd_id960722.help.text"
+msgid "MediaWiki"
+msgstr "MediaWiki"
+
+#: wikiaccount.xhp#par_id4571672.help.text
+#, fuzzy
+msgid ""
+"Use the MediaWiki dialog to add or edit your MediaWiki account settings."
+msgstr ""
+"Use the MediaWiki dialogue box to add or edit your MediaWiki account "
+"settings."
+
+#: wikiaccount.xhp#par_id7631458.help.text
+#, fuzzy
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Enter the URL of a MediaWiki server, "
+"starting with http://</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">Enter the URL of a MediaWiki server, "
+"starting with http://</ahelp>"
+
+#: wikiaccount.xhp#par_id7862483.help.text
+#, fuzzy
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Enter your user name on the MediaWiki "
+"server. Leave empty for anonymous access.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">Enter your user name on the MediaWiki "
+"server. Leave empty for anonymous access.</ahelp>"
+
+#: wikiaccount.xhp#par_id1113010.help.text
+#, fuzzy
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Enter your password on the MediaWiki "
+"server. Leave empty for anonymous access.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">Enter your password on the MediaWiki "
+"server. Leave empty for anonymous access.</ahelp>"
+
+#: wikiaccount.xhp#par_id656758.help.text
+#, fuzzy
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Enable to store your password between "
+"sessions. The master password must be enabled, see <item type=\"menuitem"
+"\">Tools - Options - %PRODUCTNAME - Security</item>.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">Enable to store your password between "
+"sessions. The master password must be enabled, see <item type=\"menuitem"
+"\">Tools - Options - %PRODUCTNAME - Security</item>.</ahelp>"
+
+#: wikiaccount.xhp#par_id3112582.help.text
+#, fuzzy
+msgid ""
+"Enter the Internet address of a Wiki server in a format like http://wiki."
+"services.openoffice.org/wiki or copy the URL from a web browser."
+msgstr ""
+"Enter the Internet address of a Wiki server in a format like http://wiki."
+"services.openoffice.org/wiki or copy the URL from a web browser."
+
+#: wikiaccount.xhp#par_id628070.help.text
+#, fuzzy
+msgid ""
+"If the Wiki allows anonymous access, you can leave the account text boxes "
+"empty. Else enter your user name and password."
+msgstr ""
+"If the Wiki allows anonymous access, you can leave the account text boxes "
+"empty. Otherwise enter your user name and password."
+
+#: wikiaccount.xhp#par_id9046601.help.text
+#, fuzzy
+msgid ""
+"If you have enabled the master password feature on the Security tab page of "
+"the Tools - Options - %PRODUCTNAME dialog, then the software can store your "
+"password and automatically insert the data where necessary. Enable the "
+"\"Save password\" checkbox to store your password."
+msgstr ""
+"If you have enabled the master password feature on the Security tab page of "
+"the Tools - Options - %PRODUCTNAME dialogue box, then the software can store "
+"your password and automatically insert the data where necessary. Mark the "
+"\"Save password\" check box to store your password."
+
+#: wikiformats.xhp#tit.help.text
+#, fuzzy
+msgctxt "wikiformats.xhp#tit.help.text"
+msgid "MediaWiki Formats"
+msgstr "MediaWiki Formats"
+
+#: wikiformats.xhp#hd_id3743095.help.text
+#, fuzzy
+msgctxt "wikiformats.xhp#hd_id3743095.help.text"
+msgid "MediaWiki Formats"
+msgstr "MediaWiki Formats"
+
+#: wikiformats.xhp#par_id8654133.help.text
+#, fuzzy
+msgid ""
+"The following list gives an overview of the text formats that the "
+"@WIKIEXTENSIONPRODUCTNAME@ can upload to the Wiki server."
+msgstr ""
+"The following list gives an overview of the text formats that the "
+"@WIKIEXTENSIONPRODUCTNAME@ can upload to the Wiki server."
+
+#: wikiformats.xhp#par_id5630664.help.text
+#, fuzzy
+msgid ""
+"The OpenDocument format used by Writer and the WikiMedia format are quite "
+"different. Only a subset of all features can be transformed from one format "
+"to the other."
+msgstr ""
+"The OpenDocument format used by Writer and the WikiMedia format are quite "
+"different. Only a subset of all features can be transformed from one format "
+"to the other."
+
+#: wikiformats.xhp#hd_id7178868.help.text
+#, fuzzy
+msgid "Headings"
+msgstr "Headings"
+
+#: wikiformats.xhp#par_id508133.help.text
+#, fuzzy
+msgid ""
+"Apply a heading paragraph style to the headings in your Writer document. The "
+"Wiki will show the heading styles of the same outline level, formatted as "
+"defined by the Wiki engine."
+msgstr ""
+"Apply a heading paragraph style to the headings in your Writer document. The "
+"Wiki will show the heading styles of the same outline level, formatted as "
+"defined by the Wiki engine."
+
+#: wikiformats.xhp#hd_id7217627.help.text
+#, fuzzy
+msgid "Hyperlinks"
+msgstr "Hyperlinks"
+
+#: wikiformats.xhp#par_id3735465.help.text
+#, fuzzy
+msgid ""
+"Native OpenDocument hyperlinks are transformed into \"external\" Wiki links. "
+"Therefore, the built-in linking facility of OpenDocument should only be used "
+"to create links that point to other sites outside the Wiki web. For creating "
+"Wiki links that point to other subjects of the same Wiki domain, use Wiki "
+"links."
+msgstr ""
+"Native OpenDocument hyperlinks are transformed into \"external\" Wiki links. "
+"Therefore, the built-in linking facility of OpenDocument should only be used "
+"to create links that point to other sites outside the Wiki web. For creating "
+"Wiki links that point to other subjects of the same Wiki domain, use Wiki "
+"links."
+
+#: wikiformats.xhp#hd_id941190.help.text
+#, fuzzy
+msgid "Lists"
+msgstr "Lists"
+
+#: wikiformats.xhp#par_id8942838.help.text
+#, fuzzy
+msgid ""
+"Lists can reliably be exported when the whole list uses a consistent list "
+"style. Use the Numbering or Bullets icon to generate a list in Writer. If "
+"you need a list without numbering or bullets, use Format - Bullets and "
+"Numbering to define and apply the respective list style."
+msgstr ""
+"Lists can reliably be exported when the whole list uses a consistent list "
+"style. Use the Numbering or Bullets icon to generate a list in Writer. If "
+"you need a list without numbering or bullets, use Format - Bullets and "
+"Numbering to define and apply the respective list style."
+
+#: wikiformats.xhp#hd_id7026886.help.text
+#, fuzzy
+msgid "Paragraphs"
+msgstr "Paragraphs"
+
+#: wikiformats.xhp#hd_id4436475.help.text
+#, fuzzy
+msgid "Alignment"
+msgstr "Alignment"
+
+#: wikiformats.xhp#par_id376598.help.text
+#, fuzzy
+msgid ""
+"Explicit text alignment should not be used in Wiki articles. Nevertheless, "
+"text alignment is supported for left, centered, and right alignment of text."
+msgstr ""
+"Explicit text alignment should not be used in Wiki articles. Nevertheless, "
+"text alignment is supported for left, centred and right alignment of text."
+
+#: wikiformats.xhp#hd_id7486190.help.text
+#, fuzzy
+msgid "Pre-formatted text"
+msgstr "Pre-formatted text"
+
+#: wikiformats.xhp#par_id1459395.help.text
+#, fuzzy
+msgid ""
+"A paragraph style with a fixed-width font is transformed as pre-formatted "
+"text. Pre-formatted text is shown on the Wiki with a border around the text."
+msgstr ""
+"A paragraph style with a fixed-width font is transformed as pre-formatted "
+"text. Pre-formatted text is shown on the Wiki with a border around the text."
+
+#: wikiformats.xhp#hd_id4834131.help.text
+#, fuzzy
+msgid "Character styles"
+msgstr "Character styles"
+
+#: wikiformats.xhp#par_id6397595.help.text
+#, fuzzy
+msgid ""
+"Character styles modify the appearance of parts of a paragraph. The "
+"transformation supports bold, italics, bold/italics, subscript and "
+"superscript. All fixed width fonts are transformed into the Wiki typewriter "
+"style."
+msgstr ""
+"Character styles modify the appearance of parts of a paragraph. The "
+"transformation supports bold, italics, bold/italics, subscript and "
+"superscript. All fixed width fonts are transformed into the Wiki typewriter "
+"style."
+
+#: wikiformats.xhp#hd_id5152745.help.text
+#, fuzzy
+msgid "Footnotes"
+msgstr "Footnotes"
+
+#: wikiformats.xhp#par_id5238196.help.text
+#, fuzzy
+msgid ""
+"Note: The transformation uses the new style of footnotes with <ref> and "
+"<references> tags that requires the Cite.php extension to be installed into "
+"MediaWiki. If those tags occur as plain text in the transformation result, "
+"ask the Wiki administrator to install this extension."
+msgstr ""
+"Note: The transformation uses the new style of footnotes with <ref> and "
+"<references> tags that requires the Cite.php extension to be installed into "
+"MediaWiki. If those tags occur as plain text in the transformation result, "
+"ask the Wiki administrator to install this extension."
+
+#: wikiformats.xhp#hd_id9405499.help.text
+#, fuzzy
+msgid "Images"
+msgstr "Images"
+
+#: wikiformats.xhp#par_id3541673.help.text
+#, fuzzy
+msgid ""
+"Images cannot be exported by a transformation producing a single file of "
+"Wiki text. However, if the image is already uploaded to the target Wiki "
+"domain (e. g. WikiMedia Commons), then the transformation produces a valid "
+"image tag that includes the image. Image captions are also supported."
+msgstr ""
+"Images cannot be exported by a transformation producing a single file of "
+"Wiki text. However, if the image is already uploaded to the target Wiki "
+"domain (e. g. WikiMedia Commons), then the transformation produces a valid "
+"image tag that includes the image. Image captions are also supported."
+
+#: wikiformats.xhp#hd_id2162236.help.text
+#, fuzzy
+msgid "Tables"
+msgstr "Tables"
+
+#: wikiformats.xhp#par_id3037202.help.text
+#, fuzzy
+msgid ""
+"Simple tables are supported well. Table headers are translated into "
+"corresponding Wiki style table headers. However, custom formatting of table "
+"borders, column sizes and background colors is ignored."
+msgstr ""
+"Simple tables are supported well. Table headers are translated into "
+"corresponding Wiki style table headers. However, custom formatting of table "
+"borders, column sizes and background colours is ignored."
+
+#: wikiformats.xhp#hd_id2954496.help.text
+#, fuzzy
+msgid "Joined Cells"
+msgstr "Joined Cells"
+
+#: wikiformats.xhp#par_id8253730.help.text
+#, fuzzy
+msgid ""
+"OpenDocument and especially OpenOffice.org represent tables that have joined "
+"cells that span rows as tables with nested tables. In contrast, the wiki "
+"model of table is to declare column and row spans for such joined cells. "
+msgstr ""
+"OpenDocument and especially OpenOffice.org represent tables that have joined "
+"cells that span rows as tables with nested tables. In contrast, the wiki "
+"model of table is to declare column and row spans for such joined cells. "
+
+#: wikiformats.xhp#par_id8163090.help.text
+#, fuzzy
+msgid ""
+"If only columns of the same row are joined, the result of the transformation "
+"resembles the source document very well."
+msgstr ""
+"If only columns of the same row are joined, the result of the transformation "
+"resembles the source document very well."
+
+#: wikiformats.xhp#hd_id425122.help.text
+#, fuzzy
+msgid "Borders"
+msgstr "Borders"
+
+#: wikiformats.xhp#par_id1831110.help.text
+#, fuzzy
+msgid ""
+"Irrespective of custom table styles for border and background, a table is "
+"always exported as \"<emph>prettytable\"</emph>, which renders in the Wiki "
+"engine with simple borders and bold header."
+msgstr ""
+"Irrespective of custom table styles for border and background, a table is "
+"always exported as \"<emph>prettytable\"</emph>, which renders in the Wiki "
+"engine with simple borders and bold header."
+
+#: wikiformats.xhp#hd_id6255073.help.text
+#, fuzzy
+msgid "Charset and special characters"
+msgstr "Charset and special characters"
+
+#: wikiformats.xhp#par_id8216193.help.text
+#, fuzzy
+msgid ""
+"The charset of the transformation result is fixed to UTF-8. Depending on "
+"your system, this might not be the default charset. This might cause "
+"\"special characters\" to look broken when viewed with default settings. "
+"However, you can switch your editor to UTF-8 encoding to fix this. If your "
+"editor does not support switching the encoding, you can display the result "
+"of the transformation in the Firefox browser and switch the encoding to "
+"UTF-8 there. Now, you can cut and paste the transformation result to your "
+"program of choice."
+msgstr ""
+"The charset of the transformation result is fixed to UTF-8. Depending on "
+"your system, this might not be the default charset. This might cause "
+"\"special characters\" to look broken when viewed with default settings. "
+"However, you can switch your editor to UTF-8 encoding to fix this. If your "
+"editor does not support switching the encoding, you can display the result "
+"of the transformation in the Firefox browser and switch the encoding to "
+"UTF-8 there. Now, you can cut and paste the transformation result to your "
+"program of choice."
+
+#: wikisend.xhp#tit.help.text
+#, fuzzy
+msgctxt "wikisend.xhp#tit.help.text"
+msgid "Send to MediaWiki"
+msgstr "Send to MediaWiki"
+
+#: wikisend.xhp#hd_id108340.help.text
+#, fuzzy
+msgctxt "wikisend.xhp#hd_id108340.help.text"
+msgid "Send to MediaWiki"
+msgstr "Send to MediaWiki"
+
+#: wikisend.xhp#par_id1743827.help.text
+#, fuzzy
+msgid ""
+"In the Send to MediaWiki dialog, specify the settings for your current Wiki "
+"upload."
+msgstr ""
+"In the Send to MediaWiki dialogue box, specify the settings for your current "
+"Wiki upload."
+
+#: wikisend.xhp#par_id664082.help.text
+#, fuzzy
+msgid ""
+"<ahelp hid=\".\">Select the MediaWiki server where you want to publish your "
+"document. Click Add to add a new server to the list.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">Select the MediaWiki server where you want to publish your "
+"document. Click Add to add a new server to the list.</ahelp>"
+
+#: wikisend.xhp#par_id2794885.help.text
+#, fuzzy
+msgid ""
+"<ahelp hid=\".\">Enter the title of your Wiki entry. This is the top heading "
+"of your Wiki entry. For a new entry, the title must be unique on this Wiki. "
+"If you enter an existing title, your upload will overwrite the existing Wiki "
+"entry.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">Enter the title of your Wiki entry. This is the top heading "
+"of your Wiki entry. For a new entry, the title must be unique on this Wiki. "
+"If you enter an existing title, your upload will overwrite the existing Wiki "
+"entry.</ahelp>"
+
+#: wikisend.xhp#par_id2486342.help.text
+#, fuzzy
+msgid ""
+"<ahelp hid=\".\">Enter an optional short summary or comment.</ahelp> See "
+"<link href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\">http://meta."
+"wikimedia.org/wiki/Help:Edit_summary</link>."
+msgstr ""
+"<ahelp hid=\".\">Enter an optional short summary or comment.</ahelp> See "
+"<link href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\">http://meta."
+"wikimedia.org/wiki/Help:Edit_summary</link>."
+
+#: wikisend.xhp#par_id823999.help.text
+#, fuzzy
+msgid ""
+"<emph>This is a minor edit</emph>: <ahelp hid=\".\">Check this box to mark "
+"the uploaded page as a minor edit of the already existing page with the same "
+"title.</ahelp>"
+msgstr ""
+"<emph>This is a minor edit</emph>: <ahelp hid=\".\">Mark this box to mark "
+"the uploaded page as a minor edit of the already existing page with the same "
+"title.</ahelp>"
+
+#: wikisend.xhp#par_id6592913.help.text
+#, fuzzy
+msgid ""
+"<emph>Show in web browser</emph>: <ahelp hid=\".\">Check this box to open "
+"your system web browser and show the uploaded Wiki page.</ahelp>"
+msgstr ""
+"<emph>Show in web browser</emph>: <ahelp hid=\".\">Mark this box to open "
+"your system web browser and show the uploaded Wiki page.</ahelp>"
+
+#: wikisettings.xhp#tit.help.text
+#, fuzzy
+msgctxt "wikisettings.xhp#tit.help.text"
+msgid "MediaWiki Options"
+msgstr "MediaWiki Options"
+
+#: wikisettings.xhp#hd_id6425672.help.text
+#, fuzzy
+msgctxt "wikisettings.xhp#hd_id6425672.help.text"
+msgid "MediaWiki Options"
+msgstr "MediaWiki Options"
+
+#: wikisettings.xhp#par_id1188390.help.text
+#, fuzzy
+msgid ""
+"You can add, edit and remove MediaWiki servers. Open the dialog by <item "
+"type=\"menuitem\">Tools - Options - Internet - MediaWiki</item>. "
+"Alternatively, choose <item type=\"menuitem\">Tools - Extension Manager</"
+"item>, select the @WIKIEXTENSIONPRODUCTNAME@, and click the Options button."
+msgstr ""
+"You can add, edit and remove MediaWiki servers. Open the dialogue box by "
+"<item type=\"menuitem\">Tools - Options - Internet - MediaWiki</item>. "
+"Alternatively, choose <item type=\"menuitem\">Tools - Extension Manager</"
+"item>, select the @WIKIEXTENSIONPRODUCTNAME@ and click the Options button."
+
+#: wikisettings.xhp#par_id300607.help.text
+#, fuzzy
+msgid ""
+"<ahelp hid=\".\">Click Add to add a new Wiki server.<br/>Select an entry and "
+"click Edit to edit the account settings.<br/>Select an entry and click "
+"Remove to remove the entry from the list.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">Click Add to add a new Wiki server.<br/>Select an entry and "
+"click Edit to edit the account settings.<br/>Select an entry and click "
+"Remove to remove the entry from the list.</ahelp>"
+
+#: wikisettings.xhp#par_id9786065.help.text
+#, fuzzy
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Opens the MediaWiki dialog to add a "
+"new entry to the list.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">Opens the MediaWiki dialogue box to "
+"add a new entry to the list.</ahelp>"
+
+#: wikisettings.xhp#par_id3386333.help.text
+#, fuzzy
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Opens the MediaWiki dialog to edit "
+"the selected entry.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">Opens the MediaWiki dialogue box to "
+"edit the selected entry.</ahelp>"
+
+#: wikisettings.xhp#par_id7285073.help.text
+#, fuzzy
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Removes the selected entry from the "
+"list.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">Removes the selected entry from the "
+"list.</ahelp>"
+
+#: wikisettings.xhp#par_id1029084.help.text
+#, fuzzy
+msgid ""
+"When you click Add or Edit, the <link href=\"@WIKIEXTENSIONID@/wikiaccount."
+"xhp\">MediaWiki</link> dialog opens."
+msgstr ""
+"When you click Add or Edit, the <link href=\"@WIKIEXTENSIONID@/wikiaccount."
+"xhp\">MediaWiki</link> dialogue box opens."
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: ~\n"
+
+#: Addons.xcu#.Addons.AddonUI.OfficeMenuBarMerging.com.sun.star.wiki.S1.MenuItems.M2.Title.value.text
+#, fuzzy
+msgid "To Media~Wiki..."
+msgstr "To Media~Wiki..."
+
+#: OptionsDialog.xcu#.OptionsDialog.Nodes.Internet.Leaves.com.sun.star.wiki.options.Label.value.text
+#, fuzzy
+msgid "MediaWiki"
+msgstr "MediaWiki"
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: ~\n"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.GeneralSendError.value.text
+#, fuzzy
+msgid "The operation 'Send to MediaWiki' could not be completed successfully."
+msgstr "The operation 'Send to MediaWiki' could not be completed successfully."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.NoWikiFilter.value.text
+#, fuzzy
+msgid ""
+"The MediaWiki export filter cannot be found. Choose 'Tools-XML Filter "
+"Settings' to install the filter, or use the setup to install the component."
+msgstr ""
+"The MediaWiki export filter cannot be found. Choose 'Tools-XML Filter "
+"Settings' to install the filter, or use the setup to install the component."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.NoConnectionToURL.value.text
+#, fuzzy
+msgid "A connection to the MediaWiki system at '$ARG1' could not be created."
+msgstr "A connection to the MediaWiki system at '$ARG1' could not be created."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.WrongLogin.value.text
+#, fuzzy
+msgid ""
+"User name or password is incorrect. Please try again, or leave the fields "
+"blank for an anonymous connection."
+msgstr ""
+"User name or password is incorrect. Please try again, or leave the fields "
+"blank for an anonymous connection."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.InvalidURL.value.text
+#, fuzzy
+msgid "A connection could not be created because the URL is invalid."
+msgstr "A connection could not be created because the URL is invalid."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.NoURL.value.text
+#, fuzzy
+msgid "Specify a MediaWiki server by providing a URL."
+msgstr "Specify a MediaWiki server by providing a URL."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.CancelSending.value.text
+#, fuzzy
+msgid ""
+"The transfer has been interrupted. Please check the integrity of the wiki "
+"article."
+msgstr ""
+"The transfer has been interrupted. Please check the integrity of the wiki "
+"article."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_UrlLabel.value.text
+#, fuzzy
+msgid "U~RL"
+msgstr "U~RL"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_UsernameLabel.value.text
+#, fuzzy
+msgid "~Username"
+msgstr "~Username"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_PasswordLabel.value.text
+#, fuzzy
+msgid "~Password"
+msgstr "~Password"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendTitle.value.text
+#, fuzzy
+msgid "Send to MediaWiki"
+msgstr "Send to MediaWiki"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_WikiArticle.value.text
+#, fuzzy
+msgid "Wiki article"
+msgstr "Wiki article"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_No.value.text
+#, fuzzy
+msgid "No"
+msgstr "No"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_OK.value.text
+#, fuzzy
+msgid "OK"
+msgstr "OK"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_Yes.value.text
+#, fuzzy
+msgid "Yes"
+msgstr "Yes"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_AddButton.value.text
+#, fuzzy
+msgid "~Add..."
+msgstr "~Add..."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditButton.value.text
+#, fuzzy
+msgid "~Edit..."
+msgstr "~Edit..."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendButton.value.text
+#, fuzzy
+msgid "~Send"
+msgstr "~Send"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_RemoveButton.value.text
+#, fuzzy
+msgid "~Remove"
+msgstr "~Remove"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_NewWikiPage_Label1.value.text
+#, fuzzy
+msgid ""
+"A wiki article with the title '$ARG1' does not exist yet. Do you want to "
+"create a new article with that name?"
+msgstr ""
+"A wiki article with the title '$ARG1' does not exist yet. Do you want to "
+"create a new article with that name?"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_Label1.value.text
+#, fuzzy
+msgid "Media~Wiki Server"
+msgstr "Media~Wiki Server"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_Label2.value.text
+#, fuzzy
+msgid "~Title"
+msgstr "~Title"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_Label3.value.text
+#, fuzzy
+msgid "S~ummary"
+msgstr "S~ummary"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_MinorCheck.value.text
+#, fuzzy
+msgid "This is a ~minor edit"
+msgstr "This is a ~minor edit"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_BrowserCheck.value.text
+#, fuzzy
+msgid "Show in web ~browser"
+msgstr "Show in web ~browser"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.UnknownCert.value.text
+#, fuzzy
+msgid "The certificate of the selected site is unknown."
+msgstr "The certificate of the selected site is unknown."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_MediaWiki_Title.value.text
+#, fuzzy
+msgid "MediaWiki"
+msgstr "MediaWiki"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_AccountLine.value.text
+#, fuzzy
+msgid "Account"
+msgstr "Account"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_WikiLine.value.text
+#, fuzzy
+msgid "MediaWiki Server"
+msgstr "MediaWiki Server"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_SaveBox.value.text
+#, fuzzy
+msgid "~Save password"
+msgstr "~Save password"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_MediaWiki_Extension_String.value.text
+#, fuzzy
+msgid "@WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_WikiPageExists_Label1.value.text
+#, fuzzy
+msgid ""
+"A wiki article with the title '$ARG1' already exists.&#13;&#13;Do you want "
+"to replace the current article with your article?&#13;&#13;"
+msgstr ""
+"A wiki article with the title '$ARG1' already exists.&#13;&#13;Do you want "
+"to replace the current article with your article?&#13;&#13;"

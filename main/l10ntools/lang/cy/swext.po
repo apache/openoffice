@@ -1,0 +1,1002 @@
+"Plural-Forms: nplurals=2; plural=(n==2) ? 1 : 0;\n"
+"X-Generator: Pootle 2.1.6\n"
+"X-Accelerator-Marker: ~\n"
+
+#: wiki.xhp#tit.help.text
+msgctxt "wiki.xhp#tit.help.text"
+msgid "@WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@"
+
+#: wiki.xhp#bm_id3154408.help.text
+msgid ""
+"<bookmark_value>Wiki;@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_va"
+"lue>@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>extensions;Me"
+"diaWiki</bookmark_value>"
+msgstr ""
+"<bookmark_value>Wiki;@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_va"
+"lue>@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>extensions;Me"
+"diaWiki</bookmark_value>"
+
+#: wiki.xhp#hd_id5993530.help.text
+msgctxt "wiki.xhp#hd_id5993530.help.text"
+msgid "@WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@"
+
+#: wiki.xhp#par_id9647511.help.text
+msgid ""
+"<ahelp hid=\".\">By using the @WIKIEXTENSIONPRODUCTNAME@ you can upload your "
+"current Writer text document to a MediaWiki server. After uploading, all "
+"Wiki users can read your document on the Wiki.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">Drwy ddefnyddio @WIKIEXTENSIONPRODUCTNAME@ gallwch lwytho i "
+"fyny eich dogfen testun Writer cyfredol i weinydd MediaWiki. Ar ôl llwytho i "
+"fyny, bydd holl ddefnyddiwr y wiki yn gallu darllen eich dogfen "
+"arno.</ahelp>"
+
+#: wiki.xhp#par_id6468703.help.text
+msgid ""
+"<ahelp hid=\".\">Choose <item type=\"menuitem\">File - Send - To "
+"MediaWiki</item> to upload the current Writer document to a MediaWiki "
+"server.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">Dewis <item type=\"menuitem\">Ffeil - Anfon - At "
+"MediaWiki</item> i lwytho fyny'r ddogfen Writer i'r gweinydd  "
+"MediaWiki.</ahelp>"
+
+#: wiki.xhp#hd_id4554582.help.text
+msgid "System Requirements"
+msgstr "Anghenion y System"
+
+#: wiki.xhp#par_id2597430.help.text
+msgid "StarOffice/StarSuite 9"
+msgstr "StarOffice/StarSuite 9"
+
+#: wiki.xhp#par_id8430738.help.text
+msgid "OpenOffice.org 3.0"
+msgstr "OpenOffice.org 3.0"
+
+#: wiki.xhp#par_id9340495.help.text
+msgid "Java Runtime Environment 1.4"
+msgstr "Java Runtime Environment 1.4"
+
+#: wiki.xhp#par_id7387615.help.text
+msgid ""
+"A Wiki account on a supported <link "
+"href=\"http://www.mediawiki.org/wiki/MediaWiki\">MediaWiki</link> server"
+msgstr ""
+"Cyfrif Wiki ar weinydd sy'n cynnal <link "
+"href=\"http://www.mediawiki.org/wiki/MediaWiki\">MediaWiki</link>"
+
+#: wiki.xhp#hd_id8047120.help.text
+msgid "Installing @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "Gosod @WIKIEXTENSIONPRODUCTNAME@"
+
+#: wiki.xhp#par_id4277169.help.text
+msgid ""
+"Before you install the @WIKIEXTENSIONPRODUCTNAME@, ensure that %PRODUCTNAME "
+"uses a Java Runtime Environment (JRE). To check the status of the JRE, "
+"choose <item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Java</item>. "
+"Ensure that \"Use a Java runtime environment\" is marked and that a Java "
+"runtime folder is selected in the big listbox. If no JRE was activated, then "
+"activate a JRE 1.4 or later and restart %PRODUCTNAME."
+msgstr ""
+"Cyn gosod @WIKIEXTENSIONPRODUCTNAME@, gwnewch yn siŵr fod %PRODUCTNAME yn "
+"defnyddio Java Runtime Environment (JRE). I wirio statws y JRE, dewiswch "
+"<item type=\\\"menuitem\\\">Offer - Dewisiadau - %PRODUCTNAME - Java</item>. "
+"Gwnewch yn siŵr fod  \\\"Defnyddio Java runtime environment\\\" wedi ei farcio a "
+"bod ffolder Java runtime folder wedi ei ddewis yn y blwch rhestr fawr. Os "
+"nad oes JRE yn weithredol, yna gweithredwch JRE 1.4 neu ddiweddarach ac "
+"ailddechrau StarOffice/OpenOffice.org."
+
+#: wiki.xhp#hd_id567339.help.text
+msgid "To Install the @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "Er mwyn gosod @WIKIEXTENSIONPRODUCTNAME@"
+
+#: wiki.xhp#par_id1732230.help.text
+msgctxt "wiki.xhp#par_id1732230.help.text"
+msgid ""
+"In a Writer window, choose <item type=\"menuitem\">Tools - Extension "
+"Manager</item>."
+msgstr ""
+"Mewn ffenestr yn Writer, dewisch <item type=\"menuitem\">Offer - Rheolwr "
+"Estyniadau</item>."
+
+#: wiki.xhp#par_id4338511.help.text
+msgid "In the Extension Manager dialog, click Add."
+msgstr "Yn neialog y Rheolwr Estyniadau, cliciwch Ychwanegu"
+
+#: wiki.xhp#par_id5882442.help.text
+msgid ""
+"Locate the @WIKIEXTENSIONFILENAME@.oxt file, click Open, and then click "
+"Close. "
+msgstr ""
+"Canfyddwch y ffeil  @WIKIEXTENSIONFILENAME@.oxt, cliciwch Agor ac yna clicio "
+"Cau. "
+
+#: wiki.xhp#par_id4008911.help.text
+msgid "Close %PRODUCTNAME, and close also the Quickstarter if enabled."
+msgstr "Caewch %PRODUCTNAME, a chau'r Cychwyn Cyflym os yw'n weithredol."
+
+#: wiki.xhp#par_id265511.help.text
+msgid ""
+"Restart the software, open a text document, then choose <item "
+"type=\"menuitem\">Tools - Options - Internet - MediaWiki</item> to enter your "
+"Wiki settings. See \"To Connect To a Wiki\" below."
+msgstr ""
+"Ailgychwynnwch y feddalwedd, agor dogfen testun, yna dewis <item "
+"type=\"menuitem\">Offer - Dewisiadau - Rhyngrwyd - MediaWiki</item> i fynd at "
+"osodiadau eich Wiki. Gw. \"Cysylltu â'ch Wiki\" isod."
+
+#: wiki.xhp#hd_id3569444.help.text
+msgid "To Remove the @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "I dynnu @WIKIEXTENSIONPRODUCTNAME@"
+
+#: wiki.xhp#par_id2655110.help.text
+msgctxt "wiki.xhp#par_id2655110.help.text"
+msgid ""
+"In a Writer window, choose <item type=\"menuitem\">Tools - Extension "
+"Manager</item>."
+msgstr ""
+"Mewn ffenestr yn Writer, dewiswch <item type=\"menuitem\">Offer - Rheolwr "
+"Estyniadau</item>."
+
+#: wiki.xhp#par_id9504379.help.text
+msgid "Click the plus sign (+) in front of My Extensions."
+msgstr "Cliciwch yr arwydd plws (+) o flaen Fy Estyniadau."
+
+#: wiki.xhp#par_id8431348.help.text
+msgid "Select the extension, click Remove, and then click Close."
+msgstr "Dewiswch yr estyniad, clicio Tynnu ac yna clicio Cau."
+
+#: wiki.xhp#hd_id5316019.help.text
+msgid "To Connect to a Wiki"
+msgstr "Cysylltu â Wiki"
+
+#: wiki.xhp#par_id2381969.help.text
+msgid ""
+"Note: You can store your user name and password for all respective dialogs "
+"inside %PRODUCTNAME. The password will be stored in a secure way, where "
+"access is maintained by a master password. To enable the master password, "
+"choose <item type=\"menuitem\">Tools - Options - %PRODUCTNAME - "
+"Security</item>."
+msgstr ""
+"Nodyn: Gallwch gadw eich enw defnyddiwr a chyfrinair ar gyfer dialogau "
+"perthnasol o fewn %PRODUCTNAME. Bydd y cyfrinair yn cael ei gadw mewn dull "
+"diogel, lle mae mynediad yn cael ei gynnal gan brif gyfrinair. Er mwyn "
+"galluogi prif gyfrinair, dewiswch <item type=\\\"menuitem\\\">Offer - Dewisiadau "
+"- %PRODUCTNAME - Diogelwch</item>."
+
+#: wiki.xhp#par_id3751640.help.text
+msgid ""
+"Note: If you connect to the web using a proxy server, enter the proxy "
+"information to <item type=\"menuitem\">Tools - Options - Internet - "
+"Proxy</item>, and restart the software."
+msgstr ""
+"Nodyn: Os ydych yn cysylltu â'r we drwy weinydd dirprwyol, rhowch fanylion y "
+"dirprwy yn <item type=\"menuitem\">Offer - Dewisiadau - Rhyngrwyd - "
+"Dirprwy</item>, ac ailgychwyn y feddalwedd."
+
+#: wiki.xhp#par_id9533677.help.text
+msgid ""
+"Open a Writer document, and choose <item type=\"menuitem\">Tools - Options - "
+"Internet - MediaWiki</item>."
+msgstr ""
+"Agorwch ddogfen Writer, a dewis <item type=\"menuitem\">Offer - Dewisiadau - "
+"Rhyngrwyd -  MediaWiki</item>."
+
+#: wiki.xhp#par_id368968.help.text
+msgid ""
+"In the <link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\">Options</link> "
+"dialog, click Add."
+msgstr ""
+"Yn y deialog <link "
+"href=\"@WIKIEXTENSIONID@/wikisettings.xhp\">Dewisiadau</link>, cliciwch "
+"Ychwanegu."
+
+#: wiki.xhp#par_id6962187.help.text
+msgid ""
+"In the <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> "
+"dialog, enter the account information for the Wiki."
+msgstr ""
+"Yn y deialog <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> "
+", rhowch manylion cyfrf y Wiki."
+
+#: wiki.xhp#par_id5328836.help.text
+msgid ""
+"In the URL textbox, enter the address of a Wiki that you want to connect to."
+msgstr "Ym mlwch testun yr URL, rhowch gyfeiriad y Wiki i gysylltu iddo."
+
+#: wiki.xhp#par_id389416.help.text
+msgid "You can copy the URL from a web browser and paste it into the textbox."
+msgstr "Gallwch gopïo’r URL o borwr gwe a'i ludo i'r blwch testun."
+
+#: wiki.xhp#par_id5906552.help.text
+msgid "In the Username box, enter your user ID for your Wiki account."
+msgstr ""
+"Yn y blwch enw defnyddiwr, rhowch eich enw defnyddiwr ar gyfer eich cyfrif "
+"Wiki."
+
+#: wiki.xhp#par_id9297158.help.text
+msgid ""
+"If the Wiki allows anonymous write access, you can leave the Username and "
+"Password boxes empty."
+msgstr ""
+"Os yw'r Wiki'n caniatau mynediad ysgrifennu anhysbys, gallwch adael y blwch "
+"Enw Defnyddiwr a Cyfrinair yn wag."
+
+#: wiki.xhp#par_id8869594.help.text
+msgid ""
+"In the Password box, enter the password for your Wiki account, then click "
+"OK."
+msgstr ""
+"Yn y blwch Cyfrinair, rhowch gyfrinair eich cyfrif Wiki ac yna clicio Iawn."
+
+#: wiki.xhp#par_id292062.help.text
+msgid ""
+"Optionally enable \"Save password\" to save the password between sessions. A "
+"master password is used to maintain access to all saved passwords. Choose "
+"<item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Security</item> to "
+"enable the master password. \"Save password\" is unavailable when the master "
+"password is not enabled."
+msgstr ""
+"Yn ddewisol galluogwch \\\"Cadw cyfrinair\\\" i gadw'r cyfrinair rhwng sesiynau. "
+"Mae prif gyfrinair yn cael ei ddefnyddio i gynnal mynediad i'r holl "
+"gyfrineiriau sydd ynghadw. Dewiswch <item type=\\\"menuitem\\\">Offer - "
+"Dewisiadau - %PRODUCTNAME -  Diogelwch</item> i alluogi'r prif gyfrinair. "
+"Nid yw \\\"Cadw cyfrinair\\\" ar gael pan nad yw'r prif gyfrinair wedi ei "
+"alluogi."
+
+#: wiki.xhp#hd_id7044892.help.text
+msgid "To Create a New Wiki Page"
+msgstr "Creu Tudalen Wiki Newydd"
+
+#: wiki.xhp#par_id3514206.help.text
+msgid "Open a Writer document."
+msgstr "Agor dogfen Writer."
+
+#: wiki.xhp#par_id944853.help.text
+msgid ""
+"Write the content of the Wiki page. You can use formatting like text "
+"formats, headings, footnotes, and more. See the <link "
+"href=\"@WIKIEXTENSIONID@/wikiformats.xhp\">list of supported formats</link>."
+msgstr ""
+"Ysgrifennu cynnwys y dudalen Wiki. Gallwch ddefnyddio fformatio megis "
+"fformat testun, pennawdau, troednodiiadau, ac yn y blaen. Gw. y rhestr o "
+"fformatau sy'n cael eu cynnal yn <link "
+"href=\"@WIKIEXTENSIONID@/wikiformats.xhp\"> </link>."
+
+#: wiki.xhp#par_id4566484.help.text
+msgid "Choose <item type=\"menuitem\">File - Send - To MediaWiki</item>."
+msgstr "Dewiswch <item type=\"menuitem\">Ffeil - Anfon - At MediaWiki</item>."
+
+#: wiki.xhp#par_id228278.help.text
+msgid ""
+"In the <link href=\"@WIKIEXTENSIONID@/wikisend.xhp\">Send to MediaWiki</link> "
+"dialog, specify the settings for your entry."
+msgstr ""
+"Yn y deialog <link href=\"@WIKIEXTENSIONID@/wikisend.xhp\">Anfon at "
+"MediaWiki</link> , pennwch y gosodiadau ar gyfer eich mynediad."
+
+#: wiki.xhp#par_id2564165.help.text
+msgid "<emph>MediaWiki server</emph>: Select the Wiki."
+msgstr "<emph>Gweinydd MediaWiki</emph>: Dewis y Wiki."
+
+#: wiki.xhp#par_id5566576.help.text
+msgid ""
+"<emph>Title</emph>: Type the title of your page. Type the title of an "
+"existing page to overwrite the page with your current text document. Type a "
+"new title to create a new page on the Wiki."
+msgstr ""
+"<emph>Teitl</emph>: Teipiwch deitl eich tudalen. Teipiwch deitl y dudalen "
+"bresennol er mwyn ysgrifennu dros y dudalen gyda'ch dogfen testun cyfredol. "
+" Teipiwch deitl newydd i greu tudalen newydd ar y Wiki."
+
+#: wiki.xhp#par_id9688711.help.text
+msgid "<emph>Summary</emph>: Enter an optional short summary of your page."
+msgstr "<emph>Crynodeb</emph>: Yn ddewisol, rhowch grynodeb byr o'ch tudalen."
+
+#: wiki.xhp#par_id4123661.help.text
+msgid ""
+"<emph>This is a minor edit</emph>: Check this box to mark the uploaded page "
+"as a minor edit of the already existing page with the same title."
+msgstr ""
+"<emph>Mân olygu yw hwn</emph>: Ticiwch y blwch i nodi mai mân olygu ydyw o "
+"dudalen sy'n bodoli eisoes gyda'r un teitl."
+
+#: wiki.xhp#par_id452284.help.text
+msgid ""
+"<emph>Show in web browser</emph>: Check this box to open your system web "
+"browser and show the uploaded Wiki page."
+msgstr ""
+"<emph>Dangos mewn porwr gwe</emph>: Ticiwch yn y blwch i agor eich porwr gwe "
+"a dangos y dudalen Wiki ar ei newydd wedd."
+
+#: wiki.xhp#par_id8346812.help.text
+msgid "Click Send."
+msgstr "Clicio Anfon"
+
+#: wikiaccount.xhp#tit.help.text
+msgctxt "wikiaccount.xhp#tit.help.text"
+msgid "MediaWiki"
+msgstr "MediaWiki"
+
+#: wikiaccount.xhp#hd_id960722.help.text
+msgctxt "wikiaccount.xhp#hd_id960722.help.text"
+msgid "MediaWiki"
+msgstr "MediaWiki"
+
+#: wikiaccount.xhp#par_id4571672.help.text
+msgid ""
+"Use the MediaWiki dialog to add or edit your MediaWiki account settings."
+msgstr ""
+"Defnyddiwch ddeialog MediaWiki i ychwanegu neu olygu gosodiadau eich cyfrif "
+"MediaWiki."
+
+#: wikiaccount.xhp#par_id7631458.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Enter the URL of a MediaWiki server, "
+"starting with http://</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">Rhowch URL gweinydd MediaWiki, yn cychwyn "
+"gyda http://</ahelp>"
+
+#: wikiaccount.xhp#par_id7862483.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Enter your user name on the MediaWiki "
+"server. Leave empty for anonymous access.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">Rhowch eich enw defnyddiwr ar y gweinydd "
+"MediaWiki. Gadewch yn wag ar gyfer mynediad anhysbys.</ahelp>"
+
+#: wikiaccount.xhp#par_id1113010.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Enter your password on the MediaWiki "
+"server. Leave empty for anonymous access.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">Rhowch eich cyfrinair ar y gweinydd "
+"MediaWiki. Gadewch yn wag ar gyfer mynediad anhysbys.</ahelp>"
+
+#: wikiaccount.xhp#par_id656758.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Enable to store your password between "
+"sessions. The master password must be enabled, see <item "
+"type=\"menuitem\">Tools - Options - %PRODUCTNAME - Security</item>.</ahelp>"
+msgstr ""
+"<ahelp hid=\\\".\\\" visibility=\\\"hidden\\\">Galluogwch er mwyn cadw eich "
+"cyfrinair rhwng sesiynau. Rhaid i'r prif gyfrinair fod wedi ei alluogi, gw. "
+"<item type=\\\"menuitem\\\">Offer - Dewisiadau - %PRODUCTNAME - "
+"Diogelwch</item>.</ahelp>"
+
+#: wikiaccount.xhp#par_id3112582.help.text
+msgid ""
+"Enter the Internet address of a Wiki server in a format like "
+"http://wiki.services.openoffice.org/wiki or copy the URL from a web browser."
+msgstr ""
+"Rhowch gyfeiriad Rhyngrwyd gweinydd Wiki mewn fformat tebyg i "
+"http://wiki.services.openoffice.org/wiki neu gopïo’r URL o borwr gwe."
+
+#: wikiaccount.xhp#par_id628070.help.text
+msgid ""
+"If the Wiki allows anonymous access, you can leave the account text boxes "
+"empty. Else enter your user name and password."
+msgstr ""
+"Os yw'r Wiki'n caniatáu mynediad anhysbys, gallwch adael blychau testun y "
+"cyfrif yn wag. Rhowch eich enw defnyddiwr a chyfrinair."
+
+#: wikiaccount.xhp#par_id9046601.help.text
+msgid ""
+"If you have enabled the master password feature on the Security tab page of "
+"the Tools - Options - %PRODUCTNAME dialog, then the software can store your "
+"password and automatically insert the data where necessary. Enable the \"Save "
+"password\" checkbox to store your password."
+msgstr ""
+"Os ydych wedi galluogi nodwedd prif gyfrinair yn adran tab Diogelwch tudalen "
+"Offer - Dewisiadau - %PRODUCTNAME, yna mae'r feddalwedd yn gallu cadw eich "
+"cyfrinair a mewnosod y data'n awtomatig lle mae'r angen. Galluogwch flwch "
+"ticio \\\"Cadw cyfrinair\\\" i gadw eich cyfrinair."
+
+#: wikiformats.xhp#tit.help.text
+msgctxt "wikiformats.xhp#tit.help.text"
+msgid "MediaWiki Formats"
+msgstr "Fformatau MediaWiki"
+
+#: wikiformats.xhp#hd_id3743095.help.text
+msgctxt "wikiformats.xhp#hd_id3743095.help.text"
+msgid "MediaWiki Formats"
+msgstr "Fformatau MediaWiki"
+
+#: wikiformats.xhp#par_id8654133.help.text
+msgid ""
+"The following list gives an overview of the text formats that the "
+"@WIKIEXTENSIONPRODUCTNAME@ can upload to the Wiki server."
+msgstr ""
+"Mae'r rhestr ganlynol yn rhoi trosolwg o'r fformatiau testun mae "
+"@WIKIEXTENSIONPRODUCTNAME@ yn gallu eu llwytho i fyny i'r gweinydd Wiki."
+
+#: wikiformats.xhp#par_id5630664.help.text
+msgid ""
+"The OpenDocument format used by Writer and the WikiMedia format are quite "
+"different. Only a subset of all features can be transformed from one format "
+"to the other."
+msgstr ""
+"Mae fformat OpenDocument sy'n cael ei ddefnyddio gan Writer a fformat "
+"WikiMedia format yn wahanol iawn. Dim ond lleiafswm o'r holl nodweddion y "
+"mae modd eu trosi o un fformat i'r llall."
+
+#: wikiformats.xhp#hd_id7178868.help.text
+msgid "Headings"
+msgstr "Penawdau"
+
+#: wikiformats.xhp#par_id508133.help.text
+msgid ""
+"Apply a heading paragraph style to the headings in your Writer document. The "
+"Wiki will show the heading styles of the same outline level, formatted as "
+"defined by the Wiki engine."
+msgstr ""
+"Gosod arddull paragraff pennawd i'r penawdau yn eich doggfen Writer. Bydd y "
+"Wiki'n dangos yr arddull pennawd o'r un lefel amlinell, wedi ei fformatio yn "
+"ôl diffiniad peiriant y Wiki."
+
+#: wikiformats.xhp#hd_id7217627.help.text
+msgid "Hyperlinks"
+msgstr "Hypergysylltiadau"
+
+#: wikiformats.xhp#par_id3735465.help.text
+msgid ""
+"Native OpenDocument hyperlinks are transformed into \"external\" Wiki links. "
+"Therefore, the built-in linking facility of OpenDocument should only be used "
+"to create links that point to other sites outside the Wiki web. For "
+"creating Wiki links that point to other subjects of the same Wiki domain, "
+"use Wiki links."
+msgstr ""
+"Mae hypergysylltiadau OpenDocument yn cael eu trosi i'r cysylltiadau Wiki "
+"\"allanol\" . Felly dylai swyddogaeth cysylltiadau mewnol OpenDocument gael ei "
+"ddefnyddio'n unig ar gyfer creu cysylltiadau sy'n pwyntio i wefannau eraill "
+"y tu allan i we'r Wiki. Defnyddiwch gysylltiadau'r Wiki ar gyfer cyfeirio "
+"at bynciau eraill o fewn parth y Wiki."
+
+#: wikiformats.xhp#hd_id941190.help.text
+msgid "Lists"
+msgstr "Rhestrau"
+
+#: wikiformats.xhp#par_id8942838.help.text
+msgid ""
+"Lists can reliably be exported when the whole list uses a consistent list "
+"style. Use the Numbering or Bullets icon to generate a list in Writer. If "
+"you need a list without numbering or bullets, use Format - Bullets and "
+"Numbering to define and apply the respective list style."
+msgstr ""
+"Mae modd allforio cysylltiadau pan mae'r rhestr gyfan yn defnyddio arddull "
+"rhestru cyson. Defnyddiwch yr eicon Rhifo neu Bwledi i gynhyrchu rhestr yn "
+"Writer. Os ydych angen rhestr heb rifo neu fwledi, defnyddiwch Fformat - "
+"Bwledi a Rhifo i ddiffinio a gosod yr arddull rhestri perthnasol."
+
+#: wikiformats.xhp#hd_id7026886.help.text
+msgid "Paragraphs"
+msgstr "Paragraffau"
+
+#: wikiformats.xhp#hd_id4436475.help.text
+msgid "Alignment"
+msgstr "Aliniad"
+
+#: wikiformats.xhp#par_id376598.help.text
+msgid ""
+"Explicit text alignment should not be used in Wiki articles. Nevertheless, "
+"text alignment is supported for left, centered, and right alignment of text."
+msgstr ""
+"Ni ddylai aliniad testun penodol gael ei ddefnyddio mewn erthyglau Wiki. Er "
+"hynny, mae alinio testun yn cael ei gynnal ar gyfer aliniad testun i'r dde, "
+"chwith a chanoli."
+
+#: wikiformats.xhp#hd_id7486190.help.text
+msgid "Pre-formatted text"
+msgstr "Testun rhagfformatiwyd"
+
+#: wikiformats.xhp#par_id1459395.help.text
+msgid ""
+"A paragraph style with a fixed-width font is transformed as pre-formatted "
+"text. Pre-formatted text is shown on the Wiki with a border around the text."
+msgstr ""
+"Mae arddull paragraff gyda ffont lled-osodedig y cael ei drosi i destun wedi "
+"ei rag fformatio. Mae testun rhag fformatedig yn cael ei ddangos yn y Wiki "
+"gyda border o amgylch y testun."
+
+#: wikiformats.xhp#hd_id4834131.help.text
+msgid "Character styles"
+msgstr "Arddulliau Nod"
+
+#: wikiformats.xhp#par_id6397595.help.text
+msgid ""
+"Character styles modify the appearance of parts of a paragraph. The "
+"transformation supports bold, italics, bold/italics, subscript and "
+"superscript. All fixed width fonts are transformed into the Wiki typewriter "
+"style."
+msgstr ""
+"Mae arddull nodau yn newid golwg rhannau o baragraffau. Mae'r trawsnewid yn "
+"cynnal trwm, italig, italig/trwm, isysgrif ac uwchysgrif. Mae ffontiau lled "
+"sefydlog yn cael eu trosi i arddull teipiadur Wiki."
+
+#: wikiformats.xhp#hd_id5152745.help.text
+msgid "Footnotes"
+msgstr "Troednodau"
+
+#: wikiformats.xhp#par_id5238196.help.text
+msgid ""
+"Note: The transformation uses the new style of footnotes with <ref> and "
+"<references> tags that requires the Cite.php extension to be installed into "
+"MediaWiki. If those tags occur as plain text in the transformation result, "
+"ask the Wiki administrator to install this extension."
+msgstr ""
+"Nodyn: Mae'r trawsnewid yn defnyddio arddull newydd o droednodiadau gyda "
+"thagiau <ref> a <references> sy'n gofyn am estyniad Cite.php gael eu gosod "
+"yn MediaWiki. Os yw'r tagiau yn digwydd fel testun plaen yng nghanlyniad y "
+"trawsnewid, gofynnwch i weinyddwr y Wiki i osod yr estyniad."
+
+#: wikiformats.xhp#hd_id9405499.help.text
+msgid "Images"
+msgstr "Delweddau"
+
+#: wikiformats.xhp#par_id3541673.help.text
+msgid ""
+"Images cannot be exported by a transformation producing a single file of "
+"Wiki text. However, if the image is already uploaded to the target Wiki "
+"domain (e. g. WikiMedia Commons), then the transformation produces a valid "
+"image tag that includes the image. Image captions are also supported."
+msgstr ""
+"Nid oes modd allforio delweddau drwy drawsnewidiad sy'n cynhyrchu ffeil "
+"unigol o destun Wiki. Er hynny, os yw'r ddelwedd eisoes wedi ei llwytho i "
+"fyny i borth Wiki targed (e.e. WikiMedia Commons), yna mae'r trawsnewid yn "
+"cynhyrchu tag delwedd ddilys sy'n cynnwys y ddelwedd. Mae teitlau delwedd "
+"hefyd yn cael eu cynnal."
+
+#: wikiformats.xhp#hd_id2162236.help.text
+msgid "Tables"
+msgstr "Tablau"
+
+#: wikiformats.xhp#par_id3037202.help.text
+msgid ""
+"Simple tables are supported well. Table headers are translated into "
+"corresponding Wiki style table headers. However, custom formatting of table "
+"borders, column sizes and background colors is ignored."
+msgstr ""
+"Mae tablau syml yn cael eu cynnal hefyd. Mae penawdau tabl yn cael eu "
+"trawsnewid i benawdau cyfatebol tabl arddull Wiki. Er hynny, mae fformatio "
+"arbenigol o forderi tablau, maint ansafonol a lliwiau cefndir yn cael eu "
+"hanwybyddu."
+
+#: wikiformats.xhp#hd_id2954496.help.text
+msgid "Joined Cells"
+msgstr "Celloed wedi eu Huno"
+
+#: wikiformats.xhp#par_id8253730.help.text
+msgid ""
+"OpenDocument and especially OpenOffice.org represent tables that have joined "
+"cells that span rows as tables with nested tables. In contrast, the wiki "
+"model of table is to declare column and row spans for such joined cells. "
+msgstr ""
+"Mae OpenDocument ac yn arbennig OpenOffice.org yn cyflwyno tablau sydd â "
+"chelloedd wedi eu huno sy'n  pontio rhesi fel tablau gyda thablau nythu. "
+"Mewn gwrthgyferbyniad, model Wiki o dablau yw datgan pontio colofnau a rhesi "
+"ar gyfer celloedd unedig o'r fath. "
+
+#: wikiformats.xhp#par_id8163090.help.text
+msgid ""
+"If only columns of the same row are joined, the result of the transformation "
+"resembles the source document very well."
+msgstr ""
+"Os mai dim ond colofnau o'r un rhes sy'n cael eu huno, bydd canlyniad y "
+"trawsnewid yn edrych yn debyg iawn i'r ddogfen wreiddiol."
+
+#: wikiformats.xhp#hd_id425122.help.text
+msgid "Borders"
+msgstr "Borderi"
+
+#: wikiformats.xhp#par_id1831110.help.text
+msgid ""
+"Irrespective of custom table styles for border and background, a table is "
+"always exported as \"<emph>prettytable\"</emph>, which renders in the Wiki "
+"engine with simple borders and bold header."
+msgstr ""
+"Beth bynnag yw'r arddull tabl unigryw ar gyfer borderi a chefndir, mae tabl "
+"bob tro'n cael ei allforio fel \"<emph>prettytable\"</emph>, sy'n cael eu "
+"cynhyrchu gan y peiriant Wiki gyda borderi syml a phennawd trwm."
+
+#: wikiformats.xhp#hd_id6255073.help.text
+msgid "Charset and special characters"
+msgstr "Set nodau a nodau arbennig"
+
+#: wikiformats.xhp#par_id8216193.help.text
+msgid ""
+"The charset of the transformation result is fixed to UTF-8. Depending on "
+"your system, this might not be the default charset. This might cause "
+"\"special characters\" to look broken when viewed with default settings. "
+"However, you can switch your editor to UTF-8 encoding to fix this. If your "
+"editor does not support switching the encoding, you can display the result "
+"of the transformation in the Firefox browser and switch the encoding to "
+"UTF-8 there. Now, you can cut and paste the transformation result to your "
+"program of choice."
+msgstr ""
+"Mae set nod canlyniad y trosglwyddiad wedi ei osod yn UTF-8. Yn ddibynnol ar "
+"eich system, efallai nad hwn yw'r set nod ragosodedig. Gall hyn achosi i  "
+"\"nodau arbennig\" edrych wedi eu torri wrth eu darllen yn y gosodiadau "
+"rhagosodedig. Os nad yw eich golygydd yn cynnal newid yr encodio, gallwch "
+"ddangos y canlyniad y trosglwyddo yn y porwr Firefox a newid yr amgodiad i "
+"UTF-8 yno. Nawr gallwch dorri a gludo canlyniad y trosglwyddo i'r rhaglen "
+"o'ch dewis."
+
+#: wikisend.xhp#tit.help.text
+msgctxt "wikisend.xhp#tit.help.text"
+msgid "Send to MediaWiki"
+msgstr "Anfon at MediaWiki"
+
+#: wikisend.xhp#hd_id108340.help.text
+msgctxt "wikisend.xhp#hd_id108340.help.text"
+msgid "Send to MediaWiki"
+msgstr "Anfon at MediaWiki"
+
+#: wikisend.xhp#par_id1743827.help.text
+msgid ""
+"In the Send to MediaWiki dialog, specify the settings for your current Wiki "
+"upload."
+msgstr ""
+"Yn y deialog Anfon at MediaWiki, pennwch osodiadau eich llwyth Wiki "
+"presennol."
+
+#: wikisend.xhp#par_id664082.help.text
+msgid ""
+"<ahelp hid=\".\">Select the MediaWiki server where you want to publish your "
+"document. Click Add to add a new server to the list.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">Dewiswch y gweinydd MediaWiki lle rydych am gyhoeddi eich "
+"dogfen. Cliciwch Ychwanegu i ychwanegu gweinydd newydd i'r rhestr.</ahelp>"
+
+#: wikisend.xhp#par_id2794885.help.text
+msgid ""
+"<ahelp hid=\".\">Enter the title of your Wiki entry. This is the top heading "
+"of your Wiki entry. For a new entry, the title must be unique on this Wiki. "
+"If you enter an existing title, your upload will overwrite the existing Wiki "
+"entry.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">Rhowch deitl i'ch cofnod Wiki. Dyma brif bennawd eich cofnod "
+"Wiki. Ar gyfer cofnod newydd, rhaid i'r teitl fod yn unigryw i'r Wiki hwn. "
+"Os fyddwch yn cynnig teitl sy'n bodoli eisoes, bydd y llwytho i fyny'n "
+"ysgrifennu dros eich cofnod Wiki presennol.</ahelp>"
+
+#: wikisend.xhp#par_id2486342.help.text
+msgid ""
+"<ahelp hid=\".\">Enter an optional short summary or comment.</ahelp> See <link "
+"href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\">http://meta.wikimed"
+"ia.org/wiki/Help:Edit_summary</link>."
+msgstr ""
+"<ahelp hid=\".\">Rhowch grynodeb neu sylw byr.</ahelp> Gw. <link href=\"http://"
+"meta.wikimedia.org/wiki/Help:Edit_summary\">http://meta.wikimedia.org/wiki/He"
+"lp:Edit_summary</link>."
+
+#: wikisend.xhp#par_id823999.help.text
+msgid ""
+"<emph>This is a minor edit</emph>: <ahelp hid=\".\">Check this box to mark the "
+"uploaded page as a minor edit of the already existing page with the same "
+"title.</ahelp>"
+msgstr ""
+"<emph>Mân olygu yw hwn</emph>: <ahelp hid=\".\">Ticiwch y blwch i nodi'r "
+"dudalen wedi ei llwytho i fyny fel man olygu o ddogfen sydd eisoes yn bodoli "
+"gyda'r un teitl.</ahelp>"
+
+#: wikisend.xhp#par_id6592913.help.text
+msgid ""
+"<emph>Show in web browser</emph>: <ahelp hid=\".\">Check this box to open your "
+"system web browser and show the uploaded Wiki page.</ahelp>"
+msgstr ""
+"<emph>Dangos mewn porwr gwe</emph>: <ahelp hid=\".\">Ticiwch y blwch i agor "
+"eich porwr gwe a dangos y dudalen Wiki sydd wedi ei llwytho i fyny.</ahelp>"
+
+#: wikisettings.xhp#tit.help.text
+msgctxt "wikisettings.xhp#tit.help.text"
+msgid "MediaWiki Options"
+msgstr "Dewisiadau MediaWik"
+
+#: wikisettings.xhp#hd_id6425672.help.text
+msgctxt "wikisettings.xhp#hd_id6425672.help.text"
+msgid "MediaWiki Options"
+msgstr "Dewisiadau MediaWik"
+
+#: wikisettings.xhp#par_id1188390.help.text
+msgid ""
+"You can add, edit and remove MediaWiki servers. Open the dialog by <item "
+"type=\"menuitem\">Tools - Options - Internet - MediaWiki</item>. "
+"Alternatively, choose <item type=\"menuitem\">Tools - Extension "
+"Manager</item>, select the @WIKIEXTENSIONPRODUCTNAME@, and click the Options "
+"button."
+msgstr ""
+"Gallwch ychwanegu, golygu a thynnu gweinyddion MediaWiki. Agorwch y deialog "
+"drwy fynd i  <item type=\"menuitem\">Offer - Dewisiadau - Rhyngrwyd - "
+"MediaWiki</item>. Neu dewiswch <item type=\"menuitem\">Offer - Rheolwr "
+"Estyniadau</item>, dewis @WIKIEXTENSIONPRODUCTNAME@, a chlicio'r botwm "
+"Dewisiadau."
+
+#: wikisettings.xhp#par_id300607.help.text
+msgid ""
+"<ahelp hid=\".\">Click Add to add a new Wiki server.<br/>Select an entry and "
+"click Edit to edit the account settings.<br/>Select an entry and click "
+"Remove to remove the entry from the list.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">Cliciwch Ychwanegu i ychwanegu gweinydd Wiki "
+"newydd.<br/>Dewiswch gofnod a chlicio Golygu i olygu gosodiadau'r "
+"cyfrif.<br/>Dewiswch gofnod a chlicio Tynnu i dynnu'r cofnod o'r "
+"rhestr.</ahelp>"
+
+#: wikisettings.xhp#par_id9786065.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Opens the MediaWiki dialog to add a new "
+"entry to the list.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">Yn agor y deialog MediaWiki i ychwanegu "
+"cofnod newydd i'r rhestr.</ahelp>"
+
+#: wikisettings.xhp#par_id3386333.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Opens the MediaWiki dialog to edit the "
+"selected entry.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">Yn agor y deialog MediaWiki i olygu 'r "
+"cofnod dewiswyd.</ahelp>"
+
+#: wikisettings.xhp#par_id7285073.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Removes the selected entry from the "
+"list.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">Yn tynnu'r cofnod dewiswyd o'r "
+"rhestr.</ahelp>"
+
+#: wikisettings.xhp#par_id1029084.help.text
+msgid ""
+"When you click Add or Edit, the <link "
+"href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> dialog opens."
+msgstr ""
+"Wrth i chi glicio Ychwanegu neu Golygu , mae deialog <link "
+"href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> yn agor."
+
+#~ msgid "StarOffice/StarSuite 8 Update 10"
+#~ msgstr "StarOffice/StarSuite 8 Diweddariad 10"
+
+#~ msgid "OpenOffice.org 2.4"
+#~ msgstr "OpenOffice.org 2.4"
+
+#~ msgid ""
+#~ "Before you install the @WIKIEXTENSIONPRODUCTNAME@, ensure that StarOffice or "
+#~ "OpenOffice.org uses a Java Runtime Environment (JRE). To check the status "
+#~ "of the JRE, choose <item type=\"menuitem\">Tools - Options - "
+#~ "StarOffice/OpenOffice.org - Java</item>. Ensure that \"Use a Java runtime "
+#~ "environment\" is marked and that a Java runtime folder is selected in the big "
+#~ "listbox. If no JRE was activated, then activate a JRE 1.4 or later and "
+#~ "restart StarOffice/OpenOffice.org."
+#~ msgstr ""
+#~ "Cyn gosod @WIKIEXTENSIONPRODUCTNAME@, gwnewch yn siŵr fod StarOffice neu "
+#~ "OpenOffice.org yn defnyddio Java Runtime Environment (JRE). I wirio statws y "
+#~ "JRE, dewiswch <item type=\"menuitem\">Offer - Dewisiadau - "
+#~ "StarOffice/OpenOffice.org - Java</item>. Gwnewch yn siŵr fod  \"Defnyddio "
+#~ "Java runtime environment\" wedi ei farcio a bod ffolder Java runtime folder "
+#~ "wedi ei ddewis yn y blwch rhestr fawr. Os nad oes JRE yn weithredol, yna "
+#~ "gweithredwch JRE 1.4 neu ddiweddarach ac ailddechrau "
+#~ "StarOffice/OpenOffice.org."
+
+#~ msgid ""
+#~ "Close StarOffice/StarSuite/OpenOffice.org, and close also the Quickstarter "
+#~ "if enabled."
+#~ msgstr ""
+#~ "Caewch StarOffice/StarSuite/OpenOffice.org, a chau'r Cychwyn Cyflym os yw'n "
+#~ "weithredol."
+
+#~ msgid ""
+#~ "Note: You can store your user name and password for all respective dialogs "
+#~ "inside StarOffice/OpenOffice.org. The password will be stored in a secure "
+#~ "way, where access is maintained by a master password. To enable the master "
+#~ "password, choose <item type=\"menuitem\">Tools - Options - "
+#~ "StarOffice/OpenOffice.org - Security</item>."
+#~ msgstr ""
+#~ "Nodyn: Gallwch gadw eich enw defnyddiwr a chyfrinair ar gyfer dialogau "
+#~ "perthnasol o fewn StarOffice/OpenOffice.org. Bydd y cyfrinair yn cael ei "
+#~ "gadw mewn dull diogel, lle mae mynediad yn cael ei gynnal gan brif "
+#~ "gyfrinair. Er mwyn galluogi prif gyfrinair, dewiswch <item "
+#~ "type=\"menuitem\">Offer - Dewisiadau - StarOffice/OpenOffice.org - "
+#~ "Diogelwch</item>."
+
+#~ msgid ""
+#~ "Optionally enable \"Save password\" to save the password between sessions. A "
+#~ "master password is used to maintain access to all saved passwords. Choose "
+#~ "<item type=\"menuitem\">Tools - Options - StarOffice/OpenOffice.org - "
+#~ "Security</item> to enable the master password. \"Save password\" is "
+#~ "unavailable when the master password is not enabled."
+#~ msgstr ""
+#~ "Yn ddewisol galluogwch \"Cadw cyfrinair\" i gadw'r cyfrinair rhwng sesiynau. "
+#~ "Mae prif gyfrinair yn cael ei ddefnyddio i gynnal mynediad i'r holl "
+#~ "gyfrineiriau sydd ynghadw. Dewiswch <item type=\"menuitem\">Offer - Dewisiadau "
+#~ "- StarOffice/OpenOffice.org -  Diogelwch</item> i alluogi'r prif gyfrinair. "
+#~ "Nid yw \"Cadw cyfrinair\" ar gael pan nad yw'r prif gyfrinair wedi ei "
+#~ "alluogi."
+
+#~ msgid ""
+#~ "<ahelp hid=\".\" visibility=\"hidden\">Enable to store your password between "
+#~ "sessions. The master password must be enabled, see <item "
+#~ "type=\"menuitem\">Tools - Options - StarOffice/OpenOffice.org - "
+#~ "Security</item>.</ahelp>"
+#~ msgstr ""
+#~ "<ahelp hid=\".\" visibility=\"hidden\">Galluogwch er mwyn cadw eich cyfrinair "
+#~ "rhwng sesiynau. Rhaid i'r prif gyfrinair fod wedi ei alluogi, gw. <item "
+#~ "type=\"menuitem\">Offer - Dewisiadau - StarOffice/OpenOffice.org - "
+#~ "Diogelwch</item>.</ahelp>"
+
+#~ msgid ""
+#~ "If you have enabled the master password feature on the Security tab page of "
+#~ "the Tools - Options - StarOffice/OpenOffice.org dialog, then the software "
+#~ "can store your password and automatically insert the data where necessary. "
+#~ "Enable the \"Save password\" checkbox to store your password."
+#~ msgstr ""
+#~ "Os ydych wedi galluogi prif gyfrinair yn adran Diogelwch tudalen Offer - "
+#~ "Dewisiadau - StarOffice/OpenOffice.org, yna mae'r feddalwedd yn gallu cadw "
+#~ "eich cyfrinair a mewnosod y data'n awtomatig lle mae'r angen. Galluogwch "
+#~ "flwch ticio \"Cadw cyfrinair\" i gadw eich cyfrinair."
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: ~\n"
+
+#: Addons.xcu#.Addons.AddonUI.OfficeMenuBarMerging.com.sun.star.wiki.S1.MenuItems.M2.Title.value.text
+msgid "To Media~Wiki..."
+msgstr "I'r Media~Wiki..."
+
+#: OptionsDialog.xcu#.OptionsDialog.Nodes.Internet.Leaves.com.sun.star.wiki.options.Label.value.text
+msgid "MediaWiki"
+msgstr "MediaWiki"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n==2) ? 1 : 0;\n"
+"X-Generator: Pootle 2.1.6\n"
+"X-Accelerator-Marker: ~\n"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.GeneralSendError.value.text
+msgid "The operation 'Send to MediaWiki' could not be completed successfully."
+msgstr "Nid oedd modd cyflawni'r weithred 'Anfon at MediaWiki' yn llwyddiannus."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.NoWikiFilter.value.text
+msgid ""
+"The MediaWiki export filter cannot be found. Choose 'Tools-XML Filter "
+"Settings' to install the filter, or use the setup to install the component."
+msgstr ""
+"Nid oedd modd canfo hidl allforio MediaWiki. Dewiswch 'Offer-Gosodiadau Hidl "
+"XML' i osod yr hidl, neu ddefnyddio gosod i osod y cydran."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.NoConnectionToURL.value.text
+msgid "A connection to the MediaWiki system at '$ARG1' could not be created."
+msgstr "Nid oedd modd creu cysylltiad gyda system MediaWiki system yn '$ARG1'."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.WrongLogin.value.text
+msgid ""
+"User name or password is incorrect. Please try again, or leave the fields "
+"blank for an anonymous connection."
+msgstr ""
+"Enw defnyddiwr neu gyfrinair yn anghywir. Ceisiwch eto, neu adael y meysydd "
+"yn wag ar gyfer cysylltiad anhysbys."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.InvalidURL.value.text
+msgid "A connection could not be created because the URL is invalid."
+msgstr "Nid oedd modd creu'r cysylltiad gan fod yr URL yn annilys."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.NoURL.value.text
+msgid "Specify a MediaWiki server by providing a URL."
+msgstr "Pennu gweinydd MediaWiki drwy ddarparu URL."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.CancelSending.value.text
+msgid ""
+"The transfer has been interrupted. Please check the integrity of the wiki "
+"article."
+msgstr "Mae'r trosglwyddiad wed ei darfu. Gwiriwch ddilysrwydd yr erthygl wiki."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_UrlLabel.value.text
+msgid "U~RL"
+msgstr "U~RL"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_UsernameLabel.value.text
+msgid "~Username"
+msgstr "~Enw Defnyddiwr:"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_PasswordLabel.value.text
+msgid "~Password"
+msgstr "~Cyfrinair"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendTitle.value.text
+msgid "Send to MediaWiki"
+msgstr "~Anfon at MediaWiki"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_WikiArticle.value.text
+msgid "Wiki article"
+msgstr "Erthygl MediaWiki"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_No.value.text
+msgid "No"
+msgstr "Na"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_OK.value.text
+msgid "OK"
+msgstr "Iawn"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_Yes.value.text
+msgid "Yes"
+msgstr "Iawn"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_AddButton.value.text
+msgid "~Add..."
+msgstr "~Ychwanegu..."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditButton.value.text
+msgid "~Edit..."
+msgstr "~Golygu..."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendButton.value.text
+msgid "~Send"
+msgstr "~Anfon"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_RemoveButton.value.text
+msgid "~Remove"
+msgstr "~Tynnu"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_NewWikiPage_Label1.value.text
+msgid ""
+"A wiki article with the title '$ARG1' does not exist yet. Do you want to "
+"create a new article with that name?"
+msgstr ""
+"Nid oes erthygl wiki gyda'r teitl '$ARG1' yn bodoli eto. Hoffech chi greu "
+"erthygl newydd gyda'r enw hwnnw?"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_Label1.value.text
+msgid "Media~Wiki Server"
+msgstr "Gweinydd ~MediaWiki"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_Label2.value.text
+msgid "~Title"
+msgstr "~Teitl"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_Label3.value.text
+msgid "S~ummary"
+msgstr "C~rynodeb"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_MinorCheck.value.text
+msgid "This is a ~minor edit"
+msgstr "~Mân olygu"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_BrowserCheck.value.text
+msgid "Show in web ~browser"
+msgstr "Rhagolwg ~Porwr Gwe"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.UnknownCert.value.text
+msgid "The certificate of the selected site is unknown."
+msgstr "Mae tystysgrif y wefan yn anhysbys."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_MediaWiki_Title.value.text
+msgid "MediaWiki"
+msgstr "MediaWiki"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_AccountLine.value.text
+msgid "Account"
+msgstr "Cyfrif"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_WikiLine.value.text
+msgid "MediaWiki Server"
+msgstr "Gweinydd MediaWiki"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_SaveBox.value.text
+msgid "~Save password"
+msgstr "C~adw cyfrinair"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_MediaWiki_Extension_String.value.text
+msgid "@WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_WikiPageExists_Label1.value.text
+msgid ""
+"A wiki article with the title '$ARG1' already exists.&#13;&#13;Do you want "
+"to replace the current article with your article?&#13;&#13;"
+msgstr ""
+"Mae erthygl wiki gyda'r teitl '$ ARG1' yn bodoli eisoes.&#13;&#13;Ydych chi "
+"eisiau cyfnewid yr erthygl gyfredol gyda'ch erthygl chi?&#13;&#13;"
+
+#~ msgid "A connection could not be created, because the URL is invalid."
+#~ msgstr "Nid oedd modd creu cysylltiad, gan fod yr URL yn annilys."

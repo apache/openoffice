@@ -1,0 +1,1353 @@
+"X-Accelerator-Marker: ~\n"
+
+#: wizard.src#DLG_FIRSTSTART_WIZARD.modaldialog.text
+msgctxt "wizard.src#DLG_FIRSTSTART_WIZARD.modaldialog.text"
+msgid "Welcome to %PRODUCTNAME %PRODUCTVERSION"
+msgstr "ברוכים הבאים ל-‪%PRODUCTNAME %PRODUCTVERSION‏"
+
+#: wizard.src#STR_STATE_WELCOME.string.text
+msgid "Welcome"
+msgstr "ברוכים הבאים"
+
+#: wizard.src#STR_STATE_LICENSE.string.text
+msgid "License Agreement"
+msgstr "הסכם הרישוי"
+
+#: wizard.src#STR_STATE_MIGRATION.string.text
+msgid "Personal Data"
+msgstr "פרטים אישיים"
+
+#: wizard.src#STR_STATE_USER.string.text
+msgid "User name"
+msgstr "שם משתמש"
+
+#: wizard.src#STR_STATE_UPDATE_CHECK.string.text
+msgctxt "wizard.src#STR_STATE_UPDATE_CHECK.string.text"
+msgid "Online Update"
+msgstr "עדכון מקוון"
+
+#: wizard.src#STR_STATE_REGISTRATION.string.text
+msgid "Registration"
+msgstr "הרשמה"
+
+#: wizard.src#STR_WELCOME_MIGRATION.string.text
+msgid ""
+"This wizard will guide you through the license agreement, the transfer of "
+"user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n"
+"\n"
+"Click 'Next' to continue."
+msgstr ""
+"האשף ידריך אותך באשיור הרשיון, העברת הגדרות משתמש מ־%OLD_VERSION, והרישום של "
+"%PRODUCTNAME.\n"
+"\n"
+"לחץ על 'הבא' כדי להמשיך."
+
+#: wizard.src#STR_WELCOME_WITHOUT_LICENSE.string.text
+msgid ""
+"This wizard will guide you through the registration of %PRODUCTNAME.\n"
+"\n"
+"Click 'Next' to continue."
+msgstr ""
+"אשף זה ינחה אותך דרך ההרשמה של %PRODUCTNAME.\n"
+"\n"
+"יש ללחוץ 'הבא' כדי להמשיך."
+
+#: wizard.src#STR_FINISH.string.text
+msgid "~Finish"
+msgstr "סיום"
+
+#: wizard.src#STR_REGISTRATION_OOO.string.text
+msgid ""
+"You now have the opportunity to support and contribute to the fastest "
+"growing open source community in the world.\n"
+"\n"
+"Help us prove that %PRODUCTNAME has already gained significant market share "
+"by registering.\n"
+"\n"
+"Registering is voluntary and without obligation."
+msgstr ""
+"מעכשיו יש לך הזדמנות לתמוך ולתרום לקהילת הקוד הפתוח הגדלה בקצה הכי מהיר "
+"בעולם.\n"
+"\n"
+"עזור לנו להוכיח שהמוצר %PRODUCTNAME כבר צבר נתח שוק משמעותי ע\"י הרשמה.\n"
+"\n"
+"ההרשמה היא בהתנדבות וללא כל מחוייבות."
+
+#: wizard.src#ERRBOX_REG_NOSYSBROWSER.errorbox.text
+msgid ""
+"An error occurred in starting the web browser.\n"
+"Please check the %PRODUCTNAME and web browser settings."
+msgstr ""
+"ארעה שגיאה בעת הפעלת הדפדפן.‏\n"
+"נא לבדוק את הגדרות הדפדפן של ‏‪%PRODUCTNAME‏"
+
+#: wizard.src#QB_ASK_DECLINE.querybox.text
+msgid "Do you really want to decline?"
+msgstr "נו... את/ה באמת לא מסכימ/ה?‏"
+
+#: wizard.src#TP_WELCOME.FT_WELCOME_HEADER.fixedtext.text
+msgctxt "wizard.src#TP_WELCOME.FT_WELCOME_HEADER.fixedtext.text"
+msgid "Welcome to %PRODUCTNAME %PRODUCTVERSION"
+msgstr "ברוכים הבאים ל-‪%PRODUCTNAME %PRODUCTVERSION‏"
+
+#: wizard.src#TP_WELCOME.FT_WELCOME_BODY.fixedtext.text
+msgid ""
+"This wizard will guide you through the license agreement and the "
+"registration of %PRODUCTNAME.\n"
+"\n"
+"Click 'Next' to continue."
+msgstr ""
+"אשף זה מסביר את תנאי הרישוי ותהליך ההרשמה של ‏‪%PRODUCTNAME‬‏.‏\n"
+"\n"
+"יש ללחוץ 'הבא' כדי להמשיך."
+
+#: wizard.src#TP_LICENSE.FT_LICENSE_HEADER.fixedtext.text
+msgid "Please follow these steps to accept the license"
+msgstr "נא לעקוב אחר השלבים הבאים כדי להסכים לרישיון."
+
+#: wizard.src#TP_LICENSE.FT_LICENSE_BODY_1.fixedtext.text
+msgid "1."
+msgstr ".1"
+
+#: wizard.src#TP_LICENSE.FT_LICENSE_BODY_1_TXT.fixedtext.text
+msgid ""
+"View the complete License Agreement. Please use the scrollbar or the '%"
+"PAGEDOWN' button in this dialog to view the entire license text."
+msgstr ""
+"יש לקרוא את כל הסכם הרישוי. נא להשתמש במקש הדפדוף למטה ‏‪(Page Down)‬‏ או "
+"בשולי הגלילה כדי לעיין בכל ההסכם.‏"
+
+#: wizard.src#TP_LICENSE.FT_LICENSE_BODY_2.fixedtext.text
+msgid "2."
+msgstr ".2"
+
+#: wizard.src#TP_LICENSE.FT_LICENSE_BODY_2_TXT.fixedtext.text
+msgid "Click 'Accept' to accept the terms of the Agreement."
+msgstr "יש ללחוץ 'אישור' כדי לציין קבלת תנאי הרישוי. ‏"
+
+#: wizard.src#TP_LICENSE.PB_LICENSE_DOWN.pushbutton.text
+msgid "Scroll Do~wn"
+msgstr "גלילה למטה"
+
+#: wizard.src#STR_LICENSE_ACCEPT.string.text
+msgid "~Accept"
+msgstr "אישור"
+
+#: wizard.src#STR_LICENSE_DECLINE.string.text
+msgid "~Decline"
+msgstr "דחייה"
+
+#: wizard.src#TP_MIGRATION.FT_MIGRATION_HEADER.fixedtext.text
+msgctxt "wizard.src#TP_MIGRATION.FT_MIGRATION_HEADER.fixedtext.text"
+msgid "Transfer personal data"
+msgstr "להעביר את הפרטים האישיים"
+
+#: wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.fixedtext.text
+msgid ""
+"Most personal data from %OLDPRODUCT installation can be reused in %"
+"PRODUCTNAME %PRODUCTVERSION.\n"
+"\n"
+"If you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, "
+"unmark the check box."
+msgstr ""
+"ניתן להעביר הגדרות אישיות מ ‏‪%OLDPRODUCT‬‏ ל ‏‪%PRODUCTVERSION‬‏.‏\n"
+"\n"
+"הסימון בקופסת הסימון למטה יגרום להעברת תבניות, הגדרות גלריה, מילונים וכדומה "
+"מהגרסה הישנה לגרסה הנוכחית. להעביר כל ההגדרות האישיות, יש למלא אחרי ההוראות "
+"בקובץ ה'קרא אותי'. יש להסיר את הסימון אם אינך רוצה להעביר את ההגדרות "
+"האישיות.‏"
+
+#: wizard.src#TP_MIGRATION.CB_MIGRATION.checkbox.text
+msgctxt "wizard.src#TP_MIGRATION.CB_MIGRATION.checkbox.text"
+msgid "Transfer personal data"
+msgstr "להעביר את הפרטים האישיים"
+
+#: wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_HEADER.fixedtext.text
+msgctxt "wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_HEADER.fixedtext.text"
+msgid "Online Update"
+msgstr "עדכון מקוון"
+
+#: wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_BODY.fixedtext.text
+msgid ""
+"%PRODUCTNAME searches automatically at regular intervals for new versions.\n"
+"In doing so online update does not transfer personal data.\n"
+"As soon as a new version is available, you will be notified.\n"
+"\n"
+"You can configure this feature at Tools / Options... / %PRODUCTNAME / Online "
+"Update."
+msgstr ""
+"העדכון המקוון אינו מעביר מידע פרטי כלשהו מהמחשב שלך בזמן ש ‏‪%PRODUCTNAME‬‏ "
+"מחפשת אוטומטית גרסאות חדשות.‏‪\n"
+"המערכת תודיע לך ‬כאשר גרסה חדשה תהיה זמינה.‏‪\n"
+"\n"
+"באפשרותך להגדיר תכונה זו בכלים / אפשרויות... / ‏‪ %PRODUCTNAME‬‏/ עדכון "
+"מקוון.‏"
+
+#: wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.checkbox.text
+msgid "~Check for updates automatically"
+msgstr "בדיקת עדכונים אוטומטית"
+
+#: wizard.src#TP_USER.FT_USER_HEADER.fixedtext.text
+msgid "Provide your full name and initials below"
+msgstr "יש לציין שם מלא ושם בראשי תיבות למטה"
+
+#: wizard.src#TP_USER.FT_USER_BODY.fixedtext.text
+msgid ""
+"The user name will be used in the document properties, templates and when "
+"you record changes made to documents."
+msgstr "שם המשתמש יופיע בתכונות מסמך, בתבניות וברישום שינויים למסמכים.‏"
+
+#: wizard.src#TP_USER.FT_USER_FIRST.fixedtext.text
+msgid "~First name"
+msgstr "שם פרטי"
+
+#: wizard.src#TP_USER.FT_USER_LAST.fixedtext.text
+msgid "~Last name"
+msgstr "שם משפחה"
+
+#: wizard.src#TP_USER.FT_USER_INITIALS.fixedtext.text
+msgid "~Initials"
+msgstr "ראשי תיבות"
+
+#: wizard.src#TP_USER.FT_USER_FATHER.fixedtext.text
+msgid "~Father's name"
+msgstr "שם אב"
+
+#: wizard.src#TP_REGISTRATION.FT_REGISTRATION_HEADER.fixedtext.text
+msgid "%PRODUCTNAME Registration"
+msgstr "רישום ‏‫%PRODUCTNAME‏"
+
+#: wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.fixedtext.text
+msgid ""
+"You now have the opportunity to register as a %PRODUCTNAME user. "
+"Registration is voluntary and is without obligation.\n"
+"\n"
+"If you register, we can inform you about new developments concerning this "
+"product."
+msgstr ""
+"ניתן להרשם כמשתמש ‏‪%PRODUCTNAME‬‏. ההרשמה אינה חובה ואינה מחייבת.‏\n"
+"\n"
+"מי שנרשם יקבל הודעות על התפתחויות בפיתוח המוצר.‏"
+
+#: wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.radiobutton.text
+msgid "I want to register ~now"
+msgstr "אני מעוניין להרשם עכשיו"
+
+#: wizard.src#TP_REGISTRATION.RB_REGISTRATION_LATER.radiobutton.text
+msgid "I want to register ~later"
+msgstr "אני ארשם מאוחר יותר"
+
+#: wizard.src#TP_REGISTRATION.RB_REGISTRATION_NEVER.radiobutton.text
+msgid "I do not want to ~register"
+msgstr "אני לא מעוניין להרשם"
+
+#: wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.fixedtext.text
+msgid ""
+"We hope you enjoy working with %PRODUCTNAME.\n"
+"\n"
+"To exit the wizard, click 'Finish'."
+msgstr ""
+"אנו מקווים שתהנו מ-‪%PRODUCTNAME‬‏.‏\n"
+"\n"
+"ליציאה מהאשף יש ללחוץ 'סיום'.‏"
+"X-Accelerator-Marker: ~\n"
+
+#: desktop.src#STR_RECOVER_QUERY.string.text
+msgid "Should the file \"$1\" be restored?"
+msgstr "האם לשחזר את הקובץ \"$1\"?‏"
+
+#: desktop.src#STR_RECOVER_TITLE.string.text
+msgid "File Recovery"
+msgstr "שיחזור קבצים"
+
+#: desktop.src#STR_RECOVER_PREPARED.warningbox.text
+msgid ""
+"An unrecoverable error has occurred.\n"
+"\n"
+"All modified files have been saved and can\n"
+"probably be recovered at program restart."
+msgstr ""
+"ארע כשל במוצר.‏\n"
+"\n"
+"כל הקבצים נשמרו ויש סיכוי סביר שיהיו שלמים ומעודכנים\n"
+"בעת הפעלה מחדש של המוצר. - בהצלחה"
+
+#: desktop.src#STR_BOOTSTRAP_ERR_CANNOT_START.string.text
+msgid "The application cannot be started. "
+msgstr "אין אפשרות להפעיל את היישום. ‏"
+
+#: desktop.src#STR_BOOTSTRAP_ERR_DIR_MISSING.string.text
+msgid "The configuration directory \"$1\" could not be found."
+msgstr "תיקיית התצורה \"$1\" לא אותרה.‏"
+
+#: desktop.src#STR_BOOTSTRAP_ERR_PATH_INVALID.string.text
+msgid "The installation path is invalid."
+msgstr "נתיב ההתקנה אינו תקף.‏"
+
+#: desktop.src#STR_BOOTSTRAP_ERR_NO_PATH.string.text
+msgid "The installation path is not available."
+msgstr "נתיב ההתקנה אינו זמין.‏"
+
+#: desktop.src#STR_BOOTSTRAP_ERR_INTERNAL.string.text
+msgid "An internal error occurred."
+msgstr "ארעה שגיאה פנימית.‏"
+
+#: desktop.src#STR_BOOTSTRAP_ERR_FILE_CORRUPT.string.text
+msgid "The configuration file \"$1\" is corrupt."
+msgstr "קובץ התצורה \"$1\" משובש.‏"
+
+#: desktop.src#STR_BOOTSTRAP_ERR_FILE_MISSING.string.text
+msgid "The configuration file \"$1\" was not found."
+msgstr "קובץ התצורה \"$1\" לא אותר.‏"
+
+#: desktop.src#STR_BOOTSTRAP_ERR_NO_SUPPORT.string.text
+msgid "The configuration file \"$1\" does not support the current version."
+msgstr "קובץ התצורה \"$1\" אינו מתאים לגרסא הנוכחית של התוכנה.‏"
+
+#: desktop.src#STR_BOOTSTRAP_ERR_LANGUAGE_MISSING.string.text
+msgid "The user interface language cannot be determined."
+msgstr "לא ניתן להבחין מהי שפת הממשק למשתמש."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_NO_SERVICE.string.text
+msgid "The component manager is not available."
+msgstr "מנהל הרכיבים אינו זמין.‏"
+
+#: desktop.src#STR_BOOTSTRAP_ERR_NO_CFG_SERVICE.string.text
+msgid "The configuration service is not available."
+msgstr "שירות התצורה אינו זמין.‏"
+
+#: desktop.src#STR_BOOTSTRAP_ERR_MULTISESSION.string.text
+msgid ""
+"You have another instance running in a different terminal session. Close "
+"that instance and then try again."
+msgstr ""
+
+#: desktop.src#STR_ASK_START_SETUP_MANUALLY.string.text
+msgid ""
+"Start the setup application to repair the installation from the CD or the "
+"folder containing the installation packages."
+msgstr ""
+"כדי לתקן את ההתקנה, יש להפעיל את תוכנית ההתקנה מהתקליטור או מהתיקיה המכילה "
+"את חתכולה של מדיית ההתקנה.‏"
+
+#: desktop.src#STR_CONFIG_ERR_SETTINGS_INCOMPLETE.string.text
+msgid ""
+"The startup settings for accessing the central configuration are incomplete. "
+""
+msgstr "ההגדרות ההתחלתיות לצורך גישה להגדרות המרכזיות אינן שלמות.‏"
+
+#: desktop.src#STR_CONFIG_ERR_CANNOT_CONNECT.string.text
+msgid "A connection to the central configuration could not be established. "
+msgstr "לא ניתן ליצור קשר עם מאגר התצורה המרכזי.‏"
+
+#: desktop.src#STR_CONFIG_ERR_RIGHTS_MISSING.string.text
+msgid ""
+"You cannot access the central configuration because of missing access "
+"rights. "
+msgstr "לא ניתן ליצור קשר עם מאגר התצורה המרכזי בגלל העדר הרשאות גישה.‏"
+
+#: desktop.src#STR_CONFIG_ERR_ACCESS_GENERAL.string.text
+msgid "A general error occurred while accessing your central configuration. "
+msgstr "שגיאה כללית בזמן גישה להגדרות המרכזיות."
+
+#: desktop.src#STR_CONFIG_ERR_NO_WRITE_ACCESS.string.text
+msgid ""
+"The changes to your personal settings cannot be stored centrally because of "
+"missing access rights. "
+msgstr ""
+"אין אפשרות לשמור את ההגדרות האישיות שלך במאגר המרכזי כי חסרות הרשאות "
+"מתאימות.‏"
+
+#: desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.string.text
+msgid ""
+"%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME "
+"configuration data.\n"
+"\n"
+"Please contact your system administrator."
+msgstr ""
+"אין אפשרות להפעיל את ‏‪%PRODUCTNAME‬‏ בגלל שגיאה בעת גישה לנתוני התצורה.‏\n"
+"\n"
+"יש להתייעץ עם מנהל הרשת כדי לפתור את הבעיה.‏"
+
+#: desktop.src#STR_INTERNAL_ERRMSG.string.text
+msgid "The following internal error has occurred: "
+msgstr "השגיאה הבאה ארעה: ‏"
+
+#: desktop.src#QBX_USERDATALOCKED.querybox.text
+msgid ""
+"Either another instance of %PRODUCTNAME is accessing your personal settings "
+"or your personal settings are locked.\n"
+"Simultaneous access can lead to inconsistencies in your personal settings. "
+"Before continuing, you should make sure user '$u' closes %PRODUCTNAME on "
+"host '$h'.\n"
+"\n"
+"Do you really want to continue?"
+msgstr ""
+"הרצה אחרת של ‏‪%PRODUCTNAME‬‏ משתמשת בהגדרות האישיות שלך, או שההגדרות "
+"האישיות נעולות.‏\n"
+"גישה בו זמנית להגדרות האישיות יכולה לגרום לשיבוש בהגדרות. יש לוודא שמשתמש "
+"‏‪'$u'‬‏ סוגר/ת את ‏‪%PRODUCTNAME‬‏ במחשב ‏‪'$h'‬‏.‏\n"
+"\n"
+"האם להמשיך עכשיו בכל זאת?‏"
+
+#: desktop.src#STR_TITLE_USERDATALOCKED.string.text
+msgctxt "desktop.src#STR_TITLE_USERDATALOCKED.string.text"
+msgid "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "‏‪‏‪‏‪%PRODUCTNAME‬‏‬‏‬‏ %PRODUCTVERSION"
+
+#: desktop.src#EBX_ERR_PRINTDISABLED.errorbox.text
+msgid "Printing is disabled. No documents can be printed."
+msgstr "יכולת ההדפסה חסומה. אין אפשרות להדפיס כעת.‏"
+
+#: desktop.src#INFOBOX_EXPIRED.infobox.text
+msgid ""
+"This Evaluation Version has expired. To find out more about %PRODUCTNAME,\n"
+"visit http://www.oracle.com/us/products/applications/open-office."
+msgstr ""
+"פג תוקפה של גרסאת הדגמה זו. כדי ללמוד עוד על ‏‪%PRODUCTNAME‬‏, \n"
+"ניתן לבקר באתר http://www.oracle.com/us/products/applications/open-office"
+
+#: desktop.src#STR_TITLE_EXPIRED.string.text
+msgctxt "desktop.src#STR_TITLE_EXPIRED.string.text"
+msgid "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "‏‪‏‪‏‪%PRODUCTNAME‬‏‬‏‬‏ %PRODUCTVERSION"
+
+#: desktop.src#STR_BOOTSTRAP_ERR_NO_PATHSET_SERVICE.string.text
+msgid "The path manager is not available.\n"
+msgstr "מנהל הנתיבים אינו זמין.‏\n"
+
+#: desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.string.text
+msgid ""
+"%PRODUCTNAME user installation could not be completed due to insufficient "
+"free disk space. Please free more disc space at the following location and "
+"restart %PRODUCTNAME:\n"
+"\n"
+msgstr ""
+"לא ניתן להשלים את התקנת המשתמש של ‏‪%PRODUCTNAME‬‏ עקב חוסר שטח פנוי בדיסק. "
+"נא לשחרר מקום בדיסק ב:‏\n"
+"\n"
+
+#: desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.string.text
+msgid ""
+"%PRODUCTNAME user installation could not be processed due to missing access "
+"rights. Please make sure that you have sufficient access rights for the "
+"following location and restart %PRODUCTNAME:\n"
+"\n"
+msgstr ""
+"לא ניתן להשלים את התקנת המשתמש של ‏‪%PRODUCTNAME‬‏ עקב חוסר הרשאות. נא לבדוק "
+"שיש הרשאות מתאימות להתקנה ב:‏\n"
+"\n"
+"X-Accelerator-Marker: ~\n"
+
+#: dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.fixedtext.text
+msgid ""
+"The extension cannot be installed as the following\n"
+"system dependencies are not fulfilled:"
+msgstr "לא ניתן להתקין את ההרחבה כי התוכנות הבאות חסרות:"
+
+#: dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.modaldialog.text
+msgid "System dependencies check"
+msgstr "בדיקת המצאות תוכנות נדרשות"
+
+#: dp_gui_dialog.src#RID_STR_ADD_PACKAGES.string.text
+msgid "Add Extension(s)"
+msgstr "הוספת חבילות...‏"
+
+#: dp_gui_dialog.src#RID_CTX_ITEM_REMOVE.string.text
+msgid "~Remove"
+msgstr "הסרה"
+
+#: dp_gui_dialog.src#RID_CTX_ITEM_ENABLE.string.text
+msgid "~Enable"
+msgstr "לאפשר הפעלה"
+
+#: dp_gui_dialog.src#RID_CTX_ITEM_DISABLE.string.text
+msgid "~Disable"
+msgstr "לחסום הפעלה"
+
+#: dp_gui_dialog.src#RID_CTX_ITEM_CHECK_UPDATE.string.text
+msgid "~Update..."
+msgstr "עדכון...‏"
+
+#: dp_gui_dialog.src#RID_CTX_ITEM_OPTIONS.string.text
+msgid "~Options..."
+msgstr "אפשרויות..."
+
+#: dp_gui_dialog.src#RID_STR_ADDING_PACKAGES.string.text
+msgctxt "dp_gui_dialog.src#RID_STR_ADDING_PACKAGES.string.text"
+msgid "Adding %EXTENSION_NAME"
+msgstr "הוספת חבילות"
+
+#: dp_gui_dialog.src#RID_STR_REMOVING_PACKAGES.string.text
+msgid "Removing %EXTENSION_NAME"
+msgstr "החסרת חבילות"
+
+#: dp_gui_dialog.src#RID_STR_ENABLING_PACKAGES.string.text
+msgid "Enabling %EXTENSION_NAME"
+msgstr "לאפשר הפעלת חבילה"
+
+#: dp_gui_dialog.src#RID_STR_DISABLING_PACKAGES.string.text
+msgid "Disabling %EXTENSION_NAME"
+msgstr "לחסום הפעלת חבילה"
+
+#: dp_gui_dialog.src#RID_STR_ACCEPT_LICENSE.string.text
+msgid "Accept license for %EXTENSION_NAME"
+msgstr "אשר רשיון ל־%EXTENSION_NAME"
+
+#: dp_gui_dialog.src#RID_STR_INSTALL_FOR_ALL.string.text
+msgid "~For all users"
+msgstr "לכל משתמש"
+
+#: dp_gui_dialog.src#RID_STR_INSTALL_FOR_ME.string.text
+msgid "~Only for me"
+msgstr "בשבילי בלבד"
+
+#: dp_gui_dialog.src#RID_STR_ERROR_UNKNOWN_STATUS.string.text
+msgid "Error: The status of this extension is unknown"
+msgstr "שגיאה: המצב של תוסף זה אינו ידוע"
+
+#: dp_gui_dialog.src#RID_STR_CLOSE_BTN.string.text
+msgctxt "dp_gui_dialog.src#RID_STR_CLOSE_BTN.string.text"
+msgid "Close"
+msgstr "סגירה"
+
+#: dp_gui_dialog.src#RID_STR_EXIT_BTN.string.text
+msgid "Quit"
+msgstr "יציאה"
+
+#: dp_gui_dialog.src#RID_STR_NO_ADMIN_PRIVILEGE.string.text
+msgid ""
+"%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME "
+"extensions are not compatible with this version and need to be updated "
+"before %PRODUCTNAME can be started.\n"
+"\n"
+"Updating of shared extension requires administrator privileges. Contact your "
+"system administrator to update the following shared extensions:"
+msgstr ""
+"%PRODUCTNAME עודכן לגרסה חדשה. כמה הרחבות משותפות לכמה משתמשים של %"
+"PRODUCTNAME אינם תואמות עם גרסה זו, ויש לעדכנם קודם להפעלת %PRODUCTNAME.\n"
+"\n"
+"עדכון הרחבות משותפות לכמה משתמשים דורש הרשאות ניהוליות. צור קשר עם מנהל "
+"המערכת שלך לעדכון ההרחבות הבאות:"
+
+#: dp_gui_dialog.src#RID_STR_ERROR_MISSING_DEPENDENCIES.string.text
+msgid ""
+"The extension cannot be enabled as the following system dependencies are not "
+"fulfilled:"
+msgstr "לא ניתן לאפשר את ההרחבה היות והתלויות הבאות לא מולאו:"
+
+#: dp_gui_dialog.src#RID_STR_ERROR_MISSING_LICENSE.string.text
+msgid "This extension is disabled because you haven't accepted the license yet.\n"
+msgstr "ההרחבה מנוטרלת היות וטרם אושר רשיונה.\n"
+
+#: dp_gui_dialog.src#RID_STR_SHOW_LICENSE_CMD.string.text
+msgid "Show license"
+msgstr "צפה ברשיון"
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_HEADER.fixedtext.text
+msgid ""
+"Please follow these steps to proceed with the installation of the extension:"
+msgstr "נא לעקוב אחר השלבים הבאים כדי להמשיך בהתקנת ההרחבה:"
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1.fixedtext.text
+msgid "1."
+msgstr "1"
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1_TXT.fixedtext.text
+msgid ""
+"Read the complete License Agreement. Use the scroll bar or the \\'Scroll "
+"Down\\' button in this dialog to view the entire license text."
+msgstr ""
+"יש לקראו את הסכם הרישוי במלואו. ניתן להשתמש בסרגל הגלילה או בכפתור הדפדוף "
+"לראות את כל ההסכם."
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2.fixedtext.text
+msgid "2."
+msgstr "2"
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2_TXT.fixedtext.text
+msgid ""
+"Accept the License Agreement for the extension by pressing the \\'Accept\\' "
+"button."
+msgstr "ניתן להביע הסכמה להסכם הרישוי על ידי לחיצת כפתור ה'אישור'."
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.PB_LICENSE_DOWN.pushbutton.text
+msgid "~Scroll Down"
+msgstr "דפדוף למטה"
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_ACCEPT.okbutton.text
+msgid "Accept"
+msgstr "אישור"
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_DECLINE.cancelbutton.text
+msgid "Decline"
+msgstr "דחייה"
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.modaldialog.text
+msgctxt "dp_gui_dialog.src#RID_DLG_LICENSE.modaldialog.text"
+msgid "Extension Software License Agreement"
+msgstr "הסכם הרישוי לתוכנת ההרחבה"
+
+#: dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.RID_EM_BTN_CLOSE.okbutton.text
+msgctxt "dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.RID_EM_BTN_CLOSE.okbutton.text"
+msgid "Close"
+msgstr "סגירה"
+
+#: dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.modaldialog.text
+msgctxt "dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.modaldialog.text"
+msgid "Extension Software License Agreement"
+msgstr "הסכם הרישוי לתוכנת ההרחבה"
+
+#: dp_gui_dialog.src#RID_WARNINGBOX_INSTALL_EXTENSION.warningbox.text
+msgid ""
+"You are about to install the extension \\'%NAME\\'.\n"
+"Click \\'OK\\' to proceed with the installation.\n"
+"Click \\'Cancel\\' to stop the installation."
+msgstr ""
+"התקנת התוסף %NAME עומדת להתחיל.\n"
+"יש ללחוץ אישור כדי להתקין את התוסף,\n"
+"או ללחוץ ביטול להפסיק את ההתקנה."
+
+#: dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_EXTENSION.warningbox.text
+msgid ""
+"You are about to remove the extension \\'%NAME\\'.\n"
+"Click \\'OK\\' to remove the extension.\n"
+"Click \\'Cancel\\' to stop removing the extension."
+msgstr ""
+"ההרחבה \\'%NAME\\' תוסר כעת.\n"
+"לחץ על \\'אישור\\' להסרת ההרחבה.\n"
+"לחץ על \\'ביטול\\' לביטול הסרת ההרחבה."
+
+#: dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_SHARED_EXTENSION.warningbox.text
+msgid ""
+"Make sure that no further users are working with the same %PRODUCTNAME, when "
+"changing shared extensions in a multi user environment.\n"
+"Click \\'OK\\' to remove the extension.\n"
+"Click \\'Cancel\\' to stop removing the extension."
+msgstr ""
+"יש לוודא שאין משתמשי %PRODUCTNAME אחרים פעילים בזמן שינוי תצורת התוספים.\n"
+"יש ללחוץ \\'אישור\\' כדי להסיר את התוסף,\n"
+"או ללחוץ \\'ביטול\\' להפסיק את ההסרה."
+
+#: dp_gui_dialog.src#RID_WARNINGBOX_ENABLE_SHARED_EXTENSION.warningbox.text
+msgid ""
+"Make sure that no further users are working with the same %PRODUCTNAME, when "
+"changing shared extensions in a multi user environment.\n"
+"Click \\'OK\\' to enable the extension.\n"
+"Click \\'Cancel\\' to stop enabling the extension."
+msgstr ""
+"יש לוודא שאין משתמשי %PRODUCTNAME אחרים פעילים בזמן שינוי תצורת התוספים.\n"
+"יש ללחוץ \\'אישור\\' כדי לאפשר את התוסף,\n"
+"או ללחוץ \\'ביטול\\' כדי לא לאפשר את התוסף."
+
+#: dp_gui_dialog.src#RID_WARNINGBOX_DISABLE_SHARED_EXTENSION.warningbox.text
+msgid ""
+"Make sure that no further users are working with the same %PRODUCTNAME, when "
+"changing shared extensions in a multi user environment.\n"
+"Click \\'OK\\' to disable the extension.\n"
+"Click \\'Cancel\\' to stop disabling the extension."
+msgstr ""
+"יש לוודא שאין משתמשי %PRODUCTNAME אחרים פעילים בזמן שינוי תצורת התוספים.\n"
+"יש ללחוץ \\'אישור\\' כדי לחסום את התוסף,\n"
+"או ללחוץ \\'ביטול\\' כדי לא לחסום את התוסף."
+
+#: dp_gui_dialog.src#RID_STR_UNSUPPORTED_PLATFORM.string.text
+msgid "The extension \\'%Name\\' does not work on this computer."
+msgstr "התוסף \\'%Name\\' לא יפעל על מחשב זה."
+
+#: dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_ADD.pushbutton.text
+msgid "~Add..."
+msgstr "הוספה...‏"
+
+#: dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CHECK_UPDATES.pushbutton.text
+msgctxt "dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CHECK_UPDATES.pushbutton.text"
+msgid "Check for ~Updates..."
+msgstr "בדיקת עדכונים..."
+
+#: dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_FT_GET_EXTENSIONS.fixedtext.text
+msgid "Get more extensions online..."
+msgstr "תוספים נוספים כאן..."
+
+#: dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_FT_PROGRESS.fixedtext.text
+msgctxt "dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_FT_PROGRESS.fixedtext.text"
+msgid "Adding %EXTENSION_NAME"
+msgstr "הוספת %EXTENSION_NAME"
+
+#: dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CLOSE.okbutton.text
+msgctxt "dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CLOSE.okbutton.text"
+msgid "Close"
+msgstr "סגירה"
+
+#: dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.modelessdialog.text
+msgid "Extension Manager"
+msgstr "מנהל חבילות"
+
+#: dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_MSG.fixedtext.text
+msgid ""
+"%PRODUCTNAME has been updated to a new version. Some installed %PRODUCTNAME "
+"extensions are not compatible with this version and need to be updated "
+"before they can be used."
+msgstr ""
+"%PRODUCTNAME עודכן לגירסה חדשה. כמה מההרחבות המותקנות ב-%PRODUCTNAME אינם "
+"תואמות עם גירסה חדשה זו, ודרוש לעדכנם לפני שימוש."
+
+#: dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_PROGRESS.fixedtext.text
+msgctxt "dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_PROGRESS.fixedtext.text"
+msgid "Adding %EXTENSION_NAME"
+msgstr "הוספת %EXTENSION_NAME"
+
+#: dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CHECK_UPDATES.pushbutton.text
+msgctxt "dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CHECK_UPDATES.pushbutton.text"
+msgid "Check for ~Updates..."
+msgstr "בדיקת עדכונים..."
+
+#: dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CLOSE.pushbutton.text
+msgid "Disable all"
+msgstr "נטרל הכל"
+
+#: dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.modaldialog.text
+msgid "Extension Update Required"
+msgstr "נדרש עדכון הרחבה"
+
+#: dp_gui_dialog2.src#RID_QUERYBOX_INSTALL_FOR_ALL.querybox.text
+msgid ""
+"Make sure that no further users are working with the same %PRODUCTNAME, when "
+"installing an extension for all users in a multi user environment.\n"
+"\n"
+"For whom do you want to install the extension?\n"
+msgstr ""
+"בסביבה של שימוש בו זמני של מספר משתמשים, יש לוודא שאין משתמשי %PRODUCTNAME "
+"אחרים פעילים בזמן התקנת תוספים.\n"
+"\n"
+"עבור מי להתקין את התוסף?\n"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CHECKING.fixedtext.text
+msgid "Checking..."
+msgstr "בדיקה...‏"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_UPDATE.fixedtext.text
+msgid "~Available extension updates"
+msgstr "עדכוני חבילות זמינים"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ALL.checkbox.text
+msgid "~Show all updates"
+msgstr "הצגת כל העדכונים"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_DESCRIPTION.fixedline.text
+msgid "Description"
+msgstr "תאור"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_PUBLISHER_LABEL.fixedtext.text
+msgid "Publisher:"
+msgstr "מוציא לאור:"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_RELEASENOTES_LABEL.fixedtext.text
+msgid "What is new:"
+msgstr "מה חדש:"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_RELEASENOTES_LINK.fixedtext.text
+msgid "Release Notes"
+msgstr "הערות שחרור"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_OK.pushbutton.text
+msgid "~Install"
+msgstr "הורדה והתקנה"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CLOSE.pushbutton.text
+msgctxt "dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CLOSE.pushbutton.text"
+msgid "Close"
+msgstr "סגירה"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ERROR.string.text
+msgid "Error"
+msgstr "שגיאה"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NONE.string.text
+msgid "No new updates are available."
+msgstr "אין עדכונים חדשים זמינים.‏"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALLABLE.string.text
+msgid ""
+"No installable updates are available. To see ignored or disabled updates, "
+"mark the check box 'Show all updates'."
+msgstr ""
+"אין עדכונים זמינים להתקנה.‏ כדי לראות עדכונים מבוטלים או שנזנחו, יש לסמן את "
+"תיבת הסימון 'הצגת כל העדכונים'.‏"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_FAILURE.string.text
+msgid "An error occurred:"
+msgstr "אירעה שגיאה:‏"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_UNKNOWNERROR.string.text
+msgid "Unknown error."
+msgstr "שגיאה לא מזוהה.‏"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODESCRIPTION.string.text
+msgid "No more details are available for this update."
+msgstr "אין פרטים נוספים זמינים לעדכון זה."
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALL.string.text
+msgid "The extension cannot be updated because:"
+msgstr "אין אפשרות להתקין את החבילה מכיון ש:‏"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY.string.text
+msgid "Required OpenOffice.org version doesn't match:"
+msgstr "אי התאמה:‏"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY_CUR_VER.string.text
+msgid "You have OpenOffice.org %VERSION"
+msgstr "ברשותך OpenOffice.org %VERSION"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_BROWSERBASED.string.text
+msgid "browser based update"
+msgstr "עדכון על ידי דפדפן"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_VERSION.string.text
+msgid "Version"
+msgstr "גרסה"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORE.string.text
+msgid "Ignore this Update"
+msgstr "התעלם מעדכון זה"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORE_ALL.string.text
+msgid "Ignore all Updates"
+msgstr "התעלם מכל העדכונים"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ENABLE.string.text
+msgid "Enable Updates"
+msgstr "אפשר עדכונים"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORED_UPDATE.string.text
+msgid "This update will be ignored.\n"
+msgstr "עדכון זה ייזנח.\n"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.modaldialog.text
+msgid "Extension Update"
+msgstr "עדכון חבילה"
+
+#: dp_gui_updatedialog.src#RID_WARNINGBOX_UPDATE_SHARED_EXTENSION.warningbox.text
+msgid ""
+"Make sure that no further users are working with the same %PRODUCTNAME, when "
+"changing shared extensions in a multi user environment.\n"
+"Click \\'OK\\' to update the extensions.\n"
+"Click \\'Cancel\\' to stop updating the extensions."
+msgstr ""
+"יש לוודא שאין משתמשי %PRODUCTNAME אחרים פעילים בזמן עדכון התוספים.\n"
+"יש ללחוץ \\'אישור\\' כדי לעדכן את התוספים,\n"
+"או ללחוץ \\'ביטול\\' להפסיק את העדכון."
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_DOWNLOADING.fixedtext.text
+msgid "Downloading extensions..."
+msgstr "מוריד חבילות...‏"
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_RESULTS.fixedtext.text
+msgid "Result"
+msgstr "תוצאה"
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_OK.okbutton.text
+msgid "OK"
+msgstr "אישור"
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ABORT.cancelbutton.text
+msgid "Cancel Update"
+msgstr "בטל עדכון"
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_INSTALLING.string.text
+msgid "Installing extensions..."
+msgstr "מתקין חבילות...‏"
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_FINISHED.string.text
+msgid "Installation finished"
+msgstr "ההתקנה הסתיימה"
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_NO_ERRORS.string.text
+msgid "No errors."
+msgstr "אין שגיאות.‏"
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_DOWNLOAD.string.text
+msgid "Error while downloading extension %NAME. "
+msgstr "שגיאה בזמן הורדת החבילה ‏‪%NAME‬‏.‏"
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_THIS_ERROR_OCCURRED.string.text
+msgid "The error message is: "
+msgstr "הודעת שגיאה:‏"
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_INSTALLATION.string.text
+msgid "Error while installing extension %NAME. "
+msgstr "שגיאה בזמן התקנת החבילה ‏‪%NAME‬‏.‏"
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_LIC_DECLINED.string.text
+msgid "The license agreement for extension %NAME was refused. "
+msgstr "הסכם הרשיון לחבילה ‏‪%NAME‬‏ לא אושר.‏"
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_EXTENSION_NOINSTALL.string.text
+msgid "The extension will not be installed."
+msgstr "החבילה לא תותקן.‏"
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.modaldialog.text
+msgid "Download and Installation"
+msgstr "הורדה והתקנה"
+
+#: dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.warningbox.text
+msgid ""
+"You are about to install version $NEW of the extension \\'$NAME\\'.\n"
+"The newer version $DEPLOYED is already installed.\n"
+"Click \\'OK\\' to replace the installed extension.\n"
+"Click \\'Cancel\\' to stop the installation."
+msgstr ""
+"התקנת גרסת $NEW של תוסף \\'$NAME\\' עומדת להתחיל.\n"
+"גרסה חדשה יותר, $DEPLOYED, כבר מותקנת.\n"
+"יש ללחוץ \\'אישור\\' כדי להחליף את הגרסה המותקנת,\n"
+"או ללחוץ \\'ביטול\\' להפסיק את ההתקנה."
+
+#: dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_LESS_DIFFERENT_NAMES.string.text
+msgid ""
+"You are about to install version $NEW of the extension \\'$NAME\\'.\n"
+"The newer version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\n"
+"Click \\'OK\\' to replace the installed extension.\n"
+"Click \\'Cancel\\' to stop the installation."
+msgstr ""
+"התקנת גרסת $NEW של תוסף \\'$NAME\\' עומדת להתחיל.\n"
+"גרסה חדשה יותר, $DEPLOYED, בשם \\'$OLDNAME\\', כבר מותקנת.\n"
+"יש ללחוץ \\'אישור\\' כדי להחליף את הגרסה המותקנת,\n"
+"או ללחוץ \\'ביטול\\' להפסיק את ההתקנה."
+
+#: dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_EQUAL.warningbox.text
+msgid ""
+"You are about to install version $NEW of the extension \\'$NAME\\'.\n"
+"That version is already installed.\n"
+"Click \\'OK\\' to replace the installed extension.\n"
+"Click \\'Cancel\\' to stop the installation."
+msgstr ""
+"התקנת גרסת $NEW של תוסף \\'$NAME\\' עומדת להתחיל.\n"
+"גרסה הזו כבר מותקנת.\n"
+"יש ללחוץ \\'אישור\\' כדי להחליף את הגרסה המותקנת,\n"
+"או ללחוץ \\'ביטול\\' להפסיק את ההתקנה."
+
+#: dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_EQUAL_DIFFERENT_NAMES.string.text
+msgid ""
+"You are about to install version $NEW of the extension \\'$NAME\\'.\n"
+"That version, named \\'$OLDNAME\\', is already installed.\n"
+"Click \\'OK\\' to replace the installed extension.\n"
+"Click \\'Cancel\\' to stop the installation."
+msgstr ""
+"התקנת גרסת $NEW של תוסף \\'$NAME\\' עומדת להתחיל.\n"
+"גרסה זו, בשם \\'$OLDNAME\\', כבר מותקנת.\n"
+"יש ללחוץ \\'אישור\\' כדי להחליף את הגרסה הקיימת,\n"
+"או ללחוץ \\'ביטול\\' להפסיק את ההתקנה."
+
+#: dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_GREATER.warningbox.text
+msgid ""
+"You are about to install version $NEW of the extension \\'$NAME\\'.\n"
+"The older version $DEPLOYED is already installed.\n"
+"Click \\'OK\\' to replace the installed extension.\n"
+"Click \\'Cancel\\' to stop the installation."
+msgstr ""
+"התקנת גרסת $NEW של תוסף \\'$NAME\\' עומדת להתחיל.\n"
+"הגרסה הישנה, $DEPLOYED, כבר מותקנת.\n"
+"יש ללחוץ \\'אישור\\' כדי להתקין את הגרסה החדשה,\n"
+"או ללחוץ \\'ביטול\\' להפסיק את ההתקנה."
+
+#: dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_GREATER_DIFFERENT_NAMES.string.text
+msgid ""
+"You are about to install version $NEW of the extension \\'$NAME\\'.\n"
+"The older version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\n"
+"Click \\'OK\\' to replace the installed extension.\n"
+"Click \\'Cancel\\' to stop the installation."
+msgstr ""
+"התקנת גרסת $NEW של תוסף \\'$NAME\\' עומדת להתחיל.\n"
+"הגרסה הישנה, גרסת $DEPLOYED, בשם \\'$OLDNAME\\', כבר מותקנת.\n"
+"יש ללחוץ \\'אישור\\' כדי להתקין את הגרסה החדשה,\n"
+"או ללחוץ \\'ביטול\\' להפסיק את ההתקנה."
+
+#~ msgid "No descriptions available for this extension."
+#~ msgstr "אין תיאור זמין לחבילה זו.‏"
+
+#: dp_manager.src#RID_STR_COPYING_PACKAGE.string.text
+msgid "Copying: "
+msgstr "העתקת חבילות: ‏"
+
+#: dp_manager.src#RID_STR_ERROR_WHILE_ADDING.string.text
+msgid "Error while adding: "
+msgstr "שגיאה בעת הוספת חבילה: ‏"
+
+#: dp_manager.src#RID_STR_ERROR_WHILE_REMOVING.string.text
+msgid "Error while removing: "
+msgstr "שגיאה בעת החסרת חבילה: ‏"
+
+#: dp_manager.src#RID_STR_PACKAGE_ALREADY_ADDED.string.text
+msgid "Extension has already been added: "
+msgstr "החבילה כבר כלולה: ‏"
+
+#: dp_manager.src#RID_STR_NO_SUCH_PACKAGE.string.text
+msgid "There is no such extension deployed: "
+msgstr "אין כזאת חבילה: ‏"
+
+#: dp_manager.src#RID_STR_SYNCHRONIZING_REPOSITORY.string.text
+msgid "Synchronizing repository for %NAME extensions"
+msgstr ""
+
+#: dp_registry.src#RID_STR_REGISTERING_PACKAGE.string.text
+msgid "Enabling: "
+msgstr "מאפשרת הפעלת חבילה: ‏"
+
+#: dp_registry.src#RID_STR_REVOKING_PACKAGE.string.text
+msgid "Disabling: "
+msgstr "חוסמת הפעלת חבילה: ‏"
+
+#: dp_registry.src#RID_STR_CANNOT_DETECT_MEDIA_TYPE.string.text
+msgid "Cannot detect media-type: "
+msgstr "לא ניתן לזהות סוג מדיה: ‏"
+
+#: dp_registry.src#RID_STR_UNSUPPORTED_MEDIA_TYPE.string.text
+msgid "This media-type is not supported: "
+msgstr "סוג מדיה זה אינו נתמך: ‏"
+
+#: dp_registry.src#RID_STR_ERROR_WHILE_REGISTERING.string.text
+msgid "An error occurred while enabling: "
+msgstr "ארעה שגיאה בעת איפשור הפעלת חבילה: ‏"
+
+#: dp_registry.src#RID_STR_ERROR_WHILE_REVOKING.string.text
+msgid "An error occurred while disabling: "
+msgstr "ארעה שגיאה בעת חסימת הפעלת חבילה: ‏"
+"X-Accelerator-Marker: ~\n"
+
+#: dp_configuration.src#RID_STR_CONF_SCHEMA.string.text
+msgid "Configuration Schema"
+msgstr "סכימת תצורה"
+
+#: dp_configuration.src#RID_STR_CONF_DATA.string.text
+msgid "Configuration Data"
+msgstr "נתוני תצורה"
+
+#: dp_component.src#RID_STR_DYN_COMPONENT.string.text
+msgid "UNO Dynamic Library Component"
+msgstr "רכיב ספריה דינמי ‏‪UNO‬‏‏"
+
+#: dp_component.src#RID_STR_JAVA_COMPONENT.string.text
+msgid "UNO Java Component"
+msgstr "רכיב ג'אווה ‏‪UNO‬‏‏"
+
+#: dp_component.src#RID_STR_PYTHON_COMPONENT.string.text
+msgid "UNO Python Component"
+msgstr "רכיב ‏‪Python ‏‪UNO‬‏‏"
+
+#: dp_component.src#RID_STR_COMPONENTS.string.text
+msgid "UNO Components"
+msgstr ""
+
+#: dp_component.src#RID_STR_RDB_TYPELIB.string.text
+msgid "UNO RDB Type Library"
+msgstr "ספריה מטיפוס ‏‪UNO‏ RDB‏"
+
+#: dp_component.src#RID_STR_JAVA_TYPELIB.string.text
+msgid "UNO Java Type Library"
+msgstr "ספריה מטיפוס ‏‪UNO‬‏ Java‏"
+
+#: dp_package.src#RID_STR_PACKAGE_BUNDLE.string.text
+msgid "Extension"
+msgstr "אגד חבילות ‏‪UNO‏"
+
+#: dp_script.src#RID_STR_BASIC_LIB.string.text
+msgid "%PRODUCTNAME Basic Library"
+msgstr "ספריית בייסיק ‏‪%PRODUCTNAME‏"
+
+#: dp_script.src#RID_STR_DIALOG_LIB.string.text
+msgid "Dialog Library"
+msgstr "ספריית דו-שיח"
+
+#: dp_script.src#RID_STR_CANNOT_DETERMINE_LIBNAME.string.text
+msgid "The library name could not be determined."
+msgstr "לא ניתן לגלות את שם הספריה.‏"
+
+#: dp_script.src#RID_STR_LIBNAME_ALREADY_EXISTS.string.text
+msgid "This library name already exists. Please choose a different name."
+msgstr "שם זה לספריה כבר קיים. נא לבחור שם אחר.‏"
+
+#: dp_help.src#RID_STR_HELP.string.text
+msgid "Help"
+msgstr "עזרה"
+
+#: dp_help.src#RID_STR_HELPPROCESSING_GENERAL_ERROR.string.text
+msgid "The extension cannot be installed because:\n"
+msgstr "לא ניתן להתקין את התוסף כי:\n"
+
+#: dp_help.src#RID_STR_HELPPROCESSING_XMLPARSING_ERROR.string.text
+msgid "The extension will not be installed because an error occurred in the Help "
+"files:\n"
+msgstr "לא ניתן להתקין את התוסף עקב שגיאה בקבצי העזרה:\n"
+
+#: dp_sfwk.src#RID_STR_SFWK_LIB.string.text
+msgid "%MACROLANG Library"
+msgstr "ספריית ‏‪%MACROLANG‏"
+"X-Accelerator-Marker: ~\n"
+
+#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_1.string.text
+msgid "Extension Software License Agreement of $NAME:"
+msgstr ""
+
+#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_2.string.text
+msgid ""
+"Read the complete License Agreement displayed above. Accept the License "
+"Agreement by typing \"yes\" on the console then press the Return key. Type "
+"\"no\" to decline and to abort the extension setup."
+msgstr ""
+"נא לקראו את ההסכם כולו. נא לאשר הסכמה לתנאי ההסכם על ידי הקשת ‏‪yes‬‏ ולחיצת "
+"מקש ה‏‪enter‬‏. נא להקיש ‏‪no‬‏ אם אינך מסכימה לתנאי ההסכם או כדי להפסיק את "
+"ההתקנה.‏"
+
+#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_3.string.text
+msgid "[Enter \"yes\" or \"no\"]:"
+msgstr "נא להקיש ‏‪yes‬‏ אן ‏‪no‬‏."
+
+#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_4.string.text
+msgid "Your input was not correct. Please enter \"yes\" or \"no\":"
+msgstr "נא להקיש ‏‪yes‬‏ או ‏‪no‬‏/"
+
+#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.string.text
+msgid "YES"
+msgstr "YES"
+
+#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_Y.string.text
+msgid "Y"
+msgstr "Y"
+
+#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_NO.string.text
+msgid "NO"
+msgstr "NO"
+
+#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_N.string.text
+msgid "N"
+msgstr "N"
+
+#: unopkg.src#RID_STR_CONCURRENTINSTANCE.string.text
+msgid ""
+"unopkg cannot be started. The lock file indicates it as already running. If "
+"this does not apply, delete the lock file at:"
+msgstr "כדי להמשיך, צריך לסגור כל הפעלה אחרת של מנהל התוספים."
+
+#: unopkg.src#RID_STR_UNOPKG_ERROR.string.text
+msgid "ERROR: "
+msgstr "שגיאה:"
+"X-Accelerator-Marker: ~\n"
+
+#: dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_UNKNOWN.string.text
+msgid "Unknown"
+msgstr "לא מוכר"
+
+#: dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MIN.string.text
+#, fuzzy
+msgid "Extension requires at least OpenOffice.org %VERSION"
+msgstr "להרחבה דרישה לגרסה מינימום של OpenOffice.org: %VERSION"
+
+#: dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MAX.string.text
+msgid ""
+"Extension doesn't support versions greater than: OpenOffice.org %VERSION"
+msgstr "ההחרבה אינה תומכת בגרסאות מעל: OpenOffice.org %VERSION"
+"X-Accelerator-Marker: ~\n"
+
+#: setup.ulf#_APP_TITLE_.LngText.text
+msgid "Setup"
+msgstr "התקנה"
+
+#: setup.ulf#_APP_PROD_TITLE_.LngText.text
+msgid "The %PRODUCTNAME Setup"
+msgstr "התקנת ‏‪%PRODUCTNAME‬‏‏"
+
+#: setup.ulf#_OUTOFMEM_.LngText.text
+msgid "Out of Memory"
+msgstr "אזל הזכרון"
+
+#: setup.ulf#_NOMSI_.LngText.text
+msgid "Setup was unable to find the msi package."
+msgstr "תוכנית ההתקנה לא הצליחה לאתר את חבילת ה msi.‏"
+
+#: setup.ulf#_USER_CANCELLED_.LngText.text
+msgid "Setup was cancelled"
+msgstr "ההתקנה בוטלה"
+
+#: setup.ulf#_REQUIRES_ADMIN_PRIV_.LngText.text
+msgid ""
+"Administrator privileges are required for upgrading the Windows Installer."
+msgstr "נדרש הרשאת מנהל לשדרוג Windows Installer."
+
+#: setup.ulf#_FILE_NOT_FOUND_.LngText.text
+msgid "Setup was unable to find the file '%s'."
+msgstr "תוכנית ההתקנה לא מצאה את הקובץ ‏‪'%s'‬‏.‏"
+
+#: setup.ulf#_INVALID_PARAM_.LngText.text
+msgid "Invalid command line option '%s'. Please use '/?' for help."
+msgstr ".לא תקנית בשורת הפקודה, אנא השתמש בפרמטר '?/' לעזרה 's%' פקודה"
+
+#: setup.ulf#_SETUP_TO_OLD_.LngText.text
+msgid ""
+"This package requires at least the version '%s' of the Windows Installer. \n"
+"You have Windows Installer '%s' on your system!"
+msgstr ""
+"חבילה זו דורשת לפחות את הגירסה 's%' של שירות המתקין של חלונות. \n"
+"במערכת שלך קיימת הגירסה 's%' של Windows Installer!"
+
+#: setup.ulf#_SETUP_NOT_FOUND_.LngText.text
+msgid ""
+"This package requires the Windows Installer. \n"
+"You need at least Windows Installer '%s' on your system!"
+msgstr ""
+"חבילה זו דורשת את Windows Installer. \n"
+"דרוש לפחות Windows Installer '%s' במערכת שלך!"
+
+#: setup.ulf#_USAGE_.LngText.text
+msgid ""
+"Usage:\n"
+"   /? :  Shows this dialog.\n"
+"   /a :  Performs an administrative installation.\n"
+"   /j[u|m] :  Performs an advertising installation.\n"
+"   /q[n] : Do not show any user interface (silent mode).\n"
+msgstr ""
+"השימוש:\n"
+"   /? :  מראה דו-שיח זה.‏\n"
+"   /a :  מבצע התקנה אדמיניסטראטיבית.‏\n"
+"   /j[u|m] :  מבצע התקנת פרסומת.‏\n"
+"   /q[n] : לא להציג ממשק משתמש (מצב דממה).‏\n"
+"‏"
+
+#: setup.ulf#_ALREADY_RUNNING_.LngText.text
+msgid "There is already a setup process running."
+msgstr "תהליך התקנה אחר כבר פועל.‏"
+
+#: setup.ulf#_UNKNOWN_ERROR_.LngText.text
+msgid "An Unknown Error occured!"
+msgstr "אירעה שגיאה לא ידועה!"
+
+#: setup.ulf#_INVALID_PROFILE_.LngText.text
+msgid "Invalid or incomplete profile."
+msgstr "פרופיל לא שלם או לא חוקי"
+
+#: setup.ulf#_UNKNOWN_LANG_.LngText.text
+msgid "Unknown Language: %d"
+msgstr "שפה ‏‪'%d'‬‏ אינה מוכרת"
+
+#: setup.ulf#_LANGUAGE_ZH_TW_.LngText.text
+msgid "Chinese (traditional)"
+msgstr "סינית (מסורתית)‏"
+
+#: setup.ulf#_LANGUAGE_CS_.LngText.text
+msgid "Czech"
+msgstr "צ'כית"
+
+#: setup.ulf#_LANGUAGE_DA_.LngText.text
+msgid "Danish"
+msgstr "דנית"
+
+#: setup.ulf#_LANGUAGE_DE_DE_.LngText.text
+msgid "German (Germany)"
+msgstr "גרמנית (גרמניה)‏"
+
+#: setup.ulf#_LANGUAGE_EL_.LngText.text
+msgid "Greek"
+msgstr "יוונית"
+
+#: setup.ulf#_LANGUAGE_EN_US_.LngText.text
+msgid "English (USA)"
+msgstr "אנגלית (ארה\"ב)‏"
+
+#: setup.ulf#_LANGUAGE_ES_.LngText.text
+msgid "Spanish (Spain)"
+msgstr "ספרדית (ספרד)‏"
+
+#: setup.ulf#_LANGUAGE_FI_.LngText.text
+msgid "Finnish"
+msgstr "פינית"
+
+#: setup.ulf#_LANGUAGE_FR_FR_.LngText.text
+msgid "French (France)"
+msgstr "צרפתית (צרפת)‏"
+
+#: setup.ulf#_LANGUAGE_HE_.LngText.text
+msgid "Hebrew"
+msgstr "עברית"
+
+#: setup.ulf#_LANGUAGE_HU_.LngText.text
+msgid "Hungarian"
+msgstr "הונגרית"
+
+#: setup.ulf#_LANGUAGE_IT_IT_.LngText.text
+msgid "Italian (Italy)"
+msgstr "איטלקית (איטליה)‏"
+
+#: setup.ulf#_LANGUAGE_JA_.LngText.text
+msgid "Japanese"
+msgstr "יפנית"
+
+#: setup.ulf#_LANGUAGE_KO_.LngText.text
+msgid "Korean"
+msgstr "קוריאנית"
+
+#: setup.ulf#_LANGUAGE_NL_NL_.LngText.text
+msgid "Dutch (Netherlands)"
+msgstr "הולנדית (הולנד)‏"
+
+#: setup.ulf#_LANGUAGE_NO_NO_.LngText.text
+msgid "Norwegian (Bokmål)"
+msgstr "נורווגית ‏‪(Bokmål)‏"
+
+#: setup.ulf#_LANGUAGE_PL_.LngText.text
+msgid "Polish"
+msgstr "פולנית"
+
+#: setup.ulf#_LANGUAGE_PT_BR_.LngText.text
+msgid "Portuguese (Brazil)"
+msgstr "פורטוגזית (ברזיל)‏"
+
+#: setup.ulf#_LANGUAGE_RU_.LngText.text
+msgid "Russian"
+msgstr "רוסית"
+
+#: setup.ulf#_LANGUAGE_SK_.LngText.text
+msgid "Slovak"
+msgstr ""
+
+#: setup.ulf#_LANGUAGE_SV_SE_.LngText.text
+msgid "Swedish (Sweden)"
+msgstr "שוודית (שוודיה)‏"
+
+#: setup.ulf#_LANGUAGE_TH_.LngText.text
+msgid "Thai"
+msgstr "תאילנדית"
+
+#: setup.ulf#_LANGUAGE_TR_.LngText.text
+msgid "Turkish"
+msgstr "תורכית"
+
+#: setup.ulf#_LANGUAGE_ET_.LngText.text
+msgid "Estonian"
+msgstr "אסטונית"
+
+#: setup.ulf#_LANGUAGE_ZH_CN_.LngText.text
+msgid "Chinese (Simplified)"
+msgstr "סינית מפושטת"
+
+#: setup.ulf#_LANGUAGE_PT_PT_.LngText.text
+msgid "Portuguese (Portugal)"
+msgstr "פורטוגזית (פורטוגל)‏"
+
+#~ msgid "Slovakian"
+#~ msgstr "סלובאקית"
+"X-Accelerator-Marker: ~\n"
+
+#: rebasegui.ulf#_APP_TITLE_.LngText.text
+msgid "Installation Status"
+msgstr "מצב ההתקנה"
+
+#: rebasegui.ulf#_MSG_OPTIMIZED_FOR_CLIENT_.LngText.text
+#, fuzzy
+msgid "Installation is optimized for clients."
+msgstr "ההתקנה מותאמת לשרתים."
+
+#: rebasegui.ulf#_MSG_OPTIMIZED_FOR_SERVER_.LngText.text
+msgid "Installation is optimized for servers."
+msgstr "ההתקנה מותאמת לשרתים."
+
+#: rebasegui.ulf#_MSG_NO_INSTALLATION_FOUND_.LngText.text
+msgid "Cannot find Office installation."
+msgstr "לא ניתן למצוא התקנת Office."

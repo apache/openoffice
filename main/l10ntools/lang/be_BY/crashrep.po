@@ -1,0 +1,273 @@
+
+#: crashrep.ulf#_ALLOW_CONTACT_.LngText.text
+msgid "~I allow Oracle to contact me regarding this report."
+msgstr "Я дазваляю Oracle звяртацца да мяне з нагоды гэтага паведамлення."
+
+#: crashrep.ulf#_BACK_BUTTON_.LngText.text
+msgid " << ~Back"
+msgstr " << Назад"
+
+#: crashrep.ulf#_CANCEL_BUTTON_.LngText.text
+msgid "Cancel"
+msgstr "Спыніць*"
+
+#: crashrep.ulf#_DONOT_SEND_BUTTON_.LngText.text
+msgid "Do ~Not Send"
+msgstr "Не адсылаць"
+
+#: crashrep.ulf#_ENTER_DESCRIPTION_.LngText.text
+msgid "~How were you using %PRODUCTNAME% when the error occurred ?"
+msgstr "Якім чынам вы ўжывалі %PRODUCTNAME%, калі здарылася памылка?"
+
+#: crashrep.ulf#_ENTER_EMAIL_.LngText.text
+msgid "Please enter your e-mail address."
+msgstr "Увядзіце ваш адрас эл.пошты."
+
+#: crashrep.ulf#_ENTER_TITLE_.LngText.text
+msgid ""
+"Which type of document (e.g. presentation) were you using when the error "
+"occurred?"
+msgstr ""
+"Які тып дакументу (напр., прэзентацыя) вы апрацоўвалі калі здарылася "
+"памылка?"
+
+#: crashrep.ulf#_ERROR_MSG_DISK_FULL_.LngText.text
+msgid ""
+"The error report could not be temporarily saved and could therefore not be "
+"sent."
+msgstr ""
+"Не ўдалося адаслаць паведамленне пра памылку, таму што не ўдалося запісаць "
+"тымчасовы файл."
+
+#: crashrep.ulf#_ERROR_MSG_NOCONNECT_.LngText.text
+msgid ""
+"The error report could not be sent because there is no Internet connection. "
+"Please check your Internet settings."
+msgstr ""
+"Не ўдалося адаслаць паведамленне пра памылку, таму што няма далучэння да "
+"Інтэрнету. Спраўдзіце настаўленні Інтэрнету."
+
+#: crashrep.ulf#_ERROR_MSG_NOEMAILADDRESS_.LngText.text
+msgid ""
+"You have marked the option 'I allow Oracle to contact me regarding this "
+"report.'\n"
+"Please enter your e-mail address."
+msgstr ""
+"Вы абралі магчымасць \"Я дазваляю Oracle звяртацца да мяне...\"\n"
+"Увядзіце свой адрас эл.пошты."
+
+#: crashrep.ulf#_ERROR_MSG_PROXY_.LngText.text
+msgid ""
+"The error report could not be sent. Please check the proxy settings under "
+"'Options' in the Error Report Tool."
+msgstr ""
+"Не ўдалося адаслаць паведамленне пра памылку. Спраўдзіце настаўленні проксі "
+"ў пункце 'Настаўленні' гэтага кампаненту."
+
+#: crashrep.ulf#_ERROR_MSG_SENDMAIL_.LngText.text
+msgid ""
+"The error report could not be sent because 'sendmail' could not be started.\n"
+"Please check the 'sendmail' settings."
+msgstr ""
+"Не ўдалося адаслаць паведамленне пра памылку, таму што не ўдалося стартаваць "
+"'sendmail'.\n"
+"Спраўдзіце настаўленні 'sendmail'."
+
+#: crashrep.ulf#_ERROR_MSG_SIMPLE_MAPI_.LngText.text
+msgid ""
+"The error report could not be sent because the default e-mail program does "
+"not support MAPI.\n"
+" Please use a MAPI-compatible e-mail program."
+msgstr ""
+"Не ўдалося адаслаць паведамленне пра памылку, таму што стандартная сістэмная "
+"праграма эл.пошты не падтрымлівае MAPI.\n"
+" Выкарыстайце дзеля гэтага праграму эл.пошты, якая сумяшчаецца з MAPI."
+
+#: crashrep.ulf#_MSG_CMDLINE_USAGE_.LngText.text
+msgid "Usage:"
+msgstr "Карыстанне:"
+
+#: crashrep.ulf#_MSG_PARAM_HELP_DESCRIPTION_.LngText.text
+msgid ""
+"Shows this help text.\n"
+"Detailed information can be found in the Setup Guide."
+msgstr ""
+"Паказвае гэты даведкавы тэкст.\n"
+"Больш падрабязна гл. у Дапаможніку па Ўстанаўленні."
+
+#: crashrep.ulf#_MSG_PARAM_PROCESSID_.LngText.text
+msgid "-p <process ID>"
+msgstr "-p <ID працэсу>"
+
+#: crashrep.ulf#_MSG_PARAM_PROCESSID_DESCRIPTION_.LngText.text
+msgid "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
+msgstr "Надае PID працэса %PRODUCTNAME% кампаненту Паведамлення пра памылкі"
+
+#: crashrep.ulf#_NEXT_BUTTON_.LngText.text
+msgid "~Next >>"
+msgstr "Наперад >>"
+
+#: crashrep.ulf#_OK_BUTTON_.LngText.text
+msgid "OK"
+msgstr "OK"
+
+#: crashrep.ulf#_OPTIONS_BUTTON_.LngText.text
+msgid "~Options..."
+msgstr "Настаўленні..."
+
+#: crashrep.ulf#_OPTIONS_TITLE_.LngText.text
+msgid "Options"
+msgstr "Настаўленні"
+
+#: crashrep.ulf#_PRIVACY_URL_.LngText.text
+msgid "http://www.oracle.com/html/services-privacy-policy.html"
+msgstr "http://www.oracle.com/html/services-privacy-policy.html"
+
+#: crashrep.ulf#_PROXY_SETTINGS_ADDRESS_.LngText.text
+msgid "HT~TP Proxy"
+msgstr "Проксі HTTP"
+
+#: crashrep.ulf#_PROXY_SETTINGS_DESCRIPTION_.LngText.text
+msgid ""
+"The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to "
+"be able to send error reports.\n"
+"\n"
+"Companies often use proxy servers in conjunction with a firewall to protect "
+"the network.\n"
+"\n"
+"If this applies to your situation, you have to specify the address and port "
+"for the server."
+msgstr ""
+"Дзеля таго, каб адсылаць паведамленні, гэтаму кампаненту %PRODUCTNAME% "
+"патрабуецца далучэнне да Інтэрнету.\n"
+"\n"
+"У арганізацыях, дзеля абароны ўнутранай сеткі, часта ўжываюцца "
+"проксі-серверы супольна з сеткавымі экранамі (файрволамі).\n"
+"\n"
+"Калі гэта мае месца ў вашай сітуацыі, трэба ўвесці адрас і порт такога "
+"сервера."
+
+#: crashrep.ulf#_PROXY_SETTINGS_DIRECT_.LngText.text
+msgid "Use ~direct connection to the Internet"
+msgstr "Адразу ў Інтэрнет"
+
+#: crashrep.ulf#_PROXY_SETTINGS_HEADER_.LngText.text
+msgid "Proxy settings"
+msgstr "Настаўленні проксі"
+
+#: crashrep.ulf#_PROXY_SETTINGS_MANUAL_.LngText.text
+msgid "Use ~manual settings"
+msgstr "Адвольныя настаўленні"
+
+#: crashrep.ulf#_PROXY_SETTINGS_PORT_.LngText.text
+msgid "~Port"
+msgstr "Порт"
+
+#: crashrep.ulf#_PROXY_SETTINGS_SYSTEM_.LngText.text
+msgid "Use ~system settings"
+msgstr "Як у сістэме"
+
+#: crashrep.ulf#_REPORT_BODY_.LngText.text
+msgid ""
+"The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information "
+"that could help Oracle improve %PRODUCTNAME%.\n"
+"In the spaces below, you can enter a title for your crash report and "
+"describe the action you were trying to carry out when the error occurred. "
+"Then click 'Send'.\n"
+msgstr ""
+"Майстар Паведамлення пра памылку ў %PRODUCTNAME% %PRODUCTVERSION% сабраў "
+"інфармацыю, якая, магчыма, дапаможа Oracle удасканаліць %PRODUCTNAME%.\n"
+"У палях, што ніжэй, можна ўпісаць загаловак і патлумачыць, што і як вы "
+"рабілі да таго і ў момант, калі здарылася памылка. Далей націсніце "
+"'Адаслаць'.\n"
+
+#: crashrep.ulf#_REPORT_CAPTION_.LngText.text
+msgctxt "crashrep.ulf#_REPORT_CAPTION_.LngText.text"
+msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "Паведамленне пра памылку ў %PRODUCTNAME% %PRODUCTVERSION%"
+
+#: crashrep.ulf#_REPORT_HEADER_.LngText.text
+msgid "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
+msgstr "Памылка пры выконванні %PRODUCTNAME% %PRODUCTVERSION%"
+
+#: crashrep.ulf#_SAVE_REPORT_BUTTON_.LngText.text
+msgid "~Save Report..."
+msgstr "Запісаць паведамленне..."
+
+#: crashrep.ulf#_SAVE_REPORT_TITLE_.LngText.text
+msgid "Save Report to"
+msgstr "Запісаць паведамленне ў"
+
+#: crashrep.ulf#_SENDING_REPORT_HEADER_.LngText.text
+msgid "Sending Error Report"
+msgstr "Памылка пры адсыланні паведамлення"
+
+#: crashrep.ulf#_SENDING_REPORT_STATUS_.LngText.text
+msgid "Status: Sending error report"
+msgstr "Статус: адсылаецца паведамленне пра памылку"
+
+#: crashrep.ulf#_SENDING_REPORT_STATUS_FINISHED_.LngText.text
+msgid "Status: The error report has been sent successfully."
+msgstr "Статус: паведамленне пра памылку паспяхова адаслана."
+
+#: crashrep.ulf#_SEND_BUTTON_.LngText.text
+msgid "S~end"
+msgstr "Адаслаць"
+
+#: crashrep.ulf#_SHOW_REPORT_BUTTON_.LngText.text
+msgid "Show ~Report..."
+msgstr "Паказаць паведамленне..."
+
+#: crashrep.ulf#_WELCOME_BODY1_.LngText.text
+msgid ""
+"This error report tool gathers information about how %PRODUCTNAME% is "
+"working and sends it to Oracle to help improve future versions.\n"
+"\n"
+msgstr ""
+"Гэтая прылада збірае звесткі пра тое, як працуе %PRODUCTNAME%, і адсылае іх "
+"у Oracle дзеля дапамогі ў паляпшэнні наступных версій.\n"
+"\n"
+
+#: crashrep.ulf#_WELCOME_BODY2_.LngText.text
+msgid ""
+"It's easy - just send the report without any further effort on your part by "
+"clicking 'Send' in the next dialog, or you can briefly describe how the "
+"error occurred and then click 'Send'. If you want to see the report, click "
+"the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n"
+"\n"
+msgstr ""
+"Усё проста - адашліце паведамленне без ніякіх далейшых намаганняў з вашага "
+"боку, націснуўшы 'Send' у наступным дыялогу, або вы можаце дадаць кароткае "
+"тлумачэнне таго, як здарылася памылка, і пасля націснуць \"Адаслаць\". Калі вы "
+"хочаце прагледзець паведамленне, націсніце \"Паказаць паведамленне\". Калі вы "
+"націснеце \"Не адсылаць\", ніякія звесткі адсылацца не будуць.\n"
+"\n"
+
+#: crashrep.ulf#_WELCOME_BODY3_.LngText.text
+msgid ""
+"Customer Privacy\n"
+"The information gathered is limited to data concerning the state of %"
+"PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information "
+"about passwords or document contents is not collected.\n"
+"\n"
+"The information will only be used to improve the quality of %PRODUCTNAME% "
+"and will not be shared with third parties.\n"
+"For more information on Oracle's privacy policy, visit\n"
+msgstr ""
+"Прыватнасць Карыстальніка\n"
+"Збіраная інфармацыя абмяжоўваецца данымі пра стан %PRODUCTNAME% %"
+"PRODUCTVERSION% у той момант, калі здарылася памылка. Іншая інфармацыя, пра "
+"паролі або змесціва дакументаў, не збіраецца.\n"
+"\n"
+"Інфармацыя будзе ўжывацца выключна дзеля паляпшэння якасці %PRODUCTNAME% і "
+"не будзе даступная трэцяму боку.\n"
+"Каб даведацца больш пра палітыку прыватнасці Oracle, наведайце\n"
+
+#: crashrep.ulf#_WELCOME_CAPTION_.LngText.text
+msgctxt "crashrep.ulf#_WELCOME_CAPTION_.LngText.text"
+msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "Паведамленне пра памылку ў %PRODUCTNAME% %PRODUCTVERSION%"
+
+#: crashrep.ulf#_WELCOME_HEADER_.LngText.text
+msgid "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "Вітае Майстар Паведамлення пра памылку ў %PRODUCTNAME% %PRODUCTVERSION%"

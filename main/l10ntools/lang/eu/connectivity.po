@@ -1,0 +1,822 @@
+
+#: conn_error_message.src#256___2_100___0.string.text
+msgid "The record operation has been vetoed."
+msgstr "Grabazio-eragiketa debekatu egin da."
+
+#: conn_error_message.src#256___2_200___0.string.text
+msgid "The statement contains a cyclic reference to one or more sub queries."
+msgstr ""
+"Instrukzioak azpikontsulta bat edo gehiagoren erreferentzia ziklikoa dauka."
+
+#: conn_error_message.src#256___2_300___0.string.text
+msgid "The name must not contain any slashes ('/')."
+msgstr "Izenak ezin du eduki barra ('/') karaktererik."
+
+#: conn_error_message.src#256___2_301___0.string.text
+msgid "$1$ is no SQL conform identifier."
+msgstr "$1$ ez da SQLren araberako identifikatzailea."
+
+#: conn_error_message.src#256___2_302___0.string.text
+msgid "Query names must not contain quote characters."
+msgstr "Kontsultaren izenak ezin du eduki komatxo karaktererik."
+
+#: conn_error_message.src#256___2_303___0.string.text
+msgid "The name '$1$' is already in use in the database."
+msgstr "'$1$' izena badago lehendik ere datu-basean."
+
+#: conn_error_message.src#256___2_304___0.string.text
+msgid "No connection to the database exists."
+msgstr "Ez da datu-baserako konexiorik existitzen."
+
+#: conn_error_message.src#256___2_500___0.string.text
+msgid "No $1$ exists."
+msgstr "Ez da $1$ existitzen."
+
+#: conn_error_message.src#256___2_550___0.string.text
+msgid "Unable to display the complete table content. Please apply a filter."
+msgstr "Ezin da taularen eduki osoa bistaratu. Aplikatu iragazki bat."
+
+#: conn_shared_res.src#STR_CANNOT_CONVERT_STRING.string.text
+msgid ""
+"The string '$string$' cannot be converted using the encoding '$charset$'."
+msgstr "'$string$' katea ezin da bihurtu '$charset$' kodeketa erabiliz."
+
+#: conn_shared_res.src#STR_CANNOT_OPEN_BOOK.string.text
+msgid "Cannot open Evolution address book."
+msgstr "Ezin da Evolution-en helbide-liburua ireki."
+
+#: conn_shared_res.src#STR_CANT_FIND_CARD_FOR_ROW.string.text
+msgid "Can't find the card for the requested row."
+msgstr "Eskatutako errenkadarako txartela ezin da aurkitu."
+
+#: conn_shared_res.src#STR_CANT_FIND_ROW.string.text
+msgid "Can't find the requested row."
+msgstr "Eskatutako errenkada ezin da aurkitu."
+
+#: conn_shared_res.src#STR_CAN_NOT_CANCEL_ROW_UPDATE.string.text
+msgid "The row update can not be canceled."
+msgstr "Errenkadaren eguneraketa ezin da bertan behera utzi."
+
+#: conn_shared_res.src#STR_CAN_NOT_CREATE_ROW.string.text
+msgid "A new row can not be created."
+msgstr "Ezin da errenkada berria sortu."
+
+#: conn_shared_res.src#STR_COLUMN_NOT_ADDABLE.string.text
+msgid ""
+"The column '$columnname$' could not be added. May be the file system is "
+"write protected."
+msgstr ""
+"'$columnname$' zutabea ezin izan da gehitu. Agian fitxategi-sistema "
+"idazketen aurkako babesa du."
+
+#: conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.string.text
+msgid ""
+"The column '$columnname$' could not be altered. May be the file system is "
+"write protected."
+msgstr ""
+"'$columnname$' zutabea ezin izan da eraldatu. Agian fitxategi-sistema "
+"idazketen aurkako babesa du."
+
+#: conn_shared_res.src#STR_COLUMN_NOT_DROP.string.text
+msgid ""
+"The column at position '$position$' could not be dropped. May be the file "
+"system is write protected."
+msgstr ""
+"'$position$' posizioko zutabea ezin izan da jaregin. Agian fitxategi-sistema "
+"idazketen aurkako babesa du."
+
+#: conn_shared_res.src#STR_COLUMN_NOT_UPDATEABLE.string.text
+msgid "The column at position '$position$' could not be updated."
+msgstr "Ezin izan da '$position$' posizioko zutabea eguneratu."
+
+#: conn_shared_res.src#STR_COMMAND_NOT_FOUND.string.text
+msgid ""
+"The database '$databasename$' could not be started because the command "
+"'$progname$' could not be executed."
+msgstr ""
+"Ezin izan da '$databasename$' datu-basea abiarazi '$progname$' komandoa ezin "
+"izan delako exekutatu."
+
+#: conn_shared_res.src#STR_COMMIT_ROW.string.text
+msgid "Please commit row '$position$' before update rows or insert new rows."
+msgstr ""
+"Baieztatu '$position$' errenkada errenkadak eguneratu edo errenkada berriak "
+"txertatu aurretik."
+
+#: conn_shared_res.src#STR_COULD_NOT_ALTER_TABLE.string.text
+msgid "The table could not be altered."
+msgstr "Taula ezin izan da eraldatu."
+
+#: conn_shared_res.src#STR_COULD_NOT_CONNECT_LDAP.string.text
+msgid "The connection to the LDAP server could not be established."
+msgstr "Ezin izan da LDAP zerbitzariarekin konektatu."
+
+#: conn_shared_res.src#STR_COULD_NOT_CREATE_ADDRESSBOOK.string.text
+msgid "Could not create a new address book. Mozilla error code is $1$."
+msgstr ""
+"Ezin izan da helbide-liburu berri bat sortu. Mozilla-ren errore-kodea: $1$."
+
+#: conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX.string.text
+msgid "The index could not be created. An unknown error appeared."
+msgstr "Ezin izan da indizea sortu. Errore ezezaguna agertu da."
+
+#: conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_KEYSIZE.string.text
+msgid ""
+"The index could not be created. The size of the chosen column is to big."
+msgstr ""
+"Ezin izan da indizerik sortu. Aukeratutako zutabearen tamaina handiegia da."
+
+#: conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NAME.string.text
+msgid ""
+"The index could not be created. The file '$filename$' is used by an other "
+"index."
+msgstr ""
+"Ezin izan da indizea sortu. '$filename$' fitxategia beste indize batek "
+"darabil."
+
+#: conn_shared_res.src#STR_COULD_NOT_CREATE_INDEX_NOT_UNIQUE.string.text
+msgid "The index could not be created. The values are not unique."
+msgstr "Ezin izan da indizea sortu. Balioak ez dira esklusiboak."
+
+#: conn_shared_res.src#STR_COULD_NOT_DELETE_FILE.string.text
+msgid "The file $filename$ could not be deleted."
+msgstr "$filename$ fitxategia ezin da ezabatu."
+
+#: conn_shared_res.src#STR_COULD_NOT_DELETE_INDEX.string.text
+msgid ""
+"The index could not be deleted. An unknown error while accessing the file "
+"system occured."
+msgstr ""
+"Ezin izan da indizea sortu. Errore ezezaguna gertatu da fitxategi-sistema "
+"atzitzean."
+
+#: conn_shared_res.src#STR_COULD_NOT_GET_DIRECTORY_NAME.string.text
+msgid ""
+"An address book directory name could not be retrieved, an unknown error "
+"occurred."
+msgstr ""
+"Helbide-liburuaren direktorio-izena ezin izan da eskuratu, errore ezezaguna "
+"gertatu delako."
+
+#: conn_shared_res.src#STR_COULD_NOT_LOAD_FILE.string.text
+msgid "The file $filename$ could not be loaded."
+msgstr "$filename$ fitxategia ezin izan da kargatu."
+
+#: conn_shared_res.src#STR_COULD_NOT_LOAD_LIB.string.text
+msgid "The library '$libname$' could not be loaded."
+msgstr "Ezin izan da '$libname$' liburutegia kargatu."
+
+#: conn_shared_res.src#STR_COULD_NOT_RETRIEVE_AB_ENTRY.string.text
+msgid ""
+"An address book entry could not be retrieved, an unknown error occurred."
+msgstr ""
+"Helbide-liburuko sarrera ezin izan da eskuratu, errore ezezaguna gertatu "
+"delako."
+
+#: conn_shared_res.src#STR_DATABASE_NEEDS_CONVERTING.string.text
+msgid ""
+"The current database need to be converted. Please insert control user  and "
+"password."
+msgstr ""
+"Uneko datu-basea bihurtu egin behar da. Sartu kontroleko erabiltzailea eta "
+"pasahitza."
+
+#: conn_shared_res.src#STR_DELETE_ROW.string.text
+msgid ""
+"The row could not be deleted. The option \"Display inactive records\" is set."
+msgstr ""
+"Errenkada ezin da ezabatu. \"Bistaratu erregistro inaktiboak\" aukera ezarrita "
+"dago."
+
+#: conn_shared_res.src#STR_DUPLICATE_VALUE_IN_COLUMN.string.text
+msgid "Duplicate value found in column '$columnname$'."
+msgstr "Bikoiztutako balioa aurkitu da '$columnname$' zutabean."
+
+#: conn_shared_res.src#STR_ERRORMSG_SEQUENCE.string.text
+msgid "Function sequence error."
+msgstr "Funtzio sekuentziaren errorea."
+
+#: conn_shared_res.src#STR_ERROR_GET_ROW.string.text
+msgid "An error occured while getting the current row."
+msgstr "Errorea gertatu da uneko errenkada eskuratzean."
+
+#: conn_shared_res.src#STR_ERROR_REFRESH_ROW.string.text
+msgid "An error occured while refreshing the current row."
+msgstr "Errorea gertatu da uneko errenkada freskatzean."
+
+#: conn_shared_res.src#STR_ERR_EXECUTING_QUERY.string.text
+msgid "An error occurred while executing the query."
+msgstr "Errorea gertatu da kontsulta exekutatzean."
+
+#: conn_shared_res.src#STR_FOREIGN_PROCESS_CHANGED_AB.string.text
+msgid ""
+"Mozilla Address Book has been changed out of this process, we can't modify "
+"it in this condition."
+msgstr ""
+"Mozilla helbide-liburua prozesu honetatik kanpo aldatu da, ezin dugu aldatu "
+"egoera horretan."
+
+#: conn_shared_res.src#STR_FORMULA_WRONG.string.text
+msgid "The formula for TypeInfoSettings is wrong!"
+msgstr "TypeInfoSettings formula gaizki dago."
+
+#: conn_shared_res.src#STR_ILLEGAL_MOVEMENT.string.text
+msgid "Illegal cursor movement occured."
+msgstr "Arauz kontrako kurtsorearen mugimendua gertatu da."
+
+#: conn_shared_res.src#STR_INPUTSTREAM_WRONG_LEN.string.text
+msgid ""
+"End of InputStream reached before satisfying length specified when "
+"InputStream was set."
+msgstr ""
+"InputStream amaierara iritsi da InputStream ezarri zenean zehaztutako "
+"luzerara heldu aurretik."
+
+#: conn_shared_res.src#STR_INVALID_BOOKMARK.string.text
+msgid "Invalid bookmark value"
+msgstr "Baliogabeko laster-marka balioa"
+
+#: conn_shared_res.src#STR_INVALID_COLUMNNAME.string.text
+msgid "The column name '$columnname$' is not valid."
+msgstr "'$columnname$' zutabearen izena ez da baliozkoa."
+
+#: conn_shared_res.src#STR_INVALID_COLUMN_DECIMAL_VALUE.string.text
+msgid ""
+"The '$columnname$' column has been defined as a \"Decimal\" type, the max. "
+"length is $precision$ characters (with $scale$ decimal places).\n"
+"\n"
+"The specified value \"$value$ is longer than the number of digits allowed."
+msgstr ""
+"'$columnname$' zutabea \"Dezimala\" motakoa bezala definitu da, gehienezko "
+"luzera $precision$ karaktereekin ($scale$ dezimalekin).\n"
+"\n"
+"Zehaztutako \"$value$\" balioa baimendutako digitu kopurua baino luzeagoa da."
+
+#: conn_shared_res.src#STR_INVALID_COLUMN_DESCRIPTOR_ERROR.string.text
+msgid "Could not append column: invalid column descriptor."
+msgstr "Ezin izan da zutabea erantsi: zutabearen deskriptorea baliogabea."
+
+#: conn_shared_res.src#STR_INVALID_COLUMN_NAME_LENGTH.string.text
+msgid "Invalid column name length for column '$columnname$'."
+msgstr "Baliogabeko zutabe-izenaren luzera '$columnname$' zutabean."
+
+#: conn_shared_res.src#STR_INVALID_COLUMN_PRECISION.string.text
+msgid "Invalid precision for column '$columnname$'."
+msgstr "Baliogabeko doitasuna '$columnname$' zutabean."
+
+#: conn_shared_res.src#STR_INVALID_COLUMN_SELECTION.string.text
+msgid "The statement contains an invalid selection of columns."
+msgstr "Instrukzioak zutabeen baliogabeko hautapena du."
+
+#: conn_shared_res.src#STR_INVALID_COLUMN_TYPE.string.text
+msgid "Invalid column type for column '$columnname$'."
+msgstr "Baliogabeko zutabe mota '$columnname$' zutabean."
+
+#: conn_shared_res.src#STR_INVALID_COLUMN_VALUE.string.text
+msgid ""
+"The column '$columnname$' could not be updated. The value is invalid for "
+"that column."
+msgstr ""
+"'$columnname$' zutabea ezin izan da eguneratu. Balioa ez da baliozkoa zutabe "
+"horrentzako."
+
+#: conn_shared_res.src#STR_INVALID_DBASE_FILE.string.text
+msgid "The file '$filename$' is an invalid (or unrecognized) dBase file."
+msgstr ""
+"'$filename$' fitxategia baliogabeko (edo ezezaguna) dBase fitxategia da."
+
+#: conn_shared_res.src#STR_INVALID_FILE_URL.string.text
+msgid ""
+"The given URL contains no valid local file system path. Please check the "
+"location of your database file."
+msgstr ""
+"Emandako URLak ez du baliozko lokaleko fitxategi-sistemako bide-izenik. "
+"Egiaztatu zure datu-basearen fitxategiaren kokalekua."
+
+#: conn_shared_res.src#STR_INVALID_GROUP_DESCRIPTOR_ERROR.string.text
+msgid "Could not create group: invalid object descriptor."
+msgstr "Ezin izan da taldea sortu: objektuaren deskriptorea baliogabea."
+
+#: conn_shared_res.src#STR_INVALID_INDEX.string.text
+msgid "Invalid descriptor index."
+msgstr "Baliogabeko deskriptore-indizea."
+
+#: conn_shared_res.src#STR_INVALID_INDEX_DESCRIPTOR_ERROR.string.text
+msgid "Could not create index: invalid object descriptor."
+msgstr "Ezin izan da indizea sortu: objektuaren deskriptorea baliogabea."
+
+#: conn_shared_res.src#STR_INVALID_KEY_DESCRIPTOR_ERROR.string.text
+msgid "Could not create key: invalid object descriptor."
+msgstr "Ezin izan da gakoa sortu: objektuaren deskriptorea baliogabea."
+
+#: conn_shared_res.src#STR_INVALID_PARA_COUNT.string.text
+msgid "The count of the given parameter values doesn't match the parameters."
+msgstr "Emandako parametroen balio kopurua ez dator bat parametroekin."
+
+#: conn_shared_res.src#STR_INVALID_PRECISION_SCALE.string.text
+msgid "Precision is less than scale for column '$columnname$'."
+msgstr "Doitasuna '$columnname$' zutabearen eskalaren baino txikiagoa da."
+
+#: conn_shared_res.src#STR_INVALID_ROW_UPDATE.string.text
+msgid "The update call can not be executed. The row is invalid."
+msgstr "Eguneratzeko deia ezin da exekutatu. Errenkada baliogabea da."
+
+#: conn_shared_res.src#STR_INVALID_TABLE_DESCRIPTOR_ERROR.string.text
+msgid "Could not create table: invalid object descriptor."
+msgstr "Ezin izan da taula sortu: objektuaren deskriptorea baliogabea."
+
+#: conn_shared_res.src#STR_INVALID_USER_DESCRIPTOR_ERROR.string.text
+msgid "Could not create user: invalid object descriptor."
+msgstr "Ezin izan da erabiltzailea sortu: objektuaren deskriptorea baliogabea."
+
+#: conn_shared_res.src#STR_INVALID_VIEW_DESCRIPTOR_ERROR.string.text
+msgid "Could not create view: invalid object descriptor."
+msgstr "Ezin izan da ikuspegia sortu: objektuaren deskriptorea baliogabea."
+
+#: conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.string.text
+msgid "The found KDE version is too new. Only KDE up to version $major$.$minor$ is "
+"known to work with this product.\n"
+msgstr "Aurkitutako KDEren bertsioa berriegia da. Produktu hau KDEren "
+"$major$.$minor$ bertsiorarte soilik funtzionatzen duela da jakina.\n"
+
+#: conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.string.text
+msgid ""
+"If you are sure that your KDE version works, you might execute the following "
+"Basic macro to disable this version check:\n"
+"\n"
+msgstr ""
+"Ziur bazaude KDEren bertsioak funtzionatzen duela, exekutatu honako Basic "
+"makroa bertsio honen egiaztaketa desgaitzeko:\n"
+"\n"
+
+#: conn_shared_res.src#STR_KDE_VERSION_TOO_OLD.string.text
+msgid ""
+"KDE version $major$.$minor$ or higher is required to access the KDE Address "
+"Book."
+msgstr ""
+"KDEren $major$.$minor$ edo bertsio altuagoa behar da KDEren helbide-liburua "
+"atzitzeko."
+
+#: conn_shared_res.src#STR_LOAD_FILE_ERROR_MESSAGE.string.text
+msgid ""
+"The attempt to load the file resulted in the following error message "
+"($exception_type$):\n"
+"\n"
+"$error_message$"
+msgstr ""
+"Fitxategia kargatzeko saiakerak honako errore-mezua sortu du "
+"($exception_type$):\n"
+"\n"
+"$error_message$"
+
+#: conn_shared_res.src#STR_MOZILLA_ADDRESSBOOKS.string.text
+msgid "Mozilla/Seamonkey Addressbook Directory"
+msgstr "Mozilla/Seamonkey helbide-liburuaren direktorioa"
+
+#: conn_shared_res.src#STR_MOZILLA_IS_RUNNIG_NO_CHANGES.string.text
+msgid ""
+"You can't make any changes to mozilla address book when mozilla is running."
+msgstr ""
+"Mozilla helbide-liburuan ezin duzu aldaketarik egin Mozilla exekutatzen ari "
+"denean."
+
+#: conn_shared_res.src#STR_MOZILLA_IS_RUNNING.string.text
+msgid "Cannot create new address books while Mozilla is running."
+msgstr "Helbide-liburu berriak ezin dira sortu Mozilla exekutatzen ari denean."
+
+#: conn_shared_res.src#STR_NO_BASEDN.string.text
+msgid "No Base DN was provided."
+msgstr "Ez da DN oinarririk eman."
+
+#: conn_shared_res.src#STR_NO_CLASSNAME.string.text
+msgid "The driver class '$classname$' could not be loaded."
+msgstr "Ezin izan da '$classname$' kontrolatzaile-klasea kargatu."
+
+#: conn_shared_res.src#STR_NO_CLASSNAME_PATH.string.text
+msgid "The additional driver class path is '$classpath$'."
+msgstr "Kontrolatzaile-klasearen bide-izen gehigarria '$classpath$' da."
+
+#: conn_shared_res.src#STR_NO_CONNECTION.string.text
+msgid ""
+"The connection could not be created. May be the necessary data provider is "
+"not installed."
+msgstr ""
+"Ezin izan da konexioa sortu. Agian beharrezkoa den datu-hornitzailea "
+"instalatu gabe dago."
+
+#: conn_shared_res.src#STR_NO_CONNECTION_GIVEN.string.text
+msgid "It doesn't exist a connection to the database."
+msgstr "Ez da datu-baserako konexiorik existitzen."
+
+#: conn_shared_res.src#STR_NO_COUNT_SUPPORT.string.text
+msgid "The driver does not support the 'COUNT' function."
+msgstr "Kontrolatzaileak ez du 'COUNT' funtzioa onartzen."
+
+#: conn_shared_res.src#STR_NO_DISK_SPACE.string.text
+msgid ""
+"The database file '$filename$' could not be created. Please check your disk "
+"space."
+msgstr ""
+"Ezin izan da datu-basearen '$filename$' fitxategia sortu. Egiaztatu disko "
+"gogorraren leku librea."
+
+#: conn_shared_res.src#STR_NO_DOCUMENTUI.string.text
+msgid "The provided DocumentUI is not allowed to be NULL."
+msgstr "Emandako DocumentUI ezin du NULL izan."
+
+#: conn_shared_res.src#STR_NO_ELEMENT_NAME.string.text
+msgid "There is no element named '$name$'."
+msgstr "Ez dago '$name$' izeneko elementurik."
+
+#: conn_shared_res.src#STR_NO_HOSTNAME.string.text
+msgid "No hostname was provided."
+msgstr "Ez da ostalari-izenik eman."
+
+#: conn_shared_res.src#STR_NO_INPUTSTREAM.string.text
+msgid "The input stream was not set."
+msgstr "Sarrerako korrontea ez da ezarri."
+
+#: conn_shared_res.src#STR_NO_JAVA.string.text
+msgid "No Java installation could be found. Please check your installation."
+msgstr "Ez da Java-ren instalaziorik aurkitu. Egiaztatu instalazioa."
+
+#: conn_shared_res.src#STR_NO_KDE_INST.string.text
+msgid "No suitable KDE installation was found."
+msgstr "Ez da KDEren instalazio egokirik aurkitu."
+
+#: conn_shared_res.src#STR_NO_MAC_OS_FOUND.string.text
+msgid "No suitable Mac OS installation was found."
+msgstr "Ez da Mac OSen instalazio egokirik aurkitu."
+
+#: conn_shared_res.src#STR_NO_RESULTSET.string.text
+msgid "The execution of the query doesn't return a valid result set."
+msgstr "Kontsultaren exekuzioak ez du baliozko emaitza multzorik itzuli."
+
+#: conn_shared_res.src#STR_NO_ROWCOUNT.string.text
+msgid "The execution of the update statement doesn't effect any rows."
+msgstr ""
+"Eguneratzearen instrukzioaren exekuzioak ez du inolako errenkadetan "
+"eraginik."
+
+#: conn_shared_res.src#STR_NO_STROAGE.string.text
+msgid "The connection can not be established. No storage or URL was given."
+msgstr "Ezin da konexioa ezarri. Ez da biltegirik edo URLrik eman."
+
+#: conn_shared_res.src#STR_NO_TABLE.string.text
+msgid "No such table!"
+msgstr "Ez dago halako taularik."
+
+#: conn_shared_res.src#STR_NO_TABLENAME.string.text
+msgid "There is no table named '$tablename$'."
+msgstr "Ez dago '$tablename$' izeneko taularik."
+
+#: conn_shared_res.src#STR_NO_TABLE_CONTAINER.string.text
+msgid "An error occured while obtaining the connection's table container."
+msgstr "Errorea gertatu da konexioaren taularen edukigailua lortzean."
+
+#: conn_shared_res.src#STR_NO_TABLE_CREATION_SUPPORT.string.text
+msgid "Creating tables is not supported for this kind of address books."
+msgstr "Helbide-liburu mota honek ez du onartzen taulak sortzea."
+
+#: conn_shared_res.src#STR_NO_TABLE_EDITOR_DIALOG.string.text
+msgid "An error occured while creating the table editor dialog."
+msgstr "Errorea gertatu da taulen editorearen elkarrizketa-koadroa sortzean."
+
+#: conn_shared_res.src#STR_NO_VALID_FILE_URL.string.text
+msgid "The URL '$URL$' is not valid. A connection can not be created."
+msgstr "'$URL$' URLa ez da baliozkoa. Ezin da konexioa sortu."
+
+#: conn_shared_res.src#STR_OE_ADDRESSBOOK.string.text
+msgid "Outlook Express Addressbook"
+msgstr "Outlook Express helbide-liburua"
+
+#: conn_shared_res.src#STR_ONL_ONE_COLUMN_PER_INDEX.string.text
+msgid "The index could not be created. Only one column per index is allowed."
+msgstr "Ezin izan da indizea sortu. Zutabe bat soilik baimentzen da indizeko."
+
+#: conn_shared_res.src#STR_OPERATOR_TOO_COMPLEX.string.text
+msgid "The query can not be executed. The operator is too complex."
+msgstr "Kontsulta ezin da exekutatu. Eragilea konplexuegia da."
+
+#: conn_shared_res.src#STR_OUTLOOK_MAPI_ADDRESSBOOK.string.text
+msgid "Outlook (MAPI) Addressbook"
+msgstr "Outlook (MAPI) helbide-liburua"
+
+#: conn_shared_res.src#STR_PARA_ONLY_PREPARED.string.text
+msgid "Parameters can appear only in prepared statements."
+msgstr "Parametroak prestatutako instrukzioetan soilik ager daitezke."
+
+#: conn_shared_res.src#STR_PRIVILEGE_NOT_GRANTED.string.text
+msgid "Privilege not granted: Only table privileges can be granted."
+msgstr ""
+"Pribilegioak ez dira esleitu. Taularen pribilegioak soilik eslei daitezke."
+
+#: conn_shared_res.src#STR_PRIVILEGE_NOT_REVOKED.string.text
+msgid "Privilege not revoked: Only table privileges can be revoked."
+msgstr ""
+"Pribilegioa ez da errebokatu. Taularen pribilegioak soilik erreboka "
+"daitezke."
+
+#: conn_shared_res.src#STR_QUERY_AT_LEAST_ONE_TABLES.string.text
+msgid "The query can not be executed. It needs at least one table."
+msgstr "Kontsulta ezin da exekutatu. Gutxienez taula bat behar du."
+
+#: conn_shared_res.src#STR_QUERY_COMPLEX_COUNT.string.text
+msgid ""
+"The query can not be executed. It is too complex. Only \"COUNT(*)\" is "
+"supported."
+msgstr ""
+"Kontsulta ezin da exekutatu. Konplexuegia da. Soilik \"COUNT(*)\" onartzen da."
+
+#: conn_shared_res.src#STR_QUERY_FUNCTION_NOT_SUPPORTED.string.text
+msgid "The query can not be executed. The function is not supported."
+msgstr "Kontsulta ezin da exekutatu. Funtzioa ez dago onartuta."
+
+#: conn_shared_res.src#STR_QUERY_INVALID_BETWEEN.string.text
+msgid "The query can not be executed. The 'BETWEEN' arguments are not correct."
+msgstr "Kontsulta ezin da exekutatu. 'BETWEEN' argumentuak ez dira zuzenak."
+
+#: conn_shared_res.src#STR_QUERY_INVALID_IS_NULL_COLUMN.string.text
+msgid ""
+"The query can not be executed. The 'IS NULL' can only be used with a column "
+"name."
+msgstr ""
+"Kontsulta ezin da exekutatu. 'IS NULL' zutabe-izen batekin soilik erabil "
+"daiteke."
+
+#: conn_shared_res.src#STR_QUERY_INVALID_LIKE_COLUMN.string.text
+msgid ""
+"The query can not be executed. You cannot use 'LIKE' with columns of this "
+"type."
+msgstr ""
+"Kontsulta ezin da exekutatu. Ezin duzu 'LIKE' erabili mota honetako "
+"zutabeekin."
+
+#: conn_shared_res.src#STR_QUERY_INVALID_LIKE_STRING.string.text
+msgid ""
+"The query can not be executed. 'LIKE' can be used with a string argument "
+"only."
+msgstr ""
+"Kontsulta ezin da exekutatu. Kate bateko argumentuarekin soilik erabil "
+"daiteke 'LIKE'."
+
+#: conn_shared_res.src#STR_QUERY_LIKE_WILDCARD.string.text
+msgid ""
+"The query can not be executed. The 'LIKE' condition contains wildcard in the "
+"middle."
+msgstr "Kontsulta ezin da exekutatu. 'LIKE' baldintzak komodinak ditu tartean."
+
+#: conn_shared_res.src#STR_QUERY_LIKE_WILDCARD_MANY.string.text
+msgid ""
+"The query can not be executed. The 'LIKE' condition contains too many "
+"wildcards."
+msgstr "Kontsulta ezin da exekutatu. 'LIKE' baldintzak komodin gehiegi ditu."
+
+#: conn_shared_res.src#STR_QUERY_MORE_TABLES.string.text
+msgid "The query can not be executed. It contains more than one table."
+msgstr "Kontsulta ezin da exekutatu. Taula bat baino gehiago ditu."
+
+#: conn_shared_res.src#STR_QUERY_NOT_LIKE_TOO_COMPLEX.string.text
+msgid "The query can not be executed. The 'NOT LIKE' condition is too complex."
+msgstr "Kontsulta ezin da exekutatu. 'NOT LIKE' baldintza konplexuegia da."
+
+#: conn_shared_res.src#STR_QUERY_NO_COLUMN.string.text
+msgid "The query can not be executed. It contains no valid columns."
+msgstr "Kontsulta ezin da exekutatu. Baliozkoak ez diren zutabeak ditu."
+
+#: conn_shared_res.src#STR_QUERY_NO_TABLE.string.text
+msgid "The query can not be executed. It contains no valid table."
+msgstr "Kontsulta ezin da exekutatu. Baliozkoa ez den taula du."
+
+#: conn_shared_res.src#STR_QUERY_TOO_COMPLEX.string.text
+msgid "The query can not be executed. It is too complex."
+msgstr "Kontsulta ezin da exekutatu. Konplexuegia da."
+
+#: conn_shared_res.src#STR_ROW_ALREADY_DELETED.string.text
+msgid "The row could not be deleted. It is already deleted."
+msgstr "Errenkada ezin da ezabatu. Jadanik ezabatuta dago."
+
+#: conn_shared_res.src#STR_ROW_CAN_NOT_SAVE.string.text
+msgid "The current row can not be saved."
+msgstr "Uneko errenkada ezin da gorde."
+
+#: conn_shared_res.src#STR_SORT_BY_COL_ONLY.string.text
+msgid "Can only sort by table columns."
+msgstr "Taularen zutabeen arabera soilik ordena daiteke."
+
+#: conn_shared_res.src#STR_SQL_NAME_ERROR.string.text
+msgid "The name '$name$' doesn't match SQL naming constraints."
+msgstr "'$name$' izena ez dator bat SQLren izendatze-murriztapenekin."
+
+#: conn_shared_res.src#STR_STMT_TYPE_NOT_SUPPORTED.string.text
+msgid "This statement type not supported by this database driver."
+msgstr "Datu-basearen kontrolatzaileak ez du instrukzio mota hau onartzen."
+
+#: conn_shared_res.src#STR_STRING_LENGTH_EXCEEDED.string.text
+msgid ""
+"The string '$string$' exceeds the maximum length of $maxlen$ characters when "
+"converted to the target character set '$charset$'."
+msgstr ""
+"'$string$' kateak gainditu egiten du karaktereen gehieneko kopurua "
+"($maxlen$) '$charset$' karaktere-jokora bihurtzean."
+
+#: conn_shared_res.src#STR_TABLE_NOT_DROP.string.text
+msgid ""
+"The table '$tablename$' could not be dropped. May be the file system is "
+"write protected."
+msgstr ""
+"'$tablename$' taula ezin izan da jaregin. Agian fitxategi-sistema idazketen "
+"aurkako babesa du."
+
+#: conn_shared_res.src#STR_TABLE_READONLY.string.text
+msgid "The table can not be changed. It is read only."
+msgstr "Taula ezin da aldatu. Irakurtzeko soilik da."
+
+#: conn_shared_res.src#STR_THUNDERBIRD_ADDRESSBOOKS.string.text
+msgid "Thunderbird Addressbook Directory"
+msgstr "Thunderbird helbide-liburuaren direktorioa"
+
+#: conn_shared_res.src#STR_TIMEOUT_WAITING.string.text
+msgid "Timed out while waiting for the result."
+msgstr "Denbora-muga gainditu da emaitzaren zain."
+
+#: conn_shared_res.src#STR_TYPE_NOT_CONVERT.string.text
+msgid "The type could not be converted."
+msgstr "Mota ezin izan da bihurtu."
+
+#: conn_shared_res.src#STR_UNKNOWN_COLUMN_NAME.string.text
+msgid "The column name '$columnname$' is unknown."
+msgstr "'$columnname$' zutabe-izena ezezaguna da."
+
+#: conn_shared_res.src#STR_UNKNOWN_COLUMN_TYPE.string.text
+msgid "The type of column at position '$position$' is unknown."
+msgstr "'$position$' posizioko zutabe mota ezezaguna da."
+
+#: conn_shared_res.src#STR_UNKNOWN_PARA_TYPE.string.text
+msgid "The type of parameter at position '$position$' is unknown."
+msgstr "'$position$' posizioko parametroa ezezaguna da."
+
+#: conn_shared_res.src#STR_UNSPECIFIED_ERROR.string.text
+msgid "An unknown error occured."
+msgstr "Errore ezezagun bat gertatu da."
+
+#: conn_shared_res.src#STR_UNSUPPORTED_FEATURE.string.text
+msgid ""
+"The driver does not support the functionality for '$featurename$'. It is not "
+"implemented."
+msgstr ""
+"Kontrolatzaileak ez du '$featurename$' funtzionalitatea onartzen. Ez dago "
+"inplementaturik."
+
+#: conn_shared_res.src#STR_UNSUPPORTED_FUNCTION.string.text
+msgid "The driver does not support the function '$functionname$'."
+msgstr "Kontrolatzaileak ez du '$functionname$' funtzioa onartzen."
+
+#: conn_shared_res.src#STR_URI_SYNTAX_ERROR.string.text
+msgid "The connection URL is invalid."
+msgstr "URL konexioa ez da baliozkoa."
+
+#: conn_shared_res.src#STR_USER_NO_DELETE.string.text
+msgid ""
+"This user couldn't be deleted. Otherwise the database stays in a "
+"inconsistent state."
+msgstr ""
+"Erabiltzaile hau ezin da ezabatu. Bestela datu-basea egoera kontraesakorrean "
+"egongo da."
+
+#: conn_shared_res.src#STR_VIEW_NO_COMMAND_ERROR.string.text
+msgid "Could not create view: no command object."
+msgstr "Ezin izan da ikuspegia sortu: komandoaren objekturik ez."
+
+#: conn_shared_res.src#STR_WRONG_PARAM_INDEX.string.text
+msgid ""
+"You tried to set a parameter at position '$pos$' but there is/are only "
+"'$count$' parameter(s) allowed. One reason may be that the property "
+"\"ParameterNameSubstitution\" is not set to TRUE in the data source."
+msgstr ""
+"Parametro bat '$pos$' posizioan ezartzea saiatu zara, baina '$count$' "
+"parametro soilik onartzen da/dira. Arrazoi bat datuen iturburuan "
+"\"ParameterNameSubstitution\" propietatea TRUE (egia) gisa ez dagoela ezarrita "
+"izan daiteke."
+
+#: ado.xcu#.Drivers.Installed.sdbc_ado__.DriverTypeDisplayName.value.text
+msgid "ADO"
+msgstr "ADO"
+
+#: ado.xcu#.Drivers.Installed.sdbc_ado_access_PROVIDER_Microsoft.Jet.OLEDB.4.0_DATA_SOURCE__.DriverTypeDisplayName.value.text
+msgid "Microsoft Access"
+msgstr "Microsoft Access"
+
+#: ado.xcu#.Drivers.Installed.sdbc_ado_access_Provider_Microsoft.ACE.OLEDB.12.0_DATA_SOURCE__.DriverTypeDisplayName.value.text
+msgid "Microsoft Access 2007"
+msgstr "Microsoft Access 2007"
+
+#: hsqldb.xcu#.Drivers.Installed.sdbc_embedded_hsqldb.DriverTypeDisplayName.value.text
+msgid "HSQL database engine"
+msgstr "HSQL datu-baseetako bilatzailea"
+
+#: odbc.xcu#.Drivers.Installed.sdbc_odbc__.DriverTypeDisplayName.value.text
+msgid "ODBC"
+msgstr "ODBC"
+
+#: calc.xcu#.Drivers.Installed.sdbc_calc__.DriverTypeDisplayName.value.text
+msgid "Spreadsheet"
+msgstr "Kalkulu-orria"
+
+#: macab.xcu#.Drivers.Installed.sdbc_address_macab.DriverTypeDisplayName.value.text
+msgid "Mac OS X Address Book"
+msgstr "Mac OS X helbide-liburua"
+
+#: jdbc.xcu#.Drivers.Installed.jdbc__.DriverTypeDisplayName.value.text
+msgid "JDBC"
+msgstr "JDBC"
+
+#: jdbc.xcu#.Drivers.Installed.jdbc_oracle_thin__.DriverTypeDisplayName.value.text
+msgid "Oracle JDBC"
+msgstr "Oracle JDBC"
+
+#: evoab2.xcu#.Drivers.Installed.sdbc_address_evolution_groupwise.DriverTypeDisplayName.value.text
+msgid "Groupwise"
+msgstr "Groupwise"
+
+#: evoab2.xcu#.Drivers.Installed.sdbc_address_evolution_ldap.DriverTypeDisplayName.value.text
+msgid "Evolution LDAP"
+msgstr "Evolution LDAP"
+
+#: evoab2.xcu#.Drivers.Installed.sdbc_address_evolution_local.DriverTypeDisplayName.value.text
+msgid "Evolution Local"
+msgstr "Evolution lokala"
+
+#: evoab.xcu#.Drivers.Installed.sdbc_address_evolution_groupwise.DriverTypeDisplayName.value.text
+msgid "Groupwise"
+msgstr "Groupwise"
+
+#: evoab.xcu#.Drivers.Installed.sdbc_address_evolution_ldap.DriverTypeDisplayName.value.text
+msgid "Evolution LDAP"
+msgstr "Evolution LDAP"
+
+#: flat.xcu#.Drivers.Installed.sdbc_flat__.DriverTypeDisplayName.value.text
+msgid "Text"
+msgstr "Testua"
+
+#: adabas.xcu#.Drivers.Installed.sdbc_adabas__.DriverTypeDisplayName.value.text
+msgid "Adabas D"
+msgstr "Adabas D"
+
+#: dbase.xcu#.Drivers.Installed.sdbc_dbase__.DriverTypeDisplayName.value.text
+msgid "dBASE"
+msgstr "dBASE"
+
+#: mysql.xcu#.Drivers.Installed.sdbc_mysql_jdbc__.DriverTypeDisplayName.value.text
+msgid "MySQL (JDBC)"
+msgstr "MySQL (JDBC)"
+
+#: mysql.xcu#.Drivers.Installed.sdbc_mysql_mysqlc__.DriverTypeDisplayName.value.text
+msgid "MySQL (Native)"
+msgstr "MySQL (jatorrizkoa)"
+
+#: mysql.xcu#.Drivers.Installed.sdbc_mysql_odbc__.DriverTypeDisplayName.value.text
+msgid "MySQL (ODBC)"
+msgstr "MySQL (ODBC)"
+
+#: mozab.xcu#.Drivers.Installed.sdbc_address_ldap__.DriverTypeDisplayName.value.text
+msgctxt "mozab.xcu#.Drivers.Installed.sdbc_address_ldap__.DriverTypeDisplayName.value.text"
+msgid "LDAP Address Book"
+msgstr "LDAP helbide-liburua"
+
+#: mozab.xcu#.Drivers.Installed.sdbc_address_mozilla_.DriverTypeDisplayName.value.text
+msgctxt "mozab.xcu#.Drivers.Installed.sdbc_address_mozilla_.DriverTypeDisplayName.value.text"
+msgid "SeaMonkey Address Book"
+msgstr "Mozilla helbide-liburua"
+
+#: mozab.xcu#.Drivers.Installed.sdbc_address_outlook.DriverTypeDisplayName.value.text
+msgid "Microsoft Outlook Address Book"
+msgstr "Microsoft Outlook helbide-liburua"
+
+#: mozab.xcu#.Drivers.Installed.sdbc_address_outlookexp.DriverTypeDisplayName.value.text
+msgid "Microsoft Windows Address Book"
+msgstr "Microsoft Windows helbide-liburua"
+
+#: mozab.xcu#.Drivers.Installed.sdbc_address_thunderbird_.DriverTypeDisplayName.value.text
+msgctxt "mozab.xcu#.Drivers.Installed.sdbc_address_thunderbird_.DriverTypeDisplayName.value.text"
+msgid "Thunderbird Address Book"
+msgstr "Thunderbird helbide-liburua"
+
+#: mozab2.xcu#.Drivers.Installed.sdbc_address_ldap__.DriverTypeDisplayName.value.text
+msgctxt "mozab2.xcu#.Drivers.Installed.sdbc_address_ldap__.DriverTypeDisplayName.value.text"
+msgid "LDAP Address Book"
+msgstr "LDAP helbide-liburua"
+
+#: mozab2.xcu#.Drivers.Installed.sdbc_address_mozilla_.DriverTypeDisplayName.value.text
+msgctxt "mozab2.xcu#.Drivers.Installed.sdbc_address_mozilla_.DriverTypeDisplayName.value.text"
+msgid "SeaMonkey Address Book"
+msgstr "Mozilla helbide-liburua"
+
+#: mozab2.xcu#.Drivers.Installed.sdbc_address_thunderbird_.DriverTypeDisplayName.value.text
+msgctxt "mozab2.xcu#.Drivers.Installed.sdbc_address_thunderbird_.DriverTypeDisplayName.value.text"
+msgid "Thunderbird Address Book"
+msgstr "Thunderbird helbide-liburua"
+
+#: kab.xcu#.Drivers.Installed.sdbc_address_kab.DriverTypeDisplayName.value.text
+msgid "KDE Address Book"
+msgstr "KDE helbide-liburua"

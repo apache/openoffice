@@ -1,0 +1,1772 @@
+
+#: sb.src#ERRCODE_BASMGR_LIBLOAD___ERRCODE_RES_MASK.string.text
+msgid "Error loading library '$(ARG1)'."
+msgstr "កំហុស​ផ្ទុក​បណ្ណាល័យ '$(ARG1)' ។"
+
+#: sb.src#ERRCODE_BASMGR_LIBSAVE___ERRCODE_RES_MASK.string.text
+msgid "Error saving library: '$(ARG1)'."
+msgstr "កំហុស​រក្សាទុក​បណ្ណាល័យ ៖ '$(ARG1)' ។"
+
+#: sb.src#ERRCODE_BASMGR_MGROPEN___ERRCODE_RES_MASK.string.text
+msgid "The BASIC from the file '$(ARG1)' could not be initialized."
+msgstr "មិន​អាច​ចាប់ផ្ដើម BASIC ពី​ឯកសារ '$(ARG1)' ។"
+
+#: sb.src#ERRCODE_BASMGR_MGRSAVE___ERRCODE_RES_MASK.string.text
+msgid "Error saving BASIC: '$(ARG1)'."
+msgstr "កំហុស​រក្សាទុក BASIC ៖ '$(ARG1)' ។"
+
+#: sb.src#ERRCODE_BASMGR_REMOVELIB___ERRCODE_RES_MASK.string.text
+msgid "Error removing library."
+msgstr "កំហុស​យក​បណ្ណាល័យ​ចេញ ។"
+
+#: sb.src#ERRCODE_BASMGR_UNLOADLIB___ERRCODE_RES_MASK.string.text
+msgid "The library could not be removed from memory."
+msgstr "មិន​អាច​យក​បណ្ណាល័យ​ចេញ​ពី​អង្គ​ចងចាំ​បាន​ឡើយ ។"
+
+#: sb.src#IDS_SBERR_STOREREF.string.text
+msgid "Reference will not be saved: "
+msgstr "សេចក្ដីយោង​នឹង​មិន​ត្រូវ​បាន​រក្សាទុក​ឡើយ ៖ "
+
+#: sb.src#IDS_SBERR_TERMINATED.string.text
+msgid "The macro running has been interrupted"
+msgstr "បាន​ផ្អាក​ការ​រត់​ម៉ាក្រូ ។"
+
+#: sb.src#RID_BASIC_START.ERRCODE_BASIC_ARRAY_FIX___ERRCODE_RES_MASK.string.text
+msgid "This array is fixed or temporarily locked."
+msgstr "អារ៉េ​នេះ គឺ​ត្រូវបាន​ដាក់​ឲ្យ​ថេរ ឬ​ចាក់សោ​បណ្ដោះអាសន្ន ។"
+
+#: sb.src#RID_BASIC_START.ERRCODE_BASIC_COMPAT___ERRCODE_RES_MASK.string.text
+msgid "$(ARG1)"
+msgstr "$(ARG1)"
+
+#: sb.src#RID_BASIC_START.ERRCODE_BASIC_EXCEPTION___ERRCODE_RES_MASK.string.text
+msgid "An exception occurred $(ARG1)."
+msgstr "ករណី​លើកលែង​មួយ​បាន​កើតឡើង $(ARG1) ។"
+
+#: sb.src#RID_BASIC_START.ERRCODE_BASIC_EXPR_TOO_COMPLEX___ERRCODE_RES_MASK.string.text
+msgid "Expression Too Complex."
+msgstr "កន្សោម គឺ​ស្មុគស្មាញ​។"
+
+#: sb.src#RID_BASIC_START.ERRCODE_BASIC_LOOP_NOT_INIT___ERRCODE_RES_MASK.string.text
+msgid "For loop not initialized."
+msgstr "មិនបាន​ចាប់ផ្ដើម​សម្រាប់​រង្វិល​ជុំ​ទេ ។"
+
+#: sb.src#RID_BASIC_START.ERRCODE_BASIC_OPER_NOT_PERFORM___ERRCODE_RES_MASK.string.text
+msgid "Can't perform requested operation."
+msgstr "មិនអាចធ្វើ​ប្រតិបត្តិការ​ដែល​បាន​ស្នើ​បានទេ ។"
+
+#: sb.src#RID_BASIC_START.ERRCODE_BASIC_STRING_OVERFLOW___ERRCODE_RES_MASK.string.text
+msgid "Out of string space."
+msgstr "អស់​ចន្លោះ​ខ្សែអក្សរ ។"
+
+#: sb.src#RID_BASIC_START.ERRCODE_BASIC_TOO_MANY_DLL___ERRCODE_RES_MASK.string.text
+msgid "Too many DLL application clients."
+msgstr "មាន​កម្មវិធី​ភ្ញៀវ DLL ច្រើនពេក ។"
+
+#: sb.src#RID_BASIC_START.SBERR_IS_NULL___ERRCODE_RES_MASK.string.text
+msgid "Use of zero not permitted."
+msgstr "មិន​ឲ្យ​ប្រើ​សូន្យ​ឡើយ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_ACCESS_DENIED___ERRCODE_RES_MASK.string.text
+msgid "Access denied."
+msgstr "មិន​អាច​ចូល​ដំណើរការ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_ACCESS_ERROR___ERRCODE_RES_MASK.string.text
+msgid "Path/File access error."
+msgstr "កំហុស​ចូលដំណើរការ​ផ្លូវ/ឯកសារ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_ALREADY_DIM___ERRCODE_RES_MASK.string.text
+msgid "Array already dimensioned."
+msgstr "អារេ​មាន​វិមាត្រ​រួច​ហើយ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_ARG_MISSING___ERRCODE_RES_MASK.string.text
+msgid "Required argument lacking."
+msgstr "ខ្វះ​អាគុយម៉ង់​ដែល​ត្រូវការ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_ACTION___ERRCODE_RES_MASK.string.text
+msgid "This action is not supported by given object."
+msgstr "វត្ថុ​ដែល​បាន​ផ្ដល់​មិន​គាំទ្រ​អំពើ​នេះ​ឡើយ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_ARGUMENT___ERRCODE_RES_MASK.string.text
+msgid "Invalid procedure call."
+msgstr "ហៅ​បែបផែន​មិន​ត្រឹមត្រូវ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_BLOCK___ERRCODE_RES_MASK.string.text
+msgid "Statement block still open: $(ARG1) missing."
+msgstr "នៅ​បើក​បណ្ដុំ​សេចក្ដីថ្លែងការណ៍​នៅ​ឡើយ ៖ បាត់ $(ARG1) ។"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_BRACKETS___ERRCODE_RES_MASK.string.text
+msgid "Parentheses do not match."
+msgstr "វង់ក្រចក​មិន​ត្រូវ​គ្នា ។"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_CHANNEL___ERRCODE_RES_MASK.string.text
+msgid "Invalid file name or file number."
+msgstr "ឈ្មោះ​ឯកសារ ឬ​លេខ​ឯកសារ​មិន​ត្រឹមត្រូវ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_CHAR_IN_NUMBER___ERRCODE_RES_MASK.string.text
+msgid "Invalid character in number."
+msgstr "តួអក្សរ​មិន​ត្រឹមត្រូវ​នៅ​ក្នុង​លេខ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_CLIPBD_FORMAT___ERRCODE_RES_MASK.string.text
+msgid "Invalid clipboard format."
+msgstr "ទ្រង់ទ្រាយ​ក្ដារតម្បៀតខ្ទាស់​មិន​ត្រឹមត្រូវ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_DECLARATION___ERRCODE_RES_MASK.string.text
+msgid "Symbol $(ARG1) already defined differently."
+msgstr "បាន​កំណត់​និមិត្តសញ្ញា $(ARG1) ផ្សេង​ពី​នេះ​រួច​ហើយ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_DLL_CALL___ERRCODE_RES_MASK.string.text
+msgid "Wrong DLL call convention."
+msgstr "ហៅ DLL ខុស ។"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_DLL_LOAD___ERRCODE_RES_MASK.string.text
+msgid "Error loading DLL file."
+msgstr "កំហុស​ពេល​ផ្ទុក​ឯកសារ DLL ។"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_EXIT___ERRCODE_RES_MASK.string.text
+msgid "Exit $(ARG1) expected."
+msgstr "រំពឹង​ថា​ចេញ​ពី $(ARG1) ។"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_FILE_MODE___ERRCODE_RES_MASK.string.text
+msgid "Incorrect file mode."
+msgstr "របៀប​ឯកសារ​មិន​ត្រឹមត្រូវ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_INDEX___ERRCODE_RES_MASK.string.text
+msgid "Invalid object index."
+msgstr "សន្ទស្សន៍​វត្ថុ​មិន​ត្រឹមត្រូវ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_LOCALE___ERRCODE_RES_MASK.string.text
+msgid "The current locale setting is not supported by the given object."
+msgstr "វត្ថុ​ដែល​បាន​ផ្ដល់​មិន​គាំទ្រ​ការ​កំណត់​មូលដ្ឋាន​បច្ចុប្បន្ន​ឡើយ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_METHOD___ERRCODE_RES_MASK.string.text
+msgid "This property or method is not supported by the object."
+msgstr "វត្ថុ​មិន​គាំទ្រ​លក្ខណសម្បត្តិ ឬ​វិធីសាស្ត្រ​នេះ​ឡើយ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_NUMBER_OF_ARGS___ERRCODE_RES_MASK.string.text
+msgctxt "sb.src#RID_BASIC_START.SbERR_BAD_NUMBER_OF_ARGS___ERRCODE_RES_MASK.string.text"
+msgid "Invalid number of arguments."
+msgstr "ចំនួន​អាគុយម៉ង់​មិន​ត្រឹមត្រូវ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_OPTION___ERRCODE_RES_MASK.string.text
+msgid "Unknown option: $(ARG1)."
+msgstr "មិន​ស្គាល់​ជម្រើស ៖ $(ARG1) ។"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_ORDINAL___ERRCODE_RES_MASK.string.text
+msgid "Invalid ordinal number."
+msgstr "លេខ​លំដាប់​មិន​ត្រឹមត្រូវ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_PARAMETER___ERRCODE_RES_MASK.string.text
+msgid "Invalid parameter."
+msgstr "ប៉ារ៉ាម៉ែត្រ​មិន​ត្រឹមត្រូវ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_PARAMETERS___ERRCODE_RES_MASK.string.text
+msgid "Parameters do not correspond to procedure."
+msgstr "ប៉ារ៉ាម៉ែត្រ​មិន​ឆ្លើយតប​ទៅ​នឹង​បែបផែន ។"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_PATTERN___ERRCODE_RES_MASK.string.text
+msgid "Invalid string pattern."
+msgstr "លំនាំ​ខ្សែអក្សរ​មិន​ត្រឹមត្រូវ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_PROP_VALUE___ERRCODE_RES_MASK.string.text
+msgid "Incorrect property value."
+msgstr "តម្លៃ​លក្ខណសម្បត្តិ​មិន​ត្រឹមត្រូវ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_RECORD_LENGTH___ERRCODE_RES_MASK.string.text
+msgid "Incorrect record length."
+msgstr "ប្រវែង​កំណត់ត្រា​មិន​ត្រឹមត្រូវ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_RECORD_NUMBER___ERRCODE_RES_MASK.string.text
+msgid "Incorrect record number."
+msgstr "លេខ​កំណត់ត្រា​មិន​ត្រឹមត្រូវ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_BAD_RESUME___ERRCODE_RES_MASK.string.text
+msgid "Resume without error."
+msgstr "Resume ដោយ​គ្មាន error ។"
+
+#: sb.src#RID_BASIC_START.SbERR_CANNOT_LOAD___ERRCODE_RES_MASK.string.text
+msgid "Module cannot be loaded; invalid format."
+msgstr "មិន​អាច​ផ្ទុក​ម៉ូឌុល; ទ្រង់ទ្រាយ​មិន​ត្រឹមត្រូវ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_CONSTANT_REDECLARED___ERRCODE_RES_MASK.string.text
+msgid "Constant $(ARG1) redefined."
+msgstr "បាន​កំណត់​ថេរ $(ARG1) ឡើង​វិញ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_CONVERSION___ERRCODE_RES_MASK.string.text
+msgid "Data type mismatch."
+msgstr "ខុស​ប្រភេទ​ទិន្នន័យ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_BUSY___ERRCODE_RES_MASK.string.text
+msgid "External application busy."
+msgstr "កម្មវិធី​ខាង​ក្នុង​ជាប់រវល់ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_CHANNEL_LOCKED___ERRCODE_RES_MASK.string.text
+msgid "DDE channel locked."
+msgstr "ឆានែល DDE ជាប់សោ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_CONV_CLOSED___ERRCODE_RES_MASK.string.text
+msgid "DDE connection interrupted or modified."
+msgstr "បាន​ផ្អាក ឬ​កែប្រែ​ការ​តភ្ជាប់ DDE ។"
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_DLL_NOT_FOUND___ERRCODE_RES_MASK.string.text
+msgid "DDE requires the DDEML.DLL file."
+msgstr "DDE ត្រូវការ​ឯកសារ DDEML.DLL ។"
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_ERROR___ERRCODE_RES_MASK.string.text
+msgid "DDE Error."
+msgstr "កំហុស DDE ។"
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_INVALID_LINK___ERRCODE_RES_MASK.string.text
+msgid "Invalid DDE link format."
+msgstr "ទ្រង់ទ្រាយ​តំណ DDE មិន​ត្រឹមត្រូវ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_LINK_ALREADY_EST___ERRCODE_RES_MASK.string.text
+msgid "Paste link already performed."
+msgstr "បាន​បិទភ្ជាប់​តំណ​រួច​ហើយ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_LINK_INV_TOPIC___ERRCODE_RES_MASK.string.text
+msgid "Link mode cannot be set due to invalid link topic."
+msgstr "មិន​អាច​កំណត់​របៀប​តំណ​បាន​ឡើយ ដោយ​សារ​តែ​ប្រធានបទ​តំណ​មិន​ត្រឹមត្រូវ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_MULT_RESPONSES___ERRCODE_RES_MASK.string.text
+msgid "Too many applications responded to DDE connect initiation."
+msgstr "មាន​កម្មវិធី​ច្រើន​ពេក​ឆ្លើយតប​ទៅ​នឹង​ការ​ផ្ដួចផ្ដើម​តភ្ជាប់ DDE ។"
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_NOTPROCESSED___ERRCODE_RES_MASK.string.text
+msgid "External application cannot execute DDE operation."
+msgstr "កម្មវិធី​ខាង​ក្រៅ​មិន​អាច​ប្រតិបត្តិ​ដំណើរការ DDE បាន​ឡើយ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_NO_CHANNEL___ERRCODE_RES_MASK.string.text
+msgid "DDE method invoked with no channel open."
+msgstr "បាន​ហៅ​វិធីសាស្ត្រ DDE ដោយ​មិន​បើក​ឆានែល ។"
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_NO_DATA___ERRCODE_RES_MASK.string.text
+msgid "DDE operation without data."
+msgstr "ប្រតិបត្តិការ DDE ដោយ​គ្មាន​ទិន្នន័យ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_NO_RESPONSE___ERRCODE_RES_MASK.string.text
+msgid "No application responded to DDE connect initiation."
+msgstr "មិន​មាន​កម្មវិធី​ណា​ឆ្លើយតប​ទៅ​នឹង​ការ​ផ្ដួចផ្ដើម​តភ្ជាប់ DDE ឡើយ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_OUTOFCHANNELS___ERRCODE_RES_MASK.string.text
+msgid "No DDE channels available."
+msgstr "មិន​មាន​ឆានែល DDE ។"
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_PARTNER_QUIT___ERRCODE_RES_MASK.string.text
+msgid "External application has been terminated."
+msgstr "កម្មវិធី​ខាង​ក្រៅ​ត្រូវ​បាន​បញ្ចប់​ដំណើរការ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_QUEUE_OVERFLOW___ERRCODE_RES_MASK.string.text
+msgid "DDE message has been lost."
+msgstr "បាន​បាត់បង់​សារ DDE ។"
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_TIMEOUT___ERRCODE_RES_MASK.string.text
+msgid "Timeout while waiting for DDE response."
+msgstr "អស់ពេល ខណៈពេល​រង់ចាំ​ការ​ឆ្លើយតប DDE ។"
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_USER_INTERRUPT___ERRCODE_RES_MASK.string.text
+msgid "User pressed ESCAPE during DDE operation."
+msgstr "អ្នក​ប្រើ​បាន​ចុច​គ្រាប់ចុច គេច (Esc) កំឡុងពេល​ដំណើរការ DDE ។"
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_WAITINGACK___ERRCODE_RES_MASK.string.text
+msgid "Awaiting response to DDE connection."
+msgstr "ទន្ទឹង​រង់ចាំ​ការ​ឆ្លើយតប​ទៅ​កាន់​ការ​តភ្ជាប់ DDE ។"
+
+#: sb.src#RID_BASIC_START.SbERR_DDE_WRONG_DATA_FORMAT___ERRCODE_RES_MASK.string.text
+msgid "Data are in wrong format."
+msgstr "ទិន្នន័យ​មាន​ទ្រង់ទ្រាយ​ខុស ។"
+
+#: sb.src#RID_BASIC_START.SbERR_DIFFERENT_DRIVE___ERRCODE_RES_MASK.string.text
+msgid "Renaming on different drives impossible."
+msgstr "មិន​អាច​ប្ដូរឈ្មោះ​លើ​ដ្រាយ​ខុស​គ្នា ។"
+
+#: sb.src#RID_BASIC_START.SbERR_DISK_FULL___ERRCODE_RES_MASK.string.text
+msgid "Disk or hard drive full."
+msgstr "ថាស ឬ​ដ្រាយ​ថាស​ពេញ​ហើយ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_DLLPROC_NOT_FOUND___ERRCODE_RES_MASK.string.text
+msgid "Specified DLL function not found."
+msgstr "រក​មិន​ឃើញ​អនុគមន៍ DLL ដែល​បាន​បញ្ជាក់ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_DUPLICATE_DEF___ERRCODE_RES_MASK.string.text
+msgid "Duplicate definition."
+msgstr "កំណត់​ស្ទួន​គ្នា​ហើយ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_EXPECTED___ERRCODE_RES_MASK.string.text
+msgid "Expected: $(ARG1)."
+msgstr "រំពឹង ៖ $(ARG1) ។"
+
+#: sb.src#RID_BASIC_START.SbERR_FILE_ALREADY_OPEN___ERRCODE_RES_MASK.string.text
+msgid "File already open."
+msgstr "បើក​ឯកសារ​រួច​ហើយ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_FILE_EXISTS___ERRCODE_RES_MASK.string.text
+msgid "File already exists."
+msgstr "មាន​ឯកសារ​រួច​ហើយ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_FILE_NOT_FOUND___ERRCODE_RES_MASK.string.text
+msgid "File not found."
+msgstr "រក​មិន​ឃើញ​ឯកសារ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_GETPROP_FAILED___ERRCODE_RES_MASK.string.text
+msgid "Unable to determine property."
+msgstr "មិន​អាច​កំណត់​លក្ខណសម្បត្តិ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_INTERNAL_ERROR___ERRCODE_RES_MASK.string.text
+msgid "Internal error $(ARG1)."
+msgstr "កំហុស​ខាង​ក្នុង $(ARG1) ។"
+
+#: sb.src#RID_BASIC_START.SbERR_INVALID_OBJECT___ERRCODE_RES_MASK.string.text
+msgid "Invalid object reference."
+msgstr "សេចក្ដីយោង​វត្ថុ​មិន​ត្រឹមត្រូវ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_INVALID_USAGE_OBJECT___ERRCODE_RES_MASK.string.text
+msgid "Invalid use of an object."
+msgstr "ប្រើ​វត្ថុ​មួយ​មិន​ត្រឹមត្រូវ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_IO_ERROR___ERRCODE_RES_MASK.string.text
+msgid "Device I/O error."
+msgstr "កំហុស​បញ្ចេញ/បញ្ចូល​ឧបករណ៍ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_LABEL_DEFINED___ERRCODE_RES_MASK.string.text
+msgid "Label $(ARG1) already defined."
+msgstr "បាន​កំណត់​ស្លាក $(ARG1) រួច​ហើយ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_LABEL_EXPECTED___ERRCODE_RES_MASK.string.text
+msgid "Label expected."
+msgstr "រំពឹង​ស្លាក ។"
+
+#: sb.src#RID_BASIC_START.SbERR_LVALUE_EXPECTED___ERRCODE_RES_MASK.string.text
+msgid "Value cannot be applied."
+msgstr "មិន​អាច​អនុវត្ត​តម្លៃ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_MATH_OVERFLOW___ERRCODE_RES_MASK.string.text
+msgid "Overflow."
+msgstr "លើស​ចំណុះ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_METHOD_FAILED___ERRCODE_RES_MASK.string.text
+msgid "Error executing a method."
+msgstr "កំហុស​ប្រតិបត្តិ​វិធីសាស្ត្រ​មួយ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_METHOD_NOT_FOUND___ERRCODE_RES_MASK.string.text
+msgid "Object does not have this method."
+msgstr "វត្ថុ​មិន​មាន​វិធីសាស្ត្រ​នេះ​ឡើយ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_MUST_HAVE_DIMS___ERRCODE_RES_MASK.string.text
+msgid "Array must be dimensioned."
+msgstr "អារេ​ត្រូវ​តែ​មាន​វិមាត្រ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_NAMED_NOT_FOUND___ERRCODE_RES_MASK.string.text
+msgid "Named argument not found."
+msgstr "រក​មិន​ឃើញ​អាគុយម៉ង់​ដែល​បាន​ដាក់ឈ្មោះ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_NEEDS_OBJECT___ERRCODE_RES_MASK.string.text
+msgid "Object required."
+msgstr "ទាមទារ​វត្ថុ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_NOT_A_COLL___ERRCODE_RES_MASK.string.text
+msgid "Object is not a list."
+msgstr "វត្ថុ​មិន​មែន​ជា​បញ្ជី ។"
+
+#: sb.src#RID_BASIC_START.SbERR_NOT_IMPLEMENTED___ERRCODE_RES_MASK.string.text
+msgid "Not implemented."
+msgstr "មិន​បាន​ប្រតិបត្តិ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_NOT_IN_MAIN___ERRCODE_RES_MASK.string.text
+msgid "$(ARG1) not allowed outside a procedure."
+msgstr "$(ARG1) មិន​អនុញ្ញាត​ឲ្យ​នៅ​ក្រៅ​បែបផែន​ឡើយ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_NOT_IN_SUBR___ERRCODE_RES_MASK.string.text
+msgid "$(ARG1) not allowed within a procedure."
+msgstr "$(ARG1) មិន​អនុញ្ញាត​ឲ្យ​នៅ​ក្នុង​បែបផែន​ឡើយ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_NOT_OPTIONAL___ERRCODE_RES_MASK.string.text
+msgid "Argument is not optional."
+msgstr "អាគុយម៉ង់​មិន​មែន​ស្រេច​ចិត្ត​ឡើយ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_NOT_READY___ERRCODE_RES_MASK.string.text
+msgid "Disk not ready."
+msgstr "ថាស​មិន​ទាន់​រួច ។"
+
+#: sb.src#RID_BASIC_START.SbERR_NO_ACTIVE_OBJECT___ERRCODE_RES_MASK.string.text
+msgid "Object is not available."
+msgstr "មិន​មាន​វត្ថុ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_NO_DEVICE___ERRCODE_RES_MASK.string.text
+msgid "Device not available."
+msgstr "មិន​មាន​ឧបករណ៍ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_NO_GOSUB___ERRCODE_RES_MASK.string.text
+msgid "Return without Gosub."
+msgstr "Return ដោយ​គ្មាន Gosub ។"
+
+#: sb.src#RID_BASIC_START.SbERR_NO_IF___ERRCODE_RES_MASK.string.text
+msgid "Else/Endif without If."
+msgstr "Else/Endif ដោយ​គ្មាន If ។"
+
+#: sb.src#RID_BASIC_START.SbERR_NO_MEMORY___ERRCODE_RES_MASK.string.text
+msgid "Not enough memory."
+msgstr "អង្គ​ចងចាំ​មិន​គ្រប់គ្រាន់ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_NO_METHOD___ERRCODE_RES_MASK.string.text
+msgid "Property or method not found: $(ARG1)."
+msgstr "រក​មិន​ឃើញ​លក្ខណសម្បត្តិ ឬ​​វិធីសាស្ត្រ ៖ $(ARG1) ។"
+
+#: sb.src#RID_BASIC_START.SbERR_NO_NAMED_ARGS___ERRCODE_RES_MASK.string.text
+msgid "Named arguments are not supported by given object."
+msgstr "វត្ថុ​ដែល​បាន​ផ្ដល់​មិន​គាំទ្រ​អាគុយម៉ង់​ដែល​បាន​ដាក់ឈ្មោះ​ឡើយ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_NO_OBJECT___ERRCODE_RES_MASK.string.text
+msgid "Object variable not set."
+msgstr "មិន​បាន​កំណត់​អថេរ​វត្ថុ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_NO_OLE___ERRCODE_RES_MASK.string.text
+msgid "OLE Automation is not supported by this object."
+msgstr "វត្ថុ​នេះ​មិន​គាំទ្រ​ស្វ័យប្រតិកម្ម OLE ឡើយ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_NO_STRINGS_ARRAYS___ERRCODE_RES_MASK.string.text
+msgid "Strings or arrays not permitted."
+msgstr "មិន​ឲ្យ​ប្រើ​ខ្សែអក្សរ ឬ​អារេ​ឡើយ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_OLE_ERROR___ERRCODE_RES_MASK.string.text
+msgid "OLE Automation Error."
+msgstr "កំហុស​ស្វ័យប្រតិកម្ម OLE ។"
+
+#: sb.src#RID_BASIC_START.SbERR_OUT_OF_RANGE___ERRCODE_RES_MASK.string.text
+msgid "Index out of defined range."
+msgstr "សន្ទស្សន៍​ស្ថិត​នៅ​ក្រៅ​ជួរ​ដែល​បាន​កំណត់ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_PATH_NOT_FOUND___ERRCODE_RES_MASK.string.text
+msgid "Path not found."
+msgstr "រក​មិន​ឃើញ​ផ្លូវ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_PROC_DEFINED___ERRCODE_RES_MASK.string.text
+msgid "Sub procedure or function procedure $(ARG1) already defined."
+msgstr "បាន​កំណត់​បែបផែន​រង ឬ​បែបផែន​អនុគមន៍ $(ARG1) រួច​ហើយ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_PROC_UNDEFINED___ERRCODE_RES_MASK.string.text
+msgid "Sub-procedure or function procedure not defined."
+msgstr "មិន​បាន​កំណត់​បែបផែន​រង ឬ​បែបផែន​អនុគមន៍ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_PROG_TOO_LARGE___ERRCODE_RES_MASK.string.text
+msgid "Program too large."
+msgstr "កម្មវិធី​ធំ​ពេក ។"
+
+#: sb.src#RID_BASIC_START.SbERR_PROPERTY_NOT_FOUND___ERRCODE_RES_MASK.string.text
+msgid "Object does not have this property."
+msgstr "វត្ថុ​មិន​មាន​លក្ខណសម្បត្តិ​នេះ​ឡើយ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_PROP_READONLY___ERRCODE_RES_MASK.string.text
+msgid "This property is read-only."
+msgstr "លក្ខណសម្បត្តិ​នេះ​គឺ​បាន​តែ​អាន ។"
+
+#: sb.src#RID_BASIC_START.SbERR_PROP_WRITEONLY___ERRCODE_RES_MASK.string.text
+msgid "This property is write only."
+msgstr "លក្ខណសម្បត្តិ​នេះ​គឺ​បាន​តែ​សរសេរ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_READ_PAST_EOF___ERRCODE_RES_MASK.string.text
+msgid "Reading exceeds EOF."
+msgstr "អាន​ហួស​ចុងឯកសារ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_REDO_FROM_START___ERRCODE_RES_MASK.string.text
+msgid "Incorrect entry; please retry."
+msgstr "ធាតុ​មិន​ត្រឹមត្រូវ សូម​ព្យាយាម​ម្ដង​ទៀត ។"
+
+#: sb.src#RID_BASIC_START.SbERR_SETPROP_FAILED___ERRCODE_RES_MASK.string.text
+msgid "Unable to set property."
+msgstr "មិន​អាច​កំណត់​តម្លៃ​លក្ខណសម្បត្តិ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_STACK_OVERFLOW___ERRCODE_RES_MASK.string.text
+msgid "Not enough stack memory."
+msgstr "មិន​មាន​អង្គ​ចងចាំ​ជង់​គ្រប់គ្រាន់ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_SYMBOL_EXPECTED___ERRCODE_RES_MASK.string.text
+msgid "Symbol expected."
+msgstr "រំពឹង​និមិត្តសញ្ញា ។"
+
+#: sb.src#RID_BASIC_START.SbERR_SYNTAX___ERRCODE_RES_MASK.string.text
+msgid "Syntax error."
+msgstr "កំហុស​វាក្យសម្ព័ន្ធ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_TOO_MANY_FILES___ERRCODE_RES_MASK.string.text
+msgid "Too many files."
+msgstr "ឯកសារ​ច្រើន​ពេក ។"
+
+#: sb.src#RID_BASIC_START.SbERR_UNDEF_ARRAY___ERRCODE_RES_MASK.string.text
+msgid "Array or procedure $(ARG1) not found."
+msgstr "រក​មិន​ឃើញ​អារេ ឬ​បែបផែន $(ARG1) ។"
+
+#: sb.src#RID_BASIC_START.SbERR_UNDEF_LABEL___ERRCODE_RES_MASK.string.text
+msgid "Label $(ARG1) undefined."
+msgstr "មិន​បាន​កំណត់​ស្លាក $(ARG1) ។"
+
+#: sb.src#RID_BASIC_START.SbERR_UNDEF_PROC___ERRCODE_RES_MASK.string.text
+msgid "Procedure $(ARG1) not found."
+msgstr "រក​មិន​ឃើញ​បែបផែន $(ARG1) ។"
+
+#: sb.src#RID_BASIC_START.SbERR_UNDEF_TYPE___ERRCODE_RES_MASK.string.text
+msgid "Unknown data type $(ARG1)."
+msgstr "មិន​ស្គាល់​ប្រភេទ​ទិន្នន័យ $(ARG1) ។"
+
+#: sb.src#RID_BASIC_START.SbERR_UNDEF_VAR___ERRCODE_RES_MASK.string.text
+msgid "Variable $(ARG1) not found."
+msgstr "រក​មិន​ឃើញ​អថេរ $(ARG1) ។"
+
+#: sb.src#RID_BASIC_START.SbERR_UNEXPECTED___ERRCODE_RES_MASK.string.text
+msgid "Unexpected symbol: $(ARG1)."
+msgstr "រំពឹង​និមិត្តសញ្ញា ៖ $(ARG1) ។"
+
+#: sb.src#RID_BASIC_START.SbERR_USER_ABORT___ERRCODE_RES_MASK.string.text
+msgid "Process interrupted by user."
+msgstr "ដំណើរការ​ត្រូវ​បាន​ផ្អាក​ដោយ​អ្នក​ប្រើ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_VAR_DEFINED___ERRCODE_RES_MASK.string.text
+msgid "Variable $(ARG1) already defined."
+msgstr "បាន​កំណត់​អថេរ $(ARG1) រួច​ហើយ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_VAR_EXPECTED___ERRCODE_RES_MASK.string.text
+msgid "Variable expected."
+msgstr "រំពឹង​អថេរ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_VAR_UNDEFINED___ERRCODE_RES_MASK.string.text
+msgid "Variable not defined."
+msgstr "មិន​បាន​កំណត់​អថេរ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_WRONG_ARGS___ERRCODE_RES_MASK.string.text
+msgctxt "sb.src#RID_BASIC_START.SbERR_WRONG_ARGS___ERRCODE_RES_MASK.string.text"
+msgid "Invalid number of arguments."
+msgstr "ចំនួន​អាគុយម៉ង់​មិន​ត្រឹមត្រូវ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_WRONG_DIMS___ERRCODE_RES_MASK.string.text
+msgid "Dimension specifications do not match."
+msgstr "ការ​បញ្ជាក់​វិមាត្រ​គឺ​មិន​ត្រូវ​គ្នា​ឡើយ ។"
+
+#: sb.src#RID_BASIC_START.SbERR_ZERODIV___ERRCODE_RES_MASK.string.text
+msgid "Division by zero."
+msgstr "ចែក​នឹង​សូន្យ ។"
+
+#: basic.src#IDD_FIND_DIALOG.RID_CANCEL.cancelbutton.text
+msgctxt "basic.src#IDD_FIND_DIALOG.RID_CANCEL.cancelbutton.text"
+msgid "~Cancel"
+msgstr "បោះបង់"
+
+#: basic.src#IDD_PRINT_DIALOG.RID_CANCEL.cancelbutton.text
+msgctxt "basic.src#IDD_PRINT_DIALOG.RID_CANCEL.cancelbutton.text"
+msgid "Cancel"
+msgstr "បោះបង់"
+
+#: basic.src#IDD_REPLACE_DIALOG.RID_CANCEL.cancelbutton.text
+msgctxt "basic.src#IDD_REPLACE_DIALOG.RID_CANCEL.cancelbutton.text"
+msgid "~Cancel"
+msgstr "បោះបង់"
+
+#: basic.src#RID_TP_CRASH.CB_ALLOWCONTACT.checkbox.text
+msgid "Allow Contact"
+msgstr "អនុញ្ញាត​ឲ្យ​ទាក់ទង"
+
+#: basic.src#RID_TP_CRASH.CB_USEPROXY.checkbox.text
+msgid "Use Proxy"
+msgstr "ប្រើ​ប្រូកស៊ី"
+
+#: basic.src#RID_TP_PROFILE.CB_AUTORELOAD.checkbox.text
+msgid "AutoReload"
+msgstr "ផ្ទុក​ឡើង​វិញ"
+
+#: basic.src#RID_TP_PROFILE.CB_AUTOSAVE.checkbox.text
+msgid "Save before execute"
+msgstr "រក្សា​ទុក មុនពេល​ប្រតិបត្តិ"
+
+#: basic.src#RID_TP_PROFILE.CB_STOPONSYNTAXERRORS.checkbox.text
+msgid "Stop on Syntax Errors"
+msgstr "ឈប់​នៅ​កំហុស​វាក្យ​សម្ព័ន្ធ"
+
+#: basic.src#RID_TP_PROFILE.HID_CHECK.checkbox.text
+msgid "Default HID directory"
+msgstr "ថត HID លំនាំដើម"
+
+#: basic.src#IDD_EDIT_VAR.RID_ED_NEW_STRING.edit.text
+msgid "Edit"
+msgstr "កែ​សម្រួល"
+
+#: basic.src#IDS_CANTLOAD.errorbox.text
+msgid "Library cannot be loaded!"
+msgstr "មិន​អាច​ផ្ទុក​បណ្ណាល័យ​ !"
+
+#: basic.src#IDS_CANTLOAD.errorbox.title
+msgctxt "basic.src#IDS_CANTLOAD.errorbox.title"
+msgid "Testtool Error"
+msgstr "កំហុសរបស់​ឧបករណ៍​សាកល្បង"
+
+#: basic.src#IDS_CANTSAVE.errorbox.text
+msgid "Library cannot be saved!"
+msgstr "មិន​អាច​រក្សា​ទុក​បណ្ណាល័យ !"
+
+#: basic.src#IDS_CANTSAVE.errorbox.title
+msgctxt "basic.src#IDS_CANTSAVE.errorbox.title"
+msgid "Testtool Error"
+msgstr "កំហុសរបស់​ឧបករណ៍​សាកល្បង"
+
+#: basic.src#IDS_INVALID_VALUE.errorbox.text
+msgid "The value is invalid and cannot be set."
+msgstr "តម្លៃ​មិន​ត្រឹមត្រូវ និង​មិន​អាច​​​កំណត់​បាន​ឡើយ ។"
+
+#: basic.src#IDS_INVALID_VALUE.errorbox.title
+msgctxt "basic.src#IDS_INVALID_VALUE.errorbox.title"
+msgid "Testtool Error"
+msgstr "កំហុសរបស់​ឧបករណ៍​សាកល្បង"
+
+#: basic.src#IDS_NOMAINPGM.errorbox.text
+msgid "This window does not contain a main program!"
+msgstr "បង្អួច​នេះ​មិន​មាន​កម្មវិធី​សំខាន់ !"
+
+#: basic.src#IDS_NOMAINPGM.errorbox.title
+msgctxt "basic.src#IDS_NOMAINPGM.errorbox.title"
+msgid "Testtool Error"
+msgstr "កំហុសរបស់​ឧបករណ៍​សាកល្បង"
+
+#: basic.src#IDS_PATTERNNOTFOUND.errorbox.text
+msgid "Search key not found!"
+msgstr "រក​មិន​ឃើញ​ពាក្យ​គន្លឹះ !"
+
+#: basic.src#IDS_PATTERNNOTFOUND.errorbox.title
+msgctxt "basic.src#IDS_PATTERNNOTFOUND.errorbox.title"
+msgid "Testtool Error"
+msgstr "កំហុសរបស់​ឧបករណ៍​សាកល្បង"
+
+#: basic.src#IDS_READERROR.errorbox.text
+msgid "File cannot be read!"
+msgstr "មិន​អាច​ឯកសារ​បាន !"
+
+#: basic.src#IDS_READERROR.errorbox.title
+msgctxt "basic.src#IDS_READERROR.errorbox.title"
+msgid "Testtool Error"
+msgstr "កំហុសរបស់​ឧបករណ៍​សាកល្បង"
+
+#: basic.src#IDS_WRITEERROR.errorbox.text
+msgid "File cannot be saved!"
+msgstr "មិន​អាច​រក្សា​ទុក​ឯកសារ​បាន !"
+
+#: basic.src#IDS_WRITEERROR.errorbox.title
+msgctxt "basic.src#IDS_WRITEERROR.errorbox.title"
+msgid "Testtool Error"
+msgstr "កំហុសរបស់​ឧបករណ៍​សាកល្បង"
+
+#: basic.src#RID_TP_CRASH.FL_CRASHREPORT.fixedline.text
+msgctxt "basic.src#RID_TP_CRASH.FL_CRASHREPORT.fixedline.text"
+msgid "Crashreport"
+msgstr "របាយការណ៍​គាំង"
+
+#: basic.src#RID_TP_GENERIC.RID_FL_AREA.fixedline.text
+msgid "Area"
+msgstr "ផ្ទៃ​"
+
+#: basic.src#RID_TP_GENERIC.RID_FL_VALUE.fixedline.text
+msgid "Setting"
+msgstr "ការ​កំណត់"
+
+#: basic.src#RID_TP_MISC.FL_COMMUNICATION.fixedline.text
+msgid "Communication"
+msgstr "ទំនាក់​ទំនង"
+
+#: basic.src#RID_TP_MISC.FL_OTHER.fixedline.text
+msgid "Other settings"
+msgstr "ការ​​កំណត់​​ផ្សេងៗ"
+
+#: basic.src#RID_TP_PROFILE.FL_DIRECTORIES.fixedline.text
+msgid "Profile settings"
+msgstr "ការ​កំណត់​ទម្រង់"
+
+#: basic.src#RID_TP_PROFILE.RID_FL_PROFILE.fixedline.text
+msgctxt "basic.src#RID_TP_PROFILE.RID_FL_PROFILE.fixedline.text"
+msgid "Profile"
+msgstr "ទម្រង់"
+
+#: basic.src#IDD_DISPLAY_HID.RID_FT_CONTROLS.fixedtext.text
+msgid "Controls"
+msgstr "វត្ថុ​​បញ្ជា​"
+
+#: basic.src#IDD_DISPLAY_HID.RID_FT_SLOTS.fixedtext.text
+msgid "Slots"
+msgstr "រន្ធ"
+
+#: basic.src#IDD_EDIT_VAR.RID_FT_CONTENT.fixedtext.text
+msgid "Content"
+msgstr "មាតិកា​"
+
+#: basic.src#IDD_EDIT_VAR.RID_FT_CONTENT_VALUE.fixedtext.text
+msgid "Previous contents"
+msgstr "មាតិកា​មុន"
+
+#: basic.src#IDD_EDIT_VAR.RID_FT_NAME.fixedtext.text
+msgctxt "basic.src#IDD_EDIT_VAR.RID_FT_NAME.fixedtext.text"
+msgid "Name"
+msgstr "ឈ្មោះ"
+
+#: basic.src#IDD_EDIT_VAR.RID_FT_NAME_VALUE.fixedtext.text
+msgid "Name of variable"
+msgstr "ឈ្មោះ​​របស់​អថេរ"
+
+#: basic.src#IDD_EDIT_VAR.RID_FT_NEW_CONTENT.fixedtext.text
+msgid "New content"
+msgstr "មាតិកា​ថ្មី"
+
+#: basic.src#IDD_FIND_DIALOG.RID_FIXEDTEXT1.fixedtext.text
+msgid "~Text"
+msgstr "អត្ថបទ"
+
+#: basic.src#IDD_PRINT_DIALOG.RID_TEXT.fixedtext.text
+msgid "Print "
+msgstr "បោះ​​ពុម្ព​"
+
+#: basic.src#IDD_REPLACE_DIALOG.RID_FIXEDTEXT1.fixedtext.text
+msgid "~Search for"
+msgstr "ស្វែងរក"
+
+#: basic.src#IDD_REPLACE_DIALOG.RID_FIXEDTEXT2.fixedtext.text
+msgid "~Replace by"
+msgstr "ជំនួស​ដោយ "
+
+#: basic.src#IDD_TT_ABOUT_DIALOG.1.fixedtext.text
+msgctxt "basic.src#IDD_TT_ABOUT_DIALOG.1.fixedtext.text"
+msgid "VCLTestTool"
+msgstr "VCLTestTool"
+
+#: basic.src#IDD_TT_ABOUT_DIALOG.4.fixedtext.text
+msgid "©1995-2010 Oracle"
+msgstr "រក្សាសិទ្ធិ​ឆ្នាំ ១៩៩៥-២០១០ ដោយ Oracle"
+
+#: basic.src#LOAD_CONF.FILENAME.fixedtext.text
+msgid "File.win"
+msgstr "File.win"
+
+#: basic.src#LOAD_CONF.WORK.fixedtext.text
+msgid "Slot IDs"
+msgstr "អត្តសញ្ញាណ​របស់​រន្ធ"
+
+#: basic.src#RID_TP_CRASH.FT_CRHOST.fixedtext.text
+msgctxt "basic.src#RID_TP_CRASH.FT_CRHOST.fixedtext.text"
+msgid "Host"
+msgstr "ម៉ាស៊ីន"
+
+#: basic.src#RID_TP_CRASH.FT_CRPORT.fixedtext.text
+msgid "Port"
+msgstr "ច្រក"
+
+#: basic.src#RID_TP_CRASH.FT_EMAIL.fixedtext.text
+msgid "EMail"
+msgstr "អ៊ីមែល"
+
+#: basic.src#RID_TP_FONT.FT_FONTNAME.fixedtext.text
+msgid "Type"
+msgstr "ប្រភេទ"
+
+#: basic.src#RID_TP_FONT.FT_FONTSIZE.fixedtext.text
+msgid "Size"
+msgstr "ទំហំ"
+
+#: basic.src#RID_TP_FONT.FT_FONTSTYLE.fixedtext.text
+msgid "Typeface"
+msgstr "លក្ខណៈ​អក្សរ"
+
+#: basic.src#RID_TP_MISC.FT_HOST.fixedtext.text
+msgctxt "basic.src#RID_TP_MISC.FT_HOST.fixedtext.text"
+msgid "Host"
+msgstr "ម៉ាស៊ីន"
+
+#: basic.src#RID_TP_MISC.FT_LRU.fixedtext.text
+msgid "Max LRU Files"
+msgstr "ឯកសារ LRU អតិបរមា"
+
+#: basic.src#RID_TP_MISC.FT_PROGDIR.fixedtext.text
+msgid "OOo Program Dir"
+msgstr "ថត​កម្មវិធី OOo"
+
+#: basic.src#RID_TP_MISC.FT_TTPORT.fixedtext.text
+msgid "Testtool Port"
+msgstr "ច្រក​​របស់​ឧបករណ៍​សាកល្បង"
+
+#: basic.src#RID_TP_MISC.FT_UNOPORT.fixedtext.text
+msgid "Remote UNO Port"
+msgstr "ច្រក UNO ឆ្ងាយ"
+
+#: basic.src#RID_TP_MISC.TIMEOUT_TEXT.fixedtext.text
+msgid "Server Timeout"
+msgstr "ម៉ាស៊ីន​បម្រើ​អស់ពេល"
+
+#: basic.src#RID_TP_PROFILE.BASIS_TEXT.fixedtext.text
+msgid "Base directory"
+msgstr "ថត​មូលដ្ឋាន"
+
+#: basic.src#RID_TP_PROFILE.LOG_TEXT.fixedtext.text
+msgid "Log base directory"
+msgstr "ធ្វើ​កំណត់​ហេតុ​ថត​មូលដ្ឋាន"
+
+#: basic.src#IDD_DISPLAY_HID.floatingwindow.text
+msgid "Display HId"
+msgstr "បង្ហាញ HId"
+
+#: basic.src#LOAD_CONF.floatingwindow.text
+msgid "Reading Configuration Files"
+msgstr "កំពុង​អាន​ឯកសារ​កំណត់​រចនា​សម្ព័ន្ធ"
+
+#: basic.src#IDS_NOPRINTERERROR.infobox.text
+msgid "The print function is not available!"
+msgstr "មុខងារ​បោះពុម្ព​មិន​អាច​រក​បាន !"
+
+#: basic.src#IDS_NOT_YET_IMPLEMENTED.infobox.text
+msgid "Not yet implemented"
+msgstr "មិន​ទាន់​អនុវត្ត​នៅ​ឡើយ"
+
+#: basic.src#RID_APPMENUBAR.RID_APPEDIT.menuitem.text
+msgid "~Edit"
+msgstr "កែ​សម្រួល​ "
+
+#: basic.src#RID_APPMENUBAR.RID_APPFILE.menuitem.text
+msgid "~File"
+msgstr "ឯកសារ "
+
+#: basic.src#RID_APPMENUBAR.RID_APPHELP.menuitem.text
+msgid "~Help"
+msgstr "ជំនួយ "
+
+#: basic.src#RID_APPMENUBAR.RID_APPRUN.menuitem.text
+msgid "~Program"
+msgstr "កម្មវិធី "
+
+#: basic.src#RID_APPMENUBAR.RID_APPWINDOW.menuitem.text
+msgid "~Window"
+msgstr "បង្អួច "
+
+#: basic.src#RID_EDIT.RID_EDITCOPY.menuitem.text
+msgid "~Copy"
+msgstr "ចម្លង "
+
+#: basic.src#RID_EDIT.RID_EDITCUT.menuitem.text
+msgid "~Cut"
+msgstr "កាត់ "
+
+#: basic.src#RID_EDIT.RID_EDITDEL.menuitem.text
+msgid "~Delete"
+msgstr "លុប​ "
+
+#: basic.src#RID_EDIT.RID_EDITPASTE.menuitem.text
+msgid "~Paste"
+msgstr "បិទភ្ជាប់ "
+
+#: basic.src#RID_EDIT.RID_EDITREDO.menuitem.text
+msgid "~Redo"
+msgstr "ធ្វើវិញ "
+
+#: basic.src#RID_EDIT.RID_EDITREPEAT.menuitem.text
+msgid "Repeat S~earch"
+msgstr "ធ្វើ​ការ​ស្វែង​រក​ឡើង​វិញ "
+
+#: basic.src#RID_EDIT.RID_EDITREPLACE.menuitem.text
+msgid "~Replace..."
+msgstr "ជំនួស... "
+
+#: basic.src#RID_EDIT.RID_EDITSEARCH.menuitem.text
+msgid "~Find..."
+msgstr "រក... "
+
+#: basic.src#RID_EDIT.RID_EDITUNDO.menuitem.text
+msgid "~Undo"
+msgstr "មិន​ធ្វើ​វិញ "
+
+#: basic.src#RID_FILE.RID_FILECLOSE.menuitem.text
+msgid "~Close"
+msgstr "បិទ "
+
+#: basic.src#RID_FILE.RID_FILELOADLIB.menuitem.text
+msgid "~Load Library..."
+msgstr "ផ្ទុក​បណ្ណាល័យ... "
+
+#: basic.src#RID_FILE.RID_FILENEW.menuitem.text
+msgid "~New"
+msgstr "ថ្មី​ "
+
+#: basic.src#RID_FILE.RID_FILEOPEN.menuitem.text
+msgid "~Open..."
+msgstr "បើក... "
+
+#: basic.src#RID_FILE.RID_FILEPRINT.menuitem.text
+msgid "~Print"
+msgstr "បោះពុម្ព "
+
+#: basic.src#RID_FILE.RID_FILESAVE.menuitem.text
+msgid "~Save"
+msgstr "រក្សាទុក "
+
+#: basic.src#RID_FILE.RID_FILESAVEAS.menuitem.text
+msgid "Save~ As..."
+msgstr "រក្សា​ទុក​ជា... "
+
+#: basic.src#RID_FILE.RID_FILESAVELIB.menuitem.text
+msgid "Save Li~brary..."
+msgstr "រក្សា​ទុក​បណ្ណាល័យ... "
+
+#: basic.src#RID_FILE.RID_FILESETUP.menuitem.text
+msgid "P~rinter Setting..."
+msgstr "ការ​កំណត់​ម៉ាស៊ីន​បោះពុម្ព... "
+
+#: basic.src#RID_FILE.RID_QUIT.menuitem.text
+msgid "~Exit"
+msgstr "ចេញ "
+
+#: basic.src#RID_HELP.menuitem.text
+msgid "~About..."
+msgstr "អំពី... "
+
+#: basic.src#RID_RUN.RID_RUNBREAK.menuitem.text
+msgid "~Break"
+msgstr "បំបែក ​"
+
+#: basic.src#RID_RUN.RID_RUNCOMPILE.menuitem.text
+msgid "~Compile"
+msgstr "ចងក្រង "
+
+#: basic.src#RID_RUN.RID_RUNDISAS.menuitem.text
+msgid "~Disassemble"
+msgstr "បំបែក "
+
+#: basic.src#RID_RUN.RID_RUNNEXTERR.menuitem.text
+msgid "~Next Error"
+msgstr "កំហុស​​បន្ទាប់ "
+
+#: basic.src#RID_RUN.RID_RUNPREVERR.menuitem.text
+msgid "~Previous Error"
+msgstr "កំហុស​​មុន "
+
+#: basic.src#RID_RUN.RID_RUNSTART.menuitem.text
+msgid "~Start"
+msgstr "ចាប់ផ្តើម "
+
+#: basic.src#RID_RUN.RID_RUNSTEPINTO.menuitem.text
+msgid "~Single Step"
+msgstr "ជំហាន​តែ​មួយ "
+
+#: basic.src#RID_RUN.RID_RUNSTEPOVER.menuitem.text
+msgid "Si~ngle Step over Procedure"
+msgstr "ជំហាន​តែ​មួយលើ​បែប​បទ "
+
+#: basic.src#RID_RUN.RID_RUNSTOP.menuitem.text
+msgid "~Stop"
+msgstr "បញ្ឈប់ "
+
+#: basic.src#RID_RUN.RID_TOGLEBRKPNT.menuitem.text
+msgid "Set / Delete Break Point"
+msgstr "កំណត់/លុប ចំណុច​ឈប់"
+
+#: basic.src#RID_TT_EXTRAS.RID_OPTIONS.menuitem.text
+msgid "~Settings"
+msgstr "ការ​កំណត់ "
+
+#: basic.src#IDD_FIND_DIALOG.modaldialog.text
+msgid "Testtool: Find Text"
+msgstr "ឧបករណ៍​សាកល្បង ៖ រក​អត្ថបទ"
+
+#: basic.src#IDD_REPLACE_DIALOG.modaldialog.text
+msgid "Testtool: Replace Text"
+msgstr "ឧបករណ៍​សាកល្បង ៖ ជំនួស​អត្ថបទ"
+
+#: basic.src#IDD_TT_ABOUT_DIALOG.modaldialog.text
+msgid "About VCLTestTool"
+msgstr "អំពី VCLTestTool"
+
+#: basic.src#RID_CALLDLG.modaldialog.text
+msgid "Dynamic Link No. "
+msgstr "ចំនួន​តំណ​ថាមវន្ត "
+
+#: basic.src#IDD_EDIT_VAR.modelessdialog.text
+msgid "Edit variable"
+msgstr "កែសម្រួល​អថេរ"
+
+#: basic.src#IDD_PRINT_DIALOG.modelessdialog.text
+msgid "Testtool: Print File"
+msgstr "ឧបករណ៍​សាកល្បង ៖ បោះពុម្ព​ឯកសារ"
+
+#: basic.src#IDD_DISPLAY_HID.RID_OK_CLOSE.okbutton.text
+msgid "Close"
+msgstr "បិទ​"
+
+#: basic.src#IDD_FIND_DIALOG.RID_OK.okbutton.text
+msgid "~Find"
+msgstr "រក"
+
+#: basic.src#IDD_REPLACE_DIALOG.RID_OK.okbutton.text
+msgid "~Replace"
+msgstr "ជំនួស "
+
+#: basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_CRA.pageitem.text
+msgctxt "basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_CRA.pageitem.text"
+msgid "Crashreport"
+msgstr "របាយការណ៍​គាំង"
+
+#: basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_FON.pageitem.text
+msgid "Font"
+msgstr "ពុម្ព​អក្សរ"
+
+#: basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_GEN.pageitem.text
+msgid "Generic"
+msgstr "នៃប្រភេទ"
+
+#: basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_MIS.pageitem.text
+msgid "Misc"
+msgstr "ផ្សេងៗ"
+
+#: basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_PRO.pageitem.text
+msgctxt "basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_PRO.pageitem.text"
+msgid "Profile"
+msgstr "ទម្រង់"
+
+#: basic.src#IDD_DISPLAY_HID.RID_PB_BENENNEN.pushbutton.text
+msgctxt "basic.src#IDD_DISPLAY_HID.RID_PB_BENENNEN.pushbutton.text"
+msgid "Name"
+msgstr "ឈ្មោះ"
+
+#: basic.src#IDD_DISPLAY_HID.RID_PB_KOPIEREN.pushbutton.text
+msgid "Copy"
+msgstr "ចម្លង"
+
+#: basic.src#IDD_DISPLAY_HID.RID_PB_SELECTALL.pushbutton.text
+msgid "Select all"
+msgstr "ជ្រើស​ទាំងអស់"
+
+#: basic.src#RID_TP_GENERIC.RID_PB_DEL_VALUE.pushbutton.text
+msgctxt "basic.src#RID_TP_GENERIC.RID_PB_DEL_VALUE.pushbutton.text"
+msgid "Delete"
+msgstr "លុប​"
+
+#: basic.src#RID_TP_GENERIC.RID_PB_NEW_AREA.pushbutton.text
+msgctxt "basic.src#RID_TP_GENERIC.RID_PB_NEW_AREA.pushbutton.text"
+msgid "New"
+msgstr "ថ្មី​"
+
+#: basic.src#RID_TP_GENERIC.RID_PB_NEW_VALUE.pushbutton.text
+msgctxt "basic.src#RID_TP_GENERIC.RID_PB_NEW_VALUE.pushbutton.text"
+msgid "New"
+msgstr "ថ្មី​"
+
+#: basic.src#RID_TP_GENERIC.RID_PB_SELECT_FILE.pushbutton.text
+msgid "Path ..."
+msgstr "ផ្លូវ ..."
+
+#: basic.src#RID_TP_GENERIC.RID_PD_DEL_AREA.pushbutton.text
+msgctxt "basic.src#RID_TP_GENERIC.RID_PD_DEL_AREA.pushbutton.text"
+msgid "Delete"
+msgstr "លុប​"
+
+#: basic.src#RID_TP_MISC.PB_PROGDIR.pushbutton.text
+msgctxt "basic.src#RID_TP_MISC.PB_PROGDIR.pushbutton.text"
+msgid "..."
+msgstr "..."
+
+#: basic.src#RID_TP_PROFILE.BASIS_SET.pushbutton.text
+msgctxt "basic.src#RID_TP_PROFILE.BASIS_SET.pushbutton.text"
+msgid "..."
+msgstr "..."
+
+#: basic.src#RID_TP_PROFILE.HID_SET.pushbutton.text
+msgctxt "basic.src#RID_TP_PROFILE.HID_SET.pushbutton.text"
+msgid "..."
+msgstr "..."
+
+#: basic.src#RID_TP_PROFILE.LOG_SET.pushbutton.text
+msgctxt "basic.src#RID_TP_PROFILE.LOG_SET.pushbutton.text"
+msgid "..."
+msgstr "..."
+
+#: basic.src#RID_TP_PROFILE.RID_PB_NEW_PROFILE.pushbutton.text
+msgctxt "basic.src#RID_TP_PROFILE.RID_PB_NEW_PROFILE.pushbutton.text"
+msgid "New"
+msgstr "ថ្មី​"
+
+#: basic.src#RID_TP_PROFILE.RID_PD_DEL_PROFILE.pushbutton.text
+msgctxt "basic.src#RID_TP_PROFILE.RID_PD_DEL_PROFILE.pushbutton.text"
+msgid "Delete"
+msgstr "លុប​"
+
+#: basic.src#IDS_ASKDIRTYRELOAD.querybox.text
+msgid ""
+"File has been changed on data medium\n"
+"and in the Editor. Reload?"
+msgstr ""
+"ឯកសារ​ត្រូវ​បាន​ផ្លាស់​ប្តូរ​លើ​ឧបករណ៍​ផ្ទុក​ទិន្នន័យ\n"
+"និង​ក្នុង​កម្មវិធី​និពន្ធ ។ ផ្ទុក​ឡើង​វិញ​ឬ ?"
+
+#: basic.src#IDS_ASKDIRTYRELOAD.querybox.title
+msgctxt "basic.src#IDS_ASKDIRTYRELOAD.querybox.title"
+msgid "Testtool"
+msgstr "កំហុស​សាកល្បង"
+
+#: basic.src#IDS_ASKRELOAD.querybox.text
+msgid "File has been changed on data medium. Reload?"
+msgstr "ឯកសារ​ត្រូវ​បាន​ផ្លាស់​ប្តូរ​លើ​ឧបករណ៍​ទិន្នន័យ ។ ផ្ទុក​ឡើង​វិញ ?"
+
+#: basic.src#IDS_ASKRELOAD.querybox.title
+msgctxt "basic.src#IDS_ASKRELOAD.querybox.title"
+msgid "Testtool"
+msgstr "កំហុស​សាកល្បង"
+
+#: basic.src#IDS_ASKSAVEERROR.querybox.text
+msgid "Error saving files! Run anyway?"
+msgstr "កំហុស​​ក្នុង​ការ​រក្សា​ទុក​ឯកសារ ! យ៉ាង​ណាក៍​ដោយ រត់ ?"
+
+#: basic.src#IDS_ASKSAVEERROR.querybox.title
+msgctxt "basic.src#IDS_ASKSAVEERROR.querybox.title"
+msgid "Testtool"
+msgstr "កំហុស​សាកល្បង"
+
+#: basic.src#IDS_ASK_DIRTY_AND_DISKCHANGE_SAVE.querybox.text
+msgid ""
+"File has been changed on data medium\n"
+"and in the Editor. Save?"
+msgstr ""
+"ឯកសារ​ត្រូវ​បាន​ផ្លាស់​ប្តូរ​លើ​ឧបករណ៍​ផ្ទុក​ទិន្នន័យ\n"
+"និង​ក្នុង​កម្មវិធី​និពន្ធ ។ រក្សា​ទុក​ឬ ?"
+
+#: basic.src#IDS_ASK_DIRTY_AND_DISKCHANGE_SAVE.querybox.title
+msgctxt "basic.src#IDS_ASK_DIRTY_AND_DISKCHANGE_SAVE.querybox.title"
+msgid "Testtool"
+msgstr "កំហុស​សាកល្បង"
+
+#: basic.src#IDS_ASK_DIRTY_SAVE.querybox.text
+msgid "File has been changed. Save?"
+msgstr "ឯកសារ​ត្រូវ​បាន​ផ្លាស់​ប្តូរ ។ រក្សា​ទុក ?"
+
+#: basic.src#IDS_ASK_DIRTY_SAVE.querybox.title
+msgctxt "basic.src#IDS_ASK_DIRTY_SAVE.querybox.title"
+msgid "Testtool"
+msgstr "កំហុស​សាកល្បង"
+
+#: basic.src#IDS_ASK_DISKCHANGE_SAVE.querybox.text
+msgid ""
+"File has been changed on data medium.\n"
+"Overwrite?"
+msgstr ""
+"ឯកសារ​ត្រូវ​បាន​ផ្លាស់​ប្តូរ​លើ​ឧបករណ៍​ផ្ទុក​ទិន្នន័យ ។\n"
+"សរសេរ​ជាន់​លើ​ឬ​ទេ ?"
+
+#: basic.src#IDS_ASK_DISKCHANGE_SAVE.querybox.title
+msgctxt "basic.src#IDS_ASK_DISKCHANGE_SAVE.querybox.title"
+msgid "Testtool"
+msgstr "កំហុស​សាកល្បង"
+
+#: basic.src#IDS_LOSS_OF_INFORMATION.querybox.text
+msgid "Saving in an external format causes information loss."
+msgstr "រក្សា​ទុកជា​​ទ្រង់​ទ្រាយ​​ខាង​ក្រៅ នឹង​បណ្តាល​ឲ្យ​បាត់​បង់​ព័ត៌មាន ។"
+
+#: basic.src#IDS_LOSS_OF_INFORMATION.querybox.title
+msgctxt "basic.src#IDS_LOSS_OF_INFORMATION.querybox.title"
+msgid "Testtool"
+msgstr "កំហុស​សាកល្បង"
+
+#: basic.src#IDS_RUNNING.querybox.text
+msgid "BASIC is still running! Exit anyway?"
+msgstr "BASIC គឺ​កំពុង​តែ​រត់ ! យ៉ាង​ណា​ក៏​ដោយ​ចាក​ចេញ ?"
+
+#: basic.src#IDS_RUNNING.querybox.title
+msgctxt "basic.src#IDS_RUNNING.querybox.title"
+msgid "Testtool"
+msgstr "កំហុស​សាកល្បង"
+
+#: basic.src#IDD_EDIT_VAR.RID_RB_NEW_BOOL_F.radiobutton.text
+msgid "False"
+msgstr "មិន​ពិត"
+
+#: basic.src#IDD_EDIT_VAR.RID_RB_NEW_BOOL_T.radiobutton.text
+msgid "True"
+msgstr "ពិត"
+
+#: basic.src#IDS_APPMODE_BREAK.string.text
+msgid "Break"
+msgstr "បំបែក"
+
+#: basic.src#IDS_APPMODE_RUN.string.text
+msgid "Run"
+msgstr "រត់​"
+
+#: basic.src#IDS_APPNAME.string.text
+msgctxt "basic.src#IDS_APPNAME.string.text"
+msgid "Testtool"
+msgstr "កំហុស​សាកល្បង"
+
+#: basic.src#IDS_APPNAME2.string.text
+msgctxt "basic.src#IDS_APPNAME2.string.text"
+msgid "VCLTestTool"
+msgstr "VCLTestTool"
+
+#: basic.src#IDS_BASFILTER.string.text
+msgid "Source files (*.BAS)"
+msgstr "ឯកសារ​កូដ (*.BAS)"
+
+#: basic.src#IDS_CANCEL.string.text
+msgctxt "basic.src#IDS_CANCEL.string.text"
+msgid "Cancel"
+msgstr "បោះបង់"
+
+#: basic.src#IDS_CONTINUE.string.text
+msgid "Continue"
+msgstr "បន្ត"
+
+#: basic.src#IDS_DISASWIN.string.text
+msgid "Disassembly"
+msgstr "ការ​បំបែក"
+
+#: basic.src#IDS_EDIT_VAR.string.text
+msgid "Edit ($Arg1)"
+msgstr "កែសម្រួល ($Arg1)"
+
+#: basic.src#IDS_ERROR1.string.text
+msgid "Error "
+msgstr "កំហុស"
+
+#: basic.src#IDS_ERROR2.string.text
+msgid " in line "
+msgstr "ក្នុង​ជួរ"
+
+#: basic.src#IDS_INCFILTER.string.text
+msgid "Include files (*.INC)"
+msgstr "ឯកសារ​រួម​បញ្ចូល (*.INC)"
+
+#: basic.src#IDS_LIBFILTER.string.text
+msgid "Libraries (*.SB)"
+msgstr "បណ្ណាល័យ (*.SB)"
+
+#: basic.src#IDS_LOADDLG.string.text
+msgid "Testtool: Load File"
+msgstr "ឧបករណ៍​សាកល្បង ៖ ផ្ទុក​ឯកសារ"
+
+#: basic.src#IDS_NONAME.string.text
+msgid "Unnamed"
+msgstr "គ្មានឈ្មោះ"
+
+#: basic.src#IDS_NO_LONGNAME.string.text
+msgid "No entries in Hid.Lst"
+msgstr "គ្មាន​ធាតុ​ក្នុង Hid.Lst"
+
+#: basic.src#IDS_OBJECT.string.text
+msgid "Object"
+msgstr "វត្ថុ"
+
+#: basic.src#IDS_PAGE.string.text
+msgid "Page "
+msgstr "ទំព័រ"
+
+#: basic.src#IDS_PRINTMSG.string.text
+msgid "Printout of "
+msgstr "លទ្ធផល​បោះពុម្ព​នៃ"
+
+#: basic.src#IDS_RESFILTER.string.text
+msgid "Result files (*.RES)"
+msgstr "ឯកសារ​លទ្ធផល (*.RES)"
+
+#: basic.src#IDS_SAVEDLG.string.text
+msgid "Testtool: Save File"
+msgstr "ឧបករណ៍​សាកល្បង ៖ រក្សា​ទុក​ឯកសារ"
+
+#: basic.src#IDS_TXTFILTER.string.text
+msgid "Results as text file (*.TXT)"
+msgstr "លទ្ធផល​ជា​ឯកសារ​អត្ថបទ (*.TXT)"
+
+#: basic.src#IDS_WARNING1.string.text
+msgid "Warning "
+msgstr "ការព្រមាន"
+
+#: basic.src#IDS_WARNING_PREFIX.string.text
+msgctxt "basic.src#IDS_WARNING_PREFIX.string.text"
+msgid "Warning: "
+msgstr "ការ​ព្រមាន ៖"
+
+#: basic.src#RID_TT_EXTRAS_NAME.string.text
+msgid "E~xtra"
+msgstr "បន្ថែម "
+
+#: basic.src#IDD_OPTIONS_DLG.tabdialog.text
+msgid "Settings"
+msgstr "ការកំណត់"
+
+#: basmsg.src#S_ERROR_OUTSIDE_TESTCASE.string.text
+msgid "Error outside of test case"
+msgstr "កំហុស​ខាង​ក្រៅ​នៃ​ករណី​សាក​ល្បង"
+
+#: basmsg.src#S_PROG_START.string.text
+msgid "Program start: ($Arg1); ($Arg2)"
+msgstr "ការ​ចាប់​ផ្តើម​កម្មវិធី ៖ ($Arg1); ($Arg2)"
+
+#: basmsg.src#S_WARNING_PREFIX.string.text
+msgctxt "basmsg.src#S_WARNING_PREFIX.string.text"
+msgid "Warning: "
+msgstr "ការ​ព្រមាន ៖"
+
+#: svtmsg.src#S_ALLOWED_ONLY_IN_DOCKING_MODE.string.text
+msgid "Method only allowed in docking mode at ($Arg1)"
+msgstr "វិធី​សាស្ត្រ​ត្រូវ​បាន​អនុញ្ញាត​តែ​ក្នុង​របៀប​ចតនៅ​ឯ ($Arg1) ប៉ុណ្ណោះ"
+
+#: svtmsg.src#S_ALLOWED_ONLY_IN_FLOATING_MODE.string.text
+msgid "Method only allowed in floating mode at ($Arg1)"
+msgstr "វិធីសាស្ត្រ​ត្រូវ​បាន​អនុញ្ញាត​តែ​ក្នុង​របៀប​អណ្តែត​នៅ ($Arg1)"
+
+#: svtmsg.src#S_APP_SHUTDOWN.string.text
+msgid "Application has been shut down"
+msgstr "បាន​បិទ​កម្មវិធី"
+
+#: svtmsg.src#S_ATTEMPT_TO_WRITE_READONLY.string.text
+msgid "Attempt to write on read-only ($Arg1)"
+msgstr "ប៉ុនប៉ង​សរសេរ​លើ ($Arg1) បាន​តែ​អាន"
+
+#: svtmsg.src#S_BUTTONID_REQUIRED.string.text
+msgid "A button ID needs to be given at ($Arg1)"
+msgstr "ចាំបាច់​ត្រូវផ្តល់អត្តសញ្ញាណ​ប៊ូតុង​នៅ ($Arg1)"
+
+#: svtmsg.src#S_BUTTON_DISABLED_ON_TOOLBOX.string.text
+msgid "The button is disabled in ToolBox at ($Arg1)"
+msgstr "ប៊ូតុង​ត្រូវ​បាន​ធ្វើ​ឲ្យ​ប្រើ​លែង​បានក្នុងប្រអប់​ឧបករណ៍​នៅ ($Arg1)"
+
+#: svtmsg.src#S_BUTTON_HIDDEN_ON_TOOLBOX.string.text
+msgid "The button is hidden in ToolBox at ($Arg1)"
+msgstr "ប៊ូតុង​ត្រូវ​បាន​លាក់​ក្នុង​ប្រអប់​ឧបករណ៍នៅ ($Arg1)"
+
+#: svtmsg.src#S_BUTTON_ID_NOT_THERE.string.text
+msgid "There is no button with ID ($Arg1) at ($Arg2)"
+msgstr "គ្មាន​ប៊ូតុង​ដែល​មាន​អត្តសញ្ញាណ ($Arg1) នៅ ($Arg2)"
+
+#: svtmsg.src#S_CANNOT_CREATE_DIRECTORY.string.text
+msgid "Cannot create Directory: \"($Arg1)\""
+msgstr "មិន​អាច​បង្កើត​ថត ៖ \"($Arg1)\""
+
+#: svtmsg.src#S_CANNOT_FIND_FLOATING_WIN.string.text
+msgid "Cannot find FloatingWindow for floating DockingWindow at ($Arg1)."
+msgstr ""
+"មិន​អាច​រក​ឃើញ FloatingWindow សម្រាប់ DockingWindow អណ្តែត​នៅ​ឯ ($Arg1) "
+"បាន​ឡើយ ។"
+
+#: svtmsg.src#S_CANNOT_MAKE_BUTTON_VISIBLE_IN_TOOLBOX.string.text
+msgid "Button cannot be made visible in ToolBox at ($Arg1)"
+msgstr "មិន​អាច​ធ្វើ​ឲ្យ​ប៊ូតុង​មើល​ឃើញ​ក្នុងប្រអប់ឧបករណ៍​នៅ ($Arg1)"
+
+#: svtmsg.src#S_CONTROLTYPE_NOT_SUPPORTED.string.text
+msgid "ControlType ($Arg1) is not supported"
+msgstr "មិន​គាំទ្រ ControlType ($Arg1)"
+
+#: svtmsg.src#S_DEPRECATED.string.text
+msgid "Deprecated! Please change the script."
+msgstr "មិន​ពេញ​ចិត្ត ! សូម​ផ្លាស់​ប្តូរ​ស្គ្រីប ។"
+
+#: svtmsg.src#S_DIRECTORY_NOT_EMPTY.string.text
+msgid "Directory has to be Empty to unpack to. Directory: \"($Arg1)\""
+msgstr ""
+"ដើម្បី​ស្រាយ​ចេញ​ទៅ​កាន់​ថត​មួយ ថត​នោះ​ចាំបាច់​ត្រូវ​តែ​ទទេ​ស្អាត ។ ថត ៖ "
+"\"($Arg1)\""
+
+#: svtmsg.src#S_ENTRY_NOT_FOUND.string.text
+msgid "\"($Arg2)\" entry at ($Arg1) not found"
+msgstr "រក​មិន​ឃើញ​ធាតុ \"($Arg2)\" នៅ ($Arg1)"
+
+#: svtmsg.src#S_ERROR_IN_SET_TEXT.string.text
+msgid "Set text did not function"
+msgstr "អត្ថបទ​ដែល​បាន​កំណត់ មិន​ដំណើរការ"
+
+#: svtmsg.src#S_ERROR_SAVING_IMAGE.string.text
+msgid "Error #($Arg1) when saving the image"
+msgstr "កំហុស #($Arg1) ពេល​រក្សា​ទុក​រូបភាព"
+
+#: svtmsg.src#S_GPF_ABORT.string.text
+msgid "Program aborted with GPF"
+msgstr "កម្មវិធី​ត្រូវ​បាន​បោះ​បង់​ដោយ GPF"
+
+#: svtmsg.src#S_HELPID_ON_TOOLBOX_NOT_FOUND.string.text
+msgid "HelpID in ToolBox not found at ($Arg1)"
+msgstr "រក​មិន​ឃើញ​ HelpID ​ក្នុង​ប្រអប់​ឧបករណ៍​នៅ ($Arg1)"
+
+#: svtmsg.src#S_INTERNAL_ERROR.string.text
+msgid "Internal error at ($Arg1)"
+msgstr "កំហុស​ខាង​ក្នុង​នៅ ($Arg1)"
+
+#: svtmsg.src#S_INVALID_PARAMETERS.string.text
+msgid "Invalid Parameters"
+msgstr "ប៉ារ៉ាម៉ែត្រ​មិន​ត្រឹមត្រូវ"
+
+#: svtmsg.src#S_INVALID_POSITION.string.text
+msgid "Invalid position at ($Arg1)"
+msgstr "ទីតាំង​មិន​ត្រឹមត្រូវ​នៅ ($Arg1)"
+
+#: svtmsg.src#S_ITEMS_INVISIBLE.string.text
+msgid "The items are hidden at ($Arg1)"
+msgstr "វត្ថុ​ត្រូវ​បាន​លាក់​នៅ ($Arg1)"
+
+#: svtmsg.src#S_MENU_NOT_CLOSING.string.text
+msgid "Menu not closing."
+msgstr "ម៉ឺនុយ មិន​បាន​បិទ​ទេ ។"
+
+#: svtmsg.src#S_METHOD_FAILED.string.text
+msgid "($Arg1) of entry \"($Arg2)\" failed"
+msgstr "($Arg1) នៃ​ធាតុ \"($Arg2)\" បាន​បរាជ័យ"
+
+#: svtmsg.src#S_NO_ACTIVE_WINDOW.string.text
+msgid "No active window found (GetNextCloseWindow)"
+msgstr "គ្មាន​បង្អួច​សកម្ម​ត្រូវ​បាន​រកឃើញ (GetNextCloseWindow)"
+
+#: svtmsg.src#S_NO_CANCEL_BUTTON.string.text
+msgid "There is no Cancel button at ($Arg1)"
+msgstr "មិន​មាន​ប៊ូតុង \"បោះបង់\" នៅ ($Arg1)"
+
+#: svtmsg.src#S_NO_DEFAULT_BUTTON.string.text
+msgid "There is no Default button defined at ($Arg1)"
+msgstr "មិន​មាន​ប៊ូតុង \"លំនាំដើម\" ​បញ្ជាក់​នៅ ($Arg1)"
+
+#: svtmsg.src#S_NO_DIALOG_IN_GETACTIVE.string.text
+msgid "GetActive does not return a dialog! Inform development"
+msgstr "GetActive មិន​ត្រឡប់​ប្រអប់​មួយ ! ជូន​ដំណឹង​អភិវឌ្ឍន៍"
+
+#: svtmsg.src#S_NO_HELP_BUTTON.string.text
+msgid "There is no Help button at ($Arg1)"
+msgstr "មិន​មាន​ប៊ូតុង​ \"ជំនួយ​\" នៅ ($Arg1)"
+
+#: svtmsg.src#S_NO_LIST_BOX_BUTTON.string.text
+msgid "ListBoxButton does not exist in ($Arg1)"
+msgstr "ListBoxButton មិន​មាន​ក្នុង ($Arg1)"
+
+#: svtmsg.src#S_NO_LIST_BOX_STRING.string.text
+msgid "String does not exist in ($Arg1)"
+msgstr "ខ្សែអក្សរ​មិនមាន​នៅ​ក្នុង ($Arg1)"
+
+#: svtmsg.src#S_NO_MENU.string.text
+msgid "There is no menu at ($Arg1)"
+msgstr "គ្មាន​ម៉ឺនុយ​នៅ ($Arg1)"
+
+#: svtmsg.src#S_NO_MORE_FILES.string.text
+msgid "No more files"
+msgstr "គ្មាន​ឯកសារ​បន្ថែម"
+
+#: svtmsg.src#S_NO_NO_BUTTON.string.text
+msgid "There is no No button at ($Arg1)"
+msgstr "មិន​មាន​ប៊ូតុង \"ទេ\" នៅ ($Arg1)"
+
+#: svtmsg.src#S_NO_OK_BUTTON.string.text
+msgid "There is no OK button at ($Arg1)"
+msgstr "មិន​មាន​ប៊ូតុង \"យល់ព្រម\" នៅ ($Arg1)"
+
+#: svtmsg.src#S_NO_POPUP.string.text
+msgid "Pop-up menu not open"
+msgstr "ម៉ឺនុយ​លេចឡើង​មិន​បាន​បើក​ឡើយ"
+
+#: svtmsg.src#S_NO_RETRY_BUTTON.string.text
+msgid "There is no Repeat button at ($Arg1)"
+msgstr "មិន​មាន​ប៊ូតុង \"ធ្វើ​ឡើង​វិញ\" នៅ ($Arg1)"
+
+#: svtmsg.src#S_NO_SAX_PARSER.string.text
+msgid "No SAX Parser when using ($Arg1). Initialize with 'SAXReadFile' first."
+msgstr ""
+"គ្មាន SAX Parser ពេល​ប្រើ ($Arg1) ។ ចាប់ផ្តើម​ជាមួយ 'SAXReadFile' ជាមុន ។"
+
+#: svtmsg.src#S_NO_SCROLLBAR.string.text
+msgid "No scroll bar at ($Arg1)"
+msgstr "គ្មាន​របារ​រមូរ​នៅ ($Arg1)"
+
+#: svtmsg.src#S_NO_SELECTED_ENTRY.string.text
+msgid "No entry is selected in ($Arg2) at ($Arg1)"
+msgstr "គ្មាន​ធាតុ​ត្រូវ​បាន​ជ្រើស​ក្នុង ($Arg2) នៅ ($Arg1)"
+
+#: svtmsg.src#S_NO_SELECTED_ENTRY_DEPRECATED.string.text
+msgid "No entry is selected in TreeListBox at ($Arg1)"
+msgstr "គ្មាន​ធាតុ​ត្រូវ​បាន​ជ្រើស​ក្នុង TreeListBox នៅ ($Arg1)"
+
+#: svtmsg.src#S_NO_SELECT_FALSE.string.text
+msgid "Select FALSE not allowed. Use MultiSelect at ($Arg1)"
+msgstr "មិន​អនុញ្ញាត​ឲ្យ​ជ្រើស FALSE ។ ប្រើ​ពហុជម្រើស​នៅ ($Arg1)"
+
+#: svtmsg.src#S_NO_STATUSBAR.string.text
+msgid "No status bar at ($Arg1)"
+msgstr "គ្មាន​របារ​ស្ថានភាព​នៅ ($Arg1)"
+
+#: svtmsg.src#S_NO_SUBMENU.string.text
+msgid "Submenu does not exist"
+msgstr "ម៉ឺនុយ​រង​មិន​មាន​ឡើយ"
+
+#: svtmsg.src#S_NO_YES_BUTTON.string.text
+msgid "There is no Yes button at ($Arg1)"
+msgstr "មិន​មាន​ប៊ូតុង \"បាទ\" នៅ ($Arg1)"
+
+#: svtmsg.src#S_NUMBER_TOO_BIG.string.text
+msgid "Entry number ($Arg2) is too large in ($Arg1). Max. allowed is ($Arg3)"
+msgstr ""
+"ចំនួន​របស់​ធាតុ ($Arg2)​ គឺ​ធំពេក​ក្នុង ($Arg1) ។ "
+"អតិបរមា​ដែល​បាន​អនុញ្ញាត​គឺ  ($Arg3)"
+
+#: svtmsg.src#S_NUMBER_TOO_SMALL.string.text
+msgid ""
+"The entry number ($Arg2) is too small in ($Arg1). Min allowed is ($Arg3)"
+msgstr ""
+"ចំនួន​របស់​ធាតុ ($Arg2) គឺ​តូច​ពេក​ក្នុង​ ($Arg1) ។ អប្បបរមា​ដែល​អនុញ្ញាត​គឺ "
+"($Arg3)"
+
+#: svtmsg.src#S_POINTER_OUTSIDE_APPWIN.string.text
+msgid "Pointer not inside application window at '($Arg1)'"
+msgstr "ទ្រនិច​មិន​ស្ថិត​នៅ​ក្នុង​បង្អួច​របស់​កម្មវិធី​នៅ '($Arg1)'"
+
+#: svtmsg.src#S_RESETAPPLICATION_FAILED_COMPLEX.string.text
+msgid "ResetApplication failed: too complex"
+msgstr "ResetApplication បាន​បរាជ័យ ៖ ស្មុគ្រស្មាញ​ពេក"
+
+#: svtmsg.src#S_RESETAPPLICATION_FAILED_UNKNOWN.string.text
+msgid "ResetApplication failed: unknown window type"
+msgstr "ResetApplication បាន​បរាជ័យ ៖ ប្រភេទ​បង្អួច​ដែល​មិន​ស្គាល់"
+
+#: svtmsg.src#S_SELECTION_BY_ATTRIBUTE_ONLY_DIRECTORIES.string.text
+msgid "Selection by attributes only possible for directories"
+msgstr "ការ​ជ្រើស​ដោយ​គុណ​លក្ខណៈ អាច​បាន​សម្រាប់​តែ​ថត​ប៉ុណ្ណោះ"
+
+#: svtmsg.src#S_SELECT_DESELECT_VIA_STRING_NOT_IMPLEMENTED.string.text
+msgid "Select/Deselect with string not implemented at ($Arg1)"
+msgstr "មិន​បាន​អនុវត្ត ជ្រើស/ដោះ​ជម្រើស ​ដោយ​ខ្សែ​អក្សរ​​នៅ ($Arg1)"
+
+#: svtmsg.src#S_SID_EXECUTE_FAILED.string.text
+msgid "Slot ID could not be executed"
+msgstr "រុន្ធ​លេខ​សម្គាល់​មិន​អាច​ត្រូវ​បាន​ប្រតិបត្តិ"
+
+#: svtmsg.src#S_SID_EXECUTE_FAILED_NO_DISPATCHER.string.text
+msgid "Slot ID cannot be executed. No ActiveDispatcher"
+msgstr "មិន​អាច​​ប្រតិបត្តិ​អត្តសញ្ញាណ​រន្ធ​ ។ គ្មាន ActiveDispatcher"
+
+#: svtmsg.src#S_SIZE_BELOW_MINIMUM.string.text
+msgid "The Size is below the minimum. x=($Arg1) ,y=($Arg2)"
+msgstr "ទំហំ​គឺ​ក្រោម​អប្បបរមា ។ x=($Arg1) ,y=($Arg2)"
+
+#: svtmsg.src#S_SIZE_NOT_CHANGEABLE.string.text
+msgid "Size cannot be altered at ($Arg1)"
+msgstr "មិន​អាច​ផ្លាស់​ប្តូរ​ទំហំ​​នៅ ($Arg1)"
+
+#: svtmsg.src#S_SLOT_IN_EXECUTE.string.text
+msgid "Another Slot is being executed already."
+msgstr "រុន្ធ​ផ្សេង​ទៀត​កំពុង​ត្រូវ​បាន​ប្រតិបត្តិ​រួច​ហើយ ។"
+
+#: svtmsg.src#S_SPLITWIN_NOT_FOUND.string.text
+msgid "SplitWindow not found at ($Arg1)"
+msgstr "រក​មិន​ឃើញ SplitWindow នៅ ($Arg1)"
+
+#: svtmsg.src#S_TABPAGE_NOT_FOUND.string.text
+msgid "Tab page not found at ($Arg1)"
+msgstr "រក​មិន​ឃើញ​ទំព័រ​ផ្ទាំង​នៅ ($Arg1)"
+
+#: svtmsg.src#S_TEAROFF_FAILED.string.text
+msgid "TearOff failed in ToolBox at ($Arg1)"
+msgstr "TearOff បាន​បរាជ័យ​ក្នុង​ប្រអប់​ឧបករណ៍​នៅ ($Arg1)"
+
+#: svtmsg.src#S_TRISTATE_NOT_ALLOWED.string.text
+msgid "Tristate cannot be set at ($Arg1)"
+msgstr "មិន​អាច​កំណត់​ស្ថានភាព​​នៅ ($Arg1)"
+
+#: svtmsg.src#S_UNKNOWN_COMMAND.string.text
+msgid "Unknown command '($Arg1)'"
+msgstr "ពាក្យ​បញ្ជា '($Arg1)' ដែល​មិន​ស្គាល់"
+
+#: svtmsg.src#S_UNKNOWN_METHOD.string.text
+msgid "Unknown method '($Arg1)' on ($Arg2)"
+msgstr "វិធីសាស្ត្រ​ដែល​មិន​ស្គាល់ '($Arg1)' លើ ($Arg2)"
+
+#: svtmsg.src#S_UNKNOWN_TYPE.string.text
+msgid "Unknown object type ($Arg1) from UId or method '($Arg2)' not supported"
+msgstr ""
+"មិន​​គាំទ្រ​ប្រភេទ​​វត្ថុ ($Arg1) ដែល​មិន​ស្គាល់​ពី UId ឬ​វិធីសាស្ត្រ "
+"'($Arg2)' "
+
+#: svtmsg.src#S_UNO_PROPERTY_NITIALIZE_FAILED.string.text
+msgid "UnoSlot: Properties could not be initialized"
+msgstr "UnoSlo ៖ មិន​អាច​ចាប់​ផ្តើម​លក្ខណសម្បត្តិ"
+
+#: svtmsg.src#S_UNO_URL_EXECUTE_FAILED_DISABLED.string.text
+msgid "UNO URL \"($Arg1)\" could not be run: Disabled"
+msgstr "មិន​អាច​រត់ UNO URL \"($Arg1)\" ៖ ប្រើ​លែង​បាន"
+
+#: svtmsg.src#S_UNO_URL_EXECUTE_FAILED_NO_DISPATCHER.string.text
+msgid "UNO URL \"($Arg1)\" could not be executed: No dispatcher was found."
+msgstr "មិន​អាច​ប្រតិបត្តិ UNO URL \"($Arg1)\" ។ រក​មិន​ឃើញ​អ្នក​បញ្ជូន ។"
+
+#: svtmsg.src#S_UNO_URL_EXECUTE_FAILED_NO_FRAME.string.text
+msgid "UNO URL \"($Arg1)\" could not be executed: No ActiveFrame on desktop."
+msgstr "មិន​អាច​ប្រតិបត្តិ​ UNO URL \"($Arg1)\" ។ គ្មាន​ ActiveFrame លើ​ផ្ទៃតុ ។"
+
+#: svtmsg.src#S_UNPACKING_STORAGE_FAILED.string.text
+msgid "Unpacking storage \"($Arg1)\" to \"($Arg2)\" failed"
+msgstr "បាន​បរាជ័យ​ស្រាយ​ចេញ​ឧបករណ៍​ផ្ទុក \"($Arg1)\" ទៅ \"($Arg2)\""
+
+#: svtmsg.src#S_WINDOW_DISAPPEARED.string.text
+msgid "Window disappeared in the meantime at ($Arg1)"
+msgstr "បង្អួច​បាន​បាត់​ក្នុងខណៈ​​ពេល ($Arg1)"
+
+#: svtmsg.src#S_WIN_DISABLED.string.text
+msgid "($Arg1) could not be accessed. Disabled"
+msgstr "($Arg1) មិន​អាច​ត្រូវ​បាន​ចូលដំណើរការ ។ បានបិទ"
+
+#: svtmsg.src#S_WIN_INVISIBLE.string.text
+msgid "($Arg1) is not visible"
+msgstr "($Arg1) មើល​មិន​ឃើញ​ឡើយ"
+
+#: svtmsg.src#S_WIN_NOT_FOUND.string.text
+msgid "($Arg1) could not be found"
+msgstr "មិន​អាច​រកឃើញ ($Arg1)"
+
+#: testtool.src#S_INVALID_KEYCODE.string.text
+msgid "Is an invalid KeyCode!"
+msgstr "គឺ​ជា KeyCode មិន​ត្រឹមត្រូវ !"
+
+#: testtool.src#S_MANDATORY_FILE.string.text
+msgid ""
+"\n"
+"could not be found.\n"
+"This file is indispensable."
+msgstr ""
+"\n"
+"មិន​អាច​រក​ឃើញ ។\n"
+"ដាច់​ខាតត្រូវ​តែ​មាន​ឯកសារ​នេះ ។"
+
+#: testtool.src#S_READING_BASIC_MODULE.string.text
+msgid "Reading BASIC module"
+msgstr "កំពុង​អាន​ម៉ូឌុល BASIC"
+
+#: testtool.src#S_READING_CONTROLS.string.text
+msgid "Reading Controls"
+msgstr "កំពុង​អាន​វត្ថុ​បញ្ជា"
+
+#: testtool.src#S_READING_LONGNAMES.string.text
+msgid "Reading long-names"
+msgstr "កំពុង​អាន​ឈ្មោះ​វែង"
+
+#: testtool.src#S_READING_SLOT_IDS.string.text
+msgid "Reading Slot IDs"
+msgstr "កំពុង​អាន​អត្តសញ្ញាណ​របស់​រន្ធ"
+
+#: testtool.src#S_STARTING_APPLICATION.string.text
+msgid "Starting application"
+msgstr "កំពុង​ចាប់​ផ្តើម​កម្មវិធី"
+
+#: ttmsg.src#S_APPLICATION_RESTARTED.string.text
+msgid "Application has been restarted."
+msgstr "កម្មវិធី​ត្រូវ​បាន​ចាប់​ផ្តើម​ឡើង​វិញ ។"
+
+#: ttmsg.src#S_APPLICATION_START_FAILED.string.text
+msgid "Application \"($Arg1)\" cannot be started. "
+msgstr "មិន​អាច​ចាប់​ផ្តើមកម្មវិធី \"($Arg1)\" បាន​ឡើយ ។"
+
+#: ttmsg.src#S_CANNOT_OPEN_FILE.string.text
+msgid "File cannot be opened: ($Arg1)"
+msgstr "មិន​អាច​បើក​ឯកសារ ៖ ($Arg1)"
+
+#: ttmsg.src#S_DOUBLE_NAME.string.text
+msgid "Name double: ($Arg1)"
+msgstr "ឈ្មោះ​ស្ទួន ៖ ($Arg1)"
+
+#: ttmsg.src#S_ERRORS_DETECTED.string.text
+msgid "** ($Arg1) errors occurred"
+msgstr "** កំហុស ($Arg1) បាន​កើត​ឡើង"
+
+#: ttmsg.src#S_FIRST_SHORTNAME_REQ_ASTRX.string.text
+msgid "First short-name must start with * . Ignoring."
+msgstr "ដំបូង​ឈ្មោះ​ខ្លី​ត្រូវ​តែ​ចាប់​ផ្តើម​ដោយ * ។ មិន​អើពើ ។ "
+
+#: ttmsg.src#S_INCLUDE_FILE_WARNINGS_DETECTED.string.text
+msgid "** ($Arg1) warnings occurred during initialization"
+msgstr "** ការ​ព្រមាន ($Arg1) បាន​កើត​ឡើង កំឡុង​ពេល​ចាប់ផ្តើម"
+
+#: ttmsg.src#S_INVALID_LINE.string.text
+msgid "Line \"($Arg1)\" is invalid."
+msgstr "បន្ទាត់ \"($Arg1)\" មិន​ត្រឹមត្រូវ ។"
+
+#: ttmsg.src#S_LONGNAME_UNKNOWN.string.text
+msgid "Long-name unknown: ($Arg1)"
+msgstr "មិន​ស្គាល់​ឈ្មោះ​វែង ៖ ($Arg1)"
+
+#: ttmsg.src#S_NAME_NOT_THERE.string.text
+msgid "Name doesn't exist: #($Arg1)"
+msgstr "ឈ្មោះ​មិន​មាន ៖ #($Arg1)"
+
+#: ttmsg.src#S_NO_CONNECTION.string.text
+msgid "No connection. Sequence No: ($Arg1)"
+msgstr "គ្មាន​ការ​តភ្ជាប់ ។ លេខ​លំដាប់ ៖ ($Arg1)"
+
+#: ttmsg.src#S_NO_ERRORS_DETECTED.string.text
+msgid "** No errors have occurred"
+msgstr "** មិន​មាន​កំហុស​ឡើយ"
+
+#: ttmsg.src#S_NO_FILES_FOUND.string.text
+msgid "No ($Arg1) files found"
+msgstr "រក​មិន​ឃើញ​ឯកសារ ($Arg1) ឡើយ"
+
+#: ttmsg.src#S_NO_INCLUDE_FILE_WARNINGS_DETECTED.string.text
+msgid "** No warnings occurred during initialization"
+msgstr "** មិន​មាន​ការ​ព្រមាន​ឡើយ កំឡុង​ពេល​ចាប់ផ្តើម"
+
+#: ttmsg.src#S_NO_WARNINGS_DETECTED.string.text
+msgid "** No warnings have occurred"
+msgstr "** មិន​មាន​ការ​ព្រមាន​ឡើយ"
+
+#: ttmsg.src#S_READING_FILE.string.text
+msgid "Reading the files"
+msgstr "កំពុង​អាន​ឯកសារ"
+
+#: ttmsg.src#S_RETURNED_VALUE_ID_MISSMATCH.string.text
+msgid "Return value received but different Id expected"
+msgstr "បាន​ទទួល​តម្លៃ​ត្រឡប់ ប៉ុន្តែ​អត្តសញ្ញាណ​ផ្សេង​ត្រូវ​បាន​រំពឹង"
+
+#: ttmsg.src#S_RETURNED_VALUE_NO_RECEIVER.string.text
+msgid "Return value received but no receiver defined"
+msgstr "\"បាន​ទទួល​តម្លៃ​ត្រឡប់ ប៉ុន្តែ​អ្នក​ទទួល​មិន​ត្រូវ​បាន​បញ្ជាក់"
+
+#: ttmsg.src#S_RETURN_SEQUENCE_MISSMATCH.string.text
+msgid "Return Stream has wrong sequence: ($Arg1) instead of ($Arg2)"
+msgstr "លំហូរ​ទិន្នន័យ​ដែល​ត្រឡប់​មាន​លំដាប់ខុស ៖ ($Arg1) ជំនួស​ដោយ ($Arg2)"
+
+#: ttmsg.src#S_SHORTNAME_UNKNOWN.string.text
+msgid "Short-name unknown during copying: ($Arg1)"
+msgstr "មិន​ស្គាល់​ឈ្មោះ​ខ្លី កំឡុង​ពេល​ចម្លង ៖ ($Arg1)"
+
+#: ttmsg.src#S_TIMOUT_SENDING.string.text
+msgid "Server Timeout while sending. Sequence No: ($Arg1)"
+msgstr "ម៉ាស៊ីន​បម្រើ​អស់​ពេល ខណៈពេល​ផ្ញើ ។ លេខ​លំដាប់ ៖ ($Arg1)"
+
+#: ttmsg.src#S_TIMOUT_WAITING.string.text
+msgid "Server Timeout while waiting for answer. Sequence No: ($Arg1)"
+msgstr ""
+"ម៉ាស៊ីន​បម្រើ​អស់​ពេល ខណៈពេល​កំពុង​រង់ចាំ​ការ​ឆ្លើយ​តប ។ លេខ​លំដាប់ ៖ "
+"($Arg1)"
+
+#: ttmsg.src#S_UNKNOWN_METHOD.string.text
+msgid "Unknown method on object :($Arg1).($Arg2)"
+msgstr "រង់ចាំាស្ត្រ​ដែល​មិន​ស្គាល់​លើវត្ថុ ៖ ($Arg1).($Arg2)"
+
+#: ttmsg.src#S_UNKNOWN_SLOT_CONTROL.string.text
+msgid "Slot/Control unknown :\"($Arg1)\""
+msgstr "មិនស្គាល់ រន្ធ/វត្ថុបញ្ជា ៖ \"($Arg1)\""
+
+#: ttmsg.src#S_WARNINGS_DETECTED.string.text
+msgid "** ($Arg1) warnings occurred"
+msgstr "** ការ​ព្រមាន ($Arg1) បាន​កើត​ឡើង"
+
+#: format.src#STR_BASICKEY_FORMAT_CURRENCY.string.text
+msgid "@0.00 $;@(0.00 $)"
+msgstr "@0.00 $;@(0.00 $)"
+
+#: format.src#STR_BASICKEY_FORMAT_FALSE.string.text
+msgid "False"
+msgstr "មិន​ពិត"
+
+#: format.src#STR_BASICKEY_FORMAT_NO.string.text
+msgid "No"
+msgstr "ទេ"
+
+#: format.src#STR_BASICKEY_FORMAT_OFF.string.text
+msgid "Off"
+msgstr "បិទ"
+
+#: format.src#STR_BASICKEY_FORMAT_ON.string.text
+msgid "On"
+msgstr "បើក"
+
+#: format.src#STR_BASICKEY_FORMAT_TRUE.string.text
+msgid "True"
+msgstr "ពិត"
+
+#: format.src#STR_BASICKEY_FORMAT_YES.string.text
+msgid "Yes"
+msgstr "បាទ/ចាស"

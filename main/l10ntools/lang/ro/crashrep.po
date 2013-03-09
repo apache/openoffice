@@ -1,0 +1,277 @@
+
+#: crashrep.ulf#_ALLOW_CONTACT_.LngText.text
+msgid "~I allow Oracle to contact me regarding this report."
+msgstr "Perm~it Oracle să mă contacteze în legătură cu acest raport."
+
+#: crashrep.ulf#_BACK_BUTTON_.LngText.text
+msgid " << ~Back"
+msgstr "<< Îna~poi"
+
+#: crashrep.ulf#_CANCEL_BUTTON_.LngText.text
+msgid "Cancel"
+msgstr "Renunță"
+
+#: crashrep.ulf#_DONOT_SEND_BUTTON_.LngText.text
+msgid "Do ~Not Send"
+msgstr "~Nu trimite"
+
+#: crashrep.ulf#_ENTER_DESCRIPTION_.LngText.text
+msgid "~How were you using %PRODUCTNAME% when the error occurred ?"
+msgstr "~Cum foloseați %PRODUCTNAME% când a intervenit eroarea?"
+
+#: crashrep.ulf#_ENTER_EMAIL_.LngText.text
+msgid "Please enter your e-mail address."
+msgstr "Vă rugăm să vă introduceți adresa de email."
+
+#: crashrep.ulf#_ENTER_TITLE_.LngText.text
+msgid ""
+"Which type of document (e.g. presentation) were you using when the error "
+"occurred?"
+msgstr ""
+"Ce tip de document (de exemplu, o prezentare) foloseați când a apărut "
+"eroarea?"
+
+#: crashrep.ulf#_ERROR_MSG_DISK_FULL_.LngText.text
+msgid ""
+"The error report could not be temporarily saved and could therefore not be "
+"sent."
+msgstr ""
+"Raportul erorii nu a putut fi salvat temporar și din acest motiv nu a putut "
+"fi trimis."
+
+#: crashrep.ulf#_ERROR_MSG_NOCONNECT_.LngText.text
+msgid ""
+"The error report could not be sent because there is no Internet connection. "
+"Please check your Internet settings."
+msgstr ""
+"Raportul de eroare nu a putut fi trimis deoarece nu există conexiune la "
+"Internet. Vă rugăm să vă verificați setările pentru Internet."
+
+#: crashrep.ulf#_ERROR_MSG_NOEMAILADDRESS_.LngText.text
+msgid ""
+"You have marked the option 'I allow Oracle to contact me regarding this "
+"report.'\n"
+"Please enter your e-mail address."
+msgstr ""
+"Ați bifat opțiunea „Permit Oracle să mă contacteze în legătură cu acest "
+"raport.”\n"
+"Introduceți vă rugăm și adresa de email pentru a fi contactat."
+
+#: crashrep.ulf#_ERROR_MSG_PROXY_.LngText.text
+msgid ""
+"The error report could not be sent. Please check the proxy settings under "
+"'Options' in the Error Report Tool."
+msgstr ""
+"Raportul erorii nu a putut fi trimis. Vă rugăm să verificați setările pentru "
+"proxy din meniul „Opțiuni” al uneltei de raportat erori."
+
+#: crashrep.ulf#_ERROR_MSG_SENDMAIL_.LngText.text
+msgid ""
+"The error report could not be sent because 'sendmail' could not be started.\n"
+"Please check the 'sendmail' settings."
+msgstr ""
+"Raportul erorii nu a putut fi trimis deoarece nu poate fi pornit „sendmail”.\n"
+"Vă rugăm să verificați setările „sendmail”."
+
+#: crashrep.ulf#_ERROR_MSG_SIMPLE_MAPI_.LngText.text
+msgid ""
+"The error report could not be sent because the default e-mail program does "
+"not support MAPI.\n"
+" Please use a MAPI-compatible e-mail program."
+msgstr ""
+"Raportul erorii nu a putut fi trimis pentru că programul implicit de "
+"corespondență electronică nu suportă MAPI.\n"
+" Vă rugăm să încercați să folosiți un program de email compatibil MAPI."
+
+#: crashrep.ulf#_MSG_CMDLINE_USAGE_.LngText.text
+msgid "Usage:"
+msgstr "Utilizare:"
+
+#: crashrep.ulf#_MSG_PARAM_HELP_DESCRIPTION_.LngText.text
+msgid ""
+"Shows this help text.\n"
+"Detailed information can be found in the Setup Guide."
+msgstr ""
+"Afișează acest text de ajutor.\n"
+"Informații detaliate pot fi găsite în ghidul de instalare."
+
+#: crashrep.ulf#_MSG_PARAM_PROCESSID_.LngText.text
+msgid "-p <process ID>"
+msgstr "-p <ID proces>"
+
+#: crashrep.ulf#_MSG_PARAM_PROCESSID_DESCRIPTION_.LngText.text
+msgid "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
+msgstr ""
+"Atribuie identificatorul de proces (PID) %PRODUCTNAME% uneltei de raportat "
+"erori"
+
+#: crashrep.ulf#_NEXT_BUTTON_.LngText.text
+msgid "~Next >>"
+msgstr "Î~nainte >>"
+
+#: crashrep.ulf#_OK_BUTTON_.LngText.text
+msgid "OK"
+msgstr "OK"
+
+#: crashrep.ulf#_OPTIONS_BUTTON_.LngText.text
+msgid "~Options..."
+msgstr "~Opțiuni..."
+
+#: crashrep.ulf#_OPTIONS_TITLE_.LngText.text
+msgid "Options"
+msgstr "Opțiuni"
+
+#: crashrep.ulf#_PRIVACY_URL_.LngText.text
+msgid "http://www.oracle.com/html/services-privacy-policy.html"
+msgstr "http://ro.sun.com/privacy/"
+
+#: crashrep.ulf#_PROXY_SETTINGS_ADDRESS_.LngText.text
+msgid "HT~TP Proxy"
+msgstr "Proxy H~TTP"
+
+#: crashrep.ulf#_PROXY_SETTINGS_DESCRIPTION_.LngText.text
+msgid ""
+"The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to "
+"be able to send error reports.\n"
+"\n"
+"Companies often use proxy servers in conjunction with a firewall to protect "
+"the network.\n"
+"\n"
+"If this applies to your situation, you have to specify the address and port "
+"for the server."
+msgstr ""
+"Unealta de raportare a erorilor din %PRODUCTNAME% are nevoie sa fie "
+"conectată la Internet pentru a putea trimite rapoartele de erori.\n"
+"\n"
+"Adesea companiile folosesc servere proxy împreună cu paravane de protecție "
+"pentru a-și proteja rețeaua.\n"
+"\n"
+"Dacă vă aflați în această situație, trebuie să specificați adresa și portul "
+"serverului."
+
+#: crashrep.ulf#_PROXY_SETTINGS_DIRECT_.LngText.text
+msgid "Use ~direct connection to the Internet"
+msgstr "Folosește conexiunea ~directă la Internet"
+
+#: crashrep.ulf#_PROXY_SETTINGS_HEADER_.LngText.text
+msgid "Proxy settings"
+msgstr "Setări pentru proxy"
+
+#: crashrep.ulf#_PROXY_SETTINGS_MANUAL_.LngText.text
+msgid "Use ~manual settings"
+msgstr "Folosește setările ~manuale"
+
+#: crashrep.ulf#_PROXY_SETTINGS_PORT_.LngText.text
+msgid "~Port"
+msgstr "~Port"
+
+#: crashrep.ulf#_PROXY_SETTINGS_SYSTEM_.LngText.text
+msgid "Use ~system settings"
+msgstr "Folo~sește setările sistemului"
+
+#: crashrep.ulf#_REPORT_BODY_.LngText.text
+msgid ""
+"The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information "
+"that could help Oracle improve %PRODUCTNAME%.\n"
+"In the spaces below, you can enter a title for your crash report and "
+"describe the action you were trying to carry out when the error occurred. "
+"Then click 'Send'.\n"
+msgstr ""
+"S-a creat un raport de eroare în %PRODUCTNAME% %PRODUCTVERSION% în care s-au "
+"colectat informații care ne vor ajuta să îmbunătățim %PRODUCTNAME%.\n"
+" Puteți introduce în spațiile de mai jos un titlu pentru raportul "
+"dumneavoastră sau puteți descrie acțiunea pe care ați încercat să o "
+"efectuați când a intervenit eroarea. Apoi apăsați „Trimite”.\n"
+
+#: crashrep.ulf#_REPORT_CAPTION_.LngText.text
+msgctxt "crashrep.ulf#_REPORT_CAPTION_.LngText.text"
+msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "Raportare defect în %PRODUCTNAME% %PRODUCTVERSION%"
+
+#: crashrep.ulf#_REPORT_HEADER_.LngText.text
+msgid "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
+msgstr "A intervenit o eroare în timpul rulării %PRODUCTNAME% %PRODUCTVERSION%"
+
+#: crashrep.ulf#_SAVE_REPORT_BUTTON_.LngText.text
+msgid "~Save Report..."
+msgstr "~Salvează raportul..."
+
+#: crashrep.ulf#_SAVE_REPORT_TITLE_.LngText.text
+msgid "Save Report to"
+msgstr "Salvează raportul în"
+
+#: crashrep.ulf#_SENDING_REPORT_HEADER_.LngText.text
+msgid "Sending Error Report"
+msgstr "Se trimite raportul de eroare"
+
+#: crashrep.ulf#_SENDING_REPORT_STATUS_.LngText.text
+msgid "Status: Sending error report"
+msgstr "Stare: se trimite raportul de eroare"
+
+#: crashrep.ulf#_SENDING_REPORT_STATUS_FINISHED_.LngText.text
+msgid "Status: The error report has been sent successfully."
+msgstr "Stare: Raportul de eroare a fost trimis cu succes."
+
+#: crashrep.ulf#_SEND_BUTTON_.LngText.text
+msgid "S~end"
+msgstr "Trimit~e"
+
+#: crashrep.ulf#_SHOW_REPORT_BUTTON_.LngText.text
+msgid "Show ~Report..."
+msgstr "A~rată raportul..."
+
+#: crashrep.ulf#_WELCOME_BODY1_.LngText.text
+msgid ""
+"This error report tool gathers information about how %PRODUCTNAME% is "
+"working and sends it to Oracle to help improve future versions.\n"
+"\n"
+msgstr ""
+"Această unealtă de raportare a erorilor adună informații despre cum "
+"funcționează %PRODUCTNAME% și le trimite către Oracle pentru a ajuta la "
+"îmbunătățirea versiunilor viitoare.\n"
+"\n"
+
+#: crashrep.ulf#_WELCOME_BODY2_.LngText.text
+msgid ""
+"It's easy - just send the report without any further effort on your part by "
+"clicking 'Send' in the next dialog, or you can briefly describe how the "
+"error occurred and then click 'Send'. If you want to see the report, click "
+"the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n"
+"\n"
+msgstr ""
+"E ușor, nu trebuie decât să trimiteți raportul apăsând butonul „Trimite” din "
+"următorul dialog. Înainte de asta puteți să descrieți pe scurt cum a apărut "
+"eroarea. Dacă doriți să vedeți conținutul raportului, apăsați butonul "
+"„Arată raportul”. Dacă apăsați „Nu trimite” nu se va trimite nicio "
+"informație.\n"
+"\n"
+
+#: crashrep.ulf#_WELCOME_BODY3_.LngText.text
+msgid ""
+"Customer Privacy\n"
+"The information gathered is limited to data concerning the state of %"
+"PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information "
+"about passwords or document contents is not collected.\n"
+"\n"
+"The information will only be used to improve the quality of %PRODUCTNAME% "
+"and will not be shared with third parties.\n"
+"For more information on Oracle's privacy policy, visit\n"
+msgstr ""
+"Confidențialitatea dumneavoastră\n"
+"Informațiile colectate sunt limitate la datele care privesc starea %"
+"PRODUCTNAME% %PRODUCTVERSION% în momentul erorii. Orice alte informații "
+"referitoare la parole sau conținutul documentelor nu sunt adunate.\n"
+"\n"
+"Informațiile vor fi folosite pentru a îmbunătăți calitatea %PRODUCTNAME% și "
+"nu vor fi împărtășite cu părți terțe.\n"
+"Pentru mai multe informații despre politica de confidențialitate a Oracle, "
+"vizitați\n"
+
+#: crashrep.ulf#_WELCOME_CAPTION_.LngText.text
+msgctxt "crashrep.ulf#_WELCOME_CAPTION_.LngText.text"
+msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "Raportare erori în %PRODUCTNAME% %PRODUCTVERSION%"
+
+#: crashrep.ulf#_WELCOME_HEADER_.LngText.text
+msgid "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "Bun venit la raportorul de erori în %PRODUCTNAME% %PRODUCTVERSION%"

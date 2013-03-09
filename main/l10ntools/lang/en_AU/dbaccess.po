@@ -1,0 +1,5176 @@
+"X-Accelerator-Marker: ~\n"
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATABASENAME.fixedtext.text
+#, fuzzy
+msgid "Database ~name"
+msgstr "Database ~name"
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_USER.fixedline.text
+#, fuzzy
+msgid "User settings"
+msgstr "User settings"
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CONUSR.fixedtext.text
+#, fuzzy
+msgid "~Control user"
+msgstr "~Control user"
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSUSR.fixedtext.text
+#, fuzzy
+msgid "~Administrator"
+msgstr "~Administrator"
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DOMAIN_USR.fixedtext.text
+#, fuzzy
+msgid "~Domain user"
+msgstr "~Domain user"
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSPWD.pushbutton.text
+#, fuzzy
+msgid "P~assword..."
+msgstr "P~assword..."
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_CONPWD.pushbutton.text
+#, fuzzy
+msgid "~Password..."
+msgstr "~Password..."
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DOMAINPWD.pushbutton.text
+#, fuzzy
+msgid "Passwo~rd..."
+msgstr "Passwo~rd..."
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_RESTORE.fixedtext.text
+#, fuzzy
+msgid "~Backup file"
+msgstr "~Backup file"
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_RESTORE.pushbutton.text
+#, fuzzy
+msgctxt "AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_RESTORE.pushbutton.text"
+msgid "..."
+msgstr "..."
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.FL_DBSETTINGS.fixedline.text
+#, fuzzy
+msgid "Database settings"
+msgstr "Database settings"
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_SYSDEVSPACE.fixedtext.text
+#, fuzzy
+msgid "S~YSDEVSPACE"
+msgstr "S~YSDEVSPACE"
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG.fixedtext.text
+#, fuzzy
+msgid "TRANSACTI~ONLOG"
+msgstr "TRANSACTI~ONLOG"
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE.fixedtext.text
+#, fuzzy
+msgid "DATAD~EVSPACE"
+msgstr "DATAD~EVSPACE"
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSDEVSPACE.pushbutton.text
+#, fuzzy
+msgctxt "AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_SYSDEVSPACE.pushbutton.text"
+msgid "..."
+msgstr "..."
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_TRANSACTIONLOG.pushbutton.text
+#, fuzzy
+msgctxt "AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_TRANSACTIONLOG.pushbutton.text"
+msgid "..."
+msgstr "..."
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DATADEVSPACE.pushbutton.text
+#, fuzzy
+msgctxt "AdabasNewDb.src#DLG_ADABAS_NEWDB.PB_DATADEVSPACE.pushbutton.text"
+msgid "..."
+msgstr "..."
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_TRANSACTIONLOG_SIZE.fixedtext.text
+#, fuzzy
+msgid "Transaction ~file (MB)"
+msgstr "Transaction ~file (MB)"
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_DATADEVSPACE_SIZE.fixedtext.text
+#, fuzzy
+msgid "Data~base size (MB)"
+msgstr "Data~base size (MB)"
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.FT_CACHE_SIZE.fixedtext.text
+#, fuzzy
+msgid "Data ~buffer size (MB)"
+msgstr "Data ~buffer size (MB)"
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.STR_BACKUPFILE_LOAD.string.text
+#, fuzzy
+msgid "Backup file information"
+msgstr "Backup file information"
+
+#: AdabasNewDb.src#DLG_ADABAS_NEWDB.modaldialog.text
+#, fuzzy
+msgid "Create New Adabas D Database"
+msgstr "Create New Adabas D Database"
+
+#: AdabasNewDb.src#STR_ADABAS_NO_PARAM_SET.string.text
+#, fuzzy
+msgid "No entry could be written in the configuration file."
+msgstr "No entry could be written in the configuration file."
+
+#: AdabasNewDb.src#STR_ADABAS_NO_DB_CREATED.string.text
+#, fuzzy
+msgid "An error occurred as the DB files were being created."
+msgstr "An error occurred as the DB files were being created."
+
+#: AdabasNewDb.src#STR_ADABAS_NO_SYSTEM_TABLES.string.text
+#, fuzzy
+msgid "An error occurred as the system tables were being created."
+msgstr "An error occurred as the system tables were being created."
+
+#: AdabasNewDb.src#STR_ADABAS_NO_BACKUP_FILE.string.text
+#, fuzzy
+msgid "The backup file entered does not exist."
+msgstr "The backup file entered does not exist."
+
+#: AdabasNewDb.src#INFO_STR_MAX_FILE_LENGTH.infobox.text
+#, fuzzy
+msgid "The fully qualified file cannot be longer than \\'#\\' characters."
+msgstr "The fully qualified file cannot be longer than \\'#\\' characters."
+
+#: AdabasNewDb.src#STR_NO_SAME_USER.string.text
+#, fuzzy
+msgid "The administrator and the control user cannot have the same name!"
+msgstr "The administrator and the control user cannot have the same name!"
+
+#: AdabasNewDb.src#STR_DEVSPACE_NO_FILE.string.text
+#, fuzzy
+msgid "No name has been entered for the $name$ file!"
+msgstr "No name has been entered for the $name$ file!"
+
+#: AdabasNewDb.src#STR_NO_PERMISSION.string.text
+#, fuzzy
+msgid "You have to have administrator rights to create a new database!"
+msgstr "You must have administrator rights to create a new database!"
+
+#: AdabasNewDb.src#STR_FILE_OR_DIR_UNKNOWN.string.text
+#, fuzzy
+msgid "The specified file name or directory does not exist."
+msgstr "The specified file name or directory does not exist."
+
+#: AdabasNewDb.src#STR_ERROR_IN_ADABAS_INSTALLATION.string.text
+#, fuzzy
+msgid ""
+"No new database can be created.\n"
+"Please check your Adabas D installation, especially the variables \"DBROOT\" "
+"and \"DBWORK\"."
+msgstr ""
+"No new database can be created.\n"
+"Please check your Adabas D installation, especially the variables \"DBROOT\" "
+"and \"DBWORK\"."
+
+#: AdabasNewDb.src#STR_STAT_WARNING.string.text
+#, fuzzy
+msgid "Warning!"
+msgstr "Warning!"
+
+#: AdabasNewDb.src#STR_ADABAS_CREATEFILES.string.text
+#, fuzzy
+msgid "Creating database files."
+msgstr "Creating database files."
+
+#: AdabasNewDb.src#STR_ADABAS_CREATEPARAM_FILE.string.text
+#, fuzzy
+msgid "Creating database configuration file."
+msgstr "Creating database configuration file."
+
+#: AdabasNewDb.src#STR_ADABAS_START_DATABASE.string.text
+#, fuzzy
+msgid "Starting database for the first time."
+msgstr "Starting database for the first time."
+
+#: AdabasNewDb.src#STR_ADABAS_DB_EXISTS.string.text
+#, fuzzy
+msgid "The name entered already exists."
+msgstr "The name entered already exists."
+
+#: AdabasNewDb.src#STR_ADABAS_NO_DEFAULTNAME.string.text
+#, fuzzy
+msgid ""
+"No default names could be set for the database files. The total length is "
+"more than 40 characters."
+msgstr ""
+"No default names could be set for the database files. The total length is "
+"more than 40 characters."
+
+#: AdabasNewDb.src#STR_ADABAS_NO_ACCESSRIGHTS.string.text
+#, fuzzy
+msgid ""
+"No default names could be set for the database files. There is no write "
+"access."
+msgstr ""
+"No default names could be set for the database files. There is no write "
+"access."
+
+#: AdabasNewDb.src#STR_ADABAS_CANNOT_CONVERT.string.text
+#, fuzzy
+msgid ""
+"The current database need to be converted. Please insert control user  and "
+"password."
+msgstr ""
+"The current database needs to be converted. Please insert control user and "
+"password."
+
+#: AdabasNewDb.src#STR_ADABAS_PASSWORD_ILLEGAL.string.text
+#, fuzzy
+msgid "Spaces are not permitted in the password. Please enter a new password."
+msgstr "Spaces are not permitted in the password. Please enter a new password."
+"X-Accelerator-Marker: ~\n"
+
+#: macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_CLOSE_SUB_DOCS.string.text
+#, fuzzy
+msgid "Prepare"
+msgstr "Prepare"
+
+#: macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_BACKUP_DBDOC.string.text
+#, fuzzy
+msgid "Backup Document"
+msgstr "Backup Document"
+
+#: macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_MIGRATE.string.text
+#, fuzzy
+msgid "Migrate"
+msgstr "Migrate"
+
+#: macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_SUMMARY.string.text
+#, fuzzy
+msgctxt "macromigration.src#DLG_MACRO_MIGRATION.STR_STATE_SUMMARY.string.text"
+msgid "Summary"
+msgstr "Summary"
+
+#: macromigration.src#DLG_MACRO_MIGRATION.modaldialog.text
+#, fuzzy
+msgid "Database Document Macro Migration"
+msgstr "Database Document Macro Migration"
+
+#: macromigration.src#TP_PREPARE.FT_HEADER.fixedtext.text
+#, fuzzy
+msgid "Welcome to the Database Macro Migration Wizard"
+msgstr "Welcome to the Database Macro Migration Wizard"
+
+#: macromigration.src#TP_PREPARE.FT_INTRODUCTION.fixedtext.text
+#, fuzzy
+msgid ""
+"This wizard will guide you through the task of migrating your macros.\n"
+"\n"
+"After you finished it, all macros which were formerly embedded into the "
+"forms and reports of the current database document will have been moved to "
+"the document itself. In this course, libraries will be renamed as needed.\n"
+"\n"
+"If your forms and reports contain references to those macros, they will be "
+"adjusted, where possible.\n"
+"\n"
+"Before the migration can start, all forms, reports, queries and tables "
+"belonging to the document must be closed. Press 'Next' to do so."
+msgstr ""
+"This wizard will guide you through the task of migrating your macros.\n"
+"\n"
+"After you finished it, all macros which were formerly embedded into the "
+"forms and reports of the current database document will have been moved to "
+"the document itself. In this course, libraries will be renamed as needed.\n"
+"\n"
+"If your forms and reports contain references to those macros, they will be "
+"adjusted, where possible.\n"
+"\n"
+"Before the migration can start, all forms, reports, queries and tables "
+"belonging to the document must be closed. Press 'Next' to do so."
+
+#: macromigration.src#TP_PREPARE.FT_CLOSE_DOC_ERROR.fixedtext.text
+#, fuzzy
+msgid ""
+"Not all objects could be closed. Please close them manually, and re-start "
+"the wizard."
+msgstr ""
+"Not all objects could be closed. Please close them manually and re-start the "
+"wizard."
+
+#: macromigration.src#TP_SAVE_DBDOC_AS.FT_HEADER.fixedtext.text
+#, fuzzy
+msgid "Backup your Document"
+msgstr "Backup your Document"
+
+#: macromigration.src#TP_SAVE_DBDOC_AS.FT_EXPLANATION.fixedtext.text
+#, fuzzy
+msgid ""
+"To allow you to go back to the state before the migration, the database "
+"document will be backed up to a location of your choice. Every change done "
+"by the wizard will be made to the original document, the backup will stay "
+"untouched."
+msgstr ""
+"To allow you to go back to the state before the migration, the database "
+"document will be backed up to a location of your choice. Every change done "
+"by the wizard will be made to the original document, the backup will stay "
+"untouched."
+
+#: macromigration.src#TP_SAVE_DBDOC_AS.FT_SAVE_AS_LABEL.fixedtext.text
+#, fuzzy
+msgid "Save To:"
+msgstr "Save To:"
+
+#: macromigration.src#TP_SAVE_DBDOC_AS.PB_BROWSE_SAVE_AS_LOCATION.pushbutton.text
+#, fuzzy
+msgid "Browse ..."
+msgstr "Browse ..."
+
+#: macromigration.src#TP_SAVE_DBDOC_AS.FT_START_MIGRATION.fixedtext.text
+#, fuzzy
+msgid ""
+"Press 'Next' to save a copy of your document, and to begin the migration."
+msgstr ""
+"Press 'Next' to save a copy of your document and to begin the migration."
+
+#: macromigration.src#TP_MIGRATE.FT_HEADER.fixedtext.text
+#, fuzzy
+msgid "Migration Progress"
+msgstr "Migration Progress"
+
+#: macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT.fixedtext.text
+#, fuzzy
+msgid ""
+"The database document contains $forms$ form(s) and $reports$ report(s), "
+"which are currently being processed:"
+msgstr ""
+"The database document contains $forms$ form(s) and $reports$ report(s), "
+"which are currently being processed:"
+
+#: macromigration.src#TP_MIGRATE.FT_CURRENT_OBJECT_LABEL.fixedtext.text
+#, fuzzy
+msgid "Current object:"
+msgstr "Current object:"
+
+#: macromigration.src#TP_MIGRATE.FT_CURRENT_PROGRESS_LABEL.fixedtext.text
+#, fuzzy
+msgid "Current progress:"
+msgstr "Current progress:"
+
+#: macromigration.src#TP_MIGRATE.FT_ALL_PROGRESS_LABEL.fixedtext.text
+#, fuzzy
+msgid "Overall progress:"
+msgstr "Overall progress:"
+
+#: macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT_PROGRESS.fixedtext.text
+#, fuzzy
+msgctxt "macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT_PROGRESS.fixedtext.text"
+msgid "document $current$ of $overall$"
+msgstr "document $current$ of $overall$"
+
+#: macromigration.src#TP_MIGRATE.FT_MIGRATION_DONE.fixedtext.text
+#, fuzzy
+msgid ""
+"All forms and reports have been successfully processed. Press 'Next' to show "
+"a detailed summary."
+msgstr ""
+"All forms and reports have been successfully processed. Press 'Next' to show "
+"a detailed summary."
+
+#: macromigration.src#TP_SUMMARY.FT_HEADER.fixedtext.text
+#, fuzzy
+msgctxt "macromigration.src#TP_SUMMARY.FT_HEADER.fixedtext.text"
+msgid "Summary"
+msgstr "Summary"
+
+#: macromigration.src#TP_SUMMARY.STR_SUCCESSFUL.string.text
+#, fuzzy
+msgid ""
+"The migration was successful. Below is a log of the actions which have been "
+"taken to your document."
+msgstr ""
+"The migration was successful. Below is a log of the actions which have been "
+"taken to your document."
+
+#: macromigration.src#TP_SUMMARY.STR_UNSUCCESSFUL.string.text
+#, fuzzy
+msgid ""
+"The migration was not successful. Examine the migration log below for "
+"details."
+msgstr ""
+"The migration was not successful. Examine the migration log below for "
+"details."
+
+#: macromigration.src#STR_FORM.string.text
+#, fuzzy
+msgid "Form '$name$'"
+msgstr "Form '$name$'"
+
+#: macromigration.src#STR_REPORT.string.text
+#, fuzzy
+msgid "Report '$name$'"
+msgstr "Report '$name$'"
+
+#: macromigration.src#STR_OVERALL_PROGRESS.string.text
+#, fuzzy
+msgctxt "macromigration.src#STR_OVERALL_PROGRESS.string.text"
+msgid "document $current$ of $overall$"
+msgstr "document $current$ of $overall$"
+
+#: macromigration.src#STR_DATABASE_DOCUMENT.string.text
+#, fuzzy
+msgid "Database Document"
+msgstr "Database Document"
+
+#: macromigration.src#STR_SAVED_COPY_TO.string.text
+#, fuzzy
+msgid "saved copy to $location$"
+msgstr "saved copy to $location$"
+
+#: macromigration.src#STR_MOVED_LIBRARY.string.text
+#, fuzzy
+msgid "migrated $type$ library '$old$' to '$new$'"
+msgstr "migrated $type$ library '$old$' to '$new$'"
+
+#: macromigration.src#STR_LIBRARY_TYPE_AND_NAME.string.text
+#, fuzzy
+msgid "$type$ library '$library$'"
+msgstr "$type$ library '$library$'"
+
+#: macromigration.src#STR_MIGRATING_LIBS.string.text
+#, fuzzy
+msgid "migrating libraries ..."
+msgstr "migrating libraries ..."
+
+#: macromigration.src#STR_OOO_BASIC.string.text
+#, fuzzy
+msgid "%PRODUCTNAME Basic"
+msgstr "%PRODUCTNAME Basic"
+
+#: macromigration.src#STR_JAVA_SCRIPT.string.text
+#, fuzzy
+msgid "JavaScript"
+msgstr "JavaScript"
+
+#: macromigration.src#STR_BEAN_SHELL.string.text
+#, fuzzy
+msgid "BeanShell"
+msgstr "BeanShell"
+
+#: macromigration.src#STR_JAVA.string.text
+#, fuzzy
+msgid "Java"
+msgstr "Java"
+
+#: macromigration.src#STR_PYTHON.string.text
+#, fuzzy
+msgid "Python"
+msgstr "Python"
+
+#: macromigration.src#STR_DIALOG.string.text
+#, fuzzy
+msgid "dialog"
+msgstr "dialog"
+
+#: macromigration.src#STR_ERRORS.string.text
+#, fuzzy
+msgid "Error(s)"
+msgstr "Error(s)"
+
+#: macromigration.src#STR_WARNINGS.string.text
+#, fuzzy
+msgid "Warnings"
+msgstr "Warnings"
+
+#: macromigration.src#STR_EXCEPTION.string.text
+#, fuzzy
+msgid "caught exception: "
+msgstr "caught exception: "
+
+#: macromigration.src#ERR_INVALID_BACKUP_LOCATION.errorbox.text
+#, fuzzy
+msgid ""
+"You need to choose a backup location other than the document location itself."
+msgstr ""
+"You must choose a backup location other than the document location itself."
+
+#: macromigration.src#STR_INVALID_NUMBER_ARGS.string.text
+#, fuzzy
+msgid "Invalid number of initialization arguments. Expected 1."
+msgstr "Invalid number of initialisation arguments. Expected 1."
+
+#: macromigration.src#STR_NO_DATABASE.string.text
+#, fuzzy
+msgid "No database document found in the initialization arguments."
+msgstr "No database document found in the initialisation arguments."
+
+#: macromigration.src#STR_NOT_READONLY.string.text
+#, fuzzy
+msgid "Not applicable to read-only documents."
+msgstr "Not applicable to read-only documents."
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: ~\n"
+
+#: bcommon.src#RID_STR_TBL_TITLE.string.text
+#, fuzzy
+msgctxt "bcommon.src#RID_STR_TBL_TITLE.string.text"
+msgid "Table #"
+msgstr "Table #"
+
+#: sbabrw.src#QUERY_BRW_SAVEMODIFIED.querybox.text
+#, fuzzy
+msgid ""
+"The current record has been changed.\n"
+"Do you want to save the changes?"
+msgstr ""
+"The current record has been changed.\n"
+"Do you want to save the changes?"
+
+#: sbabrw.src#QUERY_BRW_DELETE_ROWS.querybox.text
+#, fuzzy
+msgid "Do you want to delete the selected data?"
+msgstr "Do you want to delete the selected data?"
+
+#: sbabrw.src#RID_STR_DATABROWSER_FILTERED.string.text
+#, fuzzy
+msgid "(filtered)"
+msgstr "(filtered)"
+
+#: sbabrw.src#SBA_BROWSER_SETTING_ORDER.string.text
+#, fuzzy
+msgid "Error setting the sort criteria"
+msgstr "Error setting the sort criteria"
+
+#: sbabrw.src#SBA_BROWSER_SETTING_FILTER.string.text
+#, fuzzy
+msgid "Error setting the filter criteria"
+msgstr "Error setting the filter criteria"
+
+#: sbabrw.src#RID_STR_CONNECTION_LOST.string.text
+#, fuzzy
+msgid "Connection lost"
+msgstr "Connection lost"
+
+#: sbabrw.src#RID_STR_QUERIES_CONTAINER.string.text
+#, fuzzy
+msgid "Queries"
+msgstr "Queries"
+
+#: sbabrw.src#RID_STR_TABLES_CONTAINER.string.text
+#, fuzzy
+msgid "Tables"
+msgstr "Tables"
+
+#: sbabrw.src#MID_EDIT_DATABASE.#define.text
+#, fuzzy
+msgid "Edit ~Database File..."
+msgstr "Edit ~Database File..."
+
+#: sbabrw.src#MID_ADMINISTRATE.#define.text
+#, fuzzy
+msgid "Registered databases ..."
+msgstr "Registered databases ..."
+
+#: sbabrw.src#MID_CLOSECONN.#define.text
+#, fuzzy
+msgid "Disco~nnect"
+msgstr "Disco~nnect"
+
+#: sbabrw.src#STR_TITLE_CONFIRM_DELETION.string.text
+#, fuzzy
+msgid "Confirm Deletion"
+msgstr "Confirm Deletion"
+
+#: sbabrw.src#STR_QUERY_DELETE_TABLE.string.text
+#, fuzzy
+msgid "Do you want to delete the table '%1'?"
+msgstr "Do you want to delete the table '%1'?"
+
+#: sbabrw.src#QUERY_BRW_DELETE_QUERY_CONFIRM.querybox.text
+#, fuzzy
+msgid "The query already exists. Do you want to delete it?"
+msgstr "The query already exists. Do you want to delete it?"
+
+#: sbabrw.src#QUERY_CONNECTION_LOST.querybox.text
+#, fuzzy
+msgid "The connection to the database has been lost. Do you want to reconnect?"
+msgstr ""
+"The connection to the database has been lost. Do you want to reconnect?"
+
+#: sbabrw.src#STR_OPENTABLES_WARNINGS.string.text
+#, fuzzy
+msgid "Warnings encountered"
+msgstr "Warnings encountered"
+
+#: sbabrw.src#STR_OPENTABLES_WARNINGS_DETAILS.string.text
+#, fuzzy
+msgid ""
+"While retrieving the tables, warnings were reported by the database "
+"connection."
+msgstr ""
+"While retrieving the tables, warnings were reported by the database "
+"connection."
+
+#: sbabrw.src#STR_CONNECTING_DATASOURCE.string.text
+#, fuzzy
+msgid "Connecting to \"$name$\" ..."
+msgstr "Connecting to \"$name$\" ..."
+
+#: sbabrw.src#STR_LOADING_QUERY.string.text
+#, fuzzy
+msgid "Loading query $name$ ..."
+msgstr "Loading query $name$ ..."
+
+#: sbabrw.src#STR_LOADING_TABLE.string.text
+#, fuzzy
+msgid "Loading table $name$ ..."
+msgstr "Loading table $name$ ..."
+
+#: sbabrw.src#STR_NO_TABLE_FORMAT_INSIDE.string.text
+#, fuzzy
+msgid "No table format could be found."
+msgstr "No table format could be found."
+
+#: sbabrw.src#STR_COULDNOTCONNECT_DATASOURCE.string.text
+#, fuzzy
+msgid "The connection to the data source \"$name$\" could not be established."
+msgstr "The connection to the data source \"$name$\" could not be established."
+
+#: sbabrw.src#RID_MENU_REFRESH_DATA.ID_BROWSER_REFRESH_REBUILD.menuitem.text
+#, fuzzy
+msgid "Rebuild"
+msgstr "Rebuild"
+
+#: sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLATTRSET.menuitem.text
+#, fuzzy
+msgid "Column ~Format..."
+msgstr "Column ~Format..."
+
+#: sbagrid.src#RID_SBA_GRID_COLCTXMENU.ID_BROWSER_COLUMNINFO.menuitem.text
+#, fuzzy
+msgid "Copy Column D~escription"
+msgstr "Copy Column D~escription"
+
+#: sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_TABLEATTR.menuitem.text
+#, fuzzy
+msgid "Table Format..."
+msgstr "Table Format..."
+
+#: sbagrid.src#RID_SBA_GRID_ROWCTXMENU.ID_BROWSER_ROWHEIGHT.menuitem.text
+#, fuzzy
+msgid "Row Height..."
+msgstr "Row Height..."
+
+#: sbagrid.src#RID_STR_UNDO_MODIFY_RECORD.string.text
+#, fuzzy
+msgid "Undo: Data Input"
+msgstr "Undo: Data Input"
+
+#: sbagrid.src#RID_STR_SAVE_CURRENT_RECORD.string.text
+#, fuzzy
+msgid "Save current record"
+msgstr "Save current record"
+
+#: sbagrid.src#STR_QRY_TITLE.string.text
+#, fuzzy
+msgid "Query #"
+msgstr "Query #"
+
+#: sbagrid.src#STR_TBL_TITLE.string.text
+#, fuzzy
+msgctxt "sbagrid.src#STR_TBL_TITLE.string.text"
+msgid "Table #"
+msgstr "Table #"
+
+#: sbagrid.src#STR_VIEW_TITLE.string.text
+#, fuzzy
+msgid "View #"
+msgstr "View #"
+
+#: sbagrid.src#STR_NAME_ALREADY_EXISTS.string.text
+#, fuzzy
+msgid "The name \"#\" already exists."
+msgstr "The name \"#\" already exists."
+
+#: sbagrid.src#STR_NO_COLUMNNAME_MATCHING.string.text
+#, fuzzy
+msgid "No matching column names were found."
+msgstr "No matching column names were found."
+
+#: sbagrid.src#STR_ERROR_OCCURED_WHILE_COPYING.string.text
+#, fuzzy
+msgid "An error occurred. Do you want to continue copying?"
+msgstr "An error occurred. Do you want to continue copying?"
+
+#: sbagrid.src#STR_DATASOURCE_GRIDCONTROL_NAME.string.text
+#, fuzzy
+msgid "Data source table view"
+msgstr "Data source table view"
+
+#: sbagrid.src#STR_DATASOURCE_GRIDCONTROL_DESC.string.text
+#, fuzzy
+msgid "Shows the selected table or query."
+msgstr "Shows the selected table or query."
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: ~\n"
+
+#: AdabasStat.src#DLG_ADABASSTAT.FL_FILES.fixedline.text
+#, fuzzy
+msgid "Database files"
+msgstr "Database files"
+
+#: AdabasStat.src#DLG_ADABASSTAT.FT_SYSDEVSPACE.fixedtext.text
+#, fuzzy
+msgid "S~YSDEVSPACE:"
+msgstr "S~YSDEVSPACE:"
+
+#: AdabasStat.src#DLG_ADABASSTAT.FT_TRANSACTIONLOG.fixedtext.text
+#, fuzzy
+msgid "~TRANSACTIONLOG:"
+msgstr "~TRANSACTIONLOG:"
+
+#: AdabasStat.src#DLG_ADABASSTAT.FT_DATADEVSPACE.fixedtext.text
+#, fuzzy
+msgid "DATAD~EVSPACE:"
+msgstr "DATAD~EVSPACE:"
+
+#: AdabasStat.src#DLG_ADABASSTAT.FL_SIZES.fixedline.text
+#, fuzzy
+msgid "Database sizes"
+msgstr "Database sizes"
+
+#: AdabasStat.src#DLG_ADABASSTAT.FT_SIZE.fixedtext.text
+#, fuzzy
+msgid "S~ize (MB):"
+msgstr "S~ize (MB):"
+
+#: AdabasStat.src#DLG_ADABASSTAT.FT_FREESIZE.fixedtext.text
+#, fuzzy
+msgid "~Free memory space (MB):"
+msgstr "~Free memory space (MB):"
+
+#: AdabasStat.src#DLG_ADABASSTAT.FT_MEMORYUSING.fixedtext.text
+#, fuzzy
+msgid "~Memory utilization (in %):"
+msgstr "~Memory utilisation (in %):"
+
+#: AdabasStat.src#DLG_ADABASSTAT.modaldialog.text
+#, fuzzy
+msgid "Database Statistics"
+msgstr "Database Statistics"
+
+#: AdabasStat.src#STR_ADABAS_HELP_SYSDEVSPACE.string.text
+#, fuzzy
+msgid "Contains the system tables"
+msgstr "Contains the system tables"
+
+#: AdabasStat.src#STR_ADABAS_HELP_TRANSACT.string.text
+#, fuzzy
+msgid "Contains information about transaction"
+msgstr "Contains information about transaction"
+
+#: AdabasStat.src#STR_ADABAS_HELP_DATADEVSPACES.string.text
+#, fuzzy
+msgid "Contains all data files"
+msgstr "Contains all data files"
+
+#: AdabasStat.src#STR_ADABAS_HELP_SIZE.string.text
+#, fuzzy
+msgid "Total size of the database files"
+msgstr "Total size of the database files"
+
+#: AdabasStat.src#STR_ADABAS_HELP_FREESIZE.string.text
+#, fuzzy
+msgid "Currently available space before a new datadev file is created."
+msgstr "Currently available space before a new datadev file is created."
+
+#: AdabasStat.src#STR_ADABAS_HELP_MEMORYUSING.string.text
+#, fuzzy
+msgid "Currently used memory"
+msgstr "Currently used memory"
+
+#: AdabasStat.src#STR_ADABAS_ERROR_SYSTEMTABLES.string.text
+#, fuzzy
+msgid ""
+"No information could be displayed because no access rights exist for the "
+"required system tables."
+msgstr ""
+"No information could be displayed because no access rights exist for the "
+"required system tables."
+
+#: admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_MYSQL_DATABASE_NAME.fixedtext.text
+#, fuzzy
+msgid "~Database name"
+msgstr "~Database name"
+
+#: admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_HOST_PORT.radiobutton.text
+#, fuzzy
+msgid "Se~rver / Port"
+msgstr "Se~rver / Port"
+
+#: admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_HOST_NAME.fixedtext.text
+#, fuzzy
+msgid "~Server"
+msgstr "~Server"
+
+#: admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT.fixedtext.text
+#, fuzzy
+msgid "~Port"
+msgstr "~Port"
+
+#: admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT_DEFAULT.fixedtext.text
+#, fuzzy
+msgctxt ""
+"admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.FT_COMMON_PORT_DEFAULT.fixedtext."
+"text"
+msgid "Default: 3306"
+msgstr "Default: 3306"
+
+#: admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_SOCKET.radiobutton.text
+#, fuzzy
+msgid "So~cket"
+msgstr "So~cket"
+
+#: admincontrols.src#RID_MYSQL_NATIVE_SETTINGS.RB_MYSQL_NAMED_PIPE.radiobutton.text
+#, fuzzy
+msgid "Named p~ipe"
+msgstr "Named p~ipe"
+
+#: adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_TABLES.radiobutton.text
+#, fuzzy
+msgid "Tables"
+msgstr "Tables"
+
+#: adtabdlg.src#DLG_JOIN_TABADD.RB_CASE_QUERIES.radiobutton.text
+#, fuzzy
+msgid "Queries"
+msgstr "Queries"
+
+#: adtabdlg.src#DLG_JOIN_TABADD.PB_ADDTABLE.pushbutton.text
+#, fuzzy
+msgid "~Add"
+msgstr "~Add"
+
+#: adtabdlg.src#DLG_JOIN_TABADD.PB_CLOSE.cancelbutton.text
+#, fuzzy
+msgctxt "adtabdlg.src#DLG_JOIN_TABADD.PB_CLOSE.cancelbutton.text"
+msgid "~Close"
+msgstr "~Close"
+
+#: adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLES.string.text
+#, fuzzy
+msgid "Add Tables"
+msgstr "Add Tables"
+
+#: adtabdlg.src#DLG_JOIN_TABADD.STR_ADD_TABLE_OR_QUERY.string.text
+#, fuzzy
+msgid "Add Table or Query"
+msgstr "Add Table or Query"
+
+#: advancedsettings.src#AUTO_DATAHANDLING_AUTO_Y_.FL_DATAHANDLING.fixedline.text
+#, fuzzy
+msgid "Options"
+msgstr "Options"
+
+#: advancedsettings.src#AUTO_SQL92CHECK_AUTO_Y_.CB_SQL92CHECK.checkbox.text
+#, fuzzy
+msgid "Use SQL92 naming constraints"
+msgstr "Use SQL-92 naming constraints"
+
+#: advancedsettings.src#AUTO_APPENDTABLEALIAS_AUTO_Y_.CB_APPENDTABLEALIAS.checkbox.text
+#, fuzzy
+msgid "Append the table alias name on SELECT statements"
+msgstr "Append the table alias name on SELECT statements"
+
+#: advancedsettings.src#AUTO_AS_BEFORE_CORR_NAME_AUTO_Y_.CB_AS_BEFORE_CORR_NAME.checkbox.text
+#, fuzzy
+msgid "Use keyword AS before table alias names"
+msgstr "Use keyword AS before table alias names"
+
+#: advancedsettings.src#AUTO_ENABLEOUTERJOIN_AUTO_Y_.CB_ENABLEOUTERJOIN.checkbox.text
+#, fuzzy
+msgid "Use Outer Join syntax '{OJ }'"
+msgstr "Use Outer Join syntax '{OJ }'"
+
+#: advancedsettings.src#AUTO_IGNOREDRIVER_PRIV_AUTO_Y_.CB_IGNOREDRIVER_PRIV.checkbox.text
+#, fuzzy
+msgid "Ignore the privileges from the database driver"
+msgstr "Ignore the privileges from the database driver"
+
+#: advancedsettings.src#AUTO_PARAMETERNAMESUBST_AUTO_Y_.CB_PARAMETERNAMESUBST.checkbox.text
+#, fuzzy
+msgid "Replace named parameters with '?'"
+msgstr "Replace named parameters with '?'"
+
+#: advancedsettings.src#AUTO_SUPPRESVERSIONCOLUMN_AUTO_Y_.CB_SUPPRESVERSIONCL.checkbox.text
+#, fuzzy
+msgid "Display version columns (when available)"
+msgstr "Display version columns (when available)"
+
+#: advancedsettings.src#AUTO_CATALOG_AUTO_Y_.CB_CATALOG.checkbox.text
+#, fuzzy
+msgid "Use catalog name in SELECT statements"
+msgstr "Use catalogue name in SELECT statements"
+
+#: advancedsettings.src#AUTO_SCHEMA_AUTO_Y_.CB_SCHEMA.checkbox.text
+#, fuzzy
+msgid "Use schema name in SELECT statements"
+msgstr "Use schema name in SELECT statements"
+
+#: advancedsettings.src#AUTO_IGNOREINDEXAPPENDIX_AUTO_Y_.CB_IGNOREINDEXAPPENDIX.checkbox.text
+#, fuzzy
+msgid "Create index with ASC or DESC statement"
+msgstr "Create index with ASC or DESC statement"
+
+#: advancedsettings.src#AUTO_DOSLINEENDS_AUTO_Y_.CB_DOSLINEENDS.checkbox.text
+#, fuzzy
+msgid "End text lines with CR+LF"
+msgstr "End text lines with CR+LF"
+
+#: advancedsettings.src#AUTO_IGNORECURRENCY_AUTO_Y_.CB_IGNORECURRENCY.checkbox.text
+#, fuzzy
+msgid "Ignore currency field information"
+msgstr "Ignore currency field information"
+
+#: advancedsettings.src#AUTO_CHECKREQUIRED_AUTO_Y_.CB_CHECK_REQUIRED.checkbox.text
+#, fuzzy
+msgid "Form data input checks for required fields"
+msgstr "Form data input checks for required fields"
+
+#: advancedsettings.src#AUTO_ESCAPE_DATETIME_AUTO_Y_.CB_ESCAPE_DATETIME.checkbox.text
+#, fuzzy
+msgid "Use ODBC conformant date/time literals"
+msgstr "Use ODBC conformant date/time literals"
+
+#: advancedsettings.src#AUTO_PRIMARY_KEY_SUPPORT_AUTO_Y_.CB_PRIMARY_KEY_SUPPORT.checkbox.text
+#, fuzzy
+msgid "Supports primary keys"
+msgstr "Supports primary keys"
+
+#: advancedsettings.src#AUTO_RESPECTRESULTSETTYPE_AUTO_Y_.CB_RESPECTRESULTSETTYPE.checkbox.text
+#, fuzzy
+msgid "Respect the result set type from the database driver"
+msgstr "Respect the result set type from the database driver"
+
+#: advancedsettings.src#WORKAROUND.1.stringlist.text
+#, fuzzy
+msgid "Default"
+msgstr "Default"
+
+#: advancedsettings.src#WORKAROUND.2.stringlist.text
+#, fuzzy
+msgid "SQL"
+msgstr "SQL"
+
+#: advancedsettings.src#WORKAROUND.3.stringlist.text
+#, fuzzy
+msgid "Mixed"
+msgstr "Mixed"
+
+#: advancedsettings.src#WORKAROUND.4.stringlist.text
+#, fuzzy
+msgid "MS Access"
+msgstr "Microsoft Access"
+
+#: advancedsettings.src#AUTO_BOOLEANCOMPARISON_AUTO_Y_.FT_BOOLEANCOMPARISON.fixedtext.text
+#, fuzzy
+msgid "Comparison of Boolean values"
+msgstr "Comparison of Boolean values"
+
+#: advancedsettings.src#AUTO_MAXROWSCAN_AUTO_Y_.FT_MAXROWSCAN.fixedtext.text
+#, fuzzy
+msgid "Rows to scan column types"
+msgstr "Rows to scan column types"
+
+#: advancedsettings.src#PAGE_GENERATED_VALUES.FL_SEPARATORAUTO.fixedline.text
+#, fuzzy
+msgid "Settings"
+msgstr "Settings"
+
+#: advancedsettings.src#PAGE_GENERATED_VALUES.CB_RETRIEVE_AUTO.checkbox.text
+#, fuzzy
+msgid "Re~trieve generated values"
+msgstr "Re~trieve generated values"
+
+#: advancedsettings.src#PAGE_GENERATED_VALUES.FT_AUTOINCREMENTVALUE.fixedtext.text
+#, fuzzy
+msgid "~Auto-increment statement"
+msgstr "~Auto-increment statement"
+
+#: advancedsettings.src#PAGE_GENERATED_VALUES.FT_RETRIEVE_AUTO.fixedtext.text
+#, fuzzy
+msgid "~Query of generated values"
+msgstr "~Query of generated values"
+
+#: advancedsettings.src#DLG_DATABASE_ADVANCED.STR_GENERATED_VALUE.string.text
+#, fuzzy
+msgid "Generated Values"
+msgstr "Generated Values"
+
+#: advancedsettings.src#DLG_DATABASE_ADVANCED.STR_DS_BEHAVIOUR.string.text
+#, fuzzy
+msgid "Special Settings"
+msgstr "Special Settings"
+
+#: advancedsettings.src#DLG_DATABASE_ADVANCED.tabdialog.text
+#, fuzzy
+msgid "Advanced Settings"
+msgstr "Advanced Settings"
+
+#: AutoControls.src#STR_DBASE_PATH_OR_FILE.string.text
+#, fuzzy
+msgid "Path to the dBASE files"
+msgstr "Path to the dBASE files"
+
+#: AutoControls.src#STR_FLAT_PATH_OR_FILE.string.text
+#, fuzzy
+msgid "Path to the text files"
+msgstr "Path to the text files"
+
+#: AutoControls.src#STR_CALC_PATH_OR_FILE.string.text
+#, fuzzy
+msgid "Path to the spreadsheet document"
+msgstr "Path to the spreadsheet document"
+
+#: AutoControls.src#STR_NAME_OF_ODBC_DATASOURCE.string.text
+#, fuzzy
+msgid "Name of the ODBC data source on your system"
+msgstr "Name of the ODBC data source on your system"
+
+#: AutoControls.src#STR_MYSQL_DATABASE_NAME.string.text
+#, fuzzy
+msgid "Name of the MySQL database"
+msgstr "Name of the MySQL database"
+
+#: AutoControls.src#STR_ORACLE_DATABASE_NAME.string.text
+#, fuzzy
+msgid "Name of the Oracle database"
+msgstr "Name of the Oracle database"
+
+#: AutoControls.src#STR_ADABAS_DATABASE_NAME.string.text
+#, fuzzy
+msgid "Name of the Adabas D database"
+msgstr "Name of the Adabas D database"
+
+#: AutoControls.src#STR_MSACCESS_MDB_FILE.string.text
+#, fuzzy
+msgid "Microsoft Access database file"
+msgstr "Microsoft Access database file"
+
+#: AutoControls.src#STR_NO_ADDITIONAL_SETTINGS.string.text
+#, fuzzy
+msgid ""
+"No more settings are necessary. To verify that the connection is working, "
+"click the '%test' button."
+msgstr ""
+"No more settings are necessary. To verify that the connection is working, "
+"click the '%test' button."
+
+#: AutoControls.src#STR_COMMONURL.string.text
+#, fuzzy
+msgid "Datasource URL"
+msgstr "Datasource URL"
+
+#: AutoControls.src#STR_HOSTNAME.string.text
+#, fuzzy
+msgctxt "AutoControls.src#STR_HOSTNAME.string.text"
+msgid "~Host name"
+msgstr "~Host name"
+
+#: AutoControls.src#STR_MOZILLA_PROFILE_NAME.string.text
+#, fuzzy
+msgid "~Mozilla profile name"
+msgstr "~Mozilla profile name"
+
+#: AutoControls.src#STR_THUNDERBIRD_PROFILE_NAME.string.text
+#, fuzzy
+msgid "~Thunderbird profile name"
+msgstr "~Thunderbird profile name"
+
+#: CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_NEWFOLDER.imagebutton.text
+#, fuzzy
+msgctxt ""
+"CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_NEWFOLDER."
+"imagebutton.text"
+msgid "-"
+msgstr "-"
+
+#: CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_NEWFOLDER.imagebutton.quickhelptext
+#, fuzzy
+msgid "Create New Directory"
+msgstr "Create New Directory"
+
+#: CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_UP.imagebutton.text
+#, fuzzy
+msgctxt ""
+"CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_UP.imagebutton.text"
+msgid "-"
+msgstr "-"
+
+#: CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_UP.imagebutton.quickhelptext
+#, fuzzy
+msgid "Up One Level"
+msgstr "Up One Level"
+
+#: CollectionView.src#DLG_COLLECTION_VIEW.FT_EXPLORERFILE_FILENAME.fixedtext.text
+#, fuzzy
+msgid "File ~name:"
+msgstr "File ~name:"
+
+#: CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_SAVE.pushbutton.text
+#, fuzzy
+msgctxt ""
+"CollectionView.src#DLG_COLLECTION_VIEW.BTN_EXPLORERFILE_SAVE.pushbutton.text"
+msgid "Save"
+msgstr "Save"
+
+#: CollectionView.src#DLG_COLLECTION_VIEW.STR_PATHNAME.string.text
+#, fuzzy
+msgid "~Path:"
+msgstr "~Path:"
+
+#: CollectionView.src#DLG_COLLECTION_VIEW.modaldialog.text
+#, fuzzy
+msgctxt "CollectionView.src#DLG_COLLECTION_VIEW.modaldialog.text"
+msgid "Save"
+msgstr "Save"
+
+#: CollectionView.src#STR_NEW_FOLDER.string.text
+#, fuzzy
+msgid "Folder"
+msgstr "Folder"
+
+#: CollectionView.src#STR_ALREADYEXISTOVERWRITE.string.text
+#, fuzzy
+msgid "The file already exists. Overwrite?"
+msgstr "The file already exists. Overwrite?"
+
+#: ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR1.fixedline.text
+#, fuzzy
+msgctxt "ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR1.fixedline.text"
+msgid "General"
+msgstr "General"
+
+#: ConnectionPage.src#PAGE_CONNECTION.FT_HOSTNAME.fixedtext.text
+#, fuzzy
+msgctxt "ConnectionPage.src#PAGE_CONNECTION.FT_HOSTNAME.fixedtext.text"
+msgid "~Host name"
+msgstr "~Host name"
+
+#: ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR2.fixedline.text
+#, fuzzy
+msgctxt "ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR2.fixedline.text"
+msgid "User authentication"
+msgstr "User authentication"
+
+#: ConnectionPage.src#PAGE_CONNECTION.FT_USERNAME.fixedtext.text
+#, fuzzy
+msgctxt "ConnectionPage.src#PAGE_CONNECTION.FT_USERNAME.fixedtext.text"
+msgid "~User name"
+msgstr "~User name"
+
+#: ConnectionPage.src#PAGE_CONNECTION.CB_PASSWORD_REQUIRED.checkbox.text
+#, fuzzy
+msgctxt "ConnectionPage.src#PAGE_CONNECTION.CB_PASSWORD_REQUIRED.checkbox.text"
+msgid "Password required"
+msgstr "Password required"
+
+#: ConnectionPage.src#PAGE_CONNECTION.FL_SEPARATOR3.fixedline.text
+#, fuzzy
+msgid "JDBC properties"
+msgstr "JDBC properties"
+
+#: ConnectionPage.src#PAGE_CONNECTION.FT_JDBCDRIVERCLASS.fixedtext.text
+#, fuzzy
+msgid "~JDBC driver class"
+msgstr "~JDBC driver class"
+
+#: ConnectionPage.src#PAGE_CONNECTION.PB_TESTDRIVERCLASS.pushbutton.text
+#, fuzzy
+msgid "Test Class"
+msgstr "Test Class"
+
+#: ConnectionPage.src#PAGE_CONNECTION.PB_TESTCONNECTION.pushbutton.text
+#, fuzzy
+msgid "Test Connection"
+msgstr "Test Connection"
+
+#: ConnectionPage.src#STR_NO_ADABASE_DATASOURCES.string.text
+#, fuzzy
+msgid "No Adabas D data sources were found on your system."
+msgstr "No Adabas D data sources were found on your system."
+
+#: ConnectionPage.src#STR_CONNECTION_TEST.string.text
+#, fuzzy
+msgid "Connection Test"
+msgstr "Connection Test"
+
+#: ConnectionPage.src#STR_CONNECTION_SUCCESS.string.text
+#, fuzzy
+msgid "The connection was established successfully."
+msgstr "The connection was established successfully."
+
+#: ConnectionPage.src#STR_CONNECTION_NO_SUCCESS.string.text
+#, fuzzy
+msgid "The connection could not be established."
+msgstr "The connection could not be established."
+
+#: ConnectionPage.src#STR_JDBCDRIVER_SUCCESS.string.text
+#, fuzzy
+msgid "The JDBC driver was loaded successfully."
+msgstr "The JDBC driver was loaded successfully."
+
+#: ConnectionPage.src#STR_JDBCDRIVER_NO_SUCCESS.string.text
+#, fuzzy
+msgid "The JDBC driver could not be loaded."
+msgstr "The JDBC driver could not be loaded."
+
+#: ConnectionPage.src#STR_MSACCESS_FILTERNAME.string.text
+#, fuzzy
+msgid "MS Access file"
+msgstr "Microsoft Access file"
+
+#: ConnectionPage.src#STR_MSACCESS_2007_FILTERNAME.string.text
+#, fuzzy
+msgid "MS Access 2007 file"
+msgstr "Microsoft Access 2007 file"
+
+#: dbadmin.src#AUTO_USECATALOG_AUTO_Y_.CB_USECATALOG.checkbox.text
+#, fuzzy
+msgid "Use catalog for file-based databases"
+msgstr "Use catalogue for file-based databases"
+
+#: dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS_AUTO_Y_.FL_SEPARATOR1.fixedline.text
+#, fuzzy
+msgctxt ""
+"dbadmin.src#AUTO_FIXEDLINE_CONNSETTINGS_AUTO_Y_.FL_SEPARATOR1.fixedline.text"
+msgid "Connection Settings"
+msgstr "Connection Settings"
+
+#: dbadmin.src#AUTO_HOST_AND_PORT_AUTO_Y_.FT_HOSTNAME.fixedtext.text
+#, fuzzy
+msgctxt "dbadmin.src#AUTO_HOST_AND_PORT_AUTO_Y_.FT_HOSTNAME.fixedtext.text"
+msgid "~Host name"
+msgstr "~Host name"
+
+#: dbadmin.src#AUTO_HOST_AND_PORT_AUTO_Y_.FT_PORTNUMBER.fixedtext.text
+#, fuzzy
+msgctxt "dbadmin.src#AUTO_HOST_AND_PORT_AUTO_Y_.FT_PORTNUMBER.fixedtext.text"
+msgid "~Port number"
+msgstr "~Port number"
+
+#: dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_GENERAL.string.text
+#, fuzzy
+msgid "Advanced Properties"
+msgstr "Advanced Properties"
+
+#: dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_ADVANCED.string.text
+#, fuzzy
+msgid "Additional Settings"
+msgstr "Additional Settings"
+
+#: dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_CONNECTION.string.text
+#, fuzzy
+msgid "Connection settings"
+msgstr "Connection settings"
+
+#: dbadmin.src#DLG_DATABASE_ADMINISTRATION.tabdialog.text
+#, fuzzy
+msgctxt "dbadmin.src#DLG_DATABASE_ADMINISTRATION.tabdialog.text"
+msgid "Database properties"
+msgstr "Database properties"
+
+#: dbadmin.src#DLG_DATABASE_TYPE_CHANGE.modaldialog.text
+#, fuzzy
+msgctxt "dbadmin.src#DLG_DATABASE_TYPE_CHANGE.modaldialog.text"
+msgid "Database properties"
+msgstr "Database properties"
+
+#: dbadmin.src#PAGE_GENERAL.FT_GENERALHEADERTEXT.fixedtext.text
+#, fuzzy
+msgid "Welcome to the %PRODUCTNAME Database Wizard"
+msgstr "Welcome to the %PRODUCTNAME Database Wizard"
+
+#: dbadmin.src#PAGE_GENERAL.FT_GENERALHELPTEXT.fixedtext.text
+#, fuzzy
+msgid ""
+"Use the Database Wizard to create a new database, open an existing database "
+"file, or connect to a database stored on a server."
+msgstr ""
+"Use the Database Wizard to create a new database, open an existing database "
+"file, or connect to a database stored on a server."
+
+#: dbadmin.src#PAGE_GENERAL.FT_DATASOURCEHEADER.fixedtext.text
+#, fuzzy
+msgid "What do you want to do?"
+msgstr "What do you want to do?"
+
+#: dbadmin.src#PAGE_GENERAL.RB_CREATEDBDATABASE.radiobutton.text
+#, fuzzy
+msgid "Create a n~ew database"
+msgstr "Create a n~ew database"
+
+#: dbadmin.src#PAGE_GENERAL.RB_OPENEXISTINGDOC.radiobutton.text
+#, fuzzy
+msgid "Open an existing database ~file"
+msgstr "Open an existing database ~file"
+
+#: dbadmin.src#PAGE_GENERAL.FT_DOCLISTLABEL.fixedtext.text
+#, fuzzy
+msgid "Recently used"
+msgstr "Recently used"
+
+#: dbadmin.src#PAGE_GENERAL.RB_GETEXISTINGDATABASE.radiobutton.text
+#, fuzzy
+msgid "Connect to an e~xisting database"
+msgstr "Connect to an e~xisting database"
+
+#: dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_PRE.fixedtext.text
+#, fuzzy
+msgid ""
+"Select the type of database to which you want to establish a connection."
+msgstr ""
+"Select the type of database to which you want to establish a connection."
+
+#: dbadmin.src#PAGE_GENERAL.FT_DATATYPE.fixedtext.text
+#, fuzzy
+msgid "Database ~type "
+msgstr "Database ~type "
+
+#: dbadmin.src#PAGE_GENERAL.FT_DATATYPEAPPENDIX.fixedtext.text
+#, fuzzy
+msgid "Database"
+msgstr "Database"
+
+#: dbadmin.src#PAGE_GENERAL.FT_DATASOURCETYPE_POST.fixedtext.text
+#, fuzzy
+msgid ""
+"On the following pages, you can make detailed settings for the connection.\n"
+"\n"
+"The new settings you make will overwrite your existing settings."
+msgstr ""
+"On the following pages you can configure detailed settings for the "
+"connection.\n"
+"\n"
+"The new settings will overwrite your existing settings."
+
+#: dbadmin.src#PAGE_GENERAL.STR_MYSQLENTRY.string.text
+#, fuzzy
+msgid "MySQL"
+msgstr "MySQL"
+
+#: dbadmin.src#PAGE_GENERAL.STR_PARENTTITLE.string.text
+#, fuzzy
+msgid "Data Source Properties: #"
+msgstr "Data Source Properties: #"
+
+#: dbadmin.src#PAGE_GENERAL.STR_COULDNOTLOAD_ODBCLIB.string.text
+#, fuzzy
+msgid ""
+"Could not load the program library #lib# or it is corrupted. The ODBC data "
+"source selection is not available."
+msgstr ""
+"Could not load the program library #lib# or it is corrupted. The ODBC data "
+"source selection is not available."
+
+#: dbadmin.src#PAGE_GENERAL.STR_UNSUPPORTED_DATASOURCE_TYPE.string.text
+#, fuzzy
+msgid ""
+"This kind of data source is not supported on this platform.\n"
+"You are allowed to change the settings, but you probably will not be able to "
+"connect to the database."
+msgstr ""
+"This kind of data source is not supported on this platform.\n"
+"You are allowed to change the settings, but you probably will not be able to "
+"connect to the database."
+
+#: dbadmin.src#PAGE_GENERAL.tabpage.text
+#, fuzzy
+msgctxt "dbadmin.src#PAGE_GENERAL.tabpage.text"
+msgid "General"
+msgstr "General"
+
+#: dbadmin.src#PAGE_DBASE.FL_SEPARATOR1.fixedline.text
+#, fuzzy
+msgid "Optional settings"
+msgstr "Optional settings"
+
+#: dbadmin.src#PAGE_DBASE.CB_SHOWDELETEDROWS.checkbox.text
+#, fuzzy
+msgid "Display deleted records as well"
+msgstr "Display deleted records as well"
+
+#: dbadmin.src#PAGE_DBASE.FT_SPECIAL_MESSAGE.fixedtext.text
+#, fuzzy
+msgid ""
+"Note: When deleted, and thus inactive, records are  displayed, you will not "
+"be able to delete records from the data source."
+msgstr ""
+"Note: When deleted, and thus inactive, records are displayed, you will not "
+"be able to delete records from the data source."
+
+#: dbadmin.src#PAGE_DBASE.PB_INDICIES.pushbutton.text
+#, fuzzy
+msgid "Indexes..."
+msgstr "Indexes..."
+
+#: dbadmin.src#PAGE_ODBC.FL_SEPARATOR1.fixedline.text
+#, fuzzy
+msgid "Optional Settings"
+msgstr "Optional Settings"
+
+#: dbadmin.src#PAGE_ODBC.FT_OPTIONS.fixedtext.text
+#, fuzzy
+msgid "ODBC ~options"
+msgstr "ODBC ~options"
+
+#: dbadmin.src#PAGE_ADABAS.FL_SEPARATOR1.fixedline.text
+#, fuzzy
+msgctxt "dbadmin.src#PAGE_ADABAS.FL_SEPARATOR1.fixedline.text"
+msgid "Connection Settings"
+msgstr "Connection Settings"
+
+#: dbadmin.src#PAGE_ADABAS.FT_HOSTNAME.fixedtext.text
+#, fuzzy
+msgctxt "dbadmin.src#PAGE_ADABAS.FT_HOSTNAME.fixedtext.text"
+msgid "~Host name"
+msgstr "~Host name"
+
+#: dbadmin.src#PAGE_ADABAS.FT_CACHE_SIZE.fixedtext.text
+#, fuzzy
+msgid "Data ~buffer size (MB)"
+msgstr "Data ~buffer size (MB)"
+
+#: dbadmin.src#PAGE_ADABAS.FT_DATA_INCREMENT.fixedtext.text
+#, fuzzy
+msgid "~Data increment (MB)"
+msgstr "~Data increment (MB)"
+
+#: dbadmin.src#PAGE_ADABAS.FL_SEPARATOR2.fixedline.text
+#, fuzzy
+msgid "Administration"
+msgstr "Administration"
+
+#: dbadmin.src#PAGE_ADABAS.FT_CTRLUSERNAME.fixedtext.text
+#, fuzzy
+msgid "Control ~user name"
+msgstr "Control ~user name"
+
+#: dbadmin.src#PAGE_ADABAS.FT_CTRLPASSWORD.fixedtext.text
+#, fuzzy
+msgid "Control ~password"
+msgstr "Control ~password"
+
+#: dbadmin.src#PAGE_ADABAS.CB_SHUTDB.checkbox.text
+#, fuzzy
+msgid "~Shut down service when closing %PRODUCTNAME"
+msgstr "~Shut down service when closing %PRODUCTNAME"
+
+#: dbadmin.src#PAGE_ADABAS.PB_STAT.pushbutton.text
+#, fuzzy
+msgid "E~xtended..."
+msgstr "E~xtended..."
+
+#: dbadmin.src#PAGE_MYSQL_JDBC.FT_JDBCDRIVERCLASS.fixedtext.text
+#, fuzzy
+msgid "MySQL JDBC d~river class"
+msgstr "MySQL JDBC d~river class"
+
+#: dbadmin.src#PAGE_MYSQL_JDBC.PB_TESTDRIVERCLASS.pushbutton.text
+#, fuzzy
+msgctxt "dbadmin.src#PAGE_MYSQL_JDBC.PB_TESTDRIVERCLASS.pushbutton.text"
+msgid "Test class"
+msgstr "Test class"
+
+#: dbadmin.src#PAGE_MYSQL_NATIVE.FL_SEPARATOR2.fixedline.text
+#, fuzzy
+msgctxt "dbadmin.src#PAGE_MYSQL_NATIVE.FL_SEPARATOR2.fixedline.text"
+msgid "User authentication"
+msgstr "User authentication"
+
+#: dbadmin.src#PAGE_MYSQL_NATIVE.FT_USERNAME.fixedtext.text
+#, fuzzy
+msgctxt "dbadmin.src#PAGE_MYSQL_NATIVE.FT_USERNAME.fixedtext.text"
+msgid "~User name"
+msgstr "~User name"
+
+#: dbadmin.src#PAGE_MYSQL_NATIVE.CB_PASSWORD_REQUIRED.checkbox.text
+#, fuzzy
+msgctxt "dbadmin.src#PAGE_MYSQL_NATIVE.CB_PASSWORD_REQUIRED.checkbox.text"
+msgid "Password required"
+msgstr "Password required"
+
+#: dbadmin.src#PAGE_ORACLE_JDBC.FT_JDBCDRIVERCLASS.fixedtext.text
+#, fuzzy
+msgid "Oracle JDBC d~river class"
+msgstr "Oracle JDBC d~river class"
+
+#: dbadmin.src#PAGE_ORACLE_JDBC.PB_TESTDRIVERCLASS.pushbutton.text
+#, fuzzy
+msgctxt "dbadmin.src#PAGE_ORACLE_JDBC.PB_TESTDRIVERCLASS.pushbutton.text"
+msgid "Test class"
+msgstr "Test class"
+
+#: dbadmin.src#PAGE_LDAP.FL_SEPARATOR1.fixedline.text
+#, fuzzy
+msgctxt "dbadmin.src#PAGE_LDAP.FL_SEPARATOR1.fixedline.text"
+msgid "Connection Settings"
+msgstr "Connection Settings"
+
+#: dbadmin.src#PAGE_LDAP.FT_BASEDN.fixedtext.text
+#, fuzzy
+msgid "~Base DN"
+msgstr "~Base DN"
+
+#: dbadmin.src#PAGE_LDAP.CB_USESSL.checkbox.text
+#, fuzzy
+msgid "Use secure connection(SSL)"
+msgstr "Use secure connection(SSL)"
+
+#: dbadmin.src#PAGE_LDAP.FT_PORTNUMBER.fixedtext.text
+#, fuzzy
+msgctxt "dbadmin.src#PAGE_LDAP.FT_PORTNUMBER.fixedtext.text"
+msgid "~Port number"
+msgstr "~Port number"
+
+#: dbadmin.src#PAGE_LDAP.FT_LDAPROWCOUNT.fixedtext.text
+#, fuzzy
+msgid "Maximum number of ~records"
+msgstr "Maximum number of ~records"
+
+#: dbadmin.src#PAGE_USERDRIVER.FT_HOSTNAME.fixedtext.text
+#, fuzzy
+msgid "~Hostname"
+msgstr "~Hostname"
+
+#: dbadmin.src#PAGE_USERDRIVER.FT_PORTNUMBER.fixedtext.text
+#, fuzzy
+msgctxt "dbadmin.src#PAGE_USERDRIVER.FT_PORTNUMBER.fixedtext.text"
+msgid "~Port number"
+msgstr "~Port number"
+
+#: dbadmin.src#PAGE_USERDRIVER.FT_OPTIONS.fixedtext.text
+#, fuzzy
+msgid "~Driver settings"
+msgstr "~Driver settings"
+
+#: dbadmin.src#STR_ERR_USE_CONNECT_TO.string.text
+#, fuzzy
+msgid ""
+"Please choose 'Connect to an existing database' to connect to an existing "
+"database instead."
+msgstr ""
+"Please choose 'Connect to an existing database' to connect to an existing "
+"database instead."
+
+#: dbadmin2.src#STR_ENTER_CONNECTION_PASSWORD.string.text
+#, fuzzy
+msgid "A password is needed to connect to the data source \"$name$\"."
+msgstr "A password is needed to connect to the data source \"$name$\"."
+
+#: dbadmin2.src#STR_ASK_FOR_DIRECTORY_CREATION.string.text
+#, fuzzy
+msgid ""
+"The directory\n"
+"\n"
+"$path$\n"
+"\n"
+"does not exist. Should it be created?"
+msgstr ""
+"The directory\n"
+"\n"
+"$path$\n"
+"\n"
+"does not exist. Should it be created?"
+
+#: dbadmin2.src#STR_COULD_NOT_CREATE_DIRECTORY.string.text
+#, fuzzy
+msgid "The directory $name$ could not be created."
+msgstr "The directory $name$ could not be created."
+
+#: dbadmin2.src#DLG_DOMAINPASSWORD.FT_PASSWORD.fixedline.text
+#, fuzzy
+msgid "Please enter the ~password for the user 'DOMAIN'."
+msgstr "Please enter the ~password for the user 'DOMAIN'."
+
+#: dbadmin2.src#DLG_DOMAINPASSWORD.modaldialog.text
+#, fuzzy
+msgid "Convert Database"
+msgstr "Convert Database"
+
+#: dbadmin2.src#PAGE_TABLESUBSCRIPTION.FL_SEPARATOR1.fixedline.text
+#, fuzzy
+msgid "Tables and table filter"
+msgstr "Tables and table filter"
+
+#: dbadmin2.src#PAGE_TABLESUBSCRIPTION.FT_FILTER_EXPLANATION.fixedtext.text
+#, fuzzy
+msgid "Mark the tables that should be visible for the applications."
+msgstr "Mark the tables that should be visible for the applications."
+
+#: dbadmin2.src#PAGE_TABLESUBSCRIPTION.tabpage.text
+#, fuzzy
+msgid "Tables Filter"
+msgstr "Tables Filter"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_DBWIZARDTITLE.string.text
+#, fuzzy
+msgctxt "dbadminsetup.src#DLG_DATABASE_WIZARD.STR_DBWIZARDTITLE.string.text"
+msgid "Database Wizard"
+msgstr "Database Wizard"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_INTROPAGE.string.text
+#, fuzzy
+msgid "Select database"
+msgstr "Select database"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_DBASE.string.text
+#, fuzzy
+msgid "Set up dBASE connection"
+msgstr "Set up dBASE connection"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_TEXT.string.text
+#, fuzzy
+msgctxt "dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_TEXT.string.text"
+msgid "Set up a connection to text files"
+msgstr "Set up a connection to text files"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MSACCESS.string.text
+#, fuzzy
+msgid "Set up Microsoft Access connection"
+msgstr "Set up Microsoft Access connection"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_LDAP.string.text
+#, fuzzy
+msgid "Set up LDAP connection"
+msgstr "Set up LDAP connection"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADABAS.string.text
+#, fuzzy
+msgid "Set up Adabas D connection"
+msgstr "Set up Adabas D connection"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ADO.string.text
+#, fuzzy
+msgid "Set up ADO connection"
+msgstr "Set up ADO connection"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_JDBC.string.text
+#, fuzzy
+msgid "Set up JDBC connection"
+msgstr "Set up JDBC connection"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ORACLE.string.text
+#, fuzzy
+msgid "Set up Oracle database connection"
+msgstr "Set up Oracle database connection"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL.string.text
+#, fuzzy
+msgid "Set up MySQL connection"
+msgstr "Set up MySQL connection"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_ODBC.string.text
+#, fuzzy
+msgid "Set up ODBC connection"
+msgstr "Set up ODBC connection"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_SPREADSHEET.string.text
+#, fuzzy
+msgid "Set up Spreadsheet connection"
+msgstr "Set up Spreadsheet connection"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_AUTHENTIFICATION.string.text
+#, fuzzy
+msgid "Set up user authentication"
+msgstr "Set up user authentication"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MYSQL_NATIVE.string.text
+#, fuzzy
+msgid "Set up MySQL server data"
+msgstr "Set up MySQL server data"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_FINAL.string.text
+#, fuzzy
+msgid "Save and proceed"
+msgstr "Save and proceed"
+
+#: dbadminsetup.src#DLG_DATABASE_WIZARD.modaldialog.text
+#, fuzzy
+msgctxt "dbadminsetup.src#DLG_DATABASE_WIZARD.modaldialog.text"
+msgid "Database Wizard"
+msgstr "Database Wizard"
+
+#: dbadminsetup.src#STR_DATABASEDEFAULTNAME.string.text
+#, fuzzy
+msgid "New Database"
+msgstr "New Database"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HEADERTEXT.fixedtext.text
+#, fuzzy
+msgid "Set up a connection to a MySQL database"
+msgstr "Set up a connection to a MySQL database"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQL_HELPTEXT.fixedtext.text
+#, fuzzy
+msgid ""
+"You can connect to a MySQL database using either ODBC or JDBC.\n"
+"Please contact your system administrator if you are unsure about the "
+"following settings."
+msgstr ""
+"You can connect to a MySQL database using either ODBC or JDBC.\n"
+"Please contact your system administrator if you are unsure about the "
+"following settings."
+
+#: dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.FT_MYSQLCONNECTIONMODE.fixedtext.text
+#, fuzzy
+msgid "How do you want to connect to your MySQL database?"
+msgstr "How do you want to connect to your MySQL database?"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAODBC.radiobutton.text
+#, fuzzy
+msgid "Connect using ODBC (Open Database Connectivity)"
+msgstr "Connect using ODBC (Open Database Connectivity)"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIAJDBC.radiobutton.text
+#, fuzzy
+msgid "Connect using JDBC (Java Database Connectivity)"
+msgstr "Connect using JDBC (Java Database Connectivity)"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_MYSQL_INTRO.RB_CONNECTVIANATIVE.radiobutton.text
+#, fuzzy
+msgid "Connect directly"
+msgstr "Connect directly"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHEADERTEXT.fixedtext.text
+#, fuzzy
+msgid "Set up the user authentication"
+msgstr "Set up the user authentication"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_AUTHENTIFICATIONHELPTEXT.fixedtext.text
+#, fuzzy
+msgid "Some databases require you to enter a user name."
+msgstr "Some databases require you to enter a user name."
+
+#: dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_GENERALUSERNAME.fixedtext.text
+#, fuzzy
+msgctxt ""
+"dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.FT_GENERALUSERNAME.fixedtext."
+"text"
+msgid "~User name"
+msgstr "~User name"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.CB_GENERALPASSWORDREQUIRED.checkbox.text
+#, fuzzy
+msgid "Password re~quired"
+msgstr "Password re~quired"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_AUTHENTIFICATION.PB_TESTCONNECTION.pushbutton.text
+#, fuzzy
+msgid "~Test Connection"
+msgstr "~Test Connection"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHEADER.fixedtext.text
+#, fuzzy
+msgid "Decide how to proceed after saving the database"
+msgstr "Decide how to proceed after saving the database"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALHELPTEXT.fixedtext.text
+#, fuzzy
+msgid "Do you want the wizard to register the database in %PRODUCTNAME?"
+msgstr "Do you want the wizard to register the database in %PRODUCTNAME?"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_REGISTERDATASOURCE.radiobutton.text
+#, fuzzy
+msgid "~Yes, register the database for me"
+msgstr "~Yes, register the database for me"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_FINAL.RB_DONTREGISTERDATASOURCE.radiobutton.text
+#, fuzzy
+msgid "N~o, do not register the database"
+msgstr "N~o, do not register the database"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_ADDITIONALSETTINGS.fixedtext.text
+#, fuzzy
+msgid "After the database file has been saved, what do you want to do?"
+msgstr "After the database file has been saved, what do you want to do?"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_OPENAFTERWARDS.checkbox.text
+#, fuzzy
+msgid "Open the database for editing"
+msgstr "Open the database for editing"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_FINAL.CB_STARTTABLEWIZARD.checkbox.text
+#, fuzzy
+msgid "Create tables using the table wizard"
+msgstr "Create tables using the table wizard"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_FINAL.FT_FINALTEXT.fixedtext.text
+#, fuzzy
+msgid "Click 'Finish' to save the database."
+msgstr "Click 'Finish' to save the database."
+
+#: dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HEADERTEXT.string.text
+#, fuzzy
+msgid "Set up connection to a MySQL database using JDBC"
+msgstr "Set up connection to a MySQL database using JDBC"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQLJDBC_HELPTEXT.string.text
+#, fuzzy
+msgid ""
+"Please enter the required information to connect to a MySQL database using "
+"JDBC. Note that a JDBC driver class must be installed on your system and "
+"registered with %PRODUCTNAME.\n"
+"Please contact your system administrator if you are unsure about the "
+"following settings."
+msgstr ""
+"Please enter the required information to connect to a MySQL database using "
+"JDBC. Note that a JDBC driver class must be installed on your system and "
+"registered with %PRODUCTNAME.\n"
+"Please contact your system administrator if you are unsure about the "
+"following settings."
+
+#: dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DRIVERCLASSTEXT.string.text
+#, fuzzy
+msgid "MySQL JDBC d~river class:"
+msgstr "MySQL JDBC d~river class:"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DEFAULT.string.text
+#, fuzzy
+msgctxt ""
+"dbadminsetup.src#PAGE_DBWIZARD_MYSQL_JDBC.STR_MYSQL_DEFAULT.string.text"
+msgid "Default: 3306"
+msgstr "Default: 3306"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HEADER.fixedtext.text
+#, fuzzy
+msgid "Set up connection to a MySQL database"
+msgstr "Set up connection to a MySQL database"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_MYSQL_NATIVE.FT_SETUP_WIZARD_HELP.fixedtext.text
+#, fuzzy
+msgid "Please enter the required information to connect to a MySQL database."
+msgstr "Please enter the required information to connect to a MySQL database."
+
+#: dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HEADERTEXT.string.text
+#, fuzzy
+msgid "Set up a connection to dBASE files"
+msgstr "Set up a connection to dBASE files"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_DBASE.STR_DBASE_HELPTEXT.string.text
+#, fuzzy
+msgid "Select the folder where the dBASE files are stored."
+msgstr "Select the folder where the dBASE files are stored."
+
+#: dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HEADERTEXT.string.text
+#, fuzzy
+msgctxt "dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HEADERTEXT.string.text"
+msgid "Set up a connection to text files"
+msgstr "Set up a connection to text files"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_HELPTEXT.string.text
+#, fuzzy
+msgid ""
+"Select the folder where the CSV (Comma Separated Values) text files are "
+"stored. %PRODUCTNAME Base will open these files in read-only mode."
+msgstr ""
+"Select the folder where the CSV (Comma Separated Values) text files are "
+"stored. %PRODUCTNAME Base will open these files in read-only mode."
+
+#: dbadminsetup.src#PAGE_DBWIZARD_TEXT.STR_TEXT_PATH_OR_FILE.string.text
+#, fuzzy
+msgid "Path to text files"
+msgstr "Path to text files"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HEADERTEXT.string.text
+#, fuzzy
+msgid "Set up a connection to a Microsoft Access database"
+msgstr "Set up a connection to a Microsoft Access database"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_MSACCESS.STR_MSACCESS_HELPTEXT.string.text
+#, fuzzy
+msgid "Please select the Microsoft Access file you want to access."
+msgstr "Please select the Microsoft Access file you want to access."
+
+#: dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HEADERTEXT.fixedtext.text
+#, fuzzy
+msgid "Set up a connection to an LDAP directory"
+msgstr "Set up a connection to an LDAP directory"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_LDAP.FT_LDAP_HELPTEXT.fixedtext.text
+#, fuzzy
+msgid ""
+"Please enter the required information to connect to an LDAP directory.\n"
+"Please contact your system administrator if you are unsure about the "
+"following settings."
+msgstr ""
+"Please enter the required information to connect to an LDAP directory.\n"
+"Please contact your system administrator if you are unsure about the "
+"following settings."
+
+#: dbadminsetup.src#PAGE_DBWIZARD_LDAP.STR_LDAP_DEFAULT.string.text
+#, fuzzy
+msgid "Default: 389"
+msgstr "Default: 389"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_LDAP.CB_WIZ_USESSL.checkbox.text
+#, fuzzy
+msgid "Use ~secure connection (SSL)"
+msgstr "Use ~secure connection (SSL)"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HEADERTEXT.string.text
+#, fuzzy
+msgid "Set up a connection to an Adabas D database"
+msgstr "Set up a connection to an Adabas D database"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_ADABAS.STR_ADABAS_HELPTEXT.string.text
+#, fuzzy
+msgid ""
+"Enter the name of the Adabas D database you want to connect to.\n"
+"Click 'Browse...' to select an Adabas D database that is already registered "
+"in %PRODUCTNAME."
+msgstr ""
+"Enter the name of the Adabas D database to which you want to connect.\n"
+"Click 'Browse...' to select an Adabas D database that is already registered "
+"in %PRODUCTNAME."
+
+#: dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HEADERTEXT.string.text
+#, fuzzy
+msgid "Set up a connection to an ADO database"
+msgstr "Set up a connection to an ADO database"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_ADO.STR_ADO_HELPTEXT.string.text
+#, fuzzy
+msgid ""
+"Please enter the URL of the ADO data source you want to connect to.\n"
+"Click 'Browse' to configure provider-specific settings.\n"
+"Please contact your system administrator if you are unsure about the "
+"following settings."
+msgstr ""
+"Please enter the URL of the ADO data source to which you want to connect.\n"
+"Click 'Browse' to configure provider-specific settings.\n"
+"Please contact your system administrator if you are unsure about the "
+"following settings."
+
+#: dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HEADERTEXT.string.text
+#, fuzzy
+msgid "Set up a connection to an ODBC database"
+msgstr "Set up a connection to an ODBC database"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_ODBC.STR_ODBC_HELPTEXT.string.text
+#, fuzzy
+msgid ""
+"Enter the name of the ODBC database you want to connect to.\n"
+"Click 'Browse...' to select an ODBC database that is already registered in "
+"%PRODUCTNAME.\n"
+"Please contact your system administrator if you are unsure about the "
+"following settings."
+msgstr ""
+"Enter the name of the ODBC database to which you want to connect.\n"
+"Click 'Browse...' to select an ODBC database that is already registered in "
+"%PRODUCTNAME.\n"
+"Please contact your system administrator if you are unsure about the "
+"following settings."
+
+#: dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HEADERTEXT.string.text
+#, fuzzy
+msgid "Set up a connection to a JDBC database"
+msgstr "Set up a connection to a JDBC database"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_JDBC.STR_JDBC_HELPTEXT.string.text
+#, fuzzy
+msgid ""
+"Please enter the required information to connect to a JDBC database.\n"
+"Please contact your system administrator if you are unsure about the "
+"following settings."
+msgstr ""
+"Please enter the required information to connect to a JDBC database.\n"
+"Please contact your system administrator if you are unsure about the "
+"following settings."
+
+#: dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HEADERTEXT.string.text
+#, fuzzy
+msgid "Set up a connection to an Oracle database"
+msgstr "Set up a connection to an Oracle database"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DEFAULT.string.text
+#, fuzzy
+msgid "Default: 1521"
+msgstr "Default: 1521"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_DRIVERCLASSTEXT.string.text
+#, fuzzy
+msgid "Oracle JDBC ~driver class"
+msgstr "Oracle JDBC ~driver class"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_ORACLE.STR_ORACLE_HELPTEXT.string.text
+#, fuzzy
+msgid ""
+"Please enter the required information to connect to an Oracle database.Note "
+"that a JDBC Driver Class must be installed on your system and registered "
+"with %PRODUCTNAME.\n"
+"Please contact your system administrator if you are unsure about the "
+"following settings."
+msgstr ""
+"Please enter the required information to connect to an Oracle database. Note "
+"that a JDBC Driver Class must be installed on your system and registered "
+"with %PRODUCTNAME.\n"
+"Please contact your system administrator if you are unsure about the "
+"following settings."
+
+#: dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HEADERTEXT.string.text
+#, fuzzy
+msgid "Set up a connection to spreadsheets"
+msgstr "Set up a connection to spreadsheets"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEET_HELPTEXT.string.text
+#, fuzzy
+msgid ""
+"Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel "
+"workbook.\n"
+"%PRODUCTNAME will open this file in read-only mode."
+msgstr ""
+"Click 'Browse...' to select a %PRODUCTNAME spreadsheet or Microsoft Excel "
+"workbook.\n"
+"%PRODUCTNAME will open this file in read-only mode."
+
+#: dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.STR_SPREADSHEETPATH.string.text
+#, fuzzy
+msgid "~Location and file name"
+msgstr "~Location and file name"
+
+#: dbadminsetup.src#PAGE_DBWIZARD_SPREADSHEET.CB_SPREADSHEETPASSWORDREQUIRED.checkbox.text
+#, fuzzy
+msgid "~Password required"
+msgstr "~Password required"
+
+#: dbfindex.src#DLG_DBASE_INDEXES.FT_TABLES.fixedtext.text
+#, fuzzy
+msgid "~Table"
+msgstr "~Table"
+
+#: dbfindex.src#DLG_DBASE_INDEXES.FL_INDEXES.fixedline.text
+#, fuzzy
+msgid "Assignment"
+msgstr "Assignment"
+
+#: dbfindex.src#DLG_DBASE_INDEXES.FT_TABLEINDEXES.fixedtext.text
+#, fuzzy
+msgid "T~able indexes"
+msgstr "T~able indexes"
+
+#: dbfindex.src#DLG_DBASE_INDEXES.FT_ALLINDEXES.fixedtext.text
+#, fuzzy
+msgid "~Free indexes"
+msgstr "~Free indexes"
+
+#: dbfindex.src#DLG_DBASE_INDEXES.modaldialog.text
+#, fuzzy
+msgctxt "dbfindex.src#DLG_DBASE_INDEXES.modaldialog.text"
+msgid "Indexes"
+msgstr "Indexes"
+
+#: directsql.src#DLG_DIRECTSQL.FL_SQL.fixedline.text
+#, fuzzy
+msgid "SQL command"
+msgstr "SQL command"
+
+#: directsql.src#DLG_DIRECTSQL.FT_SQL.fixedtext.text
+#, fuzzy
+msgid "Command to execute"
+msgstr "Command to execute"
+
+#: directsql.src#DLG_DIRECTSQL.PB_EXECUTE.pushbutton.text
+#, fuzzy
+msgid "Execute"
+msgstr "Execute"
+
+#: directsql.src#DLG_DIRECTSQL.FT_HISTORY.fixedtext.text
+#, fuzzy
+msgid "Previous commands"
+msgstr "Previous commands"
+
+#: directsql.src#DLG_DIRECTSQL.FL_STATUS.fixedline.text
+#, fuzzy
+msgid "Status"
+msgstr "Status"
+
+#: directsql.src#DLG_DIRECTSQL.PB_CLOSE.pushbutton.text
+#, fuzzy
+msgid "Close"
+msgstr "Close"
+
+#: directsql.src#DLG_DIRECTSQL.modaldialog.text
+#, fuzzy
+msgid "Execute SQL Statement"
+msgstr "Execute SQL Statement"
+
+#: directsql.src#STR_COMMAND_EXECUTED_SUCCESSFULLY.string.text
+#, fuzzy
+msgid "Command successfully executed."
+msgstr "Command successfully executed."
+
+#: directsql.src#STR_DIRECTSQL_CONNECTIONLOST.string.text
+#, fuzzy
+msgid ""
+"The connection to the database has been lost. This dialog will be closed."
+msgstr ""
+"The connection to the database has been lost. This dialogue box will be "
+"closed."
+
+#: dlgattr.src#DLG_ATTR.1.pushbutton.text
+#, fuzzy
+msgid "Bac~k"
+msgstr "Bac~k"
+
+#: dlgattr.src#DLG_ATTR.TP_ATTR_CHAR.string.text
+#, fuzzy
+msgid "Font"
+msgstr "Font"
+
+#: dlgattr.src#DLG_ATTR.TP_ATTR_NUMBER.string.text
+#, fuzzy
+msgid "Format"
+msgstr "Format"
+
+#: dlgattr.src#DLG_ATTR.TP_ATTR_ALIGN.string.text
+#, fuzzy
+msgid "Alignment"
+msgstr "Alignment"
+
+#: dlgattr.src#DLG_ATTR.ST_ROW.string.text
+#, fuzzy
+msgid "Table Format"
+msgstr "Table Format"
+
+#: dlgattr.src#DLG_ATTR.tabdialog.text
+#, fuzzy
+msgid "Field Format"
+msgstr "Field Format"
+
+#: dlgsave.src#DLG_SAVE_AS.FT_DESCRIPTION.fixedtext.text
+#, fuzzy
+msgid "Please enter a name for the object to be created:"
+msgstr "Please enter a name for the object to be created:"
+
+#: dlgsave.src#DLG_SAVE_AS.FT_CATALOG.fixedtext.text
+#, fuzzy
+msgid "~Catalog"
+msgstr "~Catalogue"
+
+#: dlgsave.src#DLG_SAVE_AS.FT_SCHEMA.fixedtext.text
+#, fuzzy
+msgid "~Schema"
+msgstr "~Schema"
+
+#: dlgsave.src#DLG_SAVE_AS.STR_TBL_LABEL.string.text
+#, fuzzy
+msgid "~Table Name"
+msgstr "~Table Name"
+
+#: dlgsave.src#DLG_SAVE_AS.STR_VW_LABEL.string.text
+#, fuzzy
+msgid "~Name of table view"
+msgstr "~Name of table view"
+
+#: dlgsave.src#DLG_SAVE_AS.STR_QRY_LABEL.string.text
+#, fuzzy
+msgid "~Query name"
+msgstr "~Query name"
+
+#: dlgsave.src#DLG_SAVE_AS.STR_TITLE_RENAME.string.text
+#, fuzzy
+msgid "Rename to"
+msgstr "Rename to"
+
+#: dlgsave.src#DLG_SAVE_AS.STR_TITLE_PASTE_AS.string.text
+#, fuzzy
+msgid "Insert as"
+msgstr "Insert as"
+
+#: dlgsave.src#DLG_SAVE_AS.modaldialog.text
+#, fuzzy
+msgid "Save As"
+msgstr "Save As"
+
+#: dlgsize.src#DLG_ROWHEIGHT.FT_VALUE.fixedtext.text
+#, fuzzy
+msgid "~Height"
+msgstr "~Height"
+
+#: dlgsize.src#DLG_ROWHEIGHT.CB_STANDARD.checkbox.text
+#, fuzzy
+msgctxt "dlgsize.src#DLG_ROWHEIGHT.CB_STANDARD.checkbox.text"
+msgid "~Automatic"
+msgstr "~Automatic"
+
+#: dlgsize.src#DLG_ROWHEIGHT.modaldialog.text
+#, fuzzy
+msgid "Row Height"
+msgstr "Row Height"
+
+#: dlgsize.src#DLG_COLWIDTH.FT_VALUE.fixedtext.text
+#, fuzzy
+msgid "~Width"
+msgstr "~Width"
+
+#: dlgsize.src#DLG_COLWIDTH.CB_STANDARD.checkbox.text
+#, fuzzy
+msgctxt "dlgsize.src#DLG_COLWIDTH.CB_STANDARD.checkbox.text"
+msgid "~Automatic"
+msgstr "~Automatic"
+
+#: dlgsize.src#DLG_COLWIDTH.modaldialog.text
+#, fuzzy
+msgid "Column Width"
+msgstr "Column Width"
+
+#: dsselect.src#DLG_DATASOURCE_SELECTION.FT_DESCRIPTION.fixedtext.text
+#, fuzzy
+msgid "Choose a data source:"
+msgstr "Choose a data source:"
+
+#: dsselect.src#DLG_DATASOURCE_SELECTION.PB_MANAGE.pushbutton.text
+#, fuzzy
+msgid "Organize..."
+msgstr "Organise..."
+
+#: dsselect.src#DLG_DATASOURCE_SELECTION.PB_CREATE.pushbutton.text
+#, fuzzy
+msgid "Create..."
+msgstr "Create..."
+
+#: dsselect.src#DLG_DATASOURCE_SELECTION.STR_LOCAL_DATASOURCES.string.text
+#, fuzzy
+msgid "Local Databases"
+msgstr "Local Databases"
+
+#: dsselect.src#DLG_DATASOURCE_SELECTION.STR_DESCRIPTION2.string.text
+#, fuzzy
+msgid "Choose a database"
+msgstr "Choose a database"
+
+#: dsselect.src#DLG_DATASOURCE_SELECTION.modaldialog.text
+#, fuzzy
+msgid "Data Source"
+msgstr "Data Source"
+
+#: indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_NEW.toolboxitem.text
+#, fuzzy
+msgid "New Index"
+msgstr "New Index"
+
+#: indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_DROP.toolboxitem.text
+#, fuzzy
+msgid "Delete Current Index"
+msgstr "Delete Current Index"
+
+#: indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RENAME.toolboxitem.text
+#, fuzzy
+msgid "Rename Current Index"
+msgstr "Rename Current Index"
+
+#: indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_SAVE.toolboxitem.text
+#, fuzzy
+msgid "Save Current Index"
+msgstr "Save Current Index"
+
+#: indexdialog.src#DLG_INDEXDESIGN.TLB_ACTIONS.ID_INDEX_RESET.toolboxitem.text
+#, fuzzy
+msgid "Reset Current Index"
+msgstr "Reset Current Index"
+
+#: indexdialog.src#DLG_INDEXDESIGN.FL_INDEXDETAILS.fixedline.text
+#, fuzzy
+msgid "Index details"
+msgstr "Index details"
+
+#: indexdialog.src#DLG_INDEXDESIGN.FT_DESC_LABEL.fixedtext.text
+#, fuzzy
+msgid "Index identifier:"
+msgstr "Index identifier:"
+
+#: indexdialog.src#DLG_INDEXDESIGN.CB_UNIQUE.checkbox.text
+#, fuzzy
+msgid "~Unique"
+msgstr "~Unique"
+
+#: indexdialog.src#DLG_INDEXDESIGN.FT_FIELDS.fixedtext.text
+#, fuzzy
+msgid "Fields"
+msgstr "Fields"
+
+#: indexdialog.src#DLG_INDEXDESIGN.PB_CLOSE.pushbutton.text
+#, fuzzy
+msgctxt "indexdialog.src#DLG_INDEXDESIGN.PB_CLOSE.pushbutton.text"
+msgid "~Close"
+msgstr "~Close"
+
+#: indexdialog.src#DLG_INDEXDESIGN.modaldialog.text
+#, fuzzy
+msgctxt "indexdialog.src#DLG_INDEXDESIGN.modaldialog.text"
+msgid "Indexes"
+msgstr "Indexes"
+
+#: indexdialog.src#STR_TAB_INDEX_SORTORDER.string.text
+#, fuzzy
+msgctxt "indexdialog.src#STR_TAB_INDEX_SORTORDER.string.text"
+msgid "Sort order"
+msgstr "Sort order"
+
+#: indexdialog.src#STR_TAB_INDEX_FIELD.string.text
+#, fuzzy
+msgid "Index field"
+msgstr "Index field"
+
+#: indexdialog.src#STR_ORDER_ASCENDING.string.text
+#, fuzzy
+msgid "Ascending"
+msgstr "Ascending"
+
+#: indexdialog.src#STR_ORDER_DESCENDING.string.text
+#, fuzzy
+msgid "Descending"
+msgstr "Descending"
+
+#: indexdialog.src#STR_CONFIRM_DROP_INDEX.string.text
+#, fuzzy
+msgid "Do you really want to delete the index '$name$'?"
+msgstr "Do you really want to delete the index '$name$'?"
+
+#: indexdialog.src#STR_LOGICAL_INDEX_NAME.string.text
+#, fuzzy
+msgid "index"
+msgstr "index"
+
+#: indexdialog.src#ERR_NEED_INDEX_FIELDS.errorbox.text
+#, fuzzy
+msgid "The index must contain at least one field."
+msgstr "The index must contain at least one field."
+
+#: indexdialog.src#ERR_NEED_INDEX_FIELDS.errorbox.title
+#, fuzzy
+msgid "Save Index"
+msgstr "Save Index"
+
+#: indexdialog.src#QUERY_SAVE_CURRENT_INDEX.querybox.text
+#, fuzzy
+msgid "Do you want to save the changes made to the current index?"
+msgstr "Do you want to save the changes made to the current index?"
+
+#: indexdialog.src#QUERY_SAVE_CURRENT_INDEX.querybox.title
+#, fuzzy
+msgid "Exit Index Design"
+msgstr "Exit Index Design"
+
+#: indexdialog.src#STR_INDEX_NAME_ALREADY_USED.string.text
+#, fuzzy
+msgid "There is already another index named \"$name$\"."
+msgstr "There is already another index named \"$name$\"."
+
+#: indexdialog.src#STR_INDEXDESIGN_DOUBLE_COLUMN_NAME.string.text
+#, fuzzy
+msgid ""
+"In an index definition, no table column may occur more than once. However, "
+"you have entered column \"$name$\" twice."
+msgstr ""
+"In an index definition, no table column may occur more than once. However, "
+"you have entered column \"$name$\" twice."
+
+#: paramdialog.src#DLG_PARAMETERS.FL_PARAMS.fixedline.text
+#, fuzzy
+msgid "~Parameters"
+msgstr "~Parameters"
+
+#: paramdialog.src#DLG_PARAMETERS.FT_VALUE.fixedtext.text
+#, fuzzy
+msgid "~Value"
+msgstr "~Value"
+
+#: paramdialog.src#DLG_PARAMETERS.BT_TRAVELNEXT.pushbutton.text
+#, fuzzy
+msgid "~Next"
+msgstr "~Next"
+
+#: paramdialog.src#DLG_PARAMETERS.STR_COULD_NOT_CONVERT_PARAM.string.text
+#, fuzzy
+msgid ""
+"The entry could not be converted to a valid value for the \"$name$\"column"
+msgstr ""
+"The entry could not be converted to a valid value for the \"$name$\"column"
+
+#: paramdialog.src#DLG_PARAMETERS.modaldialog.text
+#, fuzzy
+msgid "Parameter Input"
+msgstr "Parameter Input"
+
+#: queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.1.stringlist.text
+#, fuzzy
+msgctxt "queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.1.stringlist.text"
+msgid "AND"
+msgstr "AND"
+
+#: queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.2.stringlist.text
+#, fuzzy
+msgctxt "queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND2.2.stringlist.text"
+msgid "OR"
+msgstr "OR"
+
+#: queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.1.stringlist.text
+#, fuzzy
+msgctxt "queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.1.stringlist.text"
+msgid "AND"
+msgstr "AND"
+
+#: queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.2.stringlist.text
+#, fuzzy
+msgctxt "queryfilter.src#DLG_FILTERCRIT.LB_WHERECOND3.2.stringlist.text"
+msgid "OR"
+msgstr "OR"
+
+#: queryfilter.src#DLG_FILTERCRIT.FT_WHEREFIELD.fixedtext.text
+#, fuzzy
+msgctxt "queryfilter.src#DLG_FILTERCRIT.FT_WHEREFIELD.fixedtext.text"
+msgid "Field name"
+msgstr "Field name"
+
+#: queryfilter.src#DLG_FILTERCRIT.FT_WHERECOMP.fixedtext.text
+#, fuzzy
+msgid "Condition"
+msgstr "Condition"
+
+#: queryfilter.src#DLG_FILTERCRIT.FT_WHEREVALUE.fixedtext.text
+#, fuzzy
+msgid "Value"
+msgstr "Value"
+
+#: queryfilter.src#DLG_FILTERCRIT.FT_WHEREOPER.fixedtext.text
+#, fuzzy
+msgctxt "queryfilter.src#DLG_FILTERCRIT.FT_WHEREOPER.fixedtext.text"
+msgid "Operator"
+msgstr "Operator"
+
+#: queryfilter.src#DLG_FILTERCRIT.FL_FIELDS.fixedline.text
+#, fuzzy
+msgid "Criteria"
+msgstr "Criteria"
+
+#: queryfilter.src#DLG_FILTERCRIT.STR_NOENTRY.string.text
+#, fuzzy
+msgid "- none -"
+msgstr "- none -"
+
+#: queryfilter.src#DLG_FILTERCRIT.STR_COMPARE_OPERATORS.string.text
+#, fuzzy
+msgid "=;<>;<;<=;>;>=;like;not like;null;not null"
+msgstr "=;<>;<;<=;>;>=;like;not like;null;not null"
+
+#: queryfilter.src#DLG_FILTERCRIT.modaldialog.text
+#, fuzzy
+msgid "Standard Filter"
+msgstr "Standard Filter"
+
+#: queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.1.stringlist.text
+#, fuzzy
+msgctxt "queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.1.stringlist.text"
+msgid "ascending"
+msgstr "ascending"
+
+#: queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.2.stringlist.text
+#, fuzzy
+msgctxt "queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE1.2.stringlist.text"
+msgid "descending"
+msgstr "descending"
+
+#: queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.1.stringlist.text
+#, fuzzy
+msgctxt "queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.1.stringlist.text"
+msgid "ascending"
+msgstr "ascending"
+
+#: queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.2.stringlist.text
+#, fuzzy
+msgctxt "queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE2.2.stringlist.text"
+msgid "descending"
+msgstr "descending"
+
+#: queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.1.stringlist.text
+#, fuzzy
+msgctxt "queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.1.stringlist.text"
+msgid "ascending"
+msgstr "ascending"
+
+#: queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.2.stringlist.text
+#, fuzzy
+msgctxt "queryorder.src#DLG_ORDERCRIT.LB_ORDERVALUE3.2.stringlist.text"
+msgid "descending"
+msgstr "descending"
+
+#: queryorder.src#DLG_ORDERCRIT.FT_ORDERFIELD.fixedtext.text
+#, fuzzy
+msgctxt "queryorder.src#DLG_ORDERCRIT.FT_ORDERFIELD.fixedtext.text"
+msgid "Field name"
+msgstr "Field name"
+
+#: queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER1.fixedtext.text
+#, fuzzy
+msgctxt "queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER1.fixedtext.text"
+msgid "and then"
+msgstr "and then"
+
+#: queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER2.fixedtext.text
+#, fuzzy
+msgctxt "queryorder.src#DLG_ORDERCRIT.FT_ORDERAFTER2.fixedtext.text"
+msgid "and then"
+msgstr "and then"
+
+#: queryorder.src#DLG_ORDERCRIT.FT_ORDEROPER.fixedtext.text
+#, fuzzy
+msgctxt "queryorder.src#DLG_ORDERCRIT.FT_ORDEROPER.fixedtext.text"
+msgid "Operator"
+msgstr "Operator"
+
+#: queryorder.src#DLG_ORDERCRIT.FT_ORDERDIR.fixedtext.text
+#, fuzzy
+msgid "Order"
+msgstr "Order"
+
+#: queryorder.src#DLG_ORDERCRIT.FL_ORDER.fixedline.text
+#, fuzzy
+msgctxt "queryorder.src#DLG_ORDERCRIT.FL_ORDER.fixedline.text"
+msgid "Sort order"
+msgstr "Sort order"
+
+#: queryorder.src#DLG_ORDERCRIT.STR_NOENTRY.string.text
+#, fuzzy
+msgid "<none>"
+msgstr "<none>"
+
+#: queryorder.src#DLG_ORDERCRIT.modaldialog.text
+#, fuzzy
+msgid "Sort Order"
+msgstr "Sort Order"
+
+#: RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_TABLES.fixedline.text
+#, fuzzy
+msgid "Tables involved"
+msgstr "Tables involved"
+
+#: RelationDlg.src#DLG_REL_PROPERTIES.WND_CONTROL.FL_INVOLVED_FIELDS.fixedline.text
+#, fuzzy
+msgid "Fields involved"
+msgstr "Fields involved"
+
+#: RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_UPD.fixedline.text
+#, fuzzy
+msgid "Update options"
+msgstr "Update options"
+
+#: RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_UPD.radiobutton.text
+#, fuzzy
+msgctxt "RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_UPD.radiobutton.text"
+msgid "~No action"
+msgstr "~No action"
+
+#: RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD.radiobutton.text
+#, fuzzy
+msgid "~Update cascade"
+msgstr "~Update cascade"
+
+#: RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_NULL.radiobutton.text
+#, fuzzy
+msgctxt "RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_NULL.radiobutton.text"
+msgid "~Set null"
+msgstr "~Set null"
+
+#: RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_DEFAULT.radiobutton.text
+#, fuzzy
+msgctxt ""
+"RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_DEFAULT.radiobutton.text"
+msgid "Set ~default"
+msgstr "Set ~default"
+
+#: RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_DEL.fixedline.text
+#, fuzzy
+msgid "Delete options"
+msgstr "Delete options"
+
+#: RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_DEL.radiobutton.text
+#, fuzzy
+msgctxt "RelationDlg.src#DLG_REL_PROPERTIES.RB_NO_CASC_DEL.radiobutton.text"
+msgid "~No action"
+msgstr "~No action"
+
+#: RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL.radiobutton.text
+#, fuzzy
+msgid "Delete ~cascade"
+msgstr "Delete ~cascade"
+
+#: RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_NULL.radiobutton.text
+#, fuzzy
+msgctxt "RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_NULL.radiobutton.text"
+msgid "~Set null"
+msgstr "~Set null"
+
+#: RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_DEFAULT.radiobutton.text
+#, fuzzy
+msgctxt ""
+"RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_DEL_DEFAULT.radiobutton.text"
+msgid "Set ~default"
+msgstr "Set ~default"
+
+#: RelationDlg.src#DLG_REL_PROPERTIES.modaldialog.text
+#, fuzzy
+msgid "Relations"
+msgstr "Relations"
+
+#: sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FL_DETAILS.fixedline.text
+#, fuzzy
+msgctxt "sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FL_DETAILS.fixedline.text"
+msgid "Details"
+msgstr "Details"
+
+#: sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_ERRORLIST.fixedtext.text
+#, fuzzy
+msgid "Error ~list:"
+msgstr "Error ~list:"
+
+#: sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_DESCRIPTION.fixedtext.text
+#, fuzzy
+msgid "~Description:"
+msgstr "~Description:"
+
+#: sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_STATUS.string.text
+#, fuzzy
+msgid "SQL Status"
+msgstr "SQL Status"
+
+#: sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.STR_EXCEPTION_ERRORCODE.string.text
+#, fuzzy
+msgid "Error code"
+msgstr "Error code"
+
+#: sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.modaldialog.text
+#, fuzzy
+msgid "%PRODUCTNAME Base"
+msgstr "%PRODUCTNAME Base"
+
+#: sqlmessage.src#STR_EXPLAN_STRINGCONVERSION_ERROR.string.text
+#, fuzzy
+msgid ""
+"A frequent reason for this error is an inappropriate character set setting "
+"for the language of your database. Check the setting by choosing Edit - "
+"Database - Properties."
+msgstr ""
+"A frequent reason for this error is an inappropriate character set setting "
+"for the language of your database. Check the setting by choosing Edit - "
+"Database - Properties."
+
+#: sqlmessage.src#STR_EXCEPTION_ERROR.string.text
+#, fuzzy
+msgid "Error"
+msgstr "Error"
+
+#: sqlmessage.src#STR_EXCEPTION_WARNING.string.text
+#, fuzzy
+msgid "Warning"
+msgstr "Warning"
+
+#: sqlmessage.src#STR_EXCEPTION_INFO.string.text
+#, fuzzy
+msgid "Information"
+msgstr "Information"
+
+#: sqlmessage.src#STR_EXCEPTION_DETAILS.string.text
+#, fuzzy
+msgctxt "sqlmessage.src#STR_EXCEPTION_DETAILS.string.text"
+msgid "Details"
+msgstr "Details"
+
+#: textconnectionsettings.src#DLG_TEXT_CONNECTION_SETTINGS.modaldialog.text
+#, fuzzy
+msgid "Text Connection Settings"
+msgstr "Text Connection Settings"
+
+#: UserAdmin.src#TAB_PAGE_USERADMIN.FL_USER.fixedline.text
+#, fuzzy
+msgid "User selection"
+msgstr "User selection"
+
+#: UserAdmin.src#TAB_PAGE_USERADMIN.FT_USER.fixedtext.text
+#, fuzzy
+msgid "Us~er:"
+msgstr "Us~er:"
+
+#: UserAdmin.src#TAB_PAGE_USERADMIN.PB_NEWUSER.pushbutton.text
+#, fuzzy
+msgid "~Add User..."
+msgstr "~Add User..."
+
+#: UserAdmin.src#TAB_PAGE_USERADMIN.PB_CHANGEPWD.pushbutton.text
+#, fuzzy
+msgid "Change ~Password..."
+msgstr "Change ~Password..."
+
+#: UserAdmin.src#TAB_PAGE_USERADMIN.PB_DELETEUSER.pushbutton.text
+#, fuzzy
+msgid "~Delete User..."
+msgstr "~Delete User..."
+
+#: UserAdmin.src#TAB_PAGE_USERADMIN.FL_TABLE_GRANTS.fixedline.text
+#, fuzzy
+msgid "Access rights for selected user"
+msgstr "Access rights for selected user"
+
+#: UserAdmin.src#QUERY_USERADMIN_DELETE_USER.querybox.text
+#, fuzzy
+msgid "Do you really want to delete the user?"
+msgstr "Do you really want to delete the user?"
+
+#: UserAdmin.src#STR_USERADMIN_NOT_AVAILABLE.string.text
+#, fuzzy
+msgid "The database does not support user administration."
+msgstr "The database does not support user administration."
+
+#: UserAdmin.src#DLG_PASSWORD.FL_USER.fixedline.text
+#, fuzzy
+msgid "User \"$name$:  $\""
+msgstr "User \"$name$:  $\""
+
+#: UserAdmin.src#DLG_PASSWORD.FT_OLDPASSWORD.fixedtext.text
+#, fuzzy
+msgid "Old p~assword"
+msgstr "Old p~assword"
+
+#: UserAdmin.src#DLG_PASSWORD.FT_PASSWORD.fixedtext.text
+#, fuzzy
+msgid "~Password"
+msgstr "~Password"
+
+#: UserAdmin.src#DLG_PASSWORD.FT_PASSWORD_REPEAT.fixedtext.text
+#, fuzzy
+msgid "~Confirm  password"
+msgstr "~Confirm password"
+
+#: UserAdmin.src#DLG_PASSWORD.modaldialog.text
+#, fuzzy
+msgid "Change Password"
+msgstr "Change Password"
+
+#: UserAdmin.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.string.text
+#, fuzzy
+msgid "The passwords do not match. Please enter the password again."
+msgstr "The passwords do not match. Please enter the password again."
+
+#: UserAdminDlg.src#DLG_DATABASE_USERADMIN.STR_PAGETITLE_USERADMIN.string.text
+#, fuzzy
+msgid "User Settings"
+msgstr "User Settings"
+
+#: UserAdminDlg.src#DLG_DATABASE_USERADMIN.tabdialog.text
+#, fuzzy
+msgid "User administration"
+msgstr "User administration"
+
+#: AutoControls_tmpl.hrc#AUTO_BROWSECONTROLGROUP__AUTO_X__AUTO_Y__AUTOPAGE_X__AUTO_HID__AUTO_HID2_.PB_AUTOBROWSEURL.pushbutton.text
+#, fuzzy
+msgid "Browse"
+msgstr "Browse"
+
+#: AutoControls_tmpl.hrc#AUTO_NAMECONTROLGROUP_AUTO_Y__AUTO_HID_.FT_AUTODATABASENAME.fixedtext.text
+#, fuzzy
+msgid "Database name"
+msgstr "Database name"
+
+#: AutoControls_tmpl.hrc#AUTO_HOSTCONTROLGROUP_AUTO_Y__AUTO_HID_.FT_AUTOHOSTNAME.fixedtext.text
+#, fuzzy
+msgid "Server"
+msgstr "Server"
+
+#: AutoControls_tmpl.hrc#AUTO_BASEDNCONTROLGROUP_AUTO_Y__AUTO_HID_.FT_AUTOBASEDN.fixedtext.text
+#, fuzzy
+msgid "Base ~DN"
+msgstr "Base ~DN"
+
+#: AutoControls_tmpl.hrc#AUTO_PORTCONTROLGROUP_AUTO_Y__AUTO_HID_.FT_AUTOPORTNUMBER.fixedtext.text
+#, fuzzy
+msgctxt ""
+"AutoControls_tmpl.hrc#AUTO_PORTCONTROLGROUP_AUTO_Y__AUTO_HID_."
+"FT_AUTOPORTNUMBER.fixedtext.text"
+msgid "~Port number"
+msgstr "~Port number"
+
+#: AutoControls_tmpl.hrc#AUTO_CHARSET__AUTO_Y__AUTOPAGE_X__.FL_DATACONVERT.fixedline.text
+#, fuzzy
+msgid "Data conversion"
+msgstr "Data conversion"
+
+#: AutoControls_tmpl.hrc#AUTO_CHARSET__AUTO_Y__AUTOPAGE_X__.FT_CHARSET.fixedtext.text
+#, fuzzy
+msgid "~Character set"
+msgstr "~Character set"
+
+#: AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP_AUTO_Y_AUTOPAGE_X_.FT_AUTOEXTENSIONHEADER.fixedtext.text
+#, fuzzy
+msgid "Specify the type of files you want to access"
+msgstr "Specify the type of files you want to access"
+
+#: AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP_AUTO_Y_AUTOPAGE_X_.RB_AUTOACCESSCTEXTFILES.radiobutton.text
+#, fuzzy
+msgid "Plain text files (*.txt)"
+msgstr "Plain text files (*.txt)"
+
+#: AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP_AUTO_Y_AUTOPAGE_X_.RB_AUTOACCESSCCSVFILES.radiobutton.text
+#, fuzzy
+msgid "'Comma separated value' files (*.csv)"
+msgstr "'Comma separated value' files (*.csv)"
+
+#: AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP_AUTO_Y_AUTOPAGE_X_.RB_AUTOACCESSOTHERS.radiobutton.text
+#, fuzzy
+msgid "Custom:"
+msgstr "Custom:"
+
+#: AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP_AUTO_Y_AUTOPAGE_X_.FT_AUTOOWNEXTENSIONAPPENDIX.fixedtext.text
+#, fuzzy
+msgid "Custom: *.abc"
+msgstr "Custom: *.abc"
+
+#: AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP_AUTO_Y_AUTOPAGE_X_.FL_AUTOSEPARATOR2.fixedline.text
+#, fuzzy
+msgid "Row Format"
+msgstr "Row Format"
+
+#: AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP_AUTO_Y_AUTOPAGE_X_.FT_AUTOFIELDSEPARATOR.fixedtext.text
+#, fuzzy
+msgid "Field separator"
+msgstr "Field separator"
+
+#: AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP_AUTO_Y_AUTOPAGE_X_.FT_AUTOTEXTSEPARATOR.fixedtext.text
+#, fuzzy
+msgid "Text separator"
+msgstr "Text separator"
+
+#: AutoControls_tmpl.hrc#AUTO_SEPARATORCONTROLGROUP_AUTO_Y_AUTOPAGE_X_.FT_AUTODECIMALSEPARATOR.fixedtext.text
+#, fuzzy
+msgid "Decimal separator"
+msgstr "Decimal separator"
+
+#: AutoControls_tmpl.hrc#FT_AUTOTHOUSANDSSEPARATOR.fixedtext.text
+#, fuzzy
+msgid "Thousands separator"
+msgstr "Thousands separator"
+
+#: AutoControls_tmpl.hrc#CB_AUTOHEADER.checkbox.text
+#, fuzzy
+msgid "~Text contains headers"
+msgstr "~Text contains headers"
+
+#: AutoControls_tmpl.hrc#STR_AUTOTEXT_FIELD_SEP_NONE.string.text
+#, fuzzy
+msgid "{None}"
+msgstr "{None}"
+
+#: AutoControls_tmpl.hrc#STR_AUTOFIELDSEPARATORLIST.string.text
+#, fuzzy
+msgid ";\t59\t,\t44\t:\t58\t{Tab}\t9\t{Space}\t32"
+msgstr ";\t59\t,\t44\t:\t58\t{Tab}\t9\t{Space}\t32"
+
+#: AutoControls_tmpl.hrc#STR_AUTODELIMITER_MISSING.string.text
+#, fuzzy
+msgid "#1 must be set."
+msgstr "#1 must be set."
+
+#: AutoControls_tmpl.hrc#STR_AUTODELIMITER_MUST_DIFFER.string.text
+#, fuzzy
+msgid "#1 and #2 must be different."
+msgstr "#1 and #2 must be different."
+
+#: AutoControls_tmpl.hrc#STR_AUTONO_WILDCARDS.string.text
+#, fuzzy
+msgid "Wildcards such as ?,* are not allowed in #1."
+msgstr "Wildcards such as ?,* are not allowed in #1."
+
+#: AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP_AUTO_Y__AUTO_HID__AUTO_HID2_.FT_AUTOJDBCDRIVERCLASS.fixedtext.text
+#, fuzzy
+msgid "JDBC d~river class"
+msgstr "JDBC d~river class"
+
+#: AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP_AUTO_Y__AUTO_HID__AUTO_HID2_.PB_AUTOTESTDRIVERCLASS.pushbutton.text
+#, fuzzy
+msgctxt ""
+"AutoControls_tmpl.hrc#AUTO_JDBCDRIVERCLASSGROUP_AUTO_Y__AUTO_HID__AUTO_HID2_."
+"PB_AUTOTESTDRIVERCLASS.pushbutton.text"
+msgid "Test class"
+msgstr "Test class"
+
+#: AutoControls_tmpl.hrc#AUTO_SOCKETCONTROLGROUP_AUTO_Y_.FT_SOCKET.fixedtext.text
+#, fuzzy
+msgid "Socket"
+msgstr "Socket"
+"X-Accelerator-Marker: ~\n"
+
+#: query.src#STR_QUERY_UNDO_TABWINSHOW.string.text
+#, fuzzy
+msgid "Add Table Window"
+msgstr "Add Table Window"
+
+#: query.src#STR_QUERY_UNDO_MOVETABWIN.string.text
+#, fuzzy
+msgid "Move table window"
+msgstr "Move Table Window"
+
+#: query.src#STR_QUERY_UNDO_INSERTCONNECTION.string.text
+#, fuzzy
+msgid "Insert Join"
+msgstr "Insert Join"
+
+#: query.src#STR_QUERY_UNDO_REMOVECONNECTION.string.text
+#, fuzzy
+msgid "Delete Join"
+msgstr "Delete Join"
+
+#: query.src#STR_QUERY_UNDO_SIZETABWIN.string.text
+#, fuzzy
+msgid "Resize table window"
+msgstr "Resize Table Window"
+
+#: query.src#STR_QUERY_UNDO_TABFIELDDELETE.string.text
+#, fuzzy
+msgid "Delete Column"
+msgstr "Delete Column"
+
+#: query.src#STR_QUERY_UNDO_TABFIELDMOVED.string.text
+#, fuzzy
+msgid "Move column"
+msgstr "Move Column"
+
+#: query.src#STR_QUERY_UNDO_TABFIELDCREATE.string.text
+#, fuzzy
+msgid "Add Column"
+msgstr "Add Column"
+
+#: query.src#RID_STR_TABLE_DOESNT_EXIST.string.text
+#, fuzzy
+msgid "Invalid expression, table '$name$' does not exist."
+msgstr "Invalid expression, table '$name$' does not exist."
+
+#: query.src#RID_STR_FIELD_DOESNT_EXIST.string.text
+#, fuzzy
+msgid "Invalid expression, field name '$name$' does not exist."
+msgstr "Invalid expression, field name '$name$' does not exist."
+
+#: query.src#RID_STR_TOMUCHTABLES.string.text
+#, fuzzy
+msgid ""
+"The query covers #num# tables. The selected database type, however, can only "
+"process a maximum of #maxnum# table(s) per statement."
+msgstr ""
+"The query covers #num# tables. The selected database type, however, can only "
+"process a maximum of #maxnum# table(s) per statement."
+
+#: query.src#STR_QUERY_UNDO_TABWINDELETE.string.text
+#, fuzzy
+msgid "Delete Table Window"
+msgstr "Delete Table Window"
+
+#: query.src#STR_QUERY_UNDO_MODIFY_CELL.string.text
+#, fuzzy
+msgid "Edit Column Description"
+msgstr "Edit Column Description"
+
+#: query.src#STR_QUERY_UNDO_SIZE_COLUMN.string.text
+#, fuzzy
+msgid "Adjust column width"
+msgstr "Adjust Column Width"
+
+#: query.src#STR_QUERY_SORTTEXT.string.text
+#, fuzzy
+msgid "(not sorted);ascending;descending"
+msgstr "(not sorted);ascending;descending"
+
+#: query.src#STR_QUERY_FUNCTIONS.string.text
+#, fuzzy
+msgid "(no function);Group"
+msgstr "(no function);Group"
+
+#: query.src#STR_QUERY_NOTABLE.string.text
+#, fuzzy
+msgid "(no table)"
+msgstr "(no table)"
+
+#: query.src#STR_QRY_ORDERBY_UNRELATED.string.text
+#, fuzzy
+msgid "The database only supports sorting for visible fields."
+msgstr "The database only supports sorting for visible fields."
+
+#: query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_FUNCTION.menuitem.text
+#, fuzzy
+msgid "Functions"
+msgstr "Functions"
+
+#: query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_TABLENAME.menuitem.text
+#, fuzzy
+msgid "Table Name"
+msgstr "Table Name"
+
+#: query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_ALIASNAME.menuitem.text
+#, fuzzy
+msgid "Alias"
+msgstr "Alias"
+
+#: query.src#RID_QUERYFUNCTION_POPUPMENU.ID_QUERY_DISTINCT.menuitem.text
+#, fuzzy
+msgid "Distinct Values"
+msgstr "Distinct Values"
+
+#: query.src#STR_QUERY_HANDLETEXT.string.text
+#, fuzzy
+msgid "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
+msgstr "Field;Alias;Table;Sort;Visible;Function;Criterion;Or;Or"
+
+#: query.src#STR_QRY_TOO_MANY_COLUMNS.string.text
+#, fuzzy
+msgid "There are too many columns."
+msgstr "There are too many columns."
+
+#: query.src#ERR_QRY_CRITERIA_ON_ASTERISK.errorbox.text
+#, fuzzy
+msgid "A condition cannot be applied to field [*]"
+msgstr "A condition cannot be applied to field [*]"
+
+#: query.src#STR_QRY_TOO_LONG_STATEMENT.string.text
+#, fuzzy
+msgid "The SQL statement created is too long."
+msgstr "The SQL statement created is too long."
+
+#: query.src#STR_QRY_TOOCOMPLEX.string.text
+#, fuzzy
+msgid "Query is too complex"
+msgstr "Query is too complex"
+
+#: query.src#STR_QRY_NOSELECT.string.text
+#, fuzzy
+msgid "Nothing has been selected."
+msgstr "Nothing has been selected."
+
+#: query.src#STR_QRY_TOOMANYCOND.string.text
+#, fuzzy
+msgid "Too many search criteria"
+msgstr "Too many search criteria"
+
+#: query.src#STR_QRY_SYNTAX.string.text
+#, fuzzy
+msgid "SQL syntax error"
+msgstr "SQL syntax error"
+
+#: query.src#ERR_QRY_ORDERBY_ON_ASTERISK.errorbox.text
+#, fuzzy
+msgid "[*] cannot be used as a sort criterion."
+msgstr "[*] cannot be used as a sort criterion."
+
+#: query.src#STR_QRY_TOO_MANY_TABLES.string.text
+#, fuzzy
+msgid "There are too many tables."
+msgstr "There are too many tables."
+
+#: query.src#STR_QRY_NATIVE.string.text
+#, fuzzy
+msgid ""
+"The statement will not be applied when querying in the SQL dialect of the "
+"database."
+msgstr ""
+"The statement will not be applied when querying in the SQL dialect of the "
+"database."
+
+#: query.src#ERR_QRY_AMB_FIELD.errorbox.text
+#, fuzzy
+msgid "Field name not found or not unique"
+msgstr "Field name not found or not unique"
+
+#: query.src#STR_QRY_ILLEGAL_JOIN.string.text
+#, fuzzy
+msgid "Join could not be processed"
+msgstr "Join could not be processed"
+
+#: query.src#STR_SVT_SQL_SYNTAX_ERROR.string.text
+#, fuzzy
+msgid "Syntax error in SQL statement"
+msgstr "Syntax error in SQL statement"
+
+#: query.src#STR_QUERYDESIGN_NO_VIEW_SUPPORT.string.text
+#, fuzzy
+msgid "This database does not support table views."
+msgstr "This database does not support table views."
+
+#: query.src#STR_NO_ALTER_VIEW_SUPPORT.string.text
+#, fuzzy
+msgid "This database does not support altering of existing table views."
+msgstr "This database does not support altering of existing table views."
+
+#: query.src#STR_QUERYDESIGN_NO_VIEW_ASK.string.text
+#, fuzzy
+msgid "Do you want to create a query instead?"
+msgstr "Do you want to create a query instead?"
+
+#: query.src#ERR_QRY_NOSTATEMENT.errorbox.text
+#, fuzzy
+msgid "No query could be created."
+msgstr "No query could be created."
+
+#: query.src#ERR_QRY_NOCRITERIA.errorbox.text
+#, fuzzy
+msgid "No query could be created because no fields were selected."
+msgstr "No query could be created because no fields were selected."
+
+#: query.src#STR_DATASOURCE_DELETED.string.text
+#, fuzzy
+msgid ""
+"The corresponding data source has been deleted. Therefore, data relevant to "
+"that data source cannot be saved."
+msgstr ""
+"The corresponding data source has been deleted. Therefore, data relevant to "
+"that data source cannot be saved."
+
+#: query.src#STR_QRY_COLUMN_NOT_FOUND.string.text
+#, fuzzy
+msgid "The column '$name$' is unknown."
+msgstr "The column '$name$' is unknown."
+
+#: query.src#STR_QRY_JOIN_COLUMN_COMPARE.string.text
+#, fuzzy
+msgid "Columns can only be compared using '='."
+msgstr "Columns can only be compared using '='."
+
+#: query.src#STR_QRY_LIKE_LEFT_NO_COLUMN.string.text
+#, fuzzy
+msgid "You must use a column name before 'LIKE'."
+msgstr "You must use a column name before 'LIKE'."
+
+#: query.src#STR_QRY_CHECK_CASESENSITIVE.string.text
+#, fuzzy
+msgid ""
+"The column could not be found. Please note that the database is case-"
+"sensitive."
+msgstr ""
+"The column could not be found. Please note that the database is case-"
+"sensitive."
+
+#: query.src#STR_QUERYDESIGN.string.text
+#, fuzzy
+msgid " - %PRODUCTNAME Base: Query Design"
+msgstr " - %PRODUCTNAME Base: Query Design"
+
+#: query.src#STR_VIEWDESIGN.string.text
+#, fuzzy
+msgid " - %PRODUCTNAME Base: View Design"
+msgstr " - %PRODUCTNAME Base: View Design"
+
+#: query.src#STR_QUERY_SAVEMODIFIED.string.text
+#, fuzzy
+msgid ""
+"$object$ has been changed.\n"
+"Do you want to save the changes?"
+msgstr ""
+"$object$ has been changed.\n"
+"Do you want to save the changes?"
+
+#: query.src#STR_ERROR_PARSING_STATEMENT.string.text
+#, fuzzy
+msgid "$object$ is based on an SQL command which could not be parsed."
+msgstr "$object$ is based on an SQL command which could not be parsed."
+
+#: query.src#STR_INFO_OPENING_IN_SQL_VIEW.string.text
+#, fuzzy
+msgid "$object$ will be opened in SQL view."
+msgstr "$object$ will be opened in SQL view."
+
+#: query.src#RSC_QUERY_OBJECT_TYPE.1.string.text
+#, fuzzy
+msgid "The table view"
+msgstr "The table view"
+
+#: query.src#RSC_QUERY_OBJECT_TYPE.2.string.text
+#, fuzzy
+msgid "The query"
+msgstr "The query"
+
+#: query.src#RSC_QUERY_OBJECT_TYPE.3.string.text
+#, fuzzy
+msgid "The SQL statement"
+msgstr "The SQL statement"
+
+#: query.src#STR_STATEMENT_WITHOUT_RESULT_SET.string.text
+#, fuzzy
+msgid ""
+"The query does not create a result set, and thus cannot be part of another "
+"query."
+msgstr ""
+"The query does not create a result set and thus cannot be part of another "
+"query."
+
+#: query.src#STR_NO_DATASOURCE_OR_CONNECTION.string.text
+#, fuzzy
+msgid ""
+"Both the ActiveConnection and the DataSourceName parameter are missing or "
+"wrong - cannot initialize the query designer."
+msgstr ""
+"Both the ActiveConnection and the DataSourceName parameter are missing or "
+"wrong - cannot initialise the query designer."
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.fixedline.text
+#, fuzzy
+msgid "Options"
+msgstr "Options"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.fixedtext.text
+#, fuzzy
+msgid "~Type"
+msgstr "~Type"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.1.stringlist.text
+#, fuzzy
+msgid "Inner join"
+msgstr "Inner join"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.2.stringlist.text
+#, fuzzy
+msgid "Left join"
+msgstr "Left join"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.3.stringlist.text
+#, fuzzy
+msgid "Right join"
+msgstr "Right join"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.4.stringlist.text
+#, fuzzy
+msgid "Full (outer) join"
+msgstr "Full (outer) join"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.5.stringlist.text
+#, fuzzy
+msgid "Cross join"
+msgstr "Cross join"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.checkbox.text
+#, fuzzy
+msgid "Natural"
+msgstr "Natural"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.fixedline.text
+#, fuzzy
+msgid "Tables involved"
+msgstr "Tables involved"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.fixedline.text
+#, fuzzy
+msgid "Fields involved"
+msgstr "Fields involved"
+
+#: querydlg.src#DLG_QRY_JOIN.modaldialog.text
+#, fuzzy
+msgid "Join Properties"
+msgstr "Join Properties"
+
+#: querydlg.src#STR_JOIN_TYPE_HINT.string.text
+#, fuzzy
+msgid "Please note that some databases may not support this join type."
+msgstr "Please note that some databases may not support this join type."
+
+#: querydlg.src#STR_QUERY_INNER_JOIN.string.text
+#, fuzzy
+msgid ""
+"Includes only records for which the contents of the related fields of both "
+"tables are identical."
+msgstr ""
+"Includes only records for which the contents of the related fields of both "
+"tables are identical."
+
+#: querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.string.text
+#, fuzzy
+msgid ""
+"Contains ALL records from table '%1' but only records from table '%2' where "
+"the values in the related fields are matching."
+msgstr ""
+"Contains ALL records from table '%1' but only records from table '%2' where "
+"the values in the related fields are matching."
+
+#: querydlg.src#STR_QUERY_FULL_JOIN.string.text
+#, fuzzy
+msgid "Contains ALL records from '%1' and from '%2'."
+msgstr "Contains ALL records from '%1' and from '%2'."
+
+#: querydlg.src#STR_QUERY_CROSS_JOIN.string.text
+#, fuzzy
+msgid "Contains the cartesian product of ALL records from '%1' and from '%2'."
+msgstr "Contains the Cartesian product of ALL records from '%1' and from '%2'."
+
+#: querydlg.src#STR_QUERY_NATURAL_JOIN.string.text
+#, fuzzy
+msgid ""
+"Contains only one column for each pair of equally-named columns from '%1' "
+"and from '%2'."
+msgstr ""
+"Contains only one column for each pair of equally-named columns from '%1' "
+"and from '%2'."
+
+#, fuzzy
+#~ msgid "TRUE"
+#~ msgstr "TRUE"
+
+#, fuzzy
+#~ msgid "FALSE"
+#~ msgstr "FALSE"
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: ~\n"
+
+#: app.src#RID_STR_NEW_FORM.string.text
+#, fuzzy
+msgid "Create Form in Design View..."
+msgstr "Create Form in Design View..."
+
+#: app.src#RID_STR_NEW_FORM_AUTO.string.text
+#, fuzzy
+msgid "Use Wizard to Create Form..."
+msgstr "Use Wizard to Create Form..."
+
+#: app.src#RID_STR_NEW_REPORT_AUTO.string.text
+#, fuzzy
+msgid "Use Wizard to Create Report..."
+msgstr "Use Wizard to Create Report..."
+
+#: app.src#RID_STR_NEW_REPORT.string.text
+#, fuzzy
+msgid "Create Report in Design View..."
+msgstr "Create Report in Design View..."
+
+#: app.src#RID_STR_NEW_QUERY.string.text
+#, fuzzy
+msgid "Create Query in Design View..."
+msgstr "Create Query in Design View..."
+
+#: app.src#RID_STR_NEW_QUERY_SQL.string.text
+#, fuzzy
+msgid "Create Query in SQL View..."
+msgstr "Create Query in SQL View..."
+
+#: app.src#RID_STR_NEW_QUERY_AUTO.string.text
+#, fuzzy
+msgid "Use Wizard to Create Query..."
+msgstr "Use Wizard to Create Query..."
+
+#: app.src#RID_STR_NEW_TABLE.string.text
+#, fuzzy
+msgid "Create Table in Design View..."
+msgstr "Create Table in Design View..."
+
+#: app.src#RID_STR_NEW_TABLE_AUTO.string.text
+#, fuzzy
+msgid "Use Wizard to Create Table..."
+msgstr "Use Wizard to Create Table..."
+
+#: app.src#RID_STR_NEW_VIEW.string.text
+#, fuzzy
+msgid "Create View..."
+msgstr "Create View..."
+
+#: app.src#RID_STR_FORMS_CONTAINER.string.text
+#, fuzzy
+msgid "Forms"
+msgstr "Forms"
+
+#: app.src#RID_STR_REPORTS_CONTAINER.string.text
+#, fuzzy
+msgid "Reports"
+msgstr "Reports"
+
+#: app.src#RID_MENU_APP_NEW.SID_APP_NEW_FORM.menuitem.text
+#, fuzzy
+msgid "Form..."
+msgstr "Form..."
+
+#: app.src#RID_MENU_APP_NEW.SID_APP_NEW_REPORT.menuitem.text
+#, fuzzy
+msgctxt "app.src#RID_MENU_APP_NEW.SID_APP_NEW_REPORT.menuitem.text"
+msgid "Report..."
+msgstr "Report..."
+
+#: app.src#RID_MENU_APP_NEW.SID_DB_NEW_VIEW_SQL.menuitem.text
+#, fuzzy
+msgid "View (Simple)..."
+msgstr "View (Simple)..."
+
+#: app.src#RID_MENU_APP_EDIT.SID_DB_APP_PASTE_SPECIAL.menuitem.text
+#, fuzzy
+msgid "Paste Special..."
+msgstr "Paste Special..."
+
+#: app.src#RID_MENU_APP_EDIT.SID_DB_APP_DELETE.menuitem.text
+#, fuzzy
+msgid "Delete"
+msgstr "Delete"
+
+#: app.src#RID_MENU_APP_EDIT.SID_DB_APP_RENAME.menuitem.text
+#, fuzzy
+msgid "Rename"
+msgstr "Rename"
+
+#: app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT.menuitem.text
+#, fuzzy
+msgid "Edit"
+msgstr "Edit"
+
+#: app.src#RID_MENU_APP_EDIT.SID_DB_APP_EDIT_SQL_VIEW.menuitem.text
+#, fuzzy
+msgid "Edit in SQL View..."
+msgstr "Edit in SQL View..."
+
+#: app.src#RID_MENU_APP_EDIT.SID_DB_APP_OPEN.menuitem.text
+#, fuzzy
+msgid "Open"
+msgstr "Open"
+
+#: app.src#RID_MENU_APP_EDIT.SID_DB_APP_CONVERTTOVIEW.menuitem.text
+#, fuzzy
+msgid "Create as View"
+msgstr "Create as View"
+
+#: app.src#RID_MENU_APP_EDIT.SID_FORM_CREATE_REPWIZ_PRE_SEL.menuitem.text
+#, fuzzy
+msgid "Form Wizard..."
+msgstr "Form Wizard..."
+
+#: app.src#RID_MENU_APP_EDIT.SID_APP_NEW_REPORT_PRE_SEL.menuitem.text
+#, fuzzy
+msgctxt "app.src#RID_MENU_APP_EDIT.SID_APP_NEW_REPORT_PRE_SEL.menuitem.text"
+msgid "Report..."
+msgstr "Report..."
+
+#: app.src#RID_MENU_APP_EDIT.SID_REPORT_CREATE_REPWIZ_PRE_SEL.menuitem.text
+#, fuzzy
+msgid "Report Wizard..."
+msgstr "Report Wizard..."
+
+#: app.src#RID_MENU_APP_EDIT.SID_SELECTALL.menuitem.text
+#, fuzzy
+msgid "Select All"
+msgstr "Select All"
+
+#: app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSPROPS.menuitem.text
+#, fuzzy
+msgid "Properties..."
+msgstr "Properties..."
+
+#: app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSCONNECTION_TYPE.menuitem.text
+#, fuzzy
+msgid "Connection Type..."
+msgstr "Connection Type..."
+
+#: app.src#RID_MENU_APP_EDIT.MN_PROPS.SID_DB_APP_DSADVANCED_SETTINGS.menuitem.text
+#, fuzzy
+msgid "Advanced Settings..."
+msgstr "Advanced Settings..."
+
+#: app.src#RID_MENU_APP_EDIT.MN_PROPS.menuitem.text
+#, fuzzy
+msgid "~Database"
+msgstr "~Database"
+
+#: app.src#STR_QUERY_DELETE_DATASOURCE.string.text
+#, fuzzy
+msgid "Do you want to delete the data source '%1'?"
+msgstr "Do you want to delete the data source '%1'?"
+
+#: app.src#STR_APP_TITLE.string.text
+#, fuzzy
+msgid " - %PRODUCTNAME Base"
+msgstr " - %PRODUCTNAME Base"
+
+#: app.src#RID_STR_REPORTS_HELP_TEXT_WIZARD.string.text
+#, fuzzy
+msgid ""
+"The wizard will guide you through the steps necessary to create a report."
+msgstr ""
+"The wizard will guide you through the steps necessary to create a report."
+
+#: app.src#RID_STR_FORMS_HELP_TEXT.string.text
+#, fuzzy
+msgid ""
+"Create a form by specifying the record source, controls, and control "
+"properties."
+msgstr ""
+"Create a form by specifying the record source, controls and control "
+"properties."
+
+#: app.src#RID_STR_REPORT_HELP_TEXT.string.text
+#, fuzzy
+msgid ""
+"Create a report by specifying the record source, controls, and control "
+"properties."
+msgstr ""
+"Create a report by specifying the record source, controls and control "
+"properties."
+
+#: app.src#RID_STR_FORMS_HELP_TEXT_WIZARD.string.text
+#, fuzzy
+msgid "The wizard will guide you through the steps necessary to create a form."
+msgstr ""
+"The wizard will guide you through the steps necessary to create a form."
+
+#: app.src#RID_STR_QUERIES_HELP_TEXT.string.text
+#, fuzzy
+msgid ""
+"Create a query by specifying the filters, input tables, field names,  and  "
+"properties for sorting or grouping."
+msgstr ""
+"Create a query by specifying the filters, input tables, field names and "
+"properties for sorting or grouping."
+
+#: app.src#RID_STR_QUERIES_HELP_TEXT_SQL.string.text
+#, fuzzy
+msgid "Create a query  entering an SQL statement directly."
+msgstr "Create a query entering an SQL statement directly."
+
+#: app.src#RID_STR_QUERIES_HELP_TEXT_WIZARD.string.text
+#, fuzzy
+msgid ""
+"The wizard will guide you through the steps necessary to create a query."
+msgstr ""
+"The wizard will guide you through the steps necessary to create a query."
+
+#: app.src#RID_STR_TABLES_HELP_TEXT_DESIGN.string.text
+#, fuzzy
+msgid ""
+"Create a table by specifying the field names and properties, as well as the "
+"data types."
+msgstr ""
+"Create a table by specifying the field names and properties, as well as the "
+"data types."
+
+#: app.src#RID_STR_TABLES_HELP_TEXT_WIZARD.string.text
+#, fuzzy
+msgid ""
+"Choose from a selection of business and personal table samples, which you "
+"customize to create a table."
+msgstr ""
+"Choose from a selection of business and personal table samples, which you "
+"customise to create a table."
+
+#: app.src#RID_STR_VIEWS_HELP_TEXT_DESIGN.string.text
+#, fuzzy
+msgid ""
+"Create a view by specifying the tables and field names you would like to "
+"have visible."
+msgstr ""
+"Create a view by specifying the tables and field names you would like to "
+"have visible."
+
+#: app.src#RID_STR_VIEWS_HELP_TEXT_WIZARD.string.text
+#, fuzzy
+msgid "Opens the view wizard"
+msgstr "Opens the view wizard"
+
+#: app.src#STR_DATABASE.string.text
+#, fuzzy
+msgid "Database"
+msgstr "Database"
+
+#: app.src#STR_TASKS.string.text
+#, fuzzy
+msgid "Tasks"
+msgstr "Tasks"
+
+#: app.src#STR_DESCRIPTION.string.text
+#, fuzzy
+msgid "Description"
+msgstr "Description"
+
+#: app.src#STR_PREVIEW.string.text
+#, fuzzy
+msgid "Preview"
+msgstr "Preview"
+
+#: app.src#STR_DISABLEPREVIEW.string.text
+#, fuzzy
+msgid "Disable Preview"
+msgstr "Disable Preview"
+
+#: app.src#APP_SAVEMODIFIED.querybox.text
+#, fuzzy
+msgid ""
+"The database has been modified.\n"
+"Do you want to save the changes?"
+msgstr ""
+"The database has been modified.\n"
+"Do you want to save the changes?"
+
+#: app.src#APP_CLOSEDOCUMENTS.querybox.text
+#, fuzzy
+msgid ""
+"The connection type has been altered.\n"
+"For the changes to take effect, all forms, reports, queries and tables must "
+"be closed.\n"
+"\n"
+"Do you want to close all documents now?"
+msgstr ""
+"The connection type has been altered.\n"
+"For the changes to take effect, all forms, reports, queries and tables must "
+"be closed.\n"
+"\n"
+"Do you want to close all documents now?"
+
+#: app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_DISABLE_PREVIEW.menuitem.text
+#, fuzzy
+msgid "None"
+msgstr "None"
+
+#: app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOCINFO_PREVIEW.menuitem.text
+#, fuzzy
+msgid "Document Information"
+msgstr "Document Information"
+
+#: app.src#RID_MENU_APP_PREVIEW.SID_DB_APP_VIEW_DOC_PREVIEW.menuitem.text
+#, fuzzy
+msgid "Document"
+msgstr "Document"
+
+#: app.src#RID_STR_FORM.string.text
+#, fuzzy
+msgid "Form"
+msgstr "Form"
+
+#: app.src#RID_STR_REPORT.string.text
+#, fuzzy
+msgid "Report"
+msgstr "Report"
+
+#: app.src#STR_FRM_LABEL.string.text
+#, fuzzy
+msgid "F~orm name"
+msgstr "F~orm name"
+
+#: app.src#STR_RPT_LABEL.string.text
+#, fuzzy
+msgid "~Report name"
+msgstr "~Report name"
+
+#: app.src#STR_FOLDER_LABEL.string.text
+#, fuzzy
+msgid "F~older name"
+msgstr "F~older name"
+
+#: app.src#STR_SUB_DOCS_WITH_SCRIPTS.string.text
+#, fuzzy
+msgid "The document contains forms or reports with embedded macros."
+msgstr "The document contains forms or reports with embedded macros."
+
+#: app.src#STR_SUB_DOCS_WITH_SCRIPTS_DETAIL.string.text
+#, fuzzy
+msgid ""
+"Macros should be embedded into the database document itself.\n"
+"\n"
+"You can continue to use your document as before, however, you are encouraged "
+"to migrate your macros. The menu item 'Tools / Migrate Macros ...' will "
+"assist you with this.\n"
+"\n"
+"Note that you won't be able to embed macros into the database document "
+"itself until this migration is done. "
+msgstr ""
+"Macros should be embedded into the database document itself.\n"
+"\n"
+"You can continue to use your document as before, however, you are encouraged "
+"to migrate your macros. The menu item 'Tools - Migrate Macros ...' will "
+"assist you with this.\n"
+"\n"
+"Note that you won't be able to embed macros into the database document "
+"itself until this migration is done. "
+
+#: app.src#RID_STR_EMBEDDED_DATABASE.string.text
+#, fuzzy
+msgid "Embedded database"
+msgstr "Embedded database"
+
+#: app.src#RID_STR_NO_DIFF_CAT.string.text
+#, fuzzy
+msgid "You cannot select different categories."
+msgstr "You cannot select different categories."
+
+#: app.src#RID_STR_UNSUPPORTED_OBJECT_TYPE.string.text
+#, fuzzy
+msgid "Unsupported object type found ($type$)."
+msgstr "Unsupported object type found ($type$)."
+"X-Accelerator-Marker: ~\n"
+
+#: TableGrantCtrl.src#STR_TABLE_PRIV_NAME.string.text
+#, fuzzy
+msgid "Table name"
+msgstr "Table name"
+
+#: TableGrantCtrl.src#STR_TABLE_PRIV_INSERT.string.text
+#, fuzzy
+msgid "Insert data"
+msgstr "Insert data"
+
+#: TableGrantCtrl.src#STR_TABLE_PRIV_DELETE.string.text
+#, fuzzy
+msgid "Delete data"
+msgstr "Delete data"
+
+#: TableGrantCtrl.src#STR_TABLE_PRIV_UPDATE.string.text
+#, fuzzy
+msgid "Modify data"
+msgstr "Modify data"
+
+#: TableGrantCtrl.src#STR_TABLE_PRIV_ALTER.string.text
+#, fuzzy
+msgid "Alter structure"
+msgstr "Alter structure"
+
+#: TableGrantCtrl.src#STR_TABLE_PRIV_SELECT.string.text
+#, fuzzy
+msgid "Read data"
+msgstr "Read data"
+
+#: TableGrantCtrl.src#STR_TABLE_PRIV_REFERENCE.string.text
+#, fuzzy
+msgid "Modify references"
+msgstr "Modify references"
+
+#: TableGrantCtrl.src#STR_TABLE_PRIV_DROP.string.text
+#, fuzzy
+msgid "Drop structure"
+msgstr "Drop structure"
+
+#: tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_ASCENDING.menuitem.text
+#, fuzzy
+msgid "Sort Ascending"
+msgstr "Sort Ascending"
+
+#: tabletree.src#MENU_TABLETREE_POPUP.MID_SORT_DECENDING.menuitem.text
+#, fuzzy
+msgid "Sort Descending"
+msgstr "Sort Descending"
+
+#: tabletree.src#STR_COULDNOTCREATE_DRIVERMANAGER.string.text
+#, fuzzy
+msgid "Cannot connect to the SDBC driver manager (#servicename#)."
+msgstr "Cannot connect to the SDBC driver manager (#servicename#)."
+
+#: tabletree.src#STR_NOREGISTEREDDRIVER.string.text
+#, fuzzy
+msgid "A driver is not registered for the URL #connurl#."
+msgstr "A driver is not registered for the URL #connurl#."
+
+#: tabletree.src#STR_COULDNOTCONNECT.string.text
+#, fuzzy
+msgid "No connection could be established for the URL #connurl#."
+msgstr "No connection could be established for the URL #connurl#."
+
+#: tabletree.src#STR_COULDNOTCONNECT_PLEASECHECK.string.text
+#, fuzzy
+msgid "Please check the current settings, for example user name and password."
+msgstr "Please check the current settings, for example user name and password."
+
+#: tabletree.src#STR_NOTABLEINFO.string.text
+#, fuzzy
+msgid ""
+"Successfully connected, but information about database tables is not "
+"available."
+msgstr ""
+"Successfully connected, but information about database tables is not "
+"available."
+
+#: tabletree.src#STR_ALL_TABLES.string.text
+#, fuzzy
+msgid "All tables"
+msgstr "All tables"
+
+#: tabletree.src#STR_ALL_VIEWS.string.text
+#, fuzzy
+msgid "All views"
+msgstr "All views"
+
+#: tabletree.src#STR_ALL_TABLES_AND_VIEWS.string.text
+#, fuzzy
+msgid "All tables and views"
+msgstr "All tables and views"
+
+#: undosqledit.src#STR_QUERY_UNDO_MODIFYSQLEDIT.string.text
+#, fuzzy
+msgid "Modify SQL statement(s)"
+msgstr "Modify SQL statement(s)"
+"X-Accelerator-Marker: ~\n"
+
+#: copytablewizard.src#STR_CTW_NO_VIEWS_SUPPORT.string.text
+#, fuzzy
+msgid "The destination database does not support views."
+msgstr "The destination database does not support views."
+
+#: copytablewizard.src#STR_CTW_NO_PRIMARY_KEY_SUPPORT.string.text
+#, fuzzy
+msgid "The destination database does not support primary keys."
+msgstr "The destination database does not support primary keys."
+
+#: copytablewizard.src#STR_CTW_INVALID_DATA_ACCESS_DESCRIPTOR.string.text
+#, fuzzy
+msgid ""
+"no data access descriptor found, or no data access descriptor able to "
+"provide all necessary information"
+msgstr ""
+"no data access descriptor found, or no data access descriptor able to "
+"provide all necessary information"
+
+#: copytablewizard.src#STR_CTW_ONLY_TABLES_AND_QUERIES_SUPPORT.string.text
+#, fuzzy
+msgid "Only tables and queries are supported at the moment."
+msgstr "Only tables and queries are supported at the moment."
+
+#: copytablewizard.src#STR_CTW_COPY_SOURCE_NEEDS_BOOKMARKS.string.text
+#, fuzzy
+msgid "The copy source's result set must support bookmarks."
+msgstr "The copy source's result set must support bookmarks."
+
+#: copytablewizard.src#STR_CTW_UNSUPPORTED_COLUMN_TYPE.string.text
+#, fuzzy
+msgid "Unsupported source column type ($type$) at column position $pos$."
+msgstr "Unsupported source column type ($type$) at column position $pos$."
+
+#: copytablewizard.src#STR_CTW_ILLEGAL_PARAMETER_COUNT.string.text
+#, fuzzy
+msgid "Illegal number of initialization parameters."
+msgstr "Illegal number of initialisation parameters."
+
+#: copytablewizard.src#STR_CTW_ERROR_DURING_INITIALIZATION.string.text
+#, fuzzy
+msgid "An error occurred during initialization."
+msgstr "An error occurred during initialisation."
+
+#: copytablewizard.src#STR_CTW_ERROR_UNSUPPORTED_SETTING.string.text
+#, fuzzy
+msgid "Unsupported setting in the copy source descriptor: $name$."
+msgstr "Unsupported setting in the copy source descriptor: $name$."
+
+#: copytablewizard.src#STR_CTW_ERROR_NO_QUERY.string.text
+#, fuzzy
+msgid "To copy a query, your connection must be able to provide queries."
+msgstr "To copy a query, your connection must be able to provide queries."
+
+#: copytablewizard.src#STR_CTW_ERROR_INVALID_INTERACTIONHANDLER.string.text
+#, fuzzy
+msgid "The given interaction handler is invalid."
+msgstr "The given interaction handler is invalid."
+
+#: dbinteraction.src#STR_REMEMBERPASSWORD_SESSION.string.text
+#, fuzzy
+msgid "~Remember password until end of session"
+msgstr "~Remember password until end of session"
+
+#: dbinteraction.src#STR_REMEMBERPASSWORD_PERSISTENT.string.text
+#, fuzzy
+msgid "~Remember password"
+msgstr "~Remember password"
+"X-Accelerator-Marker: ~\n"
+
+#: toolbox_tmpl.hrc#MID_SBA_QRY_REFRESH.#define.text
+#, fuzzy
+msgid "Refresh"
+msgstr "Refresh"
+
+#: toolbox_tmpl.hrc#MID_NEW_VIEW_DESIGN.#define.text
+#, fuzzy
+msgid "New ~View Design"
+msgstr "New ~View Design"
+
+#: toolbox_tmpl.hrc#MID_NEW_TABLE_DESIGN.#define.text
+#, fuzzy
+msgid "New ~Table Design"
+msgstr "New ~Table Design"
+
+#: toolbox_tmpl.hrc#MID_QUERY_WIZARD.#define.text
+#, fuzzy
+msgid "Query AutoPilot..."
+msgstr "Query AutoPilot..."
+
+#: toolbox_tmpl.hrc#MID_QUERY_NEW_DESIGN.#define.text
+#, fuzzy
+msgid "New ~Query (Design View)"
+msgstr "New ~Query (Design View)"
+
+#: toolbox_tmpl.hrc#MID_QUERY_EDIT_DESIGN.#define.text
+#, fuzzy
+msgid "~Edit Query"
+msgstr "~Edit Query"
+
+#: toolbox_tmpl.hrc#MID_QUERY_NEW_SQL.#define.text
+#, fuzzy
+msgid "New Query (~SQL View)"
+msgstr "New Query (~SQL View)"
+
+#: toolbox_tmpl.hrc#MID_DBUI_QUERY_EDIT_JOINCONNECTION.#define.text
+#, fuzzy
+msgid "Edit..."
+msgstr "Edit..."
+
+#: toolbox_tmpl.hrc#MID_COLUMN_WIDTH.#define.text
+#, fuzzy
+msgid "Column ~Width..."
+msgstr "Column ~Width..."
+
+#: toolbox_tmpl.hrc#MID_DOCUMENT_CREATE_REPWIZ.#define.text
+#, fuzzy
+msgid "Report Wizard..."
+msgstr "Report Wizard..."
+
+#: toolbox_tmpl.hrc#MID_DOCUMENT_NEW_AUTOPILOT.#define.text
+#, fuzzy
+msgid "Form AutoPilot..."
+msgstr "Form AutoPilot..."
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: ~\n"
+
+#: table.src#STR_TABLEDESIGN_DBFIELDTYPES.string.text
+#, fuzzy
+msgid ""
+"Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;"
+"Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;"
+"Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;"
+"CLOB;REF;OTHER;Bit (fix)"
+msgstr ""
+"Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Image;"
+"Text (fix);Decimal;Binary (fix);Binary;BigInt;Double;Float;Real;Integer;"
+"Small Integer;Tiny Integer;SQL Null;Object;Distinct;Structure;Field;BLOB;"
+"CLOB;REF;OTHER;Bit (fix)"
+
+#: table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.string.text
+#, fuzzy
+msgctxt "table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.string.text"
+msgid "Insert/remove primary key"
+msgstr "Insert/remove primary key"
+
+#: table.src#STR_VALUE_YES.string.text
+#, fuzzy
+msgid "Yes"
+msgstr "Yes"
+
+#: table.src#STR_VALUE_NO.string.text
+#, fuzzy
+msgid "No"
+msgstr "No"
+
+#: table.src#STR_VALUE_ASC.string.text
+#, fuzzy
+msgid "Ascending"
+msgstr "Ascending"
+
+#: table.src#STR_VALUE_DESC.string.text
+#, fuzzy
+msgid "Descending"
+msgstr "Descending"
+
+#: table.src#STR_VALUE_NONE.string.text
+#, fuzzy
+msgid "<none>"
+msgstr "<none>"
+
+#: table.src#STR_TAB_FIELD_NAME.string.text
+#, fuzzy
+msgid "Field name"
+msgstr "Field name"
+
+#: table.src#STR_TAB_FIELD_COLUMN_NAME.string.text
+#, fuzzy
+msgid "Field Name"
+msgstr "Field Name"
+
+#: table.src#STR_TAB_FIELD_DATATYPE.string.text
+#, fuzzy
+msgid "Field ~type"
+msgstr "Field ~type"
+
+#: table.src#STR_TAB_FIELD_COLUMN_DATATYPE.string.text
+#, fuzzy
+msgid "Field Type"
+msgstr "Field Type"
+
+#: table.src#STR_TAB_FIELD_LENGTH.string.text
+#, fuzzy
+msgid "Field length"
+msgstr "Field length"
+
+#: table.src#STR_TAB_HELP_TEXT.string.text
+#, fuzzy
+msgid "Description"
+msgstr "Description"
+
+#: table.src#STR_COLUMN_DESCRIPTION.string.text
+#, fuzzy
+msgid "Column Description"
+msgstr "Column Description"
+
+#: table.src#STR_TAB_FIELD_NULLABLE.string.text
+#, fuzzy
+msgid "Input required"
+msgstr "Input required"
+
+#: table.src#STR_FIELD_AUTOINCREMENT.string.text
+#, fuzzy
+msgid "~AutoValue"
+msgstr "~AutoValue"
+
+#: table.src#STR_TAB_PROPERTIES.string.text
+#, fuzzy
+msgid "Field Properties"
+msgstr "Field Properties"
+
+#: table.src#STR_TABPAGE_GENERAL.string.text
+#, fuzzy
+msgid "General"
+msgstr "General"
+
+#: table.src#STR_TAB_TABLE_DESCRIPTION.string.text
+#, fuzzy
+msgid "Description:"
+msgstr "Description:"
+
+#: table.src#STR_TAB_TABLE_PROPERTIES.string.text
+#, fuzzy
+msgid "Table properties"
+msgstr "Table properties"
+
+#: table.src#ERR_INVALID_LISTBOX_ENTRY.errorbox.text
+#, fuzzy
+msgid "The text you entered is not a list element. "
+msgstr "The text that you entered is not a list element. "
+
+#: table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_INSERTROWS.menuitem.text
+#, fuzzy
+msgid "Insert Rows"
+msgstr "Insert Rows"
+
+#: table.src#RID_TABLEDESIGNROWPOPUPMENU.SID_TABLEDESIGN_TABED_PRIMARYKEY.menuitem.text
+#, fuzzy
+msgid "Primary Key"
+msgstr "Primary Key"
+
+#: table.src#STR_TABED_UNDO_CELLMODIFIED.string.text
+#, fuzzy
+msgid "Modify cell"
+msgstr "Modify cell"
+
+#: table.src#STR_TABED_UNDO_ROWDELETED.string.text
+#, fuzzy
+msgid "Delete row"
+msgstr "Delete row"
+
+#: table.src#STR_TABED_UNDO_TYPE_CHANGED.string.text
+#, fuzzy
+msgid "Modify field type"
+msgstr "Modify field type"
+
+#: table.src#STR_TABED_UNDO_ROWINSERTED.string.text
+#, fuzzy
+msgid "Insert row"
+msgstr "Insert row"
+
+#: table.src#STR_TABED_UNDO_NEWROWINSERTED.string.text
+#, fuzzy
+msgid "Insert new row"
+msgstr "Insert new row"
+
+#: table.src#STR_TABED_UNDO_PRIMKEY.string.text
+#, fuzzy
+msgctxt "table.src#STR_TABED_UNDO_PRIMKEY.string.text"
+msgid "Insert/remove primary key"
+msgstr "Insert/remove primary key"
+
+#: table.src#STR_DEFAULT_VALUE.string.text
+#, fuzzy
+msgid "~Default value"
+msgstr "~Default value"
+
+#: table.src#STR_FIELD_REQUIRED.string.text
+#, fuzzy
+msgid "~Entry required"
+msgstr "~Entry required"
+
+#: table.src#STR_TEXT_LENGTH.string.text
+#, fuzzy
+msgctxt "table.src#STR_TEXT_LENGTH.string.text"
+msgid "~Length"
+msgstr "~Length"
+
+#: table.src#STR_NUMERIC_TYPE.string.text
+#, fuzzy
+msgid "~Type"
+msgstr "~Type"
+
+#: table.src#STR_LENGTH.string.text
+#, fuzzy
+msgctxt "table.src#STR_LENGTH.string.text"
+msgid "~Length"
+msgstr "~Length"
+
+#: table.src#STR_SCALE.string.text
+#, fuzzy
+msgid "Decimal ~places"
+msgstr "Decimal ~places"
+
+#: table.src#STR_FORMAT.string.text
+#, fuzzy
+msgid "Format example"
+msgstr "Format example"
+
+#: table.src#STR_HELP_BOOL_DEFAULT.string.text
+#, fuzzy
+msgid ""
+"Select a value that is to appear in all new records as default.\n"
+"If the field is not to have a default value, select the empty string."
+msgstr ""
+"Select a value that is to appear in all new records as default.\n"
+"If the field is not to have a default value, select the empty string."
+
+#: table.src#STR_HELP_DEFAULT_VALUE.string.text
+#, fuzzy
+msgid ""
+"Enter a default value for this field.\n"
+"\n"
+"When you later enter data in the table, this string will be used in each new "
+"record for the field selected. It should, therefore, correspond to the cell "
+"format that needs to be entered below."
+msgstr ""
+"Enter a default value for this field.\n"
+"\n"
+"When you later enter data in the table, this string will be used in each new "
+"record for the field selected. It should, therefore, correspond to the cell "
+"format that needs to be entered below."
+
+#: table.src#STR_HELP_FIELD_REQUIRED.string.text
+#, fuzzy
+msgid ""
+"Activate this option if this field cannot contain NULL values, i.e. the user "
+"must always enter data."
+msgstr ""
+"Activate this option if this field cannot contain NULL values, i.e. the user "
+"must always enter data."
+
+#: table.src#STR_HELP_TEXT_LENGTH.string.text
+#, fuzzy
+msgid "Enter the maximum text length permitted."
+msgstr "Enter the maximum text length permitted."
+
+#: table.src#STR_HELP_NUMERIC_TYPE.string.text
+#, fuzzy
+msgid "Enter the number format."
+msgstr "Enter the number format."
+
+#: table.src#STR_HELP_LENGTH.string.text
+#, fuzzy
+msgid ""
+"Determine the length data can have in this field.\n"
+"\n"
+"If decimal fields, then the maximum length of the number to be entered, if "
+"binary fields, then the length of the data block.\n"
+"The value will be corrected accordingly when it exceeds the maximum for this "
+"database."
+msgstr ""
+"Determine the length data can have in this field.\n"
+"\n"
+"If decimal fields, then the maximum length of the number to be entered, if "
+"binary fields, then the length of the data block.\n"
+"The value will be corrected accordingly when it exceeds the maximum for this "
+"database."
+
+#: table.src#STR_HELP_SCALE.string.text
+#, fuzzy
+msgid "Specify the number of decimal places permitted in this field."
+msgstr "Specify the number of decimal places permitted in this field."
+
+#: table.src#STR_HELP_FORMAT_CODE.string.text
+#, fuzzy
+msgid ""
+"This is where you see how the data would be displayed in the current format "
+"(use the button on the right to modify the format)."
+msgstr ""
+"This is where you see how the data would be displayed in the current format "
+"(use the button on the right to modify the format)."
+
+#: table.src#STR_HELP_FORMAT_BUTTON.string.text
+#, fuzzy
+msgid "This is where you determine the output format of the data."
+msgstr "This is where you determine the output format of the data."
+
+#: table.src#STR_HELP_AUTOINCREMENT.string.text
+#, fuzzy
+msgid ""
+"Choose if this field should contain AutoIncrement values.\n"
+"\n"
+"You can not enter data in fields of this type. An intrinsic value will be "
+"assigned to each new record automatically (resulting from the increment of "
+"the previous record)."
+msgstr ""
+"Choose if this field should contain AutoIncrement values.\n"
+"\n"
+"You can not enter data in fields of this type. An intrinsic value will be "
+"assigned to each new record automatically (by incrementing the previous "
+"record)."
+
+#: table.src#PB_FORMAT.pushbutton.text
+#, fuzzy
+msgid "~..."
+msgstr "~..."
+
+#: table.src#STR_TABLEDESIGN_DUPLICATE_NAME.string.text
+#, fuzzy
+msgid ""
+"The table cannot be saved because column name \"$column$\" was assigned "
+"twice."
+msgstr ""
+"The table cannot be saved because column name \"$column$\" was assigned "
+"twice."
+
+#: table.src#STR_TBL_COLUMN_IS_KEYCOLUMN.string.text
+#, fuzzy
+msgid ""
+"The column \"$column$\" belongs to the primary key. If the column is "
+"deleted, the primary key will also be deleted. Do you really want to "
+"continue?"
+msgstr ""
+"The column \"$column$\" belongs to the primary key. If the column is "
+"deleted, the primary key will also be deleted. Do you really want to "
+"continue?"
+
+#: table.src#STR_TBL_COLUMN_IS_KEYCOLUMN_TITLE.string.text
+#, fuzzy
+msgid "Primary Key Affected"
+msgstr "Primary Key Affected"
+
+#: table.src#STR_COLUMN_NAME.string.text
+#, fuzzy
+msgid "Column"
+msgstr "Column"
+
+#: table.src#STR_QRY_CONTINUE.string.text
+#, fuzzy
+msgid "Continue anyway?"
+msgstr "Continue anyway?"
+
+#: table.src#STR_STAT_WARNING.string.text
+#, fuzzy
+msgid "Warning!"
+msgstr "Warning!"
+
+#: table.src#TABLE_DESIGN_SAVEMODIFIED.querybox.text
+#, fuzzy
+msgid ""
+"The table has been changed.\n"
+"Do you want to save the changes?"
+msgstr ""
+"The table has been changed.\n"
+"Do you want to save the changes?"
+
+#: table.src#TABLE_QUERY_CONNECTION_LOST.querybox.text
+#, fuzzy
+msgid ""
+"The connection to the database was lost! The table design can only be used "
+"with limited functionality without a connection.\n"
+"Reconnect?"
+msgstr ""
+"The connection to the database was lost! The table design can only be used "
+"with limited functionality without a connection.\n"
+"Reconnect?"
+
+#: table.src#STR_TABLEDESIGN_CONNECTION_MISSING.string.text
+#, fuzzy
+msgid ""
+"The table could not be saved due to problems connecting to the database."
+msgstr ""
+"The table could not be saved due to problems connecting to the database."
+
+#: table.src#STR_TABLEDESIGN_DATASOURCE_DELETED.string.text
+#, fuzzy
+msgid ""
+"The table filter could not be adjusted because the data source has been "
+"deleted."
+msgstr ""
+"The table filter could not be adjusted because the data source has been "
+"deleted."
+
+#: table.src#QUERY_SAVE_TABLE_EDIT_INDEXES.querybox.text
+#, fuzzy
+msgid ""
+"Before you can edit the indexes of a table, you have to save it.\n"
+"Do you want to save the changes now?"
+msgstr ""
+"Before you can edit the indexes of a table, it must be saved.\n"
+"Do you want to save the changes now?"
+
+#: table.src#STR_TABLEDESIGN_NO_PRIM_KEY_HEAD.string.text
+#, fuzzy
+msgid "No primary key"
+msgstr "No primary key"
+
+#: table.src#STR_TABLEDESIGN_NO_PRIM_KEY.string.text
+#, fuzzy
+msgid ""
+"A unique index or primary key is required for data record identification in "
+"this database.\n"
+"You can only enter data into this table when one of these two structural "
+"conditions has been met.\n"
+"\n"
+"Should a primary key be created now?"
+msgstr ""
+"A unique index or primary key is required for data record identification in "
+"this database.\n"
+"You can only enter data into this table when one of these two structural "
+"conditions has been met.\n"
+"\n"
+"Should a primary key be created now?"
+
+#: table.src#STR_TABLEDESIGN_TITLE.string.text
+#, fuzzy
+msgid " - %PRODUCTNAME Base: Table Design"
+msgstr " - %PRODUCTNAME Base: Table Design"
+
+#: table.src#STR_TABLEDESIGN_ALTER_ERROR.string.text
+#, fuzzy
+msgid ""
+"The column \"$column$\" could not be changed. Should the column instead be "
+"deleted and the new format appended?"
+msgstr ""
+"The column \"$column$\" could not be changed. Should the column instead be "
+"deleted and the new format appended?"
+
+#: table.src#STR_TABLEDESIGN_SAVE_ERROR.string.text
+#, fuzzy
+msgid "Error while saving the table design"
+msgstr "Error while saving the table design"
+
+#: table.src#STR_TABLEDESIGN_COULD_NOT_DROP_COL.string.text
+#, fuzzy
+msgid "The column $column$ could not be deleted."
+msgstr "The column $column$ could not be deleted."
+
+#: table.src#TABLE_DESIGN_ALL_ROWS_DELETED.querybox.text
+#, fuzzy
+msgid ""
+"You are trying to delete all the columns in the table. A table cannot exist "
+"without columns. Should the table be deleted from the database? If not, the "
+"table will remain unchanged."
+msgstr ""
+"You are trying to delete all the columns in the table. A table cannot exist "
+"without columns. Should the table be deleted from the database? If not, the "
+"table will remain unchanged."
+
+#: table.src#STR_AUTOINCREMENT_VALUE.string.text
+#, fuzzy
+msgid "A~uto-increment statement"
+msgstr "A~uto-increment statement"
+
+#: table.src#STR_HELP_AUTOINCREMENT_VALUE.string.text
+#, fuzzy
+msgid ""
+"Enter an SQL statement for the auto-increment field.\n"
+"\n"
+"This statement will be directly transferred to the database when the table "
+"is created."
+msgstr ""
+"Enter an SQL statement for the auto-increment field.\n"
+"\n"
+"This statement will be directly transferred to the database when the table "
+"is created."
+
+#: table.src#STR_NO_TYPE_INFO_AVAILABLE.string.text
+#, fuzzy
+msgid ""
+"No type information could be retrieved from the database.\n"
+"The table design mode is not available for this data source."
+msgstr ""
+"No type information could be retrieved from the database.\n"
+"The table design mode is not available for this data source."
+
+#: table.src#STR_CHANGE_COLUMN_NAME.string.text
+#, fuzzy
+msgid "change field name"
+msgstr "change field name"
+
+#: table.src#STR_CHANGE_COLUMN_TYPE.string.text
+#, fuzzy
+msgid "change field type"
+msgstr "change field type"
+
+#: table.src#STR_CHANGE_COLUMN_DESCRIPTION.string.text
+#, fuzzy
+msgid "change field description"
+msgstr "change field description"
+
+#: table.src#STR_CHANGE_COLUMN_ATTRIBUTE.string.text
+#, fuzzy
+msgid "change field attribute"
+msgstr "change field attribute"
+"X-Accelerator-Marker: ~\n"
+
+#: relation.src#STR_QUERY_REL_EDIT_RELATION.string.text
+#, fuzzy
+msgid ""
+"This relation already exists. Do you want to edit it or create a new one?"
+msgstr ""
+"This relation already exists. Do you want to edit it or create a new one?"
+
+#: relation.src#STR_QUERY_REL_EDIT.string.text
+#, fuzzy
+msgid "Edit..."
+msgstr "Edit..."
+
+#: relation.src#STR_QUERY_REL_CREATE.string.text
+#, fuzzy
+msgid "Create..."
+msgstr "Create..."
+
+#: relation.src#STR_RELATIONDESIGN.string.text
+#, fuzzy
+msgid " - %PRODUCTNAME Base: Relation design"
+msgstr " - %PRODUCTNAME Base: Relation design"
+
+#: relation.src#STR_RELATIONDESIGN_NOT_AVAILABLE.string.text
+#, fuzzy
+msgid "The database does not support relations."
+msgstr "The database does not support relations."
+
+#: relation.src#RELATION_DESIGN_SAVEMODIFIED.querybox.text
+#, fuzzy
+msgid ""
+"The relation design has been changed.\n"
+"Do you want to save the changes?"
+msgstr ""
+"The relation design has been changed.\n"
+"Do you want to save the changes?"
+
+#: relation.src#STR_QUERY_REL_DELETE_WINDOW.string.text
+#, fuzzy
+msgid ""
+"When you delete this table all corresponding relations will be deleted as "
+"well. Continue?"
+msgstr ""
+"When you delete this table all corresponding relations will be deleted as "
+"well. Continue?"
+
+#: relation.src#STR_QUERY_REL_COULD_NOT_CREATE.string.text
+#, fuzzy
+msgid ""
+"The database could not create the relation. May be foreign keys for this "
+"kind of table aren't supported.\n"
+"Please check your documentation of the database."
+msgstr ""
+"The database could not create the relation. Perhaps foreign keys for this "
+"kind of table aren't supported.\n"
+"Please check your documentation of the database."
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: ~\n"
+
+#: dbumiscres.src#RSC_CHARSETS.1.string.text
+#, fuzzy
+msgid "System"
+msgstr "System"
+
+#: dbumiscres.src#STR_ERROR_DURING_CREATION.string.text
+#, fuzzy
+msgid "Error during creation"
+msgstr "Error during creation"
+
+#: dbumiscres.src#STR_UNEXPECTED_ERROR.string.text
+#, fuzzy
+msgid "An unexpected error occurred. The operation could not be performed."
+msgstr "An unexpected error occurred. The operation could not be performed."
+
+#: dbumiscres.src#STR_COULDNOTOPEN_LINKEDDOC.string.text
+#, fuzzy
+msgid "The document \"$file$\" could not be opened."
+msgstr "The document \"$file$\" could not be opened."
+
+#: dbumiscres.src#STR_MISSING_TABLES_XDROP.string.text
+#, fuzzy
+msgid ""
+"The table cannot be deleted because the database connection does not support "
+"this."
+msgstr ""
+"The table cannot be deleted because the database connection does not support "
+"this."
+
+#: dbumiscres.src#STR_BUTTON_TEXT_ALL.string.text
+#, fuzzy
+msgctxt "dbumiscres.src#STR_BUTTON_TEXT_ALL.string.text"
+msgid "~All"
+msgstr "~All"
+
+#: dbumiscres.src#STR_UNDO_COLON.string.text
+#, fuzzy
+msgid "Undo:"
+msgstr "Undo:"
+
+#: dbumiscres.src#STR_REDO_COLON.string.text
+#, fuzzy
+msgid "Redo:"
+msgstr "Redo:"
+
+#: dbumiscres.src#STR_UNKNOWN_TYPE_FOUND.string.text
+#, fuzzy
+msgid "No corresponding column type could be found for column '#1'."
+msgstr "No corresponding column type could be found for column '#1'."
+
+#: dbumiscres.src#STR_FILE_DOES_NOT_EXIST.string.text
+#, fuzzy
+msgid "The file \"$file$\" does not exist."
+msgstr "The file \"$file$\" does not exist."
+
+#: dbumiscres.src#STR_WARNINGS_DURING_CONNECT.string.text
+#, fuzzy
+msgid ""
+"Warnings were encountered while connecting to the data source. Press "
+"\"$buttontext$\" to view them."
+msgstr ""
+"Warnings were encountered while connecting to the data source. Press "
+"\"$buttontext$\" to view them."
+
+#: dbumiscres.src#STR_NAMED_OBJECT_ALREADY_EXISTS.string.text
+#, fuzzy
+msgid ""
+"The name '$#$' already exists.\n"
+"Please enter another name."
+msgstr ""
+"The name '$#$' already exists.\n"
+"Please enter another name."
+
+#: dbumiscres.src#RID_STR_EXTENSION_NOT_PRESENT.string.text
+#, fuzzy
+msgid "The report, \"$file$\", requires the extension Oracle Report Builder."
+msgstr "The report, \"$file$\", requires the extension Sun Report Builder."
+
+#: WizardPages.src#STR_WIZ_COLUMN_SELECT_TITEL.string.text
+#, fuzzy
+msgid "Apply columns"
+msgstr "Apply columns"
+
+#: WizardPages.src#STR_WIZ_TYPE_SELECT_TITEL.string.text
+#, fuzzy
+msgid "Type formatting"
+msgstr "Type formatting"
+
+#: WizardPages.src#STR_WIZ_PKEY_ALREADY_DEFINED.string.text
+#, fuzzy
+msgid "The following fields have already been set as primary keys:\n"
+msgstr "The following fields have already been set as primary keys:\n"
+
+#: WizardPages.src#STR_WIZ_NAME_MATCHING_TITEL.string.text
+#, fuzzy
+msgid "Assign columns"
+msgstr "Assign columns"
+
+#: WizardPages.src#WIZ_RTFCOPYTABLE.PB_HELP.helpbutton.text
+#, fuzzy
+msgid "~Help"
+msgstr "~Help"
+
+#: WizardPages.src#WIZ_RTFCOPYTABLE.PB_CANCEL.cancelbutton.text
+#, fuzzy
+msgid "~Cancel"
+msgstr "~Cancel"
+
+#: WizardPages.src#WIZ_RTFCOPYTABLE.PB_PREV.pushbutton.text
+#, fuzzy
+msgid "< ~Back"
+msgstr "< ~Back"
+
+#: WizardPages.src#WIZ_RTFCOPYTABLE.PB_NEXT.pushbutton.text
+#, fuzzy
+msgid "~Next>"
+msgstr "~Next>"
+
+#: WizardPages.src#WIZ_RTFCOPYTABLE.PB_OK.okbutton.text
+#, fuzzy
+msgid "C~reate"
+msgstr "C~reate"
+
+#: WizardPages.src#WIZ_RTFCOPYTABLE.modaldialog.text
+#, fuzzy
+msgid "Copy RTF Table"
+msgstr "Copy RTF Table"
+
+#: WizardPages.src#TAB_WIZ_COLUMN_SELECT.FL_COLUMN_SELECT.fixedline.text
+#, fuzzy
+msgid "Existing columns"
+msgstr "Existing columns"
+
+#: WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_COLUMN_NAME.fixedline.text
+#, fuzzy
+msgid "Column information"
+msgstr "Column information"
+
+#: WizardPages.src#TAB_WIZ_TYPE_SELECT.FL_AUTO_TYPE.fixedline.text
+#, fuzzy
+msgid "Automatic type recognition"
+msgstr "Automatic type recognition"
+
+#: WizardPages.src#TAB_WIZ_TYPE_SELECT.FT_AUTO.fixedtext.text
+#, fuzzy
+msgid "Lines (ma~x)"
+msgstr "Lines (ma~x)"
+
+#: WizardPages.src#RID_SBA_RTF_PKEYPOPUP.SID_TABLEDESIGN_TABED_PRIMARYKEY.menuitem.text
+#, fuzzy
+msgid "Primary Key"
+msgstr "Primary Key"
+
+#: WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_LEFT.fixedtext.text
+#, fuzzy
+msgid "Source table: \n"
+msgstr "Source table: \n"
+
+#: WizardPages.src#TAB_WIZ_NAME_MATCHING.FT_TABLE_RIGHT.fixedtext.text
+#, fuzzy
+msgid "Destination table: \n"
+msgstr "Destination table: \n"
+
+#: WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.pushbutton.text
+#, fuzzy
+msgctxt "WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_ALL.pushbutton.text"
+msgid "~All"
+msgstr "~All"
+
+#: WizardPages.src#TAB_WIZ_NAME_MATCHING.PB_NONE.pushbutton.text
+#, fuzzy
+msgid "Non~e"
+msgstr "Non~e"
+
+#: WizardPages.src#TAB_WIZ_COPYTABLE.FT_TABLENAME.fixedtext.text
+#, fuzzy
+msgid "Ta~ble name"
+msgstr "Ta~ble name"
+
+#: WizardPages.src#TAB_WIZ_COPYTABLE.FL_OPTIONS.fixedline.text
+#, fuzzy
+msgid "Options"
+msgstr "Options"
+
+#: WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEFDATA.radiobutton.text
+#, fuzzy
+msgid "De~finition and data"
+msgstr "De~finition and data"
+
+#: WizardPages.src#TAB_WIZ_COPYTABLE.RB_DEF.radiobutton.text
+#, fuzzy
+msgid "Def~inition"
+msgstr "Def~inition"
+
+#: WizardPages.src#TAB_WIZ_COPYTABLE.RB_VIEW.radiobutton.text
+#, fuzzy
+msgid "A~s table view"
+msgstr "A~s table view"
+
+#: WizardPages.src#TAB_WIZ_COPYTABLE.RB_APPENDDATA.radiobutton.text
+#, fuzzy
+msgid "Append ~data"
+msgstr "Append ~data"
+
+#: WizardPages.src#TAB_WIZ_COPYTABLE.CB_USEHEADERLINE.checkbox.text
+#, fuzzy
+msgid "Use first ~line as column names"
+msgstr "Use first ~line as column names"
+
+#: WizardPages.src#TAB_WIZ_COPYTABLE.CB_PRIMARY_COLUMN.checkbox.text
+#, fuzzy
+msgid "Crea~te primary key"
+msgstr "Crea~te primary key"
+
+#: WizardPages.src#TAB_WIZ_COPYTABLE.FT_KEYNAME.fixedtext.text
+#, fuzzy
+msgid "Name"
+msgstr "Name"
+
+#: WizardPages.src#STR_WIZ_TABLE_COPY.string.text
+#, fuzzy
+msgctxt "WizardPages.src#STR_WIZ_TABLE_COPY.string.text"
+msgid "Copy table"
+msgstr "Copy table"
+
+#: WizardPages.src#STR_COPYTABLE_TITLE_COPY.string.text
+#, fuzzy
+msgctxt "WizardPages.src#STR_COPYTABLE_TITLE_COPY.string.text"
+msgid "Copy table"
+msgstr "Copy table"
+
+#: WizardPages.src#STR_INVALID_TABLE_NAME.string.text
+#, fuzzy
+msgid "This table name is not valid in the current database."
+msgstr "This table name is not valid in the current database."
+
+#: WizardPages.src#STR_SUGGEST_APPEND_TABLE_DATA.string.text
+#, fuzzy
+msgid ""
+"Choose the option 'Append data' on the first page to append data to an "
+"existing table."
+msgstr ""
+"Choose the option 'Append data' on the first page to append data to an "
+"existing table."
+
+#: WizardPages.src#STR_INVALID_TABLE_NAME_LENGTH.string.text
+#, fuzzy
+msgid "Please change the table name. It is too long."
+msgstr "Please change the table name. It is too long."
+"X-Accelerator-Marker: ~\n"
+
+#: sdbt_strings.src#STR_QUERY_AND_TABLE_DISTINCT_NAMES.string.text
+#, fuzzy
+msgid ""
+"You cannot give a table and a query the same name. Please use a name which "
+"is not yet used by a query or table."
+msgstr ""
+"You cannot give a table and a query the same name. Please use a name which "
+"is not yet used by a query or table."
+
+#: sdbt_strings.src#STR_BASENAME_TABLE.string.text
+#, fuzzy
+msgid "Table"
+msgstr "Table"
+
+#: sdbt_strings.src#STR_BASENAME_QUERY.string.text
+#, fuzzy
+msgid "Query"
+msgstr "Query"
+
+#: sdbt_strings.src#STR_CONN_WITHOUT_QUERIES_OR_TABLES.string.text
+#, fuzzy
+msgid "The given connection is no valid query and/or tables supplier."
+msgstr "The given connection is no valid query and/or tables supplier."
+
+#: sdbt_strings.src#STR_NO_TABLE_OBJECT.string.text
+#, fuzzy
+msgid "The given object is no table object."
+msgstr "The given object is no table object."
+
+#: sdbt_strings.src#STR_INVALID_COMPOSITION_TYPE.string.text
+#, fuzzy
+msgid ""
+"Invalid composition type - need a value from com.sun.star.sdb.tools."
+"CompositionType."
+msgstr ""
+"Invalid composition type - need a value from com.sun.star.sdb.tools."
+"CompositionType."
+
+#: sdbt_strings.src#STR_INVALID_COMMAND_TYPE.string.text
+#, fuzzy
+msgid ""
+"Invalid command type - only TABLE and QUERY from com.sun.star.sdb."
+"CommandType are allowed."
+msgstr ""
+"Invalid command type - only TABLE and QUERY from com.sun.star.sdb."
+"CommandType are allowed."
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: ~\n"
+
+#: strings.src#RID_STR_TRIED_OPEN_TABLE.string.text
+#, fuzzy
+msgid "Tried to open the table $name$."
+msgstr "Tried to open the table $name$."
+
+#: strings.src#RID_STR_CONNECTION_INVALID.string.text
+#, fuzzy
+msgid "No connection could be established."
+msgstr "No connection could be established."
+
+#: strings.src#RID_STR_TABLE_IS_FILTERED.string.text
+#, fuzzy
+msgid ""
+"The table $name$ already exists. It is not visible because it has been "
+"filtered out."
+msgstr ""
+"The table $name$ already exists. It is not visible because it has been "
+"filtered out."
+
+#: strings.src#RID_STR_NEED_CONFIG_WRITE_ACCESS.string.text
+#, fuzzy
+msgid ""
+"You have no write access to the configuration data the object is based on."
+msgstr ""
+"You have no write access to the configuration data the object is based on."
+
+#: strings.src#RID_STR_COULDNOTCONNECT_UNSPECIFIED.string.text
+#, fuzzy
+msgid ""
+"The connection to the external data source could not be established. An "
+"unknown error occurred. The driver is probably defective."
+msgstr ""
+"The connection to the external data source could not be established. An "
+"unknown error occurred. The driver is probably defective."
+
+#: strings.src#RID_STR_COULDNOTCONNECT_NODRIVER.string.text
+#, fuzzy
+msgid ""
+"The connection to the external data source could not be established. No SDBC "
+"driver was found for the given URL."
+msgstr ""
+"The connection to the external data source could not be established. No SDBC "
+"driver was found for the given URL."
+
+#: strings.src#RID_STR_COULDNOTLOAD_MANAGER.string.text
+#, fuzzy
+msgid ""
+"The connection to the external data source could not be established. The "
+"SDBC driver manager could not be loaded."
+msgstr ""
+"The connection to the external data source could not be established. The "
+"SDBC driver manager could not be loaded."
+
+#: strings.src#RID_STR_FORM.string.text
+#, fuzzy
+msgid "Form"
+msgstr "Form"
+
+#: strings.src#RID_STR_REPORT.string.text
+#, fuzzy
+msgid "Report"
+msgstr "Report"
+
+#: strings.src#RID_STR_DATASOURCE_NOT_STORED.string.text
+#, fuzzy
+msgid ""
+"The data source was not saved. Please use the interface XStorable to save "
+"the data source."
+msgstr ""
+"The data source was not saved. Please use the interface XStorable to save "
+"the data source."
+
+#: strings.src#RID_STR_ONLY_QUERY.string.text
+#, fuzzy
+msgid ""
+"The given command is not a SELECT statement.\n"
+"Only queries are allowed."
+msgstr ""
+"The given command is not a SELECT statement.\n"
+"Only queries are allowed."
+
+#: strings.src#RID_STR_NO_VALUE_CHANGED.string.text
+#, fuzzy
+msgid "No values were modified."
+msgstr "No values were modified."
+
+#: strings.src#RID_STR_NO_XROWUPDATE.string.text
+#, fuzzy
+msgid ""
+"Values could not be inserted. The XRowUpdate interface is not supported by "
+"ResultSet."
+msgstr ""
+"Values could not be inserted. The XRowUpdate interface is not supported by "
+"ResultSet."
+
+#: strings.src#RID_STR_NO_XRESULTSETUPDATE.string.text
+#, fuzzy
+msgid ""
+"Values could not be inserted. The XResultSetUpdate interface is not "
+"supported by ResultSet."
+msgstr ""
+"Values could not be inserted. The XResultSetUpdate interface is not "
+"supported by ResultSet."
+
+#: strings.src#RID_STR_NO_UPDATE_MISSING_CONDITION.string.text
+#, fuzzy
+msgid "Values could not be modified, due to a missing condition statement."
+msgstr "Values could not be modified, due to a missing condition statement."
+
+#: strings.src#RID_STR_NO_COLUMN_ADD.string.text
+#, fuzzy
+msgid "The adding of columns is not supported."
+msgstr "The adding of columns is not supported."
+
+#: strings.src#RID_STR_NO_COLUMN_DROP.string.text
+#, fuzzy
+msgid "The dropping of columns is not supported."
+msgstr "The dropping of columns is not supported."
+
+#: strings.src#RID_STR_NO_CONDITION_FOR_PK.string.text
+#, fuzzy
+msgid "The WHERE condition could not be created for the primary key."
+msgstr "The WHERE condition could not be created for the primary key."
+
+#: strings.src#RID_STR_COLUMN_UNKNOWN_PROP.string.text
+#, fuzzy
+msgid "The column does not support the property '%value'."
+msgstr "The column does not support the property '%value'."
+
+#: strings.src#RID_STR_COLUMN_NOT_SEARCHABLE.string.text
+#, fuzzy
+msgid "The column is not searchable!"
+msgstr "The column is not searchable!"
+
+#: strings.src#RID_STR_NOT_SEQUENCE_INT8.string.text
+#, fuzzy
+msgid "The value of the columns is not of the type Sequence<sal_Int8>."
+msgstr "The value of the columns is not of the type Sequence<sal_Int8>."
+
+#: strings.src#RID_STR_COLUMN_NOT_VALID.string.text
+#, fuzzy
+msgid "The column is not valid."
+msgstr "The column is not valid."
+
+#: strings.src#RID_STR_COLUMN_MUST_VISIBLE.string.text
+#, fuzzy
+msgid "The column '%name' must be visible as a column."
+msgstr "The column '%name' must be visible as a column."
+
+#: strings.src#RID_STR_NO_XQUERIESSUPPLIER.string.text
+#, fuzzy
+msgid "The interface XQueriesSupplier is not available."
+msgstr "The interface XQueriesSupplier is not available."
+
+#: strings.src#RID_STR_NOT_SUPPORTED_BY_DRIVER.string.text
+#, fuzzy
+msgid "The driver does not support this function."
+msgstr "The driver does not support this function."
+
+#: strings.src#RID_STR_NO_ABS_ZERO.string.text
+#, fuzzy
+msgid "An 'absolute(0)' call is not allowed."
+msgstr "An 'absolute(0)' call is not allowed."
+
+#: strings.src#RID_STR_NO_RELATIVE.string.text
+#, fuzzy
+msgid "Relative positioning is not allowed in this state."
+msgstr "Relative positioning is not allowed in this state."
+
+#: strings.src#RID_STR_NO_REFESH_AFTERLAST.string.text
+#, fuzzy
+msgid ""
+"A row cannot be refreshed when the ResultSet is positioned after the last "
+"row."
+msgstr ""
+"A row cannot be refreshed when the ResultSet is positioned after the last "
+"row."
+
+#: strings.src#RID_STR_NO_MOVETOINSERTROW_CALLED.string.text
+#, fuzzy
+msgid ""
+"A new row cannot be inserted when the ResultSet is not first moved to the "
+"insert row."
+msgstr ""
+"A new row cannot be inserted when the ResultSet is not first moved to the "
+"insert row."
+
+#: strings.src#RID_STR_NO_UPDATEROW.string.text
+#, fuzzy
+msgid "A row cannot be modified in this state"
+msgstr "A row cannot be modified in this state"
+
+#: strings.src#RID_STR_NO_DELETEROW.string.text
+#, fuzzy
+msgid "A row cannot be deleted in this state."
+msgstr "A row cannot be deleted in this state."
+
+#: strings.src#RID_STR_NO_TABLE_RENAME.string.text
+#, fuzzy
+msgid "The driver does not support table renaming."
+msgstr "The driver does not support table renaming."
+
+#: strings.src#RID_STR_NO_ALTER_COLUMN_DEF.string.text
+#, fuzzy
+msgid "The driver does not support the modification of column descriptions."
+msgstr "The driver does not support the modification of column descriptions."
+
+#: strings.src#RID_STR_COLUMN_ALTER_BY_NAME.string.text
+#, fuzzy
+msgid ""
+"The driver does not support the modification of column descriptions by "
+"changing the name."
+msgstr ""
+"The driver does not support the modification of column descriptions by "
+"changing the name."
+
+#: strings.src#RID_STR_COLUMN_ALTER_BY_INDEX.string.text
+#, fuzzy
+msgid ""
+"The driver does not support the modification of column descriptions by "
+"changing the index."
+msgstr ""
+"The driver does not support the modification of column descriptions by "
+"changing the index."
+
+#: strings.src#RID_STR_FILE_DOES_NOT_EXIST.string.text
+#, fuzzy
+msgid "The file \"$file$\" does not exist."
+msgstr "The file \"$file$\" does not exist."
+
+#: strings.src#RID_STR_TABLE_DOES_NOT_EXIST.string.text
+#, fuzzy
+msgid "There exists no table named \"$table$\"."
+msgstr "There exists no table named \"$table$\"."
+
+#: strings.src#RID_STR_QUERY_DOES_NOT_EXIST.string.text
+#, fuzzy
+msgid "There exists no query named \"$table$\"."
+msgstr "There exists no query named \"$table$\"."
+
+#: strings.src#RID_STR_CONFLICTING_NAMES.string.text
+#, fuzzy
+msgid ""
+"There are tables in the database whose names conflict with the names of "
+"existing queries. To make full use of all queries and tables, make sure they "
+"have distinct names."
+msgstr ""
+"There are tables in the database whose names conflict with the names of "
+"existing queries. To make full use of all queries and tables, ensure they "
+"have distinct names."
+
+#: strings.src#RID_STR_COMMAND_LEADING_TO_ERROR.string.text
+#, fuzzy
+msgid ""
+"The SQL command leading to this error is:\n"
+"\n"
+"$command$"
+msgstr ""
+"The SQL command leading to this error is:\n"
+"\n"
+"$command$"
+
+#: strings.src#RID_STR_STATEMENT_WITHOUT_RESULT_SET.string.text
+#, fuzzy
+msgid "The SQL command does not describe a result set."
+msgstr "The SQL command does not describe a result set."
+
+#: strings.src#RID_STR_NAME_MUST_NOT_BE_EMPTY.string.text
+#, fuzzy
+msgid "The name must not be empty."
+msgstr "The name must not be empty."
+
+#: strings.src#RID_STR_NO_NULL_OBJECTS_IN_CONTAINER.string.text
+#, fuzzy
+msgid "The container cannot contain NULL objects."
+msgstr "The container cannot contain NULL objects."
+
+#: strings.src#RID_STR_NAME_ALREADY_USED.string.text
+#, fuzzy
+msgid "There already is an object with the given name."
+msgstr "There already is an object with the given name."
+
+#: strings.src#RID_STR_OBJECT_CONTAINER_MISMATCH.string.text
+#, fuzzy
+msgid "This object cannot be part of this container."
+msgstr "This object cannot be part of this container."
+
+#: strings.src#RID_STR_OBJECT_ALREADY_CONTAINED.string.text
+#, fuzzy
+msgid "The object already is, with a different name, part of the container."
+msgstr "The object already is, with a different name, part of the container."
+
+#: strings.src#RID_STR_NAME_NOT_FOUND.string.text
+#, fuzzy
+msgid "Unable to find the document '$name$'."
+msgstr "Unable to find the document '$name$'."
+
+#: strings.src#RID_STR_ERROR_WHILE_SAVING.string.text
+#, fuzzy
+msgid ""
+"Could not save the document to $location$:\n"
+"$message$"
+msgstr ""
+"Could not save the document to $location$:\n"
+"$message$"
+
+#: strings.src#RID_NO_SUCH_DATA_SOURCE.string.text
+#, fuzzy
+msgid ""
+"Error accessing data source '$name$':\n"
+"$error$"
+msgstr ""
+"Error accessing data source '$name$':\n"
+"$error$"
+
+#: strings.src#RID_STR_NO_SUB_FOLDER.string.text
+#, fuzzy
+msgid "There exists no folder named \"$folder$\"."
+msgstr "There exists no folder named \"$folder$\"."
+
+#: strings.src#RID_STR_NO_DELETE_BEFORE_AFTER.string.text
+#, fuzzy
+msgid "Cannot delete the before-first or after-last row."
+msgstr "Cannot delete the before-first or after-last row."
+
+#: strings.src#RID_STR_NO_DELETE_INSERT_ROW.string.text
+#, fuzzy
+msgid "Cannot delete the insert-row."
+msgstr "Cannot delete the insert-row."
+
+#: strings.src#RID_STR_RESULT_IS_READONLY.string.text
+#, fuzzy
+msgid "Result set is read only."
+msgstr "Result set is read-only."
+
+#: strings.src#RID_STR_NO_DELETE_PRIVILEGE.string.text
+#, fuzzy
+msgid "DELETE privilege not available."
+msgstr "DELETE privilege not available."
+
+#: strings.src#RID_STR_ROW_ALREADY_DELETED.string.text
+#, fuzzy
+msgid "Current row is already deleted."
+msgstr "Current row is already deleted."
+
+#: strings.src#RID_STR_UPDATE_FAILED.string.text
+#, fuzzy
+msgid "Current row could not be updated."
+msgstr "Current row could not be updated."
+
+#: strings.src#RID_STR_NO_INSERT_PRIVILEGE.string.text
+#, fuzzy
+msgid "INSERT privilege not available."
+msgstr "INSERT privilege not available."
+
+#: strings.src#RID_STR_INTERNAL_ERROR.string.text
+#, fuzzy
+msgid "Internal error: no statement object provided by the database driver."
+msgstr "Internal error: no statement object provided by the database driver."
+
+#: strings.src#RID_STR_EXPRESSION1.string.text
+#, fuzzy
+msgid "Expression1"
+msgstr "Expression1"
+
+#: strings.src#RID_STR_NO_SQL_COMMAND.string.text
+#, fuzzy
+msgid "No SQL command was provided."
+msgstr "No SQL command was provided."
+
+#: strings.src#RID_STR_INVALID_INDEX.string.text
+#, fuzzy
+msgid "Invalid column index."
+msgstr "Invalid column index."
+
+#: strings.src#RID_STR_INVALID_CURSOR_STATE.string.text
+#, fuzzy
+msgid "Invalid cursor state."
+msgstr "Invalid cursor state."
+
+#: strings.src#RID_STR_CURSOR_BEFORE_OR_AFTER.string.text
+#, fuzzy
+msgid "The cursor points to before the first or after the last row."
+msgstr "The cursor points to before the first or after the last row."
+
+#: strings.src#RID_STR_NO_BOOKMARK_BEFORE_OR_AFTER.string.text
+#, fuzzy
+msgid "The rows before the first and after the last row don't have a bookmark."
+msgstr ""
+"The rows before the first and after the last row don't have a bookmark."
+
+#: strings.src#RID_STR_NO_BOOKMARK_DELETED.string.text
+#, fuzzy
+msgid "The current row is deleted, and thus doesn't have a bookmark."
+msgstr "The current row is deleted, and thus doesn't have a bookmark."
+
+#: strings.src#RID_STR_NO_EMBEDDING.string.text
+#, fuzzy
+msgid "Embedding of database documents is not supported."
+msgstr "Embedding of database documents is not supported."
+
+#: strings.src#RID_STR_CONNECTION_REQUEST.string.text
+#, fuzzy
+msgid "A connection for the following URL was requested \"$name$\"."
+msgstr "A connection for the following URL was requested \"$name$\"."
+
+#: strings.src#RID_STR_MISSING_EXTENSION.string.text
+#, fuzzy
+msgid "The extension is not installed."
+msgstr "The extension is not installed."

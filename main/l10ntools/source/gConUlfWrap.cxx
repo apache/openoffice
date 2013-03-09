@@ -75,7 +75,7 @@ void convert_ulf::setText(char *syyText, bool bIsEnUs)
 
 
   if (!bIsEnUs)
-    showError((char *)sText.c_str());
+    mcMemory.showError(sText);
 }
 
 
@@ -89,5 +89,5 @@ void convert_ulf::setValue(char *syyText)
   nL = sText.rfind("\"");
   sText.erase(nL);
 
-  mcMemory.setEnUsKey(miLineNo, msKey, std::string("LngText"), sText);
+//JIX  mcMemory.setEnUsKey(miLineNo, msKey, std::string("LngText"), sText);
 }

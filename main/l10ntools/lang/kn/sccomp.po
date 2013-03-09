@@ -1,0 +1,44 @@
+
+#: solver.src#RID_SOLVER_COMPONENT.string.text
+msgid "%PRODUCTNAME Linear Solver"
+msgstr "%PRODUCTNAME ರೇಖೀಯ ಪರಿಹಾರಕ"
+
+#: solver.src#RID_PROPERTY_NONNEGATIVE.string.text
+msgid "Assume variables as non-negative"
+msgstr "ಚರ ಮೌಲ್ಯಗಳು ಋಣಾತ್ಮಕವಾಗಿಲ್ಲ ಎಂದು ಊಹಿಸಿ"
+
+#: solver.src#RID_PROPERTY_INTEGER.string.text
+msgid "Assume variables as integer"
+msgstr "ವೇರಿಯಬಲ್‌ಗಳನ್ನು ಪೂರ್ಣಾಂಕವನ್ನಾಗಿ ಕಲ್ಪಿಸಿಕೊಳ್ಳಿ"
+
+#: solver.src#RID_PROPERTY_TIMEOUT.string.text
+msgid "Solving time limit (seconds)"
+msgstr "ಉತ್ತರ ಕಂಡುಹಿಡಿಯುವ ಸಮಯದ ಮಿತಿ(ಸೆಕೆಂಡುಗಳು)"
+
+#: solver.src#RID_PROPERTY_EPSILONLEVEL.string.text
+msgid "Epsilon level (0-3)"
+msgstr "ಎಪ್ಸಿಲಾನ್ ಮಿತಿ(೦-೩)"
+
+#: solver.src#RID_PROPERTY_LIMITBBDEPTH.string.text
+msgid "Limit branch-and-bound depth"
+msgstr "ಮಿತಿಯ ವಿಭಾಗ-ಹಾಗು-ಬಂಧಿತ ಆಳ"
+
+#: solver.src#RID_ERROR_NONLINEAR.string.text
+msgid "The model is not linear."
+msgstr "ಮಾದರಿಯು ನೇರವಾಗಿಲ್ಲ."
+
+#: solver.src#RID_ERROR_EPSILONLEVEL.string.text
+msgid "The epsilon level is invalid."
+msgstr "ಎಪ್ಸಿಲಾನ್ ಮಿತಿಯು ಅಮಾನ್ಯವಾದುದಾಗಿದೆ."
+
+#: solver.src#RID_ERROR_INFEASIBLE.string.text
+msgid "The model is infeasible. Check limiting conditions."
+msgstr "ಮಾದರಿಯು ಅಸಂಭವನೀಯವಾಗಿದೆ. ಮಿತಿಯ ಷರತ್ತುಗಳನ್ನು ನೋಡಿ."
+
+#: solver.src#RID_ERROR_UNBOUNDED.string.text
+msgid "The model is unbounded."
+msgstr "ಮಾದರಿಗೆ ಯಾವುದೆ ಮಿತಿ ಇಲ್ಲ."
+
+#: solver.src#RID_ERROR_TIMEOUT.string.text
+msgid "The time limit was reached."
+msgstr "ಸಮಯದ ಮಿತಿಯು ತೀರಿದೆ."

@@ -1,0 +1,5075 @@
+"X-Accelerator-Marker: ~\n"
+
+#: importwi.src#sHelpButton.string.text
+#, fuzzy
+msgid "~Help"
+msgstr "~Help"
+
+#: importwi.src#sCancelButton.string.text
+#, fuzzy
+msgid "~Cancel"
+msgstr "~Cancel"
+
+#: importwi.src#sBackButton.string.text
+#, fuzzy
+msgid "<< ~Back"
+msgstr "<< ~Back"
+
+#: importwi.src#sNextButton.string.text
+#, fuzzy
+msgid "Ne~xt >>"
+msgstr "Ne~xt >>"
+
+#: importwi.src#sBeginButton.string.text
+#, fuzzy
+msgid "~Convert"
+msgstr "~Convert"
+
+#: importwi.src#sCloseButton.string.text
+#, fuzzy
+msgid "~Close"
+msgstr "~Close"
+
+#: importwi.src#sWelcometextLabel1.string.text
+#, fuzzy
+msgid ""
+"This wizard converts documents in %PRODUCTNAME format and Microsoft Office "
+"documents to the new OpenDocument format."
+msgstr ""
+"This wizard converts documents in %PRODUCTNAME format and Microsoft Office "
+"documents to the new OpenDocument format."
+
+#: importwi.src#sWelcometextLabel2.string.text
+#, fuzzy
+msgid ""
+"Please note that when converting Microsoft documents any attached VBA macros "
+"lose their functionality."
+msgstr ""
+"Please note that when converting Microsoft documents any attached VBA macros "
+"lose their functionality."
+
+#: importwi.src#sWelcometextLabel3.string.text
+#, fuzzy
+msgid "Select the document type for conversion:"
+msgstr "Select the document type for conversion:"
+
+#: importwi.src#sMSTemplateCheckbox_1_.string.text
+#, fuzzy
+msgid "Word templates"
+msgstr "Word templates"
+
+#: importwi.src#sMSTemplateCheckbox_2_.string.text
+#, fuzzy
+msgid "Excel templates"
+msgstr "Excel templates"
+
+#: importwi.src#sMSTemplateCheckbox_3_.string.text
+#, fuzzy
+msgid "PowerPoint templates"
+msgstr "PowerPoint templates"
+
+#: importwi.src#sMSDocumentCheckbox_1_.string.text
+#, fuzzy
+msgid "Word documents"
+msgstr "Word documents"
+
+#: importwi.src#sMSDocumentCheckbox_2_.string.text
+#, fuzzy
+msgid "Excel documents"
+msgstr "Excel documents"
+
+#: importwi.src#sMSDocumentCheckbox_3_.string.text
+#, fuzzy
+msgid "PowerPoint documents"
+msgstr "PowerPoint documents"
+
+#: importwi.src#sSearchInSubDir.string.text
+#, fuzzy
+msgid "Including subdirectories"
+msgstr "Including subdirectories"
+
+#: importwi.src#sMSContainerName.string.text
+#, fuzzy
+msgid "Microsoft Office"
+msgstr "Microsoft Office"
+
+#: importwi.src#sSummaryHeader.string.text
+#, fuzzy
+msgid "Summary:"
+msgstr "Summary:"
+
+#: importwi.src#sTextImportLabel.string.text
+#, fuzzy
+msgid "Import from:"
+msgstr "Import from:"
+
+#: importwi.src#sTextExportLabel.string.text
+#, fuzzy
+msgid "Save to:"
+msgstr "Save to:"
+
+#: importwi.src#sGroupnameDefault.string.text
+#, fuzzy
+msgid "Imported_Templates"
+msgstr "Imported_Templates"
+
+#: importwi.src#sProgressDesc1.string.text
+#, fuzzy
+msgid "Progress: "
+msgstr "Progress: "
+
+#: importwi.src#sProgressOneDoc.string.text
+#, fuzzy
+msgid "Document"
+msgstr "Document"
+
+#: importwi.src#sProgressMoreDocs.string.text
+#, fuzzy
+msgid "Documents"
+msgstr "Documents"
+
+#: importwi.src#sProgressMoreTemplates.string.text
+#, fuzzy
+msgid "Templates"
+msgstr "Templates"
+
+#: importwi.src#sNoDirCreation.string.text
+#, fuzzy
+msgid "The '%1' directory cannot be created: "
+msgstr "The '%1' directory cannot be created: "
+
+#: importwi.src#sMsgDirNotThere.string.text
+#, fuzzy
+msgid "The '%1' directory does not exist."
+msgstr "The '%1' directory does not exist."
+
+#: importwi.src#sQueryfornewCreation.string.text
+#, fuzzy
+msgid "Do you want to create it now?"
+msgstr "Do you want to create it now?"
+
+#: importwi.src#sFileExists.string.text
+#, fuzzy
+msgid "The '<1>' file already exists.<CR>Do you want to overwrite it?"
+msgstr "The '<1>' file already exists.<CR>Do you want to overwrite it?"
+
+#: importwi.src#sMorePathsError3.string.text
+#, fuzzy
+msgid "Directories do not exist"
+msgstr "Directories do not exist"
+
+#: importwi.src#sOverwriteallFiles.string.text
+#, fuzzy
+msgid "Do you want to overwrite documents without being asked?"
+msgstr "Do you want to overwrite documents without being asked?"
+
+#: importwi.src#sreeditMacro.string.text
+#, fuzzy
+msgid "Document macro has to be revised."
+msgstr "Document macro must be revised."
+
+#: importwi.src#scouldNotsaveDocument.string.text
+#, fuzzy
+msgid "Document '<1>' could not be saved."
+msgstr "Document '<1>' could not be saved."
+
+#: importwi.src#scouldNotopenDocument.string.text
+#, fuzzy
+msgid "Document '<1>' could not be opened."
+msgstr "Document '<1>' could not be opened."
+
+#: importwi.src#sConvertError1.string.text
+#, fuzzy
+msgid "Do you really want to terminate conversion at this point?"
+msgstr "Do you really want to terminate conversion at this point?"
+
+#: importwi.src#sConvertError2.string.text
+#, fuzzy
+msgid "Cancel Wizard"
+msgstr "Cancel Wizard"
+
+#: importwi.src#sRTErrorDesc.string.text
+#, fuzzy
+msgid "An unexpected error has occurred in the wizard."
+msgstr "An unexpected error has occurred in the wizard."
+
+#: importwi.src#sRTErrorHeader.string.text
+#, fuzzy
+msgid "Error"
+msgstr "Error"
+
+#: importwi.src#sPathDialogMessage.string.text
+#, fuzzy
+msgid "Select a directory"
+msgstr "Select a directory"
+
+#: importwi.src#sDialogTitle.string.text
+#, fuzzy
+msgid "Document Converter"
+msgstr "Document Converter"
+
+#: importwi.src#sProgressPage1.string.text
+#, fuzzy
+msgid "Progress"
+msgstr "Progress"
+
+#: importwi.src#sProgressPage2.string.text
+#, fuzzy
+msgid "Retrieving the relevant documents:"
+msgstr "Retrieving the relevant documents:"
+
+#: importwi.src#sProgressPage3.string.text
+#, fuzzy
+msgid "Converting the documents"
+msgstr "Converting the documents"
+
+#: importwi.src#sProgressFound.string.text
+#, fuzzy
+msgid "Found:"
+msgstr "Found:"
+
+#: importwi.src#sProgressPage5.string.text
+#, fuzzy
+msgid "%1 found"
+msgstr "%1 found"
+
+#: importwi.src#sReady.string.text
+#, fuzzy
+msgid "Finished"
+msgstr "Finished"
+
+#: importwi.src#sXMLTemplateCheckbox_1_.string.text
+#, fuzzy
+msgid "Text templates"
+msgstr "Text templates"
+
+#: importwi.src#sXMLTemplateCheckbox_2_.string.text
+#, fuzzy
+msgid "Spreadsheet templates"
+msgstr "Spreadsheet templates"
+
+#: importwi.src#sXMLTemplateCheckbox_3_.string.text
+#, fuzzy
+msgid "Drawing/presentation templates"
+msgstr "Drawing/presentation templates"
+
+#: importwi.src#sXMLTemplateCheckbox_4_.string.text
+#, fuzzy
+msgctxt "importwi.src#sXMLTemplateCheckbox_4_.string.text"
+msgid "Master documents"
+msgstr "Master documents"
+
+#: importwi.src#sXMLDocumentCheckbox_1_.string.text
+#, fuzzy
+msgid "Text documents"
+msgstr "Text documents"
+
+#: importwi.src#sXMLDocumentCheckbox_2_.string.text
+#, fuzzy
+msgid "Spreadsheets"
+msgstr "Spreadsheets"
+
+#: importwi.src#sXMLDocumentCheckbox_3_.string.text
+#, fuzzy
+msgid "Drawing/presentation documents"
+msgstr "Drawing/presentation documents"
+
+#: importwi.src#sXMLDocumentCheckbox_4_.string.text
+#, fuzzy
+msgid "Master documents/formulas"
+msgstr "Master documents/formulae"
+
+#: importwi.src#sXMLHelperApplications_1.string.text
+#, fuzzy
+msgctxt "importwi.src#sXMLHelperApplications_1.string.text"
+msgid "Master documents"
+msgstr "Master documents"
+
+#: importwi.src#sXMLHelperApplications_2.string.text
+#, fuzzy
+msgid "Formulas"
+msgstr "Formulae"
+
+#: importwi.src#sSourceDocuments.string.text
+#, fuzzy
+msgid "Source documents"
+msgstr "Source documents"
+
+#: importwi.src#sTargetDocuments.string.text
+#, fuzzy
+msgid "Target documents"
+msgstr "Target documents"
+
+#: importwi.src#sCreateLogfile.string.text
+#, fuzzy
+msgid "Create log file"
+msgstr "Create log file"
+
+#: importwi.src#sLogfileSummary.string.text
+#, fuzzy
+msgid "<COUNT> documents converted"
+msgstr "<COUNT> documents converted"
+
+#: importwi.src#sLogfileHelpText.string.text
+#, fuzzy
+msgid "A log file will be created in your work directory"
+msgstr "A log file will be created in your working directory"
+
+#: importwi.src#sshowLogfile.string.text
+#, fuzzy
+msgid "Show log file"
+msgstr "Show log file"
+
+#: importwi.src#sSumInclusiveSubDir.string.text
+#, fuzzy
+msgid "All subdirectories will be taken into account"
+msgstr "All subdirectories will be taken into account"
+
+#: importwi.src#sSumSaveDokumente.string.text
+#, fuzzy
+msgid "These will be exported to the following directory:"
+msgstr "These will be exported to the following directory:"
+
+#: importwi.src#sSumSOTextDocuments.string.text
+#, fuzzy
+msgid ""
+"All %PRODUCTNAME text documents contained in the following directory will be "
+"imported:"
+msgstr ""
+"All %PRODUCTNAME text documents contained in the following directory will be "
+"imported:"
+
+#: importwi.src#sSumSOTableDocuments.string.text
+#, fuzzy
+msgid ""
+"All %PRODUCTNAME spreadsheets contained in the following directory will be "
+"imported:"
+msgstr ""
+"All %PRODUCTNAME spreadsheets contained in the following directory will be "
+"imported:"
+
+#: importwi.src#sSumSODrawDocuments.string.text
+#, fuzzy
+msgid ""
+"All %PRODUCTNAME drawing and presentation documents contained in the "
+"following directory will be imported:"
+msgstr ""
+"All %PRODUCTNAME drawing and presentation documents contained in the "
+"following directory will be imported:"
+
+#: importwi.src#sSumSOMathDocuments.string.text
+#, fuzzy
+msgid ""
+"All %PRODUCTNAME formula documents contained in the following directory will "
+"be imported:"
+msgstr ""
+"All %PRODUCTNAME formula documents contained in the following directory will "
+"be imported:"
+
+#: importwi.src#sSumSOTextTemplates.string.text
+#, fuzzy
+msgid ""
+"All %PRODUCTNAME text templates contained in the following directory will be "
+"imported:"
+msgstr ""
+"All %PRODUCTNAME text templates contained in the following directory will be "
+"imported:"
+
+#: importwi.src#sSumSOTableTemplates.string.text
+#, fuzzy
+msgid ""
+"All %PRODUCTNAME table templates contained in the following directory will "
+"be imported:"
+msgstr ""
+"All %PRODUCTNAME table templates contained in the following directory will "
+"be imported:"
+
+#: importwi.src#sSumSODrawTemplates.string.text
+#, fuzzy
+msgid ""
+"All %PRODUCTNAME drawing and presentation templates contained in the "
+"following directory will be imported:"
+msgstr ""
+"All %PRODUCTNAME drawing and presentation templates contained in the "
+"following directory will be imported:"
+
+#: importwi.src#sSumSOGlobalDocuments.string.text
+#, fuzzy
+msgid ""
+"All %PRODUCTNAME master documents contained in the following directory will "
+"be imported:"
+msgstr ""
+"All %PRODUCTNAME master documents contained in the following directory will "
+"be imported:"
+
+#: importwi.src#sSumMSTextDocuments.string.text
+#, fuzzy
+msgid ""
+"All Word documents contained in the following directory will be imported:"
+msgstr ""
+"All Word documents contained in the following directory will be imported:"
+
+#: importwi.src#sSumMSTableDocuments.string.text
+#, fuzzy
+msgid ""
+"All Excel documents contained in the following directory will be imported:"
+msgstr ""
+"All Excel documents contained in the following directory will be imported:"
+
+#: importwi.src#sSumMSDrawDocuments.string.text
+#, fuzzy
+msgid ""
+"All PowerPoint documents contained in the following directory will be "
+"imported:"
+msgstr ""
+"All PowerPoint documents contained in the following directory will be "
+"imported:"
+
+#: importwi.src#sSumMSTextTemplates.string.text
+#, fuzzy
+msgid ""
+"All Word templates contained in the following directory will be imported:"
+msgstr ""
+"All Word templates contained in the following directory will be imported:"
+
+#: importwi.src#sSumMSTableTemplates.string.text
+#, fuzzy
+msgid ""
+"All Excel templates contained in the following directory will be imported:"
+msgstr ""
+"All Excel templates contained in the following directory will be imported:"
+
+#: importwi.src#sSumMSDrawTemplates.string.text
+#, fuzzy
+msgid ""
+"All PowerPoint templates contained in the following directory will be "
+"imported:"
+msgstr ""
+"All PowerPoint templates contained in the following directory will be "
+"imported:"
+"X-Accelerator-Marker: ~\n"
+
+#: dbwizres.src#RID_COMMON_START___0.string.text
+#, fuzzy
+msgid ""
+"The directory '%1' could not be created.<BR>There may not be enough space "
+"left on your hard disk."
+msgstr ""
+"The directory '%1' could not be created.<BR>There may not be enough space "
+"left on your hard disc."
+
+#: dbwizres.src#RID_COMMON_START___1.string.text
+#, fuzzy
+msgid ""
+"The text document could not be created.<BR>Please check if the module "
+"'PRODUCTNAME Writer' is installed."
+msgstr ""
+"The text document could not be created.<BR>Please check if the module "
+"'PRODUCTNAME Writer' is installed."
+
+#: dbwizres.src#RID_COMMON_START___2.string.text
+#, fuzzy
+msgid ""
+"The spreadsheet could not be created.<BR>Please check if the module "
+"'PRODUCTNAME Calc' is installed."
+msgstr ""
+"The spreadsheet could not be created.<BR>Please check if the module "
+"'PRODUCTNAME Calc' is installed."
+
+#: dbwizres.src#RID_COMMON_START___3.string.text
+#, fuzzy
+msgid ""
+"The presentation could not be created.<BR>Please check if the module "
+"'PRODUCTNAME Impress' is installed."
+msgstr ""
+"The presentation could not be created.<BR>Please check if the module "
+"'PRODUCTNAME Impress' is installed."
+
+#: dbwizres.src#RID_COMMON_START___4.string.text
+#, fuzzy
+msgid ""
+"The drawing could not be created.<BR>Please check if the module 'PRODUCTNAME "
+"Draw' is installed."
+msgstr ""
+"The drawing could not be created.<BR>Please check if the module 'PRODUCTNAME "
+"Draw' is installed."
+
+#: dbwizres.src#RID_COMMON_START___5.string.text
+#, fuzzy
+msgid ""
+"The formula could not be created.<BR>Please check if the module 'PRODUCTNAME "
+"Math' is installed."
+msgstr ""
+"The formula could not be created.<BR>Please check if the module 'PRODUCTNAME "
+"Math' is installed."
+
+#: dbwizres.src#RID_COMMON_START___6.string.text
+#, fuzzy
+msgid ""
+"The files required could not be found.<BR>Please start the %PRODUCTNAME "
+"Setup and choose 'Repair'."
+msgstr ""
+"The files required could not be found.<BR>Please start the %PRODUCTNAME "
+"Setup and choose 'Repair'."
+
+#: dbwizres.src#RID_COMMON_START___7.string.text
+#, fuzzy
+msgid ""
+"The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the "
+"existing file?"
+msgstr ""
+"The file '<PATH>' already exists.<BR><BR>Would you like to overwrite the "
+"existing file?"
+
+#: dbwizres.src#RID_COMMON_START___8.string.text
+#, fuzzy
+msgid "Yes"
+msgstr "Yes"
+
+#: dbwizres.src#RID_COMMON_START___9.string.text
+#, fuzzy
+msgid "Yes to All"
+msgstr "Yes to All"
+
+#: dbwizres.src#RID_COMMON_START___10.string.text
+#, fuzzy
+msgid "No"
+msgstr "No"
+
+#: dbwizres.src#RID_COMMON_START___11.string.text
+#, fuzzy
+msgid "Cancel"
+msgstr "Cancel"
+
+#: dbwizres.src#RID_COMMON_START___12.string.text
+#, fuzzy
+msgid "~Finish"
+msgstr "~Finish"
+
+#: dbwizres.src#RID_COMMON_START___13.string.text
+#, fuzzy
+msgid "< ~Back"
+msgstr "< ~Back"
+
+#: dbwizres.src#RID_COMMON_START___14.string.text
+#, fuzzy
+msgid "~Next >"
+msgstr "~Next >"
+
+#: dbwizres.src#RID_COMMON_START___15.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_COMMON_START___15.string.text"
+msgid "~Help"
+msgstr "~Help"
+
+#: dbwizres.src#RID_COMMON_START___16.string.text
+#, fuzzy
+msgid "Steps"
+msgstr "Steps"
+
+#: dbwizres.src#RID_COMMON_START___17.string.text
+#, fuzzy
+msgid "Close"
+msgstr "Close"
+
+#: dbwizres.src#RID_COMMON_START___18.string.text
+#, fuzzy
+msgid "OK"
+msgstr "OK"
+
+#: dbwizres.src#RID_COMMON_START___19.string.text
+#, fuzzy
+msgid "The file already exists. Do you want to overwrite it?"
+msgstr "The file already exists. Do you want to overwrite it?"
+
+#: dbwizres.src#RID_COMMON_START___20.string.text
+#, fuzzy
+msgid "Template created via <wizard_name> on <current_date>."
+msgstr "Template created via <wizard_name> on <current_date>."
+
+#: dbwizres.src#RID_COMMON_START___21.string.text
+#, fuzzy
+msgid ""
+"The wizard could not be run, because important files were not found.\n"
+"Under 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to "
+"reset the paths to the original default settings.\n"
+"Then run the wizard again."
+msgstr ""
+"The wizard could not be run, because important files were not found.\n"
+"Under 'Tools - Options - %PRODUCTNAME - Paths' click the 'Default' button to "
+"reset the paths to the original default settings.\n"
+"Then run the wizard again."
+
+#: dbwizres.src#RID_DB_COMMON_START___0.string.text
+#, fuzzy
+msgid "C~reate"
+msgstr "C~reate"
+
+#: dbwizres.src#RID_DB_COMMON_START___1.string.text
+#, fuzzy
+msgid "~Cancel"
+msgstr "~Cancel"
+
+#: dbwizres.src#RID_DB_COMMON_START___2.string.text
+#, fuzzy
+msgid "<< ~Back"
+msgstr "<< ~Back"
+
+#: dbwizres.src#RID_DB_COMMON_START___3.string.text
+#, fuzzy
+msgid "~Next >>"
+msgstr "~Next >>"
+
+#: dbwizres.src#RID_DB_COMMON_START___4.string.text
+#, fuzzy
+msgid "~Database"
+msgstr "~Database"
+
+#: dbwizres.src#RID_DB_COMMON_START___5.string.text
+#, fuzzy
+msgid "~Table name"
+msgstr "~Table name"
+
+#: dbwizres.src#RID_DB_COMMON_START___6.string.text
+#, fuzzy
+msgid ""
+"An error occurred while running the wizard. The wizard will be terminated."
+msgstr ""
+"An error occurred while running the wizard. The wizard will be terminated."
+
+#: dbwizres.src#RID_DB_COMMON_START___14.string.text
+#, fuzzy
+msgid "No connection to the database could be established."
+msgstr "No connection to the database could be established."
+
+#: dbwizres.src#RID_DB_COMMON_START___20.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_DB_COMMON_START___20.string.text"
+msgid "~Help"
+msgstr "~Help"
+
+#: dbwizres.src#RID_DB_COMMON_START___21.string.text
+#, fuzzy
+msgid "~Stop"
+msgstr "~Stop"
+
+#: dbwizres.src#RID_DB_COMMON_START___30.string.text
+#, fuzzy
+msgid "The document could not be saved."
+msgstr "The document could not be saved."
+
+#: dbwizres.src#RID_DB_COMMON_START___33.string.text
+#, fuzzy
+msgid "Exiting the wizard"
+msgstr "Exiting the wizard"
+
+#: dbwizres.src#RID_DB_COMMON_START___34.string.text
+#, fuzzy
+msgid "Connecting to data source..."
+msgstr "Connecting to data source..."
+
+#: dbwizres.src#RID_DB_COMMON_START___35.string.text
+#, fuzzy
+msgid "The connection to the data source could not be established."
+msgstr "The connection to the data source could not be established."
+
+#: dbwizres.src#RID_DB_COMMON_START___36.string.text
+#, fuzzy
+msgid "The file path entered is not valid."
+msgstr "The file path entered is not valid."
+
+#: dbwizres.src#RID_DB_COMMON_START___37.string.text
+#, fuzzy
+msgid "Please select a data source"
+msgstr "Please select a data source"
+
+#: dbwizres.src#RID_DB_COMMON_START___38.string.text
+#, fuzzy
+msgid "Please select a table or query"
+msgstr "Please select a table or query"
+
+#: dbwizres.src#RID_DB_COMMON_START___39.string.text
+#, fuzzy
+msgid "Add field"
+msgstr "Add field"
+
+#: dbwizres.src#RID_DB_COMMON_START___40.string.text
+#, fuzzy
+msgid "Remove field"
+msgstr "Remove field"
+
+#: dbwizres.src#RID_DB_COMMON_START___41.string.text
+#, fuzzy
+msgid "Add all fields"
+msgstr "Add all fields"
+
+#: dbwizres.src#RID_DB_COMMON_START___42.string.text
+#, fuzzy
+msgid "Remove all fields"
+msgstr "Remove all fields"
+
+#: dbwizres.src#RID_DB_COMMON_START___43.string.text
+#, fuzzy
+msgid "Move field up"
+msgstr "Move field up"
+
+#: dbwizres.src#RID_DB_COMMON_START___44.string.text
+#, fuzzy
+msgid "Move field down"
+msgstr "Move field down"
+
+#: dbwizres.src#RID_DB_COMMON_START___45.string.text
+#, fuzzy
+msgid "The field names from '%NAME' could not be retrieved."
+msgstr "The field names from '%NAME' could not be retrieved."
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___0.string.text
+#, fuzzy
+msgid "Form Wizard"
+msgstr "Form Wizard"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___1.string.text
+#, fuzzy
+msgid "Fields in ~the form"
+msgstr "Fields in ~the form"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___2.string.text
+#, fuzzy
+msgid ""
+"Binary fields are always listed and selectable from the left list.\n"
+"If possible, they are interpreted as images."
+msgstr ""
+"Binary fields are always listed and selectable from the left list.\n"
+"If possible, they are interpreted as images."
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___3.string.text
+#, fuzzy
+msgid ""
+"A subform is a form that is inserted in another form.\n"
+"Use subforms to show data from tables or queries with a one-to-many "
+"relationship."
+msgstr ""
+"A sub-form is a form that is inserted in another form.\n"
+"Use sub-forms to show data from tables or queries with a one-to-many "
+"relationship."
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___4.string.text
+#, fuzzy
+msgid "~Add Subform"
+msgstr "~Add Sub-form"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___5.string.text
+#, fuzzy
+msgid "~Subform based on existing relation"
+msgstr "~Sub-form based on existing relation"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___6.string.text
+#, fuzzy
+msgid "Tables or queries"
+msgstr "Tables or queries"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___7.string.text
+#, fuzzy
+msgid "Subform based on ~manual selection of fields"
+msgstr "Sub-form based on ~manual selection of fields"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___8.string.text
+#, fuzzy
+msgid "~Which relation do you want to add?"
+msgstr "~Which relation do you want to add?"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___9.string.text
+#, fuzzy
+msgid "Fields in the ~subform"
+msgstr "Fields in the ~sub-form"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___12.string.text
+#, fuzzy
+msgid "~Available fields"
+msgstr "~Available fields"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___13.string.text
+#, fuzzy
+msgid "Fields in form"
+msgstr "Fields in form"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___19.string.text
+#, fuzzy
+msgid ""
+"The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\n"
+"But joins may only be used once."
+msgstr ""
+"The join '<FIELDNAME1>' and '<FIELDNAME2>' has been selected twice.\n"
+"But joins may only be used once."
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___20.string.text
+#, fuzzy
+msgid "~First joined subform field"
+msgstr "~First joined sub-form field"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___21.string.text
+#, fuzzy
+msgid "~Second joined subform field"
+msgstr "~Second joined sub-form field"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___22.string.text
+#, fuzzy
+msgid "~Third joined subform field"
+msgstr "~Third joined sub-form field"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___23.string.text
+#, fuzzy
+msgid "~Fourth joined subform field"
+msgstr "~Fourth joined sub-form field"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___24.string.text
+#, fuzzy
+msgid "F~irst joined main form field"
+msgstr "F~irst joined main form field"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___25.string.text
+#, fuzzy
+msgid "S~econd joined main form field"
+msgstr "S~econd joined main form field"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___26.string.text
+#, fuzzy
+msgid "T~hird joined main form field"
+msgstr "T~hird joined main form field"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___27.string.text
+#, fuzzy
+msgid "F~ourth joined main form field"
+msgstr "F~ourth joined main form field"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___28.string.text
+#, fuzzy
+msgid "Field border"
+msgstr "Field border"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___29.string.text
+#, fuzzy
+msgid "No border"
+msgstr "No border"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___30.string.text
+#, fuzzy
+msgid "3D look"
+msgstr "3-D look"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___31.string.text
+#, fuzzy
+msgid "Flat"
+msgstr "Flat"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___32.string.text
+#, fuzzy
+msgid "Label placement"
+msgstr "Label placement"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___33.string.text
+#, fuzzy
+msgid "Align left"
+msgstr "Align left"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___34.string.text
+#, fuzzy
+msgid "Align right"
+msgstr "Align right"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___35.string.text
+#, fuzzy
+msgid "Arrangement of DB fields"
+msgstr "Arrangement of DB fields"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___36.string.text
+#, fuzzy
+msgid "Columnar - Labels Left"
+msgstr "Columnar - Labels Left"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___37.string.text
+#, fuzzy
+msgid "Columnar - Labels on Top"
+msgstr "Columnar - Labels on Top"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___38.string.text
+#, fuzzy
+msgid "In Blocks - Labels Left"
+msgstr "In Blocks - Labels Left"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___39.string.text
+#, fuzzy
+msgid "In Blocks - Labels Above"
+msgstr "In Blocks - Labels Above"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___40.string.text
+#, fuzzy
+msgid "As Data Sheet"
+msgstr "As Data Sheet"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___41.string.text
+#, fuzzy
+msgid "Arrangement of the main form"
+msgstr "Arrangement of the main form"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___42.string.text
+#, fuzzy
+msgid "Arrangement of the subform"
+msgstr "Arrangement of the sub-form"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___44.string.text
+#, fuzzy
+msgid "The form is to be ~used for entering new data only."
+msgstr "The form is to be ~used for entering new data only."
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___45.string.text
+#, fuzzy
+msgid "Existing data will not be displayed "
+msgstr "Existing data will not be displayed "
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___46.string.text
+#, fuzzy
+msgid "T~he form is to display all data"
+msgstr "T~he form is to display all data"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___47.string.text
+#, fuzzy
+msgid "Do not allow ~modification of existing data"
+msgstr "Do not allow ~modification of existing data"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___48.string.text
+#, fuzzy
+msgid "Do not allow ~deletion of existing data"
+msgstr "Do not allow ~deletion of existing data"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___49.string.text
+#, fuzzy
+msgid "Do not allow ~addition of new data"
+msgstr "Do not allow ~addition of new data"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___50.string.text
+#, fuzzy
+msgid "Name of ~the form"
+msgstr "Name of ~the form"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___51.string.text
+#, fuzzy
+msgid "How do you want to proceed after creating the form?"
+msgstr "How do you want to proceed after creating the form?"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___52.string.text
+#, fuzzy
+msgid "~Work with the form"
+msgstr "~Work with the form"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___53.string.text
+#, fuzzy
+msgid "~Modify the form"
+msgstr "~Modify the form"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___55.string.text
+#, fuzzy
+msgid "~Page Styles"
+msgstr "~Page Styles"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___80.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_DB_FORM_WIZARD_START___80.string.text"
+msgid "Field selection"
+msgstr "Field selection"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___81.string.text
+#, fuzzy
+msgid "Set up a subform"
+msgstr "Set up a sub-form"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___82.string.text
+#, fuzzy
+msgid "Add subform fields"
+msgstr "Add sub-form fields"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___83.string.text
+#, fuzzy
+msgid "Get joined fields"
+msgstr "Get joined fields"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___84.string.text
+#, fuzzy
+msgid "Arrange controls"
+msgstr "Arrange controls"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___85.string.text
+#, fuzzy
+msgid "Set data entry"
+msgstr "Set data entry"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___86.string.text
+#, fuzzy
+msgid "Apply styles"
+msgstr "Apply styles"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___87.string.text
+#, fuzzy
+msgid "Set name"
+msgstr "Set name"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___88.string.text
+#, fuzzy
+msgid "(Date)"
+msgstr "(Date)"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___89.string.text
+#, fuzzy
+msgid "(Time)"
+msgstr "(Time)"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___90.string.text
+#, fuzzy
+msgid "Select the fields of your form"
+msgstr "Select the fields of your form"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___91.string.text
+#, fuzzy
+msgid "Decide if you want to set up a subform"
+msgstr "Decide if you want to set up a sub-form"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___92.string.text
+#, fuzzy
+msgid "Select the fields of your subform"
+msgstr "Select the fields of your sub-form"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___93.string.text
+#, fuzzy
+msgid "Select the joins between your forms"
+msgstr "Select the joins between your forms"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___94.string.text
+#, fuzzy
+msgid "Arrange the controls on your form"
+msgstr "Arrange the controls on your form"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___95.string.text
+#, fuzzy
+msgid "Select the data entry mode"
+msgstr "Select the data entry mode"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___96.string.text
+#, fuzzy
+msgid "Apply the style of your form"
+msgstr "Apply the style of your form"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___97.string.text
+#, fuzzy
+msgid "Set the name of the form"
+msgstr "Set the name of the form"
+
+#: dbwizres.src#RID_DB_FORM_WIZARD_START___98.string.text
+#, fuzzy
+msgid ""
+"A form with the name '%FORMNAME' already exists.\n"
+"Choose another name."
+msgstr ""
+"A form with the name '%FORMNAME' already exists.\n"
+"Choose another name."
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___0.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_DB_QUERY_WIZARD_START___0.string.text"
+msgid "Query Wizard"
+msgstr "Query Wizard"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___1.string.text
+#, fuzzy
+msgid "Query"
+msgstr "Query"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___2.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_DB_QUERY_WIZARD_START___2.string.text"
+msgid "Query Wizard"
+msgstr "Query Wizard"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___3.string.text
+#, fuzzy
+msgid "~Tables"
+msgstr "~Tables"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___4.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_DB_QUERY_WIZARD_START___4.string.text"
+msgid "A~vailable fields"
+msgstr "A~vailable fields"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___5.string.text
+#, fuzzy
+msgid "Name ~of the query"
+msgstr "Name ~of the query"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___6.string.text
+#, fuzzy
+msgid "Display ~Query"
+msgstr "Display ~Query"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___7.string.text
+#, fuzzy
+msgid "~Modify Query"
+msgstr "~Modify Query"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___8.string.text
+#, fuzzy
+msgid "~How do you want to proceed after creating the query?"
+msgstr "~How do you want to proceed after creating the query?"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___9.string.text
+#, fuzzy
+msgid "Match ~all of the following"
+msgstr "Match ~all of the following"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___10.string.text
+#, fuzzy
+msgid "~Match any of the following"
+msgstr "~Match any of the following"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___11.string.text
+#, fuzzy
+msgid "~Detailed query (Shows all records of the query.)"
+msgstr "~Detailed query (Shows all records of the query.)"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___12.string.text
+#, fuzzy
+msgid "~Summary query (Shows only results of aggregate functions.)"
+msgstr "~Summary query (Shows only results of aggregate functions.)"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___16.string.text
+#, fuzzy
+msgid "Aggregate functions"
+msgstr "Aggregate functions"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___17.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_DB_QUERY_WIZARD_START___17.string.text"
+msgid "Fields"
+msgstr "Fields"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___18.string.text
+#, fuzzy
+msgid "~Group by"
+msgstr "~Group by"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___19.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_DB_QUERY_WIZARD_START___19.string.text"
+msgid "Field"
+msgstr "Field"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___20.string.text
+#, fuzzy
+msgid "Alias"
+msgstr "Alias"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___21.string.text
+#, fuzzy
+msgid "Table: "
+msgstr "Table: "
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___22.string.text
+#, fuzzy
+msgid "Query: "
+msgstr "Query: "
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___24.string.text
+#, fuzzy
+msgid "Condition"
+msgstr "Condition"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___25.string.text
+#, fuzzy
+msgid "Value"
+msgstr "Value"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___26.string.text
+#, fuzzy
+msgid "is equal to"
+msgstr "is equal to"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___27.string.text
+#, fuzzy
+msgid "is not equal to"
+msgstr "is not equal to"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___28.string.text
+#, fuzzy
+msgid "is smaller than"
+msgstr "is smaller than"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___29.string.text
+#, fuzzy
+msgid "is greater than"
+msgstr "is greater than"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___30.string.text
+#, fuzzy
+msgid "is equal or less than "
+msgstr "is equal or less than "
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___31.string.text
+#, fuzzy
+msgid "is equal or greater than"
+msgstr "is equal or greater than"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___32.string.text
+#, fuzzy
+msgid "like"
+msgstr "like"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___33.string.text
+#, fuzzy
+msgid "not like"
+msgstr "not like"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___34.string.text
+#, fuzzy
+msgid "is null"
+msgstr "is null"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___35.string.text
+#, fuzzy
+msgid "is not null"
+msgstr "is not null"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___36.string.text
+#, fuzzy
+msgid "true"
+msgstr "true"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___37.string.text
+#, fuzzy
+msgid "false"
+msgstr "false"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___38.string.text
+#, fuzzy
+msgid "and"
+msgstr "and"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___39.string.text
+#, fuzzy
+msgid "or"
+msgstr "or"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___40.string.text
+#, fuzzy
+msgid "get the sum of"
+msgstr "get the sum of"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___41.string.text
+#, fuzzy
+msgid "get the average of"
+msgstr "get the average of"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___42.string.text
+#, fuzzy
+msgid "get the minimum of"
+msgstr "get the minimum of"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___43.string.text
+#, fuzzy
+msgid "get the maximum of"
+msgstr "get the maximum of"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___44.string.text
+#, fuzzy
+msgid "get the sum of <FIELD>"
+msgstr "get the sum of <FIELD>"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___45.string.text
+#, fuzzy
+msgid "get the average of <FIELD>"
+msgstr "get the average of <FIELD>"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___46.string.text
+#, fuzzy
+msgid "get the minimum of <FIELD>"
+msgstr "get the minimum of <FIELD>"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___47.string.text
+#, fuzzy
+msgid "get the maximum of <FIELD>"
+msgstr "get the maximum of <FIELD>"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___48.string.text
+#, fuzzy
+msgid "(none)"
+msgstr "(none)"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___50.string.text
+#, fuzzy
+msgid "Fie~lds in the Query: "
+msgstr "Fie~lds in the Query: "
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___51.string.text
+#, fuzzy
+msgid "Sorting order: "
+msgstr "Sorting order: "
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___52.string.text
+#, fuzzy
+msgid "No sorting fields were assigned."
+msgstr "No sorting fields were assigned."
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___53.string.text
+#, fuzzy
+msgid "Search conditions: "
+msgstr "Search conditions: "
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___54.string.text
+#, fuzzy
+msgid "No conditions were assigned."
+msgstr "No conditions were assigned."
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___55.string.text
+#, fuzzy
+msgid "Aggregate functions: "
+msgstr "Aggregate functions: "
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___56.string.text
+#, fuzzy
+msgid "No aggregate functions were assigned."
+msgstr "No aggregate functions were assigned."
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___57.string.text
+#, fuzzy
+msgid "Grouped by: "
+msgstr "Grouped by: "
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___58.string.text
+#, fuzzy
+msgid "No Groups were assigned."
+msgstr "No Groups were assigned."
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___59.string.text
+#, fuzzy
+msgid "Grouping conditions: "
+msgstr "Grouping conditions: "
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___60.string.text
+#, fuzzy
+msgid "No grouping conditions were assigned."
+msgstr "No grouping conditions were assigned."
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___70.string.text
+#, fuzzy
+msgid "Select the fields (columns) for your query"
+msgstr "Select the fields (columns) for your query"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___71.string.text
+#, fuzzy
+msgid "Select the sorting order"
+msgstr "Select the sorting order"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___72.string.text
+#, fuzzy
+msgid "Select the search conditions"
+msgstr "Select the search conditions"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___73.string.text
+#, fuzzy
+msgid "Select the type of query"
+msgstr "Select the type of query"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___74.string.text
+#, fuzzy
+msgid "Select the groups"
+msgstr "Select the groups"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___75.string.text
+#, fuzzy
+msgid "Select the grouping conditions"
+msgstr "Select the grouping conditions"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___76.string.text
+#, fuzzy
+msgid "Assign aliases if desired"
+msgstr "Assign aliases if desired"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___77.string.text
+#, fuzzy
+msgid "Check the overview and decide how to proceed"
+msgstr "Check the overview and decide how to proceed"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___80.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_DB_QUERY_WIZARD_START___80.string.text"
+msgid "Field selection"
+msgstr "Field selection"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___81.string.text
+#, fuzzy
+msgid "Sorting order"
+msgstr "Sorting order"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___82.string.text
+#, fuzzy
+msgid "Search conditions"
+msgstr "Search conditions"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___83.string.text
+#, fuzzy
+msgid "Detail or summary"
+msgstr "Detail or summary"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___84.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_DB_QUERY_WIZARD_START___84.string.text"
+msgid "Grouping"
+msgstr "Grouping"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___85.string.text
+#, fuzzy
+msgid "Grouping conditions"
+msgstr "Grouping conditions"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___86.string.text
+#, fuzzy
+msgid "Aliases"
+msgstr "Aliases"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___87.string.text
+#, fuzzy
+msgid "Overview"
+msgstr "Overview"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___88.string.text
+#, fuzzy
+msgid ""
+"A field that has not been assigned an aggregate function must be used in a "
+"group."
+msgstr ""
+"A field that has not been assigned an aggregate function must be used in a "
+"group."
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___89.string.text
+#, fuzzy
+msgid ""
+"The condition '<FIELDNAME> <LOGICOPERATOR> <VALUE>' was chosen twice. Each "
+"condition can only be chosen once"
+msgstr ""
+"The condition '<FIELDNAME> <LOGICOPERATOR> <VALUE>' was chosen twice. Each "
+"condition can only be chosen once"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___90.string.text
+#, fuzzy
+msgid ""
+"The aggregate function <FUNCTION> has been assigned twice to the fieldname "
+"'<NUMERICFIELD>'."
+msgstr ""
+"The aggregate function <FUNCTION> has been assigned twice to the fieldname "
+"'<NUMERICFIELD>'."
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___91.string.text
+#, fuzzy
+msgid ", "
+msgstr ", "
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___92.string.text
+#, fuzzy
+msgid "<FIELDTITLE> (<FIELDNAME>)"
+msgstr "<FIELDTITLE> (<FIELDNAME>)"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___93.string.text
+#, fuzzy
+msgid "<FIELDNAME> (<SORTMODE>)"
+msgstr "<FIELDNAME> (<SORTMODE>)"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___94.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_DB_QUERY_WIZARD_START___94.string.text"
+msgid "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+msgstr "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___95.string.text
+#, fuzzy
+msgid "<CALCULATEDFUNCTION> <FIELDNAME>"
+msgstr "<CALCULATEDFUNCTION> <FIELDNAME>"
+
+#: dbwizres.src#RID_DB_QUERY_WIZARD_START___96.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_DB_QUERY_WIZARD_START___96.string.text"
+msgid "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+msgstr "<FIELDNAME> <LOGICOPERATOR> <VALUE>"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___0.string.text
+#, fuzzy
+msgid "Report Wizard"
+msgstr "Report Wizard"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___3.string.text
+#, fuzzy
+msgid "~Table"
+msgstr "~Table"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___4.string.text
+#, fuzzy
+msgid "Colu~mns"
+msgstr "Colu~mns"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___7.string.text
+#, fuzzy
+msgid "Report_"
+msgstr "Report_"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___8.string.text
+#, fuzzy
+msgid "- undefined -"
+msgstr "- undefined -"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___9.string.text
+#, fuzzy
+msgid "~Fields in report"
+msgstr "~Fields in report"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___11.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_DB_REPORT_WIZARD_START___11.string.text"
+msgid "Grouping"
+msgstr "Grouping"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___12.string.text
+#, fuzzy
+msgid "Sort options"
+msgstr "Sort options"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___13.string.text
+#, fuzzy
+msgid "Choose layout"
+msgstr "Choose layout"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___14.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_DB_REPORT_WIZARD_START___14.string.text"
+msgid "Create report"
+msgstr "Create report"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___15.string.text
+#, fuzzy
+msgid "Layout of data"
+msgstr "Layout of data"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___16.string.text
+#, fuzzy
+msgid "Layout of headers and footers"
+msgstr "Layout of headers and footers"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___19.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_DB_REPORT_WIZARD_START___19.string.text"
+msgid "Fields"
+msgstr "Fields"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___20.string.text
+#, fuzzy
+msgid "~Sort by"
+msgstr "~Sort by"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___21.string.text
+#, fuzzy
+msgid "T~hen by"
+msgstr "T~hen by"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___22.string.text
+#, fuzzy
+msgid "Orientation"
+msgstr "Orientation"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___23.string.text
+#, fuzzy
+msgid "Portrait"
+msgstr "Portrait"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___24.string.text
+#, fuzzy
+msgid "Landscape"
+msgstr "Landscape"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___28.string.text
+#, fuzzy
+msgid "Which fields do you want to have in your report?"
+msgstr "Which fields do you want to have in your report?"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___29.string.text
+#, fuzzy
+msgid "Do you want to add grouping levels?"
+msgstr "Do you want to add grouping levels?"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___30.string.text
+#, fuzzy
+msgid "According to which fields do you want to sort the data?"
+msgstr "Which fields do you want to sort the data by?"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___31.string.text
+#, fuzzy
+msgid "How do you want your report to look?"
+msgstr "How do you want your report to look?"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___32.string.text
+#, fuzzy
+msgid "Decide how you want to proceed"
+msgstr "Decide how you want to proceed"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___33.string.text
+#, fuzzy
+msgid "Title of report"
+msgstr "Title of report"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___34.string.text
+#, fuzzy
+msgid "Display report"
+msgstr "Display report"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___35.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_DB_REPORT_WIZARD_START___35.string.text"
+msgid "Create report"
+msgstr "Create report"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___36.string.text
+#, fuzzy
+msgid "Ascending"
+msgstr "Ascending"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___37.string.text
+#, fuzzy
+msgid "Descending"
+msgstr "Descending"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___40.string.text
+#, fuzzy
+msgid "~Dynamic report"
+msgstr "~Dynamic report"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___41.string.text
+#, fuzzy
+msgid "~Create report now"
+msgstr "~Create report now"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___42.string.text
+#, fuzzy
+msgid "~Modify report layout"
+msgstr "~Modify report layout"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___43.string.text
+#, fuzzy
+msgid "Static report"
+msgstr "Static report"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___44.string.text
+#, fuzzy
+msgid "Save as"
+msgstr "Save as"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___50.string.text
+#, fuzzy
+msgid "Groupings"
+msgstr "Groupings"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___51.string.text
+#, fuzzy
+msgid "Then b~y"
+msgstr "Then b~y"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___52.string.text
+#, fuzzy
+msgid "~Then by"
+msgstr "~Then by"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___53.string.text
+#, fuzzy
+msgid "Asc~ending"
+msgstr "Asc~ending"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___54.string.text
+#, fuzzy
+msgid "Ascend~ing"
+msgstr "Ascend~ing"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___55.string.text
+#, fuzzy
+msgid "Ascendin~g"
+msgstr "Ascendin~g"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___56.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_DB_REPORT_WIZARD_START___56.string.text"
+msgid "De~scending"
+msgstr "De~scending"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___57.string.text
+#, fuzzy
+msgid "Des~cending"
+msgstr "Des~cending"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___58.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_DB_REPORT_WIZARD_START___58.string.text"
+msgid "De~scending"
+msgstr "De~scending"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___60.string.text
+#, fuzzy
+msgid "Binary fields cannot be displayed in the report."
+msgstr "Binary fields cannot be displayed in the report."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___61.string.text
+#, fuzzy
+msgid "The table '<TABLENAME>' does not exist."
+msgstr "The table '<TABLENAME>' does not exist."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___62.string.text
+#, fuzzy
+msgid "Creating Report..."
+msgstr "Creating Report..."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___63.string.text
+#, fuzzy
+msgid "Number of records inserted: <COUNT>"
+msgstr "Number of records inserted: <COUNT>"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___64.string.text
+#, fuzzy
+msgid "The form '<REPORTFORM>' does not exist."
+msgstr "The form '<REPORTFORM>' does not exist."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___65.string.text
+#, fuzzy
+msgid ""
+"The query with the statement <BR>'<STATEMENT>' <BR> could not be run. <BR> "
+"Check your data source."
+msgstr ""
+"The query with the statement <BR>'<STATEMENT>' <BR> could not be run. <BR> "
+"Check your data source."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___66.string.text
+#, fuzzy
+msgid ""
+"The following hidden control in the form '<REPORTFORM>' could not be read: "
+"'<CONTROLNAME>'."
+msgstr ""
+"The following hidden control in the form '<REPORTFORM>' could not be read: "
+"'<CONTROLNAME>'."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___67.string.text
+#, fuzzy
+msgid "Importing data..."
+msgstr "Importing data..."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___68.string.text
+#, fuzzy
+msgid "Labeling fields"
+msgstr "Labelling fields"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___69.string.text
+#, fuzzy
+msgid "How do you want to label the fields?"
+msgstr "How do you want to label the fields?"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___70.string.text
+#, fuzzy
+msgid "Label"
+msgstr "Label"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___71.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_DB_REPORT_WIZARD_START___71.string.text"
+msgid "Field"
+msgstr "Field"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___72.string.text
+#, fuzzy
+msgid ""
+"An error occurred in the wizard.<BR>The template '%PATH' could be erroneous."
+"<BR>Either the required sections or tables do not exist or exist under the "
+"wrong name.<BR>See the Help for more detailed information.<BR>Please select "
+"another template."
+msgstr ""
+"An error occurred in the wizard.<BR>The template '%PATH' could be erroneous."
+"<BR>Either the required sections or tables do not exist or have the wrong "
+"name.<BR>See the Help for more detailed information.<BR>Please select "
+"another template."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___73.string.text
+#, fuzzy
+msgid "There is an invalid user field in a table."
+msgstr "There is an invalid user field in a table."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___74.string.text
+#, fuzzy
+msgid ""
+"The sort criterium '<FIELDNAME>' was chosen twice. Each criterium can only "
+"be chosen once."
+msgstr ""
+"The sort criterion '<FIELDNAME>' was chosen twice. Each criterion can only "
+"be chosen once."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___75.string.text
+#, fuzzy
+msgid ""
+"Note: The dummy text will be replaced by data from the database when the "
+"report is created."
+msgstr ""
+"Note: The dummy text will be replaced by data from the database when the "
+"report is created."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___76.string.text
+#, fuzzy
+msgid ""
+"A report '%REPORTNAME' already exists in the database. Please assign another "
+"name."
+msgstr ""
+"A report '%REPORTNAME' already exists in the database. Please assign another "
+"name."
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___78.string.text
+#, fuzzy
+msgid "How do you want to proceed after creating the report?"
+msgstr "How do you want to proceed after creating the report?"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___79.string.text
+#, fuzzy
+msgid "What kind of report do you want to create?"
+msgstr "What kind of report do you want to create?"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___80.string.text
+#, fuzzy
+msgid "Tabular"
+msgstr "Tabular"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___81.string.text
+#, fuzzy
+msgid "Columnar, single-column"
+msgstr "Columnar, single-column"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___82.string.text
+#, fuzzy
+msgid "Columnar, two columns"
+msgstr "Columnar, two columns"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___83.string.text
+#, fuzzy
+msgid "Columnar, three columns"
+msgstr "Columnar, three columns"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___84.string.text
+#, fuzzy
+msgid "In blocks, labels left"
+msgstr "In blocks, labels left"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___85.string.text
+#, fuzzy
+msgid "In blocks, labels above"
+msgstr "In blocks, labels above"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___86.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_DB_REPORT_WIZARD_START___86.string.text"
+msgid "Title:"
+msgstr "Title:"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___87.string.text
+#, fuzzy
+msgid "Author:"
+msgstr "Author:"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___88.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_DB_REPORT_WIZARD_START___88.string.text"
+msgid "Date:"
+msgstr "Date:"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___89.string.text
+#, fuzzy
+msgid "Page #page# of #count#"
+msgstr "Page #page# of #count#"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___90.string.text
+#, fuzzy
+msgid "Page number:"
+msgstr "Page number:"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___91.string.text
+#, fuzzy
+msgid "Page count:"
+msgstr "Page count:"
+
+#: dbwizres.src#RID_DB_REPORT_WIZARD_START___92.string.text
+#, fuzzy
+msgid "No valid report template was found."
+msgstr "No valid report template was found."
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___1.string.text
+#, fuzzy
+msgid "Table Wizard"
+msgstr "Table Wizard"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___2.string.text
+#, fuzzy
+msgid "Select fields"
+msgstr "Select fields"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___3.string.text
+#, fuzzy
+msgid "Set types and formats"
+msgstr "Set types and formats"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___4.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_DB_TABLE_WIZARD_START___4.string.text"
+msgid "Set primary key"
+msgstr "Set primary key"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___5.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_DB_TABLE_WIZARD_START___5.string.text"
+msgid "Create table"
+msgstr "Create table"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___8.string.text
+#, fuzzy
+msgid "Select fields for your table"
+msgstr "Select fields for your table"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___9.string.text
+#, fuzzy
+msgid "Set field types and formats"
+msgstr "Set field types and formats"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___10.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_DB_TABLE_WIZARD_START___10.string.text"
+msgid "Set primary key"
+msgstr "Set primary key"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___11.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_DB_TABLE_WIZARD_START___11.string.text"
+msgid "Create table"
+msgstr "Create table"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___14.string.text
+#, fuzzy
+msgid ""
+"This wizard helps you to create a table for your database. After selecting a "
+"table category and a sample table, choose the fields you want to include in "
+"your table. You can include fields from more than one sample table."
+msgstr ""
+"This wizard helps you to create a table for your database. After selecting a "
+"table category and a sample table, choose the fields you want to include in "
+"your table. You can include fields from more than one sample table."
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___15.string.text
+#, fuzzy
+msgid "Ca~tegory"
+msgstr "Ca~tegory"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___16.string.text
+#, fuzzy
+msgid "B~usiness"
+msgstr "B~usiness"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___17.string.text
+#, fuzzy
+msgid "P~ersonal"
+msgstr "P~ersonal"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___18.string.text
+#, fuzzy
+msgid "~Sample tables"
+msgstr "~Sample tables"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___19.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_DB_TABLE_WIZARD_START___19.string.text"
+msgid "A~vailable fields"
+msgstr "A~vailable fields"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___20.string.text
+#, fuzzy
+msgid "Field information"
+msgstr "Field information"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___21.string.text
+#, fuzzy
+msgid "+"
+msgstr "+"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___22.string.text
+#, fuzzy
+msgid "-"
+msgstr "-"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___23.string.text
+#, fuzzy
+msgid "Field name"
+msgstr "Field name"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___24.string.text
+#, fuzzy
+msgid "Field type"
+msgstr "Field type"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___25.string.text
+#, fuzzy
+msgid "~Selected fields"
+msgstr "~Selected fields"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___26.string.text
+#, fuzzy
+msgid ""
+"A primary key uniquely identifies each record in a database table. Primary "
+"keys ease the linking of information in separate tables, and it is "
+"recommended that you have a primary key in every table. Without a primary "
+"key, it will not be possible to enter data into this table."
+msgstr ""
+"A primary key uniquely identifies each record in a database table. Primary "
+"keys ease the linking of information in separate tables and it is "
+"recommended that you have a primary key in every table. Without a primary "
+"key, it will not be possible to enter data into this table."
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___27.string.text
+#, fuzzy
+msgid "~Create a primary key"
+msgstr "~Create a primary key"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___28.string.text
+#, fuzzy
+msgid "~Automatically add a primary key"
+msgstr "~Automatically add a primary key"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___29.string.text
+#, fuzzy
+msgid "~Use an existing field as a primary key"
+msgstr "~Use an existing field as a primary key"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___30.string.text
+#, fuzzy
+msgid "Define p~rimary key as a combination of several fields "
+msgstr "Define p~rimary key as a combination of several fields "
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___31.string.text
+#, fuzzy
+msgid "F~ieldname"
+msgstr "F~ieldname"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___32.string.text
+#, fuzzy
+msgid "~Primary key fields"
+msgstr "~Primary key fields"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___33.string.text
+#, fuzzy
+msgid "Auto ~value"
+msgstr "Auto ~value"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___34.string.text
+#, fuzzy
+msgid "What do you want to name your table?"
+msgstr "What do you want to name your table?"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___35.string.text
+#, fuzzy
+msgid ""
+"Congratulations. You have entered all the information needed to create your "
+"table."
+msgstr ""
+"Congratulations. You have entered all the information needed to create your "
+"table."
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___36.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_DB_TABLE_WIZARD_START___36.string.text"
+msgid "What do you want to do next?"
+msgstr "What do you want to do next?"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___37.string.text
+#, fuzzy
+msgid "Modify the table design"
+msgstr "Modify the table design"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___38.string.text
+#, fuzzy
+msgid "Insert data immediately"
+msgstr "Insert data immediately"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___39.string.text
+#, fuzzy
+msgid "C~reate a form based on this table"
+msgstr "C~reate a form based on this table"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___40.string.text
+#, fuzzy
+msgid "The table you have created could not be opened."
+msgstr "The table you have created could not be opened."
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___41.string.text
+#, fuzzy
+msgid ""
+"The table name '%TABLENAME' contains a character ('%SPECIALCHAR') that might "
+"not be supported by the database."
+msgstr ""
+"The table name '%TABLENAME' contains a character ('%SPECIALCHAR') that might "
+"not be supported by the database."
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___42.string.text
+#, fuzzy
+msgid ""
+"The field name '%FIELDNAME' contains a special character ('%SPECIALCHAR') "
+"that might not be supported by the database."
+msgstr ""
+"The field name '%FIELDNAME' contains a special character ('%SPECIALCHAR') "
+"that might not be supported by the database."
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___43.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_DB_TABLE_WIZARD_START___43.string.text"
+msgid "Field"
+msgstr "Field"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___44.string.text
+#, fuzzy
+msgid "MyTable"
+msgstr "MyTable"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___45.string.text
+#, fuzzy
+msgid "Add a Field"
+msgstr "Add a Field"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___46.string.text
+#, fuzzy
+msgid "Remove the selected Field"
+msgstr "Remove the selected Field"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___47.string.text
+#, fuzzy
+msgid ""
+"The field cannot be inserted because this would exceed the maximum number of "
+"%COUNT possible fields in the database table"
+msgstr ""
+"The field cannot be inserted because this would exceed the maximum number of "
+"%COUNT possible fields in the database table"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___48.string.text
+#, fuzzy
+msgid ""
+"The name '%TABLENAME' already exists.\n"
+"Please enter another name."
+msgstr ""
+"The name '%TABLENAME' already exists.\n"
+"Please enter another name."
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___49.string.text
+#, fuzzy
+msgid "Catalog of the table"
+msgstr "Catalogue of the table"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___50.string.text
+#, fuzzy
+msgid "Schema of the table"
+msgstr "Schema of the table"
+
+#: dbwizres.src#RID_DB_TABLE_WIZARD_START___51.string.text
+#, fuzzy
+msgid "The field '%FIELDNAME' already exists."
+msgstr "The field '%FIELDNAME' already exists."
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___1.string.text
+#, fuzzy
+msgid "Letter Wizard"
+msgstr "Letter Wizard"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___2.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___2.string.text"
+msgid "Label9"
+msgstr "Label9"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___3.string.text
+#, fuzzy
+msgid "~Business letter"
+msgstr "~Business letter"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___4.string.text
+#, fuzzy
+msgid "~Formal personal letter"
+msgstr "~Formal personal letter"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___5.string.text
+#, fuzzy
+msgid "~Personal letter"
+msgstr "~Personal letter"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___6.string.text
+#, fuzzy
+msgid "~Use letterhead paper with pre-printed elements"
+msgstr "~Use paper with pre-printed letterhead elements"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___7.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___7.string.text"
+msgid "~Logo"
+msgstr "~Logo"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___8.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___8.string.text"
+msgid "Return address"
+msgstr "Return address"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___9.string.text
+#, fuzzy
+msgid "~Include footer"
+msgstr "~Include footer"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___10.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___10.string.text"
+msgid "~Return address in envelope window"
+msgstr "~Return address in envelope window"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___11.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___11.string.text"
+msgid "~Logo"
+msgstr "~Logo"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___12.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___12.string.text"
+msgid "~Return address in envelope window"
+msgstr "~Return address in envelope window"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___13.string.text
+#, fuzzy
+msgid "Letter Signs"
+msgstr "Letter Signs"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___14.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___14.string.text"
+msgid "S~ubject line"
+msgstr "S~ubject line"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___15.string.text
+#, fuzzy
+msgid "Salu~tation"
+msgstr "Salu~tation"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___16.string.text
+#, fuzzy
+msgid "Fold ~marks"
+msgstr "Fold ~marks"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___17.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___17.string.text"
+msgid "~Complimentary close"
+msgstr "~Complimentary close"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___18.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___18.string.text"
+msgid "~Footer"
+msgstr "~Footer"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___19.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___19.string.text"
+msgid "~Use user data for return address"
+msgstr "~Use user data for return address"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___20.string.text
+#, fuzzy
+msgid "~New sender address:"
+msgstr "~New sender address:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___21.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___21.string.text"
+msgid "Use placeholders for ~recipient's address"
+msgstr "Use placeholders for ~recipient's address"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___22.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___22.string.text"
+msgid "Use address database for ~mail merge"
+msgstr "Use address database for ~mail merge"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___23.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___23.string.text"
+msgid "Include ~only on second and following pages"
+msgstr "Include ~only on second and following pages"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___24.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___24.string.text"
+msgid "~Include page number"
+msgstr "~Include page number"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___25.string.text
+#, fuzzy
+msgid "Letter Template"
+msgstr "Letter Template"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___26.string.text
+#, fuzzy
+msgid "Create a ~letter from this template"
+msgstr "Create a ~letter from this template"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___27.string.text
+#, fuzzy
+msgid "Make ~manual changes to this letter template"
+msgstr "Make ~manual changes to this letter template"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___28.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___28.string.text"
+msgid "Page design"
+msgstr "Page design"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___29.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___29.string.text"
+msgid "Page design"
+msgstr "Page design"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___30.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___30.string.text"
+msgid "Page design"
+msgstr "Page design"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___31.string.text
+#, fuzzy
+msgid ""
+"This wizard helps you to create a letter template. You can then use the "
+"template as the basis for writing letters as often as desired."
+msgstr ""
+"This wizard helps you to create a letter template. You can then use the "
+"template as the basis for writing letters as often as desired."
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___32.string.text
+#, fuzzy
+msgid "~Height:"
+msgstr "~Height:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___33.string.text
+#, fuzzy
+msgid "~Width:"
+msgstr "~Width:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___34.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___34.string.text"
+msgid "S~pacing to left margin:"
+msgstr "S~pacing to left margin:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___35.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___35.string.text"
+msgid "Spacing ~to top margin:"
+msgstr "Spacing ~to top margin:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___36.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___36.string.text"
+msgid "Height:"
+msgstr "Height:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___37.string.text
+#, fuzzy
+msgid "Width:"
+msgstr "Width:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___38.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___38.string.text"
+msgid "S~pacing to left margin:"
+msgstr "S~pacing to left margin:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___39.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___39.string.text"
+msgid "Spacing ~to top margin:"
+msgstr "Spacing ~to top margin:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___40.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___40.string.text"
+msgid "Height:"
+msgstr "Height:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___41.string.text
+#, fuzzy
+msgid "Use a typical letter format for this country:"
+msgstr "Use a typical letter format for this country:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___42.string.text
+#, fuzzy
+msgid "Sender's address"
+msgstr "Sender's address"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___43.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___43.string.text"
+msgid "Name:"
+msgstr "Name:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___44.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___44.string.text"
+msgid "Street:"
+msgstr "Street:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___45.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___45.string.text"
+msgid "ZIP code/State/City:"
+msgstr "Postcode/County/Post town:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___46.string.text
+#, fuzzy
+msgid "Recipient's address"
+msgstr "Recipient's address"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___47.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___47.string.text"
+msgid "Footer"
+msgstr "Footer"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___48.string.text
+#, fuzzy
+msgid ""
+"This wizard creates a letter template which enables you to create multiple "
+"letters with the same layout and settings."
+msgstr ""
+"This wizard creates a letter template which enables you to create multiple "
+"letters with the same layout and settings."
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___49.string.text
+#, fuzzy
+msgid ""
+"To create another new letter out of the template just navigate to the "
+"template location and double-click it."
+msgstr ""
+"To create another new letter using the template just navigate to the "
+"template location and double-click it."
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___50.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___50.string.text"
+msgid "Template name:"
+msgstr "Template name:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___51.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_LETTERWIZARDDIALOG_START___51.string.text"
+msgid "Location and file name:"
+msgstr "Location and file name:"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___52.string.text
+#, fuzzy
+msgid "How do you want to proceed?"
+msgstr "How do you want to proceed?"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___53.string.text
+#, fuzzy
+msgid "Please choose the type of letter and page design"
+msgstr "Please choose the type of letter and page design"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___54.string.text
+#, fuzzy
+msgid "Select the items to be printed"
+msgstr "Select the items to be printed"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___55.string.text
+#, fuzzy
+msgid "Specify items already on your letterhead paper"
+msgstr "Specify items already on your letterhead paper"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___56.string.text
+#, fuzzy
+msgid "Specify the sender and recipient information"
+msgstr "Specify the sender and recipient information"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___57.string.text
+#, fuzzy
+msgid "Fill in the information you would like in the footer"
+msgstr "Fill in the information you would like in the footer"
+
+#: dbwizres.src#RID_LETTERWIZARDDIALOG_START___58.string.text
+#, fuzzy
+msgid "Please specify last settings"
+msgstr "Please specify last settings"
+
+#: dbwizres.src#RID_LETTERWIZARDSALUTATION_START___1.string.text
+#, fuzzy
+msgid "To Whom it May Concern"
+msgstr "To Whom it May Concern"
+
+#: dbwizres.src#RID_LETTERWIZARDSALUTATION_START___2.string.text
+#, fuzzy
+msgid "Dear Sir or Madam"
+msgstr "Dear Sir or Madam"
+
+#: dbwizres.src#RID_LETTERWIZARDSALUTATION_START___3.string.text
+#, fuzzy
+msgid "Hello"
+msgstr "Hello"
+
+#: dbwizres.src#RID_LETTERWIZARDGREETING_START___1.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_LETTERWIZARDGREETING_START___1.string.text"
+msgid "Sincerely"
+msgstr "Sincerely"
+
+#: dbwizres.src#RID_LETTERWIZARDGREETING_START___2.string.text
+#, fuzzy
+msgid "Best regards"
+msgstr "Best regards"
+
+#: dbwizres.src#RID_LETTERWIZARDGREETING_START___3.string.text
+#, fuzzy
+msgid "Cheers"
+msgstr "Cheers"
+
+#: dbwizres.src#RID_LETTERWIZARDROADMAP_START___1.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_LETTERWIZARDROADMAP_START___1.string.text"
+msgid "Page design"
+msgstr "Page design"
+
+#: dbwizres.src#RID_LETTERWIZARDROADMAP_START___2.string.text
+#, fuzzy
+msgid "Letterhead layout"
+msgstr "Letterhead layout"
+
+#: dbwizres.src#RID_LETTERWIZARDROADMAP_START___3.string.text
+#, fuzzy
+msgid "Printed items"
+msgstr "Printed items"
+
+#: dbwizres.src#RID_LETTERWIZARDROADMAP_START___4.string.text
+#, fuzzy
+msgid "Recipient and sender"
+msgstr "Recipient and sender"
+
+#: dbwizres.src#RID_LETTERWIZARDROADMAP_START___5.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_LETTERWIZARDROADMAP_START___5.string.text"
+msgid "Footer"
+msgstr "Footer"
+
+#: dbwizres.src#RID_LETTERWIZARDROADMAP_START___6.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_LETTERWIZARDROADMAP_START___6.string.text"
+msgid "Name and location"
+msgstr "Name and location"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___1.string.text
+#, fuzzy
+msgid "Fax Wizard"
+msgstr "Fax Wizard"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___2.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___2.string.text"
+msgid "Label9"
+msgstr "Label9"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___3.string.text
+#, fuzzy
+msgid "~Business Fax"
+msgstr "~Business Fax"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___4.string.text
+#, fuzzy
+msgid "~Personal Fax"
+msgstr "~Personal Fax"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___5.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___5.string.text"
+msgid "~Logo"
+msgstr "~Logo"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___6.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___6.string.text"
+msgid "S~ubject line"
+msgstr "S~ubject line"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___7.string.text
+#, fuzzy
+msgid "S~alutation"
+msgstr "S~alutation"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___8.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___8.string.text"
+msgid "~Complimentary close"
+msgstr "~Complimentary close"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___9.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___9.string.text"
+msgid "~Footer"
+msgstr "~Footer"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___10.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___10.string.text"
+msgid "~Use user data for return address"
+msgstr "~Use user data for return address"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___11.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___11.string.text"
+msgid "~New return address"
+msgstr "~New return address"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___12.string.text
+#, fuzzy
+msgid "My Fax Template"
+msgstr "My Fax Template"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___13.string.text
+#, fuzzy
+msgid "Create a ~fax from this template"
+msgstr "Create a ~fax from this template"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___14.string.text
+#, fuzzy
+msgid "Make ~manual changes to this fax template"
+msgstr "Make ~manual changes to this fax template"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___15.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___15.string.text"
+msgid "Page design"
+msgstr "Page design"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___16.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___16.string.text"
+msgid "Page design"
+msgstr "Page design"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___17.string.text
+#, fuzzy
+msgid ""
+"This wizard helps you to create a fax template. The template can then be "
+"used to create a fax whenever needed."
+msgstr ""
+"This wizard helps you to create a fax template. The template can then be "
+"used to create a fax whenever needed."
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___18.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___18.string.text"
+msgid "Return address"
+msgstr "Return address"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___19.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___19.string.text"
+msgid "Name:"
+msgstr "Name:"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___20.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___20.string.text"
+msgid "Street:"
+msgstr "Street:"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___21.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___21.string.text"
+msgid "ZIP code/State/City:"
+msgstr "Postcode/County/Post town:"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___22.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___22.string.text"
+msgid "Footer"
+msgstr "Footer"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___23.string.text
+#, fuzzy
+msgid ""
+"This wizard creates a fax template which enables you to create multiple "
+"faxes with the same layout and settings."
+msgstr ""
+"This wizard creates a fax template which enables you to create multiple "
+"faxes with the same layout and settings."
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___24.string.text
+#, fuzzy
+msgid ""
+"To create another new fax out of the template, go to the location where you "
+"saved the template and double-click the file."
+msgstr ""
+"To create another new fax using the template, go to the location where you "
+"saved the template and double-click the file."
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___25.string.text
+#, fuzzy
+msgid "Template Name:"
+msgstr "Template Name:"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___26.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___26.string.text"
+msgid "Location and file name:"
+msgstr "Location and file name:"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___27.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___27.string.text"
+msgid "What do you want to do next?"
+msgstr "What do you want to do next?"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___28.string.text
+#, fuzzy
+msgid "Choose the type of fax and a page design"
+msgstr "Choose the type of fax and a page design"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___29.string.text
+#, fuzzy
+msgid "Select items to include in the fax template"
+msgstr "Select items to include in the fax template"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___30.string.text
+#, fuzzy
+msgid "Specify sender and recipient information"
+msgstr "Specify sender and recipient information"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___31.string.text
+#, fuzzy
+msgid "Enter text for the footer"
+msgstr "Enter text for the footer"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___32.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___32.string.text"
+msgid "Choose a name and save the template"
+msgstr "Choose a name and save the template"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___33.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___33.string.text"
+msgid "Include ~only on second and following pages"
+msgstr "Include ~only on second and following pages"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___34.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___34.string.text"
+msgid "~Include page number"
+msgstr "~Include page number"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___35.string.text
+#, fuzzy
+msgid "~Date"
+msgstr "~Date"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___36.string.text
+#, fuzzy
+msgid "~Type of message"
+msgstr "~Type of message"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___37.string.text
+#, fuzzy
+msgid "Fax Number:"
+msgstr "Fax Number:"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___38.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___38.string.text"
+msgid "Use placeholders for ~recipient's address"
+msgstr "Use placeholders for ~recipient's address"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___39.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___39.string.text"
+msgid "Use address database for ~mail merge"
+msgstr "Use address database for ~mail merge"
+
+#: dbwizres.src#RID_FAXWIZARDDIALOG_START___40.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_FAXWIZARDDIALOG_START___40.string.text"
+msgid "~New return address"
+msgstr "~New return address"
+
+#: dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START___1.string.text
+#, fuzzy
+msgid "Important Information!"
+msgstr "Important Information!"
+
+#: dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START___2.string.text
+#, fuzzy
+msgid "For your information"
+msgstr "For your information"
+
+#: dbwizres.src#RID_FAXWIZARDCOMMUNICATION_START___3.string.text
+#, fuzzy
+msgid "News!"
+msgstr "News!"
+
+#: dbwizres.src#RID_FAXWIZARDSALUTATION_START___1.string.text
+#, fuzzy
+msgid "To whom it may concern,"
+msgstr "To whom it may concern,"
+
+#: dbwizres.src#RID_FAXWIZARDSALUTATION_START___2.string.text
+#, fuzzy
+msgid "Dear Sir or Madam,"
+msgstr "Dear Sir or Madam,"
+
+#: dbwizres.src#RID_FAXWIZARDSALUTATION_START___3.string.text
+#, fuzzy
+msgid "Hello,"
+msgstr "Hello,"
+
+#: dbwizres.src#RID_FAXWIZARDSALUTATION_START___4.string.text
+#, fuzzy
+msgid "Hi,"
+msgstr "Hi,"
+
+#: dbwizres.src#RID_FAXWIZARDGREETING_START___1.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_FAXWIZARDGREETING_START___1.string.text"
+msgid "Sincerely"
+msgstr "Sincerely"
+
+#: dbwizres.src#RID_FAXWIZARDGREETING_START___2.string.text
+#, fuzzy
+msgid "Yours faithfully"
+msgstr "Yours faithfully"
+
+#: dbwizres.src#RID_FAXWIZARDGREETING_START___3.string.text
+#, fuzzy
+msgid "Regards"
+msgstr "Regards"
+
+#: dbwizres.src#RID_FAXWIZARDGREETING_START___4.string.text
+#, fuzzy
+msgid "Love"
+msgstr "Love"
+
+#: dbwizres.src#RID_FAXWIZARDROADMAP_START___1.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_FAXWIZARDROADMAP_START___1.string.text"
+msgid "Page design"
+msgstr "Page design"
+
+#: dbwizres.src#RID_FAXWIZARDROADMAP_START___2.string.text
+#, fuzzy
+msgid "Items to include"
+msgstr "Items to include"
+
+#: dbwizres.src#RID_FAXWIZARDROADMAP_START___3.string.text
+#, fuzzy
+msgid "Sender and Recipient"
+msgstr "Sender and Recipient"
+
+#: dbwizres.src#RID_FAXWIZARDROADMAP_START___4.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_FAXWIZARDROADMAP_START___4.string.text"
+msgid "Footer"
+msgstr "Footer"
+
+#: dbwizres.src#RID_FAXWIZARDROADMAP_START___5.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_FAXWIZARDROADMAP_START___5.string.text"
+msgid "Name and location"
+msgstr "Name and location"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__1.string.text
+#, fuzzy
+msgid "Web Wizard"
+msgstr "Web Wizard"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__2.string.text
+#, fuzzy
+msgid ""
+"This Web Wizard is to aid you in publishing documents on the Internet.\n"
+"\n"
+"It will convert the documents so that they can be viewed by a web browser. "
+"In addition, it will generate a Table of Contents page with links for easy "
+"access to the documents. The Web Wizard will also allow you to customize the "
+"design and layout of your web site.\n"
+"\n"
+"You will be able to keep the documents you have published on the web up-to-"
+"date and add or remove documents at any time."
+msgstr ""
+"This Web Wizard is to aid you in publishing documents on the Internet.\n"
+"\n"
+"It will convert the documents so that they can be viewed by a web browser. "
+"In addition, it will generate a Table of Contents page with links for easy "
+"access to the documents. The Web Wizard will also allow you to customise the "
+"design and layout of your web site.\n"
+"\n"
+"You will be able to keep the documents you have published on the web up-to-"
+"date and add or remove documents at any time."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__4.string.text
+#, fuzzy
+msgid "~Delete"
+msgstr "~Delete"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__5.string.text
+#, fuzzy
+msgid "Introduction"
+msgstr "Introduction"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__6.string.text
+#, fuzzy
+msgid "Select the documents you want to publish"
+msgstr "Select the documents you want to publish"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__8.string.text
+#, fuzzy
+msgid "Document information "
+msgstr "Document information "
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__9.string.text
+#, fuzzy
+msgid "~Title:"
+msgstr "~Title:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__10.string.text
+#, fuzzy
+msgid "~Summary: "
+msgstr "~Summary: "
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__11.string.text
+#, fuzzy
+msgid "Au~thor:"
+msgstr "Au~thor:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__12.string.text
+#, fuzzy
+msgid "~Export to file format:"
+msgstr "~Export to file format:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__13.string.text
+#, fuzzy
+msgid "Enter general information for your web site"
+msgstr "Enter general information for your web site"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__14.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_WEBWIZARDDIALOG_START__14.string.text"
+msgid "Title:"
+msgstr "Title:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__16.string.text
+#, fuzzy
+msgid "Description:"
+msgstr "Description:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__18.string.text
+#, fuzzy
+msgid "Created:"
+msgstr "Created:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__20.string.text
+#, fuzzy
+msgid "E-mail:"
+msgstr "E-mail:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__21.string.text
+#, fuzzy
+msgid "Copyright notice:"
+msgstr "Copyright notice:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__22.string.text
+#, fuzzy
+msgid "Modified:"
+msgstr "Modified:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__24.string.text
+#, fuzzy
+msgid "~Preview"
+msgstr "~Preview"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__25.string.text
+#, fuzzy
+msgid "Where do you want to publish your web site?"
+msgstr "Where do you want to publish your web site?"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__26.string.text
+#, fuzzy
+msgid "Publish the new web site:"
+msgstr "Publish the new web site:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__27.string.text
+#, fuzzy
+msgid "To a ~local folder"
+msgstr "To a ~local folder"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__28.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_WEBWIZARDDIALOG_START__28.string.text"
+msgid "..."
+msgstr "..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__29.string.text
+#, fuzzy
+msgid "To a ~web server via FTP"
+msgstr "To a ~web server via FTP"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__31.string.text
+#, fuzzy
+msgid "~Configure..."
+msgstr "~Configure..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__32.string.text
+#, fuzzy
+msgid "To a ZIP ~archive"
+msgstr "To a ZIP ~archive"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__33.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_WEBWIZARDDIALOG_START__33.string.text"
+msgid "..."
+msgstr "..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__34.string.text
+#, fuzzy
+msgid "~Save settings (recommended)"
+msgstr "~Save settings (recommended)"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__35.string.text
+#, fuzzy
+msgid "Save ~as:"
+msgstr "Save ~as:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__36.string.text
+#, fuzzy
+msgid "~Choose settings for the Web Wizard"
+msgstr "~Choose settings for the Web Wizard"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__37.string.text
+#, fuzzy
+msgid "Web site content "
+msgstr "Web site content "
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__38.string.text
+#, fuzzy
+msgid "~Add..."
+msgstr "~Add..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__39.string.text
+#, fuzzy
+msgid "Remo~ve"
+msgstr "Remo~ve"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__40.string.text
+#, fuzzy
+msgid "Choose a layout for the table of contents of your web site"
+msgstr "Choose a layout for the table of contents of your web site"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__41.string.text
+#, fuzzy
+msgid "Select a style for the table of contents page"
+msgstr "Select a style for the table of contents page"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__42.string.text
+#, fuzzy
+msgid "~Style:"
+msgstr "~Style:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__48.string.text
+#, fuzzy
+msgid "~Layouts: "
+msgstr "~Layouts: "
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__50.string.text
+#, fuzzy
+msgid "~Description"
+msgstr "~Description"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__51.string.text
+#, fuzzy
+msgid "~Author"
+msgstr "~Author"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__52.string.text
+#, fuzzy
+msgid "Cr~eation date"
+msgstr "Cr~eation date"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__53.string.text
+#, fuzzy
+msgid "~Last change date"
+msgstr "~Last change date"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__54.string.text
+#, fuzzy
+msgid "~File name"
+msgstr "~File name"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__55.string.text
+#, fuzzy
+msgid "File forma~t"
+msgstr "File forma~t"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__56.string.text
+#, fuzzy
+msgid "File format ~icon"
+msgstr "File format ~icon"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__57.string.text
+#, fuzzy
+msgid "Number ~of pages"
+msgstr "Number ~of pages"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__58.string.text
+#, fuzzy
+msgid "~Size in KB"
+msgstr "~Size in KB"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__59.string.text
+#, fuzzy
+msgid "Click 'Preview' to see a preview in your browser:"
+msgstr "Click 'Preview' to see a preview in your browser:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__60.string.text
+#, fuzzy
+msgid "Customize the selected layout"
+msgstr "Customise the selected layout"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__61.string.text
+#, fuzzy
+msgid ""
+"Include the following information for each document in the table of contents:"
+msgstr ""
+"Include the following information for each document in the table of contents:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__62.string.text
+#, fuzzy
+msgid "Optimize the layout for screen resolution:"
+msgstr "Optimise the layout for screen resolution:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__64.string.text
+#, fuzzy
+msgid "~640x480"
+msgstr "~640x480"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__65.string.text
+#, fuzzy
+msgid "~800x600"
+msgstr "~800x600"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__66.string.text
+#, fuzzy
+msgid "~1024x768"
+msgstr "~1024x768"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__70.string.text
+#, fuzzy
+msgid "Generating Your Web Site"
+msgstr "Generating Your Web Site"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__71.string.text
+#, fuzzy
+msgid "%START - %END/%TOTAL"
+msgstr "%START - %END/%TOTAL"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__72.string.text
+#, fuzzy
+msgid "myWebsite"
+msgstr "myWebsite"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__73.string.text
+#, fuzzy
+msgid "FTP target '%FILENAME' is a file."
+msgstr "FTP target '%FILENAME' is a file."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__74.string.text
+#, fuzzy
+msgid "The local target '%FILENAME' is a file."
+msgstr "The local target '%FILENAME' is a file."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__75.string.text
+#, fuzzy
+msgid ""
+"The ZIP target '%FILENAME' already exists. Do you want to overwrite the "
+"existing target? "
+msgstr ""
+"The ZIP target '%FILENAME' already exists. Do you want to overwrite it? "
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__76.string.text
+#, fuzzy
+msgid ""
+"The FTP target directory '%FILENAME' is not empty. Some files might be "
+"overwritten. Do you want to continue?"
+msgstr ""
+"The FTP target directory '%FILENAME' is not empty. Some files might be "
+"overwritten. Do you want to continue?"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__77.string.text
+#, fuzzy
+msgid ""
+"The local target directory '%FILENAME' is not empty. Some files might be "
+"overwritten. Do you want to continue?"
+msgstr ""
+"The local target directory '%FILENAME' is not empty. Some files might be "
+"overwritten. Do you want to continue?"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__78.string.text
+#, fuzzy
+msgid ""
+"Settings already exist under the given name. Do you want to overwrite the "
+"existing settings? "
+msgstr ""
+"Settings already exist under the given name. Do you want to overwrite the "
+"existing settings? "
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__79.string.text
+#, fuzzy
+msgid "Exporting documents..."
+msgstr "Exporting documents..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__80.string.text
+#, fuzzy
+msgid "Preparing export..."
+msgstr "Preparing export..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__81.string.text
+#, fuzzy
+msgid "Copying layout files..."
+msgstr "Copying layout files..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__82.string.text
+#, fuzzy
+msgid "Preparing table of contents generation..."
+msgstr "Preparing table of contents generation..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__83.string.text
+#, fuzzy
+msgid "Generating table of contents..."
+msgstr "Generating table of contents..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__84.string.text
+#, fuzzy
+msgid "Initializing..."
+msgstr "Initialising..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__86.string.text
+#, fuzzy
+msgid "Preparing to publish..."
+msgstr "Preparing to publish..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__87.string.text
+#, fuzzy
+msgid "Publishing to local directory..."
+msgstr "Publishing to local directory..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__88.string.text
+#, fuzzy
+msgid "Publishing to FTP destination..."
+msgstr "Publishing to FTP destination..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__89.string.text
+#, fuzzy
+msgid "Publishing to a ZIP archive..."
+msgstr "Publishing to a ZIP archive..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START___90.string.text
+#, fuzzy
+msgid "Finishing..."
+msgstr "Finishing..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START___94.string.text
+#, fuzzy
+msgid "Graphic files"
+msgstr "Graphic files"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START___95.string.text
+#, fuzzy
+msgid "All files"
+msgstr "All files"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START___96.string.text
+#, fuzzy
+msgid "~ZIP archive files"
+msgstr "~ZIP archive files"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START___98.string.text
+#, fuzzy
+msgid "Background images"
+msgstr "Background images"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START___99.string.text
+#, fuzzy
+msgid "Choose a background image: "
+msgstr "Choose a background image: "
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START___100.string.text
+#, fuzzy
+msgid "Icon sets"
+msgstr "Icon sets"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START___101.string.text
+#, fuzzy
+msgid "Choose an icon set:"
+msgstr "Choose an icon set:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__102.string.text
+#, fuzzy
+msgid "Other..."
+msgstr "Other..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__103.string.text
+#, fuzzy
+msgid "None"
+msgstr "None"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__104.string.text
+#, fuzzy
+msgid "Your web site was created successfully into: %FILENAME"
+msgstr "Your web site was created successfully in: %FILENAME"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__105.string.text
+#, fuzzy
+msgid "One or more errors occurred when generating the web site."
+msgstr "One or more errors occurred when generating the web site."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__106.string.text
+#, fuzzy
+msgid "An error occurred while generating the table of contents page(s). "
+msgstr "An error occurred while generating the table of contents page(s). "
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__107.string.text
+#, fuzzy
+msgid "An error occurred while copying the layout files. "
+msgstr "An error occurred while copying the layout files. "
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__108.string.text
+#, fuzzy
+msgid ""
+"An error occurred while gathering document information for '%FILENAME'. "
+msgstr ""
+"An error occurred while gathering document information for '%FILENAME'. "
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__109.string.text
+#, fuzzy
+msgid "An error occurred while exporting the document '%FILENAME'."
+msgstr "An error occurred while exporting the document '%FILENAME'."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__110.string.text
+#, fuzzy
+msgid "An error occurred while creating a directory for exporting '%FILENAME'."
+msgstr ""
+"An error occurred while creating a directory for exporting '%FILENAME'."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__111.string.text
+#, fuzzy
+msgid "A security error occurred while exporting the document '%FILENAME'."
+msgstr "A security error occurred while exporting the document '%FILENAME'."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__112.string.text
+#, fuzzy
+msgid ""
+"An input/output error occurred while exporting the document '%FILENAME'."
+msgstr ""
+"An input/output error occurred while exporting the document '%FILENAME'."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__113.string.text
+#, fuzzy
+msgid "An error occurred while copying media files to the temporary directory."
+msgstr ""
+"An error occurred while copying media files to the temporary directory."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__114.string.text
+#, fuzzy
+msgid "The web site could not be copied to the following destination: %URL"
+msgstr "The web site could not be copied to the following destination: %URL"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__115.string.text
+#, fuzzy
+msgid "An unexpected error occurred: %ERROR"
+msgstr "An unexpected error occurred: %ERROR"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__116.string.text
+#, fuzzy
+msgid "An unexpected error occurred while validating the file: '%FILENAME'"
+msgstr "An unexpected error occurred while validating the file: '%FILENAME'"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__117.string.text
+#, fuzzy
+msgid "%FILENAME' is a folder."
+msgstr "%FILENAME' is a folder."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__118.string.text
+#, fuzzy
+msgid "Loading Web Wizard Settings..."
+msgstr "Loading Web Wizard Settings..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__119.string.text
+#, fuzzy
+msgid "An unexpected error occurred."
+msgstr "An unexpected error occurred."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__120.string.text
+#, fuzzy
+msgid "Validating documents..."
+msgstr "Validating documents..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__121.string.text
+#, fuzzy
+msgid "My Archive"
+msgstr "My Archive"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__122.string.text
+#, fuzzy
+msgid "Introduction "
+msgstr "Introduction "
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__123.string.text
+#, fuzzy
+msgid "Documents "
+msgstr "Documents "
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__124.string.text
+#, fuzzy
+msgid "Main layout"
+msgstr "Main layout"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__125.string.text
+#, fuzzy
+msgid "Layout details"
+msgstr "Layout details"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__126.string.text
+#, fuzzy
+msgid "Style"
+msgstr "Style"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__127.string.text
+#, fuzzy
+msgid "Web site information"
+msgstr "Web site information"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__128.string.text
+#, fuzzy
+msgid "Preview"
+msgstr "Preview"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__130.string.text
+#, fuzzy
+msgid ""
+"The selected settings will be deleted.\n"
+"\n"
+"Do you really want to delete these settings? "
+msgstr ""
+"The selected settings will be deleted.\n"
+"\n"
+"Do you really want to delete these settings? "
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__131.string.text
+#, fuzzy
+msgid "%NUMBER pages"
+msgstr "%NUMBER pages"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__132.string.text
+#, fuzzy
+msgid "%NUMBER slides"
+msgstr "%NUMBER slides"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__133.string.text
+#, fuzzy
+msgid "Created: %DATE"
+msgstr "Created: %DATE"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__134.string.text
+#, fuzzy
+msgid "Last modified: %DATE"
+msgstr "Last modified: %DATE"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__135.string.text
+#, fuzzy
+msgid "Web Wizard Settings"
+msgstr "Web Wizard Settings"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__136.string.text
+#, fuzzy
+msgid "Background image:"
+msgstr "Background image:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__137.string.text
+#, fuzzy
+msgid "Icon set:"
+msgstr "Icon set:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__138.string.text
+#, fuzzy
+msgid "The icon set is used for presentations in HTML format."
+msgstr "The icon set is used for presentations in HTML format."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__139.string.text
+#, fuzzy
+msgid "HTML Metadata"
+msgstr "HTML Metadata"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__140.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_WEBWIZARDDIALOG_START__140.string.text"
+msgid "Choose..."
+msgstr "Choose..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__141.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_WEBWIZARDDIALOG_START__141.string.text"
+msgid "Choose..."
+msgstr "Choose..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__142.string.text
+#, fuzzy
+msgid "<default>"
+msgstr "<default>"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__143.string.text
+#, fuzzy
+msgid "Publishing via FTP Proxy is not supported."
+msgstr "Publishing via FTP Proxy is not supported."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__144.string.text
+#, fuzzy
+msgid "<no background image>"
+msgstr "<no background image>"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__145.string.text
+#, fuzzy
+msgid "<no icon set>"
+msgstr "<no icon set>"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__146.string.text
+#, fuzzy
+msgid "The FTP directory '%FILENAME' could not be created."
+msgstr "The FTP directory '%FILENAME' could not be created."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__147.string.text
+#, fuzzy
+msgid ""
+"The FTP directory '%FILENAME' does not exist. \n"
+"Create the directory now?"
+msgstr ""
+"The FTP directory '%FILENAME' does not exist. \n"
+"Create the directory now?"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__148.string.text
+#, fuzzy
+msgid ""
+"The Zip file '%FILENAME' cannot be created: a directory of the same name "
+"already exists."
+msgstr ""
+"The Zip file '%FILENAME' cannot be created: a directory of the same name "
+"already exists."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__149.string.text
+#, fuzzy
+msgid ""
+"The local directory '%FILENAME' cannot be created. \n"
+"Please check your write-access."
+msgstr ""
+"The local directory '%FILENAME' cannot be created. \n"
+"Please check your write-access."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__150.string.text
+#, fuzzy
+msgid ""
+"The local directory '%FILENAME' does not exist. \n"
+"Create the directory now?"
+msgstr ""
+"The local directory '%FILENAME' does not exist. \n"
+"Create the directory now?"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__151.string.text
+#, fuzzy
+msgid "Size: %NUMBERKB"
+msgstr "Size: %NUMBERKB"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_START__152.string.text
+#, fuzzy
+msgid "File not found. Would you like to specify a new file location?"
+msgstr "File not found. Would you like to specify a new file location?"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__0.string.text
+#, fuzzy
+msgid "FTP Connection"
+msgstr "FTP Connection"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__1.string.text
+#, fuzzy
+msgid "~User name:"
+msgstr "~User name:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__2.string.text
+#, fuzzy
+msgid "~Password:"
+msgstr "~Password:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__3.string.text
+#, fuzzy
+msgid "Connect"
+msgstr "Connect"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__4.string.text
+#, fuzzy
+msgid "1. Enter FTP connection information."
+msgstr "1. Enter FTP connection information."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__5.string.text
+#, fuzzy
+msgid "~Server name or IP address:"
+msgstr "~Server name or IP address:"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__6.string.text
+#, fuzzy
+msgid "2. Connect to the server."
+msgstr "2. Connect to the server."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__7.string.text
+#, fuzzy
+msgid "3. ~Choose a remote directory (optional)."
+msgstr "3. ~Choose a remote directory (optional)."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__8.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_WEBWIZARDDIALOG_FTP__8.string.text"
+msgid "..."
+msgstr "..."
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__9.string.text
+#, fuzzy
+msgid "Connection status is unknown"
+msgstr "Connection status is unknown"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__10.string.text
+#, fuzzy
+msgid "Connection was established successfully"
+msgstr "Connection was established successfully"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__11.string.text
+#, fuzzy
+msgid "Username or password is wrong"
+msgstr "Username or password is wrong"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__12.string.text
+#, fuzzy
+msgid "Could not resolve server name"
+msgstr "Could not resolve server name"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__13.string.text
+#, fuzzy
+msgid "You do not have sufficient user rights"
+msgstr "You do not have sufficient user rights"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__14.string.text
+#, fuzzy
+msgid "Cannot connect to server"
+msgstr "Cannot connect to server"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__15.string.text
+#, fuzzy
+msgid "Unexpected error"
+msgstr "Unexpected error"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__16.string.text
+#, fuzzy
+msgid "FTP publishing directory"
+msgstr "FTP publishing directory"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__17.string.text
+#, fuzzy
+msgid "This is not an FTP folder"
+msgstr "This is not an FTP folder"
+
+#: dbwizres.src#RID_WEBWIZARDDIALOG_FTP__18.string.text
+#, fuzzy
+msgid "Connecting..."
+msgstr "Connecting..."
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__1.string.text
+#, fuzzy
+msgid "Agenda Wizard"
+msgstr "Agenda Wizard"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__2.string.text
+#, fuzzy
+msgid "Make ~manual changes to this agenda template"
+msgstr "Make ~manual changes to this agenda template"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__3.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__3.string.text"
+msgid "Template name:"
+msgstr "Template name:"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START___4.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START___4.string.text"
+msgid "Location and file name:"
+msgstr "Location and file name:"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__5.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__5.string.text"
+msgid "What do you want to do next?"
+msgstr "What do you want to do next?"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__6.string.text
+#, fuzzy
+msgid "Please choose the page design for the agenda"
+msgstr "Please choose the page design for the agenda"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__7.string.text
+#, fuzzy
+msgid "Please select the headings you wish to include in your agenda template"
+msgstr "Please select the headings you wish to include in your agenda template"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__8.string.text
+#, fuzzy
+msgid "Please enter general information for the event"
+msgstr "Please enter general information for the event"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__9.string.text
+#, fuzzy
+msgid "Please specify items for the agenda"
+msgstr "Please specify items for the agenda"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__10.string.text
+#, fuzzy
+msgid "Please select the names you wish to include in your agenda template"
+msgstr "Please select the names you wish to include in your agenda template"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__11.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__11.string.text"
+msgid "Choose a name and save the template"
+msgstr "Choose a name and save the template"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__12.string.text
+#, fuzzy
+msgid "Include form for recording minutes"
+msgstr "Include form for recording minutes"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__13.string.text
+#, fuzzy
+msgid ""
+"This wizard helps you to create an agenda template. The template can then be "
+"used to create an agenda whenever needed."
+msgstr ""
+"This wizard helps you to create an agenda template. The template can then be "
+"used to create an agenda whenever needed."
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__14.string.text
+#, fuzzy
+msgid "Time:"
+msgstr "Time:"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__15.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__15.string.text"
+msgid "Name:"
+msgstr "Name:"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START___16.string.text
+#, fuzzy
+msgid "Location:"
+msgstr "Location:"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__17.string.text
+#, fuzzy
+msgid ""
+"Placeholders will be used in empty fields. You can replace placeholders with "
+"text later."
+msgstr ""
+"Placeholders will be used in empty fields. You can replace them with text "
+"later."
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__18.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__18.string.text"
+msgid "..."
+msgstr "..."
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__19.string.text
+#, fuzzy
+msgid "Create an ~agenda from this template"
+msgstr "Create an ~agenda from this template"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__20.string.text
+#, fuzzy
+msgid ""
+"To create a new agenda out of the template, go to the location where you "
+"saved the template and double-click the file."
+msgstr ""
+"To create a new agenda using the template, go to the location where you "
+"saved the template and double-click the file."
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__21.string.text
+#, fuzzy
+msgid "Agenda item"
+msgstr "Agenda item"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__22.string.text
+#, fuzzy
+msgid "Responsible"
+msgstr "Responsible"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__23.string.text
+#, fuzzy
+msgid "Duration"
+msgstr "Duration"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__24.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__24.string.text"
+msgid "Meeting called by"
+msgstr "Meeting called by"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__25.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__25.string.text"
+msgid "Chairperson"
+msgstr "Chairperson"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__26.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__26.string.text"
+msgid "Minute keeper"
+msgstr "Secretary"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__27.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__27.string.text"
+msgid "Moderator"
+msgstr "Moderator"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__28.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__28.string.text"
+msgid "Attendees"
+msgstr "Attendees"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__29.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__29.string.text"
+msgid "Observers"
+msgstr "Observers"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__30.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__30.string.text"
+msgid "Facility personnel"
+msgstr "Facility personnel"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__31.string.text
+#, fuzzy
+msgid ""
+"The agenda template will include placeholders for the names of the selected "
+"people. When creating an agenda from the template, you can replace these "
+"placeholder with the appropriate names."
+msgstr ""
+"The agenda template will include placeholders for the names of the selected "
+"people. When creating an agenda from the template, you can replace these "
+"placeholders with the appropriate names."
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__32.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__32.string.text"
+msgid "Type of meeting"
+msgstr "Type of meeting"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__33.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__33.string.text"
+msgid "Please read"
+msgstr "Please read"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__34.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__34.string.text"
+msgid "Please bring"
+msgstr "Please bring"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__35.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__35.string.text"
+msgid "Notes"
+msgstr "Notes"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__36.string.text
+#, fuzzy
+msgid "The agenda template will include placeholders for the selected items."
+msgstr "The agenda template will include placeholders for the selected items."
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__38.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__38.string.text"
+msgid "Date:"
+msgstr "Date:"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__39.string.text
+#, fuzzy
+msgid ""
+"This wizard creates an agenda template which enables you to create multiple "
+"agendas with the same layout and settings."
+msgstr ""
+"This wizard creates an agenda template which enables you to create multiple "
+"agendas with the same layout and settings."
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__40.string.text
+#, fuzzy
+msgid "Page design:"
+msgstr "Page design:"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__41.string.text
+#, fuzzy
+msgid "myAgendaTemplate.stw"
+msgstr "myAgendaTemplate.stw"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__42.string.text
+#, fuzzy
+msgid "My Agenda Template"
+msgstr "My Agenda Template"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__43.string.text
+#, fuzzy
+msgid "An unexpected error occurred while saving the agenda template."
+msgstr "An unexpected error occurred while saving the agenda template."
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__44.string.text
+#, fuzzy
+msgid "Name"
+msgstr "Name"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__45.string.text
+#, fuzzy
+msgid "Date"
+msgstr "Date"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__46.string.text
+#, fuzzy
+msgid "Time"
+msgstr "Time"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START___47.string.text
+#, fuzzy
+msgid "Location"
+msgstr "Location"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__48.string.text
+#, fuzzy
+msgid "Click to replace this text"
+msgstr "Click to replace this text"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__50.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__50.string.text"
+msgid "Page design"
+msgstr "Page design"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__51.string.text
+#, fuzzy
+msgid "General information"
+msgstr "General information"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__52.string.text
+#, fuzzy
+msgid "Headings to include"
+msgstr "Headings to include"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__53.string.text
+#, fuzzy
+msgid "Names"
+msgstr "Names"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__54.string.text
+#, fuzzy
+msgid "Agenda items"
+msgstr "Agenda items"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__55.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__55.string.text"
+msgid "Name and location"
+msgstr "Name and location"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__56.string.text
+#, fuzzy
+msgid "An unexpected error occurred while opening the agenda template."
+msgstr "An unexpected error occurred while opening the agenda template."
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__57.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__57.string.text"
+msgid "Type of meeting"
+msgstr "Type of meeting"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__58.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__58.string.text"
+msgid "Please bring"
+msgstr "Please bring"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__59.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__59.string.text"
+msgid "Please read"
+msgstr "Please read"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__60.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__60.string.text"
+msgid "Notes"
+msgstr "Notes"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__61.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__61.string.text"
+msgid "Meeting called by"
+msgstr "Meeting called by"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__62.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__62.string.text"
+msgid "Chairperson"
+msgstr "Chairperson"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__63.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__63.string.text"
+msgid "Attendees"
+msgstr "Attendees"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__64.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__64.string.text"
+msgid "Minute keeper"
+msgstr "Secretary"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__65.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__65.string.text"
+msgid "Moderator"
+msgstr "Moderator"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__66.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__66.string.text"
+msgid "Observers"
+msgstr "Observers"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__67.string.text
+#, fuzzy
+msgctxt "dbwizres.src#RID_AGENDAWIZARDDIALOG_START__67.string.text"
+msgid "Facility personnel"
+msgstr "Facility personnel"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__68.string.text
+#, fuzzy
+msgid "Insert"
+msgstr "Insert"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__69.string.text
+#, fuzzy
+msgid "Remove"
+msgstr "Remove"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__70.string.text
+#, fuzzy
+msgid "Move up"
+msgstr "Move up"
+
+#: dbwizres.src#RID_AGENDAWIZARDDIALOG_START__71.string.text
+#, fuzzy
+msgid "Move down"
+msgstr "Move down"
+"X-Accelerator-Marker: ~\n"
+
+#: template.src#SAMPLES.string.text
+#, fuzzy
+msgid ""
+"In order to use the full functionality of this sample, create a document "
+"that is based on this template."
+msgstr ""
+"In order to use the full functionality of this sample, create a document "
+"that is based on this template."
+
+#: template.src#SAMPLES___1.string.text
+#, fuzzy
+msgid "Remarks"
+msgstr "Remarks"
+
+#: template.src#STYLES.string.text
+#, fuzzy
+msgid "Theme Selection"
+msgstr "Theme Selection"
+
+#: template.src#STYLES___1.string.text
+#, fuzzy
+msgid ""
+"Error while saving the document to the clipboard! The following action "
+"cannot be undone."
+msgstr ""
+"Error while saving the document to the clipboard! The following action "
+"cannot be undone."
+
+#: template.src#STYLES___2.string.text
+#, fuzzy
+msgid "~Cancel"
+msgstr "~Cancel"
+
+#: template.src#STYLES___3.string.text
+#, fuzzy
+msgid "~OK"
+msgstr "~OK"
+
+#: template.src#AgendaDlgName.string.text
+#, fuzzy
+msgid "Minutes Template"
+msgstr "Minutes Template"
+
+#: template.src#AgendaDlgNoCancel.string.text
+#, fuzzy
+msgid "An option must be confirmed."
+msgstr "An option must be confirmed."
+
+#: template.src#AgendaDlgFrame.string.text
+#, fuzzy
+msgid "Minutes Type"
+msgstr "Minutes Type"
+
+#: template.src#AgendaDlgButton1.string.text
+#, fuzzy
+msgid "Results Minutes"
+msgstr "Results Minutes"
+
+#: template.src#AgendaDlgButton2.string.text
+#, fuzzy
+msgid "Evaluation Minutes"
+msgstr "Evaluation Minutes"
+
+#: template.src#CorrespondenceNoTextmark.string.text
+#, fuzzy
+msgid "The bookmark 'Recipient' is missing."
+msgstr "The bookmark 'Recipient' is missing."
+
+#: template.src#CorrespondenceNoTextmark_1.string.text
+#, fuzzy
+msgid "Form letter fields can not be included."
+msgstr "Form letter fields can not be included."
+
+#: template.src#CorrespondenceMsgError.string.text
+#, fuzzy
+msgid "An error has occurred."
+msgstr "An error has occurred."
+
+#: template.src#CorrespondenceDialog.string.text
+#, fuzzy
+msgid "Addressee"
+msgstr "Addressee"
+
+#: template.src#CorrespondenceDialog_1.string.text
+#, fuzzy
+msgid "One recipient"
+msgstr "One recipient"
+
+#: template.src#CorrespondenceDialog_2.string.text
+#, fuzzy
+msgid "Several recipients (address database)"
+msgstr "Several recipients (address database)"
+
+#: template.src#CorrespondenceDialog_3.string.text
+#, fuzzy
+msgid "Use of This Template"
+msgstr "Use of This Template"
+
+#: template.src#CorrespondenceFields.string.text
+#, fuzzy
+msgid "Click placeholder and overwrite"
+msgstr "Click placeholder and overwrite"
+
+#: template.src#CorrespondenceFields_1.string.text
+#, fuzzy
+msgid "Company"
+msgstr "Company"
+
+#: template.src#CorrespondenceFields_2.string.text
+#, fuzzy
+msgid "Department"
+msgstr "Department"
+
+#: template.src#CorrespondenceFields_3.string.text
+#, fuzzy
+msgid "First Name"
+msgstr "Forename"
+
+#: template.src#CorrespondenceFields_4.string.text
+#, fuzzy
+msgid "Last Name"
+msgstr "Surname"
+
+#: template.src#CorrespondenceFields_5.string.text
+#, fuzzy
+msgid "Street"
+msgstr "Street"
+
+#: template.src#CorrespondenceFields_6.string.text
+#, fuzzy
+msgid "Country"
+msgstr "Country"
+
+#: template.src#CorrespondenceFields_7.string.text
+#, fuzzy
+msgid "ZIP/Postal Code"
+msgstr "Postcode"
+
+#: template.src#CorrespondenceFields_8.string.text
+#, fuzzy
+msgid "City"
+msgstr "Post Town"
+
+#: template.src#CorrespondenceFields_9.string.text
+#, fuzzy
+msgid "Title"
+msgstr "Title"
+
+#: template.src#CorrespondenceFields_10.string.text
+#, fuzzy
+msgid "Position"
+msgstr "Position"
+
+#: template.src#CorrespondenceFields_11.string.text
+#, fuzzy
+msgid "Form of Address"
+msgstr "Form of Address"
+
+#: template.src#CorrespondenceFields_12.string.text
+#, fuzzy
+msgid "Initials"
+msgstr "Initials"
+
+#: template.src#CorrespondenceFields_13.string.text
+#, fuzzy
+msgid "Salutation"
+msgstr "Salutation"
+
+#: template.src#CorrespondenceFields_14.string.text
+#, fuzzy
+msgid "Home Phone"
+msgstr "Home Phone"
+
+#: template.src#CorrespondenceFields_15.string.text
+#, fuzzy
+msgid "Work Phone"
+msgstr "Work Phone"
+
+#: template.src#CorrespondenceFields_16.string.text
+#, fuzzy
+msgid "Fax"
+msgstr "Fax"
+
+#: template.src#CorrespondenceFields_17.string.text
+#, fuzzy
+msgid "E-Mail"
+msgstr "E-Mail"
+
+#: template.src#CorrespondenceFields_18.string.text
+#, fuzzy
+msgid "URL"
+msgstr "URL"
+
+#: template.src#CorrespondenceFields_19.string.text
+#, fuzzy
+msgid "Notes"
+msgstr "Notes"
+
+#: template.src#CorrespondenceFields_20.string.text
+#, fuzzy
+msgid "Alt. Field 1"
+msgstr "Alt. Field 1"
+
+#: template.src#CorrespondenceFields_21.string.text
+#, fuzzy
+msgid "Alt. Field 2"
+msgstr "Alt. Field 2"
+
+#: template.src#CorrespondenceFields_22.string.text
+#, fuzzy
+msgid "Alt. Field 3"
+msgstr "Alt. Field 3"
+
+#: template.src#CorrespondenceFields_23.string.text
+#, fuzzy
+msgid "Alt. Field 4"
+msgstr "Alt. Field 4"
+
+#: template.src#CorrespondenceFields_24.string.text
+#, fuzzy
+msgid "ID"
+msgstr "ID"
+
+#: template.src#CorrespondenceFields_25.string.text
+#, fuzzy
+msgid "State"
+msgstr "County"
+
+#: template.src#CorrespondenceFields_26.string.text
+#, fuzzy
+msgid "Office Phone"
+msgstr "Office Phone"
+
+#: template.src#CorrespondenceFields_27.string.text
+#, fuzzy
+msgid "Pager"
+msgstr "Pager"
+
+#: template.src#CorrespondenceFields_28.string.text
+#, fuzzy
+msgid "Mobile Phone"
+msgstr "Mobile Phone"
+
+#: template.src#CorrespondenceFields_29.string.text
+#, fuzzy
+msgid "Other Phone"
+msgstr "Other Phone"
+
+#: template.src#CorrespondenceFields_30.string.text
+#, fuzzy
+msgid "Calendar URL"
+msgstr "Calendar URL"
+
+#: template.src#CorrespondenceFields_31.string.text
+#, fuzzy
+msgid "Invite"
+msgstr "Invite"
+
+#: template.src#TextField.string.text
+#, fuzzy
+msgid "User data field is not defined!"
+msgstr "User data field is not defined!"
+
+#: template.src#Newsletter.string.text
+#, fuzzy
+msgid "General layout"
+msgstr "General layout"
+
+#: template.src#Newsletter___1.string.text
+#, fuzzy
+msgid "Default layout"
+msgstr "Default layout"
+
+#: template.src#Newsletter___2.string.text
+#, fuzzy
+msgid "Commemorative publication layout"
+msgstr "Commemorative publication layout"
+
+#: template.src#Newsletter___3.string.text
+#, fuzzy
+msgid "Brochure layout"
+msgstr "Brochure layout"
+
+#: template.src#Newsletter___10.string.text
+#, fuzzy
+msgid "Format"
+msgstr "Format"
+
+#: template.src#Newsletter___11.string.text
+#, fuzzy
+msgid "Single-sided"
+msgstr "Single-sided"
+
+#: template.src#Newsletter___12.string.text
+#, fuzzy
+msgid "Double-sided"
+msgstr "Double-sided"
+"X-Accelerator-Marker: ~\n"
+
+#: euro.src#STEP_ZERO.string.text
+#, fuzzy
+msgid "~Cancel"
+msgstr "~Cancel"
+
+#: euro.src#STEP_ZERO___1.string.text
+#, fuzzy
+msgid "~Help"
+msgstr "~Help"
+
+#: euro.src#STEP_ZERO___2.string.text
+#, fuzzy
+msgid "<<~Back"
+msgstr "<<~Back"
+
+#: euro.src#STEP_ZERO___3.string.text
+#, fuzzy
+msgid "~Convert"
+msgstr "~Convert"
+
+#: euro.src#STEP_ZERO___4.string.text
+#, fuzzy
+msgid ""
+"Note: Currency amounts from external links and currency conversion factors "
+"in formulas cannot be converted."
+msgstr ""
+"Note: Currency amounts from external links and currency conversion factors "
+"in formulae cannot be converted."
+
+#: euro.src#STEP_ZERO___5.string.text
+#, fuzzy
+msgid "First, unprotect all sheets."
+msgstr "First, unprotect all sheets."
+
+#: euro.src#STEP_ZERO___6.string.text
+#, fuzzy
+msgid "Currencies:"
+msgstr "Currencies:"
+
+#: euro.src#STEP_ZERO___7.string.text
+#, fuzzy
+msgid "C~ontinue>>"
+msgstr "C~ontinue>>"
+
+#: euro.src#STEP_ZERO___8.string.text
+#, fuzzy
+msgid "C~lose"
+msgstr "C~lose"
+
+#: euro.src#STEP_CONVERTER.string.text
+#, fuzzy
+msgid "~Entire document"
+msgstr "~Entire document"
+
+#: euro.src#STEP_CONVERTER___1.string.text
+#, fuzzy
+msgid "Selection"
+msgstr "Selection"
+
+#: euro.src#STEP_CONVERTER___2.string.text
+#, fuzzy
+msgid "Cell S~tyles"
+msgstr "Cell S~tyles"
+
+#: euro.src#STEP_CONVERTER___3.string.text
+#, fuzzy
+msgid "Currency cells in the current ~sheet"
+msgstr "Currency cells in the current ~sheet"
+
+#: euro.src#STEP_CONVERTER___4.string.text
+#, fuzzy
+msgid "Currency cells in the entire ~document"
+msgstr "Currency cells in the entire ~document"
+
+#: euro.src#STEP_CONVERTER___5.string.text
+#, fuzzy
+msgid "~Selected range"
+msgstr "~Selected range"
+
+#: euro.src#STEP_CONVERTER___6.string.text
+#, fuzzy
+msgid "Select Cell Styles"
+msgstr "Select Cell Styles"
+
+#: euro.src#STEP_CONVERTER___7.string.text
+#, fuzzy
+msgid "Select currency cells"
+msgstr "Select currency cells"
+
+#: euro.src#STEP_CONVERTER___8.string.text
+#, fuzzy
+msgid "Currency ranges:"
+msgstr "Currency ranges:"
+
+#: euro.src#STEP_CONVERTER___9.string.text
+#, fuzzy
+msgid "Templates:"
+msgstr "Templates:"
+
+#: euro.src#STEP_AUTOPILOT.string.text
+#, fuzzy
+msgid "Extent"
+msgstr "Extent"
+
+#: euro.src#STEP_AUTOPILOT___1.string.text
+#, fuzzy
+msgid "~Single %PRODUCTNAME Calc document"
+msgstr "~Single %PRODUCTNAME Calc document"
+
+#: euro.src#STEP_AUTOPILOT___2.string.text
+#, fuzzy
+msgid "Complete ~directory"
+msgstr "Complete ~directory"
+
+#: euro.src#STEP_AUTOPILOT___3.string.text
+#, fuzzy
+msgid "Source Document:"
+msgstr "Source Document:"
+
+#: euro.src#STEP_AUTOPILOT___4.string.text
+#, fuzzy
+msgid "Source directory:"
+msgstr "Source directory:"
+
+#: euro.src#STEP_AUTOPILOT___5.string.text
+#, fuzzy
+msgid "~Including subfolders"
+msgstr "~Including subfolders"
+
+#: euro.src#STEP_AUTOPILOT___6.string.text
+#, fuzzy
+msgid "Target directory:"
+msgstr "Target directory:"
+
+#: euro.src#STEP_AUTOPILOT___7.string.text
+#, fuzzy
+msgid "Temporarily unprotect sheet without query"
+msgstr "Temporarily unprotect sheet without query"
+
+#: euro.src#STEP_AUTOPILOT___10.string.text
+#, fuzzy
+msgid "Also convert fields and tables in text documents"
+msgstr "Also convert fields and tables in text documents"
+
+#: euro.src#STATUSLINE.string.text
+#, fuzzy
+msgid "Conversion status: "
+msgstr "Conversion status: "
+
+#: euro.src#STATUSLINE___1.string.text
+#, fuzzy
+msgid "Conversion status of the cell templates:"
+msgstr "Conversion status of the cell templates:"
+
+#: euro.src#STATUSLINE___2.string.text
+#, fuzzy
+msgid ""
+"Registration of the relevant ranges: Sheet %1Number%1 of %2TotPageCount%2"
+msgstr ""
+"Registration of the relevant ranges: Sheet %1Number%1 of %2TotPageCount%2"
+
+#: euro.src#STATUSLINE___3.string.text
+#, fuzzy
+msgid "Entry of the ranges to be converted..."
+msgstr "Entry of the ranges to be converted..."
+
+#: euro.src#STATUSLINE___4.string.text
+#, fuzzy
+msgid "Sheet protection for each sheet will be restored..."
+msgstr "Sheet protection for each sheet will be restored..."
+
+#: euro.src#STATUSLINE___5.string.text
+#, fuzzy
+msgid "Conversion of the currency units in the cell templates..."
+msgstr "Conversion of the currency units in the cell templates..."
+
+#: euro.src#MESSAGES.string.text
+#, fuzzy
+msgid "~Finish"
+msgstr "~Finish"
+
+#: euro.src#MESSAGES___1.string.text
+#, fuzzy
+msgid "Select directory"
+msgstr "Select directory"
+
+#: euro.src#MESSAGES___2.string.text
+#, fuzzy
+msgid "Select file"
+msgstr "Select file"
+
+#: euro.src#MESSAGES___3.string.text
+#, fuzzy
+msgid "Select target directory"
+msgstr "Select target directory"
+
+#: euro.src#MESSAGES___4.string.text
+#, fuzzy
+msgid "non-existant"
+msgstr "non-existent"
+
+#: euro.src#MESSAGES___5.string.text
+#, fuzzy
+msgid "Euro Converter"
+msgstr "Euro Converter"
+
+#: euro.src#MESSAGES___6.string.text
+#, fuzzy
+msgid "Should protected spreadsheets be temporarily unprotected?"
+msgstr "Should protected spreadsheets be temporarily unprotected?"
+
+#: euro.src#MESSAGES___7.string.text
+#, fuzzy
+msgid "Enter the password to unprotect the table %1TableName%1"
+msgstr "Enter the password to unprotect the table %1TableName%1"
+
+#: euro.src#MESSAGES___8.string.text
+#, fuzzy
+msgid "Wrong Password!"
+msgstr "Wrong Password!"
+
+#: euro.src#MESSAGES___9.string.text
+#, fuzzy
+msgid "Protected Sheet"
+msgstr "Protected Sheet"
+
+#: euro.src#MESSAGES___10.string.text
+#, fuzzy
+msgid "Warning!"
+msgstr "Warning!"
+
+#: euro.src#MESSAGES___11.string.text
+#, fuzzy
+msgid "Protection for the sheets will not be removed."
+msgstr "Protection for the sheets will not be removed."
+
+#: euro.src#MESSAGES___12.string.text
+#, fuzzy
+msgid "Sheet cannot be unprotected"
+msgstr "Sheet cannot be unprotected"
+
+#: euro.src#MESSAGES___13.string.text
+#, fuzzy
+msgid ""
+"The Wizard cannot edit this document as cell formats cannot be modified in "
+"documents containing protected spreadsheets."
+msgstr ""
+"The Wizard cannot edit this document as cell formats cannot be modified in "
+"documents containing protected spreadsheets."
+
+#: euro.src#MESSAGES___14.string.text
+#, fuzzy
+msgid ""
+"Please note that the Euro Converter will, otherwise, not be able to edit "
+"this document!"
+msgstr ""
+"Please note that the Euro Converter will, otherwise, not be able to edit "
+"this document!"
+
+#: euro.src#MESSAGES___15.string.text
+#, fuzzy
+msgid "Please choose a currency to be converted first!"
+msgstr "Please choose a currency to be converted first!"
+
+#: euro.src#MESSAGES___16.string.text
+#, fuzzy
+msgid "Password:"
+msgstr "Password:"
+
+#: euro.src#MESSAGES___17.string.text
+#, fuzzy
+msgid "OK"
+msgstr "OK"
+
+#: euro.src#MESSAGES___18.string.text
+#, fuzzy
+msgid "Cancel"
+msgstr "Cancel"
+
+#: euro.src#MESSAGES___19.string.text
+#, fuzzy
+msgid "Please select a %PRODUCTNAME Calc document for editing!"
+msgstr "Please select a %PRODUCTNAME Calc document for editing!"
+
+#: euro.src#MESSAGES___20.string.text
+#, fuzzy
+msgid "'<1>' is not a directory!"
+msgstr "'<1>' is not a directory!"
+
+#: euro.src#MESSAGES___21.string.text
+#, fuzzy
+msgid "Document is read-only!"
+msgstr "Document is read-only!"
+
+#: euro.src#MESSAGES___22.string.text
+#, fuzzy
+msgid "The '<1>' file already exists.<CR>Do you want to overwrite it?"
+msgstr "The '<1>' file already exists.<CR>Do you want to overwrite it?"
+
+#: euro.src#MESSAGES___23.string.text
+#, fuzzy
+msgid "Do you really want to terminate conversion at this point?"
+msgstr "Do you really want to terminate conversion at this point?"
+
+#: euro.src#MESSAGES___24.string.text
+#, fuzzy
+msgid "Cancel Wizard"
+msgstr "Cancel Wizard"
+
+#: euro.src#CURRENCIES.string.text
+#, fuzzy
+msgid "Portuguese Escudo"
+msgstr "Portuguese Escudo"
+
+#: euro.src#CURRENCIES___1.string.text
+#, fuzzy
+msgid "Dutch Guilder"
+msgstr "Dutch Guilder"
+
+#: euro.src#CURRENCIES___2.string.text
+#, fuzzy
+msgid "French Franc"
+msgstr "French Franc"
+
+#: euro.src#CURRENCIES___3.string.text
+#, fuzzy
+msgid "Spanish Peseta"
+msgstr "Spanish Peseta"
+
+#: euro.src#CURRENCIES___4.string.text
+#, fuzzy
+msgid "Italian Lira"
+msgstr "Italian Lira"
+
+#: euro.src#CURRENCIES___5.string.text
+#, fuzzy
+msgid "German Mark"
+msgstr "German Mark"
+
+#: euro.src#CURRENCIES___6.string.text
+#, fuzzy
+msgid "Belgian Franc"
+msgstr "Belgian Franc"
+
+#: euro.src#CURRENCIES___7.string.text
+#, fuzzy
+msgid "Irish Punt"
+msgstr "Irish Punt"
+
+#: euro.src#CURRENCIES___8.string.text
+#, fuzzy
+msgid "Luxembourg Franc"
+msgstr "Luxembourg Franc"
+
+#: euro.src#CURRENCIES___9.string.text
+#, fuzzy
+msgid "Austrian Schilling"
+msgstr "Austrian Schilling"
+
+#: euro.src#CURRENCIES___10.string.text
+#, fuzzy
+msgid "Finnish Mark"
+msgstr "Finnish Mark"
+
+#: euro.src#CURRENCIES___11.string.text
+#, fuzzy
+msgid "Greek Drachma"
+msgstr "Greek Drachma"
+
+#: euro.src#CURRENCIES___12.string.text
+#, fuzzy
+msgid "Slovenian Tolar"
+msgstr "Slovenian Tolar"
+
+#: euro.src#CURRENCIES___13.string.text
+#, fuzzy
+msgid "Cypriot Pound"
+msgstr "Cypriot Pound"
+
+#: euro.src#CURRENCIES___14.string.text
+#, fuzzy
+msgid "Maltese Lira"
+msgstr "Maltese Lira"
+
+#: euro.src#CURRENCIES___15.string.text
+#, fuzzy
+msgid "Slovak Koruna"
+msgstr "Slovak Koruna"
+
+#: euro.src#CURRENCIES___16.string.text
+#, fuzzy
+msgid "The currency set for the document is not a European currency!"
+msgstr "The currency set for the document is not a European currency!"
+
+#: euro.src#CURRENCIES___17.string.text
+#, fuzzy
+msgid ""
+"The language set for your operating system is not a language of the European "
+"Monetary Union."
+msgstr ""
+"The language set for your operating system is not a language of the European "
+"Monetary Union."
+
+#: euro.src#STEP_LASTPAGE.string.text
+#, fuzzy
+msgid "Progress"
+msgstr "Progress"
+
+#: euro.src#STEP_LASTPAGE___1.string.text
+#, fuzzy
+msgid "Retrieving the relevant documents..."
+msgstr "Retrieving the relevant documents..."
+
+#: euro.src#STEP_LASTPAGE___2.string.text
+#, fuzzy
+msgid "Converting the documents..."
+msgstr "Converting the documents..."
+
+#: euro.src#STEP_LASTPAGE___3.string.text
+#, fuzzy
+msgid "Settings:"
+msgstr "Settings:"
+
+#: euro.src#STEP_LASTPAGE___4.string.text
+#, fuzzy
+msgid "Sheet is always unprotected"
+msgstr "Sheet is always unprotected"
+"X-Accelerator-Marker: ~\n"
+
+#: schedule.src#dlgCalTitle.string.text
+#, fuzzy
+msgid "%PRODUCTNAME Calendar"
+msgstr "%PRODUCTNAME Calendar"
+
+#: schedule.src#dlgCalTitleBack.string.text
+#, fuzzy
+msgid "Back"
+msgstr "Back"
+
+#: schedule.src#dlgCalTitleOwnData.string.text
+#, fuzzy
+msgctxt "schedule.src#dlgCalTitleOwnData.string.text"
+msgid "Personal Data"
+msgstr "Personal Data"
+
+#: schedule.src#dlgSchdlTitle.string.text
+#, fuzzy
+msgid "Add Holidays to Calendar"
+msgstr "Add Holidays to Calendar"
+
+#: schedule.src#dlgOK.string.text
+#, fuzzy
+msgid "Create"
+msgstr "Create"
+
+#: schedule.src#dlgCancel.string.text
+#, fuzzy
+msgid "Cancel"
+msgstr "Cancel"
+
+#: schedule.src#dlgCalFrameOption.string.text
+#, fuzzy
+msgctxt "schedule.src#dlgCalFrameOption.string.text"
+msgid "Calendar"
+msgstr "Calendar"
+
+#: schedule.src#dlgCalOptionYear.string.text
+#, fuzzy
+msgid "~Year Overview"
+msgstr "~Year Overview"
+
+#: schedule.src#dlgCalOptionMonth.string.text
+#, fuzzy
+msgid "~Month"
+msgstr "~Month"
+
+#: schedule.src#dlgSchdlDescription.string.text
+#, fuzzy
+msgid "Add holidays for"
+msgstr "Add holidays for"
+
+#: schedule.src#dlgSchdlCountry.string.text
+#, fuzzy
+msgid "USA"
+msgstr "USA"
+
+#: schedule.src#dlgTime.string.text
+#, fuzzy
+msgid "Time Frame"
+msgstr "Time Frame"
+
+#: schedule.src#dlgYear.string.text
+#, fuzzy
+msgctxt "schedule.src#dlgYear.string.text"
+msgid "Year"
+msgstr "Year"
+
+#: schedule.src#dlgCalMonth.string.text
+#, fuzzy
+msgctxt "schedule.src#dlgCalMonth.string.text"
+msgid "Month"
+msgstr "Month"
+
+#: schedule.src#dlgSpecificBankholidays.string.text
+#, fuzzy
+msgid "-"
+msgstr "-"
+
+#: schedule.src#dlgCalOwnData.string.text
+#, fuzzy
+msgctxt "schedule.src#dlgCalOwnData.string.text"
+msgid "Personal Data"
+msgstr "Personal Data"
+
+#: schedule.src#dlgCalInsert.string.text
+#, fuzzy
+msgid "~Insert"
+msgstr "~Insert"
+
+#: schedule.src#dlgCalDelete.string.text
+#, fuzzy
+msgid "~Delete"
+msgstr "~Delete"
+
+#: schedule.src#dlgCalNewEvent.string.text
+#, fuzzy
+msgid "New Event"
+msgstr "New Event"
+
+#: schedule.src#dlgCalEvent.string.text
+#, fuzzy
+msgid "Event"
+msgstr "Event"
+
+#: schedule.src#dlgCalEventOnce.string.text
+#, fuzzy
+msgid "One-Time"
+msgstr "One-Time"
+
+#: schedule.src#dlgCalEventDay.string.text
+#, fuzzy
+msgid "Day"
+msgstr "Day"
+
+#: schedule.src#dlgCalEventMonth.string.text
+#, fuzzy
+msgctxt "schedule.src#dlgCalEventMonth.string.text"
+msgid "Month"
+msgstr "Month"
+
+#: schedule.src#dlgCalEventYear.string.text
+#, fuzzy
+msgctxt "schedule.src#dlgCalEventYear.string.text"
+msgid "Year"
+msgstr "Year"
+
+#: schedule.src#dlgBitmapFile.string.text
+#, fuzzy
+msgid "usa.bmp"
+msgstr "usa.bmp"
+
+#: schedule.src#dlgState.string.text
+#, fuzzy
+msgid "Public holidays"
+msgstr "Public holidays"
+
+#: schedule.src#dlgMonth.string.text
+#, fuzzy
+msgid "January"
+msgstr "January"
+
+#: schedule.src#dlgMonth_1.string.text
+#, fuzzy
+msgid "February"
+msgstr "February"
+
+#: schedule.src#dlgMonth_2.string.text
+#, fuzzy
+msgid "March"
+msgstr "March"
+
+#: schedule.src#dlgMonth_3.string.text
+#, fuzzy
+msgid "April"
+msgstr "April"
+
+#: schedule.src#dlgMonth_4.string.text
+#, fuzzy
+msgid "May"
+msgstr "May"
+
+#: schedule.src#dlgMonth_5.string.text
+#, fuzzy
+msgid "June"
+msgstr "June"
+
+#: schedule.src#dlgMonth_6.string.text
+#, fuzzy
+msgid "July"
+msgstr "July"
+
+#: schedule.src#dlgMonth_7.string.text
+#, fuzzy
+msgid "August"
+msgstr "August"
+
+#: schedule.src#dlgMonth_8.string.text
+#, fuzzy
+msgid "September"
+msgstr "September"
+
+#: schedule.src#dlgMonth_9.string.text
+#, fuzzy
+msgid "October"
+msgstr "October"
+
+#: schedule.src#dlgMonth_10.string.text
+#, fuzzy
+msgid "November"
+msgstr "November"
+
+#: schedule.src#dlgMonth_11.string.text
+#, fuzzy
+msgid "December"
+msgstr "December"
+
+#: schedule.src#msgCalErrorTitle.string.text
+#, fuzzy
+msgid "Yearly / Monthly Calendar"
+msgstr "Yearly / Monthly Calendar"
+
+#: schedule.src#msgCalError.string.text
+#, fuzzy
+msgid "An error occurred while creating the calendar."
+msgstr "An error occurred creating the calendar."
+
+#: schedule.src#msgCalRemoveTitle.string.text
+#, fuzzy
+msgid "Delete event entries"
+msgstr "Delete event entries"
+
+#: schedule.src#msgCalRemove.string.text
+#, fuzzy
+msgid "Delete the selected entries?"
+msgstr "Delete the selected entries?"
+
+#: schedule.src#stlWorkday.string.text
+#, fuzzy
+msgid "Workweek"
+msgstr "Working week"
+
+#: schedule.src#stlWeekend.string.text
+#, fuzzy
+msgid "Weekend"
+msgstr "Weekend"
+
+#: schedule.src#nameCalYear.string.text
+#, fuzzy
+msgctxt "schedule.src#nameCalYear.string.text"
+msgid "Calendar"
+msgstr "Calendar"
+
+#: schedule.src#nameCalMonth.string.text
+#, fuzzy
+msgctxt "schedule.src#nameCalMonth.string.text"
+msgid "Month"
+msgstr "Month"
+
+#: schedule.src#sProgress.string.text
+#, fuzzy
+msgid "Progress:"
+msgstr "Progress:"

@@ -174,7 +174,7 @@ void convert_xhp::setLang(char *yytext)
          if (sLang == "en-US")
            meExpectValue = VALUE_IS_TAG_TRANS;
          else
-          showError((char *)(sLang + " is no en-US language").c_str());
+          mcMemory.showError(sLang + " is no en-US language");
          break;
 
     case VALUE_IS_VALUE_TAG:
@@ -238,7 +238,7 @@ void convert_xhp::closeTransTag(char *yytext)
   if (meExpectValue == VALUE_IS_VALUE || meExpectValue == VALUE_IS_VALUE_TAG)
   {
     if (msCollector.size() && msCollector != "-")
-      mcMemory.setEnUsKey(miLineNo, msKey, std::string("text"), msCollector);
+//JIX      mcMemory.setEnUsKey(miLineNo, msKey, std::string("text"), msCollector);
     msKey.clear();
   }
   copySource(yytext);

@@ -1,0 +1,395 @@
+
+#: certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.FT_HINT_SELECT.fixedtext.text
+msgid "Select the certificate you want to use for signing"
+msgstr "မှန်ကန်ကြောင်း စစ်ဆေးခြင်းအတွက် သုံးရန် လိုချင်သော လက်မှတ် ရွေးချယ်ပါ"
+
+#: certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.string.text
+msgctxt "certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.string.text"
+msgid "Issued to\tIssued by\tExpiration date"
+msgstr "သက်တမ်းကုန် \t အကြောင်းအရာ \t ထုတ်ပေးပါ"
+
+#: certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.pushbutton.text
+msgctxt "certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.pushbutton.text"
+msgid "View Certificate..."
+msgstr "လက်မှတ် ကြည့်ပါ..."
+
+#: certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.modaldialog.text
+msgid "Select Certificate"
+msgstr "လက်မှတ် ရွေးချယ်ပါ"
+
+#: certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_GENERAL.pageitem.text
+msgid "General"
+msgstr "အထွေထွေ"
+
+#: certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_DETAILS.pageitem.text
+msgid "Details"
+msgstr "အသေးစိတ်"
+
+#: certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_CERTPATH.pageitem.text
+msgid "Certification Path"
+msgstr "လမ်းကြောင်း ထောက်ခံချက်"
+
+#: certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.tabdialog.text
+msgid "View Certificate"
+msgstr "လက်မှတ် ကြည့်ပါ"
+
+#: certificateviewer.src#RID_XMLSECTP_GENERAL.FI_CERTINFO.fixedtext.text
+msgid " Certificate Information"
+msgstr "သတင်းအချက်အလက် လက်မှတ်"
+
+#: certificateviewer.src#RID_XMLSECTP_GENERAL.FI_HINTNOTTRUST.fixedtext.text
+msgid "This certificate is intended for the following purpose(s):"
+msgstr "ဤ လက်မှတ်သည် အောက်ပါ ရည်မှန်းချက်(များ)အတွက် ရည်ရွယ်ထားသည် -"
+
+#: certificateviewer.src#RID_XMLSECTP_GENERAL.FI_ISSTOLABEL.fixedtext.text
+msgid "Issued to:"
+msgstr "သို့ ထုတ်ပေးခြင်း -"
+
+#: certificateviewer.src#RID_XMLSECTP_GENERAL.FI_ISSBYLABEL.fixedtext.text
+msgid "Issued by:"
+msgstr "အားဖြင့်ထုတ်ပေးခြင်း -"
+
+#: certificateviewer.src#RID_XMLSECTP_GENERAL.FI_VALIDDATE.fixedtext.text
+msgid "Valid from %SDATE% to %EDATE%"
+msgstr "%SDATE% မှ %EDATE% သို့ တရားဝင်သည်။"
+
+#: certificateviewer.src#RID_XMLSECTP_GENERAL.FI_CORRPRIVKEY.fixedtext.text
+msgid "You have a private key that corresponds to this certificate."
+msgstr "ဤ လက်မှတ်သို့ အပေးအယူလုပ်သည့် သီးသန့်သော့ တစ်ခု ရှိသည်။"
+
+#: certificateviewer.src#RID_XMLSECTP_GENERAL.STR_CERTIFICATE_NOT_VALIDATED.string.text
+msgctxt "certificateviewer.src#RID_XMLSECTP_GENERAL.STR_CERTIFICATE_NOT_VALIDATED.string.text"
+msgid "The certificate could not be validated."
+msgstr "လက်မှတ်သည် မခိုင်လုံနိုင်ပါ။"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_HEADERBAR.string.text
+msgid "Field\tValue"
+msgstr "နေရာကွက် \t တန်ဖိုး"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VERSION.string.text
+msgid "Version"
+msgstr "ဗားရှင်း"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SERIALNUM.string.text
+msgid "Serial Number"
+msgstr "နံပါတ် စဉ်"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGALGORITHM.string.text
+msgctxt "certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGALGORITHM.string.text"
+msgid "Signature Algorithm"
+msgstr "ပြဿနာဖြေရှင်းရန် အဓိက မှန်ကန်ကြောင်း စစ်ဆေးချက်"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_ISSUER.string.text
+msgid "Issuer"
+msgstr "ထုတ်ပေးသူ"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_ISSUER_ID.string.text
+msgid "Issuer Unique ID"
+msgstr "ID တမူထူးခြားသော ထုတ်ပေးသူ"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VALIDFROM.string.text
+msgid "Valid From"
+msgstr "မှ ခိုင်လုံသော"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VALIDTO.string.text
+msgid "Valid to"
+msgstr "သို့ ခိုင်လုံသော"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT.string.text
+msgid "Subject"
+msgstr "အကြောင်းအရာကိစ္စ"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_ID.string.text
+msgid "Subject Unique ID"
+msgstr "ID တမူထူးခြားသော အကြောင်းအရာကိစ္စ"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_PUBKEY_ALGO.string.text
+msgid "Subject Algorithm"
+msgstr "ပြဿနာဖြေရှင်းရန် အဓိက အကြောင်းအရာကိစ္စ"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_PUBKEY_VAL.string.text
+msgid "Public Key"
+msgstr "အများပိုင် သော့"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGNATURE_ALGO.string.text
+msgctxt "certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGNATURE_ALGO.string.text"
+msgid "Signature Algorithm"
+msgstr "ပြဿနာဖြေရှင်းရန် အဓိက မှန်ကန်ကြောင်း စစ်ဆေးချက်"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_THUMBPRINT_SHA1.string.text
+msgid "Thumbprint SHA1"
+msgstr "Thumbprint SHA1"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_THUMBPRINT_MD5.string.text
+msgid "Thumbprint MD5"
+msgstr "Thumbprint MD5"
+
+#: certificateviewer.src#RID_XMLSECTP_CERTPATH.FT_CERTPATH.fixedtext.text
+msgid "Certification path"
+msgstr "လမ်းကြောင်း ထောက်ခံချက်"
+
+#: certificateviewer.src#RID_XMLSECTP_CERTPATH.BTN_VIEWCERT.pushbutton.text
+msgctxt "certificateviewer.src#RID_XMLSECTP_CERTPATH.BTN_VIEWCERT.pushbutton.text"
+msgid "View Certificate..."
+msgstr "လက်မှတ် ကြည့်ပါ..."
+
+#: certificateviewer.src#RID_XMLSECTP_CERTPATH.FT_CERTSTATUS.fixedtext.text
+msgid "Certification status"
+msgstr "လက်ရှိအခြေအနေ ထောက်ခံချက်"
+
+#: certificateviewer.src#RID_XMLSECTP_CERTPATH.STR_PATH_CERT_OK.string.text
+msgid "The certificate is OK."
+msgstr "လက်မှတ် အိုကေ ဖြစ်သည်။"
+
+#: certificateviewer.src#RID_XMLSECTP_CERTPATH.STR_PATH_CERT_NOT_VALIDATED.string.text
+msgctxt "certificateviewer.src#RID_XMLSECTP_CERTPATH.STR_PATH_CERT_NOT_VALIDATED.string.text"
+msgid "The certificate could not be validated."
+msgstr "လက်မှတ် သည် မခိုင်လုံနိုင်ပါ။"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_DOC.fixedtext.text
+msgid "The following have signed the document content:"
+msgstr "အောက်ပါသည် မှတ်တမ်းမှတ်ရာ မာတိကာ မှန်ကန်ကြောင်း စစ်ဆေးထားသည် -"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_BASIC.fixedtext.text
+msgid "The following have signed the document macro:"
+msgstr "အောက်ပါသည် မှတ်တမ်းမှတ်ရာ မက်ခရို မှန်ကန်ကြောင်း စစ်ဆေးထားသည် -"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_PACK.fixedtext.text
+msgid "The following have signed this package:"
+msgstr "ဤအထုတ်သည် အောက်ပါ မှန်ကန်ကြောင်း စစ်ဆေးထားရှိသည် -"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_HEADERBAR.string.text
+msgid "\tSigned by\tDigital ID issued by\tDate"
+msgstr ""
+"\t မှန်ကန်ကြောင်း စစ်ဆေးချက်အားဖြင့် \t ဒစ်ဂျစ်တယ် ID ထုတ်ပေးခြင်းအားဖြင့် \t "
+"ရက်စွဲ"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_VALID_SIGNATURE.string.text
+msgid "Valid signature"
+msgstr "ခိုင်လုံသော မှန်ကန်ကြောင်း စစ်ဆေးချက်"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_NO_INFO_TO_VERIFY.string.text
+msgid "Certificate could not be validated"
+msgstr "လက်မှတ်သည် မခိုင်လုံနိုင်ပါ။"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_INVALID_SIGNATURE.string.text
+msgctxt "digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_INVALID_SIGNATURE.string.text"
+msgid "The signatures in this document are invalid"
+msgstr "ဤမှတ်တမ်းမှတ်ရာရှိ မှန်ကန်ကြောင်း စစ်ဆေးချက်များ မမှန်ကန်ပါ"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_VALID.fixedtext.text
+msgid "The signatures in this document are valid"
+msgstr "ဤမှတ်တမ်းမှတ်ရာရှိ မှန်ကန်ကြောင်း စစ်ဆေးချက်များ ခိုင်လုံသည်။"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_OLDSIGNATURE.fixedtext.text
+msgid "Not all parts of the document are signed"
+msgstr ""
+"မှတ်တမ်းမှတ်ရာ၏ မည်သည့်အစိတ်အပိုင်းများအားလုံးမှ မှန်ကန်ကြောင်းအတည်မပြု "
+"နိုင်ပါ။"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_BROKEN.fixedtext.text
+msgctxt "digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_BROKEN.fixedtext.text"
+msgid "The signatures in this document are invalid"
+msgstr "ဤမှတ်တမ်းမှတ်ရာရှိ မှန်ကန်ကြောင်း စစ်ဆေးချက်များ မမှန်ကန်ပါ"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_VIEWCERT.pushbutton.text
+msgctxt "digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_VIEWCERT.pushbutton.text"
+msgid "View Certificate..."
+msgstr "လက်မှတ် ကြည့်ပါ..."
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_ADDCERT.pushbutton.text
+msgid "Sign Document..."
+msgstr ""
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_REMOVECERT.pushbutton.text
+msgctxt "digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_REMOVECERT.pushbutton.text"
+msgid "Remove"
+msgstr "ဖယ်ရှားပါ"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_OK.okbutton.text
+msgid "Close"
+msgstr ""
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.modaldialog.text
+msgid "Digital Signatures"
+msgstr "ဒစ်ဂျဒ်တယ် မှန်ကန်ကြောင်း စစ်ဆေးချက်များ"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_OLD_ODF_FORMAT.errorbox.text
+msgid ""
+"This document contains signatures in ODF 1.1 (OpenOffice.org 2.x) format. "
+"Signing documents in %PRODUCTNAME %PRODUCTVERSION requires ODF 1.2 format "
+"version. Thus no signatures can be added or removed to this document.\n"
+"\n"
+"Save document in ODF 1.2 format and add all desired signatures again."
+msgstr ""
+"ဤမှတ်တမ်းမှတ်ရာတွင် ODF 1.1 (OpenOffice.org 2.x) စီစဉ်ဖွဲ့စည်းမှု "
+"ဆိုင်ရာလက္ခဏာရပ်များပါဝင်သည်။ %PRODUCTNAME %PRODUCTVERSION ရှိ "
+"မှတ်တမ်းမှတ်ရာများကို အသုံးပြု နိုင်ရန် ODF 1.2 စီစဉ်ဖွဲ့စည်းမှု ဆိုင်ရာ "
+"ဗားရှင်းပုံစံ လိုအပ်သည်။ ထို့ကြောင့် ဤမှတ်တမ်းမှတ်ရာတွင် "
+"မည်သည့်လက္ခဏာရပ်များကိုမှ ထပ်မံထည့်သွင်းရန် (သို့) ပယ်ဖျက်ရန် မလိုပါ။ \n"
+"\n"
+"ODF 1.2 ရှိ စီစဉ်ဖွဲ့စည်းမှု ဆိုင်ရာ မှတ်တမ်းမှတ်ရာများကိုသိမ်းဆည်းပြီး "
+"သင်ဆန္ဒရှိသည်များအားလုံးကို ထပ်မံထည့်သွင်းနိုင်ပါသည်။ဲ့"
+
+#: digitalsignaturesdialog.src#MSG_XMLSECDLG_QUERY_REMOVEDOCSIGNBEFORESIGN.querybox.text
+msgid ""
+"Adding or removing a macro signature will remove all document signatures.\n"
+"Do you really want to continue?"
+msgstr ""
+"မက်ခရိုထည့်သွင်းမှုပြုစဉ်(သို့)ဖယ်ရှားမှုပြုစဉ် မှတ်တမ်းမှတ်ရာအားလုံး၏ "
+"သွင်ပြင်လက္ခဏာရပ်များကို ဖယ်ရှားမှုပြုလိမ့်မည်။\n"
+"ဆက်လက်လုပ်ဆောင်ရန် ဆန္ဒရှိပါသလား။"
+
+#: macrosecurity.src#RID_XMLSECTP_MACROSEC.1.RID_XMLSECTP_SECLEVEL.pageitem.text
+msgid "Security Level"
+msgstr "လုံခြုံရေး အဆင့်"
+
+#: macrosecurity.src#RID_XMLSECTP_MACROSEC.1.RID_XMLSECTP_TRUSTSOURCES.pageitem.text
+msgid "Trusted Sources"
+msgstr "ယုံကြည်သည့် မူရင်းများ"
+
+#: macrosecurity.src#RID_XMLSECTP_MACROSEC.BTN_RESET.pushbutton.text
+msgid "Reset"
+msgstr "ပြန်စပါ"
+
+#: macrosecurity.src#RID_XMLSECTP_MACROSEC.tabdialog.text
+msgid "Macro Security"
+msgstr "မက်ခရို လုံခြုံရေး"
+
+#: macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.radiobutton.text
+msgid ""
+"~Very high.\n"
+"Only macros from trusted file locations are allowed to run. All other "
+"macros, regardless whether signed or not, are disabled."
+msgstr ""
+"အလွန်မြင့်သည်။ \n"
+"ယုံကြည်သည့်ဖိုင်နေရာများမှ မက်ခရိုများသာ အလုပ်လုပ်ရန် ခွင့်ပြုထားသည်။ အခြား "
+"မက်ခရိုများအားလုံး ၊ မစဉ်းစားဘဲ မှန်ကန်ကြောင်း စစ်ဆေးခြင်းဖြစ်စေ (သို့) "
+"မစစ်ဆေးခြင်းဖြစ်စေ ရပ်ဆိုင်းသည်။"
+
+#: macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.radiobutton.text
+msgid ""
+"H~igh.\n"
+"Only signed macros from trusted sources are allowed to run. Unsigned macros "
+"are disabled."
+msgstr ""
+"အမြင့်။ \n"
+"ယုံကြည်သည့် မူရင်းများမှ  မက်ခရိုများသာပေးလိုက်လျှင် အလုပ်လုပ်ရန် "
+"ခွင့်ပြုထားသည်။ မက်ခရိုများမပေးလျှင် ရပ်ဆိုင်းသည်။"
+
+#: macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.radiobutton.text
+msgid ""
+"~Medium.\n"
+"Confirmation required before executing macros from untrusted sources."
+msgstr ""
+"ကြားခံ။ \n"
+"မယုံကြည်သည့် မူရင်းများမှ မက်ခရိုများ တွက်ချက်  ဆောင်ရွက် မဖြေရှင်းမီ "
+"အတည်ပြုချက် လိုအပ်သည်။"
+
+#: macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.radiobutton.text
+msgid ""
+"~Low (not recommended).\n"
+"All macros will be executed without confirmation. Use this setting only if "
+"you are certain that all documents that will be opened are safe."
+msgstr ""
+"အနိမ့် (အကြံ မပြုထားပါ)။ \n"
+"အတည်ပြုချက် မပါဘဲ မက်ခရိုများအားလုံး တွက်ချက် ဆောင်ရွက် ဖြေရှင်းရလိမ့်မည်။ "
+"အကယ်၍ သေချာသော ထို မှတ်တမ်းမှတ်ရာများအားလုံး ရှိပါက လုံခြုံစွာ "
+"ဖွင့်ရလိမ့်မည်ဖြစ်၍ ဤရွေးနိုင်ခြင်းကိုသာ သုံးပါ။"
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.fixedline.text
+msgid "Trusted certificates"
+msgstr "ယုံကြည်သည့် လက်မှတ်များ"
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.STR_HEADERBAR.string.text
+msgctxt "macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.STR_HEADERBAR.string.text"
+msgid "Issued to\tIssued by\tExpiration date"
+msgstr "သက်တမ်းကုန် \t အကြောင်းအရာ \t ထုတ်ပေးပါ"
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_ADD_TRUSTCERT.pushbutton.text
+msgctxt "macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_ADD_TRUSTCERT.pushbutton.text"
+msgid "Add..."
+msgstr "ပေါင်းထည့်ပါ..."
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_VIEW_TRUSTCERT.pushbutton.text
+msgid "View..."
+msgstr "ကြည့်ပါ..."
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_REMOVE_TRUSTCERT.pushbutton.text
+msgctxt "macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_REMOVE_TRUSTCERT.pushbutton.text"
+msgid "Remove"
+msgstr "ဖယ်ရှားပါ"
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTFILELOC.fixedline.text
+msgid "Trusted file locations"
+msgstr "ယုံကြည်သည့် ဖိုင် နေရာများ"
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FI_TRUSTFILELOC.fixedtext.text
+msgid ""
+"Document macros are always executed if they have been opened from one of the "
+"following locations."
+msgstr ""
+"အကယ်၍ အောက်ပါ နေရာများ၏ တစ်ခုမှ သူတို့ ဖွင့်ထားပါက မှတ်တမ်းမှတ်ရာ မက်ခရိုကို "
+"အမြဲတမ်း တွက်ချက် ဆောင်ရွက် ဖြေရှင်းထားသည်။"
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_ADD_TRUSTFILELOC.pushbutton.text
+msgctxt "macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_ADD_TRUSTFILELOC.pushbutton.text"
+msgid "Add..."
+msgstr "ပေါင်းထည့်ပါ..."
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_REMOVE_TRUSTFILELOC.pushbutton.text
+msgctxt "macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_REMOVE_TRUSTFILELOC.pushbutton.text"
+msgid "Remove"
+msgstr "ဖယ်ရှားပါ"
+
+#: macrosecurity.src#RID_XMLSECTP_READONLY_CONFIG_TIP.string.text
+msgid "This setting is protected by the Administrator"
+msgstr "ဤ ရွေးနိုင်ခြင်းသည် တာဝန်ရှိသူအားဖြင့် ကာကွယ်ထားသည်"
+
+#: warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR1A.fixedtext.text
+msgid "The document contains document macros signed by:"
+msgstr "မှတ်တမ်းမှတ်ရာတွင် မှတ်တမ်းမှတ်ရာမက်ခရိုအနေဖြင့် ပါဝင်သည်"
+
+#: warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR1B.fixedtext.text
+msgid "The document contains document macros."
+msgstr "မှတ်တမ်းမှတ်ရာတွင် မှတ်တမ်းမှတ်ရာမက်ခရိုပါဝင်သည်"
+
+#: warnings.src#RID_XMLSECTP_MACROWARN.PB_VIEWSIGNS.pushbutton.text
+msgid "View Signatures..."
+msgstr "မှန်ကန်ကြောင်း စစ်ဆေးချက်များ အသေးစိတ်ကြည့်ပါ..."
+
+#: warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR2.fixedtext.text
+msgid ""
+"Macros may contain viruses. Disabling macros for a document is always save. "
+"If you disable macros you may lose functionality provided by the document "
+"macros."
+msgstr ""
+"မက်ခရိုတွင် ဗိုင်းရပ်စ်များ ပါဝင်နိုင်သည်။ မှတ်တမ်းမှတ်ရာတစ်ခုကို "
+"အစဉ်သိမ်းဆည်းရန်အတွက် မက်ခရိုများ လုပ်ဆောင်မှုမပြု နိုင်ပါ။ "
+"မက်ခရိုလုပ်ဆောင်မှု မပြု နိုင်ပါက မှတ်တမ်းမှတ်ရာ မက်ခရို၏ လုပ်ဆောင်ချက်များ "
+"ပျောက်ဆုံးနိုင်သည်။"
+
+#: warnings.src#RID_XMLSECTP_MACROWARN.CB_ALWAYSTRUST.checkbox.text
+msgid "Always trust macros from this source"
+msgstr "ဤရင်းမြစ်မှ မက်ခရိုများ ယုံကြည်စိတ်ချရမှုရှိသည်"
+
+#: warnings.src#RID_XMLSECTP_MACROWARN.PB_ENABLE.pushbutton.text
+msgid "Enable Macros"
+msgstr "သတ္တိရှိ မက်ခရို"
+
+#: warnings.src#RID_XMLSECTP_MACROWARN.PB_DISABLE.cancelbutton.text
+msgid "Disable Macros"
+msgstr "သတ္တိမဲ့ မက်ခရို"
+
+#: warnings.src#RID_XMLSECTP_MACROWARN.modaldialog.text
+msgid "Security Warning"
+msgstr "လုံခြုံရေး သတိပေးချက်"
+
+#: warnbox.src#RID_XMLSECWB_NO_MOZILLA_PROFILE.warningbox.text
+msgid ""
+"Digital signatures functionality could not be used, because no Mozilla user "
+"profile was found. Please check the Mozilla installation."
+msgstr ""
+"ဒစ်ဂျစ်တယ်နည်းပညာဆိုင်ရာမှန်ကန်ကြောင်းစစ်ဆေးမှုအသုံးမပြု နိုင်ပါ။ "
+"အဘယ်ုကြောင့်ဆိုသော် မော်ဇီလာအသုံးပြုသူ ပရိုဖိုင် ရှာဖွေမတွေ့ရှိပါ။ "
+"မော်ဇီလာထည့်သွင်းမှုအား ကျေးဇူးပြု၍ စစ်ဆေးပါ။"

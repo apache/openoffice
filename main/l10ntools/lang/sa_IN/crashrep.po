@@ -1,0 +1,275 @@
+
+#: crashrep.ulf#_ALLOW_CONTACT_.LngText.text
+msgid "~I allow Oracle to contact me regarding this report."
+msgstr ""
+"अहं Sun Microsystems इत्याख्याय अनुमतिं ददामि प्रतिवेदन-विषये मया सह "
+"संयोगस्थापनार्थम्.(~I)"
+
+#: crashrep.ulf#_BACK_BUTTON_.LngText.text
+msgid " << ~Back"
+msgstr " << पश्चातम् गच्छ (~B)"
+
+#: crashrep.ulf#_CANCEL_BUTTON_.LngText.text
+msgid "Cancel"
+msgstr "निरसय"
+
+#: crashrep.ulf#_DONOT_SEND_BUTTON_.LngText.text
+msgid "Do ~Not Send"
+msgstr "न प्रेरय (~N)"
+
+#: crashrep.ulf#_ENTER_DESCRIPTION_.LngText.text
+msgid "~How were you using %PRODUCTNAME% when the error occurred ?"
+msgstr ""
+"त्रुटेः आगमनकाले केनोपायेन भवान् %PRODUCTNAME% इत्यस्य प्रयोगं कुर्वन् आसीत् "
+"(~H)?"
+
+#: crashrep.ulf#_ENTER_EMAIL_.LngText.text
+msgid "Please enter your e-mail address."
+msgstr "कृपया स्व-ई-सन्देश-पत्रादेशम् अभिलिखतु."
+
+#: crashrep.ulf#_ENTER_TITLE_.LngText.text
+msgid ""
+"Which type of document (e.g. presentation) were you using when the error "
+"occurred?"
+msgstr ""
+"किदृशं लेखपत्रं (उदा. प्रस्तुतिकरणम्) भवान् प्रयोगरतः आसीत् यदा त्रूटिः "
+"अभवत्?"
+
+#: crashrep.ulf#_ERROR_MSG_DISK_FULL_.LngText.text
+msgid ""
+"The error report could not be temporarily saved and could therefore not be "
+"sent."
+msgstr "त्रुटि-प्रतिवेदनं अस्थायीरूपेण सञ्चये अपारग, प्रेरणे च अक्षमः."
+
+#: crashrep.ulf#_ERROR_MSG_NOCONNECT_.LngText.text
+msgid ""
+"The error report could not be sent because there is no Internet connection. "
+"Please check your Internet settings."
+msgstr ""
+"त्रुटि-प्रतिवेदन-प्रेरणे असमर्थः अन्तर्जालस्य असंयोगत्त्वात्,. "
+"स्वकीय-अन्तर्जाल-व्यवस्था परीक्षय."
+
+#: crashrep.ulf#_ERROR_MSG_NOEMAILADDRESS_.LngText.text
+msgid ""
+"You have marked the option 'I allow Oracle to contact me regarding this "
+"report.'\n"
+"Please enter your e-mail address."
+msgstr ""
+"भवता बिकल्पमिदम् चिह्णितं, यत् \"Sun Microsystems इत्याख्याय अनुमतिं ददामि "
+"प्रतिवेदन-विषये मया सह संयोगस्थापनार्थम्.'\n"
+"स्व-ई-सन्देश-पत्रादेशं अभिलिखतु."
+
+#: crashrep.ulf#_ERROR_MSG_PROXY_.LngText.text
+msgid ""
+"The error report could not be sent. Please check the proxy settings under "
+"'Options' in the Error Report Tool."
+msgstr ""
+"त्रुटि-प्रतिवेदन-प्रेरणे असमर्थः.  त्रुटि-प्रतिवेदन-उपकरणस्य अन्तर्गतस्य "
+"विकल्पानां अन्यतमस्य प्रक्सि-व्यवस्थायाः परीक्षा कर्तव्या."
+
+#: crashrep.ulf#_ERROR_MSG_SENDMAIL_.LngText.text
+msgid ""
+"The error report could not be sent because 'sendmail' could not be started.\n"
+"Please check the 'sendmail' settings."
+msgstr ""
+"त्रुटि-प्रतिवेदनन प्रेरितं \"सन्देश-प्रेरणम्\" इत्यस्य अनारम्भत्त्वात्. \n"
+" सेंडमेल इत्यस्य स्थापना कृपया परीक्षणीय ."
+
+#: crashrep.ulf#_ERROR_MSG_SIMPLE_MAPI_.LngText.text
+msgid ""
+"The error report could not be sent because the default e-mail program does "
+"not support MAPI.\n"
+" Please use a MAPI-compatible e-mail program."
+msgstr ""
+"त्रुटि-प्रतिवेदनं प्रेरणे अक्षमः, मूलभूत- ई-संन्देश-कार्यक्रमस्य MAPI "
+"असमर्थितत्वात्.\n"
+" MAPI-सुसंगतस्य ई-सन्देशकार्यक्रमस्य प्रयोगं करोतु."
+
+#: crashrep.ulf#_MSG_CMDLINE_USAGE_.LngText.text
+msgid "Usage:"
+msgstr "प्रयोग: "
+
+#: crashrep.ulf#_MSG_PARAM_HELP_DESCRIPTION_.LngText.text
+msgid ""
+"Shows this help text.\n"
+"Detailed information can be found in the Setup Guide."
+msgstr ""
+"सहयता-पाठं प्रदर्शयति.\n"
+"विस्तृत-विवरणं सेटअप गाइड इतौ उपलब्धम्."
+
+#: crashrep.ulf#_MSG_PARAM_PROCESSID_.LngText.text
+msgid "-p <process ID>"
+msgstr "-p <प्रक्रिया ID>"
+
+#: crashrep.ulf#_MSG_PARAM_PROCESSID_DESCRIPTION_.LngText.text
+msgid "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
+msgstr ""
+"%PRODUCTNAME% प्रक्रिया ID (PID) इत्यस्य त्रुटि-प्रतिवेदन-यन्त्रे निर्यातं "
+"कुरु"
+
+#: crashrep.ulf#_NEXT_BUTTON_.LngText.text
+msgid "~Next >>"
+msgstr "परवर्ती (~N)>>"
+
+#: crashrep.ulf#_OK_BUTTON_.LngText.text
+msgid "OK"
+msgstr "सम्यक्\" "
+
+#: crashrep.ulf#_OPTIONS_BUTTON_.LngText.text
+msgid "~Options..."
+msgstr "विकल्पानि (~O)..."
+
+#: crashrep.ulf#_OPTIONS_TITLE_.LngText.text
+msgid "Options"
+msgstr "विकल्पानि"
+
+#: crashrep.ulf#_PRIVACY_URL_.LngText.text
+msgid "http://www.oracle.com/html/services-privacy-policy.html"
+msgstr "http://www.sun.com/privacy/"
+
+#: crashrep.ulf#_PROXY_SETTINGS_ADDRESS_.LngText.text
+msgid "HT~TP Proxy"
+msgstr "HT~TP प्रॉक्सी"
+
+#: crashrep.ulf#_PROXY_SETTINGS_DESCRIPTION_.LngText.text
+msgid ""
+"The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to "
+"be able to send error reports.\n"
+"\n"
+"Companies often use proxy servers in conjunction with a firewall to protect "
+"the network.\n"
+"\n"
+"If this applies to your situation, you have to specify the address and port "
+"for the server."
+msgstr ""
+"%PRODUCTNAME% त्रुटि-प्रतिवेदन-संप्रेषणाय अन्तर्जाल-संयोगम् अपेक्षितम्\n"
+"\n"
+"सामान्यतया उद्योग-संस्थाः संजालसंरक्षणनाय अग्निसीमासह प्रॉक्सिसर्वरं "
+"उपयोजयन्ति\n"
+"यदि इदमपेक्षितं तदा सर्वर-पत्रादेशं पोर्टं च निर्दिष्टं अपेक्षितमपि"
+
+#: crashrep.ulf#_PROXY_SETTINGS_DIRECT_.LngText.text
+msgid "Use ~direct connection to the Internet"
+msgstr "अन्तर्जाले साक्षात-संयोजनस्य व्यवहारं कुरु (~d)"
+
+#: crashrep.ulf#_PROXY_SETTINGS_HEADER_.LngText.text
+msgid "Proxy settings"
+msgstr "प्रॉक्सी निर्धारणम्"
+
+#: crashrep.ulf#_PROXY_SETTINGS_MANUAL_.LngText.text
+msgid "Use ~manual settings"
+msgstr "स्व-हस्त-स्थापनायाः व्यवहारं कुरु (~m)"
+
+#: crashrep.ulf#_PROXY_SETTINGS_PORT_.LngText.text
+msgid "~Port"
+msgstr "पोर्ट (~P)"
+
+#: crashrep.ulf#_PROXY_SETTINGS_SYSTEM_.LngText.text
+msgid "Use ~system settings"
+msgstr "व्यवस्था-स्थापनायाः प्रयोगं कुरु (~s)"
+
+#: crashrep.ulf#_REPORT_BODY_.LngText.text
+msgid ""
+"The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information "
+"that could help Oracle improve %PRODUCTNAME%.\n"
+"In the spaces below, you can enter a title for your crash report and "
+"describe the action you were trying to carry out when the error occurred. "
+"Then click 'Send'.\n"
+msgstr ""
+"%PRODUCTNAME% %PRODUCTVERSION% त्रुटि-प्रतिवेदन-सूचना संगृहीता, येन Sun "
+"Microsystems %PRODUCTNAME% इदम् उन्नततरं कर्तुं सहायता करिष्यति.\n"
+"निम्नभागे, भवान् एकं शीर्षम् संयोज्य अवपात-विषयक-तथ्यादिनं यथा किम् कार्यं "
+"करण-काले त्रूटिः सञ्जाता इत्यादयः लिखित्वा, ततः \"प्रेरय\" इति पिञ्जं क्लीकं "
+"करोतु .\n"
+
+#: crashrep.ulf#_REPORT_CAPTION_.LngText.text
+msgctxt "crashrep.ulf#_REPORT_CAPTION_.LngText.text"
+msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "%PRODUCTNAME% %PRODUCTVERSION% त्रुटि-प्रतिवेदनम्"
+
+#: crashrep.ulf#_REPORT_HEADER_.LngText.text
+msgid "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
+msgstr "%PRODUCTNAME% %PRODUCTVERSION% चालने एका त्रुटिः उत्पन्ना जाता"
+
+#: crashrep.ulf#_SAVE_REPORT_BUTTON_.LngText.text
+msgid "~Save Report..."
+msgstr "प्रतिवेदनं सञ्चय (~S)..."
+
+#: crashrep.ulf#_SAVE_REPORT_TITLE_.LngText.text
+msgid "Save Report to"
+msgstr "इतौ प्रतिवेदनं सञ्चय"
+
+#: crashrep.ulf#_SENDING_REPORT_HEADER_.LngText.text
+msgid "Sending Error Report"
+msgstr "त्रुटि-प्रतिवेदनं प्रेरण् अस्ति"
+
+#: crashrep.ulf#_SENDING_REPORT_STATUS_.LngText.text
+msgid "Status: Sending error report"
+msgstr "स्थिति-त्रुटि-प्रतिवेदनं प्रेरण् अस्ति"
+
+#: crashrep.ulf#_SENDING_REPORT_STATUS_FINISHED_.LngText.text
+msgid "Status: The error report has been sent successfully."
+msgstr "स्थिति-त्रुटि-प्रतिवेदनं सफलरूपेण प्ररितम्"
+
+#: crashrep.ulf#_SEND_BUTTON_.LngText.text
+msgid "S~end"
+msgstr "प्रेरय (~e)"
+
+#: crashrep.ulf#_SHOW_REPORT_BUTTON_.LngText.text
+msgid "Show ~Report..."
+msgstr "प्रतिवेदनं प्रदर्शय (~R)..."
+
+#: crashrep.ulf#_WELCOME_BODY1_.LngText.text
+msgid ""
+"This error report tool gathers information about how %PRODUCTNAME% is "
+"working and sends it to Oracle to help improve future versions.\n"
+"\n"
+msgstr ""
+"त्रुटि-प्रतिवेदन-यन्त्र-सूचनान् संग्रहं करोति कथं %PRODUCTNAME% कार्यं करोति "
+"इदं च Sun माइक्रोसिस्टम-इत्यस्य भविष्यत्-संस्करणं उन्नतकतणार्थं प्रष्यते.\n"
+"\n"
+
+#: crashrep.ulf#_WELCOME_BODY2_.LngText.text
+msgid ""
+"It's easy - just send the report without any further effort on your part by "
+"clicking 'Send' in the next dialog, or you can briefly describe how the "
+"error occurred and then click 'Send'. If you want to see the report, click "
+"the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n"
+"\n"
+msgstr ""
+"सरलमेतत् - अतिरिक्त-प्रचेष्टां विना \"प्रेरय\" इत्योपरि क्लीकेन संक्षेपेन वा "
+"वदतु कथं त्रूटिः सञ्जाता, तदन्तरं \"प्रेरय\" इत्योपरि क्लीकं करोतु्.यदि भवान् "
+"प्रतिवेदन-दर्शने उत्सुकः असि तर्हि \"प्रदर्शय प्रतिवेदनं\" इति पिञ्जोपरि "
+"क्लीकं करोतु. किमपि लेखं न प्रेरितं भवति यदि भवान् \"न प्रेरयतु\" इत्योपरि "
+"क्लीकं करोति.\n"
+"\n"
+
+#: crashrep.ulf#_WELCOME_BODY3_.LngText.text
+msgid ""
+"Customer Privacy\n"
+"The information gathered is limited to data concerning the state of %"
+"PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information "
+"about passwords or document contents is not collected.\n"
+"\n"
+"The information will only be used to improve the quality of %PRODUCTNAME% "
+"and will not be shared with third parties.\n"
+"For more information on Oracle's privacy policy, visit\n"
+msgstr ""
+"उपभोक्ता गोपनीयता\n"
+"%PRODUCTNAME% % इत्योपरि संगृहीत-तथ्यादयः  एतावत् सीमावद्धाः . "
+"PRODUCTVERSION% की स्थिति से जुड़ी जब त्रुटि पैदा होती है. कूटशब्द या "
+"दस्तावेज सामग्री के बारे में अन्य सूचना जमा नहीं किया गया है.\n"
+"\n"
+"सूचना %PRODUCTNAME% की गुणवत्ता सुधारने के लिये प्रयोग किया जायेगा और किसी "
+"तीसरी पार्टी से साझा नहीं किया जायेगा.\n"
+"Sun माइक्रोसिस्टम की गोपनीयता नीति के संबंध में ज्यादा जानकारी के लिये, "
+"देखें\n"
+
+#: crashrep.ulf#_WELCOME_CAPTION_.LngText.text
+msgctxt "crashrep.ulf#_WELCOME_CAPTION_.LngText.text"
+msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "%PRODUCTNAME% %PRODUCTVERSION% त्रुटि-प्रतिवेदनम्"
+
+#: crashrep.ulf#_WELCOME_HEADER_.LngText.text
+msgid "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "%PRODUCTNAME% %PRODUCTVERSION% त्रुटि-प्रतिवेदने भवतः स्वागतम्"

@@ -1,0 +1,952 @@
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: ~\n"
+
+#: alreadyopen.src#STR_ALREADYOPEN_MSG.string.text
+msgid ""
+"Document file '$(ARG1)' is locked for editing by yourself on a different "
+"system since $(ARG2)\n"
+"\n"
+"Open document read-only, or ignore own file locking and open the document "
+"for editing.\n"
+"\n"
+msgstr ""
+"Файл документа «$(ARG1)» заблокирован для редактирования вами же в другой "
+"системе с $(ARG2)\n"
+"\n"
+"Откройте документ только для чтения или игнорируйте свою собственную "
+"блокировку и откройте документ для редактирования.\n"
+"\n"
+
+#: alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.string.text
+msgctxt "alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.string.text"
+msgid "Open ~Read-Only"
+msgstr "Открыть ~только для чтения"
+
+#: alreadyopen.src#STR_ALREADYOPEN_OPEN_BTN.string.text
+msgid "~Open"
+msgstr "Открыть"
+
+#: alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.string.text
+msgid ""
+"Document file '$(ARG1)' is locked for editing by yourself on a different "
+"system since $(ARG2)\n"
+"\n"
+"Close document on other system and retry saving or ignore own file locking "
+"and save current document.\n"
+"\n"
+msgstr ""
+"Файл документа «$(ARG1)» заблокирован для редактирования Вами же в другой "
+"системе с $(ARG2)\n"
+"\n"
+"Закройте документ в другой системе и повторите сохранение или игнорируйте "
+"свою собственную блокировку и сохраните текущий вариант документа.\n"
+"\n"
+
+#: alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.string.text
+msgctxt "alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.string.text"
+msgid "~Retry Saving"
+msgstr "Повторить сохранение"
+
+#: alreadyopen.src#STR_ALREADYOPEN_SAVE_BTN.string.text
+msgid "~Save"
+msgstr "Сохранить"
+
+#: cookiedg.src#DLG_COOKIES.RB_INFUTURE_SEND.radiobutton.text
+msgctxt "cookiedg.src#DLG_COOKIES.RB_INFUTURE_SEND.radiobutton.text"
+msgid "~Send"
+msgstr "Отправить"
+
+#: cookiedg.src#DLG_COOKIES.RB_INFUTURE_IGNORE.radiobutton.text
+msgid "I~gnore"
+msgstr "Пропустить"
+
+#: cookiedg.src#DLG_COOKIES.RB_INFUTURE_INTERACTIVE.radiobutton.text
+msgid "I~nteractive"
+msgstr "Интерактивно"
+
+#: cookiedg.src#DLG_COOKIES.GB_INFUTURE.groupbox.text
+msgid "Future Cookie Handling"
+msgstr "Дальнейшая обработка файлов cookie"
+
+#: cookiedg.src#DLG_COOKIES.BTN_COOKIES_CANCEL.pushbutton.text
+msgid "~Ignore"
+msgstr "Пропустить"
+
+#: cookiedg.src#DLG_COOKIES.BTN_COOKIES_OK.pushbutton.text
+msgctxt "cookiedg.src#DLG_COOKIES.BTN_COOKIES_OK.pushbutton.text"
+msgid "~Send"
+msgstr "Отправить"
+
+#: cookiedg.src#STR_COOKIES_RECV_START.string.text
+msgid ""
+"The '${HOST}' server wishes to set one or more cookies.\n"
+"Cookies contain information referring to certain URL classes. If %"
+"PRODUCTNAME later requests a document with a URL corresponding to the class "
+"of a previously set cookie, %PRODUCTNAME will send this information to the "
+"server. This allows a server to recognize the status of a WWW application, "
+"e.g., when shopping online.\n"
+"\n"
+"The following Cookies should be set:\n"
+"\n"
+msgstr ""
+"Сервер «${HOST}» пытается сохранить один или несколько файлов Cookiе.\n"
+"Эти файлы обычно содержат информацию о том, какие параметры были выбраны "
+"пользователем при посещении данного URL. Если впоследствии в %PRODUCTNAME "
+"будет открыт документ, полученный с URL, сервер которого сохранил на вашем "
+"компьютере Cookie, то %PRODUCTNAME направит информацию из Cookie на этот "
+"сервер. Таким образом, сервер получит состояние приложения и ваши настройки "
+"(это может использоваться, например, при совершении покупок в Интернете).\n"
+"\n"
+"Будут сохранены следующие файлы Cookie:\n"
+"\n"
+
+#: cookiedg.src#STR_COOKIES_RECV_COOKIES.string.text
+msgctxt "cookiedg.src#STR_COOKIES_RECV_COOKIES.string.text"
+msgid "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
+msgstr "Домен: ${DOMAIN}, Путь: ${PATH}, Cookie: ${COOKIE}.\n"
+
+#: cookiedg.src#STR_COOKIES_RECV_TITLE.string.text
+msgid "Cookie Reception"
+msgstr "Приём файлов Cookie"
+
+#: cookiedg.src#STR_COOKIES_SEND_START.string.text
+msgid ""
+"%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent "
+"when requesting the document ${PATH}.\n"
+"Cookies contain information which refers to certain URL classes. They are "
+"sent by some servers to %PRODUCTNAME where they are saved when certain "
+"documents are accessed. If %PRODUCTNAME loads a document that, according to "
+"the URL, corresponds to a class of one of the previously received Cookies, %"
+"PRODUCTNAME will send this information to that server. This enables a server "
+"to keep track of the status of a WWW application, e.g., when shopping "
+"online.\n"
+"\n"
+"The following Cookies should be set:\n"
+"\n"
+msgstr ""
+"%PRODUCTNAME сохранил для сервера «${HOST}» файлы Cookie, которые будут "
+"отправляться обратно на сервер при каждом открытии документа «${PATH}».\n"
+"Эти файлы обычно содержат информацию о том, какие параметры были выбраны "
+"пользователем при посещении данного URL. Если впоследствии в %PRODUCTNAME "
+"будет открыт документ, полученный с URL, сервер которого сохранил на вашем "
+"компьютере Cookie, то %PRODUCTNAME направит информацию из Cookie на этот "
+"сервер. Таким образом, сервер получит состояние приложения и ваши настройки "
+"(это может использоваться, например, при совершении покупок в Интернете).\n"
+"\n"
+"Будут сохранены следующие файлы Cookie:\n"
+"\n"
+
+#: cookiedg.src#STR_COOKIES_SEND_COOKIES.string.text
+msgctxt "cookiedg.src#STR_COOKIES_SEND_COOKIES.string.text"
+msgid "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
+msgstr "Домен: ${DOMAIN}, Путь: ${PATH}, Cookie: ${COOKIE}.\n"
+
+#: cookiedg.src#STR_COOKIES_SEND_TITLE.string.text
+msgid "Send Cookies"
+msgstr "Отправить файлы Cookie"
+
+#: filechanged.src#STR_FILECHANGED_TITLE.string.text
+msgid "Document Has Been Changed by Others"
+msgstr "Документ был изменён извне"
+
+#: filechanged.src#STR_FILECHANGED_MSG.string.text
+msgid ""
+"The file has been changed since it was opened for editing in %PRODUCTNAME. "
+"Saving your version of the document will overwrite changes made by others.\n"
+"\n"
+"Do you want to save anyway?\n"
+"\n"
+msgstr ""
+"После того, как вы открыли этот файл для редактирования в %PRODUCTNAME, в "
+"него были внесены изменения. Сохранение вашей версии документа аннулирует "
+"другие внесенные изменения.\n"
+"Продолжить сохранение?\n"
+"\n"
+
+#: filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.string.text
+msgid "~Save Anyway"
+msgstr "Продолжить сохранение"
+
+#: fltdlg.src#DLG_FILTER_SELECT.modaldialog.text
+msgid "Filter Selection"
+msgstr "Выбор фильтра"
+
+#: ids.src#RID_KEEP_PASSWORD.string.text
+msgid "~Remember password until end of session"
+msgstr "Запомнить пароль до завершения сессии"
+
+#: ids.src#RID_SAVE_PASSWORD.string.text
+msgctxt "ids.src#RID_SAVE_PASSWORD.string.text"
+msgid "~Remember password"
+msgstr "Запомнить пароль"
+
+#: ids.src#STR_WARNING_BROKENSIGNATURE_TITLE.string.text
+msgid "Invalid Document Signature"
+msgstr "Недействительная подпись"
+
+#: ids.src#STR_WARNING_INCOMPLETE_ENCRYPTION_TITLE.string.text
+msgid "Non-Encrypted Streams"
+msgstr "Нешифрованные потоки"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_ABORT___ERRCODE_RES_MASK_.string.text
+msgid "The operation executed on $(ARG1) was aborted."
+msgstr "Выполняемая на $(ARG1) операция прервана."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_ACCESSDENIED___ERRCODE_RES_MASK_.string.text
+msgid "Access to $(ARG1) was denied."
+msgstr "Доступ к $(ARG1) запрещён."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_ALREADYEXISTS___ERRCODE_RES_MASK_.string.text
+msgid "$(ARG1) already exists."
+msgstr "$(ARG1) уже существует."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_TARGETALREADYEXISTS___ERRCODE_RES_MASK_.string.text
+msgid "Target already exists."
+msgstr "Цель уже существует."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_MODULESIZEEXCEEDED___ERRCODE_RES_MASK_.string.text
+msgid ""
+"You are about to save/export a password protected basic library containing "
+"module(s) \n"
+"$(ARG1)\n"
+"which are too large to store in binary format. If you wish users that don't "
+"have access to the library password to be able to run macros in those "
+"module(s) you must split those modules into a number of smaller modules. Do "
+"you wish to continue to save/export this library?"
+msgstr ""
+"Вы собираетесь сохранить/экспортировать защищённую паролем библиотеку Basic, "
+"содержащую модули \n"
+"$(ARG1),\n"
+"слишком большие для сохранения в двоичном формате. Если вы хотите, чтобы "
+"пользователи, не знающие пароля, могли пользоваться макросами из защищённых "
+"паролем модулей, вы должны разбить эти модули на более мелкие. Продолжить "
+"сохранение/экспорт данной библиотеки?"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_BADCRC___ERRCODE_RES_MASK_.string.text
+msgid "The data from $(ARG1) has an incorrect checksum."
+msgstr "Данные $(ARG1) содержат неправильную контрольную сумму."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_CANTCREATE___ERRCODE_RES_MASK_.string.text
+msgid "The object $(ARG1) cannot be created in directory $(ARG2)."
+msgstr "Невозможно создать объект $(ARG1) в каталоге $(ARG2)."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_CANTREAD___ERRCODE_RES_MASK_.string.text
+msgid "Data of $(ARG1) could not be read."
+msgstr "Невозможно считать данные $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_CANTSEEK___ERRCODE_RES_MASK_.string.text
+msgid "The seek operation on $(ARG1) could not be performed."
+msgstr "Невозможно выполнить операцию seek на $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_CANTTELL___ERRCODE_RES_MASK_.string.text
+msgid "The tell operation on $(ARG1) could not be performed."
+msgstr "Невозможно выполнить операцию tell на $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_CANTWRITE___ERRCODE_RES_MASK_.string.text
+msgid "Data for $(ARG1) could not be written."
+msgstr "Записать данные для $(ARG1) невозможно."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_CURRENTDIR___ERRCODE_RES_MASK_.string.text
+msgid "Action impossible: $(ARG1) is the current directory."
+msgstr "Данная операция невыполнима: $(ARG1) является текущим каталогом."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTREADY___ERRCODE_RES_MASK_.string.text
+msgid "$(ARG1) is not ready."
+msgstr "Устройство $(ARG1) не готово."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTSAMEDEVICE___ERRCODE_RES_MASK_.string.text
+msgid "Action impossible: $(ARG1) and $(ARG2) are different devices (drives)."
+msgstr ""
+"Данная операция невыполнима: $(ARG1) и $(ARG2) являются различными "
+"устройствами."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_GENERAL___ERRCODE_RES_MASK_.string.text
+msgid "General input/output error while accessing $(ARG1)."
+msgstr "Общая ошибка ввода/вывода при доступе к $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_INVALIDACCESS___ERRCODE_RES_MASK_.string.text
+msgid "An attempt was made to access $(ARG1) in an invalid way."
+msgstr "Попытка получить доступ к $(ARG1) некорректным способом."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_INVALIDCHAR___ERRCODE_RES_MASK_.string.text
+msgid "$(ARG1) contains invalid characters."
+msgstr "$(ARG1) содержит недопустимые символы."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_INVALIDDEVICE___ERRCODE_RES_MASK_.string.text
+msgid "The device (drive) $(ARG1) is invalid."
+msgstr "Устройство $(ARG1) недоступно."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_INVALIDLENGTH___ERRCODE_RES_MASK_.string.text
+msgid "The data from $(ARG1) has an invalid length."
+msgstr "Недопустимый размер данных с $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_INVALIDPARAMETER___ERRCODE_RES_MASK_.string.text
+msgid "The operation on $(ARG1) was started with an invalid parameter."
+msgstr "Операция на $(ARG1) запущена с недопустимым параметром."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_ISWILDCARD___ERRCODE_RES_MASK_.string.text
+msgid "The operation cannot be performed because $(ARG1) contains wildcards."
+msgstr ""
+"Невозможно выполнить операцию из-за содержащихся в $(ARG1) групповых "
+"символов."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_LOCKVIOLATION___ERRCODE_RES_MASK_.string.text
+msgid "Error during shared access to $(ARG1)."
+msgstr "Ошибка совместного доступа к $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_MISPLACEDCHAR___ERRCODE_RES_MASK_.string.text
+msgid "$(ARG1) contains misplaced characters."
+msgstr "$(ARG1) содержит неправильно расположенные символы."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NAMETOOLONG___ERRCODE_RES_MASK_.string.text
+msgid "The name $(ARG1) contains too many characters."
+msgstr "Имя $(ARG1) содержит слишком много символов."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTEXISTS___ERRCODE_RES_MASK_.string.text
+msgid "$(ARG1) does not exist."
+msgstr "$(ARG1) не существует."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTEXISTSPATH___ERRCODE_RES_MASK_.string.text
+msgid "The path $(ARG1) does not exist."
+msgstr "Путь к $(ARG1) не существует."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTSUPPORTED___ERRCODE_RES_MASK_.string.text
+msgid "The operation on $(ARG1) is not supported on this operating system."
+msgstr "Данной операционной системой не поддерживается операция на $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTADIRECTORY___ERRCODE_RES_MASK_.string.text
+msgid "$(ARG1) is not a directory."
+msgstr "$(ARG1) не является каталогом."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTAFILE___ERRCODE_RES_MASK_.string.text
+msgid "$(ARG1) is not a file."
+msgstr "$(ARG1) не является файлом."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_OUTOFSPACE___ERRCODE_RES_MASK_.string.text
+msgid "There is no space left on device $(ARG1)."
+msgstr "На устройстве $(ARG1) нет свободного места."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_TOOMANYOPENFILES___ERRCODE_RES_MASK_.string.text
+msgid ""
+"The operation on $(ARG1) cannot be performed because too many files are "
+"already open."
+msgstr ""
+"Невозможно выполнить операцию на $(ARG1), так как открыто слишком много "
+"файлов."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_OUTOFMEMORY___ERRCODE_RES_MASK_.string.text
+msgid ""
+"The operation on $(ARG1) cannot be performed because there is no more memory "
+"available."
+msgstr "Недостаточно памяти для выполнения операции на $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_PENDING___ERRCODE_RES_MASK_.string.text
+msgid "The operation on $(ARG1) cannot continue because more data is pending."
+msgstr ""
+"Невозможно продолжить операцию на $(ARG1), поскольку ожидаются ещё данные."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_RECURSIVE___ERRCODE_RES_MASK_.string.text
+msgid "$(ARG1) cannot be copied into itself."
+msgstr "Невозможно скопировать $(ARG1) в самого себя."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_UNKNOWN___ERRCODE_RES_MASK_.string.text
+msgid "Unknown input/output error while accessing $(ARG1)."
+msgstr "Неизвестная ошибка ввода/вывода при доступе к $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_WRITEPROTECTED___ERRCODE_RES_MASK_.string.text
+msgid "$(ARG1) is write protected."
+msgstr "$(ARG1) защищён от записи."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_WRONGFORMAT___ERRCODE_RES_MASK_.string.text
+msgid "$(ARG1) is not in the correct format."
+msgstr "Неправильный формат $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_WRONGVERSION___ERRCODE_RES_MASK_.string.text
+msgid "The version of $(ARG1) is not correct."
+msgstr "Неправильная версия $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTEXISTS_VOLUME___ERRCODE_RES_MASK_.string.text
+msgid "Drive $(ARG1) does not exist."
+msgstr "Диск $(ARG1) не существует."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTEXISTS_FOLDER___ERRCODE_RES_MASK_.string.text
+msgid "Folder $(ARG1) does not exist."
+msgstr "Каталог  $(ARG1) не существует."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_WRONGJAVA___ERRCODE_RES_MASK_.string.text
+msgid "The installed Java version is not supported."
+msgstr "Не поддерживается установленная версия Java."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_WRONGJAVA_VERSION___ERRCODE_RES_MASK_.string.text
+msgid "The installed Java version $(ARG1) is not supported."
+msgstr "Не поддерживается установленная версия Java $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_WRONGJAVA_MIN___ERRCODE_RES_MASK_.string.text
+msgid ""
+"The installed Java version is not supported, at least version $(ARG1) is "
+"required."
+msgstr ""
+"Не поддерживается установленная версия Java. Требуется версия, начиная с "
+"$(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_WRONGJAVA_VERSION_MIN___ERRCODE_RES_MASK_.string.text
+msgid ""
+"The installed Java version $(ARG1) is not supported, at least version "
+"$(ARG2) is required."
+msgstr ""
+"Не поддерживается установленная версия Java $(ARG1). Требуется версия, "
+"начиная с $(ARG2)."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_BADPARTNERSHIP___ERRCODE_RES_MASK_.string.text
+msgid "The data associated with the partnership is corrupted."
+msgstr "Повреждены данные о партнерстве."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_BADPARTNERSHIP_NAME___ERRCODE_RES_MASK_.string.text
+msgid "The data associated with the partnership $(ARG1) is corrupted."
+msgstr "Повреждены данные о партнерстве $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTREADY_VOLUME___ERRCODE_RES_MASK_.string.text
+msgid "Volume $(ARG1) is not ready."
+msgstr "Устройство $(ARG1) не готово."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTREADY_REMOVABLE___ERRCODE_RES_MASK_.string.text
+msgid "$(ARG1) is not ready; please insert a storage medium."
+msgstr "$(ARG1) не готово. Вставьте носитель."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTREADY_VOLUME_REMOVABLE___ERRCODE_RES_MASK_.string.text
+msgid "Volume $(ARG1) is not ready; please insert a storage medium."
+msgstr "Устройство $(ARG1) не готово; вставьте носитель."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_WRONGMEDIUM___ERRCODE_RES_MASK_.string.text
+msgid "Please insert disk $(ARG1)."
+msgstr "Вставьте носитель $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_CANTCREATE_NONAME___ERRCODE_RES_MASK_.string.text
+msgid "The object cannot be created in directory $(ARG1)."
+msgstr "Невозможно создать объект в каталоге $(ARG1)."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_UNSUPPORTEDOVERWRITE___ERRCODE_RES_MASK_.string.text
+msgid ""
+"%PRODUCTNAME cannot keep files from being overwritten when this transmission "
+"protocol is used. Do you want to continue anyway?"
+msgstr ""
+"%PRODUCTNAME не может защитить файлы от перезаписи при использовании данного "
+"протокола передачи данных. Желаете продолжать?"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_BROKENPACKAGE___ERRCODE_RES_MASK_.string.text
+msgid ""
+"The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME "
+"can try to repair the file.\n"
+"\n"
+"The corruption could be the result of document manipulation or of structural "
+"document damage due to data transmission.\n"
+"\n"
+"We recommend that you do not trust the content of the repaired document.\n"
+"Execution of macros is disabled for this document.\n"
+"\n"
+"Should %PRODUCTNAME repair the file?\n"
+msgstr ""
+"Файл «$(ARG1)» повреждён и не может быть открыт. %PRODUCTNAME может "
+"попытаться восстановить файл.\n"
+"\n"
+"Повреждение может быть результатом как подделки документа, так и порчи его "
+"структуры при передаче данных.\n"
+"\n"
+"Мы советуем не доверять содержимому восстановленного документа.\n"
+"Выполнение макросов в этом документе отключено.\n"
+"\n"
+"Позволить %PRODUCTNAME восстановить файл?\n"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR___ERRCODE_RES_MASK_.string.text
+msgid ""
+"The file '$(ARG1)' could not be repaired and therefore cannot be opened."
+msgstr "Файл «$(ARG1)» не может быть восстановлен и открыт."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE___ERRCODE_RES_MASK_.string.text
+msgid ""
+"Configuration data in '$(ARG1)' is corrupted. Without this data some "
+"functions may not operate correctly.\n"
+"Do you want to continue startup of %PRODUCTNAME without the corrupted "
+"configuration data?"
+msgstr ""
+"Конфигурация в «$(ARG1)» повреждена. Без этих данных некоторые функции могут "
+"работать некорректно. Продолжить запуск %PRODUCTNAME?"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE___ERRCODE_RES_MASK_.string.text
+msgid ""
+"The personal configuration file '$(ARG1)' is corrupted and must be deleted "
+"to continue. Some of your personal settings may be lost.\n"
+"Do you want to continue startup of %PRODUCTNAME without the corrupted "
+"configuration data?"
+msgstr ""
+"Один из файлов персональной конфигурации «$(ARG1)» повреждён и должен быть "
+"удалён для продолжения запуска.\n"
+"Некоторые ваши персональные настройки могут быть утеряны.\n"
+"Продолжить запуск %PRODUCTNAME без повреждённого конфигурационного файла?"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_CONFIGURATION_BACKENDMISSING___ERRCODE_RES_MASK_.string.text
+msgid ""
+"The configuration data source '$(ARG1)' is unavailable. Without this data "
+"some functions may not operate correctly."
+msgstr ""
+"Конфигурация «$(ARG1)» недоступна. Без этих данных некоторые функции могут "
+"работать некорректно."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER___ERRCODE_RES_MASK_.string.text
+msgid ""
+"The configuration data source '$(ARG1)' is unavailable. Without this data "
+"some functions may not operate correctly.\n"
+"Do you want to continue startup of %PRODUCTNAME without the missing "
+"configuration data?"
+msgstr ""
+"Конфигурация «$(ARG1)» недоступна. Без этих данных некоторые функции могут "
+"работать некорректно.\n"
+"Продолжить запуск %PRODUCTNAME без конфигурации?"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA___ERRCODE_RES_MASK_.string.text
+msgid "The form contains invalid data. Do you still want to continue?"
+msgstr "Форма содержит неверные данные. Продолжить?"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_LOCKING_LOCKED___ERRCODE_RES_MASK_.string.text
+msgid ""
+"The file $(ARG1) is locked by another user. Currently, another write access "
+"to this file cannot be granted."
+msgstr ""
+"Файл $(ARG1) заблокирован другим пользователем. Сейчас невозможно получить "
+"доступ к файлу на запись."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_LOCKING_LOCKED_SELF___ERRCODE_RES_MASK_.string.text
+msgid ""
+"The file $(ARG1) is locked by yourself. Currently, another write access to "
+"this file cannot be granted."
+msgstr ""
+"Файл $(ARG1) заблокирован вами же. Поэтому в данный момент невозможно "
+"получить доступ к файлу на запись."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_LOCKING_NOT_LOCKED___ERRCODE_RES_MASK_.string.text
+msgid "The file $(ARG1) is currently not locked by yourself."
+msgstr "В данный момент файл $(ARG1) не заблокирован вами."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_LOCKING_LOCK_EXPIRED___ERRCODE_RES_MASK_.string.text
+msgid ""
+"The previously obtained lock for file $(ARG1) has expired.\n"
+"This can happen due to problems on the server managing the file lock. It "
+"cannot be guaranteed that write operations on this file will not overwrite "
+"changes done by other users!"
+msgstr ""
+"Истёк срок последней блокировки для файла $(ARG1).\n"
+"Это могло произойти в связи с проблемами на сервере, управляющем блокировкой "
+"файла. Невозможно гарантировать, что операции записи в этот файл не будут "
+"перезаписаны другими пользователями!"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_UNKNOWNAUTH_UNTRUSTED_.string.text
+msgid ""
+"Unable to verify the identity of $(ARG1) site.\n"
+"\n"
+"Before accepting this certificate, you should examine this site's "
+"certificate carefully. Are you willing to accept this certificate for the "
+"purpose of identifying the Web site $(ARG1)?"
+msgstr ""
+"Невозможно проверить сертификат сайта $(ARG1).\n"
+"\n"
+"Прежде чем принять сертификат сайта, тщательно его проверьте. Принять данный "
+"сертификат для идентификации сайта $(ARG1)?"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_SSLWARN_EXPIRED_1_.string.text
+msgid ""
+"$(ARG1) is a site that uses a security certificate to encrypt data during "
+"transmission, but its certificate expired on $(ARG2).\n"
+"\n"
+"You should check to make sure that your computer's time is correct."
+msgstr ""
+"Сайт $(ARG1) использует сертификат для передачи данных, срок действия "
+"которого истёк $(ARG2).\n"
+"\n"
+"Проверьте, правильно ли установлено время на вашем компьютере."
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_SSLWARN_DOMAINMISMATCH_1_.string.text
+msgid ""
+"You have attempted to establish a connection with $(ARG1). However, the "
+"security certificate presented belongs to $(ARG2). It is possible, though "
+"unlikely, that someone may be trying to intercept your communication with "
+"this web site.\n"
+"\n"
+"If you suspect the certificate shown does not belong to $(ARG1), please "
+"cancel the connection and notify the site administrator.\n"
+"\n"
+"Would you like to continue anyway?"
+msgstr ""
+"Вы пытаетесь соединиться с сайтом $(ARG1). но сертификат принадлежит "
+"$(ARG2). Возможно осуществляется попытка перехвата данных при соединении с "
+"данным сайтом.\n"
+"\n"
+"Если вы подозреваете, что сертификат не принадлежит сайту $(ARG1), отмените "
+"соединение и уведомите администратора сайта.\n"
+"\n"
+"Продолжить?"
+
+#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_SSLWARN_INVALID_1_.string.text
+msgid ""
+"The certificate could not be validated. You should examine this site's "
+"certificate carefully.\n"
+"\n"
+"If you suspect the certificate shown, please cancel the connection and "
+"notify the site administrator."
+msgstr ""
+"Сертификат не может быть подтверждён. Тщательно проверьте сертификат.\n"
+"\n"
+"Если он кажется вам подозрительным, отмените соединение и уведомите "
+"администратора сайта."
+
+#: ids.src#RID_UUI_ERRHDL._TITLE_UUI_SSLWARN_DOMAINMISMATCH_.string.text
+msgid "Security Warning: Domain Name Mismatch"
+msgstr "Предупреждение безопасности: несоответствие доменных имен"
+
+#: ids.src#RID_UUI_ERRHDL._TITLE_UUI_SSLWARN_EXPIRED_.string.text
+msgid "Security Warning: Server Certificate Expired"
+msgstr "Предупреждение безопасности: срок действия сертификата сервера истек"
+
+#: ids.src#RID_UUI_ERRHDL._TITLE_UUI_SSLWARN_INVALID_.string.text
+msgid "Security Warning: Server Certificate Invalid"
+msgstr "Предупреждение безопасности: сертификат сервера недействителен"
+
+#: lockfailed.src#STR_LOCKFAILED_MSG.string.text
+msgid ""
+"The file could not be locked for exclusive access by %PRODUCTNAME, due to "
+"missing permission to create a lock file on that file location."
+msgstr ""
+"%PRODUCTNAME не может заблокировать файл для монопольного доступа, поскольку "
+"нет прав для создания файла блокировки в месте расположения файла."
+
+#: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_ERROR.fixedtext.text
+msgid "Message from server:"
+msgstr "Сообщение сервера:"
+
+#: logindlg.src#DLG_UUI_LOGIN.FT_INFO_LOGIN_REQUEST.fixedtext.text
+msgid ""
+"Enter user name and password for: \n"
+"%1"
+msgstr ""
+"Введите имя пользователя и пароль для:\n"
+"%1"
+
+#: logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.string.text
+msgid ""
+"Enter user name and password for: \n"
+"\"%2\" on %1"
+msgstr ""
+"Введите имя пользователя и пароль для:\n"
+"«%2» на %1"
+
+#: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.fixedtext.text
+msgid "~Path"
+msgstr "Путь"
+
+#: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_USERNAME.fixedtext.text
+msgid "~User name"
+msgstr "Имя пользователя"
+
+#: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PASSWORD.fixedtext.text
+msgid "Pass~word"
+msgstr "Пароль"
+
+#: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_ACCOUNT.fixedtext.text
+msgid "A~ccount"
+msgstr "Учётная запись"
+
+#: logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_SAVEPASSWORD.checkbox.text
+msgctxt "logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_SAVEPASSWORD.checkbox.text"
+msgid "~Remember password"
+msgstr "Запомнить пароль"
+
+#: logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_USESYSCREDS.checkbox.text
+msgid "~Use system credentials"
+msgstr "Использовать системные полномочия"
+
+#: logindlg.src#DLG_UUI_LOGIN.modaldialog.text
+msgid "Authentication Required"
+msgstr "Требуется аутентификация"
+
+#: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_INFOTEXT.fixedtext.text
+msgid ""
+"Passwords for web connections are protected by a master password. You will "
+"be asked to enter it once per session, if %PRODUCTNAME retrieves a password "
+"from the protected password list."
+msgstr ""
+"Пароли доступа к web-ресурсам защищены мастер-паролем. Если %PRODUCTNAME "
+"потребуются пароли из защищённого списка, вам будет предложено ввести "
+"мастер-пароль один раз за сеанс."
+
+#: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_CRT.fixedtext.text
+msgid "~Enter password"
+msgstr "Введите пароль"
+
+#: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_REPEAT.fixedtext.text
+msgid "~Reenter password"
+msgstr "Повторите пароль"
+
+#: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_CAUTIONTEXT.fixedtext.text
+msgid ""
+"Caution: If you forget the master password, you will be unable to access any "
+"of the information protected by it. Passwords are case-sensitive."
+msgstr ""
+"Внимание! Забыв мастер-пароль, вы не получите доступа к защищённой им "
+"информации. Пароли чувствительны к регистру."
+
+#: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.modaldialog.text
+msgid "Set Master Password"
+msgstr "Задайте мастер-пароль"
+
+#: masterpassworddlg.src#DLG_UUI_MASTERPASSWORD.FT_MASTERPASSWORD.fixedtext.text
+msgid "Enter password"
+msgstr "Введите пароль"
+
+#: masterpassworddlg.src#DLG_UUI_MASTERPASSWORD.modaldialog.text
+msgid "Enter Master Password"
+msgstr "Введите мастер-пароль"
+
+#: nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.BTN_OVERWRITE.pushbutton.text
+msgid "Replace"
+msgstr "Заменить"
+
+#: nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.BTN_RENAME.pushbutton.text
+msgid "Rename"
+msgstr "Переименовать"
+
+#: nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.modaldialog.text
+msgid "File Exists"
+msgstr "Файл существует"
+
+#: newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.fixedtext.text
+msgid ""
+"This document was created by a newer version of %PRODUCTNAME. It may contain "
+"features not supported by your current version.\n"
+"\n"
+"Click 'Update Now...' to run online update and get the latest version of %"
+"PRODUCTNAME."
+msgstr ""
+"Этот документ создан более новой версией %PRODUCTNAME. Он может содержать "
+"элементы, не поддерживаемые в вашей текущей версии.\n"
+"\n"
+"Нажмите «Обновить сейчас...», чтобы выполнить обновление и получить "
+"последнюю версию %PRODUCTNAME."
+
+#: newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.pushbutton.text
+msgid "~Update Now..."
+msgstr "Обновить сейчас..."
+
+#: newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_LATER.cancelbutton.text
+msgid "~Later"
+msgstr "Позже"
+
+#: newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.modaldialog.text
+msgid "%PRODUCTNAME Update Available"
+msgstr "Доступно обновление %PRODUCTNAME"
+
+#: openlocked.src#STR_OPENLOCKED_TITLE.string.text
+msgctxt "openlocked.src#STR_OPENLOCKED_TITLE.string.text"
+msgid "Document in Use"
+msgstr "Документ уже используется"
+
+#: openlocked.src#STR_OPENLOCKED_MSG.string.text
+msgid ""
+"Document file '$(ARG1)' is locked for editing by:\n"
+"\n"
+"$(ARG2)\n"
+"\n"
+"Open document read-only or open a copy of the document for editing.\n"
+"\n"
+msgstr ""
+"Файл документа «$(ARG1)» блокирован для изменения пользователем:\n"
+"\n"
+"$(ARG2)\n"
+"\n"
+"Откройте документ в режиме только для чтения или откройте копию документа "
+"для внесения изменений.\n"
+"\n"
+
+#: openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.string.text
+msgctxt "openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.string.text"
+msgid "Open ~Read-Only"
+msgstr "Открыть ~только для чтения"
+
+#: openlocked.src#STR_OPENLOCKED_OPENCOPY_BTN.string.text
+msgid "Open ~Copy"
+msgstr "Открыть ~копию"
+
+#: openlocked.src#STR_UNKNOWNUSER.string.text
+msgid "Unknown User"
+msgstr "Неизвестный пользователь"
+
+#: passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_OPEN.string.text
+msgid "Enter password to open file: \n"
+msgstr "Введите пароль для открытия файла: \n"
+
+#: passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_MODIFY.string.text
+msgid "Enter password to modify file: \n"
+msgstr "Введите пароль для изменения файла: \n"
+
+#: passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_SIMPLE_PASSWORD.string.text
+msgid "Enter password: "
+msgstr "Введите пароль:"
+
+#: passworddlg.src#DLG_UUI_PASSWORD.STR_CONFIRM_SIMPLE_PASSWORD.string.text
+msgid "Confirm password: "
+msgstr "Подтвердите пароль:"
+
+#: passworddlg.src#DLG_UUI_PASSWORD.STR_TITLE_CREATE_PASSWORD.string.text
+msgid "Set Password"
+msgstr "Задать пароль"
+
+#: passworddlg.src#DLG_UUI_PASSWORD.STR_TITLE_ENTER_PASSWORD.string.text
+msgid "Enter Password"
+msgstr "Введите пароль"
+
+#: passworddlg.src#DLG_UUI_PASSWORD.STR_PASSWORD_MISMATCH.string.text
+msgid ""
+"The confirmation password did not match the password. Set the password again "
+"by entering the same password in both boxes."
+msgstr ""
+"Пароли не совпадают. Задайте пароль заново, введя один и тот же пароль в оба "
+"поля."
+
+#: passworderrs.src#STR_ERROR_PASSWORD_TO_OPEN_WRONG.string.text
+msgid "The password is incorrect. The file cannot be opened."
+msgstr "Неверный пароль. Документ не может быть открыт."
+
+#: passworderrs.src#STR_ERROR_PASSWORD_TO_MODIFY_WRONG.string.text
+msgid "The password is incorrect. The file cannot be modified."
+msgstr "Неверный пароль. Файл не может быть изменён."
+
+#: passworderrs.src#STR_ERROR_MASTERPASSWORD_WRONG.string.text
+msgid "The master password is incorrect."
+msgstr "Неправильный мастер-пароль."
+
+#: passworderrs.src#STR_ERROR_SIMPLE_PASSWORD_WRONG.string.text
+msgid "The password is incorrect."
+msgstr "Неправильный пароль."
+
+#: passworderrs.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.string.text
+msgid "The password confirmation does not match."
+msgstr "Пароли не совпадают."
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR1A.fixedtext.text
+msgid "The document contains document macros signed by:"
+msgstr "Документ содержит подписанные макросы:"
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR1B.fixedtext.text
+msgid "The document contains document macros."
+msgstr "Документ содержит макросы."
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_VIEWSIGNS.pushbutton.text
+msgid "View Signatures..."
+msgstr "Просмотр подписей..."
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR2.fixedtext.text
+msgid ""
+"Macros may contain viruses. Disabling macros for a document is always safe. "
+"If you disable macros you may lose functionality provided by the document "
+"macros."
+msgstr ""
+"Макросы могут содержать вирусы. Отключение макросов для документа всегда "
+"безопасно. Если вы запретите макросы, вы можете потерять функциональность, "
+"предоставляемую макросами."
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.CB_ALWAYSTRUST.checkbox.text
+msgid "Always trust macros from this source"
+msgstr "Всегда доверять макросам из этого источника"
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_ENABLE.okbutton.text
+msgid "~Enable Macros"
+msgstr "Включить макросы"
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_DISABLE.cancelbutton.text
+msgid "~Disable Macros"
+msgstr "Отключить макросы"
+
+#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.modaldialog.text
+msgid "%PRODUCTNAME - Security Warning"
+msgstr "Предупреждение о безопасности %PRODUCTNAME"
+
+#: sslwarndlg.src#DLG_UUI_SSLWARN.FT_LABEL_1.fixedtext.text
+msgctxt "sslwarndlg.src#DLG_UUI_SSLWARN.FT_LABEL_1.fixedtext.text"
+msgid "No Text"
+msgstr "Без текста"
+
+#: sslwarndlg.src#DLG_UUI_SSLWARN.PB_VIEW__CERTIFICATE.pushbutton.text
+msgid "View Certificate"
+msgstr "Сертификат..."
+
+#: sslwarndlg.src#DLG_UUI_SSLWARN.PB_CANCEL.cancelbutton.text
+msgid "Cancel Connection"
+msgstr "Отменить соединение"
+
+#: sslwarndlg.src#DLG_UUI_SSLWARN.PB_OK.pushbutton.text
+msgid "Continue"
+msgstr "Продолжить"
+
+#: sslwarndlg.src#DLG_UUI_SSLWARN.modaldialog.text
+msgid "Security Warning: "
+msgstr "Предупреждение безопасности: "
+
+#: trylater.src#STR_TRYLATER_TITLE.string.text
+msgctxt "trylater.src#STR_TRYLATER_TITLE.string.text"
+msgid "Document in Use"
+msgstr "Документ используется"
+
+#: trylater.src#STR_TRYLATER_MSG.string.text
+msgid ""
+"Document file '$(ARG1)' is locked for editing by:\n"
+"\n"
+"$(ARG2)\n"
+"\n"
+"Try again later to save document or save a copy of that document.\n"
+"\n"
+msgstr ""
+"Изменения в документе «$(ARG1)» заблокированы пользователем:\n"
+"\n"
+"$(ARG2)\n"
+"\n"
+"Попробуйте сохранить документ позже или сохраните копию документа.\n"
+"\n"
+
+#: trylater.src#STR_TRYLATER_RETRYSAVING_BTN.string.text
+msgctxt "trylater.src#STR_TRYLATER_RETRYSAVING_BTN.string.text"
+msgid "~Retry Saving"
+msgstr "Повторить сохранение"
+
+#: trylater.src#STR_TRYLATER_SAVEAS_BTN.string.text
+msgid "~Save As..."
+msgstr "Сохранить как..."
+
+#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_VIEW__CERTIFICATE.pushbutton.text
+msgid "Examine Certificate..."
+msgstr "Подробности сертификата..."
+
+#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_HELP.helpbutton.text
+msgid "Help"
+msgstr "Справка"
+
+#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_OK.pushbutton.text
+msgid "OK"
+msgstr "ОК"
+
+#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.RB_ACCEPT_1.radiobutton.text
+msgid "Accept this certificate temporarily for this session"
+msgstr "Принять сертификат только для текущей сессии"
+
+#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.RB_DONTACCEPT_2.radiobutton.text
+msgid "Do not accept this certificate and do not connect to this Web site"
+msgstr "Не принимать сертификат и не соединяться с данным веб-сайтом"
+
+#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.FT_LABEL_1.fixedtext.text
+msgctxt "unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.FT_LABEL_1.fixedtext.text"
+msgid "No Text"
+msgstr "Без текста"
+
+#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.modaldialog.text
+msgid "Website Certified by an Unknown Authority"
+msgstr "Сертификат сайта выписан неизвестной организацией"

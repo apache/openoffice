@@ -34,62 +34,96 @@
 
 
 /********************   C L A S S   D E F I N I T I O N   ********************/
-class l10Mem_lang_entry
+class l10nMem_lang_entry
 {
   public:
-    l10Mem_lang_entry(const std::string& sKey,
-                             const std::string& sText);
-    ~l10Mem_lang_entry();
+    l10nMem_lang_entry(const std::string& sText, bool bFuzzy);
+    ~l10nMem_lang_entry();
 
-  private:
-    std::string msKey;     // only used in master: key in po file and source file
-    std::string msText;    // in master en-US text otherwise translated text
-    ENTRY_STATE meState;   // status information
-    int         miFileInx; // index of file name
+    std::string msText;     // translated text from po file
+    bool        mbFuzzy;    // fuzzy flag
 };
 
 
 
 /********************   C L A S S   D E F I N I T I O N   ********************/
-class l10Men_lang_container
+class l10nMem_enus_entry
 {
   public:
-    l10Men_lang_container();
-    ~l10Men_lang_container();
+    l10nMem_enus_entry(const std::string&   sKey,
+                       const std::string&   sText,
+                       int                  iLineNo,
+                       int                  iFileInx,
+                       l10nMem::ENTRY_STATE eState);
+    ~l10nMem_enus_entry();
 
-  private:
-    std::string                    msLanguage; // language code
-    std::vector<l10Mem_lang_entry> mcEntries;  // key/text entries
+    std::string                     msKey;      // key in po file and source file
+    std::string                     msText;     // en-US text from source file
+    l10nMem::ENTRY_STATE            meState;    // status information
+    int                             miFileInx;  // index of file name
+    int                             miLineNo;   // line number
+    std::vector<l10nMem_lang_entry> mcLangList; // language texts (index is languageId)
 };
 
 
 
 /********************   C L A S S   D E F I N I T I O N   ********************/
-class l10Mem_file_entry
+class l10nMem_file_entry
 {
   public:
-    l10Mem_file_entry();
-    ~l10Mem_file_entry();
+    l10nMem_file_entry(const std::string& sFileName, int iStart);
+    ~l10nMem_file_entry();
 
-  private:
-    std::string msFile;  // file Name
-    int         miStart; // start index of entries in mcEntries (l10Men_lang_container)
-    int         miEnd;   // last index of entries in mcEntries (l10Men_lang_container)
+    std::string msFileName;  // file Name
+    int         miStart;     // start index of entries in mcMasterEntries (l10Mem_db::mcENUS)
+    int         miEnd;       // last index of entries in mcMasterEntries (l10Mem_db::mcENUS)
 };
 
 
 
 /********************   C L A S S   D E F I N I T I O N   ********************/
-class l10Mem_db
+class l10nMem_db
 {
   public:
-    l10Mem_db();
-    ~l10Mem_db();
+    l10nMem_db();
+    ~l10nMem_db();
 
-  private:
-    l10Men_lang_container              mcENUS;
-    std::vector<l10Men_lang_container> mcLang;
-    std::vector<l10Mem_file_entry>     mcFile;
+    int                             miCurFileInx;
+    int                             miCurLangInx;
+    int                             miCurENUSinx;
+    int                             miCurLastENUSinx;
+    bool                            mbNeedWrite;
+    std::vector<l10nMem_enus_entry> mcENUSlist;
+    std::vector<l10nMem_file_entry> mcFileList;
+    std::vector<std::string>        mcLangList;
+
+
+    void loadENUSkey    (int                iLineNo,
+                         const std::string& sSourceFile,
+                         const std::string& sKey,
+                         const std::string& sText);
+    void setLanguage    (const std::string& sLanguage,
+                         bool               bCreate);
+    void loadLangKey    (int                iLineNo,
+                         const std::string& sSourceFile,
+                         const std::string& sKey,
+                         const std::string& sOrgText,
+                         const std::string& sText,
+                         bool               bFuzzy);
+
+    void setFileName    (int                iLineNo,
+                         const std::string& sFilename,
+                         bool               bCreate);
+    void reorganize();
+
+    bool locateKey      (int                iLineNo,
+                         const std::string& sKey,
+                         const std::string& sText,
+                         bool               bThrow = true);
+    void addKey         (int                  iLineNo,
+                         const std::string&   sKey,
+                         const std::string&   sText,
+                         l10nMem::ENTRY_STATE eState);
 };
 
 
@@ -102,36 +136,38 @@ class l10nMem_impl
     l10nMem_impl();
     ~l10nMem_impl();
 
-    std::string showError    (const std::string& sText, int iLineNo = 0);
-    std::string showWarning  (const std::string& sText, int iLineNo = 0);
-    bool        isError      ();
+    int  showError     (const std::string& sText, int iLineNo);
+    int  showWarning   (const std::string& sText, int iLineNo);
+    void showDebug     (const std::string& sText, int iLineNo);
+    void showVerbose   (const std::string& sText, int iLineNo);
 
-    bool        checkKey     (const std::string& sKey);
-    void        setFileName  (const std::string& sSourceFile);
-    void        setModuleName(const std::string& sModuleName);
-    void        setLanguage  (const std::string& sLanguage, bool bMaster = false);
+    void setModuleName (const std::string& sModuleName);
 
-    void        loadEnUsKey  (const std::string& sKey,
-                              const std::string& sText);
-    void        loadLangKey  (ENTRY_STATE        eFlag,
-                              const std::string& sKey,
-                              const std::string& sOrgText,
-                              const std::string& sText);
-    void        save();
 
-    void        setEnUsKey   (int                iLineNo,
-                              const std::string& sKey,
-                              const std::string& srText);
+    void setSourceKey  (int                iLineNo,
+                        const std::string& sKey,
+                        const std::string& sText);
 
+
+    void convLangKey   (int                iLineNo,
+                        const std::string& sSourceFile,
+                        const std::string& sKey,
+                        const std::string& sOrgText,
+                        const std::string& sText,
+                        bool               bIsFuzzy);
+
+    void save         (const std::string& sTargetDir);
+    void dumpMem      (const std::string& sTargetDir);
 
   private:
-    std::string                  msCurrentModuleName;
-    std::string                  msCurrentSourceFileName;
-    std::vector<l10nMem_entry *> mcCurrentSelection;
-    std::vector<l10nMem_entry>   mcMemory;
-    bool                         mbInError;
-    int                          miLastUniqResort;
-    static l10nMem_impl         *mcImpl;
+    static bool                         mbVerbose;
+    static bool                         mbDebug;
+    static l10nMem_impl                *mcImpl;
+    l10nMem_db                          mcDb;
+    std::string                         msModuleName;
+    bool                                mbInError;
+
+    void formatAndShowText(const std::string& sType, int iLineNo, const std::string& sText);
 
     friend class l10nMem;
 };

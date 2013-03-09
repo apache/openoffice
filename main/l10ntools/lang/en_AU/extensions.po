@@ -1,0 +1,3482 @@
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: ~\n"
+
+#: updatehdl.src#RID_UPDATE_STR_CHECKING.string.text
+#, fuzzy
+msgid "Checking..."
+msgstr "Checking..."
+
+#: updatehdl.src#RID_UPDATE_STR_CHECKING_ERR.string.text
+#, fuzzy
+msgid "Checking for an update failed."
+msgstr "Checking for an update failed."
+
+#: updatehdl.src#RID_UPDATE_STR_NO_UPD_FOUND.string.text
+#, fuzzy
+msgid "%PRODUCTNAME %PRODUCTVERSION is up to date."
+msgstr "%PRODUCTNAME %PRODUCTVERSION is up to date."
+
+#: updatehdl.src#RID_UPDATE_STR_UPD_FOUND.string.text
+#, fuzzy
+msgid ""
+"%PRODUCTNAME %NEXTVERSION is available.\n"
+"\n"
+"The installed version is %PRODUCTNAME %PRODUCTVERSION.\n"
+"\n"
+"Note: Before downloading  an update, please ensure that you have sufficient "
+"access rights to install it.\n"
+"A password, usually the administrator's or root password, may be required."
+msgstr ""
+"%PRODUCTNAME %NEXTVERSION is available.\n"
+"\n"
+"The installed version is %PRODUCTNAME %PRODUCTVERSION.\n"
+"\n"
+"Note: Before downloading an update, please ensure that you have sufficient "
+"access rights to install it.\n"
+"A password, usually the administrator's or root password, may be required."
+
+#: updatehdl.src#RID_UPDATE_STR_DLG_TITLE.string.text
+#, fuzzy
+msgid "Check for Updates"
+msgstr "Check for Updates"
+
+#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_PAUSE.string.text
+#, fuzzy
+msgid "Downloading %PRODUCTNAME %NEXTVERSION paused at..."
+msgstr "Downloading %PRODUCTNAME %NEXTVERSION paused at..."
+
+#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_ERR.string.text
+#, fuzzy
+msgid "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
+msgstr "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
+
+#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.string.text
+#, fuzzy
+msgid ""
+"The download location is: %DOWNLOAD_PATH.\n"
+"\n"
+"Under Tools – Options... - %PRODUCTNAME – Online Update you can change the "
+"download location."
+msgstr ""
+"The download location is: %DOWNLOAD_PATH.\n"
+"\n"
+"Under Tools – Options... - %PRODUCTNAME – Online Update you can change the "
+"download location."
+
+#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.string.text
+#, fuzzy
+msgid "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
+msgstr "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
+
+#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.string.text
+#, fuzzy
+msgid ""
+"The automatic download of the update is currently not available.\n"
+"\n"
+"Click 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the "
+"web site."
+msgstr ""
+"The automatic download of the update is currently not available.\n"
+"\n"
+"Click 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the "
+"web site."
+
+#: updatehdl.src#RID_UPDATE_STR_DOWNLOADING.string.text
+#, fuzzy
+msgid "Downloading %PRODUCTNAME %NEXTVERSION..."
+msgstr "Downloading %PRODUCTNAME %NEXTVERSION..."
+
+#: updatehdl.src#RID_UPDATE_STR_READY_INSTALL.string.text
+#, fuzzy
+msgid ""
+"Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
+msgstr ""
+"Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
+
+#: updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.string.text
+#, fuzzy
+msgid "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
+
+#: updatehdl.src#RID_UPDATE_STR_CANCEL_DOWNLOAD.string.text
+#, fuzzy
+msgid "Do you really want to cancel the download?"
+msgstr "Do you really want to cancel the download?"
+
+#: updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.string.text
+#, fuzzy
+msgid ""
+"To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do "
+"you want to install the update now?"
+msgstr ""
+"To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do "
+"you want to install the update now?"
+
+#: updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.string.text
+#, fuzzy
+msgid "Install ~now"
+msgstr "Install ~now"
+
+#: updatehdl.src#RID_UPDATE_STR_INSTALL_LATER.string.text
+#, fuzzy
+msgid "Install ~later"
+msgstr "Install ~later"
+
+#: updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.string.text
+#, fuzzy
+msgid ""
+"Could not run the installer application, please run %FILE_NAME in "
+"%DOWNLOAD_PATH manually."
+msgstr ""
+"Could not run the installer application, please run %FILE_NAME in "
+"%DOWNLOAD_PATH manually."
+
+#: updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.string.text
+#, fuzzy
+msgid ""
+"A file with that name already exists! Do you want to overwrite the existing "
+"file?"
+msgstr ""
+"A file with that name already exists! Do you want to overwrite the existing "
+"file?"
+
+#: updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.string.text
+#, fuzzy
+msgid ""
+"A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you "
+"want to continue with the download or delete and reload the file?"
+msgstr ""
+"A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you "
+"want to continue with the download or delete and reload the file?"
+
+#: updatehdl.src#RID_UPDATE_STR_RELOAD_RELOAD.string.text
+#, fuzzy
+msgid "Reload File"
+msgstr "Reload File"
+
+#: updatehdl.src#RID_UPDATE_STR_RELOAD_CONTINUE.string.text
+#, fuzzy
+msgid "Continue"
+msgstr "Continue"
+
+#: updatehdl.src#RID_UPDATE_STR_PERCENT.string.text
+#, fuzzy
+msgid "%PERCENT%"
+msgstr "%PERCENT%"
+
+#: updatehdl.src#RID_UPDATE_FT_STATUS.string.text
+#, fuzzy
+msgid "Status"
+msgstr "Status"
+
+#: updatehdl.src#RID_UPDATE_FT_DESCRIPTION.string.text
+#, fuzzy
+msgid "Description"
+msgstr "Description"
+
+#: updatehdl.src#RID_UPDATE_BTN_CLOSE.string.text
+#, fuzzy
+msgid "Close"
+msgstr "Close"
+
+#: updatehdl.src#RID_UPDATE_BTN_DOWNLOAD.string.text
+#, fuzzy
+msgid "~Download"
+msgstr "~Download"
+
+#: updatehdl.src#RID_UPDATE_BTN_INSTALL.string.text
+#, fuzzy
+msgid "~Install"
+msgstr "~Install"
+
+#: updatehdl.src#RID_UPDATE_BTN_PAUSE.string.text
+#, fuzzy
+msgid "~Pause"
+msgstr "~Pause"
+
+#: updatehdl.src#RID_UPDATE_BTN_RESUME.string.text
+#, fuzzy
+msgid "~Resume"
+msgstr "~Resume"
+
+#: updatehdl.src#RID_UPDATE_BTN_CANCEL.string.text
+#, fuzzy
+msgid "Cancel"
+msgstr "Cancel"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.string.text
+#, fuzzy
+msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.string.text"
+msgid "%PRODUCTNAME update available"
+msgstr "%PRODUCTNAME update available"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_AVAIL.string.text
+#, fuzzy
+msgid "Click here to start the download."
+msgstr "Click here to start the download."
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.string.text
+#, fuzzy
+msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.string.text"
+msgid "%PRODUCTNAME update available"
+msgstr "%PRODUCTNAME update available"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.string.text
+#, fuzzy
+msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.string.text"
+msgid "Click here for more information."
+msgstr "Click here for more information."
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.string.text
+#, fuzzy
+msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.string.text"
+msgid "%PRODUCTNAME update available"
+msgstr "%PRODUCTNAME update available"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_AUTO_START.string.text
+#, fuzzy
+msgid "Download of update begins."
+msgstr "Download of update begins."
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOADING.string.text
+#, fuzzy
+msgid "Download of update in progress"
+msgstr "Download of update in progress"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_PAUSED.string.text
+#, fuzzy
+msgid "Download of update paused"
+msgstr "Download of update paused"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_PAUSED.string.text
+#, fuzzy
+msgid "Click here to resume."
+msgstr "Click here to resume."
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_ERROR_DOWNLOADING.string.text
+#, fuzzy
+msgid "Download of update stalled"
+msgstr "Download of update stalled"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.string.text
+#, fuzzy
+msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.string.text"
+msgid "Click here for more information."
+msgstr "Click here for more information."
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_AVAIL.string.text
+#, fuzzy
+msgid "Download of update completed"
+msgstr "Download of update completed"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_AVAIL.string.text
+#, fuzzy
+msgid "Click here to start the installation."
+msgstr "Click here to start the installation."
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_T_EXT_UPD_AVAIL.string.text
+#, fuzzy
+msgid "Updates for extensions available"
+msgstr "Updates for extensions available"
+
+#: updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.string.text
+#, fuzzy
+msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.string.text"
+msgid "Click here for more information."
+msgstr "Click here for more information."
+
+#: Addons.xcu#.Addons.AddonUI.OfficeHelp.UpdateCheckJob.Title.value.text
+#, fuzzy
+msgid "Check for ~Updates..."
+msgstr "Check for ~Updates..."
+"X-Accelerator-Marker: ~\n"
+
+#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.FL_DATA.fixedline.text
+#, fuzzy
+msgctxt "commonpagesdbp.src#RID_PAGE_TABLESELECTION.FL_DATA.fixedline.text"
+msgid "Data"
+msgstr "Data"
+
+#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.fixedtext.text
+#, fuzzy
+msgid ""
+"Currently, the form the control belongs to is not (or not completely) bound "
+"to a data source.\n"
+"\n"
+"Please choose a data source and a table.\n"
+"\n"
+"\n"
+"Please note that the settings made on this page will take effect immediately "
+"upon leaving the page."
+msgstr ""
+"Currently, the form the control belongs to is not (or not completely) bound "
+"to a data source.\n"
+"\n"
+"Please choose a data source and a table.\n"
+"\n"
+"\n"
+"Please note that the settings made on this page will take effect immediately "
+"upon leaving the page."
+
+#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.fixedtext.text
+#, fuzzy
+msgid "~Data source:"
+msgstr "~Data source:"
+
+#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.PB_FORMDATASOURCE.pushbutton.text
+#, fuzzy
+msgid "~..."
+msgstr "~..."
+
+#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_TABLE.fixedtext.text
+#, fuzzy
+msgid "~Table / Query:"
+msgstr "~Table / Query:"
+
+#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.tabpage.text
+#, fuzzy
+msgctxt "commonpagesdbp.src#RID_PAGE_TABLESELECTION.tabpage.text"
+msgid "Data"
+msgstr "Data"
+
+#: commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.FT_DATABASEFIELD_QUEST.fixedtext.text
+#, fuzzy
+msgid "Do you want to save the value in a database field?"
+msgstr "Do you want to save the value in a database field?"
+
+#: commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_YES.radiobutton.text
+#, fuzzy
+msgid "~Yes, I want to save it in the following database field:"
+msgstr "~Yes, I want to save it in the following database field:"
+
+#: commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_NO.radiobutton.text
+#, fuzzy
+msgid "~No, I only want to save the value in the form."
+msgstr "~No, I only want to save the value in the form."
+
+#: commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.tabpage.text
+#, fuzzy
+msgid "Database Field"
+msgstr "Database Field"
+
+#: commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FL_FORMSETINGS.fixedline.text
+#, fuzzy
+msgid "Form"
+msgstr "Form"
+
+#: commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMDATASOURCELABEL.fixedtext.text
+#, fuzzy
+msgid "Data source"
+msgstr "Data source"
+
+#: commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMCONTENTTYPELABEL.fixedtext.text
+#, fuzzy
+msgid "Content type"
+msgstr "Content type"
+
+#: commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMTABLELABEL.fixedtext.text
+#, fuzzy
+msgid "Content"
+msgstr "Content"
+
+#: commonpagesdbp.src#RID_STR_TYPE_TABLE.string.text
+#, fuzzy
+msgid "Table"
+msgstr "Table"
+
+#: commonpagesdbp.src#RID_STR_TYPE_QUERY.string.text
+#, fuzzy
+msgid "Query"
+msgstr "Query"
+
+#: commonpagesdbp.src#RID_STR_TYPE_COMMAND.string.text
+#, fuzzy
+msgid "SQL command"
+msgstr "SQL command"
+
+#: dbpilots.src#RID_DLG_GROUPBOXWIZARD.modaldialog.text
+#, fuzzy
+msgid "Group Element Wizard"
+msgstr "Group Element Wizard"
+
+#: dbpilots.src#RID_DLG_GRIDWIZARD.modaldialog.text
+#, fuzzy
+msgid "Table Element Wizard"
+msgstr "Table Element Wizard"
+
+#: dbpilots.src#RID_STR_LISTWIZARD_TITLE.string.text
+#, fuzzy
+msgid "List Box Wizard"
+msgstr "List Box Wizard"
+
+#: dbpilots.src#RID_STR_COMBOWIZARD_TITLE.string.text
+#, fuzzy
+msgid "Combo Box Wizard"
+msgstr "Combo Box Wizard"
+
+#: dbpilots.src#RID_STR_COULDNOTOPENTABLE.string.text
+#, fuzzy
+msgid "The table connection to the data source could not be established."
+msgstr "The table connection to the data source could not be established."
+
+#: gridpages.src#RID_PAGE_GW_FIELDSELECTION.FL_FRAME.fixedline.text
+#, fuzzy
+msgid "Table element"
+msgstr "Table element"
+
+#: gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.fixedtext.text
+#, fuzzy
+msgctxt ""
+"gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.fixedtext.text"
+msgid "Existing fields"
+msgstr "Existing fields"
+
+#: gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_SELECTED_FIELDS.fixedtext.text
+#, fuzzy
+msgid "Selected fields"
+msgstr "Selected fields"
+
+#: gridpages.src#RID_PAGE_GW_FIELDSELECTION.tabpage.text
+#, fuzzy
+msgctxt "gridpages.src#RID_PAGE_GW_FIELDSELECTION.tabpage.text"
+msgid "Field Selection"
+msgstr "Field Selection"
+
+#: gridpages.src#RID_STR_DATEPOSTFIX.string.text
+#, fuzzy
+msgid " (Date)"
+msgstr " (Date)"
+
+#: gridpages.src#RID_STR_TIMEPOSTFIX.string.text
+#, fuzzy
+msgid " (Time)"
+msgstr " (Time)"
+
+#: groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOLABELS.fixedtext.text
+#, fuzzy
+msgid "Which ~names do you want to give the option fields?"
+msgstr "Which ~names do you want to give the option fields?"
+
+#: groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.fixedtext.text
+#, fuzzy
+msgctxt ""
+"groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.fixedtext.text"
+msgid "~Option fields"
+msgstr "~Option fields"
+
+#: groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.tabpage.text
+#, fuzzy
+msgctxt "groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.tabpage.text"
+msgid "Data"
+msgstr "Data"
+
+#: groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.FT_DEFAULTSELECTION.fixedtext.text
+#, fuzzy
+msgid "Should one option field be selected as a default?"
+msgstr "Should one option field be selected as a default?"
+
+#: groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_YES.radiobutton.text
+#, fuzzy
+msgid "~Yes, the following:"
+msgstr "~Yes, the following:"
+
+#: groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_NO.radiobutton.text
+#, fuzzy
+msgid "No, one particular field is not going to be selected."
+msgstr "No, one particular field is not going to be selected."
+
+#: groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.tabpage.text
+#, fuzzy
+msgid "Default Field Selection"
+msgstr "Default Field Selection"
+
+#: groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES_EXPL.fixedtext.text
+#, fuzzy
+msgid "When you select an option, the option group is given a specific value."
+msgstr "When you select an option, the option group is given a specific value."
+
+#: groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES.fixedtext.text
+#, fuzzy
+msgid "Which ~value do you want to assign to each option?"
+msgstr "Which ~value do you want to assign to each option?"
+
+#: groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_RADIOBUTTONS.fixedtext.text
+#, fuzzy
+msgctxt ""
+"groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_RADIOBUTTONS.fixedtext.text"
+msgid "~Option fields"
+msgstr "~Option fields"
+
+#: groupboxpages.src#RID_PAGE_OPTIONVALUES.tabpage.text
+#, fuzzy
+msgid "Field Values"
+msgstr "Field Values"
+
+#: groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_NAMEIT.fixedtext.text
+#, fuzzy
+msgid "Which ~caption is to be given to your option group?"
+msgstr "Which ~caption is to be given to your option group?"
+
+#: groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_THATSALL.fixedtext.text
+#, fuzzy
+msgid "These were all details needed to create the option group."
+msgstr "These were all details needed to create the option group."
+
+#: groupboxpages.src#RID_PAGE_OPTIONS_FINAL.tabpage.text
+#, fuzzy
+msgid "Create Option Group"
+msgstr "Create Option Group"
+
+#: groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.string.text
+#, fuzzy
+msgid ""
+"You can either save the value of the option group in a database field or use "
+"it for a later action."
+msgstr ""
+"You can either save the value of the option group in a database field or use "
+"it for a later action."
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FL_FRAME.fixedline.text
+#, fuzzy
+msgid "Control"
+msgstr "Control"
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.fixedtext.text
+#, fuzzy
+msgid ""
+"On the right side, you see all the tables from the data source of the form.\n"
+"\n"
+"\n"
+"Choose the table from which the data should be used as basis for the list "
+"content:"
+msgstr ""
+"On the right side, you see all the tables from the data source of the form.\n"
+"\n"
+"\n"
+"Choose the table from which the data should be used as basis for the list "
+"content:"
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.tabpage.text
+#, fuzzy
+msgid "Table Selection"
+msgstr "Table Selection"
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_TABLEFIELDS.fixedtext.text
+#, fuzzy
+msgctxt ""
+"listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_TABLEFIELDS."
+"fixedtext.text"
+msgid "Existing fields"
+msgstr "Existing fields"
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_DISPLAYEDFIELD.fixedtext.text
+#, fuzzy
+msgid "Display field"
+msgstr "Display field"
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_COMBOBOX.string.text
+#, fuzzy
+msgid "The contents of the field selected will be shown in the combo box list."
+msgstr "The content of the selected field will be shown in the combo box list."
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.string.text
+#, fuzzy
+msgid ""
+"The contents of the selected field will be shown in the list box if the "
+"linked fields are identical."
+msgstr ""
+"The content of the selected field will be shown in the list box if the "
+"linked fields are identical."
+
+#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.tabpage.text
+#, fuzzy
+msgctxt "listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.tabpage.text"
+msgid "Field Selection"
+msgstr "Field Selection"
+
+#: listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.fixedtext.text
+#, fuzzy
+msgid ""
+"This is where you select fields with matching contents so that the value "
+"from the display field will be shown."
+msgstr ""
+"This is where you select fields with matching contents so that the value "
+"from the display field will be shown."
+
+#: listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.fixedtext.text
+#, fuzzy
+msgid "Field from the ~Value Table"
+msgstr "Field from the ~Value Table"
+
+#: listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_TABLEFIELD.fixedtext.text
+#, fuzzy
+msgid "Field from the ~List Table"
+msgstr "Field from the ~List Table"
+
+#: listcombopages.src#RID_PAGE_LCW_FIELDLINK.tabpage.text
+#, fuzzy
+msgid "Field Link"
+msgstr "Field Link"
+
+#: listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.string.text
+#, fuzzy
+msgid ""
+"You can either save the value of the combo box in a database field or use it "
+"for display purposes."
+msgstr ""
+"You can either save the value of the combo box in a database field or use it "
+"for display purposes."
+"X-Accelerator-Marker: ~\n"
+
+#: fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.pageitem.text
+#, fuzzy
+msgctxt ""
+"fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.pageitem.text"
+msgid "Font"
+msgstr "Font"
+
+#: fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS_EXT.pageitem.text
+#, fuzzy
+msgid "Font Effects"
+msgstr "Font Effects"
+
+#: fontdialog.src#RID_TABDLG_FONTDIALOG.tabdialog.text
+#, fuzzy
+msgid "Character"
+msgstr "Character"
+
+#: formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.fixedtext.text
+#, fuzzy
+msgid ""
+"Sub forms can be used to display detailed data about the current record of "
+"the master form. To do this, you can specify which columns in the sub form "
+"match which columns in the master form."
+msgstr ""
+"Sub-forms can be used to display detailed data about the current record of "
+"the master form. To do this, you can specify which columns in the sub-form "
+"match which columns in the master form."
+
+#: formlinkdialog.src#RID_DLG_FORMLINKS.modaldialog.text
+#, fuzzy
+msgid "Link fields"
+msgstr "Link fields"
+
+#: formlinkdialog.src#PB_SUGGEST.pushbutton.text
+#, fuzzy
+msgid "Suggest"
+msgstr "Suggest"
+
+#: formlinkdialog.src#STR_DETAIL_FORM.string.text
+#, fuzzy
+msgid "Sub Form"
+msgstr "Sub-form"
+
+#: formlinkdialog.src#STR_MASTER_FORM.string.text
+#, fuzzy
+msgid "Master Form"
+msgstr "Master Form"
+
+#: formlinkdialog.src#STR_ERROR_RETRIEVING_COLUMNS.string.text
+#, fuzzy
+msgid "The columns of '#' could not be retrieved."
+msgstr "The columns of '#' could not be retrieved."
+
+#: formres.src#RID_STR_EDITMASK.string.text
+#, fuzzy
+msgid "Edit mask"
+msgstr "Edit mask"
+
+#: formres.src#RID_STR_LITERALMASK.string.text
+#, fuzzy
+msgid "Literal mask"
+msgstr "Literal mask"
+
+#: formres.src#RID_STR_READONLY.string.text
+#, fuzzy
+msgctxt "formres.src#RID_STR_READONLY.string.text"
+msgid "Read-only"
+msgstr "Read-only"
+
+#: formres.src#RID_STR_ENABLED.string.text
+#, fuzzy
+msgid "Enabled"
+msgstr "Enabled"
+
+#: formres.src#RID_STR_ENABLE_VISIBLE.string.text
+#, fuzzy
+msgid "Visible"
+msgstr "Visible"
+
+#: formres.src#RID_STR_AUTOCOMPLETE.string.text
+#, fuzzy
+msgid "AutoFill"
+msgstr "AutoFill"
+
+#: formres.src#RID_STR_LINECOUNT.string.text
+#, fuzzy
+msgid "Line count"
+msgstr "Line count"
+
+#: formres.src#RID_STR_MAXTEXTLEN.string.text
+#, fuzzy
+msgid "Max. text length"
+msgstr "Max. text length"
+
+#: formres.src#RID_STR_SPIN.string.text
+#, fuzzy
+msgid "Spin Button"
+msgstr "Spin Button"
+
+#: formres.src#RID_STR_STRICTFORMAT.string.text
+#, fuzzy
+msgid "Strict format"
+msgstr "Strict format"
+
+#: formres.src#RID_STR_SHOWTHOUSANDSEP.string.text
+#, fuzzy
+msgid "Thousands separator"
+msgstr "Thousands separator"
+
+#: formres.src#RID_STR_PRINTABLE.string.text
+#, fuzzy
+msgid "Printable"
+msgstr "Printable"
+
+#: formres.src#RID_STR_TARGET_URL.string.text
+#, fuzzy
+msgctxt "formres.src#RID_STR_TARGET_URL.string.text"
+msgid "URL"
+msgstr "URL"
+
+#: formres.src#RID_STR_TARGET_FRAME.string.text
+#, fuzzy
+msgctxt "formres.src#RID_STR_TARGET_FRAME.string.text"
+msgid "Frame"
+msgstr "Frame"
+
+#: formres.src#RID_STR_HELPTEXT.string.text
+#, fuzzy
+msgid "Help text"
+msgstr "Help text"
+
+#: formres.src#RID_STR_HELPURL.string.text
+#, fuzzy
+msgid "Help URL"
+msgstr "Help URL"
+
+#: formres.src#RID_STR_TAG.string.text
+#, fuzzy
+msgid "Additional information"
+msgstr "Additional information"
+
+#: formres.src#RID_STR_ECHO_CHAR.string.text
+#, fuzzy
+msgid "Password character"
+msgstr "Password character"
+
+#: formres.src#RID_STR_TRISTATE.string.text
+#, fuzzy
+msgid "Tristate"
+msgstr "Tri-state"
+
+#: formres.src#RID_STR_EMPTY_IS_NULL.string.text
+#, fuzzy
+msgid "Empty string is NULL"
+msgstr "Empty string is NULL"
+
+#: formres.src#RID_STR_DECIMAL_ACCURACY.string.text
+#, fuzzy
+msgid "Decimal accuracy"
+msgstr "Decimal accuracy"
+
+#: formres.src#RID_STR_IMAGE_URL.string.text
+#, fuzzy
+msgid "Graphics"
+msgstr "Graphics"
+
+#: formres.src#RID_STR_DEFAULT_SELECT_SEQ.string.text
+#, fuzzy
+msgid "Default selection"
+msgstr "Default selection"
+
+#: formres.src#RID_STR_DEFAULT_BUTTON.string.text
+#, fuzzy
+msgid "Default button"
+msgstr "Default button"
+
+#: formres.src#RID_STR_LABELCONTROL.string.text
+#, fuzzy
+msgctxt "formres.src#RID_STR_LABELCONTROL.string.text"
+msgid "Label Field"
+msgstr "Label Field"
+
+#: formres.src#RID_STR_LABEL.string.text
+#, fuzzy
+msgid "Label"
+msgstr "Label"
+
+#: formres.src#RID_STR_ALIGN.string.text
+#, fuzzy
+msgid "Alignment"
+msgstr "Alignment"
+
+#: formres.src#RID_STR_VERTICAL_ALIGN.string.text
+#, fuzzy
+msgid "Vert. Alignment"
+msgstr "Vert. Alignment"
+
+#: formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.1.string.text
+#, fuzzy
+msgid "Top"
+msgstr "Top"
+
+#: formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.2.string.text
+#, fuzzy
+msgid "Middle"
+msgstr "Middle"
+
+#: formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.3.string.text
+#, fuzzy
+msgid "Bottom"
+msgstr "Bottom"
+
+#: formres.src#RID_STR_IMAGEPOSITION.string.text
+#, fuzzy
+msgid "Graphics alignment"
+msgstr "Graphics alignment"
+
+#: formres.src#RID_STR_FONT.string.text
+#, fuzzy
+msgctxt "formres.src#RID_STR_FONT.string.text"
+msgid "Font"
+msgstr "Font"
+
+#: formres.src#RID_STR_BACKGROUNDCOLOR.string.text
+#, fuzzy
+msgid "Background color"
+msgstr "Background colour"
+
+#: formres.src#RID_STR_BORDER.string.text
+#, fuzzy
+msgid "Border"
+msgstr "Border"
+
+#: formres.src#RID_STR_ICONSIZE.string.text
+#, fuzzy
+msgid "Icon size"
+msgstr "Icon size"
+
+#: formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.1.string.text
+#, fuzzy
+msgid "Small"
+msgstr "Small"
+
+#: formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.2.string.text
+#, fuzzy
+msgid "Large"
+msgstr "Large"
+
+#: formres.src#RID_STR_SHOW_POSITION.string.text
+#, fuzzy
+msgid "Positioning"
+msgstr "Positioning"
+
+#: formres.src#RID_STR_SHOW_NAVIGATION.string.text
+#, fuzzy
+msgid "Navigation"
+msgstr "Navigation"
+
+#: formres.src#RID_STR_SHOW_RECORDACTIONS.string.text
+#, fuzzy
+msgid "Acting on a record"
+msgstr "Acting on a record"
+
+#: formres.src#RID_STR_SHOW_FILTERSORT.string.text
+#, fuzzy
+msgid "Filtering / Sorting"
+msgstr "Filtering / Sorting"
+
+#: formres.src#RID_STR_HSCROLL.string.text
+#, fuzzy
+msgid "Horizontal scroll bar"
+msgstr "Horizontal scroll bar"
+
+#: formres.src#RID_STR_VSCROLL.string.text
+#, fuzzy
+msgid "Vertical scroll bar"
+msgstr "Vertical scroll bar"
+
+#: formres.src#RID_STR_WORDBREAK.string.text
+#, fuzzy
+msgid "Word break"
+msgstr "Word break"
+
+#: formres.src#RID_STR_MULTILINE.string.text
+#, fuzzy
+msgid "Multiline input"
+msgstr "Multi-line input"
+
+#: formres.src#RID_STR_MULTISELECTION.string.text
+#, fuzzy
+msgid "Multiselection"
+msgstr "Multiselection"
+
+#: formres.src#RID_STR_NAME.string.text
+#, fuzzy
+msgid "Name"
+msgstr "Name"
+
+#: formres.src#RID_STR_TABINDEX.string.text
+#, fuzzy
+msgid "Tab order"
+msgstr "Tab order"
+
+#: formres.src#RID_STR_WHEEL_BEHAVIOR.string.text
+#, fuzzy
+msgid "Mouse wheel scroll"
+msgstr "Mouse wheel scroll"
+
+#: formres.src#RID_STR_FILTER.string.text
+#, fuzzy
+msgid "Filter"
+msgstr "Filter"
+
+#: formres.src#RID_STR_SORT_CRITERIA.string.text
+#, fuzzy
+msgid "Sort"
+msgstr "Sort"
+
+#: formres.src#RID_STR_RECORDMARKER.string.text
+#, fuzzy
+msgid "Record marker"
+msgstr "Record marker"
+
+#: formres.src#RID_STR_FILTERPROPOSAL.string.text
+#, fuzzy
+msgid "Filter proposal"
+msgstr "Filter proposal"
+
+#: formres.src#RID_STR_NAVIGATION.string.text
+#, fuzzy
+msgid "Navigation bar"
+msgstr "Navigation bar"
+
+#: formres.src#RID_STR_CYCLE.string.text
+#, fuzzy
+msgid "Cycle"
+msgstr "Cycle"
+
+#: formres.src#RID_STR_TABSTOP.string.text
+#, fuzzy
+msgid "Tabstop"
+msgstr "Tab stop"
+
+#: formres.src#RID_STR_CONTROLSOURCE.string.text
+#, fuzzy
+msgid "Data field"
+msgstr "Data field"
+
+#: formres.src#RID_STR_DROPDOWN.string.text
+#, fuzzy
+msgid "Dropdown"
+msgstr "Drop-down"
+
+#: formres.src#RID_STR_BOUNDCOLUMN.string.text
+#, fuzzy
+msgid "Bound field"
+msgstr "Bound field"
+
+#: formres.src#RID_STR_LISTSOURCE.string.text
+#, fuzzy
+msgid "List content"
+msgstr "List content"
+
+#: formres.src#RID_STR_LISTSOURCETYPE.string.text
+#, fuzzy
+msgid "Type of list contents"
+msgstr "Type of list contents"
+
+#: formres.src#RID_STR_CURSORSOURCE.string.text
+#, fuzzy
+msgid "Content"
+msgstr "Content"
+
+#: formres.src#RID_STR_CURSORSOURCETYPE.string.text
+#, fuzzy
+msgid "Content type"
+msgstr "Content type"
+
+#: formres.src#RID_STR_ALLOW_ADDITIONS.string.text
+#, fuzzy
+msgid "Allow additions"
+msgstr "Allow additions"
+
+#: formres.src#RID_STR_ALLOW_DELETIONS.string.text
+#, fuzzy
+msgid "Allow deletions"
+msgstr "Allow deletions"
+
+#: formres.src#RID_STR_ALLOW_EDITS.string.text
+#, fuzzy
+msgid "Allow modifications"
+msgstr "Allow modifications"
+
+#: formres.src#RID_STR_DATAENTRY.string.text
+#, fuzzy
+msgid "Add data only"
+msgstr "Add data only"
+
+#: formres.src#RID_STR_DATASOURCE.string.text
+#, fuzzy
+msgid "Data source"
+msgstr "Data source"
+
+#: formres.src#RID_STR_MASTERFIELDS.string.text
+#, fuzzy
+msgid "Link master fields"
+msgstr "Link master fields"
+
+#: formres.src#RID_STR_SLAVEFIELDS.string.text
+#, fuzzy
+msgid "Link slave fields"
+msgstr "Link slave fields"
+
+#: formres.src#RID_STR_VALUEMIN.string.text
+#, fuzzy
+msgid "Value min."
+msgstr "Value min."
+
+#: formres.src#RID_STR_VALUEMAX.string.text
+#, fuzzy
+msgid "Value max."
+msgstr "Value max."
+
+#: formres.src#RID_STR_VALUESTEP.string.text
+#, fuzzy
+msgid "Incr./decrement value"
+msgstr "Incr./decrement value"
+
+#: formres.src#RID_STR_CURRENCYSYMBOL.string.text
+#, fuzzy
+msgid "Currency symbol"
+msgstr "Currency symbol"
+
+#: formres.src#RID_STR_DATEMIN.string.text
+#, fuzzy
+msgid "Date min."
+msgstr "Date min."
+
+#: formres.src#RID_STR_DATEMAX.string.text
+#, fuzzy
+msgid "Date max."
+msgstr "Date max."
+
+#: formres.src#RID_STR_DATEFORMAT.string.text
+#, fuzzy
+msgid "Date format"
+msgstr "Date format"
+
+#: formres.src#RID_STR_SELECTEDITEMS.string.text
+#, fuzzy
+msgid "Selection"
+msgstr "Selection"
+
+#: formres.src#RID_STR_TIMEMIN.string.text
+#, fuzzy
+msgid "Time min."
+msgstr "Time min."
+
+#: formres.src#RID_STR_TIMEMAX.string.text
+#, fuzzy
+msgid "Time max."
+msgstr "Time max."
+
+#: formres.src#RID_STR_TIMEFORMAT.string.text
+#, fuzzy
+msgid "Time format"
+msgstr "Time format"
+
+#: formres.src#RID_STR_CURRSYM_POSITION.string.text
+#, fuzzy
+msgid "Prefix symbol"
+msgstr "Prefix symbol"
+
+#: formres.src#RID_STR_VALUE.string.text
+#, fuzzy
+msgid "Value"
+msgstr "Value"
+
+#: formres.src#RID_STR_FORMATKEY.string.text
+#, fuzzy
+msgid "Formatting"
+msgstr "Formatting"
+
+#: formres.src#RID_STR_CLASSID.string.text
+#, fuzzy
+msgid "Class ID"
+msgstr "Class ID"
+
+#: formres.src#RID_STR_HEIGHT.string.text
+#, fuzzy
+msgid "Height"
+msgstr "Height"
+
+#: formres.src#RID_STR_WIDTH.string.text
+#, fuzzy
+msgid "Width"
+msgstr "Width"
+
+#: formres.src#RID_STR_LISTINDEX.string.text
+#, fuzzy
+msgid "List index"
+msgstr "List index"
+
+#: formres.src#RID_STR_ROWHEIGHT.string.text
+#, fuzzy
+msgid "Row height"
+msgstr "Row height"
+
+#: formres.src#RID_STR_FILLCOLOR.string.text
+#, fuzzy
+msgid "Fill color"
+msgstr "Fill colour"
+
+#: formres.src#RID_STR_LINECOLOR.string.text
+#, fuzzy
+msgid "Line color"
+msgstr "Line colour"
+
+#: formres.src#RID_STR_REFVALUE.string.text
+#, fuzzy
+msgid "Reference value (on)"
+msgstr "Reference value (on)"
+
+#: formres.src#RID_STR_UNCHECKEDREFVALUE.string.text
+#, fuzzy
+msgid "Reference value (off)"
+msgstr "Reference value (off)"
+
+#: formres.src#RID_STR_STRINGITEMLIST.string.text
+#, fuzzy
+msgid "List entries"
+msgstr "List entries"
+
+#: formres.src#RID_STR_BUTTONTYPE.string.text
+#, fuzzy
+msgid "Action"
+msgstr "Action"
+
+#: formres.src#RID_STR_SUBMIT_ACTION.string.text
+#, fuzzy
+msgctxt "formres.src#RID_STR_SUBMIT_ACTION.string.text"
+msgid "URL"
+msgstr "URL"
+
+#: formres.src#RID_STR_SUBMIT_METHOD.string.text
+#, fuzzy
+msgid "Type of submission"
+msgstr "Type of submission"
+
+#: formres.src#RID_STR_DEFAULT_STATE.string.text
+#, fuzzy
+msgid "Default status"
+msgstr "Default status"
+
+#: formres.src#RID_STR_SUBMIT_ENCODING.string.text
+#, fuzzy
+msgid "Submission encoding"
+msgstr "Submission encoding"
+
+#: formres.src#RID_STR_DEFAULTVALUE.string.text
+#, fuzzy
+msgid "Default value"
+msgstr "Default value"
+
+#: formres.src#RID_STR_DEFAULTTEXT.string.text
+#, fuzzy
+msgid "Default text"
+msgstr "Default text"
+
+#: formres.src#RID_STR_DEFAULTDATE.string.text
+#, fuzzy
+msgid "Default date"
+msgstr "Default date"
+
+#: formres.src#RID_STR_DEFAULTTIME.string.text
+#, fuzzy
+msgid "Default time"
+msgstr "Default time"
+
+#: formres.src#RID_STR_SUBMIT_TARGET.string.text
+#, fuzzy
+msgctxt "formres.src#RID_STR_SUBMIT_TARGET.string.text"
+msgid "Frame"
+msgstr "Frame"
+
+#: formres.src#RID_RSC_ENUM_BORDER_TYPE.1.string.text
+#, fuzzy
+msgid "Without frame"
+msgstr "Without frame"
+
+#: formres.src#RID_RSC_ENUM_BORDER_TYPE.2.string.text
+#, fuzzy
+msgid "3D look"
+msgstr "3-D look"
+
+#: formres.src#RID_RSC_ENUM_BORDER_TYPE.3.string.text
+#, fuzzy
+msgctxt "formres.src#RID_RSC_ENUM_BORDER_TYPE.3.string.text"
+msgid "Flat"
+msgstr "Flat"
+
+#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.1.string.text
+#, fuzzy
+msgid "Valuelist"
+msgstr "Valuelist"
+
+#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.string.text
+#, fuzzy
+msgctxt "formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.string.text"
+msgid "Table"
+msgstr "Table"
+
+#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.string.text
+#, fuzzy
+msgctxt "formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.string.text"
+msgid "Query"
+msgstr "Query"
+
+#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.4.string.text
+#, fuzzy
+msgid "Sql"
+msgstr "Sql"
+
+#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.5.string.text
+#, fuzzy
+msgid "Sql [Native]"
+msgstr "Sql [Native]"
+
+#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.6.string.text
+#, fuzzy
+msgid "Tablefields"
+msgstr "Tablefields"
+
+#: formres.src#RID_RSC_ENUM_ALIGNMENT.1.string.text
+#, fuzzy
+msgid "Left"
+msgstr "Left"
+
+#: formres.src#RID_RSC_ENUM_ALIGNMENT.2.string.text
+#, fuzzy
+msgid "Center"
+msgstr "Centre"
+
+#: formres.src#RID_RSC_ENUM_ALIGNMENT.3.string.text
+#, fuzzy
+msgid "Right"
+msgstr "Right"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.1.string.text
+#, fuzzy
+msgctxt "formres.src#RID_RSC_ENUM_BUTTONTYPE.1.string.text"
+msgid "None"
+msgstr "None"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.2.string.text
+#, fuzzy
+msgid "Submit form"
+msgstr "Submit form"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.3.string.text
+#, fuzzy
+msgid "Reset form"
+msgstr "Reset form"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.4.string.text
+#, fuzzy
+msgid "Open document/web page"
+msgstr "Open document/web page"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.5.string.text
+#, fuzzy
+msgid "First record"
+msgstr "First record"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.6.string.text
+#, fuzzy
+msgid "Previous record"
+msgstr "Previous record"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.7.string.text
+#, fuzzy
+msgid "Next record"
+msgstr "Next record"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.8.string.text
+#, fuzzy
+msgid "Last record"
+msgstr "Last record"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.9.string.text
+#, fuzzy
+msgid "Save record"
+msgstr "Save record"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.10.string.text
+#, fuzzy
+msgid "Undo data entry"
+msgstr "Undo data entry"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.11.string.text
+#, fuzzy
+msgid "New record"
+msgstr "New record"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.12.string.text
+#, fuzzy
+msgid "Delete record"
+msgstr "Delete record"
+
+#: formres.src#RID_RSC_ENUM_BUTTONTYPE.13.string.text
+#, fuzzy
+msgid "Refresh form"
+msgstr "Refresh form"
+
+#: formres.src#RID_RSC_ENUM_SUBMIT_METHOD.1.string.text
+#, fuzzy
+msgid "Get"
+msgstr "Get"
+
+#: formres.src#RID_RSC_ENUM_SUBMIT_METHOD.2.string.text
+#, fuzzy
+msgid "Post"
+msgstr "Post"
+
+#: formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.string.text
+#, fuzzy
+msgctxt "formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.string.text"
+msgid "URL"
+msgstr "URL"
+
+#: formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.2.string.text
+#, fuzzy
+msgid "Multipart"
+msgstr "Multipart"
+
+#: formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.string.text
+#, fuzzy
+msgctxt "formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.string.text"
+msgid "Text"
+msgstr "Text"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.1.string.text
+#, fuzzy
+msgid "Standard (short)"
+msgstr "Standard (short)"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.2.string.text
+#, fuzzy
+msgid "Standard (short YY)"
+msgstr "Standard (short YY)"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.3.string.text
+#, fuzzy
+msgid "Standard (short YYYY)"
+msgstr "Standard (short YYYY)"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.4.string.text
+#, fuzzy
+msgid "Standard (long)"
+msgstr "Standard (long)"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.5.string.text
+#, fuzzy
+msgid "DD/MM/YY"
+msgstr "DD/MM/YY"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.6.string.text
+#, fuzzy
+msgid "MM/DD/YY"
+msgstr "MM/DD/YY"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.7.string.text
+#, fuzzy
+msgid "YY/MM/DD"
+msgstr "YY/MM/DD"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.8.string.text
+#, fuzzy
+msgid "DD/MM/YYYY"
+msgstr "DD/MM/YYYY"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.9.string.text
+#, fuzzy
+msgid "MM/DD/YYYY"
+msgstr "MM/DD/YYYY"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.10.string.text
+#, fuzzy
+msgid "YYYY/MM/DD"
+msgstr "YYYY/MM/DD"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.11.string.text
+#, fuzzy
+msgid "YY-MM-DD"
+msgstr "YY-MM-DD"
+
+#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.12.string.text
+#, fuzzy
+msgid "YYYY-MM-DD"
+msgstr "YYYY-MM-DD"
+
+#: formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.1.string.text
+#, fuzzy
+msgid "13:45"
+msgstr "13:45"
+
+#: formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.2.string.text
+#, fuzzy
+msgid "13:45:00"
+msgstr "13:45:00"
+
+#: formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.3.string.text
+#, fuzzy
+msgid "01:45 PM"
+msgstr "01:45 PM"
+
+#: formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.4.string.text
+#, fuzzy
+msgid "01:45:00 PM"
+msgstr "01:45:00 PM"
+
+#: formres.src#RID_RSC_ENUM_CHECKED.1.string.text
+#, fuzzy
+msgid "Not Selected"
+msgstr "Not Selected"
+
+#: formres.src#RID_RSC_ENUM_CHECKED.2.string.text
+#, fuzzy
+msgid "Selected"
+msgstr "Selected"
+
+#: formres.src#RID_RSC_ENUM_CHECKED.3.string.text
+#, fuzzy
+msgid "Not Defined"
+msgstr "Not Defined"
+
+#: formres.src#RID_RSC_ENUM_CYCLE.1.string.text
+#, fuzzy
+msgid "All records"
+msgstr "All records"
+
+#: formres.src#RID_RSC_ENUM_CYCLE.2.string.text
+#, fuzzy
+msgid "Active record"
+msgstr "Active record"
+
+#: formres.src#RID_RSC_ENUM_CYCLE.3.string.text
+#, fuzzy
+msgid "Current page"
+msgstr "Current page"
+
+#: formres.src#RID_RSC_ENUM_NAVIGATION.1.string.text
+#, fuzzy
+msgctxt "formres.src#RID_RSC_ENUM_NAVIGATION.1.string.text"
+msgid "No"
+msgstr "No"
+
+#: formres.src#RID_RSC_ENUM_NAVIGATION.2.string.text
+#, fuzzy
+msgctxt "formres.src#RID_RSC_ENUM_NAVIGATION.2.string.text"
+msgid "Yes"
+msgstr "Yes"
+
+#: formres.src#RID_RSC_ENUM_NAVIGATION.3.string.text
+#, fuzzy
+msgid "Parent Form"
+msgstr "Parent Form"
+
+#: formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.string.text
+#, fuzzy
+msgctxt "formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.string.text"
+msgid "None"
+msgstr "None"
+
+#: formres.src#RID_RSC_ENUM_SELECTION_TYPE.2.string.text
+#, fuzzy
+msgid "Single"
+msgstr "Single"
+
+#: formres.src#RID_RSC_ENUM_SELECTION_TYPE.3.string.text
+#, fuzzy
+msgid "Multi"
+msgstr "Multi"
+
+#: formres.src#RID_RSC_ENUM_SELECTION_TYPE.4.string.text
+#, fuzzy
+msgid "Range"
+msgstr "Range"
+
+#: formres.src#RID_STR_EVT_APPROVEPARAMETER.string.text
+#, fuzzy
+msgid "Fill parameters"
+msgstr "Fill parameters"
+
+#: formres.src#RID_STR_EVT_ACTIONPERFORMED.string.text
+#, fuzzy
+msgid "Execute action"
+msgstr "Execute action"
+
+#: formres.src#RID_STR_EVT_AFTERUPDATE.string.text
+#, fuzzy
+msgid "After updating"
+msgstr "After updating"
+
+#: formres.src#RID_STR_EVT_BEFOREUPDATE.string.text
+#, fuzzy
+msgid "Before updating"
+msgstr "Before updating"
+
+#: formres.src#RID_STR_EVT_APPROVEROWCHANGE.string.text
+#, fuzzy
+msgid "Before record action"
+msgstr "Before record action"
+
+#: formres.src#RID_STR_EVT_ROWCHANGE.string.text
+#, fuzzy
+msgid "After record action"
+msgstr "After record action"
+
+#: formres.src#RID_STR_EVT_CONFIRMDELETE.string.text
+#, fuzzy
+msgid "Confirm deletion"
+msgstr "Confirm deletion"
+
+#: formres.src#RID_STR_EVT_ERROROCCURED.string.text
+#, fuzzy
+msgid "Error occurred"
+msgstr "Error occurred"
+
+#: formres.src#RID_STR_EVT_FOCUSGAINED.string.text
+#, fuzzy
+msgid "When receiving focus"
+msgstr "When receiving focus"
+
+#: formres.src#RID_STR_EVT_FOCUSLOST.string.text
+#, fuzzy
+msgid "When losing focus"
+msgstr "When losing focus"
+
+#: formres.src#RID_STR_EVT_ITEMSTATECHANGED.string.text
+#, fuzzy
+msgid "Item status changed"
+msgstr "Item status changed"
+
+#: formres.src#RID_STR_EVT_KEYTYPED.string.text
+#, fuzzy
+msgid "Key pressed"
+msgstr "Key pressed"
+
+#: formres.src#RID_STR_EVT_KEYUP.string.text
+#, fuzzy
+msgid "Key released"
+msgstr "Key released"
+
+#: formres.src#RID_STR_EVT_LOADED.string.text
+#, fuzzy
+msgid "When loading"
+msgstr "When loading"
+
+#: formres.src#RID_STR_EVT_RELOADING.string.text
+#, fuzzy
+msgid "Before reloading"
+msgstr "Before reloading"
+
+#: formres.src#RID_STR_EVT_RELOADED.string.text
+#, fuzzy
+msgid "When reloading"
+msgstr "When reloading"
+
+#: formres.src#RID_STR_EVT_MOUSEDRAGGED.string.text
+#, fuzzy
+msgid "Mouse moved while key pressed"
+msgstr "Mouse moved while key pressed"
+
+#: formres.src#RID_STR_EVT_MOUSEENTERED.string.text
+#, fuzzy
+msgid "Mouse inside"
+msgstr "Mouse inside"
+
+#: formres.src#RID_STR_EVT_MOUSEEXITED.string.text
+#, fuzzy
+msgid "Mouse outside"
+msgstr "Mouse outside"
+
+#: formres.src#RID_STR_EVT_MOUSEMOVED.string.text
+#, fuzzy
+msgid "Mouse moved"
+msgstr "Mouse moved"
+
+#: formres.src#RID_STR_EVT_MOUSEPRESSED.string.text
+#, fuzzy
+msgid "Mouse button pressed"
+msgstr "Mouse button pressed"
+
+#: formres.src#RID_STR_EVT_MOUSERELEASED.string.text
+#, fuzzy
+msgid "Mouse button released"
+msgstr "Mouse button released"
+
+#: formres.src#RID_STR_EVT_POSITIONING.string.text
+#, fuzzy
+msgid "Before record change"
+msgstr "Before record change"
+
+#: formres.src#RID_STR_EVT_POSITIONED.string.text
+#, fuzzy
+msgid "After record change"
+msgstr "After record change"
+
+#: formres.src#RID_STR_EVT_RESETTED.string.text
+#, fuzzy
+msgid "After resetting"
+msgstr "After resetting"
+
+#: formres.src#RID_STR_EVT_APPROVERESETTED.string.text
+#, fuzzy
+msgid "Prior to reset"
+msgstr "Prior to reset"
+
+#: formres.src#RID_STR_EVT_APPROVEACTIONPERFORMED.string.text
+#, fuzzy
+msgid "Approve action"
+msgstr "Approve action"
+
+#: formres.src#RID_STR_EVT_SUBMITTED.string.text
+#, fuzzy
+msgid "Before submitting"
+msgstr "Before submitting"
+
+#: formres.src#RID_STR_EVT_TEXTCHANGED.string.text
+#, fuzzy
+msgid "Text modified"
+msgstr "Text modified"
+
+#: formres.src#RID_STR_EVT_UNLOADING.string.text
+#, fuzzy
+msgid "Before unloading"
+msgstr "Before unloading"
+
+#: formres.src#RID_STR_EVT_UNLOADED.string.text
+#, fuzzy
+msgid "When unloading"
+msgstr "When unloading"
+
+#: formres.src#RID_STR_EVT_CHANGED.string.text
+#, fuzzy
+msgid "Changed"
+msgstr "Changed"
+
+#: formres.src#RID_STR_EVENTS.string.text
+#, fuzzy
+msgid "Events"
+msgstr "Events"
+
+#: formres.src#RID_STR_ESCAPE_PROCESSING.string.text
+#, fuzzy
+msgid "Analyze SQL command"
+msgstr "Analyse SQL command"
+
+#: formres.src#RID_STR_POSITIONX.string.text
+#, fuzzy
+msgid "PositionX"
+msgstr "PositionX"
+
+#: formres.src#RID_STR_POSITIONY.string.text
+#, fuzzy
+msgid "PositionY"
+msgstr "PositionY"
+
+#: formres.src#RID_STR_TITLE.string.text
+#, fuzzy
+msgid "Title"
+msgstr "Title"
+
+#: formres.src#RID_STR_STEP.string.text
+#, fuzzy
+msgid "Page (step)"
+msgstr "Page (step)"
+
+#: formres.src#RID_STR_PROGRESSVALUE.string.text
+#, fuzzy
+msgid "Progress value"
+msgstr "Progress value"
+
+#: formres.src#RID_STR_PROGRESSVALUE_MIN.string.text
+#, fuzzy
+msgid "Progress value min."
+msgstr "Progress value min."
+
+#: formres.src#RID_STR_PROGRESSVALUE_MAX.string.text
+#, fuzzy
+msgid "Progress value max."
+msgstr "Progress value max."
+
+#: formres.src#RID_STR_SCROLLVALUE.string.text
+#, fuzzy
+msgid "Scroll value"
+msgstr "Scroll value"
+
+#: formres.src#RID_STR_SCROLLVALUE_MAX.string.text
+#, fuzzy
+msgid "Scroll value max."
+msgstr "Scroll value max."
+
+#: formres.src#RID_STR_SCROLLVALUE_MIN.string.text
+#, fuzzy
+msgid "Scroll value min."
+msgstr "Scroll value min."
+
+#: formres.src#RID_STR_DEFAULT_SCROLLVALUE.string.text
+#, fuzzy
+msgid "Default scroll value"
+msgstr "Default scroll value"
+
+#: formres.src#RID_STR_LINEINCREMENT.string.text
+#, fuzzy
+msgid "Small change"
+msgstr "Small change"
+
+#: formres.src#RID_STR_BLOCKINCREMENT.string.text
+#, fuzzy
+msgid "Large change"
+msgstr "Large change"
+
+#: formres.src#RID_STR_REPEAT_DELAY.string.text
+#, fuzzy
+msgid "Delay"
+msgstr "Delay"
+
+#: formres.src#RID_STR_REPEAT.string.text
+#, fuzzy
+msgid "Repeat"
+msgstr "Repeat"
+
+#: formres.src#RID_STR_VISIBLESIZE.string.text
+#, fuzzy
+msgid "Visible size"
+msgstr "Visible size"
+
+#: formres.src#RID_STR_ORIENTATION.string.text
+#, fuzzy
+msgid "Orientation"
+msgstr "Orientation"
+
+#: formres.src#RID_RSC_ENUM_ORIENTATION.1.string.text
+#, fuzzy
+msgctxt "formres.src#RID_RSC_ENUM_ORIENTATION.1.string.text"
+msgid "Horizontal"
+msgstr "Horizontal"
+
+#: formres.src#RID_RSC_ENUM_ORIENTATION.2.string.text
+#, fuzzy
+msgctxt "formres.src#RID_RSC_ENUM_ORIENTATION.2.string.text"
+msgid "Vertical"
+msgstr "Vertical"
+
+#: formres.src#RID_STR_EVT_ADJUSTMENTVALUECHANGED.string.text
+#, fuzzy
+msgid "While adjusting"
+msgstr "While adjusting"
+
+#: formres.src#RID_STR_DATE.string.text
+#, fuzzy
+msgid "Date"
+msgstr "Date"
+
+#: formres.src#RID_STR_STATE.string.text
+#, fuzzy
+msgid "State"
+msgstr "State"
+
+#: formres.src#RID_STR_TIME.string.text
+#, fuzzy
+msgid "Time"
+msgstr "Time"
+
+#: formres.src#RID_STR_SCALEIMAGE.string.text
+#, fuzzy
+msgid "Scale"
+msgstr "Scale"
+
+#: formres.src#RID_STR_PUSHBUTTONTYPE.string.text
+#, fuzzy
+msgid "Button type"
+msgstr "Button type"
+
+#: formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.string.text
+#, fuzzy
+msgctxt "formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.string.text"
+msgid "Default"
+msgstr "Default"
+
+#: formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.2.string.text
+#, fuzzy
+msgid "OK"
+msgstr "OK"
+
+#: formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.3.string.text
+#, fuzzy
+msgid "Cancel"
+msgstr "Cancel"
+
+#: formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.string.text
+#, fuzzy
+msgctxt "formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.string.text"
+msgid "Help"
+msgstr "Help"
+
+#: formres.src#RID_STR_UNABLETOCONNECT.string.text
+#, fuzzy
+msgid "The connection to the data source \"$name$\" could not be established."
+msgstr "The connection to the data source \"$name$\" could not be established."
+
+#: formres.src#RID_STR_TEXT.string.text
+#, fuzzy
+msgctxt "formres.src#RID_STR_TEXT.string.text"
+msgid "Text"
+msgstr "Text"
+
+#: formres.src#RID_STR_BOUND_CELL.string.text
+#, fuzzy
+msgid "Linked cell"
+msgstr "Linked cell"
+
+#: formres.src#RID_STR_LIST_CELL_RANGE.string.text
+#, fuzzy
+msgid "Source cell range"
+msgstr "Source cell range"
+
+#: formres.src#RID_STR_CELL_EXCHANGE_TYPE.string.text
+#, fuzzy
+msgid "Contents of the linked cell"
+msgstr "Contents of the linked cell"
+
+#: formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.1.string.text
+#, fuzzy
+msgid "The selected entry"
+msgstr "The selected entry"
+
+#: formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.2.string.text
+#, fuzzy
+msgid "Position of the selected entry"
+msgstr "Position of the selected entry"
+
+#: formres.src#RID_STR_SHOW_SCROLLBARS.string.text
+#, fuzzy
+msgid "Scrollbars"
+msgstr "Scrollbars"
+
+#: formres.src#RID_RSC_ENUM_TEXTTYPE.1.string.text
+#, fuzzy
+msgid "Single-line"
+msgstr "Single-line"
+
+#: formres.src#RID_RSC_ENUM_TEXTTYPE.2.string.text
+#, fuzzy
+msgid "Multi-line"
+msgstr "Multi-line"
+
+#: formres.src#RID_RSC_ENUM_TEXTTYPE.3.string.text
+#, fuzzy
+msgid "Multi-line with formatting"
+msgstr "Multi-line with formatting"
+
+#: formres.src#RID_STR_SYMBOLCOLOR.string.text
+#, fuzzy
+msgid "Symbol color"
+msgstr "Symbol colour"
+
+#: formres.src#RID_STR_LINEEND_FORMAT.string.text
+#, fuzzy
+msgid "Text lines end with"
+msgstr "Text lines end with"
+
+#: formres.src#RID_RSC_ENUM_LINEEND_FORMAT.1.string.text
+#, fuzzy
+msgid "LF (Unix)"
+msgstr "LF (Unix)"
+
+#: formres.src#RID_RSC_ENUM_LINEEND_FORMAT.2.string.text
+#, fuzzy
+msgid "CR+LF (Windows)"
+msgstr "CR+LF (Windows)"
+
+#: formres.src#RID_RSC_ENUM_SCROLLBARS.1.string.text
+#, fuzzy
+msgctxt "formres.src#RID_RSC_ENUM_SCROLLBARS.1.string.text"
+msgid "None"
+msgstr "None"
+
+#: formres.src#RID_RSC_ENUM_SCROLLBARS.2.string.text
+#, fuzzy
+msgctxt "formres.src#RID_RSC_ENUM_SCROLLBARS.2.string.text"
+msgid "Horizontal"
+msgstr "Horizontal"
+
+#: formres.src#RID_RSC_ENUM_SCROLLBARS.3.string.text
+#, fuzzy
+msgctxt "formres.src#RID_RSC_ENUM_SCROLLBARS.3.string.text"
+msgid "Vertical"
+msgstr "Vertical"
+
+#: formres.src#RID_RSC_ENUM_SCROLLBARS.4.string.text
+#, fuzzy
+msgid "Both"
+msgstr "Both"
+
+#: formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.string.text
+#, fuzzy
+msgctxt "formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.string.text"
+msgid "Table"
+msgstr "Table"
+
+#: formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.string.text
+#, fuzzy
+msgctxt "formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.string.text"
+msgid "Query"
+msgstr "Query"
+
+#: formres.src#RID_RSC_ENUM_COMMAND_TYPE.3.string.text
+#, fuzzy
+msgid "SQL command"
+msgstr "SQL command"
+
+#: formres.src#RID_STR_TOGGLE.string.text
+#, fuzzy
+msgid "Toggle"
+msgstr "Toggle"
+
+#: formres.src#RID_STR_FOCUSONCLICK.string.text
+#, fuzzy
+msgid "Take Focus on Click"
+msgstr "Take Focus on Click"
+
+#: formres.src#RID_STR_HIDEINACTIVESELECTION.string.text
+#, fuzzy
+msgid "Hide selection"
+msgstr "Hide selection"
+
+#: formres.src#RID_STR_VISUALEFFECT.string.text
+#, fuzzy
+msgid "Style"
+msgstr "Style"
+
+#: formres.src#RID_RSC_ENUM_VISUALEFFECT.1.string.text
+#, fuzzy
+msgid "3D"
+msgstr "3-D"
+
+#: formres.src#RID_RSC_ENUM_VISUALEFFECT.2.string.text
+#, fuzzy
+msgctxt "formres.src#RID_RSC_ENUM_VISUALEFFECT.2.string.text"
+msgid "Flat"
+msgstr "Flat"
+
+#: formres.src#RID_STR_BORDERCOLOR.string.text
+#, fuzzy
+msgid "Border color"
+msgstr "Border colour"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.1.string.text
+#, fuzzy
+msgid "Left top"
+msgstr "Left top"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.2.string.text
+#, fuzzy
+msgid "Left centered"
+msgstr "Left centred"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.3.string.text
+#, fuzzy
+msgid "Left bottom"
+msgstr "Left bottom"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.4.string.text
+#, fuzzy
+msgid "Right top"
+msgstr "Right top"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.5.string.text
+#, fuzzy
+msgid "Right centered"
+msgstr "Right centred"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.6.string.text
+#, fuzzy
+msgid "Right bottom"
+msgstr "Right bottom"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.7.string.text
+#, fuzzy
+msgid "Above left"
+msgstr "Above left"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.8.string.text
+#, fuzzy
+msgid "Above centered"
+msgstr "Above centred"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.9.string.text
+#, fuzzy
+msgid "Above right"
+msgstr "Above right"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.10.string.text
+#, fuzzy
+msgid "Below left"
+msgstr "Below left"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.11.string.text
+#, fuzzy
+msgid "Below centered"
+msgstr "Below centred"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.12.string.text
+#, fuzzy
+msgid "Below right"
+msgstr "Below right"
+
+#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.13.string.text
+#, fuzzy
+msgid "Centered"
+msgstr "Centred"
+
+#: formres.src#RID_STR_AUTOLINEBREAK.string.text
+#, fuzzy
+msgid "Wrap text automatically"
+msgstr "Wrap text automatically"
+
+#: formres.src#RID_STR_TEXTTYPE.string.text
+#, fuzzy
+msgid "Text type"
+msgstr "Text type"
+
+#: formres.src#RID_RSC_ENUM_SHOWHIDE.1.string.text
+#, fuzzy
+msgid "Hide"
+msgstr "Hide"
+
+#: formres.src#RID_RSC_ENUM_SHOWHIDE.2.string.text
+#, fuzzy
+msgid "Show"
+msgstr "Show"
+
+#: formres.src#RID_STR_XML_DATA_MODEL.string.text
+#, fuzzy
+msgid "XML data model"
+msgstr "XML data model"
+
+#: formres.src#RID_STR_BIND_EXPRESSION.string.text
+#, fuzzy
+msgid "Binding expression"
+msgstr "Binding expression"
+
+#: formres.src#RID_STR_XSD_REQUIRED.string.text
+#, fuzzy
+msgid "Required"
+msgstr "Required"
+
+#: formres.src#RID_STR_LIST_BINDING.string.text
+#, fuzzy
+msgid "List entry source"
+msgstr "List entry source"
+
+#: formres.src#RID_STR_XSD_RELEVANT.string.text
+#, fuzzy
+msgid "Relevant"
+msgstr "Relevant"
+
+#: formres.src#RID_STR_XSD_READONLY.string.text
+#, fuzzy
+msgctxt "formres.src#RID_STR_XSD_READONLY.string.text"
+msgid "Read-only"
+msgstr "Read-only"
+
+#: formres.src#RID_STR_XSD_CONSTRAINT.string.text
+#, fuzzy
+msgid "Constraint"
+msgstr "Constraint"
+
+#: formres.src#RID_STR_XSD_CALCULATION.string.text
+#, fuzzy
+msgid "Calculation"
+msgstr "Calculation"
+
+#: formres.src#RID_STR_XSD_DATA_TYPE.string.text
+#, fuzzy
+msgid "Data type"
+msgstr "Data type"
+
+#: formres.src#RID_STR_XSD_WHITESPACES.string.text
+#, fuzzy
+msgid "Whitespaces"
+msgstr "Whitespace"
+
+#: formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.1.string.text
+#, fuzzy
+msgid "Preserve"
+msgstr "Preserve"
+
+#: formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.2.string.text
+#, fuzzy
+msgid "Replace"
+msgstr "Replace"
+
+#: formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.3.string.text
+#, fuzzy
+msgid "Collapse"
+msgstr "Collapse"
+
+#: formres.src#RID_STR_XSD_PATTERN.string.text
+#, fuzzy
+msgid "Pattern"
+msgstr "Pattern"
+
+#: formres.src#RID_STR_XSD_LENGTH.string.text
+#, fuzzy
+msgid "Length"
+msgstr "Length"
+
+#: formres.src#RID_STR_XSD_MIN_LENGTH.string.text
+#, fuzzy
+msgid "Length (at least)"
+msgstr "Length (at least)"
+
+#: formres.src#RID_STR_XSD_MAX_LENGTH.string.text
+#, fuzzy
+msgid "Length (at most)"
+msgstr "Length (at most)"
+
+#: formres.src#RID_STR_XSD_TOTAL_DIGITS.string.text
+#, fuzzy
+msgid "Digits (total)"
+msgstr "Digits (total)"
+
+#: formres.src#RID_STR_XSD_FRACTION_DIGITS.string.text
+#, fuzzy
+msgid "Digits (fraction)"
+msgstr "Digits (fraction)"
+
+#: formres.src#RID_STR_XSD_MAX_INCLUSIVE.string.text
+#, fuzzy
+msgid "Max. (inclusive)"
+msgstr "Max. (inclusive)"
+
+#: formres.src#RID_STR_XSD_MAX_EXCLUSIVE.string.text
+#, fuzzy
+msgid "Max. (exclusive)"
+msgstr "Max. (exclusive)"
+
+#: formres.src#RID_STR_XSD_MIN_INCLUSIVE.string.text
+#, fuzzy
+msgid "Min. (inclusive)"
+msgstr "Min. (inclusive)"
+
+#: formres.src#RID_STR_XSD_MIN_EXCLUSIVE.string.text
+#, fuzzy
+msgid "Min. (exclusive)"
+msgstr "Min. (exclusive)"
+
+#: formres.src#RID_STR_SUBMISSION_ID.string.text
+#, fuzzy
+msgid "Submission"
+msgstr "Submission"
+
+#: formres.src#RID_STR_BINDING_UI_NAME.string.text
+#, fuzzy
+msgid "Binding"
+msgstr "Binding"
+
+#: formres.src#RID_STR_SELECTION_TYPE.string.text
+#, fuzzy
+msgid "Selection type"
+msgstr "Selection type"
+
+#: formres.src#RID_STR_ROOT_DISPLAYED.string.text
+#, fuzzy
+msgid "Root displayed"
+msgstr "Root displayed"
+
+#: formres.src#RID_STR_SHOWS_HANDLES.string.text
+#, fuzzy
+msgid "Show handles"
+msgstr "Show handles"
+
+#: formres.src#RID_STR_SHOWS_ROOT_HANDLES.string.text
+#, fuzzy
+msgid "Show root handles"
+msgstr "Show root handles"
+
+#: formres.src#RID_STR_EDITABLE.string.text
+#, fuzzy
+msgid "Editable"
+msgstr "Editable"
+
+#: formres.src#RID_STR_INVOKES_STOP_NOT_EDITING.string.text
+#, fuzzy
+msgid "Invokes stop node editing"
+msgstr "Invokes stop node editing"
+
+#: formres.src#RID_STR_DECORATION.string.text
+#, fuzzy
+msgid "With title bar"
+msgstr "With title bar"
+
+#: formres.src#RID_STR_NOLABEL.string.text
+#, fuzzy
+msgid "No Label"
+msgstr "No Label"
+
+#: formres.src#RID_RSC_ENUM_SCALE_MODE.1.string.text
+#, fuzzy
+msgctxt "formres.src#RID_RSC_ENUM_SCALE_MODE.1.string.text"
+msgid "No"
+msgstr "No"
+
+#: formres.src#RID_RSC_ENUM_SCALE_MODE.2.string.text
+#, fuzzy
+msgid "Keep Ratio"
+msgstr "Keep Ratio"
+
+#: formres.src#RID_RSC_ENUM_SCALE_MODE.3.string.text
+#, fuzzy
+msgid "Fit to Size"
+msgstr "Fit to Size"
+
+#: formres.src#RID_STR_INPUT_REQUIRED.string.text
+#, fuzzy
+msgid "Input required"
+msgstr "Input required"
+
+#: formres.src#RID_STR_WRITING_MODE.string.text
+#, fuzzy
+msgid "Text direction"
+msgstr "Text direction"
+
+#: formres.src#RID_RSC_ENUM_WRITING_MODE.1.string.text
+#, fuzzy
+msgid "Left-to-right"
+msgstr "Left-to-right"
+
+#: formres.src#RID_RSC_ENUM_WRITING_MODE.2.string.text
+#, fuzzy
+msgid "Right-to-left"
+msgstr "Right-to-left"
+
+#: formres.src#RID_RSC_ENUM_WRITING_MODE.3.string.text
+#, fuzzy
+msgid "Use superordinate object settings"
+msgstr "Use superordinate object settings"
+
+#: formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.1.string.text
+#, fuzzy
+msgid "Never"
+msgstr "Never"
+
+#: formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.2.string.text
+#, fuzzy
+msgid "When focused"
+msgstr "When focused"
+
+#: formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.3.string.text
+#, fuzzy
+msgid "Always"
+msgstr "Always"
+
+#: formres.src#RID_STR_ANCHOR_TYPE.string.text
+#, fuzzy
+msgid "Anchor"
+msgstr "Anchor"
+
+#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.1.string.text
+#, fuzzy
+msgid "To Paragraph"
+msgstr "To Paragraph"
+
+#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.2.string.text
+#, fuzzy
+msgid "As Character"
+msgstr "As Character"
+
+#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.string.text
+#, fuzzy
+msgctxt "formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.string.text"
+msgid "To Page"
+msgstr "To Page"
+
+#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.4.string.text
+#, fuzzy
+msgid "To Frame"
+msgstr "To Frame"
+
+#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.5.string.text
+#, fuzzy
+msgid "To Character"
+msgstr "To Character"
+
+#: formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.1.string.text
+#, fuzzy
+msgctxt "formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.1.string.text"
+msgid "To Page"
+msgstr "To Page"
+
+#: formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.2.string.text
+#, fuzzy
+msgid "To Cell"
+msgstr "To Cell"
+
+#: formres.src#RID_STR_FONTSTYLE_REGULAR.string.text
+#, fuzzy
+msgid "Regular"
+msgstr "Regular"
+
+#: formres.src#RID_STR_FONTSTYLE_BOLD_ITALIC.string.text
+#, fuzzy
+msgid "Bold Italic"
+msgstr "Bold Italic"
+
+#: formres.src#RID_STR_FONTSTYLE_ITALIC.string.text
+#, fuzzy
+msgid "Italic"
+msgstr "Italic"
+
+#: formres.src#RID_STR_FONTSTYLE_BOLD.string.text
+#, fuzzy
+msgid "Bold"
+msgstr "Bold"
+
+#: formres.src#RID_STR_FONT_DEFAULT.string.text
+#, fuzzy
+msgid "(Default)"
+msgstr "(Default)"
+
+#: newdatatype.src#RID_DLG_NEW_DATA_TYPE.FT_LABEL.fixedtext.text
+#, fuzzy
+msgid "Type a name for the new data type:"
+msgstr "Type a name for the new data type:"
+
+#: newdatatype.src#RID_DLG_NEW_DATA_TYPE.modaldialog.text
+#, fuzzy
+msgid "New Data Type"
+msgstr "New Data Type"
+
+#: pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.string.text
+#, fuzzy
+msgid ""
+"Do you want to delete the data type '#type#' from the model?\n"
+"Please note that this will affect all controls which are bound to this data "
+"type."
+msgstr ""
+"Do you want to delete the data type '#type#' from the model?\n"
+"Please note that this will affect all controls which are bound to this data "
+"type."
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.string.text
+#, fuzzy
+msgid "Button"
+msgstr "Button"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_RADIOBUTTON.string.text
+#, fuzzy
+msgid "Option Button"
+msgstr "Option Button"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_CHECKBOX.string.text
+#, fuzzy
+msgid "Check Box"
+msgstr "Check Box"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.string.text
+#, fuzzy
+msgctxt "pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.string.text"
+msgid "Label Field"
+msgstr "Label Field"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_GROUPBOX.string.text
+#, fuzzy
+msgid "Group Box"
+msgstr "Group Box"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_EDIT.string.text
+#, fuzzy
+msgid "Text Box"
+msgstr "Text Box"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_FORMATTED.string.text
+#, fuzzy
+msgid "Formatted Field"
+msgstr "Formatted Field"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_LISTBOX.string.text
+#, fuzzy
+msgid "List Box"
+msgstr "List Box"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_COMBOBOX.string.text
+#, fuzzy
+msgid "Combo Box"
+msgstr "Combo Box"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_IMAGEBUTTON.string.text
+#, fuzzy
+msgid "Image Button"
+msgstr "Image Button"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_HIDDENCONTROL.string.text
+#, fuzzy
+msgid "Hidden Control"
+msgstr "Hidden Control"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_UNKNOWNCONTROL.string.text
+#, fuzzy
+msgid "Control (unknown type)"
+msgstr "Control (unknown type)"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_IMAGECONTROL.string.text
+#, fuzzy
+msgid "Image Control"
+msgstr "Image Control"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_FILECONTROL.string.text
+#, fuzzy
+msgid "File Selection"
+msgstr "File Selection"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_DATEFIELD.string.text
+#, fuzzy
+msgid "Date Field"
+msgstr "Date Field"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_TIMEFIELD.string.text
+#, fuzzy
+msgid "Time Field"
+msgstr "Time Field"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_NUMERICFIELD.string.text
+#, fuzzy
+msgid "Numeric Field"
+msgstr "Numeric Field"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_CURRENCYFIELD.string.text
+#, fuzzy
+msgid "Currency Field"
+msgstr "Currency Field"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_PATTERNFIELD.string.text
+#, fuzzy
+msgid "Pattern Field"
+msgstr "Pattern Field"
+
+#: pcrmiscres.src#RID_STR_PROPTITLE_DBGRID.string.text
+#, fuzzy
+msgid "Table Control "
+msgstr "Table Control "
+
+#: propres.src#RID_STR_STANDARD.string.text
+#, fuzzy
+msgctxt "propres.src#RID_STR_STANDARD.string.text"
+msgid "Default"
+msgstr "Default"
+
+#: propres.src#RID_STR_PROPPAGE_DEFAULT.string.text
+#, fuzzy
+msgid "General"
+msgstr "General"
+
+#: propres.src#RID_STR_PROPPAGE_DATA.string.text
+#, fuzzy
+msgid "Data"
+msgstr "Data"
+
+#: propres.src#RID_RSC_ENUM_YESNO.1.string.text
+#, fuzzy
+msgctxt "propres.src#RID_RSC_ENUM_YESNO.1.string.text"
+msgid "No"
+msgstr "No"
+
+#: propres.src#RID_RSC_ENUM_YESNO.2.string.text
+#, fuzzy
+msgctxt "propres.src#RID_RSC_ENUM_YESNO.2.string.text"
+msgid "Yes"
+msgstr "Yes"
+
+#: propres.src#RID_STR_HELP_SECTION_LABEL.string.text
+#, fuzzy
+msgctxt "propres.src#RID_STR_HELP_SECTION_LABEL.string.text"
+msgid "Help"
+msgstr "Help"
+
+#: propres.src#RID_EMBED_IMAGE_PLACEHOLDER.string.text
+#, fuzzy
+msgid "<Embedded-Image>"
+msgstr "<Embedded-Image>"
+
+#: propres.src#RID_STR_TEXT_FORMAT.string.text
+#, fuzzy
+msgctxt "propres.src#RID_STR_TEXT_FORMAT.string.text"
+msgid "Text"
+msgstr "Text"
+
+#: selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.fixedtext.text
+#, fuzzy
+msgid ""
+"These are control fields that can be used as label fields for the "
+"$control_class$ $control_name$."
+msgstr ""
+"These are control fields that can be used as label fields for the "
+"$control_class$ $control_name$."
+
+#: selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.checkbox.text
+#, fuzzy
+msgid "~No assignment"
+msgstr "~No assignment"
+
+#: selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.modaldialog.text
+#, fuzzy
+msgid "Label Field Selection"
+msgstr "Label Field Selection"
+
+#: selectlabeldialog.src#RID_STR_FORMS.string.text
+#, fuzzy
+msgid "Forms"
+msgstr "Forms"
+
+#: taborder.src#RID_DLG_TABORDER.FT_CONTROLS.fixedtext.text
+#, fuzzy
+msgid "Controls"
+msgstr "Controls"
+
+#: taborder.src#RID_DLG_TABORDER.PB_MOVE_UP.pushbutton.text
+#, fuzzy
+msgid "Move Up"
+msgstr "Move Up"
+
+#: taborder.src#RID_DLG_TABORDER.PB_MOVE_DOWN.pushbutton.text
+#, fuzzy
+msgid "Move Down"
+msgstr "Move Down"
+
+#: taborder.src#RID_DLG_TABORDER.PB_AUTO_ORDER.pushbutton.text
+#, fuzzy
+msgid "Automatic Sort"
+msgstr "Automatic Sort"
+
+#: taborder.src#RID_DLG_TABORDER.modaldialog.text
+#, fuzzy
+msgid "Tab Order"
+msgstr "Tab Order"
+"X-Accelerator-Marker: ~\n"
+
+#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_SELECT_ABTYPE.string.text
+#, fuzzy
+msgid "Address book type"
+msgstr "Address book type"
+
+#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_INVOKE_ADMIN_DIALOG.string.text
+#, fuzzy
+msgid "Connection Settings"
+msgstr "Connection Settings"
+
+#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_TABLE_SELECTION.string.text
+#, fuzzy
+msgid "Table selection"
+msgstr "Table selection"
+
+#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.string.text
+#, fuzzy
+msgctxt ""
+"abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.string."
+"text"
+msgid "Field Assignment"
+msgstr "Field Assignment"
+
+#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_FINAL_CONFIRM.string.text
+#, fuzzy
+msgid "Data Source Title"
+msgstr "Data Source Title"
+
+#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.modaldialog.text
+#, fuzzy
+msgid "Address Book Data Source Wizard"
+msgstr "Address Book Data Source Wizard"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.fixedtext.text
+#, fuzzy
+msgid ""
+"%PRODUCTNAME lets you access address data already present in your system. To "
+"do this, a %PRODUCTNAME data source will be created in which your address "
+"data is available in tabular form.\n"
+"\n"
+"This wizard helps you create the data source."
+msgstr ""
+"%PRODUCTNAME lets you access address data already present in your system. To "
+"do this, a %PRODUCTNAME data source will be created in which your address "
+"data is available in tabular form.\n"
+"\n"
+"This wizard helps you create the data source."
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.fixedline.text
+#, fuzzy
+msgid "Please select the type of your external address book:"
+msgstr "Please select the type of your external address book:"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION.radiobutton.text
+#, fuzzy
+msgid "Evolution"
+msgstr "Evolution"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_GROUPWISE.radiobutton.text
+#, fuzzy
+msgid "Groupwise"
+msgstr "Groupwise"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_LDAP.radiobutton.text
+#, fuzzy
+msgid "Evolution LDAP"
+msgstr "Evolution LDAP"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_MORK.radiobutton.text
+#, fuzzy
+msgid "Mozilla / Netscape"
+msgstr "Mozilla / Netscape"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_THUNDERBIRD.radiobutton.text
+#, fuzzy
+msgid "Thunderbird"
+msgstr "Thunderbird"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_KAB.radiobutton.text
+#, fuzzy
+msgid "KDE address book"
+msgstr "KDE address book"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_MACAB.radiobutton.text
+#, fuzzy
+msgid "Mac OS X address book"
+msgstr "Mac OS X address book"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_LDAP.radiobutton.text
+#, fuzzy
+msgid "LDAP address data"
+msgstr "LDAP address data"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOK.radiobutton.text
+#, fuzzy
+msgid "Outlook address book"
+msgstr "Outlook address book"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOKEXPRESS.radiobutton.text
+#, fuzzy
+msgid "Windows system address book"
+msgstr "Windows system address book"
+
+#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_OTHER.radiobutton.text
+#, fuzzy
+msgid "Other external data source"
+msgstr "Other external data source"
+
+#: abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.fixedtext.text
+#, fuzzy
+msgid ""
+"To set up the new data source, additional information is required.\n"
+"\n"
+"Click the following button to open another dialog in which you then enter "
+"the necessary information."
+msgstr ""
+"To set up the new data source, additional information is required.\n"
+"\n"
+"Click the following button to open another dialogue box in which you then "
+"enter the necessary information."
+
+#: abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.pushbutton.text
+#, fuzzy
+msgid "Settings"
+msgstr "Settings"
+
+#: abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.fixedtext.text
+#, fuzzy
+msgid ""
+"The connection to the data source could not be established.\n"
+"Before you proceed, please check the settings made, or (on the previous "
+"page) choose another address data source type."
+msgstr ""
+"The connection to the data source could not be established.\n"
+"Before you proceed, please check the settings made, or (on the previous "
+"page) choose another address data source type."
+
+#: abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.fixedtext.text
+#, fuzzy
+msgid ""
+"The external data source you have chosen contains more than one address "
+"book.\n"
+"Please select the one you mainly want to work with:"
+msgstr ""
+"The external data source you have chosen contains more than one address "
+"book.\n"
+"Please select the one you mainly want to work with:"
+
+#: abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.fixedtext.text
+#, fuzzy
+msgid ""
+"To incorporate the address data in your templates, %PRODUCTNAME has to know "
+"which fields contain which data.\n"
+"\n"
+"For instance, you could have stored the e-mail addresses in a field named "
+"\"email\", or \"E-mail\" or \"EM\" - or something completely different.\n"
+"\n"
+"Click the button below to open another dialog where you can enter the "
+"settings for your data source."
+msgstr ""
+"To incorporate the address data in your templates, %PRODUCTNAME must be told "
+"which fields contain which data.\n"
+"\n"
+"For instance, you could have stored the e-mail addresses in a field named "
+"\"email\", or \"E-mail\" or \"EM\" - or something completely different.\n"
+"\n"
+"Click the button below to open another dialogue box in which you can enter "
+"the settings for your data source."
+
+#: abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.pushbutton.text
+#, fuzzy
+msgctxt ""
+"abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.pushbutton.text"
+msgid "Field Assignment"
+msgstr "Field Assignment"
+
+#: abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.fixedtext.text
+#, fuzzy
+msgid ""
+"That was all the information necessary to integrate your address data into "
+"%PRODUCTNAME.\n"
+"\n"
+"Now, just enter the name under which you want to register the data source in "
+"%PRODUCTNAME."
+msgstr ""
+"That was all the information necessary to integrate your address data into "
+"%PRODUCTNAME.\n"
+"\n"
+"Now, just enter the name under which you want to register the data source in "
+"%PRODUCTNAME."
+
+#: abspilot.src#RID_PAGE_FINAL.FT_LOCATION.fixedtext.text
+#, fuzzy
+msgid "Location"
+msgstr "Location"
+
+#: abspilot.src#RID_PAGE_FINAL.PB_BROWSE.pushbutton.text
+#, fuzzy
+msgid "Browse..."
+msgstr "Browse..."
+
+#: abspilot.src#RID_PAGE_FINAL.CB_REGISTER_DS.checkbox.text
+#, fuzzy
+msgid "Make this address book available to all modules in %PRODUCTNAME."
+msgstr "Make this address book available to all modules in %PRODUCTNAME."
+
+#: abspilot.src#RID_PAGE_FINAL.FT_NAME_EXPL.fixedtext.text
+#, fuzzy
+msgid "Address book name"
+msgstr "Address book name"
+
+#: abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.fixedtext.text
+#, fuzzy
+msgid ""
+"Another data source already has this name. As data sources have to have "
+"globally unique names, you need to choose another one."
+msgstr ""
+"Another data source already has this name. As data sources must have "
+"globally unique names, you must choose another name."
+
+#: abspilot.src#RID_ERR_NEEDTYPESELECTION.errorbox.text
+#, fuzzy
+msgid "Please select a type of address book."
+msgstr "Please select a type of address book."
+
+#: abspilot.src#RID_QRY_NOTABLES.querybox.text
+#, fuzzy
+msgid ""
+"The data source does not contain any tables.\n"
+"Do you want to set it up as an address data source, anyway?"
+msgstr ""
+"The data source does not contain any tables.\n"
+"Do you want to set it up as an address data source, anyway?"
+
+#: abspilot.src#RID_STR_DEFAULT_NAME.string.text
+#, fuzzy
+msgid "Addresses"
+msgstr "Addresses"
+
+#: abspilot.src#RID_STR_ADMINDIALOGTITLE.string.text
+#, fuzzy
+msgid "Create Address Data Source"
+msgstr "Create Address Data Source"
+
+#: abspilot.src#RID_STR_NOCONNECTION.string.text
+#, fuzzy
+msgid "The connection could not be established."
+msgstr "The connection could not be established."
+
+#: abspilot.src#RID_STR_PLEASECHECKSETTINGS.string.text
+#, fuzzy
+msgid "Please check the settings made for the data source."
+msgstr "Please check the settings made for the data source."
+
+#: abspilot.src#RID_STR_FIELDDIALOGTITLE.string.text
+#, fuzzy
+msgid "Address Data - Field Assignment"
+msgstr "Address Data - Field Assignment"
+
+#: abspilot.src#RID_STR_NOFIELDSASSIGNED.string.text
+#, fuzzy
+msgid ""
+"There are no fields assigned at this time.\n"
+"You can either assign fields now or do so later by first choosing:\n"
+"\"File - Template - Address Book Source...\""
+msgstr ""
+"There are no fields assigned at this time.\n"
+"You can either assign fields now or do so later by first choosing:\n"
+"\"File - Template - Address Book Source...\""
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: ~\n"
+
+#: bib.src#RID_BIB_STR_FIELDSELECTION.string.text
+#, fuzzy
+msgid "Field selection:"
+msgstr "Field selection:"
+
+#: bib.src#RID_BIB_STR_TABWIN_PREFIX.string.text
+#, fuzzy
+msgid "Table;Query;Sql;Sql [Native]"
+msgstr "Table;Query;Sql;Sql [Native]"
+
+#: bib.src#RID_BIB_STR_FRAME_TITLE.string.text
+#, fuzzy
+msgid "Bibliography Database"
+msgstr "Bibliography Database"
+
+#: bib.src#RID_MAP_QUESTION.string.text
+#, fuzzy
+msgid "Do you want to edit the column arrangement?"
+msgstr "Do you want to edit the column arrangement?"
+
+#: datman.src#RID_DLG_MAPPING.GB_MAPPING.fixedline.text
+#, fuzzy
+msgid "Column names"
+msgstr "Column names"
+
+#: datman.src#RID_DLG_MAPPING.ST_NONE.string.text
+#, fuzzy
+msgid "<none>"
+msgstr "<none>"
+
+#: datman.src#RID_DLG_MAPPING.modaldialog.text
+#, fuzzy
+msgid "Column Layout for Table %1"
+msgstr "Column Layout for Table %1"
+
+#: datman.src#RID_DLG_DBCHANGE.ST_ENTRY.string.text
+#, fuzzy
+msgid "Entry"
+msgstr "Entry"
+
+#: datman.src#RID_DLG_DBCHANGE.modaldialog.text
+#, fuzzy
+msgid "Choose Data Source"
+msgstr "Choose Data Source"
+
+#: sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.string.text
+#, fuzzy
+msgid "The following column names could not be assigned:\n"
+msgstr "The following column names could not be assigned:\n"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.string.text
+#, fuzzy
+msgid "Article"
+msgstr "Article"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_BOOK.string.text
+#, fuzzy
+msgid "Book"
+msgstr "Book"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_BOOKLET.string.text
+#, fuzzy
+msgid "Brochures"
+msgstr "Brochures"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_CONFERENCE.string.text
+#, fuzzy
+msgctxt "sections.src#RID_TP_GENERAL.ST_TYPE_CONFERENCE.string.text"
+msgid "Conference proceedings"
+msgstr "Conference proceedings"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_INBOOK.string.text
+#, fuzzy
+msgid "Book excerpt"
+msgstr "Book excerpt"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_INCOLLECTION.string.text
+#, fuzzy
+msgid "Book excerpt with title"
+msgstr "Book excerpt with title"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_INPROCEEDINGS.string.text
+#, fuzzy
+msgctxt "sections.src#RID_TP_GENERAL.ST_TYPE_INPROCEEDINGS.string.text"
+msgid "Conference proceedings"
+msgstr "Conference proceedings"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_JOURNAL.string.text
+#, fuzzy
+msgid "Journal"
+msgstr "Journal"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_MANUAL.string.text
+#, fuzzy
+msgid "Techn. documentation"
+msgstr "Techn. documentation"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_MASTERSTHESIS.string.text
+#, fuzzy
+msgid "Thesis"
+msgstr "Thesis"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_MISC.string.text
+#, fuzzy
+msgid "Miscellaneous"
+msgstr "Miscellaneous"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_PHDTHESIS.string.text
+#, fuzzy
+msgid "Dissertation"
+msgstr "Dissertation"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_PROCEEDINGS.string.text
+#, fuzzy
+msgctxt "sections.src#RID_TP_GENERAL.ST_TYPE_PROCEEDINGS.string.text"
+msgid "Conference proceedings"
+msgstr "Conference proceedings"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_TECHREPORT.string.text
+#, fuzzy
+msgid "Research report"
+msgstr "Research report"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_UNPUBLISHED.string.text
+#, fuzzy
+msgid "Unpublished"
+msgstr "Unpublished"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_EMAIL.string.text
+#, fuzzy
+msgid "e-mail"
+msgstr "e-mail"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_WWW.string.text
+#, fuzzy
+msgid "WWW document"
+msgstr "WWW document"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM1.string.text
+#, fuzzy
+msgid "User-defined1"
+msgstr "User-defined1"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM2.string.text
+#, fuzzy
+msgid "User-defined2"
+msgstr "User-defined2"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM3.string.text
+#, fuzzy
+msgid "User-defined3"
+msgstr "User-defined3"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM4.string.text
+#, fuzzy
+msgid "User-defined4"
+msgstr "User-defined4"
+
+#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM5.string.text
+#, fuzzy
+msgid "User-defined5"
+msgstr "User-defined5"
+
+#: sections.src#RID_TP_GENERAL.tabpage.text
+#, fuzzy
+msgid "General"
+msgstr "General"
+
+#: sections.src#RID_POPUP_ME_VIEW.PU_INSERT.menuitem.text
+#, fuzzy
+msgid "Insert Section..."
+msgstr "Insert Section..."
+
+#: sections.src#RID_POPUP_ME_VIEW.PU_REMOVE.menuitem.text
+#, fuzzy
+msgid "Delete Section..."
+msgstr "Delete Section..."
+
+#: sections.src#RID_POPUP_ME_VIEW.PU_CHG_NAME.menuitem.text
+#, fuzzy
+msgid "Modify Name..."
+msgstr "Modify Name..."
+
+#: sections.src#ST_IDENTIFIER.string.text
+#, fuzzy
+msgid "~Short name"
+msgstr "~Short name"
+
+#: sections.src#ST_AUTHTYPE.string.text
+#, fuzzy
+msgid "~Type"
+msgstr "~Type"
+
+#: sections.src#ST_YEAR.string.text
+#, fuzzy
+msgid "~Year"
+msgstr "~Year"
+
+#: sections.src#ST_AUTHOR.string.text
+#, fuzzy
+msgid "Author(s)"
+msgstr "Author(s)"
+
+#: sections.src#ST_TITLE.string.text
+#, fuzzy
+msgid "Tit~le"
+msgstr "Tit~le"
+
+#: sections.src#ST_PUBLISHER.string.text
+#, fuzzy
+msgid "~Publisher"
+msgstr "~Publisher"
+
+#: sections.src#ST_ADDRESS.string.text
+#, fuzzy
+msgid "A~ddress"
+msgstr "A~ddress"
+
+#: sections.src#ST_ISBN.string.text
+#, fuzzy
+msgid "~ISBN"
+msgstr "~ISBN"
+
+#: sections.src#ST_CHAPTER.string.text
+#, fuzzy
+msgid "~Chapter"
+msgstr "~Chapter"
+
+#: sections.src#ST_PAGE.string.text
+#, fuzzy
+msgid "Pa~ge(s)"
+msgstr "Pa~ge(s)"
+
+#: sections.src#ST_EDITOR.string.text
+#, fuzzy
+msgid "Editor"
+msgstr "Editor"
+
+#: sections.src#ST_EDITION.string.text
+#, fuzzy
+msgid "Ed~ition"
+msgstr "Ed~ition"
+
+#: sections.src#ST_BOOKTITLE.string.text
+#, fuzzy
+msgid "~Book title"
+msgstr "~Book title"
+
+#: sections.src#ST_VOLUME.string.text
+#, fuzzy
+msgid "Volume"
+msgstr "Volume"
+
+#: sections.src#ST_HOWPUBLISHED.string.text
+#, fuzzy
+msgid "Publication t~ype"
+msgstr "Publication t~ype"
+
+#: sections.src#ST_ORGANIZATION.string.text
+#, fuzzy
+msgid "Organi~zation"
+msgstr "Organi~sation"
+
+#: sections.src#ST_INSTITUTION.string.text
+#, fuzzy
+msgid "Instit~ution"
+msgstr "Instit~ution"
+
+#: sections.src#ST_SCHOOL.string.text
+#, fuzzy
+msgid "University"
+msgstr "University"
+
+#: sections.src#ST_REPORT.string.text
+#, fuzzy
+msgid "Type of re~port"
+msgstr "Type of re~port"
+
+#: sections.src#ST_MONTH.string.text
+#, fuzzy
+msgid "~Month"
+msgstr "~Month"
+
+#: sections.src#ST_JOURNAL.string.text
+#, fuzzy
+msgid "~Journal"
+msgstr "~Journal"
+
+#: sections.src#ST_NUMBER.string.text
+#, fuzzy
+msgid "Numb~er"
+msgstr "Numb~er"
+
+#: sections.src#ST_SERIES.string.text
+#, fuzzy
+msgid "Se~ries"
+msgstr "Se~ries"
+
+#: sections.src#ST_ANNOTE.string.text
+#, fuzzy
+msgid "Ann~otation"
+msgstr "Ann~otation"
+
+#: sections.src#ST_NOTE.string.text
+#, fuzzy
+msgid "~Note"
+msgstr "~Note"
+
+#: sections.src#ST_URL.string.text
+#, fuzzy
+msgid "URL"
+msgstr "URL"
+
+#: sections.src#ST_CUSTOM1.string.text
+#, fuzzy
+msgid "User-defined field ~1"
+msgstr "User-defined field ~1"
+
+#: sections.src#ST_CUSTOM2.string.text
+#, fuzzy
+msgid "User-defined field ~2"
+msgstr "User-defined field ~2"
+
+#: sections.src#ST_CUSTOM3.string.text
+#, fuzzy
+msgid "User-defined field ~3"
+msgstr "User-defined field ~3"
+
+#: sections.src#ST_CUSTOM4.string.text
+#, fuzzy
+msgid "User-defined field ~4"
+msgstr "User-defined field ~4"
+
+#: sections.src#ST_CUSTOM5.string.text
+#, fuzzy
+msgid "User-defined field ~5"
+msgstr "User-defined field ~5"
+
+#: toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.toolboxitem.text
+#, fuzzy
+msgid "Table"
+msgstr "Table"
+
+#: toolbar.src#RID_BIB_TOOLBAR.TBC_FT_QUERY.toolboxitem.text
+#, fuzzy
+msgid "Search Key"
+msgstr "Search Key"
+
+#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_AUTOFILTER.toolboxitem.text
+#, fuzzy
+msgid "AutoFilter"
+msgstr "AutoFilter"
+
+#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_FILTERCRIT.toolboxitem.text
+#, fuzzy
+msgid "Standard Filter"
+msgstr "Standard Filter"
+
+#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_REMOVEFILTER.toolboxitem.text
+#, fuzzy
+msgid "Remove Filter"
+msgstr "Remove Filter"
+
+#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_COL_ASSIGN.toolboxitem.text
+#, fuzzy
+msgid "Column Arrangement"
+msgstr "Column Arrangement"
+
+#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_CHANGESOURCE.toolboxitem.text
+#, fuzzy
+msgid "Data Source"
+msgstr "Data Source"
+"X-Accelerator-Marker: ~\n"
+
+#: grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.pushbutton.text
+#, fuzzy
+msgctxt "grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.pushbutton.text"
+msgid "Set"
+msgstr "Set"
+
+#: grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_ASCENDING.string.text
+#, fuzzy
+msgid "Linear ascending"
+msgstr "Linear ascending"
+
+#: grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_DESCENDING.string.text
+#, fuzzy
+msgid "Linear descending"
+msgstr "Linear descending"
+
+#: grid.src#GRID_DIALOG.RESET_TYPE_RESET.string.text
+#, fuzzy
+msgid "Original values"
+msgstr "Original values"
+
+#: grid.src#GRID_DIALOG.RESET_TYPE_EXPONENTIAL.string.text
+#, fuzzy
+msgid "Exponential increasing"
+msgstr "Exponential increasing"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.pushbutton.text
+#, fuzzy
+msgid ""
+"About\n"
+" Dev~ice"
+msgstr ""
+"About\n"
+" Dev~ice"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.pushbutton.text
+#, fuzzy
+msgid ""
+"Create\n"
+"Preview"
+msgstr ""
+"Create\n"
+"Preview"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.fixedline.text
+#, fuzzy
+msgid "Preview"
+msgstr "Preview"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCANAREA_BOX.fixedline.text
+#, fuzzy
+msgid "Scan area"
+msgstr "Scan area"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_LEFT_TXT.fixedtext.text
+#, fuzzy
+msgid "Left:"
+msgstr "Left:"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_TOP_TXT.fixedtext.text
+#, fuzzy
+msgid "Top:"
+msgstr "Top:"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RIGHT_TXT.fixedtext.text
+#, fuzzy
+msgid "Right:"
+msgstr "Right:"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BOTTOM_TXT.fixedtext.text
+#, fuzzy
+msgid "Bottom:"
+msgstr "Bottom:"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_DEVICE_BOX_TXT.fixedtext.text
+#, fuzzy
+msgid "Device used:"
+msgstr "Device used:"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RESOLUTION_TXT.fixedtext.text
+#, fuzzy
+msgid "Resolution [~DPI]"
+msgstr "Resolution [~DPI]"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_ADVANCED_TXT.fixedtext.text
+#, fuzzy
+msgid "Show advanced options"
+msgstr "Show advanced options"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_OPTION_TXT.fixedtext.text
+#, fuzzy
+msgid "Options:"
+msgstr "Options:"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_NUMERIC_VECTOR_TXT.fixedtext.text
+#, fuzzy
+msgid "Vector element"
+msgstr "Vector element"
+
+#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.pushbutton.text
+#, fuzzy
+msgctxt ""
+"sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.pushbutton.text"
+msgid "Set"
+msgstr "Set"
+
+#: sanedlg.src#RID_SANE_DIALOG.modaldialog.text
+#, fuzzy
+msgid "Scanner"
+msgstr "Scanner"
+
+#: sanedlg.src#RID_SANE_DEVICEINFO_TXT.string.text
+#, fuzzy
+msgid ""
+"Device: %s\n"
+"Vendor: %s\n"
+"Model: %s\n"
+"Type: %s"
+msgstr ""
+"Device: %s\n"
+"Vendor: %s\n"
+"Model: %s\n"
+"Type: %s"
+
+#: sanedlg.src#RID_SANE_SCANERROR_TXT.string.text
+#, fuzzy
+msgid "An error occurred while scanning."
+msgstr "An error occurred while scanning."
+
+#: sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.string.text
+#, fuzzy
+msgid ""
+"The device does not offer a preview option. Therefore, a normal scan will be "
+"used as a preview instead. This may take a considerable amount of time."
+msgstr ""
+"The device does not offer a preview option. Therefore, a normal scan will be "
+"used as a preview instead. This may take a considerable amount of time."
+
+#: sanedlg.src#RID_SANE_NOSANELIB_TXT.string.text
+#, fuzzy
+msgid "The SANE interface could not be initialized. Scanning is not possible."
+msgstr "The SANE interface could not be initialised. Scanning is not possible."
+"X-Accelerator-Marker: ~\n"
+
+#: preload.src#RID_DLG_OEMWIZARD.PB_PREV.pushbutton.text
+#, fuzzy
+msgid "<< Back"
+msgstr "<< Back"
+
+#: preload.src#RID_DLG_OEMWIZARD.PB_NEXT.pushbutton.text
+#, fuzzy
+msgid "Next >>"
+msgstr "Next >>"
+
+#: preload.src#RID_DLG_OEMWIZARD.ST_ACCEPT.string.text
+#, fuzzy
+msgid "Accept"
+msgstr "Accept"
+
+#: preload.src#RID_DLG_OEMWIZARD.ST_FINISH.string.text
+#, fuzzy
+msgid "Finish"
+msgstr "Finish"
+
+#: preload.src#RID_DLG_OEMWIZARD.ST_LICENSE_AGREEMENT.string.text
+#, fuzzy
+msgid " - Software License Agreement"
+msgstr " - Software Licence Agreement"
+
+#: preload.src#RID_DLG_OEMWIZARD.ST_INSERT_USER_DATA.string.text
+#, fuzzy
+msgid "- User Data"
+msgstr "- User Data"
+
+#: preload.src#RID_TP_WELCOME.FT_INFO.fixedtext.text
+#, fuzzy
+msgid ""
+"Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n"
+"\n"
+"To start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal "
+"data in the dialog following the license text. Important information is "
+"contained in the readme files which are located in the %PRODUCTNAME product "
+"directory. Please read these files carefully. You can also find detailed "
+"information at the Oracle website \n"
+"\n"
+"http://www.oracle.com/us/products/applications/open-office."
+msgstr ""
+"Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n"
+"\n"
+"To start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal "
+"data in the dialogue box following the licence text. Important information "
+"is contained in the readme files which are located in the %PRODUCTNAME "
+"product directory. Please read these files carefully. You can also find "
+"detailed information at the Oracle website \n"
+"\n"
+"http://www.oracle.com/us/products/applications/open-office."
+
+#: preload.src#RID_TP_WELCOME.tabpage.text
+#, fuzzy
+msgid "Welcome"
+msgstr "Welcome"
+
+#: preload.src#RID_TP_LICENSE.FT_INFO1.fixedtext.text
+#, fuzzy
+msgid "Please follow these steps to proceed with the installation:"
+msgstr "Please follow these steps to proceed with the installation:"
+
+#: preload.src#RID_TP_LICENSE.FT_INFO2_1.fixedtext.text
+#, fuzzy
+msgid "1."
+msgstr "1."
+
+#: preload.src#RID_TP_LICENSE.FT_INFO2.fixedtext.text
+#, fuzzy
+msgid ""
+"View the complete License Agreement. Please use the scroll bar or the "
+"'%PAGEDOWN' button in this dialog to view the entire license text."
+msgstr ""
+"View the complete Licence Agreement. Please use the scroll bar or the "
+"'%PAGEDOWN' button in this dialogue box to view the entire licence text."
+
+#: preload.src#RID_TP_LICENSE.PB_PAGEDOWN.pushbutton.text
+#, fuzzy
+msgid "Page Down"
+msgstr "Page Down"
+
+#: preload.src#RID_TP_LICENSE.FT_INFO3_1.fixedtext.text
+#, fuzzy
+msgid "2."
+msgstr "2."
+
+#: preload.src#RID_TP_LICENSE.FT_INFO3.fixedtext.text
+#, fuzzy
+msgid "Accept the License Agreement."
+msgstr "Accept the Licence Agreement."
+
+#: preload.src#RID_TP_LICENSE.CB_ACCEPT.checkbox.text
+#, fuzzy
+msgid "I accept the terms of the Agreement."
+msgstr "I accept the terms of the Agreement."
+
+#: preload.src#RID_TP_LICENSE.LICENCE_ACCEPT.string.text
+#, fuzzy
+msgid "~Accept"
+msgstr "~Accept"
+
+#: preload.src#RID_TP_LICENSE.LICENCE_NOTACCEPT.string.text
+#, fuzzy
+msgid "Decline"
+msgstr "Decline"
+
+#: preload.src#RID_TP_LICENSE.tabpage.text
+#, fuzzy
+msgid "License Agreement"
+msgstr "Licence Agreement"

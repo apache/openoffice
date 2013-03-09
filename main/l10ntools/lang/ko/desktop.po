@@ -1,0 +1,1344 @@
+
+#: wizard.src#DLG_FIRSTSTART_WIZARD.modaldialog.text
+msgctxt "wizard.src#DLG_FIRSTSTART_WIZARD.modaldialog.text"
+msgid "Welcome to %PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSION을(를) 시작합니다."
+
+#: wizard.src#STR_STATE_WELCOME.string.text
+msgid "Welcome"
+msgstr "시작합니다."
+
+#: wizard.src#STR_STATE_LICENSE.string.text
+msgid "License Agreement"
+msgstr "사용권 계약"
+
+#: wizard.src#STR_STATE_MIGRATION.string.text
+msgid "Personal Data"
+msgstr "개인 데이터"
+
+#: wizard.src#STR_STATE_USER.string.text
+msgid "User name"
+msgstr "사용자 이름"
+
+#: wizard.src#STR_STATE_UPDATE_CHECK.string.text
+msgctxt "wizard.src#STR_STATE_UPDATE_CHECK.string.text"
+msgid "Online Update"
+msgstr "온라인 업데이트"
+
+#: wizard.src#STR_STATE_REGISTRATION.string.text
+msgid "Registration"
+msgstr "등록"
+
+#: wizard.src#STR_WELCOME_MIGRATION.string.text
+msgid ""
+"This wizard will guide you through the license agreement, the transfer of "
+"user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n"
+"\n"
+"Click 'Next' to continue."
+msgstr ""
+"이 마법사는 사용권 계약, %OLD_VERSION에서 사용자 데이터 전송 및 %PRODUCTNAME 등록 과정을 안내합니다.\n"
+"\n"
+"계속하려면 다음을 클릭하십시오."
+
+#: wizard.src#STR_WELCOME_WITHOUT_LICENSE.string.text
+msgid ""
+"This wizard will guide you through the registration of %PRODUCTNAME.\n"
+"\n"
+"Click 'Next' to continue."
+msgstr ""
+"이 마법사는 %PRODUCTNAME의 등록 과정을 안내합니다.\n"
+"\n"
+"계속하려면 '다음'을 클릭하십시오."
+
+#: wizard.src#STR_FINISH.string.text
+msgid "~Finish"
+msgstr "마침(~F)"
+
+#: wizard.src#STR_REGISTRATION_OOO.string.text
+msgid ""
+"You now have the opportunity to support and contribute to the fastest "
+"growing open source community in the world.\n"
+"\n"
+"Help us prove that %PRODUCTNAME has already gained significant market share "
+"by registering.\n"
+"\n"
+"Registering is voluntary and without obligation."
+msgstr ""
+"전세계적으로 가장 빠르게 성장 중인 오픈 소스 커뮤니티에 지원하고 기여할 기회가 여기 있습니다.\n"
+"\n"
+"%PRODUCTNAME을(를) 등록하여 %PRODUCTNAME이(가) 이미 거대한 시장 점유율을 갖고 있음을 입증하는 데 도움을 주시기 "
+"바랍니다.\n"
+"\n"
+"등록은 자발적이며 의무 사항은 아닙니다."
+
+#: wizard.src#ERRBOX_REG_NOSYSBROWSER.errorbox.text
+msgid ""
+"An error occurred in starting the web browser.\n"
+"Please check the %PRODUCTNAME and web browser settings."
+msgstr ""
+"웹 브라우저를 시작하는 동안 오류가 발생했습니다.\n"
+"%PRODUCTNAME 및 웹 브라우저 설정을 확인하십시오."
+
+#: wizard.src#QB_ASK_DECLINE.querybox.text
+msgid "Do you really want to decline?"
+msgstr "거부하시겠습니까?"
+
+#: wizard.src#TP_WELCOME.FT_WELCOME_HEADER.fixedtext.text
+msgctxt "wizard.src#TP_WELCOME.FT_WELCOME_HEADER.fixedtext.text"
+msgid "Welcome to %PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSION을(를) 시작합니다."
+
+#: wizard.src#TP_WELCOME.FT_WELCOME_BODY.fixedtext.text
+msgid ""
+"This wizard will guide you through the license agreement and the "
+"registration of %PRODUCTNAME.\n"
+"\n"
+"Click 'Next' to continue."
+msgstr ""
+"이 마법사는 사용권 계약 및 %PRODUCTNAME 등록 과정을 안내합니다.\n"
+"\n"
+"계속하려면 '다음'을 클릭하십시오."
+
+#: wizard.src#TP_LICENSE.FT_LICENSE_HEADER.fixedtext.text
+msgid "Please follow these steps to accept the license"
+msgstr "사용권 계약에 동의하려면 다음 단계를 따르십시오."
+
+#: wizard.src#TP_LICENSE.FT_LICENSE_BODY_1.fixedtext.text
+msgid "1."
+msgstr "1."
+
+#: wizard.src#TP_LICENSE.FT_LICENSE_BODY_1_TXT.fixedtext.text
+msgid ""
+"View the complete License Agreement. Please use the scrollbar or the '%"
+"PAGEDOWN' button in this dialog to view the entire license text."
+msgstr "사용권 계약 전문을 보십시오. 이 대화 상자의 스크롤 막대나 %PAGEDOWN 버튼을 사용하여 사용권 계약 전문을 읽어보십시오."
+
+#: wizard.src#TP_LICENSE.FT_LICENSE_BODY_2.fixedtext.text
+msgid "2."
+msgstr "2."
+
+#: wizard.src#TP_LICENSE.FT_LICENSE_BODY_2_TXT.fixedtext.text
+msgid "Click 'Accept' to accept the terms of the Agreement."
+msgstr "계약 내용에 동의하는 경우 동의를 누르십시오."
+
+#: wizard.src#TP_LICENSE.PB_LICENSE_DOWN.pushbutton.text
+msgid "Scroll Do~wn"
+msgstr "아래로 스크롤(~W)"
+
+#: wizard.src#STR_LICENSE_ACCEPT.string.text
+msgid "~Accept"
+msgstr "동의(~A)"
+
+#: wizard.src#STR_LICENSE_DECLINE.string.text
+msgid "~Decline"
+msgstr "거부(~D)"
+
+#: wizard.src#TP_MIGRATION.FT_MIGRATION_HEADER.fixedtext.text
+msgctxt "wizard.src#TP_MIGRATION.FT_MIGRATION_HEADER.fixedtext.text"
+msgid "Transfer personal data"
+msgstr "개인 데이터 전송"
+
+#: wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.fixedtext.text
+msgid ""
+"Most personal data from %OLDPRODUCT installation can be reused in %"
+"PRODUCTNAME %PRODUCTVERSION.\n"
+"\n"
+"If you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, "
+"unmark the check box."
+msgstr ""
+"%OLDPRODUCT 설치에서 사용한 대부분의 개인 데이터는 %PRODUCTNAME %PRODUCTVERSION에서 재사용할 수 "
+"있습니다. \n"
+"\n"
+"%PRODUCTNAME %PRODUCTVERSION에서 설정을 재사용하지 않으려면 확인란을 선택 해제하십시오."
+
+#: wizard.src#TP_MIGRATION.CB_MIGRATION.checkbox.text
+msgctxt "wizard.src#TP_MIGRATION.CB_MIGRATION.checkbox.text"
+msgid "Transfer personal data"
+msgstr "개인 데이터 전송"
+
+#: wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_HEADER.fixedtext.text
+msgctxt "wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_HEADER.fixedtext.text"
+msgid "Online Update"
+msgstr "온라인 업데이트"
+
+#: wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_BODY.fixedtext.text
+msgid ""
+"%PRODUCTNAME searches automatically at regular intervals for new versions.\n"
+"In doing so online update does not transfer personal data.\n"
+"As soon as a new version is available, you will be notified.\n"
+"\n"
+"You can configure this feature at Tools / Options... / %PRODUCTNAME / Online "
+"Update."
+msgstr ""
+"%PRODUCTNAME은(는) 정기적으로 새 버전을 자동 검색합니다.\n"
+"이 경우에는 온라인 업데이트에서 개인 데이터를 전송하지 않습니다.\n"
+"새 버전이 있으면 사용자에게 알려줍니다.\n"
+"\n"
+"도구 / 옵션... / %PRODUCTNAME / 온라인 업데이트에서 이 기능을 구성할 수 있습니다."
+
+#: wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.checkbox.text
+msgid "~Check for updates automatically"
+msgstr "자동으로 업데이트 확인(~C)"
+
+#: wizard.src#TP_USER.FT_USER_HEADER.fixedtext.text
+msgid "Provide your full name and initials below"
+msgstr "아래에 전체 사용자 이름과 이니셜을 입력하십시오."
+
+#: wizard.src#TP_USER.FT_USER_BODY.fixedtext.text
+msgid ""
+"The user name will be used in the document properties, templates and when "
+"you record changes made to documents."
+msgstr "사용자 이름은 문서 속성과 서식 파일에서 사용되며 문서 변경 내용을 기록할 때도 사용됩니다."
+
+#: wizard.src#TP_USER.FT_USER_FIRST.fixedtext.text
+msgid "~First name"
+msgstr "이름(~F)"
+
+#: wizard.src#TP_USER.FT_USER_LAST.fixedtext.text
+msgid "~Last name"
+msgstr "성(~L)"
+
+#: wizard.src#TP_USER.FT_USER_INITIALS.fixedtext.text
+msgid "~Initials"
+msgstr "이니셜(~I)"
+
+#: wizard.src#TP_USER.FT_USER_FATHER.fixedtext.text
+msgid "~Father's name"
+msgstr "성(~F)"
+
+#: wizard.src#TP_REGISTRATION.FT_REGISTRATION_HEADER.fixedtext.text
+msgid "%PRODUCTNAME Registration"
+msgstr "%PRODUCTNAME 등록"
+
+#: wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.fixedtext.text
+msgid ""
+"You now have the opportunity to register as a %PRODUCTNAME user. "
+"Registration is voluntary and is without obligation.\n"
+"\n"
+"If you register, we can inform you about new developments concerning this "
+"product."
+msgstr ""
+"%PRODUCTNAME 사용자로 등록할 수 있습니다. 원하는 경우에 한해서 자발적으로 등록할 수 있으며 반드시 등록할 의무는 없습니다.\n"
+"\n"
+"등록하시면 이 제품과 관련한 새로운 개발 정보를 받아보실 수 있습니다."
+
+#: wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.radiobutton.text
+msgid "I want to register ~now"
+msgstr "지금 등록(~N)"
+
+#: wizard.src#TP_REGISTRATION.RB_REGISTRATION_LATER.radiobutton.text
+msgid "I want to register ~later"
+msgstr "나중에 등록(~L)"
+
+#: wizard.src#TP_REGISTRATION.RB_REGISTRATION_NEVER.radiobutton.text
+msgid "I do not want to ~register"
+msgstr "등록 안 함(~R)"
+
+#: wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.fixedtext.text
+msgid ""
+"We hope you enjoy working with %PRODUCTNAME.\n"
+"\n"
+"To exit the wizard, click 'Finish'."
+msgstr ""
+"%PRODUCTNAME을(를) 사용하여 멋진 문서를 꾸며보시기 바랍니다.\n"
+"\n"
+"마법사를 종료하려면 마침을 누르십시오."
+#: desktop.src#STR_RECOVER_QUERY.string.text
+msgid "Should the file \"$1\" be restored?"
+msgstr "파일 \"$1\"을(를） 복구하겠습니까?"
+
+#: desktop.src#STR_RECOVER_TITLE.string.text
+msgid "File Recovery"
+msgstr "파일 복구"
+
+#: desktop.src#STR_RECOVER_PREPARED.warningbox.text
+msgid ""
+"An unrecoverable error has occurred.\n"
+"\n"
+"All modified files have been saved and can\n"
+"probably be recovered at program restart."
+msgstr ""
+"치명적인 오류가 발생했습니다.\n"
+"\n"
+"그러나 변경된 모든 파일이\n"
+"저장되었으므로, 다음\n"
+"프로그램 시작시에는 복구될 수 있을 것입니다."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_CANNOT_START.string.text
+msgid "The application cannot be started. "
+msgstr "응용 프로그램을 시작할 수 없습니다."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_DIR_MISSING.string.text
+msgid "The configuration directory \"$1\" could not be found."
+msgstr "구성 디렉토리 \"$1\"이(가) 없습니다."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_PATH_INVALID.string.text
+msgid "The installation path is invalid."
+msgstr "설치 경로가 올바르지 않습니다."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_NO_PATH.string.text
+msgid "The installation path is not available."
+msgstr "설치 경로를 사용할 수 없습니다."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_INTERNAL.string.text
+msgid "An internal error occurred."
+msgstr "내부 오류가 발생했습니다."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_FILE_CORRUPT.string.text
+msgid "The configuration file \"$1\" is corrupt."
+msgstr "구성 파일 \"$1\"이(가) 손상되었습니다."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_FILE_MISSING.string.text
+msgid "The configuration file \"$1\" was not found."
+msgstr "구성 파일 \"$1\"이(가) 없습니다."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_NO_SUPPORT.string.text
+msgid "The configuration file \"$1\" does not support the current version."
+msgstr "구성 파일 \"$1\"에서 현재 버전을 지원하지 않습니다."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_LANGUAGE_MISSING.string.text
+msgid "The user interface language cannot be determined."
+msgstr "사용자 인터페이스 언어를 확인할 수 없습니다."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_NO_SERVICE.string.text
+msgid "The component manager is not available."
+msgstr "서비스 관리자를 사용할 수 없습니다."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_NO_CFG_SERVICE.string.text
+msgid "The configuration service is not available."
+msgstr "구성 서비스를 사용할 수 없습니다."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_MULTISESSION.string.text
+msgid ""
+"You have another instance running in a different terminal session. Close "
+"that instance and then try again."
+msgstr ""
+"다른 터미널 세션에서 실행 중인 인스턴스가 있습니다. 해당 인스턴스를 닫고 다"
+"시 시도하시기 바랍니다."
+
+#: desktop.src#STR_ASK_START_SETUP_MANUALLY.string.text
+msgid ""
+"Start the setup application to repair the installation from the CD or the "
+"folder containing the installation packages."
+msgstr ""
+"설치 패키지가 들어 있는 폴더 또는 CD의 설치 프로그램을 복구하려면 설치 프로그"
+"램을 시작하십시오. "
+
+#: desktop.src#STR_CONFIG_ERR_SETTINGS_INCOMPLETE.string.text
+msgid ""
+"The startup settings for accessing the central configuration are incomplete. "
+msgstr "중앙 집중 설정으로 액세스할 때 필요한 시작 설정이 불완전합니다."
+
+#: desktop.src#STR_CONFIG_ERR_CANNOT_CONNECT.string.text
+msgid "A connection to the central configuration could not be established. "
+msgstr "중앙 집중 설정으로 연결할 수 없습니다. "
+
+#: desktop.src#STR_CONFIG_ERR_RIGHTS_MISSING.string.text
+msgid ""
+"You cannot access the central configuration because of missing access "
+"rights. "
+msgstr "액세스 권한이 없는 이유로 중앙 집중 설정으로 액세스할 수 없습니다."
+
+#: desktop.src#STR_CONFIG_ERR_ACCESS_GENERAL.string.text
+msgid "A general error occurred while accessing your central configuration. "
+msgstr "중앙 집중 설정으로 액세스하던 중 일반적 오류가 발생했습니다."
+
+#: desktop.src#STR_CONFIG_ERR_NO_WRITE_ACCESS.string.text
+msgid ""
+"The changes to your personal settings cannot be stored centrally because of "
+"missing access rights. "
+msgstr ""
+"액세스 권한이 없는 이유로 변경된 사용자 설정 내용을 중앙에 저장할 수 없습니"
+"다."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.string.text
+msgid ""
+"%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME "
+"configuration data.\n"
+"\n"
+"Please contact your system administrator."
+msgstr ""
+"%PRODUCTNAME의 설정 데이터에 액세스 하는 중 오류가 발생했습니다. %PRODUCTNAME"
+"을(를) 시작할 수 없습니다.\n"
+"\n"
+"시스템 관리자에게 문의하십시오."
+
+#: desktop.src#STR_INTERNAL_ERRMSG.string.text
+msgid "The following internal error has occurred: "
+msgstr "다음과 같은 내부적 오류가 발생했습니다:"
+
+#: desktop.src#QBX_USERDATALOCKED.querybox.text
+msgid ""
+"Either another instance of %PRODUCTNAME is accessing your personal settings "
+"or your personal settings are locked.\n"
+"Simultaneous access can lead to inconsistencies in your personal settings. "
+"Before continuing, you should make sure user '$u' closes %PRODUCTNAME on "
+"host '$h'.\n"
+"\n"
+"Do you really want to continue?"
+msgstr ""
+"%PRODUCTNAME의 다른 인스턴스가 사용자 임의 설정에 액세스 중이거나 설정이 잠겨"
+"있습니다.\n"
+"동시 다발적인 액세스로 인하여 사용자 임의 설정 내용의 일관성에 문제가 생길 "
+"수 있습니다. 계속 실행하기 전에 사용자 '$u'가(이) %PRODUCTNAME을(를) '$h' 호"
+"스트로 닫는 지를 확인하셔야 합니다.\n"
+"\n"
+"계속 진행하시겠습니까?"
+
+#: desktop.src#STR_TITLE_USERDATALOCKED.string.text
+msgctxt "desktop.src#STR_TITLE_USERDATALOCKED.string.text"
+msgid "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
+
+#: desktop.src#EBX_ERR_PRINTDISABLED.errorbox.text
+msgid "Printing is disabled. No documents can be printed."
+msgstr "인쇄가 불가능합니다. 문서를 인쇄할 수 없습니다."
+
+#: desktop.src#INFOBOX_EXPIRED.infobox.text
+msgid ""
+"This Evaluation Version has expired. To find out more about %PRODUCTNAME,\n"
+"visit http://www.oracle.com/us/products/applications/open-office."
+msgstr ""
+"이 평가판은 만료되었습니다. %PRODUCTNAME에 대한 자세한 정보를 얻으려면\n"
+"http://www.oracle.com/us/products/applications/open-office를 방문하십시오."
+
+#: desktop.src#STR_TITLE_EXPIRED.string.text
+msgctxt "desktop.src#STR_TITLE_EXPIRED.string.text"
+msgid "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
+
+#: desktop.src#STR_BOOTSTRAP_ERR_NO_PATHSET_SERVICE.string.text
+msgid "The path manager is not available.\n"
+msgstr "경로 관리자를 사용할 수 없습니다.\n"
+
+#: desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.string.text
+msgid ""
+"%PRODUCTNAME user installation could not be completed due to insufficient "
+"free disk space. Please free more disc space at the following location and "
+"restart %PRODUCTNAME:\n"
+"\n"
+msgstr ""
+"디스크 공간이 충분하지 않아서 %PRODUCTNAME 사용자 설치를 완료하지 못했습니"
+"다. 다음 위치에 여유 디스크 공간을 더 확보한 후 %PRODUCTNAME을(를) 다시 시작"
+"하십시오.\n"
+"\n"
+
+#: desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.string.text
+msgid ""
+"%PRODUCTNAME user installation could not be processed due to missing access "
+"rights. Please make sure that you have sufficient access rights for the "
+"following location and restart %PRODUCTNAME:\n"
+"\n"
+msgstr ""
+"액세스 권한이 없어서 %PRODUCTNAME 사용자 설치를 완료하지 못했습니다. 다음 위"
+"치에 대한 액세스 권한이 충분한지 확인한 후 %PRODUCTNAME을(를) 다시 시작하십시"
+"오.\n"
+"\n"
+"X-Accelerator-Marker: ~\n"
+
+#: dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.fixedtext.text
+msgid ""
+"The extension cannot be installed as the following\n"
+"system dependencies are not fulfilled:"
+msgstr ""
+"다음 시스템 종속성을 수행하지 않았으므로\n"
+"확장을 설치할 수 없습니다:"
+
+#: dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.modaldialog.text
+msgid "System dependencies check"
+msgstr "시스템 종속성 검사"
+
+#: dp_gui_dialog.src#RID_STR_ADD_PACKAGES.string.text
+msgid "Add Extension(s)"
+msgstr "확장 추가"
+
+#: dp_gui_dialog.src#RID_CTX_ITEM_REMOVE.string.text
+msgid "~Remove"
+msgstr "제거(~R)"
+
+#: dp_gui_dialog.src#RID_CTX_ITEM_ENABLE.string.text
+msgid "~Enable"
+msgstr "활성화(~E)"
+
+#: dp_gui_dialog.src#RID_CTX_ITEM_DISABLE.string.text
+msgid "~Disable"
+msgstr "비활성화(~D)"
+
+#: dp_gui_dialog.src#RID_CTX_ITEM_CHECK_UPDATE.string.text
+msgid "~Update..."
+msgstr "업데이트(~U)..."
+
+#: dp_gui_dialog.src#RID_CTX_ITEM_OPTIONS.string.text
+msgid "~Options..."
+msgstr "옵션(~O)..."
+
+#: dp_gui_dialog.src#RID_STR_ADDING_PACKAGES.string.text
+msgctxt "dp_gui_dialog.src#RID_STR_ADDING_PACKAGES.string.text"
+msgid "Adding %EXTENSION_NAME"
+msgstr "%EXTENSION_NAME 추가 중"
+
+#: dp_gui_dialog.src#RID_STR_REMOVING_PACKAGES.string.text
+msgid "Removing %EXTENSION_NAME"
+msgstr "%EXTENSION_NAME 제거 중"
+
+#: dp_gui_dialog.src#RID_STR_ENABLING_PACKAGES.string.text
+msgid "Enabling %EXTENSION_NAME"
+msgstr "%EXTENSION_NAME 활성화 중"
+
+#: dp_gui_dialog.src#RID_STR_DISABLING_PACKAGES.string.text
+msgid "Disabling %EXTENSION_NAME"
+msgstr "%EXTENSION_NAME 비활성화 중"
+
+#: dp_gui_dialog.src#RID_STR_ACCEPT_LICENSE.string.text
+msgid "Accept license for %EXTENSION_NAME"
+msgstr "%EXTENSION_NAME에 대한 라이선스 승인"
+
+#: dp_gui_dialog.src#RID_STR_INSTALL_FOR_ALL.string.text
+msgid "~For all users"
+msgstr "모든 사용자(~F)"
+
+#: dp_gui_dialog.src#RID_STR_INSTALL_FOR_ME.string.text
+msgid "~Only for me"
+msgstr "현재 사용자만(~O)"
+
+#: dp_gui_dialog.src#RID_STR_ERROR_UNKNOWN_STATUS.string.text
+msgid "Error: The status of this extension is unknown"
+msgstr "오류: 이 확장의 상태를 알 수 없습니다."
+
+#: dp_gui_dialog.src#RID_STR_CLOSE_BTN.string.text
+msgctxt "dp_gui_dialog.src#RID_STR_CLOSE_BTN.string.text"
+msgid "Close"
+msgstr "닫기"
+
+#: dp_gui_dialog.src#RID_STR_EXIT_BTN.string.text
+msgid "Quit"
+msgstr "종료"
+
+#: dp_gui_dialog.src#RID_STR_NO_ADMIN_PRIVILEGE.string.text
+msgid ""
+"%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME "
+"extensions are not compatible with this version and need to be updated "
+"before %PRODUCTNAME can be started.\n"
+"\n"
+"Updating of shared extension requires administrator privileges. Contact your "
+"system administrator to update the following shared extensions:"
+msgstr ""
+"%PRODUCTNAME이(가) 업데이트되었습니다. 일부 공용 %PRODUCTNAME 확장이 현재 버젼과 호환되지 않아 %"
+"PRODUCTNAME을(를) 시작하기 전에 업데이트가 필요합니다.\n"
+"\n"
+"공용 확장의 업데이트를 위해 관리자 권한이 필요합니다. 시스템 관리자에게 연락하여 아래의 공용 확장을 업데이트하십시오:"
+
+#: dp_gui_dialog.src#RID_STR_ERROR_MISSING_DEPENDENCIES.string.text
+msgid ""
+"The extension cannot be enabled as the following system dependencies are not "
+"fulfilled:"
+msgstr "다음 시스템 종속성을 수행하지 않았으므로 확장을 설치할 수 없습니다:"
+
+#: dp_gui_dialog.src#RID_STR_ERROR_MISSING_LICENSE.string.text
+msgid "This extension is disabled because you haven't accepted the license yet.\n"
+msgstr "이 확장은 라이센스가 아직 승인되지 않았기 때문에 비활성화되었습니다.\n"
+
+#: dp_gui_dialog.src#RID_STR_SHOW_LICENSE_CMD.string.text
+msgid "Show license"
+msgstr "라이선스 표시"
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_HEADER.fixedtext.text
+msgid ""
+"Please follow these steps to proceed with the installation of the extension:"
+msgstr "확장 설치를 진행하려면 다음 단계를 따르십시오."
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1.fixedtext.text
+msgid "1."
+msgstr "1."
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1_TXT.fixedtext.text
+msgid ""
+"Read the complete License Agreement. Use the scroll bar or the \\'Scroll "
+"Down\\' button in this dialog to view the entire license text."
+msgstr ""
+"사용권 계약 전체를 읽으십시오. 사용권 텍스트 전체를 보려면 이 대화 상자에 있는 스크롤 막대 또는 \\'아래로 스크롤\\' 버튼을 "
+"사용합니다."
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2.fixedtext.text
+msgid "2."
+msgstr "2."
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2_TXT.fixedtext.text
+msgid ""
+"Accept the License Agreement for the extension by pressing the \\'Accept\\' "
+"button."
+msgstr "확장 사용권 계약에 동의하는 경우 \\'동의\\' 버튼을 누릅니다."
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.PB_LICENSE_DOWN.pushbutton.text
+msgid "~Scroll Down"
+msgstr "아래로 스크롤(~S)"
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_ACCEPT.okbutton.text
+msgid "Accept"
+msgstr "동의"
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_DECLINE.cancelbutton.text
+msgid "Decline"
+msgstr "거부"
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.modaldialog.text
+msgctxt "dp_gui_dialog.src#RID_DLG_LICENSE.modaldialog.text"
+msgid "Extension Software License Agreement"
+msgstr "확장 소프트웨어 사용권 계약"
+
+#: dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.RID_EM_BTN_CLOSE.okbutton.text
+msgctxt "dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.RID_EM_BTN_CLOSE.okbutton.text"
+msgid "Close"
+msgstr "닫기"
+
+#: dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.modaldialog.text
+msgctxt "dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.modaldialog.text"
+msgid "Extension Software License Agreement"
+msgstr "확장 소프트웨어 사용권 계약"
+
+#: dp_gui_dialog.src#RID_WARNINGBOX_INSTALL_EXTENSION.warningbox.text
+msgid ""
+"You are about to install the extension \\'%NAME\\'.\n"
+"Click \\'OK\\' to proceed with the installation.\n"
+"Click \\'Cancel\\' to stop the installation."
+msgstr ""
+"\\'%NAME\\' 확장을 설치하려고 합니다.\n"
+"설치를 계속하려면 \\'확인\\'을 클릭하십시오.\n"
+"설치를 중지하려면 \\'취소\\'를 클릭하십시오."
+
+#: dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_EXTENSION.warningbox.text
+msgid ""
+"You are about to remove the extension \\'%NAME\\'.\n"
+"Click \\'OK\\' to remove the extension.\n"
+"Click \\'Cancel\\' to stop removing the extension."
+msgstr ""
+"\\'%NAME\\' 확장을 제거하려합니다.\n"
+"제거하려면 \\'OK\\' 을(를) 누르십시오.\n"
+"제거를 취소하려면 \\'Cancel\\' 을(를) 누르십시오."
+
+#: dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_SHARED_EXTENSION.warningbox.text
+msgid ""
+"Make sure that no further users are working with the same %PRODUCTNAME, when "
+"changing shared extensions in a multi user environment.\n"
+"Click \\'OK\\' to remove the extension.\n"
+"Click \\'Cancel\\' to stop removing the extension."
+msgstr ""
+"여러 사용자 환경에서 공유 확장을 변경할 때는 동일한 %PRODUCTNAME(으)로 작업하는 사용자가 없는지 확인하십시오.\n"
+"확장을 제거하려면 \\'확인\\'을 클릭하십시오.\n"
+"확장 제거를 중지하려면 \\'취소\\'를 클릭하십시오."
+
+#: dp_gui_dialog.src#RID_WARNINGBOX_ENABLE_SHARED_EXTENSION.warningbox.text
+msgid ""
+"Make sure that no further users are working with the same %PRODUCTNAME, when "
+"changing shared extensions in a multi user environment.\n"
+"Click \\'OK\\' to enable the extension.\n"
+"Click \\'Cancel\\' to stop enabling the extension."
+msgstr ""
+"여러 사용자 환경에서 공유 확장을 변경할 때는 동일한 %PRODUCTNAME(으)로 작업하는 사용자가 없는지 확인하십시오.\n"
+"확장을 활성화하려면 \\'확인\\'을 클릭하십시오.\n"
+"확장 활성화를 중지하려면 \\'취소\\'를 클릭하십시오."
+
+#: dp_gui_dialog.src#RID_WARNINGBOX_DISABLE_SHARED_EXTENSION.warningbox.text
+msgid ""
+"Make sure that no further users are working with the same %PRODUCTNAME, when "
+"changing shared extensions in a multi user environment.\n"
+"Click \\'OK\\' to disable the extension.\n"
+"Click \\'Cancel\\' to stop disabling the extension."
+msgstr ""
+"여러 사용자 환경에서 공유 확장을 변경할 때는 동일한 %PRODUCTNAME(으)로 작업하는 사용자가 없는지 확인하십시오.\n"
+"확장을 비활성화하려면 \\'확인\\'을 클릭하십시오.\n"
+"확장 비활성화를 중지하려면 \\'취소\\'를 클릭하십시오."
+
+#: dp_gui_dialog.src#RID_STR_UNSUPPORTED_PLATFORM.string.text
+msgid "The extension \\'%Name\\' does not work on this computer."
+msgstr "확장 \\'%Name\\'이(가) 이 컴퓨터에서 작동하지 않습니다."
+
+#: dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_ADD.pushbutton.text
+msgid "~Add..."
+msgstr "추가(~A)..."
+
+#: dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CHECK_UPDATES.pushbutton.text
+msgctxt "dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CHECK_UPDATES.pushbutton.text"
+msgid "Check for ~Updates..."
+msgstr "업데이트 확인(~U)..."
+
+#: dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_FT_GET_EXTENSIONS.fixedtext.text
+msgid "Get more extensions online..."
+msgstr "더 많은 확장 가져오기..."
+
+#: dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_FT_PROGRESS.fixedtext.text
+msgctxt "dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_FT_PROGRESS.fixedtext.text"
+msgid "Adding %EXTENSION_NAME"
+msgstr "%EXTENSION_NAME 추가 중"
+
+#: dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CLOSE.okbutton.text
+msgctxt "dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CLOSE.okbutton.text"
+msgid "Close"
+msgstr "닫기"
+
+#: dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.modelessdialog.text
+msgid "Extension Manager"
+msgstr "확장 관리자"
+
+#: dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_MSG.fixedtext.text
+msgid ""
+"%PRODUCTNAME has been updated to a new version. Some installed %PRODUCTNAME "
+"extensions are not compatible with this version and need to be updated "
+"before they can be used."
+msgstr ""
+"%PRODUCTNAME이(가) 업데이트되었습니다. 일부 설치된 %PRODUCTNAME 확장이 현재 버젼과 호환되지 않아 사용하기 전에 "
+"업데이트가 필요합니다."
+
+#: dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_PROGRESS.fixedtext.text
+msgctxt "dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_PROGRESS.fixedtext.text"
+msgid "Adding %EXTENSION_NAME"
+msgstr "%EXTENSION_NAME 추가 중"
+
+#: dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CHECK_UPDATES.pushbutton.text
+msgctxt "dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CHECK_UPDATES.pushbutton.text"
+msgid "Check for ~Updates..."
+msgstr "업데이트 확인(~U)..."
+
+#: dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CLOSE.pushbutton.text
+msgid "Disable all"
+msgstr "모두 비활성화"
+
+#: dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.modaldialog.text
+msgid "Extension Update Required"
+msgstr "확장 업데이트가 필요함"
+
+#: dp_gui_dialog2.src#RID_QUERYBOX_INSTALL_FOR_ALL.querybox.text
+msgid ""
+"Make sure that no further users are working with the same %PRODUCTNAME, when "
+"installing an extension for all users in a multi user environment.\n"
+"\n"
+"For whom do you want to install the extension?\n"
+msgstr ""
+"다중 사용자 환경에서 모든 사용자를 위한 확장을 설치할 경우에는 현재 %PRODUCTNAME 을 사용하고 있는 사용자가 없는지 "
+"확인하십시오.\n"
+"\n"
+"어떤 사용자를 위해 확장을 설치하시겠습니까?"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CHECKING.fixedtext.text
+msgid "Checking..."
+msgstr "확인 중..."
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_UPDATE.fixedtext.text
+msgid "~Available extension updates"
+msgstr "사용 가능한 확장 업데이트(~A)"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ALL.checkbox.text
+msgid "~Show all updates"
+msgstr "모든 업데이트 표시(~S)"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_DESCRIPTION.fixedline.text
+msgid "Description"
+msgstr "설명"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_PUBLISHER_LABEL.fixedtext.text
+msgid "Publisher:"
+msgstr "발행자:"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_RELEASENOTES_LABEL.fixedtext.text
+msgid "What is new:"
+msgstr "새로워진 점:"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_RELEASENOTES_LINK.fixedtext.text
+msgid "Release Notes"
+msgstr "릴리즈 노트"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_OK.pushbutton.text
+msgid "~Install"
+msgstr "설치(~I)"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CLOSE.pushbutton.text
+msgctxt "dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CLOSE.pushbutton.text"
+msgid "Close"
+msgstr "닫기"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ERROR.string.text
+msgid "Error"
+msgstr "오류"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NONE.string.text
+msgid "No new updates are available."
+msgstr "새 업데이트가 없습니다."
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALLABLE.string.text
+msgid ""
+"No installable updates are available. To see ignored or disabled updates, "
+"mark the check box 'Show all updates'."
+msgstr ""
+"설치할 수 있는 업데이트가 없습니다. 무시되었거나 사용할 수 없는 업데이트까지 보려면 '모든 업데이트 표시' 확인란을 선택하십시오."
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_FAILURE.string.text
+msgid "An error occurred:"
+msgstr "오류가 발생했습니다:"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_UNKNOWNERROR.string.text
+msgid "Unknown error."
+msgstr "알 수 없는 오류입니다."
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODESCRIPTION.string.text
+msgid "No more details are available for this update."
+msgstr "이 업데이트에 대해 더 자세한 사항이 없습니다."
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALL.string.text
+msgid "The extension cannot be updated because:"
+msgstr "다음과 같은 이유로 확장을 업데이트할 수 없습니다:"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY.string.text
+msgid "Required OpenOffice.org version doesn't match:"
+msgstr "요구하는 OpenOffice.org 버젼과 일치하지 않음:"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY_CUR_VER.string.text
+msgid "You have OpenOffice.org %VERSION"
+msgstr "OpenOffice.org %VERSION 입니다."
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_BROWSERBASED.string.text
+msgid "browser based update"
+msgstr "브라우저 기반 업데이트"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_VERSION.string.text
+msgid "Version"
+msgstr "버전"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORE.string.text
+msgid "Ignore this Update"
+msgstr "이 업데이트 무시"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORE_ALL.string.text
+msgid "Ignore all Updates"
+msgstr "모든 업데이트 무시"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ENABLE.string.text
+msgid "Enable Updates"
+msgstr "업데이트 사용"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORED_UPDATE.string.text
+msgid "This update will be ignored.\n"
+msgstr "이 업데이트를 무시합니다.\n"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.modaldialog.text
+msgid "Extension Update"
+msgstr "확장 업데이트"
+
+#: dp_gui_updatedialog.src#RID_WARNINGBOX_UPDATE_SHARED_EXTENSION.warningbox.text
+msgid ""
+"Make sure that no further users are working with the same %PRODUCTNAME, when "
+"changing shared extensions in a multi user environment.\n"
+"Click \\'OK\\' to update the extensions.\n"
+"Click \\'Cancel\\' to stop updating the extensions."
+msgstr ""
+"여러 사용자 환경에서 공유 확장을 변경할 때는 동일한 %PRODUCTNAME(으)로 작업하는 사용자가 없는지 확인하십시오.\n"
+"확장을 업데이트하려면 \\'확인\\'을 클릭하십시오.\n"
+"확장 업데이트를 중지하려면 \\'취소\\'를 클릭하십시오."
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_DOWNLOADING.fixedtext.text
+msgid "Downloading extensions..."
+msgstr "확장을 다운로드하는 중..."
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_RESULTS.fixedtext.text
+msgid "Result"
+msgstr "결과"
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_OK.okbutton.text
+msgid "OK"
+msgstr "확인"
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ABORT.cancelbutton.text
+msgid "Cancel Update"
+msgstr "업데이트 취소"
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_INSTALLING.string.text
+msgid "Installing extensions..."
+msgstr "확장을 설치하는 중..."
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_FINISHED.string.text
+msgid "Installation finished"
+msgstr "설치를 완료했습니다."
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_NO_ERRORS.string.text
+msgid "No errors."
+msgstr "오류가 없습니다."
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_DOWNLOAD.string.text
+msgid "Error while downloading extension %NAME. "
+msgstr "%NAME 확장을 다운로드하는 동안 오류가 발생했습니다. "
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_THIS_ERROR_OCCURRED.string.text
+msgid "The error message is: "
+msgstr "오류 메시지: "
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_INSTALLATION.string.text
+msgid "Error while installing extension %NAME. "
+msgstr "%NAME 확장을 설치하는 동안 오류가 발생했습니다. "
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_LIC_DECLINED.string.text
+msgid "The license agreement for extension %NAME was refused. "
+msgstr "%NAME 확장의 사용권 계약에 동의하지 않았습니다. "
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_EXTENSION_NOINSTALL.string.text
+msgid "The extension will not be installed."
+msgstr "확장이 설치되지 않습니다."
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.modaldialog.text
+msgid "Download and Installation"
+msgstr "다운로드 및 설치"
+
+#: dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.warningbox.text
+msgid ""
+"You are about to install version $NEW of the extension \\'$NAME\\'.\n"
+"The newer version $DEPLOYED is already installed.\n"
+"Click \\'OK\\' to replace the installed extension.\n"
+"Click \\'Cancel\\' to stop the installation."
+msgstr ""
+"확장 \\'$NAME\\'의 $NEW 버전을 설치하려고 합니다.\n"
+"새 버전 $DEPLOYED이(가) 이미 설치되어 있습니다.\n"
+"설치된 확장을 교체하려면 \\'확인\\'을 클릭하십시오.\n"
+"설치를 중지하려면 \\'취소\\'를 클릭하십시오."
+
+#: dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_LESS_DIFFERENT_NAMES.string.text
+msgid ""
+"You are about to install version $NEW of the extension \\'$NAME\\'.\n"
+"The newer version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\n"
+"Click \\'OK\\' to replace the installed extension.\n"
+"Click \\'Cancel\\' to stop the installation."
+msgstr ""
+"확장 \\'$NAME\\'의 $NEW 버전을 설치하려고 합니다.\n"
+"새 버전 $DEPLOYED(\\'$OLDNAME\\')이(가) 이미 설치되어 있습니다.\n"
+"설치된 확장을 교체하려면 \\'확인\\'을 클릭하십시오.\n"
+"설치를 중지하려면 \\'취소\\'를 클릭하십시오."
+
+#: dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_EQUAL.warningbox.text
+msgid ""
+"You are about to install version $NEW of the extension \\'$NAME\\'.\n"
+"That version is already installed.\n"
+"Click \\'OK\\' to replace the installed extension.\n"
+"Click \\'Cancel\\' to stop the installation."
+msgstr ""
+"확장 \\'$NAME\\'의 $NEW 버전을 설치하려고 합니다.\n"
+"이 버전이 이미 설치되어 있습니다.\n"
+"설치된 확장을 교체하려면 \\'확인\\'을 클릭하십시오.\n"
+"설치를 중지하려면 \\'취소\\'를 클릭하십시오."
+
+#: dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_EQUAL_DIFFERENT_NAMES.string.text
+msgid ""
+"You are about to install version $NEW of the extension \\'$NAME\\'.\n"
+"That version, named \\'$OLDNAME\\', is already installed.\n"
+"Click \\'OK\\' to replace the installed extension.\n"
+"Click \\'Cancel\\' to stop the installation."
+msgstr ""
+"확장 \\'$NAME\\'의 $NEW 버전을 설치하려고 합니다.\n"
+"이 버전(\\'$OLDNAME\\')이 이미 설치되어 있습니다.\n"
+"설치된 확장을 교체하려면 \\'확인\\'을 클릭하십시오.\n"
+"설치를 중지하려면 \\'취소\\'를 클릭하십시오."
+
+#: dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_GREATER.warningbox.text
+msgid ""
+"You are about to install version $NEW of the extension \\'$NAME\\'.\n"
+"The older version $DEPLOYED is already installed.\n"
+"Click \\'OK\\' to replace the installed extension.\n"
+"Click \\'Cancel\\' to stop the installation."
+msgstr ""
+"확장 \\'$NAME\\'의 $NEW 버전을 설치하려고 합니다.\n"
+"이전 버전 $DEPLOYED이(가) 이미 설치되어 있습니다.\n"
+"설치된 확장을 교체하려면 \\'확인\\'을 클릭하십시오.\n"
+"설치를 중지하려면 \\'취소\\'를 클릭하십시오."
+
+#: dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_GREATER_DIFFERENT_NAMES.string.text
+msgid ""
+"You are about to install version $NEW of the extension \\'$NAME\\'.\n"
+"The older version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\n"
+"Click \\'OK\\' to replace the installed extension.\n"
+"Click \\'Cancel\\' to stop the installation."
+msgstr ""
+"확장 \\'$NAME\\'의 $NEW 버전을 설치하려고 합니다.\n"
+"이전 버전 $DEPLOYED(\\'$OLDNAME\\')이(가) 이미 설치되어 있습니다.\n"
+"설치된 확장을 교체하려면 \\'확인\\'을 클릭하십시오.\n"
+"설치를 중지하려면 \\'취소\\'를 클릭하십시오."
+
+#~ msgid "No descriptions available for this extension."
+#~ msgstr "이 확장에 대한 설명이 없습니다."
+
+#: dp_manager.src#RID_STR_COPYING_PACKAGE.string.text
+msgid "Copying: "
+msgstr "복사: "
+
+#: dp_manager.src#RID_STR_ERROR_WHILE_ADDING.string.text
+msgid "Error while adding: "
+msgstr "추가하는 동안 오류가 발생했습니다: "
+
+#: dp_manager.src#RID_STR_ERROR_WHILE_REMOVING.string.text
+msgid "Error while removing: "
+msgstr "제거하는 동안 오류가 발생했습니다: "
+
+#: dp_manager.src#RID_STR_PACKAGE_ALREADY_ADDED.string.text
+msgid "Extension has already been added: "
+msgstr "확장이 이미 추가되었습니다: "
+
+#: dp_manager.src#RID_STR_NO_SUCH_PACKAGE.string.text
+msgid "There is no such extension deployed: "
+msgstr "해당 확장이 배포되지 않았습니다: "
+
+#: dp_manager.src#RID_STR_SYNCHRONIZING_REPOSITORY.string.text
+msgid "Synchronizing repository for %NAME extensions"
+msgstr "%NAME 확장에 대한 저장소 동기화 중"
+
+#: dp_registry.src#RID_STR_REGISTERING_PACKAGE.string.text
+msgid "Enabling: "
+msgstr "활성화: "
+
+#: dp_registry.src#RID_STR_REVOKING_PACKAGE.string.text
+msgid "Disabling: "
+msgstr "비활성화: "
+
+#: dp_registry.src#RID_STR_CANNOT_DETECT_MEDIA_TYPE.string.text
+msgid "Cannot detect media-type: "
+msgstr "매체 유형을 확인할 수 없습니다. "
+
+#: dp_registry.src#RID_STR_UNSUPPORTED_MEDIA_TYPE.string.text
+msgid "This media-type is not supported: "
+msgstr "이 매체 유형을 지원하지 않습니다. "
+
+#: dp_registry.src#RID_STR_ERROR_WHILE_REGISTERING.string.text
+msgid "An error occurred while enabling: "
+msgstr "활성화하는 동안 오류가 발생했습니다: "
+
+#: dp_registry.src#RID_STR_ERROR_WHILE_REVOKING.string.text
+msgid "An error occurred while disabling: "
+msgstr "비활성화하는 동안 오류가 발생했습니다: "
+"X-Accelerator-Marker: ~\n"
+
+#: dp_configuration.src#RID_STR_CONF_SCHEMA.string.text
+msgid "Configuration Schema"
+msgstr "구성 스키마"
+
+#: dp_configuration.src#RID_STR_CONF_DATA.string.text
+msgid "Configuration Data"
+msgstr "구성 데이터"
+"X-Accelerator-Marker: ~\n"
+
+#: dp_component.src#RID_STR_DYN_COMPONENT.string.text
+msgid "UNO Dynamic Library Component"
+msgstr "UNO Dynamic Library Component"
+
+#: dp_component.src#RID_STR_JAVA_COMPONENT.string.text
+msgid "UNO Java Component"
+msgstr "UNO Java Component"
+
+#: dp_component.src#RID_STR_PYTHON_COMPONENT.string.text
+msgid "UNO Python Component"
+msgstr "UNO Python Component"
+
+#: dp_component.src#RID_STR_COMPONENTS.string.text
+msgid "UNO Components"
+msgstr "UNO 구성요소"
+
+#: dp_component.src#RID_STR_RDB_TYPELIB.string.text
+msgid "UNO RDB Type Library"
+msgstr "UNO RDB Type Library"
+
+#: dp_component.src#RID_STR_JAVA_TYPELIB.string.text
+msgid "UNO Java Type Library"
+msgstr "UNO Java Type Library"
+
+#: dp_package.src#RID_STR_PACKAGE_BUNDLE.string.text
+msgid "Extension"
+msgstr "확장"
+
+#: dp_script.src#RID_STR_BASIC_LIB.string.text
+msgid "%PRODUCTNAME Basic Library"
+msgstr "%PRODUCTNAME Basic 라이브러리"
+
+#: dp_script.src#RID_STR_DIALOG_LIB.string.text
+msgid "Dialog Library"
+msgstr "Dialog Library"
+
+#: dp_script.src#RID_STR_CANNOT_DETERMINE_LIBNAME.string.text
+msgid "The library name could not be determined."
+msgstr "라이브러리 이름을 확인하지 못했습니다."
+
+#: dp_script.src#RID_STR_LIBNAME_ALREADY_EXISTS.string.text
+msgid "This library name already exists. Please choose a different name."
+msgstr "이 라이브러리 이름이 이미 있습니다. 다른 이름을 선택하십시오."
+
+#: dp_help.src#RID_STR_HELP.string.text
+msgid "Help"
+msgstr "도움말"
+
+#: dp_help.src#RID_STR_HELPPROCESSING_GENERAL_ERROR.string.text
+msgid "The extension cannot be installed because:\n"
+msgstr "확장을 설치할 수 없습니다. 이유:\n"
+
+#: dp_help.src#RID_STR_HELPPROCESSING_XMLPARSING_ERROR.string.text
+msgid "The extension will not be installed because an error occurred in the Help "
+"files:\n"
+msgstr "도움말 파일에 오류가 발생되어 확장을 설치할 수 없습니다.:\n"
+
+#: dp_sfwk.src#RID_STR_SFWK_LIB.string.text
+msgid "%MACROLANG Library"
+msgstr "%MACROLANG 라이브러리"
+
+#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_1.string.text
+msgid "Extension Software License Agreement of $NAME:"
+msgstr "$NAME에 대한 확장 소프트웨어 사용권 계약:"
+
+#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_2.string.text
+msgid ""
+"Read the complete License Agreement displayed above. Accept the License "
+"Agreement by typing \"yes\" on the console then press the Return key. Type "
+"\"no\" to decline and to abort the extension setup."
+msgstr ""
+"상기에 명시된 사용권 계약 전체를 읽으십시오. 사용권 계약에 동의하는 경우 콘솔에서 \"예\"를 입력한 다음 <Enter> 키를 누릅니다. "
+"계약을 거부하고 확장 설치를 중단하려면 \"아니요\"를 입력합니다."
+
+#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_3.string.text
+msgid "[Enter \"yes\" or \"no\"]:"
+msgstr "[\"예\" 또는 \"아니요\" 입력]:"
+
+#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_4.string.text
+msgid "Your input was not correct. Please enter \"yes\" or \"no\":"
+msgstr "입력한 내용이 올바르지 않습니다. \"예\" 또는 \"아니요\" 입력:"
+
+#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.string.text
+msgid "YES"
+msgstr "예"
+
+#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_Y.string.text
+msgid "Y"
+msgstr "Y"
+
+#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_NO.string.text
+msgid "NO"
+msgstr "아니요"
+
+#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_N.string.text
+msgid "N"
+msgstr "N"
+
+#: unopkg.src#RID_STR_CONCURRENTINSTANCE.string.text
+msgid ""
+"unopkg cannot be started. The lock file indicates it as already running. If "
+"this does not apply, delete the lock file at:"
+msgstr "unopkg를 시작할 수 없습니다. 잠김 파일은 이미 실행 중임을 나타냅니다. 적용되지 않으면, 잠김 파일을 삭제하십시오:"
+
+#: unopkg.src#RID_STR_UNOPKG_ERROR.string.text
+msgid "ERROR: "
+msgstr "오류: "
+"X-Accelerator-Marker: ~\n"
+
+#: dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_UNKNOWN.string.text
+msgid "Unknown"
+msgstr "알 수 없음"
+
+#: dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MIN.string.text
+msgid "Extension requires at least OpenOffice.org %VERSION"
+msgstr "확장은 OpenOffice.org %VERSION 이상이 필요합니다."
+
+#: dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MAX.string.text
+msgid ""
+"Extension doesn't support versions greater than: OpenOffice.org %VERSION"
+msgstr "확장이 다음 버젼보다 높은 버젼을 지원하지 않음: OpenOffice.org %VERSION"
+
+#: setup.ulf#_APP_TITLE_.LngText.text
+msgid "Setup"
+msgstr "설치"
+
+#: setup.ulf#_APP_PROD_TITLE_.LngText.text
+msgid "The %PRODUCTNAME Setup"
+msgstr "%PRODUCTNAME 설치"
+
+#: setup.ulf#_OUTOFMEM_.LngText.text
+msgid "Out of Memory"
+msgstr "메모리 부족"
+
+#: setup.ulf#_NOMSI_.LngText.text
+msgid "Setup was unable to find the msi package."
+msgstr "설치 프로그램에서 msi 패키지를 찾지 못했습니다."
+
+#: setup.ulf#_USER_CANCELLED_.LngText.text
+msgid "Setup was cancelled"
+msgstr "설치가 취소되었습니다."
+
+#: setup.ulf#_REQUIRES_ADMIN_PRIV_.LngText.text
+msgid ""
+"Administrator privileges are required for upgrading the Windows Installer."
+msgstr "Windows Installer를 업그레이드하려면 관리자 권한이 필요합니다."
+
+#: setup.ulf#_FILE_NOT_FOUND_.LngText.text
+msgid "Setup was unable to find the file '%s'."
+msgstr "설치 프로그램에서 '%s' 파일을 찾지 못했습니다."
+
+#: setup.ulf#_INVALID_PARAM_.LngText.text
+msgid "Invalid command line option '%s'. Please use '/?' for help."
+msgstr "잘못된 명령줄 옵션 '%s'입니다. 도움말을 보려면 '/?'를 사용하십시오."
+
+#: setup.ulf#_SETUP_TO_OLD_.LngText.text
+msgid ""
+"This package requires at least the version '%s' of the Windows Installer. \n"
+"You have Windows Installer '%s' on your system!"
+msgstr ""
+"이 패키지는 최소 '%s' 의 윈도우 인스톨러가 필요합니다. \n"
+"현재 '%s' 의 윈도우 인스톨러가 설치되어 있습니다!"
+
+#: setup.ulf#_SETUP_NOT_FOUND_.LngText.text
+msgid ""
+"This package requires the Windows Installer. \n"
+"You need at least Windows Installer '%s' on your system!"
+msgstr ""
+"이 패키지는 윈도우 인스톨러를 필요로 합니다. \n"
+"최소 윈도우 인스톨러 '%s' 가 필요합니다!"
+
+#: setup.ulf#_USAGE_.LngText.text
+msgid ""
+"Usage:\n"
+"   /? :  Shows this dialog.\n"
+"   /a :  Performs an administrative installation.\n"
+"   /j[u|m] :  Performs an advertising installation.\n"
+"   /q[n] : Do not show any user interface (silent mode).\n"
+msgstr ""
+"사용법:\n"
+"   /? :  이 대화 상자를 표시합니다.\n"
+"   /a :  관리 설치를 수행합니다.\n"
+"   /j[u|m] :  광고 설치를 수행합니다.\n"
+"   /q[n] : 사용자 인터페이스를 표시하지 않습니다(자동 모드).\n"
+
+#: setup.ulf#_ALREADY_RUNNING_.LngText.text
+msgid "There is already a setup process running."
+msgstr "이미 실행 중인 설치 프로세스가 있습니다."
+
+#: setup.ulf#_UNKNOWN_ERROR_.LngText.text
+msgid "An Unknown Error occured!"
+msgstr "알 수 없는 오류가 발생했습니다."
+
+#: setup.ulf#_INVALID_PROFILE_.LngText.text
+msgid "Invalid or incomplete profile."
+msgstr "잘못되었거나 불완전한 프로파일입니다."
+
+#: setup.ulf#_UNKNOWN_LANG_.LngText.text
+msgid "Unknown Language: %d"
+msgstr "알 수 없는 언어: %d"
+
+#: setup.ulf#_LANGUAGE_ZH_TW_.LngText.text
+msgid "Chinese (traditional)"
+msgstr "중국어(번체)"
+
+#: setup.ulf#_LANGUAGE_CS_.LngText.text
+msgid "Czech"
+msgstr "체코어"
+
+#: setup.ulf#_LANGUAGE_DA_.LngText.text
+msgid "Danish"
+msgstr "덴마크어"
+
+#: setup.ulf#_LANGUAGE_DE_DE_.LngText.text
+msgid "German (Germany)"
+msgstr "독일어(독일)"
+
+#: setup.ulf#_LANGUAGE_EL_.LngText.text
+msgid "Greek"
+msgstr "그리스어"
+
+#: setup.ulf#_LANGUAGE_EN_US_.LngText.text
+msgid "English (USA)"
+msgstr "영어(미국)"
+
+#: setup.ulf#_LANGUAGE_ES_.LngText.text
+msgid "Spanish (Spain)"
+msgstr "스페인어(스페인)"
+
+#: setup.ulf#_LANGUAGE_FI_.LngText.text
+msgid "Finnish"
+msgstr "핀란드어"
+
+#: setup.ulf#_LANGUAGE_FR_FR_.LngText.text
+msgid "French (France)"
+msgstr "프랑스어(프랑스)"
+
+#: setup.ulf#_LANGUAGE_HE_.LngText.text
+msgid "Hebrew"
+msgstr "히브리어"
+
+#: setup.ulf#_LANGUAGE_HU_.LngText.text
+msgid "Hungarian"
+msgstr "헝가리어"
+
+#: setup.ulf#_LANGUAGE_IT_IT_.LngText.text
+msgid "Italian (Italy)"
+msgstr "이탈리아어(이탈리아)"
+
+#: setup.ulf#_LANGUAGE_JA_.LngText.text
+msgid "Japanese"
+msgstr "일본어"
+
+#: setup.ulf#_LANGUAGE_KO_.LngText.text
+msgid "Korean"
+msgstr "한국어"
+
+#: setup.ulf#_LANGUAGE_NL_NL_.LngText.text
+msgid "Dutch (Netherlands)"
+msgstr "네덜란드어(네덜란드)"
+
+#: setup.ulf#_LANGUAGE_NO_NO_.LngText.text
+msgid "Norwegian (Bokmål)"
+msgstr "노르웨이어(복말)"
+
+#: setup.ulf#_LANGUAGE_PL_.LngText.text
+msgid "Polish"
+msgstr "폴란드어"
+
+#: setup.ulf#_LANGUAGE_PT_BR_.LngText.text
+msgid "Portuguese (Brazil)"
+msgstr "포르투갈어(브라질)"
+
+#: setup.ulf#_LANGUAGE_RU_.LngText.text
+msgid "Russian"
+msgstr "러시아어"
+
+#: setup.ulf#_LANGUAGE_SK_.LngText.text
+msgid "Slovak"
+msgstr "슬로바키아어"
+
+#: setup.ulf#_LANGUAGE_SV_SE_.LngText.text
+msgid "Swedish (Sweden)"
+msgstr "스웨덴어(스웨덴)"
+
+#: setup.ulf#_LANGUAGE_TH_.LngText.text
+msgid "Thai"
+msgstr "태국어"
+
+#: setup.ulf#_LANGUAGE_TR_.LngText.text
+msgid "Turkish"
+msgstr "터키어"
+
+#: setup.ulf#_LANGUAGE_ET_.LngText.text
+msgid "Estonian"
+msgstr "에스토니아어"
+
+#: setup.ulf#_LANGUAGE_ZH_CN_.LngText.text
+msgid "Chinese (Simplified)"
+msgstr "중국어(간체)"
+
+#: setup.ulf#_LANGUAGE_PT_PT_.LngText.text
+msgid "Portuguese (Portugal)"
+msgstr "포르투갈어(포르투갈)"
+
+#~ msgid "Slovakian"
+#~ msgstr "슬로바키아어"
+
+#: rebasegui.ulf#_APP_TITLE_.LngText.text
+msgid "Installation Status"
+msgstr "설치 상태"
+
+#: rebasegui.ulf#_MSG_OPTIMIZED_FOR_CLIENT_.LngText.text
+msgid "Installation is optimized for clients."
+msgstr "클라이언트에 최적화된 설치입니다."
+
+#: rebasegui.ulf#_MSG_OPTIMIZED_FOR_SERVER_.LngText.text
+msgid "Installation is optimized for servers."
+msgstr "서버에 최적화된 설치입니다."
+
+#: rebasegui.ulf#_MSG_NO_INSTALLATION_FOUND_.LngText.text
+msgid "Cannot find Office installation."
+msgstr "설치된 Office 를 찾을 수 없습니다."

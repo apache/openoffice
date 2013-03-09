@@ -1,0 +1,385 @@
+
+#: certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.FT_HINT_SELECT.fixedtext.text
+msgid "Select the certificate you want to use for signing"
+msgstr "ನೀವು ಸಹಿ ಮಾಡಲು ಬಳಸುವ ಪ್ರಮಾಣಪತ್ರವನ್ನು ಆಯ್ಕೆ ಮಾಡಿ"
+
+#: certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.string.text
+msgctxt "certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.string.text"
+msgid "Issued to\tIssued by\tExpiration date"
+msgstr "ಒದಗಿಸಿದ್ದು\tಒದಗಿಸಿದವರು\tವಾಯಿದೆ ಪೂರ್ಣಗೊಳ್ಳುವ ದಿನಾಂಕ"
+
+#: certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.pushbutton.text
+msgctxt "certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.pushbutton.text"
+msgid "View Certificate..."
+msgstr "ಪ್ರಮಾಣಪತ್ರವನ್ನು ನೋಡು..."
+
+#: certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.modaldialog.text
+msgid "Select Certificate"
+msgstr "ಪ್ರಮಾಣಪತ್ರವನ್ನು ಆಯ್ಕೆ ಮಾಡು"
+
+#: certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_GENERAL.pageitem.text
+msgid "General"
+msgstr "ಸಾಮಾನ್ಯ"
+
+#: certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_DETAILS.pageitem.text
+msgid "Details"
+msgstr "ವಿವರಗಳು"
+
+#: certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_CERTPATH.pageitem.text
+msgid "Certification Path"
+msgstr "ಪ್ರಮಾಣಪತ್ರದ ಮಾರ್ಗ"
+
+#: certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.tabdialog.text
+msgid "View Certificate"
+msgstr "ಪ್ರಮಾಣಪತ್ರವನ್ನು ನೋಡು"
+
+#: certificateviewer.src#RID_XMLSECTP_GENERAL.FI_CERTINFO.fixedtext.text
+msgid " Certificate Information"
+msgstr " ಪ್ರಮಾಣಪತ್ರದ ಮಾಹಿತಿ"
+
+#: certificateviewer.src#RID_XMLSECTP_GENERAL.FI_HINTNOTTRUST.fixedtext.text
+msgid "This certificate is intended for the following purpose(s):"
+msgstr "ಈ ಪ್ರಮಾಣಪತ್ರವು ಈ ಕೆಳಗಿನ ಉದ್ದೇಶಕ್ಕಾಗಿ(ಗಳಿಗಾಗಿ) ನೀಡಲಾಗಿದೆ:"
+
+#: certificateviewer.src#RID_XMLSECTP_GENERAL.FI_ISSTOLABEL.fixedtext.text
+msgid "Issued to:"
+msgstr "ಒದಗಿಸಲಾಗಿದ್ದು:"
+
+#: certificateviewer.src#RID_XMLSECTP_GENERAL.FI_ISSBYLABEL.fixedtext.text
+msgid "Issued by:"
+msgstr "ಒದಗಿಸಿದವರು:"
+
+#: certificateviewer.src#RID_XMLSECTP_GENERAL.FI_VALIDDATE.fixedtext.text
+msgid "Valid from %SDATE% to %EDATE%"
+msgstr "%SDATE% ಯಿಂದ %EDATE% ವರೆಗೆ ಮಾನ್ಯವಾಗಿದೆ"
+
+#: certificateviewer.src#RID_XMLSECTP_GENERAL.FI_CORRPRIVKEY.fixedtext.text
+msgid "You have a private key that corresponds to this certificate."
+msgstr "ಈ ಪ್ರಮಾಣಪತ್ರಕ್ಕೆ ಅನುಗುಣವಾಗಿರುವ ಒಂದು ಖಾಸಗಿ ಕೀಲಿಯನ್ನು ನೀವು ಹೊಂದಿದ್ದೀರಿ."
+
+#: certificateviewer.src#RID_XMLSECTP_GENERAL.STR_CERTIFICATE_NOT_VALIDATED.string.text
+msgctxt "certificateviewer.src#RID_XMLSECTP_GENERAL.STR_CERTIFICATE_NOT_VALIDATED.string.text"
+msgid "The certificate could not be validated."
+msgstr "ಪ್ರಮಾಣಪತ್ರವನ್ನು ಪರಿಶೀಲಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ."
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_HEADERBAR.string.text
+msgid "Field\tValue"
+msgstr "ವರ್ಗ\tಮೌಲ್ಯ"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VERSION.string.text
+msgid "Version"
+msgstr "ಆವೃತ್ತಿ"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SERIALNUM.string.text
+msgid "Serial Number"
+msgstr "ಅನುಕ್ರಮಣ ಸಂಖ್ಯೆ"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGALGORITHM.string.text
+msgctxt "certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGALGORITHM.string.text"
+msgid "Signature Algorithm"
+msgstr "ಸಹಿ ಅಲ್ಗಾರಿತಮ್"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_ISSUER.string.text
+msgid "Issuer"
+msgstr "ಒದಗಿಸುವವರು"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_ISSUER_ID.string.text
+msgid "Issuer Unique ID"
+msgstr "ಒದಗಿಸುವವರ ವಿಶಿಷ್ಟ ID"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VALIDFROM.string.text
+msgid "Valid From"
+msgstr "ಇಲ್ಲಿಂದ ಮಾನ್ಯ"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VALIDTO.string.text
+msgid "Valid to"
+msgstr "ಇಲ್ಲಿಯವರೆಗೆ ಮಾನ್ಯ"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT.string.text
+msgid "Subject"
+msgstr "ವಿಷಯ"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_ID.string.text
+msgid "Subject Unique ID"
+msgstr "ವಿಶಿಷ್ಟ ವಿಶೇಷ ID"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_PUBKEY_ALGO.string.text
+msgid "Subject Algorithm"
+msgstr "ವಿಷಯ ಅಲ್ಗಾರಿತಮ್"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_PUBKEY_VAL.string.text
+msgid "Public Key"
+msgstr "ಸಾರ್ವಜನಿಕ ಕೀಲಿ"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGNATURE_ALGO.string.text
+msgctxt "certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGNATURE_ALGO.string.text"
+msgid "Signature Algorithm"
+msgstr "ಸಹಿ ಅಲ್ಗಾರಿತಮ್"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_THUMBPRINT_SHA1.string.text
+msgid "Thumbprint SHA1"
+msgstr "ತಂಬ್‌ಪ್ರಿಂಟ್‌ SHA1"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_THUMBPRINT_MD5.string.text
+msgid "Thumbprint MD5"
+msgstr "ತಂಬ್‌ಪ್ರಿಂಟ್‌ MD5"
+
+#: certificateviewer.src#RID_XMLSECTP_CERTPATH.FT_CERTPATH.fixedtext.text
+msgid "Certification path"
+msgstr "ಪ್ರಮಾಣಪತ್ರದ ಮಾರ್ಗ"
+
+#: certificateviewer.src#RID_XMLSECTP_CERTPATH.BTN_VIEWCERT.pushbutton.text
+msgctxt "certificateviewer.src#RID_XMLSECTP_CERTPATH.BTN_VIEWCERT.pushbutton.text"
+msgid "View Certificate..."
+msgstr "ಪ್ರಮಾಣಪತ್ರವನ್ನು ನೋಡು..."
+
+#: certificateviewer.src#RID_XMLSECTP_CERTPATH.FT_CERTSTATUS.fixedtext.text
+msgid "Certification status"
+msgstr "ಪ್ರಮಾಣಪತ್ರದ ಸ್ಥಿತಿ"
+
+#: certificateviewer.src#RID_XMLSECTP_CERTPATH.STR_PATH_CERT_OK.string.text
+msgid "The certificate is OK."
+msgstr "ಪ್ರಮಾಣಪತ್ರವು ಸರಿಯಾಗಿದೆ."
+
+#: certificateviewer.src#RID_XMLSECTP_CERTPATH.STR_PATH_CERT_NOT_VALIDATED.string.text
+msgctxt "certificateviewer.src#RID_XMLSECTP_CERTPATH.STR_PATH_CERT_NOT_VALIDATED.string.text"
+msgid "The certificate could not be validated."
+msgstr "ಪ್ರಮಾಣಪತ್ರವನ್ನು ಪರಿಶೀಲಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ."
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_DOC.fixedtext.text
+msgid "The following have signed the document content:"
+msgstr "ಈ ದಸ್ತಾವೇಜಿನ ವಿಷಯವನ್ನು ಇವರು ಸಹಿ ಮಾಡಿದ್ದಾರೆ:"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_BASIC.fixedtext.text
+msgid "The following have signed the document macro:"
+msgstr "ಈ ದಸ್ತಾವೇಜು ಮ್ಯಾಕ್ರೋವನ್ನು ಇವರು ಸಹಿ ಮಾಡಿದ್ದಾರೆ:"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_PACK.fixedtext.text
+msgid "The following have signed this package:"
+msgstr "ಈ ಪ್ಯಾಕೇಜನ್ನು ಇವರು ಸಹಿ ಮಾಡಿದ್ದಾರೆ:"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_HEADERBAR.string.text
+msgid "\tSigned by\tDigital ID issued by\tDate"
+msgstr "\tಸಹಿ ಮಾಡಿದವರು\tಡಿಜಿಟಲ್ ID ಯನ್ನು ಒದಗಿಸಿದವರು\tದಿನಾಂಕ"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_VALID_SIGNATURE.string.text
+msgid "Valid signature"
+msgstr "ಮಾನ್ಯವಾದ ಸಹಿ"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_NO_INFO_TO_VERIFY.string.text
+msgid "Certificate could not be validated"
+msgstr "ಪ್ರಮಾಣಪತ್ರವನ್ನು ಪರಿಶೀಲಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_INVALID_SIGNATURE.string.text
+msgctxt "digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_INVALID_SIGNATURE.string.text"
+msgid "The signatures in this document are invalid"
+msgstr "ಈ ದಸ್ತಾವೇಜಿನಲ್ಲಿರುವ ಸಹಿಗಳು ಅಮಾನ್ಯವಾಗಿವೆ"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_VALID.fixedtext.text
+msgid "The signatures in this document are valid"
+msgstr "ಈ ದಸ್ತಾವೇಜಿನಲ್ಲಿರುವ ಸಹಿಗಳು ಮಾನ್ಯವಾಗಿವೆ"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_OLDSIGNATURE.fixedtext.text
+msgid "Not all parts of the document are signed"
+msgstr "ದಸ್ತಾವೇಜಿನ ಎಲ್ಲಾ ಭಾಗಗಳಿಗೂ ಸಹಿ ಮಾಡಲಾಗಿಲ್ಲ"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_BROKEN.fixedtext.text
+msgctxt "digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_BROKEN.fixedtext.text"
+msgid "The signatures in this document are invalid"
+msgstr "ಈ ದಸ್ತಾವೇಜಿನಲ್ಲಿರುವ ಸಹಿಗಳು ಅಮಾನ್ಯವಾಗಿವೆ"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_VIEWCERT.pushbutton.text
+msgctxt "digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_VIEWCERT.pushbutton.text"
+msgid "View Certificate..."
+msgstr "ಪ್ರಮಾಣಪತ್ರವನ್ನು ನೋಡು..."
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_ADDCERT.pushbutton.text
+msgid "Sign Document..."
+msgstr "ದಸ್ತಾವೇಜನ್ನು ಸಹಿ ಮಾಡು..."
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_REMOVECERT.pushbutton.text
+msgctxt "digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_REMOVECERT.pushbutton.text"
+msgid "Remove"
+msgstr "ತೆಗೆದುಹಾಕು"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_OK.okbutton.text
+msgid "Close"
+msgstr "ಮುಚ್ಚು"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.modaldialog.text
+msgid "Digital Signatures"
+msgstr "ಡಿಜಿಟಲ್ ಸಹಿಗಳು"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_OLD_ODF_FORMAT.errorbox.text
+msgid ""
+"This document contains signatures in ODF 1.1 (OpenOffice.org 2.x) format. "
+"Signing documents in %PRODUCTNAME %PRODUCTVERSION requires ODF 1.2 format "
+"version. Thus no signatures can be added or removed to this document.\n"
+"\n"
+"Save document in ODF 1.2 format and add all desired signatures again."
+msgstr ""
+"ಈ ದಸ್ತಾವೇಜಿನಲ್ಲಿ ODF 1.1 (OpenOffice.org 2.x) ವಿನ್ಯಾಸದ ಸಹಿಗಳನ್ನು ಇವೆ. %"
+"PRODUCTNAME %PRODUCTVERSION ನಲ್ಲಿ ಸಹಿ ಮಾಡಲಾಗುವ ದಸ್ತಾವೇಜುಗಳಿಗಾಗಿ ODF 1.2 "
+"ವಿನ್ಯಾಸದ ಆವೃತ್ತಿಯ ಅಗತ್ಯವಿರುತ್ತದೆ. ಆದ್ದರಿಂದ ಯಾವುದೆ ಈ ದಸ್ತಾವೇಜಿಗೆ ಯಾವುದೆ "
+"ಸಹಿಗಳನ್ನು ಸೇರಿಸಲಾಗಲಿ ಅಥವ ತೆಗೆದು ಹಾಕಲಾಗಲಿ ಸಾಧ್ಯವಿಲ್ಲ.\n"
+"\n"
+"ದಸ್ತಾವೇಜನ್ನು ODF 1.2 ವಿನ್ಯಾಸದಲ್ಲಿ ಉಳಿಸಿ ಹಾಗು ನಂತರ ನೀವು ಬಯಸುವ ಎಲ್ಲಾ ಸಹಿಗಳನ್ನು "
+"ಸೇರಿಸಿ."
+
+#: digitalsignaturesdialog.src#MSG_XMLSECDLG_QUERY_REMOVEDOCSIGNBEFORESIGN.querybox.text
+msgid ""
+"Adding or removing a macro signature will remove all document signatures.\n"
+"Do you really want to continue?"
+msgstr ""
+"ಒಂದು ಮ್ಯಾಕ್ರೊ ಸಹಿಯನ್ನು ಸೇರಿಸುವುದರಿಂದ ಅಥವ ತೆಗೆದು ಹಾಕುವುದರಿಂದ ಅದು ಎಲ್ಲಾ "
+"ದಸ್ತಾವೇಜುಗಳ ಸಹಿಗಳನ್ನು ತೆಗೆದು ಹಾಕುತ್ತದೆ.\n"
+"ನೀವು ನಿಜವಾಗಲೂ ಮುಂದುವರೆಯಲು ಬಯಸುತ್ತೀರೆ?"
+
+#: macrosecurity.src#RID_XMLSECTP_MACROSEC.1.RID_XMLSECTP_SECLEVEL.pageitem.text
+msgid "Security Level"
+msgstr "ಸುರಕ್ಷತಾ ಮಟ್ಟ"
+
+#: macrosecurity.src#RID_XMLSECTP_MACROSEC.1.RID_XMLSECTP_TRUSTSOURCES.pageitem.text
+msgid "Trusted Sources"
+msgstr "ನಂಬಿಕಾರ್ಹ ಮೂಲಗಳು"
+
+#: macrosecurity.src#RID_XMLSECTP_MACROSEC.BTN_RESET.pushbutton.text
+msgid "Reset"
+msgstr "ಮರು ಸಿದ್ಧಗೊಳಿಸು"
+
+#: macrosecurity.src#RID_XMLSECTP_MACROSEC.tabdialog.text
+msgid "Macro Security"
+msgstr "ಮ್ಯಾಕ್ರೋ ಸುರಕ್ಷತೆ"
+
+#: macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.radiobutton.text
+msgid ""
+"~Very high.\n"
+"Only macros from trusted file locations are allowed to run. All other "
+"macros, regardless whether signed or not, are disabled."
+msgstr ""
+"ಅತಿ ಹೆಚ್ಚಿನ(~V).\n"
+"Only macros from trusted file locations are allowed to run. All other "
+"macros, regardless whether signed or not, are disabled."
+
+#: macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.radiobutton.text
+msgid ""
+"H~igh.\n"
+"Only signed macros from trusted sources are allowed to run. Unsigned macros "
+"are disabled."
+msgstr ""
+"ಹೆಚ್ಚಿನ(~i).\n"
+"Only signed macros from trusted sources are allowed to run. Unsigned macros "
+"are disabled."
+
+#: macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.radiobutton.text
+msgid ""
+"~Medium.\n"
+"Confirmation required before executing macros from untrusted sources."
+msgstr ""
+"ಮಧ್ಯಮ(~M).\n"
+"Confirmation required before executing macros from untrusted sources."
+
+#: macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.radiobutton.text
+msgid ""
+"~Low (not recommended).\n"
+"All macros will be executed without confirmation. Use this setting only if "
+"you are certain that all documents that will be opened are safe."
+msgstr ""
+"ಕೆಳಮಟ್ಟದ (ಸಲಹೆ ಮಾಡಲಾಗುವುದಿಲ್ಲ)(~L).\n"
+"All macros will be executed without confirmation. Use this setting only if "
+"you are certain that all documents that will be opened are safe."
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.fixedline.text
+msgid "Trusted certificates"
+msgstr "ನಂಬಿಕಾರ್ಹ ಪ್ರಮಾಣಪತ್ರಗಳು"
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.STR_HEADERBAR.string.text
+msgctxt "macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.STR_HEADERBAR.string.text"
+msgid "Issued to\tIssued by\tExpiration date"
+msgstr "ಒದಗಿಸಿದ್ದು\tಒದಗಿಸಿದವರು\tವಾಯಿದೆ ಪೂರ್ಣಗೊಳ್ಳುವ ದಿನಾಂಕ"
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_ADD_TRUSTCERT.pushbutton.text
+msgctxt "macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_ADD_TRUSTCERT.pushbutton.text"
+msgid "Add..."
+msgstr "ಸೇರಿಸು..."
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_VIEW_TRUSTCERT.pushbutton.text
+msgid "View..."
+msgstr "ನೋಡು..."
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_REMOVE_TRUSTCERT.pushbutton.text
+msgctxt "macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_REMOVE_TRUSTCERT.pushbutton.text"
+msgid "Remove"
+msgstr "ತೆಗೆದುಹಾಕು"
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTFILELOC.fixedline.text
+msgid "Trusted file locations"
+msgstr "ನಂಬಿಕಾರ್ಹ ಕಡತ ಸ್ಥಳಗಳು"
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FI_TRUSTFILELOC.fixedtext.text
+msgid ""
+"Document macros are always executed if they have been opened from one of the "
+"following locations."
+msgstr ""
+"ದಸ್ತಾವೇಜನ್ನು ಈ ಕೆಳಗಿನ ಯಾವುದಾದರೂ ಒಂದು ಸ್ಥಳದಿಂದ ತೆರೆದರೆ ಅದರಲ್ಲಿನ ಮ್ಯಾಕ್ರೋಗಳು "
+"ಯಾವಾಗಲೂ ಕಾರ್ಯಗತಗೊಳಿಸಲ್ಪಡುತ್ತವೆ."
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_ADD_TRUSTFILELOC.pushbutton.text
+msgctxt "macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_ADD_TRUSTFILELOC.pushbutton.text"
+msgid "Add..."
+msgstr "ಸೇರಿಸು..."
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_REMOVE_TRUSTFILELOC.pushbutton.text
+msgctxt "macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_REMOVE_TRUSTFILELOC.pushbutton.text"
+msgid "Remove"
+msgstr "ತೆಗೆದುಹಾಕು"
+
+#: macrosecurity.src#RID_XMLSECTP_READONLY_CONFIG_TIP.string.text
+msgid "This setting is protected by the Administrator"
+msgstr "ಈ ಸಿದ್ಧತೆಯು ವ್ಯವಸ್ಥಾಪಕರಿಂದ ಸಂರಕ್ಷಿತಗೊಂಡಿದೆ"
+
+#: warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR1A.fixedtext.text
+msgid "The document contains document macros signed by:"
+msgstr "ದಸ್ತಾವೇಜಿನಲ್ಲಿ ಇವರಿಂದ ಸಹಿ ಮಾಡಲಾದ ದಸ್ತಾವೇಜು ಮ್ಯಾಕ್ರೋಗಳು ಇವೆ:"
+
+#: warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR1B.fixedtext.text
+msgid "The document contains document macros."
+msgstr "ದಸ್ತಾವೇಜಿನಲ್ಲಿ ದಸ್ತಾವೇಜು ಮ್ಯಾಕ್ರೋಗಳು ಇವೆ."
+
+#: warnings.src#RID_XMLSECTP_MACROWARN.PB_VIEWSIGNS.pushbutton.text
+msgid "View Signatures..."
+msgstr "ಸಹಿಗಳನ್ನು ನೋಡು..."
+
+#: warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR2.fixedtext.text
+msgid ""
+"Macros may contain viruses. Disabling macros for a document is always save. "
+"If you disable macros you may lose functionality provided by the document "
+"macros."
+msgstr ""
+"ಮ್ಯಾಕ್ರೊಗಳು ವೈರಸ್ಸುಗಳನ್ನು ಹೊಂದಿರಬಹುದು. ಒಂದು ದಸ್ತಾವೇಜಿಗೆ ಮ್ಯಾಕ್ರೋಗಳನ್ನು "
+"ಅಶಕ್ತಗೊಳಿಸುವುದು ಯಾವಾಗಲೂ ಸುರಕ್ಷಿತ. ನೀವು ಮ್ಯಾಕ್ರೋಗಳನ್ನು ಅಶಕ್ತಗೊಳಿಸಿದಲ್ಲಿ, "
+"ದಸ್ತಾವೇಜಿನ ಮಾಕ್ರೋಗಳಿಂದ ಒದಗಿಸಲಾಗುವ ಕ್ರಿಯಾತ್ಮಕತೆ ನಿಮಗೆ ಲಭ್ಯವಾಗದೆ ಇರಬಹುದು."
+
+#: warnings.src#RID_XMLSECTP_MACROWARN.CB_ALWAYSTRUST.checkbox.text
+msgid "Always trust macros from this source"
+msgstr "ಯಾವಗಲೂ ಈ ಮೂಲದ ಮ್ಯಾಕ್ರೋಗಳನ್ನು ನಂಬು"
+
+#: warnings.src#RID_XMLSECTP_MACROWARN.PB_ENABLE.pushbutton.text
+msgid "Enable Macros"
+msgstr "ಮ್ಯಾಕ್ರೋಗಳನ್ನು ಶಕ್ತಗೊಳಿಸು"
+
+#: warnings.src#RID_XMLSECTP_MACROWARN.PB_DISABLE.cancelbutton.text
+msgid "Disable Macros"
+msgstr "ಮ್ಯಾಕ್ರೋಗಳನ್ನು ಅಶಕ್ತಗೊಳಿಸು"
+
+#: warnings.src#RID_XMLSECTP_MACROWARN.modaldialog.text
+msgid "Security Warning"
+msgstr "ಸುರಕ್ಷತಾ ಮುನ್ನೆಚ್ಚರಿಕೆ"
+
+#: warnbox.src#RID_XMLSECWB_NO_MOZILLA_PROFILE.warningbox.text
+msgid ""
+"Digital signatures functionality could not be used, because no Mozilla user "
+"profile was found. Please check the Mozilla installation."
+msgstr ""
+"ಡಿಜಿಟಲ್ ಸಹಿಯ ಕ್ರಿಯೆಯನ್ನು ಬಳಸಲು ಸಾಧ್ಯವಾಗುವುದಿಲ್ಲ, ಏಕೆಂದರೆ ಯಾವುದೆ ಮೋಝಿಲ್ಲಾ "
+"ಬಳಕೆದಾರರ ಪ್ರೊಫೈಲ್‌ ಕಂಡುಬಂದಿಲ್ಲ. ದಯವಿಟ್ಟು ಮೋಝಿಲ್ಲಾ ಅನುಸ್ಥಾಪನೆಯನ್ನು ನೋಡಿ."

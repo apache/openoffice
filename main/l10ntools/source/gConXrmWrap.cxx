@@ -110,7 +110,7 @@ void convert_xrm::setLang(char *yytext)
     if (sLang == "en-US")
       mbIsLang = true;
     else
-      showError((char *)(sLang + " is no en-US language").c_str());
+      mcMemory.showError(sLang + " is no en-US language");
   }
 }
 
@@ -147,7 +147,7 @@ void convert_xrm::stopCollectData(char *yytext)
   if (!mbNoCollectingData)
   {
     msKey = msKey + "." + msKey;
-    mcMemory.setEnUsKey(miLineNo, msKey, std::string("text"), msCollector);
+//JIX    mcMemory.setEnUsKey(miLineNo, msKey, std::string("text"), msCollector);
     mbNoCollectingData = true;
     msKey.clear();
   }

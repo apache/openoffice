@@ -29,14 +29,16 @@
 /*****************************************************************************
  ************************   G L 1 0 N M E M . C X X   ************************
  *****************************************************************************
- * This is the translation memory that links between the converts (from source
- * files) and to the language files. The memory contains the actual text info
+ * This is the interface to translation memory that links between the converts
+ * and to the language files. The memory contains the actual text info
  ***********************d******************************************************/
 
 
 
 /*******************   G L O B A L   D E F I N I T I O N   *******************/
-l10nMem_impl * l10nMem_impl::mcImpl = NULL;
+l10nMem_impl * l10nMem_impl::mcImpl    = NULL;
+bool           l10nMem_impl::mbVerbose = false;
+bool           l10nMem_impl::mbDebug   = false;
 
 
 
@@ -57,102 +59,71 @@ l10nMem::~l10nMem()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-std::string l10nMem::showError(int iLineNo, char *sText, bool bWarning)
+void l10nMem::setShowVerbose()
 {
-  return l10nMem_impl::mcImpl->showError(iLineNo, sText, bWarning);
+  l10nMem_impl::mbVerbose = true;
 }
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void l10nMem::setShowDebug()
+{
+  l10nMem_impl::mbDebug = true;
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+int l10nMem::showError(const std::string& sText, int iLineNo)
+     { return l10nMem_impl::mcImpl->showError(sText, iLineNo); }
+int  l10nMem::showWarning(const std::string& sText, int iLineNo)
+     { return l10nMem_impl::mcImpl->showWarning(sText, iLineNo); }
+void l10nMem::showDebug(const std::string& sText, int iLineNo)
+     { l10nMem_impl::mcImpl->showDebug(sText, iLineNo); }
+void l10nMem::showVerbose(const std::string& sText, int iLineNo)
+     { l10nMem_impl::mcImpl->showWarning(sText, iLineNo); }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
 bool l10nMem::isError()
 {
-  return l10nMem_impl::mcImpl->isError();
+  return l10nMem_impl::mcImpl->mbInError;
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-bool l10nMem::checkKey(const std::string& sKey, const std::string& sObjectType)
-{
-  return l10nMem_impl::mcImpl->checkKey(sKey, sObjectType);
-}
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-void l10nMem::setFileName(const std::string& srSourceFile)
-{
-  return l10nMem_impl::mcImpl->setFileName(srSourceFile);
-}
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-void l10nMem::setModuleName(const std::string& srModuleName)
-{
-  return l10nMem_impl::mcImpl->setModuleName(srModuleName);
-}
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-void l10nMem::setEnUsKey(int iLineNo, const std::string& srKey, const std::string& srObjectType,
-                         const std::string& srText, int iIndex)
-{
-  return l10nMem_impl::mcImpl->setEnUsKey(iLineNo, srKey, srObjectType, srText, iIndex);
-}
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-void l10nMem::loadEnUsKey(const std::string& srKey, const std::string& srObjectType,
-                          const std::string& srText, const std::string& oldKey)
-{
-  l10nMem_impl::mcImpl->loadEnUsKey(srKey, srObjectType, srText, oldKey);
-}
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-void l10nMem::loadLangKey(const std::string& srLang, const std::string& srKey, const std::string& srObjectType,
-                          const std::string& srText)
-{
-  l10nMem_impl::mcImpl->loadLangKey(srLang, srKey, srObjectType, srText);
-}
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-l10nMem_entry::l10nMem_entry(const std::string& srSourceFile, const std::string& srModuleName,
-                             const std::string& srKey,        const std::string& srObjectType, 
-                             const std::string& srLanguage,   const std::string& srText,
-                             const int iIndex,
-                             const std::string srOldKey)
-                            : msSourceFile(srSourceFile),
-                              msModuleName(srModuleName),
-                              msKey(srKey),
-                              msObjectType(srObjectType),
-                              msLanguage(srLanguage),
-                              msText(srText),
-                              miIndex(iIndex),
-                              msOLDKEY(srOldKey),
-                              mbDeleted(true)
-{
-}
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-l10nMem_entry::~l10nMem_entry()
-{}
+void l10nMem::setModuleName(const std::string& setModuleName)
+     { l10nMem_impl::mcImpl->setModuleName(setModuleName); }
+void l10nMem::loadENUSkey(int iL, const std::string& sS, const std::string& sK, const std::string& sT)
+     { l10nMem_impl::mcImpl->mcDb.loadENUSkey(iL, sS, sK, sT); }
+void l10nMem::setLanguage(const std::string& sL, bool bC)
+     { l10nMem_impl::mcImpl->mcDb.setLanguage(sL, bC); }
+void l10nMem::loadLangKey(int iL, const std::string& sS, const std::string& sK, const std::string& sO, const std::string& sT, bool               bI)
+     { l10nMem_impl::mcImpl->mcDb.loadLangKey(iL, sS, sK, sO, sT, bI); }
+void l10nMem::convLangKey(int iL, const std::string& sS, const std::string& sK, const std::string& sO, const std::string& sT, bool               bI)
+     { l10nMem_impl::mcImpl->convLangKey(iL, sS, sK, sO, sT, bI); }
+void l10nMem::setFileName(int iL, const std::string& sS, bool bC)
+     { l10nMem_impl::mcImpl->mcDb.setFileName(iL, sS, bC); }
+bool l10nMem::checkKey(const std::string& sKey, const std::string& sText)
+     { return l10nMem_impl::mcImpl->mcDb.locateKey(0, sKey, sText, false); }
+void l10nMem::setSourceKey(int iL, const std::string& sK, const std::string& sT)
+     { l10nMem_impl::mcImpl->setSourceKey(iL, sK, sT); }
+void l10nMem::reorganize()
+     { l10nMem_impl::mcImpl->mcDb.reorganize(); }
+void l10nMem::save(const std::string& sTargetDir)
+     { l10nMem_impl::mcImpl->save(sTargetDir); }
+void l10nMem::dumpMem(const std::string& sTargetDir)
+     { l10nMem_impl::mcImpl->dumpMem(sTargetDir); }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
 l10nMem_impl::l10nMem_impl()
-                : mbInError(false),
-                  miLastUniqResort(0)
+                          : 
+                            mbInError(false)
 {
 }
 
@@ -166,38 +137,91 @@ l10nMem_impl::~l10nMem_impl()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-std::string l10nMem_impl::showError(int iLineNo, char *sText, bool bWarning)
+int l10nMem_impl::showError(const std::string& sText, int iLineNo)
 {
-  if (!bWarning)
-    mbInError = true;
+  mbInError = true;
+  formatAndShowText("ERROR", iLineNo, sText);
+  return 1;
+}
 
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+int l10nMem_impl::showWarning(const std::string& sText, int iLineNo)
+{
+  formatAndShowText("WARNING", iLineNo, sText);
+  return 2;
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void l10nMem_impl::showDebug(const std::string& sText, int iLineNo)
+{
+  if (mbDebug)
+    formatAndShowText("DEBUG", iLineNo, sText);
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void l10nMem_impl::showVerbose(const std::string& sText, int iLineNo)
+{
+  if (mbVerbose)
+    formatAndShowText("INFO", iLineNo, sText);
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void l10nMem_impl::setModuleName(const std::string& sModuleName)
+{
+  msModuleName = sModuleName;
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void l10nMem_impl::setSourceKey(int                iLineNo,
+                                const std::string& sKey,
+                                const std::string& sText)
+{
+  // if key exist update state
+  if (mcDb.locateKey(iLineNo, sKey, sText, false))
+  {
+    mcDb.mcENUSlist[mcDb.miCurENUSinx].meState = ENTRY_NORMAL;
+  }
+  else
+  {
+    // add key, if changed text this is wrong but handled in loadCleanup
+    mcDb.addKey(iLineNo, sKey, sText, ENTRY_ADDED);
+  }
+}
+
+
+
+
+
+
+
+
+
+#if 0
+    void convLangKey   (const std::string& sSourceFile,
+                        const std::string& sKey,
+                        const std::string& sOrgText,
+                        const std::string& sText,
+                        bool               bIsFuzzy);
+
+    void extractedKey (int                iLineNo,
+                       const std::string& sKey,
+                       const std::string& sText);
+
+    void save         (const std::string& sTargetDir);
+    void dumpMem      (const std::string& sTargetDir);
+
+    void formatAndShowText(std::string& sType, int iLineNo, std::string& sText);
   std::cerr << "ERROR in " << msCurrentSourceFileName << ":" << iLineNo << ":  " << sText << std::endl;
-  return "ERROR";
-}
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-bool l10nMem_impl::isError()
-{
-  return mbInError; 
-}
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-bool l10nMem_impl::checkKey(const std::string& sKey, const std::string& sObjectType)
-{
-  int i;
-
-  for (i = 0; i < (int)mcMemory.size(); ++i)
-    if (mcMemory[i].msModuleName == msCurrentModuleName     &&
-        mcMemory[i].msSourceFile == msCurrentSourceFileName &&
-        mcMemory[i].msObjectType == sObjectType             &&
-        mcMemory[i].msKey        == sKey                    )
-      return false;
-  return true;
-}
 
 
 
@@ -216,7 +240,7 @@ void l10nMem_impl::save(const std::string& srTargetFile)
   std::ofstream outputFile(sFile.c_str(), std::ios::binary);
 
   if (!outputFile.is_open())
-    throw std::string("Could not open ")+srTargetFile;
+    throw showError(std::string("Could not open ")+srTargetFile);
 
 
   for (i = 0; i < (int)mcMemory.size(); ++i)
@@ -233,97 +257,9 @@ void l10nMem_impl::save(const std::string& srTargetFile)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void l10nMem_impl::clear()
-{
-  mcMemory.clear();
-  // JIX
-}
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-void l10nMem_impl::setFileName(const std::string& srSourceFile)
-{
-  msCurrentSourceFileName = srSourceFile;
-
-  // modify to please current sdf format
-  std::replace(msCurrentSourceFileName.begin(), msCurrentSourceFileName.end(), '/', '\\' );
-}
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-void l10nMem_impl::setModuleName(const std::string& srModuleName)
-{
-  msCurrentModuleName = srModuleName;
-}
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-void l10nMem_impl::setEnUsKey(int iLineNo, const std::string& srKey, const std::string& srObjectType, const std::string& srText, int iIndex)
-{
-  std::string baseLanguage = "en-US";
-  std::string myKey = srKey;
-
-  iLineNo;
-
-  if (!checkKey(srKey, srObjectType))
-  {
-    std::stringstream ssBuf;
-
-    ++miLastUniqResort;
-    ssBuf  << miLastUniqResort;
-    myKey +=  ".globUniq" + ssBuf.str();
-  }
-  mcMemory.push_back(l10nMem_entry(msCurrentSourceFileName, msCurrentModuleName,
-                                   myKey, srObjectType, baseLanguage, srText, iIndex));
-}
-
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-void l10nMem_impl::loadEnUsKey(const std::string& srKey, const std::string& srObjectType,
-                          const std::string& srText, const std::string& oldKey)
-{
-  std::string baseLanguage = "en-US";
-
-
-  if (!checkKey(srKey, srObjectType))
-  {
-    showError(0, "en-US key is not uniq");
-  }
-  mcMemory.push_back(l10nMem_entry(msCurrentSourceFileName, msCurrentModuleName,
-                                   srKey, srObjectType, baseLanguage, srText, 0, oldKey));
-}
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
 void l10nMem_impl::loadLangKey(const std::string& srLang, const std::string& srKey, const std::string& srObjectType,
                                const std::string& srText)
 {
-  int i;
-
-
-  for (i = 0; i < (int)mcMemory.size(); ++i)
-  {
-    if (mcMemory[i].msSourceFile != msCurrentSourceFileName)
-      continue;      
-    if (mcMemory[i].msObjectType != "text" && mcMemory[i].msObjectType != srObjectType)
-      continue;
-    if (mcMemory[i].msKey == srKey  || mcMemory[i].msOLDKEY == srKey)
-      break;
-  }
-  if (i < (int)mcMemory.size())
-  {
-    mcMemory[i].mcLang.push_back(l10nMem_entry(msCurrentSourceFileName, msCurrentModuleName,
-                                               srKey, srObjectType, srLang, srText, 0, std::string("")));
-    return;
-  }
-    
-//  showError(0, (char *)(("cannot find key: " + srKey + " for lang " + srLang).c_str()));
 }
 
 
@@ -341,3 +277,4 @@ std::vector<l10nMem_entry *>&  l10nMem_impl::getLanguagesForKey(const std::strin
 
   return mcCurrentSelection;
 }
+#endif

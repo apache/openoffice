@@ -1,0 +1,280 @@
+
+#: crashrep.ulf#_ALLOW_CONTACT_.LngText.text
+msgid "~I allow Oracle to contact me regarding this report."
+msgstr ""
+"~Oracle-ri txosten honi dagokionez nirekin harremanetan jartzeko baimena "
+"ematen diot."
+
+#: crashrep.ulf#_BACK_BUTTON_.LngText.text
+msgid " << ~Back"
+msgstr " << At~zera"
+
+#: crashrep.ulf#_CANCEL_BUTTON_.LngText.text
+msgid "Cancel"
+msgstr "Utzi"
+
+#: crashrep.ulf#_DONOT_SEND_BUTTON_.LngText.text
+msgid "Do ~Not Send"
+msgstr "Ez ~bidali"
+
+#: crashrep.ulf#_ENTER_DESCRIPTION_.LngText.text
+msgid "~How were you using %PRODUCTNAME% when the error occurred ?"
+msgstr "~Nola ari zinen erabiltzen %PRODUCTNAME% errorea gertatu denean?"
+
+#: crashrep.ulf#_ENTER_EMAIL_.LngText.text
+msgid "Please enter your e-mail address."
+msgstr "Idatzi posta elektronikoko helbidea."
+
+#: crashrep.ulf#_ENTER_TITLE_.LngText.text
+msgid ""
+"Which type of document (e.g. presentation) were you using when the error "
+"occurred?"
+msgstr ""
+"Zer dokumentu mota (adibidez, aurkezpena) ari zinen erabiltzen errorea "
+"gertatu denean?"
+
+#: crashrep.ulf#_ERROR_MSG_DISK_FULL_.LngText.text
+msgid ""
+"The error report could not be temporarily saved and could therefore not be "
+"sent."
+msgstr ""
+"Errore-txostena ezin izan da aldi baterako gorde, eta horregatik, ezin izan "
+"da bidali."
+
+#: crashrep.ulf#_ERROR_MSG_NOCONNECT_.LngText.text
+msgid ""
+"The error report could not be sent because there is no Internet connection. "
+"Please check your Internet settings."
+msgstr ""
+"Errore-txostena ezin izan da bidali, ez baitago Internet konexiorik. "
+"Egiaztatu Interneteko ezarpenak."
+
+#: crashrep.ulf#_ERROR_MSG_NOEMAILADDRESS_.LngText.text
+msgid ""
+"You have marked the option 'I allow Oracle to contact me regarding this "
+"report.'\n"
+"Please enter your e-mail address."
+msgstr ""
+"Oracle-ri txosten honi dagokionez nirekin harremanetan jartzeko baimena "
+"ematen diot' aukera hautatu duzu.\n"
+"Idatzi posta elektronikoko helbidea."
+
+#: crashrep.ulf#_ERROR_MSG_PROXY_.LngText.text
+msgid ""
+"The error report could not be sent. Please check the proxy settings under "
+"'Options' in the Error Report Tool."
+msgstr ""
+"Errore-txostena ezin izan da bidali. Egiaztatu proxy ezarpenak erroreen "
+"berri emateko tresnaren 'Aukerak' atalean."
+
+#: crashrep.ulf#_ERROR_MSG_SENDMAIL_.LngText.text
+msgid ""
+"The error report could not be sent because 'sendmail' could not be started.\n"
+"Please check the 'sendmail' settings."
+msgstr ""
+"Errore-txostena ezin izan da bidali, 'sendmail' ezin izan baita abiarazi.\n"
+"Egiaztatu 'sendmail' ezarpenak."
+
+#: crashrep.ulf#_ERROR_MSG_SIMPLE_MAPI_.LngText.text
+msgid ""
+"The error report could not be sent because the default e-mail program does "
+"not support MAPI.\n"
+" Please use a MAPI-compatible e-mail program."
+msgstr ""
+"Errore-txostena ezin izan da bidali, posta elektronikoko programa "
+"lehenetsiak ez baitu MAPI onartzen.\n"
+"Erabili MAPIrekin bateragarria den posta elektronikoko programa."
+
+#: crashrep.ulf#_MSG_CMDLINE_USAGE_.LngText.text
+msgid "Usage:"
+msgstr "Erabilera:"
+
+#: crashrep.ulf#_MSG_PARAM_HELP_DESCRIPTION_.LngText.text
+msgid ""
+"Shows this help text.\n"
+"Detailed information can be found in the Setup Guide."
+msgstr ""
+"Laguntza-testu hau erakusten du.\n"
+"Informazio xehea Instalazio Gidan aurkitu dezakezu."
+
+#: crashrep.ulf#_MSG_PARAM_PROCESSID_.LngText.text
+msgid "-p <process ID>"
+msgstr "-p <prozesu IDa>"
+
+#: crashrep.ulf#_MSG_PARAM_PROCESSID_DESCRIPTION_.LngText.text
+msgid "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
+msgstr ""
+"Erroreen berri emateko tresnari %PRODUCTNAME% aplikazioaren prozesu IDa "
+"(PID) esleitzen dio"
+
+#: crashrep.ulf#_NEXT_BUTTON_.LngText.text
+msgid "~Next >>"
+msgstr "~Hurrengoa >>"
+
+#: crashrep.ulf#_OK_BUTTON_.LngText.text
+msgid "OK"
+msgstr "Ados"
+
+#: crashrep.ulf#_OPTIONS_BUTTON_.LngText.text
+msgid "~Options..."
+msgstr "~Aukerak..."
+
+#: crashrep.ulf#_OPTIONS_TITLE_.LngText.text
+msgid "Options"
+msgstr "Aukerak"
+
+#: crashrep.ulf#_PRIVACY_URL_.LngText.text
+msgid "http://www.oracle.com/html/services-privacy-policy.html"
+msgstr "http://www.oracle.com/html/services-privacy-policy.html"
+
+#: crashrep.ulf#_PROXY_SETTINGS_ADDRESS_.LngText.text
+msgid "HT~TP Proxy"
+msgstr "HT~TP proxy-a"
+
+#: crashrep.ulf#_PROXY_SETTINGS_DESCRIPTION_.LngText.text
+msgid ""
+"The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to "
+"be able to send error reports.\n"
+"\n"
+"Companies often use proxy servers in conjunction with a firewall to protect "
+"the network.\n"
+"\n"
+"If this applies to your situation, you have to specify the address and port "
+"for the server."
+msgstr ""
+"%PRODUCTNAME% aplikazioaren erroreen berri emateko tresnak Internet konexioa "
+"behar du errore-txostenak bidaltzeko.\n"
+"\n"
+"Enpresek sarritan proxy zerbitzariak suebakiekin batera erabiltzen dituzte "
+"sarea babesteko.\n"
+"\n"
+"Zure kasuan ere hala bada, zerbitzariaren helbidea eta ataka zehaztu behar "
+"dituzu."
+
+#: crashrep.ulf#_PROXY_SETTINGS_DIRECT_.LngText.text
+msgid "Use ~direct connection to the Internet"
+msgstr "Erabili Interneterako ~konexio zuzena."
+
+#: crashrep.ulf#_PROXY_SETTINGS_HEADER_.LngText.text
+msgid "Proxy settings"
+msgstr "Proxy ezarpenak"
+
+#: crashrep.ulf#_PROXY_SETTINGS_MANUAL_.LngText.text
+msgid "Use ~manual settings"
+msgstr "Erabili ~eskuzko ezarpenak"
+
+#: crashrep.ulf#_PROXY_SETTINGS_PORT_.LngText.text
+msgid "~Port"
+msgstr "~Ataka"
+
+#: crashrep.ulf#_PROXY_SETTINGS_SYSTEM_.LngText.text
+msgid "Use ~system settings"
+msgstr "Erabili ~sistema-ezarpenak"
+
+#: crashrep.ulf#_REPORT_BODY_.LngText.text
+msgid ""
+"The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information "
+"that could help Oracle improve %PRODUCTNAME%.\n"
+"In the spaces below, you can enter a title for your crash report and "
+"describe the action you were trying to carry out when the error occurred. "
+"Then click 'Send'.\n"
+msgstr ""
+"%PRODUCTNAME% %PRODUCTVERSION%(r)en erroreen berri emateko tresnak bildu "
+"duen informazioak %PRODUCTNAME% hobetzen lagundu diezaioke Oracle-ri.\n"
+"Azpiko zuriuneetan, errore-txostenaren titulua idatzi eta errorea gertatzean "
+"zein ekintza egiten ari zinen azaldu dezakezu. Ondoren, sakatu 'Bidali'.\n"
+
+#: crashrep.ulf#_REPORT_CAPTION_.LngText.text
+msgctxt "crashrep.ulf#_REPORT_CAPTION_.LngText.text"
+msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "%PRODUCTNAME% %PRODUCTVERSION%(r)en erroreen berri emateko tresna"
+
+#: crashrep.ulf#_REPORT_HEADER_.LngText.text
+msgid "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
+msgstr "Errorea gertatu da %PRODUCTNAME% %PRODUCTVERSION% exekutatzean"
+
+#: crashrep.ulf#_SAVE_REPORT_BUTTON_.LngText.text
+msgid "~Save Report..."
+msgstr "~Gorde txostena..."
+
+#: crashrep.ulf#_SAVE_REPORT_TITLE_.LngText.text
+msgid "Save Report to"
+msgstr "Gorde txostena hemen:"
+
+#: crashrep.ulf#_SENDING_REPORT_HEADER_.LngText.text
+msgid "Sending Error Report"
+msgstr "Errore-txostena bidaltzea"
+
+#: crashrep.ulf#_SENDING_REPORT_STATUS_.LngText.text
+msgid "Status: Sending error report"
+msgstr "Egoera: errore-txostena bidaltzen"
+
+#: crashrep.ulf#_SENDING_REPORT_STATUS_FINISHED_.LngText.text
+msgid "Status: The error report has been sent successfully."
+msgstr "Egoera: errore-txostena behar bezala bidali da."
+
+#: crashrep.ulf#_SEND_BUTTON_.LngText.text
+msgid "S~end"
+msgstr "B~idali"
+
+#: crashrep.ulf#_SHOW_REPORT_BUTTON_.LngText.text
+msgid "Show ~Report..."
+msgstr "Erakutsi ~txostena..."
+
+#: crashrep.ulf#_WELCOME_BODY1_.LngText.text
+msgid ""
+"This error report tool gathers information about how %PRODUCTNAME% is "
+"working and sends it to Oracle to help improve future versions.\n"
+"\n"
+msgstr ""
+"Erroreen berri emateko tresna honek informazioa biltzen du %PRODUCTNAME% "
+"nola dabilen jakiteko, eta informazio hori Oracle-ra bidaltzen du "
+"etorkizuneko bertsioak hobetzen laguntzeko.\n"
+"\n"
+
+#: crashrep.ulf#_WELCOME_BODY2_.LngText.text
+msgid ""
+"It's easy - just send the report without any further effort on your part by "
+"clicking 'Send' in the next dialog, or you can briefly describe how the "
+"error occurred and then click 'Send'. If you want to see the report, click "
+"the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n"
+"\n"
+msgstr ""
+"Erraza da; txostena bidaltzeko ez duzu esfortzu handirik egin behar, nahikoa "
+"da hurrengo elkarrizketa-koadroko 'Bidali' botoian klik egitea, edo, "
+"bestela, errorea nola gertatu den labur deskriba dezakezu, eta gero, sakatu "
+"'Bidali'. Txostena ikusi nahi baduzu, sakatu 'Erakutsi txostena' botoia. 'Ez "
+"bidali' sakatzen baduzu, ez da daturik bidaliko.\n"
+"\n"
+
+#: crashrep.ulf#_WELCOME_BODY3_.LngText.text
+msgid ""
+"Customer Privacy\n"
+"The information gathered is limited to data concerning the state of %"
+"PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information "
+"about passwords or document contents is not collected.\n"
+"\n"
+"The information will only be used to improve the quality of %PRODUCTNAME% "
+"and will not be shared with third parties.\n"
+"For more information on Oracle's privacy policy, visit\n"
+msgstr ""
+"Bezeroaren pribatutasuna\n"
+"Errorea gertatzean %PRODUCTNAME% %PRODUCTVERSION%(r)en egoera nolakoa zen "
+"bakarrik zehazten du bildutako informazioak. Pasahitzei edo dokumentuen "
+"edukiari buruzko informaziorik ez da biltzen.\n"
+"\n"
+"Informazioa %PRODUCTNAME% aplikazioaren kalitatea hobetzeko bakarrik "
+"erabiliko da, eta ez da hirugarrenekin partekatuko.\n"
+"Oracle-ren pribatutasun-politikari buruz informazio gehiago lortzeko, "
+"bisitatu\n"
+
+#: crashrep.ulf#_WELCOME_CAPTION_.LngText.text
+msgctxt "crashrep.ulf#_WELCOME_CAPTION_.LngText.text"
+msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "%PRODUCTNAME% %PRODUCTVERSION%(r)en erroreen berri emateko tresna"
+
+#: crashrep.ulf#_WELCOME_HEADER_.LngText.text
+msgid "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr ""
+"Ongi etorri %PRODUCTNAME% %PRODUCTVERSION%(r)en erroreen berri emateko "
+"tresnara"

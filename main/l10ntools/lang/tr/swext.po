@@ -1,0 +1,923 @@
+
+#: wiki.xhp#tit.help.text
+msgctxt "wiki.xhp#tit.help.text"
+msgid "@WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@"
+
+#: wiki.xhp#bm_id3154408.help.text
+msgid ""
+"<bookmark_value>Wiki;@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_va"
+"lue>@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>extensions;Me"
+"diaWiki</bookmark_value>"
+msgstr ""
+"<bookmark_value>Wiki;@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_va"
+"lue>@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>eklentiler;Me"
+"diaWiki</bookmark_value>"
+
+#: wiki.xhp#hd_id5993530.help.text
+msgctxt "wiki.xhp#hd_id5993530.help.text"
+msgid "@WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@"
+
+#: wiki.xhp#par_id9647511.help.text
+msgid ""
+"<ahelp hid=\".\">By using the @WIKIEXTENSIONPRODUCTNAME@ you can upload your "
+"current Writer text document to a MediaWiki server. After uploading, all "
+"Wiki users can read your document on the Wiki.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">@WIKIEXTENSIONPRODUCTNAME@ kullanarak geçerli bir Writer "
+"belgenizi MediaWiki sunucusuna bağlanarak yükleyebilirsiniz. Yükledikten "
+"sonra, bütün Wiki kullanıcıları belgenizi wiki üzerinden "
+"okuyabilirler..</ahelp>"
+
+#: wiki.xhp#par_id6468703.help.text
+msgid ""
+"<ahelp hid=\".\">Choose <item type=\"menuitem\">File - Send - To "
+"MediaWiki</item> to upload the current Writer document to a MediaWiki "
+"server.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\"><item type=\"menuitem\">Dosya - Gönder - MediaWiki'ye </item> "
+"seçeneğini kullanarak Writer belgenizi MediaWiki sunucusuna "
+"gönderebilirsiniz.</ahelp>"
+
+#: wiki.xhp#hd_id4554582.help.text
+msgid "System Requirements"
+msgstr "Sistem Gereksinimleri"
+
+#: wiki.xhp#par_id2597430.help.text
+msgid "StarOffice/StarSuite 9"
+msgstr "StarOffice/StarSuite 9"
+
+#: wiki.xhp#par_id8430738.help.text
+msgid "OpenOffice.org 3.0"
+msgstr "OpenOffice.org 3.0"
+
+#: wiki.xhp#par_id9340495.help.text
+msgid "Java Runtime Environment 1.4"
+msgstr "Java Runtime Environment 1.4"
+
+#: wiki.xhp#par_id7387615.help.text
+msgid ""
+"A Wiki account on a supported <link "
+"href=\"http://www.mediawiki.org/wiki/MediaWiki\">MediaWiki</link> server"
+msgstr ""
+"Wiki hesabını destekleyen <link "
+"href=\"http://www.mediawiki.org/wiki/MediaWiki\">MediaWiki</link> sunucusu"
+
+#: wiki.xhp#hd_id8047120.help.text
+msgid "Installing @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@ yükleniyor"
+
+#: wiki.xhp#par_id4277169.help.text
+msgid ""
+"Before you install the @WIKIEXTENSIONPRODUCTNAME@, ensure that %PRODUCTNAME "
+"uses a Java Runtime Environment (JRE). To check the status of the JRE, "
+"choose <item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Java</item>. "
+"Ensure that \"Use a Java runtime environment\" is marked and that a Java "
+"runtime folder is selected in the big listbox. If no JRE was activated, then "
+"activate a JRE 1.4 or later and restart %PRODUCTNAME."
+msgstr ""
+"@WIKIEXTENSIONPRODUCTNAME@ kurmadan önce %PRODUCTNAME uygulamasının Java "
+"Çalıştırma Ortamı (JRE) kullandığından emin olun. JRE durumunu kontrol etmek "
+"için <item type=\"menuitem\">Araçlar - Seçenekler - %PRODUCTNAME - "
+"Java</item> menü öğesini seçin. \"Java çalıştırma ortamı kullan\" seçeneğinin "
+"işaretlenmiş ve Java çalışma dizininin büyük listede seçilmiş olduğundan "
+"emin olun. Eğer herhangi bir JRE aktive edilmemişse, JRE 1ç4 veya daha üzeri "
+"bir vsürümünü aktive edin ve %PRODUCTNAME uygulamasını yeniden başlatın."
+
+#: wiki.xhp#hd_id567339.help.text
+msgid "To Install the @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@ yükle"
+
+#: wiki.xhp#par_id1732230.help.text
+msgctxt "wiki.xhp#par_id1732230.help.text"
+msgid ""
+"In a Writer window, choose <item type=\"menuitem\">Tools - Extension "
+"Manager</item>."
+msgstr ""
+"Writer penceresindeyken <item type=\"menuitem\">Araçlar - Eklenti "
+"Yöneticisi</item> seçeneğini seçin."
+
+#: wiki.xhp#par_id4338511.help.text
+msgid "In the Extension Manager dialog, click Add."
+msgstr "Eklenti Yöneticisi penceresinden, Ekle seçeneğini tıklayın."
+
+#: wiki.xhp#par_id5882442.help.text
+msgid ""
+"Locate the @WIKIEXTENSIONFILENAME@.oxt file, click Open, and then click "
+"Close. "
+msgstr ""
+"@WIKIEXTENSIONFILENAME@.oxt dosyasını bulun, Aç seçeneğini tıklayın ve Kapat "
+"seçeneğini tıklayın. "
+
+#: wiki.xhp#par_id4008911.help.text
+msgid "Close %PRODUCTNAME, and close also the Quickstarter if enabled."
+msgstr "%PRODUCTNAME uygulamasını ve eğer aktifse, Hızlıbaşlatıcı'yı kapatın."
+
+#: wiki.xhp#par_id265511.help.text
+msgid ""
+"Restart the software, open a text document, then choose <item "
+"type=\"menuitem\">Tools - Options - Internet - MediaWiki</item> to enter your "
+"Wiki settings. See \"To Connect To a Wiki\" below."
+msgstr ""
+"Yazılımı tekrar başlatın, yeni bir metin belgesi açın, daha sonra <item "
+"type=\"menuitem\">Araçlar - Seçenekler - Internet - MediaWiki</item> "
+"seçeneğine girerek Wiki ayarını seçin. \"Bir Wikiye Bağlan\" seçeneğini alt "
+"tarafta göreceksiniz."
+
+#: wiki.xhp#hd_id3569444.help.text
+msgid "To Remove the @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@ kaldır"
+
+#: wiki.xhp#par_id2655110.help.text
+msgctxt "wiki.xhp#par_id2655110.help.text"
+msgid ""
+"In a Writer window, choose <item type=\"menuitem\">Tools - Extension "
+"Manager</item>."
+msgstr ""
+"Writer penceresindeyken, <item type=\"menuitem\">Araçlar - Eklenti "
+"Yöneticisi</item> seçeneğini seçin."
+
+#: wiki.xhp#par_id9504379.help.text
+msgid "Click the plus sign (+) in front of My Extensions."
+msgstr "Eklentilerim seçeneğinin önünde bulunan (+) artı işaretine tıklayın."
+
+#: wiki.xhp#par_id8431348.help.text
+msgid "Select the extension, click Remove, and then click Close."
+msgstr ""
+"Eklentiyi seçin, Kaldır seçeneğini tıklayın ve Kapat seçeneğine tıklayın."
+
+#: wiki.xhp#hd_id5316019.help.text
+msgid "To Connect to a Wiki"
+msgstr "Bir Wikiye Bağlan"
+
+#: wiki.xhp#par_id2381969.help.text
+msgid ""
+"Note: You can store your user name and password for all respective dialogs "
+"inside %PRODUCTNAME. The password will be stored in a secure way, where "
+"access is maintained by a master password. To enable the master password, "
+"choose <item type=\"menuitem\">Tools - Options - %PRODUCTNAME - "
+"Security</item>."
+msgstr ""
+"Not: %PRODUCTNAME içinde tüm ilgili iletişim pencereleri için kullanıcı adı "
+"ve parolanızı saklayabilirsiniz. Parola güvenli bir şekilde saklanacaktır, "
+"parolaya erişim ana parola ile yapılabilecektir. Ana parola korumasını aktif "
+"etmek için <item type=\"menuitem\">Araçlar - Seçenekler - %PRODUCTNAME- "
+"Güvenlik</item> menü öğesini seçiniz."
+
+#: wiki.xhp#par_id3751640.help.text
+msgid ""
+"Note: If you connect to the web using a proxy server, enter the proxy "
+"information to <item type=\"menuitem\">Tools - Options - Internet - "
+"Proxy</item>, and restart the software."
+msgstr ""
+"Not: Eğer internete erişim için vekil sunucu kullanıyorsanız, vekil sunucu "
+"ile ilgili bilgileri girmek için <item type=\"menuitem\">Araçlar - Seçenekler "
+"- Internet - Vekil Sunucu</item> seçeneğindeki alanları doldurun ve yazılımı "
+"tekrar başlatın."
+
+#: wiki.xhp#par_id9533677.help.text
+msgid ""
+"Open a Writer document, and choose <item type=\"menuitem\">Tools - Options - "
+"Internet - MediaWiki</item>."
+msgstr ""
+"Bir Writer belgesi açın ve <item type=\"menuitem\">Araçlar - Seçenekler - "
+"Internet - MediaWiki</item> seçeneğini seçin."
+
+#: wiki.xhp#par_id368968.help.text
+msgid ""
+"In the <link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\">Options</link> "
+"dialog, click Add."
+msgstr ""
+"<link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\">Seçenekler</link> "
+"penceresinde, Ekle seçeneğini tıklayın."
+
+#: wiki.xhp#par_id6962187.help.text
+msgid ""
+"In the <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> "
+"dialog, enter the account information for the Wiki."
+msgstr ""
+"<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> "
+"penceresinden Wiki için hesap bilgilerini girin."
+
+#: wiki.xhp#par_id5328836.help.text
+msgid ""
+"In the URL textbox, enter the address of a Wiki that you want to connect to."
+msgstr ""
+"Adres metin kutusuna, bağlantı kurmak istediğiniz Wiki'nin adresini girin."
+
+#: wiki.xhp#par_id389416.help.text
+msgid "You can copy the URL from a web browser and paste it into the textbox."
+msgstr ""
+"Adresi web tarayıcının adres kısmından kopyalarak metin kutusuna "
+"girebilirsiniz."
+
+#: wiki.xhp#par_id5906552.help.text
+msgid "In the Username box, enter your user ID for your Wiki account."
+msgstr "Kullanıcı adı kutusuna, Wiki hesabınızın kullanıcı kimliğini girin."
+
+#: wiki.xhp#par_id9297158.help.text
+msgid ""
+"If the Wiki allows anonymous write access, you can leave the Username and "
+"Password boxes empty."
+msgstr ""
+"Eğer kullandığınız Wiki anonim olarak yazma erişimi veriyorsa, Kullanıcı Adı "
+"ve Parola kutularını boş bırakabilirsiniz."
+
+#: wiki.xhp#par_id8869594.help.text
+msgid ""
+"In the Password box, enter the password for your Wiki account, then click "
+"OK."
+msgstr ""
+"Parola kutusuna, Wiki hesabınızınn parolasını girin ve Tamam düğmesine "
+"tıklayın."
+
+#: wiki.xhp#par_id292062.help.text
+msgid ""
+"Optionally enable \"Save password\" to save the password between sessions. A "
+"master password is used to maintain access to all saved passwords. Choose "
+"<item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Security</item> to "
+"enable the master password. \"Save password\" is unavailable when the master "
+"password is not enabled."
+msgstr ""
+"İsteğinize göre oturumlar arasında parolayı kaydetmek için \"Parolayı kaydet\" "
+"seçeneğini işaretleyebilirsiniz. Kaydettiğiniz parolaların erişimi bir ana "
+"parola tarafından sağlanacaktır. <item type=\"menuitem\">Araçlar - Seçenekler "
+"- %PRODUCTNAME - Güvenlik</item> menü seçeneğini kullanarak ana parolayı "
+"etkinleştirebilirsiniz. Ana parola seçeğini aktif değilse \"Parolayı kaydet\" "
+"seçeneğini kullanılabilir olmayacaktır."
+
+#: wiki.xhp#hd_id7044892.help.text
+msgid "To Create a New Wiki Page"
+msgstr "Yeni Bir Wiki Sayfası Oluştur"
+
+#: wiki.xhp#par_id3514206.help.text
+msgid "Open a Writer document."
+msgstr "Bir Writer belgesi aç."
+
+#: wiki.xhp#par_id944853.help.text
+msgid ""
+"Write the content of the Wiki page. You can use formatting like text "
+"formats, headings, footnotes, and more. See the <link "
+"href=\"@WIKIEXTENSIONID@/wikiformats.xhp\">list of supported formats</link>."
+msgstr ""
+"Wiki sayfasının içeriğini yazın. Metin biçimleri, başlıklar, dipnotlar ve "
+"benzeri daha fazla biçimlendirme araçlarını kullanabilirsiniz. Desteklenen "
+"bütün biçimleri görmek için <link "
+"href=\"@WIKIEXTENSIONID@/wikiformats.xhp\">desteklenen biçimler "
+"listesine</link> bakabilirsiniz."
+
+#: wiki.xhp#par_id4566484.help.text
+msgid "Choose <item type=\"menuitem\">File - Send - To MediaWiki</item>."
+msgstr ""
+"<item type=\"menuitem\">Dosya - Gönder - MediaWiki'ye</item> seçeneğini seçin."
+
+#: wiki.xhp#par_id228278.help.text
+msgid ""
+"In the <link href=\"@WIKIEXTENSIONID@/wikisend.xhp\">Send to MediaWiki</link> "
+"dialog, specify the settings for your entry."
+msgstr ""
+"<link href=\"@WIKIEXTENSIONID@/wikisend.xhp\">MediaWiki'ye Gönder</link> "
+"penceresinde girmek istediğiniz ayarları belirleyebilirsiniz."
+
+#: wiki.xhp#par_id2564165.help.text
+msgid "<emph>MediaWiki server</emph>: Select the Wiki."
+msgstr "<emph>MediaWiki sunucu</emph>: Wiki seçin."
+
+#: wiki.xhp#par_id5566576.help.text
+msgid ""
+"<emph>Title</emph>: Type the title of your page. Type the title of an "
+"existing page to overwrite the page with your current text document. Type a "
+"new title to create a new page on the Wiki."
+msgstr ""
+"<emph>Başlık</emph>: Sayfanızın başlık türüdür. Geçerli metin belgenizdeki "
+"başlığı varolan bir sayfanın başlığı üzerine yazabilirsiniz. Bu tür bir "
+"başlık Wiki sayfası üzerinde yeni bir sayfa oluşturmanızı sağlayacaktır."
+
+#: wiki.xhp#par_id9688711.help.text
+msgid "<emph>Summary</emph>: Enter an optional short summary of your page."
+msgstr "<emph>Özet</emph>: İsteğinize göre sayfanızın kısa bir özetini girin."
+
+#: wiki.xhp#par_id4123661.help.text
+msgid ""
+"<emph>This is a minor edit</emph>: Check this box to mark the uploaded page "
+"as a minor edit of the already existing page with the same title."
+msgstr ""
+"<emph>Bu küçük bir düzenlemedir</emph>: Bu kutucuk işaretlenirse sayfa "
+"yüklenirken daha önceden varolan sayfa üzerindeki başlıklarda küçük "
+"düzenlemeler yapar. "
+
+#: wiki.xhp#par_id452284.help.text
+msgid ""
+"<emph>Show in web browser</emph>: Check this box to open your system web "
+"browser and show the uploaded Wiki page."
+msgstr ""
+"<emph>Web tarayıcıda göster</emph>: Bu kutucuk işaretlenirse Wiki sayfasını "
+"yüklendikten sonra sistem sayfanızı web tarayıcısında gösterecektir."
+
+#: wiki.xhp#par_id8346812.help.text
+msgid "Click Send."
+msgstr "Tıkla Gönder."
+
+#: wikiaccount.xhp#tit.help.text
+msgctxt "wikiaccount.xhp#tit.help.text"
+msgid "MediaWiki"
+msgstr "MediaWiki"
+
+#: wikiaccount.xhp#hd_id960722.help.text
+msgctxt "wikiaccount.xhp#hd_id960722.help.text"
+msgid "MediaWiki"
+msgstr "MediaWiki"
+
+#: wikiaccount.xhp#par_id4571672.help.text
+msgid ""
+"Use the MediaWiki dialog to add or edit your MediaWiki account settings."
+msgstr ""
+"MediaWiki hesap ayarlarını düzenlemek ya da eklemek için MediaWiki "
+"penceresini kullanın."
+
+#: wikiaccount.xhp#par_id7631458.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Enter the URL of a MediaWiki server, "
+"starting with http://</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">MediaWiki sunucusunun adresini girin, "
+"http:// ile başlayın</ahelp>"
+
+#: wikiaccount.xhp#par_id7862483.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Enter your user name on the MediaWiki "
+"server. Leave empty for anonymous access.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">MediaWiki sunucusu için kullanıcı adı "
+"girin. Anonim erişim için boş bırakın.</ahelp>"
+
+#: wikiaccount.xhp#par_id1113010.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Enter your password on the MediaWiki "
+"server. Leave empty for anonymous access.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">MediaWiki sunucusu için parolanızı girin. "
+"Anonim erişim için boş bırakın.</ahelp>"
+
+#: wikiaccount.xhp#par_id656758.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Enable to store your password between "
+"sessions. The master password must be enabled, see <item "
+"type=\"menuitem\">Tools - Options - %PRODUCTNAME - Security</item>.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">Oturumlar arasında parola saklamayı aktif "
+"hale getirin. Ana parolayı aktif edilmiş olmalıdır. Bunun için <item "
+"type=\"menuitem\">Araçlar - Seçenekler - %PRODUCTNAME - Güvenlik</item> "
+"seçeneğine bakın.</ahelp>"
+
+#: wikiaccount.xhp#par_id3112582.help.text
+msgid ""
+"Enter the Internet address of a Wiki server in a format like "
+"http://wiki.services.openoffice.org/wiki or copy the URL from a web browser."
+msgstr ""
+"Wiki sunucu Internet adresini girerken "
+"http://wiki.services.openoffice.org/wiki benzeri bir biçim kullanın ya da "
+"web tarayıcıdan kopyalarak girin."
+
+#: wikiaccount.xhp#par_id628070.help.text
+msgid ""
+"If the Wiki allows anonymous access, you can leave the account text boxes "
+"empty. Else enter your user name and password."
+msgstr ""
+"Eğer Wiki anonim erişimlere izin veriyorsa, hesap ile ilgili kutucukları boş "
+"bırakabilirsiniz. Başka kullanıcı adı ve parola girin."
+
+#: wikiaccount.xhp#par_id9046601.help.text
+msgid ""
+"If you have enabled the master password feature on the Security tab page of "
+"the Tools - Options - %PRODUCTNAME dialog, then the software can store your "
+"password and automatically insert the data where necessary. Enable the \"Save "
+"password\" checkbox to store your password."
+msgstr ""
+"Eğer Araçlar - Seçenekler -%PRODUCTNAME penceresindeki güvenlik sekmesinde "
+"ana parola özellikleri aktifleştirilmişse, yazılım şifrelerinizi "
+"saklayabilir ve gereltiği yerde bu veriyi otomatik olarak yazabilir. "
+"Parolanızı saklamak için \"Parolayı kaydet\" kutucuğunu işaretleyiniz."
+
+#: wikiformats.xhp#tit.help.text
+msgctxt "wikiformats.xhp#tit.help.text"
+msgid "MediaWiki Formats"
+msgstr "MediaWiki Biçimleri"
+
+#: wikiformats.xhp#hd_id3743095.help.text
+msgctxt "wikiformats.xhp#hd_id3743095.help.text"
+msgid "MediaWiki Formats"
+msgstr "MediaWiki Biçimleri"
+
+#: wikiformats.xhp#par_id8654133.help.text
+msgid ""
+"The following list gives an overview of the text formats that the "
+"@WIKIEXTENSIONPRODUCTNAME@ can upload to the Wiki server."
+msgstr ""
+"Aşağıda bulunan metin biçimlerini gözden geçirin, @WIKIEXTENSIONPRODUCTNAME@ "
+"kullanarak bunları Wiki sunucusuna yükleyebilirsiniz. "
+
+#: wikiformats.xhp#par_id5630664.help.text
+msgid ""
+"The OpenDocument format used by Writer and the WikiMedia format are quite "
+"different. Only a subset of all features can be transformed from one format "
+"to the other."
+msgstr ""
+"Writer'ın kullandığı OpenDocument biçimi ile WikiMedia'nın kullandığı biçim "
+"birbirinden farklıdır. Sadece tüm özelliklerin bir altkümesi olarak diğer "
+"biçimlere dönüştürür."
+
+#: wikiformats.xhp#hd_id7178868.help.text
+msgid "Headings"
+msgstr "Başlıklar"
+
+#: wikiformats.xhp#par_id508133.help.text
+msgid ""
+"Apply a heading paragraph style to the headings in your Writer document. The "
+"Wiki will show the heading styles of the same outline level, formatted as "
+"defined by the Wiki engine."
+msgstr ""
+"Writer belgesi içindeki başlıklara bir paragraf başlığı biçemi uygulanır. "
+"Wiki başlık biçemlerini benzer bir anahat düzeyinde, Wiki motoru tarafından "
+"belirlenmiş şekilde biçimlendirir."
+
+#: wikiformats.xhp#hd_id7217627.help.text
+msgid "Hyperlinks"
+msgstr "Köprüler"
+
+#: wikiformats.xhp#par_id3735465.help.text
+msgid ""
+"Native OpenDocument hyperlinks are transformed into \"external\" Wiki links. "
+"Therefore, the built-in linking facility of OpenDocument should only be used "
+"to create links that point to other sites outside the Wiki web. For "
+"creating Wiki links that point to other subjects of the same Wiki domain, "
+"use Wiki links."
+msgstr ""
+"OpenDocument'deki köprüler \"harici\" Wiki bağlantısı olarak dönüştürülür.  "
+"Bundan dolayı OpenDocument bağlantı oluşturmada sağladığı kolaylık ile "
+"Wiki'de kolayca diğer sitelere bağlantılar oluşturulabilir. Diğer konulara "
+"bağlantı noktası oluştururken Wiki alan adı ve Wiki bağlantıları kullanır. "
+
+#: wikiformats.xhp#hd_id941190.help.text
+msgid "Lists"
+msgstr "Listeler"
+
+#: wikiformats.xhp#par_id8942838.help.text
+msgid ""
+"Lists can reliably be exported when the whole list uses a consistent list "
+"style. Use the Numbering or Bullets icon to generate a list in Writer. If "
+"you need a list without numbering or bullets, use Format - Bullets and "
+"Numbering to define and apply the respective list style."
+msgstr ""
+"Düzenli bir liste biçemi ile kullandığınız listeler dışarı aktarılabilir. "
+"Bir Writer listesi oluşturmak için numaralandırma ya da madde işaretleme "
+"kullanabilirsiniz. Eğer numaralandırma ve madde işaretleme haricinde bir "
+"biçem kullanmak isterseniz, Biçim - Numaralandırma ve Madde İşaretleme "
+"seçeneğinden tanımlama yapabilirsiniz."
+
+#: wikiformats.xhp#hd_id7026886.help.text
+msgid "Paragraphs"
+msgstr "Paragraflar"
+
+#: wikiformats.xhp#hd_id4436475.help.text
+msgid "Alignment"
+msgstr "Hizalama"
+
+#: wikiformats.xhp#par_id376598.help.text
+msgid ""
+"Explicit text alignment should not be used in Wiki articles. Nevertheless, "
+"text alignment is supported for left, centered, and right alignment of text."
+msgstr ""
+"Wiki yazılarında belirgin bir metin hizalama kullanılmamaktadır. Sola, "
+"merkeze ve sağa hizalama seçeneklerini desteklemektedir. "
+
+#: wikiformats.xhp#hd_id7486190.help.text
+msgid "Pre-formatted text"
+msgstr "Önceden biçimlendirilmiş metin"
+
+#: wikiformats.xhp#par_id1459395.help.text
+msgid ""
+"A paragraph style with a fixed-width font is transformed as pre-formatted "
+"text. Pre-formatted text is shown on the Wiki with a border around the text."
+msgstr ""
+"Bir paragraf biçemi sabit genişlikteki bir yazı tipiyle önceden "
+"biçimlendirilmiş metne dönüştürülür. Önceden biçimlendirilmiş metin Wiki'de "
+"bir kenarlıkla birlikte gösterilir."
+
+#: wikiformats.xhp#hd_id4834131.help.text
+msgid "Character styles"
+msgstr "Karakter biçemleri"
+
+#: wikiformats.xhp#par_id6397595.help.text
+msgid ""
+"Character styles modify the appearance of parts of a paragraph. The "
+"transformation supports bold, italics, bold/italics, subscript and "
+"superscript. All fixed width fonts are transformed into the Wiki typewriter "
+"style."
+msgstr ""
+"Karakter biçemleri bir paragraf bölümünün görünümünü değiştirirler. Kalın, "
+"eğik, kalın/eğik, alt simge ve üst simge olarak etki etmektedir. Sabit "
+"genişlikteki yazı tipleri Wiki'de daktilo biçemi olarak dönüştürülmektedir."
+
+#: wikiformats.xhp#hd_id5152745.help.text
+msgid "Footnotes"
+msgstr "Dipnotlar"
+
+#: wikiformats.xhp#par_id5238196.help.text
+msgid ""
+"Note: The transformation uses the new style of footnotes with <ref> and "
+"<references> tags that requires the Cite.php extension to be installed into "
+"MediaWiki. If those tags occur as plain text in the transformation result, "
+"ask the Wiki administrator to install this extension."
+msgstr ""
+"Not: Dipnotları için yeni biçem kullanılması gerekir <ref>ve<references> "
+"bunun için MediWiki'ye Cite.php eklentisinin yüklenmiş olması gerekir. Eğer "
+"etiketler kullanıldığında sonuç düz metin olarak gözüküyorsa, Wiki "
+"yönetinizden bu eklentiyi yüklemesini istemelisiniz."
+
+#: wikiformats.xhp#hd_id9405499.help.text
+msgid "Images"
+msgstr "Resimler"
+
+#: wikiformats.xhp#par_id3541673.help.text
+msgid ""
+"Images cannot be exported by a transformation producing a single file of "
+"Wiki text. However, if the image is already uploaded to the target Wiki "
+"domain (e. g. WikiMedia Commons), then the transformation produces a valid "
+"image tag that includes the image. Image captions are also supported."
+msgstr ""
+"Resimler dışarı aktarmak için Wiki metni tek dosya olmalıdır. Eğer resim "
+"daha önceden yüklenmişse hedef Wiki adresinde However, if the image is "
+"already uploaded to the target Wiki domain (örneğin, WikiMedia Commons), "
+"then the transformation produces a valid image tag that includes the image. "
+"geçerli resim etiketi kullanılarak belge içinde gösterilebilir. Resim "
+"başlıkları desteklenmektedir."
+
+#: wikiformats.xhp#hd_id2162236.help.text
+msgid "Tables"
+msgstr "Tablolar"
+
+#: wikiformats.xhp#par_id3037202.help.text
+msgid ""
+"Simple tables are supported well. Table headers are translated into "
+"corresponding Wiki style table headers. However, custom formatting of table "
+"borders, column sizes and background colors is ignored."
+msgstr ""
+"Basit tablolar desteklenmektedir. Tablo başlıkları uygun wiki biçemi ile "
+"tablo başlıklarına çevirilir. Özel tablo kenarlıkları, sütun boyutları ve "
+"arkaplan renkleri yoksayılacaktır."
+
+#: wikiformats.xhp#hd_id2954496.help.text
+msgid "Joined Cells"
+msgstr "Birleştirilmiş Hücreler"
+
+#: wikiformats.xhp#par_id8253730.help.text
+msgid ""
+"OpenDocument and especially OpenOffice.org represent tables that have joined "
+"cells that span rows as tables with nested tables. In contrast, the wiki "
+"model of table is to declare column and row spans for such joined cells. "
+msgstr ""
+"OpenDocument ve özellikle OpenOffice.org birleştirilmiş hücreleri, "
+"birbirlerine geçmiş satırları ve karmaşık tabloları gösterebilir. Bunun "
+"tersine Wiki tablo modellemesinde birleştirilmiş hücreler ve birbirine "
+"geçmiş satırların belirtilmiş olması gerekir."
+
+#: wikiformats.xhp#par_id8163090.help.text
+msgid ""
+"If only columns of the same row are joined, the result of the transformation "
+"resembles the source document very well."
+msgstr ""
+"Eğer aynı sırada olan satırların sütunu birleştirilmişse kaynak belgede en "
+"iyi dönüştürme işlemi gerçekleştirilir."
+
+#: wikiformats.xhp#hd_id425122.help.text
+msgid "Borders"
+msgstr "Kenarlıklar"
+
+#: wikiformats.xhp#par_id1831110.help.text
+msgid ""
+"Irrespective of custom table styles for border and background, a table is "
+"always exported as \"<emph>prettytable\"</emph>, which renders in the Wiki "
+"engine with simple borders and bold header."
+msgstr ""
+"Bir tabloyu dışarı aktarırken kenarlık ve arkaplan tablo özel biçemleri "
+"hesaba katmadan \"<emph>özeltablo\"</emph> olarak aktarın, bu aktarımı Wiki "
+"motoru basit bir kenarlık ve kalın bir başlık olarak yorumlayacaktır."
+
+#: wikiformats.xhp#hd_id6255073.help.text
+msgid "Charset and special characters"
+msgstr "Karakter kümesi ve özel karakterler"
+
+#: wikiformats.xhp#par_id8216193.help.text
+msgid ""
+"The charset of the transformation result is fixed to UTF-8. Depending on "
+"your system, this might not be the default charset. This might cause "
+"\"special characters\" to look broken when viewed with default settings. "
+"However, you can switch your editor to UTF-8 encoding to fix this. If your "
+"editor does not support switching the encoding, you can display the result "
+"of the transformation in the Firefox browser and switch the encoding to "
+"UTF-8 there. Now, you can cut and paste the transformation result to your "
+"program of choice."
+msgstr ""
+"Dönüştürme de kullanılan karakter kümesi UTF-8'dir. Sisteminize bağlı olarak "
+"bu karakter kümesi varsayılan olmayabilir. Burada \"özel karakterlerin\" "
+"yanlış görünüp görünmediğine bakmak için varsayılan ayarlara bakın. "
+"Kullandığınız düzenleme yazılımında karakter kodlamasını UTF-8 olarakta "
+"ayarlayabilirsiniz. Eğer kullandığınız düzenleme yazılımı karakter kümesi "
+"değişimini desteklemiyorsa, yazıyı Firefox tarayıcısında gösterek UTF-8 "
+"dönüşümünü gerçekleştirebilirsiniz. Şimdi kes ve yapıştır yaparak programına "
+"sonucu aktarabilirsiniz.  "
+
+#: wikisend.xhp#tit.help.text
+msgctxt "wikisend.xhp#tit.help.text"
+msgid "Send to MediaWiki"
+msgstr "MediaWiki'ye Gönder"
+
+#: wikisend.xhp#hd_id108340.help.text
+msgctxt "wikisend.xhp#hd_id108340.help.text"
+msgid "Send to MediaWiki"
+msgstr "MediaWiki'ye Gönder"
+
+#: wikisend.xhp#par_id1743827.help.text
+msgid ""
+"In the Send to MediaWiki dialog, specify the settings for your current Wiki "
+"upload."
+msgstr ""
+"MediaWiki'ye Gönderme penceresinde geçerli Wiki yüklemeniz için ayarları "
+"belirtir."
+
+#: wikisend.xhp#par_id664082.help.text
+msgid ""
+"<ahelp hid=\".\">Select the MediaWiki server where you want to publish your "
+"document. Click Add to add a new server to the list.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">Belgenizi yayınlamak istediğiniz MediaWiki sunucusu seçin. "
+"Listeye yeni bir sunucu eklemek için Ekle düğmesini tıklayın.</ahelp>"
+
+#: wikisend.xhp#par_id2794885.help.text
+msgid ""
+"<ahelp hid=\".\">Enter the title of your Wiki entry. This is the top heading "
+"of your Wiki entry. For a new entry, the title must be unique on this Wiki. "
+"If you enter an existing title, your upload will overwrite the existing Wiki "
+"entry.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">Wiki girişiniz için başlık girer. Bu Wiki girişinin üst "
+"başlığıdır. Yeni giriş Wiki üzerinde olmayan farklı bir başlık olmalıdır. "
+"Eğer varolan bir başlık girilirse, yükleme esnasında yeni giriş varolan Wiki "
+"girişinin üzerine yazılacaktır.</ahelp>"
+
+#: wikisend.xhp#par_id2486342.help.text
+msgid ""
+"<ahelp hid=\".\">Enter an optional short summary or comment.</ahelp> See <link "
+"href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\">http://meta.wikimed"
+"ia.org/wiki/Help:Edit_summary</link>."
+msgstr ""
+"<ahelp hid=\".\">İsteğe bağlı olarak kısa özet ve açıklama girilir.</ahelp> "
+"Örneğe bakmak için <link href=\"http://meta.wikimedia.org/wiki/Help:Edit_summ"
+"ary\">http://meta.wikimedia.org/wiki/Help:Edit_summary</link> adresini "
+"kullanabilirsiniz."
+
+#: wikisend.xhp#par_id823999.help.text
+msgid ""
+"<emph>This is a minor edit</emph>: <ahelp hid=\".\">Check this box to mark the "
+"uploaded page as a minor edit of the already existing page with the same "
+"title.</ahelp>"
+msgstr ""
+"<emph>Bu küçük bir düzenlemedir</emph>: <ahelp hid=\".\">Bu kutucuk "
+"işaretlenirse sayfa yüklenirken daha önceden varolan sayfa üzerindeki "
+"başlıklarda küçük düzenlemeler yapar.</ahelp>"
+
+#: wikisend.xhp#par_id6592913.help.text
+msgid ""
+"<emph>Show in web browser</emph>: <ahelp hid=\".\">Check this box to open your "
+"system web browser and show the uploaded Wiki page.</ahelp>"
+msgstr ""
+"<emph>Web tarayıcıda göster</emph>: <ahelp hid=\".\">Bu kutucuk işaretlenirse "
+"Wiki sayfasını yüklendikten sonra sistem sayfanızı web tarayıcısında "
+"gösterecektir.</ahelp>"
+
+#: wikisettings.xhp#tit.help.text
+msgctxt "wikisettings.xhp#tit.help.text"
+msgid "MediaWiki Options"
+msgstr "MediaWiki Seçenekleri"
+
+#: wikisettings.xhp#hd_id6425672.help.text
+msgctxt "wikisettings.xhp#hd_id6425672.help.text"
+msgid "MediaWiki Options"
+msgstr "MediaWiki Seçenekleri"
+
+#: wikisettings.xhp#par_id1188390.help.text
+msgid ""
+"You can add, edit and remove MediaWiki servers. Open the dialog by <item "
+"type=\"menuitem\">Tools - Options - Internet - MediaWiki</item>. "
+"Alternatively, choose <item type=\"menuitem\">Tools - Extension "
+"Manager</item>, select the @WIKIEXTENSIONPRODUCTNAME@, and click the Options "
+"button."
+msgstr ""
+"MediaWiki sunucularını eklemek, düzenlemek ve kaldırmak isteyebilirsiniz. "
+"Bunun için <item type=\"menuitem\">Araçlar - Seçenekler - Internet - "
+"MediaWiki</item> penceresini açın. Alternatif olarak, <item "
+"type=\"menuitem\">Araçlar - Eklenti Yöneticisi</item> seçeneğinden "
+"@WIKIEXTENSIONPRODUCTNAME@ seçeneğini seçin ve Seçenekler düğmesine "
+"tıklayın."
+
+#: wikisettings.xhp#par_id300607.help.text
+msgid ""
+"<ahelp hid=\".\">Click Add to add a new Wiki server.<br/>Select an entry and "
+"click Edit to edit the account settings.<br/>Select an entry and click "
+"Remove to remove the entry from the list.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">Yeni bir Wiki sunucusu eklemek için Ekle düğmesini "
+"tıklayın.<br/>Bir girişi seçin ve hesap ayarlarını düzenlemek için Düzenle "
+"düğmesine tıklayın.<br/>Bir girişi seçin ve listeden bir girişi kaldırmak "
+"için Kaldır düğmesine tıklayın.</ahelp>"
+
+#: wikisettings.xhp#par_id9786065.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Opens the MediaWiki dialog to add a new "
+"entry to the list.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">Listeye yeni bir giriş eklemek için "
+"MediaWiki penceresini açar.</ahelp>"
+
+#: wikisettings.xhp#par_id3386333.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Opens the MediaWiki dialog to edit the "
+"selected entry.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">Seçilmiş girişi düzenlemek için MediaWiki "
+"penceresini açar.</ahelp>"
+
+#: wikisettings.xhp#par_id7285073.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Removes the selected entry from the "
+"list.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">Listeden seçilmiş bir girişi "
+"kaldırır.</ahelp>"
+
+#: wikisettings.xhp#par_id1029084.help.text
+msgid ""
+"When you click Add or Edit, the <link "
+"href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> dialog opens."
+msgstr ""
+"Ekleme ya da Düzenleme için <link "
+"href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> penceresini açar."
+"X-Accelerator-Marker: ~\n"
+
+#: Addons.xcu#.Addons.AddonUI.OfficeMenuBarMerging.com.sun.star.wiki.S1.MenuItems.M2.Title.value.text
+msgid "To Media~Wiki..."
+msgstr "Media~Wiki'ye..."
+
+#: OptionsDialog.xcu#.OptionsDialog.Nodes.Internet.Leaves.com.sun.star.wiki.options.Label.value.text
+msgid "MediaWiki"
+msgstr "MediaWiki"
+"X-Accelerator-Marker: ~\n"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.GeneralSendError.value.text
+msgid "The operation 'Send to MediaWiki' could not be completed successfully."
+msgstr "'MediaWiki'ye Gönderme' işlemi başarılı bir şekilde tamamlanamadı."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.NoWikiFilter.value.text
+msgid ""
+"The MediaWiki export filter cannot be found. Choose 'Tools-XML Filter "
+"Settings' to install the filter, or use the setup to install the component."
+msgstr ""
+"MediaWiki dışarı aktarma süzgeci bulunamadı. 'Araçlar - XML Süzgeç Ayarları' "
+"seçeneği ile süzgeci yükleyin, ya da kullanmak istediğiniz bileşini "
+"yükleyin."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.NoConnectionToURL.value.text
+msgid "A connection to the MediaWiki system at '$ARG1' could not be created."
+msgstr "'$ARG1' de MediaWiki sistemine bir bağlantı oluşturulamadı."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.WrongLogin.value.text
+msgid ""
+"User name or password is incorrect. Please try again, or leave the fields "
+"blank for an anonymous connection."
+msgstr ""
+"Kullanıcı adı ya da parola hatalı. Lütfen tekrar deneyin, ya da anonim "
+"bağlantı için alanları boş bırakın."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.InvalidURL.value.text
+msgid "A connection could not be created because the URL is invalid."
+msgstr "Bir bağlantı oluşturulamadı, çünkü URL geçersiz."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.NoURL.value.text
+msgid "Specify a MediaWiki server by providing a URL."
+msgstr "MediaWiki sunucu için bir adres belirleyin."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.CancelSending.value.text
+msgid ""
+"The transfer has been interrupted. Please check the integrity of the wiki "
+"article."
+msgstr "Transfer kesildi. Lütfen wiki yazısının doğruluğunu kontrol ediniz."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_UrlLabel.value.text
+msgid "U~RL"
+msgstr "Ad~res"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_UsernameLabel.value.text
+msgid "~Username"
+msgstr "K~ullanıcı adı"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_PasswordLabel.value.text
+msgid "~Password"
+msgstr "~Parola"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendTitle.value.text
+msgid "Send to MediaWiki"
+msgstr "MediaWiki'ye Gönder"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_WikiArticle.value.text
+msgid "Wiki article"
+msgstr "Wiki yazısı"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_No.value.text
+msgid "No"
+msgstr "Hayır"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_OK.value.text
+msgid "OK"
+msgstr "Tamam"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_Yes.value.text
+msgid "Yes"
+msgstr "Evet"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_AddButton.value.text
+msgid "~Add..."
+msgstr "~Ekle..."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditButton.value.text
+msgid "~Edit..."
+msgstr "~Düzenle..."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendButton.value.text
+msgid "~Send"
+msgstr "~Gönder"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_RemoveButton.value.text
+msgid "~Remove"
+msgstr "~Kaldır"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_NewWikiPage_Label1.value.text
+msgid ""
+"A wiki article with the title '$ARG1' does not exist yet. Do you want to "
+"create a new article with that name?"
+msgstr ""
+"'$ARG1' yazısının henüz bir başlığı yok. Bu isimle yeni bir yazı oluşturmak "
+"ister misiniz?"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_Label1.value.text
+msgid "Media~Wiki Server"
+msgstr "Medi~Wiki Sunucusu"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_Label2.value.text
+msgid "~Title"
+msgstr "~Başlık"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_Label3.value.text
+msgid "S~ummary"
+msgstr "~Özet"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_MinorCheck.value.text
+msgid "This is a ~minor edit"
+msgstr "Bu küçük bir düzelt~medir."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_BrowserCheck.value.text
+msgid "Show in web ~browser"
+msgstr "We~b tarayıcıda göster"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.UnknownCert.value.text
+msgid "The certificate of the selected site is unknown."
+msgstr "Seçilmiş sitenin sertifikası bilinmemektedir."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_MediaWiki_Title.value.text
+msgid "MediaWiki"
+msgstr "MediaWiki"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_AccountLine.value.text
+msgid "Account"
+msgstr "Hesap"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_WikiLine.value.text
+msgid "MediaWiki Server"
+msgstr "MediaWiki Sunucusu"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_SaveBox.value.text
+msgid "~Save password"
+msgstr "P~arolayı kaydet"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_MediaWiki_Extension_String.value.text
+msgid "@WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_WikiPageExists_Label1.value.text
+msgid ""
+"A wiki article with the title '$ARG1' already exists.&#13;&#13;Do you want "
+"to replace the current article with your article?&#13;&#13;"
+msgstr ""
+"'$ARG1' başlığı ile başka bir makale bulunmakta. &#13;&#13;Mevcut makaleyi "
+"kendi makalenizle değiştirmek ister misiniz?&#13;&#13;"

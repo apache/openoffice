@@ -1,0 +1,44 @@
+
+#: solver.src#RID_SOLVER_COMPONENT.string.text
+msgid "%PRODUCTNAME Linear Solver"
+msgstr "%PRODUCTNAME မျဉ်းဖြောင့်ဖြေရှင်းတွက်ချက်သူ"
+
+#: solver.src#RID_PROPERTY_NONNEGATIVE.string.text
+msgid "Assume variables as non-negative"
+msgstr "ကိန်းရှင်များကို အနှုတ်မဟုတ်သည့်ကိန်းများအဖြစ်ယူဆပါ"
+
+#: solver.src#RID_PROPERTY_INTEGER.string.text
+msgid "Assume variables as integer"
+msgstr "ကိန်းရှင်များကို ကိန်းဂဏန်းများအဖြစ်ယူဆပါ"
+
+#: solver.src#RID_PROPERTY_TIMEOUT.string.text
+msgid "Solving time limit (seconds)"
+msgstr "အချိန်ကန့်သတ်ချက်(စက္ကန့်များ)တွက်ချက်နေသည်"
+
+#: solver.src#RID_PROPERTY_EPSILONLEVEL.string.text
+msgid "Epsilon level (0-3)"
+msgstr "အက်ပ်ဆလွန်အဆင့်(၀-၃)"
+
+#: solver.src#RID_PROPERTY_LIMITBBDEPTH.string.text
+msgid "Limit branch-and-bound depth"
+msgstr "ကန့်သတ်ချက်အခွဲများနှင့်ကန့်သက်ချက်၏အနက်"
+
+#: solver.src#RID_ERROR_NONLINEAR.string.text
+msgid "The model is not linear."
+msgstr "မျဉ်းဖြောင့်ပုံစံမဟုတ်ပါ။"
+
+#: solver.src#RID_ERROR_EPSILONLEVEL.string.text
+msgid "The epsilon level is invalid."
+msgstr "အက်ပ်ဆီလွန်အဆင့်ကိုအသုံးပြု၍မရပါ။"
+
+#: solver.src#RID_ERROR_INFEASIBLE.string.text
+msgid "The model is infeasible. Check limiting conditions."
+msgstr "ဤပုံစံဖြစ်နိုင်ချေမရှိပါ။ကန့်သတ်ချက်အခြေအနေများကိုစစ်ဆေးပါ"
+
+#: solver.src#RID_ERROR_UNBOUNDED.string.text
+msgid "The model is unbounded."
+msgstr "ဤပုံစံသည်ကန့်သတ်ထားမှုမရှိပါ။"
+
+#: solver.src#RID_ERROR_TIMEOUT.string.text
+msgid "The time limit was reached."
+msgstr "အချိန်ကန့်သက်ချက်ပြည့်ပြီးဖြစ်သည်။"

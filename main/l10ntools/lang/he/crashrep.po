@@ -1,0 +1,253 @@
+
+#: crashrep.ulf#_WELCOME_CAPTION_.LngText.text
+msgctxt "crashrep.ulf#_WELCOME_CAPTION_.LngText.text"
+msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "דו\"ח‫ שגיאות ‏‪%PRODUCTNAME%‬‏ %PRODUCTVERSION%‏"
+
+#: crashrep.ulf#_WELCOME_HEADER_.LngText.text
+msgid "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "ברוכים הבאים לדו\"ח השגיאות של ‏‪%PRODUCTNAME%‏ %PRODUCTVERSION%‏"
+
+#: crashrep.ulf#_WELCOME_BODY1_.LngText.text
+msgid ""
+"This error report tool gathers information about how %PRODUCTNAME% is "
+"working and sends it to Oracle to help improve future versions.\n"
+"\n"
+msgstr "כלי דיווח שגיאות זה אוסף מידע אודות‫ תפקוד ‏‪%PRODUCTNAME%‬‏ ושולח אותו כדי "
+"לשפר את גירסאות הבאות. ‏\n"
+
+#: crashrep.ulf#_WELCOME_BODY2_.LngText.text
+msgid ""
+"It's easy - just send the report without any further effort on your part by "
+"clicking 'Send' in the next dialog, or you can briefly describe how the "
+"error occurred and then click 'Send'. If you want to see the report, click "
+"the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n"
+"\n"
+msgstr "התפעול קל - על ידי לחיצה על 'שליחה' בתיבת הדו-שיח הבאה או ניתן להוסיף תיאור "
+"השגיאה ואחר כך ללחוץ 'שליחה'. ניתן לראות את הדו\"ח על ידי לחיצה על כפתור "
+"'הצגת דו\"ח'. לחיצה על 'לא לשלוח' מונעת שליחת הדו\"ח לסאן\n"
+
+#: crashrep.ulf#_WELCOME_BODY3_.LngText.text
+msgid ""
+"Customer Privacy\n"
+"The information gathered is limited to data concerning the state of %"
+"PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information "
+"about passwords or document contents is not collected.\n"
+"\n"
+"The information will only be used to improve the quality of %PRODUCTNAME% "
+"and will not be shared with third parties.\n"
+"For more information on Oracle's privacy policy, visit\n"
+msgstr ""
+"אודות פרטיות המשתמש\n"
+"המידע המדווח מוגבל למידע על מצב ‏‪%PRODUCTNAME% %PRODUCTVERSION%‬‏ בעת "
+"השגיאה. לא יאסף ולא ישלח מידע אחר על תוכן המסמכים או ססמאות.‏\n"
+"המידע ישמש לשיפור האיכות של %PRODUCTNAME% ולא יועבר לגורם אחר.‏\n"
+"למידע נוסף אודות מדיניות הפרטיות של אורקל ניתן לבקר באתר\n"
+
+#: crashrep.ulf#_PRIVACY_URL_.LngText.text
+msgid "http://www.oracle.com/html/services-privacy-policy.html"
+msgstr "http://www.oracle.com/html/services-privacy-policy.html"
+
+#: crashrep.ulf#_NEXT_BUTTON_.LngText.text
+msgid "~Next >>"
+msgstr "הבא >>‏"
+
+#: crashrep.ulf#_CANCEL_BUTTON_.LngText.text
+msgid "Cancel"
+msgstr "ביטול"
+
+#: crashrep.ulf#_OK_BUTTON_.LngText.text
+msgid "OK"
+msgstr "אישור"
+
+#: crashrep.ulf#_REPORT_CAPTION_.LngText.text
+msgctxt "crashrep.ulf#_REPORT_CAPTION_.LngText.text"
+msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "דו\"ח‫ שגיאות ‏‪%PRODUCTNAME%‬‏ %PRODUCTVERSION%‏"
+
+#: crashrep.ulf#_REPORT_HEADER_.LngText.text
+msgid "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
+msgstr "ארעה שגיאה בעת הפעלת ‏‪%PRODUCTNAME%‏ %PRODUCTVERSION%‏"
+
+#: crashrep.ulf#_REPORT_BODY_.LngText.text
+msgid ""
+"The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information "
+"that could help Oracle improve %PRODUCTNAME%.\n"
+"In the spaces below, you can enter a title for your crash report and "
+"describe the action you were trying to carry out when the error occurred. "
+"Then click 'Send'.\n"
+msgstr ""
+"בדו\"ח השגיאות של ‏‪%PRODUCTNAME% %PRODUCTVERSION%‬‏ נאסף מידע העשוי לעזור "
+"לסאן מיקרוסיסטמס לשפר את ‏‪%PRODUCTNAME%‬‏.‏\n"
+"ניתן לתאר את הפעולות שגרמו לנפילת התוכנית ולתת כותרת לדו\"ח בשדות למטה. כדי "
+"לשלוח את הדו\"ח יש ללחוץ 'שליחה'.‏\n"
+
+#: crashrep.ulf#_ENTER_TITLE_.LngText.text
+msgid ""
+"Which type of document (e.g. presentation) were you using when the error "
+"occurred?"
+msgstr "באיזו תוכנה (\"רייטר\", \"קאלק\", \"אימפראס\") ארעה השגיאה?‏"
+
+#: crashrep.ulf#_ALLOW_CONTACT_.LngText.text
+msgid "~I allow Oracle to contact me regarding this report."
+msgstr "אני מסכימ/ה שאורקל תיצור עימי קשר בעניין דו\"ח זה.‏"
+
+#: crashrep.ulf#_ENTER_EMAIL_.LngText.text
+msgid "Please enter your e-mail address."
+msgstr "נא לציין כתובת דוא\"ל.‏"
+
+#: crashrep.ulf#_ENTER_DESCRIPTION_.LngText.text
+msgid "~How were you using %PRODUCTNAME% when the error occurred ?"
+msgstr "מה עשית עם ‏‪%PRODUCTNAME%‬‏ בעת השגיאה ?‏"
+
+#: crashrep.ulf#_BACK_BUTTON_.LngText.text
+msgid " << ~Back"
+msgstr "‏<< אחורה"
+
+#: crashrep.ulf#_SEND_BUTTON_.LngText.text
+msgid "S~end"
+msgstr "שליחה"
+
+#: crashrep.ulf#_DONOT_SEND_BUTTON_.LngText.text
+msgid "Do ~Not Send"
+msgstr "לא לשלוח"
+
+#: crashrep.ulf#_SHOW_REPORT_BUTTON_.LngText.text
+msgid "Show ~Report..."
+msgstr "הצגת הדו‏\"ח"
+
+#: crashrep.ulf#_SAVE_REPORT_BUTTON_.LngText.text
+msgid "~Save Report..."
+msgstr "שמירת הדו‏\"ח"
+
+#: crashrep.ulf#_SAVE_REPORT_TITLE_.LngText.text
+msgid "Save Report to"
+msgstr "שמירת הדו‏\"ח בשם"
+
+#: crashrep.ulf#_ERROR_MSG_SIMPLE_MAPI_.LngText.text
+msgid ""
+"The error report could not be sent because the default e-mail program does "
+"not support MAPI.\n"
+" Please use a MAPI-compatible e-mail program."
+msgstr ""
+"לא ניתן לשלוח את דו\"ח השגיאות כי תוכנת הדוא\"ל אינה תומכת ב-MAPI.\n"
+"נא להשתמש בתוכנת דוא\"ל תואמת ‏‪MAPI‬‏."
+
+#: crashrep.ulf#_ERROR_MSG_DISK_FULL_.LngText.text
+msgid ""
+"The error report could not be temporarily saved and could therefore not be "
+"sent."
+msgstr "אין אפשרות לשמירה זמנית של דו\"ח השגיאות ולכן אין אפשרות לשלוחו.‏"
+
+#: crashrep.ulf#_ERROR_MSG_SENDMAIL_.LngText.text
+msgid ""
+"The error report could not be sent because 'sendmail' could not be started.\n"
+"Please check the 'sendmail' settings."
+msgstr ""
+"לא ניתן להפעיל תוכנת ‏‪'sendmail'‬‏ ולכן לא ניתן לשלוח את הדו\"ח.‏\n"
+"נא לוודא ש‏‪'sendmail'‬‏ מותקנת וזמינה במחשב.‏"
+
+#: crashrep.ulf#_ERROR_MSG_PROXY_.LngText.text
+msgid ""
+"The error report could not be sent. Please check the proxy settings under "
+"'Options' in the Error Report Tool."
+msgstr ""
+"לא ניתן לשלוח את דו\"ח השגיאות. נא לבדוק הגדרות הפרוקסי ב'אפשרויות'בממשק של "
+"דו\"ח השגיאות.‏"
+
+#: crashrep.ulf#_ERROR_MSG_NOCONNECT_.LngText.text
+msgid ""
+"The error report could not be sent because there is no Internet connection. "
+"Please check your Internet settings."
+msgstr "אין קשר אינטרנט ולכן לא ניתן לשלוח את הדו\"ח.‏"
+
+#: crashrep.ulf#_OPTIONS_BUTTON_.LngText.text
+msgid "~Options..."
+msgstr "אפשרויות...‏"
+
+#: crashrep.ulf#_OPTIONS_TITLE_.LngText.text
+msgid "Options"
+msgstr "אפשרויות"
+
+#: crashrep.ulf#_PROXY_SETTINGS_HEADER_.LngText.text
+msgid "Proxy settings"
+msgstr "הגדרות פרוקסי"
+
+#: crashrep.ulf#_PROXY_SETTINGS_SYSTEM_.LngText.text
+msgid "Use ~system settings"
+msgstr "להשתמש בהגדרות המערכת"
+
+#: crashrep.ulf#_PROXY_SETTINGS_DIRECT_.LngText.text
+msgid "Use ~direct connection to the Internet"
+msgstr "קשר ישיר לאינטרנט"
+
+#: crashrep.ulf#_PROXY_SETTINGS_MANUAL_.LngText.text
+msgid "Use ~manual settings"
+msgstr "להשתמש בהגדרות המשתמש"
+
+#: crashrep.ulf#_PROXY_SETTINGS_ADDRESS_.LngText.text
+msgid "HT~TP Proxy"
+msgstr "פרוקסי HTTP‏"
+
+#: crashrep.ulf#_PROXY_SETTINGS_PORT_.LngText.text
+msgid "~Port"
+msgstr "מספר פורט"
+
+#: crashrep.ulf#_PROXY_SETTINGS_DESCRIPTION_.LngText.text
+msgid ""
+"The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to "
+"be able to send error reports.\n"
+"\n"
+"Companies often use proxy servers in conjunction with a firewall to protect "
+"the network.\n"
+"\n"
+"If this applies to your situation, you have to specify the address and port "
+"for the server."
+msgstr ""
+"צריך קשר אינטרנט כדי לשלוח דו\"חות שגיאה של ‏‪%PRODUCTNAME%‬‏‏.‏\n"
+"\n"
+"הרבה אירגונים נוהגים להשתמש בשרת פרוקסי וחוסם (פיירוואל) להגן על הרשת.‏\n"
+"\n"
+"באירגונים אלו אין אפשרות לקשר ישיר לאינטרנט. במקרא זה חייבים לציין את\n"
+"כתובת ה‏‪IP‬‏ ואת הפורט של הפרוקסי. יש להתייעץ עם מנהל/ת הרשת.‏"
+
+#: crashrep.ulf#_SENDING_REPORT_HEADER_.LngText.text
+msgid "Sending Error Report"
+msgstr "מתבצעת שליחת דו\"ח השגיאות"
+
+#: crashrep.ulf#_SENDING_REPORT_STATUS_.LngText.text
+msgid "Status: Sending error report"
+msgstr "מצב נוכחי: מתבצעת שליחת דו‏\"ח שגיאות"
+
+#: crashrep.ulf#_SENDING_REPORT_STATUS_FINISHED_.LngText.text
+msgid "Status: The error report has been sent successfully."
+msgstr "מצב נוכחי: דו\"ח השגיאות נשלח בהצלחה.‏"
+
+#: crashrep.ulf#_ERROR_MSG_NOEMAILADDRESS_.LngText.text
+msgid ""
+"You have marked the option 'I allow Oracle to contact me regarding this "
+"report.'\n"
+"Please enter your e-mail address."
+msgstr ""
+"ציינת 'אני מסכימ/ה שאוקל תיצור עימי קשר בעניין דו\"ח זה'.\n"
+"נא לציין כתובת דוא\"ל.‏"
+
+#: crashrep.ulf#_MSG_CMDLINE_USAGE_.LngText.text
+msgid "Usage:"
+msgstr "אופן השימוש:‏"
+
+#: crashrep.ulf#_MSG_PARAM_PROCESSID_.LngText.text
+msgid "-p <process ID>"
+msgstr "-p <process ID>"
+
+#: crashrep.ulf#_MSG_PARAM_PROCESSID_DESCRIPTION_.LngText.text
+msgid "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
+msgstr "משייך את מספר התהליך ‏‪(PID)‬‏ של ‏‪%PRODUCTNAME%‬‏ למחולל דו\"חות שגיאה"
+
+#: crashrep.ulf#_MSG_PARAM_HELP_DESCRIPTION_.LngText.text
+msgid ""
+"Shows this help text.\n"
+"Detailed information can be found in the Setup Guide."
+msgstr ""
+"מציגה הסבר זה.‏\n"
+"ניתן למצוא מידע נוסף במדריך ההתקנה.‏"

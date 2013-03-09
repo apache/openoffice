@@ -50,33 +50,36 @@ convert_gen_impl * convert_gen_impl::mcImpl = NULL;
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-convert_gen::convert_gen(l10nMem& crMemory, const std::string& srSourceFile) 
+convert_gen::convert_gen(l10nMem& cMemory, const std::string& sSourceFile) 
 {
-  // did the user give a .xxx with the source file ?
-  int nInx = srSourceFile.rfind(".");
-  if (nInx == (int)std::string::npos)
-    throw std::string("source file: ")+srSourceFile+" missing extension";
-
   // do we have an old object
   if (convert_gen_impl::mcImpl)
     delete convert_gen_impl::mcImpl;
 
+  // and set environment
+  convert_gen_impl::mcImpl->msSourceFile = sSourceFile;
+
+  // did the user give a .xxx with the source file ?
+  int nInx = sSourceFile.rfind(".");
+  if (nInx == (int)std::string::npos)
+    throw cMemory.showError("source file: "+sSourceFile+" missing extension");
+
   // find correct conversion class and create correct object
-  std::string sExtension = srSourceFile.substr(nInx+1);
-  if      (sExtension == "hrc")        convert_gen_impl::mcImpl = new convert_src(crMemory);
-  else if (sExtension == "src")        convert_gen_impl::mcImpl = new convert_src(crMemory);
-  else if (sExtension == "po")         convert_gen_impl::mcImpl = new convert_po(crMemory);
-  else if (sExtension == "pot")        convert_gen_impl::mcImpl = new convert_db(crMemory);
-  else if (sExtension == "tree")       convert_gen_impl::mcImpl = new convert_tree(crMemory);
-  else if (sExtension == "ulf")        convert_gen_impl::mcImpl = new convert_ulf(crMemory);
-  else if (sExtension == "xcu")        convert_gen_impl::mcImpl = new convert_xcu(crMemory);
-  else if (sExtension == "xhp")        convert_gen_impl::mcImpl = new convert_xhp(crMemory);
-  else if (sExtension == "xrm")        convert_gen_impl::mcImpl = new convert_xrm(crMemory);
-  else if (sExtension == "properties") convert_gen_impl::mcImpl = new convert_prop(crMemory);
-  else throw std::string("unknown extension on source file: ")+srSourceFile;
+  std::string sExtension = sSourceFile.substr(nInx+1);
+  if      (sExtension == "hrc")        convert_gen_impl::mcImpl = new convert_src(cMemory);
+  else if (sExtension == "src")        convert_gen_impl::mcImpl = new convert_src(cMemory);
+  else if (sExtension == "po")         convert_gen_impl::mcImpl = new convert_po(cMemory);
+  else if (sExtension == "pot")        convert_gen_impl::mcImpl = new convert_db(cMemory);
+  else if (sExtension == "tree")       convert_gen_impl::mcImpl = new convert_tree(cMemory);
+  else if (sExtension == "ulf")        convert_gen_impl::mcImpl = new convert_ulf(cMemory);
+  else if (sExtension == "xcu")        convert_gen_impl::mcImpl = new convert_xcu(cMemory);
+  else if (sExtension == "xhp")        convert_gen_impl::mcImpl = new convert_xhp(cMemory);
+  else if (sExtension == "xrm")        convert_gen_impl::mcImpl = new convert_xrm(cMemory);
+  else if (sExtension == "properties") convert_gen_impl::mcImpl = new convert_prop(cMemory);
+  else throw cMemory.showError("unknown extension on source file: "+sSourceFile);
 
   // and set environment
-  convert_gen_impl::mcImpl->msSourceFile = srSourceFile;
+  convert_gen_impl::mcImpl->msSourceFile = sSourceFile;
 }
 
 
@@ -189,8 +192,7 @@ void convert_gen_impl::writeSourceFile(const std::string& line)
   if (!line.size())
     return;
 
-  std::cout << line;
-  // JIX
+  throw mcMemory.showError("writeSourceFile not implemented");
 }
 
 

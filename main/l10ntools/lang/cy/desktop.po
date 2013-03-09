@@ -1,0 +1,1611 @@
+"X-Accelerator-Marker: ~\n"
+
+#: wizard.src#DLG_FIRSTSTART_WIZARD.modaldialog.text
+msgctxt "wizard.src#DLG_FIRSTSTART_WIZARD.modaldialog.text"
+msgid "Welcome to %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Croeso i %PRODUCTNAME %PRODUCTVERSION"
+
+#: wizard.src#STR_STATE_WELCOME.string.text
+msgid "Welcome"
+msgstr "Croeso"
+
+#: wizard.src#STR_STATE_LICENSE.string.text
+msgid "License Agreement"
+msgstr "Cytundeb Trwyddedu"
+
+#: wizard.src#STR_STATE_MIGRATION.string.text
+msgid "Personal Data"
+msgstr "Data Personol"
+
+#: wizard.src#STR_STATE_USER.string.text
+msgid "User name"
+msgstr "Enw defnyddiwr"
+
+#: wizard.src#STR_STATE_UPDATE_CHECK.string.text
+msgctxt "wizard.src#STR_STATE_UPDATE_CHECK.string.text"
+msgid "Online Update"
+msgstr "Diweddariad Ar-lein"
+
+#: wizard.src#STR_STATE_REGISTRATION.string.text
+msgid "Registration"
+msgstr "Cofrestru"
+
+#: wizard.src#STR_WELCOME_MIGRATION.string.text
+msgid ""
+"This wizard will guide you through the license agreement, the transfer of "
+"user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n"
+"\n"
+"Click 'Next' to continue."
+msgstr ""
+"Bydd y dewin yn eich arwain drwy'r cytundeb trwyddedu, trosglwyddo data'r "
+"defnyddiwr o %OLD_VERSION a chofrestru %PRODUCTNAME.\n"
+"\n"
+"Cliciwch 'Nesaf' i barhau.."
+
+#: wizard.src#STR_WELCOME_WITHOUT_LICENSE.string.text
+msgid ""
+"This wizard will guide you through the registration of %PRODUCTNAME.\n"
+"\n"
+"Click 'Next' to continue."
+msgstr ""
+"Bydd y dewin yn eich harwain drwy gofrestriad %PRODUCTNAME.\n"
+"\n"
+"Cliciwch 'Nesaf' i barhau."
+
+#: wizard.src#STR_FINISH.string.text
+msgid "~Finish"
+msgstr "~Gorffen"
+
+#: wizard.src#STR_REGISTRATION_OOO.string.text
+msgid ""
+"You now have the opportunity to support and contribute to the fastest "
+"growing open source community in the world.\n"
+"\n"
+"Help us prove that %PRODUCTNAME has already gained significant market share "
+"by registering.\n"
+"\n"
+"Registering is voluntary and without obligation."
+msgstr ""
+"Mae gennych y cyfle i gefnogi a chyfrannu tuag at y gymuned cod agored sy'n "
+"tyfu cyflymaf yn y byd.\n"
+"\n"
+"Gallwch ein cynorthwyo i brofi fod %PRODUCTNAME wedi ennill cyfran "
+"arwyddocaol o'r farchnad drwy gofrestru.\n"
+"\n"
+"Mae cofrestru'n gam gwirfoddol a heb unrhyw oblygiad i chi."
+
+#: wizard.src#ERRBOX_REG_NOSYSBROWSER.errorbox.text
+msgid ""
+"An error occurred in starting the web browser.\n"
+"Please check the %PRODUCTNAME and web browser settings."
+msgstr ""
+"Digwyddodd gwall wrth gychwyn y porwr.\n"
+"Gwiriwch osodiadau %PRODUCTNAME a'r porwr."
+
+#: wizard.src#QB_ASK_DECLINE.querybox.text
+msgid "Do you really want to decline?"
+msgstr "Ydych chi wir am wrthod?"
+
+#: wizard.src#TP_WELCOME.FT_WELCOME_HEADER.fixedtext.text
+msgctxt "wizard.src#TP_WELCOME.FT_WELCOME_HEADER.fixedtext.text"
+msgid "Welcome to %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Croeso i %PRODUCTNAME %PRODUCTVERSION"
+
+#: wizard.src#TP_WELCOME.FT_WELCOME_BODY.fixedtext.text
+msgid ""
+"This wizard will guide you through the license agreement and the "
+"registration of %PRODUCTNAME.\n"
+"\n"
+"Click 'Next' to continue."
+msgstr ""
+"Bydd y dewin yn eich arwain drwy'r cytundeb trwyddedu a chofrestru %"
+"PRODUCTNAME.\n"
+"\n"
+"Cliciwch 'Nesaf' i barhau.."
+
+#: wizard.src#TP_LICENSE.FT_LICENSE_HEADER.fixedtext.text
+msgid "Please follow these steps to accept the license"
+msgstr "Dilynwch y camau canlynol i dderbyn y drwydded"
+
+#: wizard.src#TP_LICENSE.FT_LICENSE_BODY_1.fixedtext.text
+msgid "1."
+msgstr "1."
+
+#: wizard.src#TP_LICENSE.FT_LICENSE_BODY_1_TXT.fixedtext.text
+msgid ""
+"View the complete License Agreement. Please use the scrollbar or the '%"
+"PAGEDOWN' button in this dialog to view the entire license text."
+msgstr ""
+"Darllenwch y Cytundeb Trwyddedu cyfan.  Defnyddiwch y bar sgrolio neu'r "
+"botwm  '%PAGEDOWN' er mwyn ei darllen i gyd."
+
+#: wizard.src#TP_LICENSE.FT_LICENSE_BODY_2.fixedtext.text
+msgid "2."
+msgstr "2."
+
+#: wizard.src#TP_LICENSE.FT_LICENSE_BODY_2_TXT.fixedtext.text
+msgid "Click 'Accept' to accept the terms of the Agreement."
+msgstr "Cliciwch 'Derbyn' i dderbyn amodau'r Cytundeb"
+
+#: wizard.src#TP_LICENSE.PB_LICENSE_DOWN.pushbutton.text
+msgid "Scroll Do~wn"
+msgstr "Sgrolio ~Lawr"
+
+#: wizard.src#STR_LICENSE_ACCEPT.string.text
+msgid "~Accept"
+msgstr "~Derbyn"
+
+#: wizard.src#STR_LICENSE_DECLINE.string.text
+msgid "~Decline"
+msgstr "~Gwrthod"
+
+#: wizard.src#TP_MIGRATION.FT_MIGRATION_HEADER.fixedtext.text
+msgctxt "wizard.src#TP_MIGRATION.FT_MIGRATION_HEADER.fixedtext.text"
+msgid "Transfer personal data"
+msgstr "Trosglwyddo gwybodaeth bersonol"
+
+#: wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.fixedtext.text
+msgid ""
+"Most personal data from %OLDPRODUCT installation can be reused in %"
+"PRODUCTNAME %PRODUCTVERSION.\n"
+"\n"
+"If you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, "
+"unmark the check box."
+msgstr ""
+"Mae modd defnyddio'r rhan fwyaf o ddata personol o %OLDPRODUCT yn %"
+"PRODUCTNAME %PRODUCTVERSION.\n"
+"\n"
+"Os nad ydych am ail ddefnyddio unrhyw osodiadau yn %PRODUCTNAME %"
+"PRODUCTVERSION, dad-diciwch y blwch."
+
+#: wizard.src#TP_MIGRATION.CB_MIGRATION.checkbox.text
+msgctxt "wizard.src#TP_MIGRATION.CB_MIGRATION.checkbox.text"
+msgid "Transfer personal data"
+msgstr "Trosglwyddo gwybodaeth bersonol"
+
+#: wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_HEADER.fixedtext.text
+msgctxt "wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_HEADER.fixedtext.text"
+msgid "Online Update"
+msgstr "Diweddariad Ar-lein"
+
+#: wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_BODY.fixedtext.text
+msgid ""
+"%PRODUCTNAME searches automatically at regular intervals for new versions.\n"
+"In doing so online update does not transfer personal data.\n"
+"As soon as a new version is available, you will be notified.\n"
+"\n"
+"You can configure this feature at Tools / Options... / %PRODUCTNAME / Online "
+"Update."
+msgstr ""
+"Mae %PRODUCTNAME yn chwilio yn awtomatig ar gyfnodau penodol am fersiwn "
+"newydd.\n"
+"Wrth wneud hynny nid yw'r diweddaru ar-lein yn trosglwyddo data personol.\n"
+"Cewch eich hysbysu cynted ag y bydd fersiwn newydd ar gael.\n"
+"\n"
+"Gallwch ffurfweddu'r nodwedd yn Offer/Dewisiadau.../ %PRODUCTNAME / "
+"Diweddaru Ar-lein."
+
+#: wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.checkbox.text
+msgid "~Check for updates automatically"
+msgstr "~Gwirio am ddiweddariadau yn awtomatig."
+
+#: wizard.src#TP_USER.FT_USER_HEADER.fixedtext.text
+msgid "Provide your full name and initials below"
+msgstr "Rhowch eich enw llawn isod"
+
+#: wizard.src#TP_USER.FT_USER_BODY.fixedtext.text
+msgid ""
+"The user name will be used in the document properties, templates and when "
+"you record changes made to documents."
+msgstr ""
+"Bydd yr enw defnyddiwr yn cael ei ddefnyddio ym mrhiodweddau dogfennau, "
+"templedi a phan fyddwch yn cofnodi newidiadau mewn dogfennau."
+
+#: wizard.src#TP_USER.FT_USER_FIRST.fixedtext.text
+msgid "~First name"
+msgstr "Enw ~cyntaf"
+
+#: wizard.src#TP_USER.FT_USER_LAST.fixedtext.text
+msgid "~Last name"
+msgstr "Enw ~olaf"
+
+#: wizard.src#TP_USER.FT_USER_INITIALS.fixedtext.text
+msgid "~Initials"
+msgstr "~Llythrennau"
+
+#: wizard.src#TP_USER.FT_USER_FATHER.fixedtext.text
+msgid "~Father's name"
+msgstr "~Enw eich tad"
+
+#: wizard.src#TP_REGISTRATION.FT_REGISTRATION_HEADER.fixedtext.text
+msgid "%PRODUCTNAME Registration"
+msgstr "Cofrestru %PRODUCTNAME"
+
+#: wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.fixedtext.text
+msgid ""
+"You now have the opportunity to register as a %PRODUCTNAME user. "
+"Registration is voluntary and is without obligation.\n"
+"\n"
+"If you register, we can inform you about new developments concerning this "
+"product."
+msgstr ""
+"Mae gennych gyfle i gofrestru fel defnyddiwr %PRODUCTNAME. Mae cofrestru yn "
+"beth gwirfoddol a does dim rhwymedigaeth.\n"
+"\n"
+"Os fyddwch yn cofrestru, gallwn eich hysbysu am ddatblygiadau newydd ynglŷn "
+"â'r cynnyrch."
+
+#: wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.radiobutton.text
+msgid "I want to register ~now"
+msgstr "Rwyf am gofrestru ~nawr"
+
+#: wizard.src#TP_REGISTRATION.RB_REGISTRATION_LATER.radiobutton.text
+msgid "I want to register ~later"
+msgstr "Rwyf am gofrestru yn ~hwyrach"
+
+#: wizard.src#TP_REGISTRATION.RB_REGISTRATION_NEVER.radiobutton.text
+msgid "I do not want to ~register"
+msgstr "~Nid wyf am gofrestru"
+
+#: wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.fixedtext.text
+msgid ""
+"We hope you enjoy working with %PRODUCTNAME.\n"
+"\n"
+"To exit the wizard, click 'Finish'."
+msgstr ""
+"Rydym yn gobeithio y byddwch yn mwynhau gweithio gyda %PRODUCTNAME.\n"
+"\n"
+"I adael y dewin, cliciwch 'Gorffen'."
+
+#~ msgid ""
+#~ "This wizard will guide you through the license agreement and the "
+#~ "registration of %PRODUCTNAME.\n"
+#~ "\n"
+#~ "Important information is contained in the readme file which is located in "
+#~ "the %PRODUCTNAME product directory. Please read this file carefully.\n"
+#~ "\n"
+#~ "You can also find detailed information on the Sun Internet pages at\n"
+#~ "\n"
+#~ "http://www.sun.com/%PRODUCTNAME.\n"
+#~ "\n"
+#~ "Click 'Next' to continue."
+#~ msgstr ""
+#~ "Bydd y dewin yn eich arwain drwy'r cytundeb trwyddedu a chofrestru "
+#~ "%PRODUCTNAME.\n"
+#~ "\n"
+#~ "Mae gwybodaeth bwysig i'w gael yn y ffeiliau darllen fi sydd i'w cael yng "
+#~ "nghyfeiriadur cynnyrch  %PRODUCTNAME. Darllenwch y ffeiliau yn ofalus. Mae "
+#~ "gwybodaeth fanwl hefyd ar safle Sun \n"
+#~ "\n"
+#~ "Mae manylion pellach i'w cael ar dudalennau Gwe Sun:\n"
+#~ "\n"
+#~ "http://www.sun.com/%PRODUCTNAME.\n"
+#~ "\n"
+#~ "Cliciwch 'Nesaf' i barhau.."
+
+#~ msgid ""
+#~ "This wizard will guide you through the license agreement and the "
+#~ "registration of %PRODUCTNAME.\n"
+#~ "\n"
+#~ "Important information is contained in the readme files which are located in "
+#~ "the %PRODUCTNAME product directory. Please read these files carefully. You "
+#~ "can also find detailed information on the Sun website \n"
+#~ "\n"
+#~ "http://www.sun.com/%PRODUCTNAME.\n"
+#~ "\n"
+#~ "Support:\n"
+#~ "\n"
+#~ "Get FREE software support valid for 60 days from date of purchase. To take "
+#~ "advantage of this offer, visit the website below.\n"
+#~ "\n"
+#~ "http://www.sun.com/star/service\n"
+#~ "\n"
+#~ "Click 'Next' to continue."
+#~ msgstr ""
+#~ "Bydd y dewin yn eich arwain drwy gytundeb trwyddedu a chofrestru "
+#~ "%PRODUCTNAME.\n"
+#~ "\n"
+#~ "Mae gwybodaeth bwysig i'w gael yn y ffeiliau darllen fi sydd wedi eu lleoli "
+#~ "yng nghyfeiriadur cynnyrch %PRODUCTNAME. Darllenwch y ffeiliau hyn yn "
+#~ "ofalus. Mae gwybodaeth fanwl hefyd i'w gael ar safle Sun \n"
+#~ "\n"
+#~ "http://www.sun.com/%PRODUCTNAME.\n"
+#~ "\n"
+#~ "Cefnogaeth:\n"
+#~ "\n"
+#~ "Cewch gefnogaeth meddalwedd AM DDIM am 60 niwrnod o'r dyddiad prynu. I "
+#~ "gymryd mantais o'r cynnig, ewch i'r safle gwe isod.\n"
+#~ "\n"
+#~ "http://www.sun.com/star/service\n"
+#~ "\n"
+#~ "Cliciwch 'Nesaf' i barhau."
+
+#~ msgid ""
+#~ "This wizard will guide you through the license agreement and the "
+#~ "registration of %PRODUCTNAME.\n"
+#~ "\n"
+#~ "This version lets you evaluate the full functionality. However, since it is "
+#~ "an evaluation version, you will be able to start it within %EVALDAYS days "
+#~ "after installation. To find out more about the %PRODUCTNAME product, visit "
+#~ "www.sun.com/%PRODUCTNAME\n"
+#~ "\n"
+#~ "Click 'Next' to continue."
+#~ msgstr ""
+#~ "Bydd y dewin yn eich arwain drwy'r cytundeb trwyddedu a chofrestru "
+#~ "%PRODUCTNAME.\n"
+#~ "\n"
+#~ "Mae'r fersiwn yma'n caniatáu i chi werthuso'r swyddogaethau'n llawn. Er "
+#~ "hynny, gan ei fod yn fersiwn gwerthuso, byddwch yn gallu ei gychwyn o fewn "
+#~ "%EVALDAYS niwrnod o'i osod. I ganfod mwy am %PRODUCTNAME, ewch i "
+#~ "www.sun.com/%PRODUCTNAME\n"
+#~ "\n"
+#~ "Cliciwch 'Nesaf' i barhau."
+
+#~ msgid "Steps"
+#~ msgstr "Camau"
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: ~\n"
+
+#: desktop.src#STR_RECOVER_QUERY.string.text
+msgid "Should the file \"$1\" be restored?"
+msgstr "A ddylai'r ffeil \"$1\"gael ei hadfer?"
+
+#: desktop.src#STR_RECOVER_TITLE.string.text
+msgid "File Recovery"
+msgstr "Adfer Ffeil"
+
+#: desktop.src#STR_RECOVER_PREPARED.warningbox.text
+msgid ""
+"An unrecoverable error has occurred.\n"
+"\n"
+"All modified files have been saved and can\n"
+"probably be recovered at program restart."
+msgstr ""
+"Digwyddodd gwall anadferadwy.\n"
+"\n"
+"Mae pob ffeil newidiwyd wedi eu cadw ac mae'n\n"
+"bosibl bod modd eu hadfer wrth ailgychwyn y rhaglen."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_CANNOT_START.string.text
+msgid "The application cannot be started. "
+msgstr "Methu cychwyn y rhaglen"
+
+#: desktop.src#STR_BOOTSTRAP_ERR_DIR_MISSING.string.text
+msgid "The configuration directory \"$1\" could not be found."
+msgstr "Methu canfod cyfeiriadur ffurfweddu \"$1\"."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_PATH_INVALID.string.text
+msgid "The installation path is invalid."
+msgstr "Mae'r llwybr gosod yn annilys."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_NO_PATH.string.text
+msgid "The installation path is not available."
+msgstr "Nid yw'r llwybr gosod ar gael."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_INTERNAL.string.text
+msgid "An internal error occurred."
+msgstr "Ddigwyddodd gwall mewnol"
+
+#: desktop.src#STR_BOOTSTRAP_ERR_FILE_CORRUPT.string.text
+msgid "The configuration file \"$1\" is corrupt."
+msgstr "Mae'r ffeil ffurfweddiad \"$1\" wedi llygru."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_FILE_MISSING.string.text
+msgid "The configuration file \"$1\" was not found."
+msgstr "Methu canfod ffeil ffurfweddiad \"$1\"."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_NO_SUPPORT.string.text
+msgid "The configuration file \"$1\" does not support the current version."
+msgstr "Nid yw'r ffeil ffurfweddiad \"$1\" yn cynnal y fersiwn presennol."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_LANGUAGE_MISSING.string.text
+msgid "The user interface language cannot be determined."
+msgstr "Nid oes modd adnabod iaith rhyngwyneb y defnyddiwr."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_NO_SERVICE.string.text
+msgid "The component manager is not available."
+msgstr "Nid yw'r rheolwr cydrannol ar gael"
+
+#: desktop.src#STR_BOOTSTRAP_ERR_NO_CFG_SERVICE.string.text
+msgid "The configuration service is not available."
+msgstr "Nid yw'r gwasanaeth ffurfweddu ar gael"
+
+#: desktop.src#STR_BOOTSTRAP_ERR_MULTISESSION.string.text
+msgid ""
+"You have another instance running in a different terminal session. Close "
+"that instance and then try again."
+msgstr ""
+
+#: desktop.src#STR_ASK_START_SETUP_MANUALLY.string.text
+msgid ""
+"Start the setup application to repair the installation from the CD or the "
+"folder containing the installation packages."
+msgstr ""
+"Cychwyn y rhaglen osod i drwsio'r gosodiad o'r CD neu ffolder sy'n cynnwys y "
+"pecynnau gosod."
+
+#: desktop.src#STR_CONFIG_ERR_SETTINGS_INCOMPLETE.string.text
+msgid ""
+"The startup settings for accessing the central configuration are incomplete. "
+""
+msgstr ""
+"Mae'r gosodiadau cychwyn ar gyfer cael mynediad i'r ffurfweddiad canolog yn "
+"anghyflawn."
+
+#: desktop.src#STR_CONFIG_ERR_CANNOT_CONNECT.string.text
+msgid "A connection to the central configuration could not be established. "
+msgstr "Methu creu cysylltiad i'r ffurfwedd ganolog."
+
+#: desktop.src#STR_CONFIG_ERR_RIGHTS_MISSING.string.text
+msgid ""
+"You cannot access the central configuration because of missing access "
+"rights. "
+msgstr ""
+"Methu cael mynediad i'r ffurfweddiad canolog oherwydd diffyg caniatâd "
+"mynediad. "
+
+#: desktop.src#STR_CONFIG_ERR_ACCESS_GENERAL.string.text
+msgid "A general error occurred while accessing your central configuration. "
+msgstr ""
+"Digwyddodd gwall cyffredinol wrth gael mynediad i'ch ffurfweddiad canolog."
+
+#: desktop.src#STR_CONFIG_ERR_NO_WRITE_ACCESS.string.text
+msgid ""
+"The changes to your personal settings cannot be stored centrally because of "
+"missing access rights. "
+msgstr ""
+"Methu cadw newidiadau i'ch gosodiadau personol oherwydd hawliau mynediad "
+"canolog coll."
+
+#: desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.string.text
+msgid ""
+"%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME "
+"configuration data.\n"
+"\n"
+"Please contact your system administrator."
+msgstr ""
+"Methu cychwyn %PRODUCTNAME oherwydd gwall mynediad i ddata ffurfweddu %"
+"PRODUCTNAME.\n"
+"\n"
+"Cysylltwch â'ch gweinyddwr system."
+
+#: desktop.src#STR_INTERNAL_ERRMSG.string.text
+msgid "The following internal error has occurred: "
+msgstr "Digwyddodd y gwall mewnol canlynol:"
+
+#: desktop.src#QBX_USERDATALOCKED.querybox.text
+msgid ""
+"Either another instance of %PRODUCTNAME is accessing your personal settings "
+"or your personal settings are locked.\n"
+"Simultaneous access can lead to inconsistencies in your personal settings. "
+"Before continuing, you should make sure user '$u' closes %PRODUCTNAME on "
+"host '$h'.\n"
+"\n"
+"Do you really want to continue?"
+msgstr ""
+"Un ai mae enghraifft arall o %PRODUCTNAME yn cael mynediad i'ch gosodiadau "
+"personol neu mae eich gosodiadau personol wedi eu cloi.\n"
+"Gall mynediad ar y cyd greu anghysonderau i'ch gosodiadau personol. Cyn "
+"parhau, dylech sicrhau fod defnyddiwr '$u' yn cau %PRODUCTNAME ar westeiwr "
+"'$h'.\n"
+"\n"
+"Ydych chi am barhau?"
+
+#: desktop.src#STR_TITLE_USERDATALOCKED.string.text
+msgctxt "desktop.src#STR_TITLE_USERDATALOCKED.string.text"
+msgid "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
+
+#: desktop.src#EBX_ERR_PRINTDISABLED.errorbox.text
+msgid "Printing is disabled. No documents can be printed."
+msgstr "Mae argraffu wedi ei anablu. Nid oes modd argraffu dogfennau."
+
+#: desktop.src#INFOBOX_EXPIRED.infobox.text
+msgid ""
+"This Evaluation Version has expired. To find out more about %PRODUCTNAME,\n"
+"visit http://www.oracle.com/us/products/applications/open-office."
+msgstr ""
+"Mae'r Fersiwn Gwerthuso wedi dod i ben. I wybod mwy am %PRODUCTNAME\n"
+"ewch i www.sun.com/%PRODUCTNAME."
+
+#: desktop.src#STR_TITLE_EXPIRED.string.text
+msgctxt "desktop.src#STR_TITLE_EXPIRED.string.text"
+msgid "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
+
+#: desktop.src#STR_BOOTSTRAP_ERR_NO_PATHSET_SERVICE.string.text
+msgid "The path manager is not available.\n"
+msgstr "Nid yw'r rheolwr llwybr ar gael.\n"
+
+#: desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.string.text
+msgid ""
+"%PRODUCTNAME user installation could not be completed due to insufficient "
+"free disk space. Please free more disc space at the following location and "
+"restart %PRODUCTNAME:\n"
+"\n"
+msgstr ""
+"Nid oedd modd cwblhau gosodiad defnyddiwr %PRODUCTNAME am nad oedd yna "
+"ddigon o le rhydd ar ddisg. Ryddhewch le yn y lleoliad canlynol ac "
+"ailgychwyn %PRODUCTNAME:\n"
+"\n"
+
+#: desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.string.text
+msgid ""
+"%PRODUCTNAME user installation could not be processed due to missing access "
+"rights. Please make sure that you have sufficient access rights for the "
+"following location and restart %PRODUCTNAME:\n"
+"\n"
+msgstr ""
+"Nid oedd modd prosesu gosodiad defnyddiwr %PRODUCTNAME oherwydd hawl "
+"mynediad coll. Gwnewch yn siŵr fod gennych hawl mynediad digonol ar gyfer y "
+"lleoliad canlynol ac ailgychwyn %PRODUCTNAME:\n"
+"\n"
+"X-Generator: Pootle 2.1.6\n"
+"X-Accelerator-Marker: ~\n"
+
+#: dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.fixedtext.text
+msgid ""
+"The extension cannot be installed as the following\n"
+"system dependencies are not fulfilled:"
+msgstr ""
+"Nid oes modd gosod yr estyniad gan nad yw'r \n"
+"dibyniaethau system canlynol wedi eu bodloni:"
+
+#: dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.modaldialog.text
+msgid "System dependencies check"
+msgstr "Gwiriad dibyniaethau system"
+
+#: dp_gui_dialog.src#RID_STR_ADD_PACKAGES.string.text
+msgid "Add Extension(s)"
+msgstr "Ychwanegu Estyniad"
+
+#: dp_gui_dialog.src#RID_CTX_ITEM_REMOVE.string.text
+msgid "~Remove"
+msgstr "~Tynnu"
+
+#: dp_gui_dialog.src#RID_CTX_ITEM_ENABLE.string.text
+msgid "~Enable"
+msgstr "~Galluogi"
+
+#: dp_gui_dialog.src#RID_CTX_ITEM_DISABLE.string.text
+msgid "~Disable"
+msgstr "~Anablu"
+
+#: dp_gui_dialog.src#RID_CTX_ITEM_CHECK_UPDATE.string.text
+msgid "~Update..."
+msgstr "~Diweddariad..."
+
+#: dp_gui_dialog.src#RID_CTX_ITEM_OPTIONS.string.text
+msgid "~Options..."
+msgstr "~Dewisiadau..."
+
+#: dp_gui_dialog.src#RID_STR_ADDING_PACKAGES.string.text
+msgctxt "dp_gui_dialog.src#RID_STR_ADDING_PACKAGES.string.text"
+msgid "Adding %EXTENSION_NAME"
+msgstr "Ychwanegu %EXTENSION_NAME"
+
+#: dp_gui_dialog.src#RID_STR_REMOVING_PACKAGES.string.text
+msgid "Removing %EXTENSION_NAME"
+msgstr "Tynnu %EXTENSION_NAME"
+
+#: dp_gui_dialog.src#RID_STR_ENABLING_PACKAGES.string.text
+msgid "Enabling %EXTENSION_NAME"
+msgstr "Galluogi %EXTENSION_NAME"
+
+#: dp_gui_dialog.src#RID_STR_DISABLING_PACKAGES.string.text
+msgid "Disabling %EXTENSION_NAME"
+msgstr "Anablu %EXTENSION_NAME"
+
+#: dp_gui_dialog.src#RID_STR_ACCEPT_LICENSE.string.text
+msgid "Accept license for %EXTENSION_NAME"
+msgstr "Derbyn trwydded %EXTENSION_NAME"
+
+#: dp_gui_dialog.src#RID_STR_INSTALL_FOR_ALL.string.text
+msgid "~For all users"
+msgstr "~Ar gyfer pob defnyddiwr"
+
+#: dp_gui_dialog.src#RID_STR_INSTALL_FOR_ME.string.text
+msgid "~Only for me"
+msgstr "~Fi yn unig"
+
+#: dp_gui_dialog.src#RID_STR_ERROR_UNKNOWN_STATUS.string.text
+msgid "Error: The status of this extension is unknown"
+msgstr "Gwall: Nid yw statws yr estyniad yn hysbys"
+
+#: dp_gui_dialog.src#RID_STR_CLOSE_BTN.string.text
+msgctxt "dp_gui_dialog.src#RID_STR_CLOSE_BTN.string.text"
+msgid "Close"
+msgstr "Cau"
+
+#: dp_gui_dialog.src#RID_STR_EXIT_BTN.string.text
+msgid "Quit"
+msgstr "Gadael"
+
+#: dp_gui_dialog.src#RID_STR_NO_ADMIN_PRIVILEGE.string.text
+msgid ""
+"%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME "
+"extensions are not compatible with this version and need to be updated "
+"before %PRODUCTNAME can be started.\n"
+"\n"
+"Updating of shared extension requires administrator privileges. Contact your "
+"system administrator to update the following shared extensions:"
+msgstr ""
+"Mae %PRODUCTNAME wedi ei ddiweddaru i fersiwn newydd. Nid yw rhai estyniadau "
+"%PRODUCTNAME yn cydweddu gyda'r fersiwn yma ac mae angen eu diweddaru cyn "
+"bod modd cychwyn %PRODUCTNAME.\n"
+"\n"
+"Mae diweddaru estyniadau yn gofyn am ganiatâd gweinyddwr. Cysylltwch â'ch "
+"gweinyddwr system i ddiweddaru'r estyniadau rhanedig canlynol:\n"
+
+#: dp_gui_dialog.src#RID_STR_ERROR_MISSING_DEPENDENCIES.string.text
+msgid ""
+"The extension cannot be enabled as the following system dependencies are not "
+"fulfilled:"
+msgstr ""
+"Nid oes modd galluogi'r estyniad gan nad yw'r \n"
+"dibyniaethau system canlynol wedi eu bodloni:"
+
+#: dp_gui_dialog.src#RID_STR_ERROR_MISSING_LICENSE.string.text
+msgid "This extension is disabled because you haven't accepted the license yet.\n"
+msgstr "Mae'r estyniad wedi ei anablu gan nad ydych wedi derbyn y drwydded eto.\n"
+
+#: dp_gui_dialog.src#RID_STR_SHOW_LICENSE_CMD.string.text
+msgid "Show license"
+msgstr "Dangos trwydded"
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_HEADER.fixedtext.text
+msgid ""
+"Please follow these steps to proceed with the installation of the extension:"
+msgstr "Dilynwch y camau canlynol i osod yr estyniad:"
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1.fixedtext.text
+msgid "1."
+msgstr "1."
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1_TXT.fixedtext.text
+msgid ""
+"Read the complete License Agreement. Use the scroll bar or the \\'Scroll "
+"Down\\' button in this dialog to view the entire license text."
+msgstr ""
+"Darllenwch y Cytundeb Trwyddedu. Defnyddiwch y bar sgrolio neu'r botwm "
+"\\'Sgrolio i Lawr\\' yn y deialog i ddarllen yr holl destun."
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2.fixedtext.text
+msgid "2."
+msgstr "2."
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2_TXT.fixedtext.text
+msgid ""
+"Accept the License Agreement for the extension by pressing the \\'Accept\\' "
+"button."
+msgstr "Derbyn Cytundeb Trwyddedu'r estyniad drwy glicio'r botwm \\'Derbyn\\'."
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.PB_LICENSE_DOWN.pushbutton.text
+msgid "~Scroll Down"
+msgstr "~Sgrolio Lawr"
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_ACCEPT.okbutton.text
+msgid "Accept"
+msgstr "Derbyn"
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_DECLINE.cancelbutton.text
+msgid "Decline"
+msgstr "Gwrthod"
+
+#: dp_gui_dialog.src#RID_DLG_LICENSE.modaldialog.text
+msgctxt "dp_gui_dialog.src#RID_DLG_LICENSE.modaldialog.text"
+msgid "Extension Software License Agreement"
+msgstr "Cytundeb Trwyddedu Meddalwedd Estyniad"
+
+#: dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.RID_EM_BTN_CLOSE.okbutton.text
+msgctxt "dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.RID_EM_BTN_CLOSE.okbutton.text"
+msgid "Close"
+msgstr "Cau"
+
+#: dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.modaldialog.text
+msgctxt "dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.modaldialog.text"
+msgid "Extension Software License Agreement"
+msgstr "Cytundeb Trwyddedu Meddalwedd Estyniad"
+
+#: dp_gui_dialog.src#RID_WARNINGBOX_INSTALL_EXTENSION.warningbox.text
+msgid ""
+"You are about to install the extension \\'%NAME\\'.\n"
+"Click \\'OK\\' to proceed with the installation.\n"
+"Click \\'Cancel\\' to stop the installation."
+msgstr ""
+"Rydych ar fin gosod estyniad \\'%NAME\\'.\n"
+"Cliciwch \\'Iawn\\' i barhau gyda'r gosod.\n"
+"Cliciwch \\'Diddymu'\\' i atal y gosod."
+
+#: dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_EXTENSION.warningbox.text
+msgid ""
+"You are about to remove the extension \\'%NAME\\'.\n"
+"Click \\'OK\\' to remove the extension.\n"
+"Click \\'Cancel\\' to stop removing the extension."
+msgstr ""
+"Rydych ar fin tynnu estyniad \\'%NAME\\'.\n"
+"Cliciwch \\'Iawn\\' i dynnu'r estyniad.\n"
+"Cliciwch \\'Diddymu'\\' i atal tynnu'r estyniad."
+
+#: dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_SHARED_EXTENSION.warningbox.text
+msgid ""
+"Make sure that no further users are working with the same %PRODUCTNAME, when "
+"changing shared extensions in a multi user environment.\n"
+"Click \\'OK\\' to remove the extension.\n"
+"Click \\'Cancel\\' to stop removing the extension."
+msgstr ""
+"Gwnewch yn siŵr nad oes defnyddwyr eraill yn gweithio gyda'r un %"
+"PRODUCTNAME, wrth newid estyniadau wedi eu rhannu mewn amgylchedd defnyddiwr "
+"niferus.\n"
+"Cliciwch \\'Iawn\\' i dynnu'r estyniad.\n"
+"Cliciwch \\'Diddymu\\' i atal tynnu'r gosod."
+
+#: dp_gui_dialog.src#RID_WARNINGBOX_ENABLE_SHARED_EXTENSION.warningbox.text
+msgid ""
+"Make sure that no further users are working with the same %PRODUCTNAME, when "
+"changing shared extensions in a multi user environment.\n"
+"Click \\'OK\\' to enable the extension.\n"
+"Click \\'Cancel\\' to stop enabling the extension."
+msgstr ""
+"Gwnewch yn siŵr nad oes defnyddwyr eraill yn gweithio gyda'r un %"
+"PRODUCTNAME, wrth newid estyniadau wedi eu rhannu mewn amgylchedd defnyddiwr "
+"niferus.\n"
+"Cliciwch \\'Iawn\\' i alluogi'r estyniad.\n"
+"Cliciwch \\'Diddymu\\' i atal galluogi'r estyniad."
+
+#: dp_gui_dialog.src#RID_WARNINGBOX_DISABLE_SHARED_EXTENSION.warningbox.text
+msgid ""
+"Make sure that no further users are working with the same %PRODUCTNAME, when "
+"changing shared extensions in a multi user environment.\n"
+"Click \\'OK\\' to disable the extension.\n"
+"Click \\'Cancel\\' to stop disabling the extension."
+msgstr ""
+"Gwnewch yn siŵr nad oes defnyddwyr eraill yn gweithio gyda'r un %"
+"PRODUCTNAME, wrth newid estyniadau wedi eu rhannu mewn amgylchedd defnyddiwr "
+"niferus.\n"
+"Cliciwch \\'Iawn\\' i anablu'r estyniad.\n"
+"Cliciwch \\'Diddymu\\' i beidio anablu’r estyniad."
+
+#: dp_gui_dialog.src#RID_STR_UNSUPPORTED_PLATFORM.string.text
+msgid "The extension \\'%Name\\' does not work on this computer."
+msgstr "Nid yw'r estyniad \\'%Name\\'yn gweithio ar y cyfrifiadur hwn."
+
+#: dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_ADD.pushbutton.text
+msgid "~Add..."
+msgstr "~Ychwanegu..."
+
+#: dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CHECK_UPDATES.pushbutton.text
+msgctxt "dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CHECK_UPDATES.pushbutton.text"
+msgid "Check for ~Updates..."
+msgstr "Gwirio am ~Ddiweddariad..."
+
+#: dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_FT_GET_EXTENSIONS.fixedtext.text
+msgid "Get more extensions online..."
+msgstr "Estyn mwy o estyniau ar-lein..."
+
+#: dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_FT_PROGRESS.fixedtext.text
+msgctxt "dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_FT_PROGRESS.fixedtext.text"
+msgid "Adding %EXTENSION_NAME"
+msgstr "Ychwanegu %EXTENSION_NAME"
+
+#: dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CLOSE.okbutton.text
+msgctxt "dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CLOSE.okbutton.text"
+msgid "Close"
+msgstr "Cau"
+
+#: dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.modelessdialog.text
+msgid "Extension Manager"
+msgstr "Rheolwr Estyniadau"
+
+#: dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_MSG.fixedtext.text
+msgid ""
+"%PRODUCTNAME has been updated to a new version. Some installed %PRODUCTNAME "
+"extensions are not compatible with this version and need to be updated "
+"before they can be used."
+msgstr ""
+"Mae %PRODUCTNAME wedi ei ddiweddaru i fersiwn newydd. Nid yw rhai estyniadau "
+"sydd ar %PRODUCTNAME yn cydweddu a'r fersiwn yma ac mae angen eu diweddaru "
+"cyn bod modd eu defnyddio."
+
+#: dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_PROGRESS.fixedtext.text
+msgctxt "dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_PROGRESS.fixedtext.text"
+msgid "Adding %EXTENSION_NAME"
+msgstr "Ychwanegu %EXTENSION_NAME"
+
+#: dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CHECK_UPDATES.pushbutton.text
+msgctxt "dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CHECK_UPDATES.pushbutton.text"
+msgid "Check for ~Updates..."
+msgstr "Gwirio am ~Ddiweddariad..."
+
+#: dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CLOSE.pushbutton.text
+msgid "Disable all"
+msgstr "Analluogi popeth"
+
+#: dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.modaldialog.text
+msgid "Extension Update Required"
+msgstr "Mae angen Diweddaru'r Estyniad"
+
+#: dp_gui_dialog2.src#RID_QUERYBOX_INSTALL_FOR_ALL.querybox.text
+msgid ""
+"Make sure that no further users are working with the same %PRODUCTNAME, when "
+"installing an extension for all users in a multi user environment.\n"
+"\n"
+"For whom do you want to install the extension?\n"
+msgstr ""
+"Gwnewch yn siŵr nad oes rhagor o ddefnyddwyr yn gweithio gyda'r un %"
+"PRODUCTNAME, wrth osod estyniad ar gyfer pob defnyddiwr mewn amgylchedd "
+"defnyddwyr niferus.\n"
+"\n"
+"Ar gyfer pwy rydych yn gosod yr estyniad?\n"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CHECKING.fixedtext.text
+msgid "Checking..."
+msgstr "Gwirio..."
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_UPDATE.fixedtext.text
+msgid "~Available extension updates"
+msgstr "~Ddiweddariadau esryniadau sydd ar gael"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ALL.checkbox.text
+msgid "~Show all updates"
+msgstr "~Dangos pob diweddariad"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_DESCRIPTION.fixedline.text
+msgid "Description"
+msgstr "Disgrifiad"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_PUBLISHER_LABEL.fixedtext.text
+msgid "Publisher:"
+msgstr "Cyhoeddwr:"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_RELEASENOTES_LABEL.fixedtext.text
+msgid "What is new:"
+msgstr "Beth sy'n newydd:"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_RELEASENOTES_LINK.fixedtext.text
+msgid "Release Notes"
+msgstr "Nodiadau Ryddhau"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_OK.pushbutton.text
+msgid "~Install"
+msgstr "~Gosod"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CLOSE.pushbutton.text
+msgctxt "dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CLOSE.pushbutton.text"
+msgid "Close"
+msgstr "Cau"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ERROR.string.text
+msgid "Error"
+msgstr "Gwall"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NONE.string.text
+msgid "No new updates are available."
+msgstr "Nid oes diweddariadau newydd ar gael."
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALLABLE.string.text
+msgid ""
+"No installable updates are available. To see ignored or disabled updates, "
+"mark the check box 'Show all updates'."
+msgstr ""
+"Dim diweddariadau gosodadwy ar gael. I weld pob diweddariad, marciwch y "
+"blwch ticio 'Dangos pob diweddariad'."
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_FAILURE.string.text
+msgid "An error occurred:"
+msgstr "Digwyddodd gwall:"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_UNKNOWNERROR.string.text
+msgid "Unknown error."
+msgstr "Gwall anhysbys."
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODESCRIPTION.string.text
+msgid "No more details are available for this update."
+msgstr "Nid oes manylion ar gael ar gyfer y diweddariad hwn."
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALL.string.text
+msgid "The extension cannot be updated because:"
+msgstr "Nid oes modd diweddaru'r estyniad oherwydd:"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY.string.text
+msgid "Required OpenOffice.org version doesn't match:"
+msgstr "Nid yw'r fersiwn o OpenOffice.org yn cydweddu:"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY_CUR_VER.string.text
+msgid "You have OpenOffice.org %VERSION"
+msgstr "Mae gennych OpenOffice.org %VERSION"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_BROWSERBASED.string.text
+msgid "browser based update"
+msgstr "diweddaru drwy'r porwr"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_VERSION.string.text
+msgid "Version"
+msgstr "Fersiwn"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORE.string.text
+msgid "Ignore this Update"
+msgstr "Anwybyddu'r Diweddariad"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORE_ALL.string.text
+msgid "Ignore all Updates"
+msgstr "Anwybyddu pob Diweddariad"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ENABLE.string.text
+msgid "Enable Updates"
+msgstr "Galluogi Diweddariadau"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORED_UPDATE.string.text
+msgid "This update will be ignored.\n"
+msgstr "Bydd y diweddariad yn cael ei anwybyddu.\n"
+
+#: dp_gui_updatedialog.src#RID_DLG_UPDATE.modaldialog.text
+msgid "Extension Update"
+msgstr "Diweddariad Estyniadau"
+
+#: dp_gui_updatedialog.src#RID_WARNINGBOX_UPDATE_SHARED_EXTENSION.warningbox.text
+msgid ""
+"Make sure that no further users are working with the same %PRODUCTNAME, when "
+"changing shared extensions in a multi user environment.\n"
+"Click \\'OK\\' to update the extensions.\n"
+"Click \\'Cancel\\' to stop updating the extensions."
+msgstr ""
+"Gwnewch yn siŵr nad oes defnyddwyr eraill yn gweithio gyda'r un %"
+"PRODUCTNAME, wrth newid estyniadau wedi eu rhannu mewn amgylchedd defnyddiwr "
+"niferus.\n"
+"Cliciwch \\'Iawn\\' i ddiweddaru'r estyniad.\n"
+"Cliciwch \\'Diddymu\\' i beidio diweddaru’r estyniad."
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_DOWNLOADING.fixedtext.text
+msgid "Downloading extensions..."
+msgstr "Llwytho Estyniadau i Lawr..."
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_RESULTS.fixedtext.text
+msgid "Result"
+msgstr "Canlyniad"
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_OK.okbutton.text
+msgid "OK"
+msgstr "Iawn"
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ABORT.cancelbutton.text
+msgid "Cancel Update"
+msgstr "Diddymu Diweddaru"
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_INSTALLING.string.text
+msgid "Installing extensions..."
+msgstr "Gosod estyniadau..."
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_FINISHED.string.text
+msgid "Installation finished"
+msgstr "Cwblhawyd y gosod"
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_NO_ERRORS.string.text
+msgid "No errors."
+msgstr "Dim gwallau."
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_DOWNLOAD.string.text
+msgid "Error while downloading extension %NAME. "
+msgstr "Gwall wrth lwytho i lawr estyniad %NAME. "
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_THIS_ERROR_OCCURRED.string.text
+msgid "The error message is: "
+msgstr "Neges gwall:"
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_INSTALLATION.string.text
+msgid "Error while installing extension %NAME. "
+msgstr "Gwall wrth osod estyniad %NAME. "
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_LIC_DECLINED.string.text
+msgid "The license agreement for extension %NAME was refused. "
+msgstr "Gwrthodwyd cytundeb trwydded estyniad %NAME."
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_EXTENSION_NOINSTALL.string.text
+msgid "The extension will not be installed."
+msgstr "Ni fydd yr estyniad yn cael ei osod."
+
+#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.modaldialog.text
+msgid "Download and Installation"
+msgstr "Llwytho i Lawr a Gosod"
+
+#: dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.warningbox.text
+msgid ""
+"You are about to install version $NEW of the extension \\'$NAME\\'.\n"
+"The newer version $DEPLOYED is already installed.\n"
+"Click \\'OK\\' to replace the installed extension.\n"
+"Click \\'Cancel\\' to stop the installation."
+msgstr ""
+"Rydych ar fin gosod fersiwn $NEW o estyniad \\'$NAME\\'.\n"
+"Mae fersiwn mwy diweddar $DEPLOYED wedi ei osod yn barod.\n"
+"Cliciwch \\'Iawn\\' i gymryd lle'r estyniad sydd wedi ei osod.\n"
+"Cliciwch \\'Diddymu\\' i atal y gosod."
+
+#: dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_LESS_DIFFERENT_NAMES.string.text
+msgid ""
+"You are about to install version $NEW of the extension \\'$NAME\\'.\n"
+"The newer version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\n"
+"Click \\'OK\\' to replace the installed extension.\n"
+"Click \\'Cancel\\' to stop the installation."
+msgstr ""
+"Rydych ar fin gosod fersiwn $NEW o estyniad \\'$NAME\\'.\n"
+"Mae fersiwn mwy diweddar o $DEPLOYED o'r enw named \\'$OLDNAME\\ wedi ei osod "
+"yn barod.\n"
+"Cliciwch \\'Iawn\\' i gymryd lle'r estyniad sydd wedi ei osod.\n"
+"Cliciwch \\'Diddymu\\' i atal y gosod."
+
+#: dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_EQUAL.warningbox.text
+msgid ""
+"You are about to install version $NEW of the extension \\'$NAME\\'.\n"
+"That version is already installed.\n"
+"Click \\'OK\\' to replace the installed extension.\n"
+"Click \\'Cancel\\' to stop the installation."
+msgstr ""
+"Rydych ar fin gosod fersiwn $NEW o estyniad \\'$NAME\\'.\n"
+"Mae'r fersiwn yma wedi ei osod yn barod.\n"
+"Cliciwch \\'Iawn\\' i newid yr estyniad presennol.\n"
+"Cliciwch \\'Diddymu\\' i atal y gosod."
+
+#: dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_EQUAL_DIFFERENT_NAMES.string.text
+msgid ""
+"You are about to install version $NEW of the extension \\'$NAME\\'.\n"
+"That version, named \\'$OLDNAME\\', is already installed.\n"
+"Click \\'OK\\' to replace the installed extension.\n"
+"Click \\'Cancel\\' to stop the installation."
+msgstr ""
+"Rydych ar fin gosod fersiwn $NEW o estyniad \\'$NAME\\'.\n"
+"Mae fersiwn mwy diweddar o \\'$OLDNAME\\' wedi ei osod yn barod.\n"
+"Cliciwch \\'Iawn\\' i gymryd lle'r estyniad sydd wedi ei osod.\n"
+"Cliciwch \\'Diddymu\\' i atal y gosod."
+
+#: dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_GREATER.warningbox.text
+msgid ""
+"You are about to install version $NEW of the extension \\'$NAME\\'.\n"
+"The older version $DEPLOYED is already installed.\n"
+"Click \\'OK\\' to replace the installed extension.\n"
+"Click \\'Cancel\\' to stop the installation."
+msgstr ""
+"Rydych ar fin gosod fersiwn $NEW o estyniad \\'$NAME\\'.\n"
+"Mae fersiwn mwy diweddar o $DEPLOYED' wedi ei osod yn barod.\n"
+"Cliciwch \\'Iawn\\' i gymryd lle'r estyniad sydd wedi ei osod.\n"
+"Cliciwch \\'Diddymu\\' i atal y gosod."
+
+#: dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_GREATER_DIFFERENT_NAMES.string.text
+msgid ""
+"You are about to install version $NEW of the extension \\'$NAME\\'.\n"
+"The older version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\n"
+"Click \\'OK\\' to replace the installed extension.\n"
+"Click \\'Cancel\\' to stop the installation."
+msgstr ""
+"Rydych ar fin gosod fersiwn $NEW o estyniad \\'$NAME\\'.\n"
+"Mae fersiwn mwy diweddar o $DEPLOYED o'r enw named \\'$OLDNAME\\ wedi ei osod "
+"yn barod.\n"
+"Cliciwch \\'Iawn\\' i gymryd lle'r estyniad sydd wedi ei osod.\n"
+"Cliciwch \\'Diddymu\\' i atal y gosod."
+
+#~ msgid "No descriptions available for this extension."
+#~ msgstr "Dim disgrifiad o'r estyniad ar gael"
+
+#~ msgid ""
+#~ "The extension \\'%NAME\\' cannot be installed under \"%PRODUCTNAME Extensions\", "
+#~ "because every user has to agree to the license agreement of the extension. "
+#~ "The extension will not be installed."
+#~ msgstr ""
+#~ "Nid oes modd gosod estyniad  \\'%NAME\\'  yn \"%PRODUCTNAME Extensions\", ganfod "
+#~ "yn rhaid i bob defnyddiwr gyda chytundeb trwydded yr estyniad. Ni fydd yr "
+#~ "estyniad yn cael ei osod."
+
+#~ msgid "The extension cannot be installed because:"
+#~ msgstr "Nid oes modd gosod yr estyniad oherwydd:"
+
+#~ msgid "No write permission (shared extension)."
+#~ msgstr "Dim caniatâd ysgrifennu (estyniad cydran)."
+
+#~ msgid ""
+#~ "No write permission. %PRODUCTNAME needs to run as administrator.\n"
+#~ "Please follow these steps to update this shared extension:\n"
+#~ "1. Close Extension Manager dialog.\n"
+#~ "2. Exit %PRODUCTNAME.\n"
+#~ "3. Exit %PRODUCTNAME Quickstarter located in the tray area of Windows.\n"
+#~ "4. Run %PRODUCTNAME as administrator. In order to do this call the context "
+#~ "menu of the %PRODUCTNAME program icon and choose \\'Run as administrator\\'.\n"
+#~ "5. Call the Extension Manager dialog and update this shared extension.\n"
+#~ msgstr ""
+#~ "Dim hawl ysgrifennu. Mae %PRODUCTNAME angen rhedeg fel gweinyddwr.\n"
+#~ "Dilynwch y camau hyn i ddiweddaru'r estyniad rhanedig:\n"
+#~ "1. Cau deialog Rheolwr Estyniad.\n"
+#~ "2. Gadael %PRODUCTNAME.\n"
+#~ "3. Gadael Cychwyn Cyflym %PRODUCTNAME yng ngilfan Windows.\n"
+#~ "4. Rhedeg %PRODUCTNAME fel gweinyddwr. Er mwyn gwneud hyn galwch y ddewislen "
+#~ "cyd-destun eicon rhaglen  %PRODUCTNAME  a dewis \\'Rhedeg fel gweinyddwr\\'.\n"
+#~ "5. Galw deialog y Rheolwr Estyniad a diweddaru'r estyniad rhanedig.\n"
+
+#~ msgid "D~escription"
+#~ msgstr "D~isgrifiad"
+
+#~ msgid "Browse extensions"
+#~ msgstr "Pori estyniadau"
+
+#~ msgctxt "dp_gui_dialog.src#RID_DLG_PACKAGE_MANAGER.RID_BTN_EXPORT.pushbutton.text"
+#~ msgid "E~xport..."
+#~ msgstr "~Allforio..."
+
+#~ msgid "~Updates..."
+#~ msgstr "~Diweddariadau..."
+
+#~ msgid "Get more extensions here..."
+#~ msgstr "Cael rhagor o estyniadau yma..."
+
+#~ msgid "My Extensions"
+#~ msgstr "Fy Estyniadau"
+
+#~ msgid "%PRODUCTNAME Extensions"
+#~ msgstr "Estyniadau %PRODUCTNAME"
+
+#~ msgid "Extension"
+#~ msgstr "Estyniadau"
+
+#~ msgid "Status"
+#~ msgstr "Statws"
+
+#~ msgid "Enabled"
+#~ msgstr "Galluogwyd"
+
+#~ msgid "Disabled"
+#~ msgstr "Anablwyd"
+
+#~ msgid "Unknown"
+#~ msgstr "Anhysbys"
+
+#~ msgctxt "dp_gui_dialog.src#RID_CTX_ITEM_EXPORT.string.text"
+#~ msgid "E~xport..."
+#~ msgstr "~Allforio..."
+
+#~ msgid "Export Extension"
+#~ msgstr "Allforio Estyniad"
+
+#~ msgid "Export Extensions to..."
+#~ msgstr "Allforio Estyniad i..."
+
+#~ msgid "Exporting Extension(s)"
+#~ msgstr "Allfornio Estyniad"
+
+#~ msgid "Publisher"
+#~ msgstr "Cyhoeddwr"
+
+#~ msgid ""
+#~ "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\n"
+#~ "Click \\'OK\\' to install the extension.\n"
+#~ "Click \\'Cancel\\' to stop the installation."
+#~ msgstr ""
+#~ "Gwnewch yn siŵr nad oes defnyddwyr eraill yn gweithio gyda'r un %PRODUCTNAME, wrth newid estyniadau wedi eu rhannu mewn amgylchedd defnyddiwr niferus.\n"
+#~ "Cliciwch \\'Iawn\\' i osod yr estyniad.\n"
+#~ "Cliciwch \\'Diddymu\\' i atal y gosod."
+
+#~ msgid "Incompatibility:"
+#~ msgstr "Anghydnawsedd:"
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: ~\n"
+
+#: dp_manager.src#RID_STR_COPYING_PACKAGE.string.text
+msgid "Copying: "
+msgstr "Copïo:"
+
+#: dp_manager.src#RID_STR_ERROR_WHILE_ADDING.string.text
+msgid "Error while adding: "
+msgstr "Gwall wrth ychwanegu:"
+
+#: dp_manager.src#RID_STR_ERROR_WHILE_REMOVING.string.text
+msgid "Error while removing: "
+msgstr "Gwall wrth dynnu:"
+
+#: dp_manager.src#RID_STR_PACKAGE_ALREADY_ADDED.string.text
+msgid "Extension has already been added: "
+msgstr "Mae'r estyniad wedi ei osod eisoes:"
+
+#: dp_manager.src#RID_STR_NO_SUCH_PACKAGE.string.text
+msgid "There is no such extension deployed: "
+msgstr "Nid oes estyniad o'r fath wedi ei ddarparu:"
+
+#: dp_manager.src#RID_STR_SYNCHRONIZING_REPOSITORY.string.text
+msgid "Synchronizing repository for %NAME extensions"
+msgstr "Cydweddu'r storfa ynghylch estyniad %NAME"
+
+#: dp_registry.src#RID_STR_REGISTERING_PACKAGE.string.text
+msgid "Enabling: "
+msgstr "Galluogi:"
+
+#: dp_registry.src#RID_STR_REVOKING_PACKAGE.string.text
+msgid "Disabling: "
+msgstr "Anablu:"
+
+#: dp_registry.src#RID_STR_CANNOT_DETECT_MEDIA_TYPE.string.text
+msgid "Cannot detect media-type: "
+msgstr "Methu canfod cyfrwng o'r fath:"
+
+#: dp_registry.src#RID_STR_UNSUPPORTED_MEDIA_TYPE.string.text
+msgid "This media-type is not supported: "
+msgstr "Dim cefnogaeth i gyfrwng o fath:"
+
+#: dp_registry.src#RID_STR_ERROR_WHILE_REGISTERING.string.text
+msgid "An error occurred while enabling: "
+msgstr "Digwyddodd gwall wrth alluogi:"
+
+#: dp_registry.src#RID_STR_ERROR_WHILE_REVOKING.string.text
+msgid "An error occurred while disabling: "
+msgstr "Digwyddodd gwall wrth anablu:"
+"X-Accelerator-Marker: ~\n"
+
+#: dp_configuration.src#RID_STR_CONF_SCHEMA.string.text
+msgid "Configuration Schema"
+msgstr "Sgema Ffurfweddiad"
+
+#: dp_configuration.src#RID_STR_CONF_DATA.string.text
+msgid "Configuration Data"
+msgstr "Data Ffurfweddiad"
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: ~\n"
+
+#: dp_component.src#RID_STR_DYN_COMPONENT.string.text
+msgid "UNO Dynamic Library Component"
+msgstr "Cydran Llyfrgell Dynamig UNO"
+
+#: dp_component.src#RID_STR_JAVA_COMPONENT.string.text
+msgid "UNO Java Component"
+msgstr "Cydran Java UNO"
+
+#: dp_component.src#RID_STR_PYTHON_COMPONENT.string.text
+msgid "UNO Python Component"
+msgstr "Cydran Python UNO"
+
+#: dp_component.src#RID_STR_COMPONENTS.string.text
+msgid "UNO Components"
+msgstr "Cydrannau UNO"
+
+#: dp_component.src#RID_STR_RDB_TYPELIB.string.text
+msgid "UNO RDB Type Library"
+msgstr "Math Llyfrgell RDB UNO"
+
+#: dp_component.src#RID_STR_JAVA_TYPELIB.string.text
+msgid "UNO Java Type Library"
+msgstr "Math Llyfrgell Java UNO"
+
+#: dp_package.src#RID_STR_PACKAGE_BUNDLE.string.text
+msgid "Extension"
+msgstr "Estyniad"
+
+#: dp_script.src#RID_STR_BASIC_LIB.string.text
+msgid "%PRODUCTNAME Basic Library"
+msgstr "Llyfrgell Basic %PRODUCTNAME"
+
+#: dp_script.src#RID_STR_DIALOG_LIB.string.text
+msgid "Dialog Library"
+msgstr "Llyfrgell Deialog"
+
+#: dp_script.src#RID_STR_CANNOT_DETERMINE_LIBNAME.string.text
+msgid "The library name could not be determined."
+msgstr "Methu canfod enw'r llyfrgell"
+
+#: dp_script.src#RID_STR_LIBNAME_ALREADY_EXISTS.string.text
+msgid "This library name already exists. Please choose a different name."
+msgstr "Mae enw'r llyfrgell yn bodoli eisoes. Dewiswch un arall."
+"Plural-Forms: nplurals=2; plural=(n==2) ? 1 : 0;\n"
+"X-Generator: Pootle 2.1.6\n"
+"X-Accelerator-Marker: ~\n"
+
+#: dp_help.src#RID_STR_HELP.string.text
+msgid "Help"
+msgstr "Cymorth"
+
+#: dp_help.src#RID_STR_HELPPROCESSING_GENERAL_ERROR.string.text
+msgid "The extension cannot be installed because:\n"
+msgstr "Nid oes modd gosod yr estyniad oherwydd:\n"
+
+#: dp_help.src#RID_STR_HELPPROCESSING_XMLPARSING_ERROR.string.text
+msgid "The extension will not be installed because an error occurred in the Help "
+"files:\n"
+msgstr ""
+"Nid oedd modd gosod yr estyniad am i wall ddigwydd yn y ffeiliau Cymorth."
+
+#~ msgid "The extension will not be installed because an error occured in the Help "
+#~ "files:\n"
+#~ msgstr "Nid oes modd gosod yr estyniad oherwydd fod gwall wedi diwydd yn y ffeiliau "
+#~ "Cymorth:\n"
+
+#: dp_sfwk.src#RID_STR_SFWK_LIB.string.text
+msgid "%MACROLANG Library"
+msgstr "Llyfrgell %MACROLANG"
+"X-Accelerator-Marker: ~\n"
+
+#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_1.string.text
+msgid "Extension Software License Agreement of $NAME:"
+msgstr "Cytundeb Trwydded Meddalwedd Estyniad $NAME:"
+
+#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_2.string.text
+msgid ""
+"Read the complete License Agreement displayed above. Accept the License "
+"Agreement by typing \"yes\" on the console then press the Return key. Type "
+"\"no\" to decline and to abort the extension setup."
+msgstr ""
+"Darllennwchy yr holl Gytunedb Trwydded uchod. Derbyniwch y Cytundeb Trwydded "
+"drwy deipio \"iawn\" ar y consol ac yna pwyso'r bysell Return. Teipiwch \"na\" "
+"i wrthod ac atal gosod yr estyniad."
+
+#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_3.string.text
+msgid "[Enter \"yes\" or \"no\"]:"
+msgstr "[Rhowch \"iawn\" neu \"na\"]:"
+
+#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_4.string.text
+msgid "Your input was not correct. Please enter \"yes\" or \"no\":"
+msgstr "Nid oedd eich mewnbwn yn gywir. Rhowch \"iawn\" neu \"na\":"
+
+#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.string.text
+msgid "YES"
+msgstr "IAWN"
+
+#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_Y.string.text
+msgid "Y"
+msgstr "I"
+
+#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_NO.string.text
+msgid "NO"
+msgstr "NA"
+
+#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_N.string.text
+msgid "N"
+msgstr "N"
+
+#: unopkg.src#RID_STR_CONCURRENTINSTANCE.string.text
+msgid ""
+"unopkg cannot be started. The lock file indicates it as already running. If "
+"this does not apply, delete the lock file at:"
+msgstr ""
+"methu cychwyn unopkg. Mae'r ffeil cloi yn awgrymu ei fod dal yn rhedeg. Os "
+"nad yw hyn yn berthnasol, dilëwch y ffeil cloi yn:"
+
+#: unopkg.src#RID_STR_UNOPKG_ERROR.string.text
+msgid "ERROR: "
+msgstr "GWALL:"
+
+#~ msgid ""
+#~ "The option \"--shared\" cannot be used to install the extension \\'%NAME\\', "
+#~ "because every user has to agree to the license agreement of the extension. "
+#~ "The extension will not be installed."
+#~ msgstr ""
+#~ "Nid oes modd defnyddio'r dewis \"--shared\" i osod yr estyniad \\'%NAME\\', gan "
+#~ "fod yn rhaid i bob defnyddiwr gytuno i gytundeb trwydded yr estyniad. Ni "
+#~ "fydd yr estyniad yn cael ei osod."
+
+#~ msgid "Extension License Agreement:"
+#~ msgstr "Cytundeb Trwydded Estyniad:"
+
+#~ msgid "You need to close the already opened Extension Manager to continue."
+#~ msgstr "Rhaid cau'r Rheolwr Estyniadau sydd eisoes ar agor er mwyn parhau."
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: ~\n"
+
+#: dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_UNKNOWN.string.text
+msgid "Unknown"
+msgstr "Unknown"
+
+#: dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MIN.string.text
+msgid "Extension requires at least OpenOffice.org %VERSION"
+msgstr "Mae'r etyniad angen o leiaf OpenOffice.org %VERSION"
+
+#: dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MAX.string.text
+msgid ""
+"Extension doesn't support versions greater than: OpenOffice.org %VERSION"
+msgstr "Nid yw'r estyniad yn cynnal fersiwn uwch na: OpenOffice.org %VERSION"
+"X-Generator: Pootle 2.1.6\n"
+"X-Accelerator-Marker: ~\n"
+
+#: setup.ulf#_APP_TITLE_.LngText.text
+msgid "Setup"
+msgstr "Gosod"
+
+#: setup.ulf#_APP_PROD_TITLE_.LngText.text
+msgid "The %PRODUCTNAME Setup"
+msgstr "Gosod %PRODUCTNAME"
+
+#: setup.ulf#_OUTOFMEM_.LngText.text
+msgid "Out of Memory"
+msgstr "Dim Digon o Gof"
+
+#: setup.ulf#_NOMSI_.LngText.text
+msgid "Setup was unable to find the msi package."
+msgstr "Methodd y rhaglen osod â chanfod y pecyn msi."
+
+#: setup.ulf#_USER_CANCELLED_.LngText.text
+msgid "Setup was cancelled"
+msgstr "Diddymwyd y gosod"
+
+#: setup.ulf#_REQUIRES_ADMIN_PRIV_.LngText.text
+msgid ""
+"Administrator privileges are required for upgrading the Windows Installer."
+msgstr "Mae angen breintiau gweinyddwr i uwchraddio Windows Installer."
+
+#: setup.ulf#_FILE_NOT_FOUND_.LngText.text
+msgid "Setup was unable to find the file '%s'."
+msgstr "Methodd y rhaglen osod ganfod ffeil '%s'."
+
+#: setup.ulf#_INVALID_PARAM_.LngText.text
+msgid "Invalid command line option '%s'. Please use '/?' for help."
+msgstr "Dewis llinell orchymyn annilys '%s'. Defnyddiwch '/?' am gymorth."
+
+#: setup.ulf#_SETUP_TO_OLD_.LngText.text
+msgid ""
+"This package requires at least the version '%s' of the Windows Installer. \n"
+"You have Windows Installer '%s' on your system!"
+msgstr ""
+"Mae'r pecyn angen o leiaf fersiwn '%s' o Gosodwr Windows. \n"
+"Mae gennych Gosodwr Windows '%s' ar eich system!"
+
+#: setup.ulf#_SETUP_NOT_FOUND_.LngText.text
+msgid ""
+"This package requires the Windows Installer. \n"
+"You need at least Windows Installer '%s' on your system!"
+msgstr ""
+"Mae'r pecyn angen Gosodwr Windows. \n"
+"Mae'r pecyn angen o leiaf fersiwn '%s' o Gosodwr Windows ar eich system!"
+
+#: setup.ulf#_USAGE_.LngText.text
+msgid ""
+"Usage:\n"
+"   /? :  Shows this dialog.\n"
+"   /a :  Performs an administrative installation.\n"
+"   /j[u|m] :  Performs an advertising installation.\n"
+"   /q[n] : Do not show any user interface (silent mode).\n"
+msgstr ""
+"Defnydd:\n"
+"   /? :  Dangos y deialog.\n"
+"   /a :  Gyflawni gosodiad gweinyddol.\n"
+"   /j[u|m] :  Cyflawni gosodiad hysbysebu.\n"
+"   /q[n] : Peidio dangos unrhyw ryngwyneb defnyddiwr (modd tawel).\n"
+
+#: setup.ulf#_ALREADY_RUNNING_.LngText.text
+msgid "There is already a setup process running."
+msgstr "Mae yna broses gosod eisoes ar waith."
+
+#: setup.ulf#_UNKNOWN_ERROR_.LngText.text
+msgid "An Unknown Error occured!"
+msgstr "Digwyddodd gwall anhysbys!"
+
+#: setup.ulf#_INVALID_PROFILE_.LngText.text
+msgid "Invalid or incomplete profile."
+msgstr "Enw neu broffil anghyflawn"
+
+#: setup.ulf#_UNKNOWN_LANG_.LngText.text
+msgid "Unknown Language: %d"
+msgstr "Iaith Anhysbys: %d"
+
+#: setup.ulf#_LANGUAGE_ZH_TW_.LngText.text
+msgid "Chinese (traditional)"
+msgstr "Tsieinëeg (traddodiadol)"
+
+#: setup.ulf#_LANGUAGE_CS_.LngText.text
+msgid "Czech"
+msgstr "Tsiec"
+
+#: setup.ulf#_LANGUAGE_DA_.LngText.text
+msgid "Danish"
+msgstr "Daneg"
+
+#: setup.ulf#_LANGUAGE_DE_DE_.LngText.text
+msgid "German (Germany)"
+msgstr "Almaeneg (Yr Almaen)"
+
+#: setup.ulf#_LANGUAGE_EL_.LngText.text
+msgid "Greek"
+msgstr "Groeg"
+
+#: setup.ulf#_LANGUAGE_EN_US_.LngText.text
+msgid "English (USA)"
+msgstr "Saesneg (UDA)"
+
+#: setup.ulf#_LANGUAGE_ES_.LngText.text
+msgid "Spanish (Spain)"
+msgstr "Sbaeneg (Sbaen)"
+
+#: setup.ulf#_LANGUAGE_FI_.LngText.text
+msgid "Finnish"
+msgstr "Ffineg"
+
+#: setup.ulf#_LANGUAGE_FR_FR_.LngText.text
+msgid "French (France)"
+msgstr "Ffrangeg (Ffrainc)"
+
+#: setup.ulf#_LANGUAGE_HE_.LngText.text
+msgid "Hebrew"
+msgstr "Hebraeg"
+
+#: setup.ulf#_LANGUAGE_HU_.LngText.text
+msgid "Hungarian"
+msgstr "Hwngareg"
+
+#: setup.ulf#_LANGUAGE_IT_IT_.LngText.text
+msgid "Italian (Italy)"
+msgstr "Eidaleg (Yr Eidal)"
+
+#: setup.ulf#_LANGUAGE_JA_.LngText.text
+msgid "Japanese"
+msgstr "Siapanaëeg"
+
+#: setup.ulf#_LANGUAGE_KO_.LngText.text
+msgid "Korean"
+msgstr "Corëeg"
+
+#: setup.ulf#_LANGUAGE_NL_NL_.LngText.text
+msgid "Dutch (Netherlands)"
+msgstr "Iseldireg (Iseldiroedd)"
+
+#: setup.ulf#_LANGUAGE_NO_NO_.LngText.text
+msgid "Norwegian (Bokmål)"
+msgstr "Norwyeg (Bokmål)"
+
+#: setup.ulf#_LANGUAGE_PL_.LngText.text
+msgid "Polish"
+msgstr "Pwyleg"
+
+#: setup.ulf#_LANGUAGE_PT_BR_.LngText.text
+msgid "Portuguese (Brazil)"
+msgstr "Portiwgaleg (Brasil)"
+
+#: setup.ulf#_LANGUAGE_RU_.LngText.text
+msgid "Russian"
+msgstr "Rwsieg"
+
+#: setup.ulf#_LANGUAGE_SK_.LngText.text
+msgid "Slovak"
+msgstr ""
+
+#: setup.ulf#_LANGUAGE_SV_SE_.LngText.text
+msgid "Swedish (Sweden)"
+msgstr "Swedeg (Sweden)"
+
+#: setup.ulf#_LANGUAGE_TH_.LngText.text
+msgid "Thai"
+msgstr "Thai"
+
+#: setup.ulf#_LANGUAGE_TR_.LngText.text
+msgid "Turkish"
+msgstr "Twrceg"
+
+#: setup.ulf#_LANGUAGE_ET_.LngText.text
+msgid "Estonian"
+msgstr "Estoneg"
+
+#: setup.ulf#_LANGUAGE_ZH_CN_.LngText.text
+msgid "Chinese (Simplified)"
+msgstr "Tsieinëeg"
+
+#: setup.ulf#_LANGUAGE_PT_PT_.LngText.text
+msgid "Portuguese (Portugal)"
+msgstr "Portiwgaleg (Portiwgal)"
+
+#~ msgid "Slovakian"
+#~ msgstr "Slofaceg"
+
+#~ msgid ""
+#~ "This package requires a newer version of the Windows Installer. \n"
+#~ "Do you want to update the version of the Windows Installer on your system?"
+#~ msgstr ""
+#~ "Mae'r pecyn angen fersiwn mwy diweddar o Windows Installer. \n"
+#~ "Hoffech chi uwchraddio'r fersiwn o Windows Installer sydd ar eich system? \n"
+"Plural-Forms: nplurals=2; plural=(n==2) ? 1 : 0;\n"
+"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Accelerator-Marker: ~\n"
+
+#: rebasegui.ulf#_APP_TITLE_.LngText.text
+msgid "Installation Status"
+msgstr "Statws Gosod"
+
+#: rebasegui.ulf#_MSG_OPTIMIZED_FOR_CLIENT_.LngText.text
+msgid "Installation is optimized for clients."
+msgstr "Gosod wedi ei optimeiddio ar gyfer cleientiaid"
+
+#: rebasegui.ulf#_MSG_OPTIMIZED_FOR_SERVER_.LngText.text
+msgid "Installation is optimized for servers."
+msgstr "Gosod wedi ei optimeiddio ar gyfer gweinyddion"
+
+#: rebasegui.ulf#_MSG_NO_INSTALLATION_FOUND_.LngText.text
+msgid "Cannot find Office installation."
+msgstr "Methu canfod gosodiad Office"

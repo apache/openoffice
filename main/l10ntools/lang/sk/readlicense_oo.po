@@ -1,0 +1,843 @@
+
+#: readme.xrm#.readmeitem.text
+msgid "Joining the Project"
+msgstr "Pridajte sa ku projektu"
+
+#: readme.xrm#A10.A10.readmeitem.text
+msgid "Is ${PRODUCTNAME} really free for any user? "
+msgstr "Je ${PRODUCTNAME} skutočne zadarmo pre každého používateľa? "
+
+#: readme.xrm#A11.A11.readmeitem.text
+msgid ""
+"${PRODUCTNAME} is free for use by everybody. You may take this copy of "
+"${PRODUCTNAME} and install it on as many computers as you like, and use it "
+"for any purpose you like (including commercial, government, public "
+"administration and educational use). For further details see the license "
+"text delivered together with ${PRODUCTNAME} or <a href=\"http://www.openoffic"
+"e.org/license.html\">http://www.openoffice.org/license.html</a>"
+msgstr ""
+"${PRODUCTNAME} je zadarmo pre každého. Môžete si zobrať túto kópiu "
+"${PRODUCTNAME} a nainštalovať ju na ľubovoľný počet počítačov a používať ju "
+"na ľubovoľný účel (toto zahŕňa podniky, vlády, verejnú správu a aj školy). "
+"Pre ďalšie informácie si prečítajte text licencie dodaný spolu s "
+"${PRODUCTNAME} alebo <a href=\"http://www.openoffice.org/license.html\">http:/"
+"/www.openoffice.org/license.html</a>"
+
+#: readme.xrm#A12.A12.readmeitem.text
+msgid "Why is ${PRODUCTNAME} free for any user?"
+msgstr "Prečo je ${PRODUCTNAME} zadarmo pre každého používateľa?"
+
+#: readme.xrm#A13.A13.readmeitem.text
+msgid ""
+"You can use this copy of ${PRODUCTNAME} today free of charge because "
+"individual contributors and corporate sponsors have designed, developed, "
+"tested, translated, documented, supported, marketed, and helped in many "
+"other ways to make ${PRODUCTNAME} what it is today - the world's leading "
+"open-source office software."
+msgstr ""
+"Dnes môžete používať zadarmo túto kópiu ${PRODUCTNAME}, preto lebo "
+"individuálny prispievatelia a firemný sponzori navrhli, vyvinuli, testovali, "
+"preložili, zdokumentovali, podporovali, marketovali a pomohli v mnohých "
+"ďalších ohľadoch urobiť ${PRODUCTNAME} to, čím dnes je - svetovým lídrom v "
+"oblasti open-source kancelárskeho softvéru."
+
+#: readme.xrm#A13b.A13b.readmeitem.text
+msgid ""
+"If you appreciate their efforts, and would like to ensure OpenOffice.org "
+"continues into the future, please consider contributing to the project - see "
+"<a href=\"http://contributing.openoffice.org\">http://contributing.openoffice"
+".org</a> for details. Everyone has a contribution to make."
+msgstr ""
+"V prípade, že si ceníte ich snahu a chceli by ste zabezpečiť aby "
+"OpenOffice.org pokračoval do budúcnosti, prosím pouvažujte o prispení do "
+"tohto projektu - navštívte <a href=\"http://contributing.openoffice.org\">http"
+"://contributing.openoffice.org</a> pre viac podrobností. Každý môže "
+"prispieť."
+
+#: readme.xrm#A6.A6.readmeitem.text
+msgid ""
+"This file contains important information about this program. Please read "
+"this information very carefully before starting work."
+msgstr ""
+"Tento súbor obsahuje dôležité informácie o tomto programe. Prečítajte si, "
+"prosím, tieto informácie skôr než začnete pracovať."
+
+#: readme.xrm#A7.A7.readmeitem.text
+msgid ""
+"The OpenOffice.org Community, responsible for the development of this "
+"product, would like to invite you to participate as a community member. As a "
+"new user, you can check out the ${PRODUCTNAME} site with helpful user "
+"information at <a href=\"http://www.openoffice.org/about_us/introduction.html"
+"\">http://www.openoffice.org/about_us/introduction.html</a>"
+msgstr ""
+"Komunita OpenOffice.org, zodpovedná z vývoj tohto produktu, si vás dovoľuje "
+"pozvať, aby ste sa zúčastnili ako člen komunity. Ako nový používateľ sa "
+"môžete pozrieť na stránky ${PRODUCTNAME} s užitočnými informáciami pre "
+"používateľov na adrese <a href=\"http://www.openoffice.org/about_us/introduct"
+"ion.html\">http://www.openoffice.org/about_us/introduction.html</a>"
+
+#: readme.xrm#A9.A9.readmeitem.text
+msgid ""
+"Also read the sections below about getting involved in the OpenOffice.org "
+"project."
+msgstr ""
+"Taktiež si prečítajte nižšie uvedené informácie o tom, ako sa zapojiť do "
+"projektu OpenOffice.org."
+
+#: readme.xrm#AdminNeeded.AdminNeeded.readmeitem.text
+msgctxt "readme.xrm#AdminNeeded.AdminNeeded.readmeitem.text"
+msgid ""
+"Please be aware that administrator rights are needed for the installation "
+"process."
+msgstr "Nezabudnite, že na inštaláciu budete potrebovať práva správcu systému."
+
+#: readme.xrm#BDB11.BDB11.readmeitem.text
+msgid "Extension Database Incompatibility"
+msgstr "Nekompatibilita databáze rozšírení"
+
+#: readme.xrm#BDB2a.BDB2a.readmeitem.text
+msgid ""
+"The Berkeley database engine has been upgraded in this version of "
+"${PRODUCTNAME}. The database engine upgrade introduces an incompatibility "
+"with user data for installed extensions for ${PRODUCTNAME} versions prior to "
+"3.2 that may require your action if you downgrade your version of "
+"${PRODUCTNAME}."
+msgstr ""
+"Jadro Berkeley databázy bolo upgradované v tejto verzii ${PRODUCTNAME}. "
+"Upgrade databázového jadra prináša nekompatibilitu s používateľskými dátami "
+"pre nainštalované rozšírenia ${PRODUCTNAME} vo verziách nižších ako 3.2, "
+"ktoré môžu vyžadovať downgrade verzie ${PRODUCTNAME}."
+
+#: readme.xrm#BDB3a.BDB3a.readmeitem.text
+msgid ""
+"This version of ${PRODUCTNAME} will convert your extension database to the "
+"new Berkeley database format when extensions are installed or removed. After "
+"this conversion, the database can no longer be read by earlier versions of "
+"${PRODUCTNAME}. Downgrading to an earlier version may result in a "
+"dysfunctional installation."
+msgstr ""
+"Táto verzia ${PRODUCTNAME} prevedie vašu databázu rozšírení do nového "
+"databázového formátu Berkley databázy v momente keď budú inštalované alebo "
+"odstraňované rozšírenia. Po tomto prevode už nemôže byť táto databáza čítaná "
+"staršími verziami ${PRODUCTNAME}. Prechod na staršiu verziu by mohol "
+"vyústiť do situácie keď bude inštalácia nefunkčná."
+
+#: readme.xrm#BDB4a.BDB4a.readmeitem.text
+msgid ""
+"If you downgrade to an earlier version of ${PRODUCTNAME}, you must remove "
+"the user data directory <tt>{user data}/uno_packages</tt>, for example "
+"<tt>~/.openoffice.org/3/user/uno_packages</tt>, and reinstall all "
+"extensions."
+msgstr ""
+"V prípade prechodu na staršiu verziu ${PRODUCTNAME}, je potrebné odstrániť "
+"požívateľský adresár <tt>{user data}/uno_packages</tt>, napríklad "
+"<tt>~/.openoffice.org/3/user/uno_packages</tt> a znovu nainštalovať "
+"rozšírenia."
+
+#: readme.xrm#DLLA1.DLLA1.readmeitem.text
+msgid ""
+"If you perform an administrative installation using setup /a, you need to "
+"make sure that the file msvc90.dll is installed on the system. This file is "
+"required for ${PRODUCTNAME} to start after an administrative installation. "
+"You can get the file from <a href=\"http://www.microsoft.com/downloads/detail"
+"s.aspx?familyid=9B2DA534-3E03-4391-8A4D-074B9F2BC1BF\">http://www.microsoft.c"
+"om/downloads/details.aspx?familyid=9B2DA534-3E03-4391-8A4D-074B9F2BC1BF</a>"
+msgstr ""
+"V prípade že vykonávate administratívnu inštaláciu s použitím setup /a, "
+"musíte sa ubezpečiť, že súbor msvc90.dll je nainštalovaný na vašom systéme. "
+"Tento súbor je potrebný preto aby bolo možné spustiť ${PRODUCTNAME} po "
+"administratívnej inštalácii. Tento súbor môžete získať z <a href=\"http://www"
+".microsoft.com/downloads/details.aspx?familyid=9B2DA534-3E03-4391-8A4D-074B9"
+"F2BC1BF\">http://www.microsoft.com/downloads/details.aspx?familyid=9B2DA534-3"
+"E03-4391-8A4D-074B9F2BC1BF</a>"
+
+#: readme.xrm#LatestUpdates.LatestUpdates.readmeitem.text
+msgid ""
+"For latest updates to this readme file, see <a href=\"http://www.openoffice.o"
+"rg/welcome/readme.html\">http://www.openoffice.org/welcome/readme.html</a>"
+msgstr ""
+"Pre najnovšie verziu súboru readme navštívte <a href=\"http://www.openoffice."
+"org/welcome/readme.html\">http://www.openoffice.org/welcome/readme.html</a>"
+
+#: readme.xrm#Linuxi3a.Linuxi3a.readmeitem.text
+msgid ""
+"There is a wide variety of Linux distributions, and even within the same "
+"distribution there may be different installation options (KDE vs Gnome, "
+"etc.). Some distributions ship with their own ‘native’ version of "
+"${PRODUCTNAME}, which may have different features from this Community "
+"${PRODUCTNAME}. Sometimes you can install the Community ${PRODUCTNAME} "
+"alongside the ‘native’ version. However, it’s usually safer to remove the "
+"‘native’ version before installing this Community version. Consult the "
+"documentation for your distribution for details of how to do this."
+msgstr ""
+"Existuje množstvo linuxových distribúcií a dokonca v rámci jednej "
+"distribúcie existujú viaceré možnosti inštalácie (KDE vs GNOME atď.). "
+"Niektoré distribúcie sú dodávané s ich vlastnou ‘natívnou’ verziou "
+"${PRODUCTNAME}, ktorá môže mať rôzne vlastnosti rozdielne od tejto "
+"komunitnej verzie ${PRODUCTNAME}. Niekedy môžete nainštalovať komunitnú "
+"verziu ${PRODUCTNAME}. popri ‘natívnej’ verzii, ale zvyčajne je bezpečnejšie "
+"odstrániť ‘natívnu’ pred inštaláciou komunitnej verzie. Pre informácie, ako "
+"tak urobiť sa pozrite do dokumentácie ku vaše distribúcii."
+
+#: readme.xrm#Linuxi4a.Linuxi4a.readmeitem.text
+msgid ""
+"It is recommended that you always backup your system before you remove or "
+"install software."
+msgstr ""
+"Je odporúčané vždy zálohovať váš systém pred inštaláciou alebo odstraňovaním "
+"softvéru."
+
+#: readme.xrm#MSOReg1.MSOReg1.readmeitem.text
+msgid ""
+"Registration of ${PRODUCTNAME} as default application for Microsoft Office "
+"formats can be forced or suppressed by using the following command line "
+"switches with the installer:"
+msgstr ""
+"Registrácia ${PRODUCTNAME} ako východzej aplikácie pre formáty Microsoft "
+"Office môže byť vynútená alebo potlačená pomocou použitia nasledovných "
+"prepínačov z príkazového riadka pri spustení inštalátora:"
+
+#: readme.xrm#MSOReg2.MSOReg2.readmeitem.text
+msgid ""
+"<tt>/msoreg=1</tt> will force registration of ${PRODUCTNAME} as default "
+"application for Microsoft Office formats."
+msgstr ""
+"<tt>/msoreg=1</tt> vynúti registráciu ${PRODUCTNAME} ako východzej aplikácie "
+"pre formáty Microsoft Office."
+
+#: readme.xrm#MSOReg3.MSOReg3.readmeitem.text
+msgid ""
+"<tt>/msoreg=0</tt> will suppress registration of ${PRODUCTNAME} as default "
+"application for Microsoft Office formats."
+msgstr ""
+"<tt>/msoreg=0</tt> potlačí registráciu ${PRODUCTNAME} ako východzej "
+"aplikácie pre formáty Microsoft Office."
+
+#: readme.xrm#Precautions.Precautions.readmeitem.text
+msgid ""
+"Please make sure you have enough free memory in the temporary directory on "
+"your system and that read, write and run access rights have been granted. "
+"Close all other programs before starting the installation."
+msgstr ""
+"Skontrolujte dostatok voľného miesta v adresári pre dočasné dáta a či máte "
+"práva pre čítanie, zapisovanie a spúšťanie. Pred začiatkom inštalácie "
+"skončite všetky ostatné programy."
+
+#: readme.xrm#Welcome.Welcome.readmeitem.text
+msgid "${PRODUCTNAME} ${PRODUCTVERSION} ReadMe"
+msgstr "${PRODUCTNAME} ${PRODUCTVERSION} ČítajMa"
+
+#: readme.xrm#abcdef.abcdef.readmeitem.text
+msgid ""
+"Difficulties starting ${PRODUCTNAME} (e.g. applications hang) as well as "
+"problems with the screen display are often caused by the graphics card "
+"driver. If these problems occur, please update your graphics card driver or "
+"try using the graphics driver delivered with your operating system. "
+"Difficulties displaying 3D objects can often be solved by deactivating the "
+"option \"Use OpenGL\" under 'Tools - Options - ${PRODUCTNAME} - View - 3D "
+"view'."
+msgstr ""
+"Problémy pri spúšťaní ${PRODUCTNAME} (napr. zmrznutie aplikácie) a taktiež "
+"problémy s obrazovkou sú často spôsobované ovládačom grafickej karty. V "
+"prípade výskytu týchto problémov aktualizujte váš ovládač grafickej karty "
+"alebo použite ovládač, ktorý bolo dodaný spolu s vašim operačným systémom. "
+"Ťažkosti so zobrazovaním 3D objektov môžu byť často vyriešené deaktivovaním "
+"možnosti \"Použiť OpenGL\" v ponuke 'Nástroje - Možnosti - ${PRODUCTNAME} - "
+"Zobraziť - 3D zobrazenie'."
+
+#: readme.xrm#access7.access7.readmeitem.text
+msgid ""
+"For more information on the accessibility features in ${PRODUCTNAME}, see <a "
+"href=\"http://www.openoffice.org/access/\">http://www.openoffice.org/access/<"
+"/a>"
+msgstr ""
+"Pre viac informácií o funkciách prístupnosti v ${PRODUCTNAME} navštívte <a h"
+"ref=\"http://www.openoffice.org/access/\">http://www.openoffice.org/access/</a"
+">"
+
+#: readme.xrm#aw22.aw22.readmeitem.text
+msgid "Important Accessibility Notes"
+msgstr "Dôležité poznámky k prístupnosti"
+
+#: readme.xrm#awe1.awe1.readmeitem.text
+msgid "Shortcut Keys"
+msgstr "Klávesové skratky"
+
+#: readme.xrm#credits.credits.readmeitem.text
+msgid ""
+"We hope you enjoy working with the new ${PRODUCTNAME} ${PRODUCTVERSION} and "
+"will join us online."
+msgstr ""
+"Dúfame, že sa vám bude práca s novým ${PRODUCTNAME} ${PRODUCTVERSION} páčiť, "
+"a že sa k nám pridáte."
+
+#: readme.xrm#credits2.credits2.readmeitem.text
+msgid "The OpenOffice.org Community"
+msgstr "Komunita OpenOffice.org"
+
+#: readme.xrm#edssc3d.edssc3d.readmeitem.text
+msgctxt "readme.xrm#edssc3d.edssc3d.readmeitem.text"
+msgid ""
+"Please be aware that administrator rights are needed for the installation "
+"process."
+msgstr "Nezabudnite, že na inštaláciu budete potrebovať práva správcu systému."
+
+#: readme.xrm#faq.faq.readmeitem.text
+msgid ""
+"Also check the FAQ section at <a href=\"http://wiki.services.openoffice.org/w"
+"iki/Documentation/FAQ\">http://wiki.services.openoffice.org/wiki/Documentatio"
+"n/FAQ.</a>"
+msgstr ""
+"Taktiež si pozrite sekciu FAQ, často kladených otázok, na <a href=\"http://wi"
+"ki.services.openoffice.org/wiki/Documentation/FAQ\">http://wiki.services.open"
+"office.org/wiki/Documentation/FAQ.</a>"
+
+#: readme.xrm#fgheg.fgheg.readmeitem.text
+msgctxt "readme.xrm#fgheg.fgheg.readmeitem.text"
+msgid "Up to 1.55 GB available hard disk space"
+msgstr "Až do 1,55 GB dostupného diskového priestoru"
+
+#: readme.xrm#fghfgh.fghfgh.readmeitem.text
+msgctxt "readme.xrm#fghfgh.fghfgh.readmeitem.text"
+msgid ""
+"X Server with 1024x768 resolution (higher resolution recommended), with at "
+"least 256 colors"
+msgstr ""
+"X Server s rozlíšením 1024x768 (odporúčané je vyššie rozlíšenie), s aspoň "
+"256 farbami"
+
+#: readme.xrm#fhrtz5.fhrtz5.readmeitem.text
+msgctxt "readme.xrm#fhrtz5.fhrtz5.readmeitem.text"
+msgid "Window Manager"
+msgstr "Správca okien"
+
+#: readme.xrm#gettingimvolved3.gettingimvolved3.readmeitem.text
+msgid ""
+"As a user, you are already a valuable part of the suite's development "
+"process and we would like to encourage you to take an even more active role "
+"with a view to being a long-term contributor to the community. Please join "
+"and check out the user page at <a "
+"href=\"http://incubator.apache.org/openofficeorg/get-"
+"involved.html\">http://incubator.apache.org/openofficeorg/get-"
+"involved.html</a>"
+msgstr ""
+"Ako používateľ ste už významnou súčasťou vývoja balíka a radi by sme vás "
+"podporili pri rozvíjaní ďalších aktivít s výhľadom na získanie dlhodobého "
+"prispievateľa do komunity. Pozrite sa, prosím, na používateľské stránky na "
+"adrese <a href=\"http://incubator.apache.org/openofficeorg/get-"
+"involved.html\">http://incubator.apache.org/openofficeorg/get-"
+"involved.html</a>"
+
+#: readme.xrm#gettinginvolved1.gettinginvolved1.readmeitem.text
+msgid "Getting Involved"
+msgstr "Ako sa zapojiť"
+
+#: readme.xrm#gettinginvolved2.gettinginvolved2.readmeitem.text
+msgid ""
+"The ${PRODUCTNAME} Community would very much benefit from your active "
+"participation in the development of this important open source project."
+msgstr ""
+"Komunita ${PRODUCTNAME} bude mať prospech z vašej aktívnej účasti na vývoji "
+"tohto významného open source projektu."
+
+#: readme.xrm#gfh6w.gfh6w.readmeitem.text
+msgid "File Locking"
+msgstr "Zamykanie súborov"
+
+#: readme.xrm#gfh6w1.gfh6w1.readmeitem.text
+msgid "Problems When Sending Documents as E-mails From ${PRODUCTNAME}"
+msgstr "Problémy pri posielaní dokumentov formou emailu z ${PRODUCTNAME}"
+
+#: readme.xrm#ghjhhr.ghjhhr.readmeitem.text
+msgctxt "readme.xrm#ghjhhr.ghjhhr.readmeitem.text"
+msgid ""
+"X Server with 1024x768 resolution (higher resolution recommended), with at "
+"least 256 colors"
+msgstr ""
+"X Server s rozlíšením 1024x768 (odporúčané je vyššie rozlíšenie), s aspoň "
+"256 farbami"
+
+#: readme.xrm#ghuj67.ghuj67.readmeitem.text
+msgctxt "readme.xrm#ghuj67.ghuj67.readmeitem.text"
+msgid "256 MB RAM (512 MB RAM recommended)"
+msgstr "256 MB RAM (odporúčané 512 MB RAM)"
+
+#: readme.xrm#howtostart.howtostart.readmeitem.text
+msgid "How to Start"
+msgstr "Ako začať"
+
+#: readme.xrm#howtostart1.howtostart1.readmeitem.text
+msgid ""
+"The best way to start contributing is to subscribe to one or more of the "
+"mailing lists, lurk for a while, and gradually use the mail archives to "
+"familiarize yourself with many of the topics covered since the "
+"${PRODUCTNAME} source code was released back in October 2000. When you're "
+"comfortable, all you need to do is send an email self-introduction and jump "
+"right in. If you are familiar with Open Source Projects, check out our To-"
+"Dos list and see if there is anything you would like to help with at <a href"
+"=\"http://development.openoffice.org/todo.html\">http://development.openoffice"
+".org/todo.html</a>."
+msgstr ""
+"Najlepší spôsob ako začať prispievať, je prihlásiť sa do jednej alebo "
+"viacerých konferencií, chvíľu sa poobzerať a postupne používať archívy pošty "
+"na oboznámenie sa s mnohými témami, ktoré už boli prebrané od vydania "
+"zdrojového kódu ${PRODUCTNAME} v októbri 2000. Keď sa na to budete cítiť "
+"pripravený, stačí poslať email, v ktorom sa predstavíte, a naskočiť na "
+"palubu. Ak už máte skúsenosť s open source projektami, pozrite si náš zoznam "
+"úloh, či v ňom nenájdete niečo, s čím by ste radi pomohli na adrese <a href"
+"=\"http://development.openoffice.org/todo.html\">http://development.openoffice"
+".org/todo.html</a>."
+
+#: readme.xrm#javaneeded.javaneeded.readmeitem.text
+msgid ""
+"${PRODUCTNAME} requires a recent version of JAVA for full functionality "
+"which is part of the ${PRODUCTNAME} installation package."
+msgstr ""
+"${PRODUCTNAME} vyžaduje na svoju plnú funkčnosť aktuálnu verziu JAVA, ktorá "
+"je súčasťou inštalačného balíka ${PRODUCTNAME}."
+
+#: readme.xrm#joining.joining.readmeitem.text
+msgid ""
+"You can make major contributions to this important open source project even "
+"if you have limited software design or coding experience. Yes, you!"
+msgstr ""
+"Môžete sa stať výraznou posilou vývojárskeho tímu a to i v prípade, že máte "
+"len menšie skúsenosti s vývojom softvéru. Áno, vy!"
+
+#: readme.xrm#joining1.joining1.readmeitem.text
+msgid ""
+"At <a href=\"http://incubator.apache.org/openofficeorg/get-"
+"involved.html\">http://incubator.apache.org/openofficeorg/get-"
+"involved.html</a> you will find a first overview where you can start with, "
+"ranging from Localization, QA, user support to some real core coding "
+"projects. If you are not a developer, try the Documentation or the Marketing "
+"Project. The OpenOffice.org Marketing Project is applying both guerilla and "
+"traditional commercial techniques to marketing open source software, and we "
+"are doing it across language and cultural barriers, so you can help just by "
+"spreading the word and telling a friend about this office suite."
+msgstr ""
+"Na <a href=\"http://incubator.apache.org/openofficeorg/get-"
+"involved.html\">http://incubator.apache.org/openofficeorg/get-"
+"involved.html</a> nájdete prehľad, ako môžete začať s lokalizáciou, "
+"zabezpečovaním kvality QA, užívateľskou podporou, prípadne programovaním "
+"hlavných súčastí. Ak nie ste programátor, skúste dokumentačné alebo "
+"marketingové projekty. OpenOffice.org marketingový projekt je aplikovanie "
+"partizánskych aj tradičných komerčných techník v obchodovaní s open source "
+"softvérom a robíme to naprieč rôznym jazykom a kultúrym bariéram. Pomôžte "
+"šíriť tento kancelársky balík a povedzte priateľom o ňom."
+
+#: readme.xrm#joining3.joining3.readmeitem.text
+msgid ""
+"You can help by joining the marktig mailig list ooo-"
+"marketing@incubator.apache.org or visit the Marketing Communications &amp; "
+"Information Network on <a "
+"href=\"http://marketing.openoffice.org\">http://marketing.openoffice.org</a> "
+"where you can provide point communication contact with press, media, "
+"government agencies, consultants, schools, Linux Users Groups and developers "
+"in your country and local community."
+msgstr ""
+"Môžete pomôcť pripojením sa k marketingovému mailing listu ooo-"
+"marketing@incubator.apache.org alebo navštívte Marketing Communications "
+"&amp; Information Network na <a "
+"href=\"http://marketing.openoffice.org\">http://marketing.openoffice.org</a>, "
+"kde môžete poskytnúť svoj kontakt pre komunikáciu s tlačou, médiami, "
+"vládnymi agentúrami, konzultantmi, školami, skupinami používateľov linuxu a "
+"vývojármi vo vašej krajine alebo lokálnej komunite."
+
+#: readme.xrm#jtzu56.jtzu56.readmeitem.text
+msgid ""
+"1024x768 resolution (higher resolution recommended), at least 256 colors"
+msgstr "rozlíšenie 1024x768 (odporúčané je vyššie rozlíšenie), aspoň 256 farieb"
+
+#: readme.xrm#jzjtzu6.jzjtzu6.readmeitem.text
+msgctxt "readme.xrm#jzjtzu6.jzjtzu6.readmeitem.text"
+msgid "Up to 1.5 GB available hard disk space"
+msgstr "Až do 1,5 GB dostupného diskového priestoru"
+
+#: readme.xrm#mackeys1.mackeys1.readmeitem.text
+msgid ""
+"The application help of ${PRODUCTNAME} may use shortcut combinations for PC "
+"keyboards only."
+msgstr ""
+"Pomocník aplikácie ${PRODUCTNAME} môže používať kombinácie skratiek len pre "
+"PC klávesnice."
+
+#: readme.xrm#macxHardDiksSpace.macxHardDiksSpace.readmeitem.text
+msgctxt "readme.xrm#macxHardDiksSpace.macxHardDiksSpace.readmeitem.text"
+msgid "Up to 1.5 GB available hard disk space"
+msgstr "Až do 1,5 GB dostupného diskového priestoru"
+
+#: readme.xrm#macxiOSX.macxiOSX.readmeitem.text
+msgid "MacOSX 10.4 (Tiger) or higher"
+msgstr "MacOSX 10.4 (Tiger) alebo vyšší"
+
+#: readme.xrm#macxiRAM.macxiRAM.readmeitem.text
+msgid "512 MB RAM"
+msgstr "512 MB RAM"
+
+#: readme.xrm#macxicpu.macxicpu.readmeitem.text
+msgid "Intel processor"
+msgstr "Intel procesor"
+
+#: readme.xrm#macxivideo.macxivideo.readmeitem.text
+msgid ""
+"1024 x 768 graphic device with 256 colors (higher resolution recommended)"
+msgstr ""
+"1024 x 768 grafická karta s 256 farbami (odporúčané je vyššie rozlíšenie)"
+
+#: readme.xrm#mgjfg.mgjfg.readmeitem.text
+msgctxt "readme.xrm#mgjfg.mgjfg.readmeitem.text"
+msgid "Window Manager"
+msgstr "Správca okien"
+
+#: readme.xrm#n4234rw.n4234rw.readmeitem.text
+msgctxt "readme.xrm#n4234rw.n4234rw.readmeitem.text"
+msgid "Window Manager"
+msgstr "Správca okien"
+
+#: readme.xrm#n42dfgf.n42dfgf.readmeitem.text
+msgctxt "readme.xrm#n42dfgf.n42dfgf.readmeitem.text"
+msgid "Up to 1.55 GB available hard disk space"
+msgstr "Až do 1,55 GB dostupného diskového priestoru"
+
+#: readme.xrm#naso.naso.readmeitem.text
+msgid "ALPS/Synaptics notebook touchpads in Windows"
+msgstr "ALPS/Synaptics notebook touchpady vo Windows"
+
+#: readme.xrm#naso01.naso01.readmeitem.text
+msgid "Problems During Program Startup"
+msgstr "Problémy počas štartu programu"
+
+#: readme.xrm#naso02.naso02.readmeitem.text
+msgid ""
+"If you experience ${PRODUCTNAME} startup problems (most notably while using "
+"Gnome) please 'unset' the <tt>SESSION_MANAGER</tt> environment variable "
+"inside the shell you use to start ${PRODUCTNAME}. This can be done by adding "
+"the line \"<tt>unset SESSION_MANAGER</tt>\" to the beginning of the soffice "
+"shell script found in the \"<tt>[office folder]/program</tt>\" directory."
+msgstr ""
+"Ak si pri spustení ${PRODUCTNAME} všimnete problémy (hlavne pi používaní "
+"Gnome), použite v príkazovom riadku, z ktorého spúšťate ${PRODUCTNAME}, "
+"príkaz 'unset' na zrušenie premennej prostredia <tt>SESSION_MANAGER</tt>. "
+"Toto môžete zariadoť pridaním riadku \"<tt>unset SESSION_MANAGER</tt>\" na "
+"začiatok skriptu soffice, ktorý sa nachádza v adresári \"<tt>[office "
+"folder]/program</tt>\"."
+
+#: readme.xrm#naso2.naso2.readmeitem.text
+msgid ""
+"Due to a Windows driver issue, you cannot scroll through ${PRODUCTNAME} "
+"documents when you slide your finger across an ALPS/Synaptics touchpad."
+msgstr ""
+"Kvôli problému s ovládačmi Windows nemôžete posúvať dokumenty v "
+"${PRODUCTNAME} posúvaním prsta po touchpade ALPS/Synaptics."
+
+#: readme.xrm#naso6.naso6.readmeitem.text
+msgid ""
+"To enable touchpad scrolling, add the following lines to the \"<tt>C:\\Program "
+"Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt>\" configuration file, and restart "
+"your computer:"
+msgstr ""
+"Posúvania touchpadom zapnete pridaním nasledujúcich riadkov do "
+"konfiguračného súboru \"<tt>C:\\Program "
+"Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt>\" a reštartujte váš počítač:"
+
+#: readme.xrm#naso8.naso8.readmeitem.text
+msgid ""
+"The location of the configuration file might vary on different versions of "
+"Windows."
+msgstr ""
+"Umiestnenie konfiguračného súboru sa môže líšiť v závislosti od verzie "
+"Windows."
+
+#: readme.xrm#pji76w.pji76w.readmeitem.text
+msgid ""
+"File locking is enabled by default in ${PRODUCTNAME}. On a network that uses "
+"the Network File System protocol (NFS), the locking daemon for NFS clients "
+"must be active. To disable file locking, edit the <tt>soffice</tt> script "
+"and change the line \"<tt>export SAL_ENABLE_FILE_LOCKING</tt>\" to \"<tt># "
+"export SAL_ENABLE_FILE_LOCKING</tt>\". If you disable file locking, the write "
+"access of a document is not restricted to the user who first opens the "
+"document."
+msgstr ""
+"Zamykanie súborov je v ${PRODUCTNAME} zapnuté vo východzom nastavení. V "
+"sieti, ktorá používa Network File System protocol (NFS), musí byť aktívny "
+"démon pre zamykanie súborov na klientských počítačoch. Pre vypnutie "
+"zamykania, upravte <tt>soffice</tt> skript a zmeňte riadok \"<tt>export "
+"SAL_ENABLE_FILE_LOCKING</tt>\" na \"<tt># export "
+"SAL_ENABLE_FILE_LOCKING</tt>\". V prípade, že vypnete zamykanie súborov, "
+"právo upravovať súbor nebude obmedzené len na používateľa, ktorý otvorí "
+"dokument ako prvý."
+
+#: readme.xrm#pji76w1.pji76w1.readmeitem.text
+msgid ""
+"When sending a document via 'File - Send - Document as E-mail' or 'Document "
+"as PDF Attachment' problems might occur (program crashes or hangs). This is "
+"due to the Windows system file \"Mapi\" (Messaging Application Programming "
+"Interface) which causes problems in some file versions. Unfortunately, the "
+"problem cannot be narrowed down to a certain version number. For more "
+"information visit <a "
+"href=\"http://www.microsoft.com\">http://www.microsoft.com</a> to search the "
+"Microsoft Knowledge Base for \"mapi dll\"."
+msgstr ""
+"Pri odosielaní dokumentov pomocou 'Súbor - Odoslať - Dokument e-mailom' "
+"alebo 'Dokument ako prílohu v PDF' sa môžu vyskytnúť problémy (program "
+"spadne alebo prestane reagovať). Príčinou je „Mapi“ (Messaging Application "
+"Programming Interface) systému Windows, ktoré v niektorých verziách "
+"spôsobuje problémy. Bohužiaľ sa nepodarilo vysledovať problém k určitej "
+"verzii súboru. Bližšie informácie zistíte na <a "
+"href=\"http://www.microsoft.com\">http://www.microsoft.com</a> vyhľadaním "
+"\"mapi dll\" v Microsoft Knowledge Base."
+
+#: readme.xrm#pji76wsdf.pji76wsdf.readmeitem.text
+msgid ""
+"Warning: The activated file locking feature can cause problems with Solaris "
+"2.5.1 and 2.7 used in conjunction with Linux NFS 2.0. If your system "
+"environment has these parameters, we strongly recommend that you avoid using "
+"the file locking feature. Otherwise, ${PRODUCTNAME} will hang when you try "
+"to open a file from a NFS mounted directory from a Linux computer."
+msgstr ""
+"Upozornenie: Aktivovaná možnosť zamykania súborov môže spôsobovať problémy "
+"na Solaris 2.5.1 a 2.7 pri použití s Linux NFS 2.0. Ak vaše prostredie "
+"zodpovedá týmto parametrom, silne odporúčame, aby ste sa vyhli používaniu "
+"zamykania súborov. Inak ${PRODUCTNAME} zamrzne, keď sa pokúsite otvoriť "
+"súbor z adresára pripojeného prostredníctvom NFS z linuxového počítača."
+
+#: readme.xrm#reportbugs.reportbugs.readmeitem.text
+msgid "Reporting Bugs &amp; Issues"
+msgstr "Oznamovanie chýb &amp; problémov"
+
+#: readme.xrm#reportbugs1.reportbugs1.readmeitem.text
+msgid ""
+"The ${PRODUCTNAME} Web site hosts IssueZilla, our mechanism for reporting, "
+"tracking and solving bugs and issues. We encourage all users to feel "
+"entitled and welcome to report issues that may arise on your particular "
+"platform. Energetic reporting of issues is one of the most important "
+"contributions that the user community can make to the ongoing development "
+"and improvement of the suite."
+msgstr ""
+"Na webových stránkach ${PRODUCTNAME} nájdete tiež mechanizmus na "
+"oznamovanie, sledovanie a riešenie chýb a problémov, ktorý sa nazýva "
+"IssueZilla. Vítame spätné reakcie od všetkých používateľov a taktiež uvítame "
+"oznamovanie akýchkoľvek problémov, ktoré mohli vzniknúť na vašej konkrétnej "
+"platforme. Oznamovanie problémov je jednou z najvýznamnejších možností, "
+"ktorými môžu používatelia prispieť k ďalšiemu vylepšovaniu kancelárskeho "
+"balíka."
+
+#: readme.xrm#rr3fgf42r.rr3fgf42r.readmeitem.text
+msgid "Notes on Installation"
+msgstr "Poznámky k inštalácii"
+
+#: readme.xrm#s2335.s2335.readmeitem.text
+msgid "Solaris 10 operating system (SPARC platform) or higher"
+msgstr "Operačný systém Solaris 10 (SPARC platforma) alebo vyšší"
+
+#: readme.xrm#s23h.s23h.readmeitem.text
+msgid "Solaris 10 operating system (x86 platform) or higher"
+msgstr "Operačný systém Solaris 10 (x86 platforma) alebo vyšší"
+
+#: readme.xrm#s23seg.s23seg.readmeitem.text
+msgctxt "readme.xrm#s23seg.s23seg.readmeitem.text"
+msgid "Up to 1.55 GB available hard disk space"
+msgstr "Až do 1,5 GB dostupného diskového priestoru"
+
+#: readme.xrm#s24f.s24f.readmeitem.text
+msgctxt "readme.xrm#s24f.s24f.readmeitem.text"
+msgid "256 MB RAM (512 MB RAM recommended)"
+msgstr "256 MB RAM (odporúčané 512 MB RAM)"
+
+#: readme.xrm#s253.s253.readmeitem.text
+msgctxt "readme.xrm#s253.s253.readmeitem.text"
+msgid "256 MB RAM (512 MB RAM recommended)"
+msgstr "256 MB RAM (odporúčané 512 MB RAM)"
+
+#: readme.xrm#s253we.s253we.readmeitem.text
+msgid "glibc2 version 2.5 or higher"
+msgstr "glibc2 verzia 2.5 alebo vyššia"
+
+#: readme.xrm#s256we.s256we.readmeitem.text
+msgid "gtk version 2.10.4 or higher"
+msgstr "gtk verzia 2.10.4 alebo vyššia"
+
+#: readme.xrm#s2etfseg.s2etfseg.readmeitem.text
+msgctxt "readme.xrm#s2etfseg.s2etfseg.readmeitem.text"
+msgid "Pentium compatible PC (Pentium III or Athlon recommended)"
+msgstr "Pentium kompatibilné PC (odporúčané je Pentium III alebo Athlon)"
+
+#: readme.xrm#s2s3sdf2.s2s3sdf2.readmeitem.text
+msgid ""
+"Microsoft Windows 2000 (Service Pack 4 or higher), XP, Vista, or Windows 7"
+msgstr ""
+"Microsoft Windows 2000 (Service Pack 4 alebo vyšší), XP, Vista alebo Windows "
+"7"
+
+#: readme.xrm#s2s43gfe.s2s43gfe.readmeitem.text
+msgctxt "readme.xrm#s2s43gfe.s2s43gfe.readmeitem.text"
+msgid ""
+"X Server with 1024x768 resolution (higher resolution recommended), with at "
+"least 256 colors"
+msgstr ""
+"X Server s rozlíšením 1024x768 (odporúčané je vyššie rozlíšenie), s aspoň "
+"256 farbami"
+
+#: readme.xrm#s2ssdfe.s2ssdfe.readmeitem.text
+msgctxt "readme.xrm#s2ssdfe.s2ssdfe.readmeitem.text"
+msgid "256 MB RAM (512 MB RAM recommended)"
+msgstr "256 MB RAM (odporúčané 512 MB RAM)"
+
+#: readme.xrm#s2we35.s2we35.readmeitem.text
+msgid "Linux Kernel version 2.6.18 or higher"
+msgstr "Linux Kernel verzia 2.6.18 alebo vyššia"
+
+#: readme.xrm#sdcc32asrc.sdcc32asrc.readmeitem.text
+msgid ""
+"The Mozilla address book driver requires the <tt>SUNWzlib</tt> package. This "
+"package is not part of the minimum Solaris operating system installation. "
+"If you require access to the Mozilla address book, then add this package to "
+"your Solaris operating system using the command \"<tt>pkgadd</tt>\" from the "
+"installation CD."
+msgstr ""
+"Ovládač adresára Mozilla vyžaduje balík <tt>SUNWzlib</tt>. Tento balík nie "
+"je súčasťou minimálnej inštalácie operačného systému Solaris. Pokiaľ "
+"potrebujete prístup k adresáru Mozilla, pridajte tento balík z inštalačného "
+"CD do svojho operačného systému Solaris pomocou príkazu \"<tt>pkgadd</tt>\"."
+
+#: readme.xrm#sdffd23r3cefwefew.sdffd23r3cefwefew.readmeitem.text
+msgid "Used / Modified Source Code"
+msgstr "Použité / Upravené zdrojové kódy"
+
+#: readme.xrm#sdfsd32asrc.sdfsd32asrc.readmeitem.text
+msgid "Mozilla Address Book Driver"
+msgstr "Ovládač adresára Mozilla"
+
+#: readme.xrm#sdfsdfgf42r.sdfsdfgf42r.readmeitem.text
+msgid "System Requirements"
+msgstr "Systémové požiadavky"
+
+#: readme.xrm#subscribe.subscribe.readmeitem.text
+msgid "Subscribe"
+msgstr "Prihlásiť sa"
+
+#: readme.xrm#subscribe1.subscribe1.readmeitem.text
+msgid ""
+"Here are a few of the Project mailing lists to which you can subscribe at <a "
+"href=\"http://incubator.apache.org/openofficeorg/mailing-"
+"lists.html\">http://incubator.apache.org/openofficeorg/mailing-lists.html</a>"
+msgstr ""
+"Tu je zopár mailových zoznamov projektu, do ktorých sa môžete prihlásiť na "
+"stránke <a href=\"http://incubator.apache.org/openofficeorg/mailing-"
+"lists.html\">http://incubator.apache.org/openofficeorg/mailing-lists.html</a>"
+
+#: readme.xrm#subscribelist1.subscribelist1.readmeitem.text
+msgid ""
+"News: ooo-announce@incubator.apache.org *recommended to all users* (light "
+"traffic)"
+msgstr ""
+"Novinky: ooo-announce@incubator.apache.org *odporúča sa všetkým "
+"používateľom* (nízka aktivita)"
+
+#: readme.xrm#subscribelist2.subscribelist2.readmeitem.text
+msgid ""
+"Main user forum: ooo-users@incubator.apache.org *easy way to lurk on "
+"discussions* (heavy traffic)"
+msgstr ""
+"Hlavné používateľské fórum: ooo-users@incubator.apache.org *ľahká cesta ako "
+"sa zaseknúť v diskusii* (vysoká aktivita)"
+
+#: readme.xrm#subscribelist3.subscribelist3.readmeitem.text
+msgid ""
+"Marketing project: ooo-marketing@incubator.apache.org *beyond development* "
+"(getting heavy)"
+msgstr ""
+"Marketingový projekt: ooo-marketing@incubator.apache.org *nielen vývoj* "
+"(stále sa zvyšujúca aktivita)"
+
+#: readme.xrm#subscribelist4.subscribelist4.readmeitem.text
+msgid ""
+"General code contributor list: ooo-dev@incubator.apache.org (moderate/heavy)"
+msgstr ""
+"Všeobecný zoznam prispevateľov do kódu: ooo-dev@incubator.apache.org "
+"(stredná/vysoká aktivita)"
+
+#: readme.xrm#support.support.readmeitem.text
+msgid "User Support"
+msgstr "Používateľská podpora"
+
+#: readme.xrm#support1.support1.readmeitem.text
+msgid ""
+"The main support page <a "
+"href=\"http://support.openoffice.org/\">http://support.openoffice.org/</a> "
+"offers various possibilities for help with ${PRODUCTNAME}. Your question may "
+"have already been answered - check the Community Forum at <a href=\"http://u"
+"ser.services.openoffice.org\">http://user.services.openoffice.org</a> or "
+"search the archives of the 'users@openoffice.org' mailing list at <a href=\"h"
+"ttp://www.openoffice.org/mail_list.html\">http://www.openoffice.org/mail_list"
+".html</a>. Alternatively, you can send in your questions to <a "
+"href=\"mailto:users@openoffice.org\">users@openoffice.org</a>. How to "
+"subscribe to the list (to get an email response) is explained on this page: "
+"<a href=\"http://wiki.services.openoffice.org/wiki/Website/Content/help/maili"
+"nglists\">http://wiki.services.openoffice.org/wiki/Website/Content/help/maili"
+"nglists</a>."
+msgstr ""
+"Hlavná stránka podpory <a "
+"href=\"http://support.openoffice.org/\">http://support.openoffice.org/</a> "
+"ponúka rôzne možnosti pomoci s ${PRODUCTNAME}. Vaša otázka už mohla by "
+"zodpovedaná, pozrite sa na komunitné fórum na <a href=\"http://user.services."
+"openoffice.org\">http://user.services.openoffice.org</a> alebo prehľadajte "
+"archívy konferencie 'users@openoffice.org' na <a href=\"http://www.openoffice"
+".org/mail_list.html\">http://www.openoffice.org/mail_list.html</a>. "
+"Alternatívne môžete vašu otázku na <a "
+"href=\"mailto:users@openoffice.org\">users@openoffice.org</a>. Prihlásenie sa "
+"do zoznamu konferencie (aby ste mohli dostať odpoveď emailom) je vysvetlené "
+"na stránke <a href=\"http://wiki.services.openoffice.org/wiki/Website/Content"
+"/help/mailinglists\">http://wiki.services.openoffice.org/wiki/Website/Content"
+"/help/mailinglists</a>."
+
+#: readme.xrm#utzu6.utzu6.readmeitem.text
+msgctxt "readme.xrm#utzu6.utzu6.readmeitem.text"
+msgid "Pentium compatible PC (Pentium III or Athlon recommended)"
+msgstr "Pentium kompatibilné PC (odporúčané je Pentium III alebo Athlon)"
+
+#: readme.xrm#w32e1.w32e1.readmeitem.text
+msgid ""
+"Only shortcut keys (key combinations) not used by the operating system can "
+"be used in ${PRODUCTNAME}. If a key combination in ${PRODUCTNAME} does not "
+"work as described in the ${PRODUCTNAME} Help, check if that shortcut is "
+"already used by the operating system. To rectify such conflicts, you can "
+"change the keys assigned by your operating system. Alternatively, you can "
+"change almost any key assignment in ${PRODUCTNAME}. For more information on "
+"this topic, refer to the ${PRODUCTNAME} Help or the Help documention of your "
+"operating system."
+msgstr ""
+"V ${PRODUCTNAME} je možné používať iba skratky (kombinácie kláves), ktoré "
+"nepoužíva operačný systém. Ak skratka v ${PRODUCTNAME} nefunguje podľa "
+"popisu v Pomocníkovi ${PRODUCTNAME}, skontrolujte, či už skratku nepoužíva "
+"operačný systém. Takýto konflikt vyriešite zmenou skratky, ktorú používa "
+"operačný systém alebo môžete zmeniť takmer ktorúkoľvek skratku v "
+"${PRODUCTNAME}. Viac informácií na túto tému vám poskytne Pomocník "
+"${PRODUCTNAME} alebo dokumentácia k vášmu operačnému systému."
+
+#: readme.xrm#wd2dff.wd2dff.readmeitem.text
+msgid ""
+"Gnome 2.16 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, "
+"required for support of assistive technology tools (AT tools)"
+msgstr ""
+"Gnome 2.16 alebo vyšší s balíčkami gail 1.8.6 a at-spi 1.7 je potrebné pre "
+"podporu assistive technology tools (AT tools)"
+
+#: readme.xrm#wd2dff1.wd2dff1.readmeitem.text
+msgctxt "readme.xrm#wd2dff1.wd2dff1.readmeitem.text"
+msgid ""
+"Gnome 2.6 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, "
+"required for support of assistive technology tools (AT tools)"
+msgstr ""
+"Gnome 2.6 alebo vyšší s balíčkami gail 1.8.6 a at-spi 1.7 je je potrebné pre "
+"podporu assistive technology tools (AT tools)"
+
+#: readme.xrm#wd2dff2.wd2dff2.readmeitem.text
+msgctxt "readme.xrm#wd2dff2.wd2dff2.readmeitem.text"
+msgid ""
+"Gnome 2.6 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, "
+"required for support of assistive technology tools (AT tools)"
+msgstr ""
+"Gnome 2.6 alebo vyšší s balíčkami gail 1.8.6 a at-spi 1.7 je je potrebné pre "
+"podporu assistive technology tools (AT tools)"

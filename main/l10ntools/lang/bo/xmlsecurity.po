@@ -1,0 +1,386 @@
+
+#: certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.FT_HINT_SELECT.fixedtext.text
+msgid "Select the certificate you want to use for signing"
+msgstr "མཆན་འགོད་བྱས་པའི་ལག་ཁྱེར་འདེམས་དགོས།"
+
+#: certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.string.text
+msgctxt "certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.string.text"
+msgid "Issued to\tIssued by\tExpiration date"
+msgstr "ལ་སྤྲད་པ་\tསྤྲོད་མཁན་\tནུས་ལྡན་ཚེས་གྲངས།"
+
+#: certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.pushbutton.text
+msgctxt "certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.pushbutton.text"
+msgid "View Certificate..."
+msgstr "ལག་ཁྱེར་འཚོལ་ལྟ།..."
+
+#: certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.modaldialog.text
+msgid "Select Certificate"
+msgstr "ལག་འཁྱེར་འདེམས་པ།"
+
+#: certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_GENERAL.pageitem.text
+msgid "General"
+msgstr "རྒྱུན་སྲོལ།"
+
+#: certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_DETAILS.pageitem.text
+msgid "Details"
+msgstr "ཞིབ་ཕྲའི་ཆ་འཕྲིན།"
+
+#: certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_CERTPATH.pageitem.text
+msgid "Certification Path"
+msgstr "ལག་ཁྱེར་བརྒྱུད་ལམ།"
+
+#: certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.tabdialog.text
+msgid "View Certificate"
+msgstr "ལག་ཁྱེར་འཚོལ་ལྟ།"
+
+#: certificateviewer.src#RID_XMLSECTP_GENERAL.FI_CERTINFO.fixedtext.text
+msgid " Certificate Information"
+msgstr "ལག་ཁྱེར་ཆ་འཕྲིན།"
+
+#: certificateviewer.src#RID_XMLSECTP_GENERAL.FI_HINTNOTTRUST.fixedtext.text
+msgid "This certificate is intended for the following purpose(s):"
+msgstr "ལག་ཁྱེར་འདིའི་དམིགས་ཡུལ་གཤམ་གསལ།"
+
+#: certificateviewer.src#RID_XMLSECTP_GENERAL.FI_ISSTOLABEL.fixedtext.text
+msgid "Issued to:"
+msgstr "ལ་སྤྲད།"
+
+#: certificateviewer.src#RID_XMLSECTP_GENERAL.FI_ISSBYLABEL.fixedtext.text
+msgid "Issued by:"
+msgstr "སྤྲོད་མཁན།"
+
+#: certificateviewer.src#RID_XMLSECTP_GENERAL.FI_VALIDDATE.fixedtext.text
+msgid "Valid from %SDATE% to %EDATE%"
+msgstr "ནུས་ལྡན་དུས་ཚོད་དེ་ %SDATE% ནས་ %EDATE%"
+
+#: certificateviewer.src#RID_XMLSECTP_GENERAL.FI_CORRPRIVKEY.fixedtext.text
+msgid "You have a private key that corresponds to this certificate."
+msgstr "ཁྱེད་ལ་ལག་ཁྱེར་འདི་དང་ལྟོས་ཟླ་ཡིན་པའི་ཆེད་སྤྱོད་འཁྲོལ་ལྡེ་ཡོད།"
+
+#: certificateviewer.src#RID_XMLSECTP_GENERAL.STR_CERTIFICATE_NOT_VALIDATED.string.text
+msgctxt "certificateviewer.src#RID_XMLSECTP_GENERAL.STR_CERTIFICATE_NOT_VALIDATED.string.text"
+msgid "The certificate could not be validated."
+msgstr "ལག་ཁྱེར་ར་སྤྲོད།"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_HEADERBAR.string.text
+msgid "Field\tValue"
+msgstr "ཡིག་དུམ་\tཐང་།"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VERSION.string.text
+msgid "Version"
+msgstr "པར་གཞི།"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SERIALNUM.string.text
+msgid "Serial Number"
+msgstr "རིམ་སྟར་ཨང་རྟགས།"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGALGORITHM.string.text
+msgctxt "certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGALGORITHM.string.text"
+msgid "Signature Algorithm"
+msgstr "མིང་རྟགས་འགོད་པའི་བརྩི་ཐབས།"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_ISSUER.string.text
+msgid "Issuer"
+msgstr "སྤྲོད་མཁན།"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_ISSUER_ID.string.text
+msgid "Issuer Unique ID"
+msgstr "སྤྲོད་མཁན་གྱི་ IDགཅིག་པུ།"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VALIDFROM.string.text
+msgid "Valid From"
+msgstr "ནུས་ལྡན་དུས་ཚོད་འགོ་འཛུགས་ཚེས་གྲངས།"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VALIDTO.string.text
+msgid "Valid to"
+msgstr "ནུས་ལྡན་དུས་ཚོད་འཇུག་སྒྲིལ་ཚེས་གྲངས།"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT.string.text
+msgid "Subject"
+msgstr "གཙོ་དོན།"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_ID.string.text
+msgid "Subject Unique ID"
+msgstr "གཙོ་དོན་ IDགཅིག་པུ།"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_PUBKEY_ALGO.string.text
+msgid "Subject Algorithm"
+msgstr "གཙོ་དོན་བརྩི་ཐབས།"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_PUBKEY_VAL.string.text
+msgid "Public Key"
+msgstr "སྤྱི་སྤྱོད་འཁྲོལ་ལྡེ།"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGNATURE_ALGO.string.text
+msgctxt "certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGNATURE_ALGO.string.text"
+msgid "Signature Algorithm"
+msgstr "མིང་རྟགས་འགོད་པའི་བརྩི་ཐབས།"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_THUMBPRINT_SHA1.string.text
+msgid "Thumbprint SHA1"
+msgstr "མཛུབ་ཐེལ།  SHA1"
+
+#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_THUMBPRINT_MD5.string.text
+msgid "Thumbprint MD5"
+msgstr "མཛུབ་ཐེལ། MD5"
+
+#: certificateviewer.src#RID_XMLSECTP_CERTPATH.FT_CERTPATH.fixedtext.text
+msgid "Certification path"
+msgstr "ལག་ཁྱེར་བརྒྱུད་ལམ།"
+
+#: certificateviewer.src#RID_XMLSECTP_CERTPATH.BTN_VIEWCERT.pushbutton.text
+msgctxt "certificateviewer.src#RID_XMLSECTP_CERTPATH.BTN_VIEWCERT.pushbutton.text"
+msgid "View Certificate..."
+msgstr "ལག་ཁྱེར་འཚོལ་ལྟ།..."
+
+#: certificateviewer.src#RID_XMLSECTP_CERTPATH.FT_CERTSTATUS.fixedtext.text
+msgid "Certification status"
+msgstr "ལག་ཁྱེར་གནས་སྟངས།"
+
+#: certificateviewer.src#RID_XMLSECTP_CERTPATH.STR_PATH_CERT_OK.string.text
+msgid "The certificate is OK."
+msgstr "ལག་ཁྱེར་ལ་ནོར་འཁྲུལ་མེད་པ།"
+
+#: certificateviewer.src#RID_XMLSECTP_CERTPATH.STR_PATH_CERT_NOT_VALIDATED.string.text
+msgctxt "certificateviewer.src#RID_XMLSECTP_CERTPATH.STR_PATH_CERT_NOT_VALIDATED.string.text"
+msgid "The certificate could not be validated."
+msgstr "ལག་ཁྱེར་ར་སྤྲོད།"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_DOC.fixedtext.text
+msgid "The following have signed the document content:"
+msgstr "གཤམ་གསལ་མི་སྣས་ཡིག་ཚགས་ནང་དོན་མཆན་འགོད་བྱས།"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_BASIC.fixedtext.text
+msgid "The following have signed the document macro:"
+msgstr "གཤམ་གསལ་མི་སྣས་ཡིག་ཚགས་ཧུང་མཆན་འགོད་བྱས།"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_PACK.fixedtext.text
+msgid "The following have signed this package:"
+msgstr "གཤམ་གསལ་མི་སྣས་མཉེན་ཆས་ཁུག་མ་འདི་མཆན་འགོད་བྱས།"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_HEADERBAR.string.text
+msgid "\tSigned by\tDigital ID issued by\tDate"
+msgstr "\tམིང་རྟགས་འགོད་མཁན་\t IDགྲངས་ཀ་སྤྲོད་མཁན་\tཚེས་གྲངས།"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_VALID_SIGNATURE.string.text
+msgid "Valid signature"
+msgstr "མིང་རྟགས་ནུས་ལྡན།"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_NO_INFO_TO_VERIFY.string.text
+msgid "Certificate could not be validated"
+msgstr "ལག་ཁྱེར་ར་སྤྲོད་བྱ་ཐབས་མེད།"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_INVALID_SIGNATURE.string.text
+msgctxt "digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_INVALID_SIGNATURE.string.text"
+msgid "The signatures in this document are invalid"
+msgstr "ཡིག་ཚགས་འདིའི་མིང་རྟགས་ནུས་མེད་ཡིན།"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_VALID.fixedtext.text
+msgid "The signatures in this document are valid"
+msgstr "ཡིག་ཚགས་འདིའི་མིང་རྟགས་ཕན་ཡོད་ཡིན།"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_OLDSIGNATURE.fixedtext.text
+msgid "Not all parts of the document are signed"
+msgstr ""
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_BROKEN.fixedtext.text
+msgctxt "digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_BROKEN.fixedtext.text"
+msgid "The signatures in this document are invalid"
+msgstr "ཡིག་ཚགས་འདིའི་མིང་རྟགས་ནུས་མེད་ཡིན།"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_VIEWCERT.pushbutton.text
+msgctxt "digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_VIEWCERT.pushbutton.text"
+msgid "View Certificate..."
+msgstr "ལག་ཁྱེར་འཚོལ་ལྟ།..."
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_ADDCERT.pushbutton.text
+msgid "Sign Document..."
+msgstr ""
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_REMOVECERT.pushbutton.text
+msgctxt "digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_REMOVECERT.pushbutton.text"
+msgid "Remove"
+msgstr "སུབ་པ།"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_OK.okbutton.text
+msgid "Close"
+msgstr ""
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.modaldialog.text
+msgid "Digital Signatures"
+msgstr "གྲངས་ཀའི་མིང་རྟགས།"
+
+#: digitalsignaturesdialog.src#RID_XMLSECDLG_OLD_ODF_FORMAT.errorbox.text
+msgid ""
+"This document contains signatures in ODF 1.1 (OpenOffice.org 2.x) format. "
+"Signing documents in %PRODUCTNAME %PRODUCTVERSION requires ODF 1.2 format "
+"version. Thus no signatures can be added or removed to this document.\n"
+"\n"
+"Save document in ODF 1.2 format and add all desired signatures again."
+msgstr ""
+"ཡིག་ཚགས་འདིའི་ནང་ODF 1.1 (OpenOffice.org 2.x)རྣམ་གཞག་གི་མིང་རྟགས་ཚུད་འདུག %"
+"PRODUCTNAME %PRODUCTVERSION ནང་གི་མིང་རྟགས་ཡིག་ཚགས་ལ་ODF 1.2 "
+"རྣམ་གཞག་ཀྱི་དཔེ་གཞི་དགོས་ཀྱི་ཡོད། "
+"དེར་བརྟེན་ཧག་ཚགས་འདིར་ལ་མིང་རྟགས་གསར་སྣོན་ནམ་ཡང་ན་སུབ་ཡས་མེད། \n"
+"\n"
+" ODF 1.2 རྣམ་གཞག་སྤྱོད་དེ་ཡིག་ཚགས་ཉར་ཚགས་བྱས་ནས་མཁོ་བའི་མིང་རྟགས་ཡོངས་རྫོགས་"
+"བསྐྱར་དུ་གསར་སྣོན་གནང་དང་།"
+
+#: digitalsignaturesdialog.src#MSG_XMLSECDLG_QUERY_REMOVEDOCSIGNBEFORESIGN.querybox.text
+msgid ""
+"Adding or removing a macro signature will remove all document signatures.\n"
+"Do you really want to continue?"
+msgstr ""
+
+#: macrosecurity.src#RID_XMLSECTP_MACROSEC.1.RID_XMLSECTP_SECLEVEL.pageitem.text
+msgid "Security Level"
+msgstr "བདེ་འཇགས་རང་བཞིན་གྱི་རིམ་པ།"
+
+#: macrosecurity.src#RID_XMLSECTP_MACROSEC.1.RID_XMLSECTP_TRUSTSOURCES.pageitem.text
+msgid "Trusted Sources"
+msgstr "བློས་ཐུབ་ཡོངས་ཁུངས།"
+
+#: macrosecurity.src#RID_XMLSECTP_MACROSEC.BTN_RESET.pushbutton.text
+msgid "Reset"
+msgstr "བསྐྱར་སྒྲིག"
+
+#: macrosecurity.src#RID_XMLSECTP_MACROSEC.tabdialog.text
+msgid "Macro Security"
+msgstr "ཧུང་གི་བདེ་འཇགས་རང་བཞིན།"
+
+#: macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.radiobutton.text
+msgid ""
+"~Very high.\n"
+"Only macros from trusted file locations are allowed to run. All other "
+"macros, regardless whether signed or not, are disabled."
+msgstr ""
+"ཧ་ཅང་མཐོ་(~V)\n"
+"བློས་འགེལ་ཆོག་པའི་ཡིག་ཆའི་གནས་ས་ནས་བྱུང་བའི་ཧུང་ཁོ་ན་ཁོར་རྒྱུག་ཆོག"
+
+#: macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.radiobutton.text
+msgid ""
+"H~igh.\n"
+"Only signed macros from trusted sources are allowed to run. Unsigned macros "
+"are disabled."
+msgstr ""
+"མཐོ་(~I)\n"
+"བློས་འགེལ་ཆོག་པའི་ཡོང་ཁུངས་ནས་ཡོང་བའི་མིང་བཀོད་ཧུང་ཁོ་ན་ཁོར་རྒྱུག་ཆོག་ "
+"མིང་རྟགས་མ་བཀོད་པའི་ཧུང་འགོག་སྤྱོད་བྱེད།"
+
+#: macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.radiobutton.text
+msgid ""
+"~Medium.\n"
+"Confirmation required before executing macros from untrusted sources."
+msgstr ""
+"དཁྱིལ་(~M)\n"
+"བློས་མི་འཁེལ་བའི་ཡོང་ཁུངས་ནས་ཡོང་བའི་ཧུང་ལག་སྟར་མ་བྱས་གོང་ལག་འགུལ་གྱིས་གཏན་འ"
+"ཁེལ་བྱེད་པ།"
+
+#: macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.radiobutton.text
+msgid ""
+"~Low (not recommended).\n"
+"All macros will be executed without confirmation. Use this setting only if "
+"you are certain that all documents that will be opened are safe."
+msgstr ""
+"དམའ་（བེད་མི་སྤྱོད་པའི་གྲོས་འགོ་འདོན་རྒྱུ་） (~L)\n"
+"ངོས་འཛིན་མ་རྒྱུད་པར་ཧུང་ལག་སྟར་བྱེད་ ཁ་ཕྱེ་བའི་ཡིག་ཚགས་ཚང་མ་བདེ་འཇགས་ཡིག་ཚགས"
+"་་འགན་ལེན་ཐུབ་པ་ཁོ་ནའི་སྐབས་སྒྲིག་ཆས་འདི་སྤྱད་ཆོག"
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.fixedline.text
+msgid "Trusted certificates"
+msgstr "ཡིད་ཆེས་འོས་པའི་ལག་ཁྱེར།"
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.STR_HEADERBAR.string.text
+msgctxt "macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.STR_HEADERBAR.string.text"
+msgid "Issued to\tIssued by\tExpiration date"
+msgstr "ལ་སྤྲད་པ་\tསྤྲོད་མཁན་\tནུས་ལྡན་ཚེས་གྲངས།"
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_ADD_TRUSTCERT.pushbutton.text
+msgctxt "macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_ADD_TRUSTCERT.pushbutton.text"
+msgid "Add..."
+msgstr "གསབ་སྣོན།..."
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_VIEW_TRUSTCERT.pushbutton.text
+msgid "View..."
+msgstr "འཚོལ་ལྟ།..."
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_REMOVE_TRUSTCERT.pushbutton.text
+msgctxt "macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_REMOVE_TRUSTCERT.pushbutton.text"
+msgid "Remove"
+msgstr "སུབ་པ།"
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTFILELOC.fixedline.text
+msgid "Trusted file locations"
+msgstr "བློས་འགེལ་ཆོག་པའི་ཡིག་ཆའི་གནས་ས།"
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FI_TRUSTFILELOC.fixedtext.text
+msgid ""
+"Document macros are always executed if they have been opened from one of the "
+"following locations."
+msgstr ""
+"བདེ་འཇགས་རང་བཞིན་གྱི་རིམ་པ་\"ཧ་ཅང་མཐོ་\"བར་གཏན་འཁེལ་བའི་དུས་སྐབས་ཁོ་ནར་གཞི་ནར་"
+"གཞི་ནས་བློས་འགལ་ཆག་པའི་ཡིག་ཆའི་གནས་ས་བེད་སྤྱོད་ཆོག  བཀོད་སྒྲིག་འདི་བེད་སྤྱོད"
+"་བྱ་ཐབས་གཤམ་གསལ་གནས་སའི་ཁོངས་ནས་ཡིག་ཚགས་ཁྲོད་ཀྱི་ཧུང་ཁ་འབྱེད་སྐབས་གཞི་ནས་ཧུང"
+"་དེ་དག་ལག་བསྟར་བྱ་ཐུབ།"
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_ADD_TRUSTFILELOC.pushbutton.text
+msgctxt "macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_ADD_TRUSTFILELOC.pushbutton.text"
+msgid "Add..."
+msgstr "གསབ་སྣོན།..."
+
+#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_REMOVE_TRUSTFILELOC.pushbutton.text
+msgctxt "macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_REMOVE_TRUSTFILELOC.pushbutton.text"
+msgid "Remove"
+msgstr "སུབ་པ།"
+
+#: macrosecurity.src#RID_XMLSECTP_READONLY_CONFIG_TIP.string.text
+msgid "This setting is protected by the Administrator"
+msgstr "དོ་དམ་པས་སྒྲིག་སྦྱོར་འདིར་སྲུང་སྐྱོབ་བྱས་ཡོད།"
+
+#: warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR1A.fixedtext.text
+msgid "The document contains document macros signed by:"
+msgstr "ཡིག་ཚགས་ནང་ཡིག་ཚགས་རགས་ཚུད།  མཆན་འགོད་པ།"
+
+#: warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR1B.fixedtext.text
+msgid "The document contains document macros."
+msgstr "ཡིག་ཚགས་ནང་ཡིག་ཚགས་རགས་ཚུད།"
+
+#: warnings.src#RID_XMLSECTP_MACROWARN.PB_VIEWSIGNS.pushbutton.text
+msgid "View Signatures..."
+msgstr "མིང་རྟགས་འཚོལ་ལྟ།..."
+
+#: warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR2.fixedtext.text
+msgid ""
+"Macros may contain viruses. Disabling macros for a document is always save. "
+"If you disable macros you may lose functionality provided by the document "
+"macros."
+msgstr ""
+"སྤྱི་ཁྱབ་ལ་ནད་དུག་ཡོད་ཤས་ཆེ། ཡིག་ཚགས་ཤིག་གིས་སྤྱི་ཁྱབ་བཀོལ་སྤྱོད་བྱེད་མི་ཆོག"
+"་པའི་སྐབས་སྔ་ཕྱི་བར་གསུམ་དུ་ཉར་ཚགས་བྱེད་པ། གལ་ཏེ་ཁྱེད་ཀྱི་སྤྱི་ཁྱབ་བཀོལ་སྤྱོ"
+"ད་བྱེད་མི་ཆོག་པ་བཟོས་ན་ཡིག་ཚགས་ཀྱི་སྤྱི་ཁྱབ་ཀྱིས་མཁོ་འདོན་བྱས་པའི་བྱེད་ནུས་འ"
+"བོར་བརླག་བྱེད་ཉེན་ཆེ།"
+
+#: warnings.src#RID_XMLSECTP_MACROWARN.CB_ALWAYSTRUST.checkbox.text
+msgid "Always trust macros from this source"
+msgstr "འགོ་མཇུག་གི་ཡིད་ཆེས་དེ་ཁུངས་ཀྱི་རགས་ནང་བྱུང་བ།"
+
+#: warnings.src#RID_XMLSECTP_MACROWARN.PB_ENABLE.pushbutton.text
+msgid "Enable Macros"
+msgstr "རགས་སྤར་རྒྱུ།"
+
+#: warnings.src#RID_XMLSECTP_MACROWARN.PB_DISABLE.cancelbutton.text
+msgid "Disable Macros"
+msgstr "སྤྱོད་མི་ཆོག་པ།"
+
+#: warnings.src#RID_XMLSECTP_MACROWARN.modaldialog.text
+msgid "Security Warning"
+msgstr "བདེ་འཇགས་ཐ་ཚིག"
+
+#: warnbox.src#RID_XMLSECWB_NO_MOZILLA_PROFILE.warningbox.text
+msgid ""
+"Digital signatures functionality could not be used, because no Mozilla user "
+"profile was found. Please check the Mozilla installation."
+msgstr ""
+"ཨང་ཀིའི་མིང་འགོད་ནུས་པ་སྤྱོད་ཐབས་བྲལ། དེའི་རྐྱེན་ནི་Mozilla "
+"སྤྱོད་དུད་བགོ་སྒྲིག་ཡིག་ཆ་བཪྙེད་མེད།  Mozilla "
+"བསྒར་སྒྲིག་ལ་ཞིབ་བཤེར་བྱེད་རྒྱུ།"

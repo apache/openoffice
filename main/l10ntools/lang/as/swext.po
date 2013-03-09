@@ -1,0 +1,895 @@
+
+#: wiki.xhp#tit.help.text
+msgctxt "wiki.xhp#tit.help.text"
+msgid "@WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@"
+
+#: wiki.xhp#bm_id3154408.help.text
+msgid ""
+"<bookmark_value>Wiki;@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_va"
+"lue>@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>extensions;Me"
+"diaWiki</bookmark_value>"
+msgstr ""
+"<bookmark_value>Wiki;@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_va"
+"lue>@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>extensions;Me"
+"diaWiki</bookmark_value>"
+
+#: wiki.xhp#hd_id5993530.help.text
+msgctxt "wiki.xhp#hd_id5993530.help.text"
+msgid "@WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@"
+
+#: wiki.xhp#par_id9647511.help.text
+msgid ""
+"<ahelp hid=\".\">By using the @WIKIEXTENSIONPRODUCTNAME@ you can upload your "
+"current Writer text document to a MediaWiki server. After uploading, all "
+"Wiki users can read your document on the Wiki.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">@WIKIEXTENSIONPRODUCTNAME@ ব্যৱহাৰ কৰি আপুনি বৰ্ত্তমানৰ "
+"Writer text document ক এটা MediaWiki সেৱকলৈ তুলি দিব পাৰে । তাৰ পিছত, সকলো "
+"ৱিকি ব্যৱহাৰকৰোঁতাই আপোনাৰ আলেখ্যনক ৱিকিত পঢ়িব পাৰিব ।</ahelp>"
+
+#: wiki.xhp#par_id6468703.help.text
+msgid ""
+"<ahelp hid=\".\">Choose <item type=\"menuitem\">File - Send - To "
+"MediaWiki</item> to upload the current Writer document to a MediaWiki "
+"server.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\"><item type=\"menuitem\">File - Send - To MediaWiki</item> "
+"নিৰ্ব্বাচন কৰক বৰ্ত্তমানৰ Writer আলেখ্যনক এটা MediaWiki সেৱকলৈ তুলিবলৈ "
+"।</ahelp>"
+
+#: wiki.xhp#hd_id4554582.help.text
+msgid "System Requirements"
+msgstr "ব্যৱস্থাপ্ৰণালীৰ প্ৰয়োজন"
+
+#: wiki.xhp#par_id2597430.help.text
+msgid "StarOffice/StarSuite 9"
+msgstr ""
+
+#: wiki.xhp#par_id8430738.help.text
+msgid "OpenOffice.org 3.0"
+msgstr "OpenOffice.org 2.4"
+
+#: wiki.xhp#par_id9340495.help.text
+msgid "Java Runtime Environment 1.4"
+msgstr "Java Runtime Environment 1.4"
+
+#: wiki.xhp#par_id7387615.help.text
+msgid ""
+"A Wiki account on a supported <link "
+"href=\"http://www.mediawiki.org/wiki/MediaWiki\">MediaWiki</link> server"
+msgstr ""
+"এটা সমৰ্থিত <link "
+"href=\"http://www.mediawiki.org/wiki/MediaWiki\">MediaWiki</link> সেৱকত এটা "
+"ৱিকি হিচাপ ।"
+
+#: wiki.xhp#hd_id8047120.help.text
+msgid "Installing @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@ সংস্থাপ কৰা"
+
+#: wiki.xhp#par_id4277169.help.text
+msgid ""
+"Before you install the @WIKIEXTENSIONPRODUCTNAME@, ensure that %PRODUCTNAME "
+"uses a Java Runtime Environment (JRE). To check the status of the JRE, "
+"choose <item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Java</item>. "
+"Ensure that \"Use a Java runtime environment\" is marked and that a Java "
+"runtime folder is selected in the big listbox. If no JRE was activated, then "
+"activate a JRE 1.4 or later and restart %PRODUCTNAME."
+msgstr ""
+"@WIKIEXTENSIONPRODUCTNAME@ সংস্থাপন কৰাৰ আগতে, StarOffice বা OpenOffice.org "
+"এ এটা Java Runtime Environment (JRE) ব্যৱহাৰ কৰা নিশ্চিত কৰকৰ । JRE ৰ অৱস্থা "
+"পৰীক্ষা কৰিবলৈ, <item type=\"menuitem\">Tools - Options - "
+"StarOffice/OpenOffice.org - Java</item> বাচি লওক । নিশ্চিত কৰক যে \"এটা Java "
+"runtime environment ব্যৱহাৰ কৰক\" চিহ্ননিত কৰা হৈছে আৰু ডাঙৰ তালিকাবক্সত এটা "
+"Java runtime পঞ্জিকা নিৰ্বাচিত কৰা হৈছে । যদি কোনো JRE সক্ৰিয় নহয়, "
+"তেতিয়াহ'লে এটা JRE 1.4 বা তাৰ পিছৰ সংস্কৰণ আৰম্ভ কৰক আৰু "
+"StarOffice/OpenOffice.org পুনৰাৰম্ভ কৰক ।"
+
+#: wiki.xhp#hd_id567339.help.text
+msgid "To Install the @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@ সংস্থাপন কৰিবলৈ"
+
+#: wiki.xhp#par_id1732230.help.text
+msgctxt "wiki.xhp#par_id1732230.help.text"
+msgid ""
+"In a Writer window, choose <item type=\"menuitem\">Tools - Extension "
+"Manager</item>."
+msgstr ""
+"এটা Writer সংযোগক্ষেত্ৰত, <item type=\"menuitem\">Tools - Extension "
+"Manager</item> নিৰ্ব্বাচন কৰক ।"
+
+#: wiki.xhp#par_id4338511.help.text
+msgid "In the Extension Manager dialog, click Add."
+msgstr "Extension Manager সম্বাদত, যোগ কৰক টিপক ।"
+
+#: wiki.xhp#par_id5882442.help.text
+msgid ""
+"Locate the @WIKIEXTENSIONFILENAME@.oxt file, click Open, and then click "
+"Close. "
+msgstr ""
+"@WIKIEXTENSIONFILENAME@.oxt নথিপত্ৰ বিচাৰক, খোলক টিপক, আৰু তাৰ পিছত বন্ধ কৰক "
+"টিপক ।"
+
+#: wiki.xhp#par_id4008911.help.text
+msgid "Close %PRODUCTNAME, and close also the Quickstarter if enabled."
+msgstr ""
+
+#: wiki.xhp#par_id265511.help.text
+msgid ""
+"Restart the software, open a text document, then choose <item "
+"type=\"menuitem\">Tools - Options - Internet - MediaWiki</item> to enter your "
+"Wiki settings. See \"To Connect To a Wiki\" below."
+msgstr ""
+"চালনাজ্ঞান পুনৰাৰম্ভ কৰক, এটা টেক্সট আলেখ্যন খোলক, তাৰ পিছত <item "
+"type=\"menuitem\">Tools - Options - Internet - MediaWiki</item> নিৰ্ব্বাচন কৰক "
+"আপোনাৰ ৱিকিৰ পছন্দ দিবলৈ । তলৰ \"এটা ৱিকিলৈ সংযোগ কৰক\" চাওক ।"
+
+#: wiki.xhp#hd_id3569444.help.text
+msgid "To Remove the @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@ আঁতৰাবলৈ"
+
+#: wiki.xhp#par_id2655110.help.text
+msgctxt "wiki.xhp#par_id2655110.help.text"
+msgid ""
+"In a Writer window, choose <item type=\"menuitem\">Tools - Extension "
+"Manager</item>."
+msgstr ""
+"এটা Writer সংযোগক্ষেত্ৰত, <item type=\"menuitem\">Tools - Extension "
+"Manager</item> নিৰ্ব্বাচন কৰক ।"
+
+#: wiki.xhp#par_id9504379.help.text
+msgid "Click the plus sign (+) in front of My Extensions."
+msgstr "My Extensions ৰ সন্মুখৰ যোগ চিহ্ন (+) টিপক ।"
+
+#: wiki.xhp#par_id8431348.help.text
+msgid "Select the extension, click Remove, and then click Close."
+msgstr "সম্প্ৰসাৰণ নিৰ্ব্বাচন কৰক, আঁতৰাওক টিপক, আৰু তাৰ পিছত বন্ধ কৰক টিপক ।"
+
+#: wiki.xhp#hd_id5316019.help.text
+msgid "To Connect to a Wiki"
+msgstr "এটা ৱিকিলৈ সংযোগ কৰিবলৈ"
+
+#: wiki.xhp#par_id2381969.help.text
+msgid ""
+"Note: You can store your user name and password for all respective dialogs "
+"inside %PRODUCTNAME. The password will be stored in a secure way, where "
+"access is maintained by a master password. To enable the master password, "
+"choose <item type=\"menuitem\">Tools - Options - %PRODUCTNAME - "
+"Security</item>."
+msgstr ""
+"মন কৰিব: StarOffice/OpenOffice.org তসকলো সম্বাদৰ কাৰণে আপুনি নিজৰ "
+"ব্যৱহাৰকৰোঁতাৰ নাম আৰু গুপ্তশব্দ থ'ব পাৰে । গুপ্তশব্দক সুৰক্ষিত ভাবে ৰখা "
+"হ'ব, য'ত এটা প্ৰমূখ গুপ্তশব্দৰেহে অভিগম কৰিব পাৰি । প্ৰমূখ গুপ্তশব্দ সক্ৰিয় "
+"কৰিবলৈ, <item type=\"menuitem\">Tools - Options - StarOffice/OpenOffice.org - "
+"Security</item> নিৰ্ব্বাচন কৰক ।"
+
+#: wiki.xhp#par_id3751640.help.text
+msgid ""
+"Note: If you connect to the web using a proxy server, enter the proxy "
+"information to <item type=\"menuitem\">Tools - Options - Internet - "
+"Proxy</item>, and restart the software."
+msgstr ""
+"মন কৰিব: যদি আপুনি নিযুক্তক সেৱকেৰে ৱেবলৈ সংযোগ কৰে, <item "
+"type=\"menuitem\">Tools - Options - Internet - Proxy</item> নিযুক্তকৰ তথ্য "
+"দিয়ক, আৰু চালনাজ্ঞান পুনৰাৰম্ভ কৰক ।"
+
+#: wiki.xhp#par_id9533677.help.text
+msgid ""
+"Open a Writer document, and choose <item type=\"menuitem\">Tools - Options - "
+"Internet - MediaWiki</item>."
+msgstr ""
+"এটা Writer আলেখ্যন খেলক, আৰু <item type=\"menuitem\">Tools - Options - "
+"Internet - MediaWiki</item> নিৰ্ব্বাচন কৰক ।"
+
+#: wiki.xhp#par_id368968.help.text
+msgid ""
+"In the <link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\">Options</link> "
+"dialog, click Add."
+msgstr ""
+"<link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\">Options</link> সম্বাদত, যোগ "
+"কৰক টিপক ।"
+
+#: wiki.xhp#par_id6962187.help.text
+msgid ""
+"In the <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> "
+"dialog, enter the account information for the Wiki."
+msgstr ""
+"<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> সম্বাদত, "
+"ৱিকিৰ কাৰণে হিচাপৰ তথ্য দিয়ক ।"
+
+#: wiki.xhp#par_id5328836.help.text
+msgid ""
+"In the URL textbox, enter the address of a Wiki that you want to connect to."
+msgstr "URL টেক্সট বাকচত, আপুনি সংযোগ কৰিব বিচৰা এটা ৱিকিৰ ঠিকনা দিয়ক ।"
+
+#: wiki.xhp#par_id389416.help.text
+msgid "You can copy the URL from a web browser and paste it into the textbox."
+msgstr "আপুনি এটা ৱেব চৰকৰ পৰা URL নকল কৰি টেক্সটবাকচত আঠা লগাব পাৰে ।"
+
+#: wiki.xhp#par_id5906552.help.text
+msgid "In the Username box, enter your user ID for your Wiki account."
+msgstr "ব্যৱহাৰকৰোঁতাৰ বাকচত, আপোনাৰ ৱিকি হিচাপৰ ব্যৱহাৰকৰোঁতাৰ ID দিয়ক ।"
+
+#: wiki.xhp#par_id9297158.help.text
+msgid ""
+"If the Wiki allows anonymous write access, you can leave the Username and "
+"Password boxes empty."
+msgstr ""
+"ৱিকিয়ে বেনামীভাবে লিখাৰ অনুমতি দিলে, আপুনি ব্যৱহাৰকৰোঁতাৰ নাম আৰু গুপ্তশব্দৰ "
+"বাকচ্‌ ৰিক্ত ৰাখিব পাৰে ।"
+
+#: wiki.xhp#par_id8869594.help.text
+msgid ""
+"In the Password box, enter the password for your Wiki account, then click "
+"OK."
+msgstr ""
+"গুপ্তশব্দৰ বাকচত, আপোনাৰ ৱিকি হিচাপৰ গুপ্তশব্দ দিয়ক, আৰু তাৰ পিছত ঠিক আছে "
+"টিপক ।"
+
+#: wiki.xhp#par_id292062.help.text
+msgid ""
+"Optionally enable \"Save password\" to save the password between sessions. A "
+"master password is used to maintain access to all saved passwords. Choose "
+"<item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Security</item> to "
+"enable the master password. \"Save password\" is unavailable when the master "
+"password is not enabled."
+msgstr ""
+"বৈকল্পিকভাবে \"গুপ্তশব্দ ৰক্ষা কৰক\" সক্ৰিয় কৰক অধিবেশনত গুপ্তশব্দ ৰক্ষা "
+"কৰিবলৈ । ৰক্ষা কৰা সকলো গুপ্তশব্দক অভিগম কৰিবলৈ এটা মূখ্য গুপ্তশব্দ ৰখা হয় । "
+"মূখ্য গুপ্তশব্দ সক্ৰিয় কৰিবলৈ<item type=\"menuitem\">Tools - Options - "
+"StarOffice/OpenOffice.org - Security</item> নিৰ্ব্বাচন কৰক । মূখ্য গুপ্তশব্দ "
+"সক্ৰিয় ন'হ'লে \"গুপ্তশব্দ ৰক্ষা কৰক\" পোৱা নাযায় ।"
+
+#: wiki.xhp#hd_id7044892.help.text
+msgid "To Create a New Wiki Page"
+msgstr "এটা নতুন ৱিকি পৃষ্টা সৃষ্টি কৰা"
+
+#: wiki.xhp#par_id3514206.help.text
+msgid "Open a Writer document."
+msgstr "এটা Writer আলেখ্যন খেলক ।"
+
+#: wiki.xhp#par_id944853.help.text
+msgid ""
+"Write the content of the Wiki page. You can use formatting like text "
+"formats, headings, footnotes, and more. See the <link "
+"href=\"@WIKIEXTENSIONID@/wikiformats.xhp\">list of supported formats</link>."
+msgstr ""
+"ৱিকি পৃষ্ঠাৰ বিষয়বস্তু লিখক । আপুনি টেক্সট ফৰ্মেটিং, হেডাৰ, ফুট-ন'ট, আৰু "
+"অন্যান্যৰ নিচিনা ফৰ্মেটিং ব্যৱহাৰ কৰিব পাৰে । <link "
+"href=\"@WIKIEXTENSIONID@/wikiformats.xhp\">list of supported formats</link> "
+"চাওক ।"
+
+#: wiki.xhp#par_id4566484.help.text
+msgid "Choose <item type=\"menuitem\">File - Send - To MediaWiki</item>."
+msgstr ""
+"<item type=\"menuitem\">File - Send - To MediaWiki</item> নিৰ্ব্বাচন কৰক ।"
+
+#: wiki.xhp#par_id228278.help.text
+msgid ""
+"In the <link href=\"@WIKIEXTENSIONID@/wikisend.xhp\">Send to MediaWiki</link> "
+"dialog, specify the settings for your entry."
+msgstr ""
+"<link href=\"@WIKIEXTENSIONID@/wikisend.xhp\">Send to MediaWiki</link> "
+"সম্বাদত, আপোনাৰ নিবেশৰ কাৰণে পছন্দ নিৰ্ধাৰণ কৰক ।"
+
+#: wiki.xhp#par_id2564165.help.text
+msgid "<emph>MediaWiki server</emph>: Select the Wiki."
+msgstr "<emph>MediaWiki সেৱক</emph>: ৱিকি নিৰ্ব্বাচন কৰক ।"
+
+#: wiki.xhp#par_id5566576.help.text
+msgid ""
+"<emph>Title</emph>: Type the title of your page. Type the title of an "
+"existing page to overwrite the page with your current text document. Type a "
+"new title to create a new page on the Wiki."
+msgstr ""
+"<emph>শিৰোনাম</emph>: আপোনাৰ পৃষ্ঠাৰ শিৰোনাম লিখক । আপোনাৰ বৰ্ত্তমানৰ লিপিৰ "
+"আলেখ্যন থকা পৃষ্ঠাৰ ওপৰত পুনঃ লিখিবলৈ ইতিমধ্যে থকা পৃষ্ঠাৰ শিৰোনাম লিখক । "
+"ৱিকিত নতুন পৃষ্ঠা সৃষ্টি কৰিবলৈ এটা নতুন শিৰোনাম লিখক ।"
+
+#: wiki.xhp#par_id9688711.help.text
+msgid "<emph>Summary</emph>: Enter an optional short summary of your page."
+msgstr ""
+
+#: wiki.xhp#par_id4123661.help.text
+msgid ""
+"<emph>This is a minor edit</emph>: Check this box to mark the uploaded page "
+"as a minor edit of the already existing page with the same title."
+msgstr ""
+"<emph>এইটো এটা সৰু সম্পাদন</emph>: আপ-ল'ড কৰা পৃষ্ঠা একে নামেৰে ইতিমধ্যে থকা "
+"পৃষ্ঠাৰ এটা সৰু সম্পাদন হিচাপে চিহ্নিত কৰিবলৈ এই বক্স চিহ্নিত কৰক ।"
+
+#: wiki.xhp#par_id452284.help.text
+msgid ""
+"<emph>Show in web browser</emph>: Check this box to open your system web "
+"browser and show the uploaded Wiki page."
+msgstr ""
+"<emph>ৱেব চৰকত দেখুৱাওক</emph>: আপোনাৰ ব্যৱস্থাপ্ৰণালীৰ ৱেব চচৰক খউলিবলে আৰু "
+"আপ-ল'ড কৰা ৱিকি পৃষ্ঠা দেখুৱাবলৈ এই বাকচ টিপক ।"
+
+#: wiki.xhp#par_id8346812.help.text
+msgid "Click Send."
+msgstr "পথাওক টিপক ।"
+
+#: wikiaccount.xhp#tit.help.text
+msgctxt "wikiaccount.xhp#tit.help.text"
+msgid "MediaWiki"
+msgstr "MediaWiki"
+
+#: wikiaccount.xhp#hd_id960722.help.text
+msgctxt "wikiaccount.xhp#hd_id960722.help.text"
+msgid "MediaWiki"
+msgstr "MediaWiki"
+
+#: wikiaccount.xhp#par_id4571672.help.text
+msgid ""
+"Use the MediaWiki dialog to add or edit your MediaWiki account settings."
+msgstr ""
+"MediaWiki সম্বাদ ব্যৱহাৰ কৰক আপোনাৰ MediaWiki হিচাপৰ পছন্দ যোগ কৰিবলৈ বা "
+"সম্পাদন কৰিবলৈ ।"
+
+#: wikiaccount.xhp#par_id7631458.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Enter the URL of a MediaWiki server, "
+"starting with http://</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">এটা MediaWiki সেৱকৰ URL দিয়ক,  http:// ৰে "
+"আৰম্ভ কৰি</ahelp>"
+
+#: wikiaccount.xhp#par_id7862483.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Enter your user name on the MediaWiki "
+"server. Leave empty for anonymous access.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">MediaWiki সেৱকৰত আপোনাৰ ব্যৱহাৰকৰোঁতাৰ "
+"নাম দিয়ক । বেনামী অভিগমৰ বাবে ৰিক্ত ৰাখক ।</ahelp>"
+
+#: wikiaccount.xhp#par_id1113010.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Enter your password on the MediaWiki "
+"server. Leave empty for anonymous access.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">MediaWiki সেৱকত আপোনাৰ গুপ্তশব্দ দিয়ক । "
+"বেনামী অভিগমৰ কাৰণে ৰিক্ত ৰাখক ।</ahelp>"
+
+#: wikiaccount.xhp#par_id656758.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Enable to store your password between "
+"sessions. The master password must be enabled, see <item "
+"type=\"menuitem\">Tools - Options - %PRODUCTNAME - Security</item>.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">অধিবেশনত আপোনাৰ গুপ্তশব্দ ৰক্ষা কৰিবলৈ "
+"সক্ৰিয় কৰক । মূখ্য গুপ্তশব্দ সক্ৰিয় হ'ব লাগিব,  <item type=\"menuitem\">Tools "
+"- Options - StarOffice/OpenOffice.org - Security</item> চাওক ।</ahelp>"
+
+#: wikiaccount.xhp#par_id3112582.help.text
+msgid ""
+"Enter the Internet address of a Wiki server in a format like "
+"http://wiki.services.openoffice.org/wiki or copy the URL from a web browser."
+msgstr ""
+"http://wiki.services.openoffice.org/wiki আকৃতিত এটা ৱিকি সেৱকৰ ইন্টাৰ্নে'ট "
+"ঠিকনা দিয়ক বা এটা ৱেব চৰকৰ পৰা URL নকল কৰক ।"
+
+#: wikiaccount.xhp#par_id628070.help.text
+msgid ""
+"If the Wiki allows anonymous access, you can leave the account text boxes "
+"empty. Else enter your user name and password."
+msgstr ""
+"ৱিকিয়ে বেনামী অভিগমৰ অনুমতি দিলে, আপুনি হিচাপৰ টেক্সট বাকচ ৰিক্ত ৰাখিব পাৰে "
+"। ন'হ'লে আপোনাৰ ব্যৱহাৰকৰোঁতাৰ নাম আৰু গুপ্তশব্দ  দিয়ক ।"
+
+#: wikiaccount.xhp#par_id9046601.help.text
+msgid ""
+"If you have enabled the master password feature on the Security tab page of "
+"the Tools - Options - %PRODUCTNAME dialog, then the software can store your "
+"password and automatically insert the data where necessary. Enable the \"Save "
+"password\" checkbox to store your password."
+msgstr ""
+"যদি আপুনি Tools - Options - StarOffice/OpenOffice.org  সম্বাদৰ সুৰক্ষা টেব "
+"পৃষ্ঠাত মূখ্য গুপ্তশব্দৰ গুণ যদি সক্ৰিয় কৰিছে, তেতিয়াহ'লে চালনাজ্ঞানে "
+"গুপ্তশব্দ ৰক্ষা কৰিব আৰু প্ৰয়োজনৰ মতে নিজেই তথ্য দিব ।আপোনাৰ গুপ্তশব্দ ৰক্ষা "
+"কৰিবলৈ \"গুপ্তশব্দ ৰক্ষা কৰক\" সক্ৰিয় কৰক ।"
+
+#: wikiformats.xhp#tit.help.text
+msgctxt "wikiformats.xhp#tit.help.text"
+msgid "MediaWiki Formats"
+msgstr "MediaWiki ৰ আকৃতি"
+
+#: wikiformats.xhp#hd_id3743095.help.text
+msgctxt "wikiformats.xhp#hd_id3743095.help.text"
+msgid "MediaWiki Formats"
+msgstr "MediaWiki ৰ আকৃতি"
+
+#: wikiformats.xhp#par_id8654133.help.text
+msgid ""
+"The following list gives an overview of the text formats that the "
+"@WIKIEXTENSIONPRODUCTNAME@ can upload to the Wiki server."
+msgstr ""
+"তলৰ তালিকাই লিপিৰ আকৃতিৰ তালিকা দিয়ে যি@WIKIEXTENSIONPRODUCTNAME@ এ ৱিকি "
+"সেৱকলৈ আপ-ল'ড কৰিব ।"
+
+#: wikiformats.xhp#par_id5630664.help.text
+msgid ""
+"The OpenDocument format used by Writer and the WikiMedia format are quite "
+"different. Only a subset of all features can be transformed from one format "
+"to the other."
+msgstr ""
+"Writer আৰু WikiMedia আকৃতিয়ে ব্যৱহাৰ কৰা OpenDocument  আকৃতি বেলেগ । এটা "
+"আকৃতিৰ পৰা অন্য এটালৈ অকল ইয়াৰ এটা উপসমষ্টিহে সলনি কৰিব পাৰি ।"
+
+#: wikiformats.xhp#hd_id7178868.help.text
+msgid "Headings"
+msgstr "Headings"
+
+#: wikiformats.xhp#par_id508133.help.text
+msgid ""
+"Apply a heading paragraph style to the headings in your Writer document. The "
+"Wiki will show the heading styles of the same outline level, formatted as "
+"defined by the Wiki engine."
+msgstr ""
+"আপোনাৰ Writer আলেখ্যনত এটা হেডিং পেৰেগ্ৰাফ ধৰণ লগাওক । ৱিকিৰ কলঘৰে সংজ্ঞা "
+"দিয়া আকৃতিৰ মতে, ৱিকিয়ে একে আউটলাইন স্তৰৰ হেডিং ধৰণ দেখুৱাব ।"
+
+#: wikiformats.xhp#hd_id7217627.help.text
+msgid "Hyperlinks"
+msgstr "Hyperlinks"
+
+#: wikiformats.xhp#par_id3735465.help.text
+msgid ""
+"Native OpenDocument hyperlinks are transformed into \"external\" Wiki links. "
+"Therefore, the built-in linking facility of OpenDocument should only be used "
+"to create links that point to other sites outside the Wiki web. For "
+"creating Wiki links that point to other subjects of the same Wiki domain, "
+"use Wiki links."
+msgstr ""
+"Native OpenDocument hyperlink ক \"বাহিৰৰ\" ৱিকি সংযোগলৈ সলনি কৰা হয় । "
+"সেইকাৰণে, OpenDocument ৰ ভিতৰুৱা সংযোগব্যৱস্থাক অকল ৱিকি ৱেবৰ বাহিৰৰ সংযোগৰ "
+"বাবে ব্যৱহাৰ কৰিব লাগে । একেই ৱিকি ডোমেইনৰ অন্য বিষয়লৈ ৱিকি সংযোগ সৃষ্টি "
+"কৰিবলৈ, ৱিকি সংযোগ ব্যৱহাৰ কৰক ।"
+
+#: wikiformats.xhp#hd_id941190.help.text
+msgid "Lists"
+msgstr "তালিকা"
+
+#: wikiformats.xhp#par_id8942838.help.text
+msgid ""
+"Lists can reliably be exported when the whole list uses a consistent list "
+"style. Use the Numbering or Bullets icon to generate a list in Writer. If "
+"you need a list without numbering or bullets, use Format - Bullets and "
+"Numbering to define and apply the respective list style."
+msgstr ""
+"লিস্টক ৰপ্তানি কৰিব পাৰি যেতিয়া সম্পূৰ্ণ লিস্টে একে ধৰণৰ লিস্টৰ ধৰণ ব্যৱহাৰ "
+"কৰে । Numbering বা Bullets আইকণ ব্যৱহাৰ কৰক Writerত লিস্ট সৃষ্টি কৰিবলৈ । "
+"যদি numbering বা bullets নথকা লিস্ট লাগে, Format - Bullets আৰু Numbering "
+"ব্যৱহাৰ কৰক লিস্টৰ ধৰণক সংজ্ঞা দিয়ক আৰু প্ৰয়োগ কৰক ।"
+
+#: wikiformats.xhp#hd_id7026886.help.text
+msgid "Paragraphs"
+msgstr "Paragraphs"
+
+#: wikiformats.xhp#hd_id4436475.help.text
+msgid "Alignment"
+msgstr "শাৰীকৰণ"
+
+#: wikiformats.xhp#par_id376598.help.text
+msgid ""
+"Explicit text alignment should not be used in Wiki articles. Nevertheless, "
+"text alignment is supported for left, centered, and right alignment of text."
+msgstr ""
+"ৱিকি প্ৰবন্ধত Explicit text alignment ব্যৱহাৰ কৰিব নালাগে । "
+"তথাপিও,বাওঁফালৰ,মাজৰ, আৰু সোঁফালৰ শাৰীকৰণৰ কাৰণে text alignment ৰ সমৰ্থন কৰা "
+"হয় ।"
+
+#: wikiformats.xhp#hd_id7486190.help.text
+msgid "Pre-formatted text"
+msgstr "Pre-formatted text"
+
+#: wikiformats.xhp#par_id1459395.help.text
+msgid ""
+"A paragraph style with a fixed-width font is transformed as pre-formatted "
+"text. Pre-formatted text is shown on the Wiki with a border around the text."
+msgstr ""
+"fixed-width আখৰ থকা পেৰেগ্ৰাফৰ ধৰনক এটা pre-formatted আখৰ হিচাপে সলনি কৰা হয় "
+"। Pre-formatted আখৰক ৱিকিত লিপিৰ চাৰিওফালে থকা বৰ্ডাৰ হিচাপে দেখুৱাই ।"
+
+#: wikiformats.xhp#hd_id4834131.help.text
+msgid "Character styles"
+msgstr "আখৰৰ ধৰণ"
+
+#: wikiformats.xhp#par_id6397595.help.text
+msgid ""
+"Character styles modify the appearance of parts of a paragraph. The "
+"transformation supports bold, italics, bold/italics, subscript and "
+"superscript. All fixed width fonts are transformed into the Wiki typewriter "
+"style."
+msgstr ""
+"আখৰৰ ধৰণে পেৰেগ্ৰাফৰ অংশ সমূহ বেলেগকে দেখুৱাই । ইয়াত bold, italics, "
+"bold/italics, subscript আৰু superscript ৰ সমৰ্থন আছে । সকলো fixed width আখৰক "
+"ৱিকি typewriter ধৰণত সলনি কৰা হয় ।"
+
+#: wikiformats.xhp#hd_id5152745.help.text
+msgid "Footnotes"
+msgstr "Footnotes"
+
+#: wikiformats.xhp#par_id5238196.help.text
+msgid ""
+"Note: The transformation uses the new style of footnotes with <ref> and "
+"<references> tags that requires the Cite.php extension to be installed into "
+"MediaWiki. If those tags occur as plain text in the transformation result, "
+"ask the Wiki administrator to install this extension."
+msgstr ""
+"মন কৰিব: এই সলনিয়ে <ref> আৰু <references> টেগ থকা footnotes ৰ নতুন ধৰণ "
+"ব্যৱহাৰ কৰে যাক Cite.php সম্প্ৰসাৰণৰ প্ৰয়োজন যাক MediaWiki ত সংস্থাপন কৰিব "
+"লাগে । যদি সেই টেগবোৰ সলনি কৰোঁতে সাধাৰণ লিপি হিচাপে ওলাই, ৱিকি প্ৰশাসকক এই "
+"সম্প্ৰসাৰণ সংস্থাপন কৰিব কওক ।"
+
+#: wikiformats.xhp#hd_id9405499.help.text
+msgid "Images"
+msgstr "প্ৰতিমূৰ্ত্তি"
+
+#: wikiformats.xhp#par_id3541673.help.text
+msgid ""
+"Images cannot be exported by a transformation producing a single file of "
+"Wiki text. However, if the image is already uploaded to the target Wiki "
+"domain (e. g. WikiMedia Commons), then the transformation produces a valid "
+"image tag that includes the image. Image captions are also supported."
+msgstr ""
+"ৱিকি লিপিৰ এটা নথিপত্ৰৰে সলনি কৰি প্ৰতিমূৰ্ত্তি ৰপ্তানি কৰিব নোৱাৰি । "
+"কিন্তু, যদি প্ৰতিমূৰ্তি ইতিমধ্যে লক্ষ্য ৱিকি ডোমেইনত আছে (e. g. WikiMedia "
+"Commons), তেতিয়া সলনি কৰিলে এটা বৈধ প্ৰতিমূৰ্ত্তিৰ টেগ ওলায় য'ত "
+"প্ৰতিমূৰ্ত্তি থাকে । Image captions ও সমৰ্থিত ।"
+
+#: wikiformats.xhp#hd_id2162236.help.text
+msgid "Tables"
+msgstr "টেবুলবোৰ"
+
+#: wikiformats.xhp#par_id3037202.help.text
+msgid ""
+"Simple tables are supported well. Table headers are translated into "
+"corresponding Wiki style table headers. However, custom formatting of table "
+"borders, column sizes and background colors is ignored."
+msgstr ""
+"সাধাৰণ টেবুল সমৰ্থিত । টেবুল হেডাৰক ৱিকি ধৰনৰ টেবুল হেডাৰলৈ অনুবাদ কৰা হয় । "
+"কিন্তু, টেবুল কোণৰ, স্তম্ভৰ আকাৰৰ আৰু পৃষ্ঠভূমিৰ ৰঙৰ সলনি কৰা আওকাণ কৰা হয় ।"
+
+#: wikiformats.xhp#hd_id2954496.help.text
+msgid "Joined Cells"
+msgstr "Joined Cells"
+
+#: wikiformats.xhp#par_id8253730.help.text
+msgid ""
+"OpenDocument and especially OpenOffice.org represent tables that have joined "
+"cells that span rows as tables with nested tables. In contrast, the wiki "
+"model of table is to declare column and row spans for such joined cells. "
+msgstr ""
+"OpenDocument আৰু বিশেষকৈ OpenOffice.org এ সেই টেবুল দেখুৱাই য'ত joined cells "
+"থাকে যি টেবুল হিচাপে শাৰী স্পেন কৰে । ইয়াৰ বিপৰিতে, ৱিকি ধৰণত স্তম্ভ আৰু "
+"শাৰীৰ স্পেনক তেনে joined cells ৰ কাৰণে ডিক্লেৰ কৰা হয় ।"
+
+#: wikiformats.xhp#par_id8163090.help.text
+msgid ""
+"If only columns of the same row are joined, the result of the transformation "
+"resembles the source document very well."
+msgstr "যদি একে শাৰীৰ অকল স্তম্ভ লগ লগোৱা হয়, উৎস আলেখ্যনৰ নিচিনা দেখিবলৈ হয় ।"
+
+#: wikiformats.xhp#hd_id425122.help.text
+msgid "Borders"
+msgstr "কোণবোৰ"
+
+#: wikiformats.xhp#par_id1831110.help.text
+msgid ""
+"Irrespective of custom table styles for border and background, a table is "
+"always exported as \"<emph>prettytable\"</emph>, which renders in the Wiki "
+"engine with simple borders and bold header."
+msgstr ""
+"কোণ আৰু পৃষ্ঠঙূনিৰ বাবে যি টেবুলৰ ধৰনেই নহওক, এটা টেবুলক সদায়ে "
+"\"<emph>prettytable\"</emph> হিচাপে ৰপ্তানি কৰা হয়, যি ৱিকি কলঘৰত সাধাৰণ  কোণ "
+"আৰু ব'ল্ড হেডাৰেৰে ওলায় ।"
+
+#: wikiformats.xhp#hd_id6255073.help.text
+msgid "Charset and special characters"
+msgstr "Charset আৰু বিশেষ আখৰ"
+
+#: wikiformats.xhp#par_id8216193.help.text
+msgid ""
+"The charset of the transformation result is fixed to UTF-8. Depending on "
+"your system, this might not be the default charset. This might cause "
+"\"special characters\" to look broken when viewed with default settings. "
+"However, you can switch your editor to UTF-8 encoding to fix this. If your "
+"editor does not support switching the encoding, you can display the result "
+"of the transformation in the Firefox browser and switch the encoding to "
+"UTF-8 there. Now, you can cut and paste the transformation result to your "
+"program of choice."
+msgstr ""
+"The charset of the transformation result is fixed to UTF-8. Depending on "
+"your system, this might not be the default charset. This might cause "
+"\"special characters\" to look broken when viewed with default settings. "
+"However, you can switch your editor to UTF-8 encoding to fix this. If your "
+"editor does not support switching the encoding, you can display the result "
+"of the transformation in the Firefox browser and switch the encoding to "
+"UTF-8 there. Now, you can cut and paste the transformation result to your "
+"program of choice."
+
+#: wikisend.xhp#tit.help.text
+msgctxt "wikisend.xhp#tit.help.text"
+msgid "Send to MediaWiki"
+msgstr "MediaWiki লৈ পঠিয়াওক"
+
+#: wikisend.xhp#hd_id108340.help.text
+msgctxt "wikisend.xhp#hd_id108340.help.text"
+msgid "Send to MediaWiki"
+msgstr "MediaWiki লৈ পঠিয়াওক"
+
+#: wikisend.xhp#par_id1743827.help.text
+msgid ""
+"In the Send to MediaWiki dialog, specify the settings for your current Wiki "
+"upload."
+msgstr "MediaWiki লৈ পঠিয়াওক সম্বাদত, আপোনাৰ ৱিকি আপ-ল'ডৰ পছন্দ দিয়ক ।"
+
+#: wikisend.xhp#par_id664082.help.text
+msgid ""
+"<ahelp hid=\".\">Select the MediaWiki server where you want to publish your "
+"document. Click Add to add a new server to the list.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">আপোনাৰ আলেখ্যন প্ৰকাশ কৰিবলৈ MediaWiki সেৱক বাচি লওক । "
+"তালিকালৈ যোগ দিবলৈ এটা নতুন সেৱক বাচি লওক ।</ahelp>"
+
+#: wikisend.xhp#par_id2794885.help.text
+msgid ""
+"<ahelp hid=\".\">Enter the title of your Wiki entry. This is the top heading "
+"of your Wiki entry. For a new entry, the title must be unique on this Wiki. "
+"If you enter an existing title, your upload will overwrite the existing Wiki "
+"entry.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">আপোনাৰ ৱিকিৰ শিৰোনাম দিয়ক । এইটো আপোনাৰ ৱিকি নিবেশৰ ওপৰৰ "
+"হেডিং । নতুন নিবেশৰ কাৰণে, এই ৱিকিত শিৰোনাম অদ্বিতীয় হ'ব লাগিব । ইতিমধ্য থকা "
+"শিৰোনাম দিলে, আপোনাৰ আপ-ল'ডে বৰ্ত্তমানৰ ৱিকি নিবেশ অভাৰৰাইট কৰিব ।</ahelp>"
+
+#: wikisend.xhp#par_id2486342.help.text
+msgid ""
+"<ahelp hid=\".\">Enter an optional short summary or comment.</ahelp> See <link "
+"href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\">http://meta.wikimed"
+"ia.org/wiki/Help:Edit_summary</link>."
+msgstr ""
+"<ahelp hid=\".\">এটা বৈকল্পিক সৰু সাৰাংশ বা মন্তব্য দিয়ক ।</ahelp><link href=\""
+"http://meta.wikimedia.org/wiki/Help:Edit_summary\">http://meta.wikimedia.org/"
+"wiki/Help:Edit_summary</link> চাওক ।"
+
+#: wikisend.xhp#par_id823999.help.text
+#, fuzzy
+msgid ""
+"<emph>This is a minor edit</emph>: <ahelp hid=\".\">Check this box to mark the "
+"uploaded page as a minor edit of the already existing page with the same "
+"title.</ahelp>"
+msgstr ""
+"<emph>এইটো এটা সৰু সম্পাদন</emph>: আপ-ল'ড কৰা পৃষ্ঠা একে নামেৰে ইতিমধ্যে থকা "
+"পৃষ্ঠাৰ এটা সৰু সম্পাদন হিচাপে চিহ্নিত কৰিবলৈ এই বক্স চিহ্নিত কৰক ।"
+
+#: wikisend.xhp#par_id6592913.help.text
+#, fuzzy
+msgid ""
+"<emph>Show in web browser</emph>: <ahelp hid=\".\">Check this box to open your "
+"system web browser and show the uploaded Wiki page.</ahelp>"
+msgstr ""
+"<emph>ৱেব চৰকত দেখুৱাওক</emph>: আপোনাৰ ব্যৱস্থাপ্ৰণালীৰ ৱেব চচৰক খউলিবলে আৰু "
+"আপ-ল'ড কৰা ৱিকি পৃষ্ঠা দেখুৱাবলৈ এই বাকচ টিপক ।"
+
+#: wikisettings.xhp#tit.help.text
+msgctxt "wikisettings.xhp#tit.help.text"
+msgid "MediaWiki Options"
+msgstr "MediaWiki বিকল্প"
+
+#: wikisettings.xhp#hd_id6425672.help.text
+msgctxt "wikisettings.xhp#hd_id6425672.help.text"
+msgid "MediaWiki Options"
+msgstr "MediaWiki বিকল্প"
+
+#: wikisettings.xhp#par_id1188390.help.text
+msgid ""
+"You can add, edit and remove MediaWiki servers. Open the dialog by <item "
+"type=\"menuitem\">Tools - Options - Internet - MediaWiki</item>. "
+"Alternatively, choose <item type=\"menuitem\">Tools - Extension "
+"Manager</item>, select the @WIKIEXTENSIONPRODUCTNAME@, and click the Options "
+"button."
+msgstr ""
+"আপুনি MediaWiki সেৱক যোগ কৰিব, সম্পাদন কৰিব বা আঁতৰাব পাৰে । সম্বাদক <item "
+"type=\"menuitem\">Tools - Options - Internet - MediaWiki</item> ৰে খোলক । "
+"বৈকল্পিকভাবে, <item type=\"menuitem\">Tools - Extension Manager</item> বাচি "
+"লওক, @WIKIEXTENSIONPRODUCTNAME@ নিৰ্ব্বাচন কৰক, আৰু বিকল্প বুটাম টিপক ।"
+
+#: wikisettings.xhp#par_id300607.help.text
+msgid ""
+"<ahelp hid=\".\">Click Add to add a new Wiki server.<br/>Select an entry and "
+"click Edit to edit the account settings.<br/>Select an entry and click "
+"Remove to remove the entry from the list.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\">নতুন ৱিকি সেৱক যোগ কৰিবলৈ যোগ কৰক টিপক । <br/>এটা নিবেশ "
+"নিৰ্ব্বাচন কৰি হিচাপৰ পছন্দ সম্পাদন কৰিবলৈ সম্পাদন টিপক । <br/>নিবেশ "
+"নিৰ্ব্বাচন কৰক আৰু তালিকাৰ পৰা তাক আঁতৰাবলৈ আঁতৰাওক টিপক ।</ahelp>"
+
+#: wikisettings.xhp#par_id9786065.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Opens the MediaWiki dialog to add a new "
+"entry to the list.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">তালিকাত নতুন নিবেশ দিবলৈ MediaWiki সম্বাদ "
+"খোলে ।</ahelp>"
+
+#: wikisettings.xhp#par_id3386333.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Opens the MediaWiki dialog to edit the "
+"selected entry.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">নিৰ্বাচিত নিবেশ সম্পাদন কৰিবলৈ MediaWiki "
+"সম্বাদ খোলে ।</ahelp>"
+
+#: wikisettings.xhp#par_id7285073.help.text
+msgid ""
+"<ahelp hid=\".\" visibility=\"hidden\">Removes the selected entry from the "
+"list.</ahelp>"
+msgstr ""
+"<ahelp hid=\".\" visibility=\"hidden\">তালিকাৰ পৰা নিৰ্বাচিত নিবেশ গুচায় "
+"।</ahelp>"
+
+#: wikisettings.xhp#par_id1029084.help.text
+msgid ""
+"When you click Add or Edit, the <link "
+"href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> dialog opens."
+msgstr ""
+"যোগ কৰক বা সম্পাদন কৰক টিপিলে, <link "
+"href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> সম্বাদ খোলে ।"
+"X-Accelerator-Marker: ~\n"
+
+#: Addons.xcu#.Addons.AddonUI.OfficeMenuBarMerging.com.sun.star.wiki.S1.MenuItems.M2.Title.value.text
+msgid "To Media~Wiki..."
+msgstr "Media Wiki লৈ (~W)..."
+
+#: OptionsDialog.xcu#.OptionsDialog.Nodes.Internet.Leaves.com.sun.star.wiki.options.Label.value.text
+msgid "MediaWiki"
+msgstr "MediaWiki"
+"X-Accelerator-Marker: ~\n"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.GeneralSendError.value.text
+msgid "The operation 'Send to MediaWiki' could not be completed successfully."
+msgstr "'MediaWiki লৈ পঠিয়াওক' কাৰ্য্য সফলভাবে সম্পূৰ্ণ কৰিব নোৱাৰি ।"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.NoWikiFilter.value.text
+msgid ""
+"The MediaWiki export filter cannot be found. Choose 'Tools-XML Filter "
+"Settings' to install the filter, or use the setup to install the component."
+msgstr ""
+"MediaWiki export filter পোৱা ন'গ'ল । ফিল্টাৰ সংস্থাপন কৰিবলৈ 'Tools-XML "
+"Filter Settings' নিৰ্ব্বাচন কৰক, বা অংশ সংস্থাপন কৰিবলৈ প্ৰতিষ্ঠা "
+"কাৰ্য্যক্ৰম ব্যৱহাৰ কৰক ।"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.NoConnectionToURL.value.text
+msgid "A connection to the MediaWiki system at '$ARG1' could not be created."
+msgstr "'$ARG1' ত MediaWiki প্ৰণালীলৈ সংযোগ সৃষ্টি কৰিব নোৱাৰি ।"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.WrongLogin.value.text
+msgid ""
+"User name or password is incorrect. Please try again, or leave the fields "
+"blank for an anonymous connection."
+msgstr ""
+"ব্যৱহাৰকৰোঁতাৰ নাম বা গুপ্তশব্দ ভুল । অনুগ্ৰহ কৰি আকৌ চেষ্টা কৰক, বা বেনামী "
+"সংযোগৰ বাবে ক্ষেত্ৰসমূহ ৰিক্ত ৰাখক ।"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.InvalidURL.value.text
+msgid "A connection could not be created because the URL is invalid."
+msgstr "সংযোগ সৃষ্টি কৰিব নোৱাৰি, কাৰণ URL অবৈধ ।"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.NoURL.value.text
+msgid "Specify a MediaWiki server by providing a URL."
+msgstr "এটা URL দি এটা MediaWiki সেৱক নিৰ্ধাৰণ কৰক ।"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.CancelSending.value.text
+msgid ""
+"The transfer has been interrupted. Please check the integrity of the wiki "
+"article."
+msgstr "স্থানান্তৰ কৰোঁতে ব্যাঘাত হৈছে । ৱিকি প্ৰবন্ধৰ ঐক্যতা পৰীক্ষা কৰক ।"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_UrlLabel.value.text
+msgid "U~RL"
+msgstr "U~RL"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_UsernameLabel.value.text
+msgid "~Username"
+msgstr "ব্যৱহাৰকৰোঁতাৰ নাম (~U)"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_PasswordLabel.value.text
+msgid "~Password"
+msgstr "পাছৱৰ্ড"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendTitle.value.text
+msgid "Send to MediaWiki"
+msgstr "MediaWiki লৈ পঠিয়াওক"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_WikiArticle.value.text
+msgid "Wiki article"
+msgstr "ৱিকি প্ৰবন্ধ"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_No.value.text
+msgid "No"
+msgstr "নহয়"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_OK.value.text
+msgid "OK"
+msgstr "ঠিক আছে"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_Yes.value.text
+msgid "Yes"
+msgstr "হয়"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_AddButton.value.text
+msgid "~Add..."
+msgstr "যোগ কৰক..."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditButton.value.text
+msgid "~Edit..."
+msgstr "সম্পাদনা..."
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendButton.value.text
+msgid "~Send"
+msgstr "পথাওক"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_RemoveButton.value.text
+msgid "~Remove"
+msgstr "আঁতৰাওক (~R)"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_NewWikiPage_Label1.value.text
+msgid ""
+"A wiki article with the title '$ARG1' does not exist yet. Do you want to "
+"create a new article with that name?"
+msgstr ""
+"'$ARG1' নাম থকা ৱিকি প্ৰবন্ধ নাই । আপুনি সেই নামেৰে এটা নতুন প্ৰবন্ধ সৃষ্টি "
+"কৰিব বিচাৰে নেকি ?"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_Label1.value.text
+msgid "Media~Wiki Server"
+msgstr "Media Wiki সেৱক (~W)"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_Label2.value.text
+msgid "~Title"
+msgstr "শিৰোনাম (~T)"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_Label3.value.text
+msgid "S~ummary"
+msgstr "সাৰাংশ (~u)"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_MinorCheck.value.text
+msgid "This is a ~minor edit"
+msgstr "এইটো এটা সৰু সম্পাদন (~m)"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_BrowserCheck.value.text
+msgid "Show in web ~browser"
+msgstr "ৱেব চৰকত দেখুৱাওক (~b)"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.UnknownCert.value.text
+msgid "The certificate of the selected site is unknown."
+msgstr "নিৰ্বাচিত ছাইটৰ প্ৰমাণপত্ৰ অজ্ঞাত ।"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_MediaWiki_Title.value.text
+msgid "MediaWiki"
+msgstr "MediaWiki"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_AccountLine.value.text
+msgid "Account"
+msgstr "হিচাপ"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_WikiLine.value.text
+msgid "MediaWiki Server"
+msgstr "MediaWiki সেৱক"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_SaveBox.value.text
+msgid "~Save password"
+msgstr "পাছৱৰ্ড ছেভ কৰক"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_MediaWiki_Extension_String.value.text
+msgid "@WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@"
+
+#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_WikiPageExists_Label1.value.text
+msgid ""
+"A wiki article with the title '$ARG1' already exists.&#13;&#13;Do you want "
+"to replace the current article with your article?&#13;&#13;"
+msgstr ""

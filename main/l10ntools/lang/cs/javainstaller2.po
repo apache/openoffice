@@ -1,0 +1,783 @@
+
+#: setupstrings.ulf#STRING_PREVIOUS.LngText.text
+msgid "Back"
+msgstr "Zpět"
+
+#: setupstrings.ulf#STRING_NEXT.LngText.text
+msgid "Next"
+msgstr "Další"
+
+#: setupstrings.ulf#STRING_CANCEL.LngText.text
+msgid "Cancel"
+msgstr "Zrušit"
+
+#: setupstrings.ulf#STRING_FINISH.LngText.text
+msgid "Finish"
+msgstr "Dokončit"
+
+#: setupstrings.ulf#STRING_DECLINE.LngText.text
+msgid "Decline"
+msgstr "Odmítnout"
+
+#: setupstrings.ulf#STRING_INSTALL.LngText.text
+msgid "Install now"
+msgstr "Nainstalovat nyní"
+
+#: setupstrings.ulf#STRING_UNINSTALL.LngText.text
+msgid "Remove Now"
+msgstr "Odstranit nyní"
+
+#: setupstrings.ulf#STRING_HELP.LngText.text
+msgid "Help"
+msgstr "Nápověda"
+
+#: setupstrings.ulf#STRING_OK.LngText.text
+msgid "OK"
+msgstr "OK"
+
+#: setupstrings.ulf#STRING_ERROR.LngText.text
+msgid "Error"
+msgstr "Chyba"
+
+#: setupstrings.ulf#STRING_FILE_NOT_FOUND.LngText.text
+msgid "Error: File not found"
+msgstr "Chyba: Soubor nenalezen"
+
+#: setupstrings.ulf#STRING_APPLICATIONTITLE.LngText.text
+msgid "${PRODUCT_FULLNAME} Installation Wizard"
+msgstr "Průvodce instalací ${PRODUCT_FULLNAME}"
+
+#: setupstrings.ulf#STRING_APPLICATIONTITLEUNINSTALLATION.LngText.text
+msgid "${PRODUCT_FULLNAME} Uninstallation Wizard"
+msgstr "Průvodce odstraněním ${PRODUCT_FULLNAME}"
+
+#: setupstrings.ulf#STRING_CANCEL_DIALOG_TITLE.LngText.text
+msgid "Exit"
+msgstr "Ukončit"
+
+#: setupstrings.ulf#STRING_CANCEL_DIALOG.LngText.text
+msgid "Do you really want to exit the Installation Wizard?"
+msgstr "Opravdu chcete ukončit průvodce instalací?"
+
+#: setupstrings.ulf#STRING_CANCEL_DIALOG_UNINSTALLATION.LngText.text
+msgid "Do you really want to exit the Uninstallation Wizard?"
+msgstr "Opravdu chcete ukončit průvodce odstraněním?"
+
+#: setupstrings.ulf#STRING_STOP_DIALOG.LngText.text
+msgid "Do you really want to abort the installation process?"
+msgstr "Opravdu chcete přerušit instalaci?"
+
+#: setupstrings.ulf#STRING_STOP_DIALOG_TITLE.LngText.text
+msgid "Abort installation?"
+msgstr "Přerušit instalaci?"
+
+#: setupstrings.ulf#STRING_STOP_DIALOG_UNINSTALLATION.LngText.text
+msgid "Do you really want to abort the uninstallation process?"
+msgstr "Opravdu chcete přerušit odstranění?"
+
+#: setupstrings.ulf#STRING_STOP_DIALOG_TITLE_UNINSTALLATION.LngText.text
+msgid "Abort uninstallation?"
+msgstr "Přerušit odstranění?"
+
+#: setupstrings.ulf#STRING_ACCEPTLICENSE.LngText.text
+msgid "Accept License"
+msgstr "Přijmout licenci"
+
+#: setupstrings.ulf#STRING_ACCEPTLICENSE1.LngText.text
+msgid "Software License Agreement"
+msgstr "Licenční ujednání softwaru"
+
+#: setupstrings.ulf#STRING_ACCEPTLICENSE2.LngText.text
+msgid "Please read the following license agreement carefully."
+msgstr "Pozorně si, prosím, přečtěte následující licenční ujednání."
+
+#: setupstrings.ulf#STRING_ACCEPTLICENSE3.LngText.text
+msgctxt "setupstrings.ulf#STRING_ACCEPTLICENSE3.LngText.text"
+msgid ""
+"If you have read and accept all the terms of the entire Software License "
+"Agreement, click 'Accept License' to continue with the installation."
+msgstr ""
+"Pokud jste si přečetl licenční ujednání a souhlasíte s ním, pokračujte v "
+"instalaci klepnutím na 'Přijmout licenci'."
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY1.LngText.text
+msgid "Select Installation Directory"
+msgstr "Zvolte adresář pro instalaci"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY1_UPDATE.LngText.text
+msgid "Update the Installed Version"
+msgstr "Aktualizace instalované verze"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY1_MAINTAIN.LngText.text
+msgid "Adding Components to the Installed Version"
+msgstr "Přidání součástí do instalované verze"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY2.LngText.text
+msgid "Install ${PRODUCT_FULLNAME} in this directory"
+msgstr "Instalovat ${PRODUCT_FULLNAME} do tohoto adresáře"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY3.LngText.text
+msgid "Browse..."
+msgstr "Procházet..."
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY4_QUESTION_TITLE.LngText.text
+msgid "Create New Directory"
+msgstr "Vytvořit nový adresář"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE.LngText.text
+msgid ""
+"The directory '${DIR}' does not exist.\n"
+"Do you want to create it now?"
+msgstr ""
+"Adresář  '${DIR}' neexistuje.\n"
+"Chcete ho vytvořit nyní?"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2.LngText.text
+msgid ""
+"The directory '${DIR}' does not exist.\n"
+"Do you want to create it now or choose another directory?"
+msgstr ""
+"Adresář  '${DIR}' neexistuje.\n"
+"Chcete ho vytvořit nyní nebo vybrat jiný adresář?"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY6.LngText.text
+msgid "Select root directory"
+msgstr "Vyberte kořenový adresář"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY_NO_WRITE_ACCESS.LngText.text
+msgid "You do not have write access in the directory"
+msgstr "Do tohoto adresáře nemáte právo zápisu"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY_NOT_ALLOWED.LngText.text
+msgid "You are not allowed to create the directory"
+msgstr "Nemáte povoleno vytvořit adresář"
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY_NO_SUCCESS.LngText.text
+msgid "Failed to create the directory"
+msgstr "Selhalo vytvoření adresáře"
+
+#: setupstrings.ulf#STRING_CHOOSECOMPONENTS1.LngText.text
+msgid "Select Components"
+msgstr "Výběr součástí"
+
+#: setupstrings.ulf#STRING_CHOOSECOMPONENTS1_MAINTAIN.LngText.text
+msgid "Select Additional Components"
+msgstr "Výběr doplňkových součástí"
+
+#: setupstrings.ulf#STRING_CHOOSECOMPONENTS2.LngText.text
+msgid "Marked components will be installed. Please mark them accordingly"
+msgstr "Označte součásti, které chcete nainstalovat."
+
+#: setupstrings.ulf#STRING_CHOOSECOMPONENTS3.LngText.text
+msgid "Feature Description"
+msgstr "Popis"
+
+#: setupstrings.ulf#STRING_CHOOSECOMPONENTS4.LngText.text
+msgid "Size (kB):"
+msgstr "Velikost (kB):"
+
+#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE1.LngText.text
+msgctxt "setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE1.LngText.text"
+msgid "Select the Type of Installation"
+msgstr "Zvolte typ instalace"
+
+#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE2.LngText.text
+msgid "Select the type of installation that best suits your needs:"
+msgstr "Zvolte typ instalace, který nejlépe odpovídá vašim potřebám:"
+
+#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE3.LngText.text
+msgctxt "setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE3.LngText.text"
+msgid "Select the Type of Installation"
+msgstr "Zvolte typ instalace"
+
+#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE4.LngText.text
+msgid "The main components will be installed. Recommended for most users."
+msgstr "Budou nainstalovány hlavní součásti. Doporučeno pro většinu uživatelů."
+
+#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE5.LngText.text
+msgid ""
+"You choose the components you want to install and where they are stored. "
+"Recommended for advanced users."
+msgstr ""
+"Vyberete, které součásti chcete nainstalovat a kam se uloží. Doporučeno pro "
+"pokročilé uživatele."
+
+#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE6.LngText.text
+msgid "Typical"
+msgstr "Typická"
+
+#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE7.LngText.text
+msgid "Custom"
+msgstr "Vlastní"
+
+#: setupstrings.ulf#STRING_INSTALLATIONIMMINENT1.LngText.text
+msgid "Ready to Install"
+msgstr "Připraveno k instalaci"
+
+#: setupstrings.ulf#STRING_INSTALLATIONIMMINENT1_UPDATE.LngText.text
+msgid "Ready to Update"
+msgstr "Připraveno k aktualizaci"
+
+#: setupstrings.ulf#STRING_INSTALLATIONIMMINENT2.LngText.text
+msgid "The following ${PRODUCT_FULLNAME} components will be installed:"
+msgstr "Nainstalují se následující součásti ${PRODUCT_FULLNAME}:"
+
+#: setupstrings.ulf#STRING_INSTALLATIONONGOING1.LngText.text
+msgid "Installing..."
+msgstr "Probíhá instalace..."
+
+#: setupstrings.ulf#STRING_INSTALLATIONONGOING3.LngText.text
+msgid "Stop"
+msgstr "Zastavit"
+
+#: setupstrings.ulf#STRING_INSTALLATIONONGOING_PACKAGEPATH_NOT_FOUND.LngText.text
+msgid "ERROR: Path with installation packages not found!"
+msgstr "CHYBA: Nebyl nalezen adresář s instalačními balíky!"
+
+#: setupstrings.ulf#STRING_PROLOGUE1.LngText.text
+msgid "Welcome"
+msgstr "Vítejte"
+
+#: setupstrings.ulf#STRING_PROLOGUE2.LngText.text
+msgid ""
+"This Installation Wizard will install ${PRODUCT_FULLNAME} on your computer."
+msgstr ""
+"Průvodce instalací vám pomůže nainstalovat ${PRODUCT_FULLNAME} na váš "
+"počítač."
+
+#: setupstrings.ulf#STRING_PROLOGUE3.LngText.text
+msgid "To continue, click 'Next'."
+msgstr "Pro pokračování klepněte na 'Další'."
+
+#: setupstrings.ulf#STRING_PROLOGUE4.LngText.text
+msgid ""
+"Note: This installation will be done without root privileges. Therefore you "
+"will have a reduced functionality (Java Runtime Environment (JRE) not "
+"installable, system integration not possible).\n"
+"Click 'Cancel' and change your privileges to root privileges, if you want to "
+"use the complete functionality."
+msgstr ""
+"Poznámka: Instalace bude provedena bez administrátorských oprávnění, tudíž "
+"nebude mít plnou funkčnost (nebude instalováno Java Runtime Environment "
+"(JRE) a nelze integrovat aplikaci do systému).\n"
+"Pokud chcete zajistit plnou funkčnost, klepněte na 'Zrušit' a změňte "
+"oprávnění na administrátorskou úroveň."
+
+#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1.LngText.text
+msgid "Installation Completed"
+msgstr "Instalace dokončena"
+
+#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1_ABORT.LngText.text
+msgid "Installation Aborted"
+msgstr "Instalace přerušena"
+
+#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1_ERROR.LngText.text
+msgid "Installation Failed"
+msgstr "Chyba instalace"
+
+#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2.LngText.text
+msgid ""
+"The Installation Wizard has successfully installed ${PRODUCT_FULLNAME} on "
+"your computer."
+msgstr ""
+"Průvodce instalací na vás počítač úspěšně nainstaloval ${PRODUCT_FULLNAME}."
+
+#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ABORT.LngText.text
+msgid ""
+"The Installation Wizard was aborted. ${PRODUCT_NAME} is not installed on "
+"your computer."
+msgstr ""
+"Průvodce instalací byl přerušen. ${PRODUCT_NAME} není na vašem počítači "
+"instalováno."
+
+#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ERROR.LngText.text
+msgid ""
+"An error has occurred. Thus the Installation Wizard could not install "
+"${PRODUCT_NAME} on your computer successfully. Click 'Details...' for more "
+"information."
+msgstr ""
+"Nastala chyba. Průvodce instalací nemohl na váš počítač nainstalovat "
+"${PRODUCT_NAME}. Po klepnutí na 'Podrobnosti...' získáte více informací."
+
+#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED3.LngText.text
+msgid "Click 'Finish' to exit the Wizard."
+msgstr "Klepnutím na 'Dokončit' zavřete průvodce."
+
+#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED_BUTTON.LngText.text
+msgid "Details..."
+msgstr "Podrobnosti..."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE2.LngText.text
+msgid ""
+"The ${PRODUCT_FULLNAME} Uninstallation Wizard will remove "
+"${PRODUCT_FULLNAME} from your computer."
+msgstr ""
+"Průvodce odstraněním ${PRODUCT_FULLNAME} odinstaluje z vašeho počítače "
+"${PRODUCT_FULLNAME}."
+
+#: setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_ROOT.LngText.text
+msgid ""
+"Sorry, wrong privileges. Installation was done with User privilges, but you "
+"have Root privileges."
+msgstr ""
+"Špatná práva. Instalace byla provedena s právy uživatele, ale máte práva "
+"administrátora."
+
+#: setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_USER.LngText.text
+msgid ""
+"Sorry, wrong privileges. Installation was done with Root privilges, but you "
+"have User privileges."
+msgstr ""
+"Špatná práva. Instalace byla provedena s právy administrátora, ale máte "
+"práva uživatele."
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE1.LngText.text
+msgid "Select the Type of Uninstallation"
+msgstr "Zvolte typ odstranění"
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE2.LngText.text
+msgid "Select the type of uninstallation that best suits your needs:"
+msgstr "Zvolte typ odstranění, který vám vyhovuje:"
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE3.LngText.text
+msgid "Partial"
+msgstr "Částečné"
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE4.LngText.text
+msgid ""
+"Completely removes ${PRODUCT_FULLNAME} and all its components from your "
+"system."
+msgstr ""
+"Kompletně odstraní ${PRODUCT_FULLNAME} a všechny součásti z vašeho počítače."
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE5.LngText.text
+msgid "You choose the program features you want to remove."
+msgstr "Určíte, které části programu se mají odstranit."
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE6.LngText.text
+msgid "Complete"
+msgstr "Kompletní"
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS2.LngText.text
+msgid ""
+"Components marked with an X will be removed. Mark the components you want to "
+"remove."
+msgstr ""
+"Odstraní se součásti označené X. Vyberte součásti, které chcete odebrat."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT1.LngText.text
+msgid "Ready to Remove"
+msgstr "Připraveno k odstranění"
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT2.LngText.text
+msgid "The following ${PRODUCT_FULLNAME} components will be removed: "
+msgstr "Odstraní se následující součásti ${PRODUCT_FULLNAME}:"
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONONGOING1.LngText.text
+msgid "Uninstalling..."
+msgstr "Probíhá odstranění..."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1.LngText.text
+msgid "Uninstallation Completed"
+msgstr "Odstranění dokončeno"
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1_ABORT.LngText.text
+msgid "Uninstallation Aborted"
+msgstr "Odstranění přerušeno"
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1_ERROR.LngText.text
+msgid "Uninstallation Failed"
+msgstr "Odstranění selhalo"
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2.LngText.text
+msgid ""
+"The Uninstallation Wizard has successfully removed ${PRODUCT_FULLNAME} from "
+"your computer."
+msgstr ""
+"Průvodce odstraněním úspěšně odinstaloval ${PRODUCT_FULLNAME} z vašeho "
+"počítače."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_PARTIAL.LngText.text
+msgid ""
+"The Uninstallation Wizard has successfully removed the selected components "
+"of ${PRODUCT_NAME} from your computer."
+msgstr ""
+"Průvodce odstraněním úspěšně odinstaloval z vašeho počítače vybrané součásti "
+"${PRODUCT_NAME}."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ABORT.LngText.text
+msgid ""
+"The Uninstallation Wizard was aborted before completely removing "
+"${PRODUCT_NAME} from your computer."
+msgstr ""
+"Průvodce odstraněním byl přerušen, ${PRODUCT_NAME} nebylo kompletně "
+"odebráno."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ERROR.LngText.text
+msgid ""
+"An error has occurred. Thus the Uninstallation Wizard could not remove "
+"${PRODUCT_NAME} from your computer successfully. Click 'Details...' for more "
+"information."
+msgstr ""
+"Nastala chyba. Průvodce odstraněním nemohl z vašeho počítače odinstalovat "
+"${PRODUCT_NAME}. Po klepnutí na 'Podrobnosti...' získáte více informací."
+
+#: setupstrings.ulf#STRING_INSTALLERFACTORY_OS_NOT_SUPPORTED.LngText.text
+msgid "Sorry, this Operating System is not supported yet."
+msgstr "Je nám líto, tento operační systém není zatím podporován."
+
+#: setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_FOUND.LngText.text
+msgid "An older version of ${PRODUCT_NAME} was found on your system in:"
+msgstr "V systému byla nalezena starší verze ${PRODUCT_NAME}:"
+
+#: setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_REMOVE.LngText.text
+msgid ""
+"You have to remove the older version of ${PRODUCT_NAME} before you can "
+"install the newer one."
+msgstr ""
+"Před instalací novější verze je třeba starší verzi ${PRODUCT_NAME} "
+"odstranit."
+
+#: setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_FOUND.LngText.text
+msgid "A newer version of ${PRODUCT_NAME} was found on your system in:"
+msgstr ""
+"Ve vašem systému byla nalezena novější verze ${PRODUCT_NAME} v adresáři:"
+
+#: setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_REMOVE.LngText.text
+msgid ""
+"You have to remove the newer version of ${PRODUCT_NAME} before you can "
+"install the older one."
+msgstr ""
+"Před instalací starší verze ${PRODUCT_NAME} musíte odebrat novější verzi."
+
+#: setupstrings.ulf#STRING_NEWER_VERSION_DATABASE.LngText.text
+msgid "Database"
+msgstr "Databáze"
+
+#: setupstrings.ulf#STRING_NEWER_VERSION_TIP.LngText.text
+msgid "Please choose another installation directory."
+msgstr "Prosím, zvolte jiný adresář pro instalaci."
+
+#: setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_1.LngText.text
+msgid "The user you are logged in as cannot run the Installation Wizard."
+msgstr "Přihlášený uživatel nemůže spustit Průvodce instalací."
+
+#: setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_2.LngText.text
+msgid ""
+"Please log out and log back in as a user with system administrator rights."
+msgstr ""
+"Odhlašte se, prosím, a přihlašte jako uživatel s oprávněním administrátora."
+
+#: setupstrings.ulf#STRING_DISCSPACE_INSUFFICIENT.LngText.text
+msgid "Not enough discspace available for installation."
+msgstr "Nedostatek místa na disku pro dokončení instalace."
+
+#: setupstrings.ulf#STRING_DISCSPACE_REQUIRED.LngText.text
+msgid "Required disc space"
+msgstr "Požadované místo na disku"
+
+#: setupstrings.ulf#STRING_DISCSPACE_AVAILABLE.LngText.text
+msgid "Available disc space"
+msgstr "Dostupné místo na disku"
+
+#: setupstrings.ulf#STRING_DISCSPACE_TIP.LngText.text
+msgid ""
+"Please use another directory for installation or change your module "
+"selection."
+msgstr "Určete, prosím, jiný adresář nebo upravte výběr instalovaných modulů."
+
+#: setupstrings.ulf#STRING_ANALYZING_DATABASE1.LngText.text
+msgid "Analyzing ..."
+msgstr "Probíhá analýza..."
+
+#: setupstrings.ulf#STRING_ANALYZING_DATABASE2.LngText.text
+msgid ""
+"Analyzing database\n"
+"Please wait a moment ..."
+msgstr ""
+"Analýza databáze\n"
+"Počkejte, prosím..."
+
+#: setupstrings.ulf#STRING_PROLOGUE_1.LngText.text
+msgid ""
+"Welcome to the Installation Wizard.<p>This wizard asks you to supply "
+"configuration settings.<p>At the bottom of each page are navigation buttons "
+"that let you move through the Installation Wizard:"
+msgstr ""
+"Vítá vás Průvodce instalací.<p>Tento průvodce vám pomůže s nastavením "
+"instalace.<p>Ve spodní části každé strany najdete navigační tlačítka, s "
+"jejichž pomocí se pohybujete po průvodci:"
+
+#: setupstrings.ulf#STRING_PROLOGUE_2.LngText.text
+msgctxt "setupstrings.ulf#STRING_PROLOGUE_2.LngText.text"
+msgid "'Back' returns you to the previous page."
+msgstr "'Zpět' - návrat na předchozí stranu."
+
+#: setupstrings.ulf#STRING_PROLOGUE_3.LngText.text
+msgctxt "setupstrings.ulf#STRING_PROLOGUE_3.LngText.text"
+msgid "'Next' takes you to the next page. "
+msgstr "'Další' - přechod na následující stranu."
+
+#: setupstrings.ulf#STRING_PROLOGUE_4.LngText.text
+msgid "'Cancel' ends the Installation Wizard without installing this software."
+msgstr "'Zrušit' ukončí průvodce instalací bez instalace software."
+
+#: setupstrings.ulf#STRING_PROLOGUE_5.LngText.text
+msgctxt "setupstrings.ulf#STRING_PROLOGUE_5.LngText.text"
+msgid ""
+"'Help' displays the Help with further information about the page currently "
+"displayed."
+msgstr ""
+"'Nápověda' - zobrazí nápovědu s podrobnějšími informacemi o následující "
+"straně."
+
+#: setupstrings.ulf#STRING_PROLOGUE_6.LngText.text
+msgid "'OK' exits the Help page and returns you to the Installation Wizard."
+msgstr "'OK' zavře okno nápovědy a vrátí se zpět do průvodce instalací."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_1.LngText.text
+msgid ""
+"Welcome to the Uninstallation Wizard.<p>This wizard asks you to supply "
+"configuration settings.<p>At the bottom of each page are navigation buttons "
+"that let you move through the Uninstallation Wizard:"
+msgstr ""
+"Vítá vás Průvodce odstraněním.<p>Tento průvodce vám pomůže s "
+"nastavením.<p>Ve spodní části každé strany najdete navigační tlačítka, s "
+"jejichž pomocí se pohybujete po průvodci:"
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_2.LngText.text
+msgctxt "setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_2.LngText.text"
+msgid "'Back' returns you to the previous page."
+msgstr "'Zpět' - návrat na předchozí stranu."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_3.LngText.text
+msgctxt "setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_3.LngText.text"
+msgid "'Next' takes you to the next page. "
+msgstr "'Další' - přechod na následující stranu."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_4.LngText.text
+msgid "'Cancel' ends the Uninstallation Wizard without removing this software."
+msgstr "'Zrušit' ukončí průvodce odstraněním bez odstranění software."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_5.LngText.text
+msgctxt "setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_5.LngText.text"
+msgid ""
+"'Help' displays the Help with further information about the page currently "
+"displayed."
+msgstr ""
+"'Nápověda' - zobrazí nápovědu s podrobnějšími informacemi o následující "
+"straně."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_6.LngText.text
+msgid "'OK' exits the Help page and returns you to the Uninstallation Wizard."
+msgstr "'OK' zavře okno nápovědy a vrátí se zpět do průvodce odstraněním."
+
+#: setupstrings.ulf#STRING_ACCEPTLICENSE_1.LngText.text
+msgid ""
+"Before you install this product, you must read and accept the entire "
+"Software License Agreement under which this software is licensed for your "
+"use."
+msgstr ""
+"Abyste mohl tento produkt nainstalovat, musíte si přečíst a odsouhlasit "
+"licenční ujednání. Software můžete používat jen v souladu s tímto ujednáním."
+
+#: setupstrings.ulf#STRING_ACCEPTLICENSE_2.LngText.text
+msgctxt "setupstrings.ulf#STRING_ACCEPTLICENSE_2.LngText.text"
+msgid ""
+"If you have read and accept all the terms of the entire Software License "
+"Agreement, click 'Accept License' to continue with the installation."
+msgstr ""
+"Pokud jste si licenci přečetl a souhlasíte se všemi podmínkami, klepnutím na "
+"'Přijmout licenci' pokračujte v instalaci."
+
+#: setupstrings.ulf#STRING_ACCEPTLICENSE_3.LngText.text
+msgid ""
+"If you do not accept all the terms of the Software License Agreement, click "
+"'Decline' to end the Installation Wizard without installing this product."
+msgstr ""
+"Pokud s licencí nesouhlasíte, klepnutím na 'Odmítnout' ukončete průvodce "
+"instalací."
+
+#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE_1.LngText.text
+msgid ""
+"Select the type of product installation to perform from the following "
+"choices. This will determine how much information you need to provide for "
+"product configuration."
+msgstr ""
+"Vyberte z následujících možností typ instalace. Na vaší volbě závisí rozsah "
+"dalšího nastavování."
+
+#: setupstrings.ulf#STRING_CHOOSEDIRECTORY_1.LngText.text
+msgid ""
+"It is recommended that you install this product in the directory suggested "
+"by this Installation Wizard. <p>To choose a different location, click "
+"'Browse...' or specify the full path of the directory to use in the text box "
+"below. <p>If this product is already installed, you cannot change the "
+"destination directory."
+msgstr ""
+"Doporučujeme instalovat produkt do adresáře navrženého průvodcem.<p>Chcete-"
+"li zvolit jiný adresář, klepněte na 'Procházet...' nebo do textového pole "
+"zadejte celou cestu.<p>Pokud je produkt již nainstalován, nemůžete cestu "
+"změnit."
+
+#: setupstrings.ulf#STRING_CHOOSECOMPONENTS_1.LngText.text
+msgid ""
+"Components marked in color will be installed. Click the icon of a component "
+"to mark or unmark the component.<p>All already installed components cannot "
+"be selected for installation."
+msgstr ""
+"Nainstalují se barevně označené součásti. Klepnutím na ikonu součásti ji "
+"označíte nebo zrušíte označení.<p>Již nainstalované součásti nelze vybrat k "
+"instalaci."
+
+#: setupstrings.ulf#STRING_INSTALLATIONIMMINENT_1.LngText.text
+msgid ""
+"The listed components are ready for installation based on your configuration "
+"settings. <p>If you are satisfied with your selection, click 'Install Now' "
+"to begin. <p>To check or modify your settings on the previous pages, click "
+"'Back'."
+msgstr ""
+"Vypsané součásti jsou připraveny k instalaci.<p>Pokud jste s výběrem "
+"spokojen, klepněte na 'Nainstalovat nyní'.<p>Chcete-li zkontrolovat nebo "
+"upravit nastavení na předchozích stranách, klepněte na 'Zpět'."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT_1.LngText.text
+msgid ""
+"The listed components are ready for uninstallation based on your "
+"configuration settings. <p>If you are satisfied with your selection, click "
+"'Remove Now' to begin. <p>To check or modify your settings on the previous "
+"pages, click 'Back'."
+msgstr ""
+"Vypsané součásti jsou připraveny k odinstalování.<p>Pokud jste s výběrem "
+"spokojen, klepněte na 'Odstranit nyní'.<p>Chcete-li zkontrolovat nebo "
+"upravit nastavení na předchozích stranách, klepněte na 'Zpět'."
+
+#: setupstrings.ulf#STRING_INSTALLATIONONGOING_1.LngText.text
+msgid ""
+"This page indicates the progress of the installation with the aid of a "
+"progress bar. To abort the installation process, click 'Stop'."
+msgstr ""
+"Na této straně se pomocí ukazatele zobrazuje průběh instalace. Chcete-li "
+"instalaci přerušit, klepněte na 'Zastavit'."
+
+#: setupstrings.ulf#STRING_UNINSTALLATIONONGOING_1.LngText.text
+msgid ""
+"This page indicates the progress of the uninstallation with the aid of a "
+"progress bar. To abort the uninstallation, click 'Stop'."
+msgstr ""
+"Na této straně se pomocí ukazatele zobrazuje průběh odinstalace. Chcete-li "
+"odinstalaci přerušit, klepněte na 'Zastavit'."
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE_1.LngText.text
+msgid ""
+"Complete: This will remove all installed components of your "
+"version.<p>Partial: This removes only the components you will choose out of "
+"the components list."
+msgstr ""
+"Kompletní: Odstraní se všechny nainstalované součásti. <p>Částečné: Odstraní "
+"se jen součásti, které vyberete ze seznamu."
+
+#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS_1.LngText.text
+msgid ""
+"Components marked with an X will be removed. Click next to a component to "
+"mark or unmark it with an X."
+msgstr ""
+"Odstraní se součásti označené X. Klepnutím vedle součásti přepnete zobrazení "
+"X."
+
+#: setupstrings.ulf#STRING_PACKAGEFORMAT_NOT_SUPPORTED.LngText.text
+msgid ""
+"This package format is currently not supported for your operating system!"
+msgstr "Pro váš operační systém není tento formát balíčků podporován!"
+
+#: setupstrings.ulf#STRING_OPERATING_SYSTEM.LngText.text
+msgid "Operating system"
+msgstr "Operační systém"
+
+#: setupstrings.ulf#STRING_PACKAGEFORMAT.LngText.text
+msgid "Package format"
+msgstr "Formát balíčků"
+
+#: setupstrings.ulf#STRING_NOTHING_TO_INSTALL.LngText.text
+msgid "Nothing to install"
+msgstr "Nic k instalaci"
+
+#: setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_1.LngText.text
+msgid "No components have been selected for installation."
+msgstr "Nebyly vybrány žádné součásti."
+
+#: setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_2.LngText.text
+msgid ""
+"Click 'OK' to select one or more components for installation or to exit the "
+"Installation Wizard."
+msgstr ""
+"Klepněte na 'OK' a vyberte alespoň jednu součást nebo ukončete průvodce "
+"instalací."
+
+#: setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_1.LngText.text
+msgid "No languages have been selected for installation."
+msgstr "Nebyla zvolena instalace žádného jazyka."
+
+#: setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_2.LngText.text
+msgid ""
+"Click 'OK' to select one or more languages for installation or to exit the "
+"Installation Wizard."
+msgstr ""
+"Klepněte na OK a vyberte jeden či více jazyků nebo ukončete Průvodce "
+"instalací."
+
+#: setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_1.LngText.text
+msgid "No applications have been selected for installation."
+msgstr "Nebyla zvolena instalace žádné aplikace."
+
+#: setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_2.LngText.text
+msgid ""
+"Click 'OK' to select one or more application for installation or to exit the "
+"Installation Wizard."
+msgstr ""
+"Klepněte na OK a vyberte jednu či více aplikací nebo ukončete Průvodce "
+"instalací."
+
+#: setupstrings.ulf#STRING_NOTHING_TO_UNINSTALL.LngText.text
+msgid "Nothing to uninstall"
+msgstr "Nic k odstranění"
+
+#: setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_1.LngText.text
+msgid "No components have been selected for uninstallation."
+msgstr "Nebyly vybrány žádné součásti."
+
+#: setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_2.LngText.text
+msgid ""
+"Click 'OK' to select one or more components for uninstallation or to exit "
+"the Uninstallation Wizard."
+msgstr ""
+"Klepněte na 'OK' a vyberte alespoň jednu součást nebo ukončete průvodce "
+"odstraněním."
+
+#: setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_1.LngText.text
+msgid "All language components have been selected for uninstallation."
+msgstr "Bylo zvoleno odstranění všech jazykových součástí."
+
+#: setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_2.LngText.text
+msgid ""
+"Click 'OK' to select one or more language components not for uninstallation "
+"or to exit the Uninstallation Wizard."
+msgstr ""
+"Klepněte na OK a zrušte odstranění jedné či více jazykových součástí nebo "
+"ukončete Průvodce odstraněním."
+
+#: setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_1.LngText.text
+msgid "All application components have been selected for uninstallation."
+msgstr "Bylo zvoleno odstranění všech aplikací."
+
+#: setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_2.LngText.text
+msgid ""
+"Click 'OK' to select one or more application components not for "
+"uninstallation or to exit the Uninstallation Wizard."
+msgstr ""
+"Klepněte na OK a zrušte odstranění jedné či více aplikací nebo ukončete "
+"Průvodce odstraněním."
+
+#: setupstrings.ulf#STRING_CHANGE_SELECTION.LngText.text
+msgid "Please change selection"
+msgstr "Upravte výběr, prosím"
