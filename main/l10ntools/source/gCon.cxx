@@ -50,14 +50,11 @@ convert_gen_impl * convert_gen_impl::mcImpl = NULL;
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-convert_gen::convert_gen(l10nMem& cMemory, const std::string& sSourceFile) 
+convert_gen::convert_gen(l10nMem& cMemory, const std::string& sSourceDir,  const std::string& sSourceFile) 
 {
   // do we have an old object
   if (convert_gen_impl::mcImpl)
     delete convert_gen_impl::mcImpl;
-
-  // and set environment
-  convert_gen_impl::mcImpl->msSourceFile = sSourceFile;
 
   // did the user give a .xxx with the source file ?
   int nInx = sSourceFile.rfind(".");
@@ -80,6 +77,7 @@ convert_gen::convert_gen(l10nMem& cMemory, const std::string& sSourceFile)
 
   // and set environment
   convert_gen_impl::mcImpl->msSourceFile = sSourceFile;
+  convert_gen_impl::mcImpl->msSourcePath = sSourceDir + sSourceFile;
 }
 
 
@@ -110,6 +108,63 @@ bool convert_gen::execute(const bool bMerge, const bool bAllowNoFile)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
+void convert_gen::startSave(const std::string& sTargetDir,
+                            const std::string& sLanguage,
+                            const std::string& sFile)
+{
+  convert_gen_impl::mcImpl->startSave(sTargetDir, sLanguage, sFile);
+}
+void convert_gen_impl::startSave(const std::string& sTargetDir,
+                                 const std::string& sLanguage,
+                                 const std::string& sFile)
+{
+  std::string x;
+
+  x = sTargetDir;
+  x = sLanguage;
+  x = sFile;
+  throw l10nMem::showError("startSave called with non .po file");
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_gen::save(const std::string& sKey,
+                      const std::string& sENUStext,
+                      const std::string& sText,
+                      bool               bFuzzy)
+{
+  convert_gen_impl::mcImpl->save(sKey, sENUStext, sText, bFuzzy);
+}
+void convert_gen_impl::save(const std::string& sKey,
+                            const std::string& sENUStext,
+                            const std::string& sText,
+                            bool               bFuzzy)
+{
+  std::string x;
+
+  x = sKey;
+  x = sENUStext;
+  x = sText;
+  bFuzzy = bFuzzy;
+  throw l10nMem::showError("save called with non .po file");
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_gen::endSave()
+{
+  convert_gen_impl::mcImpl->endSave();
+}
+void convert_gen_impl::endSave()
+{
+  throw l10nMem::showError("endSave called with non .po file");
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
 convert_gen_impl::convert_gen_impl(l10nMem& crMemory)
                                   : mcMemory(crMemory),
                                     miLineNo(1)
@@ -129,7 +184,7 @@ convert_gen_impl::~convert_gen_impl()
 /**********************   I M P L E M E N T A T I O N   **********************/
 bool convert_gen_impl::prepareFile(bool bAllowNoFile)
 {
-  std::ifstream inputFile(msSourceFile.c_str(), std::ios::binary);
+  std::ifstream inputFile(msSourcePath.c_str(), std::ios::binary);
 
   
   if (!inputFile.is_open())
@@ -137,7 +192,7 @@ bool convert_gen_impl::prepareFile(bool bAllowNoFile)
     if (bAllowNoFile)
       return false;
     else
-      throw mcMemory.showError("Cannot open file");
+      throw mcMemory.showError("Cannot open file (" + msSourcePath + ")");
   }
 
   // get length of file:

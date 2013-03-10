@@ -44,5 +44,14 @@ class convert_po : public convert_gen_impl
 
   private:
     void execute();
+
+    void startSave(const std::string& sTargetDir,
+                   const std::string& sLanguage,
+                   const std::string& sFile);
+    void save(const std::string& sKey,
+              const std::string& sENUStext,
+              const std::string& sText,
+              bool               bFuzzy);
+    void endSave();
 };
 #endif

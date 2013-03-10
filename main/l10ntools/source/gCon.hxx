@@ -50,8 +50,19 @@ class convert_gen_impl
     // all converters MUST implement this function
     virtual void execute() = 0;
 
+    // ONLY po should implement these functions
+    virtual void startSave(const std::string& sTargetDir,
+                           const std::string& sLanguage,
+                           const std::string& sFile);
+    virtual void save(const std::string& sKey,
+                      const std::string& sENUStext,
+                      const std::string& sText,
+                      bool               bFuzzy);
+    virtual void endSave();
+
     // generic variables
     bool         mbMergeMode;
+    std::string  msSourcePath;
     std::string  msSourceFile;
     l10nMem&     mcMemory;
     std::string  msCollector;

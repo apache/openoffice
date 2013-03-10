@@ -69,6 +69,43 @@ void convert_po::execute()
   PoWrap::yylex();
 }
 
+ 
+ 
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_po::startSave(const std::string& sTargetDir,
+                           const std::string& sLanguage,
+                           const std::string& sFile)
+{
+  std::string x;
+
+  x = sTargetDir;
+  x = sLanguage;
+  x = sFile;
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_po::save(const std::string& sKey,
+                      const std::string& sENUStext,
+                      const std::string& sText,
+                      bool               bFuzzy)
+{
+  std::string x;
+
+  x = sKey;
+  x = sENUStext;
+  x = sText;
+  bFuzzy = bFuzzy;
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_po::endSave()
+{
+}
+
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
@@ -107,7 +144,7 @@ void convert_po::stopCollectData(char *syyText)
 #endif
   }
   else
-//JIX    mcMemory.setEnUsKey(miLineNo, useKey, std::string("dummy"), sCollectedText);
+    mcMemory.setSourceKey(miLineNo, msSourceFile, useKey, sCollectedText);
 
 //  mbCollectingData = false;
   msCollector.clear();

@@ -35,13 +35,6 @@
 
 
 /*******************   G L O B A L   D E F I N I T I O N   *******************/
-typedef enum
-{
-  ENTRY_DELETED,
-  ENTRY_ADDED,
-  ENTRY_CHANGED,
-  ENTRY_NORMAL
-} ENTRY_STATE;
 
 
 
@@ -56,6 +49,13 @@ class l10nMem
     l10nMem();
     ~l10nMem();
 
+    typedef enum
+    {
+      ENTRY_DELETED,
+      ENTRY_ADDED,
+      ENTRY_CHANGED,
+      ENTRY_NORMAL
+    } ENTRY_STATE;
 
     static void setShowVerbose ();
     static void setShowDebug   ();
@@ -64,16 +64,13 @@ class l10nMem
     static int  showWarning (const std::string& sText, int iLineNo = 0);
     static void showDebug   (const std::string& sText, int iLineNo = 0);
     static void showVerbose (const std::string& sText, int iLineNo = 0);
-    bool isError            ();
+    bool        isError            ();
 
     void setModuleName (const std::string& sModuleName);
-
     void loadENUSkey   (int                iLineNo,
                         const std::string& sSourceFile,
                         const std::string& sKey,
                         const std::string& sText);
-    void loadCleanup   (bool bMaster);
-
     void setLanguage   (const std::string& sLanguage,
                         bool               bCreate);
     void loadLangKey   (int                iLineNo,
@@ -82,6 +79,8 @@ class l10nMem
                         const std::string& sOrgText,
                         const std::string& sText,
                         bool               bIsFuzzy);
+
+
     void convLangKey   (int                iLineNo,
                         const std::string& sSourceFile,
                         const std::string& sKey,
@@ -89,14 +88,13 @@ class l10nMem
                         const std::string& sText,
                         bool               bIsFuzzy);
 
-    void setFileName  (int                iLineNo,
-                       const std::string& sFilename,
-                       bool               bCreate);
     bool checkKey     (const std::string& sKey,
                        const std::string& sText);
     void setSourceKey (int                iLineNo,
+                       const std::string& sFilename,
                        const std::string& sKey,
                        const std::string& sText);
+    void reorganize    ();
 
     void save         (const std::string& sTargetDir);
     void dumpMem      (const std::string& sTargetDir);
@@ -109,11 +107,21 @@ class l10nMem
 class convert_gen
 {
   public:
-    convert_gen(l10nMem& cMemory, const std::string& sSourceFile);
+    convert_gen(l10nMem& cMemory, const std::string& sSourceDir, const std::string& sSourceFile);
     ~convert_gen();
 
     // do extract/merge
     bool execute(const bool bMerge, const bool bAllowNoFile = false);
+
+    // ONLY po should implement these functions
+    void startSave(const std::string& sTargetDir,
+                   const std::string& sLanguage,
+                   const std::string& sFile);
+    void save(const std::string& sKey,
+              const std::string& sENUStext,
+              const std::string& sText,
+              bool               bFuzzy);
+    void endSave();
 };
 
 

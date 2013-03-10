@@ -39,8 +39,8 @@ convert_db::~convert_db()                                              {}
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_db::execute()
 {
-  std::string oldKey;
-  int         iB, iE;
+  std::string newKey;
+  int         i;
 
 
   msSourceBuffer   += '\n';
@@ -49,33 +49,18 @@ void convert_db::execute()
   
   while (collectLine())
   {
-    mcMemory.setFileName(0, msFields[1], true);
-    if (mbMergeMode)
-    {
-      iB = msFields[15].find("/");
-      if (iB == (int)std::string::npos)
-        mcMemory.showError((char*)"missing / in en_US", miLineNo);
-      iE = msFields[15].find("/", iB+1);
-      if (iE == (int)std::string::npos)
-        mcMemory.showError((char*)"missing / in en_US", miLineNo);
-      oldKey = msFields[15].substr(iB+1, iE - iB -1);
-      iB = msFields[15].find("/",iE+1);
-      if (iB == (int)std::string::npos)
-        mcMemory.showError((char*)"missing / in en_US", miLineNo);
-      if (iB != iE+1)
-        oldKey += "." + msFields[15].substr(iE+1, iB - iE -1);
+    newKey = msFields[4];
+    if (msFields[5].size())
+      newKey += "." + msFields[5];
+    if (msFields[3].size())
+      newKey += "." + msFields[3];
 
-      // handle en-US (master)
-//JIX      mcMemory.loadEnUsKey(msFields[4], msFields[3], msFields[10], oldKey);
-    }
-    else
-    {
-      std::string newKey = msFields[4];
-      if (msFields[5].size())
-        newKey += "." + msFields[5];
-//JIX      mcMemory.loadLangKey(msFields[9], newKey, msFields[3], msFields[10]);
-    }
- }
+    for (; (i = msFields[1].find('\\')) != std::string::npos;)
+      msFields[1][i] = '/';
+
+    // handle en-US or lang
+    mcMemory.loadENUSkey(miLineNo, msFields[1], newKey, msFields[10]);
+  }
 }
 
 

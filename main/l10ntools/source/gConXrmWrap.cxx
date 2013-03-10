@@ -147,7 +147,7 @@ void convert_xrm::stopCollectData(char *yytext)
   if (!mbNoCollectingData)
   {
     msKey = msKey + "." + msKey;
-//JIX    mcMemory.setEnUsKey(miLineNo, msKey, std::string("text"), msCollector);
+    mcMemory.setSourceKey(miLineNo, msSourceFile, msKey, msCollector);
     mbNoCollectingData = true;
     msKey.clear();
   }

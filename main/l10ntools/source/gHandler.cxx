@@ -80,13 +80,11 @@ void handler::checkCommandLine(int argc, char *argv[])
     if (sLangText[0] == '\"')
       sLangText.erase(0,1);
     nLen = sLangText.size() -1;
-    if (sLangText[nLen] == '\"')
+    if (nLen > 0 && sLangText[nLen] == '\"')
       sLangText.erase(nLen);
-    if (!sLangText.size())
-      throw "<languages> is mandatory";
-
-    // and convert language to a vector
+    if (sLangText.size())
     {
+      // and convert language to a vector
       int current;
       int next = -1;
       do
@@ -128,6 +126,7 @@ void handler::checkCommandLine(int argc, char *argv[])
       {
         switch (eGotArg)
         {
+          case ARG_NONE:                                       break;
           case ARG_F: mvSourceFiles.push_back(sArg);           break;
           case ARG_O: msPoOutDir   = sArg; eGotArg = ARG_NONE; break;
           case ARG_S: msSourceDir  = sArg; eGotArg = ARG_NONE; break;
@@ -160,7 +159,8 @@ void handler::checkCommandLine(int argc, char *argv[])
   }
   catch(const char *sErr)
   {
-    showUsage(std::string(sErr));
+    std::string myErr(sErr);
+    showUsage(myErr);
     exit(-1);
   }
   catch(std::string sErr)
@@ -184,7 +184,7 @@ void handler::checkCommandLine(int argc, char *argv[])
     msPoOutDir.append("/");
 
   // tell system
-  mcMemory.showVerbose("gLang starting to " + sWorkText + " in module " + msModuleName);
+  mcMemory.showVerbose("gLang starting to " + sWorkText + " from module " + msModuleName);
 }
 
 
@@ -198,7 +198,8 @@ void handler::run()
     mcMemory.setModuleName(msModuleName);
 
     // build list of languages (to be loaded and later written
-    loadL10MEM();
+    if (msPoDir.size())
+      loadL10MEM();
 
     // use workMode to start correct control part
     switch (meWorkMode)
@@ -210,7 +211,7 @@ void handler::run()
       case DO_GENERATE:  runGenerate();                 break;
     }
   }
-  catch(bool)
+  catch(int)
   {
     exit(-1);
   }
@@ -221,6 +222,7 @@ void handler::run()
 /**********************   I M P L E M E N T A T I O N   **********************/
 void handler::runExtractMerge(bool bMerge, bool bKid)
 {
+  bKid = bKid;
   //JIX HANDLE KID
 
   // loop through all source files, and extract messages from each file
@@ -229,16 +231,13 @@ void handler::runExtractMerge(bool bMerge, bool bKid)
     // tell system
     mcMemory.showDebug("gLang extracting text from file " + *siSource);
 
-    // prepare translation memory
-    mcMemory.setFileName(0, *siSource, true);
-
     // get converter and extract files
-    convert_gen convertObj(mcMemory, msSourceDir + *siSource);
+    convert_gen convertObj(mcMemory, msSourceDir, *siSource);
     convertObj.execute(bMerge);
   }
 
   // and generate language file
-  mcMemory.save(msTargetDir + msModuleName);
+  mcMemory.save(msPoOutDir);
 }
 
 
@@ -290,7 +289,9 @@ void handler::showManual()
     "genLang merges .po files with AOO sources to add languages.\n"
     "\n"
     "genLang can also convert old .po files (generated from .sdf)\n"
-    "\n"
+    "\n";
+
+  std::cout <<
     "Syntax:\n"
     "  genLang extract <module> <po dir> <languages> [-v] [-d]\\\n"
     "          [-o <po outdir>]  -f <files> -s <source dir>\n"
@@ -333,7 +334,9 @@ void handler::showManual()
     "\n"
     "  genLang help\n"
     "    this text\n"
-    "\n"
+    "\n";
+
+  std::cout <<
     "Parameters:\n"
     "  <module>\n"
     "     name of module (directory in main)\n"
@@ -344,7 +347,7 @@ void handler::showManual()
     "     comma separated string with langauge id to be used\n"
     "\n"   
     "  -d\n"
-    "     extensive verbose mode, tells what gLang is doing in detail\n";
+    "     extensive verbose mode, tells what gLang is doing in detail\n"
     "  -f <files>\n"
     "     list of files containing messages to be extracted\n"
     "     \"convert\" expect sdf generated po files, to be converted\n"
@@ -368,34 +371,28 @@ void handler::showManual()
 /**********************   I M P L E M E N T A T I O N   **********************/
 void handler::loadL10MEM()
 {
-  std::string sMod  = "/" +  msModuleName + ".pot";
-  std::string sLoad = msPoDir + "../en-US" + sMod;
+  std::string sMod  = msModuleName + ".po";
+  std::string sLoad = msPoDir + "en-US";
 
 
   // load texts from en-US po file (master)
   {
-    // prepare translation memory
-    mcMemory.setFileName(0, sLoad, true);
-
     // tell system
     mcMemory.showDebug("gLang loading master text from file " + sLoad);
 
     // and load file
-    convert_gen(mcMemory, sLoad).execute(true);
+    convert_gen(mcMemory, sLoad, sMod).execute(true);
   }
 
   // loop through all languages and load text
   for (std::vector<std::string>::iterator siLang = mvLanguages.begin(); siLang != mvLanguages.end(); ++siLang)
   {
-    sLoad = msPoDir + *siLang + sMod;
-
-    // prepare translation memory
-    mcMemory.setFileName(0, sLoad, true);
+    sLoad = msPoDir + *siLang;
 
     // tell system
     mcMemory.showDebug("gLang loading text from language file " + sLoad);
 
     // get converter and extract files
-    convert_gen(mcMemory, sLoad).execute(false, true);
+    convert_gen(mcMemory, sLoad, sMod).execute(false, true);
   }
 }

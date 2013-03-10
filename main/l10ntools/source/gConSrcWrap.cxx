@@ -182,7 +182,7 @@ void convert_src::setList(char *syyText)
 void convert_src::setNL(char *syyText, bool bMacro)
 {
   int         nL;
-  std::string sKey, sObject;
+  std::string sKey;
 
   copySource(syyText);
 
@@ -206,9 +206,9 @@ void convert_src::setNL(char *syyText, bool bMacro)
       msValue.erase(nL,1);
     }
 
-    sObject = msCmd + "." + msTextName;
-//JIX    if (msValue.size() && msValue != "-")
-//JIX      mcMemory.setEnUsKey(miLineNo, sKey, sObject, msValue);
+    sKey += "." + msCmd + "." + msTextName;
+    if (msValue.size() && msValue != "-")
+      mcMemory.setSourceKey(miLineNo, msSourceFile, sKey, msValue);
   }
 
   if (!bMacro && mbExpectMacro)
@@ -294,13 +294,6 @@ void convert_src::setListItem(char *syyText, bool bIsStart)
 
       // check key or add seq.
       buildKey(myKey);
-//JIX      if (!mcMemory.checkKey(myKey, (msCmd + "." + msTextName)))
-      {
-        ssBuf  << miListCount;
-        msName  += ".uniq" + ssBuf.str();
-        mcStack.pop_back();
-        mcStack.push_back(msName);
-      }
     }
   }
 }

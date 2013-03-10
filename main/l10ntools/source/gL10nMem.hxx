@@ -93,6 +93,7 @@ class l10nMem_db
     int                             miCurENUSinx;
     int                             miCurLastENUSinx;
     bool                            mbNeedWrite;
+    bool                            mbReorganizeNeeded;
     std::vector<l10nMem_enus_entry> mcENUSlist;
     std::vector<l10nMem_file_entry> mcFileList;
     std::vector<std::string>        mcLangList;
@@ -104,6 +105,7 @@ class l10nMem_db
                          const std::string& sText);
     void setLanguage    (const std::string& sLanguage,
                          bool               bCreate);
+    bool findFileName   (const std::string& sSourceFile, int iStart, bool bCreate);                         
     void loadLangKey    (int                iLineNo,
                          const std::string& sSourceFile,
                          const std::string& sKey,
@@ -111,19 +113,16 @@ class l10nMem_db
                          const std::string& sText,
                          bool               bFuzzy);
 
-    void setFileName    (int                iLineNo,
-                         const std::string& sFilename,
-                         bool               bCreate);
-    void reorganize();
 
     bool locateKey      (int                iLineNo,
                          const std::string& sKey,
                          const std::string& sText,
                          bool               bThrow = true);
+    void reorganize();
     void addKey         (int                  iLineNo,
                          const std::string&   sKey,
                          const std::string&   sText,
-                         l10nMem::ENTRY_STATE eState);
+                         l10nMem::ENTRY_STATE eStat);
 };
 
 
@@ -145,6 +144,7 @@ class l10nMem_impl
 
 
     void setSourceKey  (int                iLineNo,
+                        const std::string& sFilename,
                         const std::string& sKey,
                         const std::string& sText);
 
@@ -156,7 +156,7 @@ class l10nMem_impl
                         const std::string& sText,
                         bool               bIsFuzzy);
 
-    void save         (const std::string& sTargetDir);
+    void save         (l10nMem& cMem, const std::string& sTargetDir);
     void dumpMem      (const std::string& sTargetDir);
 
   private:

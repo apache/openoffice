@@ -168,9 +168,9 @@ void convert_xcu::stopCollectData(char *syyText)
     }
 #endif
   }
-//JIX  else
-//JIX    if (useText.size())
-//JIX      mcMemory.setEnUsKey(miLineNo, useKey, "value", useText);
+  else
+    if (useText.size())
+      mcMemory.setSourceKey(miLineNo, msSourceFile, useKey, useText);
 }  
 
 

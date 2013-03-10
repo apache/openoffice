@@ -82,7 +82,7 @@ int  l10nMem::showWarning(const std::string& sText, int iLineNo)
 void l10nMem::showDebug(const std::string& sText, int iLineNo)
      { l10nMem_impl::mcImpl->showDebug(sText, iLineNo); }
 void l10nMem::showVerbose(const std::string& sText, int iLineNo)
-     { l10nMem_impl::mcImpl->showWarning(sText, iLineNo); }
+     { l10nMem_impl::mcImpl->showVerbose(sText, iLineNo); }
 
 
 
@@ -95,8 +95,8 @@ bool l10nMem::isError()
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void l10nMem::setModuleName(const std::string& setModuleName)
-     { l10nMem_impl::mcImpl->setModuleName(setModuleName); }
+void l10nMem::setModuleName(const std::string& sModuleName)
+     { l10nMem_impl::mcImpl->setModuleName(sModuleName); }
 void l10nMem::loadENUSkey(int iL, const std::string& sS, const std::string& sK, const std::string& sT)
      { l10nMem_impl::mcImpl->mcDb.loadENUSkey(iL, sS, sK, sT); }
 void l10nMem::setLanguage(const std::string& sL, bool bC)
@@ -105,16 +105,14 @@ void l10nMem::loadLangKey(int iL, const std::string& sS, const std::string& sK, 
      { l10nMem_impl::mcImpl->mcDb.loadLangKey(iL, sS, sK, sO, sT, bI); }
 void l10nMem::convLangKey(int iL, const std::string& sS, const std::string& sK, const std::string& sO, const std::string& sT, bool               bI)
      { l10nMem_impl::mcImpl->convLangKey(iL, sS, sK, sO, sT, bI); }
-void l10nMem::setFileName(int iL, const std::string& sS, bool bC)
-     { l10nMem_impl::mcImpl->mcDb.setFileName(iL, sS, bC); }
 bool l10nMem::checkKey(const std::string& sKey, const std::string& sText)
      { return l10nMem_impl::mcImpl->mcDb.locateKey(0, sKey, sText, false); }
-void l10nMem::setSourceKey(int iL, const std::string& sK, const std::string& sT)
-     { l10nMem_impl::mcImpl->setSourceKey(iL, sK, sT); }
+void l10nMem::setSourceKey(int iL, const std::string& sF, const std::string& sK, const std::string& sT)
+     { l10nMem_impl::mcImpl->setSourceKey(iL, sF, sK, sT); }
 void l10nMem::reorganize()
      { l10nMem_impl::mcImpl->mcDb.reorganize(); }
 void l10nMem::save(const std::string& sTargetDir)
-     { l10nMem_impl::mcImpl->save(sTargetDir); }
+     { l10nMem_impl::mcImpl->save(*this, sTargetDir); }
 void l10nMem::dumpMem(const std::string& sTargetDir)
      { l10nMem_impl::mcImpl->dumpMem(sTargetDir); }
 
@@ -183,98 +181,105 @@ void l10nMem_impl::setModuleName(const std::string& sModuleName)
 
 /**********************   I M P L E M E N T A T I O N   **********************/
 void l10nMem_impl::setSourceKey(int                iLineNo,
+                                const std::string& sSourceFile,
                                 const std::string& sKey,
                                 const std::string& sText)
 {
   // if key exist update state
-  if (mcDb.locateKey(iLineNo, sKey, sText, false))
+  if (mcDb.findFileName(sSourceFile, mcDb.miCurENUSinx+1, true) &&
+      mcDb.locateKey(iLineNo, sKey, sText, false))
   {
-    mcDb.mcENUSlist[mcDb.miCurENUSinx].meState = ENTRY_NORMAL;
+    mcDb.mcENUSlist[mcDb.miCurENUSinx].meState = l10nMem::ENTRY_NORMAL;
   }
   else
   {
-    // add key, if changed text this is wrong but handled in loadCleanup
-    mcDb.addKey(iLineNo, sKey, sText, ENTRY_ADDED);
+    // add key, if changed text this is wrong but handled in reorganize
+    mcDb.addKey(iLineNo, sKey, sText, l10nMem::ENTRY_ADDED);
   }
 }
 
 
 
-
-
-
-
-
-
-#if 0
-    void convLangKey   (const std::string& sSourceFile,
-                        const std::string& sKey,
-                        const std::string& sOrgText,
-                        const std::string& sText,
-                        bool               bIsFuzzy);
-
-    void extractedKey (int                iLineNo,
-                       const std::string& sKey,
-                       const std::string& sText);
-
-    void save         (const std::string& sTargetDir);
-    void dumpMem      (const std::string& sTargetDir);
-
-    void formatAndShowText(std::string& sType, int iLineNo, std::string& sText);
-  std::cerr << "ERROR in " << msCurrentSourceFileName << ":" << iLineNo << ":  " << sText << std::endl;
+/**********************   I M P L E M E N T A T I O N   **********************/
+void l10nMem_impl::convLangKey(int                iLineNo,
+                               const std::string& sSourceFile,
+                               const std::string& sKey,
+                               const std::string& sOrgText,
+                               const std::string& sText,
+                               bool               bIsFuzzy)
+{
+  std::string x;
+  iLineNo     = iLineNo;
+  x           = sSourceFile;
+  x           = sKey;
+  x           = sOrgText;
+  x           = sText;
+  bIsFuzzy    = bIsFuzzy;
+  //JIX (convLangKey)
+}
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void l10nMem_impl::save(const std::string& srTargetFile)
+void l10nMem_impl::save(l10nMem& cMem, const std::string& sTargetDir)
 {
-  int           i;
-  std::string   sFile = srTargetFile + ".cnv";
+  int iE, iEsize = mcDb.mcENUSlist.size();
+  int iL, iLsize = mcDb.mcLangList.size();
+  std::string fileName = msModuleName + ".po";
 
-  if (mbInError)
+  // Save en-US
   {
-    showError(0, (char *)"Cannot save file due to preceding errors");
-    return;
+    convert_gen savePo(cMem, sTargetDir, fileName);
+
+    savePo.startSave(sTargetDir, "en_US", fileName);
+    for (iE = 1; iE < iEsize; ++iE)
+    {
+      l10nMem_enus_entry& cE = mcDb.mcENUSlist[iE];
+
+      savePo.save(cE.msKey, cE.msText, cE.msText, false);
+    }
+    savePo.endSave();
   }
- 
-  std::ofstream outputFile(sFile.c_str(), std::ios::binary);
 
-  if (!outputFile.is_open())
-    throw showError(std::string("Could not open ")+srTargetFile);
-
-
-  for (i = 0; i < (int)mcMemory.size(); ++i)
+  // save all languages
+  for (iL = 1; iL < iLsize; ++iL)
   {
-    outputFile << mcMemory[i].msModuleName << "\t" << mcMemory[i].msSourceFile << "\t"
-               << mcMemory[i].msKey;
-    //if (mcMemory[i].miIndex)
-    //  outputFile << "." << mcMemory[i].miIndex;
-    outputFile << "\t" << mcMemory[i].msLanguage  << "\t" << mcMemory[i].msText << std::endl;
+    convert_gen savePo(cMem, sTargetDir, fileName);
+
+    savePo.startSave(sTargetDir, mcDb.mcLangList[iL], fileName);
+    for (iE = 1; iE < iEsize; ++iE)
+    {
+      l10nMem_enus_entry& cE = mcDb.mcENUSlist[iE];
+      l10nMem_lang_entry& cL = cE.mcLangList[iL];
+      bool                bF = cL.mbFuzzy || (cE.meState == l10nMem::ENTRY_CHANGED);
+      savePo.save(cE.msKey, cE.msText, cL.msText, false);
+    }
+    savePo.endSave();
   }
-  // JIX
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void l10nMem_impl::loadLangKey(const std::string& srLang, const std::string& srKey, const std::string& srObjectType,
-                               const std::string& srText)
+void l10nMem_impl::dumpMem(const std::string& srTargetFile)
 {
+  std::string x;
+
+  x = srTargetFile;
+  // JIX (dumpMem)
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-std::vector<l10nMem_entry *>&  l10nMem_impl::getLanguagesForKey(const std::string& srKey)
+void l10nMem_impl::formatAndShowText(const std::string& sType, int iLineNo, const std::string& sText)
 {
-  int nL = mcMemory.size();
+  std::string& cFile = mcDb.mcFileList[mcDb.miCurFileInx].msFileName;
 
-  mcCurrentSelection.clear();
-  if (srKey.size())
-    for (int i = 0; i < nL; ++i)
-      if (mcMemory[i].msLanguage != "en-US")
-        mcCurrentSelection.push_back(&mcMemory[i]);
-
-  return mcCurrentSelection;
+  std::cerr << sType;
+  if (cFile.size())
+    std::cerr << " in " << mcDb.mcFileList[mcDb.miCurFileInx].msFileName;
+  if (iLineNo)
+    std::cerr << "(" << iLineNo << ")";
+  std::cerr << ":  " << sText << std::endl;
 }
-#endif

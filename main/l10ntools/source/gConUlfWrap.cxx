@@ -89,5 +89,5 @@ void convert_ulf::setValue(char *syyText)
   nL = sText.rfind("\"");
   sText.erase(nL);
 
-//JIX  mcMemory.setEnUsKey(miLineNo, msKey, std::string("LngText"), sText);
+  mcMemory.setSourceKey(miLineNo, msSourceFile, msKey, sText);
 }
