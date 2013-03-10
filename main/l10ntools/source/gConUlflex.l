@@ -112,3 +112,12 @@ KEYID [a-zA-Z0-9_-]+
   IMPLptr->copySource(yytext);
 }
 %%
+
+
+
+void dummyJustForCompiler()
+{
+  char *txt = NULL;
+  yy_flex_strlen(txt);
+  yyunput(0, txt);
+}

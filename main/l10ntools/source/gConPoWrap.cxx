@@ -34,8 +34,20 @@
 
 
 /************   I N T E R F A C E   I M P L E M E N T A T I O N   ************/
-convert_po::convert_po(l10nMem& crMemory) : convert_gen_impl(crMemory) {}
-convert_po::~convert_po()                                              {}
+convert_po::convert_po(l10nMem& crMemory)
+                      : convert_gen_impl(crMemory),
+                        mbExpectId(false),
+                        mbExpectStr(false),
+                        mbFuzzy(false)
+{
+}
+
+
+
+/************   I N T E R F A C E   I M P L E M E N T A T I O N   ************/
+convert_po::~convert_po()
+{
+}
 
 
 
@@ -47,22 +59,81 @@ namespace PoWrap
 #include "gConPo_yy.c"
 }
 
-#if 0
- white-space
-     #  translator-comments
-     #. extracted-comments
-     #: reference...
-     #, flag...
-     #| msgid previous-untranslated-string
-     msgid untranslated-string
-     msgstr translated-string
 
-     fuzzy
 
-     #: lib/error.c:116
-     msgid "Unknown system error"
-     msgstr "Error desconegut del sistema"
-#endif
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_po::startLook(char *syyText)
+{
+  //JIX startLook
+  msKey.clear();
+  msValue.clear();
+  mbExpectId  =
+  mbExpectStr = false;
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_po::setValue(char *syyText)
+{
+  int inx;
+
+
+  // find terminating "
+  msValue = syyText;
+  for (inx =  msValue.size(); msValue[--inx] != '\"';)
+  msValue.erase(inx);
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_po::setFuzzy(char *syyText)
+{
+  std::string sText(syyText);
+
+  mbFuzzy = true;
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_po::setKey(char *syyText)
+{
+  int i;
+
+
+  // skip "#:" and any blanks
+  for (syyText += 2; *syyText == ' ' || *syyText == '\t';) ;
+  msKey = syyText;
+
+  // remove trailing blanks
+  for (i = msKey.size() -1; msKey[i] == ' ' || msKey[i] == '\t'; --i) ;
+  msKey.erase(i+1);
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_po::setMsgId(char *syyText)
+{
+  std::string sText(syyText);
+
+  mbExpectId = true;
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void convert_po::setMsgStr(char *syyText)
+{
+  std::string sText(syyText);
+
+  mbExpectStr = true;
+}
+
+
+
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_po::execute()
 {
@@ -76,11 +147,38 @@ void convert_po::startSave(const std::string& sTargetDir,
                            const std::string& sLanguage,
                            const std::string& sFile)
 {
-  std::string x;
+  std::string sFilePath = sTargetDir + sLanguage + "/" + sFile;
+  outBuffer.open(sFilePath.c_str(), std::ios::out);
 
-  x = sTargetDir;
-  x = sLanguage;
-  x = sFile;
+  if (!outBuffer.is_open())
+    throw l10nMem::showError("Cannot open " + sFilePath + " for writing");
+
+  l10nMem::showDebug("writing file (" + sFilePath + ")");
+
+  std::ostream outFile(&outBuffer);
+
+  // Set license header
+  outFile << "#*************************************************************"  << std::endl
+          << "#*"                                                              << std::endl
+          << "#* Licensed to the Apache Software Foundation (ASF) under one"   << std::endl
+          << "#* or more contributor license agreements.  See the NOTICE file" << std::endl
+          << "#* distributed with this work for additional information"        << std::endl
+          << "#* regarding copyright ownership.  The ASF licenses this file"   << std::endl
+          << "#* to you under the Apache License, Version 2.0 (the"            << std::endl
+          << "#* \"License\"); you may not use this file except in compliance" << std::endl
+          << "#* with the License.  You may obtain a copy of the License at"   << std::endl
+          << "#*"                                                              << std::endl
+          << "#*   http://www.apache.org/licenses/LICENSE-2.0"                 << std::endl
+          << "#*"                                                              << std::endl
+          << "#* Unless required by applicable law or agreed to in writing,"   << std::endl
+          << "#* software distributed under the License is distributed on an"  << std::endl
+          << "#* \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY"     << std::endl
+          << "#* KIND, either express or implied.  See the License for the"    << std::endl
+          << "#* specific language governing permissions and limitations"      << std::endl
+          << "#* under the License."                                           << std::endl
+          << "#*"                                                              << std::endl
+          << "#************************************************************"   << std::endl
+          << std::endl;
 }
 
 
@@ -91,12 +189,13 @@ void convert_po::save(const std::string& sKey,
                       const std::string& sText,
                       bool               bFuzzy)
 {
-  std::string x;
+  std::ostream outFile(&outBuffer);
 
-  x = sKey;
-  x = sENUStext;
-  x = sText;
-  bFuzzy = bFuzzy;
+  outFile << std::endl << "#: " + sKey << std::endl;
+  if (bFuzzy)
+    outFile << "#, fuzzy" << std::endl;
+  outFile << "msgid  \"" << sENUStext << "\"" << std::endl
+          << "msgstr \"" << sText     << "\"" << std::endl;
 }
 
 
@@ -104,48 +203,5 @@ void convert_po::save(const std::string& sKey,
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_po::endSave()
 {
+  outBuffer.close();
 }
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-void convert_po::startCollectData(char *syyText)
-{
-  std::string sCollectedText = copySource(syyText);
-
-//  mbCollectingData = true;
-}
-
-
-
-/**********************   I M P L E M E N T A T I O N   **********************/
-void convert_po::stopCollectData(char *syyText)
-{
-  std::string sCollectedText = copySource(syyText);
-  std::string useKey;
-
-
-
-  if (mbMergeMode)
-  {
-#if 0
-    // get all languages (includes en-US)
-    std::vector<l10nMem_entry *>& cExtraLangauges = mcMemory.getLanguagesForKey(useKey);
-    std::string                   sNewLine;
-    int                      nL = cExtraLangauges.size();
-
-  writeSourceFile(msCollector + sCollectedText);
-    for (int i = 0; i < nL; ++i)
-    {
-      sNewLine = "<value xml:lang=\"" + cExtraLangauges[i]->msLanguage + "\">" +
-             cExtraLangauges[i]->msText + "</value>";
-      writeSourceFile(sNewLine);
-    }
-#endif
-  }
-  else
-    mcMemory.setSourceKey(miLineNo, msSourceFile, useKey, sCollectedText);
-
-//  mbCollectingData = false;
-  msCollector.clear();
-}  

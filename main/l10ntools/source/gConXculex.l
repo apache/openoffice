@@ -128,5 +128,13 @@ FIN   [^/>]*">"
 
 
 
-
 %%
+
+
+
+void dummyJustForCompiler()
+{
+  char *txt = NULL;
+  yy_flex_strlen(txt);
+  yyunput(0, txt);
+}

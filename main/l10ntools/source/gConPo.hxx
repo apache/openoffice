@@ -21,6 +21,8 @@
 #ifndef GCONPO_HXX
 #define GCONPO_HXX
 #include "gCon.hxx"
+#include <iostream>
+#include <fstream>
 
 
 
@@ -36,13 +38,26 @@
 class convert_po : public convert_gen_impl
 {
   public:
+    bool mbExpectId;
+    bool mbExpectStr;
+
+
     convert_po(l10nMem& crMemory);
     ~convert_po();
 
-    void startCollectData(char *syyText);
-    void stopCollectData(char *syyText);
+    void startLook (char *syyText);
+    void setValue  (char *syyText);
+    void setFuzzy  (char *syyText);
+    void setKey    (char *syyText);
+    void setMsgId  (char *syyText);
+    void setMsgStr (char *syyText);
 
   private:
+    std::string  msValue;
+    std::string  msKey;
+    bool         mbFuzzy;
+    std::filebuf outBuffer;
+
     void execute();
 
     void startSave(const std::string& sTargetDir,

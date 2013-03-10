@@ -67,21 +67,10 @@ class l10nMem
     bool        isError            ();
 
     void setModuleName (const std::string& sModuleName);
-    void loadENUSkey   (int                iLineNo,
-                        const std::string& sSourceFile,
-                        const std::string& sKey,
-                        const std::string& sText);
     void setLanguage   (const std::string& sLanguage,
-                        bool               bCreate);
-    void loadLangKey   (int                iLineNo,
-                        const std::string& sSourceFile,
-                        const std::string& sKey,
-                        const std::string& sOrgText,
-                        const std::string& sText,
-                        bool               bIsFuzzy);
-
-
-    void convLangKey   (int                iLineNo,
+                        bool               bCreate,
+                        bool               bConvert);
+    void loadEntryKey  (int                iLineNo,
                         const std::string& sSourceFile,
                         const std::string& sKey,
                         const std::string& sOrgText,
@@ -96,7 +85,8 @@ class l10nMem
                        const std::string& sText);
     void reorganize    ();
 
-    void save         (const std::string& sTargetDir);
+    void save         (const std::string& sTargetDir,
+                       bool               bKid);
     void dumpMem      (const std::string& sTargetDir);
 
 };
@@ -111,7 +101,7 @@ class convert_gen
     ~convert_gen();
 
     // do extract/merge
-    bool execute(const bool bMerge, const bool bAllowNoFile = false);
+    bool execute(const bool bMerge, const bool bAllowNoFile);
 
     // ONLY po should implement these functions
     void startSave(const std::string& sTargetDir,

@@ -58,7 +58,7 @@ class l10nMem_enus_entry
     ~l10nMem_enus_entry();
 
     std::string                     msKey;      // key in po file and source file
-    std::string                     msText;     // en-US text from source file
+    std::string                     msText;     // en_US text from source file
     l10nMem::ENTRY_STATE            meState;    // status information
     int                             miFileInx;  // index of file name
     int                             miLineNo;   // line number
@@ -94,6 +94,7 @@ class l10nMem_db
     int                             miCurLastENUSinx;
     bool                            mbNeedWrite;
     bool                            mbReorganizeNeeded;
+    bool                            mbConvertMode;
     std::vector<l10nMem_enus_entry> mcENUSlist;
     std::vector<l10nMem_file_entry> mcFileList;
     std::vector<std::string>        mcLangList;
@@ -104,7 +105,8 @@ class l10nMem_db
                          const std::string& sKey,
                          const std::string& sText);
     void setLanguage    (const std::string& sLanguage,
-                         bool               bCreate);
+                         bool               bCreate,
+                        bool                bConvert);
     bool findFileName   (const std::string& sSourceFile, int iStart, bool bCreate);                         
     void loadLangKey    (int                iLineNo,
                          const std::string& sSourceFile,
@@ -141,22 +143,20 @@ class l10nMem_impl
     void showVerbose   (const std::string& sText, int iLineNo);
 
     void setModuleName (const std::string& sModuleName);
-
-
-    void setSourceKey  (int                iLineNo,
-                        const std::string& sFilename,
-                        const std::string& sKey,
-                        const std::string& sText);
-
-
-    void convLangKey   (int                iLineNo,
+    void loadEntryKey  (int                iLineNo,
                         const std::string& sSourceFile,
                         const std::string& sKey,
                         const std::string& sOrgText,
                         const std::string& sText,
                         bool               bIsFuzzy);
+    void setSourceKey  (int                iLineNo,
+                        const std::string& sFilename,
+                        const std::string& sKey,
+                        const std::string& sText);
 
-    void save         (l10nMem& cMem, const std::string& sTargetDir);
+    void save         (l10nMem& cMem,
+                       const std::string& sTargetDir,
+                       bool               bKid);
     void dumpMem      (const std::string& sTargetDir);
 
   private:
@@ -168,6 +168,12 @@ class l10nMem_impl
     bool                                mbInError;
 
     void formatAndShowText(const std::string& sType, int iLineNo, const std::string& sText);
+    void convEntryKey     (int                iLineNo,
+                           const std::string& sSourceFile,
+                           const std::string& sKey,
+                           const std::string& sOrgText,
+                           const std::string& sText,
+                           bool               bIsFuzzy);
 
     friend class l10nMem;
 };

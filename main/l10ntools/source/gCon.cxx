@@ -59,7 +59,7 @@ convert_gen::convert_gen(l10nMem& cMemory, const std::string& sSourceDir,  const
   // did the user give a .xxx with the source file ?
   int nInx = sSourceFile.rfind(".");
   if (nInx == (int)std::string::npos)
-    throw cMemory.showError("source file: "+sSourceFile+" missing extension");
+    throw l10nMem::showError("source file: "+sSourceFile+" missing extension");
 
   // find correct conversion class and create correct object
   std::string sExtension = sSourceFile.substr(nInx+1);
@@ -73,7 +73,7 @@ convert_gen::convert_gen(l10nMem& cMemory, const std::string& sSourceDir,  const
   else if (sExtension == "xhp")        convert_gen_impl::mcImpl = new convert_xhp(cMemory);
   else if (sExtension == "xrm")        convert_gen_impl::mcImpl = new convert_xrm(cMemory);
   else if (sExtension == "properties") convert_gen_impl::mcImpl = new convert_prop(cMemory);
-  else throw cMemory.showError("unknown extension on source file: "+sSourceFile);
+  else throw l10nMem::showError("unknown extension on source file: "+sSourceFile);
 
   // and set environment
   convert_gen_impl::mcImpl->msSourceFile = sSourceFile;
@@ -190,9 +190,12 @@ bool convert_gen_impl::prepareFile(bool bAllowNoFile)
   if (!inputFile.is_open())
   {
     if (bAllowNoFile)
+    {
+      l10nMem::showWarning("Cannot open file (" + msSourcePath + ")");
       return false;
+    }
     else
-      throw mcMemory.showError("Cannot open file (" + msSourcePath + ")");
+      throw l10nMem::showError("Cannot open file (" + msSourcePath + ")");
   }
 
   // get length of file:
@@ -204,7 +207,7 @@ bool convert_gen_impl::prepareFile(bool bAllowNoFile)
   // get size, prepare std::string and read whole file
   inputFile.read((char *)msSourceBuffer.c_str(), msSourceBuffer.size());
   if ((unsigned int)inputFile.gcount() != msSourceBuffer.size())
-    throw mcMemory.showError("cannot read whole file");
+    throw l10nMem::showError("cannot read whole file");
   inputFile.close();
   return true;
 }
@@ -247,7 +250,7 @@ void convert_gen_impl::writeSourceFile(const std::string& line)
   if (!line.size())
     return;
 
-  throw mcMemory.showError("writeSourceFile not implemented");
+  throw l10nMem::showError("writeSourceFile not implemented");
 }
 
 

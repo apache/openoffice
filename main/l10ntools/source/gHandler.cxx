@@ -82,19 +82,6 @@ void handler::checkCommandLine(int argc, char *argv[])
     nLen = sLangText.size() -1;
     if (nLen > 0 && sLangText[nLen] == '\"')
       sLangText.erase(nLen);
-    if (sLangText.size())
-    {
-      // and convert language to a vector
-      int current;
-      int next = -1;
-      do
-      {
-        current = next + 1;
-        next = sLangText.find_first_of( ",", current );
-        mvLanguages.push_back(sLangText.substr(current,next-current));
-      }
-      while (next != (int)std::string::npos);
-    }
     
     // decode parameters and translate to variables
     for (argNow = 5; argNow < argc;)
@@ -135,15 +122,45 @@ void handler::checkCommandLine(int argc, char *argv[])
       }
     }
 
-    // check parameters according to function
-    if (!mvSourceFiles.size())
-      throw "-f <files> is mandatory";
+    // Check parameters mandatory for all commands
+    if (!msModuleName.size())
+      throw "<module name> is mandatory";
+    if (!msPoDir.size())
+      throw "<po dir> is mandatory";
+    if (!sLangText.size())
+      throw "<languages> is mandatory";
 
-    // partly valid
-    if (meWorkMode != DO_MERGE && msTargetDir.size())
-      throw "-t is mandatory using \"extract\"";
-    if (meWorkMode == DO_MERGE && !msTargetDir.size())
-      throw "-t is only valid using \"extract\"";
+    // check parameters according to function
+    if (mvSourceFiles.size())
+    {
+      if (meWorkMode == DO_CONVERT || meWorkMode == DO_GENERATE)
+        throw "-f <files> is only valid using \"extract\" and \"merge\"";
+    }
+    else
+    {
+      if (meWorkMode == DO_EXTRACT || meWorkMode == DO_MERGE)
+        throw "-f <files> is mandatory";
+    }
+    if (msTargetDir.size())
+    {
+      if (meWorkMode != DO_MERGE)
+        throw "-t <target dir> is only valid using \"merge\"";
+    }
+    else
+    {
+      if (meWorkMode == DO_MERGE)
+        throw "-t <target dir> is mandatory";
+    }
+    if (msSourceDir.size())
+    {
+      if (meWorkMode == DO_GENERATE)
+        throw "-s <source dir> is only valid using \"extract\", \"merge\" and \"convert\"";
+    }
+    else
+    {
+      if (meWorkMode != DO_GENERATE)
+        throw "-s <source dir> is mandatory";
+    }
 
     // Key Identification generation
     if (bKid)
@@ -183,8 +200,19 @@ void handler::checkCommandLine(int argc, char *argv[])
   if (nLen && msPoOutDir.at(nLen-1) != '/')
     msPoOutDir.append("/");
 
+  // and convert language to a vector
+  int current;
+  int next = -1;
+  do
+  {
+    current = next + 1;
+    next = sLangText.find_first_of( ",", current );
+    mvLanguages.push_back(sLangText.substr(current,next-current));
+  }
+  while (next != (int)std::string::npos);
+
   // tell system
-  mcMemory.showVerbose("gLang starting to " + sWorkText + " from module " + msModuleName);
+  l10nMem::showVerbose("gLang starting to " + sWorkText + " from module " + msModuleName);
 }
 
 
@@ -222,22 +250,21 @@ void handler::run()
 /**********************   I M P L E M E N T A T I O N   **********************/
 void handler::runExtractMerge(bool bMerge, bool bKid)
 {
-  bKid = bKid;
-  //JIX HANDLE KID
-
   // loop through all source files, and extract messages from each file
   for (std::vector<std::string>::iterator siSource = mvSourceFiles.begin(); siSource != mvSourceFiles.end(); ++siSource)
   {
     // tell system
-    mcMemory.showDebug("gLang extracting text from file " + *siSource);
+    l10nMem::showDebug("gLang extracting text from file " + msSourceDir + *siSource);
 
-    // get converter and extract files
+    // get converter and extract file
     convert_gen convertObj(mcMemory, msSourceDir, *siSource);
-    convertObj.execute(bMerge);
+    convertObj.execute(bMerge, false);
+
+    //JIX runExtractMerge, handle merge
   }
 
   // and generate language file
-  mcMemory.save(msPoOutDir);
+  mcMemory.save(msPoOutDir, bKid);
 }
 
 
@@ -245,7 +272,28 @@ void handler::runExtractMerge(bool bMerge, bool bKid)
 /**********************   I M P L E M E N T A T I O N   **********************/
 void handler::runConvert()
 {
-  throw mcMemory.showError(std::string("handler::runConvert not implemented"));
+  // loop through all languages
+  for (std::vector<std::string>::iterator siLang = mvLanguages.begin(); siLang != mvLanguages.end(); ++siLang)
+  {
+    // get converter and extract files
+    mcMemory.setLanguage(*siLang, false, true);
+
+    // loop through all source files, and extract messages from each file
+    for (std::vector<std::string>::iterator siSource = mvSourceFiles.begin(); siSource != mvSourceFiles.end(); ++siSource)
+    {
+      std::string sFilePath = msSourceDir + *siLang + "/";
+
+        // tell system
+      l10nMem::showDebug("gLang convert text from file " + sFilePath + *siSource);
+
+      // get converter and extract files
+      convert_gen convertObj(mcMemory, sFilePath, *siSource);
+      convertObj.execute(true, false);
+    }
+  }
+
+  // and generate language file
+  mcMemory.save(msPoOutDir, false);
 }
 
 
@@ -253,7 +301,7 @@ void handler::runConvert()
 /**********************   I M P L E M E N T A T I O N   **********************/
 void handler::runGenerate()
 {
-  throw mcMemory.showError(std::string("handler::runGenerate not implemented"));
+  mcMemory.dumpMem(msPoOutDir);
 }
 
 
@@ -283,7 +331,7 @@ void handler::showManual()
     "genLang (c)2013 by Apache Software Foundation\n"
     "=============================================\n"
     "As part of the L10N framework for Apache Open Office (AOO),\n"
-    "genLang extracts en-US texts sources of the following types:\n"
+    "genLang extracts en_US texts sources of the following types:\n"
     "  .xrm, .xhp, .xcu, .xcs, .ulf, .tree, .src, .prop and .po\n"
     "and merges with .po files in different languages.\n"
     "genLang merges .po files with AOO sources to add languages.\n"
@@ -299,9 +347,8 @@ void handler::showManual()
     "    from <source dir>/<files>, result is merged and\n"
     "    written to <po outdir>/*lang/<module>.po if -o present\n"
     "    or <po dir>/*lang/<module>.po is overwritten\n"
-    "    - File will only be written if they are changes\n"
     "    - Keys in .po files, not in sources files (deleted keys)\n"
-    "      are moved to '-p <dir>'/<module>.deleted.po\n"
+    "      are shown as warnings\n"
     "    - Keys in .po files, with changed text in the source\n"
     "      are marked \"fuzzy\"\n"
     "    - Keys in source files not in .po files (new keys)\n"
@@ -316,21 +363,23 @@ void handler::showManual()
     "    The result is stored in <target dir>/<files>\n"
     "\n"
     "  genLang convert <module> <po dir> <languages> [-v] [-d]\\\n"
-    "          [-o <po outdir>]  -f <files>\n"
-    "    reads sdf generated .po <files> and merges with\n"
+    "          [-o <po outdir>] -s <source dir>\n"
+    "    reads sdf generated .po <files> from\n"
+    "    <source dir>/*lang/<module>.po\n"
+    "    and merges with\n"
     "    <po dir>/*lang/<module>.po\n"
     "    Result is written to <po outdir>/*lang/<module>.po if\n"
     "    present or <po dir>/*lang/<module>.po is overwritten\n"
-    "    - File will only be written if they are changes\n"
-    "    - Keys in <files>, not in <module>.po\n"
-    "      are moved to <po dir>/<module>.deleted.po\n"
-    "    - Keys in <files>, with changed translation\n"
+    "    - Keys in <source dir>, not in <module>.po\n"
+    "      are shown as warnings\n"
+    "    - Keys in <source dir>, with changed translation\n"
     "      are marked \"fuzzy\"\n"
     "\n"
     "  genLang generate <module> <po dir> <languages> [-v] [-d]\\\n"
-    "          -o <po outdir>\n"
+    "          [-o <po outdir>]\n"
     "    reads .po <files> and generates a \"bin\" file for fast loading\n"
-    "    Result is written to <po outdir>/<module>.dbpo\n"
+    "    Result is written to <po outdir>/<module>.dbpo if\n"
+    "    present or <po dir>/<module>.dbpo\n"
     "\n"
     "  genLang help\n"
     "    this text\n"
@@ -372,16 +421,17 @@ void handler::showManual()
 void handler::loadL10MEM()
 {
   std::string sMod  = msModuleName + ".po";
-  std::string sLoad = msPoDir + "en-US";
+  std::string sLoad = msPoDir + "en_US/";
 
 
-  // load texts from en-US po file (master)
+  // load texts from en_US po file (master)
   {
     // tell system
-    mcMemory.showDebug("gLang loading master text from file " + sLoad);
+    l10nMem::showDebug("gLang loading master text from file " + sLoad);
 
     // and load file
-    convert_gen(mcMemory, sLoad, sMod).execute(true);
+    mcMemory.setLanguage("", true, false);
+    convert_gen (mcMemory, sLoad, sMod).execute(false, true);
   }
 
   // loop through all languages and load text
@@ -390,9 +440,10 @@ void handler::loadL10MEM()
     sLoad = msPoDir + *siLang;
 
     // tell system
-    mcMemory.showDebug("gLang loading text from language file " + sLoad);
+    l10nMem::showDebug("gLang loading text from language file " + sLoad);
 
     // get converter and extract files
+    mcMemory.setLanguage(*siLang, true, false);
     convert_gen(mcMemory, sLoad, sMod).execute(false, true);
   }
 }

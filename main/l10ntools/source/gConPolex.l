@@ -27,6 +27,20 @@
  * file is converted to gConPo_yy.cxx with "flex"
  *****************************************************************************/
 
+/*
+ white-space
+     #  translator-comments
+     #. extracted-comments
+     #: reference...
+     #, fuzzy
+     #| msgid previous-untranslated-string
+     msgid untranslated-string
+     msgstr translated-string
+
+     #: lib/error.c:116
+     msgid "Unknown system error"
+     msgstr "Error desconegut del sistema"
+*/
 
  
 /***************   O V E R W R I T I N G   F U N C T I O N S   ***************/
@@ -55,21 +69,56 @@
 %e 1200
 %n 500
 
-
-
+/***********************   H E L P E R   M A C R O S   ***********************/
+SPACE [ \t]*
 /*******************   R U L E S   D E F I N I T I O N S   *******************/
 %%
 
-  
-"<value xml:lang=\""[^\"]*\"[^>]*">" {
-  LOCptr->startCollectData(yytext);
+
+"\"".* {
+  LOCptr->setValue(&yytext[1]);
 }
 
-"</value>" {
-  LOCptr->stopCollectData(yytext);
+
+"#,"{SPACE}.*[fF][uU][zZ][zZ][yY] {
+  LOCptr->setFuzzy(yytext);
 }
+
+
+"#:".* {
+  LOCptr->setKey(yytext);
+}
+
+
+{SPACE}[mM][sS][gG][iI][dD]{SPACE} {
+  LOCptr->setMsgId(yytext);
+}
+
+
+{SPACE}[mM][sS][gG][sS][tT][rR]{SPACE} {
+  LOCptr->setMsgStr(yytext);
+}
+
+
+<<EOF>> {
+  LOCptr->startLook(yytext);
+}
+
+
+\n\r*\n {
+  LOCptr->startLook(yytext);
+}
+
 
 .|\n {
-  IMPLptr->copySource(yytext);
 }
 %%
+
+
+
+void dummyJustForCompiler()
+{
+  char *txt = NULL;
+  yy_flex_strlen(txt);
+  yyunput(0, txt);
+}

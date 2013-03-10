@@ -58,8 +58,8 @@ void convert_db::execute()
     for (; (i = msFields[1].find('\\')) != std::string::npos;)
       msFields[1][i] = '/';
 
-    // handle en-US or lang
-    mcMemory.loadENUSkey(miLineNo, msFields[1], newKey, msFields[10]);
+    // handle en_US or lang
+    mcMemory.loadEntryKey(miLineNo, msFields[1], newKey, msFields[10], msFields[10], false);
   }
 }
 
@@ -88,7 +88,7 @@ bool convert_db::collectLine()
      {
        if (i >= NUMFIELD)
        {
-         mcMemory.showError((char*)"TOO many fields", miLineNo);
+         l10nMem::showError((char*)"TOO many fields", miLineNo);
        }
        msFields[i++] = msSourceBuffer.substr(iStart, miSourceReadIndex - iStart);
        iStart       = miSourceReadIndex +1;

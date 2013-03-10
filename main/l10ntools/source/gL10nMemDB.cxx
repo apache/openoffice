@@ -100,7 +100,8 @@ l10nMem_db::l10nMem_db()
                        miCurENUSinx(0),
                        miCurLastENUSinx(0),
                        mbNeedWrite(false),
-                       mbReorganizeNeeded(false)
+                       mbReorganizeNeeded(false),
+                       mbConvertMode(false)
 {
   mcFileList.push_back(l10nMem_file_entry("", 0));
   mcLangList.push_back("");
@@ -137,14 +138,21 @@ void l10nMem_db::loadENUSkey(int                iLineNo,
 
 /**********************   I M P L E M E N T A T I O N   **********************/
 void l10nMem_db::setLanguage(const std::string& sLanguage,
-                             bool               bCreate)
+                             bool               bCreate,
+                             bool               bConvert)
 {
   int iSize = mcLangList.size();
 
+  // regular load or convert of old po files
+  mbConvertMode = bConvert;
 
-  // en-US is loaded as master and cannot be loaded again
-  if (sLanguage == "en-US")
-    throw l10nMem::showError("en-US is loaded automatically");
+  // With no languages selected only en_US is generated
+  if (!sLanguage.size())
+    miCurLangInx = 0;
+
+  // en_US is loaded as master and cannot be loaded again
+  if (sLanguage == "en_US")
+    throw l10nMem::showError("en_US is loaded automatically");
 
   // check if language is already loaded
   for (miCurLangInx = 0; miCurLangInx < iSize && mcLangList[miCurLangInx] != sLanguage; ++miCurLangInx) ;
@@ -262,6 +270,7 @@ void l10nMem_db::addKey(int                  iLineNo,
                         const std::string&   sText,
                         l10nMem::ENTRY_STATE eStat)
 {
+  // JIX. addKey, handle fuzzy bit in lang (if changed).
   miCurENUSinx = mcENUSlist.size();
   mcENUSlist.push_back(l10nMem_enus_entry(sKey, sText, iLineNo, miCurFileInx, eStat));
   miCurLastENUSinx = mcFileList[miCurFileInx].miEnd = miCurENUSinx;
