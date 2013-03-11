@@ -169,9 +169,11 @@ void SwDrawShell::Execute(SfxRequest &rReq)
 			break;
 
         case FN_FLIP_HORZ_GRAFIC:
+        case SID_FLIP_HORIZONTAL:
 			bMirror = sal_False;
 			/* no break */
         case FN_FLIP_VERT_GRAFIC:
+        case SID_FLIP_VERTICAL:
 			rSh.MirrorSelection( bMirror );
 			break;
 
@@ -346,11 +348,13 @@ void SwDrawShell::GetState(SfxItemSet& rSet)
 			break;
 
 			case FN_FLIP_HORZ_GRAFIC:
+            case SID_FLIP_HORIZONTAL:
 				if ( !pSdrView->IsMirrorAllowed() || bProtected )
 					rSet.DisableItem( nWhich );
 				break;
 
 			case FN_FLIP_VERT_GRAFIC:
+            case SID_FLIP_VERTICAL:
 				if ( !pSdrView->IsMirrorAllowed() || bProtected )
 					rSet.DisableItem( nWhich );
 				break;

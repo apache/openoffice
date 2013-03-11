@@ -164,6 +164,7 @@ public:
 
 	void	        ExecCtrl(SfxRequest& rReq);
 	void	        GetCtrlState(SfxItemSet& rSet);
+	void	        GetDrawAttrState(SfxItemSet& rSet);
 	void	        GetMenuState(SfxItemSet& rSet);
 	void	        GetTableMenuState(SfxItemSet& rSet);
     /** Set the items of the given item set that are related to

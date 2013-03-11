@@ -19,43 +19,27 @@
  * 
  *************************************************************/
 
+#ifndef SVX_SIDEBAR_POSSIZE_DIAL_CONTROL_HXX
+#define SVX_SIDEBAR_POSSIZE_DIAL_CONTROL_HXX
 
-#ifndef _SWDRWBASSH_HXX
-#define _SWDRWBASSH_HXX
-#include "basesh.hxx"
+#include <svx/dialcontrol.hxx>
 
-class SwView;
-class SfxItemSet;
-class SwDrawBase;
-class AbstractSvxNameDialog;
-struct SvxSwFrameValidation;
+namespace svx { namespace sidebar {
 
-class SwDrawBaseShell: public SwBaseShell
+/** Provide some improvements over the standard DialControl.
+*/
+class SidebarDialControl : public svx::DialControl
 {
-	SwDrawBase*	pDrawActual;
-
-	sal_uInt16		eDrawMode;
-	sal_Bool 		bRotate : 1;
-	sal_Bool 		bSelMove: 1;
-
-    DECL_LINK( CheckGroupShapeNameHdl, AbstractSvxNameDialog* );
-    DECL_LINK(ValidatePosition, SvxSwFrameValidation* );
 public:
-				SwDrawBaseShell(SwView &rShell);
-	virtual     ~SwDrawBaseShell();
+    SidebarDialControl (Window* pParent, const ResId& rResId);
+    virtual ~SidebarDialControl (void);
 
-	SFX_DECL_INTERFACE(SW_DRAWBASESHELL)
-	TYPEINFO();
+    virtual void MouseButtonDown (const MouseEvent& rMEvt);
 
-	void		Execute(SfxRequest &);
-	void		GetState(SfxItemSet &);
-    void	    GetDrawAttrStateForIFBX( SfxItemSet& rSet );
-	void		DisableState(SfxItemSet &rSet)				 { Disable(rSet);}
-	sal_Bool		Disable(SfxItemSet& rSet, sal_uInt16 nWhich = 0);
-
-	void		StateStatusline(SfxItemSet &rSet);
-
+protected:
+    virtual void HandleMouseEvent (const Point& rPos, bool bInitial);
 };
 
+} } // end of namespace svx::sidebar
 
 #endif

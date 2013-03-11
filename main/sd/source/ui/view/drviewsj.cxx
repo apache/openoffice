@@ -538,6 +538,8 @@ void DrawViewShell::GetMenuStateSel( SfxItemSet &rSet )
 		rSet.DisableItem( SID_COPYOBJECTS );
 		rSet.DisableItem( SID_HORIZONTAL );
 		rSet.DisableItem( SID_VERTICAL );
+		rSet.DisableItem( SID_FLIP_HORIZONTAL );
+		rSet.DisableItem( SID_FLIP_VERTICAL );
 		rSet.DisableItem( SID_GROUP );
 		rSet.DisableItem( SID_UNGROUP );
 		rSet.DisableItem( SID_NAME_GROUP );

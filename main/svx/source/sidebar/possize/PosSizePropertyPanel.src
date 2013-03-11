@@ -19,18 +19,22 @@
  * 
  *************************************************************/
 
-#include "TransformationPropertyPanel.hrc"
+#include "PosSizePropertyPanel.hrc"
 #include <sfx2/sidebar/propertypanel.hrc>
 #include <svx/dialogs.hrc>
 #include "helpid.hrc"
 
-Control RID_SIDEBAR_TRANSFORMATION_PANEL
+#define TOOLBOX_HEIGHT		14
+
+Control RID_SIDEBAR_POSSIZE_PANEL
 {
 	OutputSize = TRUE;
 	DialogControl = TRUE;
 	Border = FALSE;
 
-	Size = MAP_APPFONT( PROPERTYPAGE_WIDTH, 200 );
+	Size = MAP_APPFONT(
+         PROPERTYPAGE_WIDTH,
+         BTN_FLIP_HORI_Y + TOOLBOX_HEIGHT + SECTIONPAGE_MARGIN_VERTICAL_BOT);
 	HelpID = HID_PROPERTYPANEL_POSIZE_SECTION ;
 	Text  = "Position and Size";
 	
@@ -164,7 +168,7 @@ Control RID_SIDEBAR_TRANSFORMATION_PANEL
 	ToolBox TBX_FLIP
 	{
         Pos = MAP_APPFONT ( BTN_FLIP_HORI_X , BTN_FLIP_HORI_Y );
-        Size = MAP_APPFONT ( TOOLBOX_ITEM_WIDTH * 2 ,ALIGNMENT_TBX_HEIGHT);
+        Size = MAP_APPFONT ( TOOLBOX_ITEM_WIDTH * 2, TOOLBOX_HEIGHT);
 		SVLook = TRUE ;
 		Border = FALSE ;
 		HelpID = HID_PROPERTY_PANEL_POSIZE_TBX_FLIP;
@@ -221,11 +225,11 @@ Control RID_SIDEBAR_TRANSFORMATION_PANEL
 
 	Image IMG_DIACONTROL_NORMAL
 	{
-		ImageBitmap = Bitmap{File = "symphony/rotation.png";};
+		ImageBitmap = Bitmap{File = "rotation.png";};
 	};
 	Image IMG_DIACONTROL_H
 	{
-		ImageBitmap = Bitmap{File = "symphony/rotation_h.png";};
+		ImageBitmap = Bitmap{File = "rotation_h.png";};
 	};
 };
 

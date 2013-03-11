@@ -138,6 +138,8 @@ void ScDrawShell::GetDrawFuncState( SfxItemSet& rSet )		// Funktionen disablen
 	{
 		rSet.DisableItem( SID_MIRROR_HORIZONTAL );
 		rSet.DisableItem( SID_MIRROR_VERTICAL );
+		rSet.DisableItem( SID_FLIP_HORIZONTAL );
+		rSet.DisableItem( SID_FLIP_VERTICAL );
 	}
 
 	const SdrMarkList& rMarkList = pView->GetMarkedObjectList();
@@ -392,4 +394,14 @@ sal_Bool ScDrawShell::AreAllObjectsOnLayer(sal_uInt16 nLayerNo,const SdrMarkList
 	return bResult;
 }
 
-
+void ScDrawShell::GetDrawAttrStateForIFBX( SfxItemSet& rSet )
+{
+  	ScDrawView* pView = pViewData->GetScDrawView();
+  	const SdrMarkList& rMarkList = pView->GetMarkedObjectList();
+  
+  	if( rMarkList.GetMark(0) != 0 )
+  	{
+  		SfxItemSet aNewAttr(pView->GetGeoAttrFromMarked());
+  		rSet.Put(aNewAttr, sal_False);
+  	}
+}

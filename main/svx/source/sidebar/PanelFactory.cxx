@@ -25,7 +25,7 @@
 #include "area/AreaPropertyPanel.hxx"
 #include "graphic/GraphicPropertyPanel.hxx"
 #include "line/LinePropertyPanel.hxx"
-#include "transform/TransformationPropertyPanel.hxx"
+#include "possize/PosSizePropertyPanel.hxx"
 #include "gallery/GalleryControl.hxx"
 #include "ColorPanel.hxx"
 #include <sfx2/sidebar/SidebarPanelBase.hxx>
@@ -169,14 +169,14 @@ Reference<ui::XUIElement> SAL_CALL PanelFactory::createUIElement (
             ::boost::bind(&LinePropertyPanel::ShowMenu, pPanel),
             ui::LayoutSize(-1,-1,-1));
     }
-    else if (DoesResourceEndWith("/TransformationPropertyPanel"))
+    else if (DoesResourceEndWith("/PosSizePropertyPanel"))
     {
-        TransformationPropertyPanel* pPanel = TransformationPropertyPanel::Create(pParentWindow, xFrame, pBindings);
+        PosSizePropertyPanel* pPanel = PosSizePropertyPanel::Create(pParentWindow, xFrame, pBindings);
         xElement = sfx2::sidebar::SidebarPanelBase::Create(
             rsResourceURL,
             xFrame,
             pPanel,
-            ::boost::bind(&TransformationPropertyPanel::ShowMenu, pPanel),
+            ::boost::bind(&PosSizePropertyPanel::ShowMenu, pPanel),
             ui::LayoutSize(-1,-1,-1));
     }
     else if (DoesResourceEndWith("/GalleryPanel"))

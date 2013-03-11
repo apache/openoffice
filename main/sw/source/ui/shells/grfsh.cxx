@@ -381,12 +381,14 @@ void SwGrfShell::ExecAttr( SfxRequest &rReq )
 		{
 			case FN_FLIP_VERT_GRAFIC:
 			case FN_FLIP_HORZ_GRAFIC:
+            case SID_FLIP_VERTICAL:
+            case SID_FLIP_HORIZONTAL:
 			{
                 GetShell().GetCurAttr( aGrfSet );
 				SwMirrorGrf aMirror( (SwMirrorGrf&)aGrfSet.Get(
 													RES_GRFATR_MIRRORGRF ) );
 				sal_uInt16 nMirror = aMirror.GetValue();
-				if( FN_FLIP_VERT_GRAFIC == nSlot )
+				if( FN_FLIP_VERT_GRAFIC == nSlot || nSlot==SID_FLIP_VERTICAL )
 					switch( nMirror )
 					{
                     case RES_MIRROR_GRAPH_DONT: nMirror = RES_MIRROR_GRAPH_VERT;

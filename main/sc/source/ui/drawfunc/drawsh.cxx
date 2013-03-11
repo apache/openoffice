@@ -58,6 +58,8 @@
 #include <svx/dialogs.hrc>
 #include <svx/drawitem.hxx>
 #include <svx/xtable.hxx>
+#include "tabvwsh.hxx"
+#include <sfx2/bindings.hxx>
 
 #define ScDrawShell
 #include "scslots.hxx"
@@ -247,6 +249,7 @@ void ScDrawShell::ExecDrawAttr( SfxRequest& rReq )
 #endif
 
 		case SID_ATTR_TRANSFORM:
+        {
 			{
 				if ( pView->AreObjectsMarked() )
 				{
@@ -314,8 +317,21 @@ void ScDrawShell::ExecDrawAttr( SfxRequest& rReq )
 						pView->SetGeoAttrToMarked( *pArgs );
 				}
 			}
-			break;
 
+            ScTabViewShell* pViewShell = pViewData->GetViewShell();
+            SfxBindings& rBindings=pViewShell->GetViewFrame()->GetBindings();
+            rBindings.Invalidate(SID_ATTR_TRANSFORM_WIDTH);
+            rBindings.Invalidate(SID_ATTR_TRANSFORM_HEIGHT);
+            rBindings.Invalidate(SID_ATTR_TRANSFORM_POS_X);
+            rBindings.Invalidate(SID_ATTR_TRANSFORM_POS_Y);
+            rBindings.Invalidate(SID_ATTR_TRANSFORM_ANGLE);
+            rBindings.Invalidate(SID_ATTR_TRANSFORM_ROT_X);
+            rBindings.Invalidate(SID_ATTR_TRANSFORM_ROT_Y);
+            rBindings.Invalidate(SID_ATTR_TRANSFORM_AUTOWIDTH);
+            rBindings.Invalidate(SID_ATTR_TRANSFORM_AUTOHEIGHT);
+            break;
+        }
+        
 		default:
 			break;
 	}

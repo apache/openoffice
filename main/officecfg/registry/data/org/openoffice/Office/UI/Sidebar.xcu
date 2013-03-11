@@ -160,7 +160,7 @@
 
       <node oor:name="TextPropertyPanel" oor:op="replace">
         <prop oor:name="Title" oor:type="xs:string">
-          <value xml:lang="en-US">Text Properties</value>
+          <value xml:lang="en-US">Text</value>
         </prop>
         <prop oor:name="Id" oor:type="xs:string">
           <value>TextPropertyPanel</value>
@@ -238,7 +238,7 @@
 
       <node oor:name="AreaPropertyPanel" oor:op="replace">
         <prop oor:name="Title" oor:type="xs:string">
-          <value xml:lang="en-US">Fill Properties</value>
+          <value xml:lang="en-US">Area</value>
         </prop>
         <prop oor:name="Id" oor:type="xs:string">
           <value>AreaPropertyPanel</value>
@@ -269,7 +269,7 @@
 
       <node oor:name="LinePropertyPanel" oor:op="replace">
         <prop oor:name="Title" oor:type="xs:string">
-          <value xml:lang="en-US">Line Properties</value>
+          <value xml:lang="en-US">Line</value>
         </prop>
         <prop oor:name="Id" oor:type="xs:string">
           <value>LinePropertyPanel</value>
@@ -330,13 +330,12 @@
         </prop>
       </node>
 -->
-<!--
-      <node oor:name="TransformationPropertyPanel" oor:op="replace">
+      <node oor:name="PosSizePropertyPanel" oor:op="replace">
         <prop oor:name="Title" oor:type="xs:string">
-          <value xml:lang="en-US">Transformation Properties</value>
+          <value xml:lang="en-US">Position and Size</value>
         </prop>
         <prop oor:name="Id" oor:type="xs:string">
-          <value>TransformationPropertyPanel</value>
+          <value>PosSizePropertyPanel</value>
         </prop>
         <prop oor:name="DeckId" oor:type="xs:string">
           <value>PropertyDeck</value>
@@ -352,7 +351,7 @@
           </node>
         </node>
         <prop oor:name="ImplementationURL" oor:type="xs:string">
-          <value>private:resource/toolpanel/SvxPanelFactory/TransformationPropertyPanel</value>
+          <value>private:resource/toolpanel/SvxPanelFactory/PosSizePropertyPanel</value>
         </prop>
         <prop oor:name="OrderIndex" oor:type="xs:int">
           <value>100</value>
@@ -361,11 +360,10 @@
           <value>true</value>
         </prop>
       </node>
--->
 
       <node oor:name="GraphicPropertyPanel" oor:op="replace">
         <prop oor:name="Title" oor:type="xs:string">
-          <value xml:lang="en-US">Graphic Properties</value>
+          <value xml:lang="en-US">Graphic</value>
         </prop>
         <prop oor:name="Id" oor:type="xs:string">
           <value>GraphicPropertyPanel</value>

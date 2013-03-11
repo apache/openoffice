@@ -185,7 +185,9 @@ $(eval $(call gb_Library_add_exception_objects,svx,\
     svx/source/sidebar/line/LineWidthControl \
     svx/source/sidebar/line/LineWidthValueSet \
     svx/source/sidebar/line/LineWidthPopup \
-    svx/source/sidebar/transform/TransformationPropertyPanel \
+    svx/source/sidebar/possize/PosSizePropertyPanel \
+    svx/source/sidebar/possize/SidebarDialControl \
+    svx/source/sidebar/possize/SidebarDialControlBmp \
     svx/source/sidebar/tools/ColorControl \
     svx/source/sidebar/tools/ColorPopup \
     svx/source/sidebar/tools/PopupControl \

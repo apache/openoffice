@@ -212,21 +212,59 @@ interface DrawView
         StateMethod = GetMenuState ;
     ]
 
-    // use same as SID_ATTR_LINEEND_STYLE
-    SID_ATTR_TRANSFORM_MIRROR_HORIZONTAL [ ExecMethod = FuTemporary; StateMethod = GetAttrState; ]
-    SID_ATTR_TRANSFORM_MIRROR_VERTICAL [ ExecMethod = FuTemporary; StateMethod = GetAttrState; ]
-    SID_ATTR_TRANSFORM_POS_X [ ExecMethod = FuTemporary; StateMethod = GetAttrState; ]
-    SID_ATTR_TRANSFORM_POS_Y [ ExecMethod = FuTemporary; StateMethod = GetAttrState; ]
-    SID_ATTR_TRANSFORM_WIDTH [ ExecMethod = FuTemporary; StateMethod = GetAttrState; ]
-    SID_ATTR_TRANSFORM_HEIGHT [ ExecMethod = FuTemporary; StateMethod = GetAttrState; ]
-    SID_ATTR_TRANSFORM_ANGLE [ ExecMethod = FuTemporary; StateMethod = GetAttrState; ]
-    SID_ATTR_TRANSFORM_ROT_X [ ExecMethod = FuTemporary; StateMethod = GetAttrState; ]
-    SID_ATTR_TRANSFORM_ROT_Y [ ExecMethod = FuTemporary; StateMethod = GetAttrState; ]
-    SID_ATTR_TRANSFORM_PROTECT_POS [ ExecMethod = FuTemporary; StateMethod = GetAttrState; ]
-    SID_ATTR_TRANSFORM_PROTECT_SIZE [ ExecMethod = FuTemporary; StateMethod = GetAttrState; ]
-    SID_ATTR_TRANSFORM_AUTOWIDTH [ ExecMethod = FuTemporary; StateMethod = GetAttrState; ]
-    SID_ATTR_TRANSFORM_AUTOHEIGHT [ ExecMethod = FuTemporary; StateMethod = GetAttrState; ]
-    SID_ATTR_TRANSFORM_MATRIX [ ExecMethod = FuTemporary; StateMethod = GetAttrState; ]
+    SID_ATTR_TRANSFORM_WIDTH // ole : no, status : ?
+    [
+        ExecMethod = FuTemporary ;
+        StateMethod = GetDrawAttrState ;
+    ]
+    SID_ATTR_TRANSFORM_HEIGHT // ole : no, status : ?
+    [
+        ExecMethod = FuTemporary ;
+        StateMethod = GetDrawAttrState ;
+    ]
+    SID_ATTR_TRANSFORM_POS_X // ole : no, status : ?
+    [
+        ExecMethod = FuTemporary ;
+        StateMethod = GetDrawAttrState ;
+    ]
+    SID_ATTR_TRANSFORM_POS_Y // ole : no, status : ?
+    [
+        ExecMethod = FuTemporary ;
+        StateMethod = GetDrawAttrState ;
+    ]
+    SID_ATTR_TRANSFORM_ANGLE
+    [
+        ExecMethod = FuTemporary ;
+        StateMethod = GetDrawAttrState ;
+    ]
+	SID_ATTR_TRANSFORM_ROT_X	
+	[
+        ExecMethod = FuTemporary ;
+        StateMethod = GetDrawAttrState ;
+    ]
+	SID_ATTR_TRANSFORM_ROT_Y	
+	[
+        ExecMethod = FuTemporary ;
+        StateMethod = GetDrawAttrState ;
+    ]
+    SID_ATTR_TRANSFORM_PROTECT_POS	
+    [
+        ExecMethod = FuTemporary ;
+        StateMethod = GetDrawAttrState ;
+    ]
+	SID_ATTR_TRANSFORM_PROTECT_SIZE	
+	[
+        ExecMethod = FuTemporary ;
+        StateMethod = GetDrawAttrState ;
+    ]
+    SID_ATTR_TRANSFORM_AUTOWIDTH
+    [
+        StateMethod = GetDrawAttrState ;
+    ]
+	SID_ATTR_TRANSFORM_AUTOHEIGHT
+	[
+        StateMethod = GetDrawAttrState ;
+    ]
 
      /// !?
     SID_CHAR_DLG // ole : no, status : ?
@@ -1697,7 +1735,17 @@ interface DrawView
         ExecMethod = FuTemporary ;
         StateMethod = GetMenuState ;
     ]
+    SID_FLIP_HORIZONTAL
+    [
+        ExecMethod = FuTemporary ;
+        StateMethod = GetMenuState ;
+    ]
     SID_VERTICAL // ole : no, status : ?
+    [
+        ExecMethod = FuTemporary ;
+        StateMethod = GetMenuState ;
+    ]
+    SID_FLIP_VERTICAL
     [
         ExecMethod = FuTemporary ;
         StateMethod = GetMenuState ;

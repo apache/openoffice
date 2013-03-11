@@ -41,13 +41,15 @@ class MetricBox;
 
 namespace svx { namespace sidebar {
 
-class TransformationPropertyPanel
+class SidebarDialControl;
+
+class PosSizePropertyPanel
 :   public Control,
     public ::sfx2::sidebar::SidebarPanelBase::ContextChangeReceiverInterface,
     public ::sfx2::sidebar::ControllerItem::ItemUpdateReceiverInterface
 {
 public:
-    static TransformationPropertyPanel* Create(
+    static PosSizePropertyPanel* Create(
         Window* pParent,
         const cssu::Reference<css::frame::XFrame>& rxFrame,
         SfxBindings* pBindings);
@@ -85,7 +87,7 @@ private:
     ::boost::scoped_ptr< MetricBox >        mpMtrAngle;
 
     //rotation control
-    ::boost::scoped_ptr< DialControl >      mpDial;
+    ::boost::scoped_ptr<SidebarDialControl> mpDial;
 
     //flip
     ::boost::scoped_ptr< FixedText >        mpFtFlip;
@@ -110,7 +112,6 @@ private:
     ::sfx2::sidebar::ControllerItem         maTransfPosYControl;
     ::sfx2::sidebar::ControllerItem         maTransfWidthControl;
     ::sfx2::sidebar::ControllerItem         maTransfHeightControl;
-    ::sfx2::sidebar::ControllerItem         maTransAffineMatrix2DControl;
 
     ::sfx2::sidebar::ControllerItem         maSvxAngleControl;
     ::sfx2::sidebar::ControllerItem         maRotXControl;
@@ -155,11 +156,11 @@ private:
     void executeSize();
 
     // constructor/destuctor
-    TransformationPropertyPanel(
+    PosSizePropertyPanel(
         Window* pParent,
         const cssu::Reference<css::frame::XFrame>& rxFrame,
         SfxBindings* pBindings);
-    virtual ~TransformationPropertyPanel();
+    virtual ~PosSizePropertyPanel();
 
     void MetricState( SfxItemState eState, const SfxPoolItem* pState );
     FieldUnit GetCurrentUnit( SfxItemState eState, const SfxPoolItem* pState );
