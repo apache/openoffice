@@ -95,10 +95,8 @@ bool l10nMem::checkKey(const std::string& sKey, const std::string& sText)
      { return l10nMem_impl::mcImpl->mcDb.locateKey(0, sKey, sText, false); }
 void l10nMem::setSourceKey(int iL, const std::string& sF, const std::string& sK, const std::string& sT)
      { l10nMem_impl::mcImpl->setSourceKey(iL, sF, sK, sT); }
-void l10nMem::reorganize()
-     { l10nMem_impl::mcImpl->mcDb.reorganize(); }
-void l10nMem::save(const std::string& sT, bool bK)
-     { l10nMem_impl::mcImpl->save(*this, sT, bK); }
+void l10nMem::save(const std::string& sT, bool bK, bool bF)
+     { l10nMem_impl::mcImpl->save(*this, sT, bK, bF); }
 void l10nMem::dumpMem(const std::string& sT)
      { l10nMem_impl::mcImpl->dumpMem(sT); }
 
@@ -205,28 +203,36 @@ void l10nMem_impl::setSourceKey(int                iLineNo,
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void l10nMem_impl::save(l10nMem& cMem, const std::string& sTargetDir, bool bKid)
+void l10nMem_impl::save(l10nMem& cMem, const std::string& sTargetDir, bool bKid, bool bForce)
 {
-  //JIX save HANDLE KID
-  if (mbInError)
-    throw l10nMem::showError("Cannot save due to previous errors");
+  int iE, iEsize  = mcDb.mcENUSlist.size();
+  int iL, iLsize  = mcDb.mcLangList.size();
+  int iCntDeleted = 0, iCntChanged = 0, iCntAdded = 0;
+  std::string sFileName = msModuleName + ".po";
 
-  int iE, iEsize = mcDb.mcENUSlist.size();
-  int iL, iLsize = mcDb.mcLangList.size();
-  std::string fileName = msModuleName + ".po";
+  // and reorganize db if needed
+  mcDb.reorganize();
+
+  // no save if there has been errors
+  if(!needWrite(sFileName, bForce))
+    return;
+
+  //JIX save HANDLE KID
 
   // Save en_US
   {
-    convert_gen savePo(cMem, sTargetDir, fileName);
+    convert_gen savePo(cMem, sTargetDir, sFileName);
 
-    savePo.startSave(sTargetDir, "en_US", fileName);
+    savePo.startSave(sTargetDir, "en_US", sFileName);
     for (iE = 1; iE < iEsize; ++iE)
     {
       l10nMem_enus_entry& cE     = mcDb.mcENUSlist[iE];
-      std::string         newKey = mcDb.mcFileList[cE.miFileInx].msFileName + ":" + cE.msKey;
 
+      // remove deleted entries
+      if (cE.meState == l10nMem::ENTRY_DELETED)
+        continue;
 
-      savePo.save(newKey, cE.msText, cE.msText, false);
+      savePo.save(mcDb.mcFileList[cE.miFileInx].msFileName, cE.msKey, cE.msText, cE.msText, false);
     }
     savePo.endSave();
   }
@@ -234,18 +240,20 @@ void l10nMem_impl::save(l10nMem& cMem, const std::string& sTargetDir, bool bKid)
   // save all languages
   for (iL = 1; iL < iLsize; ++iL)
   {
-    convert_gen savePo(cMem, sTargetDir, fileName);
+    convert_gen savePo(cMem, sTargetDir, sFileName);
 
-    savePo.startSave(sTargetDir, mcDb.mcLangList[iL], fileName);
+    savePo.startSave(sTargetDir, mcDb.mcLangList[iL], sFileName);
     for (iE = 1; iE < iEsize; ++iE)
     {
       l10nMem_enus_entry& cE     = mcDb.mcENUSlist[iE];
       l10nMem_lang_entry& cL     = cE.mcLangList[iL];
       bool                bF     = cL.mbFuzzy || (cE.meState == l10nMem::ENTRY_CHANGED);
-      std::string         newKey = mcDb.mcFileList[cE.miFileInx].msFileName + ":" + cE.msKey;
 
+      // remove deleted entries
+      if (cE.meState == l10nMem::ENTRY_DELETED)
+        continue;
 
-      savePo.save(newKey, cE.msText, cL.msText, false);
+      savePo.save(mcDb.mcFileList[cE.miFileInx].msFileName, cE.msKey, cE.msText, cL.msText, bF);
     }
     savePo.endSave();
   }
@@ -254,14 +262,15 @@ void l10nMem_impl::save(l10nMem& cMem, const std::string& sTargetDir, bool bKid)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void l10nMem_impl::dumpMem(const std::string& srTargetFile)
+void l10nMem_impl::dumpMem(const std::string& sFileName)
 {
-  std::string x;
+  // and reorganize db if needed
+  mcDb.reorganize();
 
-  if (mbInError)
-    throw l10nMem::showError("Cannot generate fast load file due to previous errors");
+  // no save if there has been errors
+  if(!needWrite(sFileName, true))
+    return;
 
-  x = srTargetFile;
   // JIX (dumpMem)
 }
 
@@ -273,11 +282,52 @@ void l10nMem_impl::formatAndShowText(const std::string& sType, int iLineNo, cons
   std::string& cFile = mcDb.mcFileList[mcDb.miCurFileInx].msFileName;
 
   std::cerr << sType;
-  if (cFile.size())
+  if (mcDb.miCurFileInx > 0)
     std::cerr << " in " << mcDb.mcFileList[mcDb.miCurFileInx].msFileName;
   if (iLineNo)
     std::cerr << "(" << iLineNo << ")";
   std::cerr << ":  " << sText << std::endl;
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+bool l10nMem_impl::needWrite(const std::string sFileName, bool bForce)
+{
+  int iE, iEsize  = mcDb.mcENUSlist.size();
+  int iCntDeleted = 0, iCntChanged = 0, iCntAdded = 0;
+
+  // no save if there has been errors
+  if (mbInError)
+    throw l10nMem::showError("Cannot save due to previous errors");
+
+  // Check number of changes
+  for (iE = 1; iE < iEsize; ++iE)
+  {
+    l10nMem_enus_entry& cur = mcDb.mcENUSlist[iE];
+    if (cur.meState == l10nMem::ENTRY_ADDED)
+      ++iCntAdded;
+    if (cur.meState == l10nMem::ENTRY_CHANGED)
+      ++iCntChanged;
+    if (cur.meState == l10nMem::ENTRY_DELETED)
+      ++iCntDeleted;
+  }
+  iCntDeleted -= iCntChanged;
+  if (!iCntAdded && !iCntChanged && !iCntDeleted)
+  {
+    std::cout << "genLang: No changes in " <<   sFileName;
+    if (bForce)
+      std::cout << ", -o switch used, so files are saved" << std::endl;
+    else
+      std::cout << " skipping \"save\"" << std::endl;
+    return bForce;
+  }
+
+  std::cout << "genLang statistics: " << iCntDeleted << " deleted, "
+                                      << iCntChanged << " changed, "
+                                      << iCntAdded   << " added entries in "
+                                      << sFileName   << std::endl;
+  return true;
 }
 
 

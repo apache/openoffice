@@ -129,14 +129,16 @@ void convert_gen_impl::startSave(const std::string& sTargetDir,
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_gen::save(const std::string& sKey,
-                      const std::string& sENUStext,
-                      const std::string& sText,
-                      bool               bFuzzy)
+void convert_gen::save(const std::string& sFileName,
+                       const std::string& sKey,
+                       const std::string& sENUStext,
+                       const std::string& sText,
+                       bool               bFuzzy)
 {
-  convert_gen_impl::mcImpl->save(sKey, sENUStext, sText, bFuzzy);
+  convert_gen_impl::mcImpl->save(sFileName, sKey, sENUStext, sText, bFuzzy);
 }
-void convert_gen_impl::save(const std::string& sKey,
+void convert_gen_impl::save(const std::string& sFileName,
+                            const std::string& sKey,
                             const std::string& sENUStext,
                             const std::string& sText,
                             bool               bFuzzy)

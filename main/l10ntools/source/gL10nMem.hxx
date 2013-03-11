@@ -54,6 +54,7 @@ class l10nMem_enus_entry
                        const std::string&   sText,
                        int                  iLineNo,
                        int                  iFileInx,
+                       int                  iLangSize,
                        l10nMem::ENTRY_STATE eState);
     ~l10nMem_enus_entry();
 
@@ -93,7 +94,6 @@ class l10nMem_db
     int                             miCurENUSinx;
     int                             miCurLastENUSinx;
     bool                            mbNeedWrite;
-    bool                            mbReorganizeNeeded;
     bool                            mbConvertMode;
     std::vector<l10nMem_enus_entry> mcENUSlist;
     std::vector<l10nMem_file_entry> mcFileList;
@@ -120,7 +120,7 @@ class l10nMem_db
                          const std::string& sKey,
                          const std::string& sText,
                          bool               bThrow = true);
-    void reorganize();
+    void reorganize     ();
     void addKey         (int                  iLineNo,
                          const std::string&   sKey,
                          const std::string&   sText,
@@ -156,7 +156,8 @@ class l10nMem_impl
 
     void save         (l10nMem& cMem,
                        const std::string& sTargetDir,
-                       bool               bKid);
+                       bool               bKid,
+                       bool               bForce);
     void dumpMem      (const std::string& sTargetDir);
 
   private:
@@ -168,6 +169,7 @@ class l10nMem_impl
     bool                                mbInError;
 
     void formatAndShowText(const std::string& sType, int iLineNo, const std::string& sText);
+    bool needWrite        (const std::string sFileName, bool bForce);
     void convEntryKey     (int                iLineNo,
                            const std::string& sSourceFile,
                            const std::string& sKey,

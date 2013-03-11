@@ -264,7 +264,7 @@ void handler::runExtractMerge(bool bMerge, bool bKid)
   }
 
   // and generate language file
-  mcMemory.save(msPoOutDir, bKid);
+  mcMemory.save(msPoOutDir, bKid, (msPoDir != msPoOutDir));
 }
 
 
@@ -293,7 +293,7 @@ void handler::runConvert()
   }
 
   // and generate language file
-  mcMemory.save(msPoOutDir, false);
+  mcMemory.save(msPoOutDir, false, (msPoDir != msPoOutDir));
 }
 
 
@@ -427,7 +427,7 @@ void handler::loadL10MEM()
   // load texts from en_US po file (master)
   {
     // tell system
-    l10nMem::showDebug("gLang loading master text from file " + sLoad);
+    l10nMem::showDebug("gLang loading master text from file " + sLoad + sMod);
 
     // and load file
     mcMemory.setLanguage("", true, false);
@@ -437,13 +437,14 @@ void handler::loadL10MEM()
   // loop through all languages and load text
   for (std::vector<std::string>::iterator siLang = mvLanguages.begin(); siLang != mvLanguages.end(); ++siLang)
   {
-    sLoad = msPoDir + *siLang;
-
-    // tell system
-    l10nMem::showDebug("gLang loading text from language file " + sLoad);
+    sLoad = msPoDir + *siLang + "/";
 
     // get converter and extract files
     mcMemory.setLanguage(*siLang, true, false);
+
+    // tell system
+    l10nMem::showDebug("gLang loading text from language file " + sLoad + sMod);
+
     convert_gen(mcMemory, sLoad, sMod).execute(false, true);
   }
 }

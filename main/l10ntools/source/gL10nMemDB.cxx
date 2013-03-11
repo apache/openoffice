@@ -55,6 +55,7 @@ l10nMem_enus_entry::l10nMem_enus_entry(const std::string&   sKey,
                                        const std::string&   sText,
                                        int                  iLineNo,
                                        int                  iFileInx,
+                                       int                  iLangSize,
                                        l10nMem::ENTRY_STATE eState)
                                       :
                                        msKey(sKey),
@@ -63,6 +64,8 @@ l10nMem_enus_entry::l10nMem_enus_entry(const std::string&   sKey,
                                        miFileInx(iFileInx),
                                        miLineNo(iLineNo)
 {
+  for (int i = 0; i < iLangSize; ++i)
+    mcLangList.push_back(l10nMem_lang_entry("", false));
 }
 
 
@@ -100,12 +103,11 @@ l10nMem_db::l10nMem_db()
                        miCurENUSinx(0),
                        miCurLastENUSinx(0),
                        mbNeedWrite(false),
-                       mbReorganizeNeeded(false),
                        mbConvertMode(false)
 {
-  mcFileList.push_back(l10nMem_file_entry("", 0));
-  mcLangList.push_back("");
-  mcENUSlist.push_back(l10nMem_enus_entry("", "", 0, 0, l10nMem::ENTRY_DELETED));
+  mcFileList.push_back(l10nMem_file_entry("-genLang-", 0));
+  mcLangList.push_back("-genLang-");
+  mcENUSlist.push_back(l10nMem_enus_entry("-genLang-", "-genLang-", 0, 0, 0, l10nMem::ENTRY_DELETED));
 }
 
 
@@ -145,10 +147,14 @@ void l10nMem_db::setLanguage(const std::string& sLanguage,
 
   // regular load or convert of old po files
   mbConvertMode = bConvert;
+  miCurFileInx  = 0;
 
   // With no languages selected only en_US is generated
   if (!sLanguage.size())
+  {
     miCurLangInx = 0;
+    return;
+  }
 
   // en_US is loaded as master and cannot be loaded again
   if (sLanguage == "en_US")
@@ -226,6 +232,39 @@ void l10nMem_db::loadLangKey(int                iLineNo,
 /**********************   I M P L E M E N T A T I O N   **********************/
 void l10nMem_db::reorganize()
 {
+  int iE, iEsize  = mcENUSlist.size();
+  int iD, iDsize;
+  std::vector<int> listDel, listAdd;
+
+
+  // Check number of changes
+  for (iE = 1; iE < iEsize; ++iE)
+  {
+    l10nMem_enus_entry& cur = mcENUSlist[iE];
+    if (cur.meState == l10nMem::ENTRY_ADDED)
+      listAdd.push_back(iE);
+    if (cur.meState == l10nMem::ENTRY_DELETED)
+      listDel.push_back(iE);
+  }
+  if (!listDel.size() || !listAdd.size())
+    return;
+
+  // loop through added text and see if key match deleted text
+  iEsize = listAdd.size();
+  iDsize = listDel.size();
+  for (iE = 0; iE < iEsize; ++iE)
+  {
+    l10nMem_enus_entry& curAdd = mcENUSlist[listAdd[iE]];
+    for (iD = 0; iD < iDsize && mcENUSlist[listDel[iD]].msKey != curAdd.msKey; ++iD) ;
+    if (iD == iDsize)
+      continue;
+
+    // Update deleted entry (original), because lang is connected here
+    l10nMem_enus_entry& curDel = mcENUSlist[listDel[iD]];
+    curDel.msText  = curAdd.msText;
+    curDel.meState = l10nMem::ENTRY_CHANGED;
+    curAdd.meState = l10nMem::ENTRY_DELETED;
+  }
   // JIX (reorganize)
 }
 
@@ -272,6 +311,7 @@ void l10nMem_db::addKey(int                  iLineNo,
 {
   // JIX. addKey, handle fuzzy bit in lang (if changed).
   miCurENUSinx = mcENUSlist.size();
-  mcENUSlist.push_back(l10nMem_enus_entry(sKey, sText, iLineNo, miCurFileInx, eStat));
+  mcENUSlist.push_back(l10nMem_enus_entry(sKey, sText, iLineNo, miCurFileInx,
+                                          mcLangList.size(), eStat));
   miCurLastENUSinx = mcFileList[miCurFileInx].miEnd = miCurENUSinx;
 }

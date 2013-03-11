@@ -100,13 +100,13 @@ SPACE [ \t]*
 }
 
 
-<<EOF>> {
+\n\r*\n {
   LOCptr->startLook(yytext);
 }
 
 
-\n\r*\n {
-  LOCptr->startLook(yytext);
+\n {
+  LOCptr->handleNL(yytext);
 }
 
 

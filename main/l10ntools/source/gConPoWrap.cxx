@@ -64,11 +64,26 @@ namespace PoWrap
 /**********************   I M P L E M E N T A T I O N   **********************/
 void convert_po::startLook(char *syyText)
 {
-  //JIX startLook
+ std::string sFileName, sNewKey;
+ int         i;
+
+
+ handleNL(syyText);
+ if (!msKey.size() || !msId.size() || !msStr.size())
+    return;
+
+  // split key into filename and real key
+  i         = msKey.find(":");
+  sFileName = msKey.substr(0, i);
+  sNewKey   = msKey.substr(i+1);
+
+  // load in db
+  mcMemory.loadEntryKey(miLineNo, sFileName, sNewKey, msId, msStr, mbFuzzy);
+
+  // and prepare for new entry
   msKey.clear();
-  msValue.clear();
-  mbExpectId  =
-  mbExpectStr = false;
+  msId.clear();
+  msStr.clear();
 }
 
 
@@ -77,12 +92,18 @@ void convert_po::startLook(char *syyText)
 void convert_po::setValue(char *syyText)
 {
   int inx;
-
+  std::string sText(syyText);
 
   // find terminating "
-  msValue = syyText;
-  for (inx =  msValue.size(); msValue[--inx] != '\"';)
-  msValue.erase(inx);
+  for (inx =  sText.size(); sText[--inx] != '\"';) ;
+  sText.erase(inx);
+
+  if (mbExpectId)
+    msId = sText;
+  if (mbExpectStr)
+    msStr = sText;
+  mbExpectId  =
+  mbExpectStr = false;
 }
 
 
@@ -104,11 +125,11 @@ void convert_po::setKey(char *syyText)
 
 
   // skip "#:" and any blanks
-  for (syyText += 2; *syyText == ' ' || *syyText == '\t';) ;
+  for (syyText += 2; *syyText == ' ' || *syyText == '\t'; ++syyText) ;
   msKey = syyText;
 
   // remove trailing blanks
-  for (i = msKey.size() -1; msKey[i] == ' ' || msKey[i] == '\t'; --i) ;
+  for (i = msKey.size() -1; msKey[i] == '\r' || msKey[i] == ' ' || msKey[i] == '\t'; --i) ;
   msKey.erase(i+1);
 }
 
@@ -135,9 +156,19 @@ void convert_po::setMsgStr(char *syyText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
+void convert_po::handleNL(char *syyText)
+{
+  mbExpectId  =
+  mbExpectStr = false;
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
 void convert_po::execute()
 {
   PoWrap::yylex();
+  startLook("");
 }
 
  
@@ -178,20 +209,32 @@ void convert_po::startSave(const std::string& sTargetDir,
           << "#* under the License."                                           << std::endl
           << "#*"                                                              << std::endl
           << "#************************************************************"   << std::endl
+          << "msgid \"\""                                                      << std::endl
+          << "msgstr \"\""                                                     << std::endl
+          << "\"Project-Id-Version: AOO-4-xx\\n\""                             << std::endl
+          << "\"POT-Creation-Date: \\n\""                                      << std::endl
+          << "\"PO-Revision-Date: \\n\""                                       << std::endl
+          << "\"Last-Translator: genLang (build process)\\n\""                 << std::endl
+          << "\"Language-Team: \\n\""                                          << std::endl
+          << "\"MIME-Version: 1.0\\n\""                                        << std::endl
+          << "\"Content-Type: text/plain; charset=iso-8859-1\\n\""             << std::endl
+          << "\"Content-Transfer-Encoding: 8bit\\n\""                          << std::endl
+          << "\"X-Generator: genLang\\n\""                                     << std::endl
           << std::endl;
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_po::save(const std::string& sKey,
+void convert_po::save(const std::string& sFileName,
+                      const std::string& sKey,
                       const std::string& sENUStext,
                       const std::string& sText,
                       bool               bFuzzy)
 {
   std::ostream outFile(&outBuffer);
 
-  outFile << std::endl << "#: " + sKey << std::endl;
+  outFile << std::endl << "#: " << sFileName << ":" << sKey << std::endl;
   if (bFuzzy)
     outFile << "#, fuzzy" << std::endl;
   outFile << "msgid  \"" << sENUStext << "\"" << std::endl

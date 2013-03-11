@@ -54,7 +54,8 @@ class convert_gen_impl
     virtual void startSave(const std::string& sTargetDir,
                            const std::string& sLanguage,
                            const std::string& sFile);
-    virtual void save(const std::string& sKey,
+    virtual void save(const std::string& sFileName,
+                      const std::string& sKey,
                       const std::string& sENUStext,
                       const std::string& sText,
                       bool               bFuzzy);

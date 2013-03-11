@@ -51,9 +51,11 @@ class convert_po : public convert_gen_impl
     void setKey    (char *syyText);
     void setMsgId  (char *syyText);
     void setMsgStr (char *syyText);
+    void handleNL  (char *syyText);
 
   private:
-    std::string  msValue;
+    std::string  msId;
+    std::string  msStr;
     std::string  msKey;
     bool         mbFuzzy;
     std::filebuf outBuffer;
@@ -63,7 +65,8 @@ class convert_po : public convert_gen_impl
     void startSave(const std::string& sTargetDir,
                    const std::string& sLanguage,
                    const std::string& sFile);
-    void save(const std::string& sKey,
+    void save(const std::string& sFileName,
+              const std::string& sKey,
               const std::string& sENUStext,
               const std::string& sText,
               bool               bFuzzy);

@@ -83,10 +83,10 @@ class l10nMem
                        const std::string& sFilename,
                        const std::string& sKey,
                        const std::string& sText);
-    void reorganize    ();
 
     void save         (const std::string& sTargetDir,
-                       bool               bKid);
+                       bool               bKid,
+                       bool               bForce);
     void dumpMem      (const std::string& sTargetDir);
 
 };
@@ -107,7 +107,8 @@ class convert_gen
     void startSave(const std::string& sTargetDir,
                    const std::string& sLanguage,
                    const std::string& sFile);
-    void save(const std::string& sKey,
+    void save(const std::string& sFileName,
+              const std::string& sKey,
               const std::string& sENUStext,
               const std::string& sText,
               bool               bFuzzy);
