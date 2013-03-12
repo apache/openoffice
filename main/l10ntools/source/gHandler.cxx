@@ -21,6 +21,8 @@
 #include <iostream>
 #include "gLang.hxx"
 #include <cstdlib>
+#include <iostream>
+#include <fstream>
 
 
 
@@ -36,6 +38,8 @@
 
 /**********************   I M P L E M E N T A T I O N   **********************/
 handler::handler()
+                :
+                 mbForceSave(false)
 {
 }
 
@@ -100,13 +104,13 @@ void handler::checkCommandLine(int argc, char *argv[])
           throw std::string("missing argument to ") + argv[argNow-1];
 
         // is it a known parameter
-        if      (sArg == "-d") l10nMem::setShowDebug();  
-        else if (sArg == "-f") eGotArg   = ARG_F;      
-        else if (sArg == "-k") bKid      = true;      
-        else if (sArg == "-o") eGotArg   = ARG_O;      
-        else if (sArg == "-s") eGotArg   = ARG_S;      
-        else if (sArg == "-t") eGotArg   = ARG_T;      
-        else if (sArg == "-v") l10nMem::setShowVerbose();  
+        if      (sArg == "-d") {l10nMem::setShowDebug();               }
+        else if (sArg == "-f") {eGotArg   = ARG_F;                     }
+        else if (sArg == "-k") {bKid      = true;                      }
+        else if (sArg == "-o") {eGotArg   = ARG_O; mbForceSave = true; }      
+        else if (sArg == "-s") {eGotArg   = ARG_S;                     }
+        else if (sArg == "-t") {eGotArg   = ARG_T;                     }
+        else if (sArg == "-v") {l10nMem::setShowVerbose();             }
         else throw std::string("unknown parameter: ") + sArg;
       }
       else
@@ -133,12 +137,12 @@ void handler::checkCommandLine(int argc, char *argv[])
     // check parameters according to function
     if (mvSourceFiles.size())
     {
-      if (meWorkMode == DO_CONVERT || meWorkMode == DO_GENERATE)
-        throw "-f <files> is only valid using \"extract\" and \"merge\"";
+      if (meWorkMode == DO_GENERATE)
+        throw "-f <files> is not valid with \"generate\"";
     }
     else
     {
-      if (meWorkMode == DO_EXTRACT || meWorkMode == DO_MERGE)
+      if (meWorkMode == DO_CONVERT || meWorkMode == DO_EXTRACT || meWorkMode == DO_MERGE)
         throw "-f <files> is mandatory";
     }
     if (msTargetDir.size())
@@ -187,6 +191,12 @@ void handler::checkCommandLine(int argc, char *argv[])
   }
 
   // update directories to include final /
+  nLen = msSourceDir.find("/help_");
+  if (nLen != (int)std::string::npos)
+  {
+    msSourceDir.erase(nLen+1);
+    msSourceDir.append("helpcontent2");
+  }
   nLen = msSourceDir.size();
   if (nLen && msSourceDir.at(nLen-1) != '/')
     msSourceDir.append("/");
@@ -210,6 +220,10 @@ void handler::checkCommandLine(int argc, char *argv[])
     mvLanguages.push_back(sLangText.substr(current,next-current));
   }
   while (next != (int)std::string::npos);
+
+  // check if source files list needs to be coverted
+  if (mvSourceFiles[0] == "USEFILE:")
+    readFileWithSources();
 
   // tell system
   l10nMem::showVerbose("gLang starting to " + sWorkText + " from module " + msModuleName);
@@ -264,7 +278,7 @@ void handler::runExtractMerge(bool bMerge, bool bKid)
   }
 
   // and generate language file
-  mcMemory.save(msPoOutDir, bKid, (msPoDir != msPoOutDir));
+  mcMemory.save(msPoOutDir, bKid, mbForceSave);
 }
 
 
@@ -293,7 +307,7 @@ void handler::runConvert()
   }
 
   // and generate language file
-  mcMemory.save(msPoOutDir, false, (msPoDir != msPoOutDir));
+  mcMemory.save(msPoOutDir, false, mbForceSave);
 }
 
 
@@ -363,7 +377,7 @@ void handler::showManual()
     "    The result is stored in <target dir>/<files>\n"
     "\n"
     "  genLang convert <module> <po dir> <languages> [-v] [-d]\\\n"
-    "          [-o <po outdir>] -s <source dir>\n"
+    "          [-o <po outdir>] -s <source dir> -f <files>\n"
     "    reads sdf generated .po <files> from\n"
     "    <source dir>/*lang/<module>.po\n"
     "    and merges with\n"
@@ -400,6 +414,9 @@ void handler::showManual()
     "  -f <files>\n"
     "     list of files containing messages to be extracted\n"
     "     \"convert\" expect sdf generated po files, to be converted\n"
+    "     instead of passing a list of files, it is possible to pass\n"
+    "     a file contains the list, by using:\n"
+    "     -f USEFILE: <filename>\n"
     "  -k\n"
     "     generate kid id (hex) for all messages in the source code,\n"
     "     solely for QA\n"
@@ -447,4 +464,33 @@ void handler::loadL10MEM()
 
     convert_gen(mcMemory, sLoad, sMod).execute(false, true);
   }
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
+void handler::readFileWithSources()
+{
+  std::ifstream fInput;
+  char          buf[256];
+
+
+  if (mvSourceFiles.size() < 2)
+    throw l10nMem::showError("missing file with sources (-f USEFILE: <filename>)");
+
+  fInput.open (mvSourceFiles[1].c_str(), std::ifstream::in);
+  if (!fInput.is_open())
+    throw l10nMem::showError("Cannot open file with sources (-f), trying to open" + mvSourceFiles[1]);
+
+  mvSourceFiles.clear();
+
+  while (fInput.good())
+  {
+    fInput.getline(buf, sizeof(buf));
+    if (!buf[0])
+      continue;
+    mvSourceFiles.push_back(buf);
+  }
+
+  fInput.close();
 }

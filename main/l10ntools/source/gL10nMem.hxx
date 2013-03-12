@@ -75,7 +75,8 @@ class l10nMem_file_entry
     l10nMem_file_entry(const std::string& sFileName, int iStart);
     ~l10nMem_file_entry();
 
-    std::string msFileName;  // file Name
+    std::string msFileName;  // file Name with relative path
+    std::string msPureName;  // just filename
     int         miStart;     // start index of entries in mcMasterEntries (l10Mem_db::mcENUS)
     int         miEnd;       // last index of entries in mcMasterEntries (l10Mem_db::mcENUS)
 };
@@ -92,7 +93,6 @@ class l10nMem_db
     int                             miCurFileInx;
     int                             miCurLangInx;
     int                             miCurENUSinx;
-    int                             miCurLastENUSinx;
     bool                            mbNeedWrite;
     bool                            mbConvertMode;
     std::vector<l10nMem_enus_entry> mcENUSlist;
@@ -107,7 +107,7 @@ class l10nMem_db
     void setLanguage    (const std::string& sLanguage,
                          bool               bCreate,
                         bool                bConvert);
-    bool findFileName   (const std::string& sSourceFile, int iStart, bool bCreate);                         
+    bool findFileName   (const std::string& sSourceFile);                         
     void loadLangKey    (int                iLineNo,
                          const std::string& sSourceFile,
                          const std::string& sKey,
@@ -117,11 +117,13 @@ class l10nMem_db
 
 
     bool locateKey      (int                iLineNo,
+                         const std::string& sSourceFile,
                          const std::string& sKey,
                          const std::string& sText,
-                         bool               bThrow = true);
+                         bool               bThrow);
     void reorganize     ();
     void addKey         (int                  iLineNo,
+                         const std::string&   sSourceFile,
                          const std::string&   sKey,
                          const std::string&   sText,
                          l10nMem::ENTRY_STATE eStat);

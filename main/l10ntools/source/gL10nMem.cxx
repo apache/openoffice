@@ -19,7 +19,7 @@
  * 
  *************************************************************/
 #include "gL10nMem.hxx"
-#include <algorithm>
+//#include <algorithm>
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -91,8 +91,6 @@ void l10nMem::setLanguage(const std::string& sL, bool bC, bool bK)
      { l10nMem_impl::mcImpl->mcDb.setLanguage(sL, bC, bK); }
 void l10nMem::loadEntryKey(int iL, const std::string& sS, const std::string& sK, const std::string& sO, const std::string& sT, bool               bI)
      { l10nMem_impl::mcImpl->loadEntryKey(iL, sS, sK, sO, sT, bI); }
-bool l10nMem::checkKey(const std::string& sKey, const std::string& sText)
-     { return l10nMem_impl::mcImpl->mcDb.locateKey(0, sKey, sText, false); }
 void l10nMem::setSourceKey(int iL, const std::string& sF, const std::string& sK, const std::string& sT)
      { l10nMem_impl::mcImpl->setSourceKey(iL, sF, sK, sT); }
 void l10nMem::save(const std::string& sT, bool bK, bool bF)
@@ -188,15 +186,14 @@ void l10nMem_impl::setSourceKey(int                iLineNo,
                                 const std::string& sText)
 {
   // if key exist update state
-  if (mcDb.findFileName(sSourceFile, mcDb.miCurENUSinx+1, true) &&
-      mcDb.locateKey(iLineNo, sKey, sText, false))
+  if (mcDb.locateKey(iLineNo, sSourceFile, sKey, sText, false))
   {
     mcDb.mcENUSlist[mcDb.miCurENUSinx].meState = l10nMem::ENTRY_NORMAL;
   }
   else
   {
     // add key, if changed text this is wrong but handled in reorganize
-    mcDb.addKey(iLineNo, sKey, sText, l10nMem::ENTRY_ADDED);
+    mcDb.addKey(iLineNo, sSourceFile, sKey, sText, l10nMem::ENTRY_ADDED);
   }
 }
 
@@ -308,11 +305,16 @@ bool l10nMem_impl::needWrite(const std::string sFileName, bool bForce)
     if (cur.meState == l10nMem::ENTRY_ADDED)
       ++iCntAdded;
     if (cur.meState == l10nMem::ENTRY_CHANGED)
+    {
       ++iCntChanged;
+      if (mcDb.mbConvertMode)
+        cur.meState = l10nMem::ENTRY_NORMAL;
+    }
     if (cur.meState == l10nMem::ENTRY_DELETED)
       ++iCntDeleted;
   }
-  iCntDeleted -= iCntChanged;
+  if (!mcDb.mbConvertMode)
+    iCntDeleted -= iCntChanged;
   if (!iCntAdded && !iCntChanged && !iCntDeleted)
   {
     std::cout << "genLang: No changes in " <<   sFileName;
@@ -340,12 +342,55 @@ void l10nMem_impl::convEntryKey(int                iLineNo,
                                const std::string& sText,
                                bool               bIsFuzzy)
 {
-  std::string x;
-  iLineNo     = iLineNo;
-  x           = sSourceFile;
-  x           = sKey;
-  x           = sOrgText;
-  x           = sText;
-  bIsFuzzy    = bIsFuzzy;
-  //JIX (convLangKey)
+  int         i, iSize;
+  std::string sNewKey = sKey;
+
+
+  // adjust miCurFileInx as needed
+  // same filename as last ?
+  if (sSourceFile != mcDb.mcFileList[mcDb.miCurFileInx].msPureName)
+  {
+    iSize = mcDb.mcFileList.size();
+
+    // match filename
+    for (i = 1; i < iSize && sSourceFile != mcDb.mcFileList[i].msPureName; ++i) ;
+    if (i == iSize)
+    {
+      showError("filename(" + sSourceFile + ") not found!", iLineNo);
+      return;
+    }
+    mcDb.miCurFileInx = i;
+  }
+
+  // Calculate possible entries
+  l10nMem_file_entry& curF = mcDb.mcFileList[mcDb.miCurFileInx];
+  i     = curF.miStart;
+  iSize = curF.miEnd;
+
+  // Loop through possible en_US entries
+  for (; i <= iSize; ++i)
+  {
+    l10nMem_enus_entry& curE = mcDb.mcENUSlist[i];
+
+    // The entry cannot be converted twice
+    if (curE.meState != l10nMem::ENTRY_NORMAL)
+      continue;
+
+    // The text must match
+    if (sOrgText != curE.msText)
+      continue;
+
+    // The keys must match
+    if (sNewKey != curE.msKey)
+      continue;
+
+    // update language text
+    l10nMem_lang_entry& curL = curE.mcLangList[mcDb.miCurLangInx];
+    curL.msText  = sText;
+    curL.mbFuzzy = bIsFuzzy;
+    curE.meState = l10nMem::ENTRY_CHANGED;
+    return;
+  }
+
+  showError("key(" + sKey + ") with msgId(" + sOrgText + ") cannot be matched", iLineNo);
 }

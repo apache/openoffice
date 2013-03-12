@@ -19,6 +19,10 @@
  * 
  *************************************************************/
 #include "gL10nMem.hxx"
+#include <iostream>
+#include <fstream>
+#include <sstream>
+
 
 /*****************************************************************************
  **********************   G L 1 0 N M E M D B . C X X   **********************
@@ -64,7 +68,9 @@ l10nMem_enus_entry::l10nMem_enus_entry(const std::string&   sKey,
                                        miFileInx(iFileInx),
                                        miLineNo(iLineNo)
 {
-  for (int i = 0; i < iLangSize; ++i)
+  int i;
+
+  for (i = 0; i < iLangSize; ++i)
     mcLangList.push_back(l10nMem_lang_entry("", false));
 }
 
@@ -84,6 +90,12 @@ l10nMem_file_entry::l10nMem_file_entry(const std::string& sFileName, int iStart)
                                        miStart(iStart),
                                        miEnd(iStart)
 {
+  // Store fileName without relative path
+  int i = msFileName.rfind("/");
+  if (i == (int)std::string::npos)
+    msPureName = msFileName;
+  else
+    msPureName = msFileName.substr(i+1);
 }
 
 
@@ -101,7 +113,6 @@ l10nMem_db::l10nMem_db()
                        miCurFileInx(0),
                        miCurLangInx(0),
                        miCurENUSinx(0),
-                       miCurLastENUSinx(0),
                        mbNeedWrite(false),
                        mbConvertMode(false)
 {
@@ -125,15 +136,8 @@ void l10nMem_db::loadENUSkey(int                iLineNo,
                              const std::string& sKey,
                              const std::string& sText)
 {
-  // create file name if needed
-  if (mcFileList[miCurFileInx].msFileName != sSourceFile)
-  {
-    miCurFileInx = mcFileList.size();
-    mcFileList.push_back(l10nMem_file_entry(sSourceFile, miCurENUSinx+1));
-  }
-
   // add it to vector and update file pointer
-  addKey(iLineNo, sKey, sText, l10nMem::ENTRY_DELETED);
+  addKey(iLineNo, sSourceFile, sKey, sText, l10nMem::ENTRY_DELETED);
 }
 
 
@@ -143,9 +147,15 @@ void l10nMem_db::setLanguage(const std::string& sLanguage,
                              bool               bCreate,
                              bool               bConvert)
 {
-  int iSize = mcLangList.size();
+  int i, iSize;
 
   // regular load or convert of old po files
+  if (bConvert)
+  {
+    iSize = mcENUSlist.size();
+    for (i = 0; i < iSize; ++i)
+      mcENUSlist[i].meState = l10nMem::ENTRY_NORMAL;
+  }
   mbConvertMode = bConvert;
   miCurFileInx  = 0;
 
@@ -161,6 +171,7 @@ void l10nMem_db::setLanguage(const std::string& sLanguage,
     throw l10nMem::showError("en_US is loaded automatically");
 
   // check if language is already loaded
+  iSize = mcLangList.size();
   for (miCurLangInx = 0; miCurLangInx < iSize && mcLangList[miCurLangInx] != sLanguage; ++miCurLangInx) ;
   if (miCurLangInx < iSize)
   {    
@@ -178,14 +189,14 @@ void l10nMem_db::setLanguage(const std::string& sLanguage,
 
   // add language to all ENUS entries
   iSize = mcENUSlist.size();
-  for (int i = 0; i < iSize; ++i)
+  for (i = 0; i < iSize; ++i)
     mcENUSlist[i].mcLangList.push_back(l10nMem_lang_entry("", false));
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-bool l10nMem_db::findFileName(const std::string& sSourceFile, int iStart, bool bCreate)
+bool l10nMem_db::findFileName(const std::string& sSourceFile)
 {
   int iSize = mcFileList.size();
 
@@ -195,16 +206,16 @@ bool l10nMem_db::findFileName(const std::string& sSourceFile, int iStart, bool b
   if (++miCurFileInx < iSize && mcFileList[miCurFileInx].msFileName == sSourceFile)
     return true;
 
-  for (miCurFileInx = 0;
-       miCurFileInx < iSize && mcFileList[miCurFileInx].msFileName == sSourceFile;
+  for (miCurFileInx = 1;
+       miCurFileInx < iSize && mcFileList[miCurFileInx].msFileName != sSourceFile;
        ++miCurFileInx) ;
-
-  if (bCreate && miCurFileInx < iSize)
+  if (miCurFileInx == iSize)
   {
-    mcFileList.push_back(l10nMem_file_entry(sSourceFile, iStart));
-    miCurFileInx = iSize;
+    miCurFileInx = 0;
+    return false;
   }
-  return (miCurFileInx < iSize);
+  else
+    return true;
 }
 
 
@@ -217,10 +228,8 @@ void l10nMem_db::loadLangKey(int                iLineNo,
                              const std::string& sText,
                              bool               bFuzzy)
 {
-  if (!findFileName(sSourceFile, false, 0))
-    throw l10nMem::showError(".po file contains unknown filename: " + sSourceFile);
-
-  locateKey(iLineNo, sKey, sOrgText);
+  if (!locateKey(iLineNo, sSourceFile, sKey, sOrgText, true))
+    throw l10nMem::showError(".po file contains unknown filename: " + sSourceFile + " or key: " + sKey);
 
   l10nMem_lang_entry& xCur = mcENUSlist[miCurENUSinx].mcLangList[miCurLangInx];
   xCur.msText  = sText;
@@ -246,6 +255,7 @@ void l10nMem_db::reorganize()
     if (cur.meState == l10nMem::ENTRY_DELETED)
       listDel.push_back(iE);
   }
+
   if (!listDel.size() || !listAdd.size())
     return;
 
@@ -255,43 +265,57 @@ void l10nMem_db::reorganize()
   for (iE = 0; iE < iEsize; ++iE)
   {
     l10nMem_enus_entry& curAdd = mcENUSlist[listAdd[iE]];
-    for (iD = 0; iD < iDsize && mcENUSlist[listDel[iD]].msKey != curAdd.msKey; ++iD) ;
+    for (iD = 0; iD < iDsize; ++iD)
+    {
+      l10nMem_enus_entry& curE = mcENUSlist[listDel[iD]];
+
+      if (curE.miFileInx != curAdd.miFileInx)
+        continue;
+      if (curE.msKey == curAdd.msKey)
+        break;
+      if (curE.msText == curAdd.msText)
+        break;
+    }
     if (iD == iDsize)
       continue;
 
     // Update deleted entry (original), because lang is connected here
     l10nMem_enus_entry& curDel = mcENUSlist[listDel[iD]];
-    curDel.msText  = curAdd.msText;
-    curDel.meState = l10nMem::ENTRY_CHANGED;
-    curAdd.meState = l10nMem::ENTRY_DELETED;
+    curDel.msText    = curAdd.msText;
+    curDel.msKey     = curAdd.msKey;
+    curDel.meState   = l10nMem::ENTRY_CHANGED;
+    curAdd.meState   = l10nMem::ENTRY_DELETED;
   }
-  // JIX (reorganize)
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
 bool l10nMem_db::locateKey(int                iLineNo,
+                           const std::string& sSourceFile,
                            const std::string& sKey,
                            const std::string& sText,
                            bool               bThrow)
 {
-  // Start from beginning of file and to end
-  l10nMem_file_entry& cCur  = mcFileList[miCurFileInx];
+  // Position file pointer
+  if (!findFileName(sSourceFile))
+    return false;
 
-  // Fast check first
-  if (miCurENUSinx < (int)mcENUSlist.size() -1)
+  // Fast check, to see if next key is the one (normal with load and source without change)
+  if (++miCurENUSinx < (int)mcENUSlist.size())
   {
-    l10nMem_enus_entry& nowEntry = mcENUSlist[++miCurENUSinx];
+    l10nMem_enus_entry& nowEntry = mcENUSlist[miCurENUSinx];
     if (nowEntry.msText == sText && nowEntry.msKey == sKey)
       return true;
   }
+
+  // Start from beginning of file and to end
+  l10nMem_file_entry& cCur  = mcFileList[miCurFileInx];
 
   // Find match with key and text
   for (miCurENUSinx = cCur.miStart; miCurENUSinx <= cCur.miEnd; ++miCurENUSinx)
   {
     l10nMem_enus_entry& cEntry = mcENUSlist[miCurENUSinx];
-
     if (cEntry.msText == sText && cEntry.msKey == sKey)
       return true;
   }
@@ -305,13 +329,44 @@ bool l10nMem_db::locateKey(int                iLineNo,
 
 /**********************   I M P L E M E N T A T I O N   **********************/
 void l10nMem_db::addKey(int                  iLineNo,
+                        const std::string&   sSourceFile,
                         const std::string&   sKey,
                         const std::string&   sText,
                         l10nMem::ENTRY_STATE eStat)
 {
-  // JIX. addKey, handle fuzzy bit in lang (if changed).
-  miCurENUSinx = mcENUSlist.size();
-  mcENUSlist.push_back(l10nMem_enus_entry(sKey, sText, iLineNo, miCurFileInx,
-                                          mcLangList.size(), eStat));
-  miCurLastENUSinx = mcFileList[miCurFileInx].miEnd = miCurENUSinx;
+  // check file
+  if (!findFileName(sSourceFile))
+  {
+    // prepare for new entry
+    miCurENUSinx = mcENUSlist.size();
+    miCurFileInx = mcFileList.size();
+
+    // Create file
+    mcFileList.push_back(l10nMem_file_entry(sSourceFile, miCurENUSinx));
+   
+    // and add entry at the back (no problem since it is a new file)
+    mcENUSlist.push_back(l10nMem_enus_entry(sKey, sText, iLineNo, miCurFileInx,
+                                            mcLangList.size(), eStat));
+    mcFileList[miCurFileInx].miEnd = miCurENUSinx;
+  }
+  else
+  {
+    int iFsize                                   = mcFileList.size();
+    l10nMem_file_entry& curF                     = mcFileList[miCurFileInx];
+    std::vector<l10nMem_enus_entry>::iterator it = mcENUSlist.begin();
+
+    // file is registred, so we need to add the entry at the end of the file range
+    curF.miEnd++;
+    mcENUSlist.insert(it + curF.miEnd,
+                      l10nMem_enus_entry(sKey, sText, iLineNo, miCurFileInx,
+                                         mcLangList.size(), eStat));
+    for (int i = miCurFileInx+1; i < iFsize; ++i)
+    {
+      l10nMem_file_entry& curF2 = mcFileList[i];
+      if (curF2.miStart >= curF.miEnd)
+        curF2.miStart++;
+      if (curF2.miEnd >= curF.miEnd)
+        curF2.miEnd++;
+    }
+  }
 }

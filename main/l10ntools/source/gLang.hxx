@@ -77,8 +77,6 @@ class l10nMem
                         const std::string& sText,
                         bool               bIsFuzzy);
 
-    bool checkKey     (const std::string& sKey,
-                       const std::string& sText);
     void setSourceKey (int                iLineNo,
                        const std::string& sFilename,
                        const std::string& sKey,
@@ -135,6 +133,7 @@ class handler
     std::string              msPoDir;
     std::string              msSourceDir;
     std::string              msTargetDir;
+    bool                     mbForceSave;
     std::vector<std::string> mvSourceFiles;
     std::vector<std::string> mvLanguages;
 
@@ -145,5 +144,6 @@ class handler
     void showUsage(std::string& sErr);
     void showManual();
     void loadL10MEM();
+    void readFileWithSources();
 };
 #endif

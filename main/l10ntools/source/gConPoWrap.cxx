@@ -73,7 +73,7 @@ void convert_po::startLook(char *syyText)
     return;
 
   // split key into filename and real key
-  i         = msKey.find(":");
+  i = msKey.find("#");
   sFileName = msKey.substr(0, i);
   sNewKey   = msKey.substr(i+1);
 
@@ -160,6 +160,7 @@ void convert_po::handleNL(char *syyText)
 {
   mbExpectId  =
   mbExpectStr = false;
+  ++miLineNo;
 }
 
 
@@ -234,7 +235,7 @@ void convert_po::save(const std::string& sFileName,
 {
   std::ostream outFile(&outBuffer);
 
-  outFile << std::endl << "#: " << sFileName << ":" << sKey << std::endl;
+  outFile << std::endl << "#: " << sFileName << "#" << sKey << std::endl;
   if (bFuzzy)
     outFile << "#, fuzzy" << std::endl;
   outFile << "msgid  \"" << sENUStext << "\"" << std::endl
