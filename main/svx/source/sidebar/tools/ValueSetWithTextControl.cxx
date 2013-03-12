@@ -38,9 +38,11 @@ ValueSetWithTextControl::ValueSetWithTextControl(
     SetColCount( 1 );
 }
 
+
 ValueSetWithTextControl::~ValueSetWithTextControl(void)
 {
 }
+
 
 void ValueSetWithTextControl::AddItem(
     const Image& rItemImage,
@@ -67,6 +69,7 @@ void ValueSetWithTextControl::AddItem(
                     (pItemHelpText != 0) ? *pItemHelpText : rItemText );
 }
 
+
 void ValueSetWithTextControl::AddItem(
     const XubString& rItemText,
     const XubString& rItemText2,
@@ -88,6 +91,30 @@ void ValueSetWithTextControl::AddItem(
                     (pItemHelpText != 0) ? *pItemHelpText : rItemText );
 }
 
+
+void ValueSetWithTextControl::ReplaceItemImages(
+    const sal_uInt16 nItemId,
+    const Image& rItemImage,
+    const Image* pSelectedItemImage )
+{
+    if ( meControlType != IMAGE_TEXT )
+    {
+        return;
+    }
+
+    if ( nItemId == 0 ||
+         nItemId > maItems.size() )
+    {
+        return;
+    }
+
+    maItems[nItemId-1].maItemImage = rItemImage;
+    maItems[nItemId-1].maSelectedItemImage = (pSelectedItemImage != 0)
+                                             ? *pSelectedItemImage
+                                             : rItemImage;
+}
+
+    
 void ValueSetWithTextControl::UserDraw( const UserDrawEvent& rUDEvt )
 {
     const Rectangle aRect = rUDEvt.GetRect();

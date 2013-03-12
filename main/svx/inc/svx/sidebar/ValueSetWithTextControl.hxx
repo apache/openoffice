@@ -69,6 +69,12 @@ public:
         const XubString& rItemText,
         const XubString* pItemHelpText );
 
+    // replace item images for control type IMAGE_TEXT
+    void ReplaceItemImages(
+        const sal_uInt16 nItemId,
+        const Image& rItemImage,
+        const Image* pSelectedItemImage );
+
     // add item for control type TEXT_TEXT
     // if control type does not match TEXT_TEXT no item is added.
     // @param pItemHelpText
