@@ -172,6 +172,9 @@ class l10nMem_impl
 
     void formatAndShowText(const std::string& sType, int iLineNo, const std::string& sText);
     bool needWrite        (const std::string sFileName, bool bForce);
+    bool convFilterWarning(const std::string& sSourceFile,
+                           const std::string& sKey,
+                           const std::string& sOrgText);
     void convEntryKey     (int                iLineNo,
                            const std::string& sSourceFile,
                            const std::string& sKey,

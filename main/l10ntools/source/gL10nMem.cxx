@@ -335,6 +335,24 @@ bool l10nMem_impl::needWrite(const std::string sFileName, bool bForce)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
+bool l10nMem_impl::convFilterWarning(const std::string& sSourceFile,
+                                     const std::string& sKey,
+                                     const std::string& sOrgText)
+{
+  if (sOrgText == "-"               ||
+      sSourceFile == "basic.src"    ||
+      sSourceFile == "basmsg.src"   ||
+      sSourceFile == "svtmsg.src"   ||
+      sSourceFile == "testtool.src" ||
+      sSourceFile == "ttmsg.src"    )
+    return true;
+
+  return false;
+}
+
+
+
+/**********************   I M P L E M E N T A T I O N   **********************/
 void l10nMem_impl::convEntryKey(int                iLineNo,
                                const std::string& sSourceFile,
                                const std::string& sKey,
@@ -342,55 +360,58 @@ void l10nMem_impl::convEntryKey(int                iLineNo,
                                const std::string& sText,
                                bool               bIsFuzzy)
 {
-  int         i, iSize;
-  std::string sNewKey = sKey;
+  std::vector<int> ivEntryList;
+  int              i, iSize = mcDb.mcFileList.size();
 
+  // filter out dummy messages, silently
+  if (convFilterWarning(sSourceFile, sKey, sOrgText))
+    return;
 
-  // adjust miCurFileInx as needed
-  // same filename as last ?
-  if (sSourceFile != mcDb.mcFileList[mcDb.miCurFileInx].msPureName)
-  {
-    iSize = mcDb.mcFileList.size();
-
-    // match filename
-    for (i = 1; i < iSize && sSourceFile != mcDb.mcFileList[i].msPureName; ++i) ;
-    if (i == iSize)
+  // Find all matching file names
+  for (i = 1; i < iSize; ++i)
+    if (sSourceFile == mcDb.mcFileList[i].msPureName)
     {
-      showError("filename(" + sSourceFile + ") not found!", iLineNo);
-      return;
+      int j    = mcDb.mcFileList[i].miStart;
+      int iEnd = mcDb.mcFileList[i].miEnd;
+
+      for (; j <= iEnd; ++j)
+        ivEntryList.push_back(j);
     }
-    mcDb.miCurFileInx = i;
+
+  // Did we find one or more files ?
+  iSize = ivEntryList.size();
+  if (!iSize)
+  {
+    showWarning("filename(" + sSourceFile + ") key(" + sKey +") lang(" +
+                mcDb.mcLangList[mcDb.miCurLangInx] + ") not found!", iLineNo);
+    return;
   }
 
-  // Calculate possible entries
-  l10nMem_file_entry& curF = mcDb.mcFileList[mcDb.miCurFileInx];
-  i     = curF.miStart;
-  iSize = curF.miEnd;
-
-  // Loop through possible en_US entries
-  for (; i <= iSize; ++i)
+  // Loop through all potential en_US entries
+  for (i = 0; i < iSize; ++i)
   {
-    l10nMem_enus_entry& curE = mcDb.mcENUSlist[i];
+    l10nMem_enus_entry& curE = mcDb.mcENUSlist[ivEntryList[i]];
 
     // The entry cannot be converted twice
     if (curE.meState != l10nMem::ENTRY_NORMAL)
       continue;
 
-    // The text must match
+    // The msgId must match
     if (sOrgText != curE.msText)
-      continue;
-
-    // The keys must match
-    if (sNewKey != curE.msKey)
       continue;
 
     // update language text
     l10nMem_lang_entry& curL = curE.mcLangList[mcDb.miCurLangInx];
-    curL.msText  = sText;
-    curL.mbFuzzy = bIsFuzzy;
-    curE.meState = l10nMem::ENTRY_CHANGED;
+
+    if (sText != curL.msText)
+    {
+      curL.msText  = sText;
+      curL.mbFuzzy = bIsFuzzy;
+      curE.meState = l10nMem::ENTRY_CHANGED;
+    }
     return;
   }
 
-  showError("key(" + sKey + ") with msgId(" + sOrgText + ") cannot be matched", iLineNo);
+  showWarning("key(" + sKey + ")  lang(" + mcDb.mcLangList[mcDb.miCurLangInx] +
+              ") with msgId(" + sOrgText + ") cannot be matched", iLineNo);
 }

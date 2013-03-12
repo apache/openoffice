@@ -302,7 +302,7 @@ void handler::runConvert()
 
       // get converter and extract files
       convert_gen convertObj(mcMemory, sFilePath, *siSource);
-      convertObj.execute(true, false);
+      convertObj.execute(true, true);
     }
   }
 

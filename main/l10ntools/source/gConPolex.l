@@ -89,6 +89,10 @@ SPACE [ \t]*
   LOCptr->setKey(yytext);
 }
 
+"#~".*\r*\n {
+  // special comment, just skip
+}
+
 
 {SPACE}[mM][sS][gG][iI][dD]{SPACE} {
   LOCptr->setMsgId(yytext);
