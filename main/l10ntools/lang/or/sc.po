@@ -3553,7 +3553,7 @@ msgstr "ଚଳିତ ମନୋନଯନ"
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_INSERTCELLS.String.Text
 #, fuzzy
 msgid  "Insert"
-msgstr "ଭର୍ତ୍ତି କରନ୍ତୁ"
+msgstr "ଭର୍ତ୍ତି କର"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_DELETECELLS.String.Text
 #, fuzzy
@@ -3678,12 +3678,12 @@ msgstr "ପଂକ୍ତି ଭାଙ୍ଗକୁ ବିଲୋପକର"
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_DOOUTLINE.String.Text
 #, fuzzy
 msgid  "View Details"
-msgstr "ବିବରଣୀ ଦେଖାଅ"
+msgstr "ବିବରଣୀ ଦେଖାନ୍ତୁ"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_REDOOUTLINE.String.Text
 #, fuzzy
 msgid  "Hide details"
-msgstr "ବିବରଣୀ ଲୁଚାନ୍ତୁ"
+msgstr "ବିବରଣୀ ଛୁପାଅ"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_MAKEOUTLINE.String.Text
 #, fuzzy
@@ -3723,7 +3723,7 @@ msgstr "ସ୍ବଯଂଚାଳିତ ବାହ୍ଯରେଖା "
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SUBTOTALS.String.Text
 #, fuzzy
 msgid  "Subtotals"
-msgstr "ସର୍ବମୋଟ୍"
+msgstr "ସର୍ବମୋଟ"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SORT.String.Text
 #, fuzzy
@@ -4140,7 +4140,7 @@ msgstr "OR"
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABLE_DEF.String.Text
 #, fuzzy
 msgid  "Sheet"
-msgstr "ସିଟ୍"
+msgstr "ସିଟ"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MOVE_TO_END.String.Text
 #, fuzzy
@@ -4447,7 +4447,7 @@ msgstr "ପୃଷ୍ଠା ଶୈଳୀ"
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_HEADER.String.Text
 #, fuzzy
 msgid  "Header"
-msgstr "ଶୀର୍ଷଟିକା"
+msgstr "ଶୀର୍ଷକ"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_FOOTER.String.Text
 #, fuzzy
@@ -5856,12 +5856,12 @@ msgstr "OR"
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
 msgid  "Does not end with"
-msgstr "ସହିତ ସସମାପ୍ତହୋଇନଥାଏ"
+msgstr "ସହିତ ସସମାପ୍ତହୋଇନଥାଏ ହୋଇନଥା"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
 #, fuzzy
 msgid  "Does not end with"
-msgstr "ସହିତ ସସମାପ୍ତହୋଇନଥାଏ ହୋଇନଥା"
+msgstr "ସହିତ ସସମାପ୍ତହୋଇନଥାଏ"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND3.Default.stringlist.item
 #, fuzzy
@@ -5876,7 +5876,7 @@ msgstr "ସହିତ ସସମାପ୍ତହୋଇନଥାଏ"
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.FL_CRITERIA.FixedLine.Text
 #, fuzzy
 msgid  "Filter criteria"
-msgstr "ଫିଲ୍ଟର ଲକ୍ଷଣ"
+msgstr "ଛାଣନ୍ତୁ ଲକ୍ଷଣ"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.BTN_CASE.CheckBox.Text
 #, fuzzy
@@ -5896,7 +5896,7 @@ msgstr "ସ୍ତମ୍ଭ ଲାବୁଲଗୁଡିକ ପରିସର ଅର
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.BTN_UNIQUE.CheckBox.Text
 #, fuzzy
 msgid  "~No duplication"
-msgstr "କୌଣସି ନକଲ ନାହିଁ (~N)"
+msgstr "କୌଣସି  ନକଲ  ନାହିଁ"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.BTN_COPY_RESULT.CheckBox.Text
 #, fuzzy
@@ -5906,7 +5906,7 @@ msgstr "ଫଳାଫଳସବୁକୁ ନକଲକର"
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.BTN_DEST_PERS.CheckBox.Text
 #, fuzzy
 msgid  "~Keep filter criteria"
-msgstr "ଫିଲ୍ଟର ଲକ୍ଷଣ ରଖନ୍ତୁ (~K)"
+msgstr "ଛାଣନ୍ତୁ ଲକ୍ଷଣ ରଖନ୍ତୁ (~K)"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.RB_COPY_AREA.ImageButton.QuickHelpText
 #, fuzzy
@@ -5941,7 +5941,7 @@ msgstr "ସଙ୍କୁଚିତକର"
 #: source/ui/src/filter.src#RID_SCDLG_SPEC_FILTER.BTN_CASE.CheckBox.Text
 #, fuzzy
 msgid  "~Case sensitive"
-msgstr "ମାମଲା ସଚେତନ୍"
+msgstr "ଅକ୍ଷର ନିର୍ଦ୍ଦିଷ୍ଟ (~C)"
 
 #: source/ui/src/filter.src#RID_SCDLG_SPEC_FILTER.BTN_REGEXP.CheckBox.Text
 #, fuzzy
@@ -6176,7 +6176,7 @@ msgstr "ରେ ରହିଅଛି"
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
 msgid  "Does not contain"
-msgstr "ଧାରଣ କରିନଥାଏ"
+msgstr "ଧାରଣ କରନଥାଏ"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
@@ -6251,7 +6251,7 @@ msgstr "ରେ ରହିଅଛି"
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
 #, fuzzy
 msgid  "Does not contain"
-msgstr "ଧାରଣ କରନଥାଏ"
+msgstr "ଧାରଣ କରିନଥାଏ"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
 #, fuzzy
@@ -6510,17 +6510,17 @@ msgstr ""
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.2.String.Text
 #, fuzzy
 msgid  "Database"
-msgstr "ତଥ୍ଯସଂଚଯ"
+msgstr "ତଥ୍ଯସଂଚୟ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.3.String.Text
 #, fuzzy
 msgid  "The range of cells containing data."
-msgstr "ତଥ୍ଯ ରହିଥିବା କୋଷଗୁଡିକର ପରିସର।"
+msgstr "ତଥ୍ଯ ରହିଥିବା କୋଷଗୁଡିକର ପରିସର"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.4.String.Text
 #, fuzzy
 msgid  "Database field"
-msgstr "ତଥ୍ଯସଂଚଯ କ୍ଷେତ୍ର"
+msgstr "ତଥ୍ଯସଂଚୟ କ୍ଷେତ୍ର"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.5.String.Text
 msgid  "Indicates which database field (column) is to be used for the search criteria."
@@ -6534,7 +6534,7 @@ msgstr "ତଦନ୍ତ ଲକ୍ଷଣ"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.7.String.Text
 #, fuzzy
 msgid  "Defines the cell range containing the search criteria."
-msgstr "ତଦନ୍ତ ଲକ୍ଷଣ ରହିଥିବା କୋଷପରିସରକୁ ବ୍ଯାଖ୍ଯାକର।"
+msgstr "ତଦନ୍ତ ଲକ୍ଷଣ ରହିଥିବା କୋଷପରିସରକୁ ବ୍ଯାଖ୍ଯାକରନ୍ତୁ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.1.String.Text
 msgid  "Counts all non-blank cells of a data range where the content corresponds to the search criteria."
@@ -6543,17 +6543,17 @@ msgstr ""
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.2.String.Text
 #, fuzzy
 msgid  "Database"
-msgstr "ତଥ୍ଯସଂଚଯ"
+msgstr "ତଥ୍ଯସଂଚୟ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.3.String.Text
 #, fuzzy
 msgid  "The range of cells containing data."
-msgstr "ତଥ୍ଯ ରହିଥିବା କୋଷଗୁଡିକର ପରିସର"
+msgstr "ତଥ୍ଯ ରହିଥିବା କୋଷଗୁଡିକର ପରିସର।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.4.String.Text
 #, fuzzy
 msgid  "Database field"
-msgstr "ତଥ୍ଯସଂଚଯ କ୍ଷେତ୍ର"
+msgstr "ତଥ୍ଯସଂଚୟ କ୍ଷେତ୍ର"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.5.String.Text
 msgid  "Indicates which database field (column) is to be used for the search criteria."
@@ -6567,7 +6567,7 @@ msgstr "ତଦନ୍ତ ଲକ୍ଷଣ"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.7.String.Text
 #, fuzzy
 msgid  "Defines the cell range containing the search criteria."
-msgstr "ତଦନ୍ତ ଲକ୍ଷଣ ରହିଥିବା କୋଷପରିସରକୁ ବ୍ଯାଖ୍ଯାକରନ୍ତୁ।"
+msgstr "ତଦନ୍ତ ଲକ୍ଷଣ ରହିଥିବା କୋଷପରିସରକୁ ବ୍ଯାଖ୍ଯାକର।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_AVERAGE.1.String.Text
 msgid  "Returns the average value of all the cells of a data range whose contents match the search criteria."
@@ -6954,12 +6954,12 @@ msgstr ""
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ନମ୍ବର"
+msgstr "କ୍ରମ ସଂଖ୍ୟା"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.3.String.Text
 #, fuzzy
 msgid  "The internal number for the date."
-msgstr "ତାରିଖ ପାଇଁ ଅନ୍ତବର୍ତ୍ତୀ ସଂଖ୍ଯାଟିଏ।"
+msgstr "ତାରିଖ ପାଇଁ ଅନ୍ତବର୍ତ୍ତୀ ସଂଖ୍ଯାଟିଏ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.1.String.Text
 msgid  "Calculates the number of days between two dates based on a 360-day year."
@@ -7001,7 +7001,7 @@ msgstr ""
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_HOUR.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "କ୍ରମ ସଂଖ୍ୟା"
+msgstr "ନମ୍ବର"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_HOUR.3.String.Text
 #, fuzzy
@@ -7034,7 +7034,7 @@ msgstr "ନମ୍ବର"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_MONTH.3.String.Text
 #, fuzzy
 msgid  "The internal number of the date."
-msgstr "ତାରିଖର ଅନ୍ତବର୍ତ୍ତୀ ସଂଖ୍ଯା"
+msgstr "ତାରିଖର ଅନ୍ତବର୍ତ୍ତୀ ସଂଖ୍ଯା।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_ACT_TIME.1.String.Text
 #, fuzzy
@@ -7191,7 +7191,7 @@ msgstr "ତାରିଖର ଅନ୍ତବର୍ତ୍ତୀ ସଂଖ୍ଯା�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_WEEK.4.String.Text
 #, fuzzy
 msgid  "mode"
-msgstr "ମୋଡ"
+msgstr "ଧାରା"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_WEEK.5.String.Text
 msgid  "Indicates the first day of the week (1 = Sunday, other values = Monday)."
@@ -7261,7 +7261,7 @@ msgstr "ପ୍ରକାର"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.11.String.Text
 #, fuzzy
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "ପ୍ରକାର = 1 ପିରିଅଡର ଆରମ୍ଭରେ ପ୍ରାପ୍ଯକୁ ସୁଚାଉଛି, = 0 ଶେଷରେ।"
+msgstr "ପ୍ରକାର = ୧ ପିରିଅଡ୍ ର ଆରମ୍ଭରେ ପ୍ରାପ୍ଯକୁ ସୁଚାଉଛି, = 0 ଶେଷରେ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.1.String.Text
 msgid  "Future value. Returns the future value of an investment based on regular payments and a constant interest rate."
@@ -7275,7 +7275,7 @@ msgstr "ଅନୁପାତ"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.3.String.Text
 #, fuzzy
 msgid  "The rate of interest per period."
-msgstr "ପିରିଅଡ୍ ପ୍ରତି ସୁଧର ଅନୁପାତ।"
+msgstr "ପିରିଅଡ ପ୍ରତି ସୁଧର ଅନୁପାତ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.4.String.Text
 #, fuzzy
@@ -7294,7 +7294,7 @@ msgstr "PMT"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.7.String.Text
 #, fuzzy
 msgid  "Regular payments. The constant annuity to be paid in each period."
-msgstr "ନିଯମିତ ପେମେଣ୍ଟଗୁଡିକ। ପ୍ରତି ପିରିଅଡ୍ ରେ ସ୍ଥିର ବାର୍ଷକୀ ଦିଆହେବ।"
+msgstr "ନିୟମିତ ପେମେଣ୍ଟଗୁଡିକ। ପ୍ରତି ପିରିଅଡରେ ସ୍ଥିର ବାର୍ଷକୀ ଦିଆହେବ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.8.String.Text
 #, fuzzy
@@ -7304,7 +7304,7 @@ msgstr "PV"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.9.String.Text
 #, fuzzy
 msgid  "Present value. The current value of a series of payments"
-msgstr "ବର୍ତ୍ତମାନ ମୂଲ୍ଯ।  ପେମେଣ୍ଟଗୁଡିକର ଗୋଟିଏ ଶ୍ରେଣୀର ଚଳିତ ମୂଲ୍ଯ।"
+msgstr "ବର୍ତ୍ତମାନ ମୂଲ୍ଯ। ପେମେଣ୍ଟଗୁଡିକର ଗୋଟିଏ ଶ୍ରେଣୀର ଚଳିତ ମୂଲ୍ଯ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.10.String.Text
 #, fuzzy
@@ -7328,7 +7328,7 @@ msgstr "ଅନୁପାତ"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.3.String.Text
 #, fuzzy
 msgid  "The rate of interest per period."
-msgstr "ପିରିଅଡ ପ୍ରତି ସୁଧର ଅନୁପାତ।"
+msgstr "ପିରିଅଡ୍ ପ୍ରତି ସୁଧର ଅନୁପାତ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.4.String.Text
 #, fuzzy
@@ -7338,7 +7338,7 @@ msgstr "PMT"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.5.String.Text
 #, fuzzy
 msgid  "Regular payments. The constant annuity to be paid in each period."
-msgstr "ନିୟମିତ ପେମେଣ୍ଟଗୁଡିକ। ପ୍ରତି ପିରିଅଡରେ ସ୍ଥିର ବାର୍ଷକୀ ଦିଆହେବ।"
+msgstr "ନିଯମିତ ପେମେଣ୍ଟଗୁଡିକ। ପ୍ରତି ପିରିଅଡ୍ ରେ ସ୍ଥିର ବାର୍ଷକୀ ଦିଆହେବ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.6.String.Text
 #, fuzzy
@@ -7348,7 +7348,7 @@ msgstr "PV"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.7.String.Text
 #, fuzzy
 msgid  "Present value. The current value of a series of payments"
-msgstr "ବର୍ତ୍ତମାନ ମୂଲ୍ଯ। ପେମେଣ୍ଟଗୁଡିକର ଗୋଟିଏ ଶ୍ରେଣୀର ଚଳିତ ମୂଲ୍ଯ।"
+msgstr "ବର୍ତ୍ତମାନ ମୂଲ୍ଯ।  ପେମେଣ୍ଟଗୁଡିକର ଗୋଟିଏ ଶ୍ରେଣୀର ଚଳିତ ମୂଲ୍ଯ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.8.String.Text
 #, fuzzy
@@ -7381,7 +7381,7 @@ msgstr "ଅନୁପାତ"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.3.String.Text
 #, fuzzy
 msgid  "The rate of interest per period."
-msgstr "ପିରିଅଡ୍ ପ୍ରତି ସୁଧର ଅନୁପାତ।"
+msgstr "ପିରିଅଡ ପ୍ରତି ସୁଧର ଅନୁପାତ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.4.String.Text
 #, fuzzy
@@ -7400,7 +7400,7 @@ msgstr "PV"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.7.String.Text
 #, fuzzy
 msgid  "Present value. The current value of a series of payments"
-msgstr "ବର୍ତ୍ତମାନ ମୂଲ୍ଯ। ପେମେଣ୍ଟଗୁଡିକର ଗୋଟିଏ ଶ୍ରେଣୀର ଚଳିତ ମୂଲ୍ଯ।"
+msgstr "ବର୍ତ୍ତମାନ ମୂଲ୍ଯ।  ପେମେଣ୍ଟଗୁଡିକର ଗୋଟିଏ ଶ୍ରେଣୀର ଚଳିତ ମୂଲ୍ଯ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.8.String.Text
 #, fuzzy
@@ -7494,12 +7494,12 @@ msgstr "ଅନୁପାତ"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.3.String.Text
 #, fuzzy
 msgid  "The rate of interest per period."
-msgstr "ପିରିଅଡ ପ୍ରତି ସୁଧର ଅନୁପାତ।"
+msgstr "ପିରିଅଡ୍ ପ୍ରତି ସୁଧର ଅନୁପାତ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.4.String.Text
 #, fuzzy
 msgid  "Period"
-msgstr "ପିରିଅଡ"
+msgstr "ପିରିଅଡ୍"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.5.String.Text
 msgid  "Periods. The periods for which the compounded interest is to be calculated. P = 1 denotes for the first period, P = NPER for the last one."
@@ -7560,7 +7560,7 @@ msgstr "ପିରିଅଡ୍ ପ୍ରତି ସୁଧର ଅନୁପାତ।
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.4.String.Text
 #, fuzzy
 msgid  "Period"
-msgstr "ପିରିଅଡ୍"
+msgstr "ପିରିଅଡ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.5.String.Text
 msgid  "Period. The period for which the repayments are to be calculated. Per = 1 denotes for the first period, P = NPER for the last"
@@ -7742,12 +7742,12 @@ msgstr "କ୍ରୟ ମୂଲ୍ଯଗୁଡିକ। ଜିନିଷର ପ୍
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.4.String.Text
 #, fuzzy
 msgid  "Salvage"
-msgstr "ଉଦ୍ଧାର"
+msgstr "ଉଦ୍ଧାର "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.5.String.Text
 #, fuzzy
 msgid  "Salvage: The remaining value of the asset at the end of its life."
-msgstr "ଉଦ୍ଧାର: ଜିନିଷର ବାକିତକ ମୂଲ୍ଯ ତାର ଜୀବନର ଶେଷ ସମଯରେ।"
+msgstr "ଉଦ୍ଧାର: ଜିନିଷର ବାକିତକ ମୂଲ୍ଯ ତାର ଜୀବନର ଶେଷ ସମୟରେ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.6.String.Text
 #, fuzzy
@@ -7762,7 +7762,7 @@ msgstr "ଦରକାରୀ ଜୀବନ: ଜିନିଷର ଦରକାରୀ �
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.8.String.Text
 #, fuzzy
 msgid  "Period"
-msgstr "ପିରିଅଡ"
+msgstr "ପିରିଅଡ୍"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.9.String.Text
 msgid  "Period. The depreciation period which must have the same time unit as average useful life."
@@ -7791,7 +7791,7 @@ msgstr "ଉଦ୍ଧାର "
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LIA.5.String.Text
 #, fuzzy
 msgid  "Salvage: The remaining value of the asset at the end of its life."
-msgstr "ଉଦ୍ଧାର: ଜିନିଷର ବାକିତକ ମୂଲ୍ଯ ତାର ଜୀବନର ଶେଷ ସମୟରେ।"
+msgstr "ଉଦ୍ଧାର: ଜିନିଷର ବାକିତକ ମୂଲ୍ଯ ତାର ଜୀବନର ଶେଷ ସମଯରେ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LIA.6.String.Text
 #, fuzzy
@@ -8361,7 +8361,7 @@ msgstr "TRUE ଫେରେଇଆଣ ୟଦି ମୂଲ୍ଯ ଗୋଟିଏ ସ
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_FORMULA.2.String.Text
 #, fuzzy
 msgid  "reference"
-msgstr "ସନ୍ଦର୍ଭ"
+msgstr "ରେଫରେନ୍ସ୍"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_FORMULA.3.String.Text
 #, fuzzy
@@ -8615,7 +8615,7 @@ msgstr "ସମସ୍ତ ୟୁକ୍ତିଗୁଡିକର ସମଷ୍ଟି 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM.2.String.Text
 #, fuzzy
 msgid  "number "
-msgstr "ସଂଖ୍ଯା "
+msgstr "ସଂଖ୍ଯା"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 arguments whose total is to be calculated."
@@ -8629,7 +8629,7 @@ msgstr "ଯୁକ୍ତିଗୁଡିକର ବର୍ଗଗୁଡିକର ସ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_SQ.2.String.Text
 #, fuzzy
 msgid  "number "
-msgstr "ସଂଖ୍ଯା"
+msgstr "ସଂଖ୍ଯା "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_SQ.3.String.Text
 msgid  "Number 1, number 2,... are 1 to 30 arguments for which the sum of the squares is to be calculated."
@@ -9523,7 +9523,7 @@ msgstr "ଏହି ସଂଖ୍ଯା ୟାହାରକି ଗୁଣତକ  ଗ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_CEIL.6.String.Text
 #, fuzzy
 msgid  "Mode"
-msgstr "ମୋଡ"
+msgstr "ଧାରା"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_CEIL.7.String.Text
 msgid  "If given and not equal to zero then rounded up according to amount when a negative number and significance."
@@ -9599,7 +9599,7 @@ msgstr "ଶ୍ରେଣୀ ବିନିମୟ। ଗୋଟିଏ ଶ୍ରେଣ
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_TRANS.2.String.Text
 #, fuzzy
 msgid  "array"
-msgstr "ଶ୍ରେଣୀ"
+msgstr "ଆରେ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_TRANS.3.String.Text
 #, fuzzy
@@ -9697,7 +9697,7 @@ msgstr "ଦୁଇଟି ଶ୍ରେଣୀର ଭିନ୍ନତା ବର୍ଗ
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_X2MY2.2.String.Text
 #, fuzzy
 msgid  "array_x"
-msgstr "ଶ୍ରେଣୀ_x"
+msgstr "ଆରେ_x"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_X2MY2.3.String.Text
 #, fuzzy
@@ -9707,7 +9707,7 @@ msgstr "ପ୍ରଥମ ଶ୍ରେଣୀ ୟେଉଁଥିରେକି ୟୁ
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_X2MY2.4.String.Text
 #, fuzzy
 msgid  "array_y"
-msgstr "ଶ୍ରେଣୀ_y"
+msgstr "ଆରେ_y"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_X2MY2.5.String.Text
 #, fuzzy
@@ -9802,7 +9802,7 @@ msgstr "ତଥ୍ଯ_Y"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.3.String.Text
 #, fuzzy
 msgid  "The Y data array."
-msgstr " Y ତଥ୍ଯ ଶ୍ରେଣୀ।"
+msgstr " Y ତଥ୍ଯ ଆରେ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.4.String.Text
 #, fuzzy
@@ -9812,7 +9812,7 @@ msgstr "ତଥ୍ଯ_X"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.5.String.Text
 #, fuzzy
 msgid  "The X data array."
-msgstr " X ତଥ୍ଯ ଶ୍ରେଣୀ।"
+msgstr " X ତଥ୍ଯ ଆରେ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.6.String.Text
 #, fuzzy
@@ -9844,7 +9844,7 @@ msgstr "ତଥ୍ଯ_Y"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.3.String.Text
 #, fuzzy
 msgid  "The Y data array."
-msgstr " Y ତଥ୍ଯ ଆରେ"
+msgstr "Y ତଥ୍ଯ ଆରେ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.4.String.Text
 #, fuzzy
@@ -9854,12 +9854,12 @@ msgstr "ତଥ୍ଯ_X"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.5.String.Text
 #, fuzzy
 msgid  "The X data array."
-msgstr " X ତଥ୍ଯ ଆରେ।"
+msgstr " X ତଥ୍ଯ ଶ୍ରେଣୀ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.6.String.Text
 #, fuzzy
 msgid  "Function_type"
-msgstr "କାର୍ଯ୍ୟ ପ୍ରକାର (_t)"
+msgstr "କର୍ୟ୍ଯ_ଟାଇପ୍"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.7.String.Text
 msgid  "If type = 0 then the functions will be calculated in the form of y=m^x, or also functions y=b*m^x."
@@ -9887,7 +9887,7 @@ msgstr "ତଥ୍ଯ_Y"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.3.String.Text
 #, fuzzy
 msgid  "The Y data array."
-msgstr "Y ତଥ୍ଯ ଆରେ।"
+msgstr " Y ତଥ୍ଯ ଶ୍ରେଣୀ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.4.String.Text
 #, fuzzy
@@ -9931,7 +9931,7 @@ msgstr "ତଥ୍ଯ_Y"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GROWTH.3.String.Text
 #, fuzzy
 msgid  "The Y data array."
-msgstr " Y ତଥ୍ଯ ଶ୍ରେଣୀ।"
+msgstr "Y ତଥ୍ଯ ଶ୍ରେଣୀ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GROWTH.4.String.Text
 #, fuzzy
@@ -10305,7 +10305,7 @@ msgstr "ତଥ୍ଯ"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PERCENTILE.3.String.Text
 #, fuzzy
 msgid  "The array of the data in the sample."
-msgstr "ନମୁନାରେ ଥିବା ତଥ୍ଯର ଶ୍ରେଣୀ।"
+msgstr "ନମୁନାରେ ଥିବା ତଥ୍ଯର ଆରେ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PERCENTILE.4.String.Text
 #, fuzzy
@@ -10527,7 +10527,7 @@ msgstr "ସମ୍ଭବ୍ଯତା ର."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_B.2.String.Text
 #, fuzzy
 msgid  "trials"
-msgstr "ପ୍ରୟାସଗୁଡ଼ିକ"
+msgstr "ଟ୍ରାଏଲ୍ଗୁଡିକ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_B.3.String.Text
 #, fuzzy
@@ -10639,12 +10639,12 @@ msgstr "ଟ୍ରାଏଲ୍ଗୁଡିକର ଗୋଟିଏ ଶ୍ରେଣ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.4.String.Text
 #, fuzzy
 msgid  "trials"
-msgstr "ଟ୍ରାଏଲ୍ଗୁଡିକ"
+msgstr "ଅଭ୍ୟାସ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.5.String.Text
 #, fuzzy
 msgid  "The total number of trials."
-msgstr "ସମୁଦାୟ ଅଭ୍ୟାସ ସଂଖ୍ଯା।"
+msgstr "ସମୁଦାୟ ଅଭ୍ୟାସ ସଂଖ୍ୟା।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.6.String.Text
 #, fuzzy
@@ -10654,7 +10654,7 @@ msgstr "SP"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.7.String.Text
 #, fuzzy
 msgid  "The success probability of a trial."
-msgstr "ଅଭ୍ୟାସର ସଫଳ ହେବାର ସମ୍ଭାବନା।"
+msgstr "ଗୋଟିଏ ଟ୍ରାଏଲ୍ ର ସଫଳ ସମ୍ଭବ୍ଯତା।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.8.String.Text
 #, fuzzy
@@ -11317,7 +11317,7 @@ msgstr "ମୂଲ୍ଯ ୟାହାପାଇଁ  T ବିତରଣ  ଗଣନ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_DIST.4.String.Text
 #, fuzzy
 msgid  "degrees_freedom"
-msgstr "ଡିଗ୍ରୀଗୁଡିକ_ମୁକ୍ତି"
+msgstr "degrees_freedom"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_DIST.5.String.Text
 #, fuzzy
@@ -11327,7 +11327,7 @@ msgstr "T ବିତରଣର ମୁକ୍ତିର ଡିଗ୍ରୀଗୁଡ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_DIST.6.String.Text
 #, fuzzy
 msgid  "mode"
-msgstr "ଧାରା"
+msgstr "ମୋଡ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_DIST.7.String.Text
 #, fuzzy
@@ -11351,7 +11351,7 @@ msgstr ""
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_INV.4.String.Text
 #, fuzzy
 msgid  "degrees_freedom"
-msgstr "degrees_freedom"
+msgstr "ଡିଗ୍ରୀଗୁଡିକ_ମୁକ୍ତି"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_INV.5.String.Text
 #, fuzzy
@@ -11450,7 +11450,7 @@ msgstr "ଡିଗ୍ରୀଗୁଡିକ_ମୁକ୍ତି"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHI_DIST.5.String.Text
 #, fuzzy
 msgid  "The degrees of freedom of the chi square distribution."
-msgstr "ଚି ବର୍ଗ ବିତରଣର  ମୁକ୍ତିର ଡିଗ୍ରୀଗୁଡିକ।"
+msgstr "ଚାଇ ବର୍ଗକ୍ଷେତ୍ରର ବିତରଣର ମୁକ୍ତିର ଡିଗ୍ରୀଗୁଡିକ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHISQ_DIST.1.String.Text
 msgid  "Returns left-tail probability of the cumulative distribution function or values of the probability density function of the chi-square distribution."
@@ -11468,7 +11468,7 @@ msgstr ""
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHISQ_DIST.4.String.Text
 #, fuzzy
 msgid  "Degrees of Freedom"
-msgstr "ମୁକ୍ତିର ଡ଼ିଗ୍ରୀ"
+msgstr "ମୋତେ ମୁକ୍ତ କରିବାର ଡ଼ିଗ୍ରୀ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHISQ_DIST.5.String.Text
 #, fuzzy
@@ -11731,7 +11731,7 @@ msgstr "ତଥ୍ଯ_2"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.5.String.Text
 #, fuzzy
 msgid  "The second record array."
-msgstr "ଦ୍ବିତୀଯ ଅଭିଲେଖ ଶ୍ରେଣୀ।"
+msgstr "ଦ୍ବିତୀୟ ଅଭିଲେଖ ଶ୍ରେଣୀ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.1.String.Text
 #, fuzzy
@@ -11756,7 +11756,7 @@ msgstr "ତଥ୍ଯ_2"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.5.String.Text
 #, fuzzy
 msgid  "The second record array."
-msgstr "ଦ୍ବିତୀୟ ଅଭିଲେଖ ଶ୍ରେଣୀ।"
+msgstr "ଦ୍ବିତୀଯ ଅଭିଲେଖ ଶ୍ରେଣୀ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.6.String.Text
 #, fuzzy
@@ -11799,7 +11799,7 @@ msgstr "ତଥ୍ଯ_X"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RSQ.5.String.Text
 #, fuzzy
 msgid  "The X data array."
-msgstr " X ତଥ୍ଯ ଶ୍ରେଣୀ।"
+msgstr "X ତଥ୍ଯ ଶ୍ରେଣୀ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_INTERCEPT.1.String.Text
 #, fuzzy
@@ -11824,7 +11824,7 @@ msgstr "ତଥ୍ଯ_X"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_INTERCEPT.5.String.Text
 #, fuzzy
 msgid  "The X data array."
-msgstr " X ତଥ୍ଯ ଶ୍ରେଣୀ।"
+msgstr "X ତଥ୍ଯ ଶ୍ରେଣୀ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_SLOPE.1.String.Text
 #, fuzzy
@@ -11884,7 +11884,7 @@ msgstr "ପିଅରସନ୍ ଦ୍ରବ୍ଯ ମୋମେଣ୍ଟ୍ କୋ
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PEARSON.2.String.Text
 #, fuzzy
 msgid  "Data_1"
-msgstr "ତଥ୍ଯ_1"
+msgstr "ତଥ୍ଯ_୧"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PEARSON.3.String.Text
 #, fuzzy
@@ -11894,12 +11894,12 @@ msgstr "ପ୍ରଥମ ଅଭିଲେଖ ଶ୍ରେଣୀ।"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PEARSON.4.String.Text
 #, fuzzy
 msgid  "Data_2"
-msgstr "ତଥ୍ଯ_2"
+msgstr "ତଥ୍ଯ_୨"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PEARSON.5.String.Text
 #, fuzzy
 msgid  "The second record array."
-msgstr "ଦ୍ବିତୀଯ ଅଭିଲେଖ ଶ୍ରେଣୀ।"
+msgstr "ଦ୍ବିତୀୟ ଅଭିଲେଖ ଶ୍ରେଣୀ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CORREL.1.String.Text
 #, fuzzy
@@ -11924,7 +11924,7 @@ msgstr "ତଥ୍ଯ_୨"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CORREL.5.String.Text
 #, fuzzy
 msgid  "The second record array."
-msgstr "ଦ୍ବିତୀୟ ଅଭିଲେଖ ଶ୍ରେଣୀ।"
+msgstr "ଦ୍ବିତୀଯ ଅଭିଲେଖ ଶ୍ରେଣୀ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COVAR.1.String.Text
 #, fuzzy
@@ -12045,7 +12045,7 @@ msgstr ""
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AREAS.2.String.Text
 #, fuzzy
 msgid  "reference"
-msgstr "ରେଫରେନ୍ସ୍"
+msgstr "ସନ୍ଦର୍ଭ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AREAS.3.String.Text
 #, fuzzy
@@ -12084,12 +12084,12 @@ msgstr "ଗୋଟିଏ ରେଫରେନ୍ସ୍ ର ଅନ୍ତବର୍ତ
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COLUMN.2.String.Text
 #, fuzzy
 msgid  "reference"
-msgstr "ସନ୍ଦର୍ଭ"
+msgstr "ରେଫରେନ୍ସ୍"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COLUMN.3.String.Text
 #, fuzzy
 msgid  "The reference to a cell or a range."
-msgstr "ଗୋଟିଏ କୋଷ କିମ୍ବା ଗୋଟିଏ ପରିସରକୁ ରେଫରେନ୍ସ୍।"
+msgstr "ଗୋଟିଏ କୋଷ କିମ୍ବା ଗୋଟିଏ ପରିସରକୁ ସନ୍ଦର୍ଭ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ROW.1.String.Text
 #, fuzzy
@@ -12688,7 +12688,7 @@ msgstr "ସଂଖ୍ଯା"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHAR.3.String.Text
 #, fuzzy
 msgid  "The code value for the character."
-msgstr "ଏହି ଅକ୍ଷର ପାଇଁ ସାଙ୍କେତିକ ମୂଲ୍ଯ।"
+msgstr "ସେହି ଅକ୍ଷର ପାଇଁ ସଂକେତ ମୂଲ୍ଯ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CLEAN.1.String.Text
 #, fuzzy
@@ -12887,7 +12887,7 @@ msgstr "ପାଠ୍ୟ"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VALUE.3.String.Text
 #, fuzzy
 msgid  "The text to be converted to a number."
-msgstr "ପାଠ୍ୟ ସଂଖ୍ଯା."
+msgstr "ସଂଖ୍ଯାକୁ ପରିବର୍ତ୍ତନ ହେଉଥିବା ପାଠ୍ୟ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TEXT.1.String.Text
 #, fuzzy
@@ -13503,6 +13503,54 @@ msgstr ""
 msgid  "The number of characters for the text."
 msgstr ""
 
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.1.String.Text
+msgid  "Return the cosecant of an angle. CSC(x)=1/SIN(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.3.String.Text
+msgid  "The angle in radians for which the cosecant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.1.String.Text
+msgid  "Return the secant of an angle. SEC(x)=1/COS(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.3.String.Text
+msgid  "The angle in radians for which the secant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.1.String.Text
+msgid  "Return the hyperbolic cosecant of a hyperbolic angle. CSCH(x)=1/SINH(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.3.String.Text
+msgid  "The hyperbolic angle in radians for which the hyperbolic cosecant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.1.String.Text
+msgid  "Return the hyperbolic secant of a hyperbolic angle. SECH(x)=1/COSH(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.3.String.Text
+msgid  "The hyperbolic angle in radians for which the hyperbolic secant is to be calculated."
+msgstr ""
+
 #: source/ui/src/scstring.src#SCSTR_APPLICATION.String.Text
 #, fuzzy
 msgid  "%PRODUCTNAME Calc 6.0"
@@ -13556,7 +13604,7 @@ msgstr "Spreadsheet"
 #: source/ui/src/scstring.src#SCSTR_DOCSHELL.String.Text
 #, fuzzy
 msgid  "Sheet"
-msgstr "ସିଟ୍"
+msgstr "ସିଟ"
 
 #: source/ui/src/scstring.src#SCSTR_TABVIEWSHELL.String.Text
 #, fuzzy
@@ -14120,7 +14168,7 @@ msgstr " %୧ ସିଟ୍"
 #: source/ui/src/scstring.src#STR_ACC_CELL_NAME.String.Text
 #, fuzzy
 msgid  "Cell %1"
-msgstr "%୧ କୋଷ"
+msgstr "%1 କୋଷ"
 
 #: source/ui/src/scstring.src#STR_ACC_PREVIEWDOC_NAME.String.Text
 #, fuzzy
@@ -14317,7 +14365,7 @@ msgstr "ସୂତ୍ରଗୁଡିକ (~F)"
 #: source/ui/src/tabopdlg.src#RID_SCDLG_TABOP.RB_FORMULARANGE.ImageButton.QuickHelpText
 #, fuzzy
 msgid  "Shrink"
-msgstr "ସଙ୍କୁଚିତକର"
+msgstr "ସଙ୍କୁଚିତକରନ୍ତୁ"
 
 #: source/ui/src/tabopdlg.src#RID_SCDLG_TABOP.FT_ROWCELL.FixedText.Text
 #, fuzzy
@@ -14327,7 +14375,7 @@ msgstr "ପଂକ୍ତି ଇନ୍ପୁଟ୍ କୋଷ"
 #: source/ui/src/tabopdlg.src#RID_SCDLG_TABOP.RB_ROWCELL.ImageButton.QuickHelpText
 #, fuzzy
 msgid  "Shrink"
-msgstr "ସଙ୍କୁଚିତକରନ୍ତୁ"
+msgstr "ସଙ୍କୁଚିତକର"
 
 #: source/ui/src/tabopdlg.src#RID_SCDLG_TABOP.FT_COLCELL.FixedText.Text
 #, fuzzy
@@ -14846,7 +14894,7 @@ msgstr "ପୂର୍ବନିର୍ଦ୍ଧାରିତ ଫର୍ମାଟି�
 #: source/ui/src/popup.src#RID_POPUP_CELLS.FID_CELL_FORMAT.MenuItem.Text
 #, fuzzy
 msgid  "~Format Cells..."
-msgstr "ରଚନା କୋଷଗୁଡିକ..."
+msgstr "ରଚନା କୋଷଗୁଡିକ (~F)..."
 
 #: source/ui/src/popup.src#RID_POPUP_CELLS.FID_INS_CELL.MenuItem.Text
 #, fuzzy
@@ -15173,7 +15221,7 @@ msgstr "କୋଷଗୁଡିକର ସ୍ଥାନ  ଉପରଭାଗକୁ  �
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCELL.FL_FRAME.FixedLine.Text
 #, fuzzy
 msgid  "Selection"
-msgstr "ମନୋନୟନ"
+msgstr "ମନୋନଯନ"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_INSCELL.ModalDialog.Text
 #, fuzzy
@@ -15203,7 +15251,7 @@ msgstr "କୋଷଗୁଡିକର ସ୍ଥାନ ତଳକୁ  ବଦଳା�
 #: source/ui/src/miscdlgs.src#RID_SCDLG_INSCELL.FL_FRAME.FixedLine.Text
 #, fuzzy
 msgid  "Selection"
-msgstr "ମନୋନଯନ"
+msgstr "ମନୋନୟନ"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.ModalDialog.Text
 #, fuzzy
@@ -15233,7 +15281,7 @@ msgstr "ତାରିଖ ଏବଂ ସମୟ (~D)"
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.BTN_DELFORMULAS.CheckBox.Text
 #, fuzzy
 msgid  "~Formulas"
-msgstr "ସୂତ୍ରଗୁଡିକ (~F)"
+msgstr "ସୂତ୍ରଗୁଡିକ"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.BTN_DELATTRS.CheckBox.Text
 #, fuzzy
@@ -15758,7 +15806,7 @@ msgstr "ସର୍ତ୍ତ  ୧"
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_1.Default.StringList.item
 #, fuzzy
 msgid  "Formula is"
-msgstr "ସୂତ୍ର ହେଉଛି"
+msgstr "ସୂତ୍ର ଅଟେ"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 #, fuzzy
@@ -15768,7 +15816,7 @@ msgstr "ମଧ୍ଯରେ ନାହିଁ"
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.RB_COND1_1.ImageButton.QuickHelpText
 #, fuzzy
 msgid  "Shrink"
-msgstr "ସଙ୍କୁଚିତକରନ୍ତୁ"
+msgstr "ସଙ୍କୁଚିତକର"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.FT_COND1_AND.FixedText.Text
 #, fuzzy
@@ -15891,32 +15939,32 @@ msgstr ""
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_1.Default.StringList.item
 #, fuzzy
 msgid  "Cell value is"
-msgstr "କୋଷ ମୁଲ୍ଯ ହେଉଛି"
+msgstr "କୋଷ ମୁଲ୍ଯ ଅଟେ"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 #, fuzzy
 msgid  "equal to"
-msgstr "ଏହା ସହିତ ସମାନ"
+msgstr "ସମାନ"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 #, fuzzy
 msgid  "less than"
-msgstr "ଏହାଠାରୁ କମ"
+msgstr "ଠାରୁ ଅଳ୍ପ"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 #, fuzzy
 msgid  "greater than"
-msgstr "ଏହାଠାରୁ ବଡ଼"
+msgstr "ଠାରୁ ଅତ୍ଯଧିକ "
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 #, fuzzy
 msgid  "less than or equal to"
-msgstr "ଏହା ଠାରୁ କମ କିମ୍ବା ସମାନ"
+msgstr "ଠାରୁ କମ୍ କିମ୍ବା ସମାନ"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 #, fuzzy
 msgid  "greater than or equal to"
-msgstr "ଏହାଠାରୁ ଅଧିକ କିମ୍ବା ସମାନ"
+msgstr "ଠାରୁ ଅତ୍ଯଧିକ କିମ୍ବା ର ସମାନ"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 #, fuzzy
@@ -15931,12 +15979,12 @@ msgstr "ମଧ୍ଯରେ"
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_1.Default.StringList.item
 #, fuzzy
 msgid  "Cell value is"
-msgstr "କୋଷ ମୁଲ୍ଯ ଅଟେ"
+msgstr "କୋଷ ମୁଲ୍ଯଟି ହେଉଛି"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
 #, fuzzy
 msgid  "equal to"
-msgstr "ସମାନ"
+msgstr "ସହିତ ସମାନ"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
 #, fuzzy
@@ -15951,7 +15999,7 @@ msgstr "ଠାରୁ ଅତ୍ଯଧିକ "
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
 #, fuzzy
 msgid  "less than or equal to"
-msgstr "ଠାରୁ କମ୍ କିମ୍ବା ସମାନ"
+msgstr "ଠାରୁ କମ କିମ୍ବା ସମାନ"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
 #, fuzzy
@@ -16266,7 +16314,7 @@ msgstr "ଲୁଚାନ୍ତୁ (~H)"
 #: source/ui/src/hdrcont.src#RID_POPUP_ROWHEADER.FID_ROW_SHOW.MenuItem.Text
 #, fuzzy
 msgid  "~Show"
-msgstr "ଦର୍ଶାନ୍ତୁ (~S)"
+msgstr "ଦେଖାନ୍ତୁ (~S)"
 
 #: source/ui/src/hdrcont.src#RID_POPUP_ROWHEADER.SID_PASTE_SPECIAL.MenuItem.Text
 #, fuzzy
