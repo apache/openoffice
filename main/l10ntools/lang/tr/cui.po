@@ -1324,12 +1324,12 @@ msgstr "WWW Tarayıcı"
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.BTN_TARGET.ImageButton.Text
 #, fuzzy
 msgid  "Target in Document"
-msgstr "Hedef Belge"
+msgstr "Belgedeki Hedef"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.BTN_TARGET.ImageButton.QuickHelpText
 #, fuzzy
 msgid  "Target in Document"
-msgstr "Belgedeki Hedef"
+msgstr "Hedef Belge"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.GRP_MORE.FixedLine.Text
 #, fuzzy
@@ -1339,7 +1339,7 @@ msgstr "Diğer ayarlar"
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.FT_FRAME.FixedText.Text
 #, fuzzy
 msgid  "F~rame"
-msgstr "Ç~erçeve"
+msgstr "Çerçeve"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.FT_FORM.FixedText.Text
 #, fuzzy
@@ -1354,7 +1354,7 @@ msgstr "Düğme"
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.FT_INDICATION.FixedText.Text
 #, fuzzy
 msgid  "Te~xt"
-msgstr "~Metin"
+msgstr "Me~tin"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.FT_TEXT.FixedText.Text
 #, fuzzy
@@ -1419,7 +1419,7 @@ msgstr "Diğer ayarlar"
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.FT_FRAME.FixedText.Text
 #, fuzzy
 msgid  "F~rame"
-msgstr "Çe~rçeve"
+msgstr "Ç~erçeve"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.FT_FORM.FixedText.Text
 #, fuzzy
@@ -1434,7 +1434,7 @@ msgstr "Düğme"
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.FT_INDICATION.FixedText.Text
 #, fuzzy
 msgid  "Te~xt"
-msgstr "Metin"
+msgstr "Me~tin"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.FT_TEXT.FixedText.Text
 #, fuzzy
@@ -1499,7 +1499,7 @@ msgstr "Deneme metni"
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.BTN_BROWSE.ImageButton.QuickHelpText
 #, fuzzy
 msgid  "Target in Document"
-msgstr "Hedef Belge"
+msgstr "Belgedeki Hedef"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.BTN_BROWSE.ButtonImage.Text
 #, fuzzy
@@ -1529,7 +1529,7 @@ msgstr "Düğme"
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_INDICATION.FixedText.Text
 #, fuzzy
 msgid  "Te~xt"
-msgstr "~Metin"
+msgstr "Metin"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.FT_TEXT.FixedText.Text
 #, fuzzy
@@ -1579,7 +1579,7 @@ msgstr "Dosya ~türü"
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.BTN_CREATE.ImageButton.QuickHelpText
 #, fuzzy
 msgid  "Select Path"
-msgstr "Yolu Seç"
+msgstr "Yol Seç"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.BTN_CREATE.ButtonImage.Text
 #, fuzzy
@@ -2102,7 +2102,7 @@ msgstr "Sil"
 
 #: source/dialogs/about.src#RID_DEFAULTABOUT.ModalDialog.Text
 #, fuzzy
-msgid  "About %PRODUCTNAME"
+msgid  "About %FULLPRODUCTNAME"
 msgstr "Hakkında"
 
 #: source/dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_BTN_README.PushButton.Text
@@ -2386,7 +2386,7 @@ msgstr "Kapat"
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_CLOSELINKMSG.String.Text
 #, fuzzy
 msgid  "Are you sure you want to remove the selected link?"
-msgstr "Seçilen bağlantı gerçekten silinsin mi?"
+msgstr "Seçilen bağlantılar gerçekten silinsin mi?"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_CLOSELINKMSG_MULTI.String.Text
 #, fuzzy
@@ -2656,7 +2656,7 @@ msgstr "Not"
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.FT_LASTEDITLABEL.FixedText.Text
 #, fuzzy
 msgid  "Author"
-msgstr "Yazar"
+msgstr "Yazan"
 
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.FT_EDIT.FixedText.Text
 #, fuzzy
@@ -5967,7 +5967,7 @@ msgstr "A~d"
 #: source/options/optdict.src#RID_SFXDLG_NEWDICT.FT_DICTLANG.FixedText.Text
 #, fuzzy
 msgid  "~Language"
-msgstr "Dil"
+msgstr "~Dil"
 
 #: source/options/optdict.src#RID_SFXDLG_NEWDICT.BTN_EXCEPT.CheckBox.Text
 #, fuzzy
@@ -6741,22 +6741,22 @@ msgstr "Geçiş"
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.FT_TRGR_TYPE.FixedText.Text
 #, fuzzy
 msgid  "Ty~pe"
-msgstr "Tip"
+msgstr "Tür"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.LB_TRGR_GRADIENT_TYPES.Default.StringList.item
 #, fuzzy
 msgid  "Square"
-msgstr "Karesel"
+msgstr "Dikdörtgen"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.FT_TRGR_CENTER_X.FixedText.Text
 #, fuzzy
 msgid  "Center ~X"
-msgstr "~X kaydır"
+msgstr "X kaydır"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.FT_TRGR_CENTER_Y.FixedText.Text
 #, fuzzy
 msgid  "Center ~Y"
-msgstr "~Y kaydır"
+msgstr "Y kaydır"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.FT_TRGR_ANGLE.FixedText.Text
 #, fuzzy
@@ -7046,7 +7046,7 @@ msgstr "Bitmaptabelle sichern"
 #: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.TabPage.Text
 #, fuzzy
 msgid  "Gradients"
-msgstr "Geçiş"
+msgstr "Geçişler"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_GRADIENT.FL_PROP.FixedLine.Text
 #, fuzzy
@@ -7605,7 +7605,7 @@ msgstr "C5 zarf"
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_C4.ItemList.item
 #, fuzzy
 msgid  "C4 Envelope"
-msgstr "C4 zarf"
+msgstr "C4 Kai"
 
 #: source/tabpages/page.src#RID_SVXSTRARY_PAPERSIZE_STD.PAPERSIZE_COM675.ItemList.item
 #, fuzzy
@@ -8630,7 +8630,7 @@ msgstr "Seçenekler"
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCORR_QUOTE.PageItem.Text
 #, fuzzy
 msgid  "Localized Options"
-msgstr "Yerel seçenekler"
+msgstr "Yerel Seçenekler"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.PageItem.Text
 #, fuzzy
@@ -9276,7 +9276,7 @@ msgstr "~Ortala"
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.BTN_JUSTIFYALIGN.RadioButton.Text
 #, fuzzy
 msgid  "Justified"
-msgstr "İki ~yana hizalı"
+msgstr "İk~i yana hizalı"
 
 #: source/tabpages/paragrph.src#RID_SVXPAGE_ALIGN_PARAGRAPH.ST_LEFTALIGN_ASIAN.String.Text
 #, fuzzy
@@ -9820,7 +9820,7 @@ msgstr "Konum"
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_POS_X.FixedText.Text
 #, fuzzy
 msgid  "Position ~X"
-msgstr "~X konumu"
+msgstr "~X Konumu"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_POS_Y.FixedText.Text
 #, fuzzy
@@ -10210,7 +10210,7 @@ msgstr "~Genişlik"
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FT_HEIGHTZOOM.FixedText.Text
 #, fuzzy
 msgid  "H~eight"
-msgstr "Yü~kseklik"
+msgstr "~Yükseklik"
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FL_SIZE.FixedLine.Text
 #, fuzzy
@@ -11810,7 +11810,7 @@ msgstr "~Tür"
 #: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_1.Default.StringList.item
 #, fuzzy
 msgid  "Dash"
-msgstr "Kısa çizgi"
+msgstr "Çizgi"
 
 #: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.LB_TYPE_2.Default.StringList.item
 #, fuzzy
@@ -11850,7 +11850,7 @@ msgstr "Ekle..."
 #: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.BTN_MODIFY.PushButton.Text
 #, fuzzy
 msgid  "~Modify..."
-msgstr "~Değiştir..."
+msgstr "Değiştir..."
 
 #: source/tabpages/tabline.src#RID_SVXPAGE_LINE_DEF.BTN_DELETE.PushButton.Text
 #, fuzzy

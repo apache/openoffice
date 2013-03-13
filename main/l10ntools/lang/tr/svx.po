@@ -84,12 +84,12 @@ msgstr "Görüntü..."
 #: inc/globlmn_tmpl.hrc#ITEM_INSERT_OBJECT_MN.SID_MN_INSERT_OBJECT_DLGS.MenuItem.Text
 #, fuzzy
 msgid  "~Object"
-msgstr "~Nesne"
+msgstr "Nesne"
 
 #: inc/globlmn_tmpl.hrc#ITEM_INSERT_OBJECT_MN.SID_MN_INSERT_OBJECT_DLGS.SID_INSERT_OBJECT.MenuItem.Text
 #, fuzzy
 msgid  "~OLE Object..."
-msgstr "OLE Nesnesi..."
+msgstr "~OLE Nesnesi..."
 
 #: inc/globlmn_tmpl.hrc#ITEM_INSERT_OBJECT_MN.SID_MN_INSERT_OBJECT_DLGS.SID_INSERT_MATH.MenuItem.Text
 #, fuzzy
@@ -99,7 +99,7 @@ msgstr "~Formül..."
 #: inc/globlmn_tmpl.hrc#ITEM_INSERT_OBJECT_PORTAL.SID_MN_INSERT_OBJECT_DLGS.MenuItem.Text
 #, fuzzy
 msgid  "~Object"
-msgstr "Nesne"
+msgstr "~Nesne"
 
 #: inc/globlmn_tmpl.hrc#ITEM_INSERT_OBJECT_PORTAL.SID_MN_INSERT_OBJECT_DLGS.SID_INSERT_OBJECT.MenuItem.Text
 #, fuzzy
@@ -1178,7 +1178,7 @@ msgstr "Üst bilgide"
 #: source/dialog/hdft.src#RID_SVXPAGE_HEADER.CB_SHARED.CheckBox.Text
 #, fuzzy
 msgid  "Same ~content left/right"
-msgstr "Sol/sağ içerik aynı"
+msgstr "Sol/sağ içerik ay~nı"
 
 #: source/dialog/hdft.src#RID_SVXPAGE_HEADER.FT_DIST.FixedText.Text
 #, fuzzy
@@ -1188,7 +1188,7 @@ msgstr "Uzaklık"
 #: source/dialog/hdft.src#RID_SVXPAGE_HEADER.CB_DYNSPACING.CheckBox.Text
 #, fuzzy
 msgid  "Use d~ynamic spacing"
-msgstr "D~inamik boşluk kullan"
+msgstr "Di~namik boşluk kullan"
 
 #: source/dialog/hdft.src#RID_SVXPAGE_HEADER.FT_HEIGHT.FixedText.Text
 #, fuzzy
@@ -1597,7 +1597,7 @@ msgstr "~Kurtarmayı Başlat >"
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_RECOVERY_NEXT.String.Text
 #, fuzzy
 msgid  "~Next >"
-msgstr "İ~leri >"
+msgstr "~Sonraki>"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_SUCCESSRECOV.String.Text
 #, fuzzy
@@ -2302,7 +2302,7 @@ msgstr "Kenarlık ayarları"
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.1.ItemList.item
 #, fuzzy
 msgid  "Left border line"
-msgstr "Sol kenarlık çizgisi"
+msgstr "Sol kenar çizgisi"
 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.2.ItemList.item
 #, fuzzy
@@ -4808,24 +4808,29 @@ msgid  "3D Effects"
 msgstr "3B Efektler"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_GEO.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Geometry"
-msgstr "Geometri"
+msgstr "Geometrie"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_REPRESENTATION.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Shading"
-msgstr "Gölgeleme"
+msgstr "Darstellung"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Illumination"
-msgstr "Aydınlatma"
+msgstr "Beleuchtung"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEXTURE.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Textures"
-msgstr "Doku"
+msgstr "Texturen"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_MATERIAL.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Material"
-msgstr "Materyal"
+msgstr "Material"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_UPDATE.ButtonImage.QuickHelpText
 #, fuzzy
@@ -4908,8 +4913,9 @@ msgid  "Object-Specific"
 msgstr "Objektspezifisch"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_FLAT.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Flat"
-msgstr "Düz"
+msgstr "Flach"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_SPHERE.ButtonImage.QuickHelpText
 #, fuzzy
@@ -7196,8 +7202,9 @@ msgid  "An error occurred while reading the form controls. The form layer has no
 msgstr ""
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_ZOOM.ItemList.item
+#, fuzzy
 msgid  "Scale"
-msgstr "Ölçeklendirme"
+msgstr "Ölçek"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_BRUSH.ItemList.item
 #, fuzzy
@@ -7290,8 +7297,9 @@ msgid  "Position"
 msgstr "Konum"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_AUTOKERN.ItemList.item
+#, fuzzy
 msgid  "Blinking"
-msgstr "Yanıp sönen"
+msgstr "Yanıp sönme"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CHARSETCOLOR.ItemList.item
 #, fuzzy
@@ -8397,8 +8405,9 @@ msgid  "draw object"
 msgstr "çizim nesnesi"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralNONE.String.Text
+#, fuzzy
 msgid  "draw objects"
-msgstr "çizim nesneleri"
+msgstr "çizim nesnesi"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRUP.String.Text
 #, fuzzy
@@ -9141,11 +9150,12 @@ msgstr "%1 'i sırasını değiştir"
 #: source/svdraw/svdstr.src#STR_EditMove.String.Text
 #, fuzzy
 msgid  "Move %1"
-msgstr "%1 Taşı"
+msgstr "%1 'i taşı"
 
 #: source/svdraw/svdstr.src#STR_EditResize.String.Text
+#, fuzzy
 msgid  "Resize %1"
-msgstr "%1 'i yeniden boyutlandır"
+msgstr "%1 'i boyutunu değiştir"
 
 #: source/svdraw/svdstr.src#STR_EditRotate.String.Text
 #, fuzzy
@@ -9178,12 +9188,14 @@ msgid  "Distort %1 (slant)"
 msgstr "%1 'i çarpıt (eğ)"
 
 #: source/svdraw/svdstr.src#STR_EditCrook.String.Text
+#, fuzzy
 msgid  "Arrange %1 in circle"
-msgstr "Daire içinde %1 'i düzenle"
+msgstr "%1 'i daire biçiminde düzenle"
 
 #: source/svdraw/svdstr.src#STR_EditCrookContortion.String.Text
+#, fuzzy
 msgid  "Curve %1 in circle"
-msgstr "Daire içinde %1 'i eğ"
+msgstr "%1 'i daire biçiminde eğ"
 
 #: source/svdraw/svdstr.src#STR_EditDistort.String.Text
 #, fuzzy
@@ -9418,7 +9430,7 @@ msgstr "%1 'i geometrik değiştir"
 #: source/svdraw/svdstr.src#STR_DragMethMove.String.Text
 #, fuzzy
 msgid  "Move %1"
-msgstr "%1 'i taşı"
+msgstr "%1 Taşı"
 
 #: source/svdraw/svdstr.src#STR_DragMethResize.String.Text
 #, fuzzy
@@ -10108,17 +10120,17 @@ msgstr "Metni çerçeveye sığdır"
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFRED.String.Text
 #, fuzzy
 msgid  "Red"
-msgstr "Kırmızı"
+msgstr "Kırmızı oranı"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFGREEN.String.Text
 #, fuzzy
 msgid  "Green"
-msgstr "Yeşil"
+msgstr "Yeşil oranı"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFBLUE.String.Text
 #, fuzzy
 msgid  "Blue"
-msgstr "Mavi"
+msgstr "Mavi oranı"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFLUMINANCE.String.Text
 #, fuzzy
@@ -10138,7 +10150,7 @@ msgstr "Gama"
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFTRANSPARENCE.String.Text
 #, fuzzy
 msgid  "Transparency"
-msgstr "Ş~effaflık"
+msgstr "Şeffaflık"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFINVERT.String.Text
 #, fuzzy
@@ -10348,7 +10360,7 @@ msgstr "Dolgu için bit eşlem"
 #: source/svdraw/svdstr.src#SIP_XA_FILLTRANSPARENCE.String.Text
 #, fuzzy
 msgid  "Transparency"
-msgstr "Şeffaflık"
+msgstr "Ş~effaflık"
 
 #: source/svdraw/svdstr.src#SIP_XA_GRADIENTSTEPCOUNT.String.Text
 #, fuzzy
@@ -11870,8 +11882,9 @@ msgid  "Color Palette"
 msgstr ""
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_UNDO_ACTIONS.String.Text
+#, fuzzy
 msgid  "Actions to undo: $(ARG1)"
-msgstr "$(ARG1) işlemini geri al"
+msgstr "$(ARG1) yapılanları geri al"
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_UNDO_ACTION.String.Text
 #, fuzzy
@@ -11879,8 +11892,9 @@ msgid  "Actions to undo: $(ARG1)"
 msgstr "$(ARG1) işlemini geri al"
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_REDO_ACTIONS.String.Text
+#, fuzzy
 msgid  "Actions to redo: $(ARG1)"
-msgstr "$(ARG1) işlemini yeniden yap"
+msgstr "$(ARG1) yapılanları yinele"
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_REDO_ACTION.String.Text
 #, fuzzy
