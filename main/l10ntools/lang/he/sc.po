@@ -185,7 +185,7 @@ msgstr "אזור בחירה"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.RB_INAREA.ImageButton.QuickHelpText
 msgid  "Shrink"
-msgstr "כיווץ"
+msgstr "Shrink"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_OUTAREA.FixedText.Text
 msgid  "Results to"
@@ -501,7 +501,7 @@ msgstr "קבץ לפי"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.HelpButton.Text
 msgid  "Grouping"
-msgstr "קבוצות"
+msgstr "קיבוץ"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPDATEGROUP.FL_START.FixedLine.Text
 msgid  "Start"
@@ -5328,18 +5328,22 @@ msgid  "Value"
 msgstr "ערך"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_OP1.Default.StringList.item
+#, fuzzy
 msgid  "OR"
-msgstr "או"
+msgstr "OR"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_OP2.Default.StringList.item
+#, fuzzy
 msgid  "OR"
-msgstr "או"
+msgstr "OR"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_OP3.Default.StringList.item
+#, fuzzy
 msgid  "OR"
 msgstr "OR"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_OP4.Default.StringList.item
+#, fuzzy
 msgid  "OR"
 msgstr "OR"
 
@@ -5589,18 +5593,22 @@ msgid  "Value"
 msgstr "ערך"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_OP1.Default.StringList.item
+#, fuzzy
 msgid  "AND"
-msgstr "ו"
+msgstr "AND"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_OP2.Default.StringList.item
+#, fuzzy
 msgid  "AND"
-msgstr "ו"
+msgstr "AND"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_OP3.Default.StringList.item
+#, fuzzy
 msgid  "AND"
 msgstr "AND"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_OP4.Default.StringList.item
+#, fuzzy
 msgid  "AND"
 msgstr "AND"
 
@@ -5635,91 +5643,99 @@ msgid  "<>"
 msgstr "<>"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
-msgid  "Largest"
-msgstr "הגדול ביותר"
-
-#: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
-msgid  "Smallest"
-msgstr "הקטן ביותר"
-
-#: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
-msgid  "Largest %"
-msgstr "הגדול ביותר %‏"
-
-#: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
-msgid  "Smallest %"
-msgstr "הקטן ביותר %‏"
-
-#: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
-msgid  "Contains"
-msgstr "מכיל"
-
-#: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
-#, fuzzy
-msgid  "Does not contain"
-msgstr "לא מכיל"
-
-#: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
-#, fuzzy
-msgid  "Begins with"
-msgstr "מתחיל עם"
-
-#: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
-#, fuzzy
-msgid  "Does not begin with"
-msgstr "לא מתחיל עם"
-
-#: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
-#, fuzzy
-msgid  "Ends with"
-msgstr "מסתיים עם"
-
-#: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
-#, fuzzy
-msgid  "="
-msgstr "="
-
-#: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
-#, fuzzy
-msgid  "<"
-msgstr "<"
-
-#: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
-#, fuzzy
-msgid  ">"
-msgstr ">"
-
-#: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
-#, fuzzy
-msgid  "<="
-msgstr "<="
-
-#: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
-#, fuzzy
-msgid  ">="
-msgstr ">="
-
-#: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
-#, fuzzy
-msgid  "<>"
-msgstr "<>"
-
-#: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
 msgid  "Largest"
 msgstr "הכי גדול"
 
-#: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
+#: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
+#, fuzzy
 msgid  "Smallest"
 msgstr "הכי קטן"
 
-#: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
+#: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
+#, fuzzy
 msgid  "Largest %"
 msgstr "הכי גדול %‏"
 
-#: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
+#: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
+#, fuzzy
 msgid  "Smallest %"
-msgstr "הקטן ביותר %‏"
+msgstr "הכי קטן %‏"
+
+#: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
+#, fuzzy
+msgid  "Contains"
+msgstr "מכיל"
+
+#: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
+#, fuzzy
+msgid  "Does not contain"
+msgstr "לא מכיל"
+
+#: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
+#, fuzzy
+msgid  "Begins with"
+msgstr "מתחיל עם"
+
+#: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
+#, fuzzy
+msgid  "Does not begin with"
+msgstr "לא מתחיל עם"
+
+#: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
+#, fuzzy
+msgid  "Ends with"
+msgstr "מסתיים עם"
+
+#: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
+#, fuzzy
+msgid  "="
+msgstr "="
+
+#: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
+#, fuzzy
+msgid  "<"
+msgstr "<"
+
+#: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
+#, fuzzy
+msgid  ">"
+msgstr ">"
+
+#: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
+#, fuzzy
+msgid  "<="
+msgstr "<="
+
+#: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
+#, fuzzy
+msgid  ">="
+msgstr ">="
+
+#: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
+#, fuzzy
+msgid  "<>"
+msgstr "<>"
+
+#: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
+#, fuzzy
+msgid  "Largest"
+msgstr "הגדול ביותר"
+
+#: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
+#, fuzzy
+msgid  "Smallest"
+msgstr "הקטן ביותר"
+
+#: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
+#, fuzzy
+msgid  "Largest %"
+msgstr "הגדול ביותר %‏"
+
+#: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
+#, fuzzy
+msgid  "Smallest %"
+msgstr "הקטן ביותרן %‏"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
 #, fuzzy
@@ -5777,18 +5793,22 @@ msgid  "<>"
 msgstr "<>"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND3.Default.stringlist.item
+#, fuzzy
 msgid  "Largest"
 msgstr "הגדול ביותר"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND3.Default.stringlist.item
+#, fuzzy
 msgid  "Smallest"
 msgstr "הקטן ביותר"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND3.Default.stringlist.item
+#, fuzzy
 msgid  "Largest %"
 msgstr "הגדול ביותר %‏"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND3.Default.stringlist.item
+#, fuzzy
 msgid  "Smallest %"
 msgstr "הקטן ביותרן %‏"
 
@@ -6428,7 +6448,7 @@ msgstr ""
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "מספר"
+msgstr "number"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.3.String.Text
 #, fuzzy
@@ -6475,7 +6495,7 @@ msgstr ""
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_HOUR.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "number"
+msgstr "מספר"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_HOUR.3.String.Text
 #, fuzzy
@@ -8297,7 +8317,7 @@ msgstr "מחזירה את השורש של מספר נתון.‏"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "מספר"
+msgstr "number"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.3.String.Text
 #, fuzzy
@@ -8528,7 +8548,7 @@ msgstr "מחזירה את סינוס של מספר נתון.‏"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "number"
+msgstr "מספר"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN.3.String.Text
 #, fuzzy
@@ -8558,7 +8578,7 @@ msgstr "מחזירה את הטאנג'נט של מספר נתון.‏"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "number"
+msgstr "מספר"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN.3.String.Text
 #, fuzzy
@@ -8588,7 +8608,7 @@ msgstr "מחזירה את הסינוס ההיפרבולי של מספר נתון
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN_HYP.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "number"
+msgstr "מספר"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN_HYP.3.String.Text
 #, fuzzy
@@ -8617,7 +8637,7 @@ msgstr "מחזירה את הטאנג'נט ההיפרבולי של מספר נת�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN_HYP.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "number"
+msgstr "מספר"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN_HYP.3.String.Text
 #, fuzzy
@@ -12225,7 +12245,7 @@ msgstr ""
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.2.String.Text
 #, fuzzy
 msgid  "find_text"
-msgstr "מצא_טקסט"
+msgstr "find_text"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.3.String.Text
 #, fuzzy
@@ -12973,6 +12993,54 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MIDB.7.String.Text
 msgid  "The number of characters for the text."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.1.String.Text
+msgid  "Return the cosecant of an angle. CSC(x)=1/SIN(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.3.String.Text
+msgid  "The angle in radians for which the cosecant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.1.String.Text
+msgid  "Return the secant of an angle. SEC(x)=1/COS(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.3.String.Text
+msgid  "The angle in radians for which the secant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.1.String.Text
+msgid  "Return the hyperbolic cosecant of a hyperbolic angle. CSCH(x)=1/SINH(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.3.String.Text
+msgid  "The hyperbolic angle in radians for which the hyperbolic cosecant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.1.String.Text
+msgid  "Return the hyperbolic secant of a hyperbolic angle. SECH(x)=1/COSH(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.3.String.Text
+msgid  "The hyperbolic angle in radians for which the hyperbolic secant is to be calculated."
 msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_APPLICATION.String.Text
