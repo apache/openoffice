@@ -339,14 +339,16 @@ bool l10nMem_impl::convFilterWarning(const std::string& sSourceFile,
                                      const std::string& sKey,
                                      const std::string& sOrgText)
 {
-  if (sOrgText == "-"               ||
-      sSourceFile == "basic.src"    ||
-      sSourceFile == "basmsg.src"   ||
-      sSourceFile == "svtmsg.src"   ||
-      sSourceFile == "testtool.src" ||
-      sSourceFile == "ttmsg.src"    )
-    return true;
-
+  if (msModuleName == "basic")
+  {
+    if (sOrgText == "-"               ||
+        sSourceFile == "basic.src"    ||
+        sSourceFile == "basmsg.src"   ||
+        sSourceFile == "svtmsg.src"   ||
+        sSourceFile == "testtool.src" ||
+        sSourceFile == "ttmsg.src"    )
+      return true;
+  }
   return false;
 }
 
