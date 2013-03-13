@@ -1856,7 +1856,8 @@ msgid  "~Delete"
 msgstr "~Suprimeix"
 
 #: source/dialogs/about.src#RID_DEFAULTABOUT.ModalDialog.Text
-msgid  "About %PRODUCTNAME"
+#, fuzzy
+msgid  "About %FULLPRODUCTNAME"
 msgstr "Quant a l'%PRODUCTNAME"
 
 #: source/dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_BTN_README.PushButton.Text
@@ -1888,598 +1889,747 @@ msgid  "is not available for spellchecking\nPlease check your installation and i
 msgstr ""
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.ModalDialog.Text
+#, fuzzy
 msgid  "Hyphenation"
 msgstr "Partició de mots"
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.FT_WORD.FixedText.Text
+#, fuzzy
 msgid  "~Word"
 msgstr "~Paraula"
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.BTN_HYPH_CUT.OKButton.Text
+#, fuzzy
 msgid  "H~yphenate"
 msgstr "Parteix els ~mots"
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.BTN_HYPH_CONTINUE.PushButton.Text
+#, fuzzy
 msgid  "~Skip"
 msgstr "~Omet"
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.BTN_HYPH_DELETE.PushButton.Text
+#, fuzzy
 msgid  "~Remove"
 msgstr "Sup~rimeix"
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.BTN_HYPH_ALL.PushButton.Text
+#, fuzzy
 msgid  "Hyphenate ~All"
 msgstr "Parteix ~tots els mots"
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.BTN_HYPH_CANCEL.CancelButton.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "~Tanca"
 
 #: source/dialogs/tbxform.src#RID_SVX_DLG_INPUTRECORDNO.ModalDialog.Text
+#, fuzzy
 msgid  "Record Number"
 msgstr "Número de registre"
 
 #: source/dialogs/tbxform.src#RID_SVX_DLG_INPUTRECORDNO.1.FixedText.Text
+#, fuzzy
 msgid  "go to record"
 msgstr "vés al registre"
 
 #: source/dialogs/multipat.src#RID_SVXDLG_MULTIPATH.ModalDialog.Text
+#, fuzzy
 msgid  "Select Paths"
 msgstr "Seleccioneu els camins"
 
 #: source/dialogs/multipat.src#RID_SVXDLG_MULTIPATH.FL_MULTIPATH.FixedLine.Text
+#, fuzzy
 msgid  "Paths"
 msgstr "Camins"
 
 #: source/dialogs/multipat.src#RID_SVXDLG_MULTIPATH.FT_RADIOBUTTON.FixedText.Text
+#, fuzzy
 msgid  "Mark the default path for new files."
 msgstr "Marca el camí per defecte dels fitxers nous."
 
 #: source/dialogs/multipat.src#RID_SVXDLG_MULTIPATH.BTN_ADD_MULTIPATH.PushButton.Text
+#, fuzzy
 msgid  "~Add..."
 msgstr "~Afegeix..."
 
 #: source/dialogs/multipat.src#RID_SVXDLG_MULTIPATH.BTN_DEL_MULTIPATH.PushButton.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "~Suprimeix"
 
 #: source/dialogs/multipat.src#RID_SVXDLG_MULTIPATH.STR_HEADER_PATHS.String.Text
+#, fuzzy
 msgid  "Path list"
 msgstr "Llista de camins"
 
 #: source/dialogs/multipat.src#RID_MULTIPATH_DBL_ERR.String.Text
+#, fuzzy
 msgid  "The path %1 already exists."
 msgstr "El camí %1 ja existeix."
 
 #: source/dialogs/multipat.src#RID_SVXSTR_FILE_TITLE.String.Text
+#, fuzzy
 msgid  "Select files"
 msgstr "Seleccioneu els fitxers"
 
 #: source/dialogs/multipat.src#RID_SVXSTR_FILE_HEADLINE.String.Text
+#, fuzzy
 msgid  "Files"
 msgstr "Fitxers"
 
 #: source/dialogs/multipat.src#RID_SVXSTR_ARCHIVE_TITLE.String.Text
+#, fuzzy
 msgid  "Select Archives"
 msgstr "Seleccioneu els arxius"
 
 #: source/dialogs/multipat.src#RID_SVXSTR_ARCHIVE_HEADLINE.String.Text
+#, fuzzy
 msgid  "Archives"
 msgstr "Arxius"
 
 #: source/dialogs/multipat.src#RID_SVXSTR_MULTIFILE_DBL_ERR.String.Text
+#, fuzzy
 msgid  "The file %1 already exists."
 msgstr "El fitxer %1 ja existeix."
 
 #: source/dialogs/svuidlg.src#MD_PASTE_OBJECT.ModalDialog.Text
+#, fuzzy
 msgid  "Paste Special"
 msgstr "Enganxament especial"
 
 #: source/dialogs/svuidlg.src#MD_PASTE_OBJECT.FT_SOURCE.FixedText.Text
+#, fuzzy
 msgid  "Source:"
 msgstr "Font:"
 
 #: source/dialogs/svuidlg.src#MD_PASTE_OBJECT.RB_PASTE.RadioButton.Text
+#, fuzzy
 msgid  "~Insert as"
 msgstr "~Insereix com a"
 
 #: source/dialogs/svuidlg.src#MD_PASTE_OBJECT.RB_PASTE_LINK.RadioButton.Text
+#, fuzzy
 msgid  "Link to"
 msgstr "Enllaç a"
 
 #: source/dialogs/svuidlg.src#MD_PASTE_OBJECT.CB_DISPLAY_AS_ICON.CheckBox.Text
+#, fuzzy
 msgid  "~As icon"
 msgstr "~Com a icona"
 
 #: source/dialogs/svuidlg.src#MD_PASTE_OBJECT.PB_CHANGE_ICON.PushButton.Text
+#, fuzzy
 msgid  "~Other Icon..."
 msgstr "~Una altra icona..."
 
 #: source/dialogs/svuidlg.src#MD_PASTE_OBJECT.FL_CHOICE.FixedLine.Text
+#, fuzzy
 msgid  "Selection"
 msgstr "Selecció"
 
 #: source/dialogs/svuidlg.src#MD_PASTE_OBJECT.S_OBJECT.String.Text
+#, fuzzy
 msgid  "Object"
 msgstr "Objecte"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.ModalDialog.Text
+#, fuzzy
 msgid  "Edit Links"
 msgstr "Edita els enllaços"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_FILES.FixedText.Text
+#, fuzzy
 msgid  "Source file"
 msgstr "Fitxer font"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_LINKS.FixedText.Text
+#, fuzzy
 msgid  "Element:"
 msgstr "Element:"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_TYPE.FixedText.Text
+#, fuzzy
 msgid  "Type"
 msgstr "Tipus"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_STATUS.FixedText.Text
+#, fuzzy
 msgid  "Status"
 msgstr "Estat"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.1.CancelButton.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "Tan~ca"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.PB_UPDATE_NOW.PushButton.Text
+#, fuzzy
 msgid  "~Update"
 msgstr "~Actualitza"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.PB_OPEN_SOURCE.PushButton.Text
+#, fuzzy
 msgid  "~Open"
 msgstr "~Obre"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.PB_CHANGE_SOURCE.PushButton.Text
+#, fuzzy
 msgid  "~Modify..."
 msgstr "~Modifica..."
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.PB_BREAK_LINK.PushButton.Text
+#, fuzzy
 msgid  "~Break Link"
 msgstr "~Trenca l'enllaç"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_FILES2.FixedText.Text
+#, fuzzy
 msgid  "Source file"
 msgstr "Fitxer font"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_SOURCE2.FixedText.Text
+#, fuzzy
 msgid  "Element:"
 msgstr "Element:"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_TYPE2.FixedText.Text
+#, fuzzy
 msgid  "Type:"
 msgstr "Tipus:"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_UPDATE.FixedText.Text
+#, fuzzy
 msgid  "Update:"
 msgstr "Actualització:"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.RB_AUTOMATIC.RadioButton.Text
+#, fuzzy
 msgid  "~Automatic"
 msgstr "~Automàtica"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.RB_MANUAL.RadioButton.Text
+#, fuzzy
 msgid  "Ma~nual"
 msgstr "Ma~nual"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_AUTOLINK.String.Text
+#, fuzzy
 msgid  "Automatic"
 msgstr "Automàtic"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_MANUALLINK.String.Text
+#, fuzzy
 msgid  "Manual"
 msgstr "Manual"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_BROKENLINK.String.Text
+#, fuzzy
 msgid  "Not available"
 msgstr "No està disponible"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_GRAPHICLINK.String.Text
+#, fuzzy
 msgid  "Graphic"
 msgstr "Gràfic"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_BUTTONCLOSE.String.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "Tan~ca"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_CLOSELINKMSG.String.Text
+#, fuzzy
 msgid  "Are you sure you want to remove the selected link?"
 msgstr "Esteu segur que voleu suprimir l'enllaç seleccionat?"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_CLOSELINKMSG_MULTI.String.Text
+#, fuzzy
 msgid  "Are you sure you want to remove the selected link?"
 msgstr "Esteu segur que voleu suprimir l'enllaç seleccionat?"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_WAITINGLINK.String.Text
+#, fuzzy
 msgid  "Waiting"
 msgstr "S'està esperant"
 
 #: source/dialogs/svuidlg.src#MD_LINKEDIT.ModalDialog.Text
+#, fuzzy
 msgid  "Modify Link"
 msgstr "Modifica l'enllaç"
 
 #: source/dialogs/svuidlg.src#MD_LINKEDIT.2.FixedText.Text
+#, fuzzy
 msgid  "Exchange source:"
 msgstr "Intercanvia l'origen:"
 
 #: source/dialogs/svuidlg.src#MD_LINKEDIT.ED_FULL_SOURCE_NAME.Edit.Text
+#, fuzzy
 msgid  "Edit"
 msgstr "Edita"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OLEOBJECT.RB_NEW_OBJECT.RadioButton.Text
+#, fuzzy
 msgid  "~Create new"
 msgstr "~Crea'n un de nou"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OLEOBJECT.RB_OBJECT_FROMFILE.RadioButton.Text
+#, fuzzy
 msgid  "Create from ~file"
 msgstr "Crea'n un a partir d'un ~fitxer"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OLEOBJECT.BTN_FILEPATH.PushButton.Text
+#, fuzzy
 msgid  "~Search..."
 msgstr "~Cerca..."
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OLEOBJECT.CB_FILELINK.CheckBox.Text
+#, fuzzy
 msgid  "~Link to file"
 msgstr "~Enllaç a fitxer"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OLEOBJECT.GB_OBJECT.FixedLine.Text
+#, fuzzy
 msgid  "Object type"
 msgstr "Tipus d'objecte"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OLEOBJECT.STR_FILE.String.Text
+#, fuzzy
 msgid  "File"
 msgstr "Fitxer"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OLEOBJECT.String.Text
+#, fuzzy
 msgid  "Insert OLE Object"
 msgstr "Insereix un objecte OLE"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_PLUGIN.BTN_FILEURL.PushButton.Text
+#, fuzzy
 msgid  "~Browse..."
 msgstr "~Navega..."
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_PLUGIN.GB_FILEURL.FixedLine.Text
+#, fuzzy
 msgid  "File / URL"
 msgstr "Fitxer / URL"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_PLUGIN.GB_PLUGINS_OPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Options"
 msgstr "Opcions"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_PLUGIN.HelpButton.Text
+#, fuzzy
 msgid  "Insert Plug-in"
 msgstr "Insereix un connector"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_APPLET.FT_CLASSFILE.FixedText.Text
+#, fuzzy
 msgid  "~Class"
 msgstr "~Classe"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_APPLET.FT_CLASSLOCATION.FixedText.Text
+#, fuzzy
 msgid  "Class ~Location"
 msgstr "~Ubicació de la classe"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_APPLET.BTN_CLASS.PushButton.Text
+#, fuzzy
 msgid  "~Search..."
 msgstr "~Cerca..."
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_APPLET.GB_CLASS.FixedLine.Text
+#, fuzzy
 msgid  "File"
 msgstr "Fitxer"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_APPLET.GB_APPLET_OPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Options"
 msgstr "Opcions"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_APPLET.HelpButton.Text
+#, fuzzy
 msgid  "Insert Applet"
 msgstr "Insereix miniaplicació"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.ModalDialog.Text
+#, fuzzy
 msgid  "Floating Frame Properties"
 msgstr "Propietats del marc flotant"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.FT_FRAMENAME.FixedText.Text
+#, fuzzy
 msgid  "~Name"
 msgstr "~Nom"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.FT_URL.FixedText.Text
+#, fuzzy
 msgid  "~Contents"
 msgstr "~Contingut"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.RB_SCROLLINGON.RadioButton.Text
+#, fuzzy
 msgid  "~On"
 msgstr "A~ctivada"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.RB_SCROLLINGOFF.RadioButton.Text
+#, fuzzy
 msgid  "O~ff"
 msgstr "~Desactivada"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.RB_SCROLLINGAUTO.RadioButton.Text
+#, fuzzy
 msgid  "Au~tomatic"
 msgstr "Au~tomàtic"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.GB_SCROLLING.FixedLine.Text
+#, fuzzy
 msgid  "Scroll bar"
 msgstr "Barra de desplaçament"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.RB_FRMBORDER_ON.RadioButton.Text
+#, fuzzy
 msgid  "On"
 msgstr "Activada"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.RB_FRMBORDER_OFF.RadioButton.Text
+#, fuzzy
 msgid  "Off"
 msgstr "Desactivada"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.GB_BORDER.FixedLine.Text
+#, fuzzy
 msgid  "Border"
 msgstr "Vora"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.FT_MARGINWIDTH.FixedText.Text
+#, fuzzy
 msgid  "~Width"
 msgstr "~Amplada"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.CB_MARGINWIDTHDEFAULT.CheckBox.Text
+#, fuzzy
 msgid  "~Default"
 msgstr "~Per defecte"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.FT_MARGINHEIGHT.FixedText.Text
+#, fuzzy
 msgid  "H~eight"
 msgstr "A~lçada"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.CB_MARGINHEIGHTDEFAULT.CheckBox.Text
+#, fuzzy
 msgid  "Defa~ult"
 msgstr "Per de~fecte"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.GB_MARGIN.FixedLine.Text
+#, fuzzy
 msgid  "Spacing to contents"
 msgstr "Espaiat al contingut"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.String.Text
+#, fuzzy
 msgid  "Select File for Floating Frame"
 msgstr "Seleccioneu un fitxer per al marc flotant"
 
 #: source/dialogs/svuidlg.src#STR_EDIT_APPLET.String.Text
+#, fuzzy
 msgid  "Edit Applet"
 msgstr "Edita la miniaplicació"
 
 #: source/dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.TabDialog.Text
+#, fuzzy
 msgid  "Format Cells"
 msgstr "Formata les cel·les"
 
 #: source/dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_CHAR_NAME.PageItem.Text
+#, fuzzy
 msgid  "Font"
 msgstr "Tipus de lletra"
 
 #: source/dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_CHAR_EFFECTS.PageItem.Text
+#, fuzzy
 msgid  "Font Effects"
 msgstr "Efectes de lletra"
 
 #: source/dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_BORDER.PageItem.Text
+#, fuzzy
 msgid  "Borders"
 msgstr "Vores"
 
 #: source/dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_AREA.PageItem.Text
+#, fuzzy
 msgid  "Background"
 msgstr "Fons"
 
 #: source/dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.PushButton.Text
+#, fuzzy
 msgid  "Return"
 msgstr "Retorn"
 
 #: source/dialogs/splitcelldlg.src#RID_SVX_SPLITCELLDLG.ModalDialog.Text
+#, fuzzy
 msgid  "Split Cells"
 msgstr "Divideix les cel·les"
 
 #: source/dialogs/splitcelldlg.src#RID_SVX_SPLITCELLDLG.FT_COUNT.FixedText.Text
+#, fuzzy
 msgid  "~Split cell into"
 msgstr "~Divideix la cel·la en"
 
 #: source/dialogs/splitcelldlg.src#RID_SVX_SPLITCELLDLG.FL_COUNT.FixedLine.Text
+#, fuzzy
 msgid  "Split"
 msgstr "Divideix"
 
 #: source/dialogs/splitcelldlg.src#RID_SVX_SPLITCELLDLG.RB_HORZ.ImageRadioButton.Text
+#, fuzzy
 msgid  "H~orizontally"
 msgstr "H~oritzontalment"
 
 #: source/dialogs/splitcelldlg.src#RID_SVX_SPLITCELLDLG.CB_PROP.CheckBox.Text
+#, fuzzy
 msgid  "~Into equal proportions"
 msgstr "A proporcions ~iguals"
 
 #: source/dialogs/splitcelldlg.src#RID_SVX_SPLITCELLDLG.RB_VERT.ImageRadioButton.Text
+#, fuzzy
 msgid  "~Vertically"
 msgstr "~Verticalment"
 
 #: source/dialogs/splitcelldlg.src#RID_SVX_SPLITCELLDLG.FL_DIR.FixedLine.Text
+#, fuzzy
 msgid  "Direction"
 msgstr "Direcció"
 
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.ModalDialog.Text
+#, fuzzy
 msgid  "Note"
 msgstr "Nota"
 
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.FT_LASTEDITLABEL.FixedText.Text
+#, fuzzy
 msgid  "Author"
 msgstr "Autor"
 
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.FT_EDIT.FixedText.Text
+#, fuzzy
 msgid  "~Text"
 msgstr "~Text"
 
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.FL_POSTIT.FixedLine.Text
+#, fuzzy
 msgid  "Contents"
 msgstr "Contingut"
 
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.FT_AUTHOR.FixedText.Text
+#, fuzzy
 msgid  "~Insert"
 msgstr "~Insereix"
 
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.BTN_AUTHOR.PushButton.Text
+#, fuzzy
 msgid  "Author"
 msgstr "Autor"
 
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.STR_NOTIZ_EDIT.String.Text
+#, fuzzy
 msgid  "Edit Note"
 msgstr "Edita la nota"
 
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.STR_NOTIZ_INSERT.String.Text
+#, fuzzy
 msgid  "Insert note"
 msgstr "Insereix una nota"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.TabDialog.Text
+#, fuzzy
 msgid  "Text Format"
 msgstr "Format del text"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_CHAR_NAME.PageItem.Text
+#, fuzzy
 msgid  "Font"
 msgstr "Tipus de lletra"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_CHAR_EFFECTS.PageItem.Text
+#, fuzzy
 msgid  "Font Effects"
 msgstr "Efectes de lletra"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_CHAR_POSITION.PageItem.Text
+#, fuzzy
 msgid  "Position"
 msgstr "Posició"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_CHAR_TWOLINES.PageItem.Text
+#, fuzzy
 msgid  "Asian Layout"
 msgstr "Disposició asiàtica"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_STD_PARAGRAPH.PageItem.Text
+#, fuzzy
 msgid  "Indents & Spacing"
 msgstr "Sagnats i espaiat"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PageItem.Text
+#, fuzzy
 msgid  "Alignment"
 msgstr "Alineació"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_EXT_PARAGRAPH.PageItem.Text
+#, fuzzy
 msgid  "Text Flow"
 msgstr "Flux del text"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_PARA_ASIAN.PageItem.Text
+#, fuzzy
 msgid  "Asian Typography"
 msgstr "Tipografia asiàtica"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_BACKGROUND.PageItem.Text
+#, fuzzy
 msgid  "Background"
 msgstr "Fons"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHATTR.ModalDialog.Text
+#, fuzzy
 msgid  "Attributes"
 msgstr "Atributs"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHATTR.FL_ATTR.FixedText.Text
+#, fuzzy
 msgid  "~Options"
 msgstr "~Opcions"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.ModalDialog.Text
+#, fuzzy
 msgid  "Similarity Search"
 msgstr "Cerca per similitud"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.FT_OTHER.FixedText.Text
+#, fuzzy
 msgid  "~Exchange characters"
 msgstr "~Intercanvia els caràcters"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.FT_LONGER.FixedText.Text
+#, fuzzy
 msgid  "~Add characters"
 msgstr "~Afegeix caràcters"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.FT_SHORTER.FixedText.Text
+#, fuzzy
 msgid  "~Remove characters"
 msgstr "~Suprimeix caràcters"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.CB_RELAX.CheckBox.Text
+#, fuzzy
 msgid  "~Combine"
 msgstr "~Combina"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.FL_SIMILARITY.FixedLine.Text
+#, fuzzy
 msgid  "Settings"
 msgstr "Paràmetres"
 
 #: source/dialogs/insrc.src#DLG_INS_ROW_COL.ModalDialog.Text
+#, fuzzy
 msgid  "Insert"
 msgstr "Insereix"
 
 #: source/dialogs/insrc.src#DLG_INS_ROW_COL.CB_POS_BEFORE.RadioButton.Text
+#, fuzzy
 msgid  "~Before"
 msgstr "A~bans"
 
 #: source/dialogs/insrc.src#DLG_INS_ROW_COL.CB_POS_AFTER.RadioButton.Text
+#, fuzzy
 msgid  "A~fter"
 msgstr "Desp~rés"
 
 #: source/dialogs/insrc.src#DLG_INS_ROW_COL.FL_INS.FixedLine.Text
+#, fuzzy
 msgid  "Insert"
 msgstr "Insereix"
 
 #: source/dialogs/insrc.src#DLG_INS_ROW_COL.FL_POS.FixedLine.Text
+#, fuzzy
 msgid  "Position"
 msgstr "Posició"
 
 #: source/dialogs/insrc.src#DLG_INS_ROW_COL.FT_COUNT.FixedText.Text
+#, fuzzy
 msgid  "~Number"
 msgstr "~Nombre"
 
 #: source/dialogs/insrc.src#DLG_INS_ROW_COL.STR_ROW.String.Text
+#, fuzzy
 msgid  " Rows"
 msgstr " Files"
 
 #: source/dialogs/insrc.src#DLG_INS_ROW_COL.STR_COL.String.Text
+#, fuzzy
 msgid  " Columns"
 msgstr " Columnes"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_NAME.ModalDialog.Text
+#, fuzzy
 msgid  "Name"
 msgstr "Nom"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_OBJECT_NAME.ModalDialog.Text
+#, fuzzy
 msgid  "Name"
 msgstr "Nom"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_OBJECT_NAME.NTD_FT_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Name"
 msgstr "~Nom"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_OBJECT_TITLE_DESC.ModalDialog.Text
+#, fuzzy
 msgid  "Description"
 msgstr "Descripció"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_OBJECT_TITLE_DESC.NTD_FT_TITLE.FixedText.Text
+#, fuzzy
 msgid  "~Title"
 msgstr "~Títol"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_OBJECT_TITLE_DESC.NTD_FT_DESC.FixedText.Text
+#, fuzzy
 msgid  "~Description"
 msgstr "~Descripció"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.ModalDialog.Text
+#, fuzzy
 msgid  "Properties"
 msgstr "Propietats"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_URL1.FixedText.Text
+#, fuzzy
 msgid  "~URL"
 msgstr "~URL"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_TARGET.FixedText.Text
+#, fuzzy
 msgid  "F~rame"
 msgstr "Ma~rc"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Name"
 msgstr "~Nom"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_URLDESCRIPTION.FixedText.Text
+#, fuzzy
 msgid  "Alternative ~text"
 msgstr "~Text alternatiu"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_DESCRIPTION.FixedText.Text
+#, fuzzy
 msgid  "~Description"
 msgstr "~Descripció"
 
@@ -2548,50 +2698,62 @@ msgid  "~Key"
 msgstr ""
 
 #: source/dialogs/iconcdlg.src#RID_SVXSTR_ICONCHOICEDLG_RESETBUT.String.Text
+#, fuzzy
 msgid  "~Back"
 msgstr "~Enrere"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.ModalDialog.Text
+#, fuzzy
 msgid  "Zoom & View Layout"
 msgstr "Escala i format de la visualització"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.FL_ZOOM.FixedLine.Text
+#, fuzzy
 msgid  "Zoom factor"
 msgstr "Factor d'escala"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.BTN_OPTIMAL.RadioButton.Text
+#, fuzzy
 msgid  "~Optimal"
 msgstr "Ò~ptim"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.BTN_WHOLE_PAGE.RadioButton.Text
+#, fuzzy
 msgid  "~Fit width and height"
 msgstr "Ajus~ta a l'amplada i a l'alçada"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.BTN_PAGE_WIDTH.RadioButton.Text
+#, fuzzy
 msgid  "Fit ~width"
 msgstr "Ajusta a l'a~mplada"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.BTN_USER.RadioButton.Text
+#, fuzzy
 msgid  "~Variable"
 msgstr "~Variable"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.FL_VIEWLAYOUT.FixedLine.Text
+#, fuzzy
 msgid  "View layout"
 msgstr "Format de la visualització"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.BTN_AUTOMATIC.RadioButton.Text
+#, fuzzy
 msgid  "~Automatic"
 msgstr "~Automàtic"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.BTN_SINGLE.RadioButton.Text
+#, fuzzy
 msgid  "~Single page"
 msgstr "Una ~sola pàgina"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.BTN_COLUMNS.RadioButton.Text
+#, fuzzy
 msgid  "~Columns"
 msgstr "~Columnes"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.CHK_BOOK.CheckBox.Text
+#, fuzzy
 msgid  "~Book mode"
 msgstr "Mode lli~bre"
 
@@ -2600,322 +2762,402 @@ msgid  "The following columns are currently hidden. Please mark the fields you w
 msgstr ""
 
 #: source/dialogs/showcols.src#RID_SVX_DLG_SHOWGRIDCOLUMNS.CancelButton.Text
+#, fuzzy
 msgid  "Show columns"
 msgstr "Mostra les columnes"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.ModalDialog.Text
+#, fuzzy
 msgid  "Record Search"
 msgstr "Cerca de registres"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_SEARCHFOR.FixedLine.Text
+#, fuzzy
 msgid  "Search for"
 msgstr "Cerca"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_SEARCHFORTEXT.RadioButton.Text
+#, fuzzy
 msgid  "~Text"
 msgstr "~Text"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_SEARCHFORNULL.RadioButton.Text
+#, fuzzy
 msgid  "Field content is ~NULL"
 msgstr "El contingut del camp és ~buit"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_SEARCHFORNOTNULL.RadioButton.Text
+#, fuzzy
 msgid  "Field content is not NU~LL"
 msgstr "El contingut del camp no és ~buit"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_WHERE.FixedLine.Text
+#, fuzzy
 msgid  "Where to search"
 msgstr "Àrea de cerca"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FT_FORM.FixedText.Text
+#, fuzzy
 msgid  "Form"
 msgstr "Formulari"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_ALLFIELDS.RadioButton.Text
+#, fuzzy
 msgid  "All Fields"
 msgstr "Tots els camps"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_SINGLEFIELD.RadioButton.Text
+#, fuzzy
 msgid  "Single field"
 msgstr "Camp únic"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_OPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Settings"
 msgstr "Paràmetres"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FT_POSITION.FixedText.Text
+#, fuzzy
 msgid  "Position"
 msgstr "Posició"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_USEFORMATTER.CheckBox.Text
+#, fuzzy
 msgid  "Apply field format"
 msgstr "Aplica el format del camp"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_CASE.CheckBox.Text
+#, fuzzy
 msgid  "Match case"
 msgstr "Distingeix entre majúscules i minúscules"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_BACKWARD.CheckBox.Text
+#, fuzzy
 msgid  "Search backwards"
 msgstr "Cerca cap enrere"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_STARTOVER.CheckBox.Text
+#, fuzzy
 msgid  "From Beginning"
 msgstr "~Des del principi"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_WILDCARD.CheckBox.Text
+#, fuzzy
 msgid  "Wildcard expression"
 msgstr "~Expressió comodí"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_REGULAR.CheckBox.Text
+#, fuzzy
 msgid  "Regular expression"
 msgstr "Expressió ~regular"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_APPROX.CheckBox.Text
+#, fuzzy
 msgid  "Similarity Search"
 msgstr "Cerca per similitud"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_APPROXSETTINGS.PushButton.Text
+#, fuzzy
 msgid  "..."
 msgstr "..."
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_HALFFULLFORMS.CheckBox.Text
+#, fuzzy
 msgid  "Match character width"
 msgstr "Concorda amb l'amplada del caràcter"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_SOUNDSLIKECJK.CheckBox.Text
+#, fuzzy
 msgid  "Sounds like (Japanese)"
 msgstr "Semblança fonètica (japonès)"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_SOUNDSLIKESETTINGS.PushButton.Text
+#, fuzzy
 msgid  "..."
 msgstr "..."
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_STATE.FixedLine.Text
+#, fuzzy
 msgid  "State"
 msgstr "Estat"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FT_RECORDLABEL.FixedText.Text
+#, fuzzy
 msgid  "Record :"
 msgstr "Registre:"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_SEARCH.PushButton.Text
+#, fuzzy
 msgid  "Search"
 msgstr "Cerca"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.1.CancelButton.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "Tan~ca"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.1.HelpButton.Text
+#, fuzzy
 msgid  "~Help"
 msgstr "A~juda"
 
 #: source/dialogs/fmsearch.src#RID_STR_SEARCH_ANYWHERE.String.Text
+#, fuzzy
 msgid  "anywhere in the field"
 msgstr "a qualsevol part del camp"
 
 #: source/dialogs/fmsearch.src#RID_STR_SEARCH_BEGINNING.String.Text
+#, fuzzy
 msgid  "beginning of field"
 msgstr "a l'inici del camp"
 
 #: source/dialogs/fmsearch.src#RID_STR_SEARCH_END.String.Text
+#, fuzzy
 msgid  "end of field"
 msgstr "a la fi del camp"
 
 #: source/dialogs/fmsearch.src#RID_STR_SEARCH_WHOLE.String.Text
+#, fuzzy
 msgid  "entire field"
 msgstr "a tot el camp"
 
 #: source/dialogs/fmsearch.src#RID_STR_FROM_TOP.String.Text
+#, fuzzy
 msgid  "From top"
 msgstr "Des de l'inici"
 
 #: source/dialogs/fmsearch.src#RID_STR_FROM_BOTTOM.String.Text
+#, fuzzy
 msgid  "From bottom"
 msgstr "Des del final"
 
 #: source/dialogs/fmsearch.src#RID_SVXERR_SEARCH_NORECORD.ErrorBox.Message
+#, fuzzy
 msgid  "No records corresponding to your data found."
 msgstr "No s'ha trobat cap registre que es correspongui amb les vostres dades."
 
 #: source/dialogs/fmsearch.src#RID_SVXERR_SEARCH_GENERAL_ERROR.ErrorBox.Message
+#, fuzzy
 msgid  "An unknown error occurred. The search could not be finished."
 msgstr "S'ha produït un error desconegut. No s'ha pogut completar la cerca."
 
 #: source/dialogs/fmsearch.src#RID_STR_OVERFLOW_FORWARD.String.Text
+#, fuzzy
 msgid  "Overflow, search continued at the beginning"
 msgstr "Desbordament, la cerca continua pel principi"
 
 #: source/dialogs/fmsearch.src#RID_STR_OVERFLOW_BACKWARD.String.Text
+#, fuzzy
 msgid  "Overflow, search continued at the end"
 msgstr "Desbordament, la cerca continua pel final"
 
 #: source/dialogs/fmsearch.src#RID_STR_SEARCH_COUNTING.String.Text
+#, fuzzy
 msgid  "counting records"
 msgstr "s'estan comptant els registres"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ModelessDialog.Text
+#, fuzzy
 msgid  "Spellcheck: "
 msgstr "Verificació ortogràfica: "
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.FT_LANGUAGE.FixedText.Text
+#, fuzzy
 msgid  "Text languag~e"
 msgstr "Ll~engua del text"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.FT_NOTINDICT.FixedText.Text
+#, fuzzy
 msgid  "~Not in dictionary"
 msgstr "~No és al diccionari"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.FT_SUGGESTION.FixedText.Text
+#, fuzzy
 msgid  "~Suggestions"
 msgstr "~Suggeriments"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.CB_CHECK_GRAMMAR.CheckBox.Text
+#, fuzzy
 msgid  "Check ~grammar"
 msgstr "Comprova la ~gramàtica"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_IGNORE.PushButton.Text
+#, fuzzy
 msgid  "~Ignore Once"
 msgstr "~Ignora-ho un cop"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_IGNOREALL.PushButton.Text
+#, fuzzy
 msgid  "I~gnore All"
 msgstr "I~gnora-les totes"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_IGNORERULE.PushButton.Text
+#, fuzzy
 msgid  "I~gnore Rule"
 msgstr "I~gnora la regla"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.MB_ADDTODICT.MenuButton.Text
+#, fuzzy
 msgid  "~Add"
 msgstr "~Afegeix"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_CHANGE.PushButton.Text
+#, fuzzy
 msgid  "~Change"
 msgstr "~Canvia"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_CHANGEALL.PushButton.Text
+#, fuzzy
 msgid  "Change A~ll"
 msgstr "Canvia-~les totes"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_EXPLAIN.PushButton.Text
+#, fuzzy
 msgid  "~Explain..."
 msgstr "~Explica..."
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_AUTOCORR.PushButton.Text
+#, fuzzy
 msgid  "AutoCor~rect"
 msgstr "Cor~recció automàtica"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_OPTIONS.PushButton.Text
+#, fuzzy
 msgid  "O~ptions..."
 msgstr "O~pcions..."
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_UNDO.PushButton.Text
+#, fuzzy
 msgid  "~Undo"
 msgstr "~Desfés"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_CLOSE.PushButton.Text
+#, fuzzy
 msgid  "Cl~ose"
 msgstr "~Tanca"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_RESUME.String.Text
+#, fuzzy
 msgid  "Resu~me"
 msgstr "Contin~ua"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_NOSUGGESTIONS.String.Text
+#, fuzzy
 msgid  "(no suggestions)"
 msgstr "(cap suggeriment)"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_SPELLING.String.Text
+#, fuzzy
 msgid  "Spelling: $LANGUAGE ($LOCATION)"
 msgstr "Ortografia: $LANGUAGE ($LOCATION)"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_SPELLING_AND_GRAMMAR.String.Text
+#, fuzzy
 msgid  "Spelling and Grammar: $LANGUAGE ($LOCATION)"
 msgstr "Ortografia i gramàtica: $LANGUAGE ($LOCATION)"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_SPELLING_AND_GRAMMAR_VENDORNAME.String.Text
+#, fuzzy
 msgid  "Spelling and Grammar: $LANGUAGE ($LOCATION) [$VendorName]"
 msgstr "Ortografia i gramàtica: $LANGUAGE ($LOCATION) [$VendorName]"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.TabPage.Text
+#, fuzzy
 msgid  "Proxy"
 msgstr "Servidor intermediari"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.GB_SETTINGS.FixedLine.Text
+#, fuzzy
 msgid  "Settings"
 msgstr "Paràmetres"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_PROXYMODE.FixedText.Text
+#, fuzzy
 msgid  "Proxy s~erver"
 msgstr "S~ervidor intermediari"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.LB_PROXYMODE.item1.StringList.item
+#, fuzzy
 msgid  "None"
 msgstr "Cap"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.LB_PROXYMODE.item2.StringList.item
+#, fuzzy
 msgid  "System"
 msgstr "Sistema"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.LB_PROXYMODE.item3.StringList.item
+#, fuzzy
 msgid  "Manual"
 msgstr "Manual"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.ST_PROXY_FROM_BROWSER.String.Text
+#, fuzzy
 msgid  "Use browser settings"
 msgstr "Utilitza els paràmetres del navegador"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_HTTP_PROXY.FixedText.Text
+#, fuzzy
 msgid  "HT~TP proxy"
 msgstr "Servidor intermediari HT~TP"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_HTTP_PORT.FixedText.Text
+#, fuzzy
 msgid  "~Port"
 msgstr "~Port"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_HTTPS_PROXY.FixedText.Text
+#, fuzzy
 msgid  "HTTP~S proxy"
 msgstr "Servidor intermediari HTTP~S"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_HTTPS_PORT.FixedText.Text
+#, fuzzy
 msgid  "P~ort"
 msgstr "P~ort"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_FTP_PROXY.FixedText.Text
+#, fuzzy
 msgid  "~FTP proxy"
 msgstr "Servidor intermediari ~FTP"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_FTP_PORT.FixedText.Text
+#, fuzzy
 msgid  "P~ort"
 msgstr "P~ort"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_SOCKS_PROXY.FixedText.Text
+#, fuzzy
 msgid  "~SOCKS proxy"
 msgstr "Servidor intermediari ~SOCKS"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_SOCKS_PORT.FixedText.Text
+#, fuzzy
 msgid  "Po~rt"
 msgstr "Po~rt"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_NOPROXYFOR.FixedText.Text
+#, fuzzy
 msgid  "~No proxy for:"
 msgstr "~Sense servidor intermediari per a:"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.ED_NOPROXYDESC.FixedText.Text
+#, fuzzy
 msgid  "Separator ;"
 msgstr "Separador ;"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.GB_DNS.FixedLine.Text
+#, fuzzy
 msgid  "DNS server"
 msgstr "Servidor DNS"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.RB_DNS_AUTO.RadioButton.Text
+#, fuzzy
 msgid  "~Automatic"
 msgstr "~Automàtic"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.RB_DNS_MANUAL.RadioButton.Text
+#, fuzzy
 msgid  "~Manual"
 msgstr "~Manual"
 
@@ -2928,18 +3170,22 @@ msgid  "is not a valid entry for this field. Please specify a value between 1 an
 msgstr ""
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.TabPage.Text
+#, fuzzy
 msgid  "Search"
 msgstr "Cerca"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.GB_SEARCH.FixedLine.Text
+#, fuzzy
 msgid  "Search in"
 msgstr "Cerca a"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.FT_SEARCH_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Name"
 msgstr "~Nom"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.FT_SEARCH.FixedText.Text
+#, fuzzy
 msgid  "Type"
 msgstr "Tipus"
 
@@ -2948,66 +3194,82 @@ msgid  "~And"
 msgstr ""
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.RB_OR.RadioButton.Text
+#, fuzzy
 msgid  "~Or"
 msgstr "~O"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.RB_EXACT.RadioButton.Text
+#, fuzzy
 msgid  "E~xact"
 msgstr "E~xacta"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.FT_URL.FixedText.Text
+#, fuzzy
 msgid  "~Prefix"
 msgstr "~Prefix"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.FT_POSTFIX.FixedText.Text
+#, fuzzy
 msgid  "Su~ffix"
 msgstr "Su~fix"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.FT_SEPARATOR.FixedText.Text
+#, fuzzy
 msgid  "~Separator"
 msgstr "~Separador"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.FT_CASE.FixedText.Text
+#, fuzzy
 msgid  "~Case match"
 msgstr "~Majúsc./minúsc."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.ED_CASE.item1.StringList.item
+#, fuzzy
 msgid  "None"
 msgstr "Cap"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.ED_CASE.item2.StringList.item
+#, fuzzy
 msgid  "Upper"
 msgstr "Majúscules"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.ED_CASE.item3.StringList.item
+#, fuzzy
 msgid  "Lower"
 msgstr "Minúscules"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.PB_NEW.PushButton.Text
+#, fuzzy
 msgid  "N~ew"
 msgstr "~Nou"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.PB_ADD.PushButton.Text
+#, fuzzy
 msgid  "~Add"
 msgstr "~Afegeix"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.PB_CHANGE.PushButton.Text
+#, fuzzy
 msgid  "~Modify"
 msgstr "~Modifica"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.PB_DELETE.PushButton.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "~Suprimeix"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.MSG_MODIFY.String.Text
+#, fuzzy
 msgid  "Do you want to accept the current modification?"
 msgstr "Voleu acceptar la modificació actual?"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.TabPage.Text
+#, fuzzy
 msgid  "Security"
 msgstr "Seguretat"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FL_SEC_SECURITYOPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Security options and warnings"
 msgstr "Opcions i avisos de seguretat"
 
@@ -3016,22 +3278,27 @@ msgid  "Adjust security related options and define warnings for hidden informati
 msgstr ""
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.PB_SEC_SECURITYOPTIONS.PushButton.Text
+#, fuzzy
 msgid  "Options..."
 msgstr "Opcions..."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FL_SEC_PASSWORDS.FixedLine.Text
+#, fuzzy
 msgid  "Passwords for web connections"
 msgstr "Contrasenyes per a connexions web"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.CB_SEC_SAVEPASSWORDS.CheckBox.Text
+#, fuzzy
 msgid  "Persistently save passwords for web connections"
 msgstr "Desa permanentment les contrasenyes de les connexions web"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.PB_SEC_CONNECTIONS.PushButton.Text
+#, fuzzy
 msgid  "Connections..."
 msgstr "Connexions..."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.CB_SEC_MASTERPASSWORD.CheckBox.Text
+#, fuzzy
 msgid  "Protected by a master password (recommended)"
 msgstr "Protegides amb una contrasenya mestra (recomanat)"
 
@@ -3040,10 +3307,12 @@ msgid  "Passwords are protected by a master password. You will be asked to enter
 msgstr ""
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.PB_SEC_MASTERPASSWORD.PushButton.Text
+#, fuzzy
 msgid  "Master Password..."
 msgstr "Contrasenya mestra..."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FL_SEC_MACROSEC.FixedLine.Text
+#, fuzzy
 msgid  "Macro security"
 msgstr "Seguretat de macros"
 
@@ -3052,6 +3321,7 @@ msgid  "Adjust the security level for executing macros and specify trusted macro
 msgstr ""
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.PB_SEC_MACROSEC.PushButton.Text
+#, fuzzy
 msgid  "Macro Security..."
 msgstr "Seguretat de macros..."
 
@@ -3068,78 +3338,97 @@ msgid  "Please note that with Java\nyou disable Javascript as well.\n\nDo you st
 msgstr ""
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.CB_JSCPT_DISABLE.CheckBox.Text
+#, fuzzy
 msgid  "~Don't show warning again"
 msgstr "~No tornis a mostrar l'advertiment"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_MAIL.FL_MAIL.FixedLine.Text
+#, fuzzy
 msgid  "Sending documents as e-mail attachments"
 msgstr "S'estan enviant documents com a fitxers adjunts"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_MAIL.FT_MAILERURL.FixedText.Text
+#, fuzzy
 msgid  "~E-mail program"
 msgstr "Programa d~e correu"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_MAIL.STR_DEFAULT_FILENAME.String.Text
+#, fuzzy
 msgid  "All files (*.*)"
 msgstr "Tots els fitxers (*.*)"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.TabPage.Text
+#, fuzzy
 msgid  "User Data"
 msgstr "Dades de l'usuari"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_COMPANY.FixedText.Text
+#, fuzzy
 msgid  "~Company"
 msgstr "~Empresa"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_NAME.FixedText.Text
+#, fuzzy
 msgid  "First/Last ~name/Initials"
 msgstr "~Nom/Cognoms/Inicials"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_NAME_RUSS.FixedText.Text
+#, fuzzy
 msgid  "Last Name/First name/Father's name/Initials"
 msgstr "Cognoms/~Nom/Nom del pare/Inicials"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_NAME_EASTERN.FixedText.Text
+#, fuzzy
 msgid  "Last/First ~name/Initials"
 msgstr "Cognoms/~Nom/Inicials"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_STREET.FixedText.Text
+#, fuzzy
 msgid  "~Street"
 msgstr "~Carrer"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_STREET_RUSS.FixedText.Text
+#, fuzzy
 msgid  "Street/Apartment number"
 msgstr "Carrer/Número"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_CITY.FixedText.Text
+#, fuzzy
 msgid  "Zip/City"
 msgstr "Codi postal/Població"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_COUNTRY.FixedText.Text
+#, fuzzy
 msgid  "Country/Region"
 msgstr "País/Regió"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_TITLEPOS.FixedText.Text
+#, fuzzy
 msgid  "~Title/Position"
 msgstr "~Títol/Càrrec"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_PHONE.FixedText.Text
+#, fuzzy
 msgid  "Tel. (Home/Work)"
 msgstr "Tel. (particular/feina)"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_FAXMAIL.FixedText.Text
+#, fuzzy
 msgid  "Fa~x / E-mail"
 msgstr "Fa~x / Correu electrònic"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.GB_ADDRESS.FixedLine.Text
+#, fuzzy
 msgid  "Address "
 msgstr "Adreça "
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.CB_USEDATA.CheckBox.Text
+#, fuzzy
 msgid  "Use data for document properties"
 msgstr "Utilitza les dades per a les propietats del document"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.STR_US_STATE.String.Text
+#, fuzzy
 msgid  "City/State/Zip"
 msgstr "Població/Estat/Codi postal"
 
@@ -3152,462 +3441,577 @@ msgid  "The User Data have been changed.\nDo you really want to change your User
 msgstr ""
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.FL_TREAT_AS_EQUAL.FixedLine.Text
+#, fuzzy
 msgid  "Treat as equal"
 msgstr "Tracta com a iguals"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_CASE.CheckBox.Text
+#, fuzzy
 msgid  "~uppercase/lowercase"
 msgstr "majúsc~ula/minúscula"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_FULL_HALF_WIDTH.CheckBox.Text
+#, fuzzy
 msgid  "~full-width/half-width forms"
 msgstr "~formes d'amplada completa/d'amplada mitjana"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_HIRAGANA_KATAKANA.CheckBox.Text
+#, fuzzy
 msgid  "~hiragana/katakana"
 msgstr "~hiragana/katakana"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_CONTRACTIONS.CheckBox.Text
+#, fuzzy
 msgid  "~contractions (yo-on, sokuon)"
 msgstr "~contraccions (yo-on, sokuon)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_MINUS_DASH_CHOON.CheckBox.Text
+#, fuzzy
 msgid  "~minus/dash/cho-on"
 msgstr "~menys/guió/cho-on"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_REPEAT_CHAR_MARKS.CheckBox.Text
+#, fuzzy
 msgid  "'re~peat character' marks"
 msgstr "marques de 're~petició de caràcters'"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_VARIANT_FORM_KANJI.CheckBox.Text
+#, fuzzy
 msgid  "~variant-form kanji (itaiji)"
 msgstr "Kanji de forma ~variable (itaiji)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_OLD_KANA_FORMS.CheckBox.Text
+#, fuzzy
 msgid  "~old Kana forms"
 msgstr "f~ormes Kana antigues"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_DIZI_DUZU.CheckBox.Text
+#, fuzzy
 msgid  "~di/zi, du/zu"
 msgstr "~di/zi, du/zu"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_BAVA_HAFA.CheckBox.Text
+#, fuzzy
 msgid  "~ba/va, ha/fa"
 msgstr "~ba/va, ha/fa"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_TSITHICHI_DHIZI.CheckBox.Text
+#, fuzzy
 msgid  "~tsi/thi/chi, dhi/zi"
 msgstr "~tsi/thi/chi, dhi/zi"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_HYUFYU_BYUVYU.CheckBox.Text
+#, fuzzy
 msgid  "h~yu/fyu, byu/vyu"
 msgstr "h~yu/fyu, byu/vyu"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_SESHE_ZEJE.CheckBox.Text
+#, fuzzy
 msgid  "~se/she, ze/je"
 msgstr "~se/she, ze/je"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_IAIYA.CheckBox.Text
+#, fuzzy
 msgid  "~ia/iya (piano/piyano)"
 msgstr "~ia/iya (piano/piyano)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_KIKU.CheckBox.Text
+#, fuzzy
 msgid  "~ki/ku (tekisuto/tekusuto)"
 msgstr "~ki/ku (tekisuto/tekusuto)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_PROLONGED_SOUNDMARK.CheckBox.Text
+#, fuzzy
 msgid  "Prolon~ged vowels (ka-/kaa)"
 msgstr "Vocals perllon~gades (ka-/kaa)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.FL_IGNORE.FixedLine.Text
+#, fuzzy
 msgid  "Ignore"
 msgstr "Ignora"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_IGNORE_PUNCTUATION.CheckBox.Text
+#, fuzzy
 msgid  "Pu~nctuation characters"
 msgstr "Caràcters de pu~ntuació"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_IGNORE_WHITESPACES.CheckBox.Text
+#, fuzzy
 msgid  "~Whitespace characters"
 msgstr "Caràcters d'~espaiat"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_IGNORE_MIDDLE_DOT.CheckBox.Text
+#, fuzzy
 msgid  "Midd~le dots"
 msgstr "Punts de~l mig"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CheckBox.Text
+#, fuzzy
 msgid  "Searching in Japanese"
 msgstr "Cerca en japonès"
 
 #: source/options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.FL_DEFTXTDIRECTION.FixedLine.Text
+#, fuzzy
 msgid  "Default text direction"
 msgstr "Direcció del text per defecte"
 
 #: source/options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.RB_TXTDIR_LEFT2RIGHT.RadioButton.Text
+#, fuzzy
 msgid  "~Left-to-right"
 msgstr "D'~esquerra a dreta"
 
 #: source/options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.RB_TXTDIR_RIGHT2LEFT.RadioButton.Text
+#, fuzzy
 msgid  "~Right-to-left"
 msgstr "De d~reta a esquerra"
 
 #: source/options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.FL_SHEETVIEW.FixedLine.Text
+#, fuzzy
 msgid  "Sheet view"
 msgstr "Visualització en fulls"
 
 #: source/options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.CB_SHTVW_RIGHT2LEFT.CheckBox.Text
+#, fuzzy
 msgid  "Right-~to-left"
 msgstr "De dre~ta a esquerra"
 
 #: source/options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.CB_SHTVW_CURRENTDOCONLY.CheckBox.Text
+#, fuzzy
 msgid  "~Current document only"
 msgstr "~Només per a aquest document"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.TabPage.Text
+#, fuzzy
 msgid  "Complex Text Layout"
 msgstr "Disposició complexa de text"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FL_SEQUENCECHECKING.FixedLine.Text
+#, fuzzy
 msgid  "Sequence checking"
 msgstr "Comprovació de la seqüència"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.CB_SEQUENCECHECKING.CheckBox.Text
+#, fuzzy
 msgid  "Use se~quence checking"
 msgstr "Utilitza la comprovació de la se~qüència"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.CB_RESTRICTED.CheckBox.Text
+#, fuzzy
 msgid  "Restricted"
 msgstr "Restringit"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.CB_TYPE_REPLACE.CheckBox.Text
+#, fuzzy
 msgid  "~Type and replace"
 msgstr "~Escriu i reemplaça"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FL_CURSORCONTROL.FixedLine.Text
+#, fuzzy
 msgid  "Cursor control"
 msgstr "Control del cursor"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FT_MOVEMENT.FixedText.Text
+#, fuzzy
 msgid  "Movement"
 msgstr "Moviment"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.RB_MOVEMENT_LOGICAL.RadioButton.Text
+#, fuzzy
 msgid  "Lo~gical"
 msgstr "Lò~gic"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.RB_MOVEMENT_VISUAL.RadioButton.Text
+#, fuzzy
 msgid  "~Visual"
 msgstr "~Visual"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FL_GENERAL.FixedLine.Text
+#, fuzzy
 msgid  "General options"
 msgstr "Opcions generals"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FT_NUMERALS.FixedText.Text
+#, fuzzy
 msgid  "~Numerals"
 msgstr "~Numerals"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.item1.StringList.item
+#, fuzzy
 msgid  "Arabic"
 msgstr "Àrab"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.item2.StringList.item
+#, fuzzy
 msgid  "Hindi"
 msgstr "Hindi"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.item3.StringList.item
+#, fuzzy
 msgid  "System"
 msgstr "Sistema"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.item4.StringList.item
+#, fuzzy
 msgid  "Context"
 msgstr "Context"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FL_COLORSCHEME.FixedLine.Text
+#, fuzzy
 msgid  "Color scheme"
 msgstr "Esquema de color"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FT_COLORSCHEME.FixedText.Text
+#, fuzzy
 msgid  "Scheme"
 msgstr "Esquema"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.PB_SAVESCHEME.PushButton.Text
+#, fuzzy
 msgid  "Save..."
 msgstr "Desa..."
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.PB_DELETESCHEME.PushButton.Text
+#, fuzzy
 msgid  "Delete"
 msgstr "Suprimeix"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FL_CUSTOMCOLORS.FixedLine.Text
+#, fuzzy
 msgid  "Custom colors"
 msgstr "Colors personalitzats"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.ST_ON.String.Text
+#, fuzzy
 msgid  "On"
 msgstr "Actiu"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.ST_UIELEM.String.Text
+#, fuzzy
 msgid  "User interface elements"
 msgstr "Elements de la interfície de l'usuari"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.ST_COLSET.String.Text
+#, fuzzy
 msgid  "Color setting"
 msgstr "Configuració de color"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.ST_PREVIEW.String.Text
+#, fuzzy
 msgid  "Preview"
 msgstr "Previsualització"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_GENERAL.FixedText.Text
+#, fuzzy
 msgid  "General"
 msgstr "General"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_DOCCOLOR.FixedText.Text
+#, fuzzy
 msgid  "Document background"
 msgstr "Fons del document"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_DOCBOUND.CheckBox.Text
+#, fuzzy
 msgid  "Text boundaries"
 msgstr "Límits del text"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_APPBACKGROUND.FixedText.Text
+#, fuzzy
 msgid  "Application background"
 msgstr "Fons de l'aplicació"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_OBJECTBOUNDARIES.CheckBox.Text
+#, fuzzy
 msgid  "Object boundaries"
 msgstr "Límits de l'objecte"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_TABLEBOUNDARIES.CheckBox.Text
+#, fuzzy
 msgid  "Table boundaries"
 msgstr "Marcs de taula"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_FONTCOLOR.FixedText.Text
+#, fuzzy
 msgid  "Font color"
 msgstr "Color de la lletra"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_LINKS.CheckBox.Text
+#, fuzzy
 msgid  "Unvisited links"
 msgstr "Enllaços no visitats"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_LINKSVISITED.CheckBox.Text
+#, fuzzy
 msgid  "Visited links"
 msgstr "Enllaços visitats"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SPELL.FixedText.Text
+#, fuzzy
 msgid  "AutoSpellcheck"
 msgstr "Verificació ortogràfica automàtica"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SMARTTAGS.FixedText.Text
+#, fuzzy
 msgid  "Smart Tags"
 msgstr "Etiquetes intel·ligents"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITER.FixedText.Text
+#, fuzzy
 msgid  "Text Document"
 msgstr "Document de text"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERTEXTGRID.FixedText.Text
+#, fuzzy
 msgid  "Grid"
 msgstr "Graella"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_WRITERFIELDSHADINGS.CheckBox.Text
+#, fuzzy
 msgid  "Field shadings"
 msgstr "Ombreigs dels camps"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_WRITERIDXSHADINGS.CheckBox.Text
+#, fuzzy
 msgid  "Index and table shadings"
 msgstr "Ombreigs dels 'índexs i taules"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERSCRIPTINDICATOR.FixedText.Text
+#, fuzzy
 msgid  "Script indicator"
 msgstr "Indicador d'script"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_WRITERSECTIONBOUNDARIES.CheckBox.Text
+#, fuzzy
 msgid  "Section boundaries"
 msgstr "Límits de secció"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERPAGEBREAKS.FixedText.Text
+#, fuzzy
 msgid  "Page and column breaks"
 msgstr "Salts de pàgina i columna"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERDIRECTCURSOR.FixedText.Text
+#, fuzzy
 msgid  "Direct cursor"
 msgstr "Cursor directe"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTML.FixedText.Text
+#, fuzzy
 msgid  "HTML Document"
 msgstr "Document HTML"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTMLSGML.FixedText.Text
+#, fuzzy
 msgid  "SGML syntax highlighting"
 msgstr "Realçament de la sintaxi SGML"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTMLCOMMENT.FixedText.Text
+#, fuzzy
 msgid  "Comment highlighting"
 msgstr "Realçament dels comentaris"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTMLKEYWORD.FixedText.Text
+#, fuzzy
 msgid  "Keyword highlighting"
 msgstr "Realçament de les paraules clau"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTMLUNKNOWN.FixedText.Text
+#, fuzzy
 msgid  "Text"
 msgstr "Text"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALC.FixedText.Text
+#, fuzzy
 msgid  "Spreadsheet"
 msgstr "Full de càlcul"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCGRID.FixedText.Text
+#, fuzzy
 msgid  "Grid lines"
 msgstr "Línies de la graella"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCPAGEBREAK.FixedText.Text
+#, fuzzy
 msgid  "Page breaks"
 msgstr "Salts de pàgina"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCPAGEBREAKMANUAL.FixedText.Text
+#, fuzzy
 msgid  "Manual page breaks"
 msgstr "Salts de pàgina manuals"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCPAGEBREAKAUTO.FixedText.Text
+#, fuzzy
 msgid  "Automatic page breaks"
 msgstr "Salts de pàgina automàtics"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCDETECTIVE.FixedText.Text
+#, fuzzy
 msgid  "Detective"
 msgstr "Detectiu"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCDETECTIVEERROR.FixedText.Text
+#, fuzzy
 msgid  "Detective error"
 msgstr "Error detectiu"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCREFERENCE.FixedText.Text
+#, fuzzy
 msgid  "References"
 msgstr "Referències"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCNOTESBACKGROUND.FixedText.Text
+#, fuzzy
 msgid  "Notes background"
 msgstr "Fons de les notes"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_DRAW.FixedText.Text
+#, fuzzy
 msgid  "Drawing / Presentation"
 msgstr "Dibuix / Presentació"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_DRAWGRID.FixedText.Text
+#, fuzzy
 msgid  "Grid"
 msgstr "Graella"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASIC.FixedText.Text
+#, fuzzy
 msgid  "Basic Syntax Highlighting"
 msgstr "Realçament bàsic de la sintaxi"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICIDENTIFIER.FixedText.Text
+#, fuzzy
 msgid  "Identifier"
 msgstr "Identificador"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICCOMMENT.FixedText.Text
+#, fuzzy
 msgid  "Comment"
 msgstr "Comentari"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICNUMBER.FixedText.Text
+#, fuzzy
 msgid  "Number"
 msgstr "Nombre"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICSTRING.FixedText.Text
+#, fuzzy
 msgid  "String"
 msgstr "Cadena"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICOPERATOR.FixedText.Text
+#, fuzzy
 msgid  "Operator"
 msgstr "Operador"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICKEYWORD.FixedText.Text
+#, fuzzy
 msgid  "Reserved expression"
 msgstr "Expressió reservada"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICERROR.FixedText.Text
+#, fuzzy
 msgid  "Error"
 msgstr "Error"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQL_COMMAND.FixedText.Text
+#, fuzzy
 msgid  "SQL Syntax Highlighting"
 msgstr "Realçament de la sintaxi SQL"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLIDENTIFIER.FixedText.Text
+#, fuzzy
 msgid  "Identifier"
 msgstr "Identificador"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLNUMBER.FixedText.Text
+#, fuzzy
 msgid  "Number"
 msgstr "Nombre"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLSTRING.FixedText.Text
+#, fuzzy
 msgid  "String"
 msgstr "Cadena"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLOPERATOR.FixedText.Text
+#, fuzzy
 msgid  "Operator"
 msgstr "Operador"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLKEYWORD.FixedText.Text
+#, fuzzy
 msgid  "Keyword"
 msgstr "Paraula clau"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLPARAMETER.FixedText.Text
+#, fuzzy
 msgid  "Parameter"
 msgstr "Paràmetre"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLCOMMENT.FixedText.Text
+#, fuzzy
 msgid  "Comment"
 msgstr "Comentari"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.ST_EXTENSION.String.Text
+#, fuzzy
 msgid  "Colorsettings of the Extensions"
 msgstr "Configuració de color per a les extensions"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.ST_SPELL_CHECK_HIGHLIGHTING.String.Text
+#, fuzzy
 msgid  "Spell check highlighting"
 msgstr "Realçament de la comprovació ortogràfica"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.ST_GRAMMAR_CHECK_HIGHLIGHTING.String.Text
+#, fuzzy
 msgid  "Grammar check highlighting"
 msgstr "Realçament de la comprovació gramatical"
 
 #: source/options/optcolor.src#RID_SVXQB_DELETE_COLOR_CONFIG.QueryBox.Message
+#, fuzzy
 msgid  "Do you really want to delete the color scheme?"
 msgstr "Esteu segur que voleu suprimir l'esquema de color?"
 
 #: source/options/optcolor.src#RID_SVXSTR_COLOR_CONFIG_DELETE.String.Text
+#, fuzzy
 msgid  "Color Scheme Deletion"
 msgstr "Supressió de l'esquema de color"
 
 #: source/options/optcolor.src#RID_SVXSTR_COLOR_CONFIG_SAVE1.String.Text
+#, fuzzy
 msgid  "Save scheme"
 msgstr "Desa l'esquema"
 
 #: source/options/optcolor.src#RID_SVXSTR_COLOR_CONFIG_SAVE2.String.Text
+#, fuzzy
 msgid  "Name of color scheme"
 msgstr "Nom de l'esquema de color"
 
 #: source/options/doclinkdialog.src#DLG_DOCUMENTLINK.FT_URL.FixedText.Text
+#, fuzzy
 msgid  "~Database file"
 msgstr "Fitxer de base de ~dades"
 
 #: source/options/doclinkdialog.src#DLG_DOCUMENTLINK.PB_BROWSEFILE.PushButton.Text
+#, fuzzy
 msgid  "~Browse..."
 msgstr "~Navega..."
 
 #: source/options/doclinkdialog.src#DLG_DOCUMENTLINK.FT_NAME.FixedText.Text
+#, fuzzy
 msgid  "Registered ~name"
 msgstr "~Nom registrat"
 
 #: source/options/doclinkdialog.src#DLG_DOCUMENTLINK.STR_EDIT_LINK.String.Text
+#, fuzzy
 msgid  "Edit Database Link"
 msgstr "Edita l'enllaç a la base de dades"
 
 #: source/options/doclinkdialog.src#DLG_DOCUMENTLINK.STR_NEW_LINK.String.Text
+#, fuzzy
 msgid  "Create Database Link"
 msgstr "Enllaça a una base de dades"
 
@@ -3624,18 +4028,22 @@ msgid  "The name '$file$' is already used for another database.\nPlease choose a
 msgstr ""
 
 #: source/options/doclinkdialog.src#QUERY_DELETE_CONFIRM.QueryBox.Message
+#, fuzzy
 msgid  "Do you want to delete the entry?"
 msgstr "Voleu suprimir l'entrada?"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.ModalDialog.Text
+#, fuzzy
 msgid  "Options"
 msgstr "Opcions"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.PB_BACK.PushButton.Text
+#, fuzzy
 msgid  "~Back"
 msgstr "~Enrere"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.ST_LOAD_ERROR.String.Text
+#, fuzzy
 msgid  "The selected module could not be loaded."
 msgstr "No es pot carregar el mòdul seleccionat."
 
@@ -3688,442 +4096,552 @@ msgid  "This is where you define general settings for opening and saving documen
 msgstr ""
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.0.ItemList.item
+#, fuzzy
 msgid  "%PRODUCTNAME"
 msgstr "%PRODUCTNAME"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SFXPAGE_GENERAL.ItemList.item
+#, fuzzy
 msgid  "User Data"
 msgstr "Dades de l'usuari"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.OFA_TP_MISC.ItemList.item
+#, fuzzy
 msgid  "General"
 msgstr "General"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.OFA_TP_MEMORY.ItemList.item
+#, fuzzy
 msgid  "Memory"
 msgstr "Memòria"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.OFA_TP_VIEW.ItemList.item
+#, fuzzy
 msgid  "View"
 msgstr "Visualització"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SFXPAGE_PRINTOPTIONS.ItemList.item
+#, fuzzy
 msgid  "Print"
 msgstr "Impressió"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SFXPAGE_PATH.ItemList.item
+#, fuzzy
 msgid  "Paths"
 msgstr "Camins"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_COLOR.ItemList.item
+#, fuzzy
 msgid  "Colors"
 msgstr "Colors"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVX_FONT_SUBSTITUTION.ItemList.item
+#, fuzzy
 msgid  "Fonts"
 msgstr "Tipus de lletra"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_INET_SECURITY.ItemList.item
+#, fuzzy
 msgid  "Security"
 msgstr "Seguretat"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_COLORCONFIG.ItemList.item
+#, fuzzy
 msgid  "Appearance"
 msgstr "Aparença"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_ACCESSIBILITYCONFIG.ItemList.item
+#, fuzzy
 msgid  "Accessibility"
 msgstr "Accessibilitat"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_OPTIONS_JAVA.ItemList.item
+#, fuzzy
 msgid  "Java"
 msgstr "Java"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_SSO.ItemList.item
+#, fuzzy
 msgid  "Network Identity"
 msgstr "Identitat de xarxa"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_ONLINEUPDATE.ItemList.item
+#, fuzzy
 msgid  "Online Update"
 msgstr "Actualització en línia"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.0.ItemList.item
+#, fuzzy
 msgid  "Language Settings"
 msgstr "Configuració de la llengua"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.OFA_TP_LANGUAGES.ItemList.item
+#, fuzzy
 msgid  "Languages"
 msgstr "Llengües"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.RID_SFXPAGE_LINGU.ItemList.item
+#, fuzzy
 msgid  "Writing Aids"
 msgstr "Ajudes a l'escriptura"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.RID_SVXPAGE_JSEARCH_OPTIONS.ItemList.item
+#, fuzzy
 msgid  "Searching in Japanese"
 msgstr "Cerca en japonès"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.RID_SVXPAGE_ASIAN_LAYOUT.ItemList.item
+#, fuzzy
 msgid  "Asian Layout"
 msgstr "Disposició asiàtica"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.RID_SVXPAGE_OPTIONS_CTL.ItemList.item
+#, fuzzy
 msgid  "Complex Text Layout"
 msgstr "Disposició complexa de text"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_INET_DLG.0.ItemList.item
+#, fuzzy
 msgid  "Internet"
 msgstr "Internet"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_INET_DLG.RID_SVXPAGE_INET_PROXY.ItemList.item
+#, fuzzy
 msgid  "Proxy"
 msgstr "Servidor intermediari"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_INET_DLG.RID_SVXPAGE_INET_SEARCH.ItemList.item
+#, fuzzy
 msgid  "Search"
 msgstr "Cerca"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_INET_DLG.RID_SVXPAGE_INET_MAIL.ItemList.item
+#, fuzzy
 msgid  "E-mail"
 msgstr "Correu electrònic"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.0.ItemList.item
+#, fuzzy
 msgid  "%PRODUCTNAME Writer"
 msgstr "%PRODUCTNAME Writer"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_OPTLOAD_PAGE.ItemList.item
+#, fuzzy
 msgid  "General"
 msgstr "General"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_CONTENT_OPT.ItemList.item
+#, fuzzy
 msgid  "View"
 msgstr "Visualització"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_OPTSHDWCRSR.ItemList.item
+#, fuzzy
 msgid  "Formatting Aids"
 msgstr "Ajudes a la formatació"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SVXPAGE_GRID.ItemList.item
+#, fuzzy
 msgid  "Grid"
 msgstr "Graella"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_STD_FONT.ItemList.item
+#, fuzzy
 msgid  "Basic Fonts (Western)"
 msgstr "Tipus de lletra bàsics (occidental)"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_STD_FONT_CJK.ItemList.item
+#, fuzzy
 msgid  "Basic Fonts (Asian)"
 msgstr "Tipus de lletra bàsics (asiàtic)"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_STD_FONT_CTL.ItemList.item
+#, fuzzy
 msgid  "Basic Fonts (CTL)"
 msgstr "Tipus de lletra bàsics (CTL)"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_OPTPRINT_PAGE.ItemList.item
+#, fuzzy
 msgid  "Print"
 msgstr "Impressió"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_OPTTABLE_PAGE.ItemList.item
+#, fuzzy
 msgid  "Table"
 msgstr "Taula"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_REDLINE_OPT.ItemList.item
+#, fuzzy
 msgid  "Changes"
 msgstr "Canvis"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_OPTCOMPATIBILITY_PAGE.ItemList.item
+#, fuzzy
 msgid  "Compatibility"
 msgstr "Compatibilitat"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_OPTCAPTION_PAGE.ItemList.item
+#, fuzzy
 msgid  "AutoCaption"
 msgstr "Llegenda automàtica"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_MAILCONFIG.ItemList.item
+#, fuzzy
 msgid  "Mail Merge E-mail"
 msgstr "Adreça electrònica de la combinació de correu"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.0.ItemList.item
+#, fuzzy
 msgid  "%PRODUCTNAME Writer/Web"
 msgstr "%PRODUCTNAME Writer/Web"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_HTML_CONTENT_OPT.ItemList.item
+#, fuzzy
 msgid  "View"
 msgstr "Visualització"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_HTML_OPTSHDWCRSR.ItemList.item
+#, fuzzy
 msgid  "Formatting Aids"
 msgstr "Ajudes a la formatació"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_HTML_OPTGRID_PAGE.ItemList.item
+#, fuzzy
 msgid  "Grid"
 msgstr "Graella"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_HTML_OPTPRINT_PAGE.ItemList.item
+#, fuzzy
 msgid  "Print"
 msgstr "Impressió"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_HTML_OPTTABLE_PAGE.ItemList.item
+#, fuzzy
 msgid  "Table"
 msgstr "Taula"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_BACKGROUND.ItemList.item
+#, fuzzy
 msgid  "Background"
 msgstr "Fons"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SM_EDITOPTIONS.0.ItemList.item
+#, fuzzy
 msgid  "%PRODUCTNAME Math"
 msgstr "%PRODUCTNAME Math"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SM_EDITOPTIONS.SID_SM_TP_PRINTOPTIONS.ItemList.item
+#, fuzzy
 msgid  "Settings"
 msgstr "Paràmetres"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.0.ItemList.item
+#, fuzzy
 msgid  "%PRODUCTNAME Calc"
 msgstr "%PRODUCTNAME Calc"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.SID_SC_TP_LAYOUT.ItemList.item
+#, fuzzy
 msgid  "General"
 msgstr "General"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.SID_SC_TP_CONTENT.ItemList.item
+#, fuzzy
 msgid  "View"
 msgstr "Visualització"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.RID_OFA_TP_INTERNATIONAL.ItemList.item
+#, fuzzy
 msgid  "International"
 msgstr "Internacional"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.SID_SC_TP_CALC.ItemList.item
+#, fuzzy
 msgid  "Calculate"
 msgstr "Càlcul"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.SID_SC_TP_USERLISTS.ItemList.item
+#, fuzzy
 msgid  "Sort Lists"
 msgstr "Llistes d'ordenació"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.SID_SC_TP_CHANGES.ItemList.item
+#, fuzzy
 msgid  "Changes"
 msgstr "Canvis"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.SID_SC_TP_GRID.ItemList.item
+#, fuzzy
 msgid  "Grid"
 msgstr "Graella"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.RID_SC_TP_PRINT.ItemList.item
+#, fuzzy
 msgid  "Print"
 msgstr "Impressió"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_EDITOPTIONS.0.ItemList.item
+#, fuzzy
 msgid  "%PRODUCTNAME Impress"
 msgstr "%PRODUCTNAME Impress"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_EDITOPTIONS.SID_SI_TP_MISC.ItemList.item
+#, fuzzy
 msgid  "General"
 msgstr "General"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_EDITOPTIONS.SID_SI_TP_CONTENTS.ItemList.item
+#, fuzzy
 msgid  "View"
 msgstr "Visualització"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_EDITOPTIONS.SID_SI_TP_SNAP.ItemList.item
+#, fuzzy
 msgid  "Grid"
 msgstr "Graella"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_EDITOPTIONS.SID_SI_TP_PRINT.ItemList.item
+#, fuzzy
 msgid  "Print"
 msgstr "Impressió"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_GRAPHIC_OPTIONS.0.ItemList.item
+#, fuzzy
 msgid  "%PRODUCTNAME Draw"
 msgstr "%PRODUCTNAME Draw"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_GRAPHIC_OPTIONS.SID_SD_TP_MISC.ItemList.item
+#, fuzzy
 msgid  "General"
 msgstr "General"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_GRAPHIC_OPTIONS.SID_SD_TP_CONTENTS.ItemList.item
+#, fuzzy
 msgid  "View"
 msgstr "Visualització"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_GRAPHIC_OPTIONS.SID_SD_TP_SNAP.ItemList.item
+#, fuzzy
 msgid  "Grid"
 msgstr "Graella"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_GRAPHIC_OPTIONS.SID_SD_TP_PRINT.ItemList.item
+#, fuzzy
 msgid  "Print"
 msgstr "Impressió"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SCH_EDITOPTIONS.0.ItemList.item
+#, fuzzy
 msgid  "Charts"
 msgstr "Diagrames"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SCH_EDITOPTIONS.RID_OPTPAGE_CHART_DEFCOLORS.ItemList.item
+#, fuzzy
 msgid  "Default Colors"
 msgstr "Colors per defecte"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.0.ItemList.item
+#, fuzzy
 msgid  "Load/Save"
 msgstr "Carrega/desa"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.RID_SFXPAGE_SAVE.ItemList.item
+#, fuzzy
 msgid  "General"
 msgstr "General"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.SID_OPTFILTER_MSOFFICE.ItemList.item
+#, fuzzy
 msgid  "VBA Properties"
 msgstr "Propietats VBA"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.RID_OFAPAGE_MSFILTEROPT2.ItemList.item
+#, fuzzy
 msgid  "Microsoft Office"
 msgstr "Microsoft Office"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.RID_OFAPAGE_HTMLOPT.ItemList.item
+#, fuzzy
 msgid  "HTML Compatibility"
 msgstr "Compatibilitat HTML"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SB_STARBASEOPTIONS.0.ItemList.item
+#, fuzzy
 msgid  "%PRODUCTNAME Base"
 msgstr "%PRODUCTNAME Base"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SB_STARBASEOPTIONS.SID_SB_CONNECTIONPOOLING.ItemList.item
+#, fuzzy
 msgid  "Connections"
 msgstr "Connexions"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SB_STARBASEOPTIONS.SID_SB_DBREGISTEROPTIONS.ItemList.item
+#, fuzzy
 msgid  "Databases"
 msgstr "Bases de dades"
 
 #: source/options/treeopt.src#RID_RIDER_SLL_SITE.String.Text
+#, fuzzy
 msgid  "Site certificates"
 msgstr "Certificats de llocs"
 
 #: source/options/treeopt.src#RID_RIDER_SLL_PERSONAL.String.Text
+#, fuzzy
 msgid  "Personal certificates"
 msgstr "Certificats de persones"
 
 #: source/options/optmemory.src#OFA_TP_MEMORY.GB_UNDO.FixedLine.Text
+#, fuzzy
 msgid  "Undo"
 msgstr "Desfés"
 
 #: source/options/optmemory.src#OFA_TP_MEMORY.FT_UNDO.FixedText.Text
+#, fuzzy
 msgid  "Number of steps"
 msgstr "Nombre de passos"
 
 #: source/options/optmemory.src#OFA_TP_MEMORY.GB_GRAPHICCACHE.FixedLine.Text
+#, fuzzy
 msgid  "Graphics cache"
 msgstr "Memòria cau d'imatges"
 
 #: source/options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICCACHE.FixedText.Text
+#, fuzzy
 msgid  "Use for %PRODUCTNAME"
 msgstr "Utilitza per a l'%PRODUCTNAME"
 
 #: source/options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICCACHE_UNIT.FixedText.Text
+#, fuzzy
 msgid  "MB"
 msgstr "MB"
 
 #: source/options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICOBJECTCACHE.FixedText.Text
+#, fuzzy
 msgid  "Memory per object"
 msgstr "Memòria per objecte"
 
 #: source/options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICOBJECTCACHE_UNIT.FixedText.Text
+#, fuzzy
 msgid  "MB"
 msgstr "MB"
 
 #: source/options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICOBJECTTIME.FixedText.Text
+#, fuzzy
 msgid  "Remove from memory after"
 msgstr "Suprimeix de la memòria després de"
 
 #: source/options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICOBJECTTIME_UNIT.FixedText.Text
+#, fuzzy
 msgid  "hh:mm"
 msgstr "hh:mm"
 
 #: source/options/optmemory.src#OFA_TP_MEMORY.GB_OLECACHE.FixedLine.Text
+#, fuzzy
 msgid  "Cache for inserted objects"
 msgstr "Memòria cau per a objectes inserits"
 
 #: source/options/optmemory.src#OFA_TP_MEMORY.FT_OLECACHE.FixedText.Text
+#, fuzzy
 msgid  "Number of objects"
 msgstr "Nombre d'objectes"
 
 #: source/options/optmemory.src#OFA_TP_MEMORY.FL_QUICKLAUNCH.FixedLine.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Quickstarter"
 msgstr "Inici ràpid de l'%PRODUCTNAME"
 
 #: source/options/optmemory.src#OFA_TP_MEMORY.CB_QUICKLAUNCH.CheckBox.Text
+#, fuzzy
 msgid  "Load %PRODUCTNAME during system start-up"
 msgstr "Carrega l'%PRODUCTNAME en iniciar el sistema"
 
 #: source/options/optmemory.src#OFA_TP_MEMORY.STR_QUICKLAUNCH_UNX.String.Text
+#, fuzzy
 msgid  "Enable systray Quickstarter"
 msgstr "Habilita l'inici ràpid a la safata del sistema"
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.TabPage.Text
+#, fuzzy
 msgid  "Java"
 msgstr "Java"
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.FL_JAVA.FixedLine.Text
+#, fuzzy
 msgid  "Java options"
 msgstr "Opcions del Java"
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.CB_JAVA_ENABLE.CheckBox.Text
+#, fuzzy
 msgid  "~Use a Java runtime environment"
 msgstr "~Utilitza un entorn d'execució del Java"
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.FT_JAVA_FOUND.FixedText.Text
+#, fuzzy
 msgid  "~Java runtime environments (JRE) already installed:"
 msgstr "~Entorns d'execució del Java (JRE) ja instal·lats:"
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.PB_ADD.PushButton.Text
+#, fuzzy
 msgid  "~Add..."
 msgstr "~Afegeix..."
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.PB_PARAMETER.PushButton.Text
+#, fuzzy
 msgid  "~Parameters..."
 msgstr "~Paràmetres..."
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.PB_CLASSPATH.PushButton.Text
+#, fuzzy
 msgid  "~Class Path..."
 msgstr "~Camí a les classes..."
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_INSTALLED_IN.String.Text
+#, fuzzy
 msgid  "Location: "
 msgstr "Ubicació: "
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_ACCESSIBILITY.String.Text
+#, fuzzy
 msgid  "with accessibility support"
 msgstr "amb opcions d'accessibilitat"
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_ADDDLGTEXT.String.Text
+#, fuzzy
 msgid  "Select a Java Runtime Environment"
 msgstr "Seleccioneu un entorn d'execució del Java"
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_HEADER_VENDOR.String.Text
+#, fuzzy
 msgid  "Vendor"
 msgstr "Proveïdor"
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_HEADER_VERSION.String.Text
+#, fuzzy
 msgid  "Version"
 msgstr "Versió"
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_HEADER_FEATURES.String.Text
+#, fuzzy
 msgid  "Features"
 msgstr "Característiques"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.ModalDialog.Text
+#, fuzzy
 msgid  "Java Start Parameters"
 msgstr "Paràmetres d'inici del Java"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.FT_PARAMETER.FixedText.Text
+#, fuzzy
 msgid  "Java start ~parameter"
 msgstr "~Paràmetre d'inici del Java"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.PB_ASSIGN.PushButton.Text
+#, fuzzy
 msgid  "~Assign"
 msgstr "~Assigna"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.FT_ASSIGNED.FixedText.Text
+#, fuzzy
 msgid  "Assig~ned start parameters"
 msgstr "Paràmetres d'inici assig~nats"
 
@@ -4132,26 +4650,32 @@ msgid  "For example: -Dmyprop=c:\program files\java"
 msgstr ""
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.PB_REMOVE.PushButton.Text
+#, fuzzy
 msgid  "~Remove"
 msgstr "Sup~rimeix"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.ModalDialog.Text
+#, fuzzy
 msgid  "Class Path"
 msgstr "Camí a les classes"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.FT_PATH.FixedText.Text
+#, fuzzy
 msgid  "A~ssigned folders and archives"
 msgstr "Carpetes i arxius a~ssignats"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.PB_ADDARCHIVE.PushButton.Text
+#, fuzzy
 msgid  "~Add Archive..."
 msgstr "~Afegeix un arxiu..."
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.PB_ADDPATH.PushButton.Text
+#, fuzzy
 msgid  "Add ~Folder"
 msgstr "A~fegeix una carpeta"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.PB_REMOVE_PATH.PushButton.Text
+#, fuzzy
 msgid  "~Remove"
 msgstr "Sup~rimeix"
 
@@ -4172,150 +4696,187 @@ msgid  "You have to restart %PRODUCTNAME so the new or modified values can take 
 msgstr ""
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FL_POOLING.FixedLine.Text
+#, fuzzy
 msgid  "Connection pool"
 msgstr "Connexions disponibles"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.CB_POOL_CONNS.CheckBox.Text
+#, fuzzy
 msgid  "Connection pooling enabled"
 msgstr "Habilita la disponibilitat de connexions"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_DRIVERS.FixedText.Text
+#, fuzzy
 msgid  "Drivers known in %PRODUCTNAME"
 msgstr "Controladors coneguts a l'%PRODUCTNAME"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_DRIVERLABEL.FixedText.Text
+#, fuzzy
 msgid  "Current driver:"
 msgstr "Controlador actual:"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.CB_DRIVERPOOLING.CheckBox.Text
+#, fuzzy
 msgid  "Enable pooling for this driver"
 msgstr "Habilita les connexions disponibles per a aquest controlador"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_TIMEOUT.FixedText.Text
+#, fuzzy
 msgid  "Timeout (seconds)"
 msgstr "Temps d'espera (segons)"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_DRIVER_NAME.String.Text
+#, fuzzy
 msgid  "Driver name"
 msgstr "Nom del controlador"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOLED_FLAG.String.Text
+#, fuzzy
 msgid  "Pool"
 msgstr "Disponibles"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOL_TIMEOUT.String.Text
+#, fuzzy
 msgid  "Timeout"
 msgstr "Temps d'espera"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_YES.String.Text
+#, fuzzy
 msgid  "Yes"
 msgstr "Sí"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_NO.String.Text
+#, fuzzy
 msgid  "No"
 msgstr "No"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.LB_LOAD.FixedLine.Text
+#, fuzzy
 msgid  "Load"
 msgstr "Carrega"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.CB_LOAD_SETTINGS.CheckBox.Text
+#, fuzzy
 msgid  "Load user-specific settings with the document"
 msgstr "Carrega els paràmetres específics de l'usuari amb el document"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.CB_LOAD_DOCPRINTER.CheckBox.Text
+#, fuzzy
 msgid  "Load printer settings with the document"
 msgstr "Carrega els paràmetres de la impressora amb el document"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.GB_SAVE.FixedLine.Text
+#, fuzzy
 msgid  "Save"
 msgstr "Desa"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.BTN_DOCINFO.CheckBox.Text
+#, fuzzy
 msgid  "~Edit document properties before saving"
 msgstr "~Edita les propietats del document abans de desar-lo"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.BTN_BACKUP.CheckBox.Text
+#, fuzzy
 msgid  "Al~ways create backup copy"
 msgstr "Fes sempre una ~còpia de seguretat"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.BTN_AUTOSAVE.CheckBox.Text
+#, fuzzy
 msgid  "Save ~AutoRecovery information every"
 msgstr "Desa la informació de restabliment automàtic cada"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.FT_MINUTE.FixedText.Text
+#, fuzzy
 msgid  "Minutes"
 msgstr "minuts"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.BTN_RELATIVE_FSYS.CheckBox.Text
+#, fuzzy
 msgid  "Save URLs relative to file system"
 msgstr "Desa els URL relatius al sistema de fitxers"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.BTN_RELATIVE_INET.CheckBox.Text
+#, fuzzy
 msgid  "Save URLs relative to internet"
 msgstr "Desa els URL relatius a Internet"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.FL_FILTER.FixedLine.Text
+#, fuzzy
 msgid  "Default file format and ODF settings"
 msgstr "Format de fitxer per defecte i paràmetres ODF"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.FT_ODF_VERSION.FixedText.Text
+#, fuzzy
 msgid  "ODF format version"
 msgstr "Versió de format ODF"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.LB_ODF_VERSION.2.StringList.item
+#, fuzzy
 msgid  "1.0/1.1"
 msgstr "1.0/1.1"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.LB_ODF_VERSION.4.StringList.item
+#, fuzzy
 msgid  "1.2"
 msgstr "1.2"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.LB_ODF_VERSION.0x7fffffff.StringList.item
+#, fuzzy
 msgid  "1.2 Extended (recommended)"
 msgstr "1.2 Ampliat (recomanat)"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.BTN_NOPRETTYPRINTING.CheckBox.Text
+#, fuzzy
 msgid  "Size optimization for ODF format"
 msgstr "Optimització de la mida per al format ODF"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.BTN_WARNALIENFORMAT.CheckBox.Text
+#, fuzzy
 msgid  "Warn when not saving in ODF or default format"
 msgstr "Avisa quan no es desi en ODF o en el format per defecte"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.FT_APP.FixedText.Text
+#, fuzzy
 msgid  "D~ocument type"
 msgstr "Tipus de d~ocument"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.FT_FILTER.FixedText.Text
+#, fuzzy
 msgid  "Always sa~ve as"
 msgstr "Sempre de~sa com a"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_WRITER.StringList.item
+#, fuzzy
 msgid  "Text document"
 msgstr "Document de text"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_WRITER_WEB.StringList.item
+#, fuzzy
 msgid  "HTML document"
 msgstr "Document HTML"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_WRITER_GLOBAL.StringList.item
+#, fuzzy
 msgid  "Master document"
 msgstr "Document mestre"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_CALC.StringList.item
+#, fuzzy
 msgid  "Spreadsheet"
 msgstr "Full de càlcul"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_IMPRESS.StringList.item
+#, fuzzy
 msgid  "Presentation"
 msgstr "Presentació"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_DRAW.StringList.item
+#, fuzzy
 msgid  "Drawing"
 msgstr "Dibuix"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_MATH.StringList.item
+#, fuzzy
 msgid  "Formula"
 msgstr "Fórmula"
 
@@ -4328,14 +4889,17 @@ msgid  "Using "%1" as default file format may cause information loss.\n"
 msgstr ""
 
 #: source/options/optsave.src#TEXT_SAVEPAGE.#define.Text
+#, fuzzy
 msgid  "Save"
 msgstr "Desa"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.TabPage.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Improvement Program"
 msgstr "Programa de millora de l'%PRODUCTNAME"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FL_IMPROVE.FixedLine.Text
+#, fuzzy
 msgid  "Improvement Program"
 msgstr "Programa de millora"
 
@@ -4348,110 +4912,137 @@ msgid  "~Yes, I am willing to participate in the %PRODUCTNAME Improvement Progra
 msgstr ""
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.RB_NO.RadioButton.Text
+#, fuzzy
 msgid  "~No, I do not wish to participate"
 msgstr "~No, no vull participar-hi"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FL_DATA.FixedLine.Text
+#, fuzzy
 msgid  "Tracked Data"
 msgstr "Seguiment de dades"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FT_NR_REPORTS.FixedText.Text
+#, fuzzy
 msgid  "Number of reports sent:"
 msgstr "Nombre d'informes enviats:"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FT_NR_ACTIONS.FixedText.Text
+#, fuzzy
 msgid  "Number of tracked actions:"
 msgstr "Nombre d'accions seguides:"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.PB_SHOWDATA.PushButton.Text
+#, fuzzy
 msgid  "~Show Data"
 msgstr "Mo~stra les dades"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.STR_INFO.String.Text
+#, fuzzy
 msgid  "Help Optimize the Quality of %PRODUCTNAME"
 msgstr "Col·laboreu en l'optimització de la qualitat de l'%PRODUCTNAME"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.STR_MOREINFO.String.Text
+#, fuzzy
 msgid  "More Information"
 msgstr "Més informació"
 
 #: source/options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.ModalDialog.Text
+#, fuzzy
 msgid  "Stored Web Connection Information"
 msgstr "Informació emmagatzemada de connexió a webs"
 
 #: source/options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.FI_NEVERSHOWN.FixedText.Text
+#, fuzzy
 msgid  "Web login information (passwords are never shown)"
 msgstr "Informació d'entrada a webs (mai es mostren les contrasenyes)"
 
 #: source/options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.PB_REMOVE.PushButton.Text
+#, fuzzy
 msgid  "Remove"
 msgstr "Suprimeix"
 
 #: source/options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.PB_REMOVEALL.PushButton.Text
+#, fuzzy
 msgid  "Remove All"
 msgstr "Suprimeix-ho tot"
 
 #: source/options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.PB_CHANGE.PushButton.Text
+#, fuzzy
 msgid  "Change Password..."
 msgstr "Canvia la contrasenya..."
 
 #: source/options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.PB_CLOSE.CancelButton.Text
+#, fuzzy
 msgid  "Close"
 msgstr "Tanca"
 
 #: source/options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.STR_WEBSITE.String.Text
+#, fuzzy
 msgid  "Website"
 msgstr "Lloc web"
 
 #: source/options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.STR_USERNAME.String.Text
+#, fuzzy
 msgid  "User name"
 msgstr "Nom d'usuari"
 
 #: source/options/optchart.src#RID_OPTPAGE_CHART_DEFCOLORS.TabPage.Text
+#, fuzzy
 msgid  "Default Colors"
 msgstr "Colors per defecte"
 
 #: source/options/optchart.src#RID_OPTPAGE_CHART_DEFCOLORS.FL_CHART_COLOR_LIST.FixedLine.Text
+#, fuzzy
 msgid  "Chart colors"
 msgstr "Colors del diagrama"
 
 #: source/options/optchart.src#RID_OPTPAGE_CHART_DEFCOLORS.FL_COLOR_BOX.FixedLine.Text
+#, fuzzy
 msgid  "Color table"
 msgstr "Taula de colors"
 
 #: source/options/optchart.src#RID_OPTPAGE_CHART_DEFCOLORS.PB_RESET_TO_DEFAULT.PushButton.Text
+#, fuzzy
 msgid  "~Default"
 msgstr "~Per defecte"
 
 #: source/options/optchart.src#RID_SVXSTR_DIAGRAM_ROW.String.Text
+#, fuzzy
 msgid  "Data Series $(ROW)"
 msgstr "Sèrie de dades $(ROW)"
 
 #: source/options/optpath.src#RID_SFXPAGE_PATH.TabPage.Text
+#, fuzzy
 msgid  "Paths"
 msgstr "Camins"
 
 #: source/options/optpath.src#RID_SFXPAGE_PATH.FT_TYPE.FixedText.Text
+#, fuzzy
 msgid  "Type"
 msgstr "Tipus"
 
 #: source/options/optpath.src#RID_SFXPAGE_PATH.FT_PATH.FixedText.Text
+#, fuzzy
 msgid  "Path"
 msgstr "Camí"
 
 #: source/options/optpath.src#RID_SFXPAGE_PATH.BTN_PATH.PushButton.Text
+#, fuzzy
 msgid  "~Edit..."
 msgstr "~Edita..."
 
 #: source/options/optpath.src#RID_SFXPAGE_PATH.BTN_STANDARD.PushButton.Text
+#, fuzzy
 msgid  "~Default"
 msgstr "~Per defecte"
 
 #: source/options/optpath.src#RID_SFXPAGE_PATH.GB_STD.FixedLine.Text
+#, fuzzy
 msgid  "Paths used by %PRODUCTNAME"
 msgstr "Camins utilitzats per l'%PRODUCTNAME"
 
 #: source/options/optpath.src#RID_SFXPAGE_PATH.STR_MULTIPATHDLG.String.Text
+#, fuzzy
 msgid  "Edit Paths: %1"
 msgstr "Edita els camins: %1"
 
@@ -4460,98 +5051,122 @@ msgid  "The configuration and mail directories must be specified as separate dir
 msgstr ""
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_CONFIG_DIR.String.Text
+#, fuzzy
 msgid  "Configuration"
 msgstr "Configuració"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_WORK_PATH.String.Text
+#, fuzzy
 msgid  "My Documents"
 msgstr "Els meus documents"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_GRAPHICS_PATH.String.Text
+#, fuzzy
 msgid  "Graphics"
 msgstr "Gràfics"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_BITMAP_PATH.String.Text
+#, fuzzy
 msgid  "Icons"
 msgstr "Icones"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_PALETTE_PATH.String.Text
+#, fuzzy
 msgid  "Palettes"
 msgstr "Paletes"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_BACKUP_PATH.String.Text
+#, fuzzy
 msgid  "Backups"
 msgstr "Còpies de seguretat"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_MODULES_PATH.String.Text
+#, fuzzy
 msgid  "Modules"
 msgstr "Mòduls"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_TEMPLATE_PATH.String.Text
+#, fuzzy
 msgid  "Templates"
 msgstr "Plantilles"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_GLOSSARY_PATH.String.Text
+#, fuzzy
 msgid  "AutoText"
 msgstr "Text automàtic"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_DICTIONARY_PATH.String.Text
+#, fuzzy
 msgid  "Dictionaries"
 msgstr "Diccionaris"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_HELP_DIR.String.Text
+#, fuzzy
 msgid  "Help"
 msgstr "Ajuda"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_GALLERY_DIR.String.Text
+#, fuzzy
 msgid  "Gallery"
 msgstr "Galeria"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_STORAGE_DIR.String.Text
+#, fuzzy
 msgid  "Message Storage"
 msgstr "Emmagatzematge de missatges"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_TEMP_PATH.String.Text
+#, fuzzy
 msgid  "Temporary files"
 msgstr "Fitxers temporals"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_PLUGINS_PATH.String.Text
+#, fuzzy
 msgid  "Plug-ins"
 msgstr "Connectors"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_FAVORITES_DIR.String.Text
+#, fuzzy
 msgid  "Folder Bookmarks"
 msgstr "Carpeta d'adreces d'interès"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_FILTER_PATH.String.Text
+#, fuzzy
 msgid  "Filters"
 msgstr "Filtres"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_ADDINS_PATH.String.Text
+#, fuzzy
 msgid  "Add-ins"
 msgstr "Complements"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_USERCONFIG_PATH.String.Text
+#, fuzzy
 msgid  "User Configuration"
 msgstr "Configuració d'usuari"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_USERDICTIONARY_DIR.String.Text
+#, fuzzy
 msgid  "User-defined dictionaries"
 msgstr "Diccionaris definits per l'usuari"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_AUTOCORRECT_DIR.String.Text
+#, fuzzy
 msgid  "AutoCorrect"
 msgstr "Correcció automàtica"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_LINGUISTIC_DIR.String.Text
+#, fuzzy
 msgid  "Writing aids"
 msgstr "Ajudes a l'escriptura"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FL_MISCELLANEOUS.FixedLine.Text
+#, fuzzy
 msgid  "Miscellaneous options"
 msgstr "Altres opcions"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_ACCESSIBILITY_TOOL.CheckBox.Text
+#, fuzzy
 msgid  "Support ~assistive technology tools (program restart required)"
 msgstr "Eines de tecnologia ~assistida (cal reiniciar el programa)"
 
@@ -4560,26 +5175,32 @@ msgid  "Use te~xt selection cursor in read-only text documents"
 msgstr ""
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_ANIMATED_GRAPHICS.CheckBox.Text
+#, fuzzy
 msgid  "Allow animated ~graphics"
 msgstr "Permet ~gràfics animats"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_ANIMATED_TEXTS.CheckBox.Text
+#, fuzzy
 msgid  "Allow animated ~text"
 msgstr "Permet ~text animat"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_TIPHELP.CheckBox.Text
+#, fuzzy
 msgid  "~Help tips disappear after "
 msgstr "Els consells d'ajuda desapareixeran després de "
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FT_TIPHELP.FixedText.Text
+#, fuzzy
 msgid  "seconds"
 msgstr "segons"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FL_HC_OPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Options for high contrast appearance"
 msgstr "Opcions d'aparença d'alt contrast"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_AUTO_DETECT_HC.CheckBox.Text
+#, fuzzy
 msgid  "Automatically ~detect high contrast mode of operating system"
 msgstr "~Detecta automàticament el mode d'alt contrast del sistema operatiu"
 
@@ -4592,58 +5213,72 @@ msgid  "~Use system colors for page previews"
 msgstr ""
 
 #: source/options/optgdlg.src#OFA_TP_MISC.FL_HELP.FixedLine.Text
+#, fuzzy
 msgid  "Help"
 msgstr "Ajuda"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.CB_TOOLTIP.CheckBox.Text
+#, fuzzy
 msgid  "~Tips"
 msgstr "C~onsells"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.CB_EXTHELP.CheckBox.Text
+#, fuzzy
 msgid  "~Extended tips"
 msgstr "Cons~ells ampliats"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.CB_HELPAGENT.CheckBox.Text
+#, fuzzy
 msgid  "~Help Agent"
 msgstr "~Agent d'ajuda"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.PB_HELPAGENT_RESET.PushButton.Text
+#, fuzzy
 msgid  "~Reset Help Agent"
 msgstr "~Reinicialitza l'Agent d'ajuda"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.FT_HELPFORMAT.FixedText.Text
+#, fuzzy
 msgid  "Help ~formatting"
 msgstr "~Format de l'ajuda"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.item1.StringList.item
+#, fuzzy
 msgid  "Default"
 msgstr "Per defecte"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.item2.StringList.item
+#, fuzzy
 msgid  "High Contrast #1"
 msgstr "Alt contrast núm. 1"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.item3.StringList.item
+#, fuzzy
 msgid  "High Contrast #2"
 msgstr "Alt contrast núm. 2"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.item4.StringList.item
+#, fuzzy
 msgid  "High Contrast Black"
 msgstr "Alt contrast negre"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.item5.StringList.item
+#, fuzzy
 msgid  "High Contrast White"
 msgstr "Alt contrast blanc"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.FL_FILEDLG.FixedLine.Text
+#, fuzzy
 msgid  "Open/Save dialogs"
 msgstr "Diàlegs d'obertura/desament"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.CB_FILEDLG.CheckBox.Text
+#, fuzzy
 msgid  "~Use %PRODUCTNAME dialogs"
 msgstr "~Utilitza els diàlegs de l'%PRODUCTNAME"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.FL_DOCSTATUS.FixedLine.Text
+#, fuzzy
 msgid  "Document status"
 msgstr "Estat del document"
 
@@ -4652,226 +5287,282 @@ msgid  "~Printing sets "document modified" status"
 msgstr ""
 
 #: source/options/optgdlg.src#OFA_TP_MISC.FL_TWOFIGURE.FixedLine.Text
+#, fuzzy
 msgid  "Year (two digits)"
 msgstr "Any (dues xifres)"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.FT_INTERPRET.FixedText.Text
+#, fuzzy
 msgid  "Interpret as years between"
 msgstr "Interpreta com a anys entre"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.FT_TOYEAR.FixedText.Text
+#, fuzzy
 msgid  "and "
 msgstr "i "
 
 #: source/options/optgdlg.src#OFA_TP_MISC.FL_PRINTDLG.FixedLine.Text
+#, fuzzy
 msgid  "Print dialogs"
 msgstr "Diàlegs d'impressió"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.CB_PRINTDLG.CheckBox.Text
+#, fuzzy
 msgid  "Use %PRODUCTNAME ~dialogs"
 msgstr "Utilitza els ~diàlegs de l'%PRODUCTNAME"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FL_USERINTERFACE.FixedLine.Text
+#, fuzzy
 msgid  "User Interface"
 msgstr "Interfície d'usuari"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FT_WINDOWSIZE.FixedText.Text
+#, fuzzy
 msgid  "Sc~aling"
 msgstr "Esc~ala"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FT_ICONSIZESTYLE.FixedText.Text
+#, fuzzy
 msgid  "Icon size and style"
 msgstr "Mida i estil de la icona"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.STR_ICONSIZE.String.Text
+#, fuzzy
 msgid  "Icon size"
 msgstr "Mida de la icona"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.item1.StringList.item
+#, fuzzy
 msgid  "Automatic"
 msgstr "Automàtic"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.item2.StringList.item
+#, fuzzy
 msgid  "Small"
 msgstr "Petita"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.item3.StringList.item
+#, fuzzy
 msgid  "Large"
 msgstr "Gran"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.item1.StringList.item
+#, fuzzy
 msgid  "Automatic"
 msgstr "Automàtic"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.item2.StringList.item
+#, fuzzy
 msgid  "Galaxy (default)"
 msgstr "Galàxia (per defecte)"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.item3.StringList.item
+#, fuzzy
 msgid  "High Contrast"
 msgstr "Alt contrast"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.item4.StringList.item
+#, fuzzy
 msgid  "Industrial"
 msgstr "Industrial"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.item5.StringList.item
+#, fuzzy
 msgid  "Classic"
 msgstr "Clàssic"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.CB_SYSTEM_FONT.CheckBox.Text
+#, fuzzy
 msgid  "Use system ~font for user interface"
 msgstr "Utilitza el tipus de lletra del sistema per a la inter~fície"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.CB_FONTANTIALIASING.CheckBox.Text
+#, fuzzy
 msgid  "Screen font antialiasing"
 msgstr "Suavitza el tipus de lletra a la pantalla"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FT_POINTLIMIT_LABEL.FixedText.Text
+#, fuzzy
 msgid  "from"
 msgstr "de"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FT_POINTLIMIT_UNIT.FixedText.Text
+#, fuzzy
 msgid  "Pixels"
 msgstr "Píxels"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FL_MENU.FixedLine.Text
+#, fuzzy
 msgid  "Menu"
 msgstr "Menú"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FT_MENU_ICONS.FixedText.Text
+#, fuzzy
 msgid  "Icons in menus"
 msgstr "Icones als menús"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_MENU_ICONS.item1.StringList.item
+#, fuzzy
 msgid  "Automatic"
 msgstr "Automàtic"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_MENU_ICONS.item2.StringList.item
+#, fuzzy
 msgid  "Hide"
 msgstr "Amaga"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_MENU_ICONS.item3.StringList.item
+#, fuzzy
 msgid  "Show"
 msgstr "Mostra"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FL_FONTLISTS.FixedLine.Text
+#, fuzzy
 msgid  "Font Lists"
 msgstr "Llistes de tipus de lletra"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.CB_FONT_SHOW.CheckBox.Text
+#, fuzzy
 msgid  "Show p~review of fonts"
 msgstr "P~revisualitza els tipus de lletra"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.CB_FONT_HISTORY.CheckBox.Text
+#, fuzzy
 msgid  "Show font h~istory"
 msgstr "Mostra l'h~istorial dels tipus de lletra"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FL_RENDERING.FixedLine.Text
+#, fuzzy
 msgid  "Graphics output"
 msgstr "Sortida de gràfics"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.CB_USE_HARDACCELL.CheckBox.Text
+#, fuzzy
 msgid  "Use hardware acceleration"
 msgstr "Accelera per maquinari"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.CB_USE_ANTIALIASE.CheckBox.Text
+#, fuzzy
 msgid  "Use Anti-Aliasing"
 msgstr "Usa l'antialiàsing"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FL_MOUSE.FixedLine.Text
+#, fuzzy
 msgid  "Mouse"
 msgstr "Ratolí"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FT_MOUSEPOS.FixedText.Text
+#, fuzzy
 msgid  "Mouse positioning"
 msgstr "Posicionament del ratolí"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEPOS.item1.StringList.item
+#, fuzzy
 msgid  "Default button"
 msgstr "Botó per defecte"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEPOS.item2.StringList.item
+#, fuzzy
 msgid  "Dialog center"
 msgstr "Centre del diàleg"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEPOS.item3.StringList.item
+#, fuzzy
 msgid  "No automatic positioning"
 msgstr "Sense posicionament automàtic"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FT_MOUSEMIDDLE.FixedText.Text
+#, fuzzy
 msgid  "Middle mouse button"
 msgstr "Botó central del ratolí"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEMIDDLE.item1.StringList.item
+#, fuzzy
 msgid  "No function"
 msgstr "Cap funció"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEMIDDLE.item2.StringList.item
+#, fuzzy
 msgid  "Automatic scrolling"
 msgstr "Desplaçament automàtic"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEMIDDLE.item3.StringList.item
+#, fuzzy
 msgid  "Paste clipboard"
 msgstr "Enganxa el porta-retalls"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FL_SELECTION.FixedLine.Text
+#, fuzzy
 msgid  "Selection"
 msgstr "Selecció"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.CB_SELECTION.CheckBox.Text
+#, fuzzy
 msgid  "Transparency"
 msgstr "Transparència"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.MF_SELECTION.MetricField.CustomUnitText
+#, fuzzy
 msgid  "%"
 msgstr "%"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.FL_UI_LANG.FixedLine.Text
+#, fuzzy
 msgid  "Language of"
 msgstr "Llengua de"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.FT_USERINTERFACE.FixedText.Text
+#, fuzzy
 msgid  "~User interface"
 msgstr "Interfície d'~usuari"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.FT_LOCALESETTING.FixedText.Text
+#, fuzzy
 msgid  "Locale setting"
 msgstr "Configuració local"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.FT_DECIMALSEPARATOR.FixedText.Text
+#, fuzzy
 msgid  "Decimal separator key"
 msgstr "Tecla del separador decimal"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.CB_DECIMALSEPARATOR.CheckBox.Text
+#, fuzzy
 msgid  "~Same as locale setting ( %1 )"
 msgstr "Igual que la ~configuració local ( %1 )"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.FT_CURRENCY.FixedText.Text
+#, fuzzy
 msgid  "~Default currency"
 msgstr "Moneda per ~defecte"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.FL_LINGU_LANG.FixedLine.Text
+#, fuzzy
 msgid  "Default languages for documents"
 msgstr "Llengües per defecte per als documents"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.FT_WEST_LANG.FixedText.Text
+#, fuzzy
 msgid  "Western"
 msgstr "Occidental"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.FT_ASIAN_LANG.FixedText.Text
+#, fuzzy
 msgid  "Asian"
 msgstr "Asiàtic"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.FT_COMPLEX_LANG.FixedText.Text
+#, fuzzy
 msgid  "C~TL"
 msgstr "C~TL"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.CB_CURRENT_DOC.CheckBox.Text
+#, fuzzy
 msgid  "For the current document only"
 msgstr "Només per al document actual"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.FL_ENHANCED.FixedLine.Text
+#, fuzzy
 msgid  "Enhanced language support"
 msgstr "Compatibilitat de llengües millorada"
 
@@ -4888,146 +5579,182 @@ msgid  "The language setting of the user interface has been updated and will tak
 msgstr ""
 
 #: source/options/optspell.src#RID_SFXPAGE_SPELL.TabPage.Text
+#, fuzzy
 msgid  "Spellcheck"
 msgstr "Verificació ortogràfica"
 
 #: source/options/optspell.src#RID_SFXPAGE_SPELL.BTN_BOOK.PushButton.Text
+#, fuzzy
 msgid  "~Edit..."
 msgstr "~Edita..."
 
 #: source/options/optspell.src#RID_SFXPAGE_SPELL.GB_BOOK.FixedLine.Text
+#, fuzzy
 msgid  "Dictionaries"
 msgstr "Diccionaris"
 
 #: source/options/optspell.src#RID_SFXPAGE_SPELL.BTN_CAPS.CheckBox.Text
+#, fuzzy
 msgid  "~Capital words"
 msgstr "Paraules amb majús~cules"
 
 #: source/options/optspell.src#RID_SFXPAGE_SPELL.BTN_NUMS.CheckBox.Text
+#, fuzzy
 msgid  "~Words with numbers "
 msgstr "~Paraules amb xifres "
 
 #: source/options/optspell.src#RID_SFXPAGE_SPELL.BTN_UPLOW.CheckBox.Text
+#, fuzzy
 msgid  "~Case sensitive "
 msgstr "Majús~cules i minúscules"
 
 #: source/options/optspell.src#RID_SFXPAGE_SPELL.GB_AUDIT.FixedLine.Text
+#, fuzzy
 msgid  "Check"
 msgstr "Comprova"
 
 #: source/options/readonlyimage.src#RID_SVXSTR_READONLY_CONFIG_TIP.String.Text
+#, fuzzy
 msgid  "This setting is protected by the Administrator"
 msgstr "Aquest paràmetre està protegit per l'Administrador"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.CB_USETABLE.CheckBox.Text
+#, fuzzy
 msgid  "~Apply replacement table"
 msgstr "~Aplica la taula de reemplaçament"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.FT_FONT1.FixedText.Text
+#, fuzzy
 msgid  "~Font"
 msgstr "~Tipus de lletra"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.FT_FONT2.FixedText.Text
+#, fuzzy
 msgid  "Re~place with"
 msgstr "Reemplaça ~per"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.TBX_SUBSTNEWDEL.BT_SUBSTAPPLY.ToolBoxItem.Text
+#, fuzzy
 msgid  "Apply"
 msgstr "Aplica"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.TBX_SUBSTNEWDEL.BT_SUBSTDELETE.ToolBoxItem.Text
+#, fuzzy
 msgid  "Delete"
 msgstr "Suprimeix"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.FL_SOURCEVIEW.FixedLine.Text
+#, fuzzy
 msgid  "Font settings for HTML, Basic and SQL sources"
 msgstr "Configuració del tipus de lletra per a codi font en HTML, Basic i SQL"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.FT_FONTNAME.FixedText.Text
+#, fuzzy
 msgid  "Fonts"
 msgstr "Tipus de lletra"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.CB_NONPROP.CheckBox.Text
+#, fuzzy
 msgid  "Non-proportional fonts only"
 msgstr "Només tipus de lletra no proporcionals"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.FT_FONTHEIGHT.FixedText.Text
+#, fuzzy
 msgid  "~Size"
 msgstr "~Mida"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER1.String.Text
+#, fuzzy
 msgid  "Always"
 msgstr "Sempre"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER2.String.Text
+#, fuzzy
 msgid  "Screen only"
 msgstr "Pantalla"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER3.String.Text
+#, fuzzy
 msgid  "Font"
 msgstr "Tipus de lletra"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER4.String.Text
+#, fuzzy
 msgid  "Replace with"
 msgstr "Reemplaça per"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_AUTOMATIC.String.Text
+#, fuzzy
 msgid  "Automatic"
 msgstr "Automàtic"
 
 #: source/options/optdict.src#RID_SFXDLG_NEWDICT.ModalDialog.Text
+#, fuzzy
 msgid  "New Dictionary"
 msgstr "Diccionari nou"
 
 #: source/options/optdict.src#RID_SFXDLG_NEWDICT.FT_DICTNAME.FixedText.Text
+#, fuzzy
 msgid  "~Name"
 msgstr "~Nom"
 
 #: source/options/optdict.src#RID_SFXDLG_NEWDICT.FT_DICTLANG.FixedText.Text
+#, fuzzy
 msgid  "~Language"
 msgstr "~Llengua"
 
 #: source/options/optdict.src#RID_SFXDLG_NEWDICT.BTN_EXCEPT.CheckBox.Text
+#, fuzzy
 msgid  "~Exception (-)"
 msgstr "~Excepció (-)"
 
 #: source/options/optdict.src#RID_SFXDLG_NEWDICT.GB_NEWDICT.FixedLine.Text
+#, fuzzy
 msgid  "Dictionary"
 msgstr "Diccionari"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.ModalDialog.Text
+#, fuzzy
 msgid  "Edit Custom Dictionary"
 msgstr "Edita el diccionari personalitzat"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.FT_BOOK.FixedText.Text
+#, fuzzy
 msgid  "~Book"
 msgstr "~Llibre"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.FT_DICTLANG.FixedText.Text
+#, fuzzy
 msgid  "~Language"
 msgstr "~Llengua"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.FT_WORD.FixedText.Text
+#, fuzzy
 msgid  "~Word"
 msgstr "~Paraula"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.FT_REPLACE.FixedText.Text
+#, fuzzy
 msgid  "Replace ~By:"
 msgstr "Reemplaça ~per:"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.PB_NEW_REPLACE.PushButton.Text
+#, fuzzy
 msgid  "~New"
 msgstr "~Nou"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.PB_DELETE_REPLACE.PushButton.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "~Suprimeix"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.STR_MODIFY.String.Text
+#, fuzzy
 msgid  "~Replace"
 msgstr "~Reemplaça"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.BTN_EDITCLOSE.CancelButton.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "~Tanca"
 
@@ -5036,330 +5763,412 @@ msgid  "The specified name already exists.\nPlease enter a new name."
 msgstr ""
 
 #: source/options/optdict.src#RID_SFXQB_SET_LANGUAGE.QueryBox.Message
+#, fuzzy
 msgid  "Do you want to change the '%1' dictionary language?"
 msgstr "Voleu canviar la llengua del diccionari '%1'?"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ModalDialog.Text
+#, fuzzy
 msgid  "Edit Modules"
 msgstr "Edita els mòduls"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.FL_EDIT_MODULES_OPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Options"
 msgstr "Opcions"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.FT_EDIT_MODULES_LANGUAGE.FixedText.Text
+#, fuzzy
 msgid  "Language"
 msgstr "Llengua"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.PB_EDIT_MODULES_PRIO_UP.PushButton.Text
+#, fuzzy
 msgid  "Move Up"
 msgstr "Mou amunt"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.PB_EDIT_MODULES_PRIO_DOWN.PushButton.Text
+#, fuzzy
 msgid  "Move Down"
 msgstr "Mou avall"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.PB_EDIT_MODULES_PRIO_BACK.PushButton.Text
+#, fuzzy
 msgid  "~Back"
 msgstr "~Enrere"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.FT_EDIT_MODULES_NEWDICTSLINK.FixedText.Text
+#, fuzzy
 msgid  "~Get more dictionaries online..."
 msgstr "Aconse~guiu més diccionaris en línia..."
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.PB_OK.OKButton.Text
+#, fuzzy
 msgid  "Close"
 msgstr "Tanca"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_SPELL.String.Text
+#, fuzzy
 msgid  "Spelling"
 msgstr "Ortografia"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_HYPH.String.Text
+#, fuzzy
 msgid  "Hyphenation"
 msgstr "Partició de mots"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_THES.String.Text
+#, fuzzy
 msgid  "Thesaurus"
 msgstr "Tesaurus"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_GRAMMAR.String.Text
+#, fuzzy
 msgid  "Grammar"
 msgstr "Gramàtica"
 
 #: source/options/optlingu.src#RID_SVXDLG_LNG_ED_NUM_PREBREAK.ModalDialog.Text
+#, fuzzy
 msgid  "Hyphenation"
 msgstr "Partició de mots"
 
 #: source/options/optlingu.src#RID_SVXDLG_LNG_ED_NUM_PREBREAK.STR_NUM_PRE_BREAK_DLG.String.Text
+#, fuzzy
 msgid  "Characters before break"
 msgstr "Caràcters abans del salt"
 
 #: source/options/optlingu.src#RID_SVXDLG_LNG_ED_NUM_PREBREAK.STR_NUM_POST_BREAK_DLG.String.Text
+#, fuzzy
 msgid  "Characters after break"
 msgstr "Caràcters després del salt"
 
 #: source/options/optlingu.src#RID_SVXDLG_LNG_ED_NUM_PREBREAK.STR_NUM_MIN_WORDLEN_DLG.String.Text
+#, fuzzy
 msgid  "Minimal word length"
 msgstr "Longitud mínima d'una paraula"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.TabPage.Text
+#, fuzzy
 msgid  "Options"
 msgstr "Opcions"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.FL_LINGUISTIC.FixedLine.Text
+#, fuzzy
 msgid  "Writing aids"
 msgstr "Ajudes a l'escriptura"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.FT_LINGU_MODULES.FixedText.Text
+#, fuzzy
 msgid  "Available language modules"
 msgstr "Mòduls de llengua disponibles"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.PB_LINGU_MODULES_EDIT.PushButton.Text
+#, fuzzy
 msgid  "~Edit..."
 msgstr "~Edita..."
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.FT_LINGU_DICS.FixedText.Text
+#, fuzzy
 msgid  "User-defined dictionaries"
 msgstr "Diccionaris definits per l'usuari"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.PB_LINGU_DICS_NEW_DIC.PushButton.Text
+#, fuzzy
 msgid  "~New..."
 msgstr "~Nou..."
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.PB_LINGU_DICS_EDIT_DIC.PushButton.Text
+#, fuzzy
 msgid  "Ed~it..."
 msgstr "Ed~ita..."
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.PB_LINGU_DICS_DEL_DIC.PushButton.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "~Suprimeix"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.FT_LINGU_OPTIONS.FixedText.Text
+#, fuzzy
 msgid  "~Options"
 msgstr "~Opcions"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.PB_LINGU_OPTIONS_EDIT.PushButton.Text
+#, fuzzy
 msgid  "Edi~t..."
 msgstr "Edi~ta..."
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.FT_LINGU_OPTIONS_MOREDICTS.FixedText.Text
+#, fuzzy
 msgid  "~Get more dictionaries online..."
 msgstr "Aconse~guiu més diccionaris en línia..."
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_CAPITAL_WORDS.String.Text
+#, fuzzy
 msgid  "Check uppercase words"
 msgstr "Comprova les paraules en majúscules"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_WORDS_WITH_DIGITS.String.Text
+#, fuzzy
 msgid  "Check words with numbers "
 msgstr "Verifica les paraules amb xifres "
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_CAPITALIZATION.String.Text
+#, fuzzy
 msgid  "Check capitalization"
 msgstr "Comprova l'ús de majúscules"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_SPELL_SPECIAL.String.Text
+#, fuzzy
 msgid  "Check special regions"
 msgstr "Comprova les regions especials"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_SPELL_AUTO.String.Text
+#, fuzzy
 msgid  "Check spelling as you type"
 msgstr "Revisa l'ortografia a mesura que es teclegi"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_GRAMMAR_AUTO.String.Text
+#, fuzzy
 msgid  "Check grammar as you type"
 msgstr "Revisa la gramàtica a mesura que es teclegi"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_NUM_MIN_WORDLEN.String.Text
+#, fuzzy
 msgid  "Minimal number of characters for hyphenation: "
 msgstr "Nombre mínim de caràcters per posar-hi un guionet: "
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_NUM_PRE_BREAK.String.Text
+#, fuzzy
 msgid  "Characters before line break: "
 msgstr "Caràcters abans del salt de línia: "
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_NUM_POST_BREAK.String.Text
+#, fuzzy
 msgid  "Characters after line break: "
 msgstr "Caràcters després del salt de línia: "
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_HYPH_AUTO.String.Text
+#, fuzzy
 msgid  "Hyphenate without inquiry"
 msgstr "Parteix els mots sense consultar"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_HYPH_SPECIAL.String.Text
+#, fuzzy
 msgid  "Hyphenate special regions"
 msgstr "Parteix els mots de regions especials"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_LINGU_MODULES_EDIT.String.Text
+#, fuzzy
 msgid  "Edit Available language modules"
 msgstr "Edita els mòduls de llengua disponibles"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_LINGU_DICS_EDIT_DIC.String.Text
+#, fuzzy
 msgid  "Edit User-defined dictionaries"
 msgstr "Edita els diccionaris definits per l'usuari"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_LINGU_OPTIONS_EDIT.String.Text
+#, fuzzy
 msgid  "Edit Options"
 msgstr "Edita les opcions"
 
 #: source/options/optlingu.src#RID_SFXQB_DELDICT.QueryBox.Message
+#, fuzzy
 msgid  "Do you want to delete the dictionary?"
 msgstr "Voleu suprimir el diccionari?"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.TabPage.Text
+#, fuzzy
 msgid  "Registered databases"
 msgstr "Bases de dades registrades"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.FT_TYPE.FixedText.Text
+#, fuzzy
 msgid  "Registered name"
 msgstr "Nom registrat"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.FT_PATH.FixedText.Text
+#, fuzzy
 msgid  "Database file"
 msgstr "Fitxer de base de dades"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_NEW.PushButton.Text
+#, fuzzy
 msgid  "~New..."
 msgstr "~Nou..."
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_EDIT.PushButton.Text
+#, fuzzy
 msgid  "~Edit..."
 msgstr "~Edita..."
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_DELETE.PushButton.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "~Suprimeix"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.GB_STD.FixedLine.Text
+#, fuzzy
 msgid  "Registered databases"
 msgstr "Bases de dades registrades"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.GB_WORD.FixedLine.Text
+#, fuzzy
 msgid  "Microsoft Word 97/2000/XP"
 msgstr "Microsoft Word 97/2000/XP"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_WBAS_CODE.CheckBox.Text
+#, fuzzy
 msgid  "Load Basic ~code"
 msgstr "Carrega el ~codi Basic"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_WBAS_STG.CheckBox.Text
+#, fuzzy
 msgid  "Save ~original Basic code"
 msgstr "Desa el codi Basic ~original"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.GB_EXCEL.FixedLine.Text
+#, fuzzy
 msgid  "Microsoft Excel 97/2000/XP"
 msgstr "Microsoft Excel 97/2000/XP"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_EBAS_CODE.CheckBox.Text
+#, fuzzy
 msgid  "Lo~ad Basic code"
 msgstr "C~arrega el codi Basic"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_EBAS_EXECTBL.CheckBox.Text
+#, fuzzy
 msgid  "E~xecutable code"
 msgstr "Codi e~xecutable"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_EBAS_STG.CheckBox.Text
+#, fuzzy
 msgid  "Sa~ve original Basic code"
 msgstr "Desa el codi ~Basic original"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.GB_PPOINT.FixedLine.Text
+#, fuzzy
 msgid  "Microsoft PowerPoint 97/2000/XP"
 msgstr "Microsoft PowerPoint 97/2000/XP"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_PBAS_CODE.CheckBox.Text
+#, fuzzy
 msgid  "Load Ba~sic code"
 msgstr "Carrega el codi Ba~sic"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_PBAS_STG.CheckBox.Text
+#, fuzzy
 msgid  "Sav~e original Basic code"
 msgstr "D~esa el codi Basic original"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.ST_HEADER1.String.Text
+#, fuzzy
 msgid  "[L]"
 msgstr "[C]"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.ST_HEADER2.String.Text
+#, fuzzy
 msgid  "[S]"
 msgstr "[D]"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.FT_HEADER1_EXPLANATION.FixedText.Text
+#, fuzzy
 msgid  "[L]: Load and convert the object"
 msgstr "[C]: Carrega i converteix l'objecte"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.FT_HEADER2_EXPLANATION.FixedText.Text
+#, fuzzy
 msgid  "[S]: Convert and save the object"
 msgstr "[D]: Converteix i desa l'objecte"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.ST_CHG_MATH.String.Text
+#, fuzzy
 msgid  "MathType to %PRODUCTNAME Math or reverse"
 msgstr "Del MathType a l'%PRODUCTNAME Math o a la inversa"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.ST_CHG_WRITER.String.Text
+#, fuzzy
 msgid  "WinWord to %PRODUCTNAME Writer or reverse"
 msgstr "Del WinWord a l'%PRODUCTNAME Writer o a la inversa"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.ST_CHG_CALC.String.Text
+#, fuzzy
 msgid  "Excel to %PRODUCTNAME Calc or reverse"
 msgstr "De l'Excel a l'%PRODUCTNAME Calc o a la inversa"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.ST_CHG_IMPRESS.String.Text
+#, fuzzy
 msgid  "PowerPoint to %PRODUCTNAME Impress or reverse"
 msgstr "Del PowerPoint a l'%PRODUCTNAME Impress o a la inversa"
 
 #: source/options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.TabPage.Text
+#, fuzzy
 msgid  "OnlineUpdate"
 msgstr "Actualització en línia"
 
 #: source/options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.FL_OPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Online Update Options"
 msgstr "Opcions d'actualització en línia"
 
 #: source/options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.CB_AUTOCHECK.CheckBox.Text
+#, fuzzy
 msgid  "~Check for updates automatically"
 msgstr "~Comprova si hi ha actualitzacions automàticament"
 
 #: source/options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.RB_EVERYDAY.RadioButton.Text
+#, fuzzy
 msgid  "Every Da~y"
 msgstr "Cada ~dia"
 
 #: source/options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.RB_EVERYWEEK.RadioButton.Text
+#, fuzzy
 msgid  "Every ~Week"
 msgstr "Cada ~setmana"
 
 #: source/options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.RB_EVERYMONTH.RadioButton.Text
+#, fuzzy
 msgid  "Every ~Month"
 msgstr "Cada ~mes"
 
 #: source/options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.FT_LASTCHECKED.FixedText.Text
+#, fuzzy
 msgid  "Last checked: %DATE%, %TIME%"
 msgstr "Darrera comprovació: %DATE%, %TIME%"
 
 #: source/options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.PB_CHECKNOW.PushButton.Text
+#, fuzzy
 msgid  "Check ~now"
 msgstr "Comprova-ho ~ara"
 
 #: source/options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.CB_AUTODOWNLOAD.CheckBox.Text
+#, fuzzy
 msgid  "~Download updates automatically"
 msgstr "~Baixa les actualitzacions automàticament"
 
 #: source/options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.FT_DESTPATHLABEL.FixedText.Text
+#, fuzzy
 msgid  "Download destination:"
 msgstr "Ubicació de les baixades:"
 
 #: source/options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.PB_CHANGEPATH.PushButton.Text
+#, fuzzy
 msgid  "Ch~ange..."
 msgstr "Ca~nvia..."
 
 #: source/options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.STR_NEVERCHECKED.String.Text
+#, fuzzy
 msgid  "Last checked: Not yet"
 msgstr "Darrera comprovació: mai"
 
 #: source/options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.ModalDialog.Text
+#, fuzzy
 msgid  "Security options and warnings"
 msgstr "Opcions i avisos de seguretat"
 
 #: source/options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.FL_WARNINGS.FixedLine.Text
+#, fuzzy
 msgid  "Security warnings"
 msgstr "Avisos de seguretat"
 
@@ -5368,158 +6177,197 @@ msgid  "Warn if document contains recorded changes, versions, hidden information
 msgstr ""
 
 #: source/options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.CB_SAVESENDDOCS.CheckBox.Text
+#, fuzzy
 msgid  "When saving or sending"
 msgstr "En desar o enviar"
 
 #: source/options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.CB_SIGNDOCS.CheckBox.Text
+#, fuzzy
 msgid  "When signing"
 msgstr "En signar"
 
 #: source/options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.CB_PRINTDOCS.CheckBox.Text
+#, fuzzy
 msgid  "When printing"
 msgstr "En imprimir"
 
 #: source/options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.CB_CREATEPDF.CheckBox.Text
+#, fuzzy
 msgid  "When creating PDF files"
 msgstr "En crear fitxers PDF"
 
 #: source/options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.FL_OPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Security options"
 msgstr "Opcions de seguretat"
 
 #: source/options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.CB_REMOVEINFO.CheckBox.Text
+#, fuzzy
 msgid  "Remove personal information on saving"
 msgstr "Suprimeix la informació personal en desar"
 
 #: source/options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.CB_RECOMMENDPWD.CheckBox.Text
+#, fuzzy
 msgid  "Recommend password protection on saving"
 msgstr "Recomana la protecció amb contrasenya en desar"
 
 #: source/options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.CB_CTRLHYPERLINK.CheckBox.Text
+#, fuzzy
 msgid  "Ctrl-click required to follow hyperlinks"
 msgstr "Requereix Ctrl+clic per seguir els enllaços"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.GB_KERNING.FixedLine.Text
+#, fuzzy
 msgid  "Kerning"
 msgstr "Interlletratge"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.RB_CHAR_KERNING.RadioButton.Text
+#, fuzzy
 msgid  "~Western characters only"
 msgstr "Només caràcters occidentals"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.RB_CHAR_PUNCT.RadioButton.Text
+#, fuzzy
 msgid  "Western ~text and Asian punctuation"
 msgstr "~Text occidental i puntuació asiàtica"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.GB_CHAR_DIST.FixedLine.Text
+#, fuzzy
 msgid  "Character spacing"
 msgstr "Espaiat entre caràcters"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.RB_NO_COMP.RadioButton.Text
+#, fuzzy
 msgid  "~No compression"
 msgstr "~Sense compressió"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.RB_PUNCT_COMP.RadioButton.Text
+#, fuzzy
 msgid  "~Compress punctuation only"
 msgstr "~Compacta només la puntuació"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.RB_PUNCT_KANA_COMP.RadioButton.Text
+#, fuzzy
 msgid  "Compress ~punctuation and Japanese Kana"
 msgstr "Compacta la ~puntuació i el kana japonès"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.GB_START_END.FixedLine.Text
+#, fuzzy
 msgid  "First and last characters"
 msgstr "Primer i darrer caràcters"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.FT_LANGUAGE.FixedText.Text
+#, fuzzy
 msgid  "~Language"
 msgstr "~Llengua"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.CB_STANDARD.CheckBox.Text
+#, fuzzy
 msgid  "~Default"
 msgstr "~Per defecte"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.FT_START.FixedText.Text
+#, fuzzy
 msgid  "Not at start of line:"
 msgstr "No a l'inici de línia:"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.FT_END.FixedText.Text
+#, fuzzy
 msgid  "Not at end of line:"
 msgstr "No a la fi de línia:"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.FT_HINT.FixedText.Text
+#, fuzzy
 msgid  "Without user-defined line break symbols"
 msgstr "Sense caràcter de canvi de fila definit per l'usuari"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.FixedText.Text
+#, fuzzy
 msgid  "Proxy"
 msgstr "Servidor intermediari"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE1.FixedText.Text
+#, fuzzy
 msgid  "Size ~1"
 msgstr "Mida ~1"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE2.FixedText.Text
+#, fuzzy
 msgid  "Size ~2"
 msgstr "Mida ~2"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE3.FixedText.Text
+#, fuzzy
 msgid  "Size ~3"
 msgstr "Mida ~3"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE4.FixedText.Text
+#, fuzzy
 msgid  "Size ~4"
 msgstr "Mida ~4"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE5.FixedText.Text
+#, fuzzy
 msgid  "Size ~5"
 msgstr "Mida ~5"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE6.FixedText.Text
+#, fuzzy
 msgid  "Size ~6"
 msgstr "Mida ~6"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE7.FixedText.Text
+#, fuzzy
 msgid  "Size ~7"
 msgstr "Mida ~7"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.GB_FONTSIZE.FixedLine.Text
+#, fuzzy
 msgid  "Font sizes"
 msgstr "Mides del tipus de lletra"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.GB_IMPORT.FixedLine.Text
+#, fuzzy
 msgid  "Import"
 msgstr "Importació"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.CB_NUMBERS_ENGLISH_US.CheckBox.Text
+#, fuzzy
 msgid  "~Use '%ENGLISHUSLOCALE' locale for numbers"
 msgstr "~Utilitza la configuració de l'%ENGLISHUSLOCALE per als nombres"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.CB_UNKNOWN_TAGS.CheckBox.Text
+#, fuzzy
 msgid  "~Import unknown HTML tags as fields"
 msgstr "~Importa les etiquetes HTML desconegudes com a camps"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.CB_IGNORE_FONTNAMES.CheckBox.Text
+#, fuzzy
 msgid  "Ignore ~font settings"
 msgstr "Ignora la con~figuració del tipus de lletra"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.GB_EXPORT.FixedLine.Text
+#, fuzzy
 msgid  "Export"
 msgstr "Exportació"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.CB_STARBASIC_WARNING.CheckBox.Text
+#, fuzzy
 msgid  "Display ~warning"
 msgstr "Mostra un a~vís"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.CB_PRINT_EXTENSION.CheckBox.Text
+#, fuzzy
 msgid  "~Print layout"
 msgstr "~Format d'impressió"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.CB_LOCAL_GRF.CheckBox.Text
+#, fuzzy
 msgid  "~Copy local graphics to Internet"
 msgstr "~Copia els gràfics locals a Internet"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_CHARSET.FixedText.Text
+#, fuzzy
 msgid  "Character set"
 msgstr "Joc de caràcters"
 
@@ -5659,8 +6507,9 @@ msgid  " degrees"
 msgstr " graus"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.FT_TRGR_BORDER.FixedText.Text
+#, fuzzy
 msgid  "~Border"
-msgstr "~Vora"
+msgstr "~Vores"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.FT_TRGR_START_VALUE.FixedText.Text
 #, fuzzy
