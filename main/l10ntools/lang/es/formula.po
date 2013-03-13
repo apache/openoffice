@@ -1227,6 +1227,22 @@ msgstr "#NUM!"
 msgid  "#N/A"
 msgstr "#N/D"
 
+#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT.String.Text
+msgid  "CSC"
+msgstr ""
+
+#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT.String.Text
+msgid  "SEC"
+msgstr ""
+
+#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT_HYP.String.Text
+msgid  "CSCH"
+msgstr ""
+
+#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT_HYP.String.Text
+msgid  "SECH"
+msgstr ""
+
 #: source/ui/dlg/formdlgs.src#RID_FORMULATAB_FUNCTION.LB_CATEGORY.Default.StringList.item
 msgid  "All"
 msgstr "Todos"
@@ -1265,7 +1281,7 @@ msgstr "Fór~mula"
 
 #: source/ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.FT_RESULT.FixedText.Text
 msgid  "Function result"
-msgstr "Resultado de función"
+msgstr "Resultado de Función"
 
 #: source/ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.FT_FORMULA_RESULT.FixedText.Text
 msgid  "Result"
@@ -1273,7 +1289,7 @@ msgstr "Resultado"
 
 #: source/ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.BTN_MATRIX.CheckBox.Text
 msgid  "Array"
-msgstr "Arreglo"
+msgstr "Matríz"
 
 #: source/ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.RB_REF.ImageButton.QuickHelpText
 msgid  "Maximize"
@@ -1281,7 +1297,7 @@ msgstr "Maximizar"
 
 #: source/ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.BTN_BACKWARD.PushButton.Text
 msgid  "<< ~Back"
-msgstr "<< ~Anterior"
+msgstr "<< ~Volver"
 
 #: source/ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.BTN_FORWARD.PushButton.Text
 msgid  "~Next >>"
@@ -1289,15 +1305,15 @@ msgstr "~Siguiente >>"
 
 #: source/ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.STR_TITLE1.String.Text
 msgid  "Function Wizard"
-msgstr "Asistente de función"
+msgstr "Asistente de Funciones"
 
 #: source/ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.STR_TITLE2.String.Text
 msgid  "Function Wizard  -"
-msgstr "Asistente de función -"
+msgstr "Asistente de Función  -"
 
 #: source/ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.STR_END.String.Text
 msgid  "~End"
-msgstr "~Fín"
+msgstr "~Fin"
 
 #: source/ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA.TC_FUNCTION.TP_FUNCTION.PageItem.Text
 msgid  "Functions"
