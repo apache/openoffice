@@ -541,7 +541,7 @@ msgstr "总进度："
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT_PROGRESS.FixedText.Text
 msgid  "document $current$ of $overall$"
-msgstr "$overall$ 的文档 $current$"
+msgstr "文档 $current$，共 $overall$ "
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_MIGRATION_DONE.FixedText.Text
 msgid  "All forms and reports have been successfully processed. Press 'Next' to show a detailed summary."
@@ -1269,7 +1269,7 @@ msgstr "%PRODUCTNAME Base"
 
 #: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FL_DETAILS.FixedLine.Text
 msgid  "Details"
-msgstr "详细信息"
+msgstr "细节"
 
 #: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_ERRORLIST.FixedText.Text
 msgid  "Error ~list:"
@@ -1745,7 +1745,7 @@ msgstr "主机名(~H)"
 
 #: source/ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_PORTNUMBER.FixedText.Text
 msgid  "~Port number"
-msgstr "端口号码(~P)"
+msgstr "端口号(~P)"
 
 #: source/ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_GENERAL.String.Text
 msgid  "Advanced Properties"
@@ -1933,7 +1933,7 @@ msgstr "使用安全连接 (SSL)"
 
 #: source/ui/dlg/dbadmin.src#PAGE_LDAP.FT_PORTNUMBER.FixedText.Text
 msgid  "~Port number"
-msgstr "端口号(~P)"
+msgstr "端口号码(~P)"
 
 #: source/ui/dlg/dbadmin.src#PAGE_LDAP.FT_LDAPROWCOUNT.FixedText.Text
 msgid  "Maximum number of ~records"
