@@ -753,7 +753,7 @@ msgstr "गलत स्वचालित पाठ दस्तावेज �
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , ERR_WRITE_ERROR_FILE ).String.Text
 msgid  "Error in writing sub-document $(ARG1)."
-msgstr "उप-दस्तावेज लिखबाक समय त्रुटि $(ARG1)."
+msgstr "उप दस्तावेजक $(ARG1) लिखबामे त्रुटि."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_SWG_INTERNAL_ERROR ).String.Text
 msgid  "Internal error in %PRODUCTNAME Writer file format."
@@ -1501,7 +1501,7 @@ msgstr "एकरासँ भ'कए लपेटू (~W)"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_WRAPTHRU_TRANSP.MenuItem.Text
 msgid  "In ~Background"
-msgstr "पृष्ठभूमिमे (~B)"
+msgstr "पृष्ठभूमि मे (~B)"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_WRAP_ANCHOR_ONLY.MenuItem.Text
 msgid  "~First Paragraph"
@@ -1897,7 +1897,7 @@ msgstr "अनुच्छेद"
 
 #: source/ui/chrdlg/paradlg.src#DLG_PARA.1.TP_PARA_STD.PageItem.Text
 msgid  "Indents & Spacing"
-msgstr "हाशिया आ अंतर देनाइ"
+msgstr "हाशिया आ स्थान देनाइ"
 
 #: source/ui/chrdlg/paradlg.src#DLG_PARA.1.TP_PARA_ALIGN.PageItem.Text
 msgid  "Alignment"
@@ -2645,11 +2645,11 @@ msgstr "जोड़नाइ"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.FT_INS_ATTR.FixedText.Text
 msgid  "Attributes"
-msgstr " गुण सभ"
+msgstr "गुणसभ"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.LB_INS_ATTR.item1.StringList.item
 msgid  "[None]"
-msgstr "[केओ नहि]"
+msgstr " [केओ नहि]"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.LB_INS_ATTR.item2.StringList.item
 msgid  "Bold"
@@ -2705,7 +2705,7 @@ msgstr "मेटओनाइ"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.FT_DEL_ATTR.FixedText.Text
 msgid  "Attributes"
-msgstr "गुणसभ"
+msgstr "गुणसभ "
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.FT_DEL_COL.FixedText.Text
 msgid  "Color"
@@ -2721,7 +2721,7 @@ msgstr " गुणकेँ बदलैत अछि"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.FT_CHG_ATTR.FixedText.Text
 msgid  "Attributes"
-msgstr "गुणसभ "
+msgstr " गुणसभ"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.FT_CHG_COL.FixedText.Text
 msgid  "Color"
@@ -2741,7 +2741,7 @@ msgstr "चिह्न (~k)"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.LB_MARKPOS.item1.StringList.item
 msgid  "[None]"
-msgstr " [केओ नहि]"
+msgstr "[केओ नहि]"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.LB_MARKPOS.item2.StringList.item
 msgid  "Left margin"
@@ -4521,7 +4521,7 @@ msgstr "शब्दसभ:"
 
 #: source/ui/dialog/wordcountdialog.src#DLG_WORDCOUNT.FT_CURRENTCHARACTER.FixedText.Text
 msgid  "Characters:"
-msgstr "संप्रतीक:"
+msgstr "संप्रतीकसभ:"
 
 #: source/ui/dialog/wordcountdialog.src#DLG_WORDCOUNT.FL_DOC.FixedLine.Text
 msgid  "Whole document"
@@ -4585,7 +4585,7 @@ msgstr "विभाग"
 
 #: source/ui/dialog/regionsw.src#DLG_INSERT_SECTION.1.TP_COLUMN.PageItem.Text
 msgid  "Columns"
-msgstr "कॉलम सभ"
+msgstr "कॉलमसभ"
 
 #: source/ui/dialog/regionsw.src#DLG_INSERT_SECTION.1.TP_SECTION_INDENTS.PageItem.Text
 msgid  "Indents"
@@ -4597,7 +4597,7 @@ msgstr "पृष्ठभूमि"
 
 #: source/ui/dialog/regionsw.src#DLG_INSERT_SECTION.1.TP_SECTION_FTNENDNOTES.PageItem.Text
 msgid  "Footnotes/Endnotes"
-msgstr "पाद टिप्पणी/अंतटिप्पणी"
+msgstr "पाद टिप्पणी/अँतटिप्पणी"
 
 #: source/ui/dialog/regionsw.src#DLG_INSERT_SECTION.ST_INSERT.String.Text
 msgid  "Insert"
@@ -4641,7 +4641,7 @@ msgstr "पाठ अंतमे जमा करू (~t)"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.CB_FTN_NUM.CheckBox.Text
 msgid  "~Restart numbering"
-msgstr "क्रमाँकन फिनु आरँभ करू (~R)"
+msgstr "क्रमाँकण फिनु आरँभ करू (~R)"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FT_FTN_OFFSET.FixedText.Text
 msgid  "~Start at"
@@ -5409,11 +5409,11 @@ msgstr "स्थिति"
 
 #: source/ui/envelp/envfmt.src#TP_ENV_FMT.TXT_ADDR_LEFT.FixedText.Text
 msgid  "from left"
-msgstr "बम्माँसँ"
+msgstr "बम्माँ सँ"
 
 #: source/ui/envelp/envfmt.src#TP_ENV_FMT.TXT_ADDR_TOP.FixedText.Text
 msgid  "from top"
-msgstr "उप्परसँ"
+msgstr "उप्पर सँ"
 
 #: source/ui/envelp/envfmt.src#TP_ENV_FMT.TXT_ADDR_FORMAT.FixedText.Text
 msgid  "Format"
@@ -5481,7 +5481,7 @@ msgstr "व्यापार"
 
 #: source/ui/envelp/label.src#DLG_LAB.1.TP_LAB_FMT.PageItem.Text
 msgid  "Format"
-msgstr "फॉर्मेट"
+msgstr "फार्मेट"
 
 #: source/ui/envelp/label.src#DLG_LAB.1.TP_LAB_PRT.PageItem.Text
 msgid  "Options"
@@ -5541,7 +5541,7 @@ msgstr "लेबलक तुल्यकालन"
 
 #: source/ui/envelp/label.src#STR_DOC_TITLE.String.Text
 msgid  "Labels"
-msgstr "लेबिल सभ"
+msgstr "लेबल सभ"
 
 #: source/ui/envelp/label.src#STR_CUSTOM.String.Text
 msgid  "[User]"
@@ -6061,7 +6061,7 @@ msgstr "क्षेत्रक संपादन"
 
 #: source/ui/fldui/fldui.src#STR_DATEFLD.String.Text
 msgid  "Date"
-msgstr "दिनांक"
+msgstr "तिथि"
 
 #: source/ui/fldui/fldui.src#STR_TIMEFLD.String.Text
 msgid  "Time"
@@ -6185,7 +6185,7 @@ msgstr "केओ अभिलेख"
 
 #: source/ui/fldui/fldui.src#STR_DBSETNUMBERFLD.String.Text
 msgid  "Record number"
-msgstr "सँख्या अभिलिखित करू"
+msgstr "सँख्या रिकार्ड करू"
 
 #: source/ui/fldui/fldui.src#STR_PREVPAGEFLD.String.Text
 msgid  "Previous page"
@@ -6257,7 +6257,7 @@ msgstr "अनुच्छेद"
 
 #: source/ui/fldui/fldui.src#FLD_STAT_GRF.String.Text
 msgid  "Graphics"
-msgstr "आरेखी"
+msgstr "आलेखी"
 
 #: source/ui/fldui/fldui.src#FLD_STAT_OBJ.String.Text
 msgid  "Objects"
@@ -6289,7 +6289,7 @@ msgstr "अंतिम नाम"
 
 #: source/ui/fldui/fldui.src#FLD_EU_ABK.String.Text
 msgid  "Initials"
-msgstr "आरंभिक"
+msgstr "आरँभिक"
 
 #: source/ui/fldui/fldui.src#FLD_EU_STRASSE.String.Text
 msgid  "Street"
@@ -6673,7 +6673,7 @@ msgstr "प्रारूप (~o)"
 
 #: source/ui/fldui/fldfunc.src#TP_FLD_FUNC.FT_FUNCNAME.FixedText.Text
 msgid  "Na~me"
-msgstr "नाम (~m)"
+msgstr "नाम ( ~m) "
 
 #: source/ui/fldui/fldfunc.src#TP_FLD_FUNC.FT_FUNCVALUE.FixedText.Text
 msgid  "~Value"
@@ -6733,7 +6733,7 @@ msgstr "फँट"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_1.1.TP_CHAR_EXT.PageItem.Text
 msgid  "Font Effects"
-msgstr "फँटक प्रभाव"
+msgstr "फँट प्रभाव"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_1.1.TP_CHAR_POS.PageItem.Text
 msgid  "Position"
@@ -6801,7 +6801,7 @@ msgstr "पृष्ठभूमि"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_2.1.TP_BORDER.PageItem.Text
 msgid  "Borders"
-msgstr "किनार"
+msgstr "किनारसभ"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_2.1.TP_CONDCOLL.PageItem.Text
 msgid  "Condition"
@@ -6917,7 +6917,7 @@ msgstr "विकल्पसभ"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.1.TP_FRM_WRAP.PageItem.Text
 msgid  "Wrap"
-msgstr "लपेटू"
+msgstr "लपटू"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.1.TP_FRM_URL.PageItem.Text
 msgid  "Hyperlink"
@@ -6925,7 +6925,7 @@ msgstr "हाइपरलिंक"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.1.TP_BORDER.PageItem.Text
 msgid  "Borders"
-msgstr "किनार"
+msgstr "किनारसभ"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.1.TP_BACKGROUND.PageItem.Text
 msgid  "Background"
@@ -7205,7 +7205,7 @@ msgstr "पछिला लिंक (~P)"
 
 #: source/ui/frmdlg/frmpage.src#TP_FRM_ADD.LB_PREV.item1.StringList.item
 msgid  "<None>"
-msgstr "<केओ नहि>"
+msgstr "< केओ नहि >"
 
 #: source/ui/frmdlg/frmpage.src#TP_FRM_ADD.FT_NEXT.FixedText.Text
 msgid  "~Next link"
@@ -7337,7 +7337,7 @@ msgstr "स्थान"
 
 #: source/ui/frmdlg/column.src#TP_COLUMN.TabPage.Text
 msgid  "Columns"
-msgstr "कॉलमसभ"
+msgstr "कॉलम सभ"
 
 #: source/ui/frmdlg/column.src#TP_COLUMN.FT_NUMBER.FixedText.Text
 msgid  "Columns"
@@ -8305,7 +8305,7 @@ msgstr "सँ छाँटू"
 
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.RB_SORTUP1.Image.QuickHelpText
 msgid  "Ascending"
-msgstr "बढल क्रममे"
+msgstr "बढ़ल क्रममे"
 
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.RB_SORTDOWN1.Image.QuickHelpText
 msgid  "Descending"
@@ -8313,7 +8313,7 @@ msgstr "घटल क्रममे"
 
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.RB_SORTUP2.Image.QuickHelpText
 msgid  "Ascending"
-msgstr "बढ़ल क्रममे"
+msgstr "घटल क्रममे"
 
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.RB_SORTDOWN2.Image.QuickHelpText
 msgid  "Descending"
@@ -9213,7 +9213,7 @@ msgstr " बिनु शीर्षक 9"
 
 #: source/ui/misc/outline.src#DLG_TAB_OUTLINE.1.TP_OUTLINE_NUM.PageItem.Text
 msgid  "Numbering"
-msgstr "क्रमाँकन"
+msgstr "क्रमांकन"
 
 #: source/ui/misc/outline.src#DLG_TAB_OUTLINE.1.TP_NUM_POSITION.PageItem.Text
 msgid  "Position"
@@ -9313,7 +9313,7 @@ msgstr "छाँटू"
 
 #: source/ui/misc/srtdlg.src#DLG_SORTING.FT_COL.FixedText.Text
 msgid  "Column"
-msgstr "कॉलम"
+msgstr "कॉलम "
 
 #: source/ui/misc/srtdlg.src#DLG_SORTING.FT_KEYTYP.FixedText.Text
 msgid  "Key type"
@@ -9841,7 +9841,7 @@ msgstr "गलत सारणी सूत्र"
 
 #: source/ui/ribbar/workctrl.src#RID_SCROLL_NAVIGATION_WIN.String.Text
 msgid  "Navigation"
-msgstr "सँचरण"
+msgstr "संचरण"
 
 #: source/ui/ribbar/workctrl.src#STR_IMGBTN_TBL_DOWN.String.Text
 msgid  "Next table"
@@ -10569,7 +10569,7 @@ msgstr "दस्ती (~M)"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.FL_POS.FixedLine.Text
 msgid  "Alignment"
-msgstr "सँरेखण "
+msgstr "सँरेखण"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.FL_DIST.FixedLine.Text
 msgid  "Spacing"
@@ -10597,7 +10597,7 @@ msgstr "गुणसभ"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.FT_TEXTDIRECTION.FixedText.Text
 msgid  "Text ~direction"
-msgstr "पाठ दिशा (~d)"
+msgstr "पाठ दिशा (~T)"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.LB_TEXTDIRECTION.0.StringList.item
 msgid  "Left-to-right"
@@ -10609,7 +10609,7 @@ msgstr "दहिन्ना सँ बम्माँ"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.LB_TEXTDIRECTION.4.StringList.item
 msgid  "Use superordinate object settings"
-msgstr "अधिअक्षीय वस्तु जमावटक प्रयोग करू"
+msgstr "अधिअक्षीय वस्तु जमावट प्रयोग करू"
 
 #: source/ui/table/tabledlg.src#TP_TABLE_COLUMN.CB_MOD_TBL.CheckBox.Text
 msgid  "Adapt table ~width"
@@ -11569,7 +11569,7 @@ msgstr "संचरक"
 
 #: source/ui/utlui/navipi.src#DLG_NAVIGATION_PI.TB_CONTENT.FN_GLOBAL_SWITCH.ToolBoxItem.Text
 msgid  "Toggle"
-msgstr "टॉगल"
+msgstr "टॉगल करू"
 
 #: source/ui/utlui/navipi.src#DLG_NAVIGATION_PI.TB_CONTENT.FN_CREATE_NAVIGATION.ToolBoxItem.Text
 msgid  "Navigation"
@@ -11585,7 +11585,7 @@ msgstr "आगाँक तरफ"
 
 #: source/ui/utlui/navipi.src#DLG_NAVIGATION_PI.TB_CONTENT.FN_DROP_REGION.ToolBoxItem.Text
 msgid  "Drag Mode"
-msgstr "कर्ष मोड"
+msgstr "ड्रैग मोड"
 
 #: source/ui/utlui/navipi.src#DLG_NAVIGATION_PI.TB_CONTENT.FN_ITEM_UP.ToolBoxItem.Text
 msgid  "Promote Chapter"
@@ -12121,7 +12121,7 @@ msgstr "सूची 2 प्रारंभ"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_BUL_LEVEL2.String.Text
 msgid  "List 2"
-msgstr "सूची 2 "
+msgstr "सूची 2"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_BUL_LEVEL2E.String.Text
 msgid  "List 2 End"
@@ -12137,7 +12137,7 @@ msgstr "सूची 3 प्रारंभ"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_BUL_LEVEL3.String.Text
 msgid  "List 3"
-msgstr "सूची 3 "
+msgstr "सूची 3"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_BUL_LEVEL3E.String.Text
 msgid  "List 3 End"
@@ -12153,7 +12153,7 @@ msgstr "सूची 4 प्रारंभ"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_BUL_LEVEL4.String.Text
 msgid  "List 4"
-msgstr "सूची 4 "
+msgstr "सूची 4"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_BUL_LEVEL4E.String.Text
 msgid  "List 4 End"
@@ -12169,7 +12169,7 @@ msgstr "सूची 5 प्रारंभ"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_BUL_LEVEL5.String.Text
 msgid  "List 5"
-msgstr "सूची 5 प्रारंभ"
+msgstr "सूची 5"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_BUL_LEVEL5E.String.Text
 msgid  "List 5 End"
@@ -12217,11 +12217,11 @@ msgstr "फ्रेम विषय"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_FOOTNOTE.String.Text
 msgid  "Footnote"
-msgstr "पाद टिप्पणी"
+msgstr "पाद टिपण्णी"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_ENDNOTE.String.Text
 msgid  "Endnote"
-msgstr "अँत टिप्पणी"
+msgstr "अँतनोट"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_LABEL.String.Text
 msgid  "Caption"
