@@ -37,11 +37,11 @@ msgstr "not possible"
 
 #: source/core/undo/undo.src#STR_DELETE_UNDO.String.Text
 msgid  "Delete $1"
-msgstr "Delete $1"
+msgstr "ลบ $1"
 
 #: source/core/undo/undo.src#STR_INSERT_UNDO.String.Text
 msgid  "Insert $1"
-msgstr "Insert $1"
+msgstr "แทรก $1"
 
 #: source/core/undo/undo.src#STR_OVR_UNDO.String.Text
 msgid  "Overwrite: $1"
@@ -757,7 +757,7 @@ msgstr "ข้อผิดพลาดในการเขียนเอกส
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_SWG_INTERNAL_ERROR ).String.Text
 msgid  "Internal error in %PRODUCTNAME Writer file format."
-msgstr "ข้อผิดพลาดภายในในรูปแบบแฟ้ม Writer %PRODUCTNAME "
+msgstr "ข้อผิดพลาดภายในในรูปแบบแฟ้ม %PRODUCTNAME Writer"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , ERR_SWG_INTERNAL_ERROR ).String.Text
 msgid  "Internal error in %PRODUCTNAME Writer file format."
@@ -1385,7 +1385,7 @@ msgstr "~ความสูงที่เหมาะสม"
 #: source/ui/app/mn.src#MN_TAB2.MN_SUB_TBLROW.FN_TABLE_BALANCE_ROWS.MenuItem.Text
 #, fuzzy
 msgid  "Space ~Equally"
-msgstr "ระยะ~ห่างเท่ากัน"
+msgstr "ระยะ~ห่างพอดี"
 
 #: source/ui/app/mn.src#MN_TAB2.MN_SUB_TBLROW.FN_TABLE_SELECT_ROW.MenuItem.Text
 #, fuzzy
@@ -1395,7 +1395,7 @@ msgstr "เ~ลือก"
 #: source/ui/app/mn.src#MN_TAB2.MN_SUB_TBLROW.FN_TABLE_INSERT_ROW_DLG.MenuItem.Text
 #, fuzzy
 msgid  "~Insert..."
-msgstr "แ~ทรก"
+msgstr "แท~รก"
 
 #: source/ui/app/mn.src#MN_TAB2.MN_SUB_TBLROW.FN_TABLE_DELETE_ROW.MenuItem.Text
 #, fuzzy
@@ -3241,7 +3241,7 @@ msgstr ""
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.TabPage.Text
 #, fuzzy
 msgid  "Caption"
-msgstr "คำบรรยาย"
+msgstr "คำบรรยายภาพ"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_OBJECTS.FixedText.Text
 msgid  "Add captions automatically\nwhen inserting:"
@@ -3301,7 +3301,7 @@ msgstr ""
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.TXT_TEXT.FixedText.Text
 #, fuzzy
 msgid  "Separator"
-msgstr "ตัวแบ่งคอลัมน์"
+msgstr "ตัวแยก"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.TXT_POS.FixedText.Text
 #, fuzzy
@@ -5225,8 +5225,9 @@ msgid  "Current selection"
 msgstr "การเลือกปัจจุบัน"
 
 #: source/ui/dialog/wordcountdialog.src#DLG_WORDCOUNT.FT_CURRENTWORD.FixedText.Text
+#, fuzzy
 msgid  "Words:"
-msgstr "คำ"
+msgstr "คำ:"
 
 #: source/ui/dialog/wordcountdialog.src#DLG_WORDCOUNT.FT_CURRENTCHARACTER.FixedText.Text
 #, fuzzy
@@ -8966,8 +8967,9 @@ msgid  "Column spacing exceeds the column width."
 msgstr "ระยะห่างคอลัมน์เกินความกว้างของคอลัมน์"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.ModalDialog.Text
+#, fuzzy
 msgid  "Caption"
-msgstr "~คำบรรยายภาพ"
+msgstr "คำบรรยายภาพ"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.BTN_AUTOCAPTION.PushButton.Text
 #, fuzzy
@@ -9039,8 +9041,9 @@ msgid  "Below"
 msgstr "ข้างล่าง"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.STR_CATEGORY_NONE.String.Text
+#, fuzzy
 msgid  "<None>"
-msgstr "<None>"
+msgstr "ไม่มี"
 
 #: source/ui/frmdlg/cption.src#DLG_SEQUENCE_OPTION.ModalDialog.Text
 #, fuzzy
@@ -9058,8 +9061,9 @@ msgid  "~Level"
 msgstr "~ระดับ"
 
 #: source/ui/frmdlg/cption.src#DLG_SEQUENCE_OPTION.LB_LEVEL.item1.StringList.item
+#, fuzzy
 msgid  "<None>"
-msgstr "ไม่มี"
+msgstr "<None>"
 
 #: source/ui/frmdlg/cption.src#DLG_SEQUENCE_OPTION.FT_SEPARATOR.FixedText.Text
 #, fuzzy
@@ -9447,8 +9451,9 @@ msgid  "~Additional Styles"
 msgstr "รูปแบบเ~พิ่มเติม"
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.ST_USER_ADDSTYLE.String.Text
+#, fuzzy
 msgid  "Styl~es"
-msgstr "รูปแ~บบ"
+msgstr "ลักษ~ณะ"
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.CB_TOXMARKS.CheckBox.Text
 #, fuzzy
@@ -9711,8 +9716,9 @@ msgid  "Entry"
 msgstr "รายการ"
 
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.WIN_TOKEN.STR_TOKEN_HELP_TAB_STOP.String.Text
+#, fuzzy
 msgid  "Tab stop"
-msgstr "หยุดระยะกั้น"
+msgstr "ระยะกั้นหยุด"
 
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.WIN_TOKEN.STR_TOKEN_HELP_TEXT.String.Text
 #, fuzzy
@@ -11327,8 +11333,9 @@ msgid  "~Before"
 msgstr "~ก่อน"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_SUFFIX.FixedText.Text
+#, fuzzy
 msgid  "~After"
-msgstr "~หลังจาก"
+msgstr "~หลัง"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_POS.FixedText.Text
 #, fuzzy
@@ -11346,12 +11353,14 @@ msgid  "En~d of document"
 msgstr "ท้า~ยเอกสาร"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FL_TEMPL.FixedLine.Text
+#, fuzzy
 msgid  "Styles"
-msgstr "ลักษณะ"
+msgstr "รูปแบบ"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_PARA_TEMPL.FixedText.Text
+#, fuzzy
 msgid  "Pa~ragraph"
-msgstr "ย่อ~หน้า"
+msgstr "~ย่อหน้า"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_PAGE_TEMPL.FixedText.Text
 #, fuzzy
@@ -11374,8 +11383,9 @@ msgid  "~Footnote area"
 msgstr "พื้นที่เ~ชิงอรรถ"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FL_CONT.FixedLine.Text
+#, fuzzy
 msgid  "Continuation notice"
-msgstr "แจ้งให้ทราบอย่างต่อเนื่อง"
+msgstr "Continuation notice"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_CONT.FixedText.Text
 #, fuzzy
@@ -12699,8 +12709,9 @@ msgid  "~Manual"
 msgstr "~จัดเอง"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.FL_POS.FixedLine.Text
+#, fuzzy
 msgid  "Alignment"
-msgstr "จัดตำแหน่ง"
+msgstr "จัดชิดแนวตั้ง"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.FL_DIST.FixedLine.Text
 #, fuzzy
@@ -12748,8 +12759,9 @@ msgid  "Right-to-left"
 msgstr "ขวาไปซ้าย"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.LB_TEXTDIRECTION.4.StringList.item
+#, fuzzy
 msgid  "Use superordinate object settings"
-msgstr "ใช้การกำหนดค่าวัตถุ superordinate"
+msgstr "Use superordinate object settings"
 
 #: source/ui/table/tabledlg.src#TP_TABLE_COLUMN.CB_MOD_TBL.CheckBox.Text
 #, fuzzy
@@ -13590,7 +13602,7 @@ msgstr ""
 #: source/ui/utlui/initui.src#RID_SW_SHELLRES.FLD_DOCINFO_TITEL.String.Text
 #, fuzzy
 msgid  "Title"
-msgstr "ชื่อ"
+msgstr "ชื่อเรื่อง"
 
 #: source/ui/utlui/initui.src#RID_SW_SHELLRES.FLD_DOCINFO_THEMA.String.Text
 #, fuzzy
@@ -13665,7 +13677,7 @@ msgstr "แผ่นพับ"
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CONFERENCE.String.Text
 #, fuzzy
 msgid  "Conference proceedings"
-msgstr "ดำเนินการประชุม"
+msgstr "เอกสารหลังการประชุม"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_INBOOK.String.Text
 #, fuzzy
@@ -14495,7 +14507,7 @@ msgstr "เริ่มรายการลำดับ 1"
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_NUM_LEVEL1.String.Text
 #, fuzzy
 msgid  "Numbering 1"
-msgstr "รายการลำดับ 1"
+msgstr "ลำดับหมายเลข 1"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_NUM_LEVEL1E.String.Text
 #, fuzzy
@@ -14515,7 +14527,7 @@ msgstr "เริ่มรายการลำดับ 2 "
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_NUM_LEVEL2.String.Text
 #, fuzzy
 msgid  "Numbering 2"
-msgstr "รายการลำดับ 2"
+msgstr "ลำดับหมายเลข 2"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_NUM_LEVEL2E.String.Text
 #, fuzzy
@@ -14535,7 +14547,7 @@ msgstr "เริ่มรายการลำดับ 3 "
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_NUM_LEVEL3.String.Text
 #, fuzzy
 msgid  "Numbering 3"
-msgstr "รายการลำดับ 3"
+msgstr "ลำดับหมายเลข 3"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_NUM_LEVEL3E.String.Text
 #, fuzzy
@@ -14555,7 +14567,7 @@ msgstr "เริ่มรายการลำดับ 4 "
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_NUM_LEVEL4.String.Text
 #, fuzzy
 msgid  "Numbering 4"
-msgstr "รายการลำดับ 4"
+msgstr "ลำดับหมายเลข 4"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_NUM_LEVEL4E.String.Text
 #, fuzzy
@@ -14575,7 +14587,7 @@ msgstr "เริ่มรายการลำดับ 5 "
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_NUM_LEVEL5.String.Text
 #, fuzzy
 msgid  "Numbering 5"
-msgstr "รายการลำดับ 5"
+msgstr "ลำดับหมายเลข 5"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_NUM_LEVEL5E.String.Text
 #, fuzzy

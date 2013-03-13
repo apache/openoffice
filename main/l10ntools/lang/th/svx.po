@@ -84,12 +84,12 @@ msgstr "~วีดิโอ..."
 #: inc/globlmn_tmpl.hrc#ITEM_INSERT_OBJECT_MN.SID_MN_INSERT_OBJECT_DLGS.MenuItem.Text
 #, fuzzy
 msgid  "~Object"
-msgstr "~Object"
+msgstr "~วัตถุ"
 
 #: inc/globlmn_tmpl.hrc#ITEM_INSERT_OBJECT_MN.SID_MN_INSERT_OBJECT_DLGS.SID_INSERT_OBJECT.MenuItem.Text
 #, fuzzy
 msgid  "~OLE Object..."
-msgstr "~วัตถุ OLE ..."
+msgstr "~OLE Object..."
 
 #: inc/globlmn_tmpl.hrc#ITEM_INSERT_OBJECT_MN.SID_MN_INSERT_OBJECT_DLGS.SID_INSERT_MATH.MenuItem.Text
 #, fuzzy
@@ -99,7 +99,7 @@ msgstr "~สูตร..."
 #: inc/globlmn_tmpl.hrc#ITEM_INSERT_OBJECT_PORTAL.SID_MN_INSERT_OBJECT_DLGS.MenuItem.Text
 #, fuzzy
 msgid  "~Object"
-msgstr "~วัตถุ"
+msgstr "~Object"
 
 #: inc/globlmn_tmpl.hrc#ITEM_INSERT_OBJECT_PORTAL.SID_MN_INSERT_OBJECT_DLGS.SID_INSERT_OBJECT.MenuItem.Text
 #, fuzzy
@@ -1186,7 +1186,7 @@ msgstr "~ระยะห่าง"
 #: source/dialog/hdft.src#RID_SVXPAGE_HEADER.CB_DYNSPACING.CheckBox.Text
 #, fuzzy
 msgid  "Use d~ynamic spacing"
-msgstr "ใช้ช่องว่างแบบไ~ดนามิก"
+msgstr "ใช้ช่องว่างแบบไ~ดมามิก"
 
 #: source/dialog/hdft.src#RID_SVXPAGE_HEADER.FT_HEIGHT.FixedText.Text
 #, fuzzy
@@ -1310,7 +1310,7 @@ msgstr "พื้นที่ย่อหน้า"
 #: source/dialog/swframeposstrings.src#RID_SVXSW_FRAMEPOSITIONS.STR_PRTAREA.String.Text
 #, fuzzy
 msgid  "Paragraph text area"
-msgstr "พื้นที่ย่อหน้าของข้อความ"
+msgstr "พื้นที่ข้อความย่อหน้า"
 
 #: source/dialog/swframeposstrings.src#RID_SVXSW_FRAMEPOSITIONS.STR_REL_PG_LEFT.String.Text
 #, fuzzy
@@ -2296,7 +2296,7 @@ msgstr "ค่า"
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.0.ItemList.item
 #, fuzzy
 msgid  "Border setting"
-msgstr "ตั้งค่าขอบ"
+msgstr "การตั้งค่าขอบ"
 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.1.ItemList.item
 #, fuzzy
@@ -3321,7 +3321,7 @@ msgstr "สี"
 #: source/dialog/sdstring.src#RID_SVXSTR_HATCH.String.Text
 #, fuzzy
 msgid  "Hatching"
-msgstr "การลงลายเส้น"
+msgstr "การใส่เส้นลาย"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_LINEEND.String.Text
 #, fuzzy
@@ -4807,8 +4807,9 @@ msgid  "3D Effects"
 msgstr "ลักษณะ 3 มิติ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_GEO.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Geometry"
-msgstr "เรขาคณิต"
+msgstr "รูปทรง"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_REPRESENTATION.ButtonImage.QuickHelpText
 #, fuzzy
@@ -4818,7 +4819,7 @@ msgstr "แสงเงา"
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT.ButtonImage.QuickHelpText
 #, fuzzy
 msgid  "Illumination"
-msgstr "ส่องแสง"
+msgstr "แสง"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEXTURE.ButtonImage.QuickHelpText
 #, fuzzy
@@ -4828,7 +4829,7 @@ msgstr "พื้นผิว"
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_MATERIAL.ButtonImage.QuickHelpText
 #, fuzzy
 msgid  "Material"
-msgstr "วัสดุ"
+msgstr "วัสุด"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_UPDATE.ButtonImage.QuickHelpText
 #, fuzzy
@@ -4908,7 +4909,7 @@ msgstr "ปกติ"
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_OBJ.ButtonImage.QuickHelpText
 #, fuzzy
 msgid  "Object-Specific"
-msgstr "เฉพาะวัตถุ"
+msgstr "Object-Specific"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_FLAT.ButtonImage.QuickHelpText
 #, fuzzy
@@ -5043,7 +5044,7 @@ msgstr "แหล่งแสง 8"
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT_COLOR.ButtonImage.QuickHelpText
 #, fuzzy
 msgid  "Colors Dialog"
-msgstr "�?�?อะล�?อกสี"
+msgstr "ไดอะล็อกสี"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_AMBIENTLIGHT.FixedText.Text
 #, fuzzy
@@ -5053,7 +5054,7 @@ msgstr "แสงสว่างที่ล้อมรอบ"
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_AMBIENT_COLOR.ButtonImage.QuickHelpText
 #, fuzzy
 msgid  "Colors Dialog"
-msgstr "ไดอะล็อกสี"
+msgstr "�?�?อะล�?อกสี"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FL_LIGHT.FixedLine.Text
 #, fuzzy
@@ -5193,7 +5194,7 @@ msgstr "สีวัตถุ"
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_MAT_COLOR.ButtonImage.QuickHelpText
 #, fuzzy
 msgid  "Colors Dialog"
-msgstr "ไดอะล็อกสี"
+msgstr "�?�?อะล�?อกสี"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_MAT_EMISSION.FixedText.Text
 #, fuzzy
@@ -6121,13 +6122,14 @@ msgid  "I~s not Null"
 msgstr "ไ~ม่เป็นค่าว่าง"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD.ToolBoxItem.Text
+#, fuzzy
 msgid  "Add Item"
-msgstr "เ~พิ่มรายการ"
+msgstr "เพิ่มรายการ"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD_ELEMENT.ToolBoxItem.Text
 #, fuzzy
 msgid  "Add Element"
-msgstr "เ~พิ่มส่วนประกอบ"
+msgstr "เพิ่มส่วนประกอบ"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD_ATTRIBUTE.ToolBoxItem.Text
 #, fuzzy
@@ -6137,12 +6139,12 @@ msgstr "เพิ่มคุณลักษณะ"
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_EDIT.ToolBoxItem.Text
 #, fuzzy
 msgid  "Edit"
-msgstr "แ~ก้ไข"
+msgstr "แก้ไข"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_REMOVE.ToolBoxItem.Text
 #, fuzzy
 msgid  "Delete"
-msgstr "~ลบ"
+msgstr "ลบ"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MenuButton.Text
 #, fuzzy
@@ -6355,7 +6357,7 @@ msgstr "เ~พิ่มรายการ"
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_ADD_ELEMENT.MenuItem.Text
 #, fuzzy
 msgid  "Add Element"
-msgstr "เพิ่มส่วนประกอบ"
+msgstr "เ~พิ่มส่วนประกอบ"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_ADD_ATTRIBUTE.MenuItem.Text
 #, fuzzy
@@ -8515,8 +8517,9 @@ msgid  "Circle sectors"
 msgstr "วงกลมถูกตัด"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCARC.String.Text
+#, fuzzy
 msgid  "Arc"
-msgstr "เส้นโค้ง"
+msgstr "ส่วนโค้ง"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCARC.String.Text
 #, fuzzy
@@ -9985,8 +9988,9 @@ msgid  "Relative exit position"
 msgstr "ตำแหน่งตัวชี้แบบสัมพัทธ์"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONESCREL.String.Text
+#, fuzzy
 msgid  "Exit Position"
-msgstr "ตำแหน่งตัวชี้แบบสับบูรณ์"
+msgstr "ตำแหน่งตัวชี้แบบสัมพัทธ์"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONESCABS.String.Text
 #, fuzzy
@@ -10154,8 +10158,9 @@ msgid  "Object name"
 msgstr "ชื่อวัตถุ"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_STARTANGLE.String.Text
+#, fuzzy
 msgid  "Start angle"
-msgstr "เริ่มมุม"
+msgstr "มุมเริ่มต้น"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_ENDANGLE.String.Text
 #, fuzzy
@@ -11820,8 +11825,9 @@ msgid  "Color Palette"
 msgstr ""
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_UNDO_ACTIONS.String.Text
+#, fuzzy
 msgid  "Actions to undo: $(ARG1)"
-msgstr "Undo $(ARG1) action"
+msgstr "เลิกทำการกระทำ $(ARG1) "
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_UNDO_ACTION.String.Text
 #, fuzzy
@@ -11829,8 +11835,9 @@ msgid  "Actions to undo: $(ARG1)"
 msgstr "Undo $(ARG1) action"
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_REDO_ACTIONS.String.Text
+#, fuzzy
 msgid  "Actions to redo: $(ARG1)"
-msgstr "Redo $(ARG1) action"
+msgstr "ทำการกระทำ $(ARG1) ซ้ำ"
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_REDO_ACTION.String.Text
 #, fuzzy
