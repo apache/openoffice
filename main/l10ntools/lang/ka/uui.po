@@ -535,8 +535,9 @@ msgid  "The '${HOST}' server wishes to set one or more cookies.\nCookies contain
 msgstr ""
 
 #: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
+#, fuzzy
 msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
-msgstr "დომენი: ${DOMAIN},გეზი: ${PATH}, ქუქი: ${COOKIE}.\n"
+msgstr "დომენი: ${DOMAIN}, გეზი: ${PATH}, ქუქი: ${COOKIE}.\n"
 
 #: source/cookiedg.src#STR_COOKIES_RECV_TITLE.String.Text
 #, fuzzy

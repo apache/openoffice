@@ -825,7 +825,7 @@ msgstr "~ცხრილები"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 4.String.Text
 msgid  "A~vailable fields"
-msgstr "ხელ~მისაწვდომი ველები"
+msgstr "ც~ვლადების ველები"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 5.String.Text
 msgid  "Name ~of the query"
@@ -1617,7 +1617,7 @@ msgstr "წერილის ოსტატი"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 2.String.Text
 msgid  "Label9"
-msgstr "წარწერა9"
+msgstr "ჭდე9"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 3.String.Text
 msgid  "~Business letter"
@@ -1641,7 +1641,7 @@ msgstr "~ლოგო"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 8.String.Text
 msgid  "Return address"
-msgstr "საპასუხო მისამართი"
+msgstr "მისამართის დაბრუნება"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 9.String.Text
 msgid  "~Include footer"
@@ -1665,7 +1665,7 @@ msgstr "სიმბოლოთა ნიშნები"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 14.String.Text
 msgid  "S~ubject line"
-msgstr "თე~მის სტრიქონი"
+msgstr "თ~ემის სტრიქონი"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 15.String.Text
 msgid  "Salu~tation"
@@ -1677,7 +1677,7 @@ msgstr "საკეცი ~ნიშნები"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 17.String.Text
 msgid  "~Complimentary close"
-msgstr "~სანაქებო დახურვა"
+msgstr "შე~საქები დახურვა"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 18.String.Text
 msgid  "~Footer"
@@ -1685,7 +1685,7 @@ msgstr "~ქვედა კოლონტიტული"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 19.String.Text
 msgid  "~Use user data for return address"
-msgstr "მომხმარებლის მონაცემთა ~გამოყენება მისამართის დასაბრუნებლად"
+msgstr "მისამართის დასაბრუნებლად მომხმარებლის მონაცემთა ~გამოყენება"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 20.String.Text
 msgid  "~New sender address:"
@@ -1701,11 +1701,11 @@ msgstr "~წერილთა გასაერთიანებლად მ
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 23.String.Text
 msgid  "Include ~only on second and following pages"
-msgstr "~მხოლოდ შემდეგი და მიმდინარე გვერდების ჩათვლით"
+msgstr "~მხოლოდ შემდეგი და მიმდინარე გვერდების შემცველობით"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 24.String.Text
 msgid  "~Include page number"
-msgstr "გვერდის ნომრების ჩათ~ვლით"
+msgstr "გვერდის ნომრის შე~მცველობით"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 25.String.Text
 msgid  "Letter Template"
@@ -1812,9 +1812,8 @@ msgid  "Template name:"
 msgstr "შაბლონის სახელი:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 51.String.Text
-#, fuzzy
 msgid  "Location and file name:"
-msgstr "მდებარეობა და სახელი:"
+msgstr "მდებარეობა და ფაილის სახელი:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 52.String.Text
 #, fuzzy
@@ -1867,8 +1866,9 @@ msgid  "Hello"
 msgstr "გამარჯობა"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START + 1.String.Text
+#, fuzzy
 msgid  "Sincerely"
-msgstr "გულწრფელად"
+msgstr "პატივისცემით"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDGREETING_START + 2.String.Text
 #, fuzzy
@@ -1961,8 +1961,9 @@ msgid  "~Use user data for return address"
 msgstr "მომხმარებლის მონაცემთა ~გამოყენება მისამართის დასაბრუნებლად"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 11.String.Text
+#, fuzzy
 msgid  "~New return address"
-msgstr "დაბრუნების ~ახალი მისამართი"
+msgstr "~ახალი დასაბრუნებელი მისამართი"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 12.String.Text
 #, fuzzy
@@ -2034,7 +2035,7 @@ msgstr "შაბლონის სახელი:"
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 26.String.Text
 #, fuzzy
 msgid  "Location and file name:"
-msgstr "მდებარეობა და სახელი:"
+msgstr "მდებარეობა და ფაილის სახელი:"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 27.String.Text
 #, fuzzy
@@ -3029,7 +3030,7 @@ msgstr "შეხვედრის გამოძახება"
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +25.String.Text
 #, fuzzy
 msgid  "Chairperson"
-msgstr "Chairperson"
+msgstr "წარმომადგენელი"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +26.String.Text
 #, fuzzy

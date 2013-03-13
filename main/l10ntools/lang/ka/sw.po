@@ -757,7 +757,7 @@ msgstr "შეცდომა სუბ-დოკუმენტის $(ARG1) �
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_SWG_INTERNAL_ERROR ).String.Text
 msgid  "Internal error in %PRODUCTNAME Writer file format."
-msgstr "შიდა შეცდომა %PRODUCTNAME -ის ჩამწერის ფაილის ფორმატში. "
+msgstr "შიდა შეცდომა %PRODUCTNAME - ის ჩამწერის ფაილის ფორმატში. "
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , ERR_SWG_INTERNAL_ERROR ).String.Text
 msgid  "Internal error in %PRODUCTNAME Writer file format."
@@ -1385,7 +1385,7 @@ msgstr "~ოპტიმალური სიმაღლე"
 #: source/ui/app/mn.src#MN_TAB2.MN_SUB_TBLROW.FN_TABLE_BALANCE_ROWS.MenuItem.Text
 #, fuzzy
 msgid  "Space ~Equally"
-msgstr "თანაბარი დაშო~რება"
+msgstr "თანაბარი დაშორება"
 
 #: source/ui/app/mn.src#MN_TAB2.MN_SUB_TBLROW.FN_TABLE_SELECT_ROW.MenuItem.Text
 #, fuzzy
@@ -1529,7 +1529,7 @@ msgstr "~შეფუთვა"
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_NOWRAP.MenuItem.Text
 #, fuzzy
 msgid  "~No Wrap"
-msgstr "~გადატანის გარეშე"
+msgstr "~შეფუთვის გარეშე "
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_WRAP.MenuItem.Text
 #, fuzzy
@@ -1544,12 +1544,12 @@ msgstr "~გვერდის ოპტიმალური შეფუთვ
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_WRAPTHRU.MenuItem.Text
 #, fuzzy
 msgid  "~Wrap Through"
-msgstr "~გამჭოლი შეფუთვა "
+msgstr "~გამჭოლი შეფუთვა"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_WRAPTHRU_TRANSP.MenuItem.Text
 #, fuzzy
 msgid  "In ~Background"
-msgstr "~უკანა პლანზე"
+msgstr "~უკანა პლანზე."
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_WRAP_ANCHOR_ONLY.MenuItem.Text
 #, fuzzy
@@ -5373,8 +5373,9 @@ msgid  "Collec~t at end of text"
 msgstr "შეგროვებ~ა ტექსტის ბოლოდან"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.CB_FTN_NUM.CheckBox.Text
+#, fuzzy
 msgid  "~Restart numbering"
-msgstr "~ხელახალი გადანომვრა "
+msgstr "~ხელახალი გადანომვრა"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FT_FTN_OFFSET.FixedText.Text
 #, fuzzy
@@ -5392,8 +5393,9 @@ msgid  "Be~fore"
 msgstr "~მდე"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FT_FTN_SUFFIX.FixedText.Text
+#, fuzzy
 msgid  "Aft~er"
-msgstr "შე~მდეგ"
+msgstr "შემ~დეგ"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FL_END.FixedLine.Text
 #, fuzzy
@@ -8200,8 +8202,9 @@ msgid  "Columns"
 msgstr "სვეტები"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.1.TP_MACRO_ASSIGN.PageItem.Text
+#, fuzzy
 msgid  "Macro"
-msgstr "მაკროსი"
+msgstr "მაკრო"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_GRF.TabDialog.Text
 #, fuzzy
@@ -8251,7 +8254,7 @@ msgstr "ფონი"
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_GRF.1.TP_MACRO_ASSIGN.PageItem.Text
 #, fuzzy
 msgid  "Macro"
-msgstr "მაკრო"
+msgstr "მაკროსი"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_OLE.TabDialog.Text
 #, fuzzy
@@ -10153,7 +10156,7 @@ msgstr "~სახელი"
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.FT_SHORTNAME.FixedText.Text
 #, fuzzy
 msgid  "~Shortcut"
-msgstr "~მალსახმობი"
+msgstr "~მალმხმობი"
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.LB_BIB.ST_READONLY.String.Text
 #, fuzzy
@@ -10986,12 +10989,12 @@ msgstr "უსათაურო 3"
 #: source/ui/misc/outline.src#DLG_NUM_NAMES.LB_FORM.item4.StringList.item
 #, fuzzy
 msgid  "Untitled 4"
-msgstr "უსატაურო 4"
+msgstr "უსათაურო 4"
 
 #: source/ui/misc/outline.src#DLG_NUM_NAMES.LB_FORM.item5.StringList.item
 #, fuzzy
 msgid  "Untitled 5"
-msgstr "უსატაურო 5"
+msgstr "უსათაურო 5"
 
 #: source/ui/misc/outline.src#DLG_NUM_NAMES.LB_FORM.item6.StringList.item
 #, fuzzy
@@ -11323,8 +11326,9 @@ msgid  "~Before"
 msgstr "~მდე"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_SUFFIX.FixedText.Text
+#, fuzzy
 msgid  "~After"
-msgstr "~შემდეგ"
+msgstr "შ~ემდეგ"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_POS.FixedText.Text
 #, fuzzy
@@ -11362,8 +11366,9 @@ msgid  "Character Styles"
 msgstr "ასოების სტილი"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_ANCHR_CHARFMT.FixedText.Text
+#, fuzzy
 msgid  "Te~xt area"
-msgstr "ტე~ქსტის არე"
+msgstr "ტე~ქსტის არე "
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_TEXT_CHARFMT.FixedText.Text
 #, fuzzy
@@ -14634,7 +14639,7 @@ msgstr "სია 3 დაწყება"
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_BUL_LEVEL3.String.Text
 #, fuzzy
 msgid  "List 3"
-msgstr "სია3"
+msgstr "სია 3"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_BUL_LEVEL3E.String.Text
 #, fuzzy
@@ -14739,7 +14744,7 @@ msgstr "სქოლიო"
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_ENDNOTE.String.Text
 #, fuzzy
 msgid  "Endnote"
-msgstr "ქვედა სქოლიო"
+msgstr "ბოლო სქოლიო"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_LABEL.String.Text
 #, fuzzy
