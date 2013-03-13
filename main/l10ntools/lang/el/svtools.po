@@ -1688,394 +1688,492 @@ msgid  "Database"
 msgstr "Βάση δεδομένων"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_CALC_TEMPLATE.String.Text
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet Template"
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet Template"
 msgstr "Πρότυπο υπολογιστικού φύλλου %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_DRAW_TEMPLATE.String.Text
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Drawing Template"
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing Template"
 msgstr "Πρότυπο σχεδίασης %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_IMPRESS_TEMPLATE.String.Text
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Presentation Template"
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation Template"
 msgstr "Πρότυπο παρουσίασης %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_WRITER_TEMPLATE.String.Text
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Text Document Template"
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document Template"
 msgstr "Πρότυπο εγγράφου κειμένου %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_LOCALE_VOLUME.String.Text
+#, fuzzy
 msgid  "Local drive"
 msgstr "Τοπικός δίσκος"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FLOPPY_VOLUME.String.Text
+#, fuzzy
 msgid  "Disk drive"
 msgstr "Μονάδα δισκέτας"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_CDROM_VOLUME.String.Text
+#, fuzzy
 msgid  "CD-ROM drive"
 msgstr "Μονάδα CD-ROM"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_REMOTE_VOLUME.String.Text
+#, fuzzy
 msgid  "Network connection"
 msgstr "Σύνδεση δικτύου"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT.String.Text
+#, fuzzy
 msgid  "MS PowerPoint Document"
 msgstr "Έγγραφο του MS PowerPoint"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT_TEMPLATE.String.Text
+#, fuzzy
 msgid  "MS PowerPoint Template"
 msgstr "Πρότυπο MS PowerPoint"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT_SHOW.String.Text
+#, fuzzy
 msgid  "MS PowerPoint Show"
 msgstr "Προβολή του MS PowerPoint"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXMATH_DOC.String.Text
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Formula"
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Formula"
 msgstr "Τύπος %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXCHART_DOC.String.Text
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Chart"
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart"
 msgstr "Διάγραμμα %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXDRAW_DOC.String.Text
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Drawing"
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing"
 msgstr "Σχεδίαση %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXCALC_DOC.String.Text
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet"
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet"
 msgstr "Υπολογιστικό φύλλο %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXIMPRESS_DOC.String.Text
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Presentation"
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation"
 msgstr "Παρουσίαση %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXWRITER_DOC.String.Text
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Text Document"
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document"
 msgstr "Έγγραφο κειμένου %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXGLOBAL_DOC.String.Text
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Master Document"
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Master Document"
 msgstr "Κύριο έγγραφο %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_MATHML_DOC.String.Text
+#, fuzzy
 msgid  "MathML Document"
 msgstr "MathML Document"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_DATABASE_DOC.String.Text
+#, fuzzy
 msgid  "OpenDocument Database"
 msgstr "Βάση δεδομένων OpenDocument "
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_DRAW_DOC.String.Text
+#, fuzzy
 msgid  "OpenDocument Drawing"
 msgstr "Σχεδίαση OpenDocument "
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_MATH_DOC.String.Text
+#, fuzzy
 msgid  "OpenDocument Formula"
 msgstr "Μαθηματικός τύπος OpenDocument"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_GLOBAL_DOC.String.Text
+#, fuzzy
 msgid  "OpenDocument Master Document"
 msgstr "Κύριο έγγραφο OpenDocument "
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_IMPRESS_DOC.String.Text
+#, fuzzy
 msgid  "OpenDocument Presentation"
 msgstr "Παρουσίαση OpenDocument "
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_CALC_DOC.String.Text
+#, fuzzy
 msgid  "OpenDocument Spreadsheet"
 msgstr "Υπολογιστικό φύλλο OpenDocument "
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_WRITER_DOC.String.Text
+#, fuzzy
 msgid  "OpenDocument Text"
 msgstr "Κείμενο OpenDocument "
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_CALC_TEMPLATE.String.Text
+#, fuzzy
 msgid  "OpenDocument Spreadsheet Template"
 msgstr "Πρότυπο υπολογιστικού φύλλου OpenDocument "
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_DRAW_TEMPLATE.String.Text
+#, fuzzy
 msgid  "OpenDocument Drawing Template"
 msgstr "Πρότυπο σχεδίασης OpenDocument "
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_IMPRESS_TEMPLATE.String.Text
+#, fuzzy
 msgid  "OpenDocument Presentation Template"
 msgstr "Πρότυπο παρουσίασης OpenDocument "
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_WRITER_TEMPLATE.String.Text
+#, fuzzy
 msgid  "OpenDocument Text Template"
 msgstr "Πρότυπο κειμένου OpenDocument "
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_EXTENSION.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Extension"
 msgstr "Επέκταση %PRODUCTNAME"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NONE.PairedList.item
+#, fuzzy
 msgid  "[None]"
 msgstr "[None]"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DONTKNOW.PairedList.item
+#, fuzzy
 msgid  "Unknown"
 msgstr "Άγνωστη"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SYSTEM.PairedList.item
+#, fuzzy
 msgid  "Default"
 msgstr "Προεπιλογή"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AFRIKAANS.PairedList.item
+#, fuzzy
 msgid  "Afrikaans (South Africa)"
 msgstr "Afrikaans (South Africa)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ALBANIAN.PairedList.item
+#, fuzzy
 msgid  "Albanian"
 msgstr "Αλβανικά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_PRIMARY_ONLY.PairedList.item
+#, fuzzy
 msgid  "Arabic"
 msgstr "Αραβικά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_ALGERIA.PairedList.item
+#, fuzzy
 msgid  "Arabic (Algeria)"
 msgstr "Αραβικά (Αλγερία)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_BAHRAIN.PairedList.item
+#, fuzzy
 msgid  "Arabic (Bahrain)"
 msgstr "Αραβικά (Μπαχρέιν)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_CHAD.PairedList.item
+#, fuzzy
 msgid  "Arabic (Chad)"
 msgstr "Αραβικά (Τσαντ)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_COMOROS.PairedList.item
+#, fuzzy
 msgid  "Arabic (Comoros)"
 msgstr "Αραβικά (Κομόρος)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_DJIBOUTI.PairedList.item
+#, fuzzy
 msgid  "Arabic (Djibouti)"
 msgstr "Αραβικά (Τζιμπουντί)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_EGYPT.PairedList.item
+#, fuzzy
 msgid  "Arabic (Egypt)"
 msgstr "Αραβικά (Αίγυπτος)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_ERITREA.PairedList.item
+#, fuzzy
 msgid  "Arabic (Eritrea)"
 msgstr "Αραβικά (Ερυθραία)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_IRAQ.PairedList.item
+#, fuzzy
 msgid  "Arabic (Iraq)"
 msgstr "Αραβικά (Ιράκ)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_ISRAEL.PairedList.item
+#, fuzzy
 msgid  "Arabic (Israel)"
 msgstr "Αραβικά (Ισραήλ)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_JORDAN.PairedList.item
+#, fuzzy
 msgid  "Arabic (Jordan)"
 msgstr "Αραβικά (Ιορδανία)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_KUWAIT.PairedList.item
+#, fuzzy
 msgid  "Arabic (Kuwait)"
 msgstr "Αραβικά (Κουβέιτ)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_LEBANON.PairedList.item
+#, fuzzy
 msgid  "Arabic (Lebanon)"
 msgstr "Αραβικά (Λίβανος)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_LIBYA.PairedList.item
+#, fuzzy
 msgid  "Arabic (Libya)"
 msgstr "Αραβικά (Λιβύη)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_MAURITANIA.PairedList.item
+#, fuzzy
 msgid  "Arabic (Mauritania)"
 msgstr "Αραβικά (Μαυριτανία)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_MOROCCO.PairedList.item
+#, fuzzy
 msgid  "Arabic (Morocco)"
 msgstr "Αραβικά (Μαρόκο)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_OMAN.PairedList.item
+#, fuzzy
 msgid  "Arabic (Oman)"
 msgstr "Αραβικά (Ομάν)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_PALESTINE.PairedList.item
+#, fuzzy
 msgid  "Arabic (Palestine)"
 msgstr "Αραβικά (Παλαιστίνη)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_QATAR.PairedList.item
+#, fuzzy
 msgid  "Arabic (Qatar)"
 msgstr "Αραβικά (Κατάρ)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_SAUDI_ARABIA.PairedList.item
+#, fuzzy
 msgid  "Arabic (Saudi Arabia)"
 msgstr "Αραβικά (Σαουδική Αραβία)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_SOMALIA.PairedList.item
+#, fuzzy
 msgid  "Arabic (Somalia)"
 msgstr "Αραβικά (Σομαλία)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_SUDAN.PairedList.item
+#, fuzzy
 msgid  "Arabic (Sudan)"
 msgstr "Αραβικά (Σουδάν)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_SYRIA.PairedList.item
+#, fuzzy
 msgid  "Arabic (Syria)"
 msgstr "Αραβικά (Συρία)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_TUNISIA.PairedList.item
+#, fuzzy
 msgid  "Arabic (Tunisia)"
 msgstr "Αραβικά (Τυνησία)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_UAE.PairedList.item
+#, fuzzy
 msgid  "Arabic (UAE)"
 msgstr "Αραβικά (Ηνωμένα Αραβικά Εμιράτα)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_YEMEN.PairedList.item
+#, fuzzy
 msgid  "Arabic (Yemen)"
 msgstr "Αραβικά (Υεμένη)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARMENIAN.PairedList.item
+#, fuzzy
 msgid  "Armenian"
 msgstr "Αρμενικά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ASSAMESE.PairedList.item
+#, fuzzy
 msgid  "Assami"
 msgstr "Assami"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AZERI_LATIN.PairedList.item
+#, fuzzy
 msgid  "Azerbaijani Latin"
 msgstr "Αζερικά (Λατινικά)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AZERI_CYRILLIC.PairedList.item
+#, fuzzy
 msgid  "Azerbaijani Cyrillic"
 msgstr "Αζερικά (Κυριλλικά)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BASQUE.PairedList.item
+#, fuzzy
 msgid  "Basque"
 msgstr "Βασκικά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BENGALI.PairedList.item
+#, fuzzy
 msgid  "Bengali (India)"
 msgstr "Μπενγκάλι (Ινδίας)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BULGARIAN.PairedList.item
+#, fuzzy
 msgid  "Bulgarian"
 msgstr "Βουλγαρικά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BELARUSIAN.PairedList.item
+#, fuzzy
 msgid  "Belarusian"
 msgstr "Λευκορώσικα"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CATALAN.PairedList.item
+#, fuzzy
 msgid  "Catalan"
 msgstr "Καταλανικά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_TRADITIONAL.PairedList.item
+#, fuzzy
 msgid  "Chinese (traditional)"
 msgstr "Κινέζικα (παραδοσιακά)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_SIMPLIFIED.PairedList.item
+#, fuzzy
 msgid  "Chinese (simplified)"
 msgstr "Κινέζικα (απλοποιημένα)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_HONGKONG.PairedList.item
+#, fuzzy
 msgid  "Chinese (Hong Kong)"
 msgstr "Κινέζικα (Χονγκ Κονγκ)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_SINGAPORE.PairedList.item
+#, fuzzy
 msgid  "Chinese (Singapore)"
 msgstr "Κινέζικα (Σιγκαπούρη)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_MACAU.PairedList.item
+#, fuzzy
 msgid  "Chinese (Macau)"
 msgstr "Κινέζικα (Μακάο)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CROATIAN.PairedList.item
+#, fuzzy
 msgid  "Croatian"
 msgstr "Κροατικά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CZECH.PairedList.item
+#, fuzzy
 msgid  "Czech"
 msgstr "Τσέχικα"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DANISH.PairedList.item
+#, fuzzy
 msgid  "Danish"
 msgstr "Δανέζικα"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DUTCH.PairedList.item
+#, fuzzy
 msgid  "Dutch (Netherlands)"
 msgstr "Ολλανδικά (Ολλανδίας)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DUTCH_BELGIAN.PairedList.item
+#, fuzzy
 msgid  "Dutch (Belgium)"
 msgstr "Ολλανδικά (Βέλγιο)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_US.PairedList.item
+#, fuzzy
 msgid  "English (USA)"
 msgstr "Αγγλικά (ΗΠΑ)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_UK.PairedList.item
+#, fuzzy
 msgid  "English (UK)"
 msgstr "Αγγλικά (Μ. Βρετανία)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_AUS.PairedList.item
+#, fuzzy
 msgid  "English (Australia)"
 msgstr "Αγγλικά (Αυστραλία)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_CAN.PairedList.item
+#, fuzzy
 msgid  "English (Canada)"
 msgstr "Αγγλικά (Καναδάς)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_NZ.PairedList.item
+#, fuzzy
 msgid  "English (New Zealand)"
 msgstr "Αγγλικά (Νέα Ζηλανδία)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_EIRE.PairedList.item
+#, fuzzy
 msgid  "English (Eire)"
 msgstr "Αγγλικά (Ιρλανδία)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_SAFRICA.PairedList.item
+#, fuzzy
 msgid  "English (South Africa)"
 msgstr "Αγγλικά (Νότιας Αφρικής)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_JAMAICA.PairedList.item
+#, fuzzy
 msgid  "English (Jamaica)"
 msgstr "Αγγλικά (Τζαμάικα)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_CARRIBEAN.PairedList.item
+#, fuzzy
 msgid  "English (Caribbean)"
 msgstr "Αγγλικά (Kαραϊβική)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_BELIZE.PairedList.item
+#, fuzzy
 msgid  "English (Belize)"
 msgstr "Αγγλικά (Μπελίσε)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_TRINIDAD.PairedList.item
+#, fuzzy
 msgid  "English (Trinidad)"
 msgstr "Αγγλικά (Τρινιντάντ)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_ZIMBABWE.PairedList.item
+#, fuzzy
 msgid  "English (Zimbabwe)"
 msgstr "Αγγλικά (Ζιμπάμπουε)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_PHILIPPINES.PairedList.item
+#, fuzzy
 msgid  "English (Philippines)"
 msgstr "Αγγλικά (Φιλιππίνες)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_INDIA.PairedList.item
+#, fuzzy
 msgid  "English (India)"
 msgstr "Αγγλικά (Ινδίας)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ESTONIAN.PairedList.item
+#, fuzzy
 msgid  "Estonian"
 msgstr "Εσθονικά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FINNISH.PairedList.item
+#, fuzzy
 msgid  "Finnish"
 msgstr "Φινλανδικά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FAEROESE.PairedList.item
+#, fuzzy
 msgid  "Faroese"
 msgstr "Νήσων Φερόε"
 
@@ -2084,870 +2182,1087 @@ msgid  "Persian"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH.PairedList.item
+#, fuzzy
 msgid  "French (France)"
 msgstr "Γαλλικά (Γαλλίας)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_BELGIAN.PairedList.item
+#, fuzzy
 msgid  "French (Belgium)"
 msgstr "Γαλλικά (Βέλγιο)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_CANADIAN.PairedList.item
+#, fuzzy
 msgid  "French (Canada)"
 msgstr "Γαλλικά (Καναδάς)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_SWISS.PairedList.item
+#, fuzzy
 msgid  "French (Switzerland)"
 msgstr "Γαλλικά (Ελβετία)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_LUXEMBOURG.PairedList.item
+#, fuzzy
 msgid  "French (Luxembourg)"
 msgstr "Γαλλικά (Λουξεμβούργο)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_MONACO.PairedList.item
+#, fuzzy
 msgid  "French (Monaco)"
 msgstr "Γαλλικά (Μονακό)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GASCON.PairedList.item
+#, fuzzy
 msgid  "Gascon"
 msgstr "Gascon"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN.PairedList.item
+#, fuzzy
 msgid  "German (Germany)"
 msgstr "Γερμανικά (Γερμανίας)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_SWISS.PairedList.item
+#, fuzzy
 msgid  "German (Switzerland)"
 msgstr "Γερμανικά (Ελβετία)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_AUSTRIAN.PairedList.item
+#, fuzzy
 msgid  "German (Austria)"
 msgstr "Γερμανικά (Αυστρία)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_LUXEMBOURG.PairedList.item
+#, fuzzy
 msgid  "German (Luxembourg)"
 msgstr "Γερμανικά (Λουξεμβούργο)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_LIECHTENSTEIN.PairedList.item
+#, fuzzy
 msgid  "German (Liechtenstein)"
 msgstr "Γερμανικά (Λίχτενσταϊν)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GREEK.PairedList.item
+#, fuzzy
 msgid  "Greek"
 msgstr "Ελληνικά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GUJARATI.PairedList.item
+#, fuzzy
 msgid  "Gujarati"
 msgstr "Γκουτζαράτι"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HEBREW.PairedList.item
+#, fuzzy
 msgid  "Hebrew"
 msgstr "Εβραϊκά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HINDI.PairedList.item
+#, fuzzy
 msgid  "Hindi"
 msgstr "Ινδικά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HUNGARIAN.PairedList.item
+#, fuzzy
 msgid  "Hungarian"
 msgstr "Ουγγρικά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ICELANDIC.PairedList.item
+#, fuzzy
 msgid  "Icelandic"
 msgstr "Ισλανδικά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_INDONESIAN.PairedList.item
+#, fuzzy
 msgid  "Indonesian"
 msgstr "Ινδονησιακά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ITALIAN.PairedList.item
+#, fuzzy
 msgid  "Italian (Italy)"
 msgstr "Ιταλικά (Ελβετία)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ITALIAN_SWISS.PairedList.item
+#, fuzzy
 msgid  "Italian (Switzerland)"
 msgstr "Ιαπωνικά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_JAPANESE.PairedList.item
+#, fuzzy
 msgid  "Japanese"
 msgstr "Ιαπωνικά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KANNADA.PairedList.item
+#, fuzzy
 msgid  "Kannada"
 msgstr "Κανάντα"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KASHMIRI.PairedList.item
+#, fuzzy
 msgid  "Kashmiri (Kashmir)"
 msgstr "Κασμιρικά (Ινδία)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KASHMIRI_INDIA.PairedList.item
+#, fuzzy
 msgid  "Kashmiri (India)"
 msgstr "Καζαχστανικά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KAZAK.PairedList.item
+#, fuzzy
 msgid  "Kazak"
 msgstr "Κονκανικά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KONKANI.PairedList.item
+#, fuzzy
 msgid  "Konkani"
 msgstr "Κορεατικά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KOREAN.PairedList.item
+#, fuzzy
 msgid  "Korean (RoK)"
 msgstr "Κορεατικά (RoK)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LATVIAN.PairedList.item
+#, fuzzy
 msgid  "Latvian"
 msgstr "Λεττονικά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LITHUANIAN.PairedList.item
+#, fuzzy
 msgid  "Lithuanian"
 msgstr "Λιθουανικά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MACEDONIAN.PairedList.item
+#, fuzzy
 msgid  "Macedonian"
 msgstr "Σλαβομακεδονικά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAY_MALAYSIA.PairedList.item
+#, fuzzy
 msgid  "Malay (Malaysia)"
 msgstr "Μαλαϊκά (Μαλαισία)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAY_BRUNEI_DARUSSALAM.PairedList.item
+#, fuzzy
 msgid  "Malay (Brunei Darussalam)"
 msgstr "Μαλαισίας (Brunei Darussalam)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAYALAM.PairedList.item
+#, fuzzy
 msgid  "Malayalam"
 msgstr "Μαλαισιανά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MANIPURI.PairedList.item
+#, fuzzy
 msgid  "Manipuri"
 msgstr "Μανιπουρικά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MARATHI.PairedList.item
+#, fuzzy
 msgid  "Marathi"
 msgstr "Μαράτι"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NEPALI.PairedList.item
+#, fuzzy
 msgid  "Nepali (Nepal)"
 msgstr "Νεπαλικά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NEPALI_INDIA.PairedList.item
+#, fuzzy
 msgid  "Nepali (India)"
 msgstr "Νεπαλικά (Ινδία)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NORWEGIAN_BOKMAL.PairedList.item
+#, fuzzy
 msgid  "Norwegian, Bokmål"
 msgstr "Νορβηγικά (BokmAAl)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NORWEGIAN_NYNORSK.PairedList.item
+#, fuzzy
 msgid  "Norwegian, Nynorsk"
 msgstr "Νορβηγικά (Nynorsk)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ORIYA.PairedList.item
+#, fuzzy
 msgid  "Oriya"
 msgstr "Ορίγια"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_POLISH.PairedList.item
+#, fuzzy
 msgid  "Polish"
 msgstr "Πολωνικά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PORTUGUESE.PairedList.item
+#, fuzzy
 msgid  "Portuguese (Portugal)"
 msgstr "Πορτογαλικά (Πορτογαλίας)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PORTUGUESE_BRAZILIAN.PairedList.item
+#, fuzzy
 msgid  "Portuguese (Brazil)"
 msgstr "Πορτογαλικά (Βραζιλίας)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PUNJABI.PairedList.item
+#, fuzzy
 msgid  "Punjabi"
 msgstr "Πουντζάμπι"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_RHAETO_ROMAN.PairedList.item
+#, fuzzy
 msgid  "Rhaeto-Romance"
 msgstr "Ρωμανικά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ROMANIAN.PairedList.item
+#, fuzzy
 msgid  "Romanian"
 msgstr "Ρουμανικά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_RUSSIAN.PairedList.item
+#, fuzzy
 msgid  "Russian"
 msgstr "Ρώσικα"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SANSKRIT.PairedList.item
+#, fuzzy
 msgid  "Sanskrit"
 msgstr "Σανσκριτικά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SERBIAN_CYRILLIC.PairedList.item
+#, fuzzy
 msgid  "Serbian Cyrillic (Serbia and Montenegro)"
 msgstr "Σερβικά Κυριλλικά (Σερβία και Μαυροβούνιο)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SERBIAN_LATIN.PairedList.item
+#, fuzzy
 msgid  "Serbian Latin (Serbia and Montenegro)"
 msgstr "Σερβικά Λατινικά (Σερβία και Μαυροβούνιο)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_CYRILLIC_SERBIA.PairedList.item
+#, fuzzy
 msgid  "Serbian Cyrillic (Serbia)"
 msgstr "Σερβικά (Κυριλλικά)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_LATIN_SERBIA.PairedList.item
+#, fuzzy
 msgid  "Serbian Latin (Serbia)"
 msgstr "Σερβικά (Λατινικά)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_CYRILLIC_MONTENEGRO.PairedList.item
+#, fuzzy
 msgid  "Serbian Cyrillic (Montenegro)"
 msgstr "Σερβικά Κυριλλικά (Μαυροβούνιο)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_LATIN_MONTENEGRO.PairedList.item
+#, fuzzy
 msgid  "Serbian Latin (Montenegro)"
 msgstr "Σερβικά Λατινικά (Μαυροβούνιο)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SINDHI.PairedList.item
+#, fuzzy
 msgid  "Sindhi"
 msgstr "Σίντι"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SLOVAK.PairedList.item
+#, fuzzy
 msgid  "Slovak"
 msgstr "Σλοβακικά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SLOVENIAN.PairedList.item
+#, fuzzy
 msgid  "Slovenian"
 msgstr "Σλοβενικά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH.PairedList.item
+#, fuzzy
 msgid  "Spanish (Spain)"
 msgstr "Ισπανικά (Ισπανίας)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_MEXICAN.PairedList.item
+#, fuzzy
 msgid  "Spanish (Mexico)"
 msgstr "Ισπανικά (Μεξικό)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_GUATEMALA.PairedList.item
+#, fuzzy
 msgid  "Spanish (Guatemala)"
 msgstr "Ισπανικά (Γουατεμάλα)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_COSTARICA.PairedList.item
+#, fuzzy
 msgid  "Spanish (Costa Rica)"
 msgstr "Ισπανικά (Κόστα Ρίκα)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PANAMA.PairedList.item
+#, fuzzy
 msgid  "Spanish (Panama)"
 msgstr "Ισπανικά (Παναμάς)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_DOMINICAN_REPUBLIC.PairedList.item
+#, fuzzy
 msgid  "Spanish (Dom. Rep.)"
 msgstr "Ισπανικά (Δομινικανή Δημοκρατία)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_VENEZUELA.PairedList.item
+#, fuzzy
 msgid  "Spanish (Venezuela)"
 msgstr "Ισπανικά (Βενεζουέλα)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_COLOMBIA.PairedList.item
+#, fuzzy
 msgid  "Spanish (Colombia)"
 msgstr "Ισπανικά (Κολομβία)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PERU.PairedList.item
+#, fuzzy
 msgid  "Spanish (Peru)"
 msgstr "Ισπανικά (Περού)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_ARGENTINA.PairedList.item
+#, fuzzy
 msgid  "Spanish (Argentina)"
 msgstr "Ισπανικά (Αργεντινή)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_ECUADOR.PairedList.item
+#, fuzzy
 msgid  "Spanish (Ecuador)"
 msgstr "Ισπανικά (Εκουαδόρ)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_CHILE.PairedList.item
+#, fuzzy
 msgid  "Spanish (Chile)"
 msgstr "Ισπανικά (Χιλή)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_URUGUAY.PairedList.item
+#, fuzzy
 msgid  "Spanish (Uruguay)"
 msgstr "Ισπανικά (Ουρουγουάη)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PARAGUAY.PairedList.item
+#, fuzzy
 msgid  "Spanish (Paraguay)"
 msgstr "Ισπανικά (Παραγουάη)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_BOLIVIA.PairedList.item
+#, fuzzy
 msgid  "Spanish (Bolivia)"
 msgstr "Ισπανικά (Βολιβία)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_EL_SALVADOR.PairedList.item
+#, fuzzy
 msgid  "Spanish (El Salvador)"
 msgstr "Ισπανικά (Ελ Σαλβαδόρ)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_HONDURAS.PairedList.item
+#, fuzzy
 msgid  "Spanish (Honduras)"
 msgstr "Ισπανικά (Ονδούρα)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_NICARAGUA.PairedList.item
+#, fuzzy
 msgid  "Spanish (Nicaragua)"
 msgstr "Ισπανικά (Νικαράγουα)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PUERTO_RICO.PairedList.item
+#, fuzzy
 msgid  "Spanish (Puerto Rico)"
 msgstr "Ισπανικά (Πουέρτο Ρίκο)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWAHILI.PairedList.item
+#, fuzzy
 msgid  "Swahili (Kenya)"
 msgstr "Σουαχίλι (Κένυα)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWEDISH.PairedList.item
+#, fuzzy
 msgid  "Swedish (Sweden)"
 msgstr "Σουηδικά (Σουηδίας)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWEDISH_FINLAND.PairedList.item
+#, fuzzy
 msgid  "Swedish (Finland)"
 msgstr "Σουηδικά (Φινλανδία)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TAJIK.PairedList.item
+#, fuzzy
 msgid  "Tajik"
 msgstr "Τατζίκ"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TAMIL.PairedList.item
+#, fuzzy
 msgid  "Tamil"
 msgstr "Ταμίλ"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TATAR.PairedList.item
+#, fuzzy
 msgid  "Tatar"
 msgstr "Ταταρικά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TELUGU.PairedList.item
+#, fuzzy
 msgid  "Telugu"
 msgstr "Τελούγκου"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_THAI.PairedList.item
+#, fuzzy
 msgid  "Thai"
 msgstr "Ταϊλανδικά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TURKISH.PairedList.item
+#, fuzzy
 msgid  "Turkish"
 msgstr "Τουρκικά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_URDU_PAKISTAN.PairedList.item
+#, fuzzy
 msgid  "Urdu (Pakistan)"
 msgstr "Ουρντού (Πακιστάν)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_URDU_INDIA.PairedList.item
+#, fuzzy
 msgid  "Urdu (India)"
 msgstr "Ουρντού (Ινδία)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UKRAINIAN.PairedList.item
+#, fuzzy
 msgid  "Ukrainian"
 msgstr "Ουκρανικά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UZBEK_LATIN.PairedList.item
+#, fuzzy
 msgid  "Uzbek Latin"
 msgstr "Ουζμπεκικά (Λατινικά)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_WELSH.PairedList.item
+#, fuzzy
 msgid  "Welsh"
 msgstr "Ουαλικά "
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER1.PairedList.item
+#, fuzzy
 msgid  "User 1"
 msgstr "Χρήστη 1"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER2.PairedList.item
+#, fuzzy
 msgid  "User 2"
 msgstr "Χρήστη 2"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER3.PairedList.item
+#, fuzzy
 msgid  "User 3"
 msgstr "Χρήστη 3"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER4.PairedList.item
+#, fuzzy
 msgid  "User 4"
 msgstr "Χρήστη 4"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER5.PairedList.item
+#, fuzzy
 msgid  "User 5"
 msgstr "Χρήστη 5"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER6.PairedList.item
+#, fuzzy
 msgid  "User 6"
 msgstr "Χρήστη 6"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER7.PairedList.item
+#, fuzzy
 msgid  "User 7"
 msgstr "Χρήστη 7"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER8.PairedList.item
+#, fuzzy
 msgid  "User 8"
 msgstr "Χρήστη 8"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER9.PairedList.item
+#, fuzzy
 msgid  "User 9"
 msgstr "Χρήστη 9"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LATIN.PairedList.item
+#, fuzzy
 msgid  "Latin"
 msgstr "Λατινικά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ESPERANTO.PairedList.item
+#, fuzzy
 msgid  "Esperanto"
 msgstr "Εσπεράντο"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KINYARWANDA.PairedList.item
+#, fuzzy
 msgid  "Kinyarwanda (Rwanda)"
 msgstr "Kinyarwanda (Ρουάντα)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MAORI_NEW_ZEALAND.PairedList.item
+#, fuzzy
 msgid  "Maori (New Zealand)"
 msgstr "Μαορί (Νέα Ζηλανδία)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GALICIAN.PairedList.item
+#, fuzzy
 msgid  "Galician"
 msgstr "Γαλικίας"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DHIVEHI.PairedList.item
+#, fuzzy
 msgid  "Dhivehi"
 msgstr "Dhivehi"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SEPEDI.PairedList.item
+#, fuzzy
 msgid  "Northern Sotho"
 msgstr "Βόρειου Σόθο"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GAELIC_SCOTLAND.PairedList.item
+#, fuzzy
 msgid  "Gaelic (Scotland)"
 msgstr "Γαελικά (Σκωτία)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MONGOLIAN.PairedList.item
+#, fuzzy
 msgid  "Mongolian"
 msgstr "Μογγολικά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_INTERLINGUA.PairedList.item
+#, fuzzy
 msgid  "Interlingua"
 msgstr "Ιντερλίνγκουα"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BOSNIAN_BOSNIA_HERZEGOVINA.PairedList.item
+#, fuzzy
 msgid  "Bosnian"
 msgstr "Βοσνιακά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BENGALI_BANGLADESH.PairedList.item
+#, fuzzy
 msgid  "Bengali (Bangladesh)"
 msgstr "Μπενγκάλι (Μπαγκλαντές)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_OCCITAN.PairedList.item
+#, fuzzy
 msgid  "Occitan"
 msgstr "Occitan"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KHMER.PairedList.item
+#, fuzzy
 msgid  "Khmer"
 msgstr "Χμερ"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_TURKEY.PairedList.item
+#, fuzzy
 msgid  "Kurdish (Turkey)"
 msgstr "Κουρδικά (Τουρκία)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_SYRIA.PairedList.item
+#, fuzzy
 msgid  "Kurdish (Syria)"
 msgstr "Κουρδικά (Συρία)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_IRAQ.PairedList.item
+#, fuzzy
 msgid  "Kurdish (Iraq)"
 msgstr "Κουρδικά (Ιράκ)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_IRAN.PairedList.item
+#, fuzzy
 msgid  "Kurdish (Iran)"
 msgstr "Κουρδικά (Ιράν)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN.PairedList.item
+#, fuzzy
 msgid  "Sardinian"
 msgstr "Σαρδηνίας"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DZONGKHA.PairedList.item
+#, fuzzy
 msgid  "Dzongkha"
 msgstr "Τσόγκα"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SWAHILI_TANZANIA.PairedList.item
+#, fuzzy
 msgid  "Swahili (Tanzania)"
 msgstr "Σουαχίλι (Τανζανία)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LAO.PairedList.item
+#, fuzzy
 msgid  "Lao"
 msgstr "Λαοτινά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GAELIC_IRELAND.PairedList.item
+#, fuzzy
 msgid  "Irish"
 msgstr "Ιρλανδικά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TIBETAN.PairedList.item
+#, fuzzy
 msgid  "Tibetan (PR China)"
 msgstr "Θιβετιανά (ΛΔ Κίνας)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GEORGIAN.PairedList.item
+#, fuzzy
 msgid  "Georgian"
 msgstr "Γεωργιανά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRISIAN_NETHERLANDS.PairedList.item
+#, fuzzy
 msgid  "Frisian"
 msgstr "Περσικά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TSWANA.PairedList.item
+#, fuzzy
 msgid  "Tswana (South Africa)"
 msgstr "Tswana (Νότια Αφρική)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ZULU.PairedList.item
+#, fuzzy
 msgid  "Zulu"
 msgstr "Ζουλού"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_VIETNAMESE.PairedList.item
+#, fuzzy
 msgid  "Vietnamese"
 msgstr "Βιετναμέζικα"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BRETON.PairedList.item
+#, fuzzy
 msgid  "Breton"
 msgstr "Μπρετόν"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KALAALLISUT.PairedList.item
+#, fuzzy
 msgid  "Kalaallisut"
 msgstr "Kalaallisut"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_NDEBELE_SOUTH.PairedList.item
+#, fuzzy
 msgid  "Ndebele, South"
 msgstr "Ndebele (South)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SESOTHO.PairedList.item
+#, fuzzy
 msgid  "Southern Sotho"
 msgstr "Southern Sotho"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SWAZI.PairedList.item
+#, fuzzy
 msgid  "Swazi"
 msgstr "Σουάζι"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TSONGA.PairedList.item
+#, fuzzy
 msgid  "Tsonga"
 msgstr "Τσόγκα"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_VENDA.PairedList.item
+#, fuzzy
 msgid  "Venda"
 msgstr "Βένδα"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TSWANA_BOTSWANA.PairedList.item
+#, fuzzy
 msgid  "Tswana (Botswana)"
 msgstr "Tswana (Botswana)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_XHOSA.PairedList.item
+#, fuzzy
 msgid  "Xhosa"
 msgstr "Ξιόσα"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SINHALESE_SRI_LANKA.PairedList.item
+#, fuzzy
 msgid  "Sinhala"
 msgstr "Sinhala"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MOORE.PairedList.item
+#, fuzzy
 msgid  "Moore"
 msgstr "Moore"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BAMBARA.PairedList.item
+#, fuzzy
 msgid  "Bambara"
 msgstr "Bambara"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_AKAN.PairedList.item
+#, fuzzy
 msgid  "Akan"
 msgstr "Akan"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LUXEMBOURGISH.PairedList.item
+#, fuzzy
 msgid  "Luxembourgish"
 msgstr "Λουξεμβουργιανά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_FRIULIAN.PairedList.item
+#, fuzzy
 msgid  "Friulian"
 msgstr "Friulian"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_FIJIAN.PairedList.item
+#, fuzzy
 msgid  "Fijian"
 msgstr "Fijian"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_AFRIKAANS_NAMIBIA.PairedList.item
+#, fuzzy
 msgid  "Afrikaans (Namibia)"
 msgstr "Afrikaans (Namibia)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ENGLISH_NAMIBIA.PairedList.item
+#, fuzzy
 msgid  "English (Namibia)"
 msgstr "Αγγλικά (Ναμίμπιας)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_WALLOON.PairedList.item
+#, fuzzy
 msgid  "Walloon"
 msgstr "Βαλλονικά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_COPTIC.PairedList.item
+#, fuzzy
 msgid  "Coptic"
 msgstr "Κοπτικά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TIGRIGNA_ERITREA.PairedList.item
+#, fuzzy
 msgid  "Tigrigna (Eritrea)"
 msgstr "Tigrigna (Ερυθραίας)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TIGRIGNA_ETHIOPIA.PairedList.item
+#, fuzzy
 msgid  "Tigrigna (Ethiopia)"
 msgstr "Tigrigna (Αιθιοπίας)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AMHARIC_ETHIOPIA.PairedList.item
+#, fuzzy
 msgid  "Amharic"
 msgstr "Αμχαρικά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KIRGHIZ.PairedList.item
+#, fuzzy
 msgid  "Kirghiz"
 msgstr "Κιγιζιανά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GERMAN_BELGIUM.PairedList.item
+#, fuzzy
 msgid  "German (Belgium)"
 msgstr "Γερμανικά (Βέλγιο)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_CHUVASH.PairedList.item
+#, fuzzy
 msgid  "Chuvash"
 msgstr "Chuvash"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BURMESE.PairedList.item
+#, fuzzy
 msgid  "Burmese"
 msgstr "Μπουρμέζε"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HAUSA_NIGERIA.PairedList.item
+#, fuzzy
 msgid  "Hausa (Nigeria)"
 msgstr "Χαούσα (Νιγηρία)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_HAUSA_GHANA.PairedList.item
+#, fuzzy
 msgid  "Hausa (Ghana)"
 msgstr "Hausa (Ghana)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_EWE_GHANA.PairedList.item
+#, fuzzy
 msgid  "Éwé"
 msgstr "Éwé"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ENGLISH_GHANA.PairedList.item
+#, fuzzy
 msgid  "English (Ghana)"
 msgstr "Αγγλικά (Γκάνας)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SANGO.PairedList.item
+#, fuzzy
 msgid  "Sango"
 msgstr "Sango"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TAGALOG.PairedList.item
+#, fuzzy
 msgid  "Tagalog"
 msgstr "Tagalog"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GANDA.PairedList.item
+#, fuzzy
 msgid  "Ganda"
 msgstr "Ganda"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LINGALA_DRCONGO.PairedList.item
+#, fuzzy
 msgid  "Lingala"
 msgstr "Lingala"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LOW_GERMAN.PairedList.item
+#, fuzzy
 msgid  "Low German"
 msgstr "Low German"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_HILIGAYNON.PairedList.item
+#, fuzzy
 msgid  "Hiligaynon"
 msgstr "Hiligaynon"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_NYANJA.PairedList.item
+#, fuzzy
 msgid  "Nyanja"
 msgstr "Nyanja"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KASHUBIAN.PairedList.item
+#, fuzzy
 msgid  "Kashubian"
 msgstr "Kashubian"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SPANISH_CUBA.PairedList.item
+#, fuzzy
 msgid  "Spanish (Cuba)"
 msgstr "Ισπανικά (Κούβας)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TETUN.PairedList.item
+#, fuzzy
 msgid  "Tetun (Indonesia)"
 msgstr "Tetun (Ινδονησία)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_QUECHUA_NORTH_BOLIVIA.PairedList.item
+#, fuzzy
 msgid  "Quechua (Bolivia, North)"
 msgstr "Quechua (Βολιβία, Βόρεια)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_QUECHUA_SOUTH_BOLIVIA.PairedList.item
+#, fuzzy
 msgid  "Quechua (Bolivia, South)"
 msgstr "Quechua (Βολιβία, Νότια)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SOMALI.PairedList.item
+#, fuzzy
 msgid  "Somali"
 msgstr "Σομαλιανά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_INARI.PairedList.item
+#, fuzzy
 msgid  "Sami, Inari (Finland)"
 msgstr "Sami, Inari (Φιλανδίας)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_LULE_NORWAY.PairedList.item
+#, fuzzy
 msgid  "Sami, Lule (Norway)"
 msgstr "Sami, Lule (Νορβηγίας)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_LULE_SWEDEN.PairedList.item
+#, fuzzy
 msgid  "Sami, Lule (Sweden)"
 msgstr "Sami, Lule (Σουηδίας)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_NORTHERN_FINLAND.PairedList.item
+#, fuzzy
 msgid  "Sami, Northern (Finland)"
 msgstr "Sami, Northern (Φιλανδίας)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_NORTHERN_NORWAY.PairedList.item
+#, fuzzy
 msgid  "Sami, Northern (Norway)"
 msgstr "Sami, Northern (Νορβηγίας)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_NORTHERN_SWEDEN.PairedList.item
+#, fuzzy
 msgid  "Sami, Northern (Sweden)"
 msgstr "Sami, Northern (Σουηδίας)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_SKOLT.PairedList.item
+#, fuzzy
 msgid  "Sami, Skolt (Finland)"
 msgstr "Sami, Skolt (Φιλανδίας)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_SOUTHERN_NORWAY.PairedList.item
+#, fuzzy
 msgid  "Sami, Southern (Norway)"
 msgstr "Sami, Southern (Νορβηγίας)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_SOUTHERN_SWEDEN.PairedList.item
+#, fuzzy
 msgid  "Sami, Southern (Sweden)"
 msgstr "Sami, Southern (Σουηδίας)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SAMI_KILDIN_RUSSIA.PairedList.item
+#, fuzzy
 msgid  "Sami, Kildin (Russia)"
 msgstr "Sami, Kildin (Ρωσίας)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GUARANI_PARAGUAY.PairedList.item
+#, fuzzy
 msgid  "Guaraní, Paraguayan"
 msgstr "Guaraní, Paraguayan"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BODO_INDIA.PairedList.item
+#, fuzzy
 msgid  "Bodo"
 msgstr "Bodo"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_DOGRI_INDIA.PairedList.item
+#, fuzzy
 msgid  "Dogri"
 msgstr "Dogri"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MAITHILI_INDIA.PairedList.item
+#, fuzzy
 msgid  "Maithili"
 msgstr "Maithili"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SANTALI_INDIA.PairedList.item
+#, fuzzy
 msgid  "Santali"
 msgstr "Santali"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TETUN_TIMOR_LESTE.PairedList.item
+#, fuzzy
 msgid  "Tetun (Timor-Leste)"
 msgstr "Tetun (Timor-Leste)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TURKMEN.PairedList.item
+#, fuzzy
 msgid  "Turkmen"
 msgstr "Τουρκμεντιστάν"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALTESE.PairedList.item
+#, fuzzy
 msgid  "Maltese"
 msgstr "Μαλτέζικα "
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TOK_PISIN.PairedList.item
+#, fuzzy
 msgid  "Tok Pisin"
 msgstr "Τοκ Πίσιν"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SHUSWAP.PairedList.item
+#, fuzzy
 msgid  "Shuswap"
 msgstr "Shuswap"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_OROMO.PairedList.item
+#, fuzzy
 msgid  "Oromo"
 msgstr "Oromo"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ANCIENT_GREEK.PairedList.item
+#, fuzzy
 msgid  "Greek, Ancient"
 msgstr "Ελληνικά, Αρχαία"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_YIDDISH.PairedList.item
+#, fuzzy
 msgid  "Yiddish (Israel)"
 msgstr "Γίντις"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_QUECHUA_ECUADOR.PairedList.item
+#, fuzzy
 msgid  "Quechua (Ecuador)"
 msgstr "Κέτσουα (Εκουαδόρ)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UIGHUR_CHINA.PairedList.item
+#, fuzzy
 msgid  "Uyghur"
 msgstr "Uyghur"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ASTURIAN.PairedList.item
+#, fuzzy
 msgid  "Asturian"
 msgstr "Αστουριανά"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UPPER_SORBIAN_GERMANY.PairedList.item
+#, fuzzy
 msgid  "Sorbian, Upper"
 msgstr "Σορβικά, Άνω"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LOWER_SORBIAN_GERMANY.PairedList.item
+#, fuzzy
 msgid  "Sorbian, Lower"
 msgstr "Σορβικά, Κάτω"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LATGALIAN.PairedList.item
+#, fuzzy
 msgid  "Latgalian"
 msgstr "Latgalian"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MAORE.PairedList.item
+#, fuzzy
 msgid  "Maore"
 msgstr "Μαορί"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BUSHI.PairedList.item
+#, fuzzy
 msgid  "Bushi"
 msgstr "Bushi"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TAHITIAN.PairedList.item
+#, fuzzy
 msgid  "Tahitian"
 msgstr "Tahitian"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MALAGASY_PLATEAU.PairedList.item
+#, fuzzy
 msgid  "Malagasy, Plateau"
 msgstr "Malagasy, Plateau"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PAPIAMENTU.PairedList.item
+#, fuzzy
 msgid  "Papiamentu (Netherlands Antilles)"
 msgstr "Papiamentu (Netherlands Antilles)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_PAPIAMENTU_ARUBA.PairedList.item
+#, fuzzy
 msgid  "Papiamento (Aruba)"
 msgstr "Papiamento (Aruba)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN_CAMPIDANESE.PairedList.item
+#, fuzzy
 msgid  "Sardinian, Campidanese"
 msgstr "Sardinian, Campidanese"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN_GALLURESE.PairedList.item
+#, fuzzy
 msgid  "Sardinian, Gallurese"
 msgstr "Sardinian, Gallurese"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN_LOGUDORESE.PairedList.item
+#, fuzzy
 msgid  "Sardinian, Logudorese"
 msgstr "Sardinian, Logudorese"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN_SASSARESE.PairedList.item
+#, fuzzy
 msgid  "Sardinian, Sassarese"
 msgstr "Sardinian, Sassarese"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BAFIA.PairedList.item
+#, fuzzy
 msgid  "Bafia"
 msgstr "Bafia"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GIKUYU.PairedList.item
+#, fuzzy
 msgid  "Gikuyu"
 msgstr "Gikuyu"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_YORUBA.PairedList.item
+#, fuzzy
 msgid  "Yoruba"
 msgstr "Yoruba"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_RUSYN_UKRAINE.PairedList.item
+#, fuzzy
 msgid  "Rusyn (Ukraine)"
 msgstr "Rusyn (Ukraine)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_RUSYN_SLOVAKIA.PairedList.item
+#, fuzzy
 msgid  "Rusyn (Slovakia)"
 msgstr "Rusyn (Slovakia)"
 

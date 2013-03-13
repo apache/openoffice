@@ -576,12 +576,14 @@ msgid  "End"
 msgstr "Τέλος"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.RB_AUTOEND.RadioButton.Text
+#, fuzzy
 msgid  "A~utomatically"
-msgstr "Αυ~τόματα"
+msgstr "Α~υτόματα"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.RB_MANEND.RadioButton.Text
+#, fuzzy
 msgid  "Ma~nually at"
-msgstr "Χει~ροκίνητα σε"
+msgstr "~Χειροκίνητα σε"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.FL_BY.FixedLine.Text
 #, fuzzy
@@ -4692,7 +4694,7 @@ msgstr "Προστασία"
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_FORMULAS.String.Text
 #, fuzzy
 msgid  "Formulas"
-msgstr "Τύποι"
+msgstr "Μαθηματικοί τύποι"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_HIDE.String.Text
 #, fuzzy
@@ -5825,22 +5827,22 @@ msgstr "Τιμή"
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_OP1.Default.StringList.item
 #, fuzzy
 msgid  "OR"
-msgstr "OR"
+msgstr "Η"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_OP2.Default.StringList.item
 #, fuzzy
 msgid  "OR"
-msgstr "OR"
+msgstr "Η"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_OP3.Default.StringList.item
 #, fuzzy
 msgid  "OR"
-msgstr "Η"
+msgstr "OR"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_OP4.Default.StringList.item
 #, fuzzy
 msgid  "OR"
-msgstr "Η"
+msgstr "OR"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
@@ -6090,22 +6092,22 @@ msgstr "Τιμή"
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_OP1.Default.StringList.item
 #, fuzzy
 msgid  "AND"
-msgstr "AND"
+msgstr "ΚΑΙ"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_OP2.Default.StringList.item
 #, fuzzy
 msgid  "AND"
-msgstr "AND"
+msgstr "ΚΑΙ"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_OP3.Default.StringList.item
 #, fuzzy
 msgid  "AND"
-msgstr "ΚΑΙ"
+msgstr "AND"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_OP4.Default.StringList.item
 #, fuzzy
 msgid  "AND"
-msgstr "ΚΑΙ"
+msgstr "AND"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
@@ -6155,7 +6157,7 @@ msgstr "Μεγαλύτερο %"
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
 msgid  "Smallest %"
-msgstr "Μικρότερο  %"
+msgstr "Μικρότερο %"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
@@ -6933,7 +6935,7 @@ msgstr "Αριθμός"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.3.String.Text
 #, fuzzy
 msgid  "The internal number for the date."
-msgstr "Εσωτερικός  αριθμός της ημερομηνίας"
+msgstr "Εσωτερικός αριθμός της ημερομηνίας"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.1.String.Text
 msgid  "Calculates the number of days between two dates based on a 360-day year."
@@ -7952,7 +7954,7 @@ msgstr "Ονομαστικό επιτόκιο"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_EFFEKTIV.4.String.Text
 #, fuzzy
 msgid  "P"
-msgstr "P"
+msgstr "μέση"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_EFFEKTIV.5.String.Text
 #, fuzzy
@@ -9539,7 +9541,7 @@ msgstr ""
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_TRANS.2.String.Text
 #, fuzzy
 msgid  "array"
-msgstr "πίνακας"
+msgstr "πίνακάς"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_TRANS.3.String.Text
 msgid  "The array in which the rows and columns have been transposed."
@@ -9553,7 +9555,7 @@ msgstr "Πολλαπλασιασμός πίνακα. Επιστρέφει το �
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_MULT.2.String.Text
 #, fuzzy
 msgid  "array"
-msgstr "πίνακάς"
+msgstr "πίνακας"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_MULT.3.String.Text
 #, fuzzy
@@ -9635,7 +9637,7 @@ msgstr "Αθροίζει τις διαφορές των τετραγώνων δ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_X2MY2.2.String.Text
 #, fuzzy
 msgid  "array_x"
-msgstr "πίνακας_x "
+msgstr "πίνακας_x"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_X2MY2.3.String.Text
 msgid  "First array where the square of the arguments are totalled."
@@ -9731,22 +9733,22 @@ msgstr "Υπολογίζει τις παραμέτρους της γραμμικ
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.2.String.Text
 #, fuzzy
 msgid  "data_Y"
-msgstr "δεδομένα_Y"
+msgstr "δεδομένα_Υ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.3.String.Text
 #, fuzzy
 msgid  "The Y data array."
-msgstr "Ο πίνακας δεδομένων Y."
+msgstr "Ο πίνακας δεδομένων Υ."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.4.String.Text
 #, fuzzy
 msgid  "data_X"
-msgstr "δεδομένα_X"
+msgstr "δεδομένα_Χ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.5.String.Text
 #, fuzzy
 msgid  "The X data array."
-msgstr "Ο πίνακας δεδομένων X."
+msgstr "Ο πίνακαςδεδομένων Χ."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.6.String.Text
 #, fuzzy
@@ -9773,22 +9775,22 @@ msgstr ""
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.2.String.Text
 #, fuzzy
 msgid  "data_Y"
-msgstr "δεδομένα_Y"
+msgstr "δεδομένα_Υ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.3.String.Text
 #, fuzzy
 msgid  "The Y data array."
-msgstr "Ο πίνακας δεδομένων Y."
+msgstr "Ο πίνακας δεδομένων Υ."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.4.String.Text
 #, fuzzy
 msgid  "data_X"
-msgstr "δεδομένα_X"
+msgstr "δεδομένα_Χ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.5.String.Text
 #, fuzzy
 msgid  "The X data array."
-msgstr "Ο πίνακαςδεδομένων Χ."
+msgstr "Ο πίνακας δεδομένων X."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.6.String.Text
 #, fuzzy
@@ -9816,17 +9818,17 @@ msgstr "Υπολογίζει σημεία στην ευθεία παλινδρό
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.2.String.Text
 #, fuzzy
 msgid  "data_Y"
-msgstr "δεδομένα_Υ"
+msgstr "δεδομένα_Y"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.3.String.Text
 #, fuzzy
 msgid  "The Y data array."
-msgstr "Ο πίνακας δεδομένων Υ."
+msgstr "Ο πίνακας δεδομένων Y."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.4.String.Text
 #, fuzzy
 msgid  "data_X"
-msgstr "δεδομένα_Χ"
+msgstr "δεδομένα_X"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.5.String.Text
 #, fuzzy
@@ -9860,17 +9862,17 @@ msgstr "Υπολογίζει σημεία στην εκθετική συνάρτ
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GROWTH.2.String.Text
 #, fuzzy
 msgid  "data_Y"
-msgstr "δεδομένα_Υ"
+msgstr "δεδομένα_Y"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GROWTH.3.String.Text
 #, fuzzy
 msgid  "The Y data array."
-msgstr "Ο πίνακας δεδομένων Υ."
+msgstr "Ο πίνακας δεδομένων Y."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GROWTH.4.String.Text
 #, fuzzy
 msgid  "data_X"
-msgstr "δεδομένα_Χ"
+msgstr "δεδομένα_X"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GROWTH.5.String.Text
 #, fuzzy
@@ -10239,7 +10241,7 @@ msgstr "Ο πίνακας με τα δεδομένα στο δείγμα."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PERCENTILE.4.String.Text
 #, fuzzy
 msgid  "Alpha"
-msgstr "Άλφα"
+msgstr "άλφα"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PERCENTILE.5.String.Text
 #, fuzzy
@@ -10690,7 +10692,7 @@ msgstr "Μέση τιμή. Η μέση τιμή της κατανομής Poisso
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.6.String.Text
 #, fuzzy
 msgid  "Cumulative"
-msgstr "Αθροιστική"
+msgstr "Συσσωρευτική"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.7.String.Text
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
@@ -10838,7 +10840,7 @@ msgstr ""
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOG_NORM_DIST.8.String.Text
 #, fuzzy
 msgid  "Cumulative"
-msgstr "Συσσωρευτική"
+msgstr "Αθροιστική"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOG_NORM_DIST.9.String.Text
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
@@ -10948,7 +10950,7 @@ msgstr "Η παράμετρος Βήτα της κατανομής Γάμμα."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAMMA_DIST.8.String.Text
 #, fuzzy
 msgid  "Cumulative"
-msgstr "Αθροιστική"
+msgstr "Συσσωρευτική"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAMMA_DIST.9.String.Text
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
@@ -11374,7 +11376,7 @@ msgstr "μοίρες_ελευθερίας"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHI_DIST.5.String.Text
 #, fuzzy
 msgid  "The degrees of freedom of the chi square distribution."
-msgstr "Οι μοίρες ελευθερίας της κατανομής Χ-τετράγωνο."
+msgstr "Οι μοίρες ελευθερίας της κατανομής  χ-τετράγωνο."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHISQ_DIST.1.String.Text
 msgid  "Returns left-tail probability of the cumulative distribution function or values of the probability density function of the chi-square distribution."
@@ -11644,7 +11646,7 @@ msgstr "δεδομένα_1"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.3.String.Text
 #, fuzzy
 msgid  "The first record array."
-msgstr "Ο πρώτος πίνακας εγγραφών."
+msgstr "Ο πρώτος πίνακας  εγγραφών."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.4.String.Text
 #, fuzzy
@@ -11654,7 +11656,7 @@ msgstr "δεδομένα_2"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.5.String.Text
 #, fuzzy
 msgid  "The second record array."
-msgstr "Ο δεύτερος πίνακας εγγραφών."
+msgstr "Ο δεύτερος πίνακας εγγραφών εγγραφών."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.1.String.Text
 #, fuzzy
@@ -11707,17 +11709,17 @@ msgstr ""
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RSQ.2.String.Text
 #, fuzzy
 msgid  "data_Y"
-msgstr "δεδομένα_Υ"
+msgstr "δεδομένα_Y"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RSQ.3.String.Text
 #, fuzzy
 msgid  "The Y data array."
-msgstr "Ο πίνακας δεδομένων Υ."
+msgstr "Ο πίνακας δεδομένων Y."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RSQ.4.String.Text
 #, fuzzy
 msgid  "data_X"
-msgstr "δεδομένα_Χ"
+msgstr "δεδομένα_X"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RSQ.5.String.Text
 #, fuzzy
@@ -13152,7 +13154,7 @@ msgstr "τιμή"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CONVERT.3.String.Text
 #, fuzzy
 msgid  "The value to be converted."
-msgstr "Ο αριθμός που πρόκειται να μετατραπεί."
+msgstr "Η τιμή που πρόκειται να μετατραπεί."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CONVERT.4.String.Text
 #, fuzzy
@@ -13405,6 +13407,54 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MIDB.7.String.Text
 msgid  "The number of characters for the text."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.1.String.Text
+msgid  "Return the cosecant of an angle. CSC(x)=1/SIN(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.3.String.Text
+msgid  "The angle in radians for which the cosecant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.1.String.Text
+msgid  "Return the secant of an angle. SEC(x)=1/COS(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.3.String.Text
+msgid  "The angle in radians for which the secant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.1.String.Text
+msgid  "Return the hyperbolic cosecant of a hyperbolic angle. CSCH(x)=1/SINH(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.3.String.Text
+msgid  "The hyperbolic angle in radians for which the hyperbolic cosecant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.1.String.Text
+msgid  "Return the hyperbolic secant of a hyperbolic angle. SECH(x)=1/COSH(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.3.String.Text
+msgid  "The hyperbolic angle in radians for which the hyperbolic secant is to be calculated."
 msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_APPLICATION.String.Text
@@ -13980,7 +14030,7 @@ msgstr "Επιλογή φύλλων"
 #: source/ui/src/scstring.src#STR_DLG_SELECTTABLES_LBNAME.String.Text
 #, fuzzy
 msgid  "~Selected sheets"
-msgstr "~Επιλεγμένα φύλλα"
+msgstr "Εκτύπωση μό~νο επιλεγμένων φύλλων"
 
 #: source/ui/src/scstring.src#STR_REPLCELLSWARN.String.Text
 msgid  "You are pasting data into cells that already contain data.\nDo you really want to overwrite the existing data?"
@@ -14515,7 +14565,7 @@ msgstr "Σμίκρυνση"
 #: source/ui/src/optsolver.src#RID_SCDLG_OPTSOLVER.IB_DELETE1.ImageButton.QuickHelpText
 #, fuzzy
 msgid  "Remove"
-msgstr "Αφαίρεση"
+msgstr "Α~φαίρεση"
 
 #: source/ui/src/optsolver.src#RID_SCDLG_OPTSOLVER.IB_LEFT2.ImageButton.QuickHelpText
 #, fuzzy
@@ -14535,7 +14585,7 @@ msgstr "Σμίκρυνση"
 #: source/ui/src/optsolver.src#RID_SCDLG_OPTSOLVER.IB_DELETE2.ImageButton.QuickHelpText
 #, fuzzy
 msgid  "Remove"
-msgstr "Α~φαίρεση"
+msgstr "Αφαίρεση"
 
 #: source/ui/src/optsolver.src#RID_SCDLG_OPTSOLVER.IB_LEFT3.ImageButton.QuickHelpText
 #, fuzzy
@@ -15138,12 +15188,12 @@ msgstr "Η~μερομηνία & ώρα"
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.BTN_DELFORMULAS.CheckBox.Text
 #, fuzzy
 msgid  "~Formulas"
-msgstr "Μα~θηματικοί τύποι"
+msgstr "Μαθηματικοί ~τύποι"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.BTN_DELATTRS.CheckBox.Text
 #, fuzzy
 msgid  "For~mats"
-msgstr "Μορ~φοποιήσεις"
+msgstr "Μορ~φοποίηση"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.BTN_DELNOTES.CheckBox.Text
 #, fuzzy
