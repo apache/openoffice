@@ -1856,7 +1856,8 @@ msgid  "~Delete"
 msgstr "~Изтриване"
 
 #: source/dialogs/about.src#RID_DEFAULTABOUT.ModalDialog.Text
-msgid  "About %PRODUCTNAME"
+#, fuzzy
+msgid  "About %FULLPRODUCTNAME"
 msgstr "Относно %PRODUCTNAME"
 
 #: source/dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_BTN_README.PushButton.Text
@@ -1888,598 +1889,747 @@ msgid  "is not available for spellchecking\nPlease check your installation and i
 msgstr ""
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.ModalDialog.Text
+#, fuzzy
 msgid  "Hyphenation"
 msgstr "Сричкопренасяне"
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.FT_WORD.FixedText.Text
+#, fuzzy
 msgid  "~Word"
 msgstr "~Дума"
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.BTN_HYPH_CUT.OKButton.Text
+#, fuzzy
 msgid  "H~yphenate"
 msgstr "~Пренасяне"
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.BTN_HYPH_CONTINUE.PushButton.Text
+#, fuzzy
 msgid  "~Skip"
 msgstr "Про~пускане"
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.BTN_HYPH_DELETE.PushButton.Text
+#, fuzzy
 msgid  "~Remove"
 msgstr "~Премахване"
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.BTN_HYPH_ALL.PushButton.Text
+#, fuzzy
 msgid  "Hyphenate ~All"
 msgstr "Пренасяне - в~сичко"
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.BTN_HYPH_CANCEL.CancelButton.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "~Затваряне"
 
 #: source/dialogs/tbxform.src#RID_SVX_DLG_INPUTRECORDNO.ModalDialog.Text
+#, fuzzy
 msgid  "Record Number"
 msgstr "Номер на запис"
 
 #: source/dialogs/tbxform.src#RID_SVX_DLG_INPUTRECORDNO.1.FixedText.Text
+#, fuzzy
 msgid  "go to record"
 msgstr "преход към запис"
 
 #: source/dialogs/multipat.src#RID_SVXDLG_MULTIPATH.ModalDialog.Text
+#, fuzzy
 msgid  "Select Paths"
 msgstr "Избор на пътища"
 
 #: source/dialogs/multipat.src#RID_SVXDLG_MULTIPATH.FL_MULTIPATH.FixedLine.Text
+#, fuzzy
 msgid  "Paths"
 msgstr "Пътища"
 
 #: source/dialogs/multipat.src#RID_SVXDLG_MULTIPATH.FT_RADIOBUTTON.FixedText.Text
+#, fuzzy
 msgid  "Mark the default path for new files."
 msgstr "Маркирайте пътя по подразбиране за нови файлове."
 
 #: source/dialogs/multipat.src#RID_SVXDLG_MULTIPATH.BTN_ADD_MULTIPATH.PushButton.Text
+#, fuzzy
 msgid  "~Add..."
 msgstr "~Добавяне..."
 
 #: source/dialogs/multipat.src#RID_SVXDLG_MULTIPATH.BTN_DEL_MULTIPATH.PushButton.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "~Изтриване"
 
 #: source/dialogs/multipat.src#RID_SVXDLG_MULTIPATH.STR_HEADER_PATHS.String.Text
+#, fuzzy
 msgid  "Path list"
 msgstr "Списък с пътища"
 
 #: source/dialogs/multipat.src#RID_MULTIPATH_DBL_ERR.String.Text
+#, fuzzy
 msgid  "The path %1 already exists."
 msgstr "Пътят %1 вече съществува."
 
 #: source/dialogs/multipat.src#RID_SVXSTR_FILE_TITLE.String.Text
+#, fuzzy
 msgid  "Select files"
 msgstr "Избор на файлове"
 
 #: source/dialogs/multipat.src#RID_SVXSTR_FILE_HEADLINE.String.Text
+#, fuzzy
 msgid  "Files"
 msgstr "Файлове"
 
 #: source/dialogs/multipat.src#RID_SVXSTR_ARCHIVE_TITLE.String.Text
+#, fuzzy
 msgid  "Select Archives"
 msgstr "Избор на архиви"
 
 #: source/dialogs/multipat.src#RID_SVXSTR_ARCHIVE_HEADLINE.String.Text
+#, fuzzy
 msgid  "Archives"
 msgstr "Архиви"
 
 #: source/dialogs/multipat.src#RID_SVXSTR_MULTIFILE_DBL_ERR.String.Text
+#, fuzzy
 msgid  "The file %1 already exists."
 msgstr "Файлът %1 вече съществува."
 
 #: source/dialogs/svuidlg.src#MD_PASTE_OBJECT.ModalDialog.Text
+#, fuzzy
 msgid  "Paste Special"
 msgstr "Специално поставяне"
 
 #: source/dialogs/svuidlg.src#MD_PASTE_OBJECT.FT_SOURCE.FixedText.Text
+#, fuzzy
 msgid  "Source:"
 msgstr "Източник:"
 
 #: source/dialogs/svuidlg.src#MD_PASTE_OBJECT.RB_PASTE.RadioButton.Text
+#, fuzzy
 msgid  "~Insert as"
 msgstr "~Вмъкване като"
 
 #: source/dialogs/svuidlg.src#MD_PASTE_OBJECT.RB_PASTE_LINK.RadioButton.Text
+#, fuzzy
 msgid  "Link to"
 msgstr "Връзка към"
 
 #: source/dialogs/svuidlg.src#MD_PASTE_OBJECT.CB_DISPLAY_AS_ICON.CheckBox.Text
+#, fuzzy
 msgid  "~As icon"
 msgstr "~Като икона"
 
 #: source/dialogs/svuidlg.src#MD_PASTE_OBJECT.PB_CHANGE_ICON.PushButton.Text
+#, fuzzy
 msgid  "~Other Icon..."
 msgstr "~Друга икона..."
 
 #: source/dialogs/svuidlg.src#MD_PASTE_OBJECT.FL_CHOICE.FixedLine.Text
+#, fuzzy
 msgid  "Selection"
 msgstr "Избрано"
 
 #: source/dialogs/svuidlg.src#MD_PASTE_OBJECT.S_OBJECT.String.Text
+#, fuzzy
 msgid  "Object"
 msgstr "Обект"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.ModalDialog.Text
+#, fuzzy
 msgid  "Edit Links"
 msgstr "Редактиране на връзки"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_FILES.FixedText.Text
+#, fuzzy
 msgid  "Source file"
 msgstr "Файл - източник"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_LINKS.FixedText.Text
+#, fuzzy
 msgid  "Element:"
 msgstr "Елемент:"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_TYPE.FixedText.Text
+#, fuzzy
 msgid  "Type"
 msgstr "Тип"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_STATUS.FixedText.Text
+#, fuzzy
 msgid  "Status"
 msgstr "Състояние"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.1.CancelButton.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "~Затваряне"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.PB_UPDATE_NOW.PushButton.Text
+#, fuzzy
 msgid  "~Update"
 msgstr "~Обновяване"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.PB_OPEN_SOURCE.PushButton.Text
+#, fuzzy
 msgid  "~Open"
 msgstr "~Отваряне"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.PB_CHANGE_SOURCE.PushButton.Text
+#, fuzzy
 msgid  "~Modify..."
 msgstr "~Промяна..."
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.PB_BREAK_LINK.PushButton.Text
+#, fuzzy
 msgid  "~Break Link"
 msgstr "Пр~екъсване"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_FILES2.FixedText.Text
+#, fuzzy
 msgid  "Source file"
 msgstr "Файл - източник"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_SOURCE2.FixedText.Text
+#, fuzzy
 msgid  "Element:"
 msgstr "Елемент:"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_TYPE2.FixedText.Text
+#, fuzzy
 msgid  "Type:"
 msgstr "Тип:"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_UPDATE.FixedText.Text
+#, fuzzy
 msgid  "Update:"
 msgstr "Обновяване:"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.RB_AUTOMATIC.RadioButton.Text
+#, fuzzy
 msgid  "~Automatic"
 msgstr "~Автоматично"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.RB_MANUAL.RadioButton.Text
+#, fuzzy
 msgid  "Ma~nual"
 msgstr "~Ръчно"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_AUTOLINK.String.Text
+#, fuzzy
 msgid  "Automatic"
 msgstr "Автоматично"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_MANUALLINK.String.Text
+#, fuzzy
 msgid  "Manual"
 msgstr "Ръчно"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_BROKENLINK.String.Text
+#, fuzzy
 msgid  "Not available"
 msgstr "Недостъпно"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_GRAPHICLINK.String.Text
+#, fuzzy
 msgid  "Graphic"
 msgstr "Графика"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_BUTTONCLOSE.String.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "~Затваряне"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_CLOSELINKMSG.String.Text
+#, fuzzy
 msgid  "Are you sure you want to remove the selected link?"
 msgstr "Наистина ли желаете премахване на избраната връзка?"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_CLOSELINKMSG_MULTI.String.Text
+#, fuzzy
 msgid  "Are you sure you want to remove the selected link?"
 msgstr "Наистина ли желаете премахване на избраната връзка?"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_WAITINGLINK.String.Text
+#, fuzzy
 msgid  "Waiting"
 msgstr "Изчакване"
 
 #: source/dialogs/svuidlg.src#MD_LINKEDIT.ModalDialog.Text
+#, fuzzy
 msgid  "Modify Link"
 msgstr "Промяна на връзка"
 
 #: source/dialogs/svuidlg.src#MD_LINKEDIT.2.FixedText.Text
+#, fuzzy
 msgid  "Exchange source:"
 msgstr "Смяна на източника:"
 
 #: source/dialogs/svuidlg.src#MD_LINKEDIT.ED_FULL_SOURCE_NAME.Edit.Text
+#, fuzzy
 msgid  "Edit"
 msgstr "Редактиране"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OLEOBJECT.RB_NEW_OBJECT.RadioButton.Text
+#, fuzzy
 msgid  "~Create new"
 msgstr "~Създаване на нова"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OLEOBJECT.RB_OBJECT_FROMFILE.RadioButton.Text
+#, fuzzy
 msgid  "Create from ~file"
 msgstr "Създаване от ~файл"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OLEOBJECT.BTN_FILEPATH.PushButton.Text
+#, fuzzy
 msgid  "~Search..."
 msgstr "~Търсене..."
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OLEOBJECT.CB_FILELINK.CheckBox.Text
+#, fuzzy
 msgid  "~Link to file"
 msgstr "~Връзка към файл"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OLEOBJECT.GB_OBJECT.FixedLine.Text
+#, fuzzy
 msgid  "Object type"
 msgstr "Тип на обект"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OLEOBJECT.STR_FILE.String.Text
+#, fuzzy
 msgid  "File"
 msgstr "Файл"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OLEOBJECT.String.Text
+#, fuzzy
 msgid  "Insert OLE Object"
 msgstr "Вмъкване на OLE обект"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_PLUGIN.BTN_FILEURL.PushButton.Text
+#, fuzzy
 msgid  "~Browse..."
 msgstr "~Преглед..."
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_PLUGIN.GB_FILEURL.FixedLine.Text
+#, fuzzy
 msgid  "File / URL"
 msgstr "Файл / URL"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_PLUGIN.GB_PLUGINS_OPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Options"
 msgstr "Настройки"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_PLUGIN.HelpButton.Text
+#, fuzzy
 msgid  "Insert Plug-in"
 msgstr "Вмъкване на приставка"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_APPLET.FT_CLASSFILE.FixedText.Text
+#, fuzzy
 msgid  "~Class"
 msgstr "~Клас"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_APPLET.FT_CLASSLOCATION.FixedText.Text
+#, fuzzy
 msgid  "Class ~Location"
 msgstr "~Местонахождение"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_APPLET.BTN_CLASS.PushButton.Text
+#, fuzzy
 msgid  "~Search..."
 msgstr "~Търсене..."
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_APPLET.GB_CLASS.FixedLine.Text
+#, fuzzy
 msgid  "File"
 msgstr "Файл"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_APPLET.GB_APPLET_OPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Options"
 msgstr "Настройки"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_APPLET.HelpButton.Text
+#, fuzzy
 msgid  "Insert Applet"
 msgstr "Вмъкване на аплет"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.ModalDialog.Text
+#, fuzzy
 msgid  "Floating Frame Properties"
 msgstr "Свойства на плаващата рамка"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.FT_FRAMENAME.FixedText.Text
+#, fuzzy
 msgid  "~Name"
 msgstr "~Име"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.FT_URL.FixedText.Text
+#, fuzzy
 msgid  "~Contents"
 msgstr "~Съдържание"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.RB_SCROLLINGON.RadioButton.Text
+#, fuzzy
 msgid  "~On"
 msgstr "~Включен"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.RB_SCROLLINGOFF.RadioButton.Text
+#, fuzzy
 msgid  "O~ff"
 msgstr "~Изключен"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.RB_SCROLLINGAUTO.RadioButton.Text
+#, fuzzy
 msgid  "Au~tomatic"
 msgstr "~Автоматично"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.GB_SCROLLING.FixedLine.Text
+#, fuzzy
 msgid  "Scroll bar"
 msgstr "Плъзгач"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.RB_FRMBORDER_ON.RadioButton.Text
+#, fuzzy
 msgid  "On"
 msgstr "Включен"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.RB_FRMBORDER_OFF.RadioButton.Text
+#, fuzzy
 msgid  "Off"
 msgstr "Изключен"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.GB_BORDER.FixedLine.Text
+#, fuzzy
 msgid  "Border"
 msgstr "Кант"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.FT_MARGINWIDTH.FixedText.Text
+#, fuzzy
 msgid  "~Width"
 msgstr "~Ширина"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.CB_MARGINWIDTHDEFAULT.CheckBox.Text
+#, fuzzy
 msgid  "~Default"
 msgstr "~По подразбиране"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.FT_MARGINHEIGHT.FixedText.Text
+#, fuzzy
 msgid  "H~eight"
 msgstr "~Височина"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.CB_MARGINHEIGHTDEFAULT.CheckBox.Text
+#, fuzzy
 msgid  "Defa~ult"
 msgstr "П~одразбирана"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.GB_MARGIN.FixedLine.Text
+#, fuzzy
 msgid  "Spacing to contents"
 msgstr "Разстояние до съдържанието"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.String.Text
+#, fuzzy
 msgid  "Select File for Floating Frame"
 msgstr "Изберете файл за плаващата рамка"
 
 #: source/dialogs/svuidlg.src#STR_EDIT_APPLET.String.Text
+#, fuzzy
 msgid  "Edit Applet"
 msgstr "Редактиране на аплет"
 
 #: source/dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.TabDialog.Text
+#, fuzzy
 msgid  "Format Cells"
 msgstr "Форматиране на клетки"
 
 #: source/dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_CHAR_NAME.PageItem.Text
+#, fuzzy
 msgid  "Font"
 msgstr "Шрифт"
 
 #: source/dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_CHAR_EFFECTS.PageItem.Text
+#, fuzzy
 msgid  "Font Effects"
 msgstr "Ефекти за шрифт"
 
 #: source/dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_BORDER.PageItem.Text
+#, fuzzy
 msgid  "Borders"
 msgstr "Кантове"
 
 #: source/dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_AREA.PageItem.Text
+#, fuzzy
 msgid  "Background"
 msgstr "Фон"
 
 #: source/dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.PushButton.Text
+#, fuzzy
 msgid  "Return"
 msgstr "Връщане"
 
 #: source/dialogs/splitcelldlg.src#RID_SVX_SPLITCELLDLG.ModalDialog.Text
+#, fuzzy
 msgid  "Split Cells"
 msgstr "Разделяне на клетки"
 
 #: source/dialogs/splitcelldlg.src#RID_SVX_SPLITCELLDLG.FT_COUNT.FixedText.Text
+#, fuzzy
 msgid  "~Split cell into"
 msgstr "~Разделяне на клетка на"
 
 #: source/dialogs/splitcelldlg.src#RID_SVX_SPLITCELLDLG.FL_COUNT.FixedLine.Text
+#, fuzzy
 msgid  "Split"
 msgstr "Разделяне"
 
 #: source/dialogs/splitcelldlg.src#RID_SVX_SPLITCELLDLG.RB_HORZ.ImageRadioButton.Text
+#, fuzzy
 msgid  "H~orizontally"
 msgstr "Х~оризонтално"
 
 #: source/dialogs/splitcelldlg.src#RID_SVX_SPLITCELLDLG.CB_PROP.CheckBox.Text
+#, fuzzy
 msgid  "~Into equal proportions"
 msgstr "~В равни пропорции"
 
 #: source/dialogs/splitcelldlg.src#RID_SVX_SPLITCELLDLG.RB_VERT.ImageRadioButton.Text
+#, fuzzy
 msgid  "~Vertically"
 msgstr "~Вертикално"
 
 #: source/dialogs/splitcelldlg.src#RID_SVX_SPLITCELLDLG.FL_DIR.FixedLine.Text
+#, fuzzy
 msgid  "Direction"
 msgstr "Посока"
 
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.ModalDialog.Text
+#, fuzzy
 msgid  "Note"
 msgstr "Бележка"
 
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.FT_LASTEDITLABEL.FixedText.Text
+#, fuzzy
 msgid  "Author"
 msgstr "Автор"
 
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.FT_EDIT.FixedText.Text
+#, fuzzy
 msgid  "~Text"
 msgstr "~Текст"
 
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.FL_POSTIT.FixedLine.Text
+#, fuzzy
 msgid  "Contents"
 msgstr "Съдържание"
 
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.FT_AUTHOR.FixedText.Text
+#, fuzzy
 msgid  "~Insert"
 msgstr "~Вмъкване"
 
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.BTN_AUTHOR.PushButton.Text
+#, fuzzy
 msgid  "Author"
 msgstr "Автор"
 
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.STR_NOTIZ_EDIT.String.Text
+#, fuzzy
 msgid  "Edit Note"
 msgstr "Редактиране на бележка"
 
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.STR_NOTIZ_INSERT.String.Text
+#, fuzzy
 msgid  "Insert note"
 msgstr "Вмъкване на бележка"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.TabDialog.Text
+#, fuzzy
 msgid  "Text Format"
 msgstr "Формат на текст"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_CHAR_NAME.PageItem.Text
+#, fuzzy
 msgid  "Font"
 msgstr "Шрифт"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_CHAR_EFFECTS.PageItem.Text
+#, fuzzy
 msgid  "Font Effects"
 msgstr "Ефекти за шрифт"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_CHAR_POSITION.PageItem.Text
+#, fuzzy
 msgid  "Position"
 msgstr "Позиция"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_CHAR_TWOLINES.PageItem.Text
+#, fuzzy
 msgid  "Asian Layout"
 msgstr "Азиатски езици"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_STD_PARAGRAPH.PageItem.Text
+#, fuzzy
 msgid  "Indents & Spacing"
 msgstr "Отстъпи и разредка"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PageItem.Text
+#, fuzzy
 msgid  "Alignment"
 msgstr "Подравняване"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_EXT_PARAGRAPH.PageItem.Text
+#, fuzzy
 msgid  "Text Flow"
 msgstr "Изливане на текст"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_PARA_ASIAN.PageItem.Text
+#, fuzzy
 msgid  "Asian Typography"
 msgstr "Азиатска типография"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_BACKGROUND.PageItem.Text
+#, fuzzy
 msgid  "Background"
 msgstr "Фон"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHATTR.ModalDialog.Text
+#, fuzzy
 msgid  "Attributes"
 msgstr "Атрибути"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHATTR.FL_ATTR.FixedText.Text
+#, fuzzy
 msgid  "~Options"
 msgstr "~Настройки"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.ModalDialog.Text
+#, fuzzy
 msgid  "Similarity Search"
 msgstr "Търсене по подобие"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.FT_OTHER.FixedText.Text
+#, fuzzy
 msgid  "~Exchange characters"
 msgstr "~Размяна на знаци"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.FT_LONGER.FixedText.Text
+#, fuzzy
 msgid  "~Add characters"
 msgstr "~Добавяне на знаци"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.FT_SHORTER.FixedText.Text
+#, fuzzy
 msgid  "~Remove characters"
 msgstr "~Премахване на знаци"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.CB_RELAX.CheckBox.Text
+#, fuzzy
 msgid  "~Combine"
 msgstr "~Комбиниране"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.FL_SIMILARITY.FixedLine.Text
+#, fuzzy
 msgid  "Settings"
 msgstr "Настройки"
 
 #: source/dialogs/insrc.src#DLG_INS_ROW_COL.ModalDialog.Text
+#, fuzzy
 msgid  "Insert"
 msgstr "Вмъкване"
 
 #: source/dialogs/insrc.src#DLG_INS_ROW_COL.CB_POS_BEFORE.RadioButton.Text
+#, fuzzy
 msgid  "~Before"
 msgstr "~Преди"
 
 #: source/dialogs/insrc.src#DLG_INS_ROW_COL.CB_POS_AFTER.RadioButton.Text
+#, fuzzy
 msgid  "A~fter"
 msgstr "~След"
 
 #: source/dialogs/insrc.src#DLG_INS_ROW_COL.FL_INS.FixedLine.Text
+#, fuzzy
 msgid  "Insert"
 msgstr "Вмъкване"
 
 #: source/dialogs/insrc.src#DLG_INS_ROW_COL.FL_POS.FixedLine.Text
+#, fuzzy
 msgid  "Position"
 msgstr "Позиция"
 
 #: source/dialogs/insrc.src#DLG_INS_ROW_COL.FT_COUNT.FixedText.Text
+#, fuzzy
 msgid  "~Number"
 msgstr "~Брой"
 
 #: source/dialogs/insrc.src#DLG_INS_ROW_COL.STR_ROW.String.Text
+#, fuzzy
 msgid  " Rows"
 msgstr " на редове"
 
 #: source/dialogs/insrc.src#DLG_INS_ROW_COL.STR_COL.String.Text
+#, fuzzy
 msgid  " Columns"
 msgstr " на колони"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_NAME.ModalDialog.Text
+#, fuzzy
 msgid  "Name"
 msgstr "Име"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_OBJECT_NAME.ModalDialog.Text
+#, fuzzy
 msgid  "Name"
 msgstr "Име"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_OBJECT_NAME.NTD_FT_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Name"
 msgstr "~Име"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_OBJECT_TITLE_DESC.ModalDialog.Text
+#, fuzzy
 msgid  "Description"
 msgstr "Описание"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_OBJECT_TITLE_DESC.NTD_FT_TITLE.FixedText.Text
+#, fuzzy
 msgid  "~Title"
 msgstr "~Заглавие"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_OBJECT_TITLE_DESC.NTD_FT_DESC.FixedText.Text
+#, fuzzy
 msgid  "~Description"
 msgstr "~Описание"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.ModalDialog.Text
+#, fuzzy
 msgid  "Properties"
 msgstr "Свойства"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_URL1.FixedText.Text
+#, fuzzy
 msgid  "~URL"
 msgstr "~URL"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_TARGET.FixedText.Text
+#, fuzzy
 msgid  "F~rame"
 msgstr "~Рамка"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Name"
 msgstr "~Име"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_URLDESCRIPTION.FixedText.Text
+#, fuzzy
 msgid  "Alternative ~text"
 msgstr "Алтернативен ~текст"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_DESCRIPTION.FixedText.Text
+#, fuzzy
 msgid  "~Description"
 msgstr "~Описание"
 
@@ -2548,50 +2698,62 @@ msgid  "~Key"
 msgstr ""
 
 #: source/dialogs/iconcdlg.src#RID_SVXSTR_ICONCHOICEDLG_RESETBUT.String.Text
+#, fuzzy
 msgid  "~Back"
 msgstr "На~зад"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.ModalDialog.Text
+#, fuzzy
 msgid  "Zoom & View Layout"
 msgstr "Мащаб и оформление на изгледа"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.FL_ZOOM.FixedLine.Text
+#, fuzzy
 msgid  "Zoom factor"
 msgstr "Мащаб"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.BTN_OPTIMAL.RadioButton.Text
+#, fuzzy
 msgid  "~Optimal"
 msgstr "~Оптимално"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.BTN_WHOLE_PAGE.RadioButton.Text
+#, fuzzy
 msgid  "~Fit width and height"
 msgstr "~Побиране по ширина и височина"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.BTN_PAGE_WIDTH.RadioButton.Text
+#, fuzzy
 msgid  "Fit ~width"
 msgstr "Побиране по ~ширина"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.BTN_USER.RadioButton.Text
+#, fuzzy
 msgid  "~Variable"
 msgstr "~Променливи"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.FL_VIEWLAYOUT.FixedLine.Text
+#, fuzzy
 msgid  "View layout"
 msgstr "Оформление на изгледа"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.BTN_AUTOMATIC.RadioButton.Text
+#, fuzzy
 msgid  "~Automatic"
 msgstr "~Автоматично"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.BTN_SINGLE.RadioButton.Text
+#, fuzzy
 msgid  "~Single page"
 msgstr "~Единична страница"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.BTN_COLUMNS.RadioButton.Text
+#, fuzzy
 msgid  "~Columns"
 msgstr "~Колони"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.CHK_BOOK.CheckBox.Text
+#, fuzzy
 msgid  "~Book mode"
 msgstr "Режим к~нига"
 
@@ -2600,322 +2762,402 @@ msgid  "The following columns are currently hidden. Please mark the fields you w
 msgstr ""
 
 #: source/dialogs/showcols.src#RID_SVX_DLG_SHOWGRIDCOLUMNS.CancelButton.Text
+#, fuzzy
 msgid  "Show columns"
 msgstr "Показване на колони"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.ModalDialog.Text
+#, fuzzy
 msgid  "Record Search"
 msgstr "Търсене на запис"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_SEARCHFOR.FixedLine.Text
+#, fuzzy
 msgid  "Search for"
 msgstr "Търсене за"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_SEARCHFORTEXT.RadioButton.Text
+#, fuzzy
 msgid  "~Text"
 msgstr "~Текст"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_SEARCHFORNULL.RadioButton.Text
+#, fuzzy
 msgid  "Field content is ~NULL"
 msgstr "Съдържанието на полето е ~NULL"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_SEARCHFORNOTNULL.RadioButton.Text
+#, fuzzy
 msgid  "Field content is not NU~LL"
 msgstr "Съдържанието на полето не е NU~LL"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_WHERE.FixedLine.Text
+#, fuzzy
 msgid  "Where to search"
 msgstr "Търсене в"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FT_FORM.FixedText.Text
+#, fuzzy
 msgid  "Form"
 msgstr "Формуляр"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_ALLFIELDS.RadioButton.Text
+#, fuzzy
 msgid  "All Fields"
 msgstr "Всички полета"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_SINGLEFIELD.RadioButton.Text
+#, fuzzy
 msgid  "Single field"
 msgstr "Едно поле"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_OPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Settings"
 msgstr "Настройки"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FT_POSITION.FixedText.Text
+#, fuzzy
 msgid  "Position"
 msgstr "Позиция"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_USEFORMATTER.CheckBox.Text
+#, fuzzy
 msgid  "Apply field format"
 msgstr "Прилагане на формат за полета"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_CASE.CheckBox.Text
+#, fuzzy
 msgid  "Match case"
 msgstr "Съвпадение на регистъра"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_BACKWARD.CheckBox.Text
+#, fuzzy
 msgid  "Search backwards"
 msgstr "Търсене назад"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_STARTOVER.CheckBox.Text
+#, fuzzy
 msgid  "From Beginning"
 msgstr "От началото"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_WILDCARD.CheckBox.Text
+#, fuzzy
 msgid  "Wildcard expression"
 msgstr "Израз със заместители"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_REGULAR.CheckBox.Text
+#, fuzzy
 msgid  "Regular expression"
 msgstr "Регулярен израз"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_APPROX.CheckBox.Text
+#, fuzzy
 msgid  "Similarity Search"
 msgstr "Търсене по подобие"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_APPROXSETTINGS.PushButton.Text
+#, fuzzy
 msgid  "..."
 msgstr "..."
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_HALFFULLFORMS.CheckBox.Text
+#, fuzzy
 msgid  "Match character width"
 msgstr "Съвпадение на ширината"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_SOUNDSLIKECJK.CheckBox.Text
+#, fuzzy
 msgid  "Sounds like (Japanese)"
 msgstr "Подобно звучене (японски)"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_SOUNDSLIKESETTINGS.PushButton.Text
+#, fuzzy
 msgid  "..."
 msgstr "..."
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_STATE.FixedLine.Text
+#, fuzzy
 msgid  "State"
 msgstr "Състояние"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FT_RECORDLABEL.FixedText.Text
+#, fuzzy
 msgid  "Record :"
 msgstr "Запис:"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_SEARCH.PushButton.Text
+#, fuzzy
 msgid  "Search"
 msgstr "Търсене"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.1.CancelButton.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "~Затваряне"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.1.HelpButton.Text
+#, fuzzy
 msgid  "~Help"
 msgstr "~Помощ"
 
 #: source/dialogs/fmsearch.src#RID_STR_SEARCH_ANYWHERE.String.Text
+#, fuzzy
 msgid  "anywhere in the field"
 msgstr "където и да е в полето"
 
 #: source/dialogs/fmsearch.src#RID_STR_SEARCH_BEGINNING.String.Text
+#, fuzzy
 msgid  "beginning of field"
 msgstr "в началото на полето"
 
 #: source/dialogs/fmsearch.src#RID_STR_SEARCH_END.String.Text
+#, fuzzy
 msgid  "end of field"
 msgstr "в края на полето"
 
 #: source/dialogs/fmsearch.src#RID_STR_SEARCH_WHOLE.String.Text
+#, fuzzy
 msgid  "entire field"
 msgstr "цяло поле"
 
 #: source/dialogs/fmsearch.src#RID_STR_FROM_TOP.String.Text
+#, fuzzy
 msgid  "From top"
 msgstr "Отгоре"
 
 #: source/dialogs/fmsearch.src#RID_STR_FROM_BOTTOM.String.Text
+#, fuzzy
 msgid  "From bottom"
 msgstr "Отдолу"
 
 #: source/dialogs/fmsearch.src#RID_SVXERR_SEARCH_NORECORD.ErrorBox.Message
+#, fuzzy
 msgid  "No records corresponding to your data found."
 msgstr "Не са открити записи, съответстващи на критериите."
 
 #: source/dialogs/fmsearch.src#RID_SVXERR_SEARCH_GENERAL_ERROR.ErrorBox.Message
+#, fuzzy
 msgid  "An unknown error occurred. The search could not be finished."
 msgstr "Възникна непозната грешка. Търсенето не може да завърши."
 
 #: source/dialogs/fmsearch.src#RID_STR_OVERFLOW_FORWARD.String.Text
+#, fuzzy
 msgid  "Overflow, search continued at the beginning"
 msgstr "Препълване, търсенето продължи от началото"
 
 #: source/dialogs/fmsearch.src#RID_STR_OVERFLOW_BACKWARD.String.Text
+#, fuzzy
 msgid  "Overflow, search continued at the end"
 msgstr "Препълване, търсенето продължи от края"
 
 #: source/dialogs/fmsearch.src#RID_STR_SEARCH_COUNTING.String.Text
+#, fuzzy
 msgid  "counting records"
 msgstr "броене на записи"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ModelessDialog.Text
+#, fuzzy
 msgid  "Spellcheck: "
 msgstr "Правописна проверка: "
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.FT_LANGUAGE.FixedText.Text
+#, fuzzy
 msgid  "Text languag~e"
 msgstr "~Език на текста"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.FT_NOTINDICT.FixedText.Text
+#, fuzzy
 msgid  "~Not in dictionary"
 msgstr "~Липсва в речника"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.FT_SUGGESTION.FixedText.Text
+#, fuzzy
 msgid  "~Suggestions"
 msgstr "~Предложения"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.CB_CHECK_GRAMMAR.CheckBox.Text
+#, fuzzy
 msgid  "Check ~grammar"
 msgstr "Проверка на ~граматика"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_IGNORE.PushButton.Text
+#, fuzzy
 msgid  "~Ignore Once"
 msgstr "~Игнориране"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_IGNOREALL.PushButton.Text
+#, fuzzy
 msgid  "I~gnore All"
 msgstr "И~гнориране всички"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_IGNORERULE.PushButton.Text
+#, fuzzy
 msgid  "I~gnore Rule"
 msgstr "И~гнориране правило"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.MB_ADDTODICT.MenuButton.Text
+#, fuzzy
 msgid  "~Add"
 msgstr "~Добавяне"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_CHANGE.PushButton.Text
+#, fuzzy
 msgid  "~Change"
 msgstr "~Промяна"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_CHANGEALL.PushButton.Text
+#, fuzzy
 msgid  "Change A~ll"
 msgstr "Промяна - в~сички"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_EXPLAIN.PushButton.Text
+#, fuzzy
 msgid  "~Explain..."
 msgstr "~Обяснение..."
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_AUTOCORR.PushButton.Text
+#, fuzzy
 msgid  "AutoCor~rect"
 msgstr "Автоко~рекция"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_OPTIONS.PushButton.Text
+#, fuzzy
 msgid  "O~ptions..."
 msgstr "~Настройки..."
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_UNDO.PushButton.Text
+#, fuzzy
 msgid  "~Undo"
 msgstr "~Отмяна"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_CLOSE.PushButton.Text
+#, fuzzy
 msgid  "Cl~ose"
 msgstr "Зат~варяне"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_RESUME.String.Text
+#, fuzzy
 msgid  "Resu~me"
 msgstr "Продъ~лжаване"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_NOSUGGESTIONS.String.Text
+#, fuzzy
 msgid  "(no suggestions)"
 msgstr "(няма предложения)"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_SPELLING.String.Text
+#, fuzzy
 msgid  "Spelling: $LANGUAGE ($LOCATION)"
 msgstr "Правопис: $LANGUAGE ($LOCATION)"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_SPELLING_AND_GRAMMAR.String.Text
+#, fuzzy
 msgid  "Spelling and Grammar: $LANGUAGE ($LOCATION)"
 msgstr "Правопис и граматика: $LANGUAGE ($LOCATION)"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_SPELLING_AND_GRAMMAR_VENDORNAME.String.Text
+#, fuzzy
 msgid  "Spelling and Grammar: $LANGUAGE ($LOCATION) [$VendorName]"
 msgstr "Правопис и граматика: $LANGUAGE ($LOCATION) [$VendorName]"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.TabPage.Text
+#, fuzzy
 msgid  "Proxy"
 msgstr "Прокси"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.GB_SETTINGS.FixedLine.Text
+#, fuzzy
 msgid  "Settings"
 msgstr "Настройки"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_PROXYMODE.FixedText.Text
+#, fuzzy
 msgid  "Proxy s~erver"
 msgstr "Прокси ~сървър"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.LB_PROXYMODE.item1.StringList.item
+#, fuzzy
 msgid  "None"
 msgstr "Без"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.LB_PROXYMODE.item2.StringList.item
+#, fuzzy
 msgid  "System"
 msgstr "От системата"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.LB_PROXYMODE.item3.StringList.item
+#, fuzzy
 msgid  "Manual"
 msgstr "Ръчно"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.ST_PROXY_FROM_BROWSER.String.Text
+#, fuzzy
 msgid  "Use browser settings"
 msgstr "Използване настройките на браузъра"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_HTTP_PROXY.FixedText.Text
+#, fuzzy
 msgid  "HT~TP proxy"
 msgstr "Прокси за ~HTTP"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_HTTP_PORT.FixedText.Text
+#, fuzzy
 msgid  "~Port"
 msgstr "~Порт"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_HTTPS_PROXY.FixedText.Text
+#, fuzzy
 msgid  "HTTP~S proxy"
 msgstr "Прокси за ~HTTP"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_HTTPS_PORT.FixedText.Text
+#, fuzzy
 msgid  "P~ort"
 msgstr "П~орт"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_FTP_PROXY.FixedText.Text
+#, fuzzy
 msgid  "~FTP proxy"
 msgstr "Прокси за ~FTP"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_FTP_PORT.FixedText.Text
+#, fuzzy
 msgid  "P~ort"
 msgstr "П~орт"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_SOCKS_PROXY.FixedText.Text
+#, fuzzy
 msgid  "~SOCKS proxy"
 msgstr "Прокси за ~SOCKS"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_SOCKS_PORT.FixedText.Text
+#, fuzzy
 msgid  "Po~rt"
 msgstr "По~рт"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_NOPROXYFOR.FixedText.Text
+#, fuzzy
 msgid  "~No proxy for:"
 msgstr "~Без прокси за:"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.ED_NOPROXYDESC.FixedText.Text
+#, fuzzy
 msgid  "Separator ;"
 msgstr "Разделител ;"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.GB_DNS.FixedLine.Text
+#, fuzzy
 msgid  "DNS server"
 msgstr "Сървър за DNS"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.RB_DNS_AUTO.RadioButton.Text
+#, fuzzy
 msgid  "~Automatic"
 msgstr "~Автоматично"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.RB_DNS_MANUAL.RadioButton.Text
+#, fuzzy
 msgid  "~Manual"
 msgstr "~Ръчно"
 
@@ -2928,18 +3170,22 @@ msgid  "is not a valid entry for this field. Please specify a value between 1 an
 msgstr ""
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.TabPage.Text
+#, fuzzy
 msgid  "Search"
 msgstr "Търсене"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.GB_SEARCH.FixedLine.Text
+#, fuzzy
 msgid  "Search in"
 msgstr "Търсене в"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.FT_SEARCH_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Name"
 msgstr "~Име"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.FT_SEARCH.FixedText.Text
+#, fuzzy
 msgid  "Type"
 msgstr "Тип"
 
@@ -2948,66 +3194,82 @@ msgid  "~And"
 msgstr ""
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.RB_OR.RadioButton.Text
+#, fuzzy
 msgid  "~Or"
 msgstr "И~ли"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.RB_EXACT.RadioButton.Text
+#, fuzzy
 msgid  "E~xact"
 msgstr "Т~очно"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.FT_URL.FixedText.Text
+#, fuzzy
 msgid  "~Prefix"
 msgstr "~Префикс"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.FT_POSTFIX.FixedText.Text
+#, fuzzy
 msgid  "Su~ffix"
 msgstr "~Суфикс"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.FT_SEPARATOR.FixedText.Text
+#, fuzzy
 msgid  "~Separator"
 msgstr "~Разделител"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.FT_CASE.FixedText.Text
+#, fuzzy
 msgid  "~Case match"
 msgstr "~Регистър на буквите"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.ED_CASE.item1.StringList.item
+#, fuzzy
 msgid  "None"
 msgstr "Без"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.ED_CASE.item2.StringList.item
+#, fuzzy
 msgid  "Upper"
 msgstr "Горен"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.ED_CASE.item3.StringList.item
+#, fuzzy
 msgid  "Lower"
 msgstr "Долен"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.PB_NEW.PushButton.Text
+#, fuzzy
 msgid  "N~ew"
 msgstr "~Нов"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.PB_ADD.PushButton.Text
+#, fuzzy
 msgid  "~Add"
 msgstr "~Добавяне"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.PB_CHANGE.PushButton.Text
+#, fuzzy
 msgid  "~Modify"
 msgstr "~Промяна"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.PB_DELETE.PushButton.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "~Изтриване"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.MSG_MODIFY.String.Text
+#, fuzzy
 msgid  "Do you want to accept the current modification?"
 msgstr "Желаете ли текущите промени да бъдат приети?"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.TabPage.Text
+#, fuzzy
 msgid  "Security"
 msgstr "Сигурност"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FL_SEC_SECURITYOPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Security options and warnings"
 msgstr "Настройки и предупреждения за сигурността"
 
@@ -3016,22 +3278,27 @@ msgid  "Adjust security related options and define warnings for hidden informati
 msgstr ""
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.PB_SEC_SECURITYOPTIONS.PushButton.Text
+#, fuzzy
 msgid  "Options..."
 msgstr "Настройка..."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FL_SEC_PASSWORDS.FixedLine.Text
+#, fuzzy
 msgid  "Passwords for web connections"
 msgstr "Пароли за връзки с Уеб"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.CB_SEC_SAVEPASSWORDS.CheckBox.Text
+#, fuzzy
 msgid  "Persistently save passwords for web connections"
 msgstr "Постоянно съхраняване на пароли за връзки с Уеб"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.PB_SEC_CONNECTIONS.PushButton.Text
+#, fuzzy
 msgid  "Connections..."
 msgstr "Връзки..."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.CB_SEC_MASTERPASSWORD.CheckBox.Text
+#, fuzzy
 msgid  "Protected by a master password (recommended)"
 msgstr "Защита с главна парола (препоръчва се)"
 
@@ -3040,10 +3307,12 @@ msgid  "Passwords are protected by a master password. You will be asked to enter
 msgstr ""
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.PB_SEC_MASTERPASSWORD.PushButton.Text
+#, fuzzy
 msgid  "Master Password..."
 msgstr "Главна парола..."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FL_SEC_MACROSEC.FixedLine.Text
+#, fuzzy
 msgid  "Macro security"
 msgstr "Сигурност на макросите"
 
@@ -3052,6 +3321,7 @@ msgid  "Adjust the security level for executing macros and specify trusted macro
 msgstr ""
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.PB_SEC_MACROSEC.PushButton.Text
+#, fuzzy
 msgid  "Macro Security..."
 msgstr "Сигурност на макросите..."
 
@@ -3068,78 +3338,97 @@ msgid  "Please note that with Java\nyou disable Javascript as well.\n\nDo you st
 msgstr ""
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.CB_JSCPT_DISABLE.CheckBox.Text
+#, fuzzy
 msgid  "~Don't show warning again"
 msgstr "~Това предупреждение да не се показва повече"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_MAIL.FL_MAIL.FixedLine.Text
+#, fuzzy
 msgid  "Sending documents as e-mail attachments"
 msgstr "Документите се изпращат като прикрепени файлове"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_MAIL.FT_MAILERURL.FixedText.Text
+#, fuzzy
 msgid  "~E-mail program"
 msgstr "Програма за ~е-поща"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_MAIL.STR_DEFAULT_FILENAME.String.Text
+#, fuzzy
 msgid  "All files (*.*)"
 msgstr "Всички файлове (*.*)"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.TabPage.Text
+#, fuzzy
 msgid  "User Data"
 msgstr "Данни за потребител"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_COMPANY.FixedText.Text
+#, fuzzy
 msgid  "~Company"
 msgstr "~Компания"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_NAME.FixedText.Text
+#, fuzzy
 msgid  "First/Last ~name/Initials"
 msgstr "~Име/фамилия/инициали"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_NAME_RUSS.FixedText.Text
+#, fuzzy
 msgid  "Last Name/First name/Father's name/Initials"
 msgstr "Фамилия/име/презиме/инициали"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_NAME_EASTERN.FixedText.Text
+#, fuzzy
 msgid  "Last/First ~name/Initials"
 msgstr "~Име/фамилия/инициали"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_STREET.FixedText.Text
+#, fuzzy
 msgid  "~Street"
 msgstr "~Улица"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_STREET_RUSS.FixedText.Text
+#, fuzzy
 msgid  "Street/Apartment number"
 msgstr "Номер на улица/апартамент"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_CITY.FixedText.Text
+#, fuzzy
 msgid  "Zip/City"
 msgstr "Пощенски код/град"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_COUNTRY.FixedText.Text
+#, fuzzy
 msgid  "Country/Region"
 msgstr "Държава/област"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_TITLEPOS.FixedText.Text
+#, fuzzy
 msgid  "~Title/Position"
 msgstr "~Звание/длъжност"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_PHONE.FixedText.Text
+#, fuzzy
 msgid  "Tel. (Home/Work)"
 msgstr "Тел. (домашен/служебен)"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_FAXMAIL.FixedText.Text
+#, fuzzy
 msgid  "Fa~x / E-mail"
 msgstr "~Факс/е-поща"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.GB_ADDRESS.FixedLine.Text
+#, fuzzy
 msgid  "Address "
 msgstr "Адрес "
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.CB_USEDATA.CheckBox.Text
+#, fuzzy
 msgid  "Use data for document properties"
 msgstr "Лични данни в свойствата на документа"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.STR_US_STATE.String.Text
+#, fuzzy
 msgid  "City/State/Zip"
 msgstr "Град/щат/пощ. код"
 
@@ -3152,462 +3441,577 @@ msgid  "The User Data have been changed.\nDo you really want to change your User
 msgstr ""
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.FL_TREAT_AS_EQUAL.FixedLine.Text
+#, fuzzy
 msgid  "Treat as equal"
 msgstr "Третиране като равни"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_CASE.CheckBox.Text
+#, fuzzy
 msgid  "~uppercase/lowercase"
 msgstr "~горен/долен регистър"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_FULL_HALF_WIDTH.CheckBox.Text
+#, fuzzy
 msgid  "~full-width/half-width forms"
 msgstr "~форми с пълна/половин ширина"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_HIRAGANA_KATAKANA.CheckBox.Text
+#, fuzzy
 msgid  "~hiragana/katakana"
 msgstr "~хирагана/катакана"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_CONTRACTIONS.CheckBox.Text
+#, fuzzy
 msgid  "~contractions (yo-on, sokuon)"
 msgstr "~съкращения (йо-он, сокуон)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_MINUS_DASH_CHOON.CheckBox.Text
+#, fuzzy
 msgid  "~minus/dash/cho-on"
 msgstr "~минус/тире/чо-он"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_REPEAT_CHAR_MARKS.CheckBox.Text
+#, fuzzy
 msgid  "'re~peat character' marks"
 msgstr "маркери „повта~ряне на знак“"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_VARIANT_FORM_KANJI.CheckBox.Text
+#, fuzzy
 msgid  "~variant-form kanji (itaiji)"
 msgstr "~варианти канджи (итайджи)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_OLD_KANA_FORMS.CheckBox.Text
+#, fuzzy
 msgid  "~old Kana forms"
 msgstr "~стари форми на кана"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_DIZI_DUZU.CheckBox.Text
+#, fuzzy
 msgid  "~di/zi, du/zu"
 msgstr "~до/зи, ду/зу"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_BAVA_HAFA.CheckBox.Text
+#, fuzzy
 msgid  "~ba/va, ha/fa"
 msgstr "~ба/ва, ха/фа"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_TSITHICHI_DHIZI.CheckBox.Text
+#, fuzzy
 msgid  "~tsi/thi/chi, dhi/zi"
 msgstr "~тси/тхи/чи, дхи/зи"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_HYUFYU_BYUVYU.CheckBox.Text
+#, fuzzy
 msgid  "h~yu/fyu, byu/vyu"
 msgstr "х~иу/фиу, биу/виу"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_SESHE_ZEJE.CheckBox.Text
+#, fuzzy
 msgid  "~se/she, ze/je"
 msgstr "~се/ше, зе/йе"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_IAIYA.CheckBox.Text
+#, fuzzy
 msgid  "~ia/iya (piano/piyano)"
 msgstr "~иа/риа (пиано/пииано)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_KIKU.CheckBox.Text
+#, fuzzy
 msgid  "~ki/ku (tekisuto/tekusuto)"
 msgstr "~ки/ку (текисуто/текусуто)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_PROLONGED_SOUNDMARK.CheckBox.Text
+#, fuzzy
 msgid  "Prolon~ged vowels (ka-/kaa)"
 msgstr "Дъл~ги гласни (ка-/каа)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.FL_IGNORE.FixedLine.Text
+#, fuzzy
 msgid  "Ignore"
 msgstr "Игнориране"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_IGNORE_PUNCTUATION.CheckBox.Text
+#, fuzzy
 msgid  "Pu~nctuation characters"
 msgstr "Знаци за пу~нктуация"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_IGNORE_WHITESPACES.CheckBox.Text
+#, fuzzy
 msgid  "~Whitespace characters"
 msgstr "~Знаци за празнина"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_IGNORE_MIDDLE_DOT.CheckBox.Text
+#, fuzzy
 msgid  "Midd~le dots"
 msgstr "~Средна точка"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CheckBox.Text
+#, fuzzy
 msgid  "Searching in Japanese"
 msgstr "Търсене при японски"
 
 #: source/options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.FL_DEFTXTDIRECTION.FixedLine.Text
+#, fuzzy
 msgid  "Default text direction"
 msgstr "Подразбирана посока на текста"
 
 #: source/options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.RB_TXTDIR_LEFT2RIGHT.RadioButton.Text
+#, fuzzy
 msgid  "~Left-to-right"
 msgstr "От~ляво надясно"
 
 #: source/options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.RB_TXTDIR_RIGHT2LEFT.RadioButton.Text
+#, fuzzy
 msgid  "~Right-to-left"
 msgstr "От~дясно наляво"
 
 #: source/options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.FL_SHEETVIEW.FixedLine.Text
+#, fuzzy
 msgid  "Sheet view"
 msgstr "Изглед на лист"
 
 #: source/options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.CB_SHTVW_RIGHT2LEFT.CheckBox.Text
+#, fuzzy
 msgid  "Right-~to-left"
 msgstr "Отд~ясно наляво"
 
 #: source/options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.CB_SHTVW_CURRENTDOCONLY.CheckBox.Text
+#, fuzzy
 msgid  "~Current document only"
 msgstr "~Само за текущия документ"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.TabPage.Text
+#, fuzzy
 msgid  "Complex Text Layout"
 msgstr "Сложни писмености (CTL)"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FL_SEQUENCECHECKING.FixedLine.Text
+#, fuzzy
 msgid  "Sequence checking"
 msgstr "Проверка на поредици"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.CB_SEQUENCECHECKING.CheckBox.Text
+#, fuzzy
 msgid  "Use se~quence checking"
 msgstr "~Включена проверка на поредици"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.CB_RESTRICTED.CheckBox.Text
+#, fuzzy
 msgid  "Restricted"
 msgstr "Ограничаване"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.CB_TYPE_REPLACE.CheckBox.Text
+#, fuzzy
 msgid  "~Type and replace"
 msgstr "Въвеждане и ~замяна"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FL_CURSORCONTROL.FixedLine.Text
+#, fuzzy
 msgid  "Cursor control"
 msgstr "Управление на курсора"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FT_MOVEMENT.FixedText.Text
+#, fuzzy
 msgid  "Movement"
 msgstr "Движение"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.RB_MOVEMENT_LOGICAL.RadioButton.Text
+#, fuzzy
 msgid  "Lo~gical"
 msgstr "~Логическо"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.RB_MOVEMENT_VISUAL.RadioButton.Text
+#, fuzzy
 msgid  "~Visual"
 msgstr "В~изуално"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FL_GENERAL.FixedLine.Text
+#, fuzzy
 msgid  "General options"
 msgstr "Общи настройки"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FT_NUMERALS.FixedText.Text
+#, fuzzy
 msgid  "~Numerals"
 msgstr "~Числа"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.item1.StringList.item
+#, fuzzy
 msgid  "Arabic"
 msgstr "Арабски"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.item2.StringList.item
+#, fuzzy
 msgid  "Hindi"
 msgstr "Хинди"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.item3.StringList.item
+#, fuzzy
 msgid  "System"
 msgstr "От системата"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.item4.StringList.item
+#, fuzzy
 msgid  "Context"
 msgstr "Контекст"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FL_COLORSCHEME.FixedLine.Text
+#, fuzzy
 msgid  "Color scheme"
 msgstr "Цветова схема"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FT_COLORSCHEME.FixedText.Text
+#, fuzzy
 msgid  "Scheme"
 msgstr "Схема"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.PB_SAVESCHEME.PushButton.Text
+#, fuzzy
 msgid  "Save..."
 msgstr "Съхраняване..."
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.PB_DELETESCHEME.PushButton.Text
+#, fuzzy
 msgid  "Delete"
 msgstr "Изтриване"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FL_CUSTOMCOLORS.FixedLine.Text
+#, fuzzy
 msgid  "Custom colors"
 msgstr "Цветове по избор"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.ST_ON.String.Text
+#, fuzzy
 msgid  "On"
 msgstr "Включен"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.ST_UIELEM.String.Text
+#, fuzzy
 msgid  "User interface elements"
 msgstr "Елементи на потребителския интерфейс"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.ST_COLSET.String.Text
+#, fuzzy
 msgid  "Color setting"
 msgstr "Настройка за цвят"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.ST_PREVIEW.String.Text
+#, fuzzy
 msgid  "Preview"
 msgstr "Мостра"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_GENERAL.FixedText.Text
+#, fuzzy
 msgid  "General"
 msgstr "Общи"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_DOCCOLOR.FixedText.Text
+#, fuzzy
 msgid  "Document background"
 msgstr "Фон на документа"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_DOCBOUND.CheckBox.Text
+#, fuzzy
 msgid  "Text boundaries"
 msgstr "Граници на текста"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_APPBACKGROUND.FixedText.Text
+#, fuzzy
 msgid  "Application background"
 msgstr "Фон на приложението"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_OBJECTBOUNDARIES.CheckBox.Text
+#, fuzzy
 msgid  "Object boundaries"
 msgstr "Граници на обекта"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_TABLEBOUNDARIES.CheckBox.Text
+#, fuzzy
 msgid  "Table boundaries"
 msgstr "Граници на таблицата"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_FONTCOLOR.FixedText.Text
+#, fuzzy
 msgid  "Font color"
 msgstr "Цвят на шрифта"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_LINKS.CheckBox.Text
+#, fuzzy
 msgid  "Unvisited links"
 msgstr "Непосетени връзки"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_LINKSVISITED.CheckBox.Text
+#, fuzzy
 msgid  "Visited links"
 msgstr "Посетени връзки"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SPELL.FixedText.Text
+#, fuzzy
 msgid  "AutoSpellcheck"
 msgstr "Автопроверка на правописа"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SMARTTAGS.FixedText.Text
+#, fuzzy
 msgid  "Smart Tags"
 msgstr "Умни етикетчета"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITER.FixedText.Text
+#, fuzzy
 msgid  "Text Document"
 msgstr "Текстов документ"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERTEXTGRID.FixedText.Text
+#, fuzzy
 msgid  "Grid"
 msgstr "Мрежа"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_WRITERFIELDSHADINGS.CheckBox.Text
+#, fuzzy
 msgid  "Field shadings"
 msgstr "Фон за полета"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_WRITERIDXSHADINGS.CheckBox.Text
+#, fuzzy
 msgid  "Index and table shadings"
 msgstr "Фон за указатели и таблици"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERSCRIPTINDICATOR.FixedText.Text
+#, fuzzy
 msgid  "Script indicator"
 msgstr "Индикатор за скрипт"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_WRITERSECTIONBOUNDARIES.CheckBox.Text
+#, fuzzy
 msgid  "Section boundaries"
 msgstr "Граници на раздел"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERPAGEBREAKS.FixedText.Text
+#, fuzzy
 msgid  "Page and column breaks"
 msgstr "Разделители на страници и колони"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERDIRECTCURSOR.FixedText.Text
+#, fuzzy
 msgid  "Direct cursor"
 msgstr "Свободен курсор"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTML.FixedText.Text
+#, fuzzy
 msgid  "HTML Document"
 msgstr "Документ на HTML"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTMLSGML.FixedText.Text
+#, fuzzy
 msgid  "SGML syntax highlighting"
 msgstr "Синтактично осветяване за SGML"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTMLCOMMENT.FixedText.Text
+#, fuzzy
 msgid  "Comment highlighting"
 msgstr "Осветяване на коментарите"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTMLKEYWORD.FixedText.Text
+#, fuzzy
 msgid  "Keyword highlighting"
 msgstr "Осветяване на ключовите думи"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTMLUNKNOWN.FixedText.Text
+#, fuzzy
 msgid  "Text"
 msgstr "Текст"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALC.FixedText.Text
+#, fuzzy
 msgid  "Spreadsheet"
 msgstr "Електронна таблица"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCGRID.FixedText.Text
+#, fuzzy
 msgid  "Grid lines"
 msgstr "Линии от мрежата"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCPAGEBREAK.FixedText.Text
+#, fuzzy
 msgid  "Page breaks"
 msgstr "Разделители на страници"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCPAGEBREAKMANUAL.FixedText.Text
+#, fuzzy
 msgid  "Manual page breaks"
 msgstr "Ръчни разделители на страници"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCPAGEBREAKAUTO.FixedText.Text
+#, fuzzy
 msgid  "Automatic page breaks"
 msgstr "Автоматични разделители на страници"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCDETECTIVE.FixedText.Text
+#, fuzzy
 msgid  "Detective"
 msgstr "Детектив"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCDETECTIVEERROR.FixedText.Text
+#, fuzzy
 msgid  "Detective error"
 msgstr "Грешка от детектива"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCREFERENCE.FixedText.Text
+#, fuzzy
 msgid  "References"
 msgstr "Обръщения"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCNOTESBACKGROUND.FixedText.Text
+#, fuzzy
 msgid  "Notes background"
 msgstr "Фон на бележките"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_DRAW.FixedText.Text
+#, fuzzy
 msgid  "Drawing / Presentation"
 msgstr "Рисунка/презентация"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_DRAWGRID.FixedText.Text
+#, fuzzy
 msgid  "Grid"
 msgstr "Мрежа"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASIC.FixedText.Text
+#, fuzzy
 msgid  "Basic Syntax Highlighting"
 msgstr "Синтактично осветяване за Basic"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICIDENTIFIER.FixedText.Text
+#, fuzzy
 msgid  "Identifier"
 msgstr "Идентификатор"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICCOMMENT.FixedText.Text
+#, fuzzy
 msgid  "Comment"
 msgstr "Коментар"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICNUMBER.FixedText.Text
+#, fuzzy
 msgid  "Number"
 msgstr "Число"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICSTRING.FixedText.Text
+#, fuzzy
 msgid  "String"
 msgstr "Низ"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICOPERATOR.FixedText.Text
+#, fuzzy
 msgid  "Operator"
 msgstr "Операция"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICKEYWORD.FixedText.Text
+#, fuzzy
 msgid  "Reserved expression"
 msgstr "Запазен израз"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICERROR.FixedText.Text
+#, fuzzy
 msgid  "Error"
 msgstr "Грешка"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQL_COMMAND.FixedText.Text
+#, fuzzy
 msgid  "SQL Syntax Highlighting"
 msgstr "Синтактично осветяване за SQL"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLIDENTIFIER.FixedText.Text
+#, fuzzy
 msgid  "Identifier"
 msgstr "Идентификатор"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLNUMBER.FixedText.Text
+#, fuzzy
 msgid  "Number"
 msgstr "Число"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLSTRING.FixedText.Text
+#, fuzzy
 msgid  "String"
 msgstr "Низ"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLOPERATOR.FixedText.Text
+#, fuzzy
 msgid  "Operator"
 msgstr "Операция"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLKEYWORD.FixedText.Text
+#, fuzzy
 msgid  "Keyword"
 msgstr "Ключова дума"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLPARAMETER.FixedText.Text
+#, fuzzy
 msgid  "Parameter"
 msgstr "Параметър"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLCOMMENT.FixedText.Text
+#, fuzzy
 msgid  "Comment"
 msgstr "Коментар"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.ST_EXTENSION.String.Text
+#, fuzzy
 msgid  "Colorsettings of the Extensions"
 msgstr "Цветови настройки на разширенията"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.ST_SPELL_CHECK_HIGHLIGHTING.String.Text
+#, fuzzy
 msgid  "Spell check highlighting"
 msgstr "Осветяване на проверката на правописа"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.ST_GRAMMAR_CHECK_HIGHLIGHTING.String.Text
+#, fuzzy
 msgid  "Grammar check highlighting"
 msgstr "Осветяване на проверката на граматика"
 
 #: source/options/optcolor.src#RID_SVXQB_DELETE_COLOR_CONFIG.QueryBox.Message
+#, fuzzy
 msgid  "Do you really want to delete the color scheme?"
 msgstr "Наистина ли желаете цветовата схема да бъде изтрита?"
 
 #: source/options/optcolor.src#RID_SVXSTR_COLOR_CONFIG_DELETE.String.Text
+#, fuzzy
 msgid  "Color Scheme Deletion"
 msgstr "Изтриване на цветова схема"
 
 #: source/options/optcolor.src#RID_SVXSTR_COLOR_CONFIG_SAVE1.String.Text
+#, fuzzy
 msgid  "Save scheme"
 msgstr "Съхраняване на схема"
 
 #: source/options/optcolor.src#RID_SVXSTR_COLOR_CONFIG_SAVE2.String.Text
+#, fuzzy
 msgid  "Name of color scheme"
 msgstr "Име на цветова схема"
 
 #: source/options/doclinkdialog.src#DLG_DOCUMENTLINK.FT_URL.FixedText.Text
+#, fuzzy
 msgid  "~Database file"
 msgstr "Файл на ~БД"
 
 #: source/options/doclinkdialog.src#DLG_DOCUMENTLINK.PB_BROWSEFILE.PushButton.Text
+#, fuzzy
 msgid  "~Browse..."
 msgstr "~Преглед..."
 
 #: source/options/doclinkdialog.src#DLG_DOCUMENTLINK.FT_NAME.FixedText.Text
+#, fuzzy
 msgid  "Registered ~name"
 msgstr "Регистрирано ~име"
 
 #: source/options/doclinkdialog.src#DLG_DOCUMENTLINK.STR_EDIT_LINK.String.Text
+#, fuzzy
 msgid  "Edit Database Link"
 msgstr "Редактиране на връзка към БД"
 
 #: source/options/doclinkdialog.src#DLG_DOCUMENTLINK.STR_NEW_LINK.String.Text
+#, fuzzy
 msgid  "Create Database Link"
 msgstr "Създаване на връзка към БД"
 
@@ -3624,18 +4028,22 @@ msgid  "The name '$file$' is already used for another database.\nPlease choose a
 msgstr ""
 
 #: source/options/doclinkdialog.src#QUERY_DELETE_CONFIRM.QueryBox.Message
+#, fuzzy
 msgid  "Do you want to delete the entry?"
 msgstr "Желаете ли записът да бъде изтрит?"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.ModalDialog.Text
+#, fuzzy
 msgid  "Options"
 msgstr "Настройки"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.PB_BACK.PushButton.Text
+#, fuzzy
 msgid  "~Back"
 msgstr "На~зад"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.ST_LOAD_ERROR.String.Text
+#, fuzzy
 msgid  "The selected module could not be loaded."
 msgstr "Зареждането на избрания модул бе невъзможно."
 
@@ -3688,442 +4096,552 @@ msgid  "This is where you define general settings for opening and saving documen
 msgstr ""
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.0.ItemList.item
+#, fuzzy
 msgid  "%PRODUCTNAME"
 msgstr "%PRODUCTNAME"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SFXPAGE_GENERAL.ItemList.item
+#, fuzzy
 msgid  "User Data"
 msgstr "Данни за потребител"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.OFA_TP_MISC.ItemList.item
+#, fuzzy
 msgid  "General"
 msgstr "Общи"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.OFA_TP_MEMORY.ItemList.item
+#, fuzzy
 msgid  "Memory"
 msgstr "Памет"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.OFA_TP_VIEW.ItemList.item
+#, fuzzy
 msgid  "View"
 msgstr "Изглед"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SFXPAGE_PRINTOPTIONS.ItemList.item
+#, fuzzy
 msgid  "Print"
 msgstr "Печат"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SFXPAGE_PATH.ItemList.item
+#, fuzzy
 msgid  "Paths"
 msgstr "Пътища"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_COLOR.ItemList.item
+#, fuzzy
 msgid  "Colors"
 msgstr "Цветове"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVX_FONT_SUBSTITUTION.ItemList.item
+#, fuzzy
 msgid  "Fonts"
 msgstr "Шрифтове"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_INET_SECURITY.ItemList.item
+#, fuzzy
 msgid  "Security"
 msgstr "Сигурност"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_COLORCONFIG.ItemList.item
+#, fuzzy
 msgid  "Appearance"
 msgstr "Външен вид"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_ACCESSIBILITYCONFIG.ItemList.item
+#, fuzzy
 msgid  "Accessibility"
 msgstr "Достъпност"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_OPTIONS_JAVA.ItemList.item
+#, fuzzy
 msgid  "Java"
 msgstr "Java"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_SSO.ItemList.item
+#, fuzzy
 msgid  "Network Identity"
 msgstr "Мрежова самоличност"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_ONLINEUPDATE.ItemList.item
+#, fuzzy
 msgid  "Online Update"
 msgstr "Обновяване по Интернет"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.0.ItemList.item
+#, fuzzy
 msgid  "Language Settings"
 msgstr "Езикови настройки"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.OFA_TP_LANGUAGES.ItemList.item
+#, fuzzy
 msgid  "Languages"
 msgstr "Езици"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.RID_SFXPAGE_LINGU.ItemList.item
+#, fuzzy
 msgid  "Writing Aids"
 msgstr "Помощ при писане"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.RID_SVXPAGE_JSEARCH_OPTIONS.ItemList.item
+#, fuzzy
 msgid  "Searching in Japanese"
 msgstr "Търсене при японски"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.RID_SVXPAGE_ASIAN_LAYOUT.ItemList.item
+#, fuzzy
 msgid  "Asian Layout"
 msgstr "Азиатски езици"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.RID_SVXPAGE_OPTIONS_CTL.ItemList.item
+#, fuzzy
 msgid  "Complex Text Layout"
 msgstr "Сложни писмености"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_INET_DLG.0.ItemList.item
+#, fuzzy
 msgid  "Internet"
 msgstr "Интернет"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_INET_DLG.RID_SVXPAGE_INET_PROXY.ItemList.item
+#, fuzzy
 msgid  "Proxy"
 msgstr "Прокси"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_INET_DLG.RID_SVXPAGE_INET_SEARCH.ItemList.item
+#, fuzzy
 msgid  "Search"
 msgstr "Търсене"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_INET_DLG.RID_SVXPAGE_INET_MAIL.ItemList.item
+#, fuzzy
 msgid  "E-mail"
 msgstr "Е-поща"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.0.ItemList.item
+#, fuzzy
 msgid  "%PRODUCTNAME Writer"
 msgstr "%PRODUCTNAME Writer"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_OPTLOAD_PAGE.ItemList.item
+#, fuzzy
 msgid  "General"
 msgstr "Общи"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_CONTENT_OPT.ItemList.item
+#, fuzzy
 msgid  "View"
 msgstr "Изглед"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_OPTSHDWCRSR.ItemList.item
+#, fuzzy
 msgid  "Formatting Aids"
 msgstr "Помощ при форматиране"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SVXPAGE_GRID.ItemList.item
+#, fuzzy
 msgid  "Grid"
 msgstr "Мрежа"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_STD_FONT.ItemList.item
+#, fuzzy
 msgid  "Basic Fonts (Western)"
 msgstr "Основни шрифтове (западни)"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_STD_FONT_CJK.ItemList.item
+#, fuzzy
 msgid  "Basic Fonts (Asian)"
 msgstr "Основни шрифтове (азиатски)"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_STD_FONT_CTL.ItemList.item
+#, fuzzy
 msgid  "Basic Fonts (CTL)"
 msgstr "Основни шрифтове (CTL)"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_OPTPRINT_PAGE.ItemList.item
+#, fuzzy
 msgid  "Print"
 msgstr "Печат"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_OPTTABLE_PAGE.ItemList.item
+#, fuzzy
 msgid  "Table"
 msgstr "Таблица"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_REDLINE_OPT.ItemList.item
+#, fuzzy
 msgid  "Changes"
 msgstr "Промени"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_OPTCOMPATIBILITY_PAGE.ItemList.item
+#, fuzzy
 msgid  "Compatibility"
 msgstr "Съвместимост"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_OPTCAPTION_PAGE.ItemList.item
+#, fuzzy
 msgid  "AutoCaption"
 msgstr "Автонадпис"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_MAILCONFIG.ItemList.item
+#, fuzzy
 msgid  "Mail Merge E-mail"
 msgstr "Циркулярни писма по е-поща"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.0.ItemList.item
+#, fuzzy
 msgid  "%PRODUCTNAME Writer/Web"
 msgstr "%PRODUCTNAME Writer/Web"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_HTML_CONTENT_OPT.ItemList.item
+#, fuzzy
 msgid  "View"
 msgstr "Изглед"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_HTML_OPTSHDWCRSR.ItemList.item
+#, fuzzy
 msgid  "Formatting Aids"
 msgstr "Помощ при форматиране"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_HTML_OPTGRID_PAGE.ItemList.item
+#, fuzzy
 msgid  "Grid"
 msgstr "Мрежа"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_HTML_OPTPRINT_PAGE.ItemList.item
+#, fuzzy
 msgid  "Print"
 msgstr "Печат"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_HTML_OPTTABLE_PAGE.ItemList.item
+#, fuzzy
 msgid  "Table"
 msgstr "Таблица"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_BACKGROUND.ItemList.item
+#, fuzzy
 msgid  "Background"
 msgstr "Фон"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SM_EDITOPTIONS.0.ItemList.item
+#, fuzzy
 msgid  "%PRODUCTNAME Math"
 msgstr "%PRODUCTNAME Math"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SM_EDITOPTIONS.SID_SM_TP_PRINTOPTIONS.ItemList.item
+#, fuzzy
 msgid  "Settings"
 msgstr "Настройки"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.0.ItemList.item
+#, fuzzy
 msgid  "%PRODUCTNAME Calc"
 msgstr "%PRODUCTNAME Calc"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.SID_SC_TP_LAYOUT.ItemList.item
+#, fuzzy
 msgid  "General"
 msgstr "Общи"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.SID_SC_TP_CONTENT.ItemList.item
+#, fuzzy
 msgid  "View"
 msgstr "Изглед"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.RID_OFA_TP_INTERNATIONAL.ItemList.item
+#, fuzzy
 msgid  "International"
 msgstr "Международни"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.SID_SC_TP_CALC.ItemList.item
+#, fuzzy
 msgid  "Calculate"
 msgstr "Изчисляване"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.SID_SC_TP_USERLISTS.ItemList.item
+#, fuzzy
 msgid  "Sort Lists"
 msgstr "Списъци за сортиране"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.SID_SC_TP_CHANGES.ItemList.item
+#, fuzzy
 msgid  "Changes"
 msgstr "Промени"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.SID_SC_TP_GRID.ItemList.item
+#, fuzzy
 msgid  "Grid"
 msgstr "Мрежа"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.RID_SC_TP_PRINT.ItemList.item
+#, fuzzy
 msgid  "Print"
 msgstr "Печат"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_EDITOPTIONS.0.ItemList.item
+#, fuzzy
 msgid  "%PRODUCTNAME Impress"
 msgstr "%PRODUCTNAME Impress"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_EDITOPTIONS.SID_SI_TP_MISC.ItemList.item
+#, fuzzy
 msgid  "General"
 msgstr "Общи"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_EDITOPTIONS.SID_SI_TP_CONTENTS.ItemList.item
+#, fuzzy
 msgid  "View"
 msgstr "Изглед"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_EDITOPTIONS.SID_SI_TP_SNAP.ItemList.item
+#, fuzzy
 msgid  "Grid"
 msgstr "Мрежа"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_EDITOPTIONS.SID_SI_TP_PRINT.ItemList.item
+#, fuzzy
 msgid  "Print"
 msgstr "Печат"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_GRAPHIC_OPTIONS.0.ItemList.item
+#, fuzzy
 msgid  "%PRODUCTNAME Draw"
 msgstr "%PRODUCTNAME Draw"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_GRAPHIC_OPTIONS.SID_SD_TP_MISC.ItemList.item
+#, fuzzy
 msgid  "General"
 msgstr "Общи"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_GRAPHIC_OPTIONS.SID_SD_TP_CONTENTS.ItemList.item
+#, fuzzy
 msgid  "View"
 msgstr "Изглед"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_GRAPHIC_OPTIONS.SID_SD_TP_SNAP.ItemList.item
+#, fuzzy
 msgid  "Grid"
 msgstr "Мрежа"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_GRAPHIC_OPTIONS.SID_SD_TP_PRINT.ItemList.item
+#, fuzzy
 msgid  "Print"
 msgstr "Печат"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SCH_EDITOPTIONS.0.ItemList.item
+#, fuzzy
 msgid  "Charts"
 msgstr "Диаграми"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SCH_EDITOPTIONS.RID_OPTPAGE_CHART_DEFCOLORS.ItemList.item
+#, fuzzy
 msgid  "Default Colors"
 msgstr "Подразбирани цветове"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.0.ItemList.item
+#, fuzzy
 msgid  "Load/Save"
 msgstr "Зареждане/съхраняване"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.RID_SFXPAGE_SAVE.ItemList.item
+#, fuzzy
 msgid  "General"
 msgstr "Общи"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.SID_OPTFILTER_MSOFFICE.ItemList.item
+#, fuzzy
 msgid  "VBA Properties"
 msgstr "Настройки за VBA"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.RID_OFAPAGE_MSFILTEROPT2.ItemList.item
+#, fuzzy
 msgid  "Microsoft Office"
 msgstr "Microsoft Office"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.RID_OFAPAGE_HTMLOPT.ItemList.item
+#, fuzzy
 msgid  "HTML Compatibility"
 msgstr "Съвместимост за HTML"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SB_STARBASEOPTIONS.0.ItemList.item
+#, fuzzy
 msgid  "%PRODUCTNAME Base"
 msgstr "%PRODUCTNAME Base"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SB_STARBASEOPTIONS.SID_SB_CONNECTIONPOOLING.ItemList.item
+#, fuzzy
 msgid  "Connections"
 msgstr "Връзки"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SB_STARBASEOPTIONS.SID_SB_DBREGISTEROPTIONS.ItemList.item
+#, fuzzy
 msgid  "Databases"
 msgstr "Бази от данни"
 
 #: source/options/treeopt.src#RID_RIDER_SLL_SITE.String.Text
+#, fuzzy
 msgid  "Site certificates"
 msgstr "Сертификати на сайтове"
 
 #: source/options/treeopt.src#RID_RIDER_SLL_PERSONAL.String.Text
+#, fuzzy
 msgid  "Personal certificates"
 msgstr "Лични сертификати"
 
 #: source/options/optmemory.src#OFA_TP_MEMORY.GB_UNDO.FixedLine.Text
+#, fuzzy
 msgid  "Undo"
 msgstr "Отмяна"
 
 #: source/options/optmemory.src#OFA_TP_MEMORY.FT_UNDO.FixedText.Text
+#, fuzzy
 msgid  "Number of steps"
 msgstr "Брой стъпки"
 
 #: source/options/optmemory.src#OFA_TP_MEMORY.GB_GRAPHICCACHE.FixedLine.Text
+#, fuzzy
 msgid  "Graphics cache"
 msgstr "Графичен кеш"
 
 #: source/options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICCACHE.FixedText.Text
+#, fuzzy
 msgid  "Use for %PRODUCTNAME"
 msgstr "Използване за %PRODUCTNAME"
 
 #: source/options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICCACHE_UNIT.FixedText.Text
+#, fuzzy
 msgid  "MB"
 msgstr "МБ"
 
 #: source/options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICOBJECTCACHE.FixedText.Text
+#, fuzzy
 msgid  "Memory per object"
 msgstr "Памет за един обект"
 
 #: source/options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICOBJECTCACHE_UNIT.FixedText.Text
+#, fuzzy
 msgid  "MB"
 msgstr "МБ"
 
 #: source/options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICOBJECTTIME.FixedText.Text
+#, fuzzy
 msgid  "Remove from memory after"
 msgstr "Премахване от паметта след"
 
 #: source/options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICOBJECTTIME_UNIT.FixedText.Text
+#, fuzzy
 msgid  "hh:mm"
 msgstr "чч:мм"
 
 #: source/options/optmemory.src#OFA_TP_MEMORY.GB_OLECACHE.FixedLine.Text
+#, fuzzy
 msgid  "Cache for inserted objects"
 msgstr "Кеш за вмъкнати обекти"
 
 #: source/options/optmemory.src#OFA_TP_MEMORY.FT_OLECACHE.FixedText.Text
+#, fuzzy
 msgid  "Number of objects"
 msgstr "Брой обекти"
 
 #: source/options/optmemory.src#OFA_TP_MEMORY.FL_QUICKLAUNCH.FixedLine.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Quickstarter"
 msgstr "%PRODUCTNAME Quickstarter"
 
 #: source/options/optmemory.src#OFA_TP_MEMORY.CB_QUICKLAUNCH.CheckBox.Text
+#, fuzzy
 msgid  "Load %PRODUCTNAME during system start-up"
 msgstr "Зареждане на %PRODUCTNAME при стартиране на системата"
 
 #: source/options/optmemory.src#OFA_TP_MEMORY.STR_QUICKLAUNCH_UNX.String.Text
+#, fuzzy
 msgid  "Enable systray Quickstarter"
 msgstr "Икона за бързо стартиране"
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.TabPage.Text
+#, fuzzy
 msgid  "Java"
 msgstr "Java"
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.FL_JAVA.FixedLine.Text
+#, fuzzy
 msgid  "Java options"
 msgstr "Настройки за Java"
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.CB_JAVA_ENABLE.CheckBox.Text
+#, fuzzy
 msgid  "~Use a Java runtime environment"
 msgstr "~Използване на обкръжение за изпълнение на Java"
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.FT_JAVA_FOUND.FixedText.Text
+#, fuzzy
 msgid  "~Java runtime environments (JRE) already installed:"
 msgstr "Вече е инсталирано обкръжение за изпълнение на ~Java (JRE):"
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.PB_ADD.PushButton.Text
+#, fuzzy
 msgid  "~Add..."
 msgstr "~Добавяне..."
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.PB_PARAMETER.PushButton.Text
+#, fuzzy
 msgid  "~Parameters..."
 msgstr "~Параметри..."
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.PB_CLASSPATH.PushButton.Text
+#, fuzzy
 msgid  "~Class Path..."
 msgstr "~Път за класове..."
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_INSTALLED_IN.String.Text
+#, fuzzy
 msgid  "Location: "
 msgstr "Местонахождение: "
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_ACCESSIBILITY.String.Text
+#, fuzzy
 msgid  "with accessibility support"
 msgstr "с поддръжка за достъпност"
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_ADDDLGTEXT.String.Text
+#, fuzzy
 msgid  "Select a Java Runtime Environment"
 msgstr "Избор на обкръжение за изпълнение на Java"
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_HEADER_VENDOR.String.Text
+#, fuzzy
 msgid  "Vendor"
 msgstr "Производител"
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_HEADER_VERSION.String.Text
+#, fuzzy
 msgid  "Version"
 msgstr "Версия"
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_HEADER_FEATURES.String.Text
+#, fuzzy
 msgid  "Features"
 msgstr "Възможности"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.ModalDialog.Text
+#, fuzzy
 msgid  "Java Start Parameters"
 msgstr "Начални параметри за Java"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.FT_PARAMETER.FixedText.Text
+#, fuzzy
 msgid  "Java start ~parameter"
 msgstr "Начални ~параметри на Java"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.PB_ASSIGN.PushButton.Text
+#, fuzzy
 msgid  "~Assign"
 msgstr "~Приписване"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.FT_ASSIGNED.FixedText.Text
+#, fuzzy
 msgid  "Assig~ned start parameters"
 msgstr "~Зададени начални параметри"
 
@@ -4132,26 +4650,32 @@ msgid  "For example: -Dmyprop=c:\program files\java"
 msgstr ""
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.PB_REMOVE.PushButton.Text
+#, fuzzy
 msgid  "~Remove"
 msgstr "~Премахване"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.ModalDialog.Text
+#, fuzzy
 msgid  "Class Path"
 msgstr "Път за класове"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.FT_PATH.FixedText.Text
+#, fuzzy
 msgid  "A~ssigned folders and archives"
 msgstr "~Зададени папки и архиви"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.PB_ADDARCHIVE.PushButton.Text
+#, fuzzy
 msgid  "~Add Archive..."
 msgstr "~Добавяне на архив..."
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.PB_ADDPATH.PushButton.Text
+#, fuzzy
 msgid  "Add ~Folder"
 msgstr "Добавяне на ~папка"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.PB_REMOVE_PATH.PushButton.Text
+#, fuzzy
 msgid  "~Remove"
 msgstr "~Премахване"
 
@@ -4172,110 +4696,137 @@ msgid  "You have to restart %PRODUCTNAME so the new or modified values can take 
 msgstr ""
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FL_POOLING.FixedLine.Text
+#, fuzzy
 msgid  "Connection pool"
 msgstr "Набор от връзки"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.CB_POOL_CONNS.CheckBox.Text
+#, fuzzy
 msgid  "Connection pooling enabled"
 msgstr "Разрешено резервиране на връзки"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_DRIVERS.FixedText.Text
+#, fuzzy
 msgid  "Drivers known in %PRODUCTNAME"
 msgstr "Известни драйвери в %PRODUCTNAME"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_DRIVERLABEL.FixedText.Text
+#, fuzzy
 msgid  "Current driver:"
 msgstr "Текущ драйвер:"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.CB_DRIVERPOOLING.CheckBox.Text
+#, fuzzy
 msgid  "Enable pooling for this driver"
 msgstr "Разрешено резервиране за този драйвер"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_TIMEOUT.FixedText.Text
+#, fuzzy
 msgid  "Timeout (seconds)"
 msgstr "Максимално изчакване (секунди)"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_DRIVER_NAME.String.Text
+#, fuzzy
 msgid  "Driver name"
 msgstr "Име на драйвер"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOLED_FLAG.String.Text
+#, fuzzy
 msgid  "Pool"
 msgstr "Набор"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOL_TIMEOUT.String.Text
+#, fuzzy
 msgid  "Timeout"
 msgstr "Максимално изчакване"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_YES.String.Text
+#, fuzzy
 msgid  "Yes"
 msgstr "Да"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_NO.String.Text
+#, fuzzy
 msgid  "No"
 msgstr "Не"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.LB_LOAD.FixedLine.Text
+#, fuzzy
 msgid  "Load"
 msgstr "Зареждане"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.CB_LOAD_SETTINGS.CheckBox.Text
+#, fuzzy
 msgid  "Load user-specific settings with the document"
 msgstr "Зареждане на потребителските настройки с документа"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.CB_LOAD_DOCPRINTER.CheckBox.Text
+#, fuzzy
 msgid  "Load printer settings with the document"
 msgstr "Зареждане на настройките на принтера с документа"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.GB_SAVE.FixedLine.Text
+#, fuzzy
 msgid  "Save"
 msgstr "Съхраняване"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.BTN_DOCINFO.CheckBox.Text
+#, fuzzy
 msgid  "~Edit document properties before saving"
 msgstr "~Редактиране на свойствата преди съхраняване"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.BTN_BACKUP.CheckBox.Text
+#, fuzzy
 msgid  "Al~ways create backup copy"
 msgstr "Ре~зервни копия - винаги"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.BTN_AUTOSAVE.CheckBox.Text
+#, fuzzy
 msgid  "Save ~AutoRecovery information every"
 msgstr "Съхр. информацията за ~автовъзстановяване през"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.FT_MINUTE.FixedText.Text
+#, fuzzy
 msgid  "Minutes"
 msgstr "минути"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.BTN_RELATIVE_FSYS.CheckBox.Text
+#, fuzzy
 msgid  "Save URLs relative to file system"
 msgstr "Съхраняване на относителни URL спрямо системата"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.BTN_RELATIVE_INET.CheckBox.Text
+#, fuzzy
 msgid  "Save URLs relative to internet"
 msgstr "Съхраняване на относителни URL спрямо Интернет"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.FL_FILTER.FixedLine.Text
+#, fuzzy
 msgid  "Default file format and ODF settings"
 msgstr "Подразбиран файлов формат и настройки на ODF"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.FT_ODF_VERSION.FixedText.Text
+#, fuzzy
 msgid  "ODF format version"
 msgstr "Версия на ODF"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.LB_ODF_VERSION.2.StringList.item
+#, fuzzy
 msgid  "1.0/1.1"
 msgstr "1.0/1.1"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.LB_ODF_VERSION.4.StringList.item
+#, fuzzy
 msgid  "1.2"
 msgstr "1.2"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.LB_ODF_VERSION.0x7fffffff.StringList.item
+#, fuzzy
 msgid  "1.2 Extended (recommended)"
 msgstr "1.2 разширен (препоръчва се)"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.BTN_NOPRETTYPRINTING.CheckBox.Text
+#, fuzzy
 msgid  "Size optimization for ODF format"
 msgstr "Оптимизация на размера за файлов формат ODF"
 
@@ -4284,38 +4835,47 @@ msgid  "Warn when not saving in ODF or default format"
 msgstr ""
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.FT_APP.FixedText.Text
+#, fuzzy
 msgid  "D~ocument type"
 msgstr "Тип на д~окумента"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.FT_FILTER.FixedText.Text
+#, fuzzy
 msgid  "Always sa~ve as"
 msgstr "Съхраня~ване винаги като"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_WRITER.StringList.item
+#, fuzzy
 msgid  "Text document"
 msgstr "Текстов документ"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_WRITER_WEB.StringList.item
+#, fuzzy
 msgid  "HTML document"
 msgstr "Документ на HTML"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_WRITER_GLOBAL.StringList.item
+#, fuzzy
 msgid  "Master document"
 msgstr "Главен документ"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_CALC.StringList.item
+#, fuzzy
 msgid  "Spreadsheet"
 msgstr "Електронна таблица"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_IMPRESS.StringList.item
+#, fuzzy
 msgid  "Presentation"
 msgstr "Презентация"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_DRAW.StringList.item
+#, fuzzy
 msgid  "Drawing"
 msgstr "Рисунка"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_MATH.StringList.item
+#, fuzzy
 msgid  "Formula"
 msgstr "Формула"
 
@@ -4328,14 +4888,17 @@ msgid  "Using "%1" as default file format may cause information loss.\n"
 msgstr ""
 
 #: source/options/optsave.src#TEXT_SAVEPAGE.#define.Text
+#, fuzzy
 msgid  "Save"
 msgstr "Съхраняване"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.TabPage.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Improvement Program"
 msgstr "Програма за подобряване на %PRODUCTNAME "
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FL_IMPROVE.FixedLine.Text
+#, fuzzy
 msgid  "Improvement Program"
 msgstr "Програма за подобряване"
 
@@ -4348,110 +4911,137 @@ msgid  "~Yes, I am willing to participate in the %PRODUCTNAME Improvement Progra
 msgstr ""
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.RB_NO.RadioButton.Text
+#, fuzzy
 msgid  "~No, I do not wish to participate"
 msgstr "~Не, не желая да участвам"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FL_DATA.FixedLine.Text
+#, fuzzy
 msgid  "Tracked Data"
 msgstr "Проследени данни"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FT_NR_REPORTS.FixedText.Text
+#, fuzzy
 msgid  "Number of reports sent:"
 msgstr "Брой на изпратени справки:"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FT_NR_ACTIONS.FixedText.Text
+#, fuzzy
 msgid  "Number of tracked actions:"
 msgstr "Брой проследени действия:"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.PB_SHOWDATA.PushButton.Text
+#, fuzzy
 msgid  "~Show Data"
 msgstr "~Показване на данните"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.STR_INFO.String.Text
+#, fuzzy
 msgid  "Help Optimize the Quality of %PRODUCTNAME"
 msgstr "Помогнете за повишаване качеството на %PRODUCTNAME"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.STR_MOREINFO.String.Text
+#, fuzzy
 msgid  "More Information"
 msgstr "Повече информация"
 
 #: source/options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.ModalDialog.Text
+#, fuzzy
 msgid  "Stored Web Connection Information"
 msgstr "Съхранена информация за връзка с Уеб"
 
 #: source/options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.FI_NEVERSHOWN.FixedText.Text
+#, fuzzy
 msgid  "Web login information (passwords are never shown)"
 msgstr "Информация за влизане в уебсайтове (паролите не се показват)"
 
 #: source/options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.PB_REMOVE.PushButton.Text
+#, fuzzy
 msgid  "Remove"
 msgstr "Премахване"
 
 #: source/options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.PB_REMOVEALL.PushButton.Text
+#, fuzzy
 msgid  "Remove All"
 msgstr "Премахване на всичко"
 
 #: source/options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.PB_CHANGE.PushButton.Text
+#, fuzzy
 msgid  "Change Password..."
 msgstr "Промяна на паролата..."
 
 #: source/options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.PB_CLOSE.CancelButton.Text
+#, fuzzy
 msgid  "Close"
 msgstr "Затваряне"
 
 #: source/options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.STR_WEBSITE.String.Text
+#, fuzzy
 msgid  "Website"
 msgstr "Уебсайт"
 
 #: source/options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.STR_USERNAME.String.Text
+#, fuzzy
 msgid  "User name"
 msgstr "Потребителско име"
 
 #: source/options/optchart.src#RID_OPTPAGE_CHART_DEFCOLORS.TabPage.Text
+#, fuzzy
 msgid  "Default Colors"
 msgstr "Подразбирани цветове"
 
 #: source/options/optchart.src#RID_OPTPAGE_CHART_DEFCOLORS.FL_CHART_COLOR_LIST.FixedLine.Text
+#, fuzzy
 msgid  "Chart colors"
 msgstr "Цветове на диаграмата"
 
 #: source/options/optchart.src#RID_OPTPAGE_CHART_DEFCOLORS.FL_COLOR_BOX.FixedLine.Text
+#, fuzzy
 msgid  "Color table"
 msgstr "Таблица с цветове"
 
 #: source/options/optchart.src#RID_OPTPAGE_CHART_DEFCOLORS.PB_RESET_TO_DEFAULT.PushButton.Text
+#, fuzzy
 msgid  "~Default"
 msgstr "~По подразбиране"
 
 #: source/options/optchart.src#RID_SVXSTR_DIAGRAM_ROW.String.Text
+#, fuzzy
 msgid  "Data Series $(ROW)"
 msgstr "Серия от данни $(ROW)"
 
 #: source/options/optpath.src#RID_SFXPAGE_PATH.TabPage.Text
+#, fuzzy
 msgid  "Paths"
 msgstr "Пътища"
 
 #: source/options/optpath.src#RID_SFXPAGE_PATH.FT_TYPE.FixedText.Text
+#, fuzzy
 msgid  "Type"
 msgstr "Тип"
 
 #: source/options/optpath.src#RID_SFXPAGE_PATH.FT_PATH.FixedText.Text
+#, fuzzy
 msgid  "Path"
 msgstr "Път"
 
 #: source/options/optpath.src#RID_SFXPAGE_PATH.BTN_PATH.PushButton.Text
+#, fuzzy
 msgid  "~Edit..."
 msgstr "~Редактиране..."
 
 #: source/options/optpath.src#RID_SFXPAGE_PATH.BTN_STANDARD.PushButton.Text
+#, fuzzy
 msgid  "~Default"
 msgstr "~По подразбиране"
 
 #: source/options/optpath.src#RID_SFXPAGE_PATH.GB_STD.FixedLine.Text
+#, fuzzy
 msgid  "Paths used by %PRODUCTNAME"
 msgstr "Пътища, използвани от %PRODUCTNAME"
 
 #: source/options/optpath.src#RID_SFXPAGE_PATH.STR_MULTIPATHDLG.String.Text
+#, fuzzy
 msgid  "Edit Paths: %1"
 msgstr "Редактиране на пътища: %1"
 
@@ -4460,94 +5050,117 @@ msgid  "The configuration and mail directories must be specified as separate dir
 msgstr ""
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_CONFIG_DIR.String.Text
+#, fuzzy
 msgid  "Configuration"
 msgstr "Конфигурация"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_WORK_PATH.String.Text
+#, fuzzy
 msgid  "My Documents"
 msgstr "Моите документи"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_GRAPHICS_PATH.String.Text
+#, fuzzy
 msgid  "Graphics"
 msgstr "Графики"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_BITMAP_PATH.String.Text
+#, fuzzy
 msgid  "Icons"
 msgstr "Икони"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_PALETTE_PATH.String.Text
+#, fuzzy
 msgid  "Palettes"
 msgstr "Палитри"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_BACKUP_PATH.String.Text
+#, fuzzy
 msgid  "Backups"
 msgstr "Резервни копия"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_MODULES_PATH.String.Text
+#, fuzzy
 msgid  "Modules"
 msgstr "Модули"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_TEMPLATE_PATH.String.Text
+#, fuzzy
 msgid  "Templates"
 msgstr "Шаблони"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_GLOSSARY_PATH.String.Text
+#, fuzzy
 msgid  "AutoText"
 msgstr "Автотекст"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_DICTIONARY_PATH.String.Text
+#, fuzzy
 msgid  "Dictionaries"
 msgstr "Речници"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_HELP_DIR.String.Text
+#, fuzzy
 msgid  "Help"
 msgstr "Помощ"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_GALLERY_DIR.String.Text
+#, fuzzy
 msgid  "Gallery"
 msgstr "Галерия"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_STORAGE_DIR.String.Text
+#, fuzzy
 msgid  "Message Storage"
 msgstr "Хранилище за съобщения"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_TEMP_PATH.String.Text
+#, fuzzy
 msgid  "Temporary files"
 msgstr "Временни файлове"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_PLUGINS_PATH.String.Text
+#, fuzzy
 msgid  "Plug-ins"
 msgstr "Приставки"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_FAVORITES_DIR.String.Text
+#, fuzzy
 msgid  "Folder Bookmarks"
 msgstr "Показалци за папки"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_FILTER_PATH.String.Text
+#, fuzzy
 msgid  "Filters"
 msgstr "Филтри"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_ADDINS_PATH.String.Text
+#, fuzzy
 msgid  "Add-ins"
 msgstr "Приставки"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_USERCONFIG_PATH.String.Text
+#, fuzzy
 msgid  "User Configuration"
 msgstr "Потребителска конфигурация"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_USERDICTIONARY_DIR.String.Text
+#, fuzzy
 msgid  "User-defined dictionaries"
 msgstr "Потребителски речници"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_AUTOCORRECT_DIR.String.Text
+#, fuzzy
 msgid  "AutoCorrect"
 msgstr "Автокорекция"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_LINGUISTIC_DIR.String.Text
+#, fuzzy
 msgid  "Writing aids"
 msgstr "Помощ при писане"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FL_MISCELLANEOUS.FixedLine.Text
+#, fuzzy
 msgid  "Miscellaneous options"
 msgstr "Разни настройки"
 
@@ -4556,94 +5169,117 @@ msgid  "Support ~assistive technology tools (program restart required)"
 msgstr ""
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_TEXTSELECTION.CheckBox.Text
+#, fuzzy
 msgid  "Use te~xt selection cursor in read-only text documents"
 msgstr "~Маркиране на текст в документи, отворени само за четене"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_ANIMATED_GRAPHICS.CheckBox.Text
+#, fuzzy
 msgid  "Allow animated ~graphics"
 msgstr "Разрешаване на анимирани ~картинки"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_ANIMATED_TEXTS.CheckBox.Text
+#, fuzzy
 msgid  "Allow animated ~text"
 msgstr "Разрешаване на анимиран ~текст"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_TIPHELP.CheckBox.Text
+#, fuzzy
 msgid  "~Help tips disappear after "
 msgstr "~Съветите на помощта изчезват след "
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FT_TIPHELP.FixedText.Text
+#, fuzzy
 msgid  "seconds"
 msgstr "секунди"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FL_HC_OPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Options for high contrast appearance"
 msgstr "Настройки за изглед с висок контраст"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_AUTO_DETECT_HC.CheckBox.Text
+#, fuzzy
 msgid  "Automatically ~detect high contrast mode of operating system"
 msgstr "Автоматично ~засичане на контрастен режим на операционната система"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_AUTOMATIC_FONT_COLOR.CheckBox.Text
+#, fuzzy
 msgid  "Use automatic font ~color for screen display"
 msgstr "Автоматичен ~цвят на шрифта за екранна визуализация"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_PAGE_PREVIEWS.CheckBox.Text
+#, fuzzy
 msgid  "~Use system colors for page previews"
 msgstr "~Използване на системните цветове в мострите на страници"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.FL_HELP.FixedLine.Text
+#, fuzzy
 msgid  "Help"
 msgstr "Помощ"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.CB_TOOLTIP.CheckBox.Text
+#, fuzzy
 msgid  "~Tips"
 msgstr "~Подсказки"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.CB_EXTHELP.CheckBox.Text
+#, fuzzy
 msgid  "~Extended tips"
 msgstr "~Разширени подсказки"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.CB_HELPAGENT.CheckBox.Text
+#, fuzzy
 msgid  "~Help Agent"
 msgstr "~Асистент"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.PB_HELPAGENT_RESET.PushButton.Text
+#, fuzzy
 msgid  "~Reset Help Agent"
 msgstr "~Рестартиране на Асистента"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.FT_HELPFORMAT.FixedText.Text
+#, fuzzy
 msgid  "Help ~formatting"
 msgstr "~Форматиране на помощта"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.item1.StringList.item
+#, fuzzy
 msgid  "Default"
 msgstr "Подразбирани настройки"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.item2.StringList.item
+#, fuzzy
 msgid  "High Contrast #1"
 msgstr "Висок контраст #1"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.item3.StringList.item
+#, fuzzy
 msgid  "High Contrast #2"
 msgstr "Висок контраст #2"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.item4.StringList.item
+#, fuzzy
 msgid  "High Contrast Black"
 msgstr "Висок контраст - черно"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.item5.StringList.item
+#, fuzzy
 msgid  "High Contrast White"
 msgstr "Висок контраст - бяло"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.FL_FILEDLG.FixedLine.Text
+#, fuzzy
 msgid  "Open/Save dialogs"
 msgstr "Диалогови прозорци за отваряне/съхраняване"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.CB_FILEDLG.CheckBox.Text
+#, fuzzy
 msgid  "~Use %PRODUCTNAME dialogs"
 msgstr "~Диалогови прозорци на %PRODUCTNAME"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.FL_DOCSTATUS.FixedLine.Text
+#, fuzzy
 msgid  "Document status"
 msgstr "Статус на документа"
 
@@ -4652,226 +5288,282 @@ msgid  "~Printing sets "document modified" status"
 msgstr ""
 
 #: source/options/optgdlg.src#OFA_TP_MISC.FL_TWOFIGURE.FixedLine.Text
+#, fuzzy
 msgid  "Year (two digits)"
 msgstr "Двуцифрени години"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.FT_INTERPRET.FixedText.Text
+#, fuzzy
 msgid  "Interpret as years between"
 msgstr "Интерпретиране като години между"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.FT_TOYEAR.FixedText.Text
+#, fuzzy
 msgid  "and "
 msgstr "и "
 
 #: source/options/optgdlg.src#OFA_TP_MISC.FL_PRINTDLG.FixedLine.Text
+#, fuzzy
 msgid  "Print dialogs"
 msgstr "Диалогови прозорци за печат"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.CB_PRINTDLG.CheckBox.Text
+#, fuzzy
 msgid  "Use %PRODUCTNAME ~dialogs"
 msgstr "~Диалогови прозорци на %PRODUCTNAME"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FL_USERINTERFACE.FixedLine.Text
+#, fuzzy
 msgid  "User Interface"
 msgstr "Потребителски интерфейс"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FT_WINDOWSIZE.FixedText.Text
+#, fuzzy
 msgid  "Sc~aling"
 msgstr "М~ащабиране"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FT_ICONSIZESTYLE.FixedText.Text
+#, fuzzy
 msgid  "Icon size and style"
 msgstr "Размер и стил на иконите"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.STR_ICONSIZE.String.Text
+#, fuzzy
 msgid  "Icon size"
 msgstr "Размер на икона"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.item1.StringList.item
+#, fuzzy
 msgid  "Automatic"
 msgstr "Автоматично"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.item2.StringList.item
+#, fuzzy
 msgid  "Small"
 msgstr "Малки"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.item3.StringList.item
+#, fuzzy
 msgid  "Large"
 msgstr "Големи"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.item1.StringList.item
+#, fuzzy
 msgid  "Automatic"
 msgstr "Автоматично"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.item2.StringList.item
+#, fuzzy
 msgid  "Galaxy (default)"
 msgstr "Galaxy (по подразбиране)"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.item3.StringList.item
+#, fuzzy
 msgid  "High Contrast"
 msgstr "Висок контраст"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.item4.StringList.item
+#, fuzzy
 msgid  "Industrial"
 msgstr "Индустриален"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.item5.StringList.item
+#, fuzzy
 msgid  "Classic"
 msgstr "Класически"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.CB_SYSTEM_FONT.CheckBox.Text
+#, fuzzy
 msgid  "Use system ~font for user interface"
 msgstr "~Използване на системния шрифт за потребителския интерфейс"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.CB_FONTANTIALIASING.CheckBox.Text
+#, fuzzy
 msgid  "Screen font antialiasing"
 msgstr "Изглаждане на екранните шрифтове"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FT_POINTLIMIT_LABEL.FixedText.Text
+#, fuzzy
 msgid  "from"
 msgstr "от"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FT_POINTLIMIT_UNIT.FixedText.Text
+#, fuzzy
 msgid  "Pixels"
 msgstr "Пиксели"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FL_MENU.FixedLine.Text
+#, fuzzy
 msgid  "Menu"
 msgstr "Меню"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FT_MENU_ICONS.FixedText.Text
+#, fuzzy
 msgid  "Icons in menus"
 msgstr "Икони в менютата"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_MENU_ICONS.item1.StringList.item
+#, fuzzy
 msgid  "Automatic"
 msgstr "Автоматично"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_MENU_ICONS.item2.StringList.item
+#, fuzzy
 msgid  "Hide"
 msgstr "Скриване"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_MENU_ICONS.item3.StringList.item
+#, fuzzy
 msgid  "Show"
 msgstr "Показване"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FL_FONTLISTS.FixedLine.Text
+#, fuzzy
 msgid  "Font Lists"
 msgstr "Списъци с шрифтове"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.CB_FONT_SHOW.CheckBox.Text
+#, fuzzy
 msgid  "Show p~review of fonts"
 msgstr "Показване на ~мостра от шрифтовете"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.CB_FONT_HISTORY.CheckBox.Text
+#, fuzzy
 msgid  "Show font h~istory"
 msgstr "Показване на ~хронология на шрифтовете"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FL_RENDERING.FixedLine.Text
+#, fuzzy
 msgid  "Graphics output"
 msgstr "Графичен изход"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.CB_USE_HARDACCELL.CheckBox.Text
+#, fuzzy
 msgid  "Use hardware acceleration"
 msgstr "Използване на хардуерно ускоряване"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.CB_USE_ANTIALIASE.CheckBox.Text
+#, fuzzy
 msgid  "Use Anti-Aliasing"
 msgstr "Изглаждане на назъбванията"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FL_MOUSE.FixedLine.Text
+#, fuzzy
 msgid  "Mouse"
 msgstr "Мишка"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FT_MOUSEPOS.FixedText.Text
+#, fuzzy
 msgid  "Mouse positioning"
 msgstr "Позициониране на мишката"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEPOS.item1.StringList.item
+#, fuzzy
 msgid  "Default button"
 msgstr "Подразбиран бутон"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEPOS.item2.StringList.item
+#, fuzzy
 msgid  "Dialog center"
 msgstr "Център на диалоговия прозорец"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEPOS.item3.StringList.item
+#, fuzzy
 msgid  "No automatic positioning"
 msgstr "Без автоматично позициониране"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FT_MOUSEMIDDLE.FixedText.Text
+#, fuzzy
 msgid  "Middle mouse button"
 msgstr "Среден бутон на мишката"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEMIDDLE.item1.StringList.item
+#, fuzzy
 msgid  "No function"
 msgstr "Без функция"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEMIDDLE.item2.StringList.item
+#, fuzzy
 msgid  "Automatic scrolling"
 msgstr "Автоматично превъртане"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEMIDDLE.item3.StringList.item
+#, fuzzy
 msgid  "Paste clipboard"
 msgstr "Поставяне от клипборда"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FL_SELECTION.FixedLine.Text
+#, fuzzy
 msgid  "Selection"
 msgstr "Избор"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.CB_SELECTION.CheckBox.Text
+#, fuzzy
 msgid  "Transparency"
 msgstr "Прозрачност"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.MF_SELECTION.MetricField.CustomUnitText
+#, fuzzy
 msgid  "%"
 msgstr "%"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.FL_UI_LANG.FixedLine.Text
+#, fuzzy
 msgid  "Language of"
 msgstr "Език на"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.FT_USERINTERFACE.FixedText.Text
+#, fuzzy
 msgid  "~User interface"
 msgstr "~Потребителски интерфейс"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.FT_LOCALESETTING.FixedText.Text
+#, fuzzy
 msgid  "Locale setting"
 msgstr "Настройка за локал"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.FT_DECIMALSEPARATOR.FixedText.Text
+#, fuzzy
 msgid  "Decimal separator key"
 msgstr "Клавиш за десетична запетая"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.CB_DECIMALSEPARATOR.CheckBox.Text
+#, fuzzy
 msgid  "~Same as locale setting ( %1 )"
 msgstr "~Еднаква с настройката на локал ( %1 )"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.FT_CURRENCY.FixedText.Text
+#, fuzzy
 msgid  "~Default currency"
 msgstr "~Подразбирана валута"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.FL_LINGU_LANG.FixedLine.Text
+#, fuzzy
 msgid  "Default languages for documents"
 msgstr "Подразбирани езици за документи"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.FT_WEST_LANG.FixedText.Text
+#, fuzzy
 msgid  "Western"
 msgstr "Западни"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.FT_ASIAN_LANG.FixedText.Text
+#, fuzzy
 msgid  "Asian"
 msgstr "Азиатски"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.FT_COMPLEX_LANG.FixedText.Text
+#, fuzzy
 msgid  "C~TL"
 msgstr "C~TL"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.CB_CURRENT_DOC.CheckBox.Text
+#, fuzzy
 msgid  "For the current document only"
 msgstr "Само за текущия документ"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.FL_ENHANCED.FixedLine.Text
+#, fuzzy
 msgid  "Enhanced language support"
 msgstr "Разширена езикова поддръжка"
 
@@ -4888,146 +5580,182 @@ msgid  "The language setting of the user interface has been updated and will tak
 msgstr ""
 
 #: source/options/optspell.src#RID_SFXPAGE_SPELL.TabPage.Text
+#, fuzzy
 msgid  "Spellcheck"
 msgstr "Проверка на правописа"
 
 #: source/options/optspell.src#RID_SFXPAGE_SPELL.BTN_BOOK.PushButton.Text
+#, fuzzy
 msgid  "~Edit..."
 msgstr "~Редактиране..."
 
 #: source/options/optspell.src#RID_SFXPAGE_SPELL.GB_BOOK.FixedLine.Text
+#, fuzzy
 msgid  "Dictionaries"
 msgstr "Речници"
 
 #: source/options/optspell.src#RID_SFXPAGE_SPELL.BTN_CAPS.CheckBox.Text
+#, fuzzy
 msgid  "~Capital words"
 msgstr "~Главни букви в началото на думите"
 
 #: source/options/optspell.src#RID_SFXPAGE_SPELL.BTN_NUMS.CheckBox.Text
+#, fuzzy
 msgid  "~Words with numbers "
 msgstr "~Думи, съдържащи цифри "
 
 #: source/options/optspell.src#RID_SFXPAGE_SPELL.BTN_UPLOW.CheckBox.Text
+#, fuzzy
 msgid  "~Case sensitive "
 msgstr "~Отчитане на регистъра "
 
 #: source/options/optspell.src#RID_SFXPAGE_SPELL.GB_AUDIT.FixedLine.Text
+#, fuzzy
 msgid  "Check"
 msgstr "Проверка"
 
 #: source/options/readonlyimage.src#RID_SVXSTR_READONLY_CONFIG_TIP.String.Text
+#, fuzzy
 msgid  "This setting is protected by the Administrator"
 msgstr "Тази настройка е защитена от администратора"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.CB_USETABLE.CheckBox.Text
+#, fuzzy
 msgid  "~Apply replacement table"
 msgstr "~Използване на таблицата за заместване"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.FT_FONT1.FixedText.Text
+#, fuzzy
 msgid  "~Font"
 msgstr "~Шрифт"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.FT_FONT2.FixedText.Text
+#, fuzzy
 msgid  "Re~place with"
 msgstr "~Замяна с"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.TBX_SUBSTNEWDEL.BT_SUBSTAPPLY.ToolBoxItem.Text
+#, fuzzy
 msgid  "Apply"
 msgstr "Прилагане"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.TBX_SUBSTNEWDEL.BT_SUBSTDELETE.ToolBoxItem.Text
+#, fuzzy
 msgid  "Delete"
 msgstr "Изтриване"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.FL_SOURCEVIEW.FixedLine.Text
+#, fuzzy
 msgid  "Font settings for HTML, Basic and SQL sources"
 msgstr "Настройки на шрифтове за изходен код на HTML, Basic и SQL"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.FT_FONTNAME.FixedText.Text
+#, fuzzy
 msgid  "Fonts"
 msgstr "Шрифтове"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.CB_NONPROP.CheckBox.Text
+#, fuzzy
 msgid  "Non-proportional fonts only"
 msgstr "Само равношироки шрифтове"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.FT_FONTHEIGHT.FixedText.Text
+#, fuzzy
 msgid  "~Size"
 msgstr "~Размер"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER1.String.Text
+#, fuzzy
 msgid  "Always"
 msgstr "Винаги"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER2.String.Text
+#, fuzzy
 msgid  "Screen only"
 msgstr "Само на екрана"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER3.String.Text
+#, fuzzy
 msgid  "Font"
 msgstr "Шрифт"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER4.String.Text
+#, fuzzy
 msgid  "Replace with"
 msgstr "Замяна с"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_AUTOMATIC.String.Text
+#, fuzzy
 msgid  "Automatic"
 msgstr "Автоматично"
 
 #: source/options/optdict.src#RID_SFXDLG_NEWDICT.ModalDialog.Text
+#, fuzzy
 msgid  "New Dictionary"
 msgstr "Нов речник"
 
 #: source/options/optdict.src#RID_SFXDLG_NEWDICT.FT_DICTNAME.FixedText.Text
+#, fuzzy
 msgid  "~Name"
 msgstr "~Име"
 
 #: source/options/optdict.src#RID_SFXDLG_NEWDICT.FT_DICTLANG.FixedText.Text
+#, fuzzy
 msgid  "~Language"
 msgstr "~Език"
 
 #: source/options/optdict.src#RID_SFXDLG_NEWDICT.BTN_EXCEPT.CheckBox.Text
+#, fuzzy
 msgid  "~Exception (-)"
 msgstr "~Изключение (-)"
 
 #: source/options/optdict.src#RID_SFXDLG_NEWDICT.GB_NEWDICT.FixedLine.Text
+#, fuzzy
 msgid  "Dictionary"
 msgstr "Речник"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.ModalDialog.Text
+#, fuzzy
 msgid  "Edit Custom Dictionary"
 msgstr "Редактиране на потребителски речник"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.FT_BOOK.FixedText.Text
+#, fuzzy
 msgid  "~Book"
 msgstr "~Книга"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.FT_DICTLANG.FixedText.Text
+#, fuzzy
 msgid  "~Language"
 msgstr "~Език"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.FT_WORD.FixedText.Text
+#, fuzzy
 msgid  "~Word"
 msgstr "~Дума"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.FT_REPLACE.FixedText.Text
+#, fuzzy
 msgid  "Replace ~By:"
 msgstr "Замяна ~с:"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.PB_NEW_REPLACE.PushButton.Text
+#, fuzzy
 msgid  "~New"
 msgstr "~Нов"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.PB_DELETE_REPLACE.PushButton.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "~Изтриване"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.STR_MODIFY.String.Text
+#, fuzzy
 msgid  "~Replace"
 msgstr "~Замяна"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.BTN_EDITCLOSE.CancelButton.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "~Затваряне"
 
@@ -5036,330 +5764,412 @@ msgid  "The specified name already exists.\nPlease enter a new name."
 msgstr ""
 
 #: source/options/optdict.src#RID_SFXQB_SET_LANGUAGE.QueryBox.Message
+#, fuzzy
 msgid  "Do you want to change the '%1' dictionary language?"
 msgstr "Желаете ли да промените езика за речника „%1“?"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ModalDialog.Text
+#, fuzzy
 msgid  "Edit Modules"
 msgstr "Редактиране на модули"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.FL_EDIT_MODULES_OPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Options"
 msgstr "Настройки"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.FT_EDIT_MODULES_LANGUAGE.FixedText.Text
+#, fuzzy
 msgid  "Language"
 msgstr "Език"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.PB_EDIT_MODULES_PRIO_UP.PushButton.Text
+#, fuzzy
 msgid  "Move Up"
 msgstr "Местене нагоре"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.PB_EDIT_MODULES_PRIO_DOWN.PushButton.Text
+#, fuzzy
 msgid  "Move Down"
 msgstr "Местене надолу"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.PB_EDIT_MODULES_PRIO_BACK.PushButton.Text
+#, fuzzy
 msgid  "~Back"
 msgstr "На~зад"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.FT_EDIT_MODULES_NEWDICTSLINK.FixedText.Text
+#, fuzzy
 msgid  "~Get more dictionaries online..."
 msgstr "~Вземете още речници от Интернет..."
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.PB_OK.OKButton.Text
+#, fuzzy
 msgid  "Close"
 msgstr "Затваряне"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_SPELL.String.Text
+#, fuzzy
 msgid  "Spelling"
 msgstr "Правопис"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_HYPH.String.Text
+#, fuzzy
 msgid  "Hyphenation"
 msgstr "Сричкопренасяне"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_THES.String.Text
+#, fuzzy
 msgid  "Thesaurus"
 msgstr "Синонимен речник"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_GRAMMAR.String.Text
+#, fuzzy
 msgid  "Grammar"
 msgstr "Граматика"
 
 #: source/options/optlingu.src#RID_SVXDLG_LNG_ED_NUM_PREBREAK.ModalDialog.Text
+#, fuzzy
 msgid  "Hyphenation"
 msgstr "Сричкопренасяне"
 
 #: source/options/optlingu.src#RID_SVXDLG_LNG_ED_NUM_PREBREAK.STR_NUM_PRE_BREAK_DLG.String.Text
+#, fuzzy
 msgid  "Characters before break"
 msgstr "Знаци преди прекъсване"
 
 #: source/options/optlingu.src#RID_SVXDLG_LNG_ED_NUM_PREBREAK.STR_NUM_POST_BREAK_DLG.String.Text
+#, fuzzy
 msgid  "Characters after break"
 msgstr "Знаци след прекъсване"
 
 #: source/options/optlingu.src#RID_SVXDLG_LNG_ED_NUM_PREBREAK.STR_NUM_MIN_WORDLEN_DLG.String.Text
+#, fuzzy
 msgid  "Minimal word length"
 msgstr "Минимална дължина на думата"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.TabPage.Text
+#, fuzzy
 msgid  "Options"
 msgstr "Настройки"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.FL_LINGUISTIC.FixedLine.Text
+#, fuzzy
 msgid  "Writing aids"
 msgstr "Помощ при писане"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.FT_LINGU_MODULES.FixedText.Text
+#, fuzzy
 msgid  "Available language modules"
 msgstr "Налични езикови модули"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.PB_LINGU_MODULES_EDIT.PushButton.Text
+#, fuzzy
 msgid  "~Edit..."
 msgstr "~Редактиране..."
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.FT_LINGU_DICS.FixedText.Text
+#, fuzzy
 msgid  "User-defined dictionaries"
 msgstr "Потребителски речници"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.PB_LINGU_DICS_NEW_DIC.PushButton.Text
+#, fuzzy
 msgid  "~New..."
 msgstr "~Нов..."
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.PB_LINGU_DICS_EDIT_DIC.PushButton.Text
+#, fuzzy
 msgid  "Ed~it..."
 msgstr "Редакт~иране..."
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.PB_LINGU_DICS_DEL_DIC.PushButton.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "~Изтриване"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.FT_LINGU_OPTIONS.FixedText.Text
+#, fuzzy
 msgid  "~Options"
 msgstr "~Настройки"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.PB_LINGU_OPTIONS_EDIT.PushButton.Text
+#, fuzzy
 msgid  "Edi~t..."
 msgstr "Редак~тиране..."
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.FT_LINGU_OPTIONS_MOREDICTS.FixedText.Text
+#, fuzzy
 msgid  "~Get more dictionaries online..."
 msgstr "~Вземете още речници от Интернет..."
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_CAPITAL_WORDS.String.Text
+#, fuzzy
 msgid  "Check uppercase words"
 msgstr "Проверка на думи от главни букви"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_WORDS_WITH_DIGITS.String.Text
+#, fuzzy
 msgid  "Check words with numbers "
 msgstr "Проверка на думи с цифри "
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_CAPITALIZATION.String.Text
+#, fuzzy
 msgid  "Check capitalization"
 msgstr "Проверка на главните букви"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_SPELL_SPECIAL.String.Text
+#, fuzzy
 msgid  "Check special regions"
 msgstr "Проверка в специалните области"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_SPELL_AUTO.String.Text
+#, fuzzy
 msgid  "Check spelling as you type"
 msgstr "Проверка на правописа по време на писане"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_GRAMMAR_AUTO.String.Text
+#, fuzzy
 msgid  "Check grammar as you type"
 msgstr "Проверка на граматиката по време на писане"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_NUM_MIN_WORDLEN.String.Text
+#, fuzzy
 msgid  "Minimal number of characters for hyphenation: "
 msgstr "Минимален брой знаци при сричкопренасяне: "
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_NUM_PRE_BREAK.String.Text
+#, fuzzy
 msgid  "Characters before line break: "
 msgstr "Знаци преди нов ред: "
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_NUM_POST_BREAK.String.Text
+#, fuzzy
 msgid  "Characters after line break: "
 msgstr "Знаци след нов ред: "
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_HYPH_AUTO.String.Text
+#, fuzzy
 msgid  "Hyphenate without inquiry"
 msgstr "Сричкопренасяне без запитване"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_HYPH_SPECIAL.String.Text
+#, fuzzy
 msgid  "Hyphenate special regions"
 msgstr "Сричкопренасяне в специалните области"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_LINGU_MODULES_EDIT.String.Text
+#, fuzzy
 msgid  "Edit Available language modules"
 msgstr "Редактиране на наличните езикови модули"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_LINGU_DICS_EDIT_DIC.String.Text
+#, fuzzy
 msgid  "Edit User-defined dictionaries"
 msgstr "Редактиране на потребителските речници"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_LINGU_OPTIONS_EDIT.String.Text
+#, fuzzy
 msgid  "Edit Options"
 msgstr "Редактиране на настройките"
 
 #: source/options/optlingu.src#RID_SFXQB_DELDICT.QueryBox.Message
+#, fuzzy
 msgid  "Do you want to delete the dictionary?"
 msgstr "Желаете ли речникът да бъде изтрит?"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.TabPage.Text
+#, fuzzy
 msgid  "Registered databases"
 msgstr "Регистрирани БД"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.FT_TYPE.FixedText.Text
+#, fuzzy
 msgid  "Registered name"
 msgstr "Регистрирано име"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.FT_PATH.FixedText.Text
+#, fuzzy
 msgid  "Database file"
 msgstr "Файл на БД"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_NEW.PushButton.Text
+#, fuzzy
 msgid  "~New..."
 msgstr "~Нов..."
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_EDIT.PushButton.Text
+#, fuzzy
 msgid  "~Edit..."
 msgstr "~Редактиране..."
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_DELETE.PushButton.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "~Изтриване"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.GB_STD.FixedLine.Text
+#, fuzzy
 msgid  "Registered databases"
 msgstr "Регистрирани БД"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.GB_WORD.FixedLine.Text
+#, fuzzy
 msgid  "Microsoft Word 97/2000/XP"
 msgstr "Microsoft Word 97/2000/XP"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_WBAS_CODE.CheckBox.Text
+#, fuzzy
 msgid  "Load Basic ~code"
 msgstr "~Зареждане на кода на Basic"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_WBAS_STG.CheckBox.Text
+#, fuzzy
 msgid  "Save ~original Basic code"
 msgstr "~Съхраняване на оригиналния код на Basic"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.GB_EXCEL.FixedLine.Text
+#, fuzzy
 msgid  "Microsoft Excel 97/2000/XP"
 msgstr "Microsoft Excel 97/2000/XP"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_EBAS_CODE.CheckBox.Text
+#, fuzzy
 msgid  "Lo~ad Basic code"
 msgstr "З~ареждане на кода на Basic"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_EBAS_EXECTBL.CheckBox.Text
+#, fuzzy
 msgid  "E~xecutable code"
 msgstr "И~зпълним код"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_EBAS_STG.CheckBox.Text
+#, fuzzy
 msgid  "Sa~ve original Basic code"
 msgstr "Съ~храняване на оригиналния код на Basic"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.GB_PPOINT.FixedLine.Text
+#, fuzzy
 msgid  "Microsoft PowerPoint 97/2000/XP"
 msgstr "Microsoft PowerPoint 97/2000/XP"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_PBAS_CODE.CheckBox.Text
+#, fuzzy
 msgid  "Load Ba~sic code"
 msgstr "За~реждане на кода на Basic"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_PBAS_STG.CheckBox.Text
+#, fuzzy
 msgid  "Sav~e original Basic code"
 msgstr "Съхра~няване на оригиналния код на Basic"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.ST_HEADER1.String.Text
+#, fuzzy
 msgid  "[L]"
 msgstr "[О]"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.ST_HEADER2.String.Text
+#, fuzzy
 msgid  "[S]"
 msgstr "[С]"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.FT_HEADER1_EXPLANATION.FixedText.Text
+#, fuzzy
 msgid  "[L]: Load and convert the object"
 msgstr "[О]: Зареждане и преобразуване на обекта"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.FT_HEADER2_EXPLANATION.FixedText.Text
+#, fuzzy
 msgid  "[S]: Convert and save the object"
 msgstr "[С]: Преобразуване и съхраняване на обекта"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.ST_CHG_MATH.String.Text
+#, fuzzy
 msgid  "MathType to %PRODUCTNAME Math or reverse"
 msgstr "MathType към %PRODUCTNAME Math или обратно"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.ST_CHG_WRITER.String.Text
+#, fuzzy
 msgid  "WinWord to %PRODUCTNAME Writer or reverse"
 msgstr "WinWord към %PRODUCTNAME Writer или обратно"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.ST_CHG_CALC.String.Text
+#, fuzzy
 msgid  "Excel to %PRODUCTNAME Calc or reverse"
 msgstr "Excel към %PRODUCTNAME Calc или обратно"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.ST_CHG_IMPRESS.String.Text
+#, fuzzy
 msgid  "PowerPoint to %PRODUCTNAME Impress or reverse"
 msgstr "PowerPoint към %PRODUCTNAME Impress или обратно"
 
 #: source/options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.TabPage.Text
+#, fuzzy
 msgid  "OnlineUpdate"
 msgstr "Обновяване по Интернет"
 
 #: source/options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.FL_OPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Online Update Options"
 msgstr "Настройки за обновяване по Интернет"
 
 #: source/options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.CB_AUTOCHECK.CheckBox.Text
+#, fuzzy
 msgid  "~Check for updates automatically"
 msgstr "Автоматична ~проверка за обновявания"
 
 #: source/options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.RB_EVERYDAY.RadioButton.Text
+#, fuzzy
 msgid  "Every Da~y"
 msgstr "Всеки ~ден"
 
 #: source/options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.RB_EVERYWEEK.RadioButton.Text
+#, fuzzy
 msgid  "Every ~Week"
 msgstr "Всяка с~едмица"
 
 #: source/options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.RB_EVERYMONTH.RadioButton.Text
+#, fuzzy
 msgid  "Every ~Month"
 msgstr "Всеки ~месец"
 
 #: source/options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.FT_LASTCHECKED.FixedText.Text
+#, fuzzy
 msgid  "Last checked: %DATE%, %TIME%"
 msgstr "Последна проверка: %DATE%, %TIME%"
 
 #: source/options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.PB_CHECKNOW.PushButton.Text
+#, fuzzy
 msgid  "Check ~now"
 msgstr "Проверка ~сега"
 
 #: source/options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.CB_AUTODOWNLOAD.CheckBox.Text
+#, fuzzy
 msgid  "~Download updates automatically"
 msgstr "Автоматично ~изтегляне на обновявания"
 
 #: source/options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.FT_DESTPATHLABEL.FixedText.Text
+#, fuzzy
 msgid  "Download destination:"
 msgstr "Местоназначение на изтеглянето:"
 
 #: source/options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.PB_CHANGEPATH.PushButton.Text
+#, fuzzy
 msgid  "Ch~ange..."
 msgstr "П~ромяна..."
 
 #: source/options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.STR_NEVERCHECKED.String.Text
+#, fuzzy
 msgid  "Last checked: Not yet"
 msgstr "Последна проверка: няма"
 
 #: source/options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.ModalDialog.Text
+#, fuzzy
 msgid  "Security options and warnings"
 msgstr "Настройки и предупреждения за сигурността"
 
 #: source/options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.FL_WARNINGS.FixedLine.Text
+#, fuzzy
 msgid  "Security warnings"
 msgstr "Предупреждения за сигурността"
 
@@ -5368,158 +6178,197 @@ msgid  "Warn if document contains recorded changes, versions, hidden information
 msgstr ""
 
 #: source/options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.CB_SAVESENDDOCS.CheckBox.Text
+#, fuzzy
 msgid  "When saving or sending"
 msgstr "При съхраняване или изпращане"
 
 #: source/options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.CB_SIGNDOCS.CheckBox.Text
+#, fuzzy
 msgid  "When signing"
 msgstr "При подписване"
 
 #: source/options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.CB_PRINTDOCS.CheckBox.Text
+#, fuzzy
 msgid  "When printing"
 msgstr "При печат"
 
 #: source/options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.CB_CREATEPDF.CheckBox.Text
+#, fuzzy
 msgid  "When creating PDF files"
 msgstr "При създаване на PDF файлове"
 
 #: source/options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.FL_OPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Security options"
 msgstr "Настройки за сигурност"
 
 #: source/options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.CB_REMOVEINFO.CheckBox.Text
+#, fuzzy
 msgid  "Remove personal information on saving"
 msgstr "Премахване на личните данни при съхраняване"
 
 #: source/options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.CB_RECOMMENDPWD.CheckBox.Text
+#, fuzzy
 msgid  "Recommend password protection on saving"
 msgstr "Препоръчване на защита с парола при съхраняване"
 
 #: source/options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.CB_CTRLHYPERLINK.CheckBox.Text
+#, fuzzy
 msgid  "Ctrl-click required to follow hyperlinks"
 msgstr "Проследяване на хипервръзки с Ctrl+щракване"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.GB_KERNING.FixedLine.Text
+#, fuzzy
 msgid  "Kerning"
 msgstr "Керн"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.RB_CHAR_KERNING.RadioButton.Text
+#, fuzzy
 msgid  "~Western characters only"
 msgstr "Само ~западни знаци"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.RB_CHAR_PUNCT.RadioButton.Text
+#, fuzzy
 msgid  "Western ~text and Asian punctuation"
 msgstr "Западен ~текст и азиатска пунктуация"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.GB_CHAR_DIST.FixedLine.Text
+#, fuzzy
 msgid  "Character spacing"
 msgstr "Знакова разредка"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.RB_NO_COMP.RadioButton.Text
+#, fuzzy
 msgid  "~No compression"
 msgstr "~Без сбиване"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.RB_PUNCT_COMP.RadioButton.Text
+#, fuzzy
 msgid  "~Compress punctuation only"
 msgstr "~Сбиване само на пунктуацията"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.RB_PUNCT_KANA_COMP.RadioButton.Text
+#, fuzzy
 msgid  "Compress ~punctuation and Japanese Kana"
 msgstr "Сбита ~пунктуация и японски кана"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.GB_START_END.FixedLine.Text
+#, fuzzy
 msgid  "First and last characters"
 msgstr "Първи и последен знак"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.FT_LANGUAGE.FixedText.Text
+#, fuzzy
 msgid  "~Language"
 msgstr "~Език"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.CB_STANDARD.CheckBox.Text
+#, fuzzy
 msgid  "~Default"
 msgstr "~По подразбиране"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.FT_START.FixedText.Text
+#, fuzzy
 msgid  "Not at start of line:"
 msgstr "Не в началото на реда:"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.FT_END.FixedText.Text
+#, fuzzy
 msgid  "Not at end of line:"
 msgstr "Не в края на реда:"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.FT_HINT.FixedText.Text
+#, fuzzy
 msgid  "Without user-defined line break symbols"
 msgstr "Без потребителски символи за нов ред"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.FixedText.Text
+#, fuzzy
 msgid  "Proxy"
 msgstr "Прокси"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE1.FixedText.Text
+#, fuzzy
 msgid  "Size ~1"
 msgstr "Размер ~1"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE2.FixedText.Text
+#, fuzzy
 msgid  "Size ~2"
 msgstr "Размер ~2"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE3.FixedText.Text
+#, fuzzy
 msgid  "Size ~3"
 msgstr "Размер ~3"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE4.FixedText.Text
+#, fuzzy
 msgid  "Size ~4"
 msgstr "Размер ~4"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE5.FixedText.Text
+#, fuzzy
 msgid  "Size ~5"
 msgstr "Размер ~5"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE6.FixedText.Text
+#, fuzzy
 msgid  "Size ~6"
 msgstr "Размер ~6"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE7.FixedText.Text
+#, fuzzy
 msgid  "Size ~7"
 msgstr "Размер ~7"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.GB_FONTSIZE.FixedLine.Text
+#, fuzzy
 msgid  "Font sizes"
 msgstr "Размери"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.GB_IMPORT.FixedLine.Text
+#, fuzzy
 msgid  "Import"
 msgstr "Импортиране"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.CB_NUMBERS_ENGLISH_US.CheckBox.Text
+#, fuzzy
 msgid  "~Use '%ENGLISHUSLOCALE' locale for numbers"
 msgstr "~Използване на локал „%ENGLISHUSLOCALE“ за числа"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.CB_UNKNOWN_TAGS.CheckBox.Text
+#, fuzzy
 msgid  "~Import unknown HTML tags as fields"
 msgstr "~Импортиране непознатите HTML етикети като полета"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.CB_IGNORE_FONTNAMES.CheckBox.Text
+#, fuzzy
 msgid  "Ignore ~font settings"
 msgstr "Игнориране на настройките за ~шрифт"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.GB_EXPORT.FixedLine.Text
+#, fuzzy
 msgid  "Export"
 msgstr "Експортиране"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.CB_STARBASIC_WARNING.CheckBox.Text
+#, fuzzy
 msgid  "Display ~warning"
 msgstr "П~оказване на предупреждение"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.CB_PRINT_EXTENSION.CheckBox.Text
+#, fuzzy
 msgid  "~Print layout"
 msgstr "~Оформление за печат"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.CB_LOCAL_GRF.CheckBox.Text
+#, fuzzy
 msgid  "~Copy local graphics to Internet"
 msgstr "~Копиране на локалните графики в Интернет"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_CHARSET.FixedText.Text
+#, fuzzy
 msgid  "Character set"
 msgstr "Знаков набор"
 
@@ -9413,8 +10262,9 @@ msgid  "Italic"
 msgstr "Курсив"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.item3.StringList.item
+#, fuzzy
 msgid  "Bold"
-msgstr "Дебело"
+msgstr "Получер"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE.item4.StringList.item
 #, fuzzy
@@ -9432,8 +10282,9 @@ msgid  "Italic"
 msgstr "Курсив"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE_NOCJK.item3.StringList.item
+#, fuzzy
 msgid  "Bold"
-msgstr "Дебело"
+msgstr "Получер"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_WEST_STYLE_NOCJK.item4.StringList.item
 #, fuzzy
@@ -9486,8 +10337,9 @@ msgid  "Italic"
 msgstr "Курсив"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_EAST_STYLE.item3.StringList.item
+#, fuzzy
 msgid  "Bold"
-msgstr "Дебело"
+msgstr "Получер"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_EAST_STYLE.item4.StringList.item
 #, fuzzy
@@ -9532,7 +10384,7 @@ msgstr "Курсив"
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_CTL_STYLE.item3.StringList.item
 #, fuzzy
 msgid  "Bold"
-msgstr "Получер"
+msgstr "Дебело"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.LB_CTL_STYLE.item4.StringList.item
 #, fuzzy

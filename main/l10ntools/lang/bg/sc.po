@@ -6533,7 +6533,7 @@ msgstr "Номинална лихва"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_EFFEKTIV.4.String.Text
 msgid  "P"
-msgstr "P"
+msgstr "П"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_EFFEKTIV.5.String.Text
 msgid  "Periods. The number of interest payments per year."
@@ -7229,7 +7229,7 @@ msgstr "Връща квадратния корен на число."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.2.String.Text
 msgid  "number"
-msgstr "число"
+msgstr "брой"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.3.String.Text
 msgid  "A positive value for which the square root is to be calculated."
@@ -7417,7 +7417,7 @@ msgstr "Връща синуса на число."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN.2.String.Text
 msgid  "number"
-msgstr "число"
+msgstr "брой"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN.3.String.Text
 msgid  "The angle in radians for which the sine is to be calculated."
@@ -7441,7 +7441,7 @@ msgstr "Връща тангенса на число."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN.2.String.Text
 msgid  "number"
-msgstr "число"
+msgstr "брой"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN.3.String.Text
 msgid  "The angle in radians for which the tangent is to be calculated."
@@ -7465,7 +7465,7 @@ msgstr "Връща хиперболичния синус на число."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN_HYP.2.String.Text
 msgid  "number"
-msgstr "число"
+msgstr "брой"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN_HYP.3.String.Text
 msgid  "The value for which the hyperbolic sine is to be calculated."
@@ -7489,7 +7489,7 @@ msgstr "Връща хиперболичния тангенс на число."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN_HYP.2.String.Text
 msgid  "number"
-msgstr "брой"
+msgstr "число"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN_HYP.3.String.Text
 msgid  "The value for which the hyperbolic tangent is to be calculated."
@@ -7677,7 +7677,7 @@ msgstr "Премахва дробната част на число."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TRUNC.2.String.Text
 msgid  "number"
-msgstr "брой"
+msgstr "число"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TRUNC.3.String.Text
 msgid  "The number to be truncated."
@@ -10409,7 +10409,7 @@ msgstr "число"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHAR.3.String.Text
 msgid  "The code value for the character."
-msgstr "Стойността – код на знака."
+msgstr "Стойността - код на знака."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CLEAN.1.String.Text
 msgid  "Removes all nonprintable characters from text."
@@ -11089,6 +11089,54 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MIDB.7.String.Text
 msgid  "The number of characters for the text."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.1.String.Text
+msgid  "Return the cosecant of an angle. CSC(x)=1/SIN(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.3.String.Text
+msgid  "The angle in radians for which the cosecant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.1.String.Text
+msgid  "Return the secant of an angle. SEC(x)=1/COS(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.3.String.Text
+msgid  "The angle in radians for which the secant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.1.String.Text
+msgid  "Return the hyperbolic cosecant of a hyperbolic angle. CSCH(x)=1/SINH(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.3.String.Text
+msgid  "The hyperbolic angle in radians for which the hyperbolic cosecant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.1.String.Text
+msgid  "Return the hyperbolic secant of a hyperbolic angle. SECH(x)=1/COSH(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.3.String.Text
+msgid  "The hyperbolic angle in radians for which the hyperbolic secant is to be calculated."
 msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_APPLICATION.String.Text
@@ -12201,7 +12249,7 @@ msgstr "И~зтриване на коментар"
 
 #: source/ui/src/popup.src#RID_POPUP_CELLS.FID_NOTE_VISIBLE.MenuItem.Text
 msgid  "Sho~w Comment"
-msgstr "Пок~азване на коментар"
+msgstr "Показва~не на коментар"
 
 #: source/ui/src/popup.src#RID_POPUP_CELLS.SID_CUT.MenuItem.Text
 msgid  "Cu~t"
