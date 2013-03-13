@@ -41,7 +41,7 @@ msgstr "$1 ਹਟਾਓ"
 
 #: source/core/undo/undo.src#STR_INSERT_UNDO.String.Text
 msgid  "Insert $1"
-msgstr "$1 ਸ਼ਾਮਿਲ"
+msgstr "$1 ਸ਼ਾਮਲ"
 
 #: source/core/undo/undo.src#STR_OVR_UNDO.String.Text
 msgid  "Overwrite: $1"
@@ -261,7 +261,7 @@ msgstr "ਗੁਣ ਰੋਕੋ"
 
 #: source/core/undo/undo.src#STR_AUTOCORRECT.String.Text
 msgid  "AutoCorrect"
-msgstr "ਆਟੋ-ਠੀਕ"
+msgstr "ਸਵੈ-ਠੀਕ"
 
 #: source/core/undo/undo.src#STR_MERGE_TABLE.String.Text
 msgid  "Merge table"
@@ -845,7 +845,7 @@ msgstr "ਸਭ ਸਟਾਈਲ"
 
 #: source/ui/app/app.src#DLG_STYLE_DESIGNER.SFX_STYLE_FAMILY_PARA.SFXSTYLEBIT_USED.FilterList.item
 msgid  "Applied Styles"
-msgstr "ਲਾਗੂ ਕੀਤੇ ਸਟਾਈਲ"
+msgstr "ਲਾਗੂ ਸਟਾਈਲ"
 
 #: source/ui/app/app.src#DLG_STYLE_DESIGNER.SFX_STYLE_FAMILY_PARA.SFXSTYLEBIT_USERDEF.FilterList.item
 msgid  "Custom Styles"
@@ -893,7 +893,7 @@ msgstr "ਸਭ"
 
 #: source/ui/app/app.src#DLG_STYLE_DESIGNER.SFX_STYLE_FAMILY_CHAR.SFXSTYLEBIT_USED.FilterList.item
 msgid  "Applied Styles"
-msgstr "ਲਾਗੂ ਸਟਾਈਲ"
+msgstr "ਲਾਗੂ ਕੀਤੇ ਸਟਾਈਲ"
 
 #: source/ui/app/app.src#DLG_STYLE_DESIGNER.SFX_STYLE_FAMILY_CHAR.SFXSTYLEBIT_USERDEF.FilterList.item
 msgid  "Custom Styles"
@@ -1573,7 +1573,7 @@ msgstr "ਕੰਟਰੋਲ"
 
 #: source/ui/app/mn.src#MN_DRWTXT_POPUPMENU.String.Text
 msgid  "Draw Object text"
-msgstr "ਆਬਜੈਕਟ ਟੈਕਸਟ ਡਰਾਅ"
+msgstr "ਆਬਜੈਕਟ ਪਾਠ ਬਣਾਓ"
 
 #: source/ui/app/mn.src#MN_REDCOMMENT.FN_DELETE_COMMENT.MenuItem.Text
 msgid  "Delete ~Changes Note"
@@ -2201,7 +2201,7 @@ msgstr "ਮਾਪ ਇਕਾਈ"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.FL_1.FixedLine.Text
 msgid  "Contents"
-msgstr "ਸਮਗੱਰੀ"
+msgstr "ਸਮੱਗਰੀ"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_PGRF.CheckBox.Text
 msgid  "~Pictures and objects"
@@ -2209,7 +2209,7 @@ msgstr "ਤਸਵੀਰਾਂ ਤੇ ਆਬਜੈਕਟ(~P)"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_CTRLFLD.CheckBox.Text
 msgid  "Form control~s"
-msgstr "ਕੰਟਰੋਲ ਫਾਰਮੈਟ(~s)"
+msgstr "ਲੁਕਵਾਂ ਟੈਕਸਟ(~x)"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_BACKGROUND.CheckBox.Text
 msgid  "Page ba~ckground"
@@ -2217,11 +2217,11 @@ msgstr "ਪੇਜ਼ ਬੈਕਗਰਾਊਂਡ(~c)"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_BLACK_FONT.CheckBox.Text
 msgid  "Print text in blac~k"
-msgstr "ਟੈਕਸਟ ਕਾਲੇ ਰੰਗ 'ਚ ਪਰਿੰਟ ਕਰੋ(~k)"
+msgstr "ਟੈਕਸਟ ਥਾਂ(~T)"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_HIDDEN_TEXT.CheckBox.Text
 msgid  "Hidden te~xt"
-msgstr "ਲੁਕਵਾਂ ਟੈਕਸਟ(~x)"
+msgstr "ਤਸਵੀਰਾਂ ਤੇ ਹੋਰ ਗਰਾਫਿਕਸ ਆਬਜੈਕਟ(~i)"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_TEXT_PLACEHOLDER.CheckBox.Text
 msgid  "Text ~placeholder"
@@ -2241,7 +2241,7 @@ msgstr "ਸੱਜੇ ਸਫ਼ੇ(~R)"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_PROSPECT.CheckBox.Text
 msgid  "Broch~ure"
-msgstr "ਪੈਂਫਲਟ(~u)"
+msgstr "ਡੌਕੂਮੈਂਟ ਦੇ ਅੰਤ ਉੱਤੇ ਰੱਖੋ"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_PROSPECT_RTL.CheckBox.Text
 msgid  "Right to Left"
@@ -2273,7 +2273,7 @@ msgstr "ਹੋਰ"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_PRINTEMPTYPAGES.CheckBox.Text
 msgid  "Print ~automatically inserted blank pages"
-msgstr "ਦਿੱਤੇ ਖਾਲੀ ਪੇਜ਼ ਆਟੋਮੈਟਿਕ ਹੀ ਪਰਿੰਟ ਕਰੋ(~a)"
+msgstr "ਫਾਰਮ ਕੰਟਰੋਲ(~s)"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_PAPERFROMSETUP.CheckBox.Text
 msgid  "~Paper tray from printer settings"
@@ -7833,7 +7833,7 @@ msgstr "ਇੰਡੈਕਸ/ਟੇਬਲ"
 
 #: source/ui/index/cnttab.src#DLG_MULTI_TOX.1.TP_TOX_ENTRY.PageItem.Text
 msgid  "Entries"
-msgstr "ਇੰਦਰਾਜ਼"
+msgstr "ਐਂਟਰੀਆਂ"
 
 #: source/ui/index/cnttab.src#DLG_MULTI_TOX.1.TP_TOX_STYLES.PageItem.Text
 msgid  "Styles"
@@ -7921,7 +7921,7 @@ msgstr "ਕਾਂਡ"
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.FT_LEVEL.FixedText.Text
 msgid  "Evaluate up to level"
-msgstr "ਲੈਵਲ ਤੱਕ ਜਾਂਚ"
+msgstr "ਲੈਵਲ ਤੱਕ ਜਾਂਚੋ"
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.FL_CREATEFROM.FixedLine.Text
 msgid  "Create from"
@@ -10597,7 +10597,7 @@ msgstr "ਵਿਸ਼ੇਸ਼ਤਾ"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.FT_TEXTDIRECTION.FixedText.Text
 msgid  "Text ~direction"
-msgstr "ਪਾਠ ਦਿਸ਼ਾ(~D)"
+msgstr "ਟੈਕਸਟ ਦਿਸ਼ਾ(~d)"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.LB_TEXTDIRECTION.0.StringList.item
 msgid  "Left-to-right"
@@ -11413,23 +11413,23 @@ msgstr "WWW ਡੌਕੂਮੈਂਟ"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM1.String.Text
 msgid  "User-defined1"
-msgstr "ਯੂਜ਼ਰ-ਪ੍ਰਭਾਸ਼ਿਤ1"
+msgstr "ਉਪਯੋਗੀ-ਪ੍ਰਭਾਸ਼ਿਤ1"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM2.String.Text
 msgid  "User-defined2"
-msgstr "ਯੂਜ਼ਰ-ਪ੍ਰਭਾਸ਼ਿਤ2"
+msgstr "ਉਪਯੋਗੀ-ਪ੍ਰਭਾਸ਼ਿਤ2"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM3.String.Text
 msgid  "User-defined3"
-msgstr "ਯੂਜ਼ਰ-ਪ੍ਰਭਾਸ਼ਿਤ3"
+msgstr "ਉਪਯੋਗੀ-ਪ੍ਰਭਾਸ਼ਿਤ3"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM4.String.Text
 msgid  "User-defined4"
-msgstr "ਯੂਜ਼ਰ-ਪ੍ਰਭਾਸ਼ਿਤ4"
+msgstr "ਉਪਯੋਗੀ-ਪ੍ਰਭਾਸ਼ਿਤ4"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM5.String.Text
 msgid  "User-defined5"
-msgstr "ਯੂਜ਼ਰ-ਪ੍ਰਭਾਸ਼ਿਤ5"
+msgstr "ਉਪਯੋਗੀ-ਪ੍ਰਭਾਸ਼ਿਤ5"
 
 #: source/ui/utlui/initui.src#STR_AUTH_FIELD_IDENTIFIER.String.Text
 msgid  "Short name"

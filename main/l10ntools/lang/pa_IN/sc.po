@@ -2089,7 +2089,7 @@ msgstr "ਪਾਠ ਗੁਣ"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_FILE.ImageButton.QuickHelpText
 msgid  "Title"
-msgstr "ਫਾਇਲ ਨਾਂ"
+msgstr "ਟਾਇਟਲ"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_TITEL.MenuItem.Text
 msgid  "Title"
@@ -5657,7 +5657,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.2.String.Text
 msgid  "Number"
-msgstr "ਨੰਬਰ"
+msgstr "ਅੰਕ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.3.String.Text
 msgid  "The internal number for the date."
@@ -5685,7 +5685,7 @@ msgstr "ਦਿਨਾਂ ਵਿੱਚ ਅੰਤਰ ਪਤਾ ਕਰਨ ਲਈ ਅ
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.6.String.Text
 msgid  "Type"
-msgstr "ਟਾਈਪ"
+msgstr "ਕਿਸਮ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.7.String.Text
 msgid  "Method used to form differences: Type = 0 denotes US method (NASD), Type = 1 denotes the European method."
@@ -5697,7 +5697,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_HOUR.2.String.Text
 msgid  "Number"
-msgstr "ਨੰਬਰ"
+msgstr "ਅੰਕ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_HOUR.3.String.Text
 msgid  "Internal time value"
@@ -5709,7 +5709,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_MIN.2.String.Text
 msgid  "Number"
-msgstr "ਅੰਕ"
+msgstr "ਨੰਬਰ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_MIN.3.String.Text
 msgid  "Internal time value."
@@ -5721,7 +5721,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_MONTH.2.String.Text
 msgid  "Number"
-msgstr "ਅੰਕ"
+msgstr "ਨੰਬਰ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_MONTH.3.String.Text
 msgid  "The internal number of the date."
@@ -5801,7 +5801,7 @@ msgstr "ਮਿਤੀ ਲਈ ਅੰਦਰੂਨੀ ਨੰਬਰ ਹੈ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY_OF_WEEK.4.String.Text
 msgid  "Type"
-msgstr "ਟਾਈਪ"
+msgstr "ਕਿਸਮ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY_OF_WEEK.5.String.Text
 msgid  "Fixes the beginning of the week and the type of calculation to be used."
@@ -5909,7 +5909,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.10.String.Text
 msgid  "Type"
-msgstr "ਟਾਈਪ"
+msgstr "ਕਿਸਮ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
@@ -8829,7 +8829,7 @@ msgstr "ਮੱਧ ਹੈ। ਪੌਇੱਸਨ ਵੰਡ ਲਈ ਮੱਧ ਮੁ
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.6.String.Text
 msgid  "Cumulative"
-msgstr "ਆਵਰਤੀ"
+msgstr "ਸੰਚਾਵੀ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.7.String.Text
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
@@ -8953,7 +8953,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOG_NORM_DIST.8.String.Text
 msgid  "Cumulative"
-msgstr "ਆਵਰਤੀ"
+msgstr "ਸੰਚਾਵੀ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOG_NORM_DIST.9.String.Text
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
@@ -9393,7 +9393,7 @@ msgstr "degrees_freedom"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHI_DIST.5.String.Text
 msgid  "The degrees of freedom of the chi square distribution."
-msgstr "ਚੀ ਵਰਗ ਵੰਡ ਦੀ ਡਿਗਰੀ ਆਫ ਫਰੀਡਮ"
+msgstr "ਚਾਈ ਵਰਗ ਵੰਡ ਦੀ ਡਿਗਰੀ ਆਫ ਫਰੀਡਮ ਹੈ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHISQ_DIST.1.String.Text
 msgid  "Returns left-tail probability of the cumulative distribution function or values of the probability density function of the chi-square distribution."
@@ -9885,7 +9885,7 @@ msgstr "ਹਵਾਲਾ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AREAS.3.String.Text
 msgid  "The reference to a (multiple) range."
-msgstr "ਮਲਟੀਪਲ ਰੇਜ਼ ਲਈ ਹਵਾਲਾ ਹੈ।"
+msgstr "ਬਹੁ ਸੀਮਾ ਲਈ ਹਵਾਲਾ ਹੈ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHOSE.1.String.Text
 msgid  "Selects a value from a list of up to 30 value arguments."
@@ -10569,7 +10569,7 @@ msgstr "ਟੈਕਸਟ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VALUE.3.String.Text
 msgid  "The text to be converted to a number."
-msgstr "ਇੱਕ ਅੰਕ ਵਿੱਚ ਬਦਲਿਆ ਗਿਆ ਟੈਕਸਟ ਹੈ।"
+msgstr "ਇੱਕ ਅੰਕ ਵਿੱਚ ਤਬਦੀਲ ਕਰਨ ਲਈ ਪਾਠ ਹੈ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TEXT.1.String.Text
 msgid  "Converts a number to text according to a given format."
@@ -10861,7 +10861,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CONVERT.3.String.Text
 msgid  "The value to be converted."
-msgstr "ਤਬਦੀਲ ਕਰਨ ਲਈ ਮੁੱਲ ਹੈ।"
+msgstr "ਬਦਲਿਆ ਗਿਆ ਮੁੱਲ ਹੈ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CONVERT.4.String.Text
 msgid  "text"
@@ -11089,6 +11089,54 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MIDB.7.String.Text
 msgid  "The number of characters for the text."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.1.String.Text
+msgid  "Return the cosecant of an angle. CSC(x)=1/SIN(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.3.String.Text
+msgid  "The angle in radians for which the cosecant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.1.String.Text
+msgid  "Return the secant of an angle. SEC(x)=1/COS(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.3.String.Text
+msgid  "The angle in radians for which the secant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.1.String.Text
+msgid  "Return the hyperbolic cosecant of a hyperbolic angle. CSCH(x)=1/SINH(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.3.String.Text
+msgid  "The hyperbolic angle in radians for which the hyperbolic cosecant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.1.String.Text
+msgid  "Return the hyperbolic secant of a hyperbolic angle. SECH(x)=1/COSH(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.3.String.Text
+msgid  "The hyperbolic angle in radians for which the hyperbolic secant is to be calculated."
 msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_APPLICATION.String.Text
@@ -13041,7 +13089,7 @@ msgstr "ਵੱਧ ਜਾਂ ਬਰਾਬਰ ਹੈ"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 msgid  "not equal to"
-msgstr "ਬਰਾਬਰ ਨਹੀਂ"
+msgstr "ਨਹੀਂ ਬਰਾਬਰ ਹੈ"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 msgid  "between"
