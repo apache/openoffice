@@ -541,7 +541,7 @@ msgstr "སྤྱིར་བཏང་གི་ཡརའཕེལ་:"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT_PROGRESS.FixedText.Text
 msgid  "document $current$ of $overall$"
-msgstr "$overall$ གི་ཡིག་ཆ་ $current$  "
+msgstr "$overall$ གི་ཡིག་ཆ་$current$"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_MIGRATION_DONE.FixedText.Text
 msgid  "All forms and reports have been successfully processed. Press 'Next' to show a detailed summary."
@@ -1366,7 +1366,7 @@ msgstr "%PRODUCTNAME གཞི་རྟེན།"
 #: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FL_DETAILS.FixedLine.Text
 #, fuzzy
 msgid  "Details"
-msgstr "རྒྱས་བཤད་ཚུ་"
+msgstr "རྒྱས་བཤད་ཚུ།"
 
 #: source/ui/dlg/sqlmessage.src#DLG_SQLEXCEPTIONCHAIN.FT_ERRORLIST.FixedText.Text
 #, fuzzy
@@ -1505,7 +1505,7 @@ msgstr "ཀེསི་ཀེཌི་ དུས་མཐུན་བཟོ།(~
 #: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_NULL.RadioButton.Text
 #, fuzzy
 msgid  "~Set null"
-msgstr "སྟོང་ཆ་ གཞི་སྒྲིག་འབད།(~S)"
+msgstr "སྟོང་ཆ་གཞི་སྒྲིག་འབད།(~S)"
 
 #: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_DEFAULT.RadioButton.Text
 #, fuzzy
@@ -1945,7 +1945,7 @@ msgstr "ཧོསཊི་གི་མིང་།(~H)"
 #: source/ui/dlg/dbadmin.src#AUTO_HOST_AND_PORT(AUTO_Y).FT_PORTNUMBER.FixedText.Text
 #, fuzzy
 msgid  "~Port number"
-msgstr "འདྲེན་ལམ་གྱི་ཨང་།(~P)"
+msgstr "འདྲེན་ལམ་ཨང་།(~P)"
 
 #: source/ui/dlg/dbadmin.src#DLG_DATABASE_ADMINISTRATION.STR_PAGETITLE_GENERAL.String.Text
 #, fuzzy
@@ -2643,7 +2643,7 @@ msgstr "ཆོག་ཡིག་ཚུ་ མི་མཐུན་པས། ལ�
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.ModalDialog.Text
 #, fuzzy
 msgid  "Database Wizard"
-msgstr "གནད་སྡུད་གཞི་རྟེན་ ཝི་ཛརཌི།"
+msgstr "གནད་སྡུད་གཞི་རྟེན་གྱི་ ཝི་ཛརཌི།"
 
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_DBWIZARDTITLE.String.Text
 #, fuzzy
@@ -2663,7 +2663,7 @@ msgstr "ཌི་བེསི་མཐུད་ལམ་ གཞི་སྒྲ�
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_TEXT.String.Text
 #, fuzzy
 msgid  "Set up a connection to text files"
-msgstr "ཚིག་ཡིག་ཡིག་སྣོད་ཚུ་ལུ་ མཐུད་ལམ་ཅིག་གཞི་སྒྲིག་འབད།"
+msgstr "ཚིག་ཡིག་ཡིག་སྣོད་ཚུ་ལུ་ མཐུད་ལམ་གཞི་སྒྲིག་འབད།"
 
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MSACCESS.String.Text
 #, fuzzy
@@ -3744,8 +3744,9 @@ msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Ima
 msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.String.Text
+#, fuzzy
 msgid  "Insert/remove primary key"
-msgstr "ལྡེ་མིག་གཙོ་བོ་འདི་ བཙུགས་/བཏོན་གཏང་།"
+msgstr "ལྡེ་མིག་གཙོ་བོ་འདི་ བཙུགས་/རྩ་བསྐྲད་གཏང་།"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_YES.String.Text
 #, fuzzy

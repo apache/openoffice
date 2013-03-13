@@ -113,7 +113,7 @@ msgstr ""
 
 #: source/text/scalc/00/00000402.xhp#par_id3155306.18
 msgid  "Open context menu for a sheet tab"
-msgstr "ཤོག་ཁྲམ་མཆོང་ལྡེ་གི་དོན་ལུ་ སྐབས་དོན་དཀར་ཆག་ཁ་ཕྱེ།"
+msgstr "ཤོག་ཁྲམ་མཆོང་ལྡེ་གི་དོན་ལུ་སྐབས་དོན་དཀར་ཆག་ཁ་ཕྱེ།"
 
 #: source/text/scalc/00/00000402.xhp#par_id3146119.14
 msgid  "Choose \<emph\>Edit – Sheets – Move/Copy\</emph\>"
@@ -1041,7 +1041,7 @@ msgstr ""
 #: source/text/scalc/01/02110000.xhp#hd_id3150037.26
 #, fuzzy
 msgid  "Drag Mode"
-msgstr "ཐབས་ལམ་འདྲུད།"
+msgstr "འདྲུད་ནིའི་ཐབས་ལམ།"
 
 #: source/text/scalc/01/02110000.xhp#par_id3157876.28
 msgid  "\<ahelp hid=\"HID_SC_NAVIPI_DROP\"\>Opens a submenu for selecting the drag mode. You decide which action is performed when dragging and dropping an object from the Navigator into a document. Depending on the mode you select, the icon indicates whether a hyperlink, link or a copy is created.\</ahelp\>"
@@ -1650,7 +1650,7 @@ msgstr ""
 #: source/text/scalc/01/02150000.xhp#tit
 #, fuzzy
 msgid  "Deleting Contents"
-msgstr "ནང་ཐོན་ཚུ་བཏོན་གཏང་དོ།"
+msgstr "ནང་དོན་ཚུ་བཏོན་གཏང་དོ།"
 
 #: source/text/scalc/01/02150000.xhp#bm_id3143284
 msgid  "\<bookmark_value\>deleting; cell contents\</bookmark_value\>\<bookmark_value\>cells; deleting contents\</bookmark_value\>\<bookmark_value\>spreadsheets; deleting cell contents\</bookmark_value\>\<bookmark_value\>cell contents; deleting\</bookmark_value\>"
@@ -2643,7 +2643,7 @@ msgstr ""
 #: source/text/scalc/01/04060100.xhp#tit
 #, fuzzy
 msgid  "Functions by Category"
-msgstr "དབྱེ་རིམ་གྱིས་འབད་ལས་འགན་འགན་"
+msgstr "དབྱེ་རིམ་གིས་འབད་ལས་འགན་ཚུ་"
 
 #: source/text/scalc/01/04060100.xhp#bm_id3148575
 msgid  "\<bookmark_value\>functions;listed by category\</bookmark_value\>      \<bookmark_value\>categories of functions\</bookmark_value\>      \<bookmark_value\>list of functions\</bookmark_value\>"
@@ -5055,7 +5055,7 @@ msgstr ""
 #: source/text/scalc/01/04060104.xhp#hd_id5459456
 #, fuzzy
 msgid  "Example"
-msgstr "དཔེར་ན།"
+msgstr "དཔེར་བརྗོད།"
 
 #: source/text/scalc/01/04060104.xhp#par_id3994567
 msgid  "\<item type=\"input\"\>=INFO("release")\</item\> returns the product release number of the %PRODUCTNAME in use."
@@ -5748,7 +5748,7 @@ msgstr ""
 #: source/text/scalc/01/04060104.xhp#hd_id3151255.136
 #, fuzzy
 msgid  "TYPE"
-msgstr "TYPE"
+msgstr "དབྱེ་བ།"
 
 #: source/text/scalc/01/04060104.xhp#par_id3155900.137
 msgid  "\<ahelp hid=\"HID_FUNC_TYP\"\>Returns the type of value.\</ahelp\>"
@@ -6126,7 +6126,7 @@ msgstr ""
 #: source/text/scalc/01/04060105.xhp#tit
 #, fuzzy
 msgid  "Logical Functions"
-msgstr "ལས་འགན་གཏན་ཚིག་ཅན་ཚུ།"
+msgstr "གཏན་ཚིག་ཅན་ལས་འགན་ཚུ།"
 
 #: source/text/scalc/01/04060105.xhp#bm_id3153484
 msgid  "\<bookmark_value\>logical functions\</bookmark_value\>      \<bookmark_value\>Function Wizard; logical\</bookmark_value\>      \<bookmark_value\>functions; logical functions\</bookmark_value\>"
@@ -6464,7 +6464,7 @@ msgstr ""
 #: source/text/scalc/01/04060106.xhp#hd_id3155823.38
 #, fuzzy
 msgid  "Example"
-msgstr "དཔེར་ན།"
+msgstr "དཔེར་བརྗོད།"
 
 #: source/text/scalc/01/04060106.xhp#par_id3152787.39
 msgid  "\<item type=\"input\"\>=ABS(-56)\</item\> returns 56."
@@ -6508,7 +6508,7 @@ msgstr ""
 #: source/text/scalc/01/04060106.xhp#hd_id3146139.47
 #, fuzzy
 msgid  "Example"
-msgstr "དཔེར་ན།"
+msgstr "དཔེར་བརྗོད།"
 
 #: source/text/scalc/01/04060106.xhp#par_id3148586.48
 msgid  "\<item type=\"input\"\>=COUNTBLANK(A1:B2)\</item\> returns 4 if cells A1, A2, B1, and B2 are all empty."
@@ -6544,12 +6544,12 @@ msgstr ""
 #: source/text/scalc/01/04060106.xhp#par_id679647
 #, fuzzy
 msgid  "To return the angle in degrees, use the DEGREES function."
-msgstr "གྲུ་ཟུར་ཚུ་ཁུག་ཟུར་ནང་ལོག་ནི་ལུ་  ཁུག་ཟུར་ལཱ་འགན་འདི་ལག་ལེན་འཐབ།"
+msgstr "གྲུ་ཟུར་ཚུ་ཁུག་ཟུར་ནང་སླར་ལོག་འབད་ནི་ལུ་  ཁུག་ཟུར་ལཱ་འགན་ཚུ་ལག་ལེན་འཐབ།"
 
 #: source/text/scalc/01/04060106.xhp#hd_id3149882.55
 #, fuzzy
 msgid  "Example"
-msgstr "དཔེར་ན།"
+msgstr "དཔེར་བརྗོད།"
 
 #: source/text/scalc/01/04060106.xhp#par_id3150128.56
 msgid  "\<item type=\"input\"\>=ACOS(-1)\</item\> returns 3.14159265358979 (PI radians)"
@@ -6594,7 +6594,7 @@ msgstr "<emph>ཨང་གྲངས་</emph> ༡་ ལས་སྦོམ་ཡ
 #: source/text/scalc/01/04060106.xhp#hd_id3150566.65
 #, fuzzy
 msgid  "Example"
-msgstr "དཔེར་ན།"
+msgstr "དཔེར་བརྗོད།"
 
 #: source/text/scalc/01/04060106.xhp#par_id3145629.66
 msgid  "\<item type=\"input\"\>=ACOSH(1)\</item\> returns 0."
@@ -6639,7 +6639,7 @@ msgstr "གྲུ་ཟུར་ཚུ་ཁུག་ཟུར་ནང་སླ
 #: source/text/scalc/01/04060106.xhp#hd_id3147538.75
 #, fuzzy
 msgid  "Example"
-msgstr "དཔེར་ན།"
+msgstr "དཔེར་བརྗོད།"
 
 #: source/text/scalc/01/04060106.xhp#par_id3155375.76
 msgid  "\<item type=\"input\"\>=ACOT(1)\</item\> returns 0.785398163397448 (PI/4 radians)."
@@ -6684,7 +6684,7 @@ msgstr "འཛོལ་བ་བྱུངམ་ཨིན་ <emph>ཨང་ག�
 #: source/text/scalc/01/04060106.xhp#hd_id3083452.85
 #, fuzzy
 msgid  "Example"
-msgstr "དཔེར་ན།"
+msgstr "དཔེར་བརྗོད།"
 
 #: source/text/scalc/01/04060106.xhp#par_id3150608.86
 msgid  "\<item type=\"input\"\>=ACOTH(1.1)\</item\> returns inverse hyperbolic cotangent of 1.1, approximately 1.52226."
@@ -6724,7 +6724,7 @@ msgstr ""
 #: source/text/scalc/01/04060106.xhp#hd_id3149448.95
 #, fuzzy
 msgid  "Example"
-msgstr "དཔེར་ན།"
+msgstr "དཔེར་བརྗོད།"
 
 #: source/text/scalc/01/04060106.xhp#par_id3156100.96
 msgid  "\<item type=\"input\"\>=ASIN(0)\</item\> returns 0."
@@ -6768,7 +6768,7 @@ msgstr ""
 #: source/text/scalc/01/04060106.xhp#hd_id3153212.105
 #, fuzzy
 msgid  "Example"
-msgstr "དཔེར་ན།"
+msgstr "དཔེར་བརྗོད།"
 
 #: source/text/scalc/01/04060106.xhp#par_id3156120.106
 msgid  "\<item type=\"input\"\>=ASINH(-90)\</item\> returns approximately -5.1929877."
@@ -6812,7 +6812,7 @@ msgstr ""
 #: source/text/scalc/01/04060106.xhp#hd_id3154054.115
 #, fuzzy
 msgid  "Example"
-msgstr "དཔེར་བརྗོད།"
+msgstr "དཔེར་ན།"
 
 #: source/text/scalc/01/04060106.xhp#par_id3143229.116
 msgid  "\<item type=\"input\"\>=ATAN(1)\</item\> returns 0.785398163397448 (PI/4 radians)."
@@ -6864,7 +6864,7 @@ msgstr ""
 #: source/text/scalc/01/04060106.xhp#hd_id3145663.126
 #, fuzzy
 msgid  "Example"
-msgstr "དཔེར་བརྗོད།"
+msgstr "དཔེར་ན།"
 
 #: source/text/scalc/01/04060106.xhp#par_id3154692.127
 msgid  "\<item type=\"input\"\>=ATAN2(20;20)\</item\> returns 0.785398163397448 (PI/4 radians)."
@@ -9778,7 +9778,7 @@ msgstr "༢"
 #: source/text/scalc/01/04060107.xhp#par_idN10E1D
 #, fuzzy
 msgid  "=SUMPRODUCT(A1:A2+1)"
-msgstr "=SUMPRODUCT(A1:A2+1)"
+msgstr "=SUMPRODUCT(ཨེ་ ༡: ཨེ་ ༢+༡)"
 
 #: source/text/scalc/01/04060107.xhp#par_idN10E25
 #, fuzzy
@@ -12511,7 +12511,7 @@ msgstr ""
 #: source/text/scalc/01/04060110.xhp#hd_id3153011.241
 #, fuzzy
 msgid  "Syntax"
-msgstr "ཚིག་སྦྱོར།"
+msgstr "ཚིག་སྦྱོར་"
 
 #: source/text/scalc/01/04060110.xhp#par_id3155523.242
 msgid  "ARABIC("Text")"
@@ -12524,7 +12524,7 @@ msgstr ""
 #: source/text/scalc/01/04060110.xhp#hd_id3155758.244
 #, fuzzy
 msgid  "Example"
-msgstr "དཔེར་བརྗོད།"
+msgstr "དཔེར་བརྗོད་"
 
 #: source/text/scalc/01/04060110.xhp#par_id3154621.245
 msgid  "            \<item type=\"input\"\>=ARABIC("MXIV")\</item\> returns 1014"
@@ -12553,7 +12553,7 @@ msgstr ""
 #: source/text/scalc/01/04060110.xhp#hd_id9204992
 #, fuzzy
 msgid  "Syntax"
-msgstr "ཚིག་སྦྱོར་"
+msgstr "ཚིག་སྦྱོར།"
 
 #: source/text/scalc/01/04060110.xhp#par_id1993774
 msgid  "ASC("Text")"
@@ -12597,7 +12597,7 @@ msgstr ""
 #: source/text/scalc/01/04060110.xhp#hd_id9694814
 #, fuzzy
 msgid  "Example"
-msgstr "དཔེར་བརྗོད་"
+msgstr "དཔེར་བརྗོད།"
 
 #: source/text/scalc/01/04060110.xhp#par_id3289284
 msgid  "            \<item type=\"input\"\>=BAHTTEXT(12.65)\</item\> returns a string in Thai characters with the meaning of "Twelve Baht and sixty five Satang"."
@@ -12641,7 +12641,7 @@ msgstr ""
 #: source/text/scalc/01/04060110.xhp#hd_id3146323.220
 #, fuzzy
 msgid  "Example"
-msgstr "དཔེར་བརྗོད།"
+msgstr "དཔེར་ན།"
 
 #: source/text/scalc/01/04060110.xhp#bm_id3156399
 msgid  "\<bookmark_value\>decimal system; converting to\</bookmark_value\>"
@@ -12697,7 +12697,7 @@ msgstr ""
 #: source/text/scalc/01/04060110.xhp#hd_id3152982.207
 #, fuzzy
 msgid  "Example"
-msgstr "དཔེར་ན།"
+msgstr "དཔེར་བརྗོད།"
 
 #: source/text/scalc/01/04060110.xhp#par_id3149890.208
 msgid  "            \<item type=\"input\"\>=CHAR(100)\</item\> returns the character d."
@@ -14569,7 +14569,7 @@ msgstr "༨"
 #: source/text/scalc/01/04060112.xhp#par_id3156310.96
 #, fuzzy
 msgid  "Row2"
-msgstr "གྲལ་ཐིག་ ༢"
+msgstr "གྲལ་ཐིག་༢།"
 
 #: source/text/scalc/01/04060112.xhp#par_id3150968.97
 msgid  "Row number in the lower-right corner of the cell area; numbering starts at 0."
@@ -14583,7 +14583,7 @@ msgstr "༡༠"
 #: source/text/scalc/01/04060112.xhp#par_id3153218.99
 #, fuzzy
 msgid  "Tab2"
-msgstr "མཆོང་ལྡེ་ ༢"
+msgstr "མཆོང་ལྡེ་༢།"
 
 #: source/text/scalc/01/04060112.xhp#par_id3147086.100
 msgid  "Table number in the lower-right corner of the cell area; numbering starts at 0."
@@ -14597,7 +14597,7 @@ msgstr "༡༢"
 #: source/text/scalc/01/04060112.xhp#par_id3152934.102
 #, fuzzy
 msgid  "Count"
-msgstr "གྱངས་ཁ།"
+msgstr "གྱངས་ཁ་རྐྱབས།"
 
 #: source/text/scalc/01/04060112.xhp#par_id3145202.103
 msgid  "Number of the following elements. Empty cells are not counted or passed."
@@ -14611,12 +14611,12 @@ msgstr "༡༤"
 #: source/text/scalc/01/04060112.xhp#par_id3156002.105
 #, fuzzy
 msgid  "Col"
-msgstr "ཀེར་ཐིག"
+msgstr "Col"
 
 #: source/text/scalc/01/04060112.xhp#par_id3147276.106
 #, fuzzy
 msgid  "Column number of the element. Numbering starts at 0."
-msgstr "ཆ་ཤས་ཀྱི་ ཀེར་ཐིག་གྱངས་ཁ། ཨང་བཏགས་ནི་དེ་ ༠ ལས་འགོ་བཙུགསཔ་ཨིན།"
+msgstr "ཆ་ཤས་ཀྱི་་ཀེར་ཐིག་གྱངས་ཁ། ཨང་བཏགས་ནི་དེ་ ༠ ལས་འགོ་བཙུགསཔ་ཨིན།"
 
 #: source/text/scalc/01/04060112.xhp#par_id3151295.107
 #, fuzzy
@@ -14631,7 +14631,7 @@ msgstr "གྲལ་ཐིག"
 #: source/text/scalc/01/04060112.xhp#par_id3155851.109
 #, fuzzy
 msgid  "Row number of the element; numbering starts at 0."
-msgstr "ཆ་ཤས་ཀྱི་ གྲལ་ཐིག་གྱངས་ཁ། ཨང་བཏགས་ནི་དེ་ ༠ ལས་འགོ་བཙུགསཔ་ཨིན།"
+msgstr "ཆ་ཤས་ཀྱི་གྲལ་ཐིག་ཨང་། ཨང་བཏགས་ནི་དེ་ ༠ ལས་འགོ་བཙུགསཔ་ཨིན།"
 
 #: source/text/scalc/01/04060112.xhp#par_id3153150.110
 #, fuzzy
@@ -14646,7 +14646,7 @@ msgstr "མཆོང་ལྡེ།"
 #: source/text/scalc/01/04060112.xhp#par_id3150154.112
 #, fuzzy
 msgid  "Table number of the element; numbering starts at 0."
-msgstr "ཆ་ཤས་ཀྱི་ ཐིག་ཁྲམ་གྱངས་ཁ། ཨང་བཏགས་ནི་དེ་ ༠ ལས་འགོ་བཙུགསཔ་ཨིན།"
+msgstr "ཆ་ཤས་ཀྱི་ གྱངས་ཁ་བསྡོམས་། ཨང་བཏགས་ནི་དེ་ ༠ ལས་ འགོ་བཙུགསཔ་ཨིན། "
 
 #: source/text/scalc/01/04060112.xhp#par_id3149289.113
 #, fuzzy
@@ -14656,7 +14656,7 @@ msgstr "༢༠"
 #: source/text/scalc/01/04060112.xhp#par_id3156010.114
 #, fuzzy
 msgid  "Error"
-msgstr "འཛོལ།"
+msgstr "འཛོལ་བ།"
 
 #: source/text/scalc/01/04060112.xhp#par_id3159181.115
 msgid  "Error number, where the value 0 is defined as "no error." If the element comes from a formula cell the error value is determined by the formula."
@@ -14689,7 +14689,7 @@ msgstr "..."
 #: source/text/scalc/01/04060112.xhp#par_id3155388.121
 #, fuzzy
 msgid  "Next element"
-msgstr "ཤུལ་མའི་ཆ་ཤས།"
+msgstr "ཤུལ་མམ་གྱི་ཆ་ཤས།"
 
 #: source/text/scalc/01/04060112.xhp#hd_id3154935.122
 #, fuzzy
@@ -14823,7 +14823,7 @@ msgstr "Col"
 #: source/text/scalc/01/04060112.xhp#par_id3154334.150
 #, fuzzy
 msgid  "Column number of the element. Numbering starts at 0."
-msgstr "ཆ་ཤས་ཀྱི་་ཀེར་ཐིག་གྱངས་ཁ། ཨང་བཏགས་ནི་དེ་ ༠ ལས་འགོ་བཙུགསཔ་ཨིན།"
+msgstr "ཆ་ཤས་ཀྱི་ ཀེར་ཐིག་ཨང་། ཨང་བཏགས་ནི་དེ་ ༠ ལས་འགོ་བཙུགསཔ་ཨིན།"
 
 #: source/text/scalc/01/04060112.xhp#par_id3149416.151
 #, fuzzy
@@ -15157,7 +15157,7 @@ msgstr "ཤུལ་མམ་གྱི་ཆ་ཤས།"
 #: source/text/scalc/01/04060115.xhp#tit
 #, fuzzy
 msgid  "Add-in Functions, List of Analysis Functions Part One"
-msgstr "ཨེཌི་ཨིནསི་ ལས་འགན་ཚུ། དཔྱད་ཞིབ་ལས་འགན་ཚུའི་ཐོ་ཡིག་ལེའུ་གཅིག"
+msgstr "ཨེཌི་ཨིནསི་ ལས་འགན་ཚུ་ དཔྱད་ཞིབ་ལས་འགན་ཚུའི་ཐོ་ཡིག་ལེའུ་གཅིག"
 
 #: source/text/scalc/01/04060115.xhp#bm_id3152871
 msgid  "\<bookmark_value\>add-ins; analysis functions\</bookmark_value\>\<bookmark_value\>analysis functions\</bookmark_value\>"
@@ -18244,7 +18244,7 @@ msgstr ""
 #: source/text/scalc/01/04060119.xhp#tit
 #, fuzzy
 msgid  "Financial Functions Part Two"
-msgstr "དངུལ་འབྲེལ་ལས་འགན་ཚུའི་ ལེའུ་གཉིས་ལུ། "
+msgstr "དངུལ་འབྲེལ་ལས་འགན་ཚུའི་ ལེའུ་གཉིས།"
 
 #: source/text/scalc/01/04060119.xhp#hd_id3149052.1
 #, fuzzy
@@ -18437,7 +18437,7 @@ msgstr "དཔེར་བརྗོད།"
 #: source/text/scalc/01/04060119.xhp#par_id3148774.193
 #, fuzzy
 msgid  "The following mortgage loan is taken out on a house:"
-msgstr "འོག་ལུ་ཡོད་པའི་སྐྱིལ་འགྲུལ་གཏའ་མ་དེ་ ཁྱིམ་གྱི་དོན་ལུ་འབག་ཡོདཔ་ཨིན།:"
+msgstr "འོག་ལུ་ཡོད་པའི་ སྐྱིལ་འགྲུལ་གཏའ་མ་དེ་ ཁྱིམ་གྱི་དོན་ལུ་འབག་ཡོདཔ་ཨིན།:"
 
 #: source/text/scalc/01/04060119.xhp#par_id3150661.194
 msgid  "Rate: 9.00 per cent per annum (9% / 12 = 0.0075), Duration: 30 years (payment periods = 30 * 12 = 360), NPV: 125000 currency units."
@@ -23050,7 +23050,7 @@ msgstr ""
 #: source/text/scalc/01/04060199.xhp#tit
 #, fuzzy
 msgid  "Operators in $[officename] Calc"
-msgstr " $[officename] ཀེལ་སི་ ནང་ལུ་ བཀོལ་སྤྱོདཔ་ཚུ།"
+msgstr " $[officename] ཀེལ་སི་ནང་བཀོད་སྤྱོདཔ་ཚུ།"
 
 #: source/text/scalc/01/04060199.xhp#bm_id3156445
 msgid  "\<bookmark_value\>formulas; operators\</bookmark_value\>\<bookmark_value\>operators; formula functions\</bookmark_value\>\<bookmark_value\>division sign, see also operators\</bookmark_value\>\<bookmark_value\>multiplication sign, see also operators\</bookmark_value\>\<bookmark_value\>minus sign, see also operators\</bookmark_value\>\<bookmark_value\>plus sign, see also operators\</bookmark_value\>\<bookmark_value\>text operators\</bookmark_value\>\<bookmark_value\>comparisons;operators in Calc\</bookmark_value\>\<bookmark_value\>arithmetical operators\</bookmark_value\>\<bookmark_value\>reference operators\</bookmark_value\>"
@@ -23750,7 +23750,7 @@ msgstr ""
 #: source/text/scalc/01/04080000.xhp#tit
 #, fuzzy
 msgid  "Function List"
-msgstr "ལས་འགན་ཐོ་བཀོད།"
+msgstr "ལས་འགན་ཐོ་ཡིག"
 
 #: source/text/scalc/01/04080000.xhp#bm_id3154126
 msgid  "\<bookmark_value\>formula list window\</bookmark_value\>\<bookmark_value\>function list window\</bookmark_value\>\<bookmark_value\>inserting functions; function list window\</bookmark_value\>"
@@ -24733,7 +24733,7 @@ msgstr "སེལ་འཐུ་ལས་བཟོ་རྣམ་གསརཔ།
 #: source/text/scalc/01/05100000.xhp#hd_id3153813.19
 #, fuzzy
 msgid  "Update Style"
-msgstr "བཟོ་རྣམ་དུས་མཐུན་མཟོ།"
+msgstr "བཟོ་རྣམ་དུས་མཐུན་བཟོ།"
 
 #: source/text/scalc/01/05100000.xhp#par_id3154707.21
 msgid  "\<ahelp hid=\"HID_TEMPLDLG_UPDATEBYEXAMPLE\"\>Updates the Style selected in the Styles and Formatting window with the current formatting of the selected object.\</ahelp\>"
@@ -25912,7 +25912,7 @@ msgstr ""
 #: source/text/scalc/01/12030100.xhp#hd_id3154492.9
 #, fuzzy
 msgid  "Then by"
-msgstr "དེ་ལས་གིས། "
+msgstr "དེ་ལས་ དེ་གིས།"
 
 #: source/text/scalc/01/12030100.xhp#par_id3156283.10
 msgid  "\<ahelp hid=\"SC:LISTBOX:RID_SCPAGE_SORT_FIELDS:LB_SORT2\"\>Select the column that you want to use as the secondary sort key.\</ahelp\>"
@@ -26054,7 +26054,7 @@ msgstr ""
 #: source/text/scalc/01/12030200.xhp#hd_id3155445.16
 #, fuzzy
 msgid  " Custom sort order"
-msgstr " སྲོལ་སྒྲིག་དབྱེ་སེལ་གོ་རིམ་"
+msgstr "སྲོལ་སྒྲིག་དབྱེ་སེལ་གོ་རིམ་"
 
 #: source/text/scalc/01/12030200.xhp#par_id3156385.17
 msgid  "\<ahelp hid=\"SC:CHECKBOX:RID_SCPAGE_SORT_OPTIONS:BTN_SORT_USER\"\> Click here and then select the custom sort order that you want.\</ahelp\>"
@@ -26624,7 +26624,7 @@ msgstr ""
 #: source/text/scalc/01/12070100.xhp#tit
 #, fuzzy
 msgid  "Consolidate by"
-msgstr "གིས་ རྩ་བརྟན་བཟོ་ནི།"
+msgstr "གིས་རྩ་བརྟན་བཟོ་ནི།"
 
 #: source/text/scalc/01/12070100.xhp#hd_id3151210.1
 #, fuzzy
@@ -27961,7 +27961,7 @@ msgstr ""
 #: source/text/scalc/01/12090400.xhp#par_idN10576
 #, fuzzy
 msgid  "Manually at"
-msgstr "གུ་ལུ་ ལག་ཐོག་ལས།"
+msgstr "ལུ་ ལག་ཐོག་ལས།"
 
 #: source/text/scalc/01/12090400.xhp#par_idN1057A
 msgid  "Specifies whether to enter the start value for grouping yourself."
@@ -29925,8 +29925,9 @@ msgid  "\<link href=\"text/shared/01/05020300.xhp\" name=\"Format - Cell - Numbe
 msgstr ""
 
 #: source/text/scalc/02/02160000.xhp#tit
+#, fuzzy
 msgid  "Number Format: Add Decimal Place"
-msgstr "ཨང་གྲངས་རྩ་སྒྲིག་:བཅུ་ཚག་ས་གནས་ཁ་སྐོང་།"
+msgstr "ཨང་གྲངས་རྩ་སྒྲིག་: བཅུ་ཚག་ས་གནས་ཁ་སྐོང་འབད།"
 
 #: source/text/scalc/02/02160000.xhp#hd_id3150275.1
 msgid  "\<link href=\"text/scalc/02/02160000.xhp\" name=\"Number Format: Add Decimal Place\"\>Number Format: Add Decimal Place\</link\>"
@@ -30103,7 +30104,7 @@ msgstr "ཆ་མེད་གཏང་།"
 #: source/text/scalc/02/06070000.xhp#tit
 #, fuzzy
 msgid  "Accept"
-msgstr "དང་ལེན།"
+msgstr "དང་ལེན་འབད།"
 
 #: source/text/scalc/02/06070000.xhp#bm_id3143267
 msgid  "\<bookmark_value\>formula bar; accepting inputs\</bookmark_value\>\<bookmark_value\>functions; accepting input icon\</bookmark_value\>"
@@ -31364,7 +31365,7 @@ msgstr "༥༡༦"
 #: source/text/scalc/05/02140000.xhp#par_id3147423.52
 #, fuzzy
 msgid  "Internal syntax error"
-msgstr "ནང་འཁོད་ཚིག་སྦྱོར་འཛོལ་བ།"
+msgstr "ནག་འཁོད་ཚིག་སྦྱོར་འཛོལ་བ།"
 
 #: source/text/scalc/05/02140000.xhp#par_id3148437.53
 msgid  "Matrix is expected on the calculation stack, but is not available."
@@ -31378,7 +31379,7 @@ msgstr "༥༡༧"
 #: source/text/scalc/05/02140000.xhp#par_id3153934.55
 #, fuzzy
 msgid  "Internal syntax error"
-msgstr "ནག་འཁོད་ཚིག་སྦྱོར་འཛོལ་བ།"
+msgstr "ནང་འཁོད་ཚིག་སྦྱོར་འཛོལ་བ།"
 
 #: source/text/scalc/05/02140000.xhp#par_id3149507.56
 msgid  "Unknown code, for example, a document with a newer function is loaded in an older version that does not contain the function."

@@ -209,7 +209,7 @@ msgstr "ཇི་བི།"
 
 #: source/contnr/fileview.src#RID_FILEVIEW_CONTEXTMENU.MID_FILEVIEW_DELETE.MenuItem.Text
 msgid  "~Delete"
-msgstr "གཏོན་གཏང་།(~D)"
+msgstr "བཏོན་རཏང་།(~D)"
 
 #: source/contnr/fileview.src#RID_FILEVIEW_CONTEXTMENU.MID_FILEVIEW_RENAME.MenuItem.Text
 msgid  "~Rename"
@@ -337,7 +337,7 @@ msgstr "རང་བཞིན་གྱི།"
 
 #: source/control/ctrlbox.src#STR_SVT_COLLATE_ALPHANUMERIC.String.Text
 msgid  "Alphanumeric"
-msgstr "ཀ་ཁ་ཨང་ཡིག།"
+msgstr "ཀ་ཁའི་ཨང་ཡིག།"
 
 #: source/control/ctrlbox.src#STR_SVT_COLLATE_NORMAL.String.Text
 msgid  "Normal"
@@ -985,8 +985,9 @@ msgid  "StarChart 4.0 object"
 msgstr "སིཊར་ཅརཊི་ ༤.༠་དངོས་པོ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARCHART_50.String.Text
+#, fuzzy
 msgid  "StarChart 5.0 object"
-msgstr "སིཊར་ཅརཊི་ ༥.༠་ དངོས་པོ།"
+msgstr "སིཊར་ཅརཊི་ ༥.༠་དངོས་པོ།"
 
 #: source/dialogs/formats.src#STR_FORMAT_ID_STARIMAGE.String.Text
 #, fuzzy
@@ -1893,21 +1894,21 @@ msgstr "གནས་སྡུད་གཞི་རྟེན།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_CALC_TEMPLATE.String.Text
 #, fuzzy
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet Template"
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet Template"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION ཤོག་ཁྲམ་གྱི་ཊེམ་པེལེཊི།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_DRAW_TEMPLATE.String.Text
 #, fuzzy
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Drawing Template"
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing Template"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION པར་རིས་ཀྱི་ཊེམ་པེལེཊི།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_IMPRESS_TEMPLATE.String.Text
 #, fuzzy
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Presentation Template"
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation Template"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION གསལ་སྟོན་གྱི་ཊེམ་པེལེཊི།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_WRITER_TEMPLATE.String.Text
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Text Document Template"
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document Template"
 msgstr ""
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_LOCALE_VOLUME.String.Text
@@ -1947,37 +1948,37 @@ msgstr "ཨེམ་ཨེསི་ པ་ཝར་པོའིནཊི་ ས�
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXMATH_DOC.String.Text
 #, fuzzy
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Formula"
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Formula"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION མན་ངག"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXCHART_DOC.String.Text
 #, fuzzy
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Chart"
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION དཔེ་རིས།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXDRAW_DOC.String.Text
 #, fuzzy
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Drawing"
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION པར་རིས།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXCALC_DOC.String.Text
 #, fuzzy
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet"
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION ཤོག་ཁྲམ།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXIMPRESS_DOC.String.Text
 #, fuzzy
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Presentation"
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION གསལ་སྟོན།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXWRITER_DOC.String.Text
 #, fuzzy
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Text Document"
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION ཡིག་ཆ།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXGLOBAL_DOC.String.Text
 #, fuzzy
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Master Document"
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Master Document"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION ཡིག་ཆ་ཨམ།"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_MATHML_DOC.String.Text

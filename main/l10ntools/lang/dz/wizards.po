@@ -733,7 +733,7 @@ msgstr "ཤོག་ལེབ་བཟོ་རྣམ་ཚུ།(~P)"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 80.String.Text
 msgid  "Field selection"
-msgstr "ས་སྒོ་སེལ་འཐུ།"
+msgstr "ས་སྒོའི་སེལ་འཐུ།"
 
 #: source/formwizard/dbwizres.src#RID_DB_FORM_WIZARD_START + 81.String.Text
 msgid  "Set up a subform"
@@ -825,7 +825,7 @@ msgstr "ཐིག་ཁྲམ་ཚུ།(~T)"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 4.String.Text
 msgid  "A~vailable fields"
-msgstr "འཐོབ་ཚུགསཔའི་ས་སྒོ་ཚུ།(~v)"
+msgstr "འཐོབ་ཚུགས་པའི་ས་སྒོ་ཚུ།(~v)"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 5.String.Text
 msgid  "Name ~of the query"
@@ -1081,7 +1081,7 @@ msgstr "རྒྱས་བཤད་དམ་བཅུད་དོན།"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 84.String.Text
 msgid  "Grouping"
-msgstr "སྡེ་ཚན་བཟོ་ནི།"
+msgstr "སྡེ་བཟོ།"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 85.String.Text
 msgid  "Grouping conditions"
@@ -1548,9 +1548,8 @@ msgid  "Congratulations. You have entered all the information needed to create y
 msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 36.String.Text
-#, fuzzy
 msgid  "What do you want to do next?"
-msgstr "ཤུལ་མམ་འདི་འབད་ནི་ཨིན་ན?"
+msgstr "ཤུལ་མམ་ནང་ག་ཅི་འབད་ནི་སྨོ?"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 37.String.Text
 #, fuzzy
@@ -1629,8 +1628,9 @@ msgid  "Letter Wizard"
 msgstr "ཡི་གུའི་ཝི་ཛརཌི།"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 2.String.Text
+#, fuzzy
 msgid  "Label9"
-msgstr "ཁ་ཡིག་༩"
+msgstr "ཁ་ཡིག་༩ །"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 3.String.Text
 #, fuzzy
@@ -1667,8 +1667,9 @@ msgid  "~Include footer"
 msgstr "མཇུག་ཡིག་གྲངས་སུ་བཙུགས།(~I)"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 10.String.Text
+#, fuzzy
 msgid  "~Return address in envelope window"
-msgstr "ཡིག་ཤུབས་སྒོ་སྒྲིག་ནང་ སླར་ལོག་ཁ་བྱང་།(~R)"
+msgstr "ཡིག་ཤུབས་ནང་ སླར་ལོག་ཁ་བྱང་།(~R)"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 11.String.Text
 #, fuzzy
@@ -1686,8 +1687,9 @@ msgid  "Letter Signs"
 msgstr "ཡི་གུའི་རྟགས་ཚུ།"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 14.String.Text
+#, fuzzy
 msgid  "S~ubject line"
-msgstr "དོན་ཚན་གྲལ་ཐིག(~u)"
+msgstr "དོན་ཚན་གྱི་གྲལ་ཐིག(~u)"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 15.String.Text
 #, fuzzy
@@ -1700,8 +1702,9 @@ msgid  "Fold ~marks"
 msgstr "རྟགས་ཚུ་བལྟབ།(~m)"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 17.String.Text
+#, fuzzy
 msgid  "~Complimentary close"
-msgstr "ལྷན་ཐབས་བསྡམས།(~C)"
+msgstr "ལྷན་ཐབས་ཁ་བསྡམས།(~C)"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 18.String.Text
 #, fuzzy
@@ -1709,8 +1712,9 @@ msgid  "~Footer"
 msgstr "མཇུག་ཡིག(~F)"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 19.String.Text
+#, fuzzy
 msgid  "~Use user data for return address"
-msgstr "སླར་ལོག་ཁ་བྱང་གི་དོན་ལུ་ ལག་ལེན་པའི་གནད་སྡུད་ལག་ལེན་འཐབ།(~U)"
+msgstr "སླར་ལོག་ཁ་བྱང་དོན་ལུ་ལག་ལེན་པའི་གནད་སྡུད་ལག་ལེན་འཐབ།(~U)"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 20.String.Text
 #, fuzzy
@@ -1718,16 +1722,19 @@ msgid  "~New sender address:"
 msgstr "གཏང་མཁན་གྱི་ཁ་བྱང་གསརཔ།:(~N)"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 21.String.Text
+#, fuzzy
 msgid  "Use placeholders for ~recipient's address"
-msgstr "ལེན་མཁན་གྱི་ཁ་བྱང་གི་དོན་ལུ་ ས་གནས་འཛིན་མི་ཚུ་ལག་ལེན་འཐབ།(~r)"
+msgstr "ལེན་མཁན་གྱི་ཁ་བྱང་དོན་ལུ་ས་གནས་འཛིན་མི་ཚུ་ལག་ལེན་འཐབ།(~r)"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 22.String.Text
+#, fuzzy
 msgid  "Use address database for ~mail merge"
-msgstr "ཡིག་འཕྲིན་མཉམ་བསྡོམས་ཀྱི་དོན་ལུ་ ཁ་བྱང་གནད་སྡུད་ལག་ལེན་འཐབ།(~m)"
+msgstr "ཡིག་འཕྲིན་མཉམ་བསྡོམས་ཀྱི་དོན་ལུ་གནད་སྡུད་གཞི་རྟེན་ཁ་བྱང་ལག་ལེན་འཐབ།"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 23.String.Text
+#, fuzzy
 msgid  "Include ~only on second and following pages"
-msgstr "ཤོག་ལེབ་གཉིས་པ་དང་འོག་གི་ཤོག་ལེབ་ཚུ་ནང་རྐྱངམ་ཅིག་ གྲངས་སུ་བཙུགས།(~o)"
+msgstr "ཤོག་ལེབ་གཉིས་པ་དང་འོག་ལུ་ཡོད་མི་ཚུ་གུ་རྐྱངམ་ཅིག་གྲངས་སུ་བཙུགས།(~o)"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 24.String.Text
 #, fuzzy
@@ -1750,8 +1757,9 @@ msgid  "Make ~manual changes to this letter template"
 msgstr "འ་ནི་ཡི་གུའི་ཊེམ་པེལེཊི་འདི་ལུ་ལག་དེབ་བསྒྱུར་བཅོས་ཚུ་བཟོ།(~m)"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 28.String.Text
+#, fuzzy
 msgid  "Page design"
-msgstr "ཤོག་ལེབ་བཀོད་བསྒྲིག"
+msgstr "ཤོག་ལེབ་བསྒྲིག་བཀོད།"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 29.String.Text
 #, fuzzy
@@ -1778,12 +1786,14 @@ msgid  "~Width:"
 msgstr "རྒྱ་ཚད།:(~W)"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 34.String.Text
+#, fuzzy
 msgid  "S~pacing to left margin:"
-msgstr "ས་སྟོང་གཡོན་ལུ་ ས་སྟོང་བཞག་ཐངས།:(~p)"
+msgstr "ས་སྟོང་གཡོན་ལུ་ས་སྟོང་བཞག་ཐངས།:(~p)"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 35.String.Text
+#, fuzzy
 msgid  "Spacing ~to top margin:"
-msgstr "ས་སྟོང་མགོ་ལུ་ ས་སྟོང་བཞག་ཐངས།(~t)"
+msgstr "མགོའི་ས་སྟོང་ལུ་ས་སྟོང་བཞག་ཐངས།:(~t)"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 36.String.Text
 #, fuzzy
@@ -1830,8 +1840,9 @@ msgid  "Street:"
 msgstr "ཁྲོམ་ལམ།:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 45.String.Text
+#, fuzzy
 msgid  "ZIP code/State/City:"
-msgstr "གནས་ཨང་/མངའ་སྡེ་ / གྲོང་སྡེ།:"
+msgstr "གནས་ཨང་/མངའ་སྡེ་ /གྲོང་སྡེ།:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 46.String.Text
 #, fuzzy
@@ -1852,12 +1863,14 @@ msgid  "To create another new letter out of the template just navigate to the te
 msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 50.String.Text
+#, fuzzy
 msgid  "Template name:"
-msgstr "ཊེམ་པེལེཊི་མིང་།:"
+msgstr "ཊེམ་པེལེཊི་གི་མིང་།:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 51.String.Text
+#, fuzzy
 msgid  "Location and file name:"
-msgstr "གནས་ཁོངས་དང་ཡིག་སྣོད་མིང་།:"
+msgstr "གནས་ཁོངས་དང་ཡིག་སྣོད་ཀྱི་མིང་།:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 52.String.Text
 #, fuzzy
@@ -2083,7 +2096,7 @@ msgstr "གནས་ཁོངས་དང་ཡིག་སྣོད་མིང
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 27.String.Text
 #, fuzzy
 msgid  "What do you want to do next?"
-msgstr "ཤུལ་མམ་འདི་འབད་ནི་ཨིན་ན?"
+msgstr "ཤུལ་མམ་ནང་ག་ཅི་འབད་ནི་སྨོ?"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 28.String.Text
 #, fuzzy
@@ -2107,7 +2120,7 @@ msgstr "མཇུག་ཡིག་དོན་ལུ་ཚིག་ཡིག་
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 32.String.Text
 #, fuzzy
 msgid  "Choose a name and save the template"
-msgstr "མིང་གཅིག་གདམ་ཁ་རྐྱབ་སྟེ་ཊེམ་པེལེཊི་འདི་སྲུངས།"
+msgstr "མིང་གཅིག་གདམ་ཏེ་ཊེམ་པེལེཊི་སྲུངས།"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 33.String.Text
 #, fuzzy
@@ -3057,7 +3070,7 @@ msgstr "དུས་ཡུན།"
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +24.String.Text
 #, fuzzy
 msgid  "Meeting called by"
-msgstr "གྱིས་འབོ་ཡོད་པའི་འཛོམས་འདུ།"
+msgstr "གིས་འབོ་ཡོད་པའི་འཛོམས་འདུ།"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +25.String.Text
 #, fuzzy
@@ -3096,7 +3109,7 @@ msgstr ""
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +32.String.Text
 #, fuzzy
 msgid  "Type of meeting"
-msgstr "འཛོམས་འདུ་ཀྱི་དབྱེ་བ།"
+msgstr "འཛོམས་འདུའི་དབྱེ་བ།"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +33.String.Text
 #, fuzzy
@@ -3521,8 +3534,9 @@ msgid  "Drawing/presentation templates"
 msgstr "པར་རིས་/གསལ་སྟོན་ཊེམ་པེལེཊིསི།"
 
 #: source/importwizard/importwi.src#sXMLTemplateCheckbox_4_.String.Text
+#, fuzzy
 msgid  "Master documents"
-msgstr "ཡིག་ཆ་ཨམ་ཚུ།"
+msgstr "ཡིག་ཆའི་ཨམ་ཚུ།"
 
 #: source/importwizard/importwi.src#sXMLDocumentCheckbox_1_.String.Text
 #, fuzzy

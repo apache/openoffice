@@ -616,8 +616,9 @@ msgid  "Months"
 msgstr "ཟླཝ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.5.String.Text
+#, fuzzy
 msgid  "Number of months before or after the start date"
-msgstr "འགོ་བཙུགས་པའི་ཚེས་གྲངས་ཀྱི་ཤུལ་ལས་ཡང་ན་ཧེ་མ་ ཟླཝ་གི་གྲངས།"
+msgstr "འགོ་བཙུགས་པའི་ཚེས་གྲངས་ཀྱི་ཤུལ་ལས་ཡང་ན་ཧེ་མ་ ཟླཝ་གྱི་གྲངས།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.1.String.Text
 msgid  "Returns the number of the calendar week in which the specified date occurs."
@@ -708,8 +709,9 @@ msgid  "Returns the value 'true' if the number is even"
 msgstr "ཨང་དེ་ཆ་ཅན་ཨིན་པ་ཅིན་ གནས་གོང་'བདེན་པ་'དེ་སླར་ལོག་འབདཝ་ཨིན།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.2.String.Text
+#, fuzzy
 msgid  "Number"
-msgstr "ཨང་གྲངས།"
+msgstr "ཨང་།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.3.String.Text
 #, fuzzy
@@ -722,8 +724,9 @@ msgid  "Returns the value 'true' if the number is odd"
 msgstr "ཨང་དེ་ཡ་ཅན་ཨིན་པ་ཅིན་ གནས་གོང་'བདེན་པ་'དེ་སླར་ལོག་འབདཝ་ཨིན།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Isodd.2.String.Text
+#, fuzzy
 msgid  "Number"
-msgstr "ཨང་གྲངས།"
+msgstr "ཨང་།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Isodd.3.String.Text
 #, fuzzy
@@ -808,8 +811,9 @@ msgid  "Denominator"
 msgstr "གཞི་གྲངས།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.5.String.Text
+#, fuzzy
 msgid  "The divisor"
-msgstr "བགོ་བྱེད།"
+msgstr "བགོ་བྱེད་དེ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.1.String.Text
 #, fuzzy
@@ -817,8 +821,9 @@ msgid  "Returns a number rounded to a specified multiple"
 msgstr "གསལ་བཀོད་འབད་མི་སྣ་མང་ནང་ལུ་གྲངས་སྐྱེལ་སྐྱེལཝ་ཅིག་སླར་ལོག་འབདཝ་ཨིན།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.2.String.Text
+#, fuzzy
 msgid  "Number"
-msgstr "ཨང་།"
+msgstr "ཨང་གྲངས།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.3.String.Text
 #, fuzzy
@@ -840,8 +845,9 @@ msgid  "Returns the square root of a number which has been multiplied by pi"
 msgstr ""
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Sqrtpi.2.String.Text
+#, fuzzy
 msgid  "Number"
-msgstr "ཨང་།"
+msgstr "ཨང་གྲངས།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Sqrtpi.3.String.Text
 #, fuzzy
@@ -1013,8 +1019,9 @@ msgid  "Number"
 msgstr "ཨང་གྲངས།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.3.String.Text
+#, fuzzy
 msgid  "The binary number to be converted (as text)"
-msgstr "ཟུང་ལྡན་གྱི་ཨང་གཞི་བསྒྱུར་འབད་དགོཔ་(ཚིག་ཡིག་སྦེ)"
+msgstr "ཟུང་ལྡན་གྱི་ཨང་གཞི་བསྒྱུར་འབད་དགོཔ་(ཚིག་ཡིག་སྦེ)།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.4.String.Text
 #, fuzzy
@@ -1022,8 +1029,9 @@ msgid  "Places"
 msgstr "ས་གནས་ཚུ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.5.String.Text
+#, fuzzy
 msgid  "Number of places used"
-msgstr "ལག་ལེན་འཐབ་ཡོད་པའི་ས་གནས་ཚུའི་གྲངས།"
+msgstr "ལག་ལེན་འཐབ་ཡོད་པའི་ས་གནས་ཀྱི་གྲངས།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Dec.1.String.Text
 #, fuzzy
@@ -1038,7 +1046,7 @@ msgstr "ཨང་གྲངས།"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Dec.3.String.Text
 #, fuzzy
 msgid  "The binary number to be converted (as text)"
-msgstr "ཟུང་ལྡན་གྱི་ཨང་གཞི་བསྒྱུར་འབད་དགོཔ་(ཚིག་ཡིག་སྦེ)།"
+msgstr "ཟུང་ལྡན་གྱི་ཨང་གཞི་བསྒྱུར་འབད་དགོཔ་(ཚིག་ཡིག་སྦེ)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Hex.1.String.Text
 #, fuzzy
@@ -1078,7 +1086,7 @@ msgstr "ཨང་གྲངས།"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Bin.3.String.Text
 #, fuzzy
 msgid  "The octal number to be converted (as text)"
-msgstr "ཨོཀ་ཊཱལ་ཨང་གཞི་བསྒྱུར་འབད་དགོཔ་(ཚིག་ཡིག་སྦེ)"
+msgstr "ཨོཀ་ཊཱལ་གྱི་ཨང་གཞི་བསྒྱུར་འབད་དགོཔ་(ཚིག་ཡིག་སྦེ)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Bin.4.String.Text
 #, fuzzy
@@ -1088,7 +1096,7 @@ msgstr "ས་གནས་ཚུ།"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Bin.5.String.Text
 #, fuzzy
 msgid  "Number of places used"
-msgstr "ལག་ལེན་འཐབ་ཡོད་པའི་ས་གནས་ཀྱི་གྲངས།"
+msgstr "ལག་ལེན་འཐབ་ཡོད་པའི་ས་གནས་ཚུའི་ཨང་གྲངས།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Dec.1.String.Text
 #, fuzzy
@@ -1128,7 +1136,7 @@ msgstr "ས་གནས་ཚུ།"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Hex.5.String.Text
 #, fuzzy
 msgid  "Number of places used"
-msgstr "ལག་ལེན་འཐབ་ཡོད་པའི་ས་གནས་ཚུའི་ཨང་གྲངས།"
+msgstr "ལག་ལེན་འཐབ་ཡོད་པའི་ས་གནས་ཚུའི་གྲངས།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Bin.1.String.Text
 #, fuzzy
@@ -1153,7 +1161,7 @@ msgstr "ས་གནས་ཚུ།"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Bin.5.String.Text
 #, fuzzy
 msgid  "Number of places used"
-msgstr "ལག་ལེན་འཐབ་ཡོད་པའི་ས་གནས་ཚུའི་གྲངས།"
+msgstr "ལག་ལེན་འཐབ་ཡོད་པའི་ས་གནས་ཀྱི་གྲངས།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Hex.1.String.Text
 #, fuzzy
@@ -1178,7 +1186,7 @@ msgstr "ས་གནས་ཚུ།"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Hex.5.String.Text
 #, fuzzy
 msgid  "Number of places used"
-msgstr "ལག་ལེན་འཐབ་ཡོད་པའི་ས་གནས་ཀྱི་གྲངས།"
+msgstr "ལག་ལེན་འཐབ་ཡོད་པའི་ས་གནས་ཚུའི་ཨང་གྲངས།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.1.String.Text
 #, fuzzy
@@ -1203,7 +1211,7 @@ msgstr "ས་གནས་ཚུ།"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.5.String.Text
 #, fuzzy
 msgid  "Number of places used"
-msgstr "ལག་ལེན་འཐབ་ཡོད་པའི་ས་གནས་ཚུའི་ཨང་གྲངས།"
+msgstr "ལག་ལེན་འཐབ་ཡོད་པའི་ས་གནས་ཚུའི་གྲངས།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Bin.1.String.Text
 #, fuzzy
@@ -1303,7 +1311,7 @@ msgstr "འཛོལ་བའི་ལས་འགན་སླར་ལོག་
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Erf.2.String.Text
 #, fuzzy
 msgid  "Lower limit"
-msgstr "ཚད་དམའ་མི།"
+msgstr "དམའ་མི་ཚད།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Erf.3.String.Text
 #, fuzzy
@@ -1479,7 +1487,7 @@ msgstr "གཞི་གྲངས།"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imdiv.5.String.Text
 #, fuzzy
 msgid  "The divisor"
-msgstr "བགོ་བྱེད་དེ།"
+msgstr "བགོ་བྱེད།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imexp.1.String.Text
 msgid  "Returns the algebraic form of the exponential of a complex number"
@@ -2018,7 +2026,7 @@ msgstr "གོང་ཚད།"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.9.String.Text
 #, fuzzy
 msgid  "The rate"
-msgstr "གོང་ཚད་དེ།"
+msgstr "གོང་ཚད་ད།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.10.String.Text
 #, fuzzy
@@ -2062,7 +2070,7 @@ msgstr "སྤྲོད་པ།"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.3.String.Text
 #, fuzzy
 msgid  "The issue date"
-msgstr "སྤྲོད་པའི་ཚེས་གྲངས།"
+msgstr "སྤྲོད་པའི་ཚེས་གྲངས་དེ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.4.String.Text
 #, fuzzy
@@ -2082,7 +2090,7 @@ msgstr "གོང་ཚད།"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.7.String.Text
 #, fuzzy
 msgid  "The rate"
-msgstr "གོང་ཚད་ད།"
+msgstr "གོང་ཚད་དེ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.8.String.Text
 #, fuzzy
@@ -2121,7 +2129,7 @@ msgstr "བུ་ལོན་སྤྲོད་འཇལ་དེ།"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.4.String.Text
 #, fuzzy
 msgid  "Maturity"
-msgstr "དུས་ཡུན་ཚང་བ།"
+msgstr "དུས་ཡུད་ཚང་བ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.5.String.Text
 #, fuzzy
@@ -2176,7 +2184,7 @@ msgstr "བུ་ལོན་སྤྲོད་འཇལ་དེ།"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.4.String.Text
 #, fuzzy
 msgid  "Maturity"
-msgstr "དུས་ཡུད་ཚང་བ།"
+msgstr "དུས་ཡུན་ཚང་བ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.5.String.Text
 #, fuzzy
@@ -2201,7 +2209,7 @@ msgstr "བུན་ཚབ།"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.9.String.Text
 #, fuzzy
 msgid  "The redemption value"
-msgstr "བུན་ཚབ་ཀྱི་གནས་གོང་།"
+msgstr "བུན་ཚབ་ཀྱི་གནས་གོང་དེ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.10.String.Text
 #, fuzzy
@@ -2250,12 +2258,12 @@ msgstr "འཛིན་ཤོག་གི་གོང་ཚད།"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.8.String.Text
 #, fuzzy
 msgid  "Yield"
-msgstr "ཨིལཌི། (ཐོན་འབྲས)"
+msgstr "ཨིལཌི།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.9.String.Text
 #, fuzzy
 msgid  "The yield"
-msgstr "ཨིལཌི་ (ཐོན་འབྲས)་དེ།"
+msgstr "ཨིལཌིཡ་དེ། (ཐོན་འབྲས)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.10.String.Text
 #, fuzzy
@@ -2295,7 +2303,7 @@ msgstr "གོང་ཚད་ཆུང་བ་དེ།"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Effect.4.String.Text
 #, fuzzy
 msgid  "Npery"
-msgstr "ཨེན་པེ་རི།"
+msgstr "ཨེན་པི་རེ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Effect.5.String.Text
 #, fuzzy
@@ -2334,7 +2342,7 @@ msgstr "པི་ཝི།"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.7.String.Text
 #, fuzzy
 msgid  "The present value"
-msgstr "ད་ལྟོའི་གནས་གོང་།"
+msgstr "ད་ལྟོའི་གནས་གོང་དེ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.8.String.Text
 #, fuzzy
@@ -2344,17 +2352,17 @@ msgstr "འགོ་བཙུགས་པའི་དུས་ཡུན།"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.9.String.Text
 #, fuzzy
 msgid  "The start period"
-msgstr "འགོ་བཙུགས་པའི་དུས་ཡུན་དེ།"
+msgstr "འགོ་བཙུགས་པའི་དས་ཡུན་དེ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.10.String.Text
 #, fuzzy
 msgid  "End period"
-msgstr "མཇུག་བསྡུ་བའི་དུས་ཡུན།"
+msgstr "མཇུག་བསྡུ་བའི་ཚེས་གྲངས།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.11.String.Text
 #, fuzzy
 msgid  "The end period"
-msgstr "མཇུག་བསྡུ་བའི་དུས་ཡུན་དེ།"
+msgstr "མཇུག་བསྡུ་བའི་ཚེས་གྲངས་དེ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.12.String.Text
 #, fuzzy
@@ -2364,7 +2372,7 @@ msgstr "དབྱེ་བ།"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.13.String.Text
 #, fuzzy
 msgid  "The type of maturity"
-msgstr "དུས་ཡུན་ཚང་བའི་དྦཡེ་བ་དེ།"
+msgstr "དུས་ཡུན་ཚང་བའི་དབྱེ་བ་དེ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumipmt.1.String.Text
 #, fuzzy
@@ -2468,12 +2476,12 @@ msgstr "གོང་ཚད་དེ།"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.8.String.Text
 #, fuzzy
 msgid  "Yield"
-msgstr "ཨིལཌི། (ཐོན་འབྲས)"
+msgstr "ཨིལཌི།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.9.String.Text
 #, fuzzy
 msgid  "The yield"
-msgstr "ཨིལཌིཡ་དེ། (ཐོན་འབྲས)"
+msgstr "ཨིལཌི་དེ། (ཐོན་འབྲས)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.10.String.Text
 #, fuzzy
@@ -2483,7 +2491,7 @@ msgstr "བུན་ཚབ།"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.11.String.Text
 #, fuzzy
 msgid  "The redemption value"
-msgstr "བུན་ཚབ་ཀྱི་གནས་གོང་དེ།"
+msgstr "བུན་ཚབ་ཀྱི་གནས་གོང་།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.12.String.Text
 #, fuzzy
@@ -2547,7 +2555,7 @@ msgstr "བུན་ཚབ།"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.9.String.Text
 #, fuzzy
 msgid  "The redemption value"
-msgstr "བུན་ཚབ་ཀྱི་གནས་གོང་དེ།"
+msgstr "བུན་ཚབ་ཀྱི་གནས་གོང་།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.10.String.Text
 #, fuzzy
@@ -2591,7 +2599,7 @@ msgstr "སྤྲོད་པ།"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.7.String.Text
 #, fuzzy
 msgid  "The issue date"
-msgstr "སྤྲོད་པའི་ཚེས་གྲངས།"
+msgstr "སྤྲོད་པའི་ཚེཚ་གྲངས།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.8.String.Text
 #, fuzzy
@@ -2611,7 +2619,7 @@ msgstr "ཨིལཌི། (ཐོན་འབྲས)"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.11.String.Text
 #, fuzzy
 msgid  "The yield"
-msgstr "ཨིལཌི་དེ། (ཐོན་འབྲས)"
+msgstr "ཨིལཌི་དེ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.12.String.Text
 #, fuzzy
@@ -2665,7 +2673,7 @@ msgstr "ཨིལཌི། (ཐོན་འབྲས)"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.9.String.Text
 #, fuzzy
 msgid  "The yield"
-msgstr "ཨིལཌི་དེ། (ཐོན་འབྲས)"
+msgstr "ཨིལཌི་དེ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.10.String.Text
 #, fuzzy
@@ -2812,7 +2820,7 @@ msgstr "བུན་ཚབ།"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.11.String.Text
 #, fuzzy
 msgid  "The redemption value"
-msgstr "བུན་ཚབ་ཀྱི་གནས་གོང་།"
+msgstr "བུན་ཚབ་ཀྱི་གནས་གོང་དེ།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.12.String.Text
 #, fuzzy
@@ -2876,7 +2884,7 @@ msgstr "བུན་ཚབ།"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yielddisc.9.String.Text
 #, fuzzy
 msgid  "The redemption value"
-msgstr "བུན་ཚབ་ཀྱི་གནས་གོང་དེ།"
+msgstr "བུན་ཚབ་ཀྱི་གནས་གོང་།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yielddisc.10.String.Text
 #, fuzzy
@@ -2985,7 +2993,7 @@ msgstr "མར་བཅག"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbilleq.7.String.Text
 #, fuzzy
 msgid  "The discount rate"
-msgstr "མར་བཅག་གི་གོང་ཚད་དེ།"
+msgstr "མར་བཅག་གི་གོང་ཚད།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbillprice.1.String.Text
 msgid  "Returns the price of 100 currency units face value for a treasury bill"
@@ -3098,7 +3106,7 @@ msgstr "འཛིན་ཤོག་དང་པ།"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.9.String.Text
 #, fuzzy
 msgid  "The first coupon date"
-msgstr "འཛིན་ཤོག་དང་པའི་ཚེས་གྲངས་དེ།"
+msgstr "འཛིན་ཤོག་དང་པའི་ཚེས་གྲངས།"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.10.String.Text
 #, fuzzy
@@ -3936,8 +3944,9 @@ msgid  "Date"
 msgstr "ཚེས་གྲངས།"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.3.String.Text
+#, fuzzy
 msgid  "Any day in the desired year"
-msgstr "རེ་འདུན་ཡོད་པའི་ལོ་ནང་ལུ་གཟའ་ག་ཅི་་རང་འབད་རུང་།"
+msgstr "རེ་འདུན་ཡོད་པའི་ལོ་ནང་ལུ་གཟའ་ག་ཅི་རང་འབད་རུང་།"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.1.String.Text
 msgid  "Returns the number of days of the month in which the date entered occurs"
