@@ -1308,8 +1308,9 @@ msgid  "Anonymous ~user"
 msgstr "مستخدم ~مجهول"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.BTN_BROWSE.ImageButton.Text
+#, fuzzy
 msgid  "WWW Browser"
-msgstr "استعراض WWWب"
+msgstr "متصفح الويب"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.BTN_BROWSE.ImageButton.QuickHelpText
 #, fuzzy
@@ -1317,13 +1318,14 @@ msgid  "WWW Browser"
 msgstr "استعراض WWWب"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.BTN_TARGET.ImageButton.Text
+#, fuzzy
 msgid  "Target in Document"
-msgstr "مستند هدفد"
+msgstr "الهدف في المستند"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.BTN_TARGET.ImageButton.QuickHelpText
 #, fuzzy
 msgid  "Target in Document"
-msgstr "الهدف في المستند"
+msgstr "مستند هدفد"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.GRP_MORE.FixedLine.Text
 #, fuzzy
@@ -1358,12 +1360,12 @@ msgstr "الاسم"
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.BTN_SCRIPT.ImageButton.QuickHelpText
 #, fuzzy
 msgid  "Events"
-msgstr "حدثث"
+msgstr "الأحداث"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.BTN_SCRIPT.ButtonImage.Text
 #, fuzzy
 msgid  "Events"
-msgstr "الأحداث"
+msgstr "حدثث"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.TabPage.Text
 #, fuzzy
@@ -1398,7 +1400,7 @@ msgstr "المو~ضوع"
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.BTN_ADRESSBOOK.ButtonImage.Text
 #, fuzzy
 msgid  "Data Sources..."
-msgstr "مصادر بيانات...ن"
+msgstr "دفتر العناوين"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.BTN_ADRESSBOOK.ButtonImage.QuickHelpText
 #, fuzzy
@@ -1438,12 +1440,12 @@ msgstr "الاسم"
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.BTN_SCRIPT.ImageButton.QuickHelpText
 #, fuzzy
 msgid  "Events"
-msgstr "حدثث"
+msgstr "الأحداث"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.BTN_SCRIPT.ButtonImage.Text
 #, fuzzy
 msgid  "Events"
-msgstr "الأحداث"
+msgstr "حدثث"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.TabPage.Text
 #, fuzzy
@@ -1463,7 +1465,7 @@ msgstr "ال~مسار"
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.BTN_FILEOPEN.ImageButton.QuickHelpText
 #, fuzzy
 msgid  "Open File"
-msgstr "فتح الملفف"
+msgstr "فتح ملف"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.BTN_FILEOPEN.ButtonImage.Text
 #, fuzzy
@@ -1493,7 +1495,7 @@ msgstr "نص اختبار"
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.BTN_BROWSE.ImageButton.QuickHelpText
 #, fuzzy
 msgid  "Target in Document"
-msgstr "مستند هدفد"
+msgstr "الهدف في المستند"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.BTN_BROWSE.ButtonImage.Text
 #, fuzzy
@@ -1533,12 +1535,12 @@ msgstr "الاسم"
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.BTN_SCRIPT.ImageButton.QuickHelpText
 #, fuzzy
 msgid  "Events"
-msgstr "حدثث"
+msgstr "الأحداث"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.BTN_SCRIPT.ButtonImage.Text
 #, fuzzy
 msgid  "Events"
-msgstr "الأحداث"
+msgstr "حدثث"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.TabPage.Text
 #, fuzzy
@@ -1573,7 +1575,7 @@ msgstr "~نوع الملف"
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.BTN_CREATE.ImageButton.QuickHelpText
 #, fuzzy
 msgid  "Select Path"
-msgstr "تحديد النمطر"
+msgstr "تحديد المسار"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.BTN_CREATE.ButtonImage.Text
 #, fuzzy
@@ -1613,7 +1615,7 @@ msgstr "الاسم"
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.BTN_SCRIPT.ImageButton.QuickHelpText
 #, fuzzy
 msgid  "Events"
-msgstr "حدثث"
+msgstr "الأحداث"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.BTN_SCRIPT.ButtonImage.Text
 #, fuzzy
@@ -2094,7 +2096,7 @@ msgid  "~Delete"
 msgstr "ح~ذف"
 
 #: source/dialogs/about.src#RID_DEFAULTABOUT.ModalDialog.Text
-msgid  "About %PRODUCTNAME"
+msgid  "About %FULLPRODUCTNAME"
 msgstr ""
 
 #: source/dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_BTN_README.PushButton.Text
@@ -6736,7 +6738,7 @@ msgstr "وسط ~س"
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.FT_TRGR_CENTER_Y.FixedText.Text
 #, fuzzy
 msgid  "Center ~Y"
-msgstr "وسط ~ص"
+msgstr "وسط ~Yص"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.FT_TRGR_ANGLE.FixedText.Text
 #, fuzzy
@@ -9761,12 +9763,12 @@ msgstr "إحداثي~ ص"
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_POSREFERENCE.FixedText.Text
 #, fuzzy
 msgid  "Base point"
-msgstr "نقطة أساسيةق"
+msgstr "نقطة الأساس"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.CTL_POSRECT.Control.QuickHelpText
 #, fuzzy
 msgid  "Base point"
-msgstr "نقطة الأساس"
+msgstr "نقطة أساسيةق"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_SIZE.FixedLine.Text
 #, fuzzy
@@ -9786,7 +9788,7 @@ msgstr "إ~رتفاع"
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_SIZEREFERENCE.FixedText.Text
 #, fuzzy
 msgid  "Base point"
-msgstr "نقطة أساسيةق"
+msgstr "نقطة الأساس"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.CTL_SIZERECT.Control.QuickHelpText
 #, fuzzy
