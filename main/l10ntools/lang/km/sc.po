@@ -4725,7 +4725,7 @@ msgstr "តម្រង​​​​​​ខ្នាត​​គំរូ​"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.FT_OP.FixedText.Text
 msgid  "Operator"
-msgstr "សញ្ញា​​​ប្រមាណ​វិធី"
+msgstr "សញ្ញា​ប្រមាណ​វិធី"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.FT_FIELD.FixedText.Text
 msgid  "Field name"
@@ -5949,7 +5949,7 @@ msgstr "PV"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.9.String.Text
 msgid  "Present value. The current value of a series of payments"
-msgstr "តម្លៃ​បច្ចុប្បន្ន​ ។ តម្លៃ​បច្ចុប្បន្ន​នៃ​ស៊េរីការ​​​​បង់​ប្រាក់"
+msgstr "តម្លៃ​បច្ចុប្បន្ន​ ។ តម្លៃ​បច្ចុប្បន្ន​នៃ​ស៊េរី​ការ​បង់​ប្រាក់"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.10.String.Text
 msgid  "Type"
@@ -7941,7 +7941,7 @@ msgstr "ត្រឡប់​ផលបូក​ភាព​ខុស​គ្ន
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_X2MY2.2.String.Text
 msgid  "array_x"
-msgstr "អារេ x"
+msgstr "អារេ x "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_X2MY2.3.String.Text
 msgid  "First array where the square of the arguments are totalled."
@@ -7949,7 +7949,7 @@ msgstr "អារេ​ទីមួយ​ដែល​ការេ​នៃ​អ
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_X2MY2.4.String.Text
 msgid  "array_y"
-msgstr "អារេ y "
+msgstr "អារេ y"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_X2MY2.5.String.Text
 msgid  "Second array where the square of the arguments is to be subtracted."
@@ -7961,7 +7961,7 @@ msgstr "ត្រឡប់​ចំនួន​សរុប​នៃ​ការ
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_X2DY2.2.String.Text
 msgid  "array_x"
-msgstr "អារេ x "
+msgstr "អារេ x"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_X2DY2.3.String.Text
 msgid  "First array where the square of the arguments are totalled."
@@ -11091,6 +11091,54 @@ msgstr ""
 msgid  "The number of characters for the text."
 msgstr ""
 
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.1.String.Text
+msgid  "Return the cosecant of an angle. CSC(x)=1/SIN(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.3.String.Text
+msgid  "The angle in radians for which the cosecant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.1.String.Text
+msgid  "Return the secant of an angle. SEC(x)=1/COS(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.3.String.Text
+msgid  "The angle in radians for which the secant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.1.String.Text
+msgid  "Return the hyperbolic cosecant of a hyperbolic angle. CSCH(x)=1/SINH(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.3.String.Text
+msgid  "The hyperbolic angle in radians for which the hyperbolic cosecant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.1.String.Text
+msgid  "Return the hyperbolic secant of a hyperbolic angle. SECH(x)=1/COSH(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.3.String.Text
+msgid  "The hyperbolic angle in radians for which the hyperbolic secant is to be calculated."
+msgstr ""
+
 #: source/ui/src/scstring.src#SCSTR_APPLICATION.String.Text
 msgid  "%PRODUCTNAME Calc 6.0"
 msgstr "%PRODUCTNAME Calc 6.0"
@@ -11553,7 +11601,7 @@ msgstr "ជ្រើស​សន្លឹក​"
 
 #: source/ui/src/scstring.src#STR_DLG_SELECTTABLES_LBNAME.String.Text
 msgid  "~Selected sheets"
-msgstr "បោះពុម្ព​តែ​សន្លឹក​ដែល​បាន​ជ្រើស "
+msgstr " សន្លឹក​ដែល​បាន​ជ្រើស"
 
 #: source/ui/src/scstring.src#STR_REPLCELLSWARN.String.Text
 msgid  "You are pasting data into cells that already contain data.\nDo you really want to overwrite the existing data?"
