@@ -825,7 +825,7 @@ msgstr "সারণীসমূহ (~T)"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 4.String.Text
 msgid  "A~vailable fields"
-msgstr "সুপ্রাপ্য ক্ষেত্রসমুহ (~v)"
+msgstr "সুপ্রাপ্য ক্ষেত্রগুলো (~v)"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 5.String.Text
 msgid  "Name ~of the query"
@@ -865,7 +865,7 @@ msgstr "মোট ফাংশন"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 17.String.Text
 msgid  "Fields"
-msgstr "ক্ষেত্রগুলো"
+msgstr "ক্ষেত্রগুলো "
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 18.String.Text
 msgid  "~Group by"
@@ -1169,7 +1169,7 @@ msgstr "বর্হিবিন্যাস পছন্দ করুন"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 14.String.Text
 msgid  "Create report"
-msgstr "প্রতিবেদনে তৈরী করুন"
+msgstr "প্রতিবেদন তৈরি করুন"
 
 #: source/formwizard/dbwizres.src#RID_DB_REPORT_WIZARD_START + 15.String.Text
 msgid  "Layout of data"
@@ -1441,7 +1441,7 @@ msgstr "ধরন এবং বিন্যাস নির্ধারন ক�
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 4.String.Text
 msgid  "Set primary key"
-msgstr "প্রাথমিক কী নির্ধারণ করুন"
+msgstr "প্রাথমিক কী নির্ধারন করুন"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 5.String.Text
 msgid  "Create table"
@@ -1665,7 +1665,7 @@ msgstr "বর্ণের চিহ্ন"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 14.String.Text
 msgid  "S~ubject line"
-msgstr "বিষয় লাইন (~u)"
+msgstr "বিষয়ের লাইন (~u)"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 15.String.Text
 msgid  "Salu~tation"
@@ -1677,7 +1677,7 @@ msgstr "ভাঁজ চিহ্ন (~m)"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 17.String.Text
 msgid  "~Complimentary close"
-msgstr "শ্রদ্ধাজ্ঞাপক সমাপ্তি (~C)"
+msgstr "পূরক বন্ধ (~C)"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 18.String.Text
 msgid  "~Footer"
@@ -1693,15 +1693,15 @@ msgstr "নতুন প্রেরক ঠিকানা: (~N)"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 21.String.Text
 msgid  "Use placeholders for ~recipient's address"
-msgstr "প্রাপকের ঠিকানার জন্য স্থানধারক ব্যবহার করুন (~r)"
+msgstr "প্রাপকগণের ঠিকানার জন্য স্থানধারকসমুহ ব্যবহার করুন (~r)"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 22.String.Text
 msgid  "Use address database for ~mail merge"
-msgstr "মেইল একত্রিত করার জন্য ঠিকানা উপাত্তধার ব্যবহার করুন (~m)"
+msgstr "মেইল একত্রিত করার জন্য ঠিকানার উপাত্তধার ব্যবহার করুন (~m)"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 23.String.Text
 msgid  "Include ~only on second and following pages"
-msgstr "শুধুমাত্র দ্বিতীয় এবং তার নিম্নবর্ণিত পৃষ্ঠায় অন্তর্ভুক্ত করুন (~o)"
+msgstr "শুধুমাত্র দ্বিতীয় এবং তার পরবর্তী পৃষ্ঠাসমূহে অন্তর্ভুক্ত করুন"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 24.String.Text
 msgid  "~Include page number"
@@ -1720,19 +1720,17 @@ msgid  "Make ~manual changes to this letter template"
 msgstr "এই পত্রের খসড়ায় হস্তচালিত পরিবর্তন করুন"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 28.String.Text
-#, fuzzy
 msgid  "Page design"
-msgstr "পৃষ্ঠা নকশা "
+msgstr "পৃষ্ঠা নকশা"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 29.String.Text
-#, fuzzy
 msgid  "Page design"
-msgstr "পৃষ্ঠা নকশা "
+msgstr "পৃষ্ঠা নকশা"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 30.String.Text
 #, fuzzy
 msgid  "Page design"
-msgstr "পৃষ্ঠা নকশা"
+msgstr "পৃষ্ঠা নকশা "
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 31.String.Text
 msgid  "This wizard helps you to create a letter template. You can then use the template as the basis for writing letters as often as desired."
@@ -1749,12 +1747,14 @@ msgid  "~Width:"
 msgstr "প্রস্থ: (~W)"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 34.String.Text
+#, fuzzy
 msgid  "S~pacing to left margin:"
-msgstr "বাম মার্জিনে ফাঁকাকরণ: (~p)"
+msgstr " বাম মার্জিনে ফাঁকাকরণ: (~p)"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 35.String.Text
+#, fuzzy
 msgid  "Spacing ~to top margin:"
-msgstr "উপরের মার্জিনে ফাঁকাকরণ: (~t)"
+msgstr " উপরের মার্জিনে ফাঁকাকরণ: (~t)"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 36.String.Text
 #, fuzzy
@@ -1802,8 +1802,9 @@ msgid  "Street:"
 msgstr "রাস্তা:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 45.String.Text
+#, fuzzy
 msgid  "ZIP code/State/City:"
-msgstr "জিপ কোড/রাষ্ট্র/শহর:"
+msgstr "জিপ কোড/রাস্তা/শহর:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 46.String.Text
 #, fuzzy
@@ -1829,8 +1830,9 @@ msgid  "Template name:"
 msgstr "খসড়া নাম:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 51.String.Text
+#, fuzzy
 msgid  "Location and file name:"
-msgstr "অবস্থান ও ফাইল নাম:"
+msgstr "অবস্থান নাম ও ফাইল নাম:"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 52.String.Text
 #, fuzzy
@@ -2082,7 +2084,7 @@ msgstr "পাদটিকার জন্য পাঠ প্রবেশ ক�
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 32.String.Text
 #, fuzzy
 msgid  "Choose a name and save the template"
-msgstr "একটি নাম পছন্দ করুন এবং খসড়াটি সংরক্ষণ করুন"
+msgstr "একটি নাম পছন্দ করুন ও খসড়াটি সংরক্ষণ করুন"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 33.String.Text
 #, fuzzy
@@ -3040,7 +3042,7 @@ msgstr "স্থায়িত্বকাল"
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +24.String.Text
 #, fuzzy
 msgid  "Meeting called by"
-msgstr "সভার আহবায়ক"
+msgstr "সভা আহবায়ক"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +25.String.Text
 #, fuzzy
@@ -3050,7 +3052,7 @@ msgstr "সভাপতি"
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +26.String.Text
 #, fuzzy
 msgid  "Minute keeper"
-msgstr "মিনিট ধারক"
+msgstr "মিনিট গণনায়ক"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +27.String.Text
 #, fuzzy
@@ -3065,12 +3067,12 @@ msgstr "অংশগ্রহণকারী"
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +29.String.Text
 #, fuzzy
 msgid  "Observers"
-msgstr "পর্যবেক্ষকগণ"
+msgstr "পর্যবেক্ষক"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +30.String.Text
 #, fuzzy
 msgid  "Facility personnel"
-msgstr "সুবিধা প্রদায়ক কর্মচারী"
+msgstr "সুযোগ প্রদানকারী কর্মচারী"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +31.String.Text
 msgid  "The agenda template will include placeholders for the names of the selected people. When creating an agenda from the template, you can replace these placeholder with the appropriate names."

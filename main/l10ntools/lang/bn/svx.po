@@ -321,16 +321,19 @@ msgid  "Su~bscript"
 msgstr "নিচে লেখা (‌‌~B)"
 
 #: inc/globlmn_tmpl.hrc#SID_ATTR_PARA_ADJUST_LEFT.#define.Text
+#, fuzzy
 msgid  "~Left"
-msgstr "বামে(‌~L)"
+msgstr " বাম(~L)"
 
 #: inc/globlmn_tmpl.hrc#SID_ATTR_PARA_ADJUST_RIGHT.#define.Text
+#, fuzzy
 msgid  "~Right"
-msgstr "ডানে(‌~R)"
+msgstr " ডান (~R)"
 
 #: inc/globlmn_tmpl.hrc#SID_ATTR_PARA_ADJUST_CENTER.#define.Text
+#, fuzzy
 msgid  "~Centered"
-msgstr "মাঝে (‌~C)"
+msgstr "মাঝে(~C)"
 
 #: inc/globlmn_tmpl.hrc#SID_ATTR_PARA_ADJUST_BLOCK.#define.Text
 #, fuzzy
@@ -603,8 +606,9 @@ msgid  "Internet Bar"
 msgstr " ইন্টারনেট বার"
 
 #: inc/globlmn_tmpl.hrc#SID_TOGGLESTATUSBAR.#define.Text
+#, fuzzy
 msgid  "~Status Bar"
-msgstr "অবস্থা বার(‌~S)"
+msgstr " অবস্থা বার(‌~S)"
 
 #: inc/globlmn_tmpl.hrc#SID_SHOW_IME_STATUS_WINDOW.#define.Text
 #, fuzzy
@@ -2270,12 +2274,12 @@ msgstr "সীমানা বিন্যাসন"
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.1.ItemList.item
 #, fuzzy
 msgid  "Left border line"
-msgstr "বাম সীমানা রেখা"
+msgstr "বামের সীমানা রেখা"
 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.2.ItemList.item
 #, fuzzy
 msgid  "Right border line"
-msgstr "ডান সীমানা রেখা"
+msgstr "ডানের সীমানা রেখা"
 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.3.ItemList.item
 #, fuzzy
@@ -2285,7 +2289,7 @@ msgstr "উপরের সীমানা রেখা"
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.4.ItemList.item
 #, fuzzy
 msgid  "Bottom border line"
-msgstr "নীচের সীমানা রেখা"
+msgstr "নীচেরর সীমানা রেখা"
 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.5.ItemList.item
 #, fuzzy
@@ -3375,12 +3379,12 @@ msgstr "কমলা"
 #: source/dialog/sdstring.src#RID_SVXSTR_ARROW.String.Text
 #, fuzzy
 msgid  "Arrow"
-msgstr "তীর"
+msgstr "তীর চিহ্ন"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_SQUARE.String.Text
 #, fuzzy
 msgid  "Square"
-msgstr "বর্গ"
+msgstr "আয়তক্ষেত্র"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_CIRCLE.String.Text
 #, fuzzy
@@ -4760,8 +4764,9 @@ msgid  "Geometry"
 msgstr "জ্যামিতি"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_REPRESENTATION.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Shading"
-msgstr "ছায়াকরণ"
+msgstr " ছায়াকরণ"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT.ButtonImage.QuickHelpText
 #, fuzzy
@@ -4774,8 +4779,9 @@ msgid  "Textures"
 msgstr "অঙ্গবিন্যাস"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_MATERIAL.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Material"
-msgstr "সামগ্রী"
+msgstr " সামগ্রী"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_UPDATE.ButtonImage.QuickHelpText
 #, fuzzy
@@ -4823,8 +4829,9 @@ msgid  "~Rotation angle"
 msgstr "ঘূর্ণন কোণ (~R)"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.MTR_END_ANGLE.MetricField.CustomUnitText
+#, fuzzy
 msgid  " degree(s)"
-msgstr "ডিগ্রী (গুলো)"
+msgstr " ডিগ্রী (গুলো)"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_DEPTH.FixedText.Text
 #, fuzzy
@@ -4857,8 +4864,9 @@ msgid  "Object-Specific"
 msgstr "বস্তু- সুনির্দিষ্ট"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_FLAT.ButtonImage.QuickHelpText
+#, fuzzy
 msgid  "Flat"
-msgstr "চ্যাপ্টা"
+msgstr " চ্যাপ্টা"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_SPHERE.ButtonImage.QuickHelpText
 #, fuzzy
@@ -6099,17 +6107,17 @@ msgstr "অকার্যকর নয় (~s)"
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD.ToolBoxItem.Text
 #, fuzzy
 msgid  "Add Item"
-msgstr "প্রকরন যোগ করুন"
+msgstr "পদ যুক্ত করুন"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD_ELEMENT.ToolBoxItem.Text
 #, fuzzy
 msgid  "Add Element"
-msgstr " উপাদান যোগ করুন"
+msgstr " উপাদান যুক্ত করুন"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD_ATTRIBUTE.ToolBoxItem.Text
 #, fuzzy
 msgid  "Add Attribute"
-msgstr " বৈশিষ্ট্য যোগ করুন"
+msgstr " বৈশিষ্ট্য সংযুক্তকরণ"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_EDIT.ToolBoxItem.Text
 #, fuzzy
@@ -6119,7 +6127,7 @@ msgstr "সম্পাদনা করুন"
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_REMOVE.ToolBoxItem.Text
 #, fuzzy
 msgid  "Delete"
-msgstr "মুছে ফেলুন"
+msgstr " মুছে ফেলুন"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MenuButton.Text
 #, fuzzy
@@ -6127,8 +6135,9 @@ msgid  "~Models"
 msgstr "নমুনাসমূহ (~M)"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MID_MODELS_ADD.MenuItem.Text
+#, fuzzy
 msgid  "~Add..."
-msgstr "সংযুক্তকরণ... (~A)"
+msgstr "যোগ করুন...(~A)"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MID_MODELS_EDIT.MenuItem.Text
 #, fuzzy
@@ -6163,7 +6172,7 @@ msgstr "দৃষ্টান্তসমূহ (~I)"
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MID_INSTANCES_ADD.MenuItem.Text
 #, fuzzy
 msgid  "~Add..."
-msgstr "যোগ করুন...(~A)"
+msgstr "সংযুক্তকরণ... (~A)"
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MID_INSTANCES_EDIT.MenuItem.Text
 #, fuzzy
@@ -6332,12 +6341,12 @@ msgstr "প্রকরন যোগ করুন"
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_ADD_ELEMENT.MenuItem.Text
 #, fuzzy
 msgid  "Add Element"
-msgstr "উপাদান যোগ করুন"
+msgstr " উপাদান যোগ করুন"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_ADD_ATTRIBUTE.MenuItem.Text
 #, fuzzy
 msgid  "Add Attribute"
-msgstr "বৈশিষ্ট্য সংযুক্তকরণ"
+msgstr " বৈশিষ্ট্য যোগ করুন"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_EDIT.MenuItem.Text
 #, fuzzy
@@ -6427,7 +6436,7 @@ msgstr "নেমস্পেস সম্পাদনা করুন"
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.ModalDialog.Text
 #, fuzzy
 msgid  "Add Submission"
-msgstr "বশ্যতা যোগ করুন"
+msgstr "বশ্যতা যুক্ত করুন"
 
 #: source/form/datanavi.src#RID_SVXDLG_ADD_SUBMISSION.FL_SUBMISSION.FixedLine.Text
 #, fuzzy
@@ -6778,7 +6787,7 @@ msgstr "হালনাগাদ"
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY1.MN_DELETE.MenuItem.Text
 #, fuzzy
 msgid  "~Delete"
-msgstr "মুছে ফেলা (~D)"
+msgstr "মুছে ফেলুন (~D)"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY1.MN_RENAME.MenuItem.Text
 #, fuzzy
@@ -8691,8 +8700,9 @@ msgid  "Fit-to-size text object"
 msgstr "পাঠ অবজেক্টে মানানসই করুন"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFITTEXT.String.Text
+#, fuzzy
 msgid  "Fit-to-size text objects"
-msgstr "পাঠ অবজেক্টসমূহে মানানসই করুন"
+msgstr "পাঠ অবজেক্টসমূহের মানানসই করুন"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFITALLTEXT.String.Text
 #, fuzzy
@@ -9133,8 +9143,9 @@ msgid  "Arrange %1 in circle"
 msgstr "%1 বৃত্তে সাজান"
 
 #: source/svdraw/svdstr.src#STR_EditCrookContortion.String.Text
+#, fuzzy
 msgid  "Curve %1 in circle"
-msgstr "%1 কে বৃত্তে বক্র করুন"
+msgstr "%1 বৃত্তে বক্র করুন"
 
 #: source/svdraw/svdstr.src#STR_EditDistort.String.Text
 #, fuzzy
@@ -9932,7 +9943,7 @@ msgstr "ত্রিমাত্রিক ছায়া"
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWPERSP.String.Text
 #, fuzzy
 msgid  "Perspective shadow"
-msgstr "ছায়ার দৃষ্টরূপ"
+msgstr "ছায়ার দৃষ্টরুপ"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONTYPE.String.Text
 #, fuzzy
@@ -10132,7 +10143,7 @@ msgstr "লেভেল (~v)"
 #: source/svdraw/svdstr.src#STR_ItemNam_OBJECTNAME.String.Text
 #, fuzzy
 msgid  "Object name"
-msgstr "অবজেক্টের নাম"
+msgstr "অবজেক্ট নাম"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_STARTANGLE.String.Text
 #, fuzzy

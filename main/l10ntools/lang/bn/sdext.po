@@ -33,11 +33,11 @@ msgstr ""
 
 #: source/minimizer/registry/data/org/openoffice/Office/Addons.xcu#.Addons.AddonUI.OfficeMenuBarMerging.SunPresentationMinimizer.Command1.MenuItems.SunPresentationMinimizerExecute2.Title
 msgid  "~Minimize Presentation..."
-msgstr ""
+msgstr "উপস্থাপনা নূন্যতম করুন... (~M)"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.HelpFile
 msgid  "%origin%/../../../../../../help/help_en-US.odt"
-msgstr ""
+msgstr "%origin%/../../../../../../সাহায্য/help_en-US.odt"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_SUN_OPTIMIZATION_WIZARD2
 msgid  "@MINIMIZEREXTENSIONPRODUCTNAME@"
@@ -45,31 +45,31 @@ msgstr ""
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_STEPS
 msgid  "Steps"
-msgstr ""
+msgstr "ধাপসমূহ"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_HELP
 msgid  "~Help"
-msgstr ""
+msgstr "সহায়তা (~H)"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_BACK
 msgid  "< ~Back"
-msgstr ""
+msgstr "< পিছনে (~B)"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_NEXT
 msgid  "~Next >"
-msgstr ""
+msgstr "পরবর্তী > (~N)"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_FINISH
 msgid  "~Finish"
-msgstr ""
+msgstr "শেষ (~F)"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_CANCEL
 msgid  "Cancel"
-msgstr ""
+msgstr "বাতিল করুন"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_INTRODUCTION
 msgid  "Introduction"
-msgstr ""
+msgstr "সূচনা"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_INTRODUCTION_T
 msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ is used to reduce the file size of the current presentation. Images will be compressed and data, that is no longer needed, will be removed. At the last step of the wizard you can choose to apply the changes to the current presentation or to create an optimized new version of the presentation."
@@ -80,76 +80,94 @@ msgid  "~Choose settings for @MINIMIZEREXTENSIONPRODUCTNAME@"
 msgstr ""
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_REMOVE
+#, fuzzy
 msgid  "~Delete"
-msgstr ""
+msgstr "মুছে ফেলুন (~D)"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_GRAPHIC_OPTIMIZATION
+#, fuzzy
 msgid  "Choose settings for optimizing pictures and graphics"
-msgstr ""
+msgstr "ছবি এবং গ্রাফিক্স উৎকৃষ্ট করার জন্য বিন্যাসনসমূহ পছন্দ করুন"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_IMAGE_OPTIMIZATION
+#, fuzzy
 msgid  "Graphics"
-msgstr ""
+msgstr "গ্রাফিক্স"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_LOSSLESS_COMPRESSION
+#, fuzzy
 msgid  "~Lossless compression"
-msgstr ""
+msgstr "ক্ষতিহীন সংকোচন (~L)"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_JPEG_COMPRESSION
+#, fuzzy
 msgid  "~JPEG compression"
-msgstr ""
+msgstr "JPEG সংকোচন (~J)"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_QUALITY
+#, fuzzy
 msgid  "~Quality in %"
-msgstr ""
+msgstr "% এ বৈশিষ্ট্য (~Q)"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_REMOVE_CROP_AREA
+#, fuzzy
 msgid  "~Delete cropped graphic areas"
-msgstr ""
+msgstr "কর্তনকৃত গ্রাফিক অংশগুলো মুছে ফেলুন (~D)"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_IMAGE_RESOLUTION
+#, fuzzy
 msgid  "Reduce ~image resolution"
-msgstr ""
+msgstr "চিত্রের রেসুলেশন কমান (~i)"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_IMAGE_RESOLUTION_0
+#, fuzzy
 msgid  "0;<no change>"
-msgstr ""
+msgstr "০;<কোনো পরিবর্তন নেই>"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_IMAGE_RESOLUTION_1
+#, fuzzy
 msgid  "90;90 DPI (screen resolution)"
-msgstr ""
+msgstr "৯০;৯০ ডিপিআই (পর্দার রেসুলেশন)"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_IMAGE_RESOLUTION_2
+#, fuzzy
 msgid  "150;150 DPI (projector resolution)"
-msgstr ""
+msgstr "১৫০;১৫০ ডিপিআই (প্রক্ষেপক রেসুলেশন)"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_IMAGE_RESOLUTION_3
+#, fuzzy
 msgid  "300;300 DPI (print resolution)"
-msgstr ""
+msgstr "৩০০;৩০০ ডিপিআই (মুদ্রণ রেসুলেশন)"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_EMBED_LINKED_GRAPHICS
+#, fuzzy
 msgid  "~Break links to external graphics"
-msgstr ""
+msgstr "লিঙ্কগুলোকে বাহ্যিক গ্রাফিক্সে বিভক্ত করুন (~B)"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_OLE_OBJECTS
+#, fuzzy
 msgid  "OLE Objects"
-msgstr ""
+msgstr "OLE অবজেক্টসমূহ"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_OLE_OPTIMIZATION
+#, fuzzy
 msgid  "Choose settings for replacing OLE objects"
-msgstr ""
+msgstr "OLE অবজেক্টসমূহ প্রতিস্থাপনের জন্য বিন্যাসনসমূহ পছন্দ করুন"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_OLE_REPLACE
+#, fuzzy
 msgid  "Create static replacement graphics for OLE objects"
-msgstr ""
+msgstr "OLE অবজেক্টের জন্য স্থির প্রতিস্থাপন গ্রাফিক্স তৈরি করুন"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_ALL_OLE_OBJECTS
+#, fuzzy
 msgid  "For ~all OLE objects"
-msgstr ""
+msgstr "সকল OLE অবজেক্টের জন্য (~a)"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_ALIEN_OLE_OBJECTS_ONLY
+#, fuzzy
 msgid  "~For OLE objects not based on OpenDocument format"
-msgstr ""
+msgstr "OpenDocument বিন্যাসের উপর ভিত্তিহীন OLE অবজেক্টের জন্য (~F)"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_OLE_OBJECTS_DESC
 msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding and linking to documents and other objects. The current presentation contains OLE objects."
@@ -160,108 +178,132 @@ msgid  "Object Linking and Embedding (OLE) is a technology that allows embedding
 msgstr ""
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_SLIDES
+#, fuzzy
 msgid  "Slides"
-msgstr ""
+msgstr "স্লাইডসমূহ"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_CHOOSE_SLIDES
+#, fuzzy
 msgid  "Choose which slides to delete"
-msgstr ""
+msgstr "কোন স্লাইডটি মুছতে হবে তা পছন্দ করুন"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_MASTER_PAGES
+#, fuzzy
 msgid  "Master Pages"
-msgstr ""
+msgstr "প্রধান পৃষ্ঠাসমূহ"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_DELETE_MASTER_PAGES
+#, fuzzy
 msgid  "Delete unused ~master pages"
-msgstr ""
+msgstr "অব্যবহৃত প্রধান পৃষ্ঠাসমূহ মুছে ফেলুন (~m)"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_DELETE_NOTES_PAGES
+#, fuzzy
 msgid  "~Clear notes"
-msgstr ""
+msgstr "নোট পরিস্কার করুন (~C)"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_DELETE_HIDDEN_SLIDES
+#, fuzzy
 msgid  "Delete hidden ~slides"
-msgstr ""
+msgstr "লুকানো স্লাইডসমূহ মুছে ফেলুন (~s)"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_CUSTOM_SHOW
+#, fuzzy
 msgid  "Delete slides that are not used for the ~custom slide show"
-msgstr ""
+msgstr "পছন্দসই স্লাইড প্রদর্শনের জন্য অব্যবহৃত স্লাইডসমূহ মুছে ফেলুন (~c)"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_SUMMARY
+#, fuzzy
 msgid  "Summary"
-msgstr ""
+msgstr "সারসংক্ষেপ"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_SUMMARY_TITLE
+#, fuzzy
 msgid  "Choose where to apply the following changes"
-msgstr ""
+msgstr "নিম্নের পরিবর্তনসমূহ কোথায় প্রয়োগ করাতে হবে তা পছন্দ করুন"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_PROGRESS
+#, fuzzy
 msgid  "Progress"
-msgstr ""
+msgstr "অগ্রগতি"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_OBJECTS_OPTIMIZED
+#, fuzzy
 msgid  "Objects optimized"
-msgstr ""
+msgstr "অবজেক্টের উৎকৃষ্টতা"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_APPLY_TO_CURRENT
+#, fuzzy
 msgid  "~Apply changes to current presentation"
-msgstr ""
+msgstr "বর্তমান উপস্থাপনায় পরিবর্তনসমূহ প্রয়োগ করুন (~A)"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_AUTOMATICALLY_OPEN
+#, fuzzy
 msgid  "~Open newly created presentation"
-msgstr ""
+msgstr "নতুনভাবে তৈরী উপস্থাপনা খুলুন (~O)"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_SAVE_SETTINGS
+#, fuzzy
 msgid  "~Save settings as"
-msgstr ""
+msgstr "এভাবে বিন্যাসনসমূহ সংরক্ষণ করুন (~S)"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_SAVE_AS
+#, fuzzy
 msgid  "~Duplicate presentation before applying changes"
-msgstr ""
+msgstr "পরিবর্তনসমূহ প্রয়োগের পূর্বে উপস্থাপনার প্রতিলিপি করুন (~D)"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_DELETE_SLIDES
+#, fuzzy
 msgid  "Delete %SLIDES slides."
-msgstr ""
+msgstr "%SLIDES স্লাইডসমূহ মুছে ফেলুন।"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_OPTIMIZE_IMAGES
 msgid  "Optimize %IMAGES graphics to %QUALITY% JPEG quality at %RESOLUTION DPI."
 msgstr ""
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_CREATE_REPLACEMENT
+#, fuzzy
 msgid  "Create replacement graphics for %OLE objects."
-msgstr ""
+msgstr "%OLE অবজেক্টের জন্য প্রতিস্থাপন গ্রাফিক্স তৈরী করুন।"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_CURRENT_FILESIZE
+#, fuzzy
 msgid  "Current file size:"
-msgstr ""
+msgstr "বর্তমান ফাইলের আকার:"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_ESTIMATED_FILESIZE
+#, fuzzy
 msgid  "Estimated new file size:"
-msgstr ""
+msgstr "আনুমানিক নতুন ফাইলের আকার:"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_MB
+#, fuzzy
 msgid  "%1 MB"
-msgstr ""
+msgstr "%1 মেবা"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.MY_SETTINGS
+#, fuzzy
 msgid  "My Settings "
-msgstr ""
+msgstr "আমার বিন্যাসনসমূহ"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_DEFAULT_SESSION
+#, fuzzy
 msgid  "default session"
-msgstr ""
+msgstr "পূর্বনির্ধারিত অধিবেশন"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_MODIFY_WARNING
 msgid  "The optimization will modify the current document. Do you want to continue?"
 msgstr ""
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_YES
+#, fuzzy
 msgid  "~Yes"
-msgstr ""
+msgstr "হ্যাঁ (~Y)"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_OK
+#, fuzzy
 msgid  "OK"
-msgstr ""
+msgstr "ঠিক আছে"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_INFO_1
 msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the presentation '%TITLE'. The file size has changed from %OLDFILESIZE MB to %NEWFILESIZE MB."
@@ -280,40 +322,49 @@ msgid  "The @MINIMIZEREXTENSIONPRODUCTNAME@ has successfully updated the present
 msgstr ""
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_DUPLICATING_PRESENTATION
+#, fuzzy
 msgid  "Duplicating presentation..."
-msgstr ""
+msgstr "অনুরুপ উপস্থাপনা তৈরি করছে..."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_DELETING_SLIDES
+#, fuzzy
 msgid  "Deleting slides..."
-msgstr ""
+msgstr "স্লাইডসমূহ মুছে ফেলছে..."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_OPTIMIZING_GRAPHICS
+#, fuzzy
 msgid  "Optimizing graphics..."
-msgstr ""
+msgstr "গ্রাফিক্স তৈরী করছে..."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_CREATING_OLE_REPLACEMENTS
+#, fuzzy
 msgid  "Creating replacement graphics for OLE objects..."
-msgstr ""
+msgstr "OLE অবজেক্টের জন্য প্রতিস্থাপন গ্রাফিক্স তৈরী করছে..."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Strings.STR_FILESIZESEPARATOR
+#, fuzzy
 msgid  "."
-msgstr ""
+msgstr "."
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.LastUsedSettings.Name
+#, fuzzy
 msgid  "Projector optimized"
-msgstr ""
+msgstr "প্রক্ষেপক প্রস্তুত"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Settings.Templates.template1.Name
+#, fuzzy
 msgid  "Screen optimized (smallest file size)"
-msgstr ""
+msgstr "পর্দা প্রস্তুত (ক্ষুদ্রতর ফাইল আকার)"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Settings.Templates.template2.Name
+#, fuzzy
 msgid  "Projector optimized"
-msgstr ""
+msgstr "প্রক্ষেপক প্রস্তুত"
 
 #: source/minimizer/registry/data/org/openoffice/Office/extension/SunPresentationMinimizer.xcu#.SunPresentationMinimizer.Settings.Templates.template3.Name
+#, fuzzy
 msgid  "Print optimized"
-msgstr ""
+msgstr "মুদ্রণ প্রস্তুত"
 
 #: source/presenter/help/en-US/com.sun.PresenterScreen/presenter.xhp#tit
 msgid  "@PRESENTEREXTENSIONPRODUCTNAME@ Keyboard Shortcuts"
@@ -468,56 +519,68 @@ msgid  "Ctrl-'3'"
 msgstr ""
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.ToolBars.ToolBar.Entries.a.Normal.Text
+#, fuzzy
 msgid  "Previous"
-msgstr ""
+msgstr "পূর্ববর্তী"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.ToolBars.ToolBar.Entries.b.Normal.Text
+#, fuzzy
 msgid  "Next"
-msgstr ""
+msgstr "পরবর্তী"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.ToolBars.ToolBar.Entries.c.Normal.Text
+#, fuzzy
 msgid  "Notes"
-msgstr ""
+msgstr "নোট"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.ToolBars.ToolBar.Entries.d.Normal.Text
+#, fuzzy
 msgid  "Slides"
-msgstr ""
+msgstr "স্লাইডসমূহ"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.ToolBars.ToolBar.Entries.l.Normal.Text
+#, fuzzy
 msgid  "Help"
-msgstr ""
+msgstr "সহায়তা"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.ToolBars.NotesToolBar.Entries.a.Normal.Text
+#, fuzzy
 msgid  "Zoom"
-msgstr ""
+msgstr "জুম"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.Buttons.SlideSorterCloser.Text
+#, fuzzy
 msgid  "Close"
-msgstr ""
+msgstr "বন্ধ"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.Buttons.NotesViewCloser.Text
+#, fuzzy
 msgid  "Close"
-msgstr ""
+msgstr "বন্ধ"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.Buttons.HelpViewCloser.Text
+#, fuzzy
 msgid  "Close"
-msgstr ""
+msgstr "বন্ধ"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.a.Left
 msgid  "Left click, right or down arrow, spacebar, page down, enter, return, 'N'"
 msgstr ""
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.a.Right
+#, fuzzy
 msgid  "Next slide, or next effect"
-msgstr ""
+msgstr "পরবর্তী স্লাইড,বা পরবর্তী প্রভাব"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.b.Left
+#, fuzzy
 msgid  "Right click, left or up arrow, page up, backspace, 'P'"
-msgstr ""
+msgstr "ডান ক্লিক, বাম বা উপর তীর,এক পৃষ্ঠা উপরে, বেকস্পেস, 'P'"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.b.Right
+#, fuzzy
 msgid  "Previous slide, or previous effect"
-msgstr ""
+msgstr "পূর্ববর্তী স্লাইড, বা পূর্ববর্তী প্রভাব"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.c.Left
 msgid  " "
@@ -528,20 +591,24 @@ msgid  " "
 msgstr ""
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.d.Left
+#, fuzzy
 msgid  "Home"
-msgstr ""
+msgstr "আদ্য"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.d.Right
+#, fuzzy
 msgid  "First slide"
-msgstr ""
+msgstr "প্রথম স্লাইড"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.e.Left
+#, fuzzy
 msgid  "End"
-msgstr ""
+msgstr "শেষ"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.e.Right
+#, fuzzy
 msgid  "Last slide"
-msgstr ""
+msgstr "শেষ স্লাইড"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.f.Left
 msgid  " "
@@ -552,20 +619,24 @@ msgid  " "
 msgstr ""
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.g.Left
+#, fuzzy
 msgid  "Alt-Page Up"
-msgstr ""
+msgstr "Alt-Page Up"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.g.Right
+#, fuzzy
 msgid  "Previous slide without effects"
-msgstr ""
+msgstr "প্রভাব ব্যতিত পূর্ববর্তী স্লাইড"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.h.Left
+#, fuzzy
 msgid  "Alt-Page Down"
-msgstr ""
+msgstr "Alt-Page Down"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.h.Right
+#, fuzzy
 msgid  "Next slide without effects"
-msgstr ""
+msgstr "প্রভাব ব্যতিত পরবর্তী স্লাইড"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.i.Left
 msgid  " "
@@ -576,20 +647,24 @@ msgid  " "
 msgstr ""
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.j.Left
+#, fuzzy
 msgid  "'B', '.'"
-msgstr ""
+msgstr "'B', '.'"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.j.Right
+#, fuzzy
 msgid  "Blacks/Unblacks the screen"
-msgstr ""
+msgstr "পর্দাটিকে কালো/কালোহীন করুন"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.k.Left
+#, fuzzy
 msgid  "'W', ','"
-msgstr ""
+msgstr "'W', ','"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.k.Right
+#, fuzzy
 msgid  "Whites/Unwhites the screen"
-msgstr ""
+msgstr "পর্দাটিকে সাদা/সাদাহীন করুন"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.l.Left
 msgid  " "
@@ -600,12 +675,14 @@ msgid  " "
 msgstr ""
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.m.Left
+#, fuzzy
 msgid  "Esc, '-'"
-msgstr ""
+msgstr "Esc, '-'"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.m.Right
+#, fuzzy
 msgid  "End slide show"
-msgstr ""
+msgstr "স্লাইড প্রদর্শন শেষ করুন"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.n.Left
 msgid  " "
@@ -616,12 +693,14 @@ msgid  " "
 msgstr ""
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.o.Left
+#, fuzzy
 msgid  "Number followed by Enter"
-msgstr ""
+msgstr "প্রবেশের উপর ভিত্তি করে নম্বর"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.o.Right
+#, fuzzy
 msgid  "Go to that slide"
-msgstr ""
+msgstr "ঐ স্লাইডে যান"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.p.Left
 msgid  " "
@@ -632,24 +711,29 @@ msgid  " "
 msgstr ""
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.q.Left
+#, fuzzy
 msgid  "'G', 'S'"
-msgstr ""
+msgstr "'G', 'S'"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.q.Right
+#, fuzzy
 msgid  "Grow/Shrink size of notes font"
-msgstr ""
+msgstr "নোটের ফন্টের আকার বাড়ান/সংকোচন করুন "
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.r.Left
+#, fuzzy
 msgid  "'A', 'Z'"
-msgstr ""
+msgstr "'A', 'Z'"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.r.Right
+#, fuzzy
 msgid  "Scroll notes up/down"
-msgstr ""
+msgstr "নোটগুলোকে উপরে/নিচে স্ক্রল করুন"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.s.Left
+#, fuzzy
 msgid  "'H', 'L'"
-msgstr ""
+msgstr "'B', '.'"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.s.Right
 msgid  "Move caret in notes view backward/forward"
@@ -664,68 +748,81 @@ msgid  " "
 msgstr ""
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.u.Left
+#, fuzzy
 msgid  "Ctrl-'1'"
-msgstr ""
+msgstr "Ctrl-'১'"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.u.Right
+#, fuzzy
 msgid  "Shows the Presenter Console"
-msgstr ""
+msgstr "উপস্থাপক কনসোল প্রদর্শন করে"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.v.Left
+#, fuzzy
 msgid  "Ctrl-'2'"
-msgstr ""
+msgstr "Ctrl-'২'"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.v.Right
+#, fuzzy
 msgid  "Shows the Presentation Notes"
-msgstr ""
+msgstr "উপস্থাপক নোট প্রদর্শন করে"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.w.Left
+#, fuzzy
 msgid  "Ctrl-'3'"
-msgstr ""
+msgstr "Ctrl-'৩'"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.PresenterScreenSettings.HelpView.HelpStrings.w.Right
+#, fuzzy
 msgid  "Shows the Slides Overview"
-msgstr ""
+msgstr "স্লাইডের সারসংক্ষেপ প্রদর্শন করে"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Views.CurrentSlidePreview.Title
+#, fuzzy
 msgid  "Current Slide (%CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%)"
-msgstr ""
+msgstr "বর্তনাম স্লাইড (%2SLIDE_COUNT% এর %1CURRENT_SLIDE_NUMBER%)"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Views.CurrentSlidePreview.AccessibleTitle
 msgid  "Current Slide, %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%"
 msgstr ""
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Views.CurrentSlidePreview.Strings.ClickToExitPresentationText.String
+#, fuzzy
 msgid  "Click to exit presentation..."
-msgstr ""
+msgstr "উপস্থাপনা প্রস্থান করতে ক্লিক করুন..."
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Views.CurrentSlidePreview.Strings.ClickToExitPresentationTitle.String
+#, fuzzy
 msgid  "Current Slide (end)"
-msgstr ""
+msgstr "বর্তমান স্লাইড (শেষ)"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Views.NextSlidePreview.Title
+#, fuzzy
 msgid  "Next Slide"
-msgstr ""
+msgstr "পরবর্তী স্লাইড"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Views.NotesView.Title
+#, fuzzy
 msgid  "Notes"
-msgstr ""
+msgstr "নোট"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Views.SlideSorter.AccessibleTitle
 msgid  "Slide Overview, %CURRENT_SLIDE_NAME%, %CURRENT_SLIDE_NUMBER% of %SLIDE_COUNT%"
 msgstr ""
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Views.HelpView.Title
+#, fuzzy
 msgid  "Help"
-msgstr ""
+msgstr "সহায়তা"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Accessibility.Console.String
 msgid  "Presenter Console"
 msgstr ""
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Accessibility.Preview.String
+#, fuzzy
 msgid  "Current Slide Info"
-msgstr ""
+msgstr "বর্তমান স্লাইড (শেষ)"
 
 #: source/presenter/registry/data/org/openoffice/Office/extension/PresenterScreen.xcu#..PresenterScreen.Presenter.Accessibility.Notes.String
 msgid  "Presenter Notes"

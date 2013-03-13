@@ -36,8 +36,9 @@ msgid  "not possible"
 msgstr "সম্ভব নয়"
 
 #: source/core/undo/undo.src#STR_DELETE_UNDO.String.Text
+#, fuzzy
 msgid  "Delete $1"
-msgstr "$1 মুছে ফেলুন "
+msgstr "$1 মুছে ফেলুন"
 
 #: source/core/undo/undo.src#STR_INSERT_UNDO.String.Text
 #, fuzzy
@@ -924,8 +925,9 @@ msgid  "Wrong AutoText document version."
 msgstr "ভূল AutoText নথির সংস্করণ।"
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , ERR_WRITE_ERROR_FILE ).String.Text
+#, fuzzy
 msgid  "Error in writing sub-document $(ARG1)."
-msgstr "উপ-নথি  $(ARG1) তে লিখতে সমস্যা হয়েছে।"
+msgstr "উপ-নথি $(ARG1) তে লিখতে ত্রুটি হয়েছে। "
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_SWG_INTERNAL_ERROR ).String.Text
 #, fuzzy
@@ -1665,7 +1667,7 @@ msgstr "নির্বাচন করুন (~S)"
 #: source/ui/app/mn.src#MN_TAB2.MN_SUB_TBLROW.FN_TABLE_INSERT_ROW_DLG.MenuItem.Text
 #, fuzzy
 msgid  "~Insert..."
-msgstr "প্রবেশ করান... (~I)"
+msgstr "প্রবেশ করান...(~I)"
 
 #: source/ui/app/mn.src#MN_TAB2.MN_SUB_TBLROW.FN_TABLE_DELETE_ROW.MenuItem.Text
 #, fuzzy
@@ -1809,7 +1811,7 @@ msgstr "মোড়ানো নয় (~N)"
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_WRAP.MenuItem.Text
 #, fuzzy
 msgid  "~Page Wrap"
-msgstr "পৃষ্ঠা মোড়ক (~P)"
+msgstr "পৃষ্ঠা গুটিয়ে ফেলুন (~P) "
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_WRAP_IDEAL.MenuItem.Text
 #, fuzzy
@@ -1824,7 +1826,7 @@ msgstr "গুটাতে থাকুন (~W) "
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_WRAPTHRU_TRANSP.MenuItem.Text
 #, fuzzy
 msgid  "In ~Background"
-msgstr "প্রেক্ষাপটে (~B) "
+msgstr "প্রেক্ষাপটে (~B)"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_WRAP_ANCHOR_ONLY.MenuItem.Text
 #, fuzzy
@@ -3226,12 +3228,12 @@ msgstr "বসানো"
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.FT_INS_ATTR.FixedText.Text
 #, fuzzy
 msgid  "Attributes"
-msgstr "বৈশিষ্ট্য"
+msgstr "বৈশিষ্ট্যসমূহ"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.LB_INS_ATTR.item1.StringList.item
 #, fuzzy
 msgid  "[None]"
-msgstr "[কিছুই না]"
+msgstr "[কোনটিই না]"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.LB_INS_ATTR.item2.StringList.item
 #, fuzzy
@@ -3301,7 +3303,7 @@ msgstr "বাদ দেওয়া "
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.FT_DEL_ATTR.FixedText.Text
 #, fuzzy
 msgid  "Attributes"
-msgstr "বৈশিষ্ট্য"
+msgstr "বৈশিষ্ট্যসমূহ"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.FT_DEL_COL.FixedText.Text
 #, fuzzy
@@ -4913,7 +4915,7 @@ msgstr "বিদ্যমান নথি থেকে শুরু করু�
 #: source/ui/dbui/mmdocselectpage.src#DLG_MM_DOCSELECT_PAGE.PB_LOADDOC.PushButton.Text
 #, fuzzy
 msgid  "B~rowse..."
-msgstr "ব্রাউজ করুন... (~r)"
+msgstr "ব্রাউজ করুন... (~r) "
 
 #: source/ui/dbui/mmdocselectpage.src#DLG_MM_DOCSELECT_PAGE.RB_LOADTEMPLATE.RadioButton.Text
 #, fuzzy
@@ -5530,8 +5532,9 @@ msgid  "Current selection"
 msgstr "বর্তমান নির্বাচন"
 
 #: source/ui/dialog/wordcountdialog.src#DLG_WORDCOUNT.FT_CURRENTWORD.FixedText.Text
+#, fuzzy
 msgid  "Words:"
-msgstr "শব্দঃ"
+msgstr "শব্দঃ "
 
 #: source/ui/dialog/wordcountdialog.src#DLG_WORDCOUNT.FT_CURRENTCHARACTER.FixedText.Text
 #, fuzzy
@@ -5668,8 +5671,9 @@ msgid  "Footnotes/Endnotes"
 msgstr "পাদটীকা/টীকা"
 
 #: source/ui/dialog/regionsw.src#DLG_SECTION_PROPERTIES.PageItem.Text
+#, fuzzy
 msgid  "Options"
-msgstr "পছন্দসমূহ"
+msgstr "পছন্দ"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FL_FTN.FixedLine.Text
 #, fuzzy
@@ -5682,12 +5686,14 @@ msgid  "Collec~t at end of text"
 msgstr "লাইনের শেষে রাখুন (~t)"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.CB_FTN_NUM.CheckBox.Text
+#, fuzzy
 msgid  "~Restart numbering"
-msgstr "নাম্বারিং পুণরায় শুরুকরণ (~R)"
+msgstr "সংখ্যায়ন পুণরায় শুরুকরণ (~R)"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FT_FTN_OFFSET.FixedText.Text
+#, fuzzy
 msgid  "~Start at"
-msgstr "তে শুরুকরুন (~S)"
+msgstr "তে শুরু করুন (~S)"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.CB_FTN_NUM_FMT.CheckBox.Text
 #, fuzzy
@@ -6070,7 +6076,7 @@ msgstr "সংযোগকারী হিসেবে"
 #: source/ui/docvw/docvw.src#MN_READONLY_POPUP.MN_READONLY_GRAPHICTOGALLERY.MN_READONLY_TOGALLERYCOPY.MenuItem.Text
 #, fuzzy
 msgid  "Copy"
-msgstr "অনুলিপি"
+msgstr "অনুলিপি করুন"
 
 #: source/ui/docvw/docvw.src#MN_READONLY_POPUP.MN_READONLY_GRAPHICTOGALLERY.MenuItem.Text
 #, fuzzy
@@ -6277,8 +6283,9 @@ msgid  "Footer page $(ARG1)"
 msgstr "পাদটীকা পৃষ্ঠা $(ARG1)"
 
 #: source/ui/docvw/access.src#STR_ACCESS_FOOTNOTE_NAME.String.Text
+#, fuzzy
 msgid  "Footnote $(ARG1)"
-msgstr "পাদটীকা $(ARG1)"
+msgstr "পাদটীকা $(ARG1) "
 
 #: source/ui/docvw/access.src#STR_ACCESS_FOOTNOTE_DESC.String.Text
 #, fuzzy
@@ -6637,8 +6644,9 @@ msgid  "Format"
 msgstr "বিন্যাস করা"
 
 #: source/ui/envelp/envfmt.src#TP_ENV_FMT.BTN_ADDR_EDIT.MenuButton.Text
+#, fuzzy
 msgid  "Edit"
-msgstr "সম্পাদনা করা"
+msgstr "সম্পাদনা"
 
 #: source/ui/envelp/envfmt.src#TP_ENV_FMT.FL_SENDER.FixedLine.Text
 #, fuzzy
@@ -6786,8 +6794,9 @@ msgid  "Synchronize Labels"
 msgstr "যুগপৎ স্তরসমূহ "
 
 #: source/ui/envelp/label.src#STR_DOC_TITLE.String.Text
+#, fuzzy
 msgid  "Labels"
-msgstr "লেবেল"
+msgstr "স্তর"
 
 #: source/ui/envelp/label.src#STR_CUSTOM.String.Text
 #, fuzzy
@@ -7444,8 +7453,9 @@ msgid  "Time"
 msgstr "সময়"
 
 #: source/ui/fldui/fldui.src#STR_FILENAMEFLD.String.Text
+#, fuzzy
 msgid  "File name"
-msgstr "ফাইলের নাম"
+msgstr "ফাইল নাম"
 
 #: source/ui/fldui/fldui.src#STR_DBNAMEFLD.String.Text
 #, fuzzy
@@ -7853,8 +7863,9 @@ msgid  "Arabic (1 2 3)"
 msgstr "আরবী (১ ২ ৩)"
 
 #: source/ui/fldui/fldui.src#FMT_NUM_PAGEDESC.String.Text
+#, fuzzy
 msgid  "As Page Style"
-msgstr "পাতার শৈলী হিসেবে"
+msgstr "পৃষ্ঠারধরন"
 
 #: source/ui/fldui/fldui.src#FMT_NUM_PAGESPECIAL.String.Text
 #, fuzzy
@@ -7892,8 +7903,9 @@ msgid  "Text"
 msgstr "পাঠ্য"
 
 #: source/ui/fldui/fldui.src#FMT_USERVAR_CMD.String.Text
+#, fuzzy
 msgid  "Formula"
-msgstr "সূত্র\t"
+msgstr "সূগ্র"
 
 #: source/ui/fldui/fldui.src#FMT_USERVAR_TEXT.String.Text
 #, fuzzy
@@ -8270,8 +8282,9 @@ msgid  "Font"
 msgstr "ফন্ট"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_1.1.TP_CHAR_EXT.PageItem.Text
+#, fuzzy
 msgid  "Font Effects"
-msgstr "ফন্ট প্রভাব"
+msgstr "ফন্ট প্রভাবসমূহ"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_1.1.TP_CHAR_POS.PageItem.Text
 #, fuzzy
@@ -8354,8 +8367,9 @@ msgid  "Background"
 msgstr "পটভূমি"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_2.1.TP_BORDER.PageItem.Text
+#, fuzzy
 msgid  "Borders"
-msgstr "সীমানাসমূহ"
+msgstr "সীমানসমূহ"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_2.1.TP_CONDCOLL.PageItem.Text
 #, fuzzy
@@ -8378,6 +8392,7 @@ msgid  "Page"
 msgstr "পৃষ্ঠা"
 
 #: source/ui/fmtui/tmpdlg.src#STR_PAGE_BORDER.String.Text
+#, fuzzy
 msgid  "Borders"
 msgstr "সীমানসমূহ"
 
@@ -8497,8 +8512,9 @@ msgid  "Options"
 msgstr "অপশন"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.1.TP_FRM_WRAP.PageItem.Text
+#, fuzzy
 msgid  "Wrap"
-msgstr "মোড়ানো"
+msgstr "মোরানো"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.1.TP_FRM_URL.PageItem.Text
 #, fuzzy
@@ -8511,8 +8527,9 @@ msgid  "Borders"
 msgstr "সীমানা"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.1.TP_BACKGROUND.PageItem.Text
+#, fuzzy
 msgid  "Background"
-msgstr "পটভূমি"
+msgstr "পটভুমি"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.1.TP_COLUMN.PageItem.Text
 #, fuzzy
@@ -8540,8 +8557,9 @@ msgid  "Options"
 msgstr "অপশন"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_GRF.1.TP_FRM_WRAP.PageItem.Text
+#, fuzzy
 msgid  "Wrap"
-msgstr "মোরানো"
+msgstr "গুটানো"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_GRF.1.TP_FRM_URL.PageItem.Text
 #, fuzzy
@@ -8564,6 +8582,7 @@ msgid  "Borders"
 msgstr "সীমানা"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_GRF.1.TP_BACKGROUND.PageItem.Text
+#, fuzzy
 msgid  "Background"
 msgstr "পটভুমি"
 
@@ -9018,8 +9037,9 @@ msgid  "Spacing"
 msgstr "জায়গা করা"
 
 #: source/ui/frmdlg/column.src#TP_COLUMN.TabPage.Text
+#, fuzzy
 msgid  "Columns"
-msgstr "স্তম্ভসমূহ"
+msgstr "কলাম"
 
 #: source/ui/frmdlg/column.src#TP_COLUMN.FT_NUMBER.FixedText.Text
 #, fuzzy
@@ -9350,8 +9370,9 @@ msgid  "Below"
 msgstr "নীচে"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.STR_CATEGORY_NONE.String.Text
+#, fuzzy
 msgid  "<None>"
-msgstr "<একটিও নয়>"
+msgstr "<একটিও না>"
 
 #: source/ui/frmdlg/cption.src#DLG_SEQUENCE_OPTION.ModalDialog.Text
 #, fuzzy
@@ -9632,8 +9653,9 @@ msgid  "Index/Table"
 msgstr "সূচীপত্র/টেবিল"
 
 #: source/ui/index/cnttab.src#DLG_MULTI_TOX.1.TP_TOX_ENTRY.PageItem.Text
+#, fuzzy
 msgid  "Entries"
-msgstr "এন্ট্রিসমূহ"
+msgstr "উপাদান"
 
 #: source/ui/index/cnttab.src#DLG_MULTI_TOX.1.TP_TOX_STYLES.PageItem.Text
 #, fuzzy
@@ -9851,8 +9873,9 @@ msgid  "~New..."
 msgstr "নতুন...(~N)"
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.MB_AUTOMARK.MN_AUTOMARK_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "~Edit..."
-msgstr "সম্পাদন...(E)"
+msgstr "সম্পাদন(~R)"
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.MB_AUTOMARK.MenuItem.Text
 #, fuzzy
@@ -10025,8 +10048,9 @@ msgid  "Entry"
 msgstr "উপাদান"
 
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.WIN_TOKEN.STR_TOKEN_HELP_TAB_STOP.String.Text
+#, fuzzy
 msgid  "Tab stop"
-msgstr "টেব স্টপ"
+msgstr "ট্যাব থামুন"
 
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.WIN_TOKEN.STR_TOKEN_HELP_TEXT.String.Text
 #, fuzzy
@@ -10144,8 +10168,9 @@ msgid  "Number range and description"
 msgstr "নাম্বার সীমা এবং বর্ণনা"
 
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.FT_ENTRY_NO.FixedText.Text
+#, fuzzy
 msgid  "Format"
-msgstr "বিন্যাস"
+msgstr "কাঠামো"
 
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.LB_ENTRY_NO.item1.StringList.item
 #, fuzzy
@@ -10223,8 +10248,9 @@ msgid  "Ascending"
 msgstr "উচ্চক্রমিক"
 
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.RB_SORTDOWN1.Image.QuickHelpText
+#, fuzzy
 msgid  "Descending"
-msgstr "নিম্নক্রমিক "
+msgstr "নিম্নক্রমিক"
 
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.RB_SORTUP2.Image.QuickHelpText
 #, fuzzy
@@ -10232,8 +10258,9 @@ msgid  "Ascending"
 msgstr "উচ্চক্রমিক"
 
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.RB_SORTDOWN2.Image.QuickHelpText
+#, fuzzy
 msgid  "Descending"
-msgstr "নিম্নক্রমিক"
+msgstr "নিম্নক্রমিক "
 
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.RB_SORTUP3.Image.QuickHelpText
 #, fuzzy
@@ -10251,8 +10278,9 @@ msgid  "Sort keys"
 msgstr "সজানোর কী"
 
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.STR_NOSORTKEY.String.Text
+#, fuzzy
 msgid  "<None>"
-msgstr "<কোনটাই নয়>"
+msgstr "<কোনটাই না>"
 
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.STR_NO_CHAR_STYLE.String.Text
 #, fuzzy
@@ -11615,8 +11643,9 @@ msgid  "Endnotes"
 msgstr "পাদটীকাসমূহ"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FL_NUM.FixedLine.Text
+#, fuzzy
 msgid  "AutoNumbering"
-msgstr "স্বয়ংসংখ্যায়ন"
+msgstr "স্ব-ক্রম"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_NUMTYPE.FixedText.Text
 #, fuzzy
@@ -11624,8 +11653,9 @@ msgid  "Num~bering"
 msgstr "ক্রমায়ন(~b)"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_OFFSET.FixedText.Text
+#, fuzzy
 msgid  "~Start at"
-msgstr "শুরু করুন (~S)"
+msgstr "শুরুতে(~S)"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_NUMCOUNT.FixedText.Text
 #, fuzzy
@@ -11653,8 +11683,9 @@ msgid  "~Before"
 msgstr "পূর্বে (~B)"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_SUFFIX.FixedText.Text
+#, fuzzy
 msgid  "~After"
-msgstr "পরবর্তীতে(~A)"
+msgstr "পরে (~A)"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_POS.FixedText.Text
 #, fuzzy
@@ -11677,8 +11708,9 @@ msgid  "Styles"
 msgstr "শৈলীসমূহ"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_PARA_TEMPL.FixedText.Text
+#, fuzzy
 msgid  "Pa~ragraph"
-msgstr "অনুচ্ছেদসমূহ (~r)"
+msgstr "অনুচ্ছেদ (~r)"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_PAGE_TEMPL.FixedText.Text
 #, fuzzy
@@ -11686,8 +11718,9 @@ msgid  "~Page"
 msgstr "পৃষ্ঠা (~P)"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FL_CHAR_TEMPL.FixedLine.Text
+#, fuzzy
 msgid  "Character Styles"
-msgstr "বর্নচিহ্নসমূহ  শৈলীসমূহ"
+msgstr "অক্ষরের শৈলীসমূহ"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_ANCHR_CHARFMT.FixedText.Text
 #, fuzzy
@@ -11700,8 +11733,9 @@ msgid  "~Footnote area"
 msgstr "পাদটিকা এলাকা (~F)"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FL_CONT.FixedLine.Text
+#, fuzzy
 msgid  "Continuation notice"
-msgstr "চলমান বিজ্ঞপ্তি"
+msgstr "চলমান নোটিশ"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_CONT.FixedText.Text
 #, fuzzy
@@ -12124,8 +12158,9 @@ msgid  "Wrong table formula"
 msgstr "টেবিলের ভুল সূত্র"
 
 #: source/ui/ribbar/workctrl.src#RID_SCROLL_NAVIGATION_WIN.String.Text
+#, fuzzy
 msgid  "Navigation"
-msgstr "দিকনির্নয়"
+msgstr "দিক নির্দেশনা"
 
 #: source/ui/ribbar/workctrl.src#STR_IMGBTN_TBL_DOWN.String.Text
 #, fuzzy
@@ -12994,7 +13029,7 @@ msgstr "সম্পর্কিত (~v)"
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.FL_OPTIONS.FixedLine.Text
 #, fuzzy
 msgid  "Properties"
-msgstr "বৈশিষ্ট্য"
+msgstr "বৈশিষ্ট্যসমূহ"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.RB_FULL.RadioButton.Text
 #, fuzzy
@@ -13079,7 +13114,7 @@ msgstr "ডান হতে বাম"
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.LB_TEXTDIRECTION.4.StringList.item
 #, fuzzy
 msgid  "Use superordinate object settings"
-msgstr "উর্ধঃস্তন বস্তু বিন্যাসন ব্যাবহার করুন"
+msgstr "উর্ধঃস্তন অবজেক্ট বিন্যাস ব্যাবহার করুন"
 
 #: source/ui/table/tabledlg.src#TP_TABLE_COLUMN.CB_MOD_TBL.CheckBox.Text
 #, fuzzy
@@ -13998,7 +14033,7 @@ msgstr "ব্রশিউর"
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CONFERENCE.String.Text
 #, fuzzy
 msgid  "Conference proceedings"
-msgstr "অগ্রসরগামী অধিবেশন "
+msgstr "অগ্রসরগামী অধিবেশন"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_INBOOK.String.Text
 #, fuzzy
@@ -14358,7 +14393,7 @@ msgstr "সাম্প্রতিকীকরন"
 #: source/ui/utlui/navipi.src#DLG_NAVIGATION_PI.TB_GLOBAL.FN_GLOBAL_OPEN.ToolBoxItem.Text
 #, fuzzy
 msgid  "Insert"
-msgstr "ঢোকানো"
+msgstr "ঢুকানো"
 
 #: source/ui/utlui/navipi.src#DLG_NAVIGATION_PI.TB_GLOBAL.FN_GLOBAL_SAVE_CONTENT.ToolBoxItem.Text
 #, fuzzy
@@ -14717,7 +14752,7 @@ msgstr "স্তরসমূহ"
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_STANDARD.String.Text
 #, fuzzy
 msgid  "Default"
-msgstr "পূর্ব নির্ধারিত"
+msgstr "স্বাভাবিক অবস্থায় ব্যবহৃত"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_TEXT.String.Text
 #, fuzzy
@@ -14762,7 +14797,7 @@ msgstr "তালিকা"
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_REGISTER_BASE.String.Text
 #, fuzzy
 msgid  "Index"
-msgstr "সূচি"
+msgstr "সূচী"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_CONFRONTATION.String.Text
 #, fuzzy
