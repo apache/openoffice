@@ -1227,6 +1227,22 @@ msgstr "#NUM!"
 msgid  "#N/A"
 msgstr "#N/A"
 
+#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT.String.Text
+msgid  "CSC"
+msgstr ""
+
+#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT.String.Text
+msgid  "SEC"
+msgstr ""
+
+#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT_HYP.String.Text
+msgid  "CSCH"
+msgstr ""
+
+#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT_HYP.String.Text
+msgid  "SECH"
+msgstr ""
+
 #: source/ui/dlg/formdlgs.src#RID_FORMULATAB_FUNCTION.LB_CATEGORY.Default.StringList.item
 msgid  "All"
 msgstr "બધુ"
@@ -1261,7 +1277,7 @@ msgstr "બંધારણ"
 
 #: source/ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.FT_FORMULA.FixedText.Text
 msgid  "For~mula"
-msgstr "સૂત્ર (~m)"
+msgstr "સૂત્ર(~m)"
 
 #: source/ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.FT_RESULT.FixedText.Text
 msgid  "Function result"
@@ -1281,11 +1297,11 @@ msgstr "મોટુ કરો"
 
 #: source/ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.BTN_BACKWARD.PushButton.Text
 msgid  "<< ~Back"
-msgstr "<< પાછા ફરો (~B)"
+msgstr "<< પાછુ ફરો (~B)"
 
 #: source/ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.BTN_FORWARD.PushButton.Text
 msgid  "~Next >>"
-msgstr "~પછીનું >>"
+msgstr "પછીનું (~N) >>"
 
 #: source/ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.STR_TITLE1.String.Text
 msgid  "Function Wizard"

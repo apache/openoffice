@@ -753,7 +753,7 @@ msgstr "ખોટી આપોઆપલખાણ દસ્તાવેજ આવ
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , ERR_WRITE_ERROR_FILE ).String.Text
 msgid  "Error in writing sub-document $(ARG1)."
-msgstr "ઉપ-દસ્તાવેજ $(ARG1) ને લખવા દરમ્યાન ભૂલ."
+msgstr "ઉપ-દસ્તાવેજ $(ARG1) ને લખવામાં ભૂલ."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_SWG_INTERNAL_ERROR ).String.Text
 msgid  "Internal error in %PRODUCTNAME Writer file format."
@@ -2987,7 +2987,7 @@ msgstr "ગુણધર્મો"
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.LB_INS_ATTR.item1.StringList.item
 #, fuzzy
 msgid  "[None]"
-msgstr "[કંઇનહી]"
+msgstr "[કંઇ નહી]"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.LB_INS_ATTR.item2.StringList.item
 #, fuzzy
@@ -5443,12 +5443,14 @@ msgid  "Collec~t at end of text"
 msgstr "લખાણના અંતે ભેગુ કરો (~t)"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.CB_FTN_NUM.CheckBox.Text
+#, fuzzy
 msgid  "~Restart numbering"
-msgstr "નંબરની ગણતરી ને ફરી શરૂ કરો (~R)"
+msgstr "નંબરની ગણતરીને ફરી શરૂ કરો (~R)"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FT_FTN_OFFSET.FixedText.Text
+#, fuzzy
 msgid  "~Start at"
-msgstr "પર ફરી શરૂ કરો (~S)"
+msgstr "પર શરૂ કરો (~S)"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.CB_FTN_NUM_FMT.CheckBox.Text
 #, fuzzy
@@ -7627,7 +7629,7 @@ msgstr "અરેબિક (೧ ೨ ೩)"
 #: source/ui/fldui/fldui.src#FMT_NUM_PAGEDESC.String.Text
 #, fuzzy
 msgid  "As Page Style"
-msgstr "પાનાંની શૈલી તરીકે"
+msgstr "પાના શૈલી તરીકે"
 
 #: source/ui/fldui/fldui.src#FMT_NUM_PAGESPECIAL.String.Text
 #, fuzzy
@@ -8054,8 +8056,9 @@ msgid  "Position"
 msgstr "સ્થાન"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_1.1.TP_CHAR_TWOLN.PageItem.Text
+#, fuzzy
 msgid  "Asian Layout"
-msgstr "એસિયન લેઆઉટ"
+msgstr "એશિયન લેઆઉટ"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_1.1.TP_BACKGROUND.PageItem.Text
 #, fuzzy
@@ -8228,8 +8231,9 @@ msgid  "Bullets"
 msgstr "નિશાનીઓ"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_5.1.RID_SVXPAGE_PICK_SINGLE_NUM.PageItem.Text
+#, fuzzy
 msgid  "Numbering Style"
-msgstr "નંબર ગણતરીની શૈલીઓ"
+msgstr "નંબરની ગણતરીની શૈલી"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_5.1.RID_SVXPAGE_PICK_NUM.PageItem.Text
 #, fuzzy
@@ -9115,8 +9119,9 @@ msgid  "Above"
 msgstr "ઉપર"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.STR_END.String.Text
+#, fuzzy
 msgid  "Below"
-msgstr "નીચેનું"
+msgstr "નીચે"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.STR_ABOVE.String.Text
 #, fuzzy
@@ -10004,7 +10009,7 @@ msgstr "વડે ક્રમબધ્ધ કરો"
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.RB_SORTUP1.Image.QuickHelpText
 #, fuzzy
 msgid  "Ascending"
-msgstr "ચડતા ક્રમમાં "
+msgstr "ચડતા ક્રમમાં"
 
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.RB_SORTDOWN1.Image.QuickHelpText
 #, fuzzy
@@ -11404,8 +11409,9 @@ msgid  "Endnotes"
 msgstr "અંતનોંધો"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FL_NUM.FixedLine.Text
+#, fuzzy
 msgid  "AutoNumbering"
-msgstr "આપમેળે ક્રમાંકિત કરી રહ્યા છે"
+msgstr "આપમેળે ક્રમાંકિત"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_NUMTYPE.FixedText.Text
 #, fuzzy
@@ -11478,8 +11484,9 @@ msgid  "~Page"
 msgstr "પાનું (~P)"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FL_CHAR_TEMPL.FixedLine.Text
+#, fuzzy
 msgid  "Character Styles"
-msgstr "અક્ષર શૈલીઓ"
+msgstr "અક્ષક શૈલીઓ"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_ANCHR_CHARFMT.FixedText.Text
 #, fuzzy
@@ -14876,7 +14883,7 @@ msgstr "ફુટનોંધ"
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_ENDNOTE.String.Text
 #, fuzzy
 msgid  "Endnote"
-msgstr "અંકનોંધ"
+msgstr "અંતનોંધ"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_LABEL.String.Text
 #, fuzzy
