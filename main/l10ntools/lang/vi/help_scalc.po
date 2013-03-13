@@ -6572,7 +6572,7 @@ msgstr ""
 #: source/text/scalc/01/04060106.xhp#par_id679647
 #, fuzzy
 msgid  "To return the angle in degrees, use the DEGREES function."
-msgstr "Để trả về góc theo độ, dùng hàm DEGREES."
+msgstr "Để trả về góc theo độ, hãy dùng hàm DEGREES."
 
 #: source/text/scalc/01/04060106.xhp#hd_id3149882.55
 #, fuzzy
@@ -9925,7 +9925,7 @@ msgstr ""
 #: source/text/scalc/01/04060107.xhp#hd_id3156162.17
 #, fuzzy
 msgid  "Example"
-msgstr "Thí dụ"
+msgstr "Ví dụ"
 
 #: source/text/scalc/01/04060107.xhp#par_id3150949.18
 msgid  "Select a square range within the spreadsheet, for example, from A1 to E5."
@@ -11467,7 +11467,7 @@ msgstr ""
 #: source/text/scalc/01/04060109.xhp#hd_id3148891.24
 #, fuzzy
 msgid  "Example"
-msgstr "Thí dụ"
+msgstr "Ví dụ"
 
 #: source/text/scalc/01/04060109.xhp#par_id3149946.25
 msgid  "            \<item type=\"input\"\>=AREAS((A1:B3;F2;G1))\</item\> returns 3, as it is a reference to three cells and/or areas. After entry this gets converted to =AREAS((A1:B3~F2~G1))."
@@ -11554,7 +11554,7 @@ msgstr "Dữ liệu được lấy dạng văn bản; không chuyển đổi san
 #: source/text/scalc/01/04060109.xhp#hd_id3149546.35
 #, fuzzy
 msgid  "Example"
-msgstr "Thí dụ"
+msgstr "Ví dụ"
 
 #: source/text/scalc/01/04060109.xhp#par_id3148734.36
 msgid  "            \<item type=\"input\"\>=DDE("soffice";"c:\\office\\document\\data1.sxc";"sheet1.A1")\</item\> reads the contents of cell A1 in sheet1 of the \<item type=\"productname\"\>%PRODUCTNAME\</item\> Calc spreadsheet data1.sxc."
@@ -11598,7 +11598,7 @@ msgstr ""
 #: source/text/scalc/01/04060109.xhp#hd_id3145248.44
 #, fuzzy
 msgid  "Example"
-msgstr "Thí dụ"
+msgstr "Ví dụ"
 
 #: source/text/scalc/01/04060109.xhp#par_id3146904.45
 msgid  "If cell A1 displays Err:518, the function \<item type=\"input\"\>=ERRORTYPE(A1)\</item\> returns the number 518."
@@ -11646,7 +11646,7 @@ msgstr ""
 #: source/text/scalc/01/04060109.xhp#hd_id3145264.55
 #, fuzzy
 msgid  "Example"
-msgstr "Ví dụ"
+msgstr "Thí dụ"
 
 #: source/text/scalc/01/04060109.xhp#par_id3159112.56
 msgid  "            \<item type=\"input\"\>=INDEX(Prices;4;1)\</item\> returns the value from row 4 and column 1 of the database range defined in \<emph\>Data - Define\</emph\> as \<emph\>Prices\</emph\>."
@@ -11714,7 +11714,7 @@ msgstr ""
 #: source/text/scalc/01/04060109.xhp#hd_id3150389.67
 #, fuzzy
 msgid  "Example"
-msgstr "Ví dụ"
+msgstr "Thí dụ"
 
 #: source/text/scalc/01/04060109.xhp#par_id3150608.68
 msgid  "            \<item type=\"input\"\>=INDIRECT(A1)\</item\> equals 100 if A1 contains C108 as a reference and cell C108 contains a value of \<item type=\"input\"\>100\</item\>."
@@ -12589,7 +12589,7 @@ msgstr ""
 #: source/text/scalc/01/04060110.xhp#hd_id3155758.244
 #, fuzzy
 msgid  "Example"
-msgstr "Thí dụ"
+msgstr "Ví dụ"
 
 #: source/text/scalc/01/04060110.xhp#par_id3154621.245
 msgid  "            \<item type=\"input\"\>=ARABIC("MXIV")\</item\> returns 1014"
@@ -12664,7 +12664,7 @@ msgstr ""
 #: source/text/scalc/01/04060110.xhp#hd_id9694814
 #, fuzzy
 msgid  "Example"
-msgstr "Thí dụ"
+msgstr "Ví dụ"
 
 #: source/text/scalc/01/04060110.xhp#par_id3289284
 msgid  "            \<item type=\"input\"\>=BAHTTEXT(12.65)\</item\> returns a string in Thai characters with the meaning of "Twelve Baht and sixty five Satang"."
@@ -12708,7 +12708,7 @@ msgstr ""
 #: source/text/scalc/01/04060110.xhp#hd_id3146323.220
 #, fuzzy
 msgid  "Example"
-msgstr "Thí dụ"
+msgstr "Ví dụ"
 
 #: source/text/scalc/01/04060110.xhp#bm_id3156399
 msgid  "\<bookmark_value\>decimal system; converting to\</bookmark_value\>"
@@ -12764,7 +12764,7 @@ msgstr ""
 #: source/text/scalc/01/04060110.xhp#hd_id3152982.207
 #, fuzzy
 msgid  "Example"
-msgstr "Thí dụ"
+msgstr "Ví dụ"
 
 #: source/text/scalc/01/04060110.xhp#par_id3149890.208
 msgid  "            \<item type=\"input\"\>=CHAR(100)\</item\> returns the character d."
@@ -12829,7 +12829,7 @@ msgstr ""
 #: source/text/scalc/01/04060110.xhp#hd_id3154394.8
 #, fuzzy
 msgid  "Example"
-msgstr "Thí dụ"
+msgstr "Ví dụ"
 
 #: source/text/scalc/01/04060110.xhp#par_id3159209.9
 msgid  "            \<item type=\"input\"\>=CODE("Hieronymus")\</item\> returns 72, \<item type=\"input\"\>=CODE("hieroglyphic")\</item\> returns 104."
@@ -12868,7 +12868,7 @@ msgstr ""
 #: source/text/scalc/01/04060110.xhp#hd_id3153110.172
 #, fuzzy
 msgid  "Example"
-msgstr "Thí dụ"
+msgstr "Ví dụ"
 
 #: source/text/scalc/01/04060110.xhp#par_id3150008.173
 msgid  "            \<item type=\"input\"\>=CONCATENATE("Good ";"Morning ";"Mrs. ";"Doe")\</item\> returns: Good Morning Mrs. Doe."
@@ -12911,7 +12911,7 @@ msgstr ""
 #: source/text/scalc/01/04060110.xhp#hd_id3156062.232
 #, fuzzy
 msgid  "Example"
-msgstr "Thí dụ"
+msgstr "Ví dụ"
 
 #: source/text/scalc/01/04060110.xhp#par_id3145355.233
 msgid  "            \<item type=\"input\"\>=DECIMAL("17";10)\</item\> returns 17."
@@ -12964,7 +12964,7 @@ msgstr ""
 #: source/text/scalc/01/04060110.xhp#hd_id3149030.17
 #, fuzzy
 msgid  "Example"
-msgstr "Ví dụ"
+msgstr "Thí dụ"
 
 #: source/text/scalc/01/04060110.xhp#par_id3153546.18
 msgid  "            \<item type=\"input\"\>=DOLLAR(255)\</item\> returns $255.00."
@@ -13007,7 +13007,7 @@ msgstr ""
 #: source/text/scalc/01/04060110.xhp#hd_id3149777.84
 #, fuzzy
 msgid  "Example"
-msgstr "Ví dụ"
+msgstr "Thí dụ"
 
 #: source/text/scalc/01/04060110.xhp#par_id3156263.85
 msgid  "            \<item type=\"input\"\>=EXACT("microsystems";"Microsystems")\</item\> returns FALSE."
@@ -13050,7 +13050,7 @@ msgstr ""
 #: source/text/scalc/01/04060110.xhp#hd_id3154812.51
 #, fuzzy
 msgid  "Example"
-msgstr "Ví dụ"
+msgstr "Thí dụ"
 
 #: source/text/scalc/01/04060110.xhp#par_id3156375.52
 msgid  "            \<item type=\"input\"\>=FIND(76;998877665544)\</item\> returns 6."
@@ -17299,7 +17299,7 @@ msgstr ""
 #: source/text/scalc/01/04060118.xhp#hd_id3153111.114
 #, fuzzy
 msgid  "Example"
-msgstr "Ví dụ"
+msgstr "Thí dụ"
 
 #: source/text/scalc/01/04060118.xhp#par_id3152999.115
 msgid  "Settlement date: February 7 1999, maturity date: June 15 1999, last interest: October 15 1998. Interest rate: 3.75 per cent, yield: 4.05 per cent, redemption value: 100 currency units, frequency of payments: half-yearly = 2, basis: = 0"
@@ -17366,7 +17366,7 @@ msgstr ""
 #: source/text/scalc/01/04060118.xhp#hd_id3145303.129
 #, fuzzy
 msgid  "Example"
-msgstr "Ví dụ"
+msgstr "Thí dụ"
 
 #: source/text/scalc/01/04060118.xhp#par_id3145350.130
 msgid  "Settlement date: April 20 1999, maturity date: June 15 1999, last interest: October 15 1998. Interest rate: 3.75 per cent, price: 99.875 currency units, redemption value: 100 currency units, frequency of payments: half-yearly = 2, basis: = 0"
@@ -17438,7 +17438,7 @@ msgstr ""
 #: source/text/scalc/01/04060118.xhp#hd_id3148429.233
 #, fuzzy
 msgid  "Example"
-msgstr "Ví dụ"
+msgstr "Thí dụ"
 
 #: source/text/scalc/01/04060118.xhp#par_id3153927.234
 msgid  "What is the declining-balance double-rate depreciation for a period if the initial cost is 35,000 currency units and the value at the end of the depreciation is 7,500 currency units. The depreciation period is 3 years. The depreciation from the 10th to the 20th period is calculated."
@@ -17487,7 +17487,7 @@ msgstr ""
 #: source/text/scalc/01/04060118.xhp#hd_id3145085.199
 #, fuzzy
 msgid  "Example"
-msgstr "Thí dụ"
+msgstr "Ví dụ"
 
 #: source/text/scalc/01/04060118.xhp#par_id3149273.200
 msgid  "Calculation of the internal rate of return for the following five payments:"
@@ -19715,7 +19715,7 @@ msgstr ""
 #: source/text/scalc/01/04060181.xhp#hd_id3157906.9
 #, fuzzy
 msgid  "Example"
-msgstr "Ví dụ"
+msgstr "Thí dụ"
 
 #: source/text/scalc/01/04060181.xhp#par_id3148728.10
 msgid  "To calculate the intercept, use cells D3:D9 as the y value and C3:C9 as the x value from the example spreadsheet. Input will be as follows:"
@@ -19755,7 +19755,7 @@ msgstr ""
 #: source/text/scalc/01/04060181.xhp#hd_id3149254.18
 #, fuzzy
 msgid  "Example"
-msgstr "Ví dụ"
+msgstr "Thí dụ"
 
 #: source/text/scalc/01/04060181.xhp#par_id3149953.19
 msgid  "The entries 2, 4, 6 and eight in the Value 1-4 fields are to be counted."
@@ -19795,7 +19795,7 @@ msgstr ""
 #: source/text/scalc/01/04060181.xhp#hd_id3150334.27
 #, fuzzy
 msgid  "Example"
-msgstr "Ví dụ"
+msgstr "Thí dụ"
 
 #: source/text/scalc/01/04060181.xhp#par_id3154508.28
 msgid  "The entries 2, 4, 6 and eight in the Value 1-4 fields are to be counted."
@@ -24759,7 +24759,7 @@ msgstr ""
 #: source/text/scalc/01/05100000.xhp#hd_id3153877.4
 #, fuzzy
 msgid  "Cell Styles"
-msgstr "Kiểu dáng ô"
+msgstr "Kiểu dáng Ô"
 
 #: source/text/scalc/01/05100000.xhp#par_id3145801.6
 msgid  "\<ahelp hid=\".uno:ParaStyle\"\>Displays the list of the available Cell Styles for \<link href=\"text/shared/00/00000005.xhp#formatierung\" name=\"indirect cell formatting\"\>indirect cell formatting\</link\>.\</ahelp\>"
@@ -30071,8 +30071,9 @@ msgid  "\<link href=\"text/shared/01/05020300.xhp\" name=\"Format - Cell - Numbe
 msgstr ""
 
 #: source/text/scalc/02/02160000.xhp#tit
+#, fuzzy
 msgid  "Number Format: Add Decimal Place"
-msgstr "Định dạng số : Thêm chữ số thập phân"
+msgstr "Định dạng số: Thêm chữ số thập phân"
 
 #: source/text/scalc/02/02160000.xhp#hd_id3150275.1
 msgid  "\<link href=\"text/scalc/02/02160000.xhp\" name=\"Number Format: Add Decimal Place\"\>Number Format: Add Decimal Place\</link\>"
@@ -30092,8 +30093,9 @@ msgid  "Number Format: Add Decimal Place"
 msgstr "Định dạng số: Thêm chữ số thập phân"
 
 #: source/text/scalc/02/02170000.xhp#tit
+#, fuzzy
 msgid  "Number Format: Delete Decimal Place"
-msgstr "Định dạng số : Xoá bớt chữ số thập phân"
+msgstr "Định dạng số: Xoá bớt chữ số thập phân"
 
 #: source/text/scalc/02/02170000.xhp#hd_id3149164.1
 msgid  "\<link href=\"text/scalc/02/02170000.xhp\" name=\"Number Format: Delete Decimal Place\"\>Number Format: Delete Decimal Place\</link\>"
