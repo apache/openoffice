@@ -1,1730 +1,1676 @@
-
-#: Strings.src#STR_ACTION_EDIT_3D_VIEW.string.text
-msgid "Edit 3D view"
-msgstr "កែសម្រួល​ទិដ្ឋភាព​ត្រីមាត្រ"
-
-#: Strings.src#STR_ACTION_EDIT_CHARTTYPE.string.text
-msgid "Edit chart type"
-msgstr "កែសម្រួល​ប្រភេទ​គំនូស​តាង"
-
-#: Strings.src#STR_ACTION_EDIT_CHART_DATA.string.text
-msgid "Edit chart data"
-msgstr "កែសម្រួល​ទិន្នន័យ​គំនូស​តាង"
-
-#: Strings.src#STR_ACTION_EDIT_DATA_RANGES.string.text
-msgid "Edit data ranges"
-msgstr "កែសម្រួល​ជួរ​ទិន្នន័យ"
-
-#: Strings.src#STR_ACTION_EDIT_TEXT.string.text
-msgid "Edit text"
-msgstr "កែសម្រួល​អត្ថបទ"
-
-#: Strings.src#STR_ACTION_NOTPOSSIBLE.string.text
-msgid "This function cannot be completed with the selected objects."
-msgstr ""
-"អនុគមន៍​នេះ​មិន​អាច​ត្រូវ​បាន​បញ្ចប់​ជា​មួយ​នឹង​វត្ថុ​ដែល​បាន​ជ្រើស​បាន​ទេ ។"
-
-#: Strings.src#STR_ACTION_REARRANGE_CHART.string.text
-msgid "Automatic Layout"
-msgstr "ប្លង់​ស្វ័យ​ប្រវត្តិ"
-
-#: Strings.src#STR_ACTION_SCALE_TEXT.string.text
-msgid "Scale Text"
-msgstr "ធ្វើ​មាត្រដ្ឋាន​អត្ថបទ"
-
-#: Strings.src#STR_ACTION_TOGGLE_GRID_HORZ.string.text
-msgid "Horizontal grid on/off"
-msgstr "បិទ/បើក​ក្រឡាចត្រង្គ​ផ្ដេក"
-
-#: Strings.src#STR_ACTION_TOGGLE_LEGEND.string.text
-msgid "Legend on/off"
-msgstr "បិទ/បើក​តាង"
-
-#: Strings.src#STR_BUTTON_DOWN.string.text
-msgid "Down"
-msgstr "ចុះក្រោម"
-
-#: Strings.src#STR_BUTTON_UP.string.text
-msgid "Up"
-msgstr "ឡើង​លើ"
-
-#: Strings.src#STR_COLUMN_LABEL.string.text
-msgid "Column %COLUMNNUMBER"
-msgstr "ជួរឈរ %COLUMNNUMBER"
-
-#: Strings.src#STR_DATA_EDITOR_INCORRECT_INPUT.string.text
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
 msgid ""
-"Your last input is incorrect.\n"
-"Ignore this change and close the dialog?"
 msgstr ""
-"ព័ត៌មាន​បញ្ចូល​របស់​អ្នក​ចុង​ក្រោយ​មិន​ត្រឹមត្រូវ ។\n"
-"មិន​អើពើ​ការ​ផ្លាស់ប្ដូរ​នេះ និង​បិទ​ប្រអប់?"
-
-#: Strings.src#STR_DATA_ROLE_CATEGORIES.string.text
-msgid "Categories"
-msgstr "ប្រភេទ"
-
-#: Strings.src#STR_DATA_ROLE_FIRST.string.text
-msgid "Open Values"
-msgstr "តម្លៃ​បើក"
-
-#: Strings.src#STR_DATA_ROLE_LABEL.string.text
-msgid "Name"
-msgstr "ឈ្មោះ"
-
-#: Strings.src#STR_DATA_ROLE_LAST.string.text
-msgid "Close Values"
-msgstr "តម្លៃ​បិទ"
-
-#: Strings.src#STR_DATA_ROLE_MAX.string.text
-msgid "High Values"
-msgstr "តម្លៃ​ខ្ពស់"
-
-#: Strings.src#STR_DATA_ROLE_MIN.string.text
-msgid "Low Values"
-msgstr "តម្លៃ​ទាប"
-
-#: Strings.src#STR_DATA_ROLE_SIZE.string.text
-msgid "Bubble Sizes"
-msgstr "ទំហំ​ពពុះ"
-
-#: Strings.src#STR_DATA_ROLE_X.string.text
-msgid "X-Values"
-msgstr "តម្លៃ X"
-
-#: Strings.src#STR_DATA_ROLE_X_ERROR.string.text
-msgid "X-Error-Bars"
-msgstr "របារ​កំហុស X"
-
-#: Strings.src#STR_DATA_ROLE_X_ERROR_NEGATIVE.string.text
-msgid "Negative X-Error-Bars"
-msgstr "របារ​កំហុស X អវិជ្ជមាន"
-
-#: Strings.src#STR_DATA_ROLE_X_ERROR_POSITIVE.string.text
-msgid "Positive X-Error-Bars"
-msgstr "របារ​កំហុស X វិជ្ជមាន"
-
-#: Strings.src#STR_DATA_ROLE_Y.string.text
-msgid "Y-Values"
-msgstr "តម្លៃ Y"
-
-#: Strings.src#STR_DATA_ROLE_Y_ERROR.string.text
-msgid "Y-Error-Bars"
-msgstr "របារ​កំហុស Y"
-
-#: Strings.src#STR_DATA_ROLE_Y_ERROR_NEGATIVE.string.text
-msgid "Negative Y-Error-Bars"
-msgstr "របារ​កំហុស Y អវិជ្ជមាន"
-
-#: Strings.src#STR_DATA_ROLE_Y_ERROR_POSITIVE.string.text
-msgid "Positive Y-Error-Bars"
-msgstr "របារ​កំហុស Y វិជ្ជមាន"
-
-#: Strings.src#STR_DATA_SELECT_RANGE_FOR_CATEGORIES.string.text
-msgid "Select Range for Categories"
-msgstr "ជ្រើស​ជួរ​សម្រាប់​ប្រភេទ"
-
-#: Strings.src#STR_DATA_SELECT_RANGE_FOR_DATALABELS.string.text
-msgid "Select Range for data labels"
-msgstr "ជ្រើស​ជួរ​សម្រាប់​ស្លាក​ទិន្នន័យ"
-
-#: Strings.src#STR_DATA_SELECT_RANGE_FOR_NEGATIVE_ERRORBARS.string.text
-msgid "Select Range for Negative Error Bars"
-msgstr "ជ្រើស​ជួរ​សម្រាប់​របារ​កំហុស​អវិជ្ជមាន"
-
-#: Strings.src#STR_DATA_SELECT_RANGE_FOR_POSITIVE_ERRORBARS.string.text
-msgid "Select Range for Positive Error Bars"
-msgstr "ជ្រើស​ជួរ​សម្រាប់​របារ​កំហុស​វិជ្ជមាន"
-
-#: Strings.src#STR_DATA_SELECT_RANGE_FOR_SERIES.string.text
-msgid "Select Range for %VALUETYPE of %SERIESNAME"
-msgstr "ជ្រើស​ជួរ​សម្រាប់ %VALUETYPE នៃ %SERIESNAME"
-
-#: Strings.src#STR_DATA_UNNAMED_SERIES.string.text
-msgid "Unnamed Series"
-msgstr "ស៊េរី​គ្មាន​ឈ្មោះ"
-
-#: Strings.src#STR_DATA_UNNAMED_SERIES_WITH_INDEX.string.text
-msgid "Unnamed Series %NUMBER"
-msgstr "ស៊េរី​គ្មាន​ឈ្មោះ %NUMBER"
-
-#: Strings.src#STR_DLG_CHART_WIZARD.string.text
-msgid "Chart Wizard"
-msgstr "អ្នក​ជំនួយការ​គំនូស​តាង"
-
-#: Strings.src#STR_DLG_NUMBERFORMAT_FOR_PERCENTAGE_VALUE.string.text
-msgid "Number Format for Percentage Value"
-msgstr "ទ្រង់ទ្រាយ​លេខ​សម្រាប់​តម្លៃ​ជា​ភាគរយ"
-
-#: Strings.src#STR_DLG_SMOOTH_LINE_PROPERTIES.string.text
-msgid "Smooth Lines"
-msgstr "បន្ទាត់​រៀបស្មើ"
-
-#: Strings.src#STR_OBJECT_AVERAGE_LINE.string.text
-msgid "Mean Value Line"
-msgstr "បន្ទាត់​តម្លៃ​មធ្យម"
-
-#: Strings.src#STR_OBJECT_AVERAGE_LINE_WITH_PARAMETERS.string.text
-msgid ""
-"Mean value line with value %AVERAGE_VALUE and standard deviation %"
-"STD_DEVIATION"
-msgstr ""
-"បន្ទាត់​តម្លៃ​មធ្យម​ដែលមាន​តម្លៃ %AVERAGE_VALUE និង​គម្លាត​គំរូ %"
-"STD_DEVIATION"
-
-#: Strings.src#STR_OBJECT_AXES.string.text
-msgctxt "Strings.src#STR_OBJECT_AXES.string.text"
-msgid "Axes"
-msgstr "អ័ក្ស"
-
-#: Strings.src#STR_OBJECT_AXIS.string.text
-msgid "Axis"
-msgstr "អ័ក្ស"
-
-#: Strings.src#STR_OBJECT_AXIS_X.string.text
-msgid "X Axis"
-msgstr "អ័ក្ស X"
-
-#: Strings.src#STR_OBJECT_AXIS_Y.string.text
-msgid "Y Axis"
-msgstr "អ័ក្ស Y"
-
-#: Strings.src#STR_OBJECT_AXIS_Z.string.text
-msgid "Z Axis"
-msgstr "អ័ក្ស Z"
-
-#: Strings.src#STR_OBJECT_CURVE.string.text
-msgid "Trend Line"
-msgstr "បន្ទាត់​និន្នាការ"
-
-#: Strings.src#STR_OBJECT_CURVES.string.text
-msgid "Trend Lines"
-msgstr "បន្ទាត់​និន្នាការ"
-
-#: Strings.src#STR_OBJECT_CURVE_EQUATION.string.text
-msgctxt "Strings.src#STR_OBJECT_CURVE_EQUATION.string.text"
-msgid "Equation"
-msgstr "សមីការ"
-
-#: Strings.src#STR_OBJECT_CURVE_WITH_PARAMETERS.string.text
-msgid "Trend line %FORMULA with accuracy R² = %RSQUARED"
-msgstr "បន្ទាត់​និន្នាការ %FORMULA ជាមួយ​ភាព​ត្រឹមត្រូវ R² = %RSQUARED"
-
-#: Strings.src#STR_OBJECT_DATALABELS.string.text
-msgid "Data Labels"
-msgstr "ស្លាក​ទិន្នន័យ"
-
-#: Strings.src#STR_OBJECT_DATAPOINT.string.text
-msgid "Data Point"
-msgstr "ចំណុច​ទិន្នន័យ"
-
-#: Strings.src#STR_OBJECT_DATAPOINTS.string.text
-msgid "Data Points"
-msgstr "ចំណុច​ទិន្នន័យ"
-
-#: Strings.src#STR_OBJECT_DATASERIES.string.text
-msgctxt "Strings.src#STR_OBJECT_DATASERIES.string.text"
-msgid "Data Series"
-msgstr "ស៊េរី​ទិន្នន័យ"
-
-#: Strings.src#STR_OBJECT_DATASERIES_PLURAL.string.text
-msgctxt "Strings.src#STR_OBJECT_DATASERIES_PLURAL.string.text"
-msgid "Data Series"
-msgstr "ស៊េរី​ទិន្នន័យ"
-
-#: Strings.src#STR_OBJECT_DIAGRAM.string.text
-msgid "Chart"
-msgstr "គំនូសតាង"
-
-#: Strings.src#STR_OBJECT_DIAGRAM_FLOOR.string.text
-msgid "Chart Floor"
-msgstr "ផ្ទៃ​​​បាត​​គំនូស​​តាង"
-
-#: Strings.src#STR_OBJECT_DIAGRAM_WALL.string.text
-msgid "Chart Wall"
-msgstr "ជញ្ជាំង​គំនូសតាង"
-
-#: Strings.src#STR_OBJECT_ERROR_BARS.string.text
-msgid "Error Bars"
-msgstr "របារ​កំហុស"
-
-#: Strings.src#STR_OBJECT_FOR_ALL_SERIES.string.text
-msgid "%OBJECTNAME for all Data Series"
-msgstr "%OBJECTNAME សម្រាប់​ស៊េរី​ទិន្នន័យ​ទាំង​អស់"
-
-#: Strings.src#STR_OBJECT_FOR_SERIES.string.text
-msgid "%OBJECTNAME for Data Series '%SERIESNAME'"
-msgstr "%OBJECTNAME សម្រាប់​ស៊េរី​ទិន្នន័យ '%SERIESNAME'"
-
-#: Strings.src#STR_OBJECT_GRID.string.text
-msgid "Grid"
-msgstr "ក្រឡា​​​​ចត្រង្គ"
-
-#: Strings.src#STR_OBJECT_GRIDS.string.text
-msgctxt "Strings.src#STR_OBJECT_GRIDS.string.text"
-msgid "Grids"
-msgstr "ក្រឡាចត្រង្គ"
-
-#: Strings.src#STR_OBJECT_GRID_MAJOR_X.string.text
-msgid "X Axis Major Grid"
-msgstr "ក្រឡាចត្រង្គ​អ័ក្ស X ញឹក"
-
-#: Strings.src#STR_OBJECT_GRID_MAJOR_Y.string.text
-msgid "Y Axis Major Grid"
-msgstr "ក្រឡាចត្រង្គ​អ័ក្ស Y ញឹក"
-
-#: Strings.src#STR_OBJECT_GRID_MAJOR_Z.string.text
-msgid "Z Axis Major Grid"
-msgstr "ក្រឡាចត្រង្គ​អ័ក្ស Z ញឹក"
-
-#: Strings.src#STR_OBJECT_GRID_MINOR_X.string.text
-msgid "X Axis Minor Grid"
-msgstr "ក្រឡាចត្រង្គ​អ័ក្ស X រង្វើល"
-
-#: Strings.src#STR_OBJECT_GRID_MINOR_Y.string.text
-msgid "Y Axis Minor Grid"
-msgstr "ក្រឡាចត្រង្គ​អ័ក្ស Y រង្វើល"
-
-#: Strings.src#STR_OBJECT_GRID_MINOR_Z.string.text
-msgid "Z Axis Minor Grid"
-msgstr "ក្រឡាចត្រង្គ​អ័ក្ស Z រង្វើល"
-
-#: Strings.src#STR_OBJECT_LABEL.string.text
-msgid "Label"
-msgstr "ស្លាក"
-
-#: Strings.src#STR_OBJECT_LEGEND.string.text
-msgid "Legend"
-msgstr "តាង"
-
-#: Strings.src#STR_OBJECT_LEGEND_SYMBOL.string.text
-msgid "Legend Key"
-msgstr "កូនសោ​តាង"
-
-#: Strings.src#STR_OBJECT_PAGE.string.text
-msgid "Chart Area"
-msgstr "ផ្ទៃ​គំនូស​តាង"
-
-#: Strings.src#STR_OBJECT_SECONDARY_X_AXIS.string.text
-msgid "Secondary X Axis"
-msgstr "អ័ក្ស Y រង"
-
-#: Strings.src#STR_OBJECT_SECONDARY_Y_AXIS.string.text
-msgid "Secondary Y Axis"
-msgstr "អ័ក្ស Y រង"
-
-#: Strings.src#STR_OBJECT_SHAPE.string.text
-msgid "Drawing Object"
-msgstr "វត្ថុគំនូរ"
-
-#: Strings.src#STR_OBJECT_STOCK_GAIN.string.text
-msgid "Stock Gain"
-msgstr "គំនូស​តាង​សន្និធិ"
-
-#: Strings.src#STR_OBJECT_STOCK_LOSS.string.text
-msgid "Stock Loss"
-msgstr "គំនូស​តាង​សន្និធិ"
-
-#: Strings.src#STR_OBJECT_TITLE.string.text
-msgid "Title"
-msgstr "ចំណង​ជើង"
-
-#: Strings.src#STR_OBJECT_TITLES.string.text
-msgid "Titles"
-msgstr "ចំណង​​ជើង​"
-
-#: Strings.src#STR_OBJECT_TITLE_MAIN.string.text
-msgid "Main Title"
-msgstr "ចំណង​ជើងមេ"
-
-#: Strings.src#STR_OBJECT_TITLE_SECONDARY_X_AXIS.string.text
-msgid "Secondary X Axis Title"
-msgstr "ចំណង​ជើង​អ័ក្ស X រង"
-
-#: Strings.src#STR_OBJECT_TITLE_SECONDARY_Y_AXIS.string.text
-msgid "Secondary Y Axis Title"
-msgstr "ចំណង​ជើង​អ័ក្ស Y រង"
-
-#: Strings.src#STR_OBJECT_TITLE_SUB.string.text
-msgid "Subtitle"
-msgstr "ចំណង​ជើង​រង"
-
-#: Strings.src#STR_OBJECT_TITLE_X_AXIS.string.text
-msgid "X Axis Title"
-msgstr "ចំណង​ជើង​អ័ក្ស X"
-
-#: Strings.src#STR_OBJECT_TITLE_Y_AXIS.string.text
-msgid "Y Axis Title"
-msgstr "ចំណង​ជើង​អ័ក្ស Y"
-
-#: Strings.src#STR_OBJECT_TITLE_Z_AXIS.string.text
-msgid "Z Axis Title"
-msgstr "ចំណង​ជើង​អ័ក្ស Z"
-
-#: Strings.src#STR_PAGE_ALIGNMENT.string.text
-msgctxt "Strings.src#STR_PAGE_ALIGNMENT.string.text"
-msgid "Alignment"
-msgstr "តម្រឹម"
-
-#: Strings.src#STR_PAGE_APPEARANCE.string.text
-msgid "Appearance"
-msgstr "រូបរាង"
-
-#: Strings.src#STR_PAGE_AREA.string.text
-msgctxt "Strings.src#STR_PAGE_AREA.string.text"
-msgid "Area"
-msgstr "ផ្ទៃ"
-
-#: Strings.src#STR_PAGE_ASIAN.string.text
-msgctxt "Strings.src#STR_PAGE_ASIAN.string.text"
-msgid "Asian Typography"
-msgstr "មុទ្ទវិទ្យា​អាស៊ី"
-
-#: Strings.src#STR_PAGE_BORDER.string.text
-msgid "Borders"
-msgstr "ស៊ុម"
-
-#: Strings.src#STR_PAGE_CHARTTYPE.string.text
-msgid "Chart Type"
-msgstr "ប្រភេទ​គំនូស​តាង"
-
-#: Strings.src#STR_PAGE_CHART_ELEMENTS.string.text
-msgid "Chart Elements"
-msgstr "ធាតុ​គំនូស​តាង"
-
-#: Strings.src#STR_PAGE_CHART_LOCATION.string.text
-msgid "Chart Location"
-msgstr "ទីតាំង​គំនូស​តាង"
-
-#: Strings.src#STR_PAGE_DATA_RANGE.string.text
-msgid "Data Range"
-msgstr "ជួរ​ទិន្នន័យ"
-
-#: Strings.src#STR_PAGE_FONT.string.text
-msgctxt "Strings.src#STR_PAGE_FONT.string.text"
-msgid "Font"
-msgstr "ពុម្ពអក្សរ"
-
-#: Strings.src#STR_PAGE_FONT_EFFECTS.string.text
-msgctxt "Strings.src#STR_PAGE_FONT_EFFECTS.string.text"
-msgid "Font Effects"
-msgstr "បែបផែន​ពុម្ពអក្សរ"
-
-#: Strings.src#STR_PAGE_ILLUMINATION.string.text
-msgid "Illumination"
-msgstr "ការ​បំភ្លឺ​"
-
-#: Strings.src#STR_PAGE_LAYOUT.string.text
-msgid "Layout"
-msgstr "ប្លង់"
-
-#: Strings.src#STR_PAGE_LINE.string.text
-msgctxt "Strings.src#STR_PAGE_LINE.string.text"
-msgid "Line"
-msgstr "បន្ទាត់"
-
-#: Strings.src#STR_PAGE_NUMBERS.string.text
-msgid "Numbers"
-msgstr "លេខ"
-
-#: Strings.src#STR_PAGE_OPTIONS.string.text
-msgid "Options"
-msgstr "ជម្រើស"
-
-#: Strings.src#STR_PAGE_PERSPECTIVE.string.text
-msgid "Perspective"
-msgstr "យថាទស្សន៍"
-
-#: Strings.src#STR_PAGE_POSITION.string.text
-msgctxt "Strings.src#STR_PAGE_POSITION.string.text"
-msgid "Position"
-msgstr "ទីតាំង"
-
-#: Strings.src#STR_PAGE_POSITIONING.string.text
-msgid "Positioning"
-msgstr "ការ​ដាក់ទីតាំង"
-
-#: Strings.src#STR_PAGE_SCALE.string.text
-msgctxt "Strings.src#STR_PAGE_SCALE.string.text"
-msgid "Scale"
-msgstr "មាត្រដ្ឋាន"
-
-#: Strings.src#STR_PAGE_TRANSPARENCY.string.text
-msgid "Transparency"
-msgstr "​ថ្លា"
-
-#: Strings.src#STR_PAGE_TRENDLINE_TYPE.string.text
-msgid "Type"
-msgstr "ប្រភេទ"
-
-#: Strings.src#STR_PAGE_YERROR_BARS.string.text
-msgid "Y Error Bars"
-msgstr "របារ​កំហុស Y"
-
-#: Strings.src#STR_ROW_LABEL.string.text
-msgid "Row %ROWNUMBER"
-msgstr "ជួរដេក %ROWNUMBER"
-
-#: Strings.src#STR_STATUS_DATAPOINT_MARKED.string.text
-msgid ""
-"Data point %POINTNUMBER in data series %SERIESNUMBER selected, values: %"
-"POINTVALUES"
-msgstr ""
-"បាន​ជ្រើស​ចំណុច​​ទិន្នន័យ %POINTNUMBER នៅ​ក្នុង​ស៊េរី​ទិន្នន័យ %SERIESNUMBER "
-"តម្លៃ ៖ %POINTVALUES"
-
-#: Strings.src#STR_STATUS_OBJECT_MARKED.string.text
-msgid "%OBJECTNAME selected"
-msgstr "បាន​ជ្រើស %OBJECTNAME"
-
-#: Strings.src#STR_STATUS_PIE_SEGMENT_EXPLODED.string.text
-msgid "Pie exploded by %PERCENTVALUE percent"
-msgstr "ចំណិត​បានបំបែក​ដោយ​ភាគរយ​របស់ %PERCENTVALUE"
-
-#: Strings.src#STR_TEXT_DIRECTION_LTR.string.text
-msgid "Left-to-right"
-msgstr "ពី​ឆ្វេង​ទៅ​ស្ដាំ"
-
-#: Strings.src#STR_TEXT_DIRECTION_RTL.string.text
-msgid "Right-to-left"
-msgstr "ពី​ស្ដាំ​ទៅ​ឆ្វេង"
-
-#: Strings.src#STR_TEXT_DIRECTION_SUPER.string.text
-msgid "Use superordinate object settings"
-msgstr "ប្រើ​ការ​កំណត់​វត្ថុ​ដែល​មាន​លំដាប់​ខ្ពស់ជាង"
-
-#: Strings.src#STR_TIP_CHOOSECOLOR.string.text
-msgid "Select a color using the color dialog"
-msgstr "ជ្រើស​ពណ៌​ដោយ​ប្រើ​ប្រអប់​ពណ៌"
-
-#: Strings.src#STR_TIP_DATAPOINT.string.text
-msgid ""
-"Data Point %POINTNUMBER, data series %SERIESNUMBER, values: %POINTVALUES"
-msgstr ""
-"ចំណុច​ទិន្នន័យ %POINTNUMBER ស៊េរី​​ទិន្នន័យ %SERIESNUMBER តម្លៃ ៖ %"
-"POINTVALUES"
-
-#: Strings.src#STR_TIP_DATAPOINT_INDEX.string.text
-msgid "Data Point %POINTNUMBER"
-msgstr "ចំណុច​ទិន្នន័យ %POINTNUMBER"
-
-#: Strings.src#STR_TIP_DATAPOINT_VALUES.string.text
-msgid "Values: %POINTVALUES"
-msgstr "តម្លៃ ៖ %POINTVALUES"
-
-#: Strings.src#STR_TIP_DATASERIES.string.text
-msgid "Data Series '%SERIESNAME'"
-msgstr "ស៊េរី​ទិន្នន័យ '%SERIESNAME'"
-
-#: Strings.src#STR_TIP_LIGHTSOURCE_X.string.text
-msgid "Light Source %LIGHTNUMBER"
-msgstr "ប្រភព​ពន្លឺ %LIGHTNUMBER"
-
-#: Strings.src#STR_TIP_SELECT_RANGE.string.text
-msgid "Select data range"
-msgstr "ជ្រើស​ជួរ​ទិន្នន័យ"
-
-#: Strings_AdditionalControls.src#STR_3DSCHEME_CUSTOM.string.text
-msgid "Custom"
-msgstr "ផ្ទាល់​ខ្លួន​"
-
-#: Strings_AdditionalControls.src#STR_3DSCHEME_REALISTIC.string.text
-msgid "Realistic"
-msgstr "ប្រាកដ"
-
-#: Strings_AdditionalControls.src#STR_3DSCHEME_SIMPLE.string.text
-msgid "Simple"
-msgstr "ធម្មតា"
-
-#: Strings_AdditionalControls.src#STR_BAR_GEOMETRY.string.text
-msgid "Shape"
-msgstr "រាង"
-
-#: Strings_AdditionalControls.src#STR_NUMBER_OF_LINES.string.text
-msgid "~Number of lines"
-msgstr "ចំនួន​​បន្ទាត់ "
-
-#: Strings_AdditionalControls.src#STR_TEXT_SEPARATOR.string.text
-msgid "Separator"
-msgstr "បន្ទាត់​​​ខណ្ឌចែក"
-
-#: Strings_ChartTypes.src#STR_BUBBLE_1.string.text
-msgid "Bubble Chart"
-msgstr "គំនូស​តាង​ពពុះ"
-
-#: Strings_ChartTypes.src#STR_DEEP.string.text
-msgctxt "Strings_ChartTypes.src#STR_DEEP.string.text"
-msgid "Deep"
-msgstr "ជ្រៅ"
-
-#: Strings_ChartTypes.src#STR_DONUT.string.text
-msgid "Donut"
-msgstr "ដូណាត់"
-
-#: Strings_ChartTypes.src#STR_DONUT_EXPLODED.string.text
-msgid "Exploded Donut Chart"
-msgstr "គំនូស​តាង​ដូណាត់​បាន​បំបែក"
-
-#: Strings_ChartTypes.src#STR_FILLED.string.text
-msgid "Filled"
-msgstr "បានបំពេញ"
-
-#: Strings_ChartTypes.src#STR_LINES_3D.string.text
-msgid "3D Lines"
-msgstr "បន្ទាត់​ត្រីមាត្រ"
-
-#: Strings_ChartTypes.src#STR_LINES_ONLY.string.text
-msgid "Lines Only"
-msgstr "តែ​បន្ទាត់"
-
-#: Strings_ChartTypes.src#STR_LINE_COLUMN.string.text
-msgid "Columns and Lines"
-msgstr "ជួរឈរ និង​បន្ទាត់"
-
-#: Strings_ChartTypes.src#STR_LINE_STACKEDCOLUMN.string.text
-msgid "Stacked Columns and Lines"
-msgstr "ជួរឈរ និង​បន្ទាត់​ជា​ជង់"
-
-#: Strings_ChartTypes.src#STR_NORMAL.string.text
-msgid "Normal"
-msgstr "ធម្មតា"
-
-#: Strings_ChartTypes.src#STR_PERCENT.string.text
-msgid "Percent Stacked"
-msgstr "ជង់​ភាគរយ"
-
-#: Strings_ChartTypes.src#STR_PIE_EXPLODED.string.text
-msgid "Exploded Pie Chart"
-msgstr "គំនូស​តាង​ចំណិត​ដែល​បាន​បំបែក"
-
-#: Strings_ChartTypes.src#STR_POINTS_AND_LINES.string.text
-msgid "Points and Lines"
-msgstr "ចំណុច និង​បន្ទាត់"
-
-#: Strings_ChartTypes.src#STR_POINTS_ONLY.string.text
-msgid "Points Only"
-msgstr "តែ​ចំណុច"
-
-#: Strings_ChartTypes.src#STR_STACKED.string.text
-msgid "Stacked"
-msgstr "ជង់"
-
-#: Strings_ChartTypes.src#STR_STOCK_1.string.text
-msgid "Stock Chart 1"
-msgstr "​គំនូស​តាង​សន្និធិ ១"
-
-#: Strings_ChartTypes.src#STR_STOCK_2.string.text
-msgid "Stock Chart 2"
-msgstr "គំនូស​តាង​សន្និធិ ២"
-
-#: Strings_ChartTypes.src#STR_STOCK_3.string.text
-msgid "Stock Chart 3"
-msgstr "គំនូស​តាង​​សន្និធិ ៣"
-
-#: Strings_ChartTypes.src#STR_STOCK_4.string.text
-msgid "Stock Chart 4"
-msgstr "​គំនូស​តាង​សន្និធិ ៤"
-
-#: Strings_ChartTypes.src#STR_TYPE_AREA.string.text
-msgctxt "Strings_ChartTypes.src#STR_TYPE_AREA.string.text"
-msgid "Area"
-msgstr "ផ្ទៃ"
-
-#: Strings_ChartTypes.src#STR_TYPE_BAR.string.text
-msgid "Bar"
-msgstr "របារ"
-
-#: Strings_ChartTypes.src#STR_TYPE_BUBBLE.string.text
-msgid "Bubble"
-msgstr "ពពុះ"
-
-#: Strings_ChartTypes.src#STR_TYPE_COLUMN.string.text
-msgid "Column"
-msgstr "ជួរឈរ"
-
-#: Strings_ChartTypes.src#STR_TYPE_COMBI_COLUMN_LINE.string.text
-msgid "Column and Line"
-msgstr "ជួរឈរ និង​បន្ទាត់"
-
-#: Strings_ChartTypes.src#STR_TYPE_LINE.string.text
-msgctxt "Strings_ChartTypes.src#STR_TYPE_LINE.string.text"
-msgid "Line"
-msgstr "បន្ទាត់"
-
-#: Strings_ChartTypes.src#STR_TYPE_NET.string.text
-msgid "Net"
-msgstr "សំណាញ់"
-
-#: Strings_ChartTypes.src#STR_TYPE_PIE.string.text
-msgid "Pie"
-msgstr "ចំណិត"
-
-#: Strings_ChartTypes.src#STR_TYPE_STOCK.string.text
-msgid "Stock"
-msgstr "សន្និធិ"
-
-#: Strings_ChartTypes.src#STR_TYPE_XY.string.text
-msgid "XY (Scatter)"
-msgstr "XY (ពង្រាយ)"
-
-#: Strings_Scale.src#STR_BAD_LOGARITHM.string.text
-msgid "The logarithmic scale requires positive numbers. Check your input."
-msgstr ""
-"មាត្រដ្ឋាន​ឡូការីត​ត្រូវការ​លេខ​វិជ្ជមាន ។ "
-"ពិនិត្យ​មើល​ការ​បញ្ចូល​របស់​អ្នក ។"
-
-#: Strings_Scale.src#STR_INVALID_INTERVALS.string.text
-msgid ""
-"The major interval needs to be greater than the minor interval. Check your "
-"input."
-msgstr ""
-"ចន្លោះ​ធំ​ត្រូវ​ការ​ធំជាង​ចន្លោះ​តូច ។ ពិនិត្យ​មើល​ការ​បញ្ចូល​របស់​អ្នក ។"
-
-#: Strings_Scale.src#STR_INVALID_NUMBER.string.text
-msgid "Numbers are required. Check your input."
-msgstr "ត្រូវការ​លេខ ។ ពិនិត្យ​មើល​ការ​បញ្ចូល​របស់​អ្នក ។"
-
-#: Strings_Scale.src#STR_INVALID_TIME_UNIT.string.text
-msgid ""
-"The major and minor interval need to be greater or equal to the resolution. "
-"Check your input."
-msgstr ""
-"ចន្លោះ​តូច និង​ធំ​ត្រូវការ​គុណភាព​បង្ហាញ​ធំជាង ឬ​ស្មើ​គ្នា ។ "
-"ពិនិត្យ​មើល​ការ​បញ្ចូល​របស់​អ្នក ។"
-
-#: Strings_Scale.src#STR_MIN_GREATER_MAX.string.text
-msgid "The minimum must be lower than the maximum. Check your input."
-msgstr "អប្បបរមា​ត្រូវ​តែ​ទាប​ជាង​អតិបរមា ។ ពិនិត្យ​មើល​ការ​បញ្ចូល​របស់​អ្នក ។"
-
-#: Strings_Scale.src#STR_STEP_GT_ZERO.string.text
-msgid "The major interval requires a positive number. Check your input."
-msgstr ""
-"ចន្លោះ​រង្វើល​ត្រូវការ​លេខ​វិជ្ជមាន ។ ពិនិត្យ​មើល​ការ​បញ្ចូល​របស់​អ្នក ។"
-
-#: Strings_Statistic.src#STR_CONTROLTEXT_ERROR_BARS_FROM_DATA.string.text
-msgid "From Data Table"
-msgstr "ពី​តារាង​ទិន្នន័យ"
-
-#: Strings_Statistic.src#STR_INDICATE_BOTH.string.text
-msgid "Negative and Positive"
-msgstr "អ​វិជ្ជមាន និង​វិជ្ជមាន"
-
-#: Strings_Statistic.src#STR_INDICATE_DOWN.string.text
-msgid "Negative"
-msgstr "អវិជ្ជមាន"
-
-#: Strings_Statistic.src#STR_INDICATE_UP.string.text
-msgid "Positive"
-msgstr "វិជ្ជមាន"
-
-#: Strings_Statistic.src#STR_REGRESSION_EXP.string.text
-msgid "Exponential (%SERIESNAME)"
-msgstr "តំរែតំរង់​អិចស្ប៉ូណង់​ស្យែល"
-
-#: Strings_Statistic.src#STR_REGRESSION_LINEAR.string.text
-msgid "Linear (%SERIESNAME)"
-msgstr "តំរែតំរង់​លីនេអែរ"
-
-#: Strings_Statistic.src#STR_REGRESSION_LOG.string.text
-msgid "Logarithmic (%SERIESNAME)"
-msgstr "តំរែតំរង់​លោការីត"
-
-#: Strings_Statistic.src#STR_REGRESSION_MEAN.string.text
-msgid "Mean (%SERIESNAME)"
-msgstr "មានន័យ (%SERIESNAME)"
-
-#: Strings_Statistic.src#STR_REGRESSION_POWER.string.text
-msgid "Power (%SERIESNAME)"
-msgstr "តំរែតំរង់​ស្វ័យគុណ"
-
-#: dlg_DataEditor.src#DLG_DIAGRAM_DATA.modaldialog.text
-msgid "Data Table"
-msgstr "តារាង​ទិន្នន័យ"
-
-#: dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_DELETE_COL.toolboxitem.text
-msgid "Delete Series"
-msgstr "លុប​ស៊េរី"
-
-#: dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_DELETE_ROW.toolboxitem.text
-msgid "Delete Row"
-msgstr "លុប​ជួរដេក"
-
-#: dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_COL.toolboxitem.text
-msgid "Insert Series"
-msgstr "បញ្ចូល​ស៊េរី"
-
-#: dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_ROW.toolboxitem.text
-msgid "Insert Row"
-msgstr "បញ្ចូល​ជួរ​ដេក"
-
-#: dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_TEXT_COL.toolboxitem.text
-msgid "Insert Text Column"
-msgstr "បញ្ចូល​ជួរឈរ​អត្ថបទ"
-
-#: dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_SWAP_COL.toolboxitem.text
-msgid "Move Series Right"
-msgstr "ផ្លាស់ទី​ស៊េរី​ទៅ​ស្ដាំ"
-
-#: dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_SWAP_ROW.toolboxitem.text
-msgid "Move Row Down"
-msgstr "ផ្លាស់ទី​ស៊េរី​ចុះក្រោម"
-
-#: dlg_DataSource.src#DLG_DATA_SOURCE.tabdialog.text
-msgid "Data Ranges"
-msgstr "ជួរ​ទិន្នន័យ"
-
-#: dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_X_PRIMARY.checkbox.text
-msgctxt "dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_X_PRIMARY.checkbox.text"
-msgid "~X axis"
-msgstr "អ័ក្ស X "
-
-#: dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Y_PRIMARY.checkbox.text
-msgctxt "dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Y_PRIMARY.checkbox.text"
-msgid "~Y axis"
-msgstr "អ័ក្ស​ Y "
-
-#: dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Z_PRIMARY.checkbox.text
-msgctxt "dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Z_PRIMARY.checkbox.text"
-msgid "~Z axis"
-msgstr "អ័ក្ស Z "
-
-#: dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_AXIS.fixedline.text
-msgctxt "dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_AXIS.fixedline.text"
-msgid "Axes"
-msgstr "អ័ក្ស"
-
-#: dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_GRID.fixedline.text
-msgid "Major grids"
-msgstr "ក្រឡាចត្រង្គ​រង្វើល"
-
-#: dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_AXIS.fixedline.text
-msgid "Secondary axes"
-msgstr "អ័ក្ស​រង"
-
-#: dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_GRID.fixedline.text
-msgid "Minor grids"
-msgstr "ក្រឡាចត្រង្គ​ញឹក"
-
-#: dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_EFFECTS.pageitem.text
-msgctxt "dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_EFFECTS.pageitem.text"
-msgid "Font Effects"
-msgstr "បែបផែន​ពុម្ពអក្សរ"
-
-#: dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_NAME.pageitem.text
-msgctxt "dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_NAME.pageitem.text"
-msgid "Font"
-msgstr "ពុម្ពអក្សរ"
-
-#: dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_POSITION.pageitem.text
-msgid "Font Position"
-msgstr "ទី​តាំង​ពុម្ព​អក្សរ"
-
-#: dlg_ShapeFont.src#DLG_SHAPE_FONT.tabdialog.text
-msgid "Character"
-msgstr "តួអក្សរ"
-
-#: dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_ALIGN_PARAGRAPH.pageitem.text
-msgctxt "dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_ALIGN_PARAGRAPH.pageitem.text"
-msgid "Alignment"
-msgstr "តម្រឹម"
-
-#: dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_PARA_ASIAN.pageitem.text
-msgctxt "dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_PARA_ASIAN.pageitem.text"
-msgid "Asian Typography"
-msgstr "មុទ្ទវិទ្យា​អាស៊ី"
-
-#: dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_STD_PARAGRAPH.pageitem.text
-msgid "Indents & Spacing"
-msgstr "ចូល​បន្ទាត់​ និង​​គម្លាត"
-
-#: dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_TABULATOR.pageitem.text
-msgid "Tab"
-msgstr "ផ្ទាំង"
-
-#: dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.tabdialog.text
-msgid "Paragraph"
-msgstr "កថាខណ្ឌ"
-
-#: dlg_View3D.src#DLG_3D_VIEW.tabdialog.text
-msgid "3D View"
-msgstr "ទិដ្ឋភាព​ត្រីមាត្រ"
-
-#: res_BarGeometry.src#LB_BAR_GEOMETRY.1.stringlist.text
-msgid "Box"
-msgstr "ប្រអប់"
-
-#: res_BarGeometry.src#LB_BAR_GEOMETRY.2.stringlist.text
-msgid "Cylinder"
-msgstr "ស៊ីឡាំង"
-
-#: res_BarGeometry.src#LB_BAR_GEOMETRY.3.stringlist.text
-msgid "Cone"
-msgstr "កោណ"
-
-#: res_BarGeometry.src#LB_BAR_GEOMETRY.4.stringlist.text
-msgid "Pyramid"
-msgstr "ពីរ៉ាមីត​"
-
-#: res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL__xpos__ypos__.CB_CATEGORY.checkbox.text
-msgid "Show ~category"
-msgstr "បង្ហាញ​ប្រភេទ"
-
-#: res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL__xpos__ypos__.CB_SYMBOL.checkbox.text
-msgid "Show ~legend key"
-msgstr "បង្ហាញ​កូនសោ​តាង"
-
-#: res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL__xpos__ypos__.CB_VALUE_AS_NUMBER.checkbox.text
-msgid "Show value as ~number"
-msgstr "បង្ហាញ​តម្លៃ​ជា​លេខ"
-
-#: res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL__xpos__ypos__.CB_VALUE_AS_PERCENTAGE.checkbox.text
-msgid "Show value as ~percentage"
-msgstr "បង្ហាញ​តម្លៃ​ជា​ភាគរយ"
-
-#: res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL__xpos__ypos__.FL_LABEL_ROTATE.fixedline.text
-msgid "Rotate Text"
-msgstr "បង្វិល​អត្ថបទ"
-
-#: res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL__xpos__ypos__.FT_LABEL_DEGREES.fixedtext.text
-msgctxt "res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL__xpos__ypos__.FT_LABEL_DEGREES.fixedtext.text"
-msgid "~Degrees"
-msgstr "ដឺក្រេ "
-
-#: res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL__xpos__ypos__.FT_LABEL_PLACEMENT.fixedtext.text
-msgid "Place~ment"
-msgstr "ការ​ដាក់"
-
-#: res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL__xpos__ypos__.FT_LABEL_TEXTDIR.fixedtext.text
-msgctxt "res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL__xpos__ypos__.FT_LABEL_TEXTDIR.fixedtext.text"
-msgid "Te~xt direction"
-msgstr "ទិស​អត្ថបទ"
-
-#: res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL__xpos__ypos__.PB_NUMBERFORMAT.pushbutton.text
-msgid "Number ~format..."
-msgstr "ទ្រង់ទ្រាយ​លេខ..."
-
-#: res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL__xpos__ypos__.PB_PERCENT_NUMBERFORMAT.pushbutton.text
-msgid "Percentage f~ormat..."
-msgstr "ទ្រង់ទ្រាយ​ភាគរយ..."
-
-#: res_DataLabel_tmpl.hrc#WORKAROUND.1.stringlist.text
-msgid "Best fit"
-msgstr "សម​បំផុត"
-
-#: res_DataLabel_tmpl.hrc#WORKAROUND.10.stringlist.text
-msgid "Top right"
-msgstr "កំពូល ស្ដាំ"
-
-#: res_DataLabel_tmpl.hrc#WORKAROUND.11.stringlist.text
-msgid "Inside"
-msgstr "ខាងក្នុង"
-
-#: res_DataLabel_tmpl.hrc#WORKAROUND.12.stringlist.text
-msgid "Outside"
-msgstr "ខាងក្រៅ"
-
-#: res_DataLabel_tmpl.hrc#WORKAROUND.13.stringlist.text
-msgid "Near origin"
-msgstr "ក្បែរ​ដើម"
-
-#: res_DataLabel_tmpl.hrc#WORKAROUND.2.stringlist.text
-msgid "Center"
-msgstr "កណ្តាល"
-
-#: res_DataLabel_tmpl.hrc#WORKAROUND.3.stringlist.text
-msgid "Above"
-msgstr "ខាង​លើ"
-
-#: res_DataLabel_tmpl.hrc#WORKAROUND.4.stringlist.text
-msgid "Top left"
-msgstr "កំពូល​ ឆ្វេង"
-
-#: res_DataLabel_tmpl.hrc#WORKAROUND.5.stringlist.text
-msgid "Left"
-msgstr "ឆ្វេង"
-
-#: res_DataLabel_tmpl.hrc#WORKAROUND.6.stringlist.text
-msgid "Bottom left"
-msgstr "បាត​​ឆ្វេង"
-
-#: res_DataLabel_tmpl.hrc#WORKAROUND.7.stringlist.text
-msgid "Below"
-msgstr "ខាងក្រោម"
-
-#: res_DataLabel_tmpl.hrc#WORKAROUND.8.stringlist.text
-msgid "Bottom right"
-msgstr "បាត​​ស្តាំ"
-
-#: res_DataLabel_tmpl.hrc#WORKAROUND.9.stringlist.text
-msgid "Right"
-msgstr "ស្ដាំ"
-
-#: res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS_availablewidth__yoffset_.CB_SYN_POS_NEG.checkbox.text
-msgid "Same value for both"
-msgstr "តម្លៃ​ដូចគ្នា​សម្រាប់​ទាំង​ពីរ"
-
-#: res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS_availablewidth__yoffset_.FL_ERROR.fixedline.text
-msgid "Error Category"
-msgstr "ប្រភេទ​កំហុស"
-
-#: res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS_availablewidth__yoffset_.FL_INDICATE.fixedline.text
-msgid "Error Indicator"
-msgstr "ទ្រនិច​បង្ហាញ​កំហុស"
-
-#: res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS_availablewidth__yoffset_.FL_PARAMETERS.fixedline.text
-msgid "Parameters"
-msgstr "ប៉ារ៉ាម៉ែត្រ"
-
-#: res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS_availablewidth__yoffset_.FT_NEGATIVE.fixedtext.text
-msgid "~Negative (-)"
-msgstr " អវិជ្ជមាន (-)"
-
-#: res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS_availablewidth__yoffset_.FT_POSITIVE.fixedtext.text
-msgid "P~ositive (+)"
-msgstr " វិជ្ជមាន (+)"
-
-#: res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS_availablewidth__yoffset_.RB_BOTH.radiobutton.text
-msgid "Positive ~and Negative"
-msgstr " វិជ្ជមាន និង​អវិជ្ជមាន"
-
-#: res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS_availablewidth__yoffset_.RB_CONST.radiobutton.text
-msgid "~Constant Value"
-msgstr " តម្លៃ​ថេរ"
-
-#: res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS_availablewidth__yoffset_.RB_NEGATIVE.radiobutton.text
-msgid "Ne~gative"
-msgstr " អវិជ្ជមាន"
-
-#: res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS_availablewidth__yoffset_.RB_NONE.radiobutton.text
-msgctxt "res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS_availablewidth__yoffset_.RB_NONE.radiobutton.text"
-msgid "~None"
-msgstr " គ្មាន"
-
-#: res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS_availablewidth__yoffset_.RB_PERCENT.radiobutton.text
-msgid "~Percentage"
-msgstr " ភាគរយ"
-
-#: res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS_availablewidth__yoffset_.RB_POSITIVE.radiobutton.text
-msgid "Pos~itive"
-msgstr " វិជ្ជមាន"
-
-#: res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS_availablewidth__yoffset_.RB_RANGE.radiobutton.text
-msgid "Cell ~Range"
-msgstr " ជួរក្រឡា"
-
-#: res_ErrorBar_tmpl.hrc#WORKAROUND.1.stringlist.text
-msgid "Standard Error"
-msgstr "កំហុស​ស្តង់ដារ"
-
-#: res_ErrorBar_tmpl.hrc#WORKAROUND.2.stringlist.text
-msgid "Standard Deviation"
-msgstr "គម្លាត​គំរូ"
-
-#: res_ErrorBar_tmpl.hrc#WORKAROUND.3.stringlist.text
-msgid "Variance"
-msgstr "វ៉ារ្យង់"
-
-#: res_ErrorBar_tmpl.hrc#WORKAROUND.4.stringlist.text
-msgid "Error Margin"
-msgstr "រឹម​កំហុស"
-
-#: res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDDISPLAY__xpos___ypos__.CBX_SHOWLEGEND.checkbox.text
-msgid "~Display legend"
-msgstr "បង្ហាញ​តាង "
-
-#: res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION__xpos___ypos__.RBT_BOTTOM.radiobutton.text
-msgid "~Bottom"
-msgstr "បាត "
-
-#: res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION__xpos___ypos__.RBT_LEFT.radiobutton.text
-msgid "~Left"
-msgstr "ឆ្វេង "
-
-#: res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION__xpos___ypos__.RBT_RIGHT.radiobutton.text
-msgid "~Right"
-msgstr "ស្ដាំ "
-
-#: res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION__xpos___ypos__.RBT_TOP.radiobutton.text
-msgid "~Top"
-msgstr "កំពូល "
-
-#: res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES__xpos__ypos__xOffset__yOffset__.CB_X_SECONDARY.checkbox.text
-msgctxt "res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES__xpos__ypos__xOffset__yOffset__.CB_X_SECONDARY.checkbox.text"
-msgid "X ~axis"
-msgstr "អ័ក្ស X "
-
-#: res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES__xpos__ypos__xOffset__yOffset__.CB_Y_SECONDARY.checkbox.text
-msgctxt "res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES__xpos__ypos__xOffset__yOffset__.CB_Y_SECONDARY.checkbox.text"
-msgid "Y ax~is"
-msgstr "អ័ក្ស Y "
-
-#: res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES__xpos__ypos__xOffset__yOffset__.CB_Z_SECONDARY.checkbox.text
-msgid "Z axi~s"
-msgstr "អ័ក្ស Z "
-
-#: res_TextSeparator.src#LB_TEXT_SEPARATOR.1.stringlist.text
-msgid "Space"
-msgstr "ចន្លោះ"
-
-#: res_TextSeparator.src#LB_TEXT_SEPARATOR.2.stringlist.text
-msgid "Comma"
-msgstr "សញ្ញា​​ក្បៀស"
-
-#: res_TextSeparator.src#LB_TEXT_SEPARATOR.3.stringlist.text
-msgid "Semicolon"
-msgstr "សញ្ញា​ចំណុច​ក្បៀស"
-
-#: res_TextSeparator.src#LB_TEXT_SEPARATOR.4.stringlist.text
-msgid "New line"
-msgstr "បន្ទាត់​ថ្មី"
-
-#: res_Titlesx_tmpl.hrc#TITLES__xpos__ypos__availableWidth__indentLabel__fixedLinesHeight__.FL_AXES.fixedline.text
-msgctxt "res_Titlesx_tmpl.hrc#TITLES__xpos__ypos__availableWidth__indentLabel__fixedLinesHeight__.FL_AXES.fixedline.text"
-msgid "Axes"
-msgstr "អ័ក្ស"
-
-#: res_Titlesx_tmpl.hrc#TITLES__xpos__ypos__availableWidth__indentLabel__fixedLinesHeight__.FL_SECONDARY_AXES.fixedline.text
-msgid "Secondary Axes"
-msgstr "អ័ក្ស​រង"
-
-#: res_Titlesx_tmpl.hrc#TITLES__xpos__ypos__availableWidth__indentLabel__fixedLinesHeight__.FT_MAINTITLE.fixedtext.text
-msgid "~Title"
-msgstr "ចំណង​ជើង "
-
-#: res_Titlesx_tmpl.hrc#TITLES__xpos__ypos__availableWidth__indentLabel__fixedLinesHeight__.FT_SUBTITLE.fixedtext.text
-msgid "~Subtitle"
-msgstr "ចំណង​ជើងរង "
-
-#: res_Titlesx_tmpl.hrc#TITLES__xpos__ypos__availableWidth__indentLabel__fixedLinesHeight__.FT_TITLE_SECONDARY_X_AXIS.fixedtext.text
-msgctxt "res_Titlesx_tmpl.hrc#TITLES__xpos__ypos__availableWidth__indentLabel__fixedLinesHeight__.FT_TITLE_SECONDARY_X_AXIS.fixedtext.text"
-msgid "X ~axis"
-msgstr "អ័ក្ស X "
-
-#: res_Titlesx_tmpl.hrc#TITLES__xpos__ypos__availableWidth__indentLabel__fixedLinesHeight__.FT_TITLE_SECONDARY_Y_AXIS.fixedtext.text
-msgctxt "res_Titlesx_tmpl.hrc#TITLES__xpos__ypos__availableWidth__indentLabel__fixedLinesHeight__.FT_TITLE_SECONDARY_Y_AXIS.fixedtext.text"
-msgid "Y ax~is"
-msgstr "អ័ក្ស Y "
-
-#: res_Titlesx_tmpl.hrc#TITLES__xpos__ypos__availableWidth__indentLabel__fixedLinesHeight__.FT_TITLE_X_AXIS.fixedtext.text
-msgctxt "res_Titlesx_tmpl.hrc#TITLES__xpos__ypos__availableWidth__indentLabel__fixedLinesHeight__.FT_TITLE_X_AXIS.fixedtext.text"
-msgid "~X axis"
-msgstr "អ័ក្ស X "
-
-#: res_Titlesx_tmpl.hrc#TITLES__xpos__ypos__availableWidth__indentLabel__fixedLinesHeight__.FT_TITLE_Y_AXIS.fixedtext.text
-msgctxt "res_Titlesx_tmpl.hrc#TITLES__xpos__ypos__availableWidth__indentLabel__fixedLinesHeight__.FT_TITLE_Y_AXIS.fixedtext.text"
-msgid "~Y axis"
-msgstr "អ័ក្ស​ Y "
-
-#: res_Titlesx_tmpl.hrc#TITLES__xpos__ypos__availableWidth__indentLabel__fixedLinesHeight__.FT_TITLE_Z_AXIS.fixedtext.text
-msgctxt "res_Titlesx_tmpl.hrc#TITLES__xpos__ypos__availableWidth__indentLabel__fixedLinesHeight__.FT_TITLE_Z_AXIS.fixedtext.text"
-msgid "~Z axis"
-msgstr "អ័ក្ស Z "
-
-#: res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE_availablewidth__yoffset_.CB_SHOW_CORRELATION_COEFF.checkbox.text
-msgid "Show ~coefficient of determination (R²)"
-msgstr "បង្ហាញ​មេគុណ (R²)"
-
-#: res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE_availablewidth__yoffset_.CB_SHOW_EQUATION.checkbox.text
-msgid "Show ~equation"
-msgstr " បង្ហាញ​សមីការ"
-
-#: res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE_availablewidth__yoffset_.FL_EQUATION.fixedline.text
-msgctxt "res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE_availablewidth__yoffset_.FL_EQUATION.fixedline.text"
-msgid "Equation"
-msgstr "សមីការ"
-
-#: res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE_availablewidth__yoffset_.FL_TYPE.fixedline.text
-msgid "Regression Type"
-msgstr "ប្រភេទ​ថយ​"
-
-#: res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE_availablewidth__yoffset_.RB_EXPONENTIAL.radiobutton.text
-msgid "E~xponential"
-msgstr " អិច​ស្ប៉ូណង់​ស្យែល"
-
-#: res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE_availablewidth__yoffset_.RB_LINEAR.radiobutton.text
-msgid "~Linear"
-msgstr " លីនេអ៊ែរ"
-
-#: res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE_availablewidth__yoffset_.RB_LOGARITHMIC.radiobutton.text
-msgid "L~ogarithmic"
-msgstr " ឡូការីត"
-
-#: res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE_availablewidth__yoffset_.RB_NONE.radiobutton.text
-msgctxt "res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE_availablewidth__yoffset_.RB_NONE.radiobutton.text"
-msgid "~None"
-msgstr " គ្មាន"
-
-#: res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE_availablewidth__yoffset_.RB_POWER.radiobutton.text
-msgid "~Power"
-msgstr " មេគុណ"
-
-#: tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_OBJECTLINES.checkbox.text
-msgid "~Object borders"
-msgstr "ស៊ុម​វត្ថុ "
-
-#: tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_ROUNDEDEDGE.checkbox.text
-msgid "~Rounded edges"
-msgstr "គែម​មូល "
-
-#: tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_SHADING.checkbox.text
-msgid "~Shading"
-msgstr "​​ស្រមោល "
-
-#: tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.FT_SCHEME.fixedtext.text
-msgid "Sche~me"
-msgstr "គ្រោងការណ៍"
-
-#: tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#define.text
-msgid " degrees"
-msgstr " ដឺក្រេ"
-
-#: tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_PERSPECTIVE.checkbox.text
-msgid "~Perspective"
-msgstr "យថាទស្សន៍ "
-
-#: tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_RIGHT_ANGLED_AXES.checkbox.text
-msgid "~Right-angled axes"
-msgstr "អ័ក្ស​មុំ​ស្ដាំ "
-
-#: tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_X_ROTATION.fixedtext.text
-msgid "~X rotation"
-msgstr "បង្វិល X"
-
-#: tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_Y_ROTATION.fixedtext.text
-msgid "~Y rotation"
-msgstr "បង្វិល Y"
-
-#: tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_Z_ROTATION.fixedtext.text
-msgid "~Z rotation"
-msgstr "បង្វិល Z "
-
-#: tp_3D_SceneIllumination.src#TP_3D_SCENEILLUMINATION.FT_AMBIENTLIGHT.fixedtext.text
-msgid "~Ambient light"
-msgstr "ពន្លឺ​ព័ទ្ធ​ជុំ​វិញ "
-
-#: tp_3D_SceneIllumination.src#TP_3D_SCENEILLUMINATION.FT_LIGHTSOURCE.fixedtext.text
-msgid "~Light source"
-msgstr "ប្រភព​​ពន្លឺ "
-
-#: tp_3D_SceneIllumination.src#STR_LIGHT_PREVIEW.string.text
-msgid "Light Preview"
-msgstr "មើល​ជា​មុន"
-
-#: tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_SCHOW_DESCR.checkbox.text
-msgid "Sho~w labels"
-msgstr "បង្ហាញ​​ស្លាក "
-
-#: tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_TEXTBREAK.checkbox.text
-msgid "~Break"
-msgstr "ចុះ​បន្ទាត់ "
-
-#: tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_TEXTOVERLAP.checkbox.text
-msgid "O~verlap"
-msgstr "ត្រួត​លើ​គ្នា "
-
-#: tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_ORDER.fixedline.text
-msgid "Order"
-msgstr "លំដាប់​"
-
-#: tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_ORIENTATION.fixedline.text
-msgctxt "tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_ORIENTATION.fixedline.text"
-msgid "Text orientation"
-msgstr "ទិសអត្ថបទ"
-
-#: tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_TEXTFLOW.fixedline.text
-msgid "Text flow"
-msgstr "លំហូរ​​​អត្ថបទ"
-
-#: tp_AxisLabel.src#TP_AXIS_LABEL.FT_AXIS_LABEL_DEGREES.fixedtext.text
-msgctxt "tp_AxisLabel.src#TP_AXIS_LABEL.FT_AXIS_LABEL_DEGREES.fixedtext.text"
-msgid "~Degrees"
-msgstr "ដឺក្រេ "
-
-#: tp_AxisLabel.src#TP_AXIS_LABEL.FT_AXIS_TEXTDIR.fixedtext.text
-msgctxt "tp_AxisLabel.src#TP_AXIS_LABEL.FT_AXIS_TEXTDIR.fixedtext.text"
-msgid "Te~xt direction"
-msgstr "ទិស​អត្ថបទ"
-
-#: tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_AUTOORDER.radiobutton.text
-msgctxt "tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_AUTOORDER.radiobutton.text"
-msgid "A~utomatic"
-msgstr "ស្វ័យ​ប្រវត្តិ "
-
-#: tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_DOWNUP.radiobutton.text
-msgid "Stagger ~even"
-msgstr "លេខ​​សេស​​​ទាប​​ជាង​​លេខ​គូ​ "
-
-#: tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_SIDEBYSIDE.radiobutton.text
-msgid "~Tile"
-msgstr "ក្បឿង​​ "
-
-#: tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_UPDOWN.radiobutton.text
-msgid "St~agger odd"
-msgstr "លេខ​​គូ​​ទាប​​ជាង​​លេខ​​សេស "
-
-#: tp_AxisLabel.src#TP_AXIS_LABEL.PB_AXIS_LABEL_TEXTSTACKED.tristatebox.text
-msgctxt "tp_AxisLabel.src#TP_AXIS_LABEL.PB_AXIS_LABEL_TEXTSTACKED.tristatebox.text"
-msgid "Ve~rtically stacked"
-msgstr "ដាក់​ជា​​ជង់​បញ្ឈរ"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_AXIS_BETWEEN_CATEGORIES.checkbox.text
-msgid "Axis ~between categories"
-msgstr "អ័ក្ស​រវាង​ប្រភេទ"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MAJOR_GRID.checkbox.text
-msgid "Show major ~grid"
-msgstr "បង្ហាញ​ក្រឡាចត្រង្គ​សំខាន់"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_GRID.checkbox.text
-msgid "~Show minor grid"
-msgstr "បង្ហាញ​ក្រឡាចត្រង្គ​បន្ទាប់បន្សំ"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_INNER.checkbox.text
-msgid "I~nner"
-msgstr "ខាង​ក្នុង "
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_OUTER.checkbox.text
-msgid "O~uter"
-msgstr "ខាងក្រៅ"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_TICKS_INNER.checkbox.text
-msgid "~Inner"
-msgstr "ខាងក្នុង"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_TICKS_OUTER.checkbox.text
-msgid "~Outer"
-msgstr "ខាង​ក្រៅ "
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_AXIS_LINE.fixedline.text
-msgid "Axis line"
-msgstr "បន្ទាត់​អ័ក្ស"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_GRIDS.fixedline.text
-msgctxt "tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_GRIDS.fixedline.text"
-msgid "Grids"
-msgstr "ក្រឡាចត្រង្គ"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_LABELS.fixedline.text
-msgid "Labels"
-msgstr "ស្លាក"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_TICKS.fixedline.text
-msgid "Interval marks"
-msgstr "សញ្ញា​សម្គាល់​ចន្លោះ"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_AXIS_LABEL_DISTANCE.fixedtext.text
-msgid "~Distance"
-msgstr "ចម្ងាយ"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_CROSSES_OTHER_AXIS_AT.fixedtext.text
-msgid "~Cross other axis at"
-msgstr "កាត់​អ័ក្ស​ផ្សេងទៀត​ត្រង់"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_MAJOR.fixedtext.text
-msgid "Major:"
-msgstr "សំខាន់ ៖"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_MINOR.fixedtext.text
-msgid "Minor:"
-msgstr "បន្ទាប់បន្សំ ៖"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_PLACE_LABELS.fixedtext.text
-msgid "~Place labels"
-msgstr "ដាក់​ស្លាក"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_PLACE_TICKS.fixedtext.text
-msgid "Place ~marks"
-msgstr "ដាក់​សញ្ញា​សម្គាល់"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.PB_MAJOR_GRID.pushbutton.text
-msgid "Mo~re..."
-msgstr "បន្ថែម​ទៀត..."
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.PB_MINOR_GRID.pushbutton.text
-msgid "Mor~e..."
-msgstr "បន្ថែម​ទៀត"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.1.stringlist.text
-msgid "Start"
-msgstr "ចាប់ផ្ដើម"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.2.stringlist.text
-msgid "End"
-msgstr "បញ្ចប់"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.3.stringlist.text
-msgid "Value"
-msgstr "តម្លៃ"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.4.stringlist.text
-msgid "Category"
-msgstr "ប្រភេទ"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.1.stringlist.text
-msgid "Near axis"
-msgstr "ជិត​អ័ក្ស"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.2.stringlist.text
-msgid "Near axis (other side)"
-msgstr "ជិត​អ័ក្ស (ជ្រុង​ផ្សេងទៀត)"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.3.stringlist.text
-msgid "Outside start"
-msgstr "ចាប់ផ្ដើម​ខាងក្រៅ"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.4.stringlist.text
-msgid "Outside end"
-msgstr "បញ្ចប់​ខាងក្រៅ"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.1.stringlist.text
-msgid "At labels"
-msgstr "នៅ​ស្លាក"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.2.stringlist.text
-msgid "At axis"
-msgstr "នៅ​អ័ក្ស"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.3.stringlist.text
-msgid "At axis and labels"
-msgstr "នៅ​អ័ក្ស និង​ស្លាក"
-
-#: tp_ChartType.src#TP_CHARTTYPE.CB_3D_LOOK.checkbox.text
-msgid "~3D Look"
-msgstr "រាង​ត្រីមាត្រ "
-
-#: tp_ChartType.src#TP_CHARTTYPE.CB_SPLINES.checkbox.text
-msgid "S~mooth lines"
-msgstr "បន្ទាត់​រាបស្មើ"
-
-#: tp_ChartType.src#TP_CHARTTYPE.CB_STACKED.checkbox.text
-msgid "~Stack series"
-msgstr "ស៊េរី​ជង់ "
-
-#: tp_ChartType.src#TP_CHARTTYPE.CB_XVALUE_SORTING.checkbox.text
-msgid "~Sort by X values"
-msgstr "តម្រៀប​តាម​តម្លៃ X"
-
-#: tp_ChartType.src#TP_CHARTTYPE.CB_X_AXIS_CATEGORIES.checkbox.text
-msgid "X axis with Categories"
-msgstr "អ័ក្ស X ជា​មួយ​ប្រភេទ"
-
-#: tp_ChartType.src#DLG_SPLINE_PROPERTIES.FT_SPLINE_ORDER.fixedtext.text
-msgid "~Data points order"
-msgstr "លំដាប់​ចំណុច​ទិន្នន័យ "
-
-#: tp_ChartType.src#DLG_SPLINE_PROPERTIES.FT_SPLINE_RESOLUTION.fixedtext.text
-msgid "~Resolution"
-msgstr "គុណ​ភាព​បង្ហាញ "
-
-#: tp_ChartType.src#TP_CHARTTYPE.FT_CHARTTYPE.fixedtext.text
-msgid "Choose a chart type"
-msgstr "ជ្រើស​ប្រភេទ​គំនូសតាង"
-
-#: tp_ChartType.src#TP_CHARTTYPE.PB_SPLINE_DIALOG.pushbutton.text
-msgid "Properties..."
-msgstr "លក្ខណសម្បត្តិ..."
-
-#: tp_ChartType.src#DLG_SPLINE_PROPERTIES.RB_SPLINES_B.radiobutton.text
-msgid "B-Spline"
-msgstr "ខ្សែកោង B"
-
-#: tp_ChartType.src#DLG_SPLINE_PROPERTIES.RB_SPLINES_CUBIC.radiobutton.text
-msgid "Cubic spline"
-msgstr "ខ្សែ​កោង​គូប"
-
-#: tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Y.radiobutton.text
-msgid "On top"
-msgstr "នៅ​កំពូល"
-
-#: tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Y_PERCENT.radiobutton.text
-msgid "Percent"
-msgstr "ភាគ​រយ"
-
-#: tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Z.radiobutton.text
-msgctxt "tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Z.radiobutton.text"
-msgid "Deep"
-msgstr "ជ្រៅ"
-
-#: tp_DataSource.src#TP_DATA_SOURCE.FT_CAPTION_FOR_WIZARD.fixedtext.text
-msgid "Customize data ranges for individual data series"
-msgstr "ប្ដូរ​ជួរ​ទិន្នន័យ​តាមបំណង​សម្រាប់​ស៊េរី​ទិន្នន័យ​នីមួយៗ"
-
-#: tp_DataSource.src#TP_DATA_SOURCE.FT_CATEGORIES.fixedtext.text
-msgid "~Categories"
-msgstr "ប្រភេទ "
-
-#: tp_DataSource.src#TP_DATA_SOURCE.FT_DATALABELS.fixedtext.text
-msgid "Data ~labels"
-msgstr "ស្លាក​ទិន្នន័យ "
-
-#: tp_DataSource.src#TP_DATA_SOURCE.FT_RANGE.fixedtext.text
-msgid "Ran~ge for %VALUETYPE"
-msgstr "ជួរ​សម្រាប់ %VALUETYPE "
-
-#: tp_DataSource.src#TP_DATA_SOURCE.FT_ROLE.fixedtext.text
-msgid "~Data ranges"
-msgstr "ជួរ​ទិន្នន័យ "
-
-#: tp_DataSource.src#TP_DATA_SOURCE.FT_SERIES.fixedtext.text
-msgid "Data ~series"
-msgstr "ស៊េរី​ទិន្នន័យ"
-
-#: tp_DataSource.src#TP_DATA_SOURCE.BTN_ADD.pushbutton.text
-msgid "~Add"
-msgstr "បន្ថែម "
-
-#: tp_DataSource.src#TP_DATA_SOURCE.BTN_REMOVE.pushbutton.text
-msgid "~Remove"
-msgstr "យកចេញ"
-
-#: tp_LegendPosition.src#TP_LEGEND_POS.FL_LEGEND_TEXTORIENT.fixedline.text
-msgctxt "tp_LegendPosition.src#TP_LEGEND_POS.FL_LEGEND_TEXTORIENT.fixedline.text"
-msgid "Text orientation"
-msgstr "ទិសអត្ថបទ"
-
-#: tp_LegendPosition.src#TP_LEGEND_POS.GRP_LEGEND.fixedline.text
-msgctxt "tp_LegendPosition.src#TP_LEGEND_POS.GRP_LEGEND.fixedline.text"
-msgid "Position"
-msgstr "ទីតាំង"
-
-#: tp_LegendPosition.src#TP_LEGEND_POS.FT_LEGEND_TEXTDIR.fixedtext.text
-msgctxt "tp_LegendPosition.src#TP_LEGEND_POS.FT_LEGEND_TEXTDIR.fixedtext.text"
-msgid "Te~xt direction"
-msgstr "ទិស​អត្ថបទ"
-
-#: tp_Location.src#TP_LOCATION.FL_TABLE.fixedline.text
-msgid "Place chart"
-msgstr "ដាក់​គំនូស​តាង"
-
-#: tp_Location.src#TP_LOCATION.FT_TABLE.fixedtext.text
-msgid "~Insert in sheet"
-msgstr "បញ្ចូល​ក្នុង​សន្លឹក "
-
-#: tp_PolarOptions.src#TP_POLAROPTIONS.CB_CLOCKWISE.checkbox.text
-msgid "~Clockwise direction"
-msgstr "ទិស​ស្រប​ទ្រនិច​នាឡិកា"
-
-#: tp_PolarOptions.src#TP_POLAROPTIONS.CB_INCLUDE_HIDDEN_CELLS_POLAR.checkbox.text
-msgctxt "tp_PolarOptions.src#TP_POLAROPTIONS.CB_INCLUDE_HIDDEN_CELLS_POLAR.checkbox.text"
-msgid "Include ~values from hidden cells"
-msgstr "រួមមាន​តម្លៃ​ពី​ក្រឡា​ដែល​លាក់"
-
-#: tp_PolarOptions.src#TP_POLAROPTIONS.FL_PLOT_OPTIONS_POLAR.fixedline.text
-msgctxt "tp_PolarOptions.src#TP_POLAROPTIONS.FL_PLOT_OPTIONS_POLAR.fixedline.text"
-msgid "Plot options"
-msgstr "ជម្រើស​គ្រោង"
-
-#: tp_PolarOptions.src#TP_POLAROPTIONS.FL_STARTING_ANGLE.fixedline.text
-msgid "Starting angle"
-msgstr "មុំ​ចាប់ផ្ដើម"
-
-#: tp_PolarOptions.src#TP_POLAROPTIONS.FT_ROTATION_DEGREES.fixedtext.text
-msgctxt "tp_PolarOptions.src#TP_POLAROPTIONS.FT_ROTATION_DEGREES.fixedtext.text"
-msgid "~Degrees"
-msgstr "ដឺក្រេ "
-
-#: tp_RangeChooser.src#TP_RANGECHOOSER.CB_FIRST_COLUMN_ASLABELS.checkbox.text
-msgid "F~irst column as label"
-msgstr "ជួរឈរ​ដំបូង​ជា​ស្លាក"
-
-#: tp_RangeChooser.src#TP_RANGECHOOSER.CB_FIRST_ROW_ASLABELS.checkbox.text
-msgid "~First row as label"
-msgstr "ជួរដេក​ដំបូង​ជា​ស្លាក "
-
-#: tp_RangeChooser.src#TP_RANGECHOOSER.FT_CAPTION_FOR_WIZARD.fixedtext.text
-msgid "Choose a data range"
-msgstr "ជ្រើស​ជួរ​ទិន្នន័យ"
-
-#: tp_RangeChooser.src#TP_RANGECHOOSER.FT_RANGE.fixedtext.text
-msgid "~Data range"
-msgstr "ជួរ​ទិន្នន័យ "
-
-#: tp_RangeChooser.src#TP_RANGECHOOSER.RB_DATACOLS.radiobutton.text
-msgid "Data series in ~columns"
-msgstr "ស៊េរី​ទិន្នន័យ​នៅ​ក្នុង​ជួរឈរ "
-
-#: tp_RangeChooser.src#TP_RANGECHOOSER.RB_DATAROWS.radiobutton.text
-msgid "Data series in ~rows"
-msgstr "ស៊េរី​ទិន្នន័យ​នៅ​ក្នុង​ជួរដេក"
-
-#: tp_Scale.src#TP_SCALE.CBX_AUTO_MAX.checkbox.text
-msgctxt "tp_Scale.src#TP_SCALE.CBX_AUTO_MAX.checkbox.text"
-msgid "A~utomatic"
-msgstr "ស្វ័យ​ប្រវត្តិ "
-
-#: tp_Scale.src#TP_SCALE.CBX_AUTO_MIN.checkbox.text
-msgid "~Automatic"
-msgstr "ស្វ័យ​​​ប្រវត្តិ"
-
-#: tp_Scale.src#TP_SCALE.CBX_AUTO_ORIGIN.checkbox.text
-msgctxt "tp_Scale.src#TP_SCALE.CBX_AUTO_ORIGIN.checkbox.text"
-msgid "Automat~ic"
-msgstr "ស្វ័យ​​​ប្រវត្តិ"
-
-#: tp_Scale.src#TP_SCALE.CBX_AUTO_STEP_HELP.checkbox.text
-msgid "Aut~omatic"
-msgstr "ស្វ័យ​​​ប្រវត្តិ"
-
-#: tp_Scale.src#TP_SCALE.CBX_AUTO_STEP_MAIN.checkbox.text
-msgid "Au~tomatic"
-msgstr "ស្វ័យ​​​ប្រវត្តិ"
-
-#: tp_Scale.src#TP_SCALE.CBX_AUTO_TIME_RESOLUTION.checkbox.text
-msgctxt "tp_Scale.src#TP_SCALE.CBX_AUTO_TIME_RESOLUTION.checkbox.text"
-msgid "Automat~ic"
-msgstr "ស្វ័យ​ប្រវត្តិ"
-
-#: tp_Scale.src#TP_SCALE.CBX_LOGARITHM.checkbox.text
-msgid "~Logarithmic scale"
-msgstr "មាត្រដ្ឋាន​ឡូការីត "
-
-#: tp_Scale.src#TP_SCALE.CBX_REVERSE.checkbox.text
-msgid "~Reverse direction"
-msgstr "បញ្ច្រាស​ទិស"
-
-#: tp_Scale.src#TP_SCALE.FL_SCALE.fixedline.text
-msgctxt "tp_Scale.src#TP_SCALE.FL_SCALE.fixedline.text"
-msgid "Scale"
-msgstr "មាត្រដ្ឋាន"
-
-#: tp_Scale.src#TP_SCALE.TXT_AXIS_TYPE.fixedtext.text
-msgid "T~ype"
-msgstr "ប្រភេទ"
-
-#: tp_Scale.src#TP_SCALE.TXT_MAX.fixedtext.text
-msgid "Ma~ximum"
-msgstr "អតិបរមា ៖ "
-
-#: tp_Scale.src#TP_SCALE.TXT_MIN.fixedtext.text
-msgid "~Minimum"
-msgstr "អប្បបរមា ៖ "
-
-#: tp_Scale.src#TP_SCALE.TXT_ORIGIN.fixedtext.text
-msgid "Re~ference value"
-msgstr "តម្លៃ​យោង ៖"
-
-#: tp_Scale.src#TP_SCALE.TXT_STEP_HELP.fixedtext.text
-msgid "Minor inter~val"
-msgstr "ចំនួន​ចន្លោះ​បន្ទាប់បន្សំ ៖"
-
-#: tp_Scale.src#TP_SCALE.TXT_STEP_HELP_COUNT.fixedtext.text
-msgid "Minor inter~val count"
-msgstr "ចំនួន​ចន្លោះ​តូច"
-
-#: tp_Scale.src#TP_SCALE.TXT_STEP_MAIN.fixedtext.text
-msgid "Ma~jor interval"
-msgstr "ចន្លោះធំ ៖ "
-
-#: tp_Scale.src#TP_SCALE.TXT_TIME_RESOLUTION.fixedtext.text
-msgid "R~esolution"
-msgstr "គុណភាព​បង្ហាញ"
-
-#: tp_Scale.src#STR_LIST_TIME_UNIT.1.stringlist.text
-msgid "Days"
-msgstr "ថ្ងៃ"
-
-#: tp_Scale.src#STR_LIST_TIME_UNIT.2.stringlist.text
-msgid "Months"
-msgstr "ខែ"
-
-#: tp_Scale.src#STR_LIST_TIME_UNIT.3.stringlist.text
-msgid "Years"
-msgstr "ឆ្នាំ"
-
-#: tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.1.stringlist.text
-msgid "Automatic"
-msgstr "ស្វ័យ​ប្រវត្តិ"
-
-#: tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.2.stringlist.text
-msgid "Text"
-msgstr "អត្ថបទ"
-
-#: tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.3.stringlist.text
-msgid "Date"
-msgstr "កាលបរិច្ឆេទ"
-
-#: tp_SeriesToAxis.src#TP_OPTIONS.CB_BARS_SIDE_BY_SIDE.checkbox.text
-msgid "Show ~bars side by side"
-msgstr "បង្ហាញ​របារ​នៅ​ជាប់ៗ​គ្នា"
-
-#: tp_SeriesToAxis.src#TP_OPTIONS.CB_CONNECTOR.checkbox.text
-msgid "Connection lines"
-msgstr "បន្ទាត់​​តភ្ជាប់"
-
-#: tp_SeriesToAxis.src#TP_OPTIONS.CB_INCLUDE_HIDDEN_CELLS.checkbox.text
-msgctxt "tp_SeriesToAxis.src#TP_OPTIONS.CB_INCLUDE_HIDDEN_CELLS.checkbox.text"
-msgid "Include ~values from hidden cells"
-msgstr "រួមមាន​តម្លៃ​ពី​ក្រឡា​ដែល​លាក់"
-
-#: tp_SeriesToAxis.src#TP_OPTIONS.1.fixedline.text
-msgid "Align data series to"
-msgstr "តម្រឹម​​​ស៊េរី​​ទិន្នន័យ​​​ទៅ"
-
-#: tp_SeriesToAxis.src#TP_OPTIONS.FL_PLOT_OPTIONS.fixedline.text
-msgctxt "tp_SeriesToAxis.src#TP_OPTIONS.FL_PLOT_OPTIONS.fixedline.text"
-msgid "Plot options"
-msgstr "ជម្រើស​គ្រោង"
-
-#: tp_SeriesToAxis.src#TP_OPTIONS.GB_BAR.fixedline.text
-msgid "Settings"
-msgstr "ការ​កំណត់"
-
-#: tp_SeriesToAxis.src#TP_OPTIONS.FT_GAP.fixedtext.text
-msgid "~Spacing"
-msgstr "គម្លាត "
-
-#: tp_SeriesToAxis.src#TP_OPTIONS.FT_MISSING_VALUES.fixedtext.text
-msgid "Plot missing values"
-msgstr "ចែក​តម្លៃ​ដែល​បាត់"
-
-#: tp_SeriesToAxis.src#TP_OPTIONS.FT_OVERLAP.fixedtext.text
-msgid "~Overlap"
-msgstr "ត្រួត​លើ​គ្នា "
-
-#: tp_SeriesToAxis.src#TP_OPTIONS.RBT_OPT_AXIS_1.radiobutton.text
-msgid "Primary Y axis"
-msgstr "អ័ក្ស Y ទីមួយ"
-
-#: tp_SeriesToAxis.src#TP_OPTIONS.RBT_OPT_AXIS_2.radiobutton.text
-msgid "Secondary Y axis"
-msgstr "អ័ក្ស Y រង"
-
-#: tp_SeriesToAxis.src#TP_OPTIONS.RB_ASSUME_ZERO.radiobutton.text
-msgid "~Assume zero"
-msgstr "សន្មត់​ថា​សូន្យ"
-
-#: tp_SeriesToAxis.src#TP_OPTIONS.RB_CONTINUE_LINE.radiobutton.text
-msgid "~Continue line"
-msgstr "បន្ទាប់​បន្ត"
-
-#: tp_SeriesToAxis.src#TP_OPTIONS.RB_DONT_PAINT.radiobutton.text
-msgid "~Leave gap"
-msgstr "ទុក​ចន្លោះ"
-
-#: tp_TitleRotation.src#TP_ALIGNMENT.FL_ALIGN.fixedline.text
-msgctxt "tp_TitleRotation.src#TP_ALIGNMENT.FL_ALIGN.fixedline.text"
-msgid "Text orientation"
-msgstr "ទិសអត្ថបទ"
-
-#: tp_TitleRotation.src#TP_ALIGNMENT.FT_DEGREES.fixedtext.text
-msgctxt "tp_TitleRotation.src#TP_ALIGNMENT.FT_DEGREES.fixedtext.text"
-msgid "~Degrees"
-msgstr "ដឺក្រេ "
-
-#: tp_TitleRotation.src#TP_ALIGNMENT.FT_TEXTDIR.fixedtext.text
-msgctxt "tp_TitleRotation.src#TP_ALIGNMENT.FT_TEXTDIR.fixedtext.text"
-msgid "Te~xt direction"
-msgstr "ទិស​អត្ថបទ"
-
-#: tp_TitleRotation.src#TP_ALIGNMENT.BTN_TXTSTACKED.tristatebox.text
-msgctxt "tp_TitleRotation.src#TP_ALIGNMENT.BTN_TXTSTACKED.tristatebox.text"
-msgid "Ve~rtically stacked"
-msgstr "ដាក់​ជា​​ជង់​បញ្ឈរ"
-
-#: tp_Wizard_TitlesAndObjects.src#TP_WIZARD_TITLEANDOBJECTS.FL_GRIDS.fixedline.text
-msgid "Display grids"
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/controller/dialogs/tp_Wizard_TitlesAndObjects.src#TP_WIZARD_TITLEANDOBJECTS.FT_TITLEDESCRIPTION.FixedText.Text
+msgid  "Choose titles, legend, and grid settings"
+msgstr "ជ្រើស​​ការ​កំណត់​ចំណង​ជើង តាង និង​ក្រឡាចត្រង្គ"
+
+#: source/controller/dialogs/tp_Wizard_TitlesAndObjects.src#TP_WIZARD_TITLEANDOBJECTS.FL_GRIDS.FixedLine.Text
+msgid  "Display grids"
 msgstr "បង្ហាញ​ក្រឡាចត្រង្គ"
 
-#: tp_Wizard_TitlesAndObjects.src#TP_WIZARD_TITLEANDOBJECTS.FT_TITLEDESCRIPTION.fixedtext.text
-msgid "Choose titles, legend, and grid settings"
-msgstr "ជ្រើស​​ការ​កំណត់​ចំណង​ជើង តាង និង​ក្រឡាចត្រង្គ"
+#: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_RIGHT_ANGLED_AXES.CheckBox.Text
+msgid  "~Right-angled axes"
+msgstr "អ័ក្ស​មុំ​ស្ដាំ "
+
+#: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_X_ROTATION.FixedText.Text
+msgid  "~X rotation"
+msgstr "បង្វិល X"
+
+#: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_Y_ROTATION.FixedText.Text
+msgid  "~Y rotation"
+msgstr "បង្វិល Y"
+
+#: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_Z_ROTATION.FixedText.Text
+msgid  "~Z rotation"
+msgstr "បង្វិល Z "
+
+#: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_PERSPECTIVE.CheckBox.Text
+msgid  "~Perspective"
+msgstr "យថាទស្សន៍ "
+
+#: source/controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#define.CustomUnitText
+msgid  " degrees"
+msgstr " ដឺក្រេ"
+
+#: source/controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_SIMPLE.String.Text
+msgid  "Simple"
+msgstr "ធម្មតា"
+
+#: source/controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_REALISTIC.String.Text
+msgid  "Realistic"
+msgstr "ប្រាកដ"
+
+#: source/controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_CUSTOM.String.Text
+msgid  "Custom"
+msgstr "ផ្ទាល់​ខ្លួន​"
+
+#: source/controller/dialogs/Strings_AdditionalControls.src#STR_BAR_GEOMETRY.String.Text
+msgid  "Shape"
+msgstr "រាង"
+
+#: source/controller/dialogs/Strings_AdditionalControls.src#STR_NUMBER_OF_LINES.String.Text
+msgid  "~Number of lines"
+msgstr "ចំនួន​​បន្ទាត់ "
+
+#: source/controller/dialogs/Strings_AdditionalControls.src#STR_TEXT_SEPARATOR.String.Text
+msgid  "Separator"
+msgstr "បន្ទាត់​​​ខណ្ឌចែក"
+
+#: source/controller/dialogs/tp_Location.src#TP_LOCATION.FL_TABLE.FixedLine.Text
+msgid  "Place chart"
+msgstr "ដាក់​គំនូស​តាង"
+
+#: source/controller/dialogs/tp_Location.src#TP_LOCATION.FT_TABLE.FixedText.Text
+msgid  "~Insert in sheet"
+msgstr "បញ្ចូល​ក្នុង​សន្លឹក "
+
+#: source/controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.item1.StringList.item
+msgid  "Box"
+msgstr "ប្រអប់"
+
+#: source/controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.item2.StringList.item
+msgid  "Cylinder"
+msgstr "ស៊ីឡាំង"
+
+#: source/controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.item3.StringList.item
+msgid  "Cone"
+msgstr "កោណ"
+
+#: source/controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.item4.StringList.item
+msgid  "Pyramid"
+msgstr "ពីរ៉ាមីត​"
+
+#: source/controller/dialogs/dlg_DataSource.src#DLG_DATA_SOURCE.TabDialog.Text
+msgid  "Data Ranges"
+msgstr "ជួរ​ទិន្នន័យ"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_COLUMN.String.Text
+msgid  "Column"
+msgstr "ជួរឈរ"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_BAR.String.Text
+msgid  "Bar"
+msgstr "របារ"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_AREA.String.Text
+msgid  "Area"
+msgstr "ផ្ទៃ"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_PIE.String.Text
+msgid  "Pie"
+msgstr "ចំណិត"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_PIE_EXPLODED.String.Text
+msgid  "Exploded Pie Chart"
+msgstr "គំនូស​តាង​ចំណិត​ដែល​បាន​បំបែក"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_DONUT_EXPLODED.String.Text
+msgid  "Exploded Donut Chart"
+msgstr "គំនូស​តាង​ដូណាត់​បាន​បំបែក"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_DONUT.String.Text
+msgid  "Donut"
+msgstr "ដូណាត់"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_LINE.String.Text
+msgid  "Line"
+msgstr "បន្ទាត់"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_XY.String.Text
+msgid  "XY (Scatter)"
+msgstr "XY (ពង្រាយ)"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_POINTS_AND_LINES.String.Text
+msgid  "Points and Lines"
+msgstr "ចំណុច និង​បន្ទាត់"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_POINTS_ONLY.String.Text
+msgid  "Points Only"
+msgstr "តែ​ចំណុច"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_LINES_ONLY.String.Text
+msgid  "Lines Only"
+msgstr "តែ​បន្ទាត់"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_LINES_3D.String.Text
+msgid  "3D Lines"
+msgstr "បន្ទាត់​ត្រីមាត្រ"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_COMBI_COLUMN_LINE.String.Text
+msgid  "Column and Line"
+msgstr "ជួរឈរ និង​បន្ទាត់"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_LINE_COLUMN.String.Text
+msgid  "Columns and Lines"
+msgstr "ជួរឈរ និង​បន្ទាត់"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_LINE_STACKEDCOLUMN.String.Text
+msgid  "Stacked Columns and Lines"
+msgstr "ជួរឈរ និង​បន្ទាត់​ជា​ជង់"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_NET.String.Text
+msgid  "Net"
+msgstr "សំណាញ់"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_STOCK.String.Text
+msgid  "Stock"
+msgstr "សន្និធិ"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_STOCK_1.String.Text
+msgid  "Stock Chart 1"
+msgstr "​គំនូស​តាង​សន្និធិ ១"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_STOCK_2.String.Text
+msgid  "Stock Chart 2"
+msgstr "គំនូស​តាង​សន្និធិ ២"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_STOCK_3.String.Text
+msgid  "Stock Chart 3"
+msgstr "គំនូស​តាង​​សន្និធិ ៣"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_STOCK_4.String.Text
+msgid  "Stock Chart 4"
+msgstr "​គំនូស​តាង​សន្និធិ ៤"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_NORMAL.String.Text
+msgid  "Normal"
+msgstr "ធម្មតា"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_STACKED.String.Text
+msgid  "Stacked"
+msgstr "ជង់"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_PERCENT.String.Text
+msgid  "Percent Stacked"
+msgstr "ជង់​ភាគរយ"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_DEEP.String.Text
+msgid  "Deep"
+msgstr "ជ្រៅ"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_FILLED.String.Text
+msgid  "Filled"
+msgstr "បានបំពេញ"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_BUBBLE.String.Text
+msgid  "Bubble"
+msgstr "ពពុះ"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_BUBBLE_1.String.Text
+msgid  "Bubble Chart"
+msgstr "គំនូស​តាង​ពពុះ"
+
+#: source/controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.TabDialog.Text
+msgid  "Character"
+msgstr "តួអក្សរ"
+
+#: source/controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_NAME.PageItem.Text
+msgid  "Font"
+msgstr "ពុម្ពអក្សរ"
+
+#: source/controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_EFFECTS.PageItem.Text
+msgid  "Font Effects"
+msgstr "បែបផែន​ពុម្ពអក្សរ"
+
+#: source/controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_POSITION.PageItem.Text
+msgid  "Font Position"
+msgstr "ទី​តាំង​ពុម្ព​អក្សរ"
+
+#: source/controller/dialogs/dlg_View3D.src#DLG_3D_VIEW.TabDialog.Text
+msgid  "3D View"
+msgstr "ទិដ្ឋភាព​ត្រីមាត្រ"
+
+#: source/controller/dialogs/Strings_Scale.src#STR_INVALID_NUMBER.String.Text
+msgid  "Numbers are required. Check your input."
+msgstr "ត្រូវការ​លេខ ។ ពិនិត្យ​មើល​ការ​បញ្ចូល​របស់​អ្នក ។"
+
+#: source/controller/dialogs/Strings_Scale.src#STR_STEP_GT_ZERO.String.Text
+msgid  "The major interval requires a positive number. Check your input."
+msgstr ""
+
+#: source/controller/dialogs/Strings_Scale.src#STR_BAD_LOGARITHM.String.Text
+msgid  "The logarithmic scale requires positive numbers. Check your input."
+msgstr ""
+
+#: source/controller/dialogs/Strings_Scale.src#STR_MIN_GREATER_MAX.String.Text
+msgid  "The minimum must be lower than the maximum. Check your input."
+msgstr "អប្បបរមា​ត្រូវ​តែ​ទាប​ជាង​អតិបរមា ។ ពិនិត្យ​មើល​ការ​បញ្ចូល​របស់​អ្នក ។"
+
+#: source/controller/dialogs/Strings_Scale.src#STR_INVALID_INTERVALS.String.Text
+msgid  "The major interval needs to be greater than the minor interval. Check your input."
+msgstr ""
+
+#: source/controller/dialogs/Strings_Scale.src#STR_INVALID_TIME_UNIT.String.Text
+msgid  "The major and minor interval need to be greater or equal to the resolution. Check your input."
+msgstr ""
+
+#: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.ModalDialog.Text
+msgid  "Data Table"
+msgstr "តារាង​ទិន្នន័យ"
+
+#: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_ROW.ToolBoxItem.Text
+msgid  "Insert Row"
+msgstr "បញ្ចូល​ជួរ​ដេក"
+
+#: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_COL.ToolBoxItem.Text
+msgid  "Insert Series"
+msgstr "បញ្ចូល​ស៊េរី"
+
+#: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_TEXT_COL.ToolBoxItem.Text
+msgid  "Insert Text Column"
+msgstr "បញ្ចូល​ជួរឈរ​អត្ថបទ"
+
+#: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_DELETE_ROW.ToolBoxItem.Text
+msgid  "Delete Row"
+msgstr "លុប​ជួរដេក"
+
+#: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_DELETE_COL.ToolBoxItem.Text
+msgid  "Delete Series"
+msgstr "លុប​ស៊េរី"
+
+#: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_SWAP_COL.ToolBoxItem.Text
+msgid  "Move Series Right"
+msgstr "ផ្លាស់ទី​ស៊េរី​ទៅ​ស្ដាំ"
+
+#: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_SWAP_ROW.ToolBoxItem.Text
+msgid  "Move Row Down"
+msgstr "ផ្លាស់ទី​ស៊េរី​ចុះក្រោម"
+
+#: source/controller/dialogs/tp_Scale.src#STR_LIST_TIME_UNIT.item1.StringList.item
+msgid  "Days"
+msgstr "ថ្ងៃ"
+
+#: source/controller/dialogs/tp_Scale.src#STR_LIST_TIME_UNIT.item2.StringList.item
+msgid  "Months"
+msgstr "ខែ"
+
+#: source/controller/dialogs/tp_Scale.src#STR_LIST_TIME_UNIT.item3.StringList.item
+msgid  "Years"
+msgstr "ឆ្នាំ"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.FL_SCALE.FixedLine.Text
+msgid  "Scale"
+msgstr "មាត្រដ្ឋាន"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.CBX_REVERSE.CheckBox.Text
+msgid  "~Reverse direction"
+msgstr "បញ្ច្រាស​ទិស"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.CBX_LOGARITHM.CheckBox.Text
+msgid  "~Logarithmic scale"
+msgstr "មាត្រដ្ឋាន​ឡូការីត "
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.TXT_AXIS_TYPE.FixedText.Text
+msgid  "T~ype"
+msgstr "ប្រភេទ"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.item1.StringList.item
+msgid  "Automatic"
+msgstr "ស្វ័យ​ប្រវត្តិ"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.item2.StringList.item
+msgid  "Text"
+msgstr "អត្ថបទ"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.item3.StringList.item
+msgid  "Date"
+msgstr "កាលបរិច្ឆេទ"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.TXT_MIN.FixedText.Text
+msgid  "~Minimum"
+msgstr "អប្បបរមា ៖ "
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_MIN.CheckBox.Text
+msgid  "~Automatic"
+msgstr "ស្វ័យ​​​ប្រវត្តិ"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.TXT_MAX.FixedText.Text
+msgid  "Ma~ximum"
+msgstr "អតិបរមា ៖ "
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_MAX.CheckBox.Text
+msgid  "A~utomatic"
+msgstr "ស្វ័យ​ប្រវត្តិ "
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.TXT_TIME_RESOLUTION.FixedText.Text
+msgid  "R~esolution"
+msgstr "គុណភាព​បង្ហាញ"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_TIME_RESOLUTION.CheckBox.Text
+msgid  "Automat~ic"
+msgstr "ស្វ័យ​ប្រវត្តិ"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_MAIN.FixedText.Text
+msgid  "Ma~jor interval"
+msgstr "ចន្លោះធំ ៖ "
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_STEP_MAIN.CheckBox.Text
+msgid  "Au~tomatic"
+msgstr "ស្វ័យ​​​ប្រវត្តិ"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_HELP_COUNT.FixedText.Text
+msgid  "Minor inter~val count"
+msgstr "ចំនួន​ចន្លោះ​តូច"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_HELP.FixedText.Text
+msgid  "Minor inter~val"
+msgstr "ចំនួន​ចន្លោះ​បន្ទាប់បន្សំ ៖"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_STEP_HELP.CheckBox.Text
+msgid  "Aut~omatic"
+msgstr "ស្វ័យ​​​ប្រវត្តិ"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.TXT_ORIGIN.FixedText.Text
+msgid  "Re~ference value"
+msgstr "តម្លៃ​យោង ៖"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_ORIGIN.CheckBox.Text
+msgid  "Automat~ic"
+msgstr "ស្វ័យ​ប្រវត្តិ"
+
+#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.1.FixedLine.Text
+msgid  "Align data series to"
+msgstr "តម្រឹម​​​ស៊េរី​​ទិន្នន័យ​​​ទៅ"
+
+#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RBT_OPT_AXIS_1.RadioButton.Text
+msgid  "Primary Y axis"
+msgstr "អ័ក្ស Y ទីមួយ"
+
+#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RBT_OPT_AXIS_2.RadioButton.Text
+msgid  "Secondary Y axis"
+msgstr "អ័ក្ស Y រង"
+
+#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.GB_BAR.FixedLine.Text
+msgid  "Settings"
+msgstr "ការ​កំណត់"
+
+#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_OVERLAP.FixedText.Text
+msgid  "~Overlap"
+msgstr "ត្រួត​លើ​គ្នា "
+
+#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_GAP.FixedText.Text
+msgid  "~Spacing"
+msgstr "គម្លាត "
+
+#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_CONNECTOR.CheckBox.Text
+msgid  "Connection lines"
+msgstr "បន្ទាត់​​តភ្ជាប់"
+
+#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_BARS_SIDE_BY_SIDE.CheckBox.Text
+msgid  "Show ~bars side by side"
+msgstr "បង្ហាញ​របារ​នៅ​ជាប់ៗ​គ្នា"
+
+#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FL_PLOT_OPTIONS.FixedLine.Text
+msgid  "Plot options"
+msgstr "ជម្រើស​គ្រោង"
+
+#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_MISSING_VALUES.FixedText.Text
+msgid  "Plot missing values"
+msgstr "ចែក​តម្លៃ​ដែល​បាត់"
+
+#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RB_DONT_PAINT.RadioButton.Text
+msgid  "~Leave gap"
+msgstr "ទុក​ចន្លោះ"
+
+#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RB_ASSUME_ZERO.RadioButton.Text
+msgid  "~Assume zero"
+msgstr "សន្មត់​ថា​សូន្យ"
+
+#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RB_CONTINUE_LINE.RadioButton.Text
+msgid  "~Continue line"
+msgstr "បន្ទាប់​បន្ត"
+
+#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_INCLUDE_HIDDEN_CELLS.CheckBox.Text
+msgid  "Include ~values from hidden cells"
+msgstr "រួមមាន​តម្លៃ​ពី​ក្រឡា​ដែល​លាក់"
+
+#: source/controller/dialogs/tp_3D_SceneIllumination.src#TP_3D_SCENEILLUMINATION.FT_LIGHTSOURCE.FixedText.Text
+msgid  "~Light source"
+msgstr "ប្រភព​​ពន្លឺ "
+
+#: source/controller/dialogs/tp_3D_SceneIllumination.src#TP_3D_SCENEILLUMINATION.FT_AMBIENTLIGHT.FixedText.Text
+msgid  "~Ambient light"
+msgstr "ពន្លឺ​ព័ទ្ធ​ជុំ​វិញ "
+
+#: source/controller/dialogs/tp_3D_SceneIllumination.src#STR_LIGHT_PREVIEW.String.Text
+msgid  "Light Preview"
+msgstr "មើល​ជា​មុន"
+
+#: source/controller/dialogs/Strings_Statistic.src#STR_INDICATE_BOTH.String.Text
+msgid  "Negative and Positive"
+msgstr "អ​វិជ្ជមាន និង​វិជ្ជមាន"
+
+#: source/controller/dialogs/Strings_Statistic.src#STR_INDICATE_DOWN.String.Text
+msgid  "Negative"
+msgstr "អវិជ្ជមាន"
+
+#: source/controller/dialogs/Strings_Statistic.src#STR_INDICATE_UP.String.Text
+msgid  "Positive"
+msgstr "វិជ្ជមាន"
+
+#: source/controller/dialogs/Strings_Statistic.src#STR_CONTROLTEXT_ERROR_BARS_FROM_DATA.String.Text
+msgid  "From Data Table"
+msgstr "ពី​តារាង​ទិន្នន័យ"
+
+#: source/controller/dialogs/Strings_Statistic.src#STR_REGRESSION_LINEAR.String.Text
+msgid  "Linear (%SERIESNAME)"
+msgstr "តំរែតំរង់​លីនេអែរ"
+
+#: source/controller/dialogs/Strings_Statistic.src#STR_REGRESSION_LOG.String.Text
+msgid  "Logarithmic (%SERIESNAME)"
+msgstr "តំរែតំរង់​លោការីត"
+
+#: source/controller/dialogs/Strings_Statistic.src#STR_REGRESSION_EXP.String.Text
+msgid  "Exponential (%SERIESNAME)"
+msgstr "តំរែតំរង់​អិចស្ប៉ូណង់​ស្យែល"
+
+#: source/controller/dialogs/Strings_Statistic.src#STR_REGRESSION_POWER.String.Text
+msgid  "Power (%SERIESNAME)"
+msgstr "តំរែតំរង់​ស្វ័យគុណ"
+
+#: source/controller/dialogs/Strings_Statistic.src#STR_REGRESSION_MEAN.String.Text
+msgid  "Mean (%SERIESNAME)"
+msgstr "មានន័យ (%SERIESNAME)"
+
+#: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.FT_CHARTTYPE.FixedText.Text
+msgid  "Choose a chart type"
+msgstr "ជ្រើស​ប្រភេទ​គំនូសតាង"
+
+#: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_X_AXIS_CATEGORIES.CheckBox.Text
+msgid  "X axis with Categories"
+msgstr "អ័ក្ស X ជា​មួយ​ប្រភេទ"
+
+#: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_3D_LOOK.CheckBox.Text
+msgid  "~3D Look"
+msgstr "រាង​ត្រីមាត្រ "
+
+#: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_STACKED.CheckBox.Text
+msgid  "~Stack series"
+msgstr "ស៊េរី​ជង់ "
+
+#: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Y.RadioButton.Text
+msgid  "On top"
+msgstr "នៅ​កំពូល"
+
+#: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Y_PERCENT.RadioButton.Text
+msgid  "Percent"
+msgstr "ភាគ​រយ"
+
+#: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Z.RadioButton.Text
+msgid  "Deep"
+msgstr "ជ្រៅ"
+
+#: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_SPLINES.CheckBox.Text
+msgid  "S~mooth lines"
+msgstr "បន្ទាត់​រាបស្មើ"
+
+#: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.PB_SPLINE_DIALOG.PushButton.Text
+msgid  "Properties..."
+msgstr "លក្ខណសម្បត្តិ..."
+
+#: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_XVALUE_SORTING.CheckBox.Text
+msgid  "~Sort by X values"
+msgstr "តម្រៀប​តាម​តម្លៃ X"
+
+#: source/controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.RB_SPLINES_CUBIC.RadioButton.Text
+msgid  "Cubic spline"
+msgstr "ខ្សែ​កោង​គូប"
+
+#: source/controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.RB_SPLINES_B.RadioButton.Text
+msgid  "B-Spline"
+msgstr "ខ្សែកោង B"
+
+#: source/controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.FT_SPLINE_RESOLUTION.FixedText.Text
+msgid  "~Resolution"
+msgstr "គុណ​ភាព​បង្ហាញ "
+
+#: source/controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.FT_SPLINE_ORDER.FixedText.Text
+msgid  "~Data points order"
+msgstr "លំដាប់​ចំណុច​ទិន្នន័យ "
+
+#: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_CAPTION_FOR_WIZARD.FixedText.Text
+msgid  "Customize data ranges for individual data series"
+msgstr "ប្ដូរ​ជួរ​ទិន្នន័យ​តាមបំណង​សម្រាប់​ស៊េរី​ទិន្នន័យ​នីមួយៗ"
+
+#: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_SERIES.FixedText.Text
+msgid  "Data ~series"
+msgstr "ស៊េរី​ទិន្នន័យ"
+
+#: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_ROLE.FixedText.Text
+msgid  "~Data ranges"
+msgstr "ជួរ​ទិន្នន័យ "
+
+#: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_RANGE.FixedText.Text
+msgid  "Ran~ge for %VALUETYPE"
+msgstr "ជួរ​សម្រាប់ %VALUETYPE "
+
+#: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_CATEGORIES.FixedText.Text
+msgid  "~Categories"
+msgstr "ប្រភេទ "
+
+#: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_DATALABELS.FixedText.Text
+msgid  "Data ~labels"
+msgstr "ស្លាក​ទិន្នន័យ "
+
+#: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.BTN_ADD.PushButton.Text
+msgid  "~Add"
+msgstr "បន្ថែម "
+
+#: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.BTN_REMOVE.PushButton.Text
+msgid  "~Remove"
+msgstr "យកចេញ"
+
+#: source/controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.FT_CAPTION_FOR_WIZARD.FixedText.Text
+msgid  "Choose a data range"
+msgstr "ជ្រើស​ជួរ​ទិន្នន័យ"
+
+#: source/controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.FT_RANGE.FixedText.Text
+msgid  "~Data range"
+msgstr "ជួរ​ទិន្នន័យ "
+
+#: source/controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.RB_DATAROWS.RadioButton.Text
+msgid  "Data series in ~rows"
+msgstr "ស៊េរី​ទិន្នន័យ​នៅ​ក្នុង​ជួរដេក"
+
+#: source/controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.RB_DATACOLS.RadioButton.Text
+msgid  "Data series in ~columns"
+msgstr "ស៊េរី​ទិន្នន័យ​នៅ​ក្នុង​ជួរឈរ "
+
+#: source/controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.CB_FIRST_ROW_ASLABELS.CheckBox.Text
+msgid  "~First row as label"
+msgstr "ជួរដេក​ដំបូង​ជា​ស្លាក "
+
+#: source/controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.CB_FIRST_COLUMN_ASLABELS.CheckBox.Text
+msgid  "F~irst column as label"
+msgstr "ជួរឈរ​ដំបូង​ជា​ស្លាក"
+
+#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_SCHOW_DESCR.CheckBox.Text
+msgid  "Sho~w labels"
+msgstr "បង្ហាញ​​ស្លាក "
+
+#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_ORIENTATION.FixedLine.Text
+msgid  "Text orientation"
+msgstr "ទិសអត្ថបទ"
+
+#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.PB_AXIS_LABEL_TEXTSTACKED.TriStateBox.Text
+msgid  "Ve~rtically stacked"
+msgstr "ដាក់​ជា​​ជង់​បញ្ឈរ"
+
+#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FT_AXIS_LABEL_DEGREES.FixedText.Text
+msgid  "~Degrees"
+msgstr "ដឺក្រេ "
+
+#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_TEXTFLOW.FixedLine.Text
+msgid  "Text flow"
+msgstr "លំហូរ​​​អត្ថបទ"
+
+#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_TEXTOVERLAP.CheckBox.Text
+msgid  "O~verlap"
+msgstr "ត្រួត​លើ​គ្នា "
+
+#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_TEXTBREAK.CheckBox.Text
+msgid  "~Break"
+msgstr "ចុះ​បន្ទាត់ "
+
+#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_ORDER.FixedLine.Text
+msgid  "Order"
+msgstr "លំដាប់​"
+
+#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_SIDEBYSIDE.RadioButton.Text
+msgid  "~Tile"
+msgstr "ក្បឿង​​ "
+
+#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_UPDOWN.RadioButton.Text
+msgid  "St~agger odd"
+msgstr "លេខ​​គូ​​ទាប​​ជាង​​លេខ​​សេស "
+
+#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_DOWNUP.RadioButton.Text
+msgid  "Stagger ~even"
+msgstr "លេខ​​សេស​​​ទាប​​ជាង​​លេខ​គូ​ "
+
+#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_AUTOORDER.RadioButton.Text
+msgid  "A~utomatic"
+msgstr "ស្វ័យ​ប្រវត្តិ "
+
+#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FT_AXIS_TEXTDIR.FixedText.Text
+msgid  "Te~xt direction"
+msgstr "ទិស​អត្ថបទ"
+
+#: source/controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.item1.StringList.item
+msgid  "Space"
+msgstr "ចន្លោះ"
+
+#: source/controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.item2.StringList.item
+msgid  "Comma"
+msgstr "សញ្ញា​​ក្បៀស"
+
+#: source/controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.item3.StringList.item
+msgid  "Semicolon"
+msgstr "សញ្ញា​ចំណុច​ក្បៀស"
+
+#: source/controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.item4.StringList.item
+msgid  "New line"
+msgstr "បន្ទាត់​ថ្មី"
+
+#: source/controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.FT_SCHEME.FixedText.Text
+msgid  "Sche~me"
+msgstr "គ្រោងការណ៍"
+
+#: source/controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_SHADING.CheckBox.Text
+msgid  "~Shading"
+msgstr "​​ស្រមោល "
+
+#: source/controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_OBJECTLINES.CheckBox.Text
+msgid  "~Object borders"
+msgstr "ស៊ុម​វត្ថុ "
+
+#: source/controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_ROUNDEDEDGE.Checkbox.Text
+msgid  "~Rounded edges"
+msgstr "គែម​មូល "
+
+#: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_AXIS.FixedLine.Text
+msgid  "Axes"
+msgstr "អ័ក្ស"
+
+#: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_GRID.FixedLine.Text
+msgid  "Major grids"
+msgstr "ក្រឡាចត្រង្គ​រង្វើល"
+
+#: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_X_PRIMARY.CheckBox.Text
+msgid  "~X axis"
+msgstr "អ័ក្ស X "
+
+#: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Y_PRIMARY.CheckBox.Text
+msgid  "~Y axis"
+msgstr "អ័ក្ស​ Y "
+
+#: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Z_PRIMARY.CheckBox.Text
+msgid  "~Z axis"
+msgstr "អ័ក្ស Z "
+
+#: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_AXIS.FixedLine.Text
+msgid  "Secondary axes"
+msgstr "អ័ក្ស​រង"
+
+#: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_GRID.FixedLine.Text
+msgid  "Minor grids"
+msgstr "ក្រឡាចត្រង្គ​ញឹក"
+
+#: source/controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.GRP_LEGEND.FixedLine.Text
+msgid  "Position"
+msgstr "ទីតាំង"
+
+#: source/controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.FL_LEGEND_TEXTORIENT.FixedLine.Text
+msgid  "Text orientation"
+msgstr "ទិសអត្ថបទ"
+
+#: source/controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.FT_LEGEND_TEXTDIR.FixedText.Text
+msgid  "Te~xt direction"
+msgstr "ទិស​អត្ថបទ"
+
+#: source/controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.BTN_TXTSTACKED.TriStateBox.Text
+msgid  "Ve~rtically stacked"
+msgstr "ដាក់​ជា​​ជង់​បញ្ឈរ"
+
+#: source/controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FT_DEGREES.FixedText.Text
+msgid  "~Degrees"
+msgstr "ដឺក្រេ "
+
+#: source/controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FL_ALIGN.FixedLine.Text
+msgid  "Text orientation"
+msgstr "ទិសអត្ថបទ"
+
+#: source/controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FT_TEXTDIR.FixedText.Text
+msgid  "Te~xt direction"
+msgstr "ទិស​អត្ថបទ"
+
+#: source/controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.TabDialog.Text
+msgid  "Paragraph"
+msgstr "កថាខណ្ឌ"
+
+#: source/controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_STD_PARAGRAPH.PageItem.Text
+msgid  "Indents & Spacing"
+msgstr "ចូល​បន្ទាត់​ និង​​គម្លាត"
+
+#: source/controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PageItem.Text
+msgid  "Alignment"
+msgstr "តម្រឹម"
+
+#: source/controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_PARA_ASIAN.PageItem.Text
+msgid  "Asian Typography"
+msgstr "មុទ្ទវិទ្យា​អាស៊ី"
+
+#: source/controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_TABULATOR.PageItem.Text
+msgid  "Tab"
+msgstr "ផ្ទាំង"
+
+#: source/controller/dialogs/Strings.src#STR_DLG_CHART_WIZARD.String.Text
+msgid  "Chart Wizard"
+msgstr "អ្នក​ជំនួយការ​គំនូស​តាង"
+
+#: source/controller/dialogs/Strings.src#STR_DLG_SMOOTH_LINE_PROPERTIES.String.Text
+msgid  "Smooth Lines"
+msgstr "បន្ទាត់​រៀបស្មើ"
+
+#: source/controller/dialogs/Strings.src#STR_DLG_NUMBERFORMAT_FOR_PERCENTAGE_VALUE.String.Text
+msgid  "Number Format for Percentage Value"
+msgstr "ទ្រង់ទ្រាយ​លេខ​សម្រាប់​តម្លៃ​ជា​ភាគរយ"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_CHARTTYPE.String.Text
+msgid  "Chart Type"
+msgstr "ប្រភេទ​គំនូស​តាង"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_DATA_RANGE.String.Text
+msgid  "Data Range"
+msgstr "ជួរ​ទិន្នន័យ"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_CHART_ELEMENTS.String.Text
+msgid  "Chart Elements"
+msgstr "ធាតុ​គំនូស​តាង"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_CHART_LOCATION.String.Text
+msgid  "Chart Location"
+msgstr "ទីតាំង​គំនូស​តាង"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_LINE.String.Text
+msgid  "Line"
+msgstr "បន្ទាត់"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_BORDER.String.Text
+msgid  "Borders"
+msgstr "ស៊ុម"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_AREA.String.Text
+msgid  "Area"
+msgstr "ផ្ទៃ"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_TRANSPARENCY.String.Text
+msgid  "Transparency"
+msgstr "​ថ្លា"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_FONT.String.Text
+msgid  "Font"
+msgstr "ពុម្ពអក្សរ"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_FONT_EFFECTS.String.Text
+msgid  "Font Effects"
+msgstr "បែបផែន​ពុម្ពអក្សរ"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_NUMBERS.String.Text
+msgid  "Numbers"
+msgstr "លេខ"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_POSITION.String.Text
+msgid  "Position"
+msgstr "ទីតាំង"
+
+#: source/controller/dialogs/Strings.src#STR_BUTTON_UP.String.Text
+msgid  "Up"
+msgstr "ឡើង​លើ"
+
+#: source/controller/dialogs/Strings.src#STR_BUTTON_DOWN.String.Text
+msgid  "Down"
+msgstr "ចុះក្រោម"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_LAYOUT.String.Text
+msgid  "Layout"
+msgstr "ប្លង់"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_OPTIONS.String.Text
+msgid  "Options"
+msgstr "ជម្រើស"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_SCALE.String.Text
+msgid  "Scale"
+msgstr "មាត្រដ្ឋាន"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_POSITIONING.String.Text
+msgid  "Positioning"
+msgstr "ការ​ដាក់ទីតាំង"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_TRENDLINE_TYPE.String.Text
+msgid  "Type"
+msgstr "ប្រភេទ"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_YERROR_BARS.String.Text
+msgid  "Y Error Bars"
+msgstr "របារ​កំហុស Y"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_ALIGNMENT.String.Text
+msgid  "Alignment"
+msgstr "តម្រឹម"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_PERSPECTIVE.String.Text
+msgid  "Perspective"
+msgstr "យថាទស្សន៍"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_APPEARANCE.String.Text
+msgid  "Appearance"
+msgstr "រូបរាង"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_ILLUMINATION.String.Text
+msgid  "Illumination"
+msgstr "ការ​បំភ្លឺ​"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_ASIAN.String.Text
+msgid  "Asian Typography"
+msgstr "មុទ្ទវិទ្យា​អាស៊ី"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE_WITH_PARAMETERS.String.Text
+msgid  "Mean value line with value %AVERAGE_VALUE and standard deviation %STD_DEVIATION"
+msgstr ""
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS.String.Text
+msgid  "Axis"
+msgstr "អ័ក្ស"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS_X.String.Text
+msgid  "X Axis"
+msgstr "អ័ក្ស X"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS_Y.String.Text
+msgid  "Y Axis"
+msgstr "អ័ក្ស Y"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS_Z.String.Text
+msgid  "Z Axis"
+msgstr "អ័ក្ស Z"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_SECONDARY_X_AXIS.String.Text
+msgid  "Secondary X Axis"
+msgstr "អ័ក្ស Y រង"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_SECONDARY_Y_AXIS.String.Text
+msgid  "Secondary Y Axis"
+msgstr "អ័ក្ស Y រង"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_AXES.String.Text
+msgid  "Axes"
+msgstr "អ័ក្ស"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_GRIDS.String.Text
+msgid  "Grids"
+msgstr "ក្រឡាចត្រង្គ"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_GRID.String.Text
+msgid  "Grid"
+msgstr "ក្រឡា​​​​ចត្រង្គ"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_GRID_MAJOR_X.String.Text
+msgid  "X Axis Major Grid"
+msgstr "ក្រឡាចត្រង្គ​អ័ក្ស X ញឹក"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_GRID_MAJOR_Y.String.Text
+msgid  "Y Axis Major Grid"
+msgstr "ក្រឡាចត្រង្គ​អ័ក្ស Y ញឹក"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_GRID_MAJOR_Z.String.Text
+msgid  "Z Axis Major Grid"
+msgstr "ក្រឡាចត្រង្គ​អ័ក្ស Z ញឹក"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_GRID_MINOR_X.String.Text
+msgid  "X Axis Minor Grid"
+msgstr "ក្រឡាចត្រង្គ​អ័ក្ស X រង្វើល"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_GRID_MINOR_Y.String.Text
+msgid  "Y Axis Minor Grid"
+msgstr "ក្រឡាចត្រង្គ​អ័ក្ស Y រង្វើល"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_GRID_MINOR_Z.String.Text
+msgid  "Z Axis Minor Grid"
+msgstr "ក្រឡាចត្រង្គ​អ័ក្ស Z រង្វើល"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_LEGEND.String.Text
+msgid  "Legend"
+msgstr "តាង"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE.String.Text
+msgid  "Title"
+msgstr "ចំណង​ជើង"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_TITLES.String.Text
+msgid  "Titles"
+msgstr "ចំណង​​ជើង​"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_MAIN.String.Text
+msgid  "Main Title"
+msgstr "ចំណង​ជើងមេ"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_SUB.String.Text
+msgid  "Subtitle"
+msgstr "ចំណង​ជើង​រង"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_X_AXIS.String.Text
+msgid  "X Axis Title"
+msgstr "ចំណង​ជើង​អ័ក្ស X"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_Y_AXIS.String.Text
+msgid  "Y Axis Title"
+msgstr "ចំណង​ជើង​អ័ក្ស Y"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_Z_AXIS.String.Text
+msgid  "Z Axis Title"
+msgstr "ចំណង​ជើង​អ័ក្ស Z"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_SECONDARY_X_AXIS.String.Text
+msgid  "Secondary X Axis Title"
+msgstr "ចំណង​ជើង​អ័ក្ស X រង"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_SECONDARY_Y_AXIS.String.Text
+msgid  "Secondary Y Axis Title"
+msgstr "ចំណង​ជើង​អ័ក្ស Y រង"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_LABEL.String.Text
+msgid  "Label"
+msgstr "ស្លាក"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_DATALABELS.String.Text
+msgid  "Data Labels"
+msgstr "ស្លាក​ទិន្នន័យ"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_DATAPOINT.String.Text
+msgid  "Data Point"
+msgstr "ចំណុច​ទិន្នន័យ"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_DATAPOINTS.String.Text
+msgid  "Data Points"
+msgstr "ចំណុច​ទិន្នន័យ"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_LEGEND_SYMBOL.String.Text
+msgid  "Legend Key"
+msgstr "កូនសោ​តាង"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_DATASERIES.String.Text
+msgid  "Data Series"
+msgstr "ស៊េរី​ទិន្នន័យ"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_DATASERIES_PLURAL.String.Text
+msgid  "Data Series"
+msgstr "ស៊េរី​ទិន្នន័យ"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_CURVE.String.Text
+msgid  "Trend Line"
+msgstr "បន្ទាត់​និន្នាការ"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_CURVES.String.Text
+msgid  "Trend Lines"
+msgstr "បន្ទាត់​និន្នាការ"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_CURVE_WITH_PARAMETERS.String.Text
+msgid  "Trend line %FORMULA with accuracy R² = %RSQUARED"
+msgstr "បន្ទាត់​និន្នាការ %FORMULA ជាមួយ​ភាព​ត្រឹមត្រូវ R² = %RSQUARED"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE.String.Text
+msgid  "Mean Value Line"
+msgstr "បន្ទាត់​តម្លៃ​មធ្យម"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_CURVE_EQUATION.String.Text
+msgid  "Equation"
+msgstr "សមីការ"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_ERROR_BARS.String.Text
+msgid  "Error Bars"
+msgstr "របារ​កំហុស"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_STOCK_LOSS.String.Text
+msgid  "Stock Loss"
+msgstr "គំនូស​តាង​សន្និធិ"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_STOCK_GAIN.String.Text
+msgid  "Stock Gain"
+msgstr "គំនូស​តាង​សន្និធិ"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_PAGE.String.Text
+msgid  "Chart Area"
+msgstr "ផ្ទៃ​គំនូស​តាង"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM.String.Text
+msgid  "Chart"
+msgstr "គំនូសតាង"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM_WALL.String.Text
+msgid  "Chart Wall"
+msgstr "ជញ្ជាំង​គំនូសតាង"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM_FLOOR.String.Text
+msgid  "Chart Floor"
+msgstr "ផ្ទៃ​​​បាត​​គំនូស​​តាង"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_SHAPE.String.Text
+msgid  "Drawing Object"
+msgstr "វត្ថុគំនូរ"
+
+#: source/controller/dialogs/Strings.src#STR_TIP_SELECT_RANGE.String.Text
+msgid  "Select data range"
+msgstr "ជ្រើស​ជួរ​ទិន្នន័យ"
+
+#: source/controller/dialogs/Strings.src#STR_TIP_CHOOSECOLOR.String.Text
+msgid  "Select a color using the color dialog"
+msgstr "ជ្រើស​ពណ៌​ដោយ​ប្រើ​ប្រអប់​ពណ៌"
+
+#: source/controller/dialogs/Strings.src#STR_TIP_LIGHTSOURCE_X.String.Text
+msgid  "Light Source %LIGHTNUMBER"
+msgstr "ប្រភព​ពន្លឺ %LIGHTNUMBER"
+
+#: source/controller/dialogs/Strings.src#STR_TIP_DATASERIES.String.Text
+msgid  "Data Series '%SERIESNAME'"
+msgstr "ស៊េរី​ទិន្នន័យ '%SERIESNAME'"
+
+#: source/controller/dialogs/Strings.src#STR_TIP_DATAPOINT_INDEX.String.Text
+msgid  "Data Point %POINTNUMBER"
+msgstr "ចំណុច​ទិន្នន័យ %POINTNUMBER"
+
+#: source/controller/dialogs/Strings.src#STR_TIP_DATAPOINT_VALUES.String.Text
+msgid  "Values: %POINTVALUES"
+msgstr "តម្លៃ ៖ %POINTVALUES"
+
+#: source/controller/dialogs/Strings.src#STR_TIP_DATAPOINT.String.Text
+msgid  "Data Point %POINTNUMBER, data series %SERIESNUMBER, values: %POINTVALUES"
+msgstr ""
+
+#: source/controller/dialogs/Strings.src#STR_STATUS_DATAPOINT_MARKED.String.Text
+msgid  "Data point %POINTNUMBER in data series %SERIESNUMBER selected, values: %POINTVALUES"
+msgstr ""
+
+#: source/controller/dialogs/Strings.src#STR_STATUS_OBJECT_MARKED.String.Text
+msgid  "%OBJECTNAME selected"
+msgstr "បាន​ជ្រើស %OBJECTNAME"
+
+#: source/controller/dialogs/Strings.src#STR_STATUS_PIE_SEGMENT_EXPLODED.String.Text
+msgid  "Pie exploded by %PERCENTVALUE percent"
+msgstr "ចំណិត​បានបំបែក​ដោយ​ភាគរយ​របស់ %PERCENTVALUE"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_FOR_SERIES.String.Text
+msgid  "%OBJECTNAME for Data Series '%SERIESNAME'"
+msgstr "%OBJECTNAME សម្រាប់​ស៊េរី​ទិន្នន័យ '%SERIESNAME'"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_FOR_ALL_SERIES.String.Text
+msgid  "%OBJECTNAME for all Data Series"
+msgstr "%OBJECTNAME សម្រាប់​ស៊េរី​ទិន្នន័យ​ទាំង​អស់"
+
+#: source/controller/dialogs/Strings.src#STR_ACTION_EDIT_CHARTTYPE.String.Text
+msgid  "Edit chart type"
+msgstr "កែសម្រួល​ប្រភេទ​គំនូស​តាង"
+
+#: source/controller/dialogs/Strings.src#STR_ACTION_EDIT_DATA_RANGES.String.Text
+msgid  "Edit data ranges"
+msgstr "កែសម្រួល​ជួរ​ទិន្នន័យ"
+
+#: source/controller/dialogs/Strings.src#STR_ACTION_EDIT_3D_VIEW.String.Text
+msgid  "Edit 3D view"
+msgstr "កែសម្រួល​ទិដ្ឋភាព​ត្រីមាត្រ"
+
+#: source/controller/dialogs/Strings.src#STR_ACTION_EDIT_CHART_DATA.String.Text
+msgid  "Edit chart data"
+msgstr "កែសម្រួល​ទិន្នន័យ​គំនូស​តាង"
+
+#: source/controller/dialogs/Strings.src#STR_ACTION_TOGGLE_LEGEND.String.Text
+msgid  "Legend on/off"
+msgstr "បិទ/បើក​តាង"
+
+#: source/controller/dialogs/Strings.src#STR_ACTION_TOGGLE_GRID_HORZ.String.Text
+msgid  "Horizontal grid on/off"
+msgstr "បិទ/បើក​ក្រឡាចត្រង្គ​ផ្ដេក"
+
+#: source/controller/dialogs/Strings.src#STR_ACTION_SCALE_TEXT.String.Text
+msgid  "Scale Text"
+msgstr "ធ្វើ​មាត្រដ្ឋាន​អត្ថបទ"
+
+#: source/controller/dialogs/Strings.src#STR_ACTION_REARRANGE_CHART.String.Text
+msgid  "Automatic Layout"
+msgstr "ប្លង់​ស្វ័យ​ប្រវត្តិ"
+
+#: source/controller/dialogs/Strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
+msgid  "This function cannot be completed with the selected objects."
+msgstr ""
+
+#: source/controller/dialogs/Strings.src#STR_ACTION_EDIT_TEXT.String.Text
+msgid  "Edit text"
+msgstr "កែសម្រួល​អត្ថបទ"
+
+#: source/controller/dialogs/Strings.src#STR_COLUMN_LABEL.String.Text
+msgid  "Column %COLUMNNUMBER"
+msgstr "ជួរឈរ %COLUMNNUMBER"
+
+#: source/controller/dialogs/Strings.src#STR_ROW_LABEL.String.Text
+msgid  "Row %ROWNUMBER"
+msgstr "ជួរដេក %ROWNUMBER"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_LABEL.String.Text
+msgid  "Name"
+msgstr "ឈ្មោះ"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_X.String.Text
+msgid  "X-Values"
+msgstr "តម្លៃ X"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_Y.String.Text
+msgid  "Y-Values"
+msgstr "តម្លៃ Y"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_SIZE.String.Text
+msgid  "Bubble Sizes"
+msgstr "ទំហំ​ពពុះ"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_X_ERROR.String.Text
+msgid  "X-Error-Bars"
+msgstr "របារ​កំហុស X"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_X_ERROR_POSITIVE.String.Text
+msgid  "Positive X-Error-Bars"
+msgstr "របារ​កំហុស X វិជ្ជមាន"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_X_ERROR_NEGATIVE.String.Text
+msgid  "Negative X-Error-Bars"
+msgstr "របារ​កំហុស X អវិជ្ជមាន"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_Y_ERROR.String.Text
+msgid  "Y-Error-Bars"
+msgstr "របារ​កំហុស Y"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_Y_ERROR_POSITIVE.String.Text
+msgid  "Positive Y-Error-Bars"
+msgstr "របារ​កំហុស Y វិជ្ជមាន"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_Y_ERROR_NEGATIVE.String.Text
+msgid  "Negative Y-Error-Bars"
+msgstr "របារ​កំហុស Y អវិជ្ជមាន"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_FIRST.String.Text
+msgid  "Open Values"
+msgstr "តម្លៃ​បើក"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_LAST.String.Text
+msgid  "Close Values"
+msgstr "តម្លៃ​បិទ"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_MIN.String.Text
+msgid  "Low Values"
+msgstr "តម្លៃ​ទាប"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_MAX.String.Text
+msgid  "High Values"
+msgstr "តម្លៃ​ខ្ពស់"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_CATEGORIES.String.Text
+msgid  "Categories"
+msgstr "ប្រភេទ"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_UNNAMED_SERIES.String.Text
+msgid  "Unnamed Series"
+msgstr "ស៊េរី​គ្មាន​ឈ្មោះ"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_UNNAMED_SERIES_WITH_INDEX.String.Text
+msgid  "Unnamed Series %NUMBER"
+msgstr "ស៊េរី​គ្មាន​ឈ្មោះ %NUMBER"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_SERIES.String.Text
+msgid  "Select Range for %VALUETYPE of %SERIESNAME"
+msgstr "ជ្រើស​ជួរ​សម្រាប់ %VALUETYPE នៃ %SERIESNAME"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_CATEGORIES.String.Text
+msgid  "Select Range for Categories"
+msgstr "ជ្រើស​ជួរ​សម្រាប់​ប្រភេទ"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_DATALABELS.String.Text
+msgid  "Select Range for data labels"
+msgstr "ជ្រើស​ជួរ​សម្រាប់​ស្លាក​ទិន្នន័យ"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_POSITIVE_ERRORBARS.String.Text
+msgid  "Select Range for Positive Error Bars"
+msgstr "ជ្រើស​ជួរ​សម្រាប់​របារ​កំហុស​វិជ្ជមាន"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_NEGATIVE_ERRORBARS.String.Text
+msgid  "Select Range for Negative Error Bars"
+msgstr "ជ្រើស​ជួរ​សម្រាប់​របារ​កំហុស​អវិជ្ជមាន"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_EDITOR_INCORRECT_INPUT.String.Text
+msgid  "Your last input is incorrect.\nIgnore this change and close the dialog?"
+msgstr ""
+
+#: source/controller/dialogs/Strings.src#STR_TEXT_DIRECTION_LTR.String.Text
+msgid  "Left-to-right"
+msgstr "ពី​ឆ្វេង​ទៅ​ស្ដាំ"
+
+#: source/controller/dialogs/Strings.src#STR_TEXT_DIRECTION_RTL.String.Text
+msgid  "Right-to-left"
+msgstr "ពី​ស្ដាំ​ទៅ​ឆ្វេង"
+
+#: source/controller/dialogs/Strings.src#STR_TEXT_DIRECTION_SUPER.String.Text
+msgid  "Use superordinate object settings"
+msgstr "ប្រើ​ការ​កំណត់​វត្ថុ​ដែល​មាន​លំដាប់​ខ្ពស់ជាង"
+
+#: source/controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.CB_CLOCKWISE.CheckBox.Text
+msgid  "~Clockwise direction"
+msgstr "ទិស​ស្រប​ទ្រនិច​នាឡិកា"
+
+#: source/controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FL_STARTING_ANGLE.FixedLine.Text
+msgid  "Starting angle"
+msgstr "មុំ​ចាប់ផ្ដើម"
+
+#: source/controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FT_ROTATION_DEGREES.FixedText.Text
+msgid  "~Degrees"
+msgstr "ដឺក្រេ "
+
+#: source/controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FL_PLOT_OPTIONS_POLAR.FixedLine.Text
+msgid  "Plot options"
+msgstr "ជម្រើស​គ្រោង"
+
+#: source/controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.CB_INCLUDE_HIDDEN_CELLS_POLAR.CheckBox.Text
+msgid  "Include ~values from hidden cells"
+msgstr "រួមមាន​តម្លៃ​ពី​ក្រឡា​ដែល​លាក់"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_AXIS_LINE.FixedLine.Text
+msgid  "Axis line"
+msgstr "បន្ទាត់​អ័ក្ស"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_CROSSES_OTHER_AXIS_AT.FixedText.Text
+msgid  "~Cross other axis at"
+msgstr "កាត់​អ័ក្ស​ផ្សេងទៀត​ត្រង់"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.item1.StringList.item
+msgid  "Start"
+msgstr "ចាប់ផ្ដើម"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.item2.StringList.item
+msgid  "End"
+msgstr "បញ្ចប់"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.item3.StringList.item
+msgid  "Value"
+msgstr "តម្លៃ"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.item4.StringList.item
+msgid  "Category"
+msgstr "ប្រភេទ"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_AXIS_BETWEEN_CATEGORIES.CheckBox.Text
+msgid  "Axis ~between categories"
+msgstr "អ័ក្ស​រវាង​ប្រភេទ"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_LABELS.FixedLine.Text
+msgid  "Labels"
+msgstr "ស្លាក"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_PLACE_LABELS.FixedText.Text
+msgid  "~Place labels"
+msgstr "ដាក់​ស្លាក"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.item1.StringList.item
+msgid  "Near axis"
+msgstr "ជិត​អ័ក្ស"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.item2.StringList.item
+msgid  "Near axis (other side)"
+msgstr "ជិត​អ័ក្ស (ជ្រុង​ផ្សេងទៀត)"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.item3.StringList.item
+msgid  "Outside start"
+msgstr "ចាប់ផ្ដើម​ខាងក្រៅ"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.item4.StringList.item
+msgid  "Outside end"
+msgstr "បញ្ចប់​ខាងក្រៅ"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_AXIS_LABEL_DISTANCE.FixedText.Text
+msgid  "~Distance"
+msgstr "ចម្ងាយ"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_TICKS.FixedLine.Text
+msgid  "Interval marks"
+msgstr "សញ្ញា​សម្គាល់​ចន្លោះ"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_MAJOR.FixedText.Text
+msgid  "Major:"
+msgstr "សំខាន់ ៖"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_TICKS_INNER.CheckBox.Text
+msgid  "~Inner"
+msgstr "ខាងក្នុង"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_TICKS_OUTER.CheckBox.Text
+msgid  "~Outer"
+msgstr "ខាង​ក្រៅ "
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_MINOR.FixedText.Text
+msgid  "Minor:"
+msgstr "បន្ទាប់បន្សំ ៖"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_INNER.CheckBox.Text
+msgid  "I~nner"
+msgstr "ខាង​ក្នុង "
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_OUTER.CheckBox.Text
+msgid  "O~uter"
+msgstr "ខាងក្រៅ"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_PLACE_TICKS.FixedText.Text
+msgid  "Place ~marks"
+msgstr "ដាក់​សញ្ញា​សម្គាល់"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.item1.StringList.item
+msgid  "At labels"
+msgstr "នៅ​ស្លាក"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.item2.StringList.item
+msgid  "At axis"
+msgstr "នៅ​អ័ក្ស"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.item3.StringList.item
+msgid  "At axis and labels"
+msgstr "នៅ​អ័ក្ស និង​ស្លាក"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_GRIDS.FixedLine.Text
+msgid  "Grids"
+msgstr "ក្រឡាចត្រង្គ"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MAJOR_GRID.CheckBox.Text
+msgid  "Show major ~grid"
+msgstr "បង្ហាញ​ក្រឡាចត្រង្គ​សំខាន់"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.PB_MAJOR_GRID.PushButton.Text
+msgid  "Mo~re..."
+msgstr "បន្ថែម​ទៀត..."
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_GRID.CheckBox.Text
+msgid  "~Show minor grid"
+msgstr "បង្ហាញ​ក្រឡាចត្រង្គ​បន្ទាប់បន្សំ"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.PB_MINOR_GRID.PushButton.Text
+msgid  "Mor~e..."
+msgstr "បន្ថែម​ទៀត"
+
+#: source/controller/dialogs/res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES( xpos, ypos, xOffset, yOffset ).CB_X_SECONDARY.CheckBox.Text
+msgid  "X ~axis"
+msgstr "អ័ក្ស X "
+
+#: source/controller/dialogs/res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES( xpos, ypos, xOffset, yOffset ).CB_Y_SECONDARY.CheckBox.Text
+msgid  "Y ax~is"
+msgstr "អ័ក្ស Y "
+
+#: source/controller/dialogs/res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES( xpos, ypos, xOffset, yOffset ).CB_Z_SECONDARY.CheckBox.Text
+msgid  "Z axi~s"
+msgstr "អ័ក្ស Z "
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item1.StringList.item
+msgid  "Best fit"
+msgstr "សម​បំផុត"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item2.StringList.item
+msgid  "Center"
+msgstr "កណ្តាល"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item3.StringList.item
+msgid  "Above"
+msgstr "ខាង​លើ"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item4.StringList.item
+msgid  "Top left"
+msgstr "កំពូល​ ឆ្វេង"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item5.StringList.item
+msgid  "Left"
+msgstr "ឆ្វេង"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item6.StringList.item
+msgid  "Bottom left"
+msgstr "បាត​​ឆ្វេង"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item7.StringList.item
+msgid  "Below"
+msgstr "ខាងក្រោម"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item8.StringList.item
+msgid  "Bottom right"
+msgstr "បាត​​ស្តាំ"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item9.StringList.item
+msgid  "Right"
+msgstr "ស្ដាំ"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item10.StringList.item
+msgid  "Top right"
+msgstr "កំពូល ស្ដាំ"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item11.StringList.item
+msgid  "Inside"
+msgstr "ខាងក្នុង"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item12.StringList.item
+msgid  "Outside"
+msgstr "ខាងក្រៅ"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item13.StringList.item
+msgid  "Near origin"
+msgstr "ក្បែរ​ដើម"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL( xpos, ypos ).CB_VALUE_AS_NUMBER.CheckBox.Text
+msgid  "Show value as ~number"
+msgstr "បង្ហាញ​តម្លៃ​ជា​លេខ"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL( xpos, ypos ).PB_NUMBERFORMAT.PushButton.Text
+msgid  "Number ~format..."
+msgstr "ទ្រង់ទ្រាយ​លេខ..."
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL( xpos, ypos ).CB_VALUE_AS_PERCENTAGE.CheckBox.Text
+msgid  "Show value as ~percentage"
+msgstr "បង្ហាញ​តម្លៃ​ជា​ភាគរយ"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL( xpos, ypos ).PB_PERCENT_NUMBERFORMAT.PushButton.Text
+msgid  "Percentage f~ormat..."
+msgstr "ទ្រង់ទ្រាយ​ភាគរយ..."
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL( xpos, ypos ).CB_CATEGORY.CheckBox.Text
+msgid  "Show ~category"
+msgstr "បង្ហាញ​ប្រភេទ"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL( xpos, ypos ).CB_SYMBOL.CheckBox.Text
+msgid  "Show ~legend key"
+msgstr "បង្ហាញ​កូនសោ​តាង"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL( xpos, ypos ).FT_LABEL_PLACEMENT.FixedText.Text
+msgid  "Place~ment"
+msgstr "ការ​ដាក់"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL( xpos, ypos ).FL_LABEL_ROTATE.FixedLine.Text
+msgid  "Rotate Text"
+msgstr "បង្វិល​អត្ថបទ"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL( xpos, ypos ).FT_LABEL_DEGREES.FixedText.Text
+msgid  "~Degrees"
+msgstr "ដឺក្រេ "
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL( xpos, ypos ).FT_LABEL_TEXTDIR.FixedText.Text
+msgid  "Te~xt direction"
+msgstr "ទិស​អត្ថបទ"
+
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_STD_ERROR.StringList.item
+msgid  "Standard Error"
+msgstr "កំហុស​ស្តង់ដារ"
+
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_STD_DEV.StringList.item
+msgid  "Standard Deviation"
+msgstr "គម្លាត​គំរូ"
+
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_VARIANCE.StringList.item
+msgid  "Variance"
+msgstr "វ៉ារ្យង់"
+
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_ERROR_MARGIN.StringList.item
+msgid  "Error Margin"
+msgstr "រឹម​កំហុស"
+
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).FL_ERROR.FixedLine.Text
+msgid  "Error Category"
+msgstr "ប្រភេទ​កំហុស"
+
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).RB_NONE.RadioButton.Text
+msgid  "~None"
+msgstr " គ្មាន"
+
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).RB_CONST.RadioButton.Text
+msgid  "~Constant Value"
+msgstr " តម្លៃ​ថេរ"
+
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).RB_PERCENT.RadioButton.Text
+msgid  "~Percentage"
+msgstr " ភាគរយ"
+
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).RB_RANGE.RadioButton.Text
+msgid  "Cell ~Range"
+msgstr " ជួរក្រឡា"
+
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).FL_PARAMETERS.FixedLine.Text
+msgid  "Parameters"
+msgstr "ប៉ារ៉ាម៉ែត្រ"
+
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).FT_POSITIVE.FixedText.Text
+msgid  "P~ositive (+)"
+msgstr " វិជ្ជមាន (+)"
+
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).FT_NEGATIVE.FixedText.Text
+msgid  "~Negative (-)"
+msgstr " អវិជ្ជមាន (-)"
+
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).CB_SYN_POS_NEG.CheckBox.Text
+msgid  "Same value for both"
+msgstr "តម្លៃ​ដូចគ្នា​សម្រាប់​ទាំង​ពីរ"
+
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).FL_INDICATE.FixedLine.Text
+msgid  "Error Indicator"
+msgstr "ទ្រនិច​បង្ហាញ​កំហុស"
+
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).RB_BOTH.RadioButton.Text
+msgid  "Positive ~and Negative"
+msgstr " វិជ្ជមាន និង​អវិជ្ជមាន"
+
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).RB_POSITIVE.RadioButton.Text
+msgid  "Pos~itive"
+msgstr " វិជ្ជមាន"
+
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).RB_NEGATIVE.RadioButton.Text
+msgid  "Ne~gative"
+msgstr " អវិជ្ជមាន"
+
+#: source/controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDDISPLAY( xpos , ypos ).CBX_SHOWLEGEND.CheckBox.Text
+msgid  "~Display legend"
+msgstr "បង្ហាញ​តាង "
+
+#: source/controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION( xpos , ypos ).RBT_LEFT.RadioButton.Text
+msgid  "~Left"
+msgstr "ឆ្វេង "
+
+#: source/controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION( xpos , ypos ).RBT_RIGHT.RadioButton.Text
+msgid  "~Right"
+msgstr "ស្ដាំ "
+
+#: source/controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION( xpos , ypos ).RBT_TOP.RadioButton.Text
+msgid  "~Top"
+msgstr "កំពូល "
+
+#: source/controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION( xpos , ypos ).RBT_BOTTOM.RadioButton.Text
+msgid  "~Bottom"
+msgstr "បាត "
+
+#: source/controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(availablewidth, yoffset).FL_TYPE.FixedLine.Text
+msgid  "Regression Type"
+msgstr "ប្រភេទ​ថយ​"
+
+#: source/controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(availablewidth, yoffset).RB_NONE.RadioButton.Text
+msgid  "~None"
+msgstr " គ្មាន"
+
+#: source/controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(availablewidth, yoffset).RB_LINEAR.RadioButton.Text
+msgid  "~Linear"
+msgstr " លីនេអ៊ែរ"
+
+#: source/controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(availablewidth, yoffset).RB_LOGARITHMIC.RadioButton.Text
+msgid  "L~ogarithmic"
+msgstr " ឡូការីត"
+
+#: source/controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(availablewidth, yoffset).RB_EXPONENTIAL.RadioButton.Text
+msgid  "E~xponential"
+msgstr " អិច​ស្ប៉ូណង់​ស្យែល"
+
+#: source/controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(availablewidth, yoffset).RB_POWER.RadioButton.Text
+msgid  "~Power"
+msgstr " មេគុណ"
+
+#: source/controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(availablewidth, yoffset).FL_EQUATION.FixedLine.Text
+msgid  "Equation"
+msgstr "សមីការ"
+
+#: source/controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(availablewidth, yoffset).CB_SHOW_EQUATION.CheckBox.Text
+msgid  "Show ~equation"
+msgstr " បង្ហាញ​សមីការ"
+
+#: source/controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(availablewidth, yoffset).CB_SHOW_CORRELATION_COEFF.CheckBox.Text
+msgid  "Show ~coefficient of determination (R²)"
+msgstr "បង្ហាញ​មេគុណ (R²)"
+
+#: source/controller/dialogs/res_Titlesx_tmpl.hrc#TITLES( xpos, ypos, availableWidth, indentLabel, fixedLinesHeight ).FT_MAINTITLE.FixedText.Text
+msgid  "~Title"
+msgstr "ចំណង​ជើង "
+
+#: source/controller/dialogs/res_Titlesx_tmpl.hrc#TITLES( xpos, ypos, availableWidth, indentLabel, fixedLinesHeight ).FT_SUBTITLE.FixedText.Text
+msgid  "~Subtitle"
+msgstr "ចំណង​ជើងរង "
+
+#: source/controller/dialogs/res_Titlesx_tmpl.hrc#TITLES( xpos, ypos, availableWidth, indentLabel, fixedLinesHeight ).FL_AXES.FixedLine.Text
+msgid  "Axes"
+msgstr "អ័ក្ស"
+
+#: source/controller/dialogs/res_Titlesx_tmpl.hrc#TITLES( xpos, ypos, availableWidth, indentLabel, fixedLinesHeight ).FT_TITLE_X_AXIS.FixedText.Text
+msgid  "~X axis"
+msgstr "អ័ក្ស X "
+
+#: source/controller/dialogs/res_Titlesx_tmpl.hrc#TITLES( xpos, ypos, availableWidth, indentLabel, fixedLinesHeight ).FT_TITLE_Y_AXIS.FixedText.Text
+msgid  "~Y axis"
+msgstr "អ័ក្ស​ Y "
+
+#: source/controller/dialogs/res_Titlesx_tmpl.hrc#TITLES( xpos, ypos, availableWidth, indentLabel, fixedLinesHeight ).FT_TITLE_Z_AXIS.FixedText.Text
+msgid  "~Z axis"
+msgstr "អ័ក្ស Z "
+
+#: source/controller/dialogs/res_Titlesx_tmpl.hrc#TITLES( xpos, ypos, availableWidth, indentLabel, fixedLinesHeight ).FL_SECONDARY_AXES.FixedLine.Text
+msgid  "Secondary Axes"
+msgstr "អ័ក្ស​រង"
+
+#: source/controller/dialogs/res_Titlesx_tmpl.hrc#TITLES( xpos, ypos, availableWidth, indentLabel, fixedLinesHeight ).FT_TITLE_SECONDARY_X_AXIS.FixedText.Text
+msgid  "X ~axis"
+msgstr "អ័ក្ស X "
+
+#: source/controller/dialogs/res_Titlesx_tmpl.hrc#TITLES( xpos, ypos, availableWidth, indentLabel, fixedLinesHeight ).FT_TITLE_SECONDARY_Y_AXIS.FixedText.Text
+msgid  "Y ax~is"
+msgstr "អ័ក្ស Y "

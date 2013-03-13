@@ -1,976 +1,820 @@
-
-#: dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.string.text
-msgid "Properties: "
-msgstr "속성: "
-
-#: dlgresid.src#RID_STR_BRWTITLE_NO_PROPERTIES.string.text
-msgid "No Control marked"
-msgstr "콘트롤이 표시되지 않음"
-
-#: dlgresid.src#RID_STR_BRWTITLE_MULTISELECT.string.text
-msgid "Multiselection"
-msgstr "다중 선택"
-
-#: managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_LANGUAGE.fixedtext.text
-msgid "Present Languages"
-msgstr "언어 표시"
-
-#: managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_ADD_LANG.pushbutton.text
-msgid "Add..."
-msgstr "추가..."
-
-#: managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_DEL_LANG.pushbutton.text
-msgid "Delete"
-msgstr "삭제"
-
-#: managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_MAKE_DEFAULT.pushbutton.text
-msgid "Default"
-msgstr "기본값"
-
-#: managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.fixedtext.text
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
 msgid ""
-"The default language is used if no localization for a user interface locale "
-"is present. Furthermore all strings from the default language are copied to "
-"resources of newly added languages."
 msgstr ""
-"사용자 인터페이스 로케일에 대한 지역화 버전이 없으면 기본 언어가 사용됩니다. 또한 기본 언어의 모든 문자열이 새로 추가된 언어의 자원에 "
-"복사됩니다."
-
-#: managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.okbutton.text
-msgid "~Close"
-msgstr "닫기(~C)"
-
-#: managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DEF_LANG.string.text
-msgid "[Default Language]"
-msgstr "[기본 언어]"
-
-#: managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DELETE.string.text
-msgid "~Delete"
-msgstr "삭제(~D)"
-
-#: managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_CREATE_LANG.string.text
-msgid "<Press 'Add' to create language resources>"
-msgstr "<언어 자원을 만들려면 '추가'를 누르십시오.>"
-
-#: managelang.src#RID_DLG_MANAGE_LANGUAGE.modaldialog.text
-msgid "Manage User Interface Languages [$1]"
-msgstr "사용자 인터페이스 언어 [$1] 관리"
-
-#: managelang.src#RID_QRYBOX_LANGUAGE.querybox.text
-msgid ""
-"You are about to delete the resources for the selected language(s). All user "
-"interface strings for this language(s) will be deleted.\n"
-"\n"
-"Do you want to delete the resources of the selected language(s)?"
-msgstr ""
-"선택한 언어의 자원을 삭제하려고 합니다. 이 언어의 모든 사용자 인터페이스 문자열이 삭제됩니다.\n"
-"\n"
-"선택한 언어의 자원을 삭제하시겠습니까?"
-
-#: managelang.src#RID_QRYBOX_LANGUAGE.querybox.title
-msgid "Delete Language Resources"
-msgstr "언어 자원 삭제"
-
-#: managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_LANGUAGE.fixedtext.text
-msgid "Default language"
-msgstr "기본 언어"
-
-#: managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.fixedtext.text
-msgid ""
-"Select a language to define the default user interface language. All "
-"currently present strings will be assigned to the resources created for the "
-"selected language."
-msgstr "기본 사용자 인터페이스 언어를 정의하려면 언어를 선택하십시오. 현재 모든 문자열이 선택된 언어에 대해 생성된 자원에 할당됩니다."
-
-#: managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_TITLE.string.text
-msgid "Add User Interface Languages"
-msgstr "사용자 인터페이스 언어 추가"
-
-#: managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_LABEL.string.text
-msgid "Available Languages"
-msgstr "사용 가능한 언어"
-
-#: managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_INFO.string.text
-msgid ""
-"Select languages to be added. Resources for these languages will be created "
-"in the library. Strings of the current default user interface language will "
-"be copied to these new resources by default."
-msgstr ""
-"추가할 언어를 선택하십시오. 라이브러리에 이러한 언어의 자원이 생성됩니다. 기본적으로 현재 기본 사용자 인터페이스 언어의 문자열이 이 새 "
-"자원에 복사됩니다."
-
-#: managelang.src#RID_DLG_SETDEF_LANGUAGE.modaldialog.text
-msgid "Set Default User Interface Language"
-msgstr "기본 사용자 인터페이스 언어 설정"
-"X-Accelerator-Marker: ~\n"
-
-#: basicprint.src#RID_PRINTDLG_STRLIST.1.itemlist.text
-msgid "Print range"
-msgstr "인쇄 범위"
-
-#: basicprint.src#RID_PRINTDLG_STRLIST.2.itemlist.text
-msgid "All ~Pages"
-msgstr "모든 페이지(~P)"
-
-#: basicprint.src#RID_PRINTDLG_STRLIST.3.itemlist.text
-msgid "Pa~ges"
-msgstr "페이지(~g)"
-
-#: basidesh.src#RID_STR_FILTER_ALLFILES.string.text
-msgid "<All>"
-msgstr "<모두>"
-
-#: basidesh.src#RID_STR_NOMODULE.string.text
-msgid "< No Module >"
-msgstr "< 모듈 없음 >"
-
-#: basidesh.src#RID_STR_WRONGPASSWORD.string.text
-msgid "Incorrect Password"
-msgstr "유효하지 않은 암호"
-
-#: basidesh.src#RID_STR_OPEN.string.text
-msgid "Load"
-msgstr "로드"
-
-#: basidesh.src#RID_STR_SAVE.string.text
-msgid "Save"
-msgstr "저장"
-
-#: basidesh.src#RID_STR_SOURCETOBIG.string.text
-msgid ""
-"The source text is too large and can be neither compiled nor saved.\n"
-"Delete some of the comments or transfer some methods into another module."
-msgstr ""
-"원본 텍스트가 너무 커서 저장 또는 컴파일이 불가능합니다.\n"
-"일부 주석을 삭제하거나, 몇몇 메소드를 다른 모듈로 옮기십시오."
-
-#: basidesh.src#RID_STR_ERROROPENSTORAGE.string.text
-msgid "Error opening file"
-msgstr "파일 열기시에 오류"
-
-#: basidesh.src#RID_STR_ERROROPENLIB.string.text
-msgid "Error loading library"
-msgstr "라이브러리 로드 중 오류"
-
-#: basidesh.src#RID_STR_NOLIBINSTORAGE.string.text
-msgid "The file does not contain any BASIC libraries"
-msgstr "파일에 BASIC 라이브러리가 포함되어 있지 않습니다."
-
-#: basidesh.src#RID_STR_BADSBXNAME.string.text
-msgid "Invalid Name"
-msgstr "유효하지 않은 이름"
-
-#: basidesh.src#RID_STR_LIBNAMETOLONG.string.text
-msgid "A library name can have up to 30 characters."
-msgstr "라이브러리 이름의 길이는 30자를 초과해서는 안됩니다."
-
-#: basidesh.src#RID_STR_ERRORCHOOSEMACRO.string.text
-msgid "Macros from other documents are not accessible."
-msgstr "다른 문서의 매크로를 액세스할 수 없습니다."
-
-#: basidesh.src#RID_STR_LIBISREADONLY.string.text
-msgid "This library is read-only."
-msgstr "이 라이브러리는 읽기 전용입니다."
-
-#: basidesh.src#RID_STR_REPLACELIB.string.text
-msgid "'XX' cannot be replaced."
-msgstr "'XX'을(를) 교체할 수 없습니다."
-
-#: basidesh.src#RID_STR_IMPORTNOTPOSSIBLE.string.text
-msgid "'XX' cannot be added."
-msgstr "'XX'을(를) 추가할 수 없습니다."
-
-#: basidesh.src#RID_STR_NOIMPORT.string.text
-msgid "'XX' was not added."
-msgstr "'XX'을(를) 추가하지 않았습니다."
-
-#: basidesh.src#RID_STR_ENTERPASSWORD.string.text
-msgid "Enter password for 'XX'"
-msgstr "'XX'의 암호를 입력하십시오."
-
-#: basidesh.src#RID_STR_SBXNAMEALLREADYUSED.string.text
-msgid "Name already exists"
-msgstr "이름이 이미 있음"
-
-#: basidesh.src#RID_STR_SIGNED.string.text
-msgid "(Signed)"
-msgstr "(서명됨)"
-
-#: basidesh.src#RID_STR_SBXNAMEALLREADYUSED2.string.text
-msgid "Object with same name already exists"
-msgstr "같은 이름을 가진 개체가 이미 있음"
-
-#: basidesh.src#RID_STR_FILEEXISTS.string.text
-msgid "The 'XX' file already exists"
-msgstr "파일'XX' 은 (는) 이미 존재합니다."
-
-#: basidesh.src#RID_STR_CANNOTRUNMACRO.string.text
-msgid ""
-"For security reasons, you cannot run this macro.\n"
-"\n"
-"For more information, check the security settings."
-msgstr ""
-"보안상의 이유 때문에 이 매크로를 실행할 수 없습니다.\n"
-"\n"
-"자세한 내용을 보려면 보안 설정을 확인하십시오."
-
-#: basidesh.src#RID_STR_COMPILEERROR.string.text
-msgid "Compile Error: "
-msgstr "컴파일 오류: "
-
-#: basidesh.src#RID_STR_RUNTIMEERROR.string.text
-msgid "Runtime Error: #"
-msgstr "런타임 오류: #"
-
-#: basidesh.src#RID_STR_SEARCHNOTFOUND.string.text
-msgid "Search key not found"
-msgstr "검색 키를 찾지 못했습니다."
-
-#: basidesh.src#RID_STR_SEARCHFROMSTART.string.text
-msgid "Search to last module complete. Continue at first module?"
-msgstr "마지막 모듈까지 찾았습니다. 처음 모듈에서 찾기를 계속하겠습니까?"
-
-#: basidesh.src#RID_STR_SEARCHREPLACES.string.text
-msgid "Search key replaced XX times"
-msgstr "검색 키를 XX번 대체했습니다."
-
-#: basidesh.src#RID_STR_COULDNTREAD.string.text
-msgid "The file could not be read"
-msgstr "파일을 읽지 못했습니다."
-
-#: basidesh.src#RID_STR_COULDNTWRITE.string.text
-msgid "The file could not be saved"
-msgstr "파일을 저장하지 못했습니다."
-
-#: basidesh.src#RID_STR_CANNOTCHANGENAMESTDLIB.string.text
-msgid "The name of the default library cannot be changed."
-msgstr "기본 라이브러리의 이름은 변경할 수 없습니다."
-
-#: basidesh.src#RID_STR_CANNOTCHANGENAMEREFLIB.string.text
-msgid "The name of a referenced library cannot be changed."
-msgstr "참조된 라이브러리의 이름은 변경할 수 없습니다."
-
-#: basidesh.src#RID_STR_CANNOTUNLOADSTDLIB.string.text
-msgid "The default library cannot be deactivated"
-msgstr "기본 라이브러리는 비활성화할 수 없습니다."
-
-#: basidesh.src#RID_STR_GENERATESOURCE.string.text
-msgid "Generating source"
-msgstr "원본 생성"
-
-#: basidesh.src#RID_STR_FILENAME.string.text
-msgid "File name:"
-msgstr "파일 이름: "
-
-#: basidesh.src#RID_STR_APPENDLIBS.string.text
-msgid "Import Libraries"
-msgstr "라이브러리 가져오기"
-
-#: basidesh.src#RID_STR_QUERYDELMACRO.string.text
-msgid "Do you want to delete the macro XX?"
-msgstr "매크로 XX을(를）삭제하시겠습니까?"
-
-#: basidesh.src#RID_STR_QUERYDELDIALOG.string.text
-msgid "Do you want to delete the XX dialog?"
-msgstr "대화 상자 XX을(를）삭제하시겠습니까?"
-
-#: basidesh.src#RID_STR_QUERYDELLIB.string.text
-msgid "Do you want to delete the XX library?"
-msgstr "라이브러리 XX을(를) 삭제하시겠습니까 ?"
-
-#: basidesh.src#RID_STR_QUERYDELLIBREF.string.text
-msgid "Do you want to delete the reference to the XX library?"
-msgstr "라이브러리 XX에 있는 참조를 삭제하시겠습니까?"
-
-#: basidesh.src#RID_STR_QUERYDELMODULE.string.text
-msgid "Do you want to delete the XX module?"
-msgstr "모듈 XX을(를) 삭제하시겠습니까 ?"
-
-#: basidesh.src#RID_STR_OBJNOTFOUND.string.text
-msgid "Object or method not found"
-msgstr "개체 또는 메소드를 찾지 못했습니다."
-
-#: basidesh.src#RID_STR_BASIC.string.text
-msgid "BASIC"
-msgstr "BASIC"
-
-#: basidesh.src#RID_STR_LINE.string.text
-msgid "Ln"
-msgstr "행"
-
-#: basidesh.src#RID_STR_COLUMN.string.text
-msgid "Col"
-msgstr "단"
-
-#: basidesh.src#RID_STR_DOC.string.text
-msgid "Document"
-msgstr "문서"
-
-#: basidesh.src#RID_BASICIDE_OBJECTBAR.string.text
-msgid "Macro Bar"
-msgstr "매크로 모음"
-
-#: basidesh.src#RID_STR_CANNOTCLOSE.string.text
-msgid "The window cannot be closed while BASIC is running."
-msgstr ""
-"BASIC 프로그램이 진행되는 동안은 \n"
-"창을 닫을 수 없습니다."
-
-#: basidesh.src#RID_STR_REPLACESTDLIB.string.text
-msgid "The default library cannot be replaced."
-msgstr "기본 라이브러리는 대체할 수 없습니다."
-
-#: basidesh.src#RID_STR_REFNOTPOSSIBLE.string.text
-msgid "Reference to 'XX' not possible."
-msgstr "'XX'에 대한 참조 불가능"
-
-#: basidesh.src#RID_STR_WATCHNAME.string.text
-msgid "Watch"
-msgstr "조사식"
-
-#: basidesh.src#RID_STR_WATCHVARIABLE.string.text
-msgid "Variable"
-msgstr "가변"
-
-#: basidesh.src#RID_STR_WATCHVALUE.string.text
-msgid "Value"
-msgstr "값"
-
-#: basidesh.src#RID_STR_WATCHTYPE.string.text
-msgid "Type"
-msgstr "유형"
-
-#: basidesh.src#RID_STR_STACKNAME.string.text
-msgid "Call Stack"
-msgstr "스택 호출"
-
-#: basidesh.src#RID_STR_INITIDE.string.text
-msgid "BASIC Initialization"
-msgstr "BASIC 초기화"
-
-#: basidesh.src#RID_STR_STDMODULENAME.string.text
-msgid "Module"
-msgstr "모듈"
-
-#: basidesh.src#RID_STR_STDDIALOGNAME.string.text
-msgctxt "basidesh.src#RID_STR_STDDIALOGNAME.string.text"
-msgid "Dialog"
-msgstr "대화 상자"
-
-#: basidesh.src#RID_STR_STDLIBNAME.string.text
-msgid "Library"
-msgstr "라이브러리"
-
-#: basidesh.src#RID_STR_NEWLIB.string.text
-msgid "New Library"
-msgstr "새 라이브러리"
-
-#: basidesh.src#RID_STR_NEWMOD.string.text
-msgid "New Module"
-msgstr "새 모듈"
-
-#: basidesh.src#RID_STR_NEWDLG.string.text
-msgid "New Dialog"
-msgstr "새 대화 상자"
-
-#: basidesh.src#RID_STR_ALL.string.text
-msgid "All"
-msgstr "모두"
-
-#: basidesh.src#RID_STR_PAGE.string.text
-msgid "Page"
-msgstr "페이지"
-
-#: basidesh.src#RID_STR_MACRONAMEREQ.string.text
-msgid "A name must be entered."
-msgstr "이름을 입력해야 합니다."
-
-#: basidesh.src#RID_STR_WILLSTOPPRG.string.text
-msgid ""
-"You will have to restart the program after this edit.\n"
-"Continue?"
-msgstr ""
-"편집한 후에는 프로그램을 다시 시작해야 합니다.\n"
-"계속하겠습니까?"
-
-#: basidesh.src#RID_STR_SEARCHALLMODULES.string.text
-msgid "Do you want to replace the text in all active modules?"
-msgstr "활성화된 모든 모듈에서 텍스트를 대체하겠습니까?"
-
-#: basidesh.src#RID_IMGBTN_REMOVEWATCH.imagebutton.text
-msgid "-"
-msgstr "-"
-
-#: basidesh.src#RID_IMGBTN_REMOVEWATCH.imagebutton.quickhelptext
-msgid "Remove Watch"
-msgstr "조사식 제거"
-
-#: basidesh.src#RID_STR_REMOVEWATCH.string.text
-msgid "Watch:"
-msgstr "조사식: "
-
-#: basidesh.src#RID_STR_STACK.string.text
-msgid "Calls: "
-msgstr "호출: "
-
-#: basidesh.src#RID_STR_USERMACROS.string.text
-msgid "My Macros"
-msgstr "내 매크로"
-
-#: basidesh.src#RID_STR_USERDIALOGS.string.text
-msgid "My Dialogs"
-msgstr "내 대화 상자"
-
-#: basidesh.src#RID_STR_USERMACROSDIALOGS.string.text
-msgid "My Macros & Dialogs"
-msgstr "내 매크로 및 대화 상자"
-
-#: basidesh.src#RID_STR_SHAREMACROS.string.text
-msgid "%PRODUCTNAME Macros"
-msgstr "%PRODUCTNAME 매크로"
-
-#: basidesh.src#RID_STR_SHAREDIALOGS.string.text
-msgid "%PRODUCTNAME Dialogs"
-msgstr "%PRODUCTNAME 대화 상자"
-
-#: basidesh.src#RID_STR_SHAREMACROSDIALOGS.string.text
-msgid "%PRODUCTNAME Macros & Dialogs"
-msgstr "%PRODUCTNAME 매크로 및 대화 상자"
-
-#: basidesh.src#RID_POPUP_BRKPROPS.RID_ACTIV.menuitem.text
-msgctxt "basidesh.src#RID_POPUP_BRKPROPS.RID_ACTIV.menuitem.text"
-msgid "Active"
-msgstr "활성"
-
-#: basidesh.src#RID_POPUP_BRKPROPS.RID_BRKPROPS.menuitem.text
-msgctxt "basidesh.src#RID_POPUP_BRKPROPS.RID_BRKPROPS.menuitem.text"
-msgid "Properties..."
-msgstr "속성..."
-
-#: basidesh.src#RID_POPUP_BRKPROPS.menu.text
-msgid "Properties"
-msgstr "속성"
-
-#: basidesh.src#RID_POPUP_BRKDLG.RID_BRKDLG.menuitem.text
-msgid "Manage Breakpoints..."
-msgstr "중단점 관리..."
-
-#: basidesh.src#RID_POPUP_BRKDLG.menu.text
-msgctxt "basidesh.src#RID_POPUP_BRKDLG.menu.text"
-msgid "Manage Breakpoints"
-msgstr "중단점 관리"
-
-#: basidesh.src#RID_POPUP_TABBAR.RID_INSERT.SID_BASICIDE_NEWMODULE.menuitem.text
-msgid "BASIC Module"
-msgstr "BASIC 모듈"
-
-#: basidesh.src#RID_POPUP_TABBAR.RID_INSERT.SID_BASICIDE_NEWDIALOG.menuitem.text
-msgid "BASIC Dialog"
-msgstr "BASIC 대화 상자"
-
-#: basidesh.src#RID_POPUP_TABBAR.RID_INSERT.menuitem.text
-msgid "Insert"
-msgstr "삽입"
-
-#: basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_DELETECURRENT.menuitem.text
-msgctxt "basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_DELETECURRENT.menuitem.text"
-msgid "Delete"
-msgstr "삭제"
-
-#: basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_RENAMECURRENT.menuitem.text
-msgctxt "basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_RENAMECURRENT.menuitem.text"
-msgid "Rename"
-msgstr "이름 바꾸기"
-
-#: basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_HIDECURPAGE.menuitem.text
-msgid "Hide"
-msgstr "숨기기"
-
-#: basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_MODULEDLG.menuitem.text
-msgid "Modules..."
-msgstr "모듈..."
-
-#: basidesh.src#RID_POPUP_DLGED.SID_SHOW_PROPERTYBROWSER.menuitem.text
-msgctxt "basidesh.src#RID_POPUP_DLGED.SID_SHOW_PROPERTYBROWSER.menuitem.text"
-msgid "Properties..."
-msgstr "속성..."
-
-#: basidesh.src#RID_STR_QUERYREPLACEMACRO.string.text
-msgid "Do you want to overwrite the XX macro?"
-msgstr "macro XX 을(를) 덮어쓰시겠습니까?"
-
-#: basidesh.src#RID_STR_TRANSLATION_NOTLOCALIZED.string.text
-msgid "<Not localized>"
-msgstr "<지역화되지 않음>"
-
-#: basidesh.src#RID_STR_TRANSLATION_DEFAULT.string.text
-msgid "[Default Language]"
-msgstr "[기본 언어]"
-
-#: basidesh.src#RID_STR_DOCUMENT_OBJECTS.string.text
-msgid "Document Objects"
-msgstr "문서 개체"
-
-#: basidesh.src#RID_STR_USERFORMS.string.text
-msgid "Forms"
-msgstr "양식"
-
-#: basidesh.src#RID_STR_NORMAL_MODULES.string.text
-msgctxt "basidesh.src#RID_STR_NORMAL_MODULES.string.text"
-msgid "Modules"
-msgstr "모듈"
-
-#: basidesh.src#RID_STR_CLASS_MODULES.string.text
-msgid "Class Modules"
-msgstr "클래스 모듈"
-
-#: basidesh.src#RID_STR_DLGIMP_CLASH_RENAME.string.text
-msgctxt "basidesh.src#RID_STR_DLGIMP_CLASH_RENAME.string.text"
-msgid "Rename"
-msgstr "이름 바꾸기"
-
-#: basidesh.src#RID_STR_DLGIMP_CLASH_REPLACE.string.text
-msgid "Replace"
-msgstr "바꾸기"
-
-#: basidesh.src#RID_STR_DLGIMP_CLASH_TITLE.string.text
-msgid "Dialog Import - Name already used"
-msgstr "대화 상자 가져오기 - 이미 사용 중인 이름"
-
-#: basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.string.text
-msgid ""
-"The library already contains a dialog with the name:\n"
-"\n"
-"$(ARG1)\n"
-"\n"
-"Rename dialog to keep current dialog or replace existing dialog.\n"
-" "
-msgstr ""
-"라이브러리에 같은 이름을 가진 대화 상자가 이미 있습니다.$(ARG1)이름을 바꾸어 현재 대화 상자를 유지하거나, 현재 대화 상자를 "
-"바꾸십시오. "
-
-#: basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.string.text
-msgid "Add"
-msgstr "추가"
-
-#: basidesh.src#RID_STR_DLGIMP_MISMATCH_OMIT.string.text
-msgid "Omit"
-msgstr "제외"
-
-#: basidesh.src#RID_STR_DLGIMP_MISMATCH_TITLE.string.text
-msgid "Dialog Import - Language Mismatch"
-msgstr "대화 상자 가져오기 - 언어 일치하지 않음"
-
-#: basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.string.text
-msgid ""
-"The dialog to be imported supports other languages than the target library.\n"
-"\n"
-"Add these languages to the library to keep additional language resources "
-"provided by the dialog or omit them to stay with the current library "
-"languages.\n"
-"\n"
-"Note: For languages not supported by the dialog the resources of the "
-"dialog's default language will be used.\n"
-" "
-msgstr ""
-"가져올 대화 상자가 대상 라이브러리와 다른 언어를 지원합니다.\n"
-"\n"
-"대화 상자가 제공하는 추가 언어를 언어를 라이브러이에 추가하여 추가적인 언어를 지원하게 하거나, 현재 라이브러리 언어를 유지하기 위해 "
-"제외하세요.\n"
-"\n"
-"참고: 대화 상자가 지원하지 않는 언어를 위해, 대화 상자의 기본 언어가 사용됩니다.\n"
-" "
-
-#: brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_NEW.pushbutton.text
-msgid "New"
-msgstr "새로"
-
-#: brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_DEL.pushbutton.text
-msgctxt "brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_DEL.pushbutton.text"
-msgid "Delete"
-msgstr "삭제"
-
-#: brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_CHKB_ACTIVE.checkbox.text
-msgctxt "brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_CHKB_ACTIVE.checkbox.text"
-msgid "Active"
-msgstr "활성"
-
-#: brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_PASS.fixedtext.text
-msgid "Pass Count:"
-msgstr "과정:"
-
-#: brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_BRKPOINTS.fixedtext.text
-msgid "Breakpoints"
-msgstr "중단점"
-
-#: brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.modaldialog.text
-msgctxt "brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.modaldialog.text"
-msgid "Manage Breakpoints"
-msgstr "중단점 관리"
-
-#: macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACROSIN.fixedtext.text
-msgid "Existing macros ~in:"
-msgstr "기존 매크로 위치(~I):"
-
-#: macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACRONAME.fixedtext.text
-msgid "~Macro name"
-msgstr "매크로 이름(~M)"
-
-#: macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACROFROM.fixedtext.text
-msgid "Macro ~from"
-msgstr "매크로 위치(~F)"
-
-#: macrodlg.src#RID_MACROCHOOSER.RID_TXT_SAVEMACRO.fixedtext.text
-msgid "Save m~acro in"
-msgstr "매크로 저장 위치(~A)"
-
-#: macrodlg.src#RID_MACROCHOOSER.RID_TXT_DESCRIPTION.fixedtext.text
-msgid "De~scription"
-msgstr "설명(~S)"
-
-#: macrodlg.src#RID_MACROCHOOSER.RID_PB_RUN.pushbutton.text
-msgid "R~un"
-msgstr "실행(~U)"
-
-#: macrodlg.src#RID_MACROCHOOSER.RID_PB_CLOSE.cancelbutton.text
-msgctxt "macrodlg.src#RID_MACROCHOOSER.RID_PB_CLOSE.cancelbutton.text"
-msgid "Close"
-msgstr "닫기"
-
-#: macrodlg.src#RID_MACROCHOOSER.RID_PB_ASSIGN.pushbutton.text
-msgid "~Assign..."
-msgstr "지정(~A)..."
-
-#: macrodlg.src#RID_MACROCHOOSER.RID_PB_EDIT.pushbutton.text
-msgctxt "macrodlg.src#RID_MACROCHOOSER.RID_PB_EDIT.pushbutton.text"
-msgid "~Edit"
-msgstr "편집(~E)"
-
-#: macrodlg.src#RID_MACROCHOOSER.RID_PB_NEWLIB.pushbutton.text
-msgid "New ~Library"
-msgstr "새 라이브러리(~L)"
-
-#: macrodlg.src#RID_MACROCHOOSER.RID_PB_NEWMOD.pushbutton.text
-msgid "New M~odule"
-msgstr "새 모듈(~O)"
-
-#: macrodlg.src#RID_MACROCHOOSER.RID_PB_DEL.pushbutton.text
-msgctxt "macrodlg.src#RID_MACROCHOOSER.RID_PB_DEL.pushbutton.text"
-msgid "~Delete"
-msgstr "삭제(~D)..."
-
-#: macrodlg.src#RID_MACROCHOOSER.RID_PB_ORG.pushbutton.text
-msgid "~Organizer..."
-msgstr "관리(~O)..."
-
-#: macrodlg.src#RID_MACROCHOOSER.modaldialog.text
-msgid "%PRODUCTNAME Basic Macros"
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.ModalDialog.Text
+msgid  "%PRODUCTNAME Basic Macros"
 msgstr "%PRODUCTNAME Basic 매크로"
 
-#: macrodlg.src#RID_STR_STDMACRONAME.string.text
-msgid "Macro"
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACROSIN.FixedText.Text
+msgid  "Existing macros ~in:"
+msgstr "기존 매크로 위치(~I):"
+
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACRONAME.FixedText.Text
+msgid  "~Macro name"
+msgstr "매크로 이름(~M)"
+
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACROFROM.FixedText.Text
+msgid  "Macro ~from"
+msgstr "매크로 위치(~F)"
+
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_SAVEMACRO.FixedText.Text
+msgid  "Save m~acro in"
+msgstr "매크로 저장 위치(~A)"
+
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_DESCRIPTION.FixedText.Text
+msgid  "De~scription"
+msgstr "설명(~S)"
+
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_RUN.PushButton.Text
+msgid  "R~un"
+msgstr "실행(~U)"
+
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_CLOSE.CancelButton.Text
+msgid  "Close"
+msgstr "닫기"
+
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_ASSIGN.PushButton.Text
+msgid  "~Assign..."
+msgstr "지정(~A)..."
+
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_EDIT.PushButton.Text
+msgid  "~Edit"
+msgstr "편집(~E)"
+
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_NEWLIB.PushButton.Text
+msgid  "New ~Library"
+msgstr "새 라이브러리(~L)"
+
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_NEWMOD.PushButton.Text
+msgid  "New M~odule"
+msgstr "새 모듈(~O)"
+
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_DEL.PushButton.Text
+msgid  "~Delete"
+msgstr "삭제(~D)..."
+
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_ORG.PushButton.Text
+msgid  "~Organizer..."
+msgstr "관리(~O)..."
+
+#: source/basicide/macrodlg.src#RID_STR_STDMACRONAME.String.Text
+msgid  "Macro"
 msgstr "매크로"
 
-#: macrodlg.src#RID_STR_BTNDEL.string.text
-msgctxt "macrodlg.src#RID_STR_BTNDEL.string.text"
-msgid "~Delete"
+#: source/basicide/macrodlg.src#RID_STR_BTNDEL.String.Text
+msgid  "~Delete"
 msgstr "삭제(~D)..."
 
-#: macrodlg.src#RID_STR_BTNNEW.string.text
-msgid "~New"
+#: source/basicide/macrodlg.src#RID_STR_BTNNEW.String.Text
+msgid  "~New"
 msgstr "새로 만들기(~N)"
 
-#: macrodlg.src#RID_STR_CLOSE.string.text
-msgctxt "macrodlg.src#RID_STR_CLOSE.string.text"
-msgid "Close"
+#: source/basicide/macrodlg.src#RID_STR_CLOSE.String.Text
+msgid  "Close"
 msgstr "닫기"
 
-#: macrodlg.src#RID_STR_CHOOSE.string.text
-msgid "Choose"
+#: source/basicide/macrodlg.src#RID_STR_CHOOSE.String.Text
+msgid  "Choose"
 msgstr "선택"
 
-#: macrodlg.src#RID_STR_RUN.string.text
-msgid "Run"
+#: source/basicide/macrodlg.src#RID_STR_RUN.String.Text
+msgid  "Run"
 msgstr "실행"
 
-#: macrodlg.src#RID_STR_RECORD.string.text
-msgid "~Save"
+#: source/basicide/macrodlg.src#RID_STR_RECORD.String.Text
+msgid  "~Save"
 msgstr "저장(~S)"
 
-#: moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_MOD.pageitem.text
-msgctxt "moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_MOD.pageitem.text"
-msgid "Modules"
+#: source/basicide/basidesh.src#RID_STR_FILTER_ALLFILES.String.Text
+msgid  "<All>"
+msgstr "<모두>"
+
+#: source/basicide/basidesh.src#RID_STR_NOMODULE.String.Text
+msgid  "< No Module >"
+msgstr "< 모듈 없음 >"
+
+#: source/basicide/basidesh.src#RID_STR_WRONGPASSWORD.String.Text
+msgid  "Incorrect Password"
+msgstr "유효하지 않은 암호"
+
+#: source/basicide/basidesh.src#RID_STR_OPEN.String.Text
+msgid  "Load"
+msgstr "로드"
+
+#: source/basicide/basidesh.src#RID_STR_SAVE.String.Text
+msgid  "Save"
+msgstr "저장"
+
+#: source/basicide/basidesh.src#RID_STR_SOURCETOBIG.String.Text
+msgid  "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
+msgstr ""
+
+#: source/basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.String.Text
+msgid  "Error opening file"
+msgstr "파일 열기시에 오류"
+
+#: source/basicide/basidesh.src#RID_STR_ERROROPENLIB.String.Text
+msgid  "Error loading library"
+msgstr "라이브러리 로드 중 오류"
+
+#: source/basicide/basidesh.src#RID_STR_NOLIBINSTORAGE.String.Text
+msgid  "The file does not contain any BASIC libraries"
+msgstr "파일에 BASIC 라이브러리가 포함되어 있지 않습니다."
+
+#: source/basicide/basidesh.src#RID_STR_BADSBXNAME.String.Text
+msgid  "Invalid Name"
+msgstr "유효하지 않은 이름"
+
+#: source/basicide/basidesh.src#RID_STR_LIBNAMETOLONG.String.Text
+msgid  "A library name can have up to 30 characters."
+msgstr "라이브러리 이름의 길이는 30자를 초과해서는 안됩니다."
+
+#: source/basicide/basidesh.src#RID_STR_ERRORCHOOSEMACRO.String.Text
+msgid  "Macros from other documents are not accessible."
+msgstr "다른 문서의 매크로를 액세스할 수 없습니다."
+
+#: source/basicide/basidesh.src#RID_STR_LIBISREADONLY.String.Text
+msgid  "This library is read-only."
+msgstr "이 라이브러리는 읽기 전용입니다."
+
+#: source/basicide/basidesh.src#RID_STR_REPLACELIB.String.Text
+msgid  "'XX' cannot be replaced."
+msgstr "'XX'을(를) 교체할 수 없습니다."
+
+#: source/basicide/basidesh.src#RID_STR_IMPORTNOTPOSSIBLE.String.Text
+msgid  "'XX' cannot be added."
+msgstr "'XX'을(를) 추가할 수 없습니다."
+
+#: source/basicide/basidesh.src#RID_STR_NOIMPORT.String.Text
+msgid  "'XX' was not added."
+msgstr "'XX'을(를) 추가하지 않았습니다."
+
+#: source/basicide/basidesh.src#RID_STR_ENTERPASSWORD.String.Text
+msgid  "Enter password for 'XX'"
+msgstr "'XX'의 암호를 입력하십시오."
+
+#: source/basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED.String.Text
+msgid  "Name already exists"
+msgstr "이름이 이미 있음"
+
+#: source/basicide/basidesh.src#RID_STR_SIGNED.String.Text
+msgid  "(Signed)"
+msgstr "(서명됨)"
+
+#: source/basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED2.String.Text
+msgid  "Object with same name already exists"
+msgstr "같은 이름을 가진 개체가 이미 있음"
+
+#: source/basicide/basidesh.src#RID_STR_FILEEXISTS.String.Text
+msgid  "The 'XX' file already exists"
+msgstr "파일'XX' 은 (는) 이미 존재합니다."
+
+#: source/basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.String.Text
+msgid  "For security reasons, you cannot run this macro.\n\nFor more information, check the security settings."
+msgstr ""
+
+#: source/basicide/basidesh.src#RID_STR_COMPILEERROR.String.Text
+msgid  "Compile Error: "
+msgstr "컴파일 오류: "
+
+#: source/basicide/basidesh.src#RID_STR_RUNTIMEERROR.String.Text
+msgid  "Runtime Error: #"
+msgstr "런타임 오류: #"
+
+#: source/basicide/basidesh.src#RID_STR_SEARCHNOTFOUND.String.Text
+msgid  "Search key not found"
+msgstr "검색 키를 찾지 못했습니다."
+
+#: source/basicide/basidesh.src#RID_STR_SEARCHFROMSTART.String.Text
+msgid  "Search to last module complete. Continue at first module?"
+msgstr "마지막 모듈까지 찾았습니다. 처음 모듈에서 찾기를 계속하겠습니까?"
+
+#: source/basicide/basidesh.src#RID_STR_SEARCHREPLACES.String.Text
+msgid  "Search key replaced XX times"
+msgstr "검색 키를 XX번 대체했습니다."
+
+#: source/basicide/basidesh.src#RID_STR_COULDNTREAD.String.Text
+msgid  "The file could not be read"
+msgstr "파일을 읽지 못했습니다."
+
+#: source/basicide/basidesh.src#RID_STR_COULDNTWRITE.String.Text
+msgid  "The file could not be saved"
+msgstr "파일을 저장하지 못했습니다."
+
+#: source/basicide/basidesh.src#RID_STR_CANNOTCHANGENAMESTDLIB.String.Text
+msgid  "The name of the default library cannot be changed."
+msgstr "기본 라이브러리의 이름은 변경할 수 없습니다."
+
+#: source/basicide/basidesh.src#RID_STR_CANNOTCHANGENAMEREFLIB.String.Text
+msgid  "The name of a referenced library cannot be changed."
+msgstr "참조된 라이브러리의 이름은 변경할 수 없습니다."
+
+#: source/basicide/basidesh.src#RID_STR_CANNOTUNLOADSTDLIB.String.Text
+msgid  "The default library cannot be deactivated"
+msgstr "기본 라이브러리는 비활성화할 수 없습니다."
+
+#: source/basicide/basidesh.src#RID_STR_GENERATESOURCE.String.Text
+msgid  "Generating source"
+msgstr "원본 생성"
+
+#: source/basicide/basidesh.src#RID_STR_FILENAME.String.Text
+msgid  "File name:"
+msgstr "파일 이름: "
+
+#: source/basicide/basidesh.src#RID_STR_APPENDLIBS.String.Text
+msgid  "Import Libraries"
+msgstr "라이브러리 가져오기"
+
+#: source/basicide/basidesh.src#RID_STR_QUERYDELMACRO.String.Text
+msgid  "Do you want to delete the macro XX?"
+msgstr "매크로 XX을(를）삭제하시겠습니까?"
+
+#: source/basicide/basidesh.src#RID_STR_QUERYDELDIALOG.String.Text
+msgid  "Do you want to delete the XX dialog?"
+msgstr "대화 상자 XX을(를）삭제하시겠습니까?"
+
+#: source/basicide/basidesh.src#RID_STR_QUERYDELLIB.String.Text
+msgid  "Do you want to delete the XX library?"
+msgstr "라이브러리 XX을(를) 삭제하시겠습니까 ?"
+
+#: source/basicide/basidesh.src#RID_STR_QUERYDELLIBREF.String.Text
+msgid  "Do you want to delete the reference to the XX library?"
+msgstr "라이브러리 XX에 있는 참조를 삭제하시겠습니까?"
+
+#: source/basicide/basidesh.src#RID_STR_QUERYDELMODULE.String.Text
+msgid  "Do you want to delete the XX module?"
+msgstr "모듈 XX을(를) 삭제하시겠습니까 ?"
+
+#: source/basicide/basidesh.src#RID_STR_OBJNOTFOUND.String.Text
+msgid  "Object or method not found"
+msgstr "개체 또는 메소드를 찾지 못했습니다."
+
+#: source/basicide/basidesh.src#RID_STR_BASIC.String.Text
+msgid  "BASIC"
+msgstr "BASIC"
+
+#: source/basicide/basidesh.src#RID_STR_LINE.String.Text
+msgid  "Ln"
+msgstr "행"
+
+#: source/basicide/basidesh.src#RID_STR_COLUMN.String.Text
+msgid  "Col"
+msgstr "단"
+
+#: source/basicide/basidesh.src#RID_STR_DOC.String.Text
+msgid  "Document"
+msgstr "문서"
+
+#: source/basicide/basidesh.src#RID_BASICIDE_OBJECTBAR.String.Text
+msgid  "Macro Bar"
+msgstr "매크로 모음"
+
+#: source/basicide/basidesh.src#RID_STR_CANNOTCLOSE.String.Text
+msgid  "The window cannot be closed while BASIC is running."
+msgstr ""
+
+#: source/basicide/basidesh.src#RID_STR_REPLACESTDLIB.String.Text
+msgid  "The default library cannot be replaced."
+msgstr "기본 라이브러리는 대체할 수 없습니다."
+
+#: source/basicide/basidesh.src#RID_STR_REFNOTPOSSIBLE.String.Text
+msgid  "Reference to 'XX' not possible."
+msgstr "'XX'에 대한 참조 불가능"
+
+#: source/basicide/basidesh.src#RID_STR_WATCHNAME.String.Text
+msgid  "Watch"
+msgstr "조사식"
+
+#: source/basicide/basidesh.src#RID_STR_WATCHVARIABLE.String.Text
+msgid  "Variable"
+msgstr "가변"
+
+#: source/basicide/basidesh.src#RID_STR_WATCHVALUE.String.Text
+msgid  "Value"
+msgstr "값"
+
+#: source/basicide/basidesh.src#RID_STR_WATCHTYPE.String.Text
+msgid  "Type"
+msgstr "유형"
+
+#: source/basicide/basidesh.src#RID_STR_STACKNAME.String.Text
+msgid  "Call Stack"
+msgstr "스택 호출"
+
+#: source/basicide/basidesh.src#RID_STR_INITIDE.String.Text
+msgid  "BASIC Initialization"
+msgstr "BASIC 초기화"
+
+#: source/basicide/basidesh.src#RID_STR_STDMODULENAME.String.Text
+msgid  "Module"
 msgstr "모듈"
 
-#: moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_DLG.pageitem.text
-msgid "Dialogs"
+#: source/basicide/basidesh.src#RID_STR_STDDIALOGNAME.String.Text
+msgid  "Dialog"
 msgstr "대화 상자"
 
-#: moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_LIB.pageitem.text
-msgid "Libraries"
+#: source/basicide/basidesh.src#RID_STR_STDLIBNAME.String.Text
+msgid  "Library"
 msgstr "라이브러리"
 
-#: moduldlg.src#RID_TD_ORGANIZE.tabdialog.text
-msgid "%PRODUCTNAME Basic Macro Organizer"
-msgstr "%PRODUCTNAME Basic 매크로 관리"
+#: source/basicide/basidesh.src#RID_STR_NEWLIB.String.Text
+msgid  "New Library"
+msgstr "새 라이브러리"
 
-#: moduldlg.src#RID_TP_MODULS.RID_STR_LIB.fixedtext.text
-msgid "M~odule"
-msgstr "모듈(~O)"
+#: source/basicide/basidesh.src#RID_STR_NEWMOD.String.Text
+msgid  "New Module"
+msgstr "새 모듈"
 
-#: moduldlg.src#RID_TP_MODULS.RID_PB_EDIT.pushbutton.text
-msgctxt "moduldlg.src#RID_TP_MODULS.RID_PB_EDIT.pushbutton.text"
-msgid "~Edit"
-msgstr "편집(~E)"
+#: source/basicide/basidesh.src#RID_STR_NEWDLG.String.Text
+msgid  "New Dialog"
+msgstr "새 대화 상자"
 
-#: moduldlg.src#RID_TP_MODULS.RID_PB_CLOSE.cancelbutton.text
-msgctxt "moduldlg.src#RID_TP_MODULS.RID_PB_CLOSE.cancelbutton.text"
-msgid "Close"
-msgstr "닫기"
+#: source/basicide/basidesh.src#RID_STR_ALL.String.Text
+msgid  "All"
+msgstr "모두"
 
-#: moduldlg.src#RID_TP_MODULS.RID_PB_NEWMOD.pushbutton.text
-msgctxt "moduldlg.src#RID_TP_MODULS.RID_PB_NEWMOD.pushbutton.text"
-msgid "~New..."
-msgstr "새로 만들기(~N)..."
+#: source/basicide/basidesh.src#RID_STR_PAGE.String.Text
+msgid  "Page"
+msgstr "페이지"
 
-#: moduldlg.src#RID_TP_MODULS.RID_PB_NEWDLG.pushbutton.text
-msgctxt "moduldlg.src#RID_TP_MODULS.RID_PB_NEWDLG.pushbutton.text"
-msgid "~New..."
-msgstr "새로 만들기(~N)..."
+#: source/basicide/basidesh.src#RID_STR_MACRONAMEREQ.String.Text
+msgid  "A name must be entered."
+msgstr "이름을 입력해야 합니다."
 
-#: moduldlg.src#RID_TP_MODULS.RID_PB_DELETE.pushbutton.text
-msgctxt "moduldlg.src#RID_TP_MODULS.RID_PB_DELETE.pushbutton.text"
-msgid "~Delete"
-msgstr "삭제(~D)..."
+#: source/basicide/basidesh.src#RID_STR_WILLSTOPPRG.String.Text
+msgid  "You will have to restart the program after this edit.\nContinue?"
+msgstr ""
 
-#: moduldlg.src#RID_TP_DLGS.RID_STR_LIB.fixedtext.text
-msgctxt "moduldlg.src#RID_TP_DLGS.RID_STR_LIB.fixedtext.text"
-msgid "Dialog"
-msgstr "대화 상자"
+#: source/basicide/basidesh.src#RID_STR_SEARCHALLMODULES.String.Text
+msgid  "Do you want to replace the text in all active modules?"
+msgstr "활성화된 모든 모듈에서 텍스트를 대체하겠습니까?"
 
-#: moduldlg.src#RID_TP_DLGS.RID_PB_EDIT.pushbutton.text
-msgctxt "moduldlg.src#RID_TP_DLGS.RID_PB_EDIT.pushbutton.text"
-msgid "~Edit"
-msgstr "편집(~E)"
+#: source/basicide/basidesh.src#RID_IMGBTN_REMOVEWATCH.ButtonImage.QuickHelpText
+msgid  "Remove Watch"
+msgstr "조사식 제거"
 
-#: moduldlg.src#RID_TP_DLGS.RID_PB_CLOSE.cancelbutton.text
-msgctxt "moduldlg.src#RID_TP_DLGS.RID_PB_CLOSE.cancelbutton.text"
-msgid "Close"
-msgstr "닫기"
+#: source/basicide/basidesh.src#RID_STR_REMOVEWATCH.String.Text
+msgid  "Watch:"
+msgstr "조사식: "
 
-#: moduldlg.src#RID_TP_DLGS.RID_PB_NEWMOD.pushbutton.text
-msgctxt "moduldlg.src#RID_TP_DLGS.RID_PB_NEWMOD.pushbutton.text"
-msgid "~New..."
-msgstr "새로 만들기(~N)..."
+#: source/basicide/basidesh.src#RID_STR_STACK.String.Text
+msgid  "Calls: "
+msgstr "호출: "
 
-#: moduldlg.src#RID_TP_DLGS.RID_PB_NEWDLG.pushbutton.text
-msgctxt "moduldlg.src#RID_TP_DLGS.RID_PB_NEWDLG.pushbutton.text"
-msgid "~New..."
-msgstr "새로 만들기(~N)..."
+#: source/basicide/basidesh.src#RID_STR_USERMACROS.String.Text
+msgid  "My Macros"
+msgstr "내 매크로"
 
-#: moduldlg.src#RID_TP_DLGS.RID_PB_DELETE.pushbutton.text
-msgctxt "moduldlg.src#RID_TP_DLGS.RID_PB_DELETE.pushbutton.text"
-msgid "~Delete"
-msgstr "삭제(~D)"
+#: source/basicide/basidesh.src#RID_STR_USERDIALOGS.String.Text
+msgid  "My Dialogs"
+msgstr "내 대화 상자"
 
-#: moduldlg.src#RID_TP_LIBS.RID_STR_BASICS.fixedtext.text
-msgid "L~ocation"
-msgstr "위치(~O)"
+#: source/basicide/basidesh.src#RID_STR_USERMACROSDIALOGS.String.Text
+msgid  "My Macros & Dialogs"
+msgstr "내 매크로 및 대화 상자"
 
-#: moduldlg.src#RID_TP_LIBS.RID_STR_LIB.fixedtext.text
-msgid "~Library"
-msgstr "라이브러리(~L)"
+#: source/basicide/basidesh.src#RID_STR_SHAREMACROS.String.Text
+msgid  "%PRODUCTNAME Macros"
+msgstr "%PRODUCTNAME 매크로"
 
-#: moduldlg.src#RID_TP_LIBS.RID_PB_EDIT.pushbutton.text
-msgctxt "moduldlg.src#RID_TP_LIBS.RID_PB_EDIT.pushbutton.text"
-msgid "~Edit"
-msgstr "편집(~E)"
+#: source/basicide/basidesh.src#RID_STR_SHAREDIALOGS.String.Text
+msgid  "%PRODUCTNAME Dialogs"
+msgstr "%PRODUCTNAME 대화 상자"
 
-#: moduldlg.src#RID_TP_LIBS.RID_PB_CLOSE.cancelbutton.text
-msgctxt "moduldlg.src#RID_TP_LIBS.RID_PB_CLOSE.cancelbutton.text"
-msgid "Close"
-msgstr "닫기"
+#: source/basicide/basidesh.src#RID_STR_SHAREMACROSDIALOGS.String.Text
+msgid  "%PRODUCTNAME Macros & Dialogs"
+msgstr "%PRODUCTNAME 매크로 및 대화 상자"
 
-#: moduldlg.src#RID_TP_LIBS.RID_PB_PASSWORD.pushbutton.text
-msgid "~Password..."
-msgstr "암호(~P)..."
+#: source/basicide/basidesh.src#RID_POPUP_BRKPROPS.Menu.Text
+msgid  "Properties"
+msgstr "속성"
 
-#: moduldlg.src#RID_TP_LIBS.RID_PB_NEWLIB.pushbutton.text
-msgctxt "moduldlg.src#RID_TP_LIBS.RID_PB_NEWLIB.pushbutton.text"
-msgid "~New..."
-msgstr "새로 만들기(~N)..."
+#: source/basicide/basidesh.src#RID_POPUP_BRKPROPS.RID_ACTIV.MenuItem.Text
+msgid  "Active"
+msgstr "활성"
 
-#: moduldlg.src#RID_TP_LIBS.RID_PB_APPEND.pushbutton.text
-msgid "~Import..."
-msgstr "가져오기(~I)..."
+#: source/basicide/basidesh.src#RID_POPUP_BRKPROPS.RID_BRKPROPS.MenuItem.Text
+msgid  "Properties..."
+msgstr "속성..."
 
-#: moduldlg.src#RID_TP_LIBS.RID_PB_EXPORT.pushbutton.text
-msgid "E~xport..."
-msgstr "내보내기(~X)..."
+#: source/basicide/basidesh.src#RID_POPUP_BRKDLG.Menu.Text
+msgid  "Manage Breakpoints"
+msgstr "중단점 관리"
 
-#: moduldlg.src#RID_TP_LIBS.RID_PB_DELETE.pushbutton.text
-msgctxt "moduldlg.src#RID_TP_LIBS.RID_PB_DELETE.pushbutton.text"
-msgid "~Delete"
-msgstr "삭제(~D)"
+#: source/basicide/basidesh.src#RID_POPUP_BRKDLG.RID_BRKDLG.MenuItem.Text
+msgid  "Manage Breakpoints..."
+msgstr "중단점 관리..."
 
-#: moduldlg.src#RID_DLG_LIBS.RID_FL_OPTIONS.fixedline.text
-msgid "Options"
-msgstr "옵션"
+#: source/basicide/basidesh.src#RID_POPUP_TABBAR.RID_INSERT.MenuItem.Text
+msgid  "Insert"
+msgstr "삽입"
 
-#: moduldlg.src#RID_DLG_LIBS.RID_CB_REF.checkbox.text
-msgid "Insert as reference (read-only)"
-msgstr "참조로 삽입(읽기 전용)"
+#: source/basicide/basidesh.src#RID_POPUP_TABBAR.RID_INSERT.SID_BASICIDE_NEWMODULE.MenuItem.Text
+msgid  "BASIC Module"
+msgstr "BASIC 모듈"
 
-#: moduldlg.src#RID_DLG_LIBS.RID_CB_REPL.checkbox.text
-msgid "Replace existing libraries"
-msgstr "기존 라이브러리 바꾸기"
+#: source/basicide/basidesh.src#RID_POPUP_TABBAR.RID_INSERT.SID_BASICIDE_NEWDIALOG.MenuItem.Text
+msgid  "BASIC Dialog"
+msgstr "BASIC 대화 상자"
 
-#: moduldlg.src#RID_DLG_NEWLIB.RID_FT_NEWLIB.fixedtext.text
-msgid "~Name:"
-msgstr "이름(~N):"
+#: source/basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_DELETECURRENT.MenuItem.Text
+msgid  "Delete"
+msgstr "삭제"
 
-#: moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASPACKAGE.radiobutton.text
-msgid "Export as ~extension"
-msgstr "확장으로 내보내기(~E)"
+#: source/basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_RENAMECURRENT.MenuItem.Text
+msgid  "Rename"
+msgstr "이름 바꾸기"
 
-#: moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASBASIC.radiobutton.text
-msgctxt "moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASBASIC.radiobutton.text"
-msgid "Export as BASIC library"
-msgstr "BASIC 라이브러리로 내보내기"
+#: source/basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_HIDECURPAGE.MenuItem.Text
+msgid  "Hide"
+msgstr "숨기기"
 
-#: moduldlg.src#RID_DLG_EXPORT.modaldialog.text
-msgid "Export Basic library"
-msgstr "BASIC 라이브러리 내보내기"
+#: source/basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_MODULEDLG.MenuItem.Text
+msgid  "Modules..."
+msgstr "모듈..."
 
-#: moduldlg.src#RID_STR_EXPORTPACKAGE.string.text
-msgid "Export library as extension"
-msgstr "확장으로 라이브러리 내보내기"
+#: source/basicide/basidesh.src#RID_POPUP_DLGED.SID_SHOW_PROPERTYBROWSER.MenuItem.Text
+msgid  "Properties..."
+msgstr "속성..."
 
-#: moduldlg.src#RID_STR_EXPORTBASIC.string.text
-msgctxt "moduldlg.src#RID_STR_EXPORTBASIC.string.text"
-msgid "Export as BASIC library"
-msgstr "BASIC 라이브러리로 내보내기"
+#: source/basicide/basidesh.src#RID_STR_QUERYREPLACEMACRO.String.Text
+msgid  "Do you want to overwrite the XX macro?"
+msgstr "macro XX 을(를) 덮어쓰시겠습니까?"
 
-#: moduldlg.src#RID_STR_PACKAGE_BUNDLE.string.text
-msgid "Extension"
-msgstr "확장"
+#: source/basicide/basidesh.src#RID_STR_TRANSLATION_NOTLOCALIZED.String.Text
+msgid  "<Not localized>"
+msgstr "<지역화되지 않음>"
 
-#: moptions.src#RID_MACROOPTIONS.RID_FT_DESCR.fixedtext.text
-msgctxt "moptions.src#RID_MACROOPTIONS.RID_FT_DESCR.fixedtext.text"
-msgid "Description"
-msgstr "설명"
+#: source/basicide/basidesh.src#RID_STR_TRANSLATION_DEFAULT.String.Text
+msgid  "[Default Language]"
+msgstr "[기본 언어]"
 
-#: moptions.src#RID_MACROOPTIONS.RID_FL_HELP.fixedline.text
-msgid "Help information"
-msgstr "도움말 정보"
+#: source/basicide/basidesh.src#RID_STR_DOCUMENT_OBJECTS.String.Text
+msgid  "Document Objects"
+msgstr "문서 개체"
 
-#: moptions.src#RID_MACROOPTIONS.RID_FT_HELPID.fixedtext.text
-msgid "Help ID"
-msgstr "도움말 ID"
+#: source/basicide/basidesh.src#RID_STR_USERFORMS.String.Text
+msgid  "Forms"
+msgstr "양식"
 
-#: moptions.src#RID_MACROOPTIONS.RID_FT_HELPNAME.fixedtext.text
-msgid "Help file name"
-msgstr "도움말 파일 이름"
+#: source/basicide/basidesh.src#RID_STR_NORMAL_MODULES.String.Text
+msgid  "Modules"
+msgstr "모듈"
 
-#: moptions.src#RID_MACROOPTIONS.modaldialog.text
-msgctxt "moptions.src#RID_MACROOPTIONS.modaldialog.text"
-msgid "Description"
-msgstr "설명"
+#: source/basicide/basidesh.src#RID_STR_CLASS_MODULES.String.Text
+msgid  "Class Modules"
+msgstr "클래스 모듈"
 
-#: objdlg.src#RID_BASICIDE_OBJCAT.RID_TB_TOOLBOX.TBITEM_SHOW.toolboxitem.text
-msgid "Show"
-msgstr "표시"
+#: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_RENAME.String.Text
+msgid  "Rename"
+msgstr "이름 바꾸기"
 
-#: objdlg.src#RID_BASICIDE_OBJCAT.floatingwindow.text
-msgid "Objects"
+#: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_REPLACE.String.Text
+msgid  "Replace"
+msgstr "바꾸기"
+
+#: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TITLE.String.Text
+msgid  "Dialog Import - Name already used"
+msgstr "대화 상자 가져오기 - 이미 사용 중인 이름"
+
+#: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.String.Text
+msgid  "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
+msgstr ""
+
+#: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.String.Text
+msgid  "Add"
+msgstr "추가"
+
+#: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_OMIT.String.Text
+msgid  "Omit"
+msgstr "제외"
+
+#: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TITLE.String.Text
+msgid  "Dialog Import - Language Mismatch"
+msgstr "대화 상자 가져오기 - 언어 일치하지 않음"
+
+#: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.String.Text
+msgid  "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
+msgstr ""
+
+#: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item1.ItemList.item
+msgid  "Print range"
+msgstr "인쇄 범위"
+
+#: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item2.ItemList.item
+msgid  "All ~Pages"
+msgstr "모든 페이지(~P)"
+
+#: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item3.ItemList.item
+msgid  "Pa~ges"
+msgstr "페이지(~g)"
+
+#: source/basicide/objdlg.src#RID_BASICIDE_OBJCAT.FloatingWindow.Text
+msgid  "Objects"
 msgstr "개체"
 
-#: objdlg.src#RID_STR_TLB_MACROS.string.text
-msgid "Objects Tree"
+#: source/basicide/objdlg.src#RID_BASICIDE_OBJCAT.RID_TB_TOOLBOX.TBITEM_SHOW.ToolBoxItem.Text
+msgid  "Show"
+msgstr "표시"
+
+#: source/basicide/objdlg.src#RID_STR_TLB_MACROS.String.Text
+msgid  "Objects Tree"
 msgstr "개체 트리"
 
-#~ msgid "Print all pages of the printable content."
-#~ msgstr "인쇄 가능한 내용의 모든 페이지를 인쇄합니다."
+#: source/basicide/moptions.src#RID_MACROOPTIONS.ModalDialog.Text
+msgid  "Description"
+msgstr "설명"
 
-#~ msgid "Print only some pages of the printable content."
-#~ msgstr "인쇄 가능한 내용의 일부 페이지만 인쇄합니다."
+#: source/basicide/moptions.src#RID_MACROOPTIONS.RID_FT_DESCR.FixedText.Text
+msgid  "Description"
+msgstr "설명"
 
-#~ msgctxt "tbxctl.src#RID_TBXCONTROLS.RID_TOOLBOX.string.text"
-#~ msgid "Controls"
-#~ msgstr "콘트롤"
+#: source/basicide/moptions.src#RID_MACROOPTIONS.RID_FL_HELP.FixedLine.Text
+msgid  "Help information"
+msgstr "도움말 정보"
 
-#~ msgctxt "tbxctl.src#RID_TBXCONTROLS.floatingwindow.text"
-#~ msgid "Controls"
-#~ msgstr "콘트롤"
+#: source/basicide/moptions.src#RID_MACROOPTIONS.RID_FT_HELPID.FixedText.Text
+msgid  "Help ID"
+msgstr "도움말 ID"
 
-#~ msgid "Button"
-#~ msgstr "버튼"
+#: source/basicide/moptions.src#RID_MACROOPTIONS.RID_FT_HELPNAME.FixedText.Text
+msgid  "Help file name"
+msgstr "도움말 파일 이름"
 
-#~ msgid "Check Box"
-#~ msgstr "확인란"
+#: source/basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_NEW.PushButton.Text
+msgid  "New"
+msgstr "새로"
 
-#~ msgid "Label field"
-#~ msgstr "레이블 필드"
+#: source/basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_DEL.PushButton.Text
+msgid  "Delete"
+msgstr "삭제"
 
-#~ msgid "List Box"
-#~ msgstr "목록 상자"
+#: source/basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_CHKB_ACTIVE.CheckBox.Text
+msgid  "Active"
+msgstr "활성"
 
-#~ msgid "Horizontal Scroll Bar"
-#~ msgstr "수평 스크롤 막대"
+#: source/basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_PASS.FixedText.Text
+msgid  "Pass Count:"
+msgstr "과정:"
 
-#~ msgid "Group Box"
-#~ msgstr "그룹 상자"
+#: source/basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_BRKPOINTS.FixedText.Text
+msgid  "Breakpoints"
+msgstr "중단점"
 
-#~ msgid "Horizontal Line"
-#~ msgstr "가로선"
+#: source/basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.NumericField.Text
+msgid  "Manage Breakpoints"
+msgstr "중단점 관리"
 
-#~ msgid "Date Field"
-#~ msgstr "날짜 필드"
+#: source/basicide/moduldlg.src#RID_TD_ORGANIZE.TabDialog.Text
+msgid  "%PRODUCTNAME Basic Macro Organizer"
+msgstr "%PRODUCTNAME Basic 매크로 관리"
 
-#~ msgid "Numeric Field"
-#~ msgstr "숫자 필드"
+#: source/basicide/moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_MOD.PageItem.Text
+msgid  "Modules"
+msgstr "모듈"
 
-#~ msgid "Formatted Field"
-#~ msgstr "서식 지정된 필드"
+#: source/basicide/moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_DLG.PageItem.Text
+msgid  "Dialogs"
+msgstr "대화 상자"
 
-#~ msgid "File Selection"
-#~ msgstr "파일 선택"
+#: source/basicide/moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_LIB.PageItem.Text
+msgid  "Libraries"
+msgstr "라이브러리"
 
-#~ msgid "Tree Control"
-#~ msgstr "트리 콘트롤"
+#: source/basicide/moduldlg.src#RID_TP_MODULS.RID_STR_LIB.FixedText.Text
+msgid  "M~odule"
+msgstr "모듈(~O)"
 
-#~ msgid "Image Control"
-#~ msgstr "이미지 콘트롤"
+#: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_EDIT.PushButton.Text
+msgid  "~Edit"
+msgstr "편집(~E)"
 
-#~ msgid "Option Button"
-#~ msgstr "옵션 버튼"
+#: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_CLOSE.CancelButton.Text
+msgid  "Close"
+msgstr "닫기"
 
-#~ msgid "Text Box"
-#~ msgstr "텍스트 필드"
+#: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_NEWMOD.PushButton.Text
+msgid  "~New..."
+msgstr "새로 만들기(~N)..."
 
-#~ msgid "Combo Box"
-#~ msgstr "콤보 상자"
+#: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_NEWDLG.PushButton.Text
+msgid  "~New..."
+msgstr "새로 만들기(~N)..."
 
-#~ msgid "Vertical Scroll Bar"
-#~ msgstr "수직 스크롤 막대"
+#: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_DELETE.PushButton.Text
+msgid  "~Delete"
+msgstr "삭제(~D)..."
 
-#~ msgid "Progress Bar"
-#~ msgstr "진행표시줄"
+#: source/basicide/moduldlg.src#RID_TP_DLGS.RID_STR_LIB.FixedText.Text
+msgid  "Dialog"
+msgstr "대화 상자"
 
-#~ msgid "Vertical Line"
-#~ msgstr "세로선"
+#: source/basicide/moduldlg.src#RID_TP_DLGS.RID_PB_EDIT.PushButton.Text
+msgid  "~Edit"
+msgstr "편집(~E)"
 
-#~ msgid "Time Field"
-#~ msgstr "시간 필드"
+#: source/basicide/moduldlg.src#RID_TP_DLGS.RID_PB_CLOSE.CancelButton.Text
+msgid  "Close"
+msgstr "닫기"
 
-#~ msgid "Currency Field"
-#~ msgstr "통화 필드"
+#: source/basicide/moduldlg.src#RID_TP_DLGS.RID_PB_NEWMOD.PushButton.Text
+msgid  "~New..."
+msgstr "새로 만들기(~N)..."
 
-#~ msgid "Pattern Field"
-#~ msgstr "패턴 필드"
+#: source/basicide/moduldlg.src#RID_TP_DLGS.RID_PB_NEWDLG.PushButton.Text
+msgid  "~New..."
+msgstr "새로 만들기(~N)..."
 
-#~ msgid "Select"
-#~ msgstr "선택"
+#: source/basicide/moduldlg.src#RID_TP_DLGS.RID_PB_DELETE.PushButton.Text
+msgid  "~Delete"
+msgstr "삭제(~D)"
 
-#~ msgid "Activate Test Mode"
-#~ msgstr "테스트모드 활성화"
+#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_STR_BASICS.FixedText.Text
+msgid  "L~ocation"
+msgstr "위치(~O)"
+
+#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_STR_LIB.FixedText.Text
+msgid  "~Library"
+msgstr "라이브러리(~L)"
+
+#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_PB_EDIT.PushButton.Text
+msgid  "~Edit"
+msgstr "편집(~E)"
+
+#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_PB_CLOSE.CancelButton.Text
+msgid  "Close"
+msgstr "닫기"
+
+#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_PB_PASSWORD.PushButton.Text
+msgid  "~Password..."
+msgstr "암호(~P)..."
+
+#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_PB_NEWLIB.PushButton.Text
+msgid  "~New..."
+msgstr "새로 만들기(~N)..."
+
+#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_PB_APPEND.PushButton.Text
+msgid  "~Import..."
+msgstr "가져오기(~I)..."
+
+#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_PB_EXPORT.PushButton.Text
+msgid  "E~xport..."
+msgstr "내보내기(~X)..."
+
+#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_PB_DELETE.PushButton.Text
+msgid  "~Delete"
+msgstr "삭제(~D)"
+
+#: source/basicide/moduldlg.src#RID_DLG_LIBS.RID_FL_OPTIONS.FixedLine.Text
+msgid  "Options"
+msgstr "옵션"
+
+#: source/basicide/moduldlg.src#RID_DLG_LIBS.RID_CB_REF.CheckBox.Text
+msgid  "Insert as reference (read-only)"
+msgstr "참조로 삽입(읽기 전용)"
+
+#: source/basicide/moduldlg.src#RID_DLG_LIBS.RID_CB_REPL.CheckBox.Text
+msgid  "Replace existing libraries"
+msgstr "기존 라이브러리 바꾸기"
+
+#: source/basicide/moduldlg.src#RID_DLG_NEWLIB.RID_FT_NEWLIB.FixedText.Text
+msgid  "~Name:"
+msgstr "이름(~N):"
+
+#: source/basicide/moduldlg.src#RID_DLG_EXPORT.ModalDialog.Text
+msgid  "Export Basic library"
+msgstr "BASIC 라이브러리 내보내기"
+
+#: source/basicide/moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASPACKAGE.RadioButton.Text
+msgid  "Export as ~extension"
+msgstr "확장으로 내보내기(~E)"
+
+#: source/basicide/moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASBASIC.RadioButton.Text
+msgid  "Export as BASIC library"
+msgstr "BASIC 라이브러리로 내보내기"
+
+#: source/basicide/moduldlg.src#RID_STR_EXPORTPACKAGE.String.Text
+msgid  "Export library as extension"
+msgstr "확장으로 라이브러리 내보내기"
+
+#: source/basicide/moduldlg.src#RID_STR_EXPORTBASIC.String.Text
+msgid  "Export as BASIC library"
+msgstr "BASIC 라이브러리로 내보내기"
+
+#: source/basicide/moduldlg.src#RID_STR_PACKAGE_BUNDLE.String.Text
+msgid  "Extension"
+msgstr "확장"
+
+#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.ModalDialog.Text
+msgid  "Manage User Interface Languages [$1]"
+msgstr "사용자 인터페이스 언어 [$1] 관리"
+
+#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_LANGUAGE.FixedText.Text
+msgid  "Present Languages"
+msgstr "언어 표시"
+
+#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_ADD_LANG.PushButton.Text
+msgid  "Add..."
+msgstr "추가..."
+
+#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_DEL_LANG.PushButton.Text
+msgid  "Delete"
+msgstr "삭제"
+
+#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_MAKE_DEFAULT.PushButton.Text
+msgid  "Default"
+msgstr "기본값"
+
+#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FixedText.Text
+msgid  "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
+msgstr ""
+
+#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKButton.Text
+msgid  "~Close"
+msgstr "닫기(~C)"
+
+#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DEF_LANG.String.Text
+msgid  "[Default Language]"
+msgstr "[기본 언어]"
+
+#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DELETE.String.Text
+msgid  "~Delete"
+msgstr "삭제(~D)"
+
+#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_CREATE_LANG.String.Text
+msgid  "<Press 'Add' to create language resources>"
+msgstr "<언어 자원을 만들려면 '추가'를 누르십시오.>"
+
+#: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Title
+msgid  "Delete Language Resources"
+msgstr "언어 자원 삭제"
+
+#: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Message
+msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
+msgstr ""
+
+#: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.ModalDialog.Text
+msgid  "Set Default User Interface Language"
+msgstr "기본 사용자 인터페이스 언어 설정"
+
+#: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_LANGUAGE.FixedText.Text
+msgid  "Default language"
+msgstr "기본 언어"
+
+#: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FixedText.Text
+msgid  "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."
+msgstr ""
+
+#: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_TITLE.String.Text
+msgid  "Add User Interface Languages"
+msgstr "사용자 인터페이스 언어 추가"
+
+#: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_LABEL.String.Text
+msgid  "Available Languages"
+msgstr "사용 가능한 언어"
+
+#: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_INFO.String.Text
+msgid  "Select languages to be added. Resources for these languages will be created in the library. Strings of the current default user interface language will be copied to these new resources by default."
+msgstr ""
+
+#: source/dlged/dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
+msgid  "Properties: "
+msgstr "속성: "
+
+#: source/dlged/dlgresid.src#RID_STR_BRWTITLE_NO_PROPERTIES.String.Text
+msgid  "No Control marked"
+msgstr "콘트롤이 표시되지 않음"
+
+#: source/dlged/dlgresid.src#RID_STR_BRWTITLE_MULTISELECT.String.Text
+msgid  "Multiselection"
+msgstr "다중 선택"

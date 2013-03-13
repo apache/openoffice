@@ -1,1768 +1,604 @@
-
-#: sb.src#ERRCODE_BASMGR_LIBLOAD___ERRCODE_RES_MASK.string.text
-msgid "Error loading library '$(ARG1)'."
-msgstr "Грешка при вчитувањето на библиотеката „$(ARG1)“."
-
-#: sb.src#ERRCODE_BASMGR_LIBSAVE___ERRCODE_RES_MASK.string.text
-msgid "Error saving library: '$(ARG1)'."
-msgstr "Грешка при зачувувањето на библиотеката: „$(ARG1)“."
-
-#: sb.src#ERRCODE_BASMGR_MGROPEN___ERRCODE_RES_MASK.string.text
-msgid "The BASIC from the file '$(ARG1)' could not be initialized."
-msgstr "Не може да биде иницијализиран BASIC од датотеката „$(ARG1)“."
-
-#: sb.src#ERRCODE_BASMGR_MGRSAVE___ERRCODE_RES_MASK.string.text
-msgid "Error saving BASIC: '$(ARG1)'."
-msgstr "Грешка при зачувување на BASIC: „$(ARG1)“."
-
-#: sb.src#ERRCODE_BASMGR_REMOVELIB___ERRCODE_RES_MASK.string.text
-msgid "Error removing library."
-msgstr "Грешка при отстранувањето на библиотеката."
-
-#: sb.src#ERRCODE_BASMGR_UNLOADLIB___ERRCODE_RES_MASK.string.text
-msgid "The library could not be removed from memory."
-msgstr "Библиотеката не може да се отстрани од меморијата."
-
-#: sb.src#IDS_SBERR_STOREREF.string.text
-msgid "Reference will not be saved: "
-msgstr "Референцата нема да бидат зачувана: "
-
-#: sb.src#IDS_SBERR_TERMINATED.string.text
-msgid "The macro running has been interrupted"
-msgstr "Макрото што се извршуваше беше прекинато."
-
-#: sb.src#RID_BASIC_START.ERRCODE_BASIC_ARRAY_FIX___ERRCODE_RES_MASK.string.text
-msgid "This array is fixed or temporarily locked."
-msgstr "Оваа матрица е фиксна или привремено заклучена."
-
-#: sb.src#RID_BASIC_START.ERRCODE_BASIC_COMPAT___ERRCODE_RES_MASK.string.text
-msgid "$(ARG1)"
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
 msgstr ""
-
-#: sb.src#RID_BASIC_START.ERRCODE_BASIC_EXCEPTION___ERRCODE_RES_MASK.string.text
-msgid "An exception occurred $(ARG1)."
-msgstr "Се појави исклучок $(ARG1)."
-
-#: sb.src#RID_BASIC_START.ERRCODE_BASIC_EXPR_TOO_COMPLEX___ERRCODE_RES_MASK.string.text
-msgid "Expression Too Complex."
-msgstr "Изразот е премногу сложен."
-
-#: sb.src#RID_BASIC_START.ERRCODE_BASIC_LOOP_NOT_INIT___ERRCODE_RES_MASK.string.text
-msgid "For loop not initialized."
-msgstr "Не е иницијализирано за повторување."
-
-#: sb.src#RID_BASIC_START.ERRCODE_BASIC_OPER_NOT_PERFORM___ERRCODE_RES_MASK.string.text
-msgid "Can't perform requested operation."
-msgstr "Не можам да ја извршам бараната операција."
-
-#: sb.src#RID_BASIC_START.ERRCODE_BASIC_STRING_OVERFLOW___ERRCODE_RES_MASK.string.text
-msgid "Out of string space."
-msgstr "Нема веќе простор за низата."
-
-#: sb.src#RID_BASIC_START.ERRCODE_BASIC_TOO_MANY_DLL___ERRCODE_RES_MASK.string.text
-msgid "Too many DLL application clients."
-msgstr "Премногу клиенти за DLL апликацијата."
-
-#: sb.src#RID_BASIC_START.SBERR_IS_NULL___ERRCODE_RES_MASK.string.text
-msgid "Use of zero not permitted."
-msgstr "Употребата на нула не е дозволена."
-
-#: sb.src#RID_BASIC_START.SbERR_ACCESS_DENIED___ERRCODE_RES_MASK.string.text
-msgid "Access denied."
-msgstr "Пристапот е одбиен."
-
-#: sb.src#RID_BASIC_START.SbERR_ACCESS_ERROR___ERRCODE_RES_MASK.string.text
-msgid "Path/File access error."
-msgstr "Грешка при пристап до патека/датотека."
-
-#: sb.src#RID_BASIC_START.SbERR_ALREADY_DIM___ERRCODE_RES_MASK.string.text
-msgid "Array already dimensioned."
-msgstr "Низата е веќе димензионирана."
-
-#: sb.src#RID_BASIC_START.SbERR_ARG_MISSING___ERRCODE_RES_MASK.string.text
-msgid "Required argument lacking."
-msgstr "Недостига потребниот аргумент."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_ACTION___ERRCODE_RES_MASK.string.text
-msgid "This action is not supported by given object."
-msgstr "Ова дејство не е поддржано од даден објект."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_ARGUMENT___ERRCODE_RES_MASK.string.text
-msgid "Invalid procedure call."
-msgstr "Невалиден повик на процедура."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_BLOCK___ERRCODE_RES_MASK.string.text
-msgid "Statement block still open: $(ARG1) missing."
-msgstr "Блокот со израз е сѐ уште отворен: недостасува $(ARG1)."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_BRACKETS___ERRCODE_RES_MASK.string.text
-msgid "Parentheses do not match."
-msgstr "Заградите не се совпаѓаат."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_CHANNEL___ERRCODE_RES_MASK.string.text
-msgid "Invalid file name or file number."
-msgstr "Невалидно име на датотека или број на датотека."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_CHAR_IN_NUMBER___ERRCODE_RES_MASK.string.text
-msgid "Invalid character in number."
-msgstr "Невалиден знак во бројот."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_CLIPBD_FORMAT___ERRCODE_RES_MASK.string.text
-msgid "Invalid clipboard format."
-msgstr "Невалиден формат на табла со исечоци."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_DECLARATION___ERRCODE_RES_MASK.string.text
-msgid "Symbol $(ARG1) already defined differently."
-msgstr "Симболот $(ARG1) е веќе дефиниран поинаку."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_DLL_CALL___ERRCODE_RES_MASK.string.text
-msgid "Wrong DLL call convention."
-msgstr "Погрешна конвенција при DLL-повик."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_DLL_LOAD___ERRCODE_RES_MASK.string.text
-msgid "Error loading DLL file."
-msgstr "Грешка при вчитувањето на DLL-датотека."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_EXIT___ERRCODE_RES_MASK.string.text
-msgid "Exit $(ARG1) expected."
-msgstr "Беше очекуван излез $(ARG1)."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_FILE_MODE___ERRCODE_RES_MASK.string.text
-msgid "Incorrect file mode."
-msgstr "Неправилен режим на датотека."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_INDEX___ERRCODE_RES_MASK.string.text
-msgid "Invalid object index."
-msgstr "Невалиден индекс на објектот."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_LOCALE___ERRCODE_RES_MASK.string.text
-msgid "The current locale setting is not supported by the given object."
-msgstr "Тековното поставувањето на локалот не е поддржано од даден објект."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_METHOD___ERRCODE_RES_MASK.string.text
-msgid "This property or method is not supported by the object."
-msgstr "Ова својство или метод не се поддржани од овој објект."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_NUMBER_OF_ARGS___ERRCODE_RES_MASK.string.text
-msgctxt "sb.src#RID_BASIC_START.SbERR_BAD_NUMBER_OF_ARGS___ERRCODE_RES_MASK.string.text"
-msgid "Invalid number of arguments."
-msgstr "Невалиден број аргументи."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_OPTION___ERRCODE_RES_MASK.string.text
-msgid "Unknown option: $(ARG1)."
-msgstr "Непозната опција: $(ARG1)."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_ORDINAL___ERRCODE_RES_MASK.string.text
-msgid "Invalid ordinal number."
-msgstr "Невалиден реден број."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_PARAMETER___ERRCODE_RES_MASK.string.text
-msgid "Invalid parameter."
-msgstr "Невалиден параметар."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_PARAMETERS___ERRCODE_RES_MASK.string.text
-msgid "Parameters do not correspond to procedure."
-msgstr "Параметрите не соодветствуваат на процедурата."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_PATTERN___ERRCODE_RES_MASK.string.text
-msgid "Invalid string pattern."
-msgstr "Невалидна шема на низа."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_PROP_VALUE___ERRCODE_RES_MASK.string.text
-msgid "Incorrect property value."
-msgstr "Неточна вредност на својството."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_RECORD_LENGTH___ERRCODE_RES_MASK.string.text
-msgid "Incorrect record length."
-msgstr "Неправилна должина на запис."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_RECORD_NUMBER___ERRCODE_RES_MASK.string.text
-msgid "Incorrect record number."
-msgstr "Неправилен број на запис."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_RESUME___ERRCODE_RES_MASK.string.text
-msgid "Resume without error."
-msgstr "Продолжи без грешка."
-
-#: sb.src#RID_BASIC_START.SbERR_CANNOT_LOAD___ERRCODE_RES_MASK.string.text
-msgid "Module cannot be loaded; invalid format."
-msgstr "Модулот не може да се вчита. Невалиден формат."
-
-#: sb.src#RID_BASIC_START.SbERR_CONSTANT_REDECLARED___ERRCODE_RES_MASK.string.text
-msgid "Constant $(ARG1) redefined."
-msgstr "Константата $(ARG1) е редефинирана."
-
-#: sb.src#RID_BASIC_START.SbERR_CONVERSION___ERRCODE_RES_MASK.string.text
-msgid "Data type mismatch."
-msgstr "Несовпаѓање на типот на податоци."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_BUSY___ERRCODE_RES_MASK.string.text
-msgid "External application busy."
-msgstr "Надворешната апликација е зафатена."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_CHANNEL_LOCKED___ERRCODE_RES_MASK.string.text
-msgid "DDE channel locked."
-msgstr "DDE-каналот е заклучен."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_CONV_CLOSED___ERRCODE_RES_MASK.string.text
-msgid "DDE connection interrupted or modified."
-msgstr "DDE-врската е прекината или изменета."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_DLL_NOT_FOUND___ERRCODE_RES_MASK.string.text
-msgid "DDE requires the DDEML.DLL file."
-msgstr "На DDE му е потребна датотеката DDEML.DLL."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_ERROR___ERRCODE_RES_MASK.string.text
-msgid "DDE Error."
-msgstr "DDE-грешка."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_INVALID_LINK___ERRCODE_RES_MASK.string.text
-msgid "Invalid DDE link format."
-msgstr "Невалиден формат на DDE-врска."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_LINK_ALREADY_EST___ERRCODE_RES_MASK.string.text
-msgid "Paste link already performed."
-msgstr "Врската е веќе вметната."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_LINK_INV_TOPIC___ERRCODE_RES_MASK.string.text
-msgid "Link mode cannot be set due to invalid link topic."
-msgstr "Режимот на врска не може да се постави поради врска со невалидно име."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_MULT_RESPONSES___ERRCODE_RES_MASK.string.text
-msgid "Too many applications responded to DDE connect initiation."
-msgstr "Премногу апликации одговорија на иницирање на DDE-врска."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_NOTPROCESSED___ERRCODE_RES_MASK.string.text
-msgid "External application cannot execute DDE operation."
-msgstr "Надворешната апликација не може да изврши DDE-операција."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_NO_CHANNEL___ERRCODE_RES_MASK.string.text
-msgid "DDE method invoked with no channel open."
-msgstr "DDE-методот е повикан без отворен канал."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_NO_DATA___ERRCODE_RES_MASK.string.text
-msgid "DDE operation without data."
-msgstr "DDE-операција без податоци."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_NO_RESPONSE___ERRCODE_RES_MASK.string.text
-msgid "No application responded to DDE connect initiation."
-msgstr "Нема апликација што одговорила на иницирање на DDE-врска."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_OUTOFCHANNELS___ERRCODE_RES_MASK.string.text
-msgid "No DDE channels available."
-msgstr "Нема достапни DDE-канали."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_PARTNER_QUIT___ERRCODE_RES_MASK.string.text
-msgid "External application has been terminated."
-msgstr "Надворешната апликација беше прекината."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_QUEUE_OVERFLOW___ERRCODE_RES_MASK.string.text
-msgid "DDE message has been lost."
-msgstr "DDE-пораката беше изгубена."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_TIMEOUT___ERRCODE_RES_MASK.string.text
-msgid "Timeout while waiting for DDE response."
-msgstr "Времето истече при чекање DDE-одговор."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_USER_INTERRUPT___ERRCODE_RES_MASK.string.text
-msgid "User pressed ESCAPE during DDE operation."
-msgstr "Корисникот притисна ESCAPE при DDE-операција."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_WAITINGACK___ERRCODE_RES_MASK.string.text
-msgid "Awaiting response to DDE connection."
-msgstr "Очекувам одговор на DDE-врска."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_WRONG_DATA_FORMAT___ERRCODE_RES_MASK.string.text
-msgid "Data are in wrong format."
-msgstr "Податоците се во погрешен формат."
-
-#: sb.src#RID_BASIC_START.SbERR_DIFFERENT_DRIVE___ERRCODE_RES_MASK.string.text
-msgid "Renaming on different drives impossible."
-msgstr "Преименувањето на различни дискови не е можно."
-
-#: sb.src#RID_BASIC_START.SbERR_DISK_FULL___ERRCODE_RES_MASK.string.text
-msgid "Disk or hard drive full."
-msgstr "Дискот или тврдиот диск е полн."
-
-#: sb.src#RID_BASIC_START.SbERR_DLLPROC_NOT_FOUND___ERRCODE_RES_MASK.string.text
-msgid "Specified DLL function not found."
-msgstr "Наведената DLL-функција не е пронајдена."
-
-#: sb.src#RID_BASIC_START.SbERR_DUPLICATE_DEF___ERRCODE_RES_MASK.string.text
-msgid "Duplicate definition."
-msgstr "Двојна дефиниција."
-
-#: sb.src#RID_BASIC_START.SbERR_EXPECTED___ERRCODE_RES_MASK.string.text
-msgid "Expected: $(ARG1)."
-msgstr "Очекувано: $(ARG1)."
-
-#: sb.src#RID_BASIC_START.SbERR_FILE_ALREADY_OPEN___ERRCODE_RES_MASK.string.text
-msgid "File already open."
-msgstr "Датотеката е веќе отворена."
-
-#: sb.src#RID_BASIC_START.SbERR_FILE_EXISTS___ERRCODE_RES_MASK.string.text
-msgid "File already exists."
-msgstr "Датотеката веќе постои."
-
-#: sb.src#RID_BASIC_START.SbERR_FILE_NOT_FOUND___ERRCODE_RES_MASK.string.text
-msgid "File not found."
-msgstr "Датотеката не е пронајдена."
-
-#: sb.src#RID_BASIC_START.SbERR_GETPROP_FAILED___ERRCODE_RES_MASK.string.text
-msgid "Unable to determine property."
-msgstr "Не е можно да се одреди својството."
-
-#: sb.src#RID_BASIC_START.SbERR_INTERNAL_ERROR___ERRCODE_RES_MASK.string.text
-msgid "Internal error $(ARG1)."
-msgstr "Внатрешна грешка $(ARG1)."
-
-#: sb.src#RID_BASIC_START.SbERR_INVALID_OBJECT___ERRCODE_RES_MASK.string.text
-msgid "Invalid object reference."
-msgstr "Невалидна референца на објектот."
-
-#: sb.src#RID_BASIC_START.SbERR_INVALID_USAGE_OBJECT___ERRCODE_RES_MASK.string.text
-msgid "Invalid use of an object."
-msgstr "Невалидна употреба на објект."
-
-#: sb.src#RID_BASIC_START.SbERR_IO_ERROR___ERRCODE_RES_MASK.string.text
-msgid "Device I/O error."
-msgstr "В/И грешка на уред."
-
-#: sb.src#RID_BASIC_START.SbERR_LABEL_DEFINED___ERRCODE_RES_MASK.string.text
-msgid "Label $(ARG1) already defined."
-msgstr "Ознаката $(ARG1) е веќе дефинирана."
-
-#: sb.src#RID_BASIC_START.SbERR_LABEL_EXPECTED___ERRCODE_RES_MASK.string.text
-msgid "Label expected."
-msgstr "Се очекуваше ознака."
-
-#: sb.src#RID_BASIC_START.SbERR_LVALUE_EXPECTED___ERRCODE_RES_MASK.string.text
-msgid "Value cannot be applied."
-msgstr "Вредноста не може да се употреби."
-
-#: sb.src#RID_BASIC_START.SbERR_MATH_OVERFLOW___ERRCODE_RES_MASK.string.text
-msgid "Overflow."
-msgstr "Преполнување."
-
-#: sb.src#RID_BASIC_START.SbERR_METHOD_FAILED___ERRCODE_RES_MASK.string.text
-msgid "Error executing a method."
-msgstr "Грешка при извршувањето на метод."
-
-#: sb.src#RID_BASIC_START.SbERR_METHOD_NOT_FOUND___ERRCODE_RES_MASK.string.text
-msgid "Object does not have this method."
-msgstr "Објектот го нема овој метод."
-
-#: sb.src#RID_BASIC_START.SbERR_MUST_HAVE_DIMS___ERRCODE_RES_MASK.string.text
-msgid "Array must be dimensioned."
-msgstr "Низата мора да биде димензионирана."
-
-#: sb.src#RID_BASIC_START.SbERR_NAMED_NOT_FOUND___ERRCODE_RES_MASK.string.text
-msgid "Named argument not found."
-msgstr "Именуваниот аргумент не е пронајден."
-
-#: sb.src#RID_BASIC_START.SbERR_NEEDS_OBJECT___ERRCODE_RES_MASK.string.text
-msgid "Object required."
-msgstr "Потребен е објект."
-
-#: sb.src#RID_BASIC_START.SbERR_NOT_A_COLL___ERRCODE_RES_MASK.string.text
-msgid "Object is not a list."
-msgstr "Објектот не е листа."
-
-#: sb.src#RID_BASIC_START.SbERR_NOT_IMPLEMENTED___ERRCODE_RES_MASK.string.text
-msgid "Not implemented."
-msgstr "Не е имплементирано."
-
-#: sb.src#RID_BASIC_START.SbERR_NOT_IN_MAIN___ERRCODE_RES_MASK.string.text
-msgid "$(ARG1) not allowed outside a procedure."
-msgstr "$(ARG1) не е дозволено надвор од процедура."
-
-#: sb.src#RID_BASIC_START.SbERR_NOT_IN_SUBR___ERRCODE_RES_MASK.string.text
-msgid "$(ARG1) not allowed within a procedure."
-msgstr "$(ARG1) не е дозволено внатре во процедура."
-
-#: sb.src#RID_BASIC_START.SbERR_NOT_OPTIONAL___ERRCODE_RES_MASK.string.text
-msgid "Argument is not optional."
-msgstr "Аргументот не е изборен."
-
-#: sb.src#RID_BASIC_START.SbERR_NOT_READY___ERRCODE_RES_MASK.string.text
-msgid "Disk not ready."
-msgstr "Дискот не е подготвен."
-
-#: sb.src#RID_BASIC_START.SbERR_NO_ACTIVE_OBJECT___ERRCODE_RES_MASK.string.text
-msgid "Object is not available."
-msgstr "Објектот не е достапен."
-
-#: sb.src#RID_BASIC_START.SbERR_NO_DEVICE___ERRCODE_RES_MASK.string.text
-msgid "Device not available."
-msgstr "Уредот не е достапен."
-
-#: sb.src#RID_BASIC_START.SbERR_NO_GOSUB___ERRCODE_RES_MASK.string.text
-msgid "Return without Gosub."
-msgstr "Враќање без Gosub."
-
-#: sb.src#RID_BASIC_START.SbERR_NO_IF___ERRCODE_RES_MASK.string.text
-msgid "Else/Endif without If."
-msgstr "Else/Endif без If."
-
-#: sb.src#RID_BASIC_START.SbERR_NO_MEMORY___ERRCODE_RES_MASK.string.text
-msgid "Not enough memory."
-msgstr "Нема доволно меморија."
-
-#: sb.src#RID_BASIC_START.SbERR_NO_METHOD___ERRCODE_RES_MASK.string.text
-msgid "Property or method not found: $(ARG1)."
-msgstr "Својството или методот не се пронајдени."
-
-#: sb.src#RID_BASIC_START.SbERR_NO_NAMED_ARGS___ERRCODE_RES_MASK.string.text
-msgid "Named arguments are not supported by given object."
-msgstr "Именуваните аргументи не се поддржани од даден објект."
-
-#: sb.src#RID_BASIC_START.SbERR_NO_OBJECT___ERRCODE_RES_MASK.string.text
-msgid "Object variable not set."
-msgstr "Променливата на објект не е поставена."
-
-#: sb.src#RID_BASIC_START.SbERR_NO_OLE___ERRCODE_RES_MASK.string.text
-msgid "OLE Automation is not supported by this object."
-msgstr "OLE-автоматизацијата не е поддржана од овој објект."
-
-#: sb.src#RID_BASIC_START.SbERR_NO_STRINGS_ARRAYS___ERRCODE_RES_MASK.string.text
-msgid "Strings or arrays not permitted."
-msgstr "Не се дозволени низи и матрици."
-
-#: sb.src#RID_BASIC_START.SbERR_OLE_ERROR___ERRCODE_RES_MASK.string.text
-msgid "OLE Automation Error."
-msgstr "Грешка во OLE-автоматизацијата."
-
-#: sb.src#RID_BASIC_START.SbERR_OUT_OF_RANGE___ERRCODE_RES_MASK.string.text
-msgid "Index out of defined range."
-msgstr "Индексот е надвор од дефинираниот опсег."
-
-#: sb.src#RID_BASIC_START.SbERR_PATH_NOT_FOUND___ERRCODE_RES_MASK.string.text
-msgid "Path not found."
-msgstr "Патеката не е пронајдена."
-
-#: sb.src#RID_BASIC_START.SbERR_PROC_DEFINED___ERRCODE_RES_MASK.string.text
-msgid "Sub procedure or function procedure $(ARG1) already defined."
-msgstr "Потпроцедурата или функциската процедура $(ARG1) е веќе дефинирана."
-
-#: sb.src#RID_BASIC_START.SbERR_PROC_UNDEFINED___ERRCODE_RES_MASK.string.text
-msgid "Sub-procedure or function procedure not defined."
-msgstr "Потпроцедурата или функциската процедура не е дефинирана."
-
-#: sb.src#RID_BASIC_START.SbERR_PROG_TOO_LARGE___ERRCODE_RES_MASK.string.text
-msgid "Program too large."
-msgstr "Програмата е преголема."
-
-#: sb.src#RID_BASIC_START.SbERR_PROPERTY_NOT_FOUND___ERRCODE_RES_MASK.string.text
-msgid "Object does not have this property."
-msgstr "Објектот го нема ова својство."
-
-#: sb.src#RID_BASIC_START.SbERR_PROP_READONLY___ERRCODE_RES_MASK.string.text
-msgid "This property is read-only."
-msgstr "Ова својство е само за читање."
-
-#: sb.src#RID_BASIC_START.SbERR_PROP_WRITEONLY___ERRCODE_RES_MASK.string.text
-msgid "This property is write only."
-msgstr "Ова својство е само за запишување."
-
-#: sb.src#RID_BASIC_START.SbERR_READ_PAST_EOF___ERRCODE_RES_MASK.string.text
-msgid "Reading exceeds EOF."
-msgstr "Читањето преминува EOF."
-
-#: sb.src#RID_BASIC_START.SbERR_REDO_FROM_START___ERRCODE_RES_MASK.string.text
-msgid "Incorrect entry; please retry."
-msgstr "Невалиден елемент. Обидете се повторно."
-
-#: sb.src#RID_BASIC_START.SbERR_SETPROP_FAILED___ERRCODE_RES_MASK.string.text
-msgid "Unable to set property."
-msgstr "Не може да се постави својството."
-
-#: sb.src#RID_BASIC_START.SbERR_STACK_OVERFLOW___ERRCODE_RES_MASK.string.text
-msgid "Not enough stack memory."
-msgstr "Нема доволно стек-меморија."
-
-#: sb.src#RID_BASIC_START.SbERR_SYMBOL_EXPECTED___ERRCODE_RES_MASK.string.text
-msgid "Symbol expected."
-msgstr "Се очекуваше симбол."
-
-#: sb.src#RID_BASIC_START.SbERR_SYNTAX___ERRCODE_RES_MASK.string.text
-msgid "Syntax error."
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_SYNTAX & ERRCODE_RES_MASK.String.Text
+msgid  "Syntax error."
 msgstr "Синтаксичка грешка."
 
-#: sb.src#RID_BASIC_START.SbERR_TOO_MANY_FILES___ERRCODE_RES_MASK.string.text
-msgid "Too many files."
-msgstr "Премногу датотеки."
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_GOSUB & ERRCODE_RES_MASK.String.Text
+msgid  "Return without Gosub."
+msgstr "Враќање без Gosub."
 
-#: sb.src#RID_BASIC_START.SbERR_UNDEF_ARRAY___ERRCODE_RES_MASK.string.text
-msgid "Array or procedure $(ARG1) not found."
-msgstr "Низата или процедурата $(ARG1) не е пронајдена."
+#: source/classes/sb.src#RID_BASIC_START.SbERR_REDO_FROM_START & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect entry; please retry."
+msgstr "Невалиден елемент. Обидете се повторно."
 
-#: sb.src#RID_BASIC_START.SbERR_UNDEF_LABEL___ERRCODE_RES_MASK.string.text
-msgid "Label $(ARG1) undefined."
-msgstr "Ознаката $(ARG1) не е дефинирана."
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_ARGUMENT & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid procedure call."
+msgstr "Невалиден повик на процедура."
 
-#: sb.src#RID_BASIC_START.SbERR_UNDEF_PROC___ERRCODE_RES_MASK.string.text
-msgid "Procedure $(ARG1) not found."
-msgstr "Процедурата $(ARG1) не е пронајдена."
+#: source/classes/sb.src#RID_BASIC_START.SbERR_MATH_OVERFLOW & ERRCODE_RES_MASK.String.Text
+msgid  "Overflow."
+msgstr "Преполнување."
 
-#: sb.src#RID_BASIC_START.SbERR_UNDEF_TYPE___ERRCODE_RES_MASK.string.text
-msgid "Unknown data type $(ARG1)."
-msgstr "Непознат тип податоци $(ARG1)."
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_MEMORY & ERRCODE_RES_MASK.String.Text
+msgid  "Not enough memory."
+msgstr "Нема доволно меморија."
 
-#: sb.src#RID_BASIC_START.SbERR_UNDEF_VAR___ERRCODE_RES_MASK.string.text
-msgid "Variable $(ARG1) not found."
-msgstr "Променливата $(ARG1) не е пронајдена."
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ALREADY_DIM & ERRCODE_RES_MASK.String.Text
+msgid  "Array already dimensioned."
+msgstr "Низата е веќе димензионирана."
 
-#: sb.src#RID_BASIC_START.SbERR_UNEXPECTED___ERRCODE_RES_MASK.string.text
-msgid "Unexpected symbol: $(ARG1)."
-msgstr "Неочекуван симбол: $(ARG1)."
+#: source/classes/sb.src#RID_BASIC_START.SbERR_OUT_OF_RANGE & ERRCODE_RES_MASK.String.Text
+msgid  "Index out of defined range."
+msgstr "Индексот е надвор од дефинираниот опсег."
 
-#: sb.src#RID_BASIC_START.SbERR_USER_ABORT___ERRCODE_RES_MASK.string.text
-msgid "Process interrupted by user."
-msgstr "Процесот е прекинат од корисникот."
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DUPLICATE_DEF & ERRCODE_RES_MASK.String.Text
+msgid  "Duplicate definition."
+msgstr "Двојна дефиниција."
 
-#: sb.src#RID_BASIC_START.SbERR_VAR_DEFINED___ERRCODE_RES_MASK.string.text
-msgid "Variable $(ARG1) already defined."
-msgstr "Променливата $(ARG1) е веќе дефинирана."
-
-#: sb.src#RID_BASIC_START.SbERR_VAR_EXPECTED___ERRCODE_RES_MASK.string.text
-msgid "Variable expected."
-msgstr "Се очекуваше променлива."
-
-#: sb.src#RID_BASIC_START.SbERR_VAR_UNDEFINED___ERRCODE_RES_MASK.string.text
-msgid "Variable not defined."
-msgstr "Променливата не е дефинирана."
-
-#: sb.src#RID_BASIC_START.SbERR_WRONG_ARGS___ERRCODE_RES_MASK.string.text
-msgctxt "sb.src#RID_BASIC_START.SbERR_WRONG_ARGS___ERRCODE_RES_MASK.string.text"
-msgid "Invalid number of arguments."
-msgstr "Невалиден број аргументи."
-
-#: sb.src#RID_BASIC_START.SbERR_WRONG_DIMS___ERRCODE_RES_MASK.string.text
-msgid "Dimension specifications do not match."
-msgstr "Спецификациите за димензионирање не се совпаѓаат."
-
-#: sb.src#RID_BASIC_START.SbERR_ZERODIV___ERRCODE_RES_MASK.string.text
-msgid "Division by zero."
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ZERODIV & ERRCODE_RES_MASK.String.Text
+msgid  "Division by zero."
 msgstr "Делење со нула."
 
-#: basic.src#IDD_FIND_DIALOG.RID_CANCEL.cancelbutton.text
-msgctxt "basic.src#IDD_FIND_DIALOG.RID_CANCEL.cancelbutton.text"
-msgid "~Cancel"
-msgstr "~Откажи"
-
-#: basic.src#IDD_PRINT_DIALOG.RID_CANCEL.cancelbutton.text
-msgctxt "basic.src#IDD_PRINT_DIALOG.RID_CANCEL.cancelbutton.text"
-msgid "Cancel"
-msgstr "Откажи"
-
-#: basic.src#IDD_REPLACE_DIALOG.RID_CANCEL.cancelbutton.text
-msgctxt "basic.src#IDD_REPLACE_DIALOG.RID_CANCEL.cancelbutton.text"
-msgid "~Cancel"
-msgstr "~Откажи"
-
-#: basic.src#RID_TP_CRASH.CB_ALLOWCONTACT.checkbox.text
-msgid "Allow Contact"
-msgstr "Дозволи контакт"
-
-#: basic.src#RID_TP_CRASH.CB_USEPROXY.checkbox.text
-msgid "Use Proxy"
-msgstr "Користи прокси"
-
-#: basic.src#RID_TP_PROFILE.CB_AUTORELOAD.checkbox.text
-msgid "AutoReload"
-msgstr "Автом. превчитување"
-
-#: basic.src#RID_TP_PROFILE.CB_AUTOSAVE.checkbox.text
-msgid "Save before execute"
-msgstr "Зачувај пред да извршиш"
-
-#: basic.src#RID_TP_PROFILE.CB_STOPONSYNTAXERRORS.checkbox.text
-msgid "Stop on Syntax Errors"
-msgstr "Запри на синтаксички грешки"
-
-#: basic.src#RID_TP_PROFILE.HID_CHECK.checkbox.text
-msgid "Default HID directory"
-msgstr "Стандардна HID-папка"
-
-#: basic.src#IDD_EDIT_VAR.RID_ED_NEW_STRING.edit.text
-msgid "Edit"
-msgstr "Уредување"
-
-#: basic.src#IDS_CANTLOAD.errorbox.text
-msgid "Library cannot be loaded!"
-msgstr "Библиотеката не може да се вчита!"
-
-#: basic.src#IDS_CANTLOAD.errorbox.title
-msgctxt "basic.src#IDS_CANTLOAD.errorbox.title"
-msgid "Testtool Error"
-msgstr "Грешка во алатката за тестирање"
-
-#: basic.src#IDS_CANTSAVE.errorbox.text
-msgid "Library cannot be saved!"
-msgstr "Библиотекатa не може да биде зачувана!"
-
-#: basic.src#IDS_CANTSAVE.errorbox.title
-msgctxt "basic.src#IDS_CANTSAVE.errorbox.title"
-msgid "Testtool Error"
-msgstr "Грешка во алатката за тестирање"
-
-#: basic.src#IDS_INVALID_VALUE.errorbox.text
-msgid "The value is invalid and cannot be set."
-msgstr "Вредноста е невалидна и не може да се постави."
-
-#: basic.src#IDS_INVALID_VALUE.errorbox.title
-msgctxt "basic.src#IDS_INVALID_VALUE.errorbox.title"
-msgid "Testtool Error"
-msgstr "Грешка во алатката за тестирање"
-
-#: basic.src#IDS_NOMAINPGM.errorbox.text
-msgid "This window does not contain a main program!"
-msgstr "Овој прозорец не содржи главна програма!"
-
-#: basic.src#IDS_NOMAINPGM.errorbox.title
-msgctxt "basic.src#IDS_NOMAINPGM.errorbox.title"
-msgid "Testtool Error"
-msgstr "Грешка во алатката за тестирање"
-
-#: basic.src#IDS_PATTERNNOTFOUND.errorbox.text
-msgid "Search key not found!"
-msgstr "Клучот за пребарување не е пронајден!"
-
-#: basic.src#IDS_PATTERNNOTFOUND.errorbox.title
-msgctxt "basic.src#IDS_PATTERNNOTFOUND.errorbox.title"
-msgid "Testtool Error"
-msgstr "Грешка во алатката за тестирање"
-
-#: basic.src#IDS_READERROR.errorbox.text
-msgid "File cannot be read!"
-msgstr "Датотеката не може да биде прочитана!"
-
-#: basic.src#IDS_READERROR.errorbox.title
-msgctxt "basic.src#IDS_READERROR.errorbox.title"
-msgid "Testtool Error"
-msgstr "Грешка во алатката за тестирање"
-
-#: basic.src#IDS_WRITEERROR.errorbox.text
-msgid "File cannot be saved!"
-msgstr "Датотеката не може да биде зачувана!"
-
-#: basic.src#IDS_WRITEERROR.errorbox.title
-msgctxt "basic.src#IDS_WRITEERROR.errorbox.title"
-msgid "Testtool Error"
-msgstr "Грешка во алатката за тестирање"
-
-#: basic.src#RID_TP_CRASH.FL_CRASHREPORT.fixedline.text
-msgctxt "basic.src#RID_TP_CRASH.FL_CRASHREPORT.fixedline.text"
-msgid "Crashreport"
-msgstr "Извештај за падот"
-
-#: basic.src#RID_TP_GENERIC.RID_FL_AREA.fixedline.text
-msgid "Area"
-msgstr "Област"
-
-#: basic.src#RID_TP_GENERIC.RID_FL_VALUE.fixedline.text
-msgid "Setting"
-msgstr "Поставување"
-
-#: basic.src#RID_TP_MISC.FL_COMMUNICATION.fixedline.text
-msgid "Communication"
-msgstr "Комуникација"
-
-#: basic.src#RID_TP_MISC.FL_OTHER.fixedline.text
-msgid "Other settings"
-msgstr "Други поставувања"
-
-#: basic.src#RID_TP_PROFILE.FL_DIRECTORIES.fixedline.text
-msgid "Profile settings"
-msgstr "Поставувања за профил"
-
-#: basic.src#RID_TP_PROFILE.RID_FL_PROFILE.fixedline.text
-msgctxt "basic.src#RID_TP_PROFILE.RID_FL_PROFILE.fixedline.text"
-msgid "Profile"
-msgstr "Профил"
-
-#: basic.src#IDD_DISPLAY_HID.RID_FT_CONTROLS.fixedtext.text
-msgid "Controls"
-msgstr "Контроли"
-
-#: basic.src#IDD_DISPLAY_HID.RID_FT_SLOTS.fixedtext.text
-msgid "Slots"
-msgstr "Лежишта"
-
-#: basic.src#IDD_EDIT_VAR.RID_FT_CONTENT.fixedtext.text
-msgid "Content"
-msgstr "Содржина"
-
-#: basic.src#IDD_EDIT_VAR.RID_FT_CONTENT_VALUE.fixedtext.text
-msgid "Previous contents"
-msgstr "Претходна содржина"
-
-#: basic.src#IDD_EDIT_VAR.RID_FT_NAME.fixedtext.text
-msgctxt "basic.src#IDD_EDIT_VAR.RID_FT_NAME.fixedtext.text"
-msgid "Name"
-msgstr "Име"
-
-#: basic.src#IDD_EDIT_VAR.RID_FT_NAME_VALUE.fixedtext.text
-msgid "Name of variable"
-msgstr "Име на променлива"
-
-#: basic.src#IDD_EDIT_VAR.RID_FT_NEW_CONTENT.fixedtext.text
-msgid "New content"
-msgstr "Нова содржина"
-
-#: basic.src#IDD_FIND_DIALOG.RID_FIXEDTEXT1.fixedtext.text
-msgid "~Text"
-msgstr "~Текст"
-
-#: basic.src#IDD_PRINT_DIALOG.RID_TEXT.fixedtext.text
-msgid "Print "
-msgstr "Печатење "
-
-#: basic.src#IDD_REPLACE_DIALOG.RID_FIXEDTEXT1.fixedtext.text
-msgid "~Search for"
-msgstr "~Барај за"
-
-#: basic.src#IDD_REPLACE_DIALOG.RID_FIXEDTEXT2.fixedtext.text
-msgid "~Replace by"
-msgstr "~Замени со"
-
-#: basic.src#IDD_TT_ABOUT_DIALOG.1.fixedtext.text
-msgctxt "basic.src#IDD_TT_ABOUT_DIALOG.1.fixedtext.text"
-msgid "VCLTestTool"
-msgstr "VCLTestTool"
-
-#: basic.src#IDD_TT_ABOUT_DIALOG.4.fixedtext.text
-msgid "©1995-2010 Oracle"
-msgstr "©1995-2005 Sun Microsystems, Inc."
-
-#: basic.src#LOAD_CONF.FILENAME.fixedtext.text
-msgid "File.win"
-msgstr "File.win"
-
-#: basic.src#LOAD_CONF.WORK.fixedtext.text
-msgid "Slot IDs"
-msgstr "Ид. на лежиште"
-
-#: basic.src#RID_TP_CRASH.FT_CRHOST.fixedtext.text
-msgctxt "basic.src#RID_TP_CRASH.FT_CRHOST.fixedtext.text"
-msgid "Host"
-msgstr "Сервер"
-
-#: basic.src#RID_TP_CRASH.FT_CRPORT.fixedtext.text
-msgid "Port"
-msgstr "Порта"
-
-#: basic.src#RID_TP_CRASH.FT_EMAIL.fixedtext.text
-msgid "EMail"
-msgstr "Е-пошта"
-
-#: basic.src#RID_TP_FONT.FT_FONTNAME.fixedtext.text
-msgid "Type"
-msgstr "Тип"
-
-#: basic.src#RID_TP_FONT.FT_FONTSIZE.fixedtext.text
-msgid "Size"
-msgstr "Големина"
-
-#: basic.src#RID_TP_FONT.FT_FONTSTYLE.fixedtext.text
-msgid "Typeface"
-msgstr "Изглед на букви"
-
-#: basic.src#RID_TP_MISC.FT_HOST.fixedtext.text
-msgctxt "basic.src#RID_TP_MISC.FT_HOST.fixedtext.text"
-msgid "Host"
-msgstr "Сервер"
-
-#: basic.src#RID_TP_MISC.FT_LRU.fixedtext.text
-msgid "Max LRU Files"
-msgstr "Датотеки Max LRU"
-
-#: basic.src#RID_TP_MISC.FT_PROGDIR.fixedtext.text
-msgid "OOo Program Dir"
-msgstr "Папка со програмите на OOo"
-
-#: basic.src#RID_TP_MISC.FT_TTPORT.fixedtext.text
-msgid "Testtool Port"
-msgstr "Порта за алатка за тестирање"
-
-#: basic.src#RID_TP_MISC.FT_UNOPORT.fixedtext.text
-msgid "Remote UNO Port"
-msgstr "Оддалечена UNO-порта"
-
-#: basic.src#RID_TP_MISC.TIMEOUT_TEXT.fixedtext.text
-msgid "Server Timeout"
-msgstr "Истек на време на серверот"
-
-#: basic.src#RID_TP_PROFILE.BASIS_TEXT.fixedtext.text
-msgid "Base directory"
-msgstr "Основна папка"
-
-#: basic.src#RID_TP_PROFILE.LOG_TEXT.fixedtext.text
-msgid "Log base directory"
-msgstr "Основна папка за дневници"
-
-#: basic.src#IDD_DISPLAY_HID.floatingwindow.text
-msgid "Display HId"
-msgstr "Прикажување HId"
-
-#: basic.src#LOAD_CONF.floatingwindow.text
-msgid "Reading Configuration Files"
-msgstr "Читање на конфигурациски датотеки"
-
-#: basic.src#IDS_NOPRINTERERROR.infobox.text
-msgid "The print function is not available!"
-msgstr "Функцијата за печатење не е достапна!"
-
-#: basic.src#IDS_NOT_YET_IMPLEMENTED.infobox.text
-msgid "Not yet implemented"
-msgstr "Сè уште не е имплементирано"
-
-#: basic.src#RID_APPMENUBAR.RID_APPEDIT.menuitem.text
-msgid "~Edit"
-msgstr "~Уреди"
-
-#: basic.src#RID_APPMENUBAR.RID_APPFILE.menuitem.text
-msgid "~File"
-msgstr "~Датотека"
-
-#: basic.src#RID_APPMENUBAR.RID_APPHELP.menuitem.text
-msgid "~Help"
-msgstr "По~мош"
-
-#: basic.src#RID_APPMENUBAR.RID_APPRUN.menuitem.text
-msgid "~Program"
-msgstr "~Програма"
-
-#: basic.src#RID_APPMENUBAR.RID_APPWINDOW.menuitem.text
-msgid "~Window"
-msgstr "П~розорец"
-
-#: basic.src#RID_EDIT.RID_EDITCOPY.menuitem.text
-msgid "~Copy"
-msgstr "~Копирај"
-
-#: basic.src#RID_EDIT.RID_EDITCUT.menuitem.text
-msgid "~Cut"
-msgstr "~Исечи"
-
-#: basic.src#RID_EDIT.RID_EDITDEL.menuitem.text
-msgid "~Delete"
-msgstr "~Избриши"
-
-#: basic.src#RID_EDIT.RID_EDITPASTE.menuitem.text
-msgid "~Paste"
-msgstr "~Вметни"
-
-#: basic.src#RID_EDIT.RID_EDITREDO.menuitem.text
-msgid "~Redo"
-msgstr "~Повтори"
-
-#: basic.src#RID_EDIT.RID_EDITREPEAT.menuitem.text
-msgid "Repeat S~earch"
-msgstr "Повтори го барањ~ето"
-
-#: basic.src#RID_EDIT.RID_EDITREPLACE.menuitem.text
-msgid "~Replace..."
-msgstr "~Замени..."
-
-#: basic.src#RID_EDIT.RID_EDITSEARCH.menuitem.text
-msgid "~Find..."
-msgstr "~Најди..."
-
-#: basic.src#RID_EDIT.RID_EDITUNDO.menuitem.text
-msgid "~Undo"
-msgstr "~Отповикај"
-
-#: basic.src#RID_FILE.RID_FILECLOSE.menuitem.text
-msgid "~Close"
-msgstr "~Затвори"
-
-#: basic.src#RID_FILE.RID_FILELOADLIB.menuitem.text
-msgid "~Load Library..."
-msgstr "Вчитај биб~лиотека..."
-
-#: basic.src#RID_FILE.RID_FILENEW.menuitem.text
-msgid "~New"
-msgstr "~Нов"
-
-#: basic.src#RID_FILE.RID_FILEOPEN.menuitem.text
-msgid "~Open..."
-msgstr "~Отвори..."
-
-#: basic.src#RID_FILE.RID_FILEPRINT.menuitem.text
-msgid "~Print"
-msgstr "~Печати"
-
-#: basic.src#RID_FILE.RID_FILESAVE.menuitem.text
-msgid "~Save"
-msgstr "~Зачувај"
-
-#: basic.src#RID_FILE.RID_FILESAVEAS.menuitem.text
-msgid "Save~ As..."
-msgstr "~Зачувај како..."
-
-#: basic.src#RID_FILE.RID_FILESAVELIB.menuitem.text
-msgid "Save Li~brary..."
-msgstr "Зачувај би~блиотека..."
-
-#: basic.src#RID_FILE.RID_FILESETUP.menuitem.text
-msgid "P~rinter Setting..."
-msgstr "~Поставување на печатач..."
-
-#: basic.src#RID_FILE.RID_QUIT.menuitem.text
-msgid "~Exit"
-msgstr "~Излез"
-
-#: basic.src#RID_HELP.menuitem.text
-msgid "~About..."
-msgstr "~За..."
-
-#: basic.src#RID_RUN.RID_RUNBREAK.menuitem.text
-msgid "~Break"
-msgstr "П~рекин"
-
-#: basic.src#RID_RUN.RID_RUNCOMPILE.menuitem.text
-msgid "~Compile"
-msgstr "~Компилирај"
-
-#: basic.src#RID_RUN.RID_RUNDISAS.menuitem.text
-msgid "~Disassemble"
-msgstr "~Деасемблирај"
-
-#: basic.src#RID_RUN.RID_RUNNEXTERR.menuitem.text
-msgid "~Next Error"
-msgstr "След~на грешка"
-
-#: basic.src#RID_RUN.RID_RUNPREVERR.menuitem.text
-msgid "~Previous Error"
-msgstr "~Претходна грешка"
-
-#: basic.src#RID_RUN.RID_RUNSTART.menuitem.text
-msgid "~Start"
-msgstr "~Стартувај"
-
-#: basic.src#RID_RUN.RID_RUNSTEPINTO.menuitem.text
-msgid "~Single Step"
-msgstr "~Еден чекор"
-
-#: basic.src#RID_RUN.RID_RUNSTEPOVER.menuitem.text
-msgid "Si~ngle Step over Procedure"
-msgstr "Еден че~кор преку процедура"
-
-#: basic.src#RID_RUN.RID_RUNSTOP.menuitem.text
-msgid "~Stop"
-msgstr "~Запри"
-
-#: basic.src#RID_RUN.RID_TOGLEBRKPNT.menuitem.text
-msgid "Set / Delete Break Point"
-msgstr "Постави / избриши точка на прекин"
-
-#: basic.src#RID_TT_EXTRAS.RID_OPTIONS.menuitem.text
-msgid "~Settings"
-msgstr "По~ставувања"
-
-#: basic.src#IDD_FIND_DIALOG.modaldialog.text
-msgid "Testtool: Find Text"
-msgstr "Алатка за тестирање: Наоѓање текст"
-
-#: basic.src#IDD_REPLACE_DIALOG.modaldialog.text
-msgid "Testtool: Replace Text"
-msgstr "Алатка за тестирање: Замена на текст"
-
-#: basic.src#IDD_TT_ABOUT_DIALOG.modaldialog.text
-msgid "About VCLTestTool"
-msgstr "За VCLTestTool"
-
-#: basic.src#RID_CALLDLG.modaldialog.text
-msgid "Dynamic Link No. "
-msgstr "Динамичка врска бр. "
-
-#: basic.src#IDD_EDIT_VAR.modelessdialog.text
-msgid "Edit variable"
-msgstr "Уредување променлива"
-
-#: basic.src#IDD_PRINT_DIALOG.modelessdialog.text
-msgid "Testtool: Print File"
-msgstr "Алатка за тестирање: Печатење датотека"
-
-#: basic.src#IDD_DISPLAY_HID.RID_OK_CLOSE.okbutton.text
-msgid "Close"
-msgstr "Затвори"
-
-#: basic.src#IDD_FIND_DIALOG.RID_OK.okbutton.text
-msgid "~Find"
-msgstr "~Најди"
-
-#: basic.src#IDD_REPLACE_DIALOG.RID_OK.okbutton.text
-msgid "~Replace"
-msgstr "~Замени"
-
-#: basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_CRA.pageitem.text
-msgctxt "basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_CRA.pageitem.text"
-msgid "Crashreport"
-msgstr "Извештај за падот"
-
-#: basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_FON.pageitem.text
-msgid "Font"
-msgstr "Фонт"
-
-#: basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_GEN.pageitem.text
-msgid "Generic"
-msgstr "Општо"
-
-#: basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_MIS.pageitem.text
-msgid "Misc"
-msgstr "Разно"
-
-#: basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_PRO.pageitem.text
-msgctxt "basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_PRO.pageitem.text"
-msgid "Profile"
-msgstr "Профил"
-
-#: basic.src#IDD_DISPLAY_HID.RID_PB_BENENNEN.pushbutton.text
-msgctxt "basic.src#IDD_DISPLAY_HID.RID_PB_BENENNEN.pushbutton.text"
-msgid "Name"
-msgstr "Име"
-
-#: basic.src#IDD_DISPLAY_HID.RID_PB_KOPIEREN.pushbutton.text
-msgid "Copy"
-msgstr "Копирај"
-
-#: basic.src#IDD_DISPLAY_HID.RID_PB_SELECTALL.pushbutton.text
-msgid "Select all"
-msgstr "Избери ги сите"
-
-#: basic.src#RID_TP_GENERIC.RID_PB_DEL_VALUE.pushbutton.text
-msgctxt "basic.src#RID_TP_GENERIC.RID_PB_DEL_VALUE.pushbutton.text"
-msgid "Delete"
-msgstr "Избриши"
-
-#: basic.src#RID_TP_GENERIC.RID_PB_NEW_AREA.pushbutton.text
-msgctxt "basic.src#RID_TP_GENERIC.RID_PB_NEW_AREA.pushbutton.text"
-msgid "New"
-msgstr "Нова"
-
-#: basic.src#RID_TP_GENERIC.RID_PB_NEW_VALUE.pushbutton.text
-msgctxt "basic.src#RID_TP_GENERIC.RID_PB_NEW_VALUE.pushbutton.text"
-msgid "New"
-msgstr "Нова"
-
-#: basic.src#RID_TP_GENERIC.RID_PB_SELECT_FILE.pushbutton.text
-msgid "Path ..."
-msgstr "Патека ..."
-
-#: basic.src#RID_TP_GENERIC.RID_PD_DEL_AREA.pushbutton.text
-msgctxt "basic.src#RID_TP_GENERIC.RID_PD_DEL_AREA.pushbutton.text"
-msgid "Delete"
-msgstr "Избриши"
-
-#: basic.src#RID_TP_MISC.PB_PROGDIR.pushbutton.text
-msgctxt "basic.src#RID_TP_MISC.PB_PROGDIR.pushbutton.text"
-msgid "..."
-msgstr "..."
-
-#: basic.src#RID_TP_PROFILE.BASIS_SET.pushbutton.text
-msgctxt "basic.src#RID_TP_PROFILE.BASIS_SET.pushbutton.text"
-msgid "..."
-msgstr "..."
-
-#: basic.src#RID_TP_PROFILE.HID_SET.pushbutton.text
-msgctxt "basic.src#RID_TP_PROFILE.HID_SET.pushbutton.text"
-msgid "..."
-msgstr "..."
-
-#: basic.src#RID_TP_PROFILE.LOG_SET.pushbutton.text
-msgctxt "basic.src#RID_TP_PROFILE.LOG_SET.pushbutton.text"
-msgid "..."
-msgstr "..."
-
-#: basic.src#RID_TP_PROFILE.RID_PB_NEW_PROFILE.pushbutton.text
-msgctxt "basic.src#RID_TP_PROFILE.RID_PB_NEW_PROFILE.pushbutton.text"
-msgid "New"
-msgstr "Нов"
-
-#: basic.src#RID_TP_PROFILE.RID_PD_DEL_PROFILE.pushbutton.text
-msgctxt "basic.src#RID_TP_PROFILE.RID_PD_DEL_PROFILE.pushbutton.text"
-msgid "Delete"
-msgstr "Избриши"
-
-#: basic.src#IDS_ASKDIRTYRELOAD.querybox.text
-msgid ""
-"File has been changed on data medium\n"
-"and in the Editor. Reload?"
+#: source/classes/sb.src#RID_BASIC_START.SbERR_VAR_UNDEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Variable not defined."
+msgstr "Променливата не е дефинирана."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_CONVERSION & ERRCODE_RES_MASK.String.Text
+msgid  "Data type mismatch."
+msgstr "Несовпаѓање на типот на податоци."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PARAMETER & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid parameter."
+msgstr "Невалиден параметар."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_USER_ABORT & ERRCODE_RES_MASK.String.Text
+msgid  "Process interrupted by user."
+msgstr "Процесот е прекинат од корисникот."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_RESUME & ERRCODE_RES_MASK.String.Text
+msgid  "Resume without error."
+msgstr "Продолжи без грешка."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_STACK_OVERFLOW & ERRCODE_RES_MASK.String.Text
+msgid  "Not enough stack memory."
+msgstr "Нема доволно стек-меморија."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROC_UNDEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Sub-procedure or function procedure not defined."
+msgstr "Потпроцедурата или функциската процедура не е дефинирана."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_DLL_LOAD & ERRCODE_RES_MASK.String.Text
+msgid  "Error loading DLL file."
+msgstr "Грешка при вчитувањето на DLL-датотека."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_DLL_CALL & ERRCODE_RES_MASK.String.Text
+msgid  "Wrong DLL call convention."
+msgstr "Погрешна конвенција при DLL-повик."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_INTERNAL_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "Internal error $(ARG1)."
+msgstr "Внатрешна грешка $(ARG1)."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_CHANNEL & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid file name or file number."
+msgstr "Невалидно име на датотека или број на датотека."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_FILE_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "File not found."
+msgstr "Датотеката не е пронајдена."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_FILE_MODE & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect file mode."
+msgstr "Неправилен режим на датотека."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_FILE_ALREADY_OPEN & ERRCODE_RES_MASK.String.Text
+msgid  "File already open."
+msgstr "Датотеката е веќе отворена."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_IO_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "Device I/O error."
+msgstr "В/И грешка на уред."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_FILE_EXISTS & ERRCODE_RES_MASK.String.Text
+msgid  "File already exists."
+msgstr "Датотеката веќе постои."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_RECORD_LENGTH & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect record length."
+msgstr "Неправилна должина на запис."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DISK_FULL & ERRCODE_RES_MASK.String.Text
+msgid  "Disk or hard drive full."
+msgstr "Дискот или тврдиот диск е полн."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_READ_PAST_EOF & ERRCODE_RES_MASK.String.Text
+msgid  "Reading exceeds EOF."
+msgstr "Читањето преминува EOF."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_RECORD_NUMBER & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect record number."
+msgstr "Неправилен број на запис."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_TOO_MANY_FILES & ERRCODE_RES_MASK.String.Text
+msgid  "Too many files."
+msgstr "Премногу датотеки."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_DEVICE & ERRCODE_RES_MASK.String.Text
+msgid  "Device not available."
+msgstr "Уредот не е достапен."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ACCESS_DENIED & ERRCODE_RES_MASK.String.Text
+msgid  "Access denied."
+msgstr "Пристапот е одбиен."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_READY & ERRCODE_RES_MASK.String.Text
+msgid  "Disk not ready."
+msgstr "Дискот не е подготвен."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_IMPLEMENTED & ERRCODE_RES_MASK.String.Text
+msgid  "Not implemented."
+msgstr "Не е имплементирано."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DIFFERENT_DRIVE & ERRCODE_RES_MASK.String.Text
+msgid  "Renaming on different drives impossible."
+msgstr "Преименувањето на различни дискови не е можно."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ACCESS_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "Path/File access error."
+msgstr "Грешка при пристап до патека/датотека."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PATH_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Path not found."
+msgstr "Патеката не е пронајдена."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Object variable not set."
+msgstr "Променливата на објект не е поставена."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PATTERN & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid string pattern."
+msgstr "Невалидна шема на низа."
+
+#: source/classes/sb.src#RID_BASIC_START.SBERR_IS_NULL & ERRCODE_RES_MASK.String.Text
+msgid  "Use of zero not permitted."
+msgstr "Употребата на нула не е дозволена."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "DDE Error."
+msgstr "DDE-грешка."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_WAITINGACK & ERRCODE_RES_MASK.String.Text
+msgid  "Awaiting response to DDE connection."
+msgstr "Очекувам одговор на DDE-врска."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_OUTOFCHANNELS & ERRCODE_RES_MASK.String.Text
+msgid  "No DDE channels available."
+msgstr "Нема достапни DDE-канали."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NO_RESPONSE & ERRCODE_RES_MASK.String.Text
+msgid  "No application responded to DDE connect initiation."
+msgstr "Нема апликација што одговорила на иницирање на DDE-врска."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_MULT_RESPONSES & ERRCODE_RES_MASK.String.Text
+msgid  "Too many applications responded to DDE connect initiation."
+msgstr "Премногу апликации одговорија на иницирање на DDE-врска."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_CHANNEL_LOCKED & ERRCODE_RES_MASK.String.Text
+msgid  "DDE channel locked."
+msgstr "DDE-каналот е заклучен."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NOTPROCESSED & ERRCODE_RES_MASK.String.Text
+msgid  "External application cannot execute DDE operation."
+msgstr "Надворешната апликација не може да изврши DDE-операција."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_TIMEOUT & ERRCODE_RES_MASK.String.Text
+msgid  "Timeout while waiting for DDE response."
+msgstr "Времето истече при чекање DDE-одговор."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_USER_INTERRUPT & ERRCODE_RES_MASK.String.Text
+msgid  "User pressed ESCAPE during DDE operation."
+msgstr "Корисникот притисна ESCAPE при DDE-операција."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_BUSY & ERRCODE_RES_MASK.String.Text
+msgid  "External application busy."
+msgstr "Надворешната апликација е зафатена."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NO_DATA & ERRCODE_RES_MASK.String.Text
+msgid  "DDE operation without data."
+msgstr "DDE-операција без податоци."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_WRONG_DATA_FORMAT & ERRCODE_RES_MASK.String.Text
+msgid  "Data are in wrong format."
+msgstr "Податоците се во погрешен формат."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_PARTNER_QUIT & ERRCODE_RES_MASK.String.Text
+msgid  "External application has been terminated."
+msgstr "Надворешната апликација беше прекината."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_CONV_CLOSED & ERRCODE_RES_MASK.String.Text
+msgid  "DDE connection interrupted or modified."
+msgstr "DDE-врската е прекината или изменета."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NO_CHANNEL & ERRCODE_RES_MASK.String.Text
+msgid  "DDE method invoked with no channel open."
+msgstr "DDE-методот е повикан без отворен канал."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_INVALID_LINK & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid DDE link format."
+msgstr "Невалиден формат на DDE-врска."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_QUEUE_OVERFLOW & ERRCODE_RES_MASK.String.Text
+msgid  "DDE message has been lost."
+msgstr "DDE-пораката беше изгубена."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_LINK_ALREADY_EST & ERRCODE_RES_MASK.String.Text
+msgid  "Paste link already performed."
+msgstr "Врската е веќе вметната."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_LINK_INV_TOPIC & ERRCODE_RES_MASK.String.Text
+msgid  "Link mode cannot be set due to invalid link topic."
+msgstr "Режимот на врска не може да се постави поради врска со невалидно име."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_DLL_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "DDE requires the DDEML.DLL file."
+msgstr "На DDE му е потребна датотеката DDEML.DLL."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_CANNOT_LOAD & ERRCODE_RES_MASK.String.Text
+msgid  "Module cannot be loaded; invalid format."
+msgstr "Модулот не може да се вчита. Невалиден формат."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_INDEX & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid object index."
+msgstr "Невалиден индекс на објектот."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_ACTIVE_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Object is not available."
+msgstr "Објектот не е достапен."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PROP_VALUE & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect property value."
+msgstr "Неточна вредност на својството."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROP_READONLY & ERRCODE_RES_MASK.String.Text
+msgid  "This property is read-only."
+msgstr "Ова својство е само за читање."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROP_WRITEONLY & ERRCODE_RES_MASK.String.Text
+msgid  "This property is write only."
+msgstr "Ова својство е само за запишување."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_INVALID_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid object reference."
+msgstr "Невалидна референца на објектот."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_METHOD & ERRCODE_RES_MASK.String.Text
+msgid  "Property or method not found: $(ARG1)."
+msgstr "Својството или методот не се пронајдени."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NEEDS_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Object required."
+msgstr "Потребен е објект."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_INVALID_USAGE_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid use of an object."
+msgstr "Невалидна употреба на објект."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_OLE & ERRCODE_RES_MASK.String.Text
+msgid  "OLE Automation is not supported by this object."
+msgstr "OLE-автоматизацијата не е поддржана од овој објект."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_METHOD & ERRCODE_RES_MASK.String.Text
+msgid  "This property or method is not supported by the object."
+msgstr "Ова својство или метод не се поддржани од овој објект."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_OLE_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "OLE Automation Error."
+msgstr "Грешка во OLE-автоматизацијата."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_ACTION & ERRCODE_RES_MASK.String.Text
+msgid  "This action is not supported by given object."
+msgstr "Ова дејство не е поддржано од даден објект."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_NAMED_ARGS & ERRCODE_RES_MASK.String.Text
+msgid  "Named arguments are not supported by given object."
+msgstr "Именуваните аргументи не се поддржани од даден објект."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_LOCALE & ERRCODE_RES_MASK.String.Text
+msgid  "The current locale setting is not supported by the given object."
+msgstr "Тековното поставувањето на локалот не е поддржано од даден објект."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NAMED_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Named argument not found."
+msgstr "Именуваниот аргумент не е пронајден."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_OPTIONAL & ERRCODE_RES_MASK.String.Text
+msgid  "Argument is not optional."
+msgstr "Аргументот не е изборен."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_WRONG_ARGS & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid number of arguments."
+msgstr "Невалиден број аргументи."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_A_COLL & ERRCODE_RES_MASK.String.Text
+msgid  "Object is not a list."
+msgstr "Објектот не е листа."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_ORDINAL & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid ordinal number."
+msgstr "Невалиден реден број."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DLLPROC_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Specified DLL function not found."
+msgstr "Наведената DLL-функција не е пронајдена."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_CLIPBD_FORMAT & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid clipboard format."
+msgstr "Невалиден формат на табла со исечоци."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROPERTY_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Object does not have this property."
+msgstr "Објектот го нема ова својство."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_METHOD_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Object does not have this method."
+msgstr "Објектот го нема овој метод."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ARG_MISSING & ERRCODE_RES_MASK.String.Text
+msgid  "Required argument lacking."
+msgstr "Недостига потребниот аргумент."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_NUMBER_OF_ARGS & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid number of arguments."
+msgstr "Невалиден број аргументи."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_METHOD_FAILED & ERRCODE_RES_MASK.String.Text
+msgid  "Error executing a method."
+msgstr "Грешка при извршувањето на метод."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_SETPROP_FAILED & ERRCODE_RES_MASK.String.Text
+msgid  "Unable to set property."
+msgstr "Не може да се постави својството."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_GETPROP_FAILED & ERRCODE_RES_MASK.String.Text
+msgid  "Unable to determine property."
+msgstr "Не е можно да се одреди својството."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNEXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Unexpected symbol: $(ARG1)."
+msgstr "Неочекуван симбол: $(ARG1)."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Expected: $(ARG1)."
+msgstr "Очекувано: $(ARG1)."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_SYMBOL_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Symbol expected."
+msgstr "Се очекуваше симбол."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_VAR_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Variable expected."
+msgstr "Се очекуваше променлива."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_LABEL_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Label expected."
+msgstr "Се очекуваше ознака."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_LVALUE_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Value cannot be applied."
+msgstr "Вредноста не може да се употреби."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_VAR_DEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Variable $(ARG1) already defined."
+msgstr "Променливата $(ARG1) е веќе дефинирана."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROC_DEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Sub procedure or function procedure $(ARG1) already defined."
+msgstr "Потпроцедурата или функциската процедура $(ARG1) е веќе дефинирана."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_LABEL_DEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Label $(ARG1) already defined."
+msgstr "Ознаката $(ARG1) е веќе дефинирана."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_VAR & ERRCODE_RES_MASK.String.Text
+msgid  "Variable $(ARG1) not found."
+msgstr "Променливата $(ARG1) не е пронајдена."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_ARRAY & ERRCODE_RES_MASK.String.Text
+msgid  "Array or procedure $(ARG1) not found."
+msgstr "Низата или процедурата $(ARG1) не е пронајдена."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_PROC & ERRCODE_RES_MASK.String.Text
+msgid  "Procedure $(ARG1) not found."
+msgstr "Процедурата $(ARG1) не е пронајдена."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_LABEL & ERRCODE_RES_MASK.String.Text
+msgid  "Label $(ARG1) undefined."
+msgstr "Ознаката $(ARG1) не е дефинирана."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_TYPE & ERRCODE_RES_MASK.String.Text
+msgid  "Unknown data type $(ARG1)."
+msgstr "Непознат тип податоци $(ARG1)."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_EXIT & ERRCODE_RES_MASK.String.Text
+msgid  "Exit $(ARG1) expected."
+msgstr "Беше очекуван излез $(ARG1)."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_BLOCK & ERRCODE_RES_MASK.String.Text
+msgid  "Statement block still open: $(ARG1) missing."
+msgstr "Блокот со израз е сѐ уште отворен: недостасува $(ARG1)."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_BRACKETS & ERRCODE_RES_MASK.String.Text
+msgid  "Parentheses do not match."
+msgstr "Заградите не се совпаѓаат."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_DECLARATION & ERRCODE_RES_MASK.String.Text
+msgid  "Symbol $(ARG1) already defined differently."
+msgstr "Симболот $(ARG1) е веќе дефиниран поинаку."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PARAMETERS & ERRCODE_RES_MASK.String.Text
+msgid  "Parameters do not correspond to procedure."
+msgstr "Параметрите не соодветствуваат на процедурата."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_CHAR_IN_NUMBER & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid character in number."
+msgstr "Невалиден знак во бројот."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_MUST_HAVE_DIMS & ERRCODE_RES_MASK.String.Text
+msgid  "Array must be dimensioned."
+msgstr "Низата мора да биде димензионирана."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_IF & ERRCODE_RES_MASK.String.Text
+msgid  "Else/Endif without If."
+msgstr "Else/Endif без If."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_IN_SUBR & ERRCODE_RES_MASK.String.Text
+msgid  "$(ARG1) not allowed within a procedure."
+msgstr "$(ARG1) не е дозволено внатре во процедура."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_IN_MAIN & ERRCODE_RES_MASK.String.Text
+msgid  "$(ARG1) not allowed outside a procedure."
+msgstr "$(ARG1) не е дозволено надвор од процедура."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_WRONG_DIMS & ERRCODE_RES_MASK.String.Text
+msgid  "Dimension specifications do not match."
+msgstr "Спецификациите за димензионирање не се совпаѓаат."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_OPTION & ERRCODE_RES_MASK.String.Text
+msgid  "Unknown option: $(ARG1)."
+msgstr "Непозната опција: $(ARG1)."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_CONSTANT_REDECLARED & ERRCODE_RES_MASK.String.Text
+msgid  "Constant $(ARG1) redefined."
+msgstr "Константата $(ARG1) е редефинирана."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROG_TOO_LARGE & ERRCODE_RES_MASK.String.Text
+msgid  "Program too large."
+msgstr "Програмата е преголема."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_STRINGS_ARRAYS & ERRCODE_RES_MASK.String.Text
+msgid  "Strings or arrays not permitted."
+msgstr "Не се дозволени низи и матрици."
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_EXCEPTION & ERRCODE_RES_MASK.String.Text
+msgid  "An exception occurred $(ARG1)."
+msgstr "Се појави исклучок $(ARG1)."
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_ARRAY_FIX & ERRCODE_RES_MASK.String.Text
+msgid  "This array is fixed or temporarily locked."
+msgstr "Оваа матрица е фиксна или привремено заклучена."
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_STRING_OVERFLOW & ERRCODE_RES_MASK.String.Text
+msgid  "Out of string space."
+msgstr "Нема веќе простор за низата."
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_EXPR_TOO_COMPLEX & ERRCODE_RES_MASK.String.Text
+msgid  "Expression Too Complex."
+msgstr "Изразот е премногу сложен."
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_OPER_NOT_PERFORM & ERRCODE_RES_MASK.String.Text
+msgid  "Can't perform requested operation."
+msgstr "Не можам да ја извршам бараната операција."
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_TOO_MANY_DLL & ERRCODE_RES_MASK.String.Text
+msgid  "Too many DLL application clients."
+msgstr "Премногу клиенти за DLL апликацијата."
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_LOOP_NOT_INIT & ERRCODE_RES_MASK.String.Text
+msgid  "For loop not initialized."
+msgstr "Не е иницијализирано за повторување."
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_COMPAT & ERRCODE_RES_MASK.String.Text
+msgid  "$(ARG1)"
 msgstr ""
-"Датотеката е изменета на медиумот со податоци.\n"
-"Ќе ја превчитате?"
 
-#: basic.src#IDS_ASKDIRTYRELOAD.querybox.title
-msgctxt "basic.src#IDS_ASKDIRTYRELOAD.querybox.title"
-msgid "Testtool"
-msgstr "Алатка за тестирање"
+#: source/classes/sb.src#IDS_SBERR_TERMINATED.String.Text
+msgid  "The macro running has been interrupted"
+msgstr "Макрото што се извршуваше беше прекинато."
 
-#: basic.src#IDS_ASKRELOAD.querybox.text
-msgid "File has been changed on data medium. Reload?"
-msgstr "Датотеката е изменета на медиумот со податоци. Ќе ја превчитате?"
+#: source/classes/sb.src#IDS_SBERR_STOREREF.String.Text
+msgid  "Reference will not be saved: "
+msgstr "Референцата нема да бидат зачувана: "
 
-#: basic.src#IDS_ASKRELOAD.querybox.title
-msgctxt "basic.src#IDS_ASKRELOAD.querybox.title"
-msgid "Testtool"
-msgstr "Алатка за тестирање"
+#: source/classes/sb.src#ERRCODE_BASMGR_LIBLOAD & ERRCODE_RES_MASK.String.Text
+msgid  "Error loading library '$(ARG1)'."
+msgstr "Грешка при вчитувањето на библиотеката „$(ARG1)“."
 
-#: basic.src#IDS_ASKSAVEERROR.querybox.text
-msgid "Error saving files! Run anyway?"
-msgstr "Грешка при зачувување на датотеките! Дали сепак да се изврши?"
+#: source/classes/sb.src#ERRCODE_BASMGR_LIBSAVE & ERRCODE_RES_MASK.String.Text
+msgid  "Error saving library: '$(ARG1)'."
+msgstr "Грешка при зачувувањето на библиотеката: „$(ARG1)“."
 
-#: basic.src#IDS_ASKSAVEERROR.querybox.title
-msgctxt "basic.src#IDS_ASKSAVEERROR.querybox.title"
-msgid "Testtool"
-msgstr "Алатка за тестирање"
+#: source/classes/sb.src#ERRCODE_BASMGR_MGROPEN & ERRCODE_RES_MASK.String.Text
+msgid  "The BASIC from the file '$(ARG1)' could not be initialized."
+msgstr "Не може да биде иницијализиран BASIC од датотеката „$(ARG1)“."
 
-#: basic.src#IDS_ASK_DIRTY_AND_DISKCHANGE_SAVE.querybox.text
-msgid ""
-"File has been changed on data medium\n"
-"and in the Editor. Save?"
-msgstr ""
-"Датотеката е изменета на медиумот со податоци\n"
-"и во Уредувачот. Дали да ја зачувам?"
+#: source/classes/sb.src#ERRCODE_BASMGR_MGRSAVE & ERRCODE_RES_MASK.String.Text
+msgid  "Error saving BASIC: '$(ARG1)'."
+msgstr "Грешка при зачувување на BASIC: „$(ARG1)“."
 
-#: basic.src#IDS_ASK_DIRTY_AND_DISKCHANGE_SAVE.querybox.title
-msgctxt "basic.src#IDS_ASK_DIRTY_AND_DISKCHANGE_SAVE.querybox.title"
-msgid "Testtool"
-msgstr "Алатка за тестирање"
+#: source/classes/sb.src#ERRCODE_BASMGR_REMOVELIB & ERRCODE_RES_MASK.String.Text
+msgid  "Error removing library."
+msgstr "Грешка при отстранувањето на библиотеката."
 
-#: basic.src#IDS_ASK_DIRTY_SAVE.querybox.text
-msgid "File has been changed. Save?"
-msgstr "Датотеката е изменета. Дали да ја зачувам?"
+#: source/classes/sb.src#ERRCODE_BASMGR_UNLOADLIB & ERRCODE_RES_MASK.String.Text
+msgid  "The library could not be removed from memory."
+msgstr "Библиотеката не може да се отстрани од меморијата."
 
-#: basic.src#IDS_ASK_DIRTY_SAVE.querybox.title
-msgctxt "basic.src#IDS_ASK_DIRTY_SAVE.querybox.title"
-msgid "Testtool"
-msgstr "Алатка за тестирање"
-
-#: basic.src#IDS_ASK_DISKCHANGE_SAVE.querybox.text
-msgid ""
-"File has been changed on data medium.\n"
-"Overwrite?"
-msgstr ""
-"Датотеката е изменета на медиумот со податоци.\n"
-"Дали ќе запишете врз неа?"
-
-#: basic.src#IDS_ASK_DISKCHANGE_SAVE.querybox.title
-msgctxt "basic.src#IDS_ASK_DISKCHANGE_SAVE.querybox.title"
-msgid "Testtool"
-msgstr "Алатка за тестирање"
-
-#: basic.src#IDS_LOSS_OF_INFORMATION.querybox.text
-msgid "Saving in an external format causes information loss."
-msgstr "Зачувувањето во надворешен формат предизвикува губење податоци."
-
-#: basic.src#IDS_LOSS_OF_INFORMATION.querybox.title
-msgctxt "basic.src#IDS_LOSS_OF_INFORMATION.querybox.title"
-msgid "Testtool"
-msgstr "Алатка за тестирање"
-
-#: basic.src#IDS_RUNNING.querybox.text
-msgid "BASIC is still running! Exit anyway?"
-msgstr "BASIC сè уште работи! Дали сепак излегувате?"
-
-#: basic.src#IDS_RUNNING.querybox.title
-msgctxt "basic.src#IDS_RUNNING.querybox.title"
-msgid "Testtool"
-msgstr "Алатка за тестирање"
-
-#: basic.src#IDD_EDIT_VAR.RID_RB_NEW_BOOL_F.radiobutton.text
-msgid "False"
-msgstr "Неточно"
-
-#: basic.src#IDD_EDIT_VAR.RID_RB_NEW_BOOL_T.radiobutton.text
-msgid "True"
-msgstr "Точно"
-
-#: basic.src#IDS_APPMODE_BREAK.string.text
-msgid "Break"
-msgstr "Прекин"
-
-#: basic.src#IDS_APPMODE_RUN.string.text
-msgid "Run"
-msgstr "Изврши"
-
-#: basic.src#IDS_APPNAME.string.text
-msgctxt "basic.src#IDS_APPNAME.string.text"
-msgid "Testtool"
-msgstr "Алатка за тестирање"
-
-#: basic.src#IDS_APPNAME2.string.text
-msgctxt "basic.src#IDS_APPNAME2.string.text"
-msgid "VCLTestTool"
-msgstr "VCLTestTool"
-
-#: basic.src#IDS_BASFILTER.string.text
-msgid "Source files (*.BAS)"
-msgstr "Датотеки со изворен код (*.BAS)"
-
-#: basic.src#IDS_CANCEL.string.text
-msgctxt "basic.src#IDS_CANCEL.string.text"
-msgid "Cancel"
-msgstr "Откажи"
-
-#: basic.src#IDS_CONTINUE.string.text
-msgid "Continue"
-msgstr "Продолжи"
-
-#: basic.src#IDS_DISASWIN.string.text
-msgid "Disassembly"
-msgstr "Деасемблирај"
-
-#: basic.src#IDS_EDIT_VAR.string.text
-msgid "Edit ($Arg1)"
-msgstr "Уреди ($Arg1)"
-
-#: basic.src#IDS_ERROR1.string.text
-msgid "Error "
-msgstr "Грешка "
-
-#: basic.src#IDS_ERROR2.string.text
-msgid " in line "
-msgstr " на линија "
-
-#: basic.src#IDS_INCFILTER.string.text
-msgid "Include files (*.INC)"
-msgstr "Вклучени датотеки (*.INC)"
-
-#: basic.src#IDS_LIBFILTER.string.text
-msgid "Libraries (*.SB)"
-msgstr "Библиотеки (*.SB)"
-
-#: basic.src#IDS_LOADDLG.string.text
-msgid "Testtool: Load File"
-msgstr "Алатка за тест: Вчитување датотека"
-
-#: basic.src#IDS_NONAME.string.text
-msgid "Unnamed"
-msgstr "Неименувано"
-
-#: basic.src#IDS_NO_LONGNAME.string.text
-msgid "No entries in Hid.Lst"
-msgstr "Нема елементи во скриената листа"
-
-#: basic.src#IDS_OBJECT.string.text
-msgid "Object"
-msgstr "Објект"
-
-#: basic.src#IDS_PAGE.string.text
-msgid "Page "
-msgstr "Страница "
-
-#: basic.src#IDS_PRINTMSG.string.text
-msgid "Printout of "
-msgstr "Отпечаток од "
-
-#: basic.src#IDS_RESFILTER.string.text
-msgid "Result files (*.RES)"
-msgstr "Датотеки со резултати (*.RES)"
-
-#: basic.src#IDS_SAVEDLG.string.text
-msgid "Testtool: Save File"
-msgstr "Алатка за тестирање: Зачувување датотека"
-
-#: basic.src#IDS_TXTFILTER.string.text
-msgid "Results as text file (*.TXT)"
-msgstr "Резултати како текст. датотека (*.TXT)"
-
-#: basic.src#IDS_WARNING1.string.text
-msgid "Warning "
-msgstr "Предупредување "
-
-#: basic.src#IDS_WARNING_PREFIX.string.text
-msgctxt "basic.src#IDS_WARNING_PREFIX.string.text"
-msgid "Warning: "
-msgstr "Предупредување: "
-
-#: basic.src#RID_TT_EXTRAS_NAME.string.text
-msgid "E~xtra"
-msgstr "Д~ополнителни"
-
-#: basic.src#IDD_OPTIONS_DLG.tabdialog.text
-msgid "Settings"
-msgstr "Поставувања"
-
-#: basmsg.src#S_ERROR_OUTSIDE_TESTCASE.string.text
-msgid "Error outside of test case"
-msgstr "Грешка надвор од тестниот случај"
-
-#: basmsg.src#S_PROG_START.string.text
-msgid "Program start: ($Arg1); ($Arg2)"
-msgstr "Старт на програмата: ($Arg1); ($Arg2)"
-
-#: basmsg.src#S_WARNING_PREFIX.string.text
-msgctxt "basmsg.src#S_WARNING_PREFIX.string.text"
-msgid "Warning: "
-msgstr "Предупредување: "
-
-#: svtmsg.src#S_ALLOWED_ONLY_IN_DOCKING_MODE.string.text
-msgid "Method only allowed in docking mode at ($Arg1)"
-msgstr "Методот е достапен само во режим на вкотвување на ($Arg1)"
-
-#: svtmsg.src#S_ALLOWED_ONLY_IN_FLOATING_MODE.string.text
-msgid "Method only allowed in floating mode at ($Arg1)"
-msgstr "Методот е достапен само во режим со подвижна запирка на ($Arg1)"
-
-#: svtmsg.src#S_APP_SHUTDOWN.string.text
-msgid "Application has been shut down"
-msgstr "Апликацијата беше исклучена"
-
-#: svtmsg.src#S_ATTEMPT_TO_WRITE_READONLY.string.text
-msgid "Attempt to write on read-only ($Arg1)"
-msgstr "Обид да се запише во ($Arg1) што е само за читање"
-
-#: svtmsg.src#S_BUTTONID_REQUIRED.string.text
-msgid "A button ID needs to be given at ($Arg1)"
-msgstr "Мора да внесете копче Ид. на ($Arg1)"
-
-#: svtmsg.src#S_BUTTON_DISABLED_ON_TOOLBOX.string.text
-msgid "The button is disabled in ToolBox at ($Arg1)"
-msgstr "Копчето во Алатникот е оневозможено на ($Arg1)"
-
-#: svtmsg.src#S_BUTTON_HIDDEN_ON_TOOLBOX.string.text
-msgid "The button is hidden in ToolBox at ($Arg1)"
-msgstr "Копчето е скриено во Алатникот на ($Arg1)"
-
-#: svtmsg.src#S_BUTTON_ID_NOT_THERE.string.text
-msgid "There is no button with ID ($Arg1) at ($Arg2)"
-msgstr "Нема копче со Ид. ($Arg1) на ($Arg2)"
-
-#: svtmsg.src#S_CANNOT_CREATE_DIRECTORY.string.text
-msgid "Cannot create Directory: \"($Arg1)\""
-msgstr "Не може да се создаде папката: „($Arg1)“"
-
-#: svtmsg.src#S_CANNOT_FIND_FLOATING_WIN.string.text
-msgid "Cannot find FloatingWindow for floating DockingWindow at ($Arg1)."
-msgstr ""
-"Не може да се пронајде лебдечки прозорец за лебдење на закотвен прозорец на "
-"($Arg1)."
-
-#: svtmsg.src#S_CANNOT_MAKE_BUTTON_VISIBLE_IN_TOOLBOX.string.text
-msgid "Button cannot be made visible in ToolBox at ($Arg1)"
-msgstr "Копчето во Алатникот не може да биде видливо на ($Arg1)"
-
-#: svtmsg.src#S_CONTROLTYPE_NOT_SUPPORTED.string.text
-msgid "ControlType ($Arg1) is not supported"
-msgstr "Контролниот тип ($Arg1) не е поддржан"
-
-#: svtmsg.src#S_DEPRECATED.string.text
-msgid "Deprecated! Please change the script."
-msgstr "Застарено! Ве молам изменете ја скриптата."
-
-#: svtmsg.src#S_DIRECTORY_NOT_EMPTY.string.text
-msgid "Directory has to be Empty to unpack to. Directory: \"($Arg1)\""
-msgstr "Папката треба да биде празна за да се отпакува во неа. Папка: „($Arg1)“"
-
-#: svtmsg.src#S_ENTRY_NOT_FOUND.string.text
-msgid "\"($Arg2)\" entry at ($Arg1) not found"
-msgstr "Елементот „($Arg2)“ во ($Arg1) не е пронајден"
-
-#: svtmsg.src#S_ERROR_IN_SET_TEXT.string.text
-msgid "Set text did not function"
-msgstr "Поставувањето текст не функционира"
-
-#: svtmsg.src#S_ERROR_SAVING_IMAGE.string.text
-msgid "Error #($Arg1) when saving the image"
-msgstr "Грешка бр. ($Arg1) при зачувување нa сликата"
-
-#: svtmsg.src#S_GPF_ABORT.string.text
-msgid "Program aborted with GPF"
-msgstr "Програмата прекина со GPF"
-
-#: svtmsg.src#S_HELPID_ON_TOOLBOX_NOT_FOUND.string.text
-msgid "HelpID in ToolBox not found at ($Arg1)"
-msgstr "Ид. за помош во Алатникот не е пронајден на ($Arg1)"
-
-#: svtmsg.src#S_INTERNAL_ERROR.string.text
-msgid "Internal error at ($Arg1)"
-msgstr "Внатрешна грешка на ($Arg1)"
-
-#: svtmsg.src#S_INVALID_PARAMETERS.string.text
-msgid "Invalid Parameters"
-msgstr "Невалидни параметри"
-
-#: svtmsg.src#S_INVALID_POSITION.string.text
-msgid "Invalid position at ($Arg1)"
-msgstr "Невалидна позиција на ($Arg1)"
-
-#: svtmsg.src#S_ITEMS_INVISIBLE.string.text
-msgid "The items are hidden at ($Arg1)"
-msgstr "Елементите се скриени на ($Arg1)"
-
-#: svtmsg.src#S_MENU_NOT_CLOSING.string.text
-msgid "Menu not closing."
-msgstr "Менито не се затвара."
-
-#: svtmsg.src#S_METHOD_FAILED.string.text
-msgid "($Arg1) of entry \"($Arg2)\" failed"
-msgstr "($Arg1) на елементот „($Arg2)“ не успеа"
-
-#: svtmsg.src#S_NO_ACTIVE_WINDOW.string.text
-msgid "No active window found (GetNextCloseWindow)"
-msgstr "Не е пронајден активен прозорец (GetNextCloseWindow)"
-
-#: svtmsg.src#S_NO_CANCEL_BUTTON.string.text
-msgid "There is no Cancel button at ($Arg1)"
-msgstr "Нема копче „Откажи“ на ($Arg1)"
-
-#: svtmsg.src#S_NO_DEFAULT_BUTTON.string.text
-msgid "There is no Default button defined at ($Arg1)"
-msgstr "Нема копче „Стандардно“ дефинирано на ($Arg1)"
-
-#: svtmsg.src#S_NO_DIALOG_IN_GETACTIVE.string.text
-msgid "GetActive does not return a dialog! Inform development"
-msgstr "GetActive не враќа дијалог! Информирајте го развојниот тим"
-
-#: svtmsg.src#S_NO_HELP_BUTTON.string.text
-msgid "There is no Help button at ($Arg1)"
-msgstr "Нема копче „Помош“ на ($Arg1)"
-
-#: svtmsg.src#S_NO_LIST_BOX_BUTTON.string.text
-msgid "ListBoxButton does not exist in ($Arg1)"
-msgstr "ListBoxButton не постои на ($Arg1)"
-
-#: svtmsg.src#S_NO_LIST_BOX_STRING.string.text
-msgid "String does not exist in ($Arg1)"
-msgstr "Низата не постои во ($Arg1)"
-
-#: svtmsg.src#S_NO_MENU.string.text
-msgid "There is no menu at ($Arg1)"
-msgstr "Нема мени на ($Arg1)"
-
-#: svtmsg.src#S_NO_MORE_FILES.string.text
-msgid "No more files"
-msgstr "Нема повеќе датотеки"
-
-#: svtmsg.src#S_NO_NO_BUTTON.string.text
-msgid "There is no No button at ($Arg1)"
-msgstr "Нема копче „Не“ на ($Arg1)"
-
-#: svtmsg.src#S_NO_OK_BUTTON.string.text
-msgid "There is no OK button at ($Arg1)"
-msgstr "Нема копче „Во ред“ на ($Arg1)"
-
-#: svtmsg.src#S_NO_POPUP.string.text
-msgid "Pop-up menu not open"
-msgstr "Не е отворено скокачкото мени"
-
-#: svtmsg.src#S_NO_RETRY_BUTTON.string.text
-msgid "There is no Repeat button at ($Arg1)"
-msgstr "Нема копче „Повтори“ на ($Arg1)"
-
-#: svtmsg.src#S_NO_SAX_PARSER.string.text
-msgid "No SAX Parser when using ($Arg1). Initialize with 'SAXReadFile' first."
-msgstr ""
-"Нема SAX-анализатор кога се користи ($Arg1). Иницијализирајте прво со "
-"„SAXReadFile“."
-
-#: svtmsg.src#S_NO_SCROLLBAR.string.text
-msgid "No scroll bar at ($Arg1)"
-msgstr "Нема лента за движење на ($Arg1)"
-
-#: svtmsg.src#S_NO_SELECTED_ENTRY.string.text
-msgid "No entry is selected in ($Arg2) at ($Arg1)"
-msgstr "Нема избран елемент во ($Arg2) на ($Arg1)"
-
-#: svtmsg.src#S_NO_SELECTED_ENTRY_DEPRECATED.string.text
-msgid "No entry is selected in TreeListBox at ($Arg1)"
-msgstr "Нема избран елемент во TreeListBox на ($Arg1)"
-
-#: svtmsg.src#S_NO_SELECT_FALSE.string.text
-msgid "Select FALSE not allowed. Use MultiSelect at ($Arg1)"
-msgstr "Изборот Неточно не е дозволен. Користете повеќекратен избор на ($Arg1)"
-
-#: svtmsg.src#S_NO_STATUSBAR.string.text
-msgid "No status bar at ($Arg1)"
-msgstr "Нема статусна линија на ($Arg1)"
-
-#: svtmsg.src#S_NO_SUBMENU.string.text
-msgid "Submenu does not exist"
-msgstr "Подменито не постои"
-
-#: svtmsg.src#S_NO_YES_BUTTON.string.text
-msgid "There is no Yes button at ($Arg1)"
-msgstr "Нема копче „Да“ на ($Arg1)"
-
-#: svtmsg.src#S_NUMBER_TOO_BIG.string.text
-msgid "Entry number ($Arg2) is too large in ($Arg1). Max. allowed is ($Arg3)"
-msgstr ""
-"Елементот бр. ($Arg2) е премногу голем во ($Arg1). Макс. дозволено е ($Arg3)"
-
-#: svtmsg.src#S_NUMBER_TOO_SMALL.string.text
-msgid ""
-"The entry number ($Arg2) is too small in ($Arg1). Min allowed is ($Arg3)"
-msgstr ""
-"Елементот бр. ($Arg2) е премногу мал во ($Arg1). Мин. дозволено е ($Arg3)"
-
-#: svtmsg.src#S_POINTER_OUTSIDE_APPWIN.string.text
-msgid "Pointer not inside application window at '($Arg1)'"
-msgstr "Покажувачот е надвор од апликацискиот прозорец на „($Arg1)“"
-
-#: svtmsg.src#S_RESETAPPLICATION_FAILED_COMPLEX.string.text
-msgid "ResetApplication failed: too complex"
-msgstr "Ресетирањето на апликацијата не успеа: премногу е комплексно"
-
-#: svtmsg.src#S_RESETAPPLICATION_FAILED_UNKNOWN.string.text
-msgid "ResetApplication failed: unknown window type"
-msgstr "Ресетирањето на апликацијата не успеа: непознат тип прозорец"
-
-#: svtmsg.src#S_SELECTION_BY_ATTRIBUTE_ONLY_DIRECTORIES.string.text
-msgid "Selection by attributes only possible for directories"
-msgstr "Изборот според атрибути е можен само за папки"
-
-#: svtmsg.src#S_SELECT_DESELECT_VIA_STRING_NOT_IMPLEMENTED.string.text
-msgid "Select/Deselect with string not implemented at ($Arg1)"
-msgstr "Избирање/одизбирање со низа не е имплементирано на ($Arg1)"
-
-#: svtmsg.src#S_SID_EXECUTE_FAILED.string.text
-msgid "Slot ID could not be executed"
-msgstr "Ид. на лежиште не може да се изврши"
-
-#: svtmsg.src#S_SID_EXECUTE_FAILED_NO_DISPATCHER.string.text
-msgid "Slot ID cannot be executed. No ActiveDispatcher"
-msgstr "Ид. на лежиште не може да се изврши. Нема активен распоредувач"
-
-#: svtmsg.src#S_SIZE_BELOW_MINIMUM.string.text
-msgid "The Size is below the minimum. x=($Arg1) ,y=($Arg2)"
-msgstr "Големината е помала од минималната. x=($Arg1) ,y=($Arg2)"
-
-#: svtmsg.src#S_SIZE_NOT_CHANGEABLE.string.text
-msgid "Size cannot be altered at ($Arg1)"
-msgstr "Големината не може да се измени на ($Arg1)"
-
-#: svtmsg.src#S_SLOT_IN_EXECUTE.string.text
-msgid "Another Slot is being executed already."
-msgstr "Веќе се извршува друго лежиште."
-
-#: svtmsg.src#S_SPLITWIN_NOT_FOUND.string.text
-msgid "SplitWindow not found at ($Arg1)"
-msgstr "SplitWindow не е пронајдено на ($Arg1)"
-
-#: svtmsg.src#S_TABPAGE_NOT_FOUND.string.text
-msgid "Tab page not found at ($Arg1)"
-msgstr "Ливчето не е пронајдено на ($Arg1)"
-
-#: svtmsg.src#S_TEAROFF_FAILED.string.text
-msgid "TearOff failed in ToolBox at ($Arg1)"
-msgstr "TearOff не успеа во Алатникот на ($Arg1)"
-
-#: svtmsg.src#S_TRISTATE_NOT_ALLOWED.string.text
-msgid "Tristate cannot be set at ($Arg1)"
-msgstr "Не може да бидат поставени три состојби на ($Arg1)"
-
-#: svtmsg.src#S_UNKNOWN_COMMAND.string.text
-msgid "Unknown command '($Arg1)'"
-msgstr "Непозната наредба „($Arg1)“"
-
-#: svtmsg.src#S_UNKNOWN_METHOD.string.text
-msgid "Unknown method '($Arg1)' on ($Arg2)"
-msgstr "Непознат метод „($Arg1)“ на ($Arg2)"
-
-#: svtmsg.src#S_UNKNOWN_TYPE.string.text
-msgid "Unknown object type ($Arg1) from UId or method '($Arg2)' not supported"
-msgstr "Непознат тип објект ($Arg1) од UId или методот „($Arg2)“ не е поддржан"
-
-#: svtmsg.src#S_UNO_PROPERTY_NITIALIZE_FAILED.string.text
-msgid "UnoSlot: Properties could not be initialized"
-msgstr "Uno-лежиште: Својствата не може да се иницијализираат"
-
-#: svtmsg.src#S_UNO_URL_EXECUTE_FAILED_DISABLED.string.text
-msgid "UNO URL \"($Arg1)\" could not be run: Disabled"
-msgstr "UNO URL „($Arg1)“ не може да се изврши: Оневозможено"
-
-#: svtmsg.src#S_UNO_URL_EXECUTE_FAILED_NO_DISPATCHER.string.text
-msgid "UNO URL \"($Arg1)\" could not be executed: No dispatcher was found."
-msgstr ""
-"UNO URL „($Arg1)“ не може да биде извршена: Нема пронајден распоредувач."
-
-#: svtmsg.src#S_UNO_URL_EXECUTE_FAILED_NO_FRAME.string.text
-msgid "UNO URL \"($Arg1)\" could not be executed: No ActiveFrame on desktop."
-msgstr ""
-"UNO URL „($Arg1)“ не може да биде извршена: Нема активна рамка на раб. "
-"површина."
-
-#: svtmsg.src#S_UNPACKING_STORAGE_FAILED.string.text
-msgid "Unpacking storage \"($Arg1)\" to \"($Arg2)\" failed"
-msgstr "Распакувањето на складот „($Arg1)“ на „($Arg2)“ не успеа"
-
-#: svtmsg.src#S_WINDOW_DISAPPEARED.string.text
-msgid "Window disappeared in the meantime at ($Arg1)"
-msgstr "Во меѓувреме, исчезна прозорецот на ($Arg1)"
-
-#: svtmsg.src#S_WIN_DISABLED.string.text
-msgid "($Arg1) could not be accessed. Disabled"
-msgstr "Не може да се пристапи до ($Arg1). Оневозможено"
-
-#: svtmsg.src#S_WIN_INVISIBLE.string.text
-msgid "($Arg1) is not visible"
-msgstr "($Arg1) не е видливо"
-
-#: svtmsg.src#S_WIN_NOT_FOUND.string.text
-msgid "($Arg1) could not be found"
-msgstr "($Arg1) не може да се пронајде"
-
-#: testtool.src#S_INVALID_KEYCODE.string.text
-msgid "Is an invalid KeyCode!"
-msgstr "Невалиден код на знак!"
-
-#: testtool.src#S_MANDATORY_FILE.string.text
-msgid ""
-"\n"
-"could not be found.\n"
-"This file is indispensable."
-msgstr ""
-"\n"
-"не може да се пронајде.\n"
-"Оваа датотека е неопходна."
-
-#: testtool.src#S_READING_BASIC_MODULE.string.text
-msgid "Reading BASIC module"
-msgstr "Читам BASIC-модул"
-
-#: testtool.src#S_READING_CONTROLS.string.text
-msgid "Reading Controls"
-msgstr "Читам контроли"
-
-#: testtool.src#S_READING_LONGNAMES.string.text
-msgid "Reading long-names"
-msgstr "Читам долги имиња"
-
-#: testtool.src#S_READING_SLOT_IDS.string.text
-msgid "Reading Slot IDs"
-msgstr "Читам ид. на лежиште"
-
-#: testtool.src#S_STARTING_APPLICATION.string.text
-msgid "Starting application"
-msgstr "Стартувам апликација"
-
-#: ttmsg.src#S_APPLICATION_RESTARTED.string.text
-msgid "Application has been restarted."
-msgstr "Апликацијата беше рестартирана."
-
-#: ttmsg.src#S_APPLICATION_START_FAILED.string.text
-msgid "Application \"($Arg1)\" cannot be started. "
-msgstr "Апликацијата „($Arg1)“ не може да се стартува. "
-
-#: ttmsg.src#S_CANNOT_OPEN_FILE.string.text
-msgid "File cannot be opened: ($Arg1)"
-msgstr "Датотеката не може да се отвори: ($Arg1)"
-
-#: ttmsg.src#S_DOUBLE_NAME.string.text
-msgid "Name double: ($Arg1)"
-msgstr "Двојно име: ($Arg1)"
-
-#: ttmsg.src#S_ERRORS_DETECTED.string.text
-msgid "** ($Arg1) errors occurred"
-msgstr "** Се појавија ($Arg1) грешки"
-
-#: ttmsg.src#S_FIRST_SHORTNAME_REQ_ASTRX.string.text
-msgid "First short-name must start with * . Ignoring."
-msgstr "Првото кратко име мора да почнува со * . Игнорирам."
-
-#: ttmsg.src#S_INCLUDE_FILE_WARNINGS_DETECTED.string.text
-msgid "** ($Arg1) warnings occurred during initialization"
-msgstr "** Се појавија ($Arg1) предупредувања при иницијализацијата"
-
-#: ttmsg.src#S_INVALID_LINE.string.text
-msgid "Line \"($Arg1)\" is invalid."
-msgstr "Линијата „($Arg1)“ не е валидна."
-
-#: ttmsg.src#S_LONGNAME_UNKNOWN.string.text
-msgid "Long-name unknown: ($Arg1)"
-msgstr "Непознато долго име: ($Arg1)"
-
-#: ttmsg.src#S_NAME_NOT_THERE.string.text
-msgid "Name doesn't exist: #($Arg1)"
-msgstr "Името не постои: бр. ($Arg1)"
-
-#: ttmsg.src#S_NO_CONNECTION.string.text
-msgid "No connection. Sequence No: ($Arg1)"
-msgstr "Нема врска. Секвенца бр.: ($Arg1)"
-
-#: ttmsg.src#S_NO_ERRORS_DETECTED.string.text
-msgid "** No errors have occurred"
-msgstr "** Не се појавија грешки"
-
-#: ttmsg.src#S_NO_FILES_FOUND.string.text
-msgid "No ($Arg1) files found"
-msgstr "Нема пронајдени ($Arg1)-датотеки"
-
-#: ttmsg.src#S_NO_INCLUDE_FILE_WARNINGS_DETECTED.string.text
-msgid "** No warnings occurred during initialization"
-msgstr "** Не се појавија предупредувања при иницијализацијата"
-
-#: ttmsg.src#S_NO_WARNINGS_DETECTED.string.text
-msgid "** No warnings have occurred"
-msgstr "** Не се појавија предупредувања"
-
-#: ttmsg.src#S_READING_FILE.string.text
-msgid "Reading the files"
-msgstr "Ги читам датотеките"
-
-#: ttmsg.src#S_RETURNED_VALUE_ID_MISSMATCH.string.text
-msgid "Return value received but different Id expected"
-msgstr "Повратната вредност е примена, но беше очекуван различен ид."
-
-#: ttmsg.src#S_RETURNED_VALUE_NO_RECEIVER.string.text
-msgid "Return value received but no receiver defined"
-msgstr "Повратната вредност е примена, но не е дефиниран примач"
-
-#: ttmsg.src#S_RETURN_SEQUENCE_MISSMATCH.string.text
-msgid "Return Stream has wrong sequence: ($Arg1) instead of ($Arg2)"
-msgstr "Повратниот поток има погрешна секвенца: ($Arg1) наместо ($Arg2)"
-
-#: ttmsg.src#S_SHORTNAME_UNKNOWN.string.text
-msgid "Short-name unknown during copying: ($Arg1)"
-msgstr "Непознато кратко име во тек на копирањето: ($Arg1)"
-
-#: ttmsg.src#S_TIMOUT_SENDING.string.text
-msgid "Server Timeout while sending. Sequence No: ($Arg1)"
-msgstr "Истек на времето на серверот при испраќање. Секвенца бр.: ($Arg1)"
-
-#: ttmsg.src#S_TIMOUT_WAITING.string.text
-msgid "Server Timeout while waiting for answer. Sequence No: ($Arg1)"
-msgstr "Истек на времето на серверот при чекање одговор. Секвенца бр.: ($Arg1)"
-
-#: ttmsg.src#S_UNKNOWN_METHOD.string.text
-msgid "Unknown method on object :($Arg1).($Arg2)"
-msgstr "Непознат метод на објект :($Arg1).($Arg2)"
-
-#: ttmsg.src#S_UNKNOWN_SLOT_CONTROL.string.text
-msgid "Slot/Control unknown :\"($Arg1)\""
-msgstr "Лежиштето/контролата не се познати :„($Arg1)“"
-
-#: ttmsg.src#S_WARNINGS_DETECTED.string.text
-msgid "** ($Arg1) warnings occurred"
-msgstr "** Се појавија ($Arg1) предупредувања"
-
-#: format.src#STR_BASICKEY_FORMAT_CURRENCY.string.text
-msgid "@0.00 $;@(0.00 $)"
-msgstr "@0.00 ден.;@(0.00 ден.)"
-
-#: format.src#STR_BASICKEY_FORMAT_FALSE.string.text
-msgid "False"
-msgstr "Неточно"
-
-#: format.src#STR_BASICKEY_FORMAT_NO.string.text
-msgid "No"
-msgstr "Не"
-
-#: format.src#STR_BASICKEY_FORMAT_OFF.string.text
-msgid "Off"
-msgstr "Искл."
-
-#: format.src#STR_BASICKEY_FORMAT_ON.string.text
-msgid "On"
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_ON.String.Text
+msgid  "On"
 msgstr "Вкл."
 
-#: format.src#STR_BASICKEY_FORMAT_TRUE.string.text
-msgid "True"
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_OFF.String.Text
+msgid  "Off"
+msgstr "Искл."
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_TRUE.String.Text
+msgid  "True"
 msgstr "Точно"
 
-#: format.src#STR_BASICKEY_FORMAT_YES.string.text
-msgid "Yes"
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_FALSE.String.Text
+msgid  "False"
+msgstr "Неточно"
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_YES.String.Text
+msgid  "Yes"
 msgstr "Да"
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_NO.String.Text
+msgid  "No"
+msgstr "Не"
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_CURRENCY.String.Text
+msgid  "@0.00 $;@(0.00 $)"
+msgstr "@0.00 ден.;@(0.00 ден.)"

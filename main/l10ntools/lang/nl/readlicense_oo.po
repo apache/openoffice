@@ -1,906 +1,424 @@
-"X-Accelerator-Marker: ~\n"
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
 
-#: readme.xrm#Welcome.Welcome.readmeitem.text
-msgid "${PRODUCTNAME} ${PRODUCTVERSION} ReadMe"
+
+#: docs/readme/readme.xrm#Welcome.Welcome
+msgid  "${PRODUCTNAME} ${PRODUCTVERSION} ReadMe"
 msgstr "${PRODUCTNAME} ${PRODUCTVERSION} LeesMij"
 
-#: readme.xrm#LatestUpdates.LatestUpdates.readmeitem.text
-msgid ""
-"For latest updates to this readme file, see <a href=\"http://www.openoffice.o"
-"rg/welcome/readme.html\">http://www.openoffice.org/welcome/readme.html</a>"
+#: docs/readme/readme.xrm#LatestUpdates.LatestUpdates
+msgid  "For latest updates to this readme file, see <a href="http://www.openoffice.org/welcome/readme.html">http://www.openoffice.org/welcome/readme.html</a>"
 msgstr ""
-"Bekijk <a href=\"http://www.openoffice.org/welcome/readme.html\">http://www.op"
-"enoffice.org/welcome/readme.html</a> voor de laatste bijwerkingen van dit "
-"readme-bestand."
 
-#: readme.xrm#A6.A6.readmeitem.text
-msgid ""
-"This file contains important information about this program. Please read "
-"this information very carefully before starting work."
+#: docs/readme/readme.xrm#A6.A6
+msgid  "This file contains important information about this program. Please read this information very carefully before starting work."
 msgstr ""
-"Dit bestand bevat belangrijke informatie over dit programma. Lees deze "
-"informatie zeer zorgvuldig door vóórdat u begint er mee te werken."
 
-#: readme.xrm#A7.A7.readmeitem.text
-msgid ""
-"The OpenOffice.org Community, responsible for the development of this "
-"product, would like to invite you to participate as a community member. As a "
-"new user, you can check out the ${PRODUCTNAME} site with helpful user "
-"information at <a href=\"http://www.openoffice.org/about_us/introduction.html"
-"\">http://www.openoffice.org/about_us/introduction.html</a>"
+#: docs/readme/readme.xrm#A7.A7
+msgid  "The Apache OpenOffice Community, responsible for the development of this product, would like to invite you to participate as a community member. As a new user, you can check out the ${PRODUCTNAME} site with helpful user information at <a href="http://www.openoffice.org/about_us/introduction.html">http://www.openoffice.org/about_us/introduction.html</a>"
 msgstr ""
-"De OpenOffice.org gemeenschap, verantwoordelijk voor de ontwikkeling van dit "
-"product, nodigt u van harte uit om deel te nemen als lid van de "
-"gemeenschap. Als nieuwe gebruiker kunt u de ${PRODUCTNAME}-site bekijken met "
-"handige gebruikersinformatie op <a href=\"http://www.openoffice.org/about_us"
-"/introduction.html\">http://www.openoffice.org/about_us/introduction.html</a>"
 
-#: readme.xrm#A9.A9.readmeitem.text
-msgid ""
-"Also read the sections below about getting involved in the OpenOffice.org "
-"project."
+#: docs/readme/readme.xrm#A9.A9
+msgid  "Also read the sections below about getting involved in the Apache OpenOffice project."
 msgstr ""
-"Lees ook de secties hieronder over deelnemen aan het OpenOffice.org-project."
 
-#: readme.xrm#A10.A10.readmeitem.text
-msgid "Is ${PRODUCTNAME} really free for any user? "
+#: docs/readme/readme.xrm#A10.A10
+msgid  "Is ${PRODUCTNAME} really free for any user? "
 msgstr "Is ${PRODUCTNAME} echt gratis voor elke gebruiker? "
 
-#: readme.xrm#A11.A11.readmeitem.text
-msgid ""
-"${PRODUCTNAME} is free for use by everybody. You may take this copy of "
-"${PRODUCTNAME} and install it on as many computers as you like, and use it "
-"for any purpose you like (including commercial, government, public "
-"administration and educational use). For further details see the license "
-"text delivered together with ${PRODUCTNAME} or <a href=\"http://www.openoffic"
-"e.org/license.html\">http://www.openoffice.org/license.html</a>"
+#: docs/readme/readme.xrm#A11.A11
+msgid  "${PRODUCTNAME} is free for use by everybody. You may take this copy of ${PRODUCTNAME} and install it on as many computers as you like, and use it for any purpose you like (including commercial, government, public administration and educational use). For further details see the license text delivered together with ${PRODUCTNAME} or <a href="http://www.openoffice.org/license.html">http://www.openoffice.org/license.html</a>"
 msgstr ""
-"${PRODUCTNAME} is door iedereen gratis te gebruiken. U mag een kopie maken "
-"van deze ${PRODUCTNAME} en die installeren op net zo veel computers als u "
-"wilt en het gebruiken voor elk doel dat u wilt (inclusief commercieel, "
-"overheid, publieke lichamen en educatief gebruik). Voor meer details bekijkt "
-"u de licentietekst die bij ${PRODUCTNAME} is ingesloten of <a href=\"http://"
-"www.openoffice.org/license.html\">http://www.openoffice.org/license.html</a>"
 
-#: readme.xrm#A12.A12.readmeitem.text
-msgid "Why is ${PRODUCTNAME} free for any user?"
+#: docs/readme/readme.xrm#A12.A12
+msgid  "Why is ${PRODUCTNAME} free for any user?"
 msgstr "Waarom is ${PRODUCTNAME} gratis voor elke gebruiker?"
 
-#: readme.xrm#A13.A13.readmeitem.text
-msgid ""
-"You can use this copy of ${PRODUCTNAME} today free of charge because "
-"individual contributors and corporate sponsors have designed, developed, "
-"tested, translated, documented, supported, marketed, and helped in many "
-"other ways to make ${PRODUCTNAME} what it is today - the world's leading "
-"open-source office software."
+#: docs/readme/readme.xrm#A13.A13
+msgid  "You can use this copy of ${PRODUCTNAME} today free of charge because individual contributors and corporate sponsors have designed, developed, tested, translated, documented, supported, marketed, and helped in many other ways to make ${PRODUCTNAME} what it is today - the world's leading open-source office software."
 msgstr ""
-"U mag deze kopie van ${PRODUCTNAME} heden ten dage gratis gebruiken omdat "
-"individuele bijdragen en zakelijke sponsoren ${PRODUCTNAME} hebben "
-"ontworpen, ontwikkeld, getest, vertaald, gedocumenteerd, ondersteund, "
-"gemarket en op vele andere manieren hebben geholpen om het te maken wat het "
-"heden ten dage is - het leidende open-source kantoorpakket in de wereld."
 
-#: readme.xrm#A13b.A13b.readmeitem.text
-msgid ""
-"If you appreciate their efforts, and would like to ensure OpenOffice.org "
-"continues into the future, please consider contributing to the project - see "
-"<a href=\"http://contributing.openoffice.org\">http://contributing.openoffice"
-".org</a> for details. Everyone has a contribution to make."
+#: docs/readme/readme.xrm#A13b.A13b
+msgid  "If you appreciate their efforts, and would like to ensure Apache OpenOffice continues into the future, please consider contributing to the project - see <a href="http://contributing.openoffice.org">http://contributing.openoffice.org</a> for details. Everyone has a contribution to make."
 msgstr ""
-"Als u hun inspanningen op prijs stelt en er mede voor wilt zorgen dat "
-"OpenOffice.org in de toekomst ook doorgaat, overweeg dan om bij te dragen "
-"aan het project - zie <a href=\"http://contributing.openoffice.org\">http://co"
-"ntributing.openoffice.org</a> voor details.  Iedereen kan een bijdrage "
-"leveren."
 
-#: readme.xrm#rr3fgf42r.rr3fgf42r.readmeitem.text
-msgid "Notes on Installation"
+#: docs/readme/readme.xrm#rr3fgf42r.rr3fgf42r
+msgid  "Notes on Installation"
 msgstr "Opmerkingen bij installatie"
 
-#: readme.xrm#javaneeded.javaneeded.readmeitem.text
-msgid ""
-"${PRODUCTNAME} requires a recent version of JAVA for full functionality "
-"which is part of the ${PRODUCTNAME} installation package."
+#: docs/readme/readme.xrm#javaneeded.javaneeded
+msgid  "${PRODUCTNAME} requires a recent version of JAVA for full functionality; JAVA can be downloaded from <a href="http://java.com">http://java.com</a>."
 msgstr ""
-"${PRODUCTNAME} vereist  voor volledige functionaliteit een recente versie "
-"van JAVA dat onderdeel is van het installatiepakket van ${PRODUCTNAME}."
 
-#: readme.xrm#sdfsdfgf42r.sdfsdfgf42r.readmeitem.text
-msgid "System Requirements"
+#: docs/readme/readme.xrm#sdfsdfgf42r.sdfsdfgf42r
+msgid  "System Requirements"
 msgstr "Systeemvereisten"
 
-#: readme.xrm#macxiOSX.macxiOSX.readmeitem.text
-msgid "MacOSX 10.4 (Tiger) or higher"
+#: docs/readme/readme.xrm#macxiOSX.macxiOSX
+msgid  "MacOSX 10.4 (Tiger) or higher"
 msgstr "MacOSX 10.4 (Tiger) of hoger"
 
-#: readme.xrm#macxicpu.macxicpu.readmeitem.text
-msgid "Intel processor"
+#: docs/readme/readme.xrm#macxicpu.macxicpu
+msgid  "Intel processor"
 msgstr "Intel-processor"
 
-#: readme.xrm#macxiRAM.macxiRAM.readmeitem.text
-msgid "512 MB RAM"
+#: docs/readme/readme.xrm#macxiRAM.macxiRAM
+msgid  "512 MB RAM"
 msgstr "512 MB RAM"
 
-#: readme.xrm#macxHardDiksSpace.macxHardDiksSpace.readmeitem.text
-msgctxt "readme.xrm#macxHardDiksSpace.macxHardDiksSpace.readmeitem.text"
-msgid "Up to 1.5 GB available hard disk space"
+#: docs/readme/readme.xrm#macxHardDiksSpace.macxHardDiksSpace
+msgid  "Up to 1.5 GB available hard disk space"
 msgstr "Tot 1.5 GB beschikbare harde schijf-ruimte"
 
-#: readme.xrm#macxivideo.macxivideo.readmeitem.text
-msgid ""
-"1024 x 768 graphic device with 256 colors (higher resolution recommended)"
+#: docs/readme/readme.xrm#macxivideo.macxivideo
+msgid  "1024 x 768 graphic device with 256 colors (higher resolution recommended)"
 msgstr ""
-"1024 x 768 grafische kaart met 256 kleuren (hogere resolutie aanbevolen)"
 
-#: readme.xrm#s2s3sdf2.s2s3sdf2.readmeitem.text
-msgid ""
-"Microsoft Windows 2000 (Service Pack 4 or higher), XP, Vista, or Windows 7"
+#: docs/readme/readme.xrm#s2s3sdf2.s2s3sdf2
+msgid  "Microsoft Windows 2000 (Service Pack 4 or higher), XP, Vista, or Windows 7"
 msgstr ""
-"Microsoft Windows 2000 (Service Pack 4 of hoger), XP, Vista, of Windows 7"
 
-#: readme.xrm#utzu6.utzu6.readmeitem.text
-msgctxt "readme.xrm#utzu6.utzu6.readmeitem.text"
-msgid "Pentium compatible PC (Pentium III or Athlon recommended)"
+#: docs/readme/readme.xrm#utzu6.utzu6
+msgid  "Pentium compatible PC (Pentium III or Athlon recommended)"
 msgstr "Pentium compatibele PC (Pentium III of Athlon aanbevolen)"
 
-#: readme.xrm#ghuj67.ghuj67.readmeitem.text
-msgctxt "readme.xrm#ghuj67.ghuj67.readmeitem.text"
-msgid "256 MB RAM (512 MB RAM recommended)"
+#: docs/readme/readme.xrm#ghuj67.ghuj67
+msgid  "256 MB RAM (512 MB RAM recommended)"
 msgstr "256 MB RAM (512 MB RAM aanbevolen)"
 
-#: readme.xrm#jzjtzu6.jzjtzu6.readmeitem.text
-msgctxt "readme.xrm#jzjtzu6.jzjtzu6.readmeitem.text"
-msgid "Up to 1.5 GB available hard disk space"
+#: docs/readme/readme.xrm#jzjtzu6.jzjtzu6
+msgid  "Up to 1.5 GB available hard disk space"
 msgstr "Tot 1.5 GB beschikbare harde schijf-ruimte"
 
-#: readme.xrm#jtzu56.jtzu56.readmeitem.text
-msgid ""
-"1024x768 resolution (higher resolution recommended), at least 256 colors"
+#: docs/readme/readme.xrm#jtzu56.jtzu56
+msgid  "1024x768 resolution (higher resolution recommended), at least 256 colors"
 msgstr ""
-"1024x768 resolutie (hogere resolutie aanbevolen), ten minste 256 kleuren"
 
-#: readme.xrm#edssc3d.edssc3d.readmeitem.text
-msgctxt "readme.xrm#edssc3d.edssc3d.readmeitem.text"
-msgid ""
-"Please be aware that administrator rights are needed for the installation "
-"process."
+#: docs/readme/readme.xrm#edssc3d.edssc3d
+msgid  "Please be aware that administrator rights are needed for the installation process."
 msgstr ""
-"Houdt er alstublieft rekening mee dat u rechten als systeembeheerder nodig "
-"heeft voor het installatieproces."
 
-#: readme.xrm#MSOReg1.MSOReg1.readmeitem.text
-msgid ""
-"Registration of ${PRODUCTNAME} as default application for Microsoft Office "
-"formats can be forced or suppressed by using the following command line "
-"switches with the installer:"
+#: docs/readme/readme.xrm#MSOReg1.MSOReg1
+msgid  "Registration of ${PRODUCTNAME} as default application for Microsoft Office formats can be forced or suppressed by using the following command line switches with the installer:"
 msgstr ""
-"Registratie van ${PRODUCTNAME} als standaardtoepassing voor Microsoft "
-"Office-formaten kan worden geforceerd of onderdrukt met behulp van de "
-"volgende schakelopties voor de opdrachtregel met het installatieprogramma:"
 
-#: readme.xrm#MSOReg2.MSOReg2.readmeitem.text
-msgid ""
-"<tt>/msoreg=1</tt> will force registration of ${PRODUCTNAME} as default "
-"application for Microsoft Office formats."
+#: docs/readme/readme.xrm#MSOReg2.MSOReg2
+msgid  "<tt>/msoreg=1</tt> will force registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
 msgstr ""
-"<tt>/msoreg=1</tt> zal ${PRODUCTNAME} als de standaard toepassing voor "
-"Microsoft Office-indelingen registreren."
 
-#: readme.xrm#MSOReg3.MSOReg3.readmeitem.text
-msgid ""
-"<tt>/msoreg=0</tt> will suppress registration of ${PRODUCTNAME} as default "
-"application for Microsoft Office formats."
+#: docs/readme/readme.xrm#MSOReg3.MSOReg3
+msgid  "<tt>/msoreg=0</tt> will suppress registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
 msgstr ""
-"<tt>/msoreg=0</tt> zal de registratie van ${PRODUCTNAME} als de standaard "
-"toepassing voor Microsoft Office-indelingen onderdrukken."
 
-#: readme.xrm#DLLA1.DLLA1.readmeitem.text
-msgid ""
-"If you perform an administrative installation using setup /a, you need to "
-"make sure that the file msvc90.dll is installed on the system. This file is "
-"required for ${PRODUCTNAME} to start after an administrative installation. "
-"You can get the file from <a href=\"http://www.microsoft.com/downloads/detail"
-"s.aspx?familyid=9B2DA534-3E03-4391-8A4D-074B9F2BC1BF\">http://www.microsoft.c"
-"om/downloads/details.aspx?familyid=9B2DA534-3E03-4391-8A4D-074B9F2BC1BF</a>"
+#: docs/readme/readme.xrm#DLLA1.DLLA1
+msgid  "If you perform an administrative installation using setup /a, you need to make sure that the file msvc90.dll is installed on the system. This file is required for ${PRODUCTNAME} to start after an administrative installation. You can get the file from <a href="http://www.microsoft.com/downloads/details.aspx?familyid=9B2DA534-3E03-4391-8A4D-074B9F2BC1BF">http://www.microsoft.com/downloads/details.aspx?familyid=9B2DA534-3E03-4391-8A4D-074B9F2BC1BF</a>"
 msgstr ""
-"Als u een administratieve installatie maakt met behulp van setup /a, moet u "
-"er eerst voorzorgen dat het bestand msvc90.dll op het systeem is "
-"geïnstalleerd. Dit bestand is nodig om ${PRODUCTNAME} laten starten na een "
-"administratieve installatie. U kunt het bestand krijgen op <a href=\"http://w"
-"ww.microsoft.com/downloads/details.aspx?familyid=9B2DA534-3E03-4391-8A4D-074"
-"B9F2BC1BF\">http://www.microsoft.com/downloads/details.aspx?familyid=9B2DA534"
-"-3E03-4391-8A4D-074B9F2BC1BF</a>"
 
-#: readme.xrm#AdminNeeded.AdminNeeded.readmeitem.text
-msgctxt "readme.xrm#AdminNeeded.AdminNeeded.readmeitem.text"
-msgid ""
-"Please be aware that administrator rights are needed for the installation "
-"process."
+#: docs/readme/readme.xrm#AdminNeeded.AdminNeeded
+msgid  "Please be aware that administrator rights are needed for the installation process."
 msgstr ""
-"Houdt er alstublieft rekening mee dat u rechten als systeembeheerder nodig "
-"heeft voor het installatieproces."
 
-#: readme.xrm#s2335.s2335.readmeitem.text
-msgid "Solaris 10 operating system (SPARC platform) or higher"
+#: docs/readme/readme.xrm#s2335.s2335
+msgid  "Solaris 10 operating system (SPARC platform) or higher"
 msgstr "Solaris 10 besturingssysteem (SPARC-platform) of hoger"
 
-#: readme.xrm#s253.s253.readmeitem.text
-msgctxt "readme.xrm#s253.s253.readmeitem.text"
-msgid "256 MB RAM (512 MB RAM recommended)"
+#: docs/readme/readme.xrm#s253.s253
+msgid  "256 MB RAM (512 MB RAM recommended)"
 msgstr "256 MB RAM (512 MB RAM aanbevolen)"
 
-#: readme.xrm#s23seg.s23seg.readmeitem.text
-msgctxt "readme.xrm#s23seg.s23seg.readmeitem.text"
-msgid "Up to 1.55 GB available hard disk space"
+#: docs/readme/readme.xrm#s23seg.s23seg
+msgid  "Up to 1.55 GB available hard disk space"
 msgstr "Tot 1.5 GB beschikbare harde schijf-ruimte"
 
-#: readme.xrm#s2s43gfe.s2s43gfe.readmeitem.text
-msgctxt "readme.xrm#s2s43gfe.s2s43gfe.readmeitem.text"
-msgid ""
-"X Server with 1024x768 resolution (higher resolution recommended), with at "
-"least 256 colors"
+#: docs/readme/readme.xrm#s2s43gfe.s2s43gfe
+msgid  "X Server with 1024x768 resolution (higher resolution recommended), with at least 256 colors"
 msgstr ""
-"X Server met 1024x768 resolutie (hogere resolutie aanbevolen) met ten minste "
-"256 kleuren"
 
-#: readme.xrm#n4234rw.n4234rw.readmeitem.text
-msgctxt "readme.xrm#n4234rw.n4234rw.readmeitem.text"
-msgid "Window Manager"
+#: docs/readme/readme.xrm#n4234rw.n4234rw
+msgid  "Window Manager"
 msgstr "Vensterbeheer"
 
-#: readme.xrm#wd2dff2.wd2dff2.readmeitem.text
-msgctxt "readme.xrm#wd2dff2.wd2dff2.readmeitem.text"
-msgid ""
-"Gnome 2.6 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, "
-"required for support of assistive technology tools (AT tools)"
+#: docs/readme/readme.xrm#wd2dff2.wd2dff2
+msgid  "Gnome 2.6 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
 msgstr ""
-"Gnome 2.6 of hoger met de gail 1.8.6 en at-spi 1.7 pakketten, vereist voor "
-"ondersteuning van assisterende technologie tools (AT tools)"
 
-#: readme.xrm#s23h.s23h.readmeitem.text
-msgid "Solaris 10 operating system (x86 platform) or higher"
+#: docs/readme/readme.xrm#s23h.s23h
+msgid  "Solaris 10 operating system (x86 platform) or higher"
 msgstr "Solaris 10 besturingssysteem (x86-platform) of hoger"
 
-#: readme.xrm#s24f.s24f.readmeitem.text
-msgctxt "readme.xrm#s24f.s24f.readmeitem.text"
-msgid "256 MB RAM (512 MB RAM recommended)"
+#: docs/readme/readme.xrm#s24f.s24f
+msgid  "256 MB RAM (512 MB RAM recommended)"
 msgstr "256 MB RAM (512 MB RAM aanbevolen)"
 
-#: readme.xrm#fgheg.fgheg.readmeitem.text
-msgctxt "readme.xrm#fgheg.fgheg.readmeitem.text"
-msgid "Up to 1.55 GB available hard disk space"
+#: docs/readme/readme.xrm#fgheg.fgheg
+msgid  "Up to 1.55 GB available hard disk space"
 msgstr "Tot 1.5 GB beschikbare harde schijf-ruimte"
 
-#: readme.xrm#fghfgh.fghfgh.readmeitem.text
-msgctxt "readme.xrm#fghfgh.fghfgh.readmeitem.text"
-msgid ""
-"X Server with 1024x768 resolution (higher resolution recommended), with at "
-"least 256 colors"
+#: docs/readme/readme.xrm#fghfgh.fghfgh
+msgid  "X Server with 1024x768 resolution (higher resolution recommended), with at least 256 colors"
 msgstr ""
-"X Server met 1024x768 resolutie (hogere resolutie aanbevolen) met ten minste "
-"256 kleuren"
 
-#: readme.xrm#mgjfg.mgjfg.readmeitem.text
-msgctxt "readme.xrm#mgjfg.mgjfg.readmeitem.text"
-msgid "Window Manager"
+#: docs/readme/readme.xrm#mgjfg.mgjfg
+msgid  "Window Manager"
 msgstr "Vensterbeheer"
 
-#: readme.xrm#wd2dff1.wd2dff1.readmeitem.text
-msgctxt "readme.xrm#wd2dff1.wd2dff1.readmeitem.text"
-msgid ""
-"Gnome 2.6 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, "
-"required for support of assistive technology tools (AT tools)"
+#: docs/readme/readme.xrm#wd2dff1.wd2dff1
+msgid  "Gnome 2.6 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
 msgstr ""
-"Gnome 2.6 of hoger met de gail 1.8.6 en at-spi 1.7 pakketten, vereist voor "
-"ondersteuning van assisterende technologie tools (AT tools)"
 
-#: readme.xrm#s2we35.s2we35.readmeitem.text
-msgid "Linux Kernel version 2.6.18 or higher"
+#: docs/readme/readme.xrm#s2we35.s2we35
+msgid  "Linux Kernel version 2.6.18 or higher"
 msgstr "Linux Kernel versie 2.6.18 of hoger"
 
-#: readme.xrm#s253we.s253we.readmeitem.text
-msgid "glibc2 version 2.5 or higher"
+#: docs/readme/readme.xrm#s253we.s253we
+msgid  "glibc2 version 2.5 or higher"
 msgstr "glibc2 versie 2.5 of hoger"
 
-#: readme.xrm#s256we.s256we.readmeitem.text
-msgid "gtk version 2.10.4 or higher"
+#: docs/readme/readme.xrm#s256we.s256we
+msgid  "gtk version 2.10.4 or higher"
 msgstr "glibc2 versie 2.10.4 of hoger"
 
-#: readme.xrm#s2etfseg.s2etfseg.readmeitem.text
-msgctxt "readme.xrm#s2etfseg.s2etfseg.readmeitem.text"
-msgid "Pentium compatible PC (Pentium III or Athlon recommended)"
+#: docs/readme/readme.xrm#s2etfseg.s2etfseg
+msgid  "Pentium compatible PC (Pentium III or Athlon recommended)"
 msgstr "Pentium compatibele PC (Pentium III of Athlon aanbevolen)"
 
-#: readme.xrm#s2ssdfe.s2ssdfe.readmeitem.text
-msgctxt "readme.xrm#s2ssdfe.s2ssdfe.readmeitem.text"
-msgid "256 MB RAM (512 MB RAM recommended)"
+#: docs/readme/readme.xrm#s2ssdfe.s2ssdfe
+msgid  "256 MB RAM (512 MB RAM recommended)"
 msgstr "256 MB RAM (512 MB RAM aanbevolen)"
 
-#: readme.xrm#n42dfgf.n42dfgf.readmeitem.text
-msgctxt "readme.xrm#n42dfgf.n42dfgf.readmeitem.text"
-msgid "Up to 1.55 GB available hard disk space"
+#: docs/readme/readme.xrm#n42dfgf.n42dfgf
+msgid  "Up to 1.55 GB available hard disk space"
 msgstr "Tot 1.5 GB beschikbare harde schijf-ruimte"
 
-#: readme.xrm#ghjhhr.ghjhhr.readmeitem.text
-msgctxt "readme.xrm#ghjhhr.ghjhhr.readmeitem.text"
-msgid ""
-"X Server with 1024x768 resolution (higher resolution recommended), with at "
-"least 256 colors"
+#: docs/readme/readme.xrm#ghjhhr.ghjhhr
+msgid  "X Server with 1024x768 resolution (higher resolution recommended), with at least 256 colors"
 msgstr ""
-"X Server met 1024x768 resolutie (hogere resolutie aanbevolen) met ten minste "
-"256 kleuren"
 
-#: readme.xrm#fhrtz5.fhrtz5.readmeitem.text
-msgctxt "readme.xrm#fhrtz5.fhrtz5.readmeitem.text"
-msgid "Window Manager"
+#: docs/readme/readme.xrm#fhrtz5.fhrtz5
+msgid  "Window Manager"
 msgstr "Vensterbeheer"
 
-#: readme.xrm#wd2dff.wd2dff.readmeitem.text
-msgid ""
-"Gnome 2.16 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, "
-"required for support of assistive technology tools (AT tools)"
+#: docs/readme/readme.xrm#wd2dff.wd2dff
+msgid  "Gnome 2.16 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
 msgstr ""
-"Gnome 2.16 of hoger met de gail 1.8.6 en at-spi 1.7 pakketten, vereist voor "
-"ondersteuning van assisterende technologie tools (AT tools)"
 
-#: readme.xrm#Linuxi3a.Linuxi3a.readmeitem.text
-msgid ""
-"There is a wide variety of Linux distributions, and even within the same "
-"distribution there may be different installation options (KDE vs Gnome, "
-"etc.). Some distributions ship with their own ‘native’ version of "
-"${PRODUCTNAME}, which may have different features from this Community "
-"${PRODUCTNAME}. Sometimes you can install the Community ${PRODUCTNAME} "
-"alongside the ‘native’ version. However, it’s usually safer to remove the "
-"‘native’ version before installing this Community version. Consult the "
-"documentation for your distribution for details of how to do this."
+#: docs/readme/readme.xrm#Linuxi3a.Linuxi3a
+msgid  "There is a wide variety of Linux distributions, and even within the same distribution there may be different installation options (KDE vs Gnome, etc.). Some distributions ship with their own ‘native’ version of ${PRODUCTNAME}, which may have different features from this Community ${PRODUCTNAME}. Sometimes you can install the Community ${PRODUCTNAME} alongside the ‘native’ version. However, it’s usually safer to remove the ‘native’ version before installing this Community version. Consult the documentation for your distribution for details of how to do this."
 msgstr ""
-"Er bestaat een grote variëteit aan Linux-distributies, en zelfs binnen "
-"dezelfde distributie kunnen er verschillende installatieopties zijn (KDE vs "
-"Gnome, etc.). Sommige distributies bevatten hun eigen ‘native’ versie van "
-"${PRODUCTNAME}, die andere mogelijkheden kunnen hebben dan ${PRODUCTNAME} "
-"van deze gemeenschap. Soms kunt u de versie van ${PRODUCTNAME} van de "
-"gemeenschap naast de ‘native’ versie installeren. Het is in het algemeen "
-"echter veiliger om de ‘native’ versie te verwijderen voor het installeren "
-"van de versie van de gemeenschap. Raadpleeg de documentatie voor uw "
-"distributie voor de details om dit te doen."
 
-#: readme.xrm#Linuxi4a.Linuxi4a.readmeitem.text
-msgid ""
-"It is recommended that you always backup your system before you remove or "
-"install software."
+#: docs/readme/readme.xrm#Linuxi4a.Linuxi4a
+msgid  "It is recommended that you always backup your system before you remove or install software."
 msgstr ""
-"Het wordt aanbevolen om altijd een veiligheidskopie van uw systeem te maken, "
-"vóórdat u software installeert of verwijdert."
 
-#: readme.xrm#Precautions.Precautions.readmeitem.text
-msgid ""
-"Please make sure you have enough free memory in the temporary directory on "
-"your system and that read, write and run access rights have been granted. "
-"Close all other programs before starting the installation."
+#: docs/readme/readme.xrm#Precautions.Precautions
+msgid  "Please make sure you have enough free memory in the temporary directory on your system and that read, write and run access rights have been granted. Close all other programs before starting the installation."
 msgstr ""
-"Zorg er voor dat u voldoende vrij geheugen in de tijdelijke map op uw "
-"systeem hebt en dat rechten voor lezen, schrijven en uitvoeren zijn "
-"toegekend. Sluit alle andere programma's vóórdat u de installatie start."
 
-#: readme.xrm#BDB11.BDB11.readmeitem.text
-msgid "Extension Database Incompatibility"
+#: docs/readme/readme.xrm#BDB11.BDB11
+msgid  "Extension Database Incompatibility"
 msgstr "Extensie-database incompatibiliteit"
 
-#: readme.xrm#BDB2a.BDB2a.readmeitem.text
-msgid ""
-"The Berkeley database engine has been upgraded in this version of "
-"${PRODUCTNAME}. The database engine upgrade introduces an incompatibility "
-"with user data for installed extensions for ${PRODUCTNAME} versions prior to "
-"3.2 that may require your action if you downgrade your version of "
-"${PRODUCTNAME}."
+#: docs/readme/readme.xrm#BDB2a.BDB2a
+msgid  "The Berkeley database engine has been upgraded in this version of ${PRODUCTNAME}. The database engine upgrade introduces an incompatibility with user data for installed extensions for ${PRODUCTNAME} versions prior to 3.2 that may require your action if you downgrade your version of ${PRODUCTNAME}."
 msgstr ""
-"De Berkeley database-voorziening is opgewaardeerd in deze versie van "
-"${PRODUCTNAME}. De bijwerking van de database introduceert een "
-"incompatibiliteit met gebruikersgegevens voor geïnstalleerde extensies voor "
-"${PRODUCTNAME} versies voorafgaande aan 3.2 die actie van u kunnen "
-"verwachten als u uw versie van ${PRODUCTNAME} terugbrengt naar eerdere "
-"versies."
 
-#: readme.xrm#BDB3a.BDB3a.readmeitem.text
-msgid ""
-"This version of ${PRODUCTNAME} will convert your extension database to the "
-"new Berkeley database format when extensions are installed or removed. After "
-"this conversion, the database can no longer be read by earlier versions of "
-"${PRODUCTNAME}. Downgrading to an earlier version may result in a "
-"dysfunctional installation."
+#: docs/readme/readme.xrm#BDB3a.BDB3a
+msgid  "This version of ${PRODUCTNAME} will convert your extension database to the new Berkeley database format when extensions are installed or removed. After this conversion, the database can no longer be read by earlier versions of ${PRODUCTNAME}. Downgrading to an earlier version may result in a dysfunctional installation."
 msgstr ""
-"Deze versie van ${PRODUCTNAME} zal uw extensie-database converteren naar de "
-"nieuwe Berkeley-databaseindeling als extensies worden geïnstalleerd of "
-"verwijderd. Na deze conversie kan de database niet meer worden gelezen door "
-"eerdere versies van ${PRODUCTNAME}. Terugbrengen naar een eerdere versie zou "
-"kunnen leiden tot een niet meer functionerende installatie."
 
-#: readme.xrm#BDB4a.BDB4a.readmeitem.text
-msgid ""
-"If you downgrade to an earlier version of ${PRODUCTNAME}, you must remove "
-"the user data directory <tt>{user data}/uno_packages</tt>, for example "
-"<tt>~/.openoffice.org/3/user/uno_packages</tt>, and reinstall all "
-"extensions."
+#: docs/readme/readme.xrm#BDB4a.BDB4a
+msgid  "If you downgrade to an earlier version of ${PRODUCTNAME}, you must remove the user data directory <tt>{user data}/uno_packages</tt>, for example <tt>~/.openoffice.org/3/user/uno_packages</tt>, and reinstall all extensions."
 msgstr ""
-"Als u uw versie terug wilt brengen naar een eerdere versie van "
-"${PRODUCTNAME} moet u de map met gebruikersgegevens <tt>{user "
-"data}/uno_packages</tt>, bijvoorbeeld: "
-"<tt>~/.openoffice.org/3/user/uno_packages</tt> verwijderen, en alle "
-"extensies opnieuw installeren."
 
-#: readme.xrm#naso01.naso01.readmeitem.text
-msgid "Problems During Program Startup"
+#: docs/readme/readme.xrm#naso01.naso01
+msgid  "Problems During Program Startup"
 msgstr "Problemen gedurende starten van programma"
 
-#: readme.xrm#naso02.naso02.readmeitem.text
-msgid ""
-"If you experience ${PRODUCTNAME} startup problems (most notably while using "
-"Gnome) please 'unset' the <tt>SESSION_MANAGER</tt> environment variable "
-"inside the shell you use to start ${PRODUCTNAME}. This can be done by adding "
-"the line \"<tt>unset SESSION_MANAGER</tt>\" to the beginning of the soffice "
-"shell script found in the \"<tt>[office folder]/program</tt>\" directory."
+#: docs/readme/readme.xrm#naso02.naso02
+msgid  "If you experience ${PRODUCTNAME} startup problems (most notably while using Gnome) please 'unset' the <tt>SESSION_MANAGER</tt> environment variable inside the shell you use to start ${PRODUCTNAME}. This can be done by adding the line "<tt>unset SESSION_MANAGER</tt>" to the beginning of the soffice shell script found in the "<tt>[office folder]/program</tt>" directory."
 msgstr ""
-"Als u opstartproblemen met ${PRODUCTNAME} ervaart (valt het meeste op bij "
-"gebruik van Gnome) 'deselecteer' dan de omgevingsvariabele "
-"<tt>SESSION_MANAGER</tt> binnen de shell die u gebruikt om ${PRODUCTNAME} te "
-"starten. Dit kan worden gedaan door de regel \"unset "
-"<tt>SESSION_MANAGER</tt>\" toe te voegen aan het begin van het soffice "
-"shellscript dat staat in de map \"<tt>[office folder]/program</tt>\"."
 
-#: readme.xrm#abcdef.abcdef.readmeitem.text
-msgid ""
-"Difficulties starting ${PRODUCTNAME} (e.g. applications hang) as well as "
-"problems with the screen display are often caused by the graphics card "
-"driver. If these problems occur, please update your graphics card driver or "
-"try using the graphics driver delivered with your operating system. "
-"Difficulties displaying 3D objects can often be solved by deactivating the "
-"option \"Use OpenGL\" under 'Tools - Options - ${PRODUCTNAME} - View - 3D "
-"view'."
+#: docs/readme/readme.xrm#abcdef.abcdef
+msgid  "Difficulties starting ${PRODUCTNAME} (e.g. applications hang) as well as problems with the screen display are often caused by the graphics card driver. If these problems occur, please update your graphics card driver or try using the graphics driver delivered with your operating system. Difficulties displaying 3D objects can often be solved by deactivating the option "Use OpenGL" under 'Tools - Options - ${PRODUCTNAME} - View - 3D view'."
 msgstr ""
-"Moeilijkheden bij het opstarten van ${PRODUCTNAME} (bijv. toepassingen die "
-"blijven hangen) en ook problemen met de weergave op het scherm worden vaak "
-"veroorzaakt door het stuurprogramma van de grafische kaart. Als deze "
-"problemen voorkomen, werk dan het stuurprogramma van uw grafische kaart bij "
-"of probeer het grafische stuurprogramma dat bij uw besturingssysteem werd "
-"geleverd te gebruiken. Moeilijkheden met de weergave van 3D-objecten kunnen "
-"vaak worden opgelost door de optie \"Gebruik OpenGL\" onder 'Extra - Opties - "
-"${PRODUCTNAME} - Weergave - 3D-weergave' uit te schakelen."
 
-#: readme.xrm#naso.naso.readmeitem.text
-msgid "ALPS/Synaptics notebook touchpads in Windows"
+#: docs/readme/readme.xrm#naso.naso
+msgid  "ALPS/Synaptics notebook touchpads in Windows"
 msgstr "ALPS/Synaptics notebook touchpads in Windows"
 
-#: readme.xrm#naso2.naso2.readmeitem.text
-msgid ""
-"Due to a Windows driver issue, you cannot scroll through ${PRODUCTNAME} "
-"documents when you slide your finger across an ALPS/Synaptics touchpad."
+#: docs/readme/readme.xrm#naso2.naso2
+msgid  "Due to a Windows driver issue, you cannot scroll through ${PRODUCTNAME} documents when you slide your finger across an ALPS/Synaptics touchpad."
 msgstr ""
-"Ten gevolge van een probleem met een Windows-stuurprogramma kunt u niet door "
-"${PRODUCTNAME}-documenten scrollen als u met uw vinger over een ALPS"
-"/Synaptics-touchpad sleept."
 
-#: readme.xrm#naso6.naso6.readmeitem.text
-msgid ""
-"To enable touchpad scrolling, add the following lines to the \"<tt>C:\\Program "
-"Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt>\" configuration file, and restart "
-"your computer:"
+#: docs/readme/readme.xrm#naso6.naso6
+msgid  "To enable touchpad scrolling, add the following lines to the "<tt>C:\Program Files\Synaptics\SynTP\SynTPEnh.ini</tt>" configuration file, and restart your computer:"
 msgstr ""
-"Voeg, om scrollen via het touchpad mogelijk te maken, de volgende regels toe "
-"aan het configuratiebestand \"<tt>C:\\Program "
-"Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt>\" en herstart uw computer:"
 
-#: readme.xrm#naso8.naso8.readmeitem.text
-msgid ""
-"The location of the configuration file might vary on different versions of "
-"Windows."
+#: docs/readme/readme.xrm#naso8.naso8
+msgid  "The location of the configuration file might vary on different versions of Windows."
 msgstr ""
-"De locatie van het configuratiebestand kan verschillen, afhankelijk van "
-"verschillende versies van Windows."
 
-#: readme.xrm#sdfsd32asrc.sdfsd32asrc.readmeitem.text
-msgid "Mozilla Address Book Driver"
+#: docs/readme/readme.xrm#sdfsd32asrc.sdfsd32asrc
+msgid  "Mozilla Address Book Driver"
 msgstr "Stuurprogramma voor Mozilla-adresboek"
 
-#: readme.xrm#sdcc32asrc.sdcc32asrc.readmeitem.text
-msgid ""
-"The Mozilla address book driver requires the <tt>SUNWzlib</tt> package. This "
-"package is not part of the minimum Solaris operating system installation. "
-"If you require access to the Mozilla address book, then add this package to "
-"your Solaris operating system using the command \"<tt>pkgadd</tt>\" from the "
-"installation CD."
+#: docs/readme/readme.xrm#sdcc32asrc.sdcc32asrc
+msgid  "The Mozilla address book driver requires the <tt>SUNWzlib</tt> package. This package is not part of the minimum Solaris operating system installation. If you require access to the Mozilla address book, then add this package to your Solaris operating system using the command "<tt>pkgadd</tt>" from the installation CD."
 msgstr ""
-"Het besturingsprogramma voor het Mozilla adresboek vereist het pakket "
-"<tt>SUNWzlib</tt>. Dit pakket maakt geen deel uit van de minimale "
-"installatie voor het Solaris besturingssysteem. Indien u toegang wenst tot "
-"het Mozilla-adresboek, voeg dit pakket dan toe aan uw Solaris "
-"besturingssysteem met behulp van de opdracht \"<tt>pkgadd</tt>\" van de "
-"installatie-CD."
 
-#: readme.xrm#awe1.awe1.readmeitem.text
-msgid "Shortcut Keys"
+#: docs/readme/readme.xrm#awe1.awe1
+msgid  "Shortcut Keys"
 msgstr "Sneltoetsen"
 
-#: readme.xrm#w32e1.w32e1.readmeitem.text
-msgid ""
-"Only shortcut keys (key combinations) not used by the operating system can "
-"be used in ${PRODUCTNAME}. If a key combination in ${PRODUCTNAME} does not "
-"work as described in the ${PRODUCTNAME} Help, check if that shortcut is "
-"already used by the operating system. To rectify such conflicts, you can "
-"change the keys assigned by your operating system. Alternatively, you can "
-"change almost any key assignment in ${PRODUCTNAME}. For more information on "
-"this topic, refer to the ${PRODUCTNAME} Help or the Help documention of your "
-"operating system."
+#: docs/readme/readme.xrm#w32e1.w32e1
+msgid  "Only shortcut keys (key combinations) not used by the operating system can be used in ${PRODUCTNAME}. If a key combination in ${PRODUCTNAME} does not work as described in the ${PRODUCTNAME} Help, check if that shortcut is already used by the operating system. To rectify such conflicts, you can change the keys assigned by your operating system. Alternatively, you can change almost any key assignment in ${PRODUCTNAME}. For more information on this topic, refer to the ${PRODUCTNAME} Help or the Help documention of your operating system."
 msgstr ""
-"Alleen sneltoetsen (toetscombinaties) die niet worden gebruikt door het "
-"besturingssysteem kunnen worden gebruikt in ${PRODUCTNAME}.  Als een "
-"toetscombinatie in ${PRODUCTNAME} niet werkt zoals beschreven in de "
-"${PRODUCTNAME} Help, controleer dan of die sneltoets al wordt gebruikt door "
-"het besturingssysteem. . U kunt de door uw systeem toegewezen toetsen "
-"wijzigen om dergelijke conflicten op te lossen. Als alternatief kunt u "
-"nagenoeg elke toewijzing van toetsen in ${PRODUCTNAME} wijzigen. Voor meer "
-"informatie over dit onderwerp kijkt u in de ${PRODUCTNAME} Help of de Help-"
-"documentatie van uw besturingssysteem."
 
-#: readme.xrm#mackeys1.mackeys1.readmeitem.text
-msgid ""
-"The application help of ${PRODUCTNAME} may use shortcut combinations for PC "
-"keyboards only."
+#: docs/readme/readme.xrm#mackeys1.mackeys1
+msgid  "The application help of ${PRODUCTNAME} may use shortcut combinations for PC keyboards only."
 msgstr ""
-"De help voor de toepassingen van ${PRODUCTNAME} zou alleen "
-"sneltoetscombinaties voor toetsenborden van PC's kunnen gebruiken."
 
-#: readme.xrm#gfh6w.gfh6w.readmeitem.text
-msgid "File Locking"
+#: docs/readme/readme.xrm#gfh6w.gfh6w
+msgid  "File Locking"
 msgstr "Bestandvergrendeling"
 
-#: readme.xrm#pji76w.pji76w.readmeitem.text
-msgid ""
-"File locking is enabled by default in ${PRODUCTNAME}. On a network that uses "
-"the Network File System protocol (NFS), the locking daemon for NFS clients "
-"must be active. To disable file locking, edit the <tt>soffice</tt> script "
-"and change the line \"<tt>export SAL_ENABLE_FILE_LOCKING</tt>\" to \"<tt># "
-"export SAL_ENABLE_FILE_LOCKING</tt>\". If you disable file locking, the write "
-"access of a document is not restricted to the user who first opens the "
-"document."
+#: docs/readme/readme.xrm#pji76w.pji76w
+msgid  "File locking is enabled by default in ${PRODUCTNAME}. On a network that uses the Network File System protocol (NFS), the locking daemon for NFS clients must be active. To disable file locking, edit the <tt>soffice</tt> script and change the line "<tt>export SAL_ENABLE_FILE_LOCKING</tt>" to "<tt># export SAL_ENABLE_FILE_LOCKING</tt>". If you disable file locking, the write access of a document is not restricted to the user who first opens the document."
 msgstr ""
-"Vergrendelen van bestanden is standaard ingeschakeld in ${PRODUCTNAME}. Op "
-"een netwerk dat het protocol Network File System (NFS) gebruikt, moet de "
-"daemon voor vergrendeling van NFScliënten actief zijn. Bewerk het "
-"<tt>soffice</tt>-script en wijzig de regel \"<tt>export "
-"SAL_ENABLE_FILE_LOCKING</tt>\" naar \"<tt># export "
-"SAL_ENABLE_FILE_LOCKING</tt>\" om het vergendelen van bestanden uit te "
-"schakelen. Als u het vergrendelen van bestanden uitschakelt worden de "
-"schrijfrechten voor een document niet beperkt tot de gebruiker die als "
-"eerste het document opent."
 
-#: readme.xrm#pji76wsdf.pji76wsdf.readmeitem.text
-msgid ""
-"Warning: The activated file locking feature can cause problems with Solaris "
-"2.5.1 and 2.7 used in conjunction with Linux NFS 2.0. If your system "
-"environment has these parameters, we strongly recommend that you avoid using "
-"the file locking feature. Otherwise, ${PRODUCTNAME} will hang when you try "
-"to open a file from a NFS mounted directory from a Linux computer."
+#: docs/readme/readme.xrm#pji76wsdf.pji76wsdf
+msgid  "Warning: The activated file locking feature can cause problems with Solaris 2.5.1 and 2.7 used in conjunction with Linux NFS 2.0. If your system environment has these parameters, we strongly recommend that you avoid using the file locking feature. Otherwise, ${PRODUCTNAME} will hang when you try to open a file from a NFS mounted directory from a Linux computer."
 msgstr ""
-"Waarschuwing: De ingeschakelde functie bestandvergrendeling kan problemen "
-"veroorzaken op Solaris 2.5.1 en 2.7 die samen worden gebruikt met Linux NFS "
-"2.0. Als uw systeemomgeving deze parameters heeft raden wij u ten strengste "
-"aan om gebruik van de functie bestandvergrendeling te vermijden. Anders zal "
-"${PRODUCTNAME} vastlopen als u probeert om een bestand te openen vanuit een "
-"NFS gemounte map vanaf een Linuxcomputer."
 
-#: readme.xrm#gfh6w1.gfh6w1.readmeitem.text
-msgid "Problems When Sending Documents as E-mails From ${PRODUCTNAME}"
+#: docs/readme/readme.xrm#gfh6w1.gfh6w1
+msgid  "Problems When Sending Documents as E-mails From ${PRODUCTNAME}"
 msgstr ""
-"Problemen bij het verzenden van documenten als emails vanuit ${PRODUCTNAME}"
 
-#: readme.xrm#pji76w1.pji76w1.readmeitem.text
-msgid ""
-"When sending a document via 'File - Send - Document as E-mail' or 'Document "
-"as PDF Attachment' problems might occur (program crashes or hangs). This is "
-"due to the Windows system file \"Mapi\" (Messaging Application Programming "
-"Interface) which causes problems in some file versions. Unfortunately, the "
-"problem cannot be narrowed down to a certain version number. For more "
-"information visit <a "
-"href=\"http://www.microsoft.com\">http://www.microsoft.com</a> to search the "
-"Microsoft Knowledge Base for \"mapi dll\"."
+#: docs/readme/readme.xrm#pji76w1.pji76w1
+msgid  "When sending a document via 'File - Send - Document as E-mail' or 'Document as PDF Attachment' problems might occur (program crashes or hangs). This is due to the Windows system file "Mapi" (Messaging Application Programming Interface) which causes problems in some file versions. Unfortunately, the problem cannot be narrowed down to a certain version number. For more information visit <a href="http://www.microsoft.com">http://www.microsoft.com</a> to search the Microsoft Knowledge Base for "mapi dll"."
 msgstr ""
-"Bij het versturen van een document via 'Bestand - Verzenden - Document als "
-"e-mail' of 'Als PDF e-mailen' kunnen problemen optreden (programma loopt "
-"vast of hangt).  Dit is te wijten aan het Windows systeembestand \"Mapi\" "
-"(Messaging Application Programming Interface) dat in sommige bestandsversies "
-"problemen veroorzaakt. Helaas kan het probleem niet worden teruggebracht "
-"tot een bepaald versienummer. Voor meer informatie bezoekt u <a "
-"href=\"http://www.microsoft.com\">http://www.microsoft.com</a> om de Microsoft "
-"Knowledge Base te doorzoeken op \"mapi dll\"."
 
-#: readme.xrm#aw22.aw22.readmeitem.text
-msgid "Important Accessibility Notes"
+#: docs/readme/readme.xrm#aw22.aw22
+msgid  "Important Accessibility Notes"
 msgstr "Belangrijke opmerkingen over toegankelijkheid"
 
-#: readme.xrm#access7.access7.readmeitem.text
-msgid ""
-"For more information on the accessibility features in ${PRODUCTNAME}, see <a "
-"href=\"http://www.openoffice.org/access/\">http://www.openoffice.org/access/<"
-"/a>"
+#: docs/readme/readme.xrm#access7.access7
+msgid  "For more information on the accessibility features in ${PRODUCTNAME}, see <a href="http://www.openoffice.org/access/">http://www.openoffice.org/access/</a>"
 msgstr ""
-"Voor informatie over de mogelijkheden voor toegankelijkheid in "
-"${PRODUCTNAME}, zie  <a href=\"http://www.openoffice.org/access/\">http://www."
-"openoffice.org/access/</a>"
 
-#: readme.xrm#support.support.readmeitem.text
-msgid "User Support"
+#: docs/readme/readme.xrm#support.support
+msgid  "User Support"
 msgstr "Gebruikersondersteuning"
 
-#: readme.xrm#support1.support1.readmeitem.text
-msgid ""
-"The main support page <a "
-"href=\"http://support.openoffice.org/\">http://support.openoffice.org/</a> "
-"offers various possibilities for help with ${PRODUCTNAME}. Your question may "
-"have already been answered - check the Community Forum at <a href=\"http://u"
-"ser.services.openoffice.org\">http://user.services.openoffice.org</a> or "
-"search the archives of the 'users@openoffice.org' mailing list at <a href=\"h"
-"ttp://www.openoffice.org/mail_list.html\">http://www.openoffice.org/mail_list"
-".html</a>. Alternatively, you can send in your questions to <a "
-"href=\"mailto:users@openoffice.org\">users@openoffice.org</a>. How to "
-"subscribe to the list (to get an email response) is explained on this page: "
-"<a href=\"http://wiki.services.openoffice.org/wiki/Website/Content/help/maili"
-"nglists\">http://wiki.services.openoffice.org/wiki/Website/Content/help/maili"
-"nglists</a>."
+#: docs/readme/readme.xrm#support1.support1
+msgid  "The main support page <a href="http://support.openoffice.org/">http://support.openoffice.org/</a> offers various possibilities for help with ${PRODUCTNAME}. Your question may have already been answered - check the Community Forum at <a href="http://user.services.openoffice.org">http://user.services.openoffice.org</a> or search the archives of the 'users@openoffice.apache.org' mailing list at <a href="http://www.openoffice.org/mail_list.html">http://www.openoffice.org/mail_list.html</a>. Alternatively, you can send in your questions to <a href="mailto:users@openoffice.apache.org">users@openoffice.apache.org</a>. How to subscribe to the list (to get an email response) is explained on this page: <a href="http://wiki.services.openoffice.org/wiki/Website/Content/help/mailinglists">http://wiki.services.openoffice.org/wiki/Website/Content/help/mailinglists</a>."
 msgstr ""
-"De belangrijkste pagina voor ondersteuning <a "
-"href=\"http://support.openoffice.org/\">http://support.openoffice.org/</a> "
-"biedt verschillende mogelijkheden voor hulp met ${PRODUCTNAME}. U vraag zou "
-"al beantwoord kunnen zijn - controleer het Forum van de gemeenschap op <a hr"
-"ef=\"http://user.services.openoffice.org\">http://user.services.openoffice.org"
-"</a> of doorzoek de archieven van de mailinglijst 'users@openoffice.org' op "
-"<a href=\"http://www.openoffice.org/mail_list.html\">http://www.openoffice.org"
-"/mail_list.html</a>. Als alternatief kunt u uw vragen sturen aan <a "
-"href=\"mailto:users@openoffice.org\">users@openoffice.org</a>. Hoe u zich kunt "
-"abonneren op de lijst (zodat u een antwoord per e-mail krijgt) wordt "
-"uitgelegd op deze pagina: <a href=\"http://wiki.services.openoffice.org/wiki/"
-"Website/Content/help/mailinglists\">http://wiki.services.openoffice.org/wiki/"
-"Website/Content/help/mailinglists</a>."
 
-#: readme.xrm#faq.faq.readmeitem.text
-msgid ""
-"Also check the FAQ section at <a href=\"http://wiki.services.openoffice.org/w"
-"iki/Documentation/FAQ\">http://wiki.services.openoffice.org/wiki/Documentatio"
-"n/FAQ.</a>"
+#: docs/readme/readme.xrm#faq.faq
+msgid  "Also check the FAQ section at <a href="http://wiki.services.openoffice.org/wiki/Documentation/FAQ">http://wiki.services.openoffice.org/wiki/Documentation/FAQ.</a>"
 msgstr ""
-"Kijk ook in de sectie FAQ op <a href=\"http://wiki.services.openoffice.org/wi"
-"ki/Documentation/FAQ\">http://wiki.services.openoffice.org/wiki/Documentation"
-"/FAQ.</a>"
 
-#: readme.xrm#reportbugs.reportbugs.readmeitem.text
-msgid "Reporting Bugs &amp; Issues"
+#: docs/readme/readme.xrm#reportbugs.reportbugs
+msgid  "Reporting Bugs &amp; Issues"
 msgstr "Bugs &amp; problemen rapporteren"
 
-#: readme.xrm#reportbugs1.reportbugs1.readmeitem.text
-msgid ""
-"The ${PRODUCTNAME} Web site hosts IssueZilla, our mechanism for reporting, "
-"tracking and solving bugs and issues. We encourage all users to feel "
-"entitled and welcome to report issues that may arise on your particular "
-"platform. Energetic reporting of issues is one of the most important "
-"contributions that the user community can make to the ongoing development "
-"and improvement of the suite."
+#: docs/readme/readme.xrm#reportbugs1.reportbugs1
+msgid  "The ${PRODUCTNAME} Web site hosts IssueZilla, our mechanism for reporting, tracking and solving bugs and issues. We encourage all users to feel entitled and welcome to report issues that may arise on your particular platform. Energetic reporting of issues is one of the most important contributions that the user community can make to the ongoing development and improvement of the suite."
 msgstr ""
-"De website van ${PRODUCTNAME} maakt gebruik van IssueZilla, ons instrument "
-"voor het rapporteren, bijhouden en oplossen van bugs en problemen. We "
-"moedigen aan dat alle gebruikers zich gerechtigd en welkom voelen om "
-"problemen te rapporteren die voor kunnen komen op hun bepaalde platform. "
-"Energetisch rapporteren van problemen is één van de meest belangrijke "
-"bijdragen die de gebruikersgemeenschap kan gebruiken voor de doorgaande "
-"ontwikkeling en verbetering van het pakket."
 
-#: readme.xrm#gettinginvolved1.gettinginvolved1.readmeitem.text
-msgid "Getting Involved"
+#: docs/readme/readme.xrm#gettinginvolved1.gettinginvolved1
+msgid  "Getting Involved"
 msgstr "Bijdragen aan"
 
-#: readme.xrm#gettinginvolved2.gettinginvolved2.readmeitem.text
-msgid ""
-"The ${PRODUCTNAME} Community would very much benefit from your active "
-"participation in the development of this important open source project."
+#: docs/readme/readme.xrm#gettinginvolved2.gettinginvolved2
+msgid  "The ${PRODUCTNAME} Community would very much benefit from your active participation in the development of this important open source project."
 msgstr ""
-"De ${PRODUCTNAME} Community zou zeer veel profiteren van uw actieve deelname "
-"in de ontwikkeling van dit belangrijke open bron-project."
 
-#: readme.xrm#gettingimvolved3.gettingimvolved3.readmeitem.text
-msgid ""
-"As a user, you are already a valuable part of the suite's development "
-"process and we would like to encourage you to take an even more active role "
-"with a view to being a long-term contributor to the community. Please join "
-"and check out the user page at <a "
-"href=\"http://incubator.apache.org/openofficeorg/get-"
-"involved.html\">http://incubator.apache.org/openofficeorg/get-"
-"involved.html</a>"
+#: docs/readme/readme.xrm#gettingimvolved3.gettingimvolved3
+msgid  "As a user, you are already a valuable part of the suite's development process and we would like to encourage you to take an even more active role with a view to being a long-term contributor to the community. Please join and check out the user page at <a href="http://openoffice.apache.org/get-involved.html">http://openoffice.apache.org/get-involved.html</a>"
 msgstr ""
-"Als een gebruiker bent u al een belangrijk deel van het ontwikkelingsproces "
-"van het pakket en we zouden u willen aanmoedigen om zelfs een meer actieve "
-"rol te willen nemen met als doel een lange-termijn deelnemer voor de "
-"gemeenschap te zijn. Meldt u zich alstublieft aan en kijk op de "
-"gebruikerspagina op <a href=\"http://incubator.apache.org/openofficeorg/get-"
-"involved.html\">http://incubator.apache.org/openofficeorg/get-"
-"involved.html</a>"
 
-#: readme.xrm#howtostart.howtostart.readmeitem.text
-msgid "How to Start"
+#: docs/readme/readme.xrm#howtostart.howtostart
+msgid  "How to Start"
 msgstr "Hoe te beginnen"
 
-#: readme.xrm#howtostart1.howtostart1.readmeitem.text
-msgid ""
-"The best way to start contributing is to subscribe to one or more of the "
-"mailing lists, lurk for a while, and gradually use the mail archives to "
-"familiarize yourself with many of the topics covered since the "
-"${PRODUCTNAME} source code was released back in October 2000. When you're "
-"comfortable, all you need to do is send an email self-introduction and jump "
-"right in. If you are familiar with Open Source Projects, check out our To-"
-"Dos list and see if there is anything you would like to help with at <a href"
-"=\"http://development.openoffice.org/todo.html\">http://development.openoffice"
-".org/todo.html</a>."
+#: docs/readme/readme.xrm#howtostart1.howtostart1
+msgid  "The best way to start contributing is to subscribe to one or more of the mailing lists, lurk for a while, and gradually use the mail archives to familiarize yourself with many of the topics covered since the ${PRODUCTNAME} source code was released back in October 2000. When you're comfortable, all you need to do is send an email self-introduction and jump right in. If you are familiar with Open Source Projects, check out our To-Dos list and see if there is anything you would like to help with at <a href="http://development.openoffice.org/todo.html">http://development.openoffice.org/todo.html</a>."
 msgstr ""
-"De beste manier om te beginnen met deelnemen is door u te abonneren op één "
-"of meer mailinglijsten, die een tijdje te volgen en langzamerhand de "
-"mailarchieven te gebruiken om bekend te raken met de vele behandelde "
-"onderwerpen sinds de ${PRODUCTNAME} broncode werd uitgegeven in oktober "
-"2000.  Als u zich daar goed bij voelt, hoeft u alleen nog maar een email te "
-"verzenden waarin u zichzelf voorstelt en mee te doen. Als u bekend bent met "
-"Open Bron-projecten, kijk dan eens op onze To-Do-lijsten en kijk of er iets "
-"is waarmee u zou willen helpen op <a href=\"http://development.openoffice.org"
-"/todo.html\">http://development.openoffice.org/todo.html</a>."
 
-#: readme.xrm#subscribe.subscribe.readmeitem.text
-msgid "Subscribe"
+#: docs/readme/readme.xrm#subscribe.subscribe
+msgid  "Subscribe"
 msgstr "Abonneren"
 
-#: readme.xrm#subscribe1.subscribe1.readmeitem.text
-msgid ""
-"Here are a few of the Project mailing lists to which you can subscribe at <a "
-"href=\"http://incubator.apache.org/openofficeorg/mailing-"
-"lists.html\">http://incubator.apache.org/openofficeorg/mailing-lists.html</a>"
+#: docs/readme/readme.xrm#subscribe1.subscribe1
+msgid  "Here are a few of the Project mailing lists to which you can subscribe at <a href="http://openoffice.apache.org/mailing-lists.html">http://openoffice.apache.org/mailing-lists.html</a>"
 msgstr ""
-"Hier zijn een aantal Project mailinglijsten waarop u zich kunt abonneren op "
-"<a href=\"http://incubator.apache.org/openofficeorg/mailing-"
-"lists.html\">http://incubator.apache.org/openofficeorg/mailing-lists.html</a>"
 
-#: readme.xrm#subscribelist1.subscribelist1.readmeitem.text
-msgid ""
-"News: ooo-announce@incubator.apache.org *recommended to all users* (light "
-"traffic)"
+#: docs/readme/readme.xrm#subscribelist1.subscribelist1
+msgid  "News: ooo-announce@incubator.apache.org *recommended to all users* (light traffic)"
 msgstr ""
-"Nieuws: ooo-announce@incubator.apache.org *aanbevolen voor alle gebruikers* "
-"(licht verkeer)"
 
-#: readme.xrm#subscribelist2.subscribelist2.readmeitem.text
-msgid ""
-"Main user forum: ooo-users@incubator.apache.org *easy way to lurk on "
-"discussions* (heavy traffic)"
+#: docs/readme/readme.xrm#subscribelist2.subscribelist2
+msgid  "Main user forum: ooo-users@incubator.apache.org *easy way to lurk on discussions* (heavy traffic)"
 msgstr ""
-"Belangrijkste gebruikersforum: ooo-users@incubator.apache.org *eenvoudige "
-"manier om discussies te volgen* (veel verkeer)"
 
-#: readme.xrm#subscribelist3.subscribelist3.readmeitem.text
-msgid ""
-"Marketing project: ooo-marketing@incubator.apache.org *beyond development* "
-"(getting heavy)"
+#: docs/readme/readme.xrm#subscribelist3.subscribelist3
+msgid  "Marketing project: ooo-marketing@incubator.apache.org *beyond development* (getting heavy)"
 msgstr ""
-"Marketing project: ooo-marketing@incubator.apache.org *ontwikkeling voorbij* "
-"(wordt zwaarder)"
 
-#: readme.xrm#subscribelist4.subscribelist4.readmeitem.text
-msgid ""
-"General code contributor list: ooo-dev@incubator.apache.org (moderate/heavy)"
+#: docs/readme/readme.xrm#subscribelist4.subscribelist4
+msgid  "General code contributor list: ooo-dev@incubator.apache.org (moderate/heavy)"
 msgstr ""
-"Lijst voor deelnemers aan algemene code: ooo-dev@incubator.apache.org "
-"(gemiddeld/zwaar)"
 
-#: readme.xrm#.readmeitem.text
-msgid "Joining the Project"
-msgstr "Deelnemen aan het project"
-
-#: readme.xrm#joining.joining.readmeitem.text
-msgid ""
-"You can make major contributions to this important open source project even "
-"if you have limited software design or coding experience. Yes, you!"
+#: docs/readme/readme.xrm#joining.joining
+msgid  "You can make major contributions to this important open source project even if you have limited software design or coding experience. Yes, you!"
 msgstr ""
-"U kunt belangrijke bijdragen aan dit belangrijke open bron-project leveren, "
-"zelfs als u beperkte of geen ervaring heeft met software-ontwerp of "
-"codering. Ja, u!"
 
-#: readme.xrm#joining1.joining1.readmeitem.text
-msgid ""
-"At <a href=\"http://incubator.apache.org/openofficeorg/get-"
-"involved.html\">http://incubator.apache.org/openofficeorg/get-"
-"involved.html</a> you will find a first overview where you can start with, "
-"ranging from Localization, QA, user support to some real core coding "
-"projects. If you are not a developer, try the Documentation or the Marketing "
-"Project. The OpenOffice.org Marketing Project is applying both guerilla and "
-"traditional commercial techniques to marketing open source software, and we "
-"are doing it across language and cultural barriers, so you can help just by "
-"spreading the word and telling a friend about this office suite."
+#: docs/readme/readme.xrm#joining1.joining1
+msgid  "At <a href="http://openoffice.apache.org/get-involved.html">http://openoffice.apache.org/get-involved.html</a> you will find a first overview where you can start with, ranging from Localization, QA, user support to some real core coding projects. If you are not a developer, try the Documentation or the Marketing Project. The Apache OpenOffice Marketing Project is applying both guerilla and traditional commercial techniques to marketing open source software, and we are doing it across language and cultural barriers, so you can help just by spreading the word and telling a friend about this office suite."
 msgstr ""
-"Op <a href=\"http://incubator.apache.org/openofficeorg/get-"
-"involved.html\">http://incubator.apache.org/openofficeorg/get-"
-"involved.html</a> vindt u projecten van Localisatie, Portering en Groeps-"
-"software tot sommige echte kern-coderingsprojecten.  Als u geen ontwikkelaar "
-"bent, probeer dan eens het Documentatie- of het Marketing-project. Het "
-"OpenOffice.org Marketing-project past zowel guerrilla- als traditionele "
-"commerciële technieken toe om open bron-software aan de man te brengen en we "
-"doen dit over taal- en culturele grenzen heen, dus u helpt ons al door het "
-"door te geven en een vriend over dit kantoorpakket te vertellen."
 
-#: readme.xrm#joining3.joining3.readmeitem.text
-msgid ""
-"You can help by joining the marktig mailig list ooo-"
-"marketing@incubator.apache.org or visit the Marketing Communications &amp; "
-"Information Network on <a "
-"href=\"http://marketing.openoffice.org\">http://marketing.openoffice.org</a> "
-"where you can provide point communication contact with press, media, "
-"government agencies, consultants, schools, Linux Users Groups and developers "
-"in your country and local community."
+#: docs/readme/readme.xrm#joining3.joining3
+msgid  "You can help by joining the marktig mailig list ooo-marketing@incubator.apache.org or visit the Marketing Communications &amp; Information Network on <a href="http://marketing.openoffice.org">http://marketing.openoffice.org</a> where you can provide point communication contact with press, media, government agencies, consultants, schools, Linux Users Groups and developers in your country and local community."
 msgstr ""
-"U kunt helpen door deel te nemen aan de mailinhlijst voor marketing ooo-"
-"marketing@incubator.apache.org of door deel te nemen aan het Marketing "
-"Communications &amp; Information Network op <a href=\"http://marketing.openof"
-"fice.org/contacts.html\">http://marketing.openoffice.org/contacts.html</a> "
-"waar u communicatiepunten op kunt geven voor pers, media, "
-"overheidsinstellingen, consultanten, scholen, Linux Gebruikers Groepen en "
-"ontwikkelaars in uw land en lokale gemeenschap."
 
-#: readme.xrm#credits.credits.readmeitem.text
-msgid ""
-"We hope you enjoy working with the new ${PRODUCTNAME} ${PRODUCTVERSION} and "
-"will join us online."
+#: docs/readme/readme.xrm#credits.credits
+msgid  "We hope you enjoy working with the new ${PRODUCTNAME} ${PRODUCTVERSION} and will join us online."
 msgstr ""
-"We hopen dat het werken met de nieuwe ${PRODUCTNAME} ${PRODUCTVERSION} u "
-"bevalt en u zich online bij ons aansluit."
 
-#: readme.xrm#credits2.credits2.readmeitem.text
-msgid "The OpenOffice.org Community"
-msgstr "De OpenOffice.org-gemeenschap"
+#: docs/readme/readme.xrm#credits2.credits2
+msgid  "The Apache OpenOffice Community"
+msgstr ""
 
-#: readme.xrm#sdffd23r3cefwefew.sdffd23r3cefwefew.readmeitem.text
-msgid "Used / Modified Source Code"
+#: docs/readme/readme.xrm#sdffd23r3cefwefew.sdffd23r3cefwefew
+msgid  "Used / Modified Source Code"
 msgstr "Gebruikte / Aangepaste broncode"
-
-#~ msgid "Registration "
-#~ msgstr "Registratie "
-
-#~ msgid ""
-#~ "Please take a little time to complete the minimal Product Registration "
-#~ "process when you install the software. While registration is optional, we "
-#~ "encourage you to register, since the information enables the community to "
-#~ "make an even better software suite and address user needs directly. Through "
-#~ "its Privacy Policy, the ${PRODUCTNAME} Community takes every precaution to "
-#~ "safeguard your personal data. If you missed the registration at "
-#~ "installation, you can return and register at any time at by choosing \"Help - "
-#~ "Registration\" from the main menu."
-#~ msgstr ""
-#~ "Neem alstublieft even de tijd om het minimale Product registratieproces te "
-#~ "voltooien als u de software installeert. Hoewel registratie optioneel is, "
-#~ "raden wij u aan om te registreren, omdat de informatie de gemeenschap in "
-#~ "staat stelt om een beter softwarepakket te maken en direct in te spelen op "
-#~ "gebruikersbehoeften. Door middel van haar Privacy-beleid neemt de "
-#~ "${PRODUCTNAME} gemeenschap elke voorzorgsmaatregel om uw persoonlijke "
-#~ "gegevens te beschermen. Als u de registratie bij de installatie vergat, kunt "
-#~ "u teruggaan en op elk moment registreren door te kiezen voor \"Help > "
-#~ "Registratie\" in het hoofdmenu."
-
-#~ msgid "User Survey"
-#~ msgstr "Gebruikersonderzoek"
-
-#~ msgid ""
-#~ "There is also a User Survey located online which we encourage you to fill "
-#~ "out. The User Survey results will help ${PRODUCTNAME} move more rapidly in "
-#~ "setting new standards for the creation of the next-generation office suite. "
-#~ "Through its Privacy Policy, the ${PRODUCTNAME} Community takes every "
-#~ "precaution to safeguard your personal data."
-#~ msgstr ""
-#~ "Er is ook een online gebruikersonderzoek waarvoor wij u willen aanmoedigen "
-#~ "om het in te vullen. De resultaten van het gebruikersonderzoek zullen "
-#~ "${PRODUCTNAME} helpen sneller te voldoen aan het opstellen van nieuwe "
-#~ "standaarden voor het maken van het kantoorpakket van de volgende generatie. "
-#~ "Door middel van haar Privacy-beleid neemt de ${PRODUCTNAME} gemeenschap elke "
-#~ "voorzorgsmaatregel om uw persoonlijke gegevens te beschermen."
-
-#~ msgid "Joining one or more Projects"
-#~ msgstr "Deelnemen aan één of meer projecten"

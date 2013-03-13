@@ -1,457 +1,468 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
 
-#: cstitem.src#STR_COLUM_DT_AUTO.string.text
-msgid "automatic"
+
+#: source/items/cstitem.src#STR_COLUM_DT_AUTO.String.Text
+msgid  "automatic"
 msgstr "automatisch"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_GAL.string.text
-msgid "Gallery"
-msgstr "Gallery"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_GAL_THEME.string.text
-msgid "Gallery theme"
-msgstr "Gallery-Thema"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_IMPRESSPACKED.string.text
-msgid "%PRODUCTNAME Presentation (packed)"
-msgstr "%PRODUCTNAME Präsentation (gepackt)"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_JAR.string.text
-msgid "JAR file"
-msgstr "JAR-Datei"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_MSEXCEL.string.text
-msgid "MS Excel document"
-msgstr "MS-Excel-Dokument"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_MSEXCEL_TEMPL.string.text
-msgid "MS Excel Template"
-msgstr "MS-Excel-Vorlage"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_MSPPOINT.string.text
-msgid "MS PowerPoint document"
-msgstr "MS-Power-Point-Dokument"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_MSWORD.string.text
-msgid "MS-Word document"
-msgstr "MS-Word-Dokument"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_OCTSTREAM.string.text
-msgid "Binary file"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_OCTSTREAM.String.Text
+msgid  "Binary file"
 msgstr "Binärdatei"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_PDF.string.text
-msgid "PDF file"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_PDF.String.Text
+msgid  "PDF file"
 msgstr "PDF-Datei"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_RTF.string.text
-msgid "RTF File"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_RTF.String.Text
+msgid  "RTF File"
 msgstr "RTF-Datei"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_SDM.string.text
-msgctxt "mediatyp.src#STR_SVT_MIMETYPE_APP_SDM.string.text"
-msgid "Message"
-msgstr "Nachricht"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_MSWORD.String.Text
+msgid  "MS-Word document"
+msgstr "MS-Word-Dokument"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_SMD.string.text
-msgctxt "mediatyp.src#STR_SVT_MIMETYPE_APP_SMD.string.text"
-msgid "Message"
-msgstr "Nachricht"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_STARCALC.string.text
-msgid "%PRODUCTNAME Spreadsheet"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_STARCALC.String.Text
+msgid  "%PRODUCTNAME Spreadsheet"
 msgstr "%PRODUCTNAME Tabelle"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_STARCHART.string.text
-msgid "%PRODUCTNAME Chart"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_STARCHART.String.Text
+msgid  "%PRODUCTNAME Chart"
 msgstr "%PRODUCTNAME Diagramm"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_STARDRAW.string.text
-msgid "%PRODUCTNAME Drawing"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_STARDRAW.String.Text
+msgid  "%PRODUCTNAME Drawing"
 msgstr "%PRODUCTNAME Zeichnung"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_STARHELP.string.text
-msgid "%PRODUCTNAME Help"
-msgstr "%PRODUCTNAME Hilfe"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_STARIMAGE.string.text
-msgid "%PRODUCTNAME Image"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_STARIMAGE.String.Text
+msgid  "%PRODUCTNAME Image"
 msgstr "%PRODUCTNAME Bild"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_STARIMPRESS.string.text
-msgid "%PRODUCTNAME Presentation"
-msgstr "%PRODUCTNAME Präsentation"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_STARMATH.string.text
-msgid "%PRODUCTNAME Formula"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_STARMATH.String.Text
+msgid  "%PRODUCTNAME Formula"
 msgstr "%PRODUCTNAME Formel"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_STARWRITER.string.text
-msgid "%PRODUCTNAME Text"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_STARWRITER.String.Text
+msgid  "%PRODUCTNAME Text"
 msgstr "%PRODUCTNAME Text"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_STARW_GLOB.string.text
-msgid "%PRODUCTNAME Master Document"
-msgstr "%PRODUCTNAME Globaldokument"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_STARW_WEB.string.text
-msgid "%PRODUCTNAME Writer/Web"
-msgstr "%PRODUCTNAME Writer/Web"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_SXCALC.string.text
-msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Tabellendokument"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_SXCHART.string.text
-msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Chart"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Diagramm"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_SXDRAW.string.text
-msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Drawing"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Zeichnung"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_SXGLOBAL.string.text
-msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Master Document"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Globaldokument"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_SXIMPRESS.string.text
-msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Presentation"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Präsentation"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_SXIPACKED.string.text
-msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Presentation (packed)"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Präsentation (gepackt)"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_SXMATH.string.text
-msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Formula"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Formel"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_SXWRITER.string.text
-msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Text Document"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Textdokument"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_TEMPLATE.string.text
-msgid "%PRODUCTNAME Template"
-msgstr "%PRODUCTNAME Vorlage"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_ZIP.string.text
-msgid "ZIP file"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_ZIP.String.Text
+msgid  "ZIP file"
 msgstr "ZIP-Datei"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_AUDIO_AIFF.string.text
-msgctxt "mediatyp.src#STR_SVT_MIMETYPE_AUDIO_AIFF.string.text"
-msgid "Audio file"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_JAR.String.Text
+msgid  "JAR file"
+msgstr "JAR-Datei"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_AUDIO_AIFF.String.Text
+msgid  "Audio file"
 msgstr "Audio-Datei"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_AUDIO_BASIC.string.text
-msgctxt "mediatyp.src#STR_SVT_MIMETYPE_AUDIO_BASIC.string.text"
-msgid "Audio file"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_AUDIO_BASIC.String.Text
+msgid  "Audio file"
 msgstr "Audio-Datei"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_AUDIO_MIDI.string.text
-msgctxt "mediatyp.src#STR_SVT_MIMETYPE_AUDIO_MIDI.string.text"
-msgid "Audio file"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_AUDIO_MIDI.String.Text
+msgid  "Audio file"
 msgstr "Audio-Datei"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_AUDIO_WAV.string.text
-msgctxt "mediatyp.src#STR_SVT_MIMETYPE_AUDIO_WAV.string.text"
-msgid "Audio file"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_AUDIO_WAV.String.Text
+msgid  "Audio file"
 msgstr "Audio-Datei"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_BBBOX.string.text
-msgid "Newsgroups"
-msgstr "Newsgruppen"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_IMAGE_GIF.String.Text
+msgid  "Graphics"
+msgstr "Grafik"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_BOOKMARK.string.text
-msgid "Bookmark subscription"
-msgstr "Bookmark Abonnement"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_IMAGE_JPEG.String.Text
+msgid  "Graphics"
+msgstr "Grafik"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_CDF.string.text
-msgctxt "mediatyp.src#STR_SVT_MIMETYPE_CNT_CDF.string.text"
-msgid "Channel subscription"
-msgstr "Channel Abonnement"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_IMAGE_PCX.String.Text
+msgid  "Graphics"
+msgstr "Grafik"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_CDFITEM.string.text
-msgctxt "mediatyp.src#STR_SVT_MIMETYPE_CNT_CDFITEM.string.text"
-msgid "Channel subscription"
-msgstr "Channel Abonnement"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_CDFSUB.string.text
-msgctxt "mediatyp.src#STR_SVT_MIMETYPE_CNT_CDFSUB.string.text"
-msgid "Channel subscription"
-msgstr "Channel Abonnement"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_CDROM.string.text
-msgid "CD-ROM drive"
-msgstr "CD-ROM-Laufwerk"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_DISK_35.string.text
-msgid "3.5'' Disk"
-msgstr "3,5\"-Diskette"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_DISK_525.string.text
-msgid "5.25'' Disk"
-msgstr "5,25\"-Diskette"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_DOCUMENT.string.text
-msgid "Document"
-msgstr "Dokument"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_FIX_VOL.string.text
-msgctxt "mediatyp.src#STR_SVT_MIMETYPE_CNT_FIX_VOL.string.text"
-msgid "Local drive"
-msgstr "Lokales Laufwerk"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_FSYSBOX.string.text
-msgid "Workplace"
-msgstr "Arbeitsplatz"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_FSYSFILE.string.text
-msgid "File"
-msgstr "Datei"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_FSYSFLD.string.text
-msgctxt "mediatyp.src#STR_SVT_MIMETYPE_CNT_FSYSFLD.string.text"
-msgid "Folder"
-msgstr "Ordner"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_FSYSURLFILE.string.text
-msgid "Link"
-msgstr "Verknüpfung"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_FTPBOX.string.text
-msgid "FTP Account"
-msgstr "FTP-Account"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_FTPFILE.string.text
-msgid "FTP File"
-msgstr "FTP-Datei"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_FTPFLD.string.text
-msgid "FTP Folder"
-msgstr "FTP-Ordner"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_FTPLINK.string.text
-msgid "FTP Link"
-msgstr "FTP-Verknüpfung"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_HTTPBOX.string.text
-msgid "HTTP"
-msgstr "HTTP"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_IMAPBOX.string.text
-msgid "IMAP Account"
-msgstr "IMAP-Account"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_IMAPFLD.string.text
-msgctxt "mediatyp.src#STR_SVT_MIMETYPE_CNT_IMAPFLD.string.text"
-msgid "Folder"
-msgstr "Ordner"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_MSG.string.text
-msgctxt "mediatyp.src#STR_SVT_MIMETYPE_CNT_MSG.string.text"
-msgid "Message"
-msgstr "Nachricht"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_NEWSBOX.string.text
-msgid "News"
-msgstr "News"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_NEWSGRP.string.text
-msgid "Group"
-msgstr "Gruppe"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_OUTBOX.string.text
-msgid "Outbox"
-msgstr "Ausgangskorb"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_POP3BOX.string.text
-msgid "POP3 Account"
-msgstr "POP3-Account"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_PUBLBOX.string.text
-msgid "Project"
-msgstr "Projekt"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_RAM_VOL.string.text
-msgid "RAM Disk"
-msgstr "RAM-Disk"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_REMOV_VOL.string.text
-msgctxt "mediatyp.src#STR_SVT_MIMETYPE_CNT_REMOV_VOL.string.text"
-msgid "Local drive"
-msgstr "Lokales Laufwerk"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_REM_VOL.string.text
-msgid "Network connection"
-msgstr "Netzwerkverbindung"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_SFSYSFILE.string.text
-msgid "System object"
-msgstr "Systemobjekt"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_SFSYSFOLDER.string.text
-msgid "System folder"
-msgstr "Systemordner"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_SRCHBOX.string.text
-msgid "Find"
-msgstr "Suchen"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_STARCHANNEL.string.text
-msgid "StarChannel"
-msgstr "StarChannel"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_SUBSCRBOX.string.text
-msgid "Subscriptions"
-msgstr "Abonnements"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_TAPEDRIVE.string.text
-msgid "Tape drive"
-msgstr "Bandlaufwerk"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_TRASH.string.text
-msgid "Deleted Object"
-msgstr "Gelöschtes Objekt"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_TRASHBOX.string.text
-msgid "Recycle Bin"
-msgstr "Papierkorb"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_VIMBOX.string.text
-msgid "VIM Account"
-msgstr "VIM-Account"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_VIMINBOX.string.text
-msgid "Inbox"
-msgstr "Eingangskorb"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_VIM_BB.string.text
-msgid "Newsgroup"
-msgstr "Newsgruppe"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_FRAMESET.string.text
-msgid "Frameset Document"
-msgstr "Frameset Dokument"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_IMAGE_BMP.string.text
-msgid "Bitmap"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_IMAGE_BMP.String.Text
+msgid  "Bitmap"
 msgstr "Bitmap"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_IMAGE_GENERIC.string.text
-msgctxt "mediatyp.src#STR_SVT_MIMETYPE_IMAGE_GENERIC.string.text"
-msgid "Graphics"
-msgstr "Grafik"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_IMAGE_GIF.string.text
-msgctxt "mediatyp.src#STR_SVT_MIMETYPE_IMAGE_GIF.string.text"
-msgid "Graphics"
-msgstr "Grafik"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_IMAGE_JPEG.string.text
-msgctxt "mediatyp.src#STR_SVT_MIMETYPE_IMAGE_JPEG.string.text"
-msgid "Graphics"
-msgstr "Grafik"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_IMAGE_PCX.string.text
-msgctxt "mediatyp.src#STR_SVT_MIMETYPE_IMAGE_PCX.string.text"
-msgid "Graphics"
-msgstr "Grafik"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_INET_MSG_RFC822.string.text
-msgid "message/rfc822"
-msgstr "message/rfc822"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_INET_MULTI_ALTERNATIVE.string.text
-msgid "multipart/alternative"
-msgstr "multipart/alternative"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_INET_MULTI_DIGEST.string.text
-msgid "multipart/digest"
-msgstr "multipart/digest"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_INET_MULTI_MIXED.string.text
-msgid "multipart/mixed"
-msgstr "multipart/mixed"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_INET_MULTI_PARALLEL.string.text
-msgid "multipart/parallel"
-msgstr "multipart/parallel"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_INET_MULTI_RELATED.string.text
-msgid "multipart/related"
-msgstr "multipart/related"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_MACRO.string.text
-msgid "Macro file"
-msgstr "Makro Datei"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_SCHEDULE.string.text
-msgid "Tasks & Events"
-msgstr "Aufgaben & Termine"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_SCHEDULE_EVT.string.text
-msgid "%PRODUCTNAME Events View"
-msgstr "%PRODUCTNAME Terminansicht"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_SCHEDULE_FEVT.string.text
-msgid "%PRODUCTNAME Event"
-msgstr "%PRODUCTNAME Termin"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_SCHEDULE_FTASK.string.text
-msgid "%PRODUCTNAME Task"
-msgstr "%PRODUCTNAME Aufgabe"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_SCHEDULE_TASK.string.text
-msgid "%PRODUCTNAME Task View"
-msgstr "%PRODUCTNAME Aufgabenansicht"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_TEXT_CDE_CALENDAR_APP.string.text
-msgid "CDE-Calendar-File"
-msgstr "CDE-Calendar-Datei"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_TEXT_HTML.string.text
-msgid "HTML document"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_TEXT_HTML.String.Text
+msgid  "HTML document"
 msgstr "HTML-Dokument"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_TEXT_ICALENDAR.string.text
-msgid "iCalendar-File"
-msgstr "iCalendar-Datei"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_TEXT_PLAIN.string.text
-msgid "Text file"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_TEXT_PLAIN.String.Text
+msgid  "Text file"
 msgstr "Textdatei"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_TEXT_URL.string.text
-msgid "Bookmark"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_TEXT_URL.String.Text
+msgid  "Bookmark"
 msgstr "Bookmark"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_TEXT_VCALENDAR.string.text
-msgid "vCalendar-file"
-msgstr "vCalendar-Datei"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_TEXT_VCARD.string.text
-msgid "vCard file"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_TEXT_VCARD.String.Text
+msgid  "vCard file"
 msgstr "vCard-Datei"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_TEXT_XMLICALENDAR.string.text
-msgid "XML-iCalendar-File"
-msgstr "XML-iCalendar-Datei"
-
-#: mediatyp.src#STR_SVT_MIMETYPE_VIDEO_MSVIDEO.string.text
-msgctxt "mediatyp.src#STR_SVT_MIMETYPE_VIDEO_MSVIDEO.string.text"
-msgid "Video file"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_VIDEO_VDO.String.Text
+msgid  "Video file"
 msgstr "Video-Datei"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_VIDEO_VDO.string.text
-msgctxt "mediatyp.src#STR_SVT_MIMETYPE_VIDEO_VDO.string.text"
-msgid "Video file"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_VIDEO_MSVIDEO.String.Text
+msgid  "Video file"
 msgstr "Video-Datei"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_X_STARMAIL.string.text
-msgctxt "mediatyp.src#STR_SVT_MIMETYPE_X_STARMAIL.string.text"
-msgid "Message"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_X_STARMAIL.String.Text
+msgid  "Message"
 msgstr "Nachricht"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_X_VRML.string.text
-msgid "VRML file"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_X_VRML.String.Text
+msgid  "VRML file"
 msgstr "VRML-Datei"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_STARIMPRESS.String.Text
+msgid  "%PRODUCTNAME Presentation"
+msgstr "%PRODUCTNAME Präsentation"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_IMPRESSPACKED.String.Text
+msgid  "%PRODUCTNAME Presentation (packed)"
+msgstr "%PRODUCTNAME Präsentation (gepackt)"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_STARHELP.String.Text
+msgid  "%PRODUCTNAME Help"
+msgstr "%PRODUCTNAME Hilfe"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_MSG.String.Text
+msgid  "Message"
+msgstr "Nachricht"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_DOCUMENT.String.Text
+msgid  "Document"
+msgstr "Dokument"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_POP3BOX.String.Text
+msgid  "POP3 Account"
+msgstr "POP3-Account"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_IMAPBOX.String.Text
+msgid  "IMAP Account"
+msgstr "IMAP-Account"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_IMAPFLD.String.Text
+msgid  "Folder"
+msgstr "Ordner"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_VIMBOX.String.Text
+msgid  "VIM Account"
+msgstr "VIM-Account"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_VIMINBOX.String.Text
+msgid  "Inbox"
+msgstr "Eingangskorb"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_BBBOX.String.Text
+msgid  "Newsgroups"
+msgstr "Newsgruppen"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_VIM_BB.String.Text
+msgid  "Newsgroup"
+msgstr "Newsgruppe"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_NEWSBOX.String.Text
+msgid  "News"
+msgstr "News"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_NEWSGRP.String.Text
+msgid  "Group"
+msgstr "Gruppe"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_OUTBOX.String.Text
+msgid  "Outbox"
+msgstr "Ausgangskorb"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_FTPBOX.String.Text
+msgid  "FTP Account"
+msgstr "FTP-Account"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_FTPFLD.String.Text
+msgid  "FTP Folder"
+msgstr "FTP-Ordner"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_FTPFILE.String.Text
+msgid  "FTP File"
+msgstr "FTP-Datei"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_FTPLINK.String.Text
+msgid  "FTP Link"
+msgstr "FTP-Verknüpfung"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_HTTPBOX.String.Text
+msgid  "HTTP"
+msgstr "HTTP"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_FSYSBOX.String.Text
+msgid  "Workplace"
+msgstr "Arbeitsplatz"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_FSYSFLD.String.Text
+msgid  "Folder"
+msgstr "Ordner"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_FSYSFILE.String.Text
+msgid  "File"
+msgstr "Datei"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_FSYSURLFILE.String.Text
+msgid  "Link"
+msgstr "Verknüpfung"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_PUBLBOX.String.Text
+msgid  "Project"
+msgstr "Projekt"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_SRCHBOX.String.Text
+msgid  "Find"
+msgstr "Suchen"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_SUBSCRBOX.String.Text
+msgid  "Subscriptions"
+msgstr "Abonnements"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_BOOKMARK.String.Text
+msgid  "Bookmark subscription"
+msgstr "Bookmark Abonnement"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_CDF.String.Text
+msgid  "Channel subscription"
+msgstr "Channel Abonnement"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_CDFSUB.String.Text
+msgid  "Channel subscription"
+msgstr "Channel Abonnement"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_CDFITEM.String.Text
+msgid  "Channel subscription"
+msgstr "Channel Abonnement"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_STARCHANNEL.String.Text
+msgid  "StarChannel"
+msgstr "StarChannel"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_TRASHBOX.String.Text
+msgid  "Recycle Bin"
+msgstr "Papierkorb"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_TRASH.String.Text
+msgid  "Deleted Object"
+msgstr "Gelöschtes Objekt"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_REMOV_VOL.String.Text
+msgid  "Local drive"
+msgstr "Lokales Laufwerk"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_FIX_VOL.String.Text
+msgid  "Local drive"
+msgstr "Lokales Laufwerk"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_REM_VOL.String.Text
+msgid  "Network connection"
+msgstr "Netzwerkverbindung"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_RAM_VOL.String.Text
+msgid  "RAM Disk"
+msgstr "RAM-Disk"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_CDROM.String.Text
+msgid  "CD-ROM drive"
+msgstr "CD-ROM-Laufwerk"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_DISK_35.String.Text
+msgid  "3.5'' Disk"
+msgstr "3,5\"-Diskette"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_DISK_525.String.Text
+msgid  "5.25'' Disk"
+msgstr "5,25\"-Diskette"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_TAPEDRIVE.String.Text
+msgid  "Tape drive"
+msgstr "Bandlaufwerk"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_GAL.String.Text
+msgid  "Gallery"
+msgstr "Gallery"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_GAL_THEME.String.Text
+msgid  "Gallery theme"
+msgstr "Gallery-Thema"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_STARW_GLOB.String.Text
+msgid  "%PRODUCTNAME Master Document"
+msgstr "%PRODUCTNAME Globaldokument"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_SDM.String.Text
+msgid  "Message"
+msgstr "Nachricht"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_SMD.String.Text
+msgid  "Message"
+msgstr "Nachricht"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_STARW_WEB.String.Text
+msgid  "%PRODUCTNAME Writer/Web"
+msgstr "%PRODUCTNAME Writer/Web"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_SCHEDULE.String.Text
+msgid  "Tasks & Events"
+msgstr "Aufgaben & Termine"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_SCHEDULE_EVT.String.Text
+msgid  "%PRODUCTNAME Events View"
+msgstr "%PRODUCTNAME Terminansicht"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_SCHEDULE_TASK.String.Text
+msgid  "%PRODUCTNAME Task View"
+msgstr "%PRODUCTNAME Aufgabenansicht"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_SCHEDULE_FEVT.String.Text
+msgid  "%PRODUCTNAME Event"
+msgstr "%PRODUCTNAME Termin"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_SCHEDULE_FTASK.String.Text
+msgid  "%PRODUCTNAME Task"
+msgstr "%PRODUCTNAME Aufgabe"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_FRAMESET.String.Text
+msgid  "Frameset Document"
+msgstr "Frameset Dokument"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_MACRO.String.Text
+msgid  "Macro file"
+msgstr "Makro Datei"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_SFSYSFOLDER.String.Text
+msgid  "System folder"
+msgstr "Systemordner"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_SFSYSFILE.String.Text
+msgid  "System object"
+msgstr "Systemobjekt"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_TEMPLATE.String.Text
+msgid  "%PRODUCTNAME Template"
+msgstr "%PRODUCTNAME Vorlage"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_IMAGE_GENERIC.String.Text
+msgid  "Graphics"
+msgstr "Grafik"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_MSEXCEL.String.Text
+msgid  "MS Excel document"
+msgstr "MS-Excel-Dokument"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_MSEXCEL_TEMPL.String.Text
+msgid  "MS Excel Template"
+msgstr "MS-Excel-Vorlage"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_MSPPOINT.String.Text
+msgid  "MS PowerPoint document"
+msgstr "MS-Power-Point-Dokument"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_TEXT_VCALENDAR.String.Text
+msgid  "vCalendar-file"
+msgstr "vCalendar-Datei"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_TEXT_ICALENDAR.String.Text
+msgid  "iCalendar-File"
+msgstr "iCalendar-Datei"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_TEXT_XMLICALENDAR.String.Text
+msgid  "XML-iCalendar-File"
+msgstr "XML-iCalendar-Datei"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_TEXT_CDE_CALENDAR_APP.String.Text
+msgid  "CDE-Calendar-File"
+msgstr "CDE-Calendar-Datei"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_INET_MSG_RFC822.String.Text
+msgid  "message/rfc822"
+msgstr "message/rfc822"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_INET_MULTI_ALTERNATIVE.String.Text
+msgid  "multipart/alternative"
+msgstr "multipart/alternative"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_INET_MULTI_DIGEST.String.Text
+msgid  "multipart/digest"
+msgstr "multipart/digest"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_INET_MULTI_PARALLEL.String.Text
+msgid  "multipart/parallel"
+msgstr "multipart/parallel"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_INET_MULTI_RELATED.String.Text
+msgid  "multipart/related"
+msgstr "multipart/related"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_INET_MULTI_MIXED.String.Text
+msgid  "multipart/mixed"
+msgstr "multipart/mixed"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_SXCALC.String.Text
+msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet"
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Tabellendokument"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_SXCHART.String.Text
+msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Chart"
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Diagramm"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_SXDRAW.String.Text
+msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Drawing"
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Zeichnung"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_SXMATH.String.Text
+msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Formula"
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Formel"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_SXWRITER.String.Text
+msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Text Document"
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Textdokument"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_SXIMPRESS.String.Text
+msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Presentation"
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Präsentation"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_SXGLOBAL.String.Text
+msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Master Document"
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Globaldokument"
+
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_SXIPACKED.String.Text
+msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Presentation (packed)"
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Präsentation (gepackt)"

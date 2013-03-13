@@ -1,1018 +1,1028 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
 
-#: outliner.src#RID_OUTLUNDO_HEIGHT.string.text
-msgid "Move"
-msgstr "ရွေ့ပါ"
 
-#: outliner.src#RID_OUTLUNDO_DEPTH.string.text
-msgid "Indent"
-msgstr "အတွင်းဘက်သို့ရွေ့ခြင်း"
-
-#: outliner.src#RID_OUTLUNDO_EXPAND.string.text
-msgid "Show subpoints"
-msgstr "အမှတ်ငယ်များပြသပါ"
-
-#: outliner.src#RID_OUTLUNDO_COLLAPSE.string.text
-msgid "Collapse"
-msgstr "ခေါက်သိမ်းခြင်း"
-
-#: outliner.src#RID_OUTLUNDO_ATTR.string.text
-msgid "Apply attributes"
-msgstr "စွမ်းရည်များ အသုံးချပါ"
-
-#: outliner.src#RID_OUTLUNDO_INSERT.string.text
-msgid "Insert"
-msgstr "ထည့်သွင်းပါ"
-
-#: accessibility.src#RID_SVXSTR_A11Y_IMAGEBULLET_DESCRIPTION.string.text
-msgid "Image bullet in paragraph"
+#: source/accessibility/accessibility.src#RID_SVXSTR_A11Y_IMAGEBULLET_DESCRIPTION.String.Text
+msgid  "Image bullet in paragraph"
 msgstr "စာပိုဒ်တွင်းရှိ ရုပ်ပုံသင်္ကေတများ"
 
-#: accessibility.src#RID_SVXSTR_A11Y_IMAGEBULLET_NAME.string.text
-msgid "Image bullet"
+#: source/accessibility/accessibility.src#RID_SVXSTR_A11Y_IMAGEBULLET_NAME.String.Text
+msgid  "Image bullet"
 msgstr "ရုပ်ပုံသင်္ကေတ"
 
-#: editeng.src#RID_EDITUNDO_DEL.string.text
-msgid "Delete"
+#: source/editeng/editeng.src#RID_EDITUNDO_DEL.String.Text
+msgid  "Delete"
 msgstr "ဖျက်ပါ"
 
-#: editeng.src#RID_EDITUNDO_MOVE.string.text
-msgid "Move"
+#: source/editeng/editeng.src#RID_EDITUNDO_MOVE.String.Text
+msgid  "Move"
 msgstr "ရွေ့ပါ"
 
-#: editeng.src#RID_EDITUNDO_INSERT.string.text
-msgid "Insert"
+#: source/editeng/editeng.src#RID_EDITUNDO_INSERT.String.Text
+msgid  "Insert"
 msgstr "ထပ်ထည့်ပါ"
 
-#: editeng.src#RID_EDITUNDO_REPLACE.string.text
-msgid "Replace"
+#: source/editeng/editeng.src#RID_EDITUNDO_REPLACE.String.Text
+msgid  "Replace"
 msgstr "အစားထိုးပါ"
 
-#: editeng.src#RID_EDITUNDO_SETATTRIBS.string.text
-msgid "Apply attributes"
+#: source/editeng/editeng.src#RID_EDITUNDO_SETATTRIBS.String.Text
+msgid  "Apply attributes"
 msgstr "အရည်အသွေးများ အသုံးချသည်"
 
-#: editeng.src#RID_EDITUNDO_RESETATTRIBS.string.text
-msgid "Reset attributes"
+#: source/editeng/editeng.src#RID_EDITUNDO_RESETATTRIBS.String.Text
+msgid  "Reset attributes"
 msgstr "အရည်အသွေးများ ပြန်ထားသည်"
 
-#: editeng.src#RID_EDITUNDO_INDENT.string.text
-msgid "Indent"
+#: source/editeng/editeng.src#RID_EDITUNDO_INDENT.String.Text
+msgid  "Indent"
 msgstr "စာများနေရာချထားမှု"
 
-#: editeng.src#RID_EDITUNDO_SETSTYLE.string.text
-msgid "Apply Styles"
+#: source/editeng/editeng.src#RID_EDITUNDO_SETSTYLE.String.Text
+msgid  "Apply Styles"
 msgstr "ပုံစံများအသုံးပြုပါ"
 
-#: editeng.src#RID_EDITUNDO_TRANSLITERATE.string.text
-msgid "Case/Characters"
+#: source/editeng/editeng.src#RID_EDITUNDO_TRANSLITERATE.String.Text
+msgid  "Case/Characters"
 msgstr "ကိစ္စရပ်များ/အက္ခရာများ"
 
-#: editeng.src#RID_MENU_SPELL.MN_SPELLING.menuitem.text
-msgid "~Spellcheck..."
+#: source/editeng/editeng.src#RID_MENU_SPELL.MN_SPELLING.MenuItem.Text
+msgid  "~Spellcheck..."
 msgstr "~စာလုံးပေါင်း စစ်ဆေးပါ..."
 
-#: editeng.src#RID_MENU_SPELL.MN_INSERT.menuitem.text
-msgid "~Add"
+#: source/editeng/editeng.src#RID_MENU_SPELL.MN_INSERT.MenuItem.Text
+msgid  "~Add"
 msgstr "~ထပ်ထည့်ပါ"
 
-#: editeng.src#RID_MENU_SPELL.MN_IGNORE.menuitem.text
-msgid "Ignore All"
+#: source/editeng/editeng.src#RID_MENU_SPELL.MN_IGNORE.MenuItem.Text
+msgid  "Ignore All"
 msgstr "အားလုံးကို လစ်လျူရှုပါ"
 
-#: editeng.src#RID_MENU_SPELL.MN_AUTOCORR.menuitem.text
-msgid "AutoCorrect"
+#: source/editeng/editeng.src#RID_MENU_SPELL.MN_AUTOCORR.MenuItem.Text
+msgid  "AutoCorrect"
 msgstr "အလိုအလျောက် မှန်ကန်စေပါ"
 
-#: editeng.src#RID_STR_WORD.string.text
-msgid "Word is %x"
+#: source/editeng/editeng.src#RID_STR_WORD.String.Text
+msgid  "Word is %x"
 msgstr "စကားလုံးသည် %x"
 
-#: editeng.src#RID_STR_PARAGRAPH.string.text
-msgid "Paragraph is %x"
+#: source/editeng/editeng.src#RID_STR_PARAGRAPH.String.Text
+msgid  "Paragraph is %x"
 msgstr "စာပိုဒ်သည် %x"
-"X-Accelerator-Marker: ~\n"
 
-#: page.src#RID_SVXSTR_PAPERBIN.string.text
-msgid "Paper tray"
+#: source/items/page.src#RID_SVXSTR_PAPERBIN.String.Text
+msgid  "Paper tray"
 msgstr "စာရွက်ဗန်း"
 
-#: page.src#RID_SVXSTR_PAPERBIN_SETTINGS.string.text
-msgid "[From printer settings]"
+#: source/items/page.src#RID_SVXSTR_PAPERBIN_SETTINGS.String.Text
+msgid  "[From printer settings]"
 msgstr "[ပရင်တာပြင်ဆင်ချိန်ညှိမှုများမှ]"
 
-#: svxitems.src#RID_SVXITEMS_TRUE.string.text
-msgid "True"
+#: source/items/svxitems.src#RID_SVXITEMS_TRUE.String.Text
+msgid  "True"
 msgstr "အမှန်"
 
-#: svxitems.src#RID_SVXITEMS_FALSE.string.text
-msgid "False"
+#: source/items/svxitems.src#RID_SVXITEMS_FALSE.String.Text
+msgid  "False"
 msgstr "အမှား"
 
-#: svxitems.src#RID_SVXITEMS_BREAK_NONE.string.text
-msgid "No break"
+#: source/items/svxitems.src#RID_SVXITEMS_BREAK_NONE.String.Text
+msgid  "No break"
 msgstr "ဖြတ်တောက်မှုမရှိ"
 
-#: svxitems.src#RID_SVXITEMS_BREAK_COLUMN_BEFORE.string.text
-msgid "Break before new column"
+#: source/items/svxitems.src#RID_SVXITEMS_BREAK_COLUMN_BEFORE.String.Text
+msgid  "Break before new column"
 msgstr "ကော်လံအသစ်မတိုင်မှီ ဖြတ်တောက်ပါ"
 
-#: svxitems.src#RID_SVXITEMS_BREAK_COLUMN_AFTER.string.text
-msgid "Break after new column"
+#: source/items/svxitems.src#RID_SVXITEMS_BREAK_COLUMN_AFTER.String.Text
+msgid  "Break after new column"
 msgstr "ကော်လံအသစ်ပြီးနောက်ဖြတ်တောက်ပါ"
 
-#: svxitems.src#RID_SVXITEMS_BREAK_COLUMN_BOTH.string.text
-msgid "Break before and after new column"
+#: source/items/svxitems.src#RID_SVXITEMS_BREAK_COLUMN_BOTH.String.Text
+msgid  "Break before and after new column"
 msgstr "ကော်လံအသစ်မယူမှီနှင့်ယူပြီးနောက်ဖြတ်တောက်ပါ"
 
-#: svxitems.src#RID_SVXITEMS_BREAK_PAGE_BEFORE.string.text
-msgid "Break before new page"
+#: source/items/svxitems.src#RID_SVXITEMS_BREAK_PAGE_BEFORE.String.Text
+msgid  "Break before new page"
 msgstr "စာမျက်နှာအသစ်မတိုင်မှီဖြတ်တောက်ပါ"
 
-#: svxitems.src#RID_SVXITEMS_BREAK_PAGE_AFTER.string.text
-msgid "Break after new page"
+#: source/items/svxitems.src#RID_SVXITEMS_BREAK_PAGE_AFTER.String.Text
+msgid  "Break after new page"
 msgstr "စာမျက်နှာသစ်ပြီးနောက်ဖြတ်တောက်ပါ"
 
-#: svxitems.src#RID_SVXITEMS_BREAK_PAGE_BOTH.string.text
-msgid "Break before and after new page"
+#: source/items/svxitems.src#RID_SVXITEMS_BREAK_PAGE_BOTH.String.Text
+msgid  "Break before and after new page"
 msgstr "စာမျက်နှာသစ်မတိုင်မှီနှင့်ပြီးနောက်ဖြတ်တောက်ပါ"
 
-#: svxitems.src#RID_SVXITEMS_SHADOW_NONE.string.text
-msgid "No Shadow"
+#: source/items/svxitems.src#RID_SVXITEMS_SHADOW_NONE.String.Text
+msgid  "No Shadow"
 msgstr "အရိပ်မထည့်ပါ"
 
-#: svxitems.src#RID_SVXITEMS_SHADOW_TOPLEFT.string.text
-msgid "Shadow top left"
+#: source/items/svxitems.src#RID_SVXITEMS_SHADOW_TOPLEFT.String.Text
+msgid  "Shadow top left"
 msgstr "ထိပ်ဆုံးဘယ်ဘက်အရိပ်"
 
-#: svxitems.src#RID_SVXITEMS_SHADOW_TOPRIGHT.string.text
-msgid "Shadow top right"
+#: source/items/svxitems.src#RID_SVXITEMS_SHADOW_TOPRIGHT.String.Text
+msgid  "Shadow top right"
 msgstr "ထိပ်ဆုံးညာဘက်အရိပ်"
 
-#: svxitems.src#RID_SVXITEMS_SHADOW_BOTTOMLEFT.string.text
-msgid "Shadow bottom left"
+#: source/items/svxitems.src#RID_SVXITEMS_SHADOW_BOTTOMLEFT.String.Text
+msgid  "Shadow bottom left"
 msgstr "အောက်ခြေဘယ်ဘက်အရိပ်"
 
-#: svxitems.src#RID_SVXITEMS_SHADOW_BOTTOMRIGHT.string.text
-msgid "Shadow bottom right"
+#: source/items/svxitems.src#RID_SVXITEMS_SHADOW_BOTTOMRIGHT.String.Text
+msgid  "Shadow bottom right"
 msgstr "အောက်ခြေညာဘက်အရိပ်"
 
-#: svxitems.src#RID_SVXITEMS_COLOR.string.text
-msgid "Color "
+#: source/items/svxitems.src#RID_SVXITEMS_COLOR.String.Text
+msgid  "Color "
 msgstr "အရောင်"
 
-#: svxitems.src#RID_SVXITEMS_COLOR_BLACK.string.text
-msgid "Black"
+#: source/items/svxitems.src#RID_SVXITEMS_COLOR_BLACK.String.Text
+msgid  "Black"
 msgstr "အနက်"
 
-#: svxitems.src#RID_SVXITEMS_COLOR_BLUE.string.text
-msgid "Blue"
+#: source/items/svxitems.src#RID_SVXITEMS_COLOR_BLUE.String.Text
+msgid  "Blue"
 msgstr "အပြာ"
 
-#: svxitems.src#RID_SVXITEMS_COLOR_GREEN.string.text
-msgid "Green"
+#: source/items/svxitems.src#RID_SVXITEMS_COLOR_GREEN.String.Text
+msgid  "Green"
 msgstr "အစိမ်း"
 
-#: svxitems.src#RID_SVXITEMS_COLOR_CYAN.string.text
-msgid "Cyan"
+#: source/items/svxitems.src#RID_SVXITEMS_COLOR_CYAN.String.Text
+msgid  "Cyan"
 msgstr "စိမ်းပြာ"
 
-#: svxitems.src#RID_SVXITEMS_COLOR_RED.string.text
-msgid "Red"
+#: source/items/svxitems.src#RID_SVXITEMS_COLOR_RED.String.Text
+msgid  "Red"
 msgstr "အနီ"
 
-#: svxitems.src#RID_SVXITEMS_COLOR_MAGENTA.string.text
-msgid "Magenta"
+#: source/items/svxitems.src#RID_SVXITEMS_COLOR_MAGENTA.String.Text
+msgid  "Magenta"
 msgstr "မရမ်း"
 
-#: svxitems.src#RID_SVXITEMS_COLOR_BROWN.string.text
-msgid "Brown"
+#: source/items/svxitems.src#RID_SVXITEMS_COLOR_BROWN.String.Text
+msgid  "Brown"
 msgstr "အညို"
 
-#: svxitems.src#RID_SVXITEMS_COLOR_GRAY.string.text
-msgid "Gray"
+#: source/items/svxitems.src#RID_SVXITEMS_COLOR_GRAY.String.Text
+msgid  "Gray"
 msgstr "မီးခိုး"
 
-#: svxitems.src#RID_SVXITEMS_COLOR_LIGHTGRAY.string.text
-msgid "Light Gray"
+#: source/items/svxitems.src#RID_SVXITEMS_COLOR_LIGHTGRAY.String.Text
+msgid  "Light Gray"
 msgstr "မီးခိုးဖျော့"
 
-#: svxitems.src#RID_SVXITEMS_COLOR_LIGHTBLUE.string.text
-msgid "Light Blue"
+#: source/items/svxitems.src#RID_SVXITEMS_COLOR_LIGHTBLUE.String.Text
+msgid  "Light Blue"
 msgstr "အပြာဖျော့"
 
-#: svxitems.src#RID_SVXITEMS_COLOR_LIGHTGREEN.string.text
-msgid "Light Green"
+#: source/items/svxitems.src#RID_SVXITEMS_COLOR_LIGHTGREEN.String.Text
+msgid  "Light Green"
 msgstr "အစိမ်းဖျော့"
 
-#: svxitems.src#RID_SVXITEMS_COLOR_LIGHTCYAN.string.text
-msgid "Light Cyan"
+#: source/items/svxitems.src#RID_SVXITEMS_COLOR_LIGHTCYAN.String.Text
+msgid  "Light Cyan"
 msgstr "စိမ်းပြာဖျော့"
 
-#: svxitems.src#RID_SVXITEMS_COLOR_LIGHTRED.string.text
-msgid "Light Red"
+#: source/items/svxitems.src#RID_SVXITEMS_COLOR_LIGHTRED.String.Text
+msgid  "Light Red"
 msgstr "အနီဖျော့"
 
-#: svxitems.src#RID_SVXITEMS_COLOR_LIGHTMAGENTA.string.text
-msgid "Light Magenta"
+#: source/items/svxitems.src#RID_SVXITEMS_COLOR_LIGHTMAGENTA.String.Text
+msgid  "Light Magenta"
 msgstr "မရမ်းဖျော့"
 
-#: svxitems.src#RID_SVXITEMS_COLOR_YELLOW.string.text
-msgid "Yellow"
+#: source/items/svxitems.src#RID_SVXITEMS_COLOR_YELLOW.String.Text
+msgid  "Yellow"
 msgstr "အဝါ"
 
-#: svxitems.src#RID_SVXITEMS_COLOR_WHITE.string.text
-msgid "White"
+#: source/items/svxitems.src#RID_SVXITEMS_COLOR_WHITE.String.Text
+msgid  "White"
 msgstr "အဖြူ"
 
-#: svxitems.src#RID_SVXITEMS_ITALIC_NONE.string.text
-msgid "Not Italic"
+#: source/items/svxitems.src#RID_SVXITEMS_ITALIC_NONE.String.Text
+msgid  "Not Italic"
 msgstr "စာလုံးစောင်းမသုံး"
 
-#: svxitems.src#RID_SVXITEMS_ITALIC_OBLIQUE.string.text
-msgid "Oblique italic"
+#: source/items/svxitems.src#RID_SVXITEMS_ITALIC_OBLIQUE.String.Text
+msgid  "Oblique italic"
 msgstr "စာလုံးစွေစောင်းစောင်း"
 
-#: svxitems.src#RID_SVXITEMS_ITALIC_NORMAL.string.text
-msgid "Italic"
+#: source/items/svxitems.src#RID_SVXITEMS_ITALIC_NORMAL.String.Text
+msgid  "Italic"
 msgstr "စာလုံးစောင်း"
 
-#: svxitems.src#RID_SVXITEMS_WEIGHT_THIN.string.text
-msgid "thin"
+#: source/items/svxitems.src#RID_SVXITEMS_WEIGHT_THIN.String.Text
+msgid  "thin"
 msgstr "ပါးလွှာသော"
 
-#: svxitems.src#RID_SVXITEMS_WEIGHT_ULTRALIGHT.string.text
-msgid "ultra thin"
+#: source/items/svxitems.src#RID_SVXITEMS_WEIGHT_ULTRALIGHT.String.Text
+msgid  "ultra thin"
 msgstr "ပါးလွှာမှုများများ"
 
-#: svxitems.src#RID_SVXITEMS_WEIGHT_LIGHT.string.text
-msgid "light"
+#: source/items/svxitems.src#RID_SVXITEMS_WEIGHT_LIGHT.String.Text
+msgid  "light"
 msgstr "ဖျော့ဖျော့"
 
-#: svxitems.src#RID_SVXITEMS_WEIGHT_SEMILIGHT.string.text
-msgid "semi light"
+#: source/items/svxitems.src#RID_SVXITEMS_WEIGHT_SEMILIGHT.String.Text
+msgid  "semi light"
 msgstr "တဝက်ဖျော့"
 
-#: svxitems.src#RID_SVXITEMS_WEIGHT_NORMAL.string.text
-msgid "normal"
+#: source/items/svxitems.src#RID_SVXITEMS_WEIGHT_NORMAL.String.Text
+msgid  "normal"
 msgstr "ပုံမှန်"
 
-#: svxitems.src#RID_SVXITEMS_WEIGHT_MEDIUM.string.text
-msgid "medium"
+#: source/items/svxitems.src#RID_SVXITEMS_WEIGHT_MEDIUM.String.Text
+msgid  "medium"
 msgstr "အလယ်အလတ်"
 
-#: svxitems.src#RID_SVXITEMS_WEIGHT_SEMIBOLD.string.text
-msgid "semi bold"
+#: source/items/svxitems.src#RID_SVXITEMS_WEIGHT_SEMIBOLD.String.Text
+msgid  "semi bold"
 msgstr "တဝက်မဲ"
 
-#: svxitems.src#RID_SVXITEMS_WEIGHT_BOLD.string.text
-msgid "bold"
+#: source/items/svxitems.src#RID_SVXITEMS_WEIGHT_BOLD.String.Text
+msgid  "bold"
 msgstr "မဲ"
 
-#: svxitems.src#RID_SVXITEMS_WEIGHT_ULTRABOLD.string.text
-msgid "ultra bold"
+#: source/items/svxitems.src#RID_SVXITEMS_WEIGHT_ULTRABOLD.String.Text
+msgid  "ultra bold"
 msgstr "အမဲများများ"
 
-#: svxitems.src#RID_SVXITEMS_WEIGHT_BLACK.string.text
-msgid "black"
+#: source/items/svxitems.src#RID_SVXITEMS_WEIGHT_BLACK.String.Text
+msgid  "black"
 msgstr "အနက်"
 
-#: svxitems.src#RID_SVXITEMS_UL_NONE.string.text
-msgid "No underline"
+#: source/items/svxitems.src#RID_SVXITEMS_UL_NONE.String.Text
+msgid  "No underline"
 msgstr "အောက်တွင်မျဉ်းမတားပါ"
 
-#: svxitems.src#RID_SVXITEMS_UL_SINGLE.string.text
-msgid "Single underline"
+#: source/items/svxitems.src#RID_SVXITEMS_UL_SINGLE.String.Text
+msgid  "Single underline"
 msgstr "အောက်ခြေမျဉ်းတစ်ကြောင်း"
 
-#: svxitems.src#RID_SVXITEMS_UL_DOUBLE.string.text
-msgid "Double underline"
+#: source/items/svxitems.src#RID_SVXITEMS_UL_DOUBLE.String.Text
+msgid  "Double underline"
 msgstr "အောက်ခြေမျဉ်းနှစ်ကြောင်း"
 
-#: svxitems.src#RID_SVXITEMS_UL_DOTTED.string.text
-msgid "Dotted underline"
+#: source/items/svxitems.src#RID_SVXITEMS_UL_DOTTED.String.Text
+msgid  "Dotted underline"
 msgstr "အောက်ခြေအစက်မျဉ်း"
 
-#: svxitems.src#RID_SVXITEMS_UL_DONTKNOW.string.text
-msgid "Underline"
+#: source/items/svxitems.src#RID_SVXITEMS_UL_DONTKNOW.String.Text
+msgid  "Underline"
 msgstr "အောက်တွင်မျဉ်းတားပါ"
 
-#: svxitems.src#RID_SVXITEMS_UL_DASH.string.text
-msgid "Underline (dashes)"
+#: source/items/svxitems.src#RID_SVXITEMS_UL_DASH.String.Text
+msgid  "Underline (dashes)"
 msgstr "အောက်မျဉ်းတားပါ(အစက်ဖြင့်)"
 
-#: svxitems.src#RID_SVXITEMS_UL_LONGDASH.string.text
-msgid "Underline (long dashes)"
+#: source/items/svxitems.src#RID_SVXITEMS_UL_LONGDASH.String.Text
+msgid  "Underline (long dashes)"
 msgstr "အောက်မျဉ်းတားပါ(အစက်ရှည်ဖြင့်)"
 
-#: svxitems.src#RID_SVXITEMS_UL_DASHDOT.string.text
-msgid "Underline (dot dash)"
+#: source/items/svxitems.src#RID_SVXITEMS_UL_DASHDOT.String.Text
+msgid  "Underline (dot dash)"
 msgstr "အောက်မျဉ်းတားပါ(အစက်အမှတ်ဖြင့်)"
 
-#: svxitems.src#RID_SVXITEMS_UL_DASHDOTDOT.string.text
-msgid "Underline (dot dot dash)"
+#: source/items/svxitems.src#RID_SVXITEMS_UL_DASHDOTDOT.String.Text
+msgid  "Underline (dot dot dash)"
 msgstr "အောက်မျဉ်းတားပါ(အစက်အမှတ်များဖြင့်)"
 
-#: svxitems.src#RID_SVXITEMS_UL_SMALLWAVE.string.text
-msgid "Underline (small wave)"
+#: source/items/svxitems.src#RID_SVXITEMS_UL_SMALLWAVE.String.Text
+msgid  "Underline (small wave)"
 msgstr "အောက်မျဉ်းတားပါ(လှိုင်းတွန့်ငယ်ဖြင့်)"
 
-#: svxitems.src#RID_SVXITEMS_UL_WAVE.string.text
-msgid "Underline (Wave)"
+#: source/items/svxitems.src#RID_SVXITEMS_UL_WAVE.String.Text
+msgid  "Underline (Wave)"
 msgstr "အောက်မျဉ်းတားပါ(လှိုင်းဖြင့်)"
 
-#: svxitems.src#RID_SVXITEMS_UL_DOUBLEWAVE.string.text
-msgid "Underline (Double wave)"
+#: source/items/svxitems.src#RID_SVXITEMS_UL_DOUBLEWAVE.String.Text
+msgid  "Underline (Double wave)"
 msgstr "အောက်မျဉ်းတားပါ(နှစ်ထပ်လှိုင်းဖြင့်)"
 
-#: svxitems.src#RID_SVXITEMS_UL_BOLD.string.text
-msgid "Underlined (Bold)"
+#: source/items/svxitems.src#RID_SVXITEMS_UL_BOLD.String.Text
+msgid  "Underlined (Bold)"
 msgstr "အောက်မျဉ်းတားပါ(အမဲရောင်ဖြင့်)"
 
-#: svxitems.src#RID_SVXITEMS_UL_BOLDDOTTED.string.text
-msgid "Dotted underline (Bold)"
+#: source/items/svxitems.src#RID_SVXITEMS_UL_BOLDDOTTED.String.Text
+msgid  "Dotted underline (Bold)"
 msgstr "မျဉ်းတိုအစက်ဖြင့်မျဉ်းသားပါ(အမဲရောင်)"
 
-#: svxitems.src#RID_SVXITEMS_UL_BOLDDASH.string.text
-msgid "Underline (Dash bold)"
+#: source/items/svxitems.src#RID_SVXITEMS_UL_BOLDDASH.String.Text
+msgid  "Underline (Dash bold)"
 msgstr "အောက်မျဉ်းတားပါ(အစက်မဲဖြင့်)"
 
-#: svxitems.src#RID_SVXITEMS_UL_BOLDLONGDASH.string.text
-msgid "Underline (long dash, bold)"
+#: source/items/svxitems.src#RID_SVXITEMS_UL_BOLDLONGDASH.String.Text
+msgid  "Underline (long dash, bold)"
 msgstr "အောက်မျဉ်းတားပါ(အစက်ရှည်၊အမဲ)"
 
-#: svxitems.src#RID_SVXITEMS_UL_BOLDDASHDOT.string.text
-msgid "Underline (dot dash, bold)"
+#: source/items/svxitems.src#RID_SVXITEMS_UL_BOLDDASHDOT.String.Text
+msgid  "Underline (dot dash, bold)"
 msgstr "အောက်မျဉ်းတားပါ(အစက်အမှတ်၊အမဲ)"
 
-#: svxitems.src#RID_SVXITEMS_UL_BOLDDASHDOTDOT.string.text
-msgid "Underline (dot dot dash, bold)"
+#: source/items/svxitems.src#RID_SVXITEMS_UL_BOLDDASHDOTDOT.String.Text
+msgid  "Underline (dot dot dash, bold)"
 msgstr "အောက်မျဉ်းတားပါ(အစက်အမှတ်များ၊အမဲဖြင့်)"
 
-#: svxitems.src#RID_SVXITEMS_UL_BOLDWAVE.string.text
-msgid "Underline (wave, bold)"
+#: source/items/svxitems.src#RID_SVXITEMS_UL_BOLDWAVE.String.Text
+msgid  "Underline (wave, bold)"
 msgstr "အောက်မျဉ်းတားပါ(လှိုင်းတွန့်၊အမဲ)"
 
-#: svxitems.src#RID_SVXITEMS_OL_NONE.string.text
-msgid "No overline"
+#: source/items/svxitems.src#RID_SVXITEMS_OL_NONE.String.Text
+msgid  "No overline"
 msgstr "အပေါ်မျဉ်းမတားပါ"
 
-#: svxitems.src#RID_SVXITEMS_OL_SINGLE.string.text
-msgid "Single overline"
+#: source/items/svxitems.src#RID_SVXITEMS_OL_SINGLE.String.Text
+msgid  "Single overline"
 msgstr "တစ်ထပ်အပေါ်မျဉ်း"
 
-#: svxitems.src#RID_SVXITEMS_OL_DOUBLE.string.text
-msgid "Double overline"
+#: source/items/svxitems.src#RID_SVXITEMS_OL_DOUBLE.String.Text
+msgid  "Double overline"
 msgstr "နှစ်ထပ်အပေါ်မျဉ်း"
 
-#: svxitems.src#RID_SVXITEMS_OL_DOTTED.string.text
-msgid "Dotted overline"
+#: source/items/svxitems.src#RID_SVXITEMS_OL_DOTTED.String.Text
+msgid  "Dotted overline"
 msgstr "အစက်အပေါ်မျဉ်း"
 
-#: svxitems.src#RID_SVXITEMS_OL_DONTKNOW.string.text
-msgid "Overline"
+#: source/items/svxitems.src#RID_SVXITEMS_OL_DONTKNOW.String.Text
+msgid  "Overline"
 msgstr "အပေါ်မျဉ်း"
 
-#: svxitems.src#RID_SVXITEMS_OL_DASH.string.text
-msgid "Overline (dashes)"
+#: source/items/svxitems.src#RID_SVXITEMS_OL_DASH.String.Text
+msgid  "Overline (dashes)"
 msgstr "အပေါ်မျဉ်း(အစက်ဖြင့်)"
 
-#: svxitems.src#RID_SVXITEMS_OL_LONGDASH.string.text
-msgid "Overline (long dashes)"
+#: source/items/svxitems.src#RID_SVXITEMS_OL_LONGDASH.String.Text
+msgid  "Overline (long dashes)"
 msgstr "အပေါ်မျဉ်း(အစက်ရှည်ဖြင့်)"
 
-#: svxitems.src#RID_SVXITEMS_OL_DASHDOT.string.text
-msgid "Overline (dot dash)"
+#: source/items/svxitems.src#RID_SVXITEMS_OL_DASHDOT.String.Text
+msgid  "Overline (dot dash)"
 msgstr "အပေါ်မျဉ်း(အစက်အမှတ်)"
 
-#: svxitems.src#RID_SVXITEMS_OL_DASHDOTDOT.string.text
-msgid "Overline (dot dot dash)"
+#: source/items/svxitems.src#RID_SVXITEMS_OL_DASHDOTDOT.String.Text
+msgid  "Overline (dot dot dash)"
 msgstr "အပေါ်မျဉ်း(အစက်အမှတ်များဖြင့်)"
 
-#: svxitems.src#RID_SVXITEMS_OL_SMALLWAVE.string.text
-msgid "Overline (small wave)"
+#: source/items/svxitems.src#RID_SVXITEMS_OL_SMALLWAVE.String.Text
+msgid  "Overline (small wave)"
 msgstr "အပေါ်မျဉ်း(လှိုင်းတွန့်ငယ်ဖြင့်)"
 
-#: svxitems.src#RID_SVXITEMS_OL_WAVE.string.text
-msgid "Overline (Wave)"
+#: source/items/svxitems.src#RID_SVXITEMS_OL_WAVE.String.Text
+msgid  "Overline (Wave)"
 msgstr "အပေါ်မျဉ်း(လှိုင်းတွန့်)"
 
-#: svxitems.src#RID_SVXITEMS_OL_DOUBLEWAVE.string.text
-msgid "Overline (Double wave)"
+#: source/items/svxitems.src#RID_SVXITEMS_OL_DOUBLEWAVE.String.Text
+msgid  "Overline (Double wave)"
 msgstr "အပေါ်မျဉ်း(နှစ်ထပ်လှိုင်းဖြင့်)"
 
-#: svxitems.src#RID_SVXITEMS_OL_BOLD.string.text
-msgid "Overlined (Bold)"
+#: source/items/svxitems.src#RID_SVXITEMS_OL_BOLD.String.Text
+msgid  "Overlined (Bold)"
 msgstr "အပေါ်မျဉ်း(အမဲရောင်)"
 
-#: svxitems.src#RID_SVXITEMS_OL_BOLDDOTTED.string.text
-msgid "Dotted overline (Bold)"
+#: source/items/svxitems.src#RID_SVXITEMS_OL_BOLDDOTTED.String.Text
+msgid  "Dotted overline (Bold)"
 msgstr "မျဉ်းတိုအစက်ဖြင့်အပေါ်မျဉ်းသားပါ(အမဲ)"
 
-#: svxitems.src#RID_SVXITEMS_OL_BOLDDASH.string.text
-msgid "Overline (Dash bold)"
+#: source/items/svxitems.src#RID_SVXITEMS_OL_BOLDDASH.String.Text
+msgid  "Overline (Dash bold)"
 msgstr "အပေါ်မျဉ်း (အစက်မဲဖြင့်)"
 
-#: svxitems.src#RID_SVXITEMS_OL_BOLDLONGDASH.string.text
-msgid "Overline (long dash, bold)"
+#: source/items/svxitems.src#RID_SVXITEMS_OL_BOLDLONGDASH.String.Text
+msgid  "Overline (long dash, bold)"
 msgstr "အပေါ်မျဉ်း(အစက်ရှည်၊အမဲ)"
 
-#: svxitems.src#RID_SVXITEMS_OL_BOLDDASHDOT.string.text
-msgid "Overline (dot dash, bold)"
+#: source/items/svxitems.src#RID_SVXITEMS_OL_BOLDDASHDOT.String.Text
+msgid  "Overline (dot dash, bold)"
 msgstr "အပေါ်မျဉ်း(အစက်အမှတ်၊အမဲ)"
 
-#: svxitems.src#RID_SVXITEMS_OL_BOLDDASHDOTDOT.string.text
-msgid "Overline (dot dot dash, bold)"
+#: source/items/svxitems.src#RID_SVXITEMS_OL_BOLDDASHDOTDOT.String.Text
+msgid  "Overline (dot dot dash, bold)"
 msgstr "အပေါ်မျဉ်း(အစက်အမှတ်များ၊အမဲ)"
 
-#: svxitems.src#RID_SVXITEMS_OL_BOLDWAVE.string.text
-msgid "Overline (wave, bold)"
+#: source/items/svxitems.src#RID_SVXITEMS_OL_BOLDWAVE.String.Text
+msgid  "Overline (wave, bold)"
 msgstr "အပေါ်မျဉ်း(လှိုင်းတွန့်၊အမဲ)"
 
-#: svxitems.src#RID_SVXITEMS_STRIKEOUT_NONE.string.text
-msgid "No strikethrough"
+#: source/items/svxitems.src#RID_SVXITEMS_STRIKEOUT_NONE.String.Text
+msgid  "No strikethrough"
 msgstr "ဖြတ်မျဉ်းမသုံးပါ"
 
-#: svxitems.src#RID_SVXITEMS_STRIKEOUT_SINGLE.string.text
-msgid "Single strikethrough"
+#: source/items/svxitems.src#RID_SVXITEMS_STRIKEOUT_SINGLE.String.Text
+msgid  "Single strikethrough"
 msgstr "ဖြတ်မျဉ်းတစ်ကြောင်း"
 
-#: svxitems.src#RID_SVXITEMS_STRIKEOUT_DOUBLE.string.text
-msgid "Double strikethrough"
+#: source/items/svxitems.src#RID_SVXITEMS_STRIKEOUT_DOUBLE.String.Text
+msgid  "Double strikethrough"
 msgstr "ဖြတ်မျဉ်းနှစ်ကြောင်း"
 
-#: svxitems.src#RID_SVXITEMS_STRIKEOUT_BOLD.string.text
-msgid "Bold strikethrough"
+#: source/items/svxitems.src#RID_SVXITEMS_STRIKEOUT_BOLD.String.Text
+msgid  "Bold strikethrough"
 msgstr "ဖြတ်မျဉ်းမဲမဲ"
 
-#: svxitems.src#RID_SVXITEMS_STRIKEOUT_SLASH.string.text
-msgid "Strike through with slash"
+#: source/items/svxitems.src#RID_SVXITEMS_STRIKEOUT_SLASH.String.Text
+msgid  "Strike through with slash"
 msgstr "မျဉ်းစောင်းဖြင့်ဖြတ်မျဉ်းသုံးပါ"
 
-#: svxitems.src#RID_SVXITEMS_STRIKEOUT_X.string.text
-msgid "Strike through with Xes"
+#: source/items/svxitems.src#RID_SVXITEMS_STRIKEOUT_X.String.Text
+msgid  "Strike through with Xes"
 msgstr "မျဉ်းစောင်းဖြင့်ဖြတ်မျဉ်းသုံးပါ"
 
-#: svxitems.src#RID_SVXITEMS_CASEMAP_NONE.string.text
-msgid "None"
+#: source/items/svxitems.src#RID_SVXITEMS_CASEMAP_NONE.String.Text
+msgid  "None"
 msgstr "ဘာမျှမသုံးပါ"
 
-#: svxitems.src#RID_SVXITEMS_CASEMAP_VERSALIEN.string.text
-msgid "Caps"
+#: source/items/svxitems.src#RID_SVXITEMS_CASEMAP_VERSALIEN.String.Text
+msgid  "Caps"
 msgstr "စာလုံးကြီးများ"
 
-#: svxitems.src#RID_SVXITEMS_CASEMAP_GEMEINE.string.text
-msgid "Lowercase"
+#: source/items/svxitems.src#RID_SVXITEMS_CASEMAP_GEMEINE.String.Text
+msgid  "Lowercase"
 msgstr "စာလုံးသေး"
 
-#: svxitems.src#RID_SVXITEMS_CASEMAP_TITEL.string.text
-msgid "Title"
+#: source/items/svxitems.src#RID_SVXITEMS_CASEMAP_TITEL.String.Text
+msgid  "Title"
 msgstr "ခေါင်းစဉ်"
 
-#: svxitems.src#RID_SVXITEMS_CASEMAP_KAPITAELCHEN.string.text
-msgid "Small caps"
+#: source/items/svxitems.src#RID_SVXITEMS_CASEMAP_KAPITAELCHEN.String.Text
+msgid  "Small caps"
 msgstr "အရွယ်ငယ်စာလုံးကြီးများ"
 
-#: svxitems.src#RID_SVXITEMS_ESCAPEMENT_OFF.string.text
-msgid "Normal position"
+#: source/items/svxitems.src#RID_SVXITEMS_ESCAPEMENT_OFF.String.Text
+msgid  "Normal position"
 msgstr "ပုံမှန်အနေအထား"
 
-#: svxitems.src#RID_SVXITEMS_ESCAPEMENT_SUPER.string.text
-msgid "Superscript "
+#: source/items/svxitems.src#RID_SVXITEMS_ESCAPEMENT_SUPER.String.Text
+msgid  "Superscript "
 msgstr "အပေါ်ထပ်တင်ပါ"
 
-#: svxitems.src#RID_SVXITEMS_ESCAPEMENT_SUB.string.text
-msgid "Subscript "
+#: source/items/svxitems.src#RID_SVXITEMS_ESCAPEMENT_SUB.String.Text
+msgid  "Subscript "
 msgstr "အောက်သို့ချပါ"
 
-#: svxitems.src#RID_SVXITEMS_ESCAPEMENT_AUTO.string.text
-msgid "automatic"
+#: source/items/svxitems.src#RID_SVXITEMS_ESCAPEMENT_AUTO.String.Text
+msgid  "automatic"
 msgstr "အလိုအလျောက်"
 
-#: svxitems.src#RID_SVXITEMS_ADJUST_LEFT.string.text
-msgid "Align left"
+#: source/items/svxitems.src#RID_SVXITEMS_ADJUST_LEFT.String.Text
+msgid  "Align left"
 msgstr "ဘယ်ချိန်ညှိပါ"
 
-#: svxitems.src#RID_SVXITEMS_ADJUST_RIGHT.string.text
-msgid "Align right"
+#: source/items/svxitems.src#RID_SVXITEMS_ADJUST_RIGHT.String.Text
+msgid  "Align right"
 msgstr "ညာချိန်ညှိပါ"
 
-#: svxitems.src#RID_SVXITEMS_ADJUST_BLOCK.string.text
-msgctxt "svxitems.src#RID_SVXITEMS_ADJUST_BLOCK.string.text"
-msgid "Justify"
+#: source/items/svxitems.src#RID_SVXITEMS_ADJUST_BLOCK.String.Text
+msgid  "Justify"
 msgstr "ဘယ်ညာညှိပါ"
 
-#: svxitems.src#RID_SVXITEMS_ADJUST_CENTER.string.text
-msgctxt "svxitems.src#RID_SVXITEMS_ADJUST_CENTER.string.text"
-msgid "Centered"
+#: source/items/svxitems.src#RID_SVXITEMS_ADJUST_CENTER.String.Text
+msgid  "Centered"
 msgstr "အလယ်ဗဟို"
 
-#: svxitems.src#RID_SVXITEMS_ADJUST_BLOCKLINE.string.text
-msgctxt "svxitems.src#RID_SVXITEMS_ADJUST_BLOCKLINE.string.text"
-msgid "Justify"
+#: source/items/svxitems.src#RID_SVXITEMS_ADJUST_BLOCKLINE.String.Text
+msgid  "Justify"
 msgstr "ဘယ်ညာညှိပါ"
 
-#: svxitems.src#RID_SVXITEMS_TAB_DECIMAL_CHAR.string.text
-msgid "Decimal Symbol:"
+#: source/items/svxitems.src#RID_SVXITEMS_TAB_DECIMAL_CHAR.String.Text
+msgid  "Decimal Symbol:"
 msgstr "ဒသမသင်္ကေတများ-"
 
-#: svxitems.src#RID_SVXITEMS_TAB_FILL_CHAR.string.text
-msgid "Fill character:"
+#: source/items/svxitems.src#RID_SVXITEMS_TAB_FILL_CHAR.String.Text
+msgid  "Fill character:"
 msgstr "အက္ခရာများဖြည့်ပါ-"
 
-#: svxitems.src#RID_SVXITEMS_TAB_ADJUST_LEFT.string.text
-msgid "Left"
+#: source/items/svxitems.src#RID_SVXITEMS_TAB_ADJUST_LEFT.String.Text
+msgid  "Left"
 msgstr "ဘယ်"
 
-#: svxitems.src#RID_SVXITEMS_TAB_ADJUST_RIGHT.string.text
-msgid "Right"
+#: source/items/svxitems.src#RID_SVXITEMS_TAB_ADJUST_RIGHT.String.Text
+msgid  "Right"
 msgstr "ညာ"
 
-#: svxitems.src#RID_SVXITEMS_TAB_ADJUST_DECIMAL.string.text
-msgid "Decimal"
+#: source/items/svxitems.src#RID_SVXITEMS_TAB_ADJUST_DECIMAL.String.Text
+msgid  "Decimal"
 msgstr "ဒသမ"
 
-#: svxitems.src#RID_SVXITEMS_TAB_ADJUST_CENTER.string.text
-msgctxt "svxitems.src#RID_SVXITEMS_TAB_ADJUST_CENTER.string.text"
-msgid "Centered"
+#: source/items/svxitems.src#RID_SVXITEMS_TAB_ADJUST_CENTER.String.Text
+msgid  "Centered"
 msgstr "အလယ်ဗဟို"
 
-#: svxitems.src#RID_SVXITEMS_TAB_ADJUST_DEFAULT.string.text
-msgid "Default"
+#: source/items/svxitems.src#RID_SVXITEMS_TAB_ADJUST_DEFAULT.String.Text
+msgid  "Default"
 msgstr "ပုံသေ"
 
-#: svxitems.src#RID_SINGLE_LINE0.string.text
-msgid "Single, fine lines"
+#: source/items/svxitems.src#RID_SINGLE_LINE0.String.Text
+msgid  "Single, fine lines"
 msgstr "တစ်ကြောင်း၊ မျဉ်းလှလှများ"
 
-#: svxitems.src#RID_SINGLE_LINE1.string.text
-msgid "Single, thin"
+#: source/items/svxitems.src#RID_SINGLE_LINE1.String.Text
+msgid  "Single, thin"
 msgstr "တစ်ကြောင်း၊ပါးပါး"
 
-#: svxitems.src#RID_SINGLE_LINE2.string.text
-msgid "Single, thick"
+#: source/items/svxitems.src#RID_SINGLE_LINE2.String.Text
+msgid  "Single, thick"
 msgstr "တစ်ကြောင်း၊ထူထူ"
 
-#: svxitems.src#RID_SINGLE_LINE3.string.text
-msgid "Single, very thick"
+#: source/items/svxitems.src#RID_SINGLE_LINE3.String.Text
+msgid  "Single, very thick"
 msgstr "တစ်ကြောင်း၊ အလွန်ထူ"
 
-#: svxitems.src#RID_SINGLE_LINE4.string.text
-msgid "Single, bold"
+#: source/items/svxitems.src#RID_SINGLE_LINE4.String.Text
+msgid  "Single, bold"
 msgstr "တစ်ကြောင်း၊အမဲ"
 
-#: svxitems.src#RID_DOUBLE_LINE0.string.text
-msgid "Double, fine lines, spacing: small"
+#: source/items/svxitems.src#RID_DOUBLE_LINE0.String.Text
+msgid  "Double, fine lines, spacing: small"
 msgstr "နှစ်ထပ်၊ မျဉ်းလှလှများ၊ နေရာလွတ်-ငယ်ငယ်"
 
-#: svxitems.src#RID_DOUBLE_LINE1.string.text
-msgid "Double, fine line, spacing: large"
+#: source/items/svxitems.src#RID_DOUBLE_LINE1.String.Text
+msgid  "Double, fine line, spacing: large"
 msgstr "နှစ်ထပ်၊ မျဉ်းလှလှများ၊ နေရာလွတ်-ကြီးကြီး"
 
-#: svxitems.src#RID_DOUBLE_LINE2.string.text
-msgid "Double, thin, spacing: small"
+#: source/items/svxitems.src#RID_DOUBLE_LINE2.String.Text
+msgid  "Double, thin, spacing: small"
 msgstr "နှစ်ထပ်၊ ပါးပါး၊ နေရာလွတ်-ငယ်ငယ်"
 
-#: svxitems.src#RID_DOUBLE_LINE3.string.text
-msgid "Double, thick, spacing: large"
+#: source/items/svxitems.src#RID_DOUBLE_LINE3.String.Text
+msgid  "Double, thick, spacing: large"
 msgstr "နှစ်ထပ်၊ ပါးပါး၊ နေရာလွတ်-ကြီးကြီး"
 
-#: svxitems.src#RID_DOUBLE_LINE4.string.text
-msgid "Double, inside: fine lines, outside: thin, spacing: large"
+#: source/items/svxitems.src#RID_DOUBLE_LINE4.String.Text
+msgid  "Double, inside: fine lines, outside: thin, spacing: large"
 msgstr "နှစ်ထပ်၊အတွင်း-မျဉ်းလှလှများ၊ အပြင်-ပါးပါး၊ နေရာလွတ်-ကြီးကြီး"
 
-#: svxitems.src#RID_DOUBLE_LINE5.string.text
-msgid "Double, inside: fine lines, outside: thick, spacing: large"
+#: source/items/svxitems.src#RID_DOUBLE_LINE5.String.Text
+msgid  "Double, inside: fine lines, outside: thick, spacing: large"
 msgstr "နှစ်ထပ်၊ အတွင်း-မျဉ်းလှလှများ၊ အပြင်-ပါးပါး၊ နေရာလွတ်-ကြီးကြီး"
 
-#: svxitems.src#RID_DOUBLE_LINE6.string.text
-msgid "Double, inside: fine lines, outside: very thick, spacing: large"
+#: source/items/svxitems.src#RID_DOUBLE_LINE6.String.Text
+msgid  "Double, inside: fine lines, outside: very thick, spacing: large"
 msgstr "နှစ်ထပ်၊အတွင်း-မျဉ်းလှလှများ၊အပြင်-အလွန်ထူ၊နေရာလွတ်-ကြီးကြီး"
 
-#: svxitems.src#RID_DOUBLE_LINE7.string.text
-msgid "Double, inside: thin, outside: thick, spacing: large"
+#: source/items/svxitems.src#RID_DOUBLE_LINE7.String.Text
+msgid  "Double, inside: thin, outside: thick, spacing: large"
 msgstr "နှစ်ထပ်၊အတွင်း-ပါးပါး၊ အပြင်- ထူထူ၊ နေရာလွတ်-ကြီးကြီး "
 
-#: svxitems.src#RID_DOUBLE_LINE8.string.text
-msgid "Double, inside: thick, outside: thin, spacing: small"
+#: source/items/svxitems.src#RID_DOUBLE_LINE8.String.Text
+msgid  "Double, inside: thick, outside: thin, spacing: small"
 msgstr "နှစ်ထပ်၊အတွင်း-ထူထူ၊အပြင်-ပါးပါး၊ နေရာလွတ်-ငယ်ငယ်"
 
-#: svxitems.src#RID_DOUBLE_LINE9.string.text
-msgid "Double, inside: thick, outside: very thick, spacing: large"
+#: source/items/svxitems.src#RID_DOUBLE_LINE9.String.Text
+msgid  "Double, inside: thick, outside: very thick, spacing: large"
 msgstr "နှစ်ထပ်၊ အတွင်း-ထူထူ၊ အပြင်-ထူထူ၊ နေရာလွတ်-ကြီးကြီး"
 
-#: svxitems.src#RID_DOUBLE_LINE10.string.text
-msgid "Double, inside: very thick, outside: thick, Spacing: large"
+#: source/items/svxitems.src#RID_DOUBLE_LINE10.String.Text
+msgid  "Double, inside: very thick, outside: thick, Spacing: large"
 msgstr "နှစ်ထပ်၊ အတွင်း-အလွန်ထူ၊ အပြင်-ထူထူ၊ နေရာလွတ်-ကြီးကြီး"
 
-#: svxitems.src#RID_SVXITEMS_SHADOWED_TRUE.string.text
-msgid "Shadowed"
+#: source/items/svxitems.src#RID_SVXITEMS_SHADOWED_TRUE.String.Text
+msgid  "Shadowed"
 msgstr "အရိပ်ထည့်ပြီး"
 
-#: svxitems.src#RID_SVXITEMS_SHADOWED_FALSE.string.text
-msgid "Not Shadowed"
+#: source/items/svxitems.src#RID_SVXITEMS_SHADOWED_FALSE.String.Text
+msgid  "Not Shadowed"
 msgstr "အရိပ်မထည့်ရသေးပါ"
 
-#: svxitems.src#RID_SVXITEMS_BLINK_TRUE.string.text
-msgid "Blinking"
+#: source/items/svxitems.src#RID_SVXITEMS_BLINK_TRUE.String.Text
+msgid  "Blinking"
 msgstr "မျက်တောင်ဖွင့်ပိတ်"
 
-#: svxitems.src#RID_SVXITEMS_BLINK_FALSE.string.text
-msgid "Not Blinking"
+#: source/items/svxitems.src#RID_SVXITEMS_BLINK_FALSE.String.Text
+msgid  "Not Blinking"
 msgstr "မျက်တောင်ဖွင့်ပိတ်မထည့်"
 
-#: svxitems.src#RID_SVXITEMS_AUTOKERN_TRUE.string.text
-msgid "Pair Kerning"
+#: source/items/svxitems.src#RID_SVXITEMS_AUTOKERN_TRUE.String.Text
+msgid  "Pair Kerning"
 msgstr "စာလုံးအလှတစ်စုံ"
 
-#: svxitems.src#RID_SVXITEMS_AUTOKERN_FALSE.string.text
-msgid "No pair kerning"
+#: source/items/svxitems.src#RID_SVXITEMS_AUTOKERN_FALSE.String.Text
+msgid  "No pair kerning"
 msgstr "စာလုံးအလှတစ်စုံမထည့်ပါ"
 
-#: svxitems.src#RID_SVXITEMS_WORDLINE_TRUE.string.text
-msgid "Individual words"
+#: source/items/svxitems.src#RID_SVXITEMS_WORDLINE_TRUE.String.Text
+msgid  "Individual words"
 msgstr "စာလုံးတစ်လုံးချင်းစီ"
 
-#: svxitems.src#RID_SVXITEMS_WORDLINE_FALSE.string.text
-msgid "Not Words Only"
+#: source/items/svxitems.src#RID_SVXITEMS_WORDLINE_FALSE.String.Text
+msgid  "Not Words Only"
 msgstr "စာလုံးများမှလွဲ၍"
 
-#: svxitems.src#RID_SVXITEMS_CONTOUR_TRUE.string.text
-msgid "Outline"
+#: source/items/svxitems.src#RID_SVXITEMS_CONTOUR_TRUE.String.Text
+msgid  "Outline"
 msgstr "ကောက်ကြောင်း"
 
-#: svxitems.src#RID_SVXITEMS_CONTOUR_FALSE.string.text
-msgid "No Outline"
+#: source/items/svxitems.src#RID_SVXITEMS_CONTOUR_FALSE.String.Text
+msgid  "No Outline"
 msgstr "ကောက်ကြောင်းမထည့်"
 
-#: svxitems.src#RID_SVXITEMS_PRINT_TRUE.string.text
-msgid "Print"
+#: source/items/svxitems.src#RID_SVXITEMS_PRINT_TRUE.String.Text
+msgid  "Print"
 msgstr "ပရင့်ထုတ်ပါ"
 
-#: svxitems.src#RID_SVXITEMS_PRINT_FALSE.string.text
-msgid "Don't print"
+#: source/items/svxitems.src#RID_SVXITEMS_PRINT_FALSE.String.Text
+msgid  "Don't print"
 msgstr "ပရင့်မထုတ်ပါနှင့်"
 
-#: svxitems.src#RID_SVXITEMS_OPAQUE_TRUE.string.text
-msgid "Opaque"
+#: source/items/svxitems.src#RID_SVXITEMS_OPAQUE_TRUE.String.Text
+msgid  "Opaque"
 msgstr "မှောင်မှောင်"
 
-#: svxitems.src#RID_SVXITEMS_OPAQUE_FALSE.string.text
-msgid "Not Opaque"
+#: source/items/svxitems.src#RID_SVXITEMS_OPAQUE_FALSE.String.Text
+msgid  "Not Opaque"
 msgstr "မှောင်မှောင်မလုပ်ပါ"
 
-#: svxitems.src#RID_SVXITEMS_FMTKEEP_TRUE.string.text
-msgid "Keep with next paragraph"
+#: source/items/svxitems.src#RID_SVXITEMS_FMTKEEP_TRUE.String.Text
+msgid  "Keep with next paragraph"
 msgstr "နောက်စာပိုဒ်နှင့်အတူလုပ်ဆောင်ပါ"
 
-#: svxitems.src#RID_SVXITEMS_FMTKEEP_FALSE.string.text
-msgid "Don't Keep Paragraphs Together"
+#: source/items/svxitems.src#RID_SVXITEMS_FMTKEEP_FALSE.String.Text
+msgid  "Don't Keep Paragraphs Together"
 msgstr "စာပိုဒ်များအားလုံး အတူတူ မလုပ်ပါနှင့်"
 
-#: svxitems.src#RID_SVXITEMS_FMTSPLIT_TRUE.string.text
-msgid "Split paragraph"
+#: source/items/svxitems.src#RID_SVXITEMS_FMTSPLIT_TRUE.String.Text
+msgid  "Split paragraph"
 msgstr "စာပိုဒ်ခွဲပါ"
 
-#: svxitems.src#RID_SVXITEMS_FMTSPLIT_FALSE.string.text
-msgid "Don't split paragraph"
+#: source/items/svxitems.src#RID_SVXITEMS_FMTSPLIT_FALSE.String.Text
+msgid  "Don't split paragraph"
 msgstr "စာပိုဒ်မခွဲပါနှင့်"
 
-#: svxitems.src#RID_SVXITEMS_PROT_CONTENT_TRUE.string.text
-msgid "Contents protected"
+#: source/items/svxitems.src#RID_SVXITEMS_PROT_CONTENT_TRUE.String.Text
+msgid  "Contents protected"
 msgstr "ပါဝင်ချက်များကို ကာကွယ်ပြီးဖြစ်"
 
-#: svxitems.src#RID_SVXITEMS_PROT_CONTENT_FALSE.string.text
-msgid "Contents not protected"
+#: source/items/svxitems.src#RID_SVXITEMS_PROT_CONTENT_FALSE.String.Text
+msgid  "Contents not protected"
 msgstr "ပါဝင်ချက်များကို မကာကွယ်ထားပါ"
 
-#: svxitems.src#RID_SVXITEMS_PROT_SIZE_TRUE.string.text
-msgid "Size protected"
+#: source/items/svxitems.src#RID_SVXITEMS_PROT_SIZE_TRUE.String.Text
+msgid  "Size protected"
 msgstr "အရွယ် ကာကွယ်ပြီးဖြစ်"
 
-#: svxitems.src#RID_SVXITEMS_PROT_SIZE_FALSE.string.text
-msgid "Size not protected"
+#: source/items/svxitems.src#RID_SVXITEMS_PROT_SIZE_FALSE.String.Text
+msgid  "Size not protected"
 msgstr "အရွယ် မကာကွယ်ထားပါ"
 
-#: svxitems.src#RID_SVXITEMS_PROT_POS_TRUE.string.text
-msgid "Position protected"
+#: source/items/svxitems.src#RID_SVXITEMS_PROT_POS_TRUE.String.Text
+msgid  "Position protected"
 msgstr "တည်နေရာ ကာကွယ်ပြီးဖြစ်"
 
-#: svxitems.src#RID_SVXITEMS_PROT_POS_FALSE.string.text
-msgid "Position not protected"
+#: source/items/svxitems.src#RID_SVXITEMS_PROT_POS_FALSE.String.Text
+msgid  "Position not protected"
 msgstr "တည်နေရာ မကာကွယ်ထားပါ"
 
-#: svxitems.src#RID_SVXITEMS_TRANSPARENT_TRUE.string.text
-msgid "Transparent"
+#: source/items/svxitems.src#RID_SVXITEMS_TRANSPARENT_TRUE.String.Text
+msgid  "Transparent"
 msgstr "ထိုးဖောက်မြင်နိုင်မှု"
 
-#: svxitems.src#RID_SVXITEMS_TRANSPARENT_FALSE.string.text
-msgid "Not Transparent"
+#: source/items/svxitems.src#RID_SVXITEMS_TRANSPARENT_FALSE.String.Text
+msgid  "Not Transparent"
 msgstr "ထိုးဖောက်မြင်နိုင်မှုမသုံး"
 
-#: svxitems.src#RID_SVXITEMS_HYPHEN_TRUE.string.text
-msgid "Hyphenation"
+#: source/items/svxitems.src#RID_SVXITEMS_HYPHEN_TRUE.String.Text
+msgid  "Hyphenation"
 msgstr "တုံးတိုသုံးနည်း"
 
-#: svxitems.src#RID_SVXITEMS_HYPHEN_FALSE.string.text
-msgid "No hyphenation"
+#: source/items/svxitems.src#RID_SVXITEMS_HYPHEN_FALSE.String.Text
+msgid  "No hyphenation"
 msgstr "တုံးတိုသင်္ကေတမသုံး"
 
-#: svxitems.src#RID_SVXITEMS_PAGE_END_TRUE.string.text
-msgid "Page End"
+#: source/items/svxitems.src#RID_SVXITEMS_PAGE_END_TRUE.String.Text
+msgid  "Page End"
 msgstr "စာမျက်နှာအဆုံး"
 
-#: svxitems.src#RID_SVXITEMS_PAGE_END_FALSE.string.text
-msgid "No Page End"
+#: source/items/svxitems.src#RID_SVXITEMS_PAGE_END_FALSE.String.Text
+msgid  "No Page End"
 msgstr "စာမျက်နှာအဆုံးမရှိ"
 
-#: svxitems.src#RID_SVXITEMS_SIZE_WIDTH.string.text
-msgid "Width: "
+#: source/items/svxitems.src#RID_SVXITEMS_SIZE_WIDTH.String.Text
+msgid  "Width: "
 msgstr "အကျယ်-"
 
-#: svxitems.src#RID_SVXITEMS_SIZE_HEIGHT.string.text
-msgid "Height: "
+#: source/items/svxitems.src#RID_SVXITEMS_SIZE_HEIGHT.String.Text
+msgid  "Height: "
 msgstr "အမြင့်"
 
-#: svxitems.src#RID_SVXITEMS_LRSPACE_LEFT.string.text
-msgid "Indent left "
+#: source/items/svxitems.src#RID_SVXITEMS_LRSPACE_LEFT.String.Text
+msgid  "Indent left "
 msgstr "ညာမှစာများကို ဘယ်တွင်ထားပါ"
 
-#: svxitems.src#RID_SVXITEMS_LRSPACE_FLINE.string.text
-msgid "First Line "
+#: source/items/svxitems.src#RID_SVXITEMS_LRSPACE_FLINE.String.Text
+msgid  "First Line "
 msgstr "ပထမဆုံးမျဉ်း"
 
-#: svxitems.src#RID_SVXITEMS_LRSPACE_RIGHT.string.text
-msgid "Indent right "
+#: source/items/svxitems.src#RID_SVXITEMS_LRSPACE_RIGHT.String.Text
+msgid  "Indent right "
 msgstr "ဘယ်မှစာများကို ညာတွင်ထားပါ"
 
-#: svxitems.src#RID_SVXITEMS_SHADOW_COMPLETE.string.text
-msgid "Shadow: "
+#: source/items/svxitems.src#RID_SVXITEMS_SHADOW_COMPLETE.String.Text
+msgid  "Shadow: "
 msgstr "အရိပ်-"
 
-#: svxitems.src#RID_SVXITEMS_BORDER_COMPLETE.string.text
-msgid "Borders "
+#: source/items/svxitems.src#RID_SVXITEMS_BORDER_COMPLETE.String.Text
+msgid  "Borders "
 msgstr "ဘောင်များ"
 
-#: svxitems.src#RID_SVXITEMS_BORDER_NONE.string.text
-msgid "No border"
+#: source/items/svxitems.src#RID_SVXITEMS_BORDER_NONE.String.Text
+msgid  "No border"
 msgstr "ဘောင်မခတ်ပါ"
 
-#: svxitems.src#RID_SVXITEMS_BORDER_TOP.string.text
-msgid "top "
+#: source/items/svxitems.src#RID_SVXITEMS_BORDER_TOP.String.Text
+msgid  "top "
 msgstr "ထိပ်"
 
-#: svxitems.src#RID_SVXITEMS_BORDER_BOTTOM.string.text
-msgid "bottom "
+#: source/items/svxitems.src#RID_SVXITEMS_BORDER_BOTTOM.String.Text
+msgid  "bottom "
 msgstr "အောက်"
 
-#: svxitems.src#RID_SVXITEMS_BORDER_LEFT.string.text
-msgid "left "
+#: source/items/svxitems.src#RID_SVXITEMS_BORDER_LEFT.String.Text
+msgid  "left "
 msgstr "ဘယ်"
 
-#: svxitems.src#RID_SVXITEMS_BORDER_RIGHT.string.text
-msgid "right "
+#: source/items/svxitems.src#RID_SVXITEMS_BORDER_RIGHT.String.Text
+msgid  "right "
 msgstr "ညာ"
 
-#: svxitems.src#RID_SVXITEMS_BORDER_DISTANCE.string.text
-msgid "Spacing "
+#: source/items/svxitems.src#RID_SVXITEMS_BORDER_DISTANCE.String.Text
+msgid  "Spacing "
 msgstr "နေရာလွတ်"
 
-#: svxitems.src#RID_SVXITEMS_ULSPACE_UPPER.string.text
-msgid "From top "
+#: source/items/svxitems.src#RID_SVXITEMS_ULSPACE_UPPER.String.Text
+msgid  "From top "
 msgstr "ထိပ်ဘက်မှ"
 
-#: svxitems.src#RID_SVXITEMS_ULSPACE_LOWER.string.text
-msgid "From bottom "
+#: source/items/svxitems.src#RID_SVXITEMS_ULSPACE_LOWER.String.Text
+msgid  "From bottom "
 msgstr "အောက်ခြေမှ"
 
-#: svxitems.src#RID_SVXITEMS_LINES.string.text
-msgid "%1 Lines"
+#: source/items/svxitems.src#RID_SVXITEMS_LINES.String.Text
+msgid  "%1 Lines"
 msgstr "%1 လိုင်းများ"
 
-#: svxitems.src#RID_SVXITEMS_WIDOWS_COMPLETE.string.text
-msgid "Widow control"
+#: source/items/svxitems.src#RID_SVXITEMS_WIDOWS_COMPLETE.String.Text
+msgid  "Widow control"
 msgstr "~စာပိုဒ်တစ်ခုဆင်းပြီးနောက်စာကြောင်းထိန်းချုပ်မှု"
 
-#: svxitems.src#RID_SVXITEMS_ORPHANS_COMPLETE.string.text
-msgid "Orphan control"
+#: source/items/svxitems.src#RID_SVXITEMS_ORPHANS_COMPLETE.String.Text
+msgid  "Orphan control"
 msgstr "~စာပိုဒ်တစ်ခုမဆင်းမှီစာကြောင်းထိန်းချုပ်မှု"
 
-#: svxitems.src#RID_SVXITEMS_HYPHEN_MINLEAD.string.text
-msgid "Characters at end of line"
+#: source/items/svxitems.src#RID_SVXITEMS_HYPHEN_MINLEAD.String.Text
+msgid  "Characters at end of line"
 msgstr "လိုင်းအဆုံးရှိ အက္ခရာများ"
 
-#: svxitems.src#RID_SVXITEMS_HYPHEN_MINTRAIL.string.text
-msgid "Characters at beginning of line"
+#: source/items/svxitems.src#RID_SVXITEMS_HYPHEN_MINTRAIL.String.Text
+msgid  "Characters at beginning of line"
 msgstr "လိုင်းအစရှိ အက္ခရာများ"
 
-#: svxitems.src#RID_SVXITEMS_HYPHEN_MAX.string.text
-msgid "Hyphens"
+#: source/items/svxitems.src#RID_SVXITEMS_HYPHEN_MAX.String.Text
+msgid  "Hyphens"
 msgstr "တုံးတိုသင်္ကေတ"
 
-#: svxitems.src#RID_SVXITEMS_PAGEMODEL_COMPLETE.string.text
-msgid "Page Style: "
+#: source/items/svxitems.src#RID_SVXITEMS_PAGEMODEL_COMPLETE.String.Text
+msgid  "Page Style: "
 msgstr "စာမျက်နှာစတိုင်လ်-"
 
-#: svxitems.src#RID_SVXITEMS_KERNING_COMPLETE.string.text
-msgid "Kerning "
+#: source/items/svxitems.src#RID_SVXITEMS_KERNING_COMPLETE.String.Text
+msgid  "Kerning "
 msgstr "စာလုံးအလှ"
 
-#: svxitems.src#RID_SVXITEMS_KERNING_EXPANDED.string.text
-msgid "locked "
+#: source/items/svxitems.src#RID_SVXITEMS_KERNING_EXPANDED.String.Text
+msgid  "locked "
 msgstr "သော့ခတ်ထားသည်"
 
-#: svxitems.src#RID_SVXITEMS_KERNING_CONDENSED.string.text
-msgid "Condensed "
+#: source/items/svxitems.src#RID_SVXITEMS_KERNING_CONDENSED.String.Text
+msgid  "Condensed "
 msgstr "ချုံပါ"
 
-#: svxitems.src#RID_SVXITEMS_GRAPHIC.string.text
-msgid "Graphic"
+#: source/items/svxitems.src#RID_SVXITEMS_GRAPHIC.String.Text
+msgid  "Graphic"
 msgstr "ရုပ်ပုံဒီဇိုင်း"
 
-#: svxitems.src#RID_SVXITEMS_EMPHASIS_NONE_STYLE.string.text
-msgid "none"
+#: source/items/svxitems.src#RID_SVXITEMS_EMPHASIS_NONE_STYLE.String.Text
+msgid  "none"
 msgstr "ဘာမျှမရှိ"
 
-#: svxitems.src#RID_SVXITEMS_EMPHASIS_DOT_STYLE.string.text
-msgid "Dots "
+#: source/items/svxitems.src#RID_SVXITEMS_EMPHASIS_DOT_STYLE.String.Text
+msgid  "Dots "
 msgstr "အစက်များ"
 
-#: svxitems.src#RID_SVXITEMS_EMPHASIS_CIRCLE_STYLE.string.text
-msgid "Circle "
+#: source/items/svxitems.src#RID_SVXITEMS_EMPHASIS_CIRCLE_STYLE.String.Text
+msgid  "Circle "
 msgstr "စက်ဝိုင်း"
 
-#: svxitems.src#RID_SVXITEMS_EMPHASIS_DISC_STYLE.string.text
-msgid "Filled circle "
+#: source/items/svxitems.src#RID_SVXITEMS_EMPHASIS_DISC_STYLE.String.Text
+msgid  "Filled circle "
 msgstr "စက်ဝိုင်းတွင်ဖြည့်ပါ"
 
-#: svxitems.src#RID_SVXITEMS_EMPHASIS_ACCENT_STYLE.string.text
-msgid "Accent "
+#: source/items/svxitems.src#RID_SVXITEMS_EMPHASIS_ACCENT_STYLE.String.Text
+msgid  "Accent "
 msgstr "သံပြောင်းပြသင်္ကေတ"
 
-#: svxitems.src#RID_SVXITEMS_EMPHASIS_ABOVE_POS.string.text
-msgid "Above"
+#: source/items/svxitems.src#RID_SVXITEMS_EMPHASIS_ABOVE_POS.String.Text
+msgid  "Above"
 msgstr "အထက်"
 
-#: svxitems.src#RID_SVXITEMS_EMPHASIS_BELOW_POS.string.text
-msgid "Below"
+#: source/items/svxitems.src#RID_SVXITEMS_EMPHASIS_BELOW_POS.String.Text
+msgid  "Below"
 msgstr "အောက်"
 
-#: svxitems.src#RID_SVXITEMS_TWOLINES_OFF.string.text
-msgid "Double-lined off"
+#: source/items/svxitems.src#RID_SVXITEMS_TWOLINES_OFF.String.Text
+msgid  "Double-lined off"
 msgstr "နှစ်ထပ်မျဉ်းမသုံး"
 
-#: svxitems.src#RID_SVXITEMS_TWOLINES.string.text
-msgid "Double-lined"
+#: source/items/svxitems.src#RID_SVXITEMS_TWOLINES.String.Text
+msgid  "Double-lined"
 msgstr "နှစ်ထပ်-မျဉ်း"
 
-#: svxitems.src#RID_SVXITEMS_SCRPTSPC_OFF.string.text
-msgctxt "svxitems.src#RID_SVXITEMS_SCRPTSPC_OFF.string.text"
-msgid "No automatic character spacing"
+#: source/items/svxitems.src#RID_SVXITEMS_SCRPTSPC_OFF.String.Text
+msgid  "No automatic character spacing"
 msgstr "အက္ခရာနေရာလွတ်များ အလိုအလျောက် မသုံးပါ"
 
-#: svxitems.src#RID_SVXITEMS_SCRPTSPC_ON.string.text
-msgctxt "svxitems.src#RID_SVXITEMS_SCRPTSPC_ON.string.text"
-msgid "No automatic character spacing"
+#: source/items/svxitems.src#RID_SVXITEMS_SCRPTSPC_ON.String.Text
+msgid  "No automatic character spacing"
 msgstr "အက္ခရာနေရာလွတ်များ အလိုအလျောက် မသုံးပါ"
 
-#: svxitems.src#RID_SVXITEMS_HNGPNCT_OFF.string.text
-msgid "No hanging punctuation at line end"
+#: source/items/svxitems.src#RID_SVXITEMS_HNGPNCT_OFF.String.Text
+msgid  "No hanging punctuation at line end"
 msgstr "လိုင်းအဆုံးတွင် ပုဒ်ဖြတ်ပုဒ်ရပ်သင်္ကေတများမသုံးပါ"
 
-#: svxitems.src#RID_SVXITEMS_HNGPNCT_ON.string.text
-msgid "Hanging punctuation at line end"
+#: source/items/svxitems.src#RID_SVXITEMS_HNGPNCT_ON.String.Text
+msgid  "Hanging punctuation at line end"
 msgstr "လိုင်းအဆုံးတွင် ပုဒ်ဖြတ်ပုဒ်ရပ်သင်္ကေတများသုံး"
 
-#: svxitems.src#RID_SVXITEMS_FORBIDDEN_RULE_OFF.string.text
-msgid "Apply list of forbidden characters to beginning and end of lines"
+#: source/items/svxitems.src#RID_SVXITEMS_FORBIDDEN_RULE_OFF.String.Text
+msgid  "Apply list of forbidden characters to beginning and end of lines"
 msgstr "လိုင်း၏ အဆုံးနှင့်အစတွင် တားမြစ်ပိတ်ပင်ထားသော အက္ခရာများကို အသုံးချပါ"
 
-#: svxitems.src#RID_SVXITEMS_FORBIDDEN_RULE_ON.string.text
-msgid "Don't apply list of forbidden characters to beginning and end of lines"
+#: source/items/svxitems.src#RID_SVXITEMS_FORBIDDEN_RULE_ON.String.Text
+msgid  "Don't apply list of forbidden characters to beginning and end of lines"
 msgstr "လိုင်း၏ အဆုံးနှင့်အစတွင် တားမြစ်ပိတ်ပင်ထားသော အက္ခရာများကို အသုံး"
 
-#: svxitems.src#RID_SVXITEMS_CHARROTATE_OFF.string.text
-msgid "No rotated characters"
+#: source/items/svxitems.src#RID_SVXITEMS_CHARROTATE_OFF.String.Text
+msgid  "No rotated characters"
 msgstr "အက္ခရာများထပ်တလဲလဲပြုခြင်းမရှိ"
 
-#: svxitems.src#RID_SVXITEMS_CHARROTATE.string.text
-msgid "Character rotated by $(ARG1)°"
+#: source/items/svxitems.src#RID_SVXITEMS_CHARROTATE.String.Text
+msgid  "Character rotated by $(ARG1)°"
 msgstr "$(ARG1)°ဖြင့် အက္ခရာများထပ်လဲလဲပြုခြင်းမရှိ"
 
-#: svxitems.src#RID_SVXITEMS_CHARROTATE_FITLINE.string.text
-msgid "Fit to line"
+#: source/items/svxitems.src#RID_SVXITEMS_CHARROTATE_FITLINE.String.Text
+msgid  "Fit to line"
 msgstr "မျဉ်းနှင့်တစ်ထပ်တည်း"
 
-#: svxitems.src#RID_SVXITEMS_CHARSCALE.string.text
-msgid "Characters scaled $(ARG1)%"
+#: source/items/svxitems.src#RID_SVXITEMS_CHARSCALE.String.Text
+msgid  "Characters scaled $(ARG1)%"
 msgstr "$(ARG1)%ဖြင့် အက္ခရာများ စကေးညှိပြီးဖြစ်"
 
-#: svxitems.src#RID_SVXITEMS_CHARSCALE_OFF.string.text
-msgid "No scaled characters"
+#: source/items/svxitems.src#RID_SVXITEMS_CHARSCALE_OFF.String.Text
+msgid  "No scaled characters"
 msgstr "အက္ခရာများ စကေးပြုခြင်းမရှိ"
 
-#: svxitems.src#RID_SVXITEMS_RELIEF_NONE.string.text
-msgid "No relief"
+#: source/items/svxitems.src#RID_SVXITEMS_RELIEF_NONE.String.Text
+msgid  "No relief"
 msgstr "အကူအညီမရ"
 
-#: svxitems.src#RID_SVXITEMS_RELIEF_EMBOSSED.string.text
-msgid "Relief"
+#: source/items/svxitems.src#RID_SVXITEMS_RELIEF_EMBOSSED.String.Text
+msgid  "Relief"
 msgstr "အကူအညီရ"
 
-#: svxitems.src#RID_SVXITEMS_RELIEF_ENGRAVED.string.text
-msgid "Engraved"
+#: source/items/svxitems.src#RID_SVXITEMS_RELIEF_ENGRAVED.String.Text
+msgid  "Engraved"
 msgstr "ပန်းပုံထွင်းသည်"
 
-#: svxitems.src#RID_SVXITEMS_PARAVERTALIGN_AUTO.string.text
-msgid "Automatic text alignment"
+#: source/items/svxitems.src#RID_SVXITEMS_PARAVERTALIGN_AUTO.String.Text
+msgid  "Automatic text alignment"
 msgstr "အလိုအလျောက်စာသားချိန်ညှိမှု"
 
-#: svxitems.src#RID_SVXITEMS_PARAVERTALIGN_BASELINE.string.text
-msgid "Text aligned to base line"
+#: source/items/svxitems.src#RID_SVXITEMS_PARAVERTALIGN_BASELINE.String.Text
+msgid  "Text aligned to base line"
 msgstr "အခြေမျဉ်းသို့စာသားချိန်ညှိပါ"
 
-#: svxitems.src#RID_SVXITEMS_PARAVERTALIGN_TOP.string.text
-msgid "Text aligned top"
+#: source/items/svxitems.src#RID_SVXITEMS_PARAVERTALIGN_TOP.String.Text
+msgid  "Text aligned top"
 msgstr "ထိပ်ဘက်သို့စာသားချိန်ညှိပါ"
 
-#: svxitems.src#RID_SVXITEMS_PARAVERTALIGN_CENTER.string.text
-msgid "Text aligned middle"
+#: source/items/svxitems.src#RID_SVXITEMS_PARAVERTALIGN_CENTER.String.Text
+msgid  "Text aligned middle"
 msgstr "အလယ်သို့စာသားချိန်ညှိပါ"
 
-#: svxitems.src#RID_SVXITEMS_PARAVERTALIGN_BOTTOM.string.text
-msgid "Text aligned bottom"
+#: source/items/svxitems.src#RID_SVXITEMS_PARAVERTALIGN_BOTTOM.String.Text
+msgid  "Text aligned bottom"
 msgstr "အောက်ခြေသို့စာသားချိန်ညှိပါ"
 
-#: svxitems.src#RID_SVXITEMS_FRMDIR_HORI_LEFT_TOP.string.text
-msgid "Text direction left-to-right (horizontal)"
+#: source/items/svxitems.src#RID_SVXITEMS_FRMDIR_HORI_LEFT_TOP.String.Text
+msgid  "Text direction left-to-right (horizontal)"
 msgstr "ဘယ်မှညာသို့စာသားဦးတည်ပါ(ရေပြင်ညီအတိုင်း)"
 
-#: svxitems.src#RID_SVXITEMS_FRMDIR_HORI_RIGHT_TOP.string.text
-msgid "Text direction right-to-left (horizontal)"
+#: source/items/svxitems.src#RID_SVXITEMS_FRMDIR_HORI_RIGHT_TOP.String.Text
+msgid  "Text direction right-to-left (horizontal)"
 msgstr "ညာမှဘယ်သို့စာသားဦးတည်ပါ(ရေပြင်ညီအတိုင်း)"
 
-#: svxitems.src#RID_SVXITEMS_FRMDIR_VERT_TOP_RIGHT.string.text
-msgid "Text direction right-to-left (vertical)"
+#: source/items/svxitems.src#RID_SVXITEMS_FRMDIR_VERT_TOP_RIGHT.String.Text
+msgid  "Text direction right-to-left (vertical)"
 msgstr "ညာမှဘယ်သို့စာသားဦးတည်ပါ (ဒေါင်လိုက်အတိုင်း)"
 
-#: svxitems.src#RID_SVXITEMS_FRMDIR_VERT_TOP_LEFT.string.text
-msgid "Text direction left-to-right (vertical)"
+#: source/items/svxitems.src#RID_SVXITEMS_FRMDIR_VERT_TOP_LEFT.String.Text
+msgid  "Text direction left-to-right (vertical)"
 msgstr "ဘယ်မှညာသို့စာသားချိန်ညှိပါ(ဒေါင်လိုက်အတိုင်း)"
 
-#: svxitems.src#RID_SVXITEMS_FRMDIR_ENVIRONMENT.string.text
-msgid "Use superordinate object text direction setting"
+#: source/items/svxitems.src#RID_SVXITEMS_FRMDIR_ENVIRONMENT.String.Text
+msgid  "Use superordinate object text direction setting"
 msgstr ""
 
-#: svxitems.src#RID_SVXITEMS_PARASNAPTOGRID_ON.string.text
-msgid "Paragraph snaps to text grid (if active)"
+#: source/items/svxitems.src#RID_SVXITEMS_PARASNAPTOGRID_ON.String.Text
+msgid  "Paragraph snaps to text grid (if active)"
 msgstr "စာသားကွက်ဆီသို့စာပိုဒ်ကို ဖြတ်ချသည် (လုပ်ဆောင်လျှင်)"
 
-#: svxitems.src#RID_SVXITEMS_PARASNAPTOGRID_OFF.string.text
-msgid "Paragraph does not snap to text grid"
+#: source/items/svxitems.src#RID_SVXITEMS_PARASNAPTOGRID_OFF.String.Text
+msgid  "Paragraph does not snap to text grid"
 msgstr "စာသားကွက်ဆီသို့စာပိုဒ်ကို မဖြတ်ချပါ "
 
-#: svxitems.src#RID_SVXITEMS_CHARHIDDEN_FALSE.string.text
-msgid "Not hidden"
+#: source/items/svxitems.src#RID_SVXITEMS_CHARHIDDEN_FALSE.String.Text
+msgid  "Not hidden"
 msgstr "ဖုံးကွယ်ထားခြင်းမရှိ"
 
-#: svxitems.src#RID_SVXITEMS_CHARHIDDEN_TRUE.string.text
-msgid "Hidden"
+#: source/items/svxitems.src#RID_SVXITEMS_CHARHIDDEN_TRUE.String.Text
+msgid  "Hidden"
 msgstr "ဖုံးထားသည်"
 
-#~ msgid "User Defined"
-#~ msgstr "အသုံးပြုသူသတ်မှတ်ချက်"
-
-#~ msgid "Screen"
-#~ msgstr "မျက်နှာပြင်"
-
-#: lingu.src#RID_SVXQB_CONTINUE.querybox.text
-msgid "Continue checking at beginning of document?"
+#: source/misc/lingu.src#RID_SVXQB_CONTINUE.QueryBox.Message
+msgid  "Continue checking at beginning of document?"
 msgstr "မှတ်တမ်းမှတ်ရာ၏ အစမှ ဆက်လက်စစ်ဆေးလိုပါသလား။"
 
-#: lingu.src#RID_SVXQB_BW_CONTINUE.querybox.text
-msgid "Continue checking at end of document?"
+#: source/misc/lingu.src#RID_SVXQB_BW_CONTINUE.QueryBox.Message
+msgid  "Continue checking at end of document?"
 msgstr "မှတ်တမ်းမှတ်ရာ၏ အဆုံးမှ ဆက်လက်စစ်ဆေးလိုပါသလား။"
 
-#: lingu.src#RID_SVXSTR_HMERR_THESAURUS.string.text
-msgid ""
-"No thesaurus is available for the selected language. \n"
-"Please check your installation and install the desired language\n"
+#: source/misc/lingu.src#RID_SVXSTR_HMERR_THESAURUS.String.Text
+msgid  "No thesaurus is available for the selected language. \nPlease check your installation and install the desired language\n"
 msgstr ""
-"ရွေးချယ်ထားသည့် ဘာသာစကားအတွက် အဘိဓာန် အသုံးမပြုနိုင်ပါ။\n"
-"ဆော့ဖ်ဝဲထည့်သွင်းမှုများကို ပြန်လည်စစ်ဆေးပြီး ဆန္ဒရှိသည့် ဘာသာစကားကို "
-"ထည့်သွင်းပါ\n"
 
-#: lingu.src#RID_SVXSTR_DIC_ERR_UNKNOWN.string.text
-msgid ""
-"Word cannot be added to dictionary\n"
-"due to unknown reason."
+#: source/misc/lingu.src#RID_SVXSTR_DIC_ERR_UNKNOWN.String.Text
+msgid  "Word cannot be added to dictionary\ndue to unknown reason."
 msgstr ""
-"အမည်မသိ အကြောင်းတစ်စုံတစ်ရာကြောင့်\n"
-"အဘိဓာန်ထဲသို့ စကားလုံး ထပ်မသွင်းနိုင်ပါ"
 
-#: lingu.src#RID_SVXSTR_DIC_ERR_FULL.string.text
-msgid "The dictionary is already full."
+#: source/misc/lingu.src#RID_SVXSTR_DIC_ERR_FULL.String.Text
+msgid  "The dictionary is already full."
 msgstr "အဘိဓာန် ပြည့်ပြီးဖြစ်သည်။"
 
-#: lingu.src#RID_SVXSTR_DIC_ERR_READONLY.string.text
-msgid "The dictionary is read-only."
+#: source/misc/lingu.src#RID_SVXSTR_DIC_ERR_READONLY.String.Text
+msgid  "The dictionary is read-only."
 msgstr "အဘိဓာန်သည် ဖတ်ရုံသာဖြစ်သည်။"
+
+#: source/outliner/outliner.src#RID_OUTLUNDO_HEIGHT.String.Text
+msgid  "Move"
+msgstr "ရွေ့ပါ"
+
+#: source/outliner/outliner.src#RID_OUTLUNDO_DEPTH.String.Text
+msgid  "Indent"
+msgstr "အတွင်းဘက်သို့ရွေ့ခြင်း"
+
+#: source/outliner/outliner.src#RID_OUTLUNDO_EXPAND.String.Text
+msgid  "Show subpoints"
+msgstr "အမှတ်ငယ်များပြသပါ"
+
+#: source/outliner/outliner.src#RID_OUTLUNDO_COLLAPSE.String.Text
+msgid  "Collapse"
+msgstr "ခေါက်သိမ်းခြင်း"
+
+#: source/outliner/outliner.src#RID_OUTLUNDO_ATTR.String.Text
+msgid  "Apply attributes"
+msgstr "စွမ်းရည်များ အသုံးချပါ"
+
+#: source/outliner/outliner.src#RID_OUTLUNDO_INSERT.String.Text
+msgid  "Insert"
+msgstr "ထည့်သွင်းပါ"

@@ -1,1381 +1,1206 @@
-
-#: wizard.src#DLG_FIRSTSTART_WIZARD.modaldialog.text
-msgctxt "wizard.src#DLG_FIRSTSTART_WIZARD.modaldialog.text"
-msgid "Welcome to %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Bi xêr hatî %PRODUCTNAME %PRODUCTVERSION"
-
-#: wizard.src#STR_STATE_WELCOME.string.text
-msgid "Welcome"
-msgstr "Bi xêr hatî"
-
-#: wizard.src#STR_STATE_LICENSE.string.text
-msgid "License Agreement"
-msgstr "Peyama Lîsansê"
-
-#: wizard.src#STR_STATE_MIGRATION.string.text
-msgid "Personal Data"
-msgstr "Daneyên Şexsî"
-
-#: wizard.src#STR_STATE_USER.string.text
-msgid "User name"
-msgstr "Navê bikarhêner"
-
-#: wizard.src#STR_STATE_UPDATE_CHECK.string.text
-msgctxt "wizard.src#STR_STATE_UPDATE_CHECK.string.text"
-msgid "Online Update"
-msgstr "Sazkirina ji Torê"
-
-#: wizard.src#STR_STATE_REGISTRATION.string.text
-msgid "Registration"
-msgstr "Tomarkirin"
-
-#: wizard.src#STR_WELCOME_MIGRATION.string.text
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
 msgid ""
-"This wizard will guide you through the license agreement, the transfer of "
-"user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n"
-"\n"
-"Click 'Next' to continue."
 msgstr ""
-"Ev sêrbaz wê ji bo te rêberî bike ji peymana lîsansê, heta guhêztina dana "
-"yên bikarhêner jê %OLD_VERSION û tomarkirina %PRODUCTNAME.\n"
-"\n"
-"Pêl 'Pêşve' bike bidomîne."
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
 
-#: wizard.src#STR_WELCOME_WITHOUT_LICENSE.string.text
-msgid ""
-"This wizard will guide you through the registration of %PRODUCTNAME.\n"
-"\n"
-"Click 'Next' to continue."
+
+#: source/app/desktop.src#STR_RECOVER_QUERY.String.Text
+msgid  "Should the file "$1" be restored?"
 msgstr ""
-"Ev sêrbaz wê ji bo te rêberî bike ji peymana lîsansê heta tomarkirina %"
-"PRODUCTNAME.\n"
-"\n"
-"Pêl 'Pêşve' bike bidomîne."
 
-#: wizard.src#STR_FINISH.string.text
-msgid "~Finish"
-msgstr "~Dawî"
-
-#: wizard.src#STR_REGISTRATION_OOO.string.text
-msgid ""
-"You now have the opportunity to support and contribute to the fastest "
-"growing open source community in the world.\n"
-"\n"
-"Help us prove that %PRODUCTNAME has already gained significant market share "
-"by registering.\n"
-"\n"
-"Registering is voluntary and without obligation."
-msgstr ""
-"Tu dikarî beşdarê koma nivîsbariyê azad ya di gerdûnê de pir lez mezin dibe "
-"bibî û alîkarî bidî.\n"
-"\n"
-"Alîkarî dayin bi xwe tomarkirinê re, dide nîşan ku %PRODUCTNAME niha de "
-"parvekirina girîng standiye.\n"
-"\n"
-"Tomar bûn bi dilxwaz e û ne bêgav e."
-
-#: wizard.src#ERRBOX_REG_NOSYSBROWSER.errorbox.text
-msgid ""
-"An error occurred in starting the web browser.\n"
-"Please check the %PRODUCTNAME and web browser settings."
-msgstr ""
-"Demê destpêkirina geroka torê de çewtiyek çêbû.\n"
-"Jê kerema xwe %PRODUCTNAME û mîhengên geroka torê kontrol bikin."
-
-#: wizard.src#QB_ASK_DECLINE.querybox.text
-msgid "Do you really want to decline?"
-msgstr "Tu mîsoger dixwazî red bikî?"
-
-#: wizard.src#TP_WELCOME.FT_WELCOME_HEADER.fixedtext.text
-msgctxt "wizard.src#TP_WELCOME.FT_WELCOME_HEADER.fixedtext.text"
-msgid "Welcome to %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Bi xêr hatî %PRODUCTNAME %PRODUCTVERSION"
-
-#: wizard.src#TP_WELCOME.FT_WELCOME_BODY.fixedtext.text
-msgid ""
-"This wizard will guide you through the license agreement and the "
-"registration of %PRODUCTNAME.\n"
-"\n"
-"Click 'Next' to continue."
-msgstr ""
-"Ev sêrbaz wê ji bo te rêberî bike ji peymana lîsansê heta tomarkirina %"
-"PRODUCTNAME.\n"
-"\n"
-"Pêl 'Pêşve' bike bidomîne."
-
-#: wizard.src#TP_LICENSE.FT_LICENSE_HEADER.fixedtext.text
-msgid "Please follow these steps to accept the license"
-msgstr "Ji bo pejirandina lîsansê, fermo wan gavan bişopîne"
-
-#: wizard.src#TP_LICENSE.FT_LICENSE_BODY_1.fixedtext.text
-msgid "1."
-msgstr "1."
-
-#: wizard.src#TP_LICENSE.FT_LICENSE_BODY_1_TXT.fixedtext.text
-msgid ""
-"View the complete License Agreement. Please use the scrollbar or the '%"
-"PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
-"Peymana Lîsansê hemû yê bibîne. Jê kerema xwe ji bo dîtina naveroka nivîsara "
-"lîsansê pêl bişkojka '%PAGEDOWN' ya di vê paceyê de bikin."
-
-#: wizard.src#TP_LICENSE.FT_LICENSE_BODY_2.fixedtext.text
-msgid "2."
-msgstr "2."
-
-#: wizard.src#TP_LICENSE.FT_LICENSE_BODY_2_TXT.fixedtext.text
-msgid "Click 'Accept' to accept the terms of the Agreement."
-msgstr "Ji bo pejirandina Peymanname 'Bipejire' bitike."
-
-#: wizard.src#TP_LICENSE.PB_LICENSE_DOWN.pushbutton.text
-msgid "Scroll Do~wn"
-msgstr "Ber~jêr Bikişîne"
-
-#: wizard.src#STR_LICENSE_ACCEPT.string.text
-msgid "~Accept"
-msgstr "~Pejirandin"
-
-#: wizard.src#STR_LICENSE_DECLINE.string.text
-msgid "~Decline"
-msgstr "~Redkirin"
-
-#: wizard.src#TP_MIGRATION.FT_MIGRATION_HEADER.fixedtext.text
-msgctxt "wizard.src#TP_MIGRATION.FT_MIGRATION_HEADER.fixedtext.text"
-msgid "Transfer personal data"
-msgstr "Veguheztina dataya şexsî"
-
-#: wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.fixedtext.text
-msgid ""
-"Most personal data from %OLDPRODUCT installation can be reused in %"
-"PRODUCTNAME %PRODUCTVERSION.\n"
-"\n"
-"If you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, "
-"unmark the check box."
-msgstr ""
-"Gelekî dana yên ji sazkirina %OLDPRODUCT dikarin di sazkirina %PRODUCTNAME %"
-"PRODUCTVERSION de bên bikaranîn.\n"
-"\n"
-"Heke tu nexwazî mîhengên berê di %PRODUCTNAME %PRODUCTVERSION de bi kar "
-"bînî, nîşana ser qutiyê rake."
-
-#: wizard.src#TP_MIGRATION.CB_MIGRATION.checkbox.text
-msgctxt "wizard.src#TP_MIGRATION.CB_MIGRATION.checkbox.text"
-msgid "Transfer personal data"
-msgstr "Veguheztina dataya şexsî"
-
-#: wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_HEADER.fixedtext.text
-msgctxt "wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_HEADER.fixedtext.text"
-msgid "Online Update"
-msgstr "Sazkirina ji Torê"
-
-#: wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_BODY.fixedtext.text
-msgid ""
-"%PRODUCTNAME searches automatically at regular intervals for new versions.\n"
-"In doing so online update does not transfer personal data.\n"
-"As soon as a new version is available, you will be notified.\n"
-"\n"
-"You can configure this feature at Tools / Options... / %PRODUCTNAME / Online "
-"Update."
-msgstr ""
-"%PRODUCTNAME bixweber di navbera hinek dem de lê guhertoyên nû digere.\n"
-"Bi vê kirinê ve rojanekirinên ji torê dana yên takekesî venaguheze.\n"
-"Wextê guhertoya nû amade be, hûnê bên hişyar kirin.\n"
-"\n"
-"Hûn dikarin vê bijareyê li Amûr / Vebijêrk... / %PRODUCTNAME / Rojanekirina "
-"ji Torê veava bikin."
-
-#: wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.checkbox.text
-msgid "~Check for updates automatically"
-msgstr "~Jinûvebûnan bixwegerî vebinêre"
-
-#: wizard.src#TP_USER.FT_USER_HEADER.fixedtext.text
-msgid "Provide your full name and initials below"
-msgstr "Navê xwe yê tam û pêşîniyan li jêr binivîse"
-
-#: wizard.src#TP_USER.FT_USER_BODY.fixedtext.text
-msgid ""
-"The user name will be used in the document properties, templates and when "
-"you record changes made to documents."
-msgstr ""
-"Navê bikarhêner di taybetmendiyên belgeyê, şablon û demê we belge guherand "
-"de wê were bikaranîn."
-
-#: wizard.src#TP_USER.FT_USER_FIRST.fixedtext.text
-msgid "~First name"
-msgstr "~Nav"
-
-#: wizard.src#TP_USER.FT_USER_LAST.fixedtext.text
-msgid "~Last name"
-msgstr "~Paşnav"
-
-#: wizard.src#TP_USER.FT_USER_INITIALS.fixedtext.text
-msgid "~Initials"
-msgstr "~Pêşînî"
-
-#: wizard.src#TP_USER.FT_USER_FATHER.fixedtext.text
-msgid "~Father's name"
-msgstr "Navê ~bavî"
-
-#: wizard.src#TP_REGISTRATION.FT_REGISTRATION_HEADER.fixedtext.text
-msgid "%PRODUCTNAME Registration"
-msgstr "Tomarkirina %PRODUCTNAME"
-
-#: wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.fixedtext.text
-msgid ""
-"You now have the opportunity to register as a %PRODUCTNAME user. "
-"Registration is voluntary and is without obligation.\n"
-"\n"
-"If you register, we can inform you about new developments concerning this "
-"product."
-msgstr ""
-"Tu niha dikarî xwe wekî bikarhênerê %PRODUCTNAME tomar bikî. Tomar bûn bi "
-"dilxwaz e û ne bêgav e.\n"
-"\n"
-"Heke tu xwe tomar bikî, em ê te der barê pêşketinên nû yên vê berhemê de "
-"agahdar bikin."
-
-#: wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.radiobutton.text
-msgid "I want to register ~now"
-msgstr "Ez niha dixwazim qeyd bikim."
-
-#: wizard.src#TP_REGISTRATION.RB_REGISTRATION_LATER.radiobutton.text
-msgid "I want to register ~later"
-msgstr "Ez ~piştre dixwazim qeyd bikim."
-
-#: wizard.src#TP_REGISTRATION.RB_REGISTRATION_NEVER.radiobutton.text
-msgid "I do not want to ~register"
-msgstr "Ez naxwazim ~qeyd bikim."
-
-#: wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.fixedtext.text
-msgid ""
-"We hope you enjoy working with %PRODUCTNAME.\n"
-"\n"
-"To exit the wizard, click 'Finish'."
-msgstr ""
-"Em hêvî dikin hûn bi %PRODUCTNAME re kêfxweş bin.\n"
-"\n"
-"Ji bo derketina ji sêrbazê, pêl 'Dawî' bike."
-
-#: desktop.src#STR_RECOVER_QUERY.string.text
-msgid "Should the file \"$1\" be restored?"
-msgstr "Bila pela \"$1\" were rizgar kirin?"
-
-#: desktop.src#STR_RECOVER_TITLE.string.text
-msgid "File Recovery"
+#: source/app/desktop.src#STR_RECOVER_TITLE.String.Text
+msgid  "File Recovery"
 msgstr "Rizgarkirina pelan"
 
-#: desktop.src#STR_RECOVER_PREPARED.warningbox.text
-msgid ""
-"An unrecoverable error has occurred.\n"
-"\n"
-"All modified files have been saved and can\n"
-"probably be recovered at program restart."
+#: source/app/desktop.src#STR_RECOVER_PREPARED.WarningBox.Message
+msgid  "An unrecoverable error has occurred.\n\nAll modified files have been saved and can\nprobably be recovered at program restart."
 msgstr ""
-"Xeletiyek nehatibû rizgar kirin çê bû.\n"
-"\n"
-"Hemû pelên ku tê da guhertin hatiye çê kirin hat tomar kirin.\n"
-"Piştî nû destpêkirina bernamê wendayî yên we çê nabe."
 
-#: desktop.src#STR_BOOTSTRAP_ERR_CANNOT_START.string.text
-msgid "The application cannot be started. "
+#: source/app/desktop.src#STR_BOOTSTRAP_ERR_CANNOT_START.String.Text
+msgid  "The application cannot be started. "
 msgstr "Bername nehat dest pê kirin. "
 
-#: desktop.src#STR_BOOTSTRAP_ERR_DIR_MISSING.string.text
-msgid "The configuration directory \"$1\" could not be found."
-msgstr "Peldanka mîhengan ya \"$1\" nehat dîtin."
+#: source/app/desktop.src#STR_BOOTSTRAP_ERR_DIR_MISSING.String.Text
+msgid  "The configuration directory "$1" could not be found."
+msgstr ""
 
-#: desktop.src#STR_BOOTSTRAP_ERR_PATH_INVALID.string.text
-msgid "The installation path is invalid."
+#: source/app/desktop.src#STR_BOOTSTRAP_ERR_PATH_INVALID.String.Text
+msgid  "The installation path is invalid."
 msgstr "Riya sazkirinê nederbasdar e."
 
-#: desktop.src#STR_BOOTSTRAP_ERR_NO_PATH.string.text
-msgid "The installation path is not available."
+#: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_PATH.String.Text
+msgid  "The installation path is not available."
 msgstr "Riya dataya sazkirinê tune."
 
-#: desktop.src#STR_BOOTSTRAP_ERR_INTERNAL.string.text
-msgid "An internal error occurred."
+#: source/app/desktop.src#STR_BOOTSTRAP_ERR_INTERNAL.String.Text
+msgid  "An internal error occurred."
 msgstr "Çewtiyekî hundirî derket holê."
 
-#: desktop.src#STR_BOOTSTRAP_ERR_FILE_CORRUPT.string.text
-msgid "The configuration file \"$1\" is corrupt."
-msgstr "Pelê mîhengan \"$1\" xerab e."
+#: source/app/desktop.src#STR_BOOTSTRAP_ERR_FILE_CORRUPT.String.Text
+msgid  "The configuration file "$1" is corrupt."
+msgstr ""
 
-#: desktop.src#STR_BOOTSTRAP_ERR_FILE_MISSING.string.text
-msgid "The configuration file \"$1\" was not found."
-msgstr "Pelê mîhengan \"$1\" nehat dîtin."
+#: source/app/desktop.src#STR_BOOTSTRAP_ERR_FILE_MISSING.String.Text
+msgid  "The configuration file "$1" was not found."
+msgstr ""
 
-#: desktop.src#STR_BOOTSTRAP_ERR_NO_SUPPORT.string.text
-msgid "The configuration file \"$1\" does not support the current version."
-msgstr "Pela veavakirinê \"$1\", destega vî guhertoyê nake."
+#: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_SUPPORT.String.Text
+msgid  "The configuration file "$1" does not support the current version."
+msgstr ""
 
-#: desktop.src#STR_BOOTSTRAP_ERR_LANGUAGE_MISSING.string.text
-msgid "The user interface language cannot be determined."
+#: source/app/desktop.src#STR_BOOTSTRAP_ERR_LANGUAGE_MISSING.String.Text
+msgid  "The user interface language cannot be determined."
 msgstr "Zimanê navrû yê bikarhêner nayê dîyar kirin."
 
-#: desktop.src#STR_BOOTSTRAP_ERR_NO_SERVICE.string.text
-msgid "The component manager is not available."
+#: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_SERVICE.String.Text
+msgid  "The component manager is not available."
 msgstr "Rêvebirê komponentan tune."
 
-#: desktop.src#STR_BOOTSTRAP_ERR_NO_CFG_SERVICE.string.text
-msgid "The configuration service is not available."
+#: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_CFG_SERVICE.String.Text
+msgid  "The configuration service is not available."
 msgstr "Xizmeta mîhengkirinê ne amade ye."
 
-#: desktop.src#STR_BOOTSTRAP_ERR_MULTISESSION.string.text
-msgid ""
-"You have another instance running in a different terminal session. Close "
-"that instance and then try again."
+#: source/app/desktop.src#STR_BOOTSTRAP_ERR_MULTISESSION.String.Text
+msgid  "You have another instance running in a different terminal session. Close that instance and then try again."
 msgstr ""
 
-#: desktop.src#STR_ASK_START_SETUP_MANUALLY.string.text
-msgid ""
-"Start the setup application to repair the installation from the CD or the "
-"folder containing the installation packages."
+#: source/app/desktop.src#STR_ASK_START_SETUP_MANUALLY.String.Text
+msgid  "Start the setup application to repair the installation from the CD or the folder containing the installation packages."
 msgstr ""
-"Ji bo temîr kirina sazkirinê an ji CD'ye an jî ji pêrista ku pakêtên sazger "
-"têdaye da bide dest pê kirin."
 
-#: desktop.src#STR_CONFIG_ERR_SETTINGS_INCOMPLETE.string.text
-msgid ""
-"The startup settings for accessing the central configuration are incomplete. "
-""
+#: source/app/desktop.src#STR_CONFIG_ERR_SETTINGS_INCOMPLETE.String.Text
+msgid  "The startup settings for accessing the central configuration are incomplete. "
 msgstr ""
-"Mîhengên despêkirinê ên ji bo gîhîştîna veavakirina navendî hatibû çê kirin "
-"nehat temam kirin. "
 
-#: desktop.src#STR_CONFIG_ERR_CANNOT_CONNECT.string.text
-msgid "A connection to the central configuration could not be established. "
+#: source/app/desktop.src#STR_CONFIG_ERR_CANNOT_CONNECT.String.Text
+msgid  "A connection to the central configuration could not be established. "
 msgstr "Bi veavakirina navendî ra girêdan pêk nehat. "
 
-#: desktop.src#STR_CONFIG_ERR_RIGHTS_MISSING.string.text
-msgid ""
-"You cannot access the central configuration because of missing access "
-"rights. "
+#: source/app/desktop.src#STR_CONFIG_ERR_RIGHTS_MISSING.String.Text
+msgid  "You cannot access the central configuration because of missing access rights. "
 msgstr ""
-"Ji ber ku mafê we ên gîhîştîne têr nake, hûn nikarin xwe bigîhîne "
-"veavakirina navendî. "
 
-#: desktop.src#STR_CONFIG_ERR_ACCESS_GENERAL.string.text
-msgid "A general error occurred while accessing your central configuration. "
+#: source/app/desktop.src#STR_CONFIG_ERR_ACCESS_GENERAL.String.Text
+msgid  "A general error occurred while accessing your central configuration. "
 msgstr ""
-"Dema ku we xwe gîhand mîhengên xwe ên veavakirina navendî xeletiyek tevayî "
-"çê bû. "
 
-#: desktop.src#STR_CONFIG_ERR_NO_WRITE_ACCESS.string.text
-msgid ""
-"The changes to your personal settings cannot be stored centrally because of "
-"missing access rights. "
+#: source/app/desktop.src#STR_CONFIG_ERR_NO_WRITE_ACCESS.String.Text
+msgid  "The changes to your personal settings cannot be stored centrally because of missing access rights. "
 msgstr ""
-"Ji ber ku mafê we têra gîhîştînê bike tune, guhertinên mîhengên we ên taybet "
-"wek navendî naye tomar kirin. "
 
-#: desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.string.text
-msgid ""
-"%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME "
-"configuration data.\n"
-"\n"
-"Please contact your system administrator."
+#: source/app/desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.String.Text
+msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\n\nPlease contact your system administrator."
 msgstr ""
-"Dema %PRODUCTNAME kir ku xwe bigîhîne dataya veavakirinê %PRODUCTNAME "
-"xeletiyek çê bû.\n"
-"\n"
-"Ji kerema xwe rê agahî bide rêveberiya pergalê."
 
-#: desktop.src#STR_INTERNAL_ERRMSG.string.text
-msgid "The following internal error has occurred: "
+#: source/app/desktop.src#STR_INTERNAL_ERRMSG.String.Text
+msgid  "The following internal error has occurred: "
 msgstr "Ev xeletiyên hundirî ên ku li jêr ê derketin holê: "
 
-#: desktop.src#QBX_USERDATALOCKED.querybox.text
-msgid ""
-"Either another instance of %PRODUCTNAME is accessing your personal settings "
-"or your personal settings are locked.\n"
-"Simultaneous access can lead to inconsistencies in your personal settings. "
-"Before continuing, you should make sure user '$u' closes %PRODUCTNAME on "
-"host '$h'.\n"
-"\n"
-"Do you really want to continue?"
+#: source/app/desktop.src#QBX_USERDATALOCKED.QueryBox.Message
+msgid  "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\n\nDo you really want to continue?"
 msgstr ""
-"Mîhengên we ên kesî di kilîtkirinê da ye, dibe ku %PRODUCTNAME yek din a "
-"dixebite xwe digîhîne van mîhengan.\n"
-"Dibe ku gîhîştinên bi hevra bibe sebebê xirav kirina mîhengên we ên kesî. "
-"Berê berdewamkirinê, pêwîste bikarhinêr '$u' di makîna '$h' de bernameya %"
-"PRODUCTNAME a ku dişxwule bigre.\n"
-"\n"
-"Hûn dixwazin berdewam bikin?"
 
-#: desktop.src#STR_TITLE_USERDATALOCKED.string.text
-msgctxt "desktop.src#STR_TITLE_USERDATALOCKED.string.text"
-msgid "%PRODUCTNAME %PRODUCTVERSION"
+#: source/app/desktop.src#STR_TITLE_USERDATALOCKED.String.Text
+msgid  "%PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
-#: desktop.src#EBX_ERR_PRINTDISABLED.errorbox.text
-msgid "Printing is disabled. No documents can be printed."
+#: source/app/desktop.src#EBX_ERR_PRINTDISABLED.ErrorBox.Message
+msgid  "Printing is disabled. No documents can be printed."
 msgstr "Çapkirin ne aktîf e. Belge nayên çapkirin."
 
-#: desktop.src#INFOBOX_EXPIRED.infobox.text
-msgid ""
-"This Evaluation Version has expired. To find out more about %PRODUCTNAME,\n"
-"visit http://www.oracle.com/us/products/applications/open-office."
+#: source/app/desktop.src#INFOBOX_EXPIRED.InfoBox.Message
+msgid  "This Evaluation Version has expired. To find out more about %PRODUCTNAME,\nvisit http://www.openoffice.org"
 msgstr ""
-"Demê Guhertoya Evaluation boriye. Ji bo derbarê %PRODUCTNAME de zêdetir "
-"agahî,\n"
-"biçe http://www.oracle.com/us/products/applications/open-office."
 
-#: desktop.src#STR_TITLE_EXPIRED.string.text
-msgctxt "desktop.src#STR_TITLE_EXPIRED.string.text"
-msgid "%PRODUCTNAME %PRODUCTVERSION"
+#: source/app/desktop.src#STR_TITLE_EXPIRED.String.Text
+msgid  "%PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
-#: desktop.src#STR_BOOTSTRAP_ERR_NO_PATHSET_SERVICE.string.text
-msgid "The path manager is not available.\n"
+#: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_PATHSET_SERVICE.String.Text
+msgid  "The path manager is not available.\n"
 msgstr "Rêvebirê rêçan tune.\n"
 
-#: desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.string.text
-msgid ""
-"%PRODUCTNAME user installation could not be completed due to insufficient "
-"free disk space. Please free more disc space at the following location and "
-"restart %PRODUCTNAME:\n"
-"\n"
+#: source/app/desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.String.Text
+msgid  "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\n\n"
 msgstr ""
-"Sazkirina bikarhêner ya %PRODUCTNAME nayê qedandin ji ber ku cihê vala di "
-"dîska we de têrê nake. Jê kerema xwe cihê jêr hinek din dîskê vala bikin û %"
-"PRODUCTNAME nû ve bidin destpêkirin:\n"
-"\n"
 
-#: desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.string.text
-msgid ""
-"%PRODUCTNAME user installation could not be processed due to missing access "
-"rights. Please make sure that you have sufficient access rights for the "
-"following location and restart %PRODUCTNAME:\n"
-"\n"
+#: source/app/desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.String.Text
+msgid  "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\n\n"
 msgstr ""
-"Sazkirina bikarhêner ya %PRODUCTNAME nayê xebitandin ji ber ku kêmasiya "
-"gihîştinê. Jê kerema xwe kontrol bikin ku hûn xwedî mafê gihîştinê ji bo "
-"cihê jêr in û %PRODUCTNAME nû ve bidin destpêkirin:\n"
-"\n"
-"X-Accelerator-Marker: ~\n"
 
-#: dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.fixedtext.text
-msgid ""
-"The extension cannot be installed as the following\n"
-"system dependencies are not fulfilled:"
+#: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.WarningBox.Message
+msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThe newer version $DEPLOYED is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
 msgstr ""
-"Pêvek nayê sazkirin ji ber ku\n"
-"pêgirtî yên pergalê yên jêr kêm in:"
 
-#: dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.modaldialog.text
-msgid "System dependencies check"
+#: source/deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_LESS_DIFFERENT_NAMES.String.Text
+msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThe newer version $DEPLOYED, named \'$OLDNAME\', is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+
+#: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_EQUAL.WarningBox.Message
+msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThat version is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+
+#: source/deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_EQUAL_DIFFERENT_NAMES.String.Text
+msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThat version, named \'$OLDNAME\', is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+
+#: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_GREATER.WarningBox.Message
+msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThe older version $DEPLOYED is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+
+#: source/deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_GREATER_DIFFERENT_NAMES.String.TEXT
+msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThe older version $DEPLOYED, named \'$OLDNAME\', is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+
+#: source/deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.ModalDialog.Text
+msgid  "System dependencies check"
 msgstr "Kontrola pêgirtiyên pergalê"
 
-#: dp_gui_dialog.src#RID_STR_ADD_PACKAGES.string.text
-msgid "Add Extension(s)"
+#: source/deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.FixedText.Text
+msgid  "The extension cannot be installed as the following\nsystem dependencies are not fulfilled:"
+msgstr ""
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_ADD_PACKAGES.String.Text
+msgid  "Add Extension(s)"
 msgstr "Pêvekê(an) lê zêde bike"
 
-#: dp_gui_dialog.src#RID_CTX_ITEM_REMOVE.string.text
-msgid "~Remove"
+#: source/deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_REMOVE.String.Text
+msgid  "~Remove"
 msgstr "~Rakirin"
 
-#: dp_gui_dialog.src#RID_CTX_ITEM_ENABLE.string.text
-msgid "~Enable"
+#: source/deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_ENABLE.String.Text
+msgid  "~Enable"
 msgstr "Çala~kkirin"
 
-#: dp_gui_dialog.src#RID_CTX_ITEM_DISABLE.string.text
-msgid "~Disable"
+#: source/deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_DISABLE.String.Text
+msgid  "~Disable"
 msgstr "~Neçalakkirin"
 
-#: dp_gui_dialog.src#RID_CTX_ITEM_CHECK_UPDATE.string.text
-msgid "~Update..."
+#: source/deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_CHECK_UPDATE.String.Text
+msgid  "~Update..."
 msgstr "~Rojanekirin..."
 
-#: dp_gui_dialog.src#RID_CTX_ITEM_OPTIONS.string.text
-msgid "~Options..."
+#: source/deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_OPTIONS.String.Text
+msgid  "~Options..."
 msgstr "~Vebijêrk..."
 
-#: dp_gui_dialog.src#RID_STR_ADDING_PACKAGES.string.text
-msgctxt "dp_gui_dialog.src#RID_STR_ADDING_PACKAGES.string.text"
-msgid "Adding %EXTENSION_NAME"
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_ADDING_PACKAGES.String.Text
+msgid  "Adding %EXTENSION_NAME"
 msgstr "%EXTENSION_NAME tê lêzêdekirin"
 
-#: dp_gui_dialog.src#RID_STR_REMOVING_PACKAGES.string.text
-msgid "Removing %EXTENSION_NAME"
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_REMOVING_PACKAGES.String.Text
+msgid  "Removing %EXTENSION_NAME"
 msgstr "%EXTENSION_NAME tê rakirin"
 
-#: dp_gui_dialog.src#RID_STR_ENABLING_PACKAGES.string.text
-msgid "Enabling %EXTENSION_NAME"
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_ENABLING_PACKAGES.String.Text
+msgid  "Enabling %EXTENSION_NAME"
 msgstr "%EXTENSION_NAME tê çalakkirin"
 
-#: dp_gui_dialog.src#RID_STR_DISABLING_PACKAGES.string.text
-msgid "Disabling %EXTENSION_NAME"
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_DISABLING_PACKAGES.String.Text
+msgid  "Disabling %EXTENSION_NAME"
 msgstr "%EXTENSION_NAME tê neçalakkirin"
 
-#: dp_gui_dialog.src#RID_STR_ACCEPT_LICENSE.string.text
-msgid "Accept license for %EXTENSION_NAME"
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_ACCEPT_LICENSE.String.Text
+msgid  "Accept license for %EXTENSION_NAME"
 msgstr "Ji bo %EXTENSION_NAME lîsansê bipejirîne"
 
-#: dp_gui_dialog.src#RID_STR_INSTALL_FOR_ALL.string.text
-msgid "~For all users"
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_INSTALL_FOR_ALL.String.Text
+msgid  "~For all users"
 msgstr "Ji bo ~hemû bikarhêneran"
 
-#: dp_gui_dialog.src#RID_STR_INSTALL_FOR_ME.string.text
-msgid "~Only for me"
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_INSTALL_FOR_ME.String.Text
+msgid  "~Only for me"
 msgstr "~Tene ji bo min"
 
-#: dp_gui_dialog.src#RID_STR_ERROR_UNKNOWN_STATUS.string.text
-msgid "Error: The status of this extension is unknown"
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_UNKNOWN_STATUS.String.Text
+msgid  "Error: The status of this extension is unknown"
 msgstr "Çewtî: Rewşa vê pêvekê nayê zanîn"
 
-#: dp_gui_dialog.src#RID_STR_CLOSE_BTN.string.text
-msgctxt "dp_gui_dialog.src#RID_STR_CLOSE_BTN.string.text"
-msgid "Close"
-msgstr "Bigire"
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_CLOSE_BTN.String.Text
+#, fuzzy
+msgid  "Close"
+msgstr "Girtin"
 
-#: dp_gui_dialog.src#RID_STR_EXIT_BTN.string.text
-msgid "Quit"
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_EXIT_BTN.String.Text
+#, fuzzy
+msgid  "Quit"
 msgstr "Derkeve"
 
-#: dp_gui_dialog.src#RID_STR_NO_ADMIN_PRIVILEGE.string.text
-msgid ""
-"%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME "
-"extensions are not compatible with this version and need to be updated "
-"before %PRODUCTNAME can be started.\n"
-"\n"
-"Updating of shared extension requires administrator privileges. Contact your "
-"system administrator to update the following shared extensions:"
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_NO_ADMIN_PRIVILEGE.String.Text
+msgid  "%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME extensions are not compatible with this version and need to be updated before %PRODUCTNAME can be started.\n\nUpdating of shared extension requires administrator privileges. Contact your system administrator to update the following shared extensions:"
 msgstr ""
-"%PRODUCTNAME ji bo guhertoyekî nû hate rojanekirin. Hinek pêvekên parkirî %"
-"PRODUCTNAME bi vê guhertoyê re lihev nayên û beriya %PRODUCTNAME were "
-"destpêkirin divê bên rojanekirin.\n"
-"\n"
-"Rojanekirina pêvekên parkirî pêşîniyên rêveberiyê divê. Ji bo rojanekirina "
-"pêvekên parkirî yên jêr, bi rêvebirê xwe re bikevin têkiliyê:"
 
-#: dp_gui_dialog.src#RID_STR_ERROR_MISSING_DEPENDENCIES.string.text
-msgid ""
-"The extension cannot be enabled as the following system dependencies are not "
-"fulfilled:"
-msgstr "Pêvek nayê çalakkirin ji ber kubindestên pergalê yên jêr kêm in:"
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_DEPENDENCIES.String.Text
+msgid  "The extension cannot be enabled as the following system dependencies are not fulfilled:"
+msgstr ""
 
-#: dp_gui_dialog.src#RID_STR_ERROR_MISSING_LICENSE.string.text
-msgid "This extension is disabled because you haven't accepted the license yet.\n"
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_LICENSE.String.Text
+#, fuzzy
+msgid  "This extension is disabled because you haven't accepted the license yet.\n"
 msgstr "Ev pêvek ji ber ku we hê lîsans nepejirandiye betalkirî ye.\n"
 
-#: dp_gui_dialog.src#RID_STR_SHOW_LICENSE_CMD.string.text
-msgid "Show license"
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_SHOW_LICENSE_CMD.String.Text
+msgid  "Show license"
 msgstr ""
 
-#: dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_HEADER.fixedtext.text
-msgid ""
-"Please follow these steps to proceed with the installation of the extension:"
-msgstr "Jê kerema xwe wan gavên bixebitînin ji bo sazkirina pêvekê:"
+#: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.ModalDialog.Text
+#, fuzzy
+msgid  "Extension Software License Agreement"
+msgstr "Peymana Lîsansê ya Nivîsbariya Pêvekê"
 
-#: dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1.fixedtext.text
-msgid "1."
+#: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_HEADER.FixedText.Text
+msgid  "Please follow these steps to proceed with the installation of the extension:"
+msgstr ""
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1.FixedText.Text
+#, fuzzy
+msgid  "1."
 msgstr "1."
 
-#: dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1_TXT.fixedtext.text
-msgid ""
-"Read the complete License Agreement. Use the scroll bar or the \\'Scroll "
-"Down\\' button in this dialog to view the entire license text."
+#: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1_TXT.FixedText.Text
+msgid  "Read the complete License Agreement. Use the scroll bar or the \'Scroll Down\' button in this dialog to view the entire license text."
 msgstr ""
-"Peymana Lîsansê hemû yê bixwînin. Ji bo dîtina naveroka nivîsara lîsansê "
-"bişkojka \\'Scroll Down\\' ya di vê paceyê de bi kar bînin."
 
-#: dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2.fixedtext.text
-msgid "2."
+#: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2.FixedText.Text
+#, fuzzy
+msgid  "2."
 msgstr "2."
 
-#: dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2_TXT.fixedtext.text
-msgid ""
-"Accept the License Agreement for the extension by pressing the \\'Accept\\' "
-"button."
-msgstr "Peymana Lîsansê bipejirîne bi pêlêkirina bişkojka \\'Accept\\' ve."
+#: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2_TXT.FixedText.Text
+msgid  "Accept the License Agreement for the extension by pressing the \'Accept\' button."
+msgstr ""
 
-#: dp_gui_dialog.src#RID_DLG_LICENSE.PB_LICENSE_DOWN.pushbutton.text
-msgid "~Scroll Down"
+#: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.PB_LICENSE_DOWN.PushButton.Text
+#, fuzzy
+msgid  "~Scroll Down"
 msgstr "Berjêr ~Xiş Bike"
 
-#: dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_ACCEPT.okbutton.text
-msgid "Accept"
+#: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_ACCEPT.OKButton.Text
+#, fuzzy
+msgid  "Accept"
 msgstr "Bipejirîne"
 
-#: dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_DECLINE.cancelbutton.text
-msgid "Decline"
+#: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_DECLINE.CancelButton.Text
+#, fuzzy
+msgid  "Decline"
 msgstr "Nepejirîne"
 
-#: dp_gui_dialog.src#RID_DLG_LICENSE.modaldialog.text
+#: source/deployment/gui/dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.ModalDialog.Text
 #, fuzzy
-msgctxt "dp_gui_dialog.src#RID_DLG_LICENSE.modaldialog.text"
-msgid "Extension Software License Agreement"
+msgid  "Extension Software License Agreement"
 msgstr "Peymana Lîsansê ya Nivîsbariya Pêvekê"
 
-#: dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.RID_EM_BTN_CLOSE.okbutton.text
+#: source/deployment/gui/dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.RID_EM_BTN_CLOSE.OKButton.Text
 #, fuzzy
-msgctxt "dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.RID_EM_BTN_CLOSE.okbutton.text"
-msgid "Close"
+msgid  "Close"
 msgstr "Girtin"
 
-#: dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.modaldialog.text
+#: source/deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_INSTALL_EXTENSION.WarningBox.Message
+msgid  "You are about to install the extension \'%NAME\'.\nClick \'OK\' to proceed with the installation.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_EXTENSION.WarningBox.Message
+msgid  "You are about to remove the extension \'%NAME\'.\nClick \'OK\' to remove the extension.\nClick \'Cancel\' to stop removing the extension."
+msgstr ""
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_SHARED_EXTENSION.WARNINGBOX.Message
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \'OK\' to remove the extension.\nClick \'Cancel\' to stop removing the extension."
+msgstr ""
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_ENABLE_SHARED_EXTENSION.WARNINGBOX.Message
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \'OK\' to enable the extension.\nClick \'Cancel\' to stop enabling the extension."
+msgstr ""
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_DISABLE_SHARED_EXTENSION.WARNINGBOX.Message
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \'OK\' to disable the extension.\nClick \'Cancel\' to stop disabling the extension."
+msgstr ""
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_UNSUPPORTED_PLATFORM.String.Text
+msgid  "The extension \'%Name\' does not work on this computer."
+msgstr ""
+
+#: source/deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.ModalDialog.Text
 #, fuzzy
-msgctxt "dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.modaldialog.text"
-msgid "Extension Software License Agreement"
-msgstr "Peymana Lîsansê ya Nivîsbariya Pêvekê"
-
-#: dp_gui_dialog.src#RID_WARNINGBOX_INSTALL_EXTENSION.warningbox.text
-msgid ""
-"You are about to install the extension \\'%NAME\\'.\n"
-"Click \\'OK\\' to proceed with the installation.\n"
-"Click \\'Cancel\\' to stop the installation."
-msgstr ""
-"Tu dê niha pêveka \\'%NAME\\' saz bikî.\n"
-"Ji bo destpêkirina sazkirinê pêl \\'Temam\\' bike.\n"
-"Ji bo rawestandina sazkirinê pêl \\'Betal\\' bike."
-
-#: dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_EXTENSION.warningbox.text
-msgid ""
-"You are about to remove the extension \\'%NAME\\'.\n"
-"Click \\'OK\\' to remove the extension.\n"
-"Click \\'Cancel\\' to stop removing the extension."
-msgstr ""
-"Tu dê niha pêveka \\'%NAME\\' rakî.\n"
-"Ji bo rakirina pêvekê pêl \\'Temam\\' bikin.\n"
-"Ji be betalkirina rakirina pêvekê pêl \\'Betal\\' bikin."
-
-#: dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_SHARED_EXTENSION.warningbox.text
-msgid ""
-"Make sure that no further users are working with the same %PRODUCTNAME, when "
-"changing shared extensions in a multi user environment.\n"
-"Click \\'OK\\' to remove the extension.\n"
-"Click \\'Cancel\\' to stop removing the extension."
-msgstr ""
-"Demê guherandina pêveka parvekirî bi derdora pir bikarhêner re de, kontrol "
-"bike ku êdî tu kesên din vê eynî %PRODUCTNAME ê naxebitîne.\n"
-"Ji bo rakirina pêvekê pêl \\'TEMAM\\' bike.\n"
-"Ji bo rawestandina rakirinê pêl \\'BETAL\\' bike."
-
-#: dp_gui_dialog.src#RID_WARNINGBOX_ENABLE_SHARED_EXTENSION.warningbox.text
-msgid ""
-"Make sure that no further users are working with the same %PRODUCTNAME, when "
-"changing shared extensions in a multi user environment.\n"
-"Click \\'OK\\' to enable the extension.\n"
-"Click \\'Cancel\\' to stop enabling the extension."
-msgstr ""
-"Demê guherandina pêveka parvekirî bi derdora pir bikarhêner re de, kontrol "
-"bike ku êdî tu kesên din vê eynî %PRODUCTNAME ê naxebitîne.\n"
-"Ji bo çalak kirina pêvekê pêl \\'TEMAM\\' bike.\n"
-"Ji bo rawestandina çalak kirinê pêl \\'BETAL\\' bike."
-
-#: dp_gui_dialog.src#RID_WARNINGBOX_DISABLE_SHARED_EXTENSION.warningbox.text
-msgid ""
-"Make sure that no further users are working with the same %PRODUCTNAME, when "
-"changing shared extensions in a multi user environment.\n"
-"Click \\'OK\\' to disable the extension.\n"
-"Click \\'Cancel\\' to stop disabling the extension."
-msgstr ""
-"Demê guherandina pêveka parvekirî bi derdora pir bikarhêner re de, kontrol "
-"bike ku êdî tu kesên din vê eynî %PRODUCTNAME ê naxebitîne.\n"
-"Ji bo neçalak kirina pêvekê pêl \\'TEMAM\\' bike.\n"
-"Ji bo rawestandina neçalak kirinê pêl \\'BETAL\\' bike."
-
-#: dp_gui_dialog.src#RID_STR_UNSUPPORTED_PLATFORM.string.text
-msgid "The extension \\'%Name\\' does not work on this computer."
-msgstr "Pêveka \\'%Name\\' di vê komputerê de naxebite."
-
-#: dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_ADD.pushbutton.text
-msgid "~Add..."
-msgstr "~Lêzêdekirin..."
-
-#: dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CHECK_UPDATES.pushbutton.text
-msgctxt "dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CHECK_UPDATES.pushbutton.text"
-msgid "Check for ~Updates..."
-msgstr "Li ~rojanekirinan bigere..."
-
-#: dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_FT_GET_EXTENSIONS.fixedtext.text
-msgid "Get more extensions online..."
-msgstr "Zêdetir pêvekan ji torê bîne..."
-
-#: dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_FT_PROGRESS.fixedtext.text
-msgctxt "dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_FT_PROGRESS.fixedtext.text"
-msgid "Adding %EXTENSION_NAME"
-msgstr "%EXTENSION_NAME tê lêzêdekirin"
-
-#: dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CLOSE.okbutton.text
-msgctxt "dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CLOSE.okbutton.text"
-msgid "Close"
-msgstr "Girtin"
-
-#: dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.modelessdialog.text
-msgid "Extension Manager"
-msgstr "Gerînendeyê pêvekan"
-
-#: dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_MSG.fixedtext.text
-msgid ""
-"%PRODUCTNAME has been updated to a new version. Some installed %PRODUCTNAME "
-"extensions are not compatible with this version and need to be updated "
-"before they can be used."
-msgstr ""
-"%PRODUCTNAME bi guhertoyekî nû ve hate rojanekirin. Hinek pêvekên %"
-"PRODUCTNAME bi vê guherto re lihev nayên û divê beriya bikaranînê divê bên "
-"rojanekirin."
-
-#: dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_PROGRESS.fixedtext.text
-msgctxt "dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_PROGRESS.fixedtext.text"
-msgid "Adding %EXTENSION_NAME"
-msgstr "%EXTENSION_NAME tê lêzêdekirin"
-
-#: dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CHECK_UPDATES.pushbutton.text
-msgctxt "dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CHECK_UPDATES.pushbutton.text"
-msgid "Check for ~Updates..."
-msgstr "Li ~rojanekirinan bigere..."
-
-#: dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CLOSE.pushbutton.text
-msgid "Disable all"
-msgstr "Hemûyan betal bike"
-
-#: dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.modaldialog.text
-msgid "Extension Update Required"
-msgstr "Rijanekirina Pêvekê Divê"
-
-#: dp_gui_dialog2.src#RID_QUERYBOX_INSTALL_FOR_ALL.querybox.text
-msgid ""
-"Make sure that no further users are working with the same %PRODUCTNAME, when "
-"installing an extension for all users in a multi user environment.\n"
-"\n"
-"For whom do you want to install the extension?\n"
-msgstr ""
-"Demê guherandina pêveka parvekirî bi derdora pir bikarhêner re de, kontrol "
-"bike ku êdî tu kesên din vê eynî %PRODUCTNAME ê naxebitîne.\n"
-"\n"
-"Ji bo kî tu dixwazî pêvekê saz bikî?\n"
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CHECKING.fixedtext.text
-msgid "Checking..."
-msgstr "Tê kontrolkirin..."
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_UPDATE.fixedtext.text
-msgid "~Available extension updates"
-msgstr "Rojankirinên pêvekan yên ~mevcûd"
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ALL.checkbox.text
-msgid "~Show all updates"
-msgstr "Hemû rojanekirinan ~nîşan bide"
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_DESCRIPTION.fixedline.text
-msgid "Description"
-msgstr "Rave"
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_PUBLISHER_LABEL.fixedtext.text
-msgid "Publisher:"
-msgstr "Weşanger:"
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_RELEASENOTES_LABEL.fixedtext.text
-msgid "What is new:"
-msgstr "Çi nû ye:"
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_RELEASENOTES_LINK.fixedtext.text
-msgid "Release Notes"
-msgstr "Notên Weşanê"
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_OK.pushbutton.text
-msgid "~Install"
-msgstr "Sa~zkirin"
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CLOSE.pushbutton.text
-#, fuzzy
-msgctxt "dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CLOSE.pushbutton.text"
-msgid "Close"
-msgstr "Girtin"
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ERROR.string.text
-msgid "Error"
-msgstr "Çewtî"
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NONE.string.text
-msgid "No new updates are available."
-msgstr "Rojanekirinên nû tune."
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALLABLE.string.text
-#, fuzzy
-msgid ""
-"No installable updates are available. To see ignored or disabled updates, "
-"mark the check box 'Show all updates'."
-msgstr ""
-"Tu rojanekirinên bên sazkirin tuneye. Ji bo dîtina hemû rojanekirinan, "
-"qutiya 'Hemû rojanekirinan nîşan bide' nîşan bike."
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_FAILURE.string.text
-msgid "An error occurred:"
-msgstr "Çewtiyek derket holê:"
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_UNKNOWNERROR.string.text
-msgid "Unknown error."
-msgstr "Çewtiya nenas."
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODESCRIPTION.string.text
-msgid "No more details are available for this update."
-msgstr ""
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALL.string.text
-msgid "The extension cannot be updated because:"
-msgstr "Ev pêvek nayê rojanekirin ji ber ku:"
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY.string.text
-msgid "Required OpenOffice.org version doesn't match:"
-msgstr "Bi guhertoya OpenOffice.org ya hewce re li hev nayên:"
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY_CUR_VER.string.text
-msgid "You have OpenOffice.org %VERSION"
-msgstr "Tu xwediyê OpenOffice.org %VERSION"
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_BROWSERBASED.string.text
-msgid "browser based update"
-msgstr "rojanekirina bi gerok re"
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_VERSION.string.text
-msgid "Version"
-msgstr "Guherto"
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORE.string.text
-msgid "Ignore this Update"
-msgstr ""
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORE_ALL.string.text
-msgid "Ignore all Updates"
-msgstr ""
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ENABLE.string.text
-msgid "Enable Updates"
-msgstr ""
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORED_UPDATE.string.text
-msgid "This update will be ignored.\n"
-msgstr ""
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.modaldialog.text
-msgid "Extension Update"
-msgstr "Rojanêkirina Pêvekan"
-
-#: dp_gui_updatedialog.src#RID_WARNINGBOX_UPDATE_SHARED_EXTENSION.warningbox.text
-msgid ""
-"Make sure that no further users are working with the same %PRODUCTNAME, when "
-"changing shared extensions in a multi user environment.\n"
-"Click \\'OK\\' to update the extensions.\n"
-"Click \\'Cancel\\' to stop updating the extensions."
-msgstr ""
-"Demê guherandina pêveka parvekirî bi derdora pir bikarhêner re de, kontrol "
-"bike ku êdî tu kesên din vê eynî %PRODUCTNAME ê naxebitîne.\n"
-"Ji bo rojanekirina pêvekê pêl \\'TEMAM\\' bike.\n"
-"Ji bo rawestandina rojanekirinê pêl \\'BETAL\\' bike."
-
-#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_DOWNLOADING.fixedtext.text
-msgid "Downloading extensions..."
-msgstr "Pêvek tên daxistin..."
-
-#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_RESULTS.fixedtext.text
-msgid "Result"
-msgstr "Encam"
-
-#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_OK.okbutton.text
-msgid "OK"
-msgstr "Temam"
-
-#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ABORT.cancelbutton.text
-msgid "Cancel Update"
-msgstr "Dev ji rojanekirinê berde"
-
-#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_INSTALLING.string.text
-msgid "Installing extensions..."
-msgstr "Pêvek tên sazkirin..."
-
-#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_FINISHED.string.text
-msgid "Installation finished"
-msgstr "Sazkirin bidawî bû"
-
-#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_NO_ERRORS.string.text
-msgid "No errors."
-msgstr "Çewtî tunebû."
-
-#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_DOWNLOAD.string.text
-msgid "Error while downloading extension %NAME. "
-msgstr "Dema daxistina pêveka %NAME de çewtiyek derket. "
-
-#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_THIS_ERROR_OCCURRED.string.text
-msgid "The error message is: "
-msgstr "Peyama çewtiyê eve: "
-
-#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_INSTALLATION.string.text
-msgid "Error while installing extension %NAME. "
-msgstr "Dema sazkirina pêveka %NAME de çewtiyek derket. "
-
-#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_LIC_DECLINED.string.text
-msgid "The license agreement for extension %NAME was refused. "
-msgstr "Peymana lîsansê ya pêveka %NAME hat red kirin. "
-
-#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_EXTENSION_NOINSTALL.string.text
-msgid "The extension will not be installed."
-msgstr "Pêvek wê nayê sazkirin."
-
-#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.modaldialog.text
-msgid "Download and Installation"
+msgid  "Download and Installation"
 msgstr "Daxistin û Sazkirin"
 
-#: dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.warningbox.text
-msgid ""
-"You are about to install version $NEW of the extension \\'$NAME\\'.\n"
-"The newer version $DEPLOYED is already installed.\n"
-"Click \\'OK\\' to replace the installed extension.\n"
-"Click \\'Cancel\\' to stop the installation."
+#: source/deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_DOWNLOADING.FixedText.Text
+#, fuzzy
+msgid  "Downloading extensions..."
+msgstr "Pêvek tên daxistin..."
+
+#: source/deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_RESULTS.FixedText.Text
+#, fuzzy
+msgid  "Result"
+msgstr "Encam"
+
+#: source/deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_OK.OKButton.Text
+#, fuzzy
+msgid  "OK"
+msgstr "Temam"
+
+#: source/deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ABORT.CancelButton.Text
+#, fuzzy
+msgid  "Cancel Update"
+msgstr "Dev ji rojanekirinê berde"
+
+#: source/deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_INSTALLING.String.Text
+#, fuzzy
+msgid  "Installing extensions..."
+msgstr "Pêvek tên sazkirin..."
+
+#: source/deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_FINISHED.String.Text
+#, fuzzy
+msgid  "Installation finished"
+msgstr "Sazkirin bidawî bû"
+
+#: source/deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_NO_ERRORS.String.Text
+#, fuzzy
+msgid  "No errors."
+msgstr "Çewtî tunebû."
+
+#: source/deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_DOWNLOAD.String.Text
+#, fuzzy
+msgid  "Error while downloading extension %NAME. "
+msgstr "Dema daxistina pêveka %NAME de çewtiyek derket. "
+
+#: source/deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_THIS_ERROR_OCCURRED.String.Text
+#, fuzzy
+msgid  "The error message is: "
+msgstr "Peyama çewtiyê eve: "
+
+#: source/deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_INSTALLATION.String.Text
+#, fuzzy
+msgid  "Error while installing extension %NAME. "
+msgstr "Dema sazkirina pêveka %NAME de çewtiyek derket. "
+
+#: source/deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_LIC_DECLINED.String.Text
+#, fuzzy
+msgid  "The license agreement for extension %NAME was refused. "
+msgstr "Peymana lîsansê ya pêveka %NAME hat red kirin. "
+
+#: source/deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_EXTENSION_NOINSTALL.String.Text
+#, fuzzy
+msgid  "The extension will not be installed."
+msgstr "Pêvek wê nayê sazkirin."
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.ModalDialog.Text
+#, fuzzy
+msgid  "Extension Update"
+msgstr "Rojanêkirina Pêvekan"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CHECKING.FixedText.Text
+#, fuzzy
+msgid  "Checking..."
+msgstr "Tê kontrolkirin..."
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_UPDATE.FixedText.Text
+#, fuzzy
+msgid  "~Available extension updates"
+msgstr "Rojankirinên pêvekan yên ~mevcûd"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ALL.CheckBox.Text
+#, fuzzy
+msgid  "~Show all updates"
+msgstr "Hemû rojanekirinan ~nîşan bide"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_DESCRIPTION.FixedLine.Text
+#, fuzzy
+msgid  "Description"
+msgstr "Rave"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_PUBLISHER_LABEL.FixedText.Text
+#, fuzzy
+msgid  "Publisher:"
+msgstr "Weşanger:"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_RELEASENOTES_LABEL.FixedText.Text
+#, fuzzy
+msgid  "What is new:"
+msgstr "Çi nû ye:"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_RELEASENOTES_LINK.FixedText.Text
+#, fuzzy
+msgid  "Release Notes"
+msgstr "Notên Weşanê"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_OK.PushButton.Text
+#, fuzzy
+msgid  "~Install"
+msgstr "Sa~zkirin"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CLOSE.PushButton.Text
+#, fuzzy
+msgid  "Close"
+msgstr "Girtin"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ERROR.String.Text
+#, fuzzy
+msgid  "Error"
+msgstr "Çewtî"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NONE.String.Text
+#, fuzzy
+msgid  "No new updates are available."
+msgstr "Rojanekirinên nû tune."
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALLABLE.String.Text
+msgid  "No installable updates are available. To see ignored or disabled updates, mark the check box 'Show all updates'."
 msgstr ""
-"Tu dê niha guhertoya $NEW ya pêveka \\'$NAME\\' saz bikî.\n"
-"Guhertoya nûtir $DEPLOYED jixwe saz kirî ye.\n"
-"Ji bo guherandina pêveka sazkirî pêl \\'TEMAM\\' bike.\n"
-"Ji bo rawestandina sazkirinê pêl \\'BETAL\\' bike."
 
-#: dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_LESS_DIFFERENT_NAMES.string.text
-msgid ""
-"You are about to install version $NEW of the extension \\'$NAME\\'.\n"
-"The newer version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\n"
-"Click \\'OK\\' to replace the installed extension.\n"
-"Click \\'Cancel\\' to stop the installation."
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_FAILURE.String.Text
+#, fuzzy
+msgid  "An error occurred:"
+msgstr "Çewtiyek derket holê:"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_UNKNOWNERROR.String.Text
+#, fuzzy
+msgid  "Unknown error."
+msgstr "Çewtiya nenas."
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODESCRIPTION.String.Text
+msgid  "No more details are available for this update."
 msgstr ""
-"Tu dê niha guhertoya $NEW ya pêveka \\'$NAME\\' saz bikî.\n"
-"Guhertoya nûtir $DEPLOYED, bi navê \\'$OLDNAME\\', jixwe saz kirî ye.\n"
-"Ji bo guherandina pêveka sazkirî pêl \\'TEMAM\\' bike.\n"
-"Ji bo rawestandina sazkirinê pêl \\'BETAL\\' bike."
 
-#: dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_EQUAL.warningbox.text
-msgid ""
-"You are about to install version $NEW of the extension \\'$NAME\\'.\n"
-"That version is already installed.\n"
-"Click \\'OK\\' to replace the installed extension.\n"
-"Click \\'Cancel\\' to stop the installation."
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALL.String.Text
+#, fuzzy
+msgid  "The extension cannot be updated because:"
+msgstr "Ev pêvek nayê rojanekirin ji ber ku:"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY.String.Text
+msgid  "Required Apache OpenOffice version doesn't match:"
 msgstr ""
-"Tu dê niha guhertoya $NEW ya pêveka \\'$NAME\\' saz bikî.\n"
-"Ev guherto jixwe saz kirî ye.\n"
-"Ji bo guherandina pêveka sazkirî pêl \\'TEMAM\\' bike.\n"
-"Ji bo rawestandina sazkirinê pêl \\'BETAL\\' bike."
 
-#: dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_EQUAL_DIFFERENT_NAMES.string.text
-msgid ""
-"You are about to install version $NEW of the extension \\'$NAME\\'.\n"
-"That version, named \\'$OLDNAME\\', is already installed.\n"
-"Click \\'OK\\' to replace the installed extension.\n"
-"Click \\'Cancel\\' to stop the installation."
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY_CUR_VER.String.Text
+msgid  "You have Apache OpenOffice %VERSION"
 msgstr ""
-"Tu dê niha guhertoya $NEW ya pêveka \\'$NAME\\' saz bikî.\n"
-"Ev guherto, bi navê \\'$OLDNAME\\', jixwe saz kirî ye.\n"
-"Ji bo guherandina pêveka sazkirî pêl \\'TEMAM\\' bike.\n"
-"Ji bo rawestandina sazkirinê pêl \\'BETAL\\' bike."
 
-#: dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_GREATER.warningbox.text
-msgid ""
-"You are about to install version $NEW of the extension \\'$NAME\\'.\n"
-"The older version $DEPLOYED is already installed.\n"
-"Click \\'OK\\' to replace the installed extension.\n"
-"Click \\'Cancel\\' to stop the installation."
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_BROWSERBASED.String.Text
+#, fuzzy
+msgid  "browser based update"
+msgstr "rojanekirina bi gerok re"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_VERSION.String.Text
+#, fuzzy
+msgid  "Version"
+msgstr "Guherto"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORE.String.Text
+msgid  "Ignore this Update"
 msgstr ""
-"Tu dê niha guhertoya $NEW ya pêveka \\'$NAME\\' saz bikî.\n"
-"Guhertoya kevintir $DEPLOYED jixwe saz kirî ye.\n"
-"Ji bo guherandina pêveka sazkirî pêl \\'TEMAM\\' bike.\n"
-"Ji bo rawestandina sazkirinê pêl \\'BETAL\\' bike."
 
-#: dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_GREATER_DIFFERENT_NAMES.string.text
-msgid ""
-"You are about to install version $NEW of the extension \\'$NAME\\'.\n"
-"The older version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\n"
-"Click \\'OK\\' to replace the installed extension.\n"
-"Click \\'Cancel\\' to stop the installation."
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORE_ALL.String.Text
+msgid  "Ignore all Updates"
 msgstr ""
-"Tu dê niha guhertoya $NEW ya pêveka \\'$NAME\\' saz bikî.\n"
-"Guhertoya kevintir $DEPLOYED, bi navê \\'$OLDNAME\\', jixwe saz kirî ye.\n"
-"Ji bo guherandina pêveka sazkirî pêl \\'TEMAM\\' bike.\n"
-"Ji bo rawestandina sazkirinê pêl \\'BETAL\\' bike."
 
-#~ msgid "No descriptions available for this extension."
-#~ msgstr "Ji bo vê pêvekê rave tune."
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ENABLE.String.Text
+msgid  "Enable Updates"
+msgstr ""
 
-#: dp_manager.src#RID_STR_COPYING_PACKAGE.string.text
-msgid "Copying: "
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORED_UPDATE.String.Text
+msgid  "This update will be ignored.\n"
+msgstr ""
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_WARNINGBOX_UPDATE_SHARED_EXTENSION.WarningBox.Message
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \'OK\' to update the extensions.\nClick \'Cancel\' to stop updating the extensions."
+msgstr ""
+
+#: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.ModelessDialog.Text
+#, fuzzy
+msgid  "Extension Manager"
+msgstr "Gerînendeyê pêvekan"
+
+#: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_ADD.PushButton.Text
+#, fuzzy
+msgid  "~Add..."
+msgstr "~Lêzêdekirin..."
+
+#: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CHECK_UPDATES.PushButton.Text
+#, fuzzy
+msgid  "Check for ~Updates..."
+msgstr "Li ~rojanekirinan bigere..."
+
+#: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_FT_GET_EXTENSIONS.FixedText.Text
+#, fuzzy
+msgid  "Get more extensions online..."
+msgstr "Zêdetir pêvekan ji torê bîne..."
+
+#: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_FT_PROGRESS.FixedText.Text
+#, fuzzy
+msgid  "Adding %EXTENSION_NAME"
+msgstr "%EXTENSION_NAME tê lêzêdekirin"
+
+#: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CLOSE.OKButton.Text
+#, fuzzy
+msgid  "Close"
+msgstr "Girtin"
+
+#: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.ModalDialog.Text
+#, fuzzy
+msgid  "Extension Update Required"
+msgstr "Rijanekirina Pêvekê Divê"
+
+#: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_MSG.FixedText.Text
+msgid  "%PRODUCTNAME has been updated to a new version. Some installed %PRODUCTNAME extensions are not compatible with this version and need to be updated before they can be used."
+msgstr ""
+
+#: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_PROGRESS.FixedText.Text
+#, fuzzy
+msgid  "Adding %EXTENSION_NAME"
+msgstr "%EXTENSION_NAME tê lêzêdekirin"
+
+#: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CHECK_UPDATES.PushButton.Text
+#, fuzzy
+msgid  "Check for ~Updates..."
+msgstr "Li ~rojanekirinan bigere..."
+
+#: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CLOSE.PushButton.Text
+#, fuzzy
+msgid  "Disable all"
+msgstr "Hemûyan betal bike"
+
+#: source/deployment/gui/dp_gui_dialog2.src#RID_QUERYBOX_INSTALL_FOR_ALL.QueryBox.Message
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when installing an extension for all users in a multi user environment.\n\nFor whom do you want to install the extension?\n"
+msgstr ""
+
+#: source/deployment/manager/dp_manager.src#RID_STR_COPYING_PACKAGE.String.Text
+#, fuzzy
+msgid  "Copying: "
 msgstr "Jibergirtin: "
 
-#: dp_manager.src#RID_STR_ERROR_WHILE_ADDING.string.text
-msgid "Error while adding: "
+#: source/deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_ADDING.String.Text
+#, fuzzy
+msgid  "Error while adding: "
 msgstr "Demê lê zêdekirinê de çewtî: "
 
-#: dp_manager.src#RID_STR_ERROR_WHILE_REMOVING.string.text
-msgid "Error while removing: "
+#: source/deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_REMOVING.String.Text
+#, fuzzy
+msgid  "Error while removing: "
 msgstr "Demê rakirinê de çewtî: "
 
-#: dp_manager.src#RID_STR_PACKAGE_ALREADY_ADDED.string.text
-msgid "Extension has already been added: "
+#: source/deployment/manager/dp_manager.src#RID_STR_PACKAGE_ALREADY_ADDED.String.Text
+#, fuzzy
+msgid  "Extension has already been added: "
 msgstr "Dûmahî jixwe lê hatiye zêdekirin: "
 
-#: dp_manager.src#RID_STR_NO_SUCH_PACKAGE.string.text
-msgid "There is no such extension deployed: "
+#: source/deployment/manager/dp_manager.src#RID_STR_NO_SUCH_PACKAGE.String.Text
+#, fuzzy
+msgid  "There is no such extension deployed: "
 msgstr "Li vir tu pakêtê dûmahî tuneye: "
 
-#: dp_manager.src#RID_STR_SYNCHRONIZING_REPOSITORY.string.text
-msgid "Synchronizing repository for %NAME extensions"
+#: source/deployment/manager/dp_manager.src#RID_STR_SYNCHRONIZING_REPOSITORY.String.Text
+#, fuzzy
+msgid  "Synchronizing repository for %NAME extensions"
 msgstr "Wekhevkirina çavkaniyê ji bo pêvekên %NAME"
 
-#: dp_registry.src#RID_STR_REGISTERING_PACKAGE.string.text
-msgid "Enabling: "
-msgstr "Tê çalakkirin: "
-
-#: dp_registry.src#RID_STR_REVOKING_PACKAGE.string.text
-msgid "Disabling: "
-msgstr "Tê neçalakkirin: "
-
-#: dp_registry.src#RID_STR_CANNOT_DETECT_MEDIA_TYPE.string.text
-msgid "Cannot detect media-type: "
-msgstr "Cureyê medyayê nayê tesbît kirin: "
-
-#: dp_registry.src#RID_STR_UNSUPPORTED_MEDIA_TYPE.string.text
-msgid "This media-type is not supported: "
-msgstr "Ev cûreya-nîvengî naye destek kirin: "
-
-#: dp_registry.src#RID_STR_ERROR_WHILE_REGISTERING.string.text
-msgid "An error occurred while enabling: "
-msgstr "Demê çalak kirinê de çewtiyek çêbû: "
-
-#: dp_registry.src#RID_STR_ERROR_WHILE_REVOKING.string.text
-msgid "An error occurred while disabling: "
-msgstr "Demê neçalak kirinê de çewtiyek çêbû: "
-"X-Accelerator-Marker: ~\n"
-
-#: dp_configuration.src#RID_STR_CONF_SCHEMA.string.text
-msgid "Configuration Schema"
-msgstr "Şemaya veavakirinê"
-
-#: dp_configuration.src#RID_STR_CONF_DATA.string.text
-msgid "Configuration Data"
-msgstr "Dataya veavakirinê"
-
-#: dp_component.src#RID_STR_DYN_COMPONENT.string.text
-msgid "UNO Dynamic Library Component"
-msgstr "Komponenta Pirtûkxaneya Dînamîk a UNO"
-
-#: dp_component.src#RID_STR_JAVA_COMPONENT.string.text
-msgid "UNO Java Component"
-msgstr "Komponenta UNO JAVA"
-
-#: dp_component.src#RID_STR_PYTHON_COMPONENT.string.text
-msgid "UNO Python Component"
-msgstr "Komponenta UNO Python"
-
-#: dp_component.src#RID_STR_COMPONENTS.string.text
-msgid "UNO Components"
-msgstr ""
-
-#: dp_component.src#RID_STR_RDB_TYPELIB.string.text
-msgid "UNO RDB Type Library"
-msgstr "Pitûkxaneya cûreya UNO RDB"
-
-#: dp_component.src#RID_STR_JAVA_TYPELIB.string.text
-msgid "UNO Java Type Library"
-msgstr "Pitûkxaneya cûreya UNO Java"
-
-#: dp_package.src#RID_STR_PACKAGE_BUNDLE.string.text
-msgid "Extension"
-msgstr "Pêvek"
-
-#: dp_script.src#RID_STR_BASIC_LIB.string.text
-msgid "%PRODUCTNAME Basic Library"
-msgstr "%PRODUCTNAME Pirtûkxaneya Basic"
-
-#: dp_script.src#RID_STR_DIALOG_LIB.string.text
-msgid "Dialog Library"
-msgstr "Pirtûkxaneya Diyalogan"
-
-#: dp_script.src#RID_STR_CANNOT_DETERMINE_LIBNAME.string.text
-msgid "The library name could not be determined."
-msgstr "Navê pirtûkxanê nehat kivş kirin."
-
-#: dp_script.src#RID_STR_LIBNAME_ALREADY_EXISTS.string.text
-msgid "This library name already exists. Please choose a different name."
-msgstr "Ev navê pirtûkxanê ji xwe heye. Kerema xwe ra navek din hilbijire."
-
-#: dp_help.src#RID_STR_HELP.string.text
-msgid "Help"
-msgstr "Alîkarî"
-
-#: dp_help.src#RID_STR_HELPPROCESSING_GENERAL_ERROR.string.text
-msgid "The extension cannot be installed because:\n"
-msgstr "Dûmahî nayê sazkirin ji ber ku:\n"
-
-#: dp_help.src#RID_STR_HELPPROCESSING_XMLPARSING_ERROR.string.text
-msgid "The extension will not be installed because an error occurred in the Help "
-"files:\n"
-msgstr "Pêvek nayê sazkirin ji ber ku di pela Alîkarî de çewtiyek çêbû:\n"
-
-#: dp_sfwk.src#RID_STR_SFWK_LIB.string.text
-msgid "%MACROLANG Library"
-msgstr "Pirtûkxaneya %MACROLANG"
-
-#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_1.string.text
-msgid "Extension Software License Agreement of $NAME:"
-msgstr "Peymana Lîsansa Nivîsbariya Pêvek ya $NAME"
-
-#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_2.string.text
-msgid ""
-"Read the complete License Agreement displayed above. Accept the License "
-"Agreement by typing \"yes\" on the console then press the Return key. Type "
-"\"no\" to decline and to abort the extension setup."
-msgstr ""
-"Peyman Lîsansê ya jor tê nîşandan hemû yê bixwîne. Ji bo pejirandina Peymana "
-"Lîsansê di termînalê de \"erê\" binivîse û pêl bişkojka têketinê (enter) "
-"bike. Heke tu peymanê napejirînî \"na\" binivîse û sazkirina pêvekê betal "
-"bike."
-
-#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_3.string.text
-msgid "[Enter \"yes\" or \"no\"]:"
-msgstr "[\"erê\" an \"na\" binivîse]:"
-
-#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_4.string.text
-msgid "Your input was not correct. Please enter \"yes\" or \"no\":"
-msgstr "Têketina te ne rast bû. Ji kerema xwe re \"erê\" an \"na\" binivîse:"
-
-#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.string.text
-msgid "YES"
-msgstr "ERÊ"
-
-#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_Y.string.text
-msgid "Y"
-msgstr "E"
-
-#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_NO.string.text
-msgid "NO"
-msgstr "NA"
-
-#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_N.string.text
-msgid "N"
-msgstr "N"
-
-#: unopkg.src#RID_STR_CONCURRENTINSTANCE.string.text
-msgid ""
-"unopkg cannot be started. The lock file indicates it as already running. If "
-"this does not apply, delete the lock file at:"
-msgstr ""
-"unopkg nayê destpêkirin. Pela lock dibêje ku jixwe dixebite. Heke ev neyê "
-"sepandin, pela lock jêbibin li:"
-
-#: unopkg.src#RID_STR_UNOPKG_ERROR.string.text
-msgid "ERROR: "
-msgstr "ÇEWTÎ:"
-
-#: dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_UNKNOWN.string.text
-msgid "Unknown"
+#: source/deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_UNKNOWN.String.Text
+#, fuzzy
+msgid  "Unknown"
 msgstr "Nenas"
 
-#: dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MIN.string.text
+#: source/deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MIN.String.Text
+msgid  "Extension requires at least Apache OpenOffice %VERSION"
+msgstr ""
+
+#: source/deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MAX.String.Text
+msgid  "Extension doesn't support versions greater than: Apache OpenOffice %VERSION"
+msgstr ""
+
+#: source/deployment/registry/dp_registry.src#RID_STR_REGISTERING_PACKAGE.String.Text
 #, fuzzy
-msgid "Extension requires at least OpenOffice.org %VERSION"
-msgstr "Pêvek hewcê kêmtirîn OpenOffice.org %VERSION"
+msgid  "Enabling: "
+msgstr "Tê çalakkirin: "
 
-#: dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MAX.string.text
-msgid ""
-"Extension doesn't support versions greater than: OpenOffice.org %VERSION"
-msgstr "Pêvek piştgirî nade guhertoyên ser: OpenOffice.org %VERSION"
-"X-Accelerator-Marker: ~\n"
+#: source/deployment/registry/dp_registry.src#RID_STR_REVOKING_PACKAGE.String.Text
+#, fuzzy
+msgid  "Disabling: "
+msgstr "Tê neçalakkirin: "
 
-#: setup.ulf#_APP_TITLE_.LngText.text
-msgid "Setup"
-msgstr "Sazkirin"
+#: source/deployment/registry/dp_registry.src#RID_STR_CANNOT_DETECT_MEDIA_TYPE.String.Text
+#, fuzzy
+msgid  "Cannot detect media-type: "
+msgstr "Cureyê medyayê nayê tesbît kirin: "
 
-#: setup.ulf#_APP_PROD_TITLE_.LngText.text
-msgid "The %PRODUCTNAME Setup"
-msgstr "Sazkirina %PRODUCTNAME"
+#: source/deployment/registry/dp_registry.src#RID_STR_UNSUPPORTED_MEDIA_TYPE.String.Text
+#, fuzzy
+msgid  "This media-type is not supported: "
+msgstr "Ev cûreya-nîvengî naye destek kirin: "
 
-#: setup.ulf#_OUTOFMEM_.LngText.text
-msgid "Out of Memory"
-msgstr "Bîr Têrê nake"
+#: source/deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REGISTERING.String.Text
+#, fuzzy
+msgid  "An error occurred while enabling: "
+msgstr "Demê çalak kirinê de çewtiyek çêbû: "
 
-#: setup.ulf#_NOMSI_.LngText.text
-msgid "Setup was unable to find the msi package."
-msgstr "Sazkar paketa msi nabîne"
+#: source/deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REVOKING.String.Text
+#, fuzzy
+msgid  "An error occurred while disabling: "
+msgstr "Demê neçalak kirinê de çewtiyek çêbû: "
 
-#: setup.ulf#_USER_CANCELLED_.LngText.text
-msgid "Setup was cancelled"
-msgstr "Sazkirin hat betalkirin"
+#: source/deployment/registry/component/dp_component.src#RID_STR_DYN_COMPONENT.String.Text
+#, fuzzy
+msgid  "UNO Dynamic Library Component"
+msgstr "Komponenta Pirtûkxaneya Dînamîk a UNO"
 
-#: setup.ulf#_REQUIRES_ADMIN_PRIV_.LngText.text
-msgid ""
-"Administrator privileges are required for upgrading the Windows Installer."
-msgstr "Ji bo bilind kirina Sazgera Windows e mafê rêvebiriyê pêwîste."
+#: source/deployment/registry/component/dp_component.src#RID_STR_JAVA_COMPONENT.String.Text
+#, fuzzy
+msgid  "UNO Java Component"
+msgstr "Komponenta UNO JAVA"
 
-#: setup.ulf#_FILE_NOT_FOUND_.LngText.text
-msgid "Setup was unable to find the file '%s'."
-msgstr "Sazkêr pela '%s' nedît"
+#: source/deployment/registry/component/dp_component.src#RID_STR_PYTHON_COMPONENT.String.Text
+#, fuzzy
+msgid  "UNO Python Component"
+msgstr "Komponenta UNO Python"
 
-#: setup.ulf#_INVALID_PARAM_.LngText.text
-msgid "Invalid command line option '%s'. Please use '/?' for help."
-msgstr ""
-"Rêzika vebijarka fermana nederbazbar '%s'. Kerema xwe ra ji bo alîkariye "
-"'/?' bikarbînin."
-
-#: setup.ulf#_SETUP_TO_OLD_.LngText.text
-msgid ""
-"This package requires at least the version '%s' of the Windows Installer. \n"
-"You have Windows Installer '%s' on your system!"
-msgstr ""
-"Ev pakêt hewceyê kêmtirîn guhertoya Sazkerê Windows '%s' e.\n"
-"Di pergala ve de Sazkerî Windows '%s' sazkiriye!"
-
-#: setup.ulf#_SETUP_NOT_FOUND_.LngText.text
-msgid ""
-"This package requires the Windows Installer. \n"
-"You need at least Windows Installer '%s' on your system!"
-msgstr ""
-"Ev pakêt hewcê Sazkerê Windows e. \n"
-"Divê di pergala ve de kêmtirîn Sazkerê Windows '%s' sazkirî be!"
-
-#: setup.ulf#_USAGE_.LngText.text
-msgid ""
-"Usage:\n"
-"   /? :  Shows this dialog.\n"
-"   /a :  Performs an administrative installation.\n"
-"   /j[u|m] :  Performs an advertising installation.\n"
-"   /q[n] : Do not show any user interface (silent mode).\n"
-msgstr ""
-"Bikaranîn:\n"
-"   /? :  Ev diyalogê rava dike.\n"
-"   /a :  Sazkirina rêvebirekî pêk tîne.\n"
-"   /j[u|m]:  Sazkirinek mînak pêk tîne.\n"
-"   /q[n] : Ravakirina rûçikê bikarhinêr (rêbaza bêdeng)\n"
-
-#: setup.ulf#_ALREADY_RUNNING_.LngText.text
-msgid "There is already a setup process running."
-msgstr "Jixwe Sazkareke Din Dixebite."
-
-#: setup.ulf#_UNKNOWN_ERROR_.LngText.text
-msgid "An Unknown Error occured!"
-msgstr "Çewtiyele Nayê Zanîn derkete holê!"
-
-#: setup.ulf#_INVALID_PROFILE_.LngText.text
-msgid "Invalid or incomplete profile."
-msgstr "Profîla nederbasdar an jî kêm."
-
-#: setup.ulf#_UNKNOWN_LANG_.LngText.text
-msgid "Unknown Language: %d"
-msgstr "Zimanê Nayê Zanîn: %d"
-
-#: setup.ulf#_LANGUAGE_ZH_TW_.LngText.text
-msgid "Chinese (traditional)"
-msgstr "Çînî (kevneşop)"
-
-#: setup.ulf#_LANGUAGE_CS_.LngText.text
-msgid "Czech"
-msgstr "Çekî"
-
-#: setup.ulf#_LANGUAGE_DA_.LngText.text
-msgid "Danish"
-msgstr "Danîmarkî"
-
-#: setup.ulf#_LANGUAGE_DE_DE_.LngText.text
-msgid "German (Germany)"
-msgstr "Almanî (Almanya)"
-
-#: setup.ulf#_LANGUAGE_EL_.LngText.text
-msgid "Greek"
-msgstr "Yewnanî"
-
-#: setup.ulf#_LANGUAGE_EN_US_.LngText.text
-msgid "English (USA)"
-msgstr "Îngilîzî (DYE)"
-
-#: setup.ulf#_LANGUAGE_ES_.LngText.text
-msgid "Spanish (Spain)"
-msgstr "Spanî (Spanya)"
-
-#: setup.ulf#_LANGUAGE_FI_.LngText.text
-msgid "Finnish"
-msgstr "Fînî"
-
-#: setup.ulf#_LANGUAGE_FR_FR_.LngText.text
-msgid "French (France)"
-msgstr "Fransî (Fransa)"
-
-#: setup.ulf#_LANGUAGE_HE_.LngText.text
-msgid "Hebrew"
-msgstr "Ibranî"
-
-#: setup.ulf#_LANGUAGE_HU_.LngText.text
-msgid "Hungarian"
-msgstr "Macarî"
-
-#: setup.ulf#_LANGUAGE_IT_IT_.LngText.text
-msgid "Italian (Italy)"
-msgstr "Italî (İtalya)"
-
-#: setup.ulf#_LANGUAGE_JA_.LngText.text
-msgid "Japanese"
-msgstr "Japonî"
-
-#: setup.ulf#_LANGUAGE_KO_.LngText.text
-msgid "Korean"
-msgstr "Koreyî"
-
-#: setup.ulf#_LANGUAGE_NL_NL_.LngText.text
-msgid "Dutch (Netherlands)"
-msgstr "Holandî (Hollanda)"
-
-#: setup.ulf#_LANGUAGE_NO_NO_.LngText.text
-msgid "Norwegian (Bokmål)"
-msgstr "Norveçî (Bokmål)"
-
-#: setup.ulf#_LANGUAGE_PL_.LngText.text
-msgid "Polish"
-msgstr "Polonî"
-
-#: setup.ulf#_LANGUAGE_PT_BR_.LngText.text
-msgid "Portuguese (Brazil)"
-msgstr "Portekîzî (Brazil)"
-
-#: setup.ulf#_LANGUAGE_RU_.LngText.text
-msgid "Russian"
-msgstr "Rusî"
-
-#: setup.ulf#_LANGUAGE_SK_.LngText.text
-msgid "Slovak"
+#: source/deployment/registry/component/dp_component.src#RID_STR_COMPONENTS.String.Text
+msgid  "UNO Components"
 msgstr ""
 
-#: setup.ulf#_LANGUAGE_SV_SE_.LngText.text
-msgid "Swedish (Sweden)"
-msgstr "Swêdî (Swêd)"
+#: source/deployment/registry/component/dp_component.src#RID_STR_RDB_TYPELIB.String.Text
+#, fuzzy
+msgid  "UNO RDB Type Library"
+msgstr "Pitûkxaneya cûreya UNO RDB"
 
-#: setup.ulf#_LANGUAGE_TH_.LngText.text
-msgid "Thai"
-msgstr "Tayî"
+#: source/deployment/registry/component/dp_component.src#RID_STR_JAVA_TYPELIB.String.Text
+#, fuzzy
+msgid  "UNO Java Type Library"
+msgstr "Pitûkxaneya cûreya UNO Java"
 
-#: setup.ulf#_LANGUAGE_TR_.LngText.text
-msgid "Turkish"
-msgstr "Tirkî"
+#: source/deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_SCHEMA.String.Text
+#, fuzzy
+msgid  "Configuration Schema"
+msgstr "Şemaya veavakirinê"
 
-#: setup.ulf#_LANGUAGE_ET_.LngText.text
-msgid "Estonian"
-msgstr "Estonî"
+#: source/deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_DATA.String.Text
+#, fuzzy
+msgid  "Configuration Data"
+msgstr "Dataya veavakirinê"
 
-#: setup.ulf#_LANGUAGE_ZH_CN_.LngText.text
-msgid "Chinese (Simplified)"
-msgstr "Çîniya Hesan"
+#: source/deployment/registry/help/dp_help.src#RID_STR_HELP.String.Text
+#, fuzzy
+msgid  "Help"
+msgstr "Alîkarî"
 
-#: setup.ulf#_LANGUAGE_PT_PT_.LngText.text
-msgid "Portuguese (Portugal)"
-msgstr "Portekîzî (Portugal)"
+#: source/deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_GENERAL_ERROR.String.Text
+#, fuzzy
+msgid  "The extension cannot be installed because:\n"
+msgstr "Dûmahî nayê sazkirin ji ber ku:\n"
 
-#~ msgid "Slovakian"
-#~ msgstr "Slovakî"
+#: source/deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_XMLPARSING_ERROR.String.Text
+msgid  "The extension will not be installed because an error occurred in the Help files:\n"
+msgstr ""
 
-#: rebasegui.ulf#_APP_TITLE_.LngText.text
-msgid "Installation Status"
+#: source/deployment/registry/package/dp_package.src#RID_STR_PACKAGE_BUNDLE.String.Text
+#, fuzzy
+msgid  "Extension"
+msgstr "Pêvek"
+
+#: source/deployment/registry/script/dp_script.src#RID_STR_BASIC_LIB.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Basic Library"
+msgstr "%PRODUCTNAME Pirtûkxaneya Basic"
+
+#: source/deployment/registry/script/dp_script.src#RID_STR_DIALOG_LIB.String.Text
+#, fuzzy
+msgid  "Dialog Library"
+msgstr "Pirtûkxaneya Diyalogan"
+
+#: source/deployment/registry/script/dp_script.src#RID_STR_CANNOT_DETERMINE_LIBNAME.String.Text
+#, fuzzy
+msgid  "The library name could not be determined."
+msgstr "Navê pirtûkxanê nehat kivş kirin."
+
+#: source/deployment/registry/script/dp_script.src#RID_STR_LIBNAME_ALREADY_EXISTS.String.Text
+#, fuzzy
+msgid  "This library name already exists. Please choose a different name."
+msgstr "Ev navê pirtûkxanê ji xwe heye. Kerema xwe ra navek din hilbijire."
+
+#: source/deployment/registry/sfwk/dp_sfwk.src#RID_STR_SFWK_LIB.String.Text
+#, fuzzy
+msgid  "%MACROLANG Library"
+msgstr "Pirtûkxaneya %MACROLANG"
+
+#: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_1.String.Text
+#, fuzzy
+msgid  "Extension Software License Agreement of $NAME:"
+msgstr "Peymana Lîsansa Nivîsbariya Pêvek ya $NAME"
+
+#: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_2.String.Text
+msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing "yes" on the console then press the Return key. Type "no" to decline and to abort the extension setup."
+msgstr ""
+
+#: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_3.String.Text
+msgid  "[Enter "yes" or "no"]:"
+msgstr ""
+
+#: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_4.String.Text
+msgid  "Your input was not correct. Please enter "yes" or "no":"
+msgstr ""
+
+#: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.String.Text
+#, fuzzy
+msgid  "YES"
+msgstr "ERÊ"
+
+#: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_Y.String.Text
+#, fuzzy
+msgid  "Y"
+msgstr "E"
+
+#: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_NO.String.Text
+#, fuzzy
+msgid  "NO"
+msgstr "NA"
+
+#: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_N.String.Text
+#, fuzzy
+msgid  "N"
+msgstr "N"
+
+#: source/deployment/unopkg/unopkg.src#RID_STR_CONCURRENTINSTANCE.String.Text
+msgid  "unopkg cannot be started. The lock file indicates it as already running. If this does not apply, delete the lock file at:"
+msgstr ""
+
+#: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ERROR.String.Text
+#, fuzzy
+msgid  "ERROR: "
+msgstr "ÇEWTÎ:"
+
+#: source/migration/wizard.src#DLG_FIRSTSTART_WIZARD.ModalDialog.Text
+#, fuzzy
+msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Bi xêr hatî %PRODUCTNAME %PRODUCTVERSION"
+
+#: source/migration/wizard.src#STR_STATE_WELCOME.String.Text
+#, fuzzy
+msgid  "Welcome"
+msgstr "Bi xêr hatî"
+
+#: source/migration/wizard.src#STR_STATE_LICENSE.String.Text
+#, fuzzy
+msgid  "License Agreement"
+msgstr "Peyama Lîsansê"
+
+#: source/migration/wizard.src#STR_STATE_MIGRATION.String.Text
+#, fuzzy
+msgid  "Personal Data"
+msgstr "Daneyên Şexsî"
+
+#: source/migration/wizard.src#STR_STATE_USER.String.Text
+#, fuzzy
+msgid  "User name"
+msgstr "Navê bikarhêner"
+
+#: source/migration/wizard.src#STR_STATE_UPDATE_CHECK.String.Text
+#, fuzzy
+msgid  "Online Update"
+msgstr "Sazkirina ji Torê"
+
+#: source/migration/wizard.src#STR_STATE_REGISTRATION.String.Text
+#, fuzzy
+msgid  "Registration"
+msgstr "Tomarkirin"
+
+#: source/migration/wizard.src#STR_WELCOME_MIGRATION.String.Text
+msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
+msgstr ""
+
+#: source/migration/wizard.src#STR_WELCOME_WITHOUT_LICENSE.String.Text
+msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
+msgstr ""
+
+#: source/migration/wizard.src#STR_FINISH.String.Text
+#, fuzzy
+msgid  "~Finish"
+msgstr "~Dawî"
+
+#: source/migration/wizard.src#STR_REGISTRATION_OOO.String.Text
+msgid  "You now have the opportunity to support and contribute to the fastest growing open source community in the world.\n\nHelp us prove that %PRODUCTNAME has already gained significant market share by registering.\n\nRegistering is voluntary and without obligation."
+msgstr ""
+
+#: source/migration/wizard.src#ERRBOX_REG_NOSYSBROWSER.ErrorBox.Message
+msgid  "An error occurred in starting the web browser.\nPlease check the %PRODUCTNAME and web browser settings."
+msgstr ""
+
+#: source/migration/wizard.src#QB_ASK_DECLINE.QueryBox.Message
+#, fuzzy
+msgid  "Do you really want to decline?"
+msgstr "Tu mîsoger dixwazî red bikî?"
+
+#: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_HEADER.FixedText.Text
+#, fuzzy
+msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Bi xêr hatî %PRODUCTNAME %PRODUCTVERSION"
+
+#: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_BODY.FixedText.Text
+msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
+msgstr ""
+
+#: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_HEADER.FixedText.Text
+#, fuzzy
+msgid  "Please follow these steps to accept the license"
+msgstr "Ji bo pejirandina lîsansê, fermo wan gavan bişopîne"
+
+#: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1.FixedText.Text
+#, fuzzy
+msgid  "1."
+msgstr "1."
+
+#: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1_TXT.FixedText.Text
+msgid  "View the complete License Agreement. Please use the scrollbar or the '%PAGEDOWN' button in this dialog to view the entire license text."
+msgstr ""
+
+#: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2.FixedText.Text
+#, fuzzy
+msgid  "2."
+msgstr "2."
+
+#: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2_TXT.FixedText.Text
+#, fuzzy
+msgid  "Click 'Accept' to accept the terms of the Agreement."
+msgstr "Ji bo pejirandina Peymanname 'Bipejire' bitike."
+
+#: source/migration/wizard.src#TP_LICENSE.PB_LICENSE_DOWN.PushButton.Text
+#, fuzzy
+msgid  "Scroll Do~wn"
+msgstr "Ber~jêr Bikişîne"
+
+#: source/migration/wizard.src#STR_LICENSE_ACCEPT.String.Text
+#, fuzzy
+msgid  "~Accept"
+msgstr "~Pejirandin"
+
+#: source/migration/wizard.src#STR_LICENSE_DECLINE.String.Text
+#, fuzzy
+msgid  "~Decline"
+msgstr "~Redkirin"
+
+#: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_HEADER.FixedText.Text
+#, fuzzy
+msgid  "Transfer personal data"
+msgstr "Veguheztina dataya şexsî"
+
+#: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.FixedText.Text
+msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\n\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
+msgstr ""
+
+#: source/migration/wizard.src#TP_MIGRATION.CB_MIGRATION.CheckBox.Text
+#, fuzzy
+msgid  "Transfer personal data"
+msgstr "Veguheztina dataya şexsî"
+
+#: source/migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_HEADER.FixedText.Text
+#, fuzzy
+msgid  "Online Update"
+msgstr "Sazkirina ji Torê"
+
+#: source/migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_BODY.FixedText.Text
+msgid  "%PRODUCTNAME searches automatically at regular intervals for new versions.\nIn doing so online update does not transfer personal data.\nAs soon as a new version is available, you will be notified.\n\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
+msgstr ""
+
+#: source/migration/wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.CheckBox.Text
+#, fuzzy
+msgid  "~Check for updates automatically"
+msgstr "~Jinûvebûnan bixwegerî vebinêre"
+
+#: source/migration/wizard.src#TP_USER.FT_USER_HEADER.FixedText.Text
+#, fuzzy
+msgid  "Provide your full name and initials below"
+msgstr "Navê xwe yê tam û pêşîniyan li jêr binivîse"
+
+#: source/migration/wizard.src#TP_USER.FT_USER_BODY.FixedText.Text
+msgid  "The user name will be used in the document properties, templates and when you record changes made to documents."
+msgstr ""
+
+#: source/migration/wizard.src#TP_USER.FT_USER_FIRST.FixedText.Text
+#, fuzzy
+msgid  "~First name"
+msgstr "~Nav"
+
+#: source/migration/wizard.src#TP_USER.FT_USER_LAST.FixedText.Text
+#, fuzzy
+msgid  "~Last name"
+msgstr "~Paşnav"
+
+#: source/migration/wizard.src#TP_USER.FT_USER_INITIALS.FixedText.Text
+#, fuzzy
+msgid  "~Initials"
+msgstr "~Pêşînî"
+
+#: source/migration/wizard.src#TP_USER.FT_USER_FATHER.FixedText.Text
+#, fuzzy
+msgid  "~Father's name"
+msgstr "Navê ~bavî"
+
+#: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_HEADER.FixedText.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Registration"
+msgstr "Tomarkirina %PRODUCTNAME"
+
+#: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.FixedText.Text
+msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\n\nIf you register, we can inform you about new developments concerning this product."
+msgstr ""
+
+#: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.RadioButton.Text
+#, fuzzy
+msgid  "I want to register ~now"
+msgstr "Ez niha dixwazim qeyd bikim."
+
+#: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_LATER.RadioButton.Text
+#, fuzzy
+msgid  "I want to register ~later"
+msgstr "Ez ~piştre dixwazim qeyd bikim."
+
+#: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NEVER.RadioButton.Text
+#, fuzzy
+msgid  "I do not want to ~register"
+msgstr "Ez naxwazim ~qeyd bikim."
+
+#: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.FixedText.Text
+msgid  "We hope you enjoy working with %PRODUCTNAME.\n\nTo exit the wizard, click 'Finish'."
+msgstr ""
+
+#: win32/source/rebase/rebasegui.ulf#%APP_TITLE%
+#, fuzzy
+msgid  "Installation Status"
 msgstr "Rewşa Sazkirinê"
 
-#: rebasegui.ulf#_MSG_OPTIMIZED_FOR_CLIENT_.LngText.text
-msgid "Installation is optimized for clients."
+#: win32/source/rebase/rebasegui.ulf#%MSG_OPTIMIZED_FOR_CLIENT%
+#, fuzzy
+msgid  "Installation is optimized for clients."
 msgstr "Sazkirin ji bo bikarhêneran hatiye tekûz kirin."
 
-#: rebasegui.ulf#_MSG_OPTIMIZED_FOR_SERVER_.LngText.text
-msgid "Installation is optimized for servers."
+#: win32/source/rebase/rebasegui.ulf#%MSG_OPTIMIZED_FOR_SERVER%
+#, fuzzy
+msgid  "Installation is optimized for servers."
 msgstr "Sazkirin ji bo pêşkêşkeran hatiye tekûz kirin."
 
-#: rebasegui.ulf#_MSG_NO_INSTALLATION_FOUND_.LngText.text
-msgid "Cannot find Office installation."
+#: win32/source/rebase/rebasegui.ulf#%MSG_NO_INSTALLATION_FOUND%
+#, fuzzy
+msgid  "Cannot find Office installation."
 msgstr "Nikare sazkirina Office bibîne."
+
+#: win32/source/setup/setup.ulf#%APP_PROD_TITLE%
+#, fuzzy
+msgid  "The %PRODUCTNAME Setup"
+msgstr "Sazkirina %PRODUCTNAME"
+
+#: win32/source/setup/setup.ulf#%OUTOFMEM%
+#, fuzzy
+msgid  "Out of Memory"
+msgstr "Bîr Têrê nake"
+
+#: win32/source/setup/setup.ulf#%NOMSI%
+#, fuzzy
+msgid  "Setup was unable to find the msi package."
+msgstr "Sazkar paketa msi nabîne"
+
+#: win32/source/setup/setup.ulf#%USER_CANCELLED%
+#, fuzzy
+msgid  "Setup was cancelled"
+msgstr "Sazkirin hat betalkirin"
+
+#: win32/source/setup/setup.ulf#%REQUIRES_ADMIN_PRIV%
+msgid  "Administrator privileges are required for upgrading the Windows Installer."
+msgstr ""
+
+#: win32/source/setup/setup.ulf#%FILE_NOT_FOUND%
+#, fuzzy
+msgid  "Setup was unable to find the file '%s'."
+msgstr "Sazkêr pela '%s' nedît"
+
+#: win32/source/setup/setup.ulf#%INVALID_PARAM%
+msgid  "Invalid command line option '%s'. Please use '/?' for help."
+msgstr ""
+
+#: win32/source/setup/setup.ulf#%SETUP_TO_OLD%
+msgid  "This package requires at least the version '%s' of the Windows Installer. \nYou have Windows Installer '%s' on your system!"
+msgstr ""
+
+#: win32/source/setup/setup.ulf#%SETUP_NOT_FOUND%
+msgid  "This package requires the Windows Installer. \nYou need at least Windows Installer '%s' on your system!"
+msgstr ""
+
+#: win32/source/setup/setup.ulf#%USAGE%
+msgid  "Usage:\n   /? :  Shows this dialog.\n   /a :  Performs an administrative installation.\n   /j[u|m] :  Performs an advertising installation.\n   /q[n] : Do not show any user interface (silent mode).\n"
+msgstr ""
+
+#: win32/source/setup/setup.ulf#%ALREADY_RUNNING%
+#, fuzzy
+msgid  "There is already a setup process running."
+msgstr "Jixwe Sazkareke Din Dixebite."
+
+#: win32/source/setup/setup.ulf#%UNKNOWN_ERROR%
+#, fuzzy
+msgid  "An Unknown Error occured!"
+msgstr "Çewtiyele Nayê Zanîn derkete holê!"
+
+#: win32/source/setup/setup.ulf#%INVALID_PROFILE%
+#, fuzzy
+msgid  "Invalid or incomplete profile."
+msgstr "Profîla nederbasdar an jî kêm."
+
+#: win32/source/setup/setup.ulf#%UNKNOWN_LANG%
+#, fuzzy
+msgid  "Unknown Language: %d"
+msgstr "Zimanê Nayê Zanîn: %d"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_ZH_TW%
+#, fuzzy
+msgid  "Chinese (traditional)"
+msgstr "Çînî (kevneşop)"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_CS%
+#, fuzzy
+msgid  "Czech"
+msgstr "Çekî"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_DA%
+#, fuzzy
+msgid  "Danish"
+msgstr "Danîmarkî"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_DE_DE%
+#, fuzzy
+msgid  "German (Germany)"
+msgstr "Almanî (Almanya)"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_EL%
+#, fuzzy
+msgid  "Greek"
+msgstr "Yewnanî"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_EN_US%
+#, fuzzy
+msgid  "English (USA)"
+msgstr "Îngilîzî (DYE)"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_ES%
+#, fuzzy
+msgid  "Spanish (Spain)"
+msgstr "Spanî (Spanya)"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_FI%
+#, fuzzy
+msgid  "Finnish"
+msgstr "Fînî"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_FR_FR%
+#, fuzzy
+msgid  "French (France)"
+msgstr "Fransî (Fransa)"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_HE%
+#, fuzzy
+msgid  "Hebrew"
+msgstr "Ibranî"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_HU%
+#, fuzzy
+msgid  "Hungarian"
+msgstr "Macarî"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_IT_IT%
+#, fuzzy
+msgid  "Italian (Italy)"
+msgstr "Italî (İtalya)"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_JA%
+#, fuzzy
+msgid  "Japanese"
+msgstr "Japonî"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_KO%
+#, fuzzy
+msgid  "Korean"
+msgstr "Koreyî"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_NL_NL%
+#, fuzzy
+msgid  "Dutch (Netherlands)"
+msgstr "Holandî (Hollanda)"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_NO_NO%
+#, fuzzy
+msgid  "Norwegian (Bokmål)"
+msgstr "Norveçî (Bokmål)"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_PL%
+#, fuzzy
+msgid  "Polish"
+msgstr "Polonî"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_PT_BR%
+#, fuzzy
+msgid  "Portuguese (Brazil)"
+msgstr "Portekîzî (Brazil)"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_RU%
+#, fuzzy
+msgid  "Russian"
+msgstr "Rusî"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_SK%
+msgid  "Slovak"
+msgstr ""
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_SV_SE%
+#, fuzzy
+msgid  "Swedish (Sweden)"
+msgstr "Swêdî (Swêd)"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_TH%
+#, fuzzy
+msgid  "Thai"
+msgstr "Tayî"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_TR%
+#, fuzzy
+msgid  "Turkish"
+msgstr "Tirkî"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_ET%
+#, fuzzy
+msgid  "Estonian"
+msgstr "Estonî"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_ZH_CN%
+#, fuzzy
+msgid  "Chinese (Simplified)"
+msgstr "Çîniya Hesan"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_PT_PT%
+#, fuzzy
+msgid  "Portuguese (Portugal)"
+msgstr "Portekîzî (Portugal)"
+
+#: win32/source/setup/setup.ulf#%APP_TITLE%
+#, fuzzy
+msgid  "Setup"
+msgstr "Sazkirin"

@@ -1,1744 +1,1676 @@
-"X-Accelerator-Marker: ~\n"
-
-#: dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_ROW.toolboxitem.text
-msgid "Insert Row"
-msgstr "Mewnosod Rhes"
-
-#: dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_COL.toolboxitem.text
-msgid "Insert Series"
-msgstr "Mewnosod Cyfres"
-
-#: dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_TEXT_COL.toolboxitem.text
-msgid "Insert Text Column"
-msgstr "Mewnosod Colofn Testun"
-
-#: dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_DELETE_ROW.toolboxitem.text
-msgid "Delete Row"
-msgstr "Dileu Rhes"
-
-#: dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_DELETE_COL.toolboxitem.text
-msgid "Delete Series"
-msgstr "Dileu Cyfres"
-
-#: dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_SWAP_COL.toolboxitem.text
-msgid "Move Series Right"
-msgstr "Symud Cyfres i'r Dde"
-
-#: dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_SWAP_ROW.toolboxitem.text
-msgid "Move Row Down"
-msgstr "Symud Cyfres i Lawr"
-
-#: dlg_DataEditor.src#DLG_DIAGRAM_DATA.modaldialog.text
-msgid "Data Table"
-msgstr "Tabl Data"
-
-#: dlg_DataSource.src#DLG_DATA_SOURCE.tabdialog.text
-msgid "Data Ranges"
-msgstr "Ystod Data"
-
-#: dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_AXIS.fixedline.text
-msgctxt "dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_AXIS.fixedline.text"
-msgid "Axes"
-msgstr "Prif echel"
-
-#: dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_GRID.fixedline.text
-msgid "Major grids"
-msgstr "Prif grid"
-
-#: dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_X_PRIMARY.checkbox.text
-msgctxt "dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_X_PRIMARY.checkbox.text"
-msgid "~X axis"
-msgstr "Echel ~X"
-
-#: dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Y_PRIMARY.checkbox.text
-msgctxt "dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Y_PRIMARY.checkbox.text"
-msgid "~Y axis"
-msgstr "Echel ~Y"
-
-#: dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Z_PRIMARY.checkbox.text
-msgctxt "dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Z_PRIMARY.checkbox.text"
-msgid "~Z axis"
-msgstr "Echel ~Z"
-
-#: dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_AXIS.fixedline.text
-msgid "Secondary axes"
-msgstr "Echel eilradd"
-
-#: dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_GRID.fixedline.text
-msgid "Minor grids"
-msgstr "Grid lleiaf"
-
-#: dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_NAME.pageitem.text
-msgctxt "dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_NAME.pageitem.text"
-msgid "Font"
-msgstr "Font"
-
-#: dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_EFFECTS.pageitem.text
-msgctxt "dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_EFFECTS.pageitem.text"
-msgid "Font Effects"
-msgstr "Effeithiau"
-
-#: dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_POSITION.pageitem.text
-msgid "Font Position"
-msgstr "Font Position"
-
-#: dlg_ShapeFont.src#DLG_SHAPE_FONT.tabdialog.text
-msgid "Character"
-msgstr "Nod"
-
-#: dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_STD_PARAGRAPH.pageitem.text
-msgid "Indents & Spacing"
-msgstr "Mewnoliad a Bylchu"
-
-#: dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_ALIGN_PARAGRAPH.pageitem.text
-msgctxt "dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_ALIGN_PARAGRAPH.pageitem.text"
-msgid "Alignment"
-msgstr "Aliniad"
-
-#: dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_PARA_ASIAN.pageitem.text
-msgctxt "dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_PARA_ASIAN.pageitem.text"
-msgid "Asian Typography"
-msgstr "Typograffeg Asiaidd"
-
-#: dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_TABULATOR.pageitem.text
-msgid "Tab"
-msgstr "Tab"
-
-#: dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.tabdialog.text
-msgid "Paragraph"
-msgstr "Paragraph"
-
-#: dlg_View3D.src#DLG_3D_VIEW.tabdialog.text
-msgid "3D View"
-msgstr "Golwg 3D"
-
-#: res_BarGeometry.src#LB_BAR_GEOMETRY.1.stringlist.text
-msgid "Box"
-msgstr "Blwch"
-
-#: res_BarGeometry.src#LB_BAR_GEOMETRY.2.stringlist.text
-msgid "Cylinder"
-msgstr "Silindr"
-
-#: res_BarGeometry.src#LB_BAR_GEOMETRY.3.stringlist.text
-msgid "Cone"
-msgstr "Con"
-
-#: res_BarGeometry.src#LB_BAR_GEOMETRY.4.stringlist.text
-msgid "Pyramid"
-msgstr "Pyramid"
-
-#: res_TextSeparator.src#LB_TEXT_SEPARATOR.1.stringlist.text
-msgid "Space"
-msgstr "Bwlch"
-
-#: res_TextSeparator.src#LB_TEXT_SEPARATOR.2.stringlist.text
-msgid "Comma"
-msgstr "Atalnod"
-
-#: res_TextSeparator.src#LB_TEXT_SEPARATOR.3.stringlist.text
-msgid "Semicolon"
-msgstr "Hanner colon"
-
-#: res_TextSeparator.src#LB_TEXT_SEPARATOR.4.stringlist.text
-msgid "New line"
-msgstr "Llinell newydd"
-
-#: Strings.src#STR_DLG_CHART_WIZARD.string.text
-msgid "Chart Wizard"
-msgstr "Dewin Siart"
-
-#: Strings.src#STR_DLG_SMOOTH_LINE_PROPERTIES.string.text
-msgid "Smooth Lines"
-msgstr "Llinellau Llyfn"
-
-#: Strings.src#STR_DLG_NUMBERFORMAT_FOR_PERCENTAGE_VALUE.string.text
-msgid "Number Format for Percentage Value"
-msgstr "Fformat Rhif Gwerth Canran"
-
-#: Strings.src#STR_PAGE_CHARTTYPE.string.text
-msgid "Chart Type"
-msgstr "Math o Siart"
-
-#: Strings.src#STR_PAGE_DATA_RANGE.string.text
-msgid "Data Range"
-msgstr "Ystod Data"
-
-#: Strings.src#STR_PAGE_CHART_ELEMENTS.string.text
-msgid "Chart Elements"
-msgstr "Elfennau Siart"
-
-#: Strings.src#STR_PAGE_CHART_LOCATION.string.text
-msgid "Chart Location"
-msgstr "Lleoliad Siart"
-
-#: Strings.src#STR_PAGE_LINE.string.text
-msgctxt "Strings.src#STR_PAGE_LINE.string.text"
-msgid "Line"
-msgstr "Llinell"
-
-#: Strings.src#STR_PAGE_BORDER.string.text
-msgid "Borders"
-msgstr "Borderi"
-
-#: Strings.src#STR_PAGE_AREA.string.text
-msgctxt "Strings.src#STR_PAGE_AREA.string.text"
-msgid "Area"
-msgstr "Ardal"
-
-#: Strings.src#STR_PAGE_TRANSPARENCY.string.text
-msgid "Transparency"
-msgstr "Tryloywder"
-
-#: Strings.src#STR_PAGE_FONT.string.text
-msgctxt "Strings.src#STR_PAGE_FONT.string.text"
-msgid "Font"
-msgstr "Font"
-
-#: Strings.src#STR_PAGE_FONT_EFFECTS.string.text
-msgctxt "Strings.src#STR_PAGE_FONT_EFFECTS.string.text"
-msgid "Font Effects"
-msgstr "Effeithiau"
-
-#: Strings.src#STR_PAGE_NUMBERS.string.text
-msgid "Numbers"
-msgstr "Rhifau"
-
-#: Strings.src#STR_PAGE_POSITION.string.text
-msgctxt "Strings.src#STR_PAGE_POSITION.string.text"
-msgid "Position"
-msgstr "Safle"
-
-#: Strings.src#STR_BUTTON_UP.string.text
-msgid "Up"
-msgstr "I Fyny"
-
-#: Strings.src#STR_BUTTON_DOWN.string.text
-msgid "Down"
-msgstr "I Lawr"
-
-#: Strings.src#STR_PAGE_LAYOUT.string.text
-msgid "Layout"
-msgstr "Cynllun"
-
-#: Strings.src#STR_PAGE_OPTIONS.string.text
-msgid "Options"
-msgstr "Dewisiadau"
-
-#: Strings.src#STR_PAGE_SCALE.string.text
-msgctxt "Strings.src#STR_PAGE_SCALE.string.text"
-msgid "Scale"
-msgstr "Graddfa"
-
-#: Strings.src#STR_PAGE_POSITIONING.string.text
-msgid "Positioning"
-msgstr "Lleoli"
-
-#: Strings.src#STR_PAGE_TRENDLINE_TYPE.string.text
-msgid "Type"
-msgstr "Math"
-
-#: Strings.src#STR_PAGE_YERROR_BARS.string.text
-msgid "Y Error Bars"
-msgstr "Barrau Gwall Y"
-
-#: Strings.src#STR_PAGE_ALIGNMENT.string.text
-msgctxt "Strings.src#STR_PAGE_ALIGNMENT.string.text"
-msgid "Alignment"
-msgstr "Aliniad"
-
-#: Strings.src#STR_PAGE_PERSPECTIVE.string.text
-msgid "Perspective"
-msgstr "Perspectif"
-
-#: Strings.src#STR_PAGE_APPEARANCE.string.text
-msgid "Appearance"
-msgstr "Gwedd"
-
-#: Strings.src#STR_PAGE_ILLUMINATION.string.text
-msgid "Illumination"
-msgstr "Goleuad"
-
-#: Strings.src#STR_PAGE_ASIAN.string.text
-msgctxt "Strings.src#STR_PAGE_ASIAN.string.text"
-msgid "Asian Typography"
-msgstr "Typograffeg Asiaidd"
-
-#: Strings.src#STR_OBJECT_AVERAGE_LINE_WITH_PARAMETERS.string.text
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
 msgid ""
-"Mean value line with value %AVERAGE_VALUE and standard deviation %"
-"STD_DEVIATION"
 msgstr ""
-"Llinell gwerth cymedr gyda gwerth %AVERAGE_VALUE a gwyriad safonnol %"
-"STD_DEVIATION"
-
-#: Strings.src#STR_OBJECT_AXIS.string.text
-msgid "Axis"
-msgstr "Echel"
-
-#: Strings.src#STR_OBJECT_AXIS_X.string.text
-msgid "X Axis"
-msgstr "Echel X"
-
-#: Strings.src#STR_OBJECT_AXIS_Y.string.text
-msgid "Y Axis"
-msgstr "Echel Y"
-
-#: Strings.src#STR_OBJECT_AXIS_Z.string.text
-msgid "Z Axis"
-msgstr "Echel Z"
-
-#: Strings.src#STR_OBJECT_SECONDARY_X_AXIS.string.text
-msgid "Secondary X Axis"
-msgstr "Ail echel X"
-
-#: Strings.src#STR_OBJECT_SECONDARY_Y_AXIS.string.text
-msgid "Secondary Y Axis"
-msgstr "Ail echel Y"
-
-#: Strings.src#STR_OBJECT_AXES.string.text
-msgctxt "Strings.src#STR_OBJECT_AXES.string.text"
-msgid "Axes"
-msgstr "Echeli"
-
-#: Strings.src#STR_OBJECT_GRIDS.string.text
-msgctxt "Strings.src#STR_OBJECT_GRIDS.string.text"
-msgid "Grids"
-msgstr "Gridiau"
-
-#: Strings.src#STR_OBJECT_GRID.string.text
-msgid "Grid"
-msgstr "Grid"
-
-#: Strings.src#STR_OBJECT_GRID_MAJOR_X.string.text
-msgid "X Axis Major Grid"
-msgstr "Grid Mawr Echel X"
-
-#: Strings.src#STR_OBJECT_GRID_MAJOR_Y.string.text
-msgid "Y Axis Major Grid"
-msgstr "Grid Mawr Echel Y"
-
-#: Strings.src#STR_OBJECT_GRID_MAJOR_Z.string.text
-msgid "Z Axis Major Grid"
-msgstr "Grid Mawr Echel Z"
-
-#: Strings.src#STR_OBJECT_GRID_MINOR_X.string.text
-msgid "X Axis Minor Grid"
-msgstr "Grid Bach Echel X"
-
-#: Strings.src#STR_OBJECT_GRID_MINOR_Y.string.text
-msgid "Y Axis Minor Grid"
-msgstr "Grid Bach Echel Y"
-
-#: Strings.src#STR_OBJECT_GRID_MINOR_Z.string.text
-msgid "Z Axis Minor Grid"
-msgstr "Grid Bach Echel Z"
-
-#: Strings.src#STR_OBJECT_LEGEND.string.text
-msgid "Legend"
-msgstr "Allwedd"
-
-#: Strings.src#STR_OBJECT_TITLE.string.text
-msgid "Title"
-msgstr "Teitl"
-
-#: Strings.src#STR_OBJECT_TITLES.string.text
-msgid "Titles"
-msgstr "Teitlau"
-
-#: Strings.src#STR_OBJECT_TITLE_MAIN.string.text
-msgid "Main Title"
-msgstr "Prif Deitl"
-
-#: Strings.src#STR_OBJECT_TITLE_SUB.string.text
-msgid "Subtitle"
-msgstr "Is Deitl"
-
-#: Strings.src#STR_OBJECT_TITLE_X_AXIS.string.text
-msgid "X Axis Title"
-msgstr "Teitl Echel X"
-
-#: Strings.src#STR_OBJECT_TITLE_Y_AXIS.string.text
-msgid "Y Axis Title"
-msgstr "Teitl Echel Y"
-
-#: Strings.src#STR_OBJECT_TITLE_Z_AXIS.string.text
-msgid "Z Axis Title"
-msgstr "Teitl Echel Z"
-
-#: Strings.src#STR_OBJECT_TITLE_SECONDARY_X_AXIS.string.text
-msgid "Secondary X Axis Title"
-msgstr "Teitl Echelin X Eilradd"
-
-#: Strings.src#STR_OBJECT_TITLE_SECONDARY_Y_AXIS.string.text
-msgid "Secondary Y Axis Title"
-msgstr "Teitl Echelin Y Eilradd"
-
-#: Strings.src#STR_OBJECT_LABEL.string.text
-msgid "Label"
-msgstr "Label"
-
-#: Strings.src#STR_OBJECT_DATALABELS.string.text
-msgid "Data Labels"
-msgstr "Labeli Data"
-
-#: Strings.src#STR_OBJECT_DATAPOINT.string.text
-msgid "Data Point"
-msgstr "Pwynt Data"
-
-#: Strings.src#STR_OBJECT_DATAPOINTS.string.text
-msgid "Data Points"
-msgstr "Pwyntiau Data"
-
-#: Strings.src#STR_OBJECT_LEGEND_SYMBOL.string.text
-msgid "Legend Key"
-msgstr "Allwedd Esboniad"
-
-#: Strings.src#STR_OBJECT_DATASERIES.string.text
-msgctxt "Strings.src#STR_OBJECT_DATASERIES.string.text"
-msgid "Data Series"
-msgstr "Cyfres Data"
-
-#: Strings.src#STR_OBJECT_DATASERIES_PLURAL.string.text
-msgctxt "Strings.src#STR_OBJECT_DATASERIES_PLURAL.string.text"
-msgid "Data Series"
-msgstr "Cyfres Data"
-
-#: Strings.src#STR_OBJECT_CURVE.string.text
-msgid "Trend Line"
-msgstr "Llinell Tuedd"
-
-#: Strings.src#STR_OBJECT_CURVES.string.text
-msgid "Trend Lines"
-msgstr "Llinellau Tuedd"
-
-#: Strings.src#STR_OBJECT_CURVE_WITH_PARAMETERS.string.text
-msgid "Trend line %FORMULA with accuracy R² = %RSQUARED"
-msgstr "Cromlin atchweliad %FORMULA gyda chywirdeg R² = %RSQUARED"
-
-#: Strings.src#STR_OBJECT_AVERAGE_LINE.string.text
-msgid "Mean Value Line"
-msgstr "Llinell Gwerth Cyfartalog"
-
-#: Strings.src#STR_OBJECT_CURVE_EQUATION.string.text
-msgctxt "Strings.src#STR_OBJECT_CURVE_EQUATION.string.text"
-msgid "Equation"
-msgstr "Gafaliad"
-
-#: Strings.src#STR_OBJECT_ERROR_BARS.string.text
-msgid "Error Bars"
-msgstr "Bariau Gwall"
-
-#: Strings.src#STR_OBJECT_STOCK_LOSS.string.text
-msgid "Stock Loss"
-msgstr "Colled Stoc"
-
-#: Strings.src#STR_OBJECT_STOCK_GAIN.string.text
-msgid "Stock Gain"
-msgstr "Cynnydd Stoc"
-
-#: Strings.src#STR_OBJECT_PAGE.string.text
-msgid "Chart Area"
-msgstr "Ardal Siart"
-
-#: Strings.src#STR_OBJECT_DIAGRAM.string.text
-msgid "Chart"
-msgstr "Siart"
-
-#: Strings.src#STR_OBJECT_DIAGRAM_WALL.string.text
-msgid "Chart Wall"
-msgstr "Wal Siart"
-
-#: Strings.src#STR_OBJECT_DIAGRAM_FLOOR.string.text
-msgid "Chart Floor"
-msgstr "Llawr Siart"
-
-#: Strings.src#STR_OBJECT_SHAPE.string.text
-msgid "Drawing Object"
-msgstr "Gwrthrych Lluniadu"
-
-#: Strings.src#STR_TIP_SELECT_RANGE.string.text
-msgid "Select data range"
-msgstr "Dewis ystod data"
-
-#: Strings.src#STR_TIP_CHOOSECOLOR.string.text
-msgid "Select a color using the color dialog"
-msgstr "Dewiswch liw gan ddefnyddio'r deialog lliw"
-
-#: Strings.src#STR_TIP_LIGHTSOURCE_X.string.text
-msgid "Light Source %LIGHTNUMBER"
-msgstr "Ffynhonnell golau %LIGHTNUMBER"
-
-#: Strings.src#STR_TIP_DATASERIES.string.text
-msgid "Data Series '%SERIESNAME'"
-msgstr "Cyfres Data '%SERIESNAME'"
-
-#: Strings.src#STR_TIP_DATAPOINT_INDEX.string.text
-msgid "Data Point %POINTNUMBER"
-msgstr "Pwynt Data %POINTNUMBER"
-
-#: Strings.src#STR_TIP_DATAPOINT_VALUES.string.text
-msgid "Values: %POINTVALUES"
-msgstr "Gwerth: %POINTVALUES"
-
-#: Strings.src#STR_TIP_DATAPOINT.string.text
-msgid ""
-"Data Point %POINTNUMBER, data series %SERIESNUMBER, values: %POINTVALUES"
-msgstr ""
-"Pwynt Data %POINTNUMBER, cyfres data %SERIESNUMBER, gwerth: %POINTVALUES"
-
-#: Strings.src#STR_STATUS_DATAPOINT_MARKED.string.text
-msgid ""
-"Data point %POINTNUMBER in data series %SERIESNUMBER selected, values: %"
-"POINTVALUES"
-msgstr ""
-"Pwynt data %POINTNUMBER mewn cyfres data %SERIESNUMBER wedi ei ddewis, "
-"gwerth: %POINTVALUES"
-
-#: Strings.src#STR_STATUS_OBJECT_MARKED.string.text
-msgid "%OBJECTNAME selected"
-msgstr "Wedi dewis %OBJECTNAME"
-
-#: Strings.src#STR_STATUS_PIE_SEGMENT_EXPLODED.string.text
-msgid "Pie exploded by %PERCENTVALUE percent"
-msgstr "Siart gylch wedi ei chwyddo gyda %PERCENTVALUE y cant "
-
-#: Strings.src#STR_OBJECT_FOR_SERIES.string.text
-msgid "%OBJECTNAME for Data Series '%SERIESNAME'"
-msgstr "%OBJECTNAME ar gyfer Cyfres Data '%SERIESNAME'"
-
-#: Strings.src#STR_OBJECT_FOR_ALL_SERIES.string.text
-msgid "%OBJECTNAME for all Data Series"
-msgstr "%OBJECTNAME ar gyfer pob Cyfres Data"
-
-#: Strings.src#STR_ACTION_EDIT_CHARTTYPE.string.text
-msgid "Edit chart type"
-msgstr "Golygu'r math o siart"
-
-#: Strings.src#STR_ACTION_EDIT_DATA_RANGES.string.text
-msgid "Edit data ranges"
-msgstr "Golygu'r ystod data"
-
-#: Strings.src#STR_ACTION_EDIT_3D_VIEW.string.text
-msgid "Edit 3D view"
-msgstr "Golygu golwg 3D"
-
-#: Strings.src#STR_ACTION_EDIT_CHART_DATA.string.text
-msgid "Edit chart data"
-msgstr "Golygu data'r siart"
-
-#: Strings.src#STR_ACTION_TOGGLE_LEGEND.string.text
-msgid "Legend on/off"
-msgstr "Esboniad ymlaen/diffodd"
-
-#: Strings.src#STR_ACTION_TOGGLE_GRID_HORZ.string.text
-msgid "Horizontal grid on/off"
-msgstr "Grid llorweddol ymlaen/diffodd"
-
-#: Strings.src#STR_ACTION_SCALE_TEXT.string.text
-msgid "Scale Text"
-msgstr "Graddio'r testun"
-
-#: Strings.src#STR_ACTION_REARRANGE_CHART.string.text
-msgid "Automatic Layout"
-msgstr "Cynllun Awtomatig"
-
-#: Strings.src#STR_ACTION_NOTPOSSIBLE.string.text
-msgid "This function cannot be completed with the selected objects."
-msgstr "Nid oes modd cwblhau'r swyddogaethau hyn gyda'r gwrthrychau dewiswyd."
-
-#: Strings.src#STR_ACTION_EDIT_TEXT.string.text
-msgid "Edit text"
-msgstr "Golygu testun"
-
-#: Strings.src#STR_COLUMN_LABEL.string.text
-msgid "Column %COLUMNNUMBER"
-msgstr "Colofn %COLUMNNUMBER"
-
-#: Strings.src#STR_ROW_LABEL.string.text
-msgid "Row %ROWNUMBER"
-msgstr "Rhes %ROWNUMBER"
-
-#: Strings.src#STR_DATA_ROLE_LABEL.string.text
-msgid "Name"
-msgstr "Enw"
-
-#: Strings.src#STR_DATA_ROLE_X.string.text
-msgid "X-Values"
-msgstr "Gwerthoedd-X"
-
-#: Strings.src#STR_DATA_ROLE_Y.string.text
-msgid "Y-Values"
-msgstr "Gwerthoedd-Y"
-
-#: Strings.src#STR_DATA_ROLE_SIZE.string.text
-msgid "Bubble Sizes"
-msgstr "Maint Swigod"
-
-#: Strings.src#STR_DATA_ROLE_X_ERROR.string.text
-msgid "X-Error-Bars"
-msgstr "Barrau-Gwall-X"
-
-#: Strings.src#STR_DATA_ROLE_X_ERROR_POSITIVE.string.text
-msgid "Positive X-Error-Bars"
-msgstr "Barrau-Gwall-X Posidol"
-
-#: Strings.src#STR_DATA_ROLE_X_ERROR_NEGATIVE.string.text
-msgid "Negative X-Error-Bars"
-msgstr "Barrau-Gwall-X Negyddol"
-
-#: Strings.src#STR_DATA_ROLE_Y_ERROR.string.text
-msgid "Y-Error-Bars"
-msgstr "Barrau-Gwall-Y"
-
-#: Strings.src#STR_DATA_ROLE_Y_ERROR_POSITIVE.string.text
-msgid "Positive Y-Error-Bars"
-msgstr "Barrau-Gwall-Y Posidol"
-
-#: Strings.src#STR_DATA_ROLE_Y_ERROR_NEGATIVE.string.text
-msgid "Negative Y-Error-Bars"
-msgstr "Barrau-Gwall-Y Negyddol "
-
-#: Strings.src#STR_DATA_ROLE_FIRST.string.text
-msgid "Open Values"
-msgstr "Agor Gwerthoedd"
-
-#: Strings.src#STR_DATA_ROLE_LAST.string.text
-msgid "Close Values"
-msgstr "Cau Gwerthoedd"
-
-#: Strings.src#STR_DATA_ROLE_MIN.string.text
-msgid "Low Values"
-msgstr "Gwerthoedd Isel"
-
-#: Strings.src#STR_DATA_ROLE_MAX.string.text
-msgid "High Values"
-msgstr "Gwerthoedd Uchel"
-
-#: Strings.src#STR_DATA_ROLE_CATEGORIES.string.text
-msgid "Categories"
-msgstr "Categorïau"
-
-#: Strings.src#STR_DATA_UNNAMED_SERIES.string.text
-msgid "Unnamed Series"
-msgstr "Cyfres Dienw"
-
-#: Strings.src#STR_DATA_UNNAMED_SERIES_WITH_INDEX.string.text
-msgid "Unnamed Series %NUMBER"
-msgstr "Cyfres Dienw %NUMBER"
-
-#: Strings.src#STR_DATA_SELECT_RANGE_FOR_SERIES.string.text
-msgid "Select Range for %VALUETYPE of %SERIESNAME"
-msgstr "Dewis Ystod %VALUETYPE o %SERIESNAME"
-
-#: Strings.src#STR_DATA_SELECT_RANGE_FOR_CATEGORIES.string.text
-msgid "Select Range for Categories"
-msgstr "Dewis Ystod ar gyfer Categorïau"
-
-#: Strings.src#STR_DATA_SELECT_RANGE_FOR_DATALABELS.string.text
-msgid "Select Range for data labels"
-msgstr "Dewis Ystod ar gyfer labeli data"
-
-#: Strings.src#STR_DATA_SELECT_RANGE_FOR_POSITIVE_ERRORBARS.string.text
-msgid "Select Range for Positive Error Bars"
-msgstr "Dewis Ystod ar gyfer Barrau Gwall Posidol"
-
-#: Strings.src#STR_DATA_SELECT_RANGE_FOR_NEGATIVE_ERRORBARS.string.text
-msgid "Select Range for Negative Error Bars"
-msgstr "Dewis Ystod ar gyfer Barrau Gwall Negyddol"
-
-#: Strings.src#STR_DATA_EDITOR_INCORRECT_INPUT.string.text
-msgid ""
-"Your last input is incorrect.\n"
-"Ignore this change and close the dialog?"
-msgstr ""
-"Roedd eich mewnbwn diwethaf yn anghywir.\n"
-"Anwybyddu'r newid a chau'r deialog?"
-
-#: Strings.src#STR_TEXT_DIRECTION_LTR.string.text
-msgid "Left-to-right"
-msgstr "Chwith i'r dde"
-
-#: Strings.src#STR_TEXT_DIRECTION_RTL.string.text
-msgid "Right-to-left"
-msgstr "De i'r chwith"
-
-#: Strings.src#STR_TEXT_DIRECTION_SUPER.string.text
-msgid "Use superordinate object settings"
-msgstr "Defnyddio gosodiadau gwrthrych uwcholyn"
-
-#: Strings_AdditionalControls.src#STR_3DSCHEME_SIMPLE.string.text
-msgid "Simple"
-msgstr "Syml"
-
-#: Strings_AdditionalControls.src#STR_3DSCHEME_REALISTIC.string.text
-msgid "Realistic"
-msgstr "Realistig"
-
-#: Strings_AdditionalControls.src#STR_3DSCHEME_CUSTOM.string.text
-msgid "Custom"
-msgstr "Addasu"
-
-#: Strings_AdditionalControls.src#STR_BAR_GEOMETRY.string.text
-msgid "Shape"
-msgstr "Siâp"
-
-#: Strings_AdditionalControls.src#STR_NUMBER_OF_LINES.string.text
-msgid "~Number of lines"
-msgstr "~Nifer o linellau"
-
-#: Strings_AdditionalControls.src#STR_TEXT_SEPARATOR.string.text
-msgid "Separator"
-msgstr "Ymwahannydd"
-
-#: Strings_ChartTypes.src#STR_TYPE_COLUMN.string.text
-msgid "Column"
-msgstr "Colofn"
-
-#: Strings_ChartTypes.src#STR_TYPE_BAR.string.text
-msgid "Bar"
-msgstr "Bar"
-
-#: Strings_ChartTypes.src#STR_TYPE_AREA.string.text
-msgctxt "Strings_ChartTypes.src#STR_TYPE_AREA.string.text"
-msgid "Area"
-msgstr "Ardal"
-
-#: Strings_ChartTypes.src#STR_TYPE_PIE.string.text
-msgid "Pie"
-msgstr "Cylch"
-
-#: Strings_ChartTypes.src#STR_PIE_EXPLODED.string.text
-msgid "Exploded Pie Chart"
-msgstr "Siart Cylch Taenedig"
-
-#: Strings_ChartTypes.src#STR_DONUT_EXPLODED.string.text
-msgid "Exploded Donut Chart"
-msgstr "Siart Toesen Taenedig"
-
-#: Strings_ChartTypes.src#STR_DONUT.string.text
-msgid "Donut"
-msgstr "Toesen"
-
-#: Strings_ChartTypes.src#STR_TYPE_LINE.string.text
-msgctxt "Strings_ChartTypes.src#STR_TYPE_LINE.string.text"
-msgid "Line"
-msgstr "Llinell"
-
-#: Strings_ChartTypes.src#STR_TYPE_XY.string.text
-msgid "XY (Scatter)"
-msgstr "XY (Chwâl)"
-
-#: Strings_ChartTypes.src#STR_POINTS_AND_LINES.string.text
-msgid "Points and Lines"
-msgstr "Pwyntiau a Llinellau"
-
-#: Strings_ChartTypes.src#STR_POINTS_ONLY.string.text
-msgid "Points Only"
-msgstr "Pwyntiau'n unig"
-
-#: Strings_ChartTypes.src#STR_LINES_ONLY.string.text
-msgid "Lines Only"
-msgstr "Llinellau yn Unig"
-
-#: Strings_ChartTypes.src#STR_LINES_3D.string.text
-msgid "3D Lines"
-msgstr "Llinellau 3D"
-
-#: Strings_ChartTypes.src#STR_TYPE_COMBI_COLUMN_LINE.string.text
-msgid "Column and Line"
-msgstr "Colofn a Llinell"
-
-#: Strings_ChartTypes.src#STR_LINE_COLUMN.string.text
-msgid "Columns and Lines"
-msgstr "Siart Cyfuniad: Llinellau a Cholofnau"
-
-#: Strings_ChartTypes.src#STR_LINE_STACKEDCOLUMN.string.text
-msgid "Stacked Columns and Lines"
-msgstr "Siart Cyfuniad: Llinellau a cholofnau wedi stacio"
-
-#: Strings_ChartTypes.src#STR_TYPE_NET.string.text
-msgid "Net"
-msgstr "Rhwyd"
-
-#: Strings_ChartTypes.src#STR_TYPE_STOCK.string.text
-msgid "Stock"
-msgstr "Stoc"
-
-#: Strings_ChartTypes.src#STR_STOCK_1.string.text
-msgid "Stock Chart 1"
-msgstr "Siart Stoc 1"
-
-#: Strings_ChartTypes.src#STR_STOCK_2.string.text
-msgid "Stock Chart 2"
-msgstr "Siart Stoc 2"
-
-#: Strings_ChartTypes.src#STR_STOCK_3.string.text
-msgid "Stock Chart 3"
-msgstr "Siart Stoc 3"
-
-#: Strings_ChartTypes.src#STR_STOCK_4.string.text
-msgid "Stock Chart 4"
-msgstr "Siart Stoc 4"
-
-#: Strings_ChartTypes.src#STR_NORMAL.string.text
-msgid "Normal"
-msgstr "Normal"
-
-#: Strings_ChartTypes.src#STR_STACKED.string.text
-msgid "Stacked"
-msgstr "Staciwyd"
-
-#: Strings_ChartTypes.src#STR_PERCENT.string.text
-msgid "Percent Stacked"
-msgstr "Canran"
-
-#: Strings_ChartTypes.src#STR_DEEP.string.text
-msgctxt "Strings_ChartTypes.src#STR_DEEP.string.text"
-msgid "Deep"
-msgstr "Dwfn"
-
-#: Strings_ChartTypes.src#STR_FILLED.string.text
-msgid "Filled"
-msgstr "Llanwyd"
-
-#: Strings_ChartTypes.src#STR_TYPE_BUBBLE.string.text
-msgid "Bubble"
-msgstr "Swigen"
-
-#: Strings_ChartTypes.src#STR_BUBBLE_1.string.text
-msgid "Bubble Chart"
-msgstr "Siart Swigen"
-
-#: Strings_Scale.src#STR_INVALID_NUMBER.string.text
-msgid "Numbers are required. Check your input."
-msgstr "Mae angen rhifau. Gwiriwch eich mewnbwn."
-
-#: Strings_Scale.src#STR_STEP_GT_ZERO.string.text
-msgid "The major interval requires a positive number. Check your input."
-msgstr "Mae'r cyfwng mawr angen rhif positif. Gwiriwch eich mewnbwn."
-
-#: Strings_Scale.src#STR_BAD_LOGARITHM.string.text
-msgid "The logarithmic scale requires positive numbers. Check your input."
-msgstr "Mae'r graddfa logarithmig angen rhifau positif. Gwiriwch eich mewnbwn."
-
-#: Strings_Scale.src#STR_MIN_GREATER_MAX.string.text
-msgid "The minimum must be lower than the maximum. Check your input."
-msgstr "Rhaid i'r lleiafswm fod yn llai na'r uchafswm. Gwiriwch eich mewnbwn."
-
-#: Strings_Scale.src#STR_INVALID_INTERVALS.string.text
-msgid ""
-"The major interval needs to be greater than the minor interval. Check your "
-"input."
-msgstr ""
-"Rhaid i'r cyfwng mwyaf fod yn fwy na'r cyfwng lleiaf. Gwiriwch eich mewnbwn."
-
-#: Strings_Scale.src#STR_INVALID_TIME_UNIT.string.text
-msgid ""
-"The major and minor interval need to be greater or equal to the resolution. "
-"Check your input."
-msgstr ""
-"Rhaid i'r cyfwng mwyaf a'r lleiaf fod yn fwy neu yn gydradd â'r cydraniad. "
-"Gwiriwch eich mewnbwn."
-
-#: Strings_Statistic.src#STR_INDICATE_BOTH.string.text
-msgid "Negative and Positive"
-msgstr "Dangosyddion Brig a Gwaelod"
-
-#: Strings_Statistic.src#STR_INDICATE_DOWN.string.text
-msgid "Negative"
-msgstr "Dangosydd Isaf"
-
-#: Strings_Statistic.src#STR_INDICATE_UP.string.text
-msgid "Positive"
-msgstr "Dangosydd Uchaf"
-
-#: Strings_Statistic.src#STR_CONTROLTEXT_ERROR_BARS_FROM_DATA.string.text
-msgid "From Data Table"
-msgstr "O'r Tabl Data"
-
-#: Strings_Statistic.src#STR_REGRESSION_LINEAR.string.text
-msgid "Linear (%SERIESNAME)"
-msgstr "Llinol (%SERIESNAME)"
-
-#: Strings_Statistic.src#STR_REGRESSION_LOG.string.text
-msgid "Logarithmic (%SERIESNAME)"
-msgstr "Logarithmig (%SERIESNAME)"
-
-#: Strings_Statistic.src#STR_REGRESSION_EXP.string.text
-msgid "Exponential (%SERIESNAME)"
-msgstr "Esbonyddol (%SERIESNAME)"
-
-#: Strings_Statistic.src#STR_REGRESSION_POWER.string.text
-msgid "Power (%SERIESNAME)"
-msgstr "Pŵer (%SERIESNAME)"
-
-#: Strings_Statistic.src#STR_REGRESSION_MEAN.string.text
-msgid "Mean (%SERIESNAME)"
-msgstr "Pŵer (%SERIESNAME)"
-
-#: tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.FT_SCHEME.fixedtext.text
-msgid "Sche~me"
-msgstr "~Cynllun"
-
-#: tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_SHADING.checkbox.text
-msgid "~Shading"
-msgstr "~Cysgodi"
-
-#: tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_OBJECTLINES.checkbox.text
-msgid "~Object borders"
-msgstr "~Borderi gwrthrychau"
-
-#: tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_ROUNDEDEDGE.checkbox.text
-msgid "~Rounded edges"
-msgstr "~Ymylon crwn"
-
-#: tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#define.text
-msgid " degrees"
-msgstr " graddau"
-
-#: tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_RIGHT_ANGLED_AXES.checkbox.text
-msgid "~Right-angled axes"
-msgstr "~Echelinau ongl dde"
-
-#: tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_X_ROTATION.fixedtext.text
-msgid "~X rotation"
-msgstr "Cylchdro ~X"
-
-#: tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_Y_ROTATION.fixedtext.text
-msgid "~Y rotation"
-msgstr "Cylchdro ~Y"
-
-#: tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_Z_ROTATION.fixedtext.text
-msgid "~Z rotation"
-msgstr "Cylchdro ~Z"
-
-#: tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_PERSPECTIVE.checkbox.text
-msgid "~Perspective"
-msgstr "~Perspectif"
-
-#: tp_3D_SceneIllumination.src#TP_3D_SCENEILLUMINATION.FT_LIGHTSOURCE.fixedtext.text
-msgid "~Light source"
-msgstr "~Ffynhonell Golau"
-
-#: tp_3D_SceneIllumination.src#TP_3D_SCENEILLUMINATION.FT_AMBIENTLIGHT.fixedtext.text
-msgid "~Ambient light"
-msgstr "~Golau Amgylchynol"
-
-#: tp_3D_SceneIllumination.src#STR_LIGHT_PREVIEW.string.text
-msgid "Light Preview"
-msgstr "Rhagolwg Golau"
-
-#: tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_SCHOW_DESCR.checkbox.text
-msgid "Sho~w labels"
-msgstr "~Dangos labeli"
-
-#: tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_ORIENTATION.fixedline.text
-msgctxt "tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_ORIENTATION.fixedline.text"
-msgid "Text orientation"
-msgstr "Cyfeiriadeddi testun"
-
-#: tp_AxisLabel.src#TP_AXIS_LABEL.PB_AXIS_LABEL_TEXTSTACKED.tristatebox.text
-msgctxt "tp_AxisLabel.src#TP_AXIS_LABEL.PB_AXIS_LABEL_TEXTSTACKED.tristatebox.text"
-msgid "Ve~rtically stacked"
-msgstr "~Staciwyd yn fertigol"
-
-#: tp_AxisLabel.src#TP_AXIS_LABEL.FT_AXIS_LABEL_DEGREES.fixedtext.text
-msgctxt "tp_AxisLabel.src#TP_AXIS_LABEL.FT_AXIS_LABEL_DEGREES.fixedtext.text"
-msgid "~Degrees"
-msgstr "~Graddau"
-
-#: tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_TEXTFLOW.fixedline.text
-msgid "Text flow"
-msgstr "Llif testun"
-
-#: tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_TEXTOVERLAP.checkbox.text
-msgid "O~verlap"
-msgstr "~Gorgyffyrddiad"
-
-#: tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_TEXTBREAK.checkbox.text
-msgid "~Break"
-msgstr "~Toriad"
-
-#: tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_ORDER.fixedline.text
-msgid "Order"
-msgstr "Trefn"
-
-#: tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_SIDEBYSIDE.radiobutton.text
-msgid "~Tile"
-msgstr "~Teilio"
-
-#: tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_UPDOWN.radiobutton.text
-msgid "St~agger odd"
-msgstr "Darwahanu ~odrif"
-
-#: tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_DOWNUP.radiobutton.text
-msgid "Stagger ~even"
-msgstr "Darwahanu ~eilrif"
-
-#: tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_AUTOORDER.radiobutton.text
-msgctxt "tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_AUTOORDER.radiobutton.text"
-msgid "A~utomatic"
-msgstr "~Awtomatig"
-
-#: tp_AxisLabel.src#TP_AXIS_LABEL.FT_AXIS_TEXTDIR.fixedtext.text
-msgctxt "tp_AxisLabel.src#TP_AXIS_LABEL.FT_AXIS_TEXTDIR.fixedtext.text"
-msgid "Te~xt direction"
-msgstr "C~yfeiriad testun"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_AXIS_LINE.fixedline.text
-msgid "Axis line"
-msgstr "Llinell echel"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_CROSSES_OTHER_AXIS_AT.fixedtext.text
-msgid "~Cross other axis at"
-msgstr "C~roesi echel arall yn"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.1.stringlist.text
-msgid "Start"
-msgstr "Cychwyn"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.2.stringlist.text
-msgid "End"
-msgstr "Diwedd"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.3.stringlist.text
-msgid "Value"
-msgstr "Gwerth"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.4.stringlist.text
-msgid "Category"
-msgstr "Categori"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_AXIS_BETWEEN_CATEGORIES.checkbox.text
-msgid "Axis ~between categories"
-msgstr "Echel ~rhwng categorïau"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_LABELS.fixedline.text
-msgid "Labels"
-msgstr "Labeli"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_PLACE_LABELS.fixedtext.text
-msgid "~Place labels"
-msgstr "~Label gosodiadau"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.1.stringlist.text
-msgid "Near axis"
-msgstr "Echel agos"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.2.stringlist.text
-msgid "Near axis (other side)"
-msgstr "Echel pell (ochr arall)"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.3.stringlist.text
-msgid "Outside start"
-msgstr "Cychwyn oddi allan"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.4.stringlist.text
-msgid "Outside end"
-msgstr "Gorffen oddi allan"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_AXIS_LABEL_DISTANCE.fixedtext.text
-msgid "~Distance"
-msgstr "~Pellter"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_TICKS.fixedline.text
-msgid "Interval marks"
-msgstr "Marciau cyfwng"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_MAJOR.fixedtext.text
-msgid "Major:"
-msgstr "Mwyaf:"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_TICKS_INNER.checkbox.text
-msgid "~Inner"
-msgstr "~Mewnol"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_TICKS_OUTER.checkbox.text
-msgid "~Outer"
-msgstr "~Allanol"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_MINOR.fixedtext.text
-msgid "Minor:"
-msgstr "Lleiaf:"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_INNER.checkbox.text
-msgid "I~nner"
-msgstr "M~ewnol"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_OUTER.checkbox.text
-msgid "O~uter"
-msgstr "A~llanol"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_PLACE_TICKS.fixedtext.text
-msgid "Place ~marks"
-msgstr "Marciau ~lleoliad"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.1.stringlist.text
-msgid "At labels"
-msgstr "Label At"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.2.stringlist.text
-msgid "At axis"
-msgstr "Ar yr echel"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.3.stringlist.text
-msgid "At axis and labels"
-msgstr "Wrth yr echel a'r labeli"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_GRIDS.fixedline.text
-msgctxt "tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_GRIDS.fixedline.text"
-msgid "Grids"
-msgstr "Gridiau"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MAJOR_GRID.checkbox.text
-msgid "Show major ~grid"
-msgstr "Dangos y ~grid mwyaf"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.PB_MAJOR_GRID.pushbutton.text
-msgid "Mo~re..."
-msgstr "M~wy..."
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_GRID.checkbox.text
-msgid "~Show minor grid"
-msgstr "Dangos y ~grid lleiaf"
-
-#: tp_AxisPositions.src#TP_AXIS_POSITIONS.PB_MINOR_GRID.pushbutton.text
-msgid "Mor~e..."
-msgstr "M~wy..."
-
-#: tp_ChartType.src#TP_CHARTTYPE.FT_CHARTTYPE.fixedtext.text
-msgid "Choose a chart type"
-msgstr "Dewiswch y math o siart"
-
-#: tp_ChartType.src#TP_CHARTTYPE.CB_X_AXIS_CATEGORIES.checkbox.text
-msgid "X axis with Categories"
-msgstr "Echel X gyda Chategorïau"
-
-#: tp_ChartType.src#TP_CHARTTYPE.CB_3D_LOOK.checkbox.text
-msgid "~3D Look"
-msgstr "Golwg ~3D"
-
-#: tp_ChartType.src#TP_CHARTTYPE.CB_STACKED.checkbox.text
-msgid "~Stack series"
-msgstr "~Pentyrru cyfres"
-
-#: tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Y.radiobutton.text
-msgid "On top"
-msgstr "Ar y brig"
-
-#: tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Y_PERCENT.radiobutton.text
-msgid "Percent"
-msgstr "Canran"
-
-#: tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Z.radiobutton.text
-msgctxt "tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Z.radiobutton.text"
-msgid "Deep"
-msgstr "Dwfn"
-
-#: tp_ChartType.src#TP_CHARTTYPE.CB_SPLINES.checkbox.text
-msgid "S~mooth lines"
-msgstr "~Llinellau llyfn"
-
-#: tp_ChartType.src#TP_CHARTTYPE.PB_SPLINE_DIALOG.pushbutton.text
-msgid "Properties..."
-msgstr "Priodweddau..."
-
-#: tp_ChartType.src#TP_CHARTTYPE.CB_XVALUE_SORTING.checkbox.text
-msgid "~Sort by X values"
-msgstr "~Trefnu yn ôl gwerthoedd X"
-
-#: tp_ChartType.src#DLG_SPLINE_PROPERTIES.RB_SPLINES_CUBIC.radiobutton.text
-msgid "Cubic spline"
-msgstr "Sblein ciwbig"
-
-#: tp_ChartType.src#DLG_SPLINE_PROPERTIES.RB_SPLINES_B.radiobutton.text
-msgid "B-Spline"
-msgstr "B-Spline"
-
-#: tp_ChartType.src#DLG_SPLINE_PROPERTIES.FT_SPLINE_RESOLUTION.fixedtext.text
-msgid "~Resolution"
-msgstr "~Cydraniad"
-
-#: tp_ChartType.src#DLG_SPLINE_PROPERTIES.FT_SPLINE_ORDER.fixedtext.text
-msgid "~Data points order"
-msgstr "~Trefn pwyntiau data"
-
-#: tp_DataSource.src#TP_DATA_SOURCE.FT_CAPTION_FOR_WIZARD.fixedtext.text
-msgid "Customize data ranges for individual data series"
-msgstr "Addasu ystodau data ar gyfer cyfresi data unigol"
-
-#: tp_DataSource.src#TP_DATA_SOURCE.FT_SERIES.fixedtext.text
-msgid "Data ~series"
-msgstr "~Cyfres data"
-
-#: tp_DataSource.src#TP_DATA_SOURCE.FT_ROLE.fixedtext.text
-msgid "~Data ranges"
-msgstr "~Ystod data"
-
-#: tp_DataSource.src#TP_DATA_SOURCE.FT_RANGE.fixedtext.text
-msgid "Ran~ge for %VALUETYPE"
-msgstr "Y~stod %VALUETYPE"
-
-#: tp_DataSource.src#TP_DATA_SOURCE.FT_CATEGORIES.fixedtext.text
-msgid "~Categories"
-msgstr "~Categorïau"
-
-#: tp_DataSource.src#TP_DATA_SOURCE.FT_DATALABELS.fixedtext.text
-msgid "Data ~labels"
-msgstr "Labeli ~data"
-
-#: tp_DataSource.src#TP_DATA_SOURCE.BTN_ADD.pushbutton.text
-msgid "~Add"
-msgstr "~Ychwanegu"
-
-#: tp_DataSource.src#TP_DATA_SOURCE.BTN_REMOVE.pushbutton.text
-msgid "~Remove"
-msgstr "~Tynnu"
-
-#: tp_LegendPosition.src#TP_LEGEND_POS.GRP_LEGEND.fixedline.text
-msgctxt "tp_LegendPosition.src#TP_LEGEND_POS.GRP_LEGEND.fixedline.text"
-msgid "Position"
-msgstr "Safle"
-
-#: tp_LegendPosition.src#TP_LEGEND_POS.FL_LEGEND_TEXTORIENT.fixedline.text
-msgctxt "tp_LegendPosition.src#TP_LEGEND_POS.FL_LEGEND_TEXTORIENT.fixedline.text"
-msgid "Text orientation"
-msgstr "Cyfeiriadedd testun"
-
-#: tp_LegendPosition.src#TP_LEGEND_POS.FT_LEGEND_TEXTDIR.fixedtext.text
-msgctxt "tp_LegendPosition.src#TP_LEGEND_POS.FT_LEGEND_TEXTDIR.fixedtext.text"
-msgid "Te~xt direction"
-msgstr "C~yfeiriad testun"
-
-#: tp_Location.src#TP_LOCATION.FL_TABLE.fixedline.text
-msgid "Place chart"
-msgstr "Gosod y siart"
-
-#: tp_Location.src#TP_LOCATION.FT_TABLE.fixedtext.text
-msgid "~Insert in sheet"
-msgstr "~Mewnosod mewn dalen"
-
-#: tp_PolarOptions.src#TP_POLAROPTIONS.CB_CLOCKWISE.checkbox.text
-msgid "~Clockwise direction"
-msgstr "~Cyfeiriad clocwedd"
-
-#: tp_PolarOptions.src#TP_POLAROPTIONS.FL_STARTING_ANGLE.fixedline.text
-msgid "Starting angle"
-msgstr "Ongl cychwyn"
-
-#: tp_PolarOptions.src#TP_POLAROPTIONS.FT_ROTATION_DEGREES.fixedtext.text
-msgctxt "tp_PolarOptions.src#TP_POLAROPTIONS.FT_ROTATION_DEGREES.fixedtext.text"
-msgid "~Degrees"
-msgstr "~Graddau"
-
-#: tp_PolarOptions.src#TP_POLAROPTIONS.FL_PLOT_OPTIONS_POLAR.fixedline.text
-msgctxt "tp_PolarOptions.src#TP_POLAROPTIONS.FL_PLOT_OPTIONS_POLAR.fixedline.text"
-msgid "Plot options"
-msgstr "Dewisiadau plotio"
-
-#: tp_PolarOptions.src#TP_POLAROPTIONS.CB_INCLUDE_HIDDEN_CELLS_POLAR.checkbox.text
-msgctxt "tp_PolarOptions.src#TP_POLAROPTIONS.CB_INCLUDE_HIDDEN_CELLS_POLAR.checkbox.text"
-msgid "Include ~values from hidden cells"
-msgstr "Cynnwys ~gwerthoedd o gelloedd cudd"
-
-#: tp_RangeChooser.src#TP_RANGECHOOSER.FT_CAPTION_FOR_WIZARD.fixedtext.text
-msgid "Choose a data range"
-msgstr "Dewis ystod data"
-
-#: tp_RangeChooser.src#TP_RANGECHOOSER.FT_RANGE.fixedtext.text
-msgid "~Data range"
-msgstr "~Ystod Data"
-
-#: tp_RangeChooser.src#TP_RANGECHOOSER.RB_DATAROWS.radiobutton.text
-msgid "Data series in ~rows"
-msgstr "Cyfres data mewn ~rhesi"
-
-#: tp_RangeChooser.src#TP_RANGECHOOSER.RB_DATACOLS.radiobutton.text
-msgid "Data series in ~columns"
-msgstr "Ystod data mewn ~colofnau"
-
-#: tp_RangeChooser.src#TP_RANGECHOOSER.CB_FIRST_ROW_ASLABELS.checkbox.text
-msgid "~First row as label"
-msgstr "~Rhes gyntaf fel label"
-
-#: tp_RangeChooser.src#TP_RANGECHOOSER.CB_FIRST_COLUMN_ASLABELS.checkbox.text
-msgid "F~irst column as label"
-msgstr "~Colofn gyntaf fel label"
-
-#: tp_Scale.src#STR_LIST_TIME_UNIT.1.stringlist.text
-msgid "Days"
-msgstr "Dyddiau"
-
-#: tp_Scale.src#STR_LIST_TIME_UNIT.2.stringlist.text
-msgid "Months"
-msgstr "Misoedd"
-
-#: tp_Scale.src#STR_LIST_TIME_UNIT.3.stringlist.text
-msgid "Years"
-msgstr "Blynyddoedd"
-
-#: tp_Scale.src#TP_SCALE.FL_SCALE.fixedline.text
-msgctxt "tp_Scale.src#TP_SCALE.FL_SCALE.fixedline.text"
-msgid "Scale"
-msgstr "Graddfa"
-
-#: tp_Scale.src#TP_SCALE.CBX_REVERSE.checkbox.text
-msgid "~Reverse direction"
-msgstr "~Gwrthdroi cyfeiriad"
-
-#: tp_Scale.src#TP_SCALE.CBX_LOGARITHM.checkbox.text
-msgid "~Logarithmic scale"
-msgstr "~Graddfa logarithmig"
-
-#: tp_Scale.src#TP_SCALE.TXT_AXIS_TYPE.fixedtext.text
-msgid "T~ype"
-msgstr "~Math"
-
-#: tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.1.stringlist.text
-msgid "Automatic"
-msgstr "Awtomatig"
-
-#: tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.2.stringlist.text
-msgid "Text"
-msgstr "Testun"
-
-#: tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.3.stringlist.text
-msgid "Date"
-msgstr "Dyddiad"
-
-#: tp_Scale.src#TP_SCALE.TXT_MIN.fixedtext.text
-msgid "~Minimum"
-msgstr "~Lleiafswm"
-
-#: tp_Scale.src#TP_SCALE.CBX_AUTO_MIN.checkbox.text
-msgid "~Automatic"
-msgstr "~Awtomatig"
-
-#: tp_Scale.src#TP_SCALE.TXT_MAX.fixedtext.text
-msgid "Ma~ximum"
-msgstr "~Uchafswm"
-
-#: tp_Scale.src#TP_SCALE.CBX_AUTO_MAX.checkbox.text
-msgctxt "tp_Scale.src#TP_SCALE.CBX_AUTO_MAX.checkbox.text"
-msgid "A~utomatic"
-msgstr "~Awtomatig"
-
-#: tp_Scale.src#TP_SCALE.TXT_TIME_RESOLUTION.fixedtext.text
-msgid "R~esolution"
-msgstr "~Cydraniad"
-
-#: tp_Scale.src#TP_SCALE.CBX_AUTO_TIME_RESOLUTION.checkbox.text
-msgctxt "tp_Scale.src#TP_SCALE.CBX_AUTO_TIME_RESOLUTION.checkbox.text"
-msgid "Automat~ic"
-msgstr "Awtomat~ig"
-
-#: tp_Scale.src#TP_SCALE.TXT_STEP_MAIN.fixedtext.text
-msgid "Ma~jor interval"
-msgstr "Cyfwng ~mwyaf"
-
-#: tp_Scale.src#TP_SCALE.CBX_AUTO_STEP_MAIN.checkbox.text
-msgid "Au~tomatic"
-msgstr "Aw~tomatig"
-
-#: tp_Scale.src#TP_SCALE.TXT_STEP_HELP_COUNT.fixedtext.text
-msgid "Minor inter~val count"
-msgstr "C~yfrif cyfwng mwyaf:"
-
-#: tp_Scale.src#TP_SCALE.TXT_STEP_HELP.fixedtext.text
-msgid "Minor inter~val"
-msgstr "Cyfwng ~lleiaf"
-
-#: tp_Scale.src#TP_SCALE.CBX_AUTO_STEP_HELP.checkbox.text
-msgid "Aut~omatic"
-msgstr "Awt~omatig"
-
-#: tp_Scale.src#TP_SCALE.TXT_ORIGIN.fixedtext.text
-msgid "Re~ference value"
-msgstr "~Gwerth cyfeirio"
-
-#: tp_Scale.src#TP_SCALE.CBX_AUTO_ORIGIN.checkbox.text
-msgctxt "tp_Scale.src#TP_SCALE.CBX_AUTO_ORIGIN.checkbox.text"
-msgid "Automat~ic"
-msgstr "Awtomat~ig"
-
-#: tp_SeriesToAxis.src#TP_OPTIONS.1.fixedline.text
-msgid "Align data series to"
-msgstr "Alinio cyfres data i"
-
-#: tp_SeriesToAxis.src#TP_OPTIONS.RBT_OPT_AXIS_1.radiobutton.text
-msgid "Primary Y axis"
-msgstr "Echel Y cynradd"
-
-#: tp_SeriesToAxis.src#TP_OPTIONS.RBT_OPT_AXIS_2.radiobutton.text
-msgid "Secondary Y axis"
-msgstr "Ail echel Y"
-
-#: tp_SeriesToAxis.src#TP_OPTIONS.GB_BAR.fixedline.text
-msgid "Settings"
-msgstr "Gosodiadau"
-
-#: tp_SeriesToAxis.src#TP_OPTIONS.FT_OVERLAP.fixedtext.text
-msgid "~Overlap"
-msgstr "~Gorgyffyrddiad"
-
-#: tp_SeriesToAxis.src#TP_OPTIONS.FT_GAP.fixedtext.text
-msgid "~Spacing"
-msgstr "~Bylchu"
-
-#: tp_SeriesToAxis.src#TP_OPTIONS.CB_CONNECTOR.checkbox.text
-msgid "Connection lines"
-msgstr "Llinellau Cyswllt"
-
-#: tp_SeriesToAxis.src#TP_OPTIONS.CB_BARS_SIDE_BY_SIDE.checkbox.text
-msgid "Show ~bars side by side"
-msgstr "Dangos ~barau ochr yn ochr"
-
-#: tp_SeriesToAxis.src#TP_OPTIONS.FL_PLOT_OPTIONS.fixedline.text
-msgctxt "tp_SeriesToAxis.src#TP_OPTIONS.FL_PLOT_OPTIONS.fixedline.text"
-msgid "Plot options"
-msgstr "Dewisiadau plotio"
-
-#: tp_SeriesToAxis.src#TP_OPTIONS.FT_MISSING_VALUES.fixedtext.text
-msgid "Plot missing values"
-msgstr "Plotio gwerthoedd coll"
-
-#: tp_SeriesToAxis.src#TP_OPTIONS.RB_DONT_PAINT.radiobutton.text
-msgid "~Leave gap"
-msgstr "~Gadael bwlch"
-
-#: tp_SeriesToAxis.src#TP_OPTIONS.RB_ASSUME_ZERO.radiobutton.text
-msgid "~Assume zero"
-msgstr "~Tybio sero"
-
-#: tp_SeriesToAxis.src#TP_OPTIONS.RB_CONTINUE_LINE.radiobutton.text
-msgid "~Continue line"
-msgstr "~Parhau'r llinell"
-
-#: tp_SeriesToAxis.src#TP_OPTIONS.CB_INCLUDE_HIDDEN_CELLS.checkbox.text
-msgctxt "tp_SeriesToAxis.src#TP_OPTIONS.CB_INCLUDE_HIDDEN_CELLS.checkbox.text"
-msgid "Include ~values from hidden cells"
-msgstr "Cynnwys gwerthoedd o gelloedd cudd"
-
-#: tp_TitleRotation.src#TP_ALIGNMENT.BTN_TXTSTACKED.tristatebox.text
-msgctxt "tp_TitleRotation.src#TP_ALIGNMENT.BTN_TXTSTACKED.tristatebox.text"
-msgid "Ve~rtically stacked"
-msgstr "~Staciwyd yn fertigol"
-
-#: tp_TitleRotation.src#TP_ALIGNMENT.FT_DEGREES.fixedtext.text
-msgctxt "tp_TitleRotation.src#TP_ALIGNMENT.FT_DEGREES.fixedtext.text"
-msgid "~Degrees"
-msgstr "~Graddau"
-
-#: tp_TitleRotation.src#TP_ALIGNMENT.FL_ALIGN.fixedline.text
-msgctxt "tp_TitleRotation.src#TP_ALIGNMENT.FL_ALIGN.fixedline.text"
-msgid "Text orientation"
-msgstr "Cyfeiriad testun"
-
-#: tp_TitleRotation.src#TP_ALIGNMENT.FT_TEXTDIR.fixedtext.text
-msgctxt "tp_TitleRotation.src#TP_ALIGNMENT.FT_TEXTDIR.fixedtext.text"
-msgid "Te~xt direction"
-msgstr "Cyfeiriad ~testun"
-
-#: tp_Wizard_TitlesAndObjects.src#TP_WIZARD_TITLEANDOBJECTS.FT_TITLEDESCRIPTION.fixedtext.text
-msgid "Choose titles, legend, and grid settings"
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/controller/dialogs/tp_Wizard_TitlesAndObjects.src#TP_WIZARD_TITLEANDOBJECTS.FT_TITLEDESCRIPTION.FixedText.Text
+msgid  "Choose titles, legend, and grid settings"
 msgstr "Dewiswch deitlau, esboniad a gosodiadau grid"
 
-#: tp_Wizard_TitlesAndObjects.src#TP_WIZARD_TITLEANDOBJECTS.FL_GRIDS.fixedline.text
-msgid "Display grids"
+#: source/controller/dialogs/tp_Wizard_TitlesAndObjects.src#TP_WIZARD_TITLEANDOBJECTS.FL_GRIDS.FixedLine.Text
+msgid  "Display grids"
 msgstr "Dangos gridiau"
 
-#: res_DataLabel_tmpl.hrc#WORKAROUND.1.stringlist.text
-msgid "Best fit"
-msgstr "Ffit orau"
+#: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_RIGHT_ANGLED_AXES.CheckBox.Text
+msgid  "~Right-angled axes"
+msgstr "~Echelinau ongl dde"
 
-#: res_DataLabel_tmpl.hrc#WORKAROUND.2.stringlist.text
-msgid "Center"
-msgstr "Canol"
+#: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_X_ROTATION.FixedText.Text
+msgid  "~X rotation"
+msgstr "Cylchdro ~X"
 
-#: res_DataLabel_tmpl.hrc#WORKAROUND.3.stringlist.text
-msgid "Above"
-msgstr "Uwchlaw"
+#: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_Y_ROTATION.FixedText.Text
+msgid  "~Y rotation"
+msgstr "Cylchdro ~Y"
 
-#: res_DataLabel_tmpl.hrc#WORKAROUND.4.stringlist.text
-msgid "Top left"
-msgstr "Brig chwith"
+#: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.FT_Z_ROTATION.FixedText.Text
+msgid  "~Z rotation"
+msgstr "Cylchdro ~Z"
 
-#: res_DataLabel_tmpl.hrc#WORKAROUND.5.stringlist.text
-msgid "Left"
-msgstr "Chwith"
+#: source/controller/dialogs/tp_3D_SceneGeometry.src#TP_3D_SCENEGEOMETRY.CBX_PERSPECTIVE.CheckBox.Text
+msgid  "~Perspective"
+msgstr "~Perspectif"
 
-#: res_DataLabel_tmpl.hrc#WORKAROUND.6.stringlist.text
-msgid "Bottom left"
-msgstr "Gwaelod chwith"
+#: source/controller/dialogs/tp_3D_SceneGeometry.src#CUSTOMUNITTEXT_DEGREE.#define.CustomUnitText
+msgid  " degrees"
+msgstr " graddau"
 
-#: res_DataLabel_tmpl.hrc#WORKAROUND.7.stringlist.text
-msgid "Below"
-msgstr "Islaw"
+#: source/controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_SIMPLE.String.Text
+msgid  "Simple"
+msgstr "Syml"
 
-#: res_DataLabel_tmpl.hrc#WORKAROUND.8.stringlist.text
-msgid "Bottom right"
-msgstr "Gwaelod de"
+#: source/controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_REALISTIC.String.Text
+msgid  "Realistic"
+msgstr "Realistig"
 
-#: res_DataLabel_tmpl.hrc#WORKAROUND.9.stringlist.text
-msgid "Right"
-msgstr "De"
+#: source/controller/dialogs/Strings_AdditionalControls.src#STR_3DSCHEME_CUSTOM.String.Text
+msgid  "Custom"
+msgstr "Addasu"
 
-#: res_DataLabel_tmpl.hrc#WORKAROUND.10.stringlist.text
-msgid "Top right"
-msgstr "Brig de"
+#: source/controller/dialogs/Strings_AdditionalControls.src#STR_BAR_GEOMETRY.String.Text
+msgid  "Shape"
+msgstr "Siâp"
 
-#: res_DataLabel_tmpl.hrc#WORKAROUND.11.stringlist.text
-msgid "Inside"
-msgstr "Tu fewn"
+#: source/controller/dialogs/Strings_AdditionalControls.src#STR_NUMBER_OF_LINES.String.Text
+msgid  "~Number of lines"
+msgstr "~Nifer o linellau"
 
-#: res_DataLabel_tmpl.hrc#WORKAROUND.12.stringlist.text
-msgid "Outside"
-msgstr "Tu allan"
+#: source/controller/dialogs/Strings_AdditionalControls.src#STR_TEXT_SEPARATOR.String.Text
+msgid  "Separator"
+msgstr "Ymwahannydd"
 
-#: res_DataLabel_tmpl.hrc#WORKAROUND.13.stringlist.text
-msgid "Near origin"
-msgstr "Ger y ffynhonell"
+#: source/controller/dialogs/tp_Location.src#TP_LOCATION.FL_TABLE.FixedLine.Text
+msgid  "Place chart"
+msgstr "Gosod y siart"
 
-#: res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL__xpos__ypos__.CB_VALUE_AS_NUMBER.checkbox.text
-msgid "Show value as ~number"
-msgstr "Dangos gwerth fel ~rhif"
+#: source/controller/dialogs/tp_Location.src#TP_LOCATION.FT_TABLE.FixedText.Text
+msgid  "~Insert in sheet"
+msgstr "~Mewnosod mewn dalen"
 
-#: res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL__xpos__ypos__.PB_NUMBERFORMAT.pushbutton.text
-msgid "Number ~format..."
-msgstr "~Fformat rhif..."
+#: source/controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.item1.StringList.item
+msgid  "Box"
+msgstr "Blwch"
 
-#: res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL__xpos__ypos__.CB_VALUE_AS_PERCENTAGE.checkbox.text
-msgid "Show value as ~percentage"
-msgstr "Dangos gwerth fel ~canran"
+#: source/controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.item2.StringList.item
+msgid  "Cylinder"
+msgstr "Silindr"
 
-#: res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL__xpos__ypos__.PB_PERCENT_NUMBERFORMAT.pushbutton.text
-msgid "Percentage f~ormat..."
-msgstr "Ff~ormat canran..."
+#: source/controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.item3.StringList.item
+msgid  "Cone"
+msgstr "Con"
 
-#: res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL__xpos__ypos__.CB_CATEGORY.checkbox.text
-msgid "Show ~category"
-msgstr "Dangos ~categori"
+#: source/controller/dialogs/res_BarGeometry.src#LB_BAR_GEOMETRY.item4.StringList.item
+msgid  "Pyramid"
+msgstr "Pyramid"
 
-#: res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL__xpos__ypos__.CB_SYMBOL.checkbox.text
-msgid "Show ~legend key"
-msgstr "~Dangos eicon allwedd gyda label"
+#: source/controller/dialogs/dlg_DataSource.src#DLG_DATA_SOURCE.TabDialog.Text
+msgid  "Data Ranges"
+msgstr "Ystod Data"
 
-#: res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL__xpos__ypos__.FT_LABEL_PLACEMENT.fixedtext.text
-msgid "Place~ment"
-msgstr "~Lleoli"
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_COLUMN.String.Text
+msgid  "Column"
+msgstr "Colofn"
 
-#: res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL__xpos__ypos__.FL_LABEL_ROTATE.fixedline.text
-msgid "Rotate Text"
-msgstr "Troi ~Testun"
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_BAR.String.Text
+msgid  "Bar"
+msgstr "Bar"
 
-#: res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL__xpos__ypos__.FT_LABEL_DEGREES.fixedtext.text
-msgctxt "res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL__xpos__ypos__.FT_LABEL_DEGREES.fixedtext.text"
-msgid "~Degrees"
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_AREA.String.Text
+msgid  "Area"
+msgstr "Ardal"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_PIE.String.Text
+msgid  "Pie"
+msgstr "Cylch"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_PIE_EXPLODED.String.Text
+msgid  "Exploded Pie Chart"
+msgstr "Siart Cylch Taenedig"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_DONUT_EXPLODED.String.Text
+msgid  "Exploded Donut Chart"
+msgstr "Siart Toesen Taenedig"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_DONUT.String.Text
+msgid  "Donut"
+msgstr "Toesen"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_LINE.String.Text
+msgid  "Line"
+msgstr "Llinell"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_XY.String.Text
+msgid  "XY (Scatter)"
+msgstr "XY (Chwâl)"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_POINTS_AND_LINES.String.Text
+msgid  "Points and Lines"
+msgstr "Pwyntiau a Llinellau"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_POINTS_ONLY.String.Text
+msgid  "Points Only"
+msgstr "Pwyntiau'n unig"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_LINES_ONLY.String.Text
+msgid  "Lines Only"
+msgstr "Llinellau yn Unig"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_LINES_3D.String.Text
+msgid  "3D Lines"
+msgstr "Llinellau 3D"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_COMBI_COLUMN_LINE.String.Text
+msgid  "Column and Line"
+msgstr "Colofn a Llinell"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_LINE_COLUMN.String.Text
+msgid  "Columns and Lines"
+msgstr "Siart Cyfuniad: Llinellau a Cholofnau"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_LINE_STACKEDCOLUMN.String.Text
+msgid  "Stacked Columns and Lines"
+msgstr "Siart Cyfuniad: Llinellau a cholofnau wedi stacio"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_NET.String.Text
+msgid  "Net"
+msgstr "Rhwyd"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_STOCK.String.Text
+msgid  "Stock"
+msgstr "Stoc"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_STOCK_1.String.Text
+msgid  "Stock Chart 1"
+msgstr "Siart Stoc 1"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_STOCK_2.String.Text
+msgid  "Stock Chart 2"
+msgstr "Siart Stoc 2"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_STOCK_3.String.Text
+msgid  "Stock Chart 3"
+msgstr "Siart Stoc 3"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_STOCK_4.String.Text
+msgid  "Stock Chart 4"
+msgstr "Siart Stoc 4"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_NORMAL.String.Text
+msgid  "Normal"
+msgstr "Normal"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_STACKED.String.Text
+msgid  "Stacked"
+msgstr "Staciwyd"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_PERCENT.String.Text
+msgid  "Percent Stacked"
+msgstr "Canran"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_DEEP.String.Text
+msgid  "Deep"
+msgstr "Dwfn"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_FILLED.String.Text
+msgid  "Filled"
+msgstr "Llanwyd"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_TYPE_BUBBLE.String.Text
+msgid  "Bubble"
+msgstr "Swigen"
+
+#: source/controller/dialogs/Strings_ChartTypes.src#STR_BUBBLE_1.String.Text
+msgid  "Bubble Chart"
+msgstr "Siart Swigen"
+
+#: source/controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.TabDialog.Text
+msgid  "Character"
+msgstr "Nod"
+
+#: source/controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_NAME.PageItem.Text
+msgid  "Font"
+msgstr "Font"
+
+#: source/controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_EFFECTS.PageItem.Text
+msgid  "Font Effects"
+msgstr "Effeithiau"
+
+#: source/controller/dialogs/dlg_ShapeFont.src#DLG_SHAPE_FONT.1.RID_SVXPAGE_CHAR_POSITION.PageItem.Text
+msgid  "Font Position"
+msgstr "Font Position"
+
+#: source/controller/dialogs/dlg_View3D.src#DLG_3D_VIEW.TabDialog.Text
+msgid  "3D View"
+msgstr "Golwg 3D"
+
+#: source/controller/dialogs/Strings_Scale.src#STR_INVALID_NUMBER.String.Text
+msgid  "Numbers are required. Check your input."
+msgstr "Mae angen rhifau. Gwiriwch eich mewnbwn."
+
+#: source/controller/dialogs/Strings_Scale.src#STR_STEP_GT_ZERO.String.Text
+msgid  "The major interval requires a positive number. Check your input."
+msgstr "Mae'r cyfwng mawr angen rhif positif. Gwiriwch eich mewnbwn."
+
+#: source/controller/dialogs/Strings_Scale.src#STR_BAD_LOGARITHM.String.Text
+msgid  "The logarithmic scale requires positive numbers. Check your input."
+msgstr "Mae'r graddfa logarithmig angen rhifau positif. Gwiriwch eich mewnbwn."
+
+#: source/controller/dialogs/Strings_Scale.src#STR_MIN_GREATER_MAX.String.Text
+msgid  "The minimum must be lower than the maximum. Check your input."
+msgstr "Rhaid i'r lleiafswm fod yn llai na'r uchafswm. Gwiriwch eich mewnbwn."
+
+#: source/controller/dialogs/Strings_Scale.src#STR_INVALID_INTERVALS.String.Text
+msgid  "The major interval needs to be greater than the minor interval. Check your input."
+msgstr ""
+
+#: source/controller/dialogs/Strings_Scale.src#STR_INVALID_TIME_UNIT.String.Text
+msgid  "The major and minor interval need to be greater or equal to the resolution. Check your input."
+msgstr ""
+
+#: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.ModalDialog.Text
+msgid  "Data Table"
+msgstr "Tabl Data"
+
+#: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_ROW.ToolBoxItem.Text
+msgid  "Insert Row"
+msgstr "Mewnosod Rhes"
+
+#: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_COL.ToolBoxItem.Text
+msgid  "Insert Series"
+msgstr "Mewnosod Cyfres"
+
+#: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_INSERT_TEXT_COL.ToolBoxItem.Text
+msgid  "Insert Text Column"
+msgstr "Mewnosod Colofn Testun"
+
+#: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_DELETE_ROW.ToolBoxItem.Text
+msgid  "Delete Row"
+msgstr "Dileu Rhes"
+
+#: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_DELETE_COL.ToolBoxItem.Text
+msgid  "Delete Series"
+msgstr "Dileu Cyfres"
+
+#: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_SWAP_COL.ToolBoxItem.Text
+msgid  "Move Series Right"
+msgstr "Symud Cyfres i'r Dde"
+
+#: source/controller/dialogs/dlg_DataEditor.src#DLG_DIAGRAM_DATA.TBX_DATA.TBI_DATA_SWAP_ROW.ToolBoxItem.Text
+msgid  "Move Row Down"
+msgstr "Symud Cyfres i Lawr"
+
+#: source/controller/dialogs/tp_Scale.src#STR_LIST_TIME_UNIT.item1.StringList.item
+msgid  "Days"
+msgstr "Dyddiau"
+
+#: source/controller/dialogs/tp_Scale.src#STR_LIST_TIME_UNIT.item2.StringList.item
+msgid  "Months"
+msgstr "Misoedd"
+
+#: source/controller/dialogs/tp_Scale.src#STR_LIST_TIME_UNIT.item3.StringList.item
+msgid  "Years"
+msgstr "Blynyddoedd"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.FL_SCALE.FixedLine.Text
+msgid  "Scale"
+msgstr "Graddfa"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.CBX_REVERSE.CheckBox.Text
+msgid  "~Reverse direction"
+msgstr "~Gwrthdroi cyfeiriad"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.CBX_LOGARITHM.CheckBox.Text
+msgid  "~Logarithmic scale"
+msgstr "~Graddfa logarithmig"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.TXT_AXIS_TYPE.FixedText.Text
+msgid  "T~ype"
+msgstr "~Math"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.item1.StringList.item
+msgid  "Automatic"
+msgstr "Awtomatig"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.item2.StringList.item
+msgid  "Text"
+msgstr "Testun"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.LB_AXIS_TYPE.item3.StringList.item
+msgid  "Date"
+msgstr "Dyddiad"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.TXT_MIN.FixedText.Text
+msgid  "~Minimum"
+msgstr "~Lleiafswm"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_MIN.CheckBox.Text
+msgid  "~Automatic"
+msgstr "~Awtomatig"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.TXT_MAX.FixedText.Text
+msgid  "Ma~ximum"
+msgstr "~Uchafswm"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_MAX.CheckBox.Text
+msgid  "A~utomatic"
+msgstr "~Awtomatig"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.TXT_TIME_RESOLUTION.FixedText.Text
+msgid  "R~esolution"
+msgstr "~Cydraniad"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_TIME_RESOLUTION.CheckBox.Text
+msgid  "Automat~ic"
+msgstr "Awtomat~ig"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_MAIN.FixedText.Text
+msgid  "Ma~jor interval"
+msgstr "Cyfwng ~mwyaf"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_STEP_MAIN.CheckBox.Text
+msgid  "Au~tomatic"
+msgstr "Aw~tomatig"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_HELP_COUNT.FixedText.Text
+msgid  "Minor inter~val count"
+msgstr "C~yfrif cyfwng mwyaf:"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.TXT_STEP_HELP.FixedText.Text
+msgid  "Minor inter~val"
+msgstr "Cyfwng ~lleiaf"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_STEP_HELP.CheckBox.Text
+msgid  "Aut~omatic"
+msgstr "Awt~omatig"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.TXT_ORIGIN.FixedText.Text
+msgid  "Re~ference value"
+msgstr "~Gwerth cyfeirio"
+
+#: source/controller/dialogs/tp_Scale.src#TP_SCALE.CBX_AUTO_ORIGIN.CheckBox.Text
+msgid  "Automat~ic"
+msgstr "Awtomat~ig"
+
+#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.1.FixedLine.Text
+msgid  "Align data series to"
+msgstr "Alinio cyfres data i"
+
+#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RBT_OPT_AXIS_1.RadioButton.Text
+msgid  "Primary Y axis"
+msgstr "Echel Y cynradd"
+
+#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RBT_OPT_AXIS_2.RadioButton.Text
+msgid  "Secondary Y axis"
+msgstr "Ail echel Y"
+
+#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.GB_BAR.FixedLine.Text
+msgid  "Settings"
+msgstr "Gosodiadau"
+
+#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_OVERLAP.FixedText.Text
+msgid  "~Overlap"
+msgstr "~Gorgyffyrddiad"
+
+#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_GAP.FixedText.Text
+msgid  "~Spacing"
+msgstr "~Bylchu"
+
+#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_CONNECTOR.CheckBox.Text
+msgid  "Connection lines"
+msgstr "Llinellau Cyswllt"
+
+#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_BARS_SIDE_BY_SIDE.CheckBox.Text
+msgid  "Show ~bars side by side"
+msgstr "Dangos ~barau ochr yn ochr"
+
+#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FL_PLOT_OPTIONS.FixedLine.Text
+msgid  "Plot options"
+msgstr "Dewisiadau plotio"
+
+#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.FT_MISSING_VALUES.FixedText.Text
+msgid  "Plot missing values"
+msgstr "Plotio gwerthoedd coll"
+
+#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RB_DONT_PAINT.RadioButton.Text
+msgid  "~Leave gap"
+msgstr "~Gadael bwlch"
+
+#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RB_ASSUME_ZERO.RadioButton.Text
+msgid  "~Assume zero"
+msgstr "~Tybio sero"
+
+#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.RB_CONTINUE_LINE.RadioButton.Text
+msgid  "~Continue line"
+msgstr "~Parhau'r llinell"
+
+#: source/controller/dialogs/tp_SeriesToAxis.src#TP_OPTIONS.CB_INCLUDE_HIDDEN_CELLS.CheckBox.Text
+msgid  "Include ~values from hidden cells"
+msgstr "Cynnwys gwerthoedd o gelloedd cudd"
+
+#: source/controller/dialogs/tp_3D_SceneIllumination.src#TP_3D_SCENEILLUMINATION.FT_LIGHTSOURCE.FixedText.Text
+msgid  "~Light source"
+msgstr "~Ffynhonell Golau"
+
+#: source/controller/dialogs/tp_3D_SceneIllumination.src#TP_3D_SCENEILLUMINATION.FT_AMBIENTLIGHT.FixedText.Text
+msgid  "~Ambient light"
+msgstr "~Golau Amgylchynol"
+
+#: source/controller/dialogs/tp_3D_SceneIllumination.src#STR_LIGHT_PREVIEW.String.Text
+msgid  "Light Preview"
+msgstr "Rhagolwg Golau"
+
+#: source/controller/dialogs/Strings_Statistic.src#STR_INDICATE_BOTH.String.Text
+msgid  "Negative and Positive"
+msgstr "Dangosyddion Brig a Gwaelod"
+
+#: source/controller/dialogs/Strings_Statistic.src#STR_INDICATE_DOWN.String.Text
+msgid  "Negative"
+msgstr "Dangosydd Isaf"
+
+#: source/controller/dialogs/Strings_Statistic.src#STR_INDICATE_UP.String.Text
+msgid  "Positive"
+msgstr "Dangosydd Uchaf"
+
+#: source/controller/dialogs/Strings_Statistic.src#STR_CONTROLTEXT_ERROR_BARS_FROM_DATA.String.Text
+msgid  "From Data Table"
+msgstr "O'r Tabl Data"
+
+#: source/controller/dialogs/Strings_Statistic.src#STR_REGRESSION_LINEAR.String.Text
+msgid  "Linear (%SERIESNAME)"
+msgstr "Llinol (%SERIESNAME)"
+
+#: source/controller/dialogs/Strings_Statistic.src#STR_REGRESSION_LOG.String.Text
+msgid  "Logarithmic (%SERIESNAME)"
+msgstr "Logarithmig (%SERIESNAME)"
+
+#: source/controller/dialogs/Strings_Statistic.src#STR_REGRESSION_EXP.String.Text
+msgid  "Exponential (%SERIESNAME)"
+msgstr "Esbonyddol (%SERIESNAME)"
+
+#: source/controller/dialogs/Strings_Statistic.src#STR_REGRESSION_POWER.String.Text
+msgid  "Power (%SERIESNAME)"
+msgstr "Pŵer (%SERIESNAME)"
+
+#: source/controller/dialogs/Strings_Statistic.src#STR_REGRESSION_MEAN.String.Text
+msgid  "Mean (%SERIESNAME)"
+msgstr "Pŵer (%SERIESNAME)"
+
+#: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.FT_CHARTTYPE.FixedText.Text
+msgid  "Choose a chart type"
+msgstr "Dewiswch y math o siart"
+
+#: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_X_AXIS_CATEGORIES.CheckBox.Text
+msgid  "X axis with Categories"
+msgstr "Echel X gyda Chategorïau"
+
+#: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_3D_LOOK.CheckBox.Text
+msgid  "~3D Look"
+msgstr "Golwg ~3D"
+
+#: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_STACKED.CheckBox.Text
+msgid  "~Stack series"
+msgstr "~Pentyrru cyfres"
+
+#: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Y.RadioButton.Text
+msgid  "On top"
+msgstr "Ar y brig"
+
+#: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Y_PERCENT.RadioButton.Text
+msgid  "Percent"
+msgstr "Canran"
+
+#: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.RB_STACK_Z.RadioButton.Text
+msgid  "Deep"
+msgstr "Dwfn"
+
+#: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_SPLINES.CheckBox.Text
+msgid  "S~mooth lines"
+msgstr "~Llinellau llyfn"
+
+#: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.PB_SPLINE_DIALOG.PushButton.Text
+msgid  "Properties..."
+msgstr "Priodweddau..."
+
+#: source/controller/dialogs/tp_ChartType.src#TP_CHARTTYPE.CB_XVALUE_SORTING.CheckBox.Text
+msgid  "~Sort by X values"
+msgstr "~Trefnu yn ôl gwerthoedd X"
+
+#: source/controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.RB_SPLINES_CUBIC.RadioButton.Text
+msgid  "Cubic spline"
+msgstr "Sblein ciwbig"
+
+#: source/controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.RB_SPLINES_B.RadioButton.Text
+msgid  "B-Spline"
+msgstr "B-Spline"
+
+#: source/controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.FT_SPLINE_RESOLUTION.FixedText.Text
+msgid  "~Resolution"
+msgstr "~Cydraniad"
+
+#: source/controller/dialogs/tp_ChartType.src#DLG_SPLINE_PROPERTIES.FT_SPLINE_ORDER.FixedText.Text
+msgid  "~Data points order"
+msgstr "~Trefn pwyntiau data"
+
+#: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_CAPTION_FOR_WIZARD.FixedText.Text
+msgid  "Customize data ranges for individual data series"
+msgstr "Addasu ystodau data ar gyfer cyfresi data unigol"
+
+#: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_SERIES.FixedText.Text
+msgid  "Data ~series"
+msgstr "~Cyfres data"
+
+#: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_ROLE.FixedText.Text
+msgid  "~Data ranges"
+msgstr "~Ystod data"
+
+#: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_RANGE.FixedText.Text
+msgid  "Ran~ge for %VALUETYPE"
+msgstr "Y~stod %VALUETYPE"
+
+#: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_CATEGORIES.FixedText.Text
+msgid  "~Categories"
+msgstr "~Categorïau"
+
+#: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.FT_DATALABELS.FixedText.Text
+msgid  "Data ~labels"
+msgstr "Labeli ~data"
+
+#: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.BTN_ADD.PushButton.Text
+msgid  "~Add"
+msgstr "~Ychwanegu"
+
+#: source/controller/dialogs/tp_DataSource.src#TP_DATA_SOURCE.BTN_REMOVE.PushButton.Text
+msgid  "~Remove"
+msgstr "~Tynnu"
+
+#: source/controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.FT_CAPTION_FOR_WIZARD.FixedText.Text
+msgid  "Choose a data range"
+msgstr "Dewis ystod data"
+
+#: source/controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.FT_RANGE.FixedText.Text
+msgid  "~Data range"
+msgstr "~Ystod Data"
+
+#: source/controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.RB_DATAROWS.RadioButton.Text
+msgid  "Data series in ~rows"
+msgstr "Cyfres data mewn ~rhesi"
+
+#: source/controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.RB_DATACOLS.RadioButton.Text
+msgid  "Data series in ~columns"
+msgstr "Ystod data mewn ~colofnau"
+
+#: source/controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.CB_FIRST_ROW_ASLABELS.CheckBox.Text
+msgid  "~First row as label"
+msgstr "~Rhes gyntaf fel label"
+
+#: source/controller/dialogs/tp_RangeChooser.src#TP_RANGECHOOSER.CB_FIRST_COLUMN_ASLABELS.CheckBox.Text
+msgid  "F~irst column as label"
+msgstr "~Colofn gyntaf fel label"
+
+#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_SCHOW_DESCR.CheckBox.Text
+msgid  "Sho~w labels"
+msgstr "~Dangos labeli"
+
+#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_ORIENTATION.FixedLine.Text
+msgid  "Text orientation"
+msgstr "Cyfeiriadeddi testun"
+
+#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.PB_AXIS_LABEL_TEXTSTACKED.TriStateBox.Text
+msgid  "Ve~rtically stacked"
+msgstr "~Staciwyd yn fertigol"
+
+#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FT_AXIS_LABEL_DEGREES.FixedText.Text
+msgid  "~Degrees"
 msgstr "~Graddau"
 
-#: res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL__xpos__ypos__.FT_LABEL_TEXTDIR.fixedtext.text
-msgctxt "res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL__xpos__ypos__.FT_LABEL_TEXTDIR.fixedtext.text"
-msgid "Te~xt direction"
+#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_TEXTFLOW.FixedLine.Text
+msgid  "Text flow"
+msgstr "Llif testun"
+
+#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_TEXTOVERLAP.CheckBox.Text
+msgid  "O~verlap"
+msgstr "~Gorgyffyrddiad"
+
+#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.CB_AXIS_LABEL_TEXTBREAK.CheckBox.Text
+msgid  "~Break"
+msgstr "~Toriad"
+
+#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FL_AXIS_LABEL_ORDER.FixedLine.Text
+msgid  "Order"
+msgstr "Trefn"
+
+#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_SIDEBYSIDE.RadioButton.Text
+msgid  "~Tile"
+msgstr "~Teilio"
+
+#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_UPDOWN.RadioButton.Text
+msgid  "St~agger odd"
+msgstr "Darwahanu ~odrif"
+
+#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_DOWNUP.RadioButton.Text
+msgid  "Stagger ~even"
+msgstr "Darwahanu ~eilrif"
+
+#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.RB_AXIS_LABEL_AUTOORDER.RadioButton.Text
+msgid  "A~utomatic"
+msgstr "~Awtomatig"
+
+#: source/controller/dialogs/tp_AxisLabel.src#TP_AXIS_LABEL.FT_AXIS_TEXTDIR.FixedText.Text
+msgid  "Te~xt direction"
+msgstr "C~yfeiriad testun"
+
+#: source/controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.item1.StringList.item
+msgid  "Space"
+msgstr "Bwlch"
+
+#: source/controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.item2.StringList.item
+msgid  "Comma"
+msgstr "Atalnod"
+
+#: source/controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.item3.StringList.item
+msgid  "Semicolon"
+msgstr "Hanner colon"
+
+#: source/controller/dialogs/res_TextSeparator.src#LB_TEXT_SEPARATOR.item4.StringList.item
+msgid  "New line"
+msgstr "Llinell newydd"
+
+#: source/controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.FT_SCHEME.FixedText.Text
+msgid  "Sche~me"
+msgstr "~Cynllun"
+
+#: source/controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_SHADING.CheckBox.Text
+msgid  "~Shading"
+msgstr "~Cysgodi"
+
+#: source/controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_OBJECTLINES.CheckBox.Text
+msgid  "~Object borders"
+msgstr "~Borderi gwrthrychau"
+
+#: source/controller/dialogs/tp_3D_SceneAppearance.src#TP_3D_SCENEAPPEARANCE.CB_ROUNDEDEDGE.Checkbox.Text
+msgid  "~Rounded edges"
+msgstr "~Ymylon crwn"
+
+#: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_AXIS.FixedLine.Text
+msgid  "Axes"
+msgstr "Prif echel"
+
+#: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_PRIMARY_GRID.FixedLine.Text
+msgid  "Major grids"
+msgstr "Prif grid"
+
+#: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_X_PRIMARY.CheckBox.Text
+msgid  "~X axis"
+msgstr "Echel ~X"
+
+#: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Y_PRIMARY.CheckBox.Text
+msgid  "~Y axis"
+msgstr "Echel ~Y"
+
+#: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.CB_Z_PRIMARY.CheckBox.Text
+msgid  "~Z axis"
+msgstr "Echel ~Z"
+
+#: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_AXIS.FixedLine.Text
+msgid  "Secondary axes"
+msgstr "Echel eilradd"
+
+#: source/controller/dialogs/dlg_InsertAxis_Grid.src#DLG_AXIS_OR_GRID.FL_SECONDARY_GRID.FixedLine.Text
+msgid  "Minor grids"
+msgstr "Grid lleiaf"
+
+#: source/controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.GRP_LEGEND.FixedLine.Text
+msgid  "Position"
+msgstr "Safle"
+
+#: source/controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.FL_LEGEND_TEXTORIENT.FixedLine.Text
+msgid  "Text orientation"
+msgstr "Cyfeiriadedd testun"
+
+#: source/controller/dialogs/tp_LegendPosition.src#TP_LEGEND_POS.FT_LEGEND_TEXTDIR.FixedText.Text
+msgid  "Te~xt direction"
+msgstr "C~yfeiriad testun"
+
+#: source/controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.BTN_TXTSTACKED.TriStateBox.Text
+msgid  "Ve~rtically stacked"
+msgstr "~Staciwyd yn fertigol"
+
+#: source/controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FT_DEGREES.FixedText.Text
+msgid  "~Degrees"
+msgstr "~Graddau"
+
+#: source/controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FL_ALIGN.FixedLine.Text
+msgid  "Text orientation"
+msgstr "Cyfeiriad testun"
+
+#: source/controller/dialogs/tp_TitleRotation.src#TP_ALIGNMENT.FT_TEXTDIR.FixedText.Text
+msgid  "Te~xt direction"
+msgstr "Cyfeiriad ~testun"
+
+#: source/controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.TabDialog.Text
+msgid  "Paragraph"
+msgstr "Paragraph"
+
+#: source/controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_STD_PARAGRAPH.PageItem.Text
+msgid  "Indents & Spacing"
+msgstr "Mewnoliad a Bylchu"
+
+#: source/controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PageItem.Text
+msgid  "Alignment"
+msgstr "Aliniad"
+
+#: source/controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_PARA_ASIAN.PageItem.Text
+msgid  "Asian Typography"
+msgstr "Typograffeg Asiaidd"
+
+#: source/controller/dialogs/dlg_ShapeParagraph.src#DLG_SHAPE_PARAGRAPH.1.RID_SVXPAGE_TABULATOR.PageItem.Text
+msgid  "Tab"
+msgstr "Tab"
+
+#: source/controller/dialogs/Strings.src#STR_DLG_CHART_WIZARD.String.Text
+msgid  "Chart Wizard"
+msgstr "Dewin Siart"
+
+#: source/controller/dialogs/Strings.src#STR_DLG_SMOOTH_LINE_PROPERTIES.String.Text
+msgid  "Smooth Lines"
+msgstr "Llinellau Llyfn"
+
+#: source/controller/dialogs/Strings.src#STR_DLG_NUMBERFORMAT_FOR_PERCENTAGE_VALUE.String.Text
+msgid  "Number Format for Percentage Value"
+msgstr "Fformat Rhif Gwerth Canran"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_CHARTTYPE.String.Text
+msgid  "Chart Type"
+msgstr "Math o Siart"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_DATA_RANGE.String.Text
+msgid  "Data Range"
+msgstr "Ystod Data"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_CHART_ELEMENTS.String.Text
+msgid  "Chart Elements"
+msgstr "Elfennau Siart"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_CHART_LOCATION.String.Text
+msgid  "Chart Location"
+msgstr "Lleoliad Siart"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_LINE.String.Text
+msgid  "Line"
+msgstr "Llinell"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_BORDER.String.Text
+msgid  "Borders"
+msgstr "Borderi"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_AREA.String.Text
+msgid  "Area"
+msgstr "Ardal"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_TRANSPARENCY.String.Text
+msgid  "Transparency"
+msgstr "Tryloywder"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_FONT.String.Text
+msgid  "Font"
+msgstr "Font"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_FONT_EFFECTS.String.Text
+msgid  "Font Effects"
+msgstr "Effeithiau"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_NUMBERS.String.Text
+msgid  "Numbers"
+msgstr "Rhifau"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_POSITION.String.Text
+msgid  "Position"
+msgstr "Safle"
+
+#: source/controller/dialogs/Strings.src#STR_BUTTON_UP.String.Text
+msgid  "Up"
+msgstr "I Fyny"
+
+#: source/controller/dialogs/Strings.src#STR_BUTTON_DOWN.String.Text
+msgid  "Down"
+msgstr "I Lawr"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_LAYOUT.String.Text
+msgid  "Layout"
+msgstr "Cynllun"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_OPTIONS.String.Text
+msgid  "Options"
+msgstr "Dewisiadau"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_SCALE.String.Text
+msgid  "Scale"
+msgstr "Graddfa"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_POSITIONING.String.Text
+msgid  "Positioning"
+msgstr "Lleoli"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_TRENDLINE_TYPE.String.Text
+msgid  "Type"
+msgstr "Math"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_YERROR_BARS.String.Text
+msgid  "Y Error Bars"
+msgstr "Barrau Gwall Y"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_ALIGNMENT.String.Text
+msgid  "Alignment"
+msgstr "Aliniad"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_PERSPECTIVE.String.Text
+msgid  "Perspective"
+msgstr "Perspectif"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_APPEARANCE.String.Text
+msgid  "Appearance"
+msgstr "Gwedd"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_ILLUMINATION.String.Text
+msgid  "Illumination"
+msgstr "Goleuad"
+
+#: source/controller/dialogs/Strings.src#STR_PAGE_ASIAN.String.Text
+msgid  "Asian Typography"
+msgstr "Typograffeg Asiaidd"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE_WITH_PARAMETERS.String.Text
+msgid  "Mean value line with value %AVERAGE_VALUE and standard deviation %STD_DEVIATION"
+msgstr ""
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS.String.Text
+msgid  "Axis"
+msgstr "Echel"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS_X.String.Text
+msgid  "X Axis"
+msgstr "Echel X"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS_Y.String.Text
+msgid  "Y Axis"
+msgstr "Echel Y"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_AXIS_Z.String.Text
+msgid  "Z Axis"
+msgstr "Echel Z"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_SECONDARY_X_AXIS.String.Text
+msgid  "Secondary X Axis"
+msgstr "Ail echel X"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_SECONDARY_Y_AXIS.String.Text
+msgid  "Secondary Y Axis"
+msgstr "Ail echel Y"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_AXES.String.Text
+msgid  "Axes"
+msgstr "Echeli"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_GRIDS.String.Text
+msgid  "Grids"
+msgstr "Gridiau"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_GRID.String.Text
+msgid  "Grid"
+msgstr "Grid"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_GRID_MAJOR_X.String.Text
+msgid  "X Axis Major Grid"
+msgstr "Grid Mawr Echel X"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_GRID_MAJOR_Y.String.Text
+msgid  "Y Axis Major Grid"
+msgstr "Grid Mawr Echel Y"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_GRID_MAJOR_Z.String.Text
+msgid  "Z Axis Major Grid"
+msgstr "Grid Mawr Echel Z"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_GRID_MINOR_X.String.Text
+msgid  "X Axis Minor Grid"
+msgstr "Grid Bach Echel X"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_GRID_MINOR_Y.String.Text
+msgid  "Y Axis Minor Grid"
+msgstr "Grid Bach Echel Y"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_GRID_MINOR_Z.String.Text
+msgid  "Z Axis Minor Grid"
+msgstr "Grid Bach Echel Z"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_LEGEND.String.Text
+msgid  "Legend"
+msgstr "Allwedd"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE.String.Text
+msgid  "Title"
+msgstr "Teitl"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_TITLES.String.Text
+msgid  "Titles"
+msgstr "Teitlau"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_MAIN.String.Text
+msgid  "Main Title"
+msgstr "Prif Deitl"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_SUB.String.Text
+msgid  "Subtitle"
+msgstr "Is Deitl"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_X_AXIS.String.Text
+msgid  "X Axis Title"
+msgstr "Teitl Echel X"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_Y_AXIS.String.Text
+msgid  "Y Axis Title"
+msgstr "Teitl Echel Y"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_Z_AXIS.String.Text
+msgid  "Z Axis Title"
+msgstr "Teitl Echel Z"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_SECONDARY_X_AXIS.String.Text
+msgid  "Secondary X Axis Title"
+msgstr "Teitl Echelin X Eilradd"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_TITLE_SECONDARY_Y_AXIS.String.Text
+msgid  "Secondary Y Axis Title"
+msgstr "Teitl Echelin Y Eilradd"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_LABEL.String.Text
+msgid  "Label"
+msgstr "Label"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_DATALABELS.String.Text
+msgid  "Data Labels"
+msgstr "Labeli Data"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_DATAPOINT.String.Text
+msgid  "Data Point"
+msgstr "Pwynt Data"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_DATAPOINTS.String.Text
+msgid  "Data Points"
+msgstr "Pwyntiau Data"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_LEGEND_SYMBOL.String.Text
+msgid  "Legend Key"
+msgstr "Allwedd Esboniad"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_DATASERIES.String.Text
+msgid  "Data Series"
+msgstr "Cyfres Data"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_DATASERIES_PLURAL.String.Text
+msgid  "Data Series"
+msgstr "Cyfres Data"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_CURVE.String.Text
+msgid  "Trend Line"
+msgstr "Llinell Tuedd"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_CURVES.String.Text
+msgid  "Trend Lines"
+msgstr "Llinellau Tuedd"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_CURVE_WITH_PARAMETERS.String.Text
+msgid  "Trend line %FORMULA with accuracy R² = %RSQUARED"
+msgstr "Cromlin atchweliad %FORMULA gyda chywirdeg R² = %RSQUARED"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_AVERAGE_LINE.String.Text
+msgid  "Mean Value Line"
+msgstr "Llinell Gwerth Cyfartalog"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_CURVE_EQUATION.String.Text
+msgid  "Equation"
+msgstr "Gafaliad"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_ERROR_BARS.String.Text
+msgid  "Error Bars"
+msgstr "Bariau Gwall"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_STOCK_LOSS.String.Text
+msgid  "Stock Loss"
+msgstr "Colled Stoc"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_STOCK_GAIN.String.Text
+msgid  "Stock Gain"
+msgstr "Cynnydd Stoc"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_PAGE.String.Text
+msgid  "Chart Area"
+msgstr "Ardal Siart"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM.String.Text
+msgid  "Chart"
+msgstr "Siart"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM_WALL.String.Text
+msgid  "Chart Wall"
+msgstr "Wal Siart"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_DIAGRAM_FLOOR.String.Text
+msgid  "Chart Floor"
+msgstr "Llawr Siart"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_SHAPE.String.Text
+msgid  "Drawing Object"
+msgstr "Gwrthrych Lluniadu"
+
+#: source/controller/dialogs/Strings.src#STR_TIP_SELECT_RANGE.String.Text
+msgid  "Select data range"
+msgstr "Dewis ystod data"
+
+#: source/controller/dialogs/Strings.src#STR_TIP_CHOOSECOLOR.String.Text
+msgid  "Select a color using the color dialog"
+msgstr "Dewiswch liw gan ddefnyddio'r deialog lliw"
+
+#: source/controller/dialogs/Strings.src#STR_TIP_LIGHTSOURCE_X.String.Text
+msgid  "Light Source %LIGHTNUMBER"
+msgstr "Ffynhonnell golau %LIGHTNUMBER"
+
+#: source/controller/dialogs/Strings.src#STR_TIP_DATASERIES.String.Text
+msgid  "Data Series '%SERIESNAME'"
+msgstr "Cyfres Data '%SERIESNAME'"
+
+#: source/controller/dialogs/Strings.src#STR_TIP_DATAPOINT_INDEX.String.Text
+msgid  "Data Point %POINTNUMBER"
+msgstr "Pwynt Data %POINTNUMBER"
+
+#: source/controller/dialogs/Strings.src#STR_TIP_DATAPOINT_VALUES.String.Text
+msgid  "Values: %POINTVALUES"
+msgstr "Gwerth: %POINTVALUES"
+
+#: source/controller/dialogs/Strings.src#STR_TIP_DATAPOINT.String.Text
+msgid  "Data Point %POINTNUMBER, data series %SERIESNUMBER, values: %POINTVALUES"
+msgstr ""
+
+#: source/controller/dialogs/Strings.src#STR_STATUS_DATAPOINT_MARKED.String.Text
+msgid  "Data point %POINTNUMBER in data series %SERIESNUMBER selected, values: %POINTVALUES"
+msgstr ""
+
+#: source/controller/dialogs/Strings.src#STR_STATUS_OBJECT_MARKED.String.Text
+msgid  "%OBJECTNAME selected"
+msgstr "Wedi dewis %OBJECTNAME"
+
+#: source/controller/dialogs/Strings.src#STR_STATUS_PIE_SEGMENT_EXPLODED.String.Text
+msgid  "Pie exploded by %PERCENTVALUE percent"
+msgstr "Siart gylch wedi ei chwyddo gyda %PERCENTVALUE y cant "
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_FOR_SERIES.String.Text
+msgid  "%OBJECTNAME for Data Series '%SERIESNAME'"
+msgstr "%OBJECTNAME ar gyfer Cyfres Data '%SERIESNAME'"
+
+#: source/controller/dialogs/Strings.src#STR_OBJECT_FOR_ALL_SERIES.String.Text
+msgid  "%OBJECTNAME for all Data Series"
+msgstr "%OBJECTNAME ar gyfer pob Cyfres Data"
+
+#: source/controller/dialogs/Strings.src#STR_ACTION_EDIT_CHARTTYPE.String.Text
+msgid  "Edit chart type"
+msgstr "Golygu'r math o siart"
+
+#: source/controller/dialogs/Strings.src#STR_ACTION_EDIT_DATA_RANGES.String.Text
+msgid  "Edit data ranges"
+msgstr "Golygu'r ystod data"
+
+#: source/controller/dialogs/Strings.src#STR_ACTION_EDIT_3D_VIEW.String.Text
+msgid  "Edit 3D view"
+msgstr "Golygu golwg 3D"
+
+#: source/controller/dialogs/Strings.src#STR_ACTION_EDIT_CHART_DATA.String.Text
+msgid  "Edit chart data"
+msgstr "Golygu data'r siart"
+
+#: source/controller/dialogs/Strings.src#STR_ACTION_TOGGLE_LEGEND.String.Text
+msgid  "Legend on/off"
+msgstr "Esboniad ymlaen/diffodd"
+
+#: source/controller/dialogs/Strings.src#STR_ACTION_TOGGLE_GRID_HORZ.String.Text
+msgid  "Horizontal grid on/off"
+msgstr "Grid llorweddol ymlaen/diffodd"
+
+#: source/controller/dialogs/Strings.src#STR_ACTION_SCALE_TEXT.String.Text
+msgid  "Scale Text"
+msgstr "Graddio'r testun"
+
+#: source/controller/dialogs/Strings.src#STR_ACTION_REARRANGE_CHART.String.Text
+msgid  "Automatic Layout"
+msgstr "Cynllun Awtomatig"
+
+#: source/controller/dialogs/Strings.src#STR_ACTION_NOTPOSSIBLE.String.Text
+msgid  "This function cannot be completed with the selected objects."
+msgstr "Nid oes modd cwblhau'r swyddogaethau hyn gyda'r gwrthrychau dewiswyd."
+
+#: source/controller/dialogs/Strings.src#STR_ACTION_EDIT_TEXT.String.Text
+msgid  "Edit text"
+msgstr "Golygu testun"
+
+#: source/controller/dialogs/Strings.src#STR_COLUMN_LABEL.String.Text
+msgid  "Column %COLUMNNUMBER"
+msgstr "Colofn %COLUMNNUMBER"
+
+#: source/controller/dialogs/Strings.src#STR_ROW_LABEL.String.Text
+msgid  "Row %ROWNUMBER"
+msgstr "Rhes %ROWNUMBER"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_LABEL.String.Text
+msgid  "Name"
+msgstr "Enw"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_X.String.Text
+msgid  "X-Values"
+msgstr "Gwerthoedd-X"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_Y.String.Text
+msgid  "Y-Values"
+msgstr "Gwerthoedd-Y"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_SIZE.String.Text
+msgid  "Bubble Sizes"
+msgstr "Maint Swigod"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_X_ERROR.String.Text
+msgid  "X-Error-Bars"
+msgstr "Barrau-Gwall-X"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_X_ERROR_POSITIVE.String.Text
+msgid  "Positive X-Error-Bars"
+msgstr "Barrau-Gwall-X Posidol"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_X_ERROR_NEGATIVE.String.Text
+msgid  "Negative X-Error-Bars"
+msgstr "Barrau-Gwall-X Negyddol"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_Y_ERROR.String.Text
+msgid  "Y-Error-Bars"
+msgstr "Barrau-Gwall-Y"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_Y_ERROR_POSITIVE.String.Text
+msgid  "Positive Y-Error-Bars"
+msgstr "Barrau-Gwall-Y Posidol"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_Y_ERROR_NEGATIVE.String.Text
+msgid  "Negative Y-Error-Bars"
+msgstr "Barrau-Gwall-Y Negyddol "
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_FIRST.String.Text
+msgid  "Open Values"
+msgstr "Agor Gwerthoedd"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_LAST.String.Text
+msgid  "Close Values"
+msgstr "Cau Gwerthoedd"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_MIN.String.Text
+msgid  "Low Values"
+msgstr "Gwerthoedd Isel"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_MAX.String.Text
+msgid  "High Values"
+msgstr "Gwerthoedd Uchel"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_ROLE_CATEGORIES.String.Text
+msgid  "Categories"
+msgstr "Categorïau"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_UNNAMED_SERIES.String.Text
+msgid  "Unnamed Series"
+msgstr "Cyfres Dienw"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_UNNAMED_SERIES_WITH_INDEX.String.Text
+msgid  "Unnamed Series %NUMBER"
+msgstr "Cyfres Dienw %NUMBER"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_SERIES.String.Text
+msgid  "Select Range for %VALUETYPE of %SERIESNAME"
+msgstr "Dewis Ystod %VALUETYPE o %SERIESNAME"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_CATEGORIES.String.Text
+msgid  "Select Range for Categories"
+msgstr "Dewis Ystod ar gyfer Categorïau"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_DATALABELS.String.Text
+msgid  "Select Range for data labels"
+msgstr "Dewis Ystod ar gyfer labeli data"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_POSITIVE_ERRORBARS.String.Text
+msgid  "Select Range for Positive Error Bars"
+msgstr "Dewis Ystod ar gyfer Barrau Gwall Posidol"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_SELECT_RANGE_FOR_NEGATIVE_ERRORBARS.String.Text
+msgid  "Select Range for Negative Error Bars"
+msgstr "Dewis Ystod ar gyfer Barrau Gwall Negyddol"
+
+#: source/controller/dialogs/Strings.src#STR_DATA_EDITOR_INCORRECT_INPUT.String.Text
+msgid  "Your last input is incorrect.\nIgnore this change and close the dialog?"
+msgstr ""
+
+#: source/controller/dialogs/Strings.src#STR_TEXT_DIRECTION_LTR.String.Text
+msgid  "Left-to-right"
+msgstr "Chwith i'r dde"
+
+#: source/controller/dialogs/Strings.src#STR_TEXT_DIRECTION_RTL.String.Text
+msgid  "Right-to-left"
+msgstr "De i'r chwith"
+
+#: source/controller/dialogs/Strings.src#STR_TEXT_DIRECTION_SUPER.String.Text
+msgid  "Use superordinate object settings"
+msgstr "Defnyddio gosodiadau gwrthrych uwcholyn"
+
+#: source/controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.CB_CLOCKWISE.CheckBox.Text
+msgid  "~Clockwise direction"
+msgstr "~Cyfeiriad clocwedd"
+
+#: source/controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FL_STARTING_ANGLE.FixedLine.Text
+msgid  "Starting angle"
+msgstr "Ongl cychwyn"
+
+#: source/controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FT_ROTATION_DEGREES.FixedText.Text
+msgid  "~Degrees"
+msgstr "~Graddau"
+
+#: source/controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.FL_PLOT_OPTIONS_POLAR.FixedLine.Text
+msgid  "Plot options"
+msgstr "Dewisiadau plotio"
+
+#: source/controller/dialogs/tp_PolarOptions.src#TP_POLAROPTIONS.CB_INCLUDE_HIDDEN_CELLS_POLAR.CheckBox.Text
+msgid  "Include ~values from hidden cells"
+msgstr "Cynnwys ~gwerthoedd o gelloedd cudd"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_AXIS_LINE.FixedLine.Text
+msgid  "Axis line"
+msgstr "Llinell echel"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_CROSSES_OTHER_AXIS_AT.FixedText.Text
+msgid  "~Cross other axis at"
+msgstr "C~roesi echel arall yn"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.item1.StringList.item
+msgid  "Start"
+msgstr "Cychwyn"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.item2.StringList.item
+msgid  "End"
+msgstr "Diwedd"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.item3.StringList.item
+msgid  "Value"
+msgstr "Gwerth"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_CROSSES_OTHER_AXIS_AT.item4.StringList.item
+msgid  "Category"
+msgstr "Categori"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_AXIS_BETWEEN_CATEGORIES.CheckBox.Text
+msgid  "Axis ~between categories"
+msgstr "Echel ~rhwng categorïau"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_LABELS.FixedLine.Text
+msgid  "Labels"
+msgstr "Labeli"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_PLACE_LABELS.FixedText.Text
+msgid  "~Place labels"
+msgstr "~Label gosodiadau"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.item1.StringList.item
+msgid  "Near axis"
+msgstr "Echel agos"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.item2.StringList.item
+msgid  "Near axis (other side)"
+msgstr "Echel pell (ochr arall)"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.item3.StringList.item
+msgid  "Outside start"
+msgstr "Cychwyn oddi allan"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_LABELS.item4.StringList.item
+msgid  "Outside end"
+msgstr "Gorffen oddi allan"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_AXIS_LABEL_DISTANCE.FixedText.Text
+msgid  "~Distance"
+msgstr "~Pellter"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_TICKS.FixedLine.Text
+msgid  "Interval marks"
+msgstr "Marciau cyfwng"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_MAJOR.FixedText.Text
+msgid  "Major:"
+msgstr "Mwyaf:"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_TICKS_INNER.CheckBox.Text
+msgid  "~Inner"
+msgstr "~Mewnol"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_TICKS_OUTER.CheckBox.Text
+msgid  "~Outer"
+msgstr "~Allanol"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_MINOR.FixedText.Text
+msgid  "Minor:"
+msgstr "Lleiaf:"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_INNER.CheckBox.Text
+msgid  "I~nner"
+msgstr "M~ewnol"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_OUTER.CheckBox.Text
+msgid  "O~uter"
+msgstr "A~llanol"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FT_PLACE_TICKS.FixedText.Text
+msgid  "Place ~marks"
+msgstr "Marciau ~lleoliad"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.item1.StringList.item
+msgid  "At labels"
+msgstr "Label At"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.item2.StringList.item
+msgid  "At axis"
+msgstr "Ar yr echel"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.LB_PLACE_TICKS.item3.StringList.item
+msgid  "At axis and labels"
+msgstr "Wrth yr echel a'r labeli"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.FL_GRIDS.FixedLine.Text
+msgid  "Grids"
+msgstr "Gridiau"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MAJOR_GRID.CheckBox.Text
+msgid  "Show major ~grid"
+msgstr "Dangos y ~grid mwyaf"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.PB_MAJOR_GRID.PushButton.Text
+msgid  "Mo~re..."
+msgstr "M~wy..."
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.CB_MINOR_GRID.CheckBox.Text
+msgid  "~Show minor grid"
+msgstr "Dangos y ~grid lleiaf"
+
+#: source/controller/dialogs/tp_AxisPositions.src#TP_AXIS_POSITIONS.PB_MINOR_GRID.PushButton.Text
+msgid  "Mor~e..."
+msgstr "M~wy..."
+
+#: source/controller/dialogs/res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES( xpos, ypos, xOffset, yOffset ).CB_X_SECONDARY.CheckBox.Text
+msgid  "X ~axis"
+msgstr "Echel ~X"
+
+#: source/controller/dialogs/res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES( xpos, ypos, xOffset, yOffset ).CB_Y_SECONDARY.CheckBox.Text
+msgid  "Y ax~is"
+msgstr "Echel ~Y"
+
+#: source/controller/dialogs/res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES( xpos, ypos, xOffset, yOffset ).CB_Z_SECONDARY.CheckBox.Text
+msgid  "Z axi~s"
+msgstr "Echel ~Z"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item1.StringList.item
+msgid  "Best fit"
+msgstr "Ffit orau"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item2.StringList.item
+msgid  "Center"
+msgstr "Canol"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item3.StringList.item
+msgid  "Above"
+msgstr "Uwchlaw"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item4.StringList.item
+msgid  "Top left"
+msgstr "Brig chwith"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item5.StringList.item
+msgid  "Left"
+msgstr "Chwith"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item6.StringList.item
+msgid  "Bottom left"
+msgstr "Gwaelod chwith"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item7.StringList.item
+msgid  "Below"
+msgstr "Islaw"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item8.StringList.item
+msgid  "Bottom right"
+msgstr "Gwaelod de"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item9.StringList.item
+msgid  "Right"
+msgstr "De"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item10.StringList.item
+msgid  "Top right"
+msgstr "Brig de"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item11.StringList.item
+msgid  "Inside"
+msgstr "Tu fewn"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item12.StringList.item
+msgid  "Outside"
+msgstr "Tu allan"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#WORKAROUND.item13.StringList.item
+msgid  "Near origin"
+msgstr "Ger y ffynhonell"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL( xpos, ypos ).CB_VALUE_AS_NUMBER.CheckBox.Text
+msgid  "Show value as ~number"
+msgstr "Dangos gwerth fel ~rhif"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL( xpos, ypos ).PB_NUMBERFORMAT.PushButton.Text
+msgid  "Number ~format..."
+msgstr "~Fformat rhif..."
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL( xpos, ypos ).CB_VALUE_AS_PERCENTAGE.CheckBox.Text
+msgid  "Show value as ~percentage"
+msgstr "Dangos gwerth fel ~canran"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL( xpos, ypos ).PB_PERCENT_NUMBERFORMAT.PushButton.Text
+msgid  "Percentage f~ormat..."
+msgstr "Ff~ormat canran..."
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL( xpos, ypos ).CB_CATEGORY.CheckBox.Text
+msgid  "Show ~category"
+msgstr "Dangos ~categori"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL( xpos, ypos ).CB_SYMBOL.CheckBox.Text
+msgid  "Show ~legend key"
+msgstr "~Dangos eicon allwedd gyda label"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL( xpos, ypos ).FT_LABEL_PLACEMENT.FixedText.Text
+msgid  "Place~ment"
+msgstr "~Lleoli"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL( xpos, ypos ).FL_LABEL_ROTATE.FixedLine.Text
+msgid  "Rotate Text"
+msgstr "Troi ~Testun"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL( xpos, ypos ).FT_LABEL_DEGREES.FixedText.Text
+msgid  "~Degrees"
+msgstr "~Graddau"
+
+#: source/controller/dialogs/res_DataLabel_tmpl.hrc#RESOURCE_DATALABEL( xpos, ypos ).FT_LABEL_TEXTDIR.FixedText.Text
+msgid  "Te~xt direction"
 msgstr "Cyfeiriad t~estun"
 
-#: res_ErrorBar_tmpl.hrc#WORKAROUND.1.stringlist.text
-msgid "Standard Error"
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_STD_ERROR.StringList.item
+msgid  "Standard Error"
 msgstr "Gwall Safonol"
 
-#: res_ErrorBar_tmpl.hrc#WORKAROUND.2.stringlist.text
-msgid "Standard Deviation"
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_STD_DEV.StringList.item
+msgid  "Standard Deviation"
 msgstr "Gwyriad Safonol"
 
-#: res_ErrorBar_tmpl.hrc#WORKAROUND.3.stringlist.text
-msgid "Variance"
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_VARIANCE.StringList.item
+msgid  "Variance"
 msgstr "Amrywiant"
 
-#: res_ErrorBar_tmpl.hrc#WORKAROUND.4.stringlist.text
-msgid "Error Margin"
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#WORKAROUND.CHART_LB_FUNCTION_ERROR_MARGIN.StringList.item
+msgid  "Error Margin"
 msgstr "Lled y Gwall"
 
-#: res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS_availablewidth__yoffset_.FL_ERROR.fixedline.text
-msgid "Error Category"
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).FL_ERROR.FixedLine.Text
+msgid  "Error Category"
 msgstr "Categori'r Gwall"
 
-#: res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS_availablewidth__yoffset_.RB_NONE.radiobutton.text
-msgctxt "res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS_availablewidth__yoffset_.RB_NONE.radiobutton.text"
-msgid "~None"
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).RB_NONE.RadioButton.Text
+msgid  "~None"
 msgstr "~Dim"
 
-#: res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS_availablewidth__yoffset_.RB_CONST.radiobutton.text
-msgid "~Constant Value"
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).RB_CONST.RadioButton.Text
+msgid  "~Constant Value"
 msgstr "~Gwerth Cyson"
 
-#: res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS_availablewidth__yoffset_.RB_PERCENT.radiobutton.text
-msgid "~Percentage"
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).RB_PERCENT.RadioButton.Text
+msgid  "~Percentage"
 msgstr "~Canran"
 
-#: res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS_availablewidth__yoffset_.RB_RANGE.radiobutton.text
-msgid "Cell ~Range"
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).RB_RANGE.RadioButton.Text
+msgid  "Cell ~Range"
 msgstr "~Ystod Cell"
 
-#: res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS_availablewidth__yoffset_.FL_PARAMETERS.fixedline.text
-msgid "Parameters"
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).FL_PARAMETERS.FixedLine.Text
+msgid  "Parameters"
 msgstr "Paramedrau"
 
-#: res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS_availablewidth__yoffset_.FT_POSITIVE.fixedtext.text
-msgid "P~ositive (+)"
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).FT_POSITIVE.FixedText.Text
+msgid  "P~ositive (+)"
 msgstr "~Positif (+)"
 
-#: res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS_availablewidth__yoffset_.FT_NEGATIVE.fixedtext.text
-msgid "~Negative (-)"
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).FT_NEGATIVE.FixedText.Text
+msgid  "~Negative (-)"
 msgstr "~Negyddol (-)"
 
-#: res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS_availablewidth__yoffset_.CB_SYN_POS_NEG.checkbox.text
-msgid "Same value for both"
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).CB_SYN_POS_NEG.CheckBox.Text
+msgid  "Same value for both"
 msgstr "Yr un gwerth i'r ddau"
 
-#: res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS_availablewidth__yoffset_.FL_INDICATE.fixedline.text
-msgid "Error Indicator"
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).FL_INDICATE.FixedLine.Text
+msgid  "Error Indicator"
 msgstr "Dangosydd Gwall"
 
-#: res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS_availablewidth__yoffset_.RB_BOTH.radiobutton.text
-msgid "Positive ~and Negative"
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).RB_BOTH.RadioButton.Text
+msgid  "Positive ~and Negative"
 msgstr "Positif ~a Negyddol"
 
-#: res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS_availablewidth__yoffset_.RB_POSITIVE.radiobutton.text
-msgid "Pos~itive"
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).RB_POSITIVE.RadioButton.Text
+msgid  "Pos~itive"
 msgstr "C~adarnhaol"
 
-#: res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS_availablewidth__yoffset_.RB_NEGATIVE.radiobutton.text
-msgid "Ne~gative"
+#: source/controller/dialogs/res_ErrorBar_tmpl.hrc#RESOURCE_ERRORBARS(availablewidth, yoffset).RB_NEGATIVE.RadioButton.Text
+msgid  "Ne~gative"
 msgstr "~Negyddol"
 
-#: res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDDISPLAY__xpos___ypos__.CBX_SHOWLEGEND.checkbox.text
-msgid "~Display legend"
+#: source/controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDDISPLAY( xpos , ypos ).CBX_SHOWLEGEND.CheckBox.Text
+msgid  "~Display legend"
 msgstr "~Dangos esboniad"
 
-#: res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION__xpos___ypos__.RBT_LEFT.radiobutton.text
-msgid "~Left"
+#: source/controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION( xpos , ypos ).RBT_LEFT.RadioButton.Text
+msgid  "~Left"
 msgstr "~Chwith"
 
-#: res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION__xpos___ypos__.RBT_RIGHT.radiobutton.text
-msgid "~Right"
+#: source/controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION( xpos , ypos ).RBT_RIGHT.RadioButton.Text
+msgid  "~Right"
 msgstr "~De"
 
-#: res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION__xpos___ypos__.RBT_TOP.radiobutton.text
-msgid "~Top"
+#: source/controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION( xpos , ypos ).RBT_TOP.RadioButton.Text
+msgid  "~Top"
 msgstr "~Brig"
 
-#: res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION__xpos___ypos__.RBT_BOTTOM.radiobutton.text
-msgid "~Bottom"
+#: source/controller/dialogs/res_LegendPosition_tmpl.hrc#RESOURCE_LEGENDPOSITION( xpos , ypos ).RBT_BOTTOM.RadioButton.Text
+msgid  "~Bottom"
 msgstr "~Gwaelod"
 
-#: res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES__xpos__ypos__xOffset__yOffset__.CB_X_SECONDARY.checkbox.text
-msgctxt "res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES__xpos__ypos__xOffset__yOffset__.CB_X_SECONDARY.checkbox.text"
-msgid "X ~axis"
-msgstr "Echel ~X"
-
-#: res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES__xpos__ypos__xOffset__yOffset__.CB_Y_SECONDARY.checkbox.text
-msgctxt "res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES__xpos__ypos__xOffset__yOffset__.CB_Y_SECONDARY.checkbox.text"
-msgid "Y ax~is"
-msgstr "Echel ~Y"
-
-#: res_SecondaryAxisCheckBoxes_tmpl.hrc#SECONDARYAXISCHECKBOXES__xpos__ypos__xOffset__yOffset__.CB_Z_SECONDARY.checkbox.text
-msgid "Z axi~s"
-msgstr "Echel ~Z"
-
-#: res_Titlesx_tmpl.hrc#TITLES__xpos__ypos__availableWidth__indentLabel__fixedLinesHeight__.FT_MAINTITLE.fixedtext.text
-msgid "~Title"
-msgstr "~Teitl"
-
-#: res_Titlesx_tmpl.hrc#TITLES__xpos__ypos__availableWidth__indentLabel__fixedLinesHeight__.FT_SUBTITLE.fixedtext.text
-msgid "~Subtitle"
-msgstr "~Is-deitl"
-
-#: res_Titlesx_tmpl.hrc#TITLES__xpos__ypos__availableWidth__indentLabel__fixedLinesHeight__.FL_AXES.fixedline.text
-msgctxt "res_Titlesx_tmpl.hrc#TITLES__xpos__ypos__availableWidth__indentLabel__fixedLinesHeight__.FL_AXES.fixedline.text"
-msgid "Axes"
-msgstr "Echelinau"
-
-#: res_Titlesx_tmpl.hrc#TITLES__xpos__ypos__availableWidth__indentLabel__fixedLinesHeight__.FT_TITLE_X_AXIS.fixedtext.text
-msgctxt "res_Titlesx_tmpl.hrc#TITLES__xpos__ypos__availableWidth__indentLabel__fixedLinesHeight__.FT_TITLE_X_AXIS.fixedtext.text"
-msgid "~X axis"
-msgstr "Echel ~X"
-
-#: res_Titlesx_tmpl.hrc#TITLES__xpos__ypos__availableWidth__indentLabel__fixedLinesHeight__.FT_TITLE_Y_AXIS.fixedtext.text
-msgctxt "res_Titlesx_tmpl.hrc#TITLES__xpos__ypos__availableWidth__indentLabel__fixedLinesHeight__.FT_TITLE_Y_AXIS.fixedtext.text"
-msgid "~Y axis"
-msgstr "Echel ~Y"
-
-#: res_Titlesx_tmpl.hrc#TITLES__xpos__ypos__availableWidth__indentLabel__fixedLinesHeight__.FT_TITLE_Z_AXIS.fixedtext.text
-msgctxt "res_Titlesx_tmpl.hrc#TITLES__xpos__ypos__availableWidth__indentLabel__fixedLinesHeight__.FT_TITLE_Z_AXIS.fixedtext.text"
-msgid "~Z axis"
-msgstr "Echel ~Z"
-
-#: res_Titlesx_tmpl.hrc#TITLES__xpos__ypos__availableWidth__indentLabel__fixedLinesHeight__.FL_SECONDARY_AXES.fixedline.text
-msgid "Secondary Axes"
-msgstr "Echel Eilradd"
-
-#: res_Titlesx_tmpl.hrc#TITLES__xpos__ypos__availableWidth__indentLabel__fixedLinesHeight__.FT_TITLE_SECONDARY_X_AXIS.fixedtext.text
-msgctxt "res_Titlesx_tmpl.hrc#TITLES__xpos__ypos__availableWidth__indentLabel__fixedLinesHeight__.FT_TITLE_SECONDARY_X_AXIS.fixedtext.text"
-msgid "X ~axis"
-msgstr "Echel ~X"
-
-#: res_Titlesx_tmpl.hrc#TITLES__xpos__ypos__availableWidth__indentLabel__fixedLinesHeight__.FT_TITLE_SECONDARY_Y_AXIS.fixedtext.text
-msgctxt "res_Titlesx_tmpl.hrc#TITLES__xpos__ypos__availableWidth__indentLabel__fixedLinesHeight__.FT_TITLE_SECONDARY_Y_AXIS.fixedtext.text"
-msgid "Y ax~is"
-msgstr "Echel ~Y"
-
-#: res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE_availablewidth__yoffset_.FL_TYPE.fixedline.text
-msgid "Regression Type"
+#: source/controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(availablewidth, yoffset).FL_TYPE.FixedLine.Text
+msgid  "Regression Type"
 msgstr "Math o Atchweliad"
 
-#: res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE_availablewidth__yoffset_.RB_NONE.radiobutton.text
-msgctxt "res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE_availablewidth__yoffset_.RB_NONE.radiobutton.text"
-msgid "~None"
+#: source/controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(availablewidth, yoffset).RB_NONE.RadioButton.Text
+msgid  "~None"
 msgstr "~Dim"
 
-#: res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE_availablewidth__yoffset_.RB_LINEAR.radiobutton.text
-msgid "~Linear"
+#: source/controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(availablewidth, yoffset).RB_LINEAR.RadioButton.Text
+msgid  "~Linear"
 msgstr "~Llinol"
 
-#: res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE_availablewidth__yoffset_.RB_LOGARITHMIC.radiobutton.text
-msgid "L~ogarithmic"
+#: source/controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(availablewidth, yoffset).RB_LOGARITHMIC.RadioButton.Text
+msgid  "L~ogarithmic"
 msgstr "L~ogarithmig"
 
-#: res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE_availablewidth__yoffset_.RB_EXPONENTIAL.radiobutton.text
-msgid "E~xponential"
+#: source/controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(availablewidth, yoffset).RB_EXPONENTIAL.RadioButton.Text
+msgid  "E~xponential"
 msgstr "E~sbonyddol"
 
-#: res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE_availablewidth__yoffset_.RB_POWER.radiobutton.text
-msgid "~Power"
+#: source/controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(availablewidth, yoffset).RB_POWER.RadioButton.Text
+msgid  "~Power"
 msgstr "Pŵer"
 
-#: res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE_availablewidth__yoffset_.FL_EQUATION.fixedline.text
-msgctxt "res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE_availablewidth__yoffset_.FL_EQUATION.fixedline.text"
-msgid "Equation"
+#: source/controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(availablewidth, yoffset).FL_EQUATION.FixedLine.Text
+msgid  "Equation"
 msgstr "Hafaliad"
 
-#: res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE_availablewidth__yoffset_.CB_SHOW_EQUATION.checkbox.text
-msgid "Show ~equation"
+#: source/controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(availablewidth, yoffset).CB_SHOW_EQUATION.CheckBox.Text
+msgid  "Show ~equation"
 msgstr "Dangos ~hafaliad"
 
-#: res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE_availablewidth__yoffset_.CB_SHOW_CORRELATION_COEFF.checkbox.text
-msgid "Show ~coefficient of determination (R²)"
+#: source/controller/dialogs/res_Trendline_tmpl.hrc#RESOURCE_TRENDLINE(availablewidth, yoffset).CB_SHOW_CORRELATION_COEFF.CheckBox.Text
+msgid  "Show ~coefficient of determination (R²)"
 msgstr "Dangos ~cyfeirnod y mesuriad (R²)"
 
-#~ msgid "Linear Regression"
-#~ msgstr "Atchweliad Llinol"
+#: source/controller/dialogs/res_Titlesx_tmpl.hrc#TITLES( xpos, ypos, availableWidth, indentLabel, fixedLinesHeight ).FT_MAINTITLE.FixedText.Text
+msgid  "~Title"
+msgstr "~Teitl"
 
-#~ msgid "Logarithmic Regression"
-#~ msgstr "Atchweliad logarithm"
+#: source/controller/dialogs/res_Titlesx_tmpl.hrc#TITLES( xpos, ypos, availableWidth, indentLabel, fixedLinesHeight ).FT_SUBTITLE.FixedText.Text
+msgid  "~Subtitle"
+msgstr "~Is-deitl"
 
-#~ msgid "Exponential Regression"
-#~ msgstr "Atchweliad Esbonyddol"
+#: source/controller/dialogs/res_Titlesx_tmpl.hrc#TITLES( xpos, ypos, availableWidth, indentLabel, fixedLinesHeight ).FL_AXES.FixedLine.Text
+msgid  "Axes"
+msgstr "Echelinau"
 
-#~ msgid "Power Regression"
-#~ msgstr "Atchweliad Pwer"
+#: source/controller/dialogs/res_Titlesx_tmpl.hrc#TITLES( xpos, ypos, availableWidth, indentLabel, fixedLinesHeight ).FT_TITLE_X_AXIS.FixedText.Text
+msgid  "~X axis"
+msgstr "Echel ~X"
 
-#~ msgid "%REGRESSIONCURVE for %SERIESNAME"
-#~ msgstr "%REGRESSIONCURVE ar gyfer %SERIESNAME"
+#: source/controller/dialogs/res_Titlesx_tmpl.hrc#TITLES( xpos, ypos, availableWidth, indentLabel, fixedLinesHeight ).FT_TITLE_Y_AXIS.FixedText.Text
+msgid  "~Y axis"
+msgstr "Echel ~Y"
 
-#~ msgid "'%CATEGORYVALUE'"
-#~ msgstr "'%CATEGORYVALUE'"
+#: source/controller/dialogs/res_Titlesx_tmpl.hrc#TITLES( xpos, ypos, availableWidth, indentLabel, fixedLinesHeight ).FT_TITLE_Z_AXIS.FixedText.Text
+msgid  "~Z axis"
+msgstr "Echel ~Z"
+
+#: source/controller/dialogs/res_Titlesx_tmpl.hrc#TITLES( xpos, ypos, availableWidth, indentLabel, fixedLinesHeight ).FL_SECONDARY_AXES.FixedLine.Text
+msgid  "Secondary Axes"
+msgstr "Echel Eilradd"
+
+#: source/controller/dialogs/res_Titlesx_tmpl.hrc#TITLES( xpos, ypos, availableWidth, indentLabel, fixedLinesHeight ).FT_TITLE_SECONDARY_X_AXIS.FixedText.Text
+msgid  "X ~axis"
+msgstr "Echel ~X"
+
+#: source/controller/dialogs/res_Titlesx_tmpl.hrc#TITLES( xpos, ypos, availableWidth, indentLabel, fixedLinesHeight ).FT_TITLE_SECONDARY_Y_AXIS.FixedText.Text
+msgid  "Y ax~is"
+msgstr "Echel ~Y"

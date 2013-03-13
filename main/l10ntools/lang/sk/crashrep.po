@@ -1,271 +1,208 @@
-
-#: crashrep.ulf#_ALLOW_CONTACT_.LngText.text
-msgid "~I allow Oracle to contact me regarding this report."
-msgstr "Súhlasím aby ma Sun Oracle kontaktoval v súvislost~i s touto chybou."
-
-#: crashrep.ulf#_BACK_BUTTON_.LngText.text
-msgid " << ~Back"
-msgstr " << ~Späť"
-
-#: crashrep.ulf#_CANCEL_BUTTON_.LngText.text
-msgid "Cancel"
-msgstr "Zrušiť"
-
-#: crashrep.ulf#_DONOT_SEND_BUTTON_.LngText.text
-msgid "Do ~Not Send"
-msgstr "~Neodoslať"
-
-#: crashrep.ulf#_ENTER_DESCRIPTION_.LngText.text
-msgid "~How were you using %PRODUCTNAME% when the error occurred ?"
-msgstr "Ako ste používali %PRODUCTNAME% keď sa objavila c~hyba ?"
-
-#: crashrep.ulf#_ENTER_EMAIL_.LngText.text
-msgid "Please enter your e-mail address."
-msgstr "Zadajte prosím vašu e-mailovú adresu."
-
-#: crashrep.ulf#_ENTER_TITLE_.LngText.text
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
 msgid ""
-"Which type of document (e.g. presentation) were you using when the error "
-"occurred?"
 msgstr ""
-"Aký typ dokumentu (napr. prezentácia) ste používali, keď sa objavila chyba?"
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
 
-#: crashrep.ulf#_ERROR_MSG_DISK_FULL_.LngText.text
-msgid ""
-"The error report could not be temporarily saved and could therefore not be "
-"sent."
+
+#: source/all/crashrep.ulf#%WELCOME_CAPTION%
+msgid  "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "%PRODUCTNAME% %PRODUCTVERSION% Správa o chybe"
+
+#: source/all/crashrep.ulf#%WELCOME_HEADER%
+msgid  "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "Vitajte v %PRODUCTNAME% %PRODUCTVERSION% Správe o chybe"
+
+#: source/all/crashrep.ulf#%WELCOME_BODY1%
+msgid  "This error report tool gathers information about how %PRODUCTNAME% is working and sends it to Apache OpenOffice to help improve future versions.\n\n"
 msgstr ""
-"Správa o chybe nemohla byť dočasne uložená a preto ani nemohla odoslaná."
 
-#: crashrep.ulf#_ERROR_MSG_NOCONNECT_.LngText.text
-msgid ""
-"The error report could not be sent because there is no Internet connection. "
-"Please check your Internet settings."
+#: source/all/crashrep.ulf#%WELCOME_BODY2%
+msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
 msgstr ""
-"Správa o chybe nemohla byť odoslaná, pretože neexistuje pripojenie do "
-"Internetu. Prosím overte vaše nastavenia internetu."
 
-#: crashrep.ulf#_ERROR_MSG_NOEMAILADDRESS_.LngText.text
-msgid ""
-"You have marked the option 'I allow Oracle to contact me regarding this "
-"report.'\n"
-"Please enter your e-mail address."
+#: source/all/crashrep.ulf#%WELCOME_BODY3%
+msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
 msgstr ""
-"Zaklikli ste možnosť 'Súhlasím aby ma Sun Oracle kontaktoval v súvislosti s "
-"touto chybou'\n"
-"Prosím zadajte vašu e-mailovú adresu."
 
-#: crashrep.ulf#_ERROR_MSG_PROXY_.LngText.text
-msgid ""
-"The error report could not be sent. Please check the proxy settings under "
-"'Options' in the Error Report Tool."
+#: source/all/crashrep.ulf#%PRIVACY_URL%
+msgid  "http://www.openoffice.org/privacy.html"
 msgstr ""
-"Správa o chybe nemohla byť odoslaná. Prosím overte nastavenia proxy v menu "
-"'Možnosti' nástroja na oznamovanie chýb."
 
-#: crashrep.ulf#_ERROR_MSG_SENDMAIL_.LngText.text
-msgid ""
-"The error report could not be sent because 'sendmail' could not be started.\n"
-"Please check the 'sendmail' settings."
-msgstr ""
-"Správa o chybe nemohla byť odoslaná, pretože nemohol byť spustený "
-"'sendmail'.\n"
-"Prosím overte nastavenia 'sendmail'."
-
-#: crashrep.ulf#_ERROR_MSG_SIMPLE_MAPI_.LngText.text
-msgid ""
-"The error report could not be sent because the default e-mail program does "
-"not support MAPI.\n"
-" Please use a MAPI-compatible e-mail program."
-msgstr ""
-"Správa o chybe nemohla byť odoslaná, pretože východzí e-mailový program "
-"nepodporuje MAPI.\n"
-" Prosím použite e-mailový program kompatibilný s MAPI."
-
-#: crashrep.ulf#_MSG_CMDLINE_USAGE_.LngText.text
-msgid "Usage:"
-msgstr "Použitie:"
-
-#: crashrep.ulf#_MSG_PARAM_HELP_DESCRIPTION_.LngText.text
-msgid ""
-"Shows this help text.\n"
-"Detailed information can be found in the Setup Guide."
-msgstr ""
-"Zobrazí tento text pomocníka.\n"
-"Podrobné informácie nájdete v Sprievodcovi inštaláciou."
-
-#: crashrep.ulf#_MSG_PARAM_PROCESSID_.LngText.text
-msgid "-p <process ID>"
-msgstr "-p <process ID>"
-
-#: crashrep.ulf#_MSG_PARAM_PROCESSID_DESCRIPTION_.LngText.text
-msgid "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
-msgstr "Priradí %PRODUCTNAME% ID (PID) procesu pre Nástroj na oznamovanie chýb"
-
-#: crashrep.ulf#_NEXT_BUTTON_.LngText.text
-msgid "~Next >>"
+#: source/all/crashrep.ulf#%NEXT_BUTTON%
+msgid  "~Next >>"
 msgstr "Ďa~lej >>"
 
-#: crashrep.ulf#_OK_BUTTON_.LngText.text
-msgid "OK"
+#: source/all/crashrep.ulf#%CANCEL_BUTTON%
+msgid  "Cancel"
+msgstr "Zrušiť"
+
+#: source/all/crashrep.ulf#%OK_BUTTON%
+msgid  "OK"
 msgstr "OK"
 
-#: crashrep.ulf#_OPTIONS_BUTTON_.LngText.text
-msgid "~Options..."
-msgstr "M~ožnosti..."
-
-#: crashrep.ulf#_OPTIONS_TITLE_.LngText.text
-msgid "Options"
-msgstr "Možnosti"
-
-#: crashrep.ulf#_PRIVACY_URL_.LngText.text
-msgid "http://www.oracle.com/html/services-privacy-policy.html"
-msgstr "http://www.oracle.com/html/services-privacy-policy.html"
-
-#: crashrep.ulf#_PROXY_SETTINGS_ADDRESS_.LngText.text
-msgid "HT~TP Proxy"
-msgstr "HT~TP proxy"
-
-#: crashrep.ulf#_PROXY_SETTINGS_DESCRIPTION_.LngText.text
-msgid ""
-"The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to "
-"be able to send error reports.\n"
-"\n"
-"Companies often use proxy servers in conjunction with a firewall to protect "
-"the network.\n"
-"\n"
-"If this applies to your situation, you have to specify the address and port "
-"for the server."
-msgstr ""
-"%PRODUCTNAME% Nastroj na ohlasovanie chýb potrebuje spojenie do Internetu "
-"aby mohli byť správy odoslané.\n"
-"\n"
-"Spoločnosti často používajú proxy servery v spojení s firewallmi, aby si "
-"chránili svoje siete.\n"
-"\n"
-"V prípade, že toto je aj váš prípad, musíte zadať adresu a port vášho "
-"servera."
-
-#: crashrep.ulf#_PROXY_SETTINGS_DIRECT_.LngText.text
-msgid "Use ~direct connection to the Internet"
-msgstr "Použiť priame pripo~jenie na Internet"
-
-#: crashrep.ulf#_PROXY_SETTINGS_HEADER_.LngText.text
-msgid "Proxy settings"
-msgstr "Nastavenia proxy"
-
-#: crashrep.ulf#_PROXY_SETTINGS_MANUAL_.LngText.text
-msgid "Use ~manual settings"
-msgstr "Použiť ručné ~nastavenie"
-
-#: crashrep.ulf#_PROXY_SETTINGS_PORT_.LngText.text
-msgid "~Port"
-msgstr "~Port"
-
-#: crashrep.ulf#_PROXY_SETTINGS_SYSTEM_.LngText.text
-msgid "Use ~system settings"
-msgstr "Použiť ~systémové nastavenie"
-
-#: crashrep.ulf#_REPORT_BODY_.LngText.text
-msgid ""
-"The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information "
-"that could help Oracle improve %PRODUCTNAME%.\n"
-"In the spaces below, you can enter a title for your crash report and "
-"describe the action you were trying to carry out when the error occurred. "
-"Then click 'Send'.\n"
-msgstr ""
-"%PRODUCTNAME% %PRODUCTVERSION% Správa o chybe zozbieral informácie, ktoré by "
-"mohli pomôcť Oracle vylepšiť %PRODUCTNAME%.\n"
-"V nižšie uvedených kolónkach môžete uviesť opis chyby a čo ste skúšali robiť "
-"keď k nej došlo. Potom kliknite na 'Odoslať'.\n"
-
-#: crashrep.ulf#_REPORT_CAPTION_.LngText.text
-msgctxt "crashrep.ulf#_REPORT_CAPTION_.LngText.text"
-msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+#: source/all/crashrep.ulf#%REPORT_CAPTION%
+msgid  "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
 msgstr "%PRODUCTNAME% %PRODUCTVERSION% Správa o chybe"
 
-#: crashrep.ulf#_REPORT_HEADER_.LngText.text
-msgid "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
+#: source/all/crashrep.ulf#%REPORT_HEADER%
+msgid  "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
 msgstr "Počas behu %PRODUCTNAME% %PRODUCTVERSION% sa vyskytla chyba"
 
-#: crashrep.ulf#_SAVE_REPORT_BUTTON_.LngText.text
-msgid "~Save Report..."
-msgstr "Uložiť ~správu..."
+#: source/all/crashrep.ulf#%REPORT_BODY%
+msgid  "The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information that could help Apache OpenOffice improve %PRODUCTNAME%.\nIn the spaces below, you can enter a title for your crash report and describe the action you were trying to carry out when the error occurred. Then click 'Send'.\n"
+msgstr ""
 
-#: crashrep.ulf#_SAVE_REPORT_TITLE_.LngText.text
-msgid "Save Report to"
-msgstr "Uložiť správu do"
+#: source/all/crashrep.ulf#%ENTER_TITLE%
+msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
+msgstr ""
 
-#: crashrep.ulf#_SENDING_REPORT_HEADER_.LngText.text
-msgid "Sending Error Report"
-msgstr "Posielam správu o chybe"
+#: source/all/crashrep.ulf#%ALLOW_CONTACT%
+msgid  "~I allow Apache OpenOffice to contact me regarding this report."
+msgstr ""
 
-#: crashrep.ulf#_SENDING_REPORT_STATUS_.LngText.text
-msgid "Status: Sending error report"
-msgstr "Stav: Posielam správu o chybe"
+#: source/all/crashrep.ulf#%ENTER_EMAIL%
+msgid  "Please enter your e-mail address."
+msgstr "Zadajte prosím vašu e-mailovú adresu."
 
-#: crashrep.ulf#_SENDING_REPORT_STATUS_FINISHED_.LngText.text
-msgid "Status: The error report has been sent successfully."
-msgstr "Stav: Správa o chybe bola úspešne odoslaná."
+#: source/all/crashrep.ulf#%ENTER_DESCRIPTION%
+msgid  "~How were you using %PRODUCTNAME% when the error occurred ?"
+msgstr "Ako ste používali %PRODUCTNAME% keď sa objavila c~hyba ?"
 
-#: crashrep.ulf#_SEND_BUTTON_.LngText.text
-msgid "S~end"
+#: source/all/crashrep.ulf#%BACK_BUTTON%
+msgid  " << ~Back"
+msgstr " << ~Späť"
+
+#: source/all/crashrep.ulf#%SEND_BUTTON%
+msgid  "S~end"
 msgstr "Odos~lať"
 
-#: crashrep.ulf#_SHOW_REPORT_BUTTON_.LngText.text
-msgid "Show ~Report..."
+#: source/all/crashrep.ulf#%DONOT_SEND_BUTTON%
+msgid  "Do ~Not Send"
+msgstr "~Neodoslať"
+
+#: source/all/crashrep.ulf#%SHOW_REPORT_BUTTON%
+msgid  "Show ~Report..."
 msgstr "Zob~raziť správu..."
 
-#: crashrep.ulf#_WELCOME_BODY1_.LngText.text
-msgid ""
-"This error report tool gathers information about how %PRODUCTNAME% is "
-"working and sends it to Oracle to help improve future versions.\n"
-"\n"
+#: source/all/crashrep.ulf#%SAVE_REPORT_BUTTON%
+msgid  "~Save Report..."
+msgstr "Uložiť ~správu..."
+
+#: source/all/crashrep.ulf#%SAVE_REPORT_TITLE%
+msgid  "Save Report to"
+msgstr "Uložiť správu do"
+
+#: source/all/crashrep.ulf#%ERROR_MSG_SIMPLE_MAPI%
+msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
 msgstr ""
-"Tento nástroj pre ohlasovanie chýb zbiera informácie o tom ako %PRODUCTNAME% "
-"pracuje a posiela ich do Oracle a tým pomáha zlepšovať ďalšie verzie.\n"
-"\n"
 
-#: crashrep.ulf#_WELCOME_BODY2_.LngText.text
-msgid ""
-"It's easy - just send the report without any further effort on your part by "
-"clicking 'Send' in the next dialog, or you can briefly describe how the "
-"error occurred and then click 'Send'. If you want to see the report, click "
-"the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n"
-"\n"
+#: source/all/crashrep.ulf#%ERROR_MSG_DISK_FULL%
+msgid  "The error report could not be temporarily saved and could therefore not be sent."
 msgstr ""
-"Je to jednoduché - len pošlite správu, bez ďalšej námahy, kliknutím na "
-"'Odoslať' v nasledujúcom dialógu, alebo môžete stručne opísať chybu a potom "
-"kliknúť na 'Odoslať'. V prípade, že chcete správu vidieť kliknite na "
-"tlačidlo 'Zobraziť správu'. V prípade, že kliknite na 'Neodoslať' nebudú "
-"poslané žiadne dáta.\n"
-"\n"
 
-#: crashrep.ulf#_WELCOME_BODY3_.LngText.text
-msgid ""
-"Customer Privacy\n"
-"The information gathered is limited to data concerning the state of %"
-"PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information "
-"about passwords or document contents is not collected.\n"
-"\n"
-"The information will only be used to improve the quality of %PRODUCTNAME% "
-"and will not be shared with third parties.\n"
-"For more information on Oracle's privacy policy, visit\n"
+#: source/all/crashrep.ulf#%ERROR_MSG_SENDMAIL%
+msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
 msgstr ""
-"Súkromie zákazníkov\n"
-"Zozbierané informácie sa obmedzujú len na stav %PRODUCTNAME% %PRODUCTVERSION"
-"% v momente keď nastala chyba. Iné informácie napr. o heslách alebo obsahoch "
-"dokumentov nie sú zbierané.\n"
-"\n"
-"Informácie budú použité výlučne pre zlepšenie kvality %PRODUCTNAME% a nebudú "
-"poskytované tretím stranám.\n"
-"Pre získanie viac informácií o ochrane súkromia zo strany Oracle navštívte\n"
 
-#: crashrep.ulf#_WELCOME_CAPTION_.LngText.text
-msgctxt "crashrep.ulf#_WELCOME_CAPTION_.LngText.text"
-msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
-msgstr "%PRODUCTNAME% %PRODUCTVERSION% Správa o chybe"
+#: source/all/crashrep.ulf#%ERROR_MSG_PROXY%
+msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
+msgstr ""
 
-#: crashrep.ulf#_WELCOME_HEADER_.LngText.text
-msgid "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
-msgstr "Vitajte v %PRODUCTNAME% %PRODUCTVERSION% Správe o chybe"
+#: source/all/crashrep.ulf#%ERROR_MSG_NOCONNECT%
+msgid  "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
+msgstr ""
+
+#: source/all/crashrep.ulf#%OPTIONS_BUTTON%
+msgid  "~Options..."
+msgstr "M~ožnosti..."
+
+#: source/all/crashrep.ulf#%OPTIONS_TITLE%
+msgid  "Options"
+msgstr "Možnosti"
+
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_HEADER%
+msgid  "Proxy settings"
+msgstr "Nastavenia proxy"
+
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_SYSTEM%
+msgid  "Use ~system settings"
+msgstr "Použiť ~systémové nastavenie"
+
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_DIRECT%
+msgid  "Use ~direct connection to the Internet"
+msgstr "Použiť priame pripo~jenie na Internet"
+
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_MANUAL%
+msgid  "Use ~manual settings"
+msgstr "Použiť ručné ~nastavenie"
+
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_ADDRESS%
+msgid  "HT~TP Proxy"
+msgstr "HT~TP proxy"
+
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_PORT%
+msgid  "~Port"
+msgstr "~Port"
+
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_DESCRIPTION%
+msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
+msgstr ""
+
+#: source/all/crashrep.ulf#%SENDING_REPORT_HEADER%
+msgid  "Sending Error Report"
+msgstr "Posielam správu o chybe"
+
+#: source/all/crashrep.ulf#%SENDING_REPORT_STATUS%
+msgid  "Status: Sending error report"
+msgstr "Stav: Posielam správu o chybe"
+
+#: source/all/crashrep.ulf#%SENDING_REPORT_STATUS_FINISHED%
+msgid  "Status: The error report has been sent successfully."
+msgstr "Stav: Správa o chybe bola úspešne odoslaná."
+
+#: source/all/crashrep.ulf#%ERROR_MSG_NOEMAILADDRESS%
+msgid  "You have marked the option 'I allow Apache OpenOffice to contact me regarding this report.'\nPlease enter your e-mail address."
+msgstr ""
+
+#: source/all/crashrep.ulf#%MSG_CMDLINE_USAGE%
+msgid  "Usage:"
+msgstr "Použitie:"
+
+#: source/all/crashrep.ulf#%MSG_PARAM_PROCESSID%
+msgid  "-p <process ID>"
+msgstr "-p <process ID>"
+
+#: source/all/crashrep.ulf#%MSG_PARAM_PROCESSID_DESCRIPTION%
+msgid  "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
+msgstr "Priradí %PRODUCTNAME% ID (PID) procesu pre Nástroj na oznamovanie chýb"
+
+#: source/all/crashrep.ulf#%MSG_PARAM_HELP_DESCRIPTION%
+msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
+msgstr ""

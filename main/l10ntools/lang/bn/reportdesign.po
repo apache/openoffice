@@ -1,1310 +1,1272 @@
-"X-Accelerator-Marker: ~\n"
-
-#: CondFormat.src#WIN_CONDITION.LB_COND_TYPE.1.stringlist.text
-msgid "Field Value Is"
-msgstr "ক্ষেত্রের মান হলো"
-
-#: CondFormat.src#WIN_CONDITION.LB_COND_TYPE.2.stringlist.text
-msgid "Expression Is"
-msgstr "রাশি হলো"
-
-#: CondFormat.src#WIN_CONDITION.LB_OP.1.stringlist.text
-msgid "between"
-msgstr "মধ্যবর্তী"
-
-#: CondFormat.src#WIN_CONDITION.LB_OP.2.stringlist.text
-msgid "not between"
-msgstr "মধ্যবর্তী নয়"
-
-#: CondFormat.src#WIN_CONDITION.LB_OP.3.stringlist.text
-msgid "equal to"
-msgstr "সমান"
-
-#: CondFormat.src#WIN_CONDITION.LB_OP.4.stringlist.text
-msgid "not equal to"
-msgstr "সমান নয়"
-
-#: CondFormat.src#WIN_CONDITION.LB_OP.5.stringlist.text
-msgid "greater than"
-msgstr "অপেক্ষাকৃত বড়"
-
-#: CondFormat.src#WIN_CONDITION.LB_OP.6.stringlist.text
-msgid "less than"
-msgstr "অপেক্ষাকৃত ছোট"
-
-#: CondFormat.src#WIN_CONDITION.LB_OP.7.stringlist.text
-msgid "greater than or equal to"
-msgstr "অপেক্ষাকৃত বড় বা সমান"
-
-#: CondFormat.src#WIN_CONDITION.LB_OP.8.stringlist.text
-msgid "less than or equal to"
-msgstr "অপেক্ষাকৃত ছোট বা সমান"
-
-#: CondFormat.src#WIN_CONDITION.FT_AND.fixedtext.text
-msgid "and"
-msgstr "এবং"
-
-#: CondFormat.src#WIN_CONDITION.CRTL_FORMAT_PREVIEW.window.text
-msgid "Example"
-msgstr "উদাহারণ"
-
-#: CondFormat.src#RID_CONDFORMAT.PB_HELP.helpbutton.text
-msgctxt "CondFormat.src#RID_CONDFORMAT.PB_HELP.helpbutton.text"
-msgid "~Help"
-msgstr "সহায়তা (~H)"
-
-#: CondFormat.src#RID_CONDFORMAT.modaldialog.text
-msgid "Conditional Formatting"
-msgstr "শর্তযুক্ত বিন্যাসকরণ"
-
-#: CondFormat.src#STR_NUMBERED_CONDITION.string.text
-msgid "Condition $number$"
-msgstr "শর্ত $number$"
-
-#: CondFormat.src#STR_COLOR_WHITE.string.text
-msgid "White"
-msgstr "সাদা"
-
-#: CondFormat.src#STR_CHARCOLOR.string.text
-msgid "Font color"
-msgstr "ফন্ট রং"
-
-#: CondFormat.src#STR_CHARBACKGROUND.string.text
-msgctxt "CondFormat.src#STR_CHARBACKGROUND.string.text"
-msgid "Background"
-msgstr "প্রেক্ষাপট"
-
-#: CondFormat.src#STR_TRANSPARENT.string.text
-msgid "No Fill"
-msgstr "পূরণ নয়"
-
-#: CondFormat.src#RID_TB_SORTING.SID_FM_SORTUP.toolboxitem.text
-msgid "Sort Ascending"
-msgstr "ঊর্ধ্বক্রমানুসারে সাজান"
-
-#: CondFormat.src#RID_TB_SORTING.SID_FM_SORTDOWN.toolboxitem.text
-msgid "Sort Descending"
-msgstr "নিম্নক্রমানুসারে সাজান"
-
-#: CondFormat.src#RID_TB_SORTING.SID_FM_REMOVE_FILTER_SORT.toolboxitem.text
-msgid "Remove sorting"
-msgstr "ক্রমসজ্জিতকরণ অপসারণ করুন"
-
-#: CondFormat.src#RID_TB_SORTING.SID_ADD_CONTROL_PAIR.toolboxitem.text
-msgid "Insert"
-msgstr "প্রবেশ করান"
-
-#: CondFormat.src#ADDFIELD_FL_HELP_SEPARATOR.fixedline.text
-msgctxt "CondFormat.src#ADDFIELD_FL_HELP_SEPARATOR.fixedline.text"
-msgid "Help"
-msgstr "সহায়তা"
-
-#: CondFormat.src#ADDFIELD_HELP_FIELD.fixedtext.text
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
 msgid ""
-"Highlight the fields to insert into the selected section of the template, "
-"then click Insert or press Enter."
 msgstr ""
-
-#: DateTime.src#RID_DATETIME_DLG.CB_DATE.checkbox.text
-msgid "Include Date"
-msgstr "তারিখ অন্তর্ভুক্ত করুন"
-
-#: DateTime.src#RID_DATETIME_DLG.FT_DATE_FORMAT.fixedtext.text
-msgctxt "DateTime.src#RID_DATETIME_DLG.FT_DATE_FORMAT.fixedtext.text"
-msgid "Format"
-msgstr "বিন্যাস"
-
-#: DateTime.src#RID_DATETIME_DLG.CB_TIME.checkbox.text
-msgid "Include Time"
-msgstr "সময় অন্তর্ভুক্ত করুন"
-
-#: DateTime.src#RID_DATETIME_DLG.FT_TIME_FORMAT.fixedtext.text
-msgctxt "DateTime.src#RID_DATETIME_DLG.FT_TIME_FORMAT.fixedtext.text"
-msgid "Format"
-msgstr "বিন্যাস"
-
-#: DateTime.src#RID_DATETIME_DLG.PB_HELP.helpbutton.text
-msgctxt "DateTime.src#RID_DATETIME_DLG.PB_HELP.helpbutton.text"
-msgid "~Help"
-msgstr "সহায়তা (~H)"
-
-#: DateTime.src#RID_DATETIME_DLG.modaldialog.text
-msgid "Date and Time"
-msgstr "তারিখ ও সময়"
-
-#: dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_PAGE.pageitem.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_PAGE.pageitem.text"
-msgid "Page"
-msgstr "পৃষ্ঠা"
-
-#: dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_BACKGROUND.pageitem.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_BACKGROUND.pageitem.text"
-msgid "Background"
-msgstr "প্রেক্ষাপট"
-
-#: dlgpage.src#RID_PAGEDIALOG_PAGE.1.pushbutton.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_PAGE.1.pushbutton.text"
-msgid "Return"
-msgstr "ফিরিয়ে আনুন"
-
-#: dlgpage.src#RID_PAGEDIALOG_PAGE.1.string.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_PAGE.1.string.text"
-msgid "Page"
-msgstr "পৃষ্ঠা"
-
-#: dlgpage.src#RID_PAGEDIALOG_PAGE.2.string.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_PAGE.2.string.text"
-msgid "Background"
-msgstr "প্রেক্ষাপট"
-
-#: dlgpage.src#RID_PAGEDIALOG_PAGE.tabdialog.text
-msgid "Page Setup"
-msgstr "পৃষ্ঠা বিন্যাসকরণ"
-
-#: dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.pushbutton.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.pushbutton.text"
-msgid "Return"
-msgstr "ফিরিয়ে আনুন"
-
-#: dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.string.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.string.text"
-msgid "Background"
-msgstr "প্রেক্ষাপট"
-
-#: dlgpage.src#RID_PAGEDIALOG_BACKGROUND.tabdialog.text
-msgid "Section Setup"
-msgstr "শাখা বিন্যাসকরণ"
-
-#: dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_CHAR.pageitem.text
-msgid "Font"
-msgstr "ফন্ট"
-
-#: dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_EFFECTS.pageitem.text
-msgid "Font Effects"
-msgstr "ফন্টের প্রভাব"
-
-#: dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_POSITION.pageitem.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_POSITION.pageitem.text"
-msgid "Position"
-msgstr "অবস্থান"
-
-#: dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_TWOLN.pageitem.text
-msgid "Asian Layout"
-msgstr "এশিয়ান বর্হিবিন্যাস"
-
-#: dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_BACKGROUND.pageitem.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_BACKGROUND.pageitem.text"
-msgid "Background"
-msgstr "প্রেক্ষাপট"
-
-#: dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_ALIGNMENT.pageitem.text
-msgid "Alignment"
-msgstr "প্রান্তিককরণ"
-
-#: dlgpage.src#RID_PAGEDIALOG_CHAR.1.pushbutton.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_CHAR.1.pushbutton.text"
-msgid "Return"
-msgstr "ফিরিয়ে আনুন"
-
-#: dlgpage.src#RID_PAGEDIALOG_CHAR.1.string.text
-msgid "Character"
-msgstr "বর্ণচিহ্ন"
-
-#: dlgpage.src#RID_PAGEDIALOG_CHAR.tabdialog.text
-msgid "Character Settings"
-msgstr "বর্ণচিহ্ন বিন্যাসসমূহ"
-
-#: dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE.pageitem.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE.pageitem.text"
-msgid "Line"
-msgstr "লাইন"
-
-#: dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE_DEF.pageitem.text
-msgid "Line Styles"
-msgstr "লাইন শৈলীসমূহ"
-
-#: dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINEEND_DEF.pageitem.text
-msgid "Arrow Styles"
-msgstr "তীর চিহ্ন শৈলীসমূহ"
-
-#: dlgpage.src#RID_PAGEDIALOG_LINE.1.pushbutton.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_LINE.1.pushbutton.text"
-msgid "Return"
-msgstr "ফিরিয়ে আনুন"
-
-#: dlgpage.src#RID_PAGEDIALOG_LINE.1.string.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_LINE.1.string.text"
-msgid "Line"
-msgstr "লাইন"
-
-#: dlgpage.src#RID_PAGEDIALOG_LINE.tabdialog.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_LINE.tabdialog.text"
-msgid "Line"
-msgstr "লাইন"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR2.fixedline.text
-msgctxt "GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR2.fixedline.text"
-msgid "Groups"
-msgstr "শ্রেণীসমূহ"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.FT_MOVELABEL.fixedtext.text
-msgid "Group actions"
-msgstr ""
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_UP.toolboxitem.text
-msgid "Move up"
-msgstr ""
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_DOWN.toolboxitem.text
-msgid "Move down"
-msgstr ""
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_DELETE.toolboxitem.text
-msgid "~Delete"
-msgstr ""
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR3.fixedline.text
-msgid "Properties"
-msgstr "বৈশিষ্ট্য"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.FT_ORDER.fixedtext.text
-msgid "Sorting"
-msgstr "শর্টকরণ"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.1.stringlist.text
-msgid "Ascending"
-msgstr "ঊর্ধ্বক্রম"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.2.stringlist.text
-msgid "Descending"
-msgstr "নিম্নক্রম"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.FT_HEADER.fixedtext.text
-msgid "Group Header"
-msgstr "শ্রেণীর প্রান্তটিকা"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.1.stringlist.text
-msgctxt "GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.1.stringlist.text"
-msgid "Present"
-msgstr "উপস্থিত"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.2.stringlist.text
-msgctxt "GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.2.stringlist.text"
-msgid "Not present"
-msgstr "অনুপস্থিত"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.FT_FOOTER.fixedtext.text
-msgid "Group Footer"
-msgstr "শ্রেণীর পাদটিকা"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.1.stringlist.text
-msgctxt "GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.1.stringlist.text"
-msgid "Present"
-msgstr "উপস্থিত"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.2.stringlist.text
-msgctxt "GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.2.stringlist.text"
-msgid "Not present"
-msgstr "অনুপস্থিত"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPON.fixedtext.text
-msgid "Group On"
-msgstr "শ্রেণীতে"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.LST_GROUPONLST.1.stringlist.text
-msgid "Each Value"
-msgstr "প্রত্যেক মান"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPINTERVAL.fixedtext.text
-msgid "Group Interval"
-msgstr "শ্রেণী বিরতি"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.FT_KEEPTOGETHER.fixedtext.text
-msgid "Keep Together"
-msgstr "একত্রে রাখুন"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.1.stringlist.text
-msgid "No"
-msgstr "না"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.2.stringlist.text
-msgid "Whole Group"
-msgstr "পুরো শ্রেণী"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.3.stringlist.text
-msgid "With First Detail"
-msgstr "প্রথম বর্ণনা সহ"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR1.fixedline.text
-msgctxt "GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR1.fixedline.text"
-msgid "Help"
-msgstr "সহায়তা"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.floatingwindow.text
-msgid "Sorting and Grouping"
-msgstr "শর্টকরণ ও শ্রেণীকরণ"
-
-#: GroupsSorting.src#STR_RPT_EXPRESSION.string.text
-msgid "Field/Expression"
-msgstr "ক্ষেত্র/রাশি"
-
-#: GroupsSorting.src#STR_RPT_SORTING.string.text
-msgid "Sort Order"
-msgstr "ক্রমসজ্জা"
-
-#: GroupsSorting.src#STR_RPT_PREFIXCHARS.string.text
-msgid "Prefix Characters"
-msgstr "পূর্বনির্ধারিত বর্ণচিহ্ন"
-
-#: GroupsSorting.src#STR_RPT_YEAR.string.text
-msgid "Year"
-msgstr "বছর"
-
-#: GroupsSorting.src#STR_RPT_QUARTER.string.text
-msgid "Quarter"
-msgstr "ত্রৈমাসিক"
-
-#: GroupsSorting.src#STR_RPT_MONTH.string.text
-msgid "Month"
-msgstr "মাস"
-
-#: GroupsSorting.src#STR_RPT_WEEK.string.text
-msgid "Week"
-msgstr "সপ্তাহ"
-
-#: GroupsSorting.src#STR_RPT_DAY.string.text
-msgid "Day"
-msgstr "দিন"
-
-#: GroupsSorting.src#STR_RPT_HOUR.string.text
-msgid "Hour"
-msgstr "ঘন্টা"
-
-#: GroupsSorting.src#STR_RPT_MINUTE.string.text
-msgid "Minute"
-msgstr "মিনিট"
-
-#: GroupsSorting.src#STR_RPT_INTERVAL.string.text
-msgid "Interval"
-msgstr "বিরতি"
-
-#: GroupsSorting.src#STR_RPT_HELP_FIELD.string.text
-msgid "Select a field or type an expression to sort or group on."
-msgstr ""
-"সর্ট বা শ্রেণীবদ্ধ করতে একটি ক্ষেত্র নির্বাচন করুন বা একটি রাশি টাইপ করুন।"
-
-#: GroupsSorting.src#STR_RPT_HELP_HEADER.string.text
-msgid "Display a header for this group?"
-msgstr "এই শ্রেণীর জন্য প্রান্তটিকা প্রদর্শন করবেন কি? "
-
-#: GroupsSorting.src#STR_RPT_HELP_FOOTER.string.text
-msgid "Display a footer for this group?"
-msgstr "এই শ্রেণীর জন্য পাদটিকা প্রদর্শন করবেন কি?"
-
-#: GroupsSorting.src#STR_RPT_HELP_GROUPON.string.text
-msgid "Select the value or range of values that starts a new group."
-msgstr "নতুন শ্রেণী শুরু করে এমন মান বা মানের সীমা নির্বাচন করুন। "
-
-#: GroupsSorting.src#STR_RPT_HELP_INTERVAL.string.text
-msgid "Interval or number of characters to group on."
-msgstr "শ্রেণীদবদ্ধ করার বিরতি বা মোট বর্ণচিহ্ন।"
-
-#: GroupsSorting.src#STR_RPT_HELP_KEEP.string.text
-msgid "Keep group together on one page?"
-msgstr "শ্রেণী এক পৃষ্ঠায় একত্রে রাখবেন কি?"
-
-#: GroupsSorting.src#STR_RPT_HELP_SORT.string.text
-msgid ""
-"Select ascending or descending sort order. Ascending means from A to Z or 0 "
-"to 9"
-msgstr ""
-"ঊর্ধ্বক্রম বা নিম্নক্রম ক্রমসজ্জা নির্বাচন করুন। ঊর্ধ্বক্রম মানে A থেকে Z "
-"পর্য়ন্ত বা ০ থেকে ৯ পর্যন্ত"
-
-#: Navigator.src#RID_NAVIGATOR.floatingwindow.text
-msgid "Report navigator"
-msgstr "প্রতিবেদন পরিক্রমক"
-
-#: Navigator.src#RID_STR_FUNCTIONS.string.text
-msgid "Functions"
-msgstr "ফাংশনসমূহ"
-
-#: Navigator.src#RID_STR_GROUPS.string.text
-msgctxt "Navigator.src#RID_STR_GROUPS.string.text"
-msgid "Groups"
-msgstr "শ্রেণীসমূহ"
-
-#: Navigator.src#RID_MENU_NAVIGATOR.SID_SORTINGANDGROUPING.menuitem.text
-msgid "Sorting and Grouping..."
-msgstr "সর্টকরণ ও শ্রেণীকরণ..."
-
-#: Navigator.src#RID_MENU_NAVIGATOR.SID_PAGEHEADERFOOTER.menuitem.text
-msgid "Page Header/Footer..."
-msgstr "পৃষ্ঠা প্রান্তটিকা/পাদটিকা"
-
-#: Navigator.src#RID_MENU_NAVIGATOR.SID_REPORTHEADERFOOTER.menuitem.text
-msgid "Report Header/Footer..."
-msgstr "প্রতিবেদন প্রান্তটিকা/পাদটিকা..."
-
-#: Navigator.src#RID_MENU_NAVIGATOR.SID_RPT_NEW_FUNCTION.menuitem.text
-msgid "New Function"
-msgstr "নতুন ফাংশন"
-
-#: Navigator.src#RID_MENU_NAVIGATOR.SID_SHOW_PROPERTYBROWSER.menuitem.text
-msgid "Properties..."
-msgstr "বৈশিষ্ট্য..."
-
-#: PageNumber.src#RID_PAGENUMBERS.FL_FORMAT.fixedline.text
-msgctxt "PageNumber.src#RID_PAGENUMBERS.FL_FORMAT.fixedline.text"
-msgid "Format"
-msgstr "বিন্যাস"
-
-#: PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N.radiobutton.text
-msgid "Page N"
-msgstr "পৃষ্ঠা এন"
-
-#: PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N_OF_M.radiobutton.text
-msgid "Page N of M"
-msgstr "পৃষ্ঠা এম এর এন"
-
-#: PageNumber.src#RID_PAGENUMBERS.FL_POSITION.fixedline.text
-msgctxt "PageNumber.src#RID_PAGENUMBERS.FL_POSITION.fixedline.text"
-msgid "Position"
-msgstr "অবস্থান"
-
-#: PageNumber.src#RID_PAGENUMBERS.RB_PAGE_TOPPAGE.radiobutton.text
-msgid "Top of Page (Header)"
-msgstr "পৃষ্ঠার উপরে (প্রান্তটিকা)"
-
-#: PageNumber.src#RID_PAGENUMBERS.RB_PAGE_BOTTOMPAGE.radiobutton.text
-msgid "Bottom of Page (Footer)"
-msgstr "পৃষ্ঠার নীচে (পাদটিকা)"
-
-#: PageNumber.src#RID_PAGENUMBERS.FL_MISC.fixedline.text
-msgid "General"
-msgstr "সাধারণ"
-
-#: PageNumber.src#RID_PAGENUMBERS.FL_ALIGNMENT.fixedtext.text
-msgid "Alignment:"
-msgstr "প্রান্তিককরণ:"
-
-#: PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.1.stringlist.text
-msgid "Left"
-msgstr "বাম"
-
-#: PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.2.stringlist.text
-msgid "Center"
-msgstr "কেন্দ্র"
-
-#: PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.3.stringlist.text
-msgid "Right"
-msgstr "ডান"
-
-#: PageNumber.src#RID_PAGENUMBERS.CB_SHOWNUMBERONFIRSTPAGE.checkbox.text
-msgid "Show Number on First Page"
-msgstr "প্রথম পৃষ্ঠায় নম্বর প্রদর্শন করুন"
-
-#: PageNumber.src#RID_PAGENUMBERS.PB_HELP.helpbutton.text
-msgctxt "PageNumber.src#RID_PAGENUMBERS.PB_HELP.helpbutton.text"
-msgid "~Help"
-msgstr "সহায়তা (~H)"
-
-#: PageNumber.src#RID_PAGENUMBERS.modaldialog.text
-msgid "Page Numbers"
-msgstr "পৃষ্ঠা নম্বরসমূহ"
-
-#: PageNumber.src#STR_RPT_PN_PAGE.string.text
-msgid "\"Page \" & #PAGENUMBER#"
-msgstr "\"পৃষ্ঠা \" & #PAGENUMBER#"
-
-#: PageNumber.src#STR_RPT_PN_PAGE_OF.string.text
-msgid " & \" of \" & #PAGECOUNT#"
-msgstr " & \" of \" & #PAGECOUNT#"
-
-#~ msgid "Move group"
-#~ msgstr "শ্রেণী সরান"
-
-#: report.src#RID_STR_BRWTITLE_PROPERTIES.string.text
-msgid "Properties: "
-msgstr "বৈশিষ্ট্য:"
-
-#: report.src#RID_STR_BRWTITLE_NO_PROPERTIES.string.text
-msgid "No Control marked"
-msgstr "কোনো নিয়ন্ত্রণ চিহ্নিত নয়"
-
-#: report.src#RID_STR_BRWTITLE_MULTISELECT.string.text
-msgid "Multiselection"
-msgstr "বহুবিধ-নির্বাচন"
-
-#: report.src#RID_STR_PROPTITLE_IMAGECONTROL.string.text
-msgid "Image Control"
-msgstr "চিত্র নিয়ন্ত্রণ করুন"
-
-#: report.src#RID_STR_PROPTITLE_FIXEDTEXT.string.text
-msgid "Label field"
-msgstr "লেবেল ক্ষেত্র"
-
-#: report.src#RID_STR_PROPTITLE_FIXEDLINE.string.text
-msgid "Line"
-msgstr "লাইন"
-
-#: report.src#RID_STR_PROPTITLE_FORMATTED.string.text
-msgid "Formatted Field"
-msgstr "বিন্যাসিত ক্ষেত্র"
-
-#: report.src#RID_STR_PROPTITLE_SHAPE.string.text
-msgid "Shape"
-msgstr "আকৃতি"
-
-#: report.src#RID_STR_PROPTITLE_REPORT.string.text
-msgid "Report"
-msgstr "প্রতিবেদন"
-
-#: report.src#RID_STR_PROPTITLE_SECTION.string.text
-msgctxt "report.src#RID_STR_PROPTITLE_SECTION.string.text"
-msgid "Section"
-msgstr "শাখা"
-
-#: report.src#RID_STR_PROPTITLE_FUNCTION.string.text
-msgctxt "report.src#RID_STR_PROPTITLE_FUNCTION.string.text"
-msgid "Function"
-msgstr "ফাংশন"
-
-#: report.src#RID_STR_PROPTITLE_GROUP.string.text
-msgid "Group"
-msgstr "শ্রেণী"
-
-#: report.src#STR_SHOW_RULER.string.text
-msgid "Show ruler"
-msgstr "মাপকাঠি দেখান"
-
-#: report.src#STR_SHOW_GRID.string.text
-msgid "Show grid"
-msgstr "গরাদ দেখান"
-
-#: report.src#RID_STR_UNDO_CHANGEPOSITION.string.text
-msgid "Change Object"
-msgstr "অবজেক্ট পরিবর্তন করুন"
-
-#: report.src#RID_STR_UNDO_MOVE_GROUP.string.text
-msgid "Move Group(s)"
-msgstr "শ্রেণীসমূহ সরান"
-
-#: report.src#RID_STR_UNDO_CONDITIONAL_FORMATTING.string.text
-msgid "Conditional Formatting"
-msgstr "শর্তযুক্ত বিন্যাসন"
-
-#: report.src#RID_STR_UNDO_REMOVE_REPORTHEADERFOOTER.string.text
-msgid "Remove report header / report footer"
-msgstr "প্রতিবেদন প্রান্তটিকা / প্রতিবেদন পাদটিকা অপসারণ করুন"
-
-#: report.src#RID_STR_UNDO_ADD_REPORTHEADERFOOTER.string.text
-msgid "Add report header / report footer"
-msgstr "প্রতিবেদন প্রান্তটিকা / প্রতিবেদন পাদটিকা যুক্ত করুন"
-
-#: report.src#RID_STR_UNDO_REMOVE_PAGEHEADERFOOTER.string.text
-msgid "Remove page header / page footer"
-msgstr "পৃষ্ঠা প্রান্তটিকা / পৃষ্ঠা পাদটিকা অপসারণ করুন"
-
-#: report.src#RID_STR_UNDO_ADD_PAGEHEADERFOOTER.string.text
-msgid "Add page header / page footer"
-msgstr "পৃষ্ঠা প্রান্তটিকা / পৃষ্ঠা পাদটিকা যুক্ত করুন"
-
-#: report.src#RID_STR_UNDO_PROPERTY.string.text
-msgid "Change property '#'"
-msgstr "'#' এর বৈশিষ্ট্য পরিবর্তন করুন"
-
-#: report.src#RID_STR_UNDO_ADD_GROUP_HEADER.string.text
-msgid "Add group header "
-msgstr "শ্রেণীর প্রান্তটিকা যুক্ত করুন"
-
-#: report.src#RID_STR_UNDO_REMOVE_GROUP_HEADER.string.text
-msgid "Remove group header "
-msgstr "শ্রেণীর প্রান্তটিকা অপসারণ করুন"
-
-#: report.src#RID_STR_UNDO_ADD_GROUP_FOOTER.string.text
-msgid "Add group footer "
-msgstr "শ্রেণীর পাদটিকা যুক্ত করুন"
-
-#: report.src#RID_STR_UNDO_REMOVE_GROUP_FOOTER.string.text
-msgid "Remove group footer "
-msgstr "শ্রেণীর পাদটিকা অপসারণ করুন"
-
-#: report.src#RID_STR_UNDO_ADDFUNCTION.string.text
-msgid "Add function"
-msgstr "ফাংশন যুক্ত করুন"
-
-#: report.src#RID_STR_UNDO_DELETEFUNCTION.string.text
-msgid "Delete function"
-msgstr "ফাংশন মুছে ফেলুন"
-
-#: report.src#RID_STR_DESIGN_VIEW.string.text
-msgid "Design"
-msgstr "নকশা করুন"
-
-#: report.src#RID_STR_PREVIEW_VIEW.string.text
-msgid "Preview"
-msgstr "প্রাকদর্শন"
-
-#: report.src#STR_RPT_TITLE.string.text
-msgid "Report #"
-msgstr "প্রতিবেদন #"
-
-#: report.src#STR_RPT_LABEL.string.text
-msgid "~Report name"
-msgstr "প্রতিবেদনের নাম (~R)"
-
-#: report.src#RID_STR_UNDO_REMOVE_GROUP.string.text
-msgctxt "report.src#RID_STR_UNDO_REMOVE_GROUP.string.text"
-msgid "Delete Group"
-msgstr "শ্রেণী মুছে ফেলুন"
-
-#: report.src#RID_STR_UNDO_APPEND_GROUP.string.text
-msgid "Add Group"
-msgstr "শ্রেণী যুক্ত করুন"
-
-#: report.src#RID_STR_UNDO_REMOVE_SELECTION.string.text
-msgid "Delete Selection"
-msgstr "শাখা মুছে ফেলুন"
-
-#: report.src#RID_STR_UNDO_REMOVE_FUNCTION.string.text
-msgid "Delete Function"
-msgstr "ফাংশন মুছে ফেলুন"
-
-#: report.src#RID_STR_UNDO_CHANGE_SIZE.string.text
-msgid "Change Size"
-msgstr "আকার পরিবর্তন করুন"
-
-#: report.src#RID_STR_UNDO_PASTE.string.text
-msgid "Paste"
-msgstr "প্রতিলেপন করুন"
-
-#: report.src#RID_STR_UNDO_INSERT_CONTROL.string.text
-msgid "Insert Control"
-msgstr "নিয়ন্ত্রণ প্রবেশ করান"
-
-#: report.src#RID_STR_UNDO_DELETE_CONTROL.string.text
-msgid "Delete Control"
-msgstr "নিয়ন্ত্রণ মুছে ফেলুন"
-
-#: report.src#RID_STR_UNDO_GROUP.string.text
-msgid "Insert Group"
-msgstr "শ্রেণী প্রবেশ করান"
-
-#: report.src#RID_STR_UNDO_UNGROUP.string.text
-msgctxt "report.src#RID_STR_UNDO_UNGROUP.string.text"
-msgid "Delete Group"
-msgstr "শ্রেণী মুছে ফেলুন"
-
-#: report.src#RID_STR_GROUPHEADER.string.text
-msgid "GroupHeader"
-msgstr "GroupHeader"
-
-#: report.src#RID_STR_GROUPFOOTER.string.text
-msgid "GroupFooter"
-msgstr "GroupFooter"
-
-#: report.src#RID_MENU_REPORT.SID_SORTINGANDGROUPING.menuitem.text
-msgid "Sorting and Grouping..."
-msgstr "শর্টকরণ ও শ্রেণীকরণ..."
-
-#: report.src#RID_MENU_REPORT.SID_ATTR_CHAR_COLOR_BACKGROUND.menuitem.text
-msgid "Background Color..."
-msgstr "প্রেক্ষাপট রং..."
-
-#: report.src#RID_MENU_REPORT.SID_RULER.menuitem.text
-msgid "Ruler..."
-msgstr "মাপকাঠি..."
-
-#: report.src#RID_MENU_REPORT.SID_GRID_VISIBLE.menuitem.text
-msgid "Grid..."
-msgstr "গরাদ..."
-
-#: report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_UP.menuitem.text
-msgid "Bring ~Forward"
-msgstr "সামনে আনুন (~F)"
-
-#: report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_DOWN.menuitem.text
-msgid "Send Back~ward"
-msgstr "পিছনে পাঠান (~w)"
-
-#: report.src#RID_MENU_REPORT.SID_ARRANGEMENU.menuitem.text
-msgid "~Arrange"
-msgstr "সাজান (~A)"
-
-#: report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTWIDTH.menuitem.text
-msgid "~Fit to smallest width"
-msgstr "ক্ষুদ্রতর প্রস্থে মানানসই করুন (~F)"
-
-#: report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTWIDTH.menuitem.text
-msgid "~Fit to greatest width"
-msgstr "বৃহত্তর প্রস্থে মানানসই করুন (~F)"
-
-#: report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTHEIGHT.menuitem.text
-msgid "~Fit to smallest height"
-msgstr "ক্ষুদ্রতর প্রস্থে উচ্চতায় মানানসই করুন (~F)"
-
-#: report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTHEIGHT.menuitem.text
-msgid "~Fit to greatest height"
-msgstr "বৃহত্তর উচ্চতায় মানানসই করুন (~F)"
-
-#: report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.menuitem.text
-msgid "~Object Resizing"
-msgstr "অবজেক্ট পুনঃআকার করছে (~O)"
-
-#: report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK.menuitem.text
-msgid "Shrink"
-msgstr ""
-
-#: report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_TOP.menuitem.text
-msgid "Shrink from top"
-msgstr ""
-
-#: report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_BOTTOM.menuitem.text
-msgid "Shrink from bottom"
-msgstr ""
-
-#: report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.menuitem.text
-msgctxt "report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.menuitem.text"
-msgid "Section"
-msgstr "শাখা"
-
-#: report.src#RID_MENU_REPORT.SID_DISTRIBUTION.menuitem.text
-msgid "Distribution..."
-msgstr "বিতরন..."
-
-#: report.src#RID_MENU_REPORT.SID_SHOW_PROPERTYBROWSER.menuitem.text
-msgid "Properties..."
-msgstr "বৈশিষ্ট্য..."
-
-#: report.src#RID_STR_FIELDSELECTION.string.text
-msgid "Add field:"
-msgstr "ক্ষেত্র যুক্ত করুন:"
-
-#: report.src#RID_STR_FILTER.string.text
-msgid "Filter"
-msgstr "পরিশ্রুতক"
-
-#: report.src#RID_APP_TITLE.string.text
-msgid " - %PRODUCTNAME Base Report"
-msgstr " - %PRODUCTNAME ভিত্তিক প্রতিবেদন "
-
-#: report.src#RID_APP_NEW_DOC.string.text
-msgid "Untitled"
-msgstr "শিরোনামহীন"
-
-#: report.src#RID_STR_UNDO_ALIGNMENT.string.text
-msgid "Change Alignment"
-msgstr "প্রান্তিককরণ পরিবর্তন করুন"
-
-#: report.src#RID_STR_HEADER.string.text
-msgid "# Header"
-msgstr "# প্রান্তটিকা"
-
-#: report.src#RID_STR_FOOTER.string.text
-msgid "# Footer"
-msgstr "# পাদটিকা"
-
-#: report.src#RID_STR_IMPORT_GRAPHIC.string.text
-msgid "Insert graphics"
-msgstr "নকশা প্রবেশ করান"
-
-#: report.src#RID_STR_DELETE.string.text
-msgid "Delete"
-msgstr "মুছে ফেলুন"
-
-#: report.src#RID_STR_FUNCTION.string.text
-msgctxt "report.src#RID_STR_FUNCTION.string.text"
-msgid "Function"
-msgstr "ফাংশন"
-
-#: report.src#RID_STR_COULD_NOT_CREATE_REPORT.string.text
-msgid "An error occurred while creating the report."
-msgstr "প্রতিবেদনটি তৈরি করার সময় একটি ত্রুটি সংঘটিত হয়েছে।"
-
-#: report.src#RID_STR_CAUGHT_FOREIGN_EXCEPTION.string.text
-msgid "An exception of type $type$ was caught."
-msgstr "$type$ ধরনের একটি ব্যতিক্রম ধরা পড়েছে।"
-
-#: report.src#RID_STR_UNDO_CHANGEFONT.string.text
-msgid "Change font"
-msgstr "ফন্ট পরিবর্তন করুন"
-
-#: report.src#RID_STR_UNDO_CHANGEPAGE.string.text
-msgid "Change page attributes"
-msgstr "পৃষ্ঠার বৈশিষ্ট্যাবলী পরিবর্তন করুন"
-
-#: report.src#RID_STR_PAGEHEADERFOOTER_INSERT.string.text
-msgid "Insert Page Header/Footer"
-msgstr "পৃষ্ঠার প্রান্তটিকা/পাদটিকা প্রবেশ করান"
-
-#: report.src#RID_STR_PAGEHEADERFOOTER_DELETE.string.text
-msgid "Delete Page Header/Footer"
-msgstr "পৃষ্ঠার প্রান্তটিকা/পাদটিকা মুছে ফেলুন"
-
-#: report.src#RID_STR_COLUMNHEADERFOOTER_INSERT.string.text
-msgid "Insert Column Header/Footer"
-msgstr "স্তম্ভের প্রান্তটিকা/পাদটিকা প্রবেশ করান"
-
-#: report.src#RID_STR_COLUMNHEADERFOOTER_DELETE.string.text
-msgid "Delete Column Header/Footer"
-msgstr "স্তম্ভের প্রান্তটিকা/পাদটিকা মুছে ফেলুন"
-
-#: report.src#RID_STR_REPORTHEADERFOOTER_INSERT.string.text
-msgid "Insert Report Header/Footer"
-msgstr "প্রতিবেদনের প্রান্তটিকা/পাদটিকা প্রবেশ করান"
-
-#: report.src#RID_STR_REPORTHEADERFOOTER_DELETE.string.text
-msgid "Delete Report Header/Footer"
-msgstr "প্রতিবেদনের প্রান্তটিকা/পাদটিকা মুছে ফেলুন"
-
-#: report.src#RID_ERR_NO_COMMAND.string.text
-msgid "The report can not be executed unless it is bound to content."
-msgstr "প্রতিবেদনটি বিষয়বস্তুতে আবদ্ধ না করা পর্যন্ত কার্যকর করা যাবে না।"
-
-#: report.src#RID_ERR_NO_OBJECTS.string.text
-msgid ""
-"The report can not be executed unless at least one object has been inserted."
-msgstr ""
-"প্রতিবেদনটিতে কমপক্ষে একটি অবজেক্ট প্রবেশ না করা পর্যন্ত এটা কার্যকর করা "
-"যাবে না।"
-
-#: report.src#RID_STR_UNDO_SHRINK.string.text
-msgid "Shrink Section"
-msgstr ""
-
-#: report.src#RID_STR_DETAIL.string.text
-msgid "Detail"
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/core/resource/strings.src#RID_STR_DETAIL.String.Text
+msgid  "Detail"
 msgstr "বিস্তারিত"
 
-#: report.src#RID_STR_PAGE_HEADER.string.text
-msgid "Page Header"
-msgstr "পৃষ্ঠার প্রান্তটিকা"
-
-#: report.src#RID_STR_PAGE_FOOTER.string.text
-msgid "Page Footer"
-msgstr "পৃষ্ঠার পাদটিকা"
-
-#: report.src#RID_STR_REPORT_HEADER.string.text
-msgid "Report Header"
-msgstr "প্রতিবেদনের প্রান্তটিকা"
-
-#: report.src#RID_STR_REPORT_FOOTER.string.text
-msgid "Report Footer"
-msgstr "প্রতিবেদনের পাদটিকা"
-
-#: report.src#RID_STR_INSERT.string.text
-msgid "Insert"
-msgstr "প্রবেশ করান"
-
-#: inspection.src#RID_STR_PROPPAGE_DEFAULT.string.text
-msgid "General"
-msgstr "সাধারণ"
-
-#: inspection.src#RID_STR_PROPPAGE_DATA.string.text
-msgid "Data"
-msgstr "উপাত্ত"
-
-#: inspection.src#RID_STR_BOOL.1.string.text
-msgctxt "inspection.src#RID_STR_BOOL.1.string.text"
-msgid "No"
-msgstr "না"
-
-#: inspection.src#RID_STR_BOOL.2.string.text
-msgid "Yes"
-msgstr "হ্যাঁ"
-
-#: inspection.src#RID_STR_FORCENEWPAGE.string.text
-msgid "Force New Page"
-msgstr "নতুন পৃষ্ঠা যুক্ত করুন"
-
-#: inspection.src#RID_STR_FORCENEWPAGE_CONST.1.string.text
-msgctxt "inspection.src#RID_STR_FORCENEWPAGE_CONST.1.string.text"
-msgid "None"
-msgstr "কোনটি না"
-
-#: inspection.src#RID_STR_FORCENEWPAGE_CONST.2.string.text
-msgid "Before Section"
-msgstr "শাখার পূর্বে"
-
-#: inspection.src#RID_STR_FORCENEWPAGE_CONST.3.string.text
-msgid "After Section"
-msgstr "শাখার পরে"
-
-#: inspection.src#RID_STR_FORCENEWPAGE_CONST.4.string.text
-msgid "Before & After Section"
-msgstr "শাখার পূর্বে এবং পরে"
-
-#: inspection.src#RID_STR_NEWROWORCOL.string.text
-msgid "New Row Or Column"
-msgstr "নতুন সারি বা স্তম্ভ"
-
-#: inspection.src#RID_STR_KEEPTOGETHER.string.text
-msgid "Keep Together"
-msgstr "একত্রে রাখুন"
-
-#: inspection.src#RID_STR_KEEPTOGETHER_CONST.1.string.text
-msgctxt "inspection.src#RID_STR_KEEPTOGETHER_CONST.1.string.text"
-msgid "No"
-msgstr "না"
-
-#: inspection.src#RID_STR_KEEPTOGETHER_CONST.2.string.text
-msgid "Whole Group"
-msgstr "সম্পূর্ণ গ্রুপ"
-
-#: inspection.src#RID_STR_KEEPTOGETHER_CONST.3.string.text
-msgid "With First Detail"
-msgstr "প্রথম বর্ণনা সহ"
-
-#: inspection.src#RID_STR_CANGROW.string.text
-msgid "Can Grow"
-msgstr "বাড়তে পারে"
-
-#: inspection.src#RID_STR_CANSHRINK.string.text
-msgid "Can Shrink"
-msgstr "সঙ্কুচিত হতে পারে"
-
-#: inspection.src#RID_STR_REPEATSECTION.string.text
-msgid "Repeat Section"
-msgstr "শাখা পুনরাবৃত্তি করুন"
-
-#: inspection.src#RID_STR_PRINTREPEATEDVALUES.string.text
-msgid "Print repeated values"
-msgstr "পুনরাবৃত্তি মানসমূহ মুদ্রণ করুন"
-
-#: inspection.src#RID_STR_CONDITIONALPRINTEXPRESSION.string.text
-msgid "Conditional Print Expression"
-msgstr "শর্তযুক্ত মুদ্রণ রাশি"
-
-#: inspection.src#RID_STR_STARTNEWCOLUMN.string.text
-msgid "Start new column"
-msgstr "নতুন স্তম্ভ শুরু করুন"
-
-#: inspection.src#RID_STR_STARTNEWPAGE.string.text
-msgid "Start new page"
-msgstr "নতুন পৃষ্ঠা শুরু করুন"
-
-#: inspection.src#RID_STR_RESETPAGENUMBER.string.text
-msgid "Reset page number"
-msgstr "পৃষ্ঠা নম্বর পুনঃবিন্যাস করুন"
-
-#: inspection.src#RID_STR_CHARTTYPE.string.text
-msgid "Chart type"
-msgstr "ছকের ধরন"
-
-#: inspection.src#RID_STR_PRINTWHENGROUPCHANGE.string.text
-msgid "Print When Group Change"
-msgstr "শ্রেণী পরিবর্তনের সময় মুদ্রণ করুন"
-
-#: inspection.src#RID_STR_VISIBLE.string.text
-msgid "Visible"
-msgstr "দৃশ্যমান"
-
-#: inspection.src#RID_STR_GROUPKEEPTOGETHER.string.text
-msgid "Group keep together"
-msgstr "শ্রেণী একত্রে রাখুন"
-
-#: inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.1.string.text
-msgid "Per Page"
-msgstr "প্রতি পৃষ্ঠায়"
-
-#: inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.2.string.text
-msgid "Per Column"
-msgstr "প্রতি স্তম্ভে"
-
-#: inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.1.string.text
-msgctxt "inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.1.string.text"
-msgid "None"
-msgstr "কোনটি না"
-
-#: inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.2.string.text
-msgid "Section"
-msgstr "শাখা"
-
-#: inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.3.string.text
-msgid "Automatic"
-msgstr "স্বয়ংক্রিয়"
-
-#: inspection.src#RID_STR_PAGEHEADEROPTION.string.text
-msgid "Page header"
+#: source/core/resource/strings.src#RID_STR_PAGE_HEADER.String.Text
+msgid  "Page Header"
 msgstr "পৃষ্ঠা প্রান্তটিকা"
 
-#: inspection.src#RID_STR_PAGEFOOTEROPTION.string.text
-msgid "Page footer"
+#: source/core/resource/strings.src#RID_STR_PAGE_FOOTER.String.Text
+msgid  "Page Footer"
 msgstr "পৃষ্ঠা পাদটিকা"
 
-#: inspection.src#RID_STR_REPORTPRINTOPTION_CONST.1.string.text
-msgid "All Pages"
-msgstr "সকল পৃষ্ঠা"
-
-#: inspection.src#RID_STR_REPORTPRINTOPTION_CONST.2.string.text
-msgid "Not With Report Header"
-msgstr "প্রতিবেদন প্রান্তটিকার সাথে নয়"
-
-#: inspection.src#RID_STR_REPORTPRINTOPTION_CONST.3.string.text
-msgid "Not With Report Footer"
-msgstr "প্রতিবেদন পাদটিকার সাথে নয়"
-
-#: inspection.src#RID_STR_REPORTPRINTOPTION_CONST.4.string.text
-msgid "Not With Report Header/Footer"
-msgstr "প্রতিবেদন প্রান্তটিকার/পাদটিকার সাথে নয়"
-
-#: inspection.src#RID_STR_DEEPTRAVERSING.string.text
-msgid "Deep traversing"
-msgstr "গভীরে অতিক্রম করছে"
-
-#: inspection.src#RID_STR_PREEVALUATED.string.text
-msgid "Pre evaluation"
-msgstr "মূল্যায়নের পূর্বে"
-
-#: inspection.src#RID_STR_POSITIONX.string.text
-msgid "Position X"
-msgstr "অবস্থান X"
-
-#: inspection.src#RID_STR_POSITIONY.string.text
-msgid "Position Y"
-msgstr "অবস্থান Y"
-
-#: inspection.src#RID_STR_WIDTH.string.text
-msgid "Width"
-msgstr "প্রস্থ"
-
-#: inspection.src#RID_STR_HEIGHT.string.text
-msgid "Height"
-msgstr "উচ্চতা"
-
-#: inspection.src#RID_STR_INITIALFORMULA.string.text
-msgid "Initial value"
-msgstr "প্রাথমিক মান"
-
-#: inspection.src#RID_STR_PRESERVEIRI.string.text
-msgid "Preserve as Link"
-msgstr "লিংক হিসেবে সংরক্ষণ করুন"
-
-#: inspection.src#RID_STR_FORMULA.string.text
-msgid "Formula"
-msgstr "সূত্র"
-
-#: inspection.src#RID_STR_DATAFIELD.string.text
-msgid "Data field"
-msgstr "উপাত্ত ক্ষেত্র"
-
-#: inspection.src#RID_STR_FONT.string.text
-msgid "Font"
-msgstr "ফন্ট"
-
-#: inspection.src#RID_STR_BACKCOLOR.string.text
-msgid "Background color"
-msgstr "প্রেক্ষাপট রং"
-
-#: inspection.src#RID_STR_BACKTRANSPARENT.string.text
-msgctxt "inspection.src#RID_STR_BACKTRANSPARENT.string.text"
-msgid "Background Transparent"
-msgstr "প্রেক্ষাপট স্বচ্ছ"
-
-#: inspection.src#RID_STR_CONTROLBACKGROUNDTRANSPARENT.string.text
-msgctxt "inspection.src#RID_STR_CONTROLBACKGROUNDTRANSPARENT.string.text"
-msgid "Background Transparent"
-msgstr "প্রেক্ষাপট স্বচ্ছ"
-
-#: inspection.src#RID_STR_OVERLAP_OTHER_CONTROL.string.text
-msgid "This operation is not allowed. The control overlaps with another one."
-msgstr "এই অপারেশনটি সমর্থিত নয়। নিয়ন্ত্রণটি অন্য একটির সাথে উপরিপাতন করে। "
-
-#: inspection.src#RID_STR_ILLEGAL_POSITION.string.text
-msgid "This position can not be set. It is invalid."
-msgstr "এই অবস্থানটি নির্ধারণ করা যায় না। এটা অবৈধ।"
-
-#: inspection.src#RID_STR_SCOPE_GROUP.string.text
-msgid "Group: %1"
-msgstr "শ্রেণী: %1"
-
-#: inspection.src#RID_STR_FORMULALIST.string.text
-msgctxt "inspection.src#RID_STR_FORMULALIST.string.text"
-msgid "Function"
-msgstr "ফাংশন"
-
-#: inspection.src#RID_STR_SCOPE.string.text
-msgid "Scope"
-msgstr "সুযোগ"
-
-#: inspection.src#RID_STR_TYPE.string.text
-msgid "Data Field Type"
-msgstr "উপাত্ত ক্ষেত্রের ধরন"
-
-#: inspection.src#RID_STR_TYPE_CONST.1.string.text
-msgid "Field or Formula"
-msgstr "ক্ষেত্র বা সূত্র"
-
-#: inspection.src#RID_STR_TYPE_CONST.2.string.text
-msgctxt "inspection.src#RID_STR_TYPE_CONST.2.string.text"
-msgid "Function"
-msgstr "ফাংশন"
-
-#: inspection.src#RID_STR_TYPE_CONST.3.string.text
-msgctxt "inspection.src#RID_STR_TYPE_CONST.3.string.text"
-msgid "Counter"
-msgstr "গণনায়ক"
-
-#: inspection.src#RID_STR_TYPE_CONST.4.string.text
-msgid "User defined Function"
-msgstr "ব্যবহারকারী সুনির্দিষ্ট ফাংশন"
-
-#: inspection.src#RID_STR_MASTERFIELDS.string.text
-msgid "Link master fields"
-msgstr "প্রধান ক্ষেত্রসমূহ সংযোগ করুন"
-
-#: inspection.src#RID_STR_DETAILFIELDS.string.text
-msgid "Link slave fields"
-msgstr "স্লেভ ক্ষেত্রসমূহ সংযোগ করুন"
-
-#: inspection.src#RID_STR_EXPLANATION.string.text
-msgid ""
-"Charts can be used to display detailed data about the current record of the "
-"report. To do this, you can specify which columns in the chart match which "
-"columns in the report."
-msgstr ""
-"প্রতিবেদনটির বর্তমান রেকর্ড সম্পর্কে বিস্তারিত উপাত্ত প্রদর্শন করতে ছকসমূহ "
-"ব্যবহৃত হতে পারে। এটা সম্পন্ন করতে, আপনি ছকের কোন স্তম্ভ প্রতিবেদনের কোন "
-"স্তম্ভের সাথে মিলে তা সুনির্দিষ্ট করতে পারেন।"
-
-#: inspection.src#RID_STR_DETAILLABEL.string.text
-msgid "Chart"
-msgstr "ছক"
-
-#: inspection.src#RID_STR_MASTERLABEL.string.text
-msgid "Report"
-msgstr "প্রতিবেদন"
-
-#: inspection.src#RID_STR_PREVIEW_COUNT.string.text
-msgid "Preview Row(s)"
-msgstr "সারিসমূহ পূনর্বিক্ষণ করুন"
-
-#: inspection.src#RID_STR_AREA.string.text
-msgid "Area"
-msgstr "এলাকা"
-
-#: inspection.src#RID_STR_MIMETYPE.string.text
-msgid "Report Output Format"
-msgstr "প্রতিবেদনের ফলাফল বিন্যাস"
-
-#: inspection.src#RID_STR_VERTICALALIGN.string.text
-msgid "Vert. Alignment"
-msgstr ""
-
-#: inspection.src#RID_STR_VERTICAL_ALIGN_CONST.1.string.text
-msgid "Top"
-msgstr ""
-
-#: inspection.src#RID_STR_VERTICAL_ALIGN_CONST.2.string.text
-msgid "Middle"
-msgstr ""
-
-#: inspection.src#RID_STR_VERTICAL_ALIGN_CONST.3.string.text
-msgid "Bottom"
-msgstr ""
-
-#: inspection.src#RID_STR_PARAADJUST.string.text
-msgid "Horz. Alignment"
-msgstr ""
-
-#: inspection.src#RID_STR_PARAADJUST_CONST.1.string.text
-msgid "Left"
-msgstr ""
-
-#: inspection.src#RID_STR_PARAADJUST_CONST.2.string.text
-msgid "Right"
-msgstr ""
-
-#: inspection.src#RID_STR_PARAADJUST_CONST.3.string.text
-msgid "Block"
-msgstr ""
-
-#: inspection.src#RID_STR_PARAADJUST_CONST.4.string.text
-msgid "Center"
-msgstr ""
-
-#: inspection.src#RID_STR_F_COUNTER.string.text
-msgctxt "inspection.src#RID_STR_F_COUNTER.string.text"
-msgid "Counter"
-msgstr "গণনায়ক"
-
-#: inspection.src#RID_STR_F_ACCUMULATION.string.text
-msgid "Accumulation"
-msgstr ""
-
-#: inspection.src#RID_STR_F_MINIMUM.string.text
-msgid "Minimum"
-msgstr ""
-
-#: inspection.src#RID_STR_F_MAXIMUM.string.text
-msgid "Maximum"
-msgstr ""
-
-#: strings.src#RID_STR_DETAIL.string.text
-msgid "Detail"
-msgstr "বিস্তারিত"
-
-#: strings.src#RID_STR_PAGE_HEADER.string.text
-msgid "Page Header"
-msgstr "পৃষ্ঠা প্রান্তটিকা"
-
-#: strings.src#RID_STR_PAGE_FOOTER.string.text
-msgid "Page Footer"
-msgstr "পৃষ্ঠা পাদটিকা"
-
-#: strings.src#RID_STR_GROUP_HEADER.string.text
-msgid "Group Header"
+#: source/core/resource/strings.src#RID_STR_GROUP_HEADER.String.Text
+msgid  "Group Header"
 msgstr "শ্রেণী প্রান্তটিকা"
 
-#: strings.src#RID_STR_GROUP_FOOTER.string.text
-msgid "Group Footer"
+#: source/core/resource/strings.src#RID_STR_GROUP_FOOTER.String.Text
+msgid  "Group Footer"
 msgstr "শ্রেণী পাদটিকা"
 
-#: strings.src#RID_STR_REPORT_HEADER.string.text
-msgid "Report Header"
+#: source/core/resource/strings.src#RID_STR_REPORT_HEADER.String.Text
+msgid  "Report Header"
 msgstr "প্রতিবেদন প্রান্তটিকা"
 
-#: strings.src#RID_STR_REPORT_FOOTER.string.text
-msgid "Report Footer"
+#: source/core/resource/strings.src#RID_STR_REPORT_FOOTER.String.Text
+msgid  "Report Footer"
 msgstr "প্রতিবেদন পাদটিকা"
 
-#: strings.src#RID_STR_PROPERTY_CHANGE_NOT_ALLOWED.string.text
-msgid "The name '#1' already exists and can not be asssigned again."
+#: source/core/resource/strings.src#RID_STR_PROPERTY_CHANGE_NOT_ALLOWED.String.Text
+msgid  "The name '#1' already exists and can not be asssigned again."
 msgstr "'#1' নামটি ইতোমধ্যে বিদ্যমান এবং পুনরায় বরাদ্দ করা যাবে না। "
 
-#: strings.src#RID_STR_ERROR_WRONG_ARGUMENT.string.text
-msgid ""
-"You tried to set an illegal argument. Please have a look at '#1' for valid "
-"arguments."
+#: source/core/resource/strings.src#RID_STR_ERROR_WRONG_ARGUMENT.String.Text
+msgid  "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
 msgstr ""
-"আপনি একটি অবৈধ যুক্তি নির্ধারণ করার চেষ্টা করেছেন। অনুগ্রহ করে বৈধ যুক্তির "
-"জন্য '#1' এ দেখুন। "
 
-#: strings.src#RID_STR_ARGUMENT_IS_NULL.string.text
-msgid "The element is invalid."
+#: source/core/resource/strings.src#RID_STR_ARGUMENT_IS_NULL.String.Text
+msgid  "The element is invalid."
 msgstr "উপাদানটি অবৈধ।"
 
-#: strings.src#RID_STR_FIXEDTEXT.string.text
-msgid "Label field"
+#: source/core/resource/strings.src#RID_STR_FIXEDTEXT.String.Text
+msgid  "Label field"
 msgstr "লেবেল ক্ষেত্র"
 
-#: strings.src#RID_STR_FORMATTEDFIELD.string.text
-msgid "Formatted field"
+#: source/core/resource/strings.src#RID_STR_FORMATTEDFIELD.String.Text
+msgid  "Formatted field"
 msgstr "বিন্যাসিত ক্ষেত্র"
 
-#: strings.src#RID_STR_IMAGECONTROL.string.text
-msgid "Image control"
+#: source/core/resource/strings.src#RID_STR_IMAGECONTROL.String.Text
+msgid  "Image control"
 msgstr "চিত্র নিয়ন্ত্রণ করুন"
 
-#: strings.src#RID_STR_REPORT.string.text
-msgid "Report"
+#: source/core/resource/strings.src#RID_STR_REPORT.String.Text
+msgid  "Report"
 msgstr "প্রতিবেদন"
 
-#: strings.src#RID_STR_SHAPE.string.text
-msgid "Shape"
+#: source/core/resource/strings.src#RID_STR_SHAPE.String.Text
+msgid  "Shape"
 msgstr "আকৃতি"
 
-#: strings.src#RID_STR_FIXEDLINE.string.text
-msgid "Fixed line"
+#: source/core/resource/strings.src#RID_STR_FIXEDLINE.String.Text
+msgid  "Fixed line"
 msgstr "অপরিবর্তিত লাইন"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FloatingWindow.Text
+msgid  "Sorting and Grouping"
+msgstr "শর্টকরণ ও শ্রেণীকরণ"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR2.FixedLine.Text
+msgid  "Groups"
+msgstr "শ্রেণীসমূহ"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_MOVELABEL.FixedText.Text
+msgid  "Group actions"
+msgstr ""
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_UP.ToolBoxItem.Text
+msgid  "Move up"
+msgstr ""
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_DOWN.ToolBoxItem.Text
+msgid  "Move down"
+msgstr ""
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_DELETE.ToolBoxItem.Text
+msgid  "~Delete"
+msgstr ""
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR3.FixedLine.Text
+msgid  "Properties"
+msgstr "বৈশিষ্ট্য"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_ORDER.FixedText.Text
+msgid  "Sorting"
+msgstr "শর্টকরণ"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.0.StringList.item
+msgid  "Ascending"
+msgstr "ঊর্ধ্বক্রম"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.1.StringList.item
+msgid  "Descending"
+msgstr "নিম্নক্রম"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_HEADER.FixedText.Text
+msgid  "Group Header"
+msgstr "শ্রেণীর প্রান্তটিকা"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
+msgid  "Not present"
+msgstr "অনুপস্থিত"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_FOOTER.FixedText.Text
+msgid  "Group Footer"
+msgstr "শ্রেণীর পাদটিকা"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
+msgid  "Not present"
+msgstr "অনুপস্থিত"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPON.FixedText.Text
+msgid  "Group On"
+msgstr "শ্রেণীতে"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_GROUPONLST.Default.StringList.item
+msgid  "Each Value"
+msgstr "প্রত্যেক মান"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPINTERVAL.FixedText.Text
+msgid  "Group Interval"
+msgstr "শ্রেণী বিরতি"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_KEEPTOGETHER.FixedText.Text
+msgid  "Keep Together"
+msgstr "একত্রে রাখুন"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.0.StringList.item
+msgid  "No"
+msgstr "না"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.1.StringList.item
+msgid  "Whole Group"
+msgstr "পুরো শ্রেণী"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.2.StringList.item
+msgid  "With First Detail"
+msgstr "প্রথম বর্ণনা সহ"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR1.FixedLine.Text
+msgid  "Help"
+msgstr "সহায়তা"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_EXPRESSION.String.Text
+msgid  "Field/Expression"
+msgstr "ক্ষেত্র/রাশি"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_SORTING.String.Text
+msgid  "Sort Order"
+msgstr "ক্রমসজ্জা"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_PREFIXCHARS.String.Text
+msgid  "Prefix Characters"
+msgstr "পূর্বনির্ধারিত বর্ণচিহ্ন"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_YEAR.String.Text
+msgid  "Year"
+msgstr "বছর"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_QUARTER.String.Text
+msgid  "Quarter"
+msgstr "ত্রৈমাসিক"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_MONTH.String.Text
+msgid  "Month"
+msgstr "মাস"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_WEEK.String.Text
+msgid  "Week"
+msgstr "সপ্তাহ"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_DAY.String.Text
+msgid  "Day"
+msgstr "দিন"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HOUR.String.Text
+msgid  "Hour"
+msgstr "ঘন্টা"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_MINUTE.String.Text
+msgid  "Minute"
+msgstr "মিনিট"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_INTERVAL.String.Text
+msgid  "Interval"
+msgstr "বিরতি"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_FIELD.String.Text
+msgid  "Select a field or type an expression to sort or group on."
+msgstr ""
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_HEADER.String.Text
+msgid  "Display a header for this group?"
+msgstr "এই শ্রেণীর জন্য প্রান্তটিকা প্রদর্শন করবেন কি? "
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_FOOTER.String.Text
+msgid  "Display a footer for this group?"
+msgstr "এই শ্রেণীর জন্য পাদটিকা প্রদর্শন করবেন কি?"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_GROUPON.String.Text
+msgid  "Select the value or range of values that starts a new group."
+msgstr "নতুন শ্রেণী শুরু করে এমন মান বা মানের সীমা নির্বাচন করুন। "
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_INTERVAL.String.Text
+msgid  "Interval or number of characters to group on."
+msgstr "শ্রেণীদবদ্ধ করার বিরতি বা মোট বর্ণচিহ্ন।"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_KEEP.String.Text
+msgid  "Keep group together on one page?"
+msgstr "শ্রেণী এক পৃষ্ঠায় একত্রে রাখবেন কি?"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_SORT.String.Text
+msgid  "Select ascending or descending sort order. Ascending means from A to Z or 0 to 9"
+msgstr ""
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
+msgid  "Present"
+msgstr "উপস্থিত"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
+msgid  "Present"
+msgstr "উপস্থিত"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.ModalDialog.Text
+msgid  "Page Numbers"
+msgstr "পৃষ্ঠা নম্বরসমূহ"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_FORMAT.FixedLine.Text
+msgid  "Format"
+msgstr "বিন্যাস"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N.RadioButton.Text
+msgid  "Page N"
+msgstr "পৃষ্ঠা এন"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N_OF_M.RadioButton.Text
+msgid  "Page N of M"
+msgstr "পৃষ্ঠা এম এর এন"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_POSITION.FixedLine.Text
+msgid  "Position"
+msgstr "অবস্থান"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_TOPPAGE.RadioButton.Text
+msgid  "Top of Page (Header)"
+msgstr "পৃষ্ঠার উপরে (প্রান্তটিকা)"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_BOTTOMPAGE.RadioButton.Text
+msgid  "Bottom of Page (Footer)"
+msgstr "পৃষ্ঠার নীচে (পাদটিকা)"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_MISC.FixedLine.Text
+msgid  "General"
+msgstr "সাধারণ"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_ALIGNMENT.FixedText.Text
+msgid  "Alignment:"
+msgstr "প্রান্তিককরণ:"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+msgid  "Right"
+msgstr "ডান"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.CB_SHOWNUMBERONFIRSTPAGE.CheckBox.Text
+msgid  "Show Number on First Page"
+msgstr "প্রথম পৃষ্ঠায় নম্বর প্রদর্শন করুন"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.PB_HELP.HelpButton.Text
+msgid  "~Help"
+msgstr "সহায়তা (~H)"
+
+#: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE.String.Text
+msgid  ""Page " & #PAGENUMBER#"
+msgstr ""
+
+#: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE_OF.String.Text
+msgid  " & " of " & #PAGECOUNT#"
+msgstr ""
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+msgid  "Left"
+msgstr "বাম"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+msgid  "Center"
+msgstr "কেন্দ্র"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.TabDialog.Text
+msgid  "Page Setup"
+msgstr "পৃষ্ঠা বিন্যাসকরণ"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_PAGE.PageItem.Text
+msgid  "Page"
+msgstr "পৃষ্ঠা"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_BACKGROUND.PageItem.Text
+msgid  "Background"
+msgstr "প্রেক্ষাপট"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.PushButton.Text
+msgid  "Return"
+msgstr "ফিরিয়ে আনুন"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.String.Text
+msgid  "Page"
+msgstr "পৃষ্ঠা"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.2.String.Text
+msgid  "Background"
+msgstr "প্রেক্ষাপট"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.TabDialog.Text
+msgid  "Section Setup"
+msgstr "শাখা বিন্যাসকরণ"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.PushButton.Text
+msgid  "Return"
+msgstr "ফিরিয়ে আনুন"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.String.Text
+msgid  "Background"
+msgstr "প্রেক্ষাপট"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.TabDialog.Text
+msgid  "Character Settings"
+msgstr "বর্ণচিহ্ন বিন্যাসসমূহ"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_CHAR.PageItem.Text
+msgid  "Font"
+msgstr "ফন্ট"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_EFFECTS.PageItem.Text
+msgid  "Font Effects"
+msgstr "ফন্টের প্রভাব"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_POSITION.PageItem.Text
+msgid  "Position"
+msgstr "অবস্থান"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_TWOLN.PageItem.Text
+msgid  "Asian Layout"
+msgstr "এশিয়ান বর্হিবিন্যাস"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_BACKGROUND.PageItem.Text
+msgid  "Background"
+msgstr "প্রেক্ষাপট"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_ALIGNMENT.PageItem.Text
+msgid  "Alignment"
+msgstr "প্রান্তিককরণ"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.PushButton.Text
+msgid  "Return"
+msgstr "ফিরিয়ে আনুন"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.String.Text
+msgid  "Character"
+msgstr "বর্ণচিহ্ন"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.TabDialog.Text
+msgid  "Line"
+msgstr "লাইন"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE.PageItem.Text
+msgid  "Line"
+msgstr "লাইন"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE_DEF.PageItem.Text
+msgid  "Line Styles"
+msgstr "লাইন শৈলীসমূহ"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINEEND_DEF.PageItem.Text
+msgid  "Arrow Styles"
+msgstr "তীর চিহ্ন শৈলীসমূহ"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.PushButton.Text
+msgid  "Return"
+msgstr "ফিরিয়ে আনুন"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.String.Text
+msgid  "Line"
+msgstr "লাইন"
+
+#: source/ui/dlg/Navigator.src#RID_NAVIGATOR.FloatingWindow.Text
+msgid  "Report navigator"
+msgstr "প্রতিবেদন পরিক্রমক"
+
+#: source/ui/dlg/Navigator.src#RID_STR_FUNCTIONS.String.Text
+msgid  "Functions"
+msgstr "ফাংশনসমূহ"
+
+#: source/ui/dlg/Navigator.src#RID_STR_GROUPS.String.Text
+msgid  "Groups"
+msgstr "শ্রেণীসমূহ"
+
+#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SORTINGANDGROUPING.MenuItem.Text
+msgid  "Sorting and Grouping..."
+msgstr "সর্টকরণ ও শ্রেণীকরণ..."
+
+#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_PAGEHEADERFOOTER.MenuItem.Text
+msgid  "Page Header/Footer..."
+msgstr "পৃষ্ঠা প্রান্তটিকা/পাদটিকা"
+
+#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_REPORTHEADERFOOTER.MenuItem.Text
+msgid  "Report Header/Footer..."
+msgstr "প্রতিবেদন প্রান্তটিকা/পাদটিকা..."
+
+#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_RPT_NEW_FUNCTION.MenuItem.Text
+msgid  "New Function"
+msgstr "নতুন ফাংশন"
+
+#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SHOW_PROPERTYBROWSER.MenuItem.Text
+msgid  "Properties..."
+msgstr "বৈশিষ্ট্য..."
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
+msgid  "Expression Is"
+msgstr "রাশি হলো"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.0.StringList.item
+msgid  "between"
+msgstr "মধ্যবর্তী"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.1.StringList.item
+msgid  "not between"
+msgstr "মধ্যবর্তী নয়"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.2.StringList.item
+msgid  "equal to"
+msgstr "সমান"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.3.StringList.item
+msgid  "not equal to"
+msgstr "সমান নয়"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.4.StringList.item
+msgid  "greater than"
+msgstr "অপেক্ষাকৃত বড়"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.5.StringList.item
+msgid  "less than"
+msgstr "অপেক্ষাকৃত ছোট"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.6.StringList.item
+msgid  "greater than or equal to"
+msgstr "অপেক্ষাকৃত বড় বা সমান"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.7.StringList.item
+msgid  "less than or equal to"
+msgstr "অপেক্ষাকৃত ছোট বা সমান"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.FT_AND.FixedText.Text
+msgid  "and"
+msgstr "এবং"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.CRTL_FORMAT_PREVIEW.Window.Text
+msgid  "Example"
+msgstr "উদাহারণ"
+
+#: source/ui/dlg/CondFormat.src#RID_CONDFORMAT.ModalDialog.Text
+msgid  "Conditional Formatting"
+msgstr "শর্তযুক্ত বিন্যাসকরণ"
+
+#: source/ui/dlg/CondFormat.src#RID_CONDFORMAT.PB_HELP.HelpButton.Text
+msgid  "~Help"
+msgstr "সহায়তা (~H)"
+
+#: source/ui/dlg/CondFormat.src#STR_NUMBERED_CONDITION.String.Text
+msgid  "Condition $number$"
+msgstr "শর্ত $number$"
+
+#: source/ui/dlg/CondFormat.src#STR_COLOR_WHITE.String.Text
+msgid  "White"
+msgstr "সাদা"
+
+#: source/ui/dlg/CondFormat.src#STR_CHARCOLOR.String.Text
+msgid  "Font color"
+msgstr "ফন্ট রং"
+
+#: source/ui/dlg/CondFormat.src#STR_CHARBACKGROUND.String.Text
+msgid  "Background"
+msgstr "প্রেক্ষাপট"
+
+#: source/ui/dlg/CondFormat.src#STR_TRANSPARENT.String.Text
+msgid  "No Fill"
+msgstr "পূরণ নয়"
+
+#: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTUP.ToolBoxItem.Text
+msgid  "Sort Ascending"
+msgstr "ঊর্ধ্বক্রমানুসারে সাজান"
+
+#: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTDOWN.ToolBoxItem.Text
+msgid  "Sort Descending"
+msgstr "নিম্নক্রমানুসারে সাজান"
+
+#: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_REMOVE_FILTER_SORT.ToolBoxItem.Text
+msgid  "Remove sorting"
+msgstr "ক্রমসজ্জিতকরণ অপসারণ করুন"
+
+#: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_ADD_CONTROL_PAIR.ToolBoxItem.Text
+msgid  "Insert"
+msgstr "প্রবেশ করান"
+
+#: source/ui/dlg/CondFormat.src#ADDFIELD_FL_HELP_SEPARATOR.FixedLine.Text
+msgid  "Help"
+msgstr "সহায়তা"
+
+#: source/ui/dlg/CondFormat.src#ADDFIELD_HELP_FIELD.FixedText.Text
+msgid  "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
+msgstr ""
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
+msgid  "Field Value Is"
+msgstr "ক্ষেত্রের মান হলো"
+
+#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.ModalDialog.Text
+msgid  "Date and Time"
+msgstr "তারিখ ও সময়"
+
+#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_DATE.CheckBox.Text
+msgid  "Include Date"
+msgstr "তারিখ অন্তর্ভুক্ত করুন"
+
+#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_DATE_FORMAT.FixedText.Text
+msgid  "Format"
+msgstr "বিন্যাস"
+
+#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_TIME.CheckBox.Text
+msgid  "Include Time"
+msgstr "সময় অন্তর্ভুক্ত করুন"
+
+#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_TIME_FORMAT.FixedText.Text
+msgid  "Format"
+msgstr "বিন্যাস"
+
+#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.PB_HELP.HelpButton.Text
+msgid  "~Help"
+msgstr "সহায়তা (~H)"
+
+#: source/ui/inspection/inspection.src#RID_STR_PROPPAGE_DEFAULT.String.Text
+msgid  "General"
+msgstr "সাধারণ"
+
+#: source/ui/inspection/inspection.src#RID_STR_PROPPAGE_DATA.String.Text
+msgid  "Data"
+msgstr "উপাত্ত"
+
+#: source/ui/inspection/inspection.src#RID_STR_BOOL.1.String.Text
+msgid  "No"
+msgstr "না"
+
+#: source/ui/inspection/inspection.src#RID_STR_BOOL.2.String.Text
+msgid  "Yes"
+msgstr "হ্যাঁ"
+
+#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE.String.Text
+msgid  "Force New Page"
+msgstr "নতুন পৃষ্ঠা যুক্ত করুন"
+
+#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.1.String.Text
+msgid  "None"
+msgstr "কোনটি না"
+
+#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.2.String.Text
+msgid  "Before Section"
+msgstr "শাখার পূর্বে"
+
+#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.3.String.Text
+msgid  "After Section"
+msgstr "শাখার পরে"
+
+#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.4.String.Text
+msgid  "Before & After Section"
+msgstr "শাখার পূর্বে এবং পরে"
+
+#: source/ui/inspection/inspection.src#RID_STR_NEWROWORCOL.String.Text
+msgid  "New Row Or Column"
+msgstr "নতুন সারি বা স্তম্ভ"
+
+#: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER.String.Text
+msgid  "Keep Together"
+msgstr "একত্রে রাখুন"
+
+#: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.1.String.Text
+msgid  "No"
+msgstr "না"
+
+#: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.2.String.Text
+msgid  "Whole Group"
+msgstr "সম্পূর্ণ গ্রুপ"
+
+#: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.3.String.Text
+msgid  "With First Detail"
+msgstr "প্রথম বর্ণনা সহ"
+
+#: source/ui/inspection/inspection.src#RID_STR_CANGROW.String.Text
+msgid  "Can Grow"
+msgstr "বাড়তে পারে"
+
+#: source/ui/inspection/inspection.src#RID_STR_CANSHRINK.String.Text
+msgid  "Can Shrink"
+msgstr "সঙ্কুচিত হতে পারে"
+
+#: source/ui/inspection/inspection.src#RID_STR_REPEATSECTION.String.Text
+msgid  "Repeat Section"
+msgstr "শাখা পুনরাবৃত্তি করুন"
+
+#: source/ui/inspection/inspection.src#RID_STR_PRINTREPEATEDVALUES.String.Text
+msgid  "Print repeated values"
+msgstr "পুনরাবৃত্তি মানসমূহ মুদ্রণ করুন"
+
+#: source/ui/inspection/inspection.src#RID_STR_CONDITIONALPRINTEXPRESSION.String.Text
+msgid  "Conditional Print Expression"
+msgstr "শর্তযুক্ত মুদ্রণ রাশি"
+
+#: source/ui/inspection/inspection.src#RID_STR_STARTNEWCOLUMN.String.Text
+msgid  "Start new column"
+msgstr "নতুন স্তম্ভ শুরু করুন"
+
+#: source/ui/inspection/inspection.src#RID_STR_STARTNEWPAGE.String.Text
+msgid  "Start new page"
+msgstr "নতুন পৃষ্ঠা শুরু করুন"
+
+#: source/ui/inspection/inspection.src#RID_STR_RESETPAGENUMBER.String.Text
+msgid  "Reset page number"
+msgstr "পৃষ্ঠা নম্বর পুনঃবিন্যাস করুন"
+
+#: source/ui/inspection/inspection.src#RID_STR_CHARTTYPE.String.Text
+msgid  "Chart type"
+msgstr "ছকের ধরন"
+
+#: source/ui/inspection/inspection.src#RID_STR_PRINTWHENGROUPCHANGE.String.Text
+msgid  "Print When Group Change"
+msgstr "শ্রেণী পরিবর্তনের সময় মুদ্রণ করুন"
+
+#: source/ui/inspection/inspection.src#RID_STR_VISIBLE.String.Text
+msgid  "Visible"
+msgstr "দৃশ্যমান"
+
+#: source/ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER.String.Text
+msgid  "Group keep together"
+msgstr "শ্রেণী একত্রে রাখুন"
+
+#: source/ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.1.String.Text
+msgid  "Per Page"
+msgstr "প্রতি পৃষ্ঠায়"
+
+#: source/ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.2.String.Text
+msgid  "Per Column"
+msgstr "প্রতি স্তম্ভে"
+
+#: source/ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.1.String.Text
+msgid  "None"
+msgstr "কোনটি না"
+
+#: source/ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.2.String.Text
+msgid  "Section"
+msgstr "শাখা"
+
+#: source/ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.3.String.Text
+msgid  "Automatic"
+msgstr "স্বয়ংক্রিয়"
+
+#: source/ui/inspection/inspection.src#RID_STR_PAGEHEADEROPTION.String.Text
+msgid  "Page header"
+msgstr "পৃষ্ঠা প্রান্তটিকা"
+
+#: source/ui/inspection/inspection.src#RID_STR_PAGEFOOTEROPTION.String.Text
+msgid  "Page footer"
+msgstr "পৃষ্ঠা পাদটিকা"
+
+#: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.1.String.Text
+msgid  "All Pages"
+msgstr "সকল পৃষ্ঠা"
+
+#: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.2.String.Text
+msgid  "Not With Report Header"
+msgstr "প্রতিবেদন প্রান্তটিকার সাথে নয়"
+
+#: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.3.String.Text
+msgid  "Not With Report Footer"
+msgstr "প্রতিবেদন পাদটিকার সাথে নয়"
+
+#: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.4.String.Text
+msgid  "Not With Report Header/Footer"
+msgstr "প্রতিবেদন প্রান্তটিকার/পাদটিকার সাথে নয়"
+
+#: source/ui/inspection/inspection.src#RID_STR_DEEPTRAVERSING.String.Text
+msgid  "Deep traversing"
+msgstr "গভীরে অতিক্রম করছে"
+
+#: source/ui/inspection/inspection.src#RID_STR_PREEVALUATED.String.Text
+msgid  "Pre evaluation"
+msgstr "মূল্যায়নের পূর্বে"
+
+#: source/ui/inspection/inspection.src#RID_STR_POSITIONX.String.Text
+msgid  "Position X"
+msgstr "অবস্থান X"
+
+#: source/ui/inspection/inspection.src#RID_STR_POSITIONY.String.Text
+msgid  "Position Y"
+msgstr "অবস্থান Y"
+
+#: source/ui/inspection/inspection.src#RID_STR_WIDTH.String.Text
+msgid  "Width"
+msgstr "প্রস্থ"
+
+#: source/ui/inspection/inspection.src#RID_STR_HEIGHT.String.Text
+msgid  "Height"
+msgstr "উচ্চতা"
+
+#: source/ui/inspection/inspection.src#RID_STR_INITIALFORMULA.String.Text
+msgid  "Initial value"
+msgstr "প্রাথমিক মান"
+
+#: source/ui/inspection/inspection.src#RID_STR_PRESERVEIRI.String.Text
+msgid  "Preserve as Link"
+msgstr "লিংক হিসেবে সংরক্ষণ করুন"
+
+#: source/ui/inspection/inspection.src#RID_STR_FORMULA.String.Text
+msgid  "Formula"
+msgstr "সূত্র"
+
+#: source/ui/inspection/inspection.src#RID_STR_DATAFIELD.String.Text
+msgid  "Data field"
+msgstr "উপাত্ত ক্ষেত্র"
+
+#: source/ui/inspection/inspection.src#RID_STR_FONT.String.Text
+msgid  "Font"
+msgstr "ফন্ট"
+
+#: source/ui/inspection/inspection.src#RID_STR_BACKCOLOR.String.Text
+msgid  "Background color"
+msgstr "প্রেক্ষাপট রং"
+
+#: source/ui/inspection/inspection.src#RID_STR_BACKTRANSPARENT.String.Text
+msgid  "Background Transparent"
+msgstr "প্রেক্ষাপট স্বচ্ছ"
+
+#: source/ui/inspection/inspection.src#RID_STR_CONTROLBACKGROUNDTRANSPARENT.String.Text
+msgid  "Background Transparent"
+msgstr "প্রেক্ষাপট স্বচ্ছ"
+
+#: source/ui/inspection/inspection.src#RID_STR_OVERLAP_OTHER_CONTROL.String.Text
+msgid  "This operation is not allowed. The control overlaps with another one."
+msgstr "এই অপারেশনটি সমর্থিত নয়। নিয়ন্ত্রণটি অন্য একটির সাথে উপরিপাতন করে। "
+
+#: source/ui/inspection/inspection.src#RID_STR_ILLEGAL_POSITION.String.Text
+msgid  "This position can not be set. It is invalid."
+msgstr "এই অবস্থানটি নির্ধারণ করা যায় না। এটা অবৈধ।"
+
+#: source/ui/inspection/inspection.src#RID_STR_SCOPE_GROUP.String.Text
+msgid  "Group: %1"
+msgstr "শ্রেণী: %1"
+
+#: source/ui/inspection/inspection.src#RID_STR_FORMULALIST.String.Text
+msgid  "Function"
+msgstr "ফাংশন"
+
+#: source/ui/inspection/inspection.src#RID_STR_SCOPE.String.Text
+msgid  "Scope"
+msgstr "সুযোগ"
+
+#: source/ui/inspection/inspection.src#RID_STR_TYPE.String.Text
+msgid  "Data Field Type"
+msgstr "উপাত্ত ক্ষেত্রের ধরন"
+
+#: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.1.String.Text
+msgid  "Field or Formula"
+msgstr "ক্ষেত্র বা সূত্র"
+
+#: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.2.String.Text
+msgid  "Function"
+msgstr "ফাংশন"
+
+#: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.3.String.Text
+msgid  "Counter"
+msgstr "গণনায়ক"
+
+#: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.4.String.Text
+msgid  "User defined Function"
+msgstr "ব্যবহারকারী সুনির্দিষ্ট ফাংশন"
+
+#: source/ui/inspection/inspection.src#RID_STR_MASTERFIELDS.String.Text
+msgid  "Link master fields"
+msgstr "প্রধান ক্ষেত্রসমূহ সংযোগ করুন"
+
+#: source/ui/inspection/inspection.src#RID_STR_DETAILFIELDS.String.Text
+msgid  "Link slave fields"
+msgstr "স্লেভ ক্ষেত্রসমূহ সংযোগ করুন"
+
+#: source/ui/inspection/inspection.src#RID_STR_EXPLANATION.String.Text
+msgid  "Charts can be used to display detailed data about the current record of the report. To do this, you can specify which columns in the chart match which columns in the report."
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_DETAILLABEL.String.Text
+msgid  "Chart"
+msgstr "ছক"
+
+#: source/ui/inspection/inspection.src#RID_STR_MASTERLABEL.String.Text
+msgid  "Report"
+msgstr "প্রতিবেদন"
+
+#: source/ui/inspection/inspection.src#RID_STR_PREVIEW_COUNT.String.Text
+msgid  "Preview Row(s)"
+msgstr "সারিসমূহ পূনর্বিক্ষণ করুন"
+
+#: source/ui/inspection/inspection.src#RID_STR_AREA.String.Text
+msgid  "Area"
+msgstr "এলাকা"
+
+#: source/ui/inspection/inspection.src#RID_STR_MIMETYPE.String.Text
+msgid  "Report Output Format"
+msgstr "প্রতিবেদনের ফলাফল বিন্যাস"
+
+#: source/ui/inspection/inspection.src#RID_STR_VERTICALALIGN.String.Text
+msgid  "Vert. Alignment"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.1.String.Text
+msgid  "Top"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.2.String.Text
+msgid  "Middle"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.3.String.Text
+msgid  "Bottom"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST.String.Text
+msgid  "Horz. Alignment"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.1.String.Text
+msgid  "Left"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.2.String.Text
+msgid  "Right"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.3.String.Text
+msgid  "Block"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.4.String.Text
+msgid  "Center"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_F_COUNTER.String.Text
+msgid  "Counter"
+msgstr "গণনায়ক"
+
+#: source/ui/inspection/inspection.src#RID_STR_F_ACCUMULATION.String.Text
+msgid  "Accumulation"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_F_MINIMUM.String.Text
+msgid  "Minimum"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_F_MAXIMUM.String.Text
+msgid  "Maximum"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
+msgid  "Properties: "
+msgstr "বৈশিষ্ট্য:"
+
+#: source/ui/report/report.src#RID_STR_BRWTITLE_NO_PROPERTIES.String.Text
+msgid  "No Control marked"
+msgstr "কোনো নিয়ন্ত্রণ চিহ্নিত নয়"
+
+#: source/ui/report/report.src#RID_STR_BRWTITLE_MULTISELECT.String.Text
+msgid  "Multiselection"
+msgstr "বহুবিধ-নির্বাচন"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_IMAGECONTROL.String.Text
+msgid  "Image Control"
+msgstr "চিত্র নিয়ন্ত্রণ করুন"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_FIXEDTEXT.String.Text
+msgid  "Label field"
+msgstr "লেবেল ক্ষেত্র"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_FIXEDLINE.String.Text
+msgid  "Line"
+msgstr "লাইন"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_FORMATTED.String.Text
+msgid  "Formatted Field"
+msgstr "বিন্যাসিত ক্ষেত্র"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_SHAPE.String.Text
+msgid  "Shape"
+msgstr "আকৃতি"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_REPORT.String.Text
+msgid  "Report"
+msgstr "প্রতিবেদন"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_SECTION.String.Text
+msgid  "Section"
+msgstr "শাখা"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_FUNCTION.String.Text
+msgid  "Function"
+msgstr "ফাংশন"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_GROUP.String.Text
+msgid  "Group"
+msgstr "শ্রেণী"
+
+#: source/ui/report/report.src#STR_SHOW_RULER.String.Text
+msgid  "Show ruler"
+msgstr "মাপকাঠি দেখান"
+
+#: source/ui/report/report.src#STR_SHOW_GRID.String.Text
+msgid  "Show grid"
+msgstr "গরাদ দেখান"
+
+#: source/ui/report/report.src#RID_STR_UNDO_CHANGEPOSITION.String.Text
+msgid  "Change Object"
+msgstr "অবজেক্ট পরিবর্তন করুন"
+
+#: source/ui/report/report.src#RID_STR_UNDO_MOVE_GROUP.String.Text
+msgid  "Move Group(s)"
+msgstr "শ্রেণীসমূহ সরান"
+
+#: source/ui/report/report.src#RID_STR_UNDO_CONDITIONAL_FORMATTING.String.Text
+msgid  "Conditional Formatting"
+msgstr "শর্তযুক্ত বিন্যাসন"
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_REPORTHEADERFOOTER.String.Text
+msgid  "Remove report header / report footer"
+msgstr "প্রতিবেদন প্রান্তটিকা / প্রতিবেদন পাদটিকা অপসারণ করুন"
+
+#: source/ui/report/report.src#RID_STR_UNDO_ADD_REPORTHEADERFOOTER.String.Text
+msgid  "Add report header / report footer"
+msgstr "প্রতিবেদন প্রান্তটিকা / প্রতিবেদন পাদটিকা যুক্ত করুন"
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_PAGEHEADERFOOTER.String.Text
+msgid  "Remove page header / page footer"
+msgstr "পৃষ্ঠা প্রান্তটিকা / পৃষ্ঠা পাদটিকা অপসারণ করুন"
+
+#: source/ui/report/report.src#RID_STR_UNDO_ADD_PAGEHEADERFOOTER.String.Text
+msgid  "Add page header / page footer"
+msgstr "পৃষ্ঠা প্রান্তটিকা / পৃষ্ঠা পাদটিকা যুক্ত করুন"
+
+#: source/ui/report/report.src#RID_STR_UNDO_PROPERTY.String.Text
+msgid  "Change property '#'"
+msgstr "'#' এর বৈশিষ্ট্য পরিবর্তন করুন"
+
+#: source/ui/report/report.src#RID_STR_UNDO_ADD_GROUP_HEADER.String.Text
+msgid  "Add group header "
+msgstr "শ্রেণীর প্রান্তটিকা যুক্ত করুন"
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_HEADER.String.Text
+msgid  "Remove group header "
+msgstr "শ্রেণীর প্রান্তটিকা অপসারণ করুন"
+
+#: source/ui/report/report.src#RID_STR_UNDO_ADD_GROUP_FOOTER.String.Text
+msgid  "Add group footer "
+msgstr "শ্রেণীর পাদটিকা যুক্ত করুন"
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_FOOTER.String.Text
+msgid  "Remove group footer "
+msgstr "শ্রেণীর পাদটিকা অপসারণ করুন"
+
+#: source/ui/report/report.src#RID_STR_UNDO_ADDFUNCTION.String.Text
+msgid  "Add function"
+msgstr "ফাংশন যুক্ত করুন"
+
+#: source/ui/report/report.src#RID_STR_UNDO_DELETEFUNCTION.String.Text
+msgid  "Delete function"
+msgstr "ফাংশন মুছে ফেলুন"
+
+#: source/ui/report/report.src#RID_STR_DESIGN_VIEW.String.Text
+msgid  "Design"
+msgstr "নকশা করুন"
+
+#: source/ui/report/report.src#RID_STR_PREVIEW_VIEW.String.Text
+msgid  "Preview"
+msgstr "প্রাকদর্শন"
+
+#: source/ui/report/report.src#STR_RPT_TITLE.String.Text
+msgid  "Report #"
+msgstr "প্রতিবেদন #"
+
+#: source/ui/report/report.src#STR_RPT_LABEL.String.Text
+msgid  "~Report name"
+msgstr "প্রতিবেদনের নাম (~R)"
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP.String.Text
+msgid  "Delete Group"
+msgstr "শ্রেণী মুছে ফেলুন"
+
+#: source/ui/report/report.src#RID_STR_UNDO_APPEND_GROUP.String.Text
+msgid  "Add Group"
+msgstr "শ্রেণী যুক্ত করুন"
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_SELECTION.String.Text
+msgid  "Delete Selection"
+msgstr "শাখা মুছে ফেলুন"
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_FUNCTION.String.Text
+msgid  "Delete Function"
+msgstr "ফাংশন মুছে ফেলুন"
+
+#: source/ui/report/report.src#RID_STR_UNDO_CHANGE_SIZE.String.Text
+msgid  "Change Size"
+msgstr "আকার পরিবর্তন করুন"
+
+#: source/ui/report/report.src#RID_STR_UNDO_PASTE.String.Text
+msgid  "Paste"
+msgstr "প্রতিলেপন করুন"
+
+#: source/ui/report/report.src#RID_STR_UNDO_INSERT_CONTROL.String.Text
+msgid  "Insert Control"
+msgstr "নিয়ন্ত্রণ প্রবেশ করান"
+
+#: source/ui/report/report.src#RID_STR_UNDO_DELETE_CONTROL.String.Text
+msgid  "Delete Control"
+msgstr "নিয়ন্ত্রণ মুছে ফেলুন"
+
+#: source/ui/report/report.src#RID_STR_UNDO_GROUP.String.Text
+msgid  "Insert Group"
+msgstr "শ্রেণী প্রবেশ করান"
+
+#: source/ui/report/report.src#RID_STR_UNDO_UNGROUP.String.Text
+msgid  "Delete Group"
+msgstr "শ্রেণী মুছে ফেলুন"
+
+#: source/ui/report/report.src#RID_STR_GROUPHEADER.String.Text
+msgid  "GroupHeader"
+msgstr "GroupHeader"
+
+#: source/ui/report/report.src#RID_STR_GROUPFOOTER.String.Text
+msgid  "GroupFooter"
+msgstr "GroupFooter"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_SORTINGANDGROUPING.MenuItem.Text
+msgid  "Sorting and Grouping..."
+msgstr "শর্টকরণ ও শ্রেণীকরণ..."
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_ATTR_CHAR_COLOR_BACKGROUND.MenuItem.Text
+msgid  "Background Color..."
+msgstr "প্রেক্ষাপট রং..."
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_RULER.MenuItem.Text
+msgid  "Ruler..."
+msgstr "মাপকাঠি..."
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_GRID_VISIBLE.MenuItem.Text
+msgid  "Grid..."
+msgstr "গরাদ..."
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.MenuItem.Text
+msgid  "~Arrange"
+msgstr "সাজান (~A)"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_UP.MenuItem.Text
+msgid  "Bring ~Forward"
+msgstr "সামনে আনুন (~F)"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_DOWN.MenuItem.Text
+msgid  "Send Back~ward"
+msgstr "পিছনে পাঠান (~w)"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.MenuItem.Text
+msgid  "~Object Resizing"
+msgstr "অবজেক্ট পুনঃআকার করছে (~O)"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTWIDTH.MenuItem.Text
+msgid  "~Fit to smallest width"
+msgstr "ক্ষুদ্রতর প্রস্থে মানানসই করুন (~F)"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTWIDTH.MenuItem.Text
+msgid  "~Fit to greatest width"
+msgstr "বৃহত্তর প্রস্থে মানানসই করুন (~F)"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTHEIGHT.MenuItem.Text
+msgid  "~Fit to smallest height"
+msgstr "ক্ষুদ্রতর প্রস্থে উচ্চতায় মানানসই করুন (~F)"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTHEIGHT.MenuItem.Text
+msgid  "~Fit to greatest height"
+msgstr "বৃহত্তর উচ্চতায় মানানসই করুন (~F)"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.MenuItem.Text
+msgid  "Section"
+msgstr "শাখা"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK.MenuItem.Text
+msgid  "Shrink"
+msgstr ""
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_TOP.MenuItem.Text
+msgid  "Shrink from top"
+msgstr ""
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_BOTTOM.MenuItem.Text
+msgid  "Shrink from bottom"
+msgstr ""
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_DISTRIBUTION.MenuItem.Text
+msgid  "Distribution..."
+msgstr "বিতরন..."
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_SHOW_PROPERTYBROWSER.MenuItem.Text
+msgid  "Properties..."
+msgstr "বৈশিষ্ট্য..."
+
+#: source/ui/report/report.src#RID_STR_FIELDSELECTION.String.Text
+msgid  "Add field:"
+msgstr "ক্ষেত্র যুক্ত করুন:"
+
+#: source/ui/report/report.src#RID_STR_FILTER.String.Text
+msgid  "Filter"
+msgstr "পরিশ্রুতক"
+
+#: source/ui/report/report.src#RID_APP_TITLE.String.Text
+msgid  " - %PRODUCTNAME Base Report"
+msgstr " - %PRODUCTNAME ভিত্তিক প্রতিবেদন "
+
+#: source/ui/report/report.src#RID_APP_NEW_DOC.String.Text
+msgid  "Untitled"
+msgstr "শিরোনামহীন"
+
+#: source/ui/report/report.src#RID_STR_UNDO_ALIGNMENT.String.Text
+msgid  "Change Alignment"
+msgstr "প্রান্তিককরণ পরিবর্তন করুন"
+
+#: source/ui/report/report.src#RID_STR_HEADER.String.Text
+msgid  "# Header"
+msgstr "# প্রান্তটিকা"
+
+#: source/ui/report/report.src#RID_STR_FOOTER.String.Text
+msgid  "# Footer"
+msgstr "# পাদটিকা"
+
+#: source/ui/report/report.src#RID_STR_IMPORT_GRAPHIC.String.Text
+msgid  "Insert graphics"
+msgstr "নকশা প্রবেশ করান"
+
+#: source/ui/report/report.src#RID_STR_DELETE.String.Text
+msgid  "Delete"
+msgstr "মুছে ফেলুন"
+
+#: source/ui/report/report.src#RID_STR_FUNCTION.String.Text
+msgid  "Function"
+msgstr "ফাংশন"
+
+#: source/ui/report/report.src#RID_STR_COULD_NOT_CREATE_REPORT.String.Text
+msgid  "An error occurred while creating the report."
+msgstr "প্রতিবেদনটি তৈরি করার সময় একটি ত্রুটি সংঘটিত হয়েছে।"
+
+#: source/ui/report/report.src#RID_STR_CAUGHT_FOREIGN_EXCEPTION.String.Text
+msgid  "An exception of type $type$ was caught."
+msgstr "$type$ ধরনের একটি ব্যতিক্রম ধরা পড়েছে।"
+
+#: source/ui/report/report.src#RID_STR_UNDO_CHANGEFONT.String.Text
+msgid  "Change font"
+msgstr "ফন্ট পরিবর্তন করুন"
+
+#: source/ui/report/report.src#RID_STR_UNDO_CHANGEPAGE.String.Text
+msgid  "Change page attributes"
+msgstr "পৃষ্ঠার বৈশিষ্ট্যাবলী পরিবর্তন করুন"
+
+#: source/ui/report/report.src#RID_STR_PAGEHEADERFOOTER_INSERT.String.Text
+msgid  "Insert Page Header/Footer"
+msgstr "পৃষ্ঠার প্রান্তটিকা/পাদটিকা প্রবেশ করান"
+
+#: source/ui/report/report.src#RID_STR_PAGEHEADERFOOTER_DELETE.String.Text
+msgid  "Delete Page Header/Footer"
+msgstr "পৃষ্ঠার প্রান্তটিকা/পাদটিকা মুছে ফেলুন"
+
+#: source/ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_INSERT.String.Text
+msgid  "Insert Column Header/Footer"
+msgstr "স্তম্ভের প্রান্তটিকা/পাদটিকা প্রবেশ করান"
+
+#: source/ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_DELETE.String.Text
+msgid  "Delete Column Header/Footer"
+msgstr "স্তম্ভের প্রান্তটিকা/পাদটিকা মুছে ফেলুন"
+
+#: source/ui/report/report.src#RID_STR_REPORTHEADERFOOTER_INSERT.String.Text
+msgid  "Insert Report Header/Footer"
+msgstr "প্রতিবেদনের প্রান্তটিকা/পাদটিকা প্রবেশ করান"
+
+#: source/ui/report/report.src#RID_STR_REPORTHEADERFOOTER_DELETE.String.Text
+msgid  "Delete Report Header/Footer"
+msgstr "প্রতিবেদনের প্রান্তটিকা/পাদটিকা মুছে ফেলুন"
+
+#: source/ui/report/report.src#RID_ERR_NO_COMMAND.String.Text
+msgid  "The report can not be executed unless it is bound to content."
+msgstr "প্রতিবেদনটি বিষয়বস্তুতে আবদ্ধ না করা পর্যন্ত কার্যকর করা যাবে না।"
+
+#: source/ui/report/report.src#RID_ERR_NO_OBJECTS.String.Text
+msgid  "The report can not be executed unless at least one object has been inserted."
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_UNDO_SHRINK.String.Text
+msgid  "Shrink Section"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_INSERT.String.Text
+msgid  "Insert"
+msgstr "প্রবেশ করান"
+
+#: source/ui/report/report.src#RID_STR_DETAIL.String.Text
+msgid  "Detail"
+msgstr "বিস্তারিত"
+
+#: source/ui/report/report.src#RID_STR_PAGE_HEADER.String.Text
+msgid  "Page Header"
+msgstr "পৃষ্ঠার প্রান্তটিকা"
+
+#: source/ui/report/report.src#RID_STR_PAGE_FOOTER.String.Text
+msgid  "Page Footer"
+msgstr "পৃষ্ঠার পাদটিকা"
+
+#: source/ui/report/report.src#RID_STR_REPORT_HEADER.String.Text
+msgid  "Report Header"
+msgstr "প্রতিবেদনের প্রান্তটিকা"
+
+#: source/ui/report/report.src#RID_STR_REPORT_FOOTER.String.Text
+msgid  "Report Footer"
+msgstr "প্রতিবেদনের পাদটিকা"

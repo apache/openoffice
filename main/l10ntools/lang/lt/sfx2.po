@@ -1,3020 +1,2700 @@
-
-#: view.src#STR_NODEFPRINTER.string.text
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
 msgid ""
-"No default printer found.\n"
-"Please choose a printer and try again."
 msgstr ""
-"Nerasta numatytojo spausdintuvo.\n"
-"Parinkite spausdintuvą ir bandykite dar kartą."
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
 
-#: view.src#STR_NOSTARTPRINTER.string.text
-msgid ""
-"Could not start printer.\n"
-"Please check your printer configuration."
-msgstr ""
-"Nepavyko paleisti spausdintuvo.\n"
-"Patikrinkite spausdintuvo sąranką."
 
-#: view.src#STR_PRINTER_NOTAVAIL.string.text
-msgid ""
-"This document has been formatted for the printer $1. The specified printer "
-"is not available. \n"
-"Do you want to use the standard printer $2 ?"
-msgstr ""
-"Šis dokumentas suformatuotas spausdintuvui $1. Nurodytas spausdintuvas "
-"nepasiekiamas. \n"
-"Ar naudoti standartinį spausdintuvą $2 ?"
-
-#: view.src#STR_PRINT_OPTIONS.string.text
-msgid "Options..."
-msgstr "Parinktys..."
-
-#: view.src#STR_PRINT_OPTIONS_TITLE.string.text
-msgid "Printer Options"
-msgstr "Spausdintuvo parinktys"
-
-#: view.src#STR_ERROR_PRINTER_BUSY.string.text
-msgid "Printer busy"
-msgstr "Spausdintuvas užimtas"
-
-#: view.src#STR_ERROR_PRINT.string.text
-msgid "Error while printing"
-msgstr "Klaida spausdinant"
-
-#: view.src#STR_PRINTING.string.text
-msgid "Printing"
-msgstr "Spausdinama"
-
-#: view.src#STR_PAGE.string.text
-msgid "Page "
-msgstr "Puslapis "
-
-#: view.src#STR_ERROR_SAVE_TEMPLATE.string.text
-msgid "Error saving template "
-msgstr "Klaida įrašant šabloną "
-
-#: view.src#STR_READONLY.string.text
-msgid " (read-only)"
-msgstr " (tik skaitymui)"
-
-#: view.src#STR_PRINT_NEWORI.string.text
-msgctxt "view.src#STR_PRINT_NEWORI.string.text"
-msgid ""
-"The page size and orientation have been modified.\n"
-"Would you like to save the new settings in the\n"
-"active document?"
-msgstr ""
-"Puslapio dydis ir padėtis buvo pakeisti.\n"
-"Ar pritaikyti naująsias nuostatas aktyviajam dokumentui?"
-
-#: view.src#STR_PRINT_NEWSIZE.string.text
-msgid ""
-"The page size has been modified.\n"
-"Should the new settings be saved\n"
-"in the active document?"
-msgstr ""
-"Puslapio dydis buvo pakeistas.\n"
-"Ar pritaikyti naująsias nuostatas aktyviajam dokumentui?"
-
-#: view.src#STR_PRINT_NEWORISIZE.string.text
-msgctxt "view.src#STR_PRINT_NEWORISIZE.string.text"
-msgid ""
-"The page size and orientation have been modified.\n"
-"Would you like to save the new settings in the\n"
-"active document?"
-msgstr ""
-"Puslapio dydis ir padėtis buvo pakeisti.\n"
-"Ar pritaikyti naująsias nuostatas aktyviajam dokumentui?"
-
-#: view.src#STR_PREVIEW_DOCINFO.string.text
-msgid ""
-"<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$("
-"TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt>"
-"<b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
-msgstr ""
-"<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Pavadinimas:</b>"
-"<dd>$(TITEL)<dt><b>Tema:</b><dd>$(THEME)<dt><b>Reikšminiai žodžiai:</b><dd>$"
-"(KEYWORDS)<dt><b>Aprašas:</b><dd>$(TEXT)</dl></font></body></html>"
-
-#: view.src#STR_PREVIEW_NODOCINFO.string.text
-msgid ""
-"<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document "
-"properties found.</B></FONT></P></BODY></HTML>"
-msgstr ""
-"<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>Nerasta "
-"dokumento savybių.</B></FONT></P></BODY></HTML>"
-
-#: view.src#MSG_CANT_CLOSE.infobox.text
-msgid ""
-"The document cannot be closed because a\n"
-" print job is being carried out."
-msgstr "Dokumento negalima užverti, nes dar nebaigtas spausdinimas."
-
-#: view.src#DLG_PRINTMONITOR_TEXT.#define.text
-msgid "Print Monitor"
-msgstr "Spausdinimo vaizduoklis"
-
-#: view.src#DLG_PRINTMONITOR.FT_PRINTING.fixedtext.text
-msgid "is being printed on"
-msgstr "spausdinama su"
-
-#: view.src#DLG_PRINTMONITOR.STR_FT_PREPARATION.string.text
+#: source/appl/dde.src#MD_DDE_LINKEDIT.ModalDialog.Text
 #, fuzzy
-msgid "is being prepared for printing"
-msgstr "ruošiama spausdinimui"
+msgid  "Modify Link"
+msgstr "Keisti saitą"
 
-#: view.src#MSG_ERROR_SEND_MAIL.infobox.text
-msgid ""
-"An error occurred in sending the message. Possible errors could be a missing "
-"user account or a defective setup.\n"
-"Please check the %PRODUCTNAME settings or your e-mail program settings."
-msgstr ""
-"Klaida siunčiant laišką. Šios klaidos gali atsirasti dėl neteisingos "
-"abonento paskyros arba pasirinktos sąrankos.\n"
-"Prašome patikrinti „%PRODUCTNAME“ nuostatas arba jūsų elektroninio pašto "
-"programos nuostatas."
-
-#: view.src#MSG_QUERY_OPENASTEMPLATE.querybox.text
-msgid ""
-"This document cannot be edited, possibly due to missing access rights. Do "
-"you want to edit a copy of the document?"
-msgstr ""
-"Dokumento negalima taisyti dėl, tikriausiai, nepakankamų prieigos teisių. Ar "
-"norite taisyti šio dokumento kopiją?"
-
-#: view.src#STR_REPAIREDDOCUMENT.string.text
-msgid " (repaired document)"
-msgstr " (sutvarkytas dokumentas)"
-
-#: view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.errorbox.text
-msgid ""
-"%PRODUCTNAME could not find a web browser on your system. Please check your "
-"Desktop Preferences or install a web browser (for example, Mozilla) in the "
-"default  location requested during the browser installation."
-msgstr ""
-"„%PRODUCTNAME“ kompiuteryje nerado interneto naršyklės. Patikrinkite "
-"nuostatas arba įdiekite interneto naršyklę (pavyzdžiui, „Mozilla“) į "
-"numatytąją jos diegimo vietą."
-
-#: menu.src#STR_MENU_CFGITEM.string.text
-msgid "Configuration Menu"
-msgstr "Sąrankos meniu"
-
-#: menu.src#STR_MENU_ADDONS.string.text
-msgid "~Add-Ons"
-msgstr "~Priedai"
-
-#: menu.src#MN_CLIPBOARDFUNCS.SID_CUT.menuitem.text
-msgid "Cu~t"
-msgstr "Iš~kirpti"
-
-#: menu.src#MN_CLIPBOARDFUNCS.SID_COPY.menuitem.text
-msgid "~Copy"
-msgstr "K~opijuoti"
-
-#: menu.src#MN_CLIPBOARDFUNCS.SID_PASTE.menuitem.text
-msgid "~Paste"
-msgstr "Į~dėti"
-
-#: menu.src#SID_WIN_FULLSCREEN.string.text
-msgid "Leave Full-Screen Mode"
-msgstr "Išjungti viso ekrano veikseną"
-
-#: menu.src#STR_MENU_ADDONHELP.string.text
-msgid "Add-~On Help"
-msgstr "P~riedo žinynas"
-
-#: menu.src#STR_MENU_SYNONYMS.string.text
-msgid "Synonyms"
-msgstr ""
-
-#: menu.src#STR_MENU_NO_SYNONYM_FOUND.string.text
-msgid "(none)"
-msgstr ""
-
-#: menu.src#STR_MENU_THESAURUS.string.text
-msgid "~Thesaurus..."
-msgstr ""
-
-#: fltfnc.src#STR_FILTER_NOT_INSTALLED.string.text
-msgid ""
-"The selected filter $(FILTER) has not been installed.\n"
-"Would you like to do this now?"
-msgstr ""
-"Pasirinktas filtras $(FILTER) nėra įdiegtas.\n"
-"Ar įdiegti jį dabar ?"
-
-#: fltfnc.src#STR_FILTER_CONSULT_SERVICE.string.text
-msgid ""
-"The selected filter $(FILTER) is not included in your edition.\n"
-"You can find information about orders on our homepage."
-msgstr ""
-"Pasirinktas filtras $(FILTER) nėra įtrauktas turimą programos versiją.\n"
-"Informaciją apie atnaujinimą rasite programos kūrėjų interneto svetainėje."
-"X-Generator: Pootle 2.1.6\n"
-"X-Accelerator-Marker: ~\n"
-
-#: app.src#STR_NONAME.string.text
-msgid "Untitled"
-msgstr "Be pavadinimo "
-
-#: app.src#STR_CLOSE.string.text
-msgid "Close"
-msgstr "Užverti"
-
-#: app.src#STR_STYLE_FILTER_AUTO.string.text
-msgid "Automatic"
-msgstr "Automatinis"
-
-#: app.src#STR_STANDARD_SHORTCUT.string.text
+#: source/appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_APP.FixedText.Text
 #, fuzzy
-msgctxt "app.src#STR_STANDARD_SHORTCUT.string.text"
-msgid "Standard"
-msgstr "Įprastas"
-
-#: app.src#STR_BYTES.string.text
-msgid "Bytes"
-msgstr "B"
-
-#: app.src#STR_KB.string.text
-msgid "KB"
-msgstr "KB"
-
-#: app.src#STR_MB.string.text
-msgid "MB"
-msgstr "MB"
-
-#: app.src#STR_GB.string.text
-msgid "GB"
-msgstr "GB"
-
-#: app.src#MSG_QUERY_LASTVERSION.querybox.text
-msgid "Cancel all changes?"
-msgstr "Ar atsisakyti visų pakeitimų?"
-
-#: app.src#RID_DOCALREADYLOADED_DLG.infobox.text
-msgid "Document already open."
-msgstr "Dokumentas jau atvertas."
-
-#: app.src#MSG_ERR_NO_WEBBROWSER_FOUND.errorbox.text
-msgid ""
-"%PRODUCTNAME could not find a web browser on your system. Please check your "
-"Desktop Preferences or install a web browser (for example, Mozilla) in the "
-"default  location requested during the browser installation."
-msgstr ""
-"„%PRODUCTNAME“ kompiuteryje nerado interneto naršyklės. Patikrinkite "
-"nuostatas arba įdiekite interneto naršyklę (pavyzdžiui, Mozilla) į "
-"numatytąjį aplanką, pasiūlytą naršyklės diegimo metu."
-
-#: app.src#GID_INTERN.string.text
-msgid "Internal"
-msgstr "Vidinis"
-
-#: app.src#GID_APPLICATION.string.text
-msgid "Application"
-msgstr "Programa"
-
-#: app.src#GID_VIEW.string.text
-msgid "View"
-msgstr "Rodymas"
-
-#: app.src#GID_DOCUMENT.string.text
-msgid "Documents"
-msgstr "Dokumentai"
-
-#: app.src#GID_EDIT.string.text
-msgid "Edit"
-msgstr "Taisa"
-
-#: app.src#GID_MACRO.string.text
-msgid "BASIC"
-msgstr "„BASIC“"
-
-#: app.src#GID_OPTIONS.string.text
-#, fuzzy
-msgid "Options"
-msgstr "Parinktys"
-
-#: app.src#GID_MATH.string.text
-msgid "Math"
-msgstr "Matematinė rengyklė"
-
-#: app.src#GID_NAVIGATOR.string.text
-msgid "Navigate"
-msgstr "Žvalgyti"
-
-#: app.src#GID_INSERT.string.text
-msgid "Insert"
-msgstr "Įterpimas"
-
-#: app.src#GID_FORMAT.string.text
-msgid "Format"
-msgstr "Formatas"
-
-#: app.src#GID_TEMPLATE.string.text
-#, fuzzy
-msgid "Templates"
-msgstr "Šablonai"
-
-#: app.src#GID_TEXT.string.text
-msgid "Text"
-msgstr "Tekstas"
-
-#: app.src#GID_FRAME.string.text
-msgid "Frame"
-msgstr "Kadras"
-
-#: app.src#GID_GRAPHIC.string.text
-#, fuzzy
-msgctxt "app.src#GID_GRAPHIC.string.text"
-msgid "Graphic"
-msgstr "Paveikslas"
-
-#: app.src#GID_TABLE.string.text
-msgid "Table"
-msgstr "Lentelė"
-
-#: app.src#GID_ENUMERATION.string.text
-msgid "Numbering"
-msgstr "Numeravimas"
-
-#: app.src#GID_DATA.string.text
-msgid "Data"
-msgstr "Duomenys"
-
-#: app.src#GID_SPECIAL.string.text
-msgid "Special Functions"
-msgstr "Specialiosios funkcijos"
-
-#: app.src#GID_IMAGE.string.text
-msgid "Image"
-msgstr "Paveikslas"
-
-#: app.src#GID_CHART.string.text
-msgid "Chart"
-msgstr "Diagrama"
-
-#: app.src#GID_EXPLORER.string.text
-msgid "Explorer"
-msgstr "„Explorer“"
-
-#: app.src#GID_CONNECTOR.string.text
-msgid "Connector"
-msgstr "Jungiamoji linija"
-
-#: app.src#GID_MODIFY.string.text
-msgid "Modify"
-msgstr "Keisti"
-
-#: app.src#GID_DRAWING.string.text
-msgid "Drawing"
-msgstr "Brėžinys"
-
-#: app.src#GID_CONTROLS.string.text
-msgid "Controls"
-msgstr "Valdiklio elementai"
-
-#: app.src#MSG_CANT_QUIT.infobox.text
-msgid ""
-"The application cannot be terminated at the moment.\n"
-"Please wait until all print jobs and/or\n"
-"OLE actions have finished and close all dialogs."
-msgstr ""
-"Dabar programa negali būti nutraukta.\n"
-"Palaukite, kol bus baigtas spausdinimas ir\n"
-"OLE veiksmai bei užverkite visus dialogų langus."
-
-#: app.src#STR_ISMODIFIED.string.text
-msgid "Do you want to save the changes to %1?"
-msgstr "Ar įrašyti pakeitimus į „%1“?"
-
-#: app.src#STR_QUITAPP.string.text
-msgid "E~xit"
-msgstr "~Baigti darbą su „OpenOffice.org“"
-
-#: app.src#RID_STR_HELP.string.text
-#, fuzzy
-msgid "Help"
-msgstr "Žinynas"
-
-#: app.src#RID_STR_NOAUTOSTARTHELPAGENT.string.text
-msgid "No automatic start at 'XX'"
-msgstr "„XX“ nepaleidžiama automatiškai"
-
-#: app.src#RID_HELPBAR.string.text
-msgid "Help Bar"
-msgstr "Žinyno juosta"
-
-#: app.src#RID_STR_HLPFILENOTEXIST.string.text
-msgid "The help file for this topic is not installed."
-msgstr "Žinyno failas šiai temai neįdiegtas."
-
-#: app.src#RID_ENVTOOLBOX.string.text
-msgid "Function Bar"
-msgstr "Standartinė juosta"
-
-#: app.src#RID_SPECIALCONFIG_ERROR.string.text
-msgid ""
-"An error has occurred in the special configuration.\n"
-"Please contact your administrator."
-msgstr ""
-"Klaida tam tikroje sąrankoje.\n"
-"Siūlome susisiekti su administratoriumi."
-
-#: app.src#STR_QUICKSTART_EXIT.string.text
-msgid "Exit Quickstarter"
-msgstr "Baigti sparčiąją paleistį"
-
-#: app.src#STR_QUICKSTART_TIP.string.text
-msgid "%PRODUCTNAME %PRODUCTVERSION Quickstarter"
-msgstr "„%PRODUCTNAME %PRODUCTVERSION“ sparčioji paleistis"
-
-#: app.src#STR_QUICKSTART_FILEOPEN.string.text
-msgid "Open Document..."
-msgstr "Atverti dokumentą..."
-
-#: app.src#STR_QUICKSTART_FROMTEMPLATE.string.text
-msgid "From Template..."
-msgstr "Dokumentas iš šablono..."
-
-#: app.src#STR_QUICKSTART_PRELAUNCH.string.text
-msgid "Load %PRODUCTNAME During System Start-Up"
-msgstr "Įkelti „%PRODUCTNAME“ paleidus sistemą"
-
-#: app.src#STR_QUICKSTART_PRELAUNCH_UNX.string.text
-msgid "Disable systray Quickstarter"
-msgstr "Išjungti sparčiąją paleistį"
-
-#: app.src#STR_QUICKSTART_LNKNAME.string.text
-msgid "%PRODUCTNAME %PRODUCTVERSION"
-msgstr "„%PRODUCTNAME %PRODUCTVERSION“"
-
-#: app.src#STR_QUICKSTART_FILE.string.text
-msgid "File"
-msgstr "Failas"
-
-#: app.src#STR_QUICKSTART_STARTCENTER.string.text
-msgid "Startcenter"
-msgstr "Pradžios langas"
-
-#: app.src#STR_QUICKSTART_RECENTDOC.string.text
-msgid "Recent Documents"
-msgstr ""
-
-#: app.src#STR_QUERY_UPDATE_LINKS.string.text
-msgid "Update all links?"
-msgstr "Atnaujinti visus saitus?"
-
-#: app.src#STR_DDE_ERROR.string.text
-msgid "DDE link to % for % area % are not available."
-msgstr "Srities % failo % DDE saitas su % yra negalimas."
-
-#: app.src#RID_SECURITY_WARNING_HYPERLINK.warningbox.text
-msgid "This hyperlink is going to open \"%s\". Do you want to proceed?"
-msgstr "Šiuo hipersaitu bus atverta „%s“. Ar tęsti?"
-
-#: app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.warningbox.text
-msgid ""
-"For security reasons, the hyperlink cannot be executed.\n"
-"The stated address will not be opened."
-msgstr ""
-"Saugumo sumetimais hipersaitu sekti negalima.\n"
-"Nurodytas adresas nebus atvertas."
-
-#: app.src#RID_SECURITY_WARNING_TITLE.string.text
-msgid "Security Warning"
-msgstr "Saugumo įspėjimas"
-
-#: app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.querybox.text
-msgid ""
-"Saving will remove all existing signatures.\n"
-"Do you want to continue saving the document?"
-msgstr ""
-"Įrašius dokumentą bus pašalinti visi parašai.\n"
-"Ar tikrai įrašyti dokumentą?\n"
-
-#: app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.querybox.text
-msgid ""
-"The document has to be saved before it can be signed.\n"
-"Do you want to save the document?"
-msgstr ""
-"Norint pasirašyti dokumentą, pirma reikia jį įrašyti.\n"
-"Ar įrašyti dokumentą?"
-
-#: app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.infobox.text
-msgid ""
-"This document must be saved in OpenDocument file format before it can be "
-"digitally signed."
-msgstr ""
-"Norint skaitmeniškai pasirašyti dokumentą, reikia jį įrašyti „OpenDocument“ "
-"formatu."
-
-#: app.src#RID_XMLSEC_DOCUMENTSIGNED.string.text
-msgid " (Signed)"
-msgstr "(Pasirašytas)"
-
-#: app.src#STR_STANDARD.string.text
-#, fuzzy
-msgctxt "app.src#STR_STANDARD.string.text"
-msgid "Standard"
-msgstr "Įprastas"
-
-#: app.src#RID_SVXSTR_FILELINK.string.text
-#, fuzzy
-msgid "Document"
-msgstr "Dokumentai"
-
-#: app.src#STR_NONE.string.text
-msgid "- None -"
-msgstr "- Nėra -"
-
-#: app.src#RID_SVXSTR_GRAFIKLINK.string.text
-#, fuzzy
-msgctxt "app.src#RID_SVXSTR_GRAFIKLINK.string.text"
-msgid "Graphic"
-msgstr "Paveikslas"
-
-#: app.src#STR_SFX_FILTERNAME_ALL.string.text
-msgid "All files (*.*)"
-msgstr "Visi failai (*.*)"
-
-#: app.src#RID_SVXSTR_EDITGRFLINK.string.text
-msgid "Link graphics"
-msgstr ""
-
-#: app.src#STR_ERRUNOEVENTBINDUNG.string.text
-msgid ""
-"An appropriate component method %1\n"
-"could not be found.\n"
-"\n"
-"Check spelling of method name."
-msgstr ""
-"Tinkamas komponentų metodas „%1“ nerastas.\n"
-"\n"
-"Patikrinkite, ar gerai įvestas metodo pavadinimas."
-
-#: app.src#RID_SVXSTR_GRFILTER_OPENERROR.string.text
-msgid "Graphics file cannot be opened"
-msgstr ""
-
-#: app.src#RID_SVXSTR_GRFILTER_IOERROR.string.text
-msgid "Graphics file cannot be read"
-msgstr ""
-
-#: app.src#RID_SVXSTR_GRFILTER_FORMATERROR.string.text
-msgid "Unknown graphics format"
-msgstr ""
-
-#: app.src#RID_SVXSTR_GRFILTER_VERSIONERROR.string.text
-msgid "This version of the graphics file is not supported"
-msgstr ""
-
-#: app.src#RID_SVXSTR_GRFILTER_FILTERERROR.string.text
-msgid "Graphics filter not found"
-msgstr ""
-
-#: app.src#RID_SVXSTR_GRFILTER_TOOBIG.string.text
-msgid "Not enough memory to insert graphic"
-msgstr ""
-
-#: dde.src#MD_DDE_LINKEDIT.FT_DDE_APP.fixedtext.text
-msgid "~Application:"
+msgid  "~Application:"
 msgstr "~Programa:"
 
-#: dde.src#MD_DDE_LINKEDIT.FT_DDE_TOPIC.fixedtext.text
-msgid "~File:"
+#: source/appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_TOPIC.FixedText.Text
+#, fuzzy
+msgid  "~File:"
 msgstr "~Failas:"
 
-#: dde.src#MD_DDE_LINKEDIT.FT_DDE_ITEM.fixedtext.text
-msgid "~Category:"
+#: source/appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_ITEM.FixedText.Text
+#, fuzzy
+msgid  "~Category:"
 msgstr "~Kategorija:"
 
-#: dde.src#MD_DDE_LINKEDIT.GROUP_DDE_CHG.fixedline.text
-msgid "Modify link"
+#: source/appl/dde.src#MD_DDE_LINKEDIT.GROUP_DDE_CHG.FixedLine.Text
+#, fuzzy
+msgid  "Modify link"
 msgstr "Keisti saitą"
 
-#: dde.src#MD_DDE_LINKEDIT.modaldialog.text
-msgid "Modify Link"
-msgstr "Keisti saitą"
-
-#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_CONTENTS.pageitem.text
-msgid "Contents"
-msgstr "Turinys"
-
-#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_INDEX.pageitem.text
-msgid "Index"
-msgstr "Rodyklė"
-
-#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_SEARCH.pageitem.text
-msgid "Find"
-msgstr "Paieška"
-
-#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_BOOKMARKS.pageitem.text
-msgid "Bookmarks"
-msgstr "Žymelės"
-
-#: newhelp.src#TP_HELP_INDEX.FT_EXPRESSION.fixedtext.text
-msgid "~Search term"
-msgstr "~Paieškos frazė"
-
-#: newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.pushbutton.text
-msgctxt "newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.pushbutton.text"
-msgid "~Display"
-msgstr "~Rodyti"
-
-#: newhelp.src#TP_HELP_SEARCH.FT_SEARCH.fixedtext.text
-msgid "S~earch term"
-msgstr "P~aieškos terminas"
-
-#: newhelp.src#TP_HELP_SEARCH.PB_SEARCH.pushbutton.text
-msgid "~Find"
-msgstr "~Ieškoti"
-
-#: newhelp.src#TP_HELP_SEARCH.CB_FULLWORDS.checkbox.text
-msgid "~Complete words only"
-msgstr "Ieškoti ~tik ištisų žodžių"
-
-#: newhelp.src#TP_HELP_SEARCH.CB_SCOPE.checkbox.text
-msgid "Find in ~headings only"
-msgstr "Ieškoti tik ~antraštėse"
-
-#: newhelp.src#TP_HELP_SEARCH.PB_OPEN_SEARCH.pushbutton.text
-msgctxt "newhelp.src#TP_HELP_SEARCH.PB_OPEN_SEARCH.pushbutton.text"
-msgid "~Display"
-msgstr "~Rodyti"
-
-#: newhelp.src#TP_HELP_BOOKMARKS.FT_BOOKMARKS.fixedtext.text
-msgid "~Bookmarks"
-msgstr "~Žymelės"
-
-#: newhelp.src#TP_HELP_BOOKMARKS.PB_BOOKMARKS.pushbutton.text
-msgctxt "newhelp.src#TP_HELP_BOOKMARKS.PB_BOOKMARKS.pushbutton.text"
-msgid "~Display"
-msgstr "~Rodyti"
-
-#: newhelp.src#STR_HELP_WINDOW_TITLE.string.text
-msgid "%PRODUCTNAME Help"
-msgstr "„%PRODUCTNAME“ žinynas"
-
-#: newhelp.src#STR_HELP_BUTTON_INDEX_ON.string.text
-msgid "Show Navigation Pane"
-msgstr "Rodyti žvalgiklio langą"
-
-#: newhelp.src#STR_HELP_BUTTON_INDEX_OFF.string.text
-msgid "Hide Navigation Pane"
-msgstr "Paslėpti žvalgiklio langą"
-
-#: newhelp.src#STR_HELP_BUTTON_START.string.text
-msgid "First Page"
-msgstr "Pirmas puslapis"
-
-#: newhelp.src#STR_HELP_BUTTON_PREV.string.text
-msgid "Previous Page"
-msgstr "Ankstesnis puslapis"
-
-#: newhelp.src#STR_HELP_BUTTON_NEXT.string.text
-msgid "Next Page"
-msgstr "Paskesnis puslapis"
-
-#: newhelp.src#STR_HELP_BUTTON_PRINT.string.text
-msgid "Print..."
-msgstr "Spausdinti.."
-
-#: newhelp.src#STR_HELP_BUTTON_ADDBOOKMARK.string.text
-msgid "Add to Bookmarks..."
-msgstr "Pridėti žymelę..."
-
-#: newhelp.src#STR_HELP_BUTTON_SEARCHDIALOG.string.text
-msgid "Find on this Page..."
-msgstr "Ieškoti šiame puslapyje..."
-
-#: newhelp.src#STR_HELP_BUTTON_SOURCEVIEW.string.text
-msgid "HTML Source"
-msgstr "HTML šaltinis"
-
-#: newhelp.src#STR_HELP_FIRST_MESSAGE.string.text
-msgid "The Help is being started..."
-msgstr "Žinynas paleidžiamas..."
-
-#: newhelp.src#STR_HELP_MENU_TEXT_SELECTION_MODE.string.text
-msgid "Select Text"
-msgstr "Žymėti tekstą"
-
-#: newhelp.src#STR_HELP_MENU_TEXT_COPY.string.text
-msgid "~Copy"
-msgstr "~Kopijuoti"
-
-#: newhelp.src#DLG_HELP_ADDBOOKMARK.FT_BOOKMARK_TITLE.fixedtext.text
-msgid "Bookmark:"
-msgstr "Pavadinimas"
-
-#: newhelp.src#DLG_HELP_ADDBOOKMARK.STR_BOOKMARK_RENAME.string.text
-msgid "Rename Bookmark"
-msgstr "Pervadinti žymelę"
-
-#: newhelp.src#DLG_HELP_ADDBOOKMARK.modaldialog.text
-msgid "Add to Bookmarks"
-msgstr "Pridėti žymelę"
-
-#: newhelp.src#MENU_HELP_BOOKMARKS.MID_OPEN.menuitem.text
-msgid "Display"
-msgstr "Rodyti"
-
-#: newhelp.src#MENU_HELP_BOOKMARKS.MID_RENAME.menuitem.text
-msgid "Rename..."
-msgstr "Pervadinti..."
-
-#: newhelp.src#MENU_HELP_BOOKMARKS.MID_DELETE.menuitem.text
-msgid "Delete"
-msgstr "Šalinti"
-
-#: newhelp.src#RID_INFO_NOSEARCHRESULTS.infobox.text
-msgid "No topics found."
-msgstr "Temų nerasta."
-
-#: newhelp.src#RID_INFO_NOSEARCHTEXTFOUND.infobox.text
-msgid "The text you entered was not found."
-msgstr "Ieškomo teksto nerasta."
-
-#: newhelp.src#RID_HELP_ONSTARTUP_TEXT.string.text
-msgid "~Display %PRODUCTNAME %MODULENAME Help at Startup"
-msgstr "~Atverti „%PRODUCTNAME %MODULENAME“ žinyną paleidžiant"
-
-#: sfx.src#STR_ACCTITLE_PRODUCTIVITYTOOLS.string.text
-msgid "%PRODUCTNAME"
+#: source/appl/sfx.src#STR_ACCTITLE_PRODUCTIVITYTOOLS.String.Text
+msgid  "%PRODUCTNAME"
 msgstr ""
 
-#~ msgid "Applied Styles"
-#~ msgstr "Pritaikyti stiliai"
-
-#~ msgid "Custom Styles"
-#~ msgstr "Naudotojo apibrėžti stiliai"
-
-#~ msgid "All Styles"
-#~ msgstr "Visi stiliai"
-
-#~ msgid "Cannot open document."
-#~ msgstr "Negalima atverti dokumento."
-
-#~ msgid "Error reading configuration file."
-#~ msgstr "Klaida skaitant sąrankos failą."
-
-#~ msgid "Error writing configuration file."
-#~ msgstr "Klaida rašant į sąrankos failą."
-
-#~ msgid "Error opening configuration file."
-#~ msgstr "Klaida atveriant sąrankos failą."
-
-#~ msgid "File is not a configuration file."
-#~ msgstr "Tai ne sąrankos failas."
-
-#~ msgid "Configuration file contains the wrong version."
-#~ msgstr "Sąrankos faile nurodyta neteisinga versija."
-
-#~ msgid ""
-#~ "Error recording BASIC library in\n"
-#~ "'@'."
-#~ msgstr ""
-#~ "Klaida įrašant į „BASIC“ biblioteką\n"
-#~ "'@'."
-
-#~ msgid ""
-#~ "An unexpected program error has occurred.\n"
-#~ "\n"
-#~ "Do you want to try to save your changes in all open documents before the "
-#~ "program is terminated?"
-#~ msgstr ""
-#~ "Netikėta programos klaida.\n"
-#~ "\n"
-#~ "Ar mėginti įrašyti visus atvertus dokumentus prieš nutraukiant darbą su "
-#~ "programa?"
-
-#~ msgid ""
-#~ "A form is to be sent by e-mail.\n"
-#~ "This means that the receiver will get to see your e-mail address."
-#~ msgstr ""
-#~ "Forma paruošta išsiųsti elektroniniu paštu.\n"
-#~ "Tai reiškia, kad gavėjas galės matyti jūsų elektroninio pašto adresą."
-
-#~ msgid "File Recovery"
-#~ msgstr "Failo atkūrimas"
-
-#~ msgid "Should the file \"$1\" be restored?"
-#~ msgstr "Ar atkurti failą „$1“?"
-
-#~ msgid "General"
-#~ msgstr "Bendras"
-
-#~ msgid "Save"
-#~ msgstr "Įrašyti"
-
-#~ msgid "Paths"
-#~ msgstr "Adresai"
-
-#~ msgid "Spellcheck"
-#~ msgstr "Rašybos tikrinimas"
-
-#~ msgid ""
-#~ "This application is as object or print server active.\n"
-#~ "Do you want to terminate anyway?"
-#~ msgstr ""
-#~ "Ši programa yra objektas arba spausdinamas failas.\n"
-#~ "Ar vis tiek norite nutraukti?"
-
-#~ msgid "%PRODUCTNAME cannot be started more than once."
-#~ msgstr "„%PRODUCTNAME“ negalima paleisti daugiau nei vieną kartą."
-
-#~ msgid ""
-#~ "Some %PRODUCTNAME functions will not work properly without a printer driver.\n"
-#~ "Please install a printer driver."
-#~ msgstr ""
-#~ "Kai kurios „%PRODUCTNAME“ funkcijos tinkamai neveiks be spausdintuvo "
-#~ "tvarkyklės.\n"
-#~ "Įdiekite spausdintuvo tvarkyklę."
-
-#~ msgid "AutoSave"
-#~ msgstr "Automatinis įrašymas"
-
-#~ msgid ""
-#~ "Limited system resources. Please quit other applications or close some "
-#~ "windows before continuing."
-#~ msgstr ""
-#~ "Riboti sistemos ištekliai. Norėdami tęsti darbą užverkite kitas programas "
-#~ "arba keletą langų."
-
-#~ msgid "There are files missing. Please check application setup."
-#~ msgstr "Trūksta failų. Patikrinkite programos sąranką."
-
-#~ msgid ""
-#~ "Another error occurred during the save recovery.\n"
-#~ "Possibly, the data could not be entirely saved."
-#~ msgstr ""
-#~ "Atkūrimo metu vėl įvyko klaida.\n"
-#~ "Tikėtina, kad buvo įrašyti ne visi duomenys."
-
-#~ msgid "System resources exhausted. Please restart the application."
-#~ msgstr "Išseko sistemos ištekliai. Paleiskite programą iš naujo."
-
-#~ msgid "Error initializing object-system."
-#~ msgstr "Objekto sistemos iniciacijos klaida."
-
-#~ msgid "The file $(FILE) doesn't exist."
-#~ msgstr "Failas „$(FILE)“ neegzistuoja."
-
-#~ msgid "The path to file $(FILE) doesn't exist."
-#~ msgstr "Failo „$(FILE)“ adresas neegzistuoja."
-
-#~ msgid ""
-#~ "The file $(FILE) could not be opened,\n"
-#~ "because too many files are open.\n"
-#~ "Please close some files and try again."
-#~ msgstr ""
-#~ "Failo „$(FILE)“ nepavyko atverti,\n"
-#~ "nes jau atverta per daug failų.\n"
-#~ "Užverkite keletą failų ir bandykite iš naujo."
-
-#~ msgid "The file $(FILE) could not be opened due to missing access rights."
-#~ msgstr "Failo „$(FILE)“ nepavyko atverti dėl nepakankamų prieigos teisių."
-
-#~ msgid "The file $(FILE) could not be accessed."
-#~ msgstr "Nėra priėjimo prie failo „$(FILE)“."
-
-#~ msgid "The file $(FILE) could not be opened due to an invalid file handle."
-#~ msgstr "Failo „$(FILE)“ nepavyko atverti dėl neteisingo jo įvardijimo."
-
-#~ msgid "The file $(FILE) could not be created."
-#~ msgstr "Failo „$(FILE)“ nepavyko sukurti."
-
-#~ msgid "Error by shared access to $(FILE)."
-#~ msgstr "Klaida dalijantis prieiga prie failo „$(FILE)“."
-
-#~ msgid "General I/O error accessing $(FILE)."
-#~ msgstr "Bendroji klaida įvedant bei išvedant „$(FILE)“."
-
-#~ msgid "The selected template has an incorrect format"
-#~ msgstr "Pasirinktas šablonas yra neteisingo formato"
-
-#~ msgid "Can't open file $."
-#~ msgstr "Failo „$“ atverti negalima."
-
-#~ msgid "E~xit & return to "
-#~ msgstr "~Išeiti ir grįžti į "
-
-#~ msgid "Select a command or click to select a theme."
-#~ msgstr "Pasirinkite komandą arba spustelėkite pavadinimą."
-
-#~ msgid "Mail"
-#~ msgstr "El. paštas"
-
-#~ msgid "Addresses"
-#~ msgstr "Adresai"
-
-#~ msgid "Don't display tips"
-#~ msgstr "Nerodyti paaiškinimų"
-
-#~ msgid "The help system could not be started"
-#~ msgstr "Žinyno nepavyko paleisti"
-
-#~ msgid "Enable plug-ins"
-#~ msgstr "Leisti intarpus"
-
-#~ msgid ""
-#~ "Important program components could not be initialized correctly.\n"
-#~ "Please start the setup program with the option /Repair."
-#~ msgstr ""
-#~ "Negalima teisingai inicializuoti svarbių programos komponentų.\n"
-#~ "Paleiskite diegimo programą ir pasirinkite taisymo parinktį."
-
-#~ msgid "Reference will not be saved: "
-#~ msgstr "Nuoroda nebus įrašyta: "
-
-#~ msgid "Configuration"
-#~ msgstr "Sąranka"
-
-#~ msgid "My Documents"
-#~ msgstr "Mano dokumentai"
-
-#~ msgid "Graphics"
-#~ msgstr "Paveikslai"
-
-#~ msgid "Icons"
-#~ msgstr "Piktogramos"
-
-#~ msgid "Palettes"
-#~ msgstr "Paletės"
-
-#~ msgid "Backups"
-#~ msgstr "Atsarginės kopijos"
-
-#~ msgid "Modules"
-#~ msgstr "Moduliai"
-
-#~ msgid "AutoText"
-#~ msgstr "Autotekstas"
-
-#~ msgid "Dictionaries"
-#~ msgstr "Žodynai"
-
-#~ msgid "Gallery"
-#~ msgstr "Galerija"
-
-#~ msgid "Message Storage"
-#~ msgstr "Laiškų saugykla"
-
-#~ msgid "Temporary files"
-#~ msgstr "Laikini failai"
-
-#~ msgid "Plug-ins"
-#~ msgstr "Intarpai"
-
-#~ msgid "Folder Bookmarks"
-#~ msgstr "Aplankų žymelės"
-
-#~ msgid "Filters"
-#~ msgstr "Filtrai"
-
-#~ msgid "Add-ins"
-#~ msgstr "Programos priedai"
-
-#~ msgid "User Configuration"
-#~ msgstr "Naudotojo sąranka"
-
-#~ msgid "User-defined dictionaries"
-#~ msgstr "Naudotojo žodynai"
-
-#~ msgid "AutoCorrect"
-#~ msgstr "Automatinis rašybos taisymas"
-
-#~ msgid "Writing aids"
-#~ msgstr "Rašymo pagalba"
-
-#~ msgid "The URL is not valid."
-#~ msgstr "Neteisingas URL."
-
-#~ msgid "Undo: "
-#~ msgstr "~Atšaukti: "
-
-#~ msgid "Re~do: "
-#~ msgstr "A~tstatyti: "
-
-#~ msgid "~Repeat: "
-#~ msgstr "~Pakartoti: "
-
-#~ msgid "New task"
-#~ msgstr "Nauja užduotis"
-
-#~ msgid "Start Application"
-#~ msgstr "Paleisti programą"
-
-#~ msgid "Close Application"
-#~ msgstr "Užverti programą"
-
-#~ msgid "Create Document"
-#~ msgstr "Sukurti dokumentą"
-
-#~ msgid "Document is closing"
-#~ msgstr "Dokumentas užveriamas"
-
-#~ msgid "Close Document"
-#~ msgstr "Užverti dokumentą"
-
-#~ msgid "Open Document"
-#~ msgstr "Atverti dokumentą"
-
-#~ msgid "Save Document"
-#~ msgstr "Įrašyti dokumentą"
-
-#~ msgid "Save Document As"
-#~ msgstr "Įrašyti dokumentą taip"
-
-#~ msgid "Document has been saved"
-#~ msgstr "Dokumentas įrašytas"
-
-#~ msgid "Document has been saved as"
-#~ msgstr "Dokumentas įrašytas taip"
-
-#~ msgid "Activate Document"
-#~ msgstr "Aktyvinti dokumentą"
-
-#~ msgid "Deactivate Document"
-#~ msgstr "Pasyvinti dokumentą"
-
-#~ msgid "Print Document"
-#~ msgstr "Spausdinti dokumentą"
-
-#~ msgid "'Modified' status was changed"
-#~ msgstr "Modifikavimo būsena pakeista"
-"X-Generator: Pootle 2.1.6\n"
-"X-Accelerator-Marker: ~\n"
-
-#: doc.src#MSG_CONFIRM_FILTER.querybox.text
-msgid ""
-"Saving in external formats may have caused\n"
-" information loss. Do you still want to close?"
+#: source/appl/app.src#STR_NONAME.String.Text
+#, fuzzy
+msgid  "Untitled"
+msgstr "Be pavadinimo "
+
+#: source/appl/app.src#STR_CLOSE.String.Text
+#, fuzzy
+msgid  "Close"
+msgstr "Užverti"
+
+#: source/appl/app.src#STR_STYLE_FILTER_AUTO.String.Text
+#, fuzzy
+msgid  "Automatic"
+msgstr "Automatinis"
+
+#: source/appl/app.src#STR_STANDARD_SHORTCUT.String.Text
+#, fuzzy
+msgid  "Standard"
+msgstr "Įprastas"
+
+#: source/appl/app.src#STR_BYTES.String.Text
+#, fuzzy
+msgid  "Bytes"
+msgstr "B"
+
+#: source/appl/app.src#STR_KB.String.Text
+#, fuzzy
+msgid  "KB"
+msgstr "KB"
+
+#: source/appl/app.src#STR_MB.String.Text
+#, fuzzy
+msgid  "MB"
+msgstr "MB"
+
+#: source/appl/app.src#STR_GB.String.Text
+#, fuzzy
+msgid  "GB"
+msgstr "GB"
+
+#: source/appl/app.src#MSG_QUERY_LASTVERSION.QueryBox.Message
+#, fuzzy
+msgid  "Cancel all changes?"
+msgstr "Ar atsisakyti visų pakeitimų?"
+
+#: source/appl/app.src#RID_DOCALREADYLOADED_DLG.InfoBox.Message
+#, fuzzy
+msgid  "Document already open."
+msgstr "Dokumentas jau atvertas."
+
+#: source/appl/app.src#MSG_ERR_NO_WEBBROWSER_FOUND.ErrorBox.Message
+msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
 msgstr ""
-"Įrašant išoriniais formatais galima\n"
-"prarasti informaciją. Ar vis tiek užverti dokumentą?"
 
-#: doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.querybox.text
-msgid ""
-"Name already in use.\n"
-"Do you want to overwrite document template?"
-msgstr ""
-"Šis vardas jau naudojamas.\n"
-"Ar perrašyti dokumento šabloną?"
+#: source/appl/app.src#GID_INTERN.String.Text
+#, fuzzy
+msgid  "Internal"
+msgstr "Vidinis"
 
-#: doc.src#STR_DELETE_REGION.string.text
-msgid "Are you sure you want to delete the region \"$1\"?"
-msgstr "Ar tikrai pašalinti sritį „$1“?"
+#: source/appl/app.src#GID_APPLICATION.String.Text
+#, fuzzy
+msgid  "Application"
+msgstr "Programa"
 
-#: doc.src#STR_DELETE_TEMPLATE.string.text
-msgid "Are you sure you want to delete the entry \"$1\"?"
-msgstr "Ar tikrai pašalinti įrašą „$1“?"
+#: source/appl/app.src#GID_VIEW.String.Text
+#, fuzzy
+msgid  "View"
+msgstr "Rodymas"
 
-#: doc.src#MSG_REGION_NOTEMPTY.querybox.text
-msgid ""
-"The category is not empty.\n"
-"Delete anyway?"
-msgstr ""
-"Ši kategorija nėra tuščia.\n"
-"Vis tiek šalinti?"
+#: source/appl/app.src#GID_DOCUMENT.String.Text
+#, fuzzy
+msgid  "Documents"
+msgstr "Dokumentai"
 
-#: doc.src#STR_QUERY_SAVE_DOCUMENT.string.text
-msgid ""
-"The document \"$(DOC)\" has been modified.\n"
-"Do you want to save your changes?"
-msgstr ""
-"Dokumentas „$(DOC)“ buvo pakeistas.\n"
-"Ar įrašyti pakeitimus?"
-
-#: doc.src#STR_STYLES.string.text
-msgid "Styles"
-msgstr "Stiliai"
-
-#: doc.src#STR_MACROS.string.text
-msgid "Macros"
-msgstr "Makrokomandos"
-
-#: doc.src#STR_CONFIG.string.text
-msgid "Configuration"
-msgstr "Sąranka"
-
-#: doc.src#STR_PRINT_STYLES_HEADER.string.text
-msgid "Styles in "
-msgstr "Stiliai "
-
-#: doc.src#STR_PRINT_STYLES.string.text
-msgid "Printing Styles"
-msgstr "Spausdinimo stiliai"
-
-#: doc.src#MSG_PRINT_ERROR.errorbox.text
-msgid "The print job could not be started."
-msgstr "Nepavyko pradėti spausdinimo."
-
-#: doc.src#STR_BACKUP_COPY.string.text
-msgid "Copy"
-msgstr "Kopijuoti"
-
-#: doc.src#MSG_CANT_OPEN_TEMPLATE.infobox.text
-msgid "The template could not be opened."
-msgstr "Nepavyko atverti šablono."
-
-#: doc.src#MSG_VIEW_OPEN_CANT_SAVE.infobox.text
-msgid "Document already open for editing."
-msgstr "Dokumentas jau atvertas taisymui."
-
-#: doc.src#STR_ERROR_SAVE.string.text
-msgid "Error recording document "
-msgstr "Klaida įrašant dokumentą "
-
-#: doc.src#STR_TEMPLATE_FILTER.string.text
-msgctxt "doc.src#STR_TEMPLATE_FILTER.string.text"
-msgid "Templates"
-msgstr "Šablonai"
-
-#: doc.src#STR_ERROR_COPY_TEMPLATE.string.text
-msgid ""
-"Error copying template \"$1\". \n"
-"A template with this name may already exist."
-msgstr ""
-"Klaida kopijuojant šabloną „$1“. \n"
-"Šablonas tokiu vardu gal jau yra."
-
-#: doc.src#STR_ERROR_DELETE_TEMPLATE.string.text
-msgid "The template \"$1\" can not be deleted."
-msgstr "Šablono „$1“ negalima pašalinti."
-
-#: doc.src#STR_ERROR_MOVE_TEMPLATE.string.text
-msgid "Error moving template \"$1\"."
-msgstr "Klaida perkeliant šabloną „$1“."
-
-#: doc.src#MSG_ERROR_RESCAN.errorbox.text
-msgid "The update could not be saved."
-msgstr "Nepavyko įrašyti atnaujintų duomenų."
-
-#: doc.src#STR_ERROR_SAVE_TEMPLATE.string.text
-msgid "Error saving template "
-msgstr "Klaida įrašant šabloną "
-
-#: doc.src#MSG_ERROR_RENAME_TEMPLATE.errorbox.text
-msgid "Error renaming template."
-msgstr "Klaida pervadinant šabloną."
-
-#: doc.src#MSG_ERROR_RENAME_TEMPLATE_REGION.errorbox.text
-msgid "Error renaming template category."
-msgstr "Klaida pervadinant šablonų kategoriją"
-
-#: doc.src#MSG_ERROR_EMPTY_NAME.errorbox.text
-msgid "Please specify a name."
-msgstr "Nurodykite pavadinimą."
-
-#: doc.src#MSG_ERROR_UNIQ_NAME.errorbox.text
-msgid ""
-"Please specify a unique name.\n"
-"Entries must not be case specific."
-msgstr ""
-"Įveskite unikalų pavadinimą.\n"
-"Didžiosios ir mažosios raidės pavadinimuose laikomos vienodomis."
-
-#: doc.src#STR_QUERY_DEFAULT_TEMPLATE.string.text
-msgid "Should the template \"$(TEXT)\" become the default template?"
-msgstr "Ar nustatyti šabloną „$(TEXT)“ numatytuoju šablonu?"
-
-#: doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.querybox.text
-msgid "Do you want to reset the default template?"
-msgstr "Ar atstatyti numatytąjį šabloną?"
-
-#: doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.infobox.text
-msgid ""
-"Template directory\n"
-"$(DIR)\n"
-"does not exist."
-msgstr ""
-"Šablonų aplanko\n"
-"$(DIR)\n"
-"nėra."
-
-#: doc.src#MSG_DOCINFO_CANTREAD.infobox.text
-msgid "Document info cannot be read."
-msgstr "Negalima perskaityti dokumento informacijos."
-
-#: doc.src#STR_ERROR_NOSTORAGE.string.text
-msgid "The selected file has an incorrect format."
-msgstr "Parinktas failas yra neteisingo formato."
-
-#: doc.src#STR_QUERY_MUSTOWNFORMAT.string.text
-msgid ""
-"Documents cannot be saved in $(FORMAT) format. Do you\n"
-"want to save your changes using the $(OWNFORMAT) format?"
-msgstr ""
-"Dokumentų negalima įrašyti $(FORMAT) formatu.\n"
-"Ar įrašyti dokumentą $(OWNFORMAT) formatu?"
-
-#: doc.src#STR_SAVEDOC.string.text
-msgid "~Save"
-msgstr "Į~rašyti"
-
-#: doc.src#STR_UPDATEDOC.string.text
-msgid "~Update"
-msgstr "~Atnaujinti"
-
-#: doc.src#STR_SAVEASDOC.string.text
-msgid "Save ~As..."
-msgstr "Įrašyti ~taip..."
-
-#: doc.src#STR_SAVECOPYDOC.string.text
-msgid "Save Copy ~as..."
-msgstr "Įrašyti ~kopiją taip..."
-
-#: doc.src#STR_CLOSEDOC.string.text
-msgid "~Close"
-msgstr "~Užverti"
-
-#: doc.src#STR_CLOSEDOC_ANDRETURN.string.text
-msgid "~Close & Return to "
-msgstr "U~verti ir grįžti į "
-
-#: doc.src#STR_WIZARD.string.text
-msgid " AutoPilot"
-msgstr " Vediklis"
-
-#: doc.src#RID_STR_FILTCONFIG.string.text
-msgid "Configurations"
-msgstr "Sąrankos"
-
-#: doc.src#RID_STR_FILTBASIC.string.text
-msgid "%PRODUCTNAME Basic libraries"
-msgstr "„%PRODUCTNAME Basic“ bibliotekos"
-
-#: doc.src#RID_STR_WARNSTYLEOVERWRITE.string.text
-msgid "Should the \"$(ARG1)\" Style be replaced?"
-msgstr "Ar pakeisti stilių „$(ARG1)“?"
-
-#: doc.src#STR_DOC_LOADING.string.text
-msgid "Loading Document"
-msgstr "Įkeliamas dokumentas"
-
-#: doc.src#RID_DLSTATUS.INET_NAME_RESOLVE_START.string.text
-msgid "Connection to: $(HOST). Waiting for response..."
-msgstr "Jungiamasi prie: $(HOST). Laukiama atsako..."
-
-#: doc.src#RID_DLSTATUS.INET_CONNECT_START.string.text
-msgid "Opening $(TARGET) at $(HOST)"
-msgstr "Atveriama $(TARGET) kompiuteryje $(HOST)"
-
-#: doc.src#RID_DLSTATUS.INET_READ_STATUS.string.text
-msgid "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
-msgstr "Įkeliama: $(TARGET) iš kompiuterio $(HOST). Įkelta: $(BYTE)"
-
-#: doc.src#RID_DLSTATUS.INET_CONNECTION_CLOSED.string.text
-msgid "Disconnected"
-msgstr "Atsijungta"
-
-#: doc.src#MSG_OPEN_READONLY.querybox.text
-msgid ""
-"Document cannot be opened for editing.\n"
-"Do you want to open it as read-only?"
-msgstr ""
-"Dokumento negalima atverti taisymui.\n"
-"Ar atverti dokumentą tik skaitymui?"
-
-#: doc.src#STR_EDIT.string.text
-msgid "Edit"
+#: source/appl/app.src#GID_EDIT.String.Text
+#, fuzzy
+msgid  "Edit"
 msgstr "Taisa"
 
-#: doc.src#RID_OFFICEFILTER.string.text
-msgid "%PRODUCTNAME Documents"
-msgstr "„%PRODUCTNAME“ dokumentai"
-
-#: doc.src#STR_FRAMEOBJECT_PROPERTIES.string.text
-msgid "Propert~ies..."
-msgstr "~Savybės ..."
-
-#: doc.src#STR_FSET_FILTERNAME0.string.text
-msgid "HTML (FrameSet)"
-msgstr "HTML (polangių išdėstymas)"
-
-#: doc.src#STR_FSET_FILTERNAME1.string.text
-msgid "%PRODUCTNAME Frame Document"
-msgstr "„%PRODUCTNAME“ kadro dokumentas"
-
-#: doc.src#STR_TEMPL_MOVED.string.text
-msgid ""
-"The template \"$(TEMPLATE)\" was not found at the original location. A "
-"template with the same name exists at \"$(FOUND)\". Should this template be "
-"used in the future when comparing?"
-msgstr ""
-"Šablonas „$(TEMPLATE)“ nerastas pradinėje vietoje. Šablonas tokiu pat "
-"pavadinimu yra „$(FOUND)“. Ar šį šabloną naudoti vėliau lyginant?"
-
-#: doc.src#STR_TEMPL_RESET.string.text
-msgid ""
-"The template \"$(TEMPLATE)\" has not been found. Should the template be looked "
-"for the next time the document is opened ?"
-msgstr ""
-"Šablonas „$(TEMPLATE)“ nerastas. Ar kitąkart atvėrus dokumentą ieškoti šio "
-"šablono ?"
-
-#: doc.src#STR_AUTOMATICVERSION.string.text
-msgid "Automatically saved version"
-msgstr "Automatiškai įrašyta versija"
-
-#: doc.src#STR_DOCTYPENAME_SW.string.text
-msgid "Text Document"
-msgstr "Teksto dokumentas"
-
-#: doc.src#STR_DOCTYPENAME_SWWEB.string.text
-msgid "HTML Document"
-msgstr "HTML dokumentas"
-
-#: doc.src#STR_DOCTYPENAME_SWGLOB.string.text
-msgid "Master Document"
-msgstr "Pagrindinis dokumentas"
-
-#: doc.src#STR_DOCTYPENAME_SC.string.text
-msgid "Spreadsheet"
-msgstr "Skaičiuoklės dokumentas"
-
-#: doc.src#STR_DOCTYPENAME_SI.string.text
-msgid "Presentation"
-msgstr "Pateiktis"
-
-#: doc.src#STR_DOCTYPENAME_SD.string.text
-msgid "Drawing"
-msgstr "Grafikos dokumentas"
-
-#: doc.src#STR_DOCTYPENAME_MESSAGE.string.text
-msgid "Message"
-msgstr "Laiškas"
-
-#: doc.src#STR_NOSAVEANDCLOSE.string.text
-msgid "~Discard"
-msgstr "~Neįrašyti"
-
-#: doc.src#STR_PACKNGO_NOACCESS.string.text
-msgid "Access to the current data medium not possible."
-msgstr "Prieiga prie dabartinės duomenų laikmenos negalima."
-
-#: doc.src#STR_PACKNGO_NEWMEDIUM.string.text
-msgid "Insert the next data carrier and click OK."
-msgstr "Įterpkite kitus duomenis ir spustelėkite „Gerai“."
-
-#: doc.src#STR_OBJECT.string.text
-msgid "Object"
-msgstr "Objektas"
-
-#: doc.src#DLG_MACROQUERY.querybox.text
-msgid "This document contains macros. $(TEXT)"
-msgstr "Šiame dokumente yra makrokomandų. $(TEXT)"
-
-#: doc.src#DLG_MACROQUERY.querybox.title
-msgid "Run Macro"
-msgstr "Vykdyti makrokomandą"
-
-#: doc.src#BTN_OK.string.text
-msgid "Run"
-msgstr "Vykdyti"
-
-#: doc.src#BTN_CANCEL.string.text
-msgid "Do Not Run"
-msgstr "Nevykdyti"
-
-#: doc.src#FT_CANCEL.string.text
-msgid ""
-"According to the security settings, the macros in this document should not "
-"be run. Do you want to run them anyway?"
-msgstr ""
-"Pagal esamas saugumo nuostatas, šio dokumento makrokomandos neturėtų būti "
-"vykdomos. Ar vis tiek norite jas vykdyti?"
-
-#: doc.src#FT_OK.string.text
-msgid "Do you want to allow these macros to be run?"
-msgstr "Ar leisti vykdyti šias makrokomandas?"
-
-#: doc.src#STR_EXPORTASPDF_TITLE.string.text
-msgid "Export as PDF"
-msgstr "Eksportuoti PDF formatu"
-
-#: doc.src#STR_EXPORTWITHCFGBUTTON.string.text
-msgid "Export..."
-msgstr "Eksportuoti..."
-
-#: doc.src#STR_EXPORTBUTTON.string.text
-msgid "Export"
-msgstr "Eksportuoti"
-
-#: doc.src#RID_SVXSTR_SECURITY_ADDPATH.string.text
-msgid "Add this directory to the list of secure paths: "
-msgstr "Įtraukti šį aplanką į saugių adresų sąrašą: "
-
-#: doc.src#STR_LABEL_FILEFORMAT.string.text
-msgid "File format:"
-msgstr "Failo formatas:"
-
-#: doc.src#STR_HIDDENINFO_CONTAINS.string.text
-msgid ""
-"This document contains:\n"
-"\n"
-msgstr ""
-"Šiame dokumente yra:\n"
-"\n"
-
-#: doc.src#STR_HIDDENINFO_RECORDCHANGES.string.text
-msgid "Recorded changes"
-msgstr "Įrašyti taisymai"
-
-#: doc.src#STR_HIDDENINFO_NOTES.string.text
-msgid "Notes"
-msgstr "Pastabos"
-
-#: doc.src#STR_HIDDENINFO_DOCVERSIONS.string.text
-msgid "Document versions"
-msgstr "Dokumento versijos"
-
-#: doc.src#STR_HIDDENINFO_FIELDS.string.text
-msgid "Fields"
-msgstr "Laukai"
-
-#: doc.src#STR_HIDDENINFO_LINKDATA.string.text
-msgid "Linked data..."
-msgstr "Susieti duomenys..."
-
-#: doc.src#STR_HIDDENINFO_CONTINUE_SAVING.string.text
-msgid "Do you want to continue saving the document?"
-msgstr "Ar tęsti dokumento įrašymą?"
-
-#: doc.src#STR_HIDDENINFO_CONTINUE_PRINTING.string.text
-msgid "Do you want to continue printing the document?"
-msgstr "Ar tęsti dokumento spausdinimą?"
-
-#: doc.src#STR_HIDDENINFO_CONTINUE_SIGNING.string.text
-msgid "Do you want to continue signing the document?"
-msgstr "Ar tęsti dokumento pasirašymą?"
-
-#: doc.src#STR_HIDDENINFO_CONTINUE_CREATEPDF.string.text
-msgid "Do you want to continue creating a PDF file?"
-msgstr "Ar tęsti PDF failo kūrimą?"
-
-#: doc.src#STR_NEW_FILENAME_SAVE.string.text
-msgid ""
-"If you do not want to overwrite the original document, you should save your "
-"work under a new filename."
-msgstr "Jei nenorite pakeisti pradinio dokumento, įrašykite failą kitu vardu."
-
-#: doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.string.text
-msgid "Some template files are protected and can not be deleted."
-msgstr "Kai kurie šablono failai yra apsaugoti ir jų negalima pašalinti."
-
-#: doc.src#STR_DOCINFO_INFOFIELD.string.text
-msgid "Info %1"
-msgstr "Info %1"
-
-#: doc.src#STR_SHARED.string.text
-msgid " (shared)"
-msgstr "(bendras)"
-
-#: doc.src#STR_XMLSEC_ODF12_EXPECTED.string.text
-msgid ""
-"The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-"
-"Options-Load/Save-General. Signing documents requires ODF 1.2 "
-"(OpenOffice.org 3.x)."
-msgstr ""
-"Lange „Priemonės –> Parinktys –> Įkėlimas ir įrašymas –> Bendrosios "
-"parinktys“ nustatyta ODF 1.1 (OpenOffice.org 2.x) dokumentų formato versija. "
-"Dokumentams pasirašyti reikalinga ODF 1.2 versija (OpenOffice.org 3.x)."
-
-#: doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.querybox.text
-msgid ""
-"The document has to be saved before it can be signed. Saving the document "
-"removes all present signatures.\n"
-"Do you want to save the document?"
-msgstr ""
-"Norint pasirašyti dokumentą, pirma reikia jį įrašyti. Įrašant dokumentą bus "
-"pašalinti visi esami parašai.\n"
-"Ar įrašyti dokumentą?"
-
-#: doc.src#STR_QRYTEMPL_MESSAGE.string.text
-msgid ""
-"The template '$(ARG1)' on which this document is based, has been modified. "
-"Do you want to update style based formattings according to the modified "
-"template?"
-msgstr ""
-"Šablonas „$(ARG1)“, iš kurio sukurtas šis dokumentas, buvo pakeistas. Ar "
-"atnaujinti stiliais pagrįstus formatus atsižvelgiant į šablono pakeitimus?"
-
-#: doc.src#STR_QRYTEMPL_UPDATE_BTN.string.text
-msgid "~Update Styles"
-msgstr "~Atnaujinti stilius"
-
-#: doc.src#STR_QRYTEMPL_KEEP_BTN.string.text
-msgid "~Keep Old Styles"
-msgstr "~Išlaikyti esamus stilius"
-
-#: doctdlg.src#DLG_DOC_TEMPLATE.FL_EDIT.fixedline.text
-msgid "New template"
-msgstr "Naujas šablonas"
-
-#: doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.fixedline.text
-msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.fixedline.text"
-msgid "Templates"
-msgstr "Šablonai"
-
-#: doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.fixedtext.text
-msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.fixedtext.text"
-msgid "~Categories"
-msgstr "~Kategorijos"
-
-#: doctdlg.src#DLG_DOC_TEMPLATE.FT_STYLESHEETS.fixedtext.text
-msgid "~Templates"
-msgstr "~Šablonai"
-
-#: doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.pushbutton.text
-msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.pushbutton.text"
-msgid "~Edit"
-msgstr "~Taisyti"
-
-#: doctdlg.src#DLG_DOC_TEMPLATE.BT_ORGANIZE.pushbutton.text
-msgid "~Organizer..."
-msgstr "~Tvarkyti..."
-
-#: doctdlg.src#DLG_DOC_TEMPLATE.modaldialog.text
-msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.modaldialog.text"
-msgid "Templates"
-msgstr "Šablonai"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.1.itemlist.text
-msgid "My Templates"
-msgstr "Naudotojo šablonai"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.2.itemlist.text
-msgid "Business Correspondence"
-msgstr "Tarnybinių laiškų"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.3.itemlist.text
-msgid "Other Business Documents"
-msgstr "Kitų tarnybinių dokumentų"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.4.itemlist.text
-msgid "Personal Correspondence and Documents"
-msgstr "Asmeninių laiškų ir dokumentų"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.5.itemlist.text
-msgid "Forms and Contracts"
-msgstr "Formų ir sutarčių"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.6.itemlist.text
-msgid "Finances"
-msgstr "Finansinių dokumentų"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.7.itemlist.text
-msgid "Education"
-msgstr "Švietimo"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.8.itemlist.text
-msgid "Presentation Backgrounds"
-msgstr "Pateikčių fono"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.9.itemlist.text
-msgid "Presentations"
-msgstr "Pateikčių"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.10.itemlist.text
-msgid "Miscellaneous"
-msgstr "Kiti"
-
-#: doctempl.src#RID_CNT_STR_WAITING.string.text
-msgid "The templates are being initialized for first-time usage."
-msgstr "Šablonai parengiami naudoti pirmą kartą."
-
-#: docvor.src#DLG_ORGANIZE.BTN_OK.okbutton.text
-msgid "Close"
-msgstr "Užverti"
-
-#: docvor.src#DLG_ORGANIZE.BTN_FILES.pushbutton.text
-msgid "~File..."
-msgstr "~Failas..."
-
-#: docvor.src#DLG_ORGANIZE.BTN_ADDRESSTEMPLATE.pushbutton.text
-msgid "~Address Book..."
-msgstr "~Adresų knygelė..."
-
-#: docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.1.stringlist.text
-msgctxt "docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.1.stringlist.text"
-msgid "Templates"
-msgstr "Šablonai"
-
-#: docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.2.stringlist.text
-msgctxt "docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.2.stringlist.text"
-msgid "Documents"
-msgstr "Dokumentai"
-
-#: docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.1.stringlist.text
-msgctxt "docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.1.stringlist.text"
-msgid "Templates"
-msgstr "Šablonai"
-
-#: docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.2.stringlist.text
-msgctxt "docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.2.stringlist.text"
-msgid "Documents"
-msgstr "Dokumentai"
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_NEW.menuitem.text
-msgid "~New"
-msgstr "~Naujas"
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DELETE.menuitem.text
-msgid "~Delete"
-msgstr "~Šalinti"
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.menuitem.text
-msgctxt "docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.menuitem.text"
-msgid "~Edit"
-msgstr "~Taisyti"
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_FROM.menuitem.text
-msgid "Import Template..."
-msgstr "Importuoti šabloną..."
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_TO.menuitem.text
-msgid "Export Template..."
-msgstr "Eksportuoti šabloną..."
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINT.menuitem.text
-msgid "~Print"
-msgstr "~Spausdinti"
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINTER_SETUP.menuitem.text
-msgid "Printer Settings..."
-msgstr "Spausdintuvo nuostatos..."
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESCAN.menuitem.text
-msgid "Update"
-msgstr "Atnaujinti"
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DEFAULT_TEMPLATE.menuitem.text
-msgid "Set As Default Template"
-msgstr "Nustatyti numatytuoju šablonu"
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESET_DEFAULT_TEMPLATE.menuitem.text
-msgid "Reset Default Template"
-msgstr "Atstatyti numatytąjį šabloną"
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.menubutton.text
-msgid "Commands"
-msgstr "Komandos"
-
-#: docvor.src#DLG_ORGANIZE.modaldialog.text
-msgid "Template Management"
-msgstr "Šablonų tvarkymas"
-
-#: new.src#DLG_NEW_FILE.FT_REGION.fixedtext.text
-msgctxt "new.src#DLG_NEW_FILE.FT_REGION.fixedtext.text"
-msgid "~Categories"
-msgstr "~Kategorijos"
-
-#: new.src#DLG_NEW_FILE.FT_TEMPLATE.fixedtext.text
-msgid "T~emplates"
-msgstr "Ša~blonai"
-
-#: new.src#DLG_NEW_FILE.BT_MORE.morebutton.text
-msgid "~More"
-msgstr "~Daugiau"
-
-#: new.src#DLG_NEW_FILE.BTN_PREVIEW.checkbox.text
-msgid "Pre~view"
-msgstr "~Peržiūra"
-
-#: new.src#DLG_NEW_FILE.GB_DOCINFO.fixedline.text
-msgid "Description"
-msgstr "Aprašymas"
-
-#: new.src#DLG_NEW_FILE.CB_TEXT_STYLE.checkbox.text
-msgid "Te~xt"
-msgstr "Te~kstas"
-
-#: new.src#DLG_NEW_FILE.CB_FRAME_STYLE.checkbox.text
-msgid "~Frame"
-msgstr "~Kadras"
-
-#: new.src#DLG_NEW_FILE.CB_PAGE_STYLE.checkbox.text
-msgid "~Pages"
-msgstr "~Puslapiai"
-
-#: new.src#DLG_NEW_FILE.CB_NUM_STYLE.checkbox.text
-msgid "N~umbering"
-msgstr "N~umeravimas"
-
-#: new.src#DLG_NEW_FILE.CB_MERGE_STYLE.checkbox.text
-msgid "~Overwrite"
-msgstr "~Perrašymas"
-
-#: new.src#DLG_NEW_FILE.PB_LOAD_FILE.pushbutton.text
-msgid "From File..."
-msgstr "Iš failo..."
-
-#: new.src#DLG_NEW_FILE.STR_LOAD_TEMPLATE.string.text
-msgid "Load Styles"
-msgstr "Įkelti stilius"
-
-#: new.src#DLG_NEW_FILE.FT_TITLE.fixedtext.text
-msgid "~Title"
-msgstr "~Pavadinimas"
-
-#: new.src#DLG_NEW_FILE.FT_THEMA.fixedtext.text
-msgid "Subject"
-msgstr "Tema"
-
-#: new.src#DLG_NEW_FILE.FT_KEYWORDS.fixedtext.text
-msgid "~Key words"
-msgstr "~Reikšminiai žodžiai"
-
-#: new.src#DLG_NEW_FILE.FT_DESC.fixedtext.text
-msgid "~Description"
-msgstr "~Aprašymas"
-
-#: new.src#DLG_NEW_FILE.modaldialog.text
-msgid "New"
-msgstr "Naujas"
-
-#~ msgid ""
-#~ "The Styles in this document do not match your current Styles. Should your "
-#~ "current Styles be applied to this document?"
-#~ msgstr ""
-#~ "Šio dokumento stiliai neatitinka dabartinių stilių. Ar pritaikyti "
-#~ "dabartinius stilius šiam dokumentui?"
-"X-Generator: Pootle 2.1.6\n"
-"X-Accelerator-Marker: ~\n"
-
-#: alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.fixedtext.text
-msgid ""
-"This document may contain formatting or content that cannot be saved in the "
-"%FORMATNAME file format. Do you want to save the document in this format "
-"anyway?\n"
-"\n"
-"Use the latest ODF file format and be sure all formatting and content is "
-"saved correctly."
-msgstr ""
-"Šiame dokumente gali būti formatų ar objektų, kurių negalima įrašyti „%"
-"FORMATNAME“ formatu. Ar vis tiek įrašyti dokumentą šiuo formatu?\n"
-"\n"
-"Įrašydami naujausiu ODF formatu būsite tikri, kad visi formatai ir objektai "
-"įrašomi teisingai."
-
-#: alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.okbutton.text
-msgid "~Keep Current Format"
-msgstr "Į~rašyti pasirinktu formatu"
-
-#: alienwarn.src#RID_DLG_ALIEN_WARNING.PB_YES.cancelbutton.text
-msgid "~Save in ODF Format"
-msgstr "Įrašyti ~ODF formatu"
-
-#: alienwarn.src#RID_DLG_ALIEN_WARNING.PB_MOREINFO.helpbutton.text
-msgid "~More Information..."
-msgstr "~Daugiau informacijos..."
-
-#: alienwarn.src#RID_DLG_ALIEN_WARNING.CB_WARNING_OFF.checkbox.text
-msgid "~Ask when not saving in ODF format"
-msgstr "~Klausti, kai įrašoma ne ODF formatu"
-
-#: dialog.src#STR_RESET.string.text
-msgid "~Reset"
-msgstr "A~tstatyti"
-
-#: dialog.src#STR_APPLY.string.text
-msgid "Apply"
-msgstr "Taikyti"
-
-#: dialog.src#STR_TABPAGE_MANAGESTYLES.string.text
-msgid "Organizer"
-msgstr "Stiliaus savybės"
-
-#: dialog.src#MSG_TABPAGE_INVALIDNAME.infobox.text
-msgid "This name is already in use."
-msgstr "Toks pavadinimas jau yra."
-
-#: dialog.src#MSG_TABPAGE_INVALIDSTYLE.infobox.text
-msgid "This Style does not exist."
-msgstr "Tokio stiliaus nėra."
-
-#: dialog.src#MSG_TABPAGE_INVALIDPARENT.infobox.text
-msgid ""
-"This Style cannot be used as a base Style,\n"
-"because it would result in a recursive reference."
-msgstr ""
-"Šio stiliaus negalima naudoti kaip pagrindo stiliaus,\n"
-"nes taip gaunamas rekursinis kreipinys."
-
-#: dialog.src#MSG_POOL_STYLE_NAME.infobox.text
-msgid ""
-"Name already exists as a default Style.\n"
-"Please choose another name."
-msgstr ""
-"Šis pavadinimas jau parinktas numatytajam stiliui.\n"
-"Parinkite kitą vardą."
-
-#: dialog.src#STR_DELETE_STYLE.string.text
-msgid "Do you really want to delete Style $1?"
-msgstr "Ar tikrai pašalinti stilių „$1“?"
-
-#: dialog.src#STR_DELETE_STYLE_USED.string.text
-msgid "You are deleting an applied Style!\n"
-msgstr "Jūs šalinate pritaikytą stilių!\n"
-
-#: dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.menuitem.text
-msgid "New..."
-msgstr "Naujas..."
-
-#: dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.menuitem.text
-msgid "Modify..."
-msgstr "Keisti..."
-
-#: dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.menuitem.text
-msgid "Delete..."
-msgstr "Šalinti..."
-
-#: dialog.src#SID_NAVIGATOR.string.text
-msgid "Navigator"
-msgstr "Žvalgiklis"
-
-#: dialog.src#SID_TASKPANE.string.text
-msgid "Task Pane"
-msgstr ""
-
-#: dialog.src#MSG_ERROR_WRONG_CONFIRM.errorbox.text
-msgid "Faulty password confirmation"
-msgstr "Neteisingai pakartotas slaptažodis"
-
-#: dialog.src#STR_PDF_EXPORT_SEND.string.text
-msgid "Send"
-msgstr "Siųsti"
-
-#: dinfdlg.src#STR_SFX_NEWOFFICEDOC.string.text
-msgid "%PRODUCTNAME document"
-msgstr "„%PRODUCTNAME“ dokumentas"
-
-#: dinfdlg.src#TP_DOCINFODESC.FT_TITLE.fixedtext.text
-msgid "~Title"
-msgstr "~Pavadinimas"
-
-#: dinfdlg.src#TP_DOCINFODESC.FT_THEMA.fixedtext.text
-msgid "~Subject"
-msgstr "~Tema"
-
-#: dinfdlg.src#TP_DOCINFODESC.FT_KEYWORDS.fixedtext.text
-msgid "~Keywords"
-msgstr "~Reikšminiai žodžiai"
-
-#: dinfdlg.src#TP_DOCINFODESC.FT_COMMENT.fixedtext.text
-msgid "~Comments"
-msgstr "~Komentaras"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.fixedtext.text
-msgid "Type:"
-msgstr "Tipas:"
-
-#: dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.checkbox.text
-msgctxt "dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.checkbox.text"
-msgid "~Read-only"
-msgstr "~Tik skaitymui"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_FILE.fixedtext.text
-msgid "Location:"
-msgstr "Vieta:"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_FILE_SIZE.fixedtext.text
-msgid "Size:"
-msgstr "Dydis:"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_CREATE.fixedtext.text
-msgid "Created:"
-msgstr "Sukurta:"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_CHANGE.fixedtext.text
-msgid "Modified:"
-msgstr "Pakeista:"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_SIGNED.fixedtext.text
-msgid "Digitally signed:"
-msgstr "Skaitmeniškai pasirašyta:"
-
-#: dinfdlg.src#TP_DOCINFODOC.BTN_SIGNATURE.pushbutton.text
-msgid "Digital Signature..."
-msgstr "Skaitmeninis parašas..."
-
-#: dinfdlg.src#TP_DOCINFODOC.STR_MULTSIGNED.string.text
-msgid "Multiply signed document"
-msgstr "Keliskart pasirašytas dokumentas"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_PRINT.fixedtext.text
-msgid "Last printed:"
-msgstr "Spausdinta:"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_TIMELOG.fixedtext.text
-msgid "Total editing time:"
-msgstr "Bendras taisymo laikas:"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_DOCNO.fixedtext.text
-msgid "Revision number:"
-msgstr "Versija:"
-
-#: dinfdlg.src#TP_DOCINFODOC.BTN_DELETE.pushbutton.text
-msgid "Reset"
-msgstr "Atstatyti"
-
-#: dinfdlg.src#TP_DOCINFODOC.CB_USE_USERDATA.checkbox.text
-msgid "~Apply user data"
-msgstr "Įrašyti, kas ~modifikavo arba spausdino"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_TEMPL.fixedtext.text
-msgid "Template:"
-msgstr "Šablonas:"
-
-#: dinfdlg.src#TP_DOCINFODOC.STR_UNKNOWNSIZE.string.text
-msgid "unknown"
-msgstr "nežinomas"
-
-#: dinfdlg.src#TP_DOCINFODOC.EDIT_FILE_NAME.string.text
-msgid "File Name"
-msgstr ""
-
-#: dinfdlg.src#TP_DOCINFOUSER.BTN_EDITLABEL.pushbutton.text
-msgid "~Info fields..."
-msgstr "~Laukų vardai..."
-
-#: dinfdlg.src#TP_DOCINFORELOAD.RB_NOAUTOUPDATE.radiobutton.text
-msgid "Do not refresh automatically"
-msgstr "Automatiškai neatnaujinti"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.RB_RELOADUPDATE.radiobutton.text
-msgid "Refresh this document"
-msgstr "Atnaujinti šį dokumentą"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.FT_EVERY.fixedtext.text
-msgid "every"
-msgstr "kas"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.fixedtext.text
-msgctxt "dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.fixedtext.text"
-msgid "seconds"
-msgstr "sek."
-
-#: dinfdlg.src#TP_DOCINFORELOAD.RB_FORWARDUPDATE.radiobutton.text
-msgid "Redirect from this document"
-msgstr "Šį dokumentą peradresuoti"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.fixedtext.text
-msgid "after"
-msgstr "po"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.fixedtext.text
-msgctxt "dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.fixedtext.text"
-msgid "seconds"
-msgstr "sek."
-
-#: dinfdlg.src#TP_DOCINFORELOAD.FT_URL.fixedtext.text
-msgid "to URL"
-msgstr "~URL"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.FT_FRAME.fixedtext.text
-msgid "to frame"
-msgstr "į kadrą"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.STR_FORWARD_ERRMSSG.string.text
-msgid "If you select the option \"%PLACEHOLDER%\", you must enter a URL."
-msgstr "Pažymėjus parinktį „%PLACEHOLDER%“, reikės įvesti URL."
-
-#: dinfdlg.src#TP_CUSTOMPROPERTIES.FT_PROPERTIES.fixedtext.text
-msgid "~Properties"
-msgstr "~Savybės"
-
-#: dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.string.text
-msgid "Name"
-msgstr "Pavadinimas"
-
-#: dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.string.text
-msgid "Type"
-msgstr "Tipas"
-
-#: dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_VALUE.string.text
-msgid "Value"
-msgstr "Reikšmė"
-
-#: dinfdlg.src#TP_CUSTOMPROPERTIES.BTN_ADD.pushbutton.text
-msgid "~Add"
-msgstr "~Pridėti"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.combobox.text
-msgctxt "dinfdlg.src#SFX_CB_PROPERTY_NAME.combobox.text"
-msgid "-"
-msgstr "-"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.combobox.quickhelptext
-msgid "Property Name"
-msgstr "Savybės pavadinimas"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.1.stringlist.text
-msgid "Checked by"
-msgstr "Patikrino"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.2.stringlist.text
-msgid "Client"
-msgstr "Klientas"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.3.stringlist.text
-msgid "Date completed"
-msgstr "Baigimo data"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.4.stringlist.text
-msgid "Department"
-msgstr "Padalinys"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.5.stringlist.text
-msgid "Destinations"
-msgstr "Paskirtys"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.6.stringlist.text
-msgid "Disposition"
-msgstr "Dispozicija"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.7.stringlist.text
-msgid "Division"
-msgstr "Skyrius"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.8.stringlist.text
-msgid "Document number"
-msgstr "Dokumento numeris"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.9.stringlist.text
-msgid "Editor"
-msgstr "Redaktorius"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.10.stringlist.text
-msgid "E-Mail"
-msgstr "El. paštas"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.11.stringlist.text
-msgid "Forward to"
-msgstr "Persiųsti"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.12.stringlist.text
-msgid "Group"
-msgstr "Grupė"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.13.stringlist.text
-msgid "Info"
-msgstr "Informacija"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.14.stringlist.text
-msgid "Language"
-msgstr "Kalba"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.15.stringlist.text
-msgid "Mailstop"
-msgstr "Pašto dėžutė"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.16.stringlist.text
-msgid "Matter"
-msgstr "Dalykas"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.17.stringlist.text
-msgid "Office"
-msgstr "Biuras"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.18.stringlist.text
-msgid "Owner"
-msgstr "Savininkas"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.19.stringlist.text
-msgid "Project"
-msgstr "Projektas"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.20.stringlist.text
-msgid "Publisher"
-msgstr "Leidėjas"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.21.stringlist.text
-msgid "Purpose"
-msgstr "Paskirtis"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.22.stringlist.text
-msgid "Received from"
-msgstr "Gauta nuo"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.23.stringlist.text
-msgid "Recorded by"
-msgstr "Įrašė"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.24.stringlist.text
-msgid "Recorded date"
-msgstr "Įrašymo data"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.25.stringlist.text
-msgid "Reference"
-msgstr "Nuoroda"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.26.stringlist.text
-msgid "Source"
-msgstr "Šaltinis"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.27.stringlist.text
-msgid "Status"
-msgstr "Būsena"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.28.stringlist.text
-msgid "Telephone number"
-msgstr "Telefono numeris"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.29.stringlist.text
-msgid "Typist"
-msgstr "Surinko"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.30.stringlist.text
-msgid "URL"
-msgstr "URL adresas"
-
-#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.1.stringlist.text
-msgid "Text"
-msgstr "Tekstas"
-
-#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.2.stringlist.text
-msgid "DateTime"
-msgstr ""
-
-#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.3.stringlist.text
-msgid "Date"
-msgstr "Data"
-
-#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.4.stringlist.text
-msgctxt "dinfdlg.src#SFX_LB_PROPERTY_TYPE.4.stringlist.text"
-msgid "Duration"
-msgstr ""
-
-#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.5.stringlist.text
-msgid "Number"
-msgstr "Skaičius"
-
-#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.6.stringlist.text
-msgid "Yes or no"
-msgstr "Taip arba ne"
-
-#: dinfdlg.src#SFX_ST_DURATION_FORMAT.string.text
-msgid " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
-msgstr ""
-
-#: dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.radiobutton.text
-msgid "Yes"
-msgstr "Taip"
-
-#: dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_NO.radiobutton.text
-msgid "No"
-msgstr "Ne"
-
-#: dinfdlg.src#SFX_PB_PROPERTY_REMOVE.imagebutton.text
-msgctxt "dinfdlg.src#SFX_PB_PROPERTY_REMOVE.imagebutton.text"
-msgid "-"
-msgstr "-"
-
-#: dinfdlg.src#SFX_PB_PROPERTY_REMOVE.imagebutton.quickhelptext
-msgid "Remove Property"
-msgstr "Šalinti savybę"
-
-#: dinfdlg.src#SFX_QB_WRONG_TYPE.querybox.text
-msgid ""
-"The value entered does not match the specified type.\n"
-"The value will be stored as text."
-msgstr ""
-"Įvesta reikšmė neatitinka nurodyto tipo.\n"
-"Reikšmė bus įrašyta tekstu."
-
-#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.pageitem.text
-msgid "General"
-msgstr "Bendrosios"
-
-#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.pageitem.text
-msgid "Description"
-msgstr "Aprašymas"
-
-#: dinfdlg.src#SID_DOCINFO.1.TP_CUSTOMPROPERTIES.pageitem.text
-msgid "Custom Properties"
-msgstr "Kitos savybės"
-
-#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.pageitem.text
-msgid "Internet"
-msgstr "Internetas"
-
-#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFOSECURITY.pageitem.text
-msgid "Security"
-msgstr ""
-
-#: dinfdlg.src#SID_DOCINFO.tabdialog.text
-msgid "Properties of "
-msgstr "Savybės: "
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.FL_DURATION.fixedline.text
-msgctxt "dinfdlg.src#RID_EDIT_DURATIONS.FL_DURATION.fixedline.text"
-msgid "Duration"
-msgstr ""
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.CB_NEGATIVE.checkbox.text
-msgid "~Negative"
-msgstr ""
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.FT_YEAR.fixedtext.text
-msgid "~Years"
-msgstr ""
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.FT_MONTH.fixedtext.text
-msgid "~Months"
-msgstr ""
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.FT_DAY.fixedtext.text
-msgid "~Days"
-msgstr ""
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.FT_HOUR.fixedtext.text
-msgid "H~ours"
-msgstr ""
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.FT_MINUTE.fixedtext.text
-msgid "Min~utes"
-msgstr ""
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.FT_SECOND.fixedtext.text
+#: source/appl/app.src#GID_MACRO.String.Text
 #, fuzzy
-msgid "~Seconds"
-msgstr "sek."
+msgid  "BASIC"
+msgstr "„BASIC“"
 
-#: dinfdlg.src#RID_EDIT_DURATIONS.FT_MSECOND.fixedtext.text
-msgid "Millise~conds"
-msgstr ""
+#: source/appl/app.src#GID_OPTIONS.String.Text
+#, fuzzy
+msgid  "Options"
+msgstr "Parinktys"
 
-#: dinfdlg.src#RID_EDIT_DURATIONS.modaldialog.text
-msgid "Edit Duration"
-msgstr ""
+#: source/appl/app.src#GID_MATH.String.Text
+#, fuzzy
+msgid  "Math"
+msgstr "Matematinė rengyklė"
 
-#: dinfedt.src#DLG_DOCINFO_EDT.FL_INFO.fixedline.text
-msgid "Names"
-msgstr "Vardai"
+#: source/appl/app.src#GID_NAVIGATOR.String.Text
+#, fuzzy
+msgid  "Navigate"
+msgstr "Žvalgyti"
 
-#: dinfedt.src#DLG_DOCINFO_EDT.modaldialog.text
-msgid "Edit Field Names"
-msgstr "Laukų vardų redagavimas"
-
-#: filedlghelper.src#STR_SFX_FILEDLG_ACTUALVERSION.string.text
-msgid "Current version"
-msgstr "Dabartinė versija"
-
-#: filedlghelper.src#STR_SFX_EXPLORERFILE_EXPORT.string.text
-msgid "Export"
-msgstr "Eksportas"
-
-#: filedlghelper.src#STR_SFX_EXPLORERFILE_INSERT.string.text
-msgid "Insert"
+#: source/appl/app.src#GID_INSERT.String.Text
+#, fuzzy
+msgid  "Insert"
 msgstr "Įterpimas"
 
-#: filedlghelper.src#STR_SFX_EXPLORERFILE_BUTTONINSERT.string.text
-msgid "~Insert"
-msgstr "~Įterpti"
-
-#: filedlghelper.src#STR_SFX_IMPORT_ALL.string.text
-msgid "<All formats>"
-msgstr "<Visi formatai>"
-
-#: filedlghelper.src#STR_CB_AUTO_EXTENSION.string.text
-msgid "~Automatic file name extension"
-msgstr "~Failo prievardį parenka programa"
-
-#: filedlghelper.src#STR_CB_SELECTION.string.text
-msgid "~Selection"
-msgstr "~Atranka"
-
-#: filedlghelper.src#STR_CB_INSERT_AS_LINK.string.text
-msgid "~Link"
-msgstr "~Saitas"
-
-#: filedlghelper.src#STR_CB_SHOW_PREVIEW.string.text
-msgid "Pr~eview"
-msgstr "Per~žiūra"
-
-#: filedlghelper.src#STR_CB_READONLY.string.text
-msgctxt "filedlghelper.src#STR_CB_READONLY.string.text"
-msgid "~Read-only"
-msgstr "~Tik skaitymui"
-
-#: filedlghelper.src#STR_CB_PASSWORD.string.text
-msgid "Save with ~password"
-msgstr "Įrašyti su ~slaptažodžiu"
-
-#: filedlghelper.src#STR_CB_FILTER_OPTIONS.string.text
-msgid "Edit ~filter settings"
-msgstr "Taisyti ~filtro nuostatas"
-
-#: filedlghelper.src#STR_PB_PLAY.string.text
-msgid "~Play"
-msgstr "~Groti"
-
-#: filedlghelper.src#STR_PB_STOP.string.text
-msgid "Sto~p"
-msgstr "~Stabdyti"
-
-#: filedlghelper.src#STR_PB_OPEN.string.text
-msgid "~Open"
-msgstr "~Atverti"
-
-#: filedlghelper.src#STR_PB_SAVE.string.text
-msgid "~Save"
-msgstr "Į~rašyti"
-
-#: filedlghelper.src#STR_LB_IMAGE_TEMPLATE.string.text
-msgid "Style:"
-msgstr "Stilius:"
-
-#: filedlghelper.src#STR_LB_TEMPLATES.string.text
-msgid "~Templates:"
-msgstr "~Šablonai:"
-
-#: filedlghelper.src#STR_LB_VERSION.string.text
-msgid "~Version:"
-msgstr "~Versija:"
-
-#: mailwindow.src#RID_ERRBOX_MAIL_CONFIG.errorbox.text
-msgid ""
-"%PRODUCTNAME was unable to find a working e-mail configuration. Please save "
-"this document locally instead and attach it from within your e-mail client."
-msgstr ""
-"„%PRODUCTNAME“ nerado tinkamos el. pašto sąrankos. Įrašykite dokumentą į "
-"kompiuterio diską ir išsiųskite naudodamiesi el. pašto programa."
-
-#: mgetempl.src#TP_MANAGE_STYLES.FT_NAME.fixedtext.text
-msgid "~Name"
-msgstr "~Pavadinimas"
-
-#: mgetempl.src#TP_MANAGE_STYLES.CB_AUTO.checkbox.text
-msgid "~AutoUpdate"
-msgstr "~Automatinis duomenų atnaujinimas"
-
-#: mgetempl.src#TP_MANAGE_STYLES.FT_NEXT.fixedtext.text
-msgid "Ne~xt Style"
-msgstr "~Kitas stilius"
-
-#: mgetempl.src#TP_MANAGE_STYLES.FT_BASE.fixedtext.text
-msgid "Linked with"
-msgstr "Susietas su"
-
-#: mgetempl.src#TP_MANAGE_STYLES.FT_REGION.fixedtext.text
+#: source/appl/app.src#GID_FORMAT.String.Text
 #, fuzzy
-msgid "~Category"
-msgstr "~Kategorija"
+msgid  "Format"
+msgstr "Formatas"
 
-#: mgetempl.src#TP_MANAGE_STYLES.GB_DESC.fixedline.text
-msgid "Contains"
-msgstr "Parametrai"
-
-#: newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.FL_COL.fixedline.text
-msgid "Style name"
-msgstr "Stiliaus pavadinimas"
-
-#: newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MSG_OVERWRITE.querybox.text
+#: source/appl/app.src#GID_TEMPLATE.String.Text
 #, fuzzy
-msgid "Style already exists. Overwrite?"
-msgstr "Toks stilius jau yra. Perrašyti?"
+msgid  "Templates"
+msgstr "Šablonai"
 
-#: newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.modaldialog.text
-msgid "Create Style"
-msgstr "Kurti stilių"
-
-#: passwd.src#DLG_PASSWD.FT_PASSWD_USER.fixedtext.text
-msgid "~User"
-msgstr "~Naudotojas"
-
-#: passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD.fixedtext.text
+#: source/appl/app.src#GID_TEXT.String.Text
 #, fuzzy
-msgid "~Password"
-msgstr "~Slaptažodis"
+msgid  "Text"
+msgstr "Tekstas"
 
-#: passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM.fixedtext.text
-msgid "~Confirm"
-msgstr "~Pakartoti"
-
-#: passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.fixedline.text
+#: source/appl/app.src#GID_FRAME.String.Text
 #, fuzzy
-msgctxt "passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.fixedline.text"
-msgid "Password"
-msgstr "Slaptažodis"
+msgid  "Frame"
+msgstr "Kadras"
 
-#: passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD2.fixedtext.text
+#: source/appl/app.src#GID_GRAPHIC.String.Text
 #, fuzzy
-msgid "P~assword"
-msgstr "Slaptažodis"
+msgid  "Graphic"
+msgstr "Paveikslas"
 
-#: passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM2.fixedtext.text
+#: source/appl/app.src#GID_TABLE.String.Text
 #, fuzzy
-msgid "Confir~m"
-msgstr "~Pakartoti"
+msgid  "Table"
+msgstr "Lentelė"
 
-#: passwd.src#DLG_PASSWD.TEXT_PASSWD.string.text
+#: source/appl/app.src#GID_ENUMERATION.String.Text
 #, fuzzy
-msgctxt "passwd.src#DLG_PASSWD.TEXT_PASSWD.string.text"
-msgid "Password"
-msgstr "Slaptažodis"
+msgid  "Numbering"
+msgstr "Numeravimas"
 
-#: passwd.src#DLG_PASSWD.modaldialog.text
-msgid "Enter Password"
-msgstr "Slaptažodis"
+#: source/appl/app.src#GID_DATA.String.Text
+#, fuzzy
+msgid  "Data"
+msgstr "Duomenys"
 
-#: printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.fixedline.text
-msgid "Reduce print data"
-msgstr "Spausdinsimų duomenų ribojimai"
+#: source/appl/app.src#GID_SPECIAL.String.Text
+#, fuzzy
+msgid  "Special Functions"
+msgstr "Specialiosios funkcijos"
 
-#: printopt.src#TP_COMMONPRINTOPTIONS.FT_OUTPUTTYPE.fixedtext.text
-msgid "Settings for"
-msgstr "Išvedimas į"
+#: source/appl/app.src#GID_IMAGE.String.Text
+#, fuzzy
+msgid  "Image"
+msgstr "Paveikslas"
 
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTEROUTPUT.radiobutton.text
-msgid "~Printer"
-msgstr "~spausdintuvą"
+#: source/appl/app.src#GID_CHART.String.Text
+#, fuzzy
+msgid  "Chart"
+msgstr "Diagrama"
 
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTFILEOUTPUT.radiobutton.text
-msgid "Print to ~file"
-msgstr "~failą"
+#: source/appl/app.src#GID_EXPLORER.String.Text
+#, fuzzy
+msgid  "Explorer"
+msgstr "„Explorer“"
 
-#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCETRANSPARENCY.checkbox.text
-msgid "~Reduce transparency"
-msgstr "S~umažinti skaidrumą"
+#: source/appl/app.src#GID_CONNECTOR.String.Text
+#, fuzzy
+msgid  "Connector"
+msgstr "Jungiamoji linija"
 
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_AUTO.radiobutton.text
-msgid "Auto~matically"
-msgstr "Au~tomatiškai"
+#: source/appl/app.src#GID_MODIFY.String.Text
+#, fuzzy
+msgid  "Modify"
+msgstr "Keisti"
 
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_NONE.radiobutton.text
-msgid "~No transparency"
-msgstr "~Neskaidru"
+#: source/appl/app.src#GID_DRAWING.String.Text
+#, fuzzy
+msgid  "Drawing"
+msgstr "Brėžinys"
 
-#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEGRADIENTS.checkbox.text
-msgid "Reduce ~gradients"
-msgstr "Sumažinti ~gradientą"
+#: source/appl/app.src#GID_CONTROLS.String.Text
+#, fuzzy
+msgid  "Controls"
+msgstr "Valdiklio elementai"
 
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_STRIPES.radiobutton.text
-msgid "Gradient ~stripes"
-msgstr "Gradiento ~juostos"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_COLOR.radiobutton.text
-msgid "Intermediate ~color"
-msgstr "Pereinama ~spalva"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS.checkbox.text
-msgid "Reduce ~bitmaps"
-msgstr "Keisti ~kokybę"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_OPTIMAL.radiobutton.text
-msgid "~High print quality"
-msgstr "Au~kšta spausdinimo kokybė"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_NORMAL.radiobutton.text
-msgid "N~ormal print quality"
-msgstr "Į~prasta spausdinimo kokybė"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_RESOLUTION.radiobutton.text
-msgid "Reso~lution"
-msgstr "Skiriamoji g~eba"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.1.stringlist.text
-msgid "72 DPI"
-msgstr "72 DPI"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.2.stringlist.text
-msgid "96 DPI"
-msgstr "96 DPI"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.3.stringlist.text
-msgid "150 DPI (Fax)"
-msgstr "150 DPI (faksograma)"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.4.stringlist.text
-msgid "200 DPI (default)"
-msgstr "200 DPI (numatytasis)"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.5.stringlist.text
-msgid "300 DPI"
-msgstr "300 DPI"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.6.stringlist.text
-msgid "600 DPI"
-msgstr "600 DPI"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS_TRANSPARENCY.checkbox.text
-msgid "Include transparent ob~jects"
-msgstr "Įtraukti skai~drius objektus"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.CB_CONVERTTOGREYSCALES.checkbox.text
-msgid "Con~vert colors to grayscale"
-msgstr "Kon~vertuoti spalvas į pilkuosius atspalvius"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.GB_PRINT_WARN.fixedline.text
-msgid "Printer warnings"
-msgstr "Spausdintuvo pranešimai"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERSIZE.checkbox.text
-msgid "P~aper size"
-msgstr "~Lapo dydis"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERORIENTATION.checkbox.text
-msgid "Pap~er orientation"
-msgstr "~Lapo padėtis"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.CB_TRANSPARENCY.checkbox.text
-msgid "~Transparency"
-msgstr "Skaidru~mas"
-
-#: printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.fixedtext.text
-msgid ""
-"Your document contains transparent objects.\n"
-"This may lead to longer printing time on certain\n"
-"printers. Should the aspect of transparency\n"
-"be reduced?"
-msgstr ""
-"Dokumente yra skaidrių objektų.\n"
-"Tai gali pailginti spausdinimo laiką naudojantis kai kuriais\n"
-"spausdintuvais. Ar sumažinti skaidrumą?\n"
-
-#: printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.okbutton.text
-msgid "~Yes"
-msgstr "~Taip"
-
-#: printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_NO.pushbutton.text
-msgid "~No"
-msgstr "~Ne"
-
-#: printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_CANCEL.cancelbutton.text
-msgid "~Cancel"
-msgstr "~Atsisakyti"
-
-#: printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.checkbox.text
-msgid "~Do not show warning again"
-msgstr "~Daugiau nerodyti šio įspėjimo"
-
-#: printopt.src#RID_WARN_PRINTTRANSPARENCY.modaldialog.text
-msgid "Warning"
-msgstr "Įspėjimas"
-
-#: recfloat.src#SID_RECORDING_FLOATWINDOW.floatingwindow.text
-msgid "Record Macro"
-msgstr "Įrašyti makrokomandą"
-
-#: recfloat.src#STR_MACRO_LOSS.string.text
-msgid ""
-"Do you really want to cancel the recording? Any steps recorded up to this "
-"point will be lost."
-msgstr "Ar tikrai atšaukti įrašymą? Iki šiol įrašyti duomenys nebus išsaugoti."
-
-#: recfloat.src#STR_CANCEL_RECORDING.string.text
-msgid "Cancel Recording"
-msgstr "Atšaukti įrašymą"
-
-#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FL.fixedline.text
-msgid "File encryption password"
+#: source/appl/app.src#MSG_CANT_QUIT.InfoBox.Message
+msgid  "The application cannot be terminated at the moment.\nPlease wait until all print jobs and/or\nOLE actions have finished and close all dialogs."
 msgstr ""
 
-#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FT.fixedtext.text
-msgid "~Enter password to open"
+#: source/appl/app.src#STR_ISMODIFIED.String.Text
+#, fuzzy
+msgid  "Do you want to save the changes to %1?"
+msgstr "Ar įrašyti pakeitimus į „%1“?"
+
+#: source/appl/app.src#STR_QUITAPP.String.Text
+#, fuzzy
+msgid  "E~xit"
+msgstr "~Baigti darbą su „OpenOffice.org“"
+
+#: source/appl/app.src#RID_STR_HELP.String.Text
+#, fuzzy
+msgid  "Help"
+msgstr "Žinynas"
+
+#: source/appl/app.src#RID_STR_NOAUTOSTARTHELPAGENT.String.Text
+#, fuzzy
+msgid  "No automatic start at 'XX'"
+msgstr "„XX“ nepaleidžiama automatiškai"
+
+#: source/appl/app.src#RID_HELPBAR.String.Text
+#, fuzzy
+msgid  "Help Bar"
+msgstr "Žinyno juosta"
+
+#: source/appl/app.src#RID_STR_HLPFILENOTEXIST.String.Text
+#, fuzzy
+msgid  "The help file for this topic is not installed."
+msgstr "Žinyno failas šiai temai neįdiegtas."
+
+#: source/appl/app.src#RID_ENVTOOLBOX.String.Text
+#, fuzzy
+msgid  "Function Bar"
+msgstr "Standartinė juosta"
+
+#: source/appl/app.src#RID_SPECIALCONFIG_ERROR.String.Text
+msgid  "An error has occurred in the special configuration.\nPlease contact your administrator."
 msgstr ""
 
-#: securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_OPEN_FT.fixedtext.text
-msgid "~Reenter password to open"
+#: source/appl/app.src#STR_QUICKSTART_EXIT.String.Text
+#, fuzzy
+msgid  "Exit Quickstarter"
+msgstr "Baigti sparčiąją paleistį"
+
+#: source/appl/app.src#STR_QUICKSTART_TIP.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME %PRODUCTVERSION Quickstarter"
+msgstr "„%PRODUCTNAME %PRODUCTVERSION“ sparčioji paleistis"
+
+#: source/appl/app.src#STR_QUICKSTART_FILEOPEN.String.Text
+#, fuzzy
+msgid  "Open Document..."
+msgstr "Atverti dokumentą..."
+
+#: source/appl/app.src#STR_QUICKSTART_FROMTEMPLATE.String.Text
+#, fuzzy
+msgid  "From Template..."
+msgstr "Dokumentas iš šablono..."
+
+#: source/appl/app.src#STR_QUICKSTART_PRELAUNCH.String.Text
+#, fuzzy
+msgid  "Load %PRODUCTNAME During System Start-Up"
+msgstr "Įkelti „%PRODUCTNAME“ paleidus sistemą"
+
+#: source/appl/app.src#STR_QUICKSTART_PRELAUNCH_UNX.String.Text
+msgid  "Disable Quickstarter"
 msgstr ""
 
-#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FL.fixedline.text
-msgid "File sharing password"
+#: source/appl/app.src#STR_QUICKSTART_LNKNAME.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "„%PRODUCTNAME %PRODUCTVERSION“"
+
+#: source/appl/app.src#STR_QUICKSTART_FILE.String.Text
+#, fuzzy
+msgid  "File"
+msgstr "Failas"
+
+#: source/appl/app.src#STR_QUICKSTART_STARTCENTER.String.Text
+#, fuzzy
+msgid  "Startcenter"
+msgstr "Pradžios langas"
+
+#: source/appl/app.src#STR_QUICKSTART_RECENTDOC.String.Text
+msgid  "Recent Documents"
 msgstr ""
 
-#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FT.fixedtext.text
-msgid "Enter password to modify"
+#: source/appl/app.src#STR_QUERY_UPDATE_LINKS.String.Text
+#, fuzzy
+msgid  "Update all links?"
+msgstr "Atnaujinti visus saitus?"
+
+#: source/appl/app.src#STR_DDE_ERROR.String.Text
+#, fuzzy
+msgid  "DDE link to % for % area % are not available."
+msgstr "Srities % failo % DDE saitas su % yra negalimas."
+
+#: source/appl/app.src#RID_SECURITY_WARNING_HYPERLINK.WarningBox.Message
+msgid  "This hyperlink is going to open "%s". Do you want to proceed?"
 msgstr ""
 
-#: securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_MODIFY_FT.fixedtext.text
-msgid "Reenter password to modify"
+#: source/appl/app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.WarningBox.Message
+msgid  "For security reasons, the hyperlink cannot be executed.\nThe stated address will not be opened."
 msgstr ""
 
-#: securitypage.src#TP_DOCINFOSECURITY.OPTIONS_FL.fixedline.text
-msgid "File sharing options"
+#: source/appl/app.src#RID_SECURITY_WARNING_TITLE.String.Text
+#, fuzzy
+msgid  "Security Warning"
+msgstr "Saugumo įspėjimas"
+
+#: source/appl/app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.QueryBox.Message
+msgid  "Saving will remove all existing signatures.\nDo you want to continue saving the document?"
 msgstr ""
 
-#: securitypage.src#TP_DOCINFOSECURITY.OPEN_READONLY_CB.checkbox.text
-msgid "~Open file read-only"
+#: source/appl/app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.QueryBox.Message
+msgid  "The document has to be saved before it can be signed.\nDo you want to save the document?"
 msgstr ""
 
-#: securitypage.src#TP_DOCINFOSECURITY.RECORD_CHANGES_CB.checkbox.text
-msgid "Record ~changes"
+#: source/appl/app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.InfoBox.Message
+msgid  "This document must be saved in OpenDocument file format before it can be digitally signed."
 msgstr ""
 
-#: securitypage.src#TP_DOCINFOSECURITY.STR_PROTECT.string.text
-msgid "~Protect..."
+#: source/appl/app.src#RID_XMLSEC_DOCUMENTSIGNED.String.Text
+#, fuzzy
+msgid  " (Signed)"
+msgstr "(Pasirašytas)"
+
+#: source/appl/app.src#STR_STANDARD.String.Text
+#, fuzzy
+msgid  "Standard"
+msgstr "Įprastas"
+
+#: source/appl/app.src#RID_SVXSTR_FILELINK.String.Text
+#, fuzzy
+msgid  "Document"
+msgstr "Dokumentai"
+
+#: source/appl/app.src#STR_NONE.String.Text
+#, fuzzy
+msgid  "- None -"
+msgstr "- Nėra -"
+
+#: source/appl/app.src#RID_SVXSTR_GRAFIKLINK.String.Text
+#, fuzzy
+msgid  "Graphic"
+msgstr "Paveikslas"
+
+#: source/appl/app.src#STR_SFX_FILTERNAME_ALL.String.Text
+#, fuzzy
+msgid  "All files (*.*)"
+msgstr "Visi failai (*.*)"
+
+#: source/appl/app.src#RID_SVXSTR_EDITGRFLINK.String.Text
+msgid  "Link graphics"
 msgstr ""
 
-#: securitypage.src#TP_DOCINFOSECURITY.STR_UNPROTECT.string.text
-msgid "~Unprotect..."
+#: source/appl/app.src#STR_ERRUNOEVENTBINDUNG.String.Text
+msgid  "An appropriate component method %1\ncould not be found.\n\nCheck spelling of method name."
 msgstr ""
 
-#: securitypage.src#TP_DOCINFOSECURITY.STR_END_REDLINING_WARNING.string.text
-msgid ""
-"This action will exit the change recording mode.\n"
-"Any information about changes will be lost.\n"
-"\n"
-"Exit change recording mode?\n"
-"\n"
+#: source/appl/app.src#RID_SVXSTR_GRFILTER_OPENERROR.String.Text
+msgid  "Graphics file cannot be opened"
 msgstr ""
 
-#: securitypage.src#RID_SFX_PROTECT_RECORDS.string.text
-msgid "Protect Records"
+#: source/appl/app.src#RID_SVXSTR_GRFILTER_IOERROR.String.Text
+msgid  "Graphics file cannot be read"
 msgstr ""
 
-#: securitypage.src#RID_SFX_UNPROTECT_RECORDS.string.text
-msgid "Unprotect Records"
+#: source/appl/app.src#RID_SVXSTR_GRFILTER_FORMATERROR.String.Text
+msgid  "Unknown graphics format"
 msgstr ""
 
-#: securitypage.src#RID_SFX_INCORRECT_PASSWORD.string.text
-msgid "Incorrect password"
+#: source/appl/app.src#RID_SVXSTR_GRFILTER_VERSIONERROR.String.Text
+msgid  "This version of the graphics file is not supported"
 msgstr ""
 
-#: srchdlg.src#RID_DLG_SEARCH.FT_SEARCH.fixedtext.text
-msgid "~Search for"
-msgstr "Ko ~ieškoti:"
+#: source/appl/app.src#RID_SVXSTR_GRFILTER_FILTERERROR.String.Text
+msgid  "Graphics filter not found"
+msgstr ""
 
-#: srchdlg.src#RID_DLG_SEARCH.CB_WHOLEWORDS.checkbox.text
-msgid "~Whole words only"
-msgstr "~Tik ištisi žodžiai"
+#: source/appl/app.src#RID_SVXSTR_GRFILTER_TOOBIG.String.Text
+msgid  "Not enough memory to insert graphic"
+msgstr ""
 
-#: srchdlg.src#RID_DLG_SEARCH.CB_MATCHCASE.checkbox.text
-msgid "~Match case"
-msgstr "~Skirti didžiąsias ir mažąsias raides"
+#: source/appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_CONTENTS.PageItem.Text
+#, fuzzy
+msgid  "Contents"
+msgstr "Turinys"
 
-#: srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.checkbox.text
-msgctxt "srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.checkbox.text"
-msgid "Wrap ~around"
-msgstr "Lau~žyti tekstą"
+#: source/appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_INDEX.PageItem.Text
+#, fuzzy
+msgid  "Index"
+msgstr "Rodyklė"
 
-#: srchdlg.src#RID_DLG_SEARCH.CB_BACKWARDS.checkbox.text
-msgid "~Backwards"
-msgstr "Pradžios link"
+#: source/appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_SEARCH.PageItem.Text
+#, fuzzy
+msgid  "Find"
+msgstr "Paieška"
 
-#: srchdlg.src#RID_DLG_SEARCH.PB_FIND.pushbutton.text
-msgid "~Find"
+#: source/appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_BOOKMARKS.PageItem.Text
+#, fuzzy
+msgid  "Bookmarks"
+msgstr "Žymelės"
+
+#: source/appl/newhelp.src#TP_HELP_INDEX.FT_EXPRESSION.FixedText.Text
+#, fuzzy
+msgid  "~Search term"
+msgstr "~Paieškos frazė"
+
+#: source/appl/newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.PushButton.Text
+#, fuzzy
+msgid  "~Display"
+msgstr "~Rodyti"
+
+#: source/appl/newhelp.src#TP_HELP_SEARCH.FT_SEARCH.FixedText.Text
+#, fuzzy
+msgid  "S~earch term"
+msgstr "P~aieškos terminas"
+
+#: source/appl/newhelp.src#TP_HELP_SEARCH.PB_SEARCH.PushButton.Text
+#, fuzzy
+msgid  "~Find"
 msgstr "~Ieškoti"
 
-#: srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.cancelbutton.text
-msgctxt "srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.cancelbutton.text"
-msgid "~Close"
-msgstr "~Užverti"
+#: source/appl/newhelp.src#TP_HELP_SEARCH.CB_FULLWORDS.CheckBox.Text
+#, fuzzy
+msgid  "~Complete words only"
+msgstr "Ieškoti ~tik ištisų žodžių"
 
-#: srchdlg.src#RID_DLG_SEARCH.STR_TOGGLE.string.text
-msgctxt "srchdlg.src#RID_DLG_SEARCH.STR_TOGGLE.string.text"
-msgid "Wrap ~around"
-msgstr "Lau~žyti tekstą"
+#: source/appl/newhelp.src#TP_HELP_SEARCH.CB_SCOPE.CheckBox.Text
+#, fuzzy
+msgid  "Find in ~headings only"
+msgstr "Ieškoti tik ~antraštėse"
 
-#: srchdlg.src#RID_DLG_SEARCH.modelessdialog.text
-msgid "Find on this Page"
-msgstr "Ieškoti šiame puslapyje"
+#: source/appl/newhelp.src#TP_HELP_SEARCH.PB_OPEN_SEARCH.PushButton.Text
+#, fuzzy
+msgid  "~Display"
+msgstr "~Rodyti"
 
-#: taskpane.src#STR_SFX_DOCK.string.text
-msgid "Dock"
+#: source/appl/newhelp.src#TP_HELP_BOOKMARKS.FT_BOOKMARKS.FixedText.Text
+#, fuzzy
+msgid  "~Bookmarks"
+msgstr "~Žymelės"
+
+#: source/appl/newhelp.src#TP_HELP_BOOKMARKS.PB_BOOKMARKS.PushButton.Text
+#, fuzzy
+msgid  "~Display"
+msgstr "~Rodyti"
+
+#: source/appl/newhelp.src#STR_HELP_WINDOW_TITLE.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Help"
+msgstr "„%PRODUCTNAME“ žinynas"
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_INDEX_ON.String.Text
+#, fuzzy
+msgid  "Show Navigation Pane"
+msgstr "Rodyti žvalgiklio langą"
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_INDEX_OFF.String.Text
+#, fuzzy
+msgid  "Hide Navigation Pane"
+msgstr "Paslėpti žvalgiklio langą"
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_START.String.Text
+#, fuzzy
+msgid  "First Page"
+msgstr "Pirmas puslapis"
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_PREV.String.Text
+#, fuzzy
+msgid  "Previous Page"
+msgstr "Ankstesnis puslapis"
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_NEXT.String.Text
+#, fuzzy
+msgid  "Next Page"
+msgstr "Paskesnis puslapis"
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_PRINT.String.Text
+#, fuzzy
+msgid  "Print..."
+msgstr "Spausdinti.."
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_ADDBOOKMARK.String.Text
+#, fuzzy
+msgid  "Add to Bookmarks..."
+msgstr "Pridėti žymelę..."
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_SEARCHDIALOG.String.Text
+#, fuzzy
+msgid  "Find on this Page..."
+msgstr "Ieškoti šiame puslapyje..."
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_SOURCEVIEW.String.Text
+#, fuzzy
+msgid  "HTML Source"
+msgstr "HTML šaltinis"
+
+#: source/appl/newhelp.src#STR_HELP_FIRST_MESSAGE.String.Text
+#, fuzzy
+msgid  "The Help is being started..."
+msgstr "Žinynas paleidžiamas..."
+
+#: source/appl/newhelp.src#STR_HELP_MENU_TEXT_SELECTION_MODE.String.Text
+#, fuzzy
+msgid  "Select Text"
+msgstr "Žymėti tekstą"
+
+#: source/appl/newhelp.src#STR_HELP_MENU_TEXT_COPY.String.Text
+#, fuzzy
+msgid  "~Copy"
+msgstr "~Kopijuoti"
+
+#: source/appl/newhelp.src#DLG_HELP_ADDBOOKMARK.ModalDialog.Text
+#, fuzzy
+msgid  "Add to Bookmarks"
+msgstr "Pridėti žymelę"
+
+#: source/appl/newhelp.src#DLG_HELP_ADDBOOKMARK.FT_BOOKMARK_TITLE.FixedText.Text
+#, fuzzy
+msgid  "Bookmark:"
+msgstr "Pavadinimas"
+
+#: source/appl/newhelp.src#DLG_HELP_ADDBOOKMARK.STR_BOOKMARK_RENAME.String.Text
+#, fuzzy
+msgid  "Rename Bookmark"
+msgstr "Pervadinti žymelę"
+
+#: source/appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_OPEN.MenuItem.Text
+#, fuzzy
+msgid  "Display"
+msgstr "Rodyti"
+
+#: source/appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_RENAME.MenuItem.Text
+#, fuzzy
+msgid  "Rename..."
+msgstr "Pervadinti..."
+
+#: source/appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_DELETE.MenuItem.Text
+#, fuzzy
+msgid  "Delete"
+msgstr "Šalinti"
+
+#: source/appl/newhelp.src#RID_INFO_NOSEARCHRESULTS.InfoBox.Message
+#, fuzzy
+msgid  "No topics found."
+msgstr "Temų nerasta."
+
+#: source/appl/newhelp.src#RID_INFO_NOSEARCHTEXTFOUND.InfoBox.Message
+#, fuzzy
+msgid  "The text you entered was not found."
+msgstr "Ieškomo teksto nerasta."
+
+#: source/appl/newhelp.src#RID_HELP_ONSTARTUP_TEXT.String.Text
+#, fuzzy
+msgid  "~Display %PRODUCTNAME %MODULENAME Help at Startup"
+msgstr "~Atverti „%PRODUCTNAME %MODULENAME“ žinyną paleidžiant"
+
+#: source/bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.String.Text
+msgid  "The selected filter $(FILTER) has not been installed.\nWould you like to do this now?"
 msgstr ""
 
-#: taskpane.src#STR_SFX_UNDOCK.string.text
-msgid "Undock"
+#: source/bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.String.Text
+msgid  "The selected filter $(FILTER) is not included in your edition.\nYou can find information about orders on our homepage."
 msgstr ""
 
-#: taskpane.src#STR_SFX_TASK_PANE_VIEW.string.text
-msgid "View"
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FixedLine.Text
+#, fuzzy
+msgid  "Reduce print data"
+msgstr "Spausdinsimų duomenų ribojimai"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.FT_OUTPUTTYPE.FixedText.Text
+#, fuzzy
+msgid  "Settings for"
+msgstr "Išvedimas į"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTEROUTPUT.RadioButton.Text
+#, fuzzy
+msgid  "~Printer"
+msgstr "~spausdintuvą"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTFILEOUTPUT.RadioButton.Text
+#, fuzzy
+msgid  "Print to ~file"
+msgstr "~failą"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCETRANSPARENCY.CheckBox.Text
+#, fuzzy
+msgid  "~Reduce transparency"
+msgstr "S~umažinti skaidrumą"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_AUTO.RadioButton.Text
+#, fuzzy
+msgid  "Auto~matically"
+msgstr "Au~tomatiškai"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_NONE.RadioButton.Text
+#, fuzzy
+msgid  "~No transparency"
+msgstr "~Neskaidru"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEGRADIENTS.CheckBox.Text
+#, fuzzy
+msgid  "Reduce ~gradients"
+msgstr "Sumažinti ~gradientą"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_STRIPES.RadioButton.Text
+#, fuzzy
+msgid  "Gradient ~stripes"
+msgstr "Gradiento ~juostos"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_COLOR.RadioButton.Text
+#, fuzzy
+msgid  "Intermediate ~color"
+msgstr "Pereinama ~spalva"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS.CheckBox.Text
+#, fuzzy
+msgid  "Reduce ~bitmaps"
+msgstr "Keisti ~kokybę"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_OPTIMAL.RadioButton.Text
+#, fuzzy
+msgid  "~High print quality"
+msgstr "Au~kšta spausdinimo kokybė"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_NORMAL.RadioButton.Text
+#, fuzzy
+msgid  "N~ormal print quality"
+msgstr "Į~prasta spausdinimo kokybė"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_RESOLUTION.RadioButton.Text
+#, fuzzy
+msgid  "Reso~lution"
+msgstr "Skiriamoji g~eba"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "600 DPI"
+msgstr "600 DPI"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS_TRANSPARENCY.CheckBox.Text
+#, fuzzy
+msgid  "Include transparent ob~jects"
+msgstr "Įtraukti skai~drius objektus"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_CONVERTTOGREYSCALES.CheckBox.Text
+#, fuzzy
+msgid  "Con~vert colors to grayscale"
+msgstr "Kon~vertuoti spalvas į pilkuosius atspalvius"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_PRINT_WARN.FixedLine.Text
+#, fuzzy
+msgid  "Printer warnings"
+msgstr "Spausdintuvo pranešimai"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERSIZE.CheckBox.Text
+#, fuzzy
+msgid  "P~aper size"
+msgstr "~Lapo dydis"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERORIENTATION.CheckBox.Text
+#, fuzzy
+msgid  "Pap~er orientation"
+msgstr "~Lapo padėtis"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_TRANSPARENCY.CheckBox.Text
+#, fuzzy
+msgid  "~Transparency"
+msgstr "Skaidru~mas"
+
+#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.ModalDialog.Text
+#, fuzzy
+msgid  "Warning"
+msgstr "Įspėjimas"
+
+#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FixedText.Text
+msgid  "Your document contains transparent objects.\nThis may lead to longer printing time on certain\nprinters. Should the aspect of transparency\nbe reduced?"
 msgstr ""
 
-#: taskpane.src#STR_SFX_TASKS.string.text
-msgid "Tasks"
-msgstr ""
+#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKButton.Text
+#, fuzzy
+msgid  "~Yes"
+msgstr "~Taip"
 
-#: templdlg.src#RID_STYLECATALOG.BT_ORG.pushbutton.text
-msgid "~Organizer..."
-msgstr "~Tvarkytuvė..."
+#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_NO.PushButton.Text
+#, fuzzy
+msgid  "~No"
+msgstr "~Ne"
 
-#: templdlg.src#RID_STYLECATALOG.BT_DEL.pushbutton.text
-msgid "~Delete..."
-msgstr "~Šalinti..."
+#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_CANCEL.CancelButton.Text
+#, fuzzy
+msgid  "~Cancel"
+msgstr "~Atsisakyti"
 
-#: templdlg.src#RID_STYLECATALOG.BT_EDIT.pushbutton.text
-msgid "~Modify..."
-msgstr "~Keisti..."
+#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.CheckBox.Text
+#, fuzzy
+msgid  "~Do not show warning again"
+msgstr "~Daugiau nerodyti šio įspėjimo"
 
-#: templdlg.src#RID_STYLECATALOG.BT_NEW.pushbutton.text
-msgid "~New..."
-msgstr "~Naujas..."
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "72 DPI"
+msgstr "72 DPI"
 
-#: templdlg.src#RID_STYLECATALOG.modaldialog.text
-msgid "Style Catalog"
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "96 DPI"
+msgstr "96 DPI"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "150 DPI (Fax)"
+msgstr "150 DPI (faksograma)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "200 DPI (default)"
+msgstr "200 DPI (numatytasis)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "300 DPI"
+msgstr "300 DPI"
+
+#: source/dialog/templdlg.src#RID_STYLECATALOG.ModalDialog.Text
+#, fuzzy
+msgid  "Style Catalog"
 msgstr "Stilių katalogas"
 
-#: templdlg.src#STR_STYLE_ELEMTLIST.string.text
-msgid "Style List"
+#: source/dialog/templdlg.src#RID_STYLECATALOG.BT_ORG.PushButton.Text
+#, fuzzy
+msgid  "~Organizer..."
+msgstr "~Tvarkytuvė..."
+
+#: source/dialog/templdlg.src#RID_STYLECATALOG.BT_DEL.PushButton.Text
+#, fuzzy
+msgid  "~Delete..."
+msgstr "~Šalinti..."
+
+#: source/dialog/templdlg.src#RID_STYLECATALOG.BT_EDIT.PushButton.Text
+#, fuzzy
+msgid  "~Modify..."
+msgstr "~Keisti..."
+
+#: source/dialog/templdlg.src#RID_STYLECATALOG.BT_NEW.PushButton.Text
+#, fuzzy
+msgid  "~New..."
+msgstr "~Naujas..."
+
+#: source/dialog/templdlg.src#STR_STYLE_ELEMTLIST.String.Text
+msgid  "Style List"
 msgstr ""
 
-#: templdlg.src#STR_STYLE_FILTER_HIERARCHICAL.string.text
-msgid "Hierarchical"
+#: source/dialog/templdlg.src#STR_STYLE_FILTER_HIERARCHICAL.String.Text
+#, fuzzy
+msgid  "Hierarchical"
 msgstr "Stilių hierarchija"
 
-#: templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_WATERCAN.toolboxitem.text
-msgid "Fill Format Mode"
-msgstr "Stiliaus pritaikymo veiksena"
-
-#: templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_NEW_BY_EXAMPLE.toolboxitem.text
-msgid "New Style from Selection"
-msgstr "Naujas stilius pagal atranką"
-
-#: templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_UPDATE_BY_EXAMPLE.toolboxitem.text
-msgid "Update Style"
-msgstr "Atnaujinti stilių"
-
-#: templdlg.src#DLG_STYLE_DESIGNER.dockingwindow.text
-msgid "Styles and Formatting"
+#: source/dialog/templdlg.src#DLG_STYLE_DESIGNER.DockingWindow.Text
+#, fuzzy
+msgid  "Styles and Formatting"
 msgstr "Stiliai ir formatavimas"
 
-#: versdlg.src#DLG_VERSIONS.GB_NEWVERSIONS.fixedline.text
-msgid "New versions"
+#: source/dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_WATERCAN.ToolBoxItem.Text
+#, fuzzy
+msgid  "Fill Format Mode"
+msgstr "Stiliaus pritaikymo veiksena"
+
+#: source/dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_NEW_BY_EXAMPLE.ToolBoxItem.Text
+#, fuzzy
+msgid  "New Style from Selection"
+msgstr "Naujas stilius pagal atranką"
+
+#: source/dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_UPDATE_BY_EXAMPLE.ToolBoxItem.Text
+#, fuzzy
+msgid  "Update Style"
+msgstr "Atnaujinti stilių"
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FL.FixedLine.Text
+msgid  "File encryption password"
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FT.FixedText.Text
+msgid  "~Enter password to open"
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_OPEN_FT.FixedText.Text
+msgid  "~Reenter password to open"
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FL.FixedLine.Text
+msgid  "File sharing password"
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FT.FixedText.Text
+msgid  "Enter password to modify"
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_MODIFY_FT.FixedText.Text
+msgid  "Reenter password to modify"
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.OPTIONS_FL.FixedLine.Text
+msgid  "File sharing options"
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.OPEN_READONLY_CB.CheckBox.Text
+msgid  "~Open file read-only"
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.RECORD_CHANGES_CB.CheckBox.Text
+msgid  "Record ~changes"
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.STR_PROTECT.String.Text
+msgid  "~Protect..."
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.STR_UNPROTECT.String.Text
+msgid  "~Unprotect..."
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.STR_END_REDLINING_WARNING.String.Text
+msgid  "This action will exit the change recording mode.\nAny information about changes will be lost.\n\nExit change recording mode?\n\n"
+msgstr ""
+
+#: source/dialog/securitypage.src#RID_SFX_PROTECT_RECORDS.String.Text
+msgid  "Protect Records"
+msgstr ""
+
+#: source/dialog/securitypage.src#RID_SFX_UNPROTECT_RECORDS.String.Text
+msgid  "Unprotect Records"
+msgstr ""
+
+#: source/dialog/securitypage.src#RID_SFX_INCORRECT_PASSWORD.String.Text
+msgid  "Incorrect password"
+msgstr ""
+
+#: source/dialog/versdlg.src#DLG_VERSIONS.GB_NEWVERSIONS.FixedLine.Text
+#, fuzzy
+msgid  "New versions"
 msgstr "Naujos versijos"
 
-#: versdlg.src#DLG_VERSIONS.PB_SAVE.pushbutton.text
-msgid "Save ~New Version"
+#: source/dialog/versdlg.src#DLG_VERSIONS.PB_SAVE.PushButton.Text
+#, fuzzy
+msgid  "Save ~New Version"
 msgstr "Įrašyti ~naują versiją"
 
-#: versdlg.src#DLG_VERSIONS.CB_SAVEONCLOSE.checkbox.text
-msgid "~Always save a version on closing"
+#: source/dialog/versdlg.src#DLG_VERSIONS.CB_SAVEONCLOSE.CheckBox.Text
+#, fuzzy
+msgid  "~Always save a version on closing"
 msgstr "~Visada įrašyti versiją prieš užveriant"
 
-#: versdlg.src#DLG_VERSIONS.GB_OLDVERSIONS.fixedline.text
-msgid "Existing versions"
+#: source/dialog/versdlg.src#DLG_VERSIONS.GB_OLDVERSIONS.FixedLine.Text
+#, fuzzy
+msgid  "Existing versions"
 msgstr "Jau esančios versijos"
 
-#: versdlg.src#DLG_VERSIONS.FT_DATETIME.fixedtext.text
-msgid "Date and time"
+#: source/dialog/versdlg.src#DLG_VERSIONS.FT_DATETIME.FixedText.Text
+#, fuzzy
+msgid  "Date and time"
 msgstr "Data ir laikas"
 
-#: versdlg.src#DLG_VERSIONS.FT_SAVEDBY.fixedtext.text
-msgid "Saved by"
+#: source/dialog/versdlg.src#DLG_VERSIONS.FT_SAVEDBY.FixedText.Text
+#, fuzzy
+msgid  "Saved by"
 msgstr "Kas įrašė"
 
-#: versdlg.src#DLG_VERSIONS.FT_COMMENTS.fixedtext.text
-msgid "Comments"
+#: source/dialog/versdlg.src#DLG_VERSIONS.FT_COMMENTS.FixedText.Text
+#, fuzzy
+msgid  "Comments"
 msgstr "Komentarai"
 
-#: versdlg.src#DLG_VERSIONS.PB_CLOSE.cancelbutton.text
-msgid "Close"
+#: source/dialog/versdlg.src#DLG_VERSIONS.PB_CLOSE.CancelButton.Text
+#, fuzzy
+msgid  "Close"
 msgstr "Užverti"
 
-#: versdlg.src#DLG_VERSIONS.PB_OPEN.pushbutton.text
+#: source/dialog/versdlg.src#DLG_VERSIONS.PB_OPEN.PushButton.Text
 #, fuzzy
-msgid "Open"
+msgid  "Open"
 msgstr "Atverti"
 
-#: versdlg.src#DLG_VERSIONS.PB_VIEW.pushbutton.text
-msgid "~Show..."
+#: source/dialog/versdlg.src#DLG_VERSIONS.PB_VIEW.PushButton.Text
+#, fuzzy
+msgid  "~Show..."
 msgstr "~Rodyti..."
 
-#: versdlg.src#DLG_VERSIONS.PB_DELETE.pushbutton.text
+#: source/dialog/versdlg.src#DLG_VERSIONS.PB_DELETE.PushButton.Text
 #, fuzzy
-msgid "~Delete"
+msgid  "~Delete"
 msgstr "~Šalinti"
 
-#: versdlg.src#DLG_VERSIONS.PB_COMPARE.pushbutton.text
-msgid "Compare"
+#: source/dialog/versdlg.src#DLG_VERSIONS.PB_COMPARE.PushButton.Text
+#, fuzzy
+msgid  "Compare"
 msgstr "Palyginti"
 
-#: versdlg.src#DLG_VERSIONS.modaldialog.text
-msgid "Versions of"
+#: source/dialog/versdlg.src#DLG_VERSIONS.HelpButton.Text
+#, fuzzy
+msgid  "Versions of"
 msgstr "Versijos"
 
-#: versdlg.src#DLG_COMMENTS.FT_DATETIME.fixedtext.text
-msgid "Date and time : "
+#: source/dialog/versdlg.src#DLG_COMMENTS.FT_DATETIME.FixedText.Text
+#, fuzzy
+msgid  "Date and time : "
 msgstr "Data ir laikas: "
 
-#: versdlg.src#DLG_COMMENTS.FT_SAVEDBY.fixedtext.text
-msgid "Saved by "
+#: source/dialog/versdlg.src#DLG_COMMENTS.FT_SAVEDBY.FixedText.Text
+#, fuzzy
+msgid  "Saved by "
 msgstr "Kas įrašė: "
 
-#: versdlg.src#DLG_COMMENTS.PB_CLOSE.pushbutton.text
-msgctxt "versdlg.src#DLG_COMMENTS.PB_CLOSE.pushbutton.text"
-msgid "~Close"
+#: source/dialog/versdlg.src#DLG_COMMENTS.PB_CLOSE.PushButton.Text
+#, fuzzy
+msgid  "~Close"
 msgstr "~Užverti"
 
-#: versdlg.src#DLG_COMMENTS.modaldialog.text
-msgid "Insert Version Comment"
+#: source/dialog/versdlg.src#DLG_COMMENTS.HelpButton.Text
+#, fuzzy
+msgid  "Insert Version Comment"
 msgstr "Įterpti versijos komentarą"
 
-#: versdlg.src#DLG_COMMENTS.string.text
-msgid "Version comment"
+#: source/dialog/versdlg.src#DLG_COMMENTS.String.Text
+#, fuzzy
+msgid  "Version comment"
 msgstr "Versijos komentaras"
 
-#~ msgid "Confirm password"
-#~ msgstr "Patvirtinti slaptažodį"
+#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NAME.FixedText.Text
+#, fuzzy
+msgid  "~Name"
+msgstr "~Pavadinimas"
 
-#~ msgid "(Internet)"
-#~ msgstr "(internetas)"
+#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.CB_AUTO.CheckBox.Text
+#, fuzzy
+msgid  "~AutoUpdate"
+msgstr "~Automatinis duomenų atnaujinimas"
 
-#~ msgid "Base format"
-#~ msgstr "Pagrindinis formatas"
+#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NEXT.FixedText.Text
+#, fuzzy
+msgid  "Ne~xt Style"
+msgstr "~Kitas stilius"
 
-#~ msgid "~File System"
-#~ msgstr "~Failų sistema"
+#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_BASE.FixedText.Text
+#, fuzzy
+msgid  "Linked with"
+msgstr "Susietas su"
 
-#~ msgid "Int~ernet"
-#~ msgstr "Int~ernetas"
+#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_REGION.FixedText.Text
+#, fuzzy
+msgid  "~Category"
+msgstr "~Kategorija"
 
-#~ msgid "~Manager..."
-#~ msgstr "~Tvarkytuvė..."
+#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.GB_DESC.FixedLine.Text
+#, fuzzy
+msgid  "Contains"
+msgstr "Parametrai"
 
-#~ msgid "~Home"
-#~ msgstr "~Pradžia"
+#: source/dialog/filedlghelper.src#STR_SFX_FILEDLG_ACTUALVERSION.String.Text
+#, fuzzy
+msgid  "Current version"
+msgstr "Dabartinė versija"
 
-#~ msgid "Insert File"
-#~ msgstr "Įterpti failą"
+#: source/dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_EXPORT.String.Text
+#, fuzzy
+msgid  "Export"
+msgstr "Eksportas"
 
-#~ msgid "Loading document without layout."
-#~ msgstr "Dokumentas įkeliamas be maketo."
+#: source/dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_INSERT.String.Text
+#, fuzzy
+msgid  "Insert"
+msgstr "Įterpimas"
 
-#~ msgid ""
-#~ "Cannot edit document info for documents\n"
-#~ " in this file format."
-#~ msgstr "Šio formato dokumentų informacijos keisti negalima."
+#: source/dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_BUTTONINSERT.String.Text
+#, fuzzy
+msgid  "~Insert"
+msgstr "~Įterpti"
 
-#~ msgid ""
-#~ "Document info of documents\n"
-#~ " being currently edited cannot be modified from within the document manager."
-#~ msgstr ""
-#~ "Šiuo metu taisomų dokumentų\n"
-#~ " informacijos negalima keisti naudojantis dokumentų tvarkytuve."
+#: source/dialog/filedlghelper.src#STR_SFX_IMPORT_ALL.String.Text
+#, fuzzy
+msgid  "<All formats>"
+msgstr "<Visi formatai>"
 
-#~ msgid "Enter URL"
-#~ msgstr "Įveskite URL"
+#: source/dialog/filedlghelper.src#STR_CB_AUTO_EXTENSION.String.Text
+#, fuzzy
+msgid  "~Automatic file name extension"
+msgstr "~Failo prievardį parenka programa"
 
-#~ msgid "Hide"
-#~ msgstr "Slėpti"
+#: source/dialog/filedlghelper.src#STR_CB_SELECTION.String.Text
+#, fuzzy
+msgid  "~Selection"
+msgstr "~Atranka"
 
-#~ msgid "Don't Hide"
-#~ msgstr "Neslėpti"
+#: source/dialog/filedlghelper.src#STR_CB_INSERT_AS_LINK.String.Text
+#, fuzzy
+msgid  "~Link"
+msgstr "~Saitas"
 
-#~ msgid "Recheck Document"
-#~ msgstr "Iš naujo patikrinti dokumentą"
+#: source/dialog/filedlghelper.src#STR_CB_SHOW_PREVIEW.String.Text
+#, fuzzy
+msgid  "Pr~eview"
+msgstr "Per~žiūra"
 
-#~ msgid "~Save..."
-#~ msgstr "Į~rašyti..."
+#: source/dialog/filedlghelper.src#STR_CB_READONLY.String.Text
+#, fuzzy
+msgid  "~Read-only"
+msgstr "~Tik skaitymui"
 
-#~ msgid "R~eset"
-#~ msgstr "At~statyti"
+#: source/dialog/filedlghelper.src#STR_CB_PASSWORD.String.Text
+#, fuzzy
+msgid  "Save with ~password"
+msgstr "Įrašyti su ~slaptažodžiu"
 
-#~ msgid "~Load..."
-#~ msgstr "Į~kelti..."
+#: source/dialog/filedlghelper.src#STR_CB_FILTER_OPTIONS.String.Text
+#, fuzzy
+msgid  "Edit ~filter settings"
+msgstr "Taisyti ~filtro nuostatas"
 
-#~ msgid "~Modify"
-#~ msgstr "~Keisti"
+#: source/dialog/filedlghelper.src#STR_PB_PLAY.String.Text
+#, fuzzy
+msgid  "~Play"
+msgstr "~Groti"
 
-#~ msgid "~New"
-#~ msgstr "~Naujas"
+#: source/dialog/filedlghelper.src#STR_PB_STOP.String.Text
+#, fuzzy
+msgid  "Sto~p"
+msgstr "~Stabdyti"
 
-#~ msgid "Function"
-#~ msgstr "Funkcija"
+#: source/dialog/filedlghelper.src#STR_PB_OPEN.String.Text
+#, fuzzy
+msgid  "~Open"
+msgstr "~Atverti"
 
-#~ msgid "Functions"
-#~ msgstr "Funkcijos"
+#: source/dialog/filedlghelper.src#STR_PB_SAVE.String.Text
+#, fuzzy
+msgid  "~Save"
+msgstr "Į~rašyti"
 
-#~ msgid "My Macros"
-#~ msgstr "Naudotojo makrokomandos"
+#: source/dialog/filedlghelper.src#STR_LB_IMAGE_TEMPLATE.String.Text
+#, fuzzy
+msgid  "Style:"
+msgstr "Stilius:"
 
-#~ msgctxt "cfg.src#STR_PRODMACROS.string.text"
-#~ msgid "%PRODUCTNAME Macros"
-#~ msgstr "„%PRODUCTNAME“ makrokomandos"
+#: source/dialog/filedlghelper.src#STR_LB_TEMPLATES.String.Text
+#, fuzzy
+msgid  "~Templates:"
+msgstr "~Šablonai:"
 
-#~ msgid "Shortcut keys"
-#~ msgstr "Spartieji klavišai"
+#: source/dialog/filedlghelper.src#STR_LB_VERSION.String.Text
+#, fuzzy
+msgid  "~Version:"
+msgstr "~Versija:"
 
-#~ msgid "~Keys"
-#~ msgstr "~Klavišai"
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.ModelessDialog.Text
+#, fuzzy
+msgid  "Find on this Page"
+msgstr "Ieškoti šiame puslapyje"
 
-#~ msgid "New"
-#~ msgstr "Naujas"
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.FT_SEARCH.FixedText.Text
+#, fuzzy
+msgid  "~Search for"
+msgstr "Ko ~ieškoti:"
 
-#~ msgid "Save"
-#~ msgstr "Įrašyti"
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.CB_WHOLEWORDS.CheckBox.Text
+#, fuzzy
+msgid  "~Whole words only"
+msgstr "~Tik ištisi žodžiai"
 
-#~ msgid "Save As"
-#~ msgstr "Įrašyti taip"
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.CB_MATCHCASE.CheckBox.Text
+#, fuzzy
+msgid  "~Match case"
+msgstr "~Skirti didžiąsias ir mažąsias raides"
 
-#~ msgid "Print"
-#~ msgstr "Spausdinti"
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.CheckBox.Text
+#, fuzzy
+msgid  "Wrap ~around"
+msgstr "Lau~žyti tekstą"
 
-#~ msgid "Exit"
-#~ msgstr "Baigti"
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.CB_BACKWARDS.CheckBox.Text
+#, fuzzy
+msgid  "~Backwards"
+msgstr "Pradžios link"
 
-#~ msgid "Cut"
-#~ msgstr "Iškirpti"
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.PB_FIND.PushButton.Text
+#, fuzzy
+msgid  "~Find"
+msgstr "~Ieškoti"
 
-#~ msgid "Copy"
-#~ msgstr "Kopijuoti"
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.CancelButton.Text
+#, fuzzy
+msgid  "~Close"
+msgstr "~Užverti"
 
-#~ msgid "Paste"
-#~ msgstr "Įdėti"
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.STR_TOGGLE.String.Text
+#, fuzzy
+msgid  "Wrap ~around"
+msgstr "Lau~žyti tekstą"
 
-#~ msgid "Delete"
-#~ msgstr "Šalinti"
+#: source/dialog/passwd.src#DLG_PASSWD.ModalDialog.Text
+#, fuzzy
+msgid  "Enter Password"
+msgstr "Slaptažodis"
 
-#~ msgid "Search"
-#~ msgstr "Paieška"
+#: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_USER.FixedText.Text
+#, fuzzy
+msgid  "~User"
+msgstr "~Naudotojas"
 
-#~ msgid "Search backward"
-#~ msgstr "Ieškoti pradžios link"
+#: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD.FixedText.Text
+#, fuzzy
+msgid  "~Password"
+msgstr "~Slaptažodis"
 
-#~ msgid "Properties"
-#~ msgstr "Savybės"
+#: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM.FixedText.Text
+#, fuzzy
+msgid  "~Confirm"
+msgstr "~Pakartoti"
 
-#~ msgid "To front"
-#~ msgstr "Į priekinį planą"
+#: source/dialog/passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.FixedLine.Text
+#, fuzzy
+msgid  "Password"
+msgstr "Slaptažodis"
 
-#~ msgid ""
-#~ "There are still undefined functions (???).\n"
-#~ "\n"
-#~ "Do you want to accept the configuration anyway?"
-#~ msgstr ""
-#~ "Dar yra neaprašytų funkcijų (???).\n"
-#~ "\n"
-#~ "Ar vis tiek taikyti šią sąranka?"
+#: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD2.FixedText.Text
+#, fuzzy
+msgid  "P~assword"
+msgstr "Slaptažodis"
 
-#~ msgid ""
-#~ "There are still entries with functions that can only be assigned to pop-ups.\n"
-#~ "\n"
-#~ "Continue anyway?"
-#~ msgstr ""
-#~ "Yra tokių funkcijų, kurios gali būti taikomos tik išskleidžiamajame meniu.\n"
-#~ "\n"
-#~ "Ar vis tiek norite atlikti pakeitimus?"
+#: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM2.FixedText.Text
+#, fuzzy
+msgid  "Confir~m"
+msgstr "~Pakartoti"
 
-#~ msgid "Function is already included in this popup."
-#~ msgstr "Ši funkcija jau įtraukta į išskleidžiamą sąrašą."
+#: source/dialog/passwd.src#DLG_PASSWD.TEXT_PASSWD.String.Text
+#, fuzzy
+msgid  "Password"
+msgstr "Slaptažodis"
 
-#~ msgid "Load Menu Configuration"
-#~ msgstr "Įkelti meniu sąranką"
+#: source/dialog/dinfdlg.src#STR_SFX_NEWOFFICEDOC.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME document"
+msgstr "„%PRODUCTNAME“ dokumentas"
 
-#~ msgid "Save Menu Configuration"
-#~ msgstr "Įrašyti meniu sąranką"
+#: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_TITLE.FixedText.Text
+#, fuzzy
+msgid  "~Title"
+msgstr "~Pavadinimas"
 
-#~ msgid "Load Keyboard Configuration"
-#~ msgstr "Įkelti klaviatūros sąranką"
+#: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_THEMA.FixedText.Text
+#, fuzzy
+msgid  "~Subject"
+msgstr "~Tema"
 
-#~ msgid "Save Keyboard Configuration"
-#~ msgstr "Įrašyti klaviatūros sąranką"
+#: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_KEYWORDS.FixedText.Text
+#, fuzzy
+msgid  "~Keywords"
+msgstr "~Reikšminiai žodžiai"
 
-#~ msgid "Load Status Bar Configuration"
-#~ msgstr "Įkelti būsenos juostos sąranką"
+#: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_COMMENT.FixedText.Text
+#, fuzzy
+msgid  "~Comments"
+msgstr "~Komentaras"
 
-#~ msgid "Save Status Bar Configuration"
-#~ msgstr "Įrašyti būsenos juostos sąranką"
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.FixedText.Text
+#, fuzzy
+msgid  "Type:"
+msgstr "Tipas:"
 
-#~ msgid "Menu"
-#~ msgstr "Meniu"
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.CheckBox.Text
+#, fuzzy
+msgid  "~Read-only"
+msgstr "~Tik skaitymui"
 
-#~ msgid "Separator"
-#~ msgstr "Skirtukas"
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE.FixedText.Text
+#, fuzzy
+msgid  "Location:"
+msgstr "Vieta:"
 
-#~ msgid "Invisible separator"
-#~ msgstr "Nematomas skirtukas"
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_SIZE.FixedText.Text
+#, fuzzy
+msgid  "Size:"
+msgstr "Dydis:"
 
-#~ msgid "BASIC Macros"
-#~ msgstr "„BASIC“ makrokomandos"
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_CREATE.FixedText.Text
+#, fuzzy
+msgid  "Created:"
+msgstr "Sukurta:"
 
-#~ msgctxt "dialog.src#STR_DLG_MACROS.string.text"
-#~ msgid "%PRODUCTNAME Macros"
-#~ msgstr "„%PRODUCTNAME“ makrokomandos"
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_CHANGE.FixedText.Text
+#, fuzzy
+msgid  "Modified:"
+msgstr "Pakeista:"
 
-#~ msgid "Styles"
-#~ msgstr "Stiliai"
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_SIGNED.FixedText.Text
+#, fuzzy
+msgid  "Digitally signed:"
+msgstr "Skaitmeniškai pasirašyta:"
 
-#~ msgid "Event"
-#~ msgstr "Įvykis"
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.BTN_SIGNATURE.PushButton.Text
+#, fuzzy
+msgid  "Digital Signature..."
+msgstr "Skaitmeninis parašas..."
 
-#~ msgid "Assigned macro"
-#~ msgstr "Priskirta makrokomanda"
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.STR_MULTSIGNED.String.Text
+#, fuzzy
+msgid  "Multiply signed document"
+msgstr "Keliskart pasirašytas dokumentas"
 
-#~ msgid "~Existing macros in:\n"
-#~ msgstr "~Esamos makrokomandos:\n"
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_PRINT.FixedText.Text
+#, fuzzy
+msgid  "Last printed:"
+msgstr "Spausdinta:"
 
-#~ msgid "~Assign"
-#~ msgstr "~Priskirti"
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_TIMELOG.FixedText.Text
+#, fuzzy
+msgid  "Total editing time:"
+msgstr "Bendras taisymo laikas:"
 
-#~ msgid "~Remove"
-#~ msgstr "~Šalinti"
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_DOCNO.FixedText.Text
+#, fuzzy
+msgid  "Revision number:"
+msgstr "Versija:"
 
-#~ msgid "~Scripting Language"
-#~ msgstr "~Skriptų kalba"
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.BTN_DELETE.PushButton.Text
+#, fuzzy
+msgid  "Reset"
+msgstr "Atstatyti"
 
-#~ msgid "Macros"
-#~ msgstr "Makrokomandos"
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.CB_USE_USERDATA.CheckBox.Text
+#, fuzzy
+msgid  "~Apply user data"
+msgstr "Įrašyti, kas ~modifikavo arba spausdino"
 
-#~ msgid "Assign Macro"
-#~ msgstr "Makrokomandos pasirinkimas"
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_TEMPL.FixedText.Text
+#, fuzzy
+msgid  "Template:"
+msgstr "Šablonas:"
 
-#~ msgid "Confirm password"
-#~ msgstr "Patvirtinti slaptažodį"
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.STR_UNKNOWNSIZE.String.Text
+#, fuzzy
+msgid  "unknown"
+msgstr "nežinomas"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.EDIT_FILE_NAME.String.Text
+msgid  "File Name"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#TP_DOCINFOUSER.BTN_EDITLABEL.PushButton.Text
+#, fuzzy
+msgid  "~Info fields..."
+msgstr "~Laukų vardai..."
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_NOAUTOUPDATE.RadioButton.Text
+#, fuzzy
+msgid  "Do not refresh automatically"
+msgstr "Automatiškai neatnaujinti"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_RELOADUPDATE.RadioButton.Text
+#, fuzzy
+msgid  "Refresh this document"
+msgstr "Atnaujinti šį dokumentą"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_EVERY.FixedText.Text
+#, fuzzy
+msgid  "every"
+msgstr "kas"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.FixedText.Text
+#, fuzzy
+msgid  "seconds"
+msgstr "sek."
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_FORWARDUPDATE.RadioButton.Text
+#, fuzzy
+msgid  "Redirect from this document"
+msgstr "Šį dokumentą peradresuoti"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.FixedText.Text
+#, fuzzy
+msgid  "after"
+msgstr "po"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.FixedText.Text
+#, fuzzy
+msgid  "seconds"
+msgstr "sek."
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_URL.FixedText.Text
+#, fuzzy
+msgid  "to URL"
+msgstr "~URL"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FRAME.FixedText.Text
+#, fuzzy
+msgid  "to frame"
+msgstr "į kadrą"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.STR_FORWARD_ERRMSSG.String.Text
+msgid  "If you select the option "%PLACEHOLDER%", you must enter a URL."
+msgstr ""
+
+#: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.FT_PROPERTIES.FixedText.Text
+#, fuzzy
+msgid  "~Properties"
+msgstr "~Savybės"
+
+#: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.String.Text
+#, fuzzy
+msgid  "Name"
+msgstr "Pavadinimas"
+
+#: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.String.Text
+#, fuzzy
+msgid  "Type"
+msgstr "Tipas"
+
+#: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_VALUE.String.Text
+#, fuzzy
+msgid  "Value"
+msgstr "Reikšmė"
+
+#: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.BTN_ADD.PushButton.Text
+#, fuzzy
+msgid  "~Add"
+msgstr "~Pridėti"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ComboBox.QuickHelpText
+#, fuzzy
+msgid  "Property Name"
+msgstr "Savybės pavadinimas"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item1.StringList.item
+#, fuzzy
+msgid  "Checked by"
+msgstr "Patikrino"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item2.StringList.item
+#, fuzzy
+msgid  "Client"
+msgstr "Klientas"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item3.StringList.item
+#, fuzzy
+msgid  "Date completed"
+msgstr "Baigimo data"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item4.StringList.item
+#, fuzzy
+msgid  "Department"
+msgstr "Padalinys"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item5.StringList.item
+#, fuzzy
+msgid  "Destinations"
+msgstr "Paskirtys"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item6.StringList.item
+#, fuzzy
+msgid  "Disposition"
+msgstr "Dispozicija"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item7.StringList.item
+#, fuzzy
+msgid  "Division"
+msgstr "Skyrius"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item8.StringList.item
+#, fuzzy
+msgid  "Document number"
+msgstr "Dokumento numeris"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item9.StringList.item
+#, fuzzy
+msgid  "Editor"
+msgstr "Redaktorius"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item10.StringList.item
+#, fuzzy
+msgid  "E-Mail"
+msgstr "El. paštas"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item11.StringList.item
+#, fuzzy
+msgid  "Forward to"
+msgstr "Persiųsti"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item12.StringList.item
+#, fuzzy
+msgid  "Group"
+msgstr "Grupė"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item13.StringList.item
+#, fuzzy
+msgid  "Info"
+msgstr "Informacija"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item14.StringList.item
+#, fuzzy
+msgid  "Language"
+msgstr "Kalba"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item15.StringList.item
+#, fuzzy
+msgid  "Mailstop"
+msgstr "Pašto dėžutė"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item16.StringList.item
+#, fuzzy
+msgid  "Matter"
+msgstr "Dalykas"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item17.StringList.item
+#, fuzzy
+msgid  "Office"
+msgstr "Biuras"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item18.StringList.item
+#, fuzzy
+msgid  "Owner"
+msgstr "Savininkas"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item19.StringList.item
+#, fuzzy
+msgid  "Project"
+msgstr "Projektas"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item20.StringList.item
+#, fuzzy
+msgid  "Publisher"
+msgstr "Leidėjas"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item21.StringList.item
+#, fuzzy
+msgid  "Purpose"
+msgstr "Paskirtis"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item22.StringList.item
+#, fuzzy
+msgid  "Received from"
+msgstr "Gauta nuo"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item23.StringList.item
+#, fuzzy
+msgid  "Recorded by"
+msgstr "Įrašė"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item24.StringList.item
+#, fuzzy
+msgid  "Recorded date"
+msgstr "Įrašymo data"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item25.StringList.item
+#, fuzzy
+msgid  "Reference"
+msgstr "Nuoroda"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item26.StringList.item
+#, fuzzy
+msgid  "Source"
+msgstr "Šaltinis"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item27.StringList.item
+#, fuzzy
+msgid  "Status"
+msgstr "Būsena"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item28.StringList.item
+#, fuzzy
+msgid  "Telephone number"
+msgstr "Telefono numeris"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item29.StringList.item
+#, fuzzy
+msgid  "Typist"
+msgstr "Surinko"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item30.StringList.item
+#, fuzzy
+msgid  "URL"
+msgstr "URL adresas"
+
+#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_TEXT.StringList.item
+#, fuzzy
+msgid  "Text"
+msgstr "Tekstas"
+
+#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATETIME.StringList.item
+msgid  "DateTime"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATE.StringList.item
+#, fuzzy
+msgid  "Date"
+msgstr "Data"
+
+#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DURATION.StringList.item
+msgid  "Duration"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_NUMBER.StringList.item
+#, fuzzy
+msgid  "Number"
+msgstr "Skaičius"
+
+#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_BOOLEAN.StringList.item
+#, fuzzy
+msgid  "Yes or no"
+msgstr "Taip arba ne"
+
+#: source/dialog/dinfdlg.src#SFX_ST_DURATION_FORMAT.String.Text
+msgid  " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.RadioButton.Text
+#, fuzzy
+msgid  "Yes"
+msgstr "Taip"
+
+#: source/dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_NO.RadioButton.Text
+#, fuzzy
+msgid  "No"
+msgstr "Ne"
+
+#: source/dialog/dinfdlg.src#SFX_PB_PROPERTY_REMOVE.ImageButton.QuickHelpText
+#, fuzzy
+msgid  "Remove Property"
+msgstr "Šalinti savybę"
+
+#: source/dialog/dinfdlg.src#SFX_QB_WRONG_TYPE.QueryBox.Message
+msgid  "The value entered does not match the specified type.\nThe value will be stored as text."
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SID_DOCINFO.TabDialog.Text
+#, fuzzy
+msgid  "Properties of "
+msgstr "Savybės: "
+
+#: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.PageItem.Text
+#, fuzzy
+msgid  "General"
+msgstr "Bendrosios"
+
+#: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.PageItem.Text
+#, fuzzy
+msgid  "Description"
+msgstr "Aprašymas"
+
+#: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_CUSTOMPROPERTIES.PageItem.Text
+#, fuzzy
+msgid  "Custom Properties"
+msgstr "Kitos savybės"
+
+#: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.PageItem.Text
+#, fuzzy
+msgid  "Internet"
+msgstr "Internetas"
+
+#: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFOSECURITY.PageItem.Text
+msgid  "Security"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.ModalDialog.Text
+msgid  "Edit Duration"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FL_DURATION.FixedLine.Text
+msgid  "Duration"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.CB_NEGATIVE.CheckBox.Text
+msgid  "~Negative"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_YEAR.FixedText.Text
+msgid  "~Years"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MONTH.FixedText.Text
+msgid  "~Months"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_DAY.FixedText.Text
+msgid  "~Days"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_HOUR.FixedText.Text
+msgid  "H~ours"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MINUTE.FixedText.Text
+msgid  "Min~utes"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_SECOND.FixedText.Text
+#, fuzzy
+msgid  "~Seconds"
+msgstr "sek."
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MSECOND.FixedText.Text
+msgid  "Millise~conds"
+msgstr ""
+
+#: source/dialog/dinfedt.src#DLG_DOCINFO_EDT.ModalDialog.Text
+#, fuzzy
+msgid  "Edit Field Names"
+msgstr "Laukų vardų redagavimas"
+
+#: source/dialog/dinfedt.src#DLG_DOCINFO_EDT.FL_INFO.FixedLine.Text
+#, fuzzy
+msgid  "Names"
+msgstr "Vardai"
+
+#: source/dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.ModalDialog.Text
+#, fuzzy
+msgid  "Create Style"
+msgstr "Kurti stilių"
+
+#: source/dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.FL_COL.FixedLine.Text
+#, fuzzy
+msgid  "Style name"
+msgstr "Stiliaus pavadinimas"
+
+#: source/dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MSG_OVERWRITE.QueryBox.Message
+#, fuzzy
+msgid  "Style already exists. Overwrite?"
+msgstr "Toks stilius jau yra. Perrašyti?"
+
+#: source/dialog/recfloat.src#SID_RECORDING_FLOATWINDOW.FloatingWindow.Text
+#, fuzzy
+msgid  "Record Macro"
+msgstr "Įrašyti makrokomandą"
+
+#: source/dialog/recfloat.src#STR_MACRO_LOSS.String.Text
+msgid  "Do you really want to cancel the recording? Any steps recorded up to this point will be lost."
+msgstr ""
+
+#: source/dialog/recfloat.src#STR_CANCEL_RECORDING.String.Text
+#, fuzzy
+msgid  "Cancel Recording"
+msgstr "Atšaukti įrašymą"
+
+#: source/dialog/mailwindow.src#RID_ERRBOX_MAIL_CONFIG.ErrorBox.MESSAGE
+msgid  "%PRODUCTNAME was unable to find a working e-mail configuration. Please save this document locally instead and attach it from within your e-mail client."
+msgstr ""
+
+#: source/dialog/dialog.src#STR_RESET.String.Text
+#, fuzzy
+msgid  "~Reset"
+msgstr "A~tstatyti"
+
+#: source/dialog/dialog.src#STR_APPLY.String.Text
+#, fuzzy
+msgid  "Apply"
+msgstr "Taikyti"
+
+#: source/dialog/dialog.src#STR_TABPAGE_MANAGESTYLES.String.Text
+#, fuzzy
+msgid  "Organizer"
+msgstr "Stiliaus savybės"
+
+#: source/dialog/dialog.src#MSG_TABPAGE_INVALIDNAME.InfoBox.Message
+#, fuzzy
+msgid  "This name is already in use."
+msgstr "Toks pavadinimas jau yra."
+
+#: source/dialog/dialog.src#MSG_TABPAGE_INVALIDSTYLE.InfoBox.Message
+#, fuzzy
+msgid  "This Style does not exist."
+msgstr "Tokio stiliaus nėra."
+
+#: source/dialog/dialog.src#MSG_TABPAGE_INVALIDPARENT.InfoBox.Message
+msgid  "This Style cannot be used as a base Style,\nbecause it would result in a recursive reference."
+msgstr ""
+
+#: source/dialog/dialog.src#MSG_POOL_STYLE_NAME.InfoBox.Message
+msgid  "Name already exists as a default Style.\nPlease choose another name."
+msgstr ""
+
+#: source/dialog/dialog.src#STR_DELETE_STYLE.String.Text
+#, fuzzy
+msgid  "Do you really want to delete Style $1?"
+msgstr "Ar tikrai pašalinti stilių „$1“?"
+
+#: source/dialog/dialog.src#STR_DELETE_STYLE_USED.String.Text
+#, fuzzy
+msgid  "You are deleting an applied Style!\n"
+msgstr "Jūs šalinate pritaikytą stilių!\n"
+
+#: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MenuItem.Text
+#, fuzzy
+msgid  "New..."
+msgstr "Naujas..."
+
+#: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.MenuItem.Text
+#, fuzzy
+msgid  "Modify..."
+msgstr "Keisti..."
+
+#: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.MenuItem.Text
+#, fuzzy
+msgid  "Delete..."
+msgstr "Šalinti..."
+
+#: source/dialog/dialog.src#SID_NAVIGATOR.String.Text
+#, fuzzy
+msgid  "Navigator"
+msgstr "Žvalgiklis"
+
+#: source/dialog/dialog.src#SID_TASKPANE.String.Text
+msgid  "Task Pane"
+msgstr ""
+
+#: source/dialog/dialog.src#MSG_ERROR_WRONG_CONFIRM.ErrorBox.Message
+#, fuzzy
+msgid  "Faulty password confirmation"
+msgstr "Neteisingai pakartotas slaptažodis"
+
+#: source/dialog/dialog.src#STR_PDF_EXPORT_SEND.String.Text
+#, fuzzy
+msgid  "Send"
+msgstr "Siųsti"
+
+#: source/dialog/taskpane.src#STR_SFX_DOCK.String.Text
+msgid  "Dock"
+msgstr ""
+
+#: source/dialog/taskpane.src#STR_SFX_UNDOCK.String.Text
+msgid  "Undock"
+msgstr ""
+
+#: source/dialog/taskpane.src#STR_SFX_TASK_PANE_VIEW.String.Text
+msgid  "View"
+msgstr ""
+
+#: source/dialog/taskpane.src#STR_SFX_TASKS.String.Text
+msgid  "Tasks"
+msgstr ""
+
+#: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.FixedText.Text
+msgid  "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\n\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
+msgstr ""
+
+#: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.OKButton.Text
+#, fuzzy
+msgid  "~Keep Current Format"
+msgstr "Į~rašyti pasirinktu formatu"
+
+#: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_YES.CancelButton.Text
+#, fuzzy
+msgid  "~Save in ODF Format"
+msgstr "Įrašyti ~ODF formatu"
+
+#: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_MOREINFO.HelpButton.Text
+#, fuzzy
+msgid  "~More Information..."
+msgstr "~Daugiau informacijos..."
+
+#: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.CB_WARNING_OFF.CheckBox.Text
+#, fuzzy
+msgid  "~Ask when not saving in ODF format"
+msgstr "~Klausti, kai įrašoma ne ODF formatu"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item1.ItemList.item
+#, fuzzy
+msgid  "My Templates"
+msgstr "Naudotojo šablonai"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item2.ItemList.item
+#, fuzzy
+msgid  "Business Correspondence"
+msgstr "Tarnybinių laiškų"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item3.ItemList.item
+#, fuzzy
+msgid  "Other Business Documents"
+msgstr "Kitų tarnybinių dokumentų"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item4.ItemList.item
+#, fuzzy
+msgid  "Personal Correspondence and Documents"
+msgstr "Asmeninių laiškų ir dokumentų"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item5.ItemList.item
+#, fuzzy
+msgid  "Forms and Contracts"
+msgstr "Formų ir sutarčių"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item6.ItemList.item
+#, fuzzy
+msgid  "Finances"
+msgstr "Finansinių dokumentų"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item7.ItemList.item
+#, fuzzy
+msgid  "Education"
+msgstr "Švietimo"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item8.ItemList.item
+#, fuzzy
+msgid  "Presentation Backgrounds"
+msgstr "Pateikčių fono"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item9.ItemList.item
+#, fuzzy
+msgid  "Presentations"
+msgstr "Pateikčių"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item10.ItemList.item
+#, fuzzy
+msgid  "Miscellaneous"
+msgstr "Kiti"
+
+#: source/doc/doctempl.src#RID_CNT_STR_WAITING.String.Text
+#, fuzzy
+msgid  "The templates are being initialized for first-time usage."
+msgstr "Šablonai parengiami naudoti pirmą kartą."
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.ModalDialog.Text
+#, fuzzy
+msgid  "Templates"
+msgstr "Šablonai"
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_EDIT.FixedLine.Text
+#, fuzzy
+msgid  "New template"
+msgstr "Naujas šablonas"
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.FixedLine.Text
+#, fuzzy
+msgid  "Templates"
+msgstr "Šablonai"
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.FixedText.Text
+#, fuzzy
+msgid  "~Categories"
+msgstr "~Kategorijos"
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_STYLESHEETS.FixedText.Text
+#, fuzzy
+msgid  "~Templates"
+msgstr "~Šablonai"
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.PushButton.Text
+#, fuzzy
+msgid  "~Edit"
+msgstr "~Taisyti"
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_ORGANIZE.PushButton.Text
+#, fuzzy
+msgid  "~Organizer..."
+msgstr "~Tvarkyti..."
+
+#: source/doc/doc.src#MSG_CONFIRM_FILTER.QueryBox.Message
+msgid  "Saving in external formats may have caused\n information loss. Do you still want to close?"
+msgstr ""
+
+#: source/doc/doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.QueryBox.Message
+msgid  "Name already in use.\nDo you want to overwrite document template?"
+msgstr ""
+
+#: source/doc/doc.src#STR_DELETE_REGION.String.Text
+msgid  "Are you sure you want to delete the region "$1"?"
+msgstr ""
+
+#: source/doc/doc.src#STR_DELETE_TEMPLATE.String.Text
+msgid  "Are you sure you want to delete the entry "$1"?"
+msgstr ""
+
+#: source/doc/doc.src#MSG_REGION_NOTEMPTY.QueryBox.Message
+msgid  "The category is not empty.\nDelete anyway?"
+msgstr ""
+
+#: source/doc/doc.src#STR_QUERY_SAVE_DOCUMENT.String.Text
+msgid  "The document "$(DOC)" has been modified.\nDo you want to save your changes?"
+msgstr ""
+
+#: source/doc/doc.src#STR_STYLES.String.Text
+#, fuzzy
+msgid  "Styles"
+msgstr "Stiliai"
+
+#: source/doc/doc.src#STR_MACROS.String.Text
+#, fuzzy
+msgid  "Macros"
+msgstr "Makrokomandos"
+
+#: source/doc/doc.src#STR_CONFIG.String.Text
+#, fuzzy
+msgid  "Configuration"
+msgstr "Sąranka"
+
+#: source/doc/doc.src#STR_PRINT_STYLES_HEADER.String.Text
+#, fuzzy
+msgid  "Styles in "
+msgstr "Stiliai "
+
+#: source/doc/doc.src#STR_PRINT_STYLES.String.Text
+#, fuzzy
+msgid  "Printing Styles"
+msgstr "Spausdinimo stiliai"
+
+#: source/doc/doc.src#MSG_PRINT_ERROR.ErrorBox.Message
+#, fuzzy
+msgid  "The print job could not be started."
+msgstr "Nepavyko pradėti spausdinimo."
+
+#: source/doc/doc.src#STR_BACKUP_COPY.String.Text
+#, fuzzy
+msgid  "Copy"
+msgstr "Kopijuoti"
+
+#: source/doc/doc.src#MSG_CANT_OPEN_TEMPLATE.InfoBox.Message
+#, fuzzy
+msgid  "The template could not be opened."
+msgstr "Nepavyko atverti šablono."
+
+#: source/doc/doc.src#MSG_VIEW_OPEN_CANT_SAVE.InfoBox.Message
+#, fuzzy
+msgid  "Document already open for editing."
+msgstr "Dokumentas jau atvertas taisymui."
+
+#: source/doc/doc.src#STR_ERROR_SAVE.String.Text
+#, fuzzy
+msgid  "Error recording document "
+msgstr "Klaida įrašant dokumentą "
+
+#: source/doc/doc.src#STR_TEMPLATE_FILTER.String.Text
+#, fuzzy
+msgid  "Templates"
+msgstr "Šablonai"
+
+#: source/doc/doc.src#STR_ERROR_COPY_TEMPLATE.String.Text
+msgid  "Error copying template "$1". \nA template with this name may already exist."
+msgstr ""
+
+#: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE.String.Text
+msgid  "The template "$1" can not be deleted."
+msgstr ""
+
+#: source/doc/doc.src#STR_ERROR_MOVE_TEMPLATE.String.Text
+msgid  "Error moving template "$1"."
+msgstr ""
+
+#: source/doc/doc.src#MSG_ERROR_RESCAN.ErrorBox.Message
+#, fuzzy
+msgid  "The update could not be saved."
+msgstr "Nepavyko įrašyti atnaujintų duomenų."
+
+#: source/doc/doc.src#STR_ERROR_SAVE_TEMPLATE.String.Text
+#, fuzzy
+msgid  "Error saving template "
+msgstr "Klaida įrašant šabloną "
+
+#: source/doc/doc.src#MSG_ERROR_RENAME_TEMPLATE.ErrorBox.Message
+#, fuzzy
+msgid  "Error renaming template."
+msgstr "Klaida pervadinant šabloną."
+
+#: source/doc/doc.src#MSG_ERROR_RENAME_TEMPLATE_REGION.ErrorBox.Message
+#, fuzzy
+msgid  "Error renaming template category."
+msgstr "Klaida pervadinant šablonų kategoriją"
+
+#: source/doc/doc.src#MSG_ERROR_EMPTY_NAME.ErrorBox.Message
+#, fuzzy
+msgid  "Please specify a name."
+msgstr "Nurodykite pavadinimą."
+
+#: source/doc/doc.src#MSG_ERROR_UNIQ_NAME.ErrorBox.Message
+msgid  "Please specify a unique name.\nEntries must not be case specific."
+msgstr ""
+
+#: source/doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.String.Text
+msgid  "Should the template "$(TEXT)" become the default template?"
+msgstr ""
+
+#: source/doc/doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.QueryBox.Message
+#, fuzzy
+msgid  "Do you want to reset the default template?"
+msgstr "Ar atstatyti numatytąjį šabloną?"
+
+#: source/doc/doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.InfoBox.Message
+msgid  "Template directory\n$(DIR)\ndoes not exist."
+msgstr ""
+
+#: source/doc/doc.src#MSG_DOCINFO_CANTREAD.InfoBox.Message
+#, fuzzy
+msgid  "Document info cannot be read."
+msgstr "Negalima perskaityti dokumento informacijos."
+
+#: source/doc/doc.src#STR_ERROR_NOSTORAGE.String.Text
+#, fuzzy
+msgid  "The selected file has an incorrect format."
+msgstr "Parinktas failas yra neteisingo formato."
+
+#: source/doc/doc.src#STR_QUERY_MUSTOWNFORMAT.String.Text
+msgid  "Documents cannot be saved in $(FORMAT) format. Do you\nwant to save your changes using the $(OWNFORMAT) format?"
+msgstr ""
+
+#: source/doc/doc.src#STR_SAVEDOC.String.Text
+#, fuzzy
+msgid  "~Save"
+msgstr "Į~rašyti"
+
+#: source/doc/doc.src#STR_UPDATEDOC.String.Text
+#, fuzzy
+msgid  "~Update"
+msgstr "~Atnaujinti"
+
+#: source/doc/doc.src#STR_SAVEASDOC.String.Text
+#, fuzzy
+msgid  "Save ~As..."
+msgstr "Įrašyti ~taip..."
+
+#: source/doc/doc.src#STR_SAVECOPYDOC.String.Text
+#, fuzzy
+msgid  "Save Copy ~as..."
+msgstr "Įrašyti ~kopiją taip..."
+
+#: source/doc/doc.src#STR_CLOSEDOC.String.Text
+#, fuzzy
+msgid  "~Close"
+msgstr "~Užverti"
+
+#: source/doc/doc.src#STR_CLOSEDOC_ANDRETURN.String.Text
+#, fuzzy
+msgid  "~Close & Return to "
+msgstr "U~verti ir grįžti į "
+
+#: source/doc/doc.src#STR_WIZARD.String.Text
+#, fuzzy
+msgid  " AutoPilot"
+msgstr " Vediklis"
+
+#: source/doc/doc.src#RID_STR_FILTCONFIG.String.Text
+#, fuzzy
+msgid  "Configurations"
+msgstr "Sąrankos"
+
+#: source/doc/doc.src#RID_STR_FILTBASIC.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Basic libraries"
+msgstr "„%PRODUCTNAME Basic“ bibliotekos"
+
+#: source/doc/doc.src#RID_STR_WARNSTYLEOVERWRITE.String.Text
+msgid  "Should the "$(ARG1)" Style be replaced?"
+msgstr ""
+
+#: source/doc/doc.src#STR_DOC_LOADING.String.Text
+#, fuzzy
+msgid  "Loading Document"
+msgstr "Įkeliamas dokumentas"
+
+#: source/doc/doc.src#RID_DLSTATUS.INET_NAME_RESOLVE_START.String.Text
+#, fuzzy
+msgid  "Connection to: $(HOST). Waiting for response..."
+msgstr "Jungiamasi prie: $(HOST). Laukiama atsako..."
+
+#: source/doc/doc.src#RID_DLSTATUS.INET_CONNECT_START.String.Text
+#, fuzzy
+msgid  "Opening $(TARGET) at $(HOST)"
+msgstr "Atveriama $(TARGET) kompiuteryje $(HOST)"
+
+#: source/doc/doc.src#RID_DLSTATUS.INET_READ_STATUS.String.Text
+#, fuzzy
+msgid  "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
+msgstr "Įkeliama: $(TARGET) iš kompiuterio $(HOST). Įkelta: $(BYTE)"
+
+#: source/doc/doc.src#RID_DLSTATUS.INET_CONNECTION_CLOSED.String.Text
+#, fuzzy
+msgid  "Disconnected"
+msgstr "Atsijungta"
+
+#: source/doc/doc.src#MSG_OPEN_READONLY.QueryBox.Message
+msgid  "Document cannot be opened for editing.\nDo you want to open it as read-only?"
+msgstr ""
+
+#: source/doc/doc.src#STR_EDIT.String.Text
+#, fuzzy
+msgid  "Edit"
+msgstr "Taisa"
+
+#: source/doc/doc.src#RID_OFFICEFILTER.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Documents"
+msgstr "„%PRODUCTNAME“ dokumentai"
+
+#: source/doc/doc.src#STR_FRAMEOBJECT_PROPERTIES.String.Text
+#, fuzzy
+msgid  "Propert~ies..."
+msgstr "~Savybės ..."
+
+#: source/doc/doc.src#STR_FSET_FILTERNAME0.String.Text
+#, fuzzy
+msgid  "HTML (FrameSet)"
+msgstr "HTML (polangių išdėstymas)"
+
+#: source/doc/doc.src#STR_FSET_FILTERNAME1.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Frame Document"
+msgstr "„%PRODUCTNAME“ kadro dokumentas"
+
+#: source/doc/doc.src#STR_TEMPL_MOVED.String.Text
+msgid  "The template "$(TEMPLATE)" was not found at the original location. A template with the same name exists at "$(FOUND)". Should this template be used in the future when comparing?"
+msgstr ""
+
+#: source/doc/doc.src#STR_TEMPL_RESET.String.Text
+msgid  "The template "$(TEMPLATE)" has not been found. Should the template be looked for the next time the document is opened ?"
+msgstr ""
+
+#: source/doc/doc.src#STR_AUTOMATICVERSION.String.Text
+#, fuzzy
+msgid  "Automatically saved version"
+msgstr "Automatiškai įrašyta versija"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_SW.String.Text
+#, fuzzy
+msgid  "Text Document"
+msgstr "Teksto dokumentas"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_SWWEB.String.Text
+#, fuzzy
+msgid  "HTML Document"
+msgstr "HTML dokumentas"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_SWGLOB.String.Text
+#, fuzzy
+msgid  "Master Document"
+msgstr "Pagrindinis dokumentas"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_SC.String.Text
+#, fuzzy
+msgid  "Spreadsheet"
+msgstr "Skaičiuoklės dokumentas"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_SI.String.Text
+#, fuzzy
+msgid  "Presentation"
+msgstr "Pateiktis"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_SD.String.Text
+#, fuzzy
+msgid  "Drawing"
+msgstr "Grafikos dokumentas"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_MESSAGE.String.Text
+#, fuzzy
+msgid  "Message"
+msgstr "Laiškas"
+
+#: source/doc/doc.src#STR_NOSAVEANDCLOSE.String.Text
+#, fuzzy
+msgid  "~Discard"
+msgstr "~Neįrašyti"
+
+#: source/doc/doc.src#STR_PACKNGO_NOACCESS.String.Text
+#, fuzzy
+msgid  "Access to the current data medium not possible."
+msgstr "Prieiga prie dabartinės duomenų laikmenos negalima."
+
+#: source/doc/doc.src#STR_PACKNGO_NEWMEDIUM.String.Text
+#, fuzzy
+msgid  "Insert the next data carrier and click OK."
+msgstr "Įterpkite kitus duomenis ir spustelėkite „Gerai“."
+
+#: source/doc/doc.src#STR_OBJECT.String.Text
+#, fuzzy
+msgid  "Object"
+msgstr "Objektas"
+
+#: source/doc/doc.src#DLG_MACROQUERY.QueryBox.Title
+#, fuzzy
+msgid  "Run Macro"
+msgstr "Vykdyti makrokomandą"
+
+#: source/doc/doc.src#DLG_MACROQUERY.QueryBox.Message
+#, fuzzy
+msgid  "This document contains macros. $(TEXT)"
+msgstr "Šiame dokumente yra makrokomandų. $(TEXT)"
+
+#: source/doc/doc.src#BTN_OK.String.Text
+#, fuzzy
+msgid  "Run"
+msgstr "Vykdyti"
+
+#: source/doc/doc.src#BTN_CANCEL.String.Text
+#, fuzzy
+msgid  "Do Not Run"
+msgstr "Nevykdyti"
+
+#: source/doc/doc.src#FT_CANCEL.String.Text
+msgid  "According to the security settings, the macros in this document should not be run. Do you want to run them anyway?"
+msgstr ""
+
+#: source/doc/doc.src#FT_OK.String.Text
+#, fuzzy
+msgid  "Do you want to allow these macros to be run?"
+msgstr "Ar leisti vykdyti šias makrokomandas?"
+
+#: source/doc/doc.src#STR_EXPORTASPDF_TITLE.String.Text
+#, fuzzy
+msgid  "Export as PDF"
+msgstr "Eksportuoti PDF formatu"
+
+#: source/doc/doc.src#STR_EXPORTWITHCFGBUTTON.String.Text
+#, fuzzy
+msgid  "Export..."
+msgstr "Eksportuoti..."
+
+#: source/doc/doc.src#STR_EXPORTBUTTON.String.Text
+#, fuzzy
+msgid  "Export"
+msgstr "Eksportuoti"
+
+#: source/doc/doc.src#RID_SVXSTR_SECURITY_ADDPATH.String.Text
+#, fuzzy
+msgid  "Add this directory to the list of secure paths: "
+msgstr "Įtraukti šį aplanką į saugių adresų sąrašą: "
+
+#: source/doc/doc.src#STR_LABEL_FILEFORMAT.String.Text
+#, fuzzy
+msgid  "File format:"
+msgstr "Failo formatas:"
+
+#: source/doc/doc.src#STR_HIDDENINFO_CONTAINS.String.Text
+msgid  "This document contains:\n\n"
+msgstr ""
+
+#: source/doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.String.Text
+#, fuzzy
+msgid  "Recorded changes"
+msgstr "Įrašyti taisymai"
+
+#: source/doc/doc.src#STR_HIDDENINFO_NOTES.String.Text
+#, fuzzy
+msgid  "Notes"
+msgstr "Pastabos"
+
+#: source/doc/doc.src#STR_HIDDENINFO_DOCVERSIONS.String.Text
+#, fuzzy
+msgid  "Document versions"
+msgstr "Dokumento versijos"
+
+#: source/doc/doc.src#STR_HIDDENINFO_FIELDS.String.Text
+#, fuzzy
+msgid  "Fields"
+msgstr "Laukai"
+
+#: source/doc/doc.src#STR_HIDDENINFO_LINKDATA.String.Text
+#, fuzzy
+msgid  "Linked data..."
+msgstr "Susieti duomenys..."
+
+#: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_SAVING.String.Text
+#, fuzzy
+msgid  "Do you want to continue saving the document?"
+msgstr "Ar tęsti dokumento įrašymą?"
+
+#: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_PRINTING.String.Text
+#, fuzzy
+msgid  "Do you want to continue printing the document?"
+msgstr "Ar tęsti dokumento spausdinimą?"
+
+#: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_SIGNING.String.Text
+#, fuzzy
+msgid  "Do you want to continue signing the document?"
+msgstr "Ar tęsti dokumento pasirašymą?"
+
+#: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_CREATEPDF.String.Text
+#, fuzzy
+msgid  "Do you want to continue creating a PDF file?"
+msgstr "Ar tęsti PDF failo kūrimą?"
+
+#: source/doc/doc.src#STR_NEW_FILENAME_SAVE.String.Text
+msgid  "If you do not want to overwrite the original document, you should save your work under a new filename."
+msgstr ""
+
+#: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.String.Text
+#, fuzzy
+msgid  "Some template files are protected and can not be deleted."
+msgstr "Kai kurie šablono failai yra apsaugoti ir jų negalima pašalinti."
+
+#: source/doc/doc.src#STR_DOCINFO_INFOFIELD.String.Text
+#, fuzzy
+msgid  "Info %1"
+msgstr "Info %1"
+
+#: source/doc/doc.src#STR_SHARED.String.Text
+#, fuzzy
+msgid  " (shared)"
+msgstr "(bendras)"
+
+#: source/doc/doc.src#STR_XMLSEC_ODF12_EXPECTED.String.Text
+msgid  "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-Options-Load/Save-General. Signing documents requires ODF 1.2 (OpenOffice.org 3.x)."
+msgstr ""
+
+#: source/doc/doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.QueryBox.Message
+msgid  "The document has to be saved before it can be signed. Saving the document removes all present signatures.\nDo you want to save the document?"
+msgstr ""
+
+#: source/doc/doc.src#STR_QRYTEMPL_MESSAGE.String.Text
+msgid  "The template '$(ARG1)' on which this document is based, has been modified. Do you want to update style based formattings according to the modified template?"
+msgstr ""
+
+#: source/doc/doc.src#STR_QRYTEMPL_UPDATE_BTN.String.Text
+#, fuzzy
+msgid  "~Update Styles"
+msgstr "~Atnaujinti stilius"
+
+#: source/doc/doc.src#STR_QRYTEMPL_KEEP_BTN.String.Text
+#, fuzzy
+msgid  "~Keep Old Styles"
+msgstr "~Išlaikyti esamus stilius"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.ModalDialog.Text
+#, fuzzy
+msgid  "Template Management"
+msgstr "Šablonų tvarkymas"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_OK.OKButton.Text
+#, fuzzy
+msgid  "Close"
+msgstr "Užverti"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_FILES.PushButton.Text
+#, fuzzy
+msgid  "~File..."
+msgstr "~Failas..."
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_ADDRESSTEMPLATE.PushButton.Text
+#, fuzzy
+msgid  "~Address Book..."
+msgstr "~Adresų knygelė..."
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
+#, fuzzy
+msgid  "Documents"
+msgstr "Dokumentai"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
+#, fuzzy
+msgid  "Documents"
+msgstr "Dokumentai"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.MenuButton.Text
+#, fuzzy
+msgid  "Commands"
+msgstr "Komandos"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_NEW.MenuItem.Text
+#, fuzzy
+msgid  "~New"
+msgstr "~Naujas"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DELETE.MenuItem.Text
+#, fuzzy
+msgid  "~Delete"
+msgstr "~Šalinti"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.MenuItem.Text
+#, fuzzy
+msgid  "~Edit"
+msgstr "~Taisyti"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_FROM.MenuItem.Text
+#, fuzzy
+msgid  "Import Template..."
+msgstr "Importuoti šabloną..."
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_TO.MenuItem.Text
+#, fuzzy
+msgid  "Export Template..."
+msgstr "Eksportuoti šabloną..."
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINT.MenuItem.Text
+#, fuzzy
+msgid  "~Print"
+msgstr "~Spausdinti"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINTER_SETUP.MenuItem.Text
+#, fuzzy
+msgid  "Printer Settings..."
+msgstr "Spausdintuvo nuostatos..."
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESCAN.MenuItem.Text
+#, fuzzy
+msgid  "Update"
+msgstr "Atnaujinti"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DEFAULT_TEMPLATE.MenuItem.Text
+#, fuzzy
+msgid  "Set As Default Template"
+msgstr "Nustatyti numatytuoju šablonu"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESET_DEFAULT_TEMPLATE.MenuItem.Text
+#, fuzzy
+msgid  "Reset Default Template"
+msgstr "Atstatyti numatytąjį šabloną"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
+#, fuzzy
+msgid  "Templates"
+msgstr "Šablonai"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
+#, fuzzy
+msgid  "Templates"
+msgstr "Šablonai"
+
+#: source/doc/new.src#DLG_NEW_FILE.ModalDialog.Text
+#, fuzzy
+msgid  "New"
+msgstr "Naujas"
+
+#: source/doc/new.src#DLG_NEW_FILE.FT_REGION.FixedText.Text
+#, fuzzy
+msgid  "~Categories"
+msgstr "~Kategorijos"
+
+#: source/doc/new.src#DLG_NEW_FILE.FT_TEMPLATE.FixedText.Text
+#, fuzzy
+msgid  "T~emplates"
+msgstr "Ša~blonai"
+
+#: source/doc/new.src#DLG_NEW_FILE.BT_MORE.MoreButton.Text
+#, fuzzy
+msgid  "~More"
+msgstr "~Daugiau"
+
+#: source/doc/new.src#DLG_NEW_FILE.BTN_PREVIEW.CheckBox.Text
+#, fuzzy
+msgid  "Pre~view"
+msgstr "~Peržiūra"
+
+#: source/doc/new.src#DLG_NEW_FILE.GB_DOCINFO.FixedLine.Text
+#, fuzzy
+msgid  "Description"
+msgstr "Aprašymas"
+
+#: source/doc/new.src#DLG_NEW_FILE.CB_TEXT_STYLE.CheckBox.Text
+#, fuzzy
+msgid  "Te~xt"
+msgstr "Te~kstas"
+
+#: source/doc/new.src#DLG_NEW_FILE.CB_FRAME_STYLE.CheckBox.Text
+#, fuzzy
+msgid  "~Frame"
+msgstr "~Kadras"
+
+#: source/doc/new.src#DLG_NEW_FILE.CB_PAGE_STYLE.CheckBox.Text
+#, fuzzy
+msgid  "~Pages"
+msgstr "~Puslapiai"
+
+#: source/doc/new.src#DLG_NEW_FILE.CB_NUM_STYLE.CheckBox.Text
+#, fuzzy
+msgid  "N~umbering"
+msgstr "N~umeravimas"
+
+#: source/doc/new.src#DLG_NEW_FILE.CB_MERGE_STYLE.CheckBox.Text
+#, fuzzy
+msgid  "~Overwrite"
+msgstr "~Perrašymas"
+
+#: source/doc/new.src#DLG_NEW_FILE.PB_LOAD_FILE.PushButton.Text
+#, fuzzy
+msgid  "From File..."
+msgstr "Iš failo..."
+
+#: source/doc/new.src#DLG_NEW_FILE.STR_LOAD_TEMPLATE.String.Text
+#, fuzzy
+msgid  "Load Styles"
+msgstr "Įkelti stilius"
+
+#: source/doc/new.src#DLG_NEW_FILE.FT_TITLE.FixedText.Text
+#, fuzzy
+msgid  "~Title"
+msgstr "~Pavadinimas"
+
+#: source/doc/new.src#DLG_NEW_FILE.FT_THEMA.FixedText.Text
+#, fuzzy
+msgid  "Subject"
+msgstr "Tema"
+
+#: source/doc/new.src#DLG_NEW_FILE.FT_KEYWORDS.FixedText.Text
+#, fuzzy
+msgid  "~Key words"
+msgstr "~Reikšminiai žodžiai"
+
+#: source/doc/new.src#DLG_NEW_FILE.FT_DESC.FixedText.Text
+#, fuzzy
+msgid  "~Description"
+msgstr "~Aprašymas"
+
+#: source/menu/menu.src#STR_MENU_CFGITEM.String.Text
+#, fuzzy
+msgid  "Configuration Menu"
+msgstr "Sąrankos meniu"
+
+#: source/menu/menu.src#STR_MENU_ADDONS.String.Text
+#, fuzzy
+msgid  "~Add-Ons"
+msgstr "~Priedai"
+
+#: source/menu/menu.src#MN_CLIPBOARDFUNCS.SID_CUT.MenuItem.Text
+#, fuzzy
+msgid  "Cu~t"
+msgstr "Iš~kirpti"
+
+#: source/menu/menu.src#MN_CLIPBOARDFUNCS.SID_COPY.MenuItem.Text
+#, fuzzy
+msgid  "~Copy"
+msgstr "K~opijuoti"
+
+#: source/menu/menu.src#MN_CLIPBOARDFUNCS.SID_PASTE.MenuItem.Text
+#, fuzzy
+msgid  "~Paste"
+msgstr "Į~dėti"
+
+#: source/menu/menu.src#SID_WIN_FULLSCREEN.String.Text
+#, fuzzy
+msgid  "Leave Full-Screen Mode"
+msgstr "Išjungti viso ekrano veikseną"
+
+#: source/menu/menu.src#STR_MENU_ADDONHELP.String.Text
+#, fuzzy
+msgid  "Add-~On Help"
+msgstr "P~riedo žinynas"
+
+#: source/menu/menu.src#STR_MENU_SYNONYMS.String.Text
+msgid  "Synonyms"
+msgstr ""
+
+#: source/menu/menu.src#STR_MENU_NO_SYNONYM_FOUND.String.Text
+msgid  "(none)"
+msgstr ""
+
+#: source/menu/menu.src#STR_MENU_THESAURUS.String.Text
+msgid  "~Thesaurus..."
+msgstr ""
+
+#: source/view/view.src#STR_NODEFPRINTER.String.Text
+msgid  "No default printer found.\nPlease choose a printer and try again."
+msgstr ""
+
+#: source/view/view.src#STR_NOSTARTPRINTER.String.Text
+msgid  "Could not start printer.\nPlease check your printer configuration."
+msgstr ""
+
+#: source/view/view.src#STR_PRINTER_NOTAVAIL.String.Text
+msgid  "This document has been formatted for the printer $1. The specified printer is not available. \nDo you want to use the standard printer $2 ?"
+msgstr ""
+
+#: source/view/view.src#STR_PRINT_OPTIONS.String.Text
+#, fuzzy
+msgid  "Options..."
+msgstr "Parinktys..."
+
+#: source/view/view.src#STR_PRINT_OPTIONS_TITLE.String.Text
+#, fuzzy
+msgid  "Printer Options"
+msgstr "Spausdintuvo parinktys"
+
+#: source/view/view.src#STR_ERROR_PRINTER_BUSY.String.Text
+#, fuzzy
+msgid  "Printer busy"
+msgstr "Spausdintuvas užimtas"
+
+#: source/view/view.src#STR_ERROR_PRINT.String.Text
+#, fuzzy
+msgid  "Error while printing"
+msgstr "Klaida spausdinant"
+
+#: source/view/view.src#STR_PRINTING.String.Text
+#, fuzzy
+msgid  "Printing"
+msgstr "Spausdinama"
+
+#: source/view/view.src#STR_PAGE.String.Text
+#, fuzzy
+msgid  "Page "
+msgstr "Puslapis "
+
+#: source/view/view.src#STR_READONLY.String.Text
+#, fuzzy
+msgid  " (read-only)"
+msgstr " (tik skaitymui)"
+
+#: source/view/view.src#STR_PRINT_NEWORI.String.Text
+msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
+msgstr ""
+
+#: source/view/view.src#STR_PRINT_NEWSIZE.String.Text
+msgid  "The page size has been modified.\nShould the new settings be saved\nin the active document?"
+msgstr ""
+
+#: source/view/view.src#STR_PRINT_NEWORISIZE.String.Text
+msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
+msgstr ""
+
+#: source/view/view.src#STR_PREVIEW_DOCINFO.String.Text
+msgid  "<html><body BGCOLOR="#c0c0c0"><font FACE="Arial"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
+msgstr ""
+
+#: source/view/view.src#STR_PREVIEW_NODOCINFO.String.Text
+msgid  "<HTML><BODY BGCOLOR="#c0c0c0"><BR><BR><P><FONT FACE="Arial"><B>No document properties found.</B></FONT></P></BODY></HTML>"
+msgstr ""
+
+#: source/view/view.src#MSG_CANT_CLOSE.InfoBox.Message
+msgid  "The document cannot be closed because a\n print job is being carried out."
+msgstr ""
+
+#: source/view/view.src#DLG_PRINTMONITOR.FT_PRINTING.FixedText.Text
+#, fuzzy
+msgid  "is being printed on"
+msgstr "spausdinama su"
+
+#: source/view/view.src#DLG_PRINTMONITOR.STR_FT_PREPARATION.String.Text
+#, fuzzy
+msgid  "is being prepared for printing"
+msgstr "ruošiama spausdinimui"
+
+#: source/view/view.src#MSG_ERROR_SEND_MAIL.InfoBox.Message
+msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
+msgstr ""
+
+#: source/view/view.src#MSG_QUERY_OPENASTEMPLATE.QueryBox.Message
+msgid  "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
+msgstr ""
+
+#: source/view/view.src#STR_REPAIREDDOCUMENT.String.Text
+#, fuzzy
+msgid  " (repaired document)"
+msgstr " (sutvarkytas dokumentas)"
+
+#: source/view/view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.ErrorBox.Message
+msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
+msgstr ""
+
+#: source/view/view.src#DLG_PRINTMONITOR_TEXT.#define.Text
+#, fuzzy
+msgid  "Print Monitor"
+msgstr "Spausdinimo vaizduoklis"
+
+#: source/view/view.src#STR_ERROR_SAVE_TEMPLATE.String.Text
+#, fuzzy
+msgid  "Error saving template "
+msgstr "Klaida įrašant šabloną "

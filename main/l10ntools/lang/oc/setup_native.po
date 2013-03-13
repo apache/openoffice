@@ -1,114 +1,124 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
 
-#: macinstall.ulf#OKLabel.LngText.text
-msgid "Ok"
+
+#: source/mac/macinstall.ulf#OKLabel
+msgid  "Ok"
 msgstr "ÒC  "
 
-#: macinstall.ulf#InstallLabel.LngText.text
-msgctxt "macinstall.ulf#InstallLabel.LngText.text"
-msgid "Install"
+#: source/mac/macinstall.ulf#InstallLabel
+msgid  "Install"
 msgstr "Installacion"
 
-#: macinstall.ulf#AbortLabel.LngText.text
-msgctxt "macinstall.ulf#AbortLabel.LngText.text"
-msgid "Abort"
+#: source/mac/macinstall.ulf#AbortLabel
+msgid  "Abort"
 msgstr "Abandonar"
 
-#: macinstall.ulf#IntroText1.LngText.text
-msgid "Welcome to the [FULLPRODUCTNAME] Installation Wizard"
+#: source/mac/macinstall.ulf#IntroText1
+msgid  "Welcome to the [FULLPRODUCTNAME] Installation Wizard"
 msgstr ""
-"Planvenguda, planvengut dins l'assistent d'installacion de [FULLPRODUCTNAME]"
 
-#: macinstall.ulf#IntroText2.LngText.text
-msgid "This installation will update your installed versions of [PRODUCTNAME]"
+#: source/mac/macinstall.ulf#IntroText2
+msgid  "This installation will update your installed versions of [PRODUCTNAME]"
 msgstr ""
-"Aquela installacion actualizarà las versions installadas d'[PRODUCTNAME]"
 
-#: macinstall.ulf#IntroText3.LngText.text
-msgid "This might take a moment."
+#: source/mac/macinstall.ulf#IntroText3
+msgid  "This might take a moment."
 msgstr "Prendrà un pauc de temps."
 
-#: macinstall.ulf#ChooseMyOwnText.LngText.text
-msgid "Not listed (choose location in an extra step)"
+#: source/mac/macinstall.ulf#ChooseMyOwnText
+msgid  "Not listed (choose location in an extra step)"
 msgstr "Pas listat (causir una emplaçament dins una estapa suplementària)"
 
-#: macinstall.ulf#ListPromptText.LngText.text
-msgid ""
-"Choose [PRODUCTNAME] [PRODUCTVERSION] installation for which you want to "
-"install the [FULLPRODUCTNAME]"
+#: source/mac/macinstall.ulf#ListPromptText
+msgid  "Choose [PRODUCTNAME] [PRODUCTVERSION] installation for which you want to install the [FULLPRODUCTNAME]"
 msgstr ""
-"Causir per quina installacion de [PRODUCTNAME] [PRODUCTVERSION] volètz "
-"d'installar [FULLPRODUCTNAME]"
 
-#: macinstall.ulf#ChooseManualText.LngText.text
-msgid "Point the dialog to your [PRODUCTNAME] [PRODUCTVERSION] installation."
+#: source/mac/macinstall.ulf#ChooseManualText
+msgid  "Point the dialog to your [PRODUCTNAME] [PRODUCTVERSION] installation."
 msgstr ""
-"Indica la fenèstra de dialòg per vòstra installacion de [PRODUCTNAME] "
-"[PRODUCTVERSION]."
 
-#: macinstall.ulf#ListOKLabelText.LngText.text
-msgctxt "macinstall.ulf#ListOKLabelText.LngText.text"
-msgid "Install"
+#: source/mac/macinstall.ulf#ListOKLabelText
+msgid  "Install"
 msgstr "Installar"
 
-#: macinstall.ulf#ListCancelLabel.LngText.text
-msgctxt "macinstall.ulf#ListCancelLabel.LngText.text"
-msgid "Abort"
+#: source/mac/macinstall.ulf#ListCancelLabel
+msgid  "Abort"
 msgstr "Abandonar"
 
-#: macinstall.ulf#AppInvalidText1.LngText.text
-msgid "This is not a valid [PRODUCTNAME] [PRODUCTVERSION] installation."
+#: source/mac/macinstall.ulf#AppInvalidText1
+msgid  "This is not a valid [PRODUCTNAME] [PRODUCTVERSION] installation."
 msgstr "Es pas una installacion d'[PRODUCTNAME] [PRODUCTVERSION] valida."
 
-#: macinstall.ulf#AppInvalidText2.LngText.text
-msgid ""
-"Run the installer again and choose a valid [PRODUCTNAME] [PRODUCTVERSION] "
-"installation"
+#: source/mac/macinstall.ulf#AppInvalidText2
+msgid  "Run the installer again and choose a valid [PRODUCTNAME] [PRODUCTVERSION] installation"
 msgstr ""
-"Vos calriá tornar aviar l'installador e causir una installacion "
-"d'[PRODUCTNAME] [PRODUCTVERSION] valida."
 
-#: macinstall.ulf#StartInstallText1.LngText.text
-msgid "Click Install to start the installation"
+#: source/mac/macinstall.ulf#StartInstallText1
+msgid  "Click Install to start the installation"
 msgstr "Clicatz sus Installar per començar l'installacion"
 
-#: macinstall.ulf#StartInstallText2.LngText.text
-msgid "Installation might take a minute..."
+#: source/mac/macinstall.ulf#StartInstallText2
+msgid  "Installation might take a minute..."
 msgstr "L'installacion prendrà qualques minutas..."
 
-#: macinstall.ulf#IdentifyQText.LngText.text
-msgid ""
-"Installation failed, most likely your account does not have the necessary "
-"privileges."
-msgstr "Escac de l'installacion, avètz pas los dreches necessaris. "
+#: source/mac/macinstall.ulf#IdentifyQText
+msgid  "Installation failed, most likely your account does not have the necessary privileges."
+msgstr ""
 
-#: macinstall.ulf#IdentifyQText2.LngText.text
-msgid "Do you want to identify as administrator and try again?"
+#: source/mac/macinstall.ulf#IdentifyQText2
+msgid  "Do you want to identify as administrator and try again?"
 msgstr "Vos volètz identificar coma administrator e assajar un còp de mai ? "
 
-#: macinstall.ulf#IdentifyYES.LngText.text
-msgid "Yes, identify"
+#: source/mac/macinstall.ulf#IdentifyYES
+msgid  "Yes, identify"
 msgstr "Òc, identificacion"
 
-#: macinstall.ulf#IdentifyNO.LngText.text
-msgid "No, abort installation"
+#: source/mac/macinstall.ulf#IdentifyNO
+msgid  "No, abort installation"
 msgstr "Non, abandonar l'installacion"
 
-#: macinstall.ulf#InstallFailedText.LngText.text
-msgid "Installation failed."
+#: source/mac/macinstall.ulf#InstallFailedText
+msgid  "Installation failed."
 msgstr "Escac de l'installacion."
 
-#: macinstall.ulf#InstallCompleteText.LngText.text
-msgid "Installation of [PRODUCTNAME] language pack completed."
+#: source/mac/macinstall.ulf#InstallCompleteText
+msgid  "Installation of [PRODUCTNAME] language pack completed."
 msgstr "Capitada de l'installacion del paquet de lengatge d'[PRODUCTNAME] "
 
-#: macinstall.ulf#InstallCompleteText2.LngText.text
-msgid ""
-"Call '[PRODUCTNAME]-Preferences-Language Settings-Languages' to change the "
-"user interface language."
+#: source/mac/macinstall.ulf#InstallCompleteText2
+msgid  "Call '[PRODUCTNAME]-Preferences-Language Settings-Languages' to change the user interface language."
 msgstr ""
-"Causir '[PRODUCTNAME]-Preferéncias-Lengatge paramètres-Lengatge' per cambiar "
-"la lenga de l'interfàcia usancièra."
 
-#: macinstall.ulf#InstallCompleteTextPatch.LngText.text
-msgid "Installation of [FULLPRODUCTNAME] completed"
+#: source/mac/macinstall.ulf#InstallCompleteTextPatch
+msgid  "Installation of [FULLPRODUCTNAME] completed"
 msgstr "Installacion de [FULLPRODUCTNAME] acabada."

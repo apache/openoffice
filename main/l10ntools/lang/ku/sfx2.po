@@ -1,2780 +1,2742 @@
-
-#: view.src#STR_NODEFPRINTER.string.text
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
 msgid ""
-"No default printer found.\n"
-"Please choose a printer and try again."
 msgstr ""
-"Çapereke standard nehate dîtin.\n"
-"Çaperekê hilbijêrin û dîsa biceribînin."
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
 
-#: view.src#STR_NOSTARTPRINTER.string.text
-msgid ""
-"Could not start printer.\n"
-"Please check your printer configuration."
-msgstr ""
-"Çaper nexebitî.\n"
-"Veavakirina çaperê kontrol bikin."
 
-#: view.src#STR_PRINTER_NOTAVAIL.string.text
-msgid ""
-"This document has been formatted for the printer $1. The specified printer "
-"is not available. \n"
-"Do you want to use the standard printer $2 ?"
-msgstr ""
-"Belge, ji bo çapera $1 hate şêwekirin. Çapera ku hate diyarkirin nehate "
-"dîtin.\n"
-"Bila Çapera standart $2 were bikaranîn?"
-
-#: view.src#STR_PRINT_OPTIONS.string.text
-msgid "Options..."
-msgstr "Vebijêrk..."
-
-#: view.src#STR_PRINT_OPTIONS_TITLE.string.text
-msgid "Printer Options"
-msgstr "Vebijêrkên Çapgerê"
-
-#: view.src#STR_ERROR_PRINTER_BUSY.string.text
-msgid "Printer busy"
-msgstr "Çaper çalak e"
-
-#: view.src#STR_ERROR_PRINT.string.text
-msgid "Error while printing"
-msgstr "Di çapkirinê de çewtî"
-
-#: view.src#STR_PRINTING.string.text
-msgid "Printing"
-msgstr "Tê çapkirin"
-
-#: view.src#STR_PAGE.string.text
-msgid "Page "
-msgstr "Rûpel "
-
-#: view.src#STR_ERROR_SAVE_TEMPLATE.string.text
-msgid "Error saving template "
-msgstr "Dema şablon dihate nivîsandin xeletî çêbû "
-
-#: view.src#STR_READONLY.string.text
-msgid " (read-only)"
-msgstr " (tenê-xwendin)"
-
-#: view.src#STR_PRINT_NEWORI.string.text
-msgctxt "view.src#STR_PRINT_NEWORI.string.text"
-msgid ""
-"The page size and orientation have been modified.\n"
-"Would you like to save the new settings in the\n"
-"active document?"
-msgstr ""
-"Pîvanên rûpelê û mîhekên hêlan guherî.\n"
-"Di belgeya derbasdar de bila mîhengên nû\n"
-"tomar bibe?"
-
-#: view.src#STR_PRINT_NEWSIZE.string.text
-msgid ""
-"The page size has been modified.\n"
-"Should the new settings be saved\n"
-"in the active document?"
-msgstr ""
-"Te mezinahiya rûpelê guherand.\n"
-"Mîhenkên ku guherî\n"
-"bila di belgeyê de were bikaranîn?"
-
-#: view.src#STR_PRINT_NEWORISIZE.string.text
-msgctxt "view.src#STR_PRINT_NEWORISIZE.string.text"
-msgid ""
-"The page size and orientation have been modified.\n"
-"Would you like to save the new settings in the\n"
-"active document?"
-msgstr ""
-"Pîvanên rûpelê û mîhekên hêlan guherî.\n"
-"Di belgeya derbasdar de bila mîhenkên nû\n"
-"tomar bibe?"
-
-#: view.src#STR_PREVIEW_DOCINFO.string.text
-msgid ""
-"<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$("
-"TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt>"
-"<b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
-msgstr ""
-"<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Sernav:</b><dd>$"
-"(TITEL)<dt><b>Mijar:</b><dd>$(THEME)<dt><b>Peyvên mifte:</b><dd>$(KEYWORDS)<"
-"dt><b>Rave:</b><dd>$(TEXT)</dl></font></body></html>"
-
-#: view.src#STR_PREVIEW_NODOCINFO.string.text
-msgid ""
-"<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document "
-"properties found.</B></FONT></P></BODY></HTML>"
-msgstr ""
-"<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT "
-"FACE=\"Arial\"><B>Taybetmendiyên belgeyê nehate "
-"dîtin.</B></FONT></P></BODY></HTML>"
-
-#: view.src#MSG_CANT_CLOSE.infobox.text
-msgid ""
-"The document cannot be closed because a\n"
-" print job is being carried out."
-msgstr ""
-"Belge nayê girtin ji ber ku\n"
-"karekî nivîsandinê tê kirin."
-
-#: view.src#DLG_PRINTMONITOR_TEXT.#define.text
-msgid "Print Monitor"
-msgstr "Monîtorê Çapê"
-
-#: view.src#DLG_PRINTMONITOR.FT_PRINTING.fixedtext.text
-msgid "is being printed on"
-msgstr "tê çapkirin li"
-
-#: view.src#DLG_PRINTMONITOR.STR_FT_PREPARATION.string.text
-msgid "is being prepared for printing"
-msgstr "ji bo çapkirinê tê amadekirin"
-
-#: view.src#MSG_ERROR_SEND_MAIL.infobox.text
-msgid ""
-"An error occurred in sending the message. Possible errors could be a missing "
-"user account or a defective setup.\n"
-"Please check the %PRODUCTNAME settings or your e-mail program settings."
-msgstr ""
-"Dema peyam dihate şandin xeletî çêbû. Hesabê bikarhêner yê kêm an jî "
-"sazkirineke kêm dikare bibe sedema xeletiyan.\n"
-"Ji kerema xwe mîhenkên %PRODUCTNAME û bernameya e-peyaman kontrol bike."
-
-#: view.src#MSG_QUERY_OPENASTEMPLATE.querybox.text
-msgid ""
-"This document cannot be edited, possibly due to missing access rights. Do "
-"you want to edit a copy of the document?"
-msgstr ""
-"Ev belge nayê nivîsîn, di be ku ji ber sedemên mafên gihîştinê be. Tu "
-"dixwazî di jibergirtî yekê vê belgeyê de binivîsî?"
-
-#: view.src#STR_REPAIREDDOCUMENT.string.text
-msgid " (repaired document)"
-msgstr " (belgeya temîrkirî)"
-
-#: view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.errorbox.text
-msgid ""
-"%PRODUCTNAME could not find a web browser on your system. Please check your "
-"Desktop Preferences or install a web browser (for example, Mozilla) in the "
-"default  location requested during the browser installation."
-msgstr ""
-"%PRODUCTNAME di pergala we de geroka torê ya hatiye barkirin nedît. Ji "
-"kerema xwe Mîhengên Sermasê kontrol bikin an jî geroka torê yekê nû (mînak, "
-"Mozilla) saz bikin di cihê standard yê ku demê sazkirina de tê pirsîn."
-
-#: menu.src#STR_MENU_CFGITEM.string.text
-msgid "Configuration Menu"
-msgstr "Pêşeka Veavakirinê"
-
-#: menu.src#STR_MENU_ADDONS.string.text
-msgid "~Add-Ons"
-msgstr "~Pêvek"
-
-#: menu.src#MN_CLIPBOARDFUNCS.SID_CUT.menuitem.text
-msgid "Cu~t"
-msgstr "Jê bi~ke"
-
-#: menu.src#MN_CLIPBOARDFUNCS.SID_COPY.menuitem.text
-msgid "~Copy"
-msgstr "~Kopî bike"
-
-#: menu.src#MN_CLIPBOARDFUNCS.SID_PASTE.menuitem.text
-msgid "~Paste"
-msgstr "~Pêveke"
-
-#: menu.src#SID_WIN_FULLSCREEN.string.text
-msgid "Leave Full-Screen Mode"
-msgstr "Ji moda dîmendera tijî derkeve"
-
-#: menu.src#STR_MENU_ADDONHELP.string.text
-msgid "Add-~On Help"
-msgstr "~Alîkariya Pêvekê"
-
-#: menu.src#STR_MENU_SYNONYMS.string.text
-msgid "Synonyms"
-msgstr "Hevwate"
-
-#: menu.src#STR_MENU_NO_SYNONYM_FOUND.string.text
-msgid "(none)"
-msgstr "(ne yek jî)"
-
-#: menu.src#STR_MENU_THESAURUS.string.text
-msgid "~Thesaurus..."
-msgstr "~Ferhenga hevwateyan..."
-
-#: fltfnc.src#STR_FILTER_NOT_INSTALLED.string.text
-msgid ""
-"The selected filter $(FILTER) has not been installed.\n"
-"Would you like to do this now?"
-msgstr ""
-"Parzûna $(FILTER) a hilbijartî ne sazkirî ye.\n"
-"Niha dixwazî saz bikî?"
-
-#: fltfnc.src#STR_FILTER_CONSULT_SERVICE.string.text
-msgid ""
-"The selected filter $(FILTER) is not included in your edition.\n"
-"You can find information about orders on our homepage."
-msgstr ""
-"Parzûna hatiye hilbijartin $(FILTER) di guhertoya te de tuneye.\n"
-"Ji bo sîparîşkirinê agahiyên pêwist tu dikarî di malpera me de bibîne."
-"X-Accelerator-Marker: ~\n"
-
-#: app.src#STR_NONAME.string.text
-msgid "Untitled"
-msgstr "Bênav"
-
-#: app.src#STR_CLOSE.string.text
-msgid "Close"
-msgstr "Bigire"
-
-#: app.src#STR_STYLE_FILTER_AUTO.string.text
-msgid "Automatic"
-msgstr "Bixweber"
-
-#: app.src#STR_STANDARD_SHORTCUT.string.text
+#: source/appl/dde.src#MD_DDE_LINKEDIT.ModalDialog.Text
 #, fuzzy
-msgctxt "app.src#STR_STANDARD_SHORTCUT.string.text"
-msgid "Standard"
-msgstr "Standard"
+msgid  "Modify Link"
+msgstr "Girêdanê serast bike"
 
-#: app.src#STR_BYTES.string.text
-msgid "Bytes"
-msgstr "Bayt"
-
-#: app.src#STR_KB.string.text
-msgid "KB"
-msgstr "KB"
-
-#: app.src#STR_MB.string.text
-msgid "MB"
-msgstr "MB"
-
-#: app.src#STR_GB.string.text
-msgid "GB"
-msgstr "GB"
-
-#: app.src#MSG_QUERY_LASTVERSION.querybox.text
-msgid "Cancel all changes?"
-msgstr "Hemû guhertinan betal bike."
-
-#: app.src#RID_DOCALREADYLOADED_DLG.infobox.text
-msgid "Document already open."
-msgstr "Belge ji xwe barkirî û vekiriye."
-
-#: app.src#MSG_ERR_NO_WEBBROWSER_FOUND.errorbox.text
-msgid ""
-"%PRODUCTNAME could not find a web browser on your system. Please check your "
-"Desktop Preferences or install a web browser (for example, Mozilla) in the "
-"default  location requested during the browser installation."
-msgstr ""
-"%PRODUCTNAME di pergala we de lêgeroka webê ya hatiye barkirin nedît. Ji "
-"kerema xwe Bijartekên Sermasê kontrol bikin an jî di dema sazkirina lêgerokê "
-"de, cihekî ku tê fikirîn heye lêgerokeke torê bar bikin  (weke nimûne, "
-"Mozîlla)."
-
-#: app.src#GID_INTERN.string.text
-msgid "Internal"
-msgstr "Hundirî"
-
-#: app.src#GID_APPLICATION.string.text
-msgid "Application"
+#: source/appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_APP.FixedText.Text
+#, fuzzy
+msgid  "~Application:"
 msgstr "Sepan"
 
-#: app.src#GID_VIEW.string.text
-msgid "View"
-msgstr "Dîtin"
-
-#: app.src#GID_DOCUMENT.string.text
-msgid "Documents"
-msgstr "Belge"
-
-#: app.src#GID_EDIT.string.text
-msgid "Edit"
-msgstr "Sererast bike"
-
-#: app.src#GID_MACRO.string.text
-msgid "BASIC"
-msgstr "BASIC"
-
-#: app.src#GID_OPTIONS.string.text
+#: source/appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_TOPIC.FixedText.Text
 #, fuzzy
-msgid "Options"
-msgstr "Vebijêrk"
-
-#: app.src#GID_MATH.string.text
-msgid "Math"
-msgstr "Bîrkarî"
-
-#: app.src#GID_NAVIGATOR.string.text
-msgid "Navigate"
-msgstr "Bigere"
-
-#: app.src#GID_INSERT.string.text
-msgid "Insert"
-msgstr "Têxe Nav"
-
-#: app.src#GID_FORMAT.string.text
-msgid "Format"
-msgstr "Teşe"
-
-#: app.src#GID_TEMPLATE.string.text
-#, fuzzy
-msgid "Templates"
-msgstr "Şablon"
-
-#: app.src#GID_TEXT.string.text
-msgid "Text"
-msgstr "Nivîs"
-
-#: app.src#GID_FRAME.string.text
-msgid "Frame"
-msgstr "Çarçove"
-
-#: app.src#GID_GRAPHIC.string.text
-msgctxt "app.src#GID_GRAPHIC.string.text"
-msgid "Graphic"
-msgstr "Grafîk"
-
-#: app.src#GID_TABLE.string.text
-msgid "Table"
-msgstr "Tablo"
-
-#: app.src#GID_ENUMERATION.string.text
-msgid "Numbering"
-msgstr "Hejmarkirin"
-
-#: app.src#GID_DATA.string.text
-msgid "Data"
-msgstr "Dane"
-
-#: app.src#GID_SPECIAL.string.text
-msgid "Special Functions"
-msgstr "Kêrhatinên Taybet"
-
-#: app.src#GID_IMAGE.string.text
-msgid "Image"
-msgstr "Wêne"
-
-#: app.src#GID_CHART.string.text
-msgid "Chart"
-msgstr "Xanxank"
-
-#: app.src#GID_EXPLORER.string.text
-msgid "Explorer"
-msgstr "Lêkolînêr"
-
-#: app.src#GID_CONNECTOR.string.text
-msgid "Connector"
-msgstr "Girêdankêr"
-
-#: app.src#GID_MODIFY.string.text
-msgid "Modify"
-msgstr "Biguhere"
-
-#: app.src#GID_DRAWING.string.text
-msgid "Drawing"
-msgstr "Xêzkêşan"
-
-#: app.src#GID_CONTROLS.string.text
-msgid "Controls"
-msgstr "Kontrol"
-
-#: app.src#MSG_CANT_QUIT.infobox.text
-msgid ""
-"The application cannot be terminated at the moment.\n"
-"Please wait until all print jobs and/or\n"
-"OLE actions have finished and close all dialogs."
-msgstr ""
-"Nija ji sepanê nayê derketin\n"
-"Hemû karên nivîsandinê û/an jî\n"
-"hemû karên OLEyê bila xelas bibe dû re hemû paceyan bigire."
-
-#: app.src#STR_ISMODIFIED.string.text
-msgid "Do you want to save the changes to %1?"
-msgstr "Guherînên di hundirê %1 hate kirin bila were tomarkirin?"
-
-#: app.src#STR_QUITAPP.string.text
-msgid "E~xit"
-msgstr "~Derkeve"
-
-#: app.src#RID_STR_HELP.string.text
-#, fuzzy
-msgid "Help"
-msgstr "Alîkarî"
-
-#: app.src#RID_STR_NOAUTOSTARTHELPAGENT.string.text
-msgid "No automatic start at 'XX'"
-msgstr "Ji ber ku 'XX' bila destpêkirina otomatîk pêk neye."
-
-#: app.src#RID_HELPBAR.string.text
-msgid "Help Bar"
-msgstr "Darika alîkariyê"
-
-#: app.src#RID_STR_HLPFILENOTEXIST.string.text
-msgid "The help file for this topic is not installed."
-msgstr "Alîkariya ku têkildarî vê mijarê ye nehate dîtin."
-
-#: app.src#RID_ENVTOOLBOX.string.text
-msgid "Function Bar"
-msgstr "Darika Bikêrhatinan"
-
-#: app.src#RID_SPECIALCONFIG_ERROR.string.text
-msgid ""
-"An error has occurred in the special configuration.\n"
-"Please contact your administrator."
-msgstr ""
-"Bi veavakirina taybet de xeletiyek hate dîtin.\n"
-"Ji kerema xwe serî li rêveberê xwe yê pergalê bidin."
-
-#: app.src#STR_QUICKSTART_EXIT.string.text
-msgid "Exit Quickstarter"
-msgstr "Destpêkera bilez bigire"
-
-#: app.src#STR_QUICKSTART_TIP.string.text
-msgid "%PRODUCTNAME %PRODUCTVERSION Quickstarter"
-msgstr "%PRODUCTNAME %PRODUCTVERSION destpêkera bilez"
-
-#: app.src#STR_QUICKSTART_FILEOPEN.string.text
-msgid "Open Document..."
-msgstr "Belgeyê Veke"
-
-#: app.src#STR_QUICKSTART_FROMTEMPLATE.string.text
-msgid "From Template..."
-msgstr "Ji Şablonê..."
-
-#: app.src#STR_QUICKSTART_PRELAUNCH.string.text
-msgid "Load %PRODUCTNAME During System Start-Up"
-msgstr "Gava pergal hate vekirin %PRODUCTNAME'yê bar bike"
-
-#: app.src#STR_QUICKSTART_PRELAUNCH_UNX.string.text
-msgid "Disable systray Quickstarter"
-msgstr "Zû-Destpêkera di berkêşka pergalê de Neçalak bike"
-
-#: app.src#STR_QUICKSTART_LNKNAME.string.text
-msgid "%PRODUCTNAME %PRODUCTVERSION"
-msgstr "%PRODUCTNAME %PRODUCTVERSION"
-
-#: app.src#STR_QUICKSTART_FILE.string.text
-msgid "File"
-msgstr "Pel"
-
-#: app.src#STR_QUICKSTART_STARTCENTER.string.text
-msgid "Startcenter"
-msgstr "Navenda-destpêkê"
-
-#: app.src#STR_QUICKSTART_RECENTDOC.string.text
-msgid "Recent Documents"
-msgstr "Belgeya Herî Dawî"
-
-#: app.src#STR_QUERY_UPDATE_LINKS.string.text
-msgid "Update all links?"
-msgstr "Bila hemû girêdanan rojane bike?"
-
-#: app.src#STR_DDE_ERROR.string.text
-msgid "DDE link to % for % area % are not available."
-msgstr "Girêdana DDE ya % ji bo % qada % tuneye."
-
-#: app.src#RID_SECURITY_WARNING_HYPERLINK.warningbox.text
-msgid "This hyperlink is going to open \"%s\". Do you want to proceed?"
-msgstr "Ev hyperlink navnîşana \"%s\" vedike."
-
-#: app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.warningbox.text
-msgid ""
-"For security reasons, the hyperlink cannot be executed.\n"
-"The stated address will not be opened."
-msgstr ""
-"Ji bo sedemên ewlekariyê, girêdanên bilind nayên xebitandin.\n"
-"Navnîşana destpêkê wê venabe."
-
-#: app.src#RID_SECURITY_WARNING_TITLE.string.text
-msgid "Security Warning"
-msgstr "Hişyariya Ewlehiyê"
-
-#: app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.querybox.text
-msgid ""
-"Saving will remove all existing signatures.\n"
-"Do you want to continue saving the document?"
-msgstr ""
-"Tomarkirin wê hemû şanenavên heyî rake.\n"
-"Tu dixwazî tomarkirina belgeyê bidomînî?"
-
-#: app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.querybox.text
-msgid ""
-"The document has to be saved before it can be signed.\n"
-"Do you want to save the document?"
-msgstr ""
-"Belge divê beriya îmze kirinê were tomarkirin.\n"
-"Tu dixwazî belgeyê tomar bikî?"
-
-#: app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.infobox.text
-msgid ""
-"This document must be saved in OpenDocument file format before it can be "
-"digitally signed."
-msgstr ""
-"Ev belge divê beriya îmze kirina dîjîtal di teşeya pela OpenDocument were "
-"tomarkirin."
-
-#: app.src#RID_XMLSEC_DOCUMENTSIGNED.string.text
-msgid " (Signed)"
-msgstr " (Tomarkirî)"
-
-#: app.src#STR_STANDARD.string.text
-#, fuzzy
-msgctxt "app.src#STR_STANDARD.string.text"
-msgid "Standard"
-msgstr "Standard"
-
-#: app.src#RID_SVXSTR_FILELINK.string.text
-msgid "Document"
-msgstr "Belge"
-
-#: app.src#STR_NONE.string.text
-msgid "- None -"
-msgstr "- Tu yek -"
-
-#: app.src#RID_SVXSTR_GRAFIKLINK.string.text
-msgctxt "app.src#RID_SVXSTR_GRAFIKLINK.string.text"
-msgid "Graphic"
-msgstr "Grafîk"
-
-#: app.src#STR_SFX_FILTERNAME_ALL.string.text
-msgid "All files (*.*)"
-msgstr "Hemû pel (*.*)"
-
-#: app.src#RID_SVXSTR_EDITGRFLINK.string.text
-msgid "Link graphics"
-msgstr "Girêdana grafîkan"
-
-#: app.src#STR_ERRUNOEVENTBINDUNG.string.text
-msgid ""
-"An appropriate component method %1\n"
-"could not be found.\n"
-"\n"
-"Check spelling of method name."
-msgstr ""
-"Tu pêkhênana lêhatî ji bo metoda %1\n"
-"nayê dîtin.\n"
-"\n"
-"Navê metodê kontrol bike."
-
-#: app.src#RID_SVXSTR_GRFILTER_OPENERROR.string.text
-msgid "Graphics file cannot be opened"
-msgstr "Pela grafîkan venabe"
-
-#: app.src#RID_SVXSTR_GRFILTER_IOERROR.string.text
-msgid "Graphics file cannot be read"
-msgstr "Pela grafîkan nayê xwendin"
-
-#: app.src#RID_SVXSTR_GRFILTER_FORMATERROR.string.text
-msgid "Unknown graphics format"
-msgstr "Teşeya grafîkê nayê zanîn"
-
-#: app.src#RID_SVXSTR_GRFILTER_VERSIONERROR.string.text
-msgid "This version of the graphics file is not supported"
-msgstr "Ev guhertoya pela grafîkê nayê piştgirî dan"
-
-#: app.src#RID_SVXSTR_GRFILTER_FILTERERROR.string.text
-msgid "Graphics filter not found"
-msgstr "Parzûna grafîkê nayê dîtin"
-
-#: app.src#RID_SVXSTR_GRFILTER_TOOBIG.string.text
-msgid "Not enough memory to insert graphic"
-msgstr "Ji bo lêzêdekirina grafîkê di bîrê de cî tuneye"
-
-#: dde.src#MD_DDE_LINKEDIT.FT_DDE_APP.fixedtext.text
-msgid "~Application:"
-msgstr "Sepan"
-
-#: dde.src#MD_DDE_LINKEDIT.FT_DDE_TOPIC.fixedtext.text
-msgid "~File:"
+msgid  "~File:"
 msgstr "~Pel:"
 
-#: dde.src#MD_DDE_LINKEDIT.FT_DDE_ITEM.fixedtext.text
-msgid "~Category:"
+#: source/appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_ITEM.FixedText.Text
+#, fuzzy
+msgid  "~Category:"
 msgstr "~Kategorî:"
 
-#: dde.src#MD_DDE_LINKEDIT.GROUP_DDE_CHG.fixedline.text
-msgid "Modify link"
+#: source/appl/dde.src#MD_DDE_LINKEDIT.GROUP_DDE_CHG.FixedLine.Text
+#, fuzzy
+msgid  "Modify link"
 msgstr "Girêdanê serast bike"
 
-#: dde.src#MD_DDE_LINKEDIT.modaldialog.text
-msgid "Modify Link"
-msgstr "Girêdanê serast bike"
-
-#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_CONTENTS.pageitem.text
-msgid "Contents"
-msgstr "Naverok"
-
-#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_INDEX.pageitem.text
-msgid "Index"
-msgstr "Pêrist"
-
-#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_SEARCH.pageitem.text
-msgid "Find"
-msgstr "Bibîne"
-
-#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_BOOKMARKS.pageitem.text
-msgid "Bookmarks"
-msgstr "Bijare"
-
-#: newhelp.src#TP_HELP_INDEX.FT_EXPRESSION.fixedtext.text
-msgid "~Search term"
-msgstr "~Bêjeya lêgerîne"
-
-#: newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.pushbutton.text
-msgctxt "newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.pushbutton.text"
-msgid "~Display"
-msgstr "~Dîmendêr"
-
-#: newhelp.src#TP_HELP_SEARCH.FT_SEARCH.fixedtext.text
-msgid "S~earch term"
-msgstr "B~êjeya lêgerîne"
-
-#: newhelp.src#TP_HELP_SEARCH.PB_SEARCH.pushbutton.text
-msgid "~Find"
-msgstr "~Bibîne"
-
-#: newhelp.src#TP_HELP_SEARCH.CB_FULLWORDS.checkbox.text
-msgid "~Complete words only"
-msgstr "~Tenê peyvên tam"
-
-#: newhelp.src#TP_HELP_SEARCH.CB_SCOPE.checkbox.text
-msgid "Find in ~headings only"
-msgstr "Tenê li sernavan bigere"
-
-#: newhelp.src#TP_HELP_SEARCH.PB_OPEN_SEARCH.pushbutton.text
-msgctxt "newhelp.src#TP_HELP_SEARCH.PB_OPEN_SEARCH.pushbutton.text"
-msgid "~Display"
-msgstr "~Dîmendêr"
-
-#: newhelp.src#TP_HELP_BOOKMARKS.FT_BOOKMARKS.fixedtext.text
-msgid "~Bookmarks"
-msgstr "Hêmayên cih"
-
-#: newhelp.src#TP_HELP_BOOKMARKS.PB_BOOKMARKS.pushbutton.text
-msgctxt "newhelp.src#TP_HELP_BOOKMARKS.PB_BOOKMARKS.pushbutton.text"
-msgid "~Display"
-msgstr "~Dîmendêr"
-
-#: newhelp.src#STR_HELP_WINDOW_TITLE.string.text
-msgid "%PRODUCTNAME Help"
-msgstr "%PRODUCTNAME Alîkarî"
-
-#: newhelp.src#STR_HELP_BUTTON_INDEX_ON.string.text
-msgid "Show Navigation Pane"
-msgstr "Paceya Beralîkirinê Nîşan Bide"
-
-#: newhelp.src#STR_HELP_BUTTON_INDEX_OFF.string.text
-msgid "Hide Navigation Pane"
-msgstr "Paceya Beralîkirinê Veşêre"
-
-#: newhelp.src#STR_HELP_BUTTON_START.string.text
-msgid "First Page"
-msgstr "Rûpela Yekemîn"
-
-#: newhelp.src#STR_HELP_BUTTON_PREV.string.text
-msgid "Previous Page"
-msgstr "Rûpela Berê"
-
-#: newhelp.src#STR_HELP_BUTTON_NEXT.string.text
-msgid "Next Page"
-msgstr "Rûpela Pêş"
-
-#: newhelp.src#STR_HELP_BUTTON_PRINT.string.text
-msgid "Print..."
-msgstr "Çap..."
-
-#: newhelp.src#STR_HELP_BUTTON_ADDBOOKMARK.string.text
-msgid "Add to Bookmarks..."
-msgstr "Li Hêmayên Cih Zêde Bike..."
-
-#: newhelp.src#STR_HELP_BUTTON_SEARCHDIALOG.string.text
-msgid "Find on this Page..."
-msgstr "Di vî rûpelê da bibîne"
-
-#: newhelp.src#STR_HELP_BUTTON_SOURCEVIEW.string.text
-msgid "HTML Source"
-msgstr "Koda HTML"
-
-#: newhelp.src#STR_HELP_FIRST_MESSAGE.string.text
-msgid "The Help is being started..."
-msgstr "Alîkarî destpê dike"
-
-#: newhelp.src#STR_HELP_MENU_TEXT_SELECTION_MODE.string.text
-msgid "Select Text"
-msgstr "Nivîsê Hilbijêre"
-
-#: newhelp.src#STR_HELP_MENU_TEXT_COPY.string.text
-msgid "~Copy"
-msgstr "~Jibergirtin"
-
-#: newhelp.src#DLG_HELP_ADDBOOKMARK.FT_BOOKMARK_TITLE.fixedtext.text
-msgid "Bookmark:"
-msgstr "Nîşana cîh:"
-
-#: newhelp.src#DLG_HELP_ADDBOOKMARK.STR_BOOKMARK_RENAME.string.text
-msgid "Rename Bookmark"
-msgstr "Hêmayên Cih Ji Nû ve Binavîne"
-
-#: newhelp.src#DLG_HELP_ADDBOOKMARK.modaldialog.text
-msgid "Add to Bookmarks"
-msgstr "Li Bijareya Zêde Bike"
-
-#: newhelp.src#MENU_HELP_BOOKMARKS.MID_OPEN.menuitem.text
-msgid "Display"
-msgstr "Dîmender"
-
-#: newhelp.src#MENU_HELP_BOOKMARKS.MID_RENAME.menuitem.text
-msgid "Rename..."
-msgstr "Ji Nû Ve Binavîne..."
-
-#: newhelp.src#MENU_HELP_BOOKMARKS.MID_DELETE.menuitem.text
-msgid "Delete"
-msgstr "Jê bibe"
-
-#: newhelp.src#RID_INFO_NOSEARCHRESULTS.infobox.text
-msgid "No topics found."
-msgstr "Mijar nehat dîtin."
-
-#: newhelp.src#RID_INFO_NOSEARCHTEXTFOUND.infobox.text
-msgid "The text you entered was not found."
-msgstr "Teksta ku tu ketê nehate dîtin."
-
-#: newhelp.src#RID_HELP_ONSTARTUP_TEXT.string.text
-msgid "~Display %PRODUCTNAME %MODULENAME Help at Startup"
-msgstr "%PRODUCTNAME %MODULENAME Alîkarî yê di Destpêkê de ~Nîşan Bide"
-
-#: sfx.src#STR_ACCTITLE_PRODUCTIVITYTOOLS.string.text
-msgid "%PRODUCTNAME"
+#: source/appl/sfx.src#STR_ACCTITLE_PRODUCTIVITYTOOLS.String.Text
+msgid  "%PRODUCTNAME"
 msgstr ""
 
-#~ msgid "Applied Styles"
-#~ msgstr "Şêwazên tên Bikaranîn"
-
-#~ msgid "Custom Styles"
-#~ msgstr "Şêwazên Taybet"
-
-#~ msgid "All Styles"
-#~ msgstr "Hemû Şêwaz"
-
-#~ msgid "Cannot open document."
-#~ msgstr "Belge venabe."
-
-#~ msgid "Error reading configuration file."
-#~ msgstr "Dema pela veavakirinê hat xwandin xeletî çêbû."
-
-#~ msgid "Error writing configuration file."
-#~ msgstr "Dema pela veavakirinê hat nivîsandin xeletî çêbû."
-
-#~ msgid "Error opening configuration file."
-#~ msgstr "Dema pela veavakirinê hat vekirin xeletî çêbû."
-
-#~ msgid "File is not a configuration file."
-#~ msgstr "Pel, pela veavakirinê nîne."
-
-#~ msgid "Configuration file contains the wrong version."
-#~ msgstr "Guhertoya pela avakirinê şaş e."
-
-#~ msgid ""
-#~ "Error recording BASIC library in\n"
-#~ "'@'."
-#~ msgstr ""
-#~ "Dema pirtûkxaneya BASIC dihate tomarkirin xeletî çêbû li\n"
-#~ " '@'."
-
-#~ msgid ""
-#~ "An unexpected program error has occurred.\n"
-#~ "\n"
-#~ "Do you want to try to save your changes in all open documents before the "
-#~ "program is terminated?"
-#~ msgstr ""
-#~ "Xeletiyeke bernameyan yên di hesaban de tunebû çêbû!\n"
-#~ "Tu dikarî hemû belgeyên ku niha vekirî ne tomar bike\n"
-#~ "Berî ku sepandin were girtin bila were hewldan da ku belgeyên te tomar bibe?"
-
-#~ msgid ""
-#~ "A form is to be sent by e-mail.\n"
-#~ "This means that the receiver will get to see your e-mail address."
-#~ msgstr ""
-#~ "Bi e-peyamê wê form were şandin.\n"
-#~ "Bi vî awayî wê wergir jî navnîşana e-peyama te bibîne."
-
-#~ msgid "File Recovery"
-#~ msgstr "Rizgarkirina pelan"
-
-#~ msgid "Should the file \"$1\" be restored?"
-#~ msgstr "Bila pela \"$1\" were rizgar kirin?"
-
-#~ msgid "General"
-#~ msgstr "Giştî"
-
-#~ msgid "Save"
-#~ msgstr "Tomar bike"
-
-#~ msgid "Paths"
-#~ msgstr "Rêç"
-
-#~ msgid "Spellcheck"
-#~ msgstr "Kontrola Rastnivîsê"
-
-#~ msgid ""
-#~ "This application is as object or print server active.\n"
-#~ "Do you want to terminate anyway?"
-#~ msgstr ""
-#~ "Sepan niha weke bireser an jî pêşkêşkera nivîsandinê tê xebitandin.\n"
-#~ "Dîsa jî bila were girtin?"
-
-#~ msgid "%PRODUCTNAME cannot be started more than once."
-#~ msgstr "Ji bo %PRODUCTNAME rûniştinekî zêdetir venabe."
-
-#~ msgid ""
-#~ "Some %PRODUCTNAME functions will not work properly without a printer driver.\n"
-#~ "Please install a printer driver."
-#~ msgstr ""
-#~ "Hinik fonksiyonên %PRODUCTNAME bê ajogera çapgerê rast naxebite.\n"
-#~ "Ajogera çapgerê saz bike."
-
-#~ msgid "AutoSave"
-#~ msgstr "Tomarkirina Bixweber"
-
-#~ msgid ""
-#~ "Limited system resources. Please quit other applications or close some "
-#~ "windows before continuing."
-#~ msgstr ""
-#~ "Çavkaniyên pergalê kêm dibe. Berî ku tu xebata xwe bidomîne berê sepanên din "
-#~ "an jî çend paceyan bigire."
-
-#~ msgid "There are files missing. Please check application setup."
-#~ msgstr "Hêmanên bernameyê yên girîng nehate dîtin. Sazkirina xwe kontrol bikin."
-
-#~ msgid ""
-#~ "Another error occurred during the save recovery.\n"
-#~ "Possibly, the data could not be entirely saved."
-#~ msgstr ""
-#~ "Di dema tomarkirina daneyên hişyarkirinê de xeletiyeke pergalê yeke din "
-#~ "çêbû.\n"
-#~ "Dibe ku dane tam nehatibe tomarkirin."
-
-#~ msgid "System resources exhausted. Please restart the application."
-#~ msgstr "Jêderkên pergalê qediya. Sepandinê nûva bide destpêkirin."
-
-#~ msgid "Error initializing object-system."
-#~ msgstr "Dema ku pergala bireserê hate destpêkirin xeletî çêbû."
-
-#~ msgid "The file $(FILE) doesn't exist."
-#~ msgstr "Pelê $(FILE) tune."
-
-#~ msgid "The path to file $(FILE) doesn't exist."
-#~ msgstr "Riya daneya pela $(FILE) ne mevcûd e."
-
-#~ msgid ""
-#~ "The file $(FILE) could not be opened,\n"
-#~ "because too many files are open.\n"
-#~ "Please close some files and try again."
-#~ msgstr ""
-#~ "Ji ber ku niha gelek pel vekirî ne\n"
-#~ "pela $(FILE) venabe.\n"
-#~ "Piştî ku te çend pel girt dîsa biceribîne."
-
-#~ msgid "The file $(FILE) could not be opened due to missing access rights."
-#~ msgstr "Ji ber ku mafê gihiştînê tunebû pela $(FILE) venebû."
-
-#~ msgid "The file $(FILE) could not be accessed."
-#~ msgstr "Xwe negihand pela $(FILE)."
-
-#~ msgid "The file $(FILE) could not be opened due to an invalid file handle."
-#~ msgstr "Pelê $(FILE) ji ber doxa peleke nederbasdar nehate vekirin."
-
-#~ msgid "The file $(FILE) could not be created."
-#~ msgstr "Pelê $(FILE) nehat çêkirin"
-
-#~ msgid "Error by shared access to $(FILE)."
-#~ msgstr "Di gihîştina parvekirina pela $(FILE) xeletî çêbû."
-
-#~ msgid "General I/O error accessing $(FILE)."
-#~ msgstr "Di gihiştîna pela $(FILE) de xeletiya giştî ya ketin/derketinê çêbû."
-
-#~ msgid "The selected template has an incorrect format"
-#~ msgstr "Formata şablona hilbijarî nerast bû"
-
-#~ msgid "Can't open file $."
-#~ msgstr "Pelê $ nayê vekirin."
-
-#~ msgid "E~xit & return to "
-#~ msgstr "Derkeve û vegere: "
-
-#~ msgid "Select a command or click to select a theme."
-#~ msgstr "Fermenek hilbijêre an jî ji bo hilbijartina mijarekê pêlêbike."
-
-#~ msgid "Mail"
-#~ msgstr "Posta"
-
-#~ msgid "Addresses"
-#~ msgstr "Navnîşanin"
-
-#~ msgid "Don't display tips"
-#~ msgstr "Daxuyaniya pêşniyarkirinê"
-
-#~ msgid "The help system could not be started"
-#~ msgstr "Sepana Alîkariyê nehate destpêkirin"
-
-#~ msgid "Enable plug-ins"
-#~ msgstr "Pêvekan Çalak Bike"
-
-#~ msgid ""
-#~ "Important program components could not be initialized correctly.\n"
-#~ "Please start the setup program with the option /Repair."
-#~ msgstr ""
-#~ "Hêmanên bernameyê yên girîng bi awayekî rast nehate destpêkirin.\n"
-#~ "Sazkirinê bidin destpêkirin bi bijarteka /Repair."
-
-#~ msgid "Reference will not be saved: "
-#~ msgstr "Referans tomar nabe: "
-
-#~ msgid "Configuration"
-#~ msgstr "Mîheng"
-
-#~ msgid "My Documents"
-#~ msgstr "Belgeyên min"
-
-#~ msgid "Graphics"
-#~ msgstr "Grafîk"
-
-#~ msgid "Icons"
-#~ msgstr "Îkon"
-
-#~ msgid "Palettes"
-#~ msgstr "Palet"
-
-#~ msgid "Backups"
-#~ msgstr "Paştgirîkirin"
-
-#~ msgid "Modules"
-#~ msgstr "Modul"
-
-#~ msgid "AutoText"
-#~ msgstr "NivîsaOtomatîk"
-
-#~ msgid "Dictionaries"
-#~ msgstr "Ferheng"
-
-#~ msgid "Gallery"
-#~ msgstr "Pêşangeh"
-
-#~ msgid "Message Storage"
-#~ msgstr "Depoya Mesaja"
-
-#~ msgid "Temporary files"
-#~ msgstr "Pelên Derbasdar"
-
-#~ msgid "Plug-ins"
-#~ msgstr "Pêvek"
-
-#~ msgid "Folder Bookmarks"
-#~ msgstr "Hêmayên Cih yê Pêristê"
-
-#~ msgid "Filters"
-#~ msgstr "Parzûn"
-
-#~ msgid "Add-ins"
-#~ msgstr "Pêvek"
-
-#~ msgid "User Configuration"
-#~ msgstr "Avakirina Bikarhêner"
-
-#~ msgid "User-defined dictionaries"
-#~ msgstr "Ferhengên Bi Bikarhêner Hatiye Ravekirin"
-
-#~ msgid "AutoCorrect"
-#~ msgstr "SererastkirinaBixweber"
-
-#~ msgid "Writing aids"
-#~ msgstr "Alîkariya Nivîsînê"
-
-#~ msgid "The URL is not valid."
-#~ msgstr "Ev URL eyek derbazbar nîne."
-
-#~ msgid "Undo: "
-#~ msgstr "Şûnva bigre "
-
-#~ msgid "Re~do: "
-#~ msgstr "Dî~sa bike: "
-
-#~ msgid "~Repeat: "
-#~ msgstr "~Dubareke: "
-
-#~ msgid "New task"
-#~ msgstr "Peywira nû"
-"X-Accelerator-Marker: ~\n"
-
-#: doc.src#MSG_CONFIRM_FILTER.querybox.text
-msgid ""
-"Saving in external formats may have caused\n"
-" information loss. Do you still want to close?"
-msgstr ""
-"Dibe ku dema bi şêweyeke biyanî hate tomarkirin\n"
-" dane winda bûbîn. Dîsa jî tu dixwazî bigirî?"
-
-#: doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.querybox.text
-msgid ""
-"Name already in use.\n"
-"Do you want to overwrite document template?"
-msgstr ""
-"Şabloneke ku bi navî jixwe heye.\n"
-"Bila li ser ve şablonê were nivîsandin?"
-
-#: doc.src#STR_DELETE_REGION.string.text
-msgid "Are you sure you want to delete the region \"$1\"?"
-msgstr "Bila beşa \"$1\" were jê birin?"
-
-#: doc.src#STR_DELETE_TEMPLATE.string.text
-msgid "Are you sure you want to delete the entry \"$1\"?"
-msgstr "Bila têketina \"$1\" were jê birin?"
-
-#: doc.src#MSG_REGION_NOTEMPTY.querybox.text
-msgid ""
-"The category is not empty.\n"
-"Delete anyway?"
-msgstr ""
-"Kategorî ne vala ye.\n"
-"Bila dîsa jî were jê birin?"
-
-#: doc.src#STR_QUERY_SAVE_DOCUMENT.string.text
-msgid ""
-"The document \"$(DOC)\" has been modified.\n"
-"Do you want to save your changes?"
-msgstr ""
-"Belgeya ku bi navê \"$(DOC)\" hate guhertin.\n"
-"Tu dixwazî guherînan tomar bike?"
-
-#: doc.src#STR_STYLES.string.text
-msgid "Styles"
-msgstr "Teşe"
-
-#: doc.src#STR_MACROS.string.text
-msgid "Macros"
-msgstr "Makro"
-
-#: doc.src#STR_CONFIG.string.text
-msgid "Configuration"
-msgstr "Mîheng"
-
-#: doc.src#STR_PRINT_STYLES_HEADER.string.text
-msgid "Styles in "
-msgstr "Di şêwazan de "
-
-#: doc.src#STR_PRINT_STYLES.string.text
-msgid "Printing Styles"
-msgstr "Şêwaz Têne Nivîsandin"
-
-#: doc.src#MSG_PRINT_ERROR.errorbox.text
-msgid "The print job could not be started."
-msgstr "Karê nivîsandinê nehate destpêkirin"
-
-#: doc.src#STR_BACKUP_COPY.string.text
-msgid "Copy"
-msgstr "Kopî bike"
-
-#: doc.src#MSG_CANT_OPEN_TEMPLATE.infobox.text
-msgid "The template could not be opened."
-msgstr "Şablona belgeyê venabe."
-
-#: doc.src#MSG_VIEW_OPEN_CANT_SAVE.infobox.text
-msgid "Document already open for editing."
-msgstr "Belge jixwe ji bo sererastkirinê vebû."
-
-#: doc.src#STR_ERROR_SAVE.string.text
-msgid "Error recording document "
-msgstr "Dema belge dihate tomarkirin xeletî çêbû. "
-
-#: doc.src#STR_TEMPLATE_FILTER.string.text
-msgctxt "doc.src#STR_TEMPLATE_FILTER.string.text"
-msgid "Templates"
-msgstr "Şablon"
-
-#: doc.src#STR_ERROR_COPY_TEMPLATE.string.text
-msgid ""
-"Error copying template \"$1\". \n"
-"A template with this name may already exist."
-msgstr ""
-"Dema şablona \"$1\" dihate kopîkirin xeletî çêbû.\n"
-"Dibe ku ev şablon berê hebe."
-
-#: doc.src#STR_ERROR_DELETE_TEMPLATE.string.text
-msgid "The template \"$1\" can not be deleted."
-msgstr "Şablona \"$1\" jê naçe."
-
-#: doc.src#STR_ERROR_MOVE_TEMPLATE.string.text
-msgid "Error moving template \"$1\"."
-msgstr "Dema şablona \"$1\" dihate veguheztin xeletî çêbû."
-
-#: doc.src#MSG_ERROR_RESCAN.errorbox.text
-msgid "The update could not be saved."
-msgstr "Rojanekirin nehate tomarkirin."
-
-#: doc.src#STR_ERROR_SAVE_TEMPLATE.string.text
-msgid "Error saving template "
-msgstr "Dema şablon dihate nivîsandin xeletî çêbû "
-
-#: doc.src#MSG_ERROR_RENAME_TEMPLATE.errorbox.text
-msgid "Error renaming template."
-msgstr "Dema şablon ji nû ve dihate navkirin xeletî çêbû."
-
-#: doc.src#MSG_ERROR_RENAME_TEMPLATE_REGION.errorbox.text
-msgid "Error renaming template category."
-msgstr "Dema kategoriya şablonan dihate navandin xeletî çêbû."
-
-#: doc.src#MSG_ERROR_EMPTY_NAME.errorbox.text
-msgid "Please specify a name."
-msgstr "Navekî têkevin."
-
-#: doc.src#MSG_ERROR_UNIQ_NAME.errorbox.text
-msgid ""
-"Please specify a unique name.\n"
-"Entries must not be case specific."
-msgstr ""
-"Navekî bêhempa têkevin.\n"
-"Divê navê ku tu yê têkevê hesasiyeta wê hûrdek/girdekan tunebe."
-
-#: doc.src#STR_QUERY_DEFAULT_TEMPLATE.string.text
-msgid "Should the template \"$(TEXT)\" become the default template?"
-msgstr "Bila şablona \"$(TEXT)\" weke şablona standard were diyarkirin?"
-
-#: doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.querybox.text
-msgid "Do you want to reset the default template?"
-msgstr "Tu dixwazî şablona standard sifir bike?"
-
-#: doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.infobox.text
-msgid ""
-"Template directory\n"
-"$(DIR)\n"
-"does not exist."
-msgstr ""
-"Pelrêça şablonan\n"
-"$(DIR)\n"
-"ne mevcûd e."
-
-#: doc.src#MSG_DOCINFO_CANTREAD.infobox.text
-msgid "Document info cannot be read."
-msgstr "Taybetmendinyên belgeyê nayê xwendin."
-
-#: doc.src#STR_ERROR_NOSTORAGE.string.text
-msgid "The selected file has an incorrect format."
-msgstr "Şêweyê pela ku hatiye hilbijartin şaş e."
-
-#: doc.src#STR_QUERY_MUSTOWNFORMAT.string.text
-msgid ""
-"Documents cannot be saved in $(FORMAT) format. Do you\n"
-"want to save your changes using the $(OWNFORMAT) format?"
-msgstr ""
-"Belge bi şêweyê $(FORMAT) nayê tomarkirin.\n"
-"Tu dixwazî belgeyê bi şêweyê $(OWNFORMAT) tomar bike?"
-
-#: doc.src#STR_SAVEDOC.string.text
-msgid "~Save"
-msgstr "~Tomar bike"
-
-#: doc.src#STR_UPDATEDOC.string.text
-msgid "~Update"
-msgstr "~Rojane bike"
-
-#: doc.src#STR_SAVEASDOC.string.text
-msgid "Save ~As..."
-msgstr "~Cuda Tomar Bike..."
-
-#: doc.src#STR_SAVECOPYDOC.string.text
-msgid "Save Copy ~as..."
-msgstr "Kopyayê tomar bike ~wekî..."
-
-#: doc.src#STR_CLOSEDOC.string.text
-msgid "~Close"
-msgstr "~Bigire"
-
-#: doc.src#STR_CLOSEDOC_ANDRETURN.string.text
-msgid "~Close & Return to "
-msgstr "~Bigire û Paş De Vegere "
-
-#: doc.src#STR_WIZARD.string.text
-msgid " AutoPilot"
-msgstr " Sêhrbaz"
-
-#: doc.src#RID_STR_FILTCONFIG.string.text
-msgid "Configurations"
-msgstr "Avakerî"
-
-#: doc.src#RID_STR_FILTBASIC.string.text
-msgid "%PRODUCTNAME Basic libraries"
-msgstr "Pirtûkxaneyên Bingeh yên %PRODUCTNAME"
-
-#: doc.src#RID_STR_WARNSTYLEOVERWRITE.string.text
-msgid "Should the \"$(ARG1)\" Style be replaced?"
-msgstr "Bila şêwaza \"$(ARG1)\" bi yeka din were guhertin?"
-
-#: doc.src#STR_DOC_LOADING.string.text
-msgid "Loading Document"
-msgstr "Belge tê barkirin"
-
-#: doc.src#RID_DLSTATUS.INET_NAME_RESOLVE_START.string.text
-msgid "Connection to: $(HOST). Waiting for response..."
-msgstr "Ya Tê Girêdan: $(HOST). Benda bersivdayînê ye..."
-
-#: doc.src#RID_DLSTATUS.INET_CONNECT_START.string.text
-msgid "Opening $(TARGET) at $(HOST)"
-msgstr "Ya vebû: li ser $(HOST) ya hate dîtin $(TARGET)"
-
-#: doc.src#RID_DLSTATUS.INET_READ_STATUS.string.text
-msgid "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
-msgstr ""
-"Ya hate veguhaztin: ji pêşkêşkera $(HOST) $(TARGET). Ya hate xwendin $(BYTE)"
-
-#: doc.src#RID_DLSTATUS.INET_CONNECTION_CLOSED.string.text
-msgid "Disconnected"
-msgstr "Ne girêdayî"
-
-#: doc.src#MSG_OPEN_READONLY.querybox.text
-msgid ""
-"Document cannot be opened for editing.\n"
-"Do you want to open it as read-only?"
-msgstr ""
-"Belge ji bo sererastkirinê venebû.\n"
-"Bila belge ji bo xwendinê vebe?"
-
-#: doc.src#STR_EDIT.string.text
-msgid "Edit"
-msgstr "Serrast bike"
-
-#: doc.src#RID_OFFICEFILTER.string.text
-msgid "%PRODUCTNAME Documents"
-msgstr "Belgeyên %PRODUCTNAME"
-
-#: doc.src#STR_FRAMEOBJECT_PROPERTIES.string.text
-msgid "Propert~ies..."
-msgstr "~Taybetmendî..."
-
-#: doc.src#STR_FSET_FILTERNAME0.string.text
-msgid "HTML (FrameSet)"
-msgstr "HTML (Komika Çarçovê)"
-
-#: doc.src#STR_FSET_FILTERNAME1.string.text
-msgid "%PRODUCTNAME Frame Document"
-msgstr "Belgeya çarçovê ya %PRODUCTNAME"
-
-#: doc.src#STR_TEMPL_MOVED.string.text
-msgid ""
-"The template \"$(TEMPLATE)\" was not found at the original location. A "
-"template with the same name exists at \"$(FOUND)\". Should this template be "
-"used in the future when comparing?"
-msgstr ""
-"Şablona \"$(TEMPLATE)\" li cihê xwe nehate dîtin. Navê cihê ku heman şablon lê "
-"ye : \"$(FOUND)\". Ev şablon di pêşerojê de bo danberheviyê were bikaranîn?"
-
-#: doc.src#STR_TEMPL_RESET.string.text
-msgid ""
-"The template \"$(TEMPLATE)\" has not been found. Should the template be looked "
-"for the next time the document is opened ?"
-msgstr "Şablona \"$(TEMPLATE)\" nehate dîtin. Bila pêşerojê li vê şablonê bigere?"
-
-#: doc.src#STR_AUTOMATICVERSION.string.text
-msgid "Automatically saved version"
-msgstr "Guhertoya ku bixweber hatiye tomarkirin"
-
-#: doc.src#STR_DOCTYPENAME_SW.string.text
-msgid "Text Document"
-msgstr "Belgeya Nivîsarê"
-
-#: doc.src#STR_DOCTYPENAME_SWWEB.string.text
-msgid "HTML Document"
-msgstr "Belgeya HTML"
-
-#: doc.src#STR_DOCTYPENAME_SWGLOB.string.text
-msgid "Master Document"
-msgstr "Belgeya Mak"
-
-#: doc.src#STR_DOCTYPENAME_SC.string.text
-msgid "Spreadsheet"
-msgstr "Tabloya Hesêb"
-
-#: doc.src#STR_DOCTYPENAME_SI.string.text
-msgid "Presentation"
-msgstr "Pêşkêşî"
-
-#: doc.src#STR_DOCTYPENAME_SD.string.text
-msgid "Drawing"
-msgstr "Xêzkêşan"
-
-#: doc.src#STR_DOCTYPENAME_MESSAGE.string.text
-msgid "Message"
-msgstr "Peyam"
-
-#: doc.src#STR_NOSAVEANDCLOSE.string.text
-msgid "~Discard"
-msgstr "~Jê bavêje"
-
-#: doc.src#STR_PACKNGO_NOACCESS.string.text
-msgid "Access to the current data medium not possible."
-msgstr "Xwe negihand hilgira daneyên ku tê bikaranîn."
-
-#: doc.src#STR_PACKNGO_NEWMEDIUM.string.text
-msgid "Insert the next data carrier and click OK."
-msgstr "Hilgirê daneyan ya dû re têxine cihê wê û pêl bişkoka Temamê bikin."
-
-#: doc.src#STR_OBJECT.string.text
-msgid "Object"
-msgstr "Obje"
-
-#: doc.src#DLG_MACROQUERY.querybox.text
-msgid "This document contains macros. $(TEXT)"
-msgstr "Ev belge makroyan dihundirîne. $(TEXT)"
-
-#: doc.src#DLG_MACROQUERY.querybox.title
-msgid "Run Macro"
-msgstr "Run Macro"
-
-#: doc.src#BTN_OK.string.text
-msgid "Run"
-msgstr "Bixebitîne"
-
-#: doc.src#BTN_CANCEL.string.text
-msgid "Do Not Run"
-msgstr "Xebitandin"
-
-#: doc.src#FT_CANCEL.string.text
-msgid ""
-"According to the security settings, the macros in this document should not "
-"be run. Do you want to run them anyway?"
-msgstr ""
-"Li gorî mîhenkên ewlekariyê divê ev makro nexebite. Bi rastî jî tu dixwazî "
-"vê pelê bixebitîne?"
-
-#: doc.src#FT_OK.string.text
-msgid "Do you want to allow these macros to be run?"
-msgstr "Tu destûrê dide xebitandina van makroyan?"
-
-#: doc.src#STR_EXPORTASPDF_TITLE.string.text
-msgid "Export as PDF"
-msgstr "Wekî PDF îhrec bike"
-
-#: doc.src#STR_EXPORTWITHCFGBUTTON.string.text
-msgid "Export..."
-msgstr "Îhrac bike..."
-
-#: doc.src#STR_EXPORTBUTTON.string.text
-msgid "Export"
-msgstr "Veguhezîne derve"
-
-#: doc.src#RID_SVXSTR_SECURITY_ADDPATH.string.text
-msgid "Add this directory to the list of secure paths: "
-msgstr "Vê pêristê têxe lîsteya riyên ewle: "
-
-#: doc.src#STR_LABEL_FILEFORMAT.string.text
-msgid "File format:"
-msgstr "Formata pelan:"
-
-#: doc.src#STR_HIDDENINFO_CONTAINS.string.text
-msgid ""
-"This document contains:\n"
-"\n"
-msgstr ""
-"Di hundirê vê belgeyê de:\n"
-"\n"
-
-#: doc.src#STR_HIDDENINFO_RECORDCHANGES.string.text
-msgid "Recorded changes"
-msgstr "Guherînên tomarkirî"
-
-#: doc.src#STR_HIDDENINFO_NOTES.string.text
-msgid "Notes"
-msgstr "Nîşe"
-
-#: doc.src#STR_HIDDENINFO_DOCVERSIONS.string.text
-msgid "Document versions"
-msgstr "Guhertoyên belgeyê"
-
-#: doc.src#STR_HIDDENINFO_FIELDS.string.text
-msgid "Fields"
-msgstr "Qad"
-
-#: doc.src#STR_HIDDENINFO_LINKDATA.string.text
-msgid "Linked data..."
-msgstr "Dana ya girêdayî..."
-
-#: doc.src#STR_HIDDENINFO_CONTINUE_SAVING.string.text
-msgid "Do you want to continue saving the document?"
-msgstr "Tu dixwazî tomarkirina belgeyê bidomînî?"
-
-#: doc.src#STR_HIDDENINFO_CONTINUE_PRINTING.string.text
-msgid "Do you want to continue printing the document?"
-msgstr "Tu dixwazî çapkirina belgeyê bidomînî?"
-
-#: doc.src#STR_HIDDENINFO_CONTINUE_SIGNING.string.text
-msgid "Do you want to continue signing the document?"
-msgstr "Tu dixwazî îmze kirina belgeyê bidomînî?"
-
-#: doc.src#STR_HIDDENINFO_CONTINUE_CREATEPDF.string.text
-msgid "Do you want to continue creating a PDF file?"
-msgstr "Tu dixwazî afirandina pela PDF bidomînî?"
-
-#: doc.src#STR_NEW_FILENAME_SAVE.string.text
-msgid ""
-"If you do not want to overwrite the original document, you should save your "
-"work under a new filename."
-msgstr ""
-"Heke tu naxwazî li ser belgeya xweser binivîsî, tu divê xebata xwe bi navekî "
-"nû ve tomar bikî."
-
-#: doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.string.text
-msgid "Some template files are protected and can not be deleted."
-msgstr "Hinek pelên şablon tên parastin û nayên jê birin."
-
-#: doc.src#STR_DOCINFO_INFOFIELD.string.text
-msgid "Info %1"
-msgstr "Agahî %1"
-
-#: doc.src#STR_SHARED.string.text
-msgid " (shared)"
-msgstr " (parvekirî)"
-
-#: doc.src#STR_XMLSEC_ODF12_EXPECTED.string.text
-msgid ""
-"The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-"
-"Options-Load/Save-General. Signing documents requires ODF 1.2 "
-"(OpenOffice.org 3.x)."
-msgstr ""
-"Teşeya guhertoya belgeyê ODF 1.1 (OpenOffice.org 2.x) e ya di Amûr-Vebijêrk-"
-"Barkirin/Tomarkirin-Giştî de. Ji bo îmze kirina belgeyê ODF 1.2 "
-"(OpenOffice.org 3.x) hewce ye."
-
-#: doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.querybox.text
-msgid ""
-"The document has to be saved before it can be signed. Saving the document "
-"removes all present signatures.\n"
-"Do you want to save the document?"
-msgstr ""
-"Belge divê beriya îmze kirinê were tomarkirin. Tomarkirina belgeyê hemû îmze "
-"yên heyî radike.\n"
-"Tu dixwazî belgeyê tomar bikî?"
-
-#: doc.src#STR_QRYTEMPL_MESSAGE.string.text
-msgid ""
-"The template '$(ARG1)' on which this document is based, has been modified. "
-"Do you want to update style based formattings according to the modified "
-"template?"
-msgstr ""
-"Şablona '$(ARG1)' ya ku bingeha vê belgeyê ye, hatiye guherîn. Tu dixwazî "
-"gorê şablona hatiye guherîn teşekirina bi bingeha şêwaz re rojane bikî?"
-
-#: doc.src#STR_QRYTEMPL_UPDATE_BTN.string.text
-msgid "~Update Styles"
-msgstr "Şêwazên ~Rojanekirinê"
-
-#: doc.src#STR_QRYTEMPL_KEEP_BTN.string.text
-msgid "~Keep Old Styles"
-msgstr "Şêwazên Kevn ~Biparêze"
-
-#: doctdlg.src#DLG_DOC_TEMPLATE.FL_EDIT.fixedline.text
-msgid "New template"
-msgstr "Şablona nû"
-
-#: doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.fixedline.text
-msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.fixedline.text"
-msgid "Templates"
-msgstr "Şablon"
-
-#: doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.fixedtext.text
-msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.fixedtext.text"
-msgid "~Categories"
-msgstr "~Kategorî"
-
-#: doctdlg.src#DLG_DOC_TEMPLATE.FT_STYLESHEETS.fixedtext.text
-msgid "~Templates"
-msgstr "~Şablon"
-
-#: doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.pushbutton.text
-msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.pushbutton.text"
-msgid "~Edit"
-msgstr "~Serrrast bike"
-
-#: doctdlg.src#DLG_DOC_TEMPLATE.BT_ORGANIZE.pushbutton.text
-msgid "~Organizer..."
-msgstr "~Rêxistiner..."
-
-#: doctdlg.src#DLG_DOC_TEMPLATE.modaldialog.text
-msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.modaldialog.text"
-msgid "Templates"
-msgstr "Şablon"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.1.itemlist.text
-msgid "My Templates"
-msgstr "Şablonên min"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.2.itemlist.text
-msgid "Business Correspondence"
-msgstr "Guncaviya Pîşe"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.3.itemlist.text
-msgid "Other Business Documents"
-msgstr "Belgeyên Meslekî yên Din"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.4.itemlist.text
-msgid "Personal Correspondence and Documents"
-msgstr "Guncaviya Takekesî û Belge"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.5.itemlist.text
-msgid "Forms and Contracts"
-msgstr "Forma û Peyman"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.6.itemlist.text
-msgid "Finances"
-msgstr "Fînans"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.7.itemlist.text
-msgid "Education"
-msgstr "Perwerdehî"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.8.itemlist.text
-msgid "Presentation Backgrounds"
-msgstr "Rûerdên Pêşkêşiyan"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.9.itemlist.text
-msgid "Presentations"
-msgstr "Pêşek"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.10.itemlist.text
-msgid "Miscellaneous"
-msgstr "Curbecur"
-
-#: doctempl.src#RID_CNT_STR_WAITING.string.text
-msgid "The templates are being initialized for first-time usage."
-msgstr "Ji bo xebitandina pêşîn şablon tê amadekirin."
-
-#: docvor.src#DLG_ORGANIZE.BTN_OK.okbutton.text
-msgid "Close"
+#: source/appl/app.src#STR_NONAME.String.Text
+#, fuzzy
+msgid  "Untitled"
+msgstr "Bênav"
+
+#: source/appl/app.src#STR_CLOSE.String.Text
+#, fuzzy
+msgid  "Close"
 msgstr "Bigire"
 
-#: docvor.src#DLG_ORGANIZE.BTN_FILES.pushbutton.text
-msgid "~File..."
-msgstr "~Pel..."
+#: source/appl/app.src#STR_STYLE_FILTER_AUTO.String.Text
+#, fuzzy
+msgid  "Automatic"
+msgstr "Bixweber"
 
-#: docvor.src#DLG_ORGANIZE.BTN_ADDRESSTEMPLATE.pushbutton.text
-msgid "~Address Book..."
-msgstr "~Pirtûka Navnîşanan..."
+#: source/appl/app.src#STR_STANDARD_SHORTCUT.String.Text
+#, fuzzy
+msgid  "Standard"
+msgstr "Standard"
 
-#: docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.1.stringlist.text
-msgctxt "docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.1.stringlist.text"
-msgid "Templates"
-msgstr "Şablon"
+#: source/appl/app.src#STR_BYTES.String.Text
+#, fuzzy
+msgid  "Bytes"
+msgstr "Bayt"
 
-#: docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.2.stringlist.text
-msgctxt "docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.2.stringlist.text"
-msgid "Documents"
+#: source/appl/app.src#STR_KB.String.Text
+#, fuzzy
+msgid  "KB"
+msgstr "KB"
+
+#: source/appl/app.src#STR_MB.String.Text
+#, fuzzy
+msgid  "MB"
+msgstr "MB"
+
+#: source/appl/app.src#STR_GB.String.Text
+#, fuzzy
+msgid  "GB"
+msgstr "GB"
+
+#: source/appl/app.src#MSG_QUERY_LASTVERSION.QueryBox.Message
+#, fuzzy
+msgid  "Cancel all changes?"
+msgstr "Hemû guhertinan betal bike."
+
+#: source/appl/app.src#RID_DOCALREADYLOADED_DLG.InfoBox.Message
+#, fuzzy
+msgid  "Document already open."
+msgstr "Belge ji xwe barkirî û vekiriye."
+
+#: source/appl/app.src#MSG_ERR_NO_WEBBROWSER_FOUND.ErrorBox.Message
+msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
+msgstr ""
+
+#: source/appl/app.src#GID_INTERN.String.Text
+#, fuzzy
+msgid  "Internal"
+msgstr "Hundirî"
+
+#: source/appl/app.src#GID_APPLICATION.String.Text
+#, fuzzy
+msgid  "Application"
+msgstr "Sepan"
+
+#: source/appl/app.src#GID_VIEW.String.Text
+#, fuzzy
+msgid  "View"
+msgstr "Dîtin"
+
+#: source/appl/app.src#GID_DOCUMENT.String.Text
+#, fuzzy
+msgid  "Documents"
 msgstr "Belge"
 
-#: docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.1.stringlist.text
-msgctxt "docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.1.stringlist.text"
-msgid "Templates"
-msgstr "Şablon"
-
-#: docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.2.stringlist.text
-msgctxt "docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.2.stringlist.text"
-msgid "Documents"
-msgstr "Belge"
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_NEW.menuitem.text
-msgid "~New"
-msgstr "~Nû"
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DELETE.menuitem.text
-msgid "~Delete"
-msgstr "~Jê bibe"
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.menuitem.text
-msgctxt "docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.menuitem.text"
-msgid "~Edit"
-msgstr "~Sererastkirin"
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_FROM.menuitem.text
-msgid "Import Template..."
-msgstr "Şablonê Veguhezîne Hundir..."
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_TO.menuitem.text
-msgid "Export Template..."
-msgstr "Şablonê Veguhezîne Derve..."
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINT.menuitem.text
-msgid "~Print"
-msgstr "~Çapkirin"
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINTER_SETUP.menuitem.text
-msgid "Printer Settings..."
-msgstr "Mîhengên Çaperê..."
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESCAN.menuitem.text
-msgid "Update"
-msgstr "Rojanekirin"
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DEFAULT_TEMPLATE.menuitem.text
-msgid "Set As Default Template"
-msgstr "Weke Şablona Heyî Rave Bike"
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESET_DEFAULT_TEMPLATE.menuitem.text
-msgid "Reset Default Template"
-msgstr "Şablona Heyî Sifir Bike"
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.menubutton.text
-msgid "Commands"
-msgstr "Ferman"
-
-#: docvor.src#DLG_ORGANIZE.modaldialog.text
-msgid "Template Management"
-msgstr "Rêveberiya Şablonan"
-
-#: new.src#DLG_NEW_FILE.FT_REGION.fixedtext.text
-msgctxt "new.src#DLG_NEW_FILE.FT_REGION.fixedtext.text"
-msgid "~Categories"
-msgstr "~Kategorî"
-
-#: new.src#DLG_NEW_FILE.FT_TEMPLATE.fixedtext.text
-msgid "T~emplates"
-msgstr "~Şablon"
-
-#: new.src#DLG_NEW_FILE.BT_MORE.morebutton.text
-msgid "~More"
-msgstr "~Zêdetir"
-
-#: new.src#DLG_NEW_FILE.BTN_PREVIEW.checkbox.text
-msgid "Pre~view"
-msgstr "Pêş~dîtin"
-
-#: new.src#DLG_NEW_FILE.GB_DOCINFO.fixedline.text
-msgid "Description"
-msgstr "Rave"
-
-#: new.src#DLG_NEW_FILE.CB_TEXT_STYLE.checkbox.text
-msgid "Te~xt"
-msgstr "~Nivîs"
-
-#: new.src#DLG_NEW_FILE.CB_FRAME_STYLE.checkbox.text
-msgid "~Frame"
-msgstr "~Çarçove"
-
-#: new.src#DLG_NEW_FILE.CB_PAGE_STYLE.checkbox.text
-msgid "~Pages"
-msgstr "~Rûpel"
-
-#: new.src#DLG_NEW_FILE.CB_NUM_STYLE.checkbox.text
-msgid "N~umbering"
-msgstr "~Hejmarkirin"
-
-#: new.src#DLG_NEW_FILE.CB_MERGE_STYLE.checkbox.text
-msgid "~Overwrite"
-msgstr "~Serbinivîse"
-
-#: new.src#DLG_NEW_FILE.PB_LOAD_FILE.pushbutton.text
-msgid "From File..."
-msgstr "Ji Pelê..."
-
-#: new.src#DLG_NEW_FILE.STR_LOAD_TEMPLATE.string.text
-msgid "Load Styles"
-msgstr "Teşeyan bar bike"
-
-#: new.src#DLG_NEW_FILE.FT_TITLE.fixedtext.text
-msgid "~Title"
-msgstr "~Sernav"
-
-#: new.src#DLG_NEW_FILE.FT_THEMA.fixedtext.text
-msgid "Subject"
-msgstr "Mijar"
-
-#: new.src#DLG_NEW_FILE.FT_KEYWORDS.fixedtext.text
-msgid "~Key words"
-msgstr "Peyvên Mifte"
-
-#: new.src#DLG_NEW_FILE.FT_DESC.fixedtext.text
-msgid "~Description"
-msgstr "~Daxuyanî"
-
-#: new.src#DLG_NEW_FILE.modaldialog.text
-msgid "New"
-msgstr "Nû"
-
-#~ msgid ""
-#~ "The Styles in this document do not match your current Styles. Should your "
-#~ "current Styles be applied to this document?"
-#~ msgstr ""
-#~ "Şêwazên vê belgeyê, bi şêwazên heyî li hev nake. Nila şêwazên derbasdar li "
-#~ "belgeya we were sepandin."
-"X-Accelerator-Marker: ~\n"
-
-#: alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.fixedtext.text
-msgid ""
-"This document may contain formatting or content that cannot be saved in the "
-"%FORMATNAME file format. Do you want to save the document in this format "
-"anyway?\n"
-"\n"
-"Use the latest ODF file format and be sure all formatting and content is "
-"saved correctly."
-msgstr ""
-"Di vê belgeyê de di be ku teşekirin hebe an jî naverok wekî teşeya pelê %"
-"FORMATNAME nayê tomarkirin. Tu dixwazî belgeyê dîsa jî di vê teşeyê de tomar "
-"bikî?\n"
-"\n"
-"Teşeya pelê ODF ya dawiyê bi kar bîne û kontrol bike hemû teşekirin û "
-"naverok rast hatine tomarkirin."
-
-#: alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.okbutton.text
-msgid "~Keep Current Format"
-msgstr "Teşeya Heyî ~Biparêze"
-
-#: alienwarn.src#RID_DLG_ALIEN_WARNING.PB_YES.cancelbutton.text
-msgid "~Save in ODF Format"
-msgstr "Di teşeya ODF de ~Tomar Bike"
-
-#: alienwarn.src#RID_DLG_ALIEN_WARNING.PB_MOREINFO.helpbutton.text
-msgid "~More Information..."
-msgstr "~Zêdetir Agahî..."
-
-#: alienwarn.src#RID_DLG_ALIEN_WARNING.CB_WARNING_OFF.checkbox.text
-msgid "~Ask when not saving in ODF format"
-msgstr "Demê di teşeya ODF de tomar neke ~bipirse"
-
-#: dialog.src#STR_RESET.string.text
-msgid "~Reset"
-msgstr "~Tune Bike"
-
-#: dialog.src#STR_APPLY.string.text
-msgid "Apply"
-msgstr "Bisepîne"
-
-#: dialog.src#STR_TABPAGE_MANAGESTYLES.string.text
-msgid "Organizer"
-msgstr "Rêvebibe"
-
-#: dialog.src#MSG_TABPAGE_INVALIDNAME.infobox.text
-msgid "This name is already in use."
-msgstr "Ev nav wek navê şablonekî tê bikaranîn"
-
-#: dialog.src#MSG_TABPAGE_INVALIDSTYLE.infobox.text
-msgid "This Style does not exist."
-msgstr "Ev şêwaz ne mevcûd e."
-
-#: dialog.src#MSG_TABPAGE_INVALIDPARENT.infobox.text
-msgid ""
-"This Style cannot be used as a base Style,\n"
-"because it would result in a recursive reference."
-msgstr ""
-"Ev şêwaz weke şêwaza bingeh nayê bikaranîn,\n"
-"ji ber ku di têkildariyeke dubare de encam dayî."
-
-#: dialog.src#MSG_POOL_STYLE_NAME.infobox.text
-msgid ""
-"Name already exists as a default Style.\n"
-"Please choose another name."
-msgstr ""
-"Ev nav weke şêwaza ku tê fikirîn heye.\n"
-"Ji kerema xwe navekî din hilbijêre."
-
-#: dialog.src#STR_DELETE_STYLE.string.text
-msgid "Do you really want to delete Style $1?"
-msgstr "Bi rastî jî tu dixwazî şêwaza $1 jê bibe?"
-
-#: dialog.src#STR_DELETE_STYLE_USED.string.text
-msgid "You are deleting an applied Style!\n"
-msgstr "Tu şêwaza ku tê bikaranîn jê dibe!\n"
-
-#: dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.menuitem.text
-msgid "New..."
-msgstr "Nû..."
-
-#: dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.menuitem.text
-msgid "Modify..."
-msgstr "Biguherîne..."
-
-#: dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.menuitem.text
-msgid "Delete..."
-msgstr "Jê bibe..."
-
-#: dialog.src#SID_NAVIGATOR.string.text
-msgid "Navigator"
-msgstr "Navîgator"
-
-#: dialog.src#SID_TASKPANE.string.text
-msgid "Task Pane"
-msgstr "Panela Peywirê"
-
-#: dialog.src#MSG_ERROR_WRONG_CONFIRM.errorbox.text
-msgid "Faulty password confirmation"
-msgstr "Erêkirina nasnavê xelete"
-
-#: dialog.src#STR_PDF_EXPORT_SEND.string.text
-msgid "Send"
-msgstr "Bişîne"
-
-#: dinfdlg.src#STR_SFX_NEWOFFICEDOC.string.text
-msgid "%PRODUCTNAME document"
-msgstr "Belgeya %PRODUCTNAME"
-
-#: dinfdlg.src#TP_DOCINFODESC.FT_TITLE.fixedtext.text
-msgid "~Title"
-msgstr "~Sernav"
-
-#: dinfdlg.src#TP_DOCINFODESC.FT_THEMA.fixedtext.text
-msgid "~Subject"
-msgstr "~Mijar"
-
-#: dinfdlg.src#TP_DOCINFODESC.FT_KEYWORDS.fixedtext.text
-msgid "~Keywords"
-msgstr "Miftên bingehî"
-
-#: dinfdlg.src#TP_DOCINFODESC.FT_COMMENT.fixedtext.text
-msgid "~Comments"
-msgstr "Danezanî"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.fixedtext.text
-msgid "Type:"
-msgstr "Cure:"
-
-#: dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.checkbox.text
-msgctxt "dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.checkbox.text"
-msgid "~Read-only"
-msgstr "~Tenê xwendin"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_FILE.fixedtext.text
-msgid "Location:"
-msgstr "Cih:"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_FILE_SIZE.fixedtext.text
-msgid "Size:"
-msgstr "Mezinahî:"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_CREATE.fixedtext.text
-msgid "Created:"
-msgstr "Afirandin:"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_CHANGE.fixedtext.text
-msgid "Modified:"
-msgstr "Hatiye guherandin:"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_SIGNED.fixedtext.text
-msgid "Digitally signed:"
-msgstr "Dîjîtal hatiye îmze kirin:"
-
-#: dinfdlg.src#TP_DOCINFODOC.BTN_SIGNATURE.pushbutton.text
-msgid "Digital Signature..."
-msgstr "Îmze ya Dîjîtal...."
-
-#: dinfdlg.src#TP_DOCINFODOC.STR_MULTSIGNED.string.text
-msgid "Multiply signed document"
-msgstr "Belgeya pir îmzekirî"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_PRINT.fixedtext.text
-msgid "Last printed:"
-msgstr "Dîroka ku herî dawî hate nivîsandin:"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_TIMELOG.fixedtext.text
-msgid "Total editing time:"
-msgstr "Têheva dema sererastkirinan:"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_DOCNO.fixedtext.text
-msgid "Revision number:"
-msgstr "Nimroya revîziyonê:"
-
-#: dinfdlg.src#TP_DOCINFODOC.BTN_DELETE.pushbutton.text
-msgid "Reset"
-msgstr "~Bive serî"
-
-#: dinfdlg.src#TP_DOCINFODOC.CB_USE_USERDATA.checkbox.text
-msgid "~Apply user data"
-msgstr "~Daneyên bikarhêner bikar bîne"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_TEMPL.fixedtext.text
-msgid "Template:"
-msgstr "Şablon:"
-
-#: dinfdlg.src#TP_DOCINFODOC.STR_UNKNOWNSIZE.string.text
-msgid "unknown"
-msgstr "nenas"
-
-#: dinfdlg.src#TP_DOCINFODOC.EDIT_FILE_NAME.string.text
-msgid "File Name"
-msgstr ""
-
-#: dinfdlg.src#TP_DOCINFOUSER.BTN_EDITLABEL.pushbutton.text
-msgid "~Info fields..."
-msgstr "~Qadên Agahiyan..."
-
-#: dinfdlg.src#TP_DOCINFORELOAD.RB_NOAUTOUPDATE.radiobutton.text
-msgid "Do not refresh automatically"
-msgstr "Tezekirina bixweber neke"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.RB_RELOADUPDATE.radiobutton.text
-msgid "Refresh this document"
-msgstr "Vê Belgeyê"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.FT_EVERY.fixedtext.text
-msgid "every"
-msgstr "her"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.fixedtext.text
-msgctxt "dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.fixedtext.text"
-msgid "seconds"
-msgstr "çirke"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.RB_FORWARDUPDATE.radiobutton.text
-msgid "Redirect from this document"
-msgstr "Ji vê belgeyê bi rê ve bibe"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.fixedtext.text
-msgid "after"
-msgstr "paşê"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.fixedtext.text
-msgctxt "dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.fixedtext.text"
-msgid "seconds"
-msgstr "çirke"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.FT_URL.fixedtext.text
-msgid "to URL"
-msgstr "li navnîşana URL"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.FT_FRAME.fixedtext.text
-msgid "to frame"
-msgstr "li çarçevê"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.STR_FORWARD_ERRMSSG.string.text
-msgid "If you select the option \"%PLACEHOLDER%\", you must enter a URL."
-msgstr ""
-"Heke tu bijarteka \"%PLACEHOLDER%\" hilbijêre, divê tu navnîşana URLê têkevê."
-
-#: dinfdlg.src#TP_CUSTOMPROPERTIES.FT_PROPERTIES.fixedtext.text
-msgid "~Properties"
-msgstr "~Taybetmendî"
-
-#: dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.string.text
-msgid "Name"
-msgstr "Nav"
-
-#: dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.string.text
-msgid "Type"
-msgstr "Cure"
-
-#: dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_VALUE.string.text
-msgid "Value"
-msgstr "Nirx"
-
-#: dinfdlg.src#TP_CUSTOMPROPERTIES.BTN_ADD.pushbutton.text
-msgid "~Add"
-msgstr "~Lêzêdekirin"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.combobox.text
-msgctxt "dinfdlg.src#SFX_CB_PROPERTY_NAME.combobox.text"
-msgid "-"
-msgstr "-"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.combobox.quickhelptext
-msgid "Property Name"
-msgstr "Navê Taybetmendiyê"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.1.stringlist.text
-msgid "Checked by"
-msgstr "Hatiye kontrol kirin aliyê"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.2.stringlist.text
-msgid "Client"
-msgstr "Daxwazker"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.3.stringlist.text
-msgid "Date completed"
-msgstr "Dîroka qedandinê"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.4.stringlist.text
-msgid "Department"
-msgstr "Beş"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.5.stringlist.text
-msgid "Destinations"
-msgstr "Hedef"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.6.stringlist.text
-msgid "Disposition"
-msgstr "Jêbirin"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.7.stringlist.text
-msgid "Division"
-msgstr "Parve"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.8.stringlist.text
-msgid "Document number"
-msgstr "Hejmara belgeyê"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.9.stringlist.text
-msgid "Editor"
-msgstr "Edîtor"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.10.stringlist.text
-msgid "E-Mail"
-msgstr "E-Peyam"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.11.stringlist.text
-msgid "Forward to"
-msgstr "Bişîne ji"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.12.stringlist.text
-msgid "Group"
-msgstr "Kom"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.13.stringlist.text
-msgid "Info"
-msgstr "Agahî"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.14.stringlist.text
-msgid "Language"
-msgstr "Ziman"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.15.stringlist.text
-msgid "Mailstop"
-msgstr "ÎstgehaPosteyê"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.16.stringlist.text
-msgid "Matter"
-msgstr "Girîngî"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.17.stringlist.text
-msgid "Office"
-msgstr "Nivîsgeh"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.18.stringlist.text
-msgid "Owner"
-msgstr "Xwedî"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.19.stringlist.text
-msgid "Project"
-msgstr "Proje"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.20.stringlist.text
-msgid "Publisher"
-msgstr "Weşanger"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.21.stringlist.text
-msgid "Purpose"
-msgstr "Armanc"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.22.stringlist.text
-msgid "Received from"
-msgstr "Hat jê"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.23.stringlist.text
-msgid "Recorded by"
-msgstr "Hat tomarkirin aliyê"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.24.stringlist.text
-msgid "Recorded date"
-msgstr "Dîroka tomarkirinê"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.25.stringlist.text
-msgid "Reference"
-msgstr "Referans"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.26.stringlist.text
-msgid "Source"
-msgstr "Çavkanî"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.27.stringlist.text
-msgid "Status"
-msgstr "Rewş"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.28.stringlist.text
-msgid "Telephone number"
-msgstr "Nimreya Telefonê"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.29.stringlist.text
-msgid "Typist"
-msgstr "Nivîskar"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.30.stringlist.text
-msgid "URL"
-msgstr "URL"
-
-#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.1.stringlist.text
-msgid "Text"
-msgstr "Nivîsar"
-
-#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.2.stringlist.text
-msgid "DateTime"
-msgstr "Demê Dîrokê"
-
-#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.3.stringlist.text
-msgid "Date"
-msgstr "Dîrok"
-
-#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.4.stringlist.text
-msgctxt "dinfdlg.src#SFX_LB_PROPERTY_TYPE.4.stringlist.text"
-msgid "Duration"
-msgstr "Demajo"
-
-#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.5.stringlist.text
-msgid "Number"
-msgstr "Hejmar"
-
-#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.6.stringlist.text
-msgid "Yes or no"
-msgstr "Erê an na"
-
-#: dinfdlg.src#SFX_ST_DURATION_FORMAT.string.text
-msgid " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
-msgstr "S: %1 M: %2 R: %3 S: %4 X: %5 Ç: %6"
-
-#: dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.radiobutton.text
-msgid "Yes"
-msgstr "Erê"
-
-#: dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_NO.radiobutton.text
-msgid "No"
-msgstr "Na"
-
-#: dinfdlg.src#SFX_PB_PROPERTY_REMOVE.imagebutton.text
-msgctxt "dinfdlg.src#SFX_PB_PROPERTY_REMOVE.imagebutton.text"
-msgid "-"
-msgstr "-"
-
-#: dinfdlg.src#SFX_PB_PROPERTY_REMOVE.imagebutton.quickhelptext
-msgid "Remove Property"
-msgstr "Taybetmeniyê Rake"
-
-#: dinfdlg.src#SFX_QB_WRONG_TYPE.querybox.text
-msgid ""
-"The value entered does not match the specified type.\n"
-"The value will be stored as text."
-msgstr ""
-"Nirxa têketî bi cureyê dîyarkirî re hev nagirin.\n"
-"Nirx wê wekî nivîs were tomarkirin."
-
-#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.pageitem.text
-msgid "General"
-msgstr "Giştî"
-
-#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.pageitem.text
-msgid "Description"
-msgstr "Rave"
-
-#: dinfdlg.src#SID_DOCINFO.1.TP_CUSTOMPROPERTIES.pageitem.text
-msgid "Custom Properties"
-msgstr "Taybetmendiyên Taybet"
-
-#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.pageitem.text
-msgid "Internet"
-msgstr "Înternet"
-
-#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFOSECURITY.pageitem.text
-msgid "Security"
-msgstr "Ewlehî"
-
-#: dinfdlg.src#SID_DOCINFO.tabdialog.text
-msgid "Properties of "
-msgstr "Taybetmendiyên "
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.FL_DURATION.fixedline.text
-msgctxt "dinfdlg.src#RID_EDIT_DURATIONS.FL_DURATION.fixedline.text"
-msgid "Duration"
-msgstr "Demajo"
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.CB_NEGATIVE.checkbox.text
-msgid "~Negative"
-msgstr "~Neyênî"
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.FT_YEAR.fixedtext.text
-msgid "~Years"
-msgstr "~Sal"
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.FT_MONTH.fixedtext.text
-msgid "~Months"
-msgstr "~Meh"
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.FT_DAY.fixedtext.text
-msgid "~Days"
-msgstr "~Roj"
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.FT_HOUR.fixedtext.text
-msgid "H~ours"
-msgstr "S~aet"
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.FT_MINUTE.fixedtext.text
-msgid "Min~utes"
-msgstr "Xul~ek"
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.FT_SECOND.fixedtext.text
-msgid "~Seconds"
-msgstr "~Çirke"
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.FT_MSECOND.fixedtext.text
-msgid "Millise~conds"
-msgstr "Mîlîxu~lek"
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.modaldialog.text
-msgid "Edit Duration"
-msgstr "Demajoyê Biguherîne"
-
-#: dinfedt.src#DLG_DOCINFO_EDT.FL_INFO.fixedline.text
-msgid "Names"
-msgstr "Nav"
-
-#: dinfedt.src#DLG_DOCINFO_EDT.modaldialog.text
-msgid "Edit Field Names"
-msgstr "Etîketan Sererast Bike"
-
-#: filedlghelper.src#STR_SFX_FILEDLG_ACTUALVERSION.string.text
-msgid "Current version"
-msgstr "Guhertoya niha"
-
-#: filedlghelper.src#STR_SFX_EXPLORERFILE_EXPORT.string.text
-msgid "Export"
-msgstr "Veguhezîne derve"
-
-#: filedlghelper.src#STR_SFX_EXPLORERFILE_INSERT.string.text
-msgid "Insert"
+#: source/appl/app.src#GID_EDIT.String.Text
+#, fuzzy
+msgid  "Edit"
+msgstr "Sererast bike"
+
+#: source/appl/app.src#GID_MACRO.String.Text
+#, fuzzy
+msgid  "BASIC"
+msgstr "BASIC"
+
+#: source/appl/app.src#GID_OPTIONS.String.Text
+#, fuzzy
+msgid  "Options"
+msgstr "Vebijêrk"
+
+#: source/appl/app.src#GID_MATH.String.Text
+#, fuzzy
+msgid  "Math"
+msgstr "Bîrkarî"
+
+#: source/appl/app.src#GID_NAVIGATOR.String.Text
+#, fuzzy
+msgid  "Navigate"
+msgstr "Bigere"
+
+#: source/appl/app.src#GID_INSERT.String.Text
+#, fuzzy
+msgid  "Insert"
 msgstr "Têxe Nav"
 
-#: filedlghelper.src#STR_SFX_EXPLORERFILE_BUTTONINSERT.string.text
-msgid "~Insert"
-msgstr "~Lêzêdekirin"
-
-#: filedlghelper.src#STR_SFX_IMPORT_ALL.string.text
-msgid "<All formats>"
-msgstr "<Hemû format>"
-
-#: filedlghelper.src#STR_CB_AUTO_EXTENSION.string.text
-msgid "~Automatic file name extension"
-msgstr "~Dirêjeka navê pela otomatîk"
-
-#: filedlghelper.src#STR_CB_SELECTION.string.text
-msgid "~Selection"
-msgstr "~Hilbijartin"
-
-#: filedlghelper.src#STR_CB_INSERT_AS_LINK.string.text
-msgid "~Link"
-msgstr "~Lînk"
-
-#: filedlghelper.src#STR_CB_SHOW_PREVIEW.string.text
-msgid "Pr~eview"
-msgstr "Pêş~dîtin"
-
-#: filedlghelper.src#STR_CB_READONLY.string.text
-msgctxt "filedlghelper.src#STR_CB_READONLY.string.text"
-msgid "~Read-only"
-msgstr "~Tenê xwendin"
-
-#: filedlghelper.src#STR_CB_PASSWORD.string.text
-msgid "Save with ~password"
-msgstr "Bi şî~freyê tomar bike"
-
-#: filedlghelper.src#STR_CB_FILTER_OPTIONS.string.text
-msgid "Edit ~filter settings"
-msgstr "Mîhengên fîltra sererast bike"
-
-#: filedlghelper.src#STR_PB_PLAY.string.text
-msgid "~Play"
-msgstr "~Lêdan"
-
-#: filedlghelper.src#STR_PB_STOP.string.text
-msgid "Sto~p"
-msgstr "Ra~westîne"
-
-#: filedlghelper.src#STR_PB_OPEN.string.text
-msgid "~Open"
-msgstr "~Veke"
-
-#: filedlghelper.src#STR_PB_SAVE.string.text
-msgid "~Save"
-msgstr "~Tomarkirin"
-
-#: filedlghelper.src#STR_LB_IMAGE_TEMPLATE.string.text
-msgid "Style:"
-msgstr "Şêwe:"
-
-#: filedlghelper.src#STR_LB_TEMPLATES.string.text
-msgid "~Templates:"
-msgstr "~Şablon:"
-
-#: filedlghelper.src#STR_LB_VERSION.string.text
-msgid "~Version:"
-msgstr "Gu~herto:"
-
-#: mailwindow.src#RID_ERRBOX_MAIL_CONFIG.errorbox.text
-msgid ""
-"%PRODUCTNAME was unable to find a working e-mail configuration. Please save "
-"this document locally instead and attach it from within your e-mail client."
-msgstr ""
-"%PRODUCTNAME mîhenkên e-peyaman yên tê bikaranîn nedît. Ji kerema xwe vê "
-"belgeyê tomar bike û li bernameya e-postaya ku tu bikar tîne zêde bike û "
-"bişîne"
-
-#: mgetempl.src#TP_MANAGE_STYLES.FT_NAME.fixedtext.text
-msgid "~Name"
-msgstr "~Nav"
-
-#: mgetempl.src#TP_MANAGE_STYLES.CB_AUTO.checkbox.text
-msgid "~AutoUpdate"
-msgstr "~Rojanekirina bixweber"
-
-#: mgetempl.src#TP_MANAGE_STYLES.FT_NEXT.fixedtext.text
-msgid "Ne~xt Style"
-msgstr "Şêwaza Dû Re"
-
-#: mgetempl.src#TP_MANAGE_STYLES.FT_BASE.fixedtext.text
-msgid "Linked with"
-msgstr "~Ya Hatiye Girêdan"
-
-#: mgetempl.src#TP_MANAGE_STYLES.FT_REGION.fixedtext.text
-msgid "~Category"
-msgstr "~Kategorî"
-
-#: mgetempl.src#TP_MANAGE_STYLES.GB_DESC.fixedline.text
-msgid "Contains"
-msgstr "Dihewîne"
-
-#: newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.FL_COL.fixedline.text
-msgid "Style name"
-msgstr "Navê Şêwazê"
-
-#: newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MSG_OVERWRITE.querybox.text
-msgid "Style already exists. Overwrite?"
-msgstr "Şêwaz jixwe heye. Bila li ser wê were nivîsîn?"
-
-#: newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.modaldialog.text
-msgid "Create Style"
-msgstr "Şêwaz Afirîne"
-
-#: passwd.src#DLG_PASSWD.FT_PASSWD_USER.fixedtext.text
-msgid "~User"
-msgstr "~Bikarhêner"
-
-#: passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD.fixedtext.text
-msgid "~Password"
-msgstr "~Nasnav"
-
-#: passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM.fixedtext.text
-msgid "~Confirm"
-msgstr "~Erê bike"
-
-#: passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.fixedline.text
+#: source/appl/app.src#GID_FORMAT.String.Text
 #, fuzzy
-msgctxt "passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.fixedline.text"
-msgid "Password"
-msgstr "Şîfre"
+msgid  "Format"
+msgstr "Teşe"
 
-#: passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD2.fixedtext.text
+#: source/appl/app.src#GID_TEMPLATE.String.Text
 #, fuzzy
-msgid "P~assword"
-msgstr "Şîfre"
+msgid  "Templates"
+msgstr "Şablon"
 
-#: passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM2.fixedtext.text
+#: source/appl/app.src#GID_TEXT.String.Text
 #, fuzzy
-msgid "Confir~m"
-msgstr "~Erê bike"
+msgid  "Text"
+msgstr "Nivîs"
 
-#: passwd.src#DLG_PASSWD.TEXT_PASSWD.string.text
+#: source/appl/app.src#GID_FRAME.String.Text
 #, fuzzy
-msgctxt "passwd.src#DLG_PASSWD.TEXT_PASSWD.string.text"
-msgid "Password"
-msgstr "Şîfre"
+msgid  "Frame"
+msgstr "Çarçove"
 
-#: passwd.src#DLG_PASSWD.modaldialog.text
-msgid "Enter Password"
-msgstr "Şîfreyê Derbas Bike"
+#: source/appl/app.src#GID_GRAPHIC.String.Text
+#, fuzzy
+msgid  "Graphic"
+msgstr "Grafîk"
 
-#: printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.fixedline.text
-msgid "Reduce print data"
-msgstr "Daneya ku tê nivîsîn biçûk bike"
+#: source/appl/app.src#GID_TABLE.String.Text
+#, fuzzy
+msgid  "Table"
+msgstr "Tablo"
 
-#: printopt.src#TP_COMMONPRINTOPTIONS.FT_OUTPUTTYPE.fixedtext.text
-msgid "Settings for"
-msgstr "Mîhengên a"
+#: source/appl/app.src#GID_ENUMERATION.String.Text
+#, fuzzy
+msgid  "Numbering"
+msgstr "Hejmarkirin"
 
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTEROUTPUT.radiobutton.text
-msgid "~Printer"
-msgstr "~Çaper"
+#: source/appl/app.src#GID_DATA.String.Text
+#, fuzzy
+msgid  "Data"
+msgstr "Dane"
 
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTFILEOUTPUT.radiobutton.text
-msgid "Print to ~file"
-msgstr "Li ~Pelî Binivîse"
+#: source/appl/app.src#GID_SPECIAL.String.Text
+#, fuzzy
+msgid  "Special Functions"
+msgstr "Kêrhatinên Taybet"
 
-#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCETRANSPARENCY.checkbox.text
-msgid "~Reduce transparency"
-msgstr "Şeffafbûnê Zêde Bike"
+#: source/appl/app.src#GID_IMAGE.String.Text
+#, fuzzy
+msgid  "Image"
+msgstr "Wêne"
 
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_AUTO.radiobutton.text
-msgid "Auto~matically"
-msgstr "Bi~xweber"
+#: source/appl/app.src#GID_CHART.String.Text
+#, fuzzy
+msgid  "Chart"
+msgstr "Xanxank"
 
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_NONE.radiobutton.text
-msgid "~No transparency"
-msgstr "~Zelalî Tuneye"
+#: source/appl/app.src#GID_EXPLORER.String.Text
+#, fuzzy
+msgid  "Explorer"
+msgstr "Lêkolînêr"
 
-#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEGRADIENTS.checkbox.text
-msgid "Reduce ~gradients"
-msgstr "Derbasbûnê Kêm Bike"
+#: source/appl/app.src#GID_CONNECTOR.String.Text
+#, fuzzy
+msgid  "Connector"
+msgstr "Girêdankêr"
 
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_STRIPES.radiobutton.text
-msgid "Gradient ~stripes"
-msgstr "Xêzikên Derbasbûnê"
+#: source/appl/app.src#GID_MODIFY.String.Text
+#, fuzzy
+msgid  "Modify"
+msgstr "Biguhere"
 
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_COLOR.radiobutton.text
-msgid "Intermediate ~color"
-msgstr "Rengê Navberê"
+#: source/appl/app.src#GID_DRAWING.String.Text
+#, fuzzy
+msgid  "Drawing"
+msgstr "Xêzkêşan"
 
-#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS.checkbox.text
-msgid "Reduce ~bitmaps"
-msgstr "Nirxa şêmûga Bîtê kêm bike"
+#: source/appl/app.src#GID_CONTROLS.String.Text
+#, fuzzy
+msgid  "Controls"
+msgstr "Kontrol"
 
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_OPTIMAL.radiobutton.text
-msgid "~High print quality"
-msgstr "~Qalîteya nivîsandina pir baş"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_NORMAL.radiobutton.text
-msgid "N~ormal print quality"
-msgstr "Qalîteya nivîsandina normal"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_RESOLUTION.radiobutton.text
-msgid "Reso~lution"
-msgstr "Rêje~şane"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.1.stringlist.text
-msgid "72 DPI"
-msgstr "72 DPI"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.2.stringlist.text
-msgid "96 DPI"
-msgstr "96 DPI"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.3.stringlist.text
-msgid "150 DPI (Fax)"
-msgstr "150 DPI (Fax"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.4.stringlist.text
-msgid "200 DPI (default)"
-msgstr "200 DPI (ya standard)"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.5.stringlist.text
-msgid "300 DPI"
-msgstr "300 DPI"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.6.stringlist.text
-msgid "600 DPI"
-msgstr "600 DPI"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS_TRANSPARENCY.checkbox.text
-msgid "Include transparent ob~jects"
-msgstr "Bireserên şeffaf dihundirîne"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.CB_CONVERTTOGREYSCALES.checkbox.text
-msgid "Con~vert colors to grayscale"
-msgstr "Rengan ~veguhezîne tonên cûnik"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.GB_PRINT_WARN.fixedline.text
-msgid "Printer warnings"
-msgstr "Hişhariyên çaperê"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERSIZE.checkbox.text
-msgid "P~aper size"
-msgstr "Mezinahiya ~kaxizê"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERORIENTATION.checkbox.text
-msgid "Pap~er orientation"
-msgstr "Aliyê ka~xize"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.CB_TRANSPARENCY.checkbox.text
-msgid "~Transparency"
-msgstr "~Şeffafî"
-
-#: printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.fixedtext.text
-msgid ""
-"Your document contains transparent objects.\n"
-"This may lead to longer printing time on certain\n"
-"printers. Should the aspect of transparency\n"
-"be reduced?"
+#: source/appl/app.src#MSG_CANT_QUIT.InfoBox.Message
+msgid  "The application cannot be terminated at the moment.\nPlease wait until all print jobs and/or\nOLE actions have finished and close all dialogs."
 msgstr ""
-"Belge bireserên şeffaf dihundirîne.\n"
-"Di vê rewşê de hin şaper wê demeke\n"
-"dirêj vî karî bike. Tu dixwazî rêjeya\n"
-"şeffafbûnê kêm bikî?"
 
-#: printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.okbutton.text
-msgid "~Yes"
-msgstr "~Erê"
+#: source/appl/app.src#STR_ISMODIFIED.String.Text
+#, fuzzy
+msgid  "Do you want to save the changes to %1?"
+msgstr "Guherînên di hundirê %1 hate kirin bila were tomarkirin?"
 
-#: printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_NO.pushbutton.text
-msgid "~No"
-msgstr "~Na"
+#: source/appl/app.src#STR_QUITAPP.String.Text
+#, fuzzy
+msgid  "E~xit"
+msgstr "~Derkeve"
 
-#: printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_CANCEL.cancelbutton.text
-msgid "~Cancel"
-msgstr "~Betal"
+#: source/appl/app.src#RID_STR_HELP.String.Text
+#, fuzzy
+msgid  "Help"
+msgstr "Alîkarî"
 
-#: printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.checkbox.text
-msgid "~Do not show warning again"
-msgstr "Vê hişyariyê careke din nîşan ~nede"
+#: source/appl/app.src#RID_STR_NOAUTOSTARTHELPAGENT.String.Text
+#, fuzzy
+msgid  "No automatic start at 'XX'"
+msgstr "Ji ber ku 'XX' bila destpêkirina otomatîk pêk neye."
 
-#: printopt.src#RID_WARN_PRINTTRANSPARENCY.modaldialog.text
-msgid "Warning"
-msgstr "Hişyarî"
+#: source/appl/app.src#RID_HELPBAR.String.Text
+#, fuzzy
+msgid  "Help Bar"
+msgstr "Darika alîkariyê"
 
-#: recfloat.src#SID_RECORDING_FLOATWINDOW.floatingwindow.text
-msgid "Record Macro"
-msgstr "Makro tomar bike"
+#: source/appl/app.src#RID_STR_HLPFILENOTEXIST.String.Text
+#, fuzzy
+msgid  "The help file for this topic is not installed."
+msgstr "Alîkariya ku têkildarî vê mijarê ye nehate dîtin."
 
-#: recfloat.src#STR_MACRO_LOSS.string.text
-msgid ""
-"Do you really want to cancel the recording? Any steps recorded up to this "
-"point will be lost."
+#: source/appl/app.src#RID_ENVTOOLBOX.String.Text
+#, fuzzy
+msgid  "Function Bar"
+msgstr "Darika Bikêrhatinan"
+
+#: source/appl/app.src#RID_SPECIALCONFIG_ERROR.String.Text
+msgid  "An error has occurred in the special configuration.\nPlease contact your administrator."
 msgstr ""
-"Bi rastî jî tu dixwazî tomaran betal bike? Çi tomarên ku heta niha hatiye "
-"kirin wê jê biçe."
 
-#: recfloat.src#STR_CANCEL_RECORDING.string.text
-msgid "Cancel Recording"
-msgstr "Tomarê Betal Bike"
+#: source/appl/app.src#STR_QUICKSTART_EXIT.String.Text
+#, fuzzy
+msgid  "Exit Quickstarter"
+msgstr "Destpêkera bilez bigire"
 
-#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FL.fixedline.text
-msgid "File encryption password"
-msgstr "Nasnava şîfrekirina pelê"
+#: source/appl/app.src#STR_QUICKSTART_TIP.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME %PRODUCTVERSION Quickstarter"
+msgstr "%PRODUCTNAME %PRODUCTVERSION destpêkera bilez"
 
-#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FT.fixedtext.text
-msgid "~Enter password to open"
-msgstr "Ji bo vekirinê nasnav ~têkevê"
+#: source/appl/app.src#STR_QUICKSTART_FILEOPEN.String.Text
+#, fuzzy
+msgid  "Open Document..."
+msgstr "Belgeyê Veke"
 
-#: securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_OPEN_FT.fixedtext.text
-msgid "~Reenter password to open"
-msgstr "Ji bo vekirinê nasnavê ~cardin têkevê"
+#: source/appl/app.src#STR_QUICKSTART_FROMTEMPLATE.String.Text
+#, fuzzy
+msgid  "From Template..."
+msgstr "Ji Şablonê..."
 
-#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FL.fixedline.text
-msgid "File sharing password"
-msgstr "Nasnava parvekirina pelê"
+#: source/appl/app.src#STR_QUICKSTART_PRELAUNCH.String.Text
+#, fuzzy
+msgid  "Load %PRODUCTNAME During System Start-Up"
+msgstr "Gava pergal hate vekirin %PRODUCTNAME'yê bar bike"
 
-#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FT.fixedtext.text
-msgid "Enter password to modify"
-msgstr "Ji bo guherandinê nasnav têkevê"
-
-#: securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_MODIFY_FT.fixedtext.text
-msgid "Reenter password to modify"
-msgstr "Ji bo guherandinê nasnavê cardin têkevê"
-
-#: securitypage.src#TP_DOCINFOSECURITY.OPTIONS_FL.fixedline.text
-msgid "File sharing options"
-msgstr "Vebijêrkên parvekirina pelê"
-
-#: securitypage.src#TP_DOCINFOSECURITY.OPEN_READONLY_CB.checkbox.text
-msgid "~Open file read-only"
-msgstr "Pelê wek tenê-xwendin ~veke"
-
-#: securitypage.src#TP_DOCINFOSECURITY.RECORD_CHANGES_CB.checkbox.text
-msgid "Record ~changes"
-msgstr "~Guherînan tomar bike"
-
-#: securitypage.src#TP_DOCINFOSECURITY.STR_PROTECT.string.text
-msgid "~Protect..."
-msgstr "~Biparêze..."
-
-#: securitypage.src#TP_DOCINFOSECURITY.STR_UNPROTECT.string.text
-msgid "~Unprotect..."
-msgstr "~Neparêze..."
-
-#: securitypage.src#TP_DOCINFOSECURITY.STR_END_REDLINING_WARNING.string.text
-msgid ""
-"This action will exit the change recording mode.\n"
-"Any information about changes will be lost.\n"
-"\n"
-"Exit change recording mode?\n"
-"\n"
+#: source/appl/app.src#STR_QUICKSTART_PRELAUNCH_UNX.String.Text
+msgid  "Disable Quickstarter"
 msgstr ""
-"Ev çalakî dê moda tomarkirina guherînan bigire.\n"
-"Agahiyên derbarê guherînan dê winda bin.\n"
-"\n"
-"Bila di moda tomarkirina guherînan de derkeve?\n"
-"\n"
 
-#: securitypage.src#RID_SFX_PROTECT_RECORDS.string.text
-msgid "Protect Records"
-msgstr "Tomaran Biparêze"
+#: source/appl/app.src#STR_QUICKSTART_LNKNAME.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
-#: securitypage.src#RID_SFX_UNPROTECT_RECORDS.string.text
-msgid "Unprotect Records"
-msgstr "Tomaran Neparêze"
+#: source/appl/app.src#STR_QUICKSTART_FILE.String.Text
+#, fuzzy
+msgid  "File"
+msgstr "Pel"
 
-#: securitypage.src#RID_SFX_INCORRECT_PASSWORD.string.text
-msgid "Incorrect password"
-msgstr "Nasnav xelete"
+#: source/appl/app.src#STR_QUICKSTART_STARTCENTER.String.Text
+#, fuzzy
+msgid  "Startcenter"
+msgstr "Navenda-destpêkê"
 
-#: srchdlg.src#RID_DLG_SEARCH.FT_SEARCH.fixedtext.text
-msgid "~Search for"
-msgstr "~Lê bigere"
+#: source/appl/app.src#STR_QUICKSTART_RECENTDOC.String.Text
+#, fuzzy
+msgid  "Recent Documents"
+msgstr "Belgeya Herî Dawî"
 
-#: srchdlg.src#RID_DLG_SEARCH.CB_WHOLEWORDS.checkbox.text
-msgid "~Whole words only"
-msgstr "Tenê peyvên ~temam"
+#: source/appl/app.src#STR_QUERY_UPDATE_LINKS.String.Text
+#, fuzzy
+msgid  "Update all links?"
+msgstr "Bila hemû girêdanan rojane bike?"
 
-#: srchdlg.src#RID_DLG_SEARCH.CB_MATCHCASE.checkbox.text
-msgid "~Match case"
-msgstr "~Bûyera Senkronîzekirinê"
+#: source/appl/app.src#STR_DDE_ERROR.String.Text
+#, fuzzy
+msgid  "DDE link to % for % area % are not available."
+msgstr "Girêdana DDE ya % ji bo % qada % tuneye."
 
-#: srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.checkbox.text
-msgctxt "srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.checkbox.text"
-msgid "Wrap ~around"
-msgstr "Belavkirina Der û Dorê"
+#: source/appl/app.src#RID_SECURITY_WARNING_HYPERLINK.WarningBox.Message
+msgid  "This hyperlink is going to open "%s". Do you want to proceed?"
+msgstr ""
 
-#: srchdlg.src#RID_DLG_SEARCH.CB_BACKWARDS.checkbox.text
-msgid "~Backwards"
-msgstr "~Paş"
+#: source/appl/app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.WarningBox.Message
+msgid  "For security reasons, the hyperlink cannot be executed.\nThe stated address will not be opened."
+msgstr ""
 
-#: srchdlg.src#RID_DLG_SEARCH.PB_FIND.pushbutton.text
-msgid "~Find"
-msgstr "~Bibîne"
+#: source/appl/app.src#RID_SECURITY_WARNING_TITLE.String.Text
+#, fuzzy
+msgid  "Security Warning"
+msgstr "Hişyariya Ewlehiyê"
 
-#: srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.cancelbutton.text
-msgctxt "srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.cancelbutton.text"
-msgid "~Close"
-msgstr "~Bigire"
+#: source/appl/app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.QueryBox.Message
+msgid  "Saving will remove all existing signatures.\nDo you want to continue saving the document?"
+msgstr ""
 
-#: srchdlg.src#RID_DLG_SEARCH.STR_TOGGLE.string.text
-msgctxt "srchdlg.src#RID_DLG_SEARCH.STR_TOGGLE.string.text"
-msgid "Wrap ~around"
-msgstr "Belavkirina Der û Dorê"
+#: source/appl/app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.QueryBox.Message
+msgid  "The document has to be saved before it can be signed.\nDo you want to save the document?"
+msgstr ""
 
-#: srchdlg.src#RID_DLG_SEARCH.modelessdialog.text
-msgid "Find on this Page"
-msgstr "Li vî rûpelî bibîne"
+#: source/appl/app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.InfoBox.Message
+msgid  "This document must be saved in OpenDocument file format before it can be digitally signed."
+msgstr ""
 
-#: taskpane.src#STR_SFX_DOCK.string.text
-msgid "Dock"
-msgstr "Nêzî Bike"
+#: source/appl/app.src#RID_XMLSEC_DOCUMENTSIGNED.String.Text
+#, fuzzy
+msgid  " (Signed)"
+msgstr " (Tomarkirî)"
 
-#: taskpane.src#STR_SFX_UNDOCK.string.text
-msgid "Undock"
-msgstr "Dûr Bike"
+#: source/appl/app.src#STR_STANDARD.String.Text
+#, fuzzy
+msgid  "Standard"
+msgstr "Standard"
 
-#: taskpane.src#STR_SFX_TASK_PANE_VIEW.string.text
-msgid "View"
+#: source/appl/app.src#RID_SVXSTR_FILELINK.String.Text
+#, fuzzy
+msgid  "Document"
+msgstr "Belge"
+
+#: source/appl/app.src#STR_NONE.String.Text
+#, fuzzy
+msgid  "- None -"
+msgstr "- Tu yek -"
+
+#: source/appl/app.src#RID_SVXSTR_GRAFIKLINK.String.Text
+#, fuzzy
+msgid  "Graphic"
+msgstr "Grafîk"
+
+#: source/appl/app.src#STR_SFX_FILTERNAME_ALL.String.Text
+#, fuzzy
+msgid  "All files (*.*)"
+msgstr "Hemû pel (*.*)"
+
+#: source/appl/app.src#RID_SVXSTR_EDITGRFLINK.String.Text
+#, fuzzy
+msgid  "Link graphics"
+msgstr "Girêdana grafîkan"
+
+#: source/appl/app.src#STR_ERRUNOEVENTBINDUNG.String.Text
+msgid  "An appropriate component method %1\ncould not be found.\n\nCheck spelling of method name."
+msgstr ""
+
+#: source/appl/app.src#RID_SVXSTR_GRFILTER_OPENERROR.String.Text
+#, fuzzy
+msgid  "Graphics file cannot be opened"
+msgstr "Pela grafîkan venabe"
+
+#: source/appl/app.src#RID_SVXSTR_GRFILTER_IOERROR.String.Text
+#, fuzzy
+msgid  "Graphics file cannot be read"
+msgstr "Pela grafîkan nayê xwendin"
+
+#: source/appl/app.src#RID_SVXSTR_GRFILTER_FORMATERROR.String.Text
+#, fuzzy
+msgid  "Unknown graphics format"
+msgstr "Teşeya grafîkê nayê zanîn"
+
+#: source/appl/app.src#RID_SVXSTR_GRFILTER_VERSIONERROR.String.Text
+#, fuzzy
+msgid  "This version of the graphics file is not supported"
+msgstr "Ev guhertoya pela grafîkê nayê piştgirî dan"
+
+#: source/appl/app.src#RID_SVXSTR_GRFILTER_FILTERERROR.String.Text
+#, fuzzy
+msgid  "Graphics filter not found"
+msgstr "Parzûna grafîkê nayê dîtin"
+
+#: source/appl/app.src#RID_SVXSTR_GRFILTER_TOOBIG.String.Text
+#, fuzzy
+msgid  "Not enough memory to insert graphic"
+msgstr "Ji bo lêzêdekirina grafîkê di bîrê de cî tuneye"
+
+#: source/appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_CONTENTS.PageItem.Text
+#, fuzzy
+msgid  "Contents"
+msgstr "Naverok"
+
+#: source/appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_INDEX.PageItem.Text
+#, fuzzy
+msgid  "Index"
+msgstr "Pêrist"
+
+#: source/appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_SEARCH.PageItem.Text
+#, fuzzy
+msgid  "Find"
 msgstr "Bibîne"
 
-#: taskpane.src#STR_SFX_TASKS.string.text
-msgid "Tasks"
-msgstr "Peywir"
+#: source/appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_BOOKMARKS.PageItem.Text
+#, fuzzy
+msgid  "Bookmarks"
+msgstr "Bijare"
 
-#: templdlg.src#RID_STYLECATALOG.BT_ORG.pushbutton.text
-msgid "~Organizer..."
-msgstr "~Rêxistiner..."
+#: source/appl/newhelp.src#TP_HELP_INDEX.FT_EXPRESSION.FixedText.Text
+#, fuzzy
+msgid  "~Search term"
+msgstr "~Bêjeya lêgerîne"
 
-#: templdlg.src#RID_STYLECATALOG.BT_DEL.pushbutton.text
-msgid "~Delete..."
-msgstr "~Jê bibe..."
+#: source/appl/newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.PushButton.Text
+#, fuzzy
+msgid  "~Display"
+msgstr "~Dîmendêr"
 
-#: templdlg.src#RID_STYLECATALOG.BT_EDIT.pushbutton.text
-msgid "~Modify..."
-msgstr "~Biguherîne..."
+#: source/appl/newhelp.src#TP_HELP_SEARCH.FT_SEARCH.FixedText.Text
+#, fuzzy
+msgid  "S~earch term"
+msgstr "B~êjeya lêgerîne"
 
-#: templdlg.src#RID_STYLECATALOG.BT_NEW.pushbutton.text
-msgid "~New..."
-msgstr "~Nû..."
+#: source/appl/newhelp.src#TP_HELP_SEARCH.PB_SEARCH.PushButton.Text
+#, fuzzy
+msgid  "~Find"
+msgstr "~Bibîne"
 
-#: templdlg.src#RID_STYLECATALOG.modaldialog.text
-msgid "Style Catalog"
-msgstr "Kataloga Şêwazan"
+#: source/appl/newhelp.src#TP_HELP_SEARCH.CB_FULLWORDS.CheckBox.Text
+#, fuzzy
+msgid  "~Complete words only"
+msgstr "~Tenê peyvên tam"
 
-#: templdlg.src#STR_STYLE_ELEMTLIST.string.text
-msgid "Style List"
-msgstr ""
+#: source/appl/newhelp.src#TP_HELP_SEARCH.CB_SCOPE.CheckBox.Text
+#, fuzzy
+msgid  "Find in ~headings only"
+msgstr "Tenê li sernavan bigere"
 
-#: templdlg.src#STR_STYLE_FILTER_HIERARCHICAL.string.text
-msgid "Hierarchical"
-msgstr "Hiyerarşîk"
+#: source/appl/newhelp.src#TP_HELP_SEARCH.PB_OPEN_SEARCH.PushButton.Text
+#, fuzzy
+msgid  "~Display"
+msgstr "~Dîmendêr"
 
-#: templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_WATERCAN.toolboxitem.text
-msgid "Fill Format Mode"
-msgstr "Moda Tije Bike"
+#: source/appl/newhelp.src#TP_HELP_BOOKMARKS.FT_BOOKMARKS.FixedText.Text
+#, fuzzy
+msgid  "~Bookmarks"
+msgstr "Hêmayên cih"
 
-#: templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_NEW_BY_EXAMPLE.toolboxitem.text
-msgid "New Style from Selection"
-msgstr "Ji nav Hilbijartinan Şêwaza Nû"
+#: source/appl/newhelp.src#TP_HELP_BOOKMARKS.PB_BOOKMARKS.PushButton.Text
+#, fuzzy
+msgid  "~Display"
+msgstr "~Dîmendêr"
 
-#: templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_UPDATE_BY_EXAMPLE.toolboxitem.text
-msgid "Update Style"
-msgstr "Şêweyê Rojane Bike"
+#: source/appl/newhelp.src#STR_HELP_WINDOW_TITLE.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Help"
+msgstr "%PRODUCTNAME Alîkarî"
 
-#: templdlg.src#DLG_STYLE_DESIGNER.dockingwindow.text
-msgid "Styles and Formatting"
-msgstr "Şêwaz û Teşe kirin"
+#: source/appl/newhelp.src#STR_HELP_BUTTON_INDEX_ON.String.Text
+#, fuzzy
+msgid  "Show Navigation Pane"
+msgstr "Paceya Beralîkirinê Nîşan Bide"
 
-#: versdlg.src#DLG_VERSIONS.GB_NEWVERSIONS.fixedline.text
-msgid "New versions"
-msgstr "Guhertoyên Nû"
+#: source/appl/newhelp.src#STR_HELP_BUTTON_INDEX_OFF.String.Text
+#, fuzzy
+msgid  "Hide Navigation Pane"
+msgstr "Paceya Beralîkirinê Veşêre"
 
-#: versdlg.src#DLG_VERSIONS.PB_SAVE.pushbutton.text
-msgid "Save ~New Version"
-msgstr "Guhertoya Nû Tomar Bike"
+#: source/appl/newhelp.src#STR_HELP_BUTTON_START.String.Text
+#, fuzzy
+msgid  "First Page"
+msgstr "Rûpela Yekemîn"
 
-#: versdlg.src#DLG_VERSIONS.CB_SAVEONCLOSE.checkbox.text
-msgid "~Always save a version on closing"
-msgstr "~Berî ku tu bigire her tim guhertoya nû tomar bike"
+#: source/appl/newhelp.src#STR_HELP_BUTTON_PREV.String.Text
+#, fuzzy
+msgid  "Previous Page"
+msgstr "Rûpela Berê"
 
-#: versdlg.src#DLG_VERSIONS.GB_OLDVERSIONS.fixedline.text
-msgid "Existing versions"
-msgstr "Guhertoyên Heyî"
+#: source/appl/newhelp.src#STR_HELP_BUTTON_NEXT.String.Text
+#, fuzzy
+msgid  "Next Page"
+msgstr "Rûpela Pêş"
 
-#: versdlg.src#DLG_VERSIONS.FT_DATETIME.fixedtext.text
-msgid "Date and time"
-msgstr "Roj û wext"
+#: source/appl/newhelp.src#STR_HELP_BUTTON_PRINT.String.Text
+#, fuzzy
+msgid  "Print..."
+msgstr "Çap..."
 
-#: versdlg.src#DLG_VERSIONS.FT_SAVEDBY.fixedtext.text
-msgid "Saved by"
-msgstr "Hatiye tomarkirin ji aliyê"
+#: source/appl/newhelp.src#STR_HELP_BUTTON_ADDBOOKMARK.String.Text
+#, fuzzy
+msgid  "Add to Bookmarks..."
+msgstr "Li Hêmayên Cih Zêde Bike..."
 
-#: versdlg.src#DLG_VERSIONS.FT_COMMENTS.fixedtext.text
-msgid "Comments"
-msgstr "Şîrove"
+#: source/appl/newhelp.src#STR_HELP_BUTTON_SEARCHDIALOG.String.Text
+#, fuzzy
+msgid  "Find on this Page..."
+msgstr "Di vî rûpelê da bibîne"
 
-#: versdlg.src#DLG_VERSIONS.PB_CLOSE.cancelbutton.text
-msgid "Close"
-msgstr "Bigire"
+#: source/appl/newhelp.src#STR_HELP_BUTTON_SOURCEVIEW.String.Text
+#, fuzzy
+msgid  "HTML Source"
+msgstr "Koda HTML"
 
-#: versdlg.src#DLG_VERSIONS.PB_OPEN.pushbutton.text
-msgid "Open"
-msgstr "Veke"
+#: source/appl/newhelp.src#STR_HELP_FIRST_MESSAGE.String.Text
+#, fuzzy
+msgid  "The Help is being started..."
+msgstr "Alîkarî destpê dike"
 
-#: versdlg.src#DLG_VERSIONS.PB_VIEW.pushbutton.text
-msgid "~Show..."
-msgstr "~Rava bike..."
+#: source/appl/newhelp.src#STR_HELP_MENU_TEXT_SELECTION_MODE.String.Text
+#, fuzzy
+msgid  "Select Text"
+msgstr "Nivîsê Hilbijêre"
 
-#: versdlg.src#DLG_VERSIONS.PB_DELETE.pushbutton.text
-msgid "~Delete"
+#: source/appl/newhelp.src#STR_HELP_MENU_TEXT_COPY.String.Text
+#, fuzzy
+msgid  "~Copy"
+msgstr "~Jibergirtin"
+
+#: source/appl/newhelp.src#DLG_HELP_ADDBOOKMARK.ModalDialog.Text
+#, fuzzy
+msgid  "Add to Bookmarks"
+msgstr "Li Bijareya Zêde Bike"
+
+#: source/appl/newhelp.src#DLG_HELP_ADDBOOKMARK.FT_BOOKMARK_TITLE.FixedText.Text
+#, fuzzy
+msgid  "Bookmark:"
+msgstr "Nîşana cîh:"
+
+#: source/appl/newhelp.src#DLG_HELP_ADDBOOKMARK.STR_BOOKMARK_RENAME.String.Text
+#, fuzzy
+msgid  "Rename Bookmark"
+msgstr "Hêmayên Cih Ji Nû ve Binavîne"
+
+#: source/appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_OPEN.MenuItem.Text
+#, fuzzy
+msgid  "Display"
+msgstr "Dîmender"
+
+#: source/appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_RENAME.MenuItem.Text
+#, fuzzy
+msgid  "Rename..."
+msgstr "Ji Nû Ve Binavîne..."
+
+#: source/appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_DELETE.MenuItem.Text
+#, fuzzy
+msgid  "Delete"
 msgstr "Jê bibe"
 
-#: versdlg.src#DLG_VERSIONS.PB_COMPARE.pushbutton.text
-msgid "Compare"
+#: source/appl/newhelp.src#RID_INFO_NOSEARCHRESULTS.InfoBox.Message
+#, fuzzy
+msgid  "No topics found."
+msgstr "Mijar nehat dîtin."
+
+#: source/appl/newhelp.src#RID_INFO_NOSEARCHTEXTFOUND.InfoBox.Message
+#, fuzzy
+msgid  "The text you entered was not found."
+msgstr "Teksta ku tu ketê nehate dîtin."
+
+#: source/appl/newhelp.src#RID_HELP_ONSTARTUP_TEXT.String.Text
+#, fuzzy
+msgid  "~Display %PRODUCTNAME %MODULENAME Help at Startup"
+msgstr "%PRODUCTNAME %MODULENAME Alîkarî yê di Destpêkê de ~Nîşan Bide"
+
+#: source/bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.String.Text
+msgid  "The selected filter $(FILTER) has not been installed.\nWould you like to do this now?"
+msgstr ""
+
+#: source/bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.String.Text
+msgid  "The selected filter $(FILTER) is not included in your edition.\nYou can find information about orders on our homepage."
+msgstr ""
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FixedLine.Text
+#, fuzzy
+msgid  "Reduce print data"
+msgstr "Daneya ku tê nivîsîn biçûk bike"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.FT_OUTPUTTYPE.FixedText.Text
+#, fuzzy
+msgid  "Settings for"
+msgstr "Mîhengên a"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTEROUTPUT.RadioButton.Text
+#, fuzzy
+msgid  "~Printer"
+msgstr "~Çaper"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTFILEOUTPUT.RadioButton.Text
+#, fuzzy
+msgid  "Print to ~file"
+msgstr "Li ~Pelî Binivîse"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCETRANSPARENCY.CheckBox.Text
+#, fuzzy
+msgid  "~Reduce transparency"
+msgstr "Şeffafbûnê Zêde Bike"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_AUTO.RadioButton.Text
+#, fuzzy
+msgid  "Auto~matically"
+msgstr "Bi~xweber"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_NONE.RadioButton.Text
+#, fuzzy
+msgid  "~No transparency"
+msgstr "~Zelalî Tuneye"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEGRADIENTS.CheckBox.Text
+#, fuzzy
+msgid  "Reduce ~gradients"
+msgstr "Derbasbûnê Kêm Bike"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_STRIPES.RadioButton.Text
+#, fuzzy
+msgid  "Gradient ~stripes"
+msgstr "Xêzikên Derbasbûnê"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_COLOR.RadioButton.Text
+#, fuzzy
+msgid  "Intermediate ~color"
+msgstr "Rengê Navberê"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS.CheckBox.Text
+#, fuzzy
+msgid  "Reduce ~bitmaps"
+msgstr "Nirxa şêmûga Bîtê kêm bike"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_OPTIMAL.RadioButton.Text
+#, fuzzy
+msgid  "~High print quality"
+msgstr "~Qalîteya nivîsandina pir baş"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_NORMAL.RadioButton.Text
+#, fuzzy
+msgid  "N~ormal print quality"
+msgstr "Qalîteya nivîsandina normal"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_RESOLUTION.RadioButton.Text
+#, fuzzy
+msgid  "Reso~lution"
+msgstr "Rêje~şane"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "600 DPI"
+msgstr "600 DPI"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS_TRANSPARENCY.CheckBox.Text
+#, fuzzy
+msgid  "Include transparent ob~jects"
+msgstr "Bireserên şeffaf dihundirîne"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_CONVERTTOGREYSCALES.CheckBox.Text
+#, fuzzy
+msgid  "Con~vert colors to grayscale"
+msgstr "Rengan ~veguhezîne tonên cûnik"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_PRINT_WARN.FixedLine.Text
+#, fuzzy
+msgid  "Printer warnings"
+msgstr "Hişhariyên çaperê"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERSIZE.CheckBox.Text
+#, fuzzy
+msgid  "P~aper size"
+msgstr "Mezinahiya ~kaxizê"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERORIENTATION.CheckBox.Text
+#, fuzzy
+msgid  "Pap~er orientation"
+msgstr "Aliyê ka~xize"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_TRANSPARENCY.CheckBox.Text
+#, fuzzy
+msgid  "~Transparency"
+msgstr "~Şeffafî"
+
+#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.ModalDialog.Text
+#, fuzzy
+msgid  "Warning"
+msgstr "Hişyarî"
+
+#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FixedText.Text
+msgid  "Your document contains transparent objects.\nThis may lead to longer printing time on certain\nprinters. Should the aspect of transparency\nbe reduced?"
+msgstr ""
+
+#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKButton.Text
+#, fuzzy
+msgid  "~Yes"
+msgstr "~Erê"
+
+#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_NO.PushButton.Text
+#, fuzzy
+msgid  "~No"
+msgstr "~Na"
+
+#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_CANCEL.CancelButton.Text
+#, fuzzy
+msgid  "~Cancel"
+msgstr "~Betal"
+
+#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.CheckBox.Text
+#, fuzzy
+msgid  "~Do not show warning again"
+msgstr "Vê hişyariyê careke din nîşan ~nede"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "72 DPI"
+msgstr "72 DPI"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "96 DPI"
+msgstr "96 DPI"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "150 DPI (Fax)"
+msgstr "150 DPI (Fax"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "200 DPI (default)"
+msgstr "200 DPI (ya standard)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "300 DPI"
+msgstr "300 DPI"
+
+#: source/dialog/templdlg.src#RID_STYLECATALOG.ModalDialog.Text
+#, fuzzy
+msgid  "Style Catalog"
+msgstr "Kataloga Şêwazan"
+
+#: source/dialog/templdlg.src#RID_STYLECATALOG.BT_ORG.PushButton.Text
+#, fuzzy
+msgid  "~Organizer..."
+msgstr "~Rêxistiner..."
+
+#: source/dialog/templdlg.src#RID_STYLECATALOG.BT_DEL.PushButton.Text
+#, fuzzy
+msgid  "~Delete..."
+msgstr "~Jê bibe..."
+
+#: source/dialog/templdlg.src#RID_STYLECATALOG.BT_EDIT.PushButton.Text
+#, fuzzy
+msgid  "~Modify..."
+msgstr "~Biguherîne..."
+
+#: source/dialog/templdlg.src#RID_STYLECATALOG.BT_NEW.PushButton.Text
+#, fuzzy
+msgid  "~New..."
+msgstr "~Nû..."
+
+#: source/dialog/templdlg.src#STR_STYLE_ELEMTLIST.String.Text
+msgid  "Style List"
+msgstr ""
+
+#: source/dialog/templdlg.src#STR_STYLE_FILTER_HIERARCHICAL.String.Text
+#, fuzzy
+msgid  "Hierarchical"
+msgstr "Hiyerarşîk"
+
+#: source/dialog/templdlg.src#DLG_STYLE_DESIGNER.DockingWindow.Text
+#, fuzzy
+msgid  "Styles and Formatting"
+msgstr "Şêwaz û Teşe kirin"
+
+#: source/dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_WATERCAN.ToolBoxItem.Text
+#, fuzzy
+msgid  "Fill Format Mode"
+msgstr "Moda Tije Bike"
+
+#: source/dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_NEW_BY_EXAMPLE.ToolBoxItem.Text
+#, fuzzy
+msgid  "New Style from Selection"
+msgstr "Ji nav Hilbijartinan Şêwaza Nû"
+
+#: source/dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_UPDATE_BY_EXAMPLE.ToolBoxItem.Text
+#, fuzzy
+msgid  "Update Style"
+msgstr "Şêweyê Rojane Bike"
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FL.FixedLine.Text
+#, fuzzy
+msgid  "File encryption password"
+msgstr "Nasnava şîfrekirina pelê"
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FT.FixedText.Text
+#, fuzzy
+msgid  "~Enter password to open"
+msgstr "Ji bo vekirinê nasnav ~têkevê"
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_OPEN_FT.FixedText.Text
+#, fuzzy
+msgid  "~Reenter password to open"
+msgstr "Ji bo vekirinê nasnavê ~cardin têkevê"
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FL.FixedLine.Text
+#, fuzzy
+msgid  "File sharing password"
+msgstr "Nasnava parvekirina pelê"
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FT.FixedText.Text
+#, fuzzy
+msgid  "Enter password to modify"
+msgstr "Ji bo guherandinê nasnav têkevê"
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_MODIFY_FT.FixedText.Text
+#, fuzzy
+msgid  "Reenter password to modify"
+msgstr "Ji bo guherandinê nasnavê cardin têkevê"
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.OPTIONS_FL.FixedLine.Text
+#, fuzzy
+msgid  "File sharing options"
+msgstr "Vebijêrkên parvekirina pelê"
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.OPEN_READONLY_CB.CheckBox.Text
+#, fuzzy
+msgid  "~Open file read-only"
+msgstr "Pelê wek tenê-xwendin ~veke"
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.RECORD_CHANGES_CB.CheckBox.Text
+#, fuzzy
+msgid  "Record ~changes"
+msgstr "~Guherînan tomar bike"
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.STR_PROTECT.String.Text
+#, fuzzy
+msgid  "~Protect..."
+msgstr "~Biparêze..."
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.STR_UNPROTECT.String.Text
+#, fuzzy
+msgid  "~Unprotect..."
+msgstr "~Neparêze..."
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.STR_END_REDLINING_WARNING.String.Text
+msgid  "This action will exit the change recording mode.\nAny information about changes will be lost.\n\nExit change recording mode?\n\n"
+msgstr ""
+
+#: source/dialog/securitypage.src#RID_SFX_PROTECT_RECORDS.String.Text
+#, fuzzy
+msgid  "Protect Records"
+msgstr "Tomaran Biparêze"
+
+#: source/dialog/securitypage.src#RID_SFX_UNPROTECT_RECORDS.String.Text
+#, fuzzy
+msgid  "Unprotect Records"
+msgstr "Tomaran Neparêze"
+
+#: source/dialog/securitypage.src#RID_SFX_INCORRECT_PASSWORD.String.Text
+#, fuzzy
+msgid  "Incorrect password"
+msgstr "Nasnav xelete"
+
+#: source/dialog/versdlg.src#DLG_VERSIONS.GB_NEWVERSIONS.FixedLine.Text
+#, fuzzy
+msgid  "New versions"
+msgstr "Guhertoyên Nû"
+
+#: source/dialog/versdlg.src#DLG_VERSIONS.PB_SAVE.PushButton.Text
+#, fuzzy
+msgid  "Save ~New Version"
+msgstr "Guhertoya Nû Tomar Bike"
+
+#: source/dialog/versdlg.src#DLG_VERSIONS.CB_SAVEONCLOSE.CheckBox.Text
+#, fuzzy
+msgid  "~Always save a version on closing"
+msgstr "~Berî ku tu bigire her tim guhertoya nû tomar bike"
+
+#: source/dialog/versdlg.src#DLG_VERSIONS.GB_OLDVERSIONS.FixedLine.Text
+#, fuzzy
+msgid  "Existing versions"
+msgstr "Guhertoyên Heyî"
+
+#: source/dialog/versdlg.src#DLG_VERSIONS.FT_DATETIME.FixedText.Text
+#, fuzzy
+msgid  "Date and time"
+msgstr "Roj û wext"
+
+#: source/dialog/versdlg.src#DLG_VERSIONS.FT_SAVEDBY.FixedText.Text
+#, fuzzy
+msgid  "Saved by"
+msgstr "Hatiye tomarkirin ji aliyê"
+
+#: source/dialog/versdlg.src#DLG_VERSIONS.FT_COMMENTS.FixedText.Text
+#, fuzzy
+msgid  "Comments"
+msgstr "Şîrove"
+
+#: source/dialog/versdlg.src#DLG_VERSIONS.PB_CLOSE.CancelButton.Text
+#, fuzzy
+msgid  "Close"
+msgstr "Bigire"
+
+#: source/dialog/versdlg.src#DLG_VERSIONS.PB_OPEN.PushButton.Text
+#, fuzzy
+msgid  "Open"
+msgstr "Veke"
+
+#: source/dialog/versdlg.src#DLG_VERSIONS.PB_VIEW.PushButton.Text
+#, fuzzy
+msgid  "~Show..."
+msgstr "~Rava bike..."
+
+#: source/dialog/versdlg.src#DLG_VERSIONS.PB_DELETE.PushButton.Text
+#, fuzzy
+msgid  "~Delete"
+msgstr "Jê bibe"
+
+#: source/dialog/versdlg.src#DLG_VERSIONS.PB_COMPARE.PushButton.Text
+#, fuzzy
+msgid  "Compare"
 msgstr "Bide ber hev"
 
-#: versdlg.src#DLG_VERSIONS.modaldialog.text
-msgid "Versions of"
+#: source/dialog/versdlg.src#DLG_VERSIONS.HelpButton.Text
+#, fuzzy
+msgid  "Versions of"
 msgstr "Guhertoya"
 
-#: versdlg.src#DLG_COMMENTS.FT_DATETIME.fixedtext.text
-msgid "Date and time : "
+#: source/dialog/versdlg.src#DLG_COMMENTS.FT_DATETIME.FixedText.Text
+#, fuzzy
+msgid  "Date and time : "
 msgstr "Dîrok û dem : "
 
-#: versdlg.src#DLG_COMMENTS.FT_SAVEDBY.fixedtext.text
-msgid "Saved by "
+#: source/dialog/versdlg.src#DLG_COMMENTS.FT_SAVEDBY.FixedText.Text
+#, fuzzy
+msgid  "Saved by "
 msgstr "Tomarker "
 
-#: versdlg.src#DLG_COMMENTS.PB_CLOSE.pushbutton.text
-msgctxt "versdlg.src#DLG_COMMENTS.PB_CLOSE.pushbutton.text"
-msgid "~Close"
+#: source/dialog/versdlg.src#DLG_COMMENTS.PB_CLOSE.PushButton.Text
+#, fuzzy
+msgid  "~Close"
 msgstr "~Bigire"
 
-#: versdlg.src#DLG_COMMENTS.modaldialog.text
-msgid "Insert Version Comment"
+#: source/dialog/versdlg.src#DLG_COMMENTS.HelpButton.Text
+#, fuzzy
+msgid  "Insert Version Comment"
 msgstr "Ravekirina Guhertoyê Lê Zêde Bike"
 
-#: versdlg.src#DLG_COMMENTS.string.text
-msgid "Version comment"
+#: source/dialog/versdlg.src#DLG_COMMENTS.String.Text
+#, fuzzy
+msgid  "Version comment"
 msgstr "Ravekirina Guhertoyê"
 
-#~ msgid "Confirm password"
-#~ msgstr "Şîfreyê piştrast bike"
+#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NAME.FixedText.Text
+#, fuzzy
+msgid  "~Name"
+msgstr "~Nav"
 
-#~ msgid "Confirm password"
-#~ msgstr "Şîfreyê piştrast bike"
+#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.CB_AUTO.CheckBox.Text
+#, fuzzy
+msgid  "~AutoUpdate"
+msgstr "~Rojanekirina bixweber"
+
+#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NEXT.FixedText.Text
+#, fuzzy
+msgid  "Ne~xt Style"
+msgstr "Şêwaza Dû Re"
+
+#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_BASE.FixedText.Text
+#, fuzzy
+msgid  "Linked with"
+msgstr "~Ya Hatiye Girêdan"
+
+#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_REGION.FixedText.Text
+#, fuzzy
+msgid  "~Category"
+msgstr "~Kategorî"
+
+#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.GB_DESC.FixedLine.Text
+#, fuzzy
+msgid  "Contains"
+msgstr "Dihewîne"
+
+#: source/dialog/filedlghelper.src#STR_SFX_FILEDLG_ACTUALVERSION.String.Text
+#, fuzzy
+msgid  "Current version"
+msgstr "Guhertoya niha"
+
+#: source/dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_EXPORT.String.Text
+#, fuzzy
+msgid  "Export"
+msgstr "Veguhezîne derve"
+
+#: source/dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_INSERT.String.Text
+#, fuzzy
+msgid  "Insert"
+msgstr "Têxe Nav"
+
+#: source/dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_BUTTONINSERT.String.Text
+#, fuzzy
+msgid  "~Insert"
+msgstr "~Lêzêdekirin"
+
+#: source/dialog/filedlghelper.src#STR_SFX_IMPORT_ALL.String.Text
+#, fuzzy
+msgid  "<All formats>"
+msgstr "<Hemû format>"
+
+#: source/dialog/filedlghelper.src#STR_CB_AUTO_EXTENSION.String.Text
+#, fuzzy
+msgid  "~Automatic file name extension"
+msgstr "~Dirêjeka navê pela otomatîk"
+
+#: source/dialog/filedlghelper.src#STR_CB_SELECTION.String.Text
+#, fuzzy
+msgid  "~Selection"
+msgstr "~Hilbijartin"
+
+#: source/dialog/filedlghelper.src#STR_CB_INSERT_AS_LINK.String.Text
+#, fuzzy
+msgid  "~Link"
+msgstr "~Lînk"
+
+#: source/dialog/filedlghelper.src#STR_CB_SHOW_PREVIEW.String.Text
+#, fuzzy
+msgid  "Pr~eview"
+msgstr "Pêş~dîtin"
+
+#: source/dialog/filedlghelper.src#STR_CB_READONLY.String.Text
+#, fuzzy
+msgid  "~Read-only"
+msgstr "~Tenê xwendin"
+
+#: source/dialog/filedlghelper.src#STR_CB_PASSWORD.String.Text
+#, fuzzy
+msgid  "Save with ~password"
+msgstr "Bi şî~freyê tomar bike"
+
+#: source/dialog/filedlghelper.src#STR_CB_FILTER_OPTIONS.String.Text
+#, fuzzy
+msgid  "Edit ~filter settings"
+msgstr "Mîhengên fîltra sererast bike"
+
+#: source/dialog/filedlghelper.src#STR_PB_PLAY.String.Text
+#, fuzzy
+msgid  "~Play"
+msgstr "~Lêdan"
+
+#: source/dialog/filedlghelper.src#STR_PB_STOP.String.Text
+#, fuzzy
+msgid  "Sto~p"
+msgstr "Ra~westîne"
+
+#: source/dialog/filedlghelper.src#STR_PB_OPEN.String.Text
+#, fuzzy
+msgid  "~Open"
+msgstr "~Veke"
+
+#: source/dialog/filedlghelper.src#STR_PB_SAVE.String.Text
+#, fuzzy
+msgid  "~Save"
+msgstr "~Tomarkirin"
+
+#: source/dialog/filedlghelper.src#STR_LB_IMAGE_TEMPLATE.String.Text
+#, fuzzy
+msgid  "Style:"
+msgstr "Şêwe:"
+
+#: source/dialog/filedlghelper.src#STR_LB_TEMPLATES.String.Text
+#, fuzzy
+msgid  "~Templates:"
+msgstr "~Şablon:"
+
+#: source/dialog/filedlghelper.src#STR_LB_VERSION.String.Text
+#, fuzzy
+msgid  "~Version:"
+msgstr "Gu~herto:"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.ModelessDialog.Text
+#, fuzzy
+msgid  "Find on this Page"
+msgstr "Li vî rûpelî bibîne"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.FT_SEARCH.FixedText.Text
+#, fuzzy
+msgid  "~Search for"
+msgstr "~Lê bigere"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.CB_WHOLEWORDS.CheckBox.Text
+#, fuzzy
+msgid  "~Whole words only"
+msgstr "Tenê peyvên ~temam"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.CB_MATCHCASE.CheckBox.Text
+#, fuzzy
+msgid  "~Match case"
+msgstr "~Bûyera Senkronîzekirinê"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.CheckBox.Text
+#, fuzzy
+msgid  "Wrap ~around"
+msgstr "Belavkirina Der û Dorê"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.CB_BACKWARDS.CheckBox.Text
+#, fuzzy
+msgid  "~Backwards"
+msgstr "~Paş"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.PB_FIND.PushButton.Text
+#, fuzzy
+msgid  "~Find"
+msgstr "~Bibîne"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.CancelButton.Text
+#, fuzzy
+msgid  "~Close"
+msgstr "~Bigire"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.STR_TOGGLE.String.Text
+#, fuzzy
+msgid  "Wrap ~around"
+msgstr "Belavkirina Der û Dorê"
+
+#: source/dialog/passwd.src#DLG_PASSWD.ModalDialog.Text
+#, fuzzy
+msgid  "Enter Password"
+msgstr "Şîfreyê Derbas Bike"
+
+#: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_USER.FixedText.Text
+#, fuzzy
+msgid  "~User"
+msgstr "~Bikarhêner"
+
+#: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD.FixedText.Text
+#, fuzzy
+msgid  "~Password"
+msgstr "~Nasnav"
+
+#: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM.FixedText.Text
+#, fuzzy
+msgid  "~Confirm"
+msgstr "~Erê bike"
+
+#: source/dialog/passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.FixedLine.Text
+#, fuzzy
+msgid  "Password"
+msgstr "Şîfre"
+
+#: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD2.FixedText.Text
+#, fuzzy
+msgid  "P~assword"
+msgstr "Şîfre"
+
+#: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM2.FixedText.Text
+#, fuzzy
+msgid  "Confir~m"
+msgstr "~Erê bike"
+
+#: source/dialog/passwd.src#DLG_PASSWD.TEXT_PASSWD.String.Text
+#, fuzzy
+msgid  "Password"
+msgstr "Şîfre"
+
+#: source/dialog/dinfdlg.src#STR_SFX_NEWOFFICEDOC.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME document"
+msgstr "Belgeya %PRODUCTNAME"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_TITLE.FixedText.Text
+#, fuzzy
+msgid  "~Title"
+msgstr "~Sernav"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_THEMA.FixedText.Text
+#, fuzzy
+msgid  "~Subject"
+msgstr "~Mijar"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_KEYWORDS.FixedText.Text
+#, fuzzy
+msgid  "~Keywords"
+msgstr "Miftên bingehî"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_COMMENT.FixedText.Text
+#, fuzzy
+msgid  "~Comments"
+msgstr "Danezanî"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.FixedText.Text
+#, fuzzy
+msgid  "Type:"
+msgstr "Cure:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.CheckBox.Text
+#, fuzzy
+msgid  "~Read-only"
+msgstr "~Tenê xwendin"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE.FixedText.Text
+#, fuzzy
+msgid  "Location:"
+msgstr "Cih:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_SIZE.FixedText.Text
+#, fuzzy
+msgid  "Size:"
+msgstr "Mezinahî:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_CREATE.FixedText.Text
+#, fuzzy
+msgid  "Created:"
+msgstr "Afirandin:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_CHANGE.FixedText.Text
+#, fuzzy
+msgid  "Modified:"
+msgstr "Hatiye guherandin:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_SIGNED.FixedText.Text
+#, fuzzy
+msgid  "Digitally signed:"
+msgstr "Dîjîtal hatiye îmze kirin:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.BTN_SIGNATURE.PushButton.Text
+#, fuzzy
+msgid  "Digital Signature..."
+msgstr "Îmze ya Dîjîtal...."
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.STR_MULTSIGNED.String.Text
+#, fuzzy
+msgid  "Multiply signed document"
+msgstr "Belgeya pir îmzekirî"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_PRINT.FixedText.Text
+#, fuzzy
+msgid  "Last printed:"
+msgstr "Dîroka ku herî dawî hate nivîsandin:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_TIMELOG.FixedText.Text
+#, fuzzy
+msgid  "Total editing time:"
+msgstr "Têheva dema sererastkirinan:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_DOCNO.FixedText.Text
+#, fuzzy
+msgid  "Revision number:"
+msgstr "Nimroya revîziyonê:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.BTN_DELETE.PushButton.Text
+#, fuzzy
+msgid  "Reset"
+msgstr "~Bive serî"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.CB_USE_USERDATA.CheckBox.Text
+#, fuzzy
+msgid  "~Apply user data"
+msgstr "~Daneyên bikarhêner bikar bîne"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_TEMPL.FixedText.Text
+#, fuzzy
+msgid  "Template:"
+msgstr "Şablon:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.STR_UNKNOWNSIZE.String.Text
+#, fuzzy
+msgid  "unknown"
+msgstr "nenas"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.EDIT_FILE_NAME.String.Text
+msgid  "File Name"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#TP_DOCINFOUSER.BTN_EDITLABEL.PushButton.Text
+#, fuzzy
+msgid  "~Info fields..."
+msgstr "~Qadên Agahiyan..."
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_NOAUTOUPDATE.RadioButton.Text
+#, fuzzy
+msgid  "Do not refresh automatically"
+msgstr "Tezekirina bixweber neke"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_RELOADUPDATE.RadioButton.Text
+#, fuzzy
+msgid  "Refresh this document"
+msgstr "Vê Belgeyê"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_EVERY.FixedText.Text
+#, fuzzy
+msgid  "every"
+msgstr "her"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.FixedText.Text
+#, fuzzy
+msgid  "seconds"
+msgstr "çirke"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_FORWARDUPDATE.RadioButton.Text
+#, fuzzy
+msgid  "Redirect from this document"
+msgstr "Ji vê belgeyê bi rê ve bibe"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.FixedText.Text
+#, fuzzy
+msgid  "after"
+msgstr "paşê"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.FixedText.Text
+#, fuzzy
+msgid  "seconds"
+msgstr "çirke"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_URL.FixedText.Text
+#, fuzzy
+msgid  "to URL"
+msgstr "li navnîşana URL"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FRAME.FixedText.Text
+#, fuzzy
+msgid  "to frame"
+msgstr "li çarçevê"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.STR_FORWARD_ERRMSSG.String.Text
+msgid  "If you select the option "%PLACEHOLDER%", you must enter a URL."
+msgstr ""
+
+#: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.FT_PROPERTIES.FixedText.Text
+#, fuzzy
+msgid  "~Properties"
+msgstr "~Taybetmendî"
+
+#: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.String.Text
+#, fuzzy
+msgid  "Name"
+msgstr "Nav"
+
+#: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.String.Text
+#, fuzzy
+msgid  "Type"
+msgstr "Cure"
+
+#: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_VALUE.String.Text
+#, fuzzy
+msgid  "Value"
+msgstr "Nirx"
+
+#: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.BTN_ADD.PushButton.Text
+#, fuzzy
+msgid  "~Add"
+msgstr "~Lêzêdekirin"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ComboBox.QuickHelpText
+#, fuzzy
+msgid  "Property Name"
+msgstr "Navê Taybetmendiyê"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item1.StringList.item
+#, fuzzy
+msgid  "Checked by"
+msgstr "Hatiye kontrol kirin aliyê"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item2.StringList.item
+#, fuzzy
+msgid  "Client"
+msgstr "Daxwazker"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item3.StringList.item
+#, fuzzy
+msgid  "Date completed"
+msgstr "Dîroka qedandinê"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item4.StringList.item
+#, fuzzy
+msgid  "Department"
+msgstr "Beş"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item5.StringList.item
+#, fuzzy
+msgid  "Destinations"
+msgstr "Hedef"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item6.StringList.item
+#, fuzzy
+msgid  "Disposition"
+msgstr "Jêbirin"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item7.StringList.item
+#, fuzzy
+msgid  "Division"
+msgstr "Parve"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item8.StringList.item
+#, fuzzy
+msgid  "Document number"
+msgstr "Hejmara belgeyê"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item9.StringList.item
+#, fuzzy
+msgid  "Editor"
+msgstr "Edîtor"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item10.StringList.item
+#, fuzzy
+msgid  "E-Mail"
+msgstr "E-Peyam"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item11.StringList.item
+#, fuzzy
+msgid  "Forward to"
+msgstr "Bişîne ji"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item12.StringList.item
+#, fuzzy
+msgid  "Group"
+msgstr "Kom"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item13.StringList.item
+#, fuzzy
+msgid  "Info"
+msgstr "Agahî"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item14.StringList.item
+#, fuzzy
+msgid  "Language"
+msgstr "Ziman"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item15.StringList.item
+#, fuzzy
+msgid  "Mailstop"
+msgstr "ÎstgehaPosteyê"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item16.StringList.item
+#, fuzzy
+msgid  "Matter"
+msgstr "Girîngî"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item17.StringList.item
+#, fuzzy
+msgid  "Office"
+msgstr "Nivîsgeh"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item18.StringList.item
+#, fuzzy
+msgid  "Owner"
+msgstr "Xwedî"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item19.StringList.item
+#, fuzzy
+msgid  "Project"
+msgstr "Proje"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item20.StringList.item
+#, fuzzy
+msgid  "Publisher"
+msgstr "Weşanger"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item21.StringList.item
+#, fuzzy
+msgid  "Purpose"
+msgstr "Armanc"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item22.StringList.item
+#, fuzzy
+msgid  "Received from"
+msgstr "Hat jê"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item23.StringList.item
+#, fuzzy
+msgid  "Recorded by"
+msgstr "Hat tomarkirin aliyê"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item24.StringList.item
+#, fuzzy
+msgid  "Recorded date"
+msgstr "Dîroka tomarkirinê"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item25.StringList.item
+#, fuzzy
+msgid  "Reference"
+msgstr "Referans"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item26.StringList.item
+#, fuzzy
+msgid  "Source"
+msgstr "Çavkanî"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item27.StringList.item
+#, fuzzy
+msgid  "Status"
+msgstr "Rewş"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item28.StringList.item
+#, fuzzy
+msgid  "Telephone number"
+msgstr "Nimreya Telefonê"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item29.StringList.item
+#, fuzzy
+msgid  "Typist"
+msgstr "Nivîskar"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item30.StringList.item
+#, fuzzy
+msgid  "URL"
+msgstr "URL"
+
+#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_TEXT.StringList.item
+#, fuzzy
+msgid  "Text"
+msgstr "Nivîsar"
+
+#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATETIME.StringList.item
+#, fuzzy
+msgid  "DateTime"
+msgstr "Demê Dîrokê"
+
+#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATE.StringList.item
+#, fuzzy
+msgid  "Date"
+msgstr "Dîrok"
+
+#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DURATION.StringList.item
+#, fuzzy
+msgid  "Duration"
+msgstr "Demajo"
+
+#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_NUMBER.StringList.item
+#, fuzzy
+msgid  "Number"
+msgstr "Hejmar"
+
+#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_BOOLEAN.StringList.item
+#, fuzzy
+msgid  "Yes or no"
+msgstr "Erê an na"
+
+#: source/dialog/dinfdlg.src#SFX_ST_DURATION_FORMAT.String.Text
+#, fuzzy
+msgid  " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
+msgstr "S: %1 M: %2 R: %3 S: %4 X: %5 Ç: %6"
+
+#: source/dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.RadioButton.Text
+#, fuzzy
+msgid  "Yes"
+msgstr "Erê"
+
+#: source/dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_NO.RadioButton.Text
+#, fuzzy
+msgid  "No"
+msgstr "Na"
+
+#: source/dialog/dinfdlg.src#SFX_PB_PROPERTY_REMOVE.ImageButton.QuickHelpText
+#, fuzzy
+msgid  "Remove Property"
+msgstr "Taybetmeniyê Rake"
+
+#: source/dialog/dinfdlg.src#SFX_QB_WRONG_TYPE.QueryBox.Message
+msgid  "The value entered does not match the specified type.\nThe value will be stored as text."
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SID_DOCINFO.TabDialog.Text
+#, fuzzy
+msgid  "Properties of "
+msgstr "Taybetmendiyên "
+
+#: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.PageItem.Text
+#, fuzzy
+msgid  "General"
+msgstr "Giştî"
+
+#: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.PageItem.Text
+#, fuzzy
+msgid  "Description"
+msgstr "Rave"
+
+#: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_CUSTOMPROPERTIES.PageItem.Text
+#, fuzzy
+msgid  "Custom Properties"
+msgstr "Taybetmendiyên Taybet"
+
+#: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.PageItem.Text
+#, fuzzy
+msgid  "Internet"
+msgstr "Înternet"
+
+#: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFOSECURITY.PageItem.Text
+#, fuzzy
+msgid  "Security"
+msgstr "Ewlehî"
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.ModalDialog.Text
+#, fuzzy
+msgid  "Edit Duration"
+msgstr "Demajoyê Biguherîne"
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FL_DURATION.FixedLine.Text
+#, fuzzy
+msgid  "Duration"
+msgstr "Demajo"
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.CB_NEGATIVE.CheckBox.Text
+#, fuzzy
+msgid  "~Negative"
+msgstr "~Neyênî"
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_YEAR.FixedText.Text
+#, fuzzy
+msgid  "~Years"
+msgstr "~Sal"
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MONTH.FixedText.Text
+#, fuzzy
+msgid  "~Months"
+msgstr "~Meh"
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_DAY.FixedText.Text
+#, fuzzy
+msgid  "~Days"
+msgstr "~Roj"
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_HOUR.FixedText.Text
+#, fuzzy
+msgid  "H~ours"
+msgstr "S~aet"
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MINUTE.FixedText.Text
+#, fuzzy
+msgid  "Min~utes"
+msgstr "Xul~ek"
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_SECOND.FixedText.Text
+#, fuzzy
+msgid  "~Seconds"
+msgstr "~Çirke"
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MSECOND.FixedText.Text
+#, fuzzy
+msgid  "Millise~conds"
+msgstr "Mîlîxu~lek"
+
+#: source/dialog/dinfedt.src#DLG_DOCINFO_EDT.ModalDialog.Text
+#, fuzzy
+msgid  "Edit Field Names"
+msgstr "Etîketan Sererast Bike"
+
+#: source/dialog/dinfedt.src#DLG_DOCINFO_EDT.FL_INFO.FixedLine.Text
+#, fuzzy
+msgid  "Names"
+msgstr "Nav"
+
+#: source/dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.ModalDialog.Text
+#, fuzzy
+msgid  "Create Style"
+msgstr "Şêwaz Afirîne"
+
+#: source/dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.FL_COL.FixedLine.Text
+#, fuzzy
+msgid  "Style name"
+msgstr "Navê Şêwazê"
+
+#: source/dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MSG_OVERWRITE.QueryBox.Message
+#, fuzzy
+msgid  "Style already exists. Overwrite?"
+msgstr "Şêwaz jixwe heye. Bila li ser wê were nivîsîn?"
+
+#: source/dialog/recfloat.src#SID_RECORDING_FLOATWINDOW.FloatingWindow.Text
+#, fuzzy
+msgid  "Record Macro"
+msgstr "Makro tomar bike"
+
+#: source/dialog/recfloat.src#STR_MACRO_LOSS.String.Text
+msgid  "Do you really want to cancel the recording? Any steps recorded up to this point will be lost."
+msgstr ""
+
+#: source/dialog/recfloat.src#STR_CANCEL_RECORDING.String.Text
+#, fuzzy
+msgid  "Cancel Recording"
+msgstr "Tomarê Betal Bike"
+
+#: source/dialog/mailwindow.src#RID_ERRBOX_MAIL_CONFIG.ErrorBox.MESSAGE
+msgid  "%PRODUCTNAME was unable to find a working e-mail configuration. Please save this document locally instead and attach it from within your e-mail client."
+msgstr ""
+
+#: source/dialog/dialog.src#STR_RESET.String.Text
+#, fuzzy
+msgid  "~Reset"
+msgstr "~Tune Bike"
+
+#: source/dialog/dialog.src#STR_APPLY.String.Text
+#, fuzzy
+msgid  "Apply"
+msgstr "Bisepîne"
+
+#: source/dialog/dialog.src#STR_TABPAGE_MANAGESTYLES.String.Text
+#, fuzzy
+msgid  "Organizer"
+msgstr "Rêvebibe"
+
+#: source/dialog/dialog.src#MSG_TABPAGE_INVALIDNAME.InfoBox.Message
+#, fuzzy
+msgid  "This name is already in use."
+msgstr "Ev nav wek navê şablonekî tê bikaranîn"
+
+#: source/dialog/dialog.src#MSG_TABPAGE_INVALIDSTYLE.InfoBox.Message
+#, fuzzy
+msgid  "This Style does not exist."
+msgstr "Ev şêwaz ne mevcûd e."
+
+#: source/dialog/dialog.src#MSG_TABPAGE_INVALIDPARENT.InfoBox.Message
+msgid  "This Style cannot be used as a base Style,\nbecause it would result in a recursive reference."
+msgstr ""
+
+#: source/dialog/dialog.src#MSG_POOL_STYLE_NAME.InfoBox.Message
+msgid  "Name already exists as a default Style.\nPlease choose another name."
+msgstr ""
+
+#: source/dialog/dialog.src#STR_DELETE_STYLE.String.Text
+#, fuzzy
+msgid  "Do you really want to delete Style $1?"
+msgstr "Bi rastî jî tu dixwazî şêwaza $1 jê bibe?"
+
+#: source/dialog/dialog.src#STR_DELETE_STYLE_USED.String.Text
+#, fuzzy
+msgid  "You are deleting an applied Style!\n"
+msgstr "Tu şêwaza ku tê bikaranîn jê dibe!\n"
+
+#: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MenuItem.Text
+#, fuzzy
+msgid  "New..."
+msgstr "Nû..."
+
+#: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.MenuItem.Text
+#, fuzzy
+msgid  "Modify..."
+msgstr "Biguherîne..."
+
+#: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.MenuItem.Text
+#, fuzzy
+msgid  "Delete..."
+msgstr "Jê bibe..."
+
+#: source/dialog/dialog.src#SID_NAVIGATOR.String.Text
+#, fuzzy
+msgid  "Navigator"
+msgstr "Navîgator"
+
+#: source/dialog/dialog.src#SID_TASKPANE.String.Text
+#, fuzzy
+msgid  "Task Pane"
+msgstr "Panela Peywirê"
+
+#: source/dialog/dialog.src#MSG_ERROR_WRONG_CONFIRM.ErrorBox.Message
+#, fuzzy
+msgid  "Faulty password confirmation"
+msgstr "Erêkirina nasnavê xelete"
+
+#: source/dialog/dialog.src#STR_PDF_EXPORT_SEND.String.Text
+#, fuzzy
+msgid  "Send"
+msgstr "Bişîne"
+
+#: source/dialog/taskpane.src#STR_SFX_DOCK.String.Text
+#, fuzzy
+msgid  "Dock"
+msgstr "Nêzî Bike"
+
+#: source/dialog/taskpane.src#STR_SFX_UNDOCK.String.Text
+#, fuzzy
+msgid  "Undock"
+msgstr "Dûr Bike"
+
+#: source/dialog/taskpane.src#STR_SFX_TASK_PANE_VIEW.String.Text
+#, fuzzy
+msgid  "View"
+msgstr "Bibîne"
+
+#: source/dialog/taskpane.src#STR_SFX_TASKS.String.Text
+#, fuzzy
+msgid  "Tasks"
+msgstr "Peywir"
+
+#: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.FixedText.Text
+msgid  "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\n\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
+msgstr ""
+
+#: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.OKButton.Text
+#, fuzzy
+msgid  "~Keep Current Format"
+msgstr "Teşeya Heyî ~Biparêze"
+
+#: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_YES.CancelButton.Text
+#, fuzzy
+msgid  "~Save in ODF Format"
+msgstr "Di teşeya ODF de ~Tomar Bike"
+
+#: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_MOREINFO.HelpButton.Text
+#, fuzzy
+msgid  "~More Information..."
+msgstr "~Zêdetir Agahî..."
+
+#: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.CB_WARNING_OFF.CheckBox.Text
+#, fuzzy
+msgid  "~Ask when not saving in ODF format"
+msgstr "Demê di teşeya ODF de tomar neke ~bipirse"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item1.ItemList.item
+#, fuzzy
+msgid  "My Templates"
+msgstr "Şablonên min"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item2.ItemList.item
+#, fuzzy
+msgid  "Business Correspondence"
+msgstr "Guncaviya Pîşe"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item3.ItemList.item
+#, fuzzy
+msgid  "Other Business Documents"
+msgstr "Belgeyên Meslekî yên Din"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item4.ItemList.item
+#, fuzzy
+msgid  "Personal Correspondence and Documents"
+msgstr "Guncaviya Takekesî û Belge"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item5.ItemList.item
+#, fuzzy
+msgid  "Forms and Contracts"
+msgstr "Forma û Peyman"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item6.ItemList.item
+#, fuzzy
+msgid  "Finances"
+msgstr "Fînans"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item7.ItemList.item
+#, fuzzy
+msgid  "Education"
+msgstr "Perwerdehî"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item8.ItemList.item
+#, fuzzy
+msgid  "Presentation Backgrounds"
+msgstr "Rûerdên Pêşkêşiyan"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item9.ItemList.item
+#, fuzzy
+msgid  "Presentations"
+msgstr "Pêşek"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item10.ItemList.item
+#, fuzzy
+msgid  "Miscellaneous"
+msgstr "Curbecur"
+
+#: source/doc/doctempl.src#RID_CNT_STR_WAITING.String.Text
+#, fuzzy
+msgid  "The templates are being initialized for first-time usage."
+msgstr "Ji bo xebitandina pêşîn şablon tê amadekirin."
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.ModalDialog.Text
+#, fuzzy
+msgid  "Templates"
+msgstr "Şablon"
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_EDIT.FixedLine.Text
+#, fuzzy
+msgid  "New template"
+msgstr "Şablona nû"
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.FixedLine.Text
+#, fuzzy
+msgid  "Templates"
+msgstr "Şablon"
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.FixedText.Text
+#, fuzzy
+msgid  "~Categories"
+msgstr "~Kategorî"
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_STYLESHEETS.FixedText.Text
+#, fuzzy
+msgid  "~Templates"
+msgstr "~Şablon"
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.PushButton.Text
+#, fuzzy
+msgid  "~Edit"
+msgstr "~Serrrast bike"
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_ORGANIZE.PushButton.Text
+#, fuzzy
+msgid  "~Organizer..."
+msgstr "~Rêxistiner..."
+
+#: source/doc/doc.src#MSG_CONFIRM_FILTER.QueryBox.Message
+msgid  "Saving in external formats may have caused\n information loss. Do you still want to close?"
+msgstr ""
+
+#: source/doc/doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.QueryBox.Message
+msgid  "Name already in use.\nDo you want to overwrite document template?"
+msgstr ""
+
+#: source/doc/doc.src#STR_DELETE_REGION.String.Text
+msgid  "Are you sure you want to delete the region "$1"?"
+msgstr ""
+
+#: source/doc/doc.src#STR_DELETE_TEMPLATE.String.Text
+msgid  "Are you sure you want to delete the entry "$1"?"
+msgstr ""
+
+#: source/doc/doc.src#MSG_REGION_NOTEMPTY.QueryBox.Message
+msgid  "The category is not empty.\nDelete anyway?"
+msgstr ""
+
+#: source/doc/doc.src#STR_QUERY_SAVE_DOCUMENT.String.Text
+msgid  "The document "$(DOC)" has been modified.\nDo you want to save your changes?"
+msgstr ""
+
+#: source/doc/doc.src#STR_STYLES.String.Text
+#, fuzzy
+msgid  "Styles"
+msgstr "Teşe"
+
+#: source/doc/doc.src#STR_MACROS.String.Text
+#, fuzzy
+msgid  "Macros"
+msgstr "Makro"
+
+#: source/doc/doc.src#STR_CONFIG.String.Text
+#, fuzzy
+msgid  "Configuration"
+msgstr "Mîheng"
+
+#: source/doc/doc.src#STR_PRINT_STYLES_HEADER.String.Text
+#, fuzzy
+msgid  "Styles in "
+msgstr "Di şêwazan de "
+
+#: source/doc/doc.src#STR_PRINT_STYLES.String.Text
+#, fuzzy
+msgid  "Printing Styles"
+msgstr "Şêwaz Têne Nivîsandin"
+
+#: source/doc/doc.src#MSG_PRINT_ERROR.ErrorBox.Message
+#, fuzzy
+msgid  "The print job could not be started."
+msgstr "Karê nivîsandinê nehate destpêkirin"
+
+#: source/doc/doc.src#STR_BACKUP_COPY.String.Text
+#, fuzzy
+msgid  "Copy"
+msgstr "Kopî bike"
+
+#: source/doc/doc.src#MSG_CANT_OPEN_TEMPLATE.InfoBox.Message
+#, fuzzy
+msgid  "The template could not be opened."
+msgstr "Şablona belgeyê venabe."
+
+#: source/doc/doc.src#MSG_VIEW_OPEN_CANT_SAVE.InfoBox.Message
+#, fuzzy
+msgid  "Document already open for editing."
+msgstr "Belge jixwe ji bo sererastkirinê vebû."
+
+#: source/doc/doc.src#STR_ERROR_SAVE.String.Text
+#, fuzzy
+msgid  "Error recording document "
+msgstr "Dema belge dihate tomarkirin xeletî çêbû. "
+
+#: source/doc/doc.src#STR_TEMPLATE_FILTER.String.Text
+#, fuzzy
+msgid  "Templates"
+msgstr "Şablon"
+
+#: source/doc/doc.src#STR_ERROR_COPY_TEMPLATE.String.Text
+msgid  "Error copying template "$1". \nA template with this name may already exist."
+msgstr ""
+
+#: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE.String.Text
+msgid  "The template "$1" can not be deleted."
+msgstr ""
+
+#: source/doc/doc.src#STR_ERROR_MOVE_TEMPLATE.String.Text
+msgid  "Error moving template "$1"."
+msgstr ""
+
+#: source/doc/doc.src#MSG_ERROR_RESCAN.ErrorBox.Message
+#, fuzzy
+msgid  "The update could not be saved."
+msgstr "Rojanekirin nehate tomarkirin."
+
+#: source/doc/doc.src#STR_ERROR_SAVE_TEMPLATE.String.Text
+#, fuzzy
+msgid  "Error saving template "
+msgstr "Dema şablon dihate nivîsandin xeletî çêbû "
+
+#: source/doc/doc.src#MSG_ERROR_RENAME_TEMPLATE.ErrorBox.Message
+#, fuzzy
+msgid  "Error renaming template."
+msgstr "Dema şablon ji nû ve dihate navkirin xeletî çêbû."
+
+#: source/doc/doc.src#MSG_ERROR_RENAME_TEMPLATE_REGION.ErrorBox.Message
+#, fuzzy
+msgid  "Error renaming template category."
+msgstr "Dema kategoriya şablonan dihate navandin xeletî çêbû."
+
+#: source/doc/doc.src#MSG_ERROR_EMPTY_NAME.ErrorBox.Message
+#, fuzzy
+msgid  "Please specify a name."
+msgstr "Navekî têkevin."
+
+#: source/doc/doc.src#MSG_ERROR_UNIQ_NAME.ErrorBox.Message
+msgid  "Please specify a unique name.\nEntries must not be case specific."
+msgstr ""
+
+#: source/doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.String.Text
+msgid  "Should the template "$(TEXT)" become the default template?"
+msgstr ""
+
+#: source/doc/doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.QueryBox.Message
+#, fuzzy
+msgid  "Do you want to reset the default template?"
+msgstr "Tu dixwazî şablona standard sifir bike?"
+
+#: source/doc/doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.InfoBox.Message
+msgid  "Template directory\n$(DIR)\ndoes not exist."
+msgstr ""
+
+#: source/doc/doc.src#MSG_DOCINFO_CANTREAD.InfoBox.Message
+#, fuzzy
+msgid  "Document info cannot be read."
+msgstr "Taybetmendinyên belgeyê nayê xwendin."
+
+#: source/doc/doc.src#STR_ERROR_NOSTORAGE.String.Text
+#, fuzzy
+msgid  "The selected file has an incorrect format."
+msgstr "Şêweyê pela ku hatiye hilbijartin şaş e."
+
+#: source/doc/doc.src#STR_QUERY_MUSTOWNFORMAT.String.Text
+msgid  "Documents cannot be saved in $(FORMAT) format. Do you\nwant to save your changes using the $(OWNFORMAT) format?"
+msgstr ""
+
+#: source/doc/doc.src#STR_SAVEDOC.String.Text
+#, fuzzy
+msgid  "~Save"
+msgstr "~Tomar bike"
+
+#: source/doc/doc.src#STR_UPDATEDOC.String.Text
+#, fuzzy
+msgid  "~Update"
+msgstr "~Rojane bike"
+
+#: source/doc/doc.src#STR_SAVEASDOC.String.Text
+#, fuzzy
+msgid  "Save ~As..."
+msgstr "~Cuda Tomar Bike..."
+
+#: source/doc/doc.src#STR_SAVECOPYDOC.String.Text
+#, fuzzy
+msgid  "Save Copy ~as..."
+msgstr "Kopyayê tomar bike ~wekî..."
+
+#: source/doc/doc.src#STR_CLOSEDOC.String.Text
+#, fuzzy
+msgid  "~Close"
+msgstr "~Bigire"
+
+#: source/doc/doc.src#STR_CLOSEDOC_ANDRETURN.String.Text
+#, fuzzy
+msgid  "~Close & Return to "
+msgstr "~Bigire û Paş De Vegere "
+
+#: source/doc/doc.src#STR_WIZARD.String.Text
+#, fuzzy
+msgid  " AutoPilot"
+msgstr " Sêhrbaz"
+
+#: source/doc/doc.src#RID_STR_FILTCONFIG.String.Text
+#, fuzzy
+msgid  "Configurations"
+msgstr "Avakerî"
+
+#: source/doc/doc.src#RID_STR_FILTBASIC.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Basic libraries"
+msgstr "Pirtûkxaneyên Bingeh yên %PRODUCTNAME"
+
+#: source/doc/doc.src#RID_STR_WARNSTYLEOVERWRITE.String.Text
+msgid  "Should the "$(ARG1)" Style be replaced?"
+msgstr ""
+
+#: source/doc/doc.src#STR_DOC_LOADING.String.Text
+#, fuzzy
+msgid  "Loading Document"
+msgstr "Belge tê barkirin"
+
+#: source/doc/doc.src#RID_DLSTATUS.INET_NAME_RESOLVE_START.String.Text
+#, fuzzy
+msgid  "Connection to: $(HOST). Waiting for response..."
+msgstr "Ya Tê Girêdan: $(HOST). Benda bersivdayînê ye..."
+
+#: source/doc/doc.src#RID_DLSTATUS.INET_CONNECT_START.String.Text
+#, fuzzy
+msgid  "Opening $(TARGET) at $(HOST)"
+msgstr "Ya vebû: li ser $(HOST) ya hate dîtin $(TARGET)"
+
+#: source/doc/doc.src#RID_DLSTATUS.INET_READ_STATUS.String.Text
+msgid  "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
+msgstr ""
+
+#: source/doc/doc.src#RID_DLSTATUS.INET_CONNECTION_CLOSED.String.Text
+#, fuzzy
+msgid  "Disconnected"
+msgstr "Ne girêdayî"
+
+#: source/doc/doc.src#MSG_OPEN_READONLY.QueryBox.Message
+msgid  "Document cannot be opened for editing.\nDo you want to open it as read-only?"
+msgstr ""
+
+#: source/doc/doc.src#STR_EDIT.String.Text
+#, fuzzy
+msgid  "Edit"
+msgstr "Serrast bike"
+
+#: source/doc/doc.src#RID_OFFICEFILTER.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Documents"
+msgstr "Belgeyên %PRODUCTNAME"
+
+#: source/doc/doc.src#STR_FRAMEOBJECT_PROPERTIES.String.Text
+#, fuzzy
+msgid  "Propert~ies..."
+msgstr "~Taybetmendî..."
+
+#: source/doc/doc.src#STR_FSET_FILTERNAME0.String.Text
+#, fuzzy
+msgid  "HTML (FrameSet)"
+msgstr "HTML (Komika Çarçovê)"
+
+#: source/doc/doc.src#STR_FSET_FILTERNAME1.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Frame Document"
+msgstr "Belgeya çarçovê ya %PRODUCTNAME"
+
+#: source/doc/doc.src#STR_TEMPL_MOVED.String.Text
+msgid  "The template "$(TEMPLATE)" was not found at the original location. A template with the same name exists at "$(FOUND)". Should this template be used in the future when comparing?"
+msgstr ""
+
+#: source/doc/doc.src#STR_TEMPL_RESET.String.Text
+msgid  "The template "$(TEMPLATE)" has not been found. Should the template be looked for the next time the document is opened ?"
+msgstr ""
+
+#: source/doc/doc.src#STR_AUTOMATICVERSION.String.Text
+#, fuzzy
+msgid  "Automatically saved version"
+msgstr "Guhertoya ku bixweber hatiye tomarkirin"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_SW.String.Text
+#, fuzzy
+msgid  "Text Document"
+msgstr "Belgeya Nivîsarê"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_SWWEB.String.Text
+#, fuzzy
+msgid  "HTML Document"
+msgstr "Belgeya HTML"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_SWGLOB.String.Text
+#, fuzzy
+msgid  "Master Document"
+msgstr "Belgeya Mak"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_SC.String.Text
+#, fuzzy
+msgid  "Spreadsheet"
+msgstr "Tabloya Hesêb"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_SI.String.Text
+#, fuzzy
+msgid  "Presentation"
+msgstr "Pêşkêşî"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_SD.String.Text
+#, fuzzy
+msgid  "Drawing"
+msgstr "Xêzkêşan"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_MESSAGE.String.Text
+#, fuzzy
+msgid  "Message"
+msgstr "Peyam"
+
+#: source/doc/doc.src#STR_NOSAVEANDCLOSE.String.Text
+#, fuzzy
+msgid  "~Discard"
+msgstr "~Jê bavêje"
+
+#: source/doc/doc.src#STR_PACKNGO_NOACCESS.String.Text
+#, fuzzy
+msgid  "Access to the current data medium not possible."
+msgstr "Xwe negihand hilgira daneyên ku tê bikaranîn."
+
+#: source/doc/doc.src#STR_PACKNGO_NEWMEDIUM.String.Text
+#, fuzzy
+msgid  "Insert the next data carrier and click OK."
+msgstr "Hilgirê daneyan ya dû re têxine cihê wê û pêl bişkoka Temamê bikin."
+
+#: source/doc/doc.src#STR_OBJECT.String.Text
+#, fuzzy
+msgid  "Object"
+msgstr "Obje"
+
+#: source/doc/doc.src#DLG_MACROQUERY.QueryBox.Title
+#, fuzzy
+msgid  "Run Macro"
+msgstr "Run Macro"
+
+#: source/doc/doc.src#DLG_MACROQUERY.QueryBox.Message
+#, fuzzy
+msgid  "This document contains macros. $(TEXT)"
+msgstr "Ev belge makroyan dihundirîne. $(TEXT)"
+
+#: source/doc/doc.src#BTN_OK.String.Text
+#, fuzzy
+msgid  "Run"
+msgstr "Bixebitîne"
+
+#: source/doc/doc.src#BTN_CANCEL.String.Text
+#, fuzzy
+msgid  "Do Not Run"
+msgstr "Xebitandin"
+
+#: source/doc/doc.src#FT_CANCEL.String.Text
+msgid  "According to the security settings, the macros in this document should not be run. Do you want to run them anyway?"
+msgstr ""
+
+#: source/doc/doc.src#FT_OK.String.Text
+#, fuzzy
+msgid  "Do you want to allow these macros to be run?"
+msgstr "Tu destûrê dide xebitandina van makroyan?"
+
+#: source/doc/doc.src#STR_EXPORTASPDF_TITLE.String.Text
+#, fuzzy
+msgid  "Export as PDF"
+msgstr "Wekî PDF îhrec bike"
+
+#: source/doc/doc.src#STR_EXPORTWITHCFGBUTTON.String.Text
+#, fuzzy
+msgid  "Export..."
+msgstr "Îhrac bike..."
+
+#: source/doc/doc.src#STR_EXPORTBUTTON.String.Text
+#, fuzzy
+msgid  "Export"
+msgstr "Veguhezîne derve"
+
+#: source/doc/doc.src#RID_SVXSTR_SECURITY_ADDPATH.String.Text
+#, fuzzy
+msgid  "Add this directory to the list of secure paths: "
+msgstr "Vê pêristê têxe lîsteya riyên ewle: "
+
+#: source/doc/doc.src#STR_LABEL_FILEFORMAT.String.Text
+#, fuzzy
+msgid  "File format:"
+msgstr "Formata pelan:"
+
+#: source/doc/doc.src#STR_HIDDENINFO_CONTAINS.String.Text
+msgid  "This document contains:\n\n"
+msgstr ""
+
+#: source/doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.String.Text
+#, fuzzy
+msgid  "Recorded changes"
+msgstr "Guherînên tomarkirî"
+
+#: source/doc/doc.src#STR_HIDDENINFO_NOTES.String.Text
+#, fuzzy
+msgid  "Notes"
+msgstr "Nîşe"
+
+#: source/doc/doc.src#STR_HIDDENINFO_DOCVERSIONS.String.Text
+#, fuzzy
+msgid  "Document versions"
+msgstr "Guhertoyên belgeyê"
+
+#: source/doc/doc.src#STR_HIDDENINFO_FIELDS.String.Text
+#, fuzzy
+msgid  "Fields"
+msgstr "Qad"
+
+#: source/doc/doc.src#STR_HIDDENINFO_LINKDATA.String.Text
+#, fuzzy
+msgid  "Linked data..."
+msgstr "Dana ya girêdayî..."
+
+#: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_SAVING.String.Text
+#, fuzzy
+msgid  "Do you want to continue saving the document?"
+msgstr "Tu dixwazî tomarkirina belgeyê bidomînî?"
+
+#: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_PRINTING.String.Text
+#, fuzzy
+msgid  "Do you want to continue printing the document?"
+msgstr "Tu dixwazî çapkirina belgeyê bidomînî?"
+
+#: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_SIGNING.String.Text
+#, fuzzy
+msgid  "Do you want to continue signing the document?"
+msgstr "Tu dixwazî îmze kirina belgeyê bidomînî?"
+
+#: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_CREATEPDF.String.Text
+#, fuzzy
+msgid  "Do you want to continue creating a PDF file?"
+msgstr "Tu dixwazî afirandina pela PDF bidomînî?"
+
+#: source/doc/doc.src#STR_NEW_FILENAME_SAVE.String.Text
+msgid  "If you do not want to overwrite the original document, you should save your work under a new filename."
+msgstr ""
+
+#: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.String.Text
+#, fuzzy
+msgid  "Some template files are protected and can not be deleted."
+msgstr "Hinek pelên şablon tên parastin û nayên jê birin."
+
+#: source/doc/doc.src#STR_DOCINFO_INFOFIELD.String.Text
+#, fuzzy
+msgid  "Info %1"
+msgstr "Agahî %1"
+
+#: source/doc/doc.src#STR_SHARED.String.Text
+#, fuzzy
+msgid  " (shared)"
+msgstr " (parvekirî)"
+
+#: source/doc/doc.src#STR_XMLSEC_ODF12_EXPECTED.String.Text
+msgid  "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-Options-Load/Save-General. Signing documents requires ODF 1.2 (OpenOffice.org 3.x)."
+msgstr ""
+
+#: source/doc/doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.QueryBox.Message
+msgid  "The document has to be saved before it can be signed. Saving the document removes all present signatures.\nDo you want to save the document?"
+msgstr ""
+
+#: source/doc/doc.src#STR_QRYTEMPL_MESSAGE.String.Text
+msgid  "The template '$(ARG1)' on which this document is based, has been modified. Do you want to update style based formattings according to the modified template?"
+msgstr ""
+
+#: source/doc/doc.src#STR_QRYTEMPL_UPDATE_BTN.String.Text
+#, fuzzy
+msgid  "~Update Styles"
+msgstr "Şêwazên ~Rojanekirinê"
+
+#: source/doc/doc.src#STR_QRYTEMPL_KEEP_BTN.String.Text
+#, fuzzy
+msgid  "~Keep Old Styles"
+msgstr "Şêwazên Kevn ~Biparêze"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.ModalDialog.Text
+#, fuzzy
+msgid  "Template Management"
+msgstr "Rêveberiya Şablonan"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_OK.OKButton.Text
+#, fuzzy
+msgid  "Close"
+msgstr "Bigire"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_FILES.PushButton.Text
+#, fuzzy
+msgid  "~File..."
+msgstr "~Pel..."
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_ADDRESSTEMPLATE.PushButton.Text
+#, fuzzy
+msgid  "~Address Book..."
+msgstr "~Pirtûka Navnîşanan..."
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
+#, fuzzy
+msgid  "Documents"
+msgstr "Belge"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
+#, fuzzy
+msgid  "Documents"
+msgstr "Belge"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.MenuButton.Text
+#, fuzzy
+msgid  "Commands"
+msgstr "Ferman"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_NEW.MenuItem.Text
+#, fuzzy
+msgid  "~New"
+msgstr "~Nû"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DELETE.MenuItem.Text
+#, fuzzy
+msgid  "~Delete"
+msgstr "~Jê bibe"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.MenuItem.Text
+#, fuzzy
+msgid  "~Edit"
+msgstr "~Sererastkirin"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_FROM.MenuItem.Text
+#, fuzzy
+msgid  "Import Template..."
+msgstr "Şablonê Veguhezîne Hundir..."
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_TO.MenuItem.Text
+#, fuzzy
+msgid  "Export Template..."
+msgstr "Şablonê Veguhezîne Derve..."
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINT.MenuItem.Text
+#, fuzzy
+msgid  "~Print"
+msgstr "~Çapkirin"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINTER_SETUP.MenuItem.Text
+#, fuzzy
+msgid  "Printer Settings..."
+msgstr "Mîhengên Çaperê..."
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESCAN.MenuItem.Text
+#, fuzzy
+msgid  "Update"
+msgstr "Rojanekirin"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DEFAULT_TEMPLATE.MenuItem.Text
+#, fuzzy
+msgid  "Set As Default Template"
+msgstr "Weke Şablona Heyî Rave Bike"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESET_DEFAULT_TEMPLATE.MenuItem.Text
+#, fuzzy
+msgid  "Reset Default Template"
+msgstr "Şablona Heyî Sifir Bike"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
+#, fuzzy
+msgid  "Templates"
+msgstr "Şablon"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
+#, fuzzy
+msgid  "Templates"
+msgstr "Şablon"
+
+#: source/doc/new.src#DLG_NEW_FILE.ModalDialog.Text
+#, fuzzy
+msgid  "New"
+msgstr "Nû"
+
+#: source/doc/new.src#DLG_NEW_FILE.FT_REGION.FixedText.Text
+#, fuzzy
+msgid  "~Categories"
+msgstr "~Kategorî"
+
+#: source/doc/new.src#DLG_NEW_FILE.FT_TEMPLATE.FixedText.Text
+#, fuzzy
+msgid  "T~emplates"
+msgstr "~Şablon"
+
+#: source/doc/new.src#DLG_NEW_FILE.BT_MORE.MoreButton.Text
+#, fuzzy
+msgid  "~More"
+msgstr "~Zêdetir"
+
+#: source/doc/new.src#DLG_NEW_FILE.BTN_PREVIEW.CheckBox.Text
+#, fuzzy
+msgid  "Pre~view"
+msgstr "Pêş~dîtin"
+
+#: source/doc/new.src#DLG_NEW_FILE.GB_DOCINFO.FixedLine.Text
+#, fuzzy
+msgid  "Description"
+msgstr "Rave"
+
+#: source/doc/new.src#DLG_NEW_FILE.CB_TEXT_STYLE.CheckBox.Text
+#, fuzzy
+msgid  "Te~xt"
+msgstr "~Nivîs"
+
+#: source/doc/new.src#DLG_NEW_FILE.CB_FRAME_STYLE.CheckBox.Text
+#, fuzzy
+msgid  "~Frame"
+msgstr "~Çarçove"
+
+#: source/doc/new.src#DLG_NEW_FILE.CB_PAGE_STYLE.CheckBox.Text
+#, fuzzy
+msgid  "~Pages"
+msgstr "~Rûpel"
+
+#: source/doc/new.src#DLG_NEW_FILE.CB_NUM_STYLE.CheckBox.Text
+#, fuzzy
+msgid  "N~umbering"
+msgstr "~Hejmarkirin"
+
+#: source/doc/new.src#DLG_NEW_FILE.CB_MERGE_STYLE.CheckBox.Text
+#, fuzzy
+msgid  "~Overwrite"
+msgstr "~Serbinivîse"
+
+#: source/doc/new.src#DLG_NEW_FILE.PB_LOAD_FILE.PushButton.Text
+#, fuzzy
+msgid  "From File..."
+msgstr "Ji Pelê..."
+
+#: source/doc/new.src#DLG_NEW_FILE.STR_LOAD_TEMPLATE.String.Text
+#, fuzzy
+msgid  "Load Styles"
+msgstr "Teşeyan bar bike"
+
+#: source/doc/new.src#DLG_NEW_FILE.FT_TITLE.FixedText.Text
+#, fuzzy
+msgid  "~Title"
+msgstr "~Sernav"
+
+#: source/doc/new.src#DLG_NEW_FILE.FT_THEMA.FixedText.Text
+#, fuzzy
+msgid  "Subject"
+msgstr "Mijar"
+
+#: source/doc/new.src#DLG_NEW_FILE.FT_KEYWORDS.FixedText.Text
+#, fuzzy
+msgid  "~Key words"
+msgstr "Peyvên Mifte"
+
+#: source/doc/new.src#DLG_NEW_FILE.FT_DESC.FixedText.Text
+#, fuzzy
+msgid  "~Description"
+msgstr "~Daxuyanî"
+
+#: source/menu/menu.src#STR_MENU_CFGITEM.String.Text
+#, fuzzy
+msgid  "Configuration Menu"
+msgstr "Pêşeka Veavakirinê"
+
+#: source/menu/menu.src#STR_MENU_ADDONS.String.Text
+#, fuzzy
+msgid  "~Add-Ons"
+msgstr "~Pêvek"
+
+#: source/menu/menu.src#MN_CLIPBOARDFUNCS.SID_CUT.MenuItem.Text
+#, fuzzy
+msgid  "Cu~t"
+msgstr "Jê bi~ke"
+
+#: source/menu/menu.src#MN_CLIPBOARDFUNCS.SID_COPY.MenuItem.Text
+#, fuzzy
+msgid  "~Copy"
+msgstr "~Kopî bike"
+
+#: source/menu/menu.src#MN_CLIPBOARDFUNCS.SID_PASTE.MenuItem.Text
+#, fuzzy
+msgid  "~Paste"
+msgstr "~Pêveke"
+
+#: source/menu/menu.src#SID_WIN_FULLSCREEN.String.Text
+#, fuzzy
+msgid  "Leave Full-Screen Mode"
+msgstr "Ji moda dîmendera tijî derkeve"
+
+#: source/menu/menu.src#STR_MENU_ADDONHELP.String.Text
+#, fuzzy
+msgid  "Add-~On Help"
+msgstr "~Alîkariya Pêvekê"
+
+#: source/menu/menu.src#STR_MENU_SYNONYMS.String.Text
+#, fuzzy
+msgid  "Synonyms"
+msgstr "Hevwate"
+
+#: source/menu/menu.src#STR_MENU_NO_SYNONYM_FOUND.String.Text
+#, fuzzy
+msgid  "(none)"
+msgstr "(ne yek jî)"
+
+#: source/menu/menu.src#STR_MENU_THESAURUS.String.Text
+#, fuzzy
+msgid  "~Thesaurus..."
+msgstr "~Ferhenga hevwateyan..."
+
+#: source/view/view.src#STR_NODEFPRINTER.String.Text
+msgid  "No default printer found.\nPlease choose a printer and try again."
+msgstr ""
+
+#: source/view/view.src#STR_NOSTARTPRINTER.String.Text
+msgid  "Could not start printer.\nPlease check your printer configuration."
+msgstr ""
+
+#: source/view/view.src#STR_PRINTER_NOTAVAIL.String.Text
+msgid  "This document has been formatted for the printer $1. The specified printer is not available. \nDo you want to use the standard printer $2 ?"
+msgstr ""
+
+#: source/view/view.src#STR_PRINT_OPTIONS.String.Text
+#, fuzzy
+msgid  "Options..."
+msgstr "Vebijêrk..."
+
+#: source/view/view.src#STR_PRINT_OPTIONS_TITLE.String.Text
+#, fuzzy
+msgid  "Printer Options"
+msgstr "Vebijêrkên Çapgerê"
+
+#: source/view/view.src#STR_ERROR_PRINTER_BUSY.String.Text
+#, fuzzy
+msgid  "Printer busy"
+msgstr "Çaper çalak e"
+
+#: source/view/view.src#STR_ERROR_PRINT.String.Text
+#, fuzzy
+msgid  "Error while printing"
+msgstr "Di çapkirinê de çewtî"
+
+#: source/view/view.src#STR_PRINTING.String.Text
+#, fuzzy
+msgid  "Printing"
+msgstr "Tê çapkirin"
+
+#: source/view/view.src#STR_PAGE.String.Text
+#, fuzzy
+msgid  "Page "
+msgstr "Rûpel "
+
+#: source/view/view.src#STR_READONLY.String.Text
+#, fuzzy
+msgid  " (read-only)"
+msgstr " (tenê-xwendin)"
+
+#: source/view/view.src#STR_PRINT_NEWORI.String.Text
+msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
+msgstr ""
+
+#: source/view/view.src#STR_PRINT_NEWSIZE.String.Text
+msgid  "The page size has been modified.\nShould the new settings be saved\nin the active document?"
+msgstr ""
+
+#: source/view/view.src#STR_PRINT_NEWORISIZE.String.Text
+msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
+msgstr ""
+
+#: source/view/view.src#STR_PREVIEW_DOCINFO.String.Text
+msgid  "<html><body BGCOLOR="#c0c0c0"><font FACE="Arial"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
+msgstr ""
+
+#: source/view/view.src#STR_PREVIEW_NODOCINFO.String.Text
+msgid  "<HTML><BODY BGCOLOR="#c0c0c0"><BR><BR><P><FONT FACE="Arial"><B>No document properties found.</B></FONT></P></BODY></HTML>"
+msgstr ""
+
+#: source/view/view.src#MSG_CANT_CLOSE.InfoBox.Message
+msgid  "The document cannot be closed because a\n print job is being carried out."
+msgstr ""
+
+#: source/view/view.src#DLG_PRINTMONITOR.FT_PRINTING.FixedText.Text
+#, fuzzy
+msgid  "is being printed on"
+msgstr "tê çapkirin li"
+
+#: source/view/view.src#DLG_PRINTMONITOR.STR_FT_PREPARATION.String.Text
+#, fuzzy
+msgid  "is being prepared for printing"
+msgstr "ji bo çapkirinê tê amadekirin"
+
+#: source/view/view.src#MSG_ERROR_SEND_MAIL.InfoBox.Message
+msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
+msgstr ""
+
+#: source/view/view.src#MSG_QUERY_OPENASTEMPLATE.QueryBox.Message
+msgid  "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
+msgstr ""
+
+#: source/view/view.src#STR_REPAIREDDOCUMENT.String.Text
+#, fuzzy
+msgid  " (repaired document)"
+msgstr " (belgeya temîrkirî)"
+
+#: source/view/view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.ErrorBox.Message
+msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
+msgstr ""
+
+#: source/view/view.src#DLG_PRINTMONITOR_TEXT.#define.Text
+#, fuzzy
+msgid  "Print Monitor"
+msgstr "Monîtorê Çapê"
+
+#: source/view/view.src#STR_ERROR_SAVE_TEMPLATE.String.Text
+#, fuzzy
+msgid  "Error saving template "
+msgstr "Dema şablon dihate nivîsandin xeletî çêbû "

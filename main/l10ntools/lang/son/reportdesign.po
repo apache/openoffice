@@ -1,1301 +1,1312 @@
-
-#: CondFormat.src#WIN_CONDITION.LB_COND_TYPE.1.stringlist.text
-msgid "Field Value Is"
-msgstr ""
-
-#: CondFormat.src#WIN_CONDITION.LB_COND_TYPE.2.stringlist.text
-msgid "Expression Is"
-msgstr ""
-
-#: CondFormat.src#WIN_CONDITION.LB_OP.1.stringlist.text
-msgid "between"
-msgstr ""
-
-#: CondFormat.src#WIN_CONDITION.LB_OP.2.stringlist.text
-msgid "not between"
-msgstr ""
-
-#: CondFormat.src#WIN_CONDITION.LB_OP.3.stringlist.text
-msgid "equal to"
-msgstr ""
-
-#: CondFormat.src#WIN_CONDITION.LB_OP.4.stringlist.text
-msgid "not equal to"
-msgstr ""
-
-#: CondFormat.src#WIN_CONDITION.LB_OP.5.stringlist.text
-msgid "greater than"
-msgstr ""
-
-#: CondFormat.src#WIN_CONDITION.LB_OP.6.stringlist.text
-msgid "less than"
-msgstr ""
-
-#: CondFormat.src#WIN_CONDITION.LB_OP.7.stringlist.text
-msgid "greater than or equal to"
-msgstr ""
-
-#: CondFormat.src#WIN_CONDITION.LB_OP.8.stringlist.text
-msgid "less than or equal to"
-msgstr ""
-
-#: CondFormat.src#WIN_CONDITION.FT_AND.fixedtext.text
-msgid "and"
-msgstr ""
-
-#: CondFormat.src#WIN_CONDITION.CRTL_FORMAT_PREVIEW.window.text
-msgid "Example"
-msgstr ""
-
-#: CondFormat.src#RID_CONDFORMAT.PB_HELP.helpbutton.text
-#, fuzzy
-msgctxt "CondFormat.src#RID_CONDFORMAT.PB_HELP.helpbutton.text"
-msgid "~Help"
-msgstr "Faaba"
-
-#: CondFormat.src#RID_CONDFORMAT.modaldialog.text
-msgid "Conditional Formatting"
-msgstr ""
-
-#: CondFormat.src#STR_NUMBERED_CONDITION.string.text
-msgid "Condition $number$"
-msgstr ""
-
-#: CondFormat.src#STR_COLOR_WHITE.string.text
-msgid "White"
-msgstr ""
-
-#: CondFormat.src#STR_CHARCOLOR.string.text
-msgid "Font color"
-msgstr ""
-
-#: CondFormat.src#STR_CHARBACKGROUND.string.text
-msgctxt "CondFormat.src#STR_CHARBACKGROUND.string.text"
-msgid "Background"
-msgstr ""
-
-#: CondFormat.src#STR_TRANSPARENT.string.text
-msgid "No Fill"
-msgstr ""
-
-#: CondFormat.src#RID_TB_SORTING.SID_FM_SORTUP.toolboxitem.text
-msgid "Sort Ascending"
-msgstr ""
-
-#: CondFormat.src#RID_TB_SORTING.SID_FM_SORTDOWN.toolboxitem.text
-msgid "Sort Descending"
-msgstr ""
-
-#: CondFormat.src#RID_TB_SORTING.SID_FM_REMOVE_FILTER_SORT.toolboxitem.text
-msgid "Remove sorting"
-msgstr ""
-
-#: CondFormat.src#RID_TB_SORTING.SID_ADD_CONTROL_PAIR.toolboxitem.text
-msgid "Insert"
-msgstr " Daŋ"
-
-#: CondFormat.src#ADDFIELD_FL_HELP_SEPARATOR.fixedline.text
-msgctxt "CondFormat.src#ADDFIELD_FL_HELP_SEPARATOR.fixedline.text"
-msgid "Help"
-msgstr "Faaba"
-
-#: CondFormat.src#ADDFIELD_HELP_FIELD.fixedtext.text
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
 msgid ""
-"Highlight the fields to insert into the selected section of the template, "
-"then click Insert or press Enter."
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/core/resource/strings.src#RID_STR_DETAIL.String.Text
+msgid  "Detail"
 msgstr ""
 
-#: DateTime.src#RID_DATETIME_DLG.CB_DATE.checkbox.text
-msgid "Include Date"
+#: source/core/resource/strings.src#RID_STR_PAGE_HEADER.String.Text
+msgid  "Page Header"
 msgstr ""
 
-#: DateTime.src#RID_DATETIME_DLG.FT_DATE_FORMAT.fixedtext.text
-msgctxt "DateTime.src#RID_DATETIME_DLG.FT_DATE_FORMAT.fixedtext.text"
-msgid "Format"
-msgstr "Kaddasu fasalyan"
-
-#: DateTime.src#RID_DATETIME_DLG.CB_TIME.checkbox.text
-msgid "Include Time"
+#: source/core/resource/strings.src#RID_STR_PAGE_FOOTER.String.Text
+msgid  "Page Footer"
 msgstr ""
 
-#: DateTime.src#RID_DATETIME_DLG.FT_TIME_FORMAT.fixedtext.text
-msgctxt "DateTime.src#RID_DATETIME_DLG.FT_TIME_FORMAT.fixedtext.text"
-msgid "Format"
-msgstr "Kaddasu fasalyan"
+#: source/core/resource/strings.src#RID_STR_GROUP_HEADER.String.Text
+msgid  "Group Header"
+msgstr ""
 
-#: DateTime.src#RID_DATETIME_DLG.PB_HELP.helpbutton.text
+#: source/core/resource/strings.src#RID_STR_GROUP_FOOTER.String.Text
+msgid  "Group Footer"
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_REPORT_HEADER.String.Text
+msgid  "Report Header"
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_REPORT_FOOTER.String.Text
+msgid  "Report Footer"
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_PROPERTY_CHANGE_NOT_ALLOWED.String.Text
+msgid  "The name '#1' already exists and can not be asssigned again."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_ERROR_WRONG_ARGUMENT.String.Text
+msgid  "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_ARGUMENT_IS_NULL.String.Text
+msgid  "The element is invalid."
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_FIXEDTEXT.String.Text
+msgid  "Label field"
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_FORMATTEDFIELD.String.Text
+msgid  "Formatted field"
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_IMAGECONTROL.String.Text
+msgid  "Image control"
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_REPORT.String.Text
+msgid  "Report"
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_SHAPE.String.Text
+msgid  "Shape"
+msgstr ""
+
+#: source/core/resource/strings.src#RID_STR_FIXEDLINE.String.Text
+msgid  "Fixed line"
+msgstr ""
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FloatingWindow.Text
+msgid  "Sorting and Grouping"
+msgstr ""
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR2.FixedLine.Text
+msgid  "Groups"
+msgstr ""
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_MOVELABEL.FixedText.Text
+msgid  "Group actions"
+msgstr ""
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_UP.ToolBoxItem.Text
+msgid  "Move up"
+msgstr ""
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_DOWN.ToolBoxItem.Text
+msgid  "Move down"
+msgstr ""
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_DELETE.ToolBoxItem.Text
+msgid  "~Delete"
+msgstr ""
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR3.FixedLine.Text
 #, fuzzy
-msgctxt "DateTime.src#RID_DATETIME_DLG.PB_HELP.helpbutton.text"
-msgid "~Help"
-msgstr "Faaba"
-
-#: DateTime.src#RID_DATETIME_DLG.modaldialog.text
-msgid "Date and Time"
-msgstr ""
-
-#: dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_PAGE.pageitem.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_PAGE.pageitem.text"
-msgid "Page"
-msgstr ""
-
-#: dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_BACKGROUND.pageitem.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_BACKGROUND.pageitem.text"
-msgid "Background"
-msgstr ""
-
-#: dlgpage.src#RID_PAGEDIALOG_PAGE.1.pushbutton.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_PAGE.1.pushbutton.text"
-msgid "Return"
-msgstr ""
-
-#: dlgpage.src#RID_PAGEDIALOG_PAGE.1.string.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_PAGE.1.string.text"
-msgid "Page"
-msgstr ""
-
-#: dlgpage.src#RID_PAGEDIALOG_PAGE.2.string.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_PAGE.2.string.text"
-msgid "Background"
-msgstr ""
-
-#: dlgpage.src#RID_PAGEDIALOG_PAGE.tabdialog.text
-msgid "Page Setup"
-msgstr ""
-
-#: dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.pushbutton.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.pushbutton.text"
-msgid "Return"
-msgstr ""
-
-#: dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.string.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.string.text"
-msgid "Background"
-msgstr ""
-
-#: dlgpage.src#RID_PAGEDIALOG_BACKGROUND.tabdialog.text
-msgid "Section Setup"
-msgstr ""
-
-#: dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_CHAR.pageitem.text
-msgid "Font"
-msgstr " Sigirawey"
-
-#: dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_EFFECTS.pageitem.text
-msgid "Font Effects"
-msgstr ""
-
-#: dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_POSITION.pageitem.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_POSITION.pageitem.text"
-msgid "Position"
-msgstr " Kayandi doo"
-
-#: dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_TWOLN.pageitem.text
-msgid "Asian Layout"
-msgstr ""
-
-#: dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_BACKGROUND.pageitem.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_BACKGROUND.pageitem.text"
-msgid "Background"
-msgstr ""
-
-#: dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_ALIGNMENT.pageitem.text
-msgid "Alignment"
-msgstr ""
-
-#: dlgpage.src#RID_PAGEDIALOG_CHAR.1.pushbutton.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_CHAR.1.pushbutton.text"
-msgid "Return"
-msgstr ""
-
-#: dlgpage.src#RID_PAGEDIALOG_CHAR.1.string.text
-msgid "Character"
-msgstr "Harfu"
-
-#: dlgpage.src#RID_PAGEDIALOG_CHAR.tabdialog.text
-msgid "Character Settings"
-msgstr ""
-
-#: dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE.pageitem.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE.pageitem.text"
-msgid "Line"
-msgstr ""
-
-#: dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE_DEF.pageitem.text
-msgid "Line Styles"
-msgstr ""
-
-#: dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINEEND_DEF.pageitem.text
-msgid "Arrow Styles"
-msgstr ""
-
-#: dlgpage.src#RID_PAGEDIALOG_LINE.1.pushbutton.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_LINE.1.pushbutton.text"
-msgid "Return"
-msgstr ""
-
-#: dlgpage.src#RID_PAGEDIALOG_LINE.1.string.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_LINE.1.string.text"
-msgid "Line"
-msgstr ""
-
-#: dlgpage.src#RID_PAGEDIALOG_LINE.tabdialog.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_LINE.tabdialog.text"
-msgid "Line"
-msgstr ""
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR2.fixedline.text
-msgctxt "GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR2.fixedline.text"
-msgid "Groups"
-msgstr ""
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.FT_MOVELABEL.fixedtext.text
-msgid "Group actions"
-msgstr ""
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_UP.toolboxitem.text
-msgid "Move up"
-msgstr ""
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_DOWN.toolboxitem.text
-msgid "Move down"
-msgstr ""
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_DELETE.toolboxitem.text
-msgid "~Delete"
-msgstr ""
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR3.fixedline.text
-#, fuzzy
-msgid "Properties"
+msgid  "Properties"
 msgstr " Moobandawey"
 
-#: GroupsSorting.src#RID_GROUPS_SORTING.FT_ORDER.fixedtext.text
-msgid "Sorting"
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_ORDER.FixedText.Text
+msgid  "Sorting"
 msgstr ""
 
-#: GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.1.stringlist.text
-msgid "Ascending"
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.0.StringList.item
+msgid  "Ascending"
 msgstr ""
 
-#: GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.2.stringlist.text
-msgid "Descending"
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.1.StringList.item
+msgid  "Descending"
 msgstr ""
 
-#: GroupsSorting.src#RID_GROUPS_SORTING.FT_HEADER.fixedtext.text
-msgid "Group Header"
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_HEADER.FixedText.Text
+msgid  "Group Header"
 msgstr ""
 
-#: GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.1.stringlist.text
-msgctxt "GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.1.stringlist.text"
-msgid "Present"
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
+msgid  "Not present"
 msgstr ""
 
-#: GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.2.stringlist.text
-msgctxt "GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.2.stringlist.text"
-msgid "Not present"
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_FOOTER.FixedText.Text
+msgid  "Group Footer"
 msgstr ""
 
-#: GroupsSorting.src#RID_GROUPS_SORTING.FT_FOOTER.fixedtext.text
-msgid "Group Footer"
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
+msgid  "Not present"
 msgstr ""
 
-#: GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.1.stringlist.text
-msgctxt "GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.1.stringlist.text"
-msgid "Present"
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPON.FixedText.Text
+msgid  "Group On"
 msgstr ""
 
-#: GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.2.stringlist.text
-msgctxt "GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.2.stringlist.text"
-msgid "Not present"
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_GROUPONLST.Default.StringList.item
+msgid  "Each Value"
 msgstr ""
 
-#: GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPON.fixedtext.text
-msgid "Group On"
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPINTERVAL.FixedText.Text
+msgid  "Group Interval"
 msgstr ""
 
-#: GroupsSorting.src#RID_GROUPS_SORTING.LST_GROUPONLST.1.stringlist.text
-msgid "Each Value"
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_KEEPTOGETHER.FixedText.Text
+msgid  "Keep Together"
 msgstr ""
 
-#: GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPINTERVAL.fixedtext.text
-msgid "Group Interval"
-msgstr ""
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.FT_KEEPTOGETHER.fixedtext.text
-msgid "Keep Together"
-msgstr ""
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.1.stringlist.text
-msgid "No"
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.0.StringList.item
+#, fuzzy
+msgid  "No"
 msgstr "Kala"
 
-#: GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.2.stringlist.text
-msgid "Whole Group"
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.1.StringList.item
+msgid  "Whole Group"
 msgstr ""
 
-#: GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.3.stringlist.text
-msgid "With First Detail"
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.2.StringList.item
+msgid  "With First Detail"
 msgstr ""
 
-#: GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR1.fixedline.text
-msgctxt "GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR1.fixedline.text"
-msgid "Help"
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR1.FixedLine.Text
+#, fuzzy
+msgid  "Help"
 msgstr "Faaba"
 
-#: GroupsSorting.src#RID_GROUPS_SORTING.floatingwindow.text
-msgid "Sorting and Grouping"
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_EXPRESSION.String.Text
+msgid  "Field/Expression"
 msgstr ""
 
-#: GroupsSorting.src#STR_RPT_EXPRESSION.string.text
-msgid "Field/Expression"
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_SORTING.String.Text
+msgid  "Sort Order"
 msgstr ""
 
-#: GroupsSorting.src#STR_RPT_SORTING.string.text
-msgid "Sort Order"
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_PREFIXCHARS.String.Text
+msgid  "Prefix Characters"
 msgstr ""
 
-#: GroupsSorting.src#STR_RPT_PREFIXCHARS.string.text
-msgid "Prefix Characters"
-msgstr ""
-
-#: GroupsSorting.src#STR_RPT_YEAR.string.text
-msgid "Year"
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_YEAR.String.Text
+#, fuzzy
+msgid  "Year"
 msgstr " Jiiri"
 
-#: GroupsSorting.src#STR_RPT_QUARTER.string.text
-msgid "Quarter"
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_QUARTER.String.Text
+msgid  "Quarter"
 msgstr ""
 
-#: GroupsSorting.src#STR_RPT_MONTH.string.text
-msgid "Month"
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_MONTH.String.Text
+#, fuzzy
+msgid  "Month"
 msgstr " Handu"
 
-#: GroupsSorting.src#STR_RPT_WEEK.string.text
-msgid "Week"
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_WEEK.String.Text
+#, fuzzy
+msgid  "Week"
 msgstr " Hebu"
 
-#: GroupsSorting.src#STR_RPT_DAY.string.text
-msgid "Day"
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_DAY.String.Text
+msgid  "Day"
 msgstr ""
 
-#: GroupsSorting.src#STR_RPT_HOUR.string.text
-msgid "Hour"
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HOUR.String.Text
+msgid  "Hour"
 msgstr ""
 
-#: GroupsSorting.src#STR_RPT_MINUTE.string.text
-msgid "Minute"
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_MINUTE.String.Text
+msgid  "Minute"
 msgstr ""
 
-#: GroupsSorting.src#STR_RPT_INTERVAL.string.text
-msgid "Interval"
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_INTERVAL.String.Text
+msgid  "Interval"
 msgstr ""
 
-#: GroupsSorting.src#STR_RPT_HELP_FIELD.string.text
-msgid "Select a field or type an expression to sort or group on."
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_FIELD.String.Text
+msgid  "Select a field or type an expression to sort or group on."
 msgstr ""
 
-#: GroupsSorting.src#STR_RPT_HELP_HEADER.string.text
-msgid "Display a header for this group?"
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_HEADER.String.Text
+msgid  "Display a header for this group?"
 msgstr ""
 
-#: GroupsSorting.src#STR_RPT_HELP_FOOTER.string.text
-msgid "Display a footer for this group?"
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_FOOTER.String.Text
+msgid  "Display a footer for this group?"
 msgstr ""
 
-#: GroupsSorting.src#STR_RPT_HELP_GROUPON.string.text
-msgid "Select the value or range of values that starts a new group."
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_GROUPON.String.Text
+msgid  "Select the value or range of values that starts a new group."
 msgstr ""
 
-#: GroupsSorting.src#STR_RPT_HELP_INTERVAL.string.text
-msgid "Interval or number of characters to group on."
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_INTERVAL.String.Text
+msgid  "Interval or number of characters to group on."
 msgstr ""
 
-#: GroupsSorting.src#STR_RPT_HELP_KEEP.string.text
-msgid "Keep group together on one page?"
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_KEEP.String.Text
+msgid  "Keep group together on one page?"
 msgstr ""
 
-#: GroupsSorting.src#STR_RPT_HELP_SORT.string.text
-msgid ""
-"Select ascending or descending sort order. Ascending means from A to Z or 0 "
-"to 9"
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_SORT.String.Text
+msgid  "Select ascending or descending sort order. Ascending means from A to Z or 0 to 9"
 msgstr ""
 
-#: Navigator.src#RID_NAVIGATOR.floatingwindow.text
-msgid "Report navigator"
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
+msgid  "Present"
 msgstr ""
 
-#: Navigator.src#RID_STR_FUNCTIONS.string.text
-msgid "Functions"
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
+msgid  "Present"
 msgstr ""
 
-#: Navigator.src#RID_STR_GROUPS.string.text
-msgctxt "Navigator.src#RID_STR_GROUPS.string.text"
-msgid "Groups"
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.ModalDialog.Text
+msgid  "Page Numbers"
 msgstr ""
 
-#: Navigator.src#RID_MENU_NAVIGATOR.SID_SORTINGANDGROUPING.menuitem.text
-msgid "Sorting and Grouping..."
-msgstr ""
-
-#: Navigator.src#RID_MENU_NAVIGATOR.SID_PAGEHEADERFOOTER.menuitem.text
-msgid "Page Header/Footer..."
-msgstr ""
-
-#: Navigator.src#RID_MENU_NAVIGATOR.SID_REPORTHEADERFOOTER.menuitem.text
-msgid "Report Header/Footer..."
-msgstr ""
-
-#: Navigator.src#RID_MENU_NAVIGATOR.SID_RPT_NEW_FUNCTION.menuitem.text
-msgid "New Function"
-msgstr ""
-
-#: Navigator.src#RID_MENU_NAVIGATOR.SID_SHOW_PROPERTYBROWSER.menuitem.text
-msgid "Properties..."
-msgstr " Moobandawey"
-
-#: PageNumber.src#RID_PAGENUMBERS.FL_FORMAT.fixedline.text
-msgctxt "PageNumber.src#RID_PAGENUMBERS.FL_FORMAT.fixedline.text"
-msgid "Format"
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_FORMAT.FixedLine.Text
+#, fuzzy
+msgid  "Format"
 msgstr "Kaddasu fasalyan"
 
-#: PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N.radiobutton.text
-msgid "Page N"
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N.RadioButton.Text
+msgid  "Page N"
 msgstr ""
 
-#: PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N_OF_M.radiobutton.text
-msgid "Page N of M"
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N_OF_M.RadioButton.Text
+msgid  "Page N of M"
 msgstr ""
 
-#: PageNumber.src#RID_PAGENUMBERS.FL_POSITION.fixedline.text
-msgctxt "PageNumber.src#RID_PAGENUMBERS.FL_POSITION.fixedline.text"
-msgid "Position"
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_POSITION.FixedLine.Text
+#, fuzzy
+msgid  "Position"
 msgstr " Kayandi doo"
 
-#: PageNumber.src#RID_PAGENUMBERS.RB_PAGE_TOPPAGE.radiobutton.text
-msgid "Top of Page (Header)"
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_TOPPAGE.RadioButton.Text
+msgid  "Top of Page (Header)"
 msgstr ""
 
-#: PageNumber.src#RID_PAGENUMBERS.RB_PAGE_BOTTOMPAGE.radiobutton.text
-msgid "Bottom of Page (Footer)"
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_BOTTOMPAGE.RadioButton.Text
+msgid  "Bottom of Page (Footer)"
 msgstr ""
 
-#: PageNumber.src#RID_PAGENUMBERS.FL_MISC.fixedline.text
-msgid "General"
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_MISC.FixedLine.Text
+#, fuzzy
+msgid  "General"
 msgstr " Dumi kul"
 
-#: PageNumber.src#RID_PAGENUMBERS.FL_ALIGNMENT.fixedtext.text
-msgid "Alignment:"
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_ALIGNMENT.FixedText.Text
+msgid  "Alignment:"
 msgstr ""
 
-#: PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.1.stringlist.text
-msgid "Left"
-msgstr " Wowa"
-
-#: PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.2.stringlist.text
-msgid "Center"
-msgstr " Game"
-
-#: PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.3.stringlist.text
-msgid "Right"
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+#, fuzzy
+msgid  "Right"
 msgstr " Guma"
 
-#: PageNumber.src#RID_PAGENUMBERS.CB_SHOWNUMBERONFIRSTPAGE.checkbox.text
-msgid "Show Number on First Page"
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.CB_SHOWNUMBERONFIRSTPAGE.CheckBox.Text
+msgid  "Show Number on First Page"
 msgstr ""
 
-#: PageNumber.src#RID_PAGENUMBERS.PB_HELP.helpbutton.text
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.PB_HELP.HelpButton.Text
 #, fuzzy
-msgctxt "PageNumber.src#RID_PAGENUMBERS.PB_HELP.helpbutton.text"
-msgid "~Help"
+msgid  "~Help"
 msgstr "Faaba"
 
-#: PageNumber.src#RID_PAGENUMBERS.modaldialog.text
-msgid "Page Numbers"
+#: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE.String.Text
+msgid  ""Page " & #PAGENUMBER#"
 msgstr ""
 
-#: PageNumber.src#STR_RPT_PN_PAGE.string.text
-msgid "\"Page \" & #PAGENUMBER#"
+#: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE_OF.String.Text
+msgid  " & " of " & #PAGECOUNT#"
 msgstr ""
 
-#: PageNumber.src#STR_RPT_PN_PAGE_OF.string.text
-msgid " & \" of \" & #PAGECOUNT#"
-msgstr ""
-
-#: report.src#RID_STR_BRWTITLE_PROPERTIES.string.text
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
 #, fuzzy
-msgid "Properties: "
-msgstr " Moobandawey"
+msgid  "Left"
+msgstr " Wowa"
 
-#: report.src#RID_STR_BRWTITLE_NO_PROPERTIES.string.text
-msgid "No Control marked"
-msgstr ""
-
-#: report.src#RID_STR_BRWTITLE_MULTISELECT.string.text
-msgid "Multiselection"
-msgstr ""
-
-#: report.src#RID_STR_PROPTITLE_IMAGECONTROL.string.text
-msgid "Image Control"
-msgstr ""
-
-#: report.src#RID_STR_PROPTITLE_FIXEDTEXT.string.text
-msgid "Label field"
-msgstr ""
-
-#: report.src#RID_STR_PROPTITLE_FIXEDLINE.string.text
-msgid "Line"
-msgstr ""
-
-#: report.src#RID_STR_PROPTITLE_FORMATTED.string.text
-msgid "Formatted Field"
-msgstr ""
-
-#: report.src#RID_STR_PROPTITLE_SHAPE.string.text
-msgid "Shape"
-msgstr ""
-
-#: report.src#RID_STR_PROPTITLE_REPORT.string.text
-msgid "Report"
-msgstr ""
-
-#: report.src#RID_STR_PROPTITLE_SECTION.string.text
-msgctxt "report.src#RID_STR_PROPTITLE_SECTION.string.text"
-msgid "Section"
-msgstr ""
-
-#: report.src#RID_STR_PROPTITLE_FUNCTION.string.text
-msgctxt "report.src#RID_STR_PROPTITLE_FUNCTION.string.text"
-msgid "Function"
-msgstr ""
-
-#: report.src#RID_STR_PROPTITLE_GROUP.string.text
-msgid "Group"
-msgstr " Kuray"
-
-#: report.src#STR_SHOW_RULER.string.text
-msgid "Show ruler"
-msgstr ""
-
-#: report.src#STR_SHOW_GRID.string.text
-msgid "Show grid"
-msgstr ""
-
-#: report.src#RID_STR_UNDO_CHANGEPOSITION.string.text
-msgid "Change Object"
-msgstr ""
-
-#: report.src#RID_STR_UNDO_MOVE_GROUP.string.text
-msgid "Move Group(s)"
-msgstr ""
-
-#: report.src#RID_STR_UNDO_CONDITIONAL_FORMATTING.string.text
-msgid "Conditional Formatting"
-msgstr ""
-
-#: report.src#RID_STR_UNDO_REMOVE_REPORTHEADERFOOTER.string.text
-msgid "Remove report header / report footer"
-msgstr ""
-
-#: report.src#RID_STR_UNDO_ADD_REPORTHEADERFOOTER.string.text
-msgid "Add report header / report footer"
-msgstr ""
-
-#: report.src#RID_STR_UNDO_REMOVE_PAGEHEADERFOOTER.string.text
-msgid "Remove page header / page footer"
-msgstr ""
-
-#: report.src#RID_STR_UNDO_ADD_PAGEHEADERFOOTER.string.text
-msgid "Add page header / page footer"
-msgstr ""
-
-#: report.src#RID_STR_UNDO_PROPERTY.string.text
-msgid "Change property '#'"
-msgstr ""
-
-#: report.src#RID_STR_UNDO_ADD_GROUP_HEADER.string.text
-msgid "Add group header "
-msgstr ""
-
-#: report.src#RID_STR_UNDO_REMOVE_GROUP_HEADER.string.text
-msgid "Remove group header "
-msgstr ""
-
-#: report.src#RID_STR_UNDO_ADD_GROUP_FOOTER.string.text
-msgid "Add group footer "
-msgstr ""
-
-#: report.src#RID_STR_UNDO_REMOVE_GROUP_FOOTER.string.text
-msgid "Remove group footer "
-msgstr ""
-
-#: report.src#RID_STR_UNDO_ADDFUNCTION.string.text
-msgid "Add function"
-msgstr ""
-
-#: report.src#RID_STR_UNDO_DELETEFUNCTION.string.text
-msgid "Delete function"
-msgstr ""
-
-#: report.src#RID_STR_DESIGN_VIEW.string.text
-msgid "Design"
-msgstr ""
-
-#: report.src#RID_STR_PREVIEW_VIEW.string.text
-msgid "Preview"
-msgstr " Alhaaloo guna"
-
-#: report.src#STR_RPT_TITLE.string.text
-msgid "Report #"
-msgstr ""
-
-#: report.src#STR_RPT_LABEL.string.text
-msgid "~Report name"
-msgstr ""
-
-#: report.src#RID_STR_UNDO_REMOVE_GROUP.string.text
-msgctxt "report.src#RID_STR_UNDO_REMOVE_GROUP.string.text"
-msgid "Delete Group"
-msgstr ""
-
-#: report.src#RID_STR_UNDO_APPEND_GROUP.string.text
-msgid "Add Group"
-msgstr ""
-
-#: report.src#RID_STR_UNDO_REMOVE_SELECTION.string.text
-msgid "Delete Selection"
-msgstr ""
-
-#: report.src#RID_STR_UNDO_REMOVE_FUNCTION.string.text
-msgid "Delete Function"
-msgstr ""
-
-#: report.src#RID_STR_UNDO_CHANGE_SIZE.string.text
-msgid "Change Size"
-msgstr ""
-
-#: report.src#RID_STR_UNDO_PASTE.string.text
-msgid "Paste"
-msgstr "Bobu"
-
-#: report.src#RID_STR_UNDO_INSERT_CONTROL.string.text
-msgid "Insert Control"
-msgstr ""
-
-#: report.src#RID_STR_UNDO_DELETE_CONTROL.string.text
-msgid "Delete Control"
-msgstr ""
-
-#: report.src#RID_STR_UNDO_GROUP.string.text
-msgid "Insert Group"
-msgstr ""
-
-#: report.src#RID_STR_UNDO_UNGROUP.string.text
-msgctxt "report.src#RID_STR_UNDO_UNGROUP.string.text"
-msgid "Delete Group"
-msgstr ""
-
-#: report.src#RID_STR_GROUPHEADER.string.text
-msgid "GroupHeader"
-msgstr ""
-
-#: report.src#RID_STR_GROUPFOOTER.string.text
-msgid "GroupFooter"
-msgstr ""
-
-#: report.src#RID_MENU_REPORT.SID_SORTINGANDGROUPING.menuitem.text
-msgid "Sorting and Grouping..."
-msgstr ""
-
-#: report.src#RID_MENU_REPORT.SID_ATTR_CHAR_COLOR_BACKGROUND.menuitem.text
-msgid "Background Color..."
-msgstr ""
-
-#: report.src#RID_MENU_REPORT.SID_RULER.menuitem.text
-msgid "Ruler..."
-msgstr ""
-
-#: report.src#RID_MENU_REPORT.SID_GRID_VISIBLE.menuitem.text
-msgid "Grid..."
-msgstr ""
-
-#: report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_UP.menuitem.text
-msgid "Bring ~Forward"
-msgstr ""
-
-#: report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_DOWN.menuitem.text
-msgid "Send Back~ward"
-msgstr ""
-
-#: report.src#RID_MENU_REPORT.SID_ARRANGEMENU.menuitem.text
-msgid "~Arrange"
-msgstr ""
-
-#: report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTWIDTH.menuitem.text
-msgid "~Fit to smallest width"
-msgstr ""
-
-#: report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTWIDTH.menuitem.text
-msgid "~Fit to greatest width"
-msgstr ""
-
-#: report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTHEIGHT.menuitem.text
-msgid "~Fit to smallest height"
-msgstr ""
-
-#: report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTHEIGHT.menuitem.text
-msgid "~Fit to greatest height"
-msgstr ""
-
-#: report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.menuitem.text
-msgid "~Object Resizing"
-msgstr ""
-
-#: report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK.menuitem.text
-msgid "Shrink"
-msgstr ""
-
-#: report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_TOP.menuitem.text
-msgid "Shrink from top"
-msgstr ""
-
-#: report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_BOTTOM.menuitem.text
-msgid "Shrink from bottom"
-msgstr ""
-
-#: report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.menuitem.text
-msgctxt "report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.menuitem.text"
-msgid "Section"
-msgstr ""
-
-#: report.src#RID_MENU_REPORT.SID_DISTRIBUTION.menuitem.text
-msgid "Distribution..."
-msgstr ""
-
-#: report.src#RID_MENU_REPORT.SID_SHOW_PROPERTYBROWSER.menuitem.text
-msgid "Properties..."
-msgstr " Moobandawey"
-
-#: report.src#RID_STR_FIELDSELECTION.string.text
-msgid "Add field:"
-msgstr ""
-
-#: report.src#RID_STR_FILTER.string.text
-msgid "Filter"
-msgstr ""
-
-#: report.src#RID_APP_TITLE.string.text
-msgid " - %PRODUCTNAME Base Report"
-msgstr ""
-
-#: report.src#RID_APP_NEW_DOC.string.text
-msgid "Untitled"
-msgstr ""
-
-#: report.src#RID_STR_UNDO_ALIGNMENT.string.text
-msgid "Change Alignment"
-msgstr ""
-
-#: report.src#RID_STR_HEADER.string.text
-msgid "# Header"
-msgstr ""
-
-#: report.src#RID_STR_FOOTER.string.text
-msgid "# Footer"
-msgstr ""
-
-#: report.src#RID_STR_IMPORT_GRAPHIC.string.text
-msgid "Insert graphics"
-msgstr ""
-
-#: report.src#RID_STR_DELETE.string.text
-msgid "Delete"
-msgstr "Tuusu"
-
-#: report.src#RID_STR_FUNCTION.string.text
-msgctxt "report.src#RID_STR_FUNCTION.string.text"
-msgid "Function"
-msgstr ""
-
-#: report.src#RID_STR_COULD_NOT_CREATE_REPORT.string.text
-msgid "An error occurred while creating the report."
-msgstr ""
-
-#: report.src#RID_STR_CAUGHT_FOREIGN_EXCEPTION.string.text
-msgid "An exception of type $type$ was caught."
-msgstr ""
-
-#: report.src#RID_STR_UNDO_CHANGEFONT.string.text
-msgid "Change font"
-msgstr ""
-
-#: report.src#RID_STR_UNDO_CHANGEPAGE.string.text
-msgid "Change page attributes"
-msgstr ""
-
-#: report.src#RID_STR_PAGEHEADERFOOTER_INSERT.string.text
-msgid "Insert Page Header/Footer"
-msgstr ""
-
-#: report.src#RID_STR_PAGEHEADERFOOTER_DELETE.string.text
-msgid "Delete Page Header/Footer"
-msgstr ""
-
-#: report.src#RID_STR_COLUMNHEADERFOOTER_INSERT.string.text
-msgid "Insert Column Header/Footer"
-msgstr ""
-
-#: report.src#RID_STR_COLUMNHEADERFOOTER_DELETE.string.text
-msgid "Delete Column Header/Footer"
-msgstr ""
-
-#: report.src#RID_STR_REPORTHEADERFOOTER_INSERT.string.text
-msgid "Insert Report Header/Footer"
-msgstr ""
-
-#: report.src#RID_STR_REPORTHEADERFOOTER_DELETE.string.text
-msgid "Delete Report Header/Footer"
-msgstr ""
-
-#: report.src#RID_ERR_NO_COMMAND.string.text
-msgid "The report can not be executed unless it is bound to content."
-msgstr ""
-
-#: report.src#RID_ERR_NO_OBJECTS.string.text
-msgid ""
-"The report can not be executed unless at least one object has been inserted."
-msgstr ""
-
-#: report.src#RID_STR_UNDO_SHRINK.string.text
-msgid "Shrink Section"
-msgstr ""
-
-#: report.src#RID_STR_DETAIL.string.text
-msgid "Detail"
-msgstr ""
-
-#: report.src#RID_STR_PAGE_HEADER.string.text
-msgid "Page Header"
-msgstr ""
-
-#: report.src#RID_STR_PAGE_FOOTER.string.text
-msgid "Page Footer"
-msgstr ""
-
-#: report.src#RID_STR_REPORT_HEADER.string.text
-msgid "Report Header"
-msgstr ""
-
-#: report.src#RID_STR_REPORT_FOOTER.string.text
-msgid "Report Footer"
-msgstr ""
-
-#: report.src#RID_STR_INSERT.string.text
-msgid "Insert"
-msgstr " Daŋ"
-
-#: inspection.src#RID_STR_PROPPAGE_DEFAULT.string.text
-msgid "General"
-msgstr " Dumi kul"
-
-#: inspection.src#RID_STR_PROPPAGE_DATA.string.text
-msgid "Data"
-msgstr "Tiira alhabar / Bayhayey"
-
-#: inspection.src#RID_STR_BOOL.1.string.text
-msgctxt "inspection.src#RID_STR_BOOL.1.string.text"
-msgid "No"
-msgstr "Kala"
-
-#: inspection.src#RID_STR_BOOL.2.string.text
-msgid "Yes"
-msgstr " Ayyo"
-
-#: inspection.src#RID_STR_FORCENEWPAGE.string.text
-msgid "Force New Page"
-msgstr ""
-
-#: inspection.src#RID_STR_FORCENEWPAGE_CONST.1.string.text
-msgctxt "inspection.src#RID_STR_FORCENEWPAGE_CONST.1.string.text"
-msgid "None"
-msgstr "Baa affoo"
-
-#: inspection.src#RID_STR_FORCENEWPAGE_CONST.2.string.text
-msgid "Before Section"
-msgstr ""
-
-#: inspection.src#RID_STR_FORCENEWPAGE_CONST.3.string.text
-msgid "After Section"
-msgstr ""
-
-#: inspection.src#RID_STR_FORCENEWPAGE_CONST.4.string.text
-msgid "Before & After Section"
-msgstr ""
-
-#: inspection.src#RID_STR_NEWROWORCOL.string.text
-msgid "New Row Or Column"
-msgstr ""
-
-#: inspection.src#RID_STR_KEEPTOGETHER.string.text
-msgid "Keep Together"
-msgstr ""
-
-#: inspection.src#RID_STR_KEEPTOGETHER_CONST.1.string.text
-msgctxt "inspection.src#RID_STR_KEEPTOGETHER_CONST.1.string.text"
-msgid "No"
-msgstr "Kala"
-
-#: inspection.src#RID_STR_KEEPTOGETHER_CONST.2.string.text
-msgid "Whole Group"
-msgstr ""
-
-#: inspection.src#RID_STR_KEEPTOGETHER_CONST.3.string.text
-msgid "With First Detail"
-msgstr ""
-
-#: inspection.src#RID_STR_CANGROW.string.text
-msgid "Can Grow"
-msgstr ""
-
-#: inspection.src#RID_STR_CANSHRINK.string.text
-msgid "Can Shrink"
-msgstr ""
-
-#: inspection.src#RID_STR_REPEATSECTION.string.text
-msgid "Repeat Section"
-msgstr ""
-
-#: inspection.src#RID_STR_PRINTREPEATEDVALUES.string.text
-msgid "Print repeated values"
-msgstr ""
-
-#: inspection.src#RID_STR_CONDITIONALPRINTEXPRESSION.string.text
-msgid "Conditional Print Expression"
-msgstr ""
-
-#: inspection.src#RID_STR_STARTNEWCOLUMN.string.text
-msgid "Start new column"
-msgstr ""
-
-#: inspection.src#RID_STR_STARTNEWPAGE.string.text
-msgid "Start new page"
-msgstr ""
-
-#: inspection.src#RID_STR_RESETPAGENUMBER.string.text
-msgid "Reset page number"
-msgstr ""
-
-#: inspection.src#RID_STR_CHARTTYPE.string.text
-msgid "Chart type"
-msgstr ""
-
-#: inspection.src#RID_STR_PRINTWHENGROUPCHANGE.string.text
-msgid "Print When Group Change"
-msgstr ""
-
-#: inspection.src#RID_STR_VISIBLE.string.text
-msgid "Visible"
-msgstr ""
-
-#: inspection.src#RID_STR_GROUPKEEPTOGETHER.string.text
-msgid "Group keep together"
-msgstr ""
-
-#: inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.1.string.text
-msgid "Per Page"
-msgstr ""
-
-#: inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.2.string.text
-msgid "Per Column"
-msgstr ""
-
-#: inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.1.string.text
-msgctxt "inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.1.string.text"
-msgid "None"
-msgstr "Baa affoo"
-
-#: inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.2.string.text
-msgid "Section"
-msgstr ""
-
-#: inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.3.string.text
-msgid "Automatic"
-msgstr "Boŋdirandi"
-
-#: inspection.src#RID_STR_PAGEHEADEROPTION.string.text
-msgid "Page header"
-msgstr ""
-
-#: inspection.src#RID_STR_PAGEFOOTEROPTION.string.text
-msgid "Page footer"
-msgstr ""
-
-#: inspection.src#RID_STR_REPORTPRINTOPTION_CONST.1.string.text
-msgid "All Pages"
-msgstr ""
-
-#: inspection.src#RID_STR_REPORTPRINTOPTION_CONST.2.string.text
-msgid "Not With Report Header"
-msgstr ""
-
-#: inspection.src#RID_STR_REPORTPRINTOPTION_CONST.3.string.text
-msgid "Not With Report Footer"
-msgstr ""
-
-#: inspection.src#RID_STR_REPORTPRINTOPTION_CONST.4.string.text
-msgid "Not With Report Header/Footer"
-msgstr ""
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+#, fuzzy
+msgid  "Center"
+msgstr " Game"
 
-#: inspection.src#RID_STR_DEEPTRAVERSING.string.text
-msgid "Deep traversing"
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.TabDialog.Text
+msgid  "Page Setup"
 msgstr ""
 
-#: inspection.src#RID_STR_PREEVALUATED.string.text
-msgid "Pre evaluation"
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_PAGE.PageItem.Text
+msgid  "Page"
 msgstr ""
 
-#: inspection.src#RID_STR_POSITIONX.string.text
-msgid "Position X"
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_BACKGROUND.PageItem.Text
+msgid  "Background"
 msgstr ""
 
-#: inspection.src#RID_STR_POSITIONY.string.text
-msgid "Position Y"
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.PushButton.Text
+msgid  "Return"
 msgstr ""
 
-#: inspection.src#RID_STR_WIDTH.string.text
-msgid "Width"
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.String.Text
+msgid  "Page"
 msgstr ""
 
-#: inspection.src#RID_STR_HEIGHT.string.text
-msgid "Height"
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.2.String.Text
+msgid  "Background"
 msgstr ""
 
-#: inspection.src#RID_STR_INITIALFORMULA.string.text
-msgid "Initial value"
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.TabDialog.Text
+msgid  "Section Setup"
 msgstr ""
 
-#: inspection.src#RID_STR_PRESERVEIRI.string.text
-msgid "Preserve as Link"
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.PushButton.Text
+msgid  "Return"
 msgstr ""
 
-#: inspection.src#RID_STR_FORMULA.string.text
-msgid "Formula"
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.String.Text
+msgid  "Background"
 msgstr ""
 
-#: inspection.src#RID_STR_DATAFIELD.string.text
-msgid "Data field"
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.TabDialog.Text
+msgid  "Character Settings"
 msgstr ""
 
-#: inspection.src#RID_STR_FONT.string.text
-msgid "Font"
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_CHAR.PageItem.Text
+#, fuzzy
+msgid  "Font"
 msgstr " Sigirawey"
 
-#: inspection.src#RID_STR_BACKCOLOR.string.text
-msgid "Background color"
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_EFFECTS.PageItem.Text
+msgid  "Font Effects"
+msgstr ""
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_POSITION.PageItem.Text
+#, fuzzy
+msgid  "Position"
+msgstr " Kayandi doo"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_TWOLN.PageItem.Text
+msgid  "Asian Layout"
+msgstr ""
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_BACKGROUND.PageItem.Text
+msgid  "Background"
+msgstr ""
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_ALIGNMENT.PageItem.Text
+msgid  "Alignment"
+msgstr ""
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.PushButton.Text
+msgid  "Return"
+msgstr ""
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.String.Text
+#, fuzzy
+msgid  "Character"
+msgstr "Harfu"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.TabDialog.Text
+msgid  "Line"
+msgstr ""
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE.PageItem.Text
+msgid  "Line"
+msgstr ""
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE_DEF.PageItem.Text
+msgid  "Line Styles"
+msgstr ""
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINEEND_DEF.PageItem.Text
+msgid  "Arrow Styles"
+msgstr ""
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.PushButton.Text
+msgid  "Return"
+msgstr ""
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.String.Text
+msgid  "Line"
+msgstr ""
+
+#: source/ui/dlg/Navigator.src#RID_NAVIGATOR.FloatingWindow.Text
+msgid  "Report navigator"
+msgstr ""
+
+#: source/ui/dlg/Navigator.src#RID_STR_FUNCTIONS.String.Text
+msgid  "Functions"
+msgstr ""
+
+#: source/ui/dlg/Navigator.src#RID_STR_GROUPS.String.Text
+msgid  "Groups"
+msgstr ""
+
+#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SORTINGANDGROUPING.MenuItem.Text
+msgid  "Sorting and Grouping..."
+msgstr ""
+
+#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_PAGEHEADERFOOTER.MenuItem.Text
+msgid  "Page Header/Footer..."
+msgstr ""
+
+#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_REPORTHEADERFOOTER.MenuItem.Text
+msgid  "Report Header/Footer..."
+msgstr ""
+
+#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_RPT_NEW_FUNCTION.MenuItem.Text
+msgid  "New Function"
+msgstr ""
+
+#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SHOW_PROPERTYBROWSER.MenuItem.Text
+#, fuzzy
+msgid  "Properties..."
+msgstr " Moobandawey"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
+msgid  "Expression Is"
+msgstr ""
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.0.StringList.item
+msgid  "between"
+msgstr ""
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.1.StringList.item
+msgid  "not between"
+msgstr ""
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.2.StringList.item
+msgid  "equal to"
+msgstr ""
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.3.StringList.item
+msgid  "not equal to"
+msgstr ""
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.4.StringList.item
+msgid  "greater than"
+msgstr ""
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.5.StringList.item
+msgid  "less than"
+msgstr ""
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.6.StringList.item
+msgid  "greater than or equal to"
+msgstr ""
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.7.StringList.item
+msgid  "less than or equal to"
+msgstr ""
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.FT_AND.FixedText.Text
+msgid  "and"
+msgstr ""
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.CRTL_FORMAT_PREVIEW.Window.Text
+msgid  "Example"
+msgstr ""
+
+#: source/ui/dlg/CondFormat.src#RID_CONDFORMAT.ModalDialog.Text
+msgid  "Conditional Formatting"
+msgstr ""
+
+#: source/ui/dlg/CondFormat.src#RID_CONDFORMAT.PB_HELP.HelpButton.Text
+#, fuzzy
+msgid  "~Help"
+msgstr "Faaba"
+
+#: source/ui/dlg/CondFormat.src#STR_NUMBERED_CONDITION.String.Text
+msgid  "Condition $number$"
+msgstr ""
+
+#: source/ui/dlg/CondFormat.src#STR_COLOR_WHITE.String.Text
+msgid  "White"
+msgstr ""
+
+#: source/ui/dlg/CondFormat.src#STR_CHARCOLOR.String.Text
+msgid  "Font color"
+msgstr ""
+
+#: source/ui/dlg/CondFormat.src#STR_CHARBACKGROUND.String.Text
+msgid  "Background"
+msgstr ""
+
+#: source/ui/dlg/CondFormat.src#STR_TRANSPARENT.String.Text
+msgid  "No Fill"
+msgstr ""
+
+#: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTUP.ToolBoxItem.Text
+msgid  "Sort Ascending"
+msgstr ""
+
+#: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTDOWN.ToolBoxItem.Text
+msgid  "Sort Descending"
+msgstr ""
+
+#: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_REMOVE_FILTER_SORT.ToolBoxItem.Text
+msgid  "Remove sorting"
+msgstr ""
+
+#: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_ADD_CONTROL_PAIR.ToolBoxItem.Text
+#, fuzzy
+msgid  "Insert"
+msgstr " Daŋ"
+
+#: source/ui/dlg/CondFormat.src#ADDFIELD_FL_HELP_SEPARATOR.FixedLine.Text
+#, fuzzy
+msgid  "Help"
+msgstr "Faaba"
+
+#: source/ui/dlg/CondFormat.src#ADDFIELD_HELP_FIELD.FixedText.Text
+msgid  "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
+msgstr ""
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
+msgid  "Field Value Is"
+msgstr ""
+
+#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.ModalDialog.Text
+msgid  "Date and Time"
+msgstr ""
+
+#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_DATE.CheckBox.Text
+msgid  "Include Date"
+msgstr ""
+
+#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_DATE_FORMAT.FixedText.Text
+#, fuzzy
+msgid  "Format"
+msgstr "Kaddasu fasalyan"
+
+#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_TIME.CheckBox.Text
+msgid  "Include Time"
+msgstr ""
+
+#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_TIME_FORMAT.FixedText.Text
+#, fuzzy
+msgid  "Format"
+msgstr "Kaddasu fasalyan"
+
+#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.PB_HELP.HelpButton.Text
+#, fuzzy
+msgid  "~Help"
+msgstr "Faaba"
+
+#: source/ui/inspection/inspection.src#RID_STR_PROPPAGE_DEFAULT.String.Text
+#, fuzzy
+msgid  "General"
+msgstr " Dumi kul"
+
+#: source/ui/inspection/inspection.src#RID_STR_PROPPAGE_DATA.String.Text
+#, fuzzy
+msgid  "Data"
+msgstr "Tiira alhabar / Bayhayey"
+
+#: source/ui/inspection/inspection.src#RID_STR_BOOL.1.String.Text
+#, fuzzy
+msgid  "No"
+msgstr "Kala"
+
+#: source/ui/inspection/inspection.src#RID_STR_BOOL.2.String.Text
+#, fuzzy
+msgid  "Yes"
+msgstr " Ayyo"
+
+#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE.String.Text
+msgid  "Force New Page"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.1.String.Text
+#, fuzzy
+msgid  "None"
+msgstr "Baa affoo"
+
+#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.2.String.Text
+msgid  "Before Section"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.3.String.Text
+msgid  "After Section"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.4.String.Text
+msgid  "Before & After Section"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_NEWROWORCOL.String.Text
+msgid  "New Row Or Column"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER.String.Text
+msgid  "Keep Together"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.1.String.Text
+#, fuzzy
+msgid  "No"
+msgstr "Kala"
+
+#: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.2.String.Text
+msgid  "Whole Group"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.3.String.Text
+msgid  "With First Detail"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_CANGROW.String.Text
+msgid  "Can Grow"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_CANSHRINK.String.Text
+msgid  "Can Shrink"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_REPEATSECTION.String.Text
+msgid  "Repeat Section"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_PRINTREPEATEDVALUES.String.Text
+msgid  "Print repeated values"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_CONDITIONALPRINTEXPRESSION.String.Text
+msgid  "Conditional Print Expression"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_STARTNEWCOLUMN.String.Text
+msgid  "Start new column"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_STARTNEWPAGE.String.Text
+msgid  "Start new page"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_RESETPAGENUMBER.String.Text
+msgid  "Reset page number"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_CHARTTYPE.String.Text
+msgid  "Chart type"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_PRINTWHENGROUPCHANGE.String.Text
+msgid  "Print When Group Change"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_VISIBLE.String.Text
+msgid  "Visible"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER.String.Text
+msgid  "Group keep together"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.1.String.Text
+msgid  "Per Page"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.2.String.Text
+msgid  "Per Column"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.1.String.Text
+#, fuzzy
+msgid  "None"
+msgstr "Baa affoo"
+
+#: source/ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.2.String.Text
+msgid  "Section"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.3.String.Text
+#, fuzzy
+msgid  "Automatic"
+msgstr "Boŋdirandi"
+
+#: source/ui/inspection/inspection.src#RID_STR_PAGEHEADEROPTION.String.Text
+msgid  "Page header"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_PAGEFOOTEROPTION.String.Text
+msgid  "Page footer"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.1.String.Text
+msgid  "All Pages"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.2.String.Text
+msgid  "Not With Report Header"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.3.String.Text
+msgid  "Not With Report Footer"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.4.String.Text
+msgid  "Not With Report Header/Footer"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_DEEPTRAVERSING.String.Text
+msgid  "Deep traversing"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_PREEVALUATED.String.Text
+msgid  "Pre evaluation"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_POSITIONX.String.Text
+msgid  "Position X"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_POSITIONY.String.Text
+msgid  "Position Y"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_WIDTH.String.Text
+msgid  "Width"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_HEIGHT.String.Text
+msgid  "Height"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_INITIALFORMULA.String.Text
+msgid  "Initial value"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_PRESERVEIRI.String.Text
+msgid  "Preserve as Link"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_FORMULA.String.Text
+msgid  "Formula"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_DATAFIELD.String.Text
+msgid  "Data field"
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_FONT.String.Text
+#, fuzzy
+msgid  "Font"
+msgstr " Sigirawey"
+
+#: source/ui/inspection/inspection.src#RID_STR_BACKCOLOR.String.Text
+#, fuzzy
+msgid  "Background color"
 msgstr " Bandafaaroo noonaa"
 
-#: inspection.src#RID_STR_BACKTRANSPARENT.string.text
-msgctxt "inspection.src#RID_STR_BACKTRANSPARENT.string.text"
-msgid "Background Transparent"
+#: source/ui/inspection/inspection.src#RID_STR_BACKTRANSPARENT.String.Text
+msgid  "Background Transparent"
 msgstr ""
 
-#: inspection.src#RID_STR_CONTROLBACKGROUNDTRANSPARENT.string.text
-msgctxt "inspection.src#RID_STR_CONTROLBACKGROUNDTRANSPARENT.string.text"
-msgid "Background Transparent"
+#: source/ui/inspection/inspection.src#RID_STR_CONTROLBACKGROUNDTRANSPARENT.String.Text
+msgid  "Background Transparent"
 msgstr ""
 
-#: inspection.src#RID_STR_OVERLAP_OTHER_CONTROL.string.text
-msgid "This operation is not allowed. The control overlaps with another one."
+#: source/ui/inspection/inspection.src#RID_STR_OVERLAP_OTHER_CONTROL.String.Text
+msgid  "This operation is not allowed. The control overlaps with another one."
 msgstr ""
 
-#: inspection.src#RID_STR_ILLEGAL_POSITION.string.text
-msgid "This position can not be set. It is invalid."
+#: source/ui/inspection/inspection.src#RID_STR_ILLEGAL_POSITION.String.Text
+msgid  "This position can not be set. It is invalid."
 msgstr ""
 
-#: inspection.src#RID_STR_SCOPE_GROUP.string.text
-msgid "Group: %1"
+#: source/ui/inspection/inspection.src#RID_STR_SCOPE_GROUP.String.Text
+msgid  "Group: %1"
 msgstr ""
 
-#: inspection.src#RID_STR_FORMULALIST.string.text
-msgctxt "inspection.src#RID_STR_FORMULALIST.string.text"
-msgid "Function"
+#: source/ui/inspection/inspection.src#RID_STR_FORMULALIST.String.Text
+msgid  "Function"
 msgstr ""
 
-#: inspection.src#RID_STR_SCOPE.string.text
-msgid "Scope"
+#: source/ui/inspection/inspection.src#RID_STR_SCOPE.String.Text
+msgid  "Scope"
 msgstr ""
 
-#: inspection.src#RID_STR_TYPE.string.text
-msgid "Data Field Type"
+#: source/ui/inspection/inspection.src#RID_STR_TYPE.String.Text
+msgid  "Data Field Type"
 msgstr ""
 
-#: inspection.src#RID_STR_TYPE_CONST.1.string.text
-msgid "Field or Formula"
+#: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.1.String.Text
+msgid  "Field or Formula"
 msgstr ""
 
-#: inspection.src#RID_STR_TYPE_CONST.2.string.text
-msgctxt "inspection.src#RID_STR_TYPE_CONST.2.string.text"
-msgid "Function"
+#: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.2.String.Text
+msgid  "Function"
 msgstr ""
 
-#: inspection.src#RID_STR_TYPE_CONST.3.string.text
-msgctxt "inspection.src#RID_STR_TYPE_CONST.3.string.text"
-msgid "Counter"
+#: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.3.String.Text
+msgid  "Counter"
 msgstr ""
 
-#: inspection.src#RID_STR_TYPE_CONST.4.string.text
-msgid "User defined Function"
+#: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.4.String.Text
+msgid  "User defined Function"
 msgstr ""
 
-#: inspection.src#RID_STR_MASTERFIELDS.string.text
-msgid "Link master fields"
+#: source/ui/inspection/inspection.src#RID_STR_MASTERFIELDS.String.Text
+msgid  "Link master fields"
 msgstr ""
 
-#: inspection.src#RID_STR_DETAILFIELDS.string.text
-msgid "Link slave fields"
+#: source/ui/inspection/inspection.src#RID_STR_DETAILFIELDS.String.Text
+msgid  "Link slave fields"
 msgstr ""
 
-#: inspection.src#RID_STR_EXPLANATION.string.text
-msgid ""
-"Charts can be used to display detailed data about the current record of the "
-"report. To do this, you can specify which columns in the chart match which "
-"columns in the report."
+#: source/ui/inspection/inspection.src#RID_STR_EXPLANATION.String.Text
+msgid  "Charts can be used to display detailed data about the current record of the report. To do this, you can specify which columns in the chart match which columns in the report."
 msgstr ""
 
-#: inspection.src#RID_STR_DETAILLABEL.string.text
-msgid "Chart"
+#: source/ui/inspection/inspection.src#RID_STR_DETAILLABEL.String.Text
+msgid  "Chart"
 msgstr ""
 
-#: inspection.src#RID_STR_MASTERLABEL.string.text
-msgid "Report"
+#: source/ui/inspection/inspection.src#RID_STR_MASTERLABEL.String.Text
+msgid  "Report"
 msgstr ""
 
-#: inspection.src#RID_STR_PREVIEW_COUNT.string.text
-msgid "Preview Row(s)"
+#: source/ui/inspection/inspection.src#RID_STR_PREVIEW_COUNT.String.Text
+msgid  "Preview Row(s)"
 msgstr ""
 
-#: inspection.src#RID_STR_AREA.string.text
-msgid "Area"
+#: source/ui/inspection/inspection.src#RID_STR_AREA.String.Text
+msgid  "Area"
 msgstr ""
 
-#: inspection.src#RID_STR_MIMETYPE.string.text
-msgid "Report Output Format"
+#: source/ui/inspection/inspection.src#RID_STR_MIMETYPE.String.Text
+msgid  "Report Output Format"
 msgstr ""
 
-#: inspection.src#RID_STR_VERTICALALIGN.string.text
-msgid "Vert. Alignment"
+#: source/ui/inspection/inspection.src#RID_STR_VERTICALALIGN.String.Text
+msgid  "Vert. Alignment"
 msgstr ""
 
-#: inspection.src#RID_STR_VERTICAL_ALIGN_CONST.1.string.text
-msgid "Top"
+#: source/ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.1.String.Text
+msgid  "Top"
 msgstr ""
 
-#: inspection.src#RID_STR_VERTICAL_ALIGN_CONST.2.string.text
-msgid "Middle"
+#: source/ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.2.String.Text
+msgid  "Middle"
 msgstr ""
 
-#: inspection.src#RID_STR_VERTICAL_ALIGN_CONST.3.string.text
-msgid "Bottom"
+#: source/ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.3.String.Text
+msgid  "Bottom"
 msgstr ""
 
-#: inspection.src#RID_STR_PARAADJUST.string.text
-msgid "Horz. Alignment"
+#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST.String.Text
+msgid  "Horz. Alignment"
 msgstr ""
 
-#: inspection.src#RID_STR_PARAADJUST_CONST.1.string.text
-msgid "Left"
+#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.1.String.Text
+msgid  "Left"
 msgstr ""
 
-#: inspection.src#RID_STR_PARAADJUST_CONST.2.string.text
-msgid "Right"
+#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.2.String.Text
+msgid  "Right"
 msgstr ""
 
-#: inspection.src#RID_STR_PARAADJUST_CONST.3.string.text
-msgid "Block"
+#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.3.String.Text
+msgid  "Block"
 msgstr ""
 
-#: inspection.src#RID_STR_PARAADJUST_CONST.4.string.text
-msgid "Center"
+#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.4.String.Text
+msgid  "Center"
 msgstr ""
 
-#: inspection.src#RID_STR_F_COUNTER.string.text
-msgctxt "inspection.src#RID_STR_F_COUNTER.string.text"
-msgid "Counter"
+#: source/ui/inspection/inspection.src#RID_STR_F_COUNTER.String.Text
+msgid  "Counter"
 msgstr ""
 
-#: inspection.src#RID_STR_F_ACCUMULATION.string.text
-msgid "Accumulation"
+#: source/ui/inspection/inspection.src#RID_STR_F_ACCUMULATION.String.Text
+msgid  "Accumulation"
 msgstr ""
 
-#: inspection.src#RID_STR_F_MINIMUM.string.text
-msgid "Minimum"
+#: source/ui/inspection/inspection.src#RID_STR_F_MINIMUM.String.Text
+msgid  "Minimum"
 msgstr ""
 
-#: inspection.src#RID_STR_F_MAXIMUM.string.text
-msgid "Maximum"
+#: source/ui/inspection/inspection.src#RID_STR_F_MAXIMUM.String.Text
+msgid  "Maximum"
 msgstr ""
 
-#: strings.src#RID_STR_DETAIL.string.text
-msgid "Detail"
+#: source/ui/report/report.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
+#, fuzzy
+msgid  "Properties: "
+msgstr " Moobandawey"
+
+#: source/ui/report/report.src#RID_STR_BRWTITLE_NO_PROPERTIES.String.Text
+msgid  "No Control marked"
 msgstr ""
 
-#: strings.src#RID_STR_PAGE_HEADER.string.text
-msgid "Page Header"
+#: source/ui/report/report.src#RID_STR_BRWTITLE_MULTISELECT.String.Text
+msgid  "Multiselection"
 msgstr ""
 
-#: strings.src#RID_STR_PAGE_FOOTER.string.text
-msgid "Page Footer"
+#: source/ui/report/report.src#RID_STR_PROPTITLE_IMAGECONTROL.String.Text
+msgid  "Image Control"
 msgstr ""
 
-#: strings.src#RID_STR_GROUP_HEADER.string.text
-msgid "Group Header"
+#: source/ui/report/report.src#RID_STR_PROPTITLE_FIXEDTEXT.String.Text
+msgid  "Label field"
 msgstr ""
 
-#: strings.src#RID_STR_GROUP_FOOTER.string.text
-msgid "Group Footer"
+#: source/ui/report/report.src#RID_STR_PROPTITLE_FIXEDLINE.String.Text
+msgid  "Line"
 msgstr ""
 
-#: strings.src#RID_STR_REPORT_HEADER.string.text
-msgid "Report Header"
+#: source/ui/report/report.src#RID_STR_PROPTITLE_FORMATTED.String.Text
+msgid  "Formatted Field"
 msgstr ""
 
-#: strings.src#RID_STR_REPORT_FOOTER.string.text
-msgid "Report Footer"
+#: source/ui/report/report.src#RID_STR_PROPTITLE_SHAPE.String.Text
+msgid  "Shape"
 msgstr ""
 
-#: strings.src#RID_STR_PROPERTY_CHANGE_NOT_ALLOWED.string.text
-msgid "The name '#1' already exists and can not be asssigned again."
+#: source/ui/report/report.src#RID_STR_PROPTITLE_REPORT.String.Text
+msgid  "Report"
 msgstr ""
 
-#: strings.src#RID_STR_ERROR_WRONG_ARGUMENT.string.text
-msgid ""
-"You tried to set an illegal argument. Please have a look at '#1' for valid "
-"arguments."
+#: source/ui/report/report.src#RID_STR_PROPTITLE_SECTION.String.Text
+msgid  "Section"
 msgstr ""
 
-#: strings.src#RID_STR_ARGUMENT_IS_NULL.string.text
-msgid "The element is invalid."
+#: source/ui/report/report.src#RID_STR_PROPTITLE_FUNCTION.String.Text
+msgid  "Function"
 msgstr ""
 
-#: strings.src#RID_STR_FIXEDTEXT.string.text
-msgid "Label field"
+#: source/ui/report/report.src#RID_STR_PROPTITLE_GROUP.String.Text
+#, fuzzy
+msgid  "Group"
+msgstr " Kuray"
+
+#: source/ui/report/report.src#STR_SHOW_RULER.String.Text
+msgid  "Show ruler"
 msgstr ""
 
-#: strings.src#RID_STR_FORMATTEDFIELD.string.text
-msgid "Formatted field"
+#: source/ui/report/report.src#STR_SHOW_GRID.String.Text
+msgid  "Show grid"
 msgstr ""
 
-#: strings.src#RID_STR_IMAGECONTROL.string.text
-msgid "Image control"
+#: source/ui/report/report.src#RID_STR_UNDO_CHANGEPOSITION.String.Text
+msgid  "Change Object"
 msgstr ""
 
-#: strings.src#RID_STR_REPORT.string.text
-msgid "Report"
+#: source/ui/report/report.src#RID_STR_UNDO_MOVE_GROUP.String.Text
+msgid  "Move Group(s)"
 msgstr ""
 
-#: strings.src#RID_STR_SHAPE.string.text
-msgid "Shape"
+#: source/ui/report/report.src#RID_STR_UNDO_CONDITIONAL_FORMATTING.String.Text
+msgid  "Conditional Formatting"
 msgstr ""
 
-#: strings.src#RID_STR_FIXEDLINE.string.text
-msgid "Fixed line"
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_REPORTHEADERFOOTER.String.Text
+msgid  "Remove report header / report footer"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_UNDO_ADD_REPORTHEADERFOOTER.String.Text
+msgid  "Add report header / report footer"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_PAGEHEADERFOOTER.String.Text
+msgid  "Remove page header / page footer"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_UNDO_ADD_PAGEHEADERFOOTER.String.Text
+msgid  "Add page header / page footer"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_UNDO_PROPERTY.String.Text
+msgid  "Change property '#'"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_UNDO_ADD_GROUP_HEADER.String.Text
+msgid  "Add group header "
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_HEADER.String.Text
+msgid  "Remove group header "
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_UNDO_ADD_GROUP_FOOTER.String.Text
+msgid  "Add group footer "
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_FOOTER.String.Text
+msgid  "Remove group footer "
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_UNDO_ADDFUNCTION.String.Text
+msgid  "Add function"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_UNDO_DELETEFUNCTION.String.Text
+msgid  "Delete function"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_DESIGN_VIEW.String.Text
+msgid  "Design"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_PREVIEW_VIEW.String.Text
+#, fuzzy
+msgid  "Preview"
+msgstr " Alhaaloo guna"
+
+#: source/ui/report/report.src#STR_RPT_TITLE.String.Text
+msgid  "Report #"
+msgstr ""
+
+#: source/ui/report/report.src#STR_RPT_LABEL.String.Text
+msgid  "~Report name"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP.String.Text
+msgid  "Delete Group"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_UNDO_APPEND_GROUP.String.Text
+msgid  "Add Group"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_SELECTION.String.Text
+msgid  "Delete Selection"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_FUNCTION.String.Text
+msgid  "Delete Function"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_UNDO_CHANGE_SIZE.String.Text
+msgid  "Change Size"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_UNDO_PASTE.String.Text
+#, fuzzy
+msgid  "Paste"
+msgstr "Bobu"
+
+#: source/ui/report/report.src#RID_STR_UNDO_INSERT_CONTROL.String.Text
+msgid  "Insert Control"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_UNDO_DELETE_CONTROL.String.Text
+msgid  "Delete Control"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_UNDO_GROUP.String.Text
+msgid  "Insert Group"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_UNDO_UNGROUP.String.Text
+msgid  "Delete Group"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_GROUPHEADER.String.Text
+msgid  "GroupHeader"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_GROUPFOOTER.String.Text
+msgid  "GroupFooter"
+msgstr ""
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_SORTINGANDGROUPING.MenuItem.Text
+msgid  "Sorting and Grouping..."
+msgstr ""
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_ATTR_CHAR_COLOR_BACKGROUND.MenuItem.Text
+msgid  "Background Color..."
+msgstr ""
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_RULER.MenuItem.Text
+msgid  "Ruler..."
+msgstr ""
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_GRID_VISIBLE.MenuItem.Text
+msgid  "Grid..."
+msgstr ""
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.MenuItem.Text
+msgid  "~Arrange"
+msgstr ""
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_UP.MenuItem.Text
+msgid  "Bring ~Forward"
+msgstr ""
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_DOWN.MenuItem.Text
+msgid  "Send Back~ward"
+msgstr ""
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.MenuItem.Text
+msgid  "~Object Resizing"
+msgstr ""
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTWIDTH.MenuItem.Text
+msgid  "~Fit to smallest width"
+msgstr ""
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTWIDTH.MenuItem.Text
+msgid  "~Fit to greatest width"
+msgstr ""
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTHEIGHT.MenuItem.Text
+msgid  "~Fit to smallest height"
+msgstr ""
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTHEIGHT.MenuItem.Text
+msgid  "~Fit to greatest height"
+msgstr ""
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.MenuItem.Text
+msgid  "Section"
+msgstr ""
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK.MenuItem.Text
+msgid  "Shrink"
+msgstr ""
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_TOP.MenuItem.Text
+msgid  "Shrink from top"
+msgstr ""
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_BOTTOM.MenuItem.Text
+msgid  "Shrink from bottom"
+msgstr ""
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_DISTRIBUTION.MenuItem.Text
+msgid  "Distribution..."
+msgstr ""
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_SHOW_PROPERTYBROWSER.MenuItem.Text
+#, fuzzy
+msgid  "Properties..."
+msgstr " Moobandawey"
+
+#: source/ui/report/report.src#RID_STR_FIELDSELECTION.String.Text
+msgid  "Add field:"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_FILTER.String.Text
+msgid  "Filter"
+msgstr ""
+
+#: source/ui/report/report.src#RID_APP_TITLE.String.Text
+msgid  " - %PRODUCTNAME Base Report"
+msgstr ""
+
+#: source/ui/report/report.src#RID_APP_NEW_DOC.String.Text
+msgid  "Untitled"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_UNDO_ALIGNMENT.String.Text
+msgid  "Change Alignment"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_HEADER.String.Text
+msgid  "# Header"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_FOOTER.String.Text
+msgid  "# Footer"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_IMPORT_GRAPHIC.String.Text
+msgid  "Insert graphics"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_DELETE.String.Text
+#, fuzzy
+msgid  "Delete"
+msgstr "Tuusu"
+
+#: source/ui/report/report.src#RID_STR_FUNCTION.String.Text
+msgid  "Function"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_COULD_NOT_CREATE_REPORT.String.Text
+msgid  "An error occurred while creating the report."
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_CAUGHT_FOREIGN_EXCEPTION.String.Text
+msgid  "An exception of type $type$ was caught."
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_UNDO_CHANGEFONT.String.Text
+msgid  "Change font"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_UNDO_CHANGEPAGE.String.Text
+msgid  "Change page attributes"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_PAGEHEADERFOOTER_INSERT.String.Text
+msgid  "Insert Page Header/Footer"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_PAGEHEADERFOOTER_DELETE.String.Text
+msgid  "Delete Page Header/Footer"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_INSERT.String.Text
+msgid  "Insert Column Header/Footer"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_DELETE.String.Text
+msgid  "Delete Column Header/Footer"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_REPORTHEADERFOOTER_INSERT.String.Text
+msgid  "Insert Report Header/Footer"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_REPORTHEADERFOOTER_DELETE.String.Text
+msgid  "Delete Report Header/Footer"
+msgstr ""
+
+#: source/ui/report/report.src#RID_ERR_NO_COMMAND.String.Text
+msgid  "The report can not be executed unless it is bound to content."
+msgstr ""
+
+#: source/ui/report/report.src#RID_ERR_NO_OBJECTS.String.Text
+msgid  "The report can not be executed unless at least one object has been inserted."
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_UNDO_SHRINK.String.Text
+msgid  "Shrink Section"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_INSERT.String.Text
+#, fuzzy
+msgid  "Insert"
+msgstr " Daŋ"
+
+#: source/ui/report/report.src#RID_STR_DETAIL.String.Text
+msgid  "Detail"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_PAGE_HEADER.String.Text
+msgid  "Page Header"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_PAGE_FOOTER.String.Text
+msgid  "Page Footer"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_REPORT_HEADER.String.Text
+msgid  "Report Header"
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_REPORT_FOOTER.String.Text
+msgid  "Report Footer"
 msgstr ""

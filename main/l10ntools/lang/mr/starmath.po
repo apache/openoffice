@@ -1,1887 +1,2025 @@
-"X-Accelerator-Marker: ~\n"
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
 
-#: commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.menuitem.text
-msgid "~Unary/Binary Operators"
-msgstr "यूनरी/बायनरी ऑपरेटर्स् (~U)"
 
-#: commands.src#RID_COMMANDMENU.RID_RELATIONS_MENU.menuitem.text
-msgid "~Relations"
-msgstr "रिलेशन्स् (~R)"
-
-#: commands.src#RID_COMMANDMENU.RID_SETOPERATIONS_MENU.menuitem.text
-msgid "~Set Operations"
-msgstr "संच कार्यपद्धती (~S)"
-
-#: commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.RID_FUNCTIONSOTHER1_MENU.menuitem.text
-msgid "More"
-msgstr "अधिक"
-
-#: commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.menuitem.text
+#: source/smres.src#RID_FONTDIALOG.ModalDialog.Text
 #, fuzzy
-msgctxt "commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.menuitem.text"
-msgid "~Functions"
-msgstr "फंक्शन (~F)"
+msgid  "Fonts"
+msgstr "फॉन्ट्स्"
 
-#: commands.src#RID_COMMANDMENU.RID_OPERATORS_MENU.menuitem.text
-msgid "O~perators"
-msgstr "ऑपरेटर्स् (~p)"
-
-#: commands.src#RID_COMMANDMENU.RID_ATTRIBUTES_MENU.menuitem.text
-msgid "~Attributes"
-msgstr "गुणधर्म (~A)"
-
-#: commands.src#RID_COMMANDMENU.RID_BRACKETS_MENU.menuitem.text
-msgid "~Brackets"
-msgstr "कंस (~B)"
-
-#: commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NEWLINE.menuitem.text
-msgctxt "commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NEWLINE.menuitem.text"
-msgid "New Line"
-msgstr "नवीन रेषा"
-
-#: commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_SBLANK.menuitem.text
-msgctxt "commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_SBLANK.menuitem.text"
-msgid "Small Gap"
-msgstr "कमी अंतर"
-
-#: commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_BLANK.menuitem.text
-msgctxt "commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_BLANK.menuitem.text"
-msgid "Gap"
-msgstr "अंतर"
-
-#: commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NOSPACE.menuitem.text
-msgid "nospace {...}"
-msgstr "nospace {...}"
-
-#: commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.menuitem.text
-msgid "For~mats"
-msgstr "रूपण (~m)"
-
-#: commands.src#RID_COMMANDMENU.RID_MISC_MENU.menuitem.text
-msgid "~Others"
-msgstr "इतर (~O)"
-
-#: smres.src#RID_FONTDIALOG.1.fixedtext.text
-msgctxt "smres.src#RID_FONTDIALOG.1.fixedtext.text"
-msgid "~Font"
+#: source/smres.src#RID_FONTDIALOG.1.FixedText.Text
+#, fuzzy
+msgid  "~Font"
 msgstr "फॉन्ट (~F)"
 
-#: smres.src#RID_FONTDIALOG.1.checkbox.text
-msgid "~Bold"
+#: source/smres.src#RID_FONTDIALOG.1.CheckBox.Text
+#, fuzzy
+msgid  "~Bold"
 msgstr "ठळक करा (~B)"
 
-#: smres.src#RID_FONTDIALOG.2.checkbox.text
-msgid "~Italic"
+#: source/smres.src#RID_FONTDIALOG.2.CheckBox.Text
+#, fuzzy
+msgid  "~Italic"
 msgstr "तिरके (~I)"
 
-#: smres.src#RID_FONTDIALOG.2.fixedtext.text
-msgctxt "smres.src#RID_FONTDIALOG.2.fixedtext.text"
-msgid "Attributes"
+#: source/smres.src#RID_FONTDIALOG.2.FixedText.Text
+#, fuzzy
+msgid  "Attributes"
 msgstr "गुणधर्म"
 
-#: smres.src#RID_FONTDIALOG.modaldialog.text
-msgctxt "smres.src#RID_FONTDIALOG.modaldialog.text"
-msgid "Fonts"
-msgstr "फॉन्ट्स्"
-
-#: smres.src#RID_FONTSIZEDIALOG.1.fixedtext.text
-msgid "Base ~size"
-msgstr "बेस् आकार (~s)"
-
-#: smres.src#RID_FONTSIZEDIALOG.4.fixedtext.text
-msgctxt "smres.src#RID_FONTSIZEDIALOG.4.fixedtext.text"
-msgid "~Text"
-msgstr "मजकूर (~T)"
-
-#: smres.src#RID_FONTSIZEDIALOG.5.fixedtext.text
-msgid "~Indexes"
-msgstr "अनुक्रमणिका (~I)"
-
-#: smres.src#RID_FONTSIZEDIALOG.6.fixedtext.text
-msgctxt "smres.src#RID_FONTSIZEDIALOG.6.fixedtext.text"
-msgid "~Functions"
-msgstr "फंक्शन्स् (~F)"
-
-#: smres.src#RID_FONTSIZEDIALOG.7.fixedtext.text
-msgid "~Operators"
-msgstr "ऑपरेटर्स् (~O)"
-
-#: smres.src#RID_FONTSIZEDIALOG.8.fixedtext.text
-msgid "~Limits"
-msgstr "सीमा (~L)"
-
-#: smres.src#RID_FONTSIZEDIALOG.1.fixedline.text
-msgid "Relative sizes"
-msgstr "संबंधीत आकार"
-
-#: smres.src#RID_FONTSIZEDIALOG.1.pushbutton.text
-msgctxt "smres.src#RID_FONTSIZEDIALOG.1.pushbutton.text"
-msgid "~Default"
-msgstr "पूर्वनिर्धारीत (~D)"
-
-#: smres.src#RID_FONTSIZEDIALOG.modaldialog.text
-msgid "Font Sizes"
+#: source/smres.src#RID_FONTSIZEDIALOG.ModalDialog.Text
+#, fuzzy
+msgid  "Font Sizes"
 msgstr "फॉन्ट् आकार"
 
-#: smres.src#RID_FONTTYPEDIALOG.1.fixedline.text
-msgid "Formula fonts"
-msgstr "सूत्र फॉन्ट्स्"
+#: source/smres.src#RID_FONTSIZEDIALOG.1.FixedText.Text
+#, fuzzy
+msgid  "Base ~size"
+msgstr "बेस् आकार (~s)"
 
-#: smres.src#RID_FONTTYPEDIALOG.2.fixedline.text
-msgid "Custom fonts"
-msgstr "मनपसंत फॉन्ट्स्"
-
-#: smres.src#RID_FONTTYPEDIALOG.1.fixedtext.text
-msgid "~Variables"
-msgstr "वेरियेबल्स् (~V)"
-
-#: smres.src#RID_FONTTYPEDIALOG.2.fixedtext.text
-msgctxt "smres.src#RID_FONTTYPEDIALOG.2.fixedtext.text"
-msgid "~Functions"
-msgstr "फंक्शन्स् (~F)"
-
-#: smres.src#RID_FONTTYPEDIALOG.3.fixedtext.text
-msgid "~Numbers"
-msgstr "क्रमांक (~N)"
-
-#: smres.src#RID_FONTTYPEDIALOG.4.fixedtext.text
-msgctxt "smres.src#RID_FONTTYPEDIALOG.4.fixedtext.text"
-msgid "~Text"
+#: source/smres.src#RID_FONTSIZEDIALOG.4.FixedText.Text
+#, fuzzy
+msgid  "~Text"
 msgstr "मजकूर (~T)"
 
-#: smres.src#RID_FONTTYPEDIALOG.5.fixedtext.text
-msgid "~Serif"
-msgstr "सेरिफ् (~S)"
+#: source/smres.src#RID_FONTSIZEDIALOG.5.FixedText.Text
+#, fuzzy
+msgid  "~Indexes"
+msgstr "अनुक्रमणिका (~I)"
 
-#: smres.src#RID_FONTTYPEDIALOG.6.fixedtext.text
-msgid "S~ans"
-msgstr "सॅन्स् (~a)"
+#: source/smres.src#RID_FONTSIZEDIALOG.6.FixedText.Text
+#, fuzzy
+msgid  "~Functions"
+msgstr "फंक्शन्स् (~F)"
 
-#: smres.src#RID_FONTTYPEDIALOG.7.fixedtext.text
-msgid "F~ixed"
-msgstr "ठराविक (~i)"
+#: source/smres.src#RID_FONTSIZEDIALOG.7.FixedText.Text
+#, fuzzy
+msgid  "~Operators"
+msgstr "ऑपरेटर्स् (~O)"
 
-#: smres.src#RID_FONTTYPEDIALOG.1.menubutton.text
-msgctxt "smres.src#RID_FONTTYPEDIALOG.1.menubutton.text"
-msgid "~Modify"
-msgstr "संपादीत करा (~M)"
+#: source/smres.src#RID_FONTSIZEDIALOG.8.FixedText.Text
+#, fuzzy
+msgid  "~Limits"
+msgstr "सीमा (~L)"
 
-#: smres.src#RID_FONTTYPEDIALOG.2.pushbutton.text
-msgctxt "smres.src#RID_FONTTYPEDIALOG.2.pushbutton.text"
-msgid "~Default"
+#: source/smres.src#RID_FONTSIZEDIALOG.1.FixedLine.Text
+#, fuzzy
+msgid  "Relative sizes"
+msgstr "संबंधीत आकार"
+
+#: source/smres.src#RID_FONTSIZEDIALOG.1.PushButton.Text
+#, fuzzy
+msgid  "~Default"
 msgstr "पूर्वनिर्धारीत (~D)"
 
-#: smres.src#RID_FONTTYPEDIALOG.modaldialog.text
-msgctxt "smres.src#RID_FONTTYPEDIALOG.modaldialog.text"
-msgid "Fonts"
+#: source/smres.src#RID_FONTTYPEDIALOG.ModalDialog.Text
+#, fuzzy
+msgid  "Fonts"
 msgstr "फॉन्ट्स्"
 
-#: smres.src#RID_DISTANCEDIALOG.1.metricfield.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.1.metricfield.text"
-msgid "%"
+#: source/smres.src#RID_FONTTYPEDIALOG.1.FixedLine.Text
+#, fuzzy
+msgid  "Formula fonts"
+msgstr "सूत्र फॉन्ट्स्"
+
+#: source/smres.src#RID_FONTTYPEDIALOG.2.FixedLine.Text
+#, fuzzy
+msgid  "Custom fonts"
+msgstr "मनपसंत फॉन्ट्स्"
+
+#: source/smres.src#RID_FONTTYPEDIALOG.1.FixedText.Text
+#, fuzzy
+msgid  "~Variables"
+msgstr "वेरियेबल्स् (~V)"
+
+#: source/smres.src#RID_FONTTYPEDIALOG.2.FixedText.Text
+#, fuzzy
+msgid  "~Functions"
+msgstr "फंक्शन्स् (~F)"
+
+#: source/smres.src#RID_FONTTYPEDIALOG.3.FixedText.Text
+#, fuzzy
+msgid  "~Numbers"
+msgstr "क्रमांक (~N)"
+
+#: source/smres.src#RID_FONTTYPEDIALOG.4.FixedText.Text
+#, fuzzy
+msgid  "~Text"
+msgstr "मजकूर (~T)"
+
+#: source/smres.src#RID_FONTTYPEDIALOG.5.FixedText.Text
+#, fuzzy
+msgid  "~Serif"
+msgstr "सेरिफ् (~S)"
+
+#: source/smres.src#RID_FONTTYPEDIALOG.6.FixedText.Text
+#, fuzzy
+msgid  "S~ans"
+msgstr "सॅन्स् (~a)"
+
+#: source/smres.src#RID_FONTTYPEDIALOG.7.FixedText.Text
+#, fuzzy
+msgid  "F~ixed"
+msgstr "ठराविक (~i)"
+
+#: source/smres.src#RID_FONTTYPEDIALOG.1.MenuButton.Text
+#, fuzzy
+msgid  "~Modify"
+msgstr "संपादीत करा (~M)"
+
+#: source/smres.src#RID_FONTTYPEDIALOG.2.PushButton.Text
+#, fuzzy
+msgid  "~Default"
+msgstr "पूर्वनिर्धारीत (~D)"
+
+#: source/smres.src#RID_DISTANCEDIALOG.ModalDialog.Text
+#, fuzzy
+msgid  "Spacing"
+msgstr "अंतर"
+
+#: source/smres.src#RID_DISTANCEDIALOG.1.MetricField.CustomUnitText
+#, fuzzy
+msgid  "%"
 msgstr "%"
 
-#: smres.src#RID_DISTANCEDIALOG.2.metricfield.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.2.metricfield.text"
-msgid "%"
+#: source/smres.src#RID_DISTANCEDIALOG.2.MetricField.CustomUnitText
+#, fuzzy
+msgid  "%"
 msgstr "%"
 
-#: smres.src#RID_DISTANCEDIALOG.1.checkbox.text
-msgid "Scale all brackets"
+#: source/smres.src#RID_DISTANCEDIALOG.1.CheckBox.Text
+#, fuzzy
+msgid  "Scale all brackets"
 msgstr "सर्व कंसाना प्रमाणीत करा"
 
-#: smres.src#RID_DISTANCEDIALOG.3.metricfield.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.3.metricfield.text"
-msgid "%"
+#: source/smres.src#RID_DISTANCEDIALOG.3.MetricField.CustomUnitText
+#, fuzzy
+msgid  "%"
 msgstr "%"
 
-#: smres.src#RID_DISTANCEDIALOG.1.pushbutton.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.1.pushbutton.text"
-msgid "~Default"
+#: source/smres.src#RID_DISTANCEDIALOG.1.PushButton.Text
+#, fuzzy
+msgid  "~Default"
 msgstr "पूर्वनिर्धारीत (~D)"
 
-#: smres.src#RID_DISTANCEDIALOG.1.menubutton.text
-msgid "~Category"
+#: source/smres.src#RID_DISTANCEDIALOG.1.MenuButton.Text
+#, fuzzy
+msgid  "~Category"
 msgstr "वर्ग (~C)"
 
-#: smres.src#RID_DISTANCEDIALOG.1.fixedline.text
-msgid "Category"
+#: source/smres.src#RID_DISTANCEDIALOG.1.FixedLine.Text
+#, fuzzy
+msgid  "Category"
 msgstr "वर्ग"
 
-#: smres.src#RID_DISTANCEDIALOG.1.1.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.1.1.string.text"
-msgid "Spacing"
+#: source/smres.src#RID_DISTANCEDIALOG.1.1.String.Text
+#, fuzzy
+msgid  "Spacing"
 msgstr "अंतर"
 
-#: smres.src#RID_DISTANCEDIALOG.1.2.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.1.2.string.text"
-msgid "~Spacing"
+#: source/smres.src#RID_DISTANCEDIALOG.1.2.String.Text
+#, fuzzy
+msgid  "~Spacing"
 msgstr "अंतर (~S)"
 
-#: smres.src#RID_DISTANCEDIALOG.1.3.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.1.3.string.text"
-msgid "~Line spacing"
+#: source/smres.src#RID_DISTANCEDIALOG.1.3.String.Text
+#, fuzzy
+msgid  "~Line spacing"
 msgstr "ओळ अंतर (~L)"
 
-#: smres.src#RID_DISTANCEDIALOG.1.4.string.text
-msgid "~Root spacing"
+#: source/smres.src#RID_DISTANCEDIALOG.1.4.String.Text
+#, fuzzy
+msgid  "~Root spacing"
 msgstr "रूट अंतर (~R)"
 
-#: smres.src#RID_DISTANCEDIALOG.2.1.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.2.1.string.text"
-msgid "Indexes"
+#: source/smres.src#RID_DISTANCEDIALOG.2.1.String.Text
+#, fuzzy
+msgid  "Indexes"
 msgstr "अनुक्रमणिका"
 
-#: smres.src#RID_DISTANCEDIALOG.2.2.string.text
-msgid "~Superscript"
+#: source/smres.src#RID_DISTANCEDIALOG.2.2.String.Text
+#, fuzzy
+msgid  "~Superscript"
 msgstr "सूपरस्क्रिप्ट (~S)"
 
-#: smres.src#RID_DISTANCEDIALOG.2.3.string.text
-msgid "S~ubscript"
+#: source/smres.src#RID_DISTANCEDIALOG.2.3.String.Text
+#, fuzzy
+msgid  "S~ubscript"
 msgstr "सबस्क्रिप्ट (~u)"
 
-#: smres.src#RID_DISTANCEDIALOG.3.1.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.3.1.string.text"
-msgid "Fractions"
+#: source/smres.src#RID_DISTANCEDIALOG.3.1.String.Text
+#, fuzzy
+msgid  "Fractions"
 msgstr "फ्रॅक्शन्स्"
 
-#: smres.src#RID_DISTANCEDIALOG.3.2.string.text
-msgid "~Numerator"
+#: source/smres.src#RID_DISTANCEDIALOG.3.2.String.Text
+#, fuzzy
+msgid  "~Numerator"
 msgstr "अंश (~N)"
 
-#: smres.src#RID_DISTANCEDIALOG.3.3.string.text
-msgid "~Denominator"
+#: source/smres.src#RID_DISTANCEDIALOG.3.3.String.Text
+#, fuzzy
+msgid  "~Denominator"
 msgstr "भाजक (~D)"
 
-#: smres.src#RID_DISTANCEDIALOG.4.1.string.text
-msgid "Fraction bar"
+#: source/smres.src#RID_DISTANCEDIALOG.4.1.String.Text
+#, fuzzy
+msgid  "Fraction bar"
 msgstr "फ्रॅक्शन पट्टी"
 
-#: smres.src#RID_DISTANCEDIALOG.4.2.string.text
-msgid "~Excess length"
+#: source/smres.src#RID_DISTANCEDIALOG.4.2.String.Text
+#, fuzzy
+msgid  "~Excess length"
 msgstr "वाढीव लांबी (~E)"
 
-#: smres.src#RID_DISTANCEDIALOG.4.3.string.text
-msgid "~Weight"
+#: source/smres.src#RID_DISTANCEDIALOG.4.3.String.Text
+#, fuzzy
+msgid  "~Weight"
 msgstr "वजन (~W)"
 
-#: smres.src#RID_DISTANCEDIALOG.5.1.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.5.1.string.text"
-msgid "Limits"
+#: source/smres.src#RID_DISTANCEDIALOG.5.1.String.Text
+#, fuzzy
+msgid  "Limits"
 msgstr "सीमा"
 
-#: smres.src#RID_DISTANCEDIALOG.5.2.string.text
-msgid "~Upper limit"
+#: source/smres.src#RID_DISTANCEDIALOG.5.2.String.Text
+#, fuzzy
+msgid  "~Upper limit"
 msgstr "उच्च सीमा (~U)"
 
-#: smres.src#RID_DISTANCEDIALOG.5.3.string.text
-msgid "~Lower limit"
+#: source/smres.src#RID_DISTANCEDIALOG.5.3.String.Text
+#, fuzzy
+msgid  "~Lower limit"
 msgstr "निम्न सीमा (~L)"
 
-#: smres.src#RID_DISTANCEDIALOG.6.1.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.6.1.string.text"
-msgid "Brackets"
+#: source/smres.src#RID_DISTANCEDIALOG.6.1.String.Text
+#, fuzzy
+msgid  "Brackets"
 msgstr "कंस"
 
-#: smres.src#RID_DISTANCEDIALOG.6.2.string.text
-msgid "~Excess size (left/right)"
+#: source/smres.src#RID_DISTANCEDIALOG.6.2.String.Text
+#, fuzzy
+msgid  "~Excess size (left/right)"
 msgstr "वाढीव आकार (डावा/उजवा) (~E)"
 
-#: smres.src#RID_DISTANCEDIALOG.6.3.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.6.3.string.text"
-msgid "~Spacing"
+#: source/smres.src#RID_DISTANCEDIALOG.6.3.String.Text
+#, fuzzy
+msgid  "~Spacing"
 msgstr "अंतर (~S)"
 
-#: smres.src#RID_DISTANCEDIALOG.6.5.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.6.5.string.text"
-msgid "~Excess size"
+#: source/smres.src#RID_DISTANCEDIALOG.6.5.String.Text
+#, fuzzy
+msgid  "~Excess size"
 msgstr "वाढीव आकार (~E)"
 
-#: smres.src#RID_DISTANCEDIALOG.7.1.string.text
-msgid "Matrix"
+#: source/smres.src#RID_DISTANCEDIALOG.7.1.String.Text
+#, fuzzy
+msgid  "Matrix"
 msgstr "सारणी"
 
-#: smres.src#RID_DISTANCEDIALOG.7.2.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.7.2.string.text"
-msgid "~Line spacing"
+#: source/smres.src#RID_DISTANCEDIALOG.7.2.String.Text
+#, fuzzy
+msgid  "~Line spacing"
 msgstr "ओळीतील अंतर (~L)"
 
-#: smres.src#RID_DISTANCEDIALOG.7.3.string.text
-msgid "~Column spacing"
+#: source/smres.src#RID_DISTANCEDIALOG.7.3.String.Text
+#, fuzzy
+msgid  "~Column spacing"
 msgstr "स्तंभ अंतर (~C)"
 
-#: smres.src#RID_DISTANCEDIALOG.8.1.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.8.1.string.text"
-msgid "Symbols"
+#: source/smres.src#RID_DISTANCEDIALOG.8.1.String.Text
+#, fuzzy
+msgid  "Symbols"
 msgstr "चिन्हे"
 
-#: smres.src#RID_DISTANCEDIALOG.8.2.string.text
-msgid "~Primary height"
+#: source/smres.src#RID_DISTANCEDIALOG.8.2.String.Text
+#, fuzzy
+msgid  "~Primary height"
 msgstr "प्राथमीक ऊंची (~P)"
 
-#: smres.src#RID_DISTANCEDIALOG.8.3.string.text
-msgid "~Minimum spacing"
+#: source/smres.src#RID_DISTANCEDIALOG.8.3.String.Text
+#, fuzzy
+msgid  "~Minimum spacing"
 msgstr "किमान अंतर (~M)"
 
-#: smres.src#RID_DISTANCEDIALOG.9.1.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.9.1.string.text"
-msgid "Operators"
+#: source/smres.src#RID_DISTANCEDIALOG.9.1.String.Text
+#, fuzzy
+msgid  "Operators"
 msgstr "ऑपरेटर्स्"
 
-#: smres.src#RID_DISTANCEDIALOG.9.2.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.9.2.string.text"
-msgid "~Excess size"
+#: source/smres.src#RID_DISTANCEDIALOG.9.2.String.Text
+#, fuzzy
+msgid  "~Excess size"
 msgstr "वाढीव आकार (~E)"
 
-#: smres.src#RID_DISTANCEDIALOG.9.3.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.9.3.string.text"
-msgid "~Spacing"
+#: source/smres.src#RID_DISTANCEDIALOG.9.3.String.Text
+#, fuzzy
+msgid  "~Spacing"
 msgstr "अंतर (~S)"
 
-#: smres.src#RID_DISTANCEDIALOG.10.1.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.10.1.string.text"
-msgid "Borders"
+#: source/smres.src#RID_DISTANCEDIALOG.10.1.String.Text
+#, fuzzy
+msgid  "Borders"
 msgstr "किनारी"
 
-#: smres.src#RID_DISTANCEDIALOG.10.2.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.10.2.string.text"
-msgid "~Left"
+#: source/smres.src#RID_DISTANCEDIALOG.10.2.String.Text
+#, fuzzy
+msgid  "~Left"
 msgstr "डावा (~L)"
 
-#: smres.src#RID_DISTANCEDIALOG.10.3.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.10.3.string.text"
-msgid "~Right"
+#: source/smres.src#RID_DISTANCEDIALOG.10.3.String.Text
+#, fuzzy
+msgid  "~Right"
 msgstr "उजवा (~R)"
 
-#: smres.src#RID_DISTANCEDIALOG.10.4.string.text
-msgid "~Top"
+#: source/smres.src#RID_DISTANCEDIALOG.10.4.String.Text
+#, fuzzy
+msgid  "~Top"
 msgstr "शीर्ष (~T)"
 
-#: smres.src#RID_DISTANCEDIALOG.10.5.string.text
-msgid "~Bottom"
+#: source/smres.src#RID_DISTANCEDIALOG.10.5.String.Text
+#, fuzzy
+msgid  "~Bottom"
 msgstr "तळ (~B)"
 
-#: smres.src#RID_DISTANCEDIALOG.modaldialog.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.modaldialog.text"
-msgid "Spacing"
-msgstr "अंतर"
-
-#: smres.src#RID_ALIGNDIALOG.1.radiobutton.text
-msgctxt "smres.src#RID_ALIGNDIALOG.1.radiobutton.text"
-msgid "~Left"
-msgstr "डावा (~L)"
-
-#: smres.src#RID_ALIGNDIALOG.2.radiobutton.text
-msgid "~Centered"
-msgstr "केन्द्रीत (~C)"
-
-#: smres.src#RID_ALIGNDIALOG.3.radiobutton.text
-msgctxt "smres.src#RID_ALIGNDIALOG.3.radiobutton.text"
-msgid "~Right"
-msgstr "उजवा (~R)"
-
-#: smres.src#RID_ALIGNDIALOG.1.fixedline.text
-msgid "Horizontal"
-msgstr "आडवे"
-
-#: smres.src#RID_ALIGNDIALOG.1.pushbutton.text
-msgctxt "smres.src#RID_ALIGNDIALOG.1.pushbutton.text"
-msgid "~Default"
-msgstr "पूर्वनिर्धारीत (~D)"
-
-#: smres.src#RID_ALIGNDIALOG.modaldialog.text
-msgid "Alignment"
+#: source/smres.src#RID_ALIGNDIALOG.ModalDialog.Text
+#, fuzzy
+msgid  "Alignment"
 msgstr "संरेषण"
 
-#: smres.src#RID_PRINTOPTIONPAGE.FL_PRINTOPTIONS.fixedline.text
-msgid "Print options"
-msgstr "छपाई पर्याय"
+#: source/smres.src#RID_ALIGNDIALOG.1.RadioButton.Text
+#, fuzzy
+msgid  "~Left"
+msgstr "डावा (~L)"
 
-#: smres.src#RID_PRINTOPTIONPAGE.CB_TITLEROW.checkbox.text
-msgid "~Title row"
-msgstr "शीर्षक ओळ (~T)"
+#: source/smres.src#RID_ALIGNDIALOG.2.RadioButton.Text
+#, fuzzy
+msgid  "~Centered"
+msgstr "केन्द्रीत (~C)"
 
-#: smres.src#RID_PRINTOPTIONPAGE.CB_EQUATION_TEXT.checkbox.text
-msgctxt "smres.src#RID_PRINTOPTIONPAGE.CB_EQUATION_TEXT.checkbox.text"
-msgid "~Formula text"
-msgstr "सूत्र मजकूर (~F)"
+#: source/smres.src#RID_ALIGNDIALOG.3.RadioButton.Text
+#, fuzzy
+msgid  "~Right"
+msgstr "उजवा (~R)"
 
-#: smres.src#RID_PRINTOPTIONPAGE.CB_FRAME.checkbox.text
-msgid "B~order"
-msgstr "किनार (~o)"
+#: source/smres.src#RID_ALIGNDIALOG.1.FixedLine.Text
+#, fuzzy
+msgid  "Horizontal"
+msgstr "आडवे"
 
-#: smres.src#RID_PRINTOPTIONPAGE.FL_PRINT_FORMAT.fixedline.text
-msgid "Print format"
-msgstr "छपाई रूपण"
+#: source/smres.src#RID_ALIGNDIALOG.1.PushButton.Text
+#, fuzzy
+msgid  "~Default"
+msgstr "पूर्वनिर्धारीत (~D)"
 
-#: smres.src#RID_PRINTOPTIONPAGE.RB_ORIGINAL_SIZE.radiobutton.text
-msgctxt "smres.src#RID_PRINTOPTIONPAGE.RB_ORIGINAL_SIZE.radiobutton.text"
-msgid "O~riginal size"
-msgstr "मूळ आकार (~r)"
-
-#: smres.src#RID_PRINTOPTIONPAGE.RB_FIT_TO_PAGE.radiobutton.text
-msgctxt "smres.src#RID_PRINTOPTIONPAGE.RB_FIT_TO_PAGE.radiobutton.text"
-msgid "Fit to ~page"
-msgstr "पानात बसवा (~p)"
-
-#: smres.src#RID_PRINTOPTIONPAGE.RB_ZOOM.radiobutton.text
-msgctxt "smres.src#RID_PRINTOPTIONPAGE.RB_ZOOM.radiobutton.text"
-msgid "~Scaling"
-msgstr "प्रमाणीत करा (~S)"
-
-#: smres.src#RID_PRINTOPTIONPAGE.FL_MISC_OPTIONS.fixedline.text
-msgid "Miscellaneous options"
-msgstr "इतर पर्याय"
-
-#: smres.src#RID_PRINTOPTIONPAGE.CB_IGNORE_SPACING.checkbox.text
-msgid "Ig~nore ~~ and ` at the end of the line"
-msgstr "ओळीच्या शेवटी आढळणारे ~~ व ` दुर्लक्षीत करा (~n)"
-
-#: smres.src#RID_PRINTOPTIONPAGE.CB_SAVE_ONLY_USED_SYMBOLS.checkbox.text
-msgid "Embed only used symbols (smaller file size)"
-msgstr ""
-
-#: smres.src#RID_PRINTOPTIONPAGE.tabpage.text
-msgid "Formula Options:Settings"
+#: source/smres.src#RID_PRINTOPTIONPAGE.TabPage.Text
+#, fuzzy
+msgid  "Formula Options:Settings"
 msgstr "सूत्र पर्याय:संरचना"
 
-#: smres.src#RID_SYMBOLDIALOG.1.fixedtext.text
-msgid "~Symbol set"
-msgstr "चिन्ह संच (~S)"
-
-#: smres.src#RID_SYMBOLDIALOG.2.fixedtext.text
-msgid "Unknown"
-msgstr "अनपेक्षीत"
-
-#: smres.src#RID_SYMBOLDIALOG.2.pushbutton.text
-msgid "~Insert"
-msgstr "अंतर्भूत करा (~I)"
-
-#: smres.src#RID_SYMBOLDIALOG.3.pushbutton.text
-msgid "~Close"
-msgstr "बंद करा (~C)"
-
-#: smres.src#RID_SYMBOLDIALOG.1.pushbutton.text
-msgid "~Edit..."
-msgstr "संपादीत करा (~E)..."
-
-#: smres.src#RID_SYMBOLDIALOG.modaldialog.text
-msgctxt "smres.src#RID_SYMBOLDIALOG.modaldialog.text"
-msgid "Symbols"
-msgstr "चिन्हे"
-
-#: smres.src#RID_SYMDEFINEDIALOG.1.fixedtext.text
-msgid "~Old symbol"
-msgstr "जुने चिन्ह (~O)"
-
-#: smres.src#RID_SYMDEFINEDIALOG.2.fixedtext.text
-msgid "O~ld symbol set"
-msgstr "जुना चिन्ह संच (~l)"
-
-#: smres.src#RID_SYMDEFINEDIALOG.9.fixedtext.text
-msgid "~Symbol"
-msgstr "चिन्ह (~S)"
-
-#: smres.src#RID_SYMDEFINEDIALOG.10.fixedtext.text
-msgid "Symbol s~et"
-msgstr "चिन्ह संच (~e)"
-
-#: smres.src#RID_SYMDEFINEDIALOG.3.fixedtext.text
-msgctxt "smres.src#RID_SYMDEFINEDIALOG.3.fixedtext.text"
-msgid "~Font"
-msgstr "फॉन्ट (~F)"
-
-#: smres.src#RID_SYMDEFINEDIALOG.FT_FONTS_SUBSET.fixedtext.text
-msgid "~Subset"
-msgstr "सबसेट (~S)"
-
-#: smres.src#RID_SYMDEFINEDIALOG.4.fixedtext.text
-msgid "~Typeface"
-msgstr "टाइपफेस् (~T)"
-
-#: smres.src#RID_SYMDEFINEDIALOG.1.pushbutton.text
-msgid "~Add"
-msgstr "समावेश करा (~A)"
-
-#: smres.src#RID_SYMDEFINEDIALOG.2.pushbutton.text
-msgctxt "smres.src#RID_SYMDEFINEDIALOG.2.pushbutton.text"
-msgid "~Modify"
-msgstr "सुधारा (~M)"
-
-#: smres.src#RID_SYMDEFINEDIALOG.3.pushbutton.text
-msgid "~Delete"
-msgstr "नष्ट करा (~D)"
-
-#: smres.src#RID_SYMDEFINEDIALOG.modaldialog.text
-msgid "Edit Symbols"
-msgstr "चिन्हे संपादीत करा"
-
-#: smres.src#RID_NOMATHTYPEFACEWARNING.warningbox.text
-msgid ""
-"The 'StarMath' font has not been installed.\n"
-"Without this font %PRODUCTNAME Math cannot function correctly.\n"
-"Please install this font and restart %PRODUCTNAME Math."
-msgstr ""
-"'StarMath' फॉन्ट  स्थापित झालेला नाही.\n"
-"ह्या फॉन्टशिवाय %PRODUCTNAME मॅथ योग्य प्रकारे कार्य करू शकणार नाही.\n"
-"कृपया हा फॉन्ट स्थापित करा आणि %PRODUCTNAME मॅथ पुनः सुरू करा."
-
-#: smres.src#RID_DEFAULTSAVEQUERY.querybox.text
-msgid ""
-"Should the changes be saved as defaults?\n"
-"\n"
-"These changes will apply for all new formulas."
-msgstr ""
-"हे बदल पूर्वनिर्धारीतसारखे जतन करू देत का? \n"
-"\n"
-"हे बदल सर्व नव्या सूत्रांना लागू होतील."
-
-#: smres.src#RID_FONTREGULAR.string.text
-msgid "Standard"
-msgstr "ठराविक"
-
-#: smres.src#RID_FONTITALIC.string.text
-msgid "Italic"
-msgstr "तिरके"
-
-#: smres.src#RID_FONTBOLD.string.text
-msgid "Bold"
-msgstr "ठळक"
-
-#: smres.src#RID_VIEWMENU.SID_VIEW050.menuitem.text
-msgid "~View 50%"
-msgstr "दृश्य 50% (~V)"
-
-#: smres.src#RID_VIEWMENU.SID_VIEW100.menuitem.text
-msgid "View ~100%"
-msgstr "दृश्य 100% (~1)"
-
-#: smres.src#RID_VIEWMENU.SID_VIEW200.menuitem.text
-msgid "View ~200%"
-msgstr "दृश्य 200% (~2)"
-
-#: smres.src#RID_VIEWMENU.SID_ZOOMIN.menuitem.text
-msgid "~Zoom In"
-msgstr "मोठे करा (~Z)"
-
-#: smres.src#RID_VIEWMENU.SID_ZOOMOUT.menuitem.text
-msgid "Zoom ~Out"
-msgstr "लहान करा (~O)"
-
-#: smres.src#RID_VIEWMENU.SID_ADJUST.menuitem.text
-msgid "~Display All"
-msgstr "सर्व प्रदर्शित करा (~D)"
-
-#: smres.src#RID_VIEWMENU.SID_DRAW.menuitem.text
-msgid "U~pdate"
-msgstr "सुधारणी करा (~p)"
-
-#: smres.src#RID_DISTANCEMENU.WORKARROUND_1.menuitem.text
-msgctxt "smres.src#RID_DISTANCEMENU.WORKARROUND_1.menuitem.text"
-msgid "Spacing"
-msgstr "अंतर"
-
-#: smres.src#RID_DISTANCEMENU.Indexes.menuitem.text
-msgctxt "smres.src#RID_DISTANCEMENU.Indexes.menuitem.text"
-msgid "Indexes"
-msgstr "अनुक्रमणिका"
-
-#: smres.src#RID_DISTANCEMENU.WORKARROUND_3.menuitem.text
-msgctxt "smres.src#RID_DISTANCEMENU.WORKARROUND_3.menuitem.text"
-msgid "Fractions"
-msgstr "फ्रॅक्शन"
-
-#: smres.src#RID_DISTANCEMENU.Fraction_Bars.menuitem.text
-msgid "Fraction Bars"
-msgstr "फ्रॅक्शन पट्टी"
-
-#: smres.src#RID_DISTANCEMENU.Limits.menuitem.text
-msgctxt "smres.src#RID_DISTANCEMENU.Limits.menuitem.text"
-msgid "Limits"
-msgstr "सीमा"
-
-#: smres.src#RID_DISTANCEMENU.Brackets.menuitem.text
-msgctxt "smres.src#RID_DISTANCEMENU.Brackets.menuitem.text"
-msgid "Brackets"
-msgstr "कंस"
-
-#: smres.src#RID_DISTANCEMENU.Matrices.menuitem.text
-msgid "Matrices"
-msgstr "मट्राइसेस्"
-
-#: smres.src#RID_DISTANCEMENU.Symbols.menuitem.text
-msgctxt "smres.src#RID_DISTANCEMENU.Symbols.menuitem.text"
-msgid "Symbols"
-msgstr "चिन्हे"
-
-#: smres.src#RID_DISTANCEMENU.Operators.menuitem.text
-msgctxt "smres.src#RID_DISTANCEMENU.Operators.menuitem.text"
-msgid "Operators"
-msgstr "ऑपरेटर्स्"
-
-#: smres.src#RID_DISTANCEMENU.WORKARROUND_10.menuitem.text
-msgctxt "smres.src#RID_DISTANCEMENU.WORKARROUND_10.menuitem.text"
-msgid "Borders"
-msgstr "किनारी"
-
-#: smres.src#RID_FONTMENU.Variables.menuitem.text
-msgid "Variables"
-msgstr "वेरियेबल्स्"
-
-#: smres.src#RID_FONTMENU.Functions.menuitem.text
-msgctxt "smres.src#RID_FONTMENU.Functions.menuitem.text"
-msgid "Functions"
-msgstr "फंक्श्न्स्"
-
-#: smres.src#RID_FONTMENU.Numbers.menuitem.text
-msgid "Numbers"
-msgstr "क्रमांक"
-
-#: smres.src#RID_FONTMENU.Text.menuitem.text
-msgid "Text"
-msgstr "मजकूर"
-
-#: smres.src#RID_FONTMENU.Serif.menuitem.text
-msgid "Serif"
-msgstr "सेरिफ्"
-
-#: smres.src#RID_FONTMENU.Sans.menuitem.text
-msgid "Sans"
-msgstr "सान्स"
-
-#: smres.src#RID_FONTMENU.Fixed.menuitem.text
-msgid "Fixed"
-msgstr "ठराविक"
-
-#: smres.src#CMDBOXWINDOW_TEXT.#define.text
-msgid "Commands"
-msgstr "आदेश"
-
-#: smres.src#RID_DOCUMENTSTR.string.text
-msgid "Formula"
-msgstr "सूत्र"
-
-#: smres.src#STR_STATSTR_READING.string.text
-msgid "Loading document..."
-msgstr "दस्तऐवज लोड करत आहे..."
-
-#: smres.src#STR_STATSTR_WRITING.string.text
-msgid "Saving document..."
-msgstr "दस्तऐवज जतन करत आहे..."
-
-#: smres.src#STR_MATH_DOCUMENT_FULLTYPE_CURRENT.string.text
-msgid "%PRODUCTNAME %PRODUCTVERSION Formula"
-msgstr "%PRODUCTNAME %PRODUCTVERSION सूत्र"
-
-#: smres.src#RID_SYMBOLFILESSTR.string.text
-msgid "Symbol files (*.sms)"
-msgstr "चिन्ह फाइल्स् (*.sms)"
-
-#: smres.src#RID_ALLFILESSTR.string.text
-msgid "All Files (*.*)"
-msgstr "सर्व फाइल्स् (*.*)"
-
-#: smres.src#RID_ERR_IDENT.string.text
-msgid "ERROR : "
-msgstr "ERROR : "
-
-#: smres.src#RID_ERR_UNKOWN.string.text
-msgid "Unknown error occurred"
-msgstr "अनपेक्षीत त्रुटी आढळली"
-
-#: smres.src#RID_ERR_UNEXPECTEDCHARACTER.string.text
-msgid "Unexpected character"
-msgstr "अनपेक्षीत अक्षर"
-
-#: smres.src#RID_ERR_OVERFLOW.string.text
-msgid "Formula entry too complex"
-msgstr "सूत्र नोंद खूपच जटील आहे"
-
-#: smres.src#RID_ERR_LGROUPEXPECTED.string.text
-msgid "'{' expected"
-msgstr "'{' अपेक्षीत"
-
-#: smres.src#RID_ERR_RGROUPEXPECTED.string.text
-msgid "'}' expected"
-msgstr "'}' अपेक्षीत"
-
-#: smres.src#RID_ERR_LBRACEEXPECTED.string.text
-msgid "'(' expected"
-msgstr "'(' अपेक्षीत"
-
-#: smres.src#RID_ERR_RBRACEEXPECTED.string.text
-msgid "')' expected"
-msgstr "')' अपेक्षीत"
-
-#: smres.src#RID_ERR_FUNCEXPECTED.string.text
-msgid "Function expected"
-msgstr "फंक्शन अपेक्षीत"
-
-#: smres.src#RID_ERR_UNOPEREXPECTED.string.text
-msgid "Unary operator expected"
-msgstr "यूनरी ऑपरेटर अपेक्षीत"
-
-#: smres.src#RID_ERR_BINOPEREXPECTED.string.text
-msgid "Binary operator expected"
-msgstr "बायनरी ऑपरेटर अपेक्षीत"
-
-#: smres.src#RID_ERR_SYMBOLEXPECTED.string.text
-msgid "Symbol expected"
-msgstr "चिन्ह अपेक्षीत"
-
-#: smres.src#RID_ERR_IDENTEXPECTED.string.text
-msgid "Identifier expected"
-msgstr "आयडेंटीफायर अपेक्षीत"
-
-#: smres.src#RID_ERR_POUNDEXPECTED.string.text
-msgid "'#' expected"
-msgstr "'#' अपेक्षीत"
-
-#: smres.src#RID_ERR_COLOREXPECTED.string.text
-msgid "Color required"
-msgstr "रंग आवश्यक"
-
-#: smres.src#RID_ERR_LPARENTEXPECTED.string.text
-msgid "Left limit expected"
-msgstr "डावी सीमा अपेक्षीत"
-
-#: smres.src#RID_ERR_RPARENTEXPECTED.string.text
-msgid "Right limit expected"
-msgstr "उजवी सीमा अपेक्षीत"
-
-#: smres.src#RID_ERR_RIGHTEXPECTED.string.text
-msgid "'RIGHT' expected"
-msgstr "'RIGHT' अपेक्षीत"
-
-#: smres.src#RID_MATH_TOOLBOX.string.text
-msgid "Main Toolbar"
-msgstr "मुख्य उपकरनपट्टी"
-
-#: smres.src#RID_PRINTUIOPTIONS.1.itemlist.text
-msgid "%PRODUCTNAME %s"
-msgstr "%PRODUCTNAME %s"
-
-#: smres.src#RID_PRINTUIOPTIONS.2.itemlist.text
-msgid "Contents"
-msgstr "विषयसूची"
-
-#: smres.src#RID_PRINTUIOPTIONS.3.itemlist.text
-msgid "~Title"
-msgstr "शीर्षक (~T)"
-
-#: smres.src#RID_PRINTUIOPTIONS.4.itemlist.text
+#: source/smres.src#RID_PRINTOPTIONPAGE.FL_PRINTOPTIONS.FixedLine.Text
 #, fuzzy
-msgctxt "smres.src#RID_PRINTUIOPTIONS.4.itemlist.text"
-msgid "~Formula text"
+msgid  "Print options"
+msgstr "छपाई पर्याय"
+
+#: source/smres.src#RID_PRINTOPTIONPAGE.CB_TITLEROW.CheckBox.Text
+#, fuzzy
+msgid  "~Title row"
+msgstr "शीर्षक ओळ (~T)"
+
+#: source/smres.src#RID_PRINTOPTIONPAGE.CB_EQUATION_TEXT.CheckBox.Text
+#, fuzzy
+msgid  "~Formula text"
 msgstr "सूत्र मजकूर (~F)"
 
-#: smres.src#RID_PRINTUIOPTIONS.5.itemlist.text
-msgid "B~orders"
-msgstr "किनारी (~o)"
-
-#: smres.src#RID_PRINTUIOPTIONS.6.itemlist.text
-msgid "Size"
-msgstr "आकार"
-
-#: smres.src#RID_PRINTUIOPTIONS.7.itemlist.text
+#: source/smres.src#RID_PRINTOPTIONPAGE.CB_FRAME.CheckBox.Text
 #, fuzzy
-msgctxt "smres.src#RID_PRINTUIOPTIONS.7.itemlist.text"
-msgid "O~riginal size"
+msgid  "B~order"
+msgstr "किनार (~o)"
+
+#: source/smres.src#RID_PRINTOPTIONPAGE.FL_PRINT_FORMAT.FixedLine.Text
+#, fuzzy
+msgid  "Print format"
+msgstr "छपाई रूपण"
+
+#: source/smres.src#RID_PRINTOPTIONPAGE.RB_ORIGINAL_SIZE.RadioButton.Text
+#, fuzzy
+msgid  "O~riginal size"
 msgstr "मूळ आकार (~r)"
 
-#: smres.src#RID_PRINTUIOPTIONS.8.itemlist.text
+#: source/smres.src#RID_PRINTOPTIONPAGE.RB_FIT_TO_PAGE.RadioButton.Text
 #, fuzzy
-msgctxt "smres.src#RID_PRINTUIOPTIONS.8.itemlist.text"
-msgid "Fit to ~page"
+msgid  "Fit to ~page"
 msgstr "पानात बसवा (~p)"
 
-#: smres.src#RID_PRINTUIOPTIONS.9.itemlist.text
+#: source/smres.src#RID_PRINTOPTIONPAGE.RB_ZOOM.RadioButton.Text
 #, fuzzy
-msgctxt "smres.src#RID_PRINTUIOPTIONS.9.itemlist.text"
-msgid "~Scaling"
+msgid  "~Scaling"
 msgstr "प्रमाणीत करा (~S)"
 
-#: symbol.src#RID_UI_SYMBOLSET_NAMES.1.itemlist.text
-msgid "Greek"
-msgstr "ग्रीक"
-
-#: symbol.src#RID_UI_SYMBOLSET_NAMES.2.itemlist.text
-msgid "Special"
-msgstr "विशेष"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.1.itemlist.text
-msgid "alpha"
-msgstr "अल्फा"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.2.itemlist.text
-msgid "ALPHA"
-msgstr "ALPHA"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.3.itemlist.text
-msgid "beta"
-msgstr "बीटा"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.4.itemlist.text
-msgid "BETA"
-msgstr "BETA"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.5.itemlist.text
-msgid "gamma"
-msgstr "गामा"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.6.itemlist.text
-msgid "GAMMA"
-msgstr "GAMMA"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.7.itemlist.text
-msgid "delta"
-msgstr "डेल्टा"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.8.itemlist.text
-msgid "DELTA"
-msgstr "DELTA"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.9.itemlist.text
-msgid "epsilon"
-msgstr "एप्सीलॉन"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.10.itemlist.text
-msgid "EPSILON"
-msgstr "EPSILON"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.11.itemlist.text
-msgid "zeta"
-msgstr "झीटा"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.12.itemlist.text
-msgid "ZETA"
-msgstr "ZETA"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.13.itemlist.text
-msgid "eta"
-msgstr "इटा"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.14.itemlist.text
-msgid "ETA"
-msgstr "ETA"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.15.itemlist.text
-msgid "theta"
-msgstr "थीटा"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.16.itemlist.text
-msgid "THETA"
-msgstr "THETA"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.17.itemlist.text
-msgid "iota"
-msgstr "आयोटा"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.18.itemlist.text
-msgid "IOTA"
-msgstr "JOTA"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.19.itemlist.text
-msgid "kappa"
-msgstr "काप्पा"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.20.itemlist.text
-msgid "KAPPA"
-msgstr "KAPPA"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.21.itemlist.text
-msgid "lambda"
-msgstr "लांबडा"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.22.itemlist.text
-msgid "LAMBDA"
-msgstr "LAMBDA"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.23.itemlist.text
-msgid "mu"
-msgstr "mu"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.24.itemlist.text
-msgid "MU"
-msgstr "MU"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.25.itemlist.text
-msgid "nu"
-msgstr "nu"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.26.itemlist.text
-msgid "NU"
-msgstr "NU"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.27.itemlist.text
-msgid "xi"
-msgstr "xi"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.28.itemlist.text
-msgid "XI"
-msgstr "XI"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.29.itemlist.text
-msgid "omicron"
-msgstr "ओमिक्रॉन"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.30.itemlist.text
-msgid "OMICRON"
-msgstr "OMICRON"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.31.itemlist.text
-msgid "pi"
-msgstr "pi"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.32.itemlist.text
-msgid "PI"
-msgstr "PI"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.33.itemlist.text
-msgid "rho"
-msgstr "ऱ्हो"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.34.itemlist.text
-msgid "RHO"
-msgstr "RHO"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.35.itemlist.text
-msgid "sigma"
-msgstr "सिग्मा"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.36.itemlist.text
-msgid "SIGMA"
-msgstr "SIGMA"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.37.itemlist.text
-msgid "tau"
-msgstr "टाऊ"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.38.itemlist.text
-msgid "TAU"
-msgstr "TAU"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.39.itemlist.text
-msgid "upsilon"
-msgstr "युप्सीलॉन"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.40.itemlist.text
-msgid "UPSILON"
-msgstr "UPSILON"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.41.itemlist.text
-msgid "phi"
-msgstr "फी"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.42.itemlist.text
-msgid "PHI"
-msgstr "PHI"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.43.itemlist.text
-msgid "chi"
-msgstr "ची"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.44.itemlist.text
-msgid "CHI"
-msgstr "CHI"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.45.itemlist.text
-msgid "psi"
-msgstr "psi"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.46.itemlist.text
-msgid "PSI"
-msgstr "PSI"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.47.itemlist.text
-msgid "omega"
-msgstr "ओमेगा"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.48.itemlist.text
-msgid "OMEGA"
-msgstr "OMEGA"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.49.itemlist.text
-msgid "varepsilon"
-msgstr "वारेप्सिलॉन"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.50.itemlist.text
-msgid "vartheta"
-msgstr "वरथिटा"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.51.itemlist.text
-msgid "varpi"
-msgstr "वर्पि"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.52.itemlist.text
-msgid "varrho"
-msgstr "वर्हो"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.53.itemlist.text
-msgid "varsigma"
-msgstr "वर्सिग्मा"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.54.itemlist.text
-msgid "varphi"
-msgstr "वर्फि"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.55.itemlist.text
-msgid "element"
-msgstr "घटक"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.56.itemlist.text
-msgid "noelement"
-msgstr "noelement"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.57.itemlist.text
-msgid "strictlylessthan"
-msgstr "strictlylessthan"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.58.itemlist.text
-msgid "strictlygreaterthan"
-msgstr "strictlygreaterthan"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.59.itemlist.text
-msgid "notequal"
-msgstr "notequal"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.60.itemlist.text
-msgid "identical"
-msgstr "समरुप"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.61.itemlist.text
-msgid "tendto"
-msgstr "tendto"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.62.itemlist.text
-msgctxt "symbol.src#RID_UI_SYMBOL_NAMES.62.itemlist.text"
-msgid "infinite"
-msgstr "अनन्त"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.63.itemlist.text
-msgid "angle"
-msgstr "कोन"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.64.itemlist.text
-msgid "perthousand"
-msgstr "प्रतिहजार"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.65.itemlist.text
-msgid "and"
-msgstr "आणि"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.66.itemlist.text
-msgid "or"
-msgstr "किंवा"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_UNBINOPS_CAT.toolboxitem.text
+#: source/smres.src#RID_PRINTOPTIONPAGE.FL_MISC_OPTIONS.FixedLine.Text
 #, fuzzy
-msgid "Unary/Binary Operators"
-msgstr "यूनरी/बायनरी ऑपरेटर्स् (~U)"
+msgid  "Miscellaneous options"
+msgstr "इतर पर्याय"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_RELATIONS_CAT.toolboxitem.text
+#: source/smres.src#RID_PRINTOPTIONPAGE.CB_IGNORE_SPACING.CheckBox.Text
 #, fuzzy
-msgid "Relations"
-msgstr "रिलेशन्स् (~R)"
+msgid  "Ig~nore ~~ and ` at the end of the line"
+msgstr "ओळीच्या शेवटी आढळणारे ~~ व ` दुर्लक्षीत करा (~n)"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_SETOPERATIONS_CAT.toolboxitem.text
+#: source/smres.src#RID_PRINTOPTIONPAGE.CB_SAVE_ONLY_USED_SYMBOLS.CheckBox.Text
+msgid  "Embed only used symbols (smaller file size)"
+msgstr ""
+
+#: source/smres.src#RID_SYMBOLDIALOG.ModalDialog.Text
 #, fuzzy
-msgid "Set Operations"
-msgstr "संच कार्यपद्धती (~S)"
+msgid  "Symbols"
+msgstr "चिन्हे"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_FUNCTIONS_CAT.toolboxitem.text
+#: source/smres.src#RID_SYMBOLDIALOG.1.FixedText.Text
 #, fuzzy
-msgctxt "toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_FUNCTIONS_CAT.toolboxitem.text"
-msgid "Functions"
-msgstr "फंक्श्न्स्"
+msgid  "~Symbol set"
+msgstr "चिन्ह संच (~S)"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_OPERATORS_CAT.toolboxitem.text
+#: source/smres.src#RID_SYMBOLDIALOG.2.FixedText.Text
 #, fuzzy
-msgctxt "toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_OPERATORS_CAT.toolboxitem.text"
-msgid "Operators"
-msgstr "ऑपरेटर्स्"
+msgid  "Unknown"
+msgstr "अनपेक्षीत"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_ATTRIBUTES_CAT.toolboxitem.text
+#: source/smres.src#RID_SYMBOLDIALOG.2.PushButton.Text
 #, fuzzy
-msgctxt "toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_ATTRIBUTES_CAT.toolboxitem.text"
-msgid "Attributes"
-msgstr "गुणधर्म"
+msgid  "~Insert"
+msgstr "अंतर्भूत करा (~I)"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_MISC_CAT.toolboxitem.text
+#: source/smres.src#RID_SYMBOLDIALOG.3.PushButton.Text
 #, fuzzy
-msgid "Others"
-msgstr "इतर (~O)"
+msgid  "~Close"
+msgstr "बंद करा (~C)"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_BRACKETS_CAT.toolboxitem.text
+#: source/smres.src#RID_SYMBOLDIALOG.1.PushButton.Text
 #, fuzzy
-msgctxt "toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_BRACKETS_CAT.toolboxitem.text"
-msgid "Brackets"
-msgstr "कंस"
+msgid  "~Edit..."
+msgstr "संपादीत करा (~E)..."
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_FORMAT_CAT.toolboxitem.text
+#: source/smres.src#RID_SYMDEFINEDIALOG.ModalDialog.Text
 #, fuzzy
-msgid "Formats"
-msgstr "रूपण (~m)"
+msgid  "Edit Symbols"
+msgstr "चिन्हे संपादीत करा"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_PLUSX.toolboxitem.text
-msgid "+ Sign"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_MINUSX.toolboxitem.text
-msgid "- Sign"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_PLUSMINUSX.toolboxitem.text
-msgid "+- Sign"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_MINUSPLUSX.toolboxitem.text
-msgid "-+ Sign"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_NEGX.toolboxitem.text
-msgid "Boolean NOT"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XPLUSY.toolboxitem.text
-msgid "Addition +"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XCDOTY.toolboxitem.text
-msgid "Multiplication (Dot )"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XTIMESY.toolboxitem.text
-msgid "Multiplication (x)"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XSYMTIMESY.toolboxitem.text
-msgid "Multiplication (*)"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XANDY.toolboxitem.text
-msgid "Boolean AND"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XMINUSY.toolboxitem.text
-msgid "Subtraction -"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XOVERY.toolboxitem.text
-msgid "Division (Fraction)"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XDIVY.toolboxitem.text
-msgid "Division (÷)"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XSYMDIVIDEY.toolboxitem.text
-msgid "Division (Slash)"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XORY.toolboxitem.text
-msgid "Boolean OR"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XCIRCY.toolboxitem.text
-msgid "Concatenate"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XEQY.toolboxitem.text
-msgid "Is Equal"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XNEQY.toolboxitem.text
-msgid "Is Not Equal"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XAPPROXY.toolboxitem.text
-msgid "Is Approximately Equal"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XDIVIDESY.toolboxitem.text
-msgid "Divides"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XNDIVIDESY.toolboxitem.text
-msgid "Does Not Divide"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XLTY.toolboxitem.text
-msgid "Is Less Than"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XGTY.toolboxitem.text
-msgid "Is Greater Than"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XSIMEQY.toolboxitem.text
-msgid "Is Similar Or Equal"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XPARALLELY.toolboxitem.text
-msgid "Is Parallel To"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XORTHOY.toolboxitem.text
-msgid "Is Orthogonal To"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XLESLANTY.toolboxitem.text
-msgctxt "toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XLESLANTY.toolboxitem.text"
-msgid "Is Less Than Or Equal To"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XGESLANTY.toolboxitem.text
-msgctxt "toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XGESLANTY.toolboxitem.text"
-msgid "Is Greater Than Or Equal To"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XSIMY.toolboxitem.text
-msgid "Is Similar To"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XEQUIVY.toolboxitem.text
-msgid "Is Congruent To"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XLEY.toolboxitem.text
-msgctxt "toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XLEY.toolboxitem.text"
-msgid "Is Less Than Or Equal To"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XGEY.toolboxitem.text
-msgctxt "toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XGEY.toolboxitem.text"
-msgid "Is Greater Than Or Equal To"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XPROPY.toolboxitem.text
-msgid "Is Proportional To"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XTOWARDY.toolboxitem.text
-msgid "Toward"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_DLARROW.toolboxitem.text
-msgid "Double Arrow Left"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_DLRARROW.toolboxitem.text
-msgid "Double Arrow Left And Right"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_DRARROW.toolboxitem.text
-msgid "Double Arrow Right"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XINY.toolboxitem.text
-msgid "Is In"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XNOTINY.toolboxitem.text
-msgid "Is Not In"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XOWNSY.toolboxitem.text
-msgid "Owns"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_EMPTYSET.toolboxitem.text
-msgid "Empty Set"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XINTERSECTIONY.toolboxitem.text
-msgid "Intersection"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XUNIONY.toolboxitem.text
-msgid "Union"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XSETMINUSY.toolboxitem.text
-msgid "Difference"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XSLASHY.toolboxitem.text
-msgid "Quotient Set"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_ALEPH.toolboxitem.text
-msgid "Aleph"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XSUBSETY.toolboxitem.text
+#: source/smres.src#RID_SYMDEFINEDIALOG.1.FixedText.Text
 #, fuzzy
-msgid "Subset"
+msgid  "~Old symbol"
+msgstr "जुने चिन्ह (~O)"
+
+#: source/smres.src#RID_SYMDEFINEDIALOG.2.FixedText.Text
+#, fuzzy
+msgid  "O~ld symbol set"
+msgstr "जुना चिन्ह संच (~l)"
+
+#: source/smres.src#RID_SYMDEFINEDIALOG.9.FixedText.Text
+#, fuzzy
+msgid  "~Symbol"
+msgstr "चिन्ह (~S)"
+
+#: source/smres.src#RID_SYMDEFINEDIALOG.10.FixedText.Text
+#, fuzzy
+msgid  "Symbol s~et"
+msgstr "चिन्ह संच (~e)"
+
+#: source/smres.src#RID_SYMDEFINEDIALOG.3.FixedText.Text
+#, fuzzy
+msgid  "~Font"
+msgstr "फॉन्ट (~F)"
+
+#: source/smres.src#RID_SYMDEFINEDIALOG.FT_FONTS_SUBSET.FixedText.Text
+#, fuzzy
+msgid  "~Subset"
 msgstr "सबसेट (~S)"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XSUBSETEQY.toolboxitem.text
-msgid "Subset Or Equal To"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XSUPSETY.toolboxitem.text
-msgid "Superset"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XSUPSETEQY.toolboxitem.text
-msgid "Superset Or Equal To"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XNSUBSETY.toolboxitem.text
-msgid "Not Subset"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XNSUBSETEQY.toolboxitem.text
-msgid "Not Subset Or Equal"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XNSUPSETY.toolboxitem.text
-msgid "Not Superset"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XNSUPSETEQY.toolboxitem.text
-msgid "Not Superset Or Equal"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_SETN.toolboxitem.text
-msgid "Natural Numbers Set"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_SETZ.toolboxitem.text
-msgid "Integers Set"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_SETQ.toolboxitem.text
-msgid "Set of Rational Numbers"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_SETR.toolboxitem.text
-msgid "Real Numbers Set"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_SETC.toolboxitem.text
-msgid "Complex Numbers Set"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_EX.toolboxitem.text
-msgctxt "toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_EX.toolboxitem.text"
-msgid "Exponential Function"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_LNX.toolboxitem.text
-msgid "Natural Logarithm"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_EXPX.toolboxitem.text
-msgctxt "toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_EXPX.toolboxitem.text"
-msgid "Exponential Function"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_LOGX.toolboxitem.text
-msgid "Logarithm"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_RSUPX.toolboxitem.text
-msgid "Power"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_SINX.toolboxitem.text
+#: source/smres.src#RID_SYMDEFINEDIALOG.4.FixedText.Text
 #, fuzzy
-msgid "Sine"
-msgstr "आकार"
+msgid  "~Typeface"
+msgstr "टाइपफेस् (~T)"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_COSX.toolboxitem.text
-msgid "Cosine"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_TANX.toolboxitem.text
-msgid "Tangent"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_COTX.toolboxitem.text
-msgid "Cotangent"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_SQRTX.toolboxitem.text
-msgid "Square Root"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARCSINX.toolboxitem.text
-msgid "Arcsine"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARCCOSX.toolboxitem.text
-msgid "Arccosine"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARCTANX.toolboxitem.text
-msgid "Arctangent"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARCCOTX.toolboxitem.text
-msgid "Arccotangent"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_NROOTXY.toolboxitem.text
-msgid "N-th Root"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_SINHX.toolboxitem.text
-msgid "Hyperbolic Sine"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_COSHX.toolboxitem.text
-msgid "Hyperbolic Cosine"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_TANHX.toolboxitem.text
-msgid "Hyperbolic Tangent"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_COTHX.toolboxitem.text
-msgid "Hyperbolic Cotangent"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ABSX.toolboxitem.text
-msgid "Absolute Value"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARSINHX.toolboxitem.text
-msgid "Area Hyperbolic Sine"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARCOSHX.toolboxitem.text
-msgid "Area Hyperbolic Cosine"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARTANHX.toolboxitem.text
-msgid "Area Hyperbolic Tangent"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARCOTHX.toolboxitem.text
-msgid "Area Hyperbolic Cotangent"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_FACTX.toolboxitem.text
-msgid "Factorial"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_LIMX.toolboxitem.text
-msgid "Limes"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_SUMX.toolboxitem.text
-msgid "Sum"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_PRODX.toolboxitem.text
-msgid "Product"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_COPRODX.toolboxitem.text
-msgid "Coproduct"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_FROMXTOY.toolboxitem.text
-msgid "Upper And Lower Limit"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_INTX.toolboxitem.text
-msgid "Integral"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_IINTX.toolboxitem.text
-msgid "Double Integral"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_IIINTX.toolboxitem.text
-msgid "Triple Integral"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_FROMX.toolboxitem.text
+#: source/smres.src#RID_SYMDEFINEDIALOG.1.PushButton.Text
 #, fuzzy
-msgid "Lower Limit"
-msgstr "निम्न सीमा (~L)"
+msgid  "~Add"
+msgstr "समावेश करा (~A)"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_LINTX.toolboxitem.text
-msgid "Curve Integral"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_LLINTX.toolboxitem.text
-msgid "Double Curve Integral"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_LLLINTX.toolboxitem.text
-msgid "Triple Curve Integral"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_TOX.toolboxitem.text
+#: source/smres.src#RID_SYMDEFINEDIALOG.2.PushButton.Text
 #, fuzzy
-msgid "Upper Limit"
-msgstr "उच्च सीमा (~U)"
+msgid  "~Modify"
+msgstr "सुधारा (~M)"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_ACUTEX.toolboxitem.text
-msgid "Acute Accent"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_GRAVEX.toolboxitem.text
-msgid "Grave Accent"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_CHECKX.toolboxitem.text
-msgid "Reverse Circumflex"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_BREVEX.toolboxitem.text
-msgid "Breve"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_CIRCLEX.toolboxitem.text
-msgid "Circle"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_VECX.toolboxitem.text
-msgid "Vector Arrow"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_TILDEX.toolboxitem.text
-msgid "Tilde"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_HATX.toolboxitem.text
-msgid "Circumflex"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_BARX.toolboxitem.text
-msgid "Line Above"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_DOTX.toolboxitem.text
-msgid "Dot"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_WIDEVECX.toolboxitem.text
-msgid "Large Vector Arrow"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_WIDETILDEX.toolboxitem.text
-msgid "Large Tilde"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_WIDEHATX.toolboxitem.text
-msgid "Large Circumflex"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_DDOTX.toolboxitem.text
-msgid "Double Dot"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_OVERLINEX.toolboxitem.text
-msgid "Line Over"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_UNDERLINEX.toolboxitem.text
-msgid "Line Below"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_OVERSTRIKEX.toolboxitem.text
-msgid "Line Through"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_DDDOTX.toolboxitem.text
-msgid "Triple Dot"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_PHANTOMX.toolboxitem.text
-msgid "Transparent"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_BOLDX.toolboxitem.text
-msgid "Bold Font"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_ITALX.toolboxitem.text
-msgid "Italic Font"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_SIZEXY.toolboxitem.text
-msgid "Resize"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_FONTXY.toolboxitem.text
-msgid "Change Font"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRPARENTX.toolboxitem.text
-msgid "Round Brackets"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRBRACKETX.toolboxitem.text
-msgid "Square Brackets"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRDBRACKETX.toolboxitem.text
-msgid "Double Square Brackets"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRLINEX.toolboxitem.text
-msgid "Single Lines"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRDLINEX.toolboxitem.text
-msgid "Double Lines"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRBRACEX.toolboxitem.text
+#: source/smres.src#RID_SYMDEFINEDIALOG.3.PushButton.Text
 #, fuzzy
-msgid "Braces"
-msgstr "कंस"
+msgid  "~Delete"
+msgstr "नष्ट करा (~D)"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRANGLEX.toolboxitem.text
-msgid "Angle Brackets"
+#: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
+msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
 msgstr ""
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LMRANGLEXY.toolboxitem.text
-msgid "Operator Brackets"
+#: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
+msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
 msgstr ""
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRGROUPX.toolboxitem.text
-msgid "Group Brackets"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLRPARENTX.toolboxitem.text
-msgid "Round Brackets (Scalable)"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLRBRACKETX.toolboxitem.text
-msgid "Square Brackets (Scalable)"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLRDBRACKETX.toolboxitem.text
-msgid "Double Square Brackets (Scalable)"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLRLINEX.toolboxitem.text
-msgid "Single Lines (Scalable)"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLRDLINEX.toolboxitem.text
-msgid "Double Lines (Scalable)"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLRBRACEX.toolboxitem.text
-msgid "Braces (Scalable)"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLRANGLEX.toolboxitem.text
-msgid "Angle Brackets (Scalable)"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLMRANGLEXY.toolboxitem.text
-msgid "Operator Brackets (Scalable)"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_XOVERBRACEY.toolboxitem.text
-msgid "Braces Top (Scalable)"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_XUNDERBRACEY.toolboxitem.text
-msgid "Braces Bottom (Scalable)"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_LSUPX.toolboxitem.text
-msgid "Superscript Left"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_CSUPX.toolboxitem.text
-msgid "Superscript Top"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_RSUPX.toolboxitem.text
-msgid "Superscript Right"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_BINOMXY.toolboxitem.text
-msgid "Vertical Stack (2 Elements)"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_NEWLINE.toolboxitem.text
+#: source/smres.src#RID_FONTREGULAR.String.Text
 #, fuzzy
-msgctxt "toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_NEWLINE.toolboxitem.text"
-msgid "New Line"
-msgstr "नवीन रेषा"
+msgid  "Standard"
+msgstr "ठराविक"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_LSUBX.toolboxitem.text
-msgid "Subscript Left"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_CSUBX.toolboxitem.text
-msgid "Subscript Bottom"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_RSUBX.toolboxitem.text
-msgid "Subscript Right"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_STACK.toolboxitem.text
-msgid "Vertical Stack"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_SBLANK.toolboxitem.text
+#: source/smres.src#RID_FONTITALIC.String.Text
 #, fuzzy
-msgctxt "toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_SBLANK.toolboxitem.text"
-msgid "Small Gap"
-msgstr "कमी अंतर"
+msgid  "Italic"
+msgstr "तिरके"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_ALIGNLX.toolboxitem.text
-msgid "Align Left"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_ALIGNCX.toolboxitem.text
-msgid "Align Center"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_ALIGNRX.toolboxitem.text
-msgid "Align Right"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_MATRIX.toolboxitem.text
-msgid "Matrix Stack"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_BLANK.toolboxitem.text
+#: source/smres.src#RID_FONTBOLD.String.Text
 #, fuzzy
-msgctxt "toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_BLANK.toolboxitem.text"
-msgid "Gap"
+msgid  "Bold"
+msgstr "ठळक"
+
+#: source/smres.src#RID_VIEWMENU.SID_VIEW050.MenuItem.Text
+#, fuzzy
+msgid  "~View 50%"
+msgstr "दृश्य 50% (~V)"
+
+#: source/smres.src#RID_VIEWMENU.SID_VIEW100.MenuItem.Text
+#, fuzzy
+msgid  "View ~100%"
+msgstr "दृश्य 100% (~1)"
+
+#: source/smres.src#RID_VIEWMENU.SID_VIEW200.MenuItem.Text
+#, fuzzy
+msgid  "View ~200%"
+msgstr "दृश्य 200% (~2)"
+
+#: source/smres.src#RID_VIEWMENU.SID_ZOOMIN.MenuItem.Text
+#, fuzzy
+msgid  "~Zoom In"
+msgstr "मोठे करा (~Z)"
+
+#: source/smres.src#RID_VIEWMENU.SID_ZOOMOUT.MenuItem.Text
+#, fuzzy
+msgid  "Zoom ~Out"
+msgstr "लहान करा (~O)"
+
+#: source/smres.src#RID_VIEWMENU.SID_ADJUST.MenuItem.Text
+#, fuzzy
+msgid  "~Display All"
+msgstr "सर्व प्रदर्शित करा (~D)"
+
+#: source/smres.src#RID_VIEWMENU.SID_DRAW.MenuItem.Text
+#, fuzzy
+msgid  "U~pdate"
+msgstr "सुधारणी करा (~p)"
+
+#: source/smres.src#RID_DISTANCEMENU.WORKARROUND_1.MenuItem.Text
+#, fuzzy
+msgid  "Spacing"
 msgstr "अंतर"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_INFINITY.toolboxitem.text
+#: source/smres.src#RID_DISTANCEMENU.2.MenuItem.Text
 #, fuzzy
-msgctxt "toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_INFINITY.toolboxitem.text"
-msgid "infinite"
-msgstr "अनन्त"
+msgid  "Indexes"
+msgstr "अनुक्रमणिका"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_PARTIAL.toolboxitem.text
-msgid "Partial"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_NABLA.toolboxitem.text
-msgid "Nabla"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_EXISTS.toolboxitem.text
-msgid "There Exists"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_FORALL.toolboxitem.text
-msgid "For All"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_HBAR.toolboxitem.text
-msgid "h Bar"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_LAMBDABAR.toolboxitem.text
-msgid "Lambda Bar"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_RE.toolboxitem.text
-msgid "Real Part"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_IM.toolboxitem.text
-msgid "Imaginary Part"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_WP.toolboxitem.text
-msgid "Weierstrass p"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_LEFTARROW.toolboxitem.text
-msgid "Left Arrow"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_RIGHTARROW.toolboxitem.text
-msgid "Right Arrow"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_UPARROW.toolboxitem.text
-msgid "Up Arrow"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_DOWNARROW.toolboxitem.text
-msgid "Down Arrow"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_DOTSLOW.toolboxitem.text
-msgid "Dots At Bottom"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_DOTSAXIS.toolboxitem.text
-msgid "Dots In Middle"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_DOTSVERT.toolboxitem.text
-msgid "Dots Vertically"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_DOTSUP.toolboxitem.text
-msgid "Dots To Top"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_DOTSDOWN.toolboxitem.text
-msgid "Dots to Bottom"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.floatingwindow.text
+#: source/smres.src#RID_DISTANCEMENU.WORKARROUND_3.MenuItem.Text
 #, fuzzy
-msgid "Elements"
+msgid  "Fractions"
+msgstr "फ्रॅक्शन"
+
+#: source/smres.src#RID_DISTANCEMENU.4.MenuItem.Text
+#, fuzzy
+msgid  "Fraction Bars"
+msgstr "फ्रॅक्शन पट्टी"
+
+#: source/smres.src#RID_DISTANCEMENU.5.MenuItem.Text
+#, fuzzy
+msgid  "Limits"
+msgstr "सीमा"
+
+#: source/smres.src#RID_DISTANCEMENU.6.MenuItem.Text
+#, fuzzy
+msgid  "Brackets"
+msgstr "कंस"
+
+#: source/smres.src#RID_DISTANCEMENU.7.MenuItem.Text
+#, fuzzy
+msgid  "Matrices"
+msgstr "मट्राइसेस्"
+
+#: source/smres.src#RID_DISTANCEMENU.8.MenuItem.Text
+#, fuzzy
+msgid  "Symbols"
+msgstr "चिन्हे"
+
+#: source/smres.src#RID_DISTANCEMENU.9.MenuItem.Text
+#, fuzzy
+msgid  "Operators"
+msgstr "ऑपरेटर्स्"
+
+#: source/smres.src#RID_DISTANCEMENU.WORKARROUND_10.MenuItem.Text
+#, fuzzy
+msgid  "Borders"
+msgstr "किनारी"
+
+#: source/smres.src#RID_FONTMENU.1.MenuItem.Text
+#, fuzzy
+msgid  "Variables"
+msgstr "वेरियेबल्स्"
+
+#: source/smres.src#RID_FONTMENU.2.MenuItem.Text
+#, fuzzy
+msgid  "Functions"
+msgstr "फंक्श्न्स्"
+
+#: source/smres.src#RID_FONTMENU.3.MenuItem.Text
+#, fuzzy
+msgid  "Numbers"
+msgstr "क्रमांक"
+
+#: source/smres.src#RID_FONTMENU.4.MenuItem.Text
+#, fuzzy
+msgid  "Text"
+msgstr "मजकूर"
+
+#: source/smres.src#RID_FONTMENU.5.MenuItem.Text
+#, fuzzy
+msgid  "Serif"
+msgstr "सेरिफ्"
+
+#: source/smres.src#RID_FONTMENU.6.MenuItem.Text
+#, fuzzy
+msgid  "Sans"
+msgstr "सान्स"
+
+#: source/smres.src#RID_FONTMENU.7.MenuItem.Text
+#, fuzzy
+msgid  "Fixed"
+msgstr "ठराविक"
+
+#: source/smres.src#RID_DOCUMENTSTR.String.Text
+#, fuzzy
+msgid  "Formula"
+msgstr "सूत्र"
+
+#: source/smres.src#STR_STATSTR_READING.String.Text
+#, fuzzy
+msgid  "Loading document..."
+msgstr "दस्तऐवज लोड करत आहे..."
+
+#: source/smres.src#STR_STATSTR_WRITING.String.Text
+#, fuzzy
+msgid  "Saving document..."
+msgstr "दस्तऐवज जतन करत आहे..."
+
+#: source/smres.src#STR_MATH_DOCUMENT_FULLTYPE_CURRENT.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME %PRODUCTVERSION Formula"
+msgstr "%PRODUCTNAME %PRODUCTVERSION सूत्र"
+
+#: source/smres.src#RID_SYMBOLFILESSTR.String.Text
+#, fuzzy
+msgid  "Symbol files (*.sms)"
+msgstr "चिन्ह फाइल्स् (*.sms)"
+
+#: source/smres.src#RID_ALLFILESSTR.String.Text
+#, fuzzy
+msgid  "All Files (*.*)"
+msgstr "सर्व फाइल्स् (*.*)"
+
+#: source/smres.src#RID_ERR_IDENT.String.Text
+#, fuzzy
+msgid  "ERROR : "
+msgstr "ERROR : "
+
+#: source/smres.src#RID_ERR_UNKOWN.String.Text
+#, fuzzy
+msgid  "Unknown error occurred"
+msgstr "अनपेक्षीत त्रुटी आढळली"
+
+#: source/smres.src#RID_ERR_UNEXPECTEDCHARACTER.String.Text
+#, fuzzy
+msgid  "Unexpected character"
+msgstr "अनपेक्षीत अक्षर"
+
+#: source/smres.src#RID_ERR_OVERFLOW.String.Text
+#, fuzzy
+msgid  "Formula entry too complex"
+msgstr "सूत्र नोंद खूपच जटील आहे"
+
+#: source/smres.src#RID_ERR_LGROUPEXPECTED.String.Text
+#, fuzzy
+msgid  "'{' expected"
+msgstr "'{' अपेक्षीत"
+
+#: source/smres.src#RID_ERR_RGROUPEXPECTED.String.Text
+#, fuzzy
+msgid  "'}' expected"
+msgstr "'}' अपेक्षीत"
+
+#: source/smres.src#RID_ERR_LBRACEEXPECTED.String.Text
+#, fuzzy
+msgid  "'(' expected"
+msgstr "'(' अपेक्षीत"
+
+#: source/smres.src#RID_ERR_RBRACEEXPECTED.String.Text
+#, fuzzy
+msgid  "')' expected"
+msgstr "')' अपेक्षीत"
+
+#: source/smres.src#RID_ERR_FUNCEXPECTED.String.Text
+#, fuzzy
+msgid  "Function expected"
+msgstr "फंक्शन अपेक्षीत"
+
+#: source/smres.src#RID_ERR_UNOPEREXPECTED.String.Text
+#, fuzzy
+msgid  "Unary operator expected"
+msgstr "यूनरी ऑपरेटर अपेक्षीत"
+
+#: source/smres.src#RID_ERR_BINOPEREXPECTED.String.Text
+#, fuzzy
+msgid  "Binary operator expected"
+msgstr "बायनरी ऑपरेटर अपेक्षीत"
+
+#: source/smres.src#RID_ERR_SYMBOLEXPECTED.String.Text
+#, fuzzy
+msgid  "Symbol expected"
+msgstr "चिन्ह अपेक्षीत"
+
+#: source/smres.src#RID_ERR_IDENTEXPECTED.String.Text
+#, fuzzy
+msgid  "Identifier expected"
+msgstr "आयडेंटीफायर अपेक्षीत"
+
+#: source/smres.src#RID_ERR_POUNDEXPECTED.String.Text
+#, fuzzy
+msgid  "'#' expected"
+msgstr "'#' अपेक्षीत"
+
+#: source/smres.src#RID_ERR_COLOREXPECTED.String.Text
+#, fuzzy
+msgid  "Color required"
+msgstr "रंग आवश्यक"
+
+#: source/smres.src#RID_ERR_LPARENTEXPECTED.String.Text
+#, fuzzy
+msgid  "Left limit expected"
+msgstr "डावी सीमा अपेक्षीत"
+
+#: source/smres.src#RID_ERR_RPARENTEXPECTED.String.Text
+#, fuzzy
+msgid  "Right limit expected"
+msgstr "उजवी सीमा अपेक्षीत"
+
+#: source/smres.src#RID_ERR_RIGHTEXPECTED.String.Text
+#, fuzzy
+msgid  "'RIGHT' expected"
+msgstr "'RIGHT' अपेक्षीत"
+
+#: source/smres.src#RID_MATH_TOOLBOX.String.Text
+#, fuzzy
+msgid  "Main Toolbar"
+msgstr "मुख्य उपकरनपट्टी"
+
+#: source/smres.src#RID_PRINTUIOPTIONS.item1.ItemList.item
+#, fuzzy
+msgid  "%PRODUCTNAME %s"
+msgstr "%PRODUCTNAME %s"
+
+#: source/smres.src#RID_PRINTUIOPTIONS.item2.ItemList.item
+#, fuzzy
+msgid  "Contents"
+msgstr "विषयसूची"
+
+#: source/smres.src#RID_PRINTUIOPTIONS.item3.ItemList.item
+#, fuzzy
+msgid  "~Title"
+msgstr "शीर्षक (~T)"
+
+#: source/smres.src#RID_PRINTUIOPTIONS.item4.ItemList.item
+#, fuzzy
+msgid  "~Formula text"
+msgstr "सूत्र मजकूर (~F)"
+
+#: source/smres.src#RID_PRINTUIOPTIONS.item5.ItemList.item
+#, fuzzy
+msgid  "B~orders"
+msgstr "किनारी (~o)"
+
+#: source/smres.src#RID_PRINTUIOPTIONS.item6.ItemList.item
+#, fuzzy
+msgid  "Size"
+msgstr "आकार"
+
+#: source/smres.src#RID_PRINTUIOPTIONS.item7.ItemList.item
+#, fuzzy
+msgid  "O~riginal size"
+msgstr "मूळ आकार (~r)"
+
+#: source/smres.src#RID_PRINTUIOPTIONS.item8.ItemList.item
+#, fuzzy
+msgid  "Fit to ~page"
+msgstr "पानात बसवा (~p)"
+
+#: source/smres.src#RID_PRINTUIOPTIONS.item9.ItemList.item
+#, fuzzy
+msgid  "~Scaling"
+msgstr "प्रमाणीत करा (~S)"
+
+#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
+#, fuzzy
+msgid  "Commands"
+msgstr "आदेश"
+
+#: source/commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MenuItem.Text
+#, fuzzy
+msgid  "~Unary/Binary Operators"
+msgstr "यूनरी/बायनरी ऑपरेटर्स् (~U)"
+
+#: source/commands.src#RID_COMMANDMENU.RID_RELATIONS_MENU.MenuItem.Text
+#, fuzzy
+msgid  "~Relations"
+msgstr "रिलेशन्स् (~R)"
+
+#: source/commands.src#RID_COMMANDMENU.RID_SETOPERATIONS_MENU.MenuItem.Text
+#, fuzzy
+msgid  "~Set Operations"
+msgstr "संच कार्यपद्धती (~S)"
+
+#: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.MenuItem.Text
+#, fuzzy
+msgid  "~Functions"
+msgstr "फंक्शन (~F)"
+
+#: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.RID_FUNCTIONSOTHER1_MENU.MenuItem.Text
+#, fuzzy
+msgid  "More"
+msgstr "अधिक"
+
+#: source/commands.src#RID_COMMANDMENU.RID_OPERATORS_MENU.MenuItem.Text
+#, fuzzy
+msgid  "O~perators"
+msgstr "ऑपरेटर्स् (~p)"
+
+#: source/commands.src#RID_COMMANDMENU.RID_ATTRIBUTES_MENU.MenuItem.Text
+#, fuzzy
+msgid  "~Attributes"
+msgstr "गुणधर्म (~A)"
+
+#: source/commands.src#RID_COMMANDMENU.RID_BRACKETS_MENU.MenuItem.Text
+#, fuzzy
+msgid  "~Brackets"
+msgstr "कंस (~B)"
+
+#: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.MenuItem.Text
+#, fuzzy
+msgid  "For~mats"
+msgstr "रूपण (~m)"
+
+#: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NEWLINE.MenuItem.Text
+#, fuzzy
+msgid  "New Line"
+msgstr "नवीन रेषा"
+
+#: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_SBLANK.MenuItem.Text
+#, fuzzy
+msgid  "Small Gap"
+msgstr "कमी अंतर"
+
+#: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_BLANK.MenuItem.Text
+#, fuzzy
+msgid  "Gap"
+msgstr "अंतर"
+
+#: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NOSPACE.MenuItem.Text
+#, fuzzy
+msgid  "nospace {...}"
+msgstr "nospace {...}"
+
+#: source/commands.src#RID_COMMANDMENU.RID_MISC_MENU.MenuItem.Text
+#, fuzzy
+msgid  "~Others"
+msgstr "इतर (~O)"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.FloatingWindow.Text
+#, fuzzy
+msgid  "Elements"
 msgstr "घटक"
 
-#~ msgid ""
-#~ "Specifies whether you want the name of the document to be included in the "
-#~ "printout"
-#~ msgstr ""
-#~ "तुम्हाला प्रिंटआउटमध्ये दस्तऐवजाचे नाव समाविष्ट करायचे ते निर्देशीत करते"
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_UNBINOPS_CAT.ToolBoxItem.Text
+#, fuzzy
+msgid  "Unary/Binary Operators"
+msgstr "यूनरी/बायनरी ऑपरेटर्स् (~U)"
 
-#~ msgid ""
-#~ "Specifies whether to include the contents of the 'Commands' window at the "
-#~ "bottom of the printout."
-#~ msgstr ""
-#~ "तुम्हाला प्रिंटआउटच्या तळाशी 'आदेश' पटलात अंतर्भूत माहिती समाविष्ट करायचे ते "
-#~ "निर्देशीत करते."
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_RELATIONS_CAT.ToolBoxItem.Text
+#, fuzzy
+msgid  "Relations"
+msgstr "रिलेशन्स् (~R)"
 
-#~ msgid "Applies a thin border to the formula area in the printout."
-#~ msgstr "प्रिंटआउटच्या सूत्र क्षेत्रकरीता बारीक किनार लागू करते."
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_SETOPERATIONS_CAT.ToolBoxItem.Text
+#, fuzzy
+msgid  "Set Operations"
+msgstr "संच कार्यपद्धती (~S)"
 
-#~ msgid "Prints the formula without adjusting the current font size."
-#~ msgstr "विद्यमान फॉन्टचे आकार सुस्थीतविना सूत्राची छपाई करते."
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_FUNCTIONS_CAT.ToolBoxItem.Text
+#, fuzzy
+msgid  "Functions"
+msgstr "फंक्श्न्स्"
 
-#~ msgid "Adjusts the formula to the page format used in the printout."
-#~ msgstr "सूत्राला प्रिंटआउटमध्ये वापरले जाणाऱ्या पान रूपणशी सुस्थीत करतो."
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_OPERATORS_CAT.ToolBoxItem.Text
+#, fuzzy
+msgid  "Operators"
+msgstr "ऑपरेटर्स्"
 
-#~ msgid ""
-#~ "Reduces or enlarges the size of the printed formula by a specified "
-#~ "enlargement factor."
-#~ msgstr ""
-#~ "निर्देशीत एनलार्जमेंट प्रमाण नुरूप छपाईकृत सूत्राचे आकार कमी किंवा जास्त "
-#~ "करतो."
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_ATTRIBUTES_CAT.ToolBoxItem.Text
+#, fuzzy
+msgid  "Attributes"
+msgstr "गुणधर्म"
 
-#~ msgid "Zoom In"
-#~ msgstr "मोठे करा"
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_MISC_CAT.ToolBoxItem.Text
+#, fuzzy
+msgid  "Others"
+msgstr "इतर (~O)"
 
-#~ msgid "Zoom Out"
-#~ msgstr "लहान करा"
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_BRACKETS_CAT.ToolBoxItem.Text
+#, fuzzy
+msgid  "Brackets"
+msgstr "कंस"
 
-#~ msgid "Zoom 100%"
-#~ msgstr "लहान/मोठे करा 100%"
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_FORMAT_CAT.ToolBoxItem.Text
+#, fuzzy
+msgid  "Formats"
+msgstr "रूपण (~m)"
 
-#~ msgid "Entire Formula"
-#~ msgstr "संपूर्ण सूत्र"
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_PLUSX.ToolBoxItem.Text
+msgid  "+ Sign"
+msgstr ""
 
-#~ msgid "Refresh"
-#~ msgstr "सुधारणी करा"
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_MINUSX.ToolBoxItem.Text
+msgid  "- Sign"
+msgstr ""
 
-#~ msgid "Formula Cursor"
-#~ msgstr "सूत्र कर्सर"
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_PLUSMINUSX.ToolBoxItem.Text
+msgid  "+- Sign"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_MINUSPLUSX.ToolBoxItem.Text
+msgid  "-+ Sign"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_NEGX.ToolBoxItem.Text
+msgid  "Boolean NOT"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XPLUSY.ToolBoxItem.Text
+msgid  "Addition +"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XCDOTY.ToolBoxItem.Text
+msgid  "Multiplication (Dot )"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XTIMESY.ToolBoxItem.Text
+msgid  "Multiplication (x)"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XSYMTIMESY.ToolBoxItem.Text
+msgid  "Multiplication (*)"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XANDY.ToolBoxItem.Text
+msgid  "Boolean AND"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XMINUSY.ToolBoxItem.Text
+msgid  "Subtraction -"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XOVERY.ToolBoxItem.Text
+msgid  "Division (Fraction)"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XDIVY.ToolBoxItem.Text
+msgid  "Division (÷)"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XSYMDIVIDEY.ToolBoxItem.Text
+msgid  "Division (Slash)"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XORY.ToolBoxItem.Text
+msgid  "Boolean OR"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XCIRCY.ToolBoxItem.Text
+msgid  "Concatenate"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XEQY.ToolBoxItem.Text
+msgid  "Is Equal"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XNEQY.ToolBoxItem.Text
+msgid  "Is Not Equal"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XAPPROXY.ToolBoxItem.Text
+msgid  "Is Approximately Equal"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XDIVIDESY.ToolBoxItem.Text
+msgid  "Divides"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XNDIVIDESY.ToolBoxItem.Text
+msgid  "Does Not Divide"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XLTY.ToolBoxItem.Text
+msgid  "Is Less Than"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XGTY.ToolBoxItem.Text
+msgid  "Is Greater Than"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XSIMEQY.ToolBoxItem.Text
+msgid  "Is Similar Or Equal"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XPARALLELY.ToolBoxItem.Text
+msgid  "Is Parallel To"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XORTHOY.ToolBoxItem.Text
+msgid  "Is Orthogonal To"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XLESLANTY.ToolBoxItem.Text
+msgid  "Is Less Than Or Equal To"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XGESLANTY.ToolBoxItem.Text
+msgid  "Is Greater Than Or Equal To"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XSIMY.ToolBoxItem.Text
+msgid  "Is Similar To"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XEQUIVY.ToolBoxItem.Text
+msgid  "Is Congruent To"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XLEY.ToolBoxItem.Text
+msgid  "Is Less Than Or Equal To"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XGEY.ToolBoxItem.Text
+msgid  "Is Greater Than Or Equal To"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XPROPY.ToolBoxItem.Text
+msgid  "Is Proportional To"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XTOWARDY.ToolBoxItem.Text
+msgid  "Toward"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_DLARROW.ToolBoxItem.Text
+msgid  "Double Arrow Left"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_DLRARROW.ToolBoxItem.Text
+msgid  "Double Arrow Left And Right"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_DRARROW.ToolBoxItem.Text
+msgid  "Double Arrow Right"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XINY.ToolBoxItem.Text
+msgid  "Is In"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XNOTINY.ToolBoxItem.Text
+msgid  "Is Not In"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XOWNSY.ToolBoxItem.Text
+msgid  "Owns"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_EMPTYSET.ToolBoxItem.Text
+msgid  "Empty Set"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XINTERSECTIONY.ToolBoxItem.Text
+msgid  "Intersection"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XUNIONY.ToolBoxItem.Text
+msgid  "Union"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XSETMINUSY.ToolBoxItem.Text
+msgid  "Difference"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XSLASHY.ToolBoxItem.Text
+msgid  "Quotient Set"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_ALEPH.ToolBoxItem.Text
+msgid  "Aleph"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XSUBSETY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Subset"
+msgstr "सबसेट (~S)"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XSUBSETEQY.ToolBoxItem.Text
+msgid  "Subset Or Equal To"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XSUPSETY.ToolBoxItem.Text
+msgid  "Superset"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XSUPSETEQY.ToolBoxItem.Text
+msgid  "Superset Or Equal To"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XNSUBSETY.ToolBoxItem.Text
+msgid  "Not Subset"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XNSUBSETEQY.ToolBoxItem.Text
+msgid  "Not Subset Or Equal"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XNSUPSETY.ToolBoxItem.Text
+msgid  "Not Superset"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XNSUPSETEQY.ToolBoxItem.Text
+msgid  "Not Superset Or Equal"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_SETN.ToolBoxItem.Text
+msgid  "Natural Numbers Set"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_SETZ.ToolBoxItem.Text
+msgid  "Integers Set"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_SETQ.ToolBoxItem.Text
+msgid  "Set of Rational Numbers"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_SETR.ToolBoxItem.Text
+msgid  "Real Numbers Set"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_SETC.ToolBoxItem.Text
+msgid  "Complex Numbers Set"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_EX.ToolBoxItem.Text
+msgid  "Exponential Function"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_LNX.ToolBoxItem.Text
+msgid  "Natural Logarithm"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_EXPX.ToolBoxItem.Text
+msgid  "Exponential Function"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_LOGX.ToolBoxItem.Text
+msgid  "Logarithm"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_RSUPX.ToolBoxItem.Text
+msgid  "Power"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_SINX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Sine"
+msgstr "आकार"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_COSX.ToolBoxItem.Text
+msgid  "Cosine"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_TANX.ToolBoxItem.Text
+msgid  "Tangent"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_COTX.ToolBoxItem.Text
+msgid  "Cotangent"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_SQRTX.ToolBoxItem.Text
+msgid  "Square Root"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARCSINX.ToolBoxItem.Text
+msgid  "Arcsine"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARCCOSX.ToolBoxItem.Text
+msgid  "Arccosine"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARCTANX.ToolBoxItem.Text
+msgid  "Arctangent"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARCCOTX.ToolBoxItem.Text
+msgid  "Arccotangent"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_NROOTXY.ToolBoxItem.Text
+msgid  "N-th Root"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_SINHX.ToolBoxItem.Text
+msgid  "Hyperbolic Sine"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_COSHX.ToolBoxItem.Text
+msgid  "Hyperbolic Cosine"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_TANHX.ToolBoxItem.Text
+msgid  "Hyperbolic Tangent"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_COTHX.ToolBoxItem.Text
+msgid  "Hyperbolic Cotangent"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ABSX.ToolBoxItem.Text
+msgid  "Absolute Value"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARSINHX.ToolBoxItem.Text
+msgid  "Area Hyperbolic Sine"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARCOSHX.ToolBoxItem.Text
+msgid  "Area Hyperbolic Cosine"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARTANHX.ToolBoxItem.Text
+msgid  "Area Hyperbolic Tangent"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARCOTHX.ToolBoxItem.Text
+msgid  "Area Hyperbolic Cotangent"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_FACTX.ToolBoxItem.Text
+msgid  "Factorial"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_LIMX.ToolBoxItem.Text
+msgid  "Limes"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_SUMX.ToolBoxItem.Text
+msgid  "Sum"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_PRODX.ToolBoxItem.Text
+msgid  "Product"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_COPRODX.ToolBoxItem.Text
+msgid  "Coproduct"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_FROMXTOY.ToolBoxItem.Text
+msgid  "Upper And Lower Limit"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_INTX.ToolBoxItem.Text
+msgid  "Integral"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_IINTX.ToolBoxItem.Text
+msgid  "Double Integral"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_IIINTX.ToolBoxItem.Text
+msgid  "Triple Integral"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_FROMX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Lower Limit"
+msgstr "निम्न सीमा (~L)"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_LINTX.ToolBoxItem.Text
+msgid  "Curve Integral"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_LLINTX.ToolBoxItem.Text
+msgid  "Double Curve Integral"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_LLLINTX.ToolBoxItem.Text
+msgid  "Triple Curve Integral"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_TOX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Upper Limit"
+msgstr "उच्च सीमा (~U)"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_ACUTEX.ToolBoxItem.Text
+msgid  "Acute Accent"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_GRAVEX.ToolBoxItem.Text
+msgid  "Grave Accent"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_CHECKX.ToolBoxItem.Text
+msgid  "Reverse Circumflex"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_BREVEX.ToolBoxItem.Text
+msgid  "Breve"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_CIRCLEX.ToolBoxItem.Text
+msgid  "Circle"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_VECX.ToolBoxItem.Text
+msgid  "Vector Arrow"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_TILDEX.ToolBoxItem.Text
+msgid  "Tilde"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_HATX.ToolBoxItem.Text
+msgid  "Circumflex"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_BARX.ToolBoxItem.Text
+msgid  "Line Above"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_DOTX.ToolBoxItem.Text
+msgid  "Dot"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_WIDEVECX.ToolBoxItem.Text
+msgid  "Large Vector Arrow"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_WIDETILDEX.ToolBoxItem.Text
+msgid  "Large Tilde"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_WIDEHATX.ToolBoxItem.Text
+msgid  "Large Circumflex"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_DDOTX.ToolBoxItem.Text
+msgid  "Double Dot"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_OVERLINEX.ToolBoxItem.Text
+msgid  "Line Over"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_UNDERLINEX.ToolBoxItem.Text
+msgid  "Line Below"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_OVERSTRIKEX.ToolBoxItem.Text
+msgid  "Line Through"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_DDDOTX.ToolBoxItem.Text
+msgid  "Triple Dot"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_PHANTOMX.ToolBoxItem.Text
+msgid  "Transparent"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_BOLDX.ToolBoxItem.Text
+msgid  "Bold Font"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_ITALX.ToolBoxItem.Text
+msgid  "Italic Font"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_SIZEXY.ToolBoxItem.Text
+msgid  "Resize"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_FONTXY.ToolBoxItem.Text
+msgid  "Change Font"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRPARENTX.ToolBoxItem.Text
+msgid  "Round Brackets"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRBRACKETX.ToolBoxItem.Text
+msgid  "Square Brackets"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRDBRACKETX.ToolBoxItem.Text
+msgid  "Double Square Brackets"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRLINEX.ToolBoxItem.Text
+msgid  "Single Lines"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRDLINEX.ToolBoxItem.Text
+msgid  "Double Lines"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRBRACEX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Braces"
+msgstr "कंस"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRANGLEX.ToolBoxItem.Text
+msgid  "Angle Brackets"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LMRANGLEXY.ToolBoxItem.Text
+msgid  "Operator Brackets"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRGROUPX.ToolBoxItem.Text
+msgid  "Group Brackets"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLRPARENTX.ToolBoxItem.Text
+msgid  "Round Brackets (Scalable)"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLRBRACKETX.ToolBoxItem.Text
+msgid  "Square Brackets (Scalable)"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLRDBRACKETX.ToolBoxItem.Text
+msgid  "Double Square Brackets (Scalable)"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLRLINEX.ToolBoxItem.Text
+msgid  "Single Lines (Scalable)"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLRDLINEX.ToolBoxItem.Text
+msgid  "Double Lines (Scalable)"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLRBRACEX.ToolBoxItem.Text
+msgid  "Braces (Scalable)"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLRANGLEX.ToolBoxItem.Text
+msgid  "Angle Brackets (Scalable)"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLMRANGLEXY.ToolBoxItem.Text
+msgid  "Operator Brackets (Scalable)"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_XOVERBRACEY.ToolBoxItem.Text
+msgid  "Braces Top (Scalable)"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_XUNDERBRACEY.ToolBoxItem.Text
+msgid  "Braces Bottom (Scalable)"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_LSUPX.ToolBoxItem.Text
+msgid  "Superscript Left"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_CSUPX.ToolBoxItem.Text
+msgid  "Superscript Top"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_RSUPX.ToolBoxItem.Text
+msgid  "Superscript Right"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_BINOMXY.ToolBoxItem.Text
+msgid  "Vertical Stack (2 Elements)"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_NEWLINE.ToolBoxItem.Text
+#, fuzzy
+msgid  "New Line"
+msgstr "नवीन रेषा"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_LSUBX.ToolBoxItem.Text
+msgid  "Subscript Left"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_CSUBX.ToolBoxItem.Text
+msgid  "Subscript Bottom"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_RSUBX.ToolBoxItem.Text
+msgid  "Subscript Right"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_STACK.ToolBoxItem.Text
+msgid  "Vertical Stack"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_SBLANK.ToolBoxItem.Text
+#, fuzzy
+msgid  "Small Gap"
+msgstr "कमी अंतर"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_ALIGNLX.ToolBoxItem.Text
+msgid  "Align Left"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_ALIGNCX.ToolBoxItem.Text
+msgid  "Align Center"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_ALIGNRX.ToolBoxItem.Text
+msgid  "Align Right"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_MATRIX.ToolBoxItem.Text
+msgid  "Matrix Stack"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_BLANK.ToolBoxItem.Text
+#, fuzzy
+msgid  "Gap"
+msgstr "अंतर"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_INFINITY.ToolBoxItem.Text
+#, fuzzy
+msgid  "infinite"
+msgstr "अनन्त"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_PARTIAL.ToolBoxItem.Text
+msgid  "Partial"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_NABLA.ToolBoxItem.Text
+msgid  "Nabla"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_EXISTS.ToolBoxItem.Text
+msgid  "There Exists"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_FORALL.ToolBoxItem.Text
+msgid  "For All"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_HBAR.ToolBoxItem.Text
+msgid  "h Bar"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_LAMBDABAR.ToolBoxItem.Text
+msgid  "Lambda Bar"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_RE.ToolBoxItem.Text
+msgid  "Real Part"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_IM.ToolBoxItem.Text
+msgid  "Imaginary Part"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_WP.ToolBoxItem.Text
+msgid  "Weierstrass p"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_LEFTARROW.ToolBoxItem.Text
+msgid  "Left Arrow"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_RIGHTARROW.ToolBoxItem.Text
+msgid  "Right Arrow"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_UPARROW.ToolBoxItem.Text
+msgid  "Up Arrow"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_DOWNARROW.ToolBoxItem.Text
+msgid  "Down Arrow"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_DOTSLOW.ToolBoxItem.Text
+msgid  "Dots At Bottom"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_DOTSAXIS.ToolBoxItem.Text
+msgid  "Dots In Middle"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_DOTSVERT.ToolBoxItem.Text
+msgid  "Dots Vertically"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_DOTSUP.ToolBoxItem.Text
+msgid  "Dots To Top"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_DOTSDOWN.ToolBoxItem.Text
+msgid  "Dots to Bottom"
+msgstr ""
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOLSET_NAMES.item1.ItemList.item
+#, fuzzy
+msgid  "Greek"
+msgstr "ग्रीक"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOLSET_NAMES.item2.ItemList.item
+#, fuzzy
+msgid  "Special"
+msgstr "विशेष"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item1.ItemList.item
+#, fuzzy
+msgid  "alpha"
+msgstr "अल्फा"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item2.ItemList.item
+#, fuzzy
+msgid  "ALPHA"
+msgstr "ALPHA"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item3.ItemList.item
+#, fuzzy
+msgid  "beta"
+msgstr "बीटा"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item4.ItemList.item
+#, fuzzy
+msgid  "BETA"
+msgstr "BETA"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item5.ItemList.item
+#, fuzzy
+msgid  "gamma"
+msgstr "गामा"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item6.ItemList.item
+#, fuzzy
+msgid  "GAMMA"
+msgstr "GAMMA"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item7.ItemList.item
+#, fuzzy
+msgid  "delta"
+msgstr "डेल्टा"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item8.ItemList.item
+#, fuzzy
+msgid  "DELTA"
+msgstr "DELTA"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item9.ItemList.item
+#, fuzzy
+msgid  "epsilon"
+msgstr "एप्सीलॉन"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item10.ItemList.item
+#, fuzzy
+msgid  "EPSILON"
+msgstr "EPSILON"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item11.ItemList.item
+#, fuzzy
+msgid  "zeta"
+msgstr "झीटा"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item12.ItemList.item
+#, fuzzy
+msgid  "ZETA"
+msgstr "ZETA"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item13.ItemList.item
+#, fuzzy
+msgid  "eta"
+msgstr "इटा"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item14.ItemList.item
+#, fuzzy
+msgid  "ETA"
+msgstr "ETA"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item15.ItemList.item
+#, fuzzy
+msgid  "theta"
+msgstr "थीटा"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item16.ItemList.item
+#, fuzzy
+msgid  "THETA"
+msgstr "THETA"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item17.ItemList.item
+#, fuzzy
+msgid  "iota"
+msgstr "आयोटा"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item18.ItemList.item
+#, fuzzy
+msgid  "IOTA"
+msgstr "JOTA"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item19.ItemList.item
+#, fuzzy
+msgid  "kappa"
+msgstr "काप्पा"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item20.ItemList.item
+#, fuzzy
+msgid  "KAPPA"
+msgstr "KAPPA"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item21.ItemList.item
+#, fuzzy
+msgid  "lambda"
+msgstr "लांबडा"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item22.ItemList.item
+#, fuzzy
+msgid  "LAMBDA"
+msgstr "LAMBDA"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item23.ItemList.item
+#, fuzzy
+msgid  "mu"
+msgstr "mu"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item24.ItemList.item
+#, fuzzy
+msgid  "MU"
+msgstr "MU"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item25.ItemList.item
+#, fuzzy
+msgid  "nu"
+msgstr "nu"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item26.ItemList.item
+#, fuzzy
+msgid  "NU"
+msgstr "NU"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item27.ItemList.item
+#, fuzzy
+msgid  "xi"
+msgstr "xi"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item28.ItemList.item
+#, fuzzy
+msgid  "XI"
+msgstr "XI"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item29.ItemList.item
+#, fuzzy
+msgid  "omicron"
+msgstr "ओमिक्रॉन"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item30.ItemList.item
+#, fuzzy
+msgid  "OMICRON"
+msgstr "OMICRON"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item31.ItemList.item
+#, fuzzy
+msgid  "pi"
+msgstr "pi"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item32.ItemList.item
+#, fuzzy
+msgid  "PI"
+msgstr "PI"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item33.ItemList.item
+#, fuzzy
+msgid  "rho"
+msgstr "ऱ्हो"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item34.ItemList.item
+#, fuzzy
+msgid  "RHO"
+msgstr "RHO"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item35.ItemList.item
+#, fuzzy
+msgid  "sigma"
+msgstr "सिग्मा"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item36.ItemList.item
+#, fuzzy
+msgid  "SIGMA"
+msgstr "SIGMA"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item37.ItemList.item
+#, fuzzy
+msgid  "tau"
+msgstr "टाऊ"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item38.ItemList.item
+#, fuzzy
+msgid  "TAU"
+msgstr "TAU"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item39.ItemList.item
+#, fuzzy
+msgid  "upsilon"
+msgstr "युप्सीलॉन"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item40.ItemList.item
+#, fuzzy
+msgid  "UPSILON"
+msgstr "UPSILON"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item41.ItemList.item
+#, fuzzy
+msgid  "phi"
+msgstr "फी"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item42.ItemList.item
+#, fuzzy
+msgid  "PHI"
+msgstr "PHI"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item43.ItemList.item
+#, fuzzy
+msgid  "chi"
+msgstr "ची"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item44.ItemList.item
+#, fuzzy
+msgid  "CHI"
+msgstr "CHI"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item45.ItemList.item
+#, fuzzy
+msgid  "psi"
+msgstr "psi"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item46.ItemList.item
+#, fuzzy
+msgid  "PSI"
+msgstr "PSI"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item47.ItemList.item
+#, fuzzy
+msgid  "omega"
+msgstr "ओमेगा"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item48.ItemList.item
+#, fuzzy
+msgid  "OMEGA"
+msgstr "OMEGA"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item49.ItemList.item
+#, fuzzy
+msgid  "varepsilon"
+msgstr "वारेप्सिलॉन"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item50.ItemList.item
+#, fuzzy
+msgid  "vartheta"
+msgstr "वरथिटा"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item51.ItemList.item
+#, fuzzy
+msgid  "varpi"
+msgstr "वर्पि"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item52.ItemList.item
+#, fuzzy
+msgid  "varrho"
+msgstr "वर्हो"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item53.ItemList.item
+#, fuzzy
+msgid  "varsigma"
+msgstr "वर्सिग्मा"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item54.ItemList.item
+#, fuzzy
+msgid  "varphi"
+msgstr "वर्फि"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item55.ItemList.item
+#, fuzzy
+msgid  "element"
+msgstr "घटक"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item56.ItemList.item
+#, fuzzy
+msgid  "noelement"
+msgstr "noelement"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item57.ItemList.item
+#, fuzzy
+msgid  "strictlylessthan"
+msgstr "strictlylessthan"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item58.ItemList.item
+#, fuzzy
+msgid  "strictlygreaterthan"
+msgstr "strictlygreaterthan"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item59.ItemList.item
+#, fuzzy
+msgid  "notequal"
+msgstr "notequal"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item60.ItemList.item
+#, fuzzy
+msgid  "identical"
+msgstr "समरुप"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item61.ItemList.item
+#, fuzzy
+msgid  "tendto"
+msgstr "tendto"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item62.ItemList.item
+#, fuzzy
+msgid  "infinite"
+msgstr "अनन्त"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item63.ItemList.item
+#, fuzzy
+msgid  "angle"
+msgstr "कोन"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item64.ItemList.item
+#, fuzzy
+msgid  "perthousand"
+msgstr "प्रतिहजार"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item65.ItemList.item
+#, fuzzy
+msgid  "and"
+msgstr "आणि"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item66.ItemList.item
+#, fuzzy
+msgid  "or"
+msgstr "किंवा"

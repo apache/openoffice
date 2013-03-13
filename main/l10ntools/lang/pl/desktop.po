@@ -1,1389 +1,1052 @@
-#: wizard.src#DLG_FIRSTSTART_WIZARD.modaldialog.text
-msgctxt "wizard.src#DLG_FIRSTSTART_WIZARD.modaldialog.text"
-msgid "Welcome to %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Witaj w %PRODUCTNAME %PRODUCTVERSION"
-
-#: wizard.src#STR_STATE_WELCOME.string.text
-msgid "Welcome"
-msgstr "Witaj"
-
-#: wizard.src#STR_STATE_LICENSE.string.text
-msgid "License Agreement"
-msgstr "Umowa licencyjna"
-
-#: wizard.src#STR_STATE_MIGRATION.string.text
-msgid "Personal Data"
-msgstr "Dane osobiste"
-
-#: wizard.src#STR_STATE_USER.string.text
-msgid "User name"
-msgstr "Dane użytkownika"
-
-#: wizard.src#STR_STATE_UPDATE_CHECK.string.text
-msgctxt "wizard.src#STR_STATE_UPDATE_CHECK.string.text"
-msgid "Online Update"
-msgstr "Aktualizacja online"
-
-#: wizard.src#STR_STATE_REGISTRATION.string.text
-msgid "Registration"
-msgstr "Rejestracja"
-
-#: wizard.src#STR_WELCOME_MIGRATION.string.text
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
 msgid ""
-"This wizard will guide you through the license agreement, the transfer of "
-"user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n"
-"\n"
-"Click 'Next' to continue."
 msgstr ""
-"Ten kreator przeprowadzi Cię przez kolejne kroki: zatwierdzenie licencji, "
-"przeniesienie danych użytkownika z  %OLD_VERSION oraz rejestrację "
-"%PRODUCTNAME.\n"
-"\n"
-"Kliknij przycisk „Dalej”, aby kontynuować."
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
 
-#: wizard.src#STR_WELCOME_WITHOUT_LICENSE.string.text
-msgid ""
-"This wizard will guide you through the registration of %PRODUCTNAME.\n"
-"\n"
-"Click 'Next' to continue."
+
+#: source/app/desktop.src#STR_RECOVER_QUERY.String.Text
+msgid  "Should the file "$1" be restored?"
 msgstr ""
-"Ten kreator przeprowadzi Cię przez rejestrację %PRODUCTNAME.\n"
-"\n"
-"Kliknij przycisk „Dalej”, aby kontynuować."
 
-#: wizard.src#STR_FINISH.string.text
-msgid "~Finish"
-msgstr "~Zakończ"
-
-#: wizard.src#STR_REGISTRATION_OOO.string.text
-msgid ""
-"You now have the opportunity to support and contribute to the fastest "
-"growing open source community in the world.\n"
-"\n"
-"Help us prove that %PRODUCTNAME has already gained significant market share "
-"by registering.\n"
-"\n"
-"Registering is voluntary and without obligation."
-msgstr ""
-"Masz teraz szansę wesprzeć i mieć swój udział w najszybciej rozwijającej się "
-"społeczności open source na świecie.\n"
-"\n"
-"Pomóż nam udowodnić, że %PRODUCTNAME% posiada już znaczący udział w rynku, "
-"rejestrując się.\n"
-"\n"
-"Rejestracja nie jest obowiązkowa."
-
-#: wizard.src#ERRBOX_REG_NOSYSBROWSER.errorbox.text
-msgid ""
-"An error occurred in starting the web browser.\n"
-"Please check the %PRODUCTNAME and web browser settings."
-msgstr ""
-"Wystąpił błąd podczas uruchamiania przeglądarki internetowej.\\Sprawdź "
-"ustawienia dotyczące przeglądarki."
-
-#: wizard.src#QB_ASK_DECLINE.querybox.text
-msgid "Do you really want to decline?"
-msgstr "Czy na pewno chcesz odrzucić licencję?"
-
-#: wizard.src#TP_WELCOME.FT_WELCOME_HEADER.fixedtext.text
-msgctxt "wizard.src#TP_WELCOME.FT_WELCOME_HEADER.fixedtext.text"
-msgid "Welcome to %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Witaj w %PRODUCTNAME %PRODUCTVERSION"
-
-#: wizard.src#TP_WELCOME.FT_WELCOME_BODY.fixedtext.text
-msgid ""
-"This wizard will guide you through the license agreement and the "
-"registration of %PRODUCTNAME.\n"
-"\n"
-"Click 'Next' to continue."
-msgstr ""
-"Ten kreator przeprowadzi Cię przez kolejne kroki: zatwierdzenie licencji "
-"oraz rejestrację %PRODUCTNAME.\n"
-"\n"
-"Kliknij przycisk „Dalej”, aby kontynuować. "
-
-#: wizard.src#TP_LICENSE.FT_LICENSE_HEADER.fixedtext.text
-msgid "Please follow these steps to accept the license"
-msgstr "Aby zaakceptować licencję, wykonaj następujące czynności"
-
-#: wizard.src#TP_LICENSE.FT_LICENSE_BODY_1.fixedtext.text
-msgid "1."
-msgstr "1."
-
-#: wizard.src#TP_LICENSE.FT_LICENSE_BODY_1_TXT.fixedtext.text
-msgid ""
-"View the complete License Agreement. Please use the scrollbar or the "
-"'%PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
-"Zapoznaj się z całą licencją. Użyj paska przewijania lub klawisza  "
-"'%PAGEDOWN' aby przeczytać cały tekst."
-
-#: wizard.src#TP_LICENSE.FT_LICENSE_BODY_2.fixedtext.text
-msgid "2."
-msgstr "2."
-
-#: wizard.src#TP_LICENSE.FT_LICENSE_BODY_2_TXT.fixedtext.text
-msgid "Click 'Accept' to accept the terms of the Agreement."
-msgstr "Kliknij przycisk 'Akceptuj' aby zatwierdzić postanowienia licencji."
-
-#: wizard.src#TP_LICENSE.PB_LICENSE_DOWN.pushbutton.text
-msgid "Scroll Do~wn"
-msgstr "Przewiń w dół"
-
-#: wizard.src#STR_LICENSE_ACCEPT.string.text
-msgid "~Accept"
-msgstr "~Akceptuj"
-
-#: wizard.src#STR_LICENSE_DECLINE.string.text
-msgid "~Decline"
-msgstr "~Odrzuć"
-
-#: wizard.src#TP_MIGRATION.FT_MIGRATION_HEADER.fixedtext.text
-msgctxt "wizard.src#TP_MIGRATION.FT_MIGRATION_HEADER.fixedtext.text"
-msgid "Transfer personal data"
-msgstr "Przenieś dane użytkownika"
-
-#: wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.fixedtext.text
-msgid ""
-"Most personal data from %OLDPRODUCT installation can be reused in "
-"%PRODUCTNAME %PRODUCTVERSION.\n"
-"\n"
-"If you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, "
-"unmark the check box."
-msgstr ""
-"Dane użytkownika z instalacji %OLDPRODUCT mogą zostać przeniesione do "
-"%PRODUCTNAME %PRODUCTVERSION.\n"
-"\n"
-"Usuń zaznaczenie poniższej opcji, aby dane takie jak szablony, słowniki czy "
-"galerie nie zostały skopiowane do %PRODUCTNAME %PRODUCTVERSION. Aby "
-"przenieść wszystkie dane z poprzedniej wersji %PRODUCTNAME, postępuj zgodnie "
-"ze wskazówkami zawartymi w pliku Readme."
-
-#: wizard.src#TP_MIGRATION.CB_MIGRATION.checkbox.text
-msgctxt "wizard.src#TP_MIGRATION.CB_MIGRATION.checkbox.text"
-msgid "Transfer personal data"
-msgstr "Przenieś dane użytkownika"
-
-#: wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_HEADER.fixedtext.text
-msgctxt "wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_HEADER.fixedtext.text"
-msgid "Online Update"
-msgstr "Aktualizacja online"
-
-#: wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_BODY.fixedtext.text
-msgid ""
-"%PRODUCTNAME searches automatically at regular intervals for new versions.\n"
-"In doing so online update does not transfer personal data.\n"
-"As soon as a new version is available, you will be notified.\n"
-"\n"
-"You can configure this feature at Tools / Options... / %PRODUCTNAME / Online "
-"Update."
-msgstr ""
-"W regularnych odstępach czasu program %PRODUCTNAME sprawdza obecność nowych "
-"wersji.\n"
-"Podczas aktualizacji online nie są przesyłane żadne dane użytkownika.\n"
-"Po pojawieniu się nowej wersji zostaje wyświetlone powiadomienie.\n"
-"\n"
-"Tę funkcję można konfigurować, wybierając kolejno polecenia Narzędzia / "
-"Opcje...  / %PRODUCTNAME / Aktualizacja online"
-
-#: wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.checkbox.text
-msgid "~Check for updates automatically"
-msgstr "~Sprawdzaj aktualizacje automatycznie"
-
-#: wizard.src#TP_USER.FT_USER_HEADER.fixedtext.text
-msgid "Provide your full name and initials below"
-msgstr "Podaj imię, nazwisko i inicjały"
-
-#: wizard.src#TP_USER.FT_USER_BODY.fixedtext.text
-msgid ""
-"The user name will be used in the document properties, templates and when "
-"you record changes made to documents."
-msgstr ""
-"Imię i nazwisko będzie widoczne we właściwościach dokumentów, szablonów i "
-"przy rejestrowaniu zmian dokonanych w dokumentach."
-
-#: wizard.src#TP_USER.FT_USER_FIRST.fixedtext.text
-msgid "~First name"
-msgstr "~Imię"
-
-#: wizard.src#TP_USER.FT_USER_LAST.fixedtext.text
-msgid "~Last name"
-msgstr "~Nazwisko"
-
-#: wizard.src#TP_USER.FT_USER_INITIALS.fixedtext.text
-msgid "~Initials"
-msgstr "~Inicjały"
-
-#: wizard.src#TP_USER.FT_USER_FATHER.fixedtext.text
-msgid "~Father's name"
-msgstr "~Imię ojca"
-
-#: wizard.src#TP_REGISTRATION.FT_REGISTRATION_HEADER.fixedtext.text
-msgid "%PRODUCTNAME Registration"
-msgstr "Rejestracja %PRODUCTNAME"
-
-#: wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.fixedtext.text
-msgid ""
-"You now have the opportunity to register as a %PRODUCTNAME user. "
-"Registration is voluntary and is without obligation.\n"
-"\n"
-"If you register, we can inform you about new developments concerning this "
-"product."
-msgstr ""
-"Masz teraz możliwość zarejestrowania się jak użytkownik %PRODUCTNAME. "
-"Rejestracja jest dobrowolna.\n"
-"\n"
-"Jeżeli się zarejestrujesz i będziesz sobie tego życzyć możemy przesyłać Ci "
-"informacje dotyczące tego produktu."
-
-#: wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.radiobutton.text
-msgid "I want to register ~now"
-msgstr "Chcę się zarejestrować teraz"
-
-#: wizard.src#TP_REGISTRATION.RB_REGISTRATION_LATER.radiobutton.text
-msgid "I want to register ~later"
-msgstr "Chcę się zarejestrować później"
-
-#: wizard.src#TP_REGISTRATION.RB_REGISTRATION_NEVER.radiobutton.text
-msgid "I do not want to ~register"
-msgstr "Nie chcę się rejestrować"
-
-#: wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.fixedtext.text
-msgid ""
-"We hope you enjoy working with %PRODUCTNAME.\n"
-"\n"
-"To exit the wizard, click 'Finish'."
-msgstr ""
-"Życzymy przyjemnej pracy z pakietem %PRODUCTNAME.\n"
-"\n"
-"Aby zakończyć, kliknij przycisk „Zakończ”."
-#: desktop.src#STR_RECOVER_QUERY.string.text
-msgid "Should the file \"$1\" be restored?"
-msgstr "Czy przywrócić plik \"$1\"?"
-
-#: desktop.src#STR_RECOVER_TITLE.string.text
-msgid "File Recovery"
+#: source/app/desktop.src#STR_RECOVER_TITLE.String.Text
+msgid  "File Recovery"
 msgstr "Odzyskiwanie plików"
 
-#: desktop.src#STR_RECOVER_PREPARED.warningbox.text
-msgid ""
-"An unrecoverable error has occurred.\n"
-"\n"
-"All modified files have been saved and can\n"
-"probably be recovered at program restart."
+#: source/app/desktop.src#STR_RECOVER_PREPARED.WarningBox.Message
+msgid  "An unrecoverable error has occurred.\n\nAll modified files have been saved and can\nprobably be recovered at program restart."
 msgstr ""
-"Wystąpił nieodwracalny błąd.\n"
-"\n"
-"Wszystkie zmodyfikowane pliki zostały zapisane\n"
-"i prawdopodobnie zostaną przywrócone przy następnym uruchomieniu programu."
 
-#: desktop.src#STR_BOOTSTRAP_ERR_CANNOT_START.string.text
-msgid "The application cannot be started. "
+#: source/app/desktop.src#STR_BOOTSTRAP_ERR_CANNOT_START.String.Text
+msgid  "The application cannot be started. "
 msgstr "Uruchomienie aplikacji nie jest możliwe."
 
-#: desktop.src#STR_BOOTSTRAP_ERR_DIR_MISSING.string.text
-msgid "The configuration directory \"$1\" could not be found."
-msgstr "Nie znaleziono ścieżki konfiguracyjnej \"$1\"."
+#: source/app/desktop.src#STR_BOOTSTRAP_ERR_DIR_MISSING.String.Text
+msgid  "The configuration directory "$1" could not be found."
+msgstr ""
 
-#: desktop.src#STR_BOOTSTRAP_ERR_PATH_INVALID.string.text
-msgid "The installation path is invalid."
+#: source/app/desktop.src#STR_BOOTSTRAP_ERR_PATH_INVALID.String.Text
+msgid  "The installation path is invalid."
 msgstr "Ścieżka instalacyjna jest nieprawidłowa."
 
-#: desktop.src#STR_BOOTSTRAP_ERR_NO_PATH.string.text
-msgid "The installation path is not available."
+#: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_PATH.String.Text
+msgid  "The installation path is not available."
 msgstr "Ścieżka instalacyjna jest niedostępna."
 
-#: desktop.src#STR_BOOTSTRAP_ERR_INTERNAL.string.text
-msgid "An internal error occurred."
+#: source/app/desktop.src#STR_BOOTSTRAP_ERR_INTERNAL.String.Text
+msgid  "An internal error occurred."
 msgstr "Wystąpił wewnętrzny błąd."
 
-#: desktop.src#STR_BOOTSTRAP_ERR_FILE_CORRUPT.string.text
-msgid "The configuration file \"$1\" is corrupt."
-msgstr "Plik konfiguracyjny \"$1\" jest uszkodzony."
+#: source/app/desktop.src#STR_BOOTSTRAP_ERR_FILE_CORRUPT.String.Text
+msgid  "The configuration file "$1" is corrupt."
+msgstr ""
 
-#: desktop.src#STR_BOOTSTRAP_ERR_FILE_MISSING.string.text
-msgid "The configuration file \"$1\" was not found."
-msgstr "Nie znaleziono pliku konfiguracyjnego \"$1\"."
+#: source/app/desktop.src#STR_BOOTSTRAP_ERR_FILE_MISSING.String.Text
+msgid  "The configuration file "$1" was not found."
+msgstr ""
 
-#: desktop.src#STR_BOOTSTRAP_ERR_NO_SUPPORT.string.text
-msgid "The configuration file \"$1\" does not support the current version."
-msgstr "Plik konfiguracyjny \"$1\" nie obsługuje bieżącej wersji."
+#: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_SUPPORT.String.Text
+msgid  "The configuration file "$1" does not support the current version."
+msgstr ""
 
-#: desktop.src#STR_BOOTSTRAP_ERR_LANGUAGE_MISSING.string.text
-msgid "The user interface language cannot be determined."
+#: source/app/desktop.src#STR_BOOTSTRAP_ERR_LANGUAGE_MISSING.String.Text
+msgid  "The user interface language cannot be determined."
 msgstr "Nie można określić języka interfejsu użytkownika."
 
-#: desktop.src#STR_BOOTSTRAP_ERR_NO_SERVICE.string.text
-msgid "The component manager is not available."
+#: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_SERVICE.String.Text
+msgid  "The component manager is not available."
 msgstr "Menedżer komponentów nie jest dostępny."
 
-#: desktop.src#STR_BOOTSTRAP_ERR_NO_CFG_SERVICE.string.text
-msgid "The configuration service is not available."
+#: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_CFG_SERVICE.String.Text
+msgid  "The configuration service is not available."
 msgstr "Usługa konfiguracyjna nie jest dostępna."
 
-#: desktop.src#STR_BOOTSTRAP_ERR_MULTISESSION.string.text
-msgid ""
-"You have another instance running in a different terminal session. Close "
-"that instance and then try again."
-msgstr "Program jest już uruchomiony. Zamknij do i spróbuj ponownie."
-
-#: desktop.src#STR_ASK_START_SETUP_MANUALLY.string.text
-msgid ""
-"Start the setup application to repair the installation from the CD or the "
-"folder containing the installation packages."
+#: source/app/desktop.src#STR_BOOTSTRAP_ERR_MULTISESSION.String.Text
+msgid  "You have another instance running in a different terminal session. Close that instance and then try again."
 msgstr ""
-"Aby naprawić instalację, uruchom aplikację instalacyjną albo z dysku CD, "
-"albo z folderu zawierającego pakiety instalacyjne."
 
-#: desktop.src#STR_CONFIG_ERR_SETTINGS_INCOMPLETE.string.text
-msgid ""
-"The startup settings for accessing the central configuration are incomplete. "
+#: source/app/desktop.src#STR_ASK_START_SETUP_MANUALLY.String.Text
+msgid  "Start the setup application to repair the installation from the CD or the folder containing the installation packages."
 msgstr ""
-"Ustawienia startowe służące dostępowi do centralnej konfiguracji są "
-"niekompletne. "
 
-#: desktop.src#STR_CONFIG_ERR_CANNOT_CONNECT.string.text
-msgid "A connection to the central configuration could not be established. "
+#: source/app/desktop.src#STR_CONFIG_ERR_SETTINGS_INCOMPLETE.String.Text
+msgid  "The startup settings for accessing the central configuration are incomplete. "
+msgstr ""
+
+#: source/app/desktop.src#STR_CONFIG_ERR_CANNOT_CONNECT.String.Text
+msgid  "A connection to the central configuration could not be established. "
 msgstr "Nie można ustanowić połączenia z konfiguracją centralną."
 
-#: desktop.src#STR_CONFIG_ERR_RIGHTS_MISSING.string.text
-msgid ""
-"You cannot access the central configuration because of missing access "
-"rights. "
-msgstr "Nie masz praw dostępu do konfiguracji centralnej."
-
-#: desktop.src#STR_CONFIG_ERR_ACCESS_GENERAL.string.text
-msgid "A general error occurred while accessing your central configuration. "
+#: source/app/desktop.src#STR_CONFIG_ERR_RIGHTS_MISSING.String.Text
+msgid  "You cannot access the central configuration because of missing access rights. "
 msgstr ""
-"Podczas dostępu do konfiguracji centralnej wystąpił ogólny błąd dostępu."
 
-#: desktop.src#STR_CONFIG_ERR_NO_WRITE_ACCESS.string.text
-msgid ""
-"The changes to your personal settings cannot be stored centrally because of "
-"missing access rights. "
+#: source/app/desktop.src#STR_CONFIG_ERR_ACCESS_GENERAL.String.Text
+msgid  "A general error occurred while accessing your central configuration. "
 msgstr ""
-"Nie masz wystarczających praw dostępu, aby zapisać zmiany ustawień "
-"osobistych. "
 
-#: desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.string.text
-msgid ""
-"%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME "
-"configuration data.\n"
-"\n"
-"Please contact your system administrator."
+#: source/app/desktop.src#STR_CONFIG_ERR_NO_WRITE_ACCESS.String.Text
+msgid  "The changes to your personal settings cannot be stored centrally because of missing access rights. "
 msgstr ""
-"%PRODUCTNAME nie może być uruchomiony z powodu błędu dostępu do danych "
-"konfiguracyjnych.\n"
-"\n"
-"Proszę skontaktować się z administratorem."
 
-#: desktop.src#STR_INTERNAL_ERRMSG.string.text
-msgid "The following internal error has occurred: "
+#: source/app/desktop.src#STR_BOOTSTRAP_ERR_CFG_DATAACCESS.String.Text
+msgid  "%PRODUCTNAME cannot be started due to an error in accessing the %PRODUCTNAME configuration data.\n\nPlease contact your system administrator."
+msgstr ""
+
+#: source/app/desktop.src#STR_INTERNAL_ERRMSG.String.Text
+msgid  "The following internal error has occurred: "
 msgstr "Wystąpił następujący błąd wewnętrzny: "
 
-#: desktop.src#QBX_USERDATALOCKED.querybox.text
-msgid ""
-"Either another instance of %PRODUCTNAME is accessing your personal settings "
-"or your personal settings are locked.\n"
-"Simultaneous access can lead to inconsistencies in your personal settings. "
-"Before continuing, you should make sure user '$u' closes %PRODUCTNAME on "
-"host '$h'.\n"
-"\n"
-"Do you really want to continue?"
+#: source/app/desktop.src#QBX_USERDATALOCKED.QueryBox.Message
+msgid  "Either another instance of %PRODUCTNAME is accessing your personal settings or your personal settings are locked.\nSimultaneous access can lead to inconsistencies in your personal settings. Before continuing, you should make sure user '$u' closes %PRODUCTNAME on host '$h'.\n\nDo you really want to continue?"
 msgstr ""
-"Albo inna kopia %PRODUCTNAME ma dostęp do Twoich ustawień, albo ustawienia "
-"użytkownika zostały zablokowane.\n"
-"Równoczesny dostęp do danych może spowodować niespójność danych. Należy "
-"upewnić się, że użytkownik '$u' zamknął %PRODUCTNAME na komputerze '$h'.\n"
-"\n"
-"Czy na pewno chcesz kontynuować?"
 
-#: desktop.src#STR_TITLE_USERDATALOCKED.string.text
-msgctxt "desktop.src#STR_TITLE_USERDATALOCKED.string.text"
-msgid "%PRODUCTNAME %PRODUCTVERSION"
+#: source/app/desktop.src#STR_TITLE_USERDATALOCKED.String.Text
+msgid  "%PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
-#: desktop.src#EBX_ERR_PRINTDISABLED.errorbox.text
-msgid "Printing is disabled. No documents can be printed."
+#: source/app/desktop.src#EBX_ERR_PRINTDISABLED.ErrorBox.Message
+msgid  "Printing is disabled. No documents can be printed."
 msgstr "Drukowanie jest wyłączone. Nie można wydrukować dokumentów."
 
-#: desktop.src#INFOBOX_EXPIRED.infobox.text
-msgid ""
-"This Evaluation Version has expired. To find out more about %PRODUCTNAME,\n"
-"visit http://www.oracle.com/us/products/applications/open-office."
+#: source/app/desktop.src#INFOBOX_EXPIRED.InfoBox.Message
+msgid  "This Evaluation Version has expired. To find out more about %PRODUCTNAME,\nvisit http://www.openoffice.org"
 msgstr ""
-"Ta wersja próbna wygasła. Aby dowiedzieć się więcej o produkcie "
-"%PRODUCTNAME,\n"
-"przejdź na stronę http://www.oracle.com/us/products/applications/open-office."
 
-#: desktop.src#STR_TITLE_EXPIRED.string.text
-msgctxt "desktop.src#STR_TITLE_EXPIRED.string.text"
-msgid "%PRODUCTNAME %PRODUCTVERSION"
+#: source/app/desktop.src#STR_TITLE_EXPIRED.String.Text
+msgid  "%PRODUCTNAME %PRODUCTVERSION"
 msgstr "%PRODUCTNAME %PRODUCTVERSION"
 
-#: desktop.src#STR_BOOTSTRAP_ERR_NO_PATHSET_SERVICE.string.text
-msgid "The path manager is not available.\n"
+#: source/app/desktop.src#STR_BOOTSTRAP_ERR_NO_PATHSET_SERVICE.String.Text
+msgid  "The path manager is not available.\n"
 msgstr "Menedżer ścieżek jest niedostępny.\n"
 
-#: desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.string.text
-msgid ""
-"%PRODUCTNAME user installation could not be completed due to insufficient "
-"free disk space. Please free more disc space at the following location and "
-"restart %PRODUCTNAME:\n"
-"\n"
+#: source/app/desktop.src#STR_BOOSTRAP_ERR_NOTENOUGHDISKSPACE.String.Text
+msgid  "%PRODUCTNAME user installation could not be completed due to insufficient free disk space. Please free more disc space at the following location and restart %PRODUCTNAME:\n\n"
 msgstr ""
-"Instalacja użytkownika %PRODUCTNAME nie mogła zostać ukończona z powodu "
-"braku wolnego miejsca na dysku. Zwiększ wolne miejsce na dysku w poniższej "
-"lokalizacji i ponownie uruchom %PRODUCTNAME:\n"
-"\n"
 
-#: desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.string.text
-msgid ""
-"%PRODUCTNAME user installation could not be processed due to missing access "
-"rights. Please make sure that you have sufficient access rights for the "
-"following location and restart %PRODUCTNAME:\n"
-"\n"
+#: source/app/desktop.src#STR_BOOSTRAP_ERR_NOACCESSRIGHTS.String.Text
+msgid  "%PRODUCTNAME user installation could not be processed due to missing access rights. Please make sure that you have sufficient access rights for the following location and restart %PRODUCTNAME:\n\n"
 msgstr ""
-"Instalacja użytkownika %PRODUCTNAME była niemożliwa z powodu braku uprawnień "
-"dostępu. Upewnij się, że posiadasz wystarczające uprawnienia w poniższej "
-"lokalizacji i ponownie uruchom %PRODUCTNAME:\n"
-"\n"
-"X-Accelerator-Marker: ~\n"
 
-#: dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.fixedtext.text
-msgid ""
-"The extension cannot be installed as the following\n"
-"system dependencies are not fulfilled:"
+#: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.WarningBox.Message
+msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThe newer version $DEPLOYED is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
 msgstr ""
-"Nie można zainstalować rozszerzenia,\n"
-"ponieważ nie zostały spełnione następujące zależności systemowe:"
 
-#: dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.modaldialog.text
-msgid "System dependencies check"
+#: source/deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_LESS_DIFFERENT_NAMES.String.Text
+msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThe newer version $DEPLOYED, named \'$OLDNAME\', is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+
+#: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_EQUAL.WarningBox.Message
+msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThat version is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+
+#: source/deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_EQUAL_DIFFERENT_NAMES.String.Text
+msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThat version, named \'$OLDNAME\', is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+
+#: source/deployment/gui/dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_GREATER.WarningBox.Message
+msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThe older version $DEPLOYED is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+
+#: source/deployment/gui/dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_GREATER_DIFFERENT_NAMES.String.TEXT
+msgid  "You are about to install version $NEW of the extension \'$NAME\'.\nThe older version $DEPLOYED, named \'$OLDNAME\', is already installed.\nClick \'OK\' to replace the installed extension.\nClick \'Cancel\' to stop the installation."
+msgstr ""
+
+#: source/deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.ModalDialog.Text
+msgid  "System dependencies check"
 msgstr "Kontroler zależności systemowych"
 
-#: dp_gui_dialog.src#RID_STR_ADD_PACKAGES.string.text
-msgid "Add Extension(s)"
+#: source/deployment/gui/dp_gui_dependencydialog.src#RID_DLG_DEPENDENCIES.RID_DLG_DEPENDENCIES_TEXT.FixedText.Text
+msgid  "The extension cannot be installed as the following\nsystem dependencies are not fulfilled:"
+msgstr ""
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_ADD_PACKAGES.String.Text
+msgid  "Add Extension(s)"
 msgstr "Dodaj rozszerzenia..."
 
-#: dp_gui_dialog.src#RID_CTX_ITEM_REMOVE.string.text
-msgid "~Remove"
+#: source/deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_REMOVE.String.Text
+msgid  "~Remove"
 msgstr "U~suń"
 
-#: dp_gui_dialog.src#RID_CTX_ITEM_ENABLE.string.text
-msgid "~Enable"
+#: source/deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_ENABLE.String.Text
+msgid  "~Enable"
 msgstr "~Włącz"
 
-#: dp_gui_dialog.src#RID_CTX_ITEM_DISABLE.string.text
-msgid "~Disable"
+#: source/deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_DISABLE.String.Text
+msgid  "~Disable"
 msgstr "~Wyłącz"
 
-#: dp_gui_dialog.src#RID_CTX_ITEM_CHECK_UPDATE.string.text
-msgid "~Update..."
+#: source/deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_CHECK_UPDATE.String.Text
+msgid  "~Update..."
 msgstr "~Aktualizuj..."
 
-#: dp_gui_dialog.src#RID_CTX_ITEM_OPTIONS.string.text
-msgid "~Options..."
+#: source/deployment/gui/dp_gui_dialog.src#RID_CTX_ITEM_OPTIONS.String.Text
+msgid  "~Options..."
 msgstr "~Opcje..."
 
-#: dp_gui_dialog.src#RID_STR_ADDING_PACKAGES.string.text
-msgctxt "dp_gui_dialog.src#RID_STR_ADDING_PACKAGES.string.text"
-msgid "Adding %EXTENSION_NAME"
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_ADDING_PACKAGES.String.Text
+msgid  "Adding %EXTENSION_NAME"
 msgstr "Dodawanie %EXTENSION_NAME"
 
-#: dp_gui_dialog.src#RID_STR_REMOVING_PACKAGES.string.text
-msgid "Removing %EXTENSION_NAME"
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_REMOVING_PACKAGES.String.Text
+msgid  "Removing %EXTENSION_NAME"
 msgstr "Usuwanie %EXTENSION_NAME"
 
-#: dp_gui_dialog.src#RID_STR_ENABLING_PACKAGES.string.text
-msgid "Enabling %EXTENSION_NAME"
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_ENABLING_PACKAGES.String.Text
+msgid  "Enabling %EXTENSION_NAME"
 msgstr "Włączanie %EXTENSION_NAME"
 
-#: dp_gui_dialog.src#RID_STR_DISABLING_PACKAGES.string.text
-msgid "Disabling %EXTENSION_NAME"
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_DISABLING_PACKAGES.String.Text
+msgid  "Disabling %EXTENSION_NAME"
 msgstr "Wyłączanie %EXTENSION_NAME"
 
-#: dp_gui_dialog.src#RID_STR_ACCEPT_LICENSE.string.text
-msgid "Accept license for %EXTENSION_NAME"
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_ACCEPT_LICENSE.String.Text
+msgid  "Accept license for %EXTENSION_NAME"
 msgstr "Akceptuj licencję na rozszerzenie %EXTENSION_NAME"
 
-#: dp_gui_dialog.src#RID_STR_INSTALL_FOR_ALL.string.text
-msgid "~For all users"
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_INSTALL_FOR_ALL.String.Text
+msgid  "~For all users"
 msgstr "~Dla wszystkich użytkowników"
 
-#: dp_gui_dialog.src#RID_STR_INSTALL_FOR_ME.string.text
-msgid "~Only for me"
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_INSTALL_FOR_ME.String.Text
+msgid  "~Only for me"
 msgstr "~Tylko dla mnie"
 
-#: dp_gui_dialog.src#RID_STR_ERROR_UNKNOWN_STATUS.string.text
-msgid "Error: The status of this extension is unknown"
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_UNKNOWN_STATUS.String.Text
+msgid  "Error: The status of this extension is unknown"
 msgstr "Błąd: Status tego rozszerzenia nie jest znany"
 
-#: dp_gui_dialog.src#RID_STR_CLOSE_BTN.string.text
-msgctxt "dp_gui_dialog.src#RID_STR_CLOSE_BTN.string.text"
-msgid "Close"
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_CLOSE_BTN.String.Text
+msgid  "Close"
 msgstr "Zamknij"
 
-#: dp_gui_dialog.src#RID_STR_EXIT_BTN.string.text
-msgid "Quit"
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_EXIT_BTN.String.Text
+msgid  "Quit"
 msgstr "Zamknij"
 
-#: dp_gui_dialog.src#RID_STR_NO_ADMIN_PRIVILEGE.string.text
-msgid ""
-"%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME "
-"extensions are not compatible with this version and need to be updated "
-"before %PRODUCTNAME can be started.\n"
-"\n"
-"Updating of shared extension requires administrator privileges. Contact your "
-"system administrator to update the following shared extensions:"
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_NO_ADMIN_PRIVILEGE.String.Text
+msgid  "%PRODUCTNAME has been updated to a new version. Some shared %PRODUCTNAME extensions are not compatible with this version and need to be updated before %PRODUCTNAME can be started.\n\nUpdating of shared extension requires administrator privileges. Contact your system administrator to update the following shared extensions:"
 msgstr ""
-"Pakiet %PRODUCTNAME został zaktualizowany do nowszej wersji. Niektóre "
-"współdzielone rozszerzenia pakietu %PRODUCTNAME nie są obsługiwane przez tę "
-"wersję. Przed uruchomieniem pakietu %PRODUCTNAME należy wykonać ich "
-"aktualizację.\n"
-"\n"
-"Aktualizacja rozszerzenia współdzielonego wymaga uprawnień administratora. "
-"Aby wykonać aktualizację następujących rozszerzeń współdzielonych, "
-"skontaktuj się z administratorem systemu:"
 
-#: dp_gui_dialog.src#RID_STR_ERROR_MISSING_DEPENDENCIES.string.text
-msgid ""
-"The extension cannot be enabled as the following system dependencies are not "
-"fulfilled:"
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_DEPENDENCIES.String.Text
+msgid  "The extension cannot be enabled as the following system dependencies are not fulfilled:"
 msgstr ""
-"Nie można włączyć rozszerzenia. Nie są spełnione następujące zależności "
-"systemowe:"
 
-#: dp_gui_dialog.src#RID_STR_ERROR_MISSING_LICENSE.string.text
-msgid ""
-"This extension is disabled because you haven't accepted the license yet.\n"
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_ERROR_MISSING_LICENSE.String.Text
+msgid  "This extension is disabled because you haven't accepted the license yet.\n"
 msgstr ""
-"To rozszerzenie zostało dezaktywowane z powodu braku akceptacji licencji.\n"
 
-#: dp_gui_dialog.src#RID_STR_SHOW_LICENSE_CMD.string.text
-msgid "Show license"
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_SHOW_LICENSE_CMD.String.Text
+msgid  "Show license"
 msgstr "Pokaż licencję"
 
-#: dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_HEADER.fixedtext.text
-msgid ""
-"Please follow these steps to proceed with the installation of the extension:"
-msgstr ""
-"Aby kontynuować instalację rozszerzenia, wykonaj następujące czynności:"
+#: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.ModalDialog.Text
+msgid  "Extension Software License Agreement"
+msgstr "Umowa licencyjna użytkownika końcowego"
 
-#: dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1.fixedtext.text
-msgid "1."
+#: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_HEADER.FixedText.Text
+msgid  "Please follow these steps to proceed with the installation of the extension:"
+msgstr ""
+
+#: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1.FixedText.Text
+msgid  "1."
 msgstr "1."
 
-#: dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1_TXT.fixedtext.text
-msgid ""
-"Read the complete License Agreement. Use the scroll bar or the \\'Scroll Down"
-"\\' button in this dialog to view the entire license text."
+#: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_1_TXT.FixedText.Text
+msgid  "Read the complete License Agreement. Use the scroll bar or the \'Scroll Down\' button in this dialog to view the entire license text."
 msgstr ""
-"Zapoznaj się z treścią Licencji. Aby wyświetlić cały jej tekst, użyj paska "
-"przewijania lub przycisku \\'Przewiń w dół\\'."
 
-#: dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2.fixedtext.text
-msgid "2."
+#: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2.FixedText.Text
+msgid  "2."
 msgstr "2."
 
-#: dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2_TXT.fixedtext.text
-msgid ""
-"Accept the License Agreement for the extension by pressing the \\'Accept\\' "
-"button."
-msgstr "Zaakceptuj Licencję rozszerzenia, naciskając przycisk \\'Akceptuję\\'."
+#: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.FT_LICENSE_BODY_2_TXT.FixedText.Text
+msgid  "Accept the License Agreement for the extension by pressing the \'Accept\' button."
+msgstr ""
 
-#: dp_gui_dialog.src#RID_DLG_LICENSE.PB_LICENSE_DOWN.pushbutton.text
-msgid "~Scroll Down"
+#: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.PB_LICENSE_DOWN.PushButton.Text
+msgid  "~Scroll Down"
 msgstr "~Przewiń w dół"
 
-#: dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_ACCEPT.okbutton.text
-msgid "Accept"
+#: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_ACCEPT.OKButton.Text
+msgid  "Accept"
 msgstr "Akceptuj"
 
-#: dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_DECLINE.cancelbutton.text
-msgid "Decline"
+#: source/deployment/gui/dp_gui_dialog.src#RID_DLG_LICENSE.BTN_LICENSE_DECLINE.CancelButton.Text
+msgid  "Decline"
 msgstr "Odrzuć"
 
-#: dp_gui_dialog.src#RID_DLG_LICENSE.modaldialog.text
-msgctxt "dp_gui_dialog.src#RID_DLG_LICENSE.modaldialog.text"
-msgid "Extension Software License Agreement"
+#: source/deployment/gui/dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.ModalDialog.Text
+msgid  "Extension Software License Agreement"
 msgstr "Umowa licencyjna użytkownika końcowego"
 
-#: dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.RID_EM_BTN_CLOSE.okbutton.text
-msgctxt "dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.RID_EM_BTN_CLOSE.okbutton.text"
-msgid "Close"
+#: source/deployment/gui/dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.RID_EM_BTN_CLOSE.OKButton.Text
+msgid  "Close"
 msgstr "Zamknij"
 
-#: dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.modaldialog.text
-msgctxt "dp_gui_dialog.src#RID_DLG_SHOW_LICENSE.modaldialog.text"
-msgid "Extension Software License Agreement"
-msgstr "Umowa licencyjna użytkownika końcowego"
-
-#: dp_gui_dialog.src#RID_WARNINGBOX_INSTALL_EXTENSION.warningbox.text
-msgid ""
-"You are about to install the extension \\'%NAME\\'.\n"
-"Click \\'OK\\' to proceed with the installation.\n"
-"Click \\'Cancel\\' to stop the installation."
+#: source/deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_INSTALL_EXTENSION.WarningBox.Message
+msgid  "You are about to install the extension \'%NAME\'.\nClick \'OK\' to proceed with the installation.\nClick \'Cancel\' to stop the installation."
 msgstr ""
-"Zostanie zainstalowane rozszerzenie „%NAME”.\n"
-"Kliknij przycisk „OK”, aby kontynuować instalację.\n"
-"Kliknij przycisk „Anuluj”, aby przerwać instalację."
 
-#: dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_EXTENSION.warningbox.text
-msgid ""
-"You are about to remove the extension \\'%NAME\\'.\n"
-"Click \\'OK\\' to remove the extension.\n"
-"Click \\'Cancel\\' to stop removing the extension."
+#: source/deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_EXTENSION.WarningBox.Message
+msgid  "You are about to remove the extension \'%NAME\'.\nClick \'OK\' to remove the extension.\nClick \'Cancel\' to stop removing the extension."
 msgstr ""
-"Za chwilę zostanie usunięte rozszerzenie \\'%NAME\\'.\n"
-"Kliknij przycisk OK, aby usunąć rozszerzenie.\n"
-"Kliknij przycisk Anuluj, aby nie usuwać rozszerzenia."
 
-#: dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_SHARED_EXTENSION.warningbox.text
-msgid ""
-"Make sure that no further users are working with the same %PRODUCTNAME, when "
-"changing shared extensions in a multi user environment.\n"
-"Click \\'OK\\' to remove the extension.\n"
-"Click \\'Cancel\\' to stop removing the extension."
+#: source/deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_REMOVE_SHARED_EXTENSION.WARNINGBOX.Message
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \'OK\' to remove the extension.\nClick \'Cancel\' to stop removing the extension."
 msgstr ""
-"Podczas wprowadzania zmian dotyczących współdzielonych rozszerzeń w "
-"środowisku wielu użytkowników z tego samego produktu %PRODUCTNAME nie może "
-"korzystać nikt inny.\n"
-"Kliknij przycisk \\'OK\\', aby usunąć rozszerzenie.\n"
-"Kliknij przycisk \\'Cancel\\', aby przerwać usuwanie rozszerzenia."
 
-#: dp_gui_dialog.src#RID_WARNINGBOX_ENABLE_SHARED_EXTENSION.warningbox.text
-msgid ""
-"Make sure that no further users are working with the same %PRODUCTNAME, when "
-"changing shared extensions in a multi user environment.\n"
-"Click \\'OK\\' to enable the extension.\n"
-"Click \\'Cancel\\' to stop enabling the extension."
+#: source/deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_ENABLE_SHARED_EXTENSION.WARNINGBOX.Message
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \'OK\' to enable the extension.\nClick \'Cancel\' to stop enabling the extension."
 msgstr ""
-"Podczas wprowadzania zmian dotyczących współdzielonych rozszerzeń w "
-"środowisku wielu użytkowników z tego samego produktu %PRODUCTNAME nie może "
-"korzystać nikt inny.\n"
-"Kliknij przycisk \\'OK\\', aby włączyć rozszerzenie.\n"
-"Kliknij przycisk \\'Cancel\\', aby przerwać włączanie rozszerzenia."
 
-#: dp_gui_dialog.src#RID_WARNINGBOX_DISABLE_SHARED_EXTENSION.warningbox.text
-msgid ""
-"Make sure that no further users are working with the same %PRODUCTNAME, when "
-"changing shared extensions in a multi user environment.\n"
-"Click \\'OK\\' to disable the extension.\n"
-"Click \\'Cancel\\' to stop disabling the extension."
+#: source/deployment/gui/dp_gui_dialog.src#RID_WARNINGBOX_DISABLE_SHARED_EXTENSION.WARNINGBOX.Message
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \'OK\' to disable the extension.\nClick \'Cancel\' to stop disabling the extension."
 msgstr ""
-"Podczas wprowadzania zmian dotyczących współdzielonych rozszerzeń w "
-"środowisku wielu użytkowników z tego samego produktu %PRODUCTNAME nie może "
-"korzystać nikt inny.\n"
-"Kliknij przycisk \\'OK\\', aby wyłączyć rozszerzenie.\n"
-"Kliknij przycisk \\'Cancel\\', aby przerwać wyłączanie rozszerzenia."
 
-#: dp_gui_dialog.src#RID_STR_UNSUPPORTED_PLATFORM.string.text
-msgid "The extension \\'%Name\\' does not work on this computer."
-msgstr "Rozszerzenie \\'%Name\\' nie działa na tym komputerze."
-
-#: dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_ADD.pushbutton.text
-msgid "~Add..."
-msgstr "Dod~aj..."
-
-#: dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CHECK_UPDATES.pushbutton.text
-msgctxt ""
-"dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CHECK_UPDATES."
-"pushbutton.text"
-msgid "Check for ~Updates..."
-msgstr "Sprawdź ~aktualizację..."
-
-#: dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_FT_GET_EXTENSIONS.fixedtext.text
-msgid "Get more extensions online..."
-msgstr "Wyświetl więcej rozszerzeń..."
-
-#: dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_FT_PROGRESS.fixedtext.text
-msgctxt ""
-"dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_FT_PROGRESS.fixedtext."
-"text"
-msgid "Adding %EXTENSION_NAME"
-msgstr "Dodawanie %EXTENSION_NAME"
-
-#: dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CLOSE.okbutton.text
-msgctxt ""
-"dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CLOSE.okbutton.text"
-msgid "Close"
-msgstr "Zamknij"
-
-#: dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.modelessdialog.text
-msgid "Extension Manager"
-msgstr "Menedżer rozszerzeń"
-
-#: dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_MSG.fixedtext.text
-msgid ""
-"%PRODUCTNAME has been updated to a new version. Some installed %PRODUCTNAME "
-"extensions are not compatible with this version and need to be updated "
-"before they can be used."
+#: source/deployment/gui/dp_gui_dialog.src#RID_STR_UNSUPPORTED_PLATFORM.String.Text
+msgid  "The extension \'%Name\' does not work on this computer."
 msgstr ""
-"Pakiet %PRODUCTNAME został zaktualizowany do nowszej wersji. Niektóre "
-"zainstalowane rozszerzenia pakietu %PRODUCTNAME nie są obsługiwane przez tę "
-"wersję i przed ich użyciem należy je zaktualizować."
 
-#: dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_PROGRESS.fixedtext.text
-msgctxt ""
-"dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_PROGRESS.fixedtext.text"
-msgid "Adding %EXTENSION_NAME"
-msgstr "Dodawanie rozszerzenia %EXTENSION_NAME"
-
-#: dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CHECK_UPDATES.pushbutton.text
-msgctxt ""
-"dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CHECK_UPDATES."
-"pushbutton.text"
-msgid "Check for ~Updates..."
-msgstr "Sprawdź ~aktualizację..."
-
-#: dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CLOSE.pushbutton.text
-msgid "Disable all"
-msgstr "Wyłącz wszystko"
-
-#: dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.modaldialog.text
-msgid "Extension Update Required"
-msgstr "Wymagana aktualizacja rozszerzenia"
-
-#: dp_gui_dialog2.src#RID_QUERYBOX_INSTALL_FOR_ALL.querybox.text
-msgid ""
-"Make sure that no further users are working with the same %PRODUCTNAME, when "
-"installing an extension for all users in a multi user environment.\n"
-"\n"
-"For whom do you want to install the extension?\n"
-msgstr ""
-"Należy upewnić się, że podczas instalacji rozszerzenia dla wszystkich "
-"użytkowników w środowisku z wieloma użytkownikami żaden z użytkowników nie "
-"pracuje w tym samym %PRODUCTNAME.\n"
-"\n"
-"Dla kogo zainstalować rozszerzenie?\n"
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CHECKING.fixedtext.text
-msgid "Checking..."
-msgstr "Trwa sprawdzanie..."
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_UPDATE.fixedtext.text
-msgid "~Available extension updates"
-msgstr "~Dostępne aktualizacje rozszerzeń"
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ALL.checkbox.text
-msgid "~Show all updates"
-msgstr "~Pokaż wszystkie aktualizacje"
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_DESCRIPTION.fixedline.text
-msgid "Description"
-msgstr "Opis"
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_PUBLISHER_LABEL.fixedtext.text
-msgid "Publisher:"
-msgstr "Wydawca:"
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_RELEASENOTES_LABEL.fixedtext.text
-msgid "What is new:"
-msgstr "Co jest nowe:"
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_RELEASENOTES_LINK.fixedtext.text
-msgid "Release Notes"
-msgstr "Uwagi o wersji"
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_OK.pushbutton.text
-msgid "~Install"
-msgstr "~Pobierz i zainstaluj"
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CLOSE.pushbutton.text
-msgctxt ""
-"dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CLOSE.pushbutton.text"
-msgid "Close"
-msgstr "Zamknij"
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ERROR.string.text
-msgid "Error"
-msgstr "Błąd"
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NONE.string.text
-msgid "No new updates are available."
-msgstr "Nie ma nowych aktualizacji."
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALLABLE.string.text
-msgid ""
-"No installable updates are available. To see ignored or disabled updates, "
-"mark the check box 'Show all updates'."
-msgstr ""
-"Nie są dostępne żadne aktualizacje do zainstalowania. Aby wyświetlić "
-"wszystkie aktualizacje, zaznacz pole wyboru \"Pokaż wszystkie aktualizacje\"."
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_FAILURE.string.text
-msgid "An error occurred:"
-msgstr "Wystąpił błąd:"
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_UNKNOWNERROR.string.text
-msgid "Unknown error."
-msgstr "Nieznany błąd."
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODESCRIPTION.string.text
-msgid "No more details are available for this update."
-msgstr "Nie ma więcej szczegółów dostępnych dla tej aktualizacji."
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALL.string.text
-msgid "The extension cannot be updated because:"
-msgstr "Nie można wykonać aktualizacji rozszerzenia. Powód:"
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY.string.text
-msgid "Required OpenOffice.org version doesn't match:"
-msgstr "Wersja pakietu OpenOffice.org nie odpowiada wersji wymaganej:"
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY_CUR_VER.string.text
-msgid "You have OpenOffice.org %VERSION"
-msgstr "Posiadana wersja pakietu OpenOffice.org: %VERSION"
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_BROWSERBASED.string.text
-msgid "browser based update"
-msgstr "aktualizacja oparta na przeglądarce"
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_VERSION.string.text
-msgid "Version"
-msgstr "Wersja"
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORE.string.text
-msgid "Ignore this Update"
-msgstr "Ignoruj tą aktualizację"
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORE_ALL.string.text
-msgid "Ignore all Updates"
-msgstr "Ignoruj wszystkie aktualizacje"
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ENABLE.string.text
-msgid "Enable Updates"
-msgstr "Włącz aktualizacje"
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORED_UPDATE.string.text
-msgid "This update will be ignored.\n"
-msgstr "Ta aktualizacja będzie zignorowana.\n"
-
-#: dp_gui_updatedialog.src#RID_DLG_UPDATE.modaldialog.text
-msgid "Extension Update"
-msgstr "Aktualizacja rozszerzenia"
-
-#: dp_gui_updatedialog.src#RID_WARNINGBOX_UPDATE_SHARED_EXTENSION.warningbox.text
-msgid ""
-"Make sure that no further users are working with the same %PRODUCTNAME, when "
-"changing shared extensions in a multi user environment.\n"
-"Click \\'OK\\' to update the extensions.\n"
-"Click \\'Cancel\\' to stop updating the extensions."
-msgstr ""
-"Podczas wprowadzania zmian dotyczących współdzielonych rozszerzeń w "
-"środowisku wielu użytkowników z tego samego produktu %PRODUCTNAME nie może "
-"korzystać nikt inny.\n"
-"Kliknij przycisk \\'OK\\', aby zaktualizować rozszerzenia.\n"
-"Kliknij przycisk \\'Cancel\\', aby przerwać aktualizację rozszerzeń."
-
-#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_DOWNLOADING.fixedtext.text
-msgid "Downloading extensions..."
-msgstr "Trwa pobieranie rozszerzeń..."
-
-#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_RESULTS.fixedtext.text
-msgid "Result"
-msgstr "Wynik"
-
-#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_OK.okbutton.text
-msgid "OK"
-msgstr "OK"
-
-#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ABORT.cancelbutton.text
-msgid "Cancel Update"
-msgstr "~Przerwij aktualizację"
-
-#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_INSTALLING.string.text
-msgid "Installing extensions..."
-msgstr "Trwa instalacja rozszerzeń..."
-
-#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_FINISHED.string.text
-msgid "Installation finished"
-msgstr "Instalacja zakończona"
-
-#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_NO_ERRORS.string.text
-msgid "No errors."
-msgstr "Bez błędów."
-
-#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_DOWNLOAD.string.text
-msgid "Error while downloading extension %NAME. "
-msgstr "Błąd pobierania rozszerzenia %NAME. "
-
-#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_THIS_ERROR_OCCURRED.string.text
-msgid "The error message is: "
-msgstr "Komunikat o błędzie: "
-
-#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_INSTALLATION.string.text
-msgid "Error while installing extension %NAME. "
-msgstr "Błąd instalacji rozszerzenia %NAME. "
-
-#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_LIC_DECLINED.string.text
-msgid "The license agreement for extension %NAME was refused. "
-msgstr "Nie udzielono licencji na rozszerzenie %NAME. "
-
-#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_EXTENSION_NOINSTALL.string.text
-msgid "The extension will not be installed."
-msgstr "Rozszerzenie nie zostanie zainstalowane."
-
-#: dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.modaldialog.text
-msgid "Download and Installation"
+#: source/deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.ModalDialog.Text
+msgid  "Download and Installation"
 msgstr "Pobieranie i instalacja"
 
-#: dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_LESS.warningbox.text
-msgid ""
-"You are about to install version $NEW of the extension \\'$NAME\\'.\n"
-"The newer version $DEPLOYED is already installed.\n"
-"Click \\'OK\\' to replace the installed extension.\n"
-"Click \\'Cancel\\' to stop the installation."
-msgstr ""
-"Zostanie zainstalowana wersja $NEW rozszerzenia \\'$NAME\\'.\n"
-"Jest już zainstalowana nowsza wersja $DEPLOYED.\n"
-"Kliknij przycisk \\'OK\\', aby zastąpić zainstalowaną wersję rozszerzenia.\n"
-"Kliknij przycisk \\'Cancel\\', aby przerwać instalację."
+#: source/deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_DOWNLOADING.FixedText.Text
+msgid  "Downloading extensions..."
+msgstr "Trwa pobieranie rozszerzeń..."
 
-#: dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_LESS_DIFFERENT_NAMES.string.text
-msgid ""
-"You are about to install version $NEW of the extension \\'$NAME\\'.\n"
-"The newer version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\n"
-"Click \\'OK\\' to replace the installed extension.\n"
-"Click \\'Cancel\\' to stop the installation."
-msgstr ""
-"Zostanie zainstalowana wersja $NEW rozszerzenia \\'$NAME\\'.\n"
-"Jest już zainstalowana nowsza wersja $DEPLOYED, o nazwie \\'$OLDNAME\\'.\n"
-"Kliknij przycisk \\'OK\\', aby zastąpić zainstalowaną wersję rozszerzenia.\n"
-"Kliknij przycisk \\'Cancel\\', aby przerwać instalację."
+#: source/deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_RESULTS.FixedText.Text
+msgid  "Result"
+msgstr "Wynik"
 
-#: dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_EQUAL.warningbox.text
-msgid ""
-"You are about to install version $NEW of the extension \\'$NAME\\'.\n"
-"That version is already installed.\n"
-"Click \\'OK\\' to replace the installed extension.\n"
-"Click \\'Cancel\\' to stop the installation."
-msgstr ""
-"Zostanie zainstalowana wersja $NEW rozszerzenia \\'$NAME\\'.\n"
-"Ta wersja jest już zainstalowana.\n"
-"Kliknij przycisk \\'OK\\', aby zastąpić zainstalowaną wersję rozszerzenia.\n"
-"Kliknij przycisk \\'Cancel\\', aby przerwać instalację."
+#: source/deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_OK.OKButton.Text
+msgid  "OK"
+msgstr "OK"
 
-#: dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_EQUAL_DIFFERENT_NAMES.string.text
-msgid ""
-"You are about to install version $NEW of the extension \\'$NAME\\'.\n"
-"That version, named \\'$OLDNAME\\', is already installed.\n"
-"Click \\'OK\\' to replace the installed extension.\n"
-"Click \\'Cancel\\' to stop the installation."
-msgstr ""
-"Zostanie zainstalowana wersja $NEW rozszerzenia \\'$NAME\\'.\n"
-"Ta wersja, o nazwie \\'$OLDNAME\\', jest już zainstalowana.\n"
-"Kliknij przycisk \\'OK\\', aby zastąpić zainstalowaną wersję rozszerzenia.\n"
-"Kliknij przycisk \\'Cancel\\', aby przerwać instalację."
+#: source/deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ABORT.CancelButton.Text
+msgid  "Cancel Update"
+msgstr "~Przerwij aktualizację"
 
-#: dp_gui_versionboxes.src#RID_WARNINGBOX_VERSION_GREATER.warningbox.text
-msgid ""
-"You are about to install version $NEW of the extension \\'$NAME\\'.\n"
-"The older version $DEPLOYED is already installed.\n"
-"Click \\'OK\\' to replace the installed extension.\n"
-"Click \\'Cancel\\' to stop the installation."
-msgstr ""
-"Zostanie zainstalowana wersja $NEW rozszerzenia \\'$NAME\\'.\n"
-"Jest już zainstalowana starsza wersja $DEPLOYED.\n"
-"Kliknij przycisk \\'OK\\', aby zastąpić zainstalowaną wersję rozszerzenia.\n"
-"Kliknij przycisk \\'Cancel\\', aby przerwać instalację."
+#: source/deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_INSTALLING.String.Text
+msgid  "Installing extensions..."
+msgstr "Trwa instalacja rozszerzeń..."
 
-#: dp_gui_versionboxes.src#RID_STR_WARNINGBOX_VERSION_GREATER_DIFFERENT_NAMES.string.text
-msgid ""
-"You are about to install version $NEW of the extension \\'$NAME\\'.\n"
-"The older version $DEPLOYED, named \\'$OLDNAME\\', is already installed.\n"
-"Click \\'OK\\' to replace the installed extension.\n"
-"Click \\'Cancel\\' to stop the installation."
-msgstr ""
-"Zostanie zainstalowana wersja $NEW rozszerzenia \\'$NAME\\'.\n"
-"Jest już zainstalowana starsza wersja $DEPLOYED, o nazwie \\'$OLDNAME\\'.\n"
-"Kliknij przycisk \\'OK\\', aby zastąpić zainstalowaną wersję rozszerzenia.\n"
-"Kliknij przycisk \\'Cancel\\', aby przerwać instalację."
+#: source/deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_FINISHED.String.Text
+msgid  "Installation finished"
+msgstr "Instalacja zakończona"
 
-#~ msgid "No descriptions available for this extension."
-#~ msgstr "Dla tego rozszerzenia nie są dostępne opisy."
-#: dp_manager.src#RID_STR_COPYING_PACKAGE.string.text
-msgid "Copying: "
+#: source/deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_NO_ERRORS.String.Text
+msgid  "No errors."
+msgstr "Bez błędów."
+
+#: source/deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_DOWNLOAD.String.Text
+msgid  "Error while downloading extension %NAME. "
+msgstr "Błąd pobierania rozszerzenia %NAME. "
+
+#: source/deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_THIS_ERROR_OCCURRED.String.Text
+msgid  "The error message is: "
+msgstr "Komunikat o błędzie: "
+
+#: source/deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_INSTALLATION.String.Text
+msgid  "Error while installing extension %NAME. "
+msgstr "Błąd instalacji rozszerzenia %NAME. "
+
+#: source/deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_ERROR_LIC_DECLINED.String.Text
+msgid  "The license agreement for extension %NAME was refused. "
+msgstr "Nie udzielono licencji na rozszerzenie %NAME. "
+
+#: source/deployment/gui/dp_gui_updateinstalldialog.src#RID_DLG_UPDATEINSTALL.RID_DLG_UPDATE_INSTALL_EXTENSION_NOINSTALL.String.Text
+msgid  "The extension will not be installed."
+msgstr "Rozszerzenie nie zostanie zainstalowane."
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.ModalDialog.Text
+msgid  "Extension Update"
+msgstr "Aktualizacja rozszerzenia"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CHECKING.FixedText.Text
+msgid  "Checking..."
+msgstr "Trwa sprawdzanie..."
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_UPDATE.FixedText.Text
+msgid  "~Available extension updates"
+msgstr "~Dostępne aktualizacje rozszerzeń"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ALL.CheckBox.Text
+msgid  "~Show all updates"
+msgstr "~Pokaż wszystkie aktualizacje"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_DESCRIPTION.FixedLine.Text
+msgid  "Description"
+msgstr "Opis"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_PUBLISHER_LABEL.FixedText.Text
+msgid  "Publisher:"
+msgstr "Wydawca:"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_RELEASENOTES_LABEL.FixedText.Text
+msgid  "What is new:"
+msgstr "Co jest nowe:"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_RELEASENOTES_LINK.FixedText.Text
+msgid  "Release Notes"
+msgstr "Uwagi o wersji"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_OK.PushButton.Text
+msgid  "~Install"
+msgstr "~Pobierz i zainstaluj"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_CLOSE.PushButton.Text
+msgid  "Close"
+msgstr "Zamknij"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ERROR.String.Text
+msgid  "Error"
+msgstr "Błąd"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NONE.String.Text
+msgid  "No new updates are available."
+msgstr "Nie ma nowych aktualizacji."
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALLABLE.String.Text
+msgid  "No installable updates are available. To see ignored or disabled updates, mark the check box 'Show all updates'."
+msgstr ""
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_FAILURE.String.Text
+msgid  "An error occurred:"
+msgstr "Wystąpił błąd:"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_UNKNOWNERROR.String.Text
+msgid  "Unknown error."
+msgstr "Nieznany błąd."
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODESCRIPTION.String.Text
+msgid  "No more details are available for this update."
+msgstr "Nie ma więcej szczegółów dostępnych dla tej aktualizacji."
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NOINSTALL.String.Text
+msgid  "The extension cannot be updated because:"
+msgstr "Nie można wykonać aktualizacji rozszerzenia. Powód:"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY.String.Text
+msgid  "Required Apache OpenOffice version doesn't match:"
+msgstr ""
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_NODEPENDENCY_CUR_VER.String.Text
+msgid  "You have Apache OpenOffice %VERSION"
+msgstr ""
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_BROWSERBASED.String.Text
+msgid  "browser based update"
+msgstr "aktualizacja oparta na przeglądarce"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_VERSION.String.Text
+msgid  "Version"
+msgstr "Wersja"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORE.String.Text
+msgid  "Ignore this Update"
+msgstr "Ignoruj tą aktualizację"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORE_ALL.String.Text
+msgid  "Ignore all Updates"
+msgstr "Ignoruj wszystkie aktualizacje"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_ENABLE.String.Text
+msgid  "Enable Updates"
+msgstr "Włącz aktualizacje"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_DLG_UPDATE.RID_DLG_UPDATE_IGNORED_UPDATE.String.Text
+msgid  "This update will be ignored.\n"
+msgstr "Ta aktualizacja będzie zignorowana.\n"
+
+#: source/deployment/gui/dp_gui_updatedialog.src#RID_WARNINGBOX_UPDATE_SHARED_EXTENSION.WarningBox.Message
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when changing shared extensions in a multi user environment.\nClick \'OK\' to update the extensions.\nClick \'Cancel\' to stop updating the extensions."
+msgstr ""
+
+#: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.ModelessDialog.Text
+msgid  "Extension Manager"
+msgstr "Menedżer rozszerzeń"
+
+#: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_ADD.PushButton.Text
+msgid  "~Add..."
+msgstr "Dod~aj..."
+
+#: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CHECK_UPDATES.PushButton.Text
+msgid  "Check for ~Updates..."
+msgstr "Sprawdź ~aktualizację..."
+
+#: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_FT_GET_EXTENSIONS.FixedText.Text
+msgid  "Get more extensions online..."
+msgstr "Wyświetl więcej rozszerzeń..."
+
+#: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_FT_PROGRESS.FixedText.Text
+msgid  "Adding %EXTENSION_NAME"
+msgstr "Dodawanie rozszerzenia %EXTENSION_NAME"
+
+#: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_EXTENSION_MANAGER.RID_EM_BTN_CLOSE.OKButton.Text
+msgid  "Close"
+msgstr "Zamknij"
+
+#: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.ModalDialog.Text
+msgid  "Extension Update Required"
+msgstr "Wymagana aktualizacja rozszerzenia"
+
+#: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_MSG.FixedText.Text
+msgid  "%PRODUCTNAME has been updated to a new version. Some installed %PRODUCTNAME extensions are not compatible with this version and need to be updated before they can be used."
+msgstr ""
+
+#: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_FT_PROGRESS.FixedText.Text
+msgid  "Adding %EXTENSION_NAME"
+msgstr "Dodawanie rozszerzenia %EXTENSION_NAME"
+
+#: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CHECK_UPDATES.PushButton.Text
+msgid  "Check for ~Updates..."
+msgstr "Sprawdź ~aktualizację..."
+
+#: source/deployment/gui/dp_gui_dialog2.src#RID_DLG_UPDATE_REQUIRED.RID_EM_BTN_CLOSE.PushButton.Text
+msgid  "Disable all"
+msgstr "Wyłącz wszystko"
+
+#: source/deployment/gui/dp_gui_dialog2.src#RID_QUERYBOX_INSTALL_FOR_ALL.QueryBox.Message
+msgid  "Make sure that no further users are working with the same %PRODUCTNAME, when installing an extension for all users in a multi user environment.\n\nFor whom do you want to install the extension?\n"
+msgstr ""
+
+#: source/deployment/manager/dp_manager.src#RID_STR_COPYING_PACKAGE.String.Text
+msgid  "Copying: "
 msgstr "Kopiowanie rozszerzenia: "
 
-#: dp_manager.src#RID_STR_ERROR_WHILE_ADDING.string.text
-msgid "Error while adding: "
+#: source/deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_ADDING.String.Text
+msgid  "Error while adding: "
 msgstr "Wystąpił błąd podczas dodawania rozszerzenia: "
 
-#: dp_manager.src#RID_STR_ERROR_WHILE_REMOVING.string.text
-msgid "Error while removing: "
+#: source/deployment/manager/dp_manager.src#RID_STR_ERROR_WHILE_REMOVING.String.Text
+msgid  "Error while removing: "
 msgstr "Wystąpił błąd podczas usuwania rozszerzenia: "
 
-#: dp_manager.src#RID_STR_PACKAGE_ALREADY_ADDED.string.text
-msgid "Extension has already been added: "
+#: source/deployment/manager/dp_manager.src#RID_STR_PACKAGE_ALREADY_ADDED.String.Text
+msgid  "Extension has already been added: "
 msgstr "Rozszerzenie zostało już dodane: "
 
-#: dp_manager.src#RID_STR_NO_SUCH_PACKAGE.string.text
-msgid "There is no such extension deployed: "
+#: source/deployment/manager/dp_manager.src#RID_STR_NO_SUCH_PACKAGE.String.Text
+msgid  "There is no such extension deployed: "
 msgstr "Nie zainstalowano takiego rozszerzenia: "
 
-#: dp_manager.src#RID_STR_SYNCHRONIZING_REPOSITORY.string.text
-msgid "Synchronizing repository for %NAME extensions"
+#: source/deployment/manager/dp_manager.src#RID_STR_SYNCHRONIZING_REPOSITORY.String.Text
+msgid  "Synchronizing repository for %NAME extensions"
 msgstr "Synchronizowanie repozytorium rozszerzeń %NAME"
-#: dp_registry.src#RID_STR_REGISTERING_PACKAGE.string.text
-msgid "Enabling: "
-msgstr "Aktywacja rozszerzenia: "
 
-#: dp_registry.src#RID_STR_REVOKING_PACKAGE.string.text
-msgid "Disabling: "
-msgstr "Dezaktywacja rozszerzenia: "
-
-#: dp_registry.src#RID_STR_CANNOT_DETECT_MEDIA_TYPE.string.text
-msgid "Cannot detect media-type: "
-msgstr "Nie można określić typu nośnika: "
-
-#: dp_registry.src#RID_STR_UNSUPPORTED_MEDIA_TYPE.string.text
-msgid "This media-type is not supported: "
-msgstr "Ten typ nośnika nie jest obsługiwany: "
-
-#: dp_registry.src#RID_STR_ERROR_WHILE_REGISTERING.string.text
-msgid "An error occurred while enabling: "
-msgstr "Wystąpił błąd podczas aktywacji rozszerzenia: "
-
-#: dp_registry.src#RID_STR_ERROR_WHILE_REVOKING.string.text
-msgid "An error occurred while disabling: "
-msgstr "Wystąpił błąd podczas dezaktywacji rozszerzenia: "
-
-#: dp_configuration.src#RID_STR_CONF_SCHEMA.string.text
-msgid "Configuration Schema"
-msgstr "Schemat konfiguracji"
-
-#: dp_configuration.src#RID_STR_CONF_DATA.string.text
-msgid "Configuration Data"
-msgstr "Dane konfiguracyjne"
-
-#: dp_component.src#RID_STR_DYN_COMPONENT.string.text
-msgid "UNO Dynamic Library Component"
-msgstr "Komponent UNO Dynamic Library"
-
-#: dp_component.src#RID_STR_JAVA_COMPONENT.string.text
-msgid "UNO Java Component"
-msgstr "Komponent UNO Java"
-
-#: dp_component.src#RID_STR_PYTHON_COMPONENT.string.text
-msgid "UNO Python Component"
-msgstr "Komponent UNO Python"
-
-#: dp_component.src#RID_STR_COMPONENTS.string.text
-msgid "UNO Components"
-msgstr "Komponenty UNO"
-
-#: dp_component.src#RID_STR_RDB_TYPELIB.string.text
-msgid "UNO RDB Type Library"
-msgstr "Biblioteka UNO RDB"
-
-#: dp_component.src#RID_STR_JAVA_TYPELIB.string.text
-msgid "UNO Java Type Library"
-msgstr "Biblioteka UNO Java"
-
-#: dp_package.src#RID_STR_PACKAGE_BUNDLE.string.text
-msgid "Extension"
-msgstr "Rozszerzenie"
-
-#: dp_script.src#RID_STR_BASIC_LIB.string.text
-msgid "%PRODUCTNAME Basic Library"
-msgstr "%PRODUCTNAME - Biblioteka Basic"
-
-#: dp_script.src#RID_STR_DIALOG_LIB.string.text
-msgid "Dialog Library"
-msgstr "Biblioteka okien dialogowych"
-
-#: dp_script.src#RID_STR_CANNOT_DETERMINE_LIBNAME.string.text
-msgid "The library name could not be determined."
-msgstr "Nie można ustalić nazwy biblioteki."
-
-#: dp_script.src#RID_STR_LIBNAME_ALREADY_EXISTS.string.text
-msgid "This library name already exists. Please choose a different name."
-msgstr "Istnieje już biblioteka o takiej nazwie. Proszę wybrać inną nazwę."
-
-#: dp_help.src#RID_STR_HELP.string.text
-msgid "Help"
-msgstr "Pomoc"
-
-#: dp_help.src#RID_STR_HELPPROCESSING_GENERAL_ERROR.string.text
-msgid "The extension cannot be installed because:\n"
-msgstr "Nie można zainstalować rozszerzenia, ponieważ:\n"
-
-#: dp_help.src#RID_STR_HELPPROCESSING_XMLPARSING_ERROR.string.text
-msgid ""
-"The extension will not be installed because an error occurred in the Help "
-"files:\n"
-msgstr ""
-"Rozszerzenie nie zostało zainstalowane, ponieważ wystąpił błąd w plikach "
-"pomocy:\n"
-
-#: dp_sfwk.src#RID_STR_SFWK_LIB.string.text
-msgid "%MACROLANG Library"
-msgstr "Biblioteka %MACROLANG"
-#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_1.string.text
-msgid "Extension Software License Agreement of $NAME:"
-msgstr "Umowa licencyjna rozszerzenia $NAME:"
-
-#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_2.string.text
-msgid ""
-"Read the complete License Agreement displayed above. Accept the License "
-"Agreement by typing \"yes\" on the console then press the Return key. Type "
-"\"no\" to decline and to abort the extension setup."
-msgstr ""
-"Zapoznaj się z wyświetloną powyżej treścią Licencji. Zaakceptuj licencję, "
-"wpisując w konsoli słowo \"tak\", a następnie naciśnij klawisz Return. Aby "
-"odrzucić licencję i przerwać instalację rozszerzenia, wpisz słowo \"nie\"."
-
-#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_3.string.text
-msgid "[Enter \"yes\" or \"no\"]:"
-msgstr "[Wprowadź słowo \"tak\" lub \"nie\"]:"
-
-#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_4.string.text
-msgid "Your input was not correct. Please enter \"yes\" or \"no\":"
-msgstr ""
-"Wprowadzono nieprawidłowe słowo. Proszę wprowadzić słowo \"tak\" lub \"nie\":"
-
-#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.string.text
-msgid "YES"
-msgstr "TAK"
-
-#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_Y.string.text
-msgid "Y"
-msgstr "T"
-
-#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_NO.string.text
-msgid "NO"
-msgstr "NIE"
-
-#: unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_N.string.text
-msgid "N"
-msgstr "N"
-
-#: unopkg.src#RID_STR_CONCURRENTINSTANCE.string.text
-msgid ""
-"unopkg cannot be started. The lock file indicates it as already running. If "
-"this does not apply, delete the lock file at:"
-msgstr ""
-"Nie można uruchomić programu unopkg. Plik blokady wskazuje, że program już "
-"działa. Jeśli tak nie jest, skasuj plik blokady z lokalizacji:"
-
-#: unopkg.src#RID_STR_UNOPKG_ERROR.string.text
-msgid "ERROR: "
-msgstr "BŁĄD: "
-#: dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_UNKNOWN.string.text
-msgid "Unknown"
+#: source/deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_UNKNOWN.String.Text
+msgid  "Unknown"
 msgstr "Nieznane"
 
-#: dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MIN.string.text
-msgid "Extension requires at least OpenOffice.org %VERSION"
+#: source/deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MIN.String.Text
+msgid  "Extension requires at least Apache OpenOffice %VERSION"
 msgstr ""
-"Rozszerzenie wymaga pakietu OpenOffice.org w wersji %VERSION lub nowszej"
 
-#: dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MAX.string.text
-msgid ""
-"Extension doesn't support versions greater than: OpenOffice.org %VERSION"
-msgstr "Rozszerzenie nie obsługuje wersji nowszej niż OpenOffice.org %VERSION"
-"X-Accelerator-Marker: ~\n"
-
-#: setup.ulf#_APP_TITLE_.LngText.text
-msgid "Setup"
-msgstr "Program instalacyjny"
-
-#: setup.ulf#_APP_PROD_TITLE_.LngText.text
-msgid "The %PRODUCTNAME Setup"
-msgstr "Program instalacyjny %PRODUCTNAME"
-
-#: setup.ulf#_OUTOFMEM_.LngText.text
-msgid "Out of Memory"
-msgstr "Brak pamięci."
-
-#: setup.ulf#_NOMSI_.LngText.text
-msgid "Setup was unable to find the msi package."
-msgstr "Program instalacyjny nie mógł odnaleźć pakietu msi."
-
-#: setup.ulf#_USER_CANCELLED_.LngText.text
-msgid "Setup was cancelled"
-msgstr "Anulowano program instalacyjny."
-
-#: setup.ulf#_REQUIRES_ADMIN_PRIV_.LngText.text
-msgid ""
-"Administrator privileges are required for upgrading the Windows Installer."
+#: source/deployment/misc/dp_misc.src#RID_DEPLYOMENT_DEPENDENCIES_MAX.String.Text
+msgid  "Extension doesn't support versions greater than: Apache OpenOffice %VERSION"
 msgstr ""
-"Tylko administrator ma uprawnienia do uaktualniania instalatora Windows."
 
-#: setup.ulf#_FILE_NOT_FOUND_.LngText.text
-msgid "Setup was unable to find the file '%s'."
-msgstr "Program instalacyjny nie mógł odnaleźć pliku '%s'."
+#: source/deployment/registry/dp_registry.src#RID_STR_REGISTERING_PACKAGE.String.Text
+msgid  "Enabling: "
+msgstr "Aktywacja rozszerzenia: "
 
-#: setup.ulf#_INVALID_PARAM_.LngText.text
-msgid "Invalid command line option '%s'. Please use '/?' for help."
-msgstr "Nieprawidłowa opcja linii poleceń '%s'. Użyj  '/?' aby uzyskać pomoc."
+#: source/deployment/registry/dp_registry.src#RID_STR_REVOKING_PACKAGE.String.Text
+msgid  "Disabling: "
+msgstr "Dezaktywacja rozszerzenia: "
 
-#: setup.ulf#_SETUP_TO_OLD_.LngText.text
-msgid ""
-"This package requires at least the version '%s' of the Windows Installer. \n"
-"You have Windows Installer '%s' on your system!"
+#: source/deployment/registry/dp_registry.src#RID_STR_CANNOT_DETECT_MEDIA_TYPE.String.Text
+msgid  "Cannot detect media-type: "
+msgstr "Nie można określić typu nośnika: "
+
+#: source/deployment/registry/dp_registry.src#RID_STR_UNSUPPORTED_MEDIA_TYPE.String.Text
+msgid  "This media-type is not supported: "
+msgstr "Ten typ nośnika nie jest obsługiwany: "
+
+#: source/deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REGISTERING.String.Text
+msgid  "An error occurred while enabling: "
+msgstr "Wystąpił błąd podczas aktywacji rozszerzenia: "
+
+#: source/deployment/registry/dp_registry.src#RID_STR_ERROR_WHILE_REVOKING.String.Text
+msgid  "An error occurred while disabling: "
+msgstr "Wystąpił błąd podczas dezaktywacji rozszerzenia: "
+
+#: source/deployment/registry/component/dp_component.src#RID_STR_DYN_COMPONENT.String.Text
+msgid  "UNO Dynamic Library Component"
+msgstr "Komponent UNO Dynamic Library"
+
+#: source/deployment/registry/component/dp_component.src#RID_STR_JAVA_COMPONENT.String.Text
+msgid  "UNO Java Component"
+msgstr "Komponent UNO Java"
+
+#: source/deployment/registry/component/dp_component.src#RID_STR_PYTHON_COMPONENT.String.Text
+msgid  "UNO Python Component"
+msgstr "Komponent UNO Python"
+
+#: source/deployment/registry/component/dp_component.src#RID_STR_COMPONENTS.String.Text
+msgid  "UNO Components"
+msgstr "Komponenty UNO"
+
+#: source/deployment/registry/component/dp_component.src#RID_STR_RDB_TYPELIB.String.Text
+msgid  "UNO RDB Type Library"
+msgstr "Biblioteka UNO RDB"
+
+#: source/deployment/registry/component/dp_component.src#RID_STR_JAVA_TYPELIB.String.Text
+msgid  "UNO Java Type Library"
+msgstr "Biblioteka UNO Java"
+
+#: source/deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_SCHEMA.String.Text
+msgid  "Configuration Schema"
+msgstr "Schemat konfiguracji"
+
+#: source/deployment/registry/configuration/dp_configuration.src#RID_STR_CONF_DATA.String.Text
+msgid  "Configuration Data"
+msgstr "Dane konfiguracyjne"
+
+#: source/deployment/registry/help/dp_help.src#RID_STR_HELP.String.Text
+msgid  "Help"
+msgstr "Pomoc"
+
+#: source/deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_GENERAL_ERROR.String.Text
+msgid  "The extension cannot be installed because:\n"
+msgstr "Nie można zainstalować rozszerzenia, ponieważ:\n"
+
+#: source/deployment/registry/help/dp_help.src#RID_STR_HELPPROCESSING_XMLPARSING_ERROR.String.Text
+msgid  "The extension will not be installed because an error occurred in the Help files:\n"
 msgstr ""
-"Pakiet wymaga Instalatora Windows przynajmniej w wersji %s. \n"
-"Dostępna w systemie wersja Instalatora Windows: %s."
 
-#: setup.ulf#_SETUP_NOT_FOUND_.LngText.text
-msgid ""
-"This package requires the Windows Installer. \n"
-"You need at least Windows Installer '%s' on your system!"
+#: source/deployment/registry/package/dp_package.src#RID_STR_PACKAGE_BUNDLE.String.Text
+msgid  "Extension"
+msgstr "Rozszerzenie"
+
+#: source/deployment/registry/script/dp_script.src#RID_STR_BASIC_LIB.String.Text
+msgid  "%PRODUCTNAME Basic Library"
+msgstr "%PRODUCTNAME - Biblioteka Basic"
+
+#: source/deployment/registry/script/dp_script.src#RID_STR_DIALOG_LIB.String.Text
+msgid  "Dialog Library"
+msgstr "Biblioteka okien dialogowych"
+
+#: source/deployment/registry/script/dp_script.src#RID_STR_CANNOT_DETERMINE_LIBNAME.String.Text
+msgid  "The library name could not be determined."
+msgstr "Nie można ustalić nazwy biblioteki."
+
+#: source/deployment/registry/script/dp_script.src#RID_STR_LIBNAME_ALREADY_EXISTS.String.Text
+msgid  "This library name already exists. Please choose a different name."
+msgstr "Istnieje już biblioteka o takiej nazwie. Proszę wybrać inną nazwę."
+
+#: source/deployment/registry/sfwk/dp_sfwk.src#RID_STR_SFWK_LIB.String.Text
+msgid  "%MACROLANG Library"
+msgstr "Biblioteka %MACROLANG"
+
+#: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_1.String.Text
+msgid  "Extension Software License Agreement of $NAME:"
+msgstr "Umowa licencyjna rozszerzenia $NAME:"
+
+#: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_2.String.Text
+msgid  "Read the complete License Agreement displayed above. Accept the License Agreement by typing "yes" on the console then press the Return key. Type "no" to decline and to abort the extension setup."
 msgstr ""
-"Pakiet wymaga Instalatora Windows. \n"
-"Wymagana minimalna wersja Instalatora Windows: %s."
 
-#: setup.ulf#_USAGE_.LngText.text
-msgid ""
-"Usage:\n"
-"   /? :  Shows this dialog.\n"
-"   /a :  Performs an administrative installation.\n"
-"   /j[u|m] :  Performs an advertising installation.\n"
-"   /q[n] : Do not show any user interface (silent mode).\n"
+#: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_3.String.Text
+msgid  "[Enter "yes" or "no"]:"
 msgstr ""
-"Użycie:\n"
-"   /? :  Pokazuje to okno dialogowe.\n"
-"   /a :  Przeprowadza administrację administracyjną.\n"
-"   /j[u|m] :  Przeprowadza instalację anonsującą.\n"
-"   /q[n] : Nie pokazuj interfejsu użytkownika (tryb dyskretny).\n"
 
-#: setup.ulf#_ALREADY_RUNNING_.LngText.text
-msgid "There is already a setup process running."
-msgstr "Proces programu instalacyjnego jest już uruchomiony."
+#: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_4.String.Text
+msgid  "Your input was not correct. Please enter "yes" or "no":"
+msgstr ""
 
-#: setup.ulf#_UNKNOWN_ERROR_.LngText.text
-msgid "An Unknown Error occured!"
-msgstr "Wystąpił nieznany błąd"
+#: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_YES.String.Text
+msgid  "YES"
+msgstr "TAK"
 
-#: setup.ulf#_INVALID_PROFILE_.LngText.text
-msgid "Invalid or incomplete profile."
-msgstr "Nieprawidłowy lub niekompletny profil."
+#: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_Y.String.Text
+msgid  "Y"
+msgstr "T"
 
-#: setup.ulf#_UNKNOWN_LANG_.LngText.text
-msgid "Unknown Language: %d"
-msgstr "Nieznany język: %d"
+#: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_NO.String.Text
+msgid  "NO"
+msgstr "NIE"
 
-#: setup.ulf#_LANGUAGE_ZH_TW_.LngText.text
-msgid "Chinese (traditional)"
-msgstr "Chiński (tradycyjny)"
+#: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ACCEPT_LIC_N.String.Text
+msgid  "N"
+msgstr "N"
 
-#: setup.ulf#_LANGUAGE_CS_.LngText.text
-msgid "Czech"
-msgstr "Czeski"
+#: source/deployment/unopkg/unopkg.src#RID_STR_CONCURRENTINSTANCE.String.Text
+msgid  "unopkg cannot be started. The lock file indicates it as already running. If this does not apply, delete the lock file at:"
+msgstr ""
 
-#: setup.ulf#_LANGUAGE_DA_.LngText.text
-msgid "Danish"
-msgstr "Duński"
+#: source/deployment/unopkg/unopkg.src#RID_STR_UNOPKG_ERROR.String.Text
+msgid  "ERROR: "
+msgstr "BŁĄD: "
 
-#: setup.ulf#_LANGUAGE_DE_DE_.LngText.text
-msgid "German (Germany)"
-msgstr "Niemiecki (Niemcy)"
+#: source/migration/wizard.src#DLG_FIRSTSTART_WIZARD.ModalDialog.Text
+msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Witaj w %PRODUCTNAME %PRODUCTVERSION"
 
-#: setup.ulf#_LANGUAGE_EL_.LngText.text
-msgid "Greek"
-msgstr "Grecki"
+#: source/migration/wizard.src#STR_STATE_WELCOME.String.Text
+msgid  "Welcome"
+msgstr "Witaj"
 
-#: setup.ulf#_LANGUAGE_EN_US_.LngText.text
-msgid "English (USA)"
-msgstr "Angielski (USA)"
+#: source/migration/wizard.src#STR_STATE_LICENSE.String.Text
+msgid  "License Agreement"
+msgstr "Umowa licencyjna"
 
-#: setup.ulf#_LANGUAGE_ES_.LngText.text
-msgid "Spanish (Spain)"
-msgstr "Hiszpański (Hiszpania)"
+#: source/migration/wizard.src#STR_STATE_MIGRATION.String.Text
+msgid  "Personal Data"
+msgstr "Dane osobiste"
 
-#: setup.ulf#_LANGUAGE_FI_.LngText.text
-msgid "Finnish"
-msgstr "Fiński"
+#: source/migration/wizard.src#STR_STATE_USER.String.Text
+msgid  "User name"
+msgstr "Dane użytkownika"
 
-#: setup.ulf#_LANGUAGE_FR_FR_.LngText.text
-msgid "French (France)"
-msgstr "Francuski (Francja)"
+#: source/migration/wizard.src#STR_STATE_UPDATE_CHECK.String.Text
+msgid  "Online Update"
+msgstr "Aktualizacja online"
 
-#: setup.ulf#_LANGUAGE_HE_.LngText.text
-msgid "Hebrew"
-msgstr "Hebrajski"
+#: source/migration/wizard.src#STR_STATE_REGISTRATION.String.Text
+msgid  "Registration"
+msgstr "Rejestracja"
 
-#: setup.ulf#_LANGUAGE_HU_.LngText.text
-msgid "Hungarian"
-msgstr "Węgierski"
+#: source/migration/wizard.src#STR_WELCOME_MIGRATION.String.Text
+msgid  "This wizard will guide you through the license agreement, the transfer of user data from %OLD_VERSION and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
+msgstr ""
 
-#: setup.ulf#_LANGUAGE_IT_IT_.LngText.text
-msgid "Italian (Italy)"
-msgstr "Włoski (Włochy)"
+#: source/migration/wizard.src#STR_WELCOME_WITHOUT_LICENSE.String.Text
+msgid  "This wizard will guide you through the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
+msgstr ""
 
-#: setup.ulf#_LANGUAGE_JA_.LngText.text
-msgid "Japanese"
-msgstr "Japoński"
+#: source/migration/wizard.src#STR_FINISH.String.Text
+msgid  "~Finish"
+msgstr "~Zakończ"
 
-#: setup.ulf#_LANGUAGE_KO_.LngText.text
-msgid "Korean"
-msgstr "Koreański"
+#: source/migration/wizard.src#STR_REGISTRATION_OOO.String.Text
+msgid  "You now have the opportunity to support and contribute to the fastest growing open source community in the world.\n\nHelp us prove that %PRODUCTNAME has already gained significant market share by registering.\n\nRegistering is voluntary and without obligation."
+msgstr ""
 
-#: setup.ulf#_LANGUAGE_NL_NL_.LngText.text
-msgid "Dutch (Netherlands)"
-msgstr "Holenderski (Holandia)"
+#: source/migration/wizard.src#ERRBOX_REG_NOSYSBROWSER.ErrorBox.Message
+msgid  "An error occurred in starting the web browser.\nPlease check the %PRODUCTNAME and web browser settings."
+msgstr ""
 
-#: setup.ulf#_LANGUAGE_NO_NO_.LngText.text
-msgid "Norwegian (Bokmål)"
-msgstr "Norweski (Bokmål)"
+#: source/migration/wizard.src#QB_ASK_DECLINE.QueryBox.Message
+msgid  "Do you really want to decline?"
+msgstr "Czy na pewno chcesz odrzucić licencję?"
 
-#: setup.ulf#_LANGUAGE_PL_.LngText.text
-msgid "Polish"
-msgstr "Polski"
+#: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_HEADER.FixedText.Text
+msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION"
+msgstr "Witaj w %PRODUCTNAME %PRODUCTVERSION"
 
-#: setup.ulf#_LANGUAGE_PT_BR_.LngText.text
-msgid "Portuguese (Brazil)"
-msgstr "Portugalski (Brazylia)"
+#: source/migration/wizard.src#TP_WELCOME.FT_WELCOME_BODY.FixedText.Text
+msgid  "This wizard will guide you through the license agreement and the registration of %PRODUCTNAME.\n\nClick 'Next' to continue."
+msgstr ""
 
-#: setup.ulf#_LANGUAGE_RU_.LngText.text
-msgid "Russian"
-msgstr "Rosyjski"
+#: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_HEADER.FixedText.Text
+msgid  "Please follow these steps to accept the license"
+msgstr "Aby zaakceptować licencję, wykonaj następujące czynności"
 
-#: setup.ulf#_LANGUAGE_SK_.LngText.text
-msgid "Slovak"
-msgstr "Słowacki"
+#: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1.FixedText.Text
+msgid  "1."
+msgstr "1."
 
-#: setup.ulf#_LANGUAGE_SV_SE_.LngText.text
-msgid "Swedish (Sweden)"
-msgstr "Szwedzki (Szwecja)"
+#: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_1_TXT.FixedText.Text
+msgid  "View the complete License Agreement. Please use the scrollbar or the '%PAGEDOWN' button in this dialog to view the entire license text."
+msgstr ""
 
-#: setup.ulf#_LANGUAGE_TH_.LngText.text
-msgid "Thai"
-msgstr "Tajski"
+#: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2.FixedText.Text
+msgid  "2."
+msgstr "2."
 
-#: setup.ulf#_LANGUAGE_TR_.LngText.text
-msgid "Turkish"
-msgstr "Turecki"
+#: source/migration/wizard.src#TP_LICENSE.FT_LICENSE_BODY_2_TXT.FixedText.Text
+msgid  "Click 'Accept' to accept the terms of the Agreement."
+msgstr "Kliknij przycisk 'Akceptuj' aby zatwierdzić postanowienia licencji."
 
-#: setup.ulf#_LANGUAGE_ET_.LngText.text
-msgid "Estonian"
-msgstr "Estoński"
+#: source/migration/wizard.src#TP_LICENSE.PB_LICENSE_DOWN.PushButton.Text
+msgid  "Scroll Do~wn"
+msgstr "Przewiń w dół"
 
-#: setup.ulf#_LANGUAGE_ZH_CN_.LngText.text
-msgid "Chinese (Simplified)"
-msgstr "Chiński (uproszczony)"
+#: source/migration/wizard.src#STR_LICENSE_ACCEPT.String.Text
+msgid  "~Accept"
+msgstr "~Akceptuj"
 
-#: setup.ulf#_LANGUAGE_PT_PT_.LngText.text
-msgid "Portuguese (Portugal)"
-msgstr "Portugalski (Portugalia)"
+#: source/migration/wizard.src#STR_LICENSE_DECLINE.String.Text
+msgid  "~Decline"
+msgstr "~Odrzuć"
 
-#~ msgid "Slovakian"
-#~ msgstr "Słowacki"
-#: rebasegui.ulf#_APP_TITLE_.LngText.text
-msgid "Installation Status"
+#: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_HEADER.FixedText.Text
+msgid  "Transfer personal data"
+msgstr "Przenieś dane użytkownika"
+
+#: source/migration/wizard.src#TP_MIGRATION.FT_MIGRATION_BODY.FixedText.Text
+msgid  "Most personal data from %OLDPRODUCT installation can be reused in %PRODUCTNAME %PRODUCTVERSION.\n\nIf you do not want to reuse any settings in %PRODUCTNAME %PRODUCTVERSION, unmark the check box."
+msgstr ""
+
+#: source/migration/wizard.src#TP_MIGRATION.CB_MIGRATION.CheckBox.Text
+msgid  "Transfer personal data"
+msgstr "Przenieś dane użytkownika"
+
+#: source/migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_HEADER.FixedText.Text
+msgid  "Online Update"
+msgstr "Aktualizacja online"
+
+#: source/migration/wizard.src#TP_UPDATE_CHECK.FT_UPDATE_CHECK_BODY.FixedText.Text
+msgid  "%PRODUCTNAME searches automatically at regular intervals for new versions.\nIn doing so online update does not transfer personal data.\nAs soon as a new version is available, you will be notified.\n\nYou can configure this feature at Tools / Options... / %PRODUCTNAME / Online Update."
+msgstr ""
+
+#: source/migration/wizard.src#TP_UPDATE_CHECK.CB_UPDATE_CHECK.CheckBox.Text
+msgid  "~Check for updates automatically"
+msgstr "~Sprawdzaj aktualizacje automatycznie"
+
+#: source/migration/wizard.src#TP_USER.FT_USER_HEADER.FixedText.Text
+msgid  "Provide your full name and initials below"
+msgstr "Podaj imię, nazwisko i inicjały"
+
+#: source/migration/wizard.src#TP_USER.FT_USER_BODY.FixedText.Text
+msgid  "The user name will be used in the document properties, templates and when you record changes made to documents."
+msgstr ""
+
+#: source/migration/wizard.src#TP_USER.FT_USER_FIRST.FixedText.Text
+msgid  "~First name"
+msgstr "~Imię"
+
+#: source/migration/wizard.src#TP_USER.FT_USER_LAST.FixedText.Text
+msgid  "~Last name"
+msgstr "~Nazwisko"
+
+#: source/migration/wizard.src#TP_USER.FT_USER_INITIALS.FixedText.Text
+msgid  "~Initials"
+msgstr "~Inicjały"
+
+#: source/migration/wizard.src#TP_USER.FT_USER_FATHER.FixedText.Text
+msgid  "~Father's name"
+msgstr "~Imię ojca"
+
+#: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_HEADER.FixedText.Text
+msgid  "%PRODUCTNAME Registration"
+msgstr "Rejestracja %PRODUCTNAME"
+
+#: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_BODY.FixedText.Text
+msgid  "You now have the opportunity to register as a %PRODUCTNAME user. Registration is voluntary and is without obligation.\n\nIf you register, we can inform you about new developments concerning this product."
+msgstr ""
+
+#: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NOW.RadioButton.Text
+msgid  "I want to register ~now"
+msgstr "Chcę się zarejestrować teraz"
+
+#: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_LATER.RadioButton.Text
+msgid  "I want to register ~later"
+msgstr "Chcę się zarejestrować później"
+
+#: source/migration/wizard.src#TP_REGISTRATION.RB_REGISTRATION_NEVER.RadioButton.Text
+msgid  "I do not want to ~register"
+msgstr "Nie chcę się rejestrować"
+
+#: source/migration/wizard.src#TP_REGISTRATION.FT_REGISTRATION_END.FixedText.Text
+msgid  "We hope you enjoy working with %PRODUCTNAME.\n\nTo exit the wizard, click 'Finish'."
+msgstr ""
+
+#: win32/source/rebase/rebasegui.ulf#%APP_TITLE%
+msgid  "Installation Status"
 msgstr "Stan instalacji"
 
-#: rebasegui.ulf#_MSG_OPTIMIZED_FOR_CLIENT_.LngText.text
-msgid "Installation is optimized for clients."
+#: win32/source/rebase/rebasegui.ulf#%MSG_OPTIMIZED_FOR_CLIENT%
+msgid  "Installation is optimized for clients."
 msgstr "Instalacja jest zoptymalizowana pod kątem klientów."
 
-#: rebasegui.ulf#_MSG_OPTIMIZED_FOR_SERVER_.LngText.text
-msgid "Installation is optimized for servers."
+#: win32/source/rebase/rebasegui.ulf#%MSG_OPTIMIZED_FOR_SERVER%
+msgid  "Installation is optimized for servers."
 msgstr "Instalacja jest zoptymalizowana pod kątem serwerów."
 
-#: rebasegui.ulf#_MSG_NO_INSTALLATION_FOUND_.LngText.text
-msgid "Cannot find Office installation."
+#: win32/source/rebase/rebasegui.ulf#%MSG_NO_INSTALLATION_FOUND%
+msgid  "Cannot find Office installation."
 msgstr "Nie można odnaleźć instalacji pakietu Office."
+
+#: win32/source/setup/setup.ulf#%APP_PROD_TITLE%
+msgid  "The %PRODUCTNAME Setup"
+msgstr "Program instalacyjny %PRODUCTNAME"
+
+#: win32/source/setup/setup.ulf#%OUTOFMEM%
+msgid  "Out of Memory"
+msgstr "Brak pamięci."
+
+#: win32/source/setup/setup.ulf#%NOMSI%
+msgid  "Setup was unable to find the msi package."
+msgstr "Program instalacyjny nie mógł odnaleźć pakietu msi."
+
+#: win32/source/setup/setup.ulf#%USER_CANCELLED%
+msgid  "Setup was cancelled"
+msgstr "Anulowano program instalacyjny."
+
+#: win32/source/setup/setup.ulf#%REQUIRES_ADMIN_PRIV%
+msgid  "Administrator privileges are required for upgrading the Windows Installer."
+msgstr ""
+
+#: win32/source/setup/setup.ulf#%FILE_NOT_FOUND%
+msgid  "Setup was unable to find the file '%s'."
+msgstr "Program instalacyjny nie mógł odnaleźć pliku '%s'."
+
+#: win32/source/setup/setup.ulf#%INVALID_PARAM%
+msgid  "Invalid command line option '%s'. Please use '/?' for help."
+msgstr "Nieprawidłowa opcja linii poleceń '%s'. Użyj  '/?' aby uzyskać pomoc."
+
+#: win32/source/setup/setup.ulf#%SETUP_TO_OLD%
+msgid  "This package requires at least the version '%s' of the Windows Installer. \nYou have Windows Installer '%s' on your system!"
+msgstr ""
+
+#: win32/source/setup/setup.ulf#%SETUP_NOT_FOUND%
+msgid  "This package requires the Windows Installer. \nYou need at least Windows Installer '%s' on your system!"
+msgstr ""
+
+#: win32/source/setup/setup.ulf#%USAGE%
+msgid  "Usage:\n   /? :  Shows this dialog.\n   /a :  Performs an administrative installation.\n   /j[u|m] :  Performs an advertising installation.\n   /q[n] : Do not show any user interface (silent mode).\n"
+msgstr ""
+
+#: win32/source/setup/setup.ulf#%ALREADY_RUNNING%
+msgid  "There is already a setup process running."
+msgstr "Proces programu instalacyjnego jest już uruchomiony."
+
+#: win32/source/setup/setup.ulf#%UNKNOWN_ERROR%
+msgid  "An Unknown Error occured!"
+msgstr "Wystąpił nieznany błąd"
+
+#: win32/source/setup/setup.ulf#%INVALID_PROFILE%
+msgid  "Invalid or incomplete profile."
+msgstr "Nieprawidłowy lub niekompletny profil."
+
+#: win32/source/setup/setup.ulf#%UNKNOWN_LANG%
+msgid  "Unknown Language: %d"
+msgstr "Nieznany język: %d"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_ZH_TW%
+msgid  "Chinese (traditional)"
+msgstr "Chiński (tradycyjny)"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_CS%
+msgid  "Czech"
+msgstr "Czeski"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_DA%
+msgid  "Danish"
+msgstr "Duński"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_DE_DE%
+msgid  "German (Germany)"
+msgstr "Niemiecki (Niemcy)"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_EL%
+msgid  "Greek"
+msgstr "Grecki"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_EN_US%
+msgid  "English (USA)"
+msgstr "Angielski (USA)"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_ES%
+msgid  "Spanish (Spain)"
+msgstr "Hiszpański (Hiszpania)"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_FI%
+msgid  "Finnish"
+msgstr "Fiński"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_FR_FR%
+msgid  "French (France)"
+msgstr "Francuski (Francja)"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_HE%
+msgid  "Hebrew"
+msgstr "Hebrajski"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_HU%
+msgid  "Hungarian"
+msgstr "Węgierski"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_IT_IT%
+msgid  "Italian (Italy)"
+msgstr "Włoski (Włochy)"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_JA%
+msgid  "Japanese"
+msgstr "Japoński"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_KO%
+msgid  "Korean"
+msgstr "Koreański"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_NL_NL%
+msgid  "Dutch (Netherlands)"
+msgstr "Holenderski (Holandia)"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_NO_NO%
+msgid  "Norwegian (Bokmål)"
+msgstr "Norweski (Bokmål)"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_PL%
+msgid  "Polish"
+msgstr "Polski"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_PT_BR%
+msgid  "Portuguese (Brazil)"
+msgstr "Portugalski (Brazylia)"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_RU%
+msgid  "Russian"
+msgstr "Rosyjski"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_SK%
+msgid  "Slovak"
+msgstr "Słowacki"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_SV_SE%
+msgid  "Swedish (Sweden)"
+msgstr "Szwedzki (Szwecja)"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_TH%
+msgid  "Thai"
+msgstr "Tajski"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_TR%
+msgid  "Turkish"
+msgstr "Turecki"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_ET%
+msgid  "Estonian"
+msgstr "Estoński"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_ZH_CN%
+msgid  "Chinese (Simplified)"
+msgstr "Chiński (uproszczony)"
+
+#: win32/source/setup/setup.ulf#%LANGUAGE_PT_PT%
+msgid  "Portuguese (Portugal)"
+msgstr "Portugalski (Portugalia)"
+
+#: win32/source/setup/setup.ulf#%APP_TITLE%
+msgid  "Setup"
+msgstr "Program instalacyjny"

@@ -1,381 +1,348 @@
-
-#: certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.FT_HINT_SELECT.fixedtext.text
-msgid "Select the certificate you want to use for signing"
-msgstr "ئىمزا قويىدىغان گۇۋاھنامىنى تاللاڭ"
-
-#: certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.string.text
-msgctxt "certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.string.text"
-msgid "Issued to\tIssued by\tExpiration date"
-msgstr "تارقىتىلغۇچى\tتارقاتقۇچى\tئىناۋەتلىك مۇددىتى"
-
-#: certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.pushbutton.text
-msgctxt "certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.pushbutton.text"
-msgid "View Certificate..."
-msgstr "گۇۋاھنامە كۆرسەت..."
-
-#: certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.modaldialog.text
-msgid "Select Certificate"
-msgstr "گۇۋاھنامە تاللا"
-
-#: certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_GENERAL.pageitem.text
-msgid "General"
-msgstr "ئادەتتىكى"
-
-#: certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_DETAILS.pageitem.text
-msgid "Details"
-msgstr "تەپسىلاتلار"
-
-#: certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_CERTPATH.pageitem.text
-msgid "Certification Path"
-msgstr "گۇۋاھنامە يولى"
-
-#: certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.tabdialog.text
-msgid "View Certificate"
-msgstr "گۇۋاھنامە كۆرسەت"
-
-#: certificateviewer.src#RID_XMLSECTP_GENERAL.FI_CERTINFO.fixedtext.text
-msgid " Certificate Information"
-msgstr " گۇۋاھنامە ئۇچۇرى"
-
-#: certificateviewer.src#RID_XMLSECTP_GENERAL.FI_HINTNOTTRUST.fixedtext.text
-msgid "This certificate is intended for the following purpose(s):"
-msgstr "بۇ گۇۋاھنامىنىڭ مەقسىتى تۆۋەندىكىچە:"
-
-#: certificateviewer.src#RID_XMLSECTP_GENERAL.FI_ISSTOLABEL.fixedtext.text
-msgid "Issued to:"
-msgstr "تارقىتىلغۇچى:"
-
-#: certificateviewer.src#RID_XMLSECTP_GENERAL.FI_ISSBYLABEL.fixedtext.text
-msgid "Issued by:"
-msgstr "تارقاتقۇچى:"
-
-#: certificateviewer.src#RID_XMLSECTP_GENERAL.FI_VALIDDATE.fixedtext.text
-msgid "Valid from %SDATE% to %EDATE%"
-msgstr "ئىناۋەتلىك مۇددىتى %SDATE% دىن %EDATE% غىچە"
-
-#: certificateviewer.src#RID_XMLSECTP_GENERAL.FI_CORRPRIVKEY.fixedtext.text
-msgid "You have a private key that corresponds to this certificate."
-msgstr "بۇ گۇۋاھنامىگە ماس خاس شىفىرلىق ئاچقۇچىڭىز بار."
-
-#: certificateviewer.src#RID_XMLSECTP_GENERAL.STR_CERTIFICATE_NOT_VALIDATED.string.text
-msgctxt "certificateviewer.src#RID_XMLSECTP_GENERAL.STR_CERTIFICATE_NOT_VALIDATED.string.text"
-msgid "The certificate could not be validated."
-msgstr "گۇۋاھنامىنى دەلىللىيەلمىدى."
-
-#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_HEADERBAR.string.text
-msgid "Field\tValue"
-msgstr "سۆز بۆلەك\tقىممىتى"
-
-#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VERSION.string.text
-msgid "Version"
-msgstr "نەشرى"
-
-#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SERIALNUM.string.text
-msgid "Serial Number"
-msgstr "تەرتىپ نومۇرى"
-
-#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGALGORITHM.string.text
-msgctxt "certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGALGORITHM.string.text"
-msgid "Signature Algorithm"
-msgstr "ئىمزا ئالگورىزمى"
-
-#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_ISSUER.string.text
-msgid "Issuer"
-msgstr "تارقاتقۇچى"
-
-#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_ISSUER_ID.string.text
-msgid "Issuer Unique ID"
-msgstr "تارقاتقۇچى بىردىنبىر ID"
-
-#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VALIDFROM.string.text
-msgid "Valid From"
-msgstr "ئىناۋەتلىك مۇددىتى باشلىنىش ۋاقتى"
-
-#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VALIDTO.string.text
-msgid "Valid to"
-msgstr "ئىناۋەتلىك مۇددىتى ئاخىرلىشىش ۋاقتى"
-
-#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT.string.text
-msgid "Subject"
-msgstr "تېما"
-
-#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_ID.string.text
-msgid "Subject Unique ID"
-msgstr "تېما بىردىنبىر ID"
-
-#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_PUBKEY_ALGO.string.text
-msgid "Subject Algorithm"
-msgstr "تېما ھېسابلاش ئۇسۇلى"
-
-#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_PUBKEY_VAL.string.text
-msgid "Public Key"
-msgstr "ئاممىۋى شىفىرلىق ئاچقۇچ"
-
-#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGNATURE_ALGO.string.text
-msgctxt "certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGNATURE_ALGO.string.text"
-msgid "Signature Algorithm"
-msgstr "ئىمزا ئالگورىزمى"
-
-#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_THUMBPRINT_SHA1.string.text
-msgid "Thumbprint SHA1"
-msgstr "بارماق ئىزى SHA1"
-
-#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_THUMBPRINT_MD5.string.text
-msgid "Thumbprint MD5"
-msgstr "بارماق ئىزى MD5"
-
-#: certificateviewer.src#RID_XMLSECTP_CERTPATH.FT_CERTPATH.fixedtext.text
-msgid "Certification path"
-msgstr "گۇۋاھنامە يولى"
-
-#: certificateviewer.src#RID_XMLSECTP_CERTPATH.BTN_VIEWCERT.pushbutton.text
-msgctxt "certificateviewer.src#RID_XMLSECTP_CERTPATH.BTN_VIEWCERT.pushbutton.text"
-msgid "View Certificate..."
-msgstr "گۇۋاھنامە كۆرسەت..."
-
-#: certificateviewer.src#RID_XMLSECTP_CERTPATH.FT_CERTSTATUS.fixedtext.text
-msgid "Certification status"
-msgstr "گۇۋاھنامە ھالىتى"
-
-#: certificateviewer.src#RID_XMLSECTP_CERTPATH.STR_PATH_CERT_OK.string.text
-msgid "The certificate is OK."
-msgstr "گۇۋاھنامە توغرا."
-
-#: certificateviewer.src#RID_XMLSECTP_CERTPATH.STR_PATH_CERT_NOT_VALIDATED.string.text
-msgctxt "certificateviewer.src#RID_XMLSECTP_CERTPATH.STR_PATH_CERT_NOT_VALIDATED.string.text"
-msgid "The certificate could not be validated."
-msgstr "گۇۋاھنامىنى دەلىللىيەلمىدى."
-
-#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_DOC.fixedtext.text
-msgid "The following have signed the document content:"
-msgstr "تۆۋەندىكىلەر پۈتۈك مەزمۇنىغا ئىمزا قويغان:"
-
-#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_BASIC.fixedtext.text
-msgid "The following have signed the document macro:"
-msgstr "تۆۋەندىكىلەر پۈتۈك ماكروسىغا ئىمزا قويغان:"
-
-#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_PACK.fixedtext.text
-msgid "The following have signed this package:"
-msgstr "تۆۋەندىكىلەر بۇ يۇمشاق دېتال بوغچىسىغا ئىمزا قويغان:"
-
-#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_HEADERBAR.string.text
-msgid "\tSigned by\tDigital ID issued by\tDate"
-msgstr "\tئىمزا قويغۇچى\tرەقەملىك ID تارقاتقۇچى\tچېسلا"
-
-#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_VALID_SIGNATURE.string.text
-msgid "Valid signature"
-msgstr "ئىناۋەتلىك ئىمزا"
-
-#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_NO_INFO_TO_VERIFY.string.text
-msgid "Certificate could not be validated"
-msgstr "گۇۋاھنامىنى دەلىللىيەلمىدى"
-
-#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_INVALID_SIGNATURE.string.text
-msgctxt "digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_INVALID_SIGNATURE.string.text"
-msgid "The signatures in this document are invalid"
-msgstr "بۇ پۈتۈكنىڭ ئىمزاسى ئىناۋەتسىز."
-
-#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_VALID.fixedtext.text
-msgid "The signatures in this document are valid"
-msgstr "بۇ پۈتۈكنىڭ ئىمزاسى ئىناۋەتلىك."
-
-#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_OLDSIGNATURE.fixedtext.text
-msgid "Not all parts of the document are signed"
-msgstr "پۈتۈكنىڭ ھەممە بۆلەكلىرىگە ئىمزا قويۇلغان بولۇشى ناتايىن"
-
-#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_BROKEN.fixedtext.text
-msgctxt "digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_BROKEN.fixedtext.text"
-msgid "The signatures in this document are invalid"
-msgstr "بۇ پۈتۈكنىڭ ئىمزاسى ئىناۋەتسىز."
-
-#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_VIEWCERT.pushbutton.text
-msgctxt "digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_VIEWCERT.pushbutton.text"
-msgid "View Certificate..."
-msgstr "گۇۋاھنامە كۆرسەت..."
-
-#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_ADDCERT.pushbutton.text
-msgid "Sign Document..."
-msgstr "پۈتۈك ئىمزا…"
-
-#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_REMOVECERT.pushbutton.text
-msgctxt "digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_REMOVECERT.pushbutton.text"
-msgid "Remove"
-msgstr "ئۆچۈر"
-
-#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_OK.okbutton.text
-msgid "Close"
-msgstr "ياپ"
-
-#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.modaldialog.text
-msgid "Digital Signatures"
-msgstr "رەقەملىك ئىمزا"
-
-#: digitalsignaturesdialog.src#RID_XMLSECDLG_OLD_ODF_FORMAT.errorbox.text
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
 msgid ""
-"This document contains signatures in ODF 1.1 (OpenOffice.org 2.x) format. "
-"Signing documents in %PRODUCTNAME %PRODUCTVERSION requires ODF 1.2 format "
-"version. Thus no signatures can be added or removed to this document.\n"
-"\n"
-"Save document in ODF 1.2 format and add all desired signatures again."
 msgstr ""
-"بۇ پۈتۈكتە ODF 1.1 (OpenOffice.org 2.x) فورماتىدىكى ئىمزا بار. %PRODUCTNAME "
-"%PRODUCTVERSION دىكى ئىمزالىق پۈتۈك ODF 1.2 فورماتىدىكى نەشرىگە ئېھتىياجلىق.\n"
-"\n"
-"پۈتۈكنى ODF 1.2 فورماتىدا ساقلاپ لازىملىق ئىمزانى قايتىدىن قوشۇڭ."
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
 
-#: digitalsignaturesdialog.src#MSG_XMLSECDLG_QUERY_REMOVEDOCSIGNBEFORESIGN.querybox.text
-msgid ""
-"Adding or removing a macro signature will remove all document signatures.\n"
-"Do you really want to continue?"
+
+#: source/component/warnbox.src#RID_XMLSECWB_NO_MOZILLA_PROFILE.WarningBox.Message
+msgid  "Digital signatures functionality could not be used, because no Mozilla user profile was found. Please check the Mozilla installation."
 msgstr ""
-"ماكرو ئىمزاسى قوشۇلسا ياكى ئۆچۈرۈلسە، پۈتكۈل پۈتۈكنىڭ ئىمزاسى ئۆچۈرۈلىدۇ.\n"
-"راستىنلا داۋاملاشتۇرامسىز؟"
 
-#: macrosecurity.src#RID_XMLSECTP_MACROSEC.1.RID_XMLSECTP_SECLEVEL.pageitem.text
-msgid "Security Level"
-msgstr "بىخەتەرلىك دەرىجە"
-
-#: macrosecurity.src#RID_XMLSECTP_MACROSEC.1.RID_XMLSECTP_TRUSTSOURCES.pageitem.text
-msgid "Trusted Sources"
-msgstr "ئىشەنچلىك مەنبە"
-
-#: macrosecurity.src#RID_XMLSECTP_MACROSEC.BTN_RESET.pushbutton.text
-msgid "Reset"
-msgstr "ئەسلىگە قايتۇر"
-
-#: macrosecurity.src#RID_XMLSECTP_MACROSEC.tabdialog.text
-msgid "Macro Security"
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.TabDialog.Text
+msgid  "Macro Security"
 msgstr "ماكرو بىخەتەرلىكى"
 
-#: macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.radiobutton.text
-msgid ""
-"~Very high.\n"
-"Only macros from trusted file locations are allowed to run. All other "
-"macros, regardless whether signed or not, are disabled."
-msgstr ""
-"ناھايىتى يۇقىرى\n"
-"پەقەت ئىشەنچلىك ئورۇننىڭ ماكروسىلا ئىجرا قىلىشقا يول قويۇلىدۇ. باشقا "
-"ماكرولار ئىمزالىق، ئىمزاسىز بولۇشىدىن قەتئىينەزەر ھەممىسى چەكلىنىدۇ(~V)."
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.1.RID_XMLSECTP_SECLEVEL.PageItem.Text
+msgid  "Security Level"
+msgstr "بىخەتەرلىك دەرىجە"
 
-#: macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.radiobutton.text
-msgid ""
-"H~igh.\n"
-"Only signed macros from trusted sources are allowed to run. Unsigned macros "
-"are disabled."
-msgstr ""
-"يۇقىرى\n"
-"ئىشەنچلىك مەنبەنىڭ ئىمزالىق ماكروسىنىلا ئىجرا قىلىشقا يول قويىدۇ. ئىمزاسىز "
-"ماكرو چەكلىنىدۇ(~I)."
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.1.RID_XMLSECTP_TRUSTSOURCES.PageItem.Text
+msgid  "Trusted Sources"
+msgstr "ئىشەنچلىك مەنبە"
 
-#: macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.radiobutton.text
-msgid ""
-"~Medium.\n"
-"Confirmation required before executing macros from untrusted sources."
-msgstr ""
-"ئوتتۇرا\n"
-"ئىشەنچسىز مەنبەدىن كەلگەن ماكرونى ئەسكەرتىپ جەزملەيدۇ(~M)."
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.BTN_RESET.PushButton.Text
+msgid  "Reset"
+msgstr "ئەسلىگە قايتۇر"
 
-#: macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.radiobutton.text
-msgid ""
-"~Low (not recommended).\n"
-"All macros will be executed without confirmation. Use this setting only if "
-"you are certain that all documents that will be opened are safe."
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RadioButton.Text
+msgid  "~Very high.\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
 msgstr ""
-"تۆۋەن\n"
-"جەزملىمەيلا ماكرو ئىجر قىلىدۇ. بۇ تەڭشەك پەقەت ئېچىلغان ھەممە پۈتۈكلەرنىڭ "
-"بىخەتەر ئىكەنلىكىگە كاپالەتلىك قىلغاندىلا ئاندىن ئىشلىتىلىدۇ(~L)."
 
-#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.fixedline.text
-msgid "Trusted certificates"
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RadioButton.Text
+msgid  "H~igh.\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
+msgstr ""
+
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RadioButton.Text
+msgid  "~Medium.\nConfirmation required before executing macros from untrusted sources."
+msgstr ""
+
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RadioButton.Text
+msgid  "~Low (not recommended).\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
+msgstr ""
+
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FixedLine.Text
+msgid  "Trusted certificates"
 msgstr "ئىشەنچلىك گۇۋاھنامە"
 
-#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.STR_HEADERBAR.string.text
-msgctxt "macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.STR_HEADERBAR.string.text"
-msgid "Issued to\tIssued by\tExpiration date"
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.STR_HEADERBAR.String.Text
+msgid  "Issued to\tIssued by\tExpiration date"
 msgstr "تارقىتىلغۇچى\tتارقاتقۇچى\tئىناۋەتلىك مۇددىتى"
 
-#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_ADD_TRUSTCERT.pushbutton.text
-msgctxt "macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_ADD_TRUSTCERT.pushbutton.text"
-msgid "Add..."
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_ADD_TRUSTCERT.PushButton.Text
+msgid  "Add..."
 msgstr "قوش…"
 
-#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_VIEW_TRUSTCERT.pushbutton.text
-msgid "View..."
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_VIEW_TRUSTCERT.PushButton.Text
+msgid  "View..."
 msgstr "كۆرسەت…"
 
-#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_REMOVE_TRUSTCERT.pushbutton.text
-msgctxt "macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_REMOVE_TRUSTCERT.pushbutton.text"
-msgid "Remove"
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_REMOVE_TRUSTCERT.PushButton.Text
+msgid  "Remove"
 msgstr "ئۆچۈر"
 
-#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTFILELOC.fixedline.text
-msgid "Trusted file locations"
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTFILELOC.FixedLine.Text
+msgid  "Trusted file locations"
 msgstr "ئىشەنچلىك ھۆججەت ئورنى"
 
-#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FI_TRUSTFILELOC.fixedtext.text
-msgid ""
-"Document macros are always executed if they have been opened from one of the "
-"following locations."
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FI_TRUSTFILELOC.FixedText.Text
+msgid  "Document macros are always executed if they have been opened from one of the following locations."
 msgstr ""
-"ئەگەر تۆۋەندىكى ئورۇنلارنىڭ بىرسىدىن پۈتۈك ماكروسى ئېچىلسا ئۇنداقتا بۇ "
-"ماكرولار ئىزچىل ئىجرا قىلىنىدۇ."
 
-#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_ADD_TRUSTFILELOC.pushbutton.text
-msgctxt "macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_ADD_TRUSTFILELOC.pushbutton.text"
-msgid "Add..."
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_ADD_TRUSTFILELOC.PushButton.Text
+msgid  "Add..."
 msgstr "قوش…"
 
-#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_REMOVE_TRUSTFILELOC.pushbutton.text
-msgctxt "macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_REMOVE_TRUSTFILELOC.pushbutton.text"
-msgid "Remove"
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_REMOVE_TRUSTFILELOC.PushButton.Text
+msgid  "Remove"
 msgstr "ئۆچۈر"
 
-#: macrosecurity.src#RID_XMLSECTP_READONLY_CONFIG_TIP.string.text
-msgid "This setting is protected by the Administrator"
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_READONLY_CONFIG_TIP.String.Text
+msgid  "This setting is protected by the Administrator"
 msgstr "باشقۇرغۇچى بۇ تەڭشەكنى قۇلۇپلىغان"
 
-#: warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR1A.fixedtext.text
-msgid "The document contains document macros signed by:"
-msgstr "بۇ پۈتۈكتە ماكرو بار، ئىمزا قويغۇچى:"
-
-#: warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR1B.fixedtext.text
-msgid "The document contains document macros."
-msgstr "بۇ پۈتۈكتە ماكرو بار."
-
-#: warnings.src#RID_XMLSECTP_MACROWARN.PB_VIEWSIGNS.pushbutton.text
-msgid "View Signatures..."
-msgstr "ئىمزا كۆرسەت…"
-
-#: warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR2.fixedtext.text
-msgid ""
-"Macros may contain viruses. Disabling macros for a document is always save. "
-"If you disable macros you may lose functionality provided by the document "
-"macros."
-msgstr ""
-"ماكرودا ۋىرۇس بولۇشى مۇمكىن. مەلۇم پۈتۈككە ئېلىپ بېرىلغان ماكرو چەكلەش "
-"مەشغۇلاتى ئىزچىل ساقلىنىدۇ. ئەگەر ماكرو چەكلىسىڭىز، پۈتۈك تەمىنلىگەن "
-"ئىقتىدار يوقىلىشى مۇمكىن."
-
-#: warnings.src#RID_XMLSECTP_MACROWARN.CB_ALWAYSTRUST.checkbox.text
-msgid "Always trust macros from this source"
-msgstr "بۇ مەنبەنىڭ ماكروسىغا ئىزچىل ئىشەن"
-
-#: warnings.src#RID_XMLSECTP_MACROWARN.PB_ENABLE.pushbutton.text
-msgid "Enable Macros"
-msgstr "ماكرو قوزغات"
-
-#: warnings.src#RID_XMLSECTP_MACROWARN.PB_DISABLE.cancelbutton.text
-msgid "Disable Macros"
-msgstr "ماكرو چەكلە"
-
-#: warnings.src#RID_XMLSECTP_MACROWARN.modaldialog.text
-msgid "Security Warning"
+#: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.ModalDialog.Text
+msgid  "Security Warning"
 msgstr "بىخەتەرلىك ئاگاھلاندۇرۇش"
 
-#: warnbox.src#RID_XMLSECWB_NO_MOZILLA_PROFILE.warningbox.text
-msgid ""
-"Digital signatures functionality could not be used, because no Mozilla user "
-"profile was found. Please check the Mozilla installation."
+#: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR1A.FixedText.Text
+msgid  "The document contains document macros signed by:"
+msgstr "بۇ پۈتۈكتە ماكرو بار، ئىمزا قويغۇچى:"
+
+#: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR1B.FixedText.Text
+msgid  "The document contains document macros."
+msgstr "بۇ پۈتۈكتە ماكرو بار."
+
+#: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.PB_VIEWSIGNS.PushButton.Text
+msgid  "View Signatures..."
+msgstr "ئىمزا كۆرسەت…"
+
+#: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR2.FixedText.Text
+msgid  "Macros may contain viruses. Disabling macros for a document is always save. If you disable macros you may lose functionality provided by the document macros."
 msgstr ""
-"رەقەملىك ئىمزا ئىقتىدارىنى ئىشلەتكىلى بولمايدۇ، سەۋەبى Mozilla نىڭ "
-"ئىشلەتكۈچى سەپلەش ھۆججىتى تېپىلمىدى. Mozilla قاچىلاشنى تەكشۈرۈڭ."
+
+#: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.CB_ALWAYSTRUST.CheckBox.Text
+msgid  "Always trust macros from this source"
+msgstr "بۇ مەنبەنىڭ ماكروسىغا ئىزچىل ئىشەن"
+
+#: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.PB_ENABLE.PushButton.Text
+msgid  "Enable Macros"
+msgstr "ماكرو قوزغات"
+
+#: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.PB_DISABLE.CancelButton.Text
+msgid  "Disable Macros"
+msgstr "ماكرو چەكلە"
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.ModalDialog.Text
+msgid  "Digital Signatures"
+msgstr "رەقەملىك ئىمزا"
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_DOC.FixedText.Text
+msgid  "The following have signed the document content:"
+msgstr "تۆۋەندىكىلەر پۈتۈك مەزمۇنىغا ئىمزا قويغان:"
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_BASIC.FixedText.Text
+msgid  "The following have signed the document macro:"
+msgstr "تۆۋەندىكىلەر پۈتۈك ماكروسىغا ئىمزا قويغان:"
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_PACK.FixedText.Text
+msgid  "The following have signed this package:"
+msgstr "تۆۋەندىكىلەر بۇ يۇمشاق دېتال بوغچىسىغا ئىمزا قويغان:"
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_HEADERBAR.String.Text
+msgid  "\tSigned by\tDigital ID issued by\tDate"
+msgstr "\tئىمزا قويغۇچى\tرەقەملىك ID تارقاتقۇچى\tچېسلا"
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_VALID_SIGNATURE.String.Text
+msgid  "Valid signature"
+msgstr "ئىناۋەتلىك ئىمزا"
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_NO_INFO_TO_VERIFY.String.Text
+msgid  "Certificate could not be validated"
+msgstr "گۇۋاھنامىنى دەلىللىيەلمىدى"
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_INVALID_SIGNATURE.String.Text
+msgid  "The signatures in this document are invalid"
+msgstr "بۇ پۈتۈكنىڭ ئىمزاسى ئىناۋەتسىز."
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_VALID.FixedText.Text
+msgid  "The signatures in this document are valid"
+msgstr "بۇ پۈتۈكنىڭ ئىمزاسى ئىناۋەتلىك."
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_OLDSIGNATURE.FixedText.Text
+msgid  "Not all parts of the document are signed"
+msgstr "پۈتۈكنىڭ ھەممە بۆلەكلىرىگە ئىمزا قويۇلغان بولۇشى ناتايىن"
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_BROKEN.FixedText.Text
+msgid  "The signatures in this document are invalid"
+msgstr "بۇ پۈتۈكنىڭ ئىمزاسى ئىناۋەتسىز."
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_VIEWCERT.PushButton.Text
+msgid  "View Certificate..."
+msgstr "گۇۋاھنامە كۆرسەت..."
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_ADDCERT.PushButton.Text
+msgid  "Sign Document..."
+msgstr "پۈتۈك ئىمزا…"
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_REMOVECERT.PushButton.Text
+msgid  "Remove"
+msgstr "ئۆچۈر"
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_OK.OKButton.Text
+msgid  "Close"
+msgstr "ياپ"
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_OLD_ODF_FORMAT.ErrorBox.Message
+msgid  "This document contains signatures in ODF 1.1 format. Signing documents in %PRODUCTNAME %PRODUCTVERSION requires ODF 1.2 format version. Thus no signatures can be added or removed to this document.\n\nSave document in ODF 1.2 format and add all desired signatures again."
+msgstr ""
+
+#: source/dialogs/digitalsignaturesdialog.src#MSG_XMLSECDLG_QUERY_REMOVEDOCSIGNBEFORESIGN.QueryBox.Message
+msgid  "Adding or removing a macro signature will remove all document signatures.\nDo you really want to continue?"
+msgstr ""
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.TabDialog.Text
+msgid  "View Certificate"
+msgstr "گۇۋاھنامە كۆرسەت"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_GENERAL.PageItem.Text
+msgid  "General"
+msgstr "ئادەتتىكى"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_DETAILS.PageItem.Text
+msgid  "Details"
+msgstr "تەپسىلاتلار"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_CERTPATH.PageItem.Text
+msgid  "Certification Path"
+msgstr "گۇۋاھنامە يولى"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_CERTINFO.FixedText.Text
+msgid  " Certificate Information"
+msgstr " گۇۋاھنامە ئۇچۇرى"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_HINTNOTTRUST.FixedText.Text
+msgid  "This certificate is intended for the following purpose(s):"
+msgstr "بۇ گۇۋاھنامىنىڭ مەقسىتى تۆۋەندىكىچە:"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_ISSTOLABEL.FixedText.Text
+msgid  "Issued to:"
+msgstr "تارقىتىلغۇچى:"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_ISSBYLABEL.FixedText.Text
+msgid  "Issued by:"
+msgstr "تارقاتقۇچى:"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_VALIDDATE.FixedText.Text
+msgid  "Valid from %SDATE% to %EDATE%"
+msgstr "ئىناۋەتلىك مۇددىتى %SDATE% دىن %EDATE% غىچە"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_CORRPRIVKEY.FixedText.Text
+msgid  "You have a private key that corresponds to this certificate."
+msgstr "بۇ گۇۋاھنامىگە ماس خاس شىفىرلىق ئاچقۇچىڭىز بار."
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.STR_CERTIFICATE_NOT_VALIDATED.String.Text
+msgid  "The certificate could not be validated."
+msgstr "گۇۋاھنامىنى دەلىللىيەلمىدى."
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_HEADERBAR.String.Text
+msgid  "Field\tValue"
+msgstr "سۆز بۆلەك\tقىممىتى"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VERSION.String.Text
+msgid  "Version"
+msgstr "نەشرى"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SERIALNUM.String.Text
+msgid  "Serial Number"
+msgstr "تەرتىپ نومۇرى"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGALGORITHM.String.Text
+msgid  "Signature Algorithm"
+msgstr "ئىمزا ئالگورىزمى"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_ISSUER.String.Text
+msgid  "Issuer"
+msgstr "تارقاتقۇچى"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_ISSUER_ID.String.Text
+msgid  "Issuer Unique ID"
+msgstr "تارقاتقۇچى بىردىنبىر ID"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VALIDFROM.String.Text
+msgid  "Valid From"
+msgstr "ئىناۋەتلىك مۇددىتى باشلىنىش ۋاقتى"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VALIDTO.String.Text
+msgid  "Valid to"
+msgstr "ئىناۋەتلىك مۇددىتى ئاخىرلىشىش ۋاقتى"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT.String.Text
+msgid  "Subject"
+msgstr "تېما"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_ID.String.Text
+msgid  "Subject Unique ID"
+msgstr "تېما بىردىنبىر ID"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_PUBKEY_ALGO.String.Text
+msgid  "Subject Algorithm"
+msgstr "تېما ھېسابلاش ئۇسۇلى"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_PUBKEY_VAL.String.Text
+msgid  "Public Key"
+msgstr "ئاممىۋى شىفىرلىق ئاچقۇچ"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGNATURE_ALGO.String.Text
+msgid  "Signature Algorithm"
+msgstr "ئىمزا ئالگورىزمى"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_THUMBPRINT_SHA1.String.Text
+msgid  "Thumbprint SHA1"
+msgstr "بارماق ئىزى SHA1"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_THUMBPRINT_MD5.String.Text
+msgid  "Thumbprint MD5"
+msgstr "بارماق ئىزى MD5"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.FT_CERTPATH.FixedText.Text
+msgid  "Certification path"
+msgstr "گۇۋاھنامە يولى"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.BTN_VIEWCERT.PushButton.Text
+msgid  "View Certificate..."
+msgstr "گۇۋاھنامە كۆرسەت..."
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.FT_CERTSTATUS.FixedText.Text
+msgid  "Certification status"
+msgstr "گۇۋاھنامە ھالىتى"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.STR_PATH_CERT_OK.String.Text
+msgid  "The certificate is OK."
+msgstr "گۇۋاھنامە توغرا."
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.STR_PATH_CERT_NOT_VALIDATED.String.Text
+msgid  "The certificate could not be validated."
+msgstr "گۇۋاھنامىنى دەلىللىيەلمىدى."
+
+#: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.ModalDialog.Text
+msgid  "Select Certificate"
+msgstr "گۇۋاھنامە تاللا"
+
+#: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.FT_HINT_SELECT.FixedText.Text
+msgid  "Select the certificate you want to use for signing"
+msgstr "ئىمزا قويىدىغان گۇۋاھنامىنى تاللاڭ"
+
+#: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.String.Text
+msgid  "Issued to\tIssued by\tExpiration date"
+msgstr "تارقىتىلغۇچى\tتارقاتقۇچى\tئىناۋەتلىك مۇددىتى"
+
+#: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.PushButton.Text
+msgid  "View Certificate..."
+msgstr "گۇۋاھنامە كۆرسەت..."

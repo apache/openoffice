@@ -1,1770 +1,604 @@
-
-#: sb.src#ERRCODE_BASMGR_LIBLOAD___ERRCODE_RES_MASK.string.text
-msgid "Error loading library '$(ARG1)'."
-msgstr "पुथी ओड़ाक् लादे जोहोक् भुल '$(ARG1)'"
-
-#: sb.src#ERRCODE_BASMGR_LIBSAVE___ERRCODE_RES_MASK.string.text
-msgid "Error saving library: '$(ARG1)'."
-msgstr "पुथी ओड़ाक् सांचाव जोहोक् भुल: '$(ARG1)'"
-
-#: sb.src#ERRCODE_BASMGR_MGROPEN___ERRCODE_RES_MASK.string.text
-msgid "The BASIC from the file '$(ARG1)' could not be initialized."
-msgstr "'$(ARG1)' रेत् खोन BASIC बाङ एहोब दाड़े याक् आ"
-
-#: sb.src#ERRCODE_BASMGR_MGRSAVE___ERRCODE_RES_MASK.string.text
-msgid "Error saving BASIC: '$(ARG1)'."
-msgstr "BASIC सांचाव जोहोक् भुल: '$(ARG1)'"
-
-#: sb.src#ERRCODE_BASMGR_REMOVELIB___ERRCODE_RES_MASK.string.text
-msgid "Error removing library."
-msgstr "पुथी ओड़ाक् ओचोक् जोहोक् भुल"
-
-#: sb.src#ERRCODE_BASMGR_UNLOADLIB___ERRCODE_RES_MASK.string.text
-msgid "The library could not be removed from memory."
-msgstr "पुथी ओड़ाक् उयहा़र ठाव खोन बाङ ओचोक् दाड़ेयाक् आ."
-
-#: sb.src#IDS_SBERR_STOREREF.string.text
-msgid "Reference will not be saved: "
-msgstr "जोनोड़ाव बाय सांचाक् आ: "
-
-#: sb.src#IDS_SBERR_TERMINATED.string.text
-msgid "The macro running has been interrupted"
-msgstr "ओका मॉक्रो चालाक् कान तांहेना, ओनाय आकोट आकात् आ"
-
-#: sb.src#RID_BASIC_START.ERRCODE_BASIC_ARRAY_FIX___ERRCODE_RES_MASK.string.text
-msgid "This array is fixed or temporarily locked."
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
 msgstr ""
-
-#: sb.src#RID_BASIC_START.ERRCODE_BASIC_COMPAT___ERRCODE_RES_MASK.string.text
-msgid "$(ARG1)"
-msgstr ""
-
-#: sb.src#RID_BASIC_START.ERRCODE_BASIC_EXCEPTION___ERRCODE_RES_MASK.string.text
-msgid "An exception occurred $(ARG1)."
-msgstr "मित् टाङ बाद काते हुय एना $(ARG1)"
-
-#: sb.src#RID_BASIC_START.ERRCODE_BASIC_EXPR_TOO_COMPLEX___ERRCODE_RES_MASK.string.text
-msgid "Expression Too Complex."
-msgstr ""
-
-#: sb.src#RID_BASIC_START.ERRCODE_BASIC_LOOP_NOT_INIT___ERRCODE_RES_MASK.string.text
-msgid "For loop not initialized."
-msgstr ""
-
-#: sb.src#RID_BASIC_START.ERRCODE_BASIC_OPER_NOT_PERFORM___ERRCODE_RES_MASK.string.text
-msgid "Can't perform requested operation."
-msgstr ""
-
-#: sb.src#RID_BASIC_START.ERRCODE_BASIC_STRING_OVERFLOW___ERRCODE_RES_MASK.string.text
-msgid "Out of string space."
-msgstr ""
-
-#: sb.src#RID_BASIC_START.ERRCODE_BASIC_TOO_MANY_DLL___ERRCODE_RES_MASK.string.text
-msgid "Too many DLL application clients."
-msgstr ""
-
-#: sb.src#RID_BASIC_START.SBERR_IS_NULL___ERRCODE_RES_MASK.string.text
-msgid "Use of zero not permitted."
-msgstr "सुन रेयाक् बाभार बाङ छाडा."
-
-#: sb.src#RID_BASIC_START.SbERR_ACCESS_DENIED___ERRCODE_RES_MASK.string.text
-msgid "Access denied."
-msgstr "आदेर बाङ बाताव"
-
-#: sb.src#RID_BASIC_START.SbERR_ACCESS_ERROR___ERRCODE_RES_MASK.string.text
-msgid "Path/File access error."
-msgstr "होर/रेत् सेटेर भुल"
-
-#: sb.src#RID_BASIC_START.SbERR_ALREADY_DIM___ERRCODE_RES_MASK.string.text
-msgid "Array already dimensioned."
-msgstr "साजाव माराङ ते नाप जुत आकाना"
-
-#: sb.src#RID_BASIC_START.SbERR_ARG_MISSING___ERRCODE_RES_MASK.string.text
-msgid "Required argument lacking."
-msgstr "ला़कतीयाक् तोरको बानुक्आ"
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_ACTION___ERRCODE_RES_MASK.string.text
-msgid "This action is not supported by given object."
-msgstr "नोवा का़मी एमाकान जिनिस दाराय ते बाय गोड़ोवाक् आ."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_ARGUMENT___ERRCODE_RES_MASK.string.text
-msgid "Invalid procedure call."
-msgstr "बाङ बाताव का़मी नियोम होहो."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_BLOCK___ERRCODE_RES_MASK.string.text
-msgid "Statement block still open: $(ARG1) missing."
-msgstr "काथा आकोट नित् हों झिच् आ: $(ARG1) आदोक् काना"
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_BRACKETS___ERRCODE_RES_MASK.string.text
-msgid "Parentheses do not match."
-msgstr "एसेत् बाङ मिला़क् काना"
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_CHANNEL___ERRCODE_RES_MASK.string.text
-msgid "Invalid file name or file number."
-msgstr "बाङ बाताव रेत् ञुतुम आर बाङ रेत् लेखा."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_CHAR_IN_NUMBER___ERRCODE_RES_MASK.string.text
-msgid "Invalid character in number."
-msgstr "लेखा रे बाङ बाताव आखोर."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_CLIPBD_FORMAT___ERRCODE_RES_MASK.string.text
-msgid "Invalid clipboard format."
-msgstr "बाङ बाताव रेटोब बोर्ड़ तेयार."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_DECLARATION___ERRCODE_RES_MASK.string.text
-msgid "Symbol $(ARG1) already defined differently."
-msgstr "$(ARG1) चिखना़ माड़ाङ खोन भेगार ते उपुरुम आकाना"
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_DLL_CALL___ERRCODE_RES_MASK.string.text
-msgid "Wrong DLL call convention."
-msgstr "भुल DLL दुपुड़ुप् होहो"
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_DLL_LOAD___ERRCODE_RES_MASK.string.text
-msgid "Error loading DLL file."
-msgstr "DLL रेत् भितिर रेयाक् सोमोय भुल"
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_EXIT___ERRCODE_RES_MASK.string.text
-msgid "Exit $(ARG1) expected."
-msgstr "आंस बाहरे $(ARG1) ओडोक्"
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_FILE_MODE___ERRCODE_RES_MASK.string.text
-msgid "Incorrect file mode."
-msgstr "भुल रेत् नियोम"
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_INDEX___ERRCODE_RES_MASK.string.text
-msgid "Invalid object index."
-msgstr "बाङ बाताव जिनिस ञुतुम थार"
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_LOCALE___ERRCODE_RES_MASK.string.text
-msgid "The current locale setting is not supported by the given object."
-msgstr "नितोगाक् नोड़े साजाव एमकान जिनिस दाराय ते बाय गोड़ोवाक् आ."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_METHOD___ERRCODE_RES_MASK.string.text
-msgid "This property or method is not supported by the object."
-msgstr "नोवा गुन आर  बाङ नियोम जिनिस दाराय ते बाय गोड़ोवाक् आ. "
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_NUMBER_OF_ARGS___ERRCODE_RES_MASK.string.text
-msgctxt "sb.src#RID_BASIC_START.SbERR_BAD_NUMBER_OF_ARGS___ERRCODE_RES_MASK.string.text"
-msgid "Invalid number of arguments."
-msgstr "बाङ बाताव तोरको रेयाक् लेखा"
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_OPTION___ERRCODE_RES_MASK.string.text
-msgid "Unknown option: $(ARG1)."
-msgstr "बाङ बाडाय आपनार लेकान तेयाक्: $(ARG1)"
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_ORDINAL___ERRCODE_RES_MASK.string.text
-msgid "Invalid ordinal number."
-msgstr "बाङ बाताव  थार लेखा"
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_PARAMETER___ERRCODE_RES_MASK.string.text
-msgid "Invalid parameter."
-msgstr "बाङ बाताव पारामिटर"
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_PARAMETERS___ERRCODE_RES_MASK.string.text
-msgid "Parameters do not correspond to procedure."
-msgstr "पैरामीटर का़मी होरा लेका ते बाय रोड़ रुवा़ड़ा"
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_PATTERN___ERRCODE_RES_MASK.string.text
-msgid "Invalid string pattern."
-msgstr "बाङ बाताव  स्ट्रिंग नामुना"
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_PROP_VALUE___ERRCODE_RES_MASK.string.text
-msgid "Incorrect property value."
-msgstr "बाङ जुत् गुन गोनोङ"
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_RECORD_LENGTH___ERRCODE_RES_MASK.string.text
-msgid "Incorrect record length."
-msgstr "बाङ ठिक् रोकोर्ड जिलिञ"
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_RECORD_NUMBER___ERRCODE_RES_MASK.string.text
-msgid "Incorrect record number."
-msgstr "बाङ ठिक् रिकोर्ड लेखा."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_RESUME___ERRCODE_RES_MASK.string.text
-msgid "Resume without error."
-msgstr "बेगोर भुल ते ञाम दोहड़ा."
-
-#: sb.src#RID_BASIC_START.SbERR_CANNOT_LOAD___ERRCODE_RES_MASK.string.text
-msgid "Module cannot be loaded; invalid format."
-msgstr "बेनाव तेयार बाङ लादे दाड़ेयाक् आ; बाङ बाताव तेयार."
-
-#: sb.src#RID_BASIC_START.SbERR_CONSTANT_REDECLARED___ERRCODE_RES_MASK.string.text
-msgid "Constant $(ARG1) redefined."
-msgstr "थिर $(ARG1) दोहड़ा ते उपुरुम आकात् आ."
-
-#: sb.src#RID_BASIC_START.SbERR_CONVERSION___ERRCODE_RES_MASK.string.text
-msgid "Data type mismatch."
-msgstr "भेगार भेगार जायगा रे सा़खिया़त"
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_BUSY___ERRCODE_RES_MASK.string.text
-msgid "External application busy."
-msgstr "बाहरे आरजी साकाम जोहोड़ गेया."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_CHANNEL_LOCKED___ERRCODE_RES_MASK.string.text
-msgid "DDE channel locked."
-msgstr "DDE चैनल कुलुप आकाना"
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_CONV_CLOSED___ERRCODE_RES_MASK.string.text
-msgid "DDE connection interrupted or modified."
-msgstr "DDE जोनोड़ाव तिंगु होचो आकाना  आर बाङ बोदोल आकाना."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_DLL_NOT_FOUND___ERRCODE_RES_MASK.string.text
-msgid "DDE requires the DDEML.DLL file."
-msgstr "DDE दो DDEML.DLL रेत् रेयाक् लाकती."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_ERROR___ERRCODE_RES_MASK.string.text
-msgid "DDE Error."
-msgstr "DDE भुल"
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_INVALID_LINK___ERRCODE_RES_MASK.string.text
-msgid "Invalid DDE link format."
-msgstr " DDE बाङ बाताव खोंजा तेयार."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_LINK_ALREADY_EST___ERRCODE_RES_MASK.string.text
-msgid "Paste link already performed."
-msgstr "लाठा खोंजा माड़ाङ खोन का़मी  येत् आ."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_LINK_INV_TOPIC___ERRCODE_RES_MASK.string.text
-msgid "Link mode cannot be set due to invalid link topic."
-msgstr "खोंजा ओबोसता बाङ बाताव खोंजा बिसोय खा़तिर बाय साजाव दाड़ेयाक् आ.  "
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_MULT_RESPONSES___ERRCODE_RES_MASK.string.text
-msgid "Too many applications responded to DDE connect initiation."
-msgstr " DDE आड़ी ढेर आरजी साकाम जोनोड़ाव एहोब ला़गित लाय एत् आ. "
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_NOTPROCESSED___ERRCODE_RES_MASK.string.text
-msgid "External application cannot execute DDE operation."
-msgstr " DDE बाहरे आरजी साकाम का़मी बाय हुय होचो दाड़ेयाक् आ"
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_NO_CHANNEL___ERRCODE_RES_MASK.string.text
-msgid "DDE method invoked with no channel open."
-msgstr " DDE जाहान चेनाल बाङ झिज सांव ञाम रुवा़ड़ नियोम."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_NO_DATA___ERRCODE_RES_MASK.string.text
-msgid "DDE operation without data."
-msgstr " DDE सा़खिया़त  बेगोर कांमी."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_NO_RESPONSE___ERRCODE_RES_MASK.string.text
-msgid "No application responded to DDE connect initiation."
-msgstr "DDE जाहान आरजी साकाम जोनोड़ाव एहोप ला़गित बाय ला़येत् आ. "
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_OUTOFCHANNELS___ERRCODE_RES_MASK.string.text
-msgid "No DDE channels available."
-msgstr " DDE जाहान चेनेल बाय ञामोक् आ "
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_PARTNER_QUIT___ERRCODE_RES_MASK.string.text
-msgid "External application has been terminated."
-msgstr "बाहरे आरजी साकाम  मुचात् केत् आ."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_QUEUE_OVERFLOW___ERRCODE_RES_MASK.string.text
-msgid "DDE message has been lost."
-msgstr "DDE खोबोर आत् आकाना"
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_TIMEOUT___ERRCODE_RES_MASK.string.text
-msgid "Timeout while waiting for DDE response."
-msgstr "DDE ला़य रुवा़ड़ ला़गित् तांगी जोहोज ओकोतो पारोम एना."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_USER_INTERRUPT___ERRCODE_RES_MASK.string.text
-msgid "User pressed ESCAPE during DDE operation."
-msgstr "DDE का़मी जोहोक्  बेभारिज ESCAPE ओता केतआ "
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_WAITINGACK___ERRCODE_RES_MASK.string.text
-msgid "Awaiting response to DDE connection."
-msgstr "DDE जोनोड़ाव ला़नाय लागित् तांगीआकात् आ"
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_WRONG_DATA_FORMAT___ERRCODE_RES_MASK.string.text
-msgid "Data are in wrong format."
-msgstr "सा़खिया़त् बाङ ठिक तेयार रे मेनाक् आ."
-
-#: sb.src#RID_BASIC_START.SbERR_DIFFERENT_DRIVE___ERRCODE_RES_MASK.string.text
-msgid "Renaming on different drives impossible."
-msgstr "भेगार चालावाक् रे दोहड़ा ञुतुम एम बाङ हुय दाड़ेयाक् आ"
-
-#: sb.src#RID_BASIC_START.SbERR_DISK_FULL___ERRCODE_RES_MASK.string.text
-msgid "Disk or hard drive full."
-msgstr "डिस्क आर बाङ हार्ड चालावाक् पेरेज."
-
-#: sb.src#RID_BASIC_START.SbERR_DLLPROC_NOT_FOUND___ERRCODE_RES_MASK.string.text
-msgid "Specified DLL function not found."
-msgstr " DLL गोटावाकान का़मी बाय ञाम लेना. "
-
-#: sb.src#RID_BASIC_START.SbERR_DUPLICATE_DEF___ERRCODE_RES_MASK.string.text
-msgid "Duplicate definition."
-msgstr "नोकोल ओनोरोम"
-
-#: sb.src#RID_BASIC_START.SbERR_EXPECTED___ERRCODE_RES_MASK.string.text
-msgid "Expected: $(ARG1)."
-msgstr "आंस दोहो: $(ARG1)"
-
-#: sb.src#RID_BASIC_START.SbERR_FILE_ALREADY_OPEN___ERRCODE_RES_MASK.string.text
-msgid "File already open."
-msgstr "रेत् माड़ाङ खोन झिज आकाना"
-
-#: sb.src#RID_BASIC_START.SbERR_FILE_EXISTS___ERRCODE_RES_MASK.string.text
-msgid "File already exists."
-msgstr "रेत् माड़ाङ खोन मेनाक् आ"
-
-#: sb.src#RID_BASIC_START.SbERR_FILE_NOT_FOUND___ERRCODE_RES_MASK.string.text
-msgid "File not found."
-msgstr "रेत् बाङ तेयार"
-
-#: sb.src#RID_BASIC_START.SbERR_GETPROP_FAILED___ERRCODE_RES_MASK.string.text
-msgid "Unable to determine property."
-msgstr "गुन बाङ गोटा दाड़ेयाक् आ"
-
-#: sb.src#RID_BASIC_START.SbERR_INTERNAL_ERROR___ERRCODE_RES_MASK.string.text
-msgid "Internal error $(ARG1)."
-msgstr "भितिरी भुल $(ARG1)."
-
-#: sb.src#RID_BASIC_START.SbERR_INVALID_OBJECT___ERRCODE_RES_MASK.string.text
-msgid "Invalid object reference."
-msgstr "बाङ बातावाक् जिनिस रोयाक् जोनोड़ाव काना"
-
-#: sb.src#RID_BASIC_START.SbERR_INVALID_USAGE_OBJECT___ERRCODE_RES_MASK.string.text
-msgid "Invalid use of an object."
-msgstr "जिनिस रेयाक् बेभार बाङ बातावा."
-
-#: sb.src#RID_BASIC_START.SbERR_IO_ERROR___ERRCODE_RES_MASK.string.text
-msgid "Device I/O error."
-msgstr "उपा़य I/O भुल"
-
-#: sb.src#RID_BASIC_START.SbERR_LABEL_DEFINED___ERRCODE_RES_MASK.string.text
-msgid "Label $(ARG1) already defined."
-msgstr " $(ARG1) चिखना माड़ाङ खोन उपुरुम आकाना. "
-
-#: sb.src#RID_BASIC_START.SbERR_LABEL_EXPECTED___ERRCODE_RES_MASK.string.text
-msgid "Label expected."
-msgstr "आंसाक् चिखना "
-
-#: sb.src#RID_BASIC_START.SbERR_LVALUE_EXPECTED___ERRCODE_RES_MASK.string.text
-msgid "Value cannot be applied."
-msgstr " गोनोङ बाङ बाहाल दाड़ेयाक् आ."
-
-#: sb.src#RID_BASIC_START.SbERR_MATH_OVERFLOW___ERRCODE_RES_MASK.string.text
-msgid "Overflow."
-msgstr "सारेड़"
-
-#: sb.src#RID_BASIC_START.SbERR_METHOD_FAILED___ERRCODE_RES_MASK.string.text
-msgid "Error executing a method."
-msgstr "नियोम का़मी रे भुल मेनाक् आ."
-
-#: sb.src#RID_BASIC_START.SbERR_METHOD_NOT_FOUND___ERRCODE_RES_MASK.string.text
-msgid "Object does not have this method."
-msgstr "नोवा नियोम जिनिस रे बानुक् आ."
-
-#: sb.src#RID_BASIC_START.SbERR_MUST_HAVE_DIMS___ERRCODE_RES_MASK.string.text
-msgid "Array must be dimensioned."
-msgstr "चानेच् रे नाप एम ला़कती या."
-
-#: sb.src#RID_BASIC_START.SbERR_NAMED_NOT_FOUND___ERRCODE_RES_MASK.string.text
-msgid "Named argument not found."
-msgstr "ञुतुम तोरको बाय ञाम लेना."
-
-#: sb.src#RID_BASIC_START.SbERR_NEEDS_OBJECT___ERRCODE_RES_MASK.string.text
-msgid "Object required."
-msgstr "जिनिस रेयाक् ला़कती"
-
-#: sb.src#RID_BASIC_START.SbERR_NOT_A_COLL___ERRCODE_RES_MASK.string.text
-msgid "Object is not a list."
-msgstr "जिनिस दो लिसटी बाङ काना."
-
-#: sb.src#RID_BASIC_START.SbERR_NOT_IMPLEMENTED___ERRCODE_RES_MASK.string.text
-msgid "Not implemented."
-msgstr "बाङ बाहाल लेना."
-
-#: sb.src#RID_BASIC_START.SbERR_NOT_IN_MAIN___ERRCODE_RES_MASK.string.text
-msgid "$(ARG1) not allowed outside a procedure."
-msgstr "$(ARG1) का़मी पोरा खोन बाहरे बाय बातावा"
-
-#: sb.src#RID_BASIC_START.SbERR_NOT_IN_SUBR___ERRCODE_RES_MASK.string.text
-msgid "$(ARG1) not allowed within a procedure."
-msgstr "$(ARG1) का़मी पोरा भितिर रे बाय बातावा"
-
-#: sb.src#RID_BASIC_START.SbERR_NOT_OPTIONAL___ERRCODE_RES_MASK.string.text
-msgid "Argument is not optional."
-msgstr "तोरको बाय एपेटाक्आ"
-
-#: sb.src#RID_BASIC_START.SbERR_NOT_READY___ERRCODE_RES_MASK.string.text
-msgid "Disk not ready."
-msgstr "डिस्क् सापड़ाव बानुक् आ."
-
-#: sb.src#RID_BASIC_START.SbERR_NO_ACTIVE_OBJECT___ERRCODE_RES_MASK.string.text
-msgid "Object is not available."
-msgstr "जिनिस बाय ञामोक् आ"
-
-#: sb.src#RID_BASIC_START.SbERR_NO_DEVICE___ERRCODE_RES_MASK.string.text
-msgid "Device not available."
-msgstr "साधोन बाङ ञामोक् आ"
-
-#: sb.src#RID_BASIC_START.SbERR_NO_GOSUB___ERRCODE_RES_MASK.string.text
-msgid "Return without Gosub."
-msgstr "Gosub बेगोर रुवा़ड़"
-
-#: sb.src#RID_BASIC_START.SbERR_NO_IF___ERRCODE_RES_MASK.string.text
-msgid "Else/Endif without If."
-msgstr "If बेगोर  Else/Endif"
-
-#: sb.src#RID_BASIC_START.SbERR_NO_MEMORY___ERRCODE_RES_MASK.string.text
-msgid "Not enough memory."
-msgstr "उयहा़र दाड़े ढेर बा़नुक्"
-
-#: sb.src#RID_BASIC_START.SbERR_NO_METHOD___ERRCODE_RES_MASK.string.text
-msgid "Property or method not found: $(ARG1)."
-msgstr "गुन आर नियोम बाङ ञाम लेना"
-
-#: sb.src#RID_BASIC_START.SbERR_NO_NAMED_ARGS___ERRCODE_RES_MASK.string.text
-msgid "Named arguments are not supported by given object."
-msgstr "ञुतुम तोरको एमाकान जिनिस दाराय ते बाय गोड़ोवाक् आ."
-
-#: sb.src#RID_BASIC_START.SbERR_NO_OBJECT___ERRCODE_RES_MASK.string.text
-msgid "Object variable not set."
-msgstr "जिनिस बोदोलोगाक् बाङ साजावा"
-
-#: sb.src#RID_BASIC_START.SbERR_NO_OLE___ERRCODE_RES_MASK.string.text
-msgid "OLE Automation is not supported by this object."
-msgstr "OLE आच् ते चालावाक् नोवा जिनिस दाराय ते बाय गोड़ोवाक् काना."
-
-#: sb.src#RID_BASIC_START.SbERR_NO_STRINGS_ARRAYS___ERRCODE_RES_MASK.string.text
-msgid "Strings or arrays not permitted."
-msgstr "स्ट्रिंग्स या चानेच् बाय आडा"
-
-#: sb.src#RID_BASIC_START.SbERR_OLE_ERROR___ERRCODE_RES_MASK.string.text
-msgid "OLE Automation Error."
-msgstr "OLE आच् ते चालाव भुल"
-
-#: sb.src#RID_BASIC_START.SbERR_OUT_OF_RANGE___ERRCODE_RES_MASK.string.text
-msgid "Index out of defined range."
-msgstr "ञुतुम थार पासनाव उनुरुम खोन बाहरे."
-
-#: sb.src#RID_BASIC_START.SbERR_PATH_NOT_FOUND___ERRCODE_RES_MASK.string.text
-msgid "Path not found."
-msgstr "होर बाङ ञाम लेना"
-
-#: sb.src#RID_BASIC_START.SbERR_PROC_DEFINED___ERRCODE_RES_MASK.string.text
-msgid "Sub procedure or function procedure $(ARG1) already defined."
-msgstr " $(ARG1) गोड़ो नियोम आर बाङ का़मी नियोम माडाङ खोम उपुरुम आकाना."
-
-#: sb.src#RID_BASIC_START.SbERR_PROC_UNDEFINED___ERRCODE_RES_MASK.string.text
-msgid "Sub-procedure or function procedure not defined."
-msgstr "गोड़ो का़मी नियोम आर बाङ का़मी नियोम बाय उपुरुमा. "
-
-#: sb.src#RID_BASIC_START.SbERR_PROG_TOO_LARGE___ERRCODE_RES_MASK.string.text
-msgid "Program too large."
-msgstr "का़मी होरा आ़डी माराङा"
-
-#: sb.src#RID_BASIC_START.SbERR_PROPERTY_NOT_FOUND___ERRCODE_RES_MASK.string.text
-msgid "Object does not have this property."
-msgstr "नोवा गुन जिनिस रे बानुक् आ."
-
-#: sb.src#RID_BASIC_START.SbERR_PROP_READONLY___ERRCODE_RES_MASK.string.text
-msgid "This property is read-only."
-msgstr "नोवा गुन दो पाड़हाव एसकाराक् काना"
-
-#: sb.src#RID_BASIC_START.SbERR_PROP_WRITEONLY___ERRCODE_RES_MASK.string.text
-msgid "This property is write only."
-msgstr "नोवा गुन दो एकेन ओलोगाक् काना."
-
-#: sb.src#RID_BASIC_START.SbERR_READ_PAST_EOF___ERRCODE_RES_MASK.string.text
-msgid "Reading exceeds EOF."
-msgstr " EOF बाड़ती पाड़हाव."
-
-#: sb.src#RID_BASIC_START.SbERR_REDO_FROM_START___ERRCODE_RES_MASK.string.text
-msgid "Incorrect entry; please retry."
-msgstr "बाङ जुत आदेराक्;दोहड़ा कुरुमुटू"
-
-#: sb.src#RID_BASIC_START.SbERR_SETPROP_FAILED___ERRCODE_RES_MASK.string.text
-msgid "Unable to set property."
-msgstr "गुन बाङ साजाव दाड़ेयाक्."
-
-#: sb.src#RID_BASIC_START.SbERR_STACK_OVERFLOW___ERRCODE_RES_MASK.string.text
-msgid "Not enough stack memory."
-msgstr "जाहान ढेर जारवा उयहा़र दाड़ेरे बा़नुक् आ."
-
-#: sb.src#RID_BASIC_START.SbERR_SYMBOL_EXPECTED___ERRCODE_RES_MASK.string.text
-msgid "Symbol expected."
-msgstr "आंसाक् चिनहा़ "
-
-#: sb.src#RID_BASIC_START.SbERR_SYNTAX___ERRCODE_RES_MASK.string.text
-msgid "Syntax error."
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_SYNTAX & ERRCODE_RES_MASK.String.Text
+msgid  "Syntax error."
 msgstr "आयात तेयार रे भुल"
 
-#: sb.src#RID_BASIC_START.SbERR_TOO_MANY_FILES___ERRCODE_RES_MASK.string.text
-msgid "Too many files."
-msgstr "आ़डी ढेर रेत् को"
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_GOSUB & ERRCODE_RES_MASK.String.Text
+msgid  "Return without Gosub."
+msgstr "Gosub बेगोर रुवा़ड़"
 
-#: sb.src#RID_BASIC_START.SbERR_UNDEF_ARRAY___ERRCODE_RES_MASK.string.text
-msgid "Array or procedure $(ARG1) not found."
-msgstr "बिबरोन आर बाङ का़मी होरा  $(ARG1) बाङ ञाम लेना"
+#: source/classes/sb.src#RID_BASIC_START.SbERR_REDO_FROM_START & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect entry; please retry."
+msgstr "बाङ जुत आदेराक्;दोहड़ा कुरुमुटू"
 
-#: sb.src#RID_BASIC_START.SbERR_UNDEF_LABEL___ERRCODE_RES_MASK.string.text
-msgid "Label $(ARG1) undefined."
-msgstr "चिखना़ बाङ उपुरुमा $(ARG1)"
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_ARGUMENT & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid procedure call."
+msgstr "बाङ बाताव का़मी नियोम होहो."
 
-#: sb.src#RID_BASIC_START.SbERR_UNDEF_PROC___ERRCODE_RES_MASK.string.text
-msgid "Procedure $(ARG1) not found."
-msgstr "का़मी होरा बाङ $(ARG1) ञाम लेना"
+#: source/classes/sb.src#RID_BASIC_START.SbERR_MATH_OVERFLOW & ERRCODE_RES_MASK.String.Text
+msgid  "Overflow."
+msgstr "सारेड़"
 
-#: sb.src#RID_BASIC_START.SbERR_UNDEF_TYPE___ERRCODE_RES_MASK.string.text
-msgid "Unknown data type $(ARG1)."
-msgstr "बाङ बाडाय सा़खिया़त् लेकान $(ARG1)"
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_MEMORY & ERRCODE_RES_MASK.String.Text
+msgid  "Not enough memory."
+msgstr "उयहा़र दाड़े ढेर बा़नुक्"
 
-#: sb.src#RID_BASIC_START.SbERR_UNDEF_VAR___ERRCODE_RES_MASK.string.text
-msgid "Variable $(ARG1) not found."
-msgstr "$(ARG1) बोदोलाक् बाङ ञाम लेना ."
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ALREADY_DIM & ERRCODE_RES_MASK.String.Text
+msgid  "Array already dimensioned."
+msgstr "साजाव माराङ ते नाप जुत आकाना"
 
-#: sb.src#RID_BASIC_START.SbERR_UNEXPECTED___ERRCODE_RES_MASK.string.text
-msgid "Unexpected symbol: $(ARG1)."
-msgstr "बाङ आंसाक् चिंनहा़: $(ARG1)"
+#: source/classes/sb.src#RID_BASIC_START.SbERR_OUT_OF_RANGE & ERRCODE_RES_MASK.String.Text
+msgid  "Index out of defined range."
+msgstr "ञुतुम थार पासनाव उनुरुम खोन बाहरे."
 
-#: sb.src#RID_BASIC_START.SbERR_USER_ABORT___ERRCODE_RES_MASK.string.text
-msgid "Process interrupted by user."
-msgstr "बेभारिज होते ते का़मी नियोम बाड़िज आकाना."
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DUPLICATE_DEF & ERRCODE_RES_MASK.String.Text
+msgid  "Duplicate definition."
+msgstr "नोकोल ओनोरोम"
 
-#: sb.src#RID_BASIC_START.SbERR_VAR_DEFINED___ERRCODE_RES_MASK.string.text
-msgid "Variable $(ARG1) already defined."
-msgstr " $(ARG1) बोदोलाक् माड़ाङ खोन उपुरुम आकाना."
-
-#: sb.src#RID_BASIC_START.SbERR_VAR_EXPECTED___ERRCODE_RES_MASK.string.text
-msgid "Variable expected."
-msgstr "बोदोलाक् आंस"
-
-#: sb.src#RID_BASIC_START.SbERR_VAR_UNDEFINED___ERRCODE_RES_MASK.string.text
-msgid "Variable not defined."
-msgstr "बोदोलोगाक् बाङ ओनोरोम"
-
-#: sb.src#RID_BASIC_START.SbERR_WRONG_ARGS___ERRCODE_RES_MASK.string.text
-msgctxt "sb.src#RID_BASIC_START.SbERR_WRONG_ARGS___ERRCODE_RES_MASK.string.text"
-msgid "Invalid number of arguments."
-msgstr "बाङ बाताव तोरको रेयाक् लेखा"
-
-#: sb.src#RID_BASIC_START.SbERR_WRONG_DIMS___ERRCODE_RES_MASK.string.text
-msgid "Dimension specifications do not match."
-msgstr "नापाक् गोटा बाय मिला़क् काना"
-
-#: sb.src#RID_BASIC_START.SbERR_ZERODIV___ERRCODE_RES_MASK.string.text
-msgid "Division by zero."
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ZERODIV & ERRCODE_RES_MASK.String.Text
+msgid  "Division by zero."
 msgstr "सुन दाराय ते हा़टिञ "
 
-#: basic.src#IDD_FIND_DIALOG.RID_CANCEL.cancelbutton.text
-msgctxt "basic.src#IDD_FIND_DIALOG.RID_CANCEL.cancelbutton.text"
-msgid "~Cancel"
-msgstr "बा़डरा़ (C)"
+#: source/classes/sb.src#RID_BASIC_START.SbERR_VAR_UNDEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Variable not defined."
+msgstr "बोदोलोगाक् बाङ ओनोरोम"
 
-#: basic.src#IDD_PRINT_DIALOG.RID_CANCEL.cancelbutton.text
-msgctxt "basic.src#IDD_PRINT_DIALOG.RID_CANCEL.cancelbutton.text"
-msgid "Cancel"
-msgstr "बा़डरा़"
+#: source/classes/sb.src#RID_BASIC_START.SbERR_CONVERSION & ERRCODE_RES_MASK.String.Text
+msgid  "Data type mismatch."
+msgstr "भेगार भेगार जायगा रे सा़खिया़त"
 
-#: basic.src#IDD_REPLACE_DIALOG.RID_CANCEL.cancelbutton.text
-msgctxt "basic.src#IDD_REPLACE_DIALOG.RID_CANCEL.cancelbutton.text"
-msgid "~Cancel"
-msgstr "बा़डरा़ (C)"
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PARAMETER & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid parameter."
+msgstr "बाङ बाताव पारामिटर"
 
-#: basic.src#RID_TP_CRASH.CB_ALLOWCONTACT.checkbox.text
-msgid "Allow Contact"
+#: source/classes/sb.src#RID_BASIC_START.SbERR_USER_ABORT & ERRCODE_RES_MASK.String.Text
+msgid  "Process interrupted by user."
+msgstr "बेभारिज होते ते का़मी नियोम बाड़िज आकाना."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_RESUME & ERRCODE_RES_MASK.String.Text
+msgid  "Resume without error."
+msgstr "बेगोर भुल ते ञाम दोहड़ा."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_STACK_OVERFLOW & ERRCODE_RES_MASK.String.Text
+msgid  "Not enough stack memory."
+msgstr "जाहान ढेर जारवा उयहा़र दाड़ेरे बा़नुक् आ."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROC_UNDEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Sub-procedure or function procedure not defined."
+msgstr "गोड़ो का़मी नियोम आर बाङ का़मी नियोम बाय उपुरुमा. "
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_DLL_LOAD & ERRCODE_RES_MASK.String.Text
+msgid  "Error loading DLL file."
+msgstr "DLL रेत् भितिर रेयाक् सोमोय भुल"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_DLL_CALL & ERRCODE_RES_MASK.String.Text
+msgid  "Wrong DLL call convention."
+msgstr "भुल DLL दुपुड़ुप् होहो"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_INTERNAL_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "Internal error $(ARG1)."
+msgstr "भितिरी भुल $(ARG1)."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_CHANNEL & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid file name or file number."
+msgstr "बाङ बाताव रेत् ञुतुम आर बाङ रेत् लेखा."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_FILE_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "File not found."
+msgstr "रेत् बाङ तेयार"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_FILE_MODE & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect file mode."
+msgstr "भुल रेत् नियोम"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_FILE_ALREADY_OPEN & ERRCODE_RES_MASK.String.Text
+msgid  "File already open."
+msgstr "रेत् माड़ाङ खोन झिज आकाना"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_IO_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "Device I/O error."
+msgstr "उपा़य I/O भुल"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_FILE_EXISTS & ERRCODE_RES_MASK.String.Text
+msgid  "File already exists."
+msgstr "रेत् माड़ाङ खोन मेनाक् आ"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_RECORD_LENGTH & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect record length."
+msgstr "बाङ ठिक् रोकोर्ड जिलिञ"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DISK_FULL & ERRCODE_RES_MASK.String.Text
+msgid  "Disk or hard drive full."
+msgstr "डिस्क आर बाङ हार्ड चालावाक् पेरेज."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_READ_PAST_EOF & ERRCODE_RES_MASK.String.Text
+msgid  "Reading exceeds EOF."
+msgstr " EOF बाड़ती पाड़हाव."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_RECORD_NUMBER & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect record number."
+msgstr "बाङ ठिक् रिकोर्ड लेखा."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_TOO_MANY_FILES & ERRCODE_RES_MASK.String.Text
+msgid  "Too many files."
+msgstr "आ़डी ढेर रेत् को"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_DEVICE & ERRCODE_RES_MASK.String.Text
+msgid  "Device not available."
+msgstr "साधोन बाङ ञामोक् आ"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ACCESS_DENIED & ERRCODE_RES_MASK.String.Text
+msgid  "Access denied."
+msgstr "आदेर बाङ बाताव"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_READY & ERRCODE_RES_MASK.String.Text
+msgid  "Disk not ready."
+msgstr "डिस्क् सापड़ाव बानुक् आ."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_IMPLEMENTED & ERRCODE_RES_MASK.String.Text
+msgid  "Not implemented."
+msgstr "बाङ बाहाल लेना."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DIFFERENT_DRIVE & ERRCODE_RES_MASK.String.Text
+msgid  "Renaming on different drives impossible."
+msgstr "भेगार चालावाक् रे दोहड़ा ञुतुम एम बाङ हुय दाड़ेयाक् आ"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ACCESS_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "Path/File access error."
+msgstr "होर/रेत् सेटेर भुल"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PATH_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Path not found."
+msgstr "होर बाङ ञाम लेना"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Object variable not set."
+msgstr "जिनिस बोदोलोगाक् बाङ साजावा"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PATTERN & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid string pattern."
+msgstr "बाङ बाताव  स्ट्रिंग नामुना"
+
+#: source/classes/sb.src#RID_BASIC_START.SBERR_IS_NULL & ERRCODE_RES_MASK.String.Text
+msgid  "Use of zero not permitted."
+msgstr "सुन रेयाक् बाभार बाङ छाडा."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "DDE Error."
+msgstr "DDE भुल"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_WAITINGACK & ERRCODE_RES_MASK.String.Text
+msgid  "Awaiting response to DDE connection."
+msgstr "DDE जोनोड़ाव ला़नाय लागित् तांगीआकात् आ"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_OUTOFCHANNELS & ERRCODE_RES_MASK.String.Text
+msgid  "No DDE channels available."
+msgstr " DDE जाहान चेनेल बाय ञामोक् आ "
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NO_RESPONSE & ERRCODE_RES_MASK.String.Text
+msgid  "No application responded to DDE connect initiation."
+msgstr "DDE जाहान आरजी साकाम जोनोड़ाव एहोप ला़गित बाय ला़येत् आ. "
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_MULT_RESPONSES & ERRCODE_RES_MASK.String.Text
+msgid  "Too many applications responded to DDE connect initiation."
+msgstr " DDE आड़ी ढेर आरजी साकाम जोनोड़ाव एहोब ला़गित लाय एत् आ. "
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_CHANNEL_LOCKED & ERRCODE_RES_MASK.String.Text
+msgid  "DDE channel locked."
+msgstr "DDE चैनल कुलुप आकाना"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NOTPROCESSED & ERRCODE_RES_MASK.String.Text
+msgid  "External application cannot execute DDE operation."
+msgstr " DDE बाहरे आरजी साकाम का़मी बाय हुय होचो दाड़ेयाक् आ"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_TIMEOUT & ERRCODE_RES_MASK.String.Text
+msgid  "Timeout while waiting for DDE response."
+msgstr "DDE ला़य रुवा़ड़ ला़गित् तांगी जोहोज ओकोतो पारोम एना."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_USER_INTERRUPT & ERRCODE_RES_MASK.String.Text
+msgid  "User pressed ESCAPE during DDE operation."
+msgstr "DDE का़मी जोहोक्  बेभारिज ESCAPE ओता केतआ "
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_BUSY & ERRCODE_RES_MASK.String.Text
+msgid  "External application busy."
+msgstr "बाहरे आरजी साकाम जोहोड़ गेया."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NO_DATA & ERRCODE_RES_MASK.String.Text
+msgid  "DDE operation without data."
+msgstr " DDE सा़खिया़त  बेगोर कांमी."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_WRONG_DATA_FORMAT & ERRCODE_RES_MASK.String.Text
+msgid  "Data are in wrong format."
+msgstr "सा़खिया़त् बाङ ठिक तेयार रे मेनाक् आ."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_PARTNER_QUIT & ERRCODE_RES_MASK.String.Text
+msgid  "External application has been terminated."
+msgstr "बाहरे आरजी साकाम  मुचात् केत् आ."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_CONV_CLOSED & ERRCODE_RES_MASK.String.Text
+msgid  "DDE connection interrupted or modified."
+msgstr "DDE जोनोड़ाव तिंगु होचो आकाना  आर बाङ बोदोल आकाना."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NO_CHANNEL & ERRCODE_RES_MASK.String.Text
+msgid  "DDE method invoked with no channel open."
+msgstr " DDE जाहान चेनाल बाङ झिज सांव ञाम रुवा़ड़ नियोम."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_INVALID_LINK & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid DDE link format."
+msgstr " DDE बाङ बाताव खोंजा तेयार."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_QUEUE_OVERFLOW & ERRCODE_RES_MASK.String.Text
+msgid  "DDE message has been lost."
+msgstr "DDE खोबोर आत् आकाना"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_LINK_ALREADY_EST & ERRCODE_RES_MASK.String.Text
+msgid  "Paste link already performed."
+msgstr "लाठा खोंजा माड़ाङ खोन का़मी  येत् आ."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_LINK_INV_TOPIC & ERRCODE_RES_MASK.String.Text
+msgid  "Link mode cannot be set due to invalid link topic."
+msgstr "खोंजा ओबोसता बाङ बाताव खोंजा बिसोय खा़तिर बाय साजाव दाड़ेयाक् आ.  "
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_DLL_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "DDE requires the DDEML.DLL file."
+msgstr "DDE दो DDEML.DLL रेत् रेयाक् लाकती."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_CANNOT_LOAD & ERRCODE_RES_MASK.String.Text
+msgid  "Module cannot be loaded; invalid format."
+msgstr "बेनाव तेयार बाङ लादे दाड़ेयाक् आ; बाङ बाताव तेयार."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_INDEX & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid object index."
+msgstr "बाङ बाताव जिनिस ञुतुम थार"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_ACTIVE_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Object is not available."
+msgstr "जिनिस बाय ञामोक् आ"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PROP_VALUE & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect property value."
+msgstr "बाङ जुत् गुन गोनोङ"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROP_READONLY & ERRCODE_RES_MASK.String.Text
+msgid  "This property is read-only."
+msgstr "नोवा गुन दो पाड़हाव एसकाराक् काना"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROP_WRITEONLY & ERRCODE_RES_MASK.String.Text
+msgid  "This property is write only."
+msgstr "नोवा गुन दो एकेन ओलोगाक् काना."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_INVALID_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid object reference."
+msgstr "बाङ बातावाक् जिनिस रोयाक् जोनोड़ाव काना"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_METHOD & ERRCODE_RES_MASK.String.Text
+msgid  "Property or method not found: $(ARG1)."
+msgstr "गुन आर नियोम बाङ ञाम लेना"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NEEDS_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Object required."
+msgstr "जिनिस रेयाक् ला़कती"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_INVALID_USAGE_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid use of an object."
+msgstr "जिनिस रेयाक् बेभार बाङ बातावा."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_OLE & ERRCODE_RES_MASK.String.Text
+msgid  "OLE Automation is not supported by this object."
+msgstr "OLE आच् ते चालावाक् नोवा जिनिस दाराय ते बाय गोड़ोवाक् काना."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_METHOD & ERRCODE_RES_MASK.String.Text
+msgid  "This property or method is not supported by the object."
+msgstr "नोवा गुन आर  बाङ नियोम जिनिस दाराय ते बाय गोड़ोवाक् आ. "
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_OLE_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "OLE Automation Error."
+msgstr "OLE आच् ते चालाव भुल"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_ACTION & ERRCODE_RES_MASK.String.Text
+msgid  "This action is not supported by given object."
+msgstr "नोवा का़मी एमाकान जिनिस दाराय ते बाय गोड़ोवाक् आ."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_NAMED_ARGS & ERRCODE_RES_MASK.String.Text
+msgid  "Named arguments are not supported by given object."
+msgstr "ञुतुम तोरको एमाकान जिनिस दाराय ते बाय गोड़ोवाक् आ."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_LOCALE & ERRCODE_RES_MASK.String.Text
+msgid  "The current locale setting is not supported by the given object."
+msgstr "नितोगाक् नोड़े साजाव एमकान जिनिस दाराय ते बाय गोड़ोवाक् आ."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NAMED_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Named argument not found."
+msgstr "ञुतुम तोरको बाय ञाम लेना."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_OPTIONAL & ERRCODE_RES_MASK.String.Text
+msgid  "Argument is not optional."
+msgstr "तोरको बाय एपेटाक्आ"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_WRONG_ARGS & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid number of arguments."
+msgstr "बाङ बाताव तोरको रेयाक् लेखा"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_A_COLL & ERRCODE_RES_MASK.String.Text
+msgid  "Object is not a list."
+msgstr "जिनिस दो लिसटी बाङ काना."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_ORDINAL & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid ordinal number."
+msgstr "बाङ बाताव  थार लेखा"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DLLPROC_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Specified DLL function not found."
+msgstr " DLL गोटावाकान का़मी बाय ञाम लेना. "
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_CLIPBD_FORMAT & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid clipboard format."
+msgstr "बाङ बाताव रेटोब बोर्ड़ तेयार."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROPERTY_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Object does not have this property."
+msgstr "नोवा गुन जिनिस रे बानुक् आ."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_METHOD_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Object does not have this method."
+msgstr "नोवा नियोम जिनिस रे बानुक् आ."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ARG_MISSING & ERRCODE_RES_MASK.String.Text
+msgid  "Required argument lacking."
+msgstr "ला़कतीयाक् तोरको बानुक्आ"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_NUMBER_OF_ARGS & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid number of arguments."
+msgstr "बाङ बाताव तोरको रेयाक् लेखा"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_METHOD_FAILED & ERRCODE_RES_MASK.String.Text
+msgid  "Error executing a method."
+msgstr "नियोम का़मी रे भुल मेनाक् आ."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_SETPROP_FAILED & ERRCODE_RES_MASK.String.Text
+msgid  "Unable to set property."
+msgstr "गुन बाङ साजाव दाड़ेयाक्."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_GETPROP_FAILED & ERRCODE_RES_MASK.String.Text
+msgid  "Unable to determine property."
+msgstr "गुन बाङ गोटा दाड़ेयाक् आ"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNEXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Unexpected symbol: $(ARG1)."
+msgstr "बाङ आंसाक् चिंनहा़: $(ARG1)"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Expected: $(ARG1)."
+msgstr "आंस दोहो: $(ARG1)"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_SYMBOL_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Symbol expected."
+msgstr "आंसाक् चिनहा़ "
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_VAR_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Variable expected."
+msgstr "बोदोलाक् आंस"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_LABEL_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Label expected."
+msgstr "आंसाक् चिखना "
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_LVALUE_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Value cannot be applied."
+msgstr " गोनोङ बाङ बाहाल दाड़ेयाक् आ."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_VAR_DEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Variable $(ARG1) already defined."
+msgstr " $(ARG1) बोदोलाक् माड़ाङ खोन उपुरुम आकाना."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROC_DEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Sub procedure or function procedure $(ARG1) already defined."
+msgstr " $(ARG1) गोड़ो नियोम आर बाङ का़मी नियोम माडाङ खोम उपुरुम आकाना."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_LABEL_DEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Label $(ARG1) already defined."
+msgstr " $(ARG1) चिखना माड़ाङ खोन उपुरुम आकाना. "
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_VAR & ERRCODE_RES_MASK.String.Text
+msgid  "Variable $(ARG1) not found."
+msgstr "$(ARG1) बोदोलाक् बाङ ञाम लेना ."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_ARRAY & ERRCODE_RES_MASK.String.Text
+msgid  "Array or procedure $(ARG1) not found."
+msgstr "बिबरोन आर बाङ का़मी होरा  $(ARG1) बाङ ञाम लेना"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_PROC & ERRCODE_RES_MASK.String.Text
+msgid  "Procedure $(ARG1) not found."
+msgstr "का़मी होरा बाङ $(ARG1) ञाम लेना"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_LABEL & ERRCODE_RES_MASK.String.Text
+msgid  "Label $(ARG1) undefined."
+msgstr "चिखना़ बाङ उपुरुमा $(ARG1)"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_TYPE & ERRCODE_RES_MASK.String.Text
+msgid  "Unknown data type $(ARG1)."
+msgstr "बाङ बाडाय सा़खिया़त् लेकान $(ARG1)"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_EXIT & ERRCODE_RES_MASK.String.Text
+msgid  "Exit $(ARG1) expected."
+msgstr "आंस बाहरे $(ARG1) ओडोक्"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_BLOCK & ERRCODE_RES_MASK.String.Text
+msgid  "Statement block still open: $(ARG1) missing."
+msgstr "काथा आकोट नित् हों झिच् आ: $(ARG1) आदोक् काना"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_BRACKETS & ERRCODE_RES_MASK.String.Text
+msgid  "Parentheses do not match."
+msgstr "एसेत् बाङ मिला़क् काना"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_DECLARATION & ERRCODE_RES_MASK.String.Text
+msgid  "Symbol $(ARG1) already defined differently."
+msgstr "$(ARG1) चिखना़ माड़ाङ खोन भेगार ते उपुरुम आकाना"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PARAMETERS & ERRCODE_RES_MASK.String.Text
+msgid  "Parameters do not correspond to procedure."
+msgstr "पैरामीटर का़मी होरा लेका ते बाय रोड़ रुवा़ड़ा"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_CHAR_IN_NUMBER & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid character in number."
+msgstr "लेखा रे बाङ बाताव आखोर."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_MUST_HAVE_DIMS & ERRCODE_RES_MASK.String.Text
+msgid  "Array must be dimensioned."
+msgstr "चानेच् रे नाप एम ला़कती या."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_IF & ERRCODE_RES_MASK.String.Text
+msgid  "Else/Endif without If."
+msgstr "If बेगोर  Else/Endif"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_IN_SUBR & ERRCODE_RES_MASK.String.Text
+msgid  "$(ARG1) not allowed within a procedure."
+msgstr "$(ARG1) का़मी पोरा भितिर रे बाय बातावा"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_IN_MAIN & ERRCODE_RES_MASK.String.Text
+msgid  "$(ARG1) not allowed outside a procedure."
+msgstr "$(ARG1) का़मी पोरा खोन बाहरे बाय बातावा"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_WRONG_DIMS & ERRCODE_RES_MASK.String.Text
+msgid  "Dimension specifications do not match."
+msgstr "नापाक् गोटा बाय मिला़क् काना"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_OPTION & ERRCODE_RES_MASK.String.Text
+msgid  "Unknown option: $(ARG1)."
+msgstr "बाङ बाडाय आपनार लेकान तेयाक्: $(ARG1)"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_CONSTANT_REDECLARED & ERRCODE_RES_MASK.String.Text
+msgid  "Constant $(ARG1) redefined."
+msgstr "थिर $(ARG1) दोहड़ा ते उपुरुम आकात् आ."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROG_TOO_LARGE & ERRCODE_RES_MASK.String.Text
+msgid  "Program too large."
+msgstr "का़मी होरा आ़डी माराङा"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_STRINGS_ARRAYS & ERRCODE_RES_MASK.String.Text
+msgid  "Strings or arrays not permitted."
+msgstr "स्ट्रिंग्स या चानेच् बाय आडा"
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_EXCEPTION & ERRCODE_RES_MASK.String.Text
+msgid  "An exception occurred $(ARG1)."
+msgstr "मित् टाङ बाद काते हुय एना $(ARG1)"
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_ARRAY_FIX & ERRCODE_RES_MASK.String.Text
+msgid  "This array is fixed or temporarily locked."
 msgstr ""
 
-#: basic.src#RID_TP_CRASH.CB_USEPROXY.checkbox.text
-msgid "Use Proxy"
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_STRING_OVERFLOW & ERRCODE_RES_MASK.String.Text
+msgid  "Out of string space."
 msgstr ""
 
-#: basic.src#RID_TP_PROFILE.CB_AUTORELOAD.checkbox.text
-msgid "AutoReload"
-msgstr "आच् ते लादे आ़रु"
-
-#: basic.src#RID_TP_PROFILE.CB_AUTOSAVE.checkbox.text
-msgid "Save before execute"
-msgstr "उदुक् ताहा सांचाव"
-
-#: basic.src#RID_TP_PROFILE.CB_STOPONSYNTAXERRORS.checkbox.text
-msgid "Stop on Syntax Errors"
-msgstr "आयात भुल रे तिंगु"
-
-#: basic.src#RID_TP_PROFILE.HID_CHECK.checkbox.text
-msgid "Default HID directory"
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_EXPR_TOO_COMPLEX & ERRCODE_RES_MASK.String.Text
+msgid  "Expression Too Complex."
 msgstr ""
 
-#: basic.src#IDD_EDIT_VAR.RID_ED_NEW_STRING.edit.text
-msgid "Edit"
-msgstr "सापाड़ाव"
-
-#: basic.src#IDS_CANTLOAD.errorbox.text
-msgid "Library cannot be loaded!"
-msgstr "पुथी ओड़ाक् बाङ लादे के!"
-
-#: basic.src#IDS_CANTLOAD.errorbox.title
-msgctxt "basic.src#IDS_CANTLOAD.errorbox.title"
-msgid "Testtool Error"
-msgstr "बिडा़वहा़तिया़र भुल"
-
-#: basic.src#IDS_CANTSAVE.errorbox.text
-msgid "Library cannot be saved!"
-msgstr "रेत् बांङ सांचाव दाड़े केया!"
-
-#: basic.src#IDS_CANTSAVE.errorbox.title
-msgctxt "basic.src#IDS_CANTSAVE.errorbox.title"
-msgid "Testtool Error"
-msgstr "बिडा़वहा़तिया़र भुल"
-
-#: basic.src#IDS_INVALID_VALUE.errorbox.text
-msgid "The value is invalid and cannot be set."
-msgstr "नोवा गोनोङ बाङ बाताव आर बाङ साजाव दाड़ेयाक् आ"
-
-#: basic.src#IDS_INVALID_VALUE.errorbox.title
-msgctxt "basic.src#IDS_INVALID_VALUE.errorbox.title"
-msgid "Testtool Error"
-msgstr "बिडा़वहा़तिया़र भुल"
-
-#: basic.src#IDS_NOMAINPGM.errorbox.text
-msgid "This window does not contain a main program!"
-msgstr "नोवा ञेनेलोंम रे मुल का़मी होरा सेलेद बनुक् आ!"
-
-#: basic.src#IDS_NOMAINPGM.errorbox.title
-msgctxt "basic.src#IDS_NOMAINPGM.errorbox.title"
-msgid "Testtool Error"
-msgstr "बिडा़वहा़तिया़र भुल"
-
-#: basic.src#IDS_PATTERNNOTFOUND.errorbox.text
-msgid "Search key not found!"
-msgstr "पानते का़ठी बाङ ञामलेना!"
-
-#: basic.src#IDS_PATTERNNOTFOUND.errorbox.title
-msgctxt "basic.src#IDS_PATTERNNOTFOUND.errorbox.title"
-msgid "Testtool Error"
-msgstr "बिडा़वहा़तिया़र भुल"
-
-#: basic.src#IDS_READERROR.errorbox.text
-msgid "File cannot be read!"
-msgstr "रेत् पाड़हाव बाङ दाड़े केया!"
-
-#: basic.src#IDS_READERROR.errorbox.title
-msgctxt "basic.src#IDS_READERROR.errorbox.title"
-msgid "Testtool Error"
-msgstr "बिडा़वहा़तिया़र भुल"
-
-#: basic.src#IDS_WRITEERROR.errorbox.text
-msgid "File cannot be saved!"
-msgstr "रेत् बाङ सांचाव दाड़े केया!"
-
-#: basic.src#IDS_WRITEERROR.errorbox.title
-msgctxt "basic.src#IDS_WRITEERROR.errorbox.title"
-msgid "Testtool Error"
-msgstr "बिडा़वहा़तिया़र भुल"
-
-#: basic.src#RID_TP_CRASH.FL_CRASHREPORT.fixedline.text
-msgctxt "basic.src#RID_TP_CRASH.FL_CRASHREPORT.fixedline.text"
-msgid "Crashreport"
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_OPER_NOT_PERFORM & ERRCODE_RES_MASK.String.Text
+msgid  "Can't perform requested operation."
 msgstr ""
 
-#: basic.src#RID_TP_GENERIC.RID_FL_AREA.fixedline.text
-msgid "Area"
-msgstr "जायगा"
-
-#: basic.src#RID_TP_GENERIC.RID_FL_VALUE.fixedline.text
-msgid "Setting"
-msgstr "साजाव"
-
-#: basic.src#RID_TP_MISC.FL_COMMUNICATION.fixedline.text
-msgid "Communication"
-msgstr "ञापाम"
-
-#: basic.src#RID_TP_MISC.FL_OTHER.fixedline.text
-msgid "Other settings"
-msgstr "एटागाक् साजाव"
-
-#: basic.src#RID_TP_PROFILE.FL_DIRECTORIES.fixedline.text
-msgid "Profile settings"
-msgstr "मोहोर साजाव"
-
-#: basic.src#RID_TP_PROFILE.RID_FL_PROFILE.fixedline.text
-msgctxt "basic.src#RID_TP_PROFILE.RID_FL_PROFILE.fixedline.text"
-msgid "Profile"
-msgstr "मोहोर"
-
-#: basic.src#IDD_DISPLAY_HID.RID_FT_CONTROLS.fixedtext.text
-msgid "Controls"
-msgstr "कोबोच्"
-
-#: basic.src#IDD_DISPLAY_HID.RID_FT_SLOTS.fixedtext.text
-msgid "Slots"
-msgstr "बोझा"
-
-#: basic.src#IDD_EDIT_VAR.RID_FT_CONTENT.fixedtext.text
-msgid "Content"
-msgstr "बिसोय"
-
-#: basic.src#IDD_EDIT_VAR.RID_FT_CONTENT_VALUE.fixedtext.text
-msgid "Previous contents"
-msgstr "तायोम सेदाक् बिसोय"
-
-#: basic.src#IDD_EDIT_VAR.RID_FT_NAME.fixedtext.text
-msgctxt "basic.src#IDD_EDIT_VAR.RID_FT_NAME.fixedtext.text"
-msgid "Name"
-msgstr "ञुतुम"
-
-#: basic.src#IDD_EDIT_VAR.RID_FT_NAME_VALUE.fixedtext.text
-msgid "Name of variable"
-msgstr "बोदोलोगाक् ञुतुम"
-
-#: basic.src#IDD_EDIT_VAR.RID_FT_NEW_CONTENT.fixedtext.text
-msgid "New content"
-msgstr "नावा बिसोय"
-
-#: basic.src#IDD_FIND_DIALOG.RID_FIXEDTEXT1.fixedtext.text
-msgid "~Text"
-msgstr "~ओनोल"
-
-#: basic.src#IDD_PRINT_DIALOG.RID_TEXT.fixedtext.text
-msgid "Print "
-msgstr "छापा"
-
-#: basic.src#IDD_REPLACE_DIALOG.RID_FIXEDTEXT1.fixedtext.text
-msgid "~Search for"
-msgstr "~नोवा ला़गित् पानते"
-
-#: basic.src#IDD_REPLACE_DIALOG.RID_FIXEDTEXT2.fixedtext.text
-msgid "~Replace by"
-msgstr "~नोवा दाराय ते साहा (R)"
-
-#: basic.src#IDD_TT_ABOUT_DIALOG.1.fixedtext.text
-msgctxt "basic.src#IDD_TT_ABOUT_DIALOG.1.fixedtext.text"
-msgid "VCLTestTool"
-msgstr "VCLबिड़ाव हा़तियार"
-
-#: basic.src#IDD_TT_ABOUT_DIALOG.4.fixedtext.text
-msgid "©1995-2010 Oracle"
-msgstr "©1995-2005 ञुहुम हुड़िञ नियोम, सेलेद"
-
-#: basic.src#LOAD_CONF.FILENAME.fixedtext.text
-msgid "File.win"
-msgstr "रेत् . ञेनेलोम"
-
-#: basic.src#LOAD_CONF.WORK.fixedtext.text
-msgid "Slot IDs"
-msgstr "बोझा IDs"
-
-#: basic.src#RID_TP_CRASH.FT_CRHOST.fixedtext.text
-msgctxt "basic.src#RID_TP_CRASH.FT_CRHOST.fixedtext.text"
-msgid "Host"
-msgstr "हुय होचोयिच् "
-
-#: basic.src#RID_TP_CRASH.FT_CRPORT.fixedtext.text
-msgid "Port"
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_TOO_MANY_DLL & ERRCODE_RES_MASK.String.Text
+msgid  "Too many DLL application clients."
 msgstr ""
 
-#: basic.src#RID_TP_CRASH.FT_EMAIL.fixedtext.text
-msgid "EMail"
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_LOOP_NOT_INIT & ERRCODE_RES_MASK.String.Text
+msgid  "For loop not initialized."
 msgstr ""
 
-#: basic.src#RID_TP_FONT.FT_FONTNAME.fixedtext.text
-msgid "Type"
-msgstr "रोकोम"
-
-#: basic.src#RID_TP_FONT.FT_FONTSIZE.fixedtext.text
-msgid "Size"
-msgstr "माराङ तेत्"
-
-#: basic.src#RID_TP_FONT.FT_FONTSTYLE.fixedtext.text
-msgid "Typeface"
-msgstr "ओल मुठान"
-
-#: basic.src#RID_TP_MISC.FT_HOST.fixedtext.text
-msgctxt "basic.src#RID_TP_MISC.FT_HOST.fixedtext.text"
-msgid "Host"
-msgstr "हुय होचोयिच् "
-
-#: basic.src#RID_TP_MISC.FT_LRU.fixedtext.text
-msgid "Max LRU Files"
-msgstr " LRU ढेर ओकोच् रेत्"
-
-#: basic.src#RID_TP_MISC.FT_PROGDIR.fixedtext.text
-msgid "OOo Program Dir"
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_COMPAT & ERRCODE_RES_MASK.String.Text
+msgid  "$(ARG1)"
 msgstr ""
 
-#: basic.src#RID_TP_MISC.FT_TTPORT.fixedtext.text
-msgid "Testtool Port"
-msgstr "बिड़ा़व हा़तियार तिंगुन जायगा"
-
-#: basic.src#RID_TP_MISC.FT_UNOPORT.fixedtext.text
-msgid "Remote UNO Port"
-msgstr " UNO सांगिञ रेयाक् तिंगुन"
-
-#: basic.src#RID_TP_MISC.TIMEOUT_TEXT.fixedtext.text
-msgid "Server Timeout"
-msgstr "सांचाविंजाक् ओकतो चाबायेना"
-
-#: basic.src#RID_TP_PROFILE.BASIS_TEXT.fixedtext.text
-msgid "Base directory"
-msgstr "बांयसा़व उनुदुक"
-
-#: basic.src#RID_TP_PROFILE.LOG_TEXT.fixedtext.text
-msgid "Log base directory"
-msgstr "आदेर बांयसा़व उनुदुक्"
-
-#: basic.src#IDD_DISPLAY_HID.floatingwindow.text
-msgid "Display HId"
-msgstr " HId उदुग मे"
-
-#: basic.src#LOAD_CONF.floatingwindow.text
-msgid "Reading Configuration Files"
-msgstr "तेयार रेत् को पाड़हाव"
-
-#: basic.src#IDS_NOPRINTERERROR.infobox.text
-msgid "The print function is not available!"
-msgstr "छापा का़मी बाङ ञामोक् आ!"
-
-#: basic.src#IDS_NOT_YET_IMPLEMENTED.infobox.text
-msgid "Not yet implemented"
-msgstr "नित् हा़विच् बाङ बाहाल"
-
-#: basic.src#RID_APPMENUBAR.RID_APPEDIT.menuitem.text
-msgid "~Edit"
-msgstr " सापड़ाव(~E)"
-
-#: basic.src#RID_APPMENUBAR.RID_APPFILE.menuitem.text
-msgid "~File"
-msgstr " रेत् (~F)"
-
-#: basic.src#RID_APPMENUBAR.RID_APPHELP.menuitem.text
-msgid "~Help"
-msgstr " गोड़ो(~H)"
-
-#: basic.src#RID_APPMENUBAR.RID_APPRUN.menuitem.text
-msgid "~Program"
-msgstr "  का़मी होरा(~P)"
-
-#: basic.src#RID_APPMENUBAR.RID_APPWINDOW.menuitem.text
-msgid "~Window"
-msgstr " ञेनेलोम(~W)"
-
-#: basic.src#RID_EDIT.RID_EDITCOPY.menuitem.text
-msgid "~Copy"
-msgstr "नोकोल (~C)"
-
-#: basic.src#RID_EDIT.RID_EDITCUT.menuitem.text
-msgid "~Cut"
-msgstr "गेत् (~C)"
-
-#: basic.src#RID_EDIT.RID_EDITDEL.menuitem.text
-msgid "~Delete"
-msgstr "मेटाव (~D)"
-
-#: basic.src#RID_EDIT.RID_EDITPASTE.menuitem.text
-msgid "~Paste"
-msgstr "लाठा (~P)"
-
-#: basic.src#RID_EDIT.RID_EDITREDO.menuitem.text
-msgid "~Redo"
-msgstr "दोहड़ा काम़ी मे (~R)"
-
-#: basic.src#RID_EDIT.RID_EDITREPEAT.menuitem.text
-msgid "Repeat S~earch"
-msgstr "पानते दोहड़ा(~e)"
-
-#: basic.src#RID_EDIT.RID_EDITREPLACE.menuitem.text
-msgid "~Replace..."
-msgstr "उचा़ड़ (~R)"
-
-#: basic.src#RID_EDIT.RID_EDITSEARCH.menuitem.text
-msgid "~Find..."
-msgstr "पानते (~F)"
-
-#: basic.src#RID_EDIT.RID_EDITUNDO.menuitem.text
-msgid "~Undo"
-msgstr "माड़ा़ङ लेका तेयार (~U)"
-
-#: basic.src#RID_FILE.RID_FILECLOSE.menuitem.text
-msgid "~Close"
-msgstr " बोंद(~C)"
-
-#: basic.src#RID_FILE.RID_FILELOADLIB.menuitem.text
-msgid "~Load Library..."
-msgstr "पुथी ओड़ाक् लादे मे(~L)"
-
-#: basic.src#RID_FILE.RID_FILENEW.menuitem.text
-msgid "~New"
-msgstr " नावा(~N)"
-
-#: basic.src#RID_FILE.RID_FILEOPEN.menuitem.text
-msgid "~Open..."
-msgstr " झिज (~O)"
-
-#: basic.src#RID_FILE.RID_FILEPRINT.menuitem.text
-msgid "~Print"
-msgstr "छापा (~P)"
-
-#: basic.src#RID_FILE.RID_FILESAVE.menuitem.text
-msgid "~Save"
-msgstr " सांचाव (~S)"
-
-#: basic.src#RID_FILE.RID_FILESAVEAS.menuitem.text
-msgid "Save~ As..."
-msgstr "नोवा लेका सांचाव मे (~A)..."
-
-#: basic.src#RID_FILE.RID_FILESAVELIB.menuitem.text
-msgid "Save Li~brary..."
-msgstr "पुथी ओड़ाक् सांचाव (~b)"
-
-#: basic.src#RID_FILE.RID_FILESETUP.menuitem.text
-msgid "P~rinter Setting..."
-msgstr "छापावाक् साजाव (~r)"
-
-#: basic.src#RID_FILE.RID_QUIT.menuitem.text
-msgid "~Exit"
-msgstr "बाहरे ओड़ोक्(~E)"
-
-#: basic.src#RID_HELP.menuitem.text
-msgid "~About..."
-msgstr "रेयाक् बाबोत रे (~A)"
-
-#: basic.src#RID_RUN.RID_RUNBREAK.menuitem.text
-msgid "~Break"
-msgstr " केचेत् (~B)"
-
-#: basic.src#RID_RUN.RID_RUNCOMPILE.menuitem.text
-msgid "~Compile"
-msgstr "आखोर साजाव (~C)"
-
-#: basic.src#RID_RUN.RID_RUNDISAS.menuitem.text
-msgid "~Disassemble"
-msgstr "बाङ सेमलेत् (~D)"
-
-#: basic.src#RID_RUN.RID_RUNNEXTERR.menuitem.text
-msgid "~Next Error"
-msgstr "इना़क् तायोमाक् भुल (~N)"
-
-#: basic.src#RID_RUN.RID_RUNPREVERR.menuitem.text
-msgid "~Previous Error"
-msgstr "तायोम सेदाक् भुल (~P)"
-
-#: basic.src#RID_RUN.RID_RUNSTART.menuitem.text
-msgid "~Start"
-msgstr " एतोहोप (~S)"
-
-#: basic.src#RID_RUN.RID_RUNSTEPINTO.menuitem.text
-msgid "~Single Step"
-msgstr "मित् झांप (~S)"
-
-#: basic.src#RID_RUN.RID_RUNSTEPOVER.menuitem.text
-msgid "Si~ngle Step over Procedure"
-msgstr "का़मी होरा चेतान रे मित् झांप (~n)"
-
-#: basic.src#RID_RUN.RID_RUNSTOP.menuitem.text
-msgid "~Stop"
-msgstr "तिंगु होचो (~S)"
-
-#: basic.src#RID_RUN.RID_TOGLEBRKPNT.menuitem.text
-msgid "Set / Delete Break Point"
-msgstr "केचेत् टुड़ा़क् मेटाव / साजाव"
-
-#: basic.src#RID_TT_EXTRAS.RID_OPTIONS.menuitem.text
-msgid "~Settings"
-msgstr "साजाव (~S)"
-
-#: basic.src#IDD_FIND_DIALOG.modaldialog.text
-msgid "Testtool: Find Text"
-msgstr "बिडा़वहा़तिया़र: ओनोल ञाम"
-
-#: basic.src#IDD_REPLACE_DIALOG.modaldialog.text
-msgid "Testtool: Replace Text"
-msgstr "बिडा़वहा़तिया़र: ओनोल साहा"
-
-#: basic.src#IDD_TT_ABOUT_DIALOG.modaldialog.text
-msgid "About VCLTestTool"
-msgstr "VCL बिडा़व हा़तिया़र रेयाक् बाबोत रे"
-
-#: basic.src#RID_CALLDLG.modaldialog.text
-msgid "Dynamic Link No. "
-msgstr "लाड़ाव आकान खोंजा लेखा"
-
-#: basic.src#IDD_EDIT_VAR.modelessdialog.text
-msgid "Edit variable"
-msgstr "बोदोलोगाक् सापड़ाव"
-
-#: basic.src#IDD_PRINT_DIALOG.modelessdialog.text
-msgid "Testtool: Print File"
-msgstr "बिड़ाव हा़तियार: रेत् छापा"
-
-#: basic.src#IDD_DISPLAY_HID.RID_OK_CLOSE.okbutton.text
-msgid "Close"
-msgstr "बोंद"
-
-#: basic.src#IDD_FIND_DIALOG.RID_OK.okbutton.text
-msgid "~Find"
-msgstr "~पानते (F)"
-
-#: basic.src#IDD_REPLACE_DIALOG.RID_OK.okbutton.text
-msgid "~Replace"
-msgstr "साहाय मे(R)"
-
-#: basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_CRA.pageitem.text
-msgctxt "basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_CRA.pageitem.text"
-msgid "Crashreport"
-msgstr ""
-
-#: basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_FON.pageitem.text
-msgid "Font"
-msgstr "चिकी"
-
-#: basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_GEN.pageitem.text
-msgid "Generic"
-msgstr "जानाम बाबोत"
-
-#: basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_MIS.pageitem.text
-msgid "Misc"
-msgstr ""
-
-#: basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_PRO.pageitem.text
-msgctxt "basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_PRO.pageitem.text"
-msgid "Profile"
-msgstr "मोहोर"
-
-#: basic.src#IDD_DISPLAY_HID.RID_PB_BENENNEN.pushbutton.text
-msgctxt "basic.src#IDD_DISPLAY_HID.RID_PB_BENENNEN.pushbutton.text"
-msgid "Name"
-msgstr "ञुतुम"
-
-#: basic.src#IDD_DISPLAY_HID.RID_PB_KOPIEREN.pushbutton.text
-msgid "Copy"
-msgstr "नोकोल"
-
-#: basic.src#IDD_DISPLAY_HID.RID_PB_SELECTALL.pushbutton.text
-msgid "Select all"
-msgstr "जोतो बाछाव"
-
-#: basic.src#RID_TP_GENERIC.RID_PB_DEL_VALUE.pushbutton.text
-msgctxt "basic.src#RID_TP_GENERIC.RID_PB_DEL_VALUE.pushbutton.text"
-msgid "Delete"
-msgstr "मेटाव"
-
-#: basic.src#RID_TP_GENERIC.RID_PB_NEW_AREA.pushbutton.text
-msgctxt "basic.src#RID_TP_GENERIC.RID_PB_NEW_AREA.pushbutton.text"
-msgid "New"
-msgstr "नावा"
-
-#: basic.src#RID_TP_GENERIC.RID_PB_NEW_VALUE.pushbutton.text
-msgctxt "basic.src#RID_TP_GENERIC.RID_PB_NEW_VALUE.pushbutton.text"
-msgid "New"
-msgstr "नावा"
-
-#: basic.src#RID_TP_GENERIC.RID_PB_SELECT_FILE.pushbutton.text
-msgid "Path ..."
-msgstr "होर"
-
-#: basic.src#RID_TP_GENERIC.RID_PD_DEL_AREA.pushbutton.text
-msgctxt "basic.src#RID_TP_GENERIC.RID_PD_DEL_AREA.pushbutton.text"
-msgid "Delete"
-msgstr "मेटाव"
-
-#: basic.src#RID_TP_MISC.PB_PROGDIR.pushbutton.text
-msgctxt "basic.src#RID_TP_MISC.PB_PROGDIR.pushbutton.text"
-msgid "..."
-msgstr "..."
-
-#: basic.src#RID_TP_PROFILE.BASIS_SET.pushbutton.text
-msgctxt "basic.src#RID_TP_PROFILE.BASIS_SET.pushbutton.text"
-msgid "..."
-msgstr "..."
-
-#: basic.src#RID_TP_PROFILE.HID_SET.pushbutton.text
-msgctxt "basic.src#RID_TP_PROFILE.HID_SET.pushbutton.text"
-msgid "..."
-msgstr "..."
-
-#: basic.src#RID_TP_PROFILE.LOG_SET.pushbutton.text
-msgctxt "basic.src#RID_TP_PROFILE.LOG_SET.pushbutton.text"
-msgid "..."
-msgstr "..."
-
-#: basic.src#RID_TP_PROFILE.RID_PB_NEW_PROFILE.pushbutton.text
-msgctxt "basic.src#RID_TP_PROFILE.RID_PB_NEW_PROFILE.pushbutton.text"
-msgid "New"
-msgstr "नावा"
-
-#: basic.src#RID_TP_PROFILE.RID_PD_DEL_PROFILE.pushbutton.text
-msgctxt "basic.src#RID_TP_PROFILE.RID_PD_DEL_PROFILE.pushbutton.text"
-msgid "Delete"
-msgstr "मेटाव"
-
-#: basic.src#IDS_ASKDIRTYRELOAD.querybox.text
-msgid ""
-"File has been changed on data medium\n"
-"and in the Editor. Reload?"
-msgstr ""
-"रेत् सा़खिया़त चा़टिया लेकाते बोदोल आकाना\n"
-"आर सापाड़ाविच् ठेन. लादे दोहड़ा मे?"
-
-#: basic.src#IDS_ASKDIRTYRELOAD.querybox.title
-msgctxt "basic.src#IDS_ASKDIRTYRELOAD.querybox.title"
-msgid "Testtool"
-msgstr "बिड़ाव हा़तिया़र"
-
-#: basic.src#IDS_ASKRELOAD.querybox.text
-msgid "File has been changed on data medium. Reload?"
-msgstr "रेत् सा़खिया़त चा़टिया लेकाते बोदोल आकाना. लादे दोहड़ाय मे?"
-
-#: basic.src#IDS_ASKRELOAD.querybox.title
-msgctxt "basic.src#IDS_ASKRELOAD.querybox.title"
-msgid "Testtool"
-msgstr "बिड़ाव हा़तिया़र"
-
-#: basic.src#IDS_ASKSAVEERROR.querybox.text
-msgid "Error saving files! Run anyway?"
-msgstr "भुल सांचाव रेत्!  जाहां सेकाते चालाव मे?"
-
-#: basic.src#IDS_ASKSAVEERROR.querybox.title
-msgctxt "basic.src#IDS_ASKSAVEERROR.querybox.title"
-msgid "Testtool"
-msgstr "बिड़ाव हा़तिया़र"
-
-#: basic.src#IDS_ASK_DIRTY_AND_DISKCHANGE_SAVE.querybox.text
-msgid ""
-"File has been changed on data medium\n"
-"and in the Editor. Save?"
-msgstr ""
-"रेत् सा़खिया़त चा़टिया लेकाते बोदोल आकान\n"
-"आर सापड़ाविच् ठेन. सांचाव मे?"
-
-#: basic.src#IDS_ASK_DIRTY_AND_DISKCHANGE_SAVE.querybox.title
-msgctxt "basic.src#IDS_ASK_DIRTY_AND_DISKCHANGE_SAVE.querybox.title"
-msgid "Testtool"
-msgstr "बिड़ाव हा़तिया़र"
-
-#: basic.src#IDS_ASK_DIRTY_SAVE.querybox.text
-msgid "File has been changed. Save?"
-msgstr "रेत् बोदोल आकाना. सांचाव मे?"
-
-#: basic.src#IDS_ASK_DIRTY_SAVE.querybox.title
-msgctxt "basic.src#IDS_ASK_DIRTY_SAVE.querybox.title"
-msgid "Testtool"
-msgstr "बिड़ाव हा़तिया़र"
-
-#: basic.src#IDS_ASK_DISKCHANGE_SAVE.querybox.text
-msgid ""
-"File has been changed on data medium.\n"
-"Overwrite?"
-msgstr ""
-"रेत् सा़खिया़त चा़टिया लेकाते बोदोल आकाना\n"
-" चेतान रे ओल दोहड़ाय मे ?"
-
-#: basic.src#IDS_ASK_DISKCHANGE_SAVE.querybox.title
-msgctxt "basic.src#IDS_ASK_DISKCHANGE_SAVE.querybox.title"
-msgid "Testtool"
-msgstr "बिड़ाव हा़तिया़र"
-
-#: basic.src#IDS_LOSS_OF_INFORMATION.querybox.text
-msgid "Saving in an external format causes information loss."
-msgstr "बाहरे तेयार रे सांचाव ते सोबोर आदोक् काना."
-
-#: basic.src#IDS_LOSS_OF_INFORMATION.querybox.title
-msgctxt "basic.src#IDS_LOSS_OF_INFORMATION.querybox.title"
-msgid "Testtool"
-msgstr "बिड़ाव हा़तिया़र"
-
-#: basic.src#IDS_RUNNING.querybox.text
-msgid "BASIC is still running! Exit anyway?"
-msgstr "BASIC नितहों चलाक् काना! जाहां लेका ते बाहरे ओडोक् मे?"
-
-#: basic.src#IDS_RUNNING.querybox.title
-msgctxt "basic.src#IDS_RUNNING.querybox.title"
-msgid "Testtool"
-msgstr "बिड़ाव हा़तिया़र"
-
-#: basic.src#IDD_EDIT_VAR.RID_RB_NEW_BOOL_F.radiobutton.text
-msgid "False"
-msgstr "एड़े"
-
-#: basic.src#IDD_EDIT_VAR.RID_RB_NEW_BOOL_T.radiobutton.text
-msgid "True"
-msgstr "सा़री"
-
-#: basic.src#IDS_APPMODE_BREAK.string.text
-msgid "Break"
-msgstr "केचेत्"
-
-#: basic.src#IDS_APPMODE_RUN.string.text
-msgid "Run"
-msgstr "चालाव"
-
-#: basic.src#IDS_APPNAME.string.text
-msgctxt "basic.src#IDS_APPNAME.string.text"
-msgid "Testtool"
-msgstr "बिड़ाव हा़तिया़र"
-
-#: basic.src#IDS_APPNAME2.string.text
-msgctxt "basic.src#IDS_APPNAME2.string.text"
-msgid "VCLTestTool"
-msgstr "VCLबिड़ाव हा़तियार"
-
-#: basic.src#IDS_BASFILTER.string.text
-msgid "Source files (*.BAS)"
-msgstr "मुल रेत् (*.BAS)"
-
-#: basic.src#IDS_CANCEL.string.text
-msgctxt "basic.src#IDS_CANCEL.string.text"
-msgid "Cancel"
-msgstr "बा़डरा़"
-
-#: basic.src#IDS_CONTINUE.string.text
-msgid "Continue"
-msgstr " लेताड़"
-
-#: basic.src#IDS_DISASWIN.string.text
-msgid "Disassembly"
-msgstr "बाङ सेमलेत्"
-
-#: basic.src#IDS_EDIT_VAR.string.text
-msgid "Edit ($Arg1)"
-msgstr "सापाड़ाव ($Arg1)"
-
-#: basic.src#IDS_ERROR1.string.text
-msgid "Error "
-msgstr "भुल"
-
-#: basic.src#IDS_ERROR2.string.text
-msgid " in line "
-msgstr "गार ते"
-
-#: basic.src#IDS_INCFILTER.string.text
-msgid "Include files (*.INC)"
-msgstr "रेत् मेसा (*.INC)"
-
-#: basic.src#IDS_LIBFILTER.string.text
-msgid "Libraries (*.SB)"
-msgstr "पुथी ओड़ाक्(*.SB)"
-
-#: basic.src#IDS_LOADDLG.string.text
-msgid "Testtool: Load File"
-msgstr "बिड़ाव हा़तिया़र: लादे रेत्"
-
-#: basic.src#IDS_NONAME.string.text
-msgid "Unnamed"
-msgstr "बाङ ञुतुमाक्"
-
-#: basic.src#IDS_NO_LONGNAME.string.text
-msgid "No entries in Hid.Lst"
-msgstr " Hid. Lst रे बाङ आदेर"
-
-#: basic.src#IDS_OBJECT.string.text
-msgid "Object"
-msgstr "जिनिस"
-
-#: basic.src#IDS_PAGE.string.text
-msgid "Page "
-msgstr "साहटा"
-
-#: basic.src#IDS_PRINTMSG.string.text
-msgid "Printout of "
-msgstr " रेयाक् छापा ओडोक्"
-
-#: basic.src#IDS_RESFILTER.string.text
-msgid "Result files (*.RES)"
-msgstr "कुड़ा़य रेत् (*.RES)"
-
-#: basic.src#IDS_SAVEDLG.string.text
-msgid "Testtool: Save File"
-msgstr "बिड़ाव हा़तिया़र: सांचाव रेत्"
-
-#: basic.src#IDS_TXTFILTER.string.text
-msgid "Results as text file (*.TXT)"
-msgstr "ओनोल रेत् लेकाते कुड़ा़य (*.TXT)"
-
-#: basic.src#IDS_WARNING1.string.text
-msgid "Warning "
-msgstr "होंसिया़र"
-
-#: basic.src#IDS_WARNING_PREFIX.string.text
-msgctxt "basic.src#IDS_WARNING_PREFIX.string.text"
-msgid "Warning: "
-msgstr "होंसिया़र "
-
-#: basic.src#RID_TT_EXTRAS_NAME.string.text
-msgid "E~xtra"
-msgstr "बाड़तीयाक् (~x)"
-
-#: basic.src#IDD_OPTIONS_DLG.tabdialog.text
-msgid "Settings"
-msgstr "साजाव"
-
-#: basmsg.src#S_ERROR_OUTSIDE_TESTCASE.string.text
-msgid "Error outside of test case"
-msgstr "बिड़ाव काथा रेयाक् बाहरे रे भुल"
-
-#: basmsg.src#S_PROG_START.string.text
-msgid "Program start: ($Arg1); ($Arg2)"
-msgstr "का़मी हारा एहोब: ($Arg1); ($Arg2)"
-
-#: basmsg.src#S_WARNING_PREFIX.string.text
-msgctxt "basmsg.src#S_WARNING_PREFIX.string.text"
-msgid "Warning: "
-msgstr "होंसिया़र "
-
-#: svtmsg.src#S_ALLOWED_ONLY_IN_DOCKING_MODE.string.text
-msgid "Method only allowed in docking mode at ($Arg1)"
-msgstr "तिंगु थिर जोहोक् एसकार रे नियोम बाताव आकात् आ ($Arg1)"
-
-#: svtmsg.src#S_ALLOWED_ONLY_IN_FLOATING_MODE.string.text
-msgid "Method only allowed in floating mode at ($Arg1)"
-msgstr " ($Arg1) चापे जोहोक एसकार रे नियोम बाताव दाड़ेयाक् आ"
-
-#: svtmsg.src#S_APP_SHUTDOWN.string.text
-msgid "Application has been shut down"
-msgstr "नेहोर साकाम बोंदोक् काना"
-
-#: svtmsg.src#S_ATTEMPT_TO_WRITE_READONLY.string.text
-msgid "Attempt to write on read-only ($Arg1)"
-msgstr "पाड़हाव एसकार रे ओल रेयाक् कुरुमुटू लेगा ($Arg1)"
-
-#: svtmsg.src#S_BUTTONID_REQUIRED.string.text
-msgid "A button ID needs to be given at ($Arg1)"
-msgstr " ($Arg1) रे ID बुता़म एम लाकती काना"
-
-#: svtmsg.src#S_BUTTON_DISABLED_ON_TOOLBOX.string.text
-msgid "The button is disabled in ToolBox at ($Arg1)"
-msgstr "($Arg1)हा़तिया़र"
-
-#: svtmsg.src#S_BUTTON_HIDDEN_ON_TOOLBOX.string.text
-msgid "The button is hidden in ToolBox at ($Arg1)"
-msgstr "($Arg1) बुताम हा़तियार बाकसा रे उकुवाकाना"
-
-#: svtmsg.src#S_BUTTON_ID_NOT_THERE.string.text
-msgid "There is no button with ID ($Arg1) at ($Arg2)"
-msgstr " ($Arg1) रे ID ($Arg2) सांव बुता़म बानुक् आ"
-
-#: svtmsg.src#S_CANNOT_CREATE_DIRECTORY.string.text
-msgid "Cannot create Directory: \"($Arg1)\""
-msgstr "उनुदुक् बाङ तेयार दाड़ेयाक् आ \"($Arg1)\""
-
-#: svtmsg.src#S_CANNOT_FIND_FLOATING_WIN.string.text
-msgid "Cannot find FloatingWindow for floating DockingWindow at ($Arg1)."
-msgstr "($Arg1). रे चापे घाट ञेनेलोम ला़गित् चापे ञेनेलोम बाय ञाम दाड़ेयाक् आ"
-
-#: svtmsg.src#S_CANNOT_MAKE_BUTTON_VISIBLE_IN_TOOLBOX.string.text
-msgid "Button cannot be made visible in ToolBox at ($Arg1)"
-msgstr " ($Arg1) बुताम हा़तिया़र बाकसा रे ञेलोक् लेका बाङ तेयार दाड़ेयाक् आ"
-
-#: svtmsg.src#S_CONTROLTYPE_NOT_SUPPORTED.string.text
-msgid "ControlType ($Arg1) is not supported"
-msgstr "कोबोच् लेकानाक् बाय गोक् ड़ो वा($Arg1). "
-
-#: svtmsg.src#S_DEPRECATED.string.text
-msgid "Deprecated! Please change the script."
-msgstr "कांहिस आकाना! दायाकाते चिकी बोदोल में"
-
-#: svtmsg.src#S_DIRECTORY_NOT_EMPTY.string.text
-msgid "Directory has to be Empty to unpack to. Directory: \"($Arg1)\""
-msgstr "राड़ा काते उनुदुक् एकेनाक् हुयुक् आ. उनुदुक् \"($Arg1)\""
-
-#: svtmsg.src#S_ENTRY_NOT_FOUND.string.text
-msgid "\"($Arg2)\" entry at ($Arg1) not found"
-msgstr "\"($Arg2)\" ($Arg1)आदेर रे  बाङ ञाम लेना"
-
-#: svtmsg.src#S_ERROR_IN_SET_TEXT.string.text
-msgid "Set text did not function"
-msgstr "साजाव ओनोल बाय का़मी लेत् आ"
-
-#: svtmsg.src#S_ERROR_SAVING_IMAGE.string.text
-msgid "Error #($Arg1) when saving the image"
-msgstr " #($Arg1) चिता़र सांचाव जोहोक भुल"
-
-#: svtmsg.src#S_GPF_ABORT.string.text
-msgid "Program aborted with GPF"
-msgstr "GPF सांब हामाल कांमी होरा आड़ाक्"
-
-#: svtmsg.src#S_HELPID_ON_TOOLBOX_NOT_FOUND.string.text
-msgid "HelpID in ToolBox not found at ($Arg1)"
-msgstr "ID गोड़ो हा़तिया़र बाकसा  ($Arg1)रे बाय ञाम लेना"
-
-#: svtmsg.src#S_INTERNAL_ERROR.string.text
-msgid "Internal error at ($Arg1)"
-msgstr " ($Arg1) भितिर भुल रे"
-
-#: svtmsg.src#S_INVALID_PARAMETERS.string.text
-msgid "Invalid Parameters"
-msgstr "बाङ बाताव पारामीटार"
-
-#: svtmsg.src#S_INVALID_POSITION.string.text
-msgid "Invalid position at ($Arg1)"
-msgstr ""
-
-#: svtmsg.src#S_ITEMS_INVISIBLE.string.text
-msgid "The items are hidden at ($Arg1)"
-msgstr " ($Arg1) रे जिनिस उकू"
-
-#: svtmsg.src#S_MENU_NOT_CLOSING.string.text
-msgid "Menu not closing."
-msgstr ""
-
-#: svtmsg.src#S_METHOD_FAILED.string.text
-msgid "($Arg1) of entry \"($Arg2)\" failed"
-msgstr "($Arg1) रेयाक् आदेर \"($Arg2)\" डिगा़व एना"
-
-#: svtmsg.src#S_NO_ACTIVE_WINDOW.string.text
-msgid "No active window found (GetNextCloseWindow)"
-msgstr "जाहान उसारा़व ञेनेलोम बाङ ञाम लेना(इना़ तायोमाक् बोंद ञेनेलोम ञाम)"
-
-#: svtmsg.src#S_NO_CANCEL_BUTTON.string.text
-msgid "There is no Cancel button at ($Arg1)"
-msgstr "रे बा़डरा़ बुता़म बा़नुक् आ ($Arg1)"
-
-#: svtmsg.src#S_NO_DEFAULT_BUTTON.string.text
-msgid "There is no Default button defined at ($Arg1)"
-msgstr "($Arg1) रे Default  पुसटा़व बा़नुक् आ"
-
-#: svtmsg.src#S_NO_DIALOG_IN_GETACTIVE.string.text
-msgid "GetActive does not return a dialog! Inform development"
-msgstr "ञाम उसरा़व काथा बाय रोड़ रुवा़ड़ा ! लाहावाक् खोबोर मे"
-
-#: svtmsg.src#S_NO_HELP_BUTTON.string.text
-msgid "There is no Help button at ($Arg1)"
-msgstr " ($Arg1) रे Help बुता़म बा़नुक् आ "
-
-#: svtmsg.src#S_NO_LIST_BOX_BUTTON.string.text
-msgid "ListBoxButton does not exist in ($Arg1)"
-msgstr " ($Arg1) रे लिसटीबाकसा बानुक् आकात् आ"
-
-#: svtmsg.src#S_NO_LIST_BOX_STRING.string.text
-msgid "String does not exist in ($Arg1)"
-msgstr ""
-
-#: svtmsg.src#S_NO_MENU.string.text
-msgid "There is no menu at ($Arg1)"
-msgstr "($Arg1) रे जाहान ञुतुम लिस्टी बा़नुक् आ"
-
-#: svtmsg.src#S_NO_MORE_FILES.string.text
-msgid "No more files"
-msgstr "आर ढेर रेत् बाङ"
-
-#: svtmsg.src#S_NO_NO_BUTTON.string.text
-msgid "There is no No button at ($Arg1)"
-msgstr "($Arg1) रे NO बुता़मव बानुक् आ"
-
-#: svtmsg.src#S_NO_OK_BUTTON.string.text
-msgid "There is no OK button at ($Arg1)"
-msgstr " ($Arg1) रे OK बुता़म बा़नुक् आ"
-
-#: svtmsg.src#S_NO_POPUP.string.text
-msgid "Pop-up menu not open"
-msgstr "लोगोन चेतानोक् . ञुतुम ओल बाङ झिजुक्"
-
-#: svtmsg.src#S_NO_RETRY_BUTTON.string.text
-msgid "There is no Repeat button at ($Arg1)"
-msgstr " ($Arg1) रे Repeat बुता़म बा़नुक् आ"
-
-#: svtmsg.src#S_NO_SAX_PARSER.string.text
-msgid "No SAX Parser when using ($Arg1). Initialize with 'SAXReadFile' first."
-msgstr ""
-"जाहान SAX parser बानुक् आ  तिन रे($Arg1 )बेभारा. एतोहोब 'SAX पाड़हावरेत् "
-"सांव एहोब जोहोक्."
-
-#: svtmsg.src#S_NO_SCROLLBAR.string.text
-msgid "No scroll bar at ($Arg1)"
-msgstr " ($Arg1) रे जहान पानते तोतरो बानुक् आ"
-
-#: svtmsg.src#S_NO_SELECTED_ENTRY.string.text
-msgid "No entry is selected in ($Arg2) at ($Arg1)"
-msgstr "($Arg2) रे ($Arg1)रे जाहान आदेर बाछाव  बानुक आ"
-
-#: svtmsg.src#S_NO_SELECTED_ENTRY_DEPRECATED.string.text
-msgid "No entry is selected in TreeListBox at ($Arg1)"
-msgstr "जाहान आदेर TreeListBox रे ($Arg1) बाछाव बानुक् आ"
-
-#: svtmsg.src#S_NO_SELECT_FALSE.string.text
-msgid "Select FALSE not allowed. Use MultiSelect at ($Arg1)"
-msgstr "एड़े बाछाव बाङ बाताव. ($Arg1) रे सांगे बाछाव बेभार"
-
-#: svtmsg.src#S_NO_STATUSBAR.string.text
-msgid "No status bar at ($Arg1)"
-msgstr " ($Arg1) जाहान ओबोसता हुरका़ड़ बाङ रे"
-
-#: svtmsg.src#S_NO_SUBMENU.string.text
-msgid "Submenu does not exist"
-msgstr "एटाक् ञुतुम ओल बानुक् आना."
-
-#: svtmsg.src#S_NO_YES_BUTTON.string.text
-msgid "There is no Yes button at ($Arg1)"
-msgstr " ($Arg1) रे Yes बुता़म बा़नुक् आ"
-
-#: svtmsg.src#S_NUMBER_TOO_BIG.string.text
-msgid "Entry number ($Arg2) is too large in ($Arg1). Max. allowed is ($Arg3)"
-msgstr "आदेर लेखा ($Arg2)  ($Arg1)रे आड़ी माराङा. ढेर उता़र बाताव दो ($Arg3)"
-
-#: svtmsg.src#S_NUMBER_TOO_SMALL.string.text
-msgid ""
-"The entry number ($Arg2) is too small in ($Arg1). Min allowed is ($Arg3)"
-msgstr ""
-" ($Arg2) आदेर लेखा आड़ी हुडिंञा ($Arg1). हुडिञ उता़र बातावाक् दो ($Arg3)"
-
-#: svtmsg.src#S_POINTER_OUTSIDE_APPWIN.string.text
-msgid "Pointer not inside application window at '($Arg1)'"
-msgstr "उनुदुक् का़मी नेहोर ञेनेलोम भितिर'($Arg1)'रे बानुक्"
-
-#: svtmsg.src#S_RESETAPPLICATION_FAILED_COMPLEX.string.text
-msgid "ResetApplication failed: too complex"
-msgstr "दोहड़ा साजाव नेहोर साकाम डिगा़वेना: आ़डी आंटाक् "
-
-#: svtmsg.src#S_RESETAPPLICATION_FAILED_UNKNOWN.string.text
-msgid "ResetApplication failed: unknown window type"
-msgstr "दोहड़ा साजाव नेहोर साकाम डिगा़वेना: बाङ बाड़ाय ञेनेलोम लेकानाक्"
-
-#: svtmsg.src#S_SELECTION_BY_ATTRIBUTE_ONLY_DIRECTORIES.string.text
-msgid "Selection by attributes only possible for directories"
-msgstr "उनुदुक् को एकेन गालाङ दाराय ते बाछावोक् आ"
-
-#: svtmsg.src#S_SELECT_DESELECT_VIA_STRING_NOT_IMPLEMENTED.string.text
-msgid "Select/Deselect with string not implemented at ($Arg1)"
-msgstr "बाबेर सांव बाछाव/ बाङ बाछाव रे बाङ बाहाल दाड़ेयाक् आ($Arg1)"
-
-#: svtmsg.src#S_SID_EXECUTE_FAILED.string.text
-msgid "Slot ID could not be executed"
-msgstr ""
-
-#: svtmsg.src#S_SID_EXECUTE_FAILED_NO_DISPATCHER.string.text
-msgid "Slot ID cannot be executed. No ActiveDispatcher"
-msgstr "बोझा ID बाङ उदुक् दाड़ेयाक् आ. जाहान उसरा़व हाटि़ञिच् बानुक् येया"
-
-#: svtmsg.src#S_SIZE_BELOW_MINIMUM.string.text
-msgid "The Size is below the minimum. x=($Arg1) ,y=($Arg2)"
-msgstr "माराङतेत् हुडिञ उता़र खोन लातारा. x=($Arg1) ,y=($Arg2)"
-
-#: svtmsg.src#S_SIZE_NOT_CHANGEABLE.string.text
-msgid "Size cannot be altered at ($Arg1)"
-msgstr "($Arg1) रे माराङ  तेत् बाङ एटाक् दाड़ेयाक् आ"
-
-#: svtmsg.src#S_SLOT_IN_EXECUTE.string.text
-msgid "Another Slot is being executed already."
-msgstr ""
-
-#: svtmsg.src#S_SPLITWIN_NOT_FOUND.string.text
-msgid "SplitWindow not found at ($Arg1)"
-msgstr " ($Arg1) पासनाव रेत् बाङ ञामोक रे"
-
-#: svtmsg.src#S_TABPAGE_NOT_FOUND.string.text
-msgid "Tab page not found at ($Arg1)"
-msgstr " ($Arg1)रे हिंसाब साहटा बाङ ञाम लेना"
-
-#: svtmsg.src#S_TEAROFF_FAILED.string.text
-msgid "TearOff failed in ToolBox at ($Arg1)"
-msgstr "हा़तियार बाकसा  ($Arg1) रे ओचोक् डिगा़व एना"
-
-#: svtmsg.src#S_TRISTATE_NOT_ALLOWED.string.text
-msgid "Tristate cannot be set at ($Arg1)"
-msgstr " ($Arg1) रे पेने ओबोसता बाङ साजाव दाड़े याक् ना"
-
-#: svtmsg.src#S_UNKNOWN_COMMAND.string.text
-msgid "Unknown command '($Arg1)'"
-msgstr " '($Arg1)'बाङ बाड़य हुकुम"
-
-#: svtmsg.src#S_UNKNOWN_METHOD.string.text
-msgid "Unknown method '($Arg1)' on ($Arg2)"
-msgstr "बाङ बाडाय नियोम '($Arg1)' एहोप ($Arg2)"
-
-#: svtmsg.src#S_UNKNOWN_TYPE.string.text
-msgid "Unknown object type ($Arg1) from UId or method '($Arg2)' not supported"
-msgstr ""
-"UID खोन बाङ बाडाय जिनिस लेकान ($Arg1)आर बाङ  '($Arg2)' नियोम बाय गोड़ो वाक् "
-"आ "
-
-#: svtmsg.src#S_UNO_PROPERTY_NITIALIZE_FAILED.string.text
-msgid "UnoSlot: Properties could not be initialized"
-msgstr "Unoबोझा: गुन को बाङ एहोब दाड़ेयाक् आ"
-
-#: svtmsg.src#S_UNO_URL_EXECUTE_FAILED_DISABLED.string.text
-msgid "UNO URL \"($Arg1)\" could not be run: Disabled"
-msgstr "UNO URL \"($Arg1)\" बाङ चालाव दाड़ेयाक् आ:बाङ चालाव होचोवाक् आ"
-
-#: svtmsg.src#S_UNO_URL_EXECUTE_FAILED_NO_DISPATCHER.string.text
-msgid "UNO URL \"($Arg1)\" could not be executed: No dispatcher was found."
-msgstr ""
-"UNO URL \"($Arg1)\" बाङ का़मी दाड़ेयाक् आ: जाहांय कुल भेजायिच् बाय ञाम लेन "
-"ताहेंना."
-
-#: svtmsg.src#S_UNO_URL_EXECUTE_FAILED_NO_FRAME.string.text
-msgid "UNO URL \"($Arg1)\" could not be executed: No ActiveFrame on desktop."
-msgstr ""
-"UNO URL \"($Arg1)\" बाङ का़मी होचो दाड़ेयाक् आ. डेस्क टाप रे जाहान उसरा़व साज "
-"बा़नुक् आ"
-
-#: svtmsg.src#S_UNPACKING_STORAGE_FAILED.string.text
-msgid "Unpacking storage \"($Arg1)\" to \"($Arg2)\" failed"
-msgstr "बाङ तोल मुरा़य\"($Arg1)\" \"($Arg2)\"डिगा़वेना"
-
-#: svtmsg.src#S_WINDOW_DISAPPEARED.string.text
-msgid "Window disappeared in the meantime at ($Arg1)"
-msgstr " ($Arg1)ञनेलोम ठीक ओकतो रे ञेल आत् एना"
-
-#: svtmsg.src#S_WIN_DISABLED.string.text
-msgid "($Arg1) could not be accessed. Disabled"
-msgstr ""
-
-#: svtmsg.src#S_WIN_INVISIBLE.string.text
-msgid "($Arg1) is not visible"
-msgstr "($Arg1) बाङ ञेल ञामोक् आ"
-
-#: svtmsg.src#S_WIN_NOT_FOUND.string.text
-msgid "($Arg1) could not be found"
-msgstr "($Arg1) बाङ ञाम दाड़ेयाक् ना "
-
-#: testtool.src#S_INVALID_KEYCODE.string.text
-msgid "Is an invalid KeyCode!"
-msgstr "चेत् बाङ बाताव  का़ठी कोड काना"
-
-#: testtool.src#S_MANDATORY_FILE.string.text
-msgid ""
-"\n"
-"could not be found.\n"
-"This file is indispensable."
-msgstr ""
-"\n"
-"बाङ ञाम लेना\n"
-" नोवा रेत् आ़डी ला़कतियाक् काना  "
-
-#: testtool.src#S_READING_BASIC_MODULE.string.text
-msgid "Reading BASIC module"
-msgstr " BASIC  नानापाक् पाड़हावेत् आ"
-
-#: testtool.src#S_READING_CONTROLS.string.text
-msgid "Reading Controls"
-msgstr "कोबोज पाड़हावेत् आ"
-
-#: testtool.src#S_READING_LONGNAMES.string.text
-msgid "Reading long-names"
-msgstr "जिलिञ ञुतुम को पाड़हाव मे   "
-
-#: testtool.src#S_READING_SLOT_IDS.string.text
-msgid "Reading Slot IDs"
-msgstr "IDs बोझा पाड़हावेत् आ"
-
-#: testtool.src#S_STARTING_APPLICATION.string.text
-msgid "Starting application"
-msgstr "आरजी साकाम एहोबेक् आ"
-
-#: ttmsg.src#S_APPLICATION_RESTARTED.string.text
-msgid "Application has been restarted."
-msgstr "आरजी साकाम दोहड़ा एहोब होचो आकाना"
-
-#: ttmsg.src#S_APPLICATION_START_FAILED.string.text
-msgid "Application \"($Arg1)\" cannot be started. "
-msgstr "आरजी साकाम \"($Arg1)\" बाङ एहोब दाड़ेयाक् आ "
-
-#: ttmsg.src#S_CANNOT_OPEN_FILE.string.text
-msgid "File cannot be opened: ($Arg1)"
-msgstr "रेत् बाङ झिज दाड़े केया($Arg1)"
-
-#: ttmsg.src#S_DOUBLE_NAME.string.text
-msgid "Name double: ($Arg1)"
-msgstr "दोहड़ा ञुतुम: ($Arg1)"
-
-#: ttmsg.src#S_ERRORS_DETECTED.string.text
-msgid "** ($Arg1) errors occurred"
-msgstr "** ($Arg1) भुल हुय एना"
-
-#: ttmsg.src#S_FIRST_SHORTNAME_REQ_ASTRX.string.text
-msgid "First short-name must start with * . Ignoring."
-msgstr "पा़हिल खाटो ञुतुम * ते एहोबोक् लाकती. बाय गोरोजाक् काना"
-
-#: ttmsg.src#S_INCLUDE_FILE_WARNINGS_DETECTED.string.text
-msgid "** ($Arg1) warnings occurred during initialization"
-msgstr "** ($Arg1) एहोबोक् जोहोक् होसिया़र काथा ओडोक एना"
-
-#: ttmsg.src#S_INVALID_LINE.string.text
-msgid "Line \"($Arg1)\" is invalid."
-msgstr "थार \"($Arg1)\" बाङ बातावाक् काना"
-
-#: ttmsg.src#S_LONGNAME_UNKNOWN.string.text
-msgid "Long-name unknown: ($Arg1)"
-msgstr "जिलिञ ञुतुम बाङ बाडाया ($Arg1)"
-
-#: ttmsg.src#S_NAME_NOT_THERE.string.text
-msgid "Name doesn't exist: #($Arg1)"
-msgstr "ञुतुम बानुक् आ: #($Arg1)"
-
-#: ttmsg.src#S_NO_CONNECTION.string.text
-msgid "No connection. Sequence No: ($Arg1)"
-msgstr "जाहान जोनोड़ाव बाङ. थार लेखा: ($Arg1)"
-
-#: ttmsg.src#S_NO_ERRORS_DETECTED.string.text
-msgid "** No errors have occurred"
-msgstr "** जाहान भुल बाय हुय लेना"
-
-#: ttmsg.src#S_NO_FILES_FOUND.string.text
-msgid "No ($Arg1) files found"
-msgstr "जाहान ($Arg1) रेत् बाय ञाम लेना."
-
-#: ttmsg.src#S_NO_INCLUDE_FILE_WARNINGS_DETECTED.string.text
-msgid "** No warnings occurred during initialization"
-msgstr "** एहोबोक जोहोक् जाहान होसिया़र काथा बाय ओडोक लेना"
-
-#: ttmsg.src#S_NO_WARNINGS_DETECTED.string.text
-msgid "** No warnings have occurred"
-msgstr "** जाहान होसिया़र काथा बाय ओडोक लेना"
-
-#: ttmsg.src#S_READING_FILE.string.text
-msgid "Reading the files"
-msgstr "रेत् पाड़हावेत् आ"
-
-#: ttmsg.src#S_RETURNED_VALUE_ID_MISSMATCH.string.text
-msgid "Return value received but different Id expected"
-msgstr "रुवा़ड़ोक् गोनोङ ञाम एना मेनखान भेगार आई डी आंस लेन ताहेंना"
-
-#: ttmsg.src#S_RETURNED_VALUE_NO_RECEIVER.string.text
-msgid "Return value received but no receiver defined"
-msgstr "रुबा़ड़ोक् गोनोङ ञाम एना मेनखान जाहांय हाताव कोवाक उपुरुम बानुक् आ"
-
-#: ttmsg.src#S_RETURN_SEQUENCE_MISSMATCH.string.text
-msgid "Return Stream has wrong sequence: ($Arg1) instead of ($Arg2)"
-msgstr ""
-"रुवा़ड़ोक् लिंजी रे बाङ ठिक थार मेनाक् आ: ($Arg1) रेयाक् बोदोल ते ($Arg2)"
-
-#: ttmsg.src#S_SHORTNAME_UNKNOWN.string.text
-msgid "Short-name unknown during copying: ($Arg1)"
-msgstr "नोकोल जोहोक् खाटो ञुतुम बाङ बाडायोक् आ ($Arg1)"
-
-#: ttmsg.src#S_TIMOUT_SENDING.string.text
-msgid "Server Timeout while sending. Sequence No: ($Arg1)"
-msgstr "भेजा जाहोक् सवर्राक् ओकतो मुचा़त एना. थार लेखा: ($Arg1)"
-
-#: ttmsg.src#S_TIMOUT_WAITING.string.text
-msgid "Server Timeout while waiting for answer. Sequence No: ($Arg1)"
-msgstr ""
-"ला़ना़य ला़गित् तांगी जोहोक सवर्र रेयाक् ओकतो  मुचा़त एना. थार लेखा: ($Arg1)"
-
-#: ttmsg.src#S_UNKNOWN_METHOD.string.text
-msgid "Unknown method on object :($Arg1).($Arg2)"
-msgstr "जिनिस चेतान रे बाङ बाडाय नियोम:($Arg1).($Arg2)"
-
-#: ttmsg.src#S_UNKNOWN_SLOT_CONTROL.string.text
-msgid "Slot/Control unknown :\"($Arg1)\""
-msgstr "बोझा/कोबोच् बाङ बाडाया :\"($Arg1)\""
-
-#: ttmsg.src#S_WARNINGS_DETECTED.string.text
-msgid "** ($Arg1) warnings occurred"
-msgstr "** ($Arg1) होसिया़र काथा ओडोक् एना"
-
-#: format.src#STR_BASICKEY_FORMAT_CURRENCY.string.text
-msgid "@0.00 $;@(0.00 $)"
-msgstr "@0.00 $;@(0.00 $)"
-
-#: format.src#STR_BASICKEY_FORMAT_FALSE.string.text
-msgid "False"
-msgstr "एड़े"
-
-#: format.src#STR_BASICKEY_FORMAT_NO.string.text
-msgid "No"
-msgstr "बाङ"
-
-#: format.src#STR_BASICKEY_FORMAT_OFF.string.text
-msgid "Off"
-msgstr "बोंद"
-
-#: format.src#STR_BASICKEY_FORMAT_ON.string.text
-msgid "On"
+#: source/classes/sb.src#IDS_SBERR_TERMINATED.String.Text
+msgid  "The macro running has been interrupted"
+msgstr "ओका मॉक्रो चालाक् कान तांहेना, ओनाय आकोट आकात् आ"
+
+#: source/classes/sb.src#IDS_SBERR_STOREREF.String.Text
+msgid  "Reference will not be saved: "
+msgstr "जोनोड़ाव बाय सांचाक् आ: "
+
+#: source/classes/sb.src#ERRCODE_BASMGR_LIBLOAD & ERRCODE_RES_MASK.String.Text
+msgid  "Error loading library '$(ARG1)'."
+msgstr "पुथी ओड़ाक् लादे जोहोक् भुल '$(ARG1)'"
+
+#: source/classes/sb.src#ERRCODE_BASMGR_LIBSAVE & ERRCODE_RES_MASK.String.Text
+msgid  "Error saving library: '$(ARG1)'."
+msgstr "पुथी ओड़ाक् सांचाव जोहोक् भुल: '$(ARG1)'"
+
+#: source/classes/sb.src#ERRCODE_BASMGR_MGROPEN & ERRCODE_RES_MASK.String.Text
+msgid  "The BASIC from the file '$(ARG1)' could not be initialized."
+msgstr "'$(ARG1)' रेत् खोन BASIC बाङ एहोब दाड़े याक् आ"
+
+#: source/classes/sb.src#ERRCODE_BASMGR_MGRSAVE & ERRCODE_RES_MASK.String.Text
+msgid  "Error saving BASIC: '$(ARG1)'."
+msgstr "BASIC सांचाव जोहोक् भुल: '$(ARG1)'"
+
+#: source/classes/sb.src#ERRCODE_BASMGR_REMOVELIB & ERRCODE_RES_MASK.String.Text
+msgid  "Error removing library."
+msgstr "पुथी ओड़ाक् ओचोक् जोहोक् भुल"
+
+#: source/classes/sb.src#ERRCODE_BASMGR_UNLOADLIB & ERRCODE_RES_MASK.String.Text
+msgid  "The library could not be removed from memory."
+msgstr "पुथी ओड़ाक् उयहा़र ठाव खोन बाङ ओचोक् दाड़ेयाक् आ."
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_ON.String.Text
+msgid  "On"
 msgstr "एहोप्"
 
-#: format.src#STR_BASICKEY_FORMAT_TRUE.string.text
-msgid "True"
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_OFF.String.Text
+msgid  "Off"
+msgstr "बोंद"
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_TRUE.String.Text
+msgid  "True"
 msgstr "सुही, सा़री"
 
-#: format.src#STR_BASICKEY_FORMAT_YES.string.text
-msgid "Yes"
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_FALSE.String.Text
+msgid  "False"
+msgstr "एड़े"
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_YES.String.Text
+msgid  "Yes"
 msgstr "होय"
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_NO.String.Text
+msgid  "No"
+msgstr "बाङ"
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_CURRENCY.String.Text
+msgid  "@0.00 $;@(0.00 $)"
+msgstr "@0.00 $;@(0.00 $)"

@@ -1,2824 +1,2580 @@
-
-#: updatehdl.src#RID_UPDATE_STR_CHECKING.string.text
-msgid "Checking..."
-msgstr "ચકાસી રહ્યા છીએ..."
-
-#: updatehdl.src#RID_UPDATE_STR_CHECKING_ERR.string.text
-msgid "Checking for an update failed."
-msgstr "સુધારા માટે ચકાસવામાં નિષ્ફળ."
-
-#: updatehdl.src#RID_UPDATE_STR_NO_UPD_FOUND.string.text
-msgid "%PRODUCTNAME %PRODUCTVERSION is up to date."
-msgstr "%PRODUCTNAME %PRODUCTVERSION એ પરિપૂર્ણ છે."
-
-#: updatehdl.src#RID_UPDATE_STR_UPD_FOUND.string.text
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
 msgid ""
-"%PRODUCTNAME %NEXTVERSION is available.\n"
-"\n"
-"The installed version is %PRODUCTNAME %PRODUCTVERSION.\n"
-"\n"
-"Note: Before downloading  an update, please ensure that you have sufficient "
-"access rights to install it.\n"
-"A password, usually the administrator's or root password, may be required."
 msgstr ""
-"%PRODUCTNAME %NEXTVERSION ઉપલબ્ધ છે.\n"
-"\n"
-"%PRODUCTNAME %PRODUCTVERSION સ્થાપિત આવૃત્તિ છે.\n"
-"\n"
-"નોંધ: સુધારો ડાઉનલોડ કરવા પહેલાં, મહેરબાની કરીને ખાતરી કરો કે તમારી પાસે "
-"તેને સ્થાપિત કરવા માટે પૂરતા હકો છે.\n"
-"પાસવર્ડ, સામાન્ય રીતે સંચાલકનો કે રુટનો પાસવર્ડ, કદાચ જરૂર પડશે."
-
-#: updatehdl.src#RID_UPDATE_STR_DLG_TITLE.string.text
-msgid "Check for Updates"
-msgstr "સુધારાઓ માટે ચકાસો"
-
-#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_PAUSE.string.text
-msgid "Downloading %PRODUCTNAME %NEXTVERSION paused at..."
-msgstr "%PRODUCTNAME %NEXTVERSION ડાઉનલોડ કરવાનું આગળ અટકાવાયેલ છે..."
-
-#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_ERR.string.text
-msgid "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
-msgstr "%PRODUCTNAME %NEXTVERSION ડાઉનલોડ કરવાનું આગળ અટકાવાયેલ છે"
-
-#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.string.text
-msgid ""
-"The download location is: %DOWNLOAD_PATH.\n"
-"\n"
-"Under Tools – Options... - %PRODUCTNAME – Online Update you can change the "
-"download location."
-msgstr ""
-"ડાઉનલોડ સ્થાન છે: %DOWNLOAD_PATH.\n"
-"\n"
-"સાધનો – વિકલ્પો... - %PRODUCTNAME – ઓનલાઈન સુધારો હેઠળ તમે ડાઉનલોડ સ્થાન "
-"બદલી શકો છો."
-
-#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.string.text
-msgid "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
-msgstr "%FILE_NAME એ %DOWNLOAD_PATH માં ડાઉનલોડ થઈ ગયેલ છે."
-
-#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.string.text
-msgid ""
-"The automatic download of the update is currently not available.\n"
-"\n"
-"Click 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the "
-"web site."
-msgstr ""
-"સુધારાનો આપોઆપ ડાઉનલોડ વર્તમાનમાં ઉપલબ્ધ નથી.\n"
-"\n"
-"%PRODUCTNAME %NEXTVERSION ને વેબ સાઈટમાંથી જાતે ડાઉનલોડ કરવા માટે "
-"'ડાઉનલોડ...' પર ક્લિક કરો."
-
-#: updatehdl.src#RID_UPDATE_STR_DOWNLOADING.string.text
-msgid "Downloading %PRODUCTNAME %NEXTVERSION..."
-msgstr "%PRODUCTNAME %NEXTVERSION ડાઉનલોડ કરી રહ્યા છીએ..."
-
-#: updatehdl.src#RID_UPDATE_STR_READY_INSTALL.string.text
-msgid ""
-"Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
-msgstr "%PRODUCTNAME %NEXTVERSION નું ડાઉનલોડ સમાપ્ત થયું. સ્થાપન માટે તૈયાર."
-
-#: updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.string.text
-msgid "%PRODUCTNAME %PRODUCTVERSION"
-msgstr "%PRODUCTNAME %PRODUCTVERSION"
-
-#: updatehdl.src#RID_UPDATE_STR_CANCEL_DOWNLOAD.string.text
-msgid "Do you really want to cancel the download?"
-msgstr "શું તમે ખરેખર ડાઉનલોડ રદ કરવા માંગો છો?"
-
-#: updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.string.text
-msgid ""
-"To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do "
-"you want to install the update now?"
-msgstr ""
-"સુધારો સ્થાપિત કરવા માટે, %PRODUCTNAME %PRODUCTVERSION ને બંધ કરવાની જરૂર "
-"છે. શું તમે સુધારો હમણાં સ્થાપિત કરવા માંગો છો?"
-
-#: updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.string.text
-msgid "Install ~now"
-msgstr "હમણાં સ્થાપિત કરો (~n)"
-
-#: updatehdl.src#RID_UPDATE_STR_INSTALL_LATER.string.text
-msgid "Install ~later"
-msgstr "પછી સ્થાપિત કરો (~l)"
-
-#: updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.string.text
-msgid ""
-"Could not run the installer application, please run %FILE_NAME in %"
-"DOWNLOAD_PATH manually."
-msgstr ""
-"સ્થાપક કાર્યક્રમ ચલાવી શક્યા નહિં, મહેરબાની કરીને %FILE_NAME ને %"
-"DOWNLOAD_PATH માં જાતે ચલાવો."
-
-#: updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.string.text
-msgid ""
-"A file with that name already exists! Do you want to overwrite the existing "
-"file?"
-msgstr ""
-"આ નામવાળી ફાઈલ પહેલાથી જ હાજર છે! શું તમે હાલની ફાઈલ પર ફરીથી લખવા માંગો છો?"
-
-#: updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.string.text
-msgid ""
-"A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you "
-"want to continue with the download or delete and reload the file?"
-msgstr ""
-"નામ '%FILENAME' સાથે ફાઇલ '%DOWNLOAD_PATH' માં પહેલેથી અસ્તિત્વ ધરાવે છે! "
-"શું તમે ાઉનલોડ સાથે ચાલુ રાખવા માંગો છો અથ વા ફાઇલને કાઢી નાંખવા અને "
-"પુન:પ્રાપ્ત કરવા માંગો છો?"
-
-#: updatehdl.src#RID_UPDATE_STR_RELOAD_RELOAD.string.text
-msgid "Reload File"
-msgstr "ફાઇલને પુન:લાવો"
-
-#: updatehdl.src#RID_UPDATE_STR_RELOAD_CONTINUE.string.text
-msgid "Continue"
-msgstr "ચાલુ રાખો"
-
-#: updatehdl.src#RID_UPDATE_STR_PERCENT.string.text
-msgid "%PERCENT%"
-msgstr "%PERCENT%"
-
-#: updatehdl.src#RID_UPDATE_FT_STATUS.string.text
-msgid "Status"
-msgstr "પરિસ્થિતિ"
-
-#: updatehdl.src#RID_UPDATE_FT_DESCRIPTION.string.text
-msgid "Description"
-msgstr "વર્ણન"
-
-#: updatehdl.src#RID_UPDATE_BTN_CLOSE.string.text
-msgid "Close"
-msgstr "બંધ કરો"
-
-#: updatehdl.src#RID_UPDATE_BTN_DOWNLOAD.string.text
-msgid "~Download"
-msgstr "ડાઉનલોડ (~D)"
-
-#: updatehdl.src#RID_UPDATE_BTN_INSTALL.string.text
-msgid "~Install"
-msgstr "સ્થાપન (~I)"
-
-#: updatehdl.src#RID_UPDATE_BTN_PAUSE.string.text
-msgid "~Pause"
-msgstr "અટકાવો (~P)"
-
-#: updatehdl.src#RID_UPDATE_BTN_RESUME.string.text
-msgid "~Resume"
-msgstr "છેલ્લેથી ચલાવો (~R)"
-
-#: updatehdl.src#RID_UPDATE_BTN_CANCEL.string.text
-msgid "Cancel"
-msgstr "રદ કરો"
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.string.text
-msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.string.text"
-msgid "%PRODUCTNAME update available"
-msgstr "%PRODUCTNAME સુધારો ઉપલબ્ધ"
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_AVAIL.string.text
-msgid "Click here to start the download."
-msgstr "ડાઉનલોડ શરૂ કરવા માટે અંહિ ક્લિક કરો."
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.string.text
-msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.string.text"
-msgid "%PRODUCTNAME update available"
-msgstr "%PRODUCTNAME સુધારો ઉપલબ્ધ"
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.string.text
-msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.string.text"
-msgid "Click here for more information."
-msgstr "વધુ જાણકારી માટે અંહિ ક્લિક કરો."
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.string.text
-msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.string.text"
-msgid "%PRODUCTNAME update available"
-msgstr "%PRODUCTNAME સુધારો ઉપલબ્ધ"
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_AUTO_START.string.text
-msgid "Download of update begins."
-msgstr "સુધારાનું ડાઉનલોડ શરું થાય."
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOADING.string.text
-msgid "Download of update in progress"
-msgstr "સુધારાનું ડાઉનલોડ પ્રગતિમાં છે"
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_PAUSED.string.text
-msgid "Download of update paused"
-msgstr "સુધારાનું ડાઉનલોડ અટકાવાયેલ છે"
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_PAUSED.string.text
-msgid "Click here to resume."
-msgstr "ફરી ચાલુ કરવા માટે અંહિ ક્લિક કરો."
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_T_ERROR_DOWNLOADING.string.text
-msgid "Download of update stalled"
-msgstr "સુધારાનું ડાઉનલોડ અટકાવાયેલ"
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.string.text
-msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.string.text"
-msgid "Click here for more information."
-msgstr "વધુ જાણકારી માટે અંહિ ક્લિક કરો."
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_AVAIL.string.text
-msgid "Download of update completed"
-msgstr "સુધારાનું ડાઉનલોડ સમાપ્ત થયું"
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_AVAIL.string.text
-msgid "Click here to start the installation."
-msgstr "સ્થાપન શરૂ કરવા માટે અંહિ ક્લિક કરો."
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_T_EXT_UPD_AVAIL.string.text
-msgid "Updates for extensions available"
-msgstr "ઉપલ્બધ એક્સટેન્સનો માટે સુધારો કરો"
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.string.text
-msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.string.text"
-msgid "Click here for more information."
-msgstr "વધુ જાણકારી માટે અંહિ ક્લિક કરો."
-
-#: Addons.xcu#.Addons.AddonUI.OfficeHelp.UpdateCheckJob.Title.value.text
-msgid "Check for ~Updates..."
-msgstr "સુધારાઓ માટે ચકાસો (~U)..."
-
-#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.FL_DATA.fixedline.text
-msgctxt "commonpagesdbp.src#RID_PAGE_TABLESELECTION.FL_DATA.fixedline.text"
-msgid "Data"
-msgstr "માહિતી"
-
-#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.fixedtext.text
-msgid ""
-"Currently, the form the control belongs to is not (or not completely) bound "
-"to a data source.\n"
-"\n"
-"Please choose a data source and a table.\n"
-"\n"
-"\n"
-"Please note that the settings made on this page will take effect immediately "
-"upon leaving the page."
-msgstr ""
-"વર્તમાનમાં, ફોર્મ કે જેને નિયંત્રણ અનુસરે છે તે માહિતી સ્રોતને (અથવા "
-"સંપૂર્ણપણે) બંધાયેલ નથી.\n"
-"\n"
-"મહેરબાની કરીને માહિતી સ્રોત અને કોષ્ટક પસંદ કરો.\n"
-"\n"
-"\n"
-"મહેરબાની કરીને નોંધ કરો કે આ પાનાં પર કરવામાં આવેલ સુયોજનો પાનું છોડવા પર "
-"તુરંત જ અસર બતાવશે."
-
-#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.fixedtext.text
-msgid "~Data source:"
-msgstr "માહિતી(~D):"
-
-#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.PB_FORMDATASOURCE.pushbutton.text
-msgid "~..."
-msgstr "~..."
-
-#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_TABLE.fixedtext.text
-msgid "~Table / Query:"
-msgstr "કોષ્ટક / પ્રશ્ન (~T):"
-
-#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.tabpage.text
-msgctxt "commonpagesdbp.src#RID_PAGE_TABLESELECTION.tabpage.text"
-msgid "Data"
-msgstr "માહિતી"
-
-#: commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.FT_DATABASEFIELD_QUEST.fixedtext.text
-msgid "Do you want to save the value in a database field?"
-msgstr "શું તમે કિંમત ડેટાબેઝની ક્ષેત્રમાં સંગ્રહ કરવા ઈચ્છો છો?"
-
-#: commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_YES.radiobutton.text
-msgid "~Yes, I want to save it in the following database field:"
-msgstr "હા, મારે નીચેના માહિતી ક્ષેત્રો સંગ્રહ કરવા છે(~Y):"
-
-#: commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_NO.radiobutton.text
-msgid "~No, I only want to save the value in the form."
-msgstr "ના, મારે ફ્કત ફોર્મની કિંમતો સંગ્રહ કરવી છે.(~N)"
-
-#: commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.tabpage.text
-msgid "Database Field"
-msgstr "ડેટાબેઝ ક્ષેત્ર"
-
-#: commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FL_FORMSETINGS.fixedline.text
-msgid "Form"
-msgstr "ફોર્મ"
-
-#: commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMDATASOURCELABEL.fixedtext.text
-msgid "Data source"
-msgstr "માહિતી સ્રોત"
-
-#: commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMCONTENTTYPELABEL.fixedtext.text
-msgid "Content type"
-msgstr "સમાવિષ્ટ પ્રકાર"
-
-#: commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMTABLELABEL.fixedtext.text
-msgid "Content"
-msgstr "વિગત"
-
-#: commonpagesdbp.src#RID_STR_TYPE_TABLE.string.text
-msgid "Table"
-msgstr "કોષ્ટક"
-
-#: commonpagesdbp.src#RID_STR_TYPE_QUERY.string.text
-msgid "Query"
-msgstr "પ્રશ્ર્ન"
-
-#: commonpagesdbp.src#RID_STR_TYPE_COMMAND.string.text
-msgid "SQL command"
-msgstr "SQL આદેશ"
-
-#: dbpilots.src#RID_DLG_GROUPBOXWIZARD.modaldialog.text
-msgid "Group Element Wizard"
-msgstr "જૂથ ઘટક વિઝાર્ડ"
-
-#: dbpilots.src#RID_DLG_GRIDWIZARD.modaldialog.text
-msgid "Table Element Wizard"
-msgstr "કોષ્ટક ઘટક વિઝાર્ડ"
-
-#: dbpilots.src#RID_STR_LISTWIZARD_TITLE.string.text
-msgid "List Box Wizard"
-msgstr "યાદી બોક્સ વિઝાર્ડ"
-
-#: dbpilots.src#RID_STR_COMBOWIZARD_TITLE.string.text
-msgid "Combo Box Wizard"
-msgstr "કમ્બો બોક્સ વિઝાર્ડ"
-
-#: dbpilots.src#RID_STR_COULDNOTOPENTABLE.string.text
-msgid "The table connection to the data source could not be established."
-msgstr "માહિતીનાં સ્રોત સાથેનું કોષ્ટકનું જોડાણ પ્રસ્થાપિત થઈ શક્યું નહિ."
-
-#: gridpages.src#RID_PAGE_GW_FIELDSELECTION.FL_FRAME.fixedline.text
-msgid "Table element"
-msgstr "કોષ્ટક ભાગ"
-
-#: gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.fixedtext.text
-msgctxt "gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.fixedtext.text"
-msgid "Existing fields"
-msgstr "હાજર ક્ષેત્રો"
-
-#: gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_SELECTED_FIELDS.fixedtext.text
-msgid "Selected fields"
-msgstr "પસંદિત ક્ષેત્રો"
-
-#: gridpages.src#RID_PAGE_GW_FIELDSELECTION.tabpage.text
-msgctxt "gridpages.src#RID_PAGE_GW_FIELDSELECTION.tabpage.text"
-msgid "Field Selection"
-msgstr "ક્ષેત્ર પસંદગી"
-
-#: gridpages.src#RID_STR_DATEPOSTFIX.string.text
-msgid " (Date)"
-msgstr " (તારીખ)"
-
-#: gridpages.src#RID_STR_TIMEPOSTFIX.string.text
-msgid " (Time)"
-msgstr " (સમય)"
-
-#: groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOLABELS.fixedtext.text
-msgid "Which ~names do you want to give the option fields?"
-msgstr "વૈકલ્પિક ક્ષેત્રોને કયા નામો આપવા ઈચ્છો છો(~n)?"
-
-#: groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.fixedtext.text
-msgctxt "groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.fixedtext.text"
-msgid "~Option fields"
-msgstr "વૈકલ્પિક ક્ષેત્રો (~O)"
-
-#: groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.tabpage.text
-msgctxt "groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.tabpage.text"
-msgid "Data"
-msgstr "માહિતી"
-
-#: groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.FT_DEFAULTSELECTION.fixedtext.text
-msgid "Should one option field be selected as a default?"
-msgstr "વૈકલ્પિક ક્ષેત્ર મૂળભૂત તરીકે પસંદિત થવી જોઈએ?"
-
-#: groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_YES.radiobutton.text
-msgid "~Yes, the following:"
-msgstr "હા, નીચેનું(~Y):"
-
-#: groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_NO.radiobutton.text
-msgid "No, one particular field is not going to be selected."
-msgstr "ના, ખાસ ક્ષેત્ર પસંદ કરવાનું નથી."
-
-#: groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.tabpage.text
-msgid "Default Field Selection"
-msgstr "મૂળભૂત ક્ષેત્રની પસંદગી"
-
-#: groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES_EXPL.fixedtext.text
-msgid "When you select an option, the option group is given a specific value."
-msgstr "જ્યારે તમે વિકલ્પ પસંદ કરો ત્યારે વિકલ્પ સમૂહ ખાસ કિંમત આપે છે."
-
-#: groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES.fixedtext.text
-msgid "Which ~value do you want to assign to each option?"
-msgstr "તમે પ્રત્યેક વિકલ્પને કઈ કિંમત ફાળવવા ઈચ્છો છો(~v)?"
-
-#: groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_RADIOBUTTONS.fixedtext.text
-msgctxt "groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_RADIOBUTTONS.fixedtext.text"
-msgid "~Option fields"
-msgstr "વૈકલ્પિક ક્ષેત્રો (~O)"
-
-#: groupboxpages.src#RID_PAGE_OPTIONVALUES.tabpage.text
-msgid "Field Values"
-msgstr "ક્ષેત્ર કિંમતો"
-
-#: groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_NAMEIT.fixedtext.text
-msgid "Which ~caption is to be given to your option group?"
-msgstr "તમારા વિકલ્પનાં સમૂહને કયુ શીર્ષક આપવુ છે(~c)?"
-
-#: groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_THATSALL.fixedtext.text
-msgid "These were all details needed to create the option group."
-msgstr "વિકલ્પનો સમૂહ બનાવવા માટે આ બધી વિગતો જરૂરી હતી."
-
-#: groupboxpages.src#RID_PAGE_OPTIONS_FINAL.tabpage.text
-msgid "Create Option Group"
-msgstr "વિકલ્પનો સમૂહ બનાવો"
-
-#: groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.string.text
-msgid ""
-"You can either save the value of the option group in a database field or use "
-"it for a later action."
-msgstr ""
-"તમે વિકલ્પનાં સમૂહની કિંમત ડેટાબેઝની ક્ષેત્રમાં સંગ્રહ કરી શકો અથવા તેને "
-"પછીના કામમાં વાપરી શકો."
-
-#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FL_FRAME.fixedline.text
-msgid "Control"
-msgstr "નિયંત્રણ"
-
-#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.fixedtext.text
-msgid ""
-"On the right side, you see all the tables from the data source of the form.\n"
-"\n"
-"\n"
-"Choose the table from which the data should be used as basis for the list "
-"content:"
-msgstr ""
-"જમણી બાજુએ, તમે ફોર્મના બધા માહિતી સ્રોતોમાંથી બધા કોષ્ટકો જોઈ શકો.\n"
-"\n"
-"\n"
-"કોષ્ટક પસંદ કરો કે જેમાંથી માહિતી યાદી સમાવિષ્ટના આધારે વપરાતી જોઈ શકાય:"
-
-#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.tabpage.text
-msgid "Table Selection"
-msgstr "કોષ્ટક પસંદગી"
-
-#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_TABLEFIELDS.fixedtext.text
-msgctxt "listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_TABLEFIELDS.fixedtext.text"
-msgid "Existing fields"
-msgstr "હાલના ક્ષેત્રો"
-
-#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_DISPLAYEDFIELD.fixedtext.text
-msgid "Display field"
-msgstr "ડિસ્પ્લે ક્ષેત્ર"
-
-#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_COMBOBOX.string.text
-msgid "The contents of the field selected will be shown in the combo box list."
-msgstr "ક્ષેત્રનાં પસંદિત થયેલ ભાગો કોમ્બો બોક્સમાં દર્શાવવા જોઈએ."
-
-#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.string.text
-msgid ""
-"The contents of the selected field will be shown in the list box if the "
-"linked fields are identical."
-msgstr ""
-"જો જોડાયેલી ક્ષેત્રો જાણીતી હોય તો પસંદિત થયેલ ક્ષેત્રનાં ભાગો યાદીની "
-"પેટીમાં દર્શાવવા જોઈએ."
-
-#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.tabpage.text
-msgctxt "listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.tabpage.text"
-msgid "Field Selection"
-msgstr "ક્ષેત્ર પસંદગી"
-
-#: listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.fixedtext.text
-msgid ""
-"This is where you select fields with matching contents so that the value "
-"from the display field will be shown."
-msgstr ""
-"આ એ છે જ્યાં તમે બંધબેસતા ભાગો સાથે ક્ષેત્રો પસંદ કરી શકો માટે ડિસ્પ્લે થયેલ "
-"ક્ષેત્રમાંથી કિંમત દર્શાવી શકાય."
-
-#: listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.fixedtext.text
-msgid "Field from the ~Value Table"
-msgstr "કિંમતનાં કોષ્ટકમાંનાં ક્ષેત્ર(~V)"
-
-#: listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_TABLEFIELD.fixedtext.text
-msgid "Field from the ~List Table"
-msgstr "યાદીનાં કોષ્ટકમાંનાં ક્ષેત્ર(~L)"
-
-#: listcombopages.src#RID_PAGE_LCW_FIELDLINK.tabpage.text
-msgid "Field Link"
-msgstr "ક્ષેત્રની કડી"
-
-#: listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.string.text
-msgid ""
-"You can either save the value of the combo box in a database field or use it "
-"for display purposes."
-msgstr ""
-"તમે કોમ્બો બોક્સની કિંમત ડેટાબેઝનાં ક્ષેત્રમાં સંગ્રહ કરી શકો અથવા ડિસ્પ્લે "
-"કરવાના કારણથી વાપરી શકો."
-
-#: fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.pageitem.text
-msgctxt "fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.pageitem.text"
-msgid "Font"
-msgstr "ફોન્ટ"
-
-#: fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS_EXT.pageitem.text
-msgid "Font Effects"
-msgstr "ફોન્ટની અસરો"
-
-#: fontdialog.src#RID_TABDLG_FONTDIALOG.tabdialog.text
-msgid "Character"
-msgstr "અક્ષર"
-
-#: formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.fixedtext.text
-msgid ""
-"Sub forms can be used to display detailed data about the current record of "
-"the master form. To do this, you can specify which columns in the sub form "
-"match which columns in the master form."
-msgstr ""
-"ઉપફોર્મ મુખ્ય ફોર્મના વર્તમાન રેકોર્ડ વિશે વિગતવાર માહિતી પ્રદર્શિત કરવા "
-"માટે વાપરી શકાય છે. આમ કરવા માટે, તમે સ્પષ્ટ કરી શકો છો કે ઉપફોર્મમાંના કયા "
-"સ્તંભો મુખ્ય ફોર્મમાંના કયા સ્તંભો સાથે બંધબેસે."
-
-#: formlinkdialog.src#RID_DLG_FORMLINKS.modaldialog.text
-msgid "Link fields"
-msgstr "કડી ક્ષેત્રો"
-
-#: formlinkdialog.src#PB_SUGGEST.pushbutton.text
-msgid "Suggest"
-msgstr "સૂચવો"
-
-#: formlinkdialog.src#STR_DETAIL_FORM.string.text
-msgid "Sub Form"
-msgstr "ઉપ ફોર્મ"
-
-#: formlinkdialog.src#STR_MASTER_FORM.string.text
-msgid "Master Form"
-msgstr "મુખ્ય ફોર્મ"
-
-#: formlinkdialog.src#STR_ERROR_RETRIEVING_COLUMNS.string.text
-msgid "The columns of '#' could not be retrieved."
-msgstr "'#' નાં સ્તંભો ને પાછા મેળવી શકાયા નહિં."
-
-#: formres.src#RID_STR_EDITMASK.string.text
-msgid "Edit mask"
-msgstr "આવરણમાં ફેરફાર"
-
-#: formres.src#RID_STR_LITERALMASK.string.text
-msgid "Literal mask"
-msgstr "અક્ષરેઅક્ષરનું આવરણ"
-
-#: formres.src#RID_STR_READONLY.string.text
-msgctxt "formres.src#RID_STR_READONLY.string.text"
-msgid "Read-only"
-msgstr "માત્ર-વાંચી શકાય"
-
-#: formres.src#RID_STR_ENABLED.string.text
-msgid "Enabled"
-msgstr "સક્રિય"
-
-#: formres.src#RID_STR_ENABLE_VISIBLE.string.text
-msgid "Visible"
-msgstr "દૃશ્ય"
-
-#: formres.src#RID_STR_AUTOCOMPLETE.string.text
-msgid "AutoFill"
-msgstr "આપમેળેભરો"
-
-#: formres.src#RID_STR_LINECOUNT.string.text
-msgid "Line count"
-msgstr "લીટી ક્રમ"
-
-#: formres.src#RID_STR_MAXTEXTLEN.string.text
-msgid "Max. text length"
-msgstr "મહત્તમ લખાણ લંબાઈ"
-
-#: formres.src#RID_STR_SPIN.string.text
-msgid "Spin Button"
-msgstr "ફેરવવા માટેનું બટન"
-
-#: formres.src#RID_STR_STRICTFORMAT.string.text
-msgid "Strict format"
-msgstr "કડક બંધારણ"
-
-#: formres.src#RID_STR_SHOWTHOUSANDSEP.string.text
-msgid "Thousands separator"
-msgstr "હજારને છૂટુ પાડનાર"
-
-#: formres.src#RID_STR_PRINTABLE.string.text
-msgid "Printable"
-msgstr "છાપી શકાય તેવુ"
-
-#: formres.src#RID_STR_TARGET_URL.string.text
-msgctxt "formres.src#RID_STR_TARGET_URL.string.text"
-msgid "URL"
-msgstr "URL"
-
-#: formres.src#RID_STR_TARGET_FRAME.string.text
-msgctxt "formres.src#RID_STR_TARGET_FRAME.string.text"
-msgid "Frame"
-msgstr "ચોકઠું"
-
-#: formres.src#RID_STR_HELPTEXT.string.text
-msgid "Help text"
-msgstr "મદદ લખાણ"
-
-#: formres.src#RID_STR_HELPURL.string.text
-msgid "Help URL"
-msgstr "મદદ માટે URL"
-
-#: formres.src#RID_STR_TAG.string.text
-msgid "Additional information"
-msgstr "વધારાની માહિતી"
-
-#: formres.src#RID_STR_ECHO_CHAR.string.text
-msgid "Password character"
-msgstr "પાસવર્ડ અક્ષર"
-
-#: formres.src#RID_STR_TRISTATE.string.text
-msgid "Tristate"
-msgstr "ત્રણ તબક્કા"
-
-#: formres.src#RID_STR_EMPTY_IS_NULL.string.text
-msgid "Empty string is NULL"
-msgstr "ખાલી શબ્દમાળા NULL છે."
-
-#: formres.src#RID_STR_DECIMAL_ACCURACY.string.text
-msgid "Decimal accuracy"
-msgstr "દશાંશની ચોક્સાઈ"
-
-#: formres.src#RID_STR_IMAGE_URL.string.text
-msgid "Graphics"
-msgstr "ગ્રાફિક્સ"
-
-#: formres.src#RID_STR_DEFAULT_SELECT_SEQ.string.text
-msgid "Default selection"
-msgstr "મૂળભૂત પસંદગી"
-
-#: formres.src#RID_STR_DEFAULT_BUTTON.string.text
-msgid "Default button"
-msgstr "મૂળભૂત બટન"
-
-#: formres.src#RID_STR_LABELCONTROL.string.text
-msgctxt "formres.src#RID_STR_LABELCONTROL.string.text"
-msgid "Label Field"
-msgstr "લેબલ ક્ષેત્ર"
-
-#: formres.src#RID_STR_LABEL.string.text
-msgid "Label"
-msgstr "લેબલ"
-
-#: formres.src#RID_STR_ALIGN.string.text
-msgid "Alignment"
-msgstr "ગોઠવણી"
-
-#: formres.src#RID_STR_VERTICAL_ALIGN.string.text
-msgid "Vert. Alignment"
-msgstr "ઊભી ગોઠવણી"
-
-#: formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.1.string.text
-msgid "Top"
-msgstr "ટોચ"
-
-#: formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.2.string.text
-msgid "Middle"
-msgstr "મધ્ય"
-
-#: formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.3.string.text
-msgid "Bottom"
-msgstr "તળિયું"
-
-#: formres.src#RID_STR_IMAGEPOSITION.string.text
-msgid "Graphics alignment"
-msgstr "ગ્રાફિક્સ ગોઠવણી"
-
-#: formres.src#RID_STR_FONT.string.text
-msgctxt "formres.src#RID_STR_FONT.string.text"
-msgid "Font"
-msgstr "ફોન્ટ"
-
-#: formres.src#RID_STR_BACKGROUNDCOLOR.string.text
-msgid "Background color"
-msgstr "પાશ્વ ભાગનો રંગ"
-
-#: formres.src#RID_STR_BORDER.string.text
-msgid "Border"
-msgstr "હદ"
-
-#: formres.src#RID_STR_ICONSIZE.string.text
-msgid "Icon size"
-msgstr "ચિહ્ન માપ"
-
-#: formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.1.string.text
-msgid "Small"
-msgstr "નાનું"
-
-#: formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.2.string.text
-msgid "Large"
-msgstr "મોટું"
-
-#: formres.src#RID_STR_SHOW_POSITION.string.text
-msgid "Positioning"
-msgstr "સ્થાનિકરણ"
-
-#: formres.src#RID_STR_SHOW_NAVIGATION.string.text
-msgid "Navigation"
-msgstr "શોધખોળ"
-
-#: formres.src#RID_STR_SHOW_RECORDACTIONS.string.text
-msgid "Acting on a record"
-msgstr "રેકોર્ડ પરની ક્રિયા"
-
-#: formres.src#RID_STR_SHOW_FILTERSORT.string.text
-msgid "Filtering / Sorting"
-msgstr "ગાળણ / ગોઠવણી"
-
-#: formres.src#RID_STR_HSCROLL.string.text
-msgid "Horizontal scroll bar"
-msgstr "આડી ખસેડવાની પટ્ટી"
-
-#: formres.src#RID_STR_VSCROLL.string.text
-msgid "Vertical scroll bar"
-msgstr "ઉભી ખસેડવાની પટ્ટી"
-
-#: formres.src#RID_STR_WORDBREAK.string.text
-msgid "Word break"
-msgstr "શબ્દ અટકણ"
-
-#: formres.src#RID_STR_MULTILINE.string.text
-msgid "Multiline input"
-msgstr "વધારે લીટીવાળો ઈનપુટ"
-
-#: formres.src#RID_STR_MULTISELECTION.string.text
-msgid "Multiselection"
-msgstr "ઘણી પસંદગીઓ"
-
-#: formres.src#RID_STR_NAME.string.text
-msgid "Name"
-msgstr "નામ"
-
-#: formres.src#RID_STR_TABINDEX.string.text
-msgid "Tab order"
-msgstr "ટેબ ક્રમ"
-
-#: formres.src#RID_STR_WHEEL_BEHAVIOR.string.text
-msgid "Mouse wheel scroll"
-msgstr "માઉસ વ્હિલ સ્ક્રોલ"
-
-#: formres.src#RID_STR_FILTER.string.text
-msgid "Filter"
-msgstr "ગળણી"
-
-#: formres.src#RID_STR_SORT_CRITERIA.string.text
-msgid "Sort"
-msgstr "ક્રમમાં ગોઠવો"
-
-#: formres.src#RID_STR_RECORDMARKER.string.text
-msgid "Record marker"
-msgstr "રેકોર્ડ દર્શક"
-
-#: formres.src#RID_STR_FILTERPROPOSAL.string.text
-msgid "Filter proposal"
-msgstr "પ્રસ્તાવના ગાળક"
-
-#: formres.src#RID_STR_NAVIGATION.string.text
-msgid "Navigation bar"
-msgstr "માર્ગદર્શક પટ્ટી"
-
-#: formres.src#RID_STR_CYCLE.string.text
-msgid "Cycle"
-msgstr "ચક્ર"
-
-#: formres.src#RID_STR_TABSTOP.string.text
-msgid "Tabstop"
-msgstr "ટૅબસ્ટોપ"
-
-#: formres.src#RID_STR_CONTROLSOURCE.string.text
-msgid "Data field"
-msgstr "માહિતી ક્ષેત્ર"
-
-#: formres.src#RID_STR_DROPDOWN.string.text
-msgid "Dropdown"
-msgstr "નીચે લાવો"
-
-#: formres.src#RID_STR_BOUNDCOLUMN.string.text
-msgid "Bound field"
-msgstr "સીમા ક્ષેત્ર"
-
-#: formres.src#RID_STR_LISTSOURCE.string.text
-msgid "List content"
-msgstr "યાદી સમાવિષ્ટ ભાગો"
-
-#: formres.src#RID_STR_LISTSOURCETYPE.string.text
-msgid "Type of list contents"
-msgstr "યાદી સમાવિષ્ટ ભાગોના પ્રકાર"
-
-#: formres.src#RID_STR_CURSORSOURCE.string.text
-msgid "Content"
-msgstr "વિગત"
-
-#: formres.src#RID_STR_CURSORSOURCETYPE.string.text
-msgid "Content type"
-msgstr "સમાવિષ્ટ પ્રકાર"
-
-#: formres.src#RID_STR_ALLOW_ADDITIONS.string.text
-msgid "Allow additions"
-msgstr "વધારો માન્ય"
-
-#: formres.src#RID_STR_ALLOW_DELETIONS.string.text
-msgid "Allow deletions"
-msgstr "કાઢી નાંખવાને માન્ય કરો"
-
-#: formres.src#RID_STR_ALLOW_EDITS.string.text
-msgid "Allow modifications"
-msgstr "બદલવાનું માન્ય"
-
-#: formres.src#RID_STR_DATAENTRY.string.text
-msgid "Add data only"
-msgstr "ફ્કત માહિતી ઉમેરો"
-
-#: formres.src#RID_STR_DATASOURCE.string.text
-msgid "Data source"
-msgstr "માહિતી સ્રોત"
-
-#: formres.src#RID_STR_MASTERFIELDS.string.text
-msgid "Link master fields"
-msgstr "મુખ્ય ક્ષેત્રો ઉમેરો"
-
-#: formres.src#RID_STR_SLAVEFIELDS.string.text
-msgid "Link slave fields"
-msgstr "ગૌણ ક્ષેત્રો ઉમેરો"
-
-#: formres.src#RID_STR_VALUEMIN.string.text
-msgid "Value min."
-msgstr "ન્યુનત્તમ કિંમત"
-
-#: formres.src#RID_STR_VALUEMAX.string.text
-msgid "Value max."
-msgstr "મહત્તમ કિંમત"
-
-#: formres.src#RID_STR_VALUESTEP.string.text
-msgid "Incr./decrement value"
-msgstr "વધારાની/ઘટાડવાની કિંમત"
-
-#: formres.src#RID_STR_CURRENCYSYMBOL.string.text
-msgid "Currency symbol"
-msgstr "ચલણ સંજ્ઞા"
-
-#: formres.src#RID_STR_DATEMIN.string.text
-msgid "Date min."
-msgstr "ન્યુનત્તમ તારીખ"
-
-#: formres.src#RID_STR_DATEMAX.string.text
-msgid "Date max."
-msgstr "મહત્તમ તારીખ"
-
-#: formres.src#RID_STR_DATEFORMAT.string.text
-msgid "Date format"
-msgstr "તારીખ બંધારણ"
-
-#: formres.src#RID_STR_SELECTEDITEMS.string.text
-msgid "Selection"
-msgstr "પસંદગી"
-
-#: formres.src#RID_STR_TIMEMIN.string.text
-msgid "Time min."
-msgstr "ન્યુનત્તમ સમય"
-
-#: formres.src#RID_STR_TIMEMAX.string.text
-msgid "Time max."
-msgstr "મહત્તમ સમય"
-
-#: formres.src#RID_STR_TIMEFORMAT.string.text
-msgid "Time format"
-msgstr "સમય બંધારણ"
-
-#: formres.src#RID_STR_CURRSYM_POSITION.string.text
-msgid "Prefix symbol"
-msgstr "પૂર્વગ સંજ્ઞા"
-
-#: formres.src#RID_STR_VALUE.string.text
-msgid "Value"
-msgstr "કિંમત"
-
-#: formres.src#RID_STR_FORMATKEY.string.text
-msgid "Formatting"
-msgstr "ફોર્મેટીંગ"
-
-#: formres.src#RID_STR_CLASSID.string.text
-msgid "Class ID"
-msgstr "વર્ગ ઓળખ"
-
-#: formres.src#RID_STR_HEIGHT.string.text
-msgid "Height"
-msgstr "ઊંચાઈ"
-
-#: formres.src#RID_STR_WIDTH.string.text
-msgid "Width"
-msgstr "પહોળાઈ"
-
-#: formres.src#RID_STR_LISTINDEX.string.text
-msgid "List index"
-msgstr "યાદી અનુક્રમણિકા"
-
-#: formres.src#RID_STR_ROWHEIGHT.string.text
-msgid "Row height"
-msgstr "હરોળ ઊંચાઈ"
-
-#: formres.src#RID_STR_FILLCOLOR.string.text
-msgid "Fill color"
-msgstr "રંગ ભરો"
-
-#: formres.src#RID_STR_LINECOLOR.string.text
-msgid "Line color"
-msgstr "લીટી રંગ"
-
-#: formres.src#RID_STR_REFVALUE.string.text
-msgid "Reference value (on)"
-msgstr "સંદર્ભ કિંમત (ચાલુ)"
-
-#: formres.src#RID_STR_UNCHECKEDREFVALUE.string.text
-msgid "Reference value (off)"
-msgstr "સંદર્ભ કિંમત (બંધ)"
-
-#: formres.src#RID_STR_STRINGITEMLIST.string.text
-msgid "List entries"
-msgstr "યાદી દાખલા"
-
-#: formres.src#RID_STR_BUTTONTYPE.string.text
-msgid "Action"
-msgstr "ક્રિયા"
-
-#: formres.src#RID_STR_SUBMIT_ACTION.string.text
-msgctxt "formres.src#RID_STR_SUBMIT_ACTION.string.text"
-msgid "URL"
-msgstr "URL"
-
-#: formres.src#RID_STR_SUBMIT_METHOD.string.text
-msgid "Type of submission"
-msgstr "સોંપવા માટેનો પ્રકાર"
-
-#: formres.src#RID_STR_DEFAULT_STATE.string.text
-msgid "Default status"
-msgstr "મૂળભૂત કિંમત"
-
-#: formres.src#RID_STR_SUBMIT_ENCODING.string.text
-msgid "Submission encoding"
-msgstr "સોંપવા માટે સંગ્રહ પધ્ધતિ"
-
-#: formres.src#RID_STR_DEFAULTVALUE.string.text
-msgid "Default value"
-msgstr "મૂળભૂત કિંમત"
-
-#: formres.src#RID_STR_DEFAULTTEXT.string.text
-msgid "Default text"
-msgstr "મૂળભુત લખાણ"
-
-#: formres.src#RID_STR_DEFAULTDATE.string.text
-msgid "Default date"
-msgstr "મૂળભુત તારીખ"
-
-#: formres.src#RID_STR_DEFAULTTIME.string.text
-msgid "Default time"
-msgstr "મૂળભુત સમય"
-
-#: formres.src#RID_STR_SUBMIT_TARGET.string.text
-msgctxt "formres.src#RID_STR_SUBMIT_TARGET.string.text"
-msgid "Frame"
-msgstr "ચોકઠું"
-
-#: formres.src#RID_RSC_ENUM_BORDER_TYPE.1.string.text
-msgid "Without frame"
-msgstr "ચોકઠાં વિના"
-
-#: formres.src#RID_RSC_ENUM_BORDER_TYPE.2.string.text
-msgid "3D look"
-msgstr "3D દેખાવ"
-
-#: formres.src#RID_RSC_ENUM_BORDER_TYPE.3.string.text
-msgctxt "formres.src#RID_RSC_ENUM_BORDER_TYPE.3.string.text"
-msgid "Flat"
-msgstr "સપાટ"
-
-#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.1.string.text
-msgid "Valuelist"
-msgstr "મૂલ્યયાદી"
-
-#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.string.text
-msgctxt "formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.string.text"
-msgid "Table"
-msgstr "કોષ્ટક"
-
-#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.string.text
-msgctxt "formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.string.text"
-msgid "Query"
-msgstr "પ્રશ્ન"
-
-#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.4.string.text
-msgid "Sql"
-msgstr "Sql"
-
-#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.5.string.text
-msgid "Sql [Native]"
-msgstr "Sql [Native]"
-
-#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.6.string.text
-msgid "Tablefields"
-msgstr "કોષ્ટકક્ષેત્રો"
-
-#: formres.src#RID_RSC_ENUM_ALIGNMENT.1.string.text
-msgid "Left"
-msgstr "ડાબુ"
-
-#: formres.src#RID_RSC_ENUM_ALIGNMENT.2.string.text
-msgid "Center"
-msgstr "કેન્દ્ર"
-
-#: formres.src#RID_RSC_ENUM_ALIGNMENT.3.string.text
-msgid "Right"
-msgstr "જમણું"
-
-#: formres.src#RID_RSC_ENUM_BUTTONTYPE.1.string.text
-msgctxt "formres.src#RID_RSC_ENUM_BUTTONTYPE.1.string.text"
-msgid "None"
-msgstr "કંઈ નહિં"
-
-#: formres.src#RID_RSC_ENUM_BUTTONTYPE.2.string.text
-msgid "Submit form"
-msgstr "ફોર્મ જમા કરો"
-
-#: formres.src#RID_RSC_ENUM_BUTTONTYPE.3.string.text
-msgid "Reset form"
-msgstr "ફોર્મ પુનઃસુયોજિત કરો"
-
-#: formres.src#RID_RSC_ENUM_BUTTONTYPE.4.string.text
-msgid "Open document/web page"
-msgstr "ઓપન દસ્તાવેજ/વેબ પાનું"
-
-#: formres.src#RID_RSC_ENUM_BUTTONTYPE.5.string.text
-msgid "First record"
-msgstr "પ્રથમ રેકોર્ડ"
-
-#: formres.src#RID_RSC_ENUM_BUTTONTYPE.6.string.text
-msgid "Previous record"
-msgstr "પહેલાંનો રેકોર્ડ"
-
-#: formres.src#RID_RSC_ENUM_BUTTONTYPE.7.string.text
-msgid "Next record"
-msgstr "આગળનો રેકોર્ડ"
-
-#: formres.src#RID_RSC_ENUM_BUTTONTYPE.8.string.text
-msgid "Last record"
-msgstr "છેલ્લો રેકોર્ડ"
-
-#: formres.src#RID_RSC_ENUM_BUTTONTYPE.9.string.text
-msgid "Save record"
-msgstr "રેકોર્ડ સંગ્રહો"
-
-#: formres.src#RID_RSC_ENUM_BUTTONTYPE.10.string.text
-msgid "Undo data entry"
-msgstr "માહિતી પ્રવેશ રદ કરો"
-
-#: formres.src#RID_RSC_ENUM_BUTTONTYPE.11.string.text
-msgid "New record"
-msgstr "નવો રેકોર્ડ"
-
-#: formres.src#RID_RSC_ENUM_BUTTONTYPE.12.string.text
-msgid "Delete record"
-msgstr "રેકોર્ડ કાઢી નાંખો"
-
-#: formres.src#RID_RSC_ENUM_BUTTONTYPE.13.string.text
-msgid "Refresh form"
-msgstr "માંથી પુનઃતાજું કરો"
-
-#: formres.src#RID_RSC_ENUM_SUBMIT_METHOD.1.string.text
-msgid "Get"
-msgstr "મેળવો"
-
-#: formres.src#RID_RSC_ENUM_SUBMIT_METHOD.2.string.text
-msgid "Post"
-msgstr "પોસ્ટ"
-
-#: formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.string.text
-msgctxt "formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.string.text"
-msgid "URL"
-msgstr "URL"
-
-#: formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.2.string.text
-msgid "Multipart"
-msgstr "મલ્ટીપાર્ટ"
-
-#: formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.string.text
-msgctxt "formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.string.text"
-msgid "Text"
-msgstr "લખાણ"
-
-#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.1.string.text
-msgid "Standard (short)"
-msgstr "પ્રમાણભૂત (ટૂંકું)"
-
-#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.2.string.text
-msgid "Standard (short YY)"
-msgstr "પ્રમાણભૂત (ટૂંકું YY)"
-
-#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.3.string.text
-msgid "Standard (short YYYY)"
-msgstr "પ્રમાણભૂત (ટૂંકું YYYY)"
-
-#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.4.string.text
-msgid "Standard (long)"
-msgstr "પ્રમાણભૂત (લાંબુ)"
-
-#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.5.string.text
-msgid "DD/MM/YY"
-msgstr "DD/MM/YY"
-
-#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.6.string.text
-msgid "MM/DD/YY"
-msgstr "MM/DD/YY"
-
-#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.7.string.text
-msgid "YY/MM/DD"
-msgstr "YY/MM/DD"
-
-#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.8.string.text
-msgid "DD/MM/YYYY"
-msgstr "DD/MM/YYYY"
-
-#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.9.string.text
-msgid "MM/DD/YYYY"
-msgstr "MM/DD/YYYY"
-
-#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.10.string.text
-msgid "YYYY/MM/DD"
-msgstr "YYYY/MM/DD"
-
-#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.11.string.text
-msgid "YY-MM-DD"
-msgstr "YY-MM-DD"
-
-#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.12.string.text
-msgid "YYYY-MM-DD"
-msgstr "YYYY-MM-DD"
-
-#: formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.1.string.text
-msgid "13:45"
-msgstr "13:45"
-
-#: formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.2.string.text
-msgid "13:45:00"
-msgstr "13:45:00"
-
-#: formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.3.string.text
-msgid "01:45 PM"
-msgstr "01:45 PM"
-
-#: formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.4.string.text
-msgid "01:45:00 PM"
-msgstr "01:45:00 PM"
-
-#: formres.src#RID_RSC_ENUM_CHECKED.1.string.text
-msgid "Not Selected"
-msgstr "પસંદિત નથી"
-
-#: formres.src#RID_RSC_ENUM_CHECKED.2.string.text
-msgid "Selected"
-msgstr "પસંદિત"
-
-#: formres.src#RID_RSC_ENUM_CHECKED.3.string.text
-msgid "Not Defined"
-msgstr "વ્યાખ્યાયિત નથી"
-
-#: formres.src#RID_RSC_ENUM_CYCLE.1.string.text
-msgid "All records"
-msgstr "બધા રેકોર્ડો"
-
-#: formres.src#RID_RSC_ENUM_CYCLE.2.string.text
-msgid "Active record"
-msgstr "સક્રિય રેકોર્ડ"
-
-#: formres.src#RID_RSC_ENUM_CYCLE.3.string.text
-msgid "Current page"
-msgstr "વર્તમાન પાનું"
-
-#: formres.src#RID_RSC_ENUM_NAVIGATION.1.string.text
-msgctxt "formres.src#RID_RSC_ENUM_NAVIGATION.1.string.text"
-msgid "No"
-msgstr "ના"
-
-#: formres.src#RID_RSC_ENUM_NAVIGATION.2.string.text
-msgctxt "formres.src#RID_RSC_ENUM_NAVIGATION.2.string.text"
-msgid "Yes"
-msgstr "હા"
-
-#: formres.src#RID_RSC_ENUM_NAVIGATION.3.string.text
-msgid "Parent Form"
-msgstr "પિતૃ ફોર્મ"
-
-#: formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.string.text
-msgctxt "formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.string.text"
-msgid "None"
-msgstr "કંઈ નહિં"
-
-#: formres.src#RID_RSC_ENUM_SELECTION_TYPE.2.string.text
-msgid "Single"
-msgstr "એક"
-
-#: formres.src#RID_RSC_ENUM_SELECTION_TYPE.3.string.text
-msgid "Multi"
-msgstr "વિવિધ"
-
-#: formres.src#RID_RSC_ENUM_SELECTION_TYPE.4.string.text
-msgid "Range"
-msgstr "વિસ્તાર"
-
-#: formres.src#RID_STR_EVT_APPROVEPARAMETER.string.text
-msgid "Fill parameters"
-msgstr "પરિમાણ ભરો"
-
-#: formres.src#RID_STR_EVT_ACTIONPERFORMED.string.text
-msgid "Execute action"
-msgstr "ક્રિયાને ચલાવો"
-
-#: formres.src#RID_STR_EVT_AFTERUPDATE.string.text
-msgid "After updating"
-msgstr "અપલોડ પછી"
-
-#: formres.src#RID_STR_EVT_BEFOREUPDATE.string.text
-msgid "Before updating"
-msgstr "સુધાર્યા પહેલા"
-
-#: formres.src#RID_STR_EVT_APPROVEROWCHANGE.string.text
-msgid "Before record action"
-msgstr "રેકોર્ડની ક્રિયા પહેલા"
-
-#: formres.src#RID_STR_EVT_ROWCHANGE.string.text
-msgid "After record action"
-msgstr "રેકોર્ડની ક્રિયા પછી"
-
-#: formres.src#RID_STR_EVT_CONFIRMDELETE.string.text
-msgid "Confirm deletion"
-msgstr "દૂર કરવાની ખાતરી"
-
-#: formres.src#RID_STR_EVT_ERROROCCURED.string.text
-msgid "Error occurred"
-msgstr "ભૂલ દેખાઈ"
-
-#: formres.src#RID_STR_EVT_FOCUSGAINED.string.text
-msgid "When receiving focus"
-msgstr "જ્યારે ફોકસ મેળવો ત્યારે"
-
-#: formres.src#RID_STR_EVT_FOCUSLOST.string.text
-msgid "When losing focus"
-msgstr "જ્યારે ફોકસ ગુમાવો ત્યારે"
-
-#: formres.src#RID_STR_EVT_ITEMSTATECHANGED.string.text
-msgid "Item status changed"
-msgstr "વસ્તુ સ્થિતિ બદલાઈ ગઈ"
-
-#: formres.src#RID_STR_EVT_KEYTYPED.string.text
-msgid "Key pressed"
-msgstr "કળ દબાવી"
-
-#: formres.src#RID_STR_EVT_KEYUP.string.text
-msgid "Key released"
-msgstr "કળ છોડી"
-
-#: formres.src#RID_STR_EVT_LOADED.string.text
-msgid "When loading"
-msgstr "જ્યારે લાવી રહ્યા છે ત્યારે"
-
-#: formres.src#RID_STR_EVT_RELOADING.string.text
-msgid "Before reloading"
-msgstr "લાવી રહ્યા છે તે પહેલા"
-
-#: formres.src#RID_STR_EVT_RELOADED.string.text
-msgid "When reloading"
-msgstr "જ્યારે ફરી લાવી રહ્યા છે ત્યારે"
-
-#: formres.src#RID_STR_EVT_MOUSEDRAGGED.string.text
-msgid "Mouse moved while key pressed"
-msgstr "જ્યારે કળ દબાવી ત્યારે માઉસ ખસેડ્યું"
-
-#: formres.src#RID_STR_EVT_MOUSEENTERED.string.text
-msgid "Mouse inside"
-msgstr "માઉસ અંદર"
-
-#: formres.src#RID_STR_EVT_MOUSEEXITED.string.text
-msgid "Mouse outside"
-msgstr "માઉસ બહાર"
-
-#: formres.src#RID_STR_EVT_MOUSEMOVED.string.text
-msgid "Mouse moved"
-msgstr "માઉસ ખસેડ્યુ"
-
-#: formres.src#RID_STR_EVT_MOUSEPRESSED.string.text
-msgid "Mouse button pressed"
-msgstr "માઉસનું બટન દબાવ્યુ"
-
-#: formres.src#RID_STR_EVT_MOUSERELEASED.string.text
-msgid "Mouse button released"
-msgstr "માઉસનું બટન છોડ્યુ"
-
-#: formres.src#RID_STR_EVT_POSITIONING.string.text
-msgid "Before record change"
-msgstr "રેકાર્ડ બદલાયા પહેલા"
-
-#: formres.src#RID_STR_EVT_POSITIONED.string.text
-msgid "After record change"
-msgstr "રેકાર્ડ બદલાયા પછી"
-
-#: formres.src#RID_STR_EVT_RESETTED.string.text
-msgid "After resetting"
-msgstr "ફરીગોઠવ્યા પછી"
-
-#: formres.src#RID_STR_EVT_APPROVERESETTED.string.text
-msgid "Prior to reset"
-msgstr "ફરી સુયાેજિત કરવાને પ્રાધાન્ય આપો"
-
-#: formres.src#RID_STR_EVT_APPROVEACTIONPERFORMED.string.text
-msgid "Approve action"
-msgstr "ક્રિયાને મંજૂરી આપો"
-
-#: formres.src#RID_STR_EVT_SUBMITTED.string.text
-msgid "Before submitting"
-msgstr "સોંપ્યા પહેલા"
-
-#: formres.src#RID_STR_EVT_TEXTCHANGED.string.text
-msgid "Text modified"
-msgstr "બદલાયેલુ લખાણ"
-
-#: formres.src#RID_STR_EVT_UNLOADING.string.text
-msgid "Before unloading"
-msgstr "લાવ્યા ન હોય તે પહેલા"
-
-#: formres.src#RID_STR_EVT_UNLOADED.string.text
-msgid "When unloading"
-msgstr "જ્યારે લાવ્યા ન હોય ત્યારે"
-
-#: formres.src#RID_STR_EVT_CHANGED.string.text
-msgid "Changed"
-msgstr "બદલાયેલુ"
-
-#: formres.src#RID_STR_EVENTS.string.text
-msgid "Events"
-msgstr "ઘટનાઓ"
-
-#: formres.src#RID_STR_ESCAPE_PROCESSING.string.text
-msgid "Analyze SQL command"
-msgstr "SQL આદેશનું પૃથક્કરણ"
-
-#: formres.src#RID_STR_POSITIONX.string.text
-msgid "PositionX"
-msgstr "સ્થિતિX"
-
-#: formres.src#RID_STR_POSITIONY.string.text
-msgid "PositionY"
-msgstr "સ્થિતિY"
-
-#: formres.src#RID_STR_TITLE.string.text
-msgid "Title"
-msgstr "શીર્ષક"
-
-#: formres.src#RID_STR_STEP.string.text
-msgid "Page (step)"
-msgstr "પાનું (તબક્કો)"
-
-#: formres.src#RID_STR_PROGRESSVALUE.string.text
-msgid "Progress value"
-msgstr "પ્રગતિની કિંમત"
-
-#: formres.src#RID_STR_PROGRESSVALUE_MIN.string.text
-msgid "Progress value min."
-msgstr "પ્રગતિની ન્યૂનત્તમ કિંમત"
-
-#: formres.src#RID_STR_PROGRESSVALUE_MAX.string.text
-msgid "Progress value max."
-msgstr "પ્રગતિની મહત્તમ કિંમત"
-
-#: formres.src#RID_STR_SCROLLVALUE.string.text
-msgid "Scroll value"
-msgstr "ખસેડવાની કિંમત"
-
-#: formres.src#RID_STR_SCROLLVALUE_MAX.string.text
-msgid "Scroll value max."
-msgstr "ખસેડવાની મહત્તમ કિંમત"
-
-#: formres.src#RID_STR_SCROLLVALUE_MIN.string.text
-msgid "Scroll value min."
-msgstr "ન્યૂનતમ સરક કિંમત"
-
-#: formres.src#RID_STR_DEFAULT_SCROLLVALUE.string.text
-msgid "Default scroll value"
-msgstr "મૂળભુત સરક કિંમત"
-
-#: formres.src#RID_STR_LINEINCREMENT.string.text
-msgid "Small change"
-msgstr "નાનો ફેરફાર"
-
-#: formres.src#RID_STR_BLOCKINCREMENT.string.text
-msgid "Large change"
-msgstr "મોટો ફેરફાર"
-
-#: formres.src#RID_STR_REPEAT_DELAY.string.text
-msgid "Delay"
-msgstr "વિલંબ"
-
-#: formres.src#RID_STR_REPEAT.string.text
-msgid "Repeat"
-msgstr "પુનરાવર્તન"
-
-#: formres.src#RID_STR_VISIBLESIZE.string.text
-msgid "Visible size"
-msgstr "દ્રશ્યમાન માપ"
-
-#: formres.src#RID_STR_ORIENTATION.string.text
-msgid "Orientation"
-msgstr "દિશા"
-
-#: formres.src#RID_RSC_ENUM_ORIENTATION.1.string.text
-msgctxt "formres.src#RID_RSC_ENUM_ORIENTATION.1.string.text"
-msgid "Horizontal"
-msgstr "આડું"
-
-#: formres.src#RID_RSC_ENUM_ORIENTATION.2.string.text
-msgctxt "formres.src#RID_RSC_ENUM_ORIENTATION.2.string.text"
-msgid "Vertical"
-msgstr "ઊભું"
-
-#: formres.src#RID_STR_EVT_ADJUSTMENTVALUECHANGED.string.text
-msgid "While adjusting"
-msgstr "જ્યારે બંધબેસતુ કરો ત્યારે"
-
-#: formres.src#RID_STR_DATE.string.text
-msgid "Date"
-msgstr "તારીખ"
-
-#: formres.src#RID_STR_STATE.string.text
-msgid "State"
-msgstr "સ્થિતિ"
-
-#: formres.src#RID_STR_TIME.string.text
-msgid "Time"
-msgstr "સમય"
-
-#: formres.src#RID_STR_SCALEIMAGE.string.text
-msgid "Scale"
-msgstr "માપદંડ"
-
-#: formres.src#RID_STR_PUSHBUTTONTYPE.string.text
-msgid "Button type"
-msgstr "બટન પ્રકાર"
-
-#: formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.string.text
-msgctxt "formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.string.text"
-msgid "Default"
-msgstr "મૂળભૂત"
-
-#: formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.2.string.text
-msgid "OK"
-msgstr "બરાબર"
-
-#: formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.3.string.text
-msgid "Cancel"
-msgstr "રદ કરો"
-
-#: formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.string.text
-msgctxt "formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.string.text"
-msgid "Help"
-msgstr "મદદ"
-
-#: formres.src#RID_STR_UNABLETOCONNECT.string.text
-msgid "The connection to the data source \"$name$\" could not be established."
-msgstr "માહિતી સ્રોતના \"$name$\"ના જોડાણને પ્રસ્થાપિત કરી શકાયુ નહિ."
-
-#: formres.src#RID_STR_TEXT.string.text
-msgctxt "formres.src#RID_STR_TEXT.string.text"
-msgid "Text"
-msgstr "લખાણ"
-
-#: formres.src#RID_STR_BOUND_CELL.string.text
-msgid "Linked cell"
-msgstr "જોડાયેલ ખાનું"
-
-#: formres.src#RID_STR_LIST_CELL_RANGE.string.text
-msgid "Source cell range"
-msgstr "સ્ત્રોત ખાનાંની અવધિ"
-
-#: formres.src#RID_STR_CELL_EXCHANGE_TYPE.string.text
-msgid "Contents of the linked cell"
-msgstr "જોડાયેલ ખાનાની માહિતી"
-
-#: formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.1.string.text
-msgid "The selected entry"
-msgstr "પસંદિત પ્રવેશ"
-
-#: formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.2.string.text
-msgid "Position of the selected entry"
-msgstr "પસંદિત પ્રવેશનું સ્થાન"
-
-#: formres.src#RID_STR_SHOW_SCROLLBARS.string.text
-msgid "Scrollbars"
-msgstr "સરકપટ્ટી"
-
-#: formres.src#RID_RSC_ENUM_TEXTTYPE.1.string.text
-msgid "Single-line"
-msgstr "એક-લીટી"
-
-#: formres.src#RID_RSC_ENUM_TEXTTYPE.2.string.text
-msgid "Multi-line"
-msgstr "ઘણી-લીટી"
-
-#: formres.src#RID_RSC_ENUM_TEXTTYPE.3.string.text
-msgid "Multi-line with formatting"
-msgstr "બંધારણ સાથેની ઘણી-લીટી"
-
-#: formres.src#RID_STR_SYMBOLCOLOR.string.text
-msgid "Symbol color"
-msgstr "સંજ્ઞા રંગ"
-
-#: formres.src#RID_STR_LINEEND_FORMAT.string.text
-msgid "Text lines end with"
-msgstr "લખાણ ફાઈલો આનાથી અંત થાય છે"
-
-#: formres.src#RID_RSC_ENUM_LINEEND_FORMAT.1.string.text
-msgid "LF (Unix)"
-msgstr "LF (Unix)"
-
-#: formres.src#RID_RSC_ENUM_LINEEND_FORMAT.2.string.text
-msgid "CR+LF (Windows)"
-msgstr "CR+LF (Windows)"
-
-#: formres.src#RID_RSC_ENUM_SCROLLBARS.1.string.text
-msgctxt "formres.src#RID_RSC_ENUM_SCROLLBARS.1.string.text"
-msgid "None"
-msgstr "કંઈ નહિં"
-
-#: formres.src#RID_RSC_ENUM_SCROLLBARS.2.string.text
-msgctxt "formres.src#RID_RSC_ENUM_SCROLLBARS.2.string.text"
-msgid "Horizontal"
-msgstr "આડું"
-
-#: formres.src#RID_RSC_ENUM_SCROLLBARS.3.string.text
-msgctxt "formres.src#RID_RSC_ENUM_SCROLLBARS.3.string.text"
-msgid "Vertical"
-msgstr "ઊભું"
-
-#: formres.src#RID_RSC_ENUM_SCROLLBARS.4.string.text
-msgid "Both"
-msgstr "બંને"
-
-#: formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.string.text
-msgctxt "formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.string.text"
-msgid "Table"
-msgstr "કોષ્ટક"
-
-#: formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.string.text
-msgctxt "formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.string.text"
-msgid "Query"
-msgstr "પ્રશ્ન"
-
-#: formres.src#RID_RSC_ENUM_COMMAND_TYPE.3.string.text
-msgid "SQL command"
-msgstr "SQL આદેશ"
-
-#: formres.src#RID_STR_TOGGLE.string.text
-msgid "Toggle"
-msgstr "ફેરબદલી"
-
-#: formres.src#RID_STR_FOCUSONCLICK.string.text
-msgid "Take Focus on Click"
-msgstr "ક્લિક કરવા પર ફોકસ લો"
-
-#: formres.src#RID_STR_HIDEINACTIVESELECTION.string.text
-msgid "Hide selection"
-msgstr "પસંદગી છુપાવો"
-
-#: formres.src#RID_STR_VISUALEFFECT.string.text
-msgid "Style"
-msgstr "શૈલી"
-
-#: formres.src#RID_RSC_ENUM_VISUALEFFECT.1.string.text
-msgid "3D"
-msgstr "૩D"
-
-#: formres.src#RID_RSC_ENUM_VISUALEFFECT.2.string.text
-msgctxt "formres.src#RID_RSC_ENUM_VISUALEFFECT.2.string.text"
-msgid "Flat"
-msgstr "સપાટ"
-
-#: formres.src#RID_STR_BORDERCOLOR.string.text
-msgid "Border color"
-msgstr "કિનારી રંગ"
-
-#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.1.string.text
-msgid "Left top"
-msgstr "ઉપર ડાબે"
-
-#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.2.string.text
-msgid "Left centered"
-msgstr "વચ્ચે ડાબે"
-
-#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.3.string.text
-msgid "Left bottom"
-msgstr "તળિયે ડાબે"
-
-#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.4.string.text
-msgid "Right top"
-msgstr "ઉપર જમણે"
-
-#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.5.string.text
-msgid "Right centered"
-msgstr "વચ્ચે જમણે"
-
-#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.6.string.text
-msgid "Right bottom"
-msgstr "તળિયે જમણે"
-
-#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.7.string.text
-msgid "Above left"
-msgstr "ડાબેથી ઉપર"
-
-#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.8.string.text
-msgid "Above centered"
-msgstr "વચ્ચેથી ઉપર"
-
-#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.9.string.text
-msgid "Above right"
-msgstr "જમણેથી ઉપર"
-
-#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.10.string.text
-msgid "Below left"
-msgstr "ડાબેથી નીચે"
-
-#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.11.string.text
-msgid "Below centered"
-msgstr "વચ્ચેથી નીચે"
-
-#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.12.string.text
-msgid "Below right"
-msgstr "જમણેથી નીચે"
-
-#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.13.string.text
-msgid "Centered"
-msgstr "કેન્દ્રસ્થ"
-
-#: formres.src#RID_STR_AUTOLINEBREAK.string.text
-msgid "Wrap text automatically"
-msgstr "લખાણ આપોઆપ લપેટો"
-
-#: formres.src#RID_STR_TEXTTYPE.string.text
-msgid "Text type"
-msgstr "લખાણ પ્રકાર"
-
-#: formres.src#RID_RSC_ENUM_SHOWHIDE.1.string.text
-msgid "Hide"
-msgstr "છુપાડો"
-
-#: formres.src#RID_RSC_ENUM_SHOWHIDE.2.string.text
-msgid "Show"
-msgstr "બતાવો"
-
-#: formres.src#RID_STR_XML_DATA_MODEL.string.text
-msgid "XML data model"
-msgstr "XML માહિતી મોડેલ"
-
-#: formres.src#RID_STR_BIND_EXPRESSION.string.text
-msgid "Binding expression"
-msgstr "બાઈન્ડીંગ સમીકરણ"
-
-#: formres.src#RID_STR_XSD_REQUIRED.string.text
-msgid "Required"
-msgstr "જરુરી"
-
-#: formres.src#RID_STR_LIST_BINDING.string.text
-msgid "List entry source"
-msgstr "યાદી પ્રવેશ સ્રોત"
-
-#: formres.src#RID_STR_XSD_RELEVANT.string.text
-msgid "Relevant"
-msgstr "સંબંધિત"
-
-#: formres.src#RID_STR_XSD_READONLY.string.text
-msgctxt "formres.src#RID_STR_XSD_READONLY.string.text"
-msgid "Read-only"
-msgstr "માત્ર-વાંચી શકાય"
-
-#: formres.src#RID_STR_XSD_CONSTRAINT.string.text
-msgid "Constraint"
-msgstr "પરિમાણ"
-
-#: formres.src#RID_STR_XSD_CALCULATION.string.text
-msgid "Calculation"
-msgstr "ગણતરી"
-
-#: formres.src#RID_STR_XSD_DATA_TYPE.string.text
-msgid "Data type"
-msgstr "માહિતી પ્રકાર"
-
-#: formres.src#RID_STR_XSD_WHITESPACES.string.text
-msgid "Whitespaces"
-msgstr "ખાલી જગ્યાઓ"
-
-#: formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.1.string.text
-msgid "Preserve"
-msgstr "સાચવો"
-
-#: formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.2.string.text
-msgid "Replace"
-msgstr "બદલો"
-
-#: formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.3.string.text
-msgid "Collapse"
-msgstr "અવિસ્તૃત કરો"
-
-#: formres.src#RID_STR_XSD_PATTERN.string.text
-msgid "Pattern"
-msgstr "ભાત"
-
-#: formres.src#RID_STR_XSD_LENGTH.string.text
-msgid "Length"
-msgstr "લંબાઈ"
-
-#: formres.src#RID_STR_XSD_MIN_LENGTH.string.text
-msgid "Length (at least)"
-msgstr "લંબાઈ (ઓછામાં ઓછી)"
-
-#: formres.src#RID_STR_XSD_MAX_LENGTH.string.text
-msgid "Length (at most)"
-msgstr "લંબાઈ (એકદમ મોટી)"
-
-#: formres.src#RID_STR_XSD_TOTAL_DIGITS.string.text
-msgid "Digits (total)"
-msgstr "અંકો (કુલ)"
-
-#: formres.src#RID_STR_XSD_FRACTION_DIGITS.string.text
-msgid "Digits (fraction)"
-msgstr "અંકો (અપૂર્ણાંક)"
-
-#: formres.src#RID_STR_XSD_MAX_INCLUSIVE.string.text
-msgid "Max. (inclusive)"
-msgstr "મહત્તમ. (સમાવીને)"
-
-#: formres.src#RID_STR_XSD_MAX_EXCLUSIVE.string.text
-msgid "Max. (exclusive)"
-msgstr "મહત્તમ (દૂર કરીને)"
-
-#: formres.src#RID_STR_XSD_MIN_INCLUSIVE.string.text
-msgid "Min. (inclusive)"
-msgstr "ન્યૂનતમ (સમાવીને)"
-
-#: formres.src#RID_STR_XSD_MIN_EXCLUSIVE.string.text
-msgid "Min. (exclusive)"
-msgstr "ન્યૂનતમ (દૂર કરીને)"
-
-#: formres.src#RID_STR_SUBMISSION_ID.string.text
-msgid "Submission"
-msgstr "જમા કરવાનું"
-
-#: formres.src#RID_STR_BINDING_UI_NAME.string.text
-msgid "Binding"
-msgstr "બાઈન્ડીંગ"
-
-#: formres.src#RID_STR_SELECTION_TYPE.string.text
-msgid "Selection type"
-msgstr "પસંદગી પ્રકાર"
-
-#: formres.src#RID_STR_ROOT_DISPLAYED.string.text
-msgid "Root displayed"
-msgstr "રુટ દર્શાવાયેલ"
-
-#: formres.src#RID_STR_SHOWS_HANDLES.string.text
-msgid "Show handles"
-msgstr "નિયંત્રણો બતાવો"
-
-#: formres.src#RID_STR_SHOWS_ROOT_HANDLES.string.text
-msgid "Show root handles"
-msgstr "રુટ નિયંત્રણો બતાવો"
-
-#: formres.src#RID_STR_EDITABLE.string.text
-msgid "Editable"
-msgstr "ફેરફાર કરી શકાય તેવું"
-
-#: formres.src#RID_STR_INVOKES_STOP_NOT_EDITING.string.text
-msgid "Invokes stop node editing"
-msgstr "નોડ સંપાદન અટકાવે છે"
-
-#: formres.src#RID_STR_DECORATION.string.text
-msgid "With title bar"
-msgstr "શીર્ષક પટ્ટી સાથે"
-
-#: formres.src#RID_STR_NOLABEL.string.text
-msgid "No Label"
-msgstr "લેબલ નથી"
-
-#: formres.src#RID_RSC_ENUM_SCALE_MODE.1.string.text
-msgctxt "formres.src#RID_RSC_ENUM_SCALE_MODE.1.string.text"
-msgid "No"
-msgstr "ના"
-
-#: formres.src#RID_RSC_ENUM_SCALE_MODE.2.string.text
-msgid "Keep Ratio"
-msgstr "પ્રમાણ રાખો"
-
-#: formres.src#RID_RSC_ENUM_SCALE_MODE.3.string.text
-msgid "Fit to Size"
-msgstr "માપ ને અનુરૂપ રાખો"
-
-#: formres.src#RID_STR_INPUT_REQUIRED.string.text
-msgid "Input required"
-msgstr "ઇનપુટ ની જરૂરિયાત છે"
-
-#: formres.src#RID_STR_WRITING_MODE.string.text
-msgid "Text direction"
-msgstr "લખાણની દિશા"
-
-#: formres.src#RID_RSC_ENUM_WRITING_MODE.1.string.text
-msgid "Left-to-right"
-msgstr "ડાબેથી જમણે"
-
-#: formres.src#RID_RSC_ENUM_WRITING_MODE.2.string.text
-msgid "Right-to-left"
-msgstr "જમણે થી ડાબે"
-
-#: formres.src#RID_RSC_ENUM_WRITING_MODE.3.string.text
-msgid "Use superordinate object settings"
-msgstr "ઉચ્ચકોટિ ઓબ્જેક્ટ સુયોજનો ને વાપરો"
-
-#: formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.1.string.text
-msgid "Never"
-msgstr "કદી નહિં"
-
-#: formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.2.string.text
-msgid "When focused"
-msgstr "જ્યારે પ્રકાશિત થયેલ"
-
-#: formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.3.string.text
-msgid "Always"
-msgstr "હંમેશા"
-
-#: formres.src#RID_STR_ANCHOR_TYPE.string.text
-msgid "Anchor"
-msgstr "એન્કર"
-
-#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.1.string.text
-msgid "To Paragraph"
-msgstr "ફકરમાં"
-
-#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.2.string.text
-msgid "As Character"
-msgstr "અક્ષર તરીકે"
-
-#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.string.text
-msgctxt "formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.string.text"
-msgid "To Page"
-msgstr "પાનાંમાં"
-
-#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.4.string.text
-msgid "To Frame"
-msgstr "ફ્રેમમાં"
-
-#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.5.string.text
-msgid "To Character"
-msgstr "અક્ષર માં"
-
-#: formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.1.string.text
-msgctxt "formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.1.string.text"
-msgid "To Page"
-msgstr "પાનાં માં"
-
-#: formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.2.string.text
-msgid "To Cell"
-msgstr "સેલમાં"
-
-#: formres.src#RID_STR_FONTSTYLE_REGULAR.string.text
-msgid "Regular"
-msgstr "નિયમિત"
-
-#: formres.src#RID_STR_FONTSTYLE_BOLD_ITALIC.string.text
-msgid "Bold Italic"
-msgstr "બોલ્ડ ઇટાલિક"
-
-#: formres.src#RID_STR_FONTSTYLE_ITALIC.string.text
-msgid "Italic"
-msgstr "ઇટાલિક"
-
-#: formres.src#RID_STR_FONTSTYLE_BOLD.string.text
-msgid "Bold"
-msgstr "બોલ્ડ"
-
-#: formres.src#RID_STR_FONT_DEFAULT.string.text
-msgid "(Default)"
-msgstr "(મૂળભૂત)"
-
-#: newdatatype.src#RID_DLG_NEW_DATA_TYPE.FT_LABEL.fixedtext.text
-msgid "Type a name for the new data type:"
-msgstr "નવી માહિતીના પ્રકાર માટે નામ લખો:"
-
-#: newdatatype.src#RID_DLG_NEW_DATA_TYPE.modaldialog.text
-msgid "New Data Type"
-msgstr "નવી માહિતી પ્રકાર"
-
-#: pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.string.text
-msgid ""
-"Do you want to delete the data type '#type#' from the model?\n"
-"Please note that this will affect all controls which are bound to this data "
-"type."
-msgstr ""
-"શું તમે માહિતી પ્રકાર '#type#' ને નમૂનામાંથી કાઢી નાંખવા માંગો છો?\n"
-"મહેરબાની કરીને નોંધ કરો કે આ બધા નિયંત્રણોને અસર કરશે કે જેઓ આ માહિતી "
-"પ્રકારને બંધાયેલ છે."
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.string.text
-msgid "Button"
-msgstr "બટન"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_RADIOBUTTON.string.text
-msgid "Option Button"
-msgstr "વિકલ્પ બટન"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_CHECKBOX.string.text
-msgid "Check Box"
-msgstr "ચૅક બોક્સ"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.string.text
-msgctxt "pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.string.text"
-msgid "Label Field"
-msgstr "લેબલ ક્ષેત્ર"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_GROUPBOX.string.text
-msgid "Group Box"
-msgstr "સમૂહ પેટી"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_EDIT.string.text
-msgid "Text Box"
-msgstr "લખાણ પેટી"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_FORMATTED.string.text
-msgid "Formatted Field"
-msgstr "ફોર્મેટેડ ક્ષેત્ર"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_LISTBOX.string.text
-msgid "List Box"
-msgstr "યાદીની પેટી"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_COMBOBOX.string.text
-msgid "Combo Box"
-msgstr "કોમ્બો બોક્સ"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_IMAGEBUTTON.string.text
-msgid "Image Button"
-msgstr "ચિત્ર બટન"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_HIDDENCONTROL.string.text
-msgid "Hidden Control"
-msgstr "છૂપાયેલુ નિયંત્રણ"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_UNKNOWNCONTROL.string.text
-msgid "Control (unknown type)"
-msgstr "નિયંત્રણ (અજાણ્યો પ્રકાર)"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_IMAGECONTROL.string.text
-msgid "Image Control"
-msgstr "ચિત્રનું નિયંત્રણ"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_FILECONTROL.string.text
-msgid "File Selection"
-msgstr "ફાઈલની પસંદગી"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_DATEFIELD.string.text
-msgid "Date Field"
-msgstr "તારીખની ક્ષેત્ર"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_TIMEFIELD.string.text
-msgid "Time Field"
-msgstr "સમય ક્ષેત્ર"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_NUMERICFIELD.string.text
-msgid "Numeric Field"
-msgstr "સંખ્યાની ક્ષેત્ર"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_CURRENCYFIELD.string.text
-msgid "Currency Field"
-msgstr "નાણા ક્ષેત્ર"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_PATTERNFIELD.string.text
-msgid "Pattern Field"
-msgstr "ભાત ક્ષેત્ર"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_DBGRID.string.text
-msgid "Table Control "
-msgstr "કોષ્ટક નિયંત્રણ"
-
-#: propres.src#RID_STR_STANDARD.string.text
-msgctxt "propres.src#RID_STR_STANDARD.string.text"
-msgid "Default"
-msgstr "મૂળભૂત"
-
-#: propres.src#RID_STR_PROPPAGE_DEFAULT.string.text
-msgid "General"
-msgstr "સામાન્ય"
-
-#: propres.src#RID_STR_PROPPAGE_DATA.string.text
-msgid "Data"
-msgstr "માહિતી"
-
-#: propres.src#RID_RSC_ENUM_YESNO.1.string.text
-msgctxt "propres.src#RID_RSC_ENUM_YESNO.1.string.text"
-msgid "No"
-msgstr "ના"
-
-#: propres.src#RID_RSC_ENUM_YESNO.2.string.text
-msgctxt "propres.src#RID_RSC_ENUM_YESNO.2.string.text"
-msgid "Yes"
-msgstr "હા"
-
-#: propres.src#RID_STR_HELP_SECTION_LABEL.string.text
-msgctxt "propres.src#RID_STR_HELP_SECTION_LABEL.string.text"
-msgid "Help"
-msgstr "મદદ"
-
-#: propres.src#RID_EMBED_IMAGE_PLACEHOLDER.string.text
-msgid "<Embedded-Image>"
-msgstr "<Embedded-Image>"
-
-#: propres.src#RID_STR_TEXT_FORMAT.string.text
-msgctxt "propres.src#RID_STR_TEXT_FORMAT.string.text"
-msgid "Text"
-msgstr "લખાણ"
-
-#: selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.fixedtext.text
-msgid ""
-"These are control fields that can be used as label fields for the "
-"$control_class$ $control_name$."
-msgstr ""
-"આ નિયંત્રણની ક્ષેત્રો છે જે $control_class$ $control_name$ માટે લેબલની "
-"ક્ષેત્રો તરીકે વાપરી શકાય."
-
-#: selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.checkbox.text
-msgid "~No assignment"
-msgstr "ફાળવણી નહિ(~N)"
-
-#: selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.modaldialog.text
-msgid "Label Field Selection"
-msgstr "લેબલ ક્ષેત્ર પસંદગી"
-
-#: selectlabeldialog.src#RID_STR_FORMS.string.text
-msgid "Forms"
-msgstr "ફોર્મો"
-
-#: taborder.src#RID_DLG_TABORDER.FT_CONTROLS.fixedtext.text
-msgid "Controls"
-msgstr "નિયંત્રણો"
-
-#: taborder.src#RID_DLG_TABORDER.PB_MOVE_UP.pushbutton.text
-msgid "Move Up"
-msgstr "ઉપર ખસો"
-
-#: taborder.src#RID_DLG_TABORDER.PB_MOVE_DOWN.pushbutton.text
-msgid "Move Down"
-msgstr "નીચે ખસો"
-
-#: taborder.src#RID_DLG_TABORDER.PB_AUTO_ORDER.pushbutton.text
-msgid "Automatic Sort"
-msgstr "ક્રમમાં ગોઠવો"
-
-#: taborder.src#RID_DLG_TABORDER.modaldialog.text
-msgid "Tab Order"
-msgstr "ટેબનો ક્રમાંક"
-
-#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_SELECT_ABTYPE.string.text
-msgid "Address book type"
-msgstr "સરનામા પુસ્તિકા પ્રકાર"
-
-#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_INVOKE_ADMIN_DIALOG.string.text
-msgid "Connection Settings"
-msgstr "જોડાણ સુયોજનો"
-
-#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_TABLE_SELECTION.string.text
-msgid "Table selection"
-msgstr "કોષ્ટક પસંદગી"
-
-#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.string.text
-msgctxt "abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.string.text"
-msgid "Field Assignment"
-msgstr "ક્ષેત્ર સોંપણી"
-
-#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_FINAL_CONFIRM.string.text
-msgid "Data Source Title"
-msgstr "માહિતી સ્રોત શીર્ષક"
-
-#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.modaldialog.text
-msgid "Address Book Data Source Wizard"
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.ModalDialog.Text
+msgid  "Address Book Data Source Wizard"
 msgstr "સરનામા પુસ્તિકા માહિતી સ્રોત વિઝાર્ડ"
 
-#: abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.fixedtext.text
-msgid ""
-"%PRODUCTNAME lets you access address data already present in your system. To "
-"do this, a %PRODUCTNAME data source will be created in which your address "
-"data is available in tabular form.\n"
-"\n"
-"This wizard helps you create the data source."
-msgstr ""
-"%PRODUCTNAME તમને તમારી સિસ્ટમમાં પહેલાથી જ હાજર સરનામા માહિતીનો વપરાશ કરવા "
-"માટે પરવાનગી આપે છે. આવું કરવા માટે, %PRODUCTNAME માહિતી સ્રોત બનાવવામાં "
-"આવશે કે જેમાં તમારી સરનામા માહિતી કોષ્ટકીય સ્વરૂપમાં ઉપલબ્ધ હોય છે.\n"
-"\n"
-"આ વિઝાર્ડ માહિતી સ્રોત બનાવવા માટે મદદ કરે છે."
+#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_SELECT_ABTYPE.String.Text
+msgid  "Address book type"
+msgstr "સરનામા પુસ્તિકા પ્રકાર"
 
-#: abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.fixedline.text
-msgid "Please select the type of your external address book:"
-msgstr "મહેરબાની કરીને તમારી બહારની સરનામાની ચોપડીને પસંદ કરો:"
+#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_INVOKE_ADMIN_DIALOG.String.Text
+msgid  "Connection Settings"
+msgstr "જોડાણ સુયોજનો"
 
-#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION.radiobutton.text
-msgid "Evolution"
-msgstr "ઈવોલ્યુશન"
+#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_TABLE_SELECTION.String.Text
+msgid  "Table selection"
+msgstr "કોષ્ટક પસંદગી"
 
-#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_GROUPWISE.radiobutton.text
-msgid "Groupwise"
-msgstr "જૂથપ્રમાણે"
-
-#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_LDAP.radiobutton.text
-msgid "Evolution LDAP"
-msgstr "ઈવોલ્યુશન LDAP"
-
-#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_MORK.radiobutton.text
-msgid "Mozilla / Netscape"
-msgstr "મોઝિલ્લા / નૅટસ્કૅપ"
-
-#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_THUNDERBIRD.radiobutton.text
-msgid "Thunderbird"
-msgstr "થન્ડરબર્ડ"
-
-#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_KAB.radiobutton.text
-msgid "KDE address book"
-msgstr "KDE સરનામા પુસ્તિકા"
-
-#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_MACAB.radiobutton.text
-msgid "Mac OS X address book"
-msgstr "Mac OS X સરનામાંની ચોપડી"
-
-#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_LDAP.radiobutton.text
-msgid "LDAP address data"
-msgstr "LDAP સરનામાની માહિતી"
-
-#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOK.radiobutton.text
-msgid "Outlook address book"
-msgstr "આઉટલુક સરનામાની ચોપડી"
-
-#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOKEXPRESS.radiobutton.text
-msgid "Windows system address book"
-msgstr "વિન્ડોઝ સિસ્ટમની સરનામાની ચોપડી"
-
-#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_OTHER.radiobutton.text
-msgid "Other external data source"
-msgstr "બીજા માહિતી સ્રોત"
-
-#: abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.fixedtext.text
-msgid ""
-"To set up the new data source, additional information is required.\n"
-"\n"
-"Click the following button to open another dialog in which you then enter "
-"the necessary information."
-msgstr ""
-"નવો માહિતી સ્રોત સુયોજિત કરવા માટે, વધારાની જાણકારી જરૂરી છે.\n"
-"\n"
-"અન્ય સંવાદ ખોલવા માટે નીચેના બટન પર ક્લિક કરો કે જેમાં તમે જરૂરી જાણકારી "
-"દાખલ કરો."
-
-#: abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.pushbutton.text
-msgid "Settings"
-msgstr "સુયોજનાઓ"
-
-#: abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.fixedtext.text
-msgid ""
-"The connection to the data source could not be established.\n"
-"Before you proceed, please check the settings made, or (on the previous "
-"page) choose another address data source type."
-msgstr ""
-"માહિતી સ્રોતનું જોડાણ અધિષ્ઠાપિત કરી શક્યા નહિં.\n"
-"તમે પ્રક્રિયા કરો તે પહેલાં, મહેરબાની કરીને કરેલ સુયોજનો ચકાસો, અથવા "
-"(પહેલાંના પાનાં પર) અન્ય સરનામા માહિતી સ્રોત પ્રકાર પસંદ કરો."
-
-#: abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.fixedtext.text
-msgid ""
-"The external data source you have chosen contains more than one address "
-"book.\n"
-"Please select the one you mainly want to work with:"
-msgstr ""
-"બાહ્ય માહિતી સ્રોત કે જે તમે પસંદ કરેલ છે તે એક કરતાં વધુ સરનામા પુસ્તિકાઓ "
-"સમાવે છે.\n"
-"મહેરબાની કરીને એક પસંદ કરો કે જેના પર તમે મુખ્યત્વે તમે કામ કરવા માંગો છો:"
-
-#: abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.fixedtext.text
-msgid ""
-"To incorporate the address data in your templates, %PRODUCTNAME has to know "
-"which fields contain which data.\n"
-"\n"
-"For instance, you could have stored the e-mail addresses in a field named "
-"\"email\", or \"E-mail\" or \"EM\" - or something completely different.\n"
-"\n"
-"Click the button below to open another dialog where you can enter the "
-"settings for your data source."
-msgstr ""
-"તમારી ટેમ્પલેટોમાં સરનામા માહિતી ભેગી કરવા માટે, %PRODUCTNAME ને ખબર હોવી "
-"જોઈએ કે કયા ક્ષેત્રો કઈ માહિતી સમાવે છે.\n"
-"\n"
-"હમણાં પૂરતું, તમારી પાસે  \"ઈમેઈલ\", અથવા \"ઈ-મેઈલ\" અથવા \"EM\" - અથવા કંઈક એકદમ "
-"અલગ નામના ક્ષેત્ર સાથે ઈ-મેઈલ સરનામું સંગ્રહાયેલ હોવું જોઈએ.\n"
-"\n"
-"અન્ય સંવાદ ખોલવા માટે નીચેના બટન પર ક્લિક કરો કે જ્યાં તમે તમારા માહિતી "
-"સ્રોતો માટે સુયોજનો દાખલ કરી શકો."
-
-#: abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.pushbutton.text
-msgctxt "abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.pushbutton.text"
-msgid "Field Assignment"
+#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.String.Text
+msgid  "Field Assignment"
 msgstr "ક્ષેત્ર સોંપણી"
 
-#: abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.fixedtext.text
-msgid ""
-"That was all the information necessary to integrate your address data into %"
-"PRODUCTNAME.\n"
-"\n"
-"Now, just enter the name under which you want to register the data source in "
-"%PRODUCTNAME."
-msgstr ""
-"તમારી માહિતીને %PRODUCTNAME માં સંકલિત કરવા માટેની આ બધી જાણકારી હતી.\n"
-"\n"
-"હવે, ખાની નામ દાખલ કરો કે જેની અંદર તમે %PRODUCTNAME માં માહિતી સ્રોત "
-"રજીસ્ટર કરવા માંગો છો."
+#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_FINAL_CONFIRM.String.Text
+msgid  "Data Source Title"
+msgstr "માહિતી સ્રોત શીર્ષક"
 
-#: abspilot.src#RID_PAGE_FINAL.FT_LOCATION.fixedtext.text
-msgid "Location"
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
+msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
+msgstr ""
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
+msgid  "Please select the type of your external address book:"
+msgstr "મહેરબાની કરીને તમારી બહારની સરનામાની ચોપડીને પસંદ કરો:"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION.RadioButton.Text
+msgid  "Evolution"
+msgstr "ઈવોલ્યુશન"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_GROUPWISE.RadioButton.Text
+msgid  "Groupwise"
+msgstr "જૂથપ્રમાણે"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_LDAP.RadioButton.Text
+msgid  "Evolution LDAP"
+msgstr "ઈવોલ્યુશન LDAP"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_MORK.RadioButton.Text
+msgid  "Mozilla / Netscape"
+msgstr "મોઝિલ્લા / નૅટસ્કૅપ"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_THUNDERBIRD.RadioButton.Text
+msgid  "Thunderbird"
+msgstr "થન્ડરબર્ડ"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_KAB.RadioButton.Text
+msgid  "KDE address book"
+msgstr "KDE સરનામા પુસ્તિકા"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_MACAB.RadioButton.Text
+msgid  "Mac OS X address book"
+msgstr "Mac OS X સરનામાંની ચોપડી"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_LDAP.RadioButton.Text
+msgid  "LDAP address data"
+msgstr "LDAP સરનામાની માહિતી"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOK.RadioButton.Text
+msgid  "Outlook address book"
+msgstr "આઉટલુક સરનામાની ચોપડી"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOKEXPRESS.RadioButton.Text
+msgid  "Windows system address book"
+msgstr "વિન્ડોઝ સિસ્ટમની સરનામાની ચોપડી"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OTHER.RadioButton.Text
+msgid  "Other external data source"
+msgstr "બીજા માહિતી સ્રોત"
+
+#: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
+msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
+msgstr ""
+
+#: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
+msgid  "Settings"
+msgstr "સુયોજનાઓ"
+
+#: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
+msgid  "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
+msgstr ""
+
+#: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
+msgid  "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
+msgstr ""
+
+#: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
+msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named "email", or "E-mail" or "EM" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
+msgstr ""
+
+#: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
+msgid  "Field Assignment"
+msgstr "ક્ષેત્ર સોંપણી"
+
+#: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
+msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
+msgstr ""
+
+#: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
+msgid  "Location"
 msgstr "સ્થળ"
 
-#: abspilot.src#RID_PAGE_FINAL.PB_BROWSE.pushbutton.text
-msgid "Browse..."
+#: source/abpilot/abspilot.src#RID_PAGE_FINAL.PB_BROWSE.PushButton.Text
+msgid  "Browse..."
 msgstr "બ્રાઉઝ..."
 
-#: abspilot.src#RID_PAGE_FINAL.CB_REGISTER_DS.checkbox.text
-msgid "Make this address book available to all modules in %PRODUCTNAME."
+#: source/abpilot/abspilot.src#RID_PAGE_FINAL.CB_REGISTER_DS.CheckBox.Text
+msgid  "Make this address book available to all modules in %PRODUCTNAME."
 msgstr "આ સરનામા પુસ્તિકાને %PRODUCTNAME માંના બધા મોડ્યુલોમાં ઉપલબ્ધ બનાવો."
 
-#: abspilot.src#RID_PAGE_FINAL.FT_NAME_EXPL.fixedtext.text
-msgid "Address book name"
+#: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_NAME_EXPL.FixedText.Text
+msgid  "Address book name"
 msgstr "સરનામા પુસ્તિકા નામ"
 
-#: abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.fixedtext.text
-msgid ""
-"Another data source already has this name. As data sources have to have "
-"globally unique names, you need to choose another one."
+#: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.FixedText.Text
+msgid  "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
 msgstr ""
-"બીજા માહિતી સ્રોતને પહેલાથી આ નામ છે. માહિતી સ્રોતનું નામ વૈશ્વિક હોવાથી "
-"તમારે બીજું નામ પસંદ કરવું પડશે."
 
-#: abspilot.src#RID_ERR_NEEDTYPESELECTION.errorbox.text
-msgid "Please select a type of address book."
+#: source/abpilot/abspilot.src#RID_ERR_NEEDTYPESELECTION.ErrorBox.Message
+msgid  "Please select a type of address book."
 msgstr "મહેરબાની કરીને સરનામાની ચોપડીનો પ્રકાર પસંદ કરો."
 
-#: abspilot.src#RID_QRY_NOTABLES.querybox.text
-msgid ""
-"The data source does not contain any tables.\n"
-"Do you want to set it up as an address data source, anyway?"
+#: source/abpilot/abspilot.src#RID_QRY_NOTABLES.QueryBox.Message
+msgid  "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
 msgstr ""
-"માહિતી સ્રોત કોઈપણ કોષ્ટકો સમાવતું નથી.\n"
-"શું તમે કોઈપણ સરનામા માહિતી સ્રોત સુયોજિત કરવા માંગો છો, કોઈપણ રીતે?"
 
-#: abspilot.src#RID_STR_DEFAULT_NAME.string.text
-msgid "Addresses"
+#: source/abpilot/abspilot.src#RID_STR_DEFAULT_NAME.String.Text
+msgid  "Addresses"
 msgstr "સરનામાઓ"
 
-#: abspilot.src#RID_STR_ADMINDIALOGTITLE.string.text
-msgid "Create Address Data Source"
+#: source/abpilot/abspilot.src#RID_STR_ADMINDIALOGTITLE.String.Text
+msgid  "Create Address Data Source"
 msgstr "સરનામાની માહિતીનાં સ્રોત ઉત્પન્ન કરો"
 
-#: abspilot.src#RID_STR_NOCONNECTION.string.text
-msgid "The connection could not be established."
+#: source/abpilot/abspilot.src#RID_STR_NOCONNECTION.String.Text
+msgid  "The connection could not be established."
 msgstr "જોડાણ પ્રસ્થાપિત થઈ શક્યું નહિ."
 
-#: abspilot.src#RID_STR_PLEASECHECKSETTINGS.string.text
-msgid "Please check the settings made for the data source."
+#: source/abpilot/abspilot.src#RID_STR_PLEASECHECKSETTINGS.String.Text
+msgid  "Please check the settings made for the data source."
 msgstr "માહિતીનાં સ્રોત માટે બનાવેલી સુયોજનાઓ મહેરબાની કરીને ચકાસો."
 
-#: abspilot.src#RID_STR_FIELDDIALOGTITLE.string.text
-msgid "Address Data - Field Assignment"
+#: source/abpilot/abspilot.src#RID_STR_FIELDDIALOGTITLE.String.Text
+msgid  "Address Data - Field Assignment"
 msgstr "માહિતી ક્ષેત્ર - ક્ષેત્ર ફાળવણી"
 
-#: abspilot.src#RID_STR_NOFIELDSASSIGNED.string.text
-msgid ""
-"There are no fields assigned at this time.\n"
-"You can either assign fields now or do so later by first choosing:\n"
-"\"File - Template - Address Book Source...\""
+#: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
+msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n"File - Template - Address Book Source...""
 msgstr ""
-"આ સમયે કોઈ ક્ષેત્ર સોંપણી નથી.\n"
-"તમે ક્યાં તો ક્ષેત્રો હવે સોંપી શકો છો અથવા આવું પછી નીચેનું પસંદ કરીને કરી "
-"શકો છો:\n"
-"\"ફાઈલ - ટેમ્પલેટ - સરનામા પુસ્તિકા સ્રોત...\""
 
-#: bib.src#RID_BIB_STR_FIELDSELECTION.string.text
-msgid "Field selection:"
-msgstr "ક્ષેત્ર પસંદગી:"
-
-#: bib.src#RID_BIB_STR_TABWIN_PREFIX.string.text
-msgid "Table;Query;Sql;Sql [Native]"
-msgstr "કોષ્ટક;પ્રશ્ર્ન;Sql;Sql [પરંપરાગત]"
-
-#: bib.src#RID_BIB_STR_FRAME_TITLE.string.text
-msgid "Bibliography Database"
-msgstr "ગ્રંથસૂચિનો ડેટાબેઝ"
-
-#: bib.src#RID_MAP_QUESTION.string.text
-msgid "Do you want to edit the column arrangement?"
-msgstr "શું તમે સ્તંભની ગોઠવણીમાં ફેરફાર કરવા ઈચ્છો છો?"
-
-#: datman.src#RID_DLG_MAPPING.GB_MAPPING.fixedline.text
-msgid "Column names"
-msgstr "સ્તંભ નામો"
-
-#: datman.src#RID_DLG_MAPPING.ST_NONE.string.text
-msgid "<none>"
-msgstr "<કંઇ નહિ>"
-
-#: datman.src#RID_DLG_MAPPING.modaldialog.text
-msgid "Column Layout for Table %1"
-msgstr "કોષ્ટક %1 માટે સ્તંભનો દેખાવ"
-
-#: datman.src#RID_DLG_DBCHANGE.ST_ENTRY.string.text
-msgid "Entry"
-msgstr "દાખલ"
-
-#: datman.src#RID_DLG_DBCHANGE.modaldialog.text
-msgid "Choose Data Source"
-msgstr "માહિતીનો સ્રોત પસંદ કરો"
-
-#: sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.string.text
-msgid "The following column names could not be assigned:\n"
-msgstr "નીચેના સ્તંભ નામો સોંપી શક્યા નહિં:\n"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.string.text
-msgid "Article"
-msgstr "લેખ"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_BOOK.string.text
-msgid "Book"
-msgstr "ચોપડી"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_BOOKLET.string.text
-msgid "Brochures"
-msgstr "ચોપાનિયાં"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_CONFERENCE.string.text
-msgctxt "sections.src#RID_TP_GENERAL.ST_TYPE_CONFERENCE.string.text"
-msgid "Conference proceedings"
-msgstr "કોન્ફરન્સ પ્રક્રિયાઓ"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_INBOOK.string.text
-msgid "Book excerpt"
-msgstr "ચોપડીનો અવતરણ તરીકેનો ભાગ"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_INCOLLECTION.string.text
-msgid "Book excerpt with title"
-msgstr "શીર્ષક સાથે ચોપડીનો અવતરણ તરીકેનો ભાગ"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_INPROCEEDINGS.string.text
-msgctxt "sections.src#RID_TP_GENERAL.ST_TYPE_INPROCEEDINGS.string.text"
-msgid "Conference proceedings"
-msgstr "કોન્ફરન્સ પ્રક્રિયાઓ"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_JOURNAL.string.text
-msgid "Journal"
-msgstr "વર્તમાનપત્ર"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_MANUAL.string.text
-msgid "Techn. documentation"
-msgstr "ટેકનિકલ દસ્તાવેજ"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_MASTERSTHESIS.string.text
-msgid "Thesis"
-msgstr "મહાનિબંધ"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_MISC.string.text
-msgid "Miscellaneous"
-msgstr "પરચૂરણ"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_PHDTHESIS.string.text
-msgid "Dissertation"
-msgstr "વિવરણ"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_PROCEEDINGS.string.text
-msgctxt "sections.src#RID_TP_GENERAL.ST_TYPE_PROCEEDINGS.string.text"
-msgid "Conference proceedings"
-msgstr "કોન્ફરન્સ પ્રક્રિયાઓ"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_TECHREPORT.string.text
-msgid "Research report"
-msgstr "શોધનો અહેવાલ"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_UNPUBLISHED.string.text
-msgid "Unpublished"
-msgstr "અપ્રકાશિત"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_EMAIL.string.text
-msgid "e-mail"
-msgstr "ઇ-મેઇલ"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_WWW.string.text
-msgid "WWW document"
-msgstr "WWW દસ્તાવેજ"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM1.string.text
-msgid "User-defined1"
-msgstr "વપરાશકર્તા-વ્યાખ્યાયિત ૧"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM2.string.text
-msgid "User-defined2"
-msgstr "વપરાશકર્તા-વ્યાખ્યાયિત ૨"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM3.string.text
-msgid "User-defined3"
-msgstr "વપરાશકર્તા-વ્યાખ્યાયિત ૩"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM4.string.text
-msgid "User-defined4"
-msgstr "વપરાશકર્તા-વ્યાખ્યાયિત ૪"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM5.string.text
-msgid "User-defined5"
-msgstr "વપરાશકર્તા-વ્યાખ્યાયિત ૫"
-
-#: sections.src#RID_TP_GENERAL.tabpage.text
-msgid "General"
-msgstr "સામાન્ય"
-
-#: sections.src#RID_POPUP_ME_VIEW.PU_INSERT.menuitem.text
-msgid "Insert Section..."
-msgstr "વિભાગ ઉમેરો..."
-
-#: sections.src#RID_POPUP_ME_VIEW.PU_REMOVE.menuitem.text
-msgid "Delete Section..."
-msgstr "વિભાગ દૂર કરો..."
-
-#: sections.src#RID_POPUP_ME_VIEW.PU_CHG_NAME.menuitem.text
-msgid "Modify Name..."
-msgstr "નામ બદલો..."
-
-#: sections.src#ST_IDENTIFIER.string.text
-msgid "~Short name"
-msgstr "ટૂંકુ નામ(~S)"
-
-#: sections.src#ST_AUTHTYPE.string.text
-msgid "~Type"
-msgstr "પ્રકાર(~T)"
-
-#: sections.src#ST_YEAR.string.text
-msgid "~Year"
-msgstr "વર્ષ(~Y)"
-
-#: sections.src#ST_AUTHOR.string.text
-msgid "Author(s)"
-msgstr "લેખક(કો)"
-
-#: sections.src#ST_TITLE.string.text
-msgid "Tit~le"
-msgstr "શીર્ષક(~l)"
-
-#: sections.src#ST_PUBLISHER.string.text
-msgid "~Publisher"
-msgstr "પ્રકાશક(~P)"
-
-#: sections.src#ST_ADDRESS.string.text
-msgid "A~ddress"
-msgstr "સરનામું(~d)"
-
-#: sections.src#ST_ISBN.string.text
-msgid "~ISBN"
-msgstr "ISBN (~I)"
-
-#: sections.src#ST_CHAPTER.string.text
-msgid "~Chapter"
-msgstr "પ્રકરણ(~C)"
-
-#: sections.src#ST_PAGE.string.text
-msgid "Pa~ge(s)"
-msgstr "પાનાં(~g)"
-
-#: sections.src#ST_EDITOR.string.text
-msgid "Editor"
-msgstr "સંપાદક"
-
-#: sections.src#ST_EDITION.string.text
-msgid "Ed~ition"
-msgstr "સંપાદન(~i)"
-
-#: sections.src#ST_BOOKTITLE.string.text
-msgid "~Book title"
-msgstr "પુસ્તક શીર્ષક(~B)"
-
-#: sections.src#ST_VOLUME.string.text
-msgid "Volume"
-msgstr "અવાજ"
-
-#: sections.src#ST_HOWPUBLISHED.string.text
-msgid "Publication t~ype"
-msgstr "પ્રકાશન પ્રકાર(~y)"
-
-#: sections.src#ST_ORGANIZATION.string.text
-msgid "Organi~zation"
-msgstr "સંરચના(~z)"
-
-#: sections.src#ST_INSTITUTION.string.text
-msgid "Instit~ution"
-msgstr "સંસ્થા(~u)"
-
-#: sections.src#ST_SCHOOL.string.text
-msgid "University"
-msgstr "યુનિવર્સિટી"
-
-#: sections.src#ST_REPORT.string.text
-msgid "Type of re~port"
-msgstr "અહેવાલ પ્રકાર(~p)"
-
-#: sections.src#ST_MONTH.string.text
-msgid "~Month"
-msgstr "મહિનો(~M)"
-
-#: sections.src#ST_JOURNAL.string.text
-msgid "~Journal"
-msgstr "વર્તમાનપત્ર(~J)"
-
-#: sections.src#ST_NUMBER.string.text
-msgid "Numb~er"
-msgstr "સંખ્યા(~e)"
-
-#: sections.src#ST_SERIES.string.text
-msgid "Se~ries"
-msgstr "શ્રેણી(~r)"
-
-#: sections.src#ST_ANNOTE.string.text
-msgid "Ann~otation"
-msgstr "નોંધ"
-
-#: sections.src#ST_NOTE.string.text
-msgid "~Note"
-msgstr "નોંધ(~N)"
-
-#: sections.src#ST_URL.string.text
-msgid "URL"
-msgstr "URL"
-
-#: sections.src#ST_CUSTOM1.string.text
-msgid "User-defined field ~1"
-msgstr "વપરાશકર્તા-વ્યાખ્યાયિત ક્ષેત્ર ૧(~1)"
-
-#: sections.src#ST_CUSTOM2.string.text
-msgid "User-defined field ~2"
-msgstr "વપરાશકર્તા-વ્યાખ્યાયિત ક્ષેત્ર ૨(~2)"
-
-#: sections.src#ST_CUSTOM3.string.text
-msgid "User-defined field ~3"
-msgstr "વપરાશકર્તા-વ્યાખ્યાયિત ક્ષેત્ર ૩(~3)"
-
-#: sections.src#ST_CUSTOM4.string.text
-msgid "User-defined field ~4"
-msgstr "વપરાશકર્તા-વ્યાખ્યાયિત ક્ષેત્ર ૪(~4) "
-
-#: sections.src#ST_CUSTOM5.string.text
-msgid "User-defined field ~5"
-msgstr "વપરાશકર્તા-વ્યાખ્યાયિત ક્ષેત્ર ૫(~5)"
-
-#: toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.toolboxitem.text
-msgid "Table"
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
+msgid  "Table"
 msgstr "કોષ્ટક"
 
-#: toolbar.src#RID_BIB_TOOLBAR.TBC_FT_QUERY.toolboxitem.text
-msgid "Search Key"
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_QUERY.ToolBoxItem.Text
+msgid  "Search Key"
 msgstr "શોધ કળ"
 
-#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_AUTOFILTER.toolboxitem.text
-msgid "AutoFilter"
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_AUTOFILTER.ToolBoxItem.Text
+msgid  "AutoFilter"
 msgstr "આપમેળેગાળક"
 
-#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_FILTERCRIT.toolboxitem.text
-msgid "Standard Filter"
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_FILTERCRIT.ToolBoxItem.Text
+msgid  "Standard Filter"
 msgstr "પ્રમાણભૂત ગાળક"
 
-#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_REMOVEFILTER.toolboxitem.text
-msgid "Remove Filter"
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_REMOVEFILTER.ToolBoxItem.Text
+msgid  "Remove Filter"
 msgstr "ગાળક દૂર કરો"
 
-#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_COL_ASSIGN.toolboxitem.text
-msgid "Column Arrangement"
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_COL_ASSIGN.ToolBoxItem.Text
+msgid  "Column Arrangement"
 msgstr "સ્તંભની ગોઠવણી"
 
-#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_CHANGESOURCE.toolboxitem.text
-msgid "Data Source"
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_CHANGESOURCE.ToolBoxItem.Text
+msgid  "Data Source"
 msgstr "માહિતી સ્રોત"
 
-#: grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.pushbutton.text
-msgctxt "grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.pushbutton.text"
-msgid "Set"
-msgstr "સમૂહ"
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.String.Text
+msgid  "The following column names could not be assigned:\n"
+msgstr "નીચેના સ્તંભ નામો સોંપી શક્યા નહિં:\n"
 
-#: grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_ASCENDING.string.text
-msgid "Linear ascending"
-msgstr "સુરેખ ચડતાક્રમમાં"
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.String.Text
+msgid  "Article"
+msgstr "લેખ"
 
-#: grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_DESCENDING.string.text
-msgid "Linear descending"
-msgstr "સુરેખ ઉતરતાક્રમમાં"
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOK.String.Text
+msgid  "Book"
+msgstr "ચોપડી"
 
-#: grid.src#GRID_DIALOG.RESET_TYPE_RESET.string.text
-msgid "Original values"
-msgstr "મૂળ કિંમતો"
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOKLET.String.Text
+msgid  "Brochures"
+msgstr "ચોપાનિયાં"
 
-#: grid.src#GRID_DIALOG.RESET_TYPE_EXPONENTIAL.string.text
-msgid "Exponential increasing"
-msgstr "પ્રતિપાદિત વધારો"
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CONFERENCE.String.Text
+msgid  "Conference proceedings"
+msgstr "કોન્ફરન્સ પ્રક્રિયાઓ"
 
-#: sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.pushbutton.text
-msgid ""
-"About\n"
-" Dev~ice"
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INBOOK.String.Text
+msgid  "Book excerpt"
+msgstr "ચોપડીનો અવતરણ તરીકેનો ભાગ"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INCOLLECTION.String.Text
+msgid  "Book excerpt with title"
+msgstr "શીર્ષક સાથે ચોપડીનો અવતરણ તરીકેનો ભાગ"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INPROCEEDINGS.String.Text
+msgid  "Conference proceedings"
+msgstr "કોન્ફરન્સ પ્રક્રિયાઓ"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_JOURNAL.String.Text
+msgid  "Journal"
+msgstr "વર્તમાનપત્ર"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MANUAL.String.Text
+msgid  "Techn. documentation"
+msgstr "ટેકનિકલ દસ્તાવેજ"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MASTERSTHESIS.String.Text
+msgid  "Thesis"
+msgstr "મહાનિબંધ"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MISC.String.Text
+msgid  "Miscellaneous"
+msgstr "પરચૂરણ"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PHDTHESIS.String.Text
+msgid  "Dissertation"
+msgstr "વિવરણ"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PROCEEDINGS.String.Text
+msgid  "Conference proceedings"
+msgstr "કોન્ફરન્સ પ્રક્રિયાઓ"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_TECHREPORT.String.Text
+msgid  "Research report"
+msgstr "શોધનો અહેવાલ"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_UNPUBLISHED.String.Text
+msgid  "Unpublished"
+msgstr "અપ્રકાશિત"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_EMAIL.String.Text
+msgid  "e-mail"
+msgstr "ઇ-મેઇલ"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_WWW.String.Text
+msgid  "WWW document"
+msgstr "WWW દસ્તાવેજ"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM1.String.Text
+msgid  "User-defined1"
+msgstr "વપરાશકર્તા-વ્યાખ્યાયિત ૧"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM2.String.Text
+msgid  "User-defined2"
+msgstr "વપરાશકર્તા-વ્યાખ્યાયિત ૨"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM3.String.Text
+msgid  "User-defined3"
+msgstr "વપરાશકર્તા-વ્યાખ્યાયિત ૩"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM4.String.Text
+msgid  "User-defined4"
+msgstr "વપરાશકર્તા-વ્યાખ્યાયિત ૪"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM5.String.Text
+msgid  "User-defined5"
+msgstr "વપરાશકર્તા-વ્યાખ્યાયિત ૫"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.String.Text
+msgid  "General"
+msgstr "સામાન્ય"
+
+#: source/bibliography/sections.src#RID_POPUP_ME_VIEW.PU_INSERT.MenuItem.Text
+msgid  "Insert Section..."
+msgstr "વિભાગ ઉમેરો..."
+
+#: source/bibliography/sections.src#RID_POPUP_ME_VIEW.PU_REMOVE.MenuItem.Text
+msgid  "Delete Section..."
+msgstr "વિભાગ દૂર કરો..."
+
+#: source/bibliography/sections.src#RID_POPUP_ME_VIEW.PU_CHG_NAME.MenuItem.Text
+msgid  "Modify Name..."
+msgstr "નામ બદલો..."
+
+#: source/bibliography/sections.src#ST_IDENTIFIER.String.Text
+msgid  "~Short name"
+msgstr "ટૂંકુ નામ(~S)"
+
+#: source/bibliography/sections.src#ST_AUTHTYPE.String.Text
+msgid  "~Type"
+msgstr "પ્રકાર(~T)"
+
+#: source/bibliography/sections.src#ST_YEAR.String.Text
+msgid  "~Year"
+msgstr "વર્ષ(~Y)"
+
+#: source/bibliography/sections.src#ST_AUTHOR.String.Text
+msgid  "Author(s)"
+msgstr "લેખક(કો)"
+
+#: source/bibliography/sections.src#ST_TITLE.String.Text
+msgid  "Tit~le"
+msgstr "શીર્ષક(~l)"
+
+#: source/bibliography/sections.src#ST_PUBLISHER.String.Text
+msgid  "~Publisher"
+msgstr "પ્રકાશક(~P)"
+
+#: source/bibliography/sections.src#ST_ADDRESS.String.Text
+msgid  "A~ddress"
+msgstr "સરનામું(~d)"
+
+#: source/bibliography/sections.src#ST_ISBN.String.Text
+msgid  "~ISBN"
+msgstr "ISBN (~I)"
+
+#: source/bibliography/sections.src#ST_CHAPTER.String.Text
+msgid  "~Chapter"
+msgstr "પ્રકરણ(~C)"
+
+#: source/bibliography/sections.src#ST_PAGE.String.Text
+msgid  "Pa~ge(s)"
+msgstr "પાનાં(~g)"
+
+#: source/bibliography/sections.src#ST_EDITOR.String.Text
+msgid  "Editor"
+msgstr "સંપાદક"
+
+#: source/bibliography/sections.src#ST_EDITION.String.Text
+msgid  "Ed~ition"
+msgstr "સંપાદન(~i)"
+
+#: source/bibliography/sections.src#ST_BOOKTITLE.String.Text
+msgid  "~Book title"
+msgstr "પુસ્તક શીર્ષક(~B)"
+
+#: source/bibliography/sections.src#ST_VOLUME.String.Text
+msgid  "Volume"
+msgstr "અવાજ"
+
+#: source/bibliography/sections.src#ST_HOWPUBLISHED.String.Text
+msgid  "Publication t~ype"
+msgstr "પ્રકાશન પ્રકાર(~y)"
+
+#: source/bibliography/sections.src#ST_ORGANIZATION.String.Text
+msgid  "Organi~zation"
+msgstr "સંરચના(~z)"
+
+#: source/bibliography/sections.src#ST_INSTITUTION.String.Text
+msgid  "Instit~ution"
+msgstr "સંસ્થા(~u)"
+
+#: source/bibliography/sections.src#ST_SCHOOL.String.Text
+msgid  "University"
+msgstr "યુનિવર્સિટી"
+
+#: source/bibliography/sections.src#ST_REPORT.String.Text
+msgid  "Type of re~port"
+msgstr "અહેવાલ પ્રકાર(~p)"
+
+#: source/bibliography/sections.src#ST_MONTH.String.Text
+msgid  "~Month"
+msgstr "મહિનો(~M)"
+
+#: source/bibliography/sections.src#ST_JOURNAL.String.Text
+msgid  "~Journal"
+msgstr "વર્તમાનપત્ર(~J)"
+
+#: source/bibliography/sections.src#ST_NUMBER.String.Text
+msgid  "Numb~er"
+msgstr "સંખ્યા(~e)"
+
+#: source/bibliography/sections.src#ST_SERIES.String.Text
+msgid  "Se~ries"
+msgstr "શ્રેણી(~r)"
+
+#: source/bibliography/sections.src#ST_ANNOTE.String.Text
+msgid  "Ann~otation"
+msgstr "નોંધ"
+
+#: source/bibliography/sections.src#ST_NOTE.String.Text
+msgid  "~Note"
+msgstr "નોંધ(~N)"
+
+#: source/bibliography/sections.src#ST_URL.String.Text
+msgid  "URL"
+msgstr "URL"
+
+#: source/bibliography/sections.src#ST_CUSTOM1.String.Text
+msgid  "User-defined field ~1"
+msgstr "વપરાશકર્તા-વ્યાખ્યાયિત ક્ષેત્ર ૧(~1)"
+
+#: source/bibliography/sections.src#ST_CUSTOM2.String.Text
+msgid  "User-defined field ~2"
+msgstr "વપરાશકર્તા-વ્યાખ્યાયિત ક્ષેત્ર ૨(~2)"
+
+#: source/bibliography/sections.src#ST_CUSTOM3.String.Text
+msgid  "User-defined field ~3"
+msgstr "વપરાશકર્તા-વ્યાખ્યાયિત ક્ષેત્ર ૩(~3)"
+
+#: source/bibliography/sections.src#ST_CUSTOM4.String.Text
+msgid  "User-defined field ~4"
+msgstr "વપરાશકર્તા-વ્યાખ્યાયિત ક્ષેત્ર ૪(~4) "
+
+#: source/bibliography/sections.src#ST_CUSTOM5.String.Text
+msgid  "User-defined field ~5"
+msgstr "વપરાશકર્તા-વ્યાખ્યાયિત ક્ષેત્ર ૫(~5)"
+
+#: source/bibliography/datman.src#RID_DLG_MAPPING.GB_MAPPING.FixedLine.Text
+msgid  "Column names"
+msgstr "સ્તંભ નામો"
+
+#: source/bibliography/datman.src#RID_DLG_MAPPING.ST_NONE.String.Text
+msgid  "<none>"
+msgstr "<કંઇ નહિ>"
+
+#: source/bibliography/datman.src#RID_DLG_MAPPING.String.Text
+msgid  "Column Layout for Table %1"
+msgstr "કોષ્ટક %1 માટે સ્તંભનો દેખાવ"
+
+#: source/bibliography/datman.src#RID_DLG_DBCHANGE.ModalDialog.Text
+msgid  "Choose Data Source"
+msgstr "માહિતીનો સ્રોત પસંદ કરો"
+
+#: source/bibliography/datman.src#RID_DLG_DBCHANGE.ST_ENTRY.String.Text
+msgid  "Entry"
+msgstr "દાખલ"
+
+#: source/bibliography/bib.src#RID_BIB_STR_FIELDSELECTION.String.Text
+msgid  "Field selection:"
+msgstr "ક્ષેત્ર પસંદગી:"
+
+#: source/bibliography/bib.src#RID_BIB_STR_TABWIN_PREFIX.String.Text
+msgid  "Table;Query;Sql;Sql [Native]"
+msgstr "કોષ્ટક;પ્રશ્ર્ન;Sql;Sql [પરંપરાગત]"
+
+#: source/bibliography/bib.src#RID_BIB_STR_FRAME_TITLE.String.Text
+msgid  "Bibliography Database"
+msgstr "ગ્રંથસૂચિનો ડેટાબેઝ"
+
+#: source/bibliography/bib.src#RID_MAP_QUESTION.String.Text
+msgid  "Do you want to edit the column arrangement?"
+msgstr "શું તમે સ્તંભની ગોઠવણીમાં ફેરફાર કરવા ઈચ્છો છો?"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.TabPage.Text
+msgid  "Table Selection"
+msgstr "કોષ્ટક પસંદગી"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FL_FRAME.FixedLine.Text
+msgid  "Control"
+msgstr "નિયંત્રણ"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
+msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
 msgstr ""
-"ઉપકરણ\n"
-" વિશે (~i)"
 
-#: sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.pushbutton.text
-msgid ""
-"Create\n"
-"Preview"
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
+msgid  "Field Selection"
+msgstr "ક્ષેત્ર પસંદગી"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_TABLEFIELDS.FixedText.Text
+msgid  "Existing fields"
+msgstr "હાલના ક્ષેત્રો"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_DISPLAYEDFIELD.FixedText.Text
+msgid  "Display field"
+msgstr "ડિસ્પ્લે ક્ષેત્ર"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_COMBOBOX.String.Text
+msgid  "The contents of the field selected will be shown in the combo box list."
+msgstr "ક્ષેત્રનાં પસંદિત થયેલ ભાગો કોમ્બો બોક્સમાં દર્શાવવા જોઈએ."
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.String.Text
+msgid  "The contents of the selected field will be shown in the list box if the linked fields are identical."
 msgstr ""
-"પૂર્વદર્શન\n"
-"બનાવો"
 
-#: sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.fixedline.text
-msgid "Preview"
-msgstr "પૂર્વદર્શન"
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.TabPage.Text
+msgid  "Field Link"
+msgstr "ક્ષેત્રની કડી"
 
-#: sanedlg.src#RID_SANE_DIALOG.RID_SCANAREA_BOX.fixedline.text
-msgid "Scan area"
-msgstr "વિસ્તાર તપાસો"
-
-#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_LEFT_TXT.fixedtext.text
-msgid "Left:"
-msgstr "ડાબે"
-
-#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_TOP_TXT.fixedtext.text
-msgid "Top:"
-msgstr "ઉપર:"
-
-#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RIGHT_TXT.fixedtext.text
-msgid "Right:"
-msgstr "જમણુ:"
-
-#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BOTTOM_TXT.fixedtext.text
-msgid "Bottom:"
-msgstr "નીચે:"
-
-#: sanedlg.src#RID_SANE_DIALOG.RID_DEVICE_BOX_TXT.fixedtext.text
-msgid "Device used:"
-msgstr "વપરાતુ ઉપકરણ:"
-
-#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RESOLUTION_TXT.fixedtext.text
-msgid "Resolution [~DPI]"
-msgstr "રેઝોલ્યુશન [~DPI]"
-
-#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_ADVANCED_TXT.fixedtext.text
-msgid "Show advanced options"
-msgstr "આધુનિક વિકલ્પો બતાવો"
-
-#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_OPTION_TXT.fixedtext.text
-msgid "Options:"
-msgstr "વિકલ્પો:"
-
-#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_NUMERIC_VECTOR_TXT.fixedtext.text
-msgid "Vector element"
-msgstr "સદિશનો ભાગ"
-
-#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.pushbutton.text
-msgctxt "sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.pushbutton.text"
-msgid "Set"
-msgstr "સમૂહ"
-
-#: sanedlg.src#RID_SANE_DIALOG.modaldialog.text
-msgid "Scanner"
-msgstr "તપાસનાર"
-
-#: sanedlg.src#RID_SANE_DEVICEINFO_TXT.string.text
-msgid ""
-"Device: %s\n"
-"Vendor: %s\n"
-"Model: %s\n"
-"Type: %s"
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.FixedText.Text
+msgid  "This is where you select fields with matching contents so that the value from the display field will be shown."
 msgstr ""
-"ઉપકરણ: %s\n"
-"વિક્રેતા: %s\n"
-"મોડેલ: %s\n"
-"પ્રકાર: %s"
 
-#: sanedlg.src#RID_SANE_SCANERROR_TXT.string.text
-msgid "An error occurred while scanning."
-msgstr "સ્કેનિંગ કરતી વખતે ભૂલ થઇ."
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.FixedText.Text
+msgid  "Field from the ~Value Table"
+msgstr "કિંમતનાં કોષ્ટકમાંનાં ક્ષેત્ર(~V)"
 
-#: sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.string.text
-msgid ""
-"The device does not offer a preview option. Therefore, a normal scan will be "
-"used as a preview instead. This may take a considerable amount of time."
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_TABLEFIELD.FixedText.Text
+msgid  "Field from the ~List Table"
+msgstr "યાદીનાં કોષ્ટકમાંનાં ક્ષેત્ર(~L)"
+
+#: source/dbpilots/listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.String.Text
+msgid  "You can either save the value of the combo box in a database field or use it for display purposes."
 msgstr ""
-"ઉપકરણ પૂર્વદર્શનનો વિકલ્પ રજૂ કરતુ નથી. તેથી સામાન્ય તપાસ એ પૂર્વદર્શનની "
-"ક્ષેત્રએ વપરાય છે. આ કદાચ નોંધપાત્ર માત્રામાં સમય લેશે."
 
-#: sanedlg.src#RID_SANE_NOSANELIB_TXT.string.text
-msgid "The SANE interface could not be initialized. Scanning is not possible."
-msgstr "SANE ઈન્ટરફેસ ચાલુ કરી શકાયો નહિ. તપાસ શક્ય નથી."
+#: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.TabPage.Text
+msgid  "Field Selection"
+msgstr "ક્ષેત્ર પસંદગી"
 
-#: preload.src#RID_DLG_OEMWIZARD.PB_PREV.pushbutton.text
-msgid "<< Back"
+#: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FL_FRAME.FixedLine.Text
+msgid  "Table element"
+msgstr "કોષ્ટક ભાગ"
+
+#: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.FixedText.Text
+msgid  "Existing fields"
+msgstr "હાજર ક્ષેત્રો"
+
+#: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_SELECTED_FIELDS.FixedText.Text
+msgid  "Selected fields"
+msgstr "પસંદિત ક્ષેત્રો"
+
+#: source/dbpilots/gridpages.src#RID_STR_DATEPOSTFIX.String.Text
+msgid  " (Date)"
+msgstr " (તારીખ)"
+
+#: source/dbpilots/gridpages.src#RID_STR_TIMEPOSTFIX.String.Text
+msgid  " (Time)"
+msgstr " (સમય)"
+
+#: source/dbpilots/dbpilots.src#RID_DLG_GROUPBOXWIZARD.ModalDialog.Text
+msgid  "Group Element Wizard"
+msgstr "જૂથ ઘટક વિઝાર્ડ"
+
+#: source/dbpilots/dbpilots.src#RID_DLG_GRIDWIZARD.ModalDialog.Text
+msgid  "Table Element Wizard"
+msgstr "કોષ્ટક ઘટક વિઝાર્ડ"
+
+#: source/dbpilots/dbpilots.src#RID_STR_LISTWIZARD_TITLE.String.Text
+msgid  "List Box Wizard"
+msgstr "યાદી બોક્સ વિઝાર્ડ"
+
+#: source/dbpilots/dbpilots.src#RID_STR_COMBOWIZARD_TITLE.String.Text
+msgid  "Combo Box Wizard"
+msgstr "કમ્બો બોક્સ વિઝાર્ડ"
+
+#: source/dbpilots/dbpilots.src#RID_STR_COULDNOTOPENTABLE.String.Text
+msgid  "The table connection to the data source could not be established."
+msgstr "માહિતીનાં સ્રોત સાથેનું કોષ્ટકનું જોડાણ પ્રસ્થાપિત થઈ શક્યું નહિ."
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.TabPage.Text
+msgid  "Data"
+msgstr "માહિતી"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FL_DATA.FixedLine.Text
+msgid  "Data"
+msgstr "માહિતી"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
+msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
+msgstr ""
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
+msgid  "~Data source:"
+msgstr "માહિતી(~D):"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.PB_FORMDATASOURCE.PushButton.Text
+msgid  "~..."
+msgstr "~..."
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_TABLE.FixedText.Text
+msgid  "~Table / Query:"
+msgstr "કોષ્ટક / પ્રશ્ન (~T):"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.TabPage.Text
+msgid  "Database Field"
+msgstr "ડેટાબેઝ ક્ષેત્ર"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.FT_DATABASEFIELD_QUEST.FixedText.Text
+msgid  "Do you want to save the value in a database field?"
+msgstr "શું તમે કિંમત ડેટાબેઝની ક્ષેત્રમાં સંગ્રહ કરવા ઈચ્છો છો?"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_YES.RadioButton.Text
+msgid  "~Yes, I want to save it in the following database field:"
+msgstr "હા, મારે નીચેના માહિતી ક્ષેત્રો સંગ્રહ કરવા છે(~Y):"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_NO.RadioButton.Text
+msgid  "~No, I only want to save the value in the form."
+msgstr "ના, મારે ફ્કત ફોર્મની કિંમતો સંગ્રહ કરવી છે.(~N)"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FL_FORMSETINGS.FixedLine.Text
+msgid  "Form"
+msgstr "ફોર્મ"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMDATASOURCELABEL.FixedText.Text
+msgid  "Data source"
+msgstr "માહિતી સ્રોત"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMCONTENTTYPELABEL.FixedText.Text
+msgid  "Content type"
+msgstr "સમાવિષ્ટ પ્રકાર"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMTABLELABEL.FixedText.Text
+msgid  "Content"
+msgstr "વિગત"
+
+#: source/dbpilots/commonpagesdbp.src#RID_STR_TYPE_TABLE.String.Text
+msgid  "Table"
+msgstr "કોષ્ટક"
+
+#: source/dbpilots/commonpagesdbp.src#RID_STR_TYPE_QUERY.String.Text
+msgid  "Query"
+msgstr "પ્રશ્ર્ન"
+
+#: source/dbpilots/commonpagesdbp.src#RID_STR_TYPE_COMMAND.String.Text
+msgid  "SQL command"
+msgstr "SQL આદેશ"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.TabPage.Text
+msgid  "Data"
+msgstr "માહિતી"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOLABELS.FixedText.Text
+msgid  "Which ~names do you want to give the option fields?"
+msgstr "વૈકલ્પિક ક્ષેત્રોને કયા નામો આપવા ઈચ્છો છો(~n)?"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.FixedText.Text
+msgid  "~Option fields"
+msgstr "વૈકલ્પિક ક્ષેત્રો (~O)"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.TabPage.Text
+msgid  "Default Field Selection"
+msgstr "મૂળભૂત ક્ષેત્રની પસંદગી"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.FT_DEFAULTSELECTION.FixedText.Text
+msgid  "Should one option field be selected as a default?"
+msgstr "વૈકલ્પિક ક્ષેત્ર મૂળભૂત તરીકે પસંદિત થવી જોઈએ?"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_YES.RadioButton.Text
+msgid  "~Yes, the following:"
+msgstr "હા, નીચેનું(~Y):"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_NO.RadioButton.Text
+msgid  "No, one particular field is not going to be selected."
+msgstr "ના, ખાસ ક્ષેત્ર પસંદ કરવાનું નથી."
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.TabPage.Text
+msgid  "Field Values"
+msgstr "ક્ષેત્ર કિંમતો"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES_EXPL.FixedText.Text
+msgid  "When you select an option, the option group is given a specific value."
+msgstr "જ્યારે તમે વિકલ્પ પસંદ કરો ત્યારે વિકલ્પ સમૂહ ખાસ કિંમત આપે છે."
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES.FixedText.Text
+msgid  "Which ~value do you want to assign to each option?"
+msgstr "તમે પ્રત્યેક વિકલ્પને કઈ કિંમત ફાળવવા ઈચ્છો છો(~v)?"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_RADIOBUTTONS.FixedText.Text
+msgid  "~Option fields"
+msgstr "વૈકલ્પિક ક્ષેત્રો (~O)"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.TabPage.Text
+msgid  "Create Option Group"
+msgstr "વિકલ્પનો સમૂહ બનાવો"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_NAMEIT.FixedText.Text
+msgid  "Which ~caption is to be given to your option group?"
+msgstr "તમારા વિકલ્પનાં સમૂહને કયુ શીર્ષક આપવુ છે(~c)?"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_THATSALL.FixedText.Text
+msgid  "These were all details needed to create the option group."
+msgstr "વિકલ્પનો સમૂહ બનાવવા માટે આ બધી વિગતો જરૂરી હતી."
+
+#: source/dbpilots/groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.String.Text
+msgid  "You can either save the value of the option group in a database field or use it for a later action."
+msgstr ""
+
+#: source/preload/preload.src#RID_DLG_OEMWIZARD.PB_PREV.PushButton.Text
+msgid  "<< Back"
 msgstr "<< પાછળ"
 
-#: preload.src#RID_DLG_OEMWIZARD.PB_NEXT.pushbutton.text
-msgid "Next >>"
+#: source/preload/preload.src#RID_DLG_OEMWIZARD.PB_NEXT.PushButton.Text
+msgid  "Next >>"
 msgstr "આગળ >>"
 
-#: preload.src#RID_DLG_OEMWIZARD.ST_ACCEPT.string.text
-msgid "Accept"
+#: source/preload/preload.src#RID_DLG_OEMWIZARD.ST_ACCEPT.String.Text
+msgid  "Accept"
 msgstr "સ્વીકારો"
 
-#: preload.src#RID_DLG_OEMWIZARD.ST_FINISH.string.text
-msgid "Finish"
+#: source/preload/preload.src#RID_DLG_OEMWIZARD.ST_FINISH.String.Text
+msgid  "Finish"
 msgstr "સંપૂર્ણ"
 
-#: preload.src#RID_DLG_OEMWIZARD.ST_LICENSE_AGREEMENT.string.text
-msgid " - Software License Agreement"
+#: source/preload/preload.src#RID_DLG_OEMWIZARD.ST_LICENSE_AGREEMENT.String.Text
+msgid  " - Software License Agreement"
 msgstr " - સોફ્ટવેર લાયસન્સ કરાર"
 
-#: preload.src#RID_DLG_OEMWIZARD.ST_INSERT_USER_DATA.string.text
-msgid "- User Data"
+#: source/preload/preload.src#RID_DLG_OEMWIZARD.ST_INSERT_USER_DATA.String.Text
+msgid  "- User Data"
 msgstr "- વપરાશકર્તા માહિતી"
 
-#: preload.src#RID_TP_WELCOME.FT_INFO.fixedtext.text
-msgid ""
-"Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n"
-"\n"
-"To start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal "
-"data in the dialog following the license text. Important information is "
-"contained in the readme files which are located in the %PRODUCTNAME product "
-"directory. Please read these files carefully. You can also find detailed "
-"information at the Oracle website \n"
-"\n"
-"http://www.oracle.com/us/products/applications/open-office."
-msgstr ""
-"%PRODUCTNAME %PRODUCTVERSION OEM માં તમારુ સ્વાગત છે\n"
-"\n"
-"%PRODUCTNAME %PRODUCTVERSION OEM ને શરૂ કરવા માટે, મહેરબાની કરીને નીચેનાં "
-"લાઇસન્સ લખાણ સંવાદમાં તમારી વ્યક્તિગત માહિતીને દાખલ કરો. મહત્વની જાણકારી "
-"readme ફાઇલોમાં સમાવેલ છે કે જે %PRODUCTNAME પ્રોડક્ટ શબ્દકોષમાં સ્થિત થયેલ "
-"છે. મહેરબાની કરીને આ ફાઇલોને કાળજીપૂર્વક વાંચો. તમે Oracle વેબસાઇટ પર વિગત "
-"થયેલ જાણકારીને શોધી શકો છો \n"
-"\n"
-"http://www.oracle.com/us/products/applications/open-office."
-
-#: preload.src#RID_TP_WELCOME.tabpage.text
-msgid "Welcome"
+#: source/preload/preload.src#RID_TP_WELCOME.TabPage.Text
+msgid  "Welcome"
 msgstr "સ્વાગત"
 
-#: preload.src#RID_TP_LICENSE.FT_INFO1.fixedtext.text
-msgid "Please follow these steps to proceed with the installation:"
+#: source/preload/preload.src#RID_TP_WELCOME.FT_INFO.FixedText.Text
+msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \n\nhttp://www.oracle.com/us/products/applications/open-office."
+msgstr ""
+
+#: source/preload/preload.src#RID_TP_LICENSE.TabPage.Text
+msgid  "License Agreement"
+msgstr "લાયસન્સ કરાર"
+
+#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO1.FixedText.Text
+msgid  "Please follow these steps to proceed with the installation:"
 msgstr "મહેરબાની કરીને સ્થાપના સાથે આગળ પ્રક્રિયા કરવા માટે આ તબક્કાઓ અનુસરો:"
 
-#: preload.src#RID_TP_LICENSE.FT_INFO2_1.fixedtext.text
-msgid "1."
+#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO2_1.FixedText.Text
+msgid  "1."
 msgstr "૧."
 
-#: preload.src#RID_TP_LICENSE.FT_INFO2.fixedtext.text
-msgid ""
-"View the complete License Agreement. Please use the scroll bar or the '%"
-"PAGEDOWN' button in this dialog to view the entire license text."
+#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO2.FixedText.Text
+msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
 msgstr ""
-"પૂરેપૂરુ લાયસન્સ કરાર દેખાડો. મહેરબાની કરીને આખુ લાયસન્સ લખાણ જોવા માટે "
-"ખસેડવાની પટ્ટી અથવા '%PAGEDOWN' બટન વાપરો."
 
-#: preload.src#RID_TP_LICENSE.PB_PAGEDOWN.pushbutton.text
-msgid "Page Down"
+#: source/preload/preload.src#RID_TP_LICENSE.PB_PAGEDOWN.PushButton.Text
+msgid  "Page Down"
 msgstr "પાનું નીચે"
 
-#: preload.src#RID_TP_LICENSE.FT_INFO3_1.fixedtext.text
-msgid "2."
+#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO3_1.FixedText.Text
+msgid  "2."
 msgstr "૨."
 
-#: preload.src#RID_TP_LICENSE.FT_INFO3.fixedtext.text
-msgid "Accept the License Agreement."
+#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO3.FixedText.Text
+msgid  "Accept the License Agreement."
 msgstr "લાયસન્સ કરાર સ્વીકારો."
 
-#: preload.src#RID_TP_LICENSE.CB_ACCEPT.checkbox.text
-msgid "I accept the terms of the Agreement."
+#: source/preload/preload.src#RID_TP_LICENSE.CB_ACCEPT.CheckBox.Text
+msgid  "I accept the terms of the Agreement."
 msgstr "હું કરારની શરતો સ્વીકારુ છુ."
 
-#: preload.src#RID_TP_LICENSE.LICENCE_ACCEPT.string.text
-msgid "~Accept"
+#: source/preload/preload.src#RID_TP_LICENSE.LICENCE_ACCEPT.String.Text
+msgid  "~Accept"
 msgstr "સ્વીકારો(~A)"
 
-#: preload.src#RID_TP_LICENSE.LICENCE_NOTACCEPT.string.text
-msgid "Decline"
+#: source/preload/preload.src#RID_TP_LICENSE.LICENCE_NOTACCEPT.String.Text
+msgid  "Decline"
 msgstr "અસ્વીકારો"
 
-#: preload.src#RID_TP_LICENSE.tabpage.text
-msgid "License Agreement"
-msgstr "લાયસન્સ કરાર"
+#: source/propctrlr/taborder.src#RID_DLG_TABORDER.ModalDialog.Text
+msgid  "Tab Order"
+msgstr "ટેબનો ક્રમાંક"
+
+#: source/propctrlr/taborder.src#RID_DLG_TABORDER.FT_CONTROLS.FixedText.Text
+msgid  "Controls"
+msgstr "નિયંત્રણો"
+
+#: source/propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_UP.PushButton.Text
+msgid  "Move Up"
+msgstr "ઉપર ખસો"
+
+#: source/propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_DOWN.PushButton.Text
+msgid  "Move Down"
+msgstr "નીચે ખસો"
+
+#: source/propctrlr/taborder.src#RID_DLG_TABORDER.PB_AUTO_ORDER.PushButton.Text
+msgid  "Automatic Sort"
+msgstr "ક્રમમાં ગોઠવો"
+
+#: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.FixedText.Text
+msgid  "These are control fields that can be used as label fields for the $control_class$ $control_name$."
+msgstr ""
+
+#: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.CheckBox.Text
+msgid  "~No assignment"
+msgstr "ફાળવણી નહિ(~N)"
+
+#: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.CancelButton.Text
+msgid  "Label Field Selection"
+msgstr "લેબલ ક્ષેત્ર પસંદગી"
+
+#: source/propctrlr/selectlabeldialog.src#RID_STR_FORMS.String.Text
+msgid  "Forms"
+msgstr "ફોર્મો"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
+msgid  "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
+msgstr ""
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
+msgid  "Button"
+msgstr "બટન"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_RADIOBUTTON.String.Text
+msgid  "Option Button"
+msgstr "વિકલ્પ બટન"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CHECKBOX.String.Text
+msgid  "Check Box"
+msgstr "ચૅક બોક્સ"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.String.Text
+msgid  "Label Field"
+msgstr "લેબલ ક્ષેત્ર"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_GROUPBOX.String.Text
+msgid  "Group Box"
+msgstr "સમૂહ પેટી"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_EDIT.String.Text
+msgid  "Text Box"
+msgstr "લખાણ પેટી"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FORMATTED.String.Text
+msgid  "Formatted Field"
+msgstr "ફોર્મેટેડ ક્ષેત્ર"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_LISTBOX.String.Text
+msgid  "List Box"
+msgstr "યાદીની પેટી"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_COMBOBOX.String.Text
+msgid  "Combo Box"
+msgstr "કોમ્બો બોક્સ"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGEBUTTON.String.Text
+msgid  "Image Button"
+msgstr "ચિત્ર બટન"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_HIDDENCONTROL.String.Text
+msgid  "Hidden Control"
+msgstr "છૂપાયેલુ નિયંત્રણ"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_UNKNOWNCONTROL.String.Text
+msgid  "Control (unknown type)"
+msgstr "નિયંત્રણ (અજાણ્યો પ્રકાર)"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGECONTROL.String.Text
+msgid  "Image Control"
+msgstr "ચિત્રનું નિયંત્રણ"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FILECONTROL.String.Text
+msgid  "File Selection"
+msgstr "ફાઈલની પસંદગી"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DATEFIELD.String.Text
+msgid  "Date Field"
+msgstr "તારીખની ક્ષેત્ર"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_TIMEFIELD.String.Text
+msgid  "Time Field"
+msgstr "સમય ક્ષેત્ર"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_NUMERICFIELD.String.Text
+msgid  "Numeric Field"
+msgstr "સંખ્યાની ક્ષેત્ર"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CURRENCYFIELD.String.Text
+msgid  "Currency Field"
+msgstr "નાણા ક્ષેત્ર"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PATTERNFIELD.String.Text
+msgid  "Pattern Field"
+msgstr "ભાત ક્ષેત્ર"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DBGRID.String.Text
+msgid  "Table Control "
+msgstr "કોષ્ટક નિયંત્રણ"
+
+#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.ModalDialog.Text
+msgid  "Link fields"
+msgstr "કડી ક્ષેત્રો"
+
+#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.FixedText.Text
+msgid  "Sub forms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the sub form match which columns in the master form."
+msgstr ""
+
+#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.PB_SUGGEST.PushButton.Text
+msgid  "Suggest"
+msgstr "સૂચવો"
+
+#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_DETAIL_FORM.String.Text
+msgid  "Sub Form"
+msgstr "ઉપ ફોર્મ"
+
+#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_MASTER_FORM.String.Text
+msgid  "Master Form"
+msgstr "મુખ્ય ફોર્મ"
+
+#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_ERROR_RETRIEVING_COLUMNS.String.Text
+msgid  "The columns of '#' could not be retrieved."
+msgstr "'#' નાં સ્તંભો ને પાછા મેળવી શકાયા નહિં."
+
+#: source/propctrlr/propres.src#RID_STR_STANDARD.String.Text
+msgid  "Default"
+msgstr "મૂળભૂત"
+
+#: source/propctrlr/propres.src#RID_STR_PROPPAGE_DEFAULT.String.Text
+msgid  "General"
+msgstr "સામાન્ય"
+
+#: source/propctrlr/propres.src#RID_STR_PROPPAGE_DATA.String.Text
+msgid  "Data"
+msgstr "માહિતી"
+
+#: source/propctrlr/propres.src#RID_RSC_ENUM_YESNO.1.String.Text
+msgid  "No"
+msgstr "ના"
+
+#: source/propctrlr/propres.src#RID_RSC_ENUM_YESNO.2.String.Text
+msgid  "Yes"
+msgstr "હા"
+
+#: source/propctrlr/propres.src#RID_STR_HELP_SECTION_LABEL.String.Text
+msgid  "Help"
+msgstr "મદદ"
+
+#: source/propctrlr/propres.src#RID_EMBED_IMAGE_PLACEHOLDER.String.Text
+msgid  "<Embedded-Image>"
+msgstr "<Embedded-Image>"
+
+#: source/propctrlr/propres.src#RID_STR_TEXT_FORMAT.String.Text
+msgid  "Text"
+msgstr "લખાણ"
+
+#: source/propctrlr/formres.src#RID_STR_EDITMASK.String.Text
+msgid  "Edit mask"
+msgstr "આવરણમાં ફેરફાર"
+
+#: source/propctrlr/formres.src#RID_STR_LITERALMASK.String.Text
+msgid  "Literal mask"
+msgstr "અક્ષરેઅક્ષરનું આવરણ"
+
+#: source/propctrlr/formres.src#RID_STR_READONLY.String.Text
+msgid  "Read-only"
+msgstr "માત્ર-વાંચી શકાય"
+
+#: source/propctrlr/formres.src#RID_STR_ENABLED.String.Text
+msgid  "Enabled"
+msgstr "સક્રિય"
+
+#: source/propctrlr/formres.src#RID_STR_ENABLE_VISIBLE.String.Text
+msgid  "Visible"
+msgstr "દૃશ્ય"
+
+#: source/propctrlr/formres.src#RID_STR_AUTOCOMPLETE.String.Text
+msgid  "AutoFill"
+msgstr "આપમેળેભરો"
+
+#: source/propctrlr/formres.src#RID_STR_LINECOUNT.String.Text
+msgid  "Line count"
+msgstr "લીટી ક્રમ"
+
+#: source/propctrlr/formres.src#RID_STR_MAXTEXTLEN.String.Text
+msgid  "Max. text length"
+msgstr "મહત્તમ લખાણ લંબાઈ"
+
+#: source/propctrlr/formres.src#RID_STR_SPIN.String.Text
+msgid  "Spin Button"
+msgstr "ફેરવવા માટેનું બટન"
+
+#: source/propctrlr/formres.src#RID_STR_STRICTFORMAT.String.Text
+msgid  "Strict format"
+msgstr "કડક બંધારણ"
+
+#: source/propctrlr/formres.src#RID_STR_SHOWTHOUSANDSEP.String.Text
+msgid  "Thousands separator"
+msgstr "હજારને છૂટુ પાડનાર"
+
+#: source/propctrlr/formres.src#RID_STR_PRINTABLE.String.Text
+msgid  "Printable"
+msgstr "છાપી શકાય તેવુ"
+
+#: source/propctrlr/formres.src#RID_STR_TARGET_URL.String.Text
+msgid  "URL"
+msgstr "URL"
+
+#: source/propctrlr/formres.src#RID_STR_TARGET_FRAME.String.Text
+msgid  "Frame"
+msgstr "ચોકઠું"
+
+#: source/propctrlr/formres.src#RID_STR_HELPTEXT.String.Text
+msgid  "Help text"
+msgstr "મદદ લખાણ"
+
+#: source/propctrlr/formres.src#RID_STR_HELPURL.String.Text
+msgid  "Help URL"
+msgstr "મદદ માટે URL"
+
+#: source/propctrlr/formres.src#RID_STR_TAG.String.Text
+msgid  "Additional information"
+msgstr "વધારાની માહિતી"
+
+#: source/propctrlr/formres.src#RID_STR_ECHO_CHAR.String.Text
+msgid  "Password character"
+msgstr "પાસવર્ડ અક્ષર"
+
+#: source/propctrlr/formres.src#RID_STR_TRISTATE.String.Text
+msgid  "Tristate"
+msgstr "ત્રણ તબક્કા"
+
+#: source/propctrlr/formres.src#RID_STR_EMPTY_IS_NULL.String.Text
+msgid  "Empty string is NULL"
+msgstr "ખાલી શબ્દમાળા NULL છે."
+
+#: source/propctrlr/formres.src#RID_STR_DECIMAL_ACCURACY.String.Text
+msgid  "Decimal accuracy"
+msgstr "દશાંશની ચોક્સાઈ"
+
+#: source/propctrlr/formres.src#RID_STR_IMAGE_URL.String.Text
+msgid  "Graphics"
+msgstr "ગ્રાફિક્સ"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULT_SELECT_SEQ.String.Text
+msgid  "Default selection"
+msgstr "મૂળભૂત પસંદગી"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULT_BUTTON.String.Text
+msgid  "Default button"
+msgstr "મૂળભૂત બટન"
+
+#: source/propctrlr/formres.src#RID_STR_LABELCONTROL.String.Text
+msgid  "Label Field"
+msgstr "લેબલ ક્ષેત્ર"
+
+#: source/propctrlr/formres.src#RID_STR_LABEL.String.Text
+msgid  "Label"
+msgstr "લેબલ"
+
+#: source/propctrlr/formres.src#RID_STR_ALIGN.String.Text
+msgid  "Alignment"
+msgstr "ગોઠવણી"
+
+#: source/propctrlr/formres.src#RID_STR_VERTICAL_ALIGN.String.Text
+msgid  "Vert. Alignment"
+msgstr "ઊભી ગોઠવણી"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.1.String.Text
+msgid  "Top"
+msgstr "ટોચ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.2.String.Text
+msgid  "Middle"
+msgstr "મધ્ય"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.3.String.Text
+msgid  "Bottom"
+msgstr "તળિયું"
+
+#: source/propctrlr/formres.src#RID_STR_IMAGEPOSITION.String.Text
+msgid  "Graphics alignment"
+msgstr "ગ્રાફિક્સ ગોઠવણી"
+
+#: source/propctrlr/formres.src#RID_STR_FONT.String.Text
+msgid  "Font"
+msgstr "ફોન્ટ"
+
+#: source/propctrlr/formres.src#RID_STR_BACKGROUNDCOLOR.String.Text
+msgid  "Background color"
+msgstr "પાશ્વ ભાગનો રંગ"
+
+#: source/propctrlr/formres.src#RID_STR_BORDER.String.Text
+msgid  "Border"
+msgstr "હદ"
+
+#: source/propctrlr/formres.src#RID_STR_ICONSIZE.String.Text
+msgid  "Icon size"
+msgstr "ચિહ્ન માપ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.1.String.Text
+msgid  "Small"
+msgstr "નાનું"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.2.String.Text
+msgid  "Large"
+msgstr "મોટું"
+
+#: source/propctrlr/formres.src#RID_STR_SHOW_POSITION.String.Text
+msgid  "Positioning"
+msgstr "સ્થાનિકરણ"
+
+#: source/propctrlr/formres.src#RID_STR_SHOW_NAVIGATION.String.Text
+msgid  "Navigation"
+msgstr "શોધખોળ"
+
+#: source/propctrlr/formres.src#RID_STR_SHOW_RECORDACTIONS.String.Text
+msgid  "Acting on a record"
+msgstr "રેકોર્ડ પરની ક્રિયા"
+
+#: source/propctrlr/formres.src#RID_STR_SHOW_FILTERSORT.String.Text
+msgid  "Filtering / Sorting"
+msgstr "ગાળણ / ગોઠવણી"
+
+#: source/propctrlr/formres.src#RID_STR_HSCROLL.String.Text
+msgid  "Horizontal scroll bar"
+msgstr "આડી ખસેડવાની પટ્ટી"
+
+#: source/propctrlr/formres.src#RID_STR_VSCROLL.String.Text
+msgid  "Vertical scroll bar"
+msgstr "ઉભી ખસેડવાની પટ્ટી"
+
+#: source/propctrlr/formres.src#RID_STR_WORDBREAK.String.Text
+msgid  "Word break"
+msgstr "શબ્દ અટકણ"
+
+#: source/propctrlr/formres.src#RID_STR_MULTILINE.String.Text
+msgid  "Multiline input"
+msgstr "વધારે લીટીવાળો ઈનપુટ"
+
+#: source/propctrlr/formres.src#RID_STR_MULTISELECTION.String.Text
+msgid  "Multiselection"
+msgstr "ઘણી પસંદગીઓ"
+
+#: source/propctrlr/formres.src#RID_STR_NAME.String.Text
+msgid  "Name"
+msgstr "નામ"
+
+#: source/propctrlr/formres.src#RID_STR_TABINDEX.String.Text
+msgid  "Tab order"
+msgstr "ટેબ ક્રમ"
+
+#: source/propctrlr/formres.src#RID_STR_WHEEL_BEHAVIOR.String.Text
+msgid  "Mouse wheel scroll"
+msgstr "માઉસ વ્હિલ સ્ક્રોલ"
+
+#: source/propctrlr/formres.src#RID_STR_FILTER.String.Text
+msgid  "Filter"
+msgstr "ગળણી"
+
+#: source/propctrlr/formres.src#RID_STR_SORT_CRITERIA.String.Text
+msgid  "Sort"
+msgstr "ક્રમમાં ગોઠવો"
+
+#: source/propctrlr/formres.src#RID_STR_RECORDMARKER.String.Text
+msgid  "Record marker"
+msgstr "રેકોર્ડ દર્શક"
+
+#: source/propctrlr/formres.src#RID_STR_FILTERPROPOSAL.String.Text
+msgid  "Filter proposal"
+msgstr "પ્રસ્તાવના ગાળક"
+
+#: source/propctrlr/formres.src#RID_STR_NAVIGATION.String.Text
+msgid  "Navigation bar"
+msgstr "માર્ગદર્શક પટ્ટી"
+
+#: source/propctrlr/formres.src#RID_STR_CYCLE.String.Text
+msgid  "Cycle"
+msgstr "ચક્ર"
+
+#: source/propctrlr/formres.src#RID_STR_TABSTOP.String.Text
+msgid  "Tabstop"
+msgstr "ટૅબસ્ટોપ"
+
+#: source/propctrlr/formres.src#RID_STR_CONTROLSOURCE.String.Text
+msgid  "Data field"
+msgstr "માહિતી ક્ષેત્ર"
+
+#: source/propctrlr/formres.src#RID_STR_DROPDOWN.String.Text
+msgid  "Dropdown"
+msgstr "નીચે લાવો"
+
+#: source/propctrlr/formres.src#RID_STR_BOUNDCOLUMN.String.Text
+msgid  "Bound field"
+msgstr "સીમા ક્ષેત્ર"
+
+#: source/propctrlr/formres.src#RID_STR_LISTSOURCE.String.Text
+msgid  "List content"
+msgstr "યાદી સમાવિષ્ટ ભાગો"
+
+#: source/propctrlr/formres.src#RID_STR_LISTSOURCETYPE.String.Text
+msgid  "Type of list contents"
+msgstr "યાદી સમાવિષ્ટ ભાગોના પ્રકાર"
+
+#: source/propctrlr/formres.src#RID_STR_CURSORSOURCE.String.Text
+msgid  "Content"
+msgstr "વિગત"
+
+#: source/propctrlr/formres.src#RID_STR_CURSORSOURCETYPE.String.Text
+msgid  "Content type"
+msgstr "સમાવિષ્ટ પ્રકાર"
+
+#: source/propctrlr/formres.src#RID_STR_ALLOW_ADDITIONS.String.Text
+msgid  "Allow additions"
+msgstr "વધારો માન્ય"
+
+#: source/propctrlr/formres.src#RID_STR_ALLOW_DELETIONS.String.Text
+msgid  "Allow deletions"
+msgstr "કાઢી નાંખવાને માન્ય કરો"
+
+#: source/propctrlr/formres.src#RID_STR_ALLOW_EDITS.String.Text
+msgid  "Allow modifications"
+msgstr "બદલવાનું માન્ય"
+
+#: source/propctrlr/formres.src#RID_STR_DATAENTRY.String.Text
+msgid  "Add data only"
+msgstr "ફ્કત માહિતી ઉમેરો"
+
+#: source/propctrlr/formres.src#RID_STR_DATASOURCE.String.Text
+msgid  "Data source"
+msgstr "માહિતી સ્રોત"
+
+#: source/propctrlr/formres.src#RID_STR_MASTERFIELDS.String.Text
+msgid  "Link master fields"
+msgstr "મુખ્ય ક્ષેત્રો ઉમેરો"
+
+#: source/propctrlr/formres.src#RID_STR_SLAVEFIELDS.String.Text
+msgid  "Link slave fields"
+msgstr "ગૌણ ક્ષેત્રો ઉમેરો"
+
+#: source/propctrlr/formres.src#RID_STR_VALUEMIN.String.Text
+msgid  "Value min."
+msgstr "ન્યુનત્તમ કિંમત"
+
+#: source/propctrlr/formres.src#RID_STR_VALUEMAX.String.Text
+msgid  "Value max."
+msgstr "મહત્તમ કિંમત"
+
+#: source/propctrlr/formres.src#RID_STR_VALUESTEP.String.Text
+msgid  "Incr./decrement value"
+msgstr "વધારાની/ઘટાડવાની કિંમત"
+
+#: source/propctrlr/formres.src#RID_STR_CURRENCYSYMBOL.String.Text
+msgid  "Currency symbol"
+msgstr "ચલણ સંજ્ઞા"
+
+#: source/propctrlr/formres.src#RID_STR_DATEMIN.String.Text
+msgid  "Date min."
+msgstr "ન્યુનત્તમ તારીખ"
+
+#: source/propctrlr/formres.src#RID_STR_DATEMAX.String.Text
+msgid  "Date max."
+msgstr "મહત્તમ તારીખ"
+
+#: source/propctrlr/formres.src#RID_STR_DATEFORMAT.String.Text
+msgid  "Date format"
+msgstr "તારીખ બંધારણ"
+
+#: source/propctrlr/formres.src#RID_STR_SELECTEDITEMS.String.Text
+msgid  "Selection"
+msgstr "પસંદગી"
+
+#: source/propctrlr/formres.src#RID_STR_TIMEMIN.String.Text
+msgid  "Time min."
+msgstr "ન્યુનત્તમ સમય"
+
+#: source/propctrlr/formres.src#RID_STR_TIMEMAX.String.Text
+msgid  "Time max."
+msgstr "મહત્તમ સમય"
+
+#: source/propctrlr/formres.src#RID_STR_TIMEFORMAT.String.Text
+msgid  "Time format"
+msgstr "સમય બંધારણ"
+
+#: source/propctrlr/formres.src#RID_STR_CURRSYM_POSITION.String.Text
+msgid  "Prefix symbol"
+msgstr "પૂર્વગ સંજ્ઞા"
+
+#: source/propctrlr/formres.src#RID_STR_VALUE.String.Text
+msgid  "Value"
+msgstr "કિંમત"
+
+#: source/propctrlr/formres.src#RID_STR_FORMATKEY.String.Text
+msgid  "Formatting"
+msgstr "ફોર્મેટીંગ"
+
+#: source/propctrlr/formres.src#RID_STR_CLASSID.String.Text
+msgid  "Class ID"
+msgstr "વર્ગ ઓળખ"
+
+#: source/propctrlr/formres.src#RID_STR_HEIGHT.String.Text
+msgid  "Height"
+msgstr "ઊંચાઈ"
+
+#: source/propctrlr/formres.src#RID_STR_WIDTH.String.Text
+msgid  "Width"
+msgstr "પહોળાઈ"
+
+#: source/propctrlr/formres.src#RID_STR_LISTINDEX.String.Text
+msgid  "List index"
+msgstr "યાદી અનુક્રમણિકા"
+
+#: source/propctrlr/formres.src#RID_STR_ROWHEIGHT.String.Text
+msgid  "Row height"
+msgstr "હરોળ ઊંચાઈ"
+
+#: source/propctrlr/formres.src#RID_STR_FILLCOLOR.String.Text
+msgid  "Fill color"
+msgstr "રંગ ભરો"
+
+#: source/propctrlr/formres.src#RID_STR_LINECOLOR.String.Text
+msgid  "Line color"
+msgstr "લીટી રંગ"
+
+#: source/propctrlr/formres.src#RID_STR_REFVALUE.String.Text
+msgid  "Reference value (on)"
+msgstr "સંદર્ભ કિંમત (ચાલુ)"
+
+#: source/propctrlr/formres.src#RID_STR_UNCHECKEDREFVALUE.String.Text
+msgid  "Reference value (off)"
+msgstr "સંદર્ભ કિંમત (બંધ)"
+
+#: source/propctrlr/formres.src#RID_STR_STRINGITEMLIST.String.Text
+msgid  "List entries"
+msgstr "યાદી દાખલા"
+
+#: source/propctrlr/formres.src#RID_STR_BUTTONTYPE.String.Text
+msgid  "Action"
+msgstr "ક્રિયા"
+
+#: source/propctrlr/formres.src#RID_STR_SUBMIT_ACTION.String.Text
+msgid  "URL"
+msgstr "URL"
+
+#: source/propctrlr/formres.src#RID_STR_SUBMIT_METHOD.String.Text
+msgid  "Type of submission"
+msgstr "સોંપવા માટેનો પ્રકાર"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULT_STATE.String.Text
+msgid  "Default status"
+msgstr "મૂળભૂત કિંમત"
+
+#: source/propctrlr/formres.src#RID_STR_SUBMIT_ENCODING.String.Text
+msgid  "Submission encoding"
+msgstr "સોંપવા માટે સંગ્રહ પધ્ધતિ"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULTVALUE.String.Text
+msgid  "Default value"
+msgstr "મૂળભૂત કિંમત"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULTTEXT.String.Text
+msgid  "Default text"
+msgstr "મૂળભુત લખાણ"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULTDATE.String.Text
+msgid  "Default date"
+msgstr "મૂળભુત તારીખ"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULTTIME.String.Text
+msgid  "Default time"
+msgstr "મૂળભુત સમય"
+
+#: source/propctrlr/formres.src#RID_STR_SUBMIT_TARGET.String.Text
+msgid  "Frame"
+msgstr "ચોકઠું"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.1.String.Text
+msgid  "Without frame"
+msgstr "ચોકઠાં વિના"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.2.String.Text
+msgid  "3D look"
+msgstr "3D દેખાવ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.3.String.Text
+msgid  "Flat"
+msgstr "સપાટ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.1.String.Text
+msgid  "Valuelist"
+msgstr "મૂલ્યયાદી"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.String.Text
+msgid  "Table"
+msgstr "કોષ્ટક"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.String.Text
+msgid  "Query"
+msgstr "પ્રશ્ન"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.4.String.Text
+msgid  "Sql"
+msgstr "Sql"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.5.String.Text
+msgid  "Sql [Native]"
+msgstr "Sql [Native]"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.6.String.Text
+msgid  "Tablefields"
+msgstr "કોષ્ટકક્ષેત્રો"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.1.String.Text
+msgid  "Left"
+msgstr "ડાબુ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.2.String.Text
+msgid  "Center"
+msgstr "કેન્દ્ર"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.3.String.Text
+msgid  "Right"
+msgstr "જમણું"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.1.String.Text
+msgid  "None"
+msgstr "કંઈ નહિં"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.2.String.Text
+msgid  "Submit form"
+msgstr "ફોર્મ જમા કરો"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.3.String.Text
+msgid  "Reset form"
+msgstr "ફોર્મ પુનઃસુયોજિત કરો"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.4.String.Text
+msgid  "Open document/web page"
+msgstr "ઓપન દસ્તાવેજ/વેબ પાનું"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.5.String.Text
+msgid  "First record"
+msgstr "પ્રથમ રેકોર્ડ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.6.String.Text
+msgid  "Previous record"
+msgstr "પહેલાંનો રેકોર્ડ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.7.String.Text
+msgid  "Next record"
+msgstr "આગળનો રેકોર્ડ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.8.String.Text
+msgid  "Last record"
+msgstr "છેલ્લો રેકોર્ડ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.9.String.Text
+msgid  "Save record"
+msgstr "રેકોર્ડ સંગ્રહો"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.10.String.Text
+msgid  "Undo data entry"
+msgstr "માહિતી પ્રવેશ રદ કરો"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.11.String.Text
+msgid  "New record"
+msgstr "નવો રેકોર્ડ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.12.String.Text
+msgid  "Delete record"
+msgstr "રેકોર્ડ કાઢી નાંખો"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.13.String.Text
+msgid  "Refresh form"
+msgstr "માંથી પુનઃતાજું કરો"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.1.String.Text
+msgid  "Get"
+msgstr "મેળવો"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.2.String.Text
+msgid  "Post"
+msgstr "પોસ્ટ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.String.Text
+msgid  "URL"
+msgstr "URL"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.2.String.Text
+msgid  "Multipart"
+msgstr "મલ્ટીપાર્ટ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.String.Text
+msgid  "Text"
+msgstr "લખાણ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.1.String.Text
+msgid  "Standard (short)"
+msgstr "પ્રમાણભૂત (ટૂંકું)"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.2.String.Text
+msgid  "Standard (short YY)"
+msgstr "પ્રમાણભૂત (ટૂંકું YY)"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.3.String.Text
+msgid  "Standard (short YYYY)"
+msgstr "પ્રમાણભૂત (ટૂંકું YYYY)"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.4.String.Text
+msgid  "Standard (long)"
+msgstr "પ્રમાણભૂત (લાંબુ)"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.5.String.Text
+msgid  "DD/MM/YY"
+msgstr "DD/MM/YY"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.6.String.Text
+msgid  "MM/DD/YY"
+msgstr "MM/DD/YY"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.7.String.Text
+msgid  "YY/MM/DD"
+msgstr "YY/MM/DD"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.8.String.Text
+msgid  "DD/MM/YYYY"
+msgstr "DD/MM/YYYY"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.9.String.Text
+msgid  "MM/DD/YYYY"
+msgstr "MM/DD/YYYY"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.10.String.Text
+msgid  "YYYY/MM/DD"
+msgstr "YYYY/MM/DD"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.11.String.Text
+msgid  "YY-MM-DD"
+msgstr "YY-MM-DD"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.12.String.Text
+msgid  "YYYY-MM-DD"
+msgstr "YYYY-MM-DD"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.1.String.Text
+msgid  "13:45"
+msgstr "13:45"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.2.String.Text
+msgid  "13:45:00"
+msgstr "13:45:00"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.3.String.Text
+msgid  "01:45 PM"
+msgstr "01:45 PM"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.4.String.Text
+msgid  "01:45:00 PM"
+msgstr "01:45:00 PM"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CHECKED.1.String.Text
+msgid  "Not Selected"
+msgstr "પસંદિત નથી"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CHECKED.2.String.Text
+msgid  "Selected"
+msgstr "પસંદિત"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CHECKED.3.String.Text
+msgid  "Not Defined"
+msgstr "વ્યાખ્યાયિત નથી"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CYCLE.1.String.Text
+msgid  "All records"
+msgstr "બધા રેકોર્ડો"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CYCLE.2.String.Text
+msgid  "Active record"
+msgstr "સક્રિય રેકોર્ડ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CYCLE.3.String.Text
+msgid  "Current page"
+msgstr "વર્તમાન પાનું"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.1.String.Text
+msgid  "No"
+msgstr "ના"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.2.String.Text
+msgid  "Yes"
+msgstr "હા"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.3.String.Text
+msgid  "Parent Form"
+msgstr "પિતૃ ફોર્મ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.String.Text
+msgid  "None"
+msgstr "કંઈ નહિં"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.2.String.Text
+msgid  "Single"
+msgstr "એક"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.3.String.Text
+msgid  "Multi"
+msgstr "વિવિધ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.4.String.Text
+msgid  "Range"
+msgstr "વિસ્તાર"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_APPROVEPARAMETER.String.Text
+msgid  "Fill parameters"
+msgstr "પરિમાણ ભરો"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_ACTIONPERFORMED.String.Text
+msgid  "Execute action"
+msgstr "ક્રિયાને ચલાવો"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_AFTERUPDATE.String.Text
+msgid  "After updating"
+msgstr "અપલોડ પછી"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_BEFOREUPDATE.String.Text
+msgid  "Before updating"
+msgstr "સુધાર્યા પહેલા"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_APPROVEROWCHANGE.String.Text
+msgid  "Before record action"
+msgstr "રેકોર્ડની ક્રિયા પહેલા"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_ROWCHANGE.String.Text
+msgid  "After record action"
+msgstr "રેકોર્ડની ક્રિયા પછી"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_CONFIRMDELETE.String.Text
+msgid  "Confirm deletion"
+msgstr "દૂર કરવાની ખાતરી"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_ERROROCCURED.String.Text
+msgid  "Error occurred"
+msgstr "ભૂલ દેખાઈ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_FOCUSGAINED.String.Text
+msgid  "When receiving focus"
+msgstr "જ્યારે ફોકસ મેળવો ત્યારે"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_FOCUSLOST.String.Text
+msgid  "When losing focus"
+msgstr "જ્યારે ફોકસ ગુમાવો ત્યારે"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_ITEMSTATECHANGED.String.Text
+msgid  "Item status changed"
+msgstr "વસ્તુ સ્થિતિ બદલાઈ ગઈ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_KEYTYPED.String.Text
+msgid  "Key pressed"
+msgstr "કળ દબાવી"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_KEYUP.String.Text
+msgid  "Key released"
+msgstr "કળ છોડી"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_LOADED.String.Text
+msgid  "When loading"
+msgstr "જ્યારે લાવી રહ્યા છે ત્યારે"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_RELOADING.String.Text
+msgid  "Before reloading"
+msgstr "લાવી રહ્યા છે તે પહેલા"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_RELOADED.String.Text
+msgid  "When reloading"
+msgstr "જ્યારે ફરી લાવી રહ્યા છે ત્યારે"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEDRAGGED.String.Text
+msgid  "Mouse moved while key pressed"
+msgstr "જ્યારે કળ દબાવી ત્યારે માઉસ ખસેડ્યું"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEENTERED.String.Text
+msgid  "Mouse inside"
+msgstr "માઉસ અંદર"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEEXITED.String.Text
+msgid  "Mouse outside"
+msgstr "માઉસ બહાર"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEMOVED.String.Text
+msgid  "Mouse moved"
+msgstr "માઉસ ખસેડ્યુ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEPRESSED.String.Text
+msgid  "Mouse button pressed"
+msgstr "માઉસનું બટન દબાવ્યુ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_MOUSERELEASED.String.Text
+msgid  "Mouse button released"
+msgstr "માઉસનું બટન છોડ્યુ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_POSITIONING.String.Text
+msgid  "Before record change"
+msgstr "રેકાર્ડ બદલાયા પહેલા"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_POSITIONED.String.Text
+msgid  "After record change"
+msgstr "રેકાર્ડ બદલાયા પછી"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_RESETTED.String.Text
+msgid  "After resetting"
+msgstr "ફરીગોઠવ્યા પછી"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_APPROVERESETTED.String.Text
+msgid  "Prior to reset"
+msgstr "ફરી સુયાેજિત કરવાને પ્રાધાન્ય આપો"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_APPROVEACTIONPERFORMED.String.Text
+msgid  "Approve action"
+msgstr "ક્રિયાને મંજૂરી આપો"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_SUBMITTED.String.Text
+msgid  "Before submitting"
+msgstr "સોંપ્યા પહેલા"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_TEXTCHANGED.String.Text
+msgid  "Text modified"
+msgstr "બદલાયેલુ લખાણ"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_UNLOADING.String.Text
+msgid  "Before unloading"
+msgstr "લાવ્યા ન હોય તે પહેલા"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_UNLOADED.String.Text
+msgid  "When unloading"
+msgstr "જ્યારે લાવ્યા ન હોય ત્યારે"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_CHANGED.String.Text
+msgid  "Changed"
+msgstr "બદલાયેલુ"
+
+#: source/propctrlr/formres.src#RID_STR_EVENTS.String.Text
+msgid  "Events"
+msgstr "ઘટનાઓ"
+
+#: source/propctrlr/formres.src#RID_STR_ESCAPE_PROCESSING.String.Text
+msgid  "Analyze SQL command"
+msgstr "SQL આદેશનું પૃથક્કરણ"
+
+#: source/propctrlr/formres.src#RID_STR_POSITIONX.String.Text
+msgid  "PositionX"
+msgstr "સ્થિતિX"
+
+#: source/propctrlr/formres.src#RID_STR_POSITIONY.String.Text
+msgid  "PositionY"
+msgstr "સ્થિતિY"
+
+#: source/propctrlr/formres.src#RID_STR_TITLE.String.Text
+msgid  "Title"
+msgstr "શીર્ષક"
+
+#: source/propctrlr/formres.src#RID_STR_STEP.String.Text
+msgid  "Page (step)"
+msgstr "પાનું (તબક્કો)"
+
+#: source/propctrlr/formres.src#RID_STR_PROGRESSVALUE.String.Text
+msgid  "Progress value"
+msgstr "પ્રગતિની કિંમત"
+
+#: source/propctrlr/formres.src#RID_STR_PROGRESSVALUE_MIN.String.Text
+msgid  "Progress value min."
+msgstr "પ્રગતિની ન્યૂનત્તમ કિંમત"
+
+#: source/propctrlr/formres.src#RID_STR_PROGRESSVALUE_MAX.String.Text
+msgid  "Progress value max."
+msgstr "પ્રગતિની મહત્તમ કિંમત"
+
+#: source/propctrlr/formres.src#RID_STR_SCROLLVALUE.String.Text
+msgid  "Scroll value"
+msgstr "ખસેડવાની કિંમત"
+
+#: source/propctrlr/formres.src#RID_STR_SCROLLVALUE_MAX.String.Text
+msgid  "Scroll value max."
+msgstr "ખસેડવાની મહત્તમ કિંમત"
+
+#: source/propctrlr/formres.src#RID_STR_SCROLLVALUE_MIN.String.Text
+msgid  "Scroll value min."
+msgstr "ન્યૂનતમ સરક કિંમત"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULT_SCROLLVALUE.String.Text
+msgid  "Default scroll value"
+msgstr "મૂળભુત સરક કિંમત"
+
+#: source/propctrlr/formres.src#RID_STR_LINEINCREMENT.String.Text
+msgid  "Small change"
+msgstr "નાનો ફેરફાર"
+
+#: source/propctrlr/formres.src#RID_STR_BLOCKINCREMENT.String.Text
+msgid  "Large change"
+msgstr "મોટો ફેરફાર"
+
+#: source/propctrlr/formres.src#RID_STR_REPEAT_DELAY.String.Text
+msgid  "Delay"
+msgstr "વિલંબ"
+
+#: source/propctrlr/formres.src#RID_STR_REPEAT.String.Text
+msgid  "Repeat"
+msgstr "પુનરાવર્તન"
+
+#: source/propctrlr/formres.src#RID_STR_VISIBLESIZE.String.Text
+msgid  "Visible size"
+msgstr "દ્રશ્યમાન માપ"
+
+#: source/propctrlr/formres.src#RID_STR_ORIENTATION.String.Text
+msgid  "Orientation"
+msgstr "દિશા"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.1.String.Text
+msgid  "Horizontal"
+msgstr "આડું"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.2.String.Text
+msgid  "Vertical"
+msgstr "ઊભું"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_ADJUSTMENTVALUECHANGED.String.Text
+msgid  "While adjusting"
+msgstr "જ્યારે બંધબેસતુ કરો ત્યારે"
+
+#: source/propctrlr/formres.src#RID_STR_DATE.String.Text
+msgid  "Date"
+msgstr "તારીખ"
+
+#: source/propctrlr/formres.src#RID_STR_STATE.String.Text
+msgid  "State"
+msgstr "સ્થિતિ"
+
+#: source/propctrlr/formres.src#RID_STR_TIME.String.Text
+msgid  "Time"
+msgstr "સમય"
+
+#: source/propctrlr/formres.src#RID_STR_SCALEIMAGE.String.Text
+msgid  "Scale"
+msgstr "માપદંડ"
+
+#: source/propctrlr/formres.src#RID_STR_PUSHBUTTONTYPE.String.Text
+msgid  "Button type"
+msgstr "બટન પ્રકાર"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.String.Text
+msgid  "Default"
+msgstr "મૂળભૂત"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.2.String.Text
+msgid  "OK"
+msgstr "બરાબર"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.3.String.Text
+msgid  "Cancel"
+msgstr "રદ કરો"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.String.Text
+msgid  "Help"
+msgstr "મદદ"
+
+#: source/propctrlr/formres.src#RID_STR_UNABLETOCONNECT.String.Text
+msgid  "The connection to the data source "$name$" could not be established."
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_STR_TEXT.String.Text
+msgid  "Text"
+msgstr "લખાણ"
+
+#: source/propctrlr/formres.src#RID_STR_BOUND_CELL.String.Text
+msgid  "Linked cell"
+msgstr "જોડાયેલ ખાનું"
+
+#: source/propctrlr/formres.src#RID_STR_LIST_CELL_RANGE.String.Text
+msgid  "Source cell range"
+msgstr "સ્ત્રોત ખાનાંની અવધિ"
+
+#: source/propctrlr/formres.src#RID_STR_CELL_EXCHANGE_TYPE.String.Text
+msgid  "Contents of the linked cell"
+msgstr "જોડાયેલ ખાનાની માહિતી"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.1.String.Text
+msgid  "The selected entry"
+msgstr "પસંદિત પ્રવેશ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.2.String.Text
+msgid  "Position of the selected entry"
+msgstr "પસંદિત પ્રવેશનું સ્થાન"
+
+#: source/propctrlr/formres.src#RID_STR_SHOW_SCROLLBARS.String.Text
+msgid  "Scrollbars"
+msgstr "સરકપટ્ટી"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.1.String.Text
+msgid  "Single-line"
+msgstr "એક-લીટી"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.2.String.Text
+msgid  "Multi-line"
+msgstr "ઘણી-લીટી"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.3.String.Text
+msgid  "Multi-line with formatting"
+msgstr "બંધારણ સાથેની ઘણી-લીટી"
+
+#: source/propctrlr/formres.src#RID_STR_SYMBOLCOLOR.String.Text
+msgid  "Symbol color"
+msgstr "સંજ્ઞા રંગ"
+
+#: source/propctrlr/formres.src#RID_STR_LINEEND_FORMAT.String.Text
+msgid  "Text lines end with"
+msgstr "લખાણ ફાઈલો આનાથી અંત થાય છે"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.1.String.Text
+msgid  "LF (Unix)"
+msgstr "LF (Unix)"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.2.String.Text
+msgid  "CR+LF (Windows)"
+msgstr "CR+LF (Windows)"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.1.String.Text
+msgid  "None"
+msgstr "કંઈ નહિં"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.2.String.Text
+msgid  "Horizontal"
+msgstr "આડું"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.3.String.Text
+msgid  "Vertical"
+msgstr "ઊભું"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.4.String.Text
+msgid  "Both"
+msgstr "બંને"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.String.Text
+msgid  "Table"
+msgstr "કોષ્ટક"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.String.Text
+msgid  "Query"
+msgstr "પ્રશ્ન"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.3.String.Text
+msgid  "SQL command"
+msgstr "SQL આદેશ"
+
+#: source/propctrlr/formres.src#RID_STR_TOGGLE.String.Text
+msgid  "Toggle"
+msgstr "ફેરબદલી"
+
+#: source/propctrlr/formres.src#RID_STR_FOCUSONCLICK.String.Text
+msgid  "Take Focus on Click"
+msgstr "ક્લિક કરવા પર ફોકસ લો"
+
+#: source/propctrlr/formres.src#RID_STR_HIDEINACTIVESELECTION.String.Text
+msgid  "Hide selection"
+msgstr "પસંદગી છુપાવો"
+
+#: source/propctrlr/formres.src#RID_STR_VISUALEFFECT.String.Text
+msgid  "Style"
+msgstr "શૈલી"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.1.String.Text
+msgid  "3D"
+msgstr "૩D"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.2.String.Text
+msgid  "Flat"
+msgstr "સપાટ"
+
+#: source/propctrlr/formres.src#RID_STR_BORDERCOLOR.String.Text
+msgid  "Border color"
+msgstr "કિનારી રંગ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.1.String.Text
+msgid  "Left top"
+msgstr "ઉપર ડાબે"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.2.String.Text
+msgid  "Left centered"
+msgstr "વચ્ચે ડાબે"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.3.String.Text
+msgid  "Left bottom"
+msgstr "તળિયે ડાબે"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.4.String.Text
+msgid  "Right top"
+msgstr "ઉપર જમણે"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.5.String.Text
+msgid  "Right centered"
+msgstr "વચ્ચે જમણે"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.6.String.Text
+msgid  "Right bottom"
+msgstr "તળિયે જમણે"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.7.String.Text
+msgid  "Above left"
+msgstr "ડાબેથી ઉપર"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.8.String.Text
+msgid  "Above centered"
+msgstr "વચ્ચેથી ઉપર"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.9.String.Text
+msgid  "Above right"
+msgstr "જમણેથી ઉપર"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.10.String.Text
+msgid  "Below left"
+msgstr "ડાબેથી નીચે"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.11.String.Text
+msgid  "Below centered"
+msgstr "વચ્ચેથી નીચે"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.12.String.Text
+msgid  "Below right"
+msgstr "જમણેથી નીચે"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.13.String.Text
+msgid  "Centered"
+msgstr "કેન્દ્રસ્થ"
+
+#: source/propctrlr/formres.src#RID_STR_AUTOLINEBREAK.String.Text
+msgid  "Wrap text automatically"
+msgstr "લખાણ આપોઆપ લપેટો"
+
+#: source/propctrlr/formres.src#RID_STR_TEXTTYPE.String.Text
+msgid  "Text type"
+msgstr "લખાણ પ્રકાર"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.1.String.Text
+msgid  "Hide"
+msgstr "છુપાડો"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.2.String.Text
+msgid  "Show"
+msgstr "બતાવો"
+
+#: source/propctrlr/formres.src#RID_STR_XML_DATA_MODEL.String.Text
+msgid  "XML data model"
+msgstr "XML માહિતી મોડેલ"
+
+#: source/propctrlr/formres.src#RID_STR_BIND_EXPRESSION.String.Text
+msgid  "Binding expression"
+msgstr "બાઈન્ડીંગ સમીકરણ"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_REQUIRED.String.Text
+msgid  "Required"
+msgstr "જરુરી"
+
+#: source/propctrlr/formres.src#RID_STR_LIST_BINDING.String.Text
+msgid  "List entry source"
+msgstr "યાદી પ્રવેશ સ્રોત"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_RELEVANT.String.Text
+msgid  "Relevant"
+msgstr "સંબંધિત"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_READONLY.String.Text
+msgid  "Read-only"
+msgstr "માત્ર-વાંચી શકાય"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_CONSTRAINT.String.Text
+msgid  "Constraint"
+msgstr "પરિમાણ"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_CALCULATION.String.Text
+msgid  "Calculation"
+msgstr "ગણતરી"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_DATA_TYPE.String.Text
+msgid  "Data type"
+msgstr "માહિતી પ્રકાર"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_WHITESPACES.String.Text
+msgid  "Whitespaces"
+msgstr "ખાલી જગ્યાઓ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.1.String.Text
+msgid  "Preserve"
+msgstr "સાચવો"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.2.String.Text
+msgid  "Replace"
+msgstr "બદલો"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.3.String.Text
+msgid  "Collapse"
+msgstr "અવિસ્તૃત કરો"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_PATTERN.String.Text
+msgid  "Pattern"
+msgstr "ભાત"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_LENGTH.String.Text
+msgid  "Length"
+msgstr "લંબાઈ"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_MIN_LENGTH.String.Text
+msgid  "Length (at least)"
+msgstr "લંબાઈ (ઓછામાં ઓછી)"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_MAX_LENGTH.String.Text
+msgid  "Length (at most)"
+msgstr "લંબાઈ (એકદમ મોટી)"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_TOTAL_DIGITS.String.Text
+msgid  "Digits (total)"
+msgstr "અંકો (કુલ)"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_FRACTION_DIGITS.String.Text
+msgid  "Digits (fraction)"
+msgstr "અંકો (અપૂર્ણાંક)"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_MAX_INCLUSIVE.String.Text
+msgid  "Max. (inclusive)"
+msgstr "મહત્તમ. (સમાવીને)"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_MAX_EXCLUSIVE.String.Text
+msgid  "Max. (exclusive)"
+msgstr "મહત્તમ (દૂર કરીને)"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_MIN_INCLUSIVE.String.Text
+msgid  "Min. (inclusive)"
+msgstr "ન્યૂનતમ (સમાવીને)"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_MIN_EXCLUSIVE.String.Text
+msgid  "Min. (exclusive)"
+msgstr "ન્યૂનતમ (દૂર કરીને)"
+
+#: source/propctrlr/formres.src#RID_STR_SUBMISSION_ID.String.Text
+msgid  "Submission"
+msgstr "જમા કરવાનું"
+
+#: source/propctrlr/formres.src#RID_STR_BINDING_UI_NAME.String.Text
+msgid  "Binding"
+msgstr "બાઈન્ડીંગ"
+
+#: source/propctrlr/formres.src#RID_STR_SELECTION_TYPE.String.Text
+msgid  "Selection type"
+msgstr "પસંદગી પ્રકાર"
+
+#: source/propctrlr/formres.src#RID_STR_ROOT_DISPLAYED.String.Text
+msgid  "Root displayed"
+msgstr "રુટ દર્શાવાયેલ"
+
+#: source/propctrlr/formres.src#RID_STR_SHOWS_HANDLES.String.Text
+msgid  "Show handles"
+msgstr "નિયંત્રણો બતાવો"
+
+#: source/propctrlr/formres.src#RID_STR_SHOWS_ROOT_HANDLES.String.Text
+msgid  "Show root handles"
+msgstr "રુટ નિયંત્રણો બતાવો"
+
+#: source/propctrlr/formres.src#RID_STR_EDITABLE.String.Text
+msgid  "Editable"
+msgstr "ફેરફાર કરી શકાય તેવું"
+
+#: source/propctrlr/formres.src#RID_STR_INVOKES_STOP_NOT_EDITING.String.Text
+msgid  "Invokes stop node editing"
+msgstr "નોડ સંપાદન અટકાવે છે"
+
+#: source/propctrlr/formres.src#RID_STR_DECORATION.String.Text
+msgid  "With title bar"
+msgstr "શીર્ષક પટ્ટી સાથે"
+
+#: source/propctrlr/formres.src#RID_STR_NOLABEL.String.Text
+msgid  "No Label"
+msgstr "લેબલ નથી"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.1.String.Text
+msgid  "No"
+msgstr "ના"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.2.String.Text
+msgid  "Keep Ratio"
+msgstr "પ્રમાણ રાખો"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.3.String.Text
+msgid  "Fit to Size"
+msgstr "માપ ને અનુરૂપ રાખો"
+
+#: source/propctrlr/formres.src#RID_STR_INPUT_REQUIRED.String.Text
+msgid  "Input required"
+msgstr "ઇનપુટ ની જરૂરિયાત છે"
+
+#: source/propctrlr/formres.src#RID_STR_WRITING_MODE.String.Text
+msgid  "Text direction"
+msgstr "લખાણની દિશા"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.1.String.Text
+msgid  "Left-to-right"
+msgstr "ડાબેથી જમણે"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.2.String.Text
+msgid  "Right-to-left"
+msgstr "જમણે થી ડાબે"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.3.String.Text
+msgid  "Use superordinate object settings"
+msgstr "ઉચ્ચકોટિ ઓબ્જેક્ટ સુયોજનો ને વાપરો"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.1.String.Text
+msgid  "Never"
+msgstr "કદી નહિં"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.2.String.Text
+msgid  "When focused"
+msgstr "જ્યારે પ્રકાશિત થયેલ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.3.String.Text
+msgid  "Always"
+msgstr "હંમેશા"
+
+#: source/propctrlr/formres.src#RID_STR_ANCHOR_TYPE.String.Text
+msgid  "Anchor"
+msgstr "એન્કર"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.1.String.Text
+msgid  "To Paragraph"
+msgstr "ફકરમાં"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.2.String.Text
+msgid  "As Character"
+msgstr "અક્ષર તરીકે"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.String.Text
+msgid  "To Page"
+msgstr "પાનાંમાં"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.4.String.Text
+msgid  "To Frame"
+msgstr "ફ્રેમમાં"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.5.String.Text
+msgid  "To Character"
+msgstr "અક્ષર માં"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.1.String.Text
+msgid  "To Page"
+msgstr "પાનાં માં"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.2.String.Text
+msgid  "To Cell"
+msgstr "સેલમાં"
+
+#: source/propctrlr/formres.src#RID_STR_FONTSTYLE_REGULAR.String.Text
+msgid  "Regular"
+msgstr "નિયમિત"
+
+#: source/propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD_ITALIC.String.Text
+msgid  "Bold Italic"
+msgstr "બોલ્ડ ઇટાલિક"
+
+#: source/propctrlr/formres.src#RID_STR_FONTSTYLE_ITALIC.String.Text
+msgid  "Italic"
+msgstr "ઇટાલિક"
+
+#: source/propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD.String.Text
+msgid  "Bold"
+msgstr "બોલ્ડ"
+
+#: source/propctrlr/formres.src#RID_STR_FONT_DEFAULT.String.Text
+msgid  "(Default)"
+msgstr "(મૂળભૂત)"
+
+#: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.TabDialog.Text
+msgid  "Character"
+msgstr "અક્ષર"
+
+#: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.PageItem.Text
+msgid  "Font"
+msgstr "ફોન્ટ"
+
+#: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS_EXT.PageItem.Text
+msgid  "Font Effects"
+msgstr "ફોન્ટની અસરો"
+
+#: source/propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.ModalDialog.Text
+msgid  "New Data Type"
+msgstr "નવી માહિતી પ્રકાર"
+
+#: source/propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.FT_LABEL.FixedText.Text
+msgid  "Type a name for the new data type:"
+msgstr "નવી માહિતીના પ્રકાર માટે નામ લખો:"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
+msgid  "About\n Dev~ice"
+msgstr ""
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
+msgid  "Create\nPreview"
+msgstr ""
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
+msgid  "Preview"
+msgstr "પૂર્વદર્શન"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCANAREA_BOX.FixedLine.Text
+msgid  "Scan area"
+msgstr "વિસ્તાર તપાસો"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_LEFT_TXT.FixedText.Text
+msgid  "Left:"
+msgstr "ડાબે"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_TOP_TXT.FixedText.Text
+msgid  "Top:"
+msgstr "ઉપર:"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RIGHT_TXT.FixedText.Text
+msgid  "Right:"
+msgstr "જમણુ:"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BOTTOM_TXT.FixedText.Text
+msgid  "Bottom:"
+msgstr "નીચે:"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICE_BOX_TXT.FixedText.Text
+msgid  "Device used:"
+msgstr "વપરાતુ ઉપકરણ:"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RESOLUTION_TXT.FixedText.Text
+msgid  "Resolution [~DPI]"
+msgstr "રેઝોલ્યુશન [~DPI]"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_ADVANCED_TXT.FixedText.Text
+msgid  "Show advanced options"
+msgstr "આધુનિક વિકલ્પો બતાવો"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_OPTION_TXT.FixedText.Text
+msgid  "Options:"
+msgstr "વિકલ્પો:"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_NUMERIC_VECTOR_TXT.FixedText.Text
+msgid  "Vector element"
+msgstr "સદિશનો ભાગ"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.PushButton.Text
+msgid  "Set"
+msgstr "સમૂહ"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.Bitmap.Text
+msgid  "Scanner"
+msgstr "તપાસનાર"
+
+#: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
+msgid  "Device: %s\nVendor: %s\nModel: %s\nType: %s"
+msgstr ""
+
+#: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
+msgid  "An error occurred while scanning."
+msgstr "સ્કેનિંગ કરતી વખતે ભૂલ થઇ."
+
+#: source/scanner/sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.String.Text
+msgid  "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
+msgstr ""
+
+#: source/scanner/sanedlg.src#RID_SANE_NOSANELIB_TXT.String.Text
+msgid  "The SANE interface could not be initialized. Scanning is not possible."
+msgstr "SANE ઈન્ટરફેસ ચાલુ કરી શકાયો નહિ. તપાસ શક્ય નથી."
+
+#: source/scanner/grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.PushButton.Text
+msgid  "Set"
+msgstr "સમૂહ"
+
+#: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_ASCENDING.String.Text
+msgid  "Linear ascending"
+msgstr "સુરેખ ચડતાક્રમમાં"
+
+#: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_DESCENDING.String.Text
+msgid  "Linear descending"
+msgstr "સુરેખ ઉતરતાક્રમમાં"
+
+#: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_RESET.String.Text
+msgid  "Original values"
+msgstr "મૂળ કિંમતો"
+
+#: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_EXPONENTIAL.String.Text
+msgid  "Exponential increasing"
+msgstr "પ્રતિપાદિત વધારો"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_CHECKING.String.Text
+msgid  "Checking..."
+msgstr "ચકાસી રહ્યા છીએ..."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_CHECKING_ERR.String.Text
+msgid  "Checking for an update failed."
+msgstr "સુધારા માટે ચકાસવામાં નિષ્ફળ."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_NO_UPD_FOUND.String.Text
+msgid  "%PRODUCTNAME %PRODUCTVERSION is up to date."
+msgstr "%PRODUCTNAME %PRODUCTVERSION એ પરિપૂર્ણ છે."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.String.Text
+msgid  "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
+msgstr ""
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.String.Text
+msgid  "Check for Updates"
+msgstr "સુધારાઓ માટે ચકાસો"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_PAUSE.String.Text
+msgid  "Downloading %PRODUCTNAME %NEXTVERSION paused at..."
+msgstr "%PRODUCTNAME %NEXTVERSION ડાઉનલોડ કરવાનું આગળ અટકાવાયેલ છે..."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_ERR.String.Text
+msgid  "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
+msgstr "%PRODUCTNAME %NEXTVERSION ડાઉનલોડ કરવાનું આગળ અટકાવાયેલ છે"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.String.Text
+msgid  "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
+msgstr ""
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.String.Text
+msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
+msgstr "%FILE_NAME એ %DOWNLOAD_PATH માં ડાઉનલોડ થઈ ગયેલ છે."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.String.Text
+msgid  "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
+msgstr ""
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.String.Text
+msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
+msgstr "%PRODUCTNAME %NEXTVERSION ડાઉનલોડ કરી રહ્યા છીએ..."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_READY_INSTALL.String.Text
+msgid  "Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
+msgstr ""
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.String.Text
+msgid  "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_DOWNLOAD.String.Text
+msgid  "Do you really want to cancel the download?"
+msgstr "શું તમે ખરેખર ડાઉનલોડ રદ કરવા માંગો છો?"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.String.Text
+msgid  "To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do you want to install the update now?"
+msgstr ""
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.String.Text
+msgid  "Install ~now"
+msgstr "હમણાં સ્થાપિત કરો (~n)"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_LATER.String.Text
+msgid  "Install ~later"
+msgstr "પછી સ્થાપિત કરો (~l)"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.String.Text
+msgid  "Could not run the installer application, please run %FILE_NAME in %DOWNLOAD_PATH manually."
+msgstr ""
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.String.Text
+msgid  "A file with that name already exists! Do you want to overwrite the existing file?"
+msgstr ""
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.String.Text
+msgid  "A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you want to continue with the download or delete and reload the file?"
+msgstr ""
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_RELOAD.String.Text
+msgid  "Reload File"
+msgstr "ફાઇલને પુન:લાવો"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_CONTINUE.String.Text
+msgid  "Continue"
+msgstr "ચાલુ રાખો"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_PERCENT.String.Text
+msgid  "%PERCENT%"
+msgstr "%PERCENT%"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_FT_STATUS.String.Text
+msgid  "Status"
+msgstr "પરિસ્થિતિ"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_FT_DESCRIPTION.String.Text
+msgid  "Description"
+msgstr "વર્ણન"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BTN_CLOSE.String.Text
+msgid  "Close"
+msgstr "બંધ કરો"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BTN_DOWNLOAD.String.Text
+msgid  "~Download"
+msgstr "ડાઉનલોડ (~D)"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BTN_INSTALL.String.Text
+msgid  "~Install"
+msgstr "સ્થાપન (~I)"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BTN_PAUSE.String.Text
+msgid  "~Pause"
+msgstr "અટકાવો (~P)"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BTN_RESUME.String.Text
+msgid  "~Resume"
+msgstr "છેલ્લેથી ચલાવો (~R)"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BTN_CANCEL.String.Text
+msgid  "Cancel"
+msgstr "રદ કરો"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.String.Text
+msgid  "%PRODUCTNAME update available"
+msgstr "%PRODUCTNAME સુધારો ઉપલબ્ધ"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_AVAIL.String.Text
+msgid  "Click here to start the download."
+msgstr "ડાઉનલોડ શરૂ કરવા માટે અંહિ ક્લિક કરો."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.String.Text
+msgid  "%PRODUCTNAME update available"
+msgstr "%PRODUCTNAME સુધારો ઉપલબ્ધ"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.String.Text
+msgid  "Click here for more information."
+msgstr "વધુ જાણકારી માટે અંહિ ક્લિક કરો."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.String.Text
+msgid  "%PRODUCTNAME update available"
+msgstr "%PRODUCTNAME સુધારો ઉપલબ્ધ"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_AUTO_START.String.Text
+msgid  "Download of update begins."
+msgstr "સુધારાનું ડાઉનલોડ શરું થાય."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOADING.String.Text
+msgid  "Download of update in progress"
+msgstr "સુધારાનું ડાઉનલોડ પ્રગતિમાં છે"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_PAUSED.String.Text
+msgid  "Download of update paused"
+msgstr "સુધારાનું ડાઉનલોડ અટકાવાયેલ છે"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_PAUSED.String.Text
+msgid  "Click here to resume."
+msgstr "ફરી ચાલુ કરવા માટે અંહિ ક્લિક કરો."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_ERROR_DOWNLOADING.String.Text
+msgid  "Download of update stalled"
+msgstr "સુધારાનું ડાઉનલોડ અટકાવાયેલ"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.String.Text
+msgid  "Click here for more information."
+msgstr "વધુ જાણકારી માટે અંહિ ક્લિક કરો."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_AVAIL.String.Text
+msgid  "Download of update completed"
+msgstr "સુધારાનું ડાઉનલોડ સમાપ્ત થયું"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_AVAIL.String.Text
+msgid  "Click here to start the installation."
+msgstr "સ્થાપન શરૂ કરવા માટે અંહિ ક્લિક કરો."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_EXT_UPD_AVAIL.String.Text
+msgid  "Updates for extensions available"
+msgstr "ઉપલ્બધ એક્સટેન્સનો માટે સુધારો કરો"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.String.Text
+msgid  "Click here for more information."
+msgstr "વધુ જાણકારી માટે અંહિ ક્લિક કરો."
+
+#: source/update/check/Addons.xcu#.Addons.AddonUI.OfficeHelp.UpdateCheckJob.Title
+msgid  "Check for ~Updates..."
+msgstr "સુધારાઓ માટે ચકાસો (~U)..."

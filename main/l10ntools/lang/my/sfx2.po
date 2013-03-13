@@ -1,2805 +1,2701 @@
-
-#: view.src#STR_NODEFPRINTER.string.text
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
 msgid ""
-"No default printer found.\n"
-"Please choose a printer and try again."
 msgstr ""
-"နဂိုမူလပရင်တာ ရှာမတွေ့ပါ။ \n"
-"ပရင်တာတစ်ခု နောက်ထပ်ရွေးချယ်ကြိုးစားပေးပါ။"
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
 
-#: view.src#STR_NOSTARTPRINTER.string.text
-msgid ""
-"Could not start printer.\n"
-"Please check your printer configuration."
-msgstr ""
-"ပရင်တာ မစတင်နိုင်ပါ။ \n"
-"သင့် ပရင်တာ အစိတ်အပိုင်းများ ဖွဲ့စည်းမှု ကိုစစ်ဆေးပေးပါ။"
 
-#: view.src#STR_PRINTER_NOTAVAIL.string.text
-msgid ""
-"This document has been formatted for the printer $1. The specified printer "
-"is not available. \n"
-"Do you want to use the standard printer $2 ?"
-msgstr ""
-"ဤမှတ်တမ်းမှတ်ရာသည် $1ပရင်တာအတွက် စီစဉ်ဖွဲ့စည်းထားခြင်းဖြစ်သည်။ "
-"သီးခြားပရင်တာတစ်ခုအသုံးမပြု နိုင်ပါ။ \n"
-"စံသတ်မှတ်ထားသည့် $2 ပရင်တာကို အသုံးပြုရန် ဆန္ဒရှိပါသလား?"
-
-#: view.src#STR_PRINT_OPTIONS.string.text
-msgid "Options..."
-msgstr "ရွေးပိုင်ခွင့်များ..."
-
-#: view.src#STR_PRINT_OPTIONS_TITLE.string.text
-msgid "Printer Options"
-msgstr "ပရင်တာ ရွေးပိုင်ခွင့်များ"
-
-#: view.src#STR_ERROR_PRINTER_BUSY.string.text
-msgid "Printer busy"
-msgstr "ပရင်တာအလုပ်များနေသည်"
-
-#: view.src#STR_ERROR_PRINT.string.text
-msgid "Error while printing"
-msgstr "ပရင့်ထုတ်စဉ် အမှား"
-
-#: view.src#STR_PRINTING.string.text
-msgid "Printing"
-msgstr "ပရင့်ထုတ်နေသည်"
-
-#: view.src#STR_PAGE.string.text
-msgid "Page "
-msgstr "စာမျက်နှာ"
-
-#: view.src#STR_ERROR_SAVE_TEMPLATE.string.text
-msgid "Error saving template "
-msgstr "ပုံစံပြားသိမ်းဆည်းစဉ်အမှား"
-
-#: view.src#STR_READONLY.string.text
-msgid " (read-only)"
-msgstr " (ဖတ်ရန်သာ)"
-
-#: view.src#STR_PRINT_NEWORI.string.text
-msgctxt "view.src#STR_PRINT_NEWORI.string.text"
-msgid ""
-"The page size and orientation have been modified.\n"
-"Would you like to save the new settings in the\n"
-"active document?"
-msgstr ""
-"စာရွက်အရွယ်အစားနှင့်အနေအထားကိုအထူးပြုထားသည်။\n"
-"လက်ရှိအသုံးပြုနေသည့် မှတ်တမ်းမှတ်ရာများတွင် "
-"ပြင်ဆင်ဖွဲ့စည်းမှုပုံစံအသစ်များဖြင့်\n"
-"သိမ်းဆည်းလိုပါသလား"
-
-#: view.src#STR_PRINT_NEWSIZE.string.text
-msgid ""
-"The page size has been modified.\n"
-"Should the new settings be saved\n"
-"in the active document?"
-msgstr ""
-"စာရွက်အရွယ်အစားနှင့်အနေအထားကိုအထူးပြုထားသည်။\n"
-"လက်ရှိအသုံးပြုနေသည့် မှတ်တမ်းမှတ်ရာများတွင် "
-"ပြင်ဆင်ဖွဲ့စည်းမှုပုံစံအသစ်များဖြင့်\n"
-"သိမ်းဆည်းလိုပါသလား"
-
-#: view.src#STR_PRINT_NEWORISIZE.string.text
-msgctxt "view.src#STR_PRINT_NEWORISIZE.string.text"
-msgid ""
-"The page size and orientation have been modified.\n"
-"Would you like to save the new settings in the\n"
-"active document?"
-msgstr ""
-"စာရွက်အရွယ်အစားနှင့်အနေအထားကိုအထူးပြုထားသည်။\n"
-"လက်ရှိအသုံးပြုနေသည့် မှတ်တမ်းမှတ်ရာများတွင် "
-"ပြင်ဆင်ဖွဲ့စည်းမှုပုံစံအသစ်များဖြင့်\n"
-"သိမ်းဆည်းလိုပါသလား"
-
-#: view.src#STR_PREVIEW_DOCINFO.string.text
-msgid ""
-"<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$("
-"TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt>"
-"<b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
-msgstr ""
-"<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>ခေါင်းစဉ် "
-"-</b><dd>$(TITEL)<dt><b>အကြောင်းကိစ္စ "
-"-</b><dd>$(THEME)<dt><b>အဓိကစကားလုံးများ :</b><dd>$(KEYWORDS)<dt><b>ဖေါ်ပြချ"
-"က်-</b><dd>$(TEXT)</dl></font></body></html>"
-
-#: view.src#STR_PREVIEW_NODOCINFO.string.text
-msgid ""
-"<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document "
-"properties found.</B></FONT></P></BODY></HTML>"
-msgstr ""
-"<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B> "
-"မှတ်တမ်းမှတ်ရာ ဂုဏ်သတ္တိများ ရှာမတွေ့ပါ။</B></FONT></P></BODY></HTML>"
-
-#: view.src#MSG_CANT_CLOSE.infobox.text
-msgid ""
-"The document cannot be closed because a\n"
-" print job is being carried out."
-msgstr ""
-"ပရင့်ထုတ်နေခြင်းကြောင့် မှတ်တမ်းမှတ်ရာအား\n"
-"ပိတ်နိုင်လိမ့်မည် မဟုတ်ပါ။"
-
-#: view.src#DLG_PRINTMONITOR_TEXT.#define.text
-msgid "Print Monitor"
-msgstr "ပရင့်ထုတ်မှု ကိုစောင့်ကြည့်ပါ"
-
-#: view.src#DLG_PRINTMONITOR.FT_PRINTING.fixedtext.text
-msgid "is being printed on"
-msgstr "ပေါ်တွင် ပရင့်ထုတ်ရန် ဖြစ်သည်"
-
-#: view.src#DLG_PRINTMONITOR.STR_FT_PREPARATION.string.text
-msgid "is being prepared for printing"
-msgstr "ပရင့်ထုတ်ရန်ပြင်ဆင်မှုများပြုခဲ့သည်"
-
-#: view.src#MSG_ERROR_SEND_MAIL.infobox.text
-msgid ""
-"An error occurred in sending the message. Possible errors could be a missing "
-"user account or a defective setup.\n"
-"Please check the %PRODUCTNAME settings or your e-mail program settings."
-msgstr ""
-"အမှာစာ ပေးပို့စဉ် အမှားဖြစ်ပွားသည်။ အသုံးပြုသူ၏ "
-"စာရင်းနံပါတ်မှားယွင်းမှု(သို့)လုပ်ဆောင်ချက် မှားယွင်းမှု "
-"တို့ကြောင့်ဖြစ်နိုင်သည်။\n"
-"%PRODUCTNAME ပြင်ဆင်ဖွဲ့စည်းမှုပုံစံ (သို့) "
-"သင့်အီးမေးလ်လုပ်ဆောင်ချက်ပုံစံများကို ကျေးဇူးပြု၍ စစ်ဆေးပါ။"
-
-#: view.src#MSG_QUERY_OPENASTEMPLATE.querybox.text
-msgid ""
-"This document cannot be edited, possibly due to missing access rights. Do "
-"you want to edit a copy of the document?"
-msgstr ""
-"ဤမှတ်တမ်းမှတ်ရာအား ပြင်ဆင်မတည်းဖြတ်နိုင်ပါ။ ရယူခွင့် "
-"အခွင့်အရေးမှားယွင်းမှုကြောင့် ဖြစ်နိုင်သည်။ မှတ်တမ်းမှတ်ရာကို ကူးယူ၍ "
-"ပြင်ဆင်တည်းဖြတ်မှုများပြု လိုပါသလား။"
-
-#: view.src#STR_REPAIREDDOCUMENT.string.text
-msgid " (repaired document)"
-msgstr " (ပြန်လည်ပြုပြင်ထားသည့် မှတ်တမ်းမှတ်ရာ)"
-
-#: view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.errorbox.text
-msgid ""
-"%PRODUCTNAME could not find a web browser on your system. Please check your "
-"Desktop Preferences or install a web browser (for example, Mozilla) in the "
-"default  location requested during the browser installation."
-msgstr ""
-"သင့်ကွန်ပျူတာတွင် ကွန်ယက်ဘရောက်စ်ဇာကို %PRODUCTNAME မှ ရှာမတွေ့ပါ။ "
-"သင့်ကွန်ပျူတာမျက်နှာပြင်ပေါ်တွင် စစ်ဆေးမှုများပြုပါ။ (သို့) "
-"ဘရောက်စ်ဇာထည့်သွင်းမှုပြုရန် တောင်းဆိုထားသည့် နေရာတွင် ကွန်ယက်ဘရောက်စ်ဇာ "
-"ထည့်သွင်းမှုပြုပါ။ (ဥပမာ-မော်ဇီလာထည့်သွင်းမှု)"
-
-#: menu.src#STR_MENU_CFGITEM.string.text
-msgid "Configuration Menu"
-msgstr "အစိတ်အပိုင်းများ ဖွဲ့စည်းပုံမီနူး"
-
-#: menu.src#STR_MENU_ADDONS.string.text
-msgid "~Add-Ons"
-msgstr "~အကူအညီများထပ်ဖြည့်ပါ"
-
-#: menu.src#MN_CLIPBOARDFUNCS.SID_CUT.menuitem.text
-msgid "Cu~t"
-msgstr "ဖြတ်ယူပါ"
-
-#: menu.src#MN_CLIPBOARDFUNCS.SID_COPY.menuitem.text
-msgid "~Copy"
-msgstr "~ကူးယူပါ"
-
-#: menu.src#MN_CLIPBOARDFUNCS.SID_PASTE.menuitem.text
-msgid "~Paste"
-msgstr "⁠~ကူးယူပြန်ထည့်ပါ"
-
-#: menu.src#SID_WIN_FULLSCREEN.string.text
-msgid "Leave Full-Screen Mode"
-msgstr "ဖန်သားမျက်နှာပြင်အပြည့်နည်းလမ်းထားခဲ့ပါ"
-
-#: menu.src#STR_MENU_ADDONHELP.string.text
-msgid "Add-~On Help"
-msgstr "အကူအညီများထပ်ဖြည့်ပါ"
-
-#: menu.src#STR_MENU_SYNONYMS.string.text
-msgid "Synonyms"
-msgstr ""
-
-#: menu.src#STR_MENU_NO_SYNONYM_FOUND.string.text
-msgid "(none)"
-msgstr ""
-
-#: menu.src#STR_MENU_THESAURUS.string.text
-msgid "~Thesaurus..."
-msgstr ""
-
-#: fltfnc.src#STR_FILTER_NOT_INSTALLED.string.text
-msgid ""
-"The selected filter $(FILTER) has not been installed.\n"
-"Would you like to do this now?"
-msgstr ""
-"ရွေးချယ်ထားသည့် စစ်ထုတ်ကိရိယာ $(FILTER) ထည့်သွင်းထားခြင်းမရှိပါ။ \n"
-"ယခုထည့်သွင်းရန် ဆန္ဒရှိပါသလား။"
-
-#: fltfnc.src#STR_FILTER_CONSULT_SERVICE.string.text
-msgid ""
-"The selected filter $(FILTER) is not included in your edition.\n"
-"You can find information about orders on our homepage."
-msgstr ""
-"ရွေးချယ်ထားသည့် စစ်ထုတ်ကိရိယာ $(FILTER) သည် သင့်တည်းဖြတ်မှုပုံစံတွင် "
-"မပါဝင်ပါ။ \n"
-"ကျွန်ုပ်တို့ မူလစာမျက်နှာပေါ်ရှိ ညွှန်ကြားချက်များနှင့်ပတ်သက်သည့် သတင်း "
-"အချက်အလက်များကို ရှာဖွေနိုင်လိမ့်မည်။"
-"X-Accelerator-Marker: ~\n"
-
-#: app.src#STR_NONAME.string.text
-msgid "Untitled"
-msgstr "ခေါင်းစဉ်မဲ့"
-
-#: app.src#STR_CLOSE.string.text
-msgid "Close"
-msgstr "ပိတ်ပါ"
-
-#: app.src#STR_STYLE_FILTER_AUTO.string.text
-msgid "Automatic"
-msgstr "အလိုအလျောက်"
-
-#: app.src#STR_STANDARD_SHORTCUT.string.text
+#: source/appl/dde.src#MD_DDE_LINKEDIT.ModalDialog.Text
 #, fuzzy
-msgctxt "app.src#STR_STANDARD_SHORTCUT.string.text"
-msgid "Standard"
-msgstr "စံနှုန်း"
+msgid  "Modify Link"
+msgstr "အထူးပြု ချိတ်ဆက်မှု"
 
-#: app.src#STR_BYTES.string.text
-msgid "Bytes"
-msgstr "ဘိုက်များ"
-
-#: app.src#STR_KB.string.text
-msgid "KB"
-msgstr "ကီလိုဘိုက်"
-
-#: app.src#STR_MB.string.text
-msgid "MB"
-msgstr "မီကာဘိုက်"
-
-#: app.src#STR_GB.string.text
-msgid "GB"
-msgstr "ဂမ်မာဘိုက်"
-
-#: app.src#MSG_QUERY_LASTVERSION.querybox.text
-msgid "Cancel all changes?"
-msgstr "ပြောင်းလဲမှုများအားလုံး ရုတ်သိမ်းမည်လား?"
-
-#: app.src#RID_DOCALREADYLOADED_DLG.infobox.text
-msgid "Document already open."
-msgstr "မှတ်တမ်းမှတ်ရာ အသင့် ဖွင့်ပြီးဖြစ်သည်။"
-
-#: app.src#MSG_ERR_NO_WEBBROWSER_FOUND.errorbox.text
-msgid ""
-"%PRODUCTNAME could not find a web browser on your system. Please check your "
-"Desktop Preferences or install a web browser (for example, Mozilla) in the "
-"default  location requested during the browser installation."
-msgstr ""
-"သင်၏ကွန်ပျူတာတွင် ကွန်ယက်ဘရောက်စ်ဇာ အသုံးပြု နိုင်သည့် %PRODUCTNAME "
-"ကိုရှာမတွေ့ပါ။ သင်၏ကွန်ပျူတာမျက်နှာပြင်ပေါ်တွင် စစ်ဆေးမှုများပြုပါ။ (သို့) "
-"ဘရောက်စ်ဇာ ထည့်သွင်းမှုအတွက် ပုံသေသတ်မှတ်ထားသော နေရာတွင် "
-"ကွန်ယက်ဘရောက်စ်ဇာကို ထည့်သွင်းပါ။ (ဥပမာ- မော်ဇီလာထည့်သွင်းမှု) "
-
-#: app.src#GID_INTERN.string.text
-msgid "Internal"
-msgstr "အတွင်းပိုင်း"
-
-#: app.src#GID_APPLICATION.string.text
-msgid "Application"
-msgstr "အသုံးချပရိုဂရမ်"
-
-#: app.src#GID_VIEW.string.text
-msgid "View"
-msgstr "မြင်ကွင်း"
-
-#: app.src#GID_DOCUMENT.string.text
-msgid "Documents"
-msgstr "မှတ်တမ်းမှတ်ရာများ"
-
-#: app.src#GID_EDIT.string.text
-msgid "Edit"
-msgstr "တည်းဖြတ်ပါ"
-
-#: app.src#GID_MACRO.string.text
-msgid "BASIC"
-msgstr "BASIC"
-
-#: app.src#GID_OPTIONS.string.text
+#: source/appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_APP.FixedText.Text
 #, fuzzy
-msgid "Options"
-msgstr "ရွေးပိုင်ခွင့်များ"
-
-#: app.src#GID_MATH.string.text
-msgid "Math"
-msgstr "သင်္ချာ"
-
-#: app.src#GID_NAVIGATOR.string.text
-msgid "Navigate"
-msgstr "လမ်းညွှန်အတိုင်းသွားပါ"
-
-#: app.src#GID_INSERT.string.text
-msgid "Insert"
-msgstr "ထည့်သွင်းပါ"
-
-#: app.src#GID_FORMAT.string.text
-msgid "Format"
-msgstr "စီစဉ် ဖွဲ့စည်းမှု ပုံစံ"
-
-#: app.src#GID_TEMPLATE.string.text
-#, fuzzy
-msgid "Templates"
-msgstr "ပုံစံပြားများ"
-
-#: app.src#GID_TEXT.string.text
-msgid "Text"
-msgstr "စာသား"
-
-#: app.src#GID_FRAME.string.text
-msgid "Frame"
-msgstr "ဘောင်"
-
-#: app.src#GID_GRAPHIC.string.text
-msgctxt "app.src#GID_GRAPHIC.string.text"
-msgid "Graphic"
-msgstr "ပန်းချီရုပ်ပုံ"
-
-#: app.src#GID_TABLE.string.text
-msgid "Table"
-msgstr "ဇယား"
-
-#: app.src#GID_ENUMERATION.string.text
-msgid "Numbering"
-msgstr "နံပါတ်တပ်ခြင်း"
-
-#: app.src#GID_DATA.string.text
-msgid "Data"
-msgstr "အချက်အလက်များ"
-
-#: app.src#GID_SPECIAL.string.text
-msgid "Special Functions"
-msgstr "အထူး လုပ်ဆောင်ချက်များ"
-
-#: app.src#GID_IMAGE.string.text
-msgid "Image"
-msgstr "ပုံရိပ်"
-
-#: app.src#GID_CHART.string.text
-msgid "Chart"
-msgstr "ပုံစံကားချပ်"
-
-#: app.src#GID_EXPLORER.string.text
-msgid "Explorer"
-msgstr "စူးစမ်းလေ့လာရန်"
-
-#: app.src#GID_CONNECTOR.string.text
-msgid "Connector"
-msgstr "ချိတ်ဆက်သူ"
-
-#: app.src#GID_MODIFY.string.text
-msgid "Modify"
-msgstr "အထူးပြုပါ"
-
-#: app.src#GID_DRAWING.string.text
-msgid "Drawing"
-msgstr "ပုံဆွဲခြင်း"
-
-#: app.src#GID_CONTROLS.string.text
-msgid "Controls"
-msgstr "ထိန်းချုပ်မှုများ"
-
-#: app.src#MSG_CANT_QUIT.infobox.text
-msgid ""
-"The application cannot be terminated at the moment.\n"
-"Please wait until all print jobs and/or\n"
-"OLE actions have finished and close all dialogs."
-msgstr ""
-"အသုံးပြုပရိုဂရမ်ကို ချက်ချင်း အပြီးသတ်နိုင်လိမ့်မည် မဟုတ်ပါ။ \n"
-"လုပ်ဆောင်မှုများအားလုံး ပရင့်ထုတ်ပြီးသည်အထိ စောင့်ပေးပါ/သို့ \n"
-"OLE လုပ်ဆောင်ချက်များ ပြီးစီးလျှင် ဒိုင်ယာလော့ဒ်များအားလုံး ပိတ်ပါ။"
-
-#: app.src#STR_ISMODIFIED.string.text
-msgid "Do you want to save the changes to %1?"
-msgstr "%၁ သို့ ပြောင်းလဲသိမ်းဆည်းရန် ဆန္ဒရှိပါသလား?"
-
-#: app.src#STR_QUITAPP.string.text
-msgid "E~xit"
-msgstr "ထွက်ပါ"
-
-#: app.src#RID_STR_HELP.string.text
-#, fuzzy
-msgid "Help"
-msgstr "ကူညီပါ"
-
-#: app.src#RID_STR_NOAUTOSTARTHELPAGENT.string.text
-msgid "No automatic start at 'XX'"
-msgstr " 'XX' ၌ အလိုအလျောက် မစတင်ပါ"
-
-#: app.src#RID_HELPBAR.string.text
-msgid "Help Bar"
-msgstr "အကူအညီဘား"
-
-#: app.src#RID_STR_HLPFILENOTEXIST.string.text
-msgid "The help file for this topic is not installed."
-msgstr "ဤခေါင်းစဉ်အတွက် ဖိုင်အကူ မထည့်သွင်းနိုင်ပါ။"
-
-#: app.src#RID_ENVTOOLBOX.string.text
-msgid "Function Bar"
-msgstr "လုပ်ဆောင်ချက်ဘား"
-
-#: app.src#RID_SPECIALCONFIG_ERROR.string.text
-msgid ""
-"An error has occurred in the special configuration.\n"
-"Please contact your administrator."
-msgstr ""
-"အထူး အစိတ်အပိုင်းများ ဖွဲ့စည်းပုံတွင် အမှားတစ်ခု ဖြစ်ပွားထားသည်။ \n"
-"သင့် တာဝန်ရှိသူနှင့် ဆက်သွယ်ပေးပါ။"
-
-#: app.src#STR_QUICKSTART_EXIT.string.text
-msgid "Exit Quickstarter"
-msgstr "မြန်ဆန်စွာအသုံးပြုရန်မှထွက်ပါ"
-
-#: app.src#STR_QUICKSTART_TIP.string.text
-msgid "%PRODUCTNAME %PRODUCTVERSION Quickstarter"
-msgstr "%PRODUCTNAME %PRODUCTVERSION မြန်ဆန်စွာအသုံးပြုရန်"
-
-#: app.src#STR_QUICKSTART_FILEOPEN.string.text
-msgid "Open Document..."
-msgstr "မှတ်တမ်းမှတ်ရာ ဖွင့်ပါ"
-
-#: app.src#STR_QUICKSTART_FROMTEMPLATE.string.text
-msgid "From Template..."
-msgstr "ပုံစံပြားမှ"
-
-#: app.src#STR_QUICKSTART_PRELAUNCH.string.text
-msgid "Load %PRODUCTNAME During System Start-Up"
-msgstr "စနစ် စတင်မှုပြုစဉ်အတွင်း %PRODUCTNAME ဆွဲတင်ပါ"
-
-#: app.src#STR_QUICKSTART_PRELAUNCH_UNX.string.text
-msgid "Disable systray Quickstarter"
-msgstr "မြန်ဆန်စွာအသုံးပြုမှု စနစ်ဘားကိုမသုံးပါ"
-
-#: app.src#STR_QUICKSTART_LNKNAME.string.text
-msgid "%PRODUCTNAME %PRODUCTVERSION"
-msgstr "%PRODUCTNAME %PRODUCTVERSION"
-
-#: app.src#STR_QUICKSTART_FILE.string.text
-msgid "File"
-msgstr "ဖိုင်"
-
-#: app.src#STR_QUICKSTART_STARTCENTER.string.text
-msgid "Startcenter"
-msgstr "မြန်ဆန်စွာအသုံးပြုရန်"
-
-#: app.src#STR_QUICKSTART_RECENTDOC.string.text
-msgid "Recent Documents"
-msgstr "မကြာမီကအသုံးပြုခဲ့သည့် မှတ်တမ်းမှတ်ရာများ"
-
-#: app.src#STR_QUERY_UPDATE_LINKS.string.text
-msgid "Update all links?"
-msgstr "ချိတ်ဆက်မှုများအားလုံး နောက်ဆုံးပေါ်အခြေအနေဖြင့် လုပ်မှာလား?"
-
-#: app.src#STR_DDE_ERROR.string.text
-msgid "DDE link to % for % area % are not available."
-msgstr "%ဧရိယာ% အတွက် % သို့ DDE ချိတ်ဆက်မှု မရနိုင်ပါ။"
-
-#: app.src#RID_SECURITY_WARNING_HYPERLINK.warningbox.text
-msgid "This hyperlink is going to open \"%s\". Do you want to proceed?"
-msgstr "\"%s\" ဖွင့်ရန် ဟိုက်ပါလင့်ခ် သို့ သွားနေသည်။ ရှေ့ဆက်ရန် ဆန္ဒရှိပါသလား?"
-
-#: app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.warningbox.text
-msgid ""
-"For security reasons, the hyperlink cannot be executed.\n"
-"The stated address will not be opened."
-msgstr ""
-"လုံခြုံရေး အကြောင်းပြချက်များအတွက် ဟိုက်ပါလင့်ခ် လုပ်ဆောင်နိုင်လိမ့်မည် "
-"မဟုတ်ပါ။ \n"
-"ကွန်ရက်လိပ်စာ ဖွင့်နိုင်မည် မဟုတ်ပါ။"
-
-#: app.src#RID_SECURITY_WARNING_TITLE.string.text
-msgid "Security Warning"
-msgstr "လုံခြုံရေး သတိပေးချက်"
-
-#: app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.querybox.text
-msgid ""
-"Saving will remove all existing signatures.\n"
-"Do you want to continue saving the document?"
-msgstr ""
-"မှန်ကန်ကြောင်း အတည်ပြုချက်များအားလုံး ဖယ်ရှားမှု ကို သိမ်းဆည်းထားသည်။ \n"
-"မှတ်တမ်းမှတ်ရာများကို ဆက်လက်သိမ်းဆည်းရန် ဆန္ဒရှိပါသလား။"
-
-#: app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.querybox.text
-msgid ""
-"The document has to be saved before it can be signed.\n"
-"Do you want to save the document?"
-msgstr ""
-"မှန်ကန်ကြောင်း စစ်ဆေးမှုမပြုမီ မှတ်တမ်းမှတ်ရာကို သိမ်းဆည်းထားသည်။\n"
-"မှတ်တမ်းမှတ်ရာကို သိမ်းဆည်းရန် ဆန္ဒရှိပါသလား?"
-
-#: app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.infobox.text
-msgid ""
-"This document must be saved in OpenDocument file format before it can be "
-"digitally signed."
-msgstr ""
-"ဤမှတ်တမ်းမှတ်ရာကို ဒစ်ဂျစ်တယ်အားဖြင့်မှန်ကန်ကြောင်း စစ်ဆေးသည့်အချိန် "
-"မတိုင်မီ OpenDocument ဖိုင် စီစဉ် ဖွဲ့စည်းမှု ပုံစံတွင် သိမ်းထားရလိမ့်မည်။"
-
-#: app.src#RID_XMLSEC_DOCUMENTSIGNED.string.text
-msgid " (Signed)"
-msgstr "(မှန်ကန်ကြောင်း စစ်ဆေးပြီးဖြစ်သည်)"
-
-#: app.src#STR_STANDARD.string.text
-#, fuzzy
-msgctxt "app.src#STR_STANDARD.string.text"
-msgid "Standard"
-msgstr "စံနှုန်း"
-
-#: app.src#RID_SVXSTR_FILELINK.string.text
-msgid "Document"
-msgstr "မှတ်တမ်းမှတ်ရာများ"
-
-#: app.src#STR_NONE.string.text
-msgid "- None -"
-msgstr "- ဘာမျှမရှိပါ -"
-
-#: app.src#RID_SVXSTR_GRAFIKLINK.string.text
-msgctxt "app.src#RID_SVXSTR_GRAFIKLINK.string.text"
-msgid "Graphic"
-msgstr "ပန်းချီရုပ်ပုံ"
-
-#: app.src#STR_SFX_FILTERNAME_ALL.string.text
-msgid "All files (*.*)"
-msgstr "ဖိုင်များအားလုံး (*.*)"
-
-#: app.src#RID_SVXSTR_EDITGRFLINK.string.text
-msgid "Link graphics"
-msgstr ""
-
-#: app.src#STR_ERRUNOEVENTBINDUNG.string.text
-msgid ""
-"An appropriate component method %1\n"
-"could not be found.\n"
-"\n"
-"Check spelling of method name."
-msgstr ""
-"သင့်တော်သည့် အစိတ်အပိုင်းများ ပါဝင်မှုနည်းလမ်း %၁ \n"
-"ကိုရှာမတွေ့ပါ။ \n"
-"\n"
-"နည်းလမ်းအမည်ကို စာလုံးပေါင်းစစ်ဆေးပါ။"
-
-#: app.src#RID_SVXSTR_GRFILTER_OPENERROR.string.text
-msgid "Graphics file cannot be opened"
-msgstr ""
-
-#: app.src#RID_SVXSTR_GRFILTER_IOERROR.string.text
-msgid "Graphics file cannot be read"
-msgstr ""
-
-#: app.src#RID_SVXSTR_GRFILTER_FORMATERROR.string.text
-msgid "Unknown graphics format"
-msgstr ""
-
-#: app.src#RID_SVXSTR_GRFILTER_VERSIONERROR.string.text
-msgid "This version of the graphics file is not supported"
-msgstr ""
-
-#: app.src#RID_SVXSTR_GRFILTER_FILTERERROR.string.text
-msgid "Graphics filter not found"
-msgstr ""
-
-#: app.src#RID_SVXSTR_GRFILTER_TOOBIG.string.text
-msgid "Not enough memory to insert graphic"
-msgstr ""
-
-#: dde.src#MD_DDE_LINKEDIT.FT_DDE_APP.fixedtext.text
-msgid "~Application:"
+msgid  "~Application:"
 msgstr "~အသုံးချပရိုဂရမ် -"
 
-#: dde.src#MD_DDE_LINKEDIT.FT_DDE_TOPIC.fixedtext.text
-msgid "~File:"
+#: source/appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_TOPIC.FixedText.Text
+#, fuzzy
+msgid  "~File:"
 msgstr "~ဖိုင် -"
 
-#: dde.src#MD_DDE_LINKEDIT.FT_DDE_ITEM.fixedtext.text
-msgid "~Category:"
+#: source/appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_ITEM.FixedText.Text
+#, fuzzy
+msgid  "~Category:"
 msgstr "~အမျိုးအစား -"
 
-#: dde.src#MD_DDE_LINKEDIT.GROUP_DDE_CHG.fixedline.text
-msgid "Modify link"
+#: source/appl/dde.src#MD_DDE_LINKEDIT.GROUP_DDE_CHG.FixedLine.Text
+#, fuzzy
+msgid  "Modify link"
 msgstr "အထူးပြု ချိတ်ဆက်မှု"
 
-#: dde.src#MD_DDE_LINKEDIT.modaldialog.text
-msgid "Modify Link"
-msgstr "အထူးပြု ချိတ်ဆက်မှု"
-
-#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_CONTENTS.pageitem.text
-msgid "Contents"
-msgstr "မာတိကာများ"
-
-#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_INDEX.pageitem.text
-msgid "Index"
-msgstr "အညွှန်း"
-
-#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_SEARCH.pageitem.text
-msgid "Find"
-msgstr "ရှာပါ"
-
-#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_BOOKMARKS.pageitem.text
-msgid "Bookmarks"
-msgstr " စာညှပ်များ"
-
-#: newhelp.src#TP_HELP_INDEX.FT_EXPRESSION.fixedtext.text
-msgid "~Search term"
-msgstr "~စကားရပ် ရှာဖွေပါ"
-
-#: newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.pushbutton.text
-msgctxt "newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.pushbutton.text"
-msgid "~Display"
-msgstr "~ပြသပါ"
-
-#: newhelp.src#TP_HELP_SEARCH.FT_SEARCH.fixedtext.text
-msgid "S~earch term"
-msgstr "စကားရပ် ရှာဖွေပါ"
-
-#: newhelp.src#TP_HELP_SEARCH.PB_SEARCH.pushbutton.text
-msgid "~Find"
-msgstr "~ရှာပါ"
-
-#: newhelp.src#TP_HELP_SEARCH.CB_FULLWORDS.checkbox.text
-msgid "~Complete words only"
-msgstr "⁠~ပြည့်စုံသော စကားလုံးများသာ"
-
-#: newhelp.src#TP_HELP_SEARCH.CB_SCOPE.checkbox.text
-msgid "Find in ~headings only"
-msgstr "ခေါင်းစဉ်များတွင်သာ ရှာပါ"
-
-#: newhelp.src#TP_HELP_SEARCH.PB_OPEN_SEARCH.pushbutton.text
-msgctxt "newhelp.src#TP_HELP_SEARCH.PB_OPEN_SEARCH.pushbutton.text"
-msgid "~Display"
-msgstr "~ပြသပါ"
-
-#: newhelp.src#TP_HELP_BOOKMARKS.FT_BOOKMARKS.fixedtext.text
-msgid "~Bookmarks"
-msgstr "~စာညှပ်များ"
-
-#: newhelp.src#TP_HELP_BOOKMARKS.PB_BOOKMARKS.pushbutton.text
-msgctxt "newhelp.src#TP_HELP_BOOKMARKS.PB_BOOKMARKS.pushbutton.text"
-msgid "~Display"
-msgstr "~ပြသပါ"
-
-#: newhelp.src#STR_HELP_WINDOW_TITLE.string.text
-msgid "%PRODUCTNAME Help"
-msgstr "%PRODUCTNAME ကူညီသည်"
-
-#: newhelp.src#STR_HELP_BUTTON_INDEX_ON.string.text
-msgid "Show Navigation Pane"
-msgstr "လမ်းညွှန်ကိရိယာ ပြပါ"
-
-#: newhelp.src#STR_HELP_BUTTON_INDEX_OFF.string.text
-msgid "Hide Navigation Pane"
-msgstr "လမ်းညွှန်ကိရိယာ ခေတ္တဖျောက်ထားပါ"
-
-#: newhelp.src#STR_HELP_BUTTON_START.string.text
-msgid "First Page"
-msgstr "ပထမဆုံး စာမျက်နှာ"
-
-#: newhelp.src#STR_HELP_BUTTON_PREV.string.text
-msgid "Previous Page"
-msgstr "ယခင် စာမျက်နှာ"
-
-#: newhelp.src#STR_HELP_BUTTON_NEXT.string.text
-msgid "Next Page"
-msgstr "ရှေ့ စာမျက်နှာ"
-
-#: newhelp.src#STR_HELP_BUTTON_PRINT.string.text
-msgid "Print..."
-msgstr "ပရင့်ထုတ်ပါ..."
-
-#: newhelp.src#STR_HELP_BUTTON_ADDBOOKMARK.string.text
-msgid "Add to Bookmarks..."
-msgstr "စာညှပ်များသို့ ပေါင်းထည့်ပါ..."
-
-#: newhelp.src#STR_HELP_BUTTON_SEARCHDIALOG.string.text
-msgid "Find on this Page..."
-msgstr "ဤစာမျက်နှာပေါ်တွင် ရှာပါ..."
-
-#: newhelp.src#STR_HELP_BUTTON_SOURCEVIEW.string.text
-msgid "HTML Source"
-msgstr "HTML မူရင်း"
-
-#: newhelp.src#STR_HELP_FIRST_MESSAGE.string.text
-msgid "The Help is being started..."
-msgstr "အကူအညီ စတင်ထားသည်..."
-
-#: newhelp.src#STR_HELP_MENU_TEXT_SELECTION_MODE.string.text
-msgid "Select Text"
-msgstr "စာသား ရွေးချယ်ပါ"
-
-#: newhelp.src#STR_HELP_MENU_TEXT_COPY.string.text
-msgid "~Copy"
-msgstr "~မိတ္တူကူးယူပါ"
-
-#: newhelp.src#DLG_HELP_ADDBOOKMARK.FT_BOOKMARK_TITLE.fixedtext.text
-msgid "Bookmark:"
-msgstr "စာညှပ် -"
-
-#: newhelp.src#DLG_HELP_ADDBOOKMARK.STR_BOOKMARK_RENAME.string.text
-msgid "Rename Bookmark"
-msgstr "စာညှပ် အမည် ပြန်ပေးပါ"
-
-#: newhelp.src#DLG_HELP_ADDBOOKMARK.modaldialog.text
-msgid "Add to Bookmarks"
-msgstr "စာညှပ်များသို့ ပေါင်းထည့်ပါ"
-
-#: newhelp.src#MENU_HELP_BOOKMARKS.MID_OPEN.menuitem.text
-msgid "Display"
-msgstr "ပြသပါ"
-
-#: newhelp.src#MENU_HELP_BOOKMARKS.MID_RENAME.menuitem.text
-msgid "Rename..."
-msgstr "အမည် ပြန်ပေးပါ..."
-
-#: newhelp.src#MENU_HELP_BOOKMARKS.MID_DELETE.menuitem.text
-msgid "Delete"
-msgstr "ဖျက်ပါ"
-
-#: newhelp.src#RID_INFO_NOSEARCHRESULTS.infobox.text
-msgid "No topics found."
-msgstr "အကြောင်းအရာ ခေါင်းစဉ် ရှာမတွေ့ပါ။"
-
-#: newhelp.src#RID_INFO_NOSEARCHTEXTFOUND.infobox.text
-msgid "The text you entered was not found."
-msgstr "သင်ရိုက်ထားသည့် စာသား ရှာမတွေ့ပါ။"
-
-#: newhelp.src#RID_HELP_ONSTARTUP_TEXT.string.text
-msgid "~Display %PRODUCTNAME %MODULENAME Help at Startup"
-msgstr "~%PRODUCTNAME %MODULENAME အကူအညီ စတင် ပြသပါ"
-
-#: sfx.src#STR_ACCTITLE_PRODUCTIVITYTOOLS.string.text
-msgid "%PRODUCTNAME"
+#: source/appl/sfx.src#STR_ACCTITLE_PRODUCTIVITYTOOLS.String.Text
+msgid  "%PRODUCTNAME"
 msgstr ""
 
-#~ msgid "Applied Styles"
-#~ msgstr "စတိုင်လ်များ အသုံးချမှု"
-
-#~ msgid "Custom Styles"
-#~ msgstr "စိတ်ကြိုက် စတိုင်လ်များ"
-
-#~ msgid "All Styles"
-#~ msgstr "စတိုင်လ်များ အားလုံး"
-
-#~ msgid "Cannot open document."
-#~ msgstr "မှတ်တမ်းမှတ်ရာ မဖွင့်နိုင်ပါ။"
-
-#~ msgid "Error reading configuration file."
-#~ msgstr "အစိတ်အပိုင်းများ ဖွဲ့စည်းမှု ဖိုင်ဖတ်စဉ် အမှားဖြစ်ပွားသည်။"
-
-#~ msgid "Error writing configuration file."
-#~ msgstr "အစိတ်အပိုင်းများ ဖွဲ့စည်းမှု ဖိုင်ရေးသားစဉ် အမှားဖြစ်ပွားသည်။"
-
-#~ msgid "Error opening configuration file."
-#~ msgstr "အစိတ်အပိုင်းများ ဖွဲ့စည်းမှု ဖိုင်ဖွင့်စဉ် အမှားဖြစ်ပွားသည်။"
-
-#~ msgid "File is not a configuration file."
-#~ msgstr "အစိတ်အပိုင်းများ ဖွဲ့စည်းတည်ဆောက်မှု ဖိုင်မဟုတ်ပါ။"
-
-#~ msgid "Configuration file contains the wrong version."
-#~ msgstr ""
-#~ "အစိတ်အပိုင်းများ ဖွဲ့စည်းမှု ဖိုင်တွင် မှားယွင်းသော တင်ဆက်မှု ပုံစံ "
-#~ "ပါဝင်သည်။"
-
-#~ msgid ""
-#~ "Error recording BASIC library in\n"
-#~ "'@'."
-#~ msgstr ""
-#~ "BASIC လိုင်ဘရီတွင် မှတ်တမ်းတင်မှုများပြုစဉ် အမှားဖြစ်ပွားသည်\n"
-#~ "'@'."
-
-#~ msgid ""
-#~ "An unexpected program error has occurred.\n"
-#~ "\n"
-#~ "Do you want to try to save your changes in all open documents before the "
-#~ "program is terminated?"
-#~ msgstr ""
-#~ "မျှော်လင့်မထားသော ပရိုဂရမ် အမှားတစ်ခု ဖြစ်ပွားထားသည်။ \n"
-#~ "\n"
-#~ "ပရိုဂရမ် အပြီးမသတ်မီ ဖွင့်ထားသော မှတ်တမ်းမှတ်ရာများအားလုံးရှိ "
-#~ "ပြောင်းလဲမှုများကို သိမ်းဆည်းလိုပါသလား?"
-
-#~ msgid ""
-#~ "A form is to be sent by e-mail.\n"
-#~ "This means that the receiver will get to see your e-mail address."
-#~ msgstr ""
-#~ "ပုံစံတစ်ခုကို အီးမေးလ်အနေဖြင့် ပေးပို့ပေးရန် ဖြစ်သည်။ \n"
-#~ "ဆိုလိုသည်မှာ လက်ခံရရှိသူသည် သင့် အီးမေးလ်လိပ်စာကို ကြည့်ရှုခွင့် ရလိမ့်မည်။"
-
-#~ msgid "File Recovery"
-#~ msgstr "ဖိုင် ပြန်ကောင်းလာခြင်း"
-
-#~ msgid "Should the file \"$1\" be restored?"
-#~ msgstr "\"$1\" ဖိုင် ပြန်လည် သိုမှီးသင့်သလား။"
-
-#~ msgid "General"
-#~ msgstr "အထွေထွေ"
-
-#~ msgid "Save"
-#~ msgstr "သိမ်းပါ"
-
-#~ msgid "Paths"
-#~ msgstr "လမ်းကြောင်းများ"
-
-#~ msgid "Spellcheck"
-#~ msgstr "စာလုံးပေါင်းစစ်ဆေးပါ"
-
-#~ msgid ""
-#~ "This application is as object or print server active.\n"
-#~ "Do you want to terminate anyway?"
-#~ msgstr ""
-#~ "ဤအသုံးချပရိုဂရမ်ကို အရာဝတ္ထုအဖြစ် (သို့)လက်ရှိ ချိတ်ဆက်ထားသည့် ဆာဗာသို့ "
-#~ "ပေးပို့ပရင့်ထုတ်ရန် ဖြစ်သည်။ \n"
-#~ "မည်သည့်နည်းဖြင့်မဆို အပြီးသတ်ရန် ဆန္ဒရှိပါသလား။"
-
-#~ msgid "%PRODUCTNAME cannot be started more than once."
-#~ msgstr "%PRODUCTNAME တစ်ကြိမ်ထက်ပို၍ စတင်နိုင်လိမ့်မည် မဟုတ်ပါ။"
-
-#~ msgid ""
-#~ "Some %PRODUCTNAME functions will not work properly without a printer driver.\n"
-#~ "Please install a printer driver."
-#~ msgstr ""
-#~ "အချို့ %PRODUCTNAME လုပ်ဆောင်ချက်များသည် ပရင်တာဒရိုင်ဘာ မပါဘဲ မှန်ကန်စွာ "
-#~ "လုပ်နိုင်လိမ့်မည် မဟုတ်ပါ။ \n"
-#~ "ပရင်တာဒရိုင်ဘာတစ်ခု စတင် အသုံးပြုထည့်သွင်းပါ။"
-
-#~ msgid "AutoSave"
-#~ msgstr "အလိုအလျောက်သိမ်းပါ"
-
-#~ msgid ""
-#~ "Limited system resources. Please quit other applications or close some "
-#~ "windows before continuing."
-#~ msgstr ""
-#~ "စနစ်ရင်းမြစ်များ ကန့်သတ်ထားသည်။ ဆက်လက်လုပ်ဆောင်မှုများ မပြုမီ "
-#~ "အသုံးချပရိုဂရမ်များ(သို့) ဝင်းဒိုးအချို့မှ ထွက်ပါ။"
-
-#~ msgid "There are files missing. Please check application setup."
-#~ msgstr ""
-#~ "ဖိုင်များ ပျောက်ဆုံးနေသည်။ အသုံးချပရိုဂရမ် စတင် အသုံးပြုမှု ကို စစ်ဆေးပေးပါ။"
-
-#~ msgid ""
-#~ "Another error occurred during the save recovery.\n"
-#~ "Possibly, the data could not be entirely saved."
-#~ msgstr ""
-#~ "ပြန်လည်သိမ်းဆည်းမှုပြုနေစဉ် အတွင်း နောက်ထပ် အမှား ဖြစ်ပွားသည်။ \n"
-#~ "ဖြစ်နိုင်သည်မှာ အချက်အလက်များအားလုံး သိမ်းဆည်းမထားနိုင်ခြင်းဖြစ်သည်။"
-
-#~ msgid "System resources exhausted. Please restart the application."
-#~ msgstr "စနစ်ရင်းမြစ်များကုန်ခမ်းသည်။ အသုံးပြုချပရိုဂရမ် ပြန်လည် စတင်ပေးပါ။"
-
-#~ msgid "Error initializing object-system."
-#~ msgstr "အရာဝတ္ထု -စနစ် အစပျိုးစဉ် အမှားဖြစ်ပွားသည်။"
-
-#~ msgid "The file $(FILE) doesn't exist."
-#~ msgstr "$(FILE) ဖိုင် မတည်ရှိပါ။"
-
-#~ msgid "The path to file $(FILE) doesn't exist."
-#~ msgstr "$(FILE) ဖိုင်သို့ လမ်းကြောင်း မတည်ရှိပါ။"
-
-#~ msgid ""
-#~ "The file $(FILE) could not be opened,\n"
-#~ "because too many files are open.\n"
-#~ "Please close some files and try again."
-#~ msgstr ""
-#~ "$(FILE) ဖိုင် ဖွင့်နိုင်လိမ့်မည် မဟုတ်ပါ၊ \n"
-#~ "ဖိုင်အမြောက်အများ ဖွင့်ထားသောကြောင့်ဖြစ်သည်။ \n"
-#~ "အချို့ဖိုင်များကို ပိတ်ပေးပြီး ပြန်လည် ကြိုးစားပါ။"
-
-#~ msgid "The file $(FILE) could not be opened due to missing access rights."
-#~ msgstr ""
-#~ "$(FILE) ဖိုင်သည် အချက်အလက်များ သွားရောက်ရယူခွင့် ပျောက်ဆုံးနေသောကြောင့် "
-#~ "ဖွင့်နိုင်လိမ့်မည် မဟုတ်ပါ။"
-
-#~ msgid "The file $(FILE) could not be accessed."
-#~ msgstr "$(FILE) ဖိုင်တွင် အချက်အလက်များ ရယူနိုင်လိမ့်မည် မဟုတ်ပါ။"
-
-#~ msgid "The file $(FILE) could not be opened due to an invalid file handle."
-#~ msgstr ""
-#~ "မှားယွင်းသော ဖိုင်ညွှန်ကြားမှုတစ်ခုကြောင့် $(FILE) ဖွင့်နိုင်လိမ့်မည် "
-#~ "မဟုတ်ပါ။"
-
-#~ msgid "The file $(FILE) could not be created."
-#~ msgstr "$(FILE) ဖိုင် ဖန်တီးနိုင်လိမ့်မည် မဟုတ်ပါ။"
-
-#~ msgid "Error by shared access to $(FILE)."
-#~ msgstr "$(FILE) သို့ အချက်အလက်များ ဝေမျှရယူစဉ် အမှားဖြစ်ပွားသည်။"
-
-#~ msgid "General I/O error accessing $(FILE)."
-#~ msgstr "$(FILE) ရယူမှုပြုစဉ် အထွေထွေ I/O အမှားဖြစ်ပွားသည်။"
-
-#~ msgid "The selected template has an incorrect format"
-#~ msgstr ""
-#~ "ရွေးချယ်ထားသည့် ပုံစံပြားတွင် မှားယွင်းသော စီစဉ် ဖွဲ့စည်းမှု ပုံစံတစ်ခု "
-#~ "ရှိသည်"
-
-#~ msgid "Can't open file $."
-#~ msgstr "$ ဖိုင် မဖွင့်နိုင်ပါ။"
-
-#~ msgid "E~xit & return to "
-#~ msgstr "သို့ ထွက်ပြီး ပြန်သွားပါ"
-
-#~ msgid "Select a command or click to select a theme."
-#~ msgstr ""
-#~ "ကွန်ပျူတာ ညွှန်ကြားချက် တစ်ခု ရွေးပါ (သို့) အဓိကဆိုလိုရင်းတစ်ခု ရွေးရန် "
-#~ "ကလစ်နှိပ်ပါ။"
-
-#~ msgid "Mail"
-#~ msgstr "အီးမေးလ်"
-
-#~ msgid "Addresses"
-#~ msgstr "လိပ်စာများ"
-
-#~ msgid "Don't display tips"
-#~ msgstr "အရိပ်အမြွက်များ မပြသနှင့်"
-
-#~ msgid "The help system could not be started"
-#~ msgstr "အကူစနစ် စတင်နိုင်လိမ့်မည် မဟုတ်ပါ"
-
-#~ msgid "Enable plug-ins"
-#~ msgstr "ပလပ်သွင်းမှု လုပ်ဆောင်နိုင်ခြင်း"
-
-#~ msgid ""
-#~ "Important program components could not be initialized correctly.\n"
-#~ "Please start the setup program with the option /Repair."
-#~ msgstr ""
-#~ "အရေးကြီးသော ပရိုဂရမ် အစိတ်အပိုင်းများ မှန်ကန်စွာ အစပျိုးနိုင်လိမ့်မည် "
-#~ "မဟုတ်ပါ။ \n"
-#~ "ရွေးပိုင်ခွင့်/ပြင်ဆင်ခြင်း နှင့်အတူ ပရိုဂရမ်ကို စတင် အသုံးပြုစီမံပါ။"
-
-#~ msgid "Reference will not be saved: "
-#~ msgstr "ရည်ညွှန်းချက်ကို သိမ်းမည် မဟုတ်ပါ -"
-
-#~ msgid "Configuration"
-#~ msgstr "အစိတ်အပိုင်းများ ဖွဲ့စည်းပုံ"
-
-#~ msgid "My Documents"
-#~ msgstr "ကျွန်ုပ်၏ မှတ်တမ်းမှတ်ရာများ"
-
-#~ msgid "Graphics"
-#~ msgstr "ပန်းချီဒီဇိုင်း"
-
-#~ msgid "Icons"
-#~ msgstr "အိုင်ကွန်များ"
-
-#~ msgid "Palettes"
-#~ msgstr "ရွေးချယ်ယူရန်နေရာ"
-
-#~ msgid "Backups"
-#~ msgstr "အရံသင့်ပွားထားခြင်းများ"
-
-#~ msgid "Modules"
-#~ msgstr "မော်ဂျူးများ"
-
-#~ msgid "AutoText"
-#~ msgstr "အလိုအလျောက်စာသား"
-
-#~ msgid "Dictionaries"
-#~ msgstr "အဘိဓာန်များ"
-
-#~ msgid "Gallery"
-#~ msgstr "ပြခန်း"
-
-#~ msgid "Message Storage"
-#~ msgstr "အမှာစာ သိုမှီးထားမှုများ"
-
-#~ msgid "Temporary files"
-#~ msgstr "ယာယီဖိုင်များ"
-
-#~ msgid "Plug-ins"
-#~ msgstr "ပလပ်အသွင်း"
-
-#~ msgid "Folder Bookmarks"
-#~ msgstr "ဖိုင်တွဲ စာညှပ်များ"
-
-#~ msgid "Filters"
-#~ msgstr "စစ်ထုတ်ကိရိယာများ"
-
-#~ msgid "Add-ins"
-#~ msgstr "ပေါင်းထည့်ပါ"
-
-#~ msgid "User Configuration"
-#~ msgstr "အသုံးပြုသူ အစိတ်အပိုင်းများ ဖွဲ့စည်းပုံ"
-
-#~ msgid "User-defined dictionaries"
-#~ msgstr "အသုံးပြုသူ - သတ်မှတ်ထားသည့် အဘိဓာန်များ"
-
-#~ msgid "AutoCorrect"
-#~ msgstr "အလိုအလျောက်မှန်ကန်ချက်များ"
-
-#~ msgid "Writing aids"
-#~ msgstr "ကူညီရေးသားချက်များ"
-
-#~ msgid "The URL is not valid."
-#~ msgstr "URL မှန်ကန်မှုမရှိပါ။"
-
-#~ msgid "Undo: "
-#~ msgstr "ပြန်ခေါ်ပါ -"
-
-#~ msgid "Re~do: "
-#~ msgstr "နောက်ဆုံးလုပ်ဆောင်ချက်များသို့ပြန်သွားပါ"
-
-#~ msgid "~Repeat: "
-#~ msgstr "~ထပ်တလဲလဲ-"
-
-#~ msgid "New task"
-#~ msgstr "လုပ်ဆောင်ချက်အသစ်"
-"X-Accelerator-Marker: ~\n"
-
-#: doc.src#MSG_CONFIRM_FILTER.querybox.text
-msgid ""
-"Saving in external formats may have caused\n"
-" information loss. Do you still want to close?"
-msgstr ""
-"ပြင်ပစီစဉ်ဖွဲ့စည်းမှုပုံစံများတွင် သိမ်းခြင်းကြောင့် သတင်းအချက်အလက်များ "
-"ပျောက်ဆုံးနိုင်သည်\n"
-"ပိတ်ရန် ဆန္ဒရှိပါသလား"
-
-#: doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.querybox.text
-msgid ""
-"Name already in use.\n"
-"Do you want to overwrite document template?"
-msgstr ""
-"အမည်အသုံးပြုထားပြီးဖြစ်သည်\n"
-"မှတ်တမ်းမှတ်ရာ ပုံစံပြားတွင် အဟောင်းများကို ဖျက်ပြီး "
-"အသစ်ဖြင့်အစားထိုးလိုပါသလား။"
-
-#: doc.src#STR_DELETE_REGION.string.text
-msgid "Are you sure you want to delete the region \"$1\"?"
-msgstr "\"$1\" အစိတ်အပိုင်းကိုဖျက်ရန် သေချာပါသလား။"
-
-#: doc.src#STR_DELETE_TEMPLATE.string.text
-msgid "Are you sure you want to delete the entry \"$1\"?"
-msgstr "\"$1\"ဝင်ရောက်မှု ကိုဖျက်ရန် သေချာပါသလား။"
-
-#: doc.src#MSG_REGION_NOTEMPTY.querybox.text
-msgid ""
-"The category is not empty.\n"
-"Delete anyway?"
-msgstr ""
-"ဤအမျိုးအစားသည် အလွတ်မဟုတ်ပါ။ \n"
-"မည်သည့်နည်းဖြင့်မဆို ဖျက်လိုပါသလား?"
-
-#: doc.src#STR_QUERY_SAVE_DOCUMENT.string.text
-msgid ""
-"The document \"$(DOC)\" has been modified.\n"
-"Do you want to save your changes?"
-msgstr ""
-"\"$(DOC)\" မှတ်တမ်းမှတ်ရာကို အထူးပြုထားသည်။ \n"
-"ပြောင်းလဲမှုများကို သိမ်းဆည်းရန် ဆန္ဒရှိပါသလား?"
-
-#: doc.src#STR_STYLES.string.text
-msgid "Styles"
-msgstr "ပုံစံများ"
-
-#: doc.src#STR_MACROS.string.text
-msgid "Macros"
-msgstr "မက်ခရိုများ"
-
-#: doc.src#STR_CONFIG.string.text
-msgid "Configuration"
-msgstr "အစိတ်အပိုင်းများ ဖွဲ့စည်းပုံ"
-
-#: doc.src#STR_PRINT_STYLES_HEADER.string.text
-msgid "Styles in "
-msgstr "ရှိပုံစံများ"
-
-#: doc.src#STR_PRINT_STYLES.string.text
-msgid "Printing Styles"
-msgstr "ပရင့်ထုတ်သော ပုံစံများ"
-
-#: doc.src#MSG_PRINT_ERROR.errorbox.text
-msgid "The print job could not be started."
-msgstr "ပရင့်ထုတ်မှု စတင်နိုင်လိမ့်မည် မဟုတ်ပါ"
-
-#: doc.src#STR_BACKUP_COPY.string.text
-msgid "Copy"
-msgstr "ကူးယူပါ"
-
-#: doc.src#MSG_CANT_OPEN_TEMPLATE.infobox.text
-msgid "The template could not be opened."
-msgstr "ပုံစံပြား ဖွင့်နိုင်လိမ့်မည် မဟုတ်ပါ။"
-
-#: doc.src#MSG_VIEW_OPEN_CANT_SAVE.infobox.text
-msgid "Document already open for editing."
-msgstr "တည်းဖြတ်ခြင်းအတွက် မှတ်တမ်းမှတ်ရာ အဆင်သင့် ဖွင့်ပြီးဖြစ်သည်။"
-
-#: doc.src#STR_ERROR_SAVE.string.text
-msgid "Error recording document "
-msgstr "မှတ်တမ်းမှတ်ရာအား မှတ်တမ်းတင်စဉ်အမှား"
-
-#: doc.src#STR_TEMPLATE_FILTER.string.text
-msgctxt "doc.src#STR_TEMPLATE_FILTER.string.text"
-msgid "Templates"
-msgstr "ပုံစံပြားများ"
-
-#: doc.src#STR_ERROR_COPY_TEMPLATE.string.text
-msgid ""
-"Error copying template \"$1\". \n"
-"A template with this name may already exist."
-msgstr ""
-"\"$1\" ပုံစံပြား ကူးယူစဉ် အမှားဖြစ်ပွားသည်။ \n"
-"ဤအမည်ဖြင့် ပုံစံပြားတစ်ခု အဆင်သင့် တည်ရှိသည်။"
-
-#: doc.src#STR_ERROR_DELETE_TEMPLATE.string.text
-msgid "The template \"$1\" can not be deleted."
-msgstr "\"$1\" ပုံစံပြား မဖျက်နိုင်ပါ။"
-
-#: doc.src#STR_ERROR_MOVE_TEMPLATE.string.text
-msgid "Error moving template \"$1\"."
-msgstr "\"$1\" ပုံစံပြား ပြောင်းရွေ့စဉ် အမှားဖြစ်ပွားသည်။"
-
-#: doc.src#MSG_ERROR_RESCAN.errorbox.text
-msgid "The update could not be saved."
-msgstr "နောက်ဆုံးပေါ်အချက်အလက်များဖြင့် မသိမ်းဆည်းနိုင်ပါ။"
-
-#: doc.src#STR_ERROR_SAVE_TEMPLATE.string.text
-msgid "Error saving template "
-msgstr "ပုံစံပြားသိမ်းဆည်းမှုပြုစဉ်အမှား"
-
-#: doc.src#MSG_ERROR_RENAME_TEMPLATE.errorbox.text
-msgid "Error renaming template."
-msgstr "ပုံစံပြားအမည် ပြန်ပေးမှု အမှား။"
-
-#: doc.src#MSG_ERROR_RENAME_TEMPLATE_REGION.errorbox.text
-msgid "Error renaming template category."
-msgstr "ပုံစံပြားအမျိုးအစားအမည် ပြန်ပေးမှု အမှား။"
-
-#: doc.src#MSG_ERROR_EMPTY_NAME.errorbox.text
-msgid "Please specify a name."
-msgstr "အမည် တစ်ခု သတ်မှတ်ပေးပါ။"
-
-#: doc.src#MSG_ERROR_UNIQ_NAME.errorbox.text
-msgid ""
-"Please specify a unique name.\n"
-"Entries must not be case specific."
-msgstr ""
-"သီးခြားအမည် တစ်ခု သတ်မှတ်ပေးပါ။ \n"
-"သီးခြား ကိစ္စရပ်တစ်ခုဖြင့် ဝင်ရောက်ထားခြင်းမရှိပါ။"
-
-#: doc.src#STR_QUERY_DEFAULT_TEMPLATE.string.text
-msgid "Should the template \"$(TEXT)\" become the default template?"
-msgstr "\"$(TEXT)\"သည် နဂိုမူလထားရှိမည့်ပုံစံပြားတစ်ခု ဖြစ်သင့်ပါသလား။"
-
-#: doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.querybox.text
-msgid "Do you want to reset the default template?"
-msgstr "နဂိုမူလ ပုံစံပြားကို ပြန်လည်စတင်လုပ်ဆောင်လိုပါသလား။"
-
-#: doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.infobox.text
-msgid ""
-"Template directory\n"
-"$(DIR)\n"
-"does not exist."
-msgstr ""
-"ပုံစံပြားဒိုင်ယာထရီ\n"
-"$(DIR) \n"
-"မတည်ရှိပါ။"
-
-#: doc.src#MSG_DOCINFO_CANTREAD.infobox.text
-msgid "Document info cannot be read."
-msgstr "သတင်းအချက်အလက် မှတ်တမ်းမှတ်ရာ မဖတ်နိုင်ပါ။"
-
-#: doc.src#STR_ERROR_NOSTORAGE.string.text
-msgid "The selected file has an incorrect format."
-msgstr "ရွေးချယ်ထားသည့်ဖိုင်တွင်စီစဉ်ဖွဲ့စည်းမှုပုံစံအမှားတစ်ခုရှိသည်။"
-
-#: doc.src#STR_QUERY_MUSTOWNFORMAT.string.text
-msgid ""
-"Documents cannot be saved in $(FORMAT) format. Do you\n"
-"want to save your changes using the $(OWNFORMAT) format?"
-msgstr ""
-"မှတ်တမ်းမှတ်ရာများကို $(FORMAT) စီစဉ်ဖွဲ့စည်းမှုပုံစံတွင် "
-"သိမ်းဆည်းမထားနိုင်ပါ။ \n"
-"$(OWNFORMAT)စီစဉ်ဖွဲ့စည်းမှုပုံစံကို အသုံးပြုလျက် သိမ်းဆည်းမှုများပြုရန် "
-"ဆန္ဒရှိပါသလား။"
-
-#: doc.src#STR_SAVEDOC.string.text
-msgid "~Save"
-msgstr "~သိမ်းပါ"
-
-#: doc.src#STR_UPDATEDOC.string.text
-msgid "~Update"
-msgstr "~နောက်ဆုံးပေါ်အခြေအနေ"
-
-#: doc.src#STR_SAVEASDOC.string.text
-msgid "Save ~As..."
-msgstr "အဖြစ် သိမ်းပါ..."
-
-#: doc.src#STR_SAVECOPYDOC.string.text
-msgid "Save Copy ~as..."
-msgstr "အဖြစ် ကူးယူသိမ်းပါ..."
-
-#: doc.src#STR_CLOSEDOC.string.text
-msgid "~Close"
-msgstr "~ပိတ်ပါ"
-
-#: doc.src#STR_CLOSEDOC_ANDRETURN.string.text
-msgid "~Close & Return to "
-msgstr "~ပိတ်ပြီးပြန်သွားပါ"
-
-#: doc.src#STR_WIZARD.string.text
-msgid " AutoPilot"
-msgstr " AutoPilot"
-
-#: doc.src#RID_STR_FILTCONFIG.string.text
-msgid "Configurations"
-msgstr "အစိတ်အပိုင်းဖွဲ့စည်းပုံများ"
-
-#: doc.src#RID_STR_FILTBASIC.string.text
-msgid "%PRODUCTNAME Basic libraries"
-msgstr "%PRODUCTNAME အခြေခံ လိုင်ဘရီများ"
-
-#: doc.src#RID_STR_WARNSTYLEOVERWRITE.string.text
-msgid "Should the \"$(ARG1)\" Style be replaced?"
-msgstr "\"$(ARG1)\" ပုံစံအစားထိုးသင့်ပါသလား။"
-
-#: doc.src#STR_DOC_LOADING.string.text
-msgid "Loading Document"
-msgstr "ဆွဲတင်နေသည့် မှတ်တမ်းမှတ်ရာ"
-
-#: doc.src#RID_DLSTATUS.INET_NAME_RESOLVE_START.string.text
-msgid "Connection to: $(HOST). Waiting for response..."
-msgstr "$(HOST)သို့ ချိတ်ဆက်မှု။ တုန့်ပြန်မှု ကိုစောင့်ရန်..."
-
-#: doc.src#RID_DLSTATUS.INET_CONNECT_START.string.text
-msgid "Opening $(TARGET) at $(HOST)"
-msgstr "$(HOST)တွင် $(TARGET) ဖွင့်ခြင်း"
-
-#: doc.src#RID_DLSTATUS.INET_READ_STATUS.string.text
-msgid "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
-msgstr "ဆွဲတင်နေသည် - $(HOST) မှ $(TARGET)သို့။ $(BYTE) ဆွဲတင်ထားသည်"
-
-#: doc.src#RID_DLSTATUS.INET_CONNECTION_CLOSED.string.text
-msgid "Disconnected"
-msgstr "ချိတ်ဆက်မထားပါ"
-
-#: doc.src#MSG_OPEN_READONLY.querybox.text
-msgid ""
-"Document cannot be opened for editing.\n"
-"Do you want to open it as read-only?"
-msgstr ""
-"တည်းဖြတ်မှုများပြုရန်အတွက် မှတ်တမ်းမှတ်ရာကို မဖွင့်နိုင်ပါ။\n"
-"ဖတ်ရန်အတွက်သာ ဤမှတ်တမ်းမှတ်ရာကို ဖွင့်လိုပါသလား။"
-
-#: doc.src#STR_EDIT.string.text
-msgid "Edit"
-msgstr "တည်းဖြတ်ပါ"
-
-#: doc.src#RID_OFFICEFILTER.string.text
-msgid "%PRODUCTNAME Documents"
-msgstr "%PRODUCTNAME မှတ်တမ်းမှတ်ရာများ"
-
-#: doc.src#STR_FRAMEOBJECT_PROPERTIES.string.text
-msgid "Propert~ies..."
-msgstr "ဂုဏ်သတ္တိများ..."
-
-#: doc.src#STR_FSET_FILTERNAME0.string.text
-msgid "HTML (FrameSet)"
-msgstr "HTML (ဘောင်အစုံ)"
-
-#: doc.src#STR_FSET_FILTERNAME1.string.text
-msgid "%PRODUCTNAME Frame Document"
-msgstr "%PRODUCTNAME ဘောင် မှတ်တမ်း"
-
-#: doc.src#STR_TEMPL_MOVED.string.text
-msgid ""
-"The template \"$(TEMPLATE)\" was not found at the original location. A "
-"template with the same name exists at \"$(FOUND)\". Should this template be "
-"used in the future when comparing?"
-msgstr ""
-"\"$(TEMPLATE)\" ပုံစံပြားကို မူလနေရာ၌ ရှာမတွေ့ပါ။\"$(FOUND)\"တွင်တူညီသော "
-"အမည်တစ်ခုဖြင့် ပုံစံပြားတည်ရှိသည်။ နောင်တချိန်တွင် နှိုင်းယှဉ်မှုများ "
-"ပြုသောအခါ၌ ဤပုံစံပြားကို အသုံးပြုသင့်ပါသလား။"
-
-#: doc.src#STR_TEMPL_RESET.string.text
-msgid ""
-"The template \"$(TEMPLATE)\" has not been found. Should the template be looked "
-"for the next time the document is opened ?"
-msgstr ""
-"\"$(TEMPLATE)\" ပုံစံပြားကို မူလနေရာ၌ ရှာမတွေ့ပါ။ မှတ်တမ်းမှတ်ရာ "
-"ဖွင့်ထားသည့်အချိန်တွင် ပုံစံပြားကို နောက်တစ်ကြိမ် ရှာဖွေသင့်ပါသလား။"
-
-#: doc.src#STR_AUTOMATICVERSION.string.text
-msgid "Automatically saved version"
-msgstr "ဗားရှင်းကို အလိုအလျောက်သိမ်းခဲ့သည်"
-
-#: doc.src#STR_DOCTYPENAME_SW.string.text
-msgid "Text Document"
-msgstr "စာသား မှတ်တမ်းမှတ်ရာ"
-
-#: doc.src#STR_DOCTYPENAME_SWWEB.string.text
-msgid "HTML Document"
-msgstr "HTML မှတ်တမ်းမှတ်ရာ"
-
-#: doc.src#STR_DOCTYPENAME_SWGLOB.string.text
-msgid "Master Document"
-msgstr "ပင်မ မှတ်တမ်းမှတ်ရာ"
-
-#: doc.src#STR_DOCTYPENAME_SC.string.text
-msgid "Spreadsheet"
-msgstr "စာရွက်အချပ်လွှာ"
-
-#: doc.src#STR_DOCTYPENAME_SI.string.text
-msgid "Presentation"
-msgstr "တင်ဆက်မှုပုံစံ"
-
-#: doc.src#STR_DOCTYPENAME_SD.string.text
-msgid "Drawing"
-msgstr "ပုံဆွဲခြင်း"
-
-#: doc.src#STR_DOCTYPENAME_MESSAGE.string.text
-msgid "Message"
-msgstr "အမှာစာ"
-
-#: doc.src#STR_NOSAVEANDCLOSE.string.text
-msgid "~Discard"
-msgstr "~ဖယ်ရှားပါ"
-
-#: doc.src#STR_PACKNGO_NOACCESS.string.text
-msgid "Access to the current data medium not possible."
-msgstr "လက်ရှိကြားခံအချက်အလက်များရယူရန်မဖြစ်နိုင်ပါ။"
-
-#: doc.src#STR_PACKNGO_NEWMEDIUM.string.text
-msgid "Insert the next data carrier and click OK."
-msgstr "နောက်ထပ်အချက်အလက်များထပ်ထည့်ပြီး ‘အိုကေ’ကို ကလစ်နှိပ်ပါ။"
-
-#: doc.src#STR_OBJECT.string.text
-msgid "Object"
-msgstr "အရာဝတ္ထု"
-
-#: doc.src#DLG_MACROQUERY.querybox.text
-msgid "This document contains macros. $(TEXT)"
-msgstr "ဤမှတ်တမ်းမှတ်ရာတွင် မက်ခရိုများ ပါဝင်သည်။$(TEXT)"
-
-#: doc.src#DLG_MACROQUERY.querybox.title
-msgid "Run Macro"
-msgstr "မက်ခရိုလုပ်ဆောင်ပါ"
-
-#: doc.src#BTN_OK.string.text
-msgid "Run"
-msgstr "လုပ်ဆောင်ပါ"
-
-#: doc.src#BTN_CANCEL.string.text
-msgid "Do Not Run"
-msgstr "မလုပ်ဆောင်ပါ"
-
-#: doc.src#FT_CANCEL.string.text
-msgid ""
-"According to the security settings, the macros in this document should not "
-"be run. Do you want to run them anyway?"
-msgstr ""
-"လုံခြုံရေးဆိုင်ရာပြင်ဆင်ချိန်ညှိမှုများအရ ဤမှတ်တမ်းမှတ်ရာတွင် မက်ခရိုများ "
-"မလုပ်ဆောင်နိုင်ပါ။ တနည်းနည်းဖြင့် လုပ်ဆောင်မှုပြုရန်ဆန္ဒရှိပါသလား"
-
-#: doc.src#FT_OK.string.text
-msgid "Do you want to allow these macros to be run?"
-msgstr "ဤမက်ခရိုများလုပ်ဆောင်မှုပြုရန် ခွင့်ပြု လိုပါသလား။"
-
-#: doc.src#STR_EXPORTASPDF_TITLE.string.text
-msgid "Export as PDF"
-msgstr "PDF အဖြစ် ပို့ပါ"
-
-#: doc.src#STR_EXPORTWITHCFGBUTTON.string.text
-msgid "Export..."
-msgstr "တင်ပို့ပါ..."
-
-#: doc.src#STR_EXPORTBUTTON.string.text
-msgid "Export"
-msgstr "တင်ပို့ပါ"
-
-#: doc.src#RID_SVXSTR_SECURITY_ADDPATH.string.text
-msgid "Add this directory to the list of secure paths: "
-msgstr "လုံခြုံရေးဆိုင်ရာ လမ်းကြောင်းများစာရင်းသို့ ဤဒိုင်ယာထရီ ထပ်ထည့်ပါ -"
-
-#: doc.src#STR_LABEL_FILEFORMAT.string.text
-msgid "File format:"
-msgstr "ဖိုင်စီစဉ်ဖွဲ့စည်းမှု ပုံစံ -"
-
-#: doc.src#STR_HIDDENINFO_CONTAINS.string.text
-msgid ""
-"This document contains:\n"
-"\n"
-msgstr ""
-"ဤမှတ်တမ်းမှတ်ရာ ပါဝင်သည် - \n"
-"\n"
-
-#: doc.src#STR_HIDDENINFO_RECORDCHANGES.string.text
-msgid "Recorded changes"
-msgstr "မှတ်တမ်းတင်ထားသည့် ပြောင်းလဲမှုများ"
-
-#: doc.src#STR_HIDDENINFO_NOTES.string.text
-msgid "Notes"
-msgstr "မှတ်ချက်များ"
-
-#: doc.src#STR_HIDDENINFO_DOCVERSIONS.string.text
-msgid "Document versions"
-msgstr "မှတ်တမ်းမှတ်ရာပုံစံများ"
-
-#: doc.src#STR_HIDDENINFO_FIELDS.string.text
-msgid "Fields"
-msgstr "နေရာကွက်များ"
-
-#: doc.src#STR_HIDDENINFO_LINKDATA.string.text
-msgid "Linked data..."
-msgstr "အချက်အလက်များချိတ်ဆက်ထားမှု..."
-
-#: doc.src#STR_HIDDENINFO_CONTINUE_SAVING.string.text
-msgid "Do you want to continue saving the document?"
-msgstr "မှတ်တမ်းမှတ်ရာအား ဆက်လက်သိမ်းဆည်းရန် ဆန္ဒရှိပါသလား။"
-
-#: doc.src#STR_HIDDENINFO_CONTINUE_PRINTING.string.text
-msgid "Do you want to continue printing the document?"
-msgstr "မှတ်တမ်းမှတ်ရာအား ဆက်လက်ပရင့်ထုတ်ရန် ဆန္ဒရှိပါသလား။"
-
-#: doc.src#STR_HIDDENINFO_CONTINUE_SIGNING.string.text
-msgid "Do you want to continue signing the document?"
-msgstr "မှတ်တမ်းမှတ်ရာအားမှန်ကန်ကြောင်းစစ်ဆေးချက်ဆက်လက်ပြုလုပ်လိုပါသလား။"
-
-#: doc.src#STR_HIDDENINFO_CONTINUE_CREATEPDF.string.text
-msgid "Do you want to continue creating a PDF file?"
-msgstr "PDF ဖိုင်တစ်ခု ဆက်လက်ဖန်တီးရန် ဆန္ဒရှိပါသလား။"
-
-#: doc.src#STR_NEW_FILENAME_SAVE.string.text
-msgid ""
-"If you do not want to overwrite the original document, you should save your "
-"work under a new filename."
-msgstr ""
-"မူလမှတ်တမ်းမှတ်ရာများကို ဖျက်ပြီး အသစ်ဖြင့်အစားမထိုးလိုပါက "
-"သင့်လုပ်ဆောင်ချက်များကို ဖိုင်အမည်အသစ်ပေးပြီး သိမ်းဆည်းထားသင့်သည်။"
-
-#: doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.string.text
-msgid "Some template files are protected and can not be deleted."
-msgstr "ယာယီဖိုင်အချို့အားကာကွယ်မှုပြုထားသည်။ ဖျက်ရန်မဖြစ်နိုင်ပါ။"
-
-#: doc.src#STR_DOCINFO_INFOFIELD.string.text
-msgid "Info %1"
-msgstr "သတင်းအချက်အလက် %၁"
-
-#: doc.src#STR_SHARED.string.text
-msgid " (shared)"
-msgstr "(ဝေမျှထားသည်)"
-
-#: doc.src#STR_XMLSEC_ODF12_EXPECTED.string.text
-msgid ""
-"The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-"
-"Options-Load/Save-General. Signing documents requires ODF 1.2 "
-"(OpenOffice.org 3.x)."
-msgstr ""
-"ကိရိယာများ-ရွေးပိုင်ခွင့်များ-ဆွဲတင်ရန်/သိမ်းဆည်းပါ-အထွေထွေရှိ ODF 1.1 "
-"(OpenOffice.org 2.x) မှတ်တမ်းမှတ်ရာ စီစဉ်ဖွဲ့စည်းမှုပုံစံဖြစ်သည်။ လိုအပ်သည့် "
-"မှတ်တမ်းမှတ်ရာ လက္ခဏာရပ်များ ရယူရန် ODF 1.2 (OpenOffice.org 3.x) "
-
-#: doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.querybox.text
-msgid ""
-"The document has to be saved before it can be signed. Saving the document "
-"removes all present signatures.\n"
-"Do you want to save the document?"
-msgstr ""
-"မှန်ကန်ကြောင်းအတည်ပြုချက်များမပြုမီ မှတ်တမ်းမှတ်ရာအား သိမ်းဆည်းမှုပြုခဲ့သည်။ "
-"လက်ရှိ အမှတ်အသားများအားလုံးကို ဖယ်ရှားပြီး မှတ်တမ်းမှတ်ရာအား "
-"သိမ်းဆည်းမှုပြုနေသည်။\n"
-"ဆက်လက်သိမ်းဆည်းလိုပါသလား"
-
-#: doc.src#STR_QRYTEMPL_MESSAGE.string.text
-msgid ""
-"The template '$(ARG1)' on which this document is based, has been modified. "
-"Do you want to update style based formattings according to the modified "
-"template?"
-msgstr ""
-"မှတ်တမ်းမှတ်ရာပေါ်တွင် အခြေတည်ထားသည့် ပုံစံပြား'$(ARG1)'ကို "
-"အထူးပြုချက်ထားရှိသည်။ စီစဉ်ဖွဲ့စည်းမှုပုံစံတွင် အခြေတည်ထားသည့် "
-"နောက်ဆုံးပေါ်အချက်အလက်များဖြင့် ဖြည့်စွက်ဖန်တီးလိုပါသလား"
-
-#: doc.src#STR_QRYTEMPL_UPDATE_BTN.string.text
-msgid "~Update Styles"
-msgstr "~နောက်ဆုံးပေါ်ပုံစံများ"
-
-#: doc.src#STR_QRYTEMPL_KEEP_BTN.string.text
-msgid "~Keep Old Styles"
-msgstr "~ပုံစံအဟောင်းများထိန်းသိမ်းပါ"
-
-#: doctdlg.src#DLG_DOC_TEMPLATE.FL_EDIT.fixedline.text
-msgid "New template"
-msgstr "ပုံစံပြားအသစ်"
-
-#: doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.fixedline.text
-msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.fixedline.text"
-msgid "Templates"
-msgstr "ပုံစံပြားများ"
-
-#: doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.fixedtext.text
-msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.fixedtext.text"
-msgid "~Categories"
-msgstr "⁠~အမျိုးအစားများ"
-
-#: doctdlg.src#DLG_DOC_TEMPLATE.FT_STYLESHEETS.fixedtext.text
-msgid "~Templates"
-msgstr "~ပုံစံပြားများ"
-
-#: doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.pushbutton.text
-msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.pushbutton.text"
-msgid "~Edit"
-msgstr "~တည်းဖြတ်ပါ"
-
-#: doctdlg.src#DLG_DOC_TEMPLATE.BT_ORGANIZE.pushbutton.text
-msgid "~Organizer..."
-msgstr "~စီစဉ်သူ..."
-
-#: doctdlg.src#DLG_DOC_TEMPLATE.modaldialog.text
-msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.modaldialog.text"
-msgid "Templates"
-msgstr "ပုံစံပြားများ"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.1.itemlist.text
-msgid "My Templates"
-msgstr "ကျွန်ုပ်၏ ပုံစံပြားများ"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.2.itemlist.text
-msgid "Business Correspondence"
-msgstr "စီးပွားရေးဆိုင်ရာများ"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.3.itemlist.text
-msgid "Other Business Documents"
-msgstr "အခြား စီးပွားရေးမှတ်တမ်းမှတ်ရာများ"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.4.itemlist.text
-msgid "Personal Correspondence and Documents"
-msgstr "ကိုယ်ရေးကိုယ်တာဆိုင်ရာမှတ်တမ်းမှတ်ရာများ"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.5.itemlist.text
-msgid "Forms and Contracts"
-msgstr "ပုံစံများနှင့် ဆန့်ကျင်ကွဲလွဲချက်များ"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.6.itemlist.text
-msgid "Finances"
-msgstr "ငွေကြေးဆိုင်ရာ"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.7.itemlist.text
-msgid "Education"
-msgstr "ပညာရေး"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.8.itemlist.text
-msgid "Presentation Backgrounds"
-msgstr "နောက်ခံများ တင်ပြချက်"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.9.itemlist.text
-msgid "Presentations"
-msgstr "တင်ဆက်မှုပုံစံများ"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.10.itemlist.text
-msgid "Miscellaneous"
-msgstr "အထွေထွေ"
-
-#: doctempl.src#RID_CNT_STR_WAITING.string.text
-msgid "The templates are being initialized for first-time usage."
-msgstr "ပထမဆုံးအကြိမ် အသုံးပြုခြင်းအတွက် ပုံစံပြားများ အစပျိုးထားသည်။"
-
-#: docvor.src#DLG_ORGANIZE.BTN_OK.okbutton.text
-msgid "Close"
+#: source/appl/app.src#STR_NONAME.String.Text
+#, fuzzy
+msgid  "Untitled"
+msgstr "ခေါင်းစဉ်မဲ့"
+
+#: source/appl/app.src#STR_CLOSE.String.Text
+#, fuzzy
+msgid  "Close"
 msgstr "ပိတ်ပါ"
 
-#: docvor.src#DLG_ORGANIZE.BTN_FILES.pushbutton.text
-msgid "~File..."
-msgstr "~ဖိုင်..."
-
-#: docvor.src#DLG_ORGANIZE.BTN_ADDRESSTEMPLATE.pushbutton.text
-msgid "~Address Book..."
-msgstr "~လိပ်စာစာအုပ်..."
-
-#: docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.1.stringlist.text
-msgctxt "docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.1.stringlist.text"
-msgid "Templates"
-msgstr "ပုံစံပြားများ"
-
-#: docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.2.stringlist.text
-msgctxt "docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.2.stringlist.text"
-msgid "Documents"
-msgstr "မှတ်တမ်းမှတ်ရာများ"
-
-#: docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.1.stringlist.text
-msgctxt "docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.1.stringlist.text"
-msgid "Templates"
-msgstr "ပုံစံပြားများ"
-
-#: docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.2.stringlist.text
-msgctxt "docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.2.stringlist.text"
-msgid "Documents"
-msgstr "မှတ်တမ်းမှတ်ရာများ"
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_NEW.menuitem.text
-msgid "~New"
-msgstr "~အသစ်"
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DELETE.menuitem.text
-msgid "~Delete"
-msgstr "~ဖျက်ပါ"
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.menuitem.text
-msgctxt "docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.menuitem.text"
-msgid "~Edit"
-msgstr "~တည်းဖြတ်ပါ"
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_FROM.menuitem.text
-msgid "Import Template..."
-msgstr "ပုံစံပြား တင်သွင်းပါ..."
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_TO.menuitem.text
-msgid "Export Template..."
-msgstr "ပုံစံပြား တင်ပို့ပါ..."
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINT.menuitem.text
-msgid "~Print"
-msgstr "~ပရင့်ထုတ်ပါ"
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINTER_SETUP.menuitem.text
-msgid "Printer Settings..."
-msgstr "ပရင်တာ ပြင်ဆင်ချိန်ညှိနှိုင်မှုများ..."
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESCAN.menuitem.text
-msgid "Update"
-msgstr "နောက်ဆုံးပေါ် အခြေအနေ"
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DEFAULT_TEMPLATE.menuitem.text
-msgid "Set As Default Template"
-msgstr "နဂိုမူလပုံစံပြားအဖြစ်ဖန်တီးပါ"
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESET_DEFAULT_TEMPLATE.menuitem.text
-msgid "Reset Default Template"
-msgstr "နဂိုမူလပုံစံပြားအဖြစ်ပြန်လည်ဖန်တီးပါ"
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.menubutton.text
-msgid "Commands"
-msgstr "ညွှန်ကြားချက်များ"
-
-#: docvor.src#DLG_ORGANIZE.modaldialog.text
-msgid "Template Management"
-msgstr "ပုံစံပြားပရိုဂရမ်စီမံထိန်းသိမ်းခြင်း"
-
-#: new.src#DLG_NEW_FILE.FT_REGION.fixedtext.text
-msgctxt "new.src#DLG_NEW_FILE.FT_REGION.fixedtext.text"
-msgid "~Categories"
-msgstr "~အမျိုးအစားများ"
-
-#: new.src#DLG_NEW_FILE.FT_TEMPLATE.fixedtext.text
-msgid "T~emplates"
-msgstr "ပုံစံပြားများ"
-
-#: new.src#DLG_NEW_FILE.BT_MORE.morebutton.text
-msgid "~More"
-msgstr "⁠~ပို၍"
-
-#: new.src#DLG_NEW_FILE.BTN_PREVIEW.checkbox.text
-msgid "Pre~view"
-msgstr "အစမ်းကြည့်ပါ"
-
-#: new.src#DLG_NEW_FILE.GB_DOCINFO.fixedline.text
-msgid "Description"
-msgstr "ဖော်ပြချက်"
-
-#: new.src#DLG_NEW_FILE.CB_TEXT_STYLE.checkbox.text
-msgid "Te~xt"
-msgstr "စာသား"
-
-#: new.src#DLG_NEW_FILE.CB_FRAME_STYLE.checkbox.text
-msgid "~Frame"
-msgstr "~ဘောင်"
-
-#: new.src#DLG_NEW_FILE.CB_PAGE_STYLE.checkbox.text
-msgid "~Pages"
-msgstr "~စာမျက်နှာများ"
-
-#: new.src#DLG_NEW_FILE.CB_NUM_STYLE.checkbox.text
-msgid "N~umbering"
-msgstr "နံပါတ်တပ်ခြင်း"
-
-#: new.src#DLG_NEW_FILE.CB_MERGE_STYLE.checkbox.text
-msgid "~Overwrite"
-msgstr "⁠~အချက်အလက်သစ်များထပ်မံဖြည့်စွပ်ပါ"
-
-#: new.src#DLG_NEW_FILE.PB_LOAD_FILE.pushbutton.text
-msgid "From File..."
-msgstr "ဖိုင်မှ..."
-
-#: new.src#DLG_NEW_FILE.STR_LOAD_TEMPLATE.string.text
-msgid "Load Styles"
-msgstr "ပုံစံများဆွဲတင်ပါ"
-
-#: new.src#DLG_NEW_FILE.FT_TITLE.fixedtext.text
-msgid "~Title"
-msgstr "~ခေါင်းစဉ်"
-
-#: new.src#DLG_NEW_FILE.FT_THEMA.fixedtext.text
-msgid "Subject"
-msgstr "အကြောင်းကိစ္စ"
-
-#: new.src#DLG_NEW_FILE.FT_KEYWORDS.fixedtext.text
-msgid "~Key words"
-msgstr "~အဓိက စကားလုံးများ"
-
-#: new.src#DLG_NEW_FILE.FT_DESC.fixedtext.text
-msgid "~Description"
-msgstr "~ဖော်ပြချက်"
-
-#: new.src#DLG_NEW_FILE.modaldialog.text
-msgid "New"
-msgstr "အသစ်"
-
-#~ msgid ""
-#~ "The Styles in this document do not match your current Styles. Should your "
-#~ "current Styles be applied to this document?"
-#~ msgstr ""
-#~ "ဤမှတ်တမ်းမှတ်ရာရှိပုံစံများနှင့် လက်ရှိပုံစံများ ကိုက်ညီမှုမရှိပါ။ "
-#~ "ဤမှတ်တမ်းမှတ်ရာတွင် အသုံးချရန် လက်ရှိပုံစံများကို အသုံးပြုသင့်ပါသလား။"
-"X-Accelerator-Marker: ~\n"
-
-#: alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.fixedtext.text
-msgid ""
-"This document may contain formatting or content that cannot be saved in the "
-"%FORMATNAME file format. Do you want to save the document in this format "
-"anyway?\n"
-"\n"
-"Use the latest ODF file format and be sure all formatting and content is "
-"saved correctly."
-msgstr ""
-"ဤမှတ်တမ်းမှတ်ရာတွင် ပါဝင်သည့် ပြင်ဆင်ဖွဲ့စည်းမှုပုံစံများနှင့် မာတိကာများကို "
-"%FORMATNAME ဖိုင်တွင် သိမ်းဆည်းနိုင်လိမ့်မည် မဟုတ်ပါ။ မည်သည့်နည်းဖြင့်မဆို "
-"သိမ်းဆည်းမှုပြုရန် ဆန္ဒရှိပါသလား\n"
-"\n"
-"နောက်ဆုံးပေါ် ODF ဖိုင်ကိုအသုံးပြုပြီး စီစဉ်ဖွဲ့စည်းမှုပုံစံများနှင့် "
-"မာတိကာများအားလုံးကို မှန်ကန်စွာ သိမ်းဆည်းမှုပြုပါ။"
-
-#: alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.okbutton.text
-msgid "~Keep Current Format"
-msgstr "~လက်ရှိ ပြင်ဆင်ဖွဲ့စည်းမှုပုံစံကိုထိန်းသိမ်းပါ"
-
-#: alienwarn.src#RID_DLG_ALIEN_WARNING.PB_YES.cancelbutton.text
-msgid "~Save in ODF Format"
-msgstr "~ODF ပြင်ဆင်ဖွဲ့စည်းမှုပုံစံကိုသိမ်းဆည်းပါ"
-
-#: alienwarn.src#RID_DLG_ALIEN_WARNING.PB_MOREINFO.helpbutton.text
-msgid "~More Information..."
-msgstr "~သတင်းအချက်အလက်များ..."
-
-#: alienwarn.src#RID_DLG_ALIEN_WARNING.CB_WARNING_OFF.checkbox.text
-msgid "~Ask when not saving in ODF format"
-msgstr "⁠~ODFစီစဉ်ဖွဲ့စည်းမှုပုံစံတွင် မသိမ်းဆည်းလိုသောအခါ မေးမြန်းမှုပြုပါ"
-
-#: dialog.src#STR_RESET.string.text
-msgid "~Reset"
-msgstr "~ပြန်လည်စတင်ပါ"
-
-#: dialog.src#STR_APPLY.string.text
-msgid "Apply"
-msgstr "အသုံးချပါ"
-
-#: dialog.src#STR_TABPAGE_MANAGESTYLES.string.text
-msgid "Organizer"
-msgstr "စီစဉ်သူ"
-
-#: dialog.src#MSG_TABPAGE_INVALIDNAME.infobox.text
-msgid "This name is already in use."
-msgstr "ဤအမည်သုံးထားပြီးဖြစ်သည်။"
-
-#: dialog.src#MSG_TABPAGE_INVALIDSTYLE.infobox.text
-msgid "This Style does not exist."
-msgstr "ဤပုံစံမတည်ရှိပါ။"
-
-#: dialog.src#MSG_TABPAGE_INVALIDPARENT.infobox.text
-msgid ""
-"This Style cannot be used as a base Style,\n"
-"because it would result in a recursive reference."
-msgstr ""
-"ဤပုံစံကို အခြေခံပုံစံတစ်ခုအနေဖြင့် အသုံးမပြု နိုင်ပါ\n"
-"အကြောင်းမှာ ရည်ညွှန်းချက်တစ်ခုတွင် ၎င်း၏အဖြေရှိနေသောကြောင့်ဖြစ်သည်။"
-
-#: dialog.src#MSG_POOL_STYLE_NAME.infobox.text
-msgid ""
-"Name already exists as a default Style.\n"
-"Please choose another name."
-msgstr ""
-"နဂိုမူလစတိုင်လ်တစ်ခုအနေဖြင့် အမည်တည်ရှိပြီးဖြစ်သည် \n"
-"အခြားအမည်ရွေးပေးပါ။"
-
-#: dialog.src#STR_DELETE_STYLE.string.text
-msgid "Do you really want to delete Style $1?"
-msgstr "ပုံစံ$1ကိုဖျက်ရန် အမှန်တကယ် ဆန္ဒရှိပါသလား?"
-
-#: dialog.src#STR_DELETE_STYLE_USED.string.text
-msgid "You are deleting an applied Style!\n"
-msgstr "အသုံးချသည့်ပုံစံတစ်ခုကိုသင်ဖျက်နေသည်!\n"
-
-#: dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.menuitem.text
-msgid "New..."
-msgstr "အသစ်..."
-
-#: dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.menuitem.text
-msgid "Modify..."
-msgstr "အထူးပြုပါ..."
-
-#: dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.menuitem.text
-msgid "Delete..."
-msgstr "ဖျက်ပါ..."
-
-#: dialog.src#SID_NAVIGATOR.string.text
-msgid "Navigator"
-msgstr "လမ်းညွှန်ကိရိယာ"
-
-#: dialog.src#SID_TASKPANE.string.text
-msgid "Task Pane"
-msgstr ""
-
-#: dialog.src#MSG_ERROR_WRONG_CONFIRM.errorbox.text
-msgid "Faulty password confirmation"
-msgstr "အမှား စကားဝှက် အတည်ပြုချက်"
-
-#: dialog.src#STR_PDF_EXPORT_SEND.string.text
-msgid "Send"
-msgstr "ပေးပို့ပါ"
-
-#: dinfdlg.src#STR_SFX_NEWOFFICEDOC.string.text
-msgid "%PRODUCTNAME document"
-msgstr "%PRODUCTNAME မှတ်တမ်းမှတ်ရာ"
-
-#: dinfdlg.src#TP_DOCINFODESC.FT_TITLE.fixedtext.text
-msgid "~Title"
-msgstr "~ခေါင်းစဉ်"
-
-#: dinfdlg.src#TP_DOCINFODESC.FT_THEMA.fixedtext.text
-msgid "~Subject"
-msgstr "~အကြောင်းကိစ္စ"
-
-#: dinfdlg.src#TP_DOCINFODESC.FT_KEYWORDS.fixedtext.text
-msgid "~Keywords"
-msgstr "~အဓိကစကားလုံးများ"
-
-#: dinfdlg.src#TP_DOCINFODESC.FT_COMMENT.fixedtext.text
-msgid "~Comments"
-msgstr "~ထင်မြင်သုံးသပ်ချက်များ"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.fixedtext.text
-msgid "Type:"
-msgstr "အမျိုးအစား-"
-
-#: dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.checkbox.text
-msgctxt "dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.checkbox.text"
-msgid "~Read-only"
-msgstr "~ဖတ်ရန်သာ"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_FILE.fixedtext.text
-msgid "Location:"
-msgstr "တည်နေရာ -"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_FILE_SIZE.fixedtext.text
-msgid "Size:"
-msgstr "အရွယ်အစား -"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_CREATE.fixedtext.text
-msgid "Created:"
-msgstr "ဖန်တီးထားသည် -"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_CHANGE.fixedtext.text
-msgid "Modified:"
-msgstr "အထူးပြုထားသည် -"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_SIGNED.fixedtext.text
-msgid "Digitally signed:"
-msgstr "ဒစ်ဂျစ်တယ်အားဖြင့်မှန်ကန်ကြောင်း စစ်ဆေးချက်..."
-
-#: dinfdlg.src#TP_DOCINFODOC.BTN_SIGNATURE.pushbutton.text
-msgid "Digital Signature..."
-msgstr "ဒစ်ဂျစ်တယ် မှန်ကန်ကြောင်း စစ်ဆေးချက်..."
-
-#: dinfdlg.src#TP_DOCINFODOC.STR_MULTSIGNED.string.text
-msgid "Multiply signed document"
-msgstr "မှတ်တမ်းမှတ်ရာ မှန်ကန်ကြောင်း စစ်ဆေးချက်ပေါင်းစုံ"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_PRINT.fixedtext.text
-msgid "Last printed:"
-msgstr "နောက်ဆုံး ပရင့်ထုတ်ထားသည် -"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_TIMELOG.fixedtext.text
-msgid "Total editing time:"
-msgstr "စုစုပေါင်း တည်းဖြတ်မှုအချိန် -"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_DOCNO.fixedtext.text
-msgid "Revision number:"
-msgstr "နံပါတ် ပြင်ဆင်ချက် -"
-
-#: dinfdlg.src#TP_DOCINFODOC.BTN_DELETE.pushbutton.text
-msgid "Reset"
-msgstr "ပြန်လည်စတင်ပါ"
-
-#: dinfdlg.src#TP_DOCINFODOC.CB_USE_USERDATA.checkbox.text
-msgid "~Apply user data"
-msgstr "~အသုံးပြုသူ အချက်အလက်များ လက်တွေ့အသုံးချပါ"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_TEMPL.fixedtext.text
-msgid "Template:"
-msgstr "ပုံစံပြား -"
-
-#: dinfdlg.src#TP_DOCINFODOC.STR_UNKNOWNSIZE.string.text
-msgid "unknown"
-msgstr "မသိသော"
-
-#: dinfdlg.src#TP_DOCINFODOC.EDIT_FILE_NAME.string.text
-msgid "File Name"
-msgstr ""
-
-#: dinfdlg.src#TP_DOCINFOUSER.BTN_EDITLABEL.pushbutton.text
-msgid "~Info fields..."
-msgstr "~သတင်းအချက်အလက် နေရာကွက်များ..."
-
-#: dinfdlg.src#TP_DOCINFORELOAD.RB_NOAUTOUPDATE.radiobutton.text
-msgid "Do not refresh automatically"
-msgstr "အလိုအလျောက် ပြန်လည် မလန်းဆန်းပါ"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.RB_RELOADUPDATE.radiobutton.text
-msgid "Refresh this document"
-msgstr "ဤမှတ်တမ်းမှတ်ရာ ပြန်လည် လန်းဆန်းစေပါ"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.FT_EVERY.fixedtext.text
-msgid "every"
-msgstr "အရာရာတိုင်း"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.fixedtext.text
-msgctxt "dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.fixedtext.text"
-msgid "seconds"
-msgstr "စက္ကန့်"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.RB_FORWARDUPDATE.radiobutton.text
-msgid "Redirect from this document"
-msgstr "ဤမှတ်တမ်းမှတ်ရာမှ ဦးတည်ချက်ပြောင်းပါ"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.fixedtext.text
-msgid "after"
-msgstr "ပြီးနောက်"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.fixedtext.text
-msgctxt "dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.fixedtext.text"
-msgid "seconds"
-msgstr "စက္ကန့်"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.FT_URL.fixedtext.text
-msgid "to URL"
-msgstr "URL သို့"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.FT_FRAME.fixedtext.text
-msgid "to frame"
-msgstr "ဘောင် သို့"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.STR_FORWARD_ERRMSSG.string.text
-msgid "If you select the option \"%PLACEHOLDER%\", you must enter a URL."
-msgstr "အကယ်၍ \"%PLACEHOLDER%\" ကိုရွေးချယ်မည်ဆိုပါက URL တစ်ခုသို့ ဝင်ရလိမ့်မည်။"
-
-#: dinfdlg.src#TP_CUSTOMPROPERTIES.FT_PROPERTIES.fixedtext.text
-msgid "~Properties"
-msgstr "⁠~ဂုဏ်သတ္တိများ"
-
-#: dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.string.text
-msgid "Name"
-msgstr "အမည်"
-
-#: dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.string.text
-msgid "Type"
-msgstr "အမျိုးအစား"
-
-#: dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_VALUE.string.text
-msgid "Value"
-msgstr "တန်ဖိုး"
-
-#: dinfdlg.src#TP_CUSTOMPROPERTIES.BTN_ADD.pushbutton.text
-msgid "~Add"
-msgstr "~ထပ်ဖြည့်ပါ"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.combobox.text
-msgctxt "dinfdlg.src#SFX_CB_PROPERTY_NAME.combobox.text"
-msgid "-"
-msgstr "-"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.combobox.quickhelptext
-msgid "Property Name"
-msgstr "ဂုဏ်သတ္တိအမည်များ"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.1.stringlist.text
-msgid "Checked by"
-msgstr "အနေဖြင့်စစ်ဆေးပါ"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.2.stringlist.text
-msgid "Client"
-msgstr "အသုံးပြုသူ"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.3.stringlist.text
-msgid "Date completed"
-msgstr "ပြီးပြည့်စုံသည့်ရက်စွဲ"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.4.stringlist.text
-msgid "Department"
-msgstr "ဌာန"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.5.stringlist.text
-msgid "Destinations"
-msgstr "ရောက်ရှိရာနေရာ"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.6.stringlist.text
-msgid "Disposition"
-msgstr "စီစဉ်ထားသည်"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.7.stringlist.text
-msgid "Division"
-msgstr "ပိုင်းခြားမှု"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.8.stringlist.text
-msgid "Document number"
-msgstr "မှတ်တမ်းမှတ်ရာနံပါတ်"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.9.stringlist.text
-msgid "Editor"
-msgstr "တည်းဖြတ်သူ"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.10.stringlist.text
-msgid "E-Mail"
-msgstr "အီးမေးလ်"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.11.stringlist.text
-msgid "Forward to"
-msgstr "ရှေ့သို့"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.12.stringlist.text
-msgid "Group"
-msgstr "အုပ်စု"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.13.stringlist.text
-msgid "Info"
-msgstr "သတင်းအချက်အလက်"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.14.stringlist.text
-msgid "Language"
-msgstr "ဘာသာစကား"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.15.stringlist.text
-msgid "Mailstop"
-msgstr "အီးမေးလ်ပို့မှုရပ်ပါ"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.16.stringlist.text
-msgid "Matter"
-msgstr "အကြောင်းကိစ္စ"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.17.stringlist.text
-msgid "Office"
-msgstr "ရုံး"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.18.stringlist.text
-msgid "Owner"
-msgstr "ပိုင်ရှင်"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.19.stringlist.text
-msgid "Project"
-msgstr "ပရောဂျက်"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.20.stringlist.text
-msgid "Publisher"
-msgstr "ထုတ်ဝေသူ"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.21.stringlist.text
-msgid "Purpose"
-msgstr "ရည်ရွယ်ချက်"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.22.stringlist.text
-msgid "Received from"
-msgstr "မှ လက်ခံရရှိခဲ့သည်"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.23.stringlist.text
-msgid "Recorded by"
-msgstr "အနေဖြင့် မှတ်တမ်းတင်ခဲ့သည်"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.24.stringlist.text
-msgid "Recorded date"
-msgstr "မှတ်တမ်းတင်သည့်နေ့စွဲ"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.25.stringlist.text
-msgid "Reference"
-msgstr "ရည်ညွှန်းချက်"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.26.stringlist.text
-msgid "Source"
-msgstr "ရင်းမြစ်"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.27.stringlist.text
-msgid "Status"
-msgstr "အခြေအနေ"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.28.stringlist.text
-msgid "Telephone number"
-msgstr "တယ်လီဖုန်းနံပါတ်"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.29.stringlist.text
-msgid "Typist"
-msgstr "လက်နှိပ်စက်ရိုက်သူ"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.30.stringlist.text
-msgid "URL"
-msgstr "URL"
-
-#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.1.stringlist.text
-msgid "Text"
-msgstr "စာသား"
-
-#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.2.stringlist.text
-msgid "DateTime"
-msgstr ""
-
-#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.3.stringlist.text
-msgid "Date"
-msgstr "နေ့စွဲ"
-
-#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.4.stringlist.text
-msgctxt "dinfdlg.src#SFX_LB_PROPERTY_TYPE.4.stringlist.text"
-msgid "Duration"
-msgstr ""
-
-#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.5.stringlist.text
-msgid "Number"
-msgstr "နံပါတ်"
-
-#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.6.stringlist.text
-msgid "Yes or no"
-msgstr "ဟုတ်သည် (သို့) မဟုတ်ပါ"
-
-#: dinfdlg.src#SFX_ST_DURATION_FORMAT.string.text
-msgid " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
-msgstr ""
-
-#: dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.radiobutton.text
-msgid "Yes"
-msgstr "ဟုတ်သည်"
-
-#: dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_NO.radiobutton.text
-msgid "No"
-msgstr "မဟုတ်ပါ"
-
-#: dinfdlg.src#SFX_PB_PROPERTY_REMOVE.imagebutton.text
-msgctxt "dinfdlg.src#SFX_PB_PROPERTY_REMOVE.imagebutton.text"
-msgid "-"
-msgstr "-"
-
-#: dinfdlg.src#SFX_PB_PROPERTY_REMOVE.imagebutton.quickhelptext
-msgid "Remove Property"
-msgstr "ဂုဏ်သတ္တိများဖယ်ရှားပါ"
-
-#: dinfdlg.src#SFX_QB_WRONG_TYPE.querybox.text
-msgid ""
-"The value entered does not match the specified type.\n"
-"The value will be stored as text."
-msgstr ""
-"အထူးပြုရွေးချယ်ထားသည့်ပုံစံနှင့် ဝင်ရောက်ထားသည့်တန်ဖိုး ကိုက်ညီမှုမရှိပါ။\n"
-"တန်ဖိုးကို စာသားအဖြစ် သိမ်းဆည်းမှုပြုလိမ့်မည်။"
-
-#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.pageitem.text
-msgid "General"
-msgstr "အထွေထွေ"
-
-#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.pageitem.text
-msgid "Description"
-msgstr "ဖော်ပြချက်"
-
-#: dinfdlg.src#SID_DOCINFO.1.TP_CUSTOMPROPERTIES.pageitem.text
-msgid "Custom Properties"
-msgstr "စိတ်ကြိုက်အရည်အသွေးများ"
-
-#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.pageitem.text
-msgid "Internet"
-msgstr "အင်တာနက်"
-
-#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFOSECURITY.pageitem.text
-msgid "Security"
-msgstr ""
-
-#: dinfdlg.src#SID_DOCINFO.tabdialog.text
-msgid "Properties of "
-msgstr "၏ ဂုဏ်သတ္တိများ"
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.FL_DURATION.fixedline.text
-msgctxt "dinfdlg.src#RID_EDIT_DURATIONS.FL_DURATION.fixedline.text"
-msgid "Duration"
-msgstr ""
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.CB_NEGATIVE.checkbox.text
-msgid "~Negative"
-msgstr ""
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.FT_YEAR.fixedtext.text
-msgid "~Years"
-msgstr ""
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.FT_MONTH.fixedtext.text
-msgid "~Months"
-msgstr ""
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.FT_DAY.fixedtext.text
-msgid "~Days"
-msgstr ""
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.FT_HOUR.fixedtext.text
-msgid "H~ours"
-msgstr ""
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.FT_MINUTE.fixedtext.text
-msgid "Min~utes"
-msgstr ""
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.FT_SECOND.fixedtext.text
-msgid "~Seconds"
-msgstr "စက္ကန့်"
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.FT_MSECOND.fixedtext.text
-msgid "Millise~conds"
-msgstr ""
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.modaldialog.text
-msgid "Edit Duration"
-msgstr ""
-
-#: dinfedt.src#DLG_DOCINFO_EDT.FL_INFO.fixedline.text
-msgid "Names"
-msgstr "အမည်များ"
-
-#: dinfedt.src#DLG_DOCINFO_EDT.modaldialog.text
-msgid "Edit Field Names"
-msgstr "အမည်နေရာကွက်များ တည်းဖြတ်ပါ"
-
-#: filedlghelper.src#STR_SFX_FILEDLG_ACTUALVERSION.string.text
-msgid "Current version"
-msgstr "လက်ရှိဗားရှင်း"
-
-#: filedlghelper.src#STR_SFX_EXPLORERFILE_EXPORT.string.text
-msgid "Export"
-msgstr "တင်ပို့ပါ"
-
-#: filedlghelper.src#STR_SFX_EXPLORERFILE_INSERT.string.text
-msgid "Insert"
-msgstr "ထည့်သွင်းပါ"
-
-#: filedlghelper.src#STR_SFX_EXPLORERFILE_BUTTONINSERT.string.text
-msgid "~Insert"
-msgstr "⁠~ထပ်ထည့်ပါ"
-
-#: filedlghelper.src#STR_SFX_IMPORT_ALL.string.text
-msgid "<All formats>"
-msgstr "<စီစဉ် ဖွဲ့စည်းမှု ပုံစံများ အားလုံး>"
-
-#: filedlghelper.src#STR_CB_AUTO_EXTENSION.string.text
-msgid "~Automatic file name extension"
-msgstr "~အလိုအလျောက် ဖိုင်အမည် တိုးချဲ့မှု"
-
-#: filedlghelper.src#STR_CB_SELECTION.string.text
-msgid "~Selection"
-msgstr "⁠~လက်ရွေးစင်"
-
-#: filedlghelper.src#STR_CB_INSERT_AS_LINK.string.text
-msgid "~Link"
-msgstr "~ချိတ်ဆက်မှု"
-
-#: filedlghelper.src#STR_CB_SHOW_PREVIEW.string.text
-msgid "Pr~eview"
-msgstr "အစမ်းကြည့်ပါ"
-
-#: filedlghelper.src#STR_CB_READONLY.string.text
-msgctxt "filedlghelper.src#STR_CB_READONLY.string.text"
-msgid "~Read-only"
-msgstr "~ဖတ်ရန်သာ"
-
-#: filedlghelper.src#STR_CB_PASSWORD.string.text
-msgid "Save with ~password"
-msgstr "စကားဝှက်နှင့်အတူ သိမ်းပါ"
-
-#: filedlghelper.src#STR_CB_FILTER_OPTIONS.string.text
-msgid "Edit ~filter settings"
-msgstr "စစ်ထုတ်ကိရိယာ ပြင်ဆင်ချိန်ညှိမှုများ တည်းဖြတ်ပါ"
-
-#: filedlghelper.src#STR_PB_PLAY.string.text
-msgid "~Play"
-msgstr "⁠~လုပ်ဆောင်ပါ"
-
-#: filedlghelper.src#STR_PB_STOP.string.text
-msgid "Sto~p"
-msgstr "ရပ်ပါ"
-
-#: filedlghelper.src#STR_PB_OPEN.string.text
-msgid "~Open"
-msgstr "~ဖွင့်ပါ"
-
-#: filedlghelper.src#STR_PB_SAVE.string.text
-msgid "~Save"
-msgstr "~သိမ်းပါ"
-
-#: filedlghelper.src#STR_LB_IMAGE_TEMPLATE.string.text
-msgid "Style:"
-msgstr "ပုံစံ-"
-
-#: filedlghelper.src#STR_LB_TEMPLATES.string.text
-msgid "~Templates:"
-msgstr "~ပုံစံပြားများ -"
-
-#: filedlghelper.src#STR_LB_VERSION.string.text
-msgid "~Version:"
-msgstr "~ဗားရှင်း-"
-
-#: mailwindow.src#RID_ERRBOX_MAIL_CONFIG.errorbox.text
-msgid ""
-"%PRODUCTNAME was unable to find a working e-mail configuration. Please save "
-"this document locally instead and attach it from within your e-mail client."
-msgstr ""
-"အီးမေးလ် လုပ်ဆောင်မှုများပြုရန် %PRODUCTNAME မှ မစွမ်းဆောင်နိုင်ပါ။ "
-"ဤမှတ်တမ်းမှတ်ရာကို အတွင်းပိုင်းတွင် အစားထိုး သိမ်းဆည်းမှုပြုပြီး သင့် "
-"အီးမေးလ်အသုံးပြုသူနှင့် ချိတ်ဆက်ပါ။"
-
-#: mgetempl.src#TP_MANAGE_STYLES.FT_NAME.fixedtext.text
-msgid "~Name"
-msgstr "~အမည်"
-
-#: mgetempl.src#TP_MANAGE_STYLES.CB_AUTO.checkbox.text
-msgid "~AutoUpdate"
-msgstr "~အလိုအလျောက်နောက်ဆုံးပေါ်အခြေအနေ"
-
-#: mgetempl.src#TP_MANAGE_STYLES.FT_NEXT.fixedtext.text
-msgid "Ne~xt Style"
-msgstr "နောက်ထပ်ပုံစံ"
-
-#: mgetempl.src#TP_MANAGE_STYLES.FT_BASE.fixedtext.text
-msgid "Linked with"
-msgstr "နှင့်အတူ ချိတ်ဆက်ထားသည်"
-
-#: mgetempl.src#TP_MANAGE_STYLES.FT_REGION.fixedtext.text
-msgid "~Category"
-msgstr "~အမျိုးအစားများ"
-
-#: mgetempl.src#TP_MANAGE_STYLES.GB_DESC.fixedline.text
-msgid "Contains"
-msgstr "ပါဝင်မှုများ"
-
-#: newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.FL_COL.fixedline.text
-msgid "Style name"
-msgstr "ပုံစံအမည်"
-
-#: newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MSG_OVERWRITE.querybox.text
-msgid "Style already exists. Overwrite?"
-msgstr "စတိုင်လ် အဆင်သင့် တည်ရှိသည်။ အချက်အလက်သစ်များ ထပ်မံ ဖြည့်စွက်မည်လား။"
-
-#: newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.modaldialog.text
-msgid "Create Style"
-msgstr "ပုံစံဖန်တီးပါ"
-
-#: passwd.src#DLG_PASSWD.FT_PASSWD_USER.fixedtext.text
-msgid "~User"
-msgstr "~အသုံးပြုသူ"
-
-#: passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD.fixedtext.text
-msgid "~Password"
-msgstr "~စကားဝှက်"
-
-#: passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM.fixedtext.text
-msgid "~Confirm"
-msgstr "~အတည်ပြုပါ"
-
-#: passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.fixedline.text
+#: source/appl/app.src#STR_STYLE_FILTER_AUTO.String.Text
 #, fuzzy
-msgctxt "passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.fixedline.text"
-msgid "Password"
-msgstr "စကားဝှက်"
-
-#: passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD2.fixedtext.text
-#, fuzzy
-msgid "P~assword"
-msgstr "စကားဝှက်"
-
-#: passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM2.fixedtext.text
-#, fuzzy
-msgid "Confir~m"
-msgstr "~အတည်ပြုပါ"
-
-#: passwd.src#DLG_PASSWD.TEXT_PASSWD.string.text
-#, fuzzy
-msgctxt "passwd.src#DLG_PASSWD.TEXT_PASSWD.string.text"
-msgid "Password"
-msgstr "စကားဝှက်"
-
-#: passwd.src#DLG_PASSWD.modaldialog.text
-msgid "Enter Password"
-msgstr "စကားဝှက်ရိုက်ထည့်ပါ"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.fixedline.text
-msgid "Reduce print data"
-msgstr "အချက်အလက်များ ပရင့်ထုတ်မှု လျှော့ချပါ"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.FT_OUTPUTTYPE.fixedtext.text
-msgid "Settings for"
-msgstr "အတွက် ပြင်ဆင်ချိန်ညှိနိုင်မှုများ"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTEROUTPUT.radiobutton.text
-msgid "~Printer"
-msgstr "~ပရင်တာ"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTFILEOUTPUT.radiobutton.text
-msgid "Print to ~file"
-msgstr "ဖိုင်ကိုပရင့်ထုတ်ပါ"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCETRANSPARENCY.checkbox.text
-msgid "~Reduce transparency"
-msgstr "~ထိုးဖောက်မြင်နိုင်မှုများလျှော့ချပါ"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_AUTO.radiobutton.text
-msgid "Auto~matically"
+msgid  "Automatic"
 msgstr "အလိုအလျောက်"
 
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_NONE.radiobutton.text
-msgid "~No transparency"
-msgstr "~ထိုးဖောက်မမြင်နိုင်သော"
+#: source/appl/app.src#STR_STANDARD_SHORTCUT.String.Text
+#, fuzzy
+msgid  "Standard"
+msgstr "စံနှုန်း"
 
-#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEGRADIENTS.checkbox.text
-msgid "Reduce ~gradients"
-msgstr "ပြောင်းလဲနှုန်းများ လျှော့ချပါ"
+#: source/appl/app.src#STR_BYTES.String.Text
+#, fuzzy
+msgid  "Bytes"
+msgstr "ဘိုက်များ"
 
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_STRIPES.radiobutton.text
-msgid "Gradient ~stripes"
-msgstr "အစင်းအကျားပါရှိသော ပြောင်းလဲနှုန်း"
+#: source/appl/app.src#STR_KB.String.Text
+#, fuzzy
+msgid  "KB"
+msgstr "ကီလိုဘိုက်"
 
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_COLOR.radiobutton.text
-msgid "Intermediate ~color"
-msgstr "ကြားရောင်စုံ"
+#: source/appl/app.src#STR_MB.String.Text
+#, fuzzy
+msgid  "MB"
+msgstr "မီကာဘိုက်"
 
-#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS.checkbox.text
-msgid "Reduce ~bitmaps"
-msgstr "ပုံရိပ်များ လျှော့ချပါ"
+#: source/appl/app.src#STR_GB.String.Text
+#, fuzzy
+msgid  "GB"
+msgstr "ဂမ်မာဘိုက်"
 
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_OPTIMAL.radiobutton.text
-msgid "~High print quality"
-msgstr "~အရည်အသွေးမြင့်ပရင့်ထုတ်"
+#: source/appl/app.src#MSG_QUERY_LASTVERSION.QueryBox.Message
+#, fuzzy
+msgid  "Cancel all changes?"
+msgstr "ပြောင်းလဲမှုများအားလုံး ရုတ်သိမ်းမည်လား?"
 
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_NORMAL.radiobutton.text
-msgid "N~ormal print quality"
-msgstr "ပုံမှန်ပရင့်ထုတ်မှုအရည်အသွေး"
+#: source/appl/app.src#RID_DOCALREADYLOADED_DLG.InfoBox.Message
+#, fuzzy
+msgid  "Document already open."
+msgstr "မှတ်တမ်းမှတ်ရာ အသင့် ဖွင့်ပြီးဖြစ်သည်။"
 
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_RESOLUTION.radiobutton.text
-msgid "Reso~lution"
-msgstr "ပုံရိပ်ပြတ်သားထင်ရှားမှု"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.1.stringlist.text
-msgid "72 DPI"
-msgstr "72 DPI"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.2.stringlist.text
-msgid "96 DPI"
-msgstr "96 DPI"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.3.stringlist.text
-msgid "150 DPI (Fax)"
-msgstr "150 DPI (ဖက်စ်)"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.4.stringlist.text
-msgid "200 DPI (default)"
-msgstr "200 DPI (နဂိုမူလ)"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.5.stringlist.text
-msgid "300 DPI"
-msgstr "300 DPI"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.6.stringlist.text
-msgid "600 DPI"
-msgstr "600 DPI"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS_TRANSPARENCY.checkbox.text
-msgid "Include transparent ob~jects"
-msgstr "အရာဝတ္ထုများ ထိုးဖောက်မြင်နိုင်မှုပါဝင်စေပါ"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.CB_CONVERTTOGREYSCALES.checkbox.text
-msgid "Con~vert colors to grayscale"
-msgstr "မီးခိုးရောင် စကေးသို့ အရောင်များ ကူးပြောင်းပါ"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.GB_PRINT_WARN.fixedline.text
-msgid "Printer warnings"
-msgstr "ပရင်တာ သတိပေးချက်များ"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERSIZE.checkbox.text
-msgid "P~aper size"
-msgstr "စာရွက်အရွယ်အစား"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERORIENTATION.checkbox.text
-msgid "Pap~er orientation"
-msgstr "စာမျက်နှာအနေအထား"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.CB_TRANSPARENCY.checkbox.text
-msgid "~Transparency"
-msgstr "~ထိုးဖောက်မြင်နိုင်မှု"
-
-#: printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.fixedtext.text
-msgid ""
-"Your document contains transparent objects.\n"
-"This may lead to longer printing time on certain\n"
-"printers. Should the aspect of transparency\n"
-"be reduced?"
-msgstr ""
-"သင့်မှတ်တမ်းမှတ်ရာတွင်ထိုးဖောက်မြင်နိုင်သည့်အရာဝတ္ထုများပါဝင်သည့်သေချာမှုရှိ"
-"သည့် ပရင်တာများသည် ပရင့်ထုတ်ချိန်ကြာမြင့်မှု ကို လက်ခံနိုင်သည်\n"
-"ထိုးဖောက်မြင်နိုင်မှုများကို လျော့ချသင့်ပါသလား"
-
-#: printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.okbutton.text
-msgid "~Yes"
-msgstr "~ဟုတ်သည်"
-
-#: printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_NO.pushbutton.text
-msgid "~No"
-msgstr "~မဟုတ်ပါ"
-
-#: printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_CANCEL.cancelbutton.text
-msgid "~Cancel"
-msgstr "~ရုတ်သိမ်းပါ"
-
-#: printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.checkbox.text
-msgid "~Do not show warning again"
-msgstr "~သတိပေးချက် နောက်ထပ် မပြပါနှင့်"
-
-#: printopt.src#RID_WARN_PRINTTRANSPARENCY.modaldialog.text
-msgid "Warning"
-msgstr "သတိပေးချက်"
-
-#: recfloat.src#SID_RECORDING_FLOATWINDOW.floatingwindow.text
-msgid "Record Macro"
-msgstr "မက်ခရို မှတ်တမ်းတင်မှု"
-
-#: recfloat.src#STR_MACRO_LOSS.string.text
-msgid ""
-"Do you really want to cancel the recording? Any steps recorded up to this "
-"point will be lost."
-msgstr ""
-"မှတ်တမ်းတင်မှု ကို ရုတ်သိမ်းရန် အမှန်တကယ် ဆန္ဒရှိပါသလား။ အဆင့်အသီးသီးအတွက် "
-"မှတ်တမ်းတင်ထားမှုများ ပျောက်ဆုံးလိမ့်မည်။"
-
-#: recfloat.src#STR_CANCEL_RECORDING.string.text
-msgid "Cancel Recording"
-msgstr "မှတ်တမ်းတင်မှု ရုတ်သိမ်းပါ"
-
-#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FL.fixedline.text
-msgid "File encryption password"
+#: source/appl/app.src#MSG_ERR_NO_WEBBROWSER_FOUND.ErrorBox.Message
+msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
 msgstr ""
 
-#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FT.fixedtext.text
-msgid "~Enter password to open"
+#: source/appl/app.src#GID_INTERN.String.Text
+#, fuzzy
+msgid  "Internal"
+msgstr "အတွင်းပိုင်း"
+
+#: source/appl/app.src#GID_APPLICATION.String.Text
+#, fuzzy
+msgid  "Application"
+msgstr "အသုံးချပရိုဂရမ်"
+
+#: source/appl/app.src#GID_VIEW.String.Text
+#, fuzzy
+msgid  "View"
+msgstr "မြင်ကွင်း"
+
+#: source/appl/app.src#GID_DOCUMENT.String.Text
+#, fuzzy
+msgid  "Documents"
+msgstr "မှတ်တမ်းမှတ်ရာများ"
+
+#: source/appl/app.src#GID_EDIT.String.Text
+#, fuzzy
+msgid  "Edit"
+msgstr "တည်းဖြတ်ပါ"
+
+#: source/appl/app.src#GID_MACRO.String.Text
+#, fuzzy
+msgid  "BASIC"
+msgstr "BASIC"
+
+#: source/appl/app.src#GID_OPTIONS.String.Text
+#, fuzzy
+msgid  "Options"
+msgstr "ရွေးပိုင်ခွင့်များ"
+
+#: source/appl/app.src#GID_MATH.String.Text
+#, fuzzy
+msgid  "Math"
+msgstr "သင်္ချာ"
+
+#: source/appl/app.src#GID_NAVIGATOR.String.Text
+#, fuzzy
+msgid  "Navigate"
+msgstr "လမ်းညွှန်အတိုင်းသွားပါ"
+
+#: source/appl/app.src#GID_INSERT.String.Text
+#, fuzzy
+msgid  "Insert"
+msgstr "ထည့်သွင်းပါ"
+
+#: source/appl/app.src#GID_FORMAT.String.Text
+#, fuzzy
+msgid  "Format"
+msgstr "စီစဉ် ဖွဲ့စည်းမှု ပုံစံ"
+
+#: source/appl/app.src#GID_TEMPLATE.String.Text
+#, fuzzy
+msgid  "Templates"
+msgstr "ပုံစံပြားများ"
+
+#: source/appl/app.src#GID_TEXT.String.Text
+#, fuzzy
+msgid  "Text"
+msgstr "စာသား"
+
+#: source/appl/app.src#GID_FRAME.String.Text
+#, fuzzy
+msgid  "Frame"
+msgstr "ဘောင်"
+
+#: source/appl/app.src#GID_GRAPHIC.String.Text
+#, fuzzy
+msgid  "Graphic"
+msgstr "ပန်းချီရုပ်ပုံ"
+
+#: source/appl/app.src#GID_TABLE.String.Text
+#, fuzzy
+msgid  "Table"
+msgstr "ဇယား"
+
+#: source/appl/app.src#GID_ENUMERATION.String.Text
+#, fuzzy
+msgid  "Numbering"
+msgstr "နံပါတ်တပ်ခြင်း"
+
+#: source/appl/app.src#GID_DATA.String.Text
+#, fuzzy
+msgid  "Data"
+msgstr "အချက်အလက်များ"
+
+#: source/appl/app.src#GID_SPECIAL.String.Text
+#, fuzzy
+msgid  "Special Functions"
+msgstr "အထူး လုပ်ဆောင်ချက်များ"
+
+#: source/appl/app.src#GID_IMAGE.String.Text
+#, fuzzy
+msgid  "Image"
+msgstr "ပုံရိပ်"
+
+#: source/appl/app.src#GID_CHART.String.Text
+#, fuzzy
+msgid  "Chart"
+msgstr "ပုံစံကားချပ်"
+
+#: source/appl/app.src#GID_EXPLORER.String.Text
+#, fuzzy
+msgid  "Explorer"
+msgstr "စူးစမ်းလေ့လာရန်"
+
+#: source/appl/app.src#GID_CONNECTOR.String.Text
+#, fuzzy
+msgid  "Connector"
+msgstr "ချိတ်ဆက်သူ"
+
+#: source/appl/app.src#GID_MODIFY.String.Text
+#, fuzzy
+msgid  "Modify"
+msgstr "အထူးပြုပါ"
+
+#: source/appl/app.src#GID_DRAWING.String.Text
+#, fuzzy
+msgid  "Drawing"
+msgstr "ပုံဆွဲခြင်း"
+
+#: source/appl/app.src#GID_CONTROLS.String.Text
+#, fuzzy
+msgid  "Controls"
+msgstr "ထိန်းချုပ်မှုများ"
+
+#: source/appl/app.src#MSG_CANT_QUIT.InfoBox.Message
+msgid  "The application cannot be terminated at the moment.\nPlease wait until all print jobs and/or\nOLE actions have finished and close all dialogs."
 msgstr ""
 
-#: securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_OPEN_FT.fixedtext.text
-msgid "~Reenter password to open"
+#: source/appl/app.src#STR_ISMODIFIED.String.Text
+#, fuzzy
+msgid  "Do you want to save the changes to %1?"
+msgstr "%၁ သို့ ပြောင်းလဲသိမ်းဆည်းရန် ဆန္ဒရှိပါသလား?"
+
+#: source/appl/app.src#STR_QUITAPP.String.Text
+#, fuzzy
+msgid  "E~xit"
+msgstr "ထွက်ပါ"
+
+#: source/appl/app.src#RID_STR_HELP.String.Text
+#, fuzzy
+msgid  "Help"
+msgstr "ကူညီပါ"
+
+#: source/appl/app.src#RID_STR_NOAUTOSTARTHELPAGENT.String.Text
+#, fuzzy
+msgid  "No automatic start at 'XX'"
+msgstr " 'XX' ၌ အလိုအလျောက် မစတင်ပါ"
+
+#: source/appl/app.src#RID_HELPBAR.String.Text
+#, fuzzy
+msgid  "Help Bar"
+msgstr "အကူအညီဘား"
+
+#: source/appl/app.src#RID_STR_HLPFILENOTEXIST.String.Text
+#, fuzzy
+msgid  "The help file for this topic is not installed."
+msgstr "ဤခေါင်းစဉ်အတွက် ဖိုင်အကူ မထည့်သွင်းနိုင်ပါ။"
+
+#: source/appl/app.src#RID_ENVTOOLBOX.String.Text
+#, fuzzy
+msgid  "Function Bar"
+msgstr "လုပ်ဆောင်ချက်ဘား"
+
+#: source/appl/app.src#RID_SPECIALCONFIG_ERROR.String.Text
+msgid  "An error has occurred in the special configuration.\nPlease contact your administrator."
 msgstr ""
 
-#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FL.fixedline.text
-msgid "File sharing password"
+#: source/appl/app.src#STR_QUICKSTART_EXIT.String.Text
+#, fuzzy
+msgid  "Exit Quickstarter"
+msgstr "မြန်ဆန်စွာအသုံးပြုရန်မှထွက်ပါ"
+
+#: source/appl/app.src#STR_QUICKSTART_TIP.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME %PRODUCTVERSION Quickstarter"
+msgstr "%PRODUCTNAME %PRODUCTVERSION မြန်ဆန်စွာအသုံးပြုရန်"
+
+#: source/appl/app.src#STR_QUICKSTART_FILEOPEN.String.Text
+#, fuzzy
+msgid  "Open Document..."
+msgstr "မှတ်တမ်းမှတ်ရာ ဖွင့်ပါ"
+
+#: source/appl/app.src#STR_QUICKSTART_FROMTEMPLATE.String.Text
+#, fuzzy
+msgid  "From Template..."
+msgstr "ပုံစံပြားမှ"
+
+#: source/appl/app.src#STR_QUICKSTART_PRELAUNCH.String.Text
+#, fuzzy
+msgid  "Load %PRODUCTNAME During System Start-Up"
+msgstr "စနစ် စတင်မှုပြုစဉ်အတွင်း %PRODUCTNAME ဆွဲတင်ပါ"
+
+#: source/appl/app.src#STR_QUICKSTART_PRELAUNCH_UNX.String.Text
+msgid  "Disable Quickstarter"
 msgstr ""
 
-#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FT.fixedtext.text
-msgid "Enter password to modify"
+#: source/appl/app.src#STR_QUICKSTART_LNKNAME.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
+
+#: source/appl/app.src#STR_QUICKSTART_FILE.String.Text
+#, fuzzy
+msgid  "File"
+msgstr "ဖိုင်"
+
+#: source/appl/app.src#STR_QUICKSTART_STARTCENTER.String.Text
+#, fuzzy
+msgid  "Startcenter"
+msgstr "မြန်ဆန်စွာအသုံးပြုရန်"
+
+#: source/appl/app.src#STR_QUICKSTART_RECENTDOC.String.Text
+#, fuzzy
+msgid  "Recent Documents"
+msgstr "မကြာမီကအသုံးပြုခဲ့သည့် မှတ်တမ်းမှတ်ရာများ"
+
+#: source/appl/app.src#STR_QUERY_UPDATE_LINKS.String.Text
+#, fuzzy
+msgid  "Update all links?"
+msgstr "ချိတ်ဆက်မှုများအားလုံး နောက်ဆုံးပေါ်အခြေအနေဖြင့် လုပ်မှာလား?"
+
+#: source/appl/app.src#STR_DDE_ERROR.String.Text
+#, fuzzy
+msgid  "DDE link to % for % area % are not available."
+msgstr "%ဧရိယာ% အတွက် % သို့ DDE ချိတ်ဆက်မှု မရနိုင်ပါ။"
+
+#: source/appl/app.src#RID_SECURITY_WARNING_HYPERLINK.WarningBox.Message
+msgid  "This hyperlink is going to open "%s". Do you want to proceed?"
 msgstr ""
 
-#: securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_MODIFY_FT.fixedtext.text
-msgid "Reenter password to modify"
+#: source/appl/app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.WarningBox.Message
+msgid  "For security reasons, the hyperlink cannot be executed.\nThe stated address will not be opened."
 msgstr ""
 
-#: securitypage.src#TP_DOCINFOSECURITY.OPTIONS_FL.fixedline.text
-msgid "File sharing options"
+#: source/appl/app.src#RID_SECURITY_WARNING_TITLE.String.Text
+#, fuzzy
+msgid  "Security Warning"
+msgstr "လုံခြုံရေး သတိပေးချက်"
+
+#: source/appl/app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.QueryBox.Message
+msgid  "Saving will remove all existing signatures.\nDo you want to continue saving the document?"
 msgstr ""
 
-#: securitypage.src#TP_DOCINFOSECURITY.OPEN_READONLY_CB.checkbox.text
-msgid "~Open file read-only"
+#: source/appl/app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.QueryBox.Message
+msgid  "The document has to be saved before it can be signed.\nDo you want to save the document?"
 msgstr ""
 
-#: securitypage.src#TP_DOCINFOSECURITY.RECORD_CHANGES_CB.checkbox.text
-msgid "Record ~changes"
+#: source/appl/app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.InfoBox.Message
+msgid  "This document must be saved in OpenDocument file format before it can be digitally signed."
 msgstr ""
 
-#: securitypage.src#TP_DOCINFOSECURITY.STR_PROTECT.string.text
-msgid "~Protect..."
+#: source/appl/app.src#RID_XMLSEC_DOCUMENTSIGNED.String.Text
+#, fuzzy
+msgid  " (Signed)"
+msgstr "(မှန်ကန်ကြောင်း စစ်ဆေးပြီးဖြစ်သည်)"
+
+#: source/appl/app.src#STR_STANDARD.String.Text
+#, fuzzy
+msgid  "Standard"
+msgstr "စံနှုန်း"
+
+#: source/appl/app.src#RID_SVXSTR_FILELINK.String.Text
+#, fuzzy
+msgid  "Document"
+msgstr "မှတ်တမ်းမှတ်ရာများ"
+
+#: source/appl/app.src#STR_NONE.String.Text
+#, fuzzy
+msgid  "- None -"
+msgstr "- ဘာမျှမရှိပါ -"
+
+#: source/appl/app.src#RID_SVXSTR_GRAFIKLINK.String.Text
+#, fuzzy
+msgid  "Graphic"
+msgstr "ပန်းချီရုပ်ပုံ"
+
+#: source/appl/app.src#STR_SFX_FILTERNAME_ALL.String.Text
+#, fuzzy
+msgid  "All files (*.*)"
+msgstr "ဖိုင်များအားလုံး (*.*)"
+
+#: source/appl/app.src#RID_SVXSTR_EDITGRFLINK.String.Text
+msgid  "Link graphics"
 msgstr ""
 
-#: securitypage.src#TP_DOCINFOSECURITY.STR_UNPROTECT.string.text
-msgid "~Unprotect..."
+#: source/appl/app.src#STR_ERRUNOEVENTBINDUNG.String.Text
+msgid  "An appropriate component method %1\ncould not be found.\n\nCheck spelling of method name."
 msgstr ""
 
-#: securitypage.src#TP_DOCINFOSECURITY.STR_END_REDLINING_WARNING.string.text
-msgid ""
-"This action will exit the change recording mode.\n"
-"Any information about changes will be lost.\n"
-"\n"
-"Exit change recording mode?\n"
-"\n"
+#: source/appl/app.src#RID_SVXSTR_GRFILTER_OPENERROR.String.Text
+msgid  "Graphics file cannot be opened"
 msgstr ""
 
-#: securitypage.src#RID_SFX_PROTECT_RECORDS.string.text
-msgid "Protect Records"
+#: source/appl/app.src#RID_SVXSTR_GRFILTER_IOERROR.String.Text
+msgid  "Graphics file cannot be read"
 msgstr ""
 
-#: securitypage.src#RID_SFX_UNPROTECT_RECORDS.string.text
-msgid "Unprotect Records"
+#: source/appl/app.src#RID_SVXSTR_GRFILTER_FORMATERROR.String.Text
+msgid  "Unknown graphics format"
 msgstr ""
 
-#: securitypage.src#RID_SFX_INCORRECT_PASSWORD.string.text
-msgid "Incorrect password"
+#: source/appl/app.src#RID_SVXSTR_GRFILTER_VERSIONERROR.String.Text
+msgid  "This version of the graphics file is not supported"
 msgstr ""
 
-#: srchdlg.src#RID_DLG_SEARCH.FT_SEARCH.fixedtext.text
-msgid "~Search for"
-msgstr "~အတွက် ရှာဖွေပါ"
+#: source/appl/app.src#RID_SVXSTR_GRFILTER_FILTERERROR.String.Text
+msgid  "Graphics filter not found"
+msgstr ""
 
-#: srchdlg.src#RID_DLG_SEARCH.CB_WHOLEWORDS.checkbox.text
-msgid "~Whole words only"
-msgstr "~စကားလုံးများအတွက်သာ"
+#: source/appl/app.src#RID_SVXSTR_GRFILTER_TOOBIG.String.Text
+msgid  "Not enough memory to insert graphic"
+msgstr ""
 
-#: srchdlg.src#RID_DLG_SEARCH.CB_MATCHCASE.checkbox.text
-msgid "~Match case"
-msgstr "~ကိုက်ညီမှုရှိသည့်ကိစ္စရပ်များ"
+#: source/appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_CONTENTS.PageItem.Text
+#, fuzzy
+msgid  "Contents"
+msgstr "မာတိကာများ"
 
-#: srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.checkbox.text
-msgctxt "srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.checkbox.text"
-msgid "Wrap ~around"
-msgstr "ပတ်လည်ရှာဖွေမှု"
+#: source/appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_INDEX.PageItem.Text
+#, fuzzy
+msgid  "Index"
+msgstr "အညွှန်း"
 
-#: srchdlg.src#RID_DLG_SEARCH.CB_BACKWARDS.checkbox.text
-msgid "~Backwards"
-msgstr "~အနောက်ဖက်သို့"
+#: source/appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_SEARCH.PageItem.Text
+#, fuzzy
+msgid  "Find"
+msgstr "ရှာပါ"
 
-#: srchdlg.src#RID_DLG_SEARCH.PB_FIND.pushbutton.text
-msgid "~Find"
+#: source/appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_BOOKMARKS.PageItem.Text
+#, fuzzy
+msgid  "Bookmarks"
+msgstr " စာညှပ်များ"
+
+#: source/appl/newhelp.src#TP_HELP_INDEX.FT_EXPRESSION.FixedText.Text
+#, fuzzy
+msgid  "~Search term"
+msgstr "~စကားရပ် ရှာဖွေပါ"
+
+#: source/appl/newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.PushButton.Text
+#, fuzzy
+msgid  "~Display"
+msgstr "~ပြသပါ"
+
+#: source/appl/newhelp.src#TP_HELP_SEARCH.FT_SEARCH.FixedText.Text
+#, fuzzy
+msgid  "S~earch term"
+msgstr "စကားရပ် ရှာဖွေပါ"
+
+#: source/appl/newhelp.src#TP_HELP_SEARCH.PB_SEARCH.PushButton.Text
+#, fuzzy
+msgid  "~Find"
 msgstr "~ရှာပါ"
 
-#: srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.cancelbutton.text
-msgctxt "srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.cancelbutton.text"
-msgid "~Close"
-msgstr "~ပိတ်ပါ"
+#: source/appl/newhelp.src#TP_HELP_SEARCH.CB_FULLWORDS.CheckBox.Text
+#, fuzzy
+msgid  "~Complete words only"
+msgstr "⁠~ပြည့်စုံသော စကားလုံးများသာ"
 
-#: srchdlg.src#RID_DLG_SEARCH.STR_TOGGLE.string.text
-msgctxt "srchdlg.src#RID_DLG_SEARCH.STR_TOGGLE.string.text"
-msgid "Wrap ~around"
-msgstr "ပတ်လည်ရှာဖွေမှု"
+#: source/appl/newhelp.src#TP_HELP_SEARCH.CB_SCOPE.CheckBox.Text
+#, fuzzy
+msgid  "Find in ~headings only"
+msgstr "ခေါင်းစဉ်များတွင်သာ ရှာပါ"
 
-#: srchdlg.src#RID_DLG_SEARCH.modelessdialog.text
-msgid "Find on this Page"
-msgstr "ဤစာမျက်နှာပေါ်တွင်ရှာပါ"
+#: source/appl/newhelp.src#TP_HELP_SEARCH.PB_OPEN_SEARCH.PushButton.Text
+#, fuzzy
+msgid  "~Display"
+msgstr "~ပြသပါ"
 
-#: taskpane.src#STR_SFX_DOCK.string.text
-msgid "Dock"
+#: source/appl/newhelp.src#TP_HELP_BOOKMARKS.FT_BOOKMARKS.FixedText.Text
+#, fuzzy
+msgid  "~Bookmarks"
+msgstr "~စာညှပ်များ"
+
+#: source/appl/newhelp.src#TP_HELP_BOOKMARKS.PB_BOOKMARKS.PushButton.Text
+#, fuzzy
+msgid  "~Display"
+msgstr "~ပြသပါ"
+
+#: source/appl/newhelp.src#STR_HELP_WINDOW_TITLE.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Help"
+msgstr "%PRODUCTNAME ကူညီသည်"
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_INDEX_ON.String.Text
+#, fuzzy
+msgid  "Show Navigation Pane"
+msgstr "လမ်းညွှန်ကိရိယာ ပြပါ"
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_INDEX_OFF.String.Text
+#, fuzzy
+msgid  "Hide Navigation Pane"
+msgstr "လမ်းညွှန်ကိရိယာ ခေတ္တဖျောက်ထားပါ"
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_START.String.Text
+#, fuzzy
+msgid  "First Page"
+msgstr "ပထမဆုံး စာမျက်နှာ"
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_PREV.String.Text
+#, fuzzy
+msgid  "Previous Page"
+msgstr "ယခင် စာမျက်နှာ"
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_NEXT.String.Text
+#, fuzzy
+msgid  "Next Page"
+msgstr "ရှေ့ စာမျက်နှာ"
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_PRINT.String.Text
+#, fuzzy
+msgid  "Print..."
+msgstr "ပရင့်ထုတ်ပါ..."
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_ADDBOOKMARK.String.Text
+#, fuzzy
+msgid  "Add to Bookmarks..."
+msgstr "စာညှပ်များသို့ ပေါင်းထည့်ပါ..."
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_SEARCHDIALOG.String.Text
+#, fuzzy
+msgid  "Find on this Page..."
+msgstr "ဤစာမျက်နှာပေါ်တွင် ရှာပါ..."
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_SOURCEVIEW.String.Text
+#, fuzzy
+msgid  "HTML Source"
+msgstr "HTML မူရင်း"
+
+#: source/appl/newhelp.src#STR_HELP_FIRST_MESSAGE.String.Text
+#, fuzzy
+msgid  "The Help is being started..."
+msgstr "အကူအညီ စတင်ထားသည်..."
+
+#: source/appl/newhelp.src#STR_HELP_MENU_TEXT_SELECTION_MODE.String.Text
+#, fuzzy
+msgid  "Select Text"
+msgstr "စာသား ရွေးချယ်ပါ"
+
+#: source/appl/newhelp.src#STR_HELP_MENU_TEXT_COPY.String.Text
+#, fuzzy
+msgid  "~Copy"
+msgstr "~မိတ္တူကူးယူပါ"
+
+#: source/appl/newhelp.src#DLG_HELP_ADDBOOKMARK.ModalDialog.Text
+#, fuzzy
+msgid  "Add to Bookmarks"
+msgstr "စာညှပ်များသို့ ပေါင်းထည့်ပါ"
+
+#: source/appl/newhelp.src#DLG_HELP_ADDBOOKMARK.FT_BOOKMARK_TITLE.FixedText.Text
+#, fuzzy
+msgid  "Bookmark:"
+msgstr "စာညှပ် -"
+
+#: source/appl/newhelp.src#DLG_HELP_ADDBOOKMARK.STR_BOOKMARK_RENAME.String.Text
+#, fuzzy
+msgid  "Rename Bookmark"
+msgstr "စာညှပ် အမည် ပြန်ပေးပါ"
+
+#: source/appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_OPEN.MenuItem.Text
+#, fuzzy
+msgid  "Display"
+msgstr "ပြသပါ"
+
+#: source/appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_RENAME.MenuItem.Text
+#, fuzzy
+msgid  "Rename..."
+msgstr "အမည် ပြန်ပေးပါ..."
+
+#: source/appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_DELETE.MenuItem.Text
+#, fuzzy
+msgid  "Delete"
+msgstr "ဖျက်ပါ"
+
+#: source/appl/newhelp.src#RID_INFO_NOSEARCHRESULTS.InfoBox.Message
+#, fuzzy
+msgid  "No topics found."
+msgstr "အကြောင်းအရာ ခေါင်းစဉ် ရှာမတွေ့ပါ။"
+
+#: source/appl/newhelp.src#RID_INFO_NOSEARCHTEXTFOUND.InfoBox.Message
+#, fuzzy
+msgid  "The text you entered was not found."
+msgstr "သင်ရိုက်ထားသည့် စာသား ရှာမတွေ့ပါ။"
+
+#: source/appl/newhelp.src#RID_HELP_ONSTARTUP_TEXT.String.Text
+#, fuzzy
+msgid  "~Display %PRODUCTNAME %MODULENAME Help at Startup"
+msgstr "~%PRODUCTNAME %MODULENAME အကူအညီ စတင် ပြသပါ"
+
+#: source/bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.String.Text
+msgid  "The selected filter $(FILTER) has not been installed.\nWould you like to do this now?"
 msgstr ""
 
-#: taskpane.src#STR_SFX_UNDOCK.string.text
-msgid "Undock"
+#: source/bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.String.Text
+msgid  "The selected filter $(FILTER) is not included in your edition.\nYou can find information about orders on our homepage."
 msgstr ""
 
-#: taskpane.src#STR_SFX_TASK_PANE_VIEW.string.text
-msgid "View"
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FixedLine.Text
+#, fuzzy
+msgid  "Reduce print data"
+msgstr "အချက်အလက်များ ပရင့်ထုတ်မှု လျှော့ချပါ"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.FT_OUTPUTTYPE.FixedText.Text
+#, fuzzy
+msgid  "Settings for"
+msgstr "အတွက် ပြင်ဆင်ချိန်ညှိနိုင်မှုများ"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTEROUTPUT.RadioButton.Text
+#, fuzzy
+msgid  "~Printer"
+msgstr "~ပရင်တာ"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTFILEOUTPUT.RadioButton.Text
+#, fuzzy
+msgid  "Print to ~file"
+msgstr "ဖိုင်ကိုပရင့်ထုတ်ပါ"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCETRANSPARENCY.CheckBox.Text
+#, fuzzy
+msgid  "~Reduce transparency"
+msgstr "~ထိုးဖောက်မြင်နိုင်မှုများလျှော့ချပါ"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_AUTO.RadioButton.Text
+#, fuzzy
+msgid  "Auto~matically"
+msgstr "အလိုအလျောက်"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_NONE.RadioButton.Text
+#, fuzzy
+msgid  "~No transparency"
+msgstr "~ထိုးဖောက်မမြင်နိုင်သော"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEGRADIENTS.CheckBox.Text
+#, fuzzy
+msgid  "Reduce ~gradients"
+msgstr "ပြောင်းလဲနှုန်းများ လျှော့ချပါ"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_STRIPES.RadioButton.Text
+#, fuzzy
+msgid  "Gradient ~stripes"
+msgstr "အစင်းအကျားပါရှိသော ပြောင်းလဲနှုန်း"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_COLOR.RadioButton.Text
+#, fuzzy
+msgid  "Intermediate ~color"
+msgstr "ကြားရောင်စုံ"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS.CheckBox.Text
+#, fuzzy
+msgid  "Reduce ~bitmaps"
+msgstr "ပုံရိပ်များ လျှော့ချပါ"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_OPTIMAL.RadioButton.Text
+#, fuzzy
+msgid  "~High print quality"
+msgstr "~အရည်အသွေးမြင့်ပရင့်ထုတ်"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_NORMAL.RadioButton.Text
+#, fuzzy
+msgid  "N~ormal print quality"
+msgstr "ပုံမှန်ပရင့်ထုတ်မှုအရည်အသွေး"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_RESOLUTION.RadioButton.Text
+#, fuzzy
+msgid  "Reso~lution"
+msgstr "ပုံရိပ်ပြတ်သားထင်ရှားမှု"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "600 DPI"
+msgstr "600 DPI"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS_TRANSPARENCY.CheckBox.Text
+#, fuzzy
+msgid  "Include transparent ob~jects"
+msgstr "အရာဝတ္ထုများ ထိုးဖောက်မြင်နိုင်မှုပါဝင်စေပါ"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_CONVERTTOGREYSCALES.CheckBox.Text
+#, fuzzy
+msgid  "Con~vert colors to grayscale"
+msgstr "မီးခိုးရောင် စကေးသို့ အရောင်များ ကူးပြောင်းပါ"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_PRINT_WARN.FixedLine.Text
+#, fuzzy
+msgid  "Printer warnings"
+msgstr "ပရင်တာ သတိပေးချက်များ"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERSIZE.CheckBox.Text
+#, fuzzy
+msgid  "P~aper size"
+msgstr "စာရွက်အရွယ်အစား"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERORIENTATION.CheckBox.Text
+#, fuzzy
+msgid  "Pap~er orientation"
+msgstr "စာမျက်နှာအနေအထား"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_TRANSPARENCY.CheckBox.Text
+#, fuzzy
+msgid  "~Transparency"
+msgstr "~ထိုးဖောက်မြင်နိုင်မှု"
+
+#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.ModalDialog.Text
+#, fuzzy
+msgid  "Warning"
+msgstr "သတိပေးချက်"
+
+#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FixedText.Text
+msgid  "Your document contains transparent objects.\nThis may lead to longer printing time on certain\nprinters. Should the aspect of transparency\nbe reduced?"
 msgstr ""
 
-#: taskpane.src#STR_SFX_TASKS.string.text
-msgid "Tasks"
-msgstr ""
+#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKButton.Text
+#, fuzzy
+msgid  "~Yes"
+msgstr "~ဟုတ်သည်"
 
-#: templdlg.src#RID_STYLECATALOG.BT_ORG.pushbutton.text
-msgid "~Organizer..."
-msgstr "~စီစဉ်သူ..."
+#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_NO.PushButton.Text
+#, fuzzy
+msgid  "~No"
+msgstr "~မဟုတ်ပါ"
 
-#: templdlg.src#RID_STYLECATALOG.BT_DEL.pushbutton.text
-msgid "~Delete..."
-msgstr "~ဖျက်ပါ..."
+#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_CANCEL.CancelButton.Text
+#, fuzzy
+msgid  "~Cancel"
+msgstr "~ရုတ်သိမ်းပါ"
 
-#: templdlg.src#RID_STYLECATALOG.BT_EDIT.pushbutton.text
-msgid "~Modify..."
-msgstr "~အထူးပြုပါ..."
+#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.CheckBox.Text
+#, fuzzy
+msgid  "~Do not show warning again"
+msgstr "~သတိပေးချက် နောက်ထပ် မပြပါနှင့်"
 
-#: templdlg.src#RID_STYLECATALOG.BT_NEW.pushbutton.text
-msgid "~New..."
-msgstr "~အသစ်..."
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "72 DPI"
+msgstr "72 DPI"
 
-#: templdlg.src#RID_STYLECATALOG.modaldialog.text
-msgid "Style Catalog"
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "96 DPI"
+msgstr "96 DPI"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "150 DPI (Fax)"
+msgstr "150 DPI (ဖက်စ်)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "200 DPI (default)"
+msgstr "200 DPI (နဂိုမူလ)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "300 DPI"
+msgstr "300 DPI"
+
+#: source/dialog/templdlg.src#RID_STYLECATALOG.ModalDialog.Text
+#, fuzzy
+msgid  "Style Catalog"
 msgstr "ပုံစံကဒ်ပြား"
 
-#: templdlg.src#STR_STYLE_ELEMTLIST.string.text
-msgid "Style List"
+#: source/dialog/templdlg.src#RID_STYLECATALOG.BT_ORG.PushButton.Text
+#, fuzzy
+msgid  "~Organizer..."
+msgstr "~စီစဉ်သူ..."
+
+#: source/dialog/templdlg.src#RID_STYLECATALOG.BT_DEL.PushButton.Text
+#, fuzzy
+msgid  "~Delete..."
+msgstr "~ဖျက်ပါ..."
+
+#: source/dialog/templdlg.src#RID_STYLECATALOG.BT_EDIT.PushButton.Text
+#, fuzzy
+msgid  "~Modify..."
+msgstr "~အထူးပြုပါ..."
+
+#: source/dialog/templdlg.src#RID_STYLECATALOG.BT_NEW.PushButton.Text
+#, fuzzy
+msgid  "~New..."
+msgstr "~အသစ်..."
+
+#: source/dialog/templdlg.src#STR_STYLE_ELEMTLIST.String.Text
+msgid  "Style List"
 msgstr ""
 
-#: templdlg.src#STR_STYLE_FILTER_HIERARCHICAL.string.text
-msgid "Hierarchical"
+#: source/dialog/templdlg.src#STR_STYLE_FILTER_HIERARCHICAL.String.Text
+#, fuzzy
+msgid  "Hierarchical"
 msgstr "အဆင့်လိုက်တည်ရှိမှု"
 
-#: templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_WATERCAN.toolboxitem.text
-msgid "Fill Format Mode"
-msgstr "ဖိုင်စီစဉ်ဖွဲ့စည်းမှုပုံစံနည်းလမ်း"
-
-#: templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_NEW_BY_EXAMPLE.toolboxitem.text
-msgid "New Style from Selection"
-msgstr "ရွေးချယ်မှုမှပုံစံအသစ်"
-
-#: templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_UPDATE_BY_EXAMPLE.toolboxitem.text
-msgid "Update Style"
-msgstr "နောက်ဆုံးပေါ်ပုံစံ"
-
-#: templdlg.src#DLG_STYLE_DESIGNER.dockingwindow.text
-msgid "Styles and Formatting"
+#: source/dialog/templdlg.src#DLG_STYLE_DESIGNER.DockingWindow.Text
+#, fuzzy
+msgid  "Styles and Formatting"
 msgstr "ပုံစံများနှင့်စီစဉ်ဖွဲ့စည်းမှုပုံစံများ"
 
-#: versdlg.src#DLG_VERSIONS.GB_NEWVERSIONS.fixedline.text
-msgid "New versions"
+#: source/dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_WATERCAN.ToolBoxItem.Text
+#, fuzzy
+msgid  "Fill Format Mode"
+msgstr "ဖိုင်စီစဉ်ဖွဲ့စည်းမှုပုံစံနည်းလမ်း"
+
+#: source/dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_NEW_BY_EXAMPLE.ToolBoxItem.Text
+#, fuzzy
+msgid  "New Style from Selection"
+msgstr "ရွေးချယ်မှုမှပုံစံအသစ်"
+
+#: source/dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_UPDATE_BY_EXAMPLE.ToolBoxItem.Text
+#, fuzzy
+msgid  "Update Style"
+msgstr "နောက်ဆုံးပေါ်ပုံစံ"
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FL.FixedLine.Text
+msgid  "File encryption password"
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FT.FixedText.Text
+msgid  "~Enter password to open"
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_OPEN_FT.FixedText.Text
+msgid  "~Reenter password to open"
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FL.FixedLine.Text
+msgid  "File sharing password"
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FT.FixedText.Text
+msgid  "Enter password to modify"
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_MODIFY_FT.FixedText.Text
+msgid  "Reenter password to modify"
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.OPTIONS_FL.FixedLine.Text
+msgid  "File sharing options"
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.OPEN_READONLY_CB.CheckBox.Text
+msgid  "~Open file read-only"
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.RECORD_CHANGES_CB.CheckBox.Text
+msgid  "Record ~changes"
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.STR_PROTECT.String.Text
+msgid  "~Protect..."
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.STR_UNPROTECT.String.Text
+msgid  "~Unprotect..."
+msgstr ""
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.STR_END_REDLINING_WARNING.String.Text
+msgid  "This action will exit the change recording mode.\nAny information about changes will be lost.\n\nExit change recording mode?\n\n"
+msgstr ""
+
+#: source/dialog/securitypage.src#RID_SFX_PROTECT_RECORDS.String.Text
+msgid  "Protect Records"
+msgstr ""
+
+#: source/dialog/securitypage.src#RID_SFX_UNPROTECT_RECORDS.String.Text
+msgid  "Unprotect Records"
+msgstr ""
+
+#: source/dialog/securitypage.src#RID_SFX_INCORRECT_PASSWORD.String.Text
+msgid  "Incorrect password"
+msgstr ""
+
+#: source/dialog/versdlg.src#DLG_VERSIONS.GB_NEWVERSIONS.FixedLine.Text
+#, fuzzy
+msgid  "New versions"
 msgstr "ဗားရှင်းအသစ်များ"
 
-#: versdlg.src#DLG_VERSIONS.PB_SAVE.pushbutton.text
-msgid "Save ~New Version"
+#: source/dialog/versdlg.src#DLG_VERSIONS.PB_SAVE.PushButton.Text
+#, fuzzy
+msgid  "Save ~New Version"
 msgstr "ဗားရှင်းအသစ်ကို သိမ်းပါ"
 
-#: versdlg.src#DLG_VERSIONS.CB_SAVEONCLOSE.checkbox.text
-msgid "~Always save a version on closing"
+#: source/dialog/versdlg.src#DLG_VERSIONS.CB_SAVEONCLOSE.CheckBox.Text
+#, fuzzy
+msgid  "~Always save a version on closing"
 msgstr "~ပိတ်ခြင်းပေါ်တွင် ဗားရှင်းတစ်ခု အစဉ်အမြဲသိမ်းသည်"
 
-#: versdlg.src#DLG_VERSIONS.GB_OLDVERSIONS.fixedline.text
-msgid "Existing versions"
+#: source/dialog/versdlg.src#DLG_VERSIONS.GB_OLDVERSIONS.FixedLine.Text
+#, fuzzy
+msgid  "Existing versions"
 msgstr "တည်ရှိပြီး ဗားရှင်းများ"
 
-#: versdlg.src#DLG_VERSIONS.FT_DATETIME.fixedtext.text
-msgid "Date and time"
+#: source/dialog/versdlg.src#DLG_VERSIONS.FT_DATETIME.FixedText.Text
+#, fuzzy
+msgid  "Date and time"
 msgstr "ရက်စွဲနှင့် အချိန်"
 
-#: versdlg.src#DLG_VERSIONS.FT_SAVEDBY.fixedtext.text
-msgid "Saved by"
+#: source/dialog/versdlg.src#DLG_VERSIONS.FT_SAVEDBY.FixedText.Text
+#, fuzzy
+msgid  "Saved by"
 msgstr "အားဖြင့် သိမ်းထားသည်"
 
-#: versdlg.src#DLG_VERSIONS.FT_COMMENTS.fixedtext.text
-msgid "Comments"
+#: source/dialog/versdlg.src#DLG_VERSIONS.FT_COMMENTS.FixedText.Text
+#, fuzzy
+msgid  "Comments"
 msgstr "ထင်မြင်သုံးသပ်ချက်များ"
 
-#: versdlg.src#DLG_VERSIONS.PB_CLOSE.cancelbutton.text
-msgid "Close"
+#: source/dialog/versdlg.src#DLG_VERSIONS.PB_CLOSE.CancelButton.Text
+#, fuzzy
+msgid  "Close"
 msgstr "ပိတ်ပါ"
 
-#: versdlg.src#DLG_VERSIONS.PB_OPEN.pushbutton.text
-msgid "Open"
+#: source/dialog/versdlg.src#DLG_VERSIONS.PB_OPEN.PushButton.Text
+#, fuzzy
+msgid  "Open"
 msgstr " ဖွင့်ပါ"
 
-#: versdlg.src#DLG_VERSIONS.PB_VIEW.pushbutton.text
-msgid "~Show..."
+#: source/dialog/versdlg.src#DLG_VERSIONS.PB_VIEW.PushButton.Text
+#, fuzzy
+msgid  "~Show..."
 msgstr "~ပြပါ ..."
 
-#: versdlg.src#DLG_VERSIONS.PB_DELETE.pushbutton.text
-msgid "~Delete"
+#: source/dialog/versdlg.src#DLG_VERSIONS.PB_DELETE.PushButton.Text
+#, fuzzy
+msgid  "~Delete"
 msgstr "~ဖျက်ပါ"
 
-#: versdlg.src#DLG_VERSIONS.PB_COMPARE.pushbutton.text
-msgid "Compare"
+#: source/dialog/versdlg.src#DLG_VERSIONS.PB_COMPARE.PushButton.Text
+#, fuzzy
+msgid  "Compare"
 msgstr "နှိုင်းယှဉ်ပါ"
 
-#: versdlg.src#DLG_VERSIONS.modaldialog.text
-msgid "Versions of"
+#: source/dialog/versdlg.src#DLG_VERSIONS.HelpButton.Text
+#, fuzzy
+msgid  "Versions of"
 msgstr "၏ဗားရှင်းများ"
 
-#: versdlg.src#DLG_COMMENTS.FT_DATETIME.fixedtext.text
-msgid "Date and time : "
+#: source/dialog/versdlg.src#DLG_COMMENTS.FT_DATETIME.FixedText.Text
+#, fuzzy
+msgid  "Date and time : "
 msgstr "ရက်စွဲနှင့် အချိန် -"
 
-#: versdlg.src#DLG_COMMENTS.FT_SAVEDBY.fixedtext.text
-msgid "Saved by "
+#: source/dialog/versdlg.src#DLG_COMMENTS.FT_SAVEDBY.FixedText.Text
+#, fuzzy
+msgid  "Saved by "
 msgstr "အားဖြင့် သိမ်းထားသည်"
 
-#: versdlg.src#DLG_COMMENTS.PB_CLOSE.pushbutton.text
-msgctxt "versdlg.src#DLG_COMMENTS.PB_CLOSE.pushbutton.text"
-msgid "~Close"
+#: source/dialog/versdlg.src#DLG_COMMENTS.PB_CLOSE.PushButton.Text
+#, fuzzy
+msgid  "~Close"
 msgstr "~ပိတ်ပါ"
 
-#: versdlg.src#DLG_COMMENTS.modaldialog.text
-msgid "Insert Version Comment"
+#: source/dialog/versdlg.src#DLG_COMMENTS.HelpButton.Text
+#, fuzzy
+msgid  "Insert Version Comment"
 msgstr "ဗားရှင်း ထင်မြင်သုံးသပ်ချက်များ ထည့်ပါ"
 
-#: versdlg.src#DLG_COMMENTS.string.text
-msgid "Version comment"
+#: source/dialog/versdlg.src#DLG_COMMENTS.String.Text
+#, fuzzy
+msgid  "Version comment"
 msgstr "ဗားရှင်းထင်မြင်သုံးသပ်ချက်များ "
 
-#~ msgid "Confirm password"
-#~ msgstr "စကားဝှက်အတည်ပြုပါ"
+#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NAME.FixedText.Text
+#, fuzzy
+msgid  "~Name"
+msgstr "~အမည်"
 
-#~ msgid "Confirm password"
-#~ msgstr "စကားဝှက်အတည်ပြုပါ"
+#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.CB_AUTO.CheckBox.Text
+#, fuzzy
+msgid  "~AutoUpdate"
+msgstr "~အလိုအလျောက်နောက်ဆုံးပေါ်အခြေအနေ"
+
+#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NEXT.FixedText.Text
+#, fuzzy
+msgid  "Ne~xt Style"
+msgstr "နောက်ထပ်ပုံစံ"
+
+#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_BASE.FixedText.Text
+#, fuzzy
+msgid  "Linked with"
+msgstr "နှင့်အတူ ချိတ်ဆက်ထားသည်"
+
+#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_REGION.FixedText.Text
+#, fuzzy
+msgid  "~Category"
+msgstr "~အမျိုးအစားများ"
+
+#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.GB_DESC.FixedLine.Text
+#, fuzzy
+msgid  "Contains"
+msgstr "ပါဝင်မှုများ"
+
+#: source/dialog/filedlghelper.src#STR_SFX_FILEDLG_ACTUALVERSION.String.Text
+#, fuzzy
+msgid  "Current version"
+msgstr "လက်ရှိဗားရှင်း"
+
+#: source/dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_EXPORT.String.Text
+#, fuzzy
+msgid  "Export"
+msgstr "တင်ပို့ပါ"
+
+#: source/dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_INSERT.String.Text
+#, fuzzy
+msgid  "Insert"
+msgstr "ထည့်သွင်းပါ"
+
+#: source/dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_BUTTONINSERT.String.Text
+#, fuzzy
+msgid  "~Insert"
+msgstr "⁠~ထပ်ထည့်ပါ"
+
+#: source/dialog/filedlghelper.src#STR_SFX_IMPORT_ALL.String.Text
+#, fuzzy
+msgid  "<All formats>"
+msgstr "<စီစဉ် ဖွဲ့စည်းမှု ပုံစံများ အားလုံး>"
+
+#: source/dialog/filedlghelper.src#STR_CB_AUTO_EXTENSION.String.Text
+#, fuzzy
+msgid  "~Automatic file name extension"
+msgstr "~အလိုအလျောက် ဖိုင်အမည် တိုးချဲ့မှု"
+
+#: source/dialog/filedlghelper.src#STR_CB_SELECTION.String.Text
+#, fuzzy
+msgid  "~Selection"
+msgstr "⁠~လက်ရွေးစင်"
+
+#: source/dialog/filedlghelper.src#STR_CB_INSERT_AS_LINK.String.Text
+#, fuzzy
+msgid  "~Link"
+msgstr "~ချိတ်ဆက်မှု"
+
+#: source/dialog/filedlghelper.src#STR_CB_SHOW_PREVIEW.String.Text
+#, fuzzy
+msgid  "Pr~eview"
+msgstr "အစမ်းကြည့်ပါ"
+
+#: source/dialog/filedlghelper.src#STR_CB_READONLY.String.Text
+#, fuzzy
+msgid  "~Read-only"
+msgstr "~ဖတ်ရန်သာ"
+
+#: source/dialog/filedlghelper.src#STR_CB_PASSWORD.String.Text
+#, fuzzy
+msgid  "Save with ~password"
+msgstr "စကားဝှက်နှင့်အတူ သိမ်းပါ"
+
+#: source/dialog/filedlghelper.src#STR_CB_FILTER_OPTIONS.String.Text
+#, fuzzy
+msgid  "Edit ~filter settings"
+msgstr "စစ်ထုတ်ကိရိယာ ပြင်ဆင်ချိန်ညှိမှုများ တည်းဖြတ်ပါ"
+
+#: source/dialog/filedlghelper.src#STR_PB_PLAY.String.Text
+#, fuzzy
+msgid  "~Play"
+msgstr "⁠~လုပ်ဆောင်ပါ"
+
+#: source/dialog/filedlghelper.src#STR_PB_STOP.String.Text
+#, fuzzy
+msgid  "Sto~p"
+msgstr "ရပ်ပါ"
+
+#: source/dialog/filedlghelper.src#STR_PB_OPEN.String.Text
+#, fuzzy
+msgid  "~Open"
+msgstr "~ဖွင့်ပါ"
+
+#: source/dialog/filedlghelper.src#STR_PB_SAVE.String.Text
+#, fuzzy
+msgid  "~Save"
+msgstr "~သိမ်းပါ"
+
+#: source/dialog/filedlghelper.src#STR_LB_IMAGE_TEMPLATE.String.Text
+#, fuzzy
+msgid  "Style:"
+msgstr "ပုံစံ-"
+
+#: source/dialog/filedlghelper.src#STR_LB_TEMPLATES.String.Text
+#, fuzzy
+msgid  "~Templates:"
+msgstr "~ပုံစံပြားများ -"
+
+#: source/dialog/filedlghelper.src#STR_LB_VERSION.String.Text
+#, fuzzy
+msgid  "~Version:"
+msgstr "~ဗားရှင်း-"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.ModelessDialog.Text
+#, fuzzy
+msgid  "Find on this Page"
+msgstr "ဤစာမျက်နှာပေါ်တွင်ရှာပါ"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.FT_SEARCH.FixedText.Text
+#, fuzzy
+msgid  "~Search for"
+msgstr "~အတွက် ရှာဖွေပါ"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.CB_WHOLEWORDS.CheckBox.Text
+#, fuzzy
+msgid  "~Whole words only"
+msgstr "~စကားလုံးများအတွက်သာ"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.CB_MATCHCASE.CheckBox.Text
+#, fuzzy
+msgid  "~Match case"
+msgstr "~ကိုက်ညီမှုရှိသည့်ကိစ္စရပ်များ"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.CheckBox.Text
+#, fuzzy
+msgid  "Wrap ~around"
+msgstr "ပတ်လည်ရှာဖွေမှု"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.CB_BACKWARDS.CheckBox.Text
+#, fuzzy
+msgid  "~Backwards"
+msgstr "~အနောက်ဖက်သို့"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.PB_FIND.PushButton.Text
+#, fuzzy
+msgid  "~Find"
+msgstr "~ရှာပါ"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.CancelButton.Text
+#, fuzzy
+msgid  "~Close"
+msgstr "~ပိတ်ပါ"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.STR_TOGGLE.String.Text
+#, fuzzy
+msgid  "Wrap ~around"
+msgstr "ပတ်လည်ရှာဖွေမှု"
+
+#: source/dialog/passwd.src#DLG_PASSWD.ModalDialog.Text
+#, fuzzy
+msgid  "Enter Password"
+msgstr "စကားဝှက်ရိုက်ထည့်ပါ"
+
+#: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_USER.FixedText.Text
+#, fuzzy
+msgid  "~User"
+msgstr "~အသုံးပြုသူ"
+
+#: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD.FixedText.Text
+#, fuzzy
+msgid  "~Password"
+msgstr "~စကားဝှက်"
+
+#: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM.FixedText.Text
+#, fuzzy
+msgid  "~Confirm"
+msgstr "~အတည်ပြုပါ"
+
+#: source/dialog/passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.FixedLine.Text
+#, fuzzy
+msgid  "Password"
+msgstr "စကားဝှက်"
+
+#: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD2.FixedText.Text
+#, fuzzy
+msgid  "P~assword"
+msgstr "စကားဝှက်"
+
+#: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM2.FixedText.Text
+#, fuzzy
+msgid  "Confir~m"
+msgstr "~အတည်ပြုပါ"
+
+#: source/dialog/passwd.src#DLG_PASSWD.TEXT_PASSWD.String.Text
+#, fuzzy
+msgid  "Password"
+msgstr "စကားဝှက်"
+
+#: source/dialog/dinfdlg.src#STR_SFX_NEWOFFICEDOC.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME document"
+msgstr "%PRODUCTNAME မှတ်တမ်းမှတ်ရာ"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_TITLE.FixedText.Text
+#, fuzzy
+msgid  "~Title"
+msgstr "~ခေါင်းစဉ်"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_THEMA.FixedText.Text
+#, fuzzy
+msgid  "~Subject"
+msgstr "~အကြောင်းကိစ္စ"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_KEYWORDS.FixedText.Text
+#, fuzzy
+msgid  "~Keywords"
+msgstr "~အဓိကစကားလုံးများ"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_COMMENT.FixedText.Text
+#, fuzzy
+msgid  "~Comments"
+msgstr "~ထင်မြင်သုံးသပ်ချက်များ"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.FixedText.Text
+#, fuzzy
+msgid  "Type:"
+msgstr "အမျိုးအစား-"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.CheckBox.Text
+#, fuzzy
+msgid  "~Read-only"
+msgstr "~ဖတ်ရန်သာ"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE.FixedText.Text
+#, fuzzy
+msgid  "Location:"
+msgstr "တည်နေရာ -"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_SIZE.FixedText.Text
+#, fuzzy
+msgid  "Size:"
+msgstr "အရွယ်အစား -"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_CREATE.FixedText.Text
+#, fuzzy
+msgid  "Created:"
+msgstr "ဖန်တီးထားသည် -"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_CHANGE.FixedText.Text
+#, fuzzy
+msgid  "Modified:"
+msgstr "အထူးပြုထားသည် -"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_SIGNED.FixedText.Text
+#, fuzzy
+msgid  "Digitally signed:"
+msgstr "ဒစ်ဂျစ်တယ်အားဖြင့်မှန်ကန်ကြောင်း စစ်ဆေးချက်..."
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.BTN_SIGNATURE.PushButton.Text
+#, fuzzy
+msgid  "Digital Signature..."
+msgstr "ဒစ်ဂျစ်တယ် မှန်ကန်ကြောင်း စစ်ဆေးချက်..."
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.STR_MULTSIGNED.String.Text
+#, fuzzy
+msgid  "Multiply signed document"
+msgstr "မှတ်တမ်းမှတ်ရာ မှန်ကန်ကြောင်း စစ်ဆေးချက်ပေါင်းစုံ"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_PRINT.FixedText.Text
+#, fuzzy
+msgid  "Last printed:"
+msgstr "နောက်ဆုံး ပရင့်ထုတ်ထားသည် -"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_TIMELOG.FixedText.Text
+#, fuzzy
+msgid  "Total editing time:"
+msgstr "စုစုပေါင်း တည်းဖြတ်မှုအချိန် -"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_DOCNO.FixedText.Text
+#, fuzzy
+msgid  "Revision number:"
+msgstr "နံပါတ် ပြင်ဆင်ချက် -"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.BTN_DELETE.PushButton.Text
+#, fuzzy
+msgid  "Reset"
+msgstr "ပြန်လည်စတင်ပါ"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.CB_USE_USERDATA.CheckBox.Text
+#, fuzzy
+msgid  "~Apply user data"
+msgstr "~အသုံးပြုသူ အချက်အလက်များ လက်တွေ့အသုံးချပါ"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_TEMPL.FixedText.Text
+#, fuzzy
+msgid  "Template:"
+msgstr "ပုံစံပြား -"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.STR_UNKNOWNSIZE.String.Text
+#, fuzzy
+msgid  "unknown"
+msgstr "မသိသော"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.EDIT_FILE_NAME.String.Text
+msgid  "File Name"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#TP_DOCINFOUSER.BTN_EDITLABEL.PushButton.Text
+#, fuzzy
+msgid  "~Info fields..."
+msgstr "~သတင်းအချက်အလက် နေရာကွက်များ..."
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_NOAUTOUPDATE.RadioButton.Text
+#, fuzzy
+msgid  "Do not refresh automatically"
+msgstr "အလိုအလျောက် ပြန်လည် မလန်းဆန်းပါ"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_RELOADUPDATE.RadioButton.Text
+#, fuzzy
+msgid  "Refresh this document"
+msgstr "ဤမှတ်တမ်းမှတ်ရာ ပြန်လည် လန်းဆန်းစေပါ"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_EVERY.FixedText.Text
+#, fuzzy
+msgid  "every"
+msgstr "အရာရာတိုင်း"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.FixedText.Text
+#, fuzzy
+msgid  "seconds"
+msgstr "စက္ကန့်"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_FORWARDUPDATE.RadioButton.Text
+#, fuzzy
+msgid  "Redirect from this document"
+msgstr "ဤမှတ်တမ်းမှတ်ရာမှ ဦးတည်ချက်ပြောင်းပါ"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.FixedText.Text
+#, fuzzy
+msgid  "after"
+msgstr "ပြီးနောက်"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.FixedText.Text
+#, fuzzy
+msgid  "seconds"
+msgstr "စက္ကန့်"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_URL.FixedText.Text
+#, fuzzy
+msgid  "to URL"
+msgstr "URL သို့"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FRAME.FixedText.Text
+#, fuzzy
+msgid  "to frame"
+msgstr "ဘောင် သို့"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.STR_FORWARD_ERRMSSG.String.Text
+msgid  "If you select the option "%PLACEHOLDER%", you must enter a URL."
+msgstr ""
+
+#: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.FT_PROPERTIES.FixedText.Text
+#, fuzzy
+msgid  "~Properties"
+msgstr "⁠~ဂုဏ်သတ္တိများ"
+
+#: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.String.Text
+#, fuzzy
+msgid  "Name"
+msgstr "အမည်"
+
+#: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.String.Text
+#, fuzzy
+msgid  "Type"
+msgstr "အမျိုးအစား"
+
+#: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_VALUE.String.Text
+#, fuzzy
+msgid  "Value"
+msgstr "တန်ဖိုး"
+
+#: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.BTN_ADD.PushButton.Text
+#, fuzzy
+msgid  "~Add"
+msgstr "~ထပ်ဖြည့်ပါ"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ComboBox.QuickHelpText
+#, fuzzy
+msgid  "Property Name"
+msgstr "ဂုဏ်သတ္တိအမည်များ"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item1.StringList.item
+#, fuzzy
+msgid  "Checked by"
+msgstr "အနေဖြင့်စစ်ဆေးပါ"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item2.StringList.item
+#, fuzzy
+msgid  "Client"
+msgstr "အသုံးပြုသူ"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item3.StringList.item
+#, fuzzy
+msgid  "Date completed"
+msgstr "ပြီးပြည့်စုံသည့်ရက်စွဲ"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item4.StringList.item
+#, fuzzy
+msgid  "Department"
+msgstr "ဌာန"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item5.StringList.item
+#, fuzzy
+msgid  "Destinations"
+msgstr "ရောက်ရှိရာနေရာ"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item6.StringList.item
+#, fuzzy
+msgid  "Disposition"
+msgstr "စီစဉ်ထားသည်"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item7.StringList.item
+#, fuzzy
+msgid  "Division"
+msgstr "ပိုင်းခြားမှု"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item8.StringList.item
+#, fuzzy
+msgid  "Document number"
+msgstr "မှတ်တမ်းမှတ်ရာနံပါတ်"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item9.StringList.item
+#, fuzzy
+msgid  "Editor"
+msgstr "တည်းဖြတ်သူ"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item10.StringList.item
+#, fuzzy
+msgid  "E-Mail"
+msgstr "အီးမေးလ်"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item11.StringList.item
+#, fuzzy
+msgid  "Forward to"
+msgstr "ရှေ့သို့"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item12.StringList.item
+#, fuzzy
+msgid  "Group"
+msgstr "အုပ်စု"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item13.StringList.item
+#, fuzzy
+msgid  "Info"
+msgstr "သတင်းအချက်အလက်"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item14.StringList.item
+#, fuzzy
+msgid  "Language"
+msgstr "ဘာသာစကား"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item15.StringList.item
+#, fuzzy
+msgid  "Mailstop"
+msgstr "အီးမေးလ်ပို့မှုရပ်ပါ"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item16.StringList.item
+#, fuzzy
+msgid  "Matter"
+msgstr "အကြောင်းကိစ္စ"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item17.StringList.item
+#, fuzzy
+msgid  "Office"
+msgstr "ရုံး"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item18.StringList.item
+#, fuzzy
+msgid  "Owner"
+msgstr "ပိုင်ရှင်"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item19.StringList.item
+#, fuzzy
+msgid  "Project"
+msgstr "ပရောဂျက်"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item20.StringList.item
+#, fuzzy
+msgid  "Publisher"
+msgstr "ထုတ်ဝေသူ"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item21.StringList.item
+#, fuzzy
+msgid  "Purpose"
+msgstr "ရည်ရွယ်ချက်"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item22.StringList.item
+#, fuzzy
+msgid  "Received from"
+msgstr "မှ လက်ခံရရှိခဲ့သည်"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item23.StringList.item
+#, fuzzy
+msgid  "Recorded by"
+msgstr "အနေဖြင့် မှတ်တမ်းတင်ခဲ့သည်"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item24.StringList.item
+#, fuzzy
+msgid  "Recorded date"
+msgstr "မှတ်တမ်းတင်သည့်နေ့စွဲ"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item25.StringList.item
+#, fuzzy
+msgid  "Reference"
+msgstr "ရည်ညွှန်းချက်"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item26.StringList.item
+#, fuzzy
+msgid  "Source"
+msgstr "ရင်းမြစ်"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item27.StringList.item
+#, fuzzy
+msgid  "Status"
+msgstr "အခြေအနေ"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item28.StringList.item
+#, fuzzy
+msgid  "Telephone number"
+msgstr "တယ်လီဖုန်းနံပါတ်"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item29.StringList.item
+#, fuzzy
+msgid  "Typist"
+msgstr "လက်နှိပ်စက်ရိုက်သူ"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item30.StringList.item
+#, fuzzy
+msgid  "URL"
+msgstr "URL"
+
+#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_TEXT.StringList.item
+#, fuzzy
+msgid  "Text"
+msgstr "စာသား"
+
+#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATETIME.StringList.item
+msgid  "DateTime"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATE.StringList.item
+#, fuzzy
+msgid  "Date"
+msgstr "နေ့စွဲ"
+
+#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DURATION.StringList.item
+msgid  "Duration"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_NUMBER.StringList.item
+#, fuzzy
+msgid  "Number"
+msgstr "နံပါတ်"
+
+#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_BOOLEAN.StringList.item
+#, fuzzy
+msgid  "Yes or no"
+msgstr "ဟုတ်သည် (သို့) မဟုတ်ပါ"
+
+#: source/dialog/dinfdlg.src#SFX_ST_DURATION_FORMAT.String.Text
+msgid  " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.RadioButton.Text
+#, fuzzy
+msgid  "Yes"
+msgstr "ဟုတ်သည်"
+
+#: source/dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_NO.RadioButton.Text
+#, fuzzy
+msgid  "No"
+msgstr "မဟုတ်ပါ"
+
+#: source/dialog/dinfdlg.src#SFX_PB_PROPERTY_REMOVE.ImageButton.QuickHelpText
+#, fuzzy
+msgid  "Remove Property"
+msgstr "ဂုဏ်သတ္တိများဖယ်ရှားပါ"
+
+#: source/dialog/dinfdlg.src#SFX_QB_WRONG_TYPE.QueryBox.Message
+msgid  "The value entered does not match the specified type.\nThe value will be stored as text."
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SID_DOCINFO.TabDialog.Text
+#, fuzzy
+msgid  "Properties of "
+msgstr "၏ ဂုဏ်သတ္တိများ"
+
+#: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.PageItem.Text
+#, fuzzy
+msgid  "General"
+msgstr "အထွေထွေ"
+
+#: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.PageItem.Text
+#, fuzzy
+msgid  "Description"
+msgstr "ဖော်ပြချက်"
+
+#: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_CUSTOMPROPERTIES.PageItem.Text
+#, fuzzy
+msgid  "Custom Properties"
+msgstr "စိတ်ကြိုက်အရည်အသွေးများ"
+
+#: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.PageItem.Text
+#, fuzzy
+msgid  "Internet"
+msgstr "အင်တာနက်"
+
+#: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFOSECURITY.PageItem.Text
+msgid  "Security"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.ModalDialog.Text
+msgid  "Edit Duration"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FL_DURATION.FixedLine.Text
+msgid  "Duration"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.CB_NEGATIVE.CheckBox.Text
+msgid  "~Negative"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_YEAR.FixedText.Text
+msgid  "~Years"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MONTH.FixedText.Text
+msgid  "~Months"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_DAY.FixedText.Text
+msgid  "~Days"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_HOUR.FixedText.Text
+msgid  "H~ours"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MINUTE.FixedText.Text
+msgid  "Min~utes"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_SECOND.FixedText.Text
+#, fuzzy
+msgid  "~Seconds"
+msgstr "စက္ကန့်"
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MSECOND.FixedText.Text
+msgid  "Millise~conds"
+msgstr ""
+
+#: source/dialog/dinfedt.src#DLG_DOCINFO_EDT.ModalDialog.Text
+#, fuzzy
+msgid  "Edit Field Names"
+msgstr "အမည်နေရာကွက်များ တည်းဖြတ်ပါ"
+
+#: source/dialog/dinfedt.src#DLG_DOCINFO_EDT.FL_INFO.FixedLine.Text
+#, fuzzy
+msgid  "Names"
+msgstr "အမည်များ"
+
+#: source/dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.ModalDialog.Text
+#, fuzzy
+msgid  "Create Style"
+msgstr "ပုံစံဖန်တီးပါ"
+
+#: source/dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.FL_COL.FixedLine.Text
+#, fuzzy
+msgid  "Style name"
+msgstr "ပုံစံအမည်"
+
+#: source/dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MSG_OVERWRITE.QueryBox.Message
+#, fuzzy
+msgid  "Style already exists. Overwrite?"
+msgstr "စတိုင်လ် အဆင်သင့် တည်ရှိသည်။ အချက်အလက်သစ်များ ထပ်မံ ဖြည့်စွက်မည်လား။"
+
+#: source/dialog/recfloat.src#SID_RECORDING_FLOATWINDOW.FloatingWindow.Text
+#, fuzzy
+msgid  "Record Macro"
+msgstr "မက်ခရို မှတ်တမ်းတင်မှု"
+
+#: source/dialog/recfloat.src#STR_MACRO_LOSS.String.Text
+msgid  "Do you really want to cancel the recording? Any steps recorded up to this point will be lost."
+msgstr ""
+
+#: source/dialog/recfloat.src#STR_CANCEL_RECORDING.String.Text
+#, fuzzy
+msgid  "Cancel Recording"
+msgstr "မှတ်တမ်းတင်မှု ရုတ်သိမ်းပါ"
+
+#: source/dialog/mailwindow.src#RID_ERRBOX_MAIL_CONFIG.ErrorBox.MESSAGE
+msgid  "%PRODUCTNAME was unable to find a working e-mail configuration. Please save this document locally instead and attach it from within your e-mail client."
+msgstr ""
+
+#: source/dialog/dialog.src#STR_RESET.String.Text
+#, fuzzy
+msgid  "~Reset"
+msgstr "~ပြန်လည်စတင်ပါ"
+
+#: source/dialog/dialog.src#STR_APPLY.String.Text
+#, fuzzy
+msgid  "Apply"
+msgstr "အသုံးချပါ"
+
+#: source/dialog/dialog.src#STR_TABPAGE_MANAGESTYLES.String.Text
+#, fuzzy
+msgid  "Organizer"
+msgstr "စီစဉ်သူ"
+
+#: source/dialog/dialog.src#MSG_TABPAGE_INVALIDNAME.InfoBox.Message
+#, fuzzy
+msgid  "This name is already in use."
+msgstr "ဤအမည်သုံးထားပြီးဖြစ်သည်။"
+
+#: source/dialog/dialog.src#MSG_TABPAGE_INVALIDSTYLE.InfoBox.Message
+#, fuzzy
+msgid  "This Style does not exist."
+msgstr "ဤပုံစံမတည်ရှိပါ။"
+
+#: source/dialog/dialog.src#MSG_TABPAGE_INVALIDPARENT.InfoBox.Message
+msgid  "This Style cannot be used as a base Style,\nbecause it would result in a recursive reference."
+msgstr ""
+
+#: source/dialog/dialog.src#MSG_POOL_STYLE_NAME.InfoBox.Message
+msgid  "Name already exists as a default Style.\nPlease choose another name."
+msgstr ""
+
+#: source/dialog/dialog.src#STR_DELETE_STYLE.String.Text
+#, fuzzy
+msgid  "Do you really want to delete Style $1?"
+msgstr "ပုံစံ$1ကိုဖျက်ရန် အမှန်တကယ် ဆန္ဒရှိပါသလား?"
+
+#: source/dialog/dialog.src#STR_DELETE_STYLE_USED.String.Text
+#, fuzzy
+msgid  "You are deleting an applied Style!\n"
+msgstr "အသုံးချသည့်ပုံစံတစ်ခုကိုသင်ဖျက်နေသည်!\n"
+
+#: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MenuItem.Text
+#, fuzzy
+msgid  "New..."
+msgstr "အသစ်..."
+
+#: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.MenuItem.Text
+#, fuzzy
+msgid  "Modify..."
+msgstr "အထူးပြုပါ..."
+
+#: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.MenuItem.Text
+#, fuzzy
+msgid  "Delete..."
+msgstr "ဖျက်ပါ..."
+
+#: source/dialog/dialog.src#SID_NAVIGATOR.String.Text
+#, fuzzy
+msgid  "Navigator"
+msgstr "လမ်းညွှန်ကိရိယာ"
+
+#: source/dialog/dialog.src#SID_TASKPANE.String.Text
+msgid  "Task Pane"
+msgstr ""
+
+#: source/dialog/dialog.src#MSG_ERROR_WRONG_CONFIRM.ErrorBox.Message
+#, fuzzy
+msgid  "Faulty password confirmation"
+msgstr "အမှား စကားဝှက် အတည်ပြုချက်"
+
+#: source/dialog/dialog.src#STR_PDF_EXPORT_SEND.String.Text
+#, fuzzy
+msgid  "Send"
+msgstr "ပေးပို့ပါ"
+
+#: source/dialog/taskpane.src#STR_SFX_DOCK.String.Text
+msgid  "Dock"
+msgstr ""
+
+#: source/dialog/taskpane.src#STR_SFX_UNDOCK.String.Text
+msgid  "Undock"
+msgstr ""
+
+#: source/dialog/taskpane.src#STR_SFX_TASK_PANE_VIEW.String.Text
+msgid  "View"
+msgstr ""
+
+#: source/dialog/taskpane.src#STR_SFX_TASKS.String.Text
+msgid  "Tasks"
+msgstr ""
+
+#: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.FixedText.Text
+msgid  "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\n\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
+msgstr ""
+
+#: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.OKButton.Text
+#, fuzzy
+msgid  "~Keep Current Format"
+msgstr "~လက်ရှိ ပြင်ဆင်ဖွဲ့စည်းမှုပုံစံကိုထိန်းသိမ်းပါ"
+
+#: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_YES.CancelButton.Text
+#, fuzzy
+msgid  "~Save in ODF Format"
+msgstr "~ODF ပြင်ဆင်ဖွဲ့စည်းမှုပုံစံကိုသိမ်းဆည်းပါ"
+
+#: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_MOREINFO.HelpButton.Text
+#, fuzzy
+msgid  "~More Information..."
+msgstr "~သတင်းအချက်အလက်များ..."
+
+#: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.CB_WARNING_OFF.CheckBox.Text
+#, fuzzy
+msgid  "~Ask when not saving in ODF format"
+msgstr "⁠~ODFစီစဉ်ဖွဲ့စည်းမှုပုံစံတွင် မသိမ်းဆည်းလိုသောအခါ မေးမြန်းမှုပြုပါ"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item1.ItemList.item
+#, fuzzy
+msgid  "My Templates"
+msgstr "ကျွန်ုပ်၏ ပုံစံပြားများ"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item2.ItemList.item
+#, fuzzy
+msgid  "Business Correspondence"
+msgstr "စီးပွားရေးဆိုင်ရာများ"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item3.ItemList.item
+#, fuzzy
+msgid  "Other Business Documents"
+msgstr "အခြား စီးပွားရေးမှတ်တမ်းမှတ်ရာများ"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item4.ItemList.item
+#, fuzzy
+msgid  "Personal Correspondence and Documents"
+msgstr "ကိုယ်ရေးကိုယ်တာဆိုင်ရာမှတ်တမ်းမှတ်ရာများ"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item5.ItemList.item
+#, fuzzy
+msgid  "Forms and Contracts"
+msgstr "ပုံစံများနှင့် ဆန့်ကျင်ကွဲလွဲချက်များ"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item6.ItemList.item
+#, fuzzy
+msgid  "Finances"
+msgstr "ငွေကြေးဆိုင်ရာ"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item7.ItemList.item
+#, fuzzy
+msgid  "Education"
+msgstr "ပညာရေး"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item8.ItemList.item
+#, fuzzy
+msgid  "Presentation Backgrounds"
+msgstr "နောက်ခံများ တင်ပြချက်"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item9.ItemList.item
+#, fuzzy
+msgid  "Presentations"
+msgstr "တင်ဆက်မှုပုံစံများ"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item10.ItemList.item
+#, fuzzy
+msgid  "Miscellaneous"
+msgstr "အထွေထွေ"
+
+#: source/doc/doctempl.src#RID_CNT_STR_WAITING.String.Text
+#, fuzzy
+msgid  "The templates are being initialized for first-time usage."
+msgstr "ပထမဆုံးအကြိမ် အသုံးပြုခြင်းအတွက် ပုံစံပြားများ အစပျိုးထားသည်။"
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.ModalDialog.Text
+#, fuzzy
+msgid  "Templates"
+msgstr "ပုံစံပြားများ"
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_EDIT.FixedLine.Text
+#, fuzzy
+msgid  "New template"
+msgstr "ပုံစံပြားအသစ်"
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.FixedLine.Text
+#, fuzzy
+msgid  "Templates"
+msgstr "ပုံစံပြားများ"
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.FixedText.Text
+#, fuzzy
+msgid  "~Categories"
+msgstr "⁠~အမျိုးအစားများ"
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_STYLESHEETS.FixedText.Text
+#, fuzzy
+msgid  "~Templates"
+msgstr "~ပုံစံပြားများ"
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.PushButton.Text
+#, fuzzy
+msgid  "~Edit"
+msgstr "~တည်းဖြတ်ပါ"
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_ORGANIZE.PushButton.Text
+#, fuzzy
+msgid  "~Organizer..."
+msgstr "~စီစဉ်သူ..."
+
+#: source/doc/doc.src#MSG_CONFIRM_FILTER.QueryBox.Message
+msgid  "Saving in external formats may have caused\n information loss. Do you still want to close?"
+msgstr ""
+
+#: source/doc/doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.QueryBox.Message
+msgid  "Name already in use.\nDo you want to overwrite document template?"
+msgstr ""
+
+#: source/doc/doc.src#STR_DELETE_REGION.String.Text
+msgid  "Are you sure you want to delete the region "$1"?"
+msgstr ""
+
+#: source/doc/doc.src#STR_DELETE_TEMPLATE.String.Text
+msgid  "Are you sure you want to delete the entry "$1"?"
+msgstr ""
+
+#: source/doc/doc.src#MSG_REGION_NOTEMPTY.QueryBox.Message
+msgid  "The category is not empty.\nDelete anyway?"
+msgstr ""
+
+#: source/doc/doc.src#STR_QUERY_SAVE_DOCUMENT.String.Text
+msgid  "The document "$(DOC)" has been modified.\nDo you want to save your changes?"
+msgstr ""
+
+#: source/doc/doc.src#STR_STYLES.String.Text
+#, fuzzy
+msgid  "Styles"
+msgstr "ပုံစံများ"
+
+#: source/doc/doc.src#STR_MACROS.String.Text
+#, fuzzy
+msgid  "Macros"
+msgstr "မက်ခရိုများ"
+
+#: source/doc/doc.src#STR_CONFIG.String.Text
+#, fuzzy
+msgid  "Configuration"
+msgstr "အစိတ်အပိုင်းများ ဖွဲ့စည်းပုံ"
+
+#: source/doc/doc.src#STR_PRINT_STYLES_HEADER.String.Text
+#, fuzzy
+msgid  "Styles in "
+msgstr "ရှိပုံစံများ"
+
+#: source/doc/doc.src#STR_PRINT_STYLES.String.Text
+#, fuzzy
+msgid  "Printing Styles"
+msgstr "ပရင့်ထုတ်သော ပုံစံများ"
+
+#: source/doc/doc.src#MSG_PRINT_ERROR.ErrorBox.Message
+#, fuzzy
+msgid  "The print job could not be started."
+msgstr "ပရင့်ထုတ်မှု စတင်နိုင်လိမ့်မည် မဟုတ်ပါ"
+
+#: source/doc/doc.src#STR_BACKUP_COPY.String.Text
+#, fuzzy
+msgid  "Copy"
+msgstr "ကူးယူပါ"
+
+#: source/doc/doc.src#MSG_CANT_OPEN_TEMPLATE.InfoBox.Message
+#, fuzzy
+msgid  "The template could not be opened."
+msgstr "ပုံစံပြား ဖွင့်နိုင်လိမ့်မည် မဟုတ်ပါ။"
+
+#: source/doc/doc.src#MSG_VIEW_OPEN_CANT_SAVE.InfoBox.Message
+#, fuzzy
+msgid  "Document already open for editing."
+msgstr "တည်းဖြတ်ခြင်းအတွက် မှတ်တမ်းမှတ်ရာ အဆင်သင့် ဖွင့်ပြီးဖြစ်သည်။"
+
+#: source/doc/doc.src#STR_ERROR_SAVE.String.Text
+#, fuzzy
+msgid  "Error recording document "
+msgstr "မှတ်တမ်းမှတ်ရာအား မှတ်တမ်းတင်စဉ်အမှား"
+
+#: source/doc/doc.src#STR_TEMPLATE_FILTER.String.Text
+#, fuzzy
+msgid  "Templates"
+msgstr "ပုံစံပြားများ"
+
+#: source/doc/doc.src#STR_ERROR_COPY_TEMPLATE.String.Text
+msgid  "Error copying template "$1". \nA template with this name may already exist."
+msgstr ""
+
+#: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE.String.Text
+msgid  "The template "$1" can not be deleted."
+msgstr ""
+
+#: source/doc/doc.src#STR_ERROR_MOVE_TEMPLATE.String.Text
+msgid  "Error moving template "$1"."
+msgstr ""
+
+#: source/doc/doc.src#MSG_ERROR_RESCAN.ErrorBox.Message
+#, fuzzy
+msgid  "The update could not be saved."
+msgstr "နောက်ဆုံးပေါ်အချက်အလက်များဖြင့် မသိမ်းဆည်းနိုင်ပါ။"
+
+#: source/doc/doc.src#STR_ERROR_SAVE_TEMPLATE.String.Text
+#, fuzzy
+msgid  "Error saving template "
+msgstr "ပုံစံပြားသိမ်းဆည်းမှုပြုစဉ်အမှား"
+
+#: source/doc/doc.src#MSG_ERROR_RENAME_TEMPLATE.ErrorBox.Message
+#, fuzzy
+msgid  "Error renaming template."
+msgstr "ပုံစံပြားအမည် ပြန်ပေးမှု အမှား။"
+
+#: source/doc/doc.src#MSG_ERROR_RENAME_TEMPLATE_REGION.ErrorBox.Message
+#, fuzzy
+msgid  "Error renaming template category."
+msgstr "ပုံစံပြားအမျိုးအစားအမည် ပြန်ပေးမှု အမှား။"
+
+#: source/doc/doc.src#MSG_ERROR_EMPTY_NAME.ErrorBox.Message
+#, fuzzy
+msgid  "Please specify a name."
+msgstr "အမည် တစ်ခု သတ်မှတ်ပေးပါ။"
+
+#: source/doc/doc.src#MSG_ERROR_UNIQ_NAME.ErrorBox.Message
+msgid  "Please specify a unique name.\nEntries must not be case specific."
+msgstr ""
+
+#: source/doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.String.Text
+msgid  "Should the template "$(TEXT)" become the default template?"
+msgstr ""
+
+#: source/doc/doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.QueryBox.Message
+#, fuzzy
+msgid  "Do you want to reset the default template?"
+msgstr "နဂိုမူလ ပုံစံပြားကို ပြန်လည်စတင်လုပ်ဆောင်လိုပါသလား။"
+
+#: source/doc/doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.InfoBox.Message
+msgid  "Template directory\n$(DIR)\ndoes not exist."
+msgstr ""
+
+#: source/doc/doc.src#MSG_DOCINFO_CANTREAD.InfoBox.Message
+#, fuzzy
+msgid  "Document info cannot be read."
+msgstr "သတင်းအချက်အလက် မှတ်တမ်းမှတ်ရာ မဖတ်နိုင်ပါ။"
+
+#: source/doc/doc.src#STR_ERROR_NOSTORAGE.String.Text
+#, fuzzy
+msgid  "The selected file has an incorrect format."
+msgstr "ရွေးချယ်ထားသည့်ဖိုင်တွင်စီစဉ်ဖွဲ့စည်းမှုပုံစံအမှားတစ်ခုရှိသည်။"
+
+#: source/doc/doc.src#STR_QUERY_MUSTOWNFORMAT.String.Text
+msgid  "Documents cannot be saved in $(FORMAT) format. Do you\nwant to save your changes using the $(OWNFORMAT) format?"
+msgstr ""
+
+#: source/doc/doc.src#STR_SAVEDOC.String.Text
+#, fuzzy
+msgid  "~Save"
+msgstr "~သိမ်းပါ"
+
+#: source/doc/doc.src#STR_UPDATEDOC.String.Text
+#, fuzzy
+msgid  "~Update"
+msgstr "~နောက်ဆုံးပေါ်အခြေအနေ"
+
+#: source/doc/doc.src#STR_SAVEASDOC.String.Text
+#, fuzzy
+msgid  "Save ~As..."
+msgstr "အဖြစ် သိမ်းပါ..."
+
+#: source/doc/doc.src#STR_SAVECOPYDOC.String.Text
+#, fuzzy
+msgid  "Save Copy ~as..."
+msgstr "အဖြစ် ကူးယူသိမ်းပါ..."
+
+#: source/doc/doc.src#STR_CLOSEDOC.String.Text
+#, fuzzy
+msgid  "~Close"
+msgstr "~ပိတ်ပါ"
+
+#: source/doc/doc.src#STR_CLOSEDOC_ANDRETURN.String.Text
+#, fuzzy
+msgid  "~Close & Return to "
+msgstr "~ပိတ်ပြီးပြန်သွားပါ"
+
+#: source/doc/doc.src#STR_WIZARD.String.Text
+#, fuzzy
+msgid  " AutoPilot"
+msgstr " AutoPilot"
+
+#: source/doc/doc.src#RID_STR_FILTCONFIG.String.Text
+#, fuzzy
+msgid  "Configurations"
+msgstr "အစိတ်အပိုင်းဖွဲ့စည်းပုံများ"
+
+#: source/doc/doc.src#RID_STR_FILTBASIC.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Basic libraries"
+msgstr "%PRODUCTNAME အခြေခံ လိုင်ဘရီများ"
+
+#: source/doc/doc.src#RID_STR_WARNSTYLEOVERWRITE.String.Text
+msgid  "Should the "$(ARG1)" Style be replaced?"
+msgstr ""
+
+#: source/doc/doc.src#STR_DOC_LOADING.String.Text
+#, fuzzy
+msgid  "Loading Document"
+msgstr "ဆွဲတင်နေသည့် မှတ်တမ်းမှတ်ရာ"
+
+#: source/doc/doc.src#RID_DLSTATUS.INET_NAME_RESOLVE_START.String.Text
+#, fuzzy
+msgid  "Connection to: $(HOST). Waiting for response..."
+msgstr "$(HOST)သို့ ချိတ်ဆက်မှု။ တုန့်ပြန်မှု ကိုစောင့်ရန်..."
+
+#: source/doc/doc.src#RID_DLSTATUS.INET_CONNECT_START.String.Text
+#, fuzzy
+msgid  "Opening $(TARGET) at $(HOST)"
+msgstr "$(HOST)တွင် $(TARGET) ဖွင့်ခြင်း"
+
+#: source/doc/doc.src#RID_DLSTATUS.INET_READ_STATUS.String.Text
+#, fuzzy
+msgid  "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
+msgstr "ဆွဲတင်နေသည် - $(HOST) မှ $(TARGET)သို့။ $(BYTE) ဆွဲတင်ထားသည်"
+
+#: source/doc/doc.src#RID_DLSTATUS.INET_CONNECTION_CLOSED.String.Text
+#, fuzzy
+msgid  "Disconnected"
+msgstr "ချိတ်ဆက်မထားပါ"
+
+#: source/doc/doc.src#MSG_OPEN_READONLY.QueryBox.Message
+msgid  "Document cannot be opened for editing.\nDo you want to open it as read-only?"
+msgstr ""
+
+#: source/doc/doc.src#STR_EDIT.String.Text
+#, fuzzy
+msgid  "Edit"
+msgstr "တည်းဖြတ်ပါ"
+
+#: source/doc/doc.src#RID_OFFICEFILTER.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Documents"
+msgstr "%PRODUCTNAME မှတ်တမ်းမှတ်ရာများ"
+
+#: source/doc/doc.src#STR_FRAMEOBJECT_PROPERTIES.String.Text
+#, fuzzy
+msgid  "Propert~ies..."
+msgstr "ဂုဏ်သတ္တိများ..."
+
+#: source/doc/doc.src#STR_FSET_FILTERNAME0.String.Text
+#, fuzzy
+msgid  "HTML (FrameSet)"
+msgstr "HTML (ဘောင်အစုံ)"
+
+#: source/doc/doc.src#STR_FSET_FILTERNAME1.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Frame Document"
+msgstr "%PRODUCTNAME ဘောင် မှတ်တမ်း"
+
+#: source/doc/doc.src#STR_TEMPL_MOVED.String.Text
+msgid  "The template "$(TEMPLATE)" was not found at the original location. A template with the same name exists at "$(FOUND)". Should this template be used in the future when comparing?"
+msgstr ""
+
+#: source/doc/doc.src#STR_TEMPL_RESET.String.Text
+msgid  "The template "$(TEMPLATE)" has not been found. Should the template be looked for the next time the document is opened ?"
+msgstr ""
+
+#: source/doc/doc.src#STR_AUTOMATICVERSION.String.Text
+#, fuzzy
+msgid  "Automatically saved version"
+msgstr "ဗားရှင်းကို အလိုအလျောက်သိမ်းခဲ့သည်"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_SW.String.Text
+#, fuzzy
+msgid  "Text Document"
+msgstr "စာသား မှတ်တမ်းမှတ်ရာ"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_SWWEB.String.Text
+#, fuzzy
+msgid  "HTML Document"
+msgstr "HTML မှတ်တမ်းမှတ်ရာ"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_SWGLOB.String.Text
+#, fuzzy
+msgid  "Master Document"
+msgstr "ပင်မ မှတ်တမ်းမှတ်ရာ"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_SC.String.Text
+#, fuzzy
+msgid  "Spreadsheet"
+msgstr "စာရွက်အချပ်လွှာ"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_SI.String.Text
+#, fuzzy
+msgid  "Presentation"
+msgstr "တင်ဆက်မှုပုံစံ"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_SD.String.Text
+#, fuzzy
+msgid  "Drawing"
+msgstr "ပုံဆွဲခြင်း"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_MESSAGE.String.Text
+#, fuzzy
+msgid  "Message"
+msgstr "အမှာစာ"
+
+#: source/doc/doc.src#STR_NOSAVEANDCLOSE.String.Text
+#, fuzzy
+msgid  "~Discard"
+msgstr "~ဖယ်ရှားပါ"
+
+#: source/doc/doc.src#STR_PACKNGO_NOACCESS.String.Text
+#, fuzzy
+msgid  "Access to the current data medium not possible."
+msgstr "လက်ရှိကြားခံအချက်အလက်များရယူရန်မဖြစ်နိုင်ပါ။"
+
+#: source/doc/doc.src#STR_PACKNGO_NEWMEDIUM.String.Text
+#, fuzzy
+msgid  "Insert the next data carrier and click OK."
+msgstr "နောက်ထပ်အချက်အလက်များထပ်ထည့်ပြီး ‘အိုကေ’ကို ကလစ်နှိပ်ပါ။"
+
+#: source/doc/doc.src#STR_OBJECT.String.Text
+#, fuzzy
+msgid  "Object"
+msgstr "အရာဝတ္ထု"
+
+#: source/doc/doc.src#DLG_MACROQUERY.QueryBox.Title
+#, fuzzy
+msgid  "Run Macro"
+msgstr "မက်ခရိုလုပ်ဆောင်ပါ"
+
+#: source/doc/doc.src#DLG_MACROQUERY.QueryBox.Message
+#, fuzzy
+msgid  "This document contains macros. $(TEXT)"
+msgstr "ဤမှတ်တမ်းမှတ်ရာတွင် မက်ခရိုများ ပါဝင်သည်။$(TEXT)"
+
+#: source/doc/doc.src#BTN_OK.String.Text
+#, fuzzy
+msgid  "Run"
+msgstr "လုပ်ဆောင်ပါ"
+
+#: source/doc/doc.src#BTN_CANCEL.String.Text
+#, fuzzy
+msgid  "Do Not Run"
+msgstr "မလုပ်ဆောင်ပါ"
+
+#: source/doc/doc.src#FT_CANCEL.String.Text
+msgid  "According to the security settings, the macros in this document should not be run. Do you want to run them anyway?"
+msgstr ""
+
+#: source/doc/doc.src#FT_OK.String.Text
+#, fuzzy
+msgid  "Do you want to allow these macros to be run?"
+msgstr "ဤမက်ခရိုများလုပ်ဆောင်မှုပြုရန် ခွင့်ပြု လိုပါသလား။"
+
+#: source/doc/doc.src#STR_EXPORTASPDF_TITLE.String.Text
+#, fuzzy
+msgid  "Export as PDF"
+msgstr "PDF အဖြစ် ပို့ပါ"
+
+#: source/doc/doc.src#STR_EXPORTWITHCFGBUTTON.String.Text
+#, fuzzy
+msgid  "Export..."
+msgstr "တင်ပို့ပါ..."
+
+#: source/doc/doc.src#STR_EXPORTBUTTON.String.Text
+#, fuzzy
+msgid  "Export"
+msgstr "တင်ပို့ပါ"
+
+#: source/doc/doc.src#RID_SVXSTR_SECURITY_ADDPATH.String.Text
+#, fuzzy
+msgid  "Add this directory to the list of secure paths: "
+msgstr "လုံခြုံရေးဆိုင်ရာ လမ်းကြောင်းများစာရင်းသို့ ဤဒိုင်ယာထရီ ထပ်ထည့်ပါ -"
+
+#: source/doc/doc.src#STR_LABEL_FILEFORMAT.String.Text
+#, fuzzy
+msgid  "File format:"
+msgstr "ဖိုင်စီစဉ်ဖွဲ့စည်းမှု ပုံစံ -"
+
+#: source/doc/doc.src#STR_HIDDENINFO_CONTAINS.String.Text
+msgid  "This document contains:\n\n"
+msgstr ""
+
+#: source/doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.String.Text
+#, fuzzy
+msgid  "Recorded changes"
+msgstr "မှတ်တမ်းတင်ထားသည့် ပြောင်းလဲမှုများ"
+
+#: source/doc/doc.src#STR_HIDDENINFO_NOTES.String.Text
+#, fuzzy
+msgid  "Notes"
+msgstr "မှတ်ချက်များ"
+
+#: source/doc/doc.src#STR_HIDDENINFO_DOCVERSIONS.String.Text
+#, fuzzy
+msgid  "Document versions"
+msgstr "မှတ်တမ်းမှတ်ရာပုံစံများ"
+
+#: source/doc/doc.src#STR_HIDDENINFO_FIELDS.String.Text
+#, fuzzy
+msgid  "Fields"
+msgstr "နေရာကွက်များ"
+
+#: source/doc/doc.src#STR_HIDDENINFO_LINKDATA.String.Text
+#, fuzzy
+msgid  "Linked data..."
+msgstr "အချက်အလက်များချိတ်ဆက်ထားမှု..."
+
+#: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_SAVING.String.Text
+#, fuzzy
+msgid  "Do you want to continue saving the document?"
+msgstr "မှတ်တမ်းမှတ်ရာအား ဆက်လက်သိမ်းဆည်းရန် ဆန္ဒရှိပါသလား။"
+
+#: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_PRINTING.String.Text
+#, fuzzy
+msgid  "Do you want to continue printing the document?"
+msgstr "မှတ်တမ်းမှတ်ရာအား ဆက်လက်ပရင့်ထုတ်ရန် ဆန္ဒရှိပါသလား။"
+
+#: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_SIGNING.String.Text
+#, fuzzy
+msgid  "Do you want to continue signing the document?"
+msgstr "မှတ်တမ်းမှတ်ရာအားမှန်ကန်ကြောင်းစစ်ဆေးချက်ဆက်လက်ပြုလုပ်လိုပါသလား။"
+
+#: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_CREATEPDF.String.Text
+#, fuzzy
+msgid  "Do you want to continue creating a PDF file?"
+msgstr "PDF ဖိုင်တစ်ခု ဆက်လက်ဖန်တီးရန် ဆန္ဒရှိပါသလား။"
+
+#: source/doc/doc.src#STR_NEW_FILENAME_SAVE.String.Text
+msgid  "If you do not want to overwrite the original document, you should save your work under a new filename."
+msgstr ""
+
+#: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.String.Text
+#, fuzzy
+msgid  "Some template files are protected and can not be deleted."
+msgstr "ယာယီဖိုင်အချို့အားကာကွယ်မှုပြုထားသည်။ ဖျက်ရန်မဖြစ်နိုင်ပါ။"
+
+#: source/doc/doc.src#STR_DOCINFO_INFOFIELD.String.Text
+#, fuzzy
+msgid  "Info %1"
+msgstr "သတင်းအချက်အလက် %၁"
+
+#: source/doc/doc.src#STR_SHARED.String.Text
+#, fuzzy
+msgid  " (shared)"
+msgstr "(ဝေမျှထားသည်)"
+
+#: source/doc/doc.src#STR_XMLSEC_ODF12_EXPECTED.String.Text
+msgid  "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-Options-Load/Save-General. Signing documents requires ODF 1.2 (OpenOffice.org 3.x)."
+msgstr ""
+
+#: source/doc/doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.QueryBox.Message
+msgid  "The document has to be saved before it can be signed. Saving the document removes all present signatures.\nDo you want to save the document?"
+msgstr ""
+
+#: source/doc/doc.src#STR_QRYTEMPL_MESSAGE.String.Text
+msgid  "The template '$(ARG1)' on which this document is based, has been modified. Do you want to update style based formattings according to the modified template?"
+msgstr ""
+
+#: source/doc/doc.src#STR_QRYTEMPL_UPDATE_BTN.String.Text
+#, fuzzy
+msgid  "~Update Styles"
+msgstr "~နောက်ဆုံးပေါ်ပုံစံများ"
+
+#: source/doc/doc.src#STR_QRYTEMPL_KEEP_BTN.String.Text
+#, fuzzy
+msgid  "~Keep Old Styles"
+msgstr "~ပုံစံအဟောင်းများထိန်းသိမ်းပါ"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.ModalDialog.Text
+#, fuzzy
+msgid  "Template Management"
+msgstr "ပုံစံပြားပရိုဂရမ်စီမံထိန်းသိမ်းခြင်း"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_OK.OKButton.Text
+#, fuzzy
+msgid  "Close"
+msgstr "ပိတ်ပါ"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_FILES.PushButton.Text
+#, fuzzy
+msgid  "~File..."
+msgstr "~ဖိုင်..."
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_ADDRESSTEMPLATE.PushButton.Text
+#, fuzzy
+msgid  "~Address Book..."
+msgstr "~လိပ်စာစာအုပ်..."
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
+#, fuzzy
+msgid  "Documents"
+msgstr "မှတ်တမ်းမှတ်ရာများ"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
+#, fuzzy
+msgid  "Documents"
+msgstr "မှတ်တမ်းမှတ်ရာများ"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.MenuButton.Text
+#, fuzzy
+msgid  "Commands"
+msgstr "ညွှန်ကြားချက်များ"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_NEW.MenuItem.Text
+#, fuzzy
+msgid  "~New"
+msgstr "~အသစ်"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DELETE.MenuItem.Text
+#, fuzzy
+msgid  "~Delete"
+msgstr "~ဖျက်ပါ"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.MenuItem.Text
+#, fuzzy
+msgid  "~Edit"
+msgstr "~တည်းဖြတ်ပါ"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_FROM.MenuItem.Text
+#, fuzzy
+msgid  "Import Template..."
+msgstr "ပုံစံပြား တင်သွင်းပါ..."
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_TO.MenuItem.Text
+#, fuzzy
+msgid  "Export Template..."
+msgstr "ပုံစံပြား တင်ပို့ပါ..."
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINT.MenuItem.Text
+#, fuzzy
+msgid  "~Print"
+msgstr "~ပရင့်ထုတ်ပါ"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINTER_SETUP.MenuItem.Text
+#, fuzzy
+msgid  "Printer Settings..."
+msgstr "ပရင်တာ ပြင်ဆင်ချိန်ညှိနှိုင်မှုများ..."
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESCAN.MenuItem.Text
+#, fuzzy
+msgid  "Update"
+msgstr "နောက်ဆုံးပေါ် အခြေအနေ"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DEFAULT_TEMPLATE.MenuItem.Text
+#, fuzzy
+msgid  "Set As Default Template"
+msgstr "နဂိုမူလပုံစံပြားအဖြစ်ဖန်တီးပါ"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESET_DEFAULT_TEMPLATE.MenuItem.Text
+#, fuzzy
+msgid  "Reset Default Template"
+msgstr "နဂိုမူလပုံစံပြားအဖြစ်ပြန်လည်ဖန်တီးပါ"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
+#, fuzzy
+msgid  "Templates"
+msgstr "ပုံစံပြားများ"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
+#, fuzzy
+msgid  "Templates"
+msgstr "ပုံစံပြားများ"
+
+#: source/doc/new.src#DLG_NEW_FILE.ModalDialog.Text
+#, fuzzy
+msgid  "New"
+msgstr "အသစ်"
+
+#: source/doc/new.src#DLG_NEW_FILE.FT_REGION.FixedText.Text
+#, fuzzy
+msgid  "~Categories"
+msgstr "~အမျိုးအစားများ"
+
+#: source/doc/new.src#DLG_NEW_FILE.FT_TEMPLATE.FixedText.Text
+#, fuzzy
+msgid  "T~emplates"
+msgstr "ပုံစံပြားများ"
+
+#: source/doc/new.src#DLG_NEW_FILE.BT_MORE.MoreButton.Text
+#, fuzzy
+msgid  "~More"
+msgstr "⁠~ပို၍"
+
+#: source/doc/new.src#DLG_NEW_FILE.BTN_PREVIEW.CheckBox.Text
+#, fuzzy
+msgid  "Pre~view"
+msgstr "အစမ်းကြည့်ပါ"
+
+#: source/doc/new.src#DLG_NEW_FILE.GB_DOCINFO.FixedLine.Text
+#, fuzzy
+msgid  "Description"
+msgstr "ဖော်ပြချက်"
+
+#: source/doc/new.src#DLG_NEW_FILE.CB_TEXT_STYLE.CheckBox.Text
+#, fuzzy
+msgid  "Te~xt"
+msgstr "စာသား"
+
+#: source/doc/new.src#DLG_NEW_FILE.CB_FRAME_STYLE.CheckBox.Text
+#, fuzzy
+msgid  "~Frame"
+msgstr "~ဘောင်"
+
+#: source/doc/new.src#DLG_NEW_FILE.CB_PAGE_STYLE.CheckBox.Text
+#, fuzzy
+msgid  "~Pages"
+msgstr "~စာမျက်နှာများ"
+
+#: source/doc/new.src#DLG_NEW_FILE.CB_NUM_STYLE.CheckBox.Text
+#, fuzzy
+msgid  "N~umbering"
+msgstr "နံပါတ်တပ်ခြင်း"
+
+#: source/doc/new.src#DLG_NEW_FILE.CB_MERGE_STYLE.CheckBox.Text
+#, fuzzy
+msgid  "~Overwrite"
+msgstr "⁠~အချက်အလက်သစ်များထပ်မံဖြည့်စွပ်ပါ"
+
+#: source/doc/new.src#DLG_NEW_FILE.PB_LOAD_FILE.PushButton.Text
+#, fuzzy
+msgid  "From File..."
+msgstr "ဖိုင်မှ..."
+
+#: source/doc/new.src#DLG_NEW_FILE.STR_LOAD_TEMPLATE.String.Text
+#, fuzzy
+msgid  "Load Styles"
+msgstr "ပုံစံများဆွဲတင်ပါ"
+
+#: source/doc/new.src#DLG_NEW_FILE.FT_TITLE.FixedText.Text
+#, fuzzy
+msgid  "~Title"
+msgstr "~ခေါင်းစဉ်"
+
+#: source/doc/new.src#DLG_NEW_FILE.FT_THEMA.FixedText.Text
+#, fuzzy
+msgid  "Subject"
+msgstr "အကြောင်းကိစ္စ"
+
+#: source/doc/new.src#DLG_NEW_FILE.FT_KEYWORDS.FixedText.Text
+#, fuzzy
+msgid  "~Key words"
+msgstr "~အဓိက စကားလုံးများ"
+
+#: source/doc/new.src#DLG_NEW_FILE.FT_DESC.FixedText.Text
+#, fuzzy
+msgid  "~Description"
+msgstr "~ဖော်ပြချက်"
+
+#: source/menu/menu.src#STR_MENU_CFGITEM.String.Text
+#, fuzzy
+msgid  "Configuration Menu"
+msgstr "အစိတ်အပိုင်းများ ဖွဲ့စည်းပုံမီနူး"
+
+#: source/menu/menu.src#STR_MENU_ADDONS.String.Text
+#, fuzzy
+msgid  "~Add-Ons"
+msgstr "~အကူအညီများထပ်ဖြည့်ပါ"
+
+#: source/menu/menu.src#MN_CLIPBOARDFUNCS.SID_CUT.MenuItem.Text
+#, fuzzy
+msgid  "Cu~t"
+msgstr "ဖြတ်ယူပါ"
+
+#: source/menu/menu.src#MN_CLIPBOARDFUNCS.SID_COPY.MenuItem.Text
+#, fuzzy
+msgid  "~Copy"
+msgstr "~ကူးယူပါ"
+
+#: source/menu/menu.src#MN_CLIPBOARDFUNCS.SID_PASTE.MenuItem.Text
+#, fuzzy
+msgid  "~Paste"
+msgstr "⁠~ကူးယူပြန်ထည့်ပါ"
+
+#: source/menu/menu.src#SID_WIN_FULLSCREEN.String.Text
+#, fuzzy
+msgid  "Leave Full-Screen Mode"
+msgstr "ဖန်သားမျက်နှာပြင်အပြည့်နည်းလမ်းထားခဲ့ပါ"
+
+#: source/menu/menu.src#STR_MENU_ADDONHELP.String.Text
+#, fuzzy
+msgid  "Add-~On Help"
+msgstr "အကူအညီများထပ်ဖြည့်ပါ"
+
+#: source/menu/menu.src#STR_MENU_SYNONYMS.String.Text
+msgid  "Synonyms"
+msgstr ""
+
+#: source/menu/menu.src#STR_MENU_NO_SYNONYM_FOUND.String.Text
+msgid  "(none)"
+msgstr ""
+
+#: source/menu/menu.src#STR_MENU_THESAURUS.String.Text
+msgid  "~Thesaurus..."
+msgstr ""
+
+#: source/view/view.src#STR_NODEFPRINTER.String.Text
+msgid  "No default printer found.\nPlease choose a printer and try again."
+msgstr ""
+
+#: source/view/view.src#STR_NOSTARTPRINTER.String.Text
+msgid  "Could not start printer.\nPlease check your printer configuration."
+msgstr ""
+
+#: source/view/view.src#STR_PRINTER_NOTAVAIL.String.Text
+msgid  "This document has been formatted for the printer $1. The specified printer is not available. \nDo you want to use the standard printer $2 ?"
+msgstr ""
+
+#: source/view/view.src#STR_PRINT_OPTIONS.String.Text
+#, fuzzy
+msgid  "Options..."
+msgstr "ရွေးပိုင်ခွင့်များ..."
+
+#: source/view/view.src#STR_PRINT_OPTIONS_TITLE.String.Text
+#, fuzzy
+msgid  "Printer Options"
+msgstr "ပရင်တာ ရွေးပိုင်ခွင့်များ"
+
+#: source/view/view.src#STR_ERROR_PRINTER_BUSY.String.Text
+#, fuzzy
+msgid  "Printer busy"
+msgstr "ပရင်တာအလုပ်များနေသည်"
+
+#: source/view/view.src#STR_ERROR_PRINT.String.Text
+#, fuzzy
+msgid  "Error while printing"
+msgstr "ပရင့်ထုတ်စဉ် အမှား"
+
+#: source/view/view.src#STR_PRINTING.String.Text
+#, fuzzy
+msgid  "Printing"
+msgstr "ပရင့်ထုတ်နေသည်"
+
+#: source/view/view.src#STR_PAGE.String.Text
+#, fuzzy
+msgid  "Page "
+msgstr "စာမျက်နှာ"
+
+#: source/view/view.src#STR_READONLY.String.Text
+#, fuzzy
+msgid  " (read-only)"
+msgstr " (ဖတ်ရန်သာ)"
+
+#: source/view/view.src#STR_PRINT_NEWORI.String.Text
+msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
+msgstr ""
+
+#: source/view/view.src#STR_PRINT_NEWSIZE.String.Text
+msgid  "The page size has been modified.\nShould the new settings be saved\nin the active document?"
+msgstr ""
+
+#: source/view/view.src#STR_PRINT_NEWORISIZE.String.Text
+msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
+msgstr ""
+
+#: source/view/view.src#STR_PREVIEW_DOCINFO.String.Text
+msgid  "<html><body BGCOLOR="#c0c0c0"><font FACE="Arial"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
+msgstr ""
+
+#: source/view/view.src#STR_PREVIEW_NODOCINFO.String.Text
+msgid  "<HTML><BODY BGCOLOR="#c0c0c0"><BR><BR><P><FONT FACE="Arial"><B>No document properties found.</B></FONT></P></BODY></HTML>"
+msgstr ""
+
+#: source/view/view.src#MSG_CANT_CLOSE.InfoBox.Message
+msgid  "The document cannot be closed because a\n print job is being carried out."
+msgstr ""
+
+#: source/view/view.src#DLG_PRINTMONITOR.FT_PRINTING.FixedText.Text
+#, fuzzy
+msgid  "is being printed on"
+msgstr "ပေါ်တွင် ပရင့်ထုတ်ရန် ဖြစ်သည်"
+
+#: source/view/view.src#DLG_PRINTMONITOR.STR_FT_PREPARATION.String.Text
+#, fuzzy
+msgid  "is being prepared for printing"
+msgstr "ပရင့်ထုတ်ရန်ပြင်ဆင်မှုများပြုခဲ့သည်"
+
+#: source/view/view.src#MSG_ERROR_SEND_MAIL.InfoBox.Message
+msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
+msgstr ""
+
+#: source/view/view.src#MSG_QUERY_OPENASTEMPLATE.QueryBox.Message
+msgid  "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
+msgstr ""
+
+#: source/view/view.src#STR_REPAIREDDOCUMENT.String.Text
+#, fuzzy
+msgid  " (repaired document)"
+msgstr " (ပြန်လည်ပြုပြင်ထားသည့် မှတ်တမ်းမှတ်ရာ)"
+
+#: source/view/view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.ErrorBox.Message
+msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
+msgstr ""
+
+#: source/view/view.src#DLG_PRINTMONITOR_TEXT.#define.Text
+#, fuzzy
+msgid  "Print Monitor"
+msgstr "ပရင့်ထုတ်မှု ကိုစောင့်ကြည့်ပါ"
+
+#: source/view/view.src#STR_ERROR_SAVE_TEMPLATE.String.Text
+#, fuzzy
+msgid  "Error saving template "
+msgstr "ပုံစံပြားသိမ်းဆည်းစဉ်အမှား"

@@ -1,2159 +1,1800 @@
-
-#: module_gnome.ulf#STR_NAME_MODULE_OPTIONAL_GNOME.LngText.text
-msgid "GNOME Integration"
-msgstr "Интеграция с GNOME"
-
-#: module_gnome.ulf#STR_DESC_MODULE_OPTIONAL_GNOME.LngText.text
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
 msgid ""
-"System integration of %PRODUCTNAME %PRODUCTVERSION into Gnome Desktop "
-"Environment."
-msgstr "Системная интеграция %PRODUCTNAME %PRODUCTVERSION с окружением Gnome."
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.9.0\n"
-"X-Accelerator-Marker: ~\n"
+"X-Generator: genLang\n"
 
-#: folderitem_impress.ulf#STR_FI_NAME_PRAESENTATION.LngText.text
-msgid "Presentation"
-msgstr "Презентация"
 
-#: folderitem_impress.ulf#STR_FI_TOOLTIP_IMPRESS.LngText.text
-msgid ""
-"Create and edit presentations for slideshows, meeting and Web pages by using "
-"Impress."
+#: source/activex/module_activex.ulf#STR_NAME_MODULE_OPTIONAL_ACTIVEXCONTROL
+msgid  "ActiveX Control"
 msgstr ""
-"Создание и редактирование презентаций для встреч, конференций и веб-сайтов с "
-"помощью Impress."
 
-#: module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS.LngText.text
-msgid "%PRODUCTNAME Impress"
-msgstr "%PRODUCTNAME Impress"
-
-#: module_impress.ulf#STR_DESC_MODULE_PRG_IMPRESS.LngText.text
-msgid ""
-"Create and edit presentations for slideshows, meeting and Web pages by using "
-"%PRODUCTNAME Impress."
+#: source/activex/module_activex.ulf#STR_DESC_MODULE_OPTIONAL_ACTIVEXCONTROL
+msgid  "Component to enable Microsoft Internet Explorer to display %PRODUCTNAME documents."
 msgstr ""
-"Impress %PRODUCTNAME позволяет создавать и редактировать презентации для "
-"встреч, конференций и веб-сайтов."
 
-#: module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS_BIN.LngText.text
-msgid "Program Module"
-msgstr "Программный модуль"
-
-#: module_impress.ulf#STR_DESC_MODULE_PRG_IMPRESS_BIN.LngText.text
-msgid "The application %PRODUCTNAME Impress"
-msgstr "Приложение %PRODUCTNAME Impress"
-
-#: module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS_HELP.LngText.text
-msgid "%PRODUCTNAME Impress Help"
-msgstr "Справка по %PRODUCTNAME Impress"
-
-#: module_impress.ulf#STR_DESC_MODULE_PRG_IMPRESS_HELP.LngText.text
-msgid "Help about %PRODUCTNAME Impress"
-msgstr "Справка по %PRODUCTNAME Impress."
-
-#: module_ogltrans.ulf#STR_NAME_MODULE_OPTIONAL_OGLTRANS.LngText.text
-msgid "OpenGL slide transitions for %PRODUCTNAME Impress"
-msgstr "Смена слайдов с использованием OpenGL для %PRODUCTNAME Impress"
-
-#: module_ogltrans.ulf#STR_DESC_MODULE_MODULE_OPTIONAL_OGLTRANS.LngText.text
-msgid "OpenGL slide transitions for %PRODUCTNAME Impress."
-msgstr "Смена слайдов с использованием OpenGL для %PRODUCTNAME Impress."
-
-#: registryitem_impress.ulf#STR_REG_VAL_NEW.LngText.text
-msgid "&New"
-msgstr "&Новый"
-
-#: registryitem_impress.ulf#STR_REG_VAL_SO60_SHOW.LngText.text
-msgid "Show"
-msgstr "Показать"
-
-#: registryitem_impress.ulf#STR_REG_VAL_SO60_PRESENT.LngText.text
-msgid "%SXWFORMATNAME %SXWFORMATVERSION Presentation"
-msgstr "презентация %SXWFORMATNAME %SXWFORMATVERSION"
-
-#: registryitem_impress.ulf#STR_REG_VAL_SO60_IMPRESS_TEMPLATE.LngText.text
-msgid "%SXWFORMATNAME %SXWFORMATVERSION Presentation Template"
-msgstr "шаблон презентации %SXWFORMATNAME %SXWFORMATVERSION"
-
-#: registryitem_impress.ulf#STR_REG_VAL_OO_PRESENT.LngText.text
-msgid "OpenDocument Presentation"
-msgstr "Презентация OpenDocument"
-
-#: registryitem_impress.ulf#STR_REG_VAL_OO_PRESENT_TEMPLATE.LngText.text
-msgid "OpenDocument Presentation Template"
-msgstr "Шаблон презентации OpenDocument"
-
-#: registryitem_impress.ulf#STR_REG_VAL_MS_POWERPOINT_PRESENTATION_OLD.LngText.text
-msgid "Microsoft PowerPoint 97-2003 Presentation"
-msgstr "Презентация Microsoft PowerPoint 97-2003"
-
-#: registryitem_impress.ulf#STR_REG_VAL_MS_POWERPOINT_SHOW.LngText.text
-msgid "Microsoft PowerPoint Show"
-msgstr "Демонстрация Microsoft PowerPoint"
-
-#: registryitem_impress.ulf#STR_REG_VAL_MS_POWERPOINT_PRESENTATION.LngText.text
-msgid "Microsoft PowerPoint Presentation"
-msgstr "Презентация Microsoft PowerPoint"
-
-#: registryitem_impress.ulf#STR_REG_VAL_MS_POWERPOINT_TEMPLATE_OLD.LngText.text
-msgid "Microsoft PowerPoint 97-2003 Template"
-msgstr "Шаблон Microsoft PowerPoint 97-2003"
-
-#: registryitem_impress.ulf#STR_REG_VAL_MS_POWERPOINT_TEMPLATE.LngText.text
-msgid "Microsoft PowerPoint Template"
-msgstr "Шаблон Microsoft PowerPoint"
-
-#: module_xsltfilter.ulf#STR_NAME_MODULE_OPTIONAL_XSLTFILTERSAMPLES.LngText.text
-msgctxt "module_xsltfilter.ulf#STR_NAME_MODULE_OPTIONAL_XSLTFILTERSAMPLES.LngText.text"
-msgid "XSLT Sample Filters"
-msgstr "Примеры фильтров XSLT"
-
-#: module_xsltfilter.ulf#STR_DESC_MODULE_OPTIONAL_XSLTFILTERSAMPLES.LngText.text
-msgctxt "module_xsltfilter.ulf#STR_DESC_MODULE_OPTIONAL_XSLTFILTERSAMPLES.LngText.text"
-msgid "XSLT Sample Filters"
-msgstr "Примеры фильтров XSLT"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.9.0\n"
-"X-Accelerator-Marker: ~\n"
-
-#: folderitem_calc.ulf#STR_FI_NAME_TABELLENDOKUMENT.LngText.text
-msgid "Spreadsheet"
-msgstr "Электронная таблица"
-
-#: folderitem_calc.ulf#STR_FI_TOOLTIP_CALC.LngText.text
-msgid ""
-"Perform calculation, analyze information and manage lists in spreadsheets by "
-"using Calc."
+#: source/base/folderitem_base.ulf#STR_FI_TOOLTIP_BASE
+msgid  "Manage databases, create queries and reports to track and manage your information by using Base."
 msgstr ""
-"Выполнение вычислений, анализ информации и управление листами в электронных "
-"таблицах с помощью Calc."
 
-#: module_calc.ulf#STR_NAME_MODULE_PRG_CALC.LngText.text
-msgid "%PRODUCTNAME Calc"
-msgstr "%PRODUCTNAME Calc"
-
-#: module_calc.ulf#STR_DESC_MODULE_PRG_CALC.LngText.text
-msgid ""
-"Perform calculation, analyze information and manage lists in spreadsheets by "
-"using %PRODUCTNAME Calc."
+#: source/base/registryitem_base.ulf#STR_REG_VAL_OO_DATABASE
+msgid  "OpenDocument Database"
 msgstr ""
-"Выполнение вычислений, анализ информации и управление листами в электронных "
-"таблицах с помощью %PRODUCTNAME Calc."
 
-#: module_calc.ulf#STR_NAME_MODULE_PRG_CALC_BIN.LngText.text
-msgid "Program Module"
-msgstr "Программный модуль"
-
-#: module_calc.ulf#STR_DESC_MODULE_PRG_CALC_BIN.LngText.text
-msgid "The application %PRODUCTNAME Calc"
-msgstr "Приложение %PRODUCTNAME Calc"
-
-#: module_calc.ulf#STR_NAME_MODULE_PRG_CALC_HELP.LngText.text
-msgid "%PRODUCTNAME Calc Help"
-msgstr "Справка по %PRODUCTNAME Calc"
-
-#: module_calc.ulf#STR_DESC_MODULE_PRG_CALC_HELP.LngText.text
-msgid "Help about %PRODUCTNAME Calc"
-msgstr "Справка по %PRODUCTNAME Calc"
-
-#: module_calc.ulf#STR_NAME_MODULE_OPTIONAL_ADDINS.LngText.text
-msgid "Add-in"
-msgstr "Подключаемый модуль"
-
-#: module_calc.ulf#STR_DESC_MODULE_OPTIONAL_ADDINS.LngText.text
-msgid ""
-"Add-ins are additional programs that make new functions available in %"
-"PRODUCTNAME Calc."
+#: source/base/module_base.ulf#STR_NAME_MODULE_PRG_BASE
+msgid  "%PRODUCTNAME Base"
 msgstr ""
-"Подключаемые модули предоставляют дополнительные возможности %PRODUCTNAME "
-"Calc."
 
-#: registryitem_calc.ulf#STR_REG_VAL_NEW.LngText.text
-msgid "&New"
-msgstr "&Новый"
-
-#: registryitem_calc.ulf#STR_REG_VAL_SO60_SPREADSHEET.LngText.text
-msgid "%SXWFORMATNAME %SXWFORMATVERSION Spreadsheet"
-msgstr "Электронная таблица %SXWFORMATNAME %SXWFORMATVERSION"
-
-#: registryitem_calc.ulf#STR_REG_VAL_SO60_CALC_TEMPLATE.LngText.text
-msgid "%SXWFORMATNAME %SXWFORMATVERSION Spreadsheet Template"
-msgstr "Шаблон электронной таблицы %SXWFORMATNAME %SXWFORMATVERSION"
-
-#: registryitem_calc.ulf#STR_REG_VAL_OO_CALC.LngText.text
-msgid "OpenDocument Spreadsheet"
-msgstr "Электронная таблица OpenDocument"
-
-#: registryitem_calc.ulf#STR_REG_VAL_OO_CALC_TEMPLATE.LngText.text
-msgid "OpenDocument Spreadsheet Template"
-msgstr "Шаблон электронной таблицы OpenDocument"
-
-#: registryitem_calc.ulf#STR_REG_VAL_MS_EXCEL_WORKSHEET_OLD.LngText.text
-msgid "Microsoft Excel 97-2003 Worksheet"
-msgstr "Лист Microsoft Excel 97-2003"
-
-#: registryitem_calc.ulf#STR_REG_VAL_MS_EXCEL_WORKSHEET.LngText.text
-msgid "Microsoft Excel Worksheet"
-msgstr "Лист Microsoft Excel"
-
-#: registryitem_calc.ulf#STR_REG_VAL_MS_EXCEL_TEMPLATE_OLD.LngText.text
-msgid "Microsoft Excel 97-2003 Template"
-msgstr "Шаблон Microsoft Excel 97-2003"
-
-#: registryitem_calc.ulf#STR_REG_VAL_MS_EXCEL_TEMPLATE.LngText.text
-msgid "Microsoft Excel Template"
-msgstr "Шаблон Microsoft Excel"
-"X-Accelerator-Marker: ~\n"
-
-#: folderitem_math.ulf#STR_FI_TOOLTIP_MATH.LngText.text
-msgid "Create and edit scientific formulas and equations by using Math."
-msgstr "Создание и редактирование научных формул и уравнений."
-
-#: module_math.ulf#STR_NAME_MODULE_PRG_MATH.LngText.text
-msgid "%PRODUCTNAME Math"
-msgstr "%PRODUCTNAME Math"
-
-#: module_math.ulf#STR_DESC_MODULE_PRG_MATH.LngText.text
-msgid ""
-"Create and edit scientific formulas and equations by using %PRODUCTNAME "
-"Math."
+#: source/base/module_base.ulf#STR_DESC_MODULE_PRG_BASE
+msgid  "Create and edit databases by using %PRODUCTNAME Base."
 msgstr ""
-"Создание и редактирование научных формул и уравнений при помощи %PRODUCTNAME "
-"Math."
 
-#: module_math.ulf#STR_NAME_MODULE_PRG_MATH_BIN.LngText.text
-msgid "Program Module"
-msgstr "Программный модуль"
-
-#: module_math.ulf#STR_DESC_MODULE_PRG_MATH_BIN.LngText.text
-msgid "The application %PRODUCTNAME Math"
-msgstr "Приложение %PRODUCTNAME Math"
-
-#: module_math.ulf#STR_NAME_MODULE_PRG_MATH_HELP.LngText.text
-msgid "%PRODUCTNAME Math Help"
-msgstr "Справка по %PRODUCTNAME Math"
-
-#: module_math.ulf#STR_DESC_MODULE_PRG_MATH_HELP.LngText.text
-msgid "Help about %PRODUCTNAME Math"
-msgstr "Справка по %PRODUCTNAME Math"
-
-#: registryitem_math.ulf#STR_REG_VAL_NEW.LngText.text
-msgid "&New"
-msgstr "&Новый"
-
-#: registryitem_math.ulf#STR_REG_VAL_SO60_FORMULA.LngText.text
-msgid "%SXWFORMATNAME %SXWFORMATVERSION Formula"
-msgstr "формула %SXWFORMATNAME %SXWFORMATVERSION"
-
-#: registryitem_math.ulf#STR_REG_VAL_OO_FORMULA.LngText.text
-msgid "OpenDocument Formula"
-msgstr "Формула OpenDocument"
-
-#: module_onlineupdate.ulf#STR_NAME_MODULE_OPT_ONLINEUPDATE.LngText.text
-msgid "Online Update"
-msgstr "Проверка обновлений"
-
-#: module_onlineupdate.ulf#STR_DESC_MODULE_OPT_ONLINEUPDATE.LngText.text
-msgid ""
-"Get automatically notified when a new update of %PRODUCTNAME becomes "
-"available."
-msgstr "Уведомлять, когда доступны обновления %PRODUCTNAME."
-
-#: module_kde.ulf#STR_NAME_MODULE_OPTIONAL_KDE.LngText.text
-msgid "KDE Integration"
-msgstr "Интеграция с KDE"
-
-#: module_kde.ulf#STR_DESC_MODULE_OPTIONAL_KDE.LngText.text
-msgid "System integration of %PRODUCTNAME %PRODUCTVERSION into KDE."
-msgstr "Системная интеграция %PRODUCTNAME %PRODUCTVERSION с KDE."
-
-#: module_testtool.ulf#STR_NAME_MODULE_OPTIONAL_TESTTOOL.LngText.text
-msgctxt "module_testtool.ulf#STR_NAME_MODULE_OPTIONAL_TESTTOOL.LngText.text"
-msgid "Testtool"
-msgstr "Средство тестирования"
-
-#: module_testtool.ulf#STR_DESC_MODULE_OPTIONAL_TESTTOOL.LngText.text
-msgctxt "module_testtool.ulf#STR_DESC_MODULE_OPTIONAL_TESTTOOL.LngText.text"
-msgid "Testtool"
-msgstr "Средство тестирования"
-
-#: module_quickstart.ulf#STR_NAME_MODULE_OPTIONAL_QUICKSTART.LngText.text
-msgid "Quickstarter"
-msgstr "Средство быстрого запуска"
-
-#: module_quickstart.ulf#STR_DESC_MODULE_OPTIONAL_QUICKSTART.LngText.text
-msgid ""
-"Loads basic components on system start to accelerate start up time of %"
-"PRODUCTNAME %PRODUCTVERSION."
+#: source/base/module_base.ulf#STR_NAME_MODULE_PRG_BASE_BIN
+msgid  "Program Module"
 msgstr ""
-"Загружает основные компоненты при старте системы для ускорения времени "
-"запуска %PRODUCTNAME %PRODUCTVERSION."
 
-#: module_winexplorerext.ulf#STR_NAME_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS.LngText.text
-msgid "Windows Explorer Extension"
-msgstr "Расширение Проводника Windows"
-
-#: module_winexplorerext.ulf#STR_DESC_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS.LngText.text
-msgid ""
-"Enables the Microsoft Windows Explorer to show information about %"
-"PRODUCTNAME documents, such as thumbnail previews."
+#: source/base/module_base.ulf#STR_DESC_MODULE_PRG_BASE_BIN
+msgid  "The application %PRODUCTNAME Base"
 msgstr ""
-"Позволяет Microsoft Windows Explorer показывать информацию о документах %"
-"PRODUCTNAME как в эскизах."
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
-"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Pootle 2.1.6\n"
-"X-Accelerator-Marker: ~\n"
 
-#: directory_ooo.ulf#STR_DIR_INFO.LngText.text
-msgid "Information"
-msgstr "Информация"
-
-#: directory_ooo.ulf#STR_DIR_INTERNET.LngText.text
-msgid "Internet"
-msgstr "Интернет"
-
-#: directory_ooo.ulf#STR_DIR_JAVA.LngText.text
-msgid "Java"
-msgstr "Java"
-
-#: directory_ooo.ulf#STR_DIR_FREIZEIT.LngText.text
-msgid "Fun&More"
-msgstr "Досуг"
-
-#: directory_ooo.ulf#STR_DIR_STARONE.LngText.text
-msgid "%PRODUCTNAME API"
-msgstr "%PRODUCTNAME API"
-
-#: directory_ooo.ulf#STR_DIR_TOURISMUS.LngText.text
-msgid "Travel"
-msgstr "Туризм"
-
-#: directory_ooo.ulf#STR_DIR_KAPITEL.LngText.text
-msgid "Chapters"
-msgstr "Главы"
-
-#: directory_ooo.ulf#STR_DIR_DATEIEN.LngText.text
-msgid "Files"
-msgstr "Файлы"
-
-#: folderitem_ooo.ulf#STR_FI_NAME_FROMTEMPLATE.LngText.text
-msgid "From Template"
-msgstr "Из шаблона..."
-
-#: folderitem_ooo.ulf#STR_FI_NAME_OPENDOCUMENT.LngText.text
-msgid "Open Document"
-msgstr "Открыть документ"
-
-#: folderitem_ooo.ulf#STR_FI_TOOLTIP_SOFFICE.LngText.text
-msgid ""
-"The office productivity suite compatible to the open and standardized ODF "
-"document format. Supported by The Apache Software Foundation."
+#: source/base/module_base.ulf#STR_NAME_MODULE_PRG_BASE_HELP
+msgid  "%PRODUCTNAME Base Help"
 msgstr ""
-"Офисный пакет является совместимым с открытым и стандартизированным форматом "
-"документов ODF. Поддерживается Apache Software Foundation."
 
-#: module_headless.ulf#STR_NAME_MODULE_OPTIONAL_HEADLESS.LngText.text
-msgid "Headless application support"
-msgstr "Поддержка запуска без интерфейса"
-
-#: module_headless.ulf#STR_DESC_MODULE_OPTIONAL_HEADLESS.LngText.text
-msgid "Component for enabling use %PRODUCTNAME without a display"
-msgstr "Компонент для запуска %PRODUCTNAME без интерфейса"
-
-#: module_java.ulf#STR_NAME_MODULE_OPTIONAL_JAVA.LngText.text
-msgid "Java Runtime Environment (%JAVAVERSION)"
-msgstr "Среда исполнения Java (%JAVAVERSION)"
-
-#: module_java.ulf#STR_DESC_MODULE_OPTIONAL_JAVA.LngText.text
-msgid "Component for setting up the Java Environment"
-msgstr "Компонент для настройки окружения Java"
-
-#: module_langpack.ulf#STR_NAME_MODULE_ROOT_LANGPACK.LngText.text
-msgctxt "module_langpack.ulf#STR_NAME_MODULE_ROOT_LANGPACK.LngText.text"
-msgid "Additional language packs"
-msgstr "Дополнительные языковые модули"
-
-#: module_langpack.ulf#STR_DESC_MODULE_ROOT_LANGPACK.LngText.text
-msgctxt "module_langpack.ulf#STR_DESC_MODULE_ROOT_LANGPACK.LngText.text"
-msgid "Additional language packs"
-msgstr "Дополнительные языковые модули"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EN_US.LngText.text
-msgid "English"
-msgstr "Английский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EN_US.LngText.text
-msgid "Installs English support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку английского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_DE.LngText.text
-msgid "German"
-msgstr "Немецкий"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_DE.LngText.text
-msgid "Installs German support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку немецкого в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_FR.LngText.text
-msgid "French"
-msgstr "Французский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_FR.LngText.text
-msgid "Installs French support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку французского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_IT.LngText.text
-msgid "Italian"
-msgstr "Итальянский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_IT.LngText.text
-msgid "Installs Italian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку итальянского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ES.LngText.text
-msgid "Spanish"
-msgstr "Испанский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ES.LngText.text
-msgid "Installs Spanish support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку испанского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SV.LngText.text
-msgid "Swedish"
-msgstr "Шведский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SV.LngText.text
-msgid "Installs Swedish support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку шведского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_PT.LngText.text
-msgid "Portuguese"
-msgstr "Португальский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_PT.LngText.text
-msgctxt "module_langpack.ulf#STR_DESC_MODULE_LANGPACK_PT.LngText.text"
-msgid "Installs Portuguese support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку португальского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_PT_BR.LngText.text
-msgid "Portuguese (Brazil)"
-msgstr "Португальский (Бразилия)"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_PT_BR.LngText.text
-msgctxt "module_langpack.ulf#STR_DESC_MODULE_LANGPACK_PT_BR.LngText.text"
-msgid "Installs Portuguese support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку португальского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_JA.LngText.text
-msgid "Japanese"
-msgstr "Японский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_JA.LngText.text
-msgid "Installs Japanese support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку японского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_KO.LngText.text
-msgid "Korean"
-msgstr "Корейский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_KO.LngText.text
-msgid "Installs Korean support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку корейского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ZH_CN.LngText.text
-msgid "Chinese (simplified)"
-msgstr "Китайский упрощённый"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ZH_CN.LngText.text
-msgid "Installs Chinese (simplified) support in %PRODUCTNAME %PRODUCTVERSION"
+#: source/base/module_base.ulf#STR_DESC_MODULE_PRG_BASE_HELP
+msgid  "Help about %PRODUCTNAME Base"
 msgstr ""
-"Установить поддержку китайского упрощённого в %PRODUCTNAME %PRODUCTVERSION"
 
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ZH_TW.LngText.text
-msgid "Chinese (traditional)"
-msgstr "Китайский (традиционный)"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ZH_TW.LngText.text
-msgid "Installs Chinese (traditional) support in %PRODUCTNAME %PRODUCTVERSION"
+#: source/binfilter/module_binfilter.ulf#STR_NAME_MODULE_OPTIONAL_BINFILTER
+msgid  "Legacy Filters"
 msgstr ""
-"Установить поддержку китайского традиционного в %PRODUCTNAME %PRODUCTVERSION"
 
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NL.LngText.text
-msgid "Dutch"
-msgstr "Голландский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NL.LngText.text
-msgid "Installs Dutch support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку голландского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HU.LngText.text
-msgid "Hungarian"
-msgstr "Венгерский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HU.LngText.text
-msgid "Installs Hungarian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку венгерского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_PL.LngText.text
-msgid "Polish"
-msgstr "Польский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_PL.LngText.text
-msgid "Installs Polish support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку польского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_RU.LngText.text
-msgid "Russian"
-msgstr "Русский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_RU.LngText.text
-msgid "Installs Russian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку русского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TR.LngText.text
-msgid "Turkish"
-msgstr "Турецкий"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TR.LngText.text
-msgid "Installs Turkish support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установка поддержки турецкого в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EL.LngText.text
-msgid "Greek"
-msgstr "Греческий"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EL.LngText.text
-msgid "Installs Greek support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку греческого в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TH.LngText.text
-msgid "Thai"
-msgstr "Тайский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TH.LngText.text
-msgid "Installs Thai support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку тайского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_CS.LngText.text
-msgid "Czech"
-msgstr "Чешский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_CS.LngText.text
-msgid "Installs Czech support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку чешского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SK.LngText.text
-msgid "Slovak"
-msgstr "Словацкий"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SK.LngText.text
-msgid "Installs Slovak support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку словацкого в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HR.LngText.text
-msgid "Croatian"
-msgstr "Хорватский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HR.LngText.text
-msgid "Installs Croatian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку хорватского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ET.LngText.text
-msgid "Estonian"
-msgstr "Эстонский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ET.LngText.text
-msgid "Installs Estonian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку эстонского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_VI.LngText.text
-msgid "Vietnamese"
-msgstr "Вьетнамский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_VI.LngText.text
-msgid "Installs Vietnamese support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку вьетнамского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BG.LngText.text
-msgid "Bulgarian"
-msgstr "Болгарский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BG.LngText.text
-msgid "Installs Bulgarian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку болгарского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_KM.LngText.text
-msgid "Khmer"
-msgstr "Кхмерский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_KM.LngText.text
-msgid "Installs Khmer support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку кхмерского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_PA_IN.LngText.text
-msgid "Punjabi"
-msgstr "Панджаби"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_PA_IN.LngText.text
-msgid "Installs Punjabi support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку панджаби в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GU_IN.LngText.text
-msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GU_IN.LngText.text"
-msgid "Gujarati"
-msgstr "Гуджарати"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_GU_IN.LngText.text
-msgctxt "module_langpack.ulf#STR_DESC_MODULE_LANGPACK_GU_IN.LngText.text"
-msgid "Installs Gujarati support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку гуджарати в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TA.LngText.text
-msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TA.LngText.text"
-msgid "Tamil"
-msgstr "Тамильский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TA.LngText.text
-msgctxt "module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TA.LngText.text"
-msgid "Installs Tamil support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку тамильского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TA_IN.LngText.text
-msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TA_IN.LngText.text"
-msgid "Tamil"
-msgstr "Тамильский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TA_IN.LngText.text
-msgctxt "module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TA_IN.LngText.text"
-msgid "Installs Tamil support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку тамильского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HI.LngText.text
-msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HI.LngText.text"
-msgid "Hindi"
-msgstr "Хинди"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HI.LngText.text
-msgctxt "module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HI.LngText.text"
-msgid "Installs Hindi support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку хинди в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HI_IN.LngText.text
-msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HI_IN.LngText.text"
-msgid "Hindi"
-msgstr "Хинди"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HI_IN.LngText.text
-msgctxt "module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HI_IN.LngText.text"
-msgid "Installs Hindi support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку хинди в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ST.LngText.text
-msgid "Southern Sotho (Sutu)"
-msgstr "Южный сото (суту)"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ST.LngText.text
-msgid "Installs Southern Sotho (Sutu) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установка поддержки южного сото (суту) в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TN.LngText.text
-msgid "Tswana"
-msgstr "Тсвана"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TN.LngText.text
-msgid "Installs Tswana support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку тсвана в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_XH.LngText.text
-msgid "Xhosa"
-msgstr "Коса"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_XH.LngText.text
-msgid "Installs Xhosa support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку коса в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ZU.LngText.text
-msgid "Zulu"
-msgstr "Зулусский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ZU.LngText.text
-msgid "Installs Zulu support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку зулусского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_AF.LngText.text
-msgid "Afrikaans"
-msgstr "Африкаанс"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_AF.LngText.text
-msgid "Installs Afrikaans support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку африкаанс в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SW.LngText.text
-msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SW.LngText.text"
-msgid "Swahili"
-msgstr "Суахили"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SW.LngText.text
-msgctxt "module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SW.LngText.text"
-msgid "Installs Swahili support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку суахили в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SW_TZ.LngText.text
-msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SW_TZ.LngText.text"
-msgid "Swahili"
-msgstr "Суахили"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SW_TZ.LngText.text
-msgctxt "module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SW_TZ.LngText.text"
-msgid "Installs Swahili support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку суахили в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_LO.LngText.text
-msgid "Lao"
-msgstr "Лаосский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_LO.LngText.text
-msgid "Installs Lao support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку лаосского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NS.LngText.text
-msgid "Northern Sotho"
-msgstr "Северный сото"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NS.LngText.text
-msgid "Installs Northern Sotho support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку северного сото в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BN.LngText.text
-msgid "Bengali"
-msgstr "Бенгальский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BN.LngText.text
-msgid "Installs Bengali support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установка поддержки бенгальского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BN_BD.LngText.text
-msgid "Bengali (Bangladesh)"
-msgstr "Бенгальский (Бангладеш)"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BN_BD.LngText.text
-msgid "Installs Bengali (Bangladesh) support in %PRODUCTNAME %PRODUCTVERSION"
+#: source/binfilter/module_binfilter.ulf#STR_DESC_MODULE_OPTIONAL_BINFILTER
+msgid  "Legacy filters, e.g. StarOffice 5.2 binary file formats."
 msgstr ""
-"Установить поддержку бенгальского (Бангладеш) в %PRODUCTNAME %PRODUCTVERSION"
 
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BN_IN.LngText.text
-msgid "Bengali (India)"
-msgstr "Бенгальский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BN_IN.LngText.text
-msgid "Installs Bengali (India) support in %PRODUCTNAME %PRODUCTVERSION"
+#: source/binfilter/registryitem_binfilter.ulf#STR_REG_VAL_NEW
+msgid  "&New"
 msgstr ""
-"Установить поддержку бенгальского (Индия) в %PRODUCTNAME %PRODUCTVERSION"
 
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_OR.LngText.text
-msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_OR.LngText.text"
-msgid "Oriya"
-msgstr "Ория"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_OR.LngText.text
-msgctxt "module_langpack.ulf#STR_DESC_MODULE_LANGPACK_OR.LngText.text"
-msgid "Installs Oriya support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку ория в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_OR_IN.LngText.text
-msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_OR_IN.LngText.text"
-msgid "Oriya"
-msgstr "Ория"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_OR_IN.LngText.text
-msgctxt "module_langpack.ulf#STR_DESC_MODULE_LANGPACK_OR_IN.LngText.text"
-msgid "Installs Oriya support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку ория в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_MR.LngText.text
-msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_MR.LngText.text"
-msgid "Marathi"
-msgstr "Маратхи"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MR.LngText.text
-msgctxt "module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MR.LngText.text"
-msgid "Installs Marathi support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установка поддержки маратхи в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_MR_IN.LngText.text
-msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_MR_IN.LngText.text"
-msgid "Marathi"
-msgstr "Маратхи"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MR_IN.LngText.text
-msgctxt "module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MR_IN.LngText.text"
-msgid "Installs Marathi support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установка поддержки маратхи в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NE.LngText.text
-msgid "Nepali"
-msgstr "Непальский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NE.LngText.text
-msgid "Installs Nepali support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установка поддержки непальского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_AR.LngText.text
-msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_AR.LngText.text"
-msgid "Arabic"
-msgstr "Арабский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_AR.LngText.text
-msgctxt "module_langpack.ulf#STR_DESC_MODULE_LANGPACK_AR.LngText.text"
-msgid "Installs Arabic support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установка поддержки арабского языка в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_AR_SA.LngText.text
-msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_AR_SA.LngText.text"
-msgid "Arabic"
-msgstr "Арабский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_AR_SA.LngText.text
-msgctxt "module_langpack.ulf#STR_DESC_MODULE_LANGPACK_AR_SA.LngText.text"
-msgid "Installs Arabic support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установка поддержки арабского языка в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_CA.LngText.text
-msgid "Catalan"
-msgstr "Каталанский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_CA.LngText.text
-msgid "Installs Catalan support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установка поддержки каталанского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_DA.LngText.text
-msgid "Danish"
-msgstr "Датский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_DA.LngText.text
-msgid "Installs Danish support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установка поддержки датского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_FI.LngText.text
-msgid "Finnish"
-msgstr "Финский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_FI.LngText.text
-msgid "Installs Finnish support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установка поддержки финского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HE.LngText.text
-msgid "Hebrew"
-msgstr "Иврит"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HE.LngText.text
-msgid "Installs Hebrew support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установка поддержки иврита в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_IS.LngText.text
-msgid "Icelandic"
-msgstr "Исландский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_IS.LngText.text
-msgid "Installs Icelandic support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установка поддержки исландского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NB.LngText.text
-msgid "Norwegian (Bokmål)"
-msgstr "Норвежский (букмол)"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NB.LngText.text
-msgid "Installs Norwegian (Bokmål) support in %PRODUCTNAME %PRODUCTVERSION"
+#: source/binfilter/registryitem_binfilter.ulf#STR_REG_VAL_SO52_TEXT_OOO
+msgid  "StarOffice 5.0 Text Document"
 msgstr ""
-"Установка поддержки норвежского (букмол) языка в %PRODUCTNAME %"
-"PRODUCTVERSION"
 
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NN.LngText.text
-msgid "Norwegian (Nynorsk)"
-msgstr "Норвежский (нюнорск)"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NN.LngText.text
-msgid "Installs Norwegian (Nynorsk) support in %PRODUCTNAME %PRODUCTVERSION"
+#: source/binfilter/registryitem_binfilter.ulf#STR_REG_VAL_SO51_MASTERDOC_OOO
+msgid  "StarOffice 5.0 Master Document"
 msgstr ""
-"Установка поддержки норвежского (нюнорск) языка в %PRODUCTNAME %"
-"PRODUCTVERSION"
 
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_RM.LngText.text
-msgid "Rhaeto-Romance"
-msgstr "Рето-романский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_RM.LngText.text
-msgid "Installs Rhaeto-Romance support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установка поддержки рето-романского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_RO.LngText.text
-msgid "Romanian"
-msgstr "Румынский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_RO.LngText.text
-msgid "Installs Romanian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установка поддержки румынского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SQ.LngText.text
-msgid "Albanian"
-msgstr "Албанский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SQ.LngText.text
-msgid "Installs Albanian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установка поддержки албанского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UR.LngText.text
-msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UR.LngText.text"
-msgid "Urdu"
-msgstr "Урду"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_UR.LngText.text
-msgctxt "module_langpack.ulf#STR_DESC_MODULE_LANGPACK_UR.LngText.text"
-msgid "Installs Urdu support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установка поддержки урду в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ID.LngText.text
-msgid "Indonesian"
-msgstr "Индонезийский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ID.LngText.text
-msgid "Installs Indonesian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установка поддержки индонезийского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UK.LngText.text
-msgid "Ukrainian"
-msgstr "Украинский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_UK.LngText.text
-msgid "Installs Ukrainian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку украинского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BE_BY.LngText.text
-msgid "Belarusian"
-msgstr "Белорусский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BE_BY.LngText.text
-msgid "Installs Belarusian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку белорусского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SL.LngText.text
-msgid "Slovenian"
-msgstr "Словенский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SL.LngText.text
-msgid "Installs Slovenian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку словенского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_LV.LngText.text
-msgid "Latvian"
-msgstr "Латышский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_LV.LngText.text
-msgid "Installs Latvian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку латышского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_LT.LngText.text
-msgid "Lithuanian"
-msgstr "Литовский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_LT.LngText.text
-msgid "Installs Lithuanian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку литовского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HY.LngText.text
-msgid "Armenian"
-msgstr "Армянский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HY.LngText.text
-msgid "Installs Armenian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку армянского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EU.LngText.text
-msgid "Basque"
-msgstr "Баскский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EU.LngText.text
-msgid "Installs Basque support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку баскского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_MK.LngText.text
-msgid "Macedonian"
-msgstr "Македонский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MK.LngText.text
-msgid "Installs Macedonian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку македонского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_MT.LngText.text
-msgid "Maltese"
-msgstr "Мальтийский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MT.LngText.text
-msgid "Installs Maltese support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку мальтийского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_CY.LngText.text
-msgid "Welsh"
-msgstr "Валлийский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_CY.LngText.text
-msgid "Installs Welsh support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку валлийского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GL.LngText.text
-msgid "Galician"
-msgstr "Галисийский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_GL.LngText.text
-msgid "Installs Galician support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку галисийского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SH_YU.LngText.text
-msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SH_YU.LngText.text"
-msgid "Serbian (Latin)"
-msgstr "Сербский (латиница)"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SH_YU.LngText.text
-msgctxt "module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SH_YU.LngText.text"
-msgid "Installs Serbian (Latin) support in %PRODUCTNAME %PRODUCTVERSION"
+#: source/binfilter/registryitem_binfilter.ulf#STR_REG_VAL_SO51_SPREADSHEET_OOO
+msgid  "StarOffice 5.0 Spreadsheet"
 msgstr ""
-"Установить поддержку сербского (латиница) в %PRODUCTNAME %PRODUCTVERSION"
 
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SH.LngText.text
-msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SH.LngText.text"
-msgid "Serbian (Latin)"
-msgstr "Сербский (латиница)"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SH.LngText.text
-msgctxt "module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SH.LngText.text"
-msgid "Installs Serbian (Latin) support in %PRODUCTNAME %PRODUCTVERSION"
+#: source/binfilter/registryitem_binfilter.ulf#STR_REG_VAL_SO51_PRESENT_OOO
+msgid  "StarOffice 5.0 Presentation"
 msgstr ""
-"Установить поддержку сербского (латиница) в %PRODUCTNAME %PRODUCTVERSION"
 
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GA.LngText.text
-msgid "Irish"
-msgstr "Ирландский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_GA.LngText.text
-msgid "Installs Irish support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку ирландского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SR_CS.LngText.text
-msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SR_CS.LngText.text"
-msgid "Serbian (Cyrillic)"
-msgstr "Сербский (кириллица)"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SR_CS.LngText.text
-msgctxt "module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SR_CS.LngText.text"
-msgid "Installs Serbian (Cyrillic) support in %PRODUCTNAME %PRODUCTVERSION"
+#: source/binfilter/registryitem_binfilter.ulf#STR_REG_VAL_SO51_DRAWING_OOO
+msgid  "StarOffice 5.0 Drawing"
 msgstr ""
-"Установить поддержку сербского (кириллица) в %PRODUCTNAME %PRODUCTVERSION"
 
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SR.LngText.text
-msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SR.LngText.text"
-msgid "Serbian (Cyrillic)"
-msgstr "Сербский (кириллица)"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SR.LngText.text
-msgctxt "module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SR.LngText.text"
-msgid "Installs Serbian (Cyrillic) support in %PRODUCTNAME %PRODUCTVERSION"
+#: source/binfilter/registryitem_binfilter.ulf#STR_REG_VAL_SO51_FORMULA_OOO
+msgid  "StarOffice 5.0 Formula"
 msgstr ""
-"Установить поддержку сербского (кириллица) в %PRODUCTNAME %PRODUCTVERSION"
 
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BS.LngText.text
-msgid "Bosnian"
-msgstr "Боснийский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BS.LngText.text
-msgid "Installs Bosnian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку боснийского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_AS_IN.LngText.text
-msgid "Assamese"
-msgstr "Ассамский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_AS_IN.LngText.text
-msgid "Installs Assamese support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку ассамского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_RW.LngText.text
-msgid "Kinyarwanda"
-msgstr "Киньяруанда"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_RW.LngText.text
-msgid "Installs Kinyarwanda support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку киньяруанда в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SA.LngText.text
-msgid "Sanskrit"
-msgstr "Санскрит"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SA.LngText.text
-msgid "Installs Sanskrit support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку санскрита в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_FA.LngText.text
-msgid "Farsi"
-msgstr "Фарси"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_FA.LngText.text
-msgid "Installs Farsi support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку фарси в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_FO.LngText.text
-msgid "Faroese"
-msgstr "Фарерский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_FO.LngText.text
-msgid "Installs Faroese support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку фарерского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SB.LngText.text
-msgid "Sorbian"
-msgstr "Лужицкий"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SB.LngText.text
-msgid "Installs Sorbian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку лужицкого в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TT.LngText.text
-msgid "Tatar"
-msgstr "Татарский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TT.LngText.text
-msgid "Installs Tatar support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку татарского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TS.LngText.text
-msgid "Tsonga"
-msgstr "Тсонго"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TS.LngText.text
-msgid "Installs Tsonga support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку тсонго в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_YI.LngText.text
-msgid "Yiddish"
-msgstr "Идиш"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_YI.LngText.text
-msgid "Installs Yiddish support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку идиша в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BR.LngText.text
-msgid "Breton"
-msgstr "Бретонский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BR.LngText.text
-msgid "Installs Breton support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку бретонского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NR.LngText.text
-msgid "Ndebele South"
-msgstr "Южный ндебеле"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NR.LngText.text
-msgid "Installs Ndebele South support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку южного ндебеле в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SS.LngText.text
-msgid "Swazi"
-msgstr "Свази"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SS.LngText.text
-msgid "Installs Swazi support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку свази в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_VE.LngText.text
-msgid "Venda"
-msgstr "Венда"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_VE.LngText.text
-msgid "Installs Venda support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку венда в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_KN.LngText.text
-msgid "Kannada"
-msgstr "Каннада"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_KN.LngText.text
-msgid "Installs Kannada support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку каннада в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_MS.LngText.text
-msgid "Malay (Malaysian)"
-msgstr "Малайский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MS.LngText.text
-msgid "Installs Malay (Malaysian) support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку малайского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TG.LngText.text
-msgid "Tajik"
-msgstr "Таджикский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TG.LngText.text
-msgid "Installs Tajik support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку таджикского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_KU.LngText.text
-msgid "Kurdish"
-msgstr "Курдский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_KU.LngText.text
-msgid "Installs Kurdish support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку курдского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_DZ.LngText.text
-msgid "Dzongkha"
-msgstr "Дзонг-кэ"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_DZ.LngText.text
-msgid "Installs Dzongkha support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку дзонг-кэ в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_KA.LngText.text
-msgid "Georgian"
-msgstr "Грузинский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_KA.LngText.text
-msgid "Installs Georgian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку грузинского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EO.LngText.text
-msgid "Esperanto"
-msgstr "Эсперанто"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EO.LngText.text
-msgid "Installs Esperanto support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку эсперанто в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GU.LngText.text
-msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GU.LngText.text"
-msgid "Gujarati"
-msgstr "Гуджарати"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_GU.LngText.text
-msgctxt "module_langpack.ulf#STR_DESC_MODULE_LANGPACK_GU.LngText.text"
-msgid "Installs Gujarati support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку гуджарати в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EN_ZA.LngText.text
-msgid "English (South Africa)"
-msgstr "Английский (Южная Африка)"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EN_ZA.LngText.text
-msgid "Installs English (South Africa) support in %PRODUCTNAME %PRODUCTVERSION"
+#: source/binfilter/registryitem_binfilter.ulf#STR_REG_VAL_SO52_CHART_OOO
+msgid  "StarOffice 5.0 Chart"
 msgstr ""
-"Установить поддержку английского (Южная Африка) в %PRODUCTNAME %"
-"PRODUCTVERSION"
 
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EN_GB.LngText.text
-msgid "English (United Kingdom)"
-msgstr "Английский (Великобритания)"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EN_GB.LngText.text
-msgid ""
-"Installs English (United Kingdom) support in %PRODUCTNAME %PRODUCTVERSION"
+#: source/binfilter/registryitem_binfilter.ulf#STR_REG_VAL_SO50_TEMPLATE_OOO
+msgid  "StarOffice 5.0 Template"
 msgstr ""
-"Установить поддержку английского (Великобритания) в %PRODUCTNAME %"
-"PRODUCTVERSION"
 
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UR_IN.LngText.text
-msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UR_IN.LngText.text"
-msgid "Urdu"
-msgstr "Урду"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_UR_IN.LngText.text
-msgctxt "module_langpack.ulf#STR_DESC_MODULE_LANGPACK_UR_IN.LngText.text"
-msgid "Installs Urdu support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установка поддержки урду в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ML_IN.LngText.text
-msgid "Malayalam"
-msgstr "Малаялам"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ML_IN.LngText.text
-msgid "Installs Malayalam support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установка поддержки Малаялам в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TE_IN.LngText.text
-msgid "Telugu"
-msgstr "Телугу"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TE_IN.LngText.text
-msgid "Installs Telugu support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку Телугу в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TI_ER.LngText.text
-msgid "Tigrinya"
-msgstr "Тигринья"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TI_ER.LngText.text
-msgid "Installs Tigrinya support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку Тигринья в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UZ.LngText.text
-msgid "Uzbek"
-msgstr "Узбекский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_UZ.LngText.text
-msgid "Installs Uzbek support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку узбекского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_MN.LngText.text
-msgid "Mongolian"
-msgstr "Монгольский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MN.LngText.text
-msgid "Installs Mongolian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку монгольского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_OC.LngText.text
-msgid "Occitan"
-msgstr "Провансальский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_OC.LngText.text
-msgid "Installs Occitan support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку провансальского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UG.LngText.text
-msgid "Uighur"
-msgstr "Уйгурский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_UG.LngText.text
-msgid "Installs Uighur support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку уйгурского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SI.LngText.text
-msgid "Sinhala"
-msgstr "Сингальский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SI.LngText.text
-msgid "Installs Sinhala support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку сингальского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_OM.LngText.text
-msgid "Oromo"
-msgstr "Оромо"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_OM.LngText.text
-msgid "Installs Oromo support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку оромо в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_langpack.ulf#STR_NAME_MODULE_LANGPACK_AST.LngText.text
-msgid "Asturian"
-msgstr "Астурийский"
-
-#: module_langpack.ulf#STR_DESC_MODULE_LANGPACK_AST.LngText.text
-msgid "Installs Asturian support in %PRODUCTNAME %PRODUCTVERSION"
-msgstr "Установить поддержку астурийского в %PRODUCTNAME %PRODUCTVERSION"
-
-#: module_ooo.ulf#STR_NAME_MODULE_ROOT_OSL.LngText.text
-msgctxt "module_ooo.ulf#STR_NAME_MODULE_ROOT_OSL.LngText.text"
-msgid "%PRODUCTNAME %PRODUCTVERSION"
-msgstr "%PRODUCTNAME %PRODUCTVERSION"
-
-#: module_ooo.ulf#STR_DESC_MODULE_ROOT_OSL.LngText.text
-msgctxt "module_ooo.ulf#STR_DESC_MODULE_ROOT_OSL.LngText.text"
-msgid "%PRODUCTNAME %PRODUCTVERSION"
-msgstr "%PRODUCTNAME %PRODUCTVERSION"
-
-#: module_ooo.ulf#STR_NAME_MODULE_PRG.LngText.text
-msgid "%PRODUCTNAME Program Modules"
-msgstr "Основные модули %PRODUCTNAME"
-
-#: module_ooo.ulf#STR_DESC_MODULE_PRG.LngText.text
-msgid "List of all installable %PRODUCTNAME modules."
-msgstr "Список всех модулей %PRODUCTNAME."
-
-#: module_ooo.ulf#STR_NAME_MODULE_OPTIONAL.LngText.text
-msgid "Optional Components"
-msgstr "Дополнительные компоненты"
-
-#: module_ooo.ulf#STR_DESC_MODULE_OPTIONAL.LngText.text
-msgid ""
-"Common components and additional programs shared by all %PRODUCTNAME "
-"programs."
+#: source/calc/folderitem_calc.ulf#STR_FI_NAME_TABELLENDOKUMENT
+msgid  "Spreadsheet"
 msgstr ""
-"Общие компоненты и дополнительные программы, используемые всеми приложениями "
-"%PRODUCTNAME."
 
-#: module_ooo.ulf#STR_NAME_MODULE_DICTIONARIES.LngText.text
-msgid "Dictionaries"
-msgstr "Словари"
-
-#: module_ooo.ulf#STR_DESC_MODULE_DICTIONARIES.LngText.text
-msgid "Spelling and hyphenation dictionaries and thesauri."
-msgstr "Орфографические словари, словари переносов и тезаурусы."
-
-#: module_systemint.ulf#STR_NAME_MODULE_OPTIONAL_SYSTEMINTEGRATION.LngText.text
-msgid "Desktop integration"
-msgstr "Интеграция с рабочим столом"
-
-#: module_systemint.ulf#STR_DESC_MODULE_OPTIONAL_SYSTEMINTEGRATION.LngText.text
-msgid "Desktop integration of %PRODUCTNAME %PRODUCTVERSION."
-msgstr "Интеграция с рабочим столом %PRODUCTNAME %PRODUCTVERSION."
-
-#: registryitem_ooo.ulf#STR_REG_VAL_NEW.LngText.text
-msgid "&New"
-msgstr "&Новый"
-
-#: registryitem_ooo.ulf#STR_REG_VAL_INSTALL.LngText.text
-msgid "&Install"
-msgstr "&Установить"
-
-#: registryitem_ooo.ulf#STR_REG_VAL_SO60_CONFIGFILE.LngText.text
-msgid "%SXWFORMATNAME %SXWFORMATVERSION Configuration File"
-msgstr "файл настройки %SXWFORMATNAME %SXWFORMATVERSION"
-
-#: registryitem_ooo.ulf#STR_REG_VAL_SO50_TEMPLATE_OOO.LngText.text
-msgid "StarOffice 5.0 Template"
-msgstr "Шаблон StarOffice 5.0"
-
-#: registryitem_ooo.ulf#STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO.LngText.text
-msgid "OpenOffice.org"
-msgstr "OpenOffice.org"
-
-#~ msgid "Afrikaans spell checker"
-#~ msgstr "Словарь Африкаанс"
-
-#~ msgid "Spelling and hyphenation dictionaries and thesaurus for Catalan language (general)"
-#~ msgstr "Орфографический словарь, словарь переносов и тезаурус для Каталанского языка (общие)"
-
-#~ msgid "Czech thesaurus"
-#~ msgstr "Чешский тезаурус"
-
-#~ msgid "Spelling and hyphenation dictionary for Danish"
-#~ msgstr "Орфографический словарь и словарь переносов для датского языка"
-
-#~ msgid "German (Austria)"
-#~ msgstr "Немецкий (Австрия)"
-
-#~ msgid "German (AT-frami) spelling, hyphenation, thesaurus"
-#~ msgstr "Немецкий (Австрия): орфографический словарь, словарь переносов, тезаурус (версия Franz Michael Baumann «frami»)"
-
-#~ msgid "German (Switzerland)"
-#~ msgstr "Немецкий (Швейцария)"
-
-#~ msgid "German (CH-frami) spelling, hyphenation, thesaurus"
-#~ msgstr "Немецкий (Швейцария): орфографический словарь, словарь переносов, тезаурус (версия Franz Michael Baumann «frami»)"
-
-#~ msgid "German (Germany)"
-#~ msgstr "Немецкий (Германия)"
-
-#~ msgid "German (DE-frami) spelling, hyphenation, thesaurus"
-#~ msgstr "Немецкий (Германия): орфографический словарь, словарь переносов, тезаурус (версия Franz Michael Baumann «frami»)"
-
-#~ msgid "English spelling and hyphenation dictionaries and thesaurus"
-#~ msgstr "Английский орфографический словарь, словарь переносов и тезаурус"
-
-#~ msgid "Spanish spelling dictionary"
-#~ msgstr "Испанский орфографический словарь"
-
-#~ msgid "Estonian spelling and hyphenation dictionaries"
-#~ msgstr "Эстонский орфографический словарь и словарь переносов"
-
-#~ msgid "French 'Classic and Reform 1990' spelling, thesaurus and hyphenation"
-#~ msgstr "Французский орфографический словарь (с вариантами реформы 1990 г.), тезаурус и словарь переносов"
-
-#~ msgid "Galician spellchecker dictionary for OpenOffice.org"
-#~ msgstr "Галисийский орфографический словарь для OpenOffice.org"
-
-#~ msgid "Hebrew spell check dictionary"
-#~ msgstr "Ивритский орфографический словарь"
-
-#~ msgid "Hungarian spelling dictionary, hyphenation patterns, and thesaurus"
-#~ msgstr "Венгерский орфографический словарь, правила переносов и тезаурус"
-
-#~ msgid "Italian spelling and hyphenation dictionaries and thesaurus"
-#~ msgstr "Итальянский орфографический словарь, словарь переносов и тезаурус"
-
-#~ msgid "Kurdish (Turkey)"
-#~ msgstr "Курдский (Турция)"
-
-#~ msgid "Kurdish (Turkey) spell check dictionary"
-#~ msgstr "Курдский (Турция) орфографический словарь"
-
-#~ msgid "Lithuanian spelling and hyphenation dictionaries"
-#~ msgstr "Литовский орфографический словарь и словарь переносов"
-
-#~ msgid "Nepali spelling dictionary and thesaurus"
-#~ msgstr "Непальский орфографический словарь и словарь переносов"
-
-#~ msgid "Dutch spelling and hyphenation dictionaries"
-#~ msgstr "Голландский орфографический словарь и словарь переносов"
-
-#~ msgid "Norwegian"
-#~ msgstr "Норвежский"
-
-#~ msgid "Norwegian dictionaries (Nynorsk and Bokmal)"
-#~ msgstr "Норвежские словари (Нюнорск и Букмол)"
-
-#~ msgid "Polish spell check dictionary, hyphenation rules and thesaurus"
-#~ msgstr "Польский орфографический словарь, правила переносов и тезаурус"
-
-#~ msgid "Brazilian Portuguese"
-#~ msgstr "Португальский (Бразилия)"
-
-#~ msgid "Brazilian Portuguese Spelling Dictionary - 1990 Spelling Agreement"
-#~ msgstr "Бразильский Португальский орфографический словарь - Орфографическая Реформа 1990"
-
-#~ msgid "Romanian Dictionaries"
-#~ msgstr "Румынские словари"
-
-#~ msgid "Russian hyphenation dictionary and thesaurus"
-#~ msgstr "Русский словарь переносов и тезаурус"
-
-#~ msgid "Slovak spell check dictionary, hyphenation rules and thesaurus"
-#~ msgstr "Словацкий орфографический словарь, правила переносов и тезаурус"
-
-#~ msgid "Slovenian dictionary pack"
-#~ msgstr "Пакет Словенских словарей"
-
-#~ msgid "Serbian"
-#~ msgstr "Сербский"
-
-#~ msgid "Serbian spelling and hyphenation dictionaries"
-#~ msgstr "Сербский орфографический словарь и словарь переносов"
-
-#~ msgid "Swedish Dictionary"
-#~ msgstr "Шведский словарь"
-
-#~ msgid "Swahili spelling dictionary"
-#~ msgstr "Суахили орфографический словарь"
-
-#~ msgid "Thai spelling dictionary"
-#~ msgstr "Тайский орфографический словарь"
-
-#~ msgid "Vietnamese spellchecker dictionary"
-#~ msgstr "Вьетнамский орфографический словарь"
-
-#~ msgid "Zulu hyphenation dictionary"
-#~ msgstr "Зулусский словарь переносов"
-
-#~ msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EN_US.LngText.text"
-#~ msgid "English"
-#~ msgstr "Английский"
-
-#~ msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_FR.LngText.text"
-#~ msgid "French"
-#~ msgstr "Французский"
-
-#~ msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_IT.LngText.text"
-#~ msgid "Italian"
-#~ msgstr "Итальянский"
-
-#~ msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ES.LngText.text"
-#~ msgid "Spanish"
-#~ msgstr "Испанский"
-
-#~ msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SV.LngText.text"
-#~ msgid "Swedish"
-#~ msgstr "Шведский"
-
-#~ msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NL.LngText.text"
-#~ msgid "Dutch"
-#~ msgstr "Голландский"
-
-#~ msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HU.LngText.text"
-#~ msgid "Hungarian"
-#~ msgstr "Венгерский"
-
-#~ msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_PL.LngText.text"
-#~ msgid "Polish"
-#~ msgstr "Польский"
-
-#~ msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_RU.LngText.text"
-#~ msgid "Russian"
-#~ msgstr "Русский"
-
-#~ msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TH.LngText.text"
-#~ msgid "Thai"
-#~ msgstr "Тайский"
-
-#~ msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_CS.LngText.text"
-#~ msgid "Czech"
-#~ msgstr "Чешский"
-
-#~ msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SK.LngText.text"
-#~ msgid "Slovak"
-#~ msgstr "Словацкий"
-
-#~ msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ET.LngText.text"
-#~ msgid "Estonian"
-#~ msgstr "Эстонский"
-
-#~ msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_VI.LngText.text"
-#~ msgid "Vietnamese"
-#~ msgstr "Вьетнамский"
-
-#~ msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ZU.LngText.text"
-#~ msgid "Zulu"
-#~ msgstr "Зулусский"
-
-#~ msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_AF.LngText.text"
-#~ msgid "Afrikaans"
-#~ msgstr "Африкаанс"
-
-#~ msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NE.LngText.text"
-#~ msgid "Nepali"
-#~ msgstr "Непальский"
-
-#~ msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_CA.LngText.text"
-#~ msgid "Catalan"
-#~ msgstr "Каталанский"
-
-#~ msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_DA.LngText.text"
-#~ msgid "Danish"
-#~ msgstr "Датский"
-
-#~ msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HE.LngText.text"
-#~ msgid "Hebrew"
-#~ msgstr "Иврит"
-
-#~ msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_RO.LngText.text"
-#~ msgid "Romanian"
-#~ msgstr "Румынский"
-
-#~ msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SL.LngText.text"
-#~ msgid "Slovenian"
-#~ msgstr "Словенский"
-
-#~ msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_LT.LngText.text"
-#~ msgid "Lithuanian"
-#~ msgstr "Литовский"
-
-#~ msgctxt "module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GL.LngText.text"
-#~ msgid "Galician"
-#~ msgstr "Галисийский"
-
-#: module_activex.ulf#STR_NAME_MODULE_OPTIONAL_ACTIVEXCONTROL.LngText.text
-msgid "ActiveX Control"
-msgstr "Элемент управления ActiveX"
-
-#: module_activex.ulf#STR_DESC_MODULE_OPTIONAL_ACTIVEXCONTROL.LngText.text
-msgid ""
-"Component to enable Microsoft Internet Explorer to display %PRODUCTNAME "
-"documents."
+#: source/calc/folderitem_calc.ulf#STR_FI_TOOLTIP_CALC
+msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using Calc."
 msgstr ""
-"Компонент для просмотра информации о документе %PRODUCTNAME с помощью "
-"Microsoft Internet Explorer."
-"X-Accelerator-Marker: ~\n"
 
-#: folderitem_draw.ulf#STR_FI_NAME_ZEICHNUNG.LngText.text
-msgid "Drawing"
-msgstr "Рисунок"
-
-#: folderitem_draw.ulf#STR_FI_TOOLTIP_DRAW.LngText.text
-msgid "Create and edit drawings, flow charts, and logos by using Draw."
-msgstr "Создать и редактировать рисунки, диаграммы и логотипы с помощью Draw."
-
-#: module_draw.ulf#STR_NAME_MODULE_PRG_DRAW.LngText.text
-msgid "%PRODUCTNAME Draw"
-msgstr "%PRODUCTNAME Draw"
-
-#: module_draw.ulf#STR_DESC_MODULE_PRG_DRAW.LngText.text
-msgid ""
-"Create and edit drawings, flow charts, and logos by using %PRODUCTNAME Draw."
+#: source/calc/registryitem_calc.ulf#STR_REG_VAL_SO60_SPREADSHEET
+msgid  "%SXWFORMATNAME %SXWFORMATVERSION Spreadsheet"
 msgstr ""
-"Создание и редактирование рисунков, диаграмм и логотипов с помощью %"
-"PRODUCTNAME Draw."
 
-#: module_draw.ulf#STR_NAME_MODULE_PRG_DRAW_BIN.LngText.text
-msgid "Program Module"
-msgstr "Программный модуль"
-
-#: module_draw.ulf#STR_DESC_MODULE_PRG_DRAW_BIN.LngText.text
-msgid "The application %PRODUCTNAME Draw"
-msgstr "Приложение %PRODUCTNAME Draw"
-
-#: module_draw.ulf#STR_NAME_MODULE_PRG_DRAW_HELP.LngText.text
-msgid "%PRODUCTNAME Draw Help"
-msgstr "Справка по %PRODUCTNAME Draw"
-
-#: module_draw.ulf#STR_DESC_MODULE_PRG_DRAW_HELP.LngText.text
-msgid "Help about %PRODUCTNAME Draw"
-msgstr "Справка по %PRODUCTNAME Draw"
-
-#: registryitem_draw.ulf#STR_REG_VAL_NEW.LngText.text
-msgid "&New"
-msgstr "&Новый"
-
-#: registryitem_draw.ulf#STR_REG_VAL_SO60_DRAWING.LngText.text
-msgid "%SXWFORMATNAME %SXWFORMATVERSION Drawing"
-msgstr "рисунок %SXWFORMATNAME %SXWFORMATVERSION"
-
-#: registryitem_draw.ulf#STR_REG_VAL_SO60_DRAW_TEMPLATE.LngText.text
-msgid "%SXWFORMATNAME %SXWFORMATVERSION Drawing Template"
-msgstr "шаблон рисунка %SXWFORMATNAME %SXWFORMATVERSION"
-
-#: registryitem_draw.ulf#STR_REG_VAL_OO_DRAW.LngText.text
-msgid "OpenDocument Drawing"
-msgstr "Рисунок OpenDocument"
-
-#: registryitem_draw.ulf#STR_REG_VAL_OO_DRAW_TEMPLATE.LngText.text
-msgid "OpenDocument Drawing Template"
-msgstr "Шаблон рисунка OpenDocument"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.9.0\n"
-"X-Accelerator-Marker: ~\n"
-
-#: module_binfilter.ulf#STR_NAME_MODULE_OPTIONAL_BINFILTER.LngText.text
-msgid "Legacy Filters"
-msgstr "Унаследованные фильтры"
-
-#: module_binfilter.ulf#STR_DESC_MODULE_OPTIONAL_BINFILTER.LngText.text
-msgid "Legacy filters, e.g. StarOffice 5.2 binary file formats."
-msgstr "Унаследованные фильтры, т.к. бинарный формат StarOffice 5.2."
-
-#: registryitem_binfilter.ulf#STR_REG_VAL_NEW.LngText.text
-msgid "&New"
-msgstr "&Новый"
-
-#: registryitem_binfilter.ulf#STR_REG_VAL_SO52_TEXT_OOO.LngText.text
-msgid "StarOffice 5.0 Text Document"
-msgstr "Текстовый документ StarOffice 5.0"
-
-#: registryitem_binfilter.ulf#STR_REG_VAL_SO51_MASTERDOC_OOO.LngText.text
-msgid "StarOffice 5.0 Master Document"
-msgstr "Составной документ StarOffice 5.0"
-
-#: registryitem_binfilter.ulf#STR_REG_VAL_SO51_SPREADSHEET_OOO.LngText.text
-msgid "StarOffice 5.0 Spreadsheet"
-msgstr "Электронная таблица StarOffice 5.0"
-
-#: registryitem_binfilter.ulf#STR_REG_VAL_SO51_PRESENT_OOO.LngText.text
-msgid "StarOffice 5.0 Presentation"
-msgstr "Презентация StarOffice 5.0"
-
-#: registryitem_binfilter.ulf#STR_REG_VAL_SO51_DRAWING_OOO.LngText.text
-msgid "StarOffice 5.0 Drawing"
-msgstr "Рисунок StarOffice 5.0"
-
-#: registryitem_binfilter.ulf#STR_REG_VAL_SO51_FORMULA_OOO.LngText.text
-msgid "StarOffice 5.0 Formula"
-msgstr "Формула StarOffice 5.0"
-
-#: registryitem_binfilter.ulf#STR_REG_VAL_SO52_CHART_OOO.LngText.text
-msgid "StarOffice 5.0 Chart"
-msgstr "Диаграмма StarOffice 5.0"
-
-#: registryitem_binfilter.ulf#STR_REG_VAL_SO50_TEMPLATE_OOO.LngText.text
-msgid "StarOffice 5.0 Template"
-msgstr "Шаблон StarOffice 5.0"
-"X-Generator: Translate Toolkit 1.9.0\n"
-"X-Accelerator-Marker: ~\n"
-
-#: module_sdkoo.ulf#STR_NAME_MODULE_OPTIONAL_SDKOO.LngText.text
-msgid "Software Development Kit (SDK)"
-msgstr "Software Development Kit (SDK)"
-
-#: module_sdkoo.ulf#STR_DESC_MODULE_OPTIONAL_SDKOO.LngText.text
-msgid ""
-"The SDK provides all necessary tools, examples and documentation to program "
-"with and for the office."
+#: source/calc/registryitem_calc.ulf#STR_REG_VAL_SO60_CALC_TEMPLATE
+msgid  "%SXWFORMATNAME %SXWFORMATVERSION Spreadsheet Template"
 msgstr ""
-"SDK предоставляет все необходимые инструменты, примеры и документацию к "
-"программе c офисом и для офиса."
 
-#: module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER.LngText.text
-msgid "Mobile Device Filters"
-msgstr "Фильтры для мобильных устройств"
-
-#: module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER.LngText.text
-msgid ""
-"Text and spreadsheet filters to support import/export for Palm handheld or "
-"Pocket PC (Java required)."
+#: source/calc/registryitem_calc.ulf#STR_REG_VAL_OO_CALC
+msgid  "OpenDocument Spreadsheet"
 msgstr ""
-"Фильтры для текста и электронных таблиц для поддержки импорта/экспорта в "
-"Palm или Pocket PC (требуется Java)."
 
-#: module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_PALM.LngText.text
-msgid "Palm"
-msgstr "Palm"
-
-#: module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_PALM.LngText.text
-msgid "Filters for Palm OS compatible handhelds"
-msgstr "Фильтры для устройств, совместимых с Palm OS."
-
-#: module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_PALM_APORTISDOC.LngText.text
-msgid "AportisDoc"
-msgstr "AportisDoc"
-
-#: module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_PALM_APORTISDOC.LngText.text
-msgid "Support for the AportisDoc format"
-msgstr "Поддержка формата AportisDoc"
-
-#: module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_POCKETPC.LngText.text
-msgid "Pocket PC"
-msgstr "Pocket PC"
-
-#: module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_WNT.LngText.text
-msgid "Filters and ActiveSync support for Pocket PC compatible handhelds"
-msgstr "Фильтры и поддержка ActiveSync для устройств, совместимых с Pocket PC."
-
-#: module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_UNIX.LngText.text
-msgid "Filters for Pocket PC compatible handhelds."
-msgstr "Фильтры для устройств, совместимых с Pocket PC"
-
-#: module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_POCKET_WORD.LngText.text
-msgctxt "module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_POCKET_WORD.LngText.text"
-msgid "Pocket Word"
-msgstr "PocketWord File"
-
-#: module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_POCKET_WORD.LngText.text
-msgid "Support for Pocket Word"
-msgstr "Поддержка формата Pocket Word"
-
-#: module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_POCKET_EXCEL.LngText.text
-msgctxt "module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_POCKET_EXCEL.LngText.text"
-msgid "Pocket Excel"
-msgstr "Pocket Excel"
-
-#: module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_POCKET_EXCEL.LngText.text
-msgid "Support for Pocket Excel"
-msgstr "Поддержка формата Pocket Excel"
-
-#: registryitem_javafilter.ulf#STR_VALUE__43887C67_4D5D_4127_BAAC_87A288494C7C_.LngText.text
-msgctxt "registryitem_javafilter.ulf#STR_VALUE__43887C67_4D5D_4127_BAAC_87A288494C7C_.LngText.text"
-msgid "Pocket Excel"
-msgstr "Pocket Excel"
-
-#: registryitem_javafilter.ulf#STR_VALUE__43887C67_4D5D_4127_BAAC_87A288494C7C__PEGASUSFILTER_DESCRIPTION.LngText.text
-msgid "Pocket Excel Workbook"
-msgstr "Книга Pocket Excel"
-
-#: registryitem_javafilter.ulf#STR_VALUE__BDD611C3_7BAB_460F_8711_5B9AC9EF6020_.LngText.text
-msgid "%PRODUCTNAME Writer"
-msgstr "%PRODUCTNAME Writer"
-
-#: registryitem_javafilter.ulf#STR_VALUE__BDD611C3_7BAB_460F_8711_5B9AC9EF6020__PEGASUSFILTER_DESCRIPTION.LngText.text
-msgid "%PRODUCTNAME Writer XML Document"
-msgstr "XML документ %PRODUCTNAME Writer"
-
-#: registryitem_javafilter.ulf#STR_VALUE__C6AB3E74_9F4F_4370_8120_A8A6FABB7A7C_.LngText.text
-msgid "%PRODUCTNAME Calc"
-msgstr "%PRODUCTNAME Calc"
-
-#: registryitem_javafilter.ulf#STR_VALUE__C6AB3E74_9F4F_4370_8120_A8A6FABB7A7C__PEGASUSFILTER_DESCRIPTION.LngText.text
-msgid "%PRODUCTNAME Calc XML Document"
-msgstr "XML документ %PRODUCTNAME Calc"
-
-#: registryitem_javafilter.ulf#STR_VALUE__CB43F086_838D_4FA4_B5F6_3406B9A57439_.LngText.text
-msgctxt "registryitem_javafilter.ulf#STR_VALUE__CB43F086_838D_4FA4_B5F6_3406B9A57439_.LngText.text"
-msgid "Pocket Word"
-msgstr "PocketWord File"
-
-#: registryitem_javafilter.ulf#STR_VALUE__CB43F086_838D_4FA4_B5F6_3406B9A57439__PEGASUSFILTER_DESCRIPTION.LngText.text
-msgid "Pocket Word Document - Pocket PC"
-msgstr "Документ Pocket Word - Pocket PC"
-
-#: registryitem_javafilter.ulf#STR_VALUE_HKLM_SOFT_SUN_STAROFFICE_XMERGESYNC_MSGS_ERROR_CLASSPATH.LngText.text
-msgid "The %PRODUCTNAME mobile device filters cannot be located."
-msgstr "Фильтр %PRODUCTNAME для мобильных устройств не найден."
-
-#: registryitem_javafilter.ulf#STR_VALUE_HKLM_SOFT_SUN_STAROFFICE_XMERGESYNC_MSGS_ERROR_JAVA.LngText.text
-msgid "A Java 1.4 installation cannot be located."
-msgstr "Не могу найти установку Java 1.4"
-
-#: registryitem_javafilter.ulf#STR_VALUE_HKLM_SOFT_SUN_STAROFFICE_XMERGESYNC_MSGS_ERROR_JAVAINIT.LngText.text
-msgid "There was an error while initializing the Java Runtime Environment."
-msgstr "Ошибка инициализации виртуальной машины Java."
-"X-Accelerator-Marker: ~\n"
-
-#: folderitem_base.ulf#STR_FI_TOOLTIP_BASE.LngText.text
-msgid ""
-"Manage databases, create queries and reports to track and manage your "
-"information by using Base."
+#: source/calc/registryitem_calc.ulf#STR_REG_VAL_OO_CALC_TEMPLATE
+msgid  "OpenDocument Spreadsheet Template"
 msgstr ""
-"Управление базами данных, создание запросов и отчётов для управления и "
-"наблюдением за данными при помощи Базы Данных."
 
-#: module_base.ulf#STR_NAME_MODULE_PRG_BASE.LngText.text
-msgid "%PRODUCTNAME Base"
-msgstr "%PRODUCTNAME Base"
-
-#: module_base.ulf#STR_DESC_MODULE_PRG_BASE.LngText.text
-msgid "Create and edit databases by using %PRODUCTNAME Base."
-msgstr "Создание и редактирование баз данных при помощи %PRODUCTNAME Base."
-
-#: module_base.ulf#STR_NAME_MODULE_PRG_BASE_BIN.LngText.text
-msgid "Program Module"
-msgstr "Программный модуль"
-
-#: module_base.ulf#STR_DESC_MODULE_PRG_BASE_BIN.LngText.text
-msgid "The application %PRODUCTNAME Base"
-msgstr "Приложение %PRODUCTNAME Base"
-
-#: module_base.ulf#STR_NAME_MODULE_PRG_BASE_HELP.LngText.text
-msgid "%PRODUCTNAME Base Help"
-msgstr "Справка по %PRODUCTNAME Base"
-
-#: module_base.ulf#STR_DESC_MODULE_PRG_BASE_HELP.LngText.text
-msgid "Help about %PRODUCTNAME Base"
-msgstr "Справка по %PRODUCTNAME Base"
-
-#: registryitem_base.ulf#STR_REG_VAL_OO_DATABASE.LngText.text
-msgid "OpenDocument Database"
-msgstr "База данных OpenDocument"
-
-#: module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT.LngText.text
-msgid "Graphics Filters"
-msgstr "Фильтры графических объектов"
-
-#: module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT.LngText.text
-msgid "Additional filters required to read alien graphic formats."
+#: source/calc/registryitem_calc.ulf#STR_REG_VAL_MS_EXCEL_WORKSHEET_OLD
+msgid  "Microsoft Excel 97-2003 Worksheet"
 msgstr ""
-"Дополнительные фильтры, необходимые для чтения сторонних графических "
-"форматов."
 
-#: module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_ADOBE.LngText.text
-msgctxt "module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_ADOBE.LngText.text"
-msgid "Adobe Photoshop Import Filter"
-msgstr "Фильтр импорта Adobe Photoshop"
-
-#: module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_ADOBE.LngText.text
-msgctxt "module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_ADOBE.LngText.text"
-msgid "Adobe Photoshop Import Filter"
-msgstr "Фильтр импорта Adobe Photoshop"
-
-#: module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_TGA.LngText.text
-msgid "TGA Import"
-msgstr "Импорт TGA"
-
-#: module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_TGA.LngText.text
-msgid "TGA TrueVision TARGA Import Filter"
-msgstr "Фильтр импорта TGA TrueVision TARGA"
-
-#: module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_EPS.LngText.text
-msgid "EPS Import/Export Filter"
-msgstr "Фильтр импорта и экспорта EPS"
-
-#: module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_EPS.LngText.text
-msgid "Encapsulated Postscript Import/Export Filter"
-msgstr "Фильтр импорта и экспорта Encapsulated Postscript"
-
-#: module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_XPM.LngText.text
-msgctxt "module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_XPM.LngText.text"
-msgid "XPM Export Filter"
-msgstr "Фильтр экспорта XPM"
-
-#: module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_XPM.LngText.text
-msgctxt "module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_XPM.LngText.text"
-msgid "XPM Export Filter"
-msgstr "Фильтр экспорта XPM"
-
-#: module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_PBMP.LngText.text
-msgid "Portable Bitmap Import/Export"
-msgstr "Импорт и экспорт Portable Bitmap"
-
-#: module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_PBMP.LngText.text
-msgid "Portable Bitmap Import/Export Filters"
-msgstr "Фильтр импорта и экспорта Portable Bitmap"
-
-#: module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_SUNRST.LngText.text
-msgid "SUN Rasterfile Import/Export"
-msgstr "Импорт и экспорт SUN-Rasterfile"
-
-#: module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_SUNRST.LngText.text
-msgid "SUN Rasterfile Import/Export Filters"
-msgstr "Фильтр импорта и экспорта SUN-Rasterfile"
-
-#: module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_ACAD.LngText.text
-msgid "AutoCAD Import"
-msgstr "Импорт AutoCAD"
-
-#: module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_ACAD.LngText.text
-msgid "AutoCAD Import Filter"
-msgstr "Фильтр импорта AutoCAD"
-
-#: module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_KODAC.LngText.text
-msgid "Kodak Photo-CD Import"
-msgstr "Импорт Kodak Photo-CD"
-
-#: module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_KODAC.LngText.text
-msgid "Kodak Photo-CD Import Filter"
-msgstr "Фильтр импорта Kodak Photo-CD"
-
-#: module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_MACPICT.LngText.text
-msgid "Mac-Pict Import/Export"
-msgstr "Импорт и экспорт Mac-Pict"
-
-#: module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_MACPICT.LngText.text
-msgid "Mac-Pict Import/Export Filters"
-msgstr "Фильтр импорта и экспорта Mac-Pict"
-
-#: module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_OS2META.LngText.text
-msgid "OS/2 Metafile Import/Export"
-msgstr "Импорт и экспорт OS/2 Metafile"
-
-#: module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_OS2META.LngText.text
-msgid "OS/2 Metafile Import/Export Filters"
-msgstr "Фильтр импорта и экспорта OS/2 Metafile"
-
-#: module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_PCX.LngText.text
-msgid "PCX Import"
-msgstr "Импорт PCX"
-
-#: module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_PCX.LngText.text
-msgid "Z-Soft PCX Import"
-msgstr "Фильтр импорта Z-Soft PCX"
-
-#: module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_TIFF.LngText.text
-msgid "TIFF Import/Export"
-msgstr "Импорт TIFF"
-
-#: module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_TIFF.LngText.text
-msgid "TIFF Import and Export Filter"
-msgstr "Фильтр импорта TIFF"
-
-#: module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_SVG.LngText.text
-msgid "SVG Export"
-msgstr "Импорт SVG"
-
-#: module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_SVG.LngText.text
-msgid "SVG Export Filter"
-msgstr "Фильтр экспорта SVG"
-
-#: module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_FLASH.LngText.text
-msgid "Macromedia Flash (SWF)"
-msgstr "Macromedia Flash (SWF)"
-
-#: module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_FLASH.LngText.text
-msgid "Macromedia Flash (SWF) Export Filter"
-msgstr "Фильтр экспорта Macromedia Flash (SWF)"
-
-#: module_python.ulf#STR_NAME_MODULE_OPTIONAL_PYTHON.LngText.text
-msgid "Python-UNO Bridge"
-msgstr "Интеграция Python-UNO"
-
-#: module_python.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON.LngText.text
-msgid ""
-"Adds the ability to automate %PRODUCTNAME with the python scripting "
-"language. See http://udk.openoffice.org/python/python-bridge.html for a "
-"complete documentation."
+#: source/calc/registryitem_calc.ulf#STR_REG_VAL_MS_EXCEL_WORKSHEET
+msgid  "Microsoft Excel Worksheet"
 msgstr ""
-"Автоматизация %PRODUCTNAME с помощью скриптового языка python. Полная "
-"документация - по адресу http://udk.openoffice.org/python/python-"
-"bridge.html."
 
-#: module_python_mailmerge.ulf#STR_NAME_MODULE_OPTIONAL_PYTHON_MAILMERGE.LngText.text
-msgid "E-mail Mailmerge"
-msgstr "Рассылка электронных писем"
-
-#: module_python_mailmerge.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON_MAILMERGE.LngText.text
-msgid "Module for %PRODUCTNAME E-mail Mailmerge feature"
-msgstr "Модуль для функции составных электронных писем для %PRODUCTNAME"
-"Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.9.0\n"
-"X-Accelerator-Marker: ~\n"
-
-#: folderitem_writer.ulf#STR_FI_NAME_HTMLDOKUMENT.LngText.text
-msgid "HTML Document"
-msgstr "Документ HTML"
-
-#: folderitem_writer.ulf#STR_FI_NAME_TEXTDOKUMENT.LngText.text
-msgid "Text Document"
-msgstr "Текстовый документ"
-
-#: folderitem_writer.ulf#STR_FI_TOOLTIP_WRITER.LngText.text
-msgid ""
-"Create and edit text and graphics in letters, reports, documents and Web "
-"pages by using Writer."
+#: source/calc/registryitem_calc.ulf#STR_REG_VAL_MS_EXCEL_TEMPLATE_OLD
+msgid  "Microsoft Excel 97-2003 Template"
 msgstr ""
-"Создание и редактирование текста и рисунков в письмах, отчётах, документах "
-"или веб-страницах."
 
-#: module_writer.ulf#STR_NAME_MODULE_PRG_WRT.LngText.text
-msgid "%PRODUCTNAME Writer"
-msgstr "%PRODUCTNAME Writer"
-
-#: module_writer.ulf#STR_DESC_MODULE_PRG_WRT.LngText.text
-msgid ""
-"Create and edit text and graphics in letters, reports, documents and Web "
-"pages by using %PRODUCTNAME Writer."
+#: source/calc/registryitem_calc.ulf#STR_REG_VAL_MS_EXCEL_TEMPLATE
+msgid  "Microsoft Excel Template"
 msgstr ""
-"Создание и редактирование текста и рисунков в письмах, отчётах, документах "
-"или веб-страницах при помощи %PRODUCTNAME Writer."
 
-#: module_writer.ulf#STR_NAME_MODULE_PRG_WRT_BIN.LngText.text
-msgid "Program Module"
-msgstr "Программный модуль"
+#: source/calc/registryitem_calc.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr ""
 
-#: module_writer.ulf#STR_DESC_MODULE_PRG_WRT_BIN.LngText.text
-msgid "The application %PRODUCTNAME Writer"
-msgstr "Приложение %PRODUCTNAME Writer"
+#: source/calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC
+msgid  "%PRODUCTNAME Calc"
+msgstr ""
 
-#: module_writer.ulf#STR_NAME_MODULE_PRG_WRT_HELP.LngText.text
-msgid "%PRODUCTNAME Writer Help"
-msgstr "Справка по %PRODUCTNAME Writer"
+#: source/calc/module_calc.ulf#STR_DESC_MODULE_PRG_CALC
+msgid  "Perform calculation, analyze information and manage lists in spreadsheets by using %PRODUCTNAME Calc."
+msgstr ""
 
-#: module_writer.ulf#STR_DESC_MODULE_PRG_WRT_HELP.LngText.text
-msgid "Help about %PRODUCTNAME Writer"
-msgstr "Справка по %PRODUCTNAME Writer"
+#: source/calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC_BIN
+msgid  "Program Module"
+msgstr ""
 
-#: module_writer.ulf#STR_NAME_MODULE_PRG_WRT_WRITER2LATEX.LngText.text
-msgid "LaTeX Export"
-msgstr "Экспорт в LaTeX"
+#: source/calc/module_calc.ulf#STR_DESC_MODULE_PRG_CALC_BIN
+msgid  "The application %PRODUCTNAME Calc"
+msgstr ""
 
-#: module_writer.ulf#STR_DESC_MODULE_PRG_WRT_WRITER2LATEX.LngText.text
-msgid "LaTeX export filter for Writer documents."
-msgstr "Фильтр экспорта в LaTeX для документов Writer."
+#: source/calc/module_calc.ulf#STR_NAME_MODULE_PRG_CALC_HELP
+msgid  "%PRODUCTNAME Calc Help"
+msgstr ""
 
-#: registryitem_writer.ulf#STR_REG_VAL_NEW.LngText.text
-msgid "&New"
-msgstr "&Новый"
+#: source/calc/module_calc.ulf#STR_DESC_MODULE_PRG_CALC_HELP
+msgid  "Help about %PRODUCTNAME Calc"
+msgstr ""
 
-#: registryitem_writer.ulf#STR_REG_VAL_SO60_TEXT.LngText.text
-msgid "%SXWFORMATNAME %SXWFORMATVERSION Text Document"
-msgstr "Текстовый документ %SXWFORMATNAME %SXWFORMATVERSION"
+#: source/calc/module_calc.ulf#STR_NAME_MODULE_OPTIONAL_ADDINS
+msgid  "Add-in"
+msgstr ""
 
-#: registryitem_writer.ulf#STR_REG_VAL_SO60_MASTERDOC.LngText.text
-msgid "%SXWFORMATNAME %SXWFORMATVERSION Master Document"
-msgstr "Составной документ %SXWFORMATNAME %SXWFORMATVERSION"
+#: source/calc/module_calc.ulf#STR_DESC_MODULE_OPTIONAL_ADDINS
+msgid  "Add-ins are additional programs that make new functions available in %PRODUCTNAME Calc."
+msgstr ""
 
-#: registryitem_writer.ulf#STR_REG_VAL_SO60_WRITER_TEMPLATE.LngText.text
-msgid "%SXWFORMATNAME %SXWFORMATVERSION Text Document Template"
-msgstr "Шаблон текстового документа %SXWFORMATNAME %SXWFORMATVERSION"
+#: source/draw/registryitem_draw.ulf#STR_REG_VAL_SO60_DRAWING
+msgid  "%SXWFORMATNAME %SXWFORMATVERSION Drawing"
+msgstr ""
 
-#: registryitem_writer.ulf#STR_REG_VAL_OO_WRITER.LngText.text
-msgid "OpenDocument Text"
-msgstr "Текстовый документ OpenDocument"
+#: source/draw/registryitem_draw.ulf#STR_REG_VAL_SO60_DRAW_TEMPLATE
+msgid  "%SXWFORMATNAME %SXWFORMATVERSION Drawing Template"
+msgstr ""
 
-#: registryitem_writer.ulf#STR_REG_VAL_OO_WRITER_TEMPLATE.LngText.text
-msgid "OpenDocument Text Template"
-msgstr "Шаблон текстового документа OpenDocument"
+#: source/draw/registryitem_draw.ulf#STR_REG_VAL_OO_DRAW
+msgid  "OpenDocument Drawing"
+msgstr ""
 
-#: registryitem_writer.ulf#STR_REG_VAL_OO_MASTERDOC.LngText.text
-msgid "OpenDocument Master Document"
-msgstr "Составной документ OpenDocument"
+#: source/draw/registryitem_draw.ulf#STR_REG_VAL_OO_DRAW_TEMPLATE
+msgid  "OpenDocument Drawing Template"
+msgstr ""
 
-#: registryitem_writer.ulf#STR_REG_VAL_OO_WEBDOC.LngText.text
-msgid "HTML Document Template"
-msgstr "Шаблон HTML-документа"
+#: source/draw/registryitem_draw.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr ""
 
-#: registryitem_writer.ulf#STR_REG_VAL_MS_WORD_DOCUMENT_OLD.LngText.text
-msgid "Microsoft Word 97-2003 Document"
-msgstr "Документ Microsoft Word 97-2003"
+#: source/draw/folderitem_draw.ulf#STR_FI_NAME_ZEICHNUNG
+msgid  "Drawing"
+msgstr ""
 
-#: registryitem_writer.ulf#STR_REG_VAL_MS_WORD_DOCUMENT.LngText.text
-msgid "Microsoft Word Document"
-msgstr "Документ Microsoft Word"
+#: source/draw/folderitem_draw.ulf#STR_FI_TOOLTIP_DRAW
+msgid  "Create and edit drawings, flow charts, and logos by using Draw."
+msgstr ""
 
-#: registryitem_writer.ulf#STR_REG_VAL_MS_WORD_TEMPLATE_OLD.LngText.text
-msgid "Microsoft Word 97-2003 Template"
-msgstr "Шаблон Microsoft Word 97-2003"
+#: source/draw/module_draw.ulf#STR_NAME_MODULE_PRG_DRAW
+msgid  "%PRODUCTNAME Draw"
+msgstr ""
 
-#: registryitem_writer.ulf#STR_REG_VAL_MS_WORD_TEMPLATE.LngText.text
-msgid "Microsoft Word Template"
-msgstr "Шаблон Microsoft Word"
+#: source/draw/module_draw.ulf#STR_DESC_MODULE_PRG_DRAW
+msgid  "Create and edit drawings, flow charts, and logos by using %PRODUCTNAME Draw."
+msgstr ""
 
-#: registryitem_writer.ulf#STR_REG_VAL_MS_RTF_DOCUMENT.LngText.text
-msgid "Rich Text Document"
-msgstr "Документ RTF"
+#: source/draw/module_draw.ulf#STR_NAME_MODULE_PRG_DRAW_BIN
+msgid  "Program Module"
+msgstr ""
+
+#: source/draw/module_draw.ulf#STR_DESC_MODULE_PRG_DRAW_BIN
+msgid  "The application %PRODUCTNAME Draw"
+msgstr ""
+
+#: source/draw/module_draw.ulf#STR_NAME_MODULE_PRG_DRAW_HELP
+msgid  "%PRODUCTNAME Draw Help"
+msgstr ""
+
+#: source/draw/module_draw.ulf#STR_DESC_MODULE_PRG_DRAW_HELP
+msgid  "Help about %PRODUCTNAME Draw"
+msgstr ""
+
+#: source/gnome/module_gnome.ulf#STR_NAME_MODULE_OPTIONAL_GNOME
+msgid  "GNOME Integration"
+msgstr ""
+
+#: source/gnome/module_gnome.ulf#STR_DESC_MODULE_OPTIONAL_GNOME
+msgid  "System integration of %PRODUCTNAME %PRODUCTVERSION into Gnome Desktop Environment."
+msgstr ""
+
+#: source/graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT
+msgid  "Graphics Filters"
+msgstr ""
+
+#: source/graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT
+msgid  "Additional filters required to read alien graphic formats."
+msgstr ""
+
+#: source/graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_ADOBE
+msgid  "Adobe Photoshop Import Filter"
+msgstr ""
+
+#: source/graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_ADOBE
+msgid  "Adobe Photoshop Import Filter"
+msgstr ""
+
+#: source/graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_TGA
+msgid  "TGA Import"
+msgstr ""
+
+#: source/graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_TGA
+msgid  "TGA TrueVision TARGA Import Filter"
+msgstr ""
+
+#: source/graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_EPS
+msgid  "EPS Import/Export Filter"
+msgstr ""
+
+#: source/graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_EPS
+msgid  "Encapsulated Postscript Import/Export Filter"
+msgstr ""
+
+#: source/graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_XPM
+msgid  "XPM Export Filter"
+msgstr ""
+
+#: source/graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_XPM
+msgid  "XPM Export Filter"
+msgstr ""
+
+#: source/graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_PBMP
+msgid  "Portable Bitmap Import/Export"
+msgstr ""
+
+#: source/graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_PBMP
+msgid  "Portable Bitmap Import/Export Filters"
+msgstr ""
+
+#: source/graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_SUNRST
+msgid  "SUN Rasterfile Import/Export"
+msgstr ""
+
+#: source/graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_SUNRST
+msgid  "SUN Rasterfile Import/Export Filters"
+msgstr ""
+
+#: source/graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_ACAD
+msgid  "AutoCAD Import"
+msgstr ""
+
+#: source/graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_ACAD
+msgid  "AutoCAD Import Filter"
+msgstr ""
+
+#: source/graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_KODAC
+msgid  "Kodak Photo-CD Import"
+msgstr ""
+
+#: source/graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_KODAC
+msgid  "Kodak Photo-CD Import Filter"
+msgstr ""
+
+#: source/graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_MACPICT
+msgid  "Mac-Pict Import/Export"
+msgstr ""
+
+#: source/graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_MACPICT
+msgid  "Mac-Pict Import/Export Filters"
+msgstr ""
+
+#: source/graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_OS2META
+msgid  "OS/2 Metafile Import/Export"
+msgstr ""
+
+#: source/graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_OS2META
+msgid  "OS/2 Metafile Import/Export Filters"
+msgstr ""
+
+#: source/graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_PCX
+msgid  "PCX Import"
+msgstr ""
+
+#: source/graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_PCX
+msgid  "Z-Soft PCX Import"
+msgstr ""
+
+#: source/graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_TIFF
+msgid  "TIFF Import/Export"
+msgstr ""
+
+#: source/graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_TIFF
+msgid  "TIFF Import and Export Filter"
+msgstr ""
+
+#: source/graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_SVG
+msgid  "SVG Export"
+msgstr ""
+
+#: source/graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_SVG
+msgid  "SVG Export Filter"
+msgstr ""
+
+#: source/graphicfilter/module_graphicfilter.ulf#STR_NAME_MODULE_OPTIONAL_GRFFLT_FLASH
+msgid  "Macromedia Flash (SWF)"
+msgstr ""
+
+#: source/graphicfilter/module_graphicfilter.ulf#STR_DESC_MODULE_OPTIONAL_GRFFLT_FLASH
+msgid  "Macromedia Flash (SWF) Export Filter"
+msgstr ""
+
+#: source/impress/folderitem_impress.ulf#STR_FI_NAME_PRAESENTATION
+msgid  "Presentation"
+msgstr ""
+
+#: source/impress/folderitem_impress.ulf#STR_FI_TOOLTIP_IMPRESS
+msgid  "Create and edit presentations for slideshows, meeting and Web pages by using Impress."
+msgstr ""
+
+#: source/impress/registryitem_impress.ulf#STR_REG_VAL_SO60_SHOW
+msgid  "Show"
+msgstr ""
+
+#: source/impress/registryitem_impress.ulf#STR_REG_VAL_SO60_PRESENT
+msgid  "%SXWFORMATNAME %SXWFORMATVERSION Presentation"
+msgstr ""
+
+#: source/impress/registryitem_impress.ulf#STR_REG_VAL_SO60_IMPRESS_TEMPLATE
+msgid  "%SXWFORMATNAME %SXWFORMATVERSION Presentation Template"
+msgstr ""
+
+#: source/impress/registryitem_impress.ulf#STR_REG_VAL_OO_PRESENT
+msgid  "OpenDocument Presentation"
+msgstr ""
+
+#: source/impress/registryitem_impress.ulf#STR_REG_VAL_OO_PRESENT_TEMPLATE
+msgid  "OpenDocument Presentation Template"
+msgstr ""
+
+#: source/impress/registryitem_impress.ulf#STR_REG_VAL_MS_POWERPOINT_PRESENTATION_OLD
+msgid  "Microsoft PowerPoint 97-2003 Presentation"
+msgstr ""
+
+#: source/impress/registryitem_impress.ulf#STR_REG_VAL_MS_POWERPOINT_SHOW
+msgid  "Microsoft PowerPoint Show"
+msgstr ""
+
+#: source/impress/registryitem_impress.ulf#STR_REG_VAL_MS_POWERPOINT_PRESENTATION
+msgid  "Microsoft PowerPoint Presentation"
+msgstr ""
+
+#: source/impress/registryitem_impress.ulf#STR_REG_VAL_MS_POWERPOINT_TEMPLATE_OLD
+msgid  "Microsoft PowerPoint 97-2003 Template"
+msgstr ""
+
+#: source/impress/registryitem_impress.ulf#STR_REG_VAL_MS_POWERPOINT_TEMPLATE
+msgid  "Microsoft PowerPoint Template"
+msgstr ""
+
+#: source/impress/registryitem_impress.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr ""
+
+#: source/impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS
+msgid  "%PRODUCTNAME Impress"
+msgstr ""
+
+#: source/impress/module_impress.ulf#STR_DESC_MODULE_PRG_IMPRESS
+msgid  "Create and edit presentations for slideshows, meeting and Web pages by using %PRODUCTNAME Impress."
+msgstr ""
+
+#: source/impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS_BIN
+msgid  "Program Module"
+msgstr ""
+
+#: source/impress/module_impress.ulf#STR_DESC_MODULE_PRG_IMPRESS_BIN
+msgid  "The application %PRODUCTNAME Impress"
+msgstr ""
+
+#: source/impress/module_impress.ulf#STR_NAME_MODULE_PRG_IMPRESS_HELP
+msgid  "%PRODUCTNAME Impress Help"
+msgstr ""
+
+#: source/impress/module_impress.ulf#STR_DESC_MODULE_PRG_IMPRESS_HELP
+msgid  "Help about %PRODUCTNAME Impress"
+msgstr ""
+
+#: source/impress/module_ogltrans.ulf#STR_NAME_MODULE_OPTIONAL_OGLTRANS
+msgid  "OpenGL slide transitions for %PRODUCTNAME Impress"
+msgstr ""
+
+#: source/impress/module_ogltrans.ulf#STR_DESC_MODULE_MODULE_OPTIONAL_OGLTRANS
+msgid  "OpenGL slide transitions for %PRODUCTNAME Impress."
+msgstr ""
+
+#: source/javafilter/module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER
+msgid  "Mobile Device Filters"
+msgstr ""
+
+#: source/javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER
+msgid  "Text and spreadsheet filters to support import/export for Palm handheld or Pocket PC (Java required)."
+msgstr ""
+
+#: source/javafilter/module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_PALM
+msgid  "Palm"
+msgstr ""
+
+#: source/javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_PALM
+msgid  "Filters for Palm OS compatible handhelds"
+msgstr ""
+
+#: source/javafilter/module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_PALM_APORTISDOC
+msgid  "AportisDoc"
+msgstr ""
+
+#: source/javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_PALM_APORTISDOC
+msgid  "Support for the AportisDoc format"
+msgstr ""
+
+#: source/javafilter/module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_POCKETPC
+msgid  "Pocket PC"
+msgstr ""
+
+#: source/javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_WNT
+msgid  "Filters and ActiveSync support for Pocket PC compatible handhelds"
+msgstr ""
+
+#: source/javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_UNIX
+msgid  "Filters for Pocket PC compatible handhelds."
+msgstr ""
+
+#: source/javafilter/module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_POCKET_WORD
+msgid  "Pocket Word"
+msgstr ""
+
+#: source/javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_POCKET_WORD
+msgid  "Support for Pocket Word"
+msgstr ""
+
+#: source/javafilter/module_javafilter.ulf#STR_NAME_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_POCKET_EXCEL
+msgid  "Pocket Excel"
+msgstr ""
+
+#: source/javafilter/module_javafilter.ulf#STR_DESC_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_POCKET_EXCEL
+msgid  "Support for Pocket Excel"
+msgstr ""
+
+#: source/javafilter/registryitem_javafilter.ulf#STR_VALUE__43887C67_4D5D_4127_BAAC_87A288494C7C_
+msgid  "Pocket Excel"
+msgstr ""
+
+#: source/javafilter/registryitem_javafilter.ulf#STR_VALUE__43887C67_4D5D_4127_BAAC_87A288494C7C__PEGASUSFILTER_DESCRIPTION
+msgid  "Pocket Excel Workbook"
+msgstr ""
+
+#: source/javafilter/registryitem_javafilter.ulf#STR_VALUE__BDD611C3_7BAB_460F_8711_5B9AC9EF6020_
+msgid  "%PRODUCTNAME Writer"
+msgstr ""
+
+#: source/javafilter/registryitem_javafilter.ulf#STR_VALUE__BDD611C3_7BAB_460F_8711_5B9AC9EF6020__PEGASUSFILTER_DESCRIPTION
+msgid  "%PRODUCTNAME Writer XML Document"
+msgstr ""
+
+#: source/javafilter/registryitem_javafilter.ulf#STR_VALUE__C6AB3E74_9F4F_4370_8120_A8A6FABB7A7C_
+msgid  "%PRODUCTNAME Calc"
+msgstr ""
+
+#: source/javafilter/registryitem_javafilter.ulf#STR_VALUE__C6AB3E74_9F4F_4370_8120_A8A6FABB7A7C__PEGASUSFILTER_DESCRIPTION
+msgid  "%PRODUCTNAME Calc XML Document"
+msgstr ""
+
+#: source/javafilter/registryitem_javafilter.ulf#STR_VALUE__CB43F086_838D_4FA4_B5F6_3406B9A57439_
+msgid  "Pocket Word"
+msgstr ""
+
+#: source/javafilter/registryitem_javafilter.ulf#STR_VALUE__CB43F086_838D_4FA4_B5F6_3406B9A57439__PEGASUSFILTER_DESCRIPTION
+msgid  "Pocket Word Document - Pocket PC"
+msgstr ""
+
+#: source/javafilter/registryitem_javafilter.ulf#STR_VALUE_HKLM_SOFT_SUN_STAROFFICE_XMERGESYNC_MSGS_ERROR_CLASSPATH
+msgid  "The %PRODUCTNAME mobile device filters cannot be located."
+msgstr ""
+
+#: source/javafilter/registryitem_javafilter.ulf#STR_VALUE_HKLM_SOFT_SUN_STAROFFICE_XMERGESYNC_MSGS_ERROR_JAVA
+msgid  "A Java 1.4 installation cannot be located."
+msgstr ""
+
+#: source/javafilter/registryitem_javafilter.ulf#STR_VALUE_HKLM_SOFT_SUN_STAROFFICE_XMERGESYNC_MSGS_ERROR_JAVAINIT
+msgid  "There was an error while initializing the Java Runtime Environment."
+msgstr ""
+
+#: source/kde/module_kde.ulf#STR_NAME_MODULE_OPTIONAL_KDE
+msgid  "KDE Integration"
+msgstr ""
+
+#: source/kde/module_kde.ulf#STR_DESC_MODULE_OPTIONAL_KDE
+msgid  "System integration of %PRODUCTNAME %PRODUCTVERSION into KDE."
+msgstr ""
+
+#: source/math/module_math.ulf#STR_NAME_MODULE_PRG_MATH
+msgid  "%PRODUCTNAME Math"
+msgstr ""
+
+#: source/math/module_math.ulf#STR_DESC_MODULE_PRG_MATH
+msgid  "Create and edit scientific formulas and equations by using %PRODUCTNAME Math."
+msgstr ""
+
+#: source/math/module_math.ulf#STR_NAME_MODULE_PRG_MATH_BIN
+msgid  "Program Module"
+msgstr ""
+
+#: source/math/module_math.ulf#STR_DESC_MODULE_PRG_MATH_BIN
+msgid  "The application %PRODUCTNAME Math"
+msgstr ""
+
+#: source/math/module_math.ulf#STR_NAME_MODULE_PRG_MATH_HELP
+msgid  "%PRODUCTNAME Math Help"
+msgstr ""
+
+#: source/math/module_math.ulf#STR_DESC_MODULE_PRG_MATH_HELP
+msgid  "Help about %PRODUCTNAME Math"
+msgstr ""
+
+#: source/math/folderitem_math.ulf#STR_FI_TOOLTIP_MATH
+msgid  "Create and edit scientific formulas and equations by using Math."
+msgstr ""
+
+#: source/math/registryitem_math.ulf#STR_REG_VAL_SO60_FORMULA
+msgid  "%SXWFORMATNAME %SXWFORMATVERSION Formula"
+msgstr ""
+
+#: source/math/registryitem_math.ulf#STR_REG_VAL_OO_FORMULA
+msgid  "OpenDocument Formula"
+msgstr ""
+
+#: source/math/registryitem_math.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr ""
+
+#: source/onlineupdate/module_onlineupdate.ulf#STR_NAME_MODULE_OPT_ONLINEUPDATE
+msgid  "Online Update"
+msgstr ""
+
+#: source/onlineupdate/module_onlineupdate.ulf#STR_DESC_MODULE_OPT_ONLINEUPDATE
+msgid  "Get automatically notified when a new update of %PRODUCTNAME becomes available."
+msgstr ""
+
+#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_INSTALL
+msgid  "&Install"
+msgstr ""
+
+#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_SO60_CONFIGFILE
+msgid  "OpenOffice.org 1.1 Configuration File"
+msgstr ""
+
+#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_APPCAPABILITY_DESCRIPTION_OOO
+msgid  "office productivity suite based on Apache OpenOffice project"
+msgstr ""
+
+#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr ""
+
+#: source/ooo/registryitem_ooo.ulf#STR_REG_VAL_SO50_TEMPLATE_OOO
+msgid  "StarOffice 5.0 Template"
+msgstr ""
+
+#: source/ooo/module_systemint.ulf#STR_NAME_MODULE_OPTIONAL_SYSTEMINTEGRATION
+msgid  "Desktop integration"
+msgstr ""
+
+#: source/ooo/module_systemint.ulf#STR_DESC_MODULE_OPTIONAL_SYSTEMINTEGRATION
+msgid  "Desktop integration of %PRODUCTNAME %PRODUCTVERSION."
+msgstr ""
+
+#: source/ooo/module_ooo.ulf#STR_NAME_MODULE_ROOT_OSL
+msgid  "%PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_ooo.ulf#STR_DESC_MODULE_ROOT_OSL
+msgid  "%PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_ooo.ulf#STR_NAME_MODULE_PRG
+msgid  "%PRODUCTNAME Program Modules"
+msgstr ""
+
+#: source/ooo/module_ooo.ulf#STR_DESC_MODULE_PRG
+msgid  "List of all installable %PRODUCTNAME modules."
+msgstr ""
+
+#: source/ooo/module_ooo.ulf#STR_NAME_MODULE_OPTIONAL
+msgid  "Optional Components"
+msgstr ""
+
+#: source/ooo/module_ooo.ulf#STR_DESC_MODULE_OPTIONAL
+msgid  "Common components and additional programs shared by all %PRODUCTNAME programs."
+msgstr ""
+
+#: source/ooo/module_ooo.ulf#STR_NAME_MODULE_DICTIONARIES
+msgid  "Dictionaries"
+msgstr ""
+
+#: source/ooo/module_ooo.ulf#STR_DESC_MODULE_DICTIONARIES
+msgid  "Spelling and hyphenation dictionaries and thesauri."
+msgstr ""
+
+#: source/ooo/module_java.ulf#STR_NAME_MODULE_OPTIONAL_JAVA
+msgid  "Java Runtime Environment (%JAVAVERSION)"
+msgstr ""
+
+#: source/ooo/module_java.ulf#STR_DESC_MODULE_OPTIONAL_JAVA
+msgid  "Component for setting up the Java Environment"
+msgstr ""
+
+#: source/ooo/module_headless.ulf#STR_NAME_MODULE_OPTIONAL_HEADLESS
+msgid  "Headless application support"
+msgstr ""
+
+#: source/ooo/module_headless.ulf#STR_DESC_MODULE_OPTIONAL_HEADLESS
+msgid  "Component for enabling use %PRODUCTNAME without a display"
+msgstr ""
+
+#: source/ooo/directory_ooo.ulf#STR_DIR_INFO
+msgid  "Information"
+msgstr ""
+
+#: source/ooo/directory_ooo.ulf#STR_DIR_INTERNET
+msgid  "Internet"
+msgstr ""
+
+#: source/ooo/directory_ooo.ulf#STR_DIR_JAVA
+msgid  "Java"
+msgstr ""
+
+#: source/ooo/directory_ooo.ulf#STR_DIR_FREIZEIT
+msgid  "Fun&More"
+msgstr ""
+
+#: source/ooo/directory_ooo.ulf#STR_DIR_STARONE
+msgid  "%PRODUCTNAME API"
+msgstr ""
+
+#: source/ooo/directory_ooo.ulf#STR_DIR_TOURISMUS
+msgid  "Travel"
+msgstr ""
+
+#: source/ooo/directory_ooo.ulf#STR_DIR_KAPITEL
+msgid  "Chapters"
+msgstr ""
+
+#: source/ooo/directory_ooo.ulf#STR_DIR_DATEIEN
+msgid  "Files"
+msgstr ""
+
+#: source/ooo/folderitem_ooo.ulf#STR_FI_NAME_FROMTEMPLATE
+msgid  "From Template"
+msgstr ""
+
+#: source/ooo/folderitem_ooo.ulf#STR_FI_NAME_OPENDOCUMENT
+msgid  "Open Document"
+msgstr ""
+
+#: source/ooo/folderitem_ooo.ulf#STR_FI_TOOLTIP_SOFFICE
+msgid  "The office productivity suite compatible to the open and standardized ODF document format. Supported by The Apache Software Foundation."
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_ROOT_LANGPACK
+msgid  "Additional language packs"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_ROOT_LANGPACK
+msgid  "Additional language packs"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EN_US
+msgid  "English"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EN_US
+msgid  "Installs English support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_DE
+msgid  "German"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_DE
+msgid  "Installs German support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_FR
+msgid  "French"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_FR
+msgid  "Installs French support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_IT
+msgid  "Italian"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_IT
+msgid  "Installs Italian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ES
+msgid  "Spanish"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ES
+msgid  "Installs Spanish support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SV
+msgid  "Swedish"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SV
+msgid  "Installs Swedish support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_PT
+msgid  "Portuguese"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_PT
+msgid  "Installs Portuguese support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_PT_BR
+msgid  "Portuguese (Brazil)"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_PT_BR
+msgid  "Installs Portuguese support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_JA
+msgid  "Japanese"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_JA
+msgid  "Installs Japanese support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_KO
+msgid  "Korean"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_KO
+msgid  "Installs Korean support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ZH_CN
+msgid  "Chinese (simplified)"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ZH_CN
+msgid  "Installs Chinese (simplified) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ZH_TW
+msgid  "Chinese (traditional)"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ZH_TW
+msgid  "Installs Chinese (traditional) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NL
+msgid  "Dutch"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NL
+msgid  "Installs Dutch support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HU
+msgid  "Hungarian"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HU
+msgid  "Installs Hungarian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_PL
+msgid  "Polish"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_PL
+msgid  "Installs Polish support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_RU
+msgid  "Russian"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_RU
+msgid  "Installs Russian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TR
+msgid  "Turkish"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TR
+msgid  "Installs Turkish support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EL
+msgid  "Greek"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EL
+msgid  "Installs Greek support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TH
+msgid  "Thai"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TH
+msgid  "Installs Thai support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_CS
+msgid  "Czech"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_CS
+msgid  "Installs Czech support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SK
+msgid  "Slovak"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SK
+msgid  "Installs Slovak support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HR
+msgid  "Croatian"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HR
+msgid  "Installs Croatian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ET
+msgid  "Estonian"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ET
+msgid  "Installs Estonian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_VI
+msgid  "Vietnamese"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_VI
+msgid  "Installs Vietnamese support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BG
+msgid  "Bulgarian"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BG
+msgid  "Installs Bulgarian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_KM
+msgid  "Khmer"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_KM
+msgid  "Installs Khmer support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_PA_IN
+msgid  "Punjabi"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_PA_IN
+msgid  "Installs Punjabi support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GU_IN
+msgid  "Gujarati"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_GU_IN
+msgid  "Installs Gujarati support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TA
+msgid  "Tamil"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TA
+msgid  "Installs Tamil support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TA_IN
+msgid  "Tamil"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TA_IN
+msgid  "Installs Tamil support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HI
+msgid  "Hindi"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HI
+msgid  "Installs Hindi support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HI_IN
+msgid  "Hindi"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HI_IN
+msgid  "Installs Hindi support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ST
+msgid  "Southern Sotho (Sutu)"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ST
+msgid  "Installs Southern Sotho (Sutu) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TN
+msgid  "Tswana"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TN
+msgid  "Installs Tswana support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_XH
+msgid  "Xhosa"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_XH
+msgid  "Installs Xhosa support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ZU
+msgid  "Zulu"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ZU
+msgid  "Installs Zulu support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_AF
+msgid  "Afrikaans"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_AF
+msgid  "Installs Afrikaans support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SW
+msgid  "Swahili"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SW
+msgid  "Installs Swahili support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SW_TZ
+msgid  "Swahili"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SW_TZ
+msgid  "Installs Swahili support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_LO
+msgid  "Lao"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_LO
+msgid  "Installs Lao support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NS
+msgid  "Northern Sotho"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NS
+msgid  "Installs Northern Sotho support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BN
+msgid  "Bengali"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BN
+msgid  "Installs Bengali support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BN_BD
+msgid  "Bengali (Bangladesh)"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BN_BD
+msgid  "Installs Bengali (Bangladesh) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BN_IN
+msgid  "Bengali (India)"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BN_IN
+msgid  "Installs Bengali (India) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_OR
+msgid  "Oriya"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_OR
+msgid  "Installs Oriya support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_OR_IN
+msgid  "Oriya"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_OR_IN
+msgid  "Installs Oriya support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_MR
+msgid  "Marathi"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MR
+msgid  "Installs Marathi support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_MR_IN
+msgid  "Marathi"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MR_IN
+msgid  "Installs Marathi support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NE
+msgid  "Nepali"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NE
+msgid  "Installs Nepali support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_AR
+msgid  "Arabic"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_AR
+msgid  "Installs Arabic support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_AR_SA
+msgid  "Arabic"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_AR_SA
+msgid  "Installs Arabic support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_CA
+msgid  "Catalan"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_CA
+msgid  "Installs Catalan support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_DA
+msgid  "Danish"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_DA
+msgid  "Installs Danish support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_FI
+msgid  "Finnish"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_FI
+msgid  "Installs Finnish support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HE
+msgid  "Hebrew"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HE
+msgid  "Installs Hebrew support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_IS
+msgid  "Icelandic"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_IS
+msgid  "Installs Icelandic support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NB
+msgid  "Norwegian (Bokmål)"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NB
+msgid  "Installs Norwegian (Bokmål) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NN
+msgid  "Norwegian (Nynorsk)"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NN
+msgid  "Installs Norwegian (Nynorsk) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_RM
+msgid  "Rhaeto-Romance"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_RM
+msgid  "Installs Rhaeto-Romance support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_RO
+msgid  "Romanian"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_RO
+msgid  "Installs Romanian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SQ
+msgid  "Albanian"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SQ
+msgid  "Installs Albanian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UR
+msgid  "Urdu"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_UR
+msgid  "Installs Urdu support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ID
+msgid  "Indonesian"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ID
+msgid  "Installs Indonesian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UK
+msgid  "Ukrainian"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_UK
+msgid  "Installs Ukrainian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BE_BY
+msgid  "Belarusian"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BE_BY
+msgid  "Installs Belarusian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SL
+msgid  "Slovenian"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SL
+msgid  "Installs Slovenian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_LV
+msgid  "Latvian"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_LV
+msgid  "Installs Latvian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_LT
+msgid  "Lithuanian"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_LT
+msgid  "Installs Lithuanian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_HY
+msgid  "Armenian"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_HY
+msgid  "Installs Armenian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EU
+msgid  "Basque"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EU
+msgid  "Installs Basque support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_MK
+msgid  "Macedonian"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MK
+msgid  "Installs Macedonian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_MT
+msgid  "Maltese"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MT
+msgid  "Installs Maltese support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_CY
+msgid  "Welsh"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_CY
+msgid  "Installs Welsh support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GL
+msgid  "Galician"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_GL
+msgid  "Installs Galician support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SH_YU
+msgid  "Serbian (Latin)"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SH_YU
+msgid  "Installs Serbian (Latin) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SH
+msgid  "Serbian (Latin)"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SH
+msgid  "Installs Serbian (Latin) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GA
+msgid  "Irish"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_GA
+msgid  "Installs Irish support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SR_CS
+msgid  "Serbian (Cyrillic)"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SR_CS
+msgid  "Installs Serbian (Cyrillic) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SR
+msgid  "Serbian (Cyrillic)"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SR
+msgid  "Installs Serbian (Cyrillic) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BS
+msgid  "Bosnian"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BS
+msgid  "Installs Bosnian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_AS_IN
+msgid  "Assamese"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_AS_IN
+msgid  "Installs Assamese support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_RW
+msgid  "Kinyarwanda"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_RW
+msgid  "Installs Kinyarwanda support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SA
+msgid  "Sanskrit"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SA
+msgid  "Installs Sanskrit support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_FA
+msgid  "Persian"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_FA
+msgid  "Installs Persian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_FO
+msgid  "Faroese"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_FO
+msgid  "Installs Faroese support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SB
+msgid  "Sorbian"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SB
+msgid  "Installs Sorbian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TT
+msgid  "Tatar"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TT
+msgid  "Installs Tatar support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TS
+msgid  "Tsonga"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TS
+msgid  "Installs Tsonga support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_YI
+msgid  "Yiddish"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_YI
+msgid  "Installs Yiddish support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_BR
+msgid  "Breton"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_BR
+msgid  "Installs Breton support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_NR
+msgid  "Ndebele South"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_NR
+msgid  "Installs Ndebele South support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SS
+msgid  "Swazi"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SS
+msgid  "Installs Swazi support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_VE
+msgid  "Venda"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_VE
+msgid  "Installs Venda support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_KN
+msgid  "Kannada"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_KN
+msgid  "Installs Kannada support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_MS
+msgid  "Malay (Malaysian)"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MS
+msgid  "Installs Malay (Malaysian) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TG
+msgid  "Tajik"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TG
+msgid  "Installs Tajik support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_KU
+msgid  "Kurdish"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_KU
+msgid  "Installs Kurdish support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_DZ
+msgid  "Dzongkha"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_DZ
+msgid  "Installs Dzongkha support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_KA
+msgid  "Georgian"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_KA
+msgid  "Installs Georgian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EO
+msgid  "Esperanto"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EO
+msgid  "Installs Esperanto support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GU
+msgid  "Gujarati"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_GU
+msgid  "Installs Gujarati support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EN_ZA
+msgid  "English (South Africa)"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EN_ZA
+msgid  "Installs English (South Africa) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_EN_GB
+msgid  "English (United Kingdom)"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_EN_GB
+msgid  "Installs English (United Kingdom) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UR_IN
+msgid  "Urdu"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_UR_IN
+msgid  "Installs Urdu support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_ML_IN
+msgid  "Malayalam"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_ML_IN
+msgid  "Installs Malayalam support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TE_IN
+msgid  "Telugu"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TE_IN
+msgid  "Installs Telugu support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_TI_ER
+msgid  "Tigrinya"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_TI_ER
+msgid  "Installs Tigrinya support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UZ
+msgid  "Uzbek"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_UZ
+msgid  "Installs Uzbek support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_MN
+msgid  "Mongolian"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_MN
+msgid  "Installs Mongolian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_OC
+msgid  "Occitan"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_OC
+msgid  "Installs Occitan support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_UG
+msgid  "Uighur"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_UG
+msgid  "Installs Uighur support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_SI
+msgid  "Sinhala"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_SI
+msgid  "Installs Sinhala support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_OM
+msgid  "Oromo"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_OM
+msgid  "Installs Oromo support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_AST
+msgid  "Asturian"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_AST
+msgid  "Installs Asturian support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_NAME_MODULE_LANGPACK_GD
+msgid  "Gaelic (Scotland)"
+msgstr ""
+
+#: source/ooo/module_langpack.ulf#STR_DESC_MODULE_LANGPACK_GD
+msgid  "Installs Gaelic (Scotland) support in %PRODUCTNAME %PRODUCTVERSION"
+msgstr ""
+
+#: source/python/module_python_mailmerge.ulf#STR_NAME_MODULE_OPTIONAL_PYTHON_MAILMERGE
+msgid  "E-mail Mailmerge"
+msgstr ""
+
+#: source/python/module_python_mailmerge.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON_MAILMERGE
+msgid  "Module for %PRODUCTNAME E-mail Mailmerge feature"
+msgstr ""
+
+#: source/python/module_python.ulf#STR_NAME_MODULE_OPTIONAL_PYTHON
+msgid  "Python-UNO Bridge"
+msgstr ""
+
+#: source/python/module_python.ulf#STR_DESC_MODULE_OPTIONAL_PYTHON
+msgid  "Adds the ability to automate %PRODUCTNAME with the python scripting language. See http://udk.openoffice.org/python/python-bridge.html for a complete documentation."
+msgstr ""
+
+#: source/quickstart/module_quickstart.ulf#STR_NAME_MODULE_OPTIONAL_QUICKSTART
+msgid  "Quickstarter"
+msgstr ""
+
+#: source/quickstart/module_quickstart.ulf#STR_DESC_MODULE_OPTIONAL_QUICKSTART
+msgid  "Loads basic components on system start to accelerate start up time of %PRODUCTNAME %PRODUCTVERSION."
+msgstr ""
+
+#: source/sdkoo/module_sdkoo.ulf#STR_NAME_MODULE_OPTIONAL_SDKOO
+msgid  "Software Development Kit (SDK)"
+msgstr ""
+
+#: source/sdkoo/module_sdkoo.ulf#STR_DESC_MODULE_OPTIONAL_SDKOO
+msgid  "The SDK provides all necessary tools, examples and documentation to program with and for the office."
+msgstr ""
+
+#: source/winexplorerext/module_winexplorerext.ulf#STR_NAME_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
+msgid  "Windows Explorer Extension"
+msgstr ""
+
+#: source/winexplorerext/module_winexplorerext.ulf#STR_DESC_MODULE_OPTIONAL_WINDOWS_EXPLORER_EXTENSIONS
+msgid  "Enables the Microsoft Windows Explorer to show information about %PRODUCTNAME documents, such as thumbnail previews."
+msgstr ""
+
+#: source/writer/folderitem_writer.ulf#STR_FI_NAME_HTMLDOKUMENT
+msgid  "HTML Document"
+msgstr ""
+
+#: source/writer/folderitem_writer.ulf#STR_FI_NAME_TEXTDOKUMENT
+msgid  "Text Document"
+msgstr ""
+
+#: source/writer/folderitem_writer.ulf#STR_FI_TOOLTIP_WRITER
+msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using Writer."
+msgstr ""
+
+#: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_TEXT
+msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document"
+msgstr ""
+
+#: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_MASTERDOC
+msgid  "%SXWFORMATNAME %SXWFORMATVERSION Master Document"
+msgstr ""
+
+#: source/writer/registryitem_writer.ulf#STR_REG_VAL_SO60_WRITER_TEMPLATE
+msgid  "%SXWFORMATNAME %SXWFORMATVERSION Text Document Template"
+msgstr ""
+
+#: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_WRITER
+msgid  "OpenDocument Text"
+msgstr ""
+
+#: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_WRITER_TEMPLATE
+msgid  "OpenDocument Text Template"
+msgstr ""
+
+#: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_MASTERDOC
+msgid  "OpenDocument Master Document"
+msgstr ""
+
+#: source/writer/registryitem_writer.ulf#STR_REG_VAL_OO_WEBDOC
+msgid  "HTML Document Template"
+msgstr ""
+
+#: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_DOCUMENT_OLD
+msgid  "Microsoft Word 97-2003 Document"
+msgstr ""
+
+#: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_DOCUMENT
+msgid  "Microsoft Word Document"
+msgstr ""
+
+#: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_TEMPLATE_OLD
+msgid  "Microsoft Word 97-2003 Template"
+msgstr ""
+
+#: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_WORD_TEMPLATE
+msgid  "Microsoft Word Template"
+msgstr ""
+
+#: source/writer/registryitem_writer.ulf#STR_REG_VAL_MS_RTF_DOCUMENT
+msgid  "Rich Text Document"
+msgstr ""
+
+#: source/writer/registryitem_writer.ulf#STR_REG_VAL_NEW
+msgid  "&New"
+msgstr ""
+
+#: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT
+msgid  "%PRODUCTNAME Writer"
+msgstr ""
+
+#: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT
+msgid  "Create and edit text and graphics in letters, reports, documents and Web pages by using %PRODUCTNAME Writer."
+msgstr ""
+
+#: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_BIN
+msgid  "Program Module"
+msgstr ""
+
+#: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_BIN
+msgid  "The application %PRODUCTNAME Writer"
+msgstr ""
+
+#: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_HELP
+msgid  "%PRODUCTNAME Writer Help"
+msgstr ""
+
+#: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_HELP
+msgid  "Help about %PRODUCTNAME Writer"
+msgstr ""
+
+#: source/writer/module_writer.ulf#STR_NAME_MODULE_PRG_WRT_WRITER2LATEX
+msgid  "LaTeX Export"
+msgstr ""
+
+#: source/writer/module_writer.ulf#STR_DESC_MODULE_PRG_WRT_WRITER2LATEX
+msgid  "LaTeX export filter for Writer documents."
+msgstr ""
+
+#: source/xsltfilter/module_xsltfilter.ulf#STR_NAME_MODULE_OPTIONAL_XSLTFILTERSAMPLES
+msgid  "XSLT Sample Filters"
+msgstr ""
+
+#: source/xsltfilter/module_xsltfilter.ulf#STR_DESC_MODULE_OPTIONAL_XSLTFILTERSAMPLES
+msgid  "XSLT Sample Filters"
+msgstr ""

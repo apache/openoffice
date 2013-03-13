@@ -1,904 +1,680 @@
-"X-Accelerator-Marker: ~\n"
-
-#: alreadyopen.src#STR_ALREADYOPEN_MSG.string.text
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
 msgid ""
-"Document file '$(ARG1)' is locked for editing by yourself on a different "
-"system since $(ARG2)\n"
-"\n"
-"Open document read-only, or ignore own file locking and open the document "
-"for editing.\n"
-"\n"
 msgstr ""
-"문서 파일 '$(ARG1)'은(는) $(ARG2) 부터 다른 시스템에서 편집 중입니다.\n"
-"\n"
-"문서를 읽기 전용으로 열거나 문서의 사본을 열어 편집하십시오.\n"
-"\n"
-
-#: alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.string.text
-msgctxt "alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.string.text"
-msgid "Open ~Read-Only"
-msgstr "읽기 전용 열기(~R)"
-
-#: alreadyopen.src#STR_ALREADYOPEN_OPEN_BTN.string.text
-msgid "~Open"
-msgstr "열기(~O)"
-
-#: alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.string.text
-msgid ""
-"Document file '$(ARG1)' is locked for editing by yourself on a different "
-"system since $(ARG2)\n"
-"\n"
-"Close document on other system and retry saving or ignore own file locking "
-"and save current document.\n"
-"\n"
-msgstr ""
-"문서 파일 '$(ARG1)'은(는) $(ARG2) 부터 다른 시스템에서 편집 중입니다.\n"
-"\n"
-"다른 시스템의 문서를 닫거나, 저장을 다시 시도하십시오. 또는 파일 잠금을 무시하고 현재 문서를 저장하십시오.\n"
-"\n"
-
-#: alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.string.text
-msgctxt "alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.string.text"
-msgid "~Retry Saving"
-msgstr "저장 재시도(~R)"
-
-#: alreadyopen.src#STR_ALREADYOPEN_SAVE_BTN.string.text
-msgid "~Save"
-msgstr "저장(~S)"
-
-#: cookiedg.src#DLG_COOKIES.RB_INFUTURE_SEND.radiobutton.text
-msgctxt "cookiedg.src#DLG_COOKIES.RB_INFUTURE_SEND.radiobutton.text"
-msgid "~Send"
-msgstr "전송(~S)"
-
-#: cookiedg.src#DLG_COOKIES.RB_INFUTURE_IGNORE.radiobutton.text
-msgid "I~gnore"
-msgstr "무시(~G)"
-
-#: cookiedg.src#DLG_COOKIES.RB_INFUTURE_INTERACTIVE.radiobutton.text
-msgid "I~nteractive"
-msgstr "대화식(~N)"
-
-#: cookiedg.src#DLG_COOKIES.GB_INFUTURE.groupbox.text
-msgid "Future Cookie Handling"
-msgstr "쿠키 차후 처리 대안"
-
-#: cookiedg.src#DLG_COOKIES.BTN_COOKIES_CANCEL.pushbutton.text
-msgid "~Ignore"
-msgstr "무시(~I)"
-
-#: cookiedg.src#DLG_COOKIES.BTN_COOKIES_OK.pushbutton.text
-msgctxt "cookiedg.src#DLG_COOKIES.BTN_COOKIES_OK.pushbutton.text"
-msgid "~Send"
-msgstr "전송(~S)"
-
-#: cookiedg.src#STR_COOKIES_RECV_START.string.text
-msgid ""
-"The '${HOST}' server wishes to set one or more cookies.\n"
-"Cookies contain information referring to certain URL classes. If %"
-"PRODUCTNAME later requests a document with a URL corresponding to the class "
-"of a previously set cookie, %PRODUCTNAME will send this information to the "
-"server. This allows a server to recognize the status of a WWW application, "
-"e.g., when shopping online.\n"
-"\n"
-"The following Cookies should be set:\n"
-"\n"
-msgstr ""
-"'${HOST}'서버에서는 하나 이상의 쿠키를 설정해야 합니다.\n"
-"쿠키는 URL의 특정 클래스에 관련된 정보입니다. 차후에 %PRODUCTNAME 이(가) 이전에 수신한 쿠키의 클래스에 따른 URL에 "
-"상응하는 문서를 요구하면, %PRODUCTNAME은(는) 그 정보를 서버에 보내게 됩니다. 이렇게 해서 서버는 WWW 응용 프로그램의 "
-"상태(예를 들어 온라인 쇼핑에서 바구니에 넣은 물건)를 인식할 수 있습니다.\n"
-"\n"
-"다음과 같은 쿠키가 설정되어야 합니다:\n"
-"\n"
-
-#: cookiedg.src#STR_COOKIES_RECV_COOKIES.string.text
-msgctxt "cookiedg.src#STR_COOKIES_RECV_COOKIES.string.text"
-msgid "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
-msgstr "도메인: ${DOMAIN}, 경로: ${PATH}, 쿠키 : ${COOKIE}.\n"
-
-#: cookiedg.src#STR_COOKIES_RECV_TITLE.string.text
-msgid "Cookie Reception"
-msgstr "쿠키 수신"
-
-#: cookiedg.src#STR_COOKIES_SEND_START.string.text
-msgid ""
-"%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent "
-"when requesting the document ${PATH}.\n"
-"Cookies contain information which refers to certain URL classes. They are "
-"sent by some servers to %PRODUCTNAME where they are saved when certain "
-"documents are accessed. If %PRODUCTNAME loads a document that, according to "
-"the URL, corresponds to a class of one of the previously received Cookies, %"
-"PRODUCTNAME will send this information to that server. This enables a server "
-"to keep track of the status of a WWW application, e.g., when shopping "
-"online.\n"
-"\n"
-"The following Cookies should be set:\n"
-"\n"
-msgstr ""
-"%PRODUCTNAME에서 서버'$(HOST)'용으로 문서${PATH} 요구시 전송될 쿠키를 저장하였습니다.\n"
-"쿠키는 URL의 특정 클래스에 관련된 정보입니다. 쿠키는 특정 문서들을 불러 올 때 여러 서버들에 의해 %PRODUCTNAME에 보내져서 "
-"그곳에 저장됩니다. 차후에 %PRODUCTNAME이(가) 이전에 수신한 쿠키의 클래스에 따른 URL에 상응하는 문서를 요구하면 %"
-"PRODUCTNAME이(가）그 정보를 서버에 보내게 됩니다. 이렇게 해서 서버는 WWW 응용 프로그램의 상태(예를 들어 온라인 "
-"쇼핑에서　바구니에 넣은 물건)를 인식하게 됩니다.\n"
-"\n"
-"다음과 같은 쿠키가 설정되어야 합니다:\n"
-"\n"
-
-#: cookiedg.src#STR_COOKIES_SEND_COOKIES.string.text
-msgctxt "cookiedg.src#STR_COOKIES_SEND_COOKIES.string.text"
-msgid "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
-msgstr "도메인: ${DOMAIN}, 경로: ${PATH}, 쿠키: ${COOKIE}.\n"
-
-#: cookiedg.src#STR_COOKIES_SEND_TITLE.string.text
-msgid "Send Cookies"
-msgstr "쿠키 전송"
-
-#: filechanged.src#STR_FILECHANGED_TITLE.string.text
-msgid "Document Has Been Changed by Others"
-msgstr "다른 사용자가 문서를 변경함"
-
-#: filechanged.src#STR_FILECHANGED_MSG.string.text
-msgid ""
-"The file has been changed since it was opened for editing in %PRODUCTNAME. "
-"Saving your version of the document will overwrite changes made by others.\n"
-"\n"
-"Do you want to save anyway?\n"
-"\n"
-msgstr ""
-"%PRODUCTNAME 에서 편집을 위해 연 파일이 변경되었습니다. 저장을 하면 다른 사람이 변경한 내용을 덮어쓰기 할 것입니다.\n"
-"\n"
-"정말 저장하시겠습니까?\n"
-"\n"
-
-#: filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.string.text
-msgid "~Save Anyway"
-msgstr "강제로 저장(~S)"
-
-#: fltdlg.src#DLG_FILTER_SELECT.modaldialog.text
-msgid "Filter Selection"
-msgstr "필터 선택"
-
-#: ids.src#RID_KEEP_PASSWORD.string.text
-msgid "~Remember password until end of session"
-msgstr "세션이 끝날 때까지 암호 기억(~R)"
-
-#: ids.src#RID_SAVE_PASSWORD.string.text
-msgctxt "ids.src#RID_SAVE_PASSWORD.string.text"
-msgid "~Remember password"
-msgstr "암호 기억(~R)"
-
-#: ids.src#STR_WARNING_BROKENSIGNATURE_TITLE.string.text
-msgid "Invalid Document Signature"
-msgstr "잘못된 문서 서명"
-
-#: ids.src#STR_WARNING_INCOMPLETE_ENCRYPTION_TITLE.string.text
-msgid "Non-Encrypted Streams"
-msgstr "암호화되지 않은 스트림"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_ABORT___ERRCODE_RES_MASK_.string.text
-msgid "The operation executed on $(ARG1) was aborted."
-msgstr "$(ARG1)에서 실행 중이던 작업이 중단되었습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_ACCESSDENIED___ERRCODE_RES_MASK_.string.text
-msgid "Access to $(ARG1) was denied."
-msgstr "$(ARG1)에 대한 액세스가 거부되었습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_ALREADYEXISTS___ERRCODE_RES_MASK_.string.text
-msgid "$(ARG1) already exists."
-msgstr "$(ARG1)이(가) 이미 있습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_TARGETALREADYEXISTS___ERRCODE_RES_MASK_.string.text
-msgid "Target already exists."
-msgstr "대상이 이미 있습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_MODULESIZEEXCEEDED___ERRCODE_RES_MASK_.string.text
-msgid ""
-"You are about to save/export a password protected basic library containing "
-"module(s) \n"
-"$(ARG1)\n"
-"which are too large to store in binary format. If you wish users that don't "
-"have access to the library password to be able to run macros in those "
-"module(s) you must split those modules into a number of smaller modules. Do "
-"you wish to continue to save/export this library?"
-msgstr ""
-"너무 커서 바이너리 형식으로 저장할 수 없는 모듈 \n"
-"$(ARG1)이(가)\n"
-"포함된 암호로 보호된 기본 라이브러리를 저장하거나 내보내려고 합니다. 라이브러리 암호에 대한 액세스 권한이 없는 사용자가 이러한 모듈에서 "
-"매크로를 실행할 수 있도록 하려면 이 모듈을 여러 개의 작은 모듈로 분할해야 합니다. 이 라이브러리를 저장하거나 내보내시겠습니까?"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_BADCRC___ERRCODE_RES_MASK_.string.text
-msgid "The data from $(ARG1) has an incorrect checksum."
-msgstr "$(ARG1) 데이터의 체크섬이 올바르지 않습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_CANTCREATE___ERRCODE_RES_MASK_.string.text
-msgid "The object $(ARG1) cannot be created in directory $(ARG2)."
-msgstr "$(ARG2) 디렉토리에 $(ARG1) 개체를 만들 수 없습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_CANTREAD___ERRCODE_RES_MASK_.string.text
-msgid "Data of $(ARG1) could not be read."
-msgstr "$(ARG1)의 데이터를 읽지 못했습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_CANTSEEK___ERRCODE_RES_MASK_.string.text
-msgid "The seek operation on $(ARG1) could not be performed."
-msgstr "$(ARG1)에서 찾기 작업을 실행하지 못했습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_CANTTELL___ERRCODE_RES_MASK_.string.text
-msgid "The tell operation on $(ARG1) could not be performed."
-msgstr "$(ARG1)에서 알림 작업을 실행하지 못했습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_CANTWRITE___ERRCODE_RES_MASK_.string.text
-msgid "Data for $(ARG1) could not be written."
-msgstr "$(ARG1)의 데이터를 기록하지 못했습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_CURRENTDIR___ERRCODE_RES_MASK_.string.text
-msgid "Action impossible: $(ARG1) is the current directory."
-msgstr "작업 불가능: $(ARG1)은(는) 현재 디렉토리입니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTREADY___ERRCODE_RES_MASK_.string.text
-msgid "$(ARG1) is not ready."
-msgstr "$(ARG1)이(가) 준비되지 않았습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTSAMEDEVICE___ERRCODE_RES_MASK_.string.text
-msgid "Action impossible: $(ARG1) and $(ARG2) are different devices (drives)."
-msgstr "작업 불가능: $(ARG1)과(와) $(ARG2)은(는) 다른 장치(드라이브)입니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_GENERAL___ERRCODE_RES_MASK_.string.text
-msgid "General input/output error while accessing $(ARG1)."
-msgstr "$(ARG1)에 액세스하는 중 일반 입/출력 오류가 발생했습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_INVALIDACCESS___ERRCODE_RES_MASK_.string.text
-msgid "An attempt was made to access $(ARG1) in an invalid way."
-msgstr "유효하지 않은 방법으로 $(ARG1)에 액세스를 시도하였습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_INVALIDCHAR___ERRCODE_RES_MASK_.string.text
-msgid "$(ARG1) contains invalid characters."
-msgstr "$(ARG1)에 유효하지 않은 문자가 있습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_INVALIDDEVICE___ERRCODE_RES_MASK_.string.text
-msgid "The device (drive) $(ARG1) is invalid."
-msgstr "장치(드라이브) $(ARG1)이(가) 유효하지 않습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_INVALIDLENGTH___ERRCODE_RES_MASK_.string.text
-msgid "The data from $(ARG1) has an invalid length."
-msgstr "$(ARG1) 데이터의 길이가 유효하지 않습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_INVALIDPARAMETER___ERRCODE_RES_MASK_.string.text
-msgid "The operation on $(ARG1) was started with an invalid parameter."
-msgstr "$(ARG1)에 대한 작업이 유효하지 않은 매개 변수로 시작되었습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_ISWILDCARD___ERRCODE_RES_MASK_.string.text
-msgid "The operation cannot be performed because $(ARG1) contains wildcards."
-msgstr "$(ARG1)에 와일드카드가 포함되어 있어 작업을 실행할 수 없습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_LOCKVIOLATION___ERRCODE_RES_MASK_.string.text
-msgid "Error during shared access to $(ARG1)."
-msgstr "$(ARG1)을 공동 액세스하는 동안 오류가 발생했습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_MISPLACEDCHAR___ERRCODE_RES_MASK_.string.text
-msgid "$(ARG1) contains misplaced characters."
-msgstr "$(ARG1)에 잘못 배치된 문자가 포함되어 있습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NAMETOOLONG___ERRCODE_RES_MASK_.string.text
-msgid "The name $(ARG1) contains too many characters."
-msgstr "이름 $(ARG1)의 길이가 너무 깁니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTEXISTS___ERRCODE_RES_MASK_.string.text
-msgid "$(ARG1) does not exist."
-msgstr "$(ARG1)이(가) 없습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTEXISTSPATH___ERRCODE_RES_MASK_.string.text
-msgid "The path $(ARG1) does not exist."
-msgstr "경로 $(ARG1)이(가) 없습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTSUPPORTED___ERRCODE_RES_MASK_.string.text
-msgid "The operation on $(ARG1) is not supported on this operating system."
-msgstr "이 운영 체제에서 $(ARG1)의 작업이 지원되지 않습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTADIRECTORY___ERRCODE_RES_MASK_.string.text
-msgid "$(ARG1) is not a directory."
-msgstr "$(ARG1)이(가) 디렉토리가 아닙니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTAFILE___ERRCODE_RES_MASK_.string.text
-msgid "$(ARG1) is not a file."
-msgstr "$(ARG1)이(가) 파일이 아닙니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_OUTOFSPACE___ERRCODE_RES_MASK_.string.text
-msgid "There is no space left on device $(ARG1)."
-msgstr "장치 $(ARG1)에 더 이상 공간이 없습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_TOOMANYOPENFILES___ERRCODE_RES_MASK_.string.text
-msgid ""
-"The operation on $(ARG1) cannot be performed because too many files are "
-"already open."
-msgstr "열린 파일이 너무 많아 $(ARG1)에 대한 작업을 실행할 수 없습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_OUTOFMEMORY___ERRCODE_RES_MASK_.string.text
-msgid ""
-"The operation on $(ARG1) cannot be performed because there is no more memory "
-"available."
-msgstr "사용 가능한 메모리가 부족하여 $(ARG1)에 대한 작업을 실행할 수 없습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_PENDING___ERRCODE_RES_MASK_.string.text
-msgid "The operation on $(ARG1) cannot continue because more data is pending."
-msgstr "다른 데이터가 보류 중이므로 $(ARG1)에 대한 작업을 계속할 수 없습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_RECURSIVE___ERRCODE_RES_MASK_.string.text
-msgid "$(ARG1) cannot be copied into itself."
-msgstr "$(ARG1)을(를) $(ARG1)에 복사할 수 없습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_UNKNOWN___ERRCODE_RES_MASK_.string.text
-msgid "Unknown input/output error while accessing $(ARG1)."
-msgstr "$(ARG1)에 액세스하는 중 알 수 없는 입/출력 오류가 발생했습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_WRITEPROTECTED___ERRCODE_RES_MASK_.string.text
-msgid "$(ARG1) is write protected."
-msgstr "$(ARG1)은(는) 쓰기 보호되었습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_WRONGFORMAT___ERRCODE_RES_MASK_.string.text
-msgid "$(ARG1) is not in the correct format."
-msgstr "$(ARG1)의 형식이 올바르지 않습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_WRONGVERSION___ERRCODE_RES_MASK_.string.text
-msgid "The version of $(ARG1) is not correct."
-msgstr "$(ARG1)의 버전이 올바르지 않습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTEXISTS_VOLUME___ERRCODE_RES_MASK_.string.text
-msgid "Drive $(ARG1) does not exist."
-msgstr "$(ARG1) 드라이브가 없습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTEXISTS_FOLDER___ERRCODE_RES_MASK_.string.text
-msgid "Folder $(ARG1) does not exist."
-msgstr "$(ARG1) 폴더가 없습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_WRONGJAVA___ERRCODE_RES_MASK_.string.text
-msgid "The installed Java version is not supported."
-msgstr "설치된 Java 버전은 지원되지 않습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_WRONGJAVA_VERSION___ERRCODE_RES_MASK_.string.text
-msgid "The installed Java version $(ARG1) is not supported."
-msgstr "설치된 Java 버전 $(ARG1)이(가) 지원되지 않습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_WRONGJAVA_MIN___ERRCODE_RES_MASK_.string.text
-msgid ""
-"The installed Java version is not supported, at least version $(ARG1) is "
-"required."
-msgstr "설치된 Java 버전이 지원되지 않으며 최소한 버전 $(ARG1)이(가) 필요합니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_WRONGJAVA_VERSION_MIN___ERRCODE_RES_MASK_.string.text
-msgid ""
-"The installed Java version $(ARG1) is not supported, at least version "
-"$(ARG2) is required."
-msgstr "설치된 Java 버전 $(ARG1)이(가) 지원되지 않으며 최소한 버전 $(ARG2)이(가) 필요합니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_BADPARTNERSHIP___ERRCODE_RES_MASK_.string.text
-msgid "The data associated with the partnership is corrupted."
-msgstr "협력 관계와 관련된 데이터가 손상되었습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_BADPARTNERSHIP_NAME___ERRCODE_RES_MASK_.string.text
-msgid "The data associated with the partnership $(ARG1) is corrupted."
-msgstr "협력 관계 $(ARG1)과(와) 관련된 데이터가 손상되었습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTREADY_VOLUME___ERRCODE_RES_MASK_.string.text
-msgid "Volume $(ARG1) is not ready."
-msgstr "볼륨 $(ARG1)이(가) 준비되지 않았습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTREADY_REMOVABLE___ERRCODE_RES_MASK_.string.text
-msgid "$(ARG1) is not ready; please insert a storage medium."
-msgstr "$(ARG1)이(가) 준비되지 않았습니다. 저장 매체를 넣으십시오."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTREADY_VOLUME_REMOVABLE___ERRCODE_RES_MASK_.string.text
-msgid "Volume $(ARG1) is not ready; please insert a storage medium."
-msgstr "볼륨 $(ARG1)이(가) 준비되지 않았습니다. 저장 매체를 넣으십시오."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_WRONGMEDIUM___ERRCODE_RES_MASK_.string.text
-msgid "Please insert disk $(ARG1)."
-msgstr "디스크 $(ARG1)을(를) 넣으십시오."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_CANTCREATE_NONAME___ERRCODE_RES_MASK_.string.text
-msgid "The object cannot be created in directory $(ARG1)."
-msgstr "$(ARG1) 디렉토리에 개체를 만들 수 없습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_UNSUPPORTEDOVERWRITE___ERRCODE_RES_MASK_.string.text
-msgid ""
-"%PRODUCTNAME cannot keep files from being overwritten when this transmission "
-"protocol is used. Do you want to continue anyway?"
-msgstr ""
-"%PRODUCTNAME은(는) 전송 프로토콜이 사용되고 있는 한 파일이 겹쳐쓰기되는 것을 막을 수 없습니다. 그래도 계속 "
-"진행하시겠습니까?"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_BROKENPACKAGE___ERRCODE_RES_MASK_.string.text
-msgid ""
-"The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME "
-"can try to repair the file.\n"
-"\n"
-"The corruption could be the result of document manipulation or of structural "
-"document damage due to data transmission.\n"
-"\n"
-"We recommend that you do not trust the content of the repaired document.\n"
-"Execution of macros is disabled for this document.\n"
-"\n"
-"Should %PRODUCTNAME repair the file?\n"
-msgstr ""
-"'$(ARG1)' 파일은 손상되었으므로 열 수 없습니다. %PRODUCTNAME에서 파일을 복구하려고 할 수 있습니다.\n"
-"\n"
-"이 손상은 문서 조작이나 데이터 전송으로 인한 문서 구조상의 손상 때문일 수 있습니다.\n"
-"\n"
-"복구된 문서의 내용을 신뢰하지 않는 것이 좋습니다.\n"
-"이 문서의 매크로를 실행할 수 없습니다.\n"
-"\n"
-"%PRODUCTNAME(으)로 파일을 복구하시겠습니까?\n"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR___ERRCODE_RES_MASK_.string.text
-msgid ""
-"The file '$(ARG1)' could not be repaired and therefore cannot be opened."
-msgstr "'$(ARG1)' 파일은 복구하지 못했으므로 열 수 없습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE___ERRCODE_RES_MASK_.string.text
-msgid ""
-"Configuration data in '$(ARG1)' is corrupted. Without this data some "
-"functions may not operate correctly.\n"
-"Do you want to continue startup of %PRODUCTNAME without the corrupted "
-"configuration data?"
-msgstr ""
-"'$(ARG1)'의 구성 데이터가 손상되었습니다. 이 데이터가 없으면 일부 기능이 제대로 동작하지 않을 수 있습니다.\n"
-"손상된 구성 데이터 없이 %PRODUCTNAME을(를) 시작하시겠습니까?"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE___ERRCODE_RES_MASK_.string.text
-msgid ""
-"The personal configuration file '$(ARG1)' is corrupted and must be deleted "
-"to continue. Some of your personal settings may be lost.\n"
-"Do you want to continue startup of %PRODUCTNAME without the corrupted "
-"configuration data?"
-msgstr ""
-"개인 구성 파일 '$(ARG1)'이(가) 손상되었습니다. 계속하려면 이 파일을 삭제해야 합니다. 일부 개인 설정이 손상된 것 같습니다.\n"
-"손상된 구성 데이터 없이 %PRODUCTNAME을(를) 시작하시겠습니까?"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_CONFIGURATION_BACKENDMISSING___ERRCODE_RES_MASK_.string.text
-msgid ""
-"The configuration data source '$(ARG1)' is unavailable. Without this data "
-"some functions may not operate correctly."
-msgstr ""
-"구성 데이터 원본 '$(ARG1)'을(를) 사용할 수 없습니다. 이 데이터가 없으면 일부 기능이 제대로 동작하지 않을 수 있습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER___ERRCODE_RES_MASK_.string.text
-msgid ""
-"The configuration data source '$(ARG1)' is unavailable. Without this data "
-"some functions may not operate correctly.\n"
-"Do you want to continue startup of %PRODUCTNAME without the missing "
-"configuration data?"
-msgstr ""
-"구성 데이터 원본 '$(ARG1)'을(를) 사용할 수 없습니다. 이 데이터가 없으면 일부 기능이 제대로 동작하지 않을 수 있습니다.\n"
-"누락된 구성 데이터 없이 %PRODUCTNAME을(를) 시작하시겠습니까?"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA___ERRCODE_RES_MASK_.string.text
-msgid "The form contains invalid data. Do you still want to continue?"
-msgstr "양식에 잘못된 데이터가 포함되어 있습니다. 계속하시겠습니까?"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_LOCKING_LOCKED___ERRCODE_RES_MASK_.string.text
-msgid ""
-"The file $(ARG1) is locked by another user. Currently, another write access "
-"to this file cannot be granted."
-msgstr "파일 $(ARG1)이(가) 다른 사용자에 의해 잠겨 있습니다. 현재 이 파일에 대한 또 다른 쓰기 접근을 부여할 수 없습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_LOCKING_LOCKED_SELF___ERRCODE_RES_MASK_.string.text
-msgid ""
-"The file $(ARG1) is locked by yourself. Currently, another write access to "
-"this file cannot be granted."
-msgstr "파일 $(ARG1)이(가) 사용자에 의해 잠겨 있습니다. 현재 이 파일에 대한 또 다른 쓰기 접근을 부여할 수 없습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_LOCKING_NOT_LOCKED___ERRCODE_RES_MASK_.string.text
-msgid "The file $(ARG1) is currently not locked by yourself."
-msgstr "파일 $(ARG1)이(가) 사용자에 의해 잠겨 있지 않습니다."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_LOCKING_LOCK_EXPIRED___ERRCODE_RES_MASK_.string.text
-msgid ""
-"The previously obtained lock for file $(ARG1) has expired.\n"
-"This can happen due to problems on the server managing the file lock. It "
-"cannot be guaranteed that write operations on this file will not overwrite "
-"changes done by other users!"
-msgstr ""
-"파일 $(ARG1)에 대해 기존에 획득한 잠금이 만료되었습니다.\n"
-"이는 파일 잠금을 관리하는 서버의 문제로 인하여 발생할 수 있습니다. 이 파일에 대한 쓰기 동작이 다른 사용자가 변경한 사항을 덮어쓰지 "
-"않는다고 보장할 수 없습니다!"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_UNKNOWNAUTH_UNTRUSTED_.string.text
-msgid ""
-"Unable to verify the identity of $(ARG1) site.\n"
-"\n"
-"Before accepting this certificate, you should examine this site's "
-"certificate carefully. Are you willing to accept this certificate for the "
-"purpose of identifying the Web site $(ARG1)?"
-msgstr ""
-"$(ARG1) 사이트의 정체를 확인할 수 없습니다.\n"
-"\n"
-"이 인증을 수락하기 전에 이 사이트의 인증을 재확인해야 합니다. $(ARG1) 사이트 확인을 위해 이 인증을 수락하시겠습니까?"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_SSLWARN_EXPIRED_1_.string.text
-msgid ""
-"$(ARG1) is a site that uses a security certificate to encrypt data during "
-"transmission, but its certificate expired on $(ARG2).\n"
-"\n"
-"You should check to make sure that your computer's time is correct."
-msgstr ""
-"$(ARG1) 은(는) 암호화된 데이터를 통한 보안 인증을 제공하는 사이트입니다. 하지만 이 인증은 $(ARG2) 에서 기한만료된 "
-"것입니다.\n"
-"\n"
-"컴퓨터 시각이 정확한지 확인하십시오."
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_SSLWARN_DOMAINMISMATCH_1_.string.text
-msgid ""
-"You have attempted to establish a connection with $(ARG1). However, the "
-"security certificate presented belongs to $(ARG2). It is possible, though "
-"unlikely, that someone may be trying to intercept your communication with "
-"this web site.\n"
-"\n"
-"If you suspect the certificate shown does not belong to $(ARG1), please "
-"cancel the connection and notify the site administrator.\n"
-"\n"
-"Would you like to continue anyway?"
-msgstr ""
-"$(ARG1) 을(를) 통해 접속을 시도했습니다. 하지만 보안 인증은 $(ARG2) 에 속한 것입니다. 누군가 이 웹사이트에 접속한 "
-"당신의 정보를 가로채려는 것일 수 있습니다.\n"
-"\n"
-"$(ARG1) 에 해당되지 않는 인증이 의심된다면, 접속을 취소하고 사이트 관리자에게 통보하십시오.\n"
-"\n"
-"계속하시겠습니까?"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_SSLWARN_INVALID_1_.string.text
-msgid ""
-"The certificate could not be validated. You should examine this site's "
-"certificate carefully.\n"
-"\n"
-"If you suspect the certificate shown, please cancel the connection and "
-"notify the site administrator."
-msgstr ""
-"인증을 확인할 수 없습니다. 이 사이트의 인증을 재확인해야 합니다.\n"
-"\n"
-"인증이 의심된다면, 접속을 취소하고 사이트 관리자에게 통보하십시오."
-
-#: ids.src#RID_UUI_ERRHDL._TITLE_UUI_SSLWARN_DOMAINMISMATCH_.string.text
-msgid "Security Warning: Domain Name Mismatch"
-msgstr "보안 경고: 도메인명 불일치"
-
-#: ids.src#RID_UUI_ERRHDL._TITLE_UUI_SSLWARN_EXPIRED_.string.text
-msgid "Security Warning: Server Certificate Expired"
-msgstr "보안 경고: 서버 인증 만료"
-
-#: ids.src#RID_UUI_ERRHDL._TITLE_UUI_SSLWARN_INVALID_.string.text
-msgid "Security Warning: Server Certificate Invalid"
-msgstr "보안 경고: 서버 인증 무효"
-
-#: lockfailed.src#STR_LOCKFAILED_MSG.string.text
-msgid ""
-"The file could not be locked for exclusive access by %PRODUCTNAME, due to "
-"missing permission to create a lock file on that file location."
-msgstr ""
-"파일이 있는 위치에 잠금 파일을 생성하기 위한 권한이 없으므로 %PRODUCTNAME이(가) 배타적 접근을 위해 파일을 잠글 수 "
-"없습니다."
-
-#: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_ERROR.fixedtext.text
-msgid "Message from server:"
-msgstr "서버로부터의 메시지:"
-
-#: logindlg.src#DLG_UUI_LOGIN.FT_INFO_LOGIN_REQUEST.fixedtext.text
-msgid ""
-"Enter user name and password for: \n"
-"%1"
-msgstr ""
-"다음을 위한 사용자 이름과 암호 입력: \n"
-"%1"
-
-#: logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.string.text
-msgid ""
-"Enter user name and password for: \n"
-"\"%2\" on %1"
-msgstr ""
-"다음을 위한 사용자 이름과 암호 입력: \n"
-"%1에 대한 \"%2\" "
-
-#: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.fixedtext.text
-msgid "~Path"
-msgstr "경로(~P)"
-
-#: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_USERNAME.fixedtext.text
-msgid "~User name"
-msgstr "사용자 이름(~U)"
-
-#: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PASSWORD.fixedtext.text
-msgid "Pass~word"
-msgstr "암호(~W)"
-
-#: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_ACCOUNT.fixedtext.text
-msgid "A~ccount"
-msgstr "계정(~C)"
-
-#: logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_SAVEPASSWORD.checkbox.text
-msgctxt "logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_SAVEPASSWORD.checkbox.text"
-msgid "~Remember password"
-msgstr "암호 기억(~R)"
-
-#: logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_USESYSCREDS.checkbox.text
-msgid "~Use system credentials"
-msgstr "시스템 자격 증명 사용(~U)"
-
-#: logindlg.src#DLG_UUI_LOGIN.modaldialog.text
-msgid "Authentication Required"
-msgstr "인증이 필요함"
-
-#: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_INFOTEXT.fixedtext.text
-msgid ""
-"Passwords for web connections are protected by a master password. You will "
-"be asked to enter it once per session, if %PRODUCTNAME retrieves a password "
-"from the protected password list."
-msgstr ""
-"웹 접속을 위한 암호는 마스터 암호에 의해 보호되어 있습니다. 만약 %PRODUCTNAME 의 보호된 암호 목록에서 암호를 제거하면 "
-"세션마다 암호를 입력해야 합니다."
-
-#: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_CRT.fixedtext.text
-msgid "~Enter password"
-msgstr "암호 입력(~E)"
-
-#: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_REPEAT.fixedtext.text
-msgid "~Reenter password"
-msgstr "암호 재입력(~R)"
-
-#: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_CAUTIONTEXT.fixedtext.text
-msgid ""
-"Caution: If you forget the master password, you will be unable to access any "
-"of the information protected by it. Passwords are case-sensitive."
-msgstr ""
-"주의 : 설정한 마스터 암호를 기억하십시오. 마스터 암호를 잊어버리면 마스터 암호로 보호된 정보에 접근할 수 없습니다. 암호는 대소문자를 "
-"구별하며 최소 5자 이상입니다."
-
-#: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.modaldialog.text
-msgid "Set Master Password"
-msgstr "마스터 암호 설정"
-
-#: masterpassworddlg.src#DLG_UUI_MASTERPASSWORD.FT_MASTERPASSWORD.fixedtext.text
-msgid "Enter password"
-msgstr "암호 입력"
-
-#: masterpassworddlg.src#DLG_UUI_MASTERPASSWORD.modaldialog.text
-msgid "Enter Master Password"
-msgstr "마스터 암호 입력"
-
-#: nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.BTN_OVERWRITE.pushbutton.text
-msgid "Replace"
-msgstr "바꾸기"
-
-#: nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.BTN_RENAME.pushbutton.text
-msgid "Rename"
-msgstr "이름 바꾸기"
-
-#: nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.modaldialog.text
-msgid "File Exists"
-msgstr "파일이 존재함"
-
-#: newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.fixedtext.text
-msgid ""
-"This document was created by a newer version of %PRODUCTNAME. It may contain "
-"features not supported by your current version.\n"
-"\n"
-"Click 'Update Now...' to run online update and get the latest version of %"
-"PRODUCTNAME."
-msgstr ""
-"이 문서는 새 버전의 %PRODUCTNAME으로 작성되었습니다. 따라서 현재 버전에서지원하지 못하는 기능들을 포함하고 있을 수 있습니다.\n"
-"\n"
-"'지금 업데이트...' 버튼을 눌러 %PRODUCTNAME 최신 버전으로 업데이트하십시오."
-
-#: newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.pushbutton.text
-msgid "~Update Now..."
-msgstr "지금 업데이트(~U)..."
-
-#: newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_LATER.cancelbutton.text
-msgid "~Later"
-msgstr "나중에(~L)"
-
-#: newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.modaldialog.text
-msgid "%PRODUCTNAME Update Available"
-msgstr "%PRODUCTNAME 업데이트 가능"
-
-#: openlocked.src#STR_OPENLOCKED_TITLE.string.text
-msgctxt "openlocked.src#STR_OPENLOCKED_TITLE.string.text"
-msgid "Document in Use"
-msgstr "사용 중인 문서"
-
-#: openlocked.src#STR_OPENLOCKED_MSG.string.text
-msgid ""
-"Document file '$(ARG1)' is locked for editing by:\n"
-"\n"
-"$(ARG2)\n"
-"\n"
-"Open document read-only or open a copy of the document for editing.\n"
-"\n"
-msgstr ""
-"문서 파일 '$(ARG1)'은(는) 다음 사용자가 편집 중입니다.\n"
-"\n"
-"$(ARG2)\n"
-"\n"
-"문서를 읽기 전용으로 열거나 문서의 사본을 열어 편집하십시오.\n"
-"\n"
-
-#: openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.string.text
-msgctxt "openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.string.text"
-msgid "Open ~Read-Only"
-msgstr "읽기 전용 열기(~R)"
-
-#: openlocked.src#STR_OPENLOCKED_OPENCOPY_BTN.string.text
-msgid "Open ~Copy"
-msgstr "사본 열기(~C)"
-
-#: openlocked.src#STR_UNKNOWNUSER.string.text
-msgid "Unknown User"
-msgstr "알 수 없는 사용자"
-
-#: passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_OPEN.string.text
-msgid "Enter password to open file: \n"
-msgstr "파일을 열려면 암호를 입력하십시오.: \n"
-
-#: passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_MODIFY.string.text
-msgid "Enter password to modify file: \n"
-msgstr "파일을 수정하려면 암호를 입력하십시오.: \n"
-
-#: passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_SIMPLE_PASSWORD.string.text
-msgid "Enter password: "
-msgstr "암호 입력:"
-
-#: passworddlg.src#DLG_UUI_PASSWORD.STR_CONFIRM_SIMPLE_PASSWORD.string.text
-msgid "Confirm password: "
-msgstr "암호 확인:"
-
-#: passworddlg.src#DLG_UUI_PASSWORD.STR_TITLE_CREATE_PASSWORD.string.text
-msgid "Set Password"
-msgstr "암호 설정"
-
-#: passworddlg.src#DLG_UUI_PASSWORD.STR_TITLE_ENTER_PASSWORD.string.text
-msgid "Enter Password"
-msgstr "암호 입력"
-
-#: passworddlg.src#DLG_UUI_PASSWORD.STR_PASSWORD_MISMATCH.string.text
-msgid ""
-"The confirmation password did not match the password. Set the password again "
-"by entering the same password in both boxes."
-msgstr "암호가 일치하지 않습니다. 두 상자에 같은 암호를 입력하여 암호를 다시 설정하십시오."
-
-#: passworderrs.src#STR_ERROR_PASSWORD_TO_OPEN_WRONG.string.text
-msgid "The password is incorrect. The file cannot be opened."
-msgstr "암호가 올바르지 않습니다. 문서를 열 수 없습니다."
-
-#: passworderrs.src#STR_ERROR_PASSWORD_TO_MODIFY_WRONG.string.text
-msgid "The password is incorrect. The file cannot be modified."
-msgstr "암호가 올바르지 않습니다. 문서를 수정할 수 없습니다."
-
-#: passworderrs.src#STR_ERROR_MASTERPASSWORD_WRONG.string.text
-msgid "The master password is incorrect."
-msgstr ""
-"잘못된 마스터 암호입니다. %PRODUCTNAME 은(는) 마스터 암호로 보호된 웹 로그인 정보에 접근할 수 없습니다.\n"
-"\n"
-"참고 : 암호는 대소문자를 구별하며 최소 5자 이상입니다."
-
-#: passworderrs.src#STR_ERROR_SIMPLE_PASSWORD_WRONG.string.text
-msgid "The password is incorrect."
-msgstr "암호가 올바르지 않습니다."
-
-#: passworderrs.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.string.text
-msgid "The password confirmation does not match."
-msgstr "암호가 일치하지 않습니다."
-
-#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR1A.fixedtext.text
-msgid "The document contains document macros signed by:"
-msgstr "문서에 다음 서명자가 서명한 문서 매크로가 포함되어 있습니다."
-
-#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR1B.fixedtext.text
-msgid "The document contains document macros."
-msgstr "문서에 문서 매크로가 포함되어 있습니다."
-
-#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_VIEWSIGNS.pushbutton.text
-msgid "View Signatures..."
-msgstr "서명 보기..."
-
-#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR2.fixedtext.text
-msgid ""
-"Macros may contain viruses. Disabling macros for a document is always safe. "
-"If you disable macros you may lose functionality provided by the document "
-"macros."
-msgstr ""
-"매크로에 바이러스가 있을 수 있습니다. 문서 매크로를 비활성화하면 바이러스에 대해 염려할 필요가 없습니다. 그러나 매크로를 비활성화하면 "
-"문서 매크로에서 제공하는 기능을 사용할 수 없습니다."
-
-#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.CB_ALWAYSTRUST.checkbox.text
-msgid "Always trust macros from this source"
-msgstr "이 원본의 매크로는 항상 신뢰"
-
-#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_ENABLE.okbutton.text
-msgid "~Enable Macros"
-msgstr "매크로 활성화(~E)"
-
-#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_DISABLE.cancelbutton.text
-msgid "~Disable Macros"
-msgstr "매크로 비활성화(~D)"
-
-#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.modaldialog.text
-msgid "%PRODUCTNAME - Security Warning"
-msgstr "%PRODUCTNAME - 보안 경고"
-
-#: sslwarndlg.src#DLG_UUI_SSLWARN.FT_LABEL_1.fixedtext.text
-msgctxt "sslwarndlg.src#DLG_UUI_SSLWARN.FT_LABEL_1.fixedtext.text"
-msgid "No Text"
-msgstr "글자 없음"
-
-#: sslwarndlg.src#DLG_UUI_SSLWARN.PB_VIEW__CERTIFICATE.pushbutton.text
-msgid "View Certificate"
-msgstr "인증 보기"
-
-#: sslwarndlg.src#DLG_UUI_SSLWARN.PB_CANCEL.cancelbutton.text
-msgid "Cancel Connection"
-msgstr "연결 취소"
-
-#: sslwarndlg.src#DLG_UUI_SSLWARN.PB_OK.pushbutton.text
-msgid "Continue"
-msgstr "계속"
-
-#: sslwarndlg.src#DLG_UUI_SSLWARN.modaldialog.text
-msgid "Security Warning: "
-msgstr "보안 경고: "
-
-#: trylater.src#STR_TRYLATER_TITLE.string.text
-msgctxt "trylater.src#STR_TRYLATER_TITLE.string.text"
-msgid "Document in Use"
-msgstr "사용 중인 문서"
-
-#: trylater.src#STR_TRYLATER_MSG.string.text
-msgid ""
-"Document file '$(ARG1)' is locked for editing by:\n"
-"\n"
-"$(ARG2)\n"
-"\n"
-"Try again later to save document or save a copy of that document.\n"
-"\n"
-msgstr ""
-"문서 파일 '$(ARG1)'은(는) 다음 사용자가 편집 중입니다.\n"
-"\n"
-"$(ARG2)\n"
-"\n"
-"나중에 다시 문서를 저장하거나 문서의 사본으로 저장하십시오.\n"
-"\n"
-
-#: trylater.src#STR_TRYLATER_RETRYSAVING_BTN.string.text
-msgctxt "trylater.src#STR_TRYLATER_RETRYSAVING_BTN.string.text"
-msgid "~Retry Saving"
-msgstr "저장 재시도(~R)"
-
-#: trylater.src#STR_TRYLATER_SAVEAS_BTN.string.text
-msgid "~Save As..."
-msgstr "다른 이름으로 저장...(~S)"
-
-#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_VIEW__CERTIFICATE.pushbutton.text
-msgid "Examine Certificate..."
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.ModalDialog.Text
+msgid  "Website Certified by an Unknown Authority"
+msgstr "알 수 없는 권한에 의한 웹사이트 인증"
+
+#: source/unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_VIEW__CERTIFICATE.PushButton.Text
+msgid  "Examine Certificate..."
 msgstr "인증 확인..."
 
-#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_HELP.helpbutton.text
-msgid "Help"
+#: source/unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_HELP.HelpButton.Text
+msgid  "Help"
 msgstr "도움말"
 
-#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_OK.pushbutton.text
-msgid "OK"
+#: source/unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_OK.PushButton.Text
+msgid  "OK"
 msgstr "확인"
 
-#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.RB_ACCEPT_1.radiobutton.text
-msgid "Accept this certificate temporarily for this session"
+#: source/unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.RB_ACCEPT_1.RadioButton.Text
+msgid  "Accept this certificate temporarily for this session"
 msgstr "현재 세션에서만 임시적으로 인증 수락"
 
-#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.RB_DONTACCEPT_2.radiobutton.text
-msgid "Do not accept this certificate and do not connect to this Web site"
+#: source/unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.RB_DONTACCEPT_2.RadioButton.Text
+msgid  "Do not accept this certificate and do not connect to this Web site"
 msgstr "인증 거부 및 사이트 접속 안함"
 
-#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.FT_LABEL_1.fixedtext.text
-msgctxt "unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.FT_LABEL_1.fixedtext.text"
-msgid "No Text"
+#: source/unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.FT_LABEL_1.FixedText.Text
+msgid  "No Text"
 msgstr "글자 없음"
 
-#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.modaldialog.text
-msgid "Website Certified by an Unknown Authority"
-msgstr "알 수 없는 권한에 의한 웹사이트 인증"
+#: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_OPEN.String.Text
+msgid  "Enter password to open file: \n"
+msgstr "파일을 열려면 암호를 입력하십시오.: \n"
+
+#: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_MODIFY.String.Text
+msgid  "Enter password to modify file: \n"
+msgstr "파일을 수정하려면 암호를 입력하십시오.: \n"
+
+#: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_SIMPLE_PASSWORD.String.Text
+msgid  "Enter password: "
+msgstr "암호 입력:"
+
+#: source/passworddlg.src#DLG_UUI_PASSWORD.STR_CONFIRM_SIMPLE_PASSWORD.String.Text
+msgid  "Confirm password: "
+msgstr "암호 확인:"
+
+#: source/passworddlg.src#DLG_UUI_PASSWORD.STR_TITLE_CREATE_PASSWORD.String.Text
+msgid  "Set Password"
+msgstr "암호 설정"
+
+#: source/passworddlg.src#DLG_UUI_PASSWORD.STR_TITLE_ENTER_PASSWORD.String.Text
+msgid  "Enter Password"
+msgstr "암호 입력"
+
+#: source/passworddlg.src#DLG_UUI_PASSWORD.STR_PASSWORD_MISMATCH.String.Text
+msgid  "The confirmation password did not match the password. Set the password again by entering the same password in both boxes."
+msgstr ""
+
+#: source/trylater.src#STR_TRYLATER_TITLE.String.Text
+msgid  "Document in Use"
+msgstr "사용 중인 문서"
+
+#: source/trylater.src#STR_TRYLATER_MSG.String.Text
+msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nTry again later to save document or save a copy of that document.\n\n"
+msgstr ""
+
+#: source/trylater.src#STR_TRYLATER_RETRYSAVING_BTN.String.Text
+msgid  "~Retry Saving"
+msgstr "저장 재시도(~R)"
+
+#: source/trylater.src#STR_TRYLATER_SAVEAS_BTN.String.Text
+msgid  "~Save As..."
+msgstr "다른 이름으로 저장...(~S)"
+
+#: source/ids.src#RID_KEEP_PASSWORD.String.Text
+msgid  "~Remember password until end of session"
+msgstr "세션이 끝날 때까지 암호 기억(~R)"
+
+#: source/ids.src#RID_SAVE_PASSWORD.String.Text
+msgid  "~Remember password"
+msgstr "암호 기억(~R)"
+
+#: source/ids.src#STR_WARNING_BROKENSIGNATURE_TITLE.String.Text
+msgid  "Invalid Document Signature"
+msgstr "잘못된 문서 서명"
+
+#: source/ids.src#STR_WARNING_INCOMPLETE_ENCRYPTION_TITLE.String.Text
+msgid  "Non-Encrypted Streams"
+msgstr "암호화되지 않은 스트림"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ABORT & ERRCODE_RES_MASK).String.Text
+msgid  "The operation executed on $(ARG1) was aborted."
+msgstr "$(ARG1)에서 실행 중이던 작업이 중단되었습니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ACCESSDENIED & ERRCODE_RES_MASK).String.Text
+msgid  "Access to $(ARG1) was denied."
+msgstr "$(ARG1)에 대한 액세스가 거부되었습니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ALREADYEXISTS & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) already exists."
+msgstr "$(ARG1)이(가) 이미 있습니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TARGETALREADYEXISTS & ERRCODE_RES_MASK).String.Text
+msgid  "Target already exists."
+msgstr "대상이 이미 있습니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MODULESIZEEXCEEDED & ERRCODE_RES_MASK).String.Text
+msgid  "You are about to save/export a password protected basic library containing module(s) \n$(ARG1)\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?"
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BADCRC & ERRCODE_RES_MASK).String.Text
+msgid  "The data from $(ARG1) has an incorrect checksum."
+msgstr "$(ARG1) 데이터의 체크섬이 올바르지 않습니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTCREATE & ERRCODE_RES_MASK).String.Text
+msgid  "The object $(ARG1) cannot be created in directory $(ARG2)."
+msgstr "$(ARG2) 디렉토리에 $(ARG1) 개체를 만들 수 없습니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTREAD & ERRCODE_RES_MASK).String.Text
+msgid  "Data of $(ARG1) could not be read."
+msgstr "$(ARG1)의 데이터를 읽지 못했습니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTSEEK & ERRCODE_RES_MASK).String.Text
+msgid  "The seek operation on $(ARG1) could not be performed."
+msgstr "$(ARG1)에서 찾기 작업을 실행하지 못했습니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTTELL & ERRCODE_RES_MASK).String.Text
+msgid  "The tell operation on $(ARG1) could not be performed."
+msgstr "$(ARG1)에서 알림 작업을 실행하지 못했습니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTWRITE & ERRCODE_RES_MASK).String.Text
+msgid  "Data for $(ARG1) could not be written."
+msgstr "$(ARG1)의 데이터를 기록하지 못했습니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CURRENTDIR & ERRCODE_RES_MASK).String.Text
+msgid  "Action impossible: $(ARG1) is the current directory."
+msgstr "작업 불가능: $(ARG1)은(는) 현재 디렉토리입니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) is not ready."
+msgstr "$(ARG1)이(가) 준비되지 않았습니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSAMEDEVICE & ERRCODE_RES_MASK).String.Text
+msgid  "Action impossible: $(ARG1) and $(ARG2) are different devices (drives)."
+msgstr "작업 불가능: $(ARG1)과(와) $(ARG2)은(는) 다른 장치(드라이브)입니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_GENERAL & ERRCODE_RES_MASK).String.Text
+msgid  "General input/output error while accessing $(ARG1)."
+msgstr "$(ARG1)에 액세스하는 중 일반 입/출력 오류가 발생했습니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDACCESS & ERRCODE_RES_MASK).String.Text
+msgid  "An attempt was made to access $(ARG1) in an invalid way."
+msgstr "유효하지 않은 방법으로 $(ARG1)에 액세스를 시도하였습니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDCHAR & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) contains invalid characters."
+msgstr "$(ARG1)에 유효하지 않은 문자가 있습니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDDEVICE & ERRCODE_RES_MASK).String.Text
+msgid  "The device (drive) $(ARG1) is invalid."
+msgstr "장치(드라이브) $(ARG1)이(가) 유효하지 않습니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDLENGTH & ERRCODE_RES_MASK).String.Text
+msgid  "The data from $(ARG1) has an invalid length."
+msgstr "$(ARG1) 데이터의 길이가 유효하지 않습니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDPARAMETER & ERRCODE_RES_MASK).String.Text
+msgid  "The operation on $(ARG1) was started with an invalid parameter."
+msgstr "$(ARG1)에 대한 작업이 유효하지 않은 매개 변수로 시작되었습니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ISWILDCARD & ERRCODE_RES_MASK).String.Text
+msgid  "The operation cannot be performed because $(ARG1) contains wildcards."
+msgstr "$(ARG1)에 와일드카드가 포함되어 있어 작업을 실행할 수 없습니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_LOCKVIOLATION & ERRCODE_RES_MASK).String.Text
+msgid  "Error during shared access to $(ARG1)."
+msgstr "$(ARG1)을 공동 액세스하는 동안 오류가 발생했습니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MISPLACEDCHAR & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) contains misplaced characters."
+msgstr "$(ARG1)에 잘못 배치된 문자가 포함되어 있습니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NAMETOOLONG & ERRCODE_RES_MASK).String.Text
+msgid  "The name $(ARG1) contains too many characters."
+msgstr "이름 $(ARG1)의 길이가 너무 깁니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) does not exist."
+msgstr "$(ARG1)이(가) 없습니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTSPATH & ERRCODE_RES_MASK).String.Text
+msgid  "The path $(ARG1) does not exist."
+msgstr "경로 $(ARG1)이(가) 없습니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSUPPORTED & ERRCODE_RES_MASK).String.Text
+msgid  "The operation on $(ARG1) is not supported on this operating system."
+msgstr "이 운영 체제에서 $(ARG1)의 작업이 지원되지 않습니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTADIRECTORY & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) is not a directory."
+msgstr "$(ARG1)이(가) 디렉토리가 아닙니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTAFILE & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) is not a file."
+msgstr "$(ARG1)이(가) 파일이 아닙니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFSPACE & ERRCODE_RES_MASK).String.Text
+msgid  "There is no space left on device $(ARG1)."
+msgstr "장치 $(ARG1)에 더 이상 공간이 없습니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TOOMANYOPENFILES & ERRCODE_RES_MASK).String.Text
+msgid  "The operation on $(ARG1) cannot be performed because too many files are already open."
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFMEMORY & ERRCODE_RES_MASK).String.Text
+msgid  "The operation on $(ARG1) cannot be performed because there is no more memory available."
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_PENDING & ERRCODE_RES_MASK).String.Text
+msgid  "The operation on $(ARG1) cannot continue because more data is pending."
+msgstr "다른 데이터가 보류 중이므로 $(ARG1)에 대한 작업을 계속할 수 없습니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_RECURSIVE & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) cannot be copied into itself."
+msgstr "$(ARG1)을(를) $(ARG1)에 복사할 수 없습니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNKNOWN & ERRCODE_RES_MASK).String.Text
+msgid  "Unknown input/output error while accessing $(ARG1)."
+msgstr "$(ARG1)에 액세스하는 중 알 수 없는 입/출력 오류가 발생했습니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRITEPROTECTED & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) is write protected."
+msgstr "$(ARG1)은(는) 쓰기 보호되었습니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRONGFORMAT & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) is not in the correct format."
+msgstr "$(ARG1)의 형식이 올바르지 않습니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRONGVERSION & ERRCODE_RES_MASK).String.Text
+msgid  "The version of $(ARG1) is not correct."
+msgstr "$(ARG1)의 버전이 올바르지 않습니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS_VOLUME & ERRCODE_RES_MASK).String.Text
+msgid  "Drive $(ARG1) does not exist."
+msgstr "$(ARG1) 드라이브가 없습니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS_FOLDER & ERRCODE_RES_MASK).String.Text
+msgid  "Folder $(ARG1) does not exist."
+msgstr "$(ARG1) 폴더가 없습니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA & ERRCODE_RES_MASK).String.Text
+msgid  "The installed Java version is not supported."
+msgstr "설치된 Java 버전은 지원되지 않습니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION & ERRCODE_RES_MASK).String.Text
+msgid  "The installed Java version $(ARG1) is not supported."
+msgstr "설치된 Java 버전 $(ARG1)이(가) 지원되지 않습니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_MIN & ERRCODE_RES_MASK).String.Text
+msgid  "The installed Java version is not supported, at least version $(ARG1) is required."
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION_MIN & ERRCODE_RES_MASK).String.Text
+msgid  "The installed Java version $(ARG1) is not supported, at least version $(ARG2) is required."
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP & ERRCODE_RES_MASK).String.Text
+msgid  "The data associated with the partnership is corrupted."
+msgstr "협력 관계와 관련된 데이터가 손상되었습니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP_NAME & ERRCODE_RES_MASK).String.Text
+msgid  "The data associated with the partnership $(ARG1) is corrupted."
+msgstr "협력 관계 $(ARG1)과(와) 관련된 데이터가 손상되었습니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_VOLUME & ERRCODE_RES_MASK).String.Text
+msgid  "Volume $(ARG1) is not ready."
+msgstr "볼륨 $(ARG1)이(가) 준비되지 않았습니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_REMOVABLE & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) is not ready; please insert a storage medium."
+msgstr "$(ARG1)이(가) 준비되지 않았습니다. 저장 매체를 넣으십시오."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_VOLUME_REMOVABLE & ERRCODE_RES_MASK).String.Text
+msgid  "Volume $(ARG1) is not ready; please insert a storage medium."
+msgstr "볼륨 $(ARG1)이(가) 준비되지 않았습니다. 저장 매체를 넣으십시오."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGMEDIUM & ERRCODE_RES_MASK).String.Text
+msgid  "Please insert disk $(ARG1)."
+msgstr "디스크 $(ARG1)을(를) 넣으십시오."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTCREATE_NONAME & ERRCODE_RES_MASK).String.Text
+msgid  "The object cannot be created in directory $(ARG1)."
+msgstr "$(ARG1) 디렉토리에 개체를 만들 수 없습니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNSUPPORTEDOVERWRITE & ERRCODE_RES_MASK).String.Text
+msgid  "%PRODUCTNAME cannot keep files from being overwritten when this transmission protocol is used. Do you want to continue anyway?"
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE & ERRCODE_RES_MASK).String.Text
+msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\n\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the repaired document.\nExecution of macros is disabled for this document.\n\nShould %PRODUCTNAME repair the file?\n"
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR & ERRCODE_RES_MASK).String.Text
+msgid  "The file '$(ARG1)' could not be repaired and therefore cannot be opened."
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE & ERRCODE_RES_MASK).String.Text
+msgid  "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE & ERRCODE_RES_MASK).String.Text
+msgid  "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING & ERRCODE_RES_MASK).String.Text
+msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly."
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER & ERRCODE_RES_MASK).String.Text
+msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA & ERRCODE_RES_MASK).STRING.Text
+msgid  "The form contains invalid data. Do you still want to continue?"
+msgstr "양식에 잘못된 데이터가 포함되어 있습니다. 계속하시겠습니까?"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCKED & ERRCODE_RES_MASK).String.Text
+msgid  "The file $(ARG1) is locked by another user. Currently, another write access to this file cannot be granted."
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCKED_SELF & ERRCODE_RES_MASK).String.Text
+msgid  "The file $(ARG1) is locked by yourself. Currently, another write access to this file cannot be granted."
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_NOT_LOCKED & ERRCODE_RES_MASK).String.Text
+msgid  "The file $(ARG1) is currently not locked by yourself."
+msgstr "파일 $(ARG1)이(가) 사용자에 의해 잠겨 있지 않습니다."
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCK_EXPIRED & ERRCODE_RES_MASK).String.Text
+msgid  "The previously obtained lock for file $(ARG1) has expired.\nThis can happen due to problems on the server managing the file lock. It cannot be guaranteed that write operations on this file will not overwrite changes done by other users!"
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_UNKNOWNAUTH_UNTRUSTED).STRING.Text
+msgid  "Unable to verify the identity of $(ARG1) site.\n\nBefore accepting this certificate, you should examine this site's certificate carefully. Are you willing to accept this certificate for the purpose of identifying the Web site $(ARG1)?"
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_EXPIRED_1).STRING.Text
+msgid  "$(ARG1) is a site that uses a security certificate to encrypt data during transmission, but its certificate expired on $(ARG2).\n\nYou should check to make sure that your computer's time is correct."
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_DOMAINMISMATCH_1).STRING.Text
+msgid  "You have attempted to establish a connection with $(ARG1). However, the security certificate presented belongs to $(ARG2). It is possible, though unlikely, that someone may be trying to intercept your communication with this web site.\n\nIf you suspect the certificate shown does not belong to $(ARG1), please cancel the connection and notify the site administrator.\n\nWould you like to continue anyway?"
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_INVALID_1).STRING.Text
+msgid  "The certificate could not be validated. You should examine this site's certificate carefully.\n\nIf you suspect the certificate shown, please cancel the connection and notify the site administrator."
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_DOMAINMISMATCH).STRING.Text
+msgid  "Security Warning: Domain Name Mismatch"
+msgstr "보안 경고: 도메인명 불일치"
+
+#: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_EXPIRED).STRING.Text
+msgid  "Security Warning: Server Certificate Expired"
+msgstr "보안 경고: 서버 인증 만료"
+
+#: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_INVALID).STRING.Text
+msgid  "Security Warning: Server Certificate Invalid"
+msgstr "보안 경고: 서버 인증 무효"
+
+#: source/fltdlg.src#DLG_FILTER_SELECT.ModalDialog.Text
+msgid  "Filter Selection"
+msgstr "필터 선택"
+
+#: source/logindlg.src#DLG_UUI_LOGIN.ModalDialog.Text
+msgid  "Authentication Required"
+msgstr "인증이 필요함"
+
+#: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_ERROR.FixedText.Text
+msgid  "Message from server:"
+msgstr "서버로부터의 메시지:"
+
+#: source/logindlg.src#DLG_UUI_LOGIN.FT_INFO_LOGIN_REQUEST.FixedText.Text
+msgid  "Enter user name and password for: \n%1"
+msgstr ""
+
+#: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
+msgid  "Enter user name and password for: \n"%2" on %1"
+msgstr ""
+
+#: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
+msgid  "~Path"
+msgstr "경로(~P)"
+
+#: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_USERNAME.FixedText.Text
+msgid  "~User name"
+msgstr "사용자 이름(~U)"
+
+#: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PASSWORD.FixedText.Text
+msgid  "Pass~word"
+msgstr "암호(~W)"
+
+#: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_ACCOUNT.FixedText.Text
+msgid  "A~ccount"
+msgstr "계정(~C)"
+
+#: source/logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_SAVEPASSWORD.CheckBox.Text
+msgid  "~Remember password"
+msgstr "암호 기억(~R)"
+
+#: source/logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_USESYSCREDS.CheckBox.Text
+msgid  "~Use system credentials"
+msgstr "시스템 자격 증명 사용(~U)"
+
+#: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_SEND.RadioButton.Text
+msgid  "~Send"
+msgstr "전송(~S)"
+
+#: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_IGNORE.RadioButton.Text
+msgid  "I~gnore"
+msgstr "무시(~G)"
+
+#: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_INTERACTIVE.RadioButton.Text
+msgid  "I~nteractive"
+msgstr "대화식(~N)"
+
+#: source/cookiedg.src#DLG_COOKIES.GB_INFUTURE.GroupBox.Text
+msgid  "Future Cookie Handling"
+msgstr "쿠키 차후 처리 대안"
+
+#: source/cookiedg.src#DLG_COOKIES.BTN_COOKIES_CANCEL.PushButton.Text
+msgid  "~Ignore"
+msgstr "무시(~I)"
+
+#: source/cookiedg.src#DLG_COOKIES.BTN_COOKIES_OK.PushButton.Text
+msgid  "~Send"
+msgstr "전송(~S)"
+
+#: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
+msgid  "The '${HOST}' server wishes to set one or more cookies.\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
+msgstr ""
+
+#: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
+msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
+msgstr "도메인: ${DOMAIN}, 경로: ${PATH}, 쿠키: ${COOKIE}.\n"
+
+#: source/cookiedg.src#STR_COOKIES_RECV_TITLE.String.Text
+msgid  "Cookie Reception"
+msgstr "쿠키 수신"
+
+#: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
+msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
+msgstr ""
+
+#: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
+msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
+msgstr "도메인: ${DOMAIN}, 경로: ${PATH}, 쿠키: ${COOKIE}.\n"
+
+#: source/cookiedg.src#STR_COOKIES_SEND_TITLE.String.Text
+msgid  "Send Cookies"
+msgstr "쿠키 전송"
+
+#: source/passworderrs.src#STR_ERROR_PASSWORD_TO_OPEN_WRONG.String.Text
+msgid  "The password is incorrect. The file cannot be opened."
+msgstr "암호가 올바르지 않습니다. 문서를 열 수 없습니다."
+
+#: source/passworderrs.src#STR_ERROR_PASSWORD_TO_MODIFY_WRONG.String.Text
+msgid  "The password is incorrect. The file cannot be modified."
+msgstr "암호가 올바르지 않습니다. 문서를 수정할 수 없습니다."
+
+#: source/passworderrs.src#STR_ERROR_MASTERPASSWORD_WRONG.String.Text
+msgid  "The master password is incorrect."
+msgstr ""
+
+#: source/passworderrs.src#STR_ERROR_SIMPLE_PASSWORD_WRONG.String.Text
+msgid  "The password is incorrect."
+msgstr "암호가 올바르지 않습니다."
+
+#: source/passworderrs.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.String.Text
+msgid  "The password confirmation does not match."
+msgstr "암호가 일치하지 않습니다."
+
+#: source/nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.ModalDialog.Text
+msgid  "File Exists"
+msgstr "파일이 존재함"
+
+#: source/nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.BTN_OVERWRITE.PushButton.Text
+msgid  "Replace"
+msgstr "바꾸기"
+
+#: source/nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.BTN_RENAME.PushButton.Text
+msgid  "Rename"
+msgstr "이름 바꾸기"
+
+#: source/openlocked.src#STR_OPENLOCKED_TITLE.String.Text
+msgid  "Document in Use"
+msgstr "사용 중인 문서"
+
+#: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
+msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nOpen document read-only or open a copy of the document for editing.\n\n"
+msgstr ""
+
+#: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
+msgid  "Open ~Read-Only"
+msgstr "읽기 전용 열기(~R)"
+
+#: source/openlocked.src#STR_OPENLOCKED_OPENCOPY_BTN.String.Text
+msgid  "Open ~Copy"
+msgstr "사본 열기(~C)"
+
+#: source/openlocked.src#STR_UNKNOWNUSER.String.Text
+msgid  "Unknown User"
+msgstr "알 수 없는 사용자"
+
+#: source/filechanged.src#STR_FILECHANGED_TITLE.String.Text
+msgid  "Document Has Been Changed by Others"
+msgstr "다른 사용자가 문서를 변경함"
+
+#: source/filechanged.src#STR_FILECHANGED_MSG.String.Text
+msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\n\nDo you want to save anyway?\n\n"
+msgstr ""
+
+#: source/filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.String.Text
+msgid  "~Save Anyway"
+msgstr "강제로 저장(~S)"
+
+#: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.ModalDialog.Text
+msgid  "%PRODUCTNAME Update Available"
+msgstr "%PRODUCTNAME 업데이트 가능"
+
+#: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
+msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\n\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
+msgstr ""
+
+#: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
+msgid  "~Update Now..."
+msgstr "지금 업데이트(~U)..."
+
+#: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_LATER.CancelButton.Text
+msgid  "~Later"
+msgstr "나중에(~L)"
+
+#: source/sslwarndlg.src#DLG_UUI_SSLWARN.ModalDialog.Text
+msgid  "Security Warning: "
+msgstr "보안 경고: "
+
+#: source/sslwarndlg.src#DLG_UUI_SSLWARN.FT_LABEL_1.FixedText.Text
+msgid  "No Text"
+msgstr "글자 없음"
+
+#: source/sslwarndlg.src#DLG_UUI_SSLWARN.PB_VIEW__CERTIFICATE.PushButton.Text
+msgid  "View Certificate"
+msgstr "인증 보기"
+
+#: source/sslwarndlg.src#DLG_UUI_SSLWARN.PB_CANCEL.CancelButton.Text
+msgid  "Cancel Connection"
+msgstr "연결 취소"
+
+#: source/sslwarndlg.src#DLG_UUI_SSLWARN.PB_OK.PushButton.Text
+msgid  "Continue"
+msgstr "계속"
+
+#: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.ModalDialog.Text
+msgid  "%PRODUCTNAME - Security Warning"
+msgstr "%PRODUCTNAME - 보안 경고"
+
+#: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR1A.FixedText.Text
+msgid  "The document contains document macros signed by:"
+msgstr "문서에 다음 서명자가 서명한 문서 매크로가 포함되어 있습니다."
+
+#: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR1B.FixedText.Text
+msgid  "The document contains document macros."
+msgstr "문서에 문서 매크로가 포함되어 있습니다."
+
+#: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_VIEWSIGNS.PushButton.Text
+msgid  "View Signatures..."
+msgstr "서명 보기..."
+
+#: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR2.FixedText.Text
+msgid  "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
+msgstr ""
+
+#: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.CB_ALWAYSTRUST.CheckBox.Text
+msgid  "Always trust macros from this source"
+msgstr "이 원본의 매크로는 항상 신뢰"
+
+#: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_ENABLE.OKButton.Text
+msgid  "~Enable Macros"
+msgstr "매크로 활성화(~E)"
+
+#: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_DISABLE.CancelButton.Text
+msgid  "~Disable Macros"
+msgstr "매크로 비활성화(~D)"
+
+#: source/masterpassworddlg.src#DLG_UUI_MASTERPASSWORD.FT_MASTERPASSWORD.FixedText.Text
+msgid  "Enter password"
+msgstr "암호 입력"
+
+#: source/masterpassworddlg.src#DLG_UUI_MASTERPASSWORD.HelpButton.Text
+msgid  "Enter Master Password"
+msgstr "마스터 암호 입력"
+
+#: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.ModalDialog.Text
+msgid  "Set Master Password"
+msgstr "마스터 암호 설정"
+
+#: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_INFOTEXT.FixedText.Text
+msgid  "Passwords for web connections are protected by a master password. You will be asked to enter it once per session, if %PRODUCTNAME retrieves a password from the protected password list."
+msgstr ""
+
+#: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_CRT.FixedText.Text
+msgid  "~Enter password"
+msgstr "암호 입력(~E)"
+
+#: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_REPEAT.FixedText.Text
+msgid  "~Reenter password"
+msgstr "암호 재입력(~R)"
+
+#: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_CAUTIONTEXT.FixedText.Text
+msgid  "Caution: If you forget the master password, you will be unable to access any of the information protected by it. Passwords are case-sensitive."
+msgstr ""
+
+#: source/alreadyopen.src#STR_ALREADYOPEN_MSG.String.Text
+msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nOpen document read-only, or ignore own file locking and open the document for editing.\n\n"
+msgstr ""
+
+#: source/alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.String.Text
+msgid  "Open ~Read-Only"
+msgstr "읽기 전용 열기(~R)"
+
+#: source/alreadyopen.src#STR_ALREADYOPEN_OPEN_BTN.String.Text
+msgid  "~Open"
+msgstr "열기(~O)"
+
+#: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.String.Text
+msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nClose document on other system and retry saving or ignore own file locking and save current document.\n\n"
+msgstr ""
+
+#: source/alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.String.Text
+msgid  "~Retry Saving"
+msgstr "저장 재시도(~R)"
+
+#: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_BTN.String.Text
+msgid  "~Save"
+msgstr "저장(~S)"
+
+#: source/lockfailed.src#STR_LOCKFAILED_MSG.String.Text
+msgid  "The file could not be locked for exclusive access by %PRODUCTNAME, due to missing permission to create a lock file on that file location."
+msgstr ""

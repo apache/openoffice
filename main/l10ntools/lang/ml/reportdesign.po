@@ -1,1312 +1,1558 @@
-
-#: CondFormat.src#WIN_CONDITION.LB_COND_TYPE.1.stringlist.text
-msgid "Field Value Is"
-msgstr "ഫീള്‍ഡിന്റെ മൂല്ല്യം"
-
-#: CondFormat.src#WIN_CONDITION.LB_COND_TYPE.2.stringlist.text
-msgid "Expression Is"
-msgstr "എക്സ്പ്രെഷന്‍"
-
-#: CondFormat.src#WIN_CONDITION.LB_OP.1.stringlist.text
-msgid "between"
-msgstr "between"
-
-#: CondFormat.src#WIN_CONDITION.LB_OP.2.stringlist.text
-msgid "not between"
-msgstr "not between"
-
-#: CondFormat.src#WIN_CONDITION.LB_OP.3.stringlist.text
-msgid "equal to"
-msgstr "equal to"
-
-#: CondFormat.src#WIN_CONDITION.LB_OP.4.stringlist.text
-msgid "not equal to"
-msgstr "not equal to"
-
-#: CondFormat.src#WIN_CONDITION.LB_OP.5.stringlist.text
-msgid "greater than"
-msgstr "greater than"
-
-#: CondFormat.src#WIN_CONDITION.LB_OP.6.stringlist.text
-msgid "less than"
-msgstr "less than"
-
-#: CondFormat.src#WIN_CONDITION.LB_OP.7.stringlist.text
-msgid "greater than or equal to"
-msgstr "greater than or equal to"
-
-#: CondFormat.src#WIN_CONDITION.LB_OP.8.stringlist.text
-msgid "less than or equal to"
-msgstr "less than or equal to"
-
-#: CondFormat.src#WIN_CONDITION.FT_AND.fixedtext.text
-msgid "and"
-msgstr "and"
-
-#: CondFormat.src#WIN_CONDITION.CRTL_FORMAT_PREVIEW.window.text
-msgid "Example"
-msgstr "ഉദാഹരണം"
-
-#: CondFormat.src#RID_CONDFORMAT.PB_HELP.helpbutton.text
-msgctxt "CondFormat.src#RID_CONDFORMAT.PB_HELP.helpbutton.text"
-msgid "~Help"
-msgstr "~സഹായം"
-
-#: CondFormat.src#RID_CONDFORMAT.modaldialog.text
-msgid "Conditional Formatting"
-msgstr "കണ്ടീഷണല്‍ ഫോര്‍മാറ്റിങ്"
-
-#: CondFormat.src#STR_NUMBERED_CONDITION.string.text
-msgid "Condition $number$"
-msgstr "Condition $number$"
-
-#: CondFormat.src#STR_COLOR_WHITE.string.text
-msgid "White"
-msgstr "വെളുപ്പു്"
-
-#: CondFormat.src#STR_CHARCOLOR.string.text
-msgid "Font color"
-msgstr "അക്ഷരസഞ്ചയത്തിന്റെ നിറം"
-
-#: CondFormat.src#STR_CHARBACKGROUND.string.text
-#, fuzzy
-msgctxt "CondFormat.src#STR_CHARBACKGROUND.string.text"
-msgid "Background"
-msgstr "പശ്ചാത്തലം"
-
-#: CondFormat.src#STR_TRANSPARENT.string.text
-msgid "No Fill"
-msgstr "നിറയ്ക്കേണ്ട"
-
-#: CondFormat.src#RID_TB_SORTING.SID_FM_SORTUP.toolboxitem.text
-msgid "Sort Ascending"
-msgstr "കുറവില്‍ നിന്നും കൂടുതല്‍ എന്ന ക്രമത്തില്‍"
-
-#: CondFormat.src#RID_TB_SORTING.SID_FM_SORTDOWN.toolboxitem.text
-msgid "Sort Descending"
-msgstr "കൂടുതലില്‍ നിന്നും കുറവിലേക്കു് എന്ന ക്രമത്തില്‍"
-
-#: CondFormat.src#RID_TB_SORTING.SID_FM_REMOVE_FILTER_SORT.toolboxitem.text
-msgid "Remove sorting"
-msgstr "ക്രമം നീക്കുക"
-
-#: CondFormat.src#RID_TB_SORTING.SID_ADD_CONTROL_PAIR.toolboxitem.text
-msgid "Insert"
-msgstr "ചേര്‍ക്കുക"
-
-#: CondFormat.src#ADDFIELD_FL_HELP_SEPARATOR.fixedline.text
-msgctxt "CondFormat.src#ADDFIELD_FL_HELP_SEPARATOR.fixedline.text"
-msgid "Help"
-msgstr "സഹായം"
-
-#: CondFormat.src#ADDFIELD_HELP_FIELD.fixedtext.text
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
 msgid ""
-"Highlight the fields to insert into the selected section of the template, "
-"then click Insert or press Enter."
 msgstr ""
-"ടെംപ്ലേറ്റിന്റെ തെരഞ്ഞെടുത്ത ഭാഗത്തേക്ക് ചേര്‍ക്കേണ്ട ഫീള്‍ഡുകള്‍ "
-"എടുത്തുകാണിക്കുക. ശേഷം ഇടയ്ക്കു് ചേര്‍ക്കു് അമര്‍ത്തി Enter ചെയ്യുക."
-
-#: DateTime.src#RID_DATETIME_DLG.CB_DATE.checkbox.text
-msgid "Include Date"
-msgstr "തീയതി ഉള്‍പ്പെടുത്തുക"
-
-#: DateTime.src#RID_DATETIME_DLG.FT_DATE_FORMAT.fixedtext.text
-msgctxt "DateTime.src#RID_DATETIME_DLG.FT_DATE_FORMAT.fixedtext.text"
-msgid "Format"
-msgstr "മാതൃക"
-
-#: DateTime.src#RID_DATETIME_DLG.CB_TIME.checkbox.text
-msgid "Include Time"
-msgstr "സമയം ഉള്‍പ്പെടുത്തുക"
-
-#: DateTime.src#RID_DATETIME_DLG.FT_TIME_FORMAT.fixedtext.text
-msgctxt "DateTime.src#RID_DATETIME_DLG.FT_TIME_FORMAT.fixedtext.text"
-msgid "Format"
-msgstr "മാതൃക"
-
-#: DateTime.src#RID_DATETIME_DLG.PB_HELP.helpbutton.text
-msgctxt "DateTime.src#RID_DATETIME_DLG.PB_HELP.helpbutton.text"
-msgid "~Help"
-msgstr "~സഹായം"
-
-#: DateTime.src#RID_DATETIME_DLG.modaldialog.text
-msgid "Date and Time"
-msgstr "തീയതിയും സമയവും"
-
-#: dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_PAGE.pageitem.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_PAGE.pageitem.text"
-msgid "Page"
-msgstr "താള്‍"
-
-#: dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_BACKGROUND.pageitem.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_BACKGROUND.pageitem.text"
-msgid "Background"
-msgstr "പശ്ചാത്തലം"
-
-#: dlgpage.src#RID_PAGEDIALOG_PAGE.1.pushbutton.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_PAGE.1.pushbutton.text"
-msgid "Return"
-msgstr "തിരികെ"
-
-#: dlgpage.src#RID_PAGEDIALOG_PAGE.1.string.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_PAGE.1.string.text"
-msgid "Page"
-msgstr "താള്‍"
-
-#: dlgpage.src#RID_PAGEDIALOG_PAGE.2.string.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_PAGE.2.string.text"
-msgid "Background"
-msgstr "പശ്ചാത്തലം"
-
-#: dlgpage.src#RID_PAGEDIALOG_PAGE.tabdialog.text
-msgid "Page Setup"
-msgstr "താള്‍ സജ്ജീകരണം"
-
-#: dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.pushbutton.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.pushbutton.text"
-msgid "Return"
-msgstr "തിരികെ"
-
-#: dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.string.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.string.text"
-msgid "Background"
-msgstr "പശ്ചാത്തലം"
-
-#: dlgpage.src#RID_PAGEDIALOG_BACKGROUND.tabdialog.text
-msgid "Section Setup"
-msgstr "വിഭാഗം ക്രമീകരിക്കുക"
-
-#: dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_CHAR.pageitem.text
-msgid "Font"
-msgstr "അക്ഷരസഞ്ചയം"
-
-#: dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_EFFECTS.pageitem.text
-msgid "Font Effects"
-msgstr "അക്ഷരസഞ്ചയ പ്രഭാവങ്ങള്‍"
-
-#: dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_POSITION.pageitem.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_POSITION.pageitem.text"
-msgid "Position"
-msgstr "സ്ഥാനം"
-
-#: dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_TWOLN.pageitem.text
-msgid "Asian Layout"
-msgstr "ഏഷ്യന്‍ ശൈലി"
-
-#: dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_BACKGROUND.pageitem.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_BACKGROUND.pageitem.text"
-msgid "Background"
-msgstr "പശ്ചാത്താലം"
-
-#: dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_ALIGNMENT.pageitem.text
-msgid "Alignment"
-msgstr "അലൈന്‍മെന്റ്"
-
-#: dlgpage.src#RID_PAGEDIALOG_CHAR.1.pushbutton.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_CHAR.1.pushbutton.text"
-msgid "Return"
-msgstr "തിരികെ"
-
-#: dlgpage.src#RID_PAGEDIALOG_CHAR.1.string.text
-msgid "Character"
-msgstr "അക്ഷരം"
-
-#: dlgpage.src#RID_PAGEDIALOG_CHAR.tabdialog.text
-msgid "Character Settings"
-msgstr "അക്ഷര സജ്ജീകരണം"
-
-#: dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE.pageitem.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE.pageitem.text"
-msgid "Line"
-msgstr "വര"
-
-#: dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE_DEF.pageitem.text
-msgid "Line Styles"
-msgstr "വര ശൈലികള്‍"
-
-#: dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINEEND_DEF.pageitem.text
-msgid "Arrow Styles"
-msgstr "ആരോ ശൈലികള്‍"
-
-#: dlgpage.src#RID_PAGEDIALOG_LINE.1.pushbutton.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_LINE.1.pushbutton.text"
-msgid "Return"
-msgstr "തിരികെ"
-
-#: dlgpage.src#RID_PAGEDIALOG_LINE.1.string.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_LINE.1.string.text"
-msgid "Line"
-msgstr "വര"
-
-#: dlgpage.src#RID_PAGEDIALOG_LINE.tabdialog.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_LINE.tabdialog.text"
-msgid "Line"
-msgstr "വര"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR2.fixedline.text
-msgctxt "GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR2.fixedline.text"
-msgid "Groups"
-msgstr "ഗ്രൂപ്പുകള്‍"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.FT_MOVELABEL.fixedtext.text
-msgid "Group actions"
-msgstr "ഗ്രൂപ്പിനുള്ള പ്രവര്‍ത്തനങ്ങള്‍"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_UP.toolboxitem.text
-msgid "Move up"
-msgstr "മുകളിലേക്കു് നീക്കുക"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_DOWN.toolboxitem.text
-msgid "Move down"
-msgstr "താഴേക്കു് നീക്കുക"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_DELETE.toolboxitem.text
-msgid "~Delete"
-msgstr "~വെട്ടി നീക്കുക"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR3.fixedline.text
-msgid "Properties"
-msgstr "വിശേഷതകള്‍"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.FT_ORDER.fixedtext.text
-msgid "Sorting"
-msgstr "ക്രമത്തിലാക്കല്‍"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.1.stringlist.text
-msgid "Ascending"
-msgstr "കുറഞ്ഞതില്‍ നിന്നും കൂടിയതിലേക്ക്"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.2.stringlist.text
-msgid "Descending"
-msgstr "കൂടിയതില്‍ നിന്നും കുറഞ്ഞതിലേക്ക്"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.FT_HEADER.fixedtext.text
-msgid "Group Header"
-msgstr "ഗ്രൂപ്പിനുള്ള തലക്കെട്ട്"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.1.stringlist.text
-msgctxt "GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.1.stringlist.text"
-msgid "Present"
-msgstr "നിലവിലുള്ള"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.2.stringlist.text
-msgctxt "GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.2.stringlist.text"
-msgid "Not present"
-msgstr "ലഭ്യമല്ല"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.FT_FOOTER.fixedtext.text
-msgid "Group Footer"
-msgstr "ഗ്രൂപ്പിനുള്ള അടിക്കുറിപ്പു്"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.1.stringlist.text
-msgctxt "GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.1.stringlist.text"
-msgid "Present"
-msgstr "നിലവിലുള്ള"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.2.stringlist.text
-msgctxt "GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.2.stringlist.text"
-msgid "Not present"
-msgstr "നിലവിലില്ല"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPON.fixedtext.text
-msgid "Group On"
-msgstr "ഗ്രൂപ്പ് ഓണ്‍"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.LST_GROUPONLST.1.stringlist.text
-msgid "Each Value"
-msgstr "ഓരോ മൂല്യവും"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPINTERVAL.fixedtext.text
-msgid "Group Interval"
-msgstr "ഗ്രൂപ്പിനുള്ള ഇടവേള"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.FT_KEEPTOGETHER.fixedtext.text
-msgid "Keep Together"
-msgstr "ഒന്നിച്ചു് സൂക്ഷിക്കുക"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.1.stringlist.text
-msgid "No"
-msgstr "ഇല്ല"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.2.stringlist.text
-msgid "Whole Group"
-msgstr "പൂര്‍ണ്ണ ഗ്രൂപ്പ്"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.3.stringlist.text
-msgid "With First Detail"
-msgstr "ആദ്യത്തെ വിശദാംശം"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR1.fixedline.text
-msgctxt "GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR1.fixedline.text"
-msgid "Help"
-msgstr "സഹായം"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.floatingwindow.text
-msgid "Sorting and Grouping"
-msgstr "ക്രമത്തിലാക്കലും ഗ്രൂപ്പിങ്ങും"
-
-#: GroupsSorting.src#STR_RPT_EXPRESSION.string.text
-msgid "Field/Expression"
-msgstr "ഫീള്‍ഡ്/എക്സ്പ്രെഷന്‍"
-
-#: GroupsSorting.src#STR_RPT_SORTING.string.text
-msgid "Sort Order"
-msgstr "ക്രമത്തിലാക്കേണ്ട രീതി"
-
-#: GroupsSorting.src#STR_RPT_PREFIXCHARS.string.text
-msgid "Prefix Characters"
-msgstr "പ്രിഫിക്സ് ക്യാരക്ടര്‍"
-
-#: GroupsSorting.src#STR_RPT_YEAR.string.text
-msgid "Year"
-msgstr "വര്‍ഷം"
-
-#: GroupsSorting.src#STR_RPT_QUARTER.string.text
-msgid "Quarter"
-msgstr "ക്വാര്‍ട്ടര്‍‌"
-
-#: GroupsSorting.src#STR_RPT_MONTH.string.text
-msgid "Month"
-msgstr "മാസം"
-
-#: GroupsSorting.src#STR_RPT_WEEK.string.text
-msgid "Week"
-msgstr "ആഴ്ച"
-
-#: GroupsSorting.src#STR_RPT_DAY.string.text
-msgid "Day"
-msgstr "ദിവസം"
-
-#: GroupsSorting.src#STR_RPT_HOUR.string.text
-msgid "Hour"
-msgstr "മണിക്കൂര്‍"
-
-#: GroupsSorting.src#STR_RPT_MINUTE.string.text
-msgid "Minute"
-msgstr "മിനിട്ട്"
-
-#: GroupsSorting.src#STR_RPT_INTERVAL.string.text
-msgid "Interval"
-msgstr "ഇടവേള"
-
-#: GroupsSorting.src#STR_RPT_HELP_FIELD.string.text
-msgid "Select a field or type an expression to sort or group on."
-msgstr ""
-"ഒരു ഫീള്‍ഡ് തെരഞ്ഞെടുക്കുക അല്ലെങ്കില്‍ ക്രമീകരിക്കുന്നതിനായി ഒരു "
-"എക്സ്പ്രെഷന്‍ നല്‍കുക."
-
-#: GroupsSorting.src#STR_RPT_HELP_HEADER.string.text
-msgid "Display a header for this group?"
-msgstr "ഈ ഗ്രൂപ്പിനു് ഒരു തലക്കെട്ട് നല്‍കണമോ?"
-
-#: GroupsSorting.src#STR_RPT_HELP_FOOTER.string.text
-msgid "Display a footer for this group?"
-msgstr "ഈ ഗ്രൂപ്പിനു് ഒരു അടിക്കുറിപ്പു് നല്‍കണമോ?"
-
-#: GroupsSorting.src#STR_RPT_HELP_GROUPON.string.text
-msgid "Select the value or range of values that starts a new group."
-msgstr ""
-"ഒരു പുതിയ ഗ്രൂപ്പിനുള്ള മൂല്ല്യം അല്ലെങ്കില്‍ മൂല്ല്യ പരിധി തെരഞ്ഞെടുക്കുക."
-
-#: GroupsSorting.src#STR_RPT_HELP_INTERVAL.string.text
-msgid "Interval or number of characters to group on."
-msgstr "Interval or number of characters to group on."
-
-#: GroupsSorting.src#STR_RPT_HELP_KEEP.string.text
-msgid "Keep group together on one page?"
-msgstr "ഗ്രൂപ്പ് ഒന്നിച്ചു് ഒറ്റ താളില്‍ സൂക്ഷിക്കണമോ?"
-
-#: GroupsSorting.src#STR_RPT_HELP_SORT.string.text
-msgid ""
-"Select ascending or descending sort order. Ascending means from A to Z or 0 "
-"to 9"
-msgstr ""
-"കുറവില്‍ നിന്നും കൂടുതല്‍ അല്ലെങ്കില്‍ കൂടുതലില്‍ നിന്നും കുറവു് എന്ന ക്രമം "
-"തെരഞ്ഞെടുക്കുക. A-Z അല്ലെങ്കില്‍ 0-9 എന്നതാണു് കുറവില്‍ നിന്നും കൂടുതല്‍ "
-"എന്ന ക്രമം."
-
-#: Navigator.src#RID_NAVIGATOR.floatingwindow.text
-msgid "Report navigator"
-msgstr "റിപോര്‍ട്ടിനുള്ള നാവിഗേറ്റര്‍"
-
-#: Navigator.src#RID_STR_FUNCTIONS.string.text
-msgid "Functions"
-msgstr "ഫംഗ്ഷനുകള്‍"
-
-#: Navigator.src#RID_STR_GROUPS.string.text
-msgctxt "Navigator.src#RID_STR_GROUPS.string.text"
-msgid "Groups"
-msgstr "ഗ്രൂപ്പുകള്‍"
-
-#: Navigator.src#RID_MENU_NAVIGATOR.SID_SORTINGANDGROUPING.menuitem.text
-msgid "Sorting and Grouping..."
-msgstr "ക്രമത്തിലാക്കലും ഗ്രൂപ്പിങ്ങും..."
-
-#: Navigator.src#RID_MENU_NAVIGATOR.SID_PAGEHEADERFOOTER.menuitem.text
-msgid "Page Header/Footer..."
-msgstr "താളിന്റെ ഹെഡര്‍/അടിക്കുറിപ്പു്..."
-
-#: Navigator.src#RID_MENU_NAVIGATOR.SID_REPORTHEADERFOOTER.menuitem.text
-msgid "Report Header/Footer..."
-msgstr "തലക്കെട്ട്/അടിക്കുറിപ്പു് രേഖപ്പെടുത്തുക..."
-
-#: Navigator.src#RID_MENU_NAVIGATOR.SID_RPT_NEW_FUNCTION.menuitem.text
-msgid "New Function"
-msgstr "പുതിയ ഫംഗ്ഷന്‍"
-
-#: Navigator.src#RID_MENU_NAVIGATOR.SID_SHOW_PROPERTYBROWSER.menuitem.text
-msgid "Properties..."
-msgstr "വിശേഷതകള്‍..."
-
-#: PageNumber.src#RID_PAGENUMBERS.FL_FORMAT.fixedline.text
-msgctxt "PageNumber.src#RID_PAGENUMBERS.FL_FORMAT.fixedline.text"
-msgid "Format"
-msgstr "മാതൃക"
-
-#: PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N.radiobutton.text
-msgid "Page N"
-msgstr "താള്‍ N"
-
-#: PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N_OF_M.radiobutton.text
-msgid "Page N of M"
-msgstr "താള്‍ N/M"
-
-#: PageNumber.src#RID_PAGENUMBERS.FL_POSITION.fixedline.text
-msgctxt "PageNumber.src#RID_PAGENUMBERS.FL_POSITION.fixedline.text"
-msgid "Position"
-msgstr "സ്ഥാനം"
-
-#: PageNumber.src#RID_PAGENUMBERS.RB_PAGE_TOPPAGE.radiobutton.text
-msgid "Top of Page (Header)"
-msgstr "താളിന്റെ മുകള്‍വശം (തലക്കെട്ട്)"
-
-#: PageNumber.src#RID_PAGENUMBERS.RB_PAGE_BOTTOMPAGE.radiobutton.text
-msgid "Bottom of Page (Footer)"
-msgstr "താളിന്റെ താഴ്വശം (അടിക്കുറിപ്പു്)"
-
-#: PageNumber.src#RID_PAGENUMBERS.FL_MISC.fixedline.text
-msgid "General"
-msgstr "സാധാരണ"
-
-#: PageNumber.src#RID_PAGENUMBERS.FL_ALIGNMENT.fixedtext.text
-msgid "Alignment:"
-msgstr "അലൈന്‍മെന്റ്:"
-
-#: PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.1.stringlist.text
-msgid "Left"
-msgstr "ഇടത്തു്"
-
-#: PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.2.stringlist.text
-msgid "Center"
-msgstr "മദ്ധ്യം"
-
-#: PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.3.stringlist.text
-msgid "Right"
-msgstr "വലത്തു്"
-
-#: PageNumber.src#RID_PAGENUMBERS.CB_SHOWNUMBERONFIRSTPAGE.checkbox.text
-msgid "Show Number on First Page"
-msgstr "നംബര്‍ ആദ്യത്തെ താളില്‍ കാണിക്കുക"
-
-#: PageNumber.src#RID_PAGENUMBERS.PB_HELP.helpbutton.text
-msgctxt "PageNumber.src#RID_PAGENUMBERS.PB_HELP.helpbutton.text"
-msgid "~Help"
-msgstr "~സഹായം"
-
-#: PageNumber.src#RID_PAGENUMBERS.modaldialog.text
-msgid "Page Numbers"
-msgstr "താള്‍ നംബറുകള്‍"
-
-#: PageNumber.src#STR_RPT_PN_PAGE.string.text
-msgid "\"Page \" & #PAGENUMBER#"
-msgstr "\"താള്‍ \" & #PAGENUMBER#"
-
-#: PageNumber.src#STR_RPT_PN_PAGE_OF.string.text
-msgid " & \" of \" & #PAGECOUNT#"
-msgstr " & \" / \" & #PAGECOUNT#"
-
-#: report.src#RID_STR_BRWTITLE_PROPERTIES.string.text
-msgid "Properties: "
-msgstr "വിശേഷതകള്‍: "
-
-#: report.src#RID_STR_BRWTITLE_NO_PROPERTIES.string.text
-msgid "No Control marked"
-msgstr "കണ്ട്രോള്‍ അടയാളപ്പെടുത്തിയിട്ടില്ല"
-
-#: report.src#RID_STR_BRWTITLE_MULTISELECT.string.text
-msgid "Multiselection"
-msgstr "അനവധി തെരഞ്ഞെടുക്കല്‍"
-
-#: report.src#RID_STR_PROPTITLE_IMAGECONTROL.string.text
-msgid "Image Control"
-msgstr "ഇമേജ് കണ്ട്രോള്‍"
-
-#: report.src#RID_STR_PROPTITLE_FIXEDTEXT.string.text
-msgid "Label field"
-msgstr "ലേബല്‍ ഫീള്‍ഡ്"
-
-#: report.src#RID_STR_PROPTITLE_FIXEDLINE.string.text
-msgid "Line"
-msgstr "വര"
-
-#: report.src#RID_STR_PROPTITLE_FORMATTED.string.text
-msgid "Formatted Field"
-msgstr "ഫോര്‍മാറ്റ് ചെയ്ത ഫീള്‍ഡ്"
-
-#: report.src#RID_STR_PROPTITLE_SHAPE.string.text
-msgid "Shape"
-msgstr "ആകൃതി"
-
-#: report.src#RID_STR_PROPTITLE_REPORT.string.text
-msgid "Report"
-msgstr "റിപ്പോര്‍ട്ട്"
-
-#: report.src#RID_STR_PROPTITLE_SECTION.string.text
-msgctxt "report.src#RID_STR_PROPTITLE_SECTION.string.text"
-msgid "Section"
-msgstr "വിഭാഗം"
-
-#: report.src#RID_STR_PROPTITLE_FUNCTION.string.text
-msgctxt "report.src#RID_STR_PROPTITLE_FUNCTION.string.text"
-msgid "Function"
-msgstr "ഫംഗ്ഷന്‍"
-
-#: report.src#RID_STR_PROPTITLE_GROUP.string.text
-msgid "Group"
-msgstr "ഗ്രൂപ്പ്"
-
-#: report.src#STR_SHOW_RULER.string.text
-msgid "Show ruler"
-msgstr "റൂളര്‍ കാണിക്കുക"
-
-#: report.src#STR_SHOW_GRID.string.text
-msgid "Show grid"
-msgstr "ഗ്രിഡ് കാണിക്കുക"
-
-#: report.src#RID_STR_UNDO_CHANGEPOSITION.string.text
-msgid "Change Object"
-msgstr "ഒബ്ജക്ട് മാറ്റുക"
-
-#: report.src#RID_STR_UNDO_MOVE_GROUP.string.text
-msgid "Move Group(s)"
-msgstr "ഗ്രൂപ്പ്(കള്‍) നീക്കുക"
-
-#: report.src#RID_STR_UNDO_CONDITIONAL_FORMATTING.string.text
-msgid "Conditional Formatting"
-msgstr "കണ്ടീഷനല്‍ ഫോര്‍മാറ്റിങ്"
-
-#: report.src#RID_STR_UNDO_REMOVE_REPORTHEADERFOOTER.string.text
-msgid "Remove report header / report footer"
-msgstr "റിപ്പോര്‍ട്ട് തലക്കെട്ട് / റിപ്പോര്‍ട്ട് അടിക്കുറിപ്പു് നീക്കം ചെയ്യുക"
-
-#: report.src#RID_STR_UNDO_ADD_REPORTHEADERFOOTER.string.text
-msgid "Add report header / report footer"
-msgstr "റിപ്പോര്‍ട്ട് തലക്കെട്ട് / റിപ്പോര്‍ട്ട് അടിക്കുറിപ്പു് ചേര്‍ക്കുക"
-
-#: report.src#RID_STR_UNDO_REMOVE_PAGEHEADERFOOTER.string.text
-msgid "Remove page header / page footer"
-msgstr "താള്‍ തലക്കെട്ട് / താള്‍‍ അടിക്കുറിപ്പു് നീക്കം ചെയ്യുക"
-
-#: report.src#RID_STR_UNDO_ADD_PAGEHEADERFOOTER.string.text
-msgid "Add page header / page footer"
-msgstr "താള്‍ തലക്കെട്ട് / താള്‍ അടിക്കുറിപ്പു് ചേര്‍ക്കുക"
-
-#: report.src#RID_STR_UNDO_PROPERTY.string.text
-msgid "Change property '#'"
-msgstr "'#' വിശേഷത മാറ്റുക"
-
-#: report.src#RID_STR_UNDO_ADD_GROUP_HEADER.string.text
-msgid "Add group header "
-msgstr "ഗ്രൂപ്പ് തലക്കെട്ട് ചേര്‍ക്കുക"
-
-#: report.src#RID_STR_UNDO_REMOVE_GROUP_HEADER.string.text
-msgid "Remove group header "
-msgstr "ഗ്രൂപ്പ് തലക്കെട്ട് നീക്കം ചെയ്യുക"
-
-#: report.src#RID_STR_UNDO_ADD_GROUP_FOOTER.string.text
-msgid "Add group footer "
-msgstr "താള്‍ അടിക്കുറിപ്പു് ചേര്‍ക്കുക"
-
-#: report.src#RID_STR_UNDO_REMOVE_GROUP_FOOTER.string.text
-msgid "Remove group footer "
-msgstr "ഗ്രൂപ്പ് അടിക്കുറിപ്പു് നീക്കം ചെയ്യുക"
-
-#: report.src#RID_STR_UNDO_ADDFUNCTION.string.text
-msgid "Add function"
-msgstr "ഫംഗ്ഷന്‍ ചേര്‍ക്കുക"
-
-#: report.src#RID_STR_UNDO_DELETEFUNCTION.string.text
-msgid "Delete function"
-msgstr "ഫംഗ്ഷന്‍ വെട്ടി നീക്കുക"
-
-#: report.src#RID_STR_DESIGN_VIEW.string.text
-msgid "Design"
-msgstr "ശൈലി"
-
-#: report.src#RID_STR_PREVIEW_VIEW.string.text
-msgid "Preview"
-msgstr "തിരനോട്ടം"
-
-#: report.src#STR_RPT_TITLE.string.text
-msgid "Report #"
-msgstr "റിപ്പോര്‍ട്ട് #"
-
-#: report.src#STR_RPT_LABEL.string.text
-msgid "~Report name"
-msgstr "~റിപ്പോര്‍ട്ട് നാമം"
-
-#: report.src#RID_STR_UNDO_REMOVE_GROUP.string.text
-msgctxt "report.src#RID_STR_UNDO_REMOVE_GROUP.string.text"
-msgid "Delete Group"
-msgstr "ഗ്രൂപ്പ് വെട്ടി നീക്കുക"
-
-#: report.src#RID_STR_UNDO_APPEND_GROUP.string.text
-msgid "Add Group"
-msgstr "ഗ്രൂപ്പ് ചേര്‍ക്കുക"
-
-#: report.src#RID_STR_UNDO_REMOVE_SELECTION.string.text
-msgid "Delete Selection"
-msgstr "തെരഞ്ഞെടുത്തതു് വെട്ടി നീക്കുക"
-
-#: report.src#RID_STR_UNDO_REMOVE_FUNCTION.string.text
-msgid "Delete Function"
-msgstr "ഫംഗ്ഷന്‍ വെട്ടി നീക്കുക"
-
-#: report.src#RID_STR_UNDO_CHANGE_SIZE.string.text
-msgid "Change Size"
-msgstr "വ്യാപ്തി മാറ്റുക"
-
-#: report.src#RID_STR_UNDO_PASTE.string.text
-msgid "Paste"
-msgstr "ഒട്ടിക്കുക"
-
-#: report.src#RID_STR_UNDO_INSERT_CONTROL.string.text
-msgid "Insert Control"
-msgstr "കണ്ട്രോള്‍ ചേര്‍ക്കുക"
-
-#: report.src#RID_STR_UNDO_DELETE_CONTROL.string.text
-msgid "Delete Control"
-msgstr "കണ്ട്രോള്‍ വെട്ടി നീക്കുക"
-
-#: report.src#RID_STR_UNDO_GROUP.string.text
-msgid "Insert Group"
-msgstr "ഗ്രൂപ്പ് ചേര്‍ക്കുക"
-
-#: report.src#RID_STR_UNDO_UNGROUP.string.text
-msgctxt "report.src#RID_STR_UNDO_UNGROUP.string.text"
-msgid "Delete Group"
-msgstr "ഗ്രൂപ്പ് വെട്ടി നീക്കുക"
-
-#: report.src#RID_STR_GROUPHEADER.string.text
-msgid "GroupHeader"
-msgstr "ഗ്രൂപ്പ് തലക്കെട്ട്"
-
-#: report.src#RID_STR_GROUPFOOTER.string.text
-msgid "GroupFooter"
-msgstr "ഗ്രൂപ്പ് അടിക്കുറിപ്പു്"
-
-#: report.src#RID_MENU_REPORT.SID_SORTINGANDGROUPING.menuitem.text
-msgid "Sorting and Grouping..."
-msgstr "ക്രമത്തിലാക്കലും ഗ്രൂപ്പിങ്ങും"
-
-#: report.src#RID_MENU_REPORT.SID_ATTR_CHAR_COLOR_BACKGROUND.menuitem.text
-msgid "Background Color..."
-msgstr "പശ്ചാത്തല നിറം..."
-
-#: report.src#RID_MENU_REPORT.SID_RULER.menuitem.text
-msgid "Ruler..."
-msgstr "റൂളര്‍..."
-
-#: report.src#RID_MENU_REPORT.SID_GRID_VISIBLE.menuitem.text
-msgid "Grid..."
-msgstr "ഗ്രിഡ്..."
-
-#: report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_UP.menuitem.text
-msgid "Bring ~Forward"
-msgstr "~മുന്നോട്ട് മാറ്റുക"
-
-#: report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_DOWN.menuitem.text
-msgid "Send Back~ward"
-msgstr "പു~റകോട്ട് മാറ്റുക"
-
-#: report.src#RID_MENU_REPORT.SID_ARRANGEMENU.menuitem.text
-msgid "~Arrange"
-msgstr "~ക്രമീകരിക്കുക"
-
-#: report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTWIDTH.menuitem.text
-msgid "~Fit to smallest width"
-msgstr "ഏറ്റവും കുറഞ്ഞ ~വീതിയിലാക്കുക"
-
-#: report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTWIDTH.menuitem.text
-msgid "~Fit to greatest width"
-msgstr "ഏറ്റവും കൂടിയ ~വീതിയിലാക്കുക"
-
-#: report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTHEIGHT.menuitem.text
-msgid "~Fit to smallest height"
-msgstr "ഏറ്റവും കുറഞ്ഞ ~ഉയരത്തിലാക്കുക"
-
-#: report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTHEIGHT.menuitem.text
-msgid "~Fit to greatest height"
-msgstr "ഏറ്റവും കൂടിയ ~ഉയരത്തിലാക്കുക"
-
-#: report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.menuitem.text
-msgid "~Object Resizing"
-msgstr "~ഒബ്ജക്ടിന്റെ വ്യാപ്തി മാറ്റുക"
-
-#: report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK.menuitem.text
-msgid "Shrink"
-msgstr "ചെറുതാക്കുക"
-
-#: report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_TOP.menuitem.text
-msgid "Shrink from top"
-msgstr "മുകളില്‍ നിന്നും ചെറുതാക്കുക"
-
-#: report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_BOTTOM.menuitem.text
-msgid "Shrink from bottom"
-msgstr "താഴെ നിന്നും ചെറുതാക്കുക"
-
-#: report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.menuitem.text
-msgctxt "report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.menuitem.text"
-msgid "Section"
-msgstr "വിഭാഗം"
-
-#: report.src#RID_MENU_REPORT.SID_DISTRIBUTION.menuitem.text
-msgid "Distribution..."
-msgstr "വിതരണം..."
-
-#: report.src#RID_MENU_REPORT.SID_SHOW_PROPERTYBROWSER.menuitem.text
-msgid "Properties..."
-msgstr "വിശേഷതകള്‍..."
-
-#: report.src#RID_STR_FIELDSELECTION.string.text
-msgid "Add field:"
-msgstr "ഫീള്‍ഡ് ചേര്‍ക്കുക:"
-
-#: report.src#RID_STR_FILTER.string.text
-msgid "Filter"
-msgstr "ഫില്‍‌റ്റര്‍"
-
-#: report.src#RID_APP_TITLE.string.text
-msgid " - %PRODUCTNAME Base Report"
-msgstr " - %PRODUCTNAME ബെയിസ് റിപ്പോര്‍ട്ട്"
-
-#: report.src#RID_APP_NEW_DOC.string.text
-msgid "Untitled"
-msgstr "തലക്കെട്ടില്ലാത്ത"
-
-#: report.src#RID_STR_UNDO_ALIGNMENT.string.text
-msgid "Change Alignment"
-msgstr "അലൈന്‍മെന്റ് മാറ്റുക"
-
-#: report.src#RID_STR_HEADER.string.text
-msgid "# Header"
-msgstr "# തലക്കെട്ട്"
-
-#: report.src#RID_STR_FOOTER.string.text
-msgid "# Footer"
-msgstr "# അടിക്കുറിപ്പു്"
-
-#: report.src#RID_STR_IMPORT_GRAPHIC.string.text
-msgid "Insert graphics"
-msgstr "ഗ്രാഫിക്സ് ചേര്‍ക്കുക"
-
-#: report.src#RID_STR_DELETE.string.text
-msgid "Delete"
-msgstr "വെട്ടി നീക്കുക"
-
-#: report.src#RID_STR_FUNCTION.string.text
-msgctxt "report.src#RID_STR_FUNCTION.string.text"
-msgid "Function"
-msgstr "ഫംഗ്ഷന്‍"
-
-#: report.src#RID_STR_COULD_NOT_CREATE_REPORT.string.text
-msgid "An error occurred while creating the report."
-msgstr "റിപ്പോര്‍ട്ട് ഉണ്ടാക്കുമ്പോള്‍ പിശകുണ്ടായി."
-
-#: report.src#RID_STR_CAUGHT_FOREIGN_EXCEPTION.string.text
-msgid "An exception of type $type$ was caught."
-msgstr "$type$ രീതിയിലുള്ള ഒരു പൊരുത്തക്കേടുണ്ടായിരിക്കുന്നു."
-
-#: report.src#RID_STR_UNDO_CHANGEFONT.string.text
-msgid "Change font"
-msgstr "അക്ഷരസഞ്ചയം മാറ്റുക"
-
-#: report.src#RID_STR_UNDO_CHANGEPAGE.string.text
-msgid "Change page attributes"
-msgstr "താള്‍ സവിശേഷതകള്‍ മാറ്റുക"
-
-#: report.src#RID_STR_PAGEHEADERFOOTER_INSERT.string.text
-msgid "Insert Page Header/Footer"
-msgstr "താള്‍ തലക്കെട്ട്/അടിക്കുറിപ്പു് ചേര്‍ക്കുക"
-
-#: report.src#RID_STR_PAGEHEADERFOOTER_DELETE.string.text
-msgid "Delete Page Header/Footer"
-msgstr "താള്‍ തലക്കെട്ട്/അടിക്കുറിപ്പു് വെട്ടി നീക്കുക"
-
-#: report.src#RID_STR_COLUMNHEADERFOOTER_INSERT.string.text
-msgid "Insert Column Header/Footer"
-msgstr "നിരയുടെ തലക്കെട്ട്/അടിക്കുറിപ്പു് ചേര്‍ക്കുക"
-
-#: report.src#RID_STR_COLUMNHEADERFOOTER_DELETE.string.text
-msgid "Delete Column Header/Footer"
-msgstr "നിരയുടെ തലക്കെട്ട്/അടിക്കുറിപ്പു് വെട്ടി നീക്കുക"
-
-#: report.src#RID_STR_REPORTHEADERFOOTER_INSERT.string.text
-msgid "Insert Report Header/Footer"
-msgstr "റിപ്പോര്‍ട്ട് തലക്കെട്ട്/അടിക്കുറിപ്പു് ചേര്‍ക്കുക"
-
-#: report.src#RID_STR_REPORTHEADERFOOTER_DELETE.string.text
-msgid "Delete Report Header/Footer"
-msgstr "റിപ്പോര്‍ട്ട് തലക്കെട്ട്/അടിക്കുറിപ്പു് വെട്ടി നീക്കുക"
-
-#: report.src#RID_ERR_NO_COMMAND.string.text
-msgid "The report can not be executed unless it is bound to content."
-msgstr "ഉള്ളടക്കമനുസരിച്ചല്ലെങ്കില്‍ റിപ്പോര്‍ട്ട് ലഭ്യമാക്കുവാന്‍ സാധ്യമല്ല."
-
-#: report.src#RID_ERR_NO_OBJECTS.string.text
-msgid ""
-"The report can not be executed unless at least one object has been inserted."
-msgstr ""
-"ഒരു ഒബ്ജക്ടെങ്കിലും ചേര്‍ത്തില്ലെങ്കില്‍ റിപ്പോര്‍ട്ട് ലഭ്യമാക്കുവാന്‍ "
-"സാധ്യമല്ല."
-
-#: report.src#RID_STR_UNDO_SHRINK.string.text
-msgid "Shrink Section"
-msgstr "വിഭാഗം ചെറുതാക്കുക"
-
-#: report.src#RID_STR_DETAIL.string.text
-msgid "Detail"
-msgstr "വിശദാംശം"
-
-#: report.src#RID_STR_PAGE_HEADER.string.text
-msgid "Page Header"
-msgstr "താള്‍ തലക്കെട്ട്"
-
-#: report.src#RID_STR_PAGE_FOOTER.string.text
-msgid "Page Footer"
-msgstr "താള്‍ അടിക്കുറിപ്പു്"
-
-#: report.src#RID_STR_REPORT_HEADER.string.text
-msgid "Report Header"
-msgstr "റിപ്പോര്‍ട്ട് തലക്കെട്ട്"
-
-#: report.src#RID_STR_REPORT_FOOTER.string.text
-msgid "Report Footer"
-msgstr "റിപ്പോര്‍ട്ട് അടിക്കുറിപ്പു്"
-
-#: report.src#RID_STR_INSERT.string.text
-msgid "Insert"
-msgstr "ചേര്‍ക്കുക"
-
-#: inspection.src#RID_STR_PROPPAGE_DEFAULT.string.text
-msgid "General"
-msgstr "സാധാരണ"
-
-#: inspection.src#RID_STR_PROPPAGE_DATA.string.text
-msgid "Data"
-msgstr "ഡേറ്റാ"
-
-#: inspection.src#RID_STR_BOOL.1.string.text
-msgctxt "inspection.src#RID_STR_BOOL.1.string.text"
-msgid "No"
-msgstr "ഇല്ല"
-
-#: inspection.src#RID_STR_BOOL.2.string.text
-msgid "Yes"
-msgstr "ഉവ്വു്"
-
-#: inspection.src#RID_STR_FORCENEWPAGE.string.text
-msgid "Force New Page"
-msgstr "പുതിയ താള്‍ നിര്‍ബന്ധമായുണ്ടാക്കുക"
-
-#: inspection.src#RID_STR_FORCENEWPAGE_CONST.1.string.text
-msgctxt "inspection.src#RID_STR_FORCENEWPAGE_CONST.1.string.text"
-msgid "None"
-msgstr "ഒന്നുമില്ല"
-
-#: inspection.src#RID_STR_FORCENEWPAGE_CONST.2.string.text
-msgid "Before Section"
-msgstr "വിഭാഗത്തിനു് മുമ്പു്"
-
-#: inspection.src#RID_STR_FORCENEWPAGE_CONST.3.string.text
-msgid "After Section"
-msgstr "വിഭാഗത്തിനു് ശേഷം"
-
-#: inspection.src#RID_STR_FORCENEWPAGE_CONST.4.string.text
-msgid "Before & After Section"
-msgstr "വിഭാഗത്തിനു് മുമ്പും പിമ്പും"
-
-#: inspection.src#RID_STR_NEWROWORCOL.string.text
-msgid "New Row Or Column"
-msgstr "പുതിയ നിര അല്ലെങ്കില്‍ വരി"
-
-#: inspection.src#RID_STR_KEEPTOGETHER.string.text
-msgid "Keep Together"
-msgstr "ഒന്നിച്ചു് സൂക്ഷിക്കുക"
-
-#: inspection.src#RID_STR_KEEPTOGETHER_CONST.1.string.text
-msgctxt "inspection.src#RID_STR_KEEPTOGETHER_CONST.1.string.text"
-msgid "No"
-msgstr "ഇല്ല"
-
-#: inspection.src#RID_STR_KEEPTOGETHER_CONST.2.string.text
-msgid "Whole Group"
-msgstr "പൂര്‍ണ്ണമായ ഗ്രൂപ്പ്"
-
-#: inspection.src#RID_STR_KEEPTOGETHER_CONST.3.string.text
-msgid "With First Detail"
-msgstr "ആദ്യത്തെ വിശദാംശം"
-
-#: inspection.src#RID_STR_CANGROW.string.text
-msgid "Can Grow"
-msgstr "Can Grow"
-
-#: inspection.src#RID_STR_CANSHRINK.string.text
-msgid "Can Shrink"
-msgstr "Can Shrink"
-
-#: inspection.src#RID_STR_REPEATSECTION.string.text
-msgid "Repeat Section"
-msgstr "വിഭാഗം ആവര്‍ത്തിക്കുക"
-
-#: inspection.src#RID_STR_PRINTREPEATEDVALUES.string.text
-msgid "Print repeated values"
-msgstr "ആവര്‍ത്തിച്ച മൂല്ല്യങ്ങള്‍ പ്രിന്റ് ചെയ്യുക"
-
-#: inspection.src#RID_STR_CONDITIONALPRINTEXPRESSION.string.text
-msgid "Conditional Print Expression"
-msgstr "കണ്ടീഷണല്‍ പ്രിന്റ് എക്സ്പ്രെഷന്‍"
-
-#: inspection.src#RID_STR_STARTNEWCOLUMN.string.text
-msgid "Start new column"
-msgstr "പുതിയ വരി തുടങ്ങുക"
-
-#: inspection.src#RID_STR_STARTNEWPAGE.string.text
-msgid "Start new page"
-msgstr "പുതിയ താള്‍ തുടങ്ങുക"
-
-#: inspection.src#RID_STR_RESETPAGENUMBER.string.text
-msgid "Reset page number"
-msgstr "താള്‍ നംബര്‍ വീണ്ടും സജ്ജമാക്കുക"
-
-#: inspection.src#RID_STR_CHARTTYPE.string.text
-msgid "Chart type"
-msgstr "ചാര്‍ട്ട് രീതി"
-
-#: inspection.src#RID_STR_PRINTWHENGROUPCHANGE.string.text
-msgid "Print When Group Change"
-msgstr "ഗ്രൂപ്പ് മാറുമ്പോള്‍ പ്രിന്റ് ചെയ്യുക"
-
-#: inspection.src#RID_STR_VISIBLE.string.text
-msgid "Visible"
-msgstr "ദൃശ്യം"
-
-#: inspection.src#RID_STR_GROUPKEEPTOGETHER.string.text
-msgid "Group keep together"
-msgstr "ഗ്രൂപ്പ് ഒന്നിച്ചാക്കുക"
-
-#: inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.1.string.text
-msgid "Per Page"
-msgstr "ഓരോ താളും"
-
-#: inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.2.string.text
-msgid "Per Column"
-msgstr "ഓരോ നിരയും"
-
-#: inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.1.string.text
-msgctxt "inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.1.string.text"
-msgid "None"
-msgstr "ഒന്നുമില്ല"
-
-#: inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.2.string.text
-msgid "Section"
-msgstr "വിഭാഗം"
-
-#: inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.3.string.text
-msgid "Automatic"
-msgstr "ഓട്ടോമാറ്റിക്"
-
-#: inspection.src#RID_STR_PAGEHEADEROPTION.string.text
-msgid "Page header"
-msgstr "താള്‍ തലക്കെട്ട്"
-
-#: inspection.src#RID_STR_PAGEFOOTEROPTION.string.text
-msgid "Page footer"
-msgstr "താള്‍ അടിക്കുറിപ്പു്"
-
-#: inspection.src#RID_STR_REPORTPRINTOPTION_CONST.1.string.text
-msgid "All Pages"
-msgstr "എല്ലാ താളുകളും"
-
-#: inspection.src#RID_STR_REPORTPRINTOPTION_CONST.2.string.text
-msgid "Not With Report Header"
-msgstr "റിപ്പോര്‍ട്ട് തലക്കെട്ടില്ലാതെ"
-
-#: inspection.src#RID_STR_REPORTPRINTOPTION_CONST.3.string.text
-msgid "Not With Report Footer"
-msgstr "റിപ്പോര്‍ട്ട് അടിക്കുറിപ്പില്ലാതെ"
-
-#: inspection.src#RID_STR_REPORTPRINTOPTION_CONST.4.string.text
-msgid "Not With Report Header/Footer"
-msgstr "റിപ്പോര്‍ട്ട് തലക്കെട്ട്/അടിക്കുറിപ്പില്ലാതെ"
-
-#: inspection.src#RID_STR_DEEPTRAVERSING.string.text
-msgid "Deep traversing"
-msgstr "ഡീപ് ട്രാവേഴ്സിങ്"
-
-#: inspection.src#RID_STR_PREEVALUATED.string.text
-msgid "Pre evaluation"
-msgstr "പ്രി ഇവാലുവേഷന്‍"
-
-#: inspection.src#RID_STR_POSITIONX.string.text
-msgid "Position X"
-msgstr "സ്ഥാനം X"
-
-#: inspection.src#RID_STR_POSITIONY.string.text
-msgid "Position Y"
-msgstr "സ്ഥാനം Y"
-
-#: inspection.src#RID_STR_WIDTH.string.text
-msgid "Width"
-msgstr "വീതി"
-
-#: inspection.src#RID_STR_HEIGHT.string.text
-msgid "Height"
-msgstr "ഉയരം"
-
-#: inspection.src#RID_STR_INITIALFORMULA.string.text
-msgid "Initial value"
-msgstr "പ്രാരംഭ മൂല്ല്യം"
-
-#: inspection.src#RID_STR_PRESERVEIRI.string.text
-msgid "Preserve as Link"
-msgstr "കണ്ണിയായി സൂക്ഷിക്കുക"
-
-#: inspection.src#RID_STR_FORMULA.string.text
-msgid "Formula"
-msgstr "ഫോര്‍മുലാ"
-
-#: inspection.src#RID_STR_DATAFIELD.string.text
-msgid "Data field"
-msgstr "ഡേറ്റാ ഫീള്‍ഡ്"
-
-#: inspection.src#RID_STR_FONT.string.text
-msgid "Font"
-msgstr "അക്ഷര‍സഞ്ചയം"
-
-#: inspection.src#RID_STR_BACKCOLOR.string.text
-msgid "Background color"
-msgstr "പശ്ചാത്തല നിറം"
-
-#: inspection.src#RID_STR_BACKTRANSPARENT.string.text
-msgctxt "inspection.src#RID_STR_BACKTRANSPARENT.string.text"
-msgid "Background Transparent"
-msgstr "Background Transparent"
-
-#: inspection.src#RID_STR_CONTROLBACKGROUNDTRANSPARENT.string.text
-msgctxt "inspection.src#RID_STR_CONTROLBACKGROUNDTRANSPARENT.string.text"
-msgid "Background Transparent"
-msgstr "Background Transparent"
-
-#: inspection.src#RID_STR_OVERLAP_OTHER_CONTROL.string.text
-msgid "This operation is not allowed. The control overlaps with another one."
-msgstr "ഈ പ്രക്രിയ അനുവദിക്കുന്നില്ല. ഒരു കണ്ട്രോള്‍ മറ്റൊന്നിനെ തിരുത്തുന്നു."
-
-#: inspection.src#RID_STR_ILLEGAL_POSITION.string.text
-msgid "This position can not be set. It is invalid."
-msgstr "ഈ സ്ഥാനം സജ്ജമാക്കുവാന്‍ സാധ്യമല്ല. ഇതു് തെറ്റാണു്."
-
-#: inspection.src#RID_STR_SCOPE_GROUP.string.text
-msgid "Group: %1"
-msgstr "ഗ്രൂപ്പ്: %1"
-
-#: inspection.src#RID_STR_FORMULALIST.string.text
-msgctxt "inspection.src#RID_STR_FORMULALIST.string.text"
-msgid "Function"
-msgstr "ഫംഗ്ഷന്‍"
-
-#: inspection.src#RID_STR_SCOPE.string.text
-msgid "Scope"
-msgstr "പരിധി"
-
-#: inspection.src#RID_STR_TYPE.string.text
-msgid "Data Field Type"
-msgstr "ഡേറ്റാ ഫീള്‍ഡ് രീതി"
-
-#: inspection.src#RID_STR_TYPE_CONST.1.string.text
-msgid "Field or Formula"
-msgstr "ഫീള്‍ഡ് അല്ലെങ്കില്‍ ഫോര്‍മുലാ"
-
-#: inspection.src#RID_STR_TYPE_CONST.2.string.text
-msgctxt "inspection.src#RID_STR_TYPE_CONST.2.string.text"
-msgid "Function"
-msgstr "ഫംഗ്ഷന്‍"
-
-#: inspection.src#RID_STR_TYPE_CONST.3.string.text
-msgctxt "inspection.src#RID_STR_TYPE_CONST.3.string.text"
-msgid "Counter"
-msgstr "കൌണ്ടര്‍"
-
-#: inspection.src#RID_STR_TYPE_CONST.4.string.text
-msgid "User defined Function"
-msgstr "യൂസര്‍ നിര്‍ദ്ധിഷ്ട ഫംഗ്ഷന്‍"
-
-#: inspection.src#RID_STR_MASTERFIELDS.string.text
-msgid "Link master fields"
-msgstr "മാസ്റ്റര്‍ ഫീള്‍ഡുകള്‍ തമ്മില്‍ ചേര്‍ക്കുക"
-
-#: inspection.src#RID_STR_DETAILFIELDS.string.text
-msgid "Link slave fields"
-msgstr "സ്ലേവ് ഫീള്‍ഡുകള്‍ തമ്മില്‍ ചേര്‍ക്കുക"
-
-#: inspection.src#RID_STR_EXPLANATION.string.text
-msgid ""
-"Charts can be used to display detailed data about the current record of the "
-"report. To do this, you can specify which columns in the chart match which "
-"columns in the report."
-msgstr ""
-"Charts can be used to display detailed data about the current record of the "
-"report. To do this, you can specify which columns in the chart match which "
-"columns in the report."
-
-#: inspection.src#RID_STR_DETAILLABEL.string.text
-msgid "Chart"
-msgstr "ചാര്‍ട്ട്"
-
-#: inspection.src#RID_STR_MASTERLABEL.string.text
-msgid "Report"
-msgstr "റിപ്പോര്‍ട്ട്"
-
-#: inspection.src#RID_STR_PREVIEW_COUNT.string.text
-msgid "Preview Row(s)"
-msgstr "നിരയുടെ (കളുടെ) തിരനോട്ടം"
-
-#: inspection.src#RID_STR_AREA.string.text
-msgid "Area"
-msgstr "വിസ്താരം"
-
-#: inspection.src#RID_STR_MIMETYPE.string.text
-msgid "Report Output Format"
-msgstr "റിപ്പോര്‍ട്ട് ഔട്ട്പുട്ട് ശൈലി"
-
-#: inspection.src#RID_STR_VERTICALALIGN.string.text
-msgid "Vert. Alignment"
-msgstr "കുറുകെയുള്ള അലൈന്‍മെന്റ്"
-
-#: inspection.src#RID_STR_VERTICAL_ALIGN_CONST.1.string.text
-msgid "Top"
-msgstr "മുകളില്‍"
-
-#: inspection.src#RID_STR_VERTICAL_ALIGN_CONST.2.string.text
-msgid "Middle"
-msgstr "മദ്ധ്യം"
-
-#: inspection.src#RID_STR_VERTICAL_ALIGN_CONST.3.string.text
-msgid "Bottom"
-msgstr "താഴെ"
-
-#: inspection.src#RID_STR_PARAADJUST.string.text
-msgid "Horz. Alignment"
-msgstr "നേരെയുള്ള അലൈന്‍മെന്റ്"
-
-#: inspection.src#RID_STR_PARAADJUST_CONST.1.string.text
-msgid "Left"
-msgstr "ഇടതു്"
-
-#: inspection.src#RID_STR_PARAADJUST_CONST.2.string.text
-msgid "Right"
-msgstr "വലതു്"
-
-#: inspection.src#RID_STR_PARAADJUST_CONST.3.string.text
-msgid "Block"
-msgstr "ബ്ലോക്ക്"
-
-#: inspection.src#RID_STR_PARAADJUST_CONST.4.string.text
-msgid "Center"
-msgstr "മദ്ധ്യം"
-
-#: inspection.src#RID_STR_F_COUNTER.string.text
-msgctxt "inspection.src#RID_STR_F_COUNTER.string.text"
-msgid "Counter"
-msgstr "കൌണ്ടര്‍"
-
-#: inspection.src#RID_STR_F_ACCUMULATION.string.text
-msgid "Accumulation"
-msgstr "കൂടിചേര്‍ന്നതു്"
-
-#: inspection.src#RID_STR_F_MINIMUM.string.text
-msgid "Minimum"
-msgstr "ഏറ്റവും കുറഞ്ഞ"
-
-#: inspection.src#RID_STR_F_MAXIMUM.string.text
-msgid "Maximum"
-msgstr "ഏറ്റവും കൂടിയ"
-
-#: strings.src#RID_STR_DETAIL.string.text
-msgid "Detail"
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/core/resource/strings.src#RID_STR_DETAIL.String.Text
+msgid  "Detail"
 msgstr "വിശദാശം"
 
-#: strings.src#RID_STR_PAGE_HEADER.string.text
-msgid "Page Header"
+#: source/core/resource/strings.src#RID_STR_PAGE_HEADER.String.Text
+msgid  "Page Header"
 msgstr "താള്‍ ഹെഡര്‍"
 
-#: strings.src#RID_STR_PAGE_FOOTER.string.text
-msgid "Page Footer"
+#: source/core/resource/strings.src#RID_STR_PAGE_FOOTER.String.Text
+msgid  "Page Footer"
 msgstr "താള്‍ അടിക്കുറിപ്പ്"
 
-#: strings.src#RID_STR_GROUP_HEADER.string.text
-msgid "Group Header"
+#: source/core/resource/strings.src#RID_STR_GROUP_HEADER.String.Text
+msgid  "Group Header"
 msgstr "ഗ്രൂപ്പ് ഹെഡര്‍"
 
-#: strings.src#RID_STR_GROUP_FOOTER.string.text
-msgid "Group Footer"
+#: source/core/resource/strings.src#RID_STR_GROUP_FOOTER.String.Text
+msgid  "Group Footer"
 msgstr "ഗ്രൂപ്പ് അടിക്കുറിപ്പ്"
 
-#: strings.src#RID_STR_REPORT_HEADER.string.text
-msgid "Report Header"
+#: source/core/resource/strings.src#RID_STR_REPORT_HEADER.String.Text
+msgid  "Report Header"
 msgstr "റിപ്പോര്‍ട്ട് ഹെഡര്‍"
 
-#: strings.src#RID_STR_REPORT_FOOTER.string.text
-msgid "Report Footer"
+#: source/core/resource/strings.src#RID_STR_REPORT_FOOTER.String.Text
+msgid  "Report Footer"
 msgstr "റിപ്പോര്‍ട്ട് അടിക്കുറിപ്പ്"
 
-#: strings.src#RID_STR_PROPERTY_CHANGE_NOT_ALLOWED.string.text
-msgid "The name '#1' already exists and can not be asssigned again."
+#: source/core/resource/strings.src#RID_STR_PROPERTY_CHANGE_NOT_ALLOWED.String.Text
+msgid  "The name '#1' already exists and can not be asssigned again."
 msgstr "'#1' എന്ന പേരു് നിലവിലുണ്ടു്, അതിനാല്‍ വീണ്ടും നല്‍കുവാന്‍ സാധ്യമല്ല."
 
-#: strings.src#RID_STR_ERROR_WRONG_ARGUMENT.string.text
-msgid ""
-"You tried to set an illegal argument. Please have a look at '#1' for valid "
-"arguments."
+#: source/core/resource/strings.src#RID_STR_ERROR_WRONG_ARGUMENT.String.Text
+msgid  "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
 msgstr ""
-"തെറ്റായ ആര്‍ഗ്യുമെന്റ് സജ്ജമാക്കുവാന്‍ ശ്രമിച്ചു. ദയവായി '#1' നോക്കി ശരിയായ "
-"ആര്‍ഗ്യുമെന്റുകള്‍ കണ്ടുപിടിക്കുക."
 
-#: strings.src#RID_STR_ARGUMENT_IS_NULL.string.text
-msgid "The element is invalid."
+#: source/core/resource/strings.src#RID_STR_ARGUMENT_IS_NULL.String.Text
+msgid  "The element is invalid."
 msgstr "എലമെന്റ് തെറ്റാണു്."
 
-#: strings.src#RID_STR_FIXEDTEXT.string.text
-msgid "Label field"
+#: source/core/resource/strings.src#RID_STR_FIXEDTEXT.String.Text
+msgid  "Label field"
 msgstr "ലേബല്‍ ഫീള്‍ഡ്"
 
-#: strings.src#RID_STR_FORMATTEDFIELD.string.text
-msgid "Formatted field"
+#: source/core/resource/strings.src#RID_STR_FORMATTEDFIELD.String.Text
+msgid  "Formatted field"
 msgstr "ഫോര്‍മാറ്റ് ചെയ്ത് ഫീള്‍ഡ്"
 
-#: strings.src#RID_STR_IMAGECONTROL.string.text
-msgid "Image control"
+#: source/core/resource/strings.src#RID_STR_IMAGECONTROL.String.Text
+msgid  "Image control"
 msgstr "ഇമേജ് നിയന്ത്രണം"
 
-#: strings.src#RID_STR_REPORT.string.text
-msgid "Report"
+#: source/core/resource/strings.src#RID_STR_REPORT.String.Text
+msgid  "Report"
 msgstr "റിപ്പോര്‍ട്ട്"
 
-#: strings.src#RID_STR_SHAPE.string.text
-msgid "Shape"
+#: source/core/resource/strings.src#RID_STR_SHAPE.String.Text
+msgid  "Shape"
 msgstr "ആകൃതി വര"
 
-#: strings.src#RID_STR_FIXEDLINE.string.text
-msgid "Fixed line"
+#: source/core/resource/strings.src#RID_STR_FIXEDLINE.String.Text
+msgid  "Fixed line"
 msgstr "ഉറപ്പിച്ച"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FloatingWindow.Text
+#, fuzzy
+msgid  "Sorting and Grouping"
+msgstr "ക്രമത്തിലാക്കലും ഗ്രൂപ്പിങ്ങും"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR2.FixedLine.Text
+#, fuzzy
+msgid  "Groups"
+msgstr "ഗ്രൂപ്പുകള്‍"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_MOVELABEL.FixedText.Text
+#, fuzzy
+msgid  "Group actions"
+msgstr "ഗ്രൂപ്പിനുള്ള പ്രവര്‍ത്തനങ്ങള്‍"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_UP.ToolBoxItem.Text
+#, fuzzy
+msgid  "Move up"
+msgstr "മുകളിലേക്കു് നീക്കുക"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_DOWN.ToolBoxItem.Text
+#, fuzzy
+msgid  "Move down"
+msgstr "താഴേക്കു് നീക്കുക"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_DELETE.ToolBoxItem.Text
+#, fuzzy
+msgid  "~Delete"
+msgstr "~വെട്ടി നീക്കുക"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR3.FixedLine.Text
+#, fuzzy
+msgid  "Properties"
+msgstr "വിശേഷതകള്‍"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_ORDER.FixedText.Text
+#, fuzzy
+msgid  "Sorting"
+msgstr "ക്രമത്തിലാക്കല്‍"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.0.StringList.item
+#, fuzzy
+msgid  "Ascending"
+msgstr "കുറഞ്ഞതില്‍ നിന്നും കൂടിയതിലേക്ക്"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.1.StringList.item
+#, fuzzy
+msgid  "Descending"
+msgstr "കൂടിയതില്‍ നിന്നും കുറഞ്ഞതിലേക്ക്"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_HEADER.FixedText.Text
+#, fuzzy
+msgid  "Group Header"
+msgstr "ഗ്രൂപ്പിനുള്ള തലക്കെട്ട്"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
+#, fuzzy
+msgid  "Not present"
+msgstr "ലഭ്യമല്ല"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_FOOTER.FixedText.Text
+#, fuzzy
+msgid  "Group Footer"
+msgstr "ഗ്രൂപ്പിനുള്ള അടിക്കുറിപ്പു്"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
+#, fuzzy
+msgid  "Not present"
+msgstr "നിലവിലില്ല"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPON.FixedText.Text
+#, fuzzy
+msgid  "Group On"
+msgstr "ഗ്രൂപ്പ് ഓണ്‍"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_GROUPONLST.Default.StringList.item
+#, fuzzy
+msgid  "Each Value"
+msgstr "ഓരോ മൂല്യവും"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPINTERVAL.FixedText.Text
+#, fuzzy
+msgid  "Group Interval"
+msgstr "ഗ്രൂപ്പിനുള്ള ഇടവേള"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_KEEPTOGETHER.FixedText.Text
+#, fuzzy
+msgid  "Keep Together"
+msgstr "ഒന്നിച്ചു് സൂക്ഷിക്കുക"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.0.StringList.item
+#, fuzzy
+msgid  "No"
+msgstr "ഇല്ല"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.1.StringList.item
+#, fuzzy
+msgid  "Whole Group"
+msgstr "പൂര്‍ണ്ണ ഗ്രൂപ്പ്"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.2.StringList.item
+#, fuzzy
+msgid  "With First Detail"
+msgstr "ആദ്യത്തെ വിശദാംശം"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR1.FixedLine.Text
+#, fuzzy
+msgid  "Help"
+msgstr "സഹായം"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_EXPRESSION.String.Text
+#, fuzzy
+msgid  "Field/Expression"
+msgstr "ഫീള്‍ഡ്/എക്സ്പ്രെഷന്‍"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_SORTING.String.Text
+#, fuzzy
+msgid  "Sort Order"
+msgstr "ക്രമത്തിലാക്കേണ്ട രീതി"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_PREFIXCHARS.String.Text
+#, fuzzy
+msgid  "Prefix Characters"
+msgstr "പ്രിഫിക്സ് ക്യാരക്ടര്‍"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_YEAR.String.Text
+#, fuzzy
+msgid  "Year"
+msgstr "വര്‍ഷം"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_QUARTER.String.Text
+#, fuzzy
+msgid  "Quarter"
+msgstr "ക്വാര്‍ട്ടര്‍‌"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_MONTH.String.Text
+#, fuzzy
+msgid  "Month"
+msgstr "മാസം"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_WEEK.String.Text
+#, fuzzy
+msgid  "Week"
+msgstr "ആഴ്ച"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_DAY.String.Text
+#, fuzzy
+msgid  "Day"
+msgstr "ദിവസം"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HOUR.String.Text
+#, fuzzy
+msgid  "Hour"
+msgstr "മണിക്കൂര്‍"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_MINUTE.String.Text
+#, fuzzy
+msgid  "Minute"
+msgstr "മിനിട്ട്"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_INTERVAL.String.Text
+#, fuzzy
+msgid  "Interval"
+msgstr "ഇടവേള"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_FIELD.String.Text
+msgid  "Select a field or type an expression to sort or group on."
+msgstr ""
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_HEADER.String.Text
+#, fuzzy
+msgid  "Display a header for this group?"
+msgstr "ഈ ഗ്രൂപ്പിനു് ഒരു തലക്കെട്ട് നല്‍കണമോ?"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_FOOTER.String.Text
+#, fuzzy
+msgid  "Display a footer for this group?"
+msgstr "ഈ ഗ്രൂപ്പിനു് ഒരു അടിക്കുറിപ്പു് നല്‍കണമോ?"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_GROUPON.String.Text
+msgid  "Select the value or range of values that starts a new group."
+msgstr ""
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_INTERVAL.String.Text
+#, fuzzy
+msgid  "Interval or number of characters to group on."
+msgstr "Interval or number of characters to group on."
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_KEEP.String.Text
+#, fuzzy
+msgid  "Keep group together on one page?"
+msgstr "ഗ്രൂപ്പ് ഒന്നിച്ചു് ഒറ്റ താളില്‍ സൂക്ഷിക്കണമോ?"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_SORT.String.Text
+msgid  "Select ascending or descending sort order. Ascending means from A to Z or 0 to 9"
+msgstr ""
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
+#, fuzzy
+msgid  "Present"
+msgstr "നിലവിലുള്ള"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
+#, fuzzy
+msgid  "Present"
+msgstr "നിലവിലുള്ള"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.ModalDialog.Text
+#, fuzzy
+msgid  "Page Numbers"
+msgstr "താള്‍ നംബറുകള്‍"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_FORMAT.FixedLine.Text
+#, fuzzy
+msgid  "Format"
+msgstr "മാതൃക"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N.RadioButton.Text
+#, fuzzy
+msgid  "Page N"
+msgstr "താള്‍ N"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N_OF_M.RadioButton.Text
+#, fuzzy
+msgid  "Page N of M"
+msgstr "താള്‍ N/M"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_POSITION.FixedLine.Text
+#, fuzzy
+msgid  "Position"
+msgstr "സ്ഥാനം"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_TOPPAGE.RadioButton.Text
+#, fuzzy
+msgid  "Top of Page (Header)"
+msgstr "താളിന്റെ മുകള്‍വശം (തലക്കെട്ട്)"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_BOTTOMPAGE.RadioButton.Text
+#, fuzzy
+msgid  "Bottom of Page (Footer)"
+msgstr "താളിന്റെ താഴ്വശം (അടിക്കുറിപ്പു്)"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_MISC.FixedLine.Text
+#, fuzzy
+msgid  "General"
+msgstr "സാധാരണ"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_ALIGNMENT.FixedText.Text
+#, fuzzy
+msgid  "Alignment:"
+msgstr "അലൈന്‍മെന്റ്:"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+#, fuzzy
+msgid  "Right"
+msgstr "വലത്തു്"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.CB_SHOWNUMBERONFIRSTPAGE.CheckBox.Text
+#, fuzzy
+msgid  "Show Number on First Page"
+msgstr "നംബര്‍ ആദ്യത്തെ താളില്‍ കാണിക്കുക"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.PB_HELP.HelpButton.Text
+#, fuzzy
+msgid  "~Help"
+msgstr "~സഹായം"
+
+#: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE.String.Text
+msgid  ""Page " & #PAGENUMBER#"
+msgstr ""
+
+#: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE_OF.String.Text
+msgid  " & " of " & #PAGECOUNT#"
+msgstr ""
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+#, fuzzy
+msgid  "Left"
+msgstr "ഇടത്തു്"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+#, fuzzy
+msgid  "Center"
+msgstr "മദ്ധ്യം"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.TabDialog.Text
+#, fuzzy
+msgid  "Page Setup"
+msgstr "താള്‍ സജ്ജീകരണം"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_PAGE.PageItem.Text
+#, fuzzy
+msgid  "Page"
+msgstr "താള്‍"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_BACKGROUND.PageItem.Text
+#, fuzzy
+msgid  "Background"
+msgstr "പശ്ചാത്തലം"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.PushButton.Text
+#, fuzzy
+msgid  "Return"
+msgstr "തിരികെ"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.String.Text
+#, fuzzy
+msgid  "Page"
+msgstr "താള്‍"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.2.String.Text
+#, fuzzy
+msgid  "Background"
+msgstr "പശ്ചാത്താലം"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.TabDialog.Text
+#, fuzzy
+msgid  "Section Setup"
+msgstr "വിഭാഗം ക്രമീകരിക്കുക"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.PushButton.Text
+#, fuzzy
+msgid  "Return"
+msgstr "തിരികെ"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.String.Text
+#, fuzzy
+msgid  "Background"
+msgstr "പശ്ചാത്തലം"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.TabDialog.Text
+#, fuzzy
+msgid  "Character Settings"
+msgstr "അക്ഷര സജ്ജീകരണം"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_CHAR.PageItem.Text
+#, fuzzy
+msgid  "Font"
+msgstr "അക്ഷരസഞ്ചയം"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_EFFECTS.PageItem.Text
+#, fuzzy
+msgid  "Font Effects"
+msgstr "അക്ഷരസഞ്ചയ പ്രഭാവങ്ങള്‍"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_POSITION.PageItem.Text
+#, fuzzy
+msgid  "Position"
+msgstr "സ്ഥാനം"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_TWOLN.PageItem.Text
+#, fuzzy
+msgid  "Asian Layout"
+msgstr "ഏഷ്യന്‍ ശൈലി"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_BACKGROUND.PageItem.Text
+#, fuzzy
+msgid  "Background"
+msgstr "പശ്ചാത്താലം"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_ALIGNMENT.PageItem.Text
+#, fuzzy
+msgid  "Alignment"
+msgstr "അലൈന്‍മെന്റ്"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.PushButton.Text
+#, fuzzy
+msgid  "Return"
+msgstr "തിരികെ"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.String.Text
+#, fuzzy
+msgid  "Character"
+msgstr "അക്ഷരം"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.TabDialog.Text
+#, fuzzy
+msgid  "Line"
+msgstr "വര"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE.PageItem.Text
+#, fuzzy
+msgid  "Line"
+msgstr "വര"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE_DEF.PageItem.Text
+#, fuzzy
+msgid  "Line Styles"
+msgstr "വര ശൈലികള്‍"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINEEND_DEF.PageItem.Text
+#, fuzzy
+msgid  "Arrow Styles"
+msgstr "ആരോ ശൈലികള്‍"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.PushButton.Text
+#, fuzzy
+msgid  "Return"
+msgstr "തിരികെ"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.String.Text
+#, fuzzy
+msgid  "Line"
+msgstr "വര"
+
+#: source/ui/dlg/Navigator.src#RID_NAVIGATOR.FloatingWindow.Text
+#, fuzzy
+msgid  "Report navigator"
+msgstr "റിപോര്‍ട്ടിനുള്ള നാവിഗേറ്റര്‍"
+
+#: source/ui/dlg/Navigator.src#RID_STR_FUNCTIONS.String.Text
+#, fuzzy
+msgid  "Functions"
+msgstr "ഫംഗ്ഷനുകള്‍"
+
+#: source/ui/dlg/Navigator.src#RID_STR_GROUPS.String.Text
+#, fuzzy
+msgid  "Groups"
+msgstr "ഗ്രൂപ്പുകള്‍"
+
+#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SORTINGANDGROUPING.MenuItem.Text
+#, fuzzy
+msgid  "Sorting and Grouping..."
+msgstr "ക്രമത്തിലാക്കലും ഗ്രൂപ്പിങ്ങും..."
+
+#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_PAGEHEADERFOOTER.MenuItem.Text
+#, fuzzy
+msgid  "Page Header/Footer..."
+msgstr "താളിന്റെ ഹെഡര്‍/അടിക്കുറിപ്പു്..."
+
+#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_REPORTHEADERFOOTER.MenuItem.Text
+#, fuzzy
+msgid  "Report Header/Footer..."
+msgstr "തലക്കെട്ട്/അടിക്കുറിപ്പു് രേഖപ്പെടുത്തുക..."
+
+#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_RPT_NEW_FUNCTION.MenuItem.Text
+#, fuzzy
+msgid  "New Function"
+msgstr "പുതിയ ഫംഗ്ഷന്‍"
+
+#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SHOW_PROPERTYBROWSER.MenuItem.Text
+#, fuzzy
+msgid  "Properties..."
+msgstr "വിശേഷതകള്‍..."
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
+#, fuzzy
+msgid  "Expression Is"
+msgstr "എക്സ്പ്രെഷന്‍"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.0.StringList.item
+#, fuzzy
+msgid  "between"
+msgstr "between"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.1.StringList.item
+#, fuzzy
+msgid  "not between"
+msgstr "not between"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.2.StringList.item
+#, fuzzy
+msgid  "equal to"
+msgstr "equal to"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.3.StringList.item
+#, fuzzy
+msgid  "not equal to"
+msgstr "not equal to"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.4.StringList.item
+#, fuzzy
+msgid  "greater than"
+msgstr "greater than"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.5.StringList.item
+#, fuzzy
+msgid  "less than"
+msgstr "less than"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.6.StringList.item
+#, fuzzy
+msgid  "greater than or equal to"
+msgstr "greater than or equal to"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.7.StringList.item
+#, fuzzy
+msgid  "less than or equal to"
+msgstr "less than or equal to"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.FT_AND.FixedText.Text
+#, fuzzy
+msgid  "and"
+msgstr "and"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.CRTL_FORMAT_PREVIEW.Window.Text
+#, fuzzy
+msgid  "Example"
+msgstr "ഉദാഹരണം"
+
+#: source/ui/dlg/CondFormat.src#RID_CONDFORMAT.ModalDialog.Text
+#, fuzzy
+msgid  "Conditional Formatting"
+msgstr "കണ്ടീഷണല്‍ ഫോര്‍മാറ്റിങ്"
+
+#: source/ui/dlg/CondFormat.src#RID_CONDFORMAT.PB_HELP.HelpButton.Text
+#, fuzzy
+msgid  "~Help"
+msgstr "~സഹായം"
+
+#: source/ui/dlg/CondFormat.src#STR_NUMBERED_CONDITION.String.Text
+#, fuzzy
+msgid  "Condition $number$"
+msgstr "Condition $number$"
+
+#: source/ui/dlg/CondFormat.src#STR_COLOR_WHITE.String.Text
+#, fuzzy
+msgid  "White"
+msgstr "വെളുപ്പു്"
+
+#: source/ui/dlg/CondFormat.src#STR_CHARCOLOR.String.Text
+#, fuzzy
+msgid  "Font color"
+msgstr "അക്ഷരസഞ്ചയത്തിന്റെ നിറം"
+
+#: source/ui/dlg/CondFormat.src#STR_CHARBACKGROUND.String.Text
+#, fuzzy
+msgid  "Background"
+msgstr "പശ്ചാത്തലം"
+
+#: source/ui/dlg/CondFormat.src#STR_TRANSPARENT.String.Text
+#, fuzzy
+msgid  "No Fill"
+msgstr "നിറയ്ക്കേണ്ട"
+
+#: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTUP.ToolBoxItem.Text
+#, fuzzy
+msgid  "Sort Ascending"
+msgstr "കുറവില്‍ നിന്നും കൂടുതല്‍ എന്ന ക്രമത്തില്‍"
+
+#: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTDOWN.ToolBoxItem.Text
+#, fuzzy
+msgid  "Sort Descending"
+msgstr "കൂടുതലില്‍ നിന്നും കുറവിലേക്കു് എന്ന ക്രമത്തില്‍"
+
+#: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_REMOVE_FILTER_SORT.ToolBoxItem.Text
+#, fuzzy
+msgid  "Remove sorting"
+msgstr "ക്രമം നീക്കുക"
+
+#: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_ADD_CONTROL_PAIR.ToolBoxItem.Text
+#, fuzzy
+msgid  "Insert"
+msgstr "ചേര്‍ക്കുക"
+
+#: source/ui/dlg/CondFormat.src#ADDFIELD_FL_HELP_SEPARATOR.FixedLine.Text
+#, fuzzy
+msgid  "Help"
+msgstr "സഹായം"
+
+#: source/ui/dlg/CondFormat.src#ADDFIELD_HELP_FIELD.FixedText.Text
+msgid  "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
+msgstr ""
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
+#, fuzzy
+msgid  "Field Value Is"
+msgstr "ഫീള്‍ഡിന്റെ മൂല്ല്യം"
+
+#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.ModalDialog.Text
+#, fuzzy
+msgid  "Date and Time"
+msgstr "തീയതിയും സമയവും"
+
+#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_DATE.CheckBox.Text
+#, fuzzy
+msgid  "Include Date"
+msgstr "തീയതി ഉള്‍പ്പെടുത്തുക"
+
+#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_DATE_FORMAT.FixedText.Text
+#, fuzzy
+msgid  "Format"
+msgstr "മാതൃക"
+
+#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_TIME.CheckBox.Text
+#, fuzzy
+msgid  "Include Time"
+msgstr "സമയം ഉള്‍പ്പെടുത്തുക"
+
+#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_TIME_FORMAT.FixedText.Text
+#, fuzzy
+msgid  "Format"
+msgstr "മാതൃക"
+
+#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.PB_HELP.HelpButton.Text
+#, fuzzy
+msgid  "~Help"
+msgstr "~സഹായം"
+
+#: source/ui/inspection/inspection.src#RID_STR_PROPPAGE_DEFAULT.String.Text
+#, fuzzy
+msgid  "General"
+msgstr "സാധാരണ"
+
+#: source/ui/inspection/inspection.src#RID_STR_PROPPAGE_DATA.String.Text
+#, fuzzy
+msgid  "Data"
+msgstr "ഡേറ്റാ"
+
+#: source/ui/inspection/inspection.src#RID_STR_BOOL.1.String.Text
+#, fuzzy
+msgid  "No"
+msgstr "ഇല്ല"
+
+#: source/ui/inspection/inspection.src#RID_STR_BOOL.2.String.Text
+#, fuzzy
+msgid  "Yes"
+msgstr "ഉവ്വു്"
+
+#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE.String.Text
+#, fuzzy
+msgid  "Force New Page"
+msgstr "പുതിയ താള്‍ നിര്‍ബന്ധമായുണ്ടാക്കുക"
+
+#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.1.String.Text
+#, fuzzy
+msgid  "None"
+msgstr "ഒന്നുമില്ല"
+
+#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.2.String.Text
+#, fuzzy
+msgid  "Before Section"
+msgstr "വിഭാഗത്തിനു് മുമ്പു്"
+
+#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.3.String.Text
+#, fuzzy
+msgid  "After Section"
+msgstr "വിഭാഗത്തിനു് ശേഷം"
+
+#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.4.String.Text
+#, fuzzy
+msgid  "Before & After Section"
+msgstr "വിഭാഗത്തിനു് മുമ്പും പിമ്പും"
+
+#: source/ui/inspection/inspection.src#RID_STR_NEWROWORCOL.String.Text
+#, fuzzy
+msgid  "New Row Or Column"
+msgstr "പുതിയ നിര അല്ലെങ്കില്‍ വരി"
+
+#: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER.String.Text
+#, fuzzy
+msgid  "Keep Together"
+msgstr "ഒന്നിച്ചു് സൂക്ഷിക്കുക"
+
+#: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.1.String.Text
+#, fuzzy
+msgid  "No"
+msgstr "ഇല്ല"
+
+#: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.2.String.Text
+#, fuzzy
+msgid  "Whole Group"
+msgstr "പൂര്‍ണ്ണമായ ഗ്രൂപ്പ്"
+
+#: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.3.String.Text
+#, fuzzy
+msgid  "With First Detail"
+msgstr "ആദ്യത്തെ വിശദാംശം"
+
+#: source/ui/inspection/inspection.src#RID_STR_CANGROW.String.Text
+#, fuzzy
+msgid  "Can Grow"
+msgstr "Can Grow"
+
+#: source/ui/inspection/inspection.src#RID_STR_CANSHRINK.String.Text
+#, fuzzy
+msgid  "Can Shrink"
+msgstr "Can Shrink"
+
+#: source/ui/inspection/inspection.src#RID_STR_REPEATSECTION.String.Text
+#, fuzzy
+msgid  "Repeat Section"
+msgstr "വിഭാഗം ആവര്‍ത്തിക്കുക"
+
+#: source/ui/inspection/inspection.src#RID_STR_PRINTREPEATEDVALUES.String.Text
+#, fuzzy
+msgid  "Print repeated values"
+msgstr "ആവര്‍ത്തിച്ച മൂല്ല്യങ്ങള്‍ പ്രിന്റ് ചെയ്യുക"
+
+#: source/ui/inspection/inspection.src#RID_STR_CONDITIONALPRINTEXPRESSION.String.Text
+#, fuzzy
+msgid  "Conditional Print Expression"
+msgstr "കണ്ടീഷണല്‍ പ്രിന്റ് എക്സ്പ്രെഷന്‍"
+
+#: source/ui/inspection/inspection.src#RID_STR_STARTNEWCOLUMN.String.Text
+#, fuzzy
+msgid  "Start new column"
+msgstr "പുതിയ വരി തുടങ്ങുക"
+
+#: source/ui/inspection/inspection.src#RID_STR_STARTNEWPAGE.String.Text
+#, fuzzy
+msgid  "Start new page"
+msgstr "പുതിയ താള്‍ തുടങ്ങുക"
+
+#: source/ui/inspection/inspection.src#RID_STR_RESETPAGENUMBER.String.Text
+#, fuzzy
+msgid  "Reset page number"
+msgstr "താള്‍ നംബര്‍ വീണ്ടും സജ്ജമാക്കുക"
+
+#: source/ui/inspection/inspection.src#RID_STR_CHARTTYPE.String.Text
+#, fuzzy
+msgid  "Chart type"
+msgstr "ചാര്‍ട്ട് രീതി"
+
+#: source/ui/inspection/inspection.src#RID_STR_PRINTWHENGROUPCHANGE.String.Text
+#, fuzzy
+msgid  "Print When Group Change"
+msgstr "ഗ്രൂപ്പ് മാറുമ്പോള്‍ പ്രിന്റ് ചെയ്യുക"
+
+#: source/ui/inspection/inspection.src#RID_STR_VISIBLE.String.Text
+#, fuzzy
+msgid  "Visible"
+msgstr "ദൃശ്യം"
+
+#: source/ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER.String.Text
+#, fuzzy
+msgid  "Group keep together"
+msgstr "ഗ്രൂപ്പ് ഒന്നിച്ചാക്കുക"
+
+#: source/ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.1.String.Text
+#, fuzzy
+msgid  "Per Page"
+msgstr "ഓരോ താളും"
+
+#: source/ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.2.String.Text
+#, fuzzy
+msgid  "Per Column"
+msgstr "ഓരോ നിരയും"
+
+#: source/ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.1.String.Text
+#, fuzzy
+msgid  "None"
+msgstr "ഒന്നുമില്ല"
+
+#: source/ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.2.String.Text
+#, fuzzy
+msgid  "Section"
+msgstr "വിഭാഗം"
+
+#: source/ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.3.String.Text
+#, fuzzy
+msgid  "Automatic"
+msgstr "ഓട്ടോമാറ്റിക്"
+
+#: source/ui/inspection/inspection.src#RID_STR_PAGEHEADEROPTION.String.Text
+#, fuzzy
+msgid  "Page header"
+msgstr "താള്‍ തലക്കെട്ട്"
+
+#: source/ui/inspection/inspection.src#RID_STR_PAGEFOOTEROPTION.String.Text
+#, fuzzy
+msgid  "Page footer"
+msgstr "താള്‍ അടിക്കുറിപ്പു്"
+
+#: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.1.String.Text
+#, fuzzy
+msgid  "All Pages"
+msgstr "എല്ലാ താളുകളും"
+
+#: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.2.String.Text
+#, fuzzy
+msgid  "Not With Report Header"
+msgstr "റിപ്പോര്‍ട്ട് തലക്കെട്ടില്ലാതെ"
+
+#: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.3.String.Text
+#, fuzzy
+msgid  "Not With Report Footer"
+msgstr "റിപ്പോര്‍ട്ട് അടിക്കുറിപ്പില്ലാതെ"
+
+#: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.4.String.Text
+#, fuzzy
+msgid  "Not With Report Header/Footer"
+msgstr "റിപ്പോര്‍ട്ട് തലക്കെട്ട്/അടിക്കുറിപ്പില്ലാതെ"
+
+#: source/ui/inspection/inspection.src#RID_STR_DEEPTRAVERSING.String.Text
+#, fuzzy
+msgid  "Deep traversing"
+msgstr "ഡീപ് ട്രാവേഴ്സിങ്"
+
+#: source/ui/inspection/inspection.src#RID_STR_PREEVALUATED.String.Text
+#, fuzzy
+msgid  "Pre evaluation"
+msgstr "പ്രി ഇവാലുവേഷന്‍"
+
+#: source/ui/inspection/inspection.src#RID_STR_POSITIONX.String.Text
+#, fuzzy
+msgid  "Position X"
+msgstr "സ്ഥാനം X"
+
+#: source/ui/inspection/inspection.src#RID_STR_POSITIONY.String.Text
+#, fuzzy
+msgid  "Position Y"
+msgstr "സ്ഥാനം Y"
+
+#: source/ui/inspection/inspection.src#RID_STR_WIDTH.String.Text
+#, fuzzy
+msgid  "Width"
+msgstr "വീതി"
+
+#: source/ui/inspection/inspection.src#RID_STR_HEIGHT.String.Text
+#, fuzzy
+msgid  "Height"
+msgstr "ഉയരം"
+
+#: source/ui/inspection/inspection.src#RID_STR_INITIALFORMULA.String.Text
+#, fuzzy
+msgid  "Initial value"
+msgstr "പ്രാരംഭ മൂല്ല്യം"
+
+#: source/ui/inspection/inspection.src#RID_STR_PRESERVEIRI.String.Text
+#, fuzzy
+msgid  "Preserve as Link"
+msgstr "കണ്ണിയായി സൂക്ഷിക്കുക"
+
+#: source/ui/inspection/inspection.src#RID_STR_FORMULA.String.Text
+#, fuzzy
+msgid  "Formula"
+msgstr "ഫോര്‍മുലാ"
+
+#: source/ui/inspection/inspection.src#RID_STR_DATAFIELD.String.Text
+#, fuzzy
+msgid  "Data field"
+msgstr "ഡേറ്റാ ഫീള്‍ഡ്"
+
+#: source/ui/inspection/inspection.src#RID_STR_FONT.String.Text
+#, fuzzy
+msgid  "Font"
+msgstr "അക്ഷര‍സഞ്ചയം"
+
+#: source/ui/inspection/inspection.src#RID_STR_BACKCOLOR.String.Text
+#, fuzzy
+msgid  "Background color"
+msgstr "പശ്ചാത്തല നിറം"
+
+#: source/ui/inspection/inspection.src#RID_STR_BACKTRANSPARENT.String.Text
+#, fuzzy
+msgid  "Background Transparent"
+msgstr "Background Transparent"
+
+#: source/ui/inspection/inspection.src#RID_STR_CONTROLBACKGROUNDTRANSPARENT.String.Text
+#, fuzzy
+msgid  "Background Transparent"
+msgstr "Background Transparent"
+
+#: source/ui/inspection/inspection.src#RID_STR_OVERLAP_OTHER_CONTROL.String.Text
+#, fuzzy
+msgid  "This operation is not allowed. The control overlaps with another one."
+msgstr "ഈ പ്രക്രിയ അനുവദിക്കുന്നില്ല. ഒരു കണ്ട്രോള്‍ മറ്റൊന്നിനെ തിരുത്തുന്നു."
+
+#: source/ui/inspection/inspection.src#RID_STR_ILLEGAL_POSITION.String.Text
+#, fuzzy
+msgid  "This position can not be set. It is invalid."
+msgstr "ഈ സ്ഥാനം സജ്ജമാക്കുവാന്‍ സാധ്യമല്ല. ഇതു് തെറ്റാണു്."
+
+#: source/ui/inspection/inspection.src#RID_STR_SCOPE_GROUP.String.Text
+#, fuzzy
+msgid  "Group: %1"
+msgstr "ഗ്രൂപ്പ്: %1"
+
+#: source/ui/inspection/inspection.src#RID_STR_FORMULALIST.String.Text
+#, fuzzy
+msgid  "Function"
+msgstr "ഫംഗ്ഷന്‍"
+
+#: source/ui/inspection/inspection.src#RID_STR_SCOPE.String.Text
+#, fuzzy
+msgid  "Scope"
+msgstr "പരിധി"
+
+#: source/ui/inspection/inspection.src#RID_STR_TYPE.String.Text
+#, fuzzy
+msgid  "Data Field Type"
+msgstr "ഡേറ്റാ ഫീള്‍ഡ് രീതി"
+
+#: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.1.String.Text
+#, fuzzy
+msgid  "Field or Formula"
+msgstr "ഫീള്‍ഡ് അല്ലെങ്കില്‍ ഫോര്‍മുലാ"
+
+#: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.2.String.Text
+#, fuzzy
+msgid  "Function"
+msgstr "ഫംഗ്ഷന്‍"
+
+#: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.3.String.Text
+#, fuzzy
+msgid  "Counter"
+msgstr "കൌണ്ടര്‍"
+
+#: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.4.String.Text
+#, fuzzy
+msgid  "User defined Function"
+msgstr "യൂസര്‍ നിര്‍ദ്ധിഷ്ട ഫംഗ്ഷന്‍"
+
+#: source/ui/inspection/inspection.src#RID_STR_MASTERFIELDS.String.Text
+#, fuzzy
+msgid  "Link master fields"
+msgstr "മാസ്റ്റര്‍ ഫീള്‍ഡുകള്‍ തമ്മില്‍ ചേര്‍ക്കുക"
+
+#: source/ui/inspection/inspection.src#RID_STR_DETAILFIELDS.String.Text
+#, fuzzy
+msgid  "Link slave fields"
+msgstr "സ്ലേവ് ഫീള്‍ഡുകള്‍ തമ്മില്‍ ചേര്‍ക്കുക"
+
+#: source/ui/inspection/inspection.src#RID_STR_EXPLANATION.String.Text
+msgid  "Charts can be used to display detailed data about the current record of the report. To do this, you can specify which columns in the chart match which columns in the report."
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_DETAILLABEL.String.Text
+#, fuzzy
+msgid  "Chart"
+msgstr "ചാര്‍ട്ട്"
+
+#: source/ui/inspection/inspection.src#RID_STR_MASTERLABEL.String.Text
+#, fuzzy
+msgid  "Report"
+msgstr "റിപ്പോര്‍ട്ട്"
+
+#: source/ui/inspection/inspection.src#RID_STR_PREVIEW_COUNT.String.Text
+#, fuzzy
+msgid  "Preview Row(s)"
+msgstr "നിരയുടെ (കളുടെ) തിരനോട്ടം"
+
+#: source/ui/inspection/inspection.src#RID_STR_AREA.String.Text
+#, fuzzy
+msgid  "Area"
+msgstr "വിസ്താരം"
+
+#: source/ui/inspection/inspection.src#RID_STR_MIMETYPE.String.Text
+#, fuzzy
+msgid  "Report Output Format"
+msgstr "റിപ്പോര്‍ട്ട് ഔട്ട്പുട്ട് ശൈലി"
+
+#: source/ui/inspection/inspection.src#RID_STR_VERTICALALIGN.String.Text
+#, fuzzy
+msgid  "Vert. Alignment"
+msgstr "കുറുകെയുള്ള അലൈന്‍മെന്റ്"
+
+#: source/ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.1.String.Text
+#, fuzzy
+msgid  "Top"
+msgstr "മുകളില്‍"
+
+#: source/ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.2.String.Text
+#, fuzzy
+msgid  "Middle"
+msgstr "മദ്ധ്യം"
+
+#: source/ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.3.String.Text
+#, fuzzy
+msgid  "Bottom"
+msgstr "താഴെ"
+
+#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST.String.Text
+#, fuzzy
+msgid  "Horz. Alignment"
+msgstr "നേരെയുള്ള അലൈന്‍മെന്റ്"
+
+#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.1.String.Text
+#, fuzzy
+msgid  "Left"
+msgstr "ഇടതു്"
+
+#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.2.String.Text
+#, fuzzy
+msgid  "Right"
+msgstr "വലതു്"
+
+#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.3.String.Text
+#, fuzzy
+msgid  "Block"
+msgstr "ബ്ലോക്ക്"
+
+#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.4.String.Text
+#, fuzzy
+msgid  "Center"
+msgstr "മദ്ധ്യം"
+
+#: source/ui/inspection/inspection.src#RID_STR_F_COUNTER.String.Text
+#, fuzzy
+msgid  "Counter"
+msgstr "കൌണ്ടര്‍"
+
+#: source/ui/inspection/inspection.src#RID_STR_F_ACCUMULATION.String.Text
+#, fuzzy
+msgid  "Accumulation"
+msgstr "കൂടിചേര്‍ന്നതു്"
+
+#: source/ui/inspection/inspection.src#RID_STR_F_MINIMUM.String.Text
+#, fuzzy
+msgid  "Minimum"
+msgstr "ഏറ്റവും കുറഞ്ഞ"
+
+#: source/ui/inspection/inspection.src#RID_STR_F_MAXIMUM.String.Text
+#, fuzzy
+msgid  "Maximum"
+msgstr "ഏറ്റവും കൂടിയ"
+
+#: source/ui/report/report.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
+#, fuzzy
+msgid  "Properties: "
+msgstr "വിശേഷതകള്‍: "
+
+#: source/ui/report/report.src#RID_STR_BRWTITLE_NO_PROPERTIES.String.Text
+#, fuzzy
+msgid  "No Control marked"
+msgstr "കണ്ട്രോള്‍ അടയാളപ്പെടുത്തിയിട്ടില്ല"
+
+#: source/ui/report/report.src#RID_STR_BRWTITLE_MULTISELECT.String.Text
+#, fuzzy
+msgid  "Multiselection"
+msgstr "അനവധി തെരഞ്ഞെടുക്കല്‍"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_IMAGECONTROL.String.Text
+#, fuzzy
+msgid  "Image Control"
+msgstr "ഇമേജ് കണ്ട്രോള്‍"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_FIXEDTEXT.String.Text
+#, fuzzy
+msgid  "Label field"
+msgstr "ലേബല്‍ ഫീള്‍ഡ്"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_FIXEDLINE.String.Text
+#, fuzzy
+msgid  "Line"
+msgstr "വര"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_FORMATTED.String.Text
+#, fuzzy
+msgid  "Formatted Field"
+msgstr "ഫോര്‍മാറ്റ് ചെയ്ത ഫീള്‍ഡ്"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_SHAPE.String.Text
+#, fuzzy
+msgid  "Shape"
+msgstr "ആകൃതി"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_REPORT.String.Text
+#, fuzzy
+msgid  "Report"
+msgstr "റിപ്പോര്‍ട്ട്"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_SECTION.String.Text
+#, fuzzy
+msgid  "Section"
+msgstr "വിഭാഗം"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_FUNCTION.String.Text
+#, fuzzy
+msgid  "Function"
+msgstr "ഫംഗ്ഷന്‍"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_GROUP.String.Text
+#, fuzzy
+msgid  "Group"
+msgstr "ഗ്രൂപ്പ്"
+
+#: source/ui/report/report.src#STR_SHOW_RULER.String.Text
+#, fuzzy
+msgid  "Show ruler"
+msgstr "റൂളര്‍ കാണിക്കുക"
+
+#: source/ui/report/report.src#STR_SHOW_GRID.String.Text
+#, fuzzy
+msgid  "Show grid"
+msgstr "ഗ്രിഡ് കാണിക്കുക"
+
+#: source/ui/report/report.src#RID_STR_UNDO_CHANGEPOSITION.String.Text
+#, fuzzy
+msgid  "Change Object"
+msgstr "ഒബ്ജക്ട് മാറ്റുക"
+
+#: source/ui/report/report.src#RID_STR_UNDO_MOVE_GROUP.String.Text
+#, fuzzy
+msgid  "Move Group(s)"
+msgstr "ഗ്രൂപ്പ്(കള്‍) നീക്കുക"
+
+#: source/ui/report/report.src#RID_STR_UNDO_CONDITIONAL_FORMATTING.String.Text
+#, fuzzy
+msgid  "Conditional Formatting"
+msgstr "കണ്ടീഷനല്‍ ഫോര്‍മാറ്റിങ്"
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_REPORTHEADERFOOTER.String.Text
+#, fuzzy
+msgid  "Remove report header / report footer"
+msgstr "റിപ്പോര്‍ട്ട് തലക്കെട്ട് / റിപ്പോര്‍ട്ട് അടിക്കുറിപ്പു് നീക്കം ചെയ്യുക"
+
+#: source/ui/report/report.src#RID_STR_UNDO_ADD_REPORTHEADERFOOTER.String.Text
+#, fuzzy
+msgid  "Add report header / report footer"
+msgstr "റിപ്പോര്‍ട്ട് തലക്കെട്ട് / റിപ്പോര്‍ട്ട് അടിക്കുറിപ്പു് ചേര്‍ക്കുക"
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_PAGEHEADERFOOTER.String.Text
+#, fuzzy
+msgid  "Remove page header / page footer"
+msgstr "താള്‍ തലക്കെട്ട് / താള്‍‍ അടിക്കുറിപ്പു് നീക്കം ചെയ്യുക"
+
+#: source/ui/report/report.src#RID_STR_UNDO_ADD_PAGEHEADERFOOTER.String.Text
+#, fuzzy
+msgid  "Add page header / page footer"
+msgstr "താള്‍ തലക്കെട്ട് / താള്‍ അടിക്കുറിപ്പു് ചേര്‍ക്കുക"
+
+#: source/ui/report/report.src#RID_STR_UNDO_PROPERTY.String.Text
+#, fuzzy
+msgid  "Change property '#'"
+msgstr "'#' വിശേഷത മാറ്റുക"
+
+#: source/ui/report/report.src#RID_STR_UNDO_ADD_GROUP_HEADER.String.Text
+#, fuzzy
+msgid  "Add group header "
+msgstr "ഗ്രൂപ്പ് തലക്കെട്ട് ചേര്‍ക്കുക"
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_HEADER.String.Text
+#, fuzzy
+msgid  "Remove group header "
+msgstr "ഗ്രൂപ്പ് തലക്കെട്ട് നീക്കം ചെയ്യുക"
+
+#: source/ui/report/report.src#RID_STR_UNDO_ADD_GROUP_FOOTER.String.Text
+#, fuzzy
+msgid  "Add group footer "
+msgstr "താള്‍ അടിക്കുറിപ്പു് ചേര്‍ക്കുക"
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_FOOTER.String.Text
+#, fuzzy
+msgid  "Remove group footer "
+msgstr "ഗ്രൂപ്പ് അടിക്കുറിപ്പു് നീക്കം ചെയ്യുക"
+
+#: source/ui/report/report.src#RID_STR_UNDO_ADDFUNCTION.String.Text
+#, fuzzy
+msgid  "Add function"
+msgstr "ഫംഗ്ഷന്‍ ചേര്‍ക്കുക"
+
+#: source/ui/report/report.src#RID_STR_UNDO_DELETEFUNCTION.String.Text
+#, fuzzy
+msgid  "Delete function"
+msgstr "ഫംഗ്ഷന്‍ വെട്ടി നീക്കുക"
+
+#: source/ui/report/report.src#RID_STR_DESIGN_VIEW.String.Text
+#, fuzzy
+msgid  "Design"
+msgstr "ശൈലി"
+
+#: source/ui/report/report.src#RID_STR_PREVIEW_VIEW.String.Text
+#, fuzzy
+msgid  "Preview"
+msgstr "തിരനോട്ടം"
+
+#: source/ui/report/report.src#STR_RPT_TITLE.String.Text
+#, fuzzy
+msgid  "Report #"
+msgstr "റിപ്പോര്‍ട്ട് #"
+
+#: source/ui/report/report.src#STR_RPT_LABEL.String.Text
+#, fuzzy
+msgid  "~Report name"
+msgstr "~റിപ്പോര്‍ട്ട് നാമം"
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP.String.Text
+#, fuzzy
+msgid  "Delete Group"
+msgstr "ഗ്രൂപ്പ് വെട്ടി നീക്കുക"
+
+#: source/ui/report/report.src#RID_STR_UNDO_APPEND_GROUP.String.Text
+#, fuzzy
+msgid  "Add Group"
+msgstr "ഗ്രൂപ്പ് ചേര്‍ക്കുക"
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_SELECTION.String.Text
+#, fuzzy
+msgid  "Delete Selection"
+msgstr "തെരഞ്ഞെടുത്തതു് വെട്ടി നീക്കുക"
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_FUNCTION.String.Text
+#, fuzzy
+msgid  "Delete Function"
+msgstr "ഫംഗ്ഷന്‍ വെട്ടി നീക്കുക"
+
+#: source/ui/report/report.src#RID_STR_UNDO_CHANGE_SIZE.String.Text
+#, fuzzy
+msgid  "Change Size"
+msgstr "വ്യാപ്തി മാറ്റുക"
+
+#: source/ui/report/report.src#RID_STR_UNDO_PASTE.String.Text
+#, fuzzy
+msgid  "Paste"
+msgstr "ഒട്ടിക്കുക"
+
+#: source/ui/report/report.src#RID_STR_UNDO_INSERT_CONTROL.String.Text
+#, fuzzy
+msgid  "Insert Control"
+msgstr "കണ്ട്രോള്‍ ചേര്‍ക്കുക"
+
+#: source/ui/report/report.src#RID_STR_UNDO_DELETE_CONTROL.String.Text
+#, fuzzy
+msgid  "Delete Control"
+msgstr "കണ്ട്രോള്‍ വെട്ടി നീക്കുക"
+
+#: source/ui/report/report.src#RID_STR_UNDO_GROUP.String.Text
+#, fuzzy
+msgid  "Insert Group"
+msgstr "ഗ്രൂപ്പ് ചേര്‍ക്കുക"
+
+#: source/ui/report/report.src#RID_STR_UNDO_UNGROUP.String.Text
+#, fuzzy
+msgid  "Delete Group"
+msgstr "ഗ്രൂപ്പ് വെട്ടി നീക്കുക"
+
+#: source/ui/report/report.src#RID_STR_GROUPHEADER.String.Text
+#, fuzzy
+msgid  "GroupHeader"
+msgstr "ഗ്രൂപ്പ് തലക്കെട്ട്"
+
+#: source/ui/report/report.src#RID_STR_GROUPFOOTER.String.Text
+#, fuzzy
+msgid  "GroupFooter"
+msgstr "ഗ്രൂപ്പ് അടിക്കുറിപ്പു്"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_SORTINGANDGROUPING.MenuItem.Text
+#, fuzzy
+msgid  "Sorting and Grouping..."
+msgstr "ക്രമത്തിലാക്കലും ഗ്രൂപ്പിങ്ങും"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_ATTR_CHAR_COLOR_BACKGROUND.MenuItem.Text
+#, fuzzy
+msgid  "Background Color..."
+msgstr "പശ്ചാത്തല നിറം..."
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_RULER.MenuItem.Text
+#, fuzzy
+msgid  "Ruler..."
+msgstr "റൂളര്‍..."
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_GRID_VISIBLE.MenuItem.Text
+#, fuzzy
+msgid  "Grid..."
+msgstr "ഗ്രിഡ്..."
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.MenuItem.Text
+#, fuzzy
+msgid  "~Arrange"
+msgstr "~ക്രമീകരിക്കുക"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_UP.MenuItem.Text
+#, fuzzy
+msgid  "Bring ~Forward"
+msgstr "~മുന്നോട്ട് മാറ്റുക"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_DOWN.MenuItem.Text
+#, fuzzy
+msgid  "Send Back~ward"
+msgstr "പു~റകോട്ട് മാറ്റുക"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.MenuItem.Text
+#, fuzzy
+msgid  "~Object Resizing"
+msgstr "~ഒബ്ജക്ടിന്റെ വ്യാപ്തി മാറ്റുക"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTWIDTH.MenuItem.Text
+#, fuzzy
+msgid  "~Fit to smallest width"
+msgstr "ഏറ്റവും കുറഞ്ഞ ~വീതിയിലാക്കുക"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTWIDTH.MenuItem.Text
+#, fuzzy
+msgid  "~Fit to greatest width"
+msgstr "ഏറ്റവും കൂടിയ ~വീതിയിലാക്കുക"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTHEIGHT.MenuItem.Text
+#, fuzzy
+msgid  "~Fit to smallest height"
+msgstr "ഏറ്റവും കുറഞ്ഞ ~ഉയരത്തിലാക്കുക"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTHEIGHT.MenuItem.Text
+#, fuzzy
+msgid  "~Fit to greatest height"
+msgstr "ഏറ്റവും കൂടിയ ~ഉയരത്തിലാക്കുക"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.MenuItem.Text
+#, fuzzy
+msgid  "Section"
+msgstr "വിഭാഗം"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK.MenuItem.Text
+#, fuzzy
+msgid  "Shrink"
+msgstr "ചെറുതാക്കുക"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_TOP.MenuItem.Text
+#, fuzzy
+msgid  "Shrink from top"
+msgstr "മുകളില്‍ നിന്നും ചെറുതാക്കുക"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_BOTTOM.MenuItem.Text
+#, fuzzy
+msgid  "Shrink from bottom"
+msgstr "താഴെ നിന്നും ചെറുതാക്കുക"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_DISTRIBUTION.MenuItem.Text
+#, fuzzy
+msgid  "Distribution..."
+msgstr "വിതരണം..."
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_SHOW_PROPERTYBROWSER.MenuItem.Text
+#, fuzzy
+msgid  "Properties..."
+msgstr "വിശേഷതകള്‍..."
+
+#: source/ui/report/report.src#RID_STR_FIELDSELECTION.String.Text
+#, fuzzy
+msgid  "Add field:"
+msgstr "ഫീള്‍ഡ് ചേര്‍ക്കുക:"
+
+#: source/ui/report/report.src#RID_STR_FILTER.String.Text
+#, fuzzy
+msgid  "Filter"
+msgstr "ഫില്‍‌റ്റര്‍"
+
+#: source/ui/report/report.src#RID_APP_TITLE.String.Text
+#, fuzzy
+msgid  " - %PRODUCTNAME Base Report"
+msgstr " - %PRODUCTNAME ബെയിസ് റിപ്പോര്‍ട്ട്"
+
+#: source/ui/report/report.src#RID_APP_NEW_DOC.String.Text
+#, fuzzy
+msgid  "Untitled"
+msgstr "തലക്കെട്ടില്ലാത്ത"
+
+#: source/ui/report/report.src#RID_STR_UNDO_ALIGNMENT.String.Text
+#, fuzzy
+msgid  "Change Alignment"
+msgstr "അലൈന്‍മെന്റ് മാറ്റുക"
+
+#: source/ui/report/report.src#RID_STR_HEADER.String.Text
+#, fuzzy
+msgid  "# Header"
+msgstr "# തലക്കെട്ട്"
+
+#: source/ui/report/report.src#RID_STR_FOOTER.String.Text
+#, fuzzy
+msgid  "# Footer"
+msgstr "# അടിക്കുറിപ്പു്"
+
+#: source/ui/report/report.src#RID_STR_IMPORT_GRAPHIC.String.Text
+#, fuzzy
+msgid  "Insert graphics"
+msgstr "ഗ്രാഫിക്സ് ചേര്‍ക്കുക"
+
+#: source/ui/report/report.src#RID_STR_DELETE.String.Text
+#, fuzzy
+msgid  "Delete"
+msgstr "വെട്ടി നീക്കുക"
+
+#: source/ui/report/report.src#RID_STR_FUNCTION.String.Text
+#, fuzzy
+msgid  "Function"
+msgstr "ഫംഗ്ഷന്‍"
+
+#: source/ui/report/report.src#RID_STR_COULD_NOT_CREATE_REPORT.String.Text
+#, fuzzy
+msgid  "An error occurred while creating the report."
+msgstr "റിപ്പോര്‍ട്ട് ഉണ്ടാക്കുമ്പോള്‍ പിശകുണ്ടായി."
+
+#: source/ui/report/report.src#RID_STR_CAUGHT_FOREIGN_EXCEPTION.String.Text
+#, fuzzy
+msgid  "An exception of type $type$ was caught."
+msgstr "$type$ രീതിയിലുള്ള ഒരു പൊരുത്തക്കേടുണ്ടായിരിക്കുന്നു."
+
+#: source/ui/report/report.src#RID_STR_UNDO_CHANGEFONT.String.Text
+#, fuzzy
+msgid  "Change font"
+msgstr "അക്ഷരസഞ്ചയം മാറ്റുക"
+
+#: source/ui/report/report.src#RID_STR_UNDO_CHANGEPAGE.String.Text
+#, fuzzy
+msgid  "Change page attributes"
+msgstr "താള്‍ സവിശേഷതകള്‍ മാറ്റുക"
+
+#: source/ui/report/report.src#RID_STR_PAGEHEADERFOOTER_INSERT.String.Text
+#, fuzzy
+msgid  "Insert Page Header/Footer"
+msgstr "താള്‍ തലക്കെട്ട്/അടിക്കുറിപ്പു് ചേര്‍ക്കുക"
+
+#: source/ui/report/report.src#RID_STR_PAGEHEADERFOOTER_DELETE.String.Text
+#, fuzzy
+msgid  "Delete Page Header/Footer"
+msgstr "താള്‍ തലക്കെട്ട്/അടിക്കുറിപ്പു് വെട്ടി നീക്കുക"
+
+#: source/ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_INSERT.String.Text
+#, fuzzy
+msgid  "Insert Column Header/Footer"
+msgstr "നിരയുടെ തലക്കെട്ട്/അടിക്കുറിപ്പു് ചേര്‍ക്കുക"
+
+#: source/ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_DELETE.String.Text
+#, fuzzy
+msgid  "Delete Column Header/Footer"
+msgstr "നിരയുടെ തലക്കെട്ട്/അടിക്കുറിപ്പു് വെട്ടി നീക്കുക"
+
+#: source/ui/report/report.src#RID_STR_REPORTHEADERFOOTER_INSERT.String.Text
+#, fuzzy
+msgid  "Insert Report Header/Footer"
+msgstr "റിപ്പോര്‍ട്ട് തലക്കെട്ട്/അടിക്കുറിപ്പു് ചേര്‍ക്കുക"
+
+#: source/ui/report/report.src#RID_STR_REPORTHEADERFOOTER_DELETE.String.Text
+#, fuzzy
+msgid  "Delete Report Header/Footer"
+msgstr "റിപ്പോര്‍ട്ട് തലക്കെട്ട്/അടിക്കുറിപ്പു് വെട്ടി നീക്കുക"
+
+#: source/ui/report/report.src#RID_ERR_NO_COMMAND.String.Text
+#, fuzzy
+msgid  "The report can not be executed unless it is bound to content."
+msgstr "ഉള്ളടക്കമനുസരിച്ചല്ലെങ്കില്‍ റിപ്പോര്‍ട്ട് ലഭ്യമാക്കുവാന്‍ സാധ്യമല്ല."
+
+#: source/ui/report/report.src#RID_ERR_NO_OBJECTS.String.Text
+msgid  "The report can not be executed unless at least one object has been inserted."
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_UNDO_SHRINK.String.Text
+#, fuzzy
+msgid  "Shrink Section"
+msgstr "വിഭാഗം ചെറുതാക്കുക"
+
+#: source/ui/report/report.src#RID_STR_INSERT.String.Text
+#, fuzzy
+msgid  "Insert"
+msgstr "ചേര്‍ക്കുക"
+
+#: source/ui/report/report.src#RID_STR_DETAIL.String.Text
+#, fuzzy
+msgid  "Detail"
+msgstr "വിശദാംശം"
+
+#: source/ui/report/report.src#RID_STR_PAGE_HEADER.String.Text
+#, fuzzy
+msgid  "Page Header"
+msgstr "താള്‍ തലക്കെട്ട്"
+
+#: source/ui/report/report.src#RID_STR_PAGE_FOOTER.String.Text
+#, fuzzy
+msgid  "Page Footer"
+msgstr "താള്‍ അടിക്കുറിപ്പു്"
+
+#: source/ui/report/report.src#RID_STR_REPORT_HEADER.String.Text
+#, fuzzy
+msgid  "Report Header"
+msgstr "റിപ്പോര്‍ട്ട് തലക്കെട്ട്"
+
+#: source/ui/report/report.src#RID_STR_REPORT_FOOTER.String.Text
+#, fuzzy
+msgid  "Report Footer"
+msgstr "റിപ്പോര്‍ട്ട് അടിക്കുറിപ്പു്"

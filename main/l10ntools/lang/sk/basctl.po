@@ -1,900 +1,820 @@
-
-#: dlgresid.src#RID_STR_BRWTITLE_MULTISELECT.string.text
-msgid "Multiselection"
-msgstr "Viacnásobný výber"
-
-#: dlgresid.src#RID_STR_BRWTITLE_NO_PROPERTIES.string.text
-msgid "No Control marked"
-msgstr "Nie je označené žiadne kontrolné pole"
-
-#: dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.string.text
-msgid "Properties: "
-msgstr "Vlastnosti: "
-
-#: managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.fixedtext.text
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
 msgid ""
-"The default language is used if no localization for a user interface locale "
-"is present. Furthermore all strings from the default language are copied to "
-"resources of newly added languages."
 msgstr ""
-"Východzí jazyk je použitý v prípade ak nie je dostupná lokalizácie "
-"používateľského rozhrania daného locale. Všetky reťazce z východzieho jazyka "
-"sa skopírujú do zdrojov novo pridaného jazyka."
-
-#: managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_LANGUAGE.fixedtext.text
-msgid "Present Languages"
-msgstr "Dostupné jazyky"
-
-#: managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.fixedtext.text
-msgid ""
-"Select a language to define the default user interface language. All "
-"currently present strings will be assigned to the resources created for the "
-"selected language."
-msgstr ""
-"Vyberte jazyk, ktorý bude definovať východzí jazyk používateľského "
-"rozhrania. Všetky dostupné reťazce budú priradené zdrojom vytvoreným pre "
-"vybraný jazyk."
-
-#: managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_LANGUAGE.fixedtext.text
-msgid "Default language"
-msgstr "Východzí jazyk"
-
-#: managelang.src#RID_DLG_MANAGE_LANGUAGE.modaldialog.text
-msgid "Manage User Interface Languages [$1]"
-msgstr "Spravovať jazyky používateľského rozhrania [$1]"
-
-#: managelang.src#RID_DLG_SETDEF_LANGUAGE.modaldialog.text
-msgid "Set Default User Interface Language"
-msgstr "Nastaviť východzí jazyk používateľského rozhrania"
-
-#: managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.okbutton.text
-msgid "~Close"
-msgstr "~Zatvoriť"
-
-#: managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_ADD_LANG.pushbutton.text
-msgid "Add..."
-msgstr "Pridať..."
-
-#: managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_DEL_LANG.pushbutton.text
-msgid "Delete"
-msgstr "Zmazať"
-
-#: managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_MAKE_DEFAULT.pushbutton.text
-msgid "Default"
-msgstr "Východzie"
-
-#: managelang.src#RID_QRYBOX_LANGUAGE.querybox.text
-msgid ""
-"You are about to delete the resources for the selected language(s). All user "
-"interface strings for this language(s) will be deleted.\n"
-"\n"
-"Do you want to delete the resources of the selected language(s)?"
-msgstr ""
-"Chystáte sa zmazať zdroje pre vybraný jazyk(y). Všetky reťazce "
-"používateľského rozhrania tohto jazyka(jazykov) budú zmazané.\n"
-"\n"
-"Chcete zmazať zdroje pre vybraný jazyk(y)?"
-
-#: managelang.src#RID_QRYBOX_LANGUAGE.querybox.title
-msgid "Delete Language Resources"
-msgstr "Zmazať zdroje jazyka"
-
-#: managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_CREATE_LANG.string.text
-msgid "<Press 'Add' to create language resources>"
-msgstr "<Stlačte 'Pridať' pre vytvorenie zdrojov jazyka>"
-
-#: managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DEF_LANG.string.text
-msgid "[Default Language]"
-msgstr "[Východzí jazyk]"
-
-#: managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DELETE.string.text
-msgid "~Delete"
-msgstr "~Zmazať"
-
-#: managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_INFO.string.text
-msgid ""
-"Select languages to be added. Resources for these languages will be created "
-"in the library. Strings of the current default user interface language will "
-"be copied to these new resources by default."
-msgstr ""
-"Vyberte jazyky, ktoré budú pridané. V knižnici budú vytvorené zdroje pre "
-"tieto jazyky. Reťazce aktuálneho jazyka používateľského rozhrania sa "
-"automaticky skopírujú do týchto nových zdrojov."
-
-#: managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_LABEL.string.text
-msgid "Available Languages"
-msgstr "Dostupné jazyky"
-
-#: managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_TITLE.string.text
-msgid "Add User Interface Languages"
-msgstr "Pridať jazyky používateľského rozhrania"
-
-#: basicprint.src#RID_PRINTDLG_STRLIST.1.itemlist.text
-msgid "Print range"
-msgstr "Tlač oblasti"
-
-#: basicprint.src#RID_PRINTDLG_STRLIST.2.itemlist.text
-msgid "All ~Pages"
-msgstr "Všetky ~strany"
-
-#: basicprint.src#RID_PRINTDLG_STRLIST.3.itemlist.text
-msgid "Pa~ges"
-msgstr "Stra~ny"
-
-#: basidesh.src#RID_IMGBTN_REMOVEWATCH.imagebutton.text
-msgid "-"
-msgstr "-"
-
-#: basidesh.src#RID_IMGBTN_REMOVEWATCH.imagebutton.quickhelptext
-msgid "Remove Watch"
-msgstr "Odstrániť sledovanie"
-
-#: basidesh.src#RID_POPUP_BRKDLG.menu.text
-msgctxt "basidesh.src#RID_POPUP_BRKDLG.menu.text"
-msgid "Manage Breakpoints"
-msgstr "Body prerušenia"
-
-#: basidesh.src#RID_POPUP_BRKPROPS.menu.text
-msgid "Properties"
-msgstr "Vlastnosti"
-
-#: basidesh.src#RID_POPUP_BRKDLG.RID_BRKDLG.menuitem.text
-msgid "Manage Breakpoints..."
-msgstr "Body prerušenia..."
-
-#: basidesh.src#RID_POPUP_BRKPROPS.RID_ACTIV.menuitem.text
-msgctxt "basidesh.src#RID_POPUP_BRKPROPS.RID_ACTIV.menuitem.text"
-msgid "Active"
-msgstr "Aktívny"
-
-#: basidesh.src#RID_POPUP_BRKPROPS.RID_BRKPROPS.menuitem.text
-msgctxt "basidesh.src#RID_POPUP_BRKPROPS.RID_BRKPROPS.menuitem.text"
-msgid "Properties..."
-msgstr "Vlastnosti..."
-
-#: basidesh.src#RID_POPUP_DLGED.SID_SHOW_PROPERTYBROWSER.menuitem.text
-msgctxt "basidesh.src#RID_POPUP_DLGED.SID_SHOW_PROPERTYBROWSER.menuitem.text"
-msgid "Properties..."
-msgstr "Vlastnosti..."
-
-#: basidesh.src#RID_POPUP_TABBAR.RID_INSERT.menuitem.text
-msgid "Insert"
-msgstr "Vložiť"
-
-#: basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_DELETECURRENT.menuitem.text
-msgctxt "basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_DELETECURRENT.menuitem.text"
-msgid "Delete"
-msgstr "Zmazať"
-
-#: basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_HIDECURPAGE.menuitem.text
-msgid "Hide"
-msgstr "Skryť"
-
-#: basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_MODULEDLG.menuitem.text
-msgid "Modules..."
-msgstr "Moduly..."
-
-#: basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_RENAMECURRENT.menuitem.text
-msgctxt "basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_RENAMECURRENT.menuitem.text"
-msgid "Rename"
-msgstr "Premenovať"
-
-#: basidesh.src#RID_POPUP_TABBAR.RID_INSERT.SID_BASICIDE_NEWDIALOG.menuitem.text
-msgid "BASIC Dialog"
-msgstr "BASIC Dialóg"
-
-#: basidesh.src#RID_POPUP_TABBAR.RID_INSERT.SID_BASICIDE_NEWMODULE.menuitem.text
-msgid "BASIC Module"
-msgstr "BASIC Modul"
-
-#: basidesh.src#RID_BASICIDE_OBJECTBAR.string.text
-msgid "Macro Bar"
-msgstr "Panel makier"
-
-#: basidesh.src#RID_STR_ALL.string.text
-msgid "All"
-msgstr "Všetko"
-
-#: basidesh.src#RID_STR_APPENDLIBS.string.text
-msgid "Import Libraries"
-msgstr "Importovať knižnice"
-
-#: basidesh.src#RID_STR_BADSBXNAME.string.text
-msgid "Invalid Name"
-msgstr "Neplatné meno"
-
-#: basidesh.src#RID_STR_BASIC.string.text
-msgid "BASIC"
-msgstr "BASIC"
-
-#: basidesh.src#RID_STR_CANNOTCHANGENAMEREFLIB.string.text
-msgid "The name of a referenced library cannot be changed."
-msgstr "Názov referenčnej knižnice nie je možné zmeniť."
-
-#: basidesh.src#RID_STR_CANNOTCHANGENAMESTDLIB.string.text
-msgid "The name of the default library cannot be changed."
-msgstr "Názov východzej knižnice nie je možné zmeniť."
-
-#: basidesh.src#RID_STR_CANNOTCLOSE.string.text
-msgid "The window cannot be closed while BASIC is running."
-msgstr "Okno nemôže byť zavreté pokým beží BASIC."
-
-#: basidesh.src#RID_STR_CANNOTRUNMACRO.string.text
-msgid ""
-"For security reasons, you cannot run this macro.\n"
-"\n"
-"For more information, check the security settings."
-msgstr ""
-"Z dôvodu bezpečnosti, nie je možné spustiť toto makro.\n"
-"\n"
-"Pre viac informácií overte bezpečnostné nastavenia."
-
-#: basidesh.src#RID_STR_CANNOTUNLOADSTDLIB.string.text
-msgid "The default library cannot be deactivated"
-msgstr "Východziu knižnicu nie je možné deaktivovať"
-
-#: basidesh.src#RID_STR_CLASS_MODULES.string.text
-msgid "Class Modules"
-msgstr "Moduly triedy"
-
-#: basidesh.src#RID_STR_COLUMN.string.text
-msgid "Col"
-msgstr "Stĺp."
-
-#: basidesh.src#RID_STR_COMPILEERROR.string.text
-msgid "Compile Error: "
-msgstr "Chyba kompilácie: "
-
-#: basidesh.src#RID_STR_COULDNTREAD.string.text
-msgid "The file could not be read"
-msgstr "Súbor sa nedá čítať"
-
-#: basidesh.src#RID_STR_COULDNTWRITE.string.text
-msgid "The file could not be saved"
-msgstr "Súbor sa nedá uložiť"
-
-#: basidesh.src#RID_STR_DLGIMP_CLASH_RENAME.string.text
-msgctxt "basidesh.src#RID_STR_DLGIMP_CLASH_RENAME.string.text"
-msgid "Rename"
-msgstr "Premenovať"
-
-#: basidesh.src#RID_STR_DLGIMP_CLASH_REPLACE.string.text
-msgid "Replace"
-msgstr "Nahradiť"
-
-#: basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.string.text
-msgid ""
-"The library already contains a dialog with the name:\n"
-"\n"
-"$(ARG1)\n"
-"\n"
-"Rename dialog to keep current dialog or replace existing dialog.\n"
-" "
-msgstr ""
-"Knižnica už obsahuje dialógové okno s názvom:\n"
-"\n"
-"$(ARG1)\n"
-"\n"
-"Premenujte dialógové okno pre zachovanie aktuálneho dialógového okna alebo "
-"nahraďte existujúce dialógové okno.\n"
-" "
-
-#: basidesh.src#RID_STR_DLGIMP_CLASH_TITLE.string.text
-msgid "Dialog Import - Name already used"
-msgstr "Importu dialógu - Názov sa už používa"
-
-#: basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.string.text
-msgid "Add"
-msgstr "Pridať"
-
-#: basidesh.src#RID_STR_DLGIMP_MISMATCH_OMIT.string.text
-msgid "Omit"
-msgstr "Preskočiť"
-
-#: basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.string.text
-msgid ""
-"The dialog to be imported supports other languages than the target library.\n"
-"\n"
-"Add these languages to the library to keep additional language resources "
-"provided by the dialog or omit them to stay with the current library "
-"languages.\n"
-"\n"
-"Note: For languages not supported by the dialog the resources of the "
-"dialog's default language will be used.\n"
-" "
-msgstr ""
-"Dialóg, ktorý bude importovaný podporuje iné jazyky ako cieľová knižnica.\n"
-"\n"
-"Pridajte tieto jazyky do knižnice ak chcete zachovať ďalšie jazykové zdroje "
-"poskytované dialógom alebo ich preskočte ak chcete zachovať len aktuálne "
-"jazyky podporované knižnicou.\n"
-"\n"
-"Poznámka: Pre jazyky nepodporované dialógom budú použité zdroje východzieho "
-"jazyka dialógu.\n"
-" "
-
-#: basidesh.src#RID_STR_DLGIMP_MISMATCH_TITLE.string.text
-msgid "Dialog Import - Language Mismatch"
-msgstr "Importu dialógu - Jazyk nesúhlasí"
-
-#: basidesh.src#RID_STR_DOC.string.text
-msgid "Document"
-msgstr "Dokument"
-
-#: basidesh.src#RID_STR_DOCUMENT_OBJECTS.string.text
-msgid "Document Objects"
-msgstr "Objekty dokumentu"
-
-#: basidesh.src#RID_STR_ENTERPASSWORD.string.text
-msgid "Enter password for 'XX'"
-msgstr "Zadajte heslo pre 'XX'"
-
-#: basidesh.src#RID_STR_ERRORCHOOSEMACRO.string.text
-msgid "Macros from other documents are not accessible."
-msgstr "Makrá z iného dokumentu nie sú prístupné."
-
-#: basidesh.src#RID_STR_ERROROPENLIB.string.text
-msgid "Error loading library"
-msgstr "Chyba pri načítaní knižnice"
-
-#: basidesh.src#RID_STR_ERROROPENSTORAGE.string.text
-msgid "Error opening file"
-msgstr "Chyba pri otváraní súboru"
-
-#: basidesh.src#RID_STR_FILEEXISTS.string.text
-msgid "The 'XX' file already exists"
-msgstr "Súbor 'XX' už existuje"
-
-#: basidesh.src#RID_STR_FILENAME.string.text
-msgid "File name:"
-msgstr "Názov súboru:"
-
-#: basidesh.src#RID_STR_FILTER_ALLFILES.string.text
-msgid "<All>"
-msgstr "<Všetko>"
-
-#: basidesh.src#RID_STR_GENERATESOURCE.string.text
-msgid "Generating source"
-msgstr "Generujem zdroj"
-
-#: basidesh.src#RID_STR_IMPORTNOTPOSSIBLE.string.text
-msgid "'XX' cannot be added."
-msgstr "'XX' nie je možné pridať."
-
-#: basidesh.src#RID_STR_INITIDE.string.text
-msgid "BASIC Initialization"
-msgstr "BASIC inicializácia"
-
-#: basidesh.src#RID_STR_LIBISREADONLY.string.text
-msgid "This library is read-only."
-msgstr "Táto knižnica je len na čítanie."
-
-#: basidesh.src#RID_STR_LIBNAMETOLONG.string.text
-msgid "A library name can have up to 30 characters."
-msgstr "Názov knižnice môže obsahovať do 30 znakov."
-
-#: basidesh.src#RID_STR_LINE.string.text
-msgid "Ln"
-msgstr "Riad."
-
-#: basidesh.src#RID_STR_MACRONAMEREQ.string.text
-msgid "A name must be entered."
-msgstr "Musí byť zadaný názov."
-
-#: basidesh.src#RID_STR_NEWDLG.string.text
-msgid "New Dialog"
-msgstr "Nové dialógové okno"
-
-#: basidesh.src#RID_STR_NEWLIB.string.text
-msgid "New Library"
-msgstr "Nová knižnica"
-
-#: basidesh.src#RID_STR_NEWMOD.string.text
-msgid "New Module"
-msgstr "Nový modul"
-
-#: basidesh.src#RID_STR_NOIMPORT.string.text
-msgid "'XX' was not added."
-msgstr "'XX' nebolo pridané."
-
-#: basidesh.src#RID_STR_NOLIBINSTORAGE.string.text
-msgid "The file does not contain any BASIC libraries"
-msgstr "Súbor neobsahuje žiadne knižnice BASICu"
-
-#: basidesh.src#RID_STR_NOMODULE.string.text
-msgid "< No Module >"
-msgstr "< Žiaden modul >"
-
-#: basidesh.src#RID_STR_NORMAL_MODULES.string.text
-msgctxt "basidesh.src#RID_STR_NORMAL_MODULES.string.text"
-msgid "Modules"
-msgstr "Moduly"
-
-#: basidesh.src#RID_STR_OBJNOTFOUND.string.text
-msgid "Object or method not found"
-msgstr "Objekt alebo metóda nenájdená"
-
-#: basidesh.src#RID_STR_OPEN.string.text
-msgid "Load"
-msgstr "Načítať"
-
-#: basidesh.src#RID_STR_PAGE.string.text
-msgid "Page"
-msgstr "Strana"
-
-#: basidesh.src#RID_STR_QUERYDELDIALOG.string.text
-msgid "Do you want to delete the XX dialog?"
-msgstr "Chcete zmazať dialógové okno XX?"
-
-#: basidesh.src#RID_STR_QUERYDELLIB.string.text
-msgid "Do you want to delete the XX library?"
-msgstr "Chcete zmazať knižnicu XX?"
-
-#: basidesh.src#RID_STR_QUERYDELLIBREF.string.text
-msgid "Do you want to delete the reference to the XX library?"
-msgstr "Chcete zmazať odkaz na knižnicu XX?"
-
-#: basidesh.src#RID_STR_QUERYDELMACRO.string.text
-msgid "Do you want to delete the macro XX?"
-msgstr "Chcete zmazať makro XX?"
-
-#: basidesh.src#RID_STR_QUERYDELMODULE.string.text
-msgid "Do you want to delete the XX module?"
-msgstr "Chcete zmazať modul XX?"
-
-#: basidesh.src#RID_STR_QUERYREPLACEMACRO.string.text
-msgid "Do you want to overwrite the XX macro?"
-msgstr "Chcete prepísať makro XX?"
-
-#: basidesh.src#RID_STR_REFNOTPOSSIBLE.string.text
-msgid "Reference to 'XX' not possible."
-msgstr "Odkaz na 'XX' nie je možný."
-
-#: basidesh.src#RID_STR_REMOVEWATCH.string.text
-msgid "Watch:"
-msgstr "Sledovanie:"
-
-#: basidesh.src#RID_STR_REPLACELIB.string.text
-msgid "'XX' cannot be replaced."
-msgstr "'XX' nie je možné nahradiť."
-
-#: basidesh.src#RID_STR_REPLACESTDLIB.string.text
-msgid "The default library cannot be replaced."
-msgstr "Východziu knižnicu nie je možné nahradiť."
-
-#: basidesh.src#RID_STR_RUNTIMEERROR.string.text
-msgid "Runtime Error: #"
-msgstr "Chyba pri behu: #"
-
-#: basidesh.src#RID_STR_SAVE.string.text
-msgid "Save"
-msgstr "Uložiť"
-
-#: basidesh.src#RID_STR_SBXNAMEALLREADYUSED.string.text
-msgid "Name already exists"
-msgstr "Názov už existuje"
-
-#: basidesh.src#RID_STR_SBXNAMEALLREADYUSED2.string.text
-msgid "Object with same name already exists"
-msgstr "Objekt s rovnakým názvom už existuje"
-
-#: basidesh.src#RID_STR_SEARCHALLMODULES.string.text
-msgid "Do you want to replace the text in all active modules?"
-msgstr "Chcete zmeniť texty vo všetkých aktívnych moduloch?"
-
-#: basidesh.src#RID_STR_SEARCHFROMSTART.string.text
-msgid "Search to last module complete. Continue at first module?"
-msgstr "Hľadanie do posledného modulu ukončené. Pokračovať od prvého modulu?"
-
-#: basidesh.src#RID_STR_SEARCHNOTFOUND.string.text
-msgid "Search key not found"
-msgstr "Hľadané kľúčové slovo nenájdené"
-
-#: basidesh.src#RID_STR_SEARCHREPLACES.string.text
-msgid "Search key replaced XX times"
-msgstr "Hľadané kľúčové slovo bolo nahradené XX-krát"
-
-#: basidesh.src#RID_STR_SHAREDIALOGS.string.text
-msgid "%PRODUCTNAME Dialogs"
-msgstr "%PRODUCTNAME Dialógy"
-
-#: basidesh.src#RID_STR_SHAREMACROS.string.text
-msgid "%PRODUCTNAME Macros"
-msgstr "%PRODUCTNAME Makrá"
-
-#: basidesh.src#RID_STR_SHAREMACROSDIALOGS.string.text
-msgid "%PRODUCTNAME Macros & Dialogs"
-msgstr "%PRODUCTNAME Makrá & Dialógy"
-
-#: basidesh.src#RID_STR_SIGNED.string.text
-msgid "(Signed)"
-msgstr "(Podpísané)"
-
-#: basidesh.src#RID_STR_SOURCETOBIG.string.text
-msgid ""
-"The source text is too large and can be neither compiled nor saved.\n"
-"Delete some of the comments or transfer some methods into another module."
-msgstr ""
-"Zdrojový text je príliš veľký a nemôže byť kompilovaný ani uložený .\n"
-"Zmažte časť poznámok alebo presuňte jeho časti do iného modulu."
-
-#: basidesh.src#RID_STR_STACK.string.text
-msgid "Calls: "
-msgstr "Volania: "
-
-#: basidesh.src#RID_STR_STACKNAME.string.text
-msgid "Call Stack"
-msgstr "Zásobník volaní"
-
-#: basidesh.src#RID_STR_STDDIALOGNAME.string.text
-msgctxt "basidesh.src#RID_STR_STDDIALOGNAME.string.text"
-msgid "Dialog"
-msgstr "Dialóg"
-
-#: basidesh.src#RID_STR_STDLIBNAME.string.text
-msgid "Library"
-msgstr "Knižnica"
-
-#: basidesh.src#RID_STR_STDMODULENAME.string.text
-msgid "Module"
-msgstr "Modul"
-
-#: basidesh.src#RID_STR_TRANSLATION_DEFAULT.string.text
-msgid "[Default Language]"
-msgstr "[Východzí jazyk]"
-
-#: basidesh.src#RID_STR_TRANSLATION_NOTLOCALIZED.string.text
-msgid "<Not localized>"
-msgstr "<Nelokalizované>"
-
-#: basidesh.src#RID_STR_USERDIALOGS.string.text
-msgid "My Dialogs"
-msgstr "Moje dialógy"
-
-#: basidesh.src#RID_STR_USERFORMS.string.text
-msgid "Forms"
-msgstr "Formuláre"
-
-#: basidesh.src#RID_STR_USERMACROS.string.text
-msgid "My Macros"
-msgstr "Moje makrá"
-
-#: basidesh.src#RID_STR_USERMACROSDIALOGS.string.text
-msgid "My Macros & Dialogs"
-msgstr "Moje makrá a dialógy"
-
-#: basidesh.src#RID_STR_WATCHNAME.string.text
-msgid "Watch"
-msgstr "Sledovanie"
-
-#: basidesh.src#RID_STR_WATCHTYPE.string.text
-msgid "Type"
-msgstr "Typ"
-
-#: basidesh.src#RID_STR_WATCHVALUE.string.text
-msgid "Value"
-msgstr "Hodnota"
-
-#: basidesh.src#RID_STR_WATCHVARIABLE.string.text
-msgid "Variable"
-msgstr "Premenný"
-
-#: basidesh.src#RID_STR_WILLSTOPPRG.string.text
-msgid ""
-"You will have to restart the program after this edit.\n"
-"Continue?"
-msgstr ""
-"Po tejto úprave budete musieť reštartovať program.\n"
-"Pokračovať?"
-
-#: basidesh.src#RID_STR_WRONGPASSWORD.string.text
-msgid "Incorrect Password"
-msgstr "Neplatné heslo"
-
-#: brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_CHKB_ACTIVE.checkbox.text
-msgctxt "brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_CHKB_ACTIVE.checkbox.text"
-msgid "Active"
-msgstr "Aktívny"
-
-#: brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_BRKPOINTS.fixedtext.text
-msgid "Breakpoints"
-msgstr "Body prerušenia"
-
-#: brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_PASS.fixedtext.text
-msgid "Pass Count:"
-msgstr "Počet priebehov:"
-
-#: brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.modaldialog.text
-msgctxt "brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.modaldialog.text"
-msgid "Manage Breakpoints"
-msgstr "Body prerušenia"
-
-#: brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_DEL.pushbutton.text
-msgctxt "brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_DEL.pushbutton.text"
-msgid "Delete"
-msgstr "Zmazať"
-
-#: brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_NEW.pushbutton.text
-msgid "New"
-msgstr "Nový"
-
-#: macrodlg.src#RID_MACROCHOOSER.RID_PB_CLOSE.cancelbutton.text
-msgctxt "macrodlg.src#RID_MACROCHOOSER.RID_PB_CLOSE.cancelbutton.text"
-msgid "Close"
-msgstr "Zatvoriť"
-
-#: macrodlg.src#RID_MACROCHOOSER.RID_TXT_DESCRIPTION.fixedtext.text
-msgid "De~scription"
-msgstr "Popi~s"
-
-#: macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACROFROM.fixedtext.text
-msgid "Macro ~from"
-msgstr "Makro ~z"
-
-#: macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACRONAME.fixedtext.text
-msgid "~Macro name"
-msgstr "Názov ~makra"
-
-#: macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACROSIN.fixedtext.text
-msgid "Existing macros ~in:"
-msgstr "Makrá ~v:"
-
-#: macrodlg.src#RID_MACROCHOOSER.RID_TXT_SAVEMACRO.fixedtext.text
-msgid "Save m~acro in"
-msgstr "Uložiť m~akro do"
-
-#: macrodlg.src#RID_MACROCHOOSER.modaldialog.text
-msgid "%PRODUCTNAME Basic Macros"
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.ModalDialog.Text
+msgid  "%PRODUCTNAME Basic Macros"
 msgstr "Makrá %PRODUCTNAME Basic"
 
-#: macrodlg.src#RID_MACROCHOOSER.RID_PB_ASSIGN.pushbutton.text
-msgid "~Assign..."
-msgstr "Prir~adiť..."
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACROSIN.FixedText.Text
+msgid  "Existing macros ~in:"
+msgstr "Makrá ~v:"
 
-#: macrodlg.src#RID_MACROCHOOSER.RID_PB_DEL.pushbutton.text
-msgctxt "macrodlg.src#RID_MACROCHOOSER.RID_PB_DEL.pushbutton.text"
-msgid "~Delete"
-msgstr "~Zmazať"
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACRONAME.FixedText.Text
+msgid  "~Macro name"
+msgstr "Názov ~makra"
 
-#: macrodlg.src#RID_MACROCHOOSER.RID_PB_EDIT.pushbutton.text
-msgctxt "macrodlg.src#RID_MACROCHOOSER.RID_PB_EDIT.pushbutton.text"
-msgid "~Edit"
-msgstr "~Upraviť"
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACROFROM.FixedText.Text
+msgid  "Macro ~from"
+msgstr "Makro ~z"
 
-#: macrodlg.src#RID_MACROCHOOSER.RID_PB_NEWLIB.pushbutton.text
-msgid "New ~Library"
-msgstr "Nová ~Knižnica"
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_SAVEMACRO.FixedText.Text
+msgid  "Save m~acro in"
+msgstr "Uložiť m~akro do"
 
-#: macrodlg.src#RID_MACROCHOOSER.RID_PB_NEWMOD.pushbutton.text
-msgid "New M~odule"
-msgstr "Nový M~odul"
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_DESCRIPTION.FixedText.Text
+msgid  "De~scription"
+msgstr "Popi~s"
 
-#: macrodlg.src#RID_MACROCHOOSER.RID_PB_ORG.pushbutton.text
-msgid "~Organizer..."
-msgstr "~Organizátor..."
-
-#: macrodlg.src#RID_MACROCHOOSER.RID_PB_RUN.pushbutton.text
-msgid "R~un"
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_RUN.PushButton.Text
+msgid  "R~un"
 msgstr "Sp~ustiť"
 
-#: macrodlg.src#RID_STR_BTNDEL.string.text
-msgctxt "macrodlg.src#RID_STR_BTNDEL.string.text"
-msgid "~Delete"
-msgstr "~Zmazať"
-
-#: macrodlg.src#RID_STR_BTNNEW.string.text
-msgid "~New"
-msgstr "~Nový"
-
-#: macrodlg.src#RID_STR_CHOOSE.string.text
-msgid "Choose"
-msgstr "Vybrať"
-
-#: macrodlg.src#RID_STR_CLOSE.string.text
-msgctxt "macrodlg.src#RID_STR_CLOSE.string.text"
-msgid "Close"
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_CLOSE.CancelButton.Text
+msgid  "Close"
 msgstr "Zatvoriť"
 
-#: macrodlg.src#RID_STR_RECORD.string.text
-msgid "~Save"
-msgstr "~Uložiť"
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_ASSIGN.PushButton.Text
+msgid  "~Assign..."
+msgstr "Prir~adiť..."
 
-#: macrodlg.src#RID_STR_RUN.string.text
-msgid "Run"
-msgstr "Spustiť"
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_EDIT.PushButton.Text
+msgid  "~Edit"
+msgstr "~Upraviť"
 
-#: macrodlg.src#RID_STR_STDMACRONAME.string.text
-msgid "Macro"
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_NEWLIB.PushButton.Text
+msgid  "New ~Library"
+msgstr "Nová ~Knižnica"
+
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_NEWMOD.PushButton.Text
+msgid  "New M~odule"
+msgstr "Nový M~odul"
+
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_DEL.PushButton.Text
+msgid  "~Delete"
+msgstr "~Zmazať"
+
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_ORG.PushButton.Text
+msgid  "~Organizer..."
+msgstr "~Organizátor..."
+
+#: source/basicide/macrodlg.src#RID_STR_STDMACRONAME.String.Text
+msgid  "Macro"
 msgstr "Makro"
 
-#: moduldlg.src#RID_TP_DLGS.RID_PB_CLOSE.cancelbutton.text
-msgctxt "moduldlg.src#RID_TP_DLGS.RID_PB_CLOSE.cancelbutton.text"
-msgid "Close"
+#: source/basicide/macrodlg.src#RID_STR_BTNDEL.String.Text
+msgid  "~Delete"
+msgstr "~Zmazať"
+
+#: source/basicide/macrodlg.src#RID_STR_BTNNEW.String.Text
+msgid  "~New"
+msgstr "~Nový"
+
+#: source/basicide/macrodlg.src#RID_STR_CLOSE.String.Text
+msgid  "Close"
 msgstr "Zatvoriť"
 
-#: moduldlg.src#RID_TP_LIBS.RID_PB_CLOSE.cancelbutton.text
-msgctxt "moduldlg.src#RID_TP_LIBS.RID_PB_CLOSE.cancelbutton.text"
-msgid "Close"
-msgstr "Zatvoriť"
+#: source/basicide/macrodlg.src#RID_STR_CHOOSE.String.Text
+msgid  "Choose"
+msgstr "Vybrať"
 
-#: moduldlg.src#RID_TP_MODULS.RID_PB_CLOSE.cancelbutton.text
-msgctxt "moduldlg.src#RID_TP_MODULS.RID_PB_CLOSE.cancelbutton.text"
-msgid "Close"
-msgstr "Zatvoriť"
+#: source/basicide/macrodlg.src#RID_STR_RUN.String.Text
+msgid  "Run"
+msgstr "Spustiť"
 
-#: moduldlg.src#RID_DLG_LIBS.RID_CB_REF.checkbox.text
-msgid "Insert as reference (read-only)"
-msgstr "Vložiť ako odkaz (iba na čítanie)"
+#: source/basicide/macrodlg.src#RID_STR_RECORD.String.Text
+msgid  "~Save"
+msgstr "~Uložiť"
 
-#: moduldlg.src#RID_DLG_LIBS.RID_CB_REPL.checkbox.text
-msgid "Replace existing libraries"
-msgstr "Nahradiť existujúce knižnice"
+#: source/basicide/basidesh.src#RID_STR_FILTER_ALLFILES.String.Text
+msgid  "<All>"
+msgstr "<Všetko>"
 
-#: moduldlg.src#RID_DLG_LIBS.RID_FL_OPTIONS.fixedline.text
-msgid "Options"
-msgstr "Možnosti"
+#: source/basicide/basidesh.src#RID_STR_NOMODULE.String.Text
+msgid  "< No Module >"
+msgstr "< Žiaden modul >"
 
-#: moduldlg.src#RID_DLG_NEWLIB.RID_FT_NEWLIB.fixedtext.text
-msgid "~Name:"
-msgstr "~Názov:"
+#: source/basicide/basidesh.src#RID_STR_WRONGPASSWORD.String.Text
+msgid  "Incorrect Password"
+msgstr "Neplatné heslo"
 
-#: moduldlg.src#RID_TP_DLGS.RID_STR_LIB.fixedtext.text
-msgctxt "moduldlg.src#RID_TP_DLGS.RID_STR_LIB.fixedtext.text"
-msgid "Dialog"
+#: source/basicide/basidesh.src#RID_STR_OPEN.String.Text
+msgid  "Load"
+msgstr "Načítať"
+
+#: source/basicide/basidesh.src#RID_STR_SAVE.String.Text
+msgid  "Save"
+msgstr "Uložiť"
+
+#: source/basicide/basidesh.src#RID_STR_SOURCETOBIG.String.Text
+msgid  "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
+msgstr ""
+
+#: source/basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.String.Text
+msgid  "Error opening file"
+msgstr "Chyba pri otváraní súboru"
+
+#: source/basicide/basidesh.src#RID_STR_ERROROPENLIB.String.Text
+msgid  "Error loading library"
+msgstr "Chyba pri načítaní knižnice"
+
+#: source/basicide/basidesh.src#RID_STR_NOLIBINSTORAGE.String.Text
+msgid  "The file does not contain any BASIC libraries"
+msgstr "Súbor neobsahuje žiadne knižnice BASICu"
+
+#: source/basicide/basidesh.src#RID_STR_BADSBXNAME.String.Text
+msgid  "Invalid Name"
+msgstr "Neplatné meno"
+
+#: source/basicide/basidesh.src#RID_STR_LIBNAMETOLONG.String.Text
+msgid  "A library name can have up to 30 characters."
+msgstr "Názov knižnice môže obsahovať do 30 znakov."
+
+#: source/basicide/basidesh.src#RID_STR_ERRORCHOOSEMACRO.String.Text
+msgid  "Macros from other documents are not accessible."
+msgstr "Makrá z iného dokumentu nie sú prístupné."
+
+#: source/basicide/basidesh.src#RID_STR_LIBISREADONLY.String.Text
+msgid  "This library is read-only."
+msgstr "Táto knižnica je len na čítanie."
+
+#: source/basicide/basidesh.src#RID_STR_REPLACELIB.String.Text
+msgid  "'XX' cannot be replaced."
+msgstr "'XX' nie je možné nahradiť."
+
+#: source/basicide/basidesh.src#RID_STR_IMPORTNOTPOSSIBLE.String.Text
+msgid  "'XX' cannot be added."
+msgstr "'XX' nie je možné pridať."
+
+#: source/basicide/basidesh.src#RID_STR_NOIMPORT.String.Text
+msgid  "'XX' was not added."
+msgstr "'XX' nebolo pridané."
+
+#: source/basicide/basidesh.src#RID_STR_ENTERPASSWORD.String.Text
+msgid  "Enter password for 'XX'"
+msgstr "Zadajte heslo pre 'XX'"
+
+#: source/basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED.String.Text
+msgid  "Name already exists"
+msgstr "Názov už existuje"
+
+#: source/basicide/basidesh.src#RID_STR_SIGNED.String.Text
+msgid  "(Signed)"
+msgstr "(Podpísané)"
+
+#: source/basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED2.String.Text
+msgid  "Object with same name already exists"
+msgstr "Objekt s rovnakým názvom už existuje"
+
+#: source/basicide/basidesh.src#RID_STR_FILEEXISTS.String.Text
+msgid  "The 'XX' file already exists"
+msgstr "Súbor 'XX' už existuje"
+
+#: source/basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.String.Text
+msgid  "For security reasons, you cannot run this macro.\n\nFor more information, check the security settings."
+msgstr ""
+
+#: source/basicide/basidesh.src#RID_STR_COMPILEERROR.String.Text
+msgid  "Compile Error: "
+msgstr "Chyba kompilácie: "
+
+#: source/basicide/basidesh.src#RID_STR_RUNTIMEERROR.String.Text
+msgid  "Runtime Error: #"
+msgstr "Chyba pri behu: #"
+
+#: source/basicide/basidesh.src#RID_STR_SEARCHNOTFOUND.String.Text
+msgid  "Search key not found"
+msgstr "Hľadané kľúčové slovo nenájdené"
+
+#: source/basicide/basidesh.src#RID_STR_SEARCHFROMSTART.String.Text
+msgid  "Search to last module complete. Continue at first module?"
+msgstr "Hľadanie do posledného modulu ukončené. Pokračovať od prvého modulu?"
+
+#: source/basicide/basidesh.src#RID_STR_SEARCHREPLACES.String.Text
+msgid  "Search key replaced XX times"
+msgstr "Hľadané kľúčové slovo bolo nahradené XX-krát"
+
+#: source/basicide/basidesh.src#RID_STR_COULDNTREAD.String.Text
+msgid  "The file could not be read"
+msgstr "Súbor sa nedá čítať"
+
+#: source/basicide/basidesh.src#RID_STR_COULDNTWRITE.String.Text
+msgid  "The file could not be saved"
+msgstr "Súbor sa nedá uložiť"
+
+#: source/basicide/basidesh.src#RID_STR_CANNOTCHANGENAMESTDLIB.String.Text
+msgid  "The name of the default library cannot be changed."
+msgstr "Názov východzej knižnice nie je možné zmeniť."
+
+#: source/basicide/basidesh.src#RID_STR_CANNOTCHANGENAMEREFLIB.String.Text
+msgid  "The name of a referenced library cannot be changed."
+msgstr "Názov referenčnej knižnice nie je možné zmeniť."
+
+#: source/basicide/basidesh.src#RID_STR_CANNOTUNLOADSTDLIB.String.Text
+msgid  "The default library cannot be deactivated"
+msgstr "Východziu knižnicu nie je možné deaktivovať"
+
+#: source/basicide/basidesh.src#RID_STR_GENERATESOURCE.String.Text
+msgid  "Generating source"
+msgstr "Generujem zdroj"
+
+#: source/basicide/basidesh.src#RID_STR_FILENAME.String.Text
+msgid  "File name:"
+msgstr "Názov súboru:"
+
+#: source/basicide/basidesh.src#RID_STR_APPENDLIBS.String.Text
+msgid  "Import Libraries"
+msgstr "Importovať knižnice"
+
+#: source/basicide/basidesh.src#RID_STR_QUERYDELMACRO.String.Text
+msgid  "Do you want to delete the macro XX?"
+msgstr "Chcete zmazať makro XX?"
+
+#: source/basicide/basidesh.src#RID_STR_QUERYDELDIALOG.String.Text
+msgid  "Do you want to delete the XX dialog?"
+msgstr "Chcete zmazať dialógové okno XX?"
+
+#: source/basicide/basidesh.src#RID_STR_QUERYDELLIB.String.Text
+msgid  "Do you want to delete the XX library?"
+msgstr "Chcete zmazať knižnicu XX?"
+
+#: source/basicide/basidesh.src#RID_STR_QUERYDELLIBREF.String.Text
+msgid  "Do you want to delete the reference to the XX library?"
+msgstr "Chcete zmazať odkaz na knižnicu XX?"
+
+#: source/basicide/basidesh.src#RID_STR_QUERYDELMODULE.String.Text
+msgid  "Do you want to delete the XX module?"
+msgstr "Chcete zmazať modul XX?"
+
+#: source/basicide/basidesh.src#RID_STR_OBJNOTFOUND.String.Text
+msgid  "Object or method not found"
+msgstr "Objekt alebo metóda nenájdená"
+
+#: source/basicide/basidesh.src#RID_STR_BASIC.String.Text
+msgid  "BASIC"
+msgstr "BASIC"
+
+#: source/basicide/basidesh.src#RID_STR_LINE.String.Text
+msgid  "Ln"
+msgstr "Riad."
+
+#: source/basicide/basidesh.src#RID_STR_COLUMN.String.Text
+msgid  "Col"
+msgstr "Stĺp."
+
+#: source/basicide/basidesh.src#RID_STR_DOC.String.Text
+msgid  "Document"
+msgstr "Dokument"
+
+#: source/basicide/basidesh.src#RID_BASICIDE_OBJECTBAR.String.Text
+msgid  "Macro Bar"
+msgstr "Panel makier"
+
+#: source/basicide/basidesh.src#RID_STR_CANNOTCLOSE.String.Text
+msgid  "The window cannot be closed while BASIC is running."
+msgstr "Okno nemôže byť zavreté pokým beží BASIC."
+
+#: source/basicide/basidesh.src#RID_STR_REPLACESTDLIB.String.Text
+msgid  "The default library cannot be replaced."
+msgstr "Východziu knižnicu nie je možné nahradiť."
+
+#: source/basicide/basidesh.src#RID_STR_REFNOTPOSSIBLE.String.Text
+msgid  "Reference to 'XX' not possible."
+msgstr "Odkaz na 'XX' nie je možný."
+
+#: source/basicide/basidesh.src#RID_STR_WATCHNAME.String.Text
+msgid  "Watch"
+msgstr "Sledovanie"
+
+#: source/basicide/basidesh.src#RID_STR_WATCHVARIABLE.String.Text
+msgid  "Variable"
+msgstr "Premenný"
+
+#: source/basicide/basidesh.src#RID_STR_WATCHVALUE.String.Text
+msgid  "Value"
+msgstr "Hodnota"
+
+#: source/basicide/basidesh.src#RID_STR_WATCHTYPE.String.Text
+msgid  "Type"
+msgstr "Typ"
+
+#: source/basicide/basidesh.src#RID_STR_STACKNAME.String.Text
+msgid  "Call Stack"
+msgstr "Zásobník volaní"
+
+#: source/basicide/basidesh.src#RID_STR_INITIDE.String.Text
+msgid  "BASIC Initialization"
+msgstr "BASIC inicializácia"
+
+#: source/basicide/basidesh.src#RID_STR_STDMODULENAME.String.Text
+msgid  "Module"
+msgstr "Modul"
+
+#: source/basicide/basidesh.src#RID_STR_STDDIALOGNAME.String.Text
+msgid  "Dialog"
 msgstr "Dialóg"
 
-#: moduldlg.src#RID_TP_LIBS.RID_STR_BASICS.fixedtext.text
-msgid "L~ocation"
-msgstr "U~miestnenie"
+#: source/basicide/basidesh.src#RID_STR_STDLIBNAME.String.Text
+msgid  "Library"
+msgstr "Knižnica"
 
-#: moduldlg.src#RID_TP_LIBS.RID_STR_LIB.fixedtext.text
-msgid "~Library"
-msgstr "~Knižnica"
+#: source/basicide/basidesh.src#RID_STR_NEWLIB.String.Text
+msgid  "New Library"
+msgstr "Nová knižnica"
 
-#: moduldlg.src#RID_TP_MODULS.RID_STR_LIB.fixedtext.text
-msgid "M~odule"
-msgstr "M~odul"
+#: source/basicide/basidesh.src#RID_STR_NEWMOD.String.Text
+msgid  "New Module"
+msgstr "Nový modul"
 
-#: moduldlg.src#RID_DLG_EXPORT.modaldialog.text
-msgid "Export Basic library"
-msgstr "Exportovať knižnicu BASIC"
+#: source/basicide/basidesh.src#RID_STR_NEWDLG.String.Text
+msgid  "New Dialog"
+msgstr "Nové dialógové okno"
 
-#: moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_DLG.pageitem.text
-msgid "Dialogs"
-msgstr "Dialógy"
+#: source/basicide/basidesh.src#RID_STR_ALL.String.Text
+msgid  "All"
+msgstr "Všetko"
 
-#: moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_LIB.pageitem.text
-msgid "Libraries"
-msgstr "Knižnice"
+#: source/basicide/basidesh.src#RID_STR_PAGE.String.Text
+msgid  "Page"
+msgstr "Strana"
 
-#: moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_MOD.pageitem.text
-msgctxt "moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_MOD.pageitem.text"
-msgid "Modules"
+#: source/basicide/basidesh.src#RID_STR_MACRONAMEREQ.String.Text
+msgid  "A name must be entered."
+msgstr "Musí byť zadaný názov."
+
+#: source/basicide/basidesh.src#RID_STR_WILLSTOPPRG.String.Text
+msgid  "You will have to restart the program after this edit.\nContinue?"
+msgstr ""
+
+#: source/basicide/basidesh.src#RID_STR_SEARCHALLMODULES.String.Text
+msgid  "Do you want to replace the text in all active modules?"
+msgstr "Chcete zmeniť texty vo všetkých aktívnych moduloch?"
+
+#: source/basicide/basidesh.src#RID_IMGBTN_REMOVEWATCH.ButtonImage.QuickHelpText
+msgid  "Remove Watch"
+msgstr "Odstrániť sledovanie"
+
+#: source/basicide/basidesh.src#RID_STR_REMOVEWATCH.String.Text
+msgid  "Watch:"
+msgstr "Sledovanie:"
+
+#: source/basicide/basidesh.src#RID_STR_STACK.String.Text
+msgid  "Calls: "
+msgstr "Volania: "
+
+#: source/basicide/basidesh.src#RID_STR_USERMACROS.String.Text
+msgid  "My Macros"
+msgstr "Moje makrá"
+
+#: source/basicide/basidesh.src#RID_STR_USERDIALOGS.String.Text
+msgid  "My Dialogs"
+msgstr "Moje dialógy"
+
+#: source/basicide/basidesh.src#RID_STR_USERMACROSDIALOGS.String.Text
+msgid  "My Macros & Dialogs"
+msgstr "Moje makrá a dialógy"
+
+#: source/basicide/basidesh.src#RID_STR_SHAREMACROS.String.Text
+msgid  "%PRODUCTNAME Macros"
+msgstr "%PRODUCTNAME Makrá"
+
+#: source/basicide/basidesh.src#RID_STR_SHAREDIALOGS.String.Text
+msgid  "%PRODUCTNAME Dialogs"
+msgstr "%PRODUCTNAME Dialógy"
+
+#: source/basicide/basidesh.src#RID_STR_SHAREMACROSDIALOGS.String.Text
+msgid  "%PRODUCTNAME Macros & Dialogs"
+msgstr "%PRODUCTNAME Makrá & Dialógy"
+
+#: source/basicide/basidesh.src#RID_POPUP_BRKPROPS.Menu.Text
+msgid  "Properties"
+msgstr "Vlastnosti"
+
+#: source/basicide/basidesh.src#RID_POPUP_BRKPROPS.RID_ACTIV.MenuItem.Text
+msgid  "Active"
+msgstr "Aktívny"
+
+#: source/basicide/basidesh.src#RID_POPUP_BRKPROPS.RID_BRKPROPS.MenuItem.Text
+msgid  "Properties..."
+msgstr "Vlastnosti..."
+
+#: source/basicide/basidesh.src#RID_POPUP_BRKDLG.Menu.Text
+msgid  "Manage Breakpoints"
+msgstr "Body prerušenia"
+
+#: source/basicide/basidesh.src#RID_POPUP_BRKDLG.RID_BRKDLG.MenuItem.Text
+msgid  "Manage Breakpoints..."
+msgstr "Body prerušenia..."
+
+#: source/basicide/basidesh.src#RID_POPUP_TABBAR.RID_INSERT.MenuItem.Text
+msgid  "Insert"
+msgstr "Vložiť"
+
+#: source/basicide/basidesh.src#RID_POPUP_TABBAR.RID_INSERT.SID_BASICIDE_NEWMODULE.MenuItem.Text
+msgid  "BASIC Module"
+msgstr "BASIC Modul"
+
+#: source/basicide/basidesh.src#RID_POPUP_TABBAR.RID_INSERT.SID_BASICIDE_NEWDIALOG.MenuItem.Text
+msgid  "BASIC Dialog"
+msgstr "BASIC Dialóg"
+
+#: source/basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_DELETECURRENT.MenuItem.Text
+msgid  "Delete"
+msgstr "Zmazať"
+
+#: source/basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_RENAMECURRENT.MenuItem.Text
+msgid  "Rename"
+msgstr "Premenovať"
+
+#: source/basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_HIDECURPAGE.MenuItem.Text
+msgid  "Hide"
+msgstr "Skryť"
+
+#: source/basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_MODULEDLG.MenuItem.Text
+msgid  "Modules..."
+msgstr "Moduly..."
+
+#: source/basicide/basidesh.src#RID_POPUP_DLGED.SID_SHOW_PROPERTYBROWSER.MenuItem.Text
+msgid  "Properties..."
+msgstr "Vlastnosti..."
+
+#: source/basicide/basidesh.src#RID_STR_QUERYREPLACEMACRO.String.Text
+msgid  "Do you want to overwrite the XX macro?"
+msgstr "Chcete prepísať makro XX?"
+
+#: source/basicide/basidesh.src#RID_STR_TRANSLATION_NOTLOCALIZED.String.Text
+msgid  "<Not localized>"
+msgstr "<Nelokalizované>"
+
+#: source/basicide/basidesh.src#RID_STR_TRANSLATION_DEFAULT.String.Text
+msgid  "[Default Language]"
+msgstr "[Východzí jazyk]"
+
+#: source/basicide/basidesh.src#RID_STR_DOCUMENT_OBJECTS.String.Text
+msgid  "Document Objects"
+msgstr "Objekty dokumentu"
+
+#: source/basicide/basidesh.src#RID_STR_USERFORMS.String.Text
+msgid  "Forms"
+msgstr "Formuláre"
+
+#: source/basicide/basidesh.src#RID_STR_NORMAL_MODULES.String.Text
+msgid  "Modules"
 msgstr "Moduly"
 
-#: moduldlg.src#RID_TP_DLGS.RID_PB_DELETE.pushbutton.text
-msgctxt "moduldlg.src#RID_TP_DLGS.RID_PB_DELETE.pushbutton.text"
-msgid "~Delete"
-msgstr "~Zmazať"
+#: source/basicide/basidesh.src#RID_STR_CLASS_MODULES.String.Text
+msgid  "Class Modules"
+msgstr "Moduly triedy"
 
-#: moduldlg.src#RID_TP_DLGS.RID_PB_EDIT.pushbutton.text
-msgctxt "moduldlg.src#RID_TP_DLGS.RID_PB_EDIT.pushbutton.text"
-msgid "~Edit"
-msgstr "~Upraviť"
+#: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_RENAME.String.Text
+msgid  "Rename"
+msgstr "Premenovať"
 
-#: moduldlg.src#RID_TP_DLGS.RID_PB_NEWDLG.pushbutton.text
-msgctxt "moduldlg.src#RID_TP_DLGS.RID_PB_NEWDLG.pushbutton.text"
-msgid "~New..."
-msgstr "~Nový..."
+#: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_REPLACE.String.Text
+msgid  "Replace"
+msgstr "Nahradiť"
 
-#: moduldlg.src#RID_TP_DLGS.RID_PB_NEWMOD.pushbutton.text
-msgctxt "moduldlg.src#RID_TP_DLGS.RID_PB_NEWMOD.pushbutton.text"
-msgid "~New..."
-msgstr "~Nový..."
+#: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TITLE.String.Text
+msgid  "Dialog Import - Name already used"
+msgstr "Importu dialógu - Názov sa už používa"
 
-#: moduldlg.src#RID_TP_LIBS.RID_PB_APPEND.pushbutton.text
-msgid "~Import..."
-msgstr "~Importovať..."
+#: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.String.Text
+msgid  "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
+msgstr ""
 
-#: moduldlg.src#RID_TP_LIBS.RID_PB_DELETE.pushbutton.text
-msgctxt "moduldlg.src#RID_TP_LIBS.RID_PB_DELETE.pushbutton.text"
-msgid "~Delete"
-msgstr "~Zmazať"
+#: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.String.Text
+msgid  "Add"
+msgstr "Pridať"
 
-#: moduldlg.src#RID_TP_LIBS.RID_PB_EDIT.pushbutton.text
-msgctxt "moduldlg.src#RID_TP_LIBS.RID_PB_EDIT.pushbutton.text"
-msgid "~Edit"
-msgstr "~Upraviť"
+#: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_OMIT.String.Text
+msgid  "Omit"
+msgstr "Preskočiť"
 
-#: moduldlg.src#RID_TP_LIBS.RID_PB_EXPORT.pushbutton.text
-msgid "E~xport..."
-msgstr "E~xportovať..."
+#: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TITLE.String.Text
+msgid  "Dialog Import - Language Mismatch"
+msgstr "Importu dialógu - Jazyk nesúhlasí"
 
-#: moduldlg.src#RID_TP_LIBS.RID_PB_NEWLIB.pushbutton.text
-msgctxt "moduldlg.src#RID_TP_LIBS.RID_PB_NEWLIB.pushbutton.text"
-msgid "~New..."
-msgstr "~Nový..."
+#: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.String.Text
+msgid  "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
+msgstr ""
 
-#: moduldlg.src#RID_TP_LIBS.RID_PB_PASSWORD.pushbutton.text
-msgid "~Password..."
-msgstr "~Heslo..."
+#: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item1.ItemList.item
+msgid  "Print range"
+msgstr "Tlač oblasti"
 
-#: moduldlg.src#RID_TP_MODULS.RID_PB_DELETE.pushbutton.text
-msgctxt "moduldlg.src#RID_TP_MODULS.RID_PB_DELETE.pushbutton.text"
-msgid "~Delete"
-msgstr "~Zmazať"
+#: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item2.ItemList.item
+msgid  "All ~Pages"
+msgstr "Všetky ~strany"
 
-#: moduldlg.src#RID_TP_MODULS.RID_PB_EDIT.pushbutton.text
-msgctxt "moduldlg.src#RID_TP_MODULS.RID_PB_EDIT.pushbutton.text"
-msgid "~Edit"
-msgstr "~Upraviť"
+#: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item3.ItemList.item
+msgid  "Pa~ges"
+msgstr "Stra~ny"
 
-#: moduldlg.src#RID_TP_MODULS.RID_PB_NEWDLG.pushbutton.text
-msgctxt "moduldlg.src#RID_TP_MODULS.RID_PB_NEWDLG.pushbutton.text"
-msgid "~New..."
-msgstr "~Nový..."
-
-#: moduldlg.src#RID_TP_MODULS.RID_PB_NEWMOD.pushbutton.text
-msgctxt "moduldlg.src#RID_TP_MODULS.RID_PB_NEWMOD.pushbutton.text"
-msgid "~New..."
-msgstr "~Nový..."
-
-#: moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASBASIC.radiobutton.text
-msgctxt "moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASBASIC.radiobutton.text"
-msgid "Export as BASIC library"
-msgstr "Exportovať ako knižnicu BASIC"
-
-#: moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASPACKAGE.radiobutton.text
-msgid "Export as ~extension"
-msgstr "~Export ako rozšírenie"
-
-#: moduldlg.src#RID_STR_EXPORTBASIC.string.text
-msgctxt "moduldlg.src#RID_STR_EXPORTBASIC.string.text"
-msgid "Export as BASIC library"
-msgstr "Exportovať ako knižnicu BASIC"
-
-#: moduldlg.src#RID_STR_EXPORTPACKAGE.string.text
-msgid "Export library as extension"
-msgstr "Exportovať knižnicu ako rozšírenie"
-
-#: moduldlg.src#RID_STR_PACKAGE_BUNDLE.string.text
-msgid "Extension"
-msgstr "Rozšírenie"
-
-#: moduldlg.src#RID_TD_ORGANIZE.tabdialog.text
-msgid "%PRODUCTNAME Basic Macro Organizer"
-msgstr "%PRODUCTNAME Basic Makro Organizátor"
-
-#: moptions.src#RID_MACROOPTIONS.RID_FL_HELP.fixedline.text
-msgid "Help information"
-msgstr "Pomocník"
-
-#: moptions.src#RID_MACROOPTIONS.RID_FT_DESCR.fixedtext.text
-msgctxt "moptions.src#RID_MACROOPTIONS.RID_FT_DESCR.fixedtext.text"
-msgid "Description"
-msgstr "Popis"
-
-#: moptions.src#RID_MACROOPTIONS.RID_FT_HELPID.fixedtext.text
-msgid "Help ID"
-msgstr "ID Pomocníka"
-
-#: moptions.src#RID_MACROOPTIONS.RID_FT_HELPNAME.fixedtext.text
-msgid "Help file name"
-msgstr "Názov súboru pomocníka"
-
-#: moptions.src#RID_MACROOPTIONS.modaldialog.text
-msgctxt "moptions.src#RID_MACROOPTIONS.modaldialog.text"
-msgid "Description"
-msgstr "Popis"
-
-#: objdlg.src#RID_BASICIDE_OBJCAT.floatingwindow.text
-msgid "Objects"
+#: source/basicide/objdlg.src#RID_BASICIDE_OBJCAT.FloatingWindow.Text
+msgid  "Objects"
 msgstr "Objekty"
 
-#: objdlg.src#RID_STR_TLB_MACROS.string.text
-msgid "Objects Tree"
+#: source/basicide/objdlg.src#RID_BASICIDE_OBJCAT.RID_TB_TOOLBOX.TBITEM_SHOW.ToolBoxItem.Text
+msgid  "Show"
+msgstr "Zobraziť"
+
+#: source/basicide/objdlg.src#RID_STR_TLB_MACROS.String.Text
+msgid  "Objects Tree"
 msgstr "Strom objektov"
 
-#: objdlg.src#RID_BASICIDE_OBJCAT.RID_TB_TOOLBOX.TBITEM_SHOW.toolboxitem.text
-msgid "Show"
-msgstr "Zobraziť"
+#: source/basicide/moptions.src#RID_MACROOPTIONS.ModalDialog.Text
+msgid  "Description"
+msgstr "Popis"
+
+#: source/basicide/moptions.src#RID_MACROOPTIONS.RID_FT_DESCR.FixedText.Text
+msgid  "Description"
+msgstr "Popis"
+
+#: source/basicide/moptions.src#RID_MACROOPTIONS.RID_FL_HELP.FixedLine.Text
+msgid  "Help information"
+msgstr "Pomocník"
+
+#: source/basicide/moptions.src#RID_MACROOPTIONS.RID_FT_HELPID.FixedText.Text
+msgid  "Help ID"
+msgstr "ID Pomocníka"
+
+#: source/basicide/moptions.src#RID_MACROOPTIONS.RID_FT_HELPNAME.FixedText.Text
+msgid  "Help file name"
+msgstr "Názov súboru pomocníka"
+
+#: source/basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_NEW.PushButton.Text
+msgid  "New"
+msgstr "Nový"
+
+#: source/basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_DEL.PushButton.Text
+msgid  "Delete"
+msgstr "Zmazať"
+
+#: source/basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_CHKB_ACTIVE.CheckBox.Text
+msgid  "Active"
+msgstr "Aktívny"
+
+#: source/basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_PASS.FixedText.Text
+msgid  "Pass Count:"
+msgstr "Počet priebehov:"
+
+#: source/basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_BRKPOINTS.FixedText.Text
+msgid  "Breakpoints"
+msgstr "Body prerušenia"
+
+#: source/basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.NumericField.Text
+msgid  "Manage Breakpoints"
+msgstr "Body prerušenia"
+
+#: source/basicide/moduldlg.src#RID_TD_ORGANIZE.TabDialog.Text
+msgid  "%PRODUCTNAME Basic Macro Organizer"
+msgstr "%PRODUCTNAME Basic Makro Organizátor"
+
+#: source/basicide/moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_MOD.PageItem.Text
+msgid  "Modules"
+msgstr "Moduly"
+
+#: source/basicide/moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_DLG.PageItem.Text
+msgid  "Dialogs"
+msgstr "Dialógy"
+
+#: source/basicide/moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_LIB.PageItem.Text
+msgid  "Libraries"
+msgstr "Knižnice"
+
+#: source/basicide/moduldlg.src#RID_TP_MODULS.RID_STR_LIB.FixedText.Text
+msgid  "M~odule"
+msgstr "M~odul"
+
+#: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_EDIT.PushButton.Text
+msgid  "~Edit"
+msgstr "~Upraviť"
+
+#: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_CLOSE.CancelButton.Text
+msgid  "Close"
+msgstr "Zatvoriť"
+
+#: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_NEWMOD.PushButton.Text
+msgid  "~New..."
+msgstr "~Nový..."
+
+#: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_NEWDLG.PushButton.Text
+msgid  "~New..."
+msgstr "~Nový..."
+
+#: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_DELETE.PushButton.Text
+msgid  "~Delete"
+msgstr "~Zmazať"
+
+#: source/basicide/moduldlg.src#RID_TP_DLGS.RID_STR_LIB.FixedText.Text
+msgid  "Dialog"
+msgstr "Dialóg"
+
+#: source/basicide/moduldlg.src#RID_TP_DLGS.RID_PB_EDIT.PushButton.Text
+msgid  "~Edit"
+msgstr "~Upraviť"
+
+#: source/basicide/moduldlg.src#RID_TP_DLGS.RID_PB_CLOSE.CancelButton.Text
+msgid  "Close"
+msgstr "Zatvoriť"
+
+#: source/basicide/moduldlg.src#RID_TP_DLGS.RID_PB_NEWMOD.PushButton.Text
+msgid  "~New..."
+msgstr "~Nový..."
+
+#: source/basicide/moduldlg.src#RID_TP_DLGS.RID_PB_NEWDLG.PushButton.Text
+msgid  "~New..."
+msgstr "~Nový..."
+
+#: source/basicide/moduldlg.src#RID_TP_DLGS.RID_PB_DELETE.PushButton.Text
+msgid  "~Delete"
+msgstr "~Zmazať"
+
+#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_STR_BASICS.FixedText.Text
+msgid  "L~ocation"
+msgstr "U~miestnenie"
+
+#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_STR_LIB.FixedText.Text
+msgid  "~Library"
+msgstr "~Knižnica"
+
+#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_PB_EDIT.PushButton.Text
+msgid  "~Edit"
+msgstr "~Upraviť"
+
+#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_PB_CLOSE.CancelButton.Text
+msgid  "Close"
+msgstr "Zatvoriť"
+
+#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_PB_PASSWORD.PushButton.Text
+msgid  "~Password..."
+msgstr "~Heslo..."
+
+#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_PB_NEWLIB.PushButton.Text
+msgid  "~New..."
+msgstr "~Nový..."
+
+#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_PB_APPEND.PushButton.Text
+msgid  "~Import..."
+msgstr "~Importovať..."
+
+#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_PB_EXPORT.PushButton.Text
+msgid  "E~xport..."
+msgstr "E~xportovať..."
+
+#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_PB_DELETE.PushButton.Text
+msgid  "~Delete"
+msgstr "~Zmazať"
+
+#: source/basicide/moduldlg.src#RID_DLG_LIBS.RID_FL_OPTIONS.FixedLine.Text
+msgid  "Options"
+msgstr "Možnosti"
+
+#: source/basicide/moduldlg.src#RID_DLG_LIBS.RID_CB_REF.CheckBox.Text
+msgid  "Insert as reference (read-only)"
+msgstr "Vložiť ako odkaz (iba na čítanie)"
+
+#: source/basicide/moduldlg.src#RID_DLG_LIBS.RID_CB_REPL.CheckBox.Text
+msgid  "Replace existing libraries"
+msgstr "Nahradiť existujúce knižnice"
+
+#: source/basicide/moduldlg.src#RID_DLG_NEWLIB.RID_FT_NEWLIB.FixedText.Text
+msgid  "~Name:"
+msgstr "~Názov:"
+
+#: source/basicide/moduldlg.src#RID_DLG_EXPORT.ModalDialog.Text
+msgid  "Export Basic library"
+msgstr "Exportovať knižnicu BASIC"
+
+#: source/basicide/moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASPACKAGE.RadioButton.Text
+msgid  "Export as ~extension"
+msgstr "~Export ako rozšírenie"
+
+#: source/basicide/moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASBASIC.RadioButton.Text
+msgid  "Export as BASIC library"
+msgstr "Exportovať ako knižnicu BASIC"
+
+#: source/basicide/moduldlg.src#RID_STR_EXPORTPACKAGE.String.Text
+msgid  "Export library as extension"
+msgstr "Exportovať knižnicu ako rozšírenie"
+
+#: source/basicide/moduldlg.src#RID_STR_EXPORTBASIC.String.Text
+msgid  "Export as BASIC library"
+msgstr "Exportovať ako knižnicu BASIC"
+
+#: source/basicide/moduldlg.src#RID_STR_PACKAGE_BUNDLE.String.Text
+msgid  "Extension"
+msgstr "Rozšírenie"
+
+#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.ModalDialog.Text
+msgid  "Manage User Interface Languages [$1]"
+msgstr "Spravovať jazyky používateľského rozhrania [$1]"
+
+#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_LANGUAGE.FixedText.Text
+msgid  "Present Languages"
+msgstr "Dostupné jazyky"
+
+#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_ADD_LANG.PushButton.Text
+msgid  "Add..."
+msgstr "Pridať..."
+
+#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_DEL_LANG.PushButton.Text
+msgid  "Delete"
+msgstr "Zmazať"
+
+#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_MAKE_DEFAULT.PushButton.Text
+msgid  "Default"
+msgstr "Východzie"
+
+#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FixedText.Text
+msgid  "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
+msgstr ""
+
+#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKButton.Text
+msgid  "~Close"
+msgstr "~Zatvoriť"
+
+#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DEF_LANG.String.Text
+msgid  "[Default Language]"
+msgstr "[Východzí jazyk]"
+
+#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DELETE.String.Text
+msgid  "~Delete"
+msgstr "~Zmazať"
+
+#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_CREATE_LANG.String.Text
+msgid  "<Press 'Add' to create language resources>"
+msgstr "<Stlačte 'Pridať' pre vytvorenie zdrojov jazyka>"
+
+#: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Title
+msgid  "Delete Language Resources"
+msgstr "Zmazať zdroje jazyka"
+
+#: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Message
+msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
+msgstr ""
+
+#: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.ModalDialog.Text
+msgid  "Set Default User Interface Language"
+msgstr "Nastaviť východzí jazyk používateľského rozhrania"
+
+#: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_LANGUAGE.FixedText.Text
+msgid  "Default language"
+msgstr "Východzí jazyk"
+
+#: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FixedText.Text
+msgid  "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."
+msgstr ""
+
+#: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_TITLE.String.Text
+msgid  "Add User Interface Languages"
+msgstr "Pridať jazyky používateľského rozhrania"
+
+#: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_LABEL.String.Text
+msgid  "Available Languages"
+msgstr "Dostupné jazyky"
+
+#: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_INFO.String.Text
+msgid  "Select languages to be added. Resources for these languages will be created in the library. Strings of the current default user interface language will be copied to these new resources by default."
+msgstr ""
+
+#: source/dlged/dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
+msgid  "Properties: "
+msgstr "Vlastnosti: "
+
+#: source/dlged/dlgresid.src#RID_STR_BRWTITLE_NO_PROPERTIES.String.Text
+msgid  "No Control marked"
+msgstr "Nie je označené žiadne kontrolné pole"
+
+#: source/dlged/dlgresid.src#RID_STR_BRWTITLE_MULTISELECT.String.Text
+msgid  "Multiselection"
+msgstr "Viacnásobný výber"

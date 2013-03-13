@@ -1,1835 +1,2176 @@
-"X-Generator: Pootle 2.1.6\n"
-"X-Accelerator-Marker: ~\n"
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
 
-#: commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.menuitem.text
-msgid "~Unary/Binary Operators"
-msgstr "~معاملات أحادية/ثنائية"
 
-#: commands.src#RID_COMMANDMENU.RID_RELATIONS_MENU.menuitem.text
-msgid "~Relations"
-msgstr "~علاقات"
+#: source/smres.src#RID_FONTDIALOG.ModalDialog.Text
+msgid  "Fonts"
+msgstr "الخطوط"
 
-#: commands.src#RID_COMMANDMENU.RID_SETOPERATIONS_MENU.menuitem.text
-msgid "~Set Operations"
-msgstr "~تعيين العوامل"
-
-#: commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.RID_FUNCTIONSOTHER1_MENU.menuitem.text
-msgid "More"
-msgstr "المزيد"
-
-#: commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.menuitem.text
-msgctxt "commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.menuitem.text"
-msgid "~Functions"
-msgstr "ال~دالات"
-
-#: commands.src#RID_COMMANDMENU.RID_OPERATORS_MENU.menuitem.text
-msgid "O~perators"
-msgstr "م~عاملات"
-
-#: commands.src#RID_COMMANDMENU.RID_ATTRIBUTES_MENU.menuitem.text
-msgid "~Attributes"
-msgstr "~صفات"
-
-#: commands.src#RID_COMMANDMENU.RID_BRACKETS_MENU.menuitem.text
-msgid "~Brackets"
-msgstr "أ~قواس"
-
-#: commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NEWLINE.menuitem.text
-msgctxt "commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NEWLINE.menuitem.text"
-msgid "New Line"
-msgstr "سطر جديد"
-
-#: commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_SBLANK.menuitem.text
-msgctxt "commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_SBLANK.menuitem.text"
-msgid "Small Gap"
-msgstr "تباعد صغير"
-
-#: commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_BLANK.menuitem.text
-msgctxt "commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_BLANK.menuitem.text"
-msgid "Gap"
-msgstr "تباعد"
-
-#: commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NOSPACE.menuitem.text
-msgid "nospace {...}"
-msgstr "بلا مساحة {...}"
-
-#: commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.menuitem.text
-msgid "For~mats"
-msgstr "التن~سيقات"
-
-#: commands.src#RID_COMMANDMENU.RID_MISC_MENU.menuitem.text
-msgid "~Others"
-msgstr "~غيرها"
-
-#: smres.src#RID_FONTDIALOG.1.fixedtext.text
-msgctxt "smres.src#RID_FONTDIALOG.1.fixedtext.text"
-msgid "~Font"
+#: source/smres.src#RID_FONTDIALOG.1.FixedText.Text
+msgid  "~Font"
 msgstr "ال~خط"
 
-#: smres.src#RID_FONTDIALOG.1.checkbox.text
-msgid "~Bold"
+#: source/smres.src#RID_FONTDIALOG.1.CheckBox.Text
+msgid  "~Bold"
 msgstr "~عريض"
 
-#: smres.src#RID_FONTDIALOG.2.checkbox.text
-msgid "~Italic"
+#: source/smres.src#RID_FONTDIALOG.2.CheckBox.Text
+msgid  "~Italic"
 msgstr "~مائل"
 
-#: smres.src#RID_FONTDIALOG.2.fixedtext.text
-msgctxt "smres.src#RID_FONTDIALOG.2.fixedtext.text"
-msgid "Attributes"
+#: source/smres.src#RID_FONTDIALOG.2.FixedText.Text
+msgid  "Attributes"
 msgstr "السمات"
 
-#: smres.src#RID_FONTDIALOG.modaldialog.text
-msgctxt "smres.src#RID_FONTDIALOG.modaldialog.text"
-msgid "Fonts"
-msgstr "الخطوط"
-
-#: smres.src#RID_FONTSIZEDIALOG.1.fixedtext.text
-msgid "Base ~size"
-msgstr "حج~م القاعدة"
-
-#: smres.src#RID_FONTSIZEDIALOG.4.fixedtext.text
-msgctxt "smres.src#RID_FONTSIZEDIALOG.4.fixedtext.text"
-msgid "~Text"
-msgstr "ال~نص"
-
-#: smres.src#RID_FONTSIZEDIALOG.5.fixedtext.text
-msgid "~Indexes"
-msgstr "~فهارس"
-
-#: smres.src#RID_FONTSIZEDIALOG.6.fixedtext.text
+#: source/smres.src#RID_FONTSIZEDIALOG.ModalDialog.Text
 #, fuzzy
-msgctxt "smres.src#RID_FONTSIZEDIALOG.6.fixedtext.text"
-msgid "~Functions"
-msgstr "~دوال"
-
-#: smres.src#RID_FONTSIZEDIALOG.7.fixedtext.text
-msgid "~Operators"
-msgstr "مُعاملا~ت"
-
-#: smres.src#RID_FONTSIZEDIALOG.8.fixedtext.text
-msgid "~Limits"
-msgstr "~حدود"
-
-#: smres.src#RID_FONTSIZEDIALOG.1.fixedline.text
-msgid "Relative sizes"
-msgstr "أحجام نسبية"
-
-#: smres.src#RID_FONTSIZEDIALOG.1.pushbutton.text
-#, fuzzy
-msgctxt "smres.src#RID_FONTSIZEDIALOG.1.pushbutton.text"
-msgid "~Default"
-msgstr "الا~فتراضي"
-
-#: smres.src#RID_FONTSIZEDIALOG.modaldialog.text
-msgid "Font Sizes"
+msgid  "Font Sizes"
 msgstr "أحجام الخط"
 
-#: smres.src#RID_FONTTYPEDIALOG.1.fixedline.text
-msgid "Formula fonts"
-msgstr "خطوط الصيغ"
+#: source/smres.src#RID_FONTSIZEDIALOG.1.FixedText.Text
+#, fuzzy
+msgid  "Base ~size"
+msgstr "حج~م القاعدة"
 
-#: smres.src#RID_FONTTYPEDIALOG.2.fixedline.text
-msgid "Custom fonts"
-msgstr "خطوط مخصصة"
-
-#: smres.src#RID_FONTTYPEDIALOG.1.fixedtext.text
-msgid "~Variables"
-msgstr "المت~غيرات"
-
-#: smres.src#RID_FONTTYPEDIALOG.2.fixedtext.text
-msgctxt "smres.src#RID_FONTTYPEDIALOG.2.fixedtext.text"
-msgid "~Functions"
-msgstr "ال~دالات"
-
-#: smres.src#RID_FONTTYPEDIALOG.3.fixedtext.text
-msgid "~Numbers"
-msgstr "الأر~قام"
-
-#: smres.src#RID_FONTTYPEDIALOG.4.fixedtext.text
-msgctxt "smres.src#RID_FONTTYPEDIALOG.4.fixedtext.text"
-msgid "~Text"
+#: source/smres.src#RID_FONTSIZEDIALOG.4.FixedText.Text
+#, fuzzy
+msgid  "~Text"
 msgstr "ال~نص"
 
-#: smres.src#RID_FONTTYPEDIALOG.5.fixedtext.text
-msgid "~Serif"
-msgstr "~Serif"
+#: source/smres.src#RID_FONTSIZEDIALOG.5.FixedText.Text
+#, fuzzy
+msgid  "~Indexes"
+msgstr "~فهارس"
 
-#: smres.src#RID_FONTTYPEDIALOG.6.fixedtext.text
-msgid "S~ans"
-msgstr "S~ans"
+#: source/smres.src#RID_FONTSIZEDIALOG.6.FixedText.Text
+#, fuzzy
+msgid  "~Functions"
+msgstr "~دوال"
 
-#: smres.src#RID_FONTTYPEDIALOG.7.fixedtext.text
-msgid "F~ixed"
-msgstr "~ثابت"
+#: source/smres.src#RID_FONTSIZEDIALOG.7.FixedText.Text
+#, fuzzy
+msgid  "~Operators"
+msgstr "مُعاملا~ت"
 
-#: smres.src#RID_FONTTYPEDIALOG.1.menubutton.text
-msgctxt "smres.src#RID_FONTTYPEDIALOG.1.menubutton.text"
-msgid "~Modify"
-msgstr "ت~عديل"
+#: source/smres.src#RID_FONTSIZEDIALOG.8.FixedText.Text
+#, fuzzy
+msgid  "~Limits"
+msgstr "~حدود"
 
-#: smres.src#RID_FONTTYPEDIALOG.2.pushbutton.text
-msgctxt "smres.src#RID_FONTTYPEDIALOG.2.pushbutton.text"
-msgid "~Default"
-msgstr "ا~فتراضي"
+#: source/smres.src#RID_FONTSIZEDIALOG.1.FixedLine.Text
+#, fuzzy
+msgid  "Relative sizes"
+msgstr "أحجام نسبية"
 
-#: smres.src#RID_FONTTYPEDIALOG.modaldialog.text
-msgctxt "smres.src#RID_FONTTYPEDIALOG.modaldialog.text"
-msgid "Fonts"
-msgstr "الخطوط"
-
-#: smres.src#RID_DISTANCEDIALOG.1.metricfield.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.1.metricfield.text"
-msgid "%"
-msgstr "%"
-
-#: smres.src#RID_DISTANCEDIALOG.2.metricfield.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.2.metricfield.text"
-msgid "%"
-msgstr "%"
-
-#: smres.src#RID_DISTANCEDIALOG.1.checkbox.text
-msgid "Scale all brackets"
-msgstr "تدريج كل الأقواس"
-
-#: smres.src#RID_DISTANCEDIALOG.3.metricfield.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.3.metricfield.text"
-msgid "%"
-msgstr "%"
-
-#: smres.src#RID_DISTANCEDIALOG.1.pushbutton.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.1.pushbutton.text"
-msgid "~Default"
+#: source/smres.src#RID_FONTSIZEDIALOG.1.PushButton.Text
+#, fuzzy
+msgid  "~Default"
 msgstr "الا~فتراضي"
 
-#: smres.src#RID_DISTANCEDIALOG.1.menubutton.text
-msgid "~Category"
-msgstr "ال~فئة"
-
-#: smres.src#RID_DISTANCEDIALOG.1.fixedline.text
-msgid "Category"
-msgstr "فئة"
-
-#: smres.src#RID_DISTANCEDIALOG.1.1.string.text
+#: source/smres.src#RID_FONTTYPEDIALOG.ModalDialog.Text
 #, fuzzy
-msgctxt "smres.src#RID_DISTANCEDIALOG.1.1.string.text"
-msgid "Spacing"
-msgstr "التباعد"
+msgid  "Fonts"
+msgstr "الخطوط"
 
-#: smres.src#RID_DISTANCEDIALOG.1.2.string.text
+#: source/smres.src#RID_FONTTYPEDIALOG.1.FixedLine.Text
 #, fuzzy
-msgctxt "smres.src#RID_DISTANCEDIALOG.1.2.string.text"
-msgid "~Spacing"
-msgstr "الت~باعد"
+msgid  "Formula fonts"
+msgstr "خطوط الصيغ"
 
-#: smres.src#RID_DISTANCEDIALOG.1.3.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.1.3.string.text"
-msgid "~Line spacing"
-msgstr "تباع~د الأسطر"
-
-#: smres.src#RID_DISTANCEDIALOG.1.4.string.text
-msgid "~Root spacing"
-msgstr "تبا~عد الجذور"
-
-#: smres.src#RID_DISTANCEDIALOG.2.1.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.2.1.string.text"
-msgid "Indexes"
-msgstr "الفهارس"
-
-#: smres.src#RID_DISTANCEDIALOG.2.2.string.text
-msgid "~Superscript"
-msgstr "~مرتفع"
-
-#: smres.src#RID_DISTANCEDIALOG.2.3.string.text
-msgid "S~ubscript"
-msgstr "م~نخفض"
-
-#: smres.src#RID_DISTANCEDIALOG.3.1.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.3.1.string.text"
-msgid "Fractions"
-msgstr "الكسور"
-
-#: smres.src#RID_DISTANCEDIALOG.3.2.string.text
-msgid "~Numerator"
-msgstr "الب~سط"
-
-#: smres.src#RID_DISTANCEDIALOG.3.3.string.text
-msgid "~Denominator"
-msgstr "الم~قام"
-
-#: smres.src#RID_DISTANCEDIALOG.4.1.string.text
-msgid "Fraction bar"
-msgstr "شرطة الكسر"
-
-#: smres.src#RID_DISTANCEDIALOG.4.2.string.text
-msgid "~Excess length"
-msgstr "~طول زائد"
-
-#: smres.src#RID_DISTANCEDIALOG.4.3.string.text
-msgid "~Weight"
-msgstr "السُ~مك"
-
-#: smres.src#RID_DISTANCEDIALOG.5.1.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.5.1.string.text"
-msgid "Limits"
-msgstr "القيود"
-
-#: smres.src#RID_DISTANCEDIALOG.5.2.string.text
-msgid "~Upper limit"
-msgstr "الحد الأ~قصى"
-
-#: smres.src#RID_DISTANCEDIALOG.5.3.string.text
-msgid "~Lower limit"
-msgstr "الحد الأ~دنى"
-
-#: smres.src#RID_DISTANCEDIALOG.6.1.string.text
+#: source/smres.src#RID_FONTTYPEDIALOG.2.FixedLine.Text
 #, fuzzy
-msgctxt "smres.src#RID_DISTANCEDIALOG.6.1.string.text"
-msgid "Brackets"
-msgstr "أقواس"
+msgid  "Custom fonts"
+msgstr "خطوط مخصصة"
 
-#: smres.src#RID_DISTANCEDIALOG.6.2.string.text
-msgid "~Excess size (left/right)"
-msgstr "~حجم زائد (يمين/يسار)"
-
-#: smres.src#RID_DISTANCEDIALOG.6.3.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.6.3.string.text"
-msgid "~Spacing"
-msgstr "تبا~عد"
-
-#: smres.src#RID_DISTANCEDIALOG.6.5.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.6.5.string.text"
-msgid "~Excess size"
-msgstr "ت~جاوز الحجم"
-
-#: smres.src#RID_DISTANCEDIALOG.7.1.string.text
-msgid "Matrix"
-msgstr "مصفوفة"
-
-#: smres.src#RID_DISTANCEDIALOG.7.2.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.7.2.string.text"
-msgid "~Line spacing"
-msgstr "تباع~د الأسطر"
-
-#: smres.src#RID_DISTANCEDIALOG.7.3.string.text
-msgid "~Column spacing"
-msgstr "ت~باعد الأعمدة"
-
-#: smres.src#RID_DISTANCEDIALOG.8.1.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.8.1.string.text"
-msgid "Symbols"
-msgstr "رموز"
-
-#: smres.src#RID_DISTANCEDIALOG.8.2.string.text
-msgid "~Primary height"
-msgstr "الا~رتفاع الأساسي"
-
-#: smres.src#RID_DISTANCEDIALOG.8.3.string.text
-msgid "~Minimum spacing"
-msgstr "أ~قل تباعد"
-
-#: smres.src#RID_DISTANCEDIALOG.9.1.string.text
+#: source/smres.src#RID_FONTTYPEDIALOG.1.FixedText.Text
 #, fuzzy
-msgctxt "smres.src#RID_DISTANCEDIALOG.9.1.string.text"
-msgid "Operators"
-msgstr "مُعاملات"
+msgid  "~Variables"
+msgstr "المت~غيرات"
 
-#: smres.src#RID_DISTANCEDIALOG.9.2.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.9.2.string.text"
-msgid "~Excess size"
-msgstr "ت~جاوز الحجم"
+#: source/smres.src#RID_FONTTYPEDIALOG.2.FixedText.Text
+#, fuzzy
+msgid  "~Functions"
+msgstr "ال~دالات"
 
-#: smres.src#RID_DISTANCEDIALOG.9.3.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.9.3.string.text"
-msgid "~Spacing"
-msgstr "الت~باعد"
+#: source/smres.src#RID_FONTTYPEDIALOG.3.FixedText.Text
+#, fuzzy
+msgid  "~Numbers"
+msgstr "الأر~قام"
 
-#: smres.src#RID_DISTANCEDIALOG.10.1.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.10.1.string.text"
-msgid "Borders"
-msgstr "الحدود"
+#: source/smres.src#RID_FONTTYPEDIALOG.4.FixedText.Text
+#, fuzzy
+msgid  "~Text"
+msgstr "ال~نص"
 
-#: smres.src#RID_DISTANCEDIALOG.10.2.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.10.2.string.text"
-msgid "~Left"
-msgstr "الي~سار"
+#: source/smres.src#RID_FONTTYPEDIALOG.5.FixedText.Text
+#, fuzzy
+msgid  "~Serif"
+msgstr "~Serif"
 
-#: smres.src#RID_DISTANCEDIALOG.10.3.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.10.3.string.text"
-msgid "~Right"
-msgstr "الي~مين"
+#: source/smres.src#RID_FONTTYPEDIALOG.6.FixedText.Text
+#, fuzzy
+msgid  "S~ans"
+msgstr "S~ans"
 
-#: smres.src#RID_DISTANCEDIALOG.10.4.string.text
-msgid "~Top"
-msgstr "أ~على"
+#: source/smres.src#RID_FONTTYPEDIALOG.7.FixedText.Text
+#, fuzzy
+msgid  "F~ixed"
+msgstr "~ثابت"
 
-#: smres.src#RID_DISTANCEDIALOG.10.5.string.text
-msgid "~Bottom"
-msgstr "أ~سفل"
-
-#: smres.src#RID_DISTANCEDIALOG.modaldialog.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.modaldialog.text"
-msgid "Spacing"
-msgstr "تباعد"
-
-#: smres.src#RID_ALIGNDIALOG.1.radiobutton.text
-msgctxt "smres.src#RID_ALIGNDIALOG.1.radiobutton.text"
-msgid "~Left"
-msgstr "الي~سار"
-
-#: smres.src#RID_ALIGNDIALOG.2.radiobutton.text
-msgid "~Centered"
-msgstr "~توسيط"
-
-#: smres.src#RID_ALIGNDIALOG.3.radiobutton.text
-msgctxt "smres.src#RID_ALIGNDIALOG.3.radiobutton.text"
-msgid "~Right"
-msgstr "الي~مين"
-
-#: smres.src#RID_ALIGNDIALOG.1.fixedline.text
-msgid "Horizontal"
-msgstr "أفقي"
-
-#: smres.src#RID_ALIGNDIALOG.1.pushbutton.text
-msgctxt "smres.src#RID_ALIGNDIALOG.1.pushbutton.text"
-msgid "~Default"
-msgstr "ا~فتراضي"
-
-#: smres.src#RID_ALIGNDIALOG.modaldialog.text
-msgid "Alignment"
-msgstr "محاذاة"
-
-#: smres.src#RID_PRINTOPTIONPAGE.FL_PRINTOPTIONS.fixedline.text
-msgid "Print options"
-msgstr "خيارات الطباعة"
-
-#: smres.src#RID_PRINTOPTIONPAGE.CB_TITLEROW.checkbox.text
-msgid "~Title row"
-msgstr "~سطر العنوان"
-
-#: smres.src#RID_PRINTOPTIONPAGE.CB_EQUATION_TEXT.checkbox.text
-msgctxt "smres.src#RID_PRINTOPTIONPAGE.CB_EQUATION_TEXT.checkbox.text"
-msgid "~Formula text"
-msgstr "ن~ص الصيغة"
-
-#: smres.src#RID_PRINTOPTIONPAGE.CB_FRAME.checkbox.text
-msgid "B~order"
-msgstr "~حد"
-
-#: smres.src#RID_PRINTOPTIONPAGE.FL_PRINT_FORMAT.fixedline.text
-msgid "Print format"
-msgstr "تنسيق الطباعة"
-
-#: smres.src#RID_PRINTOPTIONPAGE.RB_ORIGINAL_SIZE.radiobutton.text
-msgctxt "smres.src#RID_PRINTOPTIONPAGE.RB_ORIGINAL_SIZE.radiobutton.text"
-msgid "O~riginal size"
-msgstr "ال~حجم الأصلي"
-
-#: smres.src#RID_PRINTOPTIONPAGE.RB_FIT_TO_PAGE.radiobutton.text
-msgctxt "smres.src#RID_PRINTOPTIONPAGE.RB_FIT_TO_PAGE.radiobutton.text"
-msgid "Fit to ~page"
-msgstr "احتواء ~ضمن الصفحة"
-
-#: smres.src#RID_PRINTOPTIONPAGE.RB_ZOOM.radiobutton.text
-msgctxt "smres.src#RID_PRINTOPTIONPAGE.RB_ZOOM.radiobutton.text"
-msgid "~Scaling"
-msgstr "تحجي~م"
-
-#: smres.src#RID_PRINTOPTIONPAGE.FL_MISC_OPTIONS.fixedline.text
-msgid "Miscellaneous options"
-msgstr ""
-
-#: smres.src#RID_PRINTOPTIONPAGE.CB_IGNORE_SPACING.checkbox.text
-msgid "Ig~nore ~~ and ` at the end of the line"
-msgstr ""
-
-#: smres.src#RID_PRINTOPTIONPAGE.CB_SAVE_ONLY_USED_SYMBOLS.checkbox.text
-msgid "Embed only used symbols (smaller file size)"
-msgstr ""
-
-#: smres.src#RID_PRINTOPTIONPAGE.tabpage.text
-msgid "Formula Options:Settings"
-msgstr "خيارات الصيغة:إعدادات"
-
-#: smres.src#RID_SYMBOLDIALOG.1.fixedtext.text
-msgid "~Symbol set"
-msgstr "~مجموعة رموز"
-
-#: smres.src#RID_SYMBOLDIALOG.2.fixedtext.text
-msgid "Unknown"
-msgstr "غير معروف"
-
-#: smres.src#RID_SYMBOLDIALOG.2.pushbutton.text
-msgid "~Insert"
-msgstr "إ~دراج"
-
-#: smres.src#RID_SYMBOLDIALOG.3.pushbutton.text
-msgid "~Close"
-msgstr "إ~غلاق"
-
-#: smres.src#RID_SYMBOLDIALOG.1.pushbutton.text
-msgid "~Edit..."
-msgstr "ت~حرير..."
-
-#: smres.src#RID_SYMBOLDIALOG.modaldialog.text
-msgctxt "smres.src#RID_SYMBOLDIALOG.modaldialog.text"
-msgid "Symbols"
-msgstr "رموز"
-
-#: smres.src#RID_SYMDEFINEDIALOG.1.fixedtext.text
-msgid "~Old symbol"
-msgstr "~رمز قديم"
-
-#: smres.src#RID_SYMDEFINEDIALOG.2.fixedtext.text
-msgid "O~ld symbol set"
-msgstr "مجموعة رمو~ز قديمة"
-
-#: smres.src#RID_SYMDEFINEDIALOG.9.fixedtext.text
-msgid "~Symbol"
-msgstr "~رمز"
-
-#: smres.src#RID_SYMDEFINEDIALOG.10.fixedtext.text
-msgid "Symbol s~et"
-msgstr "~مجموعة رموز"
-
-#: smres.src#RID_SYMDEFINEDIALOG.3.fixedtext.text
-msgctxt "smres.src#RID_SYMDEFINEDIALOG.3.fixedtext.text"
-msgid "~Font"
-msgstr "ال~خط"
-
-#: smres.src#RID_SYMDEFINEDIALOG.FT_FONTS_SUBSET.fixedtext.text
-msgid "~Subset"
-msgstr "م~جموعة جزئية"
-
-#: smres.src#RID_SYMDEFINEDIALOG.4.fixedtext.text
-msgid "~Typeface"
-msgstr "~نمط الخط"
-
-#: smres.src#RID_SYMDEFINEDIALOG.1.pushbutton.text
-msgid "~Add"
-msgstr "إضا~فة"
-
-#: smres.src#RID_SYMDEFINEDIALOG.2.pushbutton.text
-msgctxt "smres.src#RID_SYMDEFINEDIALOG.2.pushbutton.text"
-msgid "~Modify"
+#: source/smres.src#RID_FONTTYPEDIALOG.1.MenuButton.Text
+#, fuzzy
+msgid  "~Modify"
 msgstr "ت~عديل"
 
-#: smres.src#RID_SYMDEFINEDIALOG.3.pushbutton.text
-msgid "~Delete"
-msgstr "ح~ذف"
+#: source/smres.src#RID_FONTTYPEDIALOG.2.PushButton.Text
+#, fuzzy
+msgid  "~Default"
+msgstr "ا~فتراضي"
 
-#: smres.src#RID_SYMDEFINEDIALOG.modaldialog.text
-msgid "Edit Symbols"
-msgstr "تحرير الرموز"
-
-#: smres.src#RID_NOMATHTYPEFACEWARNING.warningbox.text
-msgid ""
-"The 'StarMath' font has not been installed.\n"
-"Without this font %PRODUCTNAME Math cannot function correctly.\n"
-"Please install this font and restart %PRODUCTNAME Math."
-msgstr ""
-"تم تثبيت الخط 'StarMath'.\n"
-"لا يمكن لـ %PRODUCTNAME Math العمل على نحوٍ صحيح بدون هذا الخط.\n"
-"الرجاء تثبيت هذا الخط وأعد تشغيل %PRODUCTNAME Math."
-
-#: smres.src#RID_DEFAULTSAVEQUERY.querybox.text
-msgid ""
-"Should the changes be saved as defaults?\n"
-"\n"
-"These changes will apply for all new formulas."
-msgstr ""
-"هل تريد حفظ التغييرات كتغييرات افتراضية؟\n"
-"\n"
-"ستنطبق هذه التغييرات على جميع الصيغ الجديدة."
-
-#: smres.src#RID_FONTREGULAR.string.text
-msgid "Standard"
-msgstr "قياسي"
-
-#: smres.src#RID_FONTITALIC.string.text
-msgid "Italic"
-msgstr "مائل"
-
-#: smres.src#RID_FONTBOLD.string.text
-msgid "Bold"
-msgstr "عريض"
-
-#: smres.src#RID_VIEWMENU.SID_VIEW050.menuitem.text
-msgid "~View 50%"
-msgstr "~عرض 50%"
-
-#: smres.src#RID_VIEWMENU.SID_VIEW100.menuitem.text
-msgid "View ~100%"
-msgstr "عرض ~100%"
-
-#: smres.src#RID_VIEWMENU.SID_VIEW200.menuitem.text
-msgid "View ~200%"
-msgstr "عرض ~200%"
-
-#: smres.src#RID_VIEWMENU.SID_ZOOMIN.menuitem.text
-msgid "~Zoom In"
-msgstr "ت~كبير"
-
-#: smres.src#RID_VIEWMENU.SID_ZOOMOUT.menuitem.text
-msgid "Zoom ~Out"
-msgstr "ت~صغير"
-
-#: smres.src#RID_VIEWMENU.SID_ADJUST.menuitem.text
-msgid "~Display All"
-msgstr "إ~ظهار الكل"
-
-#: smres.src#RID_VIEWMENU.SID_DRAW.menuitem.text
-msgid "U~pdate"
-msgstr "ت~حديث"
-
-#: smres.src#RID_DISTANCEMENU.WORKARROUND_1.menuitem.text
-msgctxt "smres.src#RID_DISTANCEMENU.WORKARROUND_1.menuitem.text"
-msgid "Spacing"
+#: source/smres.src#RID_DISTANCEDIALOG.ModalDialog.Text
+#, fuzzy
+msgid  "Spacing"
 msgstr "التباعد"
 
-#: smres.src#RID_DISTANCEMENU.Indexes.menuitem.text
-msgctxt "smres.src#RID_DISTANCEMENU.Indexes.menuitem.text"
-msgid "Indexes"
-msgstr "الفهارس"
-
-#: smres.src#RID_DISTANCEMENU.WORKARROUND_3.menuitem.text
-msgctxt "smres.src#RID_DISTANCEMENU.WORKARROUND_3.menuitem.text"
-msgid "Fractions"
-msgstr "الكسور"
-
-#: smres.src#RID_DISTANCEMENU.Fraction_Bars.menuitem.text
-msgid "Fraction Bars"
-msgstr "أشرطة الكسر"
-
-#: smres.src#RID_DISTANCEMENU.Limits.menuitem.text
-msgctxt "smres.src#RID_DISTANCEMENU.Limits.menuitem.text"
-msgid "Limits"
-msgstr "القيود"
-
-#: smres.src#RID_DISTANCEMENU.Brackets.menuitem.text
-msgctxt "smres.src#RID_DISTANCEMENU.Brackets.menuitem.text"
-msgid "Brackets"
-msgstr "الأقواس"
-
-#: smres.src#RID_DISTANCEMENU.Matrices.menuitem.text
-msgid "Matrices"
-msgstr "مصفوفات"
-
-#: smres.src#RID_DISTANCEMENU.Symbols.menuitem.text
-msgctxt "smres.src#RID_DISTANCEMENU.Symbols.menuitem.text"
-msgid "Symbols"
-msgstr "الرموز"
-
-#: smres.src#RID_DISTANCEMENU.Operators.menuitem.text
-msgctxt "smres.src#RID_DISTANCEMENU.Operators.menuitem.text"
-msgid "Operators"
-msgstr "عوامل التشغيل"
-
-#: smres.src#RID_DISTANCEMENU.WORKARROUND_10.menuitem.text
-msgctxt "smres.src#RID_DISTANCEMENU.WORKARROUND_10.menuitem.text"
-msgid "Borders"
-msgstr "الحدود"
-
-#: smres.src#RID_FONTMENU.Variables.menuitem.text
-msgid "Variables"
-msgstr "متغيرات"
-
-#: smres.src#RID_FONTMENU.Functions.menuitem.text
-msgctxt "smres.src#RID_FONTMENU.Functions.menuitem.text"
-msgid "Functions"
-msgstr "الدالات"
-
-#: smres.src#RID_FONTMENU.Numbers.menuitem.text
-msgid "Numbers"
-msgstr "الأرقام"
-
-#: smres.src#RID_FONTMENU.Text.menuitem.text
-msgid "Text"
-msgstr "النص"
-
-#: smres.src#RID_FONTMENU.Serif.menuitem.text
-msgid "Serif"
-msgstr "Serif"
-
-#: smres.src#RID_FONTMENU.Sans.menuitem.text
-msgid "Sans"
-msgstr "Sans"
-
-#: smres.src#RID_FONTMENU.Fixed.menuitem.text
-msgid "Fixed"
-msgstr "ثابت"
-
-#: smres.src#CMDBOXWINDOW_TEXT.#define.text
-msgid "Commands"
-msgstr "تعليقات"
-
-#: smres.src#RID_DOCUMENTSTR.string.text
-msgid "Formula"
-msgstr "الصيغة"
-
-#: smres.src#STR_STATSTR_READING.string.text
-msgid "Loading document..."
-msgstr "جارٍ تحميل المستند..."
-
-#: smres.src#STR_STATSTR_WRITING.string.text
-msgid "Saving document..."
-msgstr "جارٍ حفظ المستند..."
-
-#: smres.src#STR_MATH_DOCUMENT_FULLTYPE_CURRENT.string.text
-msgid "%PRODUCTNAME %PRODUCTVERSION Formula"
-msgstr "صيغة %PRODUCTNAME %PRODUCTVERSION"
-
-#: smres.src#RID_SYMBOLFILESSTR.string.text
-msgid "Symbol files (*.sms)"
-msgstr "(*.sms) ملفات الرموز"
-
-#: smres.src#RID_ALLFILESSTR.string.text
-msgid "All Files (*.*)"
-msgstr "كل الملفات (*.*)"
-
-#: smres.src#RID_ERR_IDENT.string.text
-msgid "ERROR : "
-msgstr "خطأ : "
-
-#: smres.src#RID_ERR_UNKOWN.string.text
-msgid "Unknown error occurred"
-msgstr "حدث خطأ مجهول"
-
-#: smres.src#RID_ERR_UNEXPECTEDCHARACTER.string.text
-msgid "Unexpected character"
-msgstr "حرف غير متوقع"
-
-#: smres.src#RID_ERR_OVERFLOW.string.text
-msgid "Formula entry too complex"
-msgstr "مُدخل الصيغة معقد للغاية"
-
-#: smres.src#RID_ERR_LGROUPEXPECTED.string.text
-msgid "'{' expected"
-msgstr "متوقع '{'"
-
-#: smres.src#RID_ERR_RGROUPEXPECTED.string.text
-msgid "'}' expected"
-msgstr "متوقع '}'"
-
-#: smres.src#RID_ERR_LBRACEEXPECTED.string.text
-msgid "'(' expected"
-msgstr "متوقع '('"
-
-#: smres.src#RID_ERR_RBRACEEXPECTED.string.text
-msgid "')' expected"
-msgstr "متوقع ')'"
-
-#: smres.src#RID_ERR_FUNCEXPECTED.string.text
-msgid "Function expected"
-msgstr "متوقع دالة"
-
-#: smres.src#RID_ERR_UNOPEREXPECTED.string.text
-msgid "Unary operator expected"
-msgstr "متوقع معامل أحادي"
-
-#: smres.src#RID_ERR_BINOPEREXPECTED.string.text
-msgid "Binary operator expected"
-msgstr "Binary operator expected"
-
-#: smres.src#RID_ERR_SYMBOLEXPECTED.string.text
-msgid "Symbol expected"
-msgstr "Symbol expected"
-
-#: smres.src#RID_ERR_IDENTEXPECTED.string.text
-msgid "Identifier expected"
-msgstr "Identifier expected"
-
-#: smres.src#RID_ERR_POUNDEXPECTED.string.text
-msgid "'#' expected"
-msgstr "'#' expected"
-
-#: smres.src#RID_ERR_COLOREXPECTED.string.text
-msgid "Color required"
-msgstr "Color required"
-
-#: smres.src#RID_ERR_LPARENTEXPECTED.string.text
-msgid "Left limit expected"
-msgstr "Left limit expected"
-
-#: smres.src#RID_ERR_RPARENTEXPECTED.string.text
-msgid "Right limit expected"
-msgstr "Right limit expected"
-
-#: smres.src#RID_ERR_RIGHTEXPECTED.string.text
-msgid "'RIGHT' expected"
-msgstr "'RIGHT' expected"
-
-#: smres.src#RID_MATH_TOOLBOX.string.text
-msgid "Main Toolbar"
-msgstr "شريط الأدوات الرئيسي"
-
-#: smres.src#RID_PRINTUIOPTIONS.1.itemlist.text
-msgid "%PRODUCTNAME %s"
-msgstr "%PRODUCTNAME %s"
-
-#: smres.src#RID_PRINTUIOPTIONS.2.itemlist.text
-msgid "Contents"
-msgstr "المحتويات"
-
-#: smres.src#RID_PRINTUIOPTIONS.3.itemlist.text
-msgid "~Title"
-msgstr "الع~نوان"
-
-# 100%
-#: smres.src#RID_PRINTUIOPTIONS.4.itemlist.text
-msgctxt "smres.src#RID_PRINTUIOPTIONS.4.itemlist.text"
-msgid "~Formula text"
-msgstr "ن~ص الصيغة"
-
-#: smres.src#RID_PRINTUIOPTIONS.5.itemlist.text
-msgid "B~orders"
-msgstr "ال~حدود"
-
-#: smres.src#RID_PRINTUIOPTIONS.6.itemlist.text
-msgid "Size"
-msgstr "الحجم"
-
-# 100%
-#: smres.src#RID_PRINTUIOPTIONS.7.itemlist.text
-msgctxt "smres.src#RID_PRINTUIOPTIONS.7.itemlist.text"
-msgid "O~riginal size"
-msgstr "ال~حجم الأصلي"
-
-# 100%
-#: smres.src#RID_PRINTUIOPTIONS.8.itemlist.text
-msgctxt "smres.src#RID_PRINTUIOPTIONS.8.itemlist.text"
-msgid "Fit to ~page"
-msgstr "احتواء ~ضمن الصفحة"
-
-# 100%
-#: smres.src#RID_PRINTUIOPTIONS.9.itemlist.text
-msgctxt "smres.src#RID_PRINTUIOPTIONS.9.itemlist.text"
-msgid "~Scaling"
-msgstr "تحجي~م"
-
-#: symbol.src#RID_UI_SYMBOLSET_NAMES.1.itemlist.text
-msgid "Greek"
-msgstr "اليونانية"
-
-#: symbol.src#RID_UI_SYMBOLSET_NAMES.2.itemlist.text
-msgid "Special"
-msgstr "خاص"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.1.itemlist.text
-msgid "alpha"
-msgstr "ألفا"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.2.itemlist.text
-msgid "ALPHA"
-msgstr "ألفا"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.3.itemlist.text
-msgid "beta"
-msgstr "بيتا"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.4.itemlist.text
-msgid "BETA"
-msgstr "بيتا"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.5.itemlist.text
-msgid "gamma"
-msgstr "جاما"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.6.itemlist.text
-msgid "GAMMA"
-msgstr "جاما"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.7.itemlist.text
-msgid "delta"
-msgstr "دلتا"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.8.itemlist.text
-msgid "DELTA"
-msgstr "DELTA"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.9.itemlist.text
-msgid "epsilon"
-msgstr "إبسلون"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.10.itemlist.text
-msgid "EPSILON"
-msgstr "إبسلون"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.11.itemlist.text
-msgid "zeta"
-msgstr "زيتا"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.12.itemlist.text
-msgid "ZETA"
-msgstr "زيتا"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.13.itemlist.text
-msgid "eta"
-msgstr "إيتا"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.14.itemlist.text
-msgid "ETA"
-msgstr "إيتا"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.15.itemlist.text
-msgid "theta"
-msgstr "ثيتا"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.16.itemlist.text
-msgid "THETA"
-msgstr "ثيتا"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.17.itemlist.text
-msgid "iota"
-msgstr "أوتا"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.18.itemlist.text
-msgid "IOTA"
-msgstr "أوتا"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.19.itemlist.text
-msgid "kappa"
-msgstr "كيبا"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.20.itemlist.text
-msgid "KAPPA"
-msgstr "كيبا"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.21.itemlist.text
-msgid "lambda"
-msgstr "لامدا"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.22.itemlist.text
-msgid "LAMBDA"
-msgstr "لامدا"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.23.itemlist.text
-msgid "mu"
-msgstr "mu"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.24.itemlist.text
-msgid "MU"
-msgstr "MU"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.25.itemlist.text
-msgid "nu"
-msgstr "nu"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.26.itemlist.text
-msgid "NU"
-msgstr "NU"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.27.itemlist.text
-msgid "xi"
-msgstr "xi"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.28.itemlist.text
-msgid "XI"
-msgstr "XI"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.29.itemlist.text
-msgid "omicron"
-msgstr "omicron"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.30.itemlist.text
-msgid "OMICRON"
-msgstr "OMICRON"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.31.itemlist.text
-msgid "pi"
-msgstr "pi"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.32.itemlist.text
-msgid "PI"
-msgstr "PI"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.33.itemlist.text
-msgid "rho"
-msgstr "rho"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.34.itemlist.text
-msgid "RHO"
-msgstr "RHO"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.35.itemlist.text
-msgid "sigma"
-msgstr "سيجما"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.36.itemlist.text
-msgid "SIGMA"
-msgstr "سيجما"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.37.itemlist.text
-msgid "tau"
-msgstr "tau"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.38.itemlist.text
-msgid "TAU"
-msgstr "TAU"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.39.itemlist.text
-msgid "upsilon"
-msgstr "upsilon"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.40.itemlist.text
-msgid "UPSILON"
-msgstr "UPSILON"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.41.itemlist.text
-msgid "phi"
-msgstr "phi"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.42.itemlist.text
-msgid "PHI"
-msgstr "PHI"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.43.itemlist.text
-msgid "chi"
-msgstr "chi"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.44.itemlist.text
-msgid "CHI"
-msgstr "CHI"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.45.itemlist.text
-msgid "psi"
-msgstr "psi"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.46.itemlist.text
-msgid "PSI"
-msgstr "PSI"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.47.itemlist.text
-msgid "omega"
-msgstr "omega"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.48.itemlist.text
-msgid "OMEGA"
-msgstr "OMEGA"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.49.itemlist.text
-msgid "varepsilon"
-msgstr "varepsilon"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.50.itemlist.text
-msgid "vartheta"
-msgstr "vartheta"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.51.itemlist.text
-msgid "varpi"
-msgstr "varpi"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.52.itemlist.text
-msgid "varrho"
-msgstr "varrho"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.53.itemlist.text
-msgid "varsigma"
-msgstr "varsigma"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.54.itemlist.text
-msgid "varphi"
-msgstr "varphi"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.55.itemlist.text
-msgid "element"
-msgstr "عنصر"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.56.itemlist.text
-msgid "noelement"
-msgstr "noelement"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.57.itemlist.text
-msgid "strictlylessthan"
-msgstr "strictlylessthan"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.58.itemlist.text
-msgid "strictlygreaterthan"
-msgstr "strictlygreaterthan"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.59.itemlist.text
-msgid "notequal"
-msgstr "notequal"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.60.itemlist.text
-msgid "identical"
-msgstr "مماثل"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.61.itemlist.text
-msgid "tendto"
-msgstr "tendto"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.62.itemlist.text
-msgctxt "symbol.src#RID_UI_SYMBOL_NAMES.62.itemlist.text"
-msgid "infinite"
-msgstr "لانهائي"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.63.itemlist.text
-msgid "angle"
-msgstr "زاوية"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.64.itemlist.text
-msgid "perthousand"
-msgstr "perthousand"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.65.itemlist.text
-msgid "and"
-msgstr "و"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.66.itemlist.text
-msgid "or"
-msgstr "أو"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_UNBINOPS_CAT.toolboxitem.text
-msgid "Unary/Binary Operators"
-msgstr "مُعاملات أحادية/ثنائية"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_RELATIONS_CAT.toolboxitem.text
-msgid "Relations"
-msgstr "العلاقات"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_SETOPERATIONS_CAT.toolboxitem.text
-msgid "Set Operations"
-msgstr "Set Operations"
-
-# 100%
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_FUNCTIONS_CAT.toolboxitem.text
-msgctxt "toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_FUNCTIONS_CAT.toolboxitem.text"
-msgid "Functions"
-msgstr "الدالات"
-
-# 100%
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_OPERATORS_CAT.toolboxitem.text
-msgctxt "toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_OPERATORS_CAT.toolboxitem.text"
-msgid "Operators"
-msgstr "عوامل التشغيل"
-
-# 100%
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_ATTRIBUTES_CAT.toolboxitem.text
-msgctxt "toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_ATTRIBUTES_CAT.toolboxitem.text"
-msgid "Attributes"
-msgstr "السمات"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_MISC_CAT.toolboxitem.text
-msgid "Others"
-msgstr "غيرها"
-
-# 100%
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_BRACKETS_CAT.toolboxitem.text
-msgctxt "toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_BRACKETS_CAT.toolboxitem.text"
-msgid "Brackets"
-msgstr "أقواس"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_FORMAT_CAT.toolboxitem.text
-msgid "Formats"
-msgstr "تنسيقات"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_PLUSX.toolboxitem.text
-msgid "+ Sign"
-msgstr "علامة +"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_MINUSX.toolboxitem.text
-msgid "- Sign"
-msgstr "علامة +"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_PLUSMINUSX.toolboxitem.text
-msgid "+- Sign"
-msgstr "علامة +-"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_MINUSPLUSX.toolboxitem.text
-msgid "-+ Sign"
-msgstr "علامة -+"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_NEGX.toolboxitem.text
-msgid "Boolean NOT"
-msgstr "غير منطقي"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XPLUSY.toolboxitem.text
-msgid "Addition +"
-msgstr "جمع +"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XCDOTY.toolboxitem.text
-msgid "Multiplication (Dot )"
-msgstr "ضرب (نقطة)"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XTIMESY.toolboxitem.text
-msgid "Multiplication (x)"
-msgstr "ضرب (×)"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XSYMTIMESY.toolboxitem.text
-msgid "Multiplication (*)"
-msgstr "ضرب (*)"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XANDY.toolboxitem.text
-msgid "Boolean AND"
-msgstr "و منطقية"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XMINUSY.toolboxitem.text
-msgid "Subtraction -"
-msgstr "طرح ـ"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XOVERY.toolboxitem.text
-msgid "Division (Fraction)"
-msgstr "قسمة (كسر)"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XDIVY.toolboxitem.text
-msgid "Division (÷)"
-msgstr "قسمة (÷)"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XSYMDIVIDEY.toolboxitem.text
-msgid "Division (Slash)"
-msgstr "قسمة (/)"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XORY.toolboxitem.text
-msgid "Boolean OR"
-msgstr "أو منطقية"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XCIRCY.toolboxitem.text
-msgid "Concatenate"
-msgstr "سَلسَلة"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XEQY.toolboxitem.text
-msgid "Is Equal"
-msgstr "يساوي"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XNEQY.toolboxitem.text
-msgid "Is Not Equal"
-msgstr "لا يساوي"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XAPPROXY.toolboxitem.text
-msgid "Is Approximately Equal"
-msgstr "يساوي تقريبًا"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XDIVIDESY.toolboxitem.text
-msgid "Divides"
-msgstr "يقبل القسمة"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XNDIVIDESY.toolboxitem.text
-msgid "Does Not Divide"
-msgstr "لا يقبل القسمة"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XLTY.toolboxitem.text
-msgid "Is Less Than"
-msgstr "أقل من"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XGTY.toolboxitem.text
-msgid "Is Greater Than"
-msgstr "أكبر من"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XSIMEQY.toolboxitem.text
-msgid "Is Similar Or Equal"
-msgstr "مشابه أو مساوٍ"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XPARALLELY.toolboxitem.text
-msgid "Is Parallel To"
-msgstr "متوازٍ مع"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XORTHOY.toolboxitem.text
-msgid "Is Orthogonal To"
-msgstr "متعامد على"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XLESLANTY.toolboxitem.text
-msgctxt "toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XLESLANTY.toolboxitem.text"
-msgid "Is Less Than Or Equal To"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XGESLANTY.toolboxitem.text
-msgctxt "toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XGESLANTY.toolboxitem.text"
-msgid "Is Greater Than Or Equal To"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XSIMY.toolboxitem.text
-msgid "Is Similar To"
-msgstr "يشابه"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XEQUIVY.toolboxitem.text
-msgid "Is Congruent To"
-msgstr "يرادف"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XLEY.toolboxitem.text
-msgctxt "toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XLEY.toolboxitem.text"
-msgid "Is Less Than Or Equal To"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XGEY.toolboxitem.text
-msgctxt "toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XGEY.toolboxitem.text"
-msgid "Is Greater Than Or Equal To"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XPROPY.toolboxitem.text
-msgid "Is Proportional To"
-msgstr "متناسب مع"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XTOWARDY.toolboxitem.text
-msgid "Toward"
-msgstr "باتجاه"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_DLARROW.toolboxitem.text
-msgid "Double Arrow Left"
-msgstr "سهمان إلى اليسار"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_DLRARROW.toolboxitem.text
-msgid "Double Arrow Left And Right"
-msgstr "سهمان إلى اليسار واليمين"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_DRARROW.toolboxitem.text
-msgid "Double Arrow Right"
-msgstr "سهمان إلى اليمين"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XINY.toolboxitem.text
-msgid "Is In"
-msgstr "ضمن"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XNOTINY.toolboxitem.text
-msgid "Is Not In"
-msgstr "ليس ضمن"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XOWNSY.toolboxitem.text
-msgid "Owns"
-msgstr "يمتلك"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_EMPTYSET.toolboxitem.text
-msgid "Empty Set"
-msgstr "مجموعة فارغة"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XINTERSECTIONY.toolboxitem.text
-msgid "Intersection"
-msgstr "التقاطع"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XUNIONY.toolboxitem.text
-msgid "Union"
-msgstr "اتحاد"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XSETMINUSY.toolboxitem.text
-msgid "Difference"
-msgstr "اختلاف"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XSLASHY.toolboxitem.text
-msgid "Quotient Set"
-msgstr "Quotient Set"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_ALEPH.toolboxitem.text
-msgid "Aleph"
-msgstr "ألف"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XSUBSETY.toolboxitem.text
-msgid "Subset"
-msgstr "مجموعة جزئية"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XSUBSETEQY.toolboxitem.text
-msgid "Subset Or Equal To"
-msgstr "مجموعة جزئية أو يساوي"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XSUPSETY.toolboxitem.text
-msgid "Superset"
-msgstr "مجموعة فائقة"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XSUPSETEQY.toolboxitem.text
-msgid "Superset Or Equal To"
-msgstr "مجموعة فائقة أو يساوي"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XNSUBSETY.toolboxitem.text
-msgid "Not Subset"
-msgstr "ليس مجموعة جزئية"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XNSUBSETEQY.toolboxitem.text
-msgid "Not Subset Or Equal"
-msgstr "ليس مجموعة جزئية أو يساوي"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XNSUPSETY.toolboxitem.text
-msgid "Not Superset"
-msgstr "ليس مجموعة فائقة"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XNSUPSETEQY.toolboxitem.text
-msgid "Not Superset Or Equal"
-msgstr "ليس مجموعة فائقة أو يساوي"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_SETN.toolboxitem.text
-msgid "Natural Numbers Set"
-msgstr "مجموعة أرقام طبيعية"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_SETZ.toolboxitem.text
-msgid "Integers Set"
-msgstr "مجموعة الأعداد الصحيحة"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_SETQ.toolboxitem.text
-msgid "Set of Rational Numbers"
-msgstr "Set of Rational Numbers"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_SETR.toolboxitem.text
-msgid "Real Numbers Set"
-msgstr "مجموعة الأعداد الحقيقية"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_SETC.toolboxitem.text
-msgid "Complex Numbers Set"
-msgstr "مجموعة الأعداد المركبة"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_EX.toolboxitem.text
-msgctxt "toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_EX.toolboxitem.text"
-msgid "Exponential Function"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_LNX.toolboxitem.text
-msgid "Natural Logarithm"
-msgstr "لوغاريتم طبيعي"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_EXPX.toolboxitem.text
-msgctxt "toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_EXPX.toolboxitem.text"
-msgid "Exponential Function"
-msgstr ""
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_LOGX.toolboxitem.text
-msgid "Logarithm"
-msgstr "لوغاريتم"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_RSUPX.toolboxitem.text
-msgid "Power"
-msgstr "الأس"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_SINX.toolboxitem.text
-msgid "Sine"
-msgstr "جيب"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_COSX.toolboxitem.text
-msgid "Cosine"
-msgstr "جيب تمام"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_TANX.toolboxitem.text
-msgid "Tangent"
-msgstr "ظل"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_COTX.toolboxitem.text
-msgid "Cotangent"
-msgstr "ظل التمام"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_SQRTX.toolboxitem.text
-msgid "Square Root"
-msgstr "جذر تربيعي"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARCSINX.toolboxitem.text
-msgid "Arcsine"
-msgstr "مقابل الجيب"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARCCOSX.toolboxitem.text
-msgid "Arccosine"
-msgstr "مقابل جيب التمام"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARCTANX.toolboxitem.text
-msgid "Arctangent"
-msgstr "مقابل الظل"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARCCOTX.toolboxitem.text
-msgid "Arccotangent"
-msgstr "قوس ظل التمام"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_NROOTXY.toolboxitem.text
-msgid "N-th Root"
-msgstr "N-th Root"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_SINHX.toolboxitem.text
-msgid "Hyperbolic Sine"
-msgstr "Hyperbolic Sine"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_COSHX.toolboxitem.text
-msgid "Hyperbolic Cosine"
-msgstr "Hyperbolic Cosine"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_TANHX.toolboxitem.text
-msgid "Hyperbolic Tangent"
-msgstr "Hyperbolic Tangent"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_COTHX.toolboxitem.text
-msgid "Hyperbolic Cotangent"
-msgstr "Hyperbolic Cotangent"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ABSX.toolboxitem.text
-msgid "Absolute Value"
-msgstr "قيمة مطلقة"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARSINHX.toolboxitem.text
-msgid "Area Hyperbolic Sine"
-msgstr "Area Hyperbolic Sine"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARCOSHX.toolboxitem.text
-msgid "Area Hyperbolic Cosine"
-msgstr "Area Hyperbolic Cosine"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARTANHX.toolboxitem.text
-msgid "Area Hyperbolic Tangent"
-msgstr "Area Hyperbolic Tangent"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARCOTHX.toolboxitem.text
-msgid "Area Hyperbolic Cotangent"
-msgstr "Area Hyperbolic Cotangent"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_FACTX.toolboxitem.text
-msgid "Factorial"
-msgstr "Factorial"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_LIMX.toolboxitem.text
-msgid "Limes"
-msgstr "Limes"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_SUMX.toolboxitem.text
-msgid "Sum"
-msgstr "المجموع"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_PRODX.toolboxitem.text
-msgid "Product"
-msgstr "المنتج"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_COPRODX.toolboxitem.text
-msgid "Coproduct"
-msgstr "Coproduct"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_FROMXTOY.toolboxitem.text
-msgid "Upper And Lower Limit"
-msgstr "الحد الأقصى والأدنى"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_INTX.toolboxitem.text
-msgid "Integral"
-msgstr "تكامل"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_IINTX.toolboxitem.text
-msgid "Double Integral"
-msgstr "تكامل مزدوج"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_IIINTX.toolboxitem.text
-msgid "Triple Integral"
-msgstr "تكامل ثلاثي"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_FROMX.toolboxitem.text
-msgid "Lower Limit"
-msgstr "الحد الأدنى"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_LINTX.toolboxitem.text
-msgid "Curve Integral"
-msgstr "Curve Integral"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_LLINTX.toolboxitem.text
-msgid "Double Curve Integral"
-msgstr "Double Curve Integral"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_LLLINTX.toolboxitem.text
-msgid "Triple Curve Integral"
-msgstr "Triple Curve Integral"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_TOX.toolboxitem.text
-msgid "Upper Limit"
-msgstr "الحد الأقصى"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_ACUTEX.toolboxitem.text
-msgid "Acute Accent"
-msgstr "Acute Accent"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_GRAVEX.toolboxitem.text
-msgid "Grave Accent"
-msgstr "Grave Accent"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_CHECKX.toolboxitem.text
-msgid "Reverse Circumflex"
-msgstr "Reverse Circumflex"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_BREVEX.toolboxitem.text
-msgid "Breve"
-msgstr "Breve"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_CIRCLEX.toolboxitem.text
-msgid "Circle"
-msgstr "دائرة"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_VECX.toolboxitem.text
-msgid "Vector Arrow"
-msgstr "Vector Arrow"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_TILDEX.toolboxitem.text
-msgid "Tilde"
-msgstr "Tilde"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_HATX.toolboxitem.text
-msgid "Circumflex"
-msgstr "Circumflex"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_BARX.toolboxitem.text
-msgid "Line Above"
-msgstr "Line Above"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_DOTX.toolboxitem.text
-msgid "Dot"
-msgstr "نقطة"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_WIDEVECX.toolboxitem.text
-msgid "Large Vector Arrow"
-msgstr "Large Vector Arrow"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_WIDETILDEX.toolboxitem.text
-msgid "Large Tilde"
-msgstr "Large Tilde"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_WIDEHATX.toolboxitem.text
-msgid "Large Circumflex"
-msgstr "Large Circumflex"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_DDOTX.toolboxitem.text
-msgid "Double Dot"
-msgstr "Double Dot"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_OVERLINEX.toolboxitem.text
-msgid "Line Over"
-msgstr "خط فوق"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_UNDERLINEX.toolboxitem.text
-msgid "Line Below"
-msgstr "خط تحت"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_OVERSTRIKEX.toolboxitem.text
-msgid "Line Through"
-msgstr "خط عبر"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_DDDOTX.toolboxitem.text
-msgid "Triple Dot"
-msgstr "Triple Dot"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_PHANTOMX.toolboxitem.text
-msgid "Transparent"
-msgstr "شفاف"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_BOLDX.toolboxitem.text
-msgid "Bold Font"
-msgstr "خط عريض"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_ITALX.toolboxitem.text
-msgid "Italic Font"
-msgstr "خط مائل"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_SIZEXY.toolboxitem.text
-msgid "Resize"
-msgstr "تغيير الحجم"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_FONTXY.toolboxitem.text
-msgid "Change Font"
-msgstr "تغيير الخط"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRPARENTX.toolboxitem.text
-msgid "Round Brackets"
-msgstr "أقواس مستديرة"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRBRACKETX.toolboxitem.text
-msgid "Square Brackets"
-msgstr "أقواس مربعة"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRDBRACKETX.toolboxitem.text
-msgid "Double Square Brackets"
-msgstr "أقواس مزدوجة مربعة"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRLINEX.toolboxitem.text
-msgid "Single Lines"
-msgstr "خطوط مفردة"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRDLINEX.toolboxitem.text
-msgid "Double Lines"
-msgstr "خطوط مزدوجة"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRBRACEX.toolboxitem.text
-msgid "Braces"
-msgstr "أقواس متموجة"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRANGLEX.toolboxitem.text
-msgid "Angle Brackets"
-msgstr "أقواس مدببة"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LMRANGLEXY.toolboxitem.text
-msgid "Operator Brackets"
-msgstr "أقواس مُعاملات"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRGROUPX.toolboxitem.text
-msgid "Group Brackets"
-msgstr "أقواس تجميع"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLRPARENTX.toolboxitem.text
-msgid "Round Brackets (Scalable)"
-msgstr "أقواس دائرية (قابلة للتحجيم)"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLRBRACKETX.toolboxitem.text
-msgid "Square Brackets (Scalable)"
-msgstr "أقواس مربعة (قابل للتحجيم)"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLRDBRACKETX.toolboxitem.text
-msgid "Double Square Brackets (Scalable)"
-msgstr "أقواس مربعة مزدوجة (قابل للتحجيم)"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLRLINEX.toolboxitem.text
-msgid "Single Lines (Scalable)"
-msgstr "خطوط مفردة (قابلة للتحجيم)"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLRDLINEX.toolboxitem.text
-msgid "Double Lines (Scalable)"
-msgstr "خطوط مزدوجة (قابلة للتحجيم)"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLRBRACEX.toolboxitem.text
-msgid "Braces (Scalable)"
-msgstr "أقواس متموجة (قابلة للتحجيم)"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLRANGLEX.toolboxitem.text
-msgid "Angle Brackets (Scalable)"
-msgstr "أقواس مدببة (قابلة للتحجيم)"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLMRANGLEXY.toolboxitem.text
-msgid "Operator Brackets (Scalable)"
-msgstr "أقواس مُعاملات (قابلة للتحجيم)"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_XOVERBRACEY.toolboxitem.text
-msgid "Braces Top (Scalable)"
-msgstr "أقواس متموجة بالأعلى (قابلة للتحجيم)"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_XUNDERBRACEY.toolboxitem.text
-msgid "Braces Bottom (Scalable)"
-msgstr "أقواس متموجة بالأسفل (قابلة للتحجيم)"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_LSUPX.toolboxitem.text
-msgid "Superscript Left"
-msgstr "مرتفع أيسر"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_CSUPX.toolboxitem.text
-msgid "Superscript Top"
-msgstr "مرتفع أعلى"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_RSUPX.toolboxitem.text
-msgid "Superscript Right"
-msgstr "مرتفع يمين"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_BINOMXY.toolboxitem.text
-msgid "Vertical Stack (2 Elements)"
-msgstr "تراكم أفقي (عنصران)"
-
-# 100%
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_NEWLINE.toolboxitem.text
-msgctxt "toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_NEWLINE.toolboxitem.text"
-msgid "New Line"
-msgstr "سطر جديد"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_LSUBX.toolboxitem.text
-msgid "Subscript Left"
-msgstr "منخفض يسار"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_CSUBX.toolboxitem.text
-msgid "Subscript Bottom"
-msgstr "منخفض أسفل"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_RSUBX.toolboxitem.text
-msgid "Subscript Right"
-msgstr "منخفض يمين"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_STACK.toolboxitem.text
-msgid "Vertical Stack"
-msgstr "تراكم أفقي"
-
-# 100%
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_SBLANK.toolboxitem.text
-msgctxt "toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_SBLANK.toolboxitem.text"
-msgid "Small Gap"
-msgstr "تباعد صغير"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_ALIGNLX.toolboxitem.text
-msgid "Align Left"
-msgstr "محاذاة إلى اليسار"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_ALIGNCX.toolboxitem.text
-msgid "Align Center"
-msgstr "محاذاة إلى الوسط"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_ALIGNRX.toolboxitem.text
-msgid "Align Right"
-msgstr "محاذاة إلى اليمين"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_MATRIX.toolboxitem.text
-msgid "Matrix Stack"
-msgstr "Matrix Stack"
-
-# 100%
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_BLANK.toolboxitem.text
-msgctxt "toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_BLANK.toolboxitem.text"
-msgid "Gap"
+#: source/smres.src#RID_DISTANCEDIALOG.1.MetricField.CustomUnitText
+#, fuzzy
+msgid  "%"
+msgstr "%"
+
+#: source/smres.src#RID_DISTANCEDIALOG.2.MetricField.CustomUnitText
+#, fuzzy
+msgid  "%"
+msgstr "%"
+
+#: source/smres.src#RID_DISTANCEDIALOG.1.CheckBox.Text
+#, fuzzy
+msgid  "Scale all brackets"
+msgstr "تدريج كل الأقواس"
+
+#: source/smres.src#RID_DISTANCEDIALOG.3.MetricField.CustomUnitText
+#, fuzzy
+msgid  "%"
+msgstr "%"
+
+#: source/smres.src#RID_DISTANCEDIALOG.1.PushButton.Text
+#, fuzzy
+msgid  "~Default"
+msgstr "الا~فتراضي"
+
+#: source/smres.src#RID_DISTANCEDIALOG.1.MenuButton.Text
+#, fuzzy
+msgid  "~Category"
+msgstr "ال~فئة"
+
+#: source/smres.src#RID_DISTANCEDIALOG.1.FixedLine.Text
+#, fuzzy
+msgid  "Category"
+msgstr "فئة"
+
+#: source/smres.src#RID_DISTANCEDIALOG.1.1.String.Text
+#, fuzzy
+msgid  "Spacing"
 msgstr "تباعد"
 
-# 100%
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_INFINITY.toolboxitem.text
-msgctxt "toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_INFINITY.toolboxitem.text"
-msgid "infinite"
+#: source/smres.src#RID_DISTANCEDIALOG.1.2.String.Text
+#, fuzzy
+msgid  "~Spacing"
+msgstr "الت~باعد"
+
+#: source/smres.src#RID_DISTANCEDIALOG.1.3.String.Text
+#, fuzzy
+msgid  "~Line spacing"
+msgstr "تباع~د الأسطر"
+
+#: source/smres.src#RID_DISTANCEDIALOG.1.4.String.Text
+#, fuzzy
+msgid  "~Root spacing"
+msgstr "تبا~عد الجذور"
+
+#: source/smres.src#RID_DISTANCEDIALOG.2.1.String.Text
+#, fuzzy
+msgid  "Indexes"
+msgstr "الفهارس"
+
+#: source/smres.src#RID_DISTANCEDIALOG.2.2.String.Text
+#, fuzzy
+msgid  "~Superscript"
+msgstr "~مرتفع"
+
+#: source/smres.src#RID_DISTANCEDIALOG.2.3.String.Text
+#, fuzzy
+msgid  "S~ubscript"
+msgstr "م~نخفض"
+
+#: source/smres.src#RID_DISTANCEDIALOG.3.1.String.Text
+#, fuzzy
+msgid  "Fractions"
+msgstr "الكسور"
+
+#: source/smres.src#RID_DISTANCEDIALOG.3.2.String.Text
+#, fuzzy
+msgid  "~Numerator"
+msgstr "الب~سط"
+
+#: source/smres.src#RID_DISTANCEDIALOG.3.3.String.Text
+#, fuzzy
+msgid  "~Denominator"
+msgstr "الم~قام"
+
+#: source/smres.src#RID_DISTANCEDIALOG.4.1.String.Text
+#, fuzzy
+msgid  "Fraction bar"
+msgstr "شرطة الكسر"
+
+#: source/smres.src#RID_DISTANCEDIALOG.4.2.String.Text
+#, fuzzy
+msgid  "~Excess length"
+msgstr "~طول زائد"
+
+#: source/smres.src#RID_DISTANCEDIALOG.4.3.String.Text
+#, fuzzy
+msgid  "~Weight"
+msgstr "السُ~مك"
+
+#: source/smres.src#RID_DISTANCEDIALOG.5.1.String.Text
+#, fuzzy
+msgid  "Limits"
+msgstr "القيود"
+
+#: source/smres.src#RID_DISTANCEDIALOG.5.2.String.Text
+#, fuzzy
+msgid  "~Upper limit"
+msgstr "الحد الأ~قصى"
+
+#: source/smres.src#RID_DISTANCEDIALOG.5.3.String.Text
+#, fuzzy
+msgid  "~Lower limit"
+msgstr "الحد الأ~دنى"
+
+#: source/smres.src#RID_DISTANCEDIALOG.6.1.String.Text
+#, fuzzy
+msgid  "Brackets"
+msgstr "أقواس"
+
+#: source/smres.src#RID_DISTANCEDIALOG.6.2.String.Text
+#, fuzzy
+msgid  "~Excess size (left/right)"
+msgstr "~حجم زائد (يمين/يسار)"
+
+#: source/smres.src#RID_DISTANCEDIALOG.6.3.String.Text
+#, fuzzy
+msgid  "~Spacing"
+msgstr "تبا~عد"
+
+#: source/smres.src#RID_DISTANCEDIALOG.6.5.String.Text
+#, fuzzy
+msgid  "~Excess size"
+msgstr "ت~جاوز الحجم"
+
+#: source/smres.src#RID_DISTANCEDIALOG.7.1.String.Text
+#, fuzzy
+msgid  "Matrix"
+msgstr "مصفوفة"
+
+#: source/smres.src#RID_DISTANCEDIALOG.7.2.String.Text
+#, fuzzy
+msgid  "~Line spacing"
+msgstr "تباع~د الأسطر"
+
+#: source/smres.src#RID_DISTANCEDIALOG.7.3.String.Text
+#, fuzzy
+msgid  "~Column spacing"
+msgstr "ت~باعد الأعمدة"
+
+#: source/smres.src#RID_DISTANCEDIALOG.8.1.String.Text
+#, fuzzy
+msgid  "Symbols"
+msgstr "رموز"
+
+#: source/smres.src#RID_DISTANCEDIALOG.8.2.String.Text
+#, fuzzy
+msgid  "~Primary height"
+msgstr "الا~رتفاع الأساسي"
+
+#: source/smres.src#RID_DISTANCEDIALOG.8.3.String.Text
+#, fuzzy
+msgid  "~Minimum spacing"
+msgstr "أ~قل تباعد"
+
+#: source/smres.src#RID_DISTANCEDIALOG.9.1.String.Text
+#, fuzzy
+msgid  "Operators"
+msgstr "مُعاملات"
+
+#: source/smres.src#RID_DISTANCEDIALOG.9.2.String.Text
+#, fuzzy
+msgid  "~Excess size"
+msgstr "ت~جاوز الحجم"
+
+#: source/smres.src#RID_DISTANCEDIALOG.9.3.String.Text
+#, fuzzy
+msgid  "~Spacing"
+msgstr "الت~باعد"
+
+#: source/smres.src#RID_DISTANCEDIALOG.10.1.String.Text
+#, fuzzy
+msgid  "Borders"
+msgstr "الحدود"
+
+#: source/smres.src#RID_DISTANCEDIALOG.10.2.String.Text
+#, fuzzy
+msgid  "~Left"
+msgstr "الي~سار"
+
+#: source/smres.src#RID_DISTANCEDIALOG.10.3.String.Text
+#, fuzzy
+msgid  "~Right"
+msgstr "الي~مين"
+
+#: source/smres.src#RID_DISTANCEDIALOG.10.4.String.Text
+#, fuzzy
+msgid  "~Top"
+msgstr "أ~على"
+
+#: source/smres.src#RID_DISTANCEDIALOG.10.5.String.Text
+#, fuzzy
+msgid  "~Bottom"
+msgstr "أ~سفل"
+
+#: source/smres.src#RID_ALIGNDIALOG.ModalDialog.Text
+#, fuzzy
+msgid  "Alignment"
+msgstr "محاذاة"
+
+#: source/smres.src#RID_ALIGNDIALOG.1.RadioButton.Text
+#, fuzzy
+msgid  "~Left"
+msgstr "الي~سار"
+
+#: source/smres.src#RID_ALIGNDIALOG.2.RadioButton.Text
+#, fuzzy
+msgid  "~Centered"
+msgstr "~توسيط"
+
+#: source/smres.src#RID_ALIGNDIALOG.3.RadioButton.Text
+#, fuzzy
+msgid  "~Right"
+msgstr "الي~مين"
+
+#: source/smres.src#RID_ALIGNDIALOG.1.FixedLine.Text
+#, fuzzy
+msgid  "Horizontal"
+msgstr "أفقي"
+
+#: source/smres.src#RID_ALIGNDIALOG.1.PushButton.Text
+#, fuzzy
+msgid  "~Default"
+msgstr "ا~فتراضي"
+
+#: source/smres.src#RID_PRINTOPTIONPAGE.TabPage.Text
+#, fuzzy
+msgid  "Formula Options:Settings"
+msgstr "خيارات الصيغة:إعدادات"
+
+#: source/smres.src#RID_PRINTOPTIONPAGE.FL_PRINTOPTIONS.FixedLine.Text
+#, fuzzy
+msgid  "Print options"
+msgstr "خيارات الطباعة"
+
+#: source/smres.src#RID_PRINTOPTIONPAGE.CB_TITLEROW.CheckBox.Text
+#, fuzzy
+msgid  "~Title row"
+msgstr "~سطر العنوان"
+
+#: source/smres.src#RID_PRINTOPTIONPAGE.CB_EQUATION_TEXT.CheckBox.Text
+#, fuzzy
+msgid  "~Formula text"
+msgstr "ن~ص الصيغة"
+
+#: source/smres.src#RID_PRINTOPTIONPAGE.CB_FRAME.CheckBox.Text
+#, fuzzy
+msgid  "B~order"
+msgstr "~حد"
+
+#: source/smres.src#RID_PRINTOPTIONPAGE.FL_PRINT_FORMAT.FixedLine.Text
+#, fuzzy
+msgid  "Print format"
+msgstr "تنسيق الطباعة"
+
+#: source/smres.src#RID_PRINTOPTIONPAGE.RB_ORIGINAL_SIZE.RadioButton.Text
+#, fuzzy
+msgid  "O~riginal size"
+msgstr "ال~حجم الأصلي"
+
+#: source/smres.src#RID_PRINTOPTIONPAGE.RB_FIT_TO_PAGE.RadioButton.Text
+#, fuzzy
+msgid  "Fit to ~page"
+msgstr "احتواء ~ضمن الصفحة"
+
+#: source/smres.src#RID_PRINTOPTIONPAGE.RB_ZOOM.RadioButton.Text
+#, fuzzy
+msgid  "~Scaling"
+msgstr "تحجي~م"
+
+#: source/smres.src#RID_PRINTOPTIONPAGE.FL_MISC_OPTIONS.FixedLine.Text
+msgid  "Miscellaneous options"
+msgstr ""
+
+#: source/smres.src#RID_PRINTOPTIONPAGE.CB_IGNORE_SPACING.CheckBox.Text
+msgid  "Ig~nore ~~ and ` at the end of the line"
+msgstr ""
+
+#: source/smres.src#RID_PRINTOPTIONPAGE.CB_SAVE_ONLY_USED_SYMBOLS.CheckBox.Text
+msgid  "Embed only used symbols (smaller file size)"
+msgstr ""
+
+#: source/smres.src#RID_SYMBOLDIALOG.ModalDialog.Text
+#, fuzzy
+msgid  "Symbols"
+msgstr "الرموز"
+
+#: source/smres.src#RID_SYMBOLDIALOG.1.FixedText.Text
+#, fuzzy
+msgid  "~Symbol set"
+msgstr "~مجموعة رموز"
+
+#: source/smres.src#RID_SYMBOLDIALOG.2.FixedText.Text
+#, fuzzy
+msgid  "Unknown"
+msgstr "غير معروف"
+
+#: source/smres.src#RID_SYMBOLDIALOG.2.PushButton.Text
+#, fuzzy
+msgid  "~Insert"
+msgstr "إ~دراج"
+
+#: source/smres.src#RID_SYMBOLDIALOG.3.PushButton.Text
+#, fuzzy
+msgid  "~Close"
+msgstr "إ~غلاق"
+
+#: source/smres.src#RID_SYMBOLDIALOG.1.PushButton.Text
+#, fuzzy
+msgid  "~Edit..."
+msgstr "ت~حرير..."
+
+#: source/smres.src#RID_SYMDEFINEDIALOG.ModalDialog.Text
+#, fuzzy
+msgid  "Edit Symbols"
+msgstr "تحرير الرموز"
+
+#: source/smres.src#RID_SYMDEFINEDIALOG.1.FixedText.Text
+#, fuzzy
+msgid  "~Old symbol"
+msgstr "~رمز قديم"
+
+#: source/smres.src#RID_SYMDEFINEDIALOG.2.FixedText.Text
+#, fuzzy
+msgid  "O~ld symbol set"
+msgstr "مجموعة رمو~ز قديمة"
+
+#: source/smres.src#RID_SYMDEFINEDIALOG.9.FixedText.Text
+#, fuzzy
+msgid  "~Symbol"
+msgstr "~رمز"
+
+#: source/smres.src#RID_SYMDEFINEDIALOG.10.FixedText.Text
+#, fuzzy
+msgid  "Symbol s~et"
+msgstr "~مجموعة رموز"
+
+#: source/smres.src#RID_SYMDEFINEDIALOG.3.FixedText.Text
+#, fuzzy
+msgid  "~Font"
+msgstr "ال~خط"
+
+#: source/smres.src#RID_SYMDEFINEDIALOG.FT_FONTS_SUBSET.FixedText.Text
+#, fuzzy
+msgid  "~Subset"
+msgstr "م~جموعة جزئية"
+
+#: source/smres.src#RID_SYMDEFINEDIALOG.4.FixedText.Text
+#, fuzzy
+msgid  "~Typeface"
+msgstr "~نمط الخط"
+
+#: source/smres.src#RID_SYMDEFINEDIALOG.1.PushButton.Text
+#, fuzzy
+msgid  "~Add"
+msgstr "إضا~فة"
+
+#: source/smres.src#RID_SYMDEFINEDIALOG.2.PushButton.Text
+#, fuzzy
+msgid  "~Modify"
+msgstr "ت~عديل"
+
+#: source/smres.src#RID_SYMDEFINEDIALOG.3.PushButton.Text
+#, fuzzy
+msgid  "~Delete"
+msgstr "ح~ذف"
+
+#: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
+msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
+msgstr ""
+
+#: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
+msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
+msgstr ""
+
+#: source/smres.src#RID_FONTREGULAR.String.Text
+#, fuzzy
+msgid  "Standard"
+msgstr "قياسي"
+
+#: source/smres.src#RID_FONTITALIC.String.Text
+#, fuzzy
+msgid  "Italic"
+msgstr "مائل"
+
+#: source/smres.src#RID_FONTBOLD.String.Text
+#, fuzzy
+msgid  "Bold"
+msgstr "عريض"
+
+#: source/smres.src#RID_VIEWMENU.SID_VIEW050.MenuItem.Text
+#, fuzzy
+msgid  "~View 50%"
+msgstr "~عرض 50%"
+
+#: source/smres.src#RID_VIEWMENU.SID_VIEW100.MenuItem.Text
+#, fuzzy
+msgid  "View ~100%"
+msgstr "عرض ~100%"
+
+#: source/smres.src#RID_VIEWMENU.SID_VIEW200.MenuItem.Text
+#, fuzzy
+msgid  "View ~200%"
+msgstr "عرض ~200%"
+
+#: source/smres.src#RID_VIEWMENU.SID_ZOOMIN.MenuItem.Text
+#, fuzzy
+msgid  "~Zoom In"
+msgstr "ت~كبير"
+
+#: source/smres.src#RID_VIEWMENU.SID_ZOOMOUT.MenuItem.Text
+#, fuzzy
+msgid  "Zoom ~Out"
+msgstr "ت~صغير"
+
+#: source/smres.src#RID_VIEWMENU.SID_ADJUST.MenuItem.Text
+#, fuzzy
+msgid  "~Display All"
+msgstr "إ~ظهار الكل"
+
+#: source/smres.src#RID_VIEWMENU.SID_DRAW.MenuItem.Text
+#, fuzzy
+msgid  "U~pdate"
+msgstr "ت~حديث"
+
+#: source/smres.src#RID_DISTANCEMENU.WORKARROUND_1.MenuItem.Text
+#, fuzzy
+msgid  "Spacing"
+msgstr "التباعد"
+
+#: source/smres.src#RID_DISTANCEMENU.2.MenuItem.Text
+#, fuzzy
+msgid  "Indexes"
+msgstr "الفهارس"
+
+#: source/smres.src#RID_DISTANCEMENU.WORKARROUND_3.MenuItem.Text
+#, fuzzy
+msgid  "Fractions"
+msgstr "الكسور"
+
+#: source/smres.src#RID_DISTANCEMENU.4.MenuItem.Text
+#, fuzzy
+msgid  "Fraction Bars"
+msgstr "أشرطة الكسر"
+
+#: source/smres.src#RID_DISTANCEMENU.5.MenuItem.Text
+#, fuzzy
+msgid  "Limits"
+msgstr "القيود"
+
+#: source/smres.src#RID_DISTANCEMENU.6.MenuItem.Text
+#, fuzzy
+msgid  "Brackets"
+msgstr "الأقواس"
+
+#: source/smres.src#RID_DISTANCEMENU.7.MenuItem.Text
+#, fuzzy
+msgid  "Matrices"
+msgstr "مصفوفات"
+
+#: source/smres.src#RID_DISTANCEMENU.8.MenuItem.Text
+#, fuzzy
+msgid  "Symbols"
+msgstr "الرموز"
+
+#: source/smres.src#RID_DISTANCEMENU.9.MenuItem.Text
+#, fuzzy
+msgid  "Operators"
+msgstr "عوامل التشغيل"
+
+#: source/smres.src#RID_DISTANCEMENU.WORKARROUND_10.MenuItem.Text
+#, fuzzy
+msgid  "Borders"
+msgstr "الحدود"
+
+#: source/smres.src#RID_FONTMENU.1.MenuItem.Text
+#, fuzzy
+msgid  "Variables"
+msgstr "متغيرات"
+
+#: source/smres.src#RID_FONTMENU.2.MenuItem.Text
+#, fuzzy
+msgid  "Functions"
+msgstr "الدالات"
+
+#: source/smres.src#RID_FONTMENU.3.MenuItem.Text
+#, fuzzy
+msgid  "Numbers"
+msgstr "الأرقام"
+
+#: source/smres.src#RID_FONTMENU.4.MenuItem.Text
+#, fuzzy
+msgid  "Text"
+msgstr "النص"
+
+#: source/smres.src#RID_FONTMENU.5.MenuItem.Text
+#, fuzzy
+msgid  "Serif"
+msgstr "Serif"
+
+#: source/smres.src#RID_FONTMENU.6.MenuItem.Text
+#, fuzzy
+msgid  "Sans"
+msgstr "Sans"
+
+#: source/smres.src#RID_FONTMENU.7.MenuItem.Text
+#, fuzzy
+msgid  "Fixed"
+msgstr "ثابت"
+
+#: source/smres.src#RID_DOCUMENTSTR.String.Text
+#, fuzzy
+msgid  "Formula"
+msgstr "الصيغة"
+
+#: source/smres.src#STR_STATSTR_READING.String.Text
+#, fuzzy
+msgid  "Loading document..."
+msgstr "جارٍ تحميل المستند..."
+
+#: source/smres.src#STR_STATSTR_WRITING.String.Text
+#, fuzzy
+msgid  "Saving document..."
+msgstr "جارٍ حفظ المستند..."
+
+#: source/smres.src#STR_MATH_DOCUMENT_FULLTYPE_CURRENT.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME %PRODUCTVERSION Formula"
+msgstr "صيغة %PRODUCTNAME %PRODUCTVERSION"
+
+#: source/smres.src#RID_SYMBOLFILESSTR.String.Text
+#, fuzzy
+msgid  "Symbol files (*.sms)"
+msgstr "(*.sms) ملفات الرموز"
+
+#: source/smres.src#RID_ALLFILESSTR.String.Text
+#, fuzzy
+msgid  "All Files (*.*)"
+msgstr "كل الملفات (*.*)"
+
+#: source/smres.src#RID_ERR_IDENT.String.Text
+#, fuzzy
+msgid  "ERROR : "
+msgstr "خطأ : "
+
+#: source/smres.src#RID_ERR_UNKOWN.String.Text
+#, fuzzy
+msgid  "Unknown error occurred"
+msgstr "حدث خطأ مجهول"
+
+#: source/smres.src#RID_ERR_UNEXPECTEDCHARACTER.String.Text
+#, fuzzy
+msgid  "Unexpected character"
+msgstr "حرف غير متوقع"
+
+#: source/smres.src#RID_ERR_OVERFLOW.String.Text
+#, fuzzy
+msgid  "Formula entry too complex"
+msgstr "مُدخل الصيغة معقد للغاية"
+
+#: source/smres.src#RID_ERR_LGROUPEXPECTED.String.Text
+#, fuzzy
+msgid  "'{' expected"
+msgstr "متوقع '{'"
+
+#: source/smres.src#RID_ERR_RGROUPEXPECTED.String.Text
+#, fuzzy
+msgid  "'}' expected"
+msgstr "متوقع '}'"
+
+#: source/smres.src#RID_ERR_LBRACEEXPECTED.String.Text
+#, fuzzy
+msgid  "'(' expected"
+msgstr "متوقع '('"
+
+#: source/smres.src#RID_ERR_RBRACEEXPECTED.String.Text
+#, fuzzy
+msgid  "')' expected"
+msgstr "متوقع ')'"
+
+#: source/smres.src#RID_ERR_FUNCEXPECTED.String.Text
+#, fuzzy
+msgid  "Function expected"
+msgstr "متوقع دالة"
+
+#: source/smres.src#RID_ERR_UNOPEREXPECTED.String.Text
+#, fuzzy
+msgid  "Unary operator expected"
+msgstr "متوقع معامل أحادي"
+
+#: source/smres.src#RID_ERR_BINOPEREXPECTED.String.Text
+#, fuzzy
+msgid  "Binary operator expected"
+msgstr "Binary operator expected"
+
+#: source/smres.src#RID_ERR_SYMBOLEXPECTED.String.Text
+#, fuzzy
+msgid  "Symbol expected"
+msgstr "Symbol expected"
+
+#: source/smres.src#RID_ERR_IDENTEXPECTED.String.Text
+#, fuzzy
+msgid  "Identifier expected"
+msgstr "Identifier expected"
+
+#: source/smres.src#RID_ERR_POUNDEXPECTED.String.Text
+#, fuzzy
+msgid  "'#' expected"
+msgstr "'#' expected"
+
+#: source/smres.src#RID_ERR_COLOREXPECTED.String.Text
+#, fuzzy
+msgid  "Color required"
+msgstr "Color required"
+
+#: source/smres.src#RID_ERR_LPARENTEXPECTED.String.Text
+#, fuzzy
+msgid  "Left limit expected"
+msgstr "Left limit expected"
+
+#: source/smres.src#RID_ERR_RPARENTEXPECTED.String.Text
+#, fuzzy
+msgid  "Right limit expected"
+msgstr "Right limit expected"
+
+#: source/smres.src#RID_ERR_RIGHTEXPECTED.String.Text
+#, fuzzy
+msgid  "'RIGHT' expected"
+msgstr "'RIGHT' expected"
+
+#: source/smres.src#RID_MATH_TOOLBOX.String.Text
+#, fuzzy
+msgid  "Main Toolbar"
+msgstr "شريط الأدوات الرئيسي"
+
+#: source/smres.src#RID_PRINTUIOPTIONS.item1.ItemList.item
+#, fuzzy
+msgid  "%PRODUCTNAME %s"
+msgstr "%PRODUCTNAME %s"
+
+#: source/smres.src#RID_PRINTUIOPTIONS.item2.ItemList.item
+#, fuzzy
+msgid  "Contents"
+msgstr "المحتويات"
+
+#: source/smres.src#RID_PRINTUIOPTIONS.item3.ItemList.item
+#, fuzzy
+msgid  "~Title"
+msgstr "الع~نوان"
+
+#: source/smres.src#RID_PRINTUIOPTIONS.item4.ItemList.item
+#, fuzzy
+msgid  "~Formula text"
+msgstr "ن~ص الصيغة"
+
+#: source/smres.src#RID_PRINTUIOPTIONS.item5.ItemList.item
+#, fuzzy
+msgid  "B~orders"
+msgstr "ال~حدود"
+
+#: source/smres.src#RID_PRINTUIOPTIONS.item6.ItemList.item
+#, fuzzy
+msgid  "Size"
+msgstr "الحجم"
+
+#: source/smres.src#RID_PRINTUIOPTIONS.item7.ItemList.item
+#, fuzzy
+msgid  "O~riginal size"
+msgstr "ال~حجم الأصلي"
+
+#: source/smres.src#RID_PRINTUIOPTIONS.item8.ItemList.item
+#, fuzzy
+msgid  "Fit to ~page"
+msgstr "احتواء ~ضمن الصفحة"
+
+#: source/smres.src#RID_PRINTUIOPTIONS.item9.ItemList.item
+#, fuzzy
+msgid  "~Scaling"
+msgstr "تحجي~م"
+
+#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
+#, fuzzy
+msgid  "Commands"
+msgstr "تعليقات"
+
+#: source/commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MenuItem.Text
+#, fuzzy
+msgid  "~Unary/Binary Operators"
+msgstr "~معاملات أحادية/ثنائية"
+
+#: source/commands.src#RID_COMMANDMENU.RID_RELATIONS_MENU.MenuItem.Text
+#, fuzzy
+msgid  "~Relations"
+msgstr "~علاقات"
+
+#: source/commands.src#RID_COMMANDMENU.RID_SETOPERATIONS_MENU.MenuItem.Text
+#, fuzzy
+msgid  "~Set Operations"
+msgstr "~تعيين العوامل"
+
+#: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.MenuItem.Text
+#, fuzzy
+msgid  "~Functions"
+msgstr "ال~دالات"
+
+#: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.RID_FUNCTIONSOTHER1_MENU.MenuItem.Text
+#, fuzzy
+msgid  "More"
+msgstr "المزيد"
+
+#: source/commands.src#RID_COMMANDMENU.RID_OPERATORS_MENU.MenuItem.Text
+#, fuzzy
+msgid  "O~perators"
+msgstr "م~عاملات"
+
+#: source/commands.src#RID_COMMANDMENU.RID_ATTRIBUTES_MENU.MenuItem.Text
+#, fuzzy
+msgid  "~Attributes"
+msgstr "~صفات"
+
+#: source/commands.src#RID_COMMANDMENU.RID_BRACKETS_MENU.MenuItem.Text
+#, fuzzy
+msgid  "~Brackets"
+msgstr "أ~قواس"
+
+#: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.MenuItem.Text
+#, fuzzy
+msgid  "For~mats"
+msgstr "التن~سيقات"
+
+#: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NEWLINE.MenuItem.Text
+#, fuzzy
+msgid  "New Line"
+msgstr "سطر جديد"
+
+#: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_SBLANK.MenuItem.Text
+#, fuzzy
+msgid  "Small Gap"
+msgstr "تباعد صغير"
+
+#: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_BLANK.MenuItem.Text
+#, fuzzy
+msgid  "Gap"
+msgstr "تباعد"
+
+#: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NOSPACE.MenuItem.Text
+#, fuzzy
+msgid  "nospace {...}"
+msgstr "بلا مساحة {...}"
+
+#: source/commands.src#RID_COMMANDMENU.RID_MISC_MENU.MenuItem.Text
+#, fuzzy
+msgid  "~Others"
+msgstr "~غيرها"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.FloatingWindow.Text
+#, fuzzy
+msgid  "Elements"
+msgstr "العناصر"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_UNBINOPS_CAT.ToolBoxItem.Text
+#, fuzzy
+msgid  "Unary/Binary Operators"
+msgstr "مُعاملات أحادية/ثنائية"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_RELATIONS_CAT.ToolBoxItem.Text
+#, fuzzy
+msgid  "Relations"
+msgstr "العلاقات"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_SETOPERATIONS_CAT.ToolBoxItem.Text
+#, fuzzy
+msgid  "Set Operations"
+msgstr "Set Operations"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_FUNCTIONS_CAT.ToolBoxItem.Text
+#, fuzzy
+msgid  "Functions"
+msgstr "الدالات"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_OPERATORS_CAT.ToolBoxItem.Text
+#, fuzzy
+msgid  "Operators"
+msgstr "عوامل التشغيل"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_ATTRIBUTES_CAT.ToolBoxItem.Text
+#, fuzzy
+msgid  "Attributes"
+msgstr "السمات"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_MISC_CAT.ToolBoxItem.Text
+#, fuzzy
+msgid  "Others"
+msgstr "غيرها"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_BRACKETS_CAT.ToolBoxItem.Text
+#, fuzzy
+msgid  "Brackets"
+msgstr "أقواس"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_FORMAT_CAT.ToolBoxItem.Text
+#, fuzzy
+msgid  "Formats"
+msgstr "تنسيقات"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_PLUSX.ToolBoxItem.Text
+#, fuzzy
+msgid  "+ Sign"
+msgstr "علامة +"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_MINUSX.ToolBoxItem.Text
+#, fuzzy
+msgid  "- Sign"
+msgstr "علامة +"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_PLUSMINUSX.ToolBoxItem.Text
+#, fuzzy
+msgid  "+- Sign"
+msgstr "علامة +-"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_MINUSPLUSX.ToolBoxItem.Text
+#, fuzzy
+msgid  "-+ Sign"
+msgstr "علامة -+"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_NEGX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Boolean NOT"
+msgstr "غير منطقي"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XPLUSY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Addition +"
+msgstr "جمع +"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XCDOTY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Multiplication (Dot )"
+msgstr "ضرب (نقطة)"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XTIMESY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Multiplication (x)"
+msgstr "ضرب (×)"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XSYMTIMESY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Multiplication (*)"
+msgstr "ضرب (*)"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XANDY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Boolean AND"
+msgstr "و منطقية"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XMINUSY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Subtraction -"
+msgstr "طرح ـ"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XOVERY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Division (Fraction)"
+msgstr "قسمة (كسر)"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XDIVY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Division (÷)"
+msgstr "قسمة (÷)"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XSYMDIVIDEY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Division (Slash)"
+msgstr "قسمة (/)"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XORY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Boolean OR"
+msgstr "أو منطقية"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XCIRCY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Concatenate"
+msgstr "سَلسَلة"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XEQY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Is Equal"
+msgstr "يساوي"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XNEQY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Is Not Equal"
+msgstr "لا يساوي"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XAPPROXY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Is Approximately Equal"
+msgstr "يساوي تقريبًا"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XDIVIDESY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Divides"
+msgstr "يقبل القسمة"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XNDIVIDESY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Does Not Divide"
+msgstr "لا يقبل القسمة"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XLTY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Is Less Than"
+msgstr "أقل من"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XGTY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Is Greater Than"
+msgstr "أكبر من"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XSIMEQY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Is Similar Or Equal"
+msgstr "مشابه أو مساوٍ"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XPARALLELY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Is Parallel To"
+msgstr "متوازٍ مع"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XORTHOY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Is Orthogonal To"
+msgstr "متعامد على"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XLESLANTY.ToolBoxItem.Text
+msgid  "Is Less Than Or Equal To"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XGESLANTY.ToolBoxItem.Text
+msgid  "Is Greater Than Or Equal To"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XSIMY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Is Similar To"
+msgstr "يشابه"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XEQUIVY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Is Congruent To"
+msgstr "يرادف"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XLEY.ToolBoxItem.Text
+msgid  "Is Less Than Or Equal To"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XGEY.ToolBoxItem.Text
+msgid  "Is Greater Than Or Equal To"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XPROPY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Is Proportional To"
+msgstr "متناسب مع"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XTOWARDY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Toward"
+msgstr "باتجاه"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_DLARROW.ToolBoxItem.Text
+#, fuzzy
+msgid  "Double Arrow Left"
+msgstr "سهمان إلى اليسار"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_DLRARROW.ToolBoxItem.Text
+#, fuzzy
+msgid  "Double Arrow Left And Right"
+msgstr "سهمان إلى اليسار واليمين"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_DRARROW.ToolBoxItem.Text
+#, fuzzy
+msgid  "Double Arrow Right"
+msgstr "سهمان إلى اليمين"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XINY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Is In"
+msgstr "ضمن"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XNOTINY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Is Not In"
+msgstr "ليس ضمن"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XOWNSY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Owns"
+msgstr "يمتلك"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_EMPTYSET.ToolBoxItem.Text
+#, fuzzy
+msgid  "Empty Set"
+msgstr "مجموعة فارغة"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XINTERSECTIONY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Intersection"
+msgstr "التقاطع"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XUNIONY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Union"
+msgstr "اتحاد"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XSETMINUSY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Difference"
+msgstr "اختلاف"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XSLASHY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Quotient Set"
+msgstr "Quotient Set"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_ALEPH.ToolBoxItem.Text
+#, fuzzy
+msgid  "Aleph"
+msgstr "ألف"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XSUBSETY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Subset"
+msgstr "مجموعة جزئية"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XSUBSETEQY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Subset Or Equal To"
+msgstr "مجموعة جزئية أو يساوي"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XSUPSETY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Superset"
+msgstr "مجموعة فائقة"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XSUPSETEQY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Superset Or Equal To"
+msgstr "مجموعة فائقة أو يساوي"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XNSUBSETY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Not Subset"
+msgstr "ليس مجموعة جزئية"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XNSUBSETEQY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Not Subset Or Equal"
+msgstr "ليس مجموعة جزئية أو يساوي"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XNSUPSETY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Not Superset"
+msgstr "ليس مجموعة فائقة"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XNSUPSETEQY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Not Superset Or Equal"
+msgstr "ليس مجموعة فائقة أو يساوي"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_SETN.ToolBoxItem.Text
+#, fuzzy
+msgid  "Natural Numbers Set"
+msgstr "مجموعة أرقام طبيعية"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_SETZ.ToolBoxItem.Text
+#, fuzzy
+msgid  "Integers Set"
+msgstr "مجموعة الأعداد الصحيحة"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_SETQ.ToolBoxItem.Text
+#, fuzzy
+msgid  "Set of Rational Numbers"
+msgstr "Set of Rational Numbers"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_SETR.ToolBoxItem.Text
+#, fuzzy
+msgid  "Real Numbers Set"
+msgstr "مجموعة الأعداد الحقيقية"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_SETC.ToolBoxItem.Text
+#, fuzzy
+msgid  "Complex Numbers Set"
+msgstr "مجموعة الأعداد المركبة"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_EX.ToolBoxItem.Text
+msgid  "Exponential Function"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_LNX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Natural Logarithm"
+msgstr "لوغاريتم طبيعي"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_EXPX.ToolBoxItem.Text
+msgid  "Exponential Function"
+msgstr ""
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_LOGX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Logarithm"
+msgstr "لوغاريتم"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_RSUPX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Power"
+msgstr "الأس"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_SINX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Sine"
+msgstr "جيب"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_COSX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Cosine"
+msgstr "جيب تمام"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_TANX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Tangent"
+msgstr "ظل"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_COTX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Cotangent"
+msgstr "ظل التمام"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_SQRTX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Square Root"
+msgstr "جذر تربيعي"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARCSINX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Arcsine"
+msgstr "مقابل الجيب"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARCCOSX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Arccosine"
+msgstr "مقابل جيب التمام"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARCTANX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Arctangent"
+msgstr "مقابل الظل"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARCCOTX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Arccotangent"
+msgstr "قوس ظل التمام"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_NROOTXY.ToolBoxItem.Text
+#, fuzzy
+msgid  "N-th Root"
+msgstr "N-th Root"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_SINHX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Hyperbolic Sine"
+msgstr "Hyperbolic Sine"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_COSHX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Hyperbolic Cosine"
+msgstr "Hyperbolic Cosine"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_TANHX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Hyperbolic Tangent"
+msgstr "Hyperbolic Tangent"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_COTHX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Hyperbolic Cotangent"
+msgstr "Hyperbolic Cotangent"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ABSX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Absolute Value"
+msgstr "قيمة مطلقة"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARSINHX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Area Hyperbolic Sine"
+msgstr "Area Hyperbolic Sine"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARCOSHX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Area Hyperbolic Cosine"
+msgstr "Area Hyperbolic Cosine"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARTANHX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Area Hyperbolic Tangent"
+msgstr "Area Hyperbolic Tangent"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARCOTHX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Area Hyperbolic Cotangent"
+msgstr "Area Hyperbolic Cotangent"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_FACTX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Factorial"
+msgstr "Factorial"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_LIMX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Limes"
+msgstr "Limes"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_SUMX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Sum"
+msgstr "المجموع"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_PRODX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Product"
+msgstr "المنتج"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_COPRODX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Coproduct"
+msgstr "Coproduct"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_FROMXTOY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Upper And Lower Limit"
+msgstr "الحد الأقصى والأدنى"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_INTX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Integral"
+msgstr "تكامل"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_IINTX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Double Integral"
+msgstr "تكامل مزدوج"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_IIINTX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Triple Integral"
+msgstr "تكامل ثلاثي"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_FROMX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Lower Limit"
+msgstr "الحد الأدنى"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_LINTX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Curve Integral"
+msgstr "Curve Integral"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_LLINTX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Double Curve Integral"
+msgstr "Double Curve Integral"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_LLLINTX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Triple Curve Integral"
+msgstr "Triple Curve Integral"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_TOX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Upper Limit"
+msgstr "الحد الأقصى"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_ACUTEX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Acute Accent"
+msgstr "Acute Accent"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_GRAVEX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Grave Accent"
+msgstr "Grave Accent"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_CHECKX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Reverse Circumflex"
+msgstr "Reverse Circumflex"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_BREVEX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Breve"
+msgstr "Breve"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_CIRCLEX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Circle"
+msgstr "دائرة"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_VECX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Vector Arrow"
+msgstr "Vector Arrow"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_TILDEX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Tilde"
+msgstr "Tilde"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_HATX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Circumflex"
+msgstr "Circumflex"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_BARX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Line Above"
+msgstr "Line Above"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_DOTX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Dot"
+msgstr "نقطة"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_WIDEVECX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Large Vector Arrow"
+msgstr "Large Vector Arrow"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_WIDETILDEX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Large Tilde"
+msgstr "Large Tilde"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_WIDEHATX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Large Circumflex"
+msgstr "Large Circumflex"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_DDOTX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Double Dot"
+msgstr "Double Dot"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_OVERLINEX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Line Over"
+msgstr "خط فوق"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_UNDERLINEX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Line Below"
+msgstr "خط تحت"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_OVERSTRIKEX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Line Through"
+msgstr "خط عبر"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_DDDOTX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Triple Dot"
+msgstr "Triple Dot"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_PHANTOMX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Transparent"
+msgstr "شفاف"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_BOLDX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Bold Font"
+msgstr "خط عريض"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_ITALX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Italic Font"
+msgstr "خط مائل"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_SIZEXY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Resize"
+msgstr "تغيير الحجم"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_FONTXY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Change Font"
+msgstr "تغيير الخط"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRPARENTX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Round Brackets"
+msgstr "أقواس مستديرة"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRBRACKETX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Square Brackets"
+msgstr "أقواس مربعة"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRDBRACKETX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Double Square Brackets"
+msgstr "أقواس مزدوجة مربعة"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRLINEX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Single Lines"
+msgstr "خطوط مفردة"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRDLINEX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Double Lines"
+msgstr "خطوط مزدوجة"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRBRACEX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Braces"
+msgstr "أقواس متموجة"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRANGLEX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Angle Brackets"
+msgstr "أقواس مدببة"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LMRANGLEXY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Operator Brackets"
+msgstr "أقواس مُعاملات"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRGROUPX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Group Brackets"
+msgstr "أقواس تجميع"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLRPARENTX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Round Brackets (Scalable)"
+msgstr "أقواس دائرية (قابلة للتحجيم)"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLRBRACKETX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Square Brackets (Scalable)"
+msgstr "أقواس مربعة (قابل للتحجيم)"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLRDBRACKETX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Double Square Brackets (Scalable)"
+msgstr "أقواس مربعة مزدوجة (قابل للتحجيم)"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLRLINEX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Single Lines (Scalable)"
+msgstr "خطوط مفردة (قابلة للتحجيم)"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLRDLINEX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Double Lines (Scalable)"
+msgstr "خطوط مزدوجة (قابلة للتحجيم)"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLRBRACEX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Braces (Scalable)"
+msgstr "أقواس متموجة (قابلة للتحجيم)"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLRANGLEX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Angle Brackets (Scalable)"
+msgstr "أقواس مدببة (قابلة للتحجيم)"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLMRANGLEXY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Operator Brackets (Scalable)"
+msgstr "أقواس مُعاملات (قابلة للتحجيم)"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_XOVERBRACEY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Braces Top (Scalable)"
+msgstr "أقواس متموجة بالأعلى (قابلة للتحجيم)"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_XUNDERBRACEY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Braces Bottom (Scalable)"
+msgstr "أقواس متموجة بالأسفل (قابلة للتحجيم)"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_LSUPX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Superscript Left"
+msgstr "مرتفع أيسر"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_CSUPX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Superscript Top"
+msgstr "مرتفع أعلى"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_RSUPX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Superscript Right"
+msgstr "مرتفع يمين"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_BINOMXY.ToolBoxItem.Text
+#, fuzzy
+msgid  "Vertical Stack (2 Elements)"
+msgstr "تراكم أفقي (عنصران)"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_NEWLINE.ToolBoxItem.Text
+#, fuzzy
+msgid  "New Line"
+msgstr "سطر جديد"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_LSUBX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Subscript Left"
+msgstr "منخفض يسار"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_CSUBX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Subscript Bottom"
+msgstr "منخفض أسفل"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_RSUBX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Subscript Right"
+msgstr "منخفض يمين"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_STACK.ToolBoxItem.Text
+#, fuzzy
+msgid  "Vertical Stack"
+msgstr "تراكم أفقي"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_SBLANK.ToolBoxItem.Text
+#, fuzzy
+msgid  "Small Gap"
+msgstr "تباعد صغير"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_ALIGNLX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Align Left"
+msgstr "محاذاة إلى اليسار"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_ALIGNCX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Align Center"
+msgstr "محاذاة إلى الوسط"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_ALIGNRX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Align Right"
+msgstr "محاذاة إلى اليمين"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_MATRIX.ToolBoxItem.Text
+#, fuzzy
+msgid  "Matrix Stack"
+msgstr "Matrix Stack"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_BLANK.ToolBoxItem.Text
+#, fuzzy
+msgid  "Gap"
+msgstr "تباعد"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_INFINITY.ToolBoxItem.Text
+#, fuzzy
+msgid  "infinite"
 msgstr "لانهائي"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_PARTIAL.toolboxitem.text
-msgid "Partial"
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_PARTIAL.ToolBoxItem.Text
+#, fuzzy
+msgid  "Partial"
 msgstr "جزئي"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_NABLA.toolboxitem.text
-msgid "Nabla"
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_NABLA.ToolBoxItem.Text
+#, fuzzy
+msgid  "Nabla"
 msgstr "Nabla"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_EXISTS.toolboxitem.text
-msgid "There Exists"
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_EXISTS.ToolBoxItem.Text
+#, fuzzy
+msgid  "There Exists"
 msgstr "موجود"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_FORALL.toolboxitem.text
-msgid "For All"
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_FORALL.ToolBoxItem.Text
+#, fuzzy
+msgid  "For All"
 msgstr "للكل"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_HBAR.toolboxitem.text
-msgid "h Bar"
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_HBAR.ToolBoxItem.Text
+#, fuzzy
+msgid  "h Bar"
 msgstr "h Bar"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_LAMBDABAR.toolboxitem.text
-msgid "Lambda Bar"
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_LAMBDABAR.ToolBoxItem.Text
+#, fuzzy
+msgid  "Lambda Bar"
 msgstr "Lambda Bar"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_RE.toolboxitem.text
-msgid "Real Part"
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_RE.ToolBoxItem.Text
+#, fuzzy
+msgid  "Real Part"
 msgstr "جزء حقيقي"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_IM.toolboxitem.text
-msgid "Imaginary Part"
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_IM.ToolBoxItem.Text
+#, fuzzy
+msgid  "Imaginary Part"
 msgstr "جزء خيالي"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_WP.toolboxitem.text
-msgid "Weierstrass p"
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_WP.ToolBoxItem.Text
+#, fuzzy
+msgid  "Weierstrass p"
 msgstr "Weierstrass p"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_LEFTARROW.toolboxitem.text
-msgid "Left Arrow"
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_LEFTARROW.ToolBoxItem.Text
+#, fuzzy
+msgid  "Left Arrow"
 msgstr "سهم لليسار"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_RIGHTARROW.toolboxitem.text
-msgid "Right Arrow"
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_RIGHTARROW.ToolBoxItem.Text
+#, fuzzy
+msgid  "Right Arrow"
 msgstr "سهم لليمين"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_UPARROW.toolboxitem.text
-msgid "Up Arrow"
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_UPARROW.ToolBoxItem.Text
+#, fuzzy
+msgid  "Up Arrow"
 msgstr "سهم لأعلى"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_DOWNARROW.toolboxitem.text
-msgid "Down Arrow"
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_DOWNARROW.ToolBoxItem.Text
+#, fuzzy
+msgid  "Down Arrow"
 msgstr "سهم لأسفل"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_DOTSLOW.toolboxitem.text
-msgid "Dots At Bottom"
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_DOTSLOW.ToolBoxItem.Text
+#, fuzzy
+msgid  "Dots At Bottom"
 msgstr "نقاط أسفل"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_DOTSAXIS.toolboxitem.text
-msgid "Dots In Middle"
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_DOTSAXIS.ToolBoxItem.Text
+#, fuzzy
+msgid  "Dots In Middle"
 msgstr "نقاط في وسط"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_DOTSVERT.toolboxitem.text
-msgid "Dots Vertically"
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_DOTSVERT.ToolBoxItem.Text
+#, fuzzy
+msgid  "Dots Vertically"
 msgstr "نقاط رأسية"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_DOTSUP.toolboxitem.text
-msgid "Dots To Top"
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_DOTSUP.ToolBoxItem.Text
+#, fuzzy
+msgid  "Dots To Top"
 msgstr "نقاط عند أعلى"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_DOTSDOWN.toolboxitem.text
-msgid "Dots to Bottom"
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_DOTSDOWN.ToolBoxItem.Text
+#, fuzzy
+msgid  "Dots to Bottom"
 msgstr "نقاط عند أسفل"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.floatingwindow.text
-msgid "Elements"
-msgstr "العناصر"
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOLSET_NAMES.item1.ItemList.item
+#, fuzzy
+msgid  "Greek"
+msgstr "اليونانية"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOLSET_NAMES.item2.ItemList.item
+#, fuzzy
+msgid  "Special"
+msgstr "خاص"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item1.ItemList.item
+#, fuzzy
+msgid  "alpha"
+msgstr "ألفا"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item2.ItemList.item
+#, fuzzy
+msgid  "ALPHA"
+msgstr "ألفا"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item3.ItemList.item
+#, fuzzy
+msgid  "beta"
+msgstr "بيتا"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item4.ItemList.item
+#, fuzzy
+msgid  "BETA"
+msgstr "بيتا"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item5.ItemList.item
+#, fuzzy
+msgid  "gamma"
+msgstr "جاما"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item6.ItemList.item
+#, fuzzy
+msgid  "GAMMA"
+msgstr "جاما"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item7.ItemList.item
+#, fuzzy
+msgid  "delta"
+msgstr "دلتا"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item8.ItemList.item
+#, fuzzy
+msgid  "DELTA"
+msgstr "DELTA"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item9.ItemList.item
+#, fuzzy
+msgid  "epsilon"
+msgstr "إبسلون"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item10.ItemList.item
+#, fuzzy
+msgid  "EPSILON"
+msgstr "إبسلون"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item11.ItemList.item
+#, fuzzy
+msgid  "zeta"
+msgstr "زيتا"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item12.ItemList.item
+#, fuzzy
+msgid  "ZETA"
+msgstr "زيتا"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item13.ItemList.item
+#, fuzzy
+msgid  "eta"
+msgstr "إيتا"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item14.ItemList.item
+#, fuzzy
+msgid  "ETA"
+msgstr "إيتا"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item15.ItemList.item
+#, fuzzy
+msgid  "theta"
+msgstr "ثيتا"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item16.ItemList.item
+#, fuzzy
+msgid  "THETA"
+msgstr "ثيتا"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item17.ItemList.item
+#, fuzzy
+msgid  "iota"
+msgstr "أوتا"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item18.ItemList.item
+#, fuzzy
+msgid  "IOTA"
+msgstr "أوتا"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item19.ItemList.item
+#, fuzzy
+msgid  "kappa"
+msgstr "كيبا"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item20.ItemList.item
+#, fuzzy
+msgid  "KAPPA"
+msgstr "كيبا"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item21.ItemList.item
+#, fuzzy
+msgid  "lambda"
+msgstr "لامدا"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item22.ItemList.item
+#, fuzzy
+msgid  "LAMBDA"
+msgstr "لامدا"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item23.ItemList.item
+#, fuzzy
+msgid  "mu"
+msgstr "mu"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item24.ItemList.item
+#, fuzzy
+msgid  "MU"
+msgstr "MU"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item25.ItemList.item
+#, fuzzy
+msgid  "nu"
+msgstr "nu"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item26.ItemList.item
+#, fuzzy
+msgid  "NU"
+msgstr "NU"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item27.ItemList.item
+#, fuzzy
+msgid  "xi"
+msgstr "xi"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item28.ItemList.item
+#, fuzzy
+msgid  "XI"
+msgstr "XI"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item29.ItemList.item
+#, fuzzy
+msgid  "omicron"
+msgstr "omicron"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item30.ItemList.item
+#, fuzzy
+msgid  "OMICRON"
+msgstr "OMICRON"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item31.ItemList.item
+#, fuzzy
+msgid  "pi"
+msgstr "pi"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item32.ItemList.item
+#, fuzzy
+msgid  "PI"
+msgstr "PI"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item33.ItemList.item
+#, fuzzy
+msgid  "rho"
+msgstr "rho"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item34.ItemList.item
+#, fuzzy
+msgid  "RHO"
+msgstr "RHO"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item35.ItemList.item
+#, fuzzy
+msgid  "sigma"
+msgstr "سيجما"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item36.ItemList.item
+#, fuzzy
+msgid  "SIGMA"
+msgstr "سيجما"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item37.ItemList.item
+#, fuzzy
+msgid  "tau"
+msgstr "tau"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item38.ItemList.item
+#, fuzzy
+msgid  "TAU"
+msgstr "TAU"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item39.ItemList.item
+#, fuzzy
+msgid  "upsilon"
+msgstr "upsilon"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item40.ItemList.item
+#, fuzzy
+msgid  "UPSILON"
+msgstr "UPSILON"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item41.ItemList.item
+#, fuzzy
+msgid  "phi"
+msgstr "phi"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item42.ItemList.item
+#, fuzzy
+msgid  "PHI"
+msgstr "PHI"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item43.ItemList.item
+#, fuzzy
+msgid  "chi"
+msgstr "chi"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item44.ItemList.item
+#, fuzzy
+msgid  "CHI"
+msgstr "CHI"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item45.ItemList.item
+#, fuzzy
+msgid  "psi"
+msgstr "psi"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item46.ItemList.item
+#, fuzzy
+msgid  "PSI"
+msgstr "PSI"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item47.ItemList.item
+#, fuzzy
+msgid  "omega"
+msgstr "omega"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item48.ItemList.item
+#, fuzzy
+msgid  "OMEGA"
+msgstr "OMEGA"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item49.ItemList.item
+#, fuzzy
+msgid  "varepsilon"
+msgstr "varepsilon"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item50.ItemList.item
+#, fuzzy
+msgid  "vartheta"
+msgstr "vartheta"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item51.ItemList.item
+#, fuzzy
+msgid  "varpi"
+msgstr "varpi"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item52.ItemList.item
+#, fuzzy
+msgid  "varrho"
+msgstr "varrho"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item53.ItemList.item
+#, fuzzy
+msgid  "varsigma"
+msgstr "varsigma"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item54.ItemList.item
+#, fuzzy
+msgid  "varphi"
+msgstr "varphi"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item55.ItemList.item
+#, fuzzy
+msgid  "element"
+msgstr "عنصر"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item56.ItemList.item
+#, fuzzy
+msgid  "noelement"
+msgstr "noelement"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item57.ItemList.item
+#, fuzzy
+msgid  "strictlylessthan"
+msgstr "strictlylessthan"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item58.ItemList.item
+#, fuzzy
+msgid  "strictlygreaterthan"
+msgstr "strictlygreaterthan"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item59.ItemList.item
+#, fuzzy
+msgid  "notequal"
+msgstr "notequal"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item60.ItemList.item
+#, fuzzy
+msgid  "identical"
+msgstr "مماثل"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item61.ItemList.item
+#, fuzzy
+msgid  "tendto"
+msgstr "tendto"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item62.ItemList.item
+#, fuzzy
+msgid  "infinite"
+msgstr "لانهائي"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item63.ItemList.item
+#, fuzzy
+msgid  "angle"
+msgstr "زاوية"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item64.ItemList.item
+#, fuzzy
+msgid  "perthousand"
+msgstr "perthousand"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item65.ItemList.item
+#, fuzzy
+msgid  "and"
+msgstr "و"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item66.ItemList.item
+#, fuzzy
+msgid  "or"
+msgstr "أو"

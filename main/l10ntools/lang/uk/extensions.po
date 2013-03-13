@@ -1,2810 +1,2983 @@
-
-#: updatehdl.src#RID_UPDATE_STR_CHECKING.string.text
-msgid "Checking..."
-msgstr "Перевірка..."
-
-#: updatehdl.src#RID_UPDATE_STR_CHECKING_ERR.string.text
-msgid "Checking for an update failed."
-msgstr "Невдала перевірка оновлень."
-
-#: updatehdl.src#RID_UPDATE_STR_NO_UPD_FOUND.string.text
-msgid "%PRODUCTNAME %PRODUCTVERSION is up to date."
-msgstr "%PRODUCTNAME %PRODUCTVERSION останньої версії."
-
-#: updatehdl.src#RID_UPDATE_STR_UPD_FOUND.string.text
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
 msgid ""
-"%PRODUCTNAME %NEXTVERSION is available.\n"
-"\n"
-"The installed version is %PRODUCTNAME %PRODUCTVERSION.\n"
-"\n"
-"Note: Before downloading  an update, please ensure that you have sufficient "
-"access rights to install it.\n"
-"A password, usually the administrator's or root password, may be required."
 msgstr ""
-"%PRODUCTNAME %NEXTVERSION доступно для завантаження.\n"
-"\n"
-"Встановлена версія %PRODUCTNAME %PRODUCTVERSION.\n"
-"\n"
-"Примітка: Перш ніж завантажувати оновлення перевірте, що у вас є права для "
-"встановлення.\n"
-"Можливо знадобиться адміністраторський пароль."
-
-#: updatehdl.src#RID_UPDATE_STR_DLG_TITLE.string.text
-msgid "Check for Updates"
-msgstr "Перевірити наявність оновлень"
-
-#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_PAUSE.string.text
-msgid "Downloading %PRODUCTNAME %NEXTVERSION paused at..."
-msgstr "Завантаження %PRODUCTNAME %NEXTVERSION призупинено на..."
-
-#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_ERR.string.text
-msgid "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
-msgstr "Завантаження %PRODUCTNAME %NEXTVERSION призупинено на"
-
-#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.string.text
-msgid ""
-"The download location is: %DOWNLOAD_PATH.\n"
-"\n"
-"Under Tools – Options... - %PRODUCTNAME – Online Update you can change the "
-"download location."
-msgstr ""
-"Адреса завантаження: %DOWNLOAD_PATH.\n"
-"\n"
-"Ви можете змінити адресу завантаження у Сервіс – Параметри... - %PRODUCTNAME "
-"– Перевірка оновлень."
-
-#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.string.text
-msgid "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
-msgstr "%FILE_NAME було завантажено до %DOWNLOAD_PATH."
-
-#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.string.text
-msgid ""
-"The automatic download of the update is currently not available.\n"
-"\n"
-"Click 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the "
-"web site."
-msgstr ""
-"Автоматичне завантаження оновлень поки недоступне.\n"
-"\n"
-"Натисніть «Завантажити...» для завантаження %PRODUCTNAME %NEXTVERSION вручну "
-"з веб-сайту."
-
-#: updatehdl.src#RID_UPDATE_STR_DOWNLOADING.string.text
-msgid "Downloading %PRODUCTNAME %NEXTVERSION..."
-msgstr "Завантаження %PRODUCTNAME %NEXTVERSION..."
-
-#: updatehdl.src#RID_UPDATE_STR_READY_INSTALL.string.text
-msgid ""
-"Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
-msgstr ""
-"Завантаження %PRODUCTNAME %NEXTVERSION завершено та готове до встановлення."
-
-#: updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.string.text
-msgid "%PRODUCTNAME %PRODUCTVERSION"
-msgstr "%PRODUCTNAME %PRODUCTVERSION"
-
-#: updatehdl.src#RID_UPDATE_STR_CANCEL_DOWNLOAD.string.text
-msgid "Do you really want to cancel the download?"
-msgstr "Ви справді хочете скасувати завантаження?"
-
-#: updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.string.text
-msgid ""
-"To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do "
-"you want to install the update now?"
-msgstr ""
-"Для встановлення оновлень потрібно закрити %PRODUCTNAME %PRODUCTVERSION. "
-"Встановити розширення зараз?"
-
-#: updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.string.text
-msgid "Install ~now"
-msgstr "Встановити ~зараз"
-
-#: updatehdl.src#RID_UPDATE_STR_INSTALL_LATER.string.text
-msgid "Install ~later"
-msgstr "Встановити п~ізніше"
-
-#: updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.string.text
-msgid ""
-"Could not run the installer application, please run %FILE_NAME in %"
-"DOWNLOAD_PATH manually."
-msgstr ""
-"Неможливо запустити програму встановлення, запустіть %FILE_NAME у каталозі %"
-"DOWNLOAD_PATH вручну."
-
-#: updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.string.text
-msgid ""
-"A file with that name already exists! Do you want to overwrite the existing "
-"file?"
-msgstr "Файл з такою назвою вже існує. Перезаписати існуючий файл?"
-
-#: updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.string.text
-msgid ""
-"A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you "
-"want to continue with the download or delete and reload the file?"
-msgstr ""
-
-#: updatehdl.src#RID_UPDATE_STR_RELOAD_RELOAD.string.text
-msgid "Reload File"
-msgstr ""
-
-#: updatehdl.src#RID_UPDATE_STR_RELOAD_CONTINUE.string.text
-msgid "Continue"
-msgstr ""
-
-#: updatehdl.src#RID_UPDATE_STR_PERCENT.string.text
-msgid "%PERCENT%"
-msgstr "%PERCENT%"
-
-#: updatehdl.src#RID_UPDATE_FT_STATUS.string.text
-msgid "Status"
-msgstr "Статус"
-
-#: updatehdl.src#RID_UPDATE_FT_DESCRIPTION.string.text
-msgid "Description"
-msgstr "Опис"
-
-#: updatehdl.src#RID_UPDATE_BTN_CLOSE.string.text
-msgid "Close"
-msgstr "Закрити"
-
-#: updatehdl.src#RID_UPDATE_BTN_DOWNLOAD.string.text
-msgid "~Download"
-msgstr "~Завантажити"
-
-#: updatehdl.src#RID_UPDATE_BTN_INSTALL.string.text
-msgid "~Install"
-msgstr "~Встановити"
-
-#: updatehdl.src#RID_UPDATE_BTN_PAUSE.string.text
-msgid "~Pause"
-msgstr "Приз~упинити"
-
-#: updatehdl.src#RID_UPDATE_BTN_RESUME.string.text
-msgid "~Resume"
-msgstr "Пр~одовжити"
-
-#: updatehdl.src#RID_UPDATE_BTN_CANCEL.string.text
-msgid "Cancel"
-msgstr "Скасувати"
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.string.text
-msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.string.text"
-msgid "%PRODUCTNAME update available"
-msgstr "Доступні оновлення %PRODUCTNAME"
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_AVAIL.string.text
-msgid "Click here to start the download."
-msgstr "Клацніть тут для початку завантаження."
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.string.text
-msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.string.text"
-msgid "%PRODUCTNAME update available"
-msgstr "Доступні оновлення %PRODUCTNAME"
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.string.text
-msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.string.text"
-msgid "Click here for more information."
-msgstr "Клацніть тут для подробиць."
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.string.text
-msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.string.text"
-msgid "%PRODUCTNAME update available"
-msgstr "Доступні оновлення %PRODUCTNAME"
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_AUTO_START.string.text
-msgid "Download of update begins."
-msgstr "Початок завантаження оновлень"
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOADING.string.text
-msgid "Download of update in progress"
-msgstr "Завантаження оновлень"
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_PAUSED.string.text
-msgid "Download of update paused"
-msgstr "Завантаження оновлень призупинено"
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_PAUSED.string.text
-msgid "Click here to resume."
-msgstr "Клацніть тут для продовження."
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_T_ERROR_DOWNLOADING.string.text
-msgid "Download of update stalled"
-msgstr "Завантаження оновлень зупинено"
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.string.text
-msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.string.text"
-msgid "Click here for more information."
-msgstr "Клацніть тут подробиць."
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_AVAIL.string.text
-msgid "Download of update completed"
-msgstr "Завантаження оновлень завершено"
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_AVAIL.string.text
-msgid "Click here to start the installation."
-msgstr "Клацніть тут для запуску встановлення."
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_T_EXT_UPD_AVAIL.string.text
-msgid "Updates for extensions available"
-msgstr "Доступні оновлення розширень"
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.string.text
-msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.string.text"
-msgid "Click here for more information."
-msgstr "Клацніть тут подробиць."
-
-#: Addons.xcu#.Addons.AddonUI.OfficeHelp.UpdateCheckJob.Title.value.text
-msgid "Check for ~Updates..."
-msgstr "Перевірити наявність ~оновлень..."
-
-#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.FL_DATA.fixedline.text
-msgctxt "commonpagesdbp.src#RID_PAGE_TABLESELECTION.FL_DATA.fixedline.text"
-msgid "Data"
-msgstr "Дані"
-
-#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.fixedtext.text
-msgid ""
-"Currently, the form the control belongs to is not (or not completely) bound "
-"to a data source.\n"
-"\n"
-"Please choose a data source and a table.\n"
-"\n"
-"\n"
-"Please note that the settings made on this page will take effect immediately "
-"upon leaving the page."
-msgstr ""
-"Форма, до якої відноситься елемент керування, наразі не зв'язана (або не "
-"повністю зв'язана) з даними бази. \n"
-"\n"
-"Виберіть джерело даних або таблицю.\n"
-"\n"
-"\n"
-"Зауважте, щ зміни на цій сторінці набирають сили одразу після того, як ви "
-"залишаєте цю сторінку."
-
-#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.fixedtext.text
-msgid "~Data source:"
-msgstr "~Джерело даних:"
-
-#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.PB_FORMDATASOURCE.pushbutton.text
-msgid "~..."
-msgstr "~..."
-
-#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_TABLE.fixedtext.text
-msgid "~Table / Query:"
-msgstr "~Таблиця/запит:"
-
-#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.tabpage.text
-msgctxt "commonpagesdbp.src#RID_PAGE_TABLESELECTION.tabpage.text"
-msgid "Data"
-msgstr "Дані"
-
-#: commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.FT_DATABASEFIELD_QUEST.fixedtext.text
-msgid "Do you want to save the value in a database field?"
-msgstr "Зберегти значення в полі бази даних?"
-
-#: commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_YES.radiobutton.text
-msgid "~Yes, I want to save it in the following database field:"
-msgstr "~Так, зберегти в наступному полі бази даних:"
-
-#: commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_NO.radiobutton.text
-msgid "~No, I only want to save the value in the form."
-msgstr "~Ні, зберегти лише значення у формі."
-
-#: commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.tabpage.text
-msgid "Database Field"
-msgstr "Поле бази даних"
-
-#: commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FL_FORMSETINGS.fixedline.text
-msgid "Form"
-msgstr "Форма"
-
-#: commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMDATASOURCELABEL.fixedtext.text
-msgid "Data source"
-msgstr "Джерело даних"
-
-#: commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMCONTENTTYPELABEL.fixedtext.text
-msgid "Content type"
-msgstr "Тип вмісту"
-
-#: commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMTABLELABEL.fixedtext.text
-msgid "Content"
-msgstr "Вміст"
-
-#: commonpagesdbp.src#RID_STR_TYPE_TABLE.string.text
-msgid "Table"
-msgstr "Таблиця"
-
-#: commonpagesdbp.src#RID_STR_TYPE_QUERY.string.text
-msgid "Query"
-msgstr "Запит"
-
-#: commonpagesdbp.src#RID_STR_TYPE_COMMAND.string.text
-msgid "SQL command"
-msgstr "Команда SQL"
-
-#: dbpilots.src#RID_DLG_GROUPBOXWIZARD.modaldialog.text
-msgid "Group Element Wizard"
-msgstr "Помічник групового блоку"
-
-#: dbpilots.src#RID_DLG_GRIDWIZARD.modaldialog.text
-msgid "Table Element Wizard"
-msgstr "Помічник елементу керування Таблиця"
-
-#: dbpilots.src#RID_STR_LISTWIZARD_TITLE.string.text
-msgid "List Box Wizard"
-msgstr "Помічник списку"
-
-#: dbpilots.src#RID_STR_COMBOWIZARD_TITLE.string.text
-msgid "Combo Box Wizard"
-msgstr "Помічник поля зі списком"
-
-#: dbpilots.src#RID_STR_COULDNOTOPENTABLE.string.text
-msgid "The table connection to the data source could not be established."
-msgstr "Неможливо встановити з'єднання таблиці з первинними даними."
-
-#: gridpages.src#RID_PAGE_GW_FIELDSELECTION.FL_FRAME.fixedline.text
-msgid "Table element"
-msgstr "Вибір полів"
-
-#: gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.fixedtext.text
-msgctxt "gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.fixedtext.text"
-msgid "Existing fields"
-msgstr "Доступні поля"
-
-#: gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_SELECTED_FIELDS.fixedtext.text
-msgid "Selected fields"
-msgstr "Вибрані поля"
-
-#: gridpages.src#RID_PAGE_GW_FIELDSELECTION.tabpage.text
-msgctxt "gridpages.src#RID_PAGE_GW_FIELDSELECTION.tabpage.text"
-msgid "Field Selection"
-msgstr "Вибір полів"
-
-#: gridpages.src#RID_STR_DATEPOSTFIX.string.text
-msgid " (Date)"
-msgstr " (Дата)"
-
-#: gridpages.src#RID_STR_TIMEPOSTFIX.string.text
-msgid " (Time)"
-msgstr " (Час)"
-
-#: groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOLABELS.fixedtext.text
-msgid "Which ~names do you want to give the option fields?"
-msgstr "Які ~назви повинні містити поля параметрів?"
-
-#: groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.fixedtext.text
-msgctxt "groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.fixedtext.text"
-msgid "~Option fields"
-msgstr "~Поля параметрів"
-
-#: groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.tabpage.text
-msgctxt "groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.tabpage.text"
-msgid "Data"
-msgstr "Дані"
-
-#: groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.FT_DEFAULTSELECTION.fixedtext.text
-msgid "Should one option field be selected as a default?"
-msgstr "Встановити будь-яке типове поле параметрів?"
-
-#: groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_YES.radiobutton.text
-msgid "~Yes, the following:"
-msgstr "~Так, наступне поле:"
-
-#: groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_NO.radiobutton.text
-msgid "No, one particular field is not going to be selected."
-msgstr "Ні, не вибирати поля."
-
-#: groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.tabpage.text
-msgid "Default Field Selection"
-msgstr "Вибір типового поля"
-
-#: groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES_EXPL.fixedtext.text
-msgid "When you select an option, the option group is given a specific value."
-msgstr ""
-"Коли ви виберете принаймні один параметр, то групі параметрів буде "
-"призначено певне значення."
-
-#: groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES.fixedtext.text
-msgid "Which ~value do you want to assign to each option?"
-msgstr "Яке ~значення призначити кожному параметру?"
-
-#: groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_RADIOBUTTONS.fixedtext.text
-msgctxt "groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_RADIOBUTTONS.fixedtext.text"
-msgid "~Option fields"
-msgstr "~Поля параметрів"
-
-#: groupboxpages.src#RID_PAGE_OPTIONVALUES.tabpage.text
-msgid "Field Values"
-msgstr "Значення поля"
-
-#: groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_NAMEIT.fixedtext.text
-msgid "Which ~caption is to be given to your option group?"
-msgstr "Який ~заголовок має отримати група параметрів?"
-
-#: groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_THATSALL.fixedtext.text
-msgid "These were all details needed to create the option group."
-msgstr "Це була вся інформація, необхідна для створення групи параметрів."
-
-#: groupboxpages.src#RID_PAGE_OPTIONS_FINAL.tabpage.text
-msgid "Create Option Group"
-msgstr "Створити групу параметрів"
-
-#: groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.string.text
-msgid ""
-"You can either save the value of the option group in a database field or use "
-"it for a later action."
-msgstr ""
-"Значення групи параметрів можна зберегти у полі бази даних або використати "
-"його пізніше."
-
-#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FL_FRAME.fixedline.text
-msgid "Control"
-msgstr "Елемент керування"
-
-#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.fixedtext.text
-msgid ""
-"On the right side, you see all the tables from the data source of the form.\n"
-"\n"
-"\n"
-"Choose the table from which the data should be used as basis for the list "
-"content:"
-msgstr ""
-"Праворуч показані всі таблиці джерел даних форми.\n"
-"\n"
-"\n"
-"Виберіть таблицю, яка має слугувати основою для змісту списку:"
-
-#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.tabpage.text
-msgid "Table Selection"
-msgstr "Вибір таблиці"
-
-#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_TABLEFIELDS.fixedtext.text
-msgctxt "listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_TABLEFIELDS.fixedtext.text"
-msgid "Existing fields"
-msgstr "Доступні поля"
-
-#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_DISPLAYEDFIELD.fixedtext.text
-msgid "Display field"
-msgstr "Показане поле"
-
-#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_COMBOBOX.string.text
-msgid "The contents of the field selected will be shown in the combo box list."
-msgstr "Вміст вибраного поля буде показаний у полі зі списком."
-
-#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.string.text
-msgid ""
-"The contents of the selected field will be shown in the list box if the "
-"linked fields are identical."
-msgstr ""
-"Вміст вибраного поля буде показаний у списку, якщо зв'язані поля збігаються."
-
-#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.tabpage.text
-msgctxt "listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.tabpage.text"
-msgid "Field Selection"
-msgstr "Вибір полів"
-
-#: listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.fixedtext.text
-msgid ""
-"This is where you select fields with matching contents so that the value "
-"from the display field will be shown."
-msgstr "Для відображення значення поля, виберіть поля, із узгодженим змістом."
-
-#: listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.fixedtext.text
-msgid "Field from the ~Value Table"
-msgstr "Поле з таблиці ~значень"
-
-#: listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_TABLEFIELD.fixedtext.text
-msgid "Field from the ~List Table"
-msgstr "Поле з таблиці ~списку"
-
-#: listcombopages.src#RID_PAGE_LCW_FIELDLINK.tabpage.text
-msgid "Field Link"
-msgstr "Зв'язок полів"
-
-#: listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.string.text
-msgid ""
-"You can either save the value of the combo box in a database field or use it "
-"for display purposes."
-msgstr ""
-"Значення поля зі списком можна зберігати у полі бази даних або "
-"використовувати його лише для відображення."
-
-#: fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.pageitem.text
-msgctxt "fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.pageitem.text"
-msgid "Font"
-msgstr "Шрифт"
-
-#: fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS_EXT.pageitem.text
-msgid "Font Effects"
-msgstr "Ефекти шрифту"
-
-#: fontdialog.src#RID_TABDLG_FONTDIALOG.tabdialog.text
-msgid "Character"
-msgstr "Символ"
-
-#: formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.fixedtext.text
-msgid ""
-"Sub forms can be used to display detailed data about the current record of "
-"the master form. To do this, you can specify which columns in the sub form "
-"match which columns in the master form."
-msgstr ""
-"Підпорядковані форми можна використовувати для відображення докладних даних "
-"про поточний запис у основній формі. Для цього можна вказати, які стовпчики "
-"у підпорядкованій формі відповідають стовпчикам у основній формі."
-
-#: formlinkdialog.src#RID_DLG_FORMLINKS.modaldialog.text
-msgid "Link fields"
-msgstr "Зв'язок полів"
-
-#: formlinkdialog.src#PB_SUGGEST.pushbutton.text
-msgid "Suggest"
-msgstr "Побажання"
-
-#: formlinkdialog.src#STR_DETAIL_FORM.string.text
-msgid "Sub Form"
-msgstr "Підформа"
-
-#: formlinkdialog.src#STR_MASTER_FORM.string.text
-msgid "Master Form"
-msgstr "Основна форма"
-
-#: formlinkdialog.src#STR_ERROR_RETRIEVING_COLUMNS.string.text
-msgid "The columns of '#' could not be retrieved."
-msgstr "Неможливо отримати стовпчики підформи."
-
-#: formres.src#RID_STR_EDITMASK.string.text
-msgid "Edit mask"
-msgstr "Маска вводу"
-
-#: formres.src#RID_STR_LITERALMASK.string.text
-msgid "Literal mask"
-msgstr "Маска знаків"
-
-#: formres.src#RID_STR_READONLY.string.text
-msgctxt "formres.src#RID_STR_READONLY.string.text"
-msgid "Read-only"
-msgstr "Лише для читання"
-
-#: formres.src#RID_STR_ENABLED.string.text
-msgid "Enabled"
-msgstr "Доступно"
-
-#: formres.src#RID_STR_ENABLE_VISIBLE.string.text
-msgid "Visible"
-msgstr ""
-
-#: formres.src#RID_STR_AUTOCOMPLETE.string.text
-msgid "AutoFill"
-msgstr "Автозаповнення"
-
-#: formres.src#RID_STR_LINECOUNT.string.text
-msgid "Line count"
-msgstr "Кількість рядків"
-
-#: formres.src#RID_STR_MAXTEXTLEN.string.text
-msgid "Max. text length"
-msgstr "Максимальна довжина тексту"
-
-#: formres.src#RID_STR_SPIN.string.text
-msgid "Spin Button"
-msgstr "Лічильник"
-
-#: formres.src#RID_STR_STRICTFORMAT.string.text
-msgid "Strict format"
-msgstr "Перевірка формату"
-
-#: formres.src#RID_STR_SHOWTHOUSANDSEP.string.text
-msgid "Thousands separator"
-msgstr "Розділювач розрядів"
-
-#: formres.src#RID_STR_PRINTABLE.string.text
-msgid "Printable"
-msgstr ""
-
-#: formres.src#RID_STR_TARGET_URL.string.text
-msgctxt "formres.src#RID_STR_TARGET_URL.string.text"
-msgid "URL"
-msgstr "URL"
-
-#: formres.src#RID_STR_TARGET_FRAME.string.text
-msgctxt "formres.src#RID_STR_TARGET_FRAME.string.text"
-msgid "Frame"
-msgstr "Кадр"
-
-#: formres.src#RID_STR_HELPTEXT.string.text
-msgid "Help text"
-msgstr "Текст контекстної довідки"
-
-#: formres.src#RID_STR_HELPURL.string.text
-msgid "Help URL"
-msgstr "URL довідки"
-
-#: formres.src#RID_STR_TAG.string.text
-msgid "Additional information"
-msgstr "Додаткова інформація"
-
-#: formres.src#RID_STR_ECHO_CHAR.string.text
-msgid "Password character"
-msgstr "Символи паролю"
-
-#: formres.src#RID_STR_TRISTATE.string.text
-msgid "Tristate"
-msgstr "Потрійний стан"
-
-#: formres.src#RID_STR_EMPTY_IS_NULL.string.text
-msgid "Empty string is NULL"
-msgstr "Порожній рядок - NULL"
-
-#: formres.src#RID_STR_DECIMAL_ACCURACY.string.text
-msgid "Decimal accuracy"
-msgstr "Точність"
-
-#: formres.src#RID_STR_IMAGE_URL.string.text
-msgid "Graphics"
-msgstr "Зображення"
-
-#: formres.src#RID_STR_DEFAULT_SELECT_SEQ.string.text
-msgid "Default selection"
-msgstr "Типовий вибір"
-
-#: formres.src#RID_STR_DEFAULT_BUTTON.string.text
-msgid "Default button"
-msgstr "Типова кнопка"
-
-#: formres.src#RID_STR_LABELCONTROL.string.text
-msgctxt "formres.src#RID_STR_LABELCONTROL.string.text"
-msgid "Label Field"
-msgstr "Позначка"
-
-#: formres.src#RID_STR_LABEL.string.text
-msgid "Label"
-msgstr "Текст"
-
-#: formres.src#RID_STR_ALIGN.string.text
-msgid "Alignment"
-msgstr "Вирівнювання"
-
-#: formres.src#RID_STR_VERTICAL_ALIGN.string.text
-msgid "Vert. Alignment"
-msgstr "Верт. вирівнювання"
-
-#: formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.1.string.text
-msgid "Top"
-msgstr "Згори"
-
-#: formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.2.string.text
-msgid "Middle"
-msgstr "У центрі"
-
-#: formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.3.string.text
-msgid "Bottom"
-msgstr "Знизу"
-
-#: formres.src#RID_STR_IMAGEPOSITION.string.text
-msgid "Graphics alignment"
-msgstr "Вирівнювання графіки"
-
-#: formres.src#RID_STR_FONT.string.text
-msgctxt "formres.src#RID_STR_FONT.string.text"
-msgid "Font"
-msgstr "Шрифт"
-
-#: formres.src#RID_STR_BACKGROUNDCOLOR.string.text
-msgid "Background color"
-msgstr "Колір тла"
-
-#: formres.src#RID_STR_BORDER.string.text
-msgid "Border"
-msgstr "Рамка"
-
-#: formres.src#RID_STR_ICONSIZE.string.text
-msgid "Icon size"
-msgstr "Розмір значків"
-
-#: formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.1.string.text
-msgid "Small"
-msgstr "Маленькі"
-
-#: formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.2.string.text
-msgid "Large"
-msgstr "Великі"
-
-#: formres.src#RID_STR_SHOW_POSITION.string.text
-msgid "Positioning"
-msgstr "Позиціювання"
-
-#: formres.src#RID_STR_SHOW_NAVIGATION.string.text
-msgid "Navigation"
-msgstr "Навігація"
-
-#: formres.src#RID_STR_SHOW_RECORDACTIONS.string.text
-msgid "Acting on a record"
-msgstr "Дії над записом"
-
-#: formres.src#RID_STR_SHOW_FILTERSORT.string.text
-msgid "Filtering / Sorting"
-msgstr "Фільтрація / сортування"
-
-#: formres.src#RID_STR_HSCROLL.string.text
-msgid "Horizontal scroll bar"
-msgstr "Горизонтальна смуга прокрутки"
-
-#: formres.src#RID_STR_VSCROLL.string.text
-msgid "Vertical scroll bar"
-msgstr "Вертикальна суга прокрутки"
-
-#: formres.src#RID_STR_WORDBREAK.string.text
-msgid "Word break"
-msgstr "Розрив слова"
-
-#: formres.src#RID_STR_MULTILINE.string.text
-msgid "Multiline input"
-msgstr "Багаторядковий ввід"
-
-#: formres.src#RID_STR_MULTISELECTION.string.text
-msgid "Multiselection"
-msgstr "Групове виділення"
-
-#: formres.src#RID_STR_NAME.string.text
-msgid "Name"
-msgstr "Назва"
-
-#: formres.src#RID_STR_TABINDEX.string.text
-msgid "Tab order"
-msgstr "Порядок"
-
-#: formres.src#RID_STR_WHEEL_BEHAVIOR.string.text
-msgid "Mouse wheel scroll"
-msgstr ""
-
-#: formres.src#RID_STR_FILTER.string.text
-msgid "Filter"
-msgstr "Фільтр"
-
-#: formres.src#RID_STR_SORT_CRITERIA.string.text
-msgid "Sort"
-msgstr "Сортування"
-
-#: formres.src#RID_STR_RECORDMARKER.string.text
-msgid "Record marker"
-msgstr "Маркер запису"
-
-#: formres.src#RID_STR_FILTERPROPOSAL.string.text
-msgid "Filter proposal"
-msgstr "Сумарний фільтр"
-
-#: formres.src#RID_STR_NAVIGATION.string.text
-msgid "Navigation bar"
-msgstr "Пенал навігації"
-
-#: formres.src#RID_STR_CYCLE.string.text
-msgid "Cycle"
-msgstr "Цикл"
-
-#: formres.src#RID_STR_TABSTOP.string.text
-msgid "Tabstop"
-msgstr "Зупинка табуляції"
-
-#: formres.src#RID_STR_CONTROLSOURCE.string.text
-msgid "Data field"
-msgstr "Поле даних"
-
-#: formres.src#RID_STR_DROPDOWN.string.text
-msgid "Dropdown"
-msgstr "Розкривний"
-
-#: formres.src#RID_STR_BOUNDCOLUMN.string.text
-msgid "Bound field"
-msgstr "Прив'язане поле"
-
-#: formres.src#RID_STR_LISTSOURCE.string.text
-msgid "List content"
-msgstr "Зміст списку"
-
-#: formres.src#RID_STR_LISTSOURCETYPE.string.text
-msgid "Type of list contents"
-msgstr "Тип вмісту списку"
-
-#: formres.src#RID_STR_CURSORSOURCE.string.text
-msgid "Content"
-msgstr "Зміст"
-
-#: formres.src#RID_STR_CURSORSOURCETYPE.string.text
-msgid "Content type"
-msgstr "Тип вмісту"
-
-#: formres.src#RID_STR_ALLOW_ADDITIONS.string.text
-msgid "Allow additions"
-msgstr "Дозволити додавання"
-
-#: formres.src#RID_STR_ALLOW_DELETIONS.string.text
-msgid "Allow deletions"
-msgstr "Дозволити видалення"
-
-#: formres.src#RID_STR_ALLOW_EDITS.string.text
-msgid "Allow modifications"
-msgstr "Дозволити зміни"
-
-#: formres.src#RID_STR_DATAENTRY.string.text
-msgid "Add data only"
-msgstr "Дозволити лише додавання"
-
-#: formres.src#RID_STR_DATASOURCE.string.text
-msgid "Data source"
-msgstr "Джерело даних"
-
-#: formres.src#RID_STR_MASTERFIELDS.string.text
-msgid "Link master fields"
-msgstr "Зв'язок з головним полем"
-
-#: formres.src#RID_STR_SLAVEFIELDS.string.text
-msgid "Link slave fields"
-msgstr "Зв'язок з підлеглим полем"
-
-#: formres.src#RID_STR_VALUEMIN.string.text
-msgid "Value min."
-msgstr "Мінімальне значення"
-
-#: formres.src#RID_STR_VALUEMAX.string.text
-msgid "Value max."
-msgstr "Максимальне значення"
-
-#: formres.src#RID_STR_VALUESTEP.string.text
-msgid "Incr./decrement value"
-msgstr "Крок значення"
-
-#: formres.src#RID_STR_CURRENCYSYMBOL.string.text
-msgid "Currency symbol"
-msgstr "Символ грошової одиниці"
-
-#: formres.src#RID_STR_DATEMIN.string.text
-msgid "Date min."
-msgstr "Мінімальна дата"
-
-#: formres.src#RID_STR_DATEMAX.string.text
-msgid "Date max."
-msgstr "Максимальна дата"
-
-#: formres.src#RID_STR_DATEFORMAT.string.text
-msgid "Date format"
-msgstr "Формат даних"
-
-#: formres.src#RID_STR_SELECTEDITEMS.string.text
-msgid "Selection"
-msgstr "Виділення"
-
-#: formres.src#RID_STR_TIMEMIN.string.text
-msgid "Time min."
-msgstr "Мінімальний час"
-
-#: formres.src#RID_STR_TIMEMAX.string.text
-msgid "Time max."
-msgstr "Максимальний час"
-
-#: formres.src#RID_STR_TIMEFORMAT.string.text
-msgid "Time format"
-msgstr "Формат часу"
-
-#: formres.src#RID_STR_CURRSYM_POSITION.string.text
-msgid "Prefix symbol"
-msgstr "Символ перед цифрами"
-
-#: formres.src#RID_STR_VALUE.string.text
-msgid "Value"
-msgstr "Значення"
-
-#: formres.src#RID_STR_FORMATKEY.string.text
-msgid "Formatting"
-msgstr "Форматування"
-
-#: formres.src#RID_STR_CLASSID.string.text
-msgid "Class ID"
-msgstr "ID класу"
-
-#: formres.src#RID_STR_HEIGHT.string.text
-msgid "Height"
-msgstr "Висота"
-
-#: formres.src#RID_STR_WIDTH.string.text
-msgid "Width"
-msgstr "Ширина"
-
-#: formres.src#RID_STR_LISTINDEX.string.text
-msgid "List index"
-msgstr "Індекс списку"
-
-#: formres.src#RID_STR_ROWHEIGHT.string.text
-msgid "Row height"
-msgstr "Висота рядків"
-
-#: formres.src#RID_STR_FILLCOLOR.string.text
-msgid "Fill color"
-msgstr "Колір заповнення"
-
-#: formres.src#RID_STR_LINECOLOR.string.text
-msgid "Line color"
-msgstr "Колір лінії"
-
-#: formres.src#RID_STR_REFVALUE.string.text
-msgid "Reference value (on)"
-msgstr "Значення покажчика (увімк)"
-
-#: formres.src#RID_STR_UNCHECKEDREFVALUE.string.text
-msgid "Reference value (off)"
-msgstr "Значення покажчика (вимк.)"
-
-#: formres.src#RID_STR_STRINGITEMLIST.string.text
-msgid "List entries"
-msgstr "Елементи списку"
-
-#: formres.src#RID_STR_BUTTONTYPE.string.text
-msgid "Action"
-msgstr "Тип кнопки"
-
-#: formres.src#RID_STR_SUBMIT_ACTION.string.text
-msgctxt "formres.src#RID_STR_SUBMIT_ACTION.string.text"
-msgid "URL"
-msgstr "URL"
-
-#: formres.src#RID_STR_SUBMIT_METHOD.string.text
-msgid "Type of submission"
-msgstr "Тип представлення"
-
-#: formres.src#RID_STR_DEFAULT_STATE.string.text
-msgid "Default status"
-msgstr "Типовий стан"
-
-#: formres.src#RID_STR_SUBMIT_ENCODING.string.text
-msgid "Submission encoding"
-msgstr "Кодування представлення"
-
-#: formres.src#RID_STR_DEFAULTVALUE.string.text
-msgid "Default value"
-msgstr "Типове значення"
-
-#: formres.src#RID_STR_DEFAULTTEXT.string.text
-msgid "Default text"
-msgstr "Типовий текст"
-
-#: formres.src#RID_STR_DEFAULTDATE.string.text
-msgid "Default date"
-msgstr "Типова дата"
-
-#: formres.src#RID_STR_DEFAULTTIME.string.text
-msgid "Default time"
-msgstr "Типовий час"
-
-#: formres.src#RID_STR_SUBMIT_TARGET.string.text
-msgctxt "formres.src#RID_STR_SUBMIT_TARGET.string.text"
-msgid "Frame"
-msgstr "Кадр"
-
-#: formres.src#RID_RSC_ENUM_BORDER_TYPE.1.string.text
-msgid "Without frame"
-msgstr "Без рамки"
-
-#: formres.src#RID_RSC_ENUM_BORDER_TYPE.2.string.text
-msgid "3D look"
-msgstr "Тривимірний вигляд"
-
-#: formres.src#RID_RSC_ENUM_BORDER_TYPE.3.string.text
-msgctxt "formres.src#RID_RSC_ENUM_BORDER_TYPE.3.string.text"
-msgid "Flat"
-msgstr "Плаский"
-
-#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.1.string.text
-msgid "Valuelist"
-msgstr "Список значень"
-
-#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.string.text
-msgctxt "formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.string.text"
-msgid "Table"
-msgstr "Таблиця"
-
-#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.string.text
-msgctxt "formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.string.text"
-msgid "Query"
-msgstr "Запит"
-
-#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.4.string.text
-msgid "Sql"
-msgstr "Sql"
-
-#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.5.string.text
-msgid "Sql [Native]"
-msgstr "Sql [Native]"
-
-#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.6.string.text
-msgid "Tablefields"
-msgstr "Поля таблиці"
-
-#: formres.src#RID_RSC_ENUM_ALIGNMENT.1.string.text
-msgid "Left"
-msgstr "Ліворуч"
-
-#: formres.src#RID_RSC_ENUM_ALIGNMENT.2.string.text
-msgid "Center"
-msgstr "У центрі"
-
-#: formres.src#RID_RSC_ENUM_ALIGNMENT.3.string.text
-msgid "Right"
-msgstr "Праворуч"
-
-#: formres.src#RID_RSC_ENUM_BUTTONTYPE.1.string.text
-#, fuzzy
-msgctxt "formres.src#RID_RSC_ENUM_BUTTONTYPE.1.string.text"
-msgid "None"
-msgstr "Нічого"
-
-#: formres.src#RID_RSC_ENUM_BUTTONTYPE.2.string.text
-msgid "Submit form"
-msgstr "Надіслати форму"
-
-#: formres.src#RID_RSC_ENUM_BUTTONTYPE.3.string.text
-msgid "Reset form"
-msgstr "Відносити форму"
-
-#: formres.src#RID_RSC_ENUM_BUTTONTYPE.4.string.text
-msgid "Open document/web page"
-msgstr "Відкрити документ/веб-сторінку"
-
-#: formres.src#RID_RSC_ENUM_BUTTONTYPE.5.string.text
-msgid "First record"
-msgstr "Перший запис"
-
-#: formres.src#RID_RSC_ENUM_BUTTONTYPE.6.string.text
-msgid "Previous record"
-msgstr "Попередній запис"
-
-#: formres.src#RID_RSC_ENUM_BUTTONTYPE.7.string.text
-msgid "Next record"
-msgstr "Наступний запис"
-
-#: formres.src#RID_RSC_ENUM_BUTTONTYPE.8.string.text
-msgid "Last record"
-msgstr "Останній запис"
-
-#: formres.src#RID_RSC_ENUM_BUTTONTYPE.9.string.text
-msgid "Save record"
-msgstr "Зберегти запис"
-
-#: formres.src#RID_RSC_ENUM_BUTTONTYPE.10.string.text
-msgid "Undo data entry"
-msgstr "Скасувати ввід даних"
-
-#: formres.src#RID_RSC_ENUM_BUTTONTYPE.11.string.text
-msgid "New record"
-msgstr "Додати запис"
-
-#: formres.src#RID_RSC_ENUM_BUTTONTYPE.12.string.text
-msgid "Delete record"
-msgstr "Видалити запис"
-
-#: formres.src#RID_RSC_ENUM_BUTTONTYPE.13.string.text
-msgid "Refresh form"
-msgstr "Оновити форму"
-
-#: formres.src#RID_RSC_ENUM_SUBMIT_METHOD.1.string.text
-msgid "Get"
-msgstr "Get"
-
-#: formres.src#RID_RSC_ENUM_SUBMIT_METHOD.2.string.text
-msgid "Post"
-msgstr "Post"
-
-#: formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.string.text
-msgctxt "formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.string.text"
-msgid "URL"
-msgstr "URL"
-
-#: formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.2.string.text
-msgid "Multipart"
-msgstr "Multipart"
-
-#: formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.string.text
-msgctxt "formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.string.text"
-msgid "Text"
-msgstr "Текст"
-
-#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.1.string.text
-msgid "Standard (short)"
-msgstr "Стандартний (короткий)"
-
-#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.2.string.text
-msgid "Standard (short YY)"
-msgstr "Стандартний (короткий РР)"
-
-#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.3.string.text
-msgid "Standard (short YYYY)"
-msgstr "Стандартний (короткий РРРР)"
-
-#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.4.string.text
-msgid "Standard (long)"
-msgstr "Стандартний (довгий)"
-
-#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.5.string.text
-msgid "DD/MM/YY"
-msgstr "ДД/ММ/РР"
-
-#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.6.string.text
-msgid "MM/DD/YY"
-msgstr "ММ/ДД/РР"
-
-#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.7.string.text
-msgid "YY/MM/DD"
-msgstr "РР/ММ/ДД"
-
-#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.8.string.text
-msgid "DD/MM/YYYY"
-msgstr "ДД/ММ/РРРР"
-
-#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.9.string.text
-msgid "MM/DD/YYYY"
-msgstr "ММ/ДД/РРРР"
-
-#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.10.string.text
-msgid "YYYY/MM/DD"
-msgstr "РРРР/ММ/ДД"
-
-#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.11.string.text
-msgid "YY-MM-DD"
-msgstr "РР-ММ-ДД"
-
-#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.12.string.text
-msgid "YYYY-MM-DD"
-msgstr "РРРР-ММ-ДД"
-
-#: formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.1.string.text
-msgid "13:45"
-msgstr "13:45"
-
-#: formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.2.string.text
-msgid "13:45:00"
-msgstr "13:45:00"
-
-#: formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.3.string.text
-msgid "01:45 PM"
-msgstr "01:45 PM"
-
-#: formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.4.string.text
-msgid "01:45:00 PM"
-msgstr "01:45:00 PM"
-
-#: formres.src#RID_RSC_ENUM_CHECKED.1.string.text
-msgid "Not Selected"
-msgstr "Не вибрано"
-
-#: formres.src#RID_RSC_ENUM_CHECKED.2.string.text
-msgid "Selected"
-msgstr "Вибрано"
-
-#: formres.src#RID_RSC_ENUM_CHECKED.3.string.text
-msgid "Not Defined"
-msgstr "Не визначено"
-
-#: formres.src#RID_RSC_ENUM_CYCLE.1.string.text
-msgid "All records"
-msgstr "Усі записи"
-
-#: formres.src#RID_RSC_ENUM_CYCLE.2.string.text
-msgid "Active record"
-msgstr "Активні записи"
-
-#: formres.src#RID_RSC_ENUM_CYCLE.3.string.text
-msgid "Current page"
-msgstr "Поточна сторінка"
-
-#: formres.src#RID_RSC_ENUM_NAVIGATION.1.string.text
-msgctxt "formres.src#RID_RSC_ENUM_NAVIGATION.1.string.text"
-msgid "No"
-msgstr "Ні"
-
-#: formres.src#RID_RSC_ENUM_NAVIGATION.2.string.text
-msgctxt "formres.src#RID_RSC_ENUM_NAVIGATION.2.string.text"
-msgid "Yes"
-msgstr "Так"
-
-#: formres.src#RID_RSC_ENUM_NAVIGATION.3.string.text
-msgid "Parent Form"
-msgstr "Батьківська форма"
-
-#: formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.string.text
-msgctxt "formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.string.text"
-msgid "None"
-msgstr "Немає"
-
-#: formres.src#RID_RSC_ENUM_SELECTION_TYPE.2.string.text
-msgid "Single"
-msgstr "Одиночний"
-
-#: formres.src#RID_RSC_ENUM_SELECTION_TYPE.3.string.text
-msgid "Multi"
-msgstr "Множинний"
-
-#: formres.src#RID_RSC_ENUM_SELECTION_TYPE.4.string.text
-msgid "Range"
-msgstr "Діапазон"
-
-#: formres.src#RID_STR_EVT_APPROVEPARAMETER.string.text
-msgid "Fill parameters"
-msgstr "При заповненні параметрів"
-
-#: formres.src#RID_STR_EVT_ACTIONPERFORMED.string.text
-msgid "Execute action"
-msgstr ""
-
-#: formres.src#RID_STR_EVT_AFTERUPDATE.string.text
-msgid "After updating"
-msgstr "Після оновлення"
-
-#: formres.src#RID_STR_EVT_BEFOREUPDATE.string.text
-msgid "Before updating"
-msgstr "Перед оновленням"
-
-#: formres.src#RID_STR_EVT_APPROVEROWCHANGE.string.text
-msgid "Before record action"
-msgstr "Перед збереженням"
-
-#: formres.src#RID_STR_EVT_ROWCHANGE.string.text
-msgid "After record action"
-msgstr "Після збереження"
-
-#: formres.src#RID_STR_EVT_CONFIRMDELETE.string.text
-msgid "Confirm deletion"
-msgstr "Підтвердити видалення"
-
-#: formres.src#RID_STR_EVT_ERROROCCURED.string.text
-msgid "Error occurred"
-msgstr "Виникла помилка"
-
-#: formres.src#RID_STR_EVT_FOCUSGAINED.string.text
-msgid "When receiving focus"
-msgstr "При отриманні фокусу"
-
-#: formres.src#RID_STR_EVT_FOCUSLOST.string.text
-msgid "When losing focus"
-msgstr "При втраті фокусу"
-
-#: formres.src#RID_STR_EVT_ITEMSTATECHANGED.string.text
-msgid "Item status changed"
-msgstr "Статус змінився"
-
-#: formres.src#RID_STR_EVT_KEYTYPED.string.text
-msgid "Key pressed"
-msgstr "Натиск клавіші"
-
-#: formres.src#RID_STR_EVT_KEYUP.string.text
-msgid "Key released"
-msgstr "Відпускання клавіші"
-
-#: formres.src#RID_STR_EVT_LOADED.string.text
-msgid "When loading"
-msgstr "При завантаженні"
-
-#: formres.src#RID_STR_EVT_RELOADING.string.text
-msgid "Before reloading"
-msgstr "Перед повторним завантаженням"
-
-#: formres.src#RID_STR_EVT_RELOADED.string.text
-msgid "When reloading"
-msgstr "При повторному завантаженні"
-
-#: formres.src#RID_STR_EVT_MOUSEDRAGGED.string.text
-msgid "Mouse moved while key pressed"
-msgstr "Переміщення миші з натиском клавішею"
-
-#: formres.src#RID_STR_EVT_MOUSEENTERED.string.text
-msgid "Mouse inside"
-msgstr "Мишка всередині"
-
-#: formres.src#RID_STR_EVT_MOUSEEXITED.string.text
-msgid "Mouse outside"
-msgstr "Мишка ззовні"
-
-#: formres.src#RID_STR_EVT_MOUSEMOVED.string.text
-msgid "Mouse moved"
-msgstr "Переміщення миші"
-
-#: formres.src#RID_STR_EVT_MOUSEPRESSED.string.text
-msgid "Mouse button pressed"
-msgstr "Натиск на кнопку миші"
-
-#: formres.src#RID_STR_EVT_MOUSERELEASED.string.text
-msgid "Mouse button released"
-msgstr "Відпускання кнопки миші"
-
-#: formres.src#RID_STR_EVT_POSITIONING.string.text
-msgid "Before record change"
-msgstr "Перед зміною запису"
-
-#: formres.src#RID_STR_EVT_POSITIONED.string.text
-msgid "After record change"
-msgstr "Після зміни запису"
-
-#: formres.src#RID_STR_EVT_RESETTED.string.text
-msgid "After resetting"
-msgstr "Після відновлення"
-
-#: formres.src#RID_STR_EVT_APPROVERESETTED.string.text
-msgid "Prior to reset"
-msgstr "Перед відновленням"
-
-#: formres.src#RID_STR_EVT_APPROVEACTIONPERFORMED.string.text
-msgid "Approve action"
-msgstr ""
-
-#: formres.src#RID_STR_EVT_SUBMITTED.string.text
-msgid "Before submitting"
-msgstr "Перед підтвердженням"
-
-#: formres.src#RID_STR_EVT_TEXTCHANGED.string.text
-msgid "Text modified"
-msgstr "Текст змінено"
-
-#: formres.src#RID_STR_EVT_UNLOADING.string.text
-msgid "Before unloading"
-msgstr "Перед вивантаженням"
-
-#: formres.src#RID_STR_EVT_UNLOADED.string.text
-msgid "When unloading"
-msgstr "При вивантаженні"
-
-#: formres.src#RID_STR_EVT_CHANGED.string.text
-msgid "Changed"
-msgstr "Зміна стану"
-
-#: formres.src#RID_STR_EVENTS.string.text
-msgid "Events"
-msgstr "Події"
-
-#: formres.src#RID_STR_ESCAPE_PROCESSING.string.text
-msgid "Analyze SQL command"
-msgstr "Аналіз команди SQL"
-
-#: formres.src#RID_STR_POSITIONX.string.text
-msgid "PositionX"
-msgstr "Позиція X"
-
-#: formres.src#RID_STR_POSITIONY.string.text
-msgid "PositionY"
-msgstr "Позиція Y"
-
-#: formres.src#RID_STR_TITLE.string.text
-msgid "Title"
-msgstr "Заголовок"
-
-#: formres.src#RID_STR_STEP.string.text
-msgid "Page (step)"
-msgstr "Сторінка (крок)"
-
-#: formres.src#RID_STR_PROGRESSVALUE.string.text
-msgid "Progress value"
-msgstr "Стан виконання"
-
-#: formres.src#RID_STR_PROGRESSVALUE_MIN.string.text
-msgid "Progress value min."
-msgstr "Мін. значення стану виконання"
-
-#: formres.src#RID_STR_PROGRESSVALUE_MAX.string.text
-msgid "Progress value max."
-msgstr "Макс. значення стану виконання"
-
-#: formres.src#RID_STR_SCROLLVALUE.string.text
-msgid "Scroll value"
-msgstr "Значення прокрутки"
-
-#: formres.src#RID_STR_SCROLLVALUE_MAX.string.text
-msgid "Scroll value max."
-msgstr "Макс. значення прокрутки"
-
-#: formres.src#RID_STR_SCROLLVALUE_MIN.string.text
-msgid "Scroll value min."
-msgstr "Мін. значення прокрутки"
-
-#: formres.src#RID_STR_DEFAULT_SCROLLVALUE.string.text
-msgid "Default scroll value"
-msgstr "Типове значення прокрутки"
-
-#: formres.src#RID_STR_LINEINCREMENT.string.text
-msgid "Small change"
-msgstr "Крок лінії"
-
-#: formres.src#RID_STR_BLOCKINCREMENT.string.text
-msgid "Large change"
-msgstr "Крок блоку"
-
-#: formres.src#RID_STR_REPEAT_DELAY.string.text
-msgid "Delay"
-msgstr "Затримка"
-
-#: formres.src#RID_STR_REPEAT.string.text
-msgid "Repeat"
-msgstr "Повторити"
-
-#: formres.src#RID_STR_VISIBLESIZE.string.text
-msgid "Visible size"
-msgstr "Видимий розмір"
-
-#: formres.src#RID_STR_ORIENTATION.string.text
-msgid "Orientation"
-msgstr "Орієнтація"
-
-#: formres.src#RID_RSC_ENUM_ORIENTATION.1.string.text
-msgctxt "formres.src#RID_RSC_ENUM_ORIENTATION.1.string.text"
-msgid "Horizontal"
-msgstr "Горизонтально"
-
-#: formres.src#RID_RSC_ENUM_ORIENTATION.2.string.text
-msgctxt "formres.src#RID_RSC_ENUM_ORIENTATION.2.string.text"
-msgid "Vertical"
-msgstr "Вертикально"
-
-#: formres.src#RID_STR_EVT_ADJUSTMENTVALUECHANGED.string.text
-msgid "While adjusting"
-msgstr "При вирівнюванні"
-
-#: formres.src#RID_STR_DATE.string.text
-msgid "Date"
-msgstr "Дата"
-
-#: formres.src#RID_STR_STATE.string.text
-msgid "State"
-msgstr "Область"
-
-#: formres.src#RID_STR_TIME.string.text
-msgid "Time"
-msgstr "Час"
-
-#: formres.src#RID_STR_SCALEIMAGE.string.text
-msgid "Scale"
-msgstr "Масштаб"
-
-#: formres.src#RID_STR_PUSHBUTTONTYPE.string.text
-msgid "Button type"
-msgstr "Тип кнопки"
-
-#: formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.string.text
-msgctxt "formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.string.text"
-msgid "Default"
-msgstr "Типово"
-
-#: formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.2.string.text
-msgid "OK"
-msgstr "Гаразд"
-
-#: formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.3.string.text
-msgid "Cancel"
-msgstr "Скасувати"
-
-#: formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.string.text
-msgctxt "formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.string.text"
-msgid "Help"
-msgstr "Довідка"
-
-#: formres.src#RID_STR_UNABLETOCONNECT.string.text
-msgid "The connection to the data source \"$name$\" could not be established."
-msgstr "Неможливо встановити з'єднання з джерелом даних \"$name$\"."
-
-#: formres.src#RID_STR_TEXT.string.text
-msgctxt "formres.src#RID_STR_TEXT.string.text"
-msgid "Text"
-msgstr "Текст"
-
-#: formres.src#RID_STR_BOUND_CELL.string.text
-msgid "Linked cell"
-msgstr "Пов'язані комірки"
-
-#: formres.src#RID_STR_LIST_CELL_RANGE.string.text
-msgid "Source cell range"
-msgstr "Діапазон вхідних комірок"
-
-#: formres.src#RID_STR_CELL_EXCHANGE_TYPE.string.text
-msgid "Contents of the linked cell"
-msgstr "Зміст пов'язаної комірки"
-
-#: formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.1.string.text
-msgid "The selected entry"
-msgstr "Виділений запис"
-
-#: formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.2.string.text
-msgid "Position of the selected entry"
-msgstr "Позиція виділеного запису"
-
-#: formres.src#RID_STR_SHOW_SCROLLBARS.string.text
-msgid "Scrollbars"
-msgstr "Смуги прокрутки"
-
-#: formres.src#RID_RSC_ENUM_TEXTTYPE.1.string.text
-msgid "Single-line"
-msgstr "Однорядковий"
-
-#: formres.src#RID_RSC_ENUM_TEXTTYPE.2.string.text
-msgid "Multi-line"
-msgstr "Багаторядковий"
-
-#: formres.src#RID_RSC_ENUM_TEXTTYPE.3.string.text
-msgid "Multi-line with formatting"
-msgstr "Багаторядковий з форматуванням"
-
-#: formres.src#RID_STR_SYMBOLCOLOR.string.text
-msgid "Symbol color"
-msgstr "Колір символів"
-
-#: formres.src#RID_STR_LINEEND_FORMAT.string.text
-msgid "Text lines end with"
-msgstr "Текстові рядки закінчуються"
-
-#: formres.src#RID_RSC_ENUM_LINEEND_FORMAT.1.string.text
-msgid "LF (Unix)"
-msgstr "LF (Unix)"
-
-#: formres.src#RID_RSC_ENUM_LINEEND_FORMAT.2.string.text
-msgid "CR+LF (Windows)"
-msgstr "CR+LF (Windows)"
-
-#: formres.src#RID_RSC_ENUM_SCROLLBARS.1.string.text
-msgctxt "formres.src#RID_RSC_ENUM_SCROLLBARS.1.string.text"
-msgid "None"
-msgstr "Нмеає"
-
-#: formres.src#RID_RSC_ENUM_SCROLLBARS.2.string.text
-msgctxt "formres.src#RID_RSC_ENUM_SCROLLBARS.2.string.text"
-msgid "Horizontal"
-msgstr "Горизонтально"
-
-#: formres.src#RID_RSC_ENUM_SCROLLBARS.3.string.text
-msgctxt "formres.src#RID_RSC_ENUM_SCROLLBARS.3.string.text"
-msgid "Vertical"
-msgstr "Вертикально"
-
-#: formres.src#RID_RSC_ENUM_SCROLLBARS.4.string.text
-msgid "Both"
-msgstr "По горизонталі та вертикалі"
-
-#: formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.string.text
-msgctxt "formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.string.text"
-msgid "Table"
-msgstr "Таблиця"
-
-#: formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.string.text
-msgctxt "formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.string.text"
-msgid "Query"
-msgstr "Запит"
-
-#: formres.src#RID_RSC_ENUM_COMMAND_TYPE.3.string.text
-msgid "SQL command"
-msgstr "Команда SQL"
-
-#: formres.src#RID_STR_TOGGLE.string.text
-msgid "Toggle"
-msgstr "Перемикнути"
-
-#: formres.src#RID_STR_FOCUSONCLICK.string.text
-msgid "Take Focus on Click"
-msgstr "Захоплювати фокус при клацанні."
-
-#: formres.src#RID_STR_HIDEINACTIVESELECTION.string.text
-msgid "Hide selection"
-msgstr "Приховати виділене"
-
-#: formres.src#RID_STR_VISUALEFFECT.string.text
-msgid "Style"
-msgstr "Стиль"
-
-#: formres.src#RID_RSC_ENUM_VISUALEFFECT.1.string.text
-msgid "3D"
-msgstr "Тривимірний"
-
-#: formres.src#RID_RSC_ENUM_VISUALEFFECT.2.string.text
-msgctxt "formres.src#RID_RSC_ENUM_VISUALEFFECT.2.string.text"
-msgid "Flat"
-msgstr "Плаский"
-
-#: formres.src#RID_STR_BORDERCOLOR.string.text
-msgid "Border color"
-msgstr "Колір рамки"
-
-#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.1.string.text
-msgid "Left top"
-msgstr "Ліворуч згори"
-
-#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.2.string.text
-msgid "Left centered"
-msgstr "Ліворуч"
-
-#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.3.string.text
-msgid "Left bottom"
-msgstr "Ліворуч знизу"
-
-#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.4.string.text
-msgid "Right top"
-msgstr "Праворуч згори"
-
-#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.5.string.text
-msgid "Right centered"
-msgstr "Праворуч"
-
-#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.6.string.text
-msgid "Right bottom"
-msgstr "Праворуч знизу"
-
-#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.7.string.text
-msgid "Above left"
-msgstr "Згори ліворуч"
-
-#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.8.string.text
-msgid "Above centered"
-msgstr "Згори"
-
-#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.9.string.text
-msgid "Above right"
-msgstr "Згори праворуч"
-
-#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.10.string.text
-msgid "Below left"
-msgstr "Знизу ліворуч"
-
-#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.11.string.text
-msgid "Below centered"
-msgstr "Знизу"
-
-#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.12.string.text
-msgid "Below right"
-msgstr "Знизу праворуч"
-
-#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.13.string.text
-msgid "Centered"
-msgstr "По центру"
-
-#: formres.src#RID_STR_AUTOLINEBREAK.string.text
-msgid "Wrap text automatically"
-msgstr "Обрізати текст по словам автоматично"
-
-#: formres.src#RID_STR_TEXTTYPE.string.text
-msgid "Text type"
-msgstr "Тип тексту"
-
-#: formres.src#RID_RSC_ENUM_SHOWHIDE.1.string.text
-msgid "Hide"
-msgstr ""
-
-#: formres.src#RID_RSC_ENUM_SHOWHIDE.2.string.text
-msgid "Show"
-msgstr ""
-
-#: formres.src#RID_STR_XML_DATA_MODEL.string.text
-msgid "XML data model"
-msgstr "Модель даних XML"
-
-#: formres.src#RID_STR_BIND_EXPRESSION.string.text
-msgid "Binding expression"
-msgstr "Вираз зв'язування"
-
-#: formres.src#RID_STR_XSD_REQUIRED.string.text
-msgid "Required"
-msgstr "Необхідно"
-
-#: formres.src#RID_STR_LIST_BINDING.string.text
-msgid "List entry source"
-msgstr "Джерело елементу списку"
-
-#: formres.src#RID_STR_XSD_RELEVANT.string.text
-msgid "Relevant"
-msgstr "Відноситься"
-
-#: formres.src#RID_STR_XSD_READONLY.string.text
-msgctxt "formres.src#RID_STR_XSD_READONLY.string.text"
-msgid "Read-only"
-msgstr "Лише для читання"
-
-#: formres.src#RID_STR_XSD_CONSTRAINT.string.text
-msgid "Constraint"
-msgstr "Обмеження"
-
-#: formres.src#RID_STR_XSD_CALCULATION.string.text
-msgid "Calculation"
-msgstr "Обчислення"
-
-#: formres.src#RID_STR_XSD_DATA_TYPE.string.text
-msgid "Data type"
-msgstr "Тип даних"
-
-#: formres.src#RID_STR_XSD_WHITESPACES.string.text
-msgid "Whitespaces"
-msgstr "Пробільні символи"
-
-#: formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.1.string.text
-msgid "Preserve"
-msgstr "Резервувати"
-
-#: formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.2.string.text
-msgid "Replace"
-msgstr "Замінити"
-
-#: formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.3.string.text
-msgid "Collapse"
-msgstr "Згорнути підабзаци"
-
-#: formres.src#RID_STR_XSD_PATTERN.string.text
-msgid "Pattern"
-msgstr "Орнамент"
-
-#: formres.src#RID_STR_XSD_LENGTH.string.text
-msgid "Length"
-msgstr "Довжина"
-
-#: formres.src#RID_STR_XSD_MIN_LENGTH.string.text
-msgid "Length (at least)"
-msgstr "Довжина (принаймні)"
-
-#: formres.src#RID_STR_XSD_MAX_LENGTH.string.text
-msgid "Length (at most)"
-msgstr "Довжина (не більше)"
-
-#: formres.src#RID_STR_XSD_TOTAL_DIGITS.string.text
-msgid "Digits (total)"
-msgstr "Розрядів (всього)"
-
-#: formres.src#RID_STR_XSD_FRACTION_DIGITS.string.text
-msgid "Digits (fraction)"
-msgstr "Розрядів (дробова частина)"
-
-#: formres.src#RID_STR_XSD_MAX_INCLUSIVE.string.text
-msgid "Max. (inclusive)"
-msgstr "Максимум (включно)"
-
-#: formres.src#RID_STR_XSD_MAX_EXCLUSIVE.string.text
-msgid "Max. (exclusive)"
-msgstr "Максимум (не включно)"
-
-#: formres.src#RID_STR_XSD_MIN_INCLUSIVE.string.text
-msgid "Min. (inclusive)"
-msgstr "Мінімум (включно)"
-
-#: formres.src#RID_STR_XSD_MIN_EXCLUSIVE.string.text
-msgid "Min. (exclusive)"
-msgstr "Мінімум (не включно)"
-
-#: formres.src#RID_STR_SUBMISSION_ID.string.text
-msgid "Submission"
-msgstr "Представлення"
-
-#: formres.src#RID_STR_BINDING_UI_NAME.string.text
-msgid "Binding"
-msgstr "Зв'язування"
-
-#: formres.src#RID_STR_SELECTION_TYPE.string.text
-msgid "Selection type"
-msgstr "Тип виділення"
-
-#: formres.src#RID_STR_ROOT_DISPLAYED.string.text
-msgid "Root displayed"
-msgstr "Відображати корінь"
-
-#: formres.src#RID_STR_SHOWS_HANDLES.string.text
-msgid "Show handles"
-msgstr "Показувати позначки"
-
-#: formres.src#RID_STR_SHOWS_ROOT_HANDLES.string.text
-msgid "Show root handles"
-msgstr "Показувати кореневі позначки"
-
-#: formres.src#RID_STR_EDITABLE.string.text
-msgid "Editable"
-msgstr "Редагований"
-
-#: formres.src#RID_STR_INVOKES_STOP_NOT_EDITING.string.text
-msgid "Invokes stop node editing"
-msgstr "Викликає редагування кінцевих вузлів"
-
-#: formres.src#RID_STR_DECORATION.string.text
-msgid "With title bar"
-msgstr "Із заголовком"
-
-#: formres.src#RID_STR_NOLABEL.string.text
-msgid "No Label"
-msgstr "Без позначки"
-
-#: formres.src#RID_RSC_ENUM_SCALE_MODE.1.string.text
-msgctxt "formres.src#RID_RSC_ENUM_SCALE_MODE.1.string.text"
-msgid "No"
-msgstr "Ні"
-
-#: formres.src#RID_RSC_ENUM_SCALE_MODE.2.string.text
-msgid "Keep Ratio"
-msgstr ""
-
-#: formres.src#RID_RSC_ENUM_SCALE_MODE.3.string.text
-msgid "Fit to Size"
-msgstr ""
-
-#: formres.src#RID_STR_INPUT_REQUIRED.string.text
-msgid "Input required"
-msgstr ""
-
-#: formres.src#RID_STR_WRITING_MODE.string.text
-msgid "Text direction"
-msgstr ""
-
-#: formres.src#RID_RSC_ENUM_WRITING_MODE.1.string.text
-msgid "Left-to-right"
-msgstr ""
-
-#: formres.src#RID_RSC_ENUM_WRITING_MODE.2.string.text
-msgid "Right-to-left"
-msgstr ""
-
-#: formres.src#RID_RSC_ENUM_WRITING_MODE.3.string.text
-msgid "Use superordinate object settings"
-msgstr ""
-
-#: formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.1.string.text
-msgid "Never"
-msgstr ""
-
-#: formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.2.string.text
-msgid "When focused"
-msgstr ""
-
-#: formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.3.string.text
-msgid "Always"
-msgstr ""
-
-#: formres.src#RID_STR_ANCHOR_TYPE.string.text
-msgid "Anchor"
-msgstr ""
-
-#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.1.string.text
-msgid "To Paragraph"
-msgstr ""
-
-#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.2.string.text
-msgid "As Character"
-msgstr "Символ"
-
-#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.string.text
-msgctxt "formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.string.text"
-msgid "To Page"
-msgstr ""
-
-#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.4.string.text
-msgid "To Frame"
-msgstr ""
-
-#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.5.string.text
-msgid "To Character"
-msgstr "Символ"
-
-#: formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.1.string.text
-msgctxt "formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.1.string.text"
-msgid "To Page"
-msgstr ""
-
-#: formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.2.string.text
-msgid "To Cell"
-msgstr ""
-
-#: formres.src#RID_STR_FONTSTYLE_REGULAR.string.text
-msgid "Regular"
-msgstr ""
-
-#: formres.src#RID_STR_FONTSTYLE_BOLD_ITALIC.string.text
-msgid "Bold Italic"
-msgstr ""
-
-#: formres.src#RID_STR_FONTSTYLE_ITALIC.string.text
-msgid "Italic"
-msgstr ""
-
-#: formres.src#RID_STR_FONTSTYLE_BOLD.string.text
-msgid "Bold"
-msgstr ""
-
-#: formres.src#RID_STR_FONT_DEFAULT.string.text
-msgid "(Default)"
-msgstr "Типово"
-
-#: newdatatype.src#RID_DLG_NEW_DATA_TYPE.FT_LABEL.fixedtext.text
-msgid "Type a name for the new data type:"
-msgstr "Введіть назву для нового типа даних:"
-
-#: newdatatype.src#RID_DLG_NEW_DATA_TYPE.modaldialog.text
-msgid "New Data Type"
-msgstr "Новий тип даних"
-
-#: pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.string.text
-msgid ""
-"Do you want to delete the data type '#type#' from the model?\n"
-"Please note that this will affect all controls which are bound to this data "
-"type."
-msgstr ""
-"Ви справді хочете видалити з моделі тип даних '#type#' ?\n"
-"Зауважте, що це вплине на всі органи керування (controls) з якими пов'язаний "
-"цей тип даних."
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.string.text
-msgid "Button"
-msgstr "Кнопка"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_RADIOBUTTON.string.text
-msgid "Option Button"
-msgstr "Перемикач"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_CHECKBOX.string.text
-msgid "Check Box"
-msgstr "Поле з відміткою"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.string.text
-msgctxt "pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.string.text"
-msgid "Label Field"
-msgstr "Позначка"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_GROUPBOX.string.text
-msgid "Group Box"
-msgstr "Група"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_EDIT.string.text
-msgid "Text Box"
-msgstr "Текстове поле"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_FORMATTED.string.text
-msgid "Formatted Field"
-msgstr "Поле форматування"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_LISTBOX.string.text
-msgid "List Box"
-msgstr "Список"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_COMBOBOX.string.text
-msgid "Combo Box"
-msgstr "Поле зі списком"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_IMAGEBUTTON.string.text
-msgid "Image Button"
-msgstr "Графічна кнопка"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_HIDDENCONTROL.string.text
-msgid "Hidden Control"
-msgstr "Прихований елемент керування"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_UNKNOWNCONTROL.string.text
-msgid "Control (unknown type)"
-msgstr "Елемент керування (невідомий тип)"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_IMAGECONTROL.string.text
-msgid "Image Control"
-msgstr "Графічний елемент керування"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_FILECONTROL.string.text
-msgid "File Selection"
-msgstr "Вибір файлу"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_DATEFIELD.string.text
-msgid "Date Field"
-msgstr "Поле дати"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_TIMEFIELD.string.text
-msgid "Time Field"
-msgstr "Поле часу"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_NUMERICFIELD.string.text
-msgid "Numeric Field"
-msgstr "Числове поле"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_CURRENCYFIELD.string.text
-msgid "Currency Field"
-msgstr "Поле валюти"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_PATTERNFIELD.string.text
-msgid "Pattern Field"
-msgstr "Поле з маскою вводу"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_DBGRID.string.text
-msgid "Table Control "
-msgstr "Елемент керування Таблиця"
-
-#: propres.src#RID_STR_STANDARD.string.text
-msgctxt "propres.src#RID_STR_STANDARD.string.text"
-msgid "Default"
-msgstr "Типово"
-
-#: propres.src#RID_STR_PROPPAGE_DEFAULT.string.text
-msgid "General"
-msgstr "Загальні"
-
-#: propres.src#RID_STR_PROPPAGE_DATA.string.text
-msgid "Data"
-msgstr "Дані"
-
-#: propres.src#RID_RSC_ENUM_YESNO.1.string.text
-msgctxt "propres.src#RID_RSC_ENUM_YESNO.1.string.text"
-msgid "No"
-msgstr "Ні"
-
-#: propres.src#RID_RSC_ENUM_YESNO.2.string.text
-msgctxt "propres.src#RID_RSC_ENUM_YESNO.2.string.text"
-msgid "Yes"
-msgstr "Так"
-
-#: propres.src#RID_STR_HELP_SECTION_LABEL.string.text
-msgctxt "propres.src#RID_STR_HELP_SECTION_LABEL.string.text"
-msgid "Help"
-msgstr "Довідка"
-
-#: propres.src#RID_EMBED_IMAGE_PLACEHOLDER.string.text
-msgid "<Embedded-Image>"
-msgstr ""
-
-#: propres.src#RID_STR_TEXT_FORMAT.string.text
-msgctxt "propres.src#RID_STR_TEXT_FORMAT.string.text"
-msgid "Text"
-msgstr "Текст"
-
-#: selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.fixedtext.text
-msgid ""
-"These are control fields that can be used as label fields for the "
-"$control_class$ $control_name$."
-msgstr ""
-"Елементи керування, які можуть бути використані у якості позначок для "
-"$control_class$ $control_name$."
-
-#: selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.checkbox.text
-msgid "~No assignment"
-msgstr "~Не призначати"
-
-#: selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.modaldialog.text
-msgid "Label Field Selection"
-msgstr "Вибір позначки"
-
-#: selectlabeldialog.src#RID_STR_FORMS.string.text
-msgid "Forms"
-msgstr "Форми"
-
-#: taborder.src#RID_DLG_TABORDER.FT_CONTROLS.fixedtext.text
-msgid "Controls"
-msgstr "Елементи керування"
-
-#: taborder.src#RID_DLG_TABORDER.PB_MOVE_UP.pushbutton.text
-msgid "Move Up"
-msgstr "Перемістити вгору"
-
-#: taborder.src#RID_DLG_TABORDER.PB_MOVE_DOWN.pushbutton.text
-msgid "Move Down"
-msgstr "Перемістити вниз"
-
-#: taborder.src#RID_DLG_TABORDER.PB_AUTO_ORDER.pushbutton.text
-msgid "Automatic Sort"
-msgstr "Автоматичне сортування"
-
-#: taborder.src#RID_DLG_TABORDER.modaldialog.text
-msgid "Tab Order"
-msgstr "Порядок активування"
-
-#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_SELECT_ABTYPE.string.text
-msgid "Address book type"
-msgstr "Тип адресної книги"
-
-#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_INVOKE_ADMIN_DIALOG.string.text
-msgid "Connection Settings"
-msgstr "Налаштовування зв'язку"
-
-#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_TABLE_SELECTION.string.text
-msgid "Table selection"
-msgstr "Вибір таблиці"
-
-#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.string.text
-msgctxt "abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.string.text"
-msgid "Field Assignment"
-msgstr "Призначення поля"
-
-#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_FINAL_CONFIRM.string.text
-msgid "Data Source Title"
-msgstr "Заголовок джерела даних"
-
-#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.modaldialog.text
-msgid "Address Book Data Source Wizard"
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.ModalDialog.Text
+msgid  "Address Book Data Source Wizard"
 msgstr "Помічник джерел даних адрес"
 
-#: abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.fixedtext.text
-msgid ""
-"%PRODUCTNAME lets you access address data already present in your system. To "
-"do this, a %PRODUCTNAME data source will be created in which your address "
-"data is available in tabular form.\n"
-"\n"
-"This wizard helps you create the data source."
-msgstr ""
-"%PRODUCTNAME надає доступ до адресних даних вже існуючих у вашій системі. "
-"Для цього будуть створені джерела даних %PRODUCTNAME, в яких ваші адресні "
-"будуть доступні у вигляді таблиць.\n"
-"\n"
-"Цей помічник допоможе створити джерело даних."
+#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_SELECT_ABTYPE.String.Text
+msgid  "Address book type"
+msgstr "Тип адресної книги"
 
-#: abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.fixedline.text
-msgid "Please select the type of your external address book:"
-msgstr "Виберіть тип зовнішньої адресної книги:"
+#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_INVOKE_ADMIN_DIALOG.String.Text
+msgid  "Connection Settings"
+msgstr "Налаштовування зв'язку"
 
-#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION.radiobutton.text
-msgid "Evolution"
-msgstr "Адресна книга Evolution"
+#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_TABLE_SELECTION.String.Text
+msgid  "Table selection"
+msgstr "Вибір таблиці"
 
-#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_GROUPWISE.radiobutton.text
-msgid "Groupwise"
-msgstr "Адресна книга Groupwise"
-
-#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_LDAP.radiobutton.text
-msgid "Evolution LDAP"
-msgstr "Адресна книга Evolution LDAP"
-
-#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_MORK.radiobutton.text
-msgid "Mozilla / Netscape"
-msgstr "Адресна книга Mozilla / Netscape"
-
-#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_THUNDERBIRD.radiobutton.text
-msgid "Thunderbird"
-msgstr "Адресна книга Thunderbird"
-
-#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_KAB.radiobutton.text
-msgid "KDE address book"
-msgstr "Адресна книга KDE"
-
-#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_MACAB.radiobutton.text
-msgid "Mac OS X address book"
-msgstr "Адресна книга Mac OS X"
-
-#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_LDAP.radiobutton.text
-msgid "LDAP address data"
-msgstr "Адреси LDAP"
-
-#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOK.radiobutton.text
-msgid "Outlook address book"
-msgstr "Адресна книга Outlook"
-
-#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOKEXPRESS.radiobutton.text
-msgid "Windows system address book"
-msgstr "Адресна книга Windows"
-
-#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_OTHER.radiobutton.text
-msgid "Other external data source"
-msgstr "Інше зовнішнє джерело даних"
-
-#: abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.fixedtext.text
-msgid ""
-"To set up the new data source, additional information is required.\n"
-"\n"
-"Click the following button to open another dialog in which you then enter "
-"the necessary information."
-msgstr ""
-"Для створення нових джерел даних потрібні додаткові параметри.\n"
-"\n"
-"Натисніть розташовану нижче кнопку, щоб відкрити діалогове вікно, у якому "
-"можна ввести необхідну інформацію."
-
-#: abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.pushbutton.text
-msgid "Settings"
-msgstr "Параметри"
-
-#: abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.fixedtext.text
-msgid ""
-"The connection to the data source could not be established.\n"
-"Before you proceed, please check the settings made, or (on the previous "
-"page) choose another address data source type."
-msgstr ""
-"Неможливо з'єднатись з джерелом даних.\n"
-"Перш ніж продовжити процес, перевірте параметри або виберіть (на попередній "
-"сторінці) інший тип джерела."
-
-#: abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.fixedtext.text
-msgid ""
-"The external data source you have chosen contains more than one address "
-"book.\n"
-"Please select the one you mainly want to work with:"
-msgstr ""
-"Вибрані зовнішні джерела даних містять декілька адресних книг.\n"
-"Виберіть вручну ті, з якими ви будете працювати далі."
-
-#: abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.fixedtext.text
-msgid ""
-"To incorporate the address data in your templates, %PRODUCTNAME has to know "
-"which fields contain which data.\n"
-"\n"
-"For instance, you could have stored the e-mail addresses in a field named "
-"\"email\", or \"E-mail\" or \"EM\" - or something completely different.\n"
-"\n"
-"Click the button below to open another dialog where you can enter the "
-"settings for your data source."
-msgstr ""
-"Для використання адрес у шаблонах, %PRODUCTNAME повинен знати поля та "
-"конкретні дані, які містяться у цих полях.\n"
-"\n"
-"Наприклад, адреси електронної пошти можуть зберігатись у полі з назвою "
-"\"E-Mail\" або \"Електронна пошта\" або з якоюсь іншою назвою.\n"
-"\n"
-"Натискаючи на розташовану нижче кнопку, можна ввести ці параметри."
-
-#: abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.pushbutton.text
-msgctxt "abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.pushbutton.text"
-msgid "Field Assignment"
+#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.String.Text
+msgid  "Field Assignment"
 msgstr "Призначення поля"
 
-#: abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.fixedtext.text
-msgid ""
-"That was all the information necessary to integrate your address data into %"
-"PRODUCTNAME.\n"
-"\n"
-"Now, just enter the name under which you want to register the data source in "
-"%PRODUCTNAME."
-msgstr ""
-"Інформацію, яка необхідна для інтеграції даних у %PRODUCTNAME зібрано.\n"
-"\n"
-"Залишилось ввести назву, з якою джерело даних буде зареєстроване у %"
-"PRODUCTNAME."
+#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_FINAL_CONFIRM.String.Text
+msgid  "Data Source Title"
+msgstr "Заголовок джерела даних"
 
-#: abspilot.src#RID_PAGE_FINAL.FT_LOCATION.fixedtext.text
-msgid "Location"
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
+msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
+msgstr ""
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
+msgid  "Please select the type of your external address book:"
+msgstr "Виберіть тип зовнішньої адресної книги:"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION.RadioButton.Text
+msgid  "Evolution"
+msgstr "Адресна книга Evolution"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_GROUPWISE.RadioButton.Text
+msgid  "Groupwise"
+msgstr "Адресна книга Groupwise"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_LDAP.RadioButton.Text
+msgid  "Evolution LDAP"
+msgstr "Адресна книга Evolution LDAP"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_MORK.RadioButton.Text
+msgid  "Mozilla / Netscape"
+msgstr "Адресна книга Mozilla / Netscape"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_THUNDERBIRD.RadioButton.Text
+msgid  "Thunderbird"
+msgstr "Адресна книга Thunderbird"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_KAB.RadioButton.Text
+msgid  "KDE address book"
+msgstr "Адресна книга KDE"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_MACAB.RadioButton.Text
+msgid  "Mac OS X address book"
+msgstr "Адресна книга Mac OS X"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_LDAP.RadioButton.Text
+msgid  "LDAP address data"
+msgstr "Адреси LDAP"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOK.RadioButton.Text
+msgid  "Outlook address book"
+msgstr "Адресна книга Outlook"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOKEXPRESS.RadioButton.Text
+msgid  "Windows system address book"
+msgstr "Адресна книга Windows"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OTHER.RadioButton.Text
+msgid  "Other external data source"
+msgstr "Інше зовнішнє джерело даних"
+
+#: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
+msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
+msgstr ""
+
+#: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
+msgid  "Settings"
+msgstr "Параметри"
+
+#: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
+msgid  "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
+msgstr ""
+
+#: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
+msgid  "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
+msgstr ""
+
+#: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
+msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named "email", or "E-mail" or "EM" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
+msgstr ""
+
+#: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
+msgid  "Field Assignment"
+msgstr "Призначення поля"
+
+#: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
+msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
+msgstr ""
+
+#: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
+msgid  "Location"
 msgstr "Розташування"
 
-#: abspilot.src#RID_PAGE_FINAL.PB_BROWSE.pushbutton.text
-msgid "Browse..."
+#: source/abpilot/abspilot.src#RID_PAGE_FINAL.PB_BROWSE.PushButton.Text
+msgid  "Browse..."
 msgstr "Огляд.."
 
-#: abspilot.src#RID_PAGE_FINAL.CB_REGISTER_DS.checkbox.text
-msgid "Make this address book available to all modules in %PRODUCTNAME."
+#: source/abpilot/abspilot.src#RID_PAGE_FINAL.CB_REGISTER_DS.CheckBox.Text
+msgid  "Make this address book available to all modules in %PRODUCTNAME."
 msgstr "Зробити цю адресну книгу видимою для всіх модулів %PRODUCTNAME."
 
-#: abspilot.src#RID_PAGE_FINAL.FT_NAME_EXPL.fixedtext.text
-msgid "Address book name"
+#: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_NAME_EXPL.FixedText.Text
+msgid  "Address book name"
 msgstr "Назва адресної книги"
 
-#: abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.fixedtext.text
-msgid ""
-"Another data source already has this name. As data sources have to have "
-"globally unique names, you need to choose another one."
+#: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.FixedText.Text
+msgid  "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
 msgstr ""
-"Джерело даних з такою назвою вже існує. Назви первинних даних мають бути "
-"унікальними. Потрібно обрати іншу назву."
 
-#: abspilot.src#RID_ERR_NEEDTYPESELECTION.errorbox.text
-msgid "Please select a type of address book."
+#: source/abpilot/abspilot.src#RID_ERR_NEEDTYPESELECTION.ErrorBox.Message
+msgid  "Please select a type of address book."
 msgstr "Виберіть тип адресної книги."
 
-#: abspilot.src#RID_QRY_NOTABLES.querybox.text
-msgid ""
-"The data source does not contain any tables.\n"
-"Do you want to set it up as an address data source, anyway?"
+#: source/abpilot/abspilot.src#RID_QRY_NOTABLES.QueryBox.Message
+msgid  "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
 msgstr ""
-"Ці дані не містять жодної таблиці.\n"
-"Встановити їх у якості джерел даних адрес?"
 
-#: abspilot.src#RID_STR_DEFAULT_NAME.string.text
-msgid "Addresses"
+#: source/abpilot/abspilot.src#RID_STR_DEFAULT_NAME.String.Text
+msgid  "Addresses"
 msgstr "Адреси"
 
-#: abspilot.src#RID_STR_ADMINDIALOGTITLE.string.text
-msgid "Create Address Data Source"
+#: source/abpilot/abspilot.src#RID_STR_ADMINDIALOGTITLE.String.Text
+msgid  "Create Address Data Source"
 msgstr "Створити джерело даних адрес"
 
-#: abspilot.src#RID_STR_NOCONNECTION.string.text
-msgid "The connection could not be established."
+#: source/abpilot/abspilot.src#RID_STR_NOCONNECTION.String.Text
+msgid  "The connection could not be established."
 msgstr "Неможливо встановити з'єднання."
 
-#: abspilot.src#RID_STR_PLEASECHECKSETTINGS.string.text
-msgid "Please check the settings made for the data source."
+#: source/abpilot/abspilot.src#RID_STR_PLEASECHECKSETTINGS.String.Text
+msgid  "Please check the settings made for the data source."
 msgstr "Перевірте параметри джерела даних."
 
-#: abspilot.src#RID_STR_FIELDDIALOGTITLE.string.text
-msgid "Address Data - Field Assignment"
+#: source/abpilot/abspilot.src#RID_STR_FIELDDIALOGTITLE.String.Text
+msgid  "Address Data - Field Assignment"
 msgstr "Адресні дані - призначення полів"
 
-#: abspilot.src#RID_STR_NOFIELDSASSIGNED.string.text
-msgid ""
-"There are no fields assigned at this time.\n"
-"You can either assign fields now or do so later by first choosing:\n"
-"\"File - Template - Address Book Source...\""
+#: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
+msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n"File - Template - Address Book Source...""
 msgstr ""
-"Наразі поля не призначені.\n"
-" Можна призначити їх зараз, а можна зробити це пізніше,\n"
-"в меню «Файл - Шаблони - Джерело адресної книги...»"
 
-#: bib.src#RID_BIB_STR_FIELDSELECTION.string.text
-msgid "Field selection:"
-msgstr "Вибір поля:"
-
-#: bib.src#RID_BIB_STR_TABWIN_PREFIX.string.text
-msgid "Table;Query;Sql;Sql [Native]"
-msgstr "Таблиця;Запит;Sql;Sql [Стандартний]"
-
-#: bib.src#RID_BIB_STR_FRAME_TITLE.string.text
-msgid "Bibliography Database"
-msgstr "База даних бібліографії"
-
-#: bib.src#RID_MAP_QUESTION.string.text
-msgid "Do you want to edit the column arrangement?"
-msgstr "Змінити розташування стовпчиків?"
-
-#: datman.src#RID_DLG_MAPPING.GB_MAPPING.fixedline.text
-msgid "Column names"
-msgstr "Назви стовпчиків"
-
-#: datman.src#RID_DLG_MAPPING.ST_NONE.string.text
-msgid "<none>"
-msgstr "<немає>"
-
-#: datman.src#RID_DLG_MAPPING.modaldialog.text
-msgid "Column Layout for Table %1"
-msgstr "Розташування стовпчика таблиці %1"
-
-#: datman.src#RID_DLG_DBCHANGE.ST_ENTRY.string.text
-msgid "Entry"
-msgstr "Джерело даних"
-
-#: datman.src#RID_DLG_DBCHANGE.modaldialog.text
-msgid "Choose Data Source"
-msgstr "Виберіть джерело даних"
-
-#: sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.string.text
-msgid "The following column names could not be assigned:\n"
-msgstr "Наступні назви стовпчиків не можуть бути призначені:\n"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.string.text
-msgid "Article"
-msgstr "Стаття"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_BOOK.string.text
-msgid "Book"
-msgstr "Книга"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_BOOKLET.string.text
-msgid "Brochures"
-msgstr "Брошура"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_CONFERENCE.string.text
-msgctxt "sections.src#RID_TP_GENERAL.ST_TYPE_CONFERENCE.string.text"
-msgid "Conference proceedings"
-msgstr "Звіт про конференцію"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_INBOOK.string.text
-msgid "Book excerpt"
-msgstr "Цитата з книжки"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_INCOLLECTION.string.text
-msgid "Book excerpt with title"
-msgstr "Виписка з книжки із заголовком"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_INPROCEEDINGS.string.text
-msgctxt "sections.src#RID_TP_GENERAL.ST_TYPE_INPROCEEDINGS.string.text"
-msgid "Conference proceedings"
-msgstr "Звіт про конференцію"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_JOURNAL.string.text
-msgid "Journal"
-msgstr "Журнал"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_MANUAL.string.text
-msgid "Techn. documentation"
-msgstr "Технічна документація"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_MASTERSTHESIS.string.text
-msgid "Thesis"
-msgstr "Дипломна робота"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_MISC.string.text
-msgid "Miscellaneous"
-msgstr "Різне"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_PHDTHESIS.string.text
-msgid "Dissertation"
-msgstr "Дисертація"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_PROCEEDINGS.string.text
-msgctxt "sections.src#RID_TP_GENERAL.ST_TYPE_PROCEEDINGS.string.text"
-msgid "Conference proceedings"
-msgstr "Звіт про конференцію"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_TECHREPORT.string.text
-msgid "Research report"
-msgstr "Звіт про наукове дослідження"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_UNPUBLISHED.string.text
-msgid "Unpublished"
-msgstr "Неопубліковане"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_EMAIL.string.text
-msgid "e-mail"
-msgstr "ел.пошта"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_WWW.string.text
-msgid "WWW document"
-msgstr "Веб-сторінка"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM1.string.text
-msgid "User-defined1"
-msgstr "Тип користувача1"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM2.string.text
-msgid "User-defined2"
-msgstr "Тип користувача2"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM3.string.text
-msgid "User-defined3"
-msgstr "Тип користувача3"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM4.string.text
-msgid "User-defined4"
-msgstr "Тип користувача4"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM5.string.text
-msgid "User-defined5"
-msgstr "Тип користувача5"
-
-#: sections.src#RID_TP_GENERAL.tabpage.text
-msgid "General"
-msgstr "Загальне"
-
-#: sections.src#RID_POPUP_ME_VIEW.PU_INSERT.menuitem.text
-msgid "Insert Section..."
-msgstr "Вставити розділ..."
-
-#: sections.src#RID_POPUP_ME_VIEW.PU_REMOVE.menuitem.text
-msgid "Delete Section..."
-msgstr "Видалити розділ..."
-
-#: sections.src#RID_POPUP_ME_VIEW.PU_CHG_NAME.menuitem.text
-msgid "Modify Name..."
-msgstr "Змінити назву..."
-
-#: sections.src#ST_IDENTIFIER.string.text
-msgid "~Short name"
-msgstr "~Скорочено"
-
-#: sections.src#ST_AUTHTYPE.string.text
-msgid "~Type"
-msgstr "~Тип"
-
-#: sections.src#ST_YEAR.string.text
-msgid "~Year"
-msgstr "~Рік"
-
-#: sections.src#ST_AUTHOR.string.text
-msgid "Author(s)"
-msgstr "Автор(и)"
-
-#: sections.src#ST_TITLE.string.text
-msgid "Tit~le"
-msgstr "~Заголовок"
-
-#: sections.src#ST_PUBLISHER.string.text
-msgid "~Publisher"
-msgstr "~Видавець"
-
-#: sections.src#ST_ADDRESS.string.text
-msgid "A~ddress"
-msgstr "~Адреса"
-
-#: sections.src#ST_ISBN.string.text
-msgid "~ISBN"
-msgstr "~ISBN"
-
-#: sections.src#ST_CHAPTER.string.text
-msgid "~Chapter"
-msgstr "~Глава"
-
-#: sections.src#ST_PAGE.string.text
-msgid "Pa~ge(s)"
-msgstr "~Сторінка(і)"
-
-#: sections.src#ST_EDITOR.string.text
-msgid "Editor"
-msgstr "Редактор"
-
-#: sections.src#ST_EDITION.string.text
-msgid "Ed~ition"
-msgstr "~Видання"
-
-#: sections.src#ST_BOOKTITLE.string.text
-msgid "~Book title"
-msgstr "~Назва книжки"
-
-#: sections.src#ST_VOLUME.string.text
-msgid "Volume"
-msgstr "Том"
-
-#: sections.src#ST_HOWPUBLISHED.string.text
-msgid "Publication t~ype"
-msgstr "~Тип видання"
-
-#: sections.src#ST_ORGANIZATION.string.text
-msgid "Organi~zation"
-msgstr "~Організація"
-
-#: sections.src#ST_INSTITUTION.string.text
-msgid "Instit~ution"
-msgstr "~Установа"
-
-#: sections.src#ST_SCHOOL.string.text
-msgid "University"
-msgstr "Університет"
-
-#: sections.src#ST_REPORT.string.text
-msgid "Type of re~port"
-msgstr "Тип ~звіту"
-
-#: sections.src#ST_MONTH.string.text
-msgid "~Month"
-msgstr "~Місяць"
-
-#: sections.src#ST_JOURNAL.string.text
-msgid "~Journal"
-msgstr "~Журнал"
-
-#: sections.src#ST_NUMBER.string.text
-msgid "Numb~er"
-msgstr "~Номер"
-
-#: sections.src#ST_SERIES.string.text
-msgid "Se~ries"
-msgstr "~Ряд"
-
-#: sections.src#ST_ANNOTE.string.text
-msgid "Ann~otation"
-msgstr "~Коментар"
-
-#: sections.src#ST_NOTE.string.text
-msgid "~Note"
-msgstr "~Примітка"
-
-#: sections.src#ST_URL.string.text
-msgid "URL"
-msgstr "URL"
-
-#: sections.src#ST_CUSTOM1.string.text
-msgid "User-defined field ~1"
-msgstr "Поле користувача ~1"
-
-#: sections.src#ST_CUSTOM2.string.text
-msgid "User-defined field ~2"
-msgstr "Поле користувача ~2"
-
-#: sections.src#ST_CUSTOM3.string.text
-msgid "User-defined field ~3"
-msgstr "Поле користувача ~3"
-
-#: sections.src#ST_CUSTOM4.string.text
-msgid "User-defined field ~4"
-msgstr "Поле користувача ~4"
-
-#: sections.src#ST_CUSTOM5.string.text
-msgid "User-defined field ~5"
-msgstr "Поле користувача ~5"
-
-#: toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.toolboxitem.text
-msgid "Table"
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
+msgid  "Table"
 msgstr "Таблиця"
 
-#: toolbar.src#RID_BIB_TOOLBAR.TBC_FT_QUERY.toolboxitem.text
-msgid "Search Key"
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_QUERY.ToolBoxItem.Text
+msgid  "Search Key"
 msgstr "Ключ пошуку"
 
-#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_AUTOFILTER.toolboxitem.text
-msgid "AutoFilter"
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_AUTOFILTER.ToolBoxItem.Text
+msgid  "AutoFilter"
 msgstr "Швидкий фільтр"
 
-#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_FILTERCRIT.toolboxitem.text
-msgid "Standard Filter"
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_FILTERCRIT.ToolBoxItem.Text
+msgid  "Standard Filter"
 msgstr "Стандартний фільтр"
 
-#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_REMOVEFILTER.toolboxitem.text
-msgid "Remove Filter"
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_REMOVEFILTER.ToolBoxItem.Text
+msgid  "Remove Filter"
 msgstr "Видалити фільтр"
 
-#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_COL_ASSIGN.toolboxitem.text
-msgid "Column Arrangement"
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_COL_ASSIGN.ToolBoxItem.Text
+msgid  "Column Arrangement"
 msgstr "Розташування стовпчиків"
 
-#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_CHANGESOURCE.toolboxitem.text
-msgid "Data Source"
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_CHANGESOURCE.ToolBoxItem.Text
+msgid  "Data Source"
 msgstr "Джерело даних"
 
-#: grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.pushbutton.text
-msgctxt "grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.pushbutton.text"
-msgid "Set"
-msgstr "Встановити"
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.String.Text
+msgid  "The following column names could not be assigned:\n"
+msgstr "Наступні назви стовпчиків не можуть бути призначені:\n"
 
-#: grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_ASCENDING.string.text
-msgid "Linear ascending"
-msgstr "Лінійне збільшення"
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.String.Text
+msgid  "Article"
+msgstr "Стаття"
 
-#: grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_DESCENDING.string.text
-msgid "Linear descending"
-msgstr "Лінійне зменшення"
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOK.String.Text
+msgid  "Book"
+msgstr "Книга"
 
-#: grid.src#GRID_DIALOG.RESET_TYPE_RESET.string.text
-msgid "Original values"
-msgstr "Оригінальні значення"
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOKLET.String.Text
+msgid  "Brochures"
+msgstr "Брошура"
 
-#: grid.src#GRID_DIALOG.RESET_TYPE_EXPONENTIAL.string.text
-msgid "Exponential increasing"
-msgstr "Експонентне збільшення"
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CONFERENCE.String.Text
+msgid  "Conference proceedings"
+msgstr "Звіт про конференцію"
 
-#: sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.pushbutton.text
-msgid ""
-"About\n"
-" Dev~ice"
-msgstr "~Пристрій"
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INBOOK.String.Text
+msgid  "Book excerpt"
+msgstr "Цитата з книжки"
 
-#: sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.pushbutton.text
-msgid ""
-"Create\n"
-"Preview"
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INCOLLECTION.String.Text
+msgid  "Book excerpt with title"
+msgstr "Виписка з книжки із заголовком"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INPROCEEDINGS.String.Text
+msgid  "Conference proceedings"
+msgstr "Звіт про конференцію"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_JOURNAL.String.Text
+msgid  "Journal"
+msgstr "Журнал"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MANUAL.String.Text
+msgid  "Techn. documentation"
+msgstr "Технічна документація"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MASTERSTHESIS.String.Text
+msgid  "Thesis"
+msgstr "Дипломна робота"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MISC.String.Text
+msgid  "Miscellaneous"
+msgstr "Різне"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PHDTHESIS.String.Text
+msgid  "Dissertation"
+msgstr "Дисертація"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PROCEEDINGS.String.Text
+msgid  "Conference proceedings"
+msgstr "Звіт про конференцію"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_TECHREPORT.String.Text
+msgid  "Research report"
+msgstr "Звіт про наукове дослідження"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_UNPUBLISHED.String.Text
+msgid  "Unpublished"
+msgstr "Неопубліковане"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_EMAIL.String.Text
+msgid  "e-mail"
+msgstr "ел.пошта"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_WWW.String.Text
+msgid  "WWW document"
+msgstr "Веб-сторінка"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM1.String.Text
+msgid  "User-defined1"
+msgstr "Тип користувача1"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM2.String.Text
+msgid  "User-defined2"
+msgstr "Тип користувача2"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM3.String.Text
+msgid  "User-defined3"
+msgstr "Тип користувача3"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM4.String.Text
+msgid  "User-defined4"
+msgstr "Тип користувача4"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM5.String.Text
+msgid  "User-defined5"
+msgstr "Тип користувача5"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.String.Text
+msgid  "General"
+msgstr "Загальне"
+
+#: source/bibliography/sections.src#RID_POPUP_ME_VIEW.PU_INSERT.MenuItem.Text
+msgid  "Insert Section..."
+msgstr "Вставити розділ..."
+
+#: source/bibliography/sections.src#RID_POPUP_ME_VIEW.PU_REMOVE.MenuItem.Text
+msgid  "Delete Section..."
+msgstr "Видалити розділ..."
+
+#: source/bibliography/sections.src#RID_POPUP_ME_VIEW.PU_CHG_NAME.MenuItem.Text
+msgid  "Modify Name..."
+msgstr "Змінити назву..."
+
+#: source/bibliography/sections.src#ST_IDENTIFIER.String.Text
+msgid  "~Short name"
+msgstr "~Скорочено"
+
+#: source/bibliography/sections.src#ST_AUTHTYPE.String.Text
+msgid  "~Type"
+msgstr "~Тип"
+
+#: source/bibliography/sections.src#ST_YEAR.String.Text
+msgid  "~Year"
+msgstr "~Рік"
+
+#: source/bibliography/sections.src#ST_AUTHOR.String.Text
+msgid  "Author(s)"
+msgstr "Автор(и)"
+
+#: source/bibliography/sections.src#ST_TITLE.String.Text
+msgid  "Tit~le"
+msgstr "~Заголовок"
+
+#: source/bibliography/sections.src#ST_PUBLISHER.String.Text
+msgid  "~Publisher"
+msgstr "~Видавець"
+
+#: source/bibliography/sections.src#ST_ADDRESS.String.Text
+msgid  "A~ddress"
+msgstr "~Адреса"
+
+#: source/bibliography/sections.src#ST_ISBN.String.Text
+msgid  "~ISBN"
+msgstr "~ISBN"
+
+#: source/bibliography/sections.src#ST_CHAPTER.String.Text
+msgid  "~Chapter"
+msgstr "~Глава"
+
+#: source/bibliography/sections.src#ST_PAGE.String.Text
+msgid  "Pa~ge(s)"
+msgstr "~Сторінка(і)"
+
+#: source/bibliography/sections.src#ST_EDITOR.String.Text
+msgid  "Editor"
+msgstr "Редактор"
+
+#: source/bibliography/sections.src#ST_EDITION.String.Text
+msgid  "Ed~ition"
+msgstr "~Видання"
+
+#: source/bibliography/sections.src#ST_BOOKTITLE.String.Text
+msgid  "~Book title"
+msgstr "~Назва книжки"
+
+#: source/bibliography/sections.src#ST_VOLUME.String.Text
+msgid  "Volume"
+msgstr "Том"
+
+#: source/bibliography/sections.src#ST_HOWPUBLISHED.String.Text
+msgid  "Publication t~ype"
+msgstr "~Тип видання"
+
+#: source/bibliography/sections.src#ST_ORGANIZATION.String.Text
+msgid  "Organi~zation"
+msgstr "~Організація"
+
+#: source/bibliography/sections.src#ST_INSTITUTION.String.Text
+msgid  "Instit~ution"
+msgstr "~Установа"
+
+#: source/bibliography/sections.src#ST_SCHOOL.String.Text
+msgid  "University"
+msgstr "Університет"
+
+#: source/bibliography/sections.src#ST_REPORT.String.Text
+msgid  "Type of re~port"
+msgstr "Тип ~звіту"
+
+#: source/bibliography/sections.src#ST_MONTH.String.Text
+msgid  "~Month"
+msgstr "~Місяць"
+
+#: source/bibliography/sections.src#ST_JOURNAL.String.Text
+msgid  "~Journal"
+msgstr "~Журнал"
+
+#: source/bibliography/sections.src#ST_NUMBER.String.Text
+msgid  "Numb~er"
+msgstr "~Номер"
+
+#: source/bibliography/sections.src#ST_SERIES.String.Text
+msgid  "Se~ries"
+msgstr "~Ряд"
+
+#: source/bibliography/sections.src#ST_ANNOTE.String.Text
+msgid  "Ann~otation"
+msgstr "~Коментар"
+
+#: source/bibliography/sections.src#ST_NOTE.String.Text
+msgid  "~Note"
+msgstr "~Примітка"
+
+#: source/bibliography/sections.src#ST_URL.String.Text
+msgid  "URL"
+msgstr "URL"
+
+#: source/bibliography/sections.src#ST_CUSTOM1.String.Text
+msgid  "User-defined field ~1"
+msgstr "Поле користувача ~1"
+
+#: source/bibliography/sections.src#ST_CUSTOM2.String.Text
+msgid  "User-defined field ~2"
+msgstr "Поле користувача ~2"
+
+#: source/bibliography/sections.src#ST_CUSTOM3.String.Text
+msgid  "User-defined field ~3"
+msgstr "Поле користувача ~3"
+
+#: source/bibliography/sections.src#ST_CUSTOM4.String.Text
+msgid  "User-defined field ~4"
+msgstr "Поле користувача ~4"
+
+#: source/bibliography/sections.src#ST_CUSTOM5.String.Text
+msgid  "User-defined field ~5"
+msgstr "Поле користувача ~5"
+
+#: source/bibliography/datman.src#RID_DLG_MAPPING.GB_MAPPING.FixedLine.Text
+msgid  "Column names"
+msgstr "Назви стовпчиків"
+
+#: source/bibliography/datman.src#RID_DLG_MAPPING.ST_NONE.String.Text
+msgid  "<none>"
+msgstr "<немає>"
+
+#: source/bibliography/datman.src#RID_DLG_MAPPING.String.Text
+msgid  "Column Layout for Table %1"
+msgstr "Розташування стовпчика таблиці %1"
+
+#: source/bibliography/datman.src#RID_DLG_DBCHANGE.ModalDialog.Text
+msgid  "Choose Data Source"
+msgstr "Виберіть джерело даних"
+
+#: source/bibliography/datman.src#RID_DLG_DBCHANGE.ST_ENTRY.String.Text
+msgid  "Entry"
+msgstr "Джерело даних"
+
+#: source/bibliography/bib.src#RID_BIB_STR_FIELDSELECTION.String.Text
+msgid  "Field selection:"
+msgstr "Вибір поля:"
+
+#: source/bibliography/bib.src#RID_BIB_STR_TABWIN_PREFIX.String.Text
+msgid  "Table;Query;Sql;Sql [Native]"
+msgstr "Таблиця;Запит;Sql;Sql [Стандартний]"
+
+#: source/bibliography/bib.src#RID_BIB_STR_FRAME_TITLE.String.Text
+msgid  "Bibliography Database"
+msgstr "База даних бібліографії"
+
+#: source/bibliography/bib.src#RID_MAP_QUESTION.String.Text
+msgid  "Do you want to edit the column arrangement?"
+msgstr "Змінити розташування стовпчиків?"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.TabPage.Text
+msgid  "Table Selection"
+msgstr "Вибір таблиці"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FL_FRAME.FixedLine.Text
+msgid  "Control"
+msgstr "Елемент керування"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
+msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
 msgstr ""
-"Створити\n"
-"попер.перегляд"
 
-#: sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.fixedline.text
-msgid "Preview"
-msgstr "Попередній перегляд"
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
+msgid  "Field Selection"
+msgstr "Вибір полів"
 
-#: sanedlg.src#RID_SANE_DIALOG.RID_SCANAREA_BOX.fixedline.text
-msgid "Scan area"
-msgstr "Область сканування"
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_TABLEFIELDS.FixedText.Text
+msgid  "Existing fields"
+msgstr "Доступні поля"
 
-#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_LEFT_TXT.fixedtext.text
-msgid "Left:"
-msgstr "Ліворуч:"
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_DISPLAYEDFIELD.FixedText.Text
+msgid  "Display field"
+msgstr "Показане поле"
 
-#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_TOP_TXT.fixedtext.text
-msgid "Top:"
-msgstr "Згори:"
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_COMBOBOX.String.Text
+msgid  "The contents of the field selected will be shown in the combo box list."
+msgstr "Вміст вибраного поля буде показаний у полі зі списком."
 
-#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RIGHT_TXT.fixedtext.text
-msgid "Right:"
-msgstr "Праворуч:"
-
-#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BOTTOM_TXT.fixedtext.text
-msgid "Bottom:"
-msgstr "Знизу:"
-
-#: sanedlg.src#RID_SANE_DIALOG.RID_DEVICE_BOX_TXT.fixedtext.text
-msgid "Device used:"
-msgstr "Використовується пристрій:"
-
-#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RESOLUTION_TXT.fixedtext.text
-msgid "Resolution [~DPI]"
-msgstr "Роздільна здатність [~DPI]"
-
-#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_ADVANCED_TXT.fixedtext.text
-msgid "Show advanced options"
-msgstr "Показати розширені параметри"
-
-#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_OPTION_TXT.fixedtext.text
-msgid "Options:"
-msgstr "Параметри:"
-
-#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_NUMERIC_VECTOR_TXT.fixedtext.text
-msgid "Vector element"
-msgstr "Векторний елемент"
-
-#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.pushbutton.text
-msgctxt "sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.pushbutton.text"
-msgid "Set"
-msgstr "Встановити"
-
-#: sanedlg.src#RID_SANE_DIALOG.modaldialog.text
-msgid "Scanner"
-msgstr "Сканер"
-
-#: sanedlg.src#RID_SANE_DEVICEINFO_TXT.string.text
-msgid ""
-"Device: %s\n"
-"Vendor: %s\n"
-"Model: %s\n"
-"Type: %s"
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.String.Text
+msgid  "The contents of the selected field will be shown in the list box if the linked fields are identical."
 msgstr ""
-"Пристрій: %s\n"
-"Виробник: %s\n"
-"Модель: %s\n"
-"Тип: %s"
 
-#: sanedlg.src#RID_SANE_SCANERROR_TXT.string.text
-msgid "An error occurred while scanning."
-msgstr "Помилка при скануванні."
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.TabPage.Text
+msgid  "Field Link"
+msgstr "Зв'язок полів"
 
-#: sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.string.text
-msgid ""
-"The device does not offer a preview option. Therefore, a normal scan will be "
-"used as a preview instead. This may take a considerable amount of time."
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.FixedText.Text
+msgid  "This is where you select fields with matching contents so that the value from the display field will be shown."
 msgstr ""
-"Пристрій не надає можливості попереднього перегляду. Натомість для "
-"попереднього перегляду використовується звичайне сканування, що займає "
-"значно більше часу."
 
-#: sanedlg.src#RID_SANE_NOSANELIB_TXT.string.text
-msgid "The SANE interface could not be initialized. Scanning is not possible."
-msgstr "Не вдається ініціалізувати інтерфейс SANE. Сканування неможливе."
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.FixedText.Text
+msgid  "Field from the ~Value Table"
+msgstr "Поле з таблиці ~значень"
 
-#: preload.src#RID_DLG_OEMWIZARD.PB_PREV.pushbutton.text
-msgid "<< Back"
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_TABLEFIELD.FixedText.Text
+msgid  "Field from the ~List Table"
+msgstr "Поле з таблиці ~списку"
+
+#: source/dbpilots/listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.String.Text
+msgid  "You can either save the value of the combo box in a database field or use it for display purposes."
+msgstr ""
+
+#: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.TabPage.Text
+msgid  "Field Selection"
+msgstr "Вибір полів"
+
+#: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FL_FRAME.FixedLine.Text
+msgid  "Table element"
+msgstr "Вибір полів"
+
+#: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.FixedText.Text
+msgid  "Existing fields"
+msgstr "Доступні поля"
+
+#: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_SELECTED_FIELDS.FixedText.Text
+msgid  "Selected fields"
+msgstr "Вибрані поля"
+
+#: source/dbpilots/gridpages.src#RID_STR_DATEPOSTFIX.String.Text
+msgid  " (Date)"
+msgstr " (Дата)"
+
+#: source/dbpilots/gridpages.src#RID_STR_TIMEPOSTFIX.String.Text
+msgid  " (Time)"
+msgstr " (Час)"
+
+#: source/dbpilots/dbpilots.src#RID_DLG_GROUPBOXWIZARD.ModalDialog.Text
+msgid  "Group Element Wizard"
+msgstr "Помічник групового блоку"
+
+#: source/dbpilots/dbpilots.src#RID_DLG_GRIDWIZARD.ModalDialog.Text
+msgid  "Table Element Wizard"
+msgstr "Помічник елементу керування Таблиця"
+
+#: source/dbpilots/dbpilots.src#RID_STR_LISTWIZARD_TITLE.String.Text
+msgid  "List Box Wizard"
+msgstr "Помічник списку"
+
+#: source/dbpilots/dbpilots.src#RID_STR_COMBOWIZARD_TITLE.String.Text
+msgid  "Combo Box Wizard"
+msgstr "Помічник поля зі списком"
+
+#: source/dbpilots/dbpilots.src#RID_STR_COULDNOTOPENTABLE.String.Text
+msgid  "The table connection to the data source could not be established."
+msgstr "Неможливо встановити з'єднання таблиці з первинними даними."
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.TabPage.Text
+msgid  "Data"
+msgstr "Дані"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FL_DATA.FixedLine.Text
+msgid  "Data"
+msgstr "Дані"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
+msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
+msgstr ""
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
+msgid  "~Data source:"
+msgstr "~Джерело даних:"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.PB_FORMDATASOURCE.PushButton.Text
+msgid  "~..."
+msgstr "~..."
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_TABLE.FixedText.Text
+msgid  "~Table / Query:"
+msgstr "~Таблиця/запит:"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.TabPage.Text
+msgid  "Database Field"
+msgstr "Поле бази даних"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.FT_DATABASEFIELD_QUEST.FixedText.Text
+msgid  "Do you want to save the value in a database field?"
+msgstr "Зберегти значення в полі бази даних?"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_YES.RadioButton.Text
+msgid  "~Yes, I want to save it in the following database field:"
+msgstr "~Так, зберегти в наступному полі бази даних:"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_NO.RadioButton.Text
+msgid  "~No, I only want to save the value in the form."
+msgstr "~Ні, зберегти лише значення у формі."
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FL_FORMSETINGS.FixedLine.Text
+msgid  "Form"
+msgstr "Форма"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMDATASOURCELABEL.FixedText.Text
+msgid  "Data source"
+msgstr "Джерело даних"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMCONTENTTYPELABEL.FixedText.Text
+msgid  "Content type"
+msgstr "Тип вмісту"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMTABLELABEL.FixedText.Text
+msgid  "Content"
+msgstr "Вміст"
+
+#: source/dbpilots/commonpagesdbp.src#RID_STR_TYPE_TABLE.String.Text
+msgid  "Table"
+msgstr "Таблиця"
+
+#: source/dbpilots/commonpagesdbp.src#RID_STR_TYPE_QUERY.String.Text
+msgid  "Query"
+msgstr "Запит"
+
+#: source/dbpilots/commonpagesdbp.src#RID_STR_TYPE_COMMAND.String.Text
+msgid  "SQL command"
+msgstr "Команда SQL"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.TabPage.Text
+msgid  "Data"
+msgstr "Дані"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOLABELS.FixedText.Text
+msgid  "Which ~names do you want to give the option fields?"
+msgstr "Які ~назви повинні містити поля параметрів?"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.FixedText.Text
+msgid  "~Option fields"
+msgstr "~Поля параметрів"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.TabPage.Text
+msgid  "Default Field Selection"
+msgstr "Вибір типового поля"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.FT_DEFAULTSELECTION.FixedText.Text
+msgid  "Should one option field be selected as a default?"
+msgstr "Встановити будь-яке типове поле параметрів?"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_YES.RadioButton.Text
+msgid  "~Yes, the following:"
+msgstr "~Так, наступне поле:"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_NO.RadioButton.Text
+msgid  "No, one particular field is not going to be selected."
+msgstr "Ні, не вибирати поля."
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.TabPage.Text
+msgid  "Field Values"
+msgstr "Значення поля"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES_EXPL.FixedText.Text
+msgid  "When you select an option, the option group is given a specific value."
+msgstr ""
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES.FixedText.Text
+msgid  "Which ~value do you want to assign to each option?"
+msgstr "Яке ~значення призначити кожному параметру?"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_RADIOBUTTONS.FixedText.Text
+msgid  "~Option fields"
+msgstr "~Поля параметрів"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.TabPage.Text
+msgid  "Create Option Group"
+msgstr "Створити групу параметрів"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_NAMEIT.FixedText.Text
+msgid  "Which ~caption is to be given to your option group?"
+msgstr "Який ~заголовок має отримати група параметрів?"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_THATSALL.FixedText.Text
+msgid  "These were all details needed to create the option group."
+msgstr "Це була вся інформація, необхідна для створення групи параметрів."
+
+#: source/dbpilots/groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.String.Text
+msgid  "You can either save the value of the option group in a database field or use it for a later action."
+msgstr ""
+
+#: source/preload/preload.src#RID_DLG_OEMWIZARD.PB_PREV.PushButton.Text
+msgid  "<< Back"
 msgstr "<< Назад"
 
-#: preload.src#RID_DLG_OEMWIZARD.PB_NEXT.pushbutton.text
-msgid "Next >>"
+#: source/preload/preload.src#RID_DLG_OEMWIZARD.PB_NEXT.PushButton.Text
+msgid  "Next >>"
 msgstr "Далі >>"
 
-#: preload.src#RID_DLG_OEMWIZARD.ST_ACCEPT.string.text
-msgid "Accept"
+#: source/preload/preload.src#RID_DLG_OEMWIZARD.ST_ACCEPT.String.Text
+msgid  "Accept"
 msgstr "Прийняти"
 
-#: preload.src#RID_DLG_OEMWIZARD.ST_FINISH.string.text
-msgid "Finish"
+#: source/preload/preload.src#RID_DLG_OEMWIZARD.ST_FINISH.String.Text
+msgid  "Finish"
 msgstr "Завершити"
 
-#: preload.src#RID_DLG_OEMWIZARD.ST_LICENSE_AGREEMENT.string.text
-msgid " - Software License Agreement"
+#: source/preload/preload.src#RID_DLG_OEMWIZARD.ST_LICENSE_AGREEMENT.String.Text
+msgid  " - Software License Agreement"
 msgstr "- Ліцензійна угода на використання програмного забезпечення"
 
-#: preload.src#RID_DLG_OEMWIZARD.ST_INSERT_USER_DATA.string.text
-msgid "- User Data"
+#: source/preload/preload.src#RID_DLG_OEMWIZARD.ST_INSERT_USER_DATA.String.Text
+msgid  "- User Data"
 msgstr "- Дані користувача"
 
-#: preload.src#RID_TP_WELCOME.FT_INFO.fixedtext.text
-msgid ""
-"Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n"
-"\n"
-"To start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal "
-"data in the dialog following the license text. Important information is "
-"contained in the readme files which are located in the %PRODUCTNAME product "
-"directory. Please read these files carefully. You can also find detailed "
-"information at the Oracle website \n"
-"\n"
-"http://www.oracle.com/us/products/applications/open-office."
-msgstr ""
-
-#: preload.src#RID_TP_WELCOME.tabpage.text
-msgid "Welcome"
+#: source/preload/preload.src#RID_TP_WELCOME.TabPage.Text
+msgid  "Welcome"
 msgstr "Ласкаво просимо"
 
-#: preload.src#RID_TP_LICENSE.FT_INFO1.fixedtext.text
-msgid "Please follow these steps to proceed with the installation:"
+#: source/preload/preload.src#RID_TP_WELCOME.FT_INFO.FixedText.Text
+msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \n\nhttp://www.oracle.com/us/products/applications/open-office."
 msgstr ""
-"Прочитайте наступну ліцензійну угоду. Щоб побачити решту тексту "
-"скористайтесь смугою прокрутки."
 
-#: preload.src#RID_TP_LICENSE.FT_INFO2_1.fixedtext.text
-msgid "1."
+#: source/preload/preload.src#RID_TP_LICENSE.TabPage.Text
+msgid  "License Agreement"
+msgstr "Ліцензійна угода"
+
+#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO1.FixedText.Text
+msgid  "Please follow these steps to proceed with the installation:"
+msgstr ""
+
+#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO2_1.FixedText.Text
+msgid  "1."
 msgstr "1."
 
-#: preload.src#RID_TP_LICENSE.FT_INFO2.fixedtext.text
-msgid ""
-"View the complete License Agreement. Please use the scroll bar or the '%"
-"PAGEDOWN' button in this dialog to view the entire license text."
+#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO2.FixedText.Text
+msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
 msgstr ""
-"Перегляньте всі умови ліцензійної угоди. Для перегляду тексту угоди повністю "
-"скористайтесь кнопкою «%PAGEDOWN» ."
 
-#: preload.src#RID_TP_LICENSE.PB_PAGEDOWN.pushbutton.text
-msgid "Page Down"
+#: source/preload/preload.src#RID_TP_LICENSE.PB_PAGEDOWN.PushButton.Text
+msgid  "Page Down"
 msgstr "Наступна сторінка"
 
-#: preload.src#RID_TP_LICENSE.FT_INFO3_1.fixedtext.text
-msgid "2."
+#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO3_1.FixedText.Text
+msgid  "2."
 msgstr "2."
 
-#: preload.src#RID_TP_LICENSE.FT_INFO3.fixedtext.text
-msgid "Accept the License Agreement."
+#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO3.FixedText.Text
+msgid  "Accept the License Agreement."
 msgstr "Прийняти ліцензійну угоду."
 
-#: preload.src#RID_TP_LICENSE.CB_ACCEPT.checkbox.text
-msgid "I accept the terms of the Agreement."
+#: source/preload/preload.src#RID_TP_LICENSE.CB_ACCEPT.CheckBox.Text
+msgid  "I accept the terms of the Agreement."
 msgstr "Я приймаю умови угоди."
 
-#: preload.src#RID_TP_LICENSE.LICENCE_ACCEPT.string.text
-msgid "~Accept"
+#: source/preload/preload.src#RID_TP_LICENSE.LICENCE_ACCEPT.String.Text
+msgid  "~Accept"
 msgstr "~Приймаю"
 
-#: preload.src#RID_TP_LICENSE.LICENCE_NOTACCEPT.string.text
-msgid "Decline"
+#: source/preload/preload.src#RID_TP_LICENSE.LICENCE_NOTACCEPT.String.Text
+msgid  "Decline"
 msgstr "Не приймаю"
 
-#: preload.src#RID_TP_LICENSE.tabpage.text
-msgid "License Agreement"
-msgstr "Ліцензійна угода"
+#: source/propctrlr/taborder.src#RID_DLG_TABORDER.ModalDialog.Text
+#, fuzzy
+msgid  "Tab Order"
+msgstr "Порядок активування"
+
+#: source/propctrlr/taborder.src#RID_DLG_TABORDER.FT_CONTROLS.FixedText.Text
+#, fuzzy
+msgid  "Controls"
+msgstr "Елементи керування"
+
+#: source/propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_UP.PushButton.Text
+#, fuzzy
+msgid  "Move Up"
+msgstr "Перемістити вгору"
+
+#: source/propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_DOWN.PushButton.Text
+#, fuzzy
+msgid  "Move Down"
+msgstr "Перемістити вниз"
+
+#: source/propctrlr/taborder.src#RID_DLG_TABORDER.PB_AUTO_ORDER.PushButton.Text
+#, fuzzy
+msgid  "Automatic Sort"
+msgstr "Автоматичне сортування"
+
+#: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.FixedText.Text
+msgid  "These are control fields that can be used as label fields for the $control_class$ $control_name$."
+msgstr ""
+
+#: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.CheckBox.Text
+#, fuzzy
+msgid  "~No assignment"
+msgstr "~Не призначати"
+
+#: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.CancelButton.Text
+#, fuzzy
+msgid  "Label Field Selection"
+msgstr "Вибір позначки"
+
+#: source/propctrlr/selectlabeldialog.src#RID_STR_FORMS.String.Text
+#, fuzzy
+msgid  "Forms"
+msgstr "Форми"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
+msgid  "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
+msgstr ""
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
+#, fuzzy
+msgid  "Button"
+msgstr "Кнопка"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_RADIOBUTTON.String.Text
+#, fuzzy
+msgid  "Option Button"
+msgstr "Перемикач"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CHECKBOX.String.Text
+#, fuzzy
+msgid  "Check Box"
+msgstr "Поле з відміткою"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.String.Text
+#, fuzzy
+msgid  "Label Field"
+msgstr "Позначка"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_GROUPBOX.String.Text
+#, fuzzy
+msgid  "Group Box"
+msgstr "Група"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_EDIT.String.Text
+#, fuzzy
+msgid  "Text Box"
+msgstr "Текстове поле"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FORMATTED.String.Text
+#, fuzzy
+msgid  "Formatted Field"
+msgstr "Поле форматування"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_LISTBOX.String.Text
+#, fuzzy
+msgid  "List Box"
+msgstr "Список"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_COMBOBOX.String.Text
+#, fuzzy
+msgid  "Combo Box"
+msgstr "Поле зі списком"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGEBUTTON.String.Text
+#, fuzzy
+msgid  "Image Button"
+msgstr "Графічна кнопка"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_HIDDENCONTROL.String.Text
+#, fuzzy
+msgid  "Hidden Control"
+msgstr "Прихований елемент керування"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_UNKNOWNCONTROL.String.Text
+#, fuzzy
+msgid  "Control (unknown type)"
+msgstr "Елемент керування (невідомий тип)"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGECONTROL.String.Text
+#, fuzzy
+msgid  "Image Control"
+msgstr "Графічний елемент керування"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FILECONTROL.String.Text
+#, fuzzy
+msgid  "File Selection"
+msgstr "Вибір файлу"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DATEFIELD.String.Text
+#, fuzzy
+msgid  "Date Field"
+msgstr "Поле дати"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_TIMEFIELD.String.Text
+#, fuzzy
+msgid  "Time Field"
+msgstr "Поле часу"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_NUMERICFIELD.String.Text
+#, fuzzy
+msgid  "Numeric Field"
+msgstr "Числове поле"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CURRENCYFIELD.String.Text
+#, fuzzy
+msgid  "Currency Field"
+msgstr "Поле валюти"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PATTERNFIELD.String.Text
+#, fuzzy
+msgid  "Pattern Field"
+msgstr "Поле з маскою вводу"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DBGRID.String.Text
+#, fuzzy
+msgid  "Table Control "
+msgstr "Елемент керування Таблиця"
+
+#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.ModalDialog.Text
+#, fuzzy
+msgid  "Link fields"
+msgstr "Зв'язок полів"
+
+#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.FixedText.Text
+msgid  "Sub forms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the sub form match which columns in the master form."
+msgstr ""
+
+#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.PB_SUGGEST.PushButton.Text
+#, fuzzy
+msgid  "Suggest"
+msgstr "Побажання"
+
+#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_DETAIL_FORM.String.Text
+#, fuzzy
+msgid  "Sub Form"
+msgstr "Підформа"
+
+#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_MASTER_FORM.String.Text
+#, fuzzy
+msgid  "Master Form"
+msgstr "Основна форма"
+
+#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_ERROR_RETRIEVING_COLUMNS.String.Text
+#, fuzzy
+msgid  "The columns of '#' could not be retrieved."
+msgstr "Неможливо отримати стовпчики підформи."
+
+#: source/propctrlr/propres.src#RID_STR_STANDARD.String.Text
+#, fuzzy
+msgid  "Default"
+msgstr "Типово"
+
+#: source/propctrlr/propres.src#RID_STR_PROPPAGE_DEFAULT.String.Text
+#, fuzzy
+msgid  "General"
+msgstr "Загальні"
+
+#: source/propctrlr/propres.src#RID_STR_PROPPAGE_DATA.String.Text
+#, fuzzy
+msgid  "Data"
+msgstr "Дані"
+
+#: source/propctrlr/propres.src#RID_RSC_ENUM_YESNO.1.String.Text
+#, fuzzy
+msgid  "No"
+msgstr "Ні"
+
+#: source/propctrlr/propres.src#RID_RSC_ENUM_YESNO.2.String.Text
+#, fuzzy
+msgid  "Yes"
+msgstr "Так"
+
+#: source/propctrlr/propres.src#RID_STR_HELP_SECTION_LABEL.String.Text
+#, fuzzy
+msgid  "Help"
+msgstr "Довідка"
+
+#: source/propctrlr/propres.src#RID_EMBED_IMAGE_PLACEHOLDER.String.Text
+msgid  "<Embedded-Image>"
+msgstr ""
+
+#: source/propctrlr/propres.src#RID_STR_TEXT_FORMAT.String.Text
+#, fuzzy
+msgid  "Text"
+msgstr "Текст"
+
+#: source/propctrlr/formres.src#RID_STR_EDITMASK.String.Text
+#, fuzzy
+msgid  "Edit mask"
+msgstr "Маска вводу"
+
+#: source/propctrlr/formres.src#RID_STR_LITERALMASK.String.Text
+#, fuzzy
+msgid  "Literal mask"
+msgstr "Маска знаків"
+
+#: source/propctrlr/formres.src#RID_STR_READONLY.String.Text
+#, fuzzy
+msgid  "Read-only"
+msgstr "Лише для читання"
+
+#: source/propctrlr/formres.src#RID_STR_ENABLED.String.Text
+#, fuzzy
+msgid  "Enabled"
+msgstr "Доступно"
+
+#: source/propctrlr/formres.src#RID_STR_ENABLE_VISIBLE.String.Text
+msgid  "Visible"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_STR_AUTOCOMPLETE.String.Text
+#, fuzzy
+msgid  "AutoFill"
+msgstr "Автозаповнення"
+
+#: source/propctrlr/formres.src#RID_STR_LINECOUNT.String.Text
+#, fuzzy
+msgid  "Line count"
+msgstr "Кількість рядків"
+
+#: source/propctrlr/formres.src#RID_STR_MAXTEXTLEN.String.Text
+#, fuzzy
+msgid  "Max. text length"
+msgstr "Максимальна довжина тексту"
+
+#: source/propctrlr/formres.src#RID_STR_SPIN.String.Text
+#, fuzzy
+msgid  "Spin Button"
+msgstr "Лічильник"
+
+#: source/propctrlr/formres.src#RID_STR_STRICTFORMAT.String.Text
+#, fuzzy
+msgid  "Strict format"
+msgstr "Перевірка формату"
+
+#: source/propctrlr/formres.src#RID_STR_SHOWTHOUSANDSEP.String.Text
+#, fuzzy
+msgid  "Thousands separator"
+msgstr "Розділювач розрядів"
+
+#: source/propctrlr/formres.src#RID_STR_PRINTABLE.String.Text
+msgid  "Printable"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_STR_TARGET_URL.String.Text
+#, fuzzy
+msgid  "URL"
+msgstr "URL"
+
+#: source/propctrlr/formres.src#RID_STR_TARGET_FRAME.String.Text
+#, fuzzy
+msgid  "Frame"
+msgstr "Кадр"
+
+#: source/propctrlr/formres.src#RID_STR_HELPTEXT.String.Text
+#, fuzzy
+msgid  "Help text"
+msgstr "Текст контекстної довідки"
+
+#: source/propctrlr/formres.src#RID_STR_HELPURL.String.Text
+#, fuzzy
+msgid  "Help URL"
+msgstr "URL довідки"
+
+#: source/propctrlr/formres.src#RID_STR_TAG.String.Text
+#, fuzzy
+msgid  "Additional information"
+msgstr "Додаткова інформація"
+
+#: source/propctrlr/formres.src#RID_STR_ECHO_CHAR.String.Text
+#, fuzzy
+msgid  "Password character"
+msgstr "Символи паролю"
+
+#: source/propctrlr/formres.src#RID_STR_TRISTATE.String.Text
+#, fuzzy
+msgid  "Tristate"
+msgstr "Потрійний стан"
+
+#: source/propctrlr/formres.src#RID_STR_EMPTY_IS_NULL.String.Text
+#, fuzzy
+msgid  "Empty string is NULL"
+msgstr "Порожній рядок - NULL"
+
+#: source/propctrlr/formres.src#RID_STR_DECIMAL_ACCURACY.String.Text
+#, fuzzy
+msgid  "Decimal accuracy"
+msgstr "Точність"
+
+#: source/propctrlr/formres.src#RID_STR_IMAGE_URL.String.Text
+#, fuzzy
+msgid  "Graphics"
+msgstr "Зображення"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULT_SELECT_SEQ.String.Text
+#, fuzzy
+msgid  "Default selection"
+msgstr "Типовий вибір"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULT_BUTTON.String.Text
+#, fuzzy
+msgid  "Default button"
+msgstr "Типова кнопка"
+
+#: source/propctrlr/formres.src#RID_STR_LABELCONTROL.String.Text
+#, fuzzy
+msgid  "Label Field"
+msgstr "Позначка"
+
+#: source/propctrlr/formres.src#RID_STR_LABEL.String.Text
+#, fuzzy
+msgid  "Label"
+msgstr "Текст"
+
+#: source/propctrlr/formres.src#RID_STR_ALIGN.String.Text
+#, fuzzy
+msgid  "Alignment"
+msgstr "Вирівнювання"
+
+#: source/propctrlr/formres.src#RID_STR_VERTICAL_ALIGN.String.Text
+#, fuzzy
+msgid  "Vert. Alignment"
+msgstr "Верт. вирівнювання"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.1.String.Text
+#, fuzzy
+msgid  "Top"
+msgstr "Згори"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.2.String.Text
+#, fuzzy
+msgid  "Middle"
+msgstr "У центрі"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.3.String.Text
+#, fuzzy
+msgid  "Bottom"
+msgstr "Знизу"
+
+#: source/propctrlr/formres.src#RID_STR_IMAGEPOSITION.String.Text
+#, fuzzy
+msgid  "Graphics alignment"
+msgstr "Вирівнювання графіки"
+
+#: source/propctrlr/formres.src#RID_STR_FONT.String.Text
+#, fuzzy
+msgid  "Font"
+msgstr "Шрифт"
+
+#: source/propctrlr/formres.src#RID_STR_BACKGROUNDCOLOR.String.Text
+#, fuzzy
+msgid  "Background color"
+msgstr "Колір тла"
+
+#: source/propctrlr/formres.src#RID_STR_BORDER.String.Text
+#, fuzzy
+msgid  "Border"
+msgstr "Рамка"
+
+#: source/propctrlr/formres.src#RID_STR_ICONSIZE.String.Text
+#, fuzzy
+msgid  "Icon size"
+msgstr "Розмір значків"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.1.String.Text
+#, fuzzy
+msgid  "Small"
+msgstr "Маленькі"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.2.String.Text
+#, fuzzy
+msgid  "Large"
+msgstr "Великі"
+
+#: source/propctrlr/formres.src#RID_STR_SHOW_POSITION.String.Text
+#, fuzzy
+msgid  "Positioning"
+msgstr "Позиціювання"
+
+#: source/propctrlr/formres.src#RID_STR_SHOW_NAVIGATION.String.Text
+#, fuzzy
+msgid  "Navigation"
+msgstr "Навігація"
+
+#: source/propctrlr/formres.src#RID_STR_SHOW_RECORDACTIONS.String.Text
+#, fuzzy
+msgid  "Acting on a record"
+msgstr "Дії над записом"
+
+#: source/propctrlr/formres.src#RID_STR_SHOW_FILTERSORT.String.Text
+#, fuzzy
+msgid  "Filtering / Sorting"
+msgstr "Фільтрація / сортування"
+
+#: source/propctrlr/formres.src#RID_STR_HSCROLL.String.Text
+#, fuzzy
+msgid  "Horizontal scroll bar"
+msgstr "Горизонтальна смуга прокрутки"
+
+#: source/propctrlr/formres.src#RID_STR_VSCROLL.String.Text
+#, fuzzy
+msgid  "Vertical scroll bar"
+msgstr "Вертикальна суга прокрутки"
+
+#: source/propctrlr/formres.src#RID_STR_WORDBREAK.String.Text
+#, fuzzy
+msgid  "Word break"
+msgstr "Розрив слова"
+
+#: source/propctrlr/formres.src#RID_STR_MULTILINE.String.Text
+#, fuzzy
+msgid  "Multiline input"
+msgstr "Багаторядковий ввід"
+
+#: source/propctrlr/formres.src#RID_STR_MULTISELECTION.String.Text
+#, fuzzy
+msgid  "Multiselection"
+msgstr "Групове виділення"
+
+#: source/propctrlr/formres.src#RID_STR_NAME.String.Text
+#, fuzzy
+msgid  "Name"
+msgstr "Назва"
+
+#: source/propctrlr/formres.src#RID_STR_TABINDEX.String.Text
+#, fuzzy
+msgid  "Tab order"
+msgstr "Порядок"
+
+#: source/propctrlr/formres.src#RID_STR_WHEEL_BEHAVIOR.String.Text
+msgid  "Mouse wheel scroll"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_STR_FILTER.String.Text
+#, fuzzy
+msgid  "Filter"
+msgstr "Фільтр"
+
+#: source/propctrlr/formres.src#RID_STR_SORT_CRITERIA.String.Text
+#, fuzzy
+msgid  "Sort"
+msgstr "Сортування"
+
+#: source/propctrlr/formres.src#RID_STR_RECORDMARKER.String.Text
+#, fuzzy
+msgid  "Record marker"
+msgstr "Маркер запису"
+
+#: source/propctrlr/formres.src#RID_STR_FILTERPROPOSAL.String.Text
+#, fuzzy
+msgid  "Filter proposal"
+msgstr "Сумарний фільтр"
+
+#: source/propctrlr/formres.src#RID_STR_NAVIGATION.String.Text
+#, fuzzy
+msgid  "Navigation bar"
+msgstr "Пенал навігації"
+
+#: source/propctrlr/formres.src#RID_STR_CYCLE.String.Text
+#, fuzzy
+msgid  "Cycle"
+msgstr "Цикл"
+
+#: source/propctrlr/formres.src#RID_STR_TABSTOP.String.Text
+#, fuzzy
+msgid  "Tabstop"
+msgstr "Зупинка табуляції"
+
+#: source/propctrlr/formres.src#RID_STR_CONTROLSOURCE.String.Text
+#, fuzzy
+msgid  "Data field"
+msgstr "Поле даних"
+
+#: source/propctrlr/formres.src#RID_STR_DROPDOWN.String.Text
+#, fuzzy
+msgid  "Dropdown"
+msgstr "Розкривний"
+
+#: source/propctrlr/formres.src#RID_STR_BOUNDCOLUMN.String.Text
+#, fuzzy
+msgid  "Bound field"
+msgstr "Прив'язане поле"
+
+#: source/propctrlr/formres.src#RID_STR_LISTSOURCE.String.Text
+#, fuzzy
+msgid  "List content"
+msgstr "Зміст списку"
+
+#: source/propctrlr/formres.src#RID_STR_LISTSOURCETYPE.String.Text
+#, fuzzy
+msgid  "Type of list contents"
+msgstr "Тип вмісту списку"
+
+#: source/propctrlr/formres.src#RID_STR_CURSORSOURCE.String.Text
+#, fuzzy
+msgid  "Content"
+msgstr "Зміст"
+
+#: source/propctrlr/formres.src#RID_STR_CURSORSOURCETYPE.String.Text
+#, fuzzy
+msgid  "Content type"
+msgstr "Тип вмісту"
+
+#: source/propctrlr/formres.src#RID_STR_ALLOW_ADDITIONS.String.Text
+#, fuzzy
+msgid  "Allow additions"
+msgstr "Дозволити додавання"
+
+#: source/propctrlr/formres.src#RID_STR_ALLOW_DELETIONS.String.Text
+#, fuzzy
+msgid  "Allow deletions"
+msgstr "Дозволити видалення"
+
+#: source/propctrlr/formres.src#RID_STR_ALLOW_EDITS.String.Text
+#, fuzzy
+msgid  "Allow modifications"
+msgstr "Дозволити зміни"
+
+#: source/propctrlr/formres.src#RID_STR_DATAENTRY.String.Text
+#, fuzzy
+msgid  "Add data only"
+msgstr "Дозволити лише додавання"
+
+#: source/propctrlr/formres.src#RID_STR_DATASOURCE.String.Text
+#, fuzzy
+msgid  "Data source"
+msgstr "Джерело даних"
+
+#: source/propctrlr/formres.src#RID_STR_MASTERFIELDS.String.Text
+#, fuzzy
+msgid  "Link master fields"
+msgstr "Зв'язок з головним полем"
+
+#: source/propctrlr/formres.src#RID_STR_SLAVEFIELDS.String.Text
+#, fuzzy
+msgid  "Link slave fields"
+msgstr "Зв'язок з підлеглим полем"
+
+#: source/propctrlr/formres.src#RID_STR_VALUEMIN.String.Text
+#, fuzzy
+msgid  "Value min."
+msgstr "Мінімальне значення"
+
+#: source/propctrlr/formres.src#RID_STR_VALUEMAX.String.Text
+#, fuzzy
+msgid  "Value max."
+msgstr "Максимальне значення"
+
+#: source/propctrlr/formres.src#RID_STR_VALUESTEP.String.Text
+#, fuzzy
+msgid  "Incr./decrement value"
+msgstr "Крок значення"
+
+#: source/propctrlr/formres.src#RID_STR_CURRENCYSYMBOL.String.Text
+#, fuzzy
+msgid  "Currency symbol"
+msgstr "Символ грошової одиниці"
+
+#: source/propctrlr/formres.src#RID_STR_DATEMIN.String.Text
+#, fuzzy
+msgid  "Date min."
+msgstr "Мінімальна дата"
+
+#: source/propctrlr/formres.src#RID_STR_DATEMAX.String.Text
+#, fuzzy
+msgid  "Date max."
+msgstr "Максимальна дата"
+
+#: source/propctrlr/formres.src#RID_STR_DATEFORMAT.String.Text
+#, fuzzy
+msgid  "Date format"
+msgstr "Формат даних"
+
+#: source/propctrlr/formres.src#RID_STR_SELECTEDITEMS.String.Text
+#, fuzzy
+msgid  "Selection"
+msgstr "Виділення"
+
+#: source/propctrlr/formres.src#RID_STR_TIMEMIN.String.Text
+#, fuzzy
+msgid  "Time min."
+msgstr "Мінімальний час"
+
+#: source/propctrlr/formres.src#RID_STR_TIMEMAX.String.Text
+#, fuzzy
+msgid  "Time max."
+msgstr "Максимальний час"
+
+#: source/propctrlr/formres.src#RID_STR_TIMEFORMAT.String.Text
+#, fuzzy
+msgid  "Time format"
+msgstr "Формат часу"
+
+#: source/propctrlr/formres.src#RID_STR_CURRSYM_POSITION.String.Text
+#, fuzzy
+msgid  "Prefix symbol"
+msgstr "Символ перед цифрами"
+
+#: source/propctrlr/formres.src#RID_STR_VALUE.String.Text
+#, fuzzy
+msgid  "Value"
+msgstr "Значення"
+
+#: source/propctrlr/formres.src#RID_STR_FORMATKEY.String.Text
+#, fuzzy
+msgid  "Formatting"
+msgstr "Форматування"
+
+#: source/propctrlr/formres.src#RID_STR_CLASSID.String.Text
+#, fuzzy
+msgid  "Class ID"
+msgstr "ID класу"
+
+#: source/propctrlr/formres.src#RID_STR_HEIGHT.String.Text
+#, fuzzy
+msgid  "Height"
+msgstr "Висота"
+
+#: source/propctrlr/formres.src#RID_STR_WIDTH.String.Text
+#, fuzzy
+msgid  "Width"
+msgstr "Ширина"
+
+#: source/propctrlr/formres.src#RID_STR_LISTINDEX.String.Text
+#, fuzzy
+msgid  "List index"
+msgstr "Індекс списку"
+
+#: source/propctrlr/formres.src#RID_STR_ROWHEIGHT.String.Text
+#, fuzzy
+msgid  "Row height"
+msgstr "Висота рядків"
+
+#: source/propctrlr/formres.src#RID_STR_FILLCOLOR.String.Text
+#, fuzzy
+msgid  "Fill color"
+msgstr "Колір заповнення"
+
+#: source/propctrlr/formres.src#RID_STR_LINECOLOR.String.Text
+#, fuzzy
+msgid  "Line color"
+msgstr "Колір лінії"
+
+#: source/propctrlr/formres.src#RID_STR_REFVALUE.String.Text
+#, fuzzy
+msgid  "Reference value (on)"
+msgstr "Значення покажчика (увімк)"
+
+#: source/propctrlr/formres.src#RID_STR_UNCHECKEDREFVALUE.String.Text
+#, fuzzy
+msgid  "Reference value (off)"
+msgstr "Значення покажчика (вимк.)"
+
+#: source/propctrlr/formres.src#RID_STR_STRINGITEMLIST.String.Text
+#, fuzzy
+msgid  "List entries"
+msgstr "Елементи списку"
+
+#: source/propctrlr/formres.src#RID_STR_BUTTONTYPE.String.Text
+#, fuzzy
+msgid  "Action"
+msgstr "Тип кнопки"
+
+#: source/propctrlr/formres.src#RID_STR_SUBMIT_ACTION.String.Text
+#, fuzzy
+msgid  "URL"
+msgstr "URL"
+
+#: source/propctrlr/formres.src#RID_STR_SUBMIT_METHOD.String.Text
+#, fuzzy
+msgid  "Type of submission"
+msgstr "Тип представлення"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULT_STATE.String.Text
+#, fuzzy
+msgid  "Default status"
+msgstr "Типовий стан"
+
+#: source/propctrlr/formres.src#RID_STR_SUBMIT_ENCODING.String.Text
+#, fuzzy
+msgid  "Submission encoding"
+msgstr "Кодування представлення"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULTVALUE.String.Text
+#, fuzzy
+msgid  "Default value"
+msgstr "Типове значення"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULTTEXT.String.Text
+#, fuzzy
+msgid  "Default text"
+msgstr "Типовий текст"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULTDATE.String.Text
+#, fuzzy
+msgid  "Default date"
+msgstr "Типова дата"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULTTIME.String.Text
+#, fuzzy
+msgid  "Default time"
+msgstr "Типовий час"
+
+#: source/propctrlr/formres.src#RID_STR_SUBMIT_TARGET.String.Text
+#, fuzzy
+msgid  "Frame"
+msgstr "Кадр"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.1.String.Text
+#, fuzzy
+msgid  "Without frame"
+msgstr "Без рамки"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.2.String.Text
+#, fuzzy
+msgid  "3D look"
+msgstr "Тривимірний вигляд"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.3.String.Text
+#, fuzzy
+msgid  "Flat"
+msgstr "Плаский"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.1.String.Text
+#, fuzzy
+msgid  "Valuelist"
+msgstr "Список значень"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.String.Text
+#, fuzzy
+msgid  "Table"
+msgstr "Таблиця"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.String.Text
+#, fuzzy
+msgid  "Query"
+msgstr "Запит"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.4.String.Text
+#, fuzzy
+msgid  "Sql"
+msgstr "Sql"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.5.String.Text
+#, fuzzy
+msgid  "Sql [Native]"
+msgstr "Sql [Native]"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.6.String.Text
+#, fuzzy
+msgid  "Tablefields"
+msgstr "Поля таблиці"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.1.String.Text
+#, fuzzy
+msgid  "Left"
+msgstr "Ліворуч"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.2.String.Text
+#, fuzzy
+msgid  "Center"
+msgstr "У центрі"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.3.String.Text
+#, fuzzy
+msgid  "Right"
+msgstr "Праворуч"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.1.String.Text
+#, fuzzy
+msgid  "None"
+msgstr "Нічого"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.2.String.Text
+#, fuzzy
+msgid  "Submit form"
+msgstr "Надіслати форму"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.3.String.Text
+#, fuzzy
+msgid  "Reset form"
+msgstr "Відносити форму"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.4.String.Text
+#, fuzzy
+msgid  "Open document/web page"
+msgstr "Відкрити документ/веб-сторінку"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.5.String.Text
+#, fuzzy
+msgid  "First record"
+msgstr "Перший запис"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.6.String.Text
+#, fuzzy
+msgid  "Previous record"
+msgstr "Попередній запис"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.7.String.Text
+#, fuzzy
+msgid  "Next record"
+msgstr "Наступний запис"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.8.String.Text
+#, fuzzy
+msgid  "Last record"
+msgstr "Останній запис"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.9.String.Text
+#, fuzzy
+msgid  "Save record"
+msgstr "Зберегти запис"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.10.String.Text
+#, fuzzy
+msgid  "Undo data entry"
+msgstr "Скасувати ввід даних"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.11.String.Text
+#, fuzzy
+msgid  "New record"
+msgstr "Додати запис"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.12.String.Text
+#, fuzzy
+msgid  "Delete record"
+msgstr "Видалити запис"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.13.String.Text
+#, fuzzy
+msgid  "Refresh form"
+msgstr "Оновити форму"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.1.String.Text
+#, fuzzy
+msgid  "Get"
+msgstr "Get"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.2.String.Text
+#, fuzzy
+msgid  "Post"
+msgstr "Post"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.String.Text
+#, fuzzy
+msgid  "URL"
+msgstr "URL"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.2.String.Text
+#, fuzzy
+msgid  "Multipart"
+msgstr "Multipart"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.String.Text
+#, fuzzy
+msgid  "Text"
+msgstr "Текст"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.1.String.Text
+#, fuzzy
+msgid  "Standard (short)"
+msgstr "Стандартний (короткий)"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.2.String.Text
+#, fuzzy
+msgid  "Standard (short YY)"
+msgstr "Стандартний (короткий РР)"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.3.String.Text
+#, fuzzy
+msgid  "Standard (short YYYY)"
+msgstr "Стандартний (короткий РРРР)"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.4.String.Text
+#, fuzzy
+msgid  "Standard (long)"
+msgstr "Стандартний (довгий)"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.5.String.Text
+#, fuzzy
+msgid  "DD/MM/YY"
+msgstr "ДД/ММ/РР"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.6.String.Text
+#, fuzzy
+msgid  "MM/DD/YY"
+msgstr "ММ/ДД/РР"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.7.String.Text
+#, fuzzy
+msgid  "YY/MM/DD"
+msgstr "РР/ММ/ДД"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.8.String.Text
+#, fuzzy
+msgid  "DD/MM/YYYY"
+msgstr "ДД/ММ/РРРР"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.9.String.Text
+#, fuzzy
+msgid  "MM/DD/YYYY"
+msgstr "ММ/ДД/РРРР"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.10.String.Text
+#, fuzzy
+msgid  "YYYY/MM/DD"
+msgstr "РРРР/ММ/ДД"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.11.String.Text
+#, fuzzy
+msgid  "YY-MM-DD"
+msgstr "РР-ММ-ДД"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.12.String.Text
+#, fuzzy
+msgid  "YYYY-MM-DD"
+msgstr "РРРР-ММ-ДД"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.1.String.Text
+#, fuzzy
+msgid  "13:45"
+msgstr "13:45"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.2.String.Text
+#, fuzzy
+msgid  "13:45:00"
+msgstr "13:45:00"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.3.String.Text
+#, fuzzy
+msgid  "01:45 PM"
+msgstr "01:45 PM"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.4.String.Text
+#, fuzzy
+msgid  "01:45:00 PM"
+msgstr "01:45:00 PM"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CHECKED.1.String.Text
+#, fuzzy
+msgid  "Not Selected"
+msgstr "Не вибрано"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CHECKED.2.String.Text
+#, fuzzy
+msgid  "Selected"
+msgstr "Вибрано"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CHECKED.3.String.Text
+#, fuzzy
+msgid  "Not Defined"
+msgstr "Не визначено"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CYCLE.1.String.Text
+#, fuzzy
+msgid  "All records"
+msgstr "Усі записи"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CYCLE.2.String.Text
+#, fuzzy
+msgid  "Active record"
+msgstr "Активні записи"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CYCLE.3.String.Text
+#, fuzzy
+msgid  "Current page"
+msgstr "Поточна сторінка"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.1.String.Text
+#, fuzzy
+msgid  "No"
+msgstr "Ні"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.2.String.Text
+#, fuzzy
+msgid  "Yes"
+msgstr "Так"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.3.String.Text
+#, fuzzy
+msgid  "Parent Form"
+msgstr "Батьківська форма"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.String.Text
+#, fuzzy
+msgid  "None"
+msgstr "Немає"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.2.String.Text
+#, fuzzy
+msgid  "Single"
+msgstr "Одиночний"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.3.String.Text
+#, fuzzy
+msgid  "Multi"
+msgstr "Множинний"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.4.String.Text
+#, fuzzy
+msgid  "Range"
+msgstr "Діапазон"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_APPROVEPARAMETER.String.Text
+#, fuzzy
+msgid  "Fill parameters"
+msgstr "При заповненні параметрів"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_ACTIONPERFORMED.String.Text
+msgid  "Execute action"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_STR_EVT_AFTERUPDATE.String.Text
+#, fuzzy
+msgid  "After updating"
+msgstr "Після оновлення"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_BEFOREUPDATE.String.Text
+#, fuzzy
+msgid  "Before updating"
+msgstr "Перед оновленням"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_APPROVEROWCHANGE.String.Text
+#, fuzzy
+msgid  "Before record action"
+msgstr "Перед збереженням"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_ROWCHANGE.String.Text
+#, fuzzy
+msgid  "After record action"
+msgstr "Після збереження"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_CONFIRMDELETE.String.Text
+#, fuzzy
+msgid  "Confirm deletion"
+msgstr "Підтвердити видалення"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_ERROROCCURED.String.Text
+#, fuzzy
+msgid  "Error occurred"
+msgstr "Виникла помилка"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_FOCUSGAINED.String.Text
+#, fuzzy
+msgid  "When receiving focus"
+msgstr "При отриманні фокусу"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_FOCUSLOST.String.Text
+#, fuzzy
+msgid  "When losing focus"
+msgstr "При втраті фокусу"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_ITEMSTATECHANGED.String.Text
+#, fuzzy
+msgid  "Item status changed"
+msgstr "Статус змінився"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_KEYTYPED.String.Text
+#, fuzzy
+msgid  "Key pressed"
+msgstr "Натиск клавіші"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_KEYUP.String.Text
+#, fuzzy
+msgid  "Key released"
+msgstr "Відпускання клавіші"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_LOADED.String.Text
+#, fuzzy
+msgid  "When loading"
+msgstr "При завантаженні"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_RELOADING.String.Text
+#, fuzzy
+msgid  "Before reloading"
+msgstr "Перед повторним завантаженням"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_RELOADED.String.Text
+#, fuzzy
+msgid  "When reloading"
+msgstr "При повторному завантаженні"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEDRAGGED.String.Text
+#, fuzzy
+msgid  "Mouse moved while key pressed"
+msgstr "Переміщення миші з натиском клавішею"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEENTERED.String.Text
+#, fuzzy
+msgid  "Mouse inside"
+msgstr "Мишка всередині"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEEXITED.String.Text
+#, fuzzy
+msgid  "Mouse outside"
+msgstr "Мишка ззовні"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEMOVED.String.Text
+#, fuzzy
+msgid  "Mouse moved"
+msgstr "Переміщення миші"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEPRESSED.String.Text
+#, fuzzy
+msgid  "Mouse button pressed"
+msgstr "Натиск на кнопку миші"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_MOUSERELEASED.String.Text
+#, fuzzy
+msgid  "Mouse button released"
+msgstr "Відпускання кнопки миші"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_POSITIONING.String.Text
+#, fuzzy
+msgid  "Before record change"
+msgstr "Перед зміною запису"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_POSITIONED.String.Text
+#, fuzzy
+msgid  "After record change"
+msgstr "Після зміни запису"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_RESETTED.String.Text
+#, fuzzy
+msgid  "After resetting"
+msgstr "Після відновлення"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_APPROVERESETTED.String.Text
+#, fuzzy
+msgid  "Prior to reset"
+msgstr "Перед відновленням"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_APPROVEACTIONPERFORMED.String.Text
+msgid  "Approve action"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_STR_EVT_SUBMITTED.String.Text
+#, fuzzy
+msgid  "Before submitting"
+msgstr "Перед підтвердженням"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_TEXTCHANGED.String.Text
+#, fuzzy
+msgid  "Text modified"
+msgstr "Текст змінено"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_UNLOADING.String.Text
+#, fuzzy
+msgid  "Before unloading"
+msgstr "Перед вивантаженням"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_UNLOADED.String.Text
+#, fuzzy
+msgid  "When unloading"
+msgstr "При вивантаженні"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_CHANGED.String.Text
+#, fuzzy
+msgid  "Changed"
+msgstr "Зміна стану"
+
+#: source/propctrlr/formres.src#RID_STR_EVENTS.String.Text
+#, fuzzy
+msgid  "Events"
+msgstr "Події"
+
+#: source/propctrlr/formres.src#RID_STR_ESCAPE_PROCESSING.String.Text
+#, fuzzy
+msgid  "Analyze SQL command"
+msgstr "Аналіз команди SQL"
+
+#: source/propctrlr/formres.src#RID_STR_POSITIONX.String.Text
+#, fuzzy
+msgid  "PositionX"
+msgstr "Позиція X"
+
+#: source/propctrlr/formres.src#RID_STR_POSITIONY.String.Text
+#, fuzzy
+msgid  "PositionY"
+msgstr "Позиція Y"
+
+#: source/propctrlr/formres.src#RID_STR_TITLE.String.Text
+#, fuzzy
+msgid  "Title"
+msgstr "Заголовок"
+
+#: source/propctrlr/formres.src#RID_STR_STEP.String.Text
+#, fuzzy
+msgid  "Page (step)"
+msgstr "Сторінка (крок)"
+
+#: source/propctrlr/formres.src#RID_STR_PROGRESSVALUE.String.Text
+#, fuzzy
+msgid  "Progress value"
+msgstr "Стан виконання"
+
+#: source/propctrlr/formres.src#RID_STR_PROGRESSVALUE_MIN.String.Text
+#, fuzzy
+msgid  "Progress value min."
+msgstr "Мін. значення стану виконання"
+
+#: source/propctrlr/formres.src#RID_STR_PROGRESSVALUE_MAX.String.Text
+#, fuzzy
+msgid  "Progress value max."
+msgstr "Макс. значення стану виконання"
+
+#: source/propctrlr/formres.src#RID_STR_SCROLLVALUE.String.Text
+#, fuzzy
+msgid  "Scroll value"
+msgstr "Значення прокрутки"
+
+#: source/propctrlr/formres.src#RID_STR_SCROLLVALUE_MAX.String.Text
+#, fuzzy
+msgid  "Scroll value max."
+msgstr "Макс. значення прокрутки"
+
+#: source/propctrlr/formres.src#RID_STR_SCROLLVALUE_MIN.String.Text
+#, fuzzy
+msgid  "Scroll value min."
+msgstr "Мін. значення прокрутки"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULT_SCROLLVALUE.String.Text
+#, fuzzy
+msgid  "Default scroll value"
+msgstr "Типове значення прокрутки"
+
+#: source/propctrlr/formres.src#RID_STR_LINEINCREMENT.String.Text
+#, fuzzy
+msgid  "Small change"
+msgstr "Крок лінії"
+
+#: source/propctrlr/formres.src#RID_STR_BLOCKINCREMENT.String.Text
+#, fuzzy
+msgid  "Large change"
+msgstr "Крок блоку"
+
+#: source/propctrlr/formres.src#RID_STR_REPEAT_DELAY.String.Text
+#, fuzzy
+msgid  "Delay"
+msgstr "Затримка"
+
+#: source/propctrlr/formres.src#RID_STR_REPEAT.String.Text
+#, fuzzy
+msgid  "Repeat"
+msgstr "Повторити"
+
+#: source/propctrlr/formres.src#RID_STR_VISIBLESIZE.String.Text
+#, fuzzy
+msgid  "Visible size"
+msgstr "Видимий розмір"
+
+#: source/propctrlr/formres.src#RID_STR_ORIENTATION.String.Text
+#, fuzzy
+msgid  "Orientation"
+msgstr "Орієнтація"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.1.String.Text
+#, fuzzy
+msgid  "Horizontal"
+msgstr "Горизонтально"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.2.String.Text
+#, fuzzy
+msgid  "Vertical"
+msgstr "Вертикально"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_ADJUSTMENTVALUECHANGED.String.Text
+#, fuzzy
+msgid  "While adjusting"
+msgstr "При вирівнюванні"
+
+#: source/propctrlr/formres.src#RID_STR_DATE.String.Text
+#, fuzzy
+msgid  "Date"
+msgstr "Дата"
+
+#: source/propctrlr/formres.src#RID_STR_STATE.String.Text
+#, fuzzy
+msgid  "State"
+msgstr "Область"
+
+#: source/propctrlr/formres.src#RID_STR_TIME.String.Text
+#, fuzzy
+msgid  "Time"
+msgstr "Час"
+
+#: source/propctrlr/formres.src#RID_STR_SCALEIMAGE.String.Text
+#, fuzzy
+msgid  "Scale"
+msgstr "Масштаб"
+
+#: source/propctrlr/formres.src#RID_STR_PUSHBUTTONTYPE.String.Text
+#, fuzzy
+msgid  "Button type"
+msgstr "Тип кнопки"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.String.Text
+#, fuzzy
+msgid  "Default"
+msgstr "Типово"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.2.String.Text
+#, fuzzy
+msgid  "OK"
+msgstr "Гаразд"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.3.String.Text
+#, fuzzy
+msgid  "Cancel"
+msgstr "Скасувати"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.String.Text
+#, fuzzy
+msgid  "Help"
+msgstr "Довідка"
+
+#: source/propctrlr/formres.src#RID_STR_UNABLETOCONNECT.String.Text
+msgid  "The connection to the data source "$name$" could not be established."
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_STR_TEXT.String.Text
+#, fuzzy
+msgid  "Text"
+msgstr "Текст"
+
+#: source/propctrlr/formres.src#RID_STR_BOUND_CELL.String.Text
+#, fuzzy
+msgid  "Linked cell"
+msgstr "Пов'язані комірки"
+
+#: source/propctrlr/formres.src#RID_STR_LIST_CELL_RANGE.String.Text
+#, fuzzy
+msgid  "Source cell range"
+msgstr "Діапазон вхідних комірок"
+
+#: source/propctrlr/formres.src#RID_STR_CELL_EXCHANGE_TYPE.String.Text
+#, fuzzy
+msgid  "Contents of the linked cell"
+msgstr "Зміст пов'язаної комірки"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.1.String.Text
+#, fuzzy
+msgid  "The selected entry"
+msgstr "Виділений запис"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.2.String.Text
+#, fuzzy
+msgid  "Position of the selected entry"
+msgstr "Позиція виділеного запису"
+
+#: source/propctrlr/formres.src#RID_STR_SHOW_SCROLLBARS.String.Text
+#, fuzzy
+msgid  "Scrollbars"
+msgstr "Смуги прокрутки"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.1.String.Text
+#, fuzzy
+msgid  "Single-line"
+msgstr "Однорядковий"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.2.String.Text
+#, fuzzy
+msgid  "Multi-line"
+msgstr "Багаторядковий"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.3.String.Text
+#, fuzzy
+msgid  "Multi-line with formatting"
+msgstr "Багаторядковий з форматуванням"
+
+#: source/propctrlr/formres.src#RID_STR_SYMBOLCOLOR.String.Text
+#, fuzzy
+msgid  "Symbol color"
+msgstr "Колір символів"
+
+#: source/propctrlr/formres.src#RID_STR_LINEEND_FORMAT.String.Text
+#, fuzzy
+msgid  "Text lines end with"
+msgstr "Текстові рядки закінчуються"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.1.String.Text
+#, fuzzy
+msgid  "LF (Unix)"
+msgstr "LF (Unix)"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.2.String.Text
+#, fuzzy
+msgid  "CR+LF (Windows)"
+msgstr "CR+LF (Windows)"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.1.String.Text
+#, fuzzy
+msgid  "None"
+msgstr "Нмеає"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.2.String.Text
+#, fuzzy
+msgid  "Horizontal"
+msgstr "Горизонтально"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.3.String.Text
+#, fuzzy
+msgid  "Vertical"
+msgstr "Вертикально"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.4.String.Text
+#, fuzzy
+msgid  "Both"
+msgstr "По горизонталі та вертикалі"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.String.Text
+#, fuzzy
+msgid  "Table"
+msgstr "Таблиця"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.String.Text
+#, fuzzy
+msgid  "Query"
+msgstr "Запит"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.3.String.Text
+#, fuzzy
+msgid  "SQL command"
+msgstr "Команда SQL"
+
+#: source/propctrlr/formres.src#RID_STR_TOGGLE.String.Text
+#, fuzzy
+msgid  "Toggle"
+msgstr "Перемикнути"
+
+#: source/propctrlr/formres.src#RID_STR_FOCUSONCLICK.String.Text
+#, fuzzy
+msgid  "Take Focus on Click"
+msgstr "Захоплювати фокус при клацанні."
+
+#: source/propctrlr/formres.src#RID_STR_HIDEINACTIVESELECTION.String.Text
+#, fuzzy
+msgid  "Hide selection"
+msgstr "Приховати виділене"
+
+#: source/propctrlr/formres.src#RID_STR_VISUALEFFECT.String.Text
+#, fuzzy
+msgid  "Style"
+msgstr "Стиль"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.1.String.Text
+#, fuzzy
+msgid  "3D"
+msgstr "Тривимірний"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.2.String.Text
+#, fuzzy
+msgid  "Flat"
+msgstr "Плаский"
+
+#: source/propctrlr/formres.src#RID_STR_BORDERCOLOR.String.Text
+#, fuzzy
+msgid  "Border color"
+msgstr "Колір рамки"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.1.String.Text
+#, fuzzy
+msgid  "Left top"
+msgstr "Ліворуч згори"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.2.String.Text
+#, fuzzy
+msgid  "Left centered"
+msgstr "Ліворуч"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.3.String.Text
+#, fuzzy
+msgid  "Left bottom"
+msgstr "Ліворуч знизу"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.4.String.Text
+#, fuzzy
+msgid  "Right top"
+msgstr "Праворуч згори"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.5.String.Text
+#, fuzzy
+msgid  "Right centered"
+msgstr "Праворуч"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.6.String.Text
+#, fuzzy
+msgid  "Right bottom"
+msgstr "Праворуч знизу"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.7.String.Text
+#, fuzzy
+msgid  "Above left"
+msgstr "Згори ліворуч"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.8.String.Text
+#, fuzzy
+msgid  "Above centered"
+msgstr "Згори"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.9.String.Text
+#, fuzzy
+msgid  "Above right"
+msgstr "Згори праворуч"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.10.String.Text
+#, fuzzy
+msgid  "Below left"
+msgstr "Знизу ліворуч"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.11.String.Text
+#, fuzzy
+msgid  "Below centered"
+msgstr "Знизу"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.12.String.Text
+#, fuzzy
+msgid  "Below right"
+msgstr "Знизу праворуч"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.13.String.Text
+#, fuzzy
+msgid  "Centered"
+msgstr "По центру"
+
+#: source/propctrlr/formres.src#RID_STR_AUTOLINEBREAK.String.Text
+#, fuzzy
+msgid  "Wrap text automatically"
+msgstr "Обрізати текст по словам автоматично"
+
+#: source/propctrlr/formres.src#RID_STR_TEXTTYPE.String.Text
+#, fuzzy
+msgid  "Text type"
+msgstr "Тип тексту"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.1.String.Text
+msgid  "Hide"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.2.String.Text
+msgid  "Show"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_STR_XML_DATA_MODEL.String.Text
+#, fuzzy
+msgid  "XML data model"
+msgstr "Модель даних XML"
+
+#: source/propctrlr/formres.src#RID_STR_BIND_EXPRESSION.String.Text
+#, fuzzy
+msgid  "Binding expression"
+msgstr "Вираз зв'язування"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_REQUIRED.String.Text
+#, fuzzy
+msgid  "Required"
+msgstr "Необхідно"
+
+#: source/propctrlr/formres.src#RID_STR_LIST_BINDING.String.Text
+#, fuzzy
+msgid  "List entry source"
+msgstr "Джерело елементу списку"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_RELEVANT.String.Text
+#, fuzzy
+msgid  "Relevant"
+msgstr "Відноситься"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_READONLY.String.Text
+#, fuzzy
+msgid  "Read-only"
+msgstr "Лише для читання"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_CONSTRAINT.String.Text
+#, fuzzy
+msgid  "Constraint"
+msgstr "Обмеження"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_CALCULATION.String.Text
+#, fuzzy
+msgid  "Calculation"
+msgstr "Обчислення"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_DATA_TYPE.String.Text
+#, fuzzy
+msgid  "Data type"
+msgstr "Тип даних"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_WHITESPACES.String.Text
+#, fuzzy
+msgid  "Whitespaces"
+msgstr "Пробільні символи"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.1.String.Text
+#, fuzzy
+msgid  "Preserve"
+msgstr "Резервувати"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.2.String.Text
+#, fuzzy
+msgid  "Replace"
+msgstr "Замінити"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.3.String.Text
+#, fuzzy
+msgid  "Collapse"
+msgstr "Згорнути підабзаци"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_PATTERN.String.Text
+#, fuzzy
+msgid  "Pattern"
+msgstr "Орнамент"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_LENGTH.String.Text
+#, fuzzy
+msgid  "Length"
+msgstr "Довжина"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_MIN_LENGTH.String.Text
+#, fuzzy
+msgid  "Length (at least)"
+msgstr "Довжина (принаймні)"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_MAX_LENGTH.String.Text
+#, fuzzy
+msgid  "Length (at most)"
+msgstr "Довжина (не більше)"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_TOTAL_DIGITS.String.Text
+#, fuzzy
+msgid  "Digits (total)"
+msgstr "Розрядів (всього)"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_FRACTION_DIGITS.String.Text
+#, fuzzy
+msgid  "Digits (fraction)"
+msgstr "Розрядів (дробова частина)"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_MAX_INCLUSIVE.String.Text
+#, fuzzy
+msgid  "Max. (inclusive)"
+msgstr "Максимум (включно)"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_MAX_EXCLUSIVE.String.Text
+#, fuzzy
+msgid  "Max. (exclusive)"
+msgstr "Максимум (не включно)"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_MIN_INCLUSIVE.String.Text
+#, fuzzy
+msgid  "Min. (inclusive)"
+msgstr "Мінімум (включно)"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_MIN_EXCLUSIVE.String.Text
+#, fuzzy
+msgid  "Min. (exclusive)"
+msgstr "Мінімум (не включно)"
+
+#: source/propctrlr/formres.src#RID_STR_SUBMISSION_ID.String.Text
+#, fuzzy
+msgid  "Submission"
+msgstr "Представлення"
+
+#: source/propctrlr/formres.src#RID_STR_BINDING_UI_NAME.String.Text
+#, fuzzy
+msgid  "Binding"
+msgstr "Зв'язування"
+
+#: source/propctrlr/formres.src#RID_STR_SELECTION_TYPE.String.Text
+#, fuzzy
+msgid  "Selection type"
+msgstr "Тип виділення"
+
+#: source/propctrlr/formres.src#RID_STR_ROOT_DISPLAYED.String.Text
+#, fuzzy
+msgid  "Root displayed"
+msgstr "Відображати корінь"
+
+#: source/propctrlr/formres.src#RID_STR_SHOWS_HANDLES.String.Text
+#, fuzzy
+msgid  "Show handles"
+msgstr "Показувати позначки"
+
+#: source/propctrlr/formres.src#RID_STR_SHOWS_ROOT_HANDLES.String.Text
+#, fuzzy
+msgid  "Show root handles"
+msgstr "Показувати кореневі позначки"
+
+#: source/propctrlr/formres.src#RID_STR_EDITABLE.String.Text
+#, fuzzy
+msgid  "Editable"
+msgstr "Редагований"
+
+#: source/propctrlr/formres.src#RID_STR_INVOKES_STOP_NOT_EDITING.String.Text
+#, fuzzy
+msgid  "Invokes stop node editing"
+msgstr "Викликає редагування кінцевих вузлів"
+
+#: source/propctrlr/formres.src#RID_STR_DECORATION.String.Text
+#, fuzzy
+msgid  "With title bar"
+msgstr "Із заголовком"
+
+#: source/propctrlr/formres.src#RID_STR_NOLABEL.String.Text
+#, fuzzy
+msgid  "No Label"
+msgstr "Без позначки"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.1.String.Text
+#, fuzzy
+msgid  "No"
+msgstr "Ні"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.2.String.Text
+msgid  "Keep Ratio"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.3.String.Text
+msgid  "Fit to Size"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_STR_INPUT_REQUIRED.String.Text
+msgid  "Input required"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_STR_WRITING_MODE.String.Text
+msgid  "Text direction"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.1.String.Text
+msgid  "Left-to-right"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.2.String.Text
+msgid  "Right-to-left"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.3.String.Text
+msgid  "Use superordinate object settings"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.1.String.Text
+msgid  "Never"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.2.String.Text
+msgid  "When focused"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.3.String.Text
+msgid  "Always"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_STR_ANCHOR_TYPE.String.Text
+msgid  "Anchor"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.1.String.Text
+msgid  "To Paragraph"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.2.String.Text
+#, fuzzy
+msgid  "As Character"
+msgstr "Символ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.String.Text
+msgid  "To Page"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.4.String.Text
+msgid  "To Frame"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.5.String.Text
+#, fuzzy
+msgid  "To Character"
+msgstr "Символ"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.1.String.Text
+msgid  "To Page"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.2.String.Text
+msgid  "To Cell"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_STR_FONTSTYLE_REGULAR.String.Text
+msgid  "Regular"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD_ITALIC.String.Text
+msgid  "Bold Italic"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_STR_FONTSTYLE_ITALIC.String.Text
+msgid  "Italic"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD.String.Text
+msgid  "Bold"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_STR_FONT_DEFAULT.String.Text
+#, fuzzy
+msgid  "(Default)"
+msgstr "Типово"
+
+#: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.TabDialog.Text
+#, fuzzy
+msgid  "Character"
+msgstr "Символ"
+
+#: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.PageItem.Text
+#, fuzzy
+msgid  "Font"
+msgstr "Шрифт"
+
+#: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS_EXT.PageItem.Text
+#, fuzzy
+msgid  "Font Effects"
+msgstr "Ефекти шрифту"
+
+#: source/propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.ModalDialog.Text
+#, fuzzy
+msgid  "New Data Type"
+msgstr "Новий тип даних"
+
+#: source/propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.FT_LABEL.FixedText.Text
+#, fuzzy
+msgid  "Type a name for the new data type:"
+msgstr "Введіть назву для нового типа даних:"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
+msgid  "About\n Dev~ice"
+msgstr ""
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
+msgid  "Create\nPreview"
+msgstr ""
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
+#, fuzzy
+msgid  "Preview"
+msgstr "Попередній перегляд"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCANAREA_BOX.FixedLine.Text
+#, fuzzy
+msgid  "Scan area"
+msgstr "Область сканування"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_LEFT_TXT.FixedText.Text
+#, fuzzy
+msgid  "Left:"
+msgstr "Ліворуч:"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_TOP_TXT.FixedText.Text
+#, fuzzy
+msgid  "Top:"
+msgstr "Згори:"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RIGHT_TXT.FixedText.Text
+#, fuzzy
+msgid  "Right:"
+msgstr "Праворуч:"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BOTTOM_TXT.FixedText.Text
+#, fuzzy
+msgid  "Bottom:"
+msgstr "Знизу:"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICE_BOX_TXT.FixedText.Text
+#, fuzzy
+msgid  "Device used:"
+msgstr "Використовується пристрій:"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RESOLUTION_TXT.FixedText.Text
+#, fuzzy
+msgid  "Resolution [~DPI]"
+msgstr "Роздільна здатність [~DPI]"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_ADVANCED_TXT.FixedText.Text
+#, fuzzy
+msgid  "Show advanced options"
+msgstr "Показати розширені параметри"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_OPTION_TXT.FixedText.Text
+#, fuzzy
+msgid  "Options:"
+msgstr "Параметри:"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_NUMERIC_VECTOR_TXT.FixedText.Text
+#, fuzzy
+msgid  "Vector element"
+msgstr "Векторний елемент"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.PushButton.Text
+#, fuzzy
+msgid  "Set"
+msgstr "Встановити"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.Bitmap.Text
+#, fuzzy
+msgid  "Scanner"
+msgstr "Сканер"
+
+#: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
+msgid  "Device: %s\nVendor: %s\nModel: %s\nType: %s"
+msgstr ""
+
+#: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
+#, fuzzy
+msgid  "An error occurred while scanning."
+msgstr "Помилка при скануванні."
+
+#: source/scanner/sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.String.Text
+msgid  "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
+msgstr ""
+
+#: source/scanner/sanedlg.src#RID_SANE_NOSANELIB_TXT.String.Text
+#, fuzzy
+msgid  "The SANE interface could not be initialized. Scanning is not possible."
+msgstr "Не вдається ініціалізувати інтерфейс SANE. Сканування неможливе."
+
+#: source/scanner/grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.PushButton.Text
+#, fuzzy
+msgid  "Set"
+msgstr "Встановити"
+
+#: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_ASCENDING.String.Text
+#, fuzzy
+msgid  "Linear ascending"
+msgstr "Лінійне збільшення"
+
+#: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_DESCENDING.String.Text
+#, fuzzy
+msgid  "Linear descending"
+msgstr "Лінійне зменшення"
+
+#: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_RESET.String.Text
+#, fuzzy
+msgid  "Original values"
+msgstr "Оригінальні значення"
+
+#: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_EXPONENTIAL.String.Text
+#, fuzzy
+msgid  "Exponential increasing"
+msgstr "Експонентне збільшення"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_CHECKING.String.Text
+#, fuzzy
+msgid  "Checking..."
+msgstr "Перевірка..."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_CHECKING_ERR.String.Text
+#, fuzzy
+msgid  "Checking for an update failed."
+msgstr "Невдала перевірка оновлень."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_NO_UPD_FOUND.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME %PRODUCTVERSION is up to date."
+msgstr "%PRODUCTNAME %PRODUCTVERSION останньої версії."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.String.Text
+msgid  "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
+msgstr ""
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.String.Text
+#, fuzzy
+msgid  "Check for Updates"
+msgstr "Перевірити наявність оновлень"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_PAUSE.String.Text
+#, fuzzy
+msgid  "Downloading %PRODUCTNAME %NEXTVERSION paused at..."
+msgstr "Завантаження %PRODUCTNAME %NEXTVERSION призупинено на..."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_ERR.String.Text
+#, fuzzy
+msgid  "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
+msgstr "Завантаження %PRODUCTNAME %NEXTVERSION призупинено на"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.String.Text
+msgid  "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
+msgstr ""
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.String.Text
+#, fuzzy
+msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
+msgstr "%FILE_NAME було завантажено до %DOWNLOAD_PATH."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.String.Text
+msgid  "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
+msgstr ""
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.String.Text
+#, fuzzy
+msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
+msgstr "Завантаження %PRODUCTNAME %NEXTVERSION..."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_READY_INSTALL.String.Text
+msgid  "Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
+msgstr ""
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_DOWNLOAD.String.Text
+#, fuzzy
+msgid  "Do you really want to cancel the download?"
+msgstr "Ви справді хочете скасувати завантаження?"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.String.Text
+msgid  "To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do you want to install the update now?"
+msgstr ""
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.String.Text
+#, fuzzy
+msgid  "Install ~now"
+msgstr "Встановити ~зараз"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_LATER.String.Text
+#, fuzzy
+msgid  "Install ~later"
+msgstr "Встановити п~ізніше"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.String.Text
+msgid  "Could not run the installer application, please run %FILE_NAME in %DOWNLOAD_PATH manually."
+msgstr ""
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.String.Text
+msgid  "A file with that name already exists! Do you want to overwrite the existing file?"
+msgstr ""
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.String.Text
+msgid  "A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you want to continue with the download or delete and reload the file?"
+msgstr ""
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_RELOAD.String.Text
+msgid  "Reload File"
+msgstr ""
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_CONTINUE.String.Text
+msgid  "Continue"
+msgstr ""
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_PERCENT.String.Text
+#, fuzzy
+msgid  "%PERCENT%"
+msgstr "%PERCENT%"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_FT_STATUS.String.Text
+#, fuzzy
+msgid  "Status"
+msgstr "Статус"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_FT_DESCRIPTION.String.Text
+#, fuzzy
+msgid  "Description"
+msgstr "Опис"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BTN_CLOSE.String.Text
+#, fuzzy
+msgid  "Close"
+msgstr "Закрити"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BTN_DOWNLOAD.String.Text
+#, fuzzy
+msgid  "~Download"
+msgstr "~Завантажити"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BTN_INSTALL.String.Text
+#, fuzzy
+msgid  "~Install"
+msgstr "~Встановити"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BTN_PAUSE.String.Text
+#, fuzzy
+msgid  "~Pause"
+msgstr "Приз~упинити"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BTN_RESUME.String.Text
+#, fuzzy
+msgid  "~Resume"
+msgstr "Пр~одовжити"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BTN_CANCEL.String.Text
+#, fuzzy
+msgid  "Cancel"
+msgstr "Скасувати"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME update available"
+msgstr "Доступні оновлення %PRODUCTNAME"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_AVAIL.String.Text
+#, fuzzy
+msgid  "Click here to start the download."
+msgstr "Клацніть тут для початку завантаження."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME update available"
+msgstr "Доступні оновлення %PRODUCTNAME"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.String.Text
+msgid  "Click here for more information."
+msgstr "Клацніть тут для подробиць."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME update available"
+msgstr "Доступні оновлення %PRODUCTNAME"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_AUTO_START.String.Text
+#, fuzzy
+msgid  "Download of update begins."
+msgstr "Початок завантаження оновлень"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOADING.String.Text
+#, fuzzy
+msgid  "Download of update in progress"
+msgstr "Завантаження оновлень"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_PAUSED.String.Text
+#, fuzzy
+msgid  "Download of update paused"
+msgstr "Завантаження оновлень призупинено"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_PAUSED.String.Text
+#, fuzzy
+msgid  "Click here to resume."
+msgstr "Клацніть тут для продовження."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_ERROR_DOWNLOADING.String.Text
+#, fuzzy
+msgid  "Download of update stalled"
+msgstr "Завантаження оновлень зупинено"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.String.Text
+#, fuzzy
+msgid  "Click here for more information."
+msgstr "Клацніть тут подробиць."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_AVAIL.String.Text
+#, fuzzy
+msgid  "Download of update completed"
+msgstr "Завантаження оновлень завершено"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_AVAIL.String.Text
+#, fuzzy
+msgid  "Click here to start the installation."
+msgstr "Клацніть тут для запуску встановлення."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_EXT_UPD_AVAIL.String.Text
+#, fuzzy
+msgid  "Updates for extensions available"
+msgstr "Доступні оновлення розширень"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.String.Text
+#, fuzzy
+msgid  "Click here for more information."
+msgstr "Клацніть тут подробиць."
+
+#: source/update/check/Addons.xcu#.Addons.AddonUI.OfficeHelp.UpdateCheckJob.Title
+#, fuzzy
+msgid  "Check for ~Updates..."
+msgstr "Перевірити наявність ~оновлень..."

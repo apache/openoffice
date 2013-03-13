@@ -1,873 +1,820 @@
-
-#: dlgresid.src#RID_STR_BRWTITLE_MULTISELECT.string.text
-msgid "Multiselection"
-msgstr "आड़ी लेकानाक् बाछाव"
-
-#: dlgresid.src#RID_STR_BRWTITLE_NO_PROPERTIES.string.text
-msgid "No Control marked"
-msgstr "जाहान कोबोच् चिनहा़ बा़नुक् "
-
-#: dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.string.text
-msgid "Properties: "
-msgstr "गुन"
-
-#: managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.fixedtext.text
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
 msgid ""
-"The default language is used if no localization for a user interface locale "
-"is present. Furthermore all strings from the default language are copied to "
-"resources of newly added languages."
 msgstr ""
-
-#: managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_LANGUAGE.fixedtext.text
-msgid "Present Languages"
-msgstr ""
-
-#: managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.fixedtext.text
-msgid ""
-"Select a language to define the default user interface language. All "
-"currently present strings will be assigned to the resources created for the "
-"selected language."
-msgstr ""
-
-#: managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_LANGUAGE.fixedtext.text
-msgid "Default language"
-msgstr ""
-
-#: managelang.src#RID_DLG_MANAGE_LANGUAGE.modaldialog.text
-msgid "Manage User Interface Languages [$1]"
-msgstr ""
-
-#: managelang.src#RID_DLG_SETDEF_LANGUAGE.modaldialog.text
-msgid "Set Default User Interface Language"
-msgstr ""
-
-#: managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.okbutton.text
-msgid "~Close"
-msgstr ""
-
-#: managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_ADD_LANG.pushbutton.text
-msgid "Add..."
-msgstr ""
-
-#: managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_DEL_LANG.pushbutton.text
-msgid "Delete"
-msgstr ""
-
-#: managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_MAKE_DEFAULT.pushbutton.text
-msgid "Default"
-msgstr ""
-
-#: managelang.src#RID_QRYBOX_LANGUAGE.querybox.text
-msgid ""
-"You are about to delete the resources for the selected language(s). All user "
-"interface strings for this language(s) will be deleted.\n"
-"\n"
-"Do you want to delete the resources of the selected language(s)?"
-msgstr ""
-
-#: managelang.src#RID_QRYBOX_LANGUAGE.querybox.title
-msgid "Delete Language Resources"
-msgstr ""
-
-#: managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_CREATE_LANG.string.text
-msgid "<Press 'Add' to create language resources>"
-msgstr ""
-
-#: managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DEF_LANG.string.text
-msgid "[Default Language]"
-msgstr ""
-
-#: managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DELETE.string.text
-msgid "~Delete"
-msgstr ""
-
-#: managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_INFO.string.text
-msgid ""
-"Select languages to be added. Resources for these languages will be created "
-"in the library. Strings of the current default user interface language will "
-"be copied to these new resources by default."
-msgstr ""
-
-#: managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_LABEL.string.text
-msgid "Available Languages"
-msgstr ""
-
-#: managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_TITLE.string.text
-msgid "Add User Interface Languages"
-msgstr ""
-
-#: basicprint.src#RID_PRINTDLG_STRLIST.1.itemlist.text
-msgid "Print range"
-msgstr ""
-
-#: basicprint.src#RID_PRINTDLG_STRLIST.2.itemlist.text
-msgid "All ~Pages"
-msgstr ""
-
-#: basicprint.src#RID_PRINTDLG_STRLIST.3.itemlist.text
-msgid "Pa~ges"
-msgstr ""
-
-#: basidesh.src#RID_IMGBTN_REMOVEWATCH.imagebutton.text
-msgid "-"
-msgstr ""
-
-#: basidesh.src#RID_IMGBTN_REMOVEWATCH.imagebutton.quickhelptext
-msgid "Remove Watch"
-msgstr ""
-
-#: basidesh.src#RID_POPUP_BRKDLG.menu.text
-msgctxt "basidesh.src#RID_POPUP_BRKDLG.menu.text"
-msgid "Manage Breakpoints"
-msgstr ""
-
-#: basidesh.src#RID_POPUP_BRKPROPS.menu.text
-msgid "Properties"
-msgstr ""
-
-#: basidesh.src#RID_POPUP_BRKDLG.RID_BRKDLG.menuitem.text
-msgid "Manage Breakpoints..."
-msgstr ""
-
-#: basidesh.src#RID_POPUP_BRKPROPS.RID_ACTIV.menuitem.text
-msgctxt "basidesh.src#RID_POPUP_BRKPROPS.RID_ACTIV.menuitem.text"
-msgid "Active"
-msgstr ""
-
-#: basidesh.src#RID_POPUP_BRKPROPS.RID_BRKPROPS.menuitem.text
-msgctxt "basidesh.src#RID_POPUP_BRKPROPS.RID_BRKPROPS.menuitem.text"
-msgid "Properties..."
-msgstr ""
-
-#: basidesh.src#RID_POPUP_DLGED.SID_SHOW_PROPERTYBROWSER.menuitem.text
-msgctxt "basidesh.src#RID_POPUP_DLGED.SID_SHOW_PROPERTYBROWSER.menuitem.text"
-msgid "Properties..."
-msgstr ""
-
-#: basidesh.src#RID_POPUP_TABBAR.RID_INSERT.menuitem.text
-msgid "Insert"
-msgstr ""
-
-#: basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_DELETECURRENT.menuitem.text
-msgctxt "basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_DELETECURRENT.menuitem.text"
-msgid "Delete"
-msgstr ""
-
-#: basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_HIDECURPAGE.menuitem.text
-msgid "Hide"
-msgstr ""
-
-#: basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_MODULEDLG.menuitem.text
-msgid "Modules..."
-msgstr ""
-
-#: basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_RENAMECURRENT.menuitem.text
-msgctxt "basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_RENAMECURRENT.menuitem.text"
-msgid "Rename"
-msgstr ""
-
-#: basidesh.src#RID_POPUP_TABBAR.RID_INSERT.SID_BASICIDE_NEWDIALOG.menuitem.text
-msgid "BASIC Dialog"
-msgstr ""
-
-#: basidesh.src#RID_POPUP_TABBAR.RID_INSERT.SID_BASICIDE_NEWMODULE.menuitem.text
-msgid "BASIC Module"
-msgstr "BASIC नानापाक्"
-
-#: basidesh.src#RID_BASICIDE_OBJECTBAR.string.text
-msgid "Macro Bar"
-msgstr "माराङ हुरका़ड़"
-
-#: basidesh.src#RID_STR_ALL.string.text
-msgid "All"
-msgstr "जोतो"
-
-#: basidesh.src#RID_STR_APPENDLIBS.string.text
-msgid "Import Libraries"
-msgstr "पुथी ओड़ाक् को लाठा सेलेद"
-
-#: basidesh.src#RID_STR_BADSBXNAME.string.text
-msgid "Invalid Name"
-msgstr "बाङ बाताव ञुतुम"
-
-#: basidesh.src#RID_STR_BASIC.string.text
-msgid "BASIC"
-msgstr "BASIC"
-
-#: basidesh.src#RID_STR_CANNOTCHANGENAMEREFLIB.string.text
-msgid "The name of a referenced library cannot be changed."
-msgstr "पुथी ओड़ाक् ञुतुम बाङ बोदोल दाड़ेयाक्"
-
-#: basidesh.src#RID_STR_CANNOTCHANGENAMESTDLIB.string.text
-msgid "The name of the default library cannot be changed."
-msgstr "पुथी ओड़ाक् ञुतुम बाङ बोदोल दाड़ेयाक्"
-
-#: basidesh.src#RID_STR_CANNOTCLOSE.string.text
-msgid "The window cannot be closed while BASIC is running."
-msgstr "जब BASIC कार्य करने के समय विन्डो को बन्द नहीं कर सकते है."
-
-#: basidesh.src#RID_STR_CANNOTRUNMACRO.string.text
-msgid ""
-"For security reasons, you cannot run this macro.\n"
-"\n"
-"For more information, check the security settings."
-msgstr ""
-"सुरक्षा कारणों से आप इस मैक्रो को नहीं चला सकते हैं.\n"
-"\n"
-"ज्यादा जानकारी के लिये, सुरक्षा जमावट को जांचें."
-
-#: basidesh.src#RID_STR_CANNOTUNLOADSTDLIB.string.text
-msgid "The default library cannot be deactivated"
-msgstr "पुथी ओड़ाक् ञुतुम बाङ बोदोल दाड़ेयाक्"
-
-#: basidesh.src#RID_STR_CLASS_MODULES.string.text
-msgid "Class Modules"
-msgstr ""
-
-#: basidesh.src#RID_STR_COLUMN.string.text
-msgid "Col"
-msgstr "कांधा"
-
-#: basidesh.src#RID_STR_COMPILEERROR.string.text
-msgid "Compile Error: "
-msgstr "तुमाल जारवा भुल"
-
-#: basidesh.src#RID_STR_COULDNTREAD.string.text
-msgid "The file could not be read"
-msgstr "रेत् को बाङ पाड़ाहव दाड़ेयाक्"
-
-#: basidesh.src#RID_STR_COULDNTWRITE.string.text
-msgid "The file could not be saved"
-msgstr "रेत् को बाङ बाइसाव दाड़ेयाक् "
-
-#: basidesh.src#RID_STR_DLGIMP_CLASH_RENAME.string.text
-msgctxt "basidesh.src#RID_STR_DLGIMP_CLASH_RENAME.string.text"
-msgid "Rename"
-msgstr ""
-
-#: basidesh.src#RID_STR_DLGIMP_CLASH_REPLACE.string.text
-msgid "Replace"
-msgstr ""
-
-#: basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.string.text
-msgid ""
-"The library already contains a dialog with the name:\n"
-"\n"
-"$(ARG1)\n"
-"\n"
-"Rename dialog to keep current dialog or replace existing dialog.\n"
-" "
-msgstr ""
-
-#: basidesh.src#RID_STR_DLGIMP_CLASH_TITLE.string.text
-msgid "Dialog Import - Name already used"
-msgstr ""
-
-#: basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.string.text
-msgid "Add"
-msgstr ""
-
-#: basidesh.src#RID_STR_DLGIMP_MISMATCH_OMIT.string.text
-msgid "Omit"
-msgstr ""
-
-#: basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.string.text
-msgid ""
-"The dialog to be imported supports other languages than the target library.\n"
-"\n"
-"Add these languages to the library to keep additional language resources "
-"provided by the dialog or omit them to stay with the current library "
-"languages.\n"
-"\n"
-"Note: For languages not supported by the dialog the resources of the "
-"dialog's default language will be used.\n"
-" "
-msgstr ""
-
-#: basidesh.src#RID_STR_DLGIMP_MISMATCH_TITLE.string.text
-msgid "Dialog Import - Language Mismatch"
-msgstr ""
-
-#: basidesh.src#RID_STR_DOC.string.text
-msgid "Document"
-msgstr "दोलिल"
-
-#: basidesh.src#RID_STR_DOCUMENT_OBJECTS.string.text
-msgid "Document Objects"
-msgstr ""
-
-#: basidesh.src#RID_STR_ENTERPASSWORD.string.text
-msgid "Enter password for 'XX'"
-msgstr " 'XX' लागित दानाङ साबाद आदेर"
-
-#: basidesh.src#RID_STR_ERRORCHOOSEMACRO.string.text
-msgid "Macros from other documents are not accessible."
-msgstr "अन्य दस्तावेज से मैक्रो अभिगम्य नहीं है."
-
-#: basidesh.src#RID_STR_ERROROPENLIB.string.text
-msgid "Error loading library"
-msgstr "लाइब्रेरी लोड करने में गलती "
-
-#: basidesh.src#RID_STR_ERROROPENSTORAGE.string.text
-msgid "Error opening file"
-msgstr ""
-"किछु गान ओकता को मेटाव मे बाङखान किछु नियोम को एटागाक नामापाक तेयार रे बोदोल "
-"मे."
-
-#: basidesh.src#RID_STR_FILEEXISTS.string.text
-msgid "The 'XX' file already exists"
-msgstr "'XX' फाइल पहले से ही अस्तित्व में है"
-
-#: basidesh.src#RID_STR_FILENAME.string.text
-msgid "File name:"
-msgstr "रेत् ञुतुम:"
-
-#: basidesh.src#RID_STR_FILTER_ALLFILES.string.text
-msgid "<All>"
-msgstr "जोतो"
-
-#: basidesh.src#RID_STR_GENERATESOURCE.string.text
-msgid "Generating source"
-msgstr "तेयार सिरजाव"
-
-#: basidesh.src#RID_STR_IMPORTNOTPOSSIBLE.string.text
-msgid "'XX' cannot be added."
-msgstr "'XX' बाङ सेलेद दाड़ेयाक्"
-
-#: basidesh.src#RID_STR_INITIDE.string.text
-msgid "BASIC Initialization"
-msgstr "BASIC एतोहोप तेत्"
-
-#: basidesh.src#RID_STR_LIBISREADONLY.string.text
-msgid "This library is read-only."
-msgstr "यह लाइब्रेरी सिर्फ पढने योग्य है."
-
-#: basidesh.src#RID_STR_LIBNAMETOLONG.string.text
-msgid "A library name can have up to 30 characters."
-msgstr "पुथी ओड़ाक् ञुतुम रे 30 आखोर दोहो दाड़ेयाक् आ."
-
-#: basidesh.src#RID_STR_LINE.string.text
-msgid "Ln"
-msgstr "एल एन"
-
-#: basidesh.src#RID_STR_MACRONAMEREQ.string.text
-msgid "A name must be entered."
-msgstr "पुथी ओड़ाक् ञुतुम बाङ बोदोल दाड़ेयाक्"
-
-#: basidesh.src#RID_STR_NEWDLG.string.text
-msgid "New Dialog"
-msgstr "नावा रोड़"
-
-#: basidesh.src#RID_STR_NEWLIB.string.text
-msgid "New Library"
-msgstr "नावा पुथी ओड़ाक्"
-
-#: basidesh.src#RID_STR_NEWMOD.string.text
-msgid "New Module"
-msgstr "नावा नापाक्"
-
-#: basidesh.src#RID_STR_NOIMPORT.string.text
-msgid "'XX' was not added."
-msgstr "'XX' बाङ सेलेद दाड़ेयाक्"
-
-#: basidesh.src#RID_STR_NOLIBINSTORAGE.string.text
-msgid "The file does not contain any BASIC libraries"
-msgstr " BASIC रेत् रे  पुथी ओड़ाक् बनुक् आ"
-
-#: basidesh.src#RID_STR_NOMODULE.string.text
-msgid "< No Module >"
-msgstr "नापाक् बनुक्"
-
-#: basidesh.src#RID_STR_NORMAL_MODULES.string.text
-msgctxt "basidesh.src#RID_STR_NORMAL_MODULES.string.text"
-msgid "Modules"
-msgstr ""
-
-#: basidesh.src#RID_STR_OBJNOTFOUND.string.text
-msgid "Object or method not found"
-msgstr "जिनिस आर नियोम बाङ ञाम लेनाआ"
-
-#: basidesh.src#RID_STR_OPEN.string.text
-msgid "Load"
-msgstr "हामाल"
-
-#: basidesh.src#RID_STR_PAGE.string.text
-msgid "Page"
-msgstr "साहटा"
-
-#: basidesh.src#RID_STR_QUERYDELDIALOG.string.text
-msgid "Do you want to delete the XX dialog?"
-msgstr "चेत् आम रोड़ मेटाव सानाम काम XX ?"
-
-#: basidesh.src#RID_STR_QUERYDELLIB.string.text
-msgid "Do you want to delete the XX library?"
-msgstr "चेत् आम माराङक् मेटाव सानाम काना XX ?"
-
-#: basidesh.src#RID_STR_QUERYDELLIBREF.string.text
-msgid "Do you want to delete the reference to the XX library?"
-msgstr "चोत् आम पुथी ओड़ाक् मेटाव काना?"
-
-#: basidesh.src#RID_STR_QUERYDELMACRO.string.text
-msgid "Do you want to delete the macro XX?"
-msgstr "चेत आम माराङक् मेटाव सानाम काना XX ?"
-
-#: basidesh.src#RID_STR_QUERYDELMODULE.string.text
-msgid "Do you want to delete the XX module?"
-msgstr "चेत् आम नानापाक् तेयार मेटाव सानाम काना XX ?"
-
-#: basidesh.src#RID_STR_QUERYREPLACEMACRO.string.text
-msgid "Do you want to overwrite the XX macro?"
-msgstr "चेत आम माराङक् मेटाव सानाम काना XX ?"
-
-#: basidesh.src#RID_STR_REFNOTPOSSIBLE.string.text
-msgid "Reference to 'XX' not possible."
-msgstr "ला़गित् जोनोड़ाव बाङ हुयक् आ 'XX' "
-
-#: basidesh.src#RID_STR_REMOVEWATCH.string.text
-msgid "Watch:"
-msgstr "ञेल सामटाव"
-
-#: basidesh.src#RID_STR_REPLACELIB.string.text
-msgid "'XX' cannot be replaced."
-msgstr "'XX' बाङ साहाव दाड़ेयाक्"
-
-#: basidesh.src#RID_STR_REPLACESTDLIB.string.text
-msgid "The default library cannot be replaced."
-msgstr "पुथी ओड़ाक् ञुतुम बाङ बोदोल दाड़ेयाक्"
-
-#: basidesh.src#RID_STR_RUNTIMEERROR.string.text
-msgid "Runtime Error: #"
-msgstr "जावा चिकि चालाव ओकते भुल"
-
-#: basidesh.src#RID_STR_SAVE.string.text
-msgid "Save"
-msgstr "साञचाव"
-
-#: basidesh.src#RID_STR_SBXNAMEALLREADYUSED.string.text
-msgid "Name already exists"
-msgstr "ञुतुम लाहा खोन मेनाक्"
-
-#: basidesh.src#RID_STR_SBXNAMEALLREADYUSED2.string.text
-msgid "Object with same name already exists"
-msgstr "समान नाम का वस्तु पहले से ही अस्तित्व में है"
-
-#: basidesh.src#RID_STR_SEARCHALLMODULES.string.text
-msgid "Do you want to replace the text in all active modules?"
-msgstr "आप सब क्रियाशील मोड्यूलों में पाठ को प्रतिस्थापित करना चाहते है ?"
-
-#: basidesh.src#RID_STR_SEARCHFROMSTART.string.text
-msgid "Search to last module complete. Continue at first module?"
-msgstr "अंतिम मोड्यूल तक खोज समाप्त हुआ . पहले मोड्यूल से खोज को जारी करें?"
-
-#: basidesh.src#RID_STR_SEARCHNOTFOUND.string.text
-msgid "Search key not found"
-msgstr "दाड़ा काठी बाङ तेयार"
-
-#: basidesh.src#RID_STR_SEARCHREPLACES.string.text
-msgid "Search key replaced XX times"
-msgstr "खोज कुंजी को XX बार प्रतिस्थापित किया"
-
-#: basidesh.src#RID_STR_SHAREDIALOGS.string.text
-msgid "%PRODUCTNAME Dialogs"
-msgstr "इञ रोड़"
-
-#: basidesh.src#RID_STR_SHAREMACROS.string.text
-msgid "%PRODUCTNAME Macros"
-msgstr "BASIC माराङ तेत्"
-
-#: basidesh.src#RID_STR_SHAREMACROSDIALOGS.string.text
-msgid "%PRODUCTNAME Macros & Dialogs"
-msgstr "%PRODUCTNAME माराङ & रोड़"
-
-#: basidesh.src#RID_STR_SIGNED.string.text
-msgid "(Signed)"
-msgstr "(सुही)"
-
-#: basidesh.src#RID_STR_SOURCETOBIG.string.text
-msgid ""
-"The source text is too large and can be neither compiled nor saved.\n"
-"Delete some of the comments or transfer some methods into another module."
-msgstr ""
-"सिरजोन ओनोल आ़डी माराङ आर ओना बाङ मा सापड़ाव दाड़ेयाक् आर बाङ मा\n"
-"Delete some of the comments or transfer some methods into another module."
-
-#: basidesh.src#RID_STR_STACK.string.text
-msgid "Calls: "
-msgstr "होहो"
-
-#: basidesh.src#RID_STR_STACKNAME.string.text
-msgid "Call Stack"
-msgstr "ढेराक् होहो"
-
-#: basidesh.src#RID_STR_STDDIALOGNAME.string.text
-msgctxt "basidesh.src#RID_STR_STDDIALOGNAME.string.text"
-msgid "Dialog"
-msgstr "रोड़"
-
-#: basidesh.src#RID_STR_STDLIBNAME.string.text
-msgid "Library"
-msgstr "पुथी ओड़ाक्"
-
-#: basidesh.src#RID_STR_STDMODULENAME.string.text
-msgid "Module"
-msgstr "नापाक्"
-
-#: basidesh.src#RID_STR_TRANSLATION_DEFAULT.string.text
-msgid "[Default Language]"
-msgstr ""
-
-#: basidesh.src#RID_STR_TRANSLATION_NOTLOCALIZED.string.text
-msgid "<Not localized>"
-msgstr ""
-
-#: basidesh.src#RID_STR_USERDIALOGS.string.text
-msgid "My Dialogs"
-msgstr "इञ रोड़"
-
-#: basidesh.src#RID_STR_USERFORMS.string.text
-msgid "Forms"
-msgstr ""
-
-#: basidesh.src#RID_STR_USERMACROS.string.text
-msgid "My Macros"
-msgstr "इञाक् माराङ तेत्"
-
-#: basidesh.src#RID_STR_USERMACROSDIALOGS.string.text
-msgid "My Macros & Dialogs"
-msgstr "इञाक् माराङ तेत्  & रोड़"
-
-#: basidesh.src#RID_STR_WATCHNAME.string.text
-msgid "Watch"
-msgstr "ञेल सामटाव"
-
-#: basidesh.src#RID_STR_WATCHTYPE.string.text
-msgid "Type"
-msgstr "टाइप ओल"
-
-#: basidesh.src#RID_STR_WATCHVALUE.string.text
-msgid "Value"
-msgstr "गोनोङ"
-
-#: basidesh.src#RID_STR_WATCHVARIABLE.string.text
-msgid "Variable"
-msgstr "गारला गुरला़"
-
-#: basidesh.src#RID_STR_WILLSTOPPRG.string.text
-msgid ""
-"You will have to restart the program after this edit.\n"
-"Continue?"
-msgstr ""
-"इस संपादन के पश्चात प्रोग्राम को पुनःप्रारंभ करना आवश्यक है .\n"
-"जारी रखना है ?"
-
-#: basidesh.src#RID_STR_WRONGPASSWORD.string.text
-msgid "Incorrect Password"
-msgstr "बाङ ठिक दानाङ साबाद"
-
-#: brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_CHKB_ACTIVE.checkbox.text
-msgctxt "brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_CHKB_ACTIVE.checkbox.text"
-msgid "Active"
-msgstr "उसरा़व\"    "
-
-#: brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_BRKPOINTS.fixedtext.text
-msgid "Breakpoints"
-msgstr "केचेत् टुडा़क्"
-
-#: brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_PASS.fixedtext.text
-msgid "Pass Count:"
-msgstr "पास लेखा"
-
-#: brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.modaldialog.text
-msgctxt "brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.modaldialog.text"
-msgid "Manage Breakpoints"
-msgstr "केचेत् टुडा़क् बेबोसता"
-
-#: brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_DEL.pushbutton.text
-msgctxt "brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_DEL.pushbutton.text"
-msgid "Delete"
-msgstr "मिटाओ"
-
-#: brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_NEW.pushbutton.text
-msgid "New"
-msgstr "नावा"
-
-#: macrodlg.src#RID_MACROCHOOSER.RID_PB_CLOSE.cancelbutton.text
-msgctxt "macrodlg.src#RID_MACROCHOOSER.RID_PB_CLOSE.cancelbutton.text"
-msgid "Close"
-msgstr "दुवार सिञ, बोंद"
-
-#: macrodlg.src#RID_MACROCHOOSER.RID_TXT_DESCRIPTION.fixedtext.text
-msgid "De~scription"
-msgstr "De~विवोरोन"
-
-#: macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACROFROM.fixedtext.text
-msgid "Macro ~from"
-msgstr "खोन माराङ"
-
-#: macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACRONAME.fixedtext.text
-msgid "~Macro name"
-msgstr "माराङ ञुतुम"
-
-#: macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACROSIN.fixedtext.text
-msgid "Existing macros ~in:"
-msgstr "ताला रे बा़यसा़व"
-
-#: macrodlg.src#RID_MACROCHOOSER.RID_TXT_SAVEMACRO.fixedtext.text
-msgid "Save m~acro in"
-msgstr "ताला रे बा़यसा़व"
-
-#: macrodlg.src#RID_MACROCHOOSER.modaldialog.text
-msgid "%PRODUCTNAME Basic Macros"
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.ModalDialog.Text
+msgid  "%PRODUCTNAME Basic Macros"
 msgstr "%PRODUCTNAME एतोहोप माराङ "
 
-#: macrodlg.src#RID_MACROCHOOSER.RID_PB_ASSIGN.pushbutton.text
-msgid "~Assign..."
-msgstr "जिनमा हाताव"
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACROSIN.FixedText.Text
+msgid  "Existing macros ~in:"
+msgstr "ताला रे बा़यसा़व"
 
-#: macrodlg.src#RID_MACROCHOOSER.RID_PB_DEL.pushbutton.text
-msgctxt "macrodlg.src#RID_MACROCHOOSER.RID_PB_DEL.pushbutton.text"
-msgid "~Delete"
-msgstr "मिटाओ"
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACRONAME.FixedText.Text
+msgid  "~Macro name"
+msgstr "माराङ ञुतुम"
 
-#: macrodlg.src#RID_MACROCHOOSER.RID_PB_EDIT.pushbutton.text
-msgctxt "macrodlg.src#RID_MACROCHOOSER.RID_PB_EDIT.pushbutton.text"
-msgid "~Edit"
-msgstr "छापा सोदोर लागिद् सापड़ाव"
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_MACROFROM.FixedText.Text
+msgid  "Macro ~from"
+msgstr "खोन माराङ"
 
-#: macrodlg.src#RID_MACROCHOOSER.RID_PB_NEWLIB.pushbutton.text
-msgid "New ~Library"
-msgstr "नावा पुथी ओड़ाक्"
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_SAVEMACRO.FixedText.Text
+msgid  "Save m~acro in"
+msgstr "ताला रे बा़यसा़व"
 
-#: macrodlg.src#RID_MACROCHOOSER.RID_PB_NEWMOD.pushbutton.text
-msgid "New M~odule"
-msgstr "नावा बाबोत्"
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_TXT_DESCRIPTION.FixedText.Text
+msgid  "De~scription"
+msgstr "De~विवोरोन"
 
-#: macrodlg.src#RID_MACROCHOOSER.RID_PB_ORG.pushbutton.text
-msgid "~Organizer..."
-msgstr "सापड़ाविच्"
-
-#: macrodlg.src#RID_MACROCHOOSER.RID_PB_RUN.pushbutton.text
-msgid "R~un"
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_RUN.PushButton.Text
+msgid  "R~un"
 msgstr "R~चालावाक्"
 
-#: macrodlg.src#RID_STR_BTNDEL.string.text
-msgctxt "macrodlg.src#RID_STR_BTNDEL.string.text"
-msgid "~Delete"
-msgstr "मिटाओ"
-
-#: macrodlg.src#RID_STR_BTNNEW.string.text
-msgid "~New"
-msgstr "नावा"
-
-#: macrodlg.src#RID_STR_CHOOSE.string.text
-msgid "Choose"
-msgstr "बाछाव"
-
-#: macrodlg.src#RID_STR_CLOSE.string.text
-msgctxt "macrodlg.src#RID_STR_CLOSE.string.text"
-msgid "Close"
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_CLOSE.CancelButton.Text
+msgid  "Close"
 msgstr "दुवार सिञ, बोंद"
 
-#: macrodlg.src#RID_STR_RECORD.string.text
-msgid "~Save"
-msgstr "साञचाव"
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_ASSIGN.PushButton.Text
+msgid  "~Assign..."
+msgstr "जिनमा हाताव"
 
-#: macrodlg.src#RID_STR_RUN.string.text
-msgid "Run"
-msgstr "चालाव होचो       "
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_EDIT.PushButton.Text
+msgid  "~Edit"
+msgstr "छापा सोदोर लागिद् सापड़ाव"
 
-#: macrodlg.src#RID_STR_STDMACRONAME.string.text
-msgid "Macro"
-msgstr "माराङ"
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_NEWLIB.PushButton.Text
+msgid  "New ~Library"
+msgstr "नावा पुथी ओड़ाक्"
 
-#: moduldlg.src#RID_TP_DLGS.RID_PB_CLOSE.cancelbutton.text
-msgctxt "moduldlg.src#RID_TP_DLGS.RID_PB_CLOSE.cancelbutton.text"
-msgid "Close"
-msgstr "दुवार सिञ, बोंद"
-
-#: moduldlg.src#RID_TP_LIBS.RID_PB_CLOSE.cancelbutton.text
-msgctxt "moduldlg.src#RID_TP_LIBS.RID_PB_CLOSE.cancelbutton.text"
-msgid "Close"
-msgstr "दुवार सिञ, बोंद"
-
-#: moduldlg.src#RID_TP_MODULS.RID_PB_CLOSE.cancelbutton.text
-msgctxt "moduldlg.src#RID_TP_MODULS.RID_PB_CLOSE.cancelbutton.text"
-msgid "Close"
-msgstr "दुवार सिञ, बोंद"
-
-#: moduldlg.src#RID_DLG_LIBS.RID_CB_REF.checkbox.text
-msgid "Insert as reference (read-only)"
-msgstr "संदर्भ जैसे जोड़ें (केवल पढ़ने के लिये)"
-
-#: moduldlg.src#RID_DLG_LIBS.RID_CB_REPL.checkbox.text
-msgid "Replace existing libraries"
-msgstr "मेनाक् पुथी  ओड़ाक् साहा"
-
-#: moduldlg.src#RID_DLG_LIBS.RID_FL_OPTIONS.fixedline.text
-msgid "Options"
-msgstr "एटागाक्"
-
-#: moduldlg.src#RID_DLG_NEWLIB.RID_FT_NEWLIB.fixedtext.text
-msgid "~Name:"
-msgstr "ञुतुम"
-
-#: moduldlg.src#RID_TP_DLGS.RID_STR_LIB.fixedtext.text
-msgctxt "moduldlg.src#RID_TP_DLGS.RID_STR_LIB.fixedtext.text"
-msgid "Dialog"
-msgstr "रोड़"
-
-#: moduldlg.src#RID_TP_LIBS.RID_STR_BASICS.fixedtext.text
-msgid "L~ocation"
-msgstr "नाखा (~o)"
-
-#: moduldlg.src#RID_TP_LIBS.RID_STR_LIB.fixedtext.text
-msgid "~Library"
-msgstr "पुथी ओड़ाक् (~L)"
-
-#: moduldlg.src#RID_TP_MODULS.RID_STR_LIB.fixedtext.text
-msgid "M~odule"
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_NEWMOD.PushButton.Text
+msgid  "New M~odule"
 msgstr "नावा बाबोत्"
 
-#: moduldlg.src#RID_DLG_EXPORT.modaldialog.text
-msgid "Export Basic library"
-msgstr " घेंट लेका बाहरे भेजा खोन पुथी ओड़ाक्"
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_DEL.PushButton.Text
+msgid  "~Delete"
+msgstr "मिटाओ"
 
-#: moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_DLG.pageitem.text
-msgid "Dialogs"
-msgstr " रोड़"
+#: source/basicide/macrodlg.src#RID_MACROCHOOSER.RID_PB_ORG.PushButton.Text
+msgid  "~Organizer..."
+msgstr "सापड़ाविच्"
 
-#: moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_LIB.pageitem.text
-msgid "Libraries"
+#: source/basicide/macrodlg.src#RID_STR_STDMACRONAME.String.Text
+msgid  "Macro"
+msgstr "माराङ"
+
+#: source/basicide/macrodlg.src#RID_STR_BTNDEL.String.Text
+msgid  "~Delete"
+msgstr "मिटाओ"
+
+#: source/basicide/macrodlg.src#RID_STR_BTNNEW.String.Text
+msgid  "~New"
+msgstr "नावा"
+
+#: source/basicide/macrodlg.src#RID_STR_CLOSE.String.Text
+msgid  "Close"
+msgstr "दुवार सिञ, बोंद"
+
+#: source/basicide/macrodlg.src#RID_STR_CHOOSE.String.Text
+msgid  "Choose"
+msgstr "बाछाव"
+
+#: source/basicide/macrodlg.src#RID_STR_RUN.String.Text
+msgid  "Run"
+msgstr "चालाव होचो       "
+
+#: source/basicide/macrodlg.src#RID_STR_RECORD.String.Text
+msgid  "~Save"
+msgstr "साञचाव"
+
+#: source/basicide/basidesh.src#RID_STR_FILTER_ALLFILES.String.Text
+msgid  "<All>"
+msgstr "जोतो"
+
+#: source/basicide/basidesh.src#RID_STR_NOMODULE.String.Text
+msgid  "< No Module >"
+msgstr "नापाक् बनुक्"
+
+#: source/basicide/basidesh.src#RID_STR_WRONGPASSWORD.String.Text
+msgid  "Incorrect Password"
+msgstr "बाङ ठिक दानाङ साबाद"
+
+#: source/basicide/basidesh.src#RID_STR_OPEN.String.Text
+msgid  "Load"
+msgstr "हामाल"
+
+#: source/basicide/basidesh.src#RID_STR_SAVE.String.Text
+msgid  "Save"
+msgstr "साञचाव"
+
+#: source/basicide/basidesh.src#RID_STR_SOURCETOBIG.String.Text
+msgid  "The source text is too large and can be neither compiled nor saved.\nDelete some of the comments or transfer some methods into another module."
+msgstr ""
+
+#: source/basicide/basidesh.src#RID_STR_ERROROPENSTORAGE.String.Text
+msgid  "Error opening file"
+msgstr ""
+
+#: source/basicide/basidesh.src#RID_STR_ERROROPENLIB.String.Text
+msgid  "Error loading library"
+msgstr "लाइब्रेरी लोड करने में गलती "
+
+#: source/basicide/basidesh.src#RID_STR_NOLIBINSTORAGE.String.Text
+msgid  "The file does not contain any BASIC libraries"
+msgstr " BASIC रेत् रे  पुथी ओड़ाक् बनुक् आ"
+
+#: source/basicide/basidesh.src#RID_STR_BADSBXNAME.String.Text
+msgid  "Invalid Name"
+msgstr "बाङ बाताव ञुतुम"
+
+#: source/basicide/basidesh.src#RID_STR_LIBNAMETOLONG.String.Text
+msgid  "A library name can have up to 30 characters."
+msgstr "पुथी ओड़ाक् ञुतुम रे 30 आखोर दोहो दाड़ेयाक् आ."
+
+#: source/basicide/basidesh.src#RID_STR_ERRORCHOOSEMACRO.String.Text
+msgid  "Macros from other documents are not accessible."
+msgstr "अन्य दस्तावेज से मैक्रो अभिगम्य नहीं है."
+
+#: source/basicide/basidesh.src#RID_STR_LIBISREADONLY.String.Text
+msgid  "This library is read-only."
+msgstr "यह लाइब्रेरी सिर्फ पढने योग्य है."
+
+#: source/basicide/basidesh.src#RID_STR_REPLACELIB.String.Text
+msgid  "'XX' cannot be replaced."
+msgstr "'XX' बाङ साहाव दाड़ेयाक्"
+
+#: source/basicide/basidesh.src#RID_STR_IMPORTNOTPOSSIBLE.String.Text
+msgid  "'XX' cannot be added."
+msgstr "'XX' बाङ सेलेद दाड़ेयाक्"
+
+#: source/basicide/basidesh.src#RID_STR_NOIMPORT.String.Text
+msgid  "'XX' was not added."
+msgstr "'XX' बाङ सेलेद दाड़ेयाक्"
+
+#: source/basicide/basidesh.src#RID_STR_ENTERPASSWORD.String.Text
+msgid  "Enter password for 'XX'"
+msgstr " 'XX' लागित दानाङ साबाद आदेर"
+
+#: source/basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED.String.Text
+msgid  "Name already exists"
+msgstr "ञुतुम लाहा खोन मेनाक्"
+
+#: source/basicide/basidesh.src#RID_STR_SIGNED.String.Text
+msgid  "(Signed)"
+msgstr "(सुही)"
+
+#: source/basicide/basidesh.src#RID_STR_SBXNAMEALLREADYUSED2.String.Text
+msgid  "Object with same name already exists"
+msgstr "समान नाम का वस्तु पहले से ही अस्तित्व में है"
+
+#: source/basicide/basidesh.src#RID_STR_FILEEXISTS.String.Text
+msgid  "The 'XX' file already exists"
+msgstr "'XX' फाइल पहले से ही अस्तित्व में है"
+
+#: source/basicide/basidesh.src#RID_STR_CANNOTRUNMACRO.String.Text
+msgid  "For security reasons, you cannot run this macro.\n\nFor more information, check the security settings."
+msgstr ""
+
+#: source/basicide/basidesh.src#RID_STR_COMPILEERROR.String.Text
+msgid  "Compile Error: "
+msgstr "तुमाल जारवा भुल"
+
+#: source/basicide/basidesh.src#RID_STR_RUNTIMEERROR.String.Text
+msgid  "Runtime Error: #"
+msgstr "जावा चिकि चालाव ओकते भुल"
+
+#: source/basicide/basidesh.src#RID_STR_SEARCHNOTFOUND.String.Text
+msgid  "Search key not found"
+msgstr "दाड़ा काठी बाङ तेयार"
+
+#: source/basicide/basidesh.src#RID_STR_SEARCHFROMSTART.String.Text
+msgid  "Search to last module complete. Continue at first module?"
+msgstr "अंतिम मोड्यूल तक खोज समाप्त हुआ . पहले मोड्यूल से खोज को जारी करें?"
+
+#: source/basicide/basidesh.src#RID_STR_SEARCHREPLACES.String.Text
+msgid  "Search key replaced XX times"
+msgstr "खोज कुंजी को XX बार प्रतिस्थापित किया"
+
+#: source/basicide/basidesh.src#RID_STR_COULDNTREAD.String.Text
+msgid  "The file could not be read"
+msgstr "रेत् को बाङ पाड़ाहव दाड़ेयाक्"
+
+#: source/basicide/basidesh.src#RID_STR_COULDNTWRITE.String.Text
+msgid  "The file could not be saved"
+msgstr "रेत् को बाङ बाइसाव दाड़ेयाक् "
+
+#: source/basicide/basidesh.src#RID_STR_CANNOTCHANGENAMESTDLIB.String.Text
+msgid  "The name of the default library cannot be changed."
+msgstr "पुथी ओड़ाक् ञुतुम बाङ बोदोल दाड़ेयाक्"
+
+#: source/basicide/basidesh.src#RID_STR_CANNOTCHANGENAMEREFLIB.String.Text
+msgid  "The name of a referenced library cannot be changed."
+msgstr "पुथी ओड़ाक् ञुतुम बाङ बोदोल दाड़ेयाक्"
+
+#: source/basicide/basidesh.src#RID_STR_CANNOTUNLOADSTDLIB.String.Text
+msgid  "The default library cannot be deactivated"
+msgstr "पुथी ओड़ाक् ञुतुम बाङ बोदोल दाड़ेयाक्"
+
+#: source/basicide/basidesh.src#RID_STR_GENERATESOURCE.String.Text
+msgid  "Generating source"
+msgstr "तेयार सिरजाव"
+
+#: source/basicide/basidesh.src#RID_STR_FILENAME.String.Text
+msgid  "File name:"
+msgstr "रेत् ञुतुम:"
+
+#: source/basicide/basidesh.src#RID_STR_APPENDLIBS.String.Text
+msgid  "Import Libraries"
+msgstr "पुथी ओड़ाक् को लाठा सेलेद"
+
+#: source/basicide/basidesh.src#RID_STR_QUERYDELMACRO.String.Text
+msgid  "Do you want to delete the macro XX?"
+msgstr "चेत आम माराङक् मेटाव सानाम काना XX ?"
+
+#: source/basicide/basidesh.src#RID_STR_QUERYDELDIALOG.String.Text
+msgid  "Do you want to delete the XX dialog?"
+msgstr "चेत् आम रोड़ मेटाव सानाम काम XX ?"
+
+#: source/basicide/basidesh.src#RID_STR_QUERYDELLIB.String.Text
+msgid  "Do you want to delete the XX library?"
+msgstr "चेत् आम माराङक् मेटाव सानाम काना XX ?"
+
+#: source/basicide/basidesh.src#RID_STR_QUERYDELLIBREF.String.Text
+msgid  "Do you want to delete the reference to the XX library?"
+msgstr "चोत् आम पुथी ओड़ाक् मेटाव काना?"
+
+#: source/basicide/basidesh.src#RID_STR_QUERYDELMODULE.String.Text
+msgid  "Do you want to delete the XX module?"
+msgstr "चेत् आम नानापाक् तेयार मेटाव सानाम काना XX ?"
+
+#: source/basicide/basidesh.src#RID_STR_OBJNOTFOUND.String.Text
+msgid  "Object or method not found"
+msgstr "जिनिस आर नियोम बाङ ञाम लेनाआ"
+
+#: source/basicide/basidesh.src#RID_STR_BASIC.String.Text
+msgid  "BASIC"
+msgstr "BASIC"
+
+#: source/basicide/basidesh.src#RID_STR_LINE.String.Text
+msgid  "Ln"
+msgstr "एल एन"
+
+#: source/basicide/basidesh.src#RID_STR_COLUMN.String.Text
+msgid  "Col"
+msgstr "कांधा"
+
+#: source/basicide/basidesh.src#RID_STR_DOC.String.Text
+msgid  "Document"
+msgstr "दोलिल"
+
+#: source/basicide/basidesh.src#RID_BASICIDE_OBJECTBAR.String.Text
+msgid  "Macro Bar"
+msgstr "माराङ हुरका़ड़"
+
+#: source/basicide/basidesh.src#RID_STR_CANNOTCLOSE.String.Text
+msgid  "The window cannot be closed while BASIC is running."
+msgstr "जब BASIC कार्य करने के समय विन्डो को बन्द नहीं कर सकते है."
+
+#: source/basicide/basidesh.src#RID_STR_REPLACESTDLIB.String.Text
+msgid  "The default library cannot be replaced."
+msgstr "पुथी ओड़ाक् ञुतुम बाङ बोदोल दाड़ेयाक्"
+
+#: source/basicide/basidesh.src#RID_STR_REFNOTPOSSIBLE.String.Text
+msgid  "Reference to 'XX' not possible."
+msgstr "ला़गित् जोनोड़ाव बाङ हुयक् आ 'XX' "
+
+#: source/basicide/basidesh.src#RID_STR_WATCHNAME.String.Text
+msgid  "Watch"
+msgstr "ञेल सामटाव"
+
+#: source/basicide/basidesh.src#RID_STR_WATCHVARIABLE.String.Text
+msgid  "Variable"
+msgstr "गारला गुरला़"
+
+#: source/basicide/basidesh.src#RID_STR_WATCHVALUE.String.Text
+msgid  "Value"
+msgstr "गोनोङ"
+
+#: source/basicide/basidesh.src#RID_STR_WATCHTYPE.String.Text
+msgid  "Type"
+msgstr "टाइप ओल"
+
+#: source/basicide/basidesh.src#RID_STR_STACKNAME.String.Text
+msgid  "Call Stack"
+msgstr "ढेराक् होहो"
+
+#: source/basicide/basidesh.src#RID_STR_INITIDE.String.Text
+msgid  "BASIC Initialization"
+msgstr "BASIC एतोहोप तेत्"
+
+#: source/basicide/basidesh.src#RID_STR_STDMODULENAME.String.Text
+msgid  "Module"
+msgstr "नापाक्"
+
+#: source/basicide/basidesh.src#RID_STR_STDDIALOGNAME.String.Text
+msgid  "Dialog"
+msgstr "रोड़"
+
+#: source/basicide/basidesh.src#RID_STR_STDLIBNAME.String.Text
+msgid  "Library"
 msgstr "पुथी ओड़ाक्"
 
-#: moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_MOD.pageitem.text
-msgctxt "moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_MOD.pageitem.text"
-msgid "Modules"
-msgstr "नापाक् को"
+#: source/basicide/basidesh.src#RID_STR_NEWLIB.String.Text
+msgid  "New Library"
+msgstr "नावा पुथी ओड़ाक्"
 
-#: moduldlg.src#RID_TP_DLGS.RID_PB_DELETE.pushbutton.text
-msgctxt "moduldlg.src#RID_TP_DLGS.RID_PB_DELETE.pushbutton.text"
-msgid "~Delete"
-msgstr "मिटाओ"
+#: source/basicide/basidesh.src#RID_STR_NEWMOD.String.Text
+msgid  "New Module"
+msgstr "नावा नापाक्"
 
-#: moduldlg.src#RID_TP_DLGS.RID_PB_EDIT.pushbutton.text
-msgctxt "moduldlg.src#RID_TP_DLGS.RID_PB_EDIT.pushbutton.text"
-msgid "~Edit"
-msgstr "छापा सोदोर लागिद् सापड़ाव"
+#: source/basicide/basidesh.src#RID_STR_NEWDLG.String.Text
+msgid  "New Dialog"
+msgstr "नावा रोड़"
 
-#: moduldlg.src#RID_TP_DLGS.RID_PB_NEWDLG.pushbutton.text
-msgctxt "moduldlg.src#RID_TP_DLGS.RID_PB_NEWDLG.pushbutton.text"
-msgid "~New..."
-msgstr "नावा"
+#: source/basicide/basidesh.src#RID_STR_ALL.String.Text
+msgid  "All"
+msgstr "जोतो"
 
-#: moduldlg.src#RID_TP_DLGS.RID_PB_NEWMOD.pushbutton.text
-msgctxt "moduldlg.src#RID_TP_DLGS.RID_PB_NEWMOD.pushbutton.text"
-msgid "~New..."
-msgstr "नावा"
+#: source/basicide/basidesh.src#RID_STR_PAGE.String.Text
+msgid  "Page"
+msgstr "साहटा"
 
-#: moduldlg.src#RID_TP_LIBS.RID_PB_APPEND.pushbutton.text
-msgid "~Import..."
-msgstr "बाहरे दिसोम खोन सामान"
+#: source/basicide/basidesh.src#RID_STR_MACRONAMEREQ.String.Text
+msgid  "A name must be entered."
+msgstr "पुथी ओड़ाक् ञुतुम बाङ बोदोल दाड़ेयाक्"
 
-#: moduldlg.src#RID_TP_LIBS.RID_PB_DELETE.pushbutton.text
-msgctxt "moduldlg.src#RID_TP_LIBS.RID_PB_DELETE.pushbutton.text"
-msgid "~Delete"
-msgstr "मिटाओ"
-
-#: moduldlg.src#RID_TP_LIBS.RID_PB_EDIT.pushbutton.text
-msgctxt "moduldlg.src#RID_TP_LIBS.RID_PB_EDIT.pushbutton.text"
-msgid "~Edit"
-msgstr "छापा सोदोर लागिद् सापड़ाव"
-
-#: moduldlg.src#RID_TP_LIBS.RID_PB_EXPORT.pushbutton.text
-msgid "E~xport..."
-msgstr "E~बाहरे दिसोम खोन भेजा"
-
-#: moduldlg.src#RID_TP_LIBS.RID_PB_NEWLIB.pushbutton.text
-msgctxt "moduldlg.src#RID_TP_LIBS.RID_PB_NEWLIB.pushbutton.text"
-msgid "~New..."
-msgstr "नावा"
-
-#: moduldlg.src#RID_TP_LIBS.RID_PB_PASSWORD.pushbutton.text
-msgid "~Password..."
-msgstr "दानाङ साबाद"
-
-#: moduldlg.src#RID_TP_MODULS.RID_PB_DELETE.pushbutton.text
-msgctxt "moduldlg.src#RID_TP_MODULS.RID_PB_DELETE.pushbutton.text"
-msgid "~Delete"
-msgstr "मिटाओ"
-
-#: moduldlg.src#RID_TP_MODULS.RID_PB_EDIT.pushbutton.text
-msgctxt "moduldlg.src#RID_TP_MODULS.RID_PB_EDIT.pushbutton.text"
-msgid "~Edit"
-msgstr "छापा सोदोर लागिद् सापड़ाव"
-
-#: moduldlg.src#RID_TP_MODULS.RID_PB_NEWDLG.pushbutton.text
-msgctxt "moduldlg.src#RID_TP_MODULS.RID_PB_NEWDLG.pushbutton.text"
-msgid "~New..."
-msgstr "नावा"
-
-#: moduldlg.src#RID_TP_MODULS.RID_PB_NEWMOD.pushbutton.text
-msgctxt "moduldlg.src#RID_TP_MODULS.RID_PB_NEWMOD.pushbutton.text"
-msgid "~New..."
-msgstr "नावा"
-
-#: moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASBASIC.radiobutton.text
-msgctxt "moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASBASIC.radiobutton.text"
-msgid "Export as BASIC library"
-msgstr "बाहरे भेजा खोन पुथी ओड़ाक्"
-
-#: moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASPACKAGE.radiobutton.text
-msgid "Export as ~extension"
+#: source/basicide/basidesh.src#RID_STR_WILLSTOPPRG.String.Text
+msgid  "You will have to restart the program after this edit.\nContinue?"
 msgstr ""
 
-#: moduldlg.src#RID_STR_EXPORTBASIC.string.text
-msgctxt "moduldlg.src#RID_STR_EXPORTBASIC.string.text"
-msgid "Export as BASIC library"
-msgstr "बाहरे भेजा खोन पुथी ओड़ाक्"
+#: source/basicide/basidesh.src#RID_STR_SEARCHALLMODULES.String.Text
+msgid  "Do you want to replace the text in all active modules?"
+msgstr "आप सब क्रियाशील मोड्यूलों में पाठ को प्रतिस्थापित करना चाहते है ?"
 
-#: moduldlg.src#RID_STR_EXPORTPACKAGE.string.text
-msgid "Export library as extension"
+#: source/basicide/basidesh.src#RID_IMGBTN_REMOVEWATCH.ButtonImage.QuickHelpText
+msgid  "Remove Watch"
 msgstr ""
 
-#: moduldlg.src#RID_STR_PACKAGE_BUNDLE.string.text
-msgid "Extension"
+#: source/basicide/basidesh.src#RID_STR_REMOVEWATCH.String.Text
+msgid  "Watch:"
+msgstr "ञेल सामटाव"
+
+#: source/basicide/basidesh.src#RID_STR_STACK.String.Text
+msgid  "Calls: "
+msgstr "होहो"
+
+#: source/basicide/basidesh.src#RID_STR_USERMACROS.String.Text
+msgid  "My Macros"
+msgstr "इञाक् माराङ तेत्"
+
+#: source/basicide/basidesh.src#RID_STR_USERDIALOGS.String.Text
+msgid  "My Dialogs"
+msgstr "इञ रोड़"
+
+#: source/basicide/basidesh.src#RID_STR_USERMACROSDIALOGS.String.Text
+msgid  "My Macros & Dialogs"
+msgstr "इञाक् माराङ तेत्  & रोड़"
+
+#: source/basicide/basidesh.src#RID_STR_SHAREMACROS.String.Text
+msgid  "%PRODUCTNAME Macros"
+msgstr "BASIC माराङ तेत्"
+
+#: source/basicide/basidesh.src#RID_STR_SHAREDIALOGS.String.Text
+msgid  "%PRODUCTNAME Dialogs"
+msgstr "इञ रोड़"
+
+#: source/basicide/basidesh.src#RID_STR_SHAREMACROSDIALOGS.String.Text
+msgid  "%PRODUCTNAME Macros & Dialogs"
+msgstr "%PRODUCTNAME माराङ & रोड़"
+
+#: source/basicide/basidesh.src#RID_POPUP_BRKPROPS.Menu.Text
+msgid  "Properties"
 msgstr ""
 
-#: moduldlg.src#RID_TD_ORGANIZE.tabdialog.text
-msgid "%PRODUCTNAME Basic Macro Organizer"
-msgstr "%PRODUCTNAME माराङ तेत् बेबोसता"
+#: source/basicide/basidesh.src#RID_POPUP_BRKPROPS.RID_ACTIV.MenuItem.Text
+msgid  "Active"
+msgstr ""
 
-#: moptions.src#RID_MACROOPTIONS.RID_FL_HELP.fixedline.text
-msgid "Help information"
-msgstr "गोड़ो खोबोर"
+#: source/basicide/basidesh.src#RID_POPUP_BRKPROPS.RID_BRKPROPS.MenuItem.Text
+msgid  "Properties..."
+msgstr ""
 
-#: moptions.src#RID_MACROOPTIONS.RID_FT_DESCR.fixedtext.text
-msgctxt "moptions.src#RID_MACROOPTIONS.RID_FT_DESCR.fixedtext.text"
-msgid "Description"
-msgstr "विवोरन"
+#: source/basicide/basidesh.src#RID_POPUP_BRKDLG.Menu.Text
+msgid  "Manage Breakpoints"
+msgstr ""
 
-#: moptions.src#RID_MACROOPTIONS.RID_FT_HELPID.fixedtext.text
-msgid "Help ID"
-msgstr "गोड़ोID"
+#: source/basicide/basidesh.src#RID_POPUP_BRKDLG.RID_BRKDLG.MenuItem.Text
+msgid  "Manage Breakpoints..."
+msgstr ""
 
-#: moptions.src#RID_MACROOPTIONS.RID_FT_HELPNAME.fixedtext.text
-msgid "Help file name"
-msgstr "गोड़ो रेत् ञुतुम आ"
+#: source/basicide/basidesh.src#RID_POPUP_TABBAR.RID_INSERT.MenuItem.Text
+msgid  "Insert"
+msgstr ""
 
-#: moptions.src#RID_MACROOPTIONS.modaldialog.text
-msgctxt "moptions.src#RID_MACROOPTIONS.modaldialog.text"
-msgid "Description"
-msgstr "विवोरन"
+#: source/basicide/basidesh.src#RID_POPUP_TABBAR.RID_INSERT.SID_BASICIDE_NEWMODULE.MenuItem.Text
+msgid  "BASIC Module"
+msgstr "BASIC नानापाक्"
 
-#: objdlg.src#RID_BASICIDE_OBJCAT.floatingwindow.text
-msgid "Objects"
+#: source/basicide/basidesh.src#RID_POPUP_TABBAR.RID_INSERT.SID_BASICIDE_NEWDIALOG.MenuItem.Text
+msgid  "BASIC Dialog"
+msgstr ""
+
+#: source/basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_DELETECURRENT.MenuItem.Text
+msgid  "Delete"
+msgstr ""
+
+#: source/basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_RENAMECURRENT.MenuItem.Text
+msgid  "Rename"
+msgstr ""
+
+#: source/basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_HIDECURPAGE.MenuItem.Text
+msgid  "Hide"
+msgstr ""
+
+#: source/basicide/basidesh.src#RID_POPUP_TABBAR.SID_BASICIDE_MODULEDLG.MenuItem.Text
+msgid  "Modules..."
+msgstr ""
+
+#: source/basicide/basidesh.src#RID_POPUP_DLGED.SID_SHOW_PROPERTYBROWSER.MenuItem.Text
+msgid  "Properties..."
+msgstr ""
+
+#: source/basicide/basidesh.src#RID_STR_QUERYREPLACEMACRO.String.Text
+msgid  "Do you want to overwrite the XX macro?"
+msgstr "चेत आम माराङक् मेटाव सानाम काना XX ?"
+
+#: source/basicide/basidesh.src#RID_STR_TRANSLATION_NOTLOCALIZED.String.Text
+msgid  "<Not localized>"
+msgstr ""
+
+#: source/basicide/basidesh.src#RID_STR_TRANSLATION_DEFAULT.String.Text
+msgid  "[Default Language]"
+msgstr ""
+
+#: source/basicide/basidesh.src#RID_STR_DOCUMENT_OBJECTS.String.Text
+msgid  "Document Objects"
+msgstr ""
+
+#: source/basicide/basidesh.src#RID_STR_USERFORMS.String.Text
+msgid  "Forms"
+msgstr ""
+
+#: source/basicide/basidesh.src#RID_STR_NORMAL_MODULES.String.Text
+msgid  "Modules"
+msgstr ""
+
+#: source/basicide/basidesh.src#RID_STR_CLASS_MODULES.String.Text
+msgid  "Class Modules"
+msgstr ""
+
+#: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_RENAME.String.Text
+msgid  "Rename"
+msgstr ""
+
+#: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_REPLACE.String.Text
+msgid  "Replace"
+msgstr ""
+
+#: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TITLE.String.Text
+msgid  "Dialog Import - Name already used"
+msgstr ""
+
+#: source/basicide/basidesh.src#RID_STR_DLGIMP_CLASH_TEXT.String.Text
+msgid  "The library already contains a dialog with the name:\n\n$(ARG1)\n\nRename dialog to keep current dialog or replace existing dialog.\n "
+msgstr ""
+
+#: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_ADD.String.Text
+msgid  "Add"
+msgstr ""
+
+#: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_OMIT.String.Text
+msgid  "Omit"
+msgstr ""
+
+#: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TITLE.String.Text
+msgid  "Dialog Import - Language Mismatch"
+msgstr ""
+
+#: source/basicide/basidesh.src#RID_STR_DLGIMP_MISMATCH_TEXT.String.Text
+msgid  "The dialog to be imported supports other languages than the target library.\n\nAdd these languages to the library to keep additional language resources provided by the dialog or omit them to stay with the current library languages.\n\nNote: For languages not supported by the dialog the resources of the dialog's default language will be used.\n "
+msgstr ""
+
+#: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item1.ItemList.item
+msgid  "Print range"
+msgstr ""
+
+#: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item2.ItemList.item
+msgid  "All ~Pages"
+msgstr ""
+
+#: source/basicide/basicprint.src#RID_PRINTDLG_STRLIST.item3.ItemList.item
+msgid  "Pa~ges"
+msgstr ""
+
+#: source/basicide/objdlg.src#RID_BASICIDE_OBJCAT.FloatingWindow.Text
+msgid  "Objects"
 msgstr "जिनिस"
 
-#: objdlg.src#RID_STR_TLB_MACROS.string.text
-msgid "Objects Tree"
+#: source/basicide/objdlg.src#RID_BASICIDE_OBJCAT.RID_TB_TOOLBOX.TBITEM_SHOW.ToolBoxItem.Text
+msgid  "Show"
+msgstr "उदुक्"
+
+#: source/basicide/objdlg.src#RID_STR_TLB_MACROS.String.Text
+msgid  "Objects Tree"
 msgstr ""
 
-#: objdlg.src#RID_BASICIDE_OBJCAT.RID_TB_TOOLBOX.TBITEM_SHOW.toolboxitem.text
-msgid "Show"
-msgstr "उदुक्"
+#: source/basicide/moptions.src#RID_MACROOPTIONS.ModalDialog.Text
+msgid  "Description"
+msgstr "विवोरन"
+
+#: source/basicide/moptions.src#RID_MACROOPTIONS.RID_FT_DESCR.FixedText.Text
+msgid  "Description"
+msgstr "विवोरन"
+
+#: source/basicide/moptions.src#RID_MACROOPTIONS.RID_FL_HELP.FixedLine.Text
+msgid  "Help information"
+msgstr "गोड़ो खोबोर"
+
+#: source/basicide/moptions.src#RID_MACROOPTIONS.RID_FT_HELPID.FixedText.Text
+msgid  "Help ID"
+msgstr "गोड़ोID"
+
+#: source/basicide/moptions.src#RID_MACROOPTIONS.RID_FT_HELPNAME.FixedText.Text
+msgid  "Help file name"
+msgstr "गोड़ो रेत् ञुतुम आ"
+
+#: source/basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_NEW.PushButton.Text
+msgid  "New"
+msgstr "नावा"
+
+#: source/basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_PB_DEL.PushButton.Text
+msgid  "Delete"
+msgstr "मिटाओ"
+
+#: source/basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_CHKB_ACTIVE.CheckBox.Text
+msgid  "Active"
+msgstr "उसरा़व\"    "
+
+#: source/basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_PASS.FixedText.Text
+msgid  "Pass Count:"
+msgstr "पास लेखा"
+
+#: source/basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.RID_FT_BRKPOINTS.FixedText.Text
+msgid  "Breakpoints"
+msgstr "केचेत् टुडा़क्"
+
+#: source/basicide/brkdlg.src#RID_BASICIDE_BREAKPOINTDLG.NumericField.Text
+msgid  "Manage Breakpoints"
+msgstr "केचेत् टुडा़क् बेबोसता"
+
+#: source/basicide/moduldlg.src#RID_TD_ORGANIZE.TabDialog.Text
+msgid  "%PRODUCTNAME Basic Macro Organizer"
+msgstr "%PRODUCTNAME माराङ तेत् बेबोसता"
+
+#: source/basicide/moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_MOD.PageItem.Text
+msgid  "Modules"
+msgstr "नापाक् को"
+
+#: source/basicide/moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_DLG.PageItem.Text
+msgid  "Dialogs"
+msgstr " रोड़"
+
+#: source/basicide/moduldlg.src#RID_TD_ORGANIZE.RID_TC_ORGANIZE.RID_TP_LIB.PageItem.Text
+msgid  "Libraries"
+msgstr "पुथी ओड़ाक्"
+
+#: source/basicide/moduldlg.src#RID_TP_MODULS.RID_STR_LIB.FixedText.Text
+msgid  "M~odule"
+msgstr "नावा बाबोत्"
+
+#: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_EDIT.PushButton.Text
+msgid  "~Edit"
+msgstr "छापा सोदोर लागिद् सापड़ाव"
+
+#: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_CLOSE.CancelButton.Text
+msgid  "Close"
+msgstr "दुवार सिञ, बोंद"
+
+#: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_NEWMOD.PushButton.Text
+msgid  "~New..."
+msgstr "नावा"
+
+#: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_NEWDLG.PushButton.Text
+msgid  "~New..."
+msgstr "नावा"
+
+#: source/basicide/moduldlg.src#RID_TP_MODULS.RID_PB_DELETE.PushButton.Text
+msgid  "~Delete"
+msgstr "मिटाओ"
+
+#: source/basicide/moduldlg.src#RID_TP_DLGS.RID_STR_LIB.FixedText.Text
+msgid  "Dialog"
+msgstr "रोड़"
+
+#: source/basicide/moduldlg.src#RID_TP_DLGS.RID_PB_EDIT.PushButton.Text
+msgid  "~Edit"
+msgstr "छापा सोदोर लागिद् सापड़ाव"
+
+#: source/basicide/moduldlg.src#RID_TP_DLGS.RID_PB_CLOSE.CancelButton.Text
+msgid  "Close"
+msgstr "दुवार सिञ, बोंद"
+
+#: source/basicide/moduldlg.src#RID_TP_DLGS.RID_PB_NEWMOD.PushButton.Text
+msgid  "~New..."
+msgstr "नावा"
+
+#: source/basicide/moduldlg.src#RID_TP_DLGS.RID_PB_NEWDLG.PushButton.Text
+msgid  "~New..."
+msgstr "नावा"
+
+#: source/basicide/moduldlg.src#RID_TP_DLGS.RID_PB_DELETE.PushButton.Text
+msgid  "~Delete"
+msgstr "मिटाओ"
+
+#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_STR_BASICS.FixedText.Text
+msgid  "L~ocation"
+msgstr "नाखा (~o)"
+
+#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_STR_LIB.FixedText.Text
+msgid  "~Library"
+msgstr "पुथी ओड़ाक् (~L)"
+
+#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_PB_EDIT.PushButton.Text
+msgid  "~Edit"
+msgstr "छापा सोदोर लागिद् सापड़ाव"
+
+#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_PB_CLOSE.CancelButton.Text
+msgid  "Close"
+msgstr "दुवार सिञ, बोंद"
+
+#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_PB_PASSWORD.PushButton.Text
+msgid  "~Password..."
+msgstr "दानाङ साबाद"
+
+#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_PB_NEWLIB.PushButton.Text
+msgid  "~New..."
+msgstr "नावा"
+
+#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_PB_APPEND.PushButton.Text
+msgid  "~Import..."
+msgstr "बाहरे दिसोम खोन सामान"
+
+#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_PB_EXPORT.PushButton.Text
+msgid  "E~xport..."
+msgstr "E~बाहरे दिसोम खोन भेजा"
+
+#: source/basicide/moduldlg.src#RID_TP_LIBS.RID_PB_DELETE.PushButton.Text
+msgid  "~Delete"
+msgstr "मिटाओ"
+
+#: source/basicide/moduldlg.src#RID_DLG_LIBS.RID_FL_OPTIONS.FixedLine.Text
+msgid  "Options"
+msgstr "एटागाक्"
+
+#: source/basicide/moduldlg.src#RID_DLG_LIBS.RID_CB_REF.CheckBox.Text
+msgid  "Insert as reference (read-only)"
+msgstr "संदर्भ जैसे जोड़ें (केवल पढ़ने के लिये)"
+
+#: source/basicide/moduldlg.src#RID_DLG_LIBS.RID_CB_REPL.CheckBox.Text
+msgid  "Replace existing libraries"
+msgstr "मेनाक् पुथी  ओड़ाक् साहा"
+
+#: source/basicide/moduldlg.src#RID_DLG_NEWLIB.RID_FT_NEWLIB.FixedText.Text
+msgid  "~Name:"
+msgstr "ञुतुम"
+
+#: source/basicide/moduldlg.src#RID_DLG_EXPORT.ModalDialog.Text
+msgid  "Export Basic library"
+msgstr " घेंट लेका बाहरे भेजा खोन पुथी ओड़ाक्"
+
+#: source/basicide/moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASPACKAGE.RadioButton.Text
+msgid  "Export as ~extension"
+msgstr ""
+
+#: source/basicide/moduldlg.src#RID_DLG_EXPORT.RB_EXPORTASBASIC.RadioButton.Text
+msgid  "Export as BASIC library"
+msgstr "बाहरे भेजा खोन पुथी ओड़ाक्"
+
+#: source/basicide/moduldlg.src#RID_STR_EXPORTPACKAGE.String.Text
+msgid  "Export library as extension"
+msgstr ""
+
+#: source/basicide/moduldlg.src#RID_STR_EXPORTBASIC.String.Text
+msgid  "Export as BASIC library"
+msgstr "बाहरे भेजा खोन पुथी ओड़ाक्"
+
+#: source/basicide/moduldlg.src#RID_STR_PACKAGE_BUNDLE.String.Text
+msgid  "Extension"
+msgstr ""
+
+#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.ModalDialog.Text
+msgid  "Manage User Interface Languages [$1]"
+msgstr ""
+
+#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_LANGUAGE.FixedText.Text
+msgid  "Present Languages"
+msgstr ""
+
+#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_ADD_LANG.PushButton.Text
+msgid  "Add..."
+msgstr ""
+
+#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_DEL_LANG.PushButton.Text
+msgid  "Delete"
+msgstr ""
+
+#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_MAKE_DEFAULT.PushButton.Text
+msgid  "Default"
+msgstr ""
+
+#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.FT_INFO.FixedText.Text
+msgid  "The default language is used if no localization for a user interface locale is present. Furthermore all strings from the default language are copied to resources of newly added languages."
+msgstr ""
+
+#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.PB_CLOSE.OKButton.Text
+msgid  "~Close"
+msgstr ""
+
+#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DEF_LANG.String.Text
+msgid  "[Default Language]"
+msgstr ""
+
+#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_DELETE.String.Text
+msgid  "~Delete"
+msgstr ""
+
+#: source/dlged/managelang.src#RID_DLG_MANAGE_LANGUAGE.STR_CREATE_LANG.String.Text
+msgid  "<Press 'Add' to create language resources>"
+msgstr ""
+
+#: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Title
+msgid  "Delete Language Resources"
+msgstr ""
+
+#: source/dlged/managelang.src#RID_QRYBOX_LANGUAGE.QueryBox.Message
+msgid  "You are about to delete the resources for the selected language(s). All user interface strings for this language(s) will be deleted.\n\nDo you want to delete the resources of the selected language(s)?"
+msgstr ""
+
+#: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.ModalDialog.Text
+msgid  "Set Default User Interface Language"
+msgstr ""
+
+#: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_LANGUAGE.FixedText.Text
+msgid  "Default language"
+msgstr ""
+
+#: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.FT_DEF_INFO.FixedText.Text
+msgid  "Select a language to define the default user interface language. All currently present strings will be assigned to the resources created for the selected language."
+msgstr ""
+
+#: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_TITLE.String.Text
+msgid  "Add User Interface Languages"
+msgstr ""
+
+#: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_LABEL.String.Text
+msgid  "Available Languages"
+msgstr ""
+
+#: source/dlged/managelang.src#RID_DLG_SETDEF_LANGUAGE.STR_ADDLANG_INFO.String.Text
+msgid  "Select languages to be added. Resources for these languages will be created in the library. Strings of the current default user interface language will be copied to these new resources by default."
+msgstr ""
+
+#: source/dlged/dlgresid.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
+msgid  "Properties: "
+msgstr "गुन"
+
+#: source/dlged/dlgresid.src#RID_STR_BRWTITLE_NO_PROPERTIES.String.Text
+msgid  "No Control marked"
+msgstr "जाहान कोबोच् चिनहा़ बा़नुक् "
+
+#: source/dlged/dlgresid.src#RID_STR_BRWTITLE_MULTISELECT.String.Text
+msgid  "Multiselection"
+msgstr "आड़ी लेकानाक् बाछाव"

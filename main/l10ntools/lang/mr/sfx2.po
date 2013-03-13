@@ -1,2779 +1,2743 @@
-
-#: view.src#STR_NODEFPRINTER.string.text
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
 msgid ""
-"No default printer found.\n"
-"Please choose a printer and try again."
 msgstr ""
-"कोणताही मूळस्थितीचा मुद्रक सापडला नाही.\n"
-"कृपया मुद्रक निवडा व परत प्रयत्न करा."
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
 
-#: view.src#STR_NOSTARTPRINTER.string.text
-msgid ""
-"Could not start printer.\n"
-"Please check your printer configuration."
-msgstr ""
-"मुद्रक सुरु करू शकत नाही.\n"
-"कृपया आपली मुद्रकाची अंतर्गत रचना तपासा."
 
-#: view.src#STR_PRINTER_NOTAVAIL.string.text
-msgid ""
-"This document has been formatted for the printer $1. The specified printer "
-"is not available. \n"
-"Do you want to use the standard printer $2 ?"
-msgstr ""
-"हे कागदपत्र $1 मुद्रकासाठी स्वरूपित केले गेले आहे. निर्देशित केलेला मुद्रक "
-"उपलब्ध नाही.\n"
-"आपणांस ठराविक मुद्रक $2 चा उपयोग करायचे?"
-
-#: view.src#STR_PRINT_OPTIONS.string.text
-msgid "Options..."
-msgstr "पर्याय..."
-
-#: view.src#STR_PRINT_OPTIONS_TITLE.string.text
-msgid "Printer Options"
-msgstr "मुद्रक पर्याय"
-
-#: view.src#STR_ERROR_PRINTER_BUSY.string.text
-msgid "Printer busy"
-msgstr "मुद्रक व्यस्त आहे"
-
-#: view.src#STR_ERROR_PRINT.string.text
-msgid "Error while printing"
-msgstr "छपाई करतेवेळी त्रुटी"
-
-#: view.src#STR_PRINTING.string.text
-msgid "Printing"
-msgstr "छपाई"
-
-#: view.src#STR_PAGE.string.text
-msgid "Page "
-msgstr "पान"
-
-#: view.src#STR_ERROR_SAVE_TEMPLATE.string.text
-msgid "Error saving template "
-msgstr "नमुना जतन करताना दोष"
-
-#: view.src#STR_READONLY.string.text
-msgid " (read-only)"
-msgstr "(केवळ-वाचनीय)"
-
-#: view.src#STR_PRINT_NEWORI.string.text
-msgctxt "view.src#STR_PRINT_NEWORI.string.text"
-msgid ""
-"The page size and orientation have been modified.\n"
-"Would you like to save the new settings in the\n"
-"active document?"
-msgstr ""
-"पानाच्या आकारात आणि अनुस्थापनात बदल केला आहे.\n"
-"आपणांस सक्रिय कागदपत्रात नवीन नियंत्रणाना साठवायचे?"
-
-#: view.src#STR_PRINT_NEWSIZE.string.text
-msgid ""
-"The page size has been modified.\n"
-"Should the new settings be saved\n"
-"in the active document?"
-msgstr ""
-"पानाचे आकार बदलले आहे.\n"
-"नवीन नियंत्रणाना सक्रिय\n"
-"कागदपत्रात साठवायचे?"
-
-#: view.src#STR_PRINT_NEWORISIZE.string.text
-msgctxt "view.src#STR_PRINT_NEWORISIZE.string.text"
-msgid ""
-"The page size and orientation have been modified.\n"
-"Would you like to save the new settings in the\n"
-"active document?"
-msgstr ""
-"पानाच्या आकारात आणि अनुस्थापनात बदल केला आहे.\n"
-"आपणांस सक्रिय कागदपत्रात नवीन नियंत्रणाना साठवायचे?"
-
-#: view.src#STR_PREVIEW_DOCINFO.string.text
-msgid ""
-"<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$("
-"TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt>"
-"<b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
-msgstr ""
-"<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>शीर्षक:</b><dd>$"
-"(TITEL)<dt><b>विषय:</b><dd>$(THEME)<dt><b>कीशब्द:</b><dd>$(KEYWORDS)<dt><b>व"
-"र्णन:</b><dd>$(TEXT)</dl></font></भाग></html>"
-
-#: view.src#STR_PREVIEW_NODOCINFO.string.text
-msgid ""
-"<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document "
-"properties found.</B></FONT></P></BODY></HTML>"
-msgstr ""
-"<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>कागदपत्राची "
-"वैशिष्ट्ये सापडली नाही .</B></FONT></P></BODY></HTML>"
-
-#: view.src#MSG_CANT_CLOSE.infobox.text
-msgid ""
-"The document cannot be closed because a\n"
-" print job is being carried out."
-msgstr ""
-"कागदपत्र बंद करता येत नाही a\n"
-"कारण छपाई काम चालू आहे."
-
-#: view.src#DLG_PRINTMONITOR_TEXT.#define.text
-msgid "Print Monitor"
-msgstr "मुद्रण मॉनिटर"
-
-#: view.src#DLG_PRINTMONITOR.FT_PRINTING.fixedtext.text
-msgid "is being printed on"
-msgstr "यावर छापले जात आहे"
-
-#: view.src#DLG_PRINTMONITOR.STR_FT_PREPARATION.string.text
-msgid "is being prepared for printing"
-msgstr "मुद्रण करीता तयारी करत आहे"
-
-#: view.src#MSG_ERROR_SEND_MAIL.infobox.text
-msgid ""
-"An error occurred in sending the message. Possible errors could be a missing "
-"user account or a defective setup.\n"
-"Please check the %PRODUCTNAME settings or your e-mail program settings."
-msgstr ""
-"संदेश पाठविताना दोष आला आहे. वापरकर्त्याचे खाते गहाळ झाले असावे किंवा "
-"चुकीचीपूर्वतयारीची शक्यता आहेत.\n"
-"कृपया %PRODUCTNAME नियंत्रणाना किंवा आपल्या ई-मेल आज्ञावलींच्या नियंत्रणाना "
-" तपासून पहा."
-
-#: view.src#MSG_QUERY_OPENASTEMPLATE.querybox.text
-msgid ""
-"This document cannot be edited, possibly due to missing access rights. Do "
-"you want to edit a copy of the document?"
-msgstr ""
-"प्रवेश अधिकार अनुपस्थित असल्या कारणाने, हे कागदपत्र संपादित केले जाऊ शकत "
-"नाही. आपणांस कागदपत्राची प्रत संपादित करायची आहे का?"
-
-#: view.src#STR_REPAIREDDOCUMENT.string.text
-msgid " (repaired document)"
-msgstr "(दुरुस्ती केलेले कागदपत्र)"
-
-#: view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.errorbox.text
-msgid ""
-"%PRODUCTNAME could not find a web browser on your system. Please check your "
-"Desktop Preferences or install a web browser (for example, Mozilla) in the "
-"default  location requested during the browser installation."
-msgstr ""
-"%PRODUCTNAME ला आपल्या पद्धतीवरील वेब ब्राऊजर सापडला नाही. कृपया आपल्या "
-"डेस्कटॉप प्राधान्यांना तपासा किंवा ब्राऊजर स्थापनेवेळी विनंती केलेल्या "
-"मूळस्थिती स्थानातील वेब ब्राऊजरला स्थापित करा (उदा. Mozilla)."
-
-#: menu.src#STR_MENU_CFGITEM.string.text
-msgid "Configuration Menu"
-msgstr "संरचना मेन्यू"
-
-#: menu.src#STR_MENU_ADDONS.string.text
-msgid "~Add-Ons"
-msgstr "ऍड-ऑन्स् (~A)"
-
-#: menu.src#MN_CLIPBOARDFUNCS.SID_CUT.menuitem.text
-msgid "Cu~t"
-msgstr "कापा (~t)"
-
-#: menu.src#MN_CLIPBOARDFUNCS.SID_COPY.menuitem.text
-msgid "~Copy"
-msgstr "प्रत बनवा (~C)"
-
-#: menu.src#MN_CLIPBOARDFUNCS.SID_PASTE.menuitem.text
-msgid "~Paste"
-msgstr "चिकटवा (~P)"
-
-#: menu.src#SID_WIN_FULLSCREEN.string.text
-msgid "Leave Full-Screen Mode"
-msgstr "पडदाभर मोडमधून बाहेर पडा"
-
-#: menu.src#STR_MENU_ADDONHELP.string.text
-msgid "Add-~On Help"
-msgstr "ऍड-ऑन मदत (~O)"
-
-#: menu.src#STR_MENU_SYNONYMS.string.text
-msgid "Synonyms"
-msgstr "समानार्थी"
-
-#: menu.src#STR_MENU_NO_SYNONYM_FOUND.string.text
-msgid "(none)"
-msgstr "(काहिच नाही)"
-
-#: menu.src#STR_MENU_THESAURUS.string.text
-msgid "~Thesaurus..."
-msgstr "थिसॉरस (~T)..."
-
-#: fltfnc.src#STR_FILTER_NOT_INSTALLED.string.text
-msgid ""
-"The selected filter $(FILTER) has not been installed.\n"
-"Would you like to do this now?"
-msgstr ""
-"निवडलेली गाळणी   $(FILTER)  स्थापित केलेला नाही.\n"
-"आपणांस आता करायचे आहे का?"
-
-#: fltfnc.src#STR_FILTER_CONSULT_SERVICE.string.text
-msgid ""
-"The selected filter $(FILTER) is not included in your edition.\n"
-"You can find information about orders on our homepage."
-msgstr ""
-"निवडलेली गाळणी $(FILTER) आपल्या संपादनात समाविष्ट नाही.\n"
-"आपणांस आमच्या होमपानावर ऑर्डर बद्दल माहिती मिळेल."
-"X-Accelerator-Marker: ~\n"
-
-#: app.src#STR_NONAME.string.text
-msgid "Untitled"
-msgstr "शीर्षक-रहित"
-
-#: app.src#STR_CLOSE.string.text
-msgid "Close"
-msgstr "बंद करा"
-
-#: app.src#STR_STYLE_FILTER_AUTO.string.text
-msgid "Automatic"
-msgstr "स्वयं"
-
-#: app.src#STR_STANDARD_SHORTCUT.string.text
+#: source/appl/dde.src#MD_DDE_LINKEDIT.ModalDialog.Text
 #, fuzzy
-msgctxt "app.src#STR_STANDARD_SHORTCUT.string.text"
-msgid "Standard"
-msgstr "मानक"
-
-#: app.src#STR_BYTES.string.text
-msgid "Bytes"
-msgstr "बाइट्स"
-
-#: app.src#STR_KB.string.text
-msgid "KB"
-msgstr "KB"
-
-#: app.src#STR_MB.string.text
-msgid "MB"
-msgstr "MB"
-
-#: app.src#STR_GB.string.text
-msgid "GB"
-msgstr "GB"
-
-#: app.src#MSG_QUERY_LASTVERSION.querybox.text
-msgid "Cancel all changes?"
-msgstr "सर्व बदल रद्द करायचे?"
-
-#: app.src#RID_DOCALREADYLOADED_DLG.infobox.text
-msgid "Document already open."
-msgstr "दस्तऐवज आधीपासूनच उघडलेले आहे."
-
-#: app.src#MSG_ERR_NO_WEBBROWSER_FOUND.errorbox.text
-msgid ""
-"%PRODUCTNAME could not find a web browser on your system. Please check your "
-"Desktop Preferences or install a web browser (for example, Mozilla) in the "
-"default  location requested during the browser installation."
-msgstr ""
-"%PRODUCTNAME ला आपल्या पद्धती मधले वेब ब्राऊझर सापडले नाही. कृपया ब्राऊजर "
-"स्थापनेच्या दरम्यान विनंती केलेल्या मूळस्थिती स्थानात आपली डेस्कटॉप "
-"प्राधान्ये तपासा किंवा वेब ब्राऊजर स्थापना करा."
-
-#: app.src#GID_INTERN.string.text
-msgid "Internal"
-msgstr "आतील"
-
-#: app.src#GID_APPLICATION.string.text
-msgid "Application"
-msgstr "ऍप्लिकेशन"
-
-#: app.src#GID_VIEW.string.text
-msgid "View"
-msgstr "दृश्य"
-
-#: app.src#GID_DOCUMENT.string.text
-msgid "Documents"
-msgstr "दस्तऐवज"
-
-#: app.src#GID_EDIT.string.text
-msgid "Edit"
-msgstr "संपादन"
-
-#: app.src#GID_MACRO.string.text
-msgid "BASIC"
-msgstr "BASIC"
-
-#: app.src#GID_OPTIONS.string.text
-#, fuzzy
-msgid "Options"
-msgstr "पर्याय"
-
-#: app.src#GID_MATH.string.text
-msgid "Math"
-msgstr "गणित"
-
-#: app.src#GID_NAVIGATOR.string.text
-msgid "Navigate"
-msgstr "दिशादर्शन करा"
-
-#: app.src#GID_INSERT.string.text
-msgid "Insert"
-msgstr "अंतर्भूत करा"
-
-#: app.src#GID_FORMAT.string.text
-msgid "Format"
-msgstr "रूपण"
-
-#: app.src#GID_TEMPLATE.string.text
-#, fuzzy
-msgid "Templates"
-msgstr "साचे"
-
-#: app.src#GID_TEXT.string.text
-msgid "Text"
-msgstr "मजकूर"
-
-#: app.src#GID_FRAME.string.text
-msgid "Frame"
-msgstr "चौकट"
-
-#: app.src#GID_GRAPHIC.string.text
-msgctxt "app.src#GID_GRAPHIC.string.text"
-msgid "Graphic"
-msgstr "ग्राफिक"
-
-#: app.src#GID_TABLE.string.text
-msgid "Table"
-msgstr "कोष्टक"
-
-#: app.src#GID_ENUMERATION.string.text
-msgid "Numbering"
-msgstr "क्रमांकन"
-
-#: app.src#GID_DATA.string.text
-msgid "Data"
-msgstr "डाटा"
-
-#: app.src#GID_SPECIAL.string.text
-msgid "Special Functions"
-msgstr "विशेष कार्य"
-
-#: app.src#GID_IMAGE.string.text
-msgid "Image"
-msgstr "प्रतिमा"
-
-#: app.src#GID_CHART.string.text
-msgid "Chart"
-msgstr "तक्ता"
-
-#: app.src#GID_EXPLORER.string.text
-msgid "Explorer"
-msgstr "एक्सप्लोरर"
-
-#: app.src#GID_CONNECTOR.string.text
-msgid "Connector"
-msgstr "कनेक्टर"
-
-#: app.src#GID_MODIFY.string.text
-msgid "Modify"
-msgstr "सुधारा"
-
-#: app.src#GID_DRAWING.string.text
-msgid "Drawing"
-msgstr "रेखांकन"
-
-#: app.src#GID_CONTROLS.string.text
-msgid "Controls"
-msgstr "कंट्रोल्स्"
-
-#: app.src#MSG_CANT_QUIT.infobox.text
-msgid ""
-"The application cannot be terminated at the moment.\n"
-"Please wait until all print jobs and/or\n"
-"OLE actions have finished and close all dialogs."
-msgstr ""
-"ह्याक्षणी ऍप्लिकेशन थांबवता येत नाही.\n"
-"कृपया सर्व छपाई कामे आणि/किंवा\n"
-"OLE कृती संपून सर्व संवाद बंद होईपर्यंत थांबा."
-
-#: app.src#STR_ISMODIFIED.string.text
-msgid "Do you want to save the changes to %1?"
-msgstr "आपणांस %1 मध्ये बदल साठवायचे आहेत का ?"
-
-#: app.src#STR_QUITAPP.string.text
-msgid "E~xit"
-msgstr "बाहेर पडा (~x)"
-
-#: app.src#RID_STR_HELP.string.text
-#, fuzzy
-msgid "Help"
-msgstr "मदत"
-
-#: app.src#RID_STR_NOAUTOSTARTHELPAGENT.string.text
-msgid "No automatic start at 'XX'"
-msgstr "'XX' ला स्वयं प्रारंभ नाही"
-
-#: app.src#RID_HELPBAR.string.text
-msgid "Help Bar"
-msgstr "मदत पट्टी"
-
-#: app.src#RID_STR_HLPFILENOTEXIST.string.text
-msgid "The help file for this topic is not installed."
-msgstr "या विषयाची मदत फाइल स्थापित नाही."
-
-#: app.src#RID_ENVTOOLBOX.string.text
-msgid "Function Bar"
-msgstr "कार्य पट्टी"
-
-#: app.src#RID_SPECIALCONFIG_ERROR.string.text
-msgid ""
-"An error has occurred in the special configuration.\n"
-"Please contact your administrator."
-msgstr ""
-"विशेष अंतर्गत रचनेत त्रुटी आढळली.\n"
-" कृपया आपल्या व्यवस्थापकाशी संपर्क साधा."
-
-#: app.src#STR_QUICKSTART_EXIT.string.text
-msgid "Exit Quickstarter"
-msgstr "शीघ्र प्रारंभकातून बाहेर पडा"
-
-#: app.src#STR_QUICKSTART_TIP.string.text
-msgid "%PRODUCTNAME %PRODUCTVERSION Quickstarter"
-msgstr "%PRODUCTNAME %PRODUCTVERSION शीघ्र प्रारंभ करणारा"
-
-#: app.src#STR_QUICKSTART_FILEOPEN.string.text
-msgid "Open Document..."
-msgstr "दस्तऐवज उघडा..."
-
-#: app.src#STR_QUICKSTART_FROMTEMPLATE.string.text
-msgid "From Template..."
-msgstr "नमुन्यापासून..."
-
-#: app.src#STR_QUICKSTART_PRELAUNCH.string.text
-msgid "Load %PRODUCTNAME During System Start-Up"
-msgstr "पद्धती सुरु होताना %PRODUCTNAME लोड करा"
-
-#: app.src#STR_QUICKSTART_PRELAUNCH_UNX.string.text
-msgid "Disable systray Quickstarter"
-msgstr "सिसट्रे क्विकस्टार्टरला असक्षम करा"
-
-#: app.src#STR_QUICKSTART_LNKNAME.string.text
-msgid "%PRODUCTNAME %PRODUCTVERSION"
-msgstr "%PRODUCTNAME%PRODUCTVERSION"
-
-#: app.src#STR_QUICKSTART_FILE.string.text
-msgid "File"
-msgstr "फाइल"
-
-#: app.src#STR_QUICKSTART_STARTCENTER.string.text
-msgid "Startcenter"
-msgstr "प्रारंभकेंद्र"
-
-#: app.src#STR_QUICKSTART_RECENTDOC.string.text
-msgid "Recent Documents"
-msgstr "अलिकडील दस्तऐवज"
-
-#: app.src#STR_QUERY_UPDATE_LINKS.string.text
-msgid "Update all links?"
-msgstr "सर्व दुव्यांना अद्ययावत करायचे?"
-
-#: app.src#STR_DDE_ERROR.string.text
-msgid "DDE link to % for % area % are not available."
-msgstr "DDE दुवा % ला % क्षेत्र % उपलब्ध नाही."
-
-#: app.src#RID_SECURITY_WARNING_HYPERLINK.warningbox.text
-msgid "This hyperlink is going to open \"%s\". Do you want to proceed?"
-msgstr "ह्या हाइपरलिंकमुळे \"%s\" उघडणार आहे. आपणांस पुढ चालू ठेवायचे आहे का?"
-
-#: app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.warningbox.text
-msgid ""
-"For security reasons, the hyperlink cannot be executed.\n"
-"The stated address will not be opened."
-msgstr ""
-"सुरक्षिततेसाठी, हाइपरलिंक कार्यान्वित करता आली नाही.\n"
-"दिलेला पत्ता उघडता येणार नाही."
-
-#: app.src#RID_SECURITY_WARNING_TITLE.string.text
-msgid "Security Warning"
-msgstr "सुरक्षा सूचना"
-
-#: app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.querybox.text
-msgid ""
-"Saving will remove all existing signatures.\n"
-"Do you want to continue saving the document?"
-msgstr ""
-"जतन केल्यामुळे सर्व अस्तित्वात असलेली हस्ताक्षरे काढून टाकली जातील.\n"
-"आपणांस दस्तऐवज जतन करणे चालू ठेवायचे आहे का?"
-
-#: app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.querybox.text
-msgid ""
-"The document has to be saved before it can be signed.\n"
-"Do you want to save the document?"
-msgstr ""
-"दस्तऐवजात हस्ताक्षर होण्याधी ते साठवणे आवश्यक आहे.\n"
-"आपणांस दस्तऐवज साठवायचे?"
-
-#: app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.infobox.text
-msgid ""
-"This document must be saved in OpenDocument file format before it can be "
-"digitally signed."
-msgstr ""
-"ह्या दस्तऐवजावर डिजिटल हस्ताक्षर होण्याधी ते उघडेदस्तऐवज फाइल स्वरूपणात जतन "
-"होणे आवश्यक आहे."
-
-#: app.src#RID_XMLSEC_DOCUMENTSIGNED.string.text
-msgid " (Signed)"
-msgstr "(हस्ताक्षरित)"
-
-#: app.src#STR_STANDARD.string.text
-#, fuzzy
-msgctxt "app.src#STR_STANDARD.string.text"
-msgid "Standard"
-msgstr "मानक"
-
-#: app.src#RID_SVXSTR_FILELINK.string.text
-msgid "Document"
-msgstr "दस्तऐवज"
-
-#: app.src#STR_NONE.string.text
-msgid "- None -"
-msgstr "- कोणी नाही -"
-
-#: app.src#RID_SVXSTR_GRAFIKLINK.string.text
-msgctxt "app.src#RID_SVXSTR_GRAFIKLINK.string.text"
-msgid "Graphic"
-msgstr "ग्राफिक"
-
-#: app.src#STR_SFX_FILTERNAME_ALL.string.text
-msgid "All files (*.*)"
-msgstr "सर्व फाइल्स् (*.*)"
-
-#: app.src#RID_SVXSTR_EDITGRFLINK.string.text
-msgid "Link graphics"
-msgstr "ग्राफिक्स् सह जोडणी करा"
-
-#: app.src#STR_ERRUNOEVENTBINDUNG.string.text
-msgid ""
-"An appropriate component method %1\n"
-"could not be found.\n"
-"\n"
-"Check spelling of method name."
-msgstr ""
-"योग्य घटक पद्धत%1\n"
-"सापडली नाही.\n"
-"\n"
-"पद्धती नावाचे शब्दलेखन तपासा."
-
-#: app.src#RID_SVXSTR_GRFILTER_OPENERROR.string.text
-msgid "Graphics file cannot be opened"
-msgstr "ग्राफिक्स् फाइल उडणे शक्य नाही"
-
-#: app.src#RID_SVXSTR_GRFILTER_IOERROR.string.text
-msgid "Graphics file cannot be read"
-msgstr "ग्राफिक्स् फाइल वाचणे शक्य नाही"
-
-#: app.src#RID_SVXSTR_GRFILTER_FORMATERROR.string.text
-msgid "Unknown graphics format"
-msgstr "अपरिचीत ग्राफिक्स् रूपण"
-
-#: app.src#RID_SVXSTR_GRFILTER_VERSIONERROR.string.text
-msgid "This version of the graphics file is not supported"
-msgstr "ग्राफिक्स् फाइलची ही आवृत्ती समर्थीत नाही"
-
-#: app.src#RID_SVXSTR_GRFILTER_FILTERERROR.string.text
-msgid "Graphics filter not found"
-msgstr "ग्राफिक्स् फिल्टर आढळले नाही"
-
-#: app.src#RID_SVXSTR_GRFILTER_TOOBIG.string.text
-msgid "Not enough memory to insert graphic"
-msgstr "ग्राफिक अंतर्भूत करण्यासाठी अतिरीक्त मेमरी नाही"
-
-#: dde.src#MD_DDE_LINKEDIT.FT_DDE_APP.fixedtext.text
-msgid "~Application:"
-msgstr "ऍप्लिकेशन (~A):"
-
-#: dde.src#MD_DDE_LINKEDIT.FT_DDE_TOPIC.fixedtext.text
-msgid "~File:"
-msgstr "फाइल (~F):"
-
-#: dde.src#MD_DDE_LINKEDIT.FT_DDE_ITEM.fixedtext.text
-msgid "~Category:"
-msgstr "वर्ग (~C):"
-
-#: dde.src#MD_DDE_LINKEDIT.GROUP_DDE_CHG.fixedline.text
-msgid "Modify link"
-msgstr " दुवा सुधारा"
-
-#: dde.src#MD_DDE_LINKEDIT.modaldialog.text
-msgid "Modify Link"
+msgid  "Modify Link"
 msgstr "दुवा  सुधारा"
 
-#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_CONTENTS.pageitem.text
-msgid "Contents"
-msgstr "विषयसूची"
-
-#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_INDEX.pageitem.text
-msgid "Index"
-msgstr "अनुक्रमणिका"
-
-#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_SEARCH.pageitem.text
-msgid "Find"
-msgstr "शोधा"
-
-#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_BOOKMARKS.pageitem.text
-msgid "Bookmarks"
-msgstr "पृष्ठखूणा"
-
-#: newhelp.src#TP_HELP_INDEX.FT_EXPRESSION.fixedtext.text
-msgid "~Search term"
-msgstr "शोधण्याजोगी संज्ञा (~S)"
-
-#: newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.pushbutton.text
-msgctxt "newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.pushbutton.text"
-msgid "~Display"
-msgstr "प्रदर्शन (~D)"
-
-#: newhelp.src#TP_HELP_SEARCH.FT_SEARCH.fixedtext.text
-msgid "S~earch term"
-msgstr "शोधण्याजोगी संज्ञा (~e)"
-
-#: newhelp.src#TP_HELP_SEARCH.PB_SEARCH.pushbutton.text
-msgid "~Find"
-msgstr "शोधा (~F)"
-
-#: newhelp.src#TP_HELP_SEARCH.CB_FULLWORDS.checkbox.text
-msgid "~Complete words only"
-msgstr "फक्त पूर्ण शब्द (~C)"
-
-#: newhelp.src#TP_HELP_SEARCH.CB_SCOPE.checkbox.text
-msgid "Find in ~headings only"
-msgstr "फक्त शीर्षकात शोधा (~h)"
-
-#: newhelp.src#TP_HELP_SEARCH.PB_OPEN_SEARCH.pushbutton.text
-msgctxt "newhelp.src#TP_HELP_SEARCH.PB_OPEN_SEARCH.pushbutton.text"
-msgid "~Display"
-msgstr "दृष्य (~D)"
-
-#: newhelp.src#TP_HELP_BOOKMARKS.FT_BOOKMARKS.fixedtext.text
-msgid "~Bookmarks"
-msgstr "वाचणखूणा (~B)"
-
-#: newhelp.src#TP_HELP_BOOKMARKS.PB_BOOKMARKS.pushbutton.text
+#: source/appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_APP.FixedText.Text
 #, fuzzy
-msgctxt "newhelp.src#TP_HELP_BOOKMARKS.PB_BOOKMARKS.pushbutton.text"
-msgid "~Display"
-msgstr "दृष्य (~D)"
+msgid  "~Application:"
+msgstr "ऍप्लिकेशन (~A):"
 
-#: newhelp.src#STR_HELP_WINDOW_TITLE.string.text
-msgid "%PRODUCTNAME Help"
-msgstr "%PRODUCTNAME मदत"
-
-#: newhelp.src#STR_HELP_BUTTON_INDEX_ON.string.text
-msgid "Show Navigation Pane"
-msgstr "दिशादर्शन पट्टी दाखवा"
-
-#: newhelp.src#STR_HELP_BUTTON_INDEX_OFF.string.text
-msgid "Hide Navigation Pane"
-msgstr "दिशादर्शन पट्टी अदृश्य करा"
-
-#: newhelp.src#STR_HELP_BUTTON_START.string.text
-msgid "First Page"
-msgstr "पहिले पान"
-
-#: newhelp.src#STR_HELP_BUTTON_PREV.string.text
-msgid "Previous Page"
-msgstr "मागील पान"
-
-#: newhelp.src#STR_HELP_BUTTON_NEXT.string.text
-msgid "Next Page"
-msgstr "पुढचे पान"
-
-#: newhelp.src#STR_HELP_BUTTON_PRINT.string.text
-msgid "Print..."
-msgstr "मुद्रित करा..."
-
-#: newhelp.src#STR_HELP_BUTTON_ADDBOOKMARK.string.text
-msgid "Add to Bookmarks..."
-msgstr "पृष्ठखूणांमध्ये समाविष्ट करा..."
-
-#: newhelp.src#STR_HELP_BUTTON_SEARCHDIALOG.string.text
-msgid "Find on this Page..."
-msgstr "या पानावर शोधा..."
-
-#: newhelp.src#STR_HELP_BUTTON_SOURCEVIEW.string.text
-msgid "HTML Source"
-msgstr "HTML  स्त्रोत"
-
-#: newhelp.src#STR_HELP_FIRST_MESSAGE.string.text
-msgid "The Help is being started..."
-msgstr "मदत सुरु होत आहे..."
-
-#: newhelp.src#STR_HELP_MENU_TEXT_SELECTION_MODE.string.text
-msgid "Select Text"
-msgstr "मजकूर निवडा"
-
-#: newhelp.src#STR_HELP_MENU_TEXT_COPY.string.text
-msgid "~Copy"
-msgstr "प्रत बनवा (~C)"
-
-#: newhelp.src#DLG_HELP_ADDBOOKMARK.FT_BOOKMARK_TITLE.fixedtext.text
-msgid "Bookmark:"
-msgstr "पृष्ठखूण:"
-
-#: newhelp.src#DLG_HELP_ADDBOOKMARK.STR_BOOKMARK_RENAME.string.text
-msgid "Rename Bookmark"
-msgstr "पृष्ठखूणेला नवीन नाव द्या"
-
-#: newhelp.src#DLG_HELP_ADDBOOKMARK.modaldialog.text
-msgid "Add to Bookmarks"
-msgstr "पृष्ठखूणांमधे समाविष्ट करा"
-
-#: newhelp.src#MENU_HELP_BOOKMARKS.MID_OPEN.menuitem.text
-msgid "Display"
-msgstr "प्रदर्शित करा"
-
-#: newhelp.src#MENU_HELP_BOOKMARKS.MID_RENAME.menuitem.text
-msgid "Rename..."
-msgstr "नवीन नाव द्या..."
-
-#: newhelp.src#MENU_HELP_BOOKMARKS.MID_DELETE.menuitem.text
-msgid "Delete"
-msgstr "नष्ट करा"
-
-#: newhelp.src#RID_INFO_NOSEARCHRESULTS.infobox.text
-msgid "No topics found."
-msgstr "कुठलेही विषय आढळले नाही."
-
-#: newhelp.src#RID_INFO_NOSEARCHTEXTFOUND.infobox.text
-msgid "The text you entered was not found."
-msgstr "आपण समाविष्ट केलेला मजकूर आढळले नाही."
-
-#: newhelp.src#RID_HELP_ONSTARTUP_TEXT.string.text
-msgid "~Display %PRODUCTNAME %MODULENAME Help at Startup"
-msgstr "%PRODUCTNAME %MODULENAME प्रारंभवेळी मदत प्रदर्शित करा (~D)"
-
-#: sfx.src#STR_ACCTITLE_PRODUCTIVITYTOOLS.string.text
-msgid "%PRODUCTNAME"
-msgstr ""
-
-#~ msgid "Applied Styles"
-#~ msgstr "लागू केलेली शैली"
-
-#~ msgid "Custom Styles"
-#~ msgstr "मनपसंत शैली"
-
-#~ msgid "All Styles"
-#~ msgstr "सर्व शैली"
-
-#~ msgid "Cannot open document."
-#~ msgstr "दस्तऐवज उघडणे शक्य नाही."
-
-#~ msgid "Error reading configuration file."
-#~ msgstr "अंतरग्त रचना फाइल वाचताना दोष."
-
-#~ msgid "Error writing configuration file."
-#~ msgstr "संरचना फाइल लिहिताना दोष."
-
-#~ msgid "Error opening configuration file."
-#~ msgstr "संरचना फाइल उघडताना दोष."
-
-#~ msgid "File is not a configuration file."
-#~ msgstr "फाइल संरचना फाइल नाही."
-
-#~ msgid "Configuration file contains the wrong version."
-#~ msgstr "संरचना फाइलमध्ये चुकीची आवृत्ती समाविष्ट आहे."
-
-#~ msgid ""
-#~ "Error recording BASIC library in\n"
-#~ "'@'."
-#~ msgstr ""
-#~ "'@' अंतर्गत BASIC लायब्ररी रेकॉर्ड\n"
-#~ "करतेवेळी त्रुटी आढळली."
-
-#~ msgid ""
-#~ "An unexpected program error has occurred.\n"
-#~ "\n"
-#~ "Do you want to try to save your changes in all open documents before the "
-#~ "program is terminated?"
-#~ msgstr ""
-#~ "अनपेक्षीत आज्ञावली त्रुटी आढळली. \n"
-#~ "\n"
-#~ "आज्ञावली बंद होण्यापूर्वी आपणांस सर्व खुल्या दस्तऐवजातील बदल साठवावयाचे आहेत "
-#~ "का ?"
-
-#~ msgid ""
-#~ "A form is to be sent by e-mail.\n"
-#~ "This means that the receiver will get to see your e-mail address."
-#~ msgstr ""
-#~ "इ-मेल द्वारा एक नमुना पाठवायचा आहे.\n"
-#~ "याचाच अर्थ हा की प्राप्तकर्ता आपला इ-मेल पत्ता बघेल."
-
-#~ msgid "File Recovery"
-#~ msgstr "फाइल पुर्नप्राप्ति"
-
-#~ msgid "Should the file \"$1\" be restored?"
-#~ msgstr "\"$1\" फाइल पूर्वस्थितीत आणायची?"
-
-#~ msgid "General"
-#~ msgstr "सर्वसाधारण"
-
-#~ msgid "Save"
-#~ msgstr "साठवा"
-
-#~ msgid "Paths"
-#~ msgstr "मार्ग"
-
-#~ msgid "Spellcheck"
-#~ msgstr "शुद्धलेखन"
-
-#~ msgid ""
-#~ "This application is as object or print server active.\n"
-#~ "Do you want to terminate anyway?"
-#~ msgstr ""
-#~ "हा ऍप्लिकेशन वस्तू किंवा सक्रिय छपाई सर्वर सारखा आहे. \n"
-#~ "तरीही बंद करायचा का?"
-
-#~ msgid "%PRODUCTNAME cannot be started more than once."
-#~ msgstr "%PRODUCTNAME एकापेक्षा जास्त वेळा चालू करता येत नाही."
-
-#~ msgid ""
-#~ "Some %PRODUCTNAME functions will not work properly without a printer driver.\n"
-#~ "Please install a printer driver."
-#~ msgstr ""
-#~ "काही %PRODUCTNAME कार्ये मुद्रक चालकाशिवाय योग्य रीते कार्य होणार नाहीत.\n"
-#~ "कृपया मुद्रक चालक स्थापित करा."
-
-#~ msgid "AutoSave"
-#~ msgstr "स्वयंसाठवा"
-
-#~ msgid ""
-#~ "Limited system resources. Please quit other applications or close some "
-#~ "windows before continuing."
-#~ msgstr ""
-#~ "पद्धती संसाधने सिमित आहे. पुढे चालू ठेवण्या आधी कृपया इतर ऍप्लिकेशन्स् पासून "
-#~ "बाहेर पडा किंवा काही विंडो बंद करा."
-
-#~ msgid "There are files missing. Please check application setup."
-#~ msgstr "काही फाइल गहाळ झाल्या आहेत. कृपया ऍप्लिकेशनाची पूर्वतयारी    तपासा."
-
-#~ msgid ""
-#~ "Another error occurred during the save recovery.\n"
-#~ "Possibly, the data could not be entirely saved."
-#~ msgstr ""
-#~ "जतन केलेल्याची पुनःप्राप्ती करताना आणखीन एक त्रुटी आढळली.\n"
-#~ "शक्यता आहे की संपूर्ण डाटा जतन झाला नसावा."
-
-#~ msgid "System resources exhausted. Please restart the application."
-#~ msgstr "पद्धतीची संसाधने संपली. कृपया ऍप्लिकेशन पुनः सुरु करा."
-
-#~ msgid "Error initializing object-system."
-#~ msgstr "ऑब्जेक्ट-सिस्टम् सुरु करतेवेळी त्रुटी आढळली."
-
-#~ msgid "The file $(FILE) doesn't exist."
-#~ msgstr "$(FILE) फाइल अस्तित्वात नाही."
-
-#~ msgid "The path to file $(FILE) doesn't exist."
-#~ msgstr "$(FILE) धारिकेचा मार्ग अस्तित्वात नाही."
-
-#~ msgid ""
-#~ "The file $(FILE) could not be opened,\n"
-#~ "because too many files are open.\n"
-#~ "Please close some files and try again."
-#~ msgstr ""
-#~ "$(FILE) फाइल उघडली जात नाही\n"
-#~ "कारण अनेक फाइल उघड्या आहेत.\n"
-#~ "कृपया काही फाइल बंद करा व पुन्हा प्रयत्न करा."
-
-#~ msgid "The file $(FILE) could not be opened due to missing access rights."
-#~ msgstr "प्रवेशाचे हक्क गहाळ झाल्याने $(FILE) फाइल उघडता येत नाही."
-
-#~ msgid "The file $(FILE) could not be accessed."
-#~ msgstr "फाइल $(FILE) करीता प्रवेश अशक्य."
-
-#~ msgid "The file $(FILE) could not be opened due to an invalid file handle."
-#~ msgstr "$(FILE) फाइल अवैध फाइल हॅंडलमुळे उघडता येत नाही."
-
-#~ msgid "The file $(FILE) could not be created."
-#~ msgstr "$(FILE) फाइल निर्माण करता येत नाही."
-
-#~ msgid "Error by shared access to $(FILE)."
-#~ msgstr "$(FILE) च्या समाईक वापरामुळे दोष."
-
-#~ msgid "General I/O error accessing $(FILE)."
-#~ msgstr "$(FILE) प्रवेश करताना सामान्य I/O दोष."
-
-#~ msgid "The selected template has an incorrect format"
-#~ msgstr "निवडलेल्यानमुन्यामध्ये चुकीचे रूपण आहे. "
-
-#~ msgid "Can't open file $."
-#~ msgstr "फाइल $ उघडणे शक्य नाही."
-
-#~ msgid "E~xit & return to "
-#~ msgstr "बाहेर पडा व परता (~x)"
-
-#~ msgid "Select a command or click to select a theme."
-#~ msgstr "आदेश निवडा किंवा विषय निवडीसाठी क्लिक करा."
-
-#~ msgid "Mail"
-#~ msgstr "मेल"
-
-#~ msgid "Addresses"
-#~ msgstr "पत्ते"
-
-#~ msgid "Don't display tips"
-#~ msgstr "सूचना प्रदर्शित करु नका"
-
-#~ msgid "The help system could not be started"
-#~ msgstr "मदत पद्धती सुरु करणे शक्य नाही"
-
-#~ msgid "Enable plug-ins"
-#~ msgstr "प्लग-ईन सक्षम करा"
-
-#~ msgid ""
-#~ "Important program components could not be initialized correctly.\n"
-#~ "Please start the setup program with the option /Repair."
-#~ msgstr ""
-#~ "महत्त्वपूर्ण आज्ञावली घटक योग्य प्रकारे सुरु करणे शक्य नाही. \n"
-#~ "कृपया पर्याय/दुरुस्तीसहित आज्ञावलीची पूर्वतयारी सुरू करा."
-
-#~ msgid "Reference will not be saved: "
-#~ msgstr "संदर्भ जतन केले जाणार नाही: "
-
-#~ msgid "Configuration"
-#~ msgstr "संरचना"
-
-#~ msgid "My Documents"
-#~ msgstr "माझे दस्तऐवज"
-
-#~ msgid "Graphics"
-#~ msgstr "ग्राफिक्स्"
-
-#~ msgid "Icons"
-#~ msgstr "चित्रसंकेत"
-
-#~ msgid "Palettes"
-#~ msgstr "रंगसंच"
-
-#~ msgid "Backups"
-#~ msgstr "नक्कलप्रती"
-
-#~ msgid "Modules"
-#~ msgstr "घटके"
-
-#~ msgid "AutoText"
-#~ msgstr "स्वयंमजकूर"
-
-#~ msgid "Dictionaries"
-#~ msgstr "शब्दकोश"
-
-#~ msgid "Gallery"
-#~ msgstr "कलादालन "
-
-#~ msgid "Message Storage"
-#~ msgstr "संदेश संचय"
-
-#~ msgid "Temporary files"
-#~ msgstr "तात्पुरत्या फाइल"
-
-#~ msgid "Plug-ins"
-#~ msgstr "प्लग-ईन्स"
-
-#~ msgid "Folder Bookmarks"
-#~ msgstr "धारक पृष्ठखूणा "
-
-#~ msgid "Filters"
-#~ msgstr "गाळणी"
-
-#~ msgid "Add-ins"
-#~ msgstr "ऍड-इन्स्"
-
-#~ msgid "User Configuration"
-#~ msgstr "वापरकर्त्याची संरचना"
-
-#~ msgid "User-defined dictionaries"
-#~ msgstr "वापरकर्त्याने-ठरवलेले शब्दकोश"
-
-#~ msgid "AutoCorrect"
-#~ msgstr "स्वयंदुरुस्ती"
-
-#~ msgid "Writing aids"
-#~ msgstr "लेखन सहायके"
-
-#~ msgid "The URL is not valid."
-#~ msgstr "URL अवैध आहे."
-
-#~ msgid "Undo: "
-#~ msgstr "कृती रद्द करा: "
-
-#~ msgid "Re~do: "
-#~ msgstr "पुन्हा करा (~d): "
-
-#~ msgid "~Repeat: "
-#~ msgstr "पुनः करा (~R): "
-
-#~ msgid "New task"
-#~ msgstr "नवे कार्य"
-"X-Accelerator-Marker: ~\n"
-
-#: doc.src#MSG_CONFIRM_FILTER.querybox.text
-msgid ""
-"Saving in external formats may have caused\n"
-" information loss. Do you still want to close?"
-msgstr ""
-"बाह्य स्वरूपणात जतन केल्यामूळे माहिती गहाळ\n"
-"होण्याची शक्यता आहे. तरीही आपल्याला बंद करायचे आहे का?"
-
-#: doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.querybox.text
-msgid ""
-"Name already in use.\n"
-"Do you want to overwrite document template?"
-msgstr ""
-"नाव आधीपासूनच वापरात आहे.\n"
-"आपणास कागदपत्राचा नमुन्यावर दुसरा नमुना घालायचा आहे का?"
-
-#: doc.src#STR_DELETE_REGION.string.text
-msgid "Are you sure you want to delete the region \"$1\"?"
-msgstr "आपणांस खरोखरीच रीजन काढून टाकायचे आहे का \"$1  ?"
-
-#: doc.src#STR_DELETE_TEMPLATE.string.text
-msgid "Are you sure you want to delete the entry \"$1\"?"
-msgstr "आपणांस खरोखरीच \"$1\"नोंद काढून टाकायची आहे का?"
-
-#: doc.src#MSG_REGION_NOTEMPTY.querybox.text
-msgid ""
-"The category is not empty.\n"
-"Delete anyway?"
-msgstr ""
-"वर्ग  रिक्त नाही. \n"
-" कशाहीप्रकारे काढून टाकायचे का?"
-
-#: doc.src#STR_QUERY_SAVE_DOCUMENT.string.text
-msgid ""
-"The document \"$(DOC)\" has been modified.\n"
-"Do you want to save your changes?"
-msgstr ""
-"\"$(DOC)\" कागदपत्रात सुधारणा केल्या आहेत.\n"
-"आपणांस बदल जतन करायचे आहेत का?"
-
-#: doc.src#STR_STYLES.string.text
-msgid "Styles"
-msgstr "शैली "
-
-#: doc.src#STR_MACROS.string.text
-msgid "Macros"
-msgstr "मॅक्रोज"
-
-#: doc.src#STR_CONFIG.string.text
-msgid "Configuration"
-msgstr "अंतर्गत रचना"
-
-#: doc.src#STR_PRINT_STYLES_HEADER.string.text
-msgid "Styles in "
-msgstr " मध्ये शैली "
-
-#: doc.src#STR_PRINT_STYLES.string.text
-msgid "Printing Styles"
-msgstr "छपाई शैली "
-
-#: doc.src#MSG_PRINT_ERROR.errorbox.text
-msgid "The print job could not be started."
-msgstr "छपाई काम सुरु होऊ शकत नाही."
-
-#: doc.src#STR_BACKUP_COPY.string.text
-msgid "Copy"
-msgstr "प्रत करा"
-
-#: doc.src#MSG_CANT_OPEN_TEMPLATE.infobox.text
-msgid "The template could not be opened."
-msgstr "नमुना उघडता येत नाही."
-
-#: doc.src#MSG_VIEW_OPEN_CANT_SAVE.infobox.text
-msgid "Document already open for editing."
-msgstr "कागदपत्र आधीपासूनच संपादनासाठी उघडलेले आहे."
-
-#: doc.src#STR_ERROR_SAVE.string.text
-msgid "Error recording document "
-msgstr "कागदपत्राची नोंद  करतांना दोष"
-
-#: doc.src#STR_TEMPLATE_FILTER.string.text
+#: source/appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_TOPIC.FixedText.Text
 #, fuzzy
-msgctxt "doc.src#STR_TEMPLATE_FILTER.string.text"
-msgid "Templates"
-msgstr "प्रारूप"
+msgid  "~File:"
+msgstr "फाइल (~F):"
 
-#: doc.src#STR_ERROR_COPY_TEMPLATE.string.text
-msgid ""
-"Error copying template \"$1\". \n"
-"A template with this name may already exist."
+#: source/appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_ITEM.FixedText.Text
+#, fuzzy
+msgid  "~Category:"
+msgstr "वर्ग (~C):"
+
+#: source/appl/dde.src#MD_DDE_LINKEDIT.GROUP_DDE_CHG.FixedLine.Text
+#, fuzzy
+msgid  "Modify link"
+msgstr " दुवा सुधारा"
+
+#: source/appl/sfx.src#STR_ACCTITLE_PRODUCTIVITYTOOLS.String.Text
+msgid  "%PRODUCTNAME"
 msgstr ""
-" \"$1\" नमुना प्रत करतांना दोष. \n"
-"या नावाचा नमुना आधीपासूनच अस्तित्वात आहे."
 
-#: doc.src#STR_ERROR_DELETE_TEMPLATE.string.text
-msgid "The template \"$1\" can not be deleted."
-msgstr "\"$1\" नमुना काढून टाकता येत नाही."
+#: source/appl/app.src#STR_NONAME.String.Text
+#, fuzzy
+msgid  "Untitled"
+msgstr "शीर्षक-रहित"
 
-#: doc.src#STR_ERROR_MOVE_TEMPLATE.string.text
-msgid "Error moving template \"$1\"."
-msgstr "\"$1\" नमुना हलवताना दोष."
+#: source/appl/app.src#STR_CLOSE.String.Text
+#, fuzzy
+msgid  "Close"
+msgstr "बंद करा"
 
-#: doc.src#MSG_ERROR_RESCAN.errorbox.text
-msgid "The update could not be saved."
-msgstr "अद्ययावत  जतन होऊ शकले नाही."
+#: source/appl/app.src#STR_STYLE_FILTER_AUTO.String.Text
+#, fuzzy
+msgid  "Automatic"
+msgstr "स्वयं"
 
-#: doc.src#STR_ERROR_SAVE_TEMPLATE.string.text
-msgid "Error saving template "
-msgstr "नमुना जतन करताना दोष"
+#: source/appl/app.src#STR_STANDARD_SHORTCUT.String.Text
+#, fuzzy
+msgid  "Standard"
+msgstr "मानक"
 
-#: doc.src#MSG_ERROR_RENAME_TEMPLATE.errorbox.text
-msgid "Error renaming template."
-msgstr "नमुन्याला पुन्हा नाव देताना दोष."
+#: source/appl/app.src#STR_BYTES.String.Text
+#, fuzzy
+msgid  "Bytes"
+msgstr "बाइट्स"
 
-#: doc.src#MSG_ERROR_RENAME_TEMPLATE_REGION.errorbox.text
-msgid "Error renaming template category."
-msgstr "नमुना वर्गाला पुन्हा नाव देताना दोष."
+#: source/appl/app.src#STR_KB.String.Text
+#, fuzzy
+msgid  "KB"
+msgstr "KB"
 
-#: doc.src#MSG_ERROR_EMPTY_NAME.errorbox.text
-msgid "Please specify a name."
-msgstr "कृपया एक नाव निर्देशित करा."
+#: source/appl/app.src#STR_MB.String.Text
+#, fuzzy
+msgid  "MB"
+msgstr "MB"
 
-#: doc.src#MSG_ERROR_UNIQ_NAME.errorbox.text
-msgid ""
-"Please specify a unique name.\n"
-"Entries must not be case specific."
+#: source/appl/app.src#STR_GB.String.Text
+#, fuzzy
+msgid  "GB"
+msgstr "GB"
+
+#: source/appl/app.src#MSG_QUERY_LASTVERSION.QueryBox.Message
+#, fuzzy
+msgid  "Cancel all changes?"
+msgstr "सर्व बदल रद्द करायचे?"
+
+#: source/appl/app.src#RID_DOCALREADYLOADED_DLG.InfoBox.Message
+#, fuzzy
+msgid  "Document already open."
+msgstr "दस्तऐवज आधीपासूनच उघडलेले आहे."
+
+#: source/appl/app.src#MSG_ERR_NO_WEBBROWSER_FOUND.ErrorBox.Message
+msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
 msgstr ""
-"कृपया एखादे अद्वितीय नाव सुचवा.\n"
-"नोंदी केस विशिष्ट नसाव्यात."
 
-#: doc.src#STR_QUERY_DEFAULT_TEMPLATE.string.text
-msgid "Should the template \"$(TEXT)\" become the default template?"
-msgstr "\"$(TEXT)\" नमुना मूळस्थिती नमुना होऊ शकते का?"
+#: source/appl/app.src#GID_INTERN.String.Text
+#, fuzzy
+msgid  "Internal"
+msgstr "आतील"
 
-#: doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.querybox.text
-msgid "Do you want to reset the default template?"
-msgstr "आपणांस मूळस्थिती नमुन्याची पुनःमांडणी करायाची आहे का ?"
+#: source/appl/app.src#GID_APPLICATION.String.Text
+#, fuzzy
+msgid  "Application"
+msgstr "ऍप्लिकेशन"
 
-#: doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.infobox.text
-msgid ""
-"Template directory\n"
-"$(DIR)\n"
-"does not exist."
-msgstr ""
-"नमुना अनुक्रमणिका\n"
-"$(DIR)\n"
-" अस्तित्वात नाही."
+#: source/appl/app.src#GID_VIEW.String.Text
+#, fuzzy
+msgid  "View"
+msgstr "दृश्य"
 
-#: doc.src#MSG_DOCINFO_CANTREAD.infobox.text
-msgid "Document info cannot be read."
-msgstr "कागदपत्रातील माहिती वाचू शकत नाही."
+#: source/appl/app.src#GID_DOCUMENT.String.Text
+#, fuzzy
+msgid  "Documents"
+msgstr "दस्तऐवज"
 
-#: doc.src#STR_ERROR_NOSTORAGE.string.text
-msgid "The selected file has an incorrect format."
-msgstr "निवडलेल्या धारिकेत चुकीचे स्वरूपण आहे."
-
-#: doc.src#STR_QUERY_MUSTOWNFORMAT.string.text
-msgid ""
-"Documents cannot be saved in $(FORMAT) format. Do you\n"
-"want to save your changes using the $(OWNFORMAT) format?"
-msgstr ""
-"कागदपत्र $(FORMAT) स्वरूपणात जतन होत नाही.\n"
-"आपणांस $(OWNFORMAT) स्वरूपणाचा उपयोग करून स्वतःचे बदल जतन करायचे आहेत का ?"
-
-#: doc.src#STR_SAVEDOC.string.text
-msgid "~Save"
-msgstr "~जतन करा"
-
-#: doc.src#STR_UPDATEDOC.string.text
-msgid "~Update"
-msgstr "~अद्ययावत करा"
-
-#: doc.src#STR_SAVEASDOC.string.text
-msgid "Save ~As..."
-msgstr "जतन~ करा जसे..."
-
-#: doc.src#STR_SAVECOPYDOC.string.text
-msgid "Save Copy ~as..."
-msgstr "प्रत जतन करा जसे (~a)..."
-
-#: doc.src#STR_CLOSEDOC.string.text
-msgid "~Close"
-msgstr "~बन्द करा"
-
-#: doc.src#STR_CLOSEDOC_ANDRETURN.string.text
-msgid "~Close & Return to "
-msgstr "~बंद करा आणि परता"
-
-#: doc.src#STR_WIZARD.string.text
-msgid " AutoPilot"
-msgstr "स्वंयचलित मार्गदर्शक "
-
-#: doc.src#RID_STR_FILTCONFIG.string.text
-msgid "Configurations"
-msgstr "अंतर्गत रचना"
-
-#: doc.src#RID_STR_FILTBASIC.string.text
-msgid "%PRODUCTNAME Basic libraries"
-msgstr "%PRODUCTNAME Basic वाचनालये"
-
-#: doc.src#RID_STR_WARNSTYLEOVERWRITE.string.text
-msgid "Should the \"$(ARG1)\" Style be replaced?"
-msgstr " \"$(ARG1)\"शैली  बदली करायची का ?"
-
-#: doc.src#STR_DOC_LOADING.string.text
-msgid "Loading Document"
-msgstr "कागदपत्र लोड करीत आहे"
-
-#: doc.src#RID_DLSTATUS.INET_NAME_RESOLVE_START.string.text
-msgid "Connection to: $(HOST). Waiting for response..."
-msgstr "$(HOST): शी जुळणी. प्रतिसादाची प्रतीक्षा..."
-
-#: doc.src#RID_DLSTATUS.INET_CONNECT_START.string.text
-msgid "Opening $(TARGET) at $(HOST)"
-msgstr "$(TARGET) उघडत आहे, $(HOST) येथे"
-
-#: doc.src#RID_DLSTATUS.INET_READ_STATUS.string.text
-msgid "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
-msgstr "लोड करीत आहे: $(HOST) पासुन $(TARGET). लोड केले: $(BYTE)\" "
-
-#: doc.src#RID_DLSTATUS.INET_CONNECTION_CLOSED.string.text
-msgid "Disconnected"
-msgstr "जोडणी काढलेली"
-
-#: doc.src#MSG_OPEN_READONLY.querybox.text
-msgid ""
-"Document cannot be opened for editing.\n"
-"Do you want to open it as read-only?"
-msgstr ""
-"कागदपत्र संपादनासाठी उघडू शकत नाही.आपणांस केवळ-वाचनीय रूपात उघडायचे आहे का ?"
-
-#: doc.src#STR_EDIT.string.text
-msgid "Edit"
+#: source/appl/app.src#GID_EDIT.String.Text
+#, fuzzy
+msgid  "Edit"
 msgstr "संपादन"
 
-#: doc.src#RID_OFFICEFILTER.string.text
-msgid "%PRODUCTNAME Documents"
-msgstr "%PRODUCTNAME कागदपत्र"
-
-#: doc.src#STR_FRAMEOBJECT_PROPERTIES.string.text
-msgid "Propert~ies..."
-msgstr "वैशिष्ट्ये (~i)..."
-
-#: doc.src#STR_FSET_FILTERNAME0.string.text
-msgid "HTML (FrameSet)"
-msgstr "HTML (चौकटसंच)"
-
-#: doc.src#STR_FSET_FILTERNAME1.string.text
-msgid "%PRODUCTNAME Frame Document"
-msgstr "%PRODUCTNAME चौकट कागदपत्र"
-
-#: doc.src#STR_TEMPL_MOVED.string.text
-msgid ""
-"The template \"$(TEMPLATE)\" was not found at the original location. A "
-"template with the same name exists at \"$(FOUND)\". Should this template be "
-"used in the future when comparing?"
-msgstr ""
-"\"$(TEMPLATE)\" नमुना स्वतःच्या मूळ स्थानावर सापडले नाही. \"$(FOUND)\" मध्ये "
-"त्याच नावाचा नमुना अस्तित्वात आहे. ह्या नमुन्याचा उपयोग भविष्यात तुलना "
-"करण्यासाठी करायचा का?"
-
-#: doc.src#STR_TEMPL_RESET.string.text
-msgid ""
-"The template \"$(TEMPLATE)\" has not been found. Should the template be looked "
-"for the next time the document is opened ?"
-msgstr ""
-" \"$(TEMPLATE)\" नमुना सापडला नाही. कागदपत्र परत उघडले जाईल तेव्हां नमुना "
-"शोधायचा का?"
-
-#: doc.src#STR_AUTOMATICVERSION.string.text
-msgid "Automatically saved version"
-msgstr "स्वंयचलित प्रकारे जतन केलेली आवृत्ती"
-
-#: doc.src#STR_DOCTYPENAME_SW.string.text
-msgid "Text Document"
-msgstr "मजकूर कागदपत्र"
-
-#: doc.src#STR_DOCTYPENAME_SWWEB.string.text
-msgid "HTML Document"
-msgstr "HTML कागदपत्र"
-
-#: doc.src#STR_DOCTYPENAME_SWGLOB.string.text
-msgid "Master Document"
-msgstr "प्रधान कागदपत्र"
-
-#: doc.src#STR_DOCTYPENAME_SC.string.text
-msgid "Spreadsheet"
-msgstr "स्प्रेडशीट"
-
-#: doc.src#STR_DOCTYPENAME_SI.string.text
-msgid "Presentation"
-msgstr "सादरीकरण"
-
-#: doc.src#STR_DOCTYPENAME_SD.string.text
-msgid "Drawing"
-msgstr "चित्रकला"
-
-#: doc.src#STR_DOCTYPENAME_MESSAGE.string.text
-msgid "Message"
-msgstr "सन्देश"
-
-#: doc.src#STR_NOSAVEANDCLOSE.string.text
-msgid "~Discard"
-msgstr "वगळा (~D)"
-
-#: doc.src#STR_PACKNGO_NOACCESS.string.text
-msgid "Access to the current data medium not possible."
-msgstr "चालू डाटा माध्यमात प्रवेश अशक्य."
-
-#: doc.src#STR_PACKNGO_NEWMEDIUM.string.text
-msgid "Insert the next data carrier and click OK."
-msgstr "पुढचा माहिती वाहक अंतर्भूत करा व OK वर क्लिक करा."
-
-#: doc.src#STR_OBJECT.string.text
-msgid "Object"
-msgstr "वस्तू"
-
-#: doc.src#DLG_MACROQUERY.querybox.text
-msgid "This document contains macros. $(TEXT)"
-msgstr "कागदपत्रात मॅक्रो समाविष्ट आहेत.$(TEXT) "
-
-#: doc.src#DLG_MACROQUERY.querybox.title
-msgid "Run Macro"
-msgstr "मॅक्रो चालवा"
-
-#: doc.src#BTN_OK.string.text
-msgid "Run"
-msgstr "चालवा"
-
-#: doc.src#BTN_CANCEL.string.text
-msgid "Do Not Run"
-msgstr "चालवू नका"
-
-#: doc.src#FT_CANCEL.string.text
-msgid ""
-"According to the security settings, the macros in this document should not "
-"be run. Do you want to run them anyway?"
-msgstr ""
-"सुरक्षा नियंत्रणाप्रमाणे, ह्या कागदपत्रातील मॅक्रो चालू करायचे नाहीत. तरीही "
-"आपणांस ते चालवायचे आहेत का?"
-
-#: doc.src#FT_OK.string.text
-msgid "Do you want to allow these macros to be run?"
-msgstr "आपण ह्या मॅक्रोना चालू  करण्याची परवानगी देत आहात का ?"
-
-#: doc.src#STR_EXPORTASPDF_TITLE.string.text
-msgid "Export as PDF"
-msgstr "PDF रूपात पाठवा"
-
-#: doc.src#STR_EXPORTWITHCFGBUTTON.string.text
-msgid "Export..."
-msgstr "पाठवा..."
-
-#: doc.src#STR_EXPORTBUTTON.string.text
-msgid "Export"
-msgstr "पाठवा "
-
-#: doc.src#RID_SVXSTR_SECURITY_ADDPATH.string.text
-msgid "Add this directory to the list of secure paths: "
-msgstr " सुरक्षित मार्गाच्या यादीमध्ये  ही डिरेक्टरी  समाविष्ट करा: "
-
-#: doc.src#STR_LABEL_FILEFORMAT.string.text
-msgid "File format:"
-msgstr "फाइल स्वरूपण:"
-
-#: doc.src#STR_HIDDENINFO_CONTAINS.string.text
-msgid ""
-"This document contains:\n"
-"\n"
-msgstr ""
-"ह्या कागदपत्रात समाविष्ट आहेत:\n"
-"\n"
-
-#: doc.src#STR_HIDDENINFO_RECORDCHANGES.string.text
-msgid "Recorded changes"
-msgstr "नोंद केलेले बदल  "
-
-#: doc.src#STR_HIDDENINFO_NOTES.string.text
-msgid "Notes"
-msgstr "टीपां"
-
-#: doc.src#STR_HIDDENINFO_DOCVERSIONS.string.text
-msgid "Document versions"
-msgstr "कागदपत्राची आवृत्ती"
-
-#: doc.src#STR_HIDDENINFO_FIELDS.string.text
-msgid "Fields"
-msgstr "क्षेत्रं"
-
-#: doc.src#STR_HIDDENINFO_LINKDATA.string.text
-msgid "Linked data..."
-msgstr "जोडलेला डाटा..."
-
-#: doc.src#STR_HIDDENINFO_CONTINUE_SAVING.string.text
-msgid "Do you want to continue saving the document?"
-msgstr "आपणांस कागदपत्र जतन करणे चालू ठेवायचे आहे का?"
-
-#: doc.src#STR_HIDDENINFO_CONTINUE_PRINTING.string.text
-msgid "Do you want to continue printing the document?"
-msgstr "आपणांस कागदपत्राची छपाई सुरु ठेवायची आहे का?"
-
-#: doc.src#STR_HIDDENINFO_CONTINUE_SIGNING.string.text
-msgid "Do you want to continue signing the document?"
-msgstr "आपणांस कागदपत्रावर स्वाक्षरी करायची आहे का?"
-
-#: doc.src#STR_HIDDENINFO_CONTINUE_CREATEPDF.string.text
-msgid "Do you want to continue creating a PDF file?"
-msgstr "आपणांस PDF धारिकेची निर्मिती सुरु ठेवायची आहे का?"
-
-#: doc.src#STR_NEW_FILENAME_SAVE.string.text
-msgid ""
-"If you do not want to overwrite the original document, you should save your "
-"work under a new filename."
-msgstr ""
-"आपणास जर मूळ कागदपत्रावर दुसरे घालायचे  नसेल, तर आपण आपले काम नवीन फाइल "
-"नावाखाली जतन करा."
-
-#: doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.string.text
-msgid "Some template files are protected and can not be deleted."
-msgstr "काही नमुना फाइलंना संरक्षित केलेले आहे आणि काढून टाकू शकत नाही."
-
-#: doc.src#STR_DOCINFO_INFOFIELD.string.text
-msgid "Info %1"
-msgstr "माहिती %1"
-
-#: doc.src#STR_SHARED.string.text
-msgid " (shared)"
-msgstr " (विभागलेले)"
-
-#: doc.src#STR_XMLSEC_ODF12_EXPECTED.string.text
-msgid ""
-"The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-"
-"Options-Load/Save-General. Signing documents requires ODF 1.2 "
-"(OpenOffice.org 3.x)."
-msgstr ""
-"कागदपत्राची स्वरूप आवृत्ती साधन-पर्याय-लोड करा/जतन करा-साधारण.  ODF 1.1 "
-"(OpenOffice.org 2.x) कडे मांडलेली आहे. स्वाक्षरी/प्रवेश  केलेल्या "
-"कागदपत्रांना ODF 1.2 (OpenOffice.org 3.x) ची आवश्यकता आहे."
-
-#: doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.querybox.text
-msgid ""
-"The document has to be saved before it can be signed. Saving the document "
-"removes all present signatures.\n"
-"Do you want to save the document?"
-msgstr ""
-"कागदपत्रामध्ये स्वाक्षरी /प्रवेश करण्याआधी जतन करायला हवी आहेत.  कागदपत्र "
-"जतन केल्याने सर्व असलेल्या स्वाक्षरींना काढून टाकते.\n"
-"आपणास कागदपत्रास जतन करायचे आहे का?"
-
-#: doc.src#STR_QRYTEMPL_MESSAGE.string.text
-msgid ""
-"The template '$(ARG1)' on which this document is based, has been modified. "
-"Do you want to update style based formattings according to the modified "
-"template?"
-msgstr ""
-"प्रारूप '$(ARG1)' ज्यावर हे दस्तऐवज आधारीत आहे, संपादीत केले गेले आहे. "
-"संपादीत प्रारूप नुसारे तुम्हाला शैली आधारीत स्वरूपन अद्ययावत करायचे?"
-
-#: doc.src#STR_QRYTEMPL_UPDATE_BTN.string.text
-msgid "~Update Styles"
-msgstr "शैली अद्ययावत करा (~U)"
-
-#: doc.src#STR_QRYTEMPL_KEEP_BTN.string.text
-msgid "~Keep Old Styles"
-msgstr "जुने शैली संग्रहीत करा (~K)"
-
-#: doctdlg.src#DLG_DOC_TEMPLATE.FL_EDIT.fixedline.text
-msgid "New template"
-msgstr "नवीन साचा"
-
-#: doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.fixedline.text
-msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.fixedline.text"
-msgid "Templates"
-msgstr "साचे"
-
-#: doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.fixedtext.text
-msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.fixedtext.text"
-msgid "~Categories"
-msgstr "विभाग (~C)"
-
-#: doctdlg.src#DLG_DOC_TEMPLATE.FT_STYLESHEETS.fixedtext.text
-msgid "~Templates"
-msgstr "साचा (~T)"
-
-#: doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.pushbutton.text
-msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.pushbutton.text"
-msgid "~Edit"
-msgstr "संपादन (~E)"
-
-#: doctdlg.src#DLG_DOC_TEMPLATE.BT_ORGANIZE.pushbutton.text
-msgid "~Organizer..."
-msgstr "आयोजक (~O)..."
-
-#: doctdlg.src#DLG_DOC_TEMPLATE.modaldialog.text
-msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.modaldialog.text"
-msgid "Templates"
-msgstr "साचा"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.1.itemlist.text
-msgid "My Templates"
-msgstr "माझे साचे"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.2.itemlist.text
-msgid "Business Correspondence"
-msgstr "व्यावसायिक पत्रव्यवहार"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.3.itemlist.text
-msgid "Other Business Documents"
-msgstr "इतर व्यावसायिक कागदपत्रे"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.4.itemlist.text
-msgid "Personal Correspondence and Documents"
-msgstr "वैयक्तिक पत्रे आणि कागदपत्रे"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.5.itemlist.text
-msgid "Forms and Contracts"
-msgstr "नमुने आणि करार"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.6.itemlist.text
-msgid "Finances"
-msgstr "वित्त"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.7.itemlist.text
-msgid "Education"
-msgstr "शिक्षण"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.8.itemlist.text
-msgid "Presentation Backgrounds"
-msgstr "सादरीकरणाची पार्श्वभूमी  "
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.9.itemlist.text
-msgid "Presentations"
-msgstr "सादरीकरण"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.10.itemlist.text
-msgid "Miscellaneous"
-msgstr "इतर"
-
-#: doctempl.src#RID_CNT_STR_WAITING.string.text
-msgid "The templates are being initialized for first-time usage."
-msgstr "पहिल्या वापरासाठी नमुन्यांना सुरु केले जात आहे."
-
-#: docvor.src#DLG_ORGANIZE.BTN_OK.okbutton.text
-msgid "Close"
-msgstr "बंद करा"
-
-#: docvor.src#DLG_ORGANIZE.BTN_FILES.pushbutton.text
-msgid "~File..."
-msgstr "फाइल (~F)..."
-
-#: docvor.src#DLG_ORGANIZE.BTN_ADDRESSTEMPLATE.pushbutton.text
-msgid "~Address Book..."
-msgstr "पत्ते पुस्तिका (~A)..."
-
-#: docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.1.stringlist.text
-msgctxt "docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.1.stringlist.text"
-msgid "Templates"
-msgstr "साचा"
-
-#: docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.2.stringlist.text
-msgctxt "docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.2.stringlist.text"
-msgid "Documents"
-msgstr "दस्तऐवज"
-
-#: docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.1.stringlist.text
-msgctxt "docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.1.stringlist.text"
-msgid "Templates"
-msgstr "साचे"
-
-#: docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.2.stringlist.text
-msgctxt "docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.2.stringlist.text"
-msgid "Documents"
-msgstr "दस्तऐवज"
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_NEW.menuitem.text
-msgid "~New"
-msgstr "नवीन (~N)"
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DELETE.menuitem.text
-msgid "~Delete"
-msgstr "काढून टाका (~D)"
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.menuitem.text
-msgctxt "docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.menuitem.text"
-msgid "~Edit"
-msgstr "संपादन (~E)"
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_FROM.menuitem.text
-msgid "Import Template..."
-msgstr "नमुना आणा..."
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_TO.menuitem.text
-msgid "Export Template..."
-msgstr "नमुना पाठवा..."
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINT.menuitem.text
-msgid "~Print"
-msgstr "छपाई (~P)"
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINTER_SETUP.menuitem.text
-msgid "Printer Settings..."
-msgstr "छपाईयंत्र संयोजना..."
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESCAN.menuitem.text
-msgid "Update"
-msgstr "अद्ययावत करा"
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DEFAULT_TEMPLATE.menuitem.text
-msgid "Set As Default Template"
-msgstr "मूळस्थिती नमुना म्हणून मांडणी करा "
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESET_DEFAULT_TEMPLATE.menuitem.text
-msgid "Reset Default Template"
-msgstr "मूळस्थिती नमुन्याची पुनःमांडणी करा"
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.menubutton.text
-msgid "Commands"
-msgstr "आदेश"
-
-#: docvor.src#DLG_ORGANIZE.modaldialog.text
-msgid "Template Management"
-msgstr "साचा व्यवस्थापन"
-
-#: new.src#DLG_NEW_FILE.FT_REGION.fixedtext.text
-msgctxt "new.src#DLG_NEW_FILE.FT_REGION.fixedtext.text"
-msgid "~Categories"
-msgstr "प्रवर्ग (~C)"
-
-#: new.src#DLG_NEW_FILE.FT_TEMPLATE.fixedtext.text
-msgid "T~emplates"
-msgstr "साचे (~e)"
-
-#: new.src#DLG_NEW_FILE.BT_MORE.morebutton.text
-msgid "~More"
-msgstr "अधिक (~M)"
-
-#: new.src#DLG_NEW_FILE.BTN_PREVIEW.checkbox.text
-msgid "Pre~view"
-msgstr "पूर्वदृश्य (~v)"
-
-#: new.src#DLG_NEW_FILE.GB_DOCINFO.fixedline.text
-msgid "Description"
-msgstr "वर्णन"
-
-#: new.src#DLG_NEW_FILE.CB_TEXT_STYLE.checkbox.text
-msgid "Te~xt"
-msgstr "पाठ्य (~x)"
-
-#: new.src#DLG_NEW_FILE.CB_FRAME_STYLE.checkbox.text
-msgid "~Frame"
-msgstr "चौकट (~F)"
-
-#: new.src#DLG_NEW_FILE.CB_PAGE_STYLE.checkbox.text
-msgid "~Pages"
-msgstr "पाने (~P)"
-
-#: new.src#DLG_NEW_FILE.CB_NUM_STYLE.checkbox.text
-msgid "N~umbering"
-msgstr "क्रमांकण (~u)"
-
-#: new.src#DLG_NEW_FILE.CB_MERGE_STYLE.checkbox.text
-msgid "~Overwrite"
-msgstr "खोडून पुन्हा लिहा (~O)"
-
-#: new.src#DLG_NEW_FILE.PB_LOAD_FILE.pushbutton.text
-msgid "From File..."
-msgstr "फाइल पासून..."
-
-#: new.src#DLG_NEW_FILE.STR_LOAD_TEMPLATE.string.text
-msgid "Load Styles"
-msgstr "शैलींना लोड करा "
-
-#: new.src#DLG_NEW_FILE.FT_TITLE.fixedtext.text
-msgid "~Title"
-msgstr "शीर्षक (~T)"
-
-#: new.src#DLG_NEW_FILE.FT_THEMA.fixedtext.text
-msgid "Subject"
-msgstr "विषय"
-
-#: new.src#DLG_NEW_FILE.FT_KEYWORDS.fixedtext.text
-msgid "~Key words"
-msgstr "मुख्य शब्द (~K)"
-
-#: new.src#DLG_NEW_FILE.FT_DESC.fixedtext.text
-msgid "~Description"
-msgstr "वर्णन (~D)"
-
-#: new.src#DLG_NEW_FILE.modaldialog.text
-msgid "New"
-msgstr "नवीन"
-
-#~ msgid ""
-#~ "The Styles in this document do not match your current Styles. Should your "
-#~ "current Styles be applied to this document?"
-#~ msgstr ""
-#~ "या कागदपत्रातील शैली आपल्या चालू शैली पेक्षा वेगळी आहे.या कागदपत्रात आपल्या "
-#~ "चालू शैली लागू करायच्या का?"
-"X-Accelerator-Marker: ~\n"
-
-#: alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.fixedtext.text
-msgid ""
-"This document may contain formatting or content that cannot be saved in the "
-"%FORMATNAME file format. Do you want to save the document in this format "
-"anyway?\n"
-"\n"
-"Use the latest ODF file format and be sure all formatting and content is "
-"saved correctly."
-msgstr ""
-"दस्तऐवजात स्वरूपण किंवा विषय समाविष्ट असू शकतील जे %FORMATNAME धारिका "
-"स्वरूपणात जतन होऊ शकत नाही. तरीही आपणांस ह्या स्वरूपणात कागदपत्र जतन करायची "
-"आहेत का?\n"
-"\n"
-" अगदी नवीन ODF धारिका स्वरूप वापरा आणि सर्व स्वरूपण किंवा विषय योग्यप्रकारे "
-"जतन केलेले आहेत याची खात्री करा."
-
-#: alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.okbutton.text
-msgid "~Keep Current Format"
-msgstr "विद्यमान रूपण ठेवा (~K)"
-
-#: alienwarn.src#RID_DLG_ALIEN_WARNING.PB_YES.cancelbutton.text
-msgid "~Save in ODF Format"
-msgstr "ODF स्वरूपात साठवा (~S)"
-
-#: alienwarn.src#RID_DLG_ALIEN_WARNING.PB_MOREINFO.helpbutton.text
-msgid "~More Information..."
-msgstr "अधिक माहिती (~M)..."
-
-#: alienwarn.src#RID_DLG_ALIEN_WARNING.CB_WARNING_OFF.checkbox.text
-msgid "~Ask when not saving in ODF format"
-msgstr "ODF स्वरूपात न साठवतेवेळी विचारा (~A)"
-
-#: dialog.src#STR_RESET.string.text
-msgid "~Reset"
-msgstr "मूळस्थितीत आणा (~R)"
-
-#: dialog.src#STR_APPLY.string.text
-msgid "Apply"
-msgstr "लागू करा"
-
-#: dialog.src#STR_TABPAGE_MANAGESTYLES.string.text
-msgid "Organizer"
-msgstr "आयोजक"
-
-#: dialog.src#MSG_TABPAGE_INVALIDNAME.infobox.text
-msgid "This name is already in use."
-msgstr "नाव आधीपासूनच वापरात आहे."
-
-#: dialog.src#MSG_TABPAGE_INVALIDSTYLE.infobox.text
-msgid "This Style does not exist."
-msgstr "ही शैली अस्तित्वात नाही."
-
-#: dialog.src#MSG_TABPAGE_INVALIDPARENT.infobox.text
-msgid ""
-"This Style cannot be used as a base Style,\n"
-"because it would result in a recursive reference."
-msgstr ""
-"ह्या शैलीचा उपयोग पाया शैलीच्या रूपात करता येणार नाही\n"
-"कारण त्याचा परिणाम प्रत्यावर्ती संदर्भात होऊ शकेल."
-
-#: dialog.src#MSG_POOL_STYLE_NAME.infobox.text
-msgid ""
-"Name already exists as a default Style.\n"
-"Please choose another name."
-msgstr ""
-"नाव आधीपासूनच नित्यस्थिती शैलीत आहे. \n"
-"कृपया दुसरे नाव निवडा."
-
-#: dialog.src#STR_DELETE_STYLE.string.text
-msgid "Do you really want to delete Style $1?"
-msgstr "तुम्हाला नक्की $1 शैली नष्ट करायचे?"
-
-#: dialog.src#STR_DELETE_STYLE_USED.string.text
-msgid "You are deleting an applied Style!\n"
-msgstr "आपण लागू केलेली शैली काढून टाकत आहात!\n"
-
-#: dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.menuitem.text
-msgid "New..."
-msgstr "नवीन..."
-
-#: dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.menuitem.text
-msgid "Modify..."
-msgstr "सुधारा..."
-
-#: dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.menuitem.text
-msgid "Delete..."
-msgstr "नष्ट करा..."
-
-#: dialog.src#SID_NAVIGATOR.string.text
-msgid "Navigator"
-msgstr "दिशादर्शक"
-
-#: dialog.src#SID_TASKPANE.string.text
-msgid "Task Pane"
-msgstr "कार्य पट्टी"
-
-#: dialog.src#MSG_ERROR_WRONG_CONFIRM.errorbox.text
-msgid "Faulty password confirmation"
-msgstr "सदोष पासवर्डची खात्री"
-
-#: dialog.src#STR_PDF_EXPORT_SEND.string.text
-msgid "Send"
-msgstr "पाठवा"
-
-#: dinfdlg.src#STR_SFX_NEWOFFICEDOC.string.text
-msgid "%PRODUCTNAME document"
-msgstr "%PRODUCTNAME कागदपत्र"
-
-#: dinfdlg.src#TP_DOCINFODESC.FT_TITLE.fixedtext.text
-msgid "~Title"
-msgstr "शीर्षक (~T)"
-
-#: dinfdlg.src#TP_DOCINFODESC.FT_THEMA.fixedtext.text
-msgid "~Subject"
-msgstr "विषय (~S)"
-
-#: dinfdlg.src#TP_DOCINFODESC.FT_KEYWORDS.fixedtext.text
-msgid "~Keywords"
-msgstr "मुख्यशब्द (~K)"
-
-#: dinfdlg.src#TP_DOCINFODESC.FT_COMMENT.fixedtext.text
-msgid "~Comments"
-msgstr "टिप्पणी (~C)"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.fixedtext.text
-msgid "Type:"
-msgstr "प्रकार:"
-
-#: dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.checkbox.text
-msgctxt "dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.checkbox.text"
-msgid "~Read-only"
-msgstr "फक्त-वाचनजोगी (~R)"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_FILE.fixedtext.text
-msgid "Location:"
-msgstr "स्थान:"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_FILE_SIZE.fixedtext.text
-msgid "Size:"
-msgstr "आकार:"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_CREATE.fixedtext.text
-msgid "Created:"
-msgstr "निर्मित केलेले:"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_CHANGE.fixedtext.text
-msgid "Modified:"
-msgstr "सुधारित केलेले:"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_SIGNED.fixedtext.text
-msgid "Digitally signed:"
-msgstr "डिजिट नुरूप हस्ताक्षरीत:"
-
-#: dinfdlg.src#TP_DOCINFODOC.BTN_SIGNATURE.pushbutton.text
-msgid "Digital Signature..."
-msgstr "डिजिटल हस्ताक्षर..."
-
-#: dinfdlg.src#TP_DOCINFODOC.STR_MULTSIGNED.string.text
-msgid "Multiply signed document"
-msgstr "हस्ताक्षरित दस्तऐवजाला गुणा"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_PRINT.fixedtext.text
-msgid "Last printed:"
-msgstr "शेवटी छपाई केलेले:"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_TIMELOG.fixedtext.text
-msgid "Total editing time:"
-msgstr "एकूण संपादन वेळ:"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_DOCNO.fixedtext.text
-msgid "Revision number:"
-msgstr "उजळणी क्रमांक:"
-
-#: dinfdlg.src#TP_DOCINFODOC.BTN_DELETE.pushbutton.text
-msgid "Reset"
-msgstr "पुनः मांडणी करा"
-
-#: dinfdlg.src#TP_DOCINFODOC.CB_USE_USERDATA.checkbox.text
-msgid "~Apply user data"
-msgstr "वापरकर्त्याचा डाटा लागू करा (~A)"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_TEMPL.fixedtext.text
-msgid "Template:"
-msgstr "साचा:"
-
-#: dinfdlg.src#TP_DOCINFODOC.STR_UNKNOWNSIZE.string.text
-msgid "unknown"
-msgstr "अपरिचीत"
-
-#: dinfdlg.src#TP_DOCINFODOC.EDIT_FILE_NAME.string.text
-msgid "File Name"
-msgstr ""
-
-#: dinfdlg.src#TP_DOCINFOUSER.BTN_EDITLABEL.pushbutton.text
-msgid "~Info fields..."
-msgstr "माहिती क्षेत्र (~I)..."
-
-#: dinfdlg.src#TP_DOCINFORELOAD.RB_NOAUTOUPDATE.radiobutton.text
-msgid "Do not refresh automatically"
-msgstr "स्वयंचलित अद्ययावत करू नका"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.RB_RELOADUPDATE.radiobutton.text
-msgid "Refresh this document"
-msgstr "या दस्तऐवजाला सुधारीत करा"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.FT_EVERY.fixedtext.text
-msgid "every"
-msgstr "प्रत्येक"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.fixedtext.text
-msgctxt "dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.fixedtext.text"
-msgid "seconds"
-msgstr "सेकंद"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.RB_FORWARDUPDATE.radiobutton.text
-msgid "Redirect from this document"
-msgstr "या कागदपत्रातून दुसरीकडे पाठवा"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.fixedtext.text
-msgid "after"
-msgstr "नंतर"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.fixedtext.text
-msgctxt "dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.fixedtext.text"
-msgid "seconds"
-msgstr "सेकंद"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.FT_URL.fixedtext.text
-msgid "to URL"
-msgstr "URL कडे"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.FT_FRAME.fixedtext.text
-msgid "to frame"
-msgstr "चौकटीकडे"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.STR_FORWARD_ERRMSSG.string.text
-msgid "If you select the option \"%PLACEHOLDER%\", you must enter a URL."
-msgstr ""
-"आपण जर \"%PLACEHOLDER%\" पर्याय निवडला तर आपणांस URL मध्ये प्रवेश घ्यावा "
-"लागेल."
-
-#: dinfdlg.src#TP_CUSTOMPROPERTIES.FT_PROPERTIES.fixedtext.text
-msgid "~Properties"
-msgstr "गुणधर्म (~P)"
-
-#: dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.string.text
-msgid "Name"
-msgstr "नाव"
-
-#: dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.string.text
-msgid "Type"
-msgstr "प्रकार"
-
-#: dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_VALUE.string.text
-msgid "Value"
-msgstr "मुल्य"
-
-#: dinfdlg.src#TP_CUSTOMPROPERTIES.BTN_ADD.pushbutton.text
-msgid "~Add"
-msgstr "जोडा (~A)"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.combobox.text
-msgctxt "dinfdlg.src#SFX_CB_PROPERTY_NAME.combobox.text"
-msgid "-"
-msgstr "-"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.combobox.quickhelptext
-msgid "Property Name"
-msgstr "गुणधर्म नाव"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.1.stringlist.text
-msgid "Checked by"
-msgstr "द्वारे तपासले"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.2.stringlist.text
-msgid "Client"
-msgstr "क्लाऐंट"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.3.stringlist.text
-msgid "Date completed"
-msgstr "पूर्णत्वाचे दिनांक"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.4.stringlist.text
-msgid "Department"
-msgstr "विभाग"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.5.stringlist.text
-msgid "Destinations"
-msgstr "लक्ष्य"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.6.stringlist.text
-msgid "Disposition"
-msgstr "प्रकृती"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.7.stringlist.text
-msgid "Division"
-msgstr "विभाग"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.8.stringlist.text
-msgid "Document number"
-msgstr "दस्तऐवज क्रमांक"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.9.stringlist.text
-msgid "Editor"
-msgstr "संपादक"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.10.stringlist.text
-msgid "E-Mail"
-msgstr "ई-मेल"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.11.stringlist.text
-msgid "Forward to"
-msgstr "यांस पाठवा"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.12.stringlist.text
-msgid "Group"
-msgstr "समुह"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.13.stringlist.text
-msgid "Info"
-msgstr "माहिती"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.14.stringlist.text
-msgid "Language"
-msgstr "भाषा"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.15.stringlist.text
-msgid "Mailstop"
-msgstr "मेलस्टॉप"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.16.stringlist.text
-msgid "Matter"
-msgstr "मॅटर"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.17.stringlist.text
-msgid "Office"
-msgstr "ऑफिस"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.18.stringlist.text
-msgid "Owner"
-msgstr "मालक"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.19.stringlist.text
-msgid "Project"
-msgstr "प्रकल्प"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.20.stringlist.text
-msgid "Publisher"
-msgstr "प्रकाशक"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.21.stringlist.text
-msgid "Purpose"
-msgstr "कारण"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.22.stringlist.text
-msgid "Received from"
-msgstr "कडून प्राप्त"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.23.stringlist.text
-msgid "Recorded by"
-msgstr "द्वारे नोंदणीकृत"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.24.stringlist.text
-msgid "Recorded date"
-msgstr "नोंदणीकृत दिनांक"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.25.stringlist.text
-msgid "Reference"
-msgstr "संदर्भ"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.26.stringlist.text
-msgid "Source"
-msgstr "स्त्रोत"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.27.stringlist.text
-msgid "Status"
-msgstr "स्थिती"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.28.stringlist.text
-msgid "Telephone number"
-msgstr "टेलीफोन क्रमांक"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.29.stringlist.text
-msgid "Typist"
-msgstr "टायपीस्ट"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.30.stringlist.text
-msgid "URL"
-msgstr "URL"
-
-#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.1.stringlist.text
-msgid "Text"
-msgstr "पाठ्य"
-
-#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.2.stringlist.text
-msgid "DateTime"
-msgstr "दिनांकवेळ"
-
-#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.3.stringlist.text
-msgid "Date"
-msgstr "दिनांक"
-
-#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.4.stringlist.text
-msgctxt "dinfdlg.src#SFX_LB_PROPERTY_TYPE.4.stringlist.text"
-msgid "Duration"
-msgstr "कार्यकाळ"
-
-#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.5.stringlist.text
-msgid "Number"
-msgstr "संख्या"
-
-#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.6.stringlist.text
-msgid "Yes or no"
-msgstr "होय किंवा नाही"
-
-#: dinfdlg.src#SFX_ST_DURATION_FORMAT.string.text
-msgid " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
-msgstr " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
-
-#: dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.radiobutton.text
-msgid "Yes"
-msgstr "होय"
-
-#: dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_NO.radiobutton.text
-msgid "No"
-msgstr "नाही"
-
-#: dinfdlg.src#SFX_PB_PROPERTY_REMOVE.imagebutton.text
-msgctxt "dinfdlg.src#SFX_PB_PROPERTY_REMOVE.imagebutton.text"
-msgid "-"
-msgstr "-"
-
-#: dinfdlg.src#SFX_PB_PROPERTY_REMOVE.imagebutton.quickhelptext
-msgid "Remove Property"
-msgstr "गुणधर्म काढूण टाका"
-
-#: dinfdlg.src#SFX_QB_WRONG_TYPE.querybox.text
-msgid ""
-"The value entered does not match the specified type.\n"
-"The value will be stored as text."
-msgstr ""
-"प्रविष्ट केलेले मुल्य निश्चित प्रकाराशी जुळत नाही.\n"
-"मुल्य पाठ्य नुरूप संचयीत केले जाईल."
-
-#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.pageitem.text
-msgid "General"
-msgstr "सर्वसाधारण"
-
-#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.pageitem.text
-msgid "Description"
-msgstr " वर्णन"
-
-#: dinfdlg.src#SID_DOCINFO.1.TP_CUSTOMPROPERTIES.pageitem.text
-msgid "Custom Properties"
-msgstr "इच्छिक गुणधर्म"
-
-#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.pageitem.text
-msgid "Internet"
-msgstr "इंटरनेट"
-
-#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFOSECURITY.pageitem.text
-msgid "Security"
-msgstr "सुरक्षा"
-
-#: dinfdlg.src#SID_DOCINFO.tabdialog.text
-msgid "Properties of "
-msgstr "याचे गुणधर्म "
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.FL_DURATION.fixedline.text
-msgctxt "dinfdlg.src#RID_EDIT_DURATIONS.FL_DURATION.fixedline.text"
-msgid "Duration"
-msgstr "कार्यकाळ"
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.CB_NEGATIVE.checkbox.text
-msgid "~Negative"
-msgstr "नकारार्थी (~N)"
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.FT_YEAR.fixedtext.text
-msgid "~Years"
-msgstr "वर्ष (~Y)"
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.FT_MONTH.fixedtext.text
-msgid "~Months"
-msgstr "महिने (~M)"
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.FT_DAY.fixedtext.text
-msgid "~Days"
-msgstr "दिवस (~D)"
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.FT_HOUR.fixedtext.text
-msgid "H~ours"
-msgstr "तास (~o)"
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.FT_MINUTE.fixedtext.text
-msgid "Min~utes"
-msgstr "मिनीटे (~u)"
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.FT_SECOND.fixedtext.text
-msgid "~Seconds"
-msgstr "सेकंद (~S)"
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.FT_MSECOND.fixedtext.text
-msgid "Millise~conds"
-msgstr "मिलीसेकंद (~c)"
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.modaldialog.text
-msgid "Edit Duration"
-msgstr "कार्यकाळ संपादीत करा"
-
-#: dinfedt.src#DLG_DOCINFO_EDT.FL_INFO.fixedline.text
-msgid "Names"
-msgstr "नावे"
-
-#: dinfedt.src#DLG_DOCINFO_EDT.modaldialog.text
-msgid "Edit Field Names"
-msgstr " क्षेत्राची नावे संपादित करा"
-
-#: filedlghelper.src#STR_SFX_FILEDLG_ACTUALVERSION.string.text
-msgid "Current version"
-msgstr "विद्यमानती"
-
-#: filedlghelper.src#STR_SFX_EXPLORERFILE_EXPORT.string.text
-msgid "Export"
-msgstr "पाठवा"
-
-#: filedlghelper.src#STR_SFX_EXPLORERFILE_INSERT.string.text
-msgid "Insert"
+#: source/appl/app.src#GID_MACRO.String.Text
+#, fuzzy
+msgid  "BASIC"
+msgstr "BASIC"
+
+#: source/appl/app.src#GID_OPTIONS.String.Text
+#, fuzzy
+msgid  "Options"
+msgstr "पर्याय"
+
+#: source/appl/app.src#GID_MATH.String.Text
+#, fuzzy
+msgid  "Math"
+msgstr "गणित"
+
+#: source/appl/app.src#GID_NAVIGATOR.String.Text
+#, fuzzy
+msgid  "Navigate"
+msgstr "दिशादर्शन करा"
+
+#: source/appl/app.src#GID_INSERT.String.Text
+#, fuzzy
+msgid  "Insert"
 msgstr "अंतर्भूत करा"
 
-#: filedlghelper.src#STR_SFX_EXPLORERFILE_BUTTONINSERT.string.text
-msgid "~Insert"
-msgstr "अंतर्भूत करा (~I)"
-
-#: filedlghelper.src#STR_SFX_IMPORT_ALL.string.text
-msgid "<All formats>"
-msgstr "<सर्व स्वरूपणे>"
-
-#: filedlghelper.src#STR_CB_AUTO_EXTENSION.string.text
-msgid "~Automatic file name extension"
-msgstr "स्वयंचलित धारिका नाव एक्सटेन्शन (~A)"
-
-#: filedlghelper.src#STR_CB_SELECTION.string.text
-msgid "~Selection"
-msgstr "निवड (~S)"
-
-#: filedlghelper.src#STR_CB_INSERT_AS_LINK.string.text
-msgid "~Link"
-msgstr "दुवा (~L)"
-
-#: filedlghelper.src#STR_CB_SHOW_PREVIEW.string.text
-msgid "Pr~eview"
-msgstr "पूर्वदृश्य (~e)"
-
-#: filedlghelper.src#STR_CB_READONLY.string.text
-msgctxt "filedlghelper.src#STR_CB_READONLY.string.text"
-msgid "~Read-only"
-msgstr "फक्त वाचन-जोगी (~R)"
-
-#: filedlghelper.src#STR_CB_PASSWORD.string.text
-msgid "Save with ~password"
-msgstr "पासवर्डसह साठवा (~p)"
-
-#: filedlghelper.src#STR_CB_FILTER_OPTIONS.string.text
-msgid "Edit ~filter settings"
-msgstr "गाळणी संयोजना संपादीत करा (~f)"
-
-#: filedlghelper.src#STR_PB_PLAY.string.text
-msgid "~Play"
-msgstr "चालवा (~P)"
-
-#: filedlghelper.src#STR_PB_STOP.string.text
-msgid "Sto~p"
-msgstr "थांबवा (~p)"
-
-#: filedlghelper.src#STR_PB_OPEN.string.text
-msgid "~Open"
-msgstr "उघडा (~O)"
-
-#: filedlghelper.src#STR_PB_SAVE.string.text
-msgid "~Save"
-msgstr "साठवा (~S)"
-
-#: filedlghelper.src#STR_LB_IMAGE_TEMPLATE.string.text
-msgid "Style:"
-msgstr "शैली:"
-
-#: filedlghelper.src#STR_LB_TEMPLATES.string.text
-msgid "~Templates:"
-msgstr "साचा (~T):"
-
-#: filedlghelper.src#STR_LB_VERSION.string.text
-msgid "~Version:"
-msgstr "आवृत्ती (~V):"
-
-#: mailwindow.src#RID_ERRBOX_MAIL_CONFIG.errorbox.text
-msgid ""
-"%PRODUCTNAME was unable to find a working e-mail configuration. Please save "
-"this document locally instead and attach it from within your e-mail client."
-msgstr ""
-"%PRODUCTNAME  कार्यरत ई-मेल अंतर्गत रचना शोधण्यात असमर्थ. कृपया हे कागदपत्र "
-"स्थानिक रित्या साठवा आणि आपल्या ई-मेल ग्राहकाबरोबर जोडा."
-
-#: mgetempl.src#TP_MANAGE_STYLES.FT_NAME.fixedtext.text
-msgid "~Name"
-msgstr "नाव (~N)"
-
-#: mgetempl.src#TP_MANAGE_STYLES.CB_AUTO.checkbox.text
-msgid "~AutoUpdate"
-msgstr "स्वयंअद्ययावत (~A)"
-
-#: mgetempl.src#TP_MANAGE_STYLES.FT_NEXT.fixedtext.text
-msgid "Ne~xt Style"
-msgstr "पुढची शैली (~x)"
-
-#: mgetempl.src#TP_MANAGE_STYLES.FT_BASE.fixedtext.text
-msgid "Linked with"
-msgstr "सह जोडले गेले"
-
-#: mgetempl.src#TP_MANAGE_STYLES.FT_REGION.fixedtext.text
-msgid "~Category"
-msgstr "प्रवर्ग (~C)"
-
-#: mgetempl.src#TP_MANAGE_STYLES.GB_DESC.fixedline.text
-msgid "Contains"
-msgstr "यात समाविष्ट आहेत"
-
-#: newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.FL_COL.fixedline.text
-msgid "Style name"
-msgstr "शैली नाव"
-
-#: newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MSG_OVERWRITE.querybox.text
-msgid "Style already exists. Overwrite?"
-msgstr "शैली आधिपासून अस्तित्वात आहे. पुन्हा लिहायचे?"
-
-#: newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.modaldialog.text
-msgid "Create Style"
-msgstr "शैली निर्माण करा"
-
-#: passwd.src#DLG_PASSWD.FT_PASSWD_USER.fixedtext.text
-msgid "~User"
-msgstr "वापरकर्ता (~U)"
-
-#: passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD.fixedtext.text
-msgid "~Password"
-msgstr "पासवर्ड (~P)"
-
-#: passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM.fixedtext.text
-msgid "~Confirm"
-msgstr "खात्री करा (~C)"
-
-#: passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.fixedline.text
+#: source/appl/app.src#GID_FORMAT.String.Text
 #, fuzzy
-msgctxt "passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.fixedline.text"
-msgid "Password"
-msgstr "पासवर्ड"
+msgid  "Format"
+msgstr "रूपण"
 
-#: passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD2.fixedtext.text
+#: source/appl/app.src#GID_TEMPLATE.String.Text
 #, fuzzy
-msgid "P~assword"
-msgstr "पासवर्ड"
+msgid  "Templates"
+msgstr "साचे"
 
-#: passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM2.fixedtext.text
+#: source/appl/app.src#GID_TEXT.String.Text
 #, fuzzy
-msgid "Confir~m"
-msgstr "खात्री करा (~C)"
+msgid  "Text"
+msgstr "मजकूर"
 
-#: passwd.src#DLG_PASSWD.TEXT_PASSWD.string.text
+#: source/appl/app.src#GID_FRAME.String.Text
 #, fuzzy
-msgctxt "passwd.src#DLG_PASSWD.TEXT_PASSWD.string.text"
-msgid "Password"
-msgstr "पासवर्ड"
+msgid  "Frame"
+msgstr "चौकट"
 
-#: passwd.src#DLG_PASSWD.modaldialog.text
-msgid "Enter Password"
-msgstr "पासवर्ड द्या"
+#: source/appl/app.src#GID_GRAPHIC.String.Text
+#, fuzzy
+msgid  "Graphic"
+msgstr "ग्राफिक"
 
-#: printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.fixedline.text
-msgid "Reduce print data"
-msgstr "मुद्रण डाटा कमी करा"
+#: source/appl/app.src#GID_TABLE.String.Text
+#, fuzzy
+msgid  "Table"
+msgstr "कोष्टक"
 
-#: printopt.src#TP_COMMONPRINTOPTIONS.FT_OUTPUTTYPE.fixedtext.text
-msgid "Settings for"
-msgstr "साठी नियंत्रणे"
+#: source/appl/app.src#GID_ENUMERATION.String.Text
+#, fuzzy
+msgid  "Numbering"
+msgstr "क्रमांकन"
 
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTEROUTPUT.radiobutton.text
-msgid "~Printer"
-msgstr "छपाईयंत्र (~P)"
+#: source/appl/app.src#GID_DATA.String.Text
+#, fuzzy
+msgid  "Data"
+msgstr "डाटा"
 
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTFILEOUTPUT.radiobutton.text
-msgid "Print to ~file"
-msgstr "फाइल अंतर्गत छपाई करा (~f)"
+#: source/appl/app.src#GID_SPECIAL.String.Text
+#, fuzzy
+msgid  "Special Functions"
+msgstr "विशेष कार्य"
 
-#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCETRANSPARENCY.checkbox.text
-msgid "~Reduce transparency"
-msgstr "पारदर्शकता कमी करा (~R)"
+#: source/appl/app.src#GID_IMAGE.String.Text
+#, fuzzy
+msgid  "Image"
+msgstr "प्रतिमा"
 
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_AUTO.radiobutton.text
-msgid "Auto~matically"
-msgstr "स्वयं (~m)"
+#: source/appl/app.src#GID_CHART.String.Text
+#, fuzzy
+msgid  "Chart"
+msgstr "तक्ता"
 
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_NONE.radiobutton.text
-msgid "~No transparency"
-msgstr "पारदर्शकता नाही (~N)"
+#: source/appl/app.src#GID_EXPLORER.String.Text
+#, fuzzy
+msgid  "Explorer"
+msgstr "एक्सप्लोरर"
 
-#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEGRADIENTS.checkbox.text
-msgid "Reduce ~gradients"
-msgstr "विक्षेपक कमी करा (~g)"
+#: source/appl/app.src#GID_CONNECTOR.String.Text
+#, fuzzy
+msgid  "Connector"
+msgstr "कनेक्टर"
 
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_STRIPES.radiobutton.text
-msgid "Gradient ~stripes"
-msgstr "विक्षेपक स्ट्राईप्स (~s)"
+#: source/appl/app.src#GID_MODIFY.String.Text
+#, fuzzy
+msgid  "Modify"
+msgstr "सुधारा"
 
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_COLOR.radiobutton.text
-msgid "Intermediate ~color"
-msgstr "मध्यम रंग (~c)"
+#: source/appl/app.src#GID_DRAWING.String.Text
+#, fuzzy
+msgid  "Drawing"
+msgstr "रेखांकन"
 
-#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS.checkbox.text
-msgid "Reduce ~bitmaps"
-msgstr "बिटमॅप कमी करा (~b)"
+#: source/appl/app.src#GID_CONTROLS.String.Text
+#, fuzzy
+msgid  "Controls"
+msgstr "कंट्रोल्स्"
 
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_OPTIMAL.radiobutton.text
-msgid "~High print quality"
-msgstr "उच्च गुणवत्तेचे मुद्रण (~H)"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_NORMAL.radiobutton.text
-msgid "N~ormal print quality"
-msgstr "सामान्य गुणवत्तेचे मुद्रण (~o)"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_RESOLUTION.radiobutton.text
-msgid "Reso~lution"
-msgstr "रेजॉल्यूशन (~l)"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.1.stringlist.text
-msgid "72 DPI"
-msgstr "72 DPI"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.2.stringlist.text
-msgid "96 DPI"
-msgstr "96 DPI"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.3.stringlist.text
-msgid "150 DPI (Fax)"
-msgstr "150 DPI (फॅक्स)"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.4.stringlist.text
-msgid "200 DPI (default)"
-msgstr "200 DPI (मूळस्थिती)"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.5.stringlist.text
-msgid "300 DPI"
-msgstr "300 DPI"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.6.stringlist.text
-msgid "600 DPI"
-msgstr "600 DPI"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS_TRANSPARENCY.checkbox.text
-msgid "Include transparent ob~jects"
-msgstr "पारदर्शक वस्तूंना समाविष्ट करा (~j)"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.CB_CONVERTTOGREYSCALES.checkbox.text
-msgid "Con~vert colors to grayscale"
-msgstr "रंगांना ग्रेप्रमाणात रूपांतरीत करा (~v)"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.GB_PRINT_WARN.fixedline.text
-msgid "Printer warnings"
-msgstr "मुद्रकाची सावधानता सूचना"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERSIZE.checkbox.text
-msgid "P~aper size"
-msgstr "कागदाचा आकार (~a)"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERORIENTATION.checkbox.text
-msgid "Pap~er orientation"
-msgstr "कागद स्वरूप (~e)"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.CB_TRANSPARENCY.checkbox.text
-msgid "~Transparency"
-msgstr "पारदर्शकता (~T)"
-
-#: printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.fixedtext.text
-msgid ""
-"Your document contains transparent objects.\n"
-"This may lead to longer printing time on certain\n"
-"printers. Should the aspect of transparency\n"
-"be reduced?"
+#: source/appl/app.src#MSG_CANT_QUIT.InfoBox.Message
+msgid  "The application cannot be terminated at the moment.\nPlease wait until all print jobs and/or\nOLE actions have finished and close all dialogs."
 msgstr ""
-"आपल्या दस्तऐवजात पारदर्शक वस्तू समाविष्ट आहेत.\n"
-"काही मुद्रकांना हे छापण्यास अधिक वेळ लागतो.\n"
-"पारदर्शकतेचे स्वरूप कमी करायला हवे का ?"
 
-#: printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.okbutton.text
-msgid "~Yes"
-msgstr "होय (~Y)"
+#: source/appl/app.src#STR_ISMODIFIED.String.Text
+#, fuzzy
+msgid  "Do you want to save the changes to %1?"
+msgstr "आपणांस %1 मध्ये बदल साठवायचे आहेत का ?"
 
-#: printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_NO.pushbutton.text
-msgid "~No"
-msgstr "नाही (~N)"
+#: source/appl/app.src#STR_QUITAPP.String.Text
+#, fuzzy
+msgid  "E~xit"
+msgstr "बाहेर पडा (~x)"
 
-#: printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_CANCEL.cancelbutton.text
-msgid "~Cancel"
-msgstr "रद्द करा (~C)"
+#: source/appl/app.src#RID_STR_HELP.String.Text
+#, fuzzy
+msgid  "Help"
+msgstr "मदत"
 
-#: printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.checkbox.text
-msgid "~Do not show warning again"
-msgstr "पुन्हा सावधानता सूचना दाखवू नका (~D)"
+#: source/appl/app.src#RID_STR_NOAUTOSTARTHELPAGENT.String.Text
+#, fuzzy
+msgid  "No automatic start at 'XX'"
+msgstr "'XX' ला स्वयं प्रारंभ नाही"
 
-#: printopt.src#RID_WARN_PRINTTRANSPARENCY.modaldialog.text
-msgid "Warning"
-msgstr "सावधानता"
+#: source/appl/app.src#RID_HELPBAR.String.Text
+#, fuzzy
+msgid  "Help Bar"
+msgstr "मदत पट्टी"
 
-#: recfloat.src#SID_RECORDING_FLOATWINDOW.floatingwindow.text
-msgid "Record Macro"
-msgstr "मॅक्रोची नोंदणी करा"
+#: source/appl/app.src#RID_STR_HLPFILENOTEXIST.String.Text
+#, fuzzy
+msgid  "The help file for this topic is not installed."
+msgstr "या विषयाची मदत फाइल स्थापित नाही."
 
-#: recfloat.src#STR_MACRO_LOSS.string.text
-msgid ""
-"Do you really want to cancel the recording? Any steps recorded up to this "
-"point will be lost."
+#: source/appl/app.src#RID_ENVTOOLBOX.String.Text
+#, fuzzy
+msgid  "Function Bar"
+msgstr "कार्य पट्टी"
+
+#: source/appl/app.src#RID_SPECIALCONFIG_ERROR.String.Text
+msgid  "An error has occurred in the special configuration.\nPlease contact your administrator."
 msgstr ""
-"आपल्याला नोंदणी केलेले रद्द करायचे आहे? आतापर्यंत नोंदणी केलेले सर्व क्रम "
-"रद्द होतील."
 
-#: recfloat.src#STR_CANCEL_RECORDING.string.text
-msgid "Cancel Recording"
-msgstr "नोंदणी केलेले रद्द करा"
+#: source/appl/app.src#STR_QUICKSTART_EXIT.String.Text
+#, fuzzy
+msgid  "Exit Quickstarter"
+msgstr "शीघ्र प्रारंभकातून बाहेर पडा"
 
-#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FL.fixedline.text
-msgid "File encryption password"
-msgstr "फाइल एन्क्रिप्शन पासवर्ड"
+#: source/appl/app.src#STR_QUICKSTART_TIP.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME %PRODUCTVERSION Quickstarter"
+msgstr "%PRODUCTNAME %PRODUCTVERSION शीघ्र प्रारंभ करणारा"
 
-#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FT.fixedtext.text
-msgid "~Enter password to open"
-msgstr "उघडण्याकरीता पासवर्ड द्या (~E)"
+#: source/appl/app.src#STR_QUICKSTART_FILEOPEN.String.Text
+#, fuzzy
+msgid  "Open Document..."
+msgstr "दस्तऐवज उघडा..."
 
-#: securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_OPEN_FT.fixedtext.text
-msgid "~Reenter password to open"
-msgstr "उघडण्याकरीता पासवर्ड पुनः द्या (~R)"
+#: source/appl/app.src#STR_QUICKSTART_FROMTEMPLATE.String.Text
+#, fuzzy
+msgid  "From Template..."
+msgstr "नमुन्यापासून..."
 
-#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FL.fixedline.text
-msgid "File sharing password"
-msgstr "फाइल शेअरिंगकरीता पासवर्ड"
+#: source/appl/app.src#STR_QUICKSTART_PRELAUNCH.String.Text
+#, fuzzy
+msgid  "Load %PRODUCTNAME During System Start-Up"
+msgstr "पद्धती सुरु होताना %PRODUCTNAME लोड करा"
 
-#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FT.fixedtext.text
-msgid "Enter password to modify"
-msgstr "संपादनकरीता पासवर्ड द्या"
-
-#: securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_MODIFY_FT.fixedtext.text
-msgid "Reenter password to modify"
-msgstr "संपादनकरीता पासवर्ड पुनः द्या"
-
-#: securitypage.src#TP_DOCINFOSECURITY.OPTIONS_FL.fixedline.text
-msgid "File sharing options"
-msgstr "फाइल शेअरिंग पर्याय"
-
-#: securitypage.src#TP_DOCINFOSECURITY.OPEN_READONLY_CB.checkbox.text
-msgid "~Open file read-only"
-msgstr "फक्त-वाचनीय म्हणून फाइल उघडा (~O)"
-
-#: securitypage.src#TP_DOCINFOSECURITY.RECORD_CHANGES_CB.checkbox.text
-msgid "Record ~changes"
-msgstr "बदल रेकॉर्ड करा (~c)"
-
-#: securitypage.src#TP_DOCINFOSECURITY.STR_PROTECT.string.text
-msgid "~Protect..."
-msgstr "सुरक्षीत करा (~P)..."
-
-#: securitypage.src#TP_DOCINFOSECURITY.STR_UNPROTECT.string.text
-msgid "~Unprotect..."
-msgstr "सुरक्षा अशक्य करा (~U)..."
-
-#: securitypage.src#TP_DOCINFOSECURITY.STR_END_REDLINING_WARNING.string.text
-msgid ""
-"This action will exit the change recording mode.\n"
-"Any information about changes will be lost.\n"
-"\n"
-"Exit change recording mode?\n"
-"\n"
+#: source/appl/app.src#STR_QUICKSTART_PRELAUNCH_UNX.String.Text
+msgid  "Disable Quickstarter"
 msgstr ""
-"या कृतीमुळे रेकॉर्डिंग मोड बदला येथून बाहेर व्हाल.\n"
-"बदलांविषयी कुठलिही माहिती लुप्त होईल.\n"
-"\n"
-"रेकॉर्डिंग मोड बदला येथून बाहेर जायचे?\n"
-"\n"
 
-#: securitypage.src#RID_SFX_PROTECT_RECORDS.string.text
-msgid "Protect Records"
-msgstr "रेकॉर्डस् सुरक्षीत करा"
+#: source/appl/app.src#STR_QUICKSTART_LNKNAME.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME%PRODUCTVERSION"
 
-#: securitypage.src#RID_SFX_UNPROTECT_RECORDS.string.text
-msgid "Unprotect Records"
-msgstr "रेकॉर्डस् सुरक्षा अशक्य करा"
+#: source/appl/app.src#STR_QUICKSTART_FILE.String.Text
+#, fuzzy
+msgid  "File"
+msgstr "फाइल"
 
-#: securitypage.src#RID_SFX_INCORRECT_PASSWORD.string.text
-msgid "Incorrect password"
-msgstr "चुकिचे पासवर्ड"
+#: source/appl/app.src#STR_QUICKSTART_STARTCENTER.String.Text
+#, fuzzy
+msgid  "Startcenter"
+msgstr "प्रारंभकेंद्र"
 
-#: srchdlg.src#RID_DLG_SEARCH.FT_SEARCH.fixedtext.text
-msgid "~Search for"
-msgstr "याकरीता शोधा (~S)"
+#: source/appl/app.src#STR_QUICKSTART_RECENTDOC.String.Text
+#, fuzzy
+msgid  "Recent Documents"
+msgstr "अलिकडील दस्तऐवज"
 
-#: srchdlg.src#RID_DLG_SEARCH.CB_WHOLEWORDS.checkbox.text
-msgid "~Whole words only"
-msgstr "फक्त पूर्ण शब्द (~W)"
+#: source/appl/app.src#STR_QUERY_UPDATE_LINKS.String.Text
+#, fuzzy
+msgid  "Update all links?"
+msgstr "सर्व दुव्यांना अद्ययावत करायचे?"
 
-#: srchdlg.src#RID_DLG_SEARCH.CB_MATCHCASE.checkbox.text
-msgid "~Match case"
-msgstr "लिपी जुळवा (~M)"
+#: source/appl/app.src#STR_DDE_ERROR.String.Text
+#, fuzzy
+msgid  "DDE link to % for % area % are not available."
+msgstr "DDE दुवा % ला % क्षेत्र % उपलब्ध नाही."
 
-#: srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.checkbox.text
-msgctxt "srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.checkbox.text"
-msgid "Wrap ~around"
-msgstr "भोवती गुंडाळा (~a)"
+#: source/appl/app.src#RID_SECURITY_WARNING_HYPERLINK.WarningBox.Message
+msgid  "This hyperlink is going to open "%s". Do you want to proceed?"
+msgstr ""
 
-#: srchdlg.src#RID_DLG_SEARCH.CB_BACKWARDS.checkbox.text
-msgid "~Backwards"
-msgstr "मागे (~B)"
+#: source/appl/app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.WarningBox.Message
+msgid  "For security reasons, the hyperlink cannot be executed.\nThe stated address will not be opened."
+msgstr ""
 
-#: srchdlg.src#RID_DLG_SEARCH.PB_FIND.pushbutton.text
-msgid "~Find"
+#: source/appl/app.src#RID_SECURITY_WARNING_TITLE.String.Text
+#, fuzzy
+msgid  "Security Warning"
+msgstr "सुरक्षा सूचना"
+
+#: source/appl/app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.QueryBox.Message
+msgid  "Saving will remove all existing signatures.\nDo you want to continue saving the document?"
+msgstr ""
+
+#: source/appl/app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.QueryBox.Message
+msgid  "The document has to be saved before it can be signed.\nDo you want to save the document?"
+msgstr ""
+
+#: source/appl/app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.InfoBox.Message
+msgid  "This document must be saved in OpenDocument file format before it can be digitally signed."
+msgstr ""
+
+#: source/appl/app.src#RID_XMLSEC_DOCUMENTSIGNED.String.Text
+#, fuzzy
+msgid  " (Signed)"
+msgstr "(हस्ताक्षरित)"
+
+#: source/appl/app.src#STR_STANDARD.String.Text
+#, fuzzy
+msgid  "Standard"
+msgstr "मानक"
+
+#: source/appl/app.src#RID_SVXSTR_FILELINK.String.Text
+#, fuzzy
+msgid  "Document"
+msgstr "दस्तऐवज"
+
+#: source/appl/app.src#STR_NONE.String.Text
+#, fuzzy
+msgid  "- None -"
+msgstr "- कोणी नाही -"
+
+#: source/appl/app.src#RID_SVXSTR_GRAFIKLINK.String.Text
+#, fuzzy
+msgid  "Graphic"
+msgstr "ग्राफिक"
+
+#: source/appl/app.src#STR_SFX_FILTERNAME_ALL.String.Text
+#, fuzzy
+msgid  "All files (*.*)"
+msgstr "सर्व फाइल्स् (*.*)"
+
+#: source/appl/app.src#RID_SVXSTR_EDITGRFLINK.String.Text
+#, fuzzy
+msgid  "Link graphics"
+msgstr "ग्राफिक्स् सह जोडणी करा"
+
+#: source/appl/app.src#STR_ERRUNOEVENTBINDUNG.String.Text
+msgid  "An appropriate component method %1\ncould not be found.\n\nCheck spelling of method name."
+msgstr ""
+
+#: source/appl/app.src#RID_SVXSTR_GRFILTER_OPENERROR.String.Text
+#, fuzzy
+msgid  "Graphics file cannot be opened"
+msgstr "ग्राफिक्स् फाइल उडणे शक्य नाही"
+
+#: source/appl/app.src#RID_SVXSTR_GRFILTER_IOERROR.String.Text
+#, fuzzy
+msgid  "Graphics file cannot be read"
+msgstr "ग्राफिक्स् फाइल वाचणे शक्य नाही"
+
+#: source/appl/app.src#RID_SVXSTR_GRFILTER_FORMATERROR.String.Text
+#, fuzzy
+msgid  "Unknown graphics format"
+msgstr "अपरिचीत ग्राफिक्स् रूपण"
+
+#: source/appl/app.src#RID_SVXSTR_GRFILTER_VERSIONERROR.String.Text
+#, fuzzy
+msgid  "This version of the graphics file is not supported"
+msgstr "ग्राफिक्स् फाइलची ही आवृत्ती समर्थीत नाही"
+
+#: source/appl/app.src#RID_SVXSTR_GRFILTER_FILTERERROR.String.Text
+#, fuzzy
+msgid  "Graphics filter not found"
+msgstr "ग्राफिक्स् फिल्टर आढळले नाही"
+
+#: source/appl/app.src#RID_SVXSTR_GRFILTER_TOOBIG.String.Text
+#, fuzzy
+msgid  "Not enough memory to insert graphic"
+msgstr "ग्राफिक अंतर्भूत करण्यासाठी अतिरीक्त मेमरी नाही"
+
+#: source/appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_CONTENTS.PageItem.Text
+#, fuzzy
+msgid  "Contents"
+msgstr "विषयसूची"
+
+#: source/appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_INDEX.PageItem.Text
+#, fuzzy
+msgid  "Index"
+msgstr "अनुक्रमणिका"
+
+#: source/appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_SEARCH.PageItem.Text
+#, fuzzy
+msgid  "Find"
+msgstr "शोधा"
+
+#: source/appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_BOOKMARKS.PageItem.Text
+#, fuzzy
+msgid  "Bookmarks"
+msgstr "पृष्ठखूणा"
+
+#: source/appl/newhelp.src#TP_HELP_INDEX.FT_EXPRESSION.FixedText.Text
+#, fuzzy
+msgid  "~Search term"
+msgstr "शोधण्याजोगी संज्ञा (~S)"
+
+#: source/appl/newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.PushButton.Text
+#, fuzzy
+msgid  "~Display"
+msgstr "प्रदर्शन (~D)"
+
+#: source/appl/newhelp.src#TP_HELP_SEARCH.FT_SEARCH.FixedText.Text
+#, fuzzy
+msgid  "S~earch term"
+msgstr "शोधण्याजोगी संज्ञा (~e)"
+
+#: source/appl/newhelp.src#TP_HELP_SEARCH.PB_SEARCH.PushButton.Text
+#, fuzzy
+msgid  "~Find"
 msgstr "शोधा (~F)"
 
-#: srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.cancelbutton.text
-msgctxt "srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.cancelbutton.text"
-msgid "~Close"
-msgstr "बंद करा (~C)"
+#: source/appl/newhelp.src#TP_HELP_SEARCH.CB_FULLWORDS.CheckBox.Text
+#, fuzzy
+msgid  "~Complete words only"
+msgstr "फक्त पूर्ण शब्द (~C)"
 
-#: srchdlg.src#RID_DLG_SEARCH.STR_TOGGLE.string.text
-msgctxt "srchdlg.src#RID_DLG_SEARCH.STR_TOGGLE.string.text"
-msgid "Wrap ~around"
-msgstr "भोवती गुंडाळा (~a)"
+#: source/appl/newhelp.src#TP_HELP_SEARCH.CB_SCOPE.CheckBox.Text
+#, fuzzy
+msgid  "Find in ~headings only"
+msgstr "फक्त शीर्षकात शोधा (~h)"
 
-#: srchdlg.src#RID_DLG_SEARCH.modelessdialog.text
-msgid "Find on this Page"
-msgstr "या पानावर शोधा"
+#: source/appl/newhelp.src#TP_HELP_SEARCH.PB_OPEN_SEARCH.PushButton.Text
+#, fuzzy
+msgid  "~Display"
+msgstr "दृष्य (~D)"
 
-#: taskpane.src#STR_SFX_DOCK.string.text
-msgid "Dock"
-msgstr "डॉक करा"
+#: source/appl/newhelp.src#TP_HELP_BOOKMARKS.FT_BOOKMARKS.FixedText.Text
+#, fuzzy
+msgid  "~Bookmarks"
+msgstr "वाचणखूणा (~B)"
 
-#: taskpane.src#STR_SFX_UNDOCK.string.text
-msgid "Undock"
-msgstr "डॉक अशक्य करा"
+#: source/appl/newhelp.src#TP_HELP_BOOKMARKS.PB_BOOKMARKS.PushButton.Text
+#, fuzzy
+msgid  "~Display"
+msgstr "दृष्य (~D)"
 
-#: taskpane.src#STR_SFX_TASK_PANE_VIEW.string.text
-msgid "View"
-msgstr "दृष्य"
+#: source/appl/newhelp.src#STR_HELP_WINDOW_TITLE.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Help"
+msgstr "%PRODUCTNAME मदत"
 
-#: taskpane.src#STR_SFX_TASKS.string.text
-msgid "Tasks"
-msgstr "कार्ये"
+#: source/appl/newhelp.src#STR_HELP_BUTTON_INDEX_ON.String.Text
+#, fuzzy
+msgid  "Show Navigation Pane"
+msgstr "दिशादर्शन पट्टी दाखवा"
 
-#: templdlg.src#RID_STYLECATALOG.BT_ORG.pushbutton.text
-msgid "~Organizer..."
-msgstr "आयोजक (~O)..."
+#: source/appl/newhelp.src#STR_HELP_BUTTON_INDEX_OFF.String.Text
+#, fuzzy
+msgid  "Hide Navigation Pane"
+msgstr "दिशादर्शन पट्टी अदृश्य करा"
 
-#: templdlg.src#RID_STYLECATALOG.BT_DEL.pushbutton.text
-msgid "~Delete..."
-msgstr "नष्ट करा (~D)..."
+#: source/appl/newhelp.src#STR_HELP_BUTTON_START.String.Text
+#, fuzzy
+msgid  "First Page"
+msgstr "पहिले पान"
 
-#: templdlg.src#RID_STYLECATALOG.BT_EDIT.pushbutton.text
-msgid "~Modify..."
-msgstr "सुधारा (~M)..."
+#: source/appl/newhelp.src#STR_HELP_BUTTON_PREV.String.Text
+#, fuzzy
+msgid  "Previous Page"
+msgstr "मागील पान"
 
-#: templdlg.src#RID_STYLECATALOG.BT_NEW.pushbutton.text
-msgid "~New..."
-msgstr "नवीन (~N)..."
+#: source/appl/newhelp.src#STR_HELP_BUTTON_NEXT.String.Text
+#, fuzzy
+msgid  "Next Page"
+msgstr "पुढचे पान"
 
-#: templdlg.src#RID_STYLECATALOG.modaldialog.text
-msgid "Style Catalog"
-msgstr "शैली यादीपत्र"
+#: source/appl/newhelp.src#STR_HELP_BUTTON_PRINT.String.Text
+#, fuzzy
+msgid  "Print..."
+msgstr "मुद्रित करा..."
 
-#: templdlg.src#STR_STYLE_ELEMTLIST.string.text
-msgid "Style List"
+#: source/appl/newhelp.src#STR_HELP_BUTTON_ADDBOOKMARK.String.Text
+#, fuzzy
+msgid  "Add to Bookmarks..."
+msgstr "पृष्ठखूणांमध्ये समाविष्ट करा..."
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_SEARCHDIALOG.String.Text
+#, fuzzy
+msgid  "Find on this Page..."
+msgstr "या पानावर शोधा..."
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_SOURCEVIEW.String.Text
+#, fuzzy
+msgid  "HTML Source"
+msgstr "HTML  स्त्रोत"
+
+#: source/appl/newhelp.src#STR_HELP_FIRST_MESSAGE.String.Text
+#, fuzzy
+msgid  "The Help is being started..."
+msgstr "मदत सुरु होत आहे..."
+
+#: source/appl/newhelp.src#STR_HELP_MENU_TEXT_SELECTION_MODE.String.Text
+#, fuzzy
+msgid  "Select Text"
+msgstr "मजकूर निवडा"
+
+#: source/appl/newhelp.src#STR_HELP_MENU_TEXT_COPY.String.Text
+#, fuzzy
+msgid  "~Copy"
+msgstr "प्रत बनवा (~C)"
+
+#: source/appl/newhelp.src#DLG_HELP_ADDBOOKMARK.ModalDialog.Text
+#, fuzzy
+msgid  "Add to Bookmarks"
+msgstr "पृष्ठखूणांमधे समाविष्ट करा"
+
+#: source/appl/newhelp.src#DLG_HELP_ADDBOOKMARK.FT_BOOKMARK_TITLE.FixedText.Text
+#, fuzzy
+msgid  "Bookmark:"
+msgstr "पृष्ठखूण:"
+
+#: source/appl/newhelp.src#DLG_HELP_ADDBOOKMARK.STR_BOOKMARK_RENAME.String.Text
+#, fuzzy
+msgid  "Rename Bookmark"
+msgstr "पृष्ठखूणेला नवीन नाव द्या"
+
+#: source/appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_OPEN.MenuItem.Text
+#, fuzzy
+msgid  "Display"
+msgstr "प्रदर्शित करा"
+
+#: source/appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_RENAME.MenuItem.Text
+#, fuzzy
+msgid  "Rename..."
+msgstr "नवीन नाव द्या..."
+
+#: source/appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_DELETE.MenuItem.Text
+#, fuzzy
+msgid  "Delete"
+msgstr "नष्ट करा"
+
+#: source/appl/newhelp.src#RID_INFO_NOSEARCHRESULTS.InfoBox.Message
+#, fuzzy
+msgid  "No topics found."
+msgstr "कुठलेही विषय आढळले नाही."
+
+#: source/appl/newhelp.src#RID_INFO_NOSEARCHTEXTFOUND.InfoBox.Message
+#, fuzzy
+msgid  "The text you entered was not found."
+msgstr "आपण समाविष्ट केलेला मजकूर आढळले नाही."
+
+#: source/appl/newhelp.src#RID_HELP_ONSTARTUP_TEXT.String.Text
+#, fuzzy
+msgid  "~Display %PRODUCTNAME %MODULENAME Help at Startup"
+msgstr "%PRODUCTNAME %MODULENAME प्रारंभवेळी मदत प्रदर्शित करा (~D)"
+
+#: source/bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.String.Text
+msgid  "The selected filter $(FILTER) has not been installed.\nWould you like to do this now?"
 msgstr ""
 
-#: templdlg.src#STR_STYLE_FILTER_HIERARCHICAL.string.text
-msgid "Hierarchical"
+#: source/bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.String.Text
+msgid  "The selected filter $(FILTER) is not included in your edition.\nYou can find information about orders on our homepage."
+msgstr ""
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FixedLine.Text
+#, fuzzy
+msgid  "Reduce print data"
+msgstr "मुद्रण डाटा कमी करा"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.FT_OUTPUTTYPE.FixedText.Text
+#, fuzzy
+msgid  "Settings for"
+msgstr "साठी नियंत्रणे"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTEROUTPUT.RadioButton.Text
+#, fuzzy
+msgid  "~Printer"
+msgstr "छपाईयंत्र (~P)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTFILEOUTPUT.RadioButton.Text
+#, fuzzy
+msgid  "Print to ~file"
+msgstr "फाइल अंतर्गत छपाई करा (~f)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCETRANSPARENCY.CheckBox.Text
+#, fuzzy
+msgid  "~Reduce transparency"
+msgstr "पारदर्शकता कमी करा (~R)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_AUTO.RadioButton.Text
+#, fuzzy
+msgid  "Auto~matically"
+msgstr "स्वयं (~m)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_NONE.RadioButton.Text
+#, fuzzy
+msgid  "~No transparency"
+msgstr "पारदर्शकता नाही (~N)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEGRADIENTS.CheckBox.Text
+#, fuzzy
+msgid  "Reduce ~gradients"
+msgstr "विक्षेपक कमी करा (~g)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_STRIPES.RadioButton.Text
+#, fuzzy
+msgid  "Gradient ~stripes"
+msgstr "विक्षेपक स्ट्राईप्स (~s)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_COLOR.RadioButton.Text
+#, fuzzy
+msgid  "Intermediate ~color"
+msgstr "मध्यम रंग (~c)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS.CheckBox.Text
+#, fuzzy
+msgid  "Reduce ~bitmaps"
+msgstr "बिटमॅप कमी करा (~b)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_OPTIMAL.RadioButton.Text
+#, fuzzy
+msgid  "~High print quality"
+msgstr "उच्च गुणवत्तेचे मुद्रण (~H)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_NORMAL.RadioButton.Text
+#, fuzzy
+msgid  "N~ormal print quality"
+msgstr "सामान्य गुणवत्तेचे मुद्रण (~o)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_RESOLUTION.RadioButton.Text
+#, fuzzy
+msgid  "Reso~lution"
+msgstr "रेजॉल्यूशन (~l)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "600 DPI"
+msgstr "600 DPI"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS_TRANSPARENCY.CheckBox.Text
+#, fuzzy
+msgid  "Include transparent ob~jects"
+msgstr "पारदर्शक वस्तूंना समाविष्ट करा (~j)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_CONVERTTOGREYSCALES.CheckBox.Text
+#, fuzzy
+msgid  "Con~vert colors to grayscale"
+msgstr "रंगांना ग्रेप्रमाणात रूपांतरीत करा (~v)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_PRINT_WARN.FixedLine.Text
+#, fuzzy
+msgid  "Printer warnings"
+msgstr "मुद्रकाची सावधानता सूचना"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERSIZE.CheckBox.Text
+#, fuzzy
+msgid  "P~aper size"
+msgstr "कागदाचा आकार (~a)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERORIENTATION.CheckBox.Text
+#, fuzzy
+msgid  "Pap~er orientation"
+msgstr "कागद स्वरूप (~e)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_TRANSPARENCY.CheckBox.Text
+#, fuzzy
+msgid  "~Transparency"
+msgstr "पारदर्शकता (~T)"
+
+#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.ModalDialog.Text
+#, fuzzy
+msgid  "Warning"
+msgstr "सावधानता"
+
+#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FixedText.Text
+msgid  "Your document contains transparent objects.\nThis may lead to longer printing time on certain\nprinters. Should the aspect of transparency\nbe reduced?"
+msgstr ""
+
+#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKButton.Text
+#, fuzzy
+msgid  "~Yes"
+msgstr "होय (~Y)"
+
+#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_NO.PushButton.Text
+#, fuzzy
+msgid  "~No"
+msgstr "नाही (~N)"
+
+#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_CANCEL.CancelButton.Text
+#, fuzzy
+msgid  "~Cancel"
+msgstr "रद्द करा (~C)"
+
+#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.CheckBox.Text
+#, fuzzy
+msgid  "~Do not show warning again"
+msgstr "पुन्हा सावधानता सूचना दाखवू नका (~D)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "72 DPI"
+msgstr "72 DPI"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "96 DPI"
+msgstr "96 DPI"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "150 DPI (Fax)"
+msgstr "150 DPI (फॅक्स)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "200 DPI (default)"
+msgstr "200 DPI (मूळस्थिती)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+#, fuzzy
+msgid  "300 DPI"
+msgstr "300 DPI"
+
+#: source/dialog/templdlg.src#RID_STYLECATALOG.ModalDialog.Text
+#, fuzzy
+msgid  "Style Catalog"
+msgstr "शैली यादीपत्र"
+
+#: source/dialog/templdlg.src#RID_STYLECATALOG.BT_ORG.PushButton.Text
+#, fuzzy
+msgid  "~Organizer..."
+msgstr "आयोजक (~O)..."
+
+#: source/dialog/templdlg.src#RID_STYLECATALOG.BT_DEL.PushButton.Text
+#, fuzzy
+msgid  "~Delete..."
+msgstr "नष्ट करा (~D)..."
+
+#: source/dialog/templdlg.src#RID_STYLECATALOG.BT_EDIT.PushButton.Text
+#, fuzzy
+msgid  "~Modify..."
+msgstr "सुधारा (~M)..."
+
+#: source/dialog/templdlg.src#RID_STYLECATALOG.BT_NEW.PushButton.Text
+#, fuzzy
+msgid  "~New..."
+msgstr "नवीन (~N)..."
+
+#: source/dialog/templdlg.src#STR_STYLE_ELEMTLIST.String.Text
+msgid  "Style List"
+msgstr ""
+
+#: source/dialog/templdlg.src#STR_STYLE_FILTER_HIERARCHICAL.String.Text
+#, fuzzy
+msgid  "Hierarchical"
 msgstr "श्रेणी"
 
-#: templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_WATERCAN.toolboxitem.text
-msgid "Fill Format Mode"
-msgstr "स्वरूपण अवस्था भरा"
-
-#: templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_NEW_BY_EXAMPLE.toolboxitem.text
-msgid "New Style from Selection"
-msgstr "निवडीतून  नवीन शैली"
-
-#: templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_UPDATE_BY_EXAMPLE.toolboxitem.text
-msgid "Update Style"
-msgstr "शैली सुधारीत करा"
-
-#: templdlg.src#DLG_STYLE_DESIGNER.dockingwindow.text
-msgid "Styles and Formatting"
+#: source/dialog/templdlg.src#DLG_STYLE_DESIGNER.DockingWindow.Text
+#, fuzzy
+msgid  "Styles and Formatting"
 msgstr "शैली आणि स्वरूपण"
 
-#: versdlg.src#DLG_VERSIONS.GB_NEWVERSIONS.fixedline.text
-msgid "New versions"
+#: source/dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_WATERCAN.ToolBoxItem.Text
+#, fuzzy
+msgid  "Fill Format Mode"
+msgstr "स्वरूपण अवस्था भरा"
+
+#: source/dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_NEW_BY_EXAMPLE.ToolBoxItem.Text
+#, fuzzy
+msgid  "New Style from Selection"
+msgstr "निवडीतून  नवीन शैली"
+
+#: source/dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_UPDATE_BY_EXAMPLE.ToolBoxItem.Text
+#, fuzzy
+msgid  "Update Style"
+msgstr "शैली सुधारीत करा"
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FL.FixedLine.Text
+#, fuzzy
+msgid  "File encryption password"
+msgstr "फाइल एन्क्रिप्शन पासवर्ड"
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FT.FixedText.Text
+#, fuzzy
+msgid  "~Enter password to open"
+msgstr "उघडण्याकरीता पासवर्ड द्या (~E)"
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_OPEN_FT.FixedText.Text
+#, fuzzy
+msgid  "~Reenter password to open"
+msgstr "उघडण्याकरीता पासवर्ड पुनः द्या (~R)"
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FL.FixedLine.Text
+#, fuzzy
+msgid  "File sharing password"
+msgstr "फाइल शेअरिंगकरीता पासवर्ड"
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FT.FixedText.Text
+#, fuzzy
+msgid  "Enter password to modify"
+msgstr "संपादनकरीता पासवर्ड द्या"
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_MODIFY_FT.FixedText.Text
+#, fuzzy
+msgid  "Reenter password to modify"
+msgstr "संपादनकरीता पासवर्ड पुनः द्या"
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.OPTIONS_FL.FixedLine.Text
+#, fuzzy
+msgid  "File sharing options"
+msgstr "फाइल शेअरिंग पर्याय"
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.OPEN_READONLY_CB.CheckBox.Text
+#, fuzzy
+msgid  "~Open file read-only"
+msgstr "फक्त-वाचनीय म्हणून फाइल उघडा (~O)"
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.RECORD_CHANGES_CB.CheckBox.Text
+#, fuzzy
+msgid  "Record ~changes"
+msgstr "बदल रेकॉर्ड करा (~c)"
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.STR_PROTECT.String.Text
+#, fuzzy
+msgid  "~Protect..."
+msgstr "सुरक्षीत करा (~P)..."
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.STR_UNPROTECT.String.Text
+#, fuzzy
+msgid  "~Unprotect..."
+msgstr "सुरक्षा अशक्य करा (~U)..."
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.STR_END_REDLINING_WARNING.String.Text
+msgid  "This action will exit the change recording mode.\nAny information about changes will be lost.\n\nExit change recording mode?\n\n"
+msgstr ""
+
+#: source/dialog/securitypage.src#RID_SFX_PROTECT_RECORDS.String.Text
+#, fuzzy
+msgid  "Protect Records"
+msgstr "रेकॉर्डस् सुरक्षीत करा"
+
+#: source/dialog/securitypage.src#RID_SFX_UNPROTECT_RECORDS.String.Text
+#, fuzzy
+msgid  "Unprotect Records"
+msgstr "रेकॉर्डस् सुरक्षा अशक्य करा"
+
+#: source/dialog/securitypage.src#RID_SFX_INCORRECT_PASSWORD.String.Text
+#, fuzzy
+msgid  "Incorrect password"
+msgstr "चुकिचे पासवर्ड"
+
+#: source/dialog/versdlg.src#DLG_VERSIONS.GB_NEWVERSIONS.FixedLine.Text
+#, fuzzy
+msgid  "New versions"
 msgstr "नवीन आवृत्त्या"
 
-#: versdlg.src#DLG_VERSIONS.PB_SAVE.pushbutton.text
-msgid "Save ~New Version"
+#: source/dialog/versdlg.src#DLG_VERSIONS.PB_SAVE.PushButton.Text
+#, fuzzy
+msgid  "Save ~New Version"
 msgstr "नवी आवृत्ती साठवा (~N)"
 
-#: versdlg.src#DLG_VERSIONS.CB_SAVEONCLOSE.checkbox.text
-msgid "~Always save a version on closing"
+#: source/dialog/versdlg.src#DLG_VERSIONS.CB_SAVEONCLOSE.CheckBox.Text
+#, fuzzy
+msgid  "~Always save a version on closing"
 msgstr "बंद करताना नेहमी एक आवृत्ती जतन करून ठेवावी (~A)"
 
-#: versdlg.src#DLG_VERSIONS.GB_OLDVERSIONS.fixedline.text
-msgid "Existing versions"
+#: source/dialog/versdlg.src#DLG_VERSIONS.GB_OLDVERSIONS.FixedLine.Text
+#, fuzzy
+msgid  "Existing versions"
 msgstr "अस्तित्वात असलेल्या आवृत्त्या"
 
-#: versdlg.src#DLG_VERSIONS.FT_DATETIME.fixedtext.text
-msgid "Date and time"
+#: source/dialog/versdlg.src#DLG_VERSIONS.FT_DATETIME.FixedText.Text
+#, fuzzy
+msgid  "Date and time"
 msgstr "दिनांक आणि वेळ"
 
-#: versdlg.src#DLG_VERSIONS.FT_SAVEDBY.fixedtext.text
-msgid "Saved by"
+#: source/dialog/versdlg.src#DLG_VERSIONS.FT_SAVEDBY.FixedText.Text
+#, fuzzy
+msgid  "Saved by"
 msgstr "द्वारा जतन केलेले"
 
-#: versdlg.src#DLG_VERSIONS.FT_COMMENTS.fixedtext.text
-msgid "Comments"
+#: source/dialog/versdlg.src#DLG_VERSIONS.FT_COMMENTS.FixedText.Text
+#, fuzzy
+msgid  "Comments"
 msgstr "टिप्पणी"
 
-#: versdlg.src#DLG_VERSIONS.PB_CLOSE.cancelbutton.text
-msgid "Close"
+#: source/dialog/versdlg.src#DLG_VERSIONS.PB_CLOSE.CancelButton.Text
+#, fuzzy
+msgid  "Close"
 msgstr "बंद करा"
 
-#: versdlg.src#DLG_VERSIONS.PB_OPEN.pushbutton.text
-msgid "Open"
+#: source/dialog/versdlg.src#DLG_VERSIONS.PB_OPEN.PushButton.Text
+#, fuzzy
+msgid  "Open"
 msgstr "उघडा"
 
-#: versdlg.src#DLG_VERSIONS.PB_VIEW.pushbutton.text
-msgid "~Show..."
+#: source/dialog/versdlg.src#DLG_VERSIONS.PB_VIEW.PushButton.Text
+#, fuzzy
+msgid  "~Show..."
 msgstr "दाखवा (~S)..."
 
-#: versdlg.src#DLG_VERSIONS.PB_DELETE.pushbutton.text
-msgid "~Delete"
+#: source/dialog/versdlg.src#DLG_VERSIONS.PB_DELETE.PushButton.Text
+#, fuzzy
+msgid  "~Delete"
 msgstr "नष्ट करा (~D)"
 
-#: versdlg.src#DLG_VERSIONS.PB_COMPARE.pushbutton.text
-msgid "Compare"
+#: source/dialog/versdlg.src#DLG_VERSIONS.PB_COMPARE.PushButton.Text
+#, fuzzy
+msgid  "Compare"
 msgstr "तुलना करा"
 
-#: versdlg.src#DLG_VERSIONS.modaldialog.text
-msgid "Versions of"
+#: source/dialog/versdlg.src#DLG_VERSIONS.HelpButton.Text
+#, fuzzy
+msgid  "Versions of"
 msgstr "च्या आवृत्त्या"
 
-#: versdlg.src#DLG_COMMENTS.FT_DATETIME.fixedtext.text
-msgid "Date and time : "
+#: source/dialog/versdlg.src#DLG_COMMENTS.FT_DATETIME.FixedText.Text
+#, fuzzy
+msgid  "Date and time : "
 msgstr "दिनांक आणि वेळ: "
 
-#: versdlg.src#DLG_COMMENTS.FT_SAVEDBY.fixedtext.text
-msgid "Saved by "
+#: source/dialog/versdlg.src#DLG_COMMENTS.FT_SAVEDBY.FixedText.Text
+#, fuzzy
+msgid  "Saved by "
 msgstr "द्वारा जतन केलेले"
 
-#: versdlg.src#DLG_COMMENTS.PB_CLOSE.pushbutton.text
-msgctxt "versdlg.src#DLG_COMMENTS.PB_CLOSE.pushbutton.text"
-msgid "~Close"
+#: source/dialog/versdlg.src#DLG_COMMENTS.PB_CLOSE.PushButton.Text
+#, fuzzy
+msgid  "~Close"
 msgstr "बंद करा (~C)"
 
-#: versdlg.src#DLG_COMMENTS.modaldialog.text
-msgid "Insert Version Comment"
+#: source/dialog/versdlg.src#DLG_COMMENTS.HelpButton.Text
+#, fuzzy
+msgid  "Insert Version Comment"
 msgstr "आवृत्तीची टिप्पणी अंतर्भूत करा"
 
-#: versdlg.src#DLG_COMMENTS.string.text
-msgid "Version comment"
+#: source/dialog/versdlg.src#DLG_COMMENTS.String.Text
+#, fuzzy
+msgid  "Version comment"
 msgstr "आवृत्तीची टिप्पणी"
 
-#~ msgid "Confirm password"
-#~ msgstr "पासवर्डची खात्री करा"
+#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NAME.FixedText.Text
+#, fuzzy
+msgid  "~Name"
+msgstr "नाव (~N)"
 
-#~ msgid "Confirm password"
-#~ msgstr "पासवर्डची खात्री करा"
+#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.CB_AUTO.CheckBox.Text
+#, fuzzy
+msgid  "~AutoUpdate"
+msgstr "स्वयंअद्ययावत (~A)"
+
+#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NEXT.FixedText.Text
+#, fuzzy
+msgid  "Ne~xt Style"
+msgstr "पुढची शैली (~x)"
+
+#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_BASE.FixedText.Text
+#, fuzzy
+msgid  "Linked with"
+msgstr "सह जोडले गेले"
+
+#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_REGION.FixedText.Text
+#, fuzzy
+msgid  "~Category"
+msgstr "प्रवर्ग (~C)"
+
+#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.GB_DESC.FixedLine.Text
+#, fuzzy
+msgid  "Contains"
+msgstr "यात समाविष्ट आहेत"
+
+#: source/dialog/filedlghelper.src#STR_SFX_FILEDLG_ACTUALVERSION.String.Text
+#, fuzzy
+msgid  "Current version"
+msgstr "विद्यमानती"
+
+#: source/dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_EXPORT.String.Text
+#, fuzzy
+msgid  "Export"
+msgstr "पाठवा"
+
+#: source/dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_INSERT.String.Text
+#, fuzzy
+msgid  "Insert"
+msgstr "अंतर्भूत करा"
+
+#: source/dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_BUTTONINSERT.String.Text
+#, fuzzy
+msgid  "~Insert"
+msgstr "अंतर्भूत करा (~I)"
+
+#: source/dialog/filedlghelper.src#STR_SFX_IMPORT_ALL.String.Text
+#, fuzzy
+msgid  "<All formats>"
+msgstr "<सर्व स्वरूपणे>"
+
+#: source/dialog/filedlghelper.src#STR_CB_AUTO_EXTENSION.String.Text
+#, fuzzy
+msgid  "~Automatic file name extension"
+msgstr "स्वयंचलित धारिका नाव एक्सटेन्शन (~A)"
+
+#: source/dialog/filedlghelper.src#STR_CB_SELECTION.String.Text
+#, fuzzy
+msgid  "~Selection"
+msgstr "निवड (~S)"
+
+#: source/dialog/filedlghelper.src#STR_CB_INSERT_AS_LINK.String.Text
+#, fuzzy
+msgid  "~Link"
+msgstr "दुवा (~L)"
+
+#: source/dialog/filedlghelper.src#STR_CB_SHOW_PREVIEW.String.Text
+#, fuzzy
+msgid  "Pr~eview"
+msgstr "पूर्वदृश्य (~e)"
+
+#: source/dialog/filedlghelper.src#STR_CB_READONLY.String.Text
+#, fuzzy
+msgid  "~Read-only"
+msgstr "फक्त वाचन-जोगी (~R)"
+
+#: source/dialog/filedlghelper.src#STR_CB_PASSWORD.String.Text
+#, fuzzy
+msgid  "Save with ~password"
+msgstr "पासवर्डसह साठवा (~p)"
+
+#: source/dialog/filedlghelper.src#STR_CB_FILTER_OPTIONS.String.Text
+#, fuzzy
+msgid  "Edit ~filter settings"
+msgstr "गाळणी संयोजना संपादीत करा (~f)"
+
+#: source/dialog/filedlghelper.src#STR_PB_PLAY.String.Text
+#, fuzzy
+msgid  "~Play"
+msgstr "चालवा (~P)"
+
+#: source/dialog/filedlghelper.src#STR_PB_STOP.String.Text
+#, fuzzy
+msgid  "Sto~p"
+msgstr "थांबवा (~p)"
+
+#: source/dialog/filedlghelper.src#STR_PB_OPEN.String.Text
+#, fuzzy
+msgid  "~Open"
+msgstr "उघडा (~O)"
+
+#: source/dialog/filedlghelper.src#STR_PB_SAVE.String.Text
+#, fuzzy
+msgid  "~Save"
+msgstr "साठवा (~S)"
+
+#: source/dialog/filedlghelper.src#STR_LB_IMAGE_TEMPLATE.String.Text
+#, fuzzy
+msgid  "Style:"
+msgstr "शैली:"
+
+#: source/dialog/filedlghelper.src#STR_LB_TEMPLATES.String.Text
+#, fuzzy
+msgid  "~Templates:"
+msgstr "साचा (~T):"
+
+#: source/dialog/filedlghelper.src#STR_LB_VERSION.String.Text
+#, fuzzy
+msgid  "~Version:"
+msgstr "आवृत्ती (~V):"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.ModelessDialog.Text
+#, fuzzy
+msgid  "Find on this Page"
+msgstr "या पानावर शोधा"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.FT_SEARCH.FixedText.Text
+#, fuzzy
+msgid  "~Search for"
+msgstr "याकरीता शोधा (~S)"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.CB_WHOLEWORDS.CheckBox.Text
+#, fuzzy
+msgid  "~Whole words only"
+msgstr "फक्त पूर्ण शब्द (~W)"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.CB_MATCHCASE.CheckBox.Text
+#, fuzzy
+msgid  "~Match case"
+msgstr "लिपी जुळवा (~M)"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.CheckBox.Text
+#, fuzzy
+msgid  "Wrap ~around"
+msgstr "भोवती गुंडाळा (~a)"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.CB_BACKWARDS.CheckBox.Text
+#, fuzzy
+msgid  "~Backwards"
+msgstr "मागे (~B)"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.PB_FIND.PushButton.Text
+#, fuzzy
+msgid  "~Find"
+msgstr "शोधा (~F)"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.CancelButton.Text
+#, fuzzy
+msgid  "~Close"
+msgstr "बंद करा (~C)"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.STR_TOGGLE.String.Text
+#, fuzzy
+msgid  "Wrap ~around"
+msgstr "भोवती गुंडाळा (~a)"
+
+#: source/dialog/passwd.src#DLG_PASSWD.ModalDialog.Text
+#, fuzzy
+msgid  "Enter Password"
+msgstr "पासवर्ड द्या"
+
+#: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_USER.FixedText.Text
+#, fuzzy
+msgid  "~User"
+msgstr "वापरकर्ता (~U)"
+
+#: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD.FixedText.Text
+#, fuzzy
+msgid  "~Password"
+msgstr "पासवर्ड (~P)"
+
+#: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM.FixedText.Text
+#, fuzzy
+msgid  "~Confirm"
+msgstr "खात्री करा (~C)"
+
+#: source/dialog/passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.FixedLine.Text
+#, fuzzy
+msgid  "Password"
+msgstr "पासवर्ड"
+
+#: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD2.FixedText.Text
+#, fuzzy
+msgid  "P~assword"
+msgstr "पासवर्ड"
+
+#: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM2.FixedText.Text
+#, fuzzy
+msgid  "Confir~m"
+msgstr "खात्री करा (~C)"
+
+#: source/dialog/passwd.src#DLG_PASSWD.TEXT_PASSWD.String.Text
+#, fuzzy
+msgid  "Password"
+msgstr "पासवर्ड"
+
+#: source/dialog/dinfdlg.src#STR_SFX_NEWOFFICEDOC.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME document"
+msgstr "%PRODUCTNAME कागदपत्र"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_TITLE.FixedText.Text
+#, fuzzy
+msgid  "~Title"
+msgstr "शीर्षक (~T)"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_THEMA.FixedText.Text
+#, fuzzy
+msgid  "~Subject"
+msgstr "विषय (~S)"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_KEYWORDS.FixedText.Text
+#, fuzzy
+msgid  "~Keywords"
+msgstr "मुख्यशब्द (~K)"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_COMMENT.FixedText.Text
+#, fuzzy
+msgid  "~Comments"
+msgstr "टिप्पणी (~C)"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.FixedText.Text
+#, fuzzy
+msgid  "Type:"
+msgstr "प्रकार:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.CheckBox.Text
+#, fuzzy
+msgid  "~Read-only"
+msgstr "फक्त-वाचनजोगी (~R)"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE.FixedText.Text
+#, fuzzy
+msgid  "Location:"
+msgstr "स्थान:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_SIZE.FixedText.Text
+#, fuzzy
+msgid  "Size:"
+msgstr "आकार:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_CREATE.FixedText.Text
+#, fuzzy
+msgid  "Created:"
+msgstr "निर्मित केलेले:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_CHANGE.FixedText.Text
+#, fuzzy
+msgid  "Modified:"
+msgstr "सुधारित केलेले:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_SIGNED.FixedText.Text
+#, fuzzy
+msgid  "Digitally signed:"
+msgstr "डिजिट नुरूप हस्ताक्षरीत:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.BTN_SIGNATURE.PushButton.Text
+#, fuzzy
+msgid  "Digital Signature..."
+msgstr "डिजिटल हस्ताक्षर..."
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.STR_MULTSIGNED.String.Text
+#, fuzzy
+msgid  "Multiply signed document"
+msgstr "हस्ताक्षरित दस्तऐवजाला गुणा"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_PRINT.FixedText.Text
+#, fuzzy
+msgid  "Last printed:"
+msgstr "शेवटी छपाई केलेले:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_TIMELOG.FixedText.Text
+#, fuzzy
+msgid  "Total editing time:"
+msgstr "एकूण संपादन वेळ:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_DOCNO.FixedText.Text
+#, fuzzy
+msgid  "Revision number:"
+msgstr "उजळणी क्रमांक:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.BTN_DELETE.PushButton.Text
+#, fuzzy
+msgid  "Reset"
+msgstr "पुनः मांडणी करा"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.CB_USE_USERDATA.CheckBox.Text
+#, fuzzy
+msgid  "~Apply user data"
+msgstr "वापरकर्त्याचा डाटा लागू करा (~A)"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_TEMPL.FixedText.Text
+#, fuzzy
+msgid  "Template:"
+msgstr "साचा:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.STR_UNKNOWNSIZE.String.Text
+#, fuzzy
+msgid  "unknown"
+msgstr "अपरिचीत"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.EDIT_FILE_NAME.String.Text
+msgid  "File Name"
+msgstr ""
+
+#: source/dialog/dinfdlg.src#TP_DOCINFOUSER.BTN_EDITLABEL.PushButton.Text
+#, fuzzy
+msgid  "~Info fields..."
+msgstr "माहिती क्षेत्र (~I)..."
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_NOAUTOUPDATE.RadioButton.Text
+#, fuzzy
+msgid  "Do not refresh automatically"
+msgstr "स्वयंचलित अद्ययावत करू नका"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_RELOADUPDATE.RadioButton.Text
+#, fuzzy
+msgid  "Refresh this document"
+msgstr "या दस्तऐवजाला सुधारीत करा"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_EVERY.FixedText.Text
+#, fuzzy
+msgid  "every"
+msgstr "प्रत्येक"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.FixedText.Text
+#, fuzzy
+msgid  "seconds"
+msgstr "सेकंद"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_FORWARDUPDATE.RadioButton.Text
+#, fuzzy
+msgid  "Redirect from this document"
+msgstr "या कागदपत्रातून दुसरीकडे पाठवा"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.FixedText.Text
+#, fuzzy
+msgid  "after"
+msgstr "नंतर"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.FixedText.Text
+#, fuzzy
+msgid  "seconds"
+msgstr "सेकंद"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_URL.FixedText.Text
+#, fuzzy
+msgid  "to URL"
+msgstr "URL कडे"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FRAME.FixedText.Text
+#, fuzzy
+msgid  "to frame"
+msgstr "चौकटीकडे"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.STR_FORWARD_ERRMSSG.String.Text
+msgid  "If you select the option "%PLACEHOLDER%", you must enter a URL."
+msgstr ""
+
+#: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.FT_PROPERTIES.FixedText.Text
+#, fuzzy
+msgid  "~Properties"
+msgstr "गुणधर्म (~P)"
+
+#: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.String.Text
+#, fuzzy
+msgid  "Name"
+msgstr "नाव"
+
+#: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.String.Text
+#, fuzzy
+msgid  "Type"
+msgstr "प्रकार"
+
+#: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_VALUE.String.Text
+#, fuzzy
+msgid  "Value"
+msgstr "मुल्य"
+
+#: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.BTN_ADD.PushButton.Text
+#, fuzzy
+msgid  "~Add"
+msgstr "जोडा (~A)"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ComboBox.QuickHelpText
+#, fuzzy
+msgid  "Property Name"
+msgstr "गुणधर्म नाव"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item1.StringList.item
+#, fuzzy
+msgid  "Checked by"
+msgstr "द्वारे तपासले"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item2.StringList.item
+#, fuzzy
+msgid  "Client"
+msgstr "क्लाऐंट"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item3.StringList.item
+#, fuzzy
+msgid  "Date completed"
+msgstr "पूर्णत्वाचे दिनांक"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item4.StringList.item
+#, fuzzy
+msgid  "Department"
+msgstr "विभाग"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item5.StringList.item
+#, fuzzy
+msgid  "Destinations"
+msgstr "लक्ष्य"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item6.StringList.item
+#, fuzzy
+msgid  "Disposition"
+msgstr "प्रकृती"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item7.StringList.item
+#, fuzzy
+msgid  "Division"
+msgstr "विभाग"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item8.StringList.item
+#, fuzzy
+msgid  "Document number"
+msgstr "दस्तऐवज क्रमांक"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item9.StringList.item
+#, fuzzy
+msgid  "Editor"
+msgstr "संपादक"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item10.StringList.item
+#, fuzzy
+msgid  "E-Mail"
+msgstr "ई-मेल"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item11.StringList.item
+#, fuzzy
+msgid  "Forward to"
+msgstr "यांस पाठवा"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item12.StringList.item
+#, fuzzy
+msgid  "Group"
+msgstr "समुह"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item13.StringList.item
+#, fuzzy
+msgid  "Info"
+msgstr "माहिती"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item14.StringList.item
+#, fuzzy
+msgid  "Language"
+msgstr "भाषा"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item15.StringList.item
+#, fuzzy
+msgid  "Mailstop"
+msgstr "मेलस्टॉप"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item16.StringList.item
+#, fuzzy
+msgid  "Matter"
+msgstr "मॅटर"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item17.StringList.item
+#, fuzzy
+msgid  "Office"
+msgstr "ऑफिस"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item18.StringList.item
+#, fuzzy
+msgid  "Owner"
+msgstr "मालक"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item19.StringList.item
+#, fuzzy
+msgid  "Project"
+msgstr "प्रकल्प"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item20.StringList.item
+#, fuzzy
+msgid  "Publisher"
+msgstr "प्रकाशक"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item21.StringList.item
+#, fuzzy
+msgid  "Purpose"
+msgstr "कारण"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item22.StringList.item
+#, fuzzy
+msgid  "Received from"
+msgstr "कडून प्राप्त"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item23.StringList.item
+#, fuzzy
+msgid  "Recorded by"
+msgstr "द्वारे नोंदणीकृत"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item24.StringList.item
+#, fuzzy
+msgid  "Recorded date"
+msgstr "नोंदणीकृत दिनांक"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item25.StringList.item
+#, fuzzy
+msgid  "Reference"
+msgstr "संदर्भ"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item26.StringList.item
+#, fuzzy
+msgid  "Source"
+msgstr "स्त्रोत"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item27.StringList.item
+#, fuzzy
+msgid  "Status"
+msgstr "स्थिती"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item28.StringList.item
+#, fuzzy
+msgid  "Telephone number"
+msgstr "टेलीफोन क्रमांक"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item29.StringList.item
+#, fuzzy
+msgid  "Typist"
+msgstr "टायपीस्ट"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item30.StringList.item
+#, fuzzy
+msgid  "URL"
+msgstr "URL"
+
+#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_TEXT.StringList.item
+#, fuzzy
+msgid  "Text"
+msgstr "पाठ्य"
+
+#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATETIME.StringList.item
+#, fuzzy
+msgid  "DateTime"
+msgstr "दिनांकवेळ"
+
+#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATE.StringList.item
+#, fuzzy
+msgid  "Date"
+msgstr "दिनांक"
+
+#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DURATION.StringList.item
+#, fuzzy
+msgid  "Duration"
+msgstr "कार्यकाळ"
+
+#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_NUMBER.StringList.item
+#, fuzzy
+msgid  "Number"
+msgstr "संख्या"
+
+#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_BOOLEAN.StringList.item
+#, fuzzy
+msgid  "Yes or no"
+msgstr "होय किंवा नाही"
+
+#: source/dialog/dinfdlg.src#SFX_ST_DURATION_FORMAT.String.Text
+#, fuzzy
+msgid  " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
+msgstr " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
+
+#: source/dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.RadioButton.Text
+#, fuzzy
+msgid  "Yes"
+msgstr "होय"
+
+#: source/dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_NO.RadioButton.Text
+#, fuzzy
+msgid  "No"
+msgstr "नाही"
+
+#: source/dialog/dinfdlg.src#SFX_PB_PROPERTY_REMOVE.ImageButton.QuickHelpText
+#, fuzzy
+msgid  "Remove Property"
+msgstr "गुणधर्म काढूण टाका"
+
+#: source/dialog/dinfdlg.src#SFX_QB_WRONG_TYPE.QueryBox.Message
+msgid  "The value entered does not match the specified type.\nThe value will be stored as text."
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SID_DOCINFO.TabDialog.Text
+#, fuzzy
+msgid  "Properties of "
+msgstr "याचे गुणधर्म "
+
+#: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.PageItem.Text
+#, fuzzy
+msgid  "General"
+msgstr "सर्वसाधारण"
+
+#: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.PageItem.Text
+#, fuzzy
+msgid  "Description"
+msgstr " वर्णन"
+
+#: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_CUSTOMPROPERTIES.PageItem.Text
+#, fuzzy
+msgid  "Custom Properties"
+msgstr "इच्छिक गुणधर्म"
+
+#: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.PageItem.Text
+#, fuzzy
+msgid  "Internet"
+msgstr "इंटरनेट"
+
+#: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFOSECURITY.PageItem.Text
+#, fuzzy
+msgid  "Security"
+msgstr "सुरक्षा"
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.ModalDialog.Text
+#, fuzzy
+msgid  "Edit Duration"
+msgstr "कार्यकाळ संपादीत करा"
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FL_DURATION.FixedLine.Text
+#, fuzzy
+msgid  "Duration"
+msgstr "कार्यकाळ"
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.CB_NEGATIVE.CheckBox.Text
+#, fuzzy
+msgid  "~Negative"
+msgstr "नकारार्थी (~N)"
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_YEAR.FixedText.Text
+#, fuzzy
+msgid  "~Years"
+msgstr "वर्ष (~Y)"
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MONTH.FixedText.Text
+#, fuzzy
+msgid  "~Months"
+msgstr "महिने (~M)"
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_DAY.FixedText.Text
+#, fuzzy
+msgid  "~Days"
+msgstr "दिवस (~D)"
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_HOUR.FixedText.Text
+#, fuzzy
+msgid  "H~ours"
+msgstr "तास (~o)"
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MINUTE.FixedText.Text
+#, fuzzy
+msgid  "Min~utes"
+msgstr "मिनीटे (~u)"
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_SECOND.FixedText.Text
+#, fuzzy
+msgid  "~Seconds"
+msgstr "सेकंद (~S)"
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MSECOND.FixedText.Text
+#, fuzzy
+msgid  "Millise~conds"
+msgstr "मिलीसेकंद (~c)"
+
+#: source/dialog/dinfedt.src#DLG_DOCINFO_EDT.ModalDialog.Text
+#, fuzzy
+msgid  "Edit Field Names"
+msgstr " क्षेत्राची नावे संपादित करा"
+
+#: source/dialog/dinfedt.src#DLG_DOCINFO_EDT.FL_INFO.FixedLine.Text
+#, fuzzy
+msgid  "Names"
+msgstr "नावे"
+
+#: source/dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.ModalDialog.Text
+#, fuzzy
+msgid  "Create Style"
+msgstr "शैली निर्माण करा"
+
+#: source/dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.FL_COL.FixedLine.Text
+#, fuzzy
+msgid  "Style name"
+msgstr "शैली नाव"
+
+#: source/dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MSG_OVERWRITE.QueryBox.Message
+#, fuzzy
+msgid  "Style already exists. Overwrite?"
+msgstr "शैली आधिपासून अस्तित्वात आहे. पुन्हा लिहायचे?"
+
+#: source/dialog/recfloat.src#SID_RECORDING_FLOATWINDOW.FloatingWindow.Text
+#, fuzzy
+msgid  "Record Macro"
+msgstr "मॅक्रोची नोंदणी करा"
+
+#: source/dialog/recfloat.src#STR_MACRO_LOSS.String.Text
+msgid  "Do you really want to cancel the recording? Any steps recorded up to this point will be lost."
+msgstr ""
+
+#: source/dialog/recfloat.src#STR_CANCEL_RECORDING.String.Text
+#, fuzzy
+msgid  "Cancel Recording"
+msgstr "नोंदणी केलेले रद्द करा"
+
+#: source/dialog/mailwindow.src#RID_ERRBOX_MAIL_CONFIG.ErrorBox.MESSAGE
+msgid  "%PRODUCTNAME was unable to find a working e-mail configuration. Please save this document locally instead and attach it from within your e-mail client."
+msgstr ""
+
+#: source/dialog/dialog.src#STR_RESET.String.Text
+#, fuzzy
+msgid  "~Reset"
+msgstr "मूळस्थितीत आणा (~R)"
+
+#: source/dialog/dialog.src#STR_APPLY.String.Text
+#, fuzzy
+msgid  "Apply"
+msgstr "लागू करा"
+
+#: source/dialog/dialog.src#STR_TABPAGE_MANAGESTYLES.String.Text
+#, fuzzy
+msgid  "Organizer"
+msgstr "आयोजक"
+
+#: source/dialog/dialog.src#MSG_TABPAGE_INVALIDNAME.InfoBox.Message
+#, fuzzy
+msgid  "This name is already in use."
+msgstr "नाव आधीपासूनच वापरात आहे."
+
+#: source/dialog/dialog.src#MSG_TABPAGE_INVALIDSTYLE.InfoBox.Message
+#, fuzzy
+msgid  "This Style does not exist."
+msgstr "ही शैली अस्तित्वात नाही."
+
+#: source/dialog/dialog.src#MSG_TABPAGE_INVALIDPARENT.InfoBox.Message
+msgid  "This Style cannot be used as a base Style,\nbecause it would result in a recursive reference."
+msgstr ""
+
+#: source/dialog/dialog.src#MSG_POOL_STYLE_NAME.InfoBox.Message
+msgid  "Name already exists as a default Style.\nPlease choose another name."
+msgstr ""
+
+#: source/dialog/dialog.src#STR_DELETE_STYLE.String.Text
+#, fuzzy
+msgid  "Do you really want to delete Style $1?"
+msgstr "तुम्हाला नक्की $1 शैली नष्ट करायचे?"
+
+#: source/dialog/dialog.src#STR_DELETE_STYLE_USED.String.Text
+#, fuzzy
+msgid  "You are deleting an applied Style!\n"
+msgstr "आपण लागू केलेली शैली काढून टाकत आहात!\n"
+
+#: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MenuItem.Text
+#, fuzzy
+msgid  "New..."
+msgstr "नवीन..."
+
+#: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.MenuItem.Text
+#, fuzzy
+msgid  "Modify..."
+msgstr "सुधारा..."
+
+#: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.MenuItem.Text
+#, fuzzy
+msgid  "Delete..."
+msgstr "नष्ट करा..."
+
+#: source/dialog/dialog.src#SID_NAVIGATOR.String.Text
+#, fuzzy
+msgid  "Navigator"
+msgstr "दिशादर्शक"
+
+#: source/dialog/dialog.src#SID_TASKPANE.String.Text
+#, fuzzy
+msgid  "Task Pane"
+msgstr "कार्य पट्टी"
+
+#: source/dialog/dialog.src#MSG_ERROR_WRONG_CONFIRM.ErrorBox.Message
+#, fuzzy
+msgid  "Faulty password confirmation"
+msgstr "सदोष पासवर्डची खात्री"
+
+#: source/dialog/dialog.src#STR_PDF_EXPORT_SEND.String.Text
+#, fuzzy
+msgid  "Send"
+msgstr "पाठवा"
+
+#: source/dialog/taskpane.src#STR_SFX_DOCK.String.Text
+#, fuzzy
+msgid  "Dock"
+msgstr "डॉक करा"
+
+#: source/dialog/taskpane.src#STR_SFX_UNDOCK.String.Text
+#, fuzzy
+msgid  "Undock"
+msgstr "डॉक अशक्य करा"
+
+#: source/dialog/taskpane.src#STR_SFX_TASK_PANE_VIEW.String.Text
+#, fuzzy
+msgid  "View"
+msgstr "दृष्य"
+
+#: source/dialog/taskpane.src#STR_SFX_TASKS.String.Text
+#, fuzzy
+msgid  "Tasks"
+msgstr "कार्ये"
+
+#: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.FixedText.Text
+msgid  "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\n\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
+msgstr ""
+
+#: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.OKButton.Text
+#, fuzzy
+msgid  "~Keep Current Format"
+msgstr "विद्यमान रूपण ठेवा (~K)"
+
+#: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_YES.CancelButton.Text
+#, fuzzy
+msgid  "~Save in ODF Format"
+msgstr "ODF स्वरूपात साठवा (~S)"
+
+#: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_MOREINFO.HelpButton.Text
+#, fuzzy
+msgid  "~More Information..."
+msgstr "अधिक माहिती (~M)..."
+
+#: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.CB_WARNING_OFF.CheckBox.Text
+#, fuzzy
+msgid  "~Ask when not saving in ODF format"
+msgstr "ODF स्वरूपात न साठवतेवेळी विचारा (~A)"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item1.ItemList.item
+#, fuzzy
+msgid  "My Templates"
+msgstr "माझे साचे"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item2.ItemList.item
+#, fuzzy
+msgid  "Business Correspondence"
+msgstr "व्यावसायिक पत्रव्यवहार"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item3.ItemList.item
+#, fuzzy
+msgid  "Other Business Documents"
+msgstr "इतर व्यावसायिक कागदपत्रे"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item4.ItemList.item
+#, fuzzy
+msgid  "Personal Correspondence and Documents"
+msgstr "वैयक्तिक पत्रे आणि कागदपत्रे"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item5.ItemList.item
+#, fuzzy
+msgid  "Forms and Contracts"
+msgstr "नमुने आणि करार"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item6.ItemList.item
+#, fuzzy
+msgid  "Finances"
+msgstr "वित्त"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item7.ItemList.item
+#, fuzzy
+msgid  "Education"
+msgstr "शिक्षण"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item8.ItemList.item
+#, fuzzy
+msgid  "Presentation Backgrounds"
+msgstr "सादरीकरणाची पार्श्वभूमी  "
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item9.ItemList.item
+#, fuzzy
+msgid  "Presentations"
+msgstr "सादरीकरण"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item10.ItemList.item
+#, fuzzy
+msgid  "Miscellaneous"
+msgstr "इतर"
+
+#: source/doc/doctempl.src#RID_CNT_STR_WAITING.String.Text
+#, fuzzy
+msgid  "The templates are being initialized for first-time usage."
+msgstr "पहिल्या वापरासाठी नमुन्यांना सुरु केले जात आहे."
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.ModalDialog.Text
+#, fuzzy
+msgid  "Templates"
+msgstr "साचे"
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_EDIT.FixedLine.Text
+#, fuzzy
+msgid  "New template"
+msgstr "नवीन साचा"
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.FixedLine.Text
+#, fuzzy
+msgid  "Templates"
+msgstr "साचा"
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.FixedText.Text
+#, fuzzy
+msgid  "~Categories"
+msgstr "विभाग (~C)"
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_STYLESHEETS.FixedText.Text
+#, fuzzy
+msgid  "~Templates"
+msgstr "साचा (~T)"
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.PushButton.Text
+#, fuzzy
+msgid  "~Edit"
+msgstr "संपादन (~E)"
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_ORGANIZE.PushButton.Text
+#, fuzzy
+msgid  "~Organizer..."
+msgstr "आयोजक (~O)..."
+
+#: source/doc/doc.src#MSG_CONFIRM_FILTER.QueryBox.Message
+msgid  "Saving in external formats may have caused\n information loss. Do you still want to close?"
+msgstr ""
+
+#: source/doc/doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.QueryBox.Message
+msgid  "Name already in use.\nDo you want to overwrite document template?"
+msgstr ""
+
+#: source/doc/doc.src#STR_DELETE_REGION.String.Text
+msgid  "Are you sure you want to delete the region "$1"?"
+msgstr ""
+
+#: source/doc/doc.src#STR_DELETE_TEMPLATE.String.Text
+msgid  "Are you sure you want to delete the entry "$1"?"
+msgstr ""
+
+#: source/doc/doc.src#MSG_REGION_NOTEMPTY.QueryBox.Message
+msgid  "The category is not empty.\nDelete anyway?"
+msgstr ""
+
+#: source/doc/doc.src#STR_QUERY_SAVE_DOCUMENT.String.Text
+msgid  "The document "$(DOC)" has been modified.\nDo you want to save your changes?"
+msgstr ""
+
+#: source/doc/doc.src#STR_STYLES.String.Text
+#, fuzzy
+msgid  "Styles"
+msgstr "शैली "
+
+#: source/doc/doc.src#STR_MACROS.String.Text
+#, fuzzy
+msgid  "Macros"
+msgstr "मॅक्रोज"
+
+#: source/doc/doc.src#STR_CONFIG.String.Text
+#, fuzzy
+msgid  "Configuration"
+msgstr "अंतर्गत रचना"
+
+#: source/doc/doc.src#STR_PRINT_STYLES_HEADER.String.Text
+#, fuzzy
+msgid  "Styles in "
+msgstr " मध्ये शैली "
+
+#: source/doc/doc.src#STR_PRINT_STYLES.String.Text
+#, fuzzy
+msgid  "Printing Styles"
+msgstr "छपाई शैली "
+
+#: source/doc/doc.src#MSG_PRINT_ERROR.ErrorBox.Message
+#, fuzzy
+msgid  "The print job could not be started."
+msgstr "छपाई काम सुरु होऊ शकत नाही."
+
+#: source/doc/doc.src#STR_BACKUP_COPY.String.Text
+#, fuzzy
+msgid  "Copy"
+msgstr "प्रत करा"
+
+#: source/doc/doc.src#MSG_CANT_OPEN_TEMPLATE.InfoBox.Message
+#, fuzzy
+msgid  "The template could not be opened."
+msgstr "नमुना उघडता येत नाही."
+
+#: source/doc/doc.src#MSG_VIEW_OPEN_CANT_SAVE.InfoBox.Message
+#, fuzzy
+msgid  "Document already open for editing."
+msgstr "कागदपत्र आधीपासूनच संपादनासाठी उघडलेले आहे."
+
+#: source/doc/doc.src#STR_ERROR_SAVE.String.Text
+#, fuzzy
+msgid  "Error recording document "
+msgstr "कागदपत्राची नोंद  करतांना दोष"
+
+#: source/doc/doc.src#STR_TEMPLATE_FILTER.String.Text
+#, fuzzy
+msgid  "Templates"
+msgstr "प्रारूप"
+
+#: source/doc/doc.src#STR_ERROR_COPY_TEMPLATE.String.Text
+msgid  "Error copying template "$1". \nA template with this name may already exist."
+msgstr ""
+
+#: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE.String.Text
+msgid  "The template "$1" can not be deleted."
+msgstr ""
+
+#: source/doc/doc.src#STR_ERROR_MOVE_TEMPLATE.String.Text
+msgid  "Error moving template "$1"."
+msgstr ""
+
+#: source/doc/doc.src#MSG_ERROR_RESCAN.ErrorBox.Message
+#, fuzzy
+msgid  "The update could not be saved."
+msgstr "अद्ययावत  जतन होऊ शकले नाही."
+
+#: source/doc/doc.src#STR_ERROR_SAVE_TEMPLATE.String.Text
+#, fuzzy
+msgid  "Error saving template "
+msgstr "नमुना जतन करताना दोष"
+
+#: source/doc/doc.src#MSG_ERROR_RENAME_TEMPLATE.ErrorBox.Message
+#, fuzzy
+msgid  "Error renaming template."
+msgstr "नमुन्याला पुन्हा नाव देताना दोष."
+
+#: source/doc/doc.src#MSG_ERROR_RENAME_TEMPLATE_REGION.ErrorBox.Message
+#, fuzzy
+msgid  "Error renaming template category."
+msgstr "नमुना वर्गाला पुन्हा नाव देताना दोष."
+
+#: source/doc/doc.src#MSG_ERROR_EMPTY_NAME.ErrorBox.Message
+#, fuzzy
+msgid  "Please specify a name."
+msgstr "कृपया एक नाव निर्देशित करा."
+
+#: source/doc/doc.src#MSG_ERROR_UNIQ_NAME.ErrorBox.Message
+msgid  "Please specify a unique name.\nEntries must not be case specific."
+msgstr ""
+
+#: source/doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.String.Text
+msgid  "Should the template "$(TEXT)" become the default template?"
+msgstr ""
+
+#: source/doc/doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.QueryBox.Message
+#, fuzzy
+msgid  "Do you want to reset the default template?"
+msgstr "आपणांस मूळस्थिती नमुन्याची पुनःमांडणी करायाची आहे का ?"
+
+#: source/doc/doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.InfoBox.Message
+msgid  "Template directory\n$(DIR)\ndoes not exist."
+msgstr ""
+
+#: source/doc/doc.src#MSG_DOCINFO_CANTREAD.InfoBox.Message
+#, fuzzy
+msgid  "Document info cannot be read."
+msgstr "कागदपत्रातील माहिती वाचू शकत नाही."
+
+#: source/doc/doc.src#STR_ERROR_NOSTORAGE.String.Text
+#, fuzzy
+msgid  "The selected file has an incorrect format."
+msgstr "निवडलेल्या धारिकेत चुकीचे स्वरूपण आहे."
+
+#: source/doc/doc.src#STR_QUERY_MUSTOWNFORMAT.String.Text
+msgid  "Documents cannot be saved in $(FORMAT) format. Do you\nwant to save your changes using the $(OWNFORMAT) format?"
+msgstr ""
+
+#: source/doc/doc.src#STR_SAVEDOC.String.Text
+#, fuzzy
+msgid  "~Save"
+msgstr "~जतन करा"
+
+#: source/doc/doc.src#STR_UPDATEDOC.String.Text
+#, fuzzy
+msgid  "~Update"
+msgstr "~अद्ययावत करा"
+
+#: source/doc/doc.src#STR_SAVEASDOC.String.Text
+#, fuzzy
+msgid  "Save ~As..."
+msgstr "जतन~ करा जसे..."
+
+#: source/doc/doc.src#STR_SAVECOPYDOC.String.Text
+#, fuzzy
+msgid  "Save Copy ~as..."
+msgstr "प्रत जतन करा जसे (~a)..."
+
+#: source/doc/doc.src#STR_CLOSEDOC.String.Text
+#, fuzzy
+msgid  "~Close"
+msgstr "~बन्द करा"
+
+#: source/doc/doc.src#STR_CLOSEDOC_ANDRETURN.String.Text
+#, fuzzy
+msgid  "~Close & Return to "
+msgstr "~बंद करा आणि परता"
+
+#: source/doc/doc.src#STR_WIZARD.String.Text
+#, fuzzy
+msgid  " AutoPilot"
+msgstr "स्वंयचलित मार्गदर्शक "
+
+#: source/doc/doc.src#RID_STR_FILTCONFIG.String.Text
+#, fuzzy
+msgid  "Configurations"
+msgstr "अंतर्गत रचना"
+
+#: source/doc/doc.src#RID_STR_FILTBASIC.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Basic libraries"
+msgstr "%PRODUCTNAME Basic वाचनालये"
+
+#: source/doc/doc.src#RID_STR_WARNSTYLEOVERWRITE.String.Text
+msgid  "Should the "$(ARG1)" Style be replaced?"
+msgstr ""
+
+#: source/doc/doc.src#STR_DOC_LOADING.String.Text
+#, fuzzy
+msgid  "Loading Document"
+msgstr "कागदपत्र लोड करीत आहे"
+
+#: source/doc/doc.src#RID_DLSTATUS.INET_NAME_RESOLVE_START.String.Text
+#, fuzzy
+msgid  "Connection to: $(HOST). Waiting for response..."
+msgstr "$(HOST): शी जुळणी. प्रतिसादाची प्रतीक्षा..."
+
+#: source/doc/doc.src#RID_DLSTATUS.INET_CONNECT_START.String.Text
+#, fuzzy
+msgid  "Opening $(TARGET) at $(HOST)"
+msgstr "$(TARGET) उघडत आहे, $(HOST) येथे"
+
+#: source/doc/doc.src#RID_DLSTATUS.INET_READ_STATUS.String.Text
+#, fuzzy
+msgid  "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
+msgstr "लोड करीत आहे: $(HOST) पासुन $(TARGET). लोड केले: $(BYTE)\" "
+
+#: source/doc/doc.src#RID_DLSTATUS.INET_CONNECTION_CLOSED.String.Text
+#, fuzzy
+msgid  "Disconnected"
+msgstr "जोडणी काढलेली"
+
+#: source/doc/doc.src#MSG_OPEN_READONLY.QueryBox.Message
+msgid  "Document cannot be opened for editing.\nDo you want to open it as read-only?"
+msgstr ""
+
+#: source/doc/doc.src#STR_EDIT.String.Text
+#, fuzzy
+msgid  "Edit"
+msgstr "संपादन"
+
+#: source/doc/doc.src#RID_OFFICEFILTER.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Documents"
+msgstr "%PRODUCTNAME कागदपत्र"
+
+#: source/doc/doc.src#STR_FRAMEOBJECT_PROPERTIES.String.Text
+#, fuzzy
+msgid  "Propert~ies..."
+msgstr "वैशिष्ट्ये (~i)..."
+
+#: source/doc/doc.src#STR_FSET_FILTERNAME0.String.Text
+#, fuzzy
+msgid  "HTML (FrameSet)"
+msgstr "HTML (चौकटसंच)"
+
+#: source/doc/doc.src#STR_FSET_FILTERNAME1.String.Text
+#, fuzzy
+msgid  "%PRODUCTNAME Frame Document"
+msgstr "%PRODUCTNAME चौकट कागदपत्र"
+
+#: source/doc/doc.src#STR_TEMPL_MOVED.String.Text
+msgid  "The template "$(TEMPLATE)" was not found at the original location. A template with the same name exists at "$(FOUND)". Should this template be used in the future when comparing?"
+msgstr ""
+
+#: source/doc/doc.src#STR_TEMPL_RESET.String.Text
+msgid  "The template "$(TEMPLATE)" has not been found. Should the template be looked for the next time the document is opened ?"
+msgstr ""
+
+#: source/doc/doc.src#STR_AUTOMATICVERSION.String.Text
+#, fuzzy
+msgid  "Automatically saved version"
+msgstr "स्वंयचलित प्रकारे जतन केलेली आवृत्ती"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_SW.String.Text
+#, fuzzy
+msgid  "Text Document"
+msgstr "मजकूर कागदपत्र"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_SWWEB.String.Text
+#, fuzzy
+msgid  "HTML Document"
+msgstr "HTML कागदपत्र"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_SWGLOB.String.Text
+#, fuzzy
+msgid  "Master Document"
+msgstr "प्रधान कागदपत्र"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_SC.String.Text
+#, fuzzy
+msgid  "Spreadsheet"
+msgstr "स्प्रेडशीट"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_SI.String.Text
+#, fuzzy
+msgid  "Presentation"
+msgstr "सादरीकरण"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_SD.String.Text
+#, fuzzy
+msgid  "Drawing"
+msgstr "चित्रकला"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_MESSAGE.String.Text
+#, fuzzy
+msgid  "Message"
+msgstr "सन्देश"
+
+#: source/doc/doc.src#STR_NOSAVEANDCLOSE.String.Text
+#, fuzzy
+msgid  "~Discard"
+msgstr "वगळा (~D)"
+
+#: source/doc/doc.src#STR_PACKNGO_NOACCESS.String.Text
+#, fuzzy
+msgid  "Access to the current data medium not possible."
+msgstr "चालू डाटा माध्यमात प्रवेश अशक्य."
+
+#: source/doc/doc.src#STR_PACKNGO_NEWMEDIUM.String.Text
+#, fuzzy
+msgid  "Insert the next data carrier and click OK."
+msgstr "पुढचा माहिती वाहक अंतर्भूत करा व OK वर क्लिक करा."
+
+#: source/doc/doc.src#STR_OBJECT.String.Text
+#, fuzzy
+msgid  "Object"
+msgstr "वस्तू"
+
+#: source/doc/doc.src#DLG_MACROQUERY.QueryBox.Title
+#, fuzzy
+msgid  "Run Macro"
+msgstr "मॅक्रो चालवा"
+
+#: source/doc/doc.src#DLG_MACROQUERY.QueryBox.Message
+#, fuzzy
+msgid  "This document contains macros. $(TEXT)"
+msgstr "कागदपत्रात मॅक्रो समाविष्ट आहेत.$(TEXT) "
+
+#: source/doc/doc.src#BTN_OK.String.Text
+#, fuzzy
+msgid  "Run"
+msgstr "चालवा"
+
+#: source/doc/doc.src#BTN_CANCEL.String.Text
+#, fuzzy
+msgid  "Do Not Run"
+msgstr "चालवू नका"
+
+#: source/doc/doc.src#FT_CANCEL.String.Text
+msgid  "According to the security settings, the macros in this document should not be run. Do you want to run them anyway?"
+msgstr ""
+
+#: source/doc/doc.src#FT_OK.String.Text
+#, fuzzy
+msgid  "Do you want to allow these macros to be run?"
+msgstr "आपण ह्या मॅक्रोना चालू  करण्याची परवानगी देत आहात का ?"
+
+#: source/doc/doc.src#STR_EXPORTASPDF_TITLE.String.Text
+#, fuzzy
+msgid  "Export as PDF"
+msgstr "PDF रूपात पाठवा"
+
+#: source/doc/doc.src#STR_EXPORTWITHCFGBUTTON.String.Text
+#, fuzzy
+msgid  "Export..."
+msgstr "पाठवा..."
+
+#: source/doc/doc.src#STR_EXPORTBUTTON.String.Text
+#, fuzzy
+msgid  "Export"
+msgstr "पाठवा "
+
+#: source/doc/doc.src#RID_SVXSTR_SECURITY_ADDPATH.String.Text
+#, fuzzy
+msgid  "Add this directory to the list of secure paths: "
+msgstr " सुरक्षित मार्गाच्या यादीमध्ये  ही डिरेक्टरी  समाविष्ट करा: "
+
+#: source/doc/doc.src#STR_LABEL_FILEFORMAT.String.Text
+#, fuzzy
+msgid  "File format:"
+msgstr "फाइल स्वरूपण:"
+
+#: source/doc/doc.src#STR_HIDDENINFO_CONTAINS.String.Text
+msgid  "This document contains:\n\n"
+msgstr ""
+
+#: source/doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.String.Text
+#, fuzzy
+msgid  "Recorded changes"
+msgstr "नोंद केलेले बदल  "
+
+#: source/doc/doc.src#STR_HIDDENINFO_NOTES.String.Text
+#, fuzzy
+msgid  "Notes"
+msgstr "टीपां"
+
+#: source/doc/doc.src#STR_HIDDENINFO_DOCVERSIONS.String.Text
+#, fuzzy
+msgid  "Document versions"
+msgstr "कागदपत्राची आवृत्ती"
+
+#: source/doc/doc.src#STR_HIDDENINFO_FIELDS.String.Text
+#, fuzzy
+msgid  "Fields"
+msgstr "क्षेत्रं"
+
+#: source/doc/doc.src#STR_HIDDENINFO_LINKDATA.String.Text
+#, fuzzy
+msgid  "Linked data..."
+msgstr "जोडलेला डाटा..."
+
+#: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_SAVING.String.Text
+#, fuzzy
+msgid  "Do you want to continue saving the document?"
+msgstr "आपणांस कागदपत्र जतन करणे चालू ठेवायचे आहे का?"
+
+#: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_PRINTING.String.Text
+#, fuzzy
+msgid  "Do you want to continue printing the document?"
+msgstr "आपणांस कागदपत्राची छपाई सुरु ठेवायची आहे का?"
+
+#: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_SIGNING.String.Text
+#, fuzzy
+msgid  "Do you want to continue signing the document?"
+msgstr "आपणांस कागदपत्रावर स्वाक्षरी करायची आहे का?"
+
+#: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_CREATEPDF.String.Text
+#, fuzzy
+msgid  "Do you want to continue creating a PDF file?"
+msgstr "आपणांस PDF धारिकेची निर्मिती सुरु ठेवायची आहे का?"
+
+#: source/doc/doc.src#STR_NEW_FILENAME_SAVE.String.Text
+msgid  "If you do not want to overwrite the original document, you should save your work under a new filename."
+msgstr ""
+
+#: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.String.Text
+#, fuzzy
+msgid  "Some template files are protected and can not be deleted."
+msgstr "काही नमुना फाइलंना संरक्षित केलेले आहे आणि काढून टाकू शकत नाही."
+
+#: source/doc/doc.src#STR_DOCINFO_INFOFIELD.String.Text
+#, fuzzy
+msgid  "Info %1"
+msgstr "माहिती %1"
+
+#: source/doc/doc.src#STR_SHARED.String.Text
+#, fuzzy
+msgid  " (shared)"
+msgstr " (विभागलेले)"
+
+#: source/doc/doc.src#STR_XMLSEC_ODF12_EXPECTED.String.Text
+msgid  "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-Options-Load/Save-General. Signing documents requires ODF 1.2 (OpenOffice.org 3.x)."
+msgstr ""
+
+#: source/doc/doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.QueryBox.Message
+msgid  "The document has to be saved before it can be signed. Saving the document removes all present signatures.\nDo you want to save the document?"
+msgstr ""
+
+#: source/doc/doc.src#STR_QRYTEMPL_MESSAGE.String.Text
+msgid  "The template '$(ARG1)' on which this document is based, has been modified. Do you want to update style based formattings according to the modified template?"
+msgstr ""
+
+#: source/doc/doc.src#STR_QRYTEMPL_UPDATE_BTN.String.Text
+#, fuzzy
+msgid  "~Update Styles"
+msgstr "शैली अद्ययावत करा (~U)"
+
+#: source/doc/doc.src#STR_QRYTEMPL_KEEP_BTN.String.Text
+#, fuzzy
+msgid  "~Keep Old Styles"
+msgstr "जुने शैली संग्रहीत करा (~K)"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.ModalDialog.Text
+#, fuzzy
+msgid  "Template Management"
+msgstr "साचा व्यवस्थापन"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_OK.OKButton.Text
+#, fuzzy
+msgid  "Close"
+msgstr "बंद करा"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_FILES.PushButton.Text
+#, fuzzy
+msgid  "~File..."
+msgstr "फाइल (~F)..."
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_ADDRESSTEMPLATE.PushButton.Text
+#, fuzzy
+msgid  "~Address Book..."
+msgstr "पत्ते पुस्तिका (~A)..."
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
+#, fuzzy
+msgid  "Documents"
+msgstr "दस्तऐवज"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
+#, fuzzy
+msgid  "Documents"
+msgstr "दस्तऐवज"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.MenuButton.Text
+#, fuzzy
+msgid  "Commands"
+msgstr "आदेश"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_NEW.MenuItem.Text
+#, fuzzy
+msgid  "~New"
+msgstr "नवीन (~N)"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DELETE.MenuItem.Text
+#, fuzzy
+msgid  "~Delete"
+msgstr "काढून टाका (~D)"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.MenuItem.Text
+#, fuzzy
+msgid  "~Edit"
+msgstr "संपादन (~E)"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_FROM.MenuItem.Text
+#, fuzzy
+msgid  "Import Template..."
+msgstr "नमुना आणा..."
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_TO.MenuItem.Text
+#, fuzzy
+msgid  "Export Template..."
+msgstr "नमुना पाठवा..."
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINT.MenuItem.Text
+#, fuzzy
+msgid  "~Print"
+msgstr "छपाई (~P)"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINTER_SETUP.MenuItem.Text
+#, fuzzy
+msgid  "Printer Settings..."
+msgstr "छपाईयंत्र संयोजना..."
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESCAN.MenuItem.Text
+#, fuzzy
+msgid  "Update"
+msgstr "अद्ययावत करा"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DEFAULT_TEMPLATE.MenuItem.Text
+#, fuzzy
+msgid  "Set As Default Template"
+msgstr "मूळस्थिती नमुना म्हणून मांडणी करा "
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESET_DEFAULT_TEMPLATE.MenuItem.Text
+#, fuzzy
+msgid  "Reset Default Template"
+msgstr "मूळस्थिती नमुन्याची पुनःमांडणी करा"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
+#, fuzzy
+msgid  "Templates"
+msgstr "साचा"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
+#, fuzzy
+msgid  "Templates"
+msgstr "साचे"
+
+#: source/doc/new.src#DLG_NEW_FILE.ModalDialog.Text
+#, fuzzy
+msgid  "New"
+msgstr "नवीन"
+
+#: source/doc/new.src#DLG_NEW_FILE.FT_REGION.FixedText.Text
+#, fuzzy
+msgid  "~Categories"
+msgstr "प्रवर्ग (~C)"
+
+#: source/doc/new.src#DLG_NEW_FILE.FT_TEMPLATE.FixedText.Text
+#, fuzzy
+msgid  "T~emplates"
+msgstr "साचे (~e)"
+
+#: source/doc/new.src#DLG_NEW_FILE.BT_MORE.MoreButton.Text
+#, fuzzy
+msgid  "~More"
+msgstr "अधिक (~M)"
+
+#: source/doc/new.src#DLG_NEW_FILE.BTN_PREVIEW.CheckBox.Text
+#, fuzzy
+msgid  "Pre~view"
+msgstr "पूर्वदृश्य (~v)"
+
+#: source/doc/new.src#DLG_NEW_FILE.GB_DOCINFO.FixedLine.Text
+#, fuzzy
+msgid  "Description"
+msgstr "वर्णन"
+
+#: source/doc/new.src#DLG_NEW_FILE.CB_TEXT_STYLE.CheckBox.Text
+#, fuzzy
+msgid  "Te~xt"
+msgstr "पाठ्य (~x)"
+
+#: source/doc/new.src#DLG_NEW_FILE.CB_FRAME_STYLE.CheckBox.Text
+#, fuzzy
+msgid  "~Frame"
+msgstr "चौकट (~F)"
+
+#: source/doc/new.src#DLG_NEW_FILE.CB_PAGE_STYLE.CheckBox.Text
+#, fuzzy
+msgid  "~Pages"
+msgstr "पाने (~P)"
+
+#: source/doc/new.src#DLG_NEW_FILE.CB_NUM_STYLE.CheckBox.Text
+#, fuzzy
+msgid  "N~umbering"
+msgstr "क्रमांकण (~u)"
+
+#: source/doc/new.src#DLG_NEW_FILE.CB_MERGE_STYLE.CheckBox.Text
+#, fuzzy
+msgid  "~Overwrite"
+msgstr "खोडून पुन्हा लिहा (~O)"
+
+#: source/doc/new.src#DLG_NEW_FILE.PB_LOAD_FILE.PushButton.Text
+#, fuzzy
+msgid  "From File..."
+msgstr "फाइल पासून..."
+
+#: source/doc/new.src#DLG_NEW_FILE.STR_LOAD_TEMPLATE.String.Text
+#, fuzzy
+msgid  "Load Styles"
+msgstr "शैलींना लोड करा "
+
+#: source/doc/new.src#DLG_NEW_FILE.FT_TITLE.FixedText.Text
+#, fuzzy
+msgid  "~Title"
+msgstr "शीर्षक (~T)"
+
+#: source/doc/new.src#DLG_NEW_FILE.FT_THEMA.FixedText.Text
+#, fuzzy
+msgid  "Subject"
+msgstr "विषय"
+
+#: source/doc/new.src#DLG_NEW_FILE.FT_KEYWORDS.FixedText.Text
+#, fuzzy
+msgid  "~Key words"
+msgstr "मुख्य शब्द (~K)"
+
+#: source/doc/new.src#DLG_NEW_FILE.FT_DESC.FixedText.Text
+#, fuzzy
+msgid  "~Description"
+msgstr "वर्णन (~D)"
+
+#: source/menu/menu.src#STR_MENU_CFGITEM.String.Text
+#, fuzzy
+msgid  "Configuration Menu"
+msgstr "संरचना मेन्यू"
+
+#: source/menu/menu.src#STR_MENU_ADDONS.String.Text
+#, fuzzy
+msgid  "~Add-Ons"
+msgstr "ऍड-ऑन्स् (~A)"
+
+#: source/menu/menu.src#MN_CLIPBOARDFUNCS.SID_CUT.MenuItem.Text
+#, fuzzy
+msgid  "Cu~t"
+msgstr "कापा (~t)"
+
+#: source/menu/menu.src#MN_CLIPBOARDFUNCS.SID_COPY.MenuItem.Text
+#, fuzzy
+msgid  "~Copy"
+msgstr "प्रत बनवा (~C)"
+
+#: source/menu/menu.src#MN_CLIPBOARDFUNCS.SID_PASTE.MenuItem.Text
+#, fuzzy
+msgid  "~Paste"
+msgstr "चिकटवा (~P)"
+
+#: source/menu/menu.src#SID_WIN_FULLSCREEN.String.Text
+#, fuzzy
+msgid  "Leave Full-Screen Mode"
+msgstr "पडदाभर मोडमधून बाहेर पडा"
+
+#: source/menu/menu.src#STR_MENU_ADDONHELP.String.Text
+#, fuzzy
+msgid  "Add-~On Help"
+msgstr "ऍड-ऑन मदत (~O)"
+
+#: source/menu/menu.src#STR_MENU_SYNONYMS.String.Text
+#, fuzzy
+msgid  "Synonyms"
+msgstr "समानार्थी"
+
+#: source/menu/menu.src#STR_MENU_NO_SYNONYM_FOUND.String.Text
+#, fuzzy
+msgid  "(none)"
+msgstr "(काहिच नाही)"
+
+#: source/menu/menu.src#STR_MENU_THESAURUS.String.Text
+#, fuzzy
+msgid  "~Thesaurus..."
+msgstr "थिसॉरस (~T)..."
+
+#: source/view/view.src#STR_NODEFPRINTER.String.Text
+msgid  "No default printer found.\nPlease choose a printer and try again."
+msgstr ""
+
+#: source/view/view.src#STR_NOSTARTPRINTER.String.Text
+msgid  "Could not start printer.\nPlease check your printer configuration."
+msgstr ""
+
+#: source/view/view.src#STR_PRINTER_NOTAVAIL.String.Text
+msgid  "This document has been formatted for the printer $1. The specified printer is not available. \nDo you want to use the standard printer $2 ?"
+msgstr ""
+
+#: source/view/view.src#STR_PRINT_OPTIONS.String.Text
+#, fuzzy
+msgid  "Options..."
+msgstr "पर्याय..."
+
+#: source/view/view.src#STR_PRINT_OPTIONS_TITLE.String.Text
+#, fuzzy
+msgid  "Printer Options"
+msgstr "मुद्रक पर्याय"
+
+#: source/view/view.src#STR_ERROR_PRINTER_BUSY.String.Text
+#, fuzzy
+msgid  "Printer busy"
+msgstr "मुद्रक व्यस्त आहे"
+
+#: source/view/view.src#STR_ERROR_PRINT.String.Text
+#, fuzzy
+msgid  "Error while printing"
+msgstr "छपाई करतेवेळी त्रुटी"
+
+#: source/view/view.src#STR_PRINTING.String.Text
+#, fuzzy
+msgid  "Printing"
+msgstr "छपाई"
+
+#: source/view/view.src#STR_PAGE.String.Text
+#, fuzzy
+msgid  "Page "
+msgstr "पान"
+
+#: source/view/view.src#STR_READONLY.String.Text
+#, fuzzy
+msgid  " (read-only)"
+msgstr "(केवळ-वाचनीय)"
+
+#: source/view/view.src#STR_PRINT_NEWORI.String.Text
+msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
+msgstr ""
+
+#: source/view/view.src#STR_PRINT_NEWSIZE.String.Text
+msgid  "The page size has been modified.\nShould the new settings be saved\nin the active document?"
+msgstr ""
+
+#: source/view/view.src#STR_PRINT_NEWORISIZE.String.Text
+msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
+msgstr ""
+
+#: source/view/view.src#STR_PREVIEW_DOCINFO.String.Text
+msgid  "<html><body BGCOLOR="#c0c0c0"><font FACE="Arial"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
+msgstr ""
+
+#: source/view/view.src#STR_PREVIEW_NODOCINFO.String.Text
+msgid  "<HTML><BODY BGCOLOR="#c0c0c0"><BR><BR><P><FONT FACE="Arial"><B>No document properties found.</B></FONT></P></BODY></HTML>"
+msgstr ""
+
+#: source/view/view.src#MSG_CANT_CLOSE.InfoBox.Message
+msgid  "The document cannot be closed because a\n print job is being carried out."
+msgstr ""
+
+#: source/view/view.src#DLG_PRINTMONITOR.FT_PRINTING.FixedText.Text
+#, fuzzy
+msgid  "is being printed on"
+msgstr "यावर छापले जात आहे"
+
+#: source/view/view.src#DLG_PRINTMONITOR.STR_FT_PREPARATION.String.Text
+#, fuzzy
+msgid  "is being prepared for printing"
+msgstr "मुद्रण करीता तयारी करत आहे"
+
+#: source/view/view.src#MSG_ERROR_SEND_MAIL.InfoBox.Message
+msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
+msgstr ""
+
+#: source/view/view.src#MSG_QUERY_OPENASTEMPLATE.QueryBox.Message
+msgid  "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
+msgstr ""
+
+#: source/view/view.src#STR_REPAIREDDOCUMENT.String.Text
+#, fuzzy
+msgid  " (repaired document)"
+msgstr "(दुरुस्ती केलेले कागदपत्र)"
+
+#: source/view/view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.ErrorBox.Message
+msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
+msgstr ""
+
+#: source/view/view.src#DLG_PRINTMONITOR_TEXT.#define.Text
+#, fuzzy
+msgid  "Print Monitor"
+msgstr "मुद्रण मॉनिटर"
+
+#: source/view/view.src#STR_ERROR_SAVE_TEMPLATE.String.Text
+#, fuzzy
+msgid  "Error saving template "
+msgstr "नमुना जतन करताना दोष"

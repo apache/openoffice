@@ -1,113 +1,124 @@
-
-#: macinstall.ulf#AbortLabel.LngText.text
-msgctxt "macinstall.ulf#AbortLabel.LngText.text"
-msgid "Abort"
-msgstr "បោះបង់"
-
-#: macinstall.ulf#AppInvalidText1.LngText.text
-msgid "This is not a valid [PRODUCTNAME] [PRODUCTVERSION] installation."
-msgstr "នេះ​មិនមែន​ជា​ការ​ដំឡើង [PRODUCTNAME] [PRODUCTVERSION] ត្រឹមត្រូវ​ទេ ។"
-
-#: macinstall.ulf#AppInvalidText2.LngText.text
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
 msgid ""
-"Run the installer again and choose a valid [PRODUCTNAME] [PRODUCTVERSION] "
-"installation"
 msgstr ""
-"រត់​កម្មវិធី​ដំឡើង​ម្ដង​ទៀត ហើយ​ជ្រើស​ការ​ដំឡើង [PRODUCTNAME] "
-"[PRODUCTVERSION] ដែល​ត្រឹមត្រូវ"
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
 
-#: macinstall.ulf#ChooseManualText.LngText.text
-msgid "Point the dialog to your [PRODUCTNAME] [PRODUCTVERSION] installation."
-msgstr "ដាក់​ប្រអប់​ទៅ​​កា​រដំឡើង [PRODUCTNAME] [PRODUCTVERSION] របស់​អ្នក ។"
 
-#: macinstall.ulf#ChooseMyOwnText.LngText.text
-msgid "Not listed (choose location in an extra step)"
-msgstr "មិន​បានរាយ​ទេ (ជ្រើស​ទីតាំង​នៅ​ក្នុង​ជំហាន​បន្ថែម)"
-
-#: macinstall.ulf#IdentifyNO.LngText.text
-msgid "No, abort installation"
-msgstr "ទេ បោះបង់​កា​រដំឡើង"
-
-#: macinstall.ulf#IdentifyQText.LngText.text
-msgid ""
-"Installation failed, most likely your account does not have the necessary "
-"privileges."
-msgstr ""
-"កា​រដំឡើង​បានបរាជ័យ ទំនង​ជា​គណនី​របស់អ្នក​មិន​មាន​សិទ្ធិ​ដែល​ចាំបាច់​ទេ ។"
-
-#: macinstall.ulf#IdentifyQText2.LngText.text
-msgid "Do you want to identify as administrator and try again?"
-msgstr "តើ​អ្នក​ចង់​កំណត់​​ជា​អ្នក​គ្រប់គ្រង ហើយ​ព្យាយាម​ម្ដង​ទៀត​ដែរឬទេ ?"
-
-#: macinstall.ulf#IdentifyYES.LngText.text
-msgid "Yes, identify"
-msgstr "បាទ/ចាស កំណត់"
-
-#: macinstall.ulf#InstallCompleteText.LngText.text
-msgid "Installation of [PRODUCTNAME] language pack completed."
-msgstr "កា​រដំឡើង​កញ្ចប់ភាសា [PRODUCTNAME] បានបញ្ចប់​ហើយ ។"
-
-#: macinstall.ulf#InstallCompleteText2.LngText.text
-msgid ""
-"Call '[PRODUCTNAME]-Preferences-Language Settings-Languages' to change the "
-"user interface language."
-msgstr ""
-"ហៅ '[PRODUCTNAME]-ចំណូលចិត្ត-ការ​កំណត់​ភាសា-ភាសា' "
-"ដើម្បី​ផ្លាស់ប្ដូរ​ភាសា​ចំណុច​ប្រទាក់​អ្នក​ប្រើ ។"
-
-#: macinstall.ulf#InstallCompleteTextPatch.LngText.text
-msgid "Installation of [FULLPRODUCTNAME] completed"
-msgstr "ការ​ដំឡើង [FULLPRODUCTNAME] បាន​បញ្ចប់​ហើយ"
-
-#: macinstall.ulf#InstallFailedText.LngText.text
-msgid "Installation failed."
-msgstr "ការ​ដំឡើង​បានបរាជ័យ ។"
-
-#: macinstall.ulf#InstallLabel.LngText.text
-msgctxt "macinstall.ulf#InstallLabel.LngText.text"
-msgid "Install"
-msgstr "ដំឡើង"
-
-#: macinstall.ulf#IntroText1.LngText.text
-msgid "Welcome to the [FULLPRODUCTNAME] Installation Wizard"
-msgstr "សូមស្វាគមន៍​មក​កាន់​អ្នកជំនួយ​ការ​ដំឡើង​របស់ [FULLPRODUCTNAME]"
-
-#: macinstall.ulf#IntroText2.LngText.text
-msgid "This installation will update your installed versions of [PRODUCTNAME]"
-msgstr ""
-"កា​រដំឡើង​នេះ នឹង​ធ្វើ​បច្ចុប្បន្នភព​​​កំណែ [PRODUCTNAME] "
-"​ដែលបាន​ដំឡើង​របស់​អ្នក"
-
-#: macinstall.ulf#IntroText3.LngText.text
-msgid "This might take a moment."
-msgstr "វា​អាច​ចំណាយ​ពេល​មួយ​រយៈ ។"
-
-#: macinstall.ulf#ListCancelLabel.LngText.text
-msgctxt "macinstall.ulf#ListCancelLabel.LngText.text"
-msgid "Abort"
-msgstr "បោះបង់"
-
-#: macinstall.ulf#ListOKLabelText.LngText.text
-msgctxt "macinstall.ulf#ListOKLabelText.LngText.text"
-msgid "Install"
-msgstr "ដំឡើង"
-
-#: macinstall.ulf#ListPromptText.LngText.text
-msgid ""
-"Choose [PRODUCTNAME] [PRODUCTVERSION] installation for which you want to "
-"install the [FULLPRODUCTNAME]"
-msgstr ""
-"ជ្រើ​សកា​រដំឡើង [PRODUCTNAME] [PRODUCTVERSION] ​ដែល​អ្នក​ចង់​ដំឡើង​ "
-"[FULLPRODUCTNAME]"
-
-#: macinstall.ulf#OKLabel.LngText.text
-msgid "Ok"
+#: source/mac/macinstall.ulf#OKLabel
+msgid  "Ok"
 msgstr "យល់ព្រម"
 
-#: macinstall.ulf#StartInstallText1.LngText.text
-msgid "Click Install to start the installation"
+#: source/mac/macinstall.ulf#InstallLabel
+msgid  "Install"
+msgstr "ដំឡើង"
+
+#: source/mac/macinstall.ulf#AbortLabel
+msgid  "Abort"
+msgstr "បោះបង់"
+
+#: source/mac/macinstall.ulf#IntroText1
+msgid  "Welcome to the [FULLPRODUCTNAME] Installation Wizard"
+msgstr "សូមស្វាគមន៍​មក​កាន់​អ្នកជំនួយ​ការ​ដំឡើង​របស់ [FULLPRODUCTNAME]"
+
+#: source/mac/macinstall.ulf#IntroText2
+msgid  "This installation will update your installed versions of [PRODUCTNAME]"
+msgstr ""
+
+#: source/mac/macinstall.ulf#IntroText3
+msgid  "This might take a moment."
+msgstr "វា​អាច​ចំណាយ​ពេល​មួយ​រយៈ ។"
+
+#: source/mac/macinstall.ulf#ChooseMyOwnText
+msgid  "Not listed (choose location in an extra step)"
+msgstr "មិន​បានរាយ​ទេ (ជ្រើស​ទីតាំង​នៅ​ក្នុង​ជំហាន​បន្ថែម)"
+
+#: source/mac/macinstall.ulf#ListPromptText
+msgid  "Choose [PRODUCTNAME] [PRODUCTVERSION] installation for which you want to install the [FULLPRODUCTNAME]"
+msgstr ""
+
+#: source/mac/macinstall.ulf#ChooseManualText
+msgid  "Point the dialog to your [PRODUCTNAME] [PRODUCTVERSION] installation."
+msgstr "ដាក់​ប្រអប់​ទៅ​​កា​រដំឡើង [PRODUCTNAME] [PRODUCTVERSION] របស់​អ្នក ។"
+
+#: source/mac/macinstall.ulf#ListOKLabelText
+msgid  "Install"
+msgstr "ដំឡើង"
+
+#: source/mac/macinstall.ulf#ListCancelLabel
+msgid  "Abort"
+msgstr "បោះបង់"
+
+#: source/mac/macinstall.ulf#AppInvalidText1
+msgid  "This is not a valid [PRODUCTNAME] [PRODUCTVERSION] installation."
+msgstr "នេះ​មិនមែន​ជា​ការ​ដំឡើង [PRODUCTNAME] [PRODUCTVERSION] ត្រឹមត្រូវ​ទេ ។"
+
+#: source/mac/macinstall.ulf#AppInvalidText2
+msgid  "Run the installer again and choose a valid [PRODUCTNAME] [PRODUCTVERSION] installation"
+msgstr ""
+
+#: source/mac/macinstall.ulf#StartInstallText1
+msgid  "Click Install to start the installation"
 msgstr "ចុច​ដំឡើង ដើម្បី​ចាប់ផ្ដើម​ការ​ដំឡើង"
 
-#: macinstall.ulf#StartInstallText2.LngText.text
-msgid "Installation might take a minute..."
+#: source/mac/macinstall.ulf#StartInstallText2
+msgid  "Installation might take a minute..."
 msgstr "ការ​ដំឡើង​អាច​ចំណាយ​ពេល​មួយ​រយៈ..."
+
+#: source/mac/macinstall.ulf#IdentifyQText
+msgid  "Installation failed, most likely your account does not have the necessary privileges."
+msgstr ""
+
+#: source/mac/macinstall.ulf#IdentifyQText2
+msgid  "Do you want to identify as administrator and try again?"
+msgstr "តើ​អ្នក​ចង់​កំណត់​​ជា​អ្នក​គ្រប់គ្រង ហើយ​ព្យាយាម​ម្ដង​ទៀត​ដែរឬទេ ?"
+
+#: source/mac/macinstall.ulf#IdentifyYES
+msgid  "Yes, identify"
+msgstr "បាទ/ចាស កំណត់"
+
+#: source/mac/macinstall.ulf#IdentifyNO
+msgid  "No, abort installation"
+msgstr "ទេ បោះបង់​កា​រដំឡើង"
+
+#: source/mac/macinstall.ulf#InstallFailedText
+msgid  "Installation failed."
+msgstr "ការ​ដំឡើង​បានបរាជ័យ ។"
+
+#: source/mac/macinstall.ulf#InstallCompleteText
+msgid  "Installation of [PRODUCTNAME] language pack completed."
+msgstr "កា​រដំឡើង​កញ្ចប់ភាសា [PRODUCTNAME] បានបញ្ចប់​ហើយ ។"
+
+#: source/mac/macinstall.ulf#InstallCompleteText2
+msgid  "Call '[PRODUCTNAME]-Preferences-Language Settings-Languages' to change the user interface language."
+msgstr ""
+
+#: source/mac/macinstall.ulf#InstallCompleteTextPatch
+msgid  "Installation of [FULLPRODUCTNAME] completed"
+msgstr "ការ​ដំឡើង [FULLPRODUCTNAME] បាន​បញ្ចប់​ហើយ"

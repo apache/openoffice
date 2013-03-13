@@ -1,270 +1,208 @@
-
-#: crashrep.ulf#_ALLOW_CONTACT_.LngText.text
-msgid "~I allow Oracle to contact me regarding this report."
-msgstr "~মসিগী রিপোৰ্তসিগা মরী লৈন্না সন মাইক্ৰোসিস্তমবু ঐগা পাউ ফাওনবা য়ারে."
-
-#: crashrep.ulf#_BACK_BUTTON_.LngText.text
-msgid " << ~Back"
-msgstr " << ~মতুং"
-
-#: crashrep.ulf#_CANCEL_BUTTON_.LngText.text
-msgid "Cancel"
-msgstr "ককথত্পা"
-
-#: crashrep.ulf#_DONOT_SEND_BUTTON_.LngText.text
-msgid "Do ~Not Send"
-msgstr "~থাগনু"
-
-#: crashrep.ulf#_ENTER_DESCRIPTION_.LngText.text
-msgid "~How were you using %PRODUCTNAME% when the error occurred ?"
-msgstr "~অশোয়বা থোরকপা মতমদা অদোম্না করম্না %PRODUCTNAME% শিজিন্নখিবগে?"
-
-#: crashrep.ulf#_ENTER_EMAIL_.LngText.text
-msgid "Please enter your e-mail address."
-msgstr "অদোমগী ই-মেইল এদ্রেস চংশিনবিরো."
-
-#: crashrep.ulf#_ENTER_TITLE_.LngText.text
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
 msgid ""
-"Which type of document (e.g. presentation) were you using when the error "
-"occurred?"
 msgstr ""
-"অশোয়বা থোরকপা মতমদা অদোম্না করম্বা দোকুমেন্ত (e.g মফোঙদোক) শিজিন্নবিখিবগে?"
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
 
-#: crashrep.ulf#_ERROR_MSG_DISK_FULL_.LngText.text
-msgid ""
-"The error report could not be temporarily saved and could therefore not be "
-"sent."
-msgstr "অশোয়বা রিপোর্ত মতম খরগী ওইনা শেভ তৌবা ঙমদ্রে অমসুং মরমসিনা থাবা ঙমদ্রে."
 
-#: crashrep.ulf#_ERROR_MSG_NOCONNECT_.LngText.text
-msgid ""
-"The error report could not be sent because there is no Internet connection. "
-"Please check your Internet settings."
+#: source/all/crashrep.ulf#%WELCOME_CAPTION%
+msgid  "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "%PRODUCTNAME% %PRODUCTVERSION% অশোয়বা রিপোর্ত"
+
+#: source/all/crashrep.ulf#%WELCOME_HEADER%
+msgid  "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "লেংশিনবীরকসি মসিদা %PRODUCTNAME% %PRODUCTVERSION% অশোয়বা রিপোর্ত"
+
+#: source/all/crashrep.ulf#%WELCOME_BODY1%
+msgid  "This error report tool gathers information about how %PRODUCTNAME% is working and sends it to Apache OpenOffice to help improve future versions.\n\n"
 msgstr ""
-"অশোয়বা রিপোর্ত থাবা ঙমদ্রে মরমদি ইন্তরনেত শম্নদ্রে. চানবিদুনা অদোমগী "
-"ইন্তরনেত সেত্তিংশিং য়েংশিনবিয়ু."
 
-#: crashrep.ulf#_ERROR_MSG_NOEMAILADDRESS_.LngText.text
-msgid ""
-"You have marked the option 'I allow Oracle to contact me regarding this "
-"report.'\n"
-"Please enter your e-mail address."
+#: source/all/crashrep.ulf#%WELCOME_BODY2%
+msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
 msgstr ""
-"'ঐ সন মাইক্ৰোসিস্তমবু মসিগী হীরমশিগা মরী লৈন্না ঐবু পাউ ফাওন্নবা অয়াবা "
-"পীরে.' অদোম্না অপাম্বসি খুদম তৌরে\n"
-"চানবিদুনা অদোমগী ই-মেইল এদ্রেস চংশিনবিয়ু."
 
-#: crashrep.ulf#_ERROR_MSG_PROXY_.LngText.text
-msgid ""
-"The error report could not be sent. Please check the proxy settings under "
-"'Options' in the Error Report Tool."
+#: source/all/crashrep.ulf#%WELCOME_BODY3%
+msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
 msgstr ""
-"অশোয়বা রিপোর্ত থাবা ঙমদ্রে. চানবিদুনা অশোয়বা রিপোর্ত তুলগী মনুংদা য়াওরিবা "
-"'অপাম্বশিং' গী মখাদা শাশিন্নবা সেত্তিংশিং য়েংশিনবিয়ু."
 
-#: crashrep.ulf#_ERROR_MSG_SENDMAIL_.LngText.text
-msgid ""
-"The error report could not be sent because 'sendmail' could not be started.\n"
-"Please check the 'sendmail' settings."
+#: source/all/crashrep.ulf#%PRIVACY_URL%
+msgid  "http://www.openoffice.org/privacy.html"
 msgstr ""
-"অশোয়বা রিপোর্ত থাবা ঙমদ্রে মরমদি 'মেইল থাবা' হৌদ্রি.\n"
-"চানবিদুনা 'মেইল থাবা' সেত্তিংশিং অমুত্তা য়েংশিনবিয়ু."
 
-#: crashrep.ulf#_ERROR_MSG_SIMPLE_MAPI_.LngText.text
-msgid ""
-"The error report could not be sent because the default e-mail program does "
-"not support MAPI.\n"
-" Please use a MAPI-compatible e-mail program."
-msgstr ""
-"অশোয়বা রিপোর্ত থাবা য়াদে মরমদি দিফোল্ত ই-মেইল প্ৰোগ্ৰামদা MAPI- তেংবাংদ্রে.\n"
-"চানবিদুনা MAPI-কমপেতিবল ই-মেইল প্ৰোগ্ৰাম শিজিন্নবিয়ু."
-
-#: crashrep.ulf#_MSG_CMDLINE_USAGE_.LngText.text
-msgid "Usage:"
-msgstr "শিজিন্নবগী মওং:"
-
-#: crashrep.ulf#_MSG_PARAM_HELP_DESCRIPTION_.LngText.text
-msgid ""
-"Shows this help text.\n"
-"Detailed information can be found in the Setup Guide."
-msgstr ""
-"মসিগী মতেংগী তেক্স উতলে.\n"
-"সেতঅপ লমতাকপদা মচাখাইবা ঈপাউ ফংবিগনি."
-
-#: crashrep.ulf#_MSG_PARAM_PROCESSID_.LngText.text
-msgid "-p <process ID>"
-msgstr "-p <মথৌ তৌবা ID>"
-
-#: crashrep.ulf#_MSG_PARAM_PROCESSID_DESCRIPTION_.LngText.text
-msgid "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
-msgstr "অশোয়বা রিপোর্ত তুলদা %PRODUCTNAME% মথৌ তৌবা ID (PID) শিন্নরে"
-
-#: crashrep.ulf#_NEXT_BUTTON_.LngText.text
-msgid "~Next >>"
+#: source/all/crashrep.ulf#%NEXT_BUTTON%
+msgid  "~Next >>"
 msgstr "~মথং >>"
 
-#: crashrep.ulf#_OK_BUTTON_.LngText.text
-msgid "OK"
+#: source/all/crashrep.ulf#%CANCEL_BUTTON%
+msgid  "Cancel"
+msgstr "ককথত্পা"
+
+#: source/all/crashrep.ulf#%OK_BUTTON%
+msgid  "OK"
 msgstr "য়ারে"
 
-#: crashrep.ulf#_OPTIONS_BUTTON_.LngText.text
-msgid "~Options..."
-msgstr "~অপাম্বশিং..."
-
-#: crashrep.ulf#_OPTIONS_TITLE_.LngText.text
-msgid "Options"
-msgstr "অপাম্বশিং"
-
-#: crashrep.ulf#_PRIVACY_URL_.LngText.text
-msgid "http://www.oracle.com/html/services-privacy-policy.html"
-msgstr "http://www.sun.com/privacy/"
-
-#: crashrep.ulf#_PROXY_SETTINGS_ADDRESS_.LngText.text
-msgid "HT~TP Proxy"
-msgstr "HT~TP শাশিন্নবা"
-
-#: crashrep.ulf#_PROXY_SETTINGS_DESCRIPTION_.LngText.text
-msgid ""
-"The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to "
-"be able to send error reports.\n"
-"\n"
-"Companies often use proxy servers in conjunction with a firewall to protect "
-"the network.\n"
-"\n"
-"If this applies to your situation, you have to specify the address and port "
-"for the server."
-msgstr ""
-"অশোয়বা রিপোর্ত থাবা ঙম্নবগীদমক %PRODUCTNAME% অশোয়বা রিপোৰ্ত তুল ইন্তরনেতকা "
-"শম্নবা দরকার ওই.\n"
-"\n"
-"কম্পেনীশিংনা নেতৱাৰ্ক ঙাক-শেন্নবগীদমক ফায়ারৱালগা লোয়ন্না শাশিন্নবা সৰ্ভর "
-"তোয়না শিজিন্নৈ.\n"
-"\n"
-"অদোমগী ফীবমদুদা মসি শিজিন্নরবদি, অদোম সর্ভরগী লৈফম অমসুং পোৰ্ত অককনবা "
-"উতকদবনি."
-
-#: crashrep.ulf#_PROXY_SETTINGS_DIRECT_.LngText.text
-msgid "Use ~direct connection to the Internet"
-msgstr "ইন্তরনেত্তা হকথেংন্না শম্নবা ~শিজিন্নৌ"
-
-#: crashrep.ulf#_PROXY_SETTINGS_HEADER_.LngText.text
-msgid "Proxy settings"
-msgstr "শাশিন্নবা সেত্তিংশিং"
-
-#: crashrep.ulf#_PROXY_SETTINGS_MANUAL_.LngText.text
-msgid "Use ~manual settings"
-msgstr "খুতকী মতেংনা তৌবা সেত্তিংশিং ~শিজিন্নৌ"
-
-#: crashrep.ulf#_PROXY_SETTINGS_PORT_.LngText.text
-msgid "~Port"
-msgstr "পোৰ্ত"
-
-#: crashrep.ulf#_PROXY_SETTINGS_SYSTEM_.LngText.text
-msgid "Use ~system settings"
-msgstr "সিস্তেম সেত্তিংশিং ~শিজিন্নৌ"
-
-#: crashrep.ulf#_REPORT_BODY_.LngText.text
-msgid ""
-"The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information "
-"that could help Oracle improve %PRODUCTNAME%.\n"
-"In the spaces below, you can enter a title for your crash report and "
-"describe the action you were trying to carry out when the error occurred. "
-"Then click 'Send'.\n"
-msgstr ""
-"%PRODUCTNAME% %PRODUCTVERSION% অশোয়বা রিপোৰ্তনা ঈপাউশিং খোমজিল্লে মদুনা সন "
-"মাইক্ৰোসিস্তেম %PRODUCTNAME% ফগত্হনবা মতেং পাংবা ঙমগনি.\n"
-"মখাগী অহাংবা মফমশিংদা, অদোমগী কায়বগী রিপোর্ত মমিং চংশিনবা য়াগনি অমসুং "
-"অদোম্নবা থবক্তু পাংথোকনবা হোতনবা মতমদা থোরকখিবা অশোয়বশিং শন্দোকনা তাকপিয়ু. "
-"অদুগা 'থাবা' দা ক্লিক তৌবিয়ু\n"
-
-#: crashrep.ulf#_REPORT_CAPTION_.LngText.text
-msgctxt "crashrep.ulf#_REPORT_CAPTION_.LngText.text"
-msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+#: source/all/crashrep.ulf#%REPORT_CAPTION%
+msgid  "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
 msgstr "%PRODUCTNAME% %PRODUCTVERSION% অশোয়বা রিপোর্ত"
 
-#: crashrep.ulf#_REPORT_HEADER_.LngText.text
-msgid "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
+#: source/all/crashrep.ulf#%REPORT_HEADER%
+msgid  "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
 msgstr "%PRODUCTNAME% %PRODUCTVERSION% মথৌ তৌরিঙৈদা অশোয়বা অমা থোরক্লে"
 
-#: crashrep.ulf#_SAVE_REPORT_BUTTON_.LngText.text
-msgid "~Save Report..."
-msgstr "~রিপোৰ্ত সেভ তৌরো..."
+#: source/all/crashrep.ulf#%REPORT_BODY%
+msgid  "The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information that could help Apache OpenOffice improve %PRODUCTNAME%.\nIn the spaces below, you can enter a title for your crash report and describe the action you were trying to carry out when the error occurred. Then click 'Send'.\n"
+msgstr ""
 
-#: crashrep.ulf#_SAVE_REPORT_TITLE_.LngText.text
-msgid "Save Report to"
-msgstr "-দা রিপোৰ্ত সেভ তৌরো"
+#: source/all/crashrep.ulf#%ENTER_TITLE%
+msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
+msgstr ""
 
-#: crashrep.ulf#_SENDING_REPORT_HEADER_.LngText.text
-msgid "Sending Error Report"
-msgstr "অশোয়বা রিপোর্ত থারি"
+#: source/all/crashrep.ulf#%ALLOW_CONTACT%
+msgid  "~I allow Apache OpenOffice to contact me regarding this report."
+msgstr ""
 
-#: crashrep.ulf#_SENDING_REPORT_STATUS_.LngText.text
-msgid "Status: Sending error report"
-msgstr "ফিবম: অশোয়বা রিপোর্ত থারি"
+#: source/all/crashrep.ulf#%ENTER_EMAIL%
+msgid  "Please enter your e-mail address."
+msgstr "অদোমগী ই-মেইল এদ্রেস চংশিনবিরো."
 
-#: crashrep.ulf#_SENDING_REPORT_STATUS_FINISHED_.LngText.text
-msgid "Status: The error report has been sent successfully."
-msgstr "ফিবম: অশোয়বা রিপোৰ্ত মায়পাকনা থাখরে."
+#: source/all/crashrep.ulf#%ENTER_DESCRIPTION%
+msgid  "~How were you using %PRODUCTNAME% when the error occurred ?"
+msgstr "~অশোয়বা থোরকপা মতমদা অদোম্না করম্না %PRODUCTNAME% শিজিন্নখিবগে?"
 
-#: crashrep.ulf#_SEND_BUTTON_.LngText.text
-msgid "S~end"
+#: source/all/crashrep.ulf#%BACK_BUTTON%
+msgid  " << ~Back"
+msgstr " << ~মতুং"
+
+#: source/all/crashrep.ulf#%SEND_BUTTON%
+msgid  "S~end"
 msgstr "থাবা"
 
-#: crashrep.ulf#_SHOW_REPORT_BUTTON_.LngText.text
-msgid "Show ~Report..."
+#: source/all/crashrep.ulf#%DONOT_SEND_BUTTON%
+msgid  "Do ~Not Send"
+msgstr "~থাগনু"
+
+#: source/all/crashrep.ulf#%SHOW_REPORT_BUTTON%
+msgid  "Show ~Report..."
 msgstr "রিপোর্ত ~উতলো..."
 
-#: crashrep.ulf#_WELCOME_BODY1_.LngText.text
-msgid ""
-"This error report tool gathers information about how %PRODUCTNAME% is "
-"working and sends it to Oracle to help improve future versions.\n"
-"\n"
+#: source/all/crashrep.ulf#%SAVE_REPORT_BUTTON%
+msgid  "~Save Report..."
+msgstr "~রিপোৰ্ত সেভ তৌরো..."
+
+#: source/all/crashrep.ulf#%SAVE_REPORT_TITLE%
+msgid  "Save Report to"
+msgstr "-দা রিপোৰ্ত সেভ তৌরো"
+
+#: source/all/crashrep.ulf#%ERROR_MSG_SIMPLE_MAPI%
+msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
 msgstr ""
-"মসিগী অশোয়বা রিপোর্ত তুলসিনা %PRODUCTNAME% করম্না থবক তৌরি হায়বগী ঈপাউ "
-"খোমজিল্লি অদুগা সন মাইক্রোসিস্তেমদা মতুং তারকপা ভর্সনশিং ফগতলকপদা মতেং "
-"পাংনবা থাই.\n"
-"\n"
 
-#: crashrep.ulf#_WELCOME_BODY2_.LngText.text
-msgid ""
-"It's easy - just send the report without any further effort on your part by "
-"clicking 'Send' in the next dialog, or you can briefly describe how the "
-"error occurred and then click 'Send'. If you want to see the report, click "
-"the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n"
-"\n"
+#: source/all/crashrep.ulf#%ERROR_MSG_DISK_FULL%
+msgid  "The error report could not be temporarily saved and could therefore not be sent."
 msgstr ""
-"মসি অরাইবা থবক্নি - মথংগী দাইলোগতা অদোমগী মাইকৈদগী 'থাবা' ক্লিক তৌদুনা "
-"রিপোর্ত মখাতানা হোতনদনা থারো, নত্রগা অশোয়বসি করম্না থোকলক্লিবনো হায়বদু শম্না "
-"তাক্লো অদুগা 'থাবা' ক্লিক তৌরো. অদোম্না রিপোর্ত য়েংবা পাম্লবদি, 'রিপোর্ত "
-"উতপা' বতনদা ক্লিক তৌরো. করিগুম্বা অদোম্না 'থাগনু' ক্লিক তৌরবদি দাতা অমত্তা "
-"থাররোই.\n"
-"\n"
 
-#: crashrep.ulf#_WELCOME_BODY3_.LngText.text
-msgid ""
-"Customer Privacy\n"
-"The information gathered is limited to data concerning the state of %"
-"PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information "
-"about passwords or document contents is not collected.\n"
-"\n"
-"The information will only be used to improve the quality of %PRODUCTNAME% "
-"and will not be shared with third parties.\n"
-"For more information on Oracle's privacy policy, visit\n"
+#: source/all/crashrep.ulf#%ERROR_MSG_SENDMAIL%
+msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
 msgstr ""
-"অরৈবগী লনাইগী ওইবা\n"
-"অশোয়বা থোকলকপা মতমদা %PRODUCTNAME% %PRODUCTVERSION% ফিভমগা মরি লৈনবা দাতাদা "
-"ঈপাউ খোমজিল্লিবা অসি লোইবা নাই. পাসৱাৰ্দ নত্রগা দোকুমেন্ত য়াওফমশিংগী অতোপ্পা "
-"ঈপাউদি খোমদে.\n"
-"\n"
-"ঈপাউ অসি %PRODUCTNAME% গী মগুন ফগতনবগীদমক শিজিন্নগনি অমসুং অতোপ্পা অহুমশুবা "
-"কাংলুপ অমত্তগা শরুক য়ামিন্নরোই.\n"
-"সন মাইক্ৰসিস্তেমদা অহেনবা ঈপাউগীদমক 'লনাইগী ওইবা পোলিসি, দা চতপিয়ু\n"
 
-#: crashrep.ulf#_WELCOME_CAPTION_.LngText.text
-msgctxt "crashrep.ulf#_WELCOME_CAPTION_.LngText.text"
-msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
-msgstr "%PRODUCTNAME% %PRODUCTVERSION% অশোয়বা রিপোর্ত"
+#: source/all/crashrep.ulf#%ERROR_MSG_PROXY%
+msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
+msgstr ""
 
-#: crashrep.ulf#_WELCOME_HEADER_.LngText.text
-msgid "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
-msgstr "লেংশিনবীরকসি মসিদা %PRODUCTNAME% %PRODUCTVERSION% অশোয়বা রিপোর্ত"
+#: source/all/crashrep.ulf#%ERROR_MSG_NOCONNECT%
+msgid  "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
+msgstr ""
+
+#: source/all/crashrep.ulf#%OPTIONS_BUTTON%
+msgid  "~Options..."
+msgstr "~অপাম্বশিং..."
+
+#: source/all/crashrep.ulf#%OPTIONS_TITLE%
+msgid  "Options"
+msgstr "অপাম্বশিং"
+
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_HEADER%
+msgid  "Proxy settings"
+msgstr "শাশিন্নবা সেত্তিংশিং"
+
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_SYSTEM%
+msgid  "Use ~system settings"
+msgstr "সিস্তেম সেত্তিংশিং ~শিজিন্নৌ"
+
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_DIRECT%
+msgid  "Use ~direct connection to the Internet"
+msgstr "ইন্তরনেত্তা হকথেংন্না শম্নবা ~শিজিন্নৌ"
+
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_MANUAL%
+msgid  "Use ~manual settings"
+msgstr "খুতকী মতেংনা তৌবা সেত্তিংশিং ~শিজিন্নৌ"
+
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_ADDRESS%
+msgid  "HT~TP Proxy"
+msgstr "HT~TP শাশিন্নবা"
+
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_PORT%
+msgid  "~Port"
+msgstr "পোৰ্ত"
+
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_DESCRIPTION%
+msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
+msgstr ""
+
+#: source/all/crashrep.ulf#%SENDING_REPORT_HEADER%
+msgid  "Sending Error Report"
+msgstr "অশোয়বা রিপোর্ত থারি"
+
+#: source/all/crashrep.ulf#%SENDING_REPORT_STATUS%
+msgid  "Status: Sending error report"
+msgstr "ফিবম: অশোয়বা রিপোর্ত থারি"
+
+#: source/all/crashrep.ulf#%SENDING_REPORT_STATUS_FINISHED%
+msgid  "Status: The error report has been sent successfully."
+msgstr "ফিবম: অশোয়বা রিপোৰ্ত মায়পাকনা থাখরে."
+
+#: source/all/crashrep.ulf#%ERROR_MSG_NOEMAILADDRESS%
+msgid  "You have marked the option 'I allow Apache OpenOffice to contact me regarding this report.'\nPlease enter your e-mail address."
+msgstr ""
+
+#: source/all/crashrep.ulf#%MSG_CMDLINE_USAGE%
+msgid  "Usage:"
+msgstr "শিজিন্নবগী মওং:"
+
+#: source/all/crashrep.ulf#%MSG_PARAM_PROCESSID%
+msgid  "-p <process ID>"
+msgstr "-p <মথৌ তৌবা ID>"
+
+#: source/all/crashrep.ulf#%MSG_PARAM_PROCESSID_DESCRIPTION%
+msgid  "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
+msgstr "অশোয়বা রিপোর্ত তুলদা %PRODUCTNAME% মথৌ তৌবা ID (PID) শিন্নরে"
+
+#: source/all/crashrep.ulf#%MSG_PARAM_HELP_DESCRIPTION%
+msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
+msgstr ""

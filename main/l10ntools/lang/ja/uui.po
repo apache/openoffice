@@ -1,934 +1,680 @@
-"X-Accelerator-Marker: ~\n"
-
-#: alreadyopen.src#STR_ALREADYOPEN_MSG.string.text
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
 msgid ""
-"Document file '$(ARG1)' is locked for editing by yourself on a different "
-"system since $(ARG2)\n"
-"\n"
-"Open document read-only, or ignore own file locking and open the document "
-"for editing.\n"
-"\n"
 msgstr ""
-"ドキュメントファイル '$(ARG1)' は、あなた自身が $(ARG2) から他のシステム上で編集中のためロックされています。\n"
-"\n"
-"読み取り専用でドキュメントを開くか、ファイルのロックを無視してドキュメントを開き編集してください。\n"
-"\n"
-
-#: alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.string.text
-msgctxt "alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.string.text"
-msgid "Open ~Read-Only"
-msgstr "読み取り専用で開く(~R)"
-
-#: alreadyopen.src#STR_ALREADYOPEN_OPEN_BTN.string.text
-msgid "~Open"
-msgstr "開く(~O)"
-
-#: alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.string.text
-msgid ""
-"Document file '$(ARG1)' is locked for editing by yourself on a different "
-"system since $(ARG2)\n"
-"\n"
-"Close document on other system and retry saving or ignore own file locking "
-"and save current document.\n"
-"\n"
-msgstr ""
-"ドキュメントファイル '$(ARG1)' は、あなた自身が $(ARG2) から他のシステム上で編集中のためロックされています。\n"
-"\n"
-"他のシステム上のドキュメントを閉じて保存を再び試みるか、ファイルのロックを無視して現在のドキュメントを保存してください。\n"
-"\n"
-
-#: alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.string.text
-msgctxt "alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.string.text"
-msgid "~Retry Saving"
-msgstr "保存の再試行(~R)"
-
-#: alreadyopen.src#STR_ALREADYOPEN_SAVE_BTN.string.text
-msgid "~Save"
-msgstr "保存(~S)"
-
-#: cookiedg.src#DLG_COOKIES.RB_INFUTURE_SEND.radiobutton.text
-msgctxt "cookiedg.src#DLG_COOKIES.RB_INFUTURE_SEND.radiobutton.text"
-msgid "~Send"
-msgstr "受け入れる(~S)"
-
-#: cookiedg.src#DLG_COOKIES.RB_INFUTURE_IGNORE.radiobutton.text
-msgid "I~gnore"
-msgstr "無視する(~G)"
-
-#: cookiedg.src#DLG_COOKIES.RB_INFUTURE_INTERACTIVE.radiobutton.text
-msgid "I~nteractive"
-msgstr "毎回確認する(~N)"
-
-#: cookiedg.src#DLG_COOKIES.GB_INFUTURE.groupbox.text
-msgid "Future Cookie Handling"
-msgstr "クッキーの今後の操作手順"
-
-#: cookiedg.src#DLG_COOKIES.BTN_COOKIES_CANCEL.pushbutton.text
-msgid "~Ignore"
-msgstr "無視する(~I)"
-
-#: cookiedg.src#DLG_COOKIES.BTN_COOKIES_OK.pushbutton.text
-msgctxt "cookiedg.src#DLG_COOKIES.BTN_COOKIES_OK.pushbutton.text"
-msgid "~Send"
-msgstr "受け入れる(~S)"
-
-#: cookiedg.src#STR_COOKIES_RECV_START.string.text
-msgid ""
-"The '${HOST}' server wishes to set one or more cookies.\n"
-"Cookies contain information referring to certain URL classes. If %"
-"PRODUCTNAME later requests a document with a URL corresponding to the class "
-"of a previously set cookie, %PRODUCTNAME will send this information to the "
-"server. This allows a server to recognize the status of a WWW application, "
-"e.g., when shopping online.\n"
-"\n"
-"The following Cookies should be set:\n"
-"\n"
-msgstr ""
-"サーバー '${HOST}' は1つ以上のクッキーの設定が必要です。\n"
-"クッキーはURLのあるクラスに関連する情報です。すでに受信しているクッキーと同じURLのドキュメントを %PRODUCTNAME "
-"が要求したとき、この情報が %PRODUCTNAME からサーバーに送られます。そしてサーバーが WWW "
-"の使用状態(オンライン購買の際に買い物かごの中に入れた商品など)を覚えておきます。\n"
-"\n"
-"以下のクッキーを設定します。\n"
-"\n"
-
-#: cookiedg.src#STR_COOKIES_RECV_COOKIES.string.text
-msgctxt "cookiedg.src#STR_COOKIES_RECV_COOKIES.string.text"
-msgid "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
-msgstr "ドメイン: ${DOMAIN}､パス: ${PATH}、クッキー: ${COOKIE}。\n"
-
-#: cookiedg.src#STR_COOKIES_RECV_TITLE.string.text
-msgid "Cookie Reception"
-msgstr "クッキーの受信"
-
-#: cookiedg.src#STR_COOKIES_SEND_START.string.text
-msgid ""
-"%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent "
-"when requesting the document ${PATH}.\n"
-"Cookies contain information which refers to certain URL classes. They are "
-"sent by some servers to %PRODUCTNAME where they are saved when certain "
-"documents are accessed. If %PRODUCTNAME loads a document that, according to "
-"the URL, corresponds to a class of one of the previously received Cookies, %"
-"PRODUCTNAME will send this information to that server. This enables a server "
-"to keep track of the status of a WWW application, e.g., when shopping "
-"online.\n"
-"\n"
-"The following Cookies should be set:\n"
-"\n"
-msgstr ""
-"%PRODUCTNAME はサーバー '${HOST}' 用に、ドキュメント ${PATH} 要求の際に送信されるクッキーを保存しました。\n"
-"クッキーは UR Lのあるクラスに関連する情報で、あるドキュメントがいくつかのサーバーから呼び出された際に %PRODUCTNAME "
-"に送信され、そこで保存されます。すでに受信したクッキーと同じ URL のドキュメントを %PRODUCTNAME が要求したとき、この情報が %"
-"PRODUCTNAME からサーバーに送られます。そしてサーバーが WWW "
-"の使用状態(オンライン購買の際に買い物かごの中に入れた商品など)を覚えておきます。\n"
-"\n"
-"以下のクッキーを設定します。\n"
-"\n"
-
-#: cookiedg.src#STR_COOKIES_SEND_COOKIES.string.text
-msgctxt "cookiedg.src#STR_COOKIES_SEND_COOKIES.string.text"
-msgid "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
-msgstr "ドメイン: ${DOMAIN}､パス: ${PATH}、クッキー: ${COOKIE}。\n"
-
-#: cookiedg.src#STR_COOKIES_SEND_TITLE.string.text
-msgid "Send Cookies"
-msgstr "クッキーの送信"
-
-#: filechanged.src#STR_FILECHANGED_TITLE.string.text
-msgid "Document Has Been Changed by Others"
-msgstr "他の人がドキュメントを更新しました"
-
-#: filechanged.src#STR_FILECHANGED_MSG.string.text
-msgid ""
-"The file has been changed since it was opened for editing in %PRODUCTNAME. "
-"Saving your version of the document will overwrite changes made by others.\n"
-"\n"
-"Do you want to save anyway?\n"
-"\n"
-msgstr ""
-"このファイルは、編集のために %PRODUCTNAME "
-"で開かれ変更されました。ドキュメントを保存すると、他の人が変更した内容を上書きすることになります。\n"
-"\n"
-"強制的に保存しますか ?\n"
-"\n"
-
-#: filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.string.text
-msgid "~Save Anyway"
-msgstr "強制的に保存(~S)"
-
-#: fltdlg.src#DLG_FILTER_SELECT.modaldialog.text
-msgid "Filter Selection"
-msgstr "フィルタの選択"
-
-#: ids.src#RID_KEEP_PASSWORD.string.text
-msgid "~Remember password until end of session"
-msgstr "セッション終了時までパスワードを記憶(~R)"
-
-#: ids.src#RID_SAVE_PASSWORD.string.text
-msgctxt "ids.src#RID_SAVE_PASSWORD.string.text"
-msgid "~Remember password"
-msgstr "パスワードを記憶(~R)"
-
-#: ids.src#STR_WARNING_BROKENSIGNATURE_TITLE.string.text
-msgid "Invalid Document Signature"
-msgstr "ドキュメントの署名が無効"
-
-#: ids.src#STR_WARNING_INCOMPLETE_ENCRYPTION_TITLE.string.text
-msgid "Non-Encrypted Streams"
-msgstr "暗号化されていないストリーム"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_ABORT___ERRCODE_RES_MASK_.string.text
-msgid "The operation executed on $(ARG1) was aborted."
-msgstr "$(ARG1) で実行した操作は中止されました。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_ACCESSDENIED___ERRCODE_RES_MASK_.string.text
-msgid "Access to $(ARG1) was denied."
-msgstr "$(ARG1) へのアクセスは拒否されました。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_ALREADYEXISTS___ERRCODE_RES_MASK_.string.text
-msgid "$(ARG1) already exists."
-msgstr "$(ARG1) はすでにあります。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_TARGETALREADYEXISTS___ERRCODE_RES_MASK_.string.text
-msgid "Target already exists."
-msgstr "ターゲットがすでに存在します。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_MODULESIZEEXCEEDED___ERRCODE_RES_MASK_.string.text
-msgid ""
-"You are about to save/export a password protected basic library containing "
-"module(s) \n"
-"$(ARG1)\n"
-"which are too large to store in binary format. If you wish users that don't "
-"have access to the library password to be able to run macros in those "
-"module(s) you must split those modules into a number of smaller modules. Do "
-"you wish to continue to save/export this library?"
-msgstr ""
-"バイナリ形式で保存するには大きすぎるモジュール \n"
-"$(ARG1)\n"
-" を含むパスワード保護された Basic ライブラリを保存またはエクスポートしようとしています。ライブラリパスワードにアクセス権のないユーザーがこれらの"
-"モジュールでマクロを実行できるようにするには、これらのモジュールを小さなモジュールに分割する必要があります。このライブラリの保存またはエクスポートを続け"
-"ますか。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_BADCRC___ERRCODE_RES_MASK_.string.text
-msgid "The data from $(ARG1) has an incorrect checksum."
-msgstr "$(ARG1) のデータはチェックサムが正しくありません。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_CANTCREATE___ERRCODE_RES_MASK_.string.text
-msgid "The object $(ARG1) cannot be created in directory $(ARG2)."
-msgstr "オブジェクト $(ARG1) はディレクトリ $(ARG2) に作成できません。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_CANTREAD___ERRCODE_RES_MASK_.string.text
-msgid "Data of $(ARG1) could not be read."
-msgstr "$(ARG1) のデータは読み取れませんでした。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_CANTSEEK___ERRCODE_RES_MASK_.string.text
-msgid "The seek operation on $(ARG1) could not be performed."
-msgstr "$(ARG1) への seek 操作は実行できませんでした。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_CANTTELL___ERRCODE_RES_MASK_.string.text
-msgid "The tell operation on $(ARG1) could not be performed."
-msgstr "$(ARG1) への tell 操作は実行できませんでした。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_CANTWRITE___ERRCODE_RES_MASK_.string.text
-msgid "Data for $(ARG1) could not be written."
-msgstr "$(ARG1) のデータは書き込みできませんでした。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_CURRENTDIR___ERRCODE_RES_MASK_.string.text
-msgid "Action impossible: $(ARG1) is the current directory."
-msgstr "実行できません: $(ARG1) は現在のディレクトリです。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTREADY___ERRCODE_RES_MASK_.string.text
-msgid "$(ARG1) is not ready."
-msgstr "$(ARG1) の準備ができていません。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTSAMEDEVICE___ERRCODE_RES_MASK_.string.text
-msgid "Action impossible: $(ARG1) and $(ARG2) are different devices (drives)."
-msgstr "実行できません: $(ARG1) と $(ARG2) は異なったデバイス (ドライブ) です。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_GENERAL___ERRCODE_RES_MASK_.string.text
-msgid "General input/output error while accessing $(ARG1)."
-msgstr "$(ARG1) へアクセスする際の一般的な入力/出力のエラー。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_INVALIDACCESS___ERRCODE_RES_MASK_.string.text
-msgid "An attempt was made to access $(ARG1) in an invalid way."
-msgstr "$(ARG1) への無効なアクセスが試みられました。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_INVALIDCHAR___ERRCODE_RES_MASK_.string.text
-msgid "$(ARG1) contains invalid characters."
-msgstr "$(ARG1) に無効な文字が含まれています。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_INVALIDDEVICE___ERRCODE_RES_MASK_.string.text
-msgid "The device (drive) $(ARG1) is invalid."
-msgstr "デバイス (ドライブ) $(ARG1) は無効です。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_INVALIDLENGTH___ERRCODE_RES_MASK_.string.text
-msgid "The data from $(ARG1) has an invalid length."
-msgstr "$(ARG1) のデータの文字列の長さは無効です。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_INVALIDPARAMETER___ERRCODE_RES_MASK_.string.text
-msgid "The operation on $(ARG1) was started with an invalid parameter."
-msgstr "$(ARG1) への操作実行は無効なパラメータで開始されました。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_ISWILDCARD___ERRCODE_RES_MASK_.string.text
-msgid "The operation cannot be performed because $(ARG1) contains wildcards."
-msgstr "$(ARG1) にワイルドカードが含まれているため、操作は実行できません。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_LOCKVIOLATION___ERRCODE_RES_MASK_.string.text
-msgid "Error during shared access to $(ARG1)."
-msgstr "$(ARG1) への共有アクセスの際のエラー。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_MISPLACEDCHAR___ERRCODE_RES_MASK_.string.text
-msgid "$(ARG1) contains misplaced characters."
-msgstr "$(ARG1) には間違った位置に文字が含まれています。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NAMETOOLONG___ERRCODE_RES_MASK_.string.text
-msgid "The name $(ARG1) contains too many characters."
-msgstr "名前 $(ARG1) に含まれている文字数が多すぎます。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTEXISTS___ERRCODE_RES_MASK_.string.text
-msgid "$(ARG1) does not exist."
-msgstr "$(ARG1) はありません。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTEXISTSPATH___ERRCODE_RES_MASK_.string.text
-msgid "The path $(ARG1) does not exist."
-msgstr "パス $(ARG1) はありません。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTSUPPORTED___ERRCODE_RES_MASK_.string.text
-msgid "The operation on $(ARG1) is not supported on this operating system."
-msgstr "$(ARG1) への操作はこのオペレーティングシステムではサポートされません。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTADIRECTORY___ERRCODE_RES_MASK_.string.text
-msgid "$(ARG1) is not a directory."
-msgstr "$(ARG1) はディレクトリではありません。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTAFILE___ERRCODE_RES_MASK_.string.text
-msgid "$(ARG1) is not a file."
-msgstr "$(ARG1) はファイルではありません。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_OUTOFSPACE___ERRCODE_RES_MASK_.string.text
-msgid "There is no space left on device $(ARG1)."
-msgstr "デバイス $(ARG1) には空き容量はありません。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_TOOMANYOPENFILES___ERRCODE_RES_MASK_.string.text
-msgid ""
-"The operation on $(ARG1) cannot be performed because too many files are "
-"already open."
-msgstr "すでに多くのファイルが開かれているため、$(ARG1) への操作は実行できません。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_OUTOFMEMORY___ERRCODE_RES_MASK_.string.text
-msgid ""
-"The operation on $(ARG1) cannot be performed because there is no more memory "
-"available."
-msgstr "$(ARG1) への操作は空き容量不足のため実行できません。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_PENDING___ERRCODE_RES_MASK_.string.text
-msgid "The operation on $(ARG1) cannot continue because more data is pending."
-msgstr "保留データがあるために、$(ARG1) への操作は続行できません。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_RECURSIVE___ERRCODE_RES_MASK_.string.text
-msgid "$(ARG1) cannot be copied into itself."
-msgstr "$(ARG1) をそれ自体にコピーすることはできません。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_UNKNOWN___ERRCODE_RES_MASK_.string.text
-msgid "Unknown input/output error while accessing $(ARG1)."
-msgstr "$(ARG1) へアクセスする際の不明な入力/出力のエラー。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_WRITEPROTECTED___ERRCODE_RES_MASK_.string.text
-msgid "$(ARG1) is write protected."
-msgstr "$(ARG1) は書き込み保護されています。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_WRONGFORMAT___ERRCODE_RES_MASK_.string.text
-msgid "$(ARG1) is not in the correct format."
-msgstr "$(ARG1) の書式が正しくありません。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_WRONGVERSION___ERRCODE_RES_MASK_.string.text
-msgid "The version of $(ARG1) is not correct."
-msgstr "$(ARG1) のバージョンが正しくありません。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTEXISTS_VOLUME___ERRCODE_RES_MASK_.string.text
-msgid "Drive $(ARG1) does not exist."
-msgstr "ドライブ $(ARG1) はありません。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTEXISTS_FOLDER___ERRCODE_RES_MASK_.string.text
-msgid "Folder $(ARG1) does not exist."
-msgstr "フォルダ $(ARG1) はありません。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_WRONGJAVA___ERRCODE_RES_MASK_.string.text
-msgid "The installed Java version is not supported."
-msgstr "インストールされているバージョン の Java はサポートされません。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_WRONGJAVA_VERSION___ERRCODE_RES_MASK_.string.text
-msgid "The installed Java version $(ARG1) is not supported."
-msgstr "インストールされているバージョン $(ARG1) の Java はサポートされません。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_WRONGJAVA_MIN___ERRCODE_RES_MASK_.string.text
-msgid ""
-"The installed Java version is not supported, at least version $(ARG1) is "
-"required."
-msgstr "インストールされているバージョンの Java はサポートされません。バージョン $(ARG1) 以上のものが必要です。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_WRONGJAVA_VERSION_MIN___ERRCODE_RES_MASK_.string.text
-msgid ""
-"The installed Java version $(ARG1) is not supported, at least version "
-"$(ARG2) is required."
-msgstr "インストールされているバージョン $(ARG1) の Java はサポートされません。バージョン $(ARG2) 以上が必要です。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_BADPARTNERSHIP___ERRCODE_RES_MASK_.string.text
-msgid "The data associated with the partnership is corrupted."
-msgstr "パートナシップに保存されたデータが破損しています。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_BADPARTNERSHIP_NAME___ERRCODE_RES_MASK_.string.text
-msgid "The data associated with the partnership $(ARG1) is corrupted."
-msgstr "パートナーシップ $(ARG1) に保存されたデータが破損しています。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTREADY_VOLUME___ERRCODE_RES_MASK_.string.text
-msgid "Volume $(ARG1) is not ready."
-msgstr "ドライブ $(ARG1) の準備ができていません。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTREADY_REMOVABLE___ERRCODE_RES_MASK_.string.text
-msgid "$(ARG1) is not ready; please insert a storage medium."
-msgstr "$(ARG1) の準備ができていません。記憶媒体を入れてください。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_NOTREADY_VOLUME_REMOVABLE___ERRCODE_RES_MASK_.string.text
-msgid "Volume $(ARG1) is not ready; please insert a storage medium."
-msgstr "ドライブ $(ARG1) の準備ができていません。記憶媒体を入れてください。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_WRONGMEDIUM___ERRCODE_RES_MASK_.string.text
-msgid "Please insert disk $(ARG1)."
-msgstr "ディスク $(ARG1) を入れてください。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_CANTCREATE_NONAME___ERRCODE_RES_MASK_.string.text
-msgid "The object cannot be created in directory $(ARG1)."
-msgstr "ディレクトリ $(ARG1) にオブジェクトを作成できません。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_UNSUPPORTEDOVERWRITE___ERRCODE_RES_MASK_.string.text
-msgid ""
-"%PRODUCTNAME cannot keep files from being overwritten when this transmission "
-"protocol is used. Do you want to continue anyway?"
-msgstr "この転送プロトコルを使用すると、%PRODUCTNAME ではファイルが上書きされることがあります。処理を続行しますか。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_BROKENPACKAGE___ERRCODE_RES_MASK_.string.text
-msgid ""
-"The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME "
-"can try to repair the file.\n"
-"\n"
-"The corruption could be the result of document manipulation or of structural "
-"document damage due to data transmission.\n"
-"\n"
-"We recommend that you do not trust the content of the repaired document.\n"
-"Execution of macros is disabled for this document.\n"
-"\n"
-"Should %PRODUCTNAME repair the file?\n"
-msgstr ""
-"ファイル '$(ARG1)' は汚染されているため、開くことができません。%PRODUCTNAME で修復を試してください。\n"
-"\n"
-"この汚染は、データ送信に伴う、ドキュメントの改ざんまたは構造的なドキュメントの損傷により引き起こされた可能性があります。\n"
-"\n"
-"修復されたドキュメントの内容は信用しないことを推奨します。\n"
-"このドキュメントのマクロの実行は無効化されます。\n"
-"\n"
-"%PRODUCTNAME で、ドキュメントの修復を試みますか?\n"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR___ERRCODE_RES_MASK_.string.text
-msgid ""
-"The file '$(ARG1)' could not be repaired and therefore cannot be opened."
-msgstr "ファイル '$(ARG1)' は修復できませんでした。開くことはできません。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE___ERRCODE_RES_MASK_.string.text
-msgid ""
-"Configuration data in '$(ARG1)' is corrupted. Without this data some "
-"functions may not operate correctly.\n"
-"Do you want to continue startup of %PRODUCTNAME without the corrupted "
-"configuration data?"
-msgstr ""
-"'$(ARG1)' 内の設定データが壊れています。このデータがないと、一部の機能が正常に動作しません。\n"
-"この壊れた設定データなしで %PRODUCTNAME のスタートアップを続行しますか。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE___ERRCODE_RES_MASK_.string.text
-msgid ""
-"The personal configuration file '$(ARG1)' is corrupted and must be deleted "
-"to continue. Some of your personal settings may be lost.\n"
-"Do you want to continue startup of %PRODUCTNAME without the corrupted "
-"configuration data?"
-msgstr ""
-"個人用設定ファイル '$(ARG1)' "
-"が壊れています。続行するには、このファイルを削除する必要があります。削除する場合、個人設定の一部が失われる可能性があります。\n"
-"この壊れた設定データなしで %PRODUCTNAME のスタートアップを続行しますか。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_CONFIGURATION_BACKENDMISSING___ERRCODE_RES_MASK_.string.text
-msgid ""
-"The configuration data source '$(ARG1)' is unavailable. Without this data "
-"some functions may not operate correctly."
-msgstr "設定データソース '$(ARG1)' を使用できません。このデータがないと、一部の機能が正常に動作しません。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER___ERRCODE_RES_MASK_.string.text
-msgid ""
-"The configuration data source '$(ARG1)' is unavailable. Without this data "
-"some functions may not operate correctly.\n"
-"Do you want to continue startup of %PRODUCTNAME without the missing "
-"configuration data?"
-msgstr ""
-"設定データソース '$(ARG1)' を使用できません。このデータがないと、一部の機能が正常に動作しません。\n"
-"この設定データなしで %PRODUCTNAME のスタートアップを続行しますか。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA___ERRCODE_RES_MASK_.string.text
-msgid "The form contains invalid data. Do you still want to continue?"
-msgstr "フォームには無効なデータが含まれています。それでも続行しますか。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_LOCKING_LOCKED___ERRCODE_RES_MASK_.string.text
-msgid ""
-"The file $(ARG1) is locked by another user. Currently, another write access "
-"to this file cannot be granted."
-msgstr "ファイル $(ARG1) は他のユーザーが使用中のためロックされています。書き込みアクセスは現在できません。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_LOCKING_LOCKED_SELF___ERRCODE_RES_MASK_.string.text
-msgid ""
-"The file $(ARG1) is locked by yourself. Currently, another write access to "
-"this file cannot be granted."
-msgstr "ファイル $(ARG1) はロックして使用中です。書き込みアクセスは現在できません。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_LOCKING_NOT_LOCKED___ERRCODE_RES_MASK_.string.text
-msgid "The file $(ARG1) is currently not locked by yourself."
-msgstr "ファイル $(ARG1) に、このプログラムからのロックはされていません。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_LOCKING_LOCK_EXPIRED___ERRCODE_RES_MASK_.string.text
-msgid ""
-"The previously obtained lock for file $(ARG1) has expired.\n"
-"This can happen due to problems on the server managing the file lock. It "
-"cannot be guaranteed that write operations on this file will not overwrite "
-"changes done by other users!"
-msgstr ""
-"ファイル  $(ARG1) のロックは有効期限を過ぎています。\n"
-"ファイルのロックを管理しているサーバーに問題があるかも知れません。このファイルへ書き込むと他のユーザーが修正した内容を上書きする可能性があります。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_UNKNOWNAUTH_UNTRUSTED_.string.text
-msgid ""
-"Unable to verify the identity of $(ARG1) site.\n"
-"\n"
-"Before accepting this certificate, you should examine this site's "
-"certificate carefully. Are you willing to accept this certificate for the "
-"purpose of identifying the Web site $(ARG1)?"
-msgstr ""
-"$(ARG1) サイトの ID を確認できません。\n"
-"\n"
-"この証明書を受け入れる前に、このサイトの証明書を慎重に調べるようにしてください。 Web サイト $(ARG1) "
-"を識別するために、この証明書を受け入れますか ?"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_SSLWARN_EXPIRED_1_.string.text
-msgid ""
-"$(ARG1) is a site that uses a security certificate to encrypt data during "
-"transmission, but its certificate expired on $(ARG2).\n"
-"\n"
-"You should check to make sure that your computer's time is correct."
-msgstr ""
-"$(ARG1) は、転送中にデータを暗号化するためにセキュリティー証明書を使用するサイトですが、$(ARG2) 上で証明書の有効期限が切れました。\n"
-"\n"
-"コンピュータの時間が正しいことを確認してください。"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_SSLWARN_DOMAINMISMATCH_1_.string.text
-msgid ""
-"You have attempted to establish a connection with $(ARG1). However, the "
-"security certificate presented belongs to $(ARG2). It is possible, though "
-"unlikely, that someone may be trying to intercept your communication with "
-"this web site.\n"
-"\n"
-"If you suspect the certificate shown does not belong to $(ARG1), please "
-"cancel the connection and notify the site administrator.\n"
-"\n"
-"Would you like to continue anyway?"
-msgstr ""
-"$(ARG1) との接続を確立しようとしましたが、提示されたセキュリティー証明書は $(ARG2) に属しています。 だれかがこの Web "
-"サイトとの通信を妨害しようとしている可能性がわずかですがあります。\n"
-"\n"
-"表示された証明書が $(ARG1) に属していないことが疑われる場合は、接続を中断して、サイト管理者に知らせてください。\n"
-"\n"
-"それでも続行しますか ?"
-
-#: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_SSLWARN_INVALID_1_.string.text
-msgid ""
-"The certificate could not be validated. You should examine this site's "
-"certificate carefully.\n"
-"\n"
-"If you suspect the certificate shown, please cancel the connection and "
-"notify the site administrator."
-msgstr ""
-"証明書を検証できませんでした。 このサイトの証明書を慎重に調べるようにしてください。\n"
-"\n"
-"表示された証明書が疑わしい場合は、接続を中断して、サイト管理者に知らせてください。"
-
-#: ids.src#RID_UUI_ERRHDL._TITLE_UUI_SSLWARN_DOMAINMISMATCH_.string.text
-msgid "Security Warning: Domain Name Mismatch"
-msgstr "セキュリティー警告: ドメイン名が一致しません"
-
-#: ids.src#RID_UUI_ERRHDL._TITLE_UUI_SSLWARN_EXPIRED_.string.text
-msgid "Security Warning: Server Certificate Expired"
-msgstr "セキュリティー警告: サーバー証明書の有効期限が切れています"
-
-#: ids.src#RID_UUI_ERRHDL._TITLE_UUI_SSLWARN_INVALID_.string.text
-msgid "Security Warning: Server Certificate Invalid"
-msgstr "セキュリティー警告: サーバー証明書が無効です"
-
-#: lockfailed.src#STR_LOCKFAILED_MSG.string.text
-msgid ""
-"The file could not be locked for exclusive access by %PRODUCTNAME, due to "
-"missing permission to create a lock file on that file location."
-msgstr "%PRODUCTNAME は、ファイルがある場所にロックファイルを生成する権利がないため、ファイルを排他的アクセス用にロックできませんでした。"
-
-#: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_ERROR.fixedtext.text
-msgid "Message from server:"
-msgstr "サーバーからのメッセージ"
-
-#: logindlg.src#DLG_UUI_LOGIN.FT_INFO_LOGIN_REQUEST.fixedtext.text
-msgid ""
-"Enter user name and password for: \n"
-"%1"
-msgstr ""
-"次の場所に使うユーザー名とパスワードを入力してください: \n"
-"%1"
-
-#: logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.string.text
-msgid ""
-"Enter user name and password for: \n"
-"\"%2\" on %1"
-msgstr ""
-"次の場所に使うユーザー名とパスワードを入力してください: \n"
-"%1 の \"%2\" "
-
-#: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.fixedtext.text
-msgid "~Path"
-msgstr "パス(~P)"
-
-#: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_USERNAME.fixedtext.text
-msgid "~User name"
-msgstr "ユーザー名(~U)"
-
-#: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PASSWORD.fixedtext.text
-msgid "Pass~word"
-msgstr "パスワード(~W)"
-
-#: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_ACCOUNT.fixedtext.text
-msgid "A~ccount"
-msgstr "アカウント(~C)"
-
-#: logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_SAVEPASSWORD.checkbox.text
-msgctxt "logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_SAVEPASSWORD.checkbox.text"
-msgid "~Remember password"
-msgstr "パスワードを記憶(~R)"
-
-#: logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_USESYSCREDS.checkbox.text
-msgid "~Use system credentials"
-msgstr "システムの証明書を使う(~U)"
-
-#: logindlg.src#DLG_UUI_LOGIN.modaldialog.text
-msgid "Authentication Required"
-msgstr "認証が必要"
-
-#: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_INFOTEXT.fixedtext.text
-msgid ""
-"Passwords for web connections are protected by a master password. You will "
-"be asked to enter it once per session, if %PRODUCTNAME retrieves a password "
-"from the protected password list."
-msgstr ""
-"Web 接続用のパスワードはマスターパスワードによって保護されています。%PRODUCTNAME "
-"が保護されたパスワードリストからパスワードを取得する場合、セッションごとにパスターパスワードを入力するよう求められます。"
-
-#: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_CRT.fixedtext.text
-msgid "~Enter password"
-msgstr "パスワードの入力(~E)"
-
-#: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_REPEAT.fixedtext.text
-msgid "~Reenter password"
-msgstr "パスワードの再入力(~R)"
-
-#: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_CAUTIONTEXT.fixedtext.text
-msgid ""
-"Caution: If you forget the master password, you will be unable to access any "
-"of the information protected by it. Passwords are case-sensitive."
-msgstr ""
-"注意: マスターパスワードを忘れた場合、マスターパスワードで保護されたすべての情報にアクセスできなくなります。パスワードは大文字と小文字が区別されます。"
-
-#: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.modaldialog.text
-msgid "Set Master Password"
-msgstr "マスターパスワードの設定"
-
-#: masterpassworddlg.src#DLG_UUI_MASTERPASSWORD.FT_MASTERPASSWORD.fixedtext.text
-msgid "Enter password"
-msgstr "パスワードの入力"
-
-#: masterpassworddlg.src#DLG_UUI_MASTERPASSWORD.modaldialog.text
-msgid "Enter Master Password"
-msgstr "マスターパスワードの入力"
-
-#: nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.BTN_OVERWRITE.pushbutton.text
-msgid "Replace"
-msgstr "置換"
-
-#: nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.BTN_RENAME.pushbutton.text
-msgid "Rename"
-msgstr "名前変更"
-
-#: nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.modaldialog.text
-msgid "File Exists"
-msgstr "同名ファイルが存在します"
-
-#: newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.fixedtext.text
-msgid ""
-"This document was created by a newer version of %PRODUCTNAME. It may contain "
-"features not supported by your current version.\n"
-"\n"
-"Click 'Update Now...' to run online update and get the latest version of %"
-"PRODUCTNAME."
-msgstr ""
-"このドキュメントは、新しいバージョンの %PRODUCTNAME "
-"で作成されました。このドキュメントには、現在のバージョンでサポートされていない機能が含まれている可能性があります。\n"
-"「今すぐ更新...」をクリックしてオンライン更新を実行して最新バージョンの %PRODUCTNAME を入手してください。"
-
-#: newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.pushbutton.text
-msgid "~Update Now..."
-msgstr "今すぐ更新(~U)..."
-
-#: newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_LATER.cancelbutton.text
-msgid "~Later"
-msgstr "あとで更新(~L)"
-
-#: newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.modaldialog.text
-msgid "%PRODUCTNAME Update Available"
-msgstr "%PRODUCTNAME の更新が入手可能"
-
-#: openlocked.src#STR_OPENLOCKED_TITLE.string.text
-msgctxt "openlocked.src#STR_OPENLOCKED_TITLE.string.text"
-msgid "Document in Use"
-msgstr "ドキュメントは使用中です"
-
-#: openlocked.src#STR_OPENLOCKED_MSG.string.text
-msgid ""
-"Document file '$(ARG1)' is locked for editing by:\n"
-"\n"
-"$(ARG2)\n"
-"\n"
-"Open document read-only or open a copy of the document for editing.\n"
-"\n"
-msgstr ""
-"ドキュメントファイル '$(ARG1)' は次の人が編集中のためロックされています:\n"
-"\n"
-"$(ARG2)\n"
-"\n"
-"読み取り専用で開くか、ドキュメントのコピーを開いて編集してください。\n"
-"\n"
-
-#: openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.string.text
-msgctxt "openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.string.text"
-msgid "Open ~Read-Only"
-msgstr "読み取り専用で開く(~R)"
-
-#: openlocked.src#STR_OPENLOCKED_OPENCOPY_BTN.string.text
-msgid "Open ~Copy"
-msgstr "コピーを開く(~C)"
-
-#: openlocked.src#STR_UNKNOWNUSER.string.text
-msgid "Unknown User"
-msgstr "不明なユーザー"
-
-#: passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_OPEN.string.text
-msgid "Enter password to open file: \n"
-msgstr "ファイルを開くためのパスワードを入力してください: \n"
-
-#: passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_MODIFY.string.text
-msgid "Enter password to modify file: \n"
-msgstr "ファイルを変更するためのパスワードを入力してください: "
-
-#: passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_SIMPLE_PASSWORD.string.text
-msgid "Enter password: "
-msgstr "パスワードの入力:"
-
-#: passworddlg.src#DLG_UUI_PASSWORD.STR_CONFIRM_SIMPLE_PASSWORD.string.text
-msgid "Confirm password: "
-msgstr "パスワードの確認:"
-
-#: passworddlg.src#DLG_UUI_PASSWORD.STR_TITLE_CREATE_PASSWORD.string.text
-msgid "Set Password"
-msgstr "パスワード設定"
-
-#: passworddlg.src#DLG_UUI_PASSWORD.STR_TITLE_ENTER_PASSWORD.string.text
-msgid "Enter Password"
-msgstr "パスワードの入力"
-
-#: passworddlg.src#DLG_UUI_PASSWORD.STR_PASSWORD_MISMATCH.string.text
-msgid ""
-"The confirmation password did not match the password. Set the password again "
-"by entering the same password in both boxes."
-msgstr "確認用パスワードが入力したパスワードと一致しませんでした。入力欄の両方に再度同じパスワードを入力してパスワードを設定してください。"
-
-#: passworderrs.src#STR_ERROR_PASSWORD_TO_OPEN_WRONG.string.text
-msgid "The password is incorrect. The file cannot be opened."
-msgstr "パスワードが正しくありません。ドキュメントを開けません。"
-
-#: passworderrs.src#STR_ERROR_PASSWORD_TO_MODIFY_WRONG.string.text
-msgid "The password is incorrect. The file cannot be modified."
-msgstr "パスワードが正しくありません。ドキュメントは変更できません。"
-
-#: passworderrs.src#STR_ERROR_MASTERPASSWORD_WRONG.string.text
-msgid "The master password is incorrect."
-msgstr "マスターパスワードが正しくありません。"
-
-#: passworderrs.src#STR_ERROR_SIMPLE_PASSWORD_WRONG.string.text
-msgid "The password is incorrect."
-msgstr "パスワードが正しくありません。"
-
-#: passworderrs.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.string.text
-msgid "The password confirmation does not match."
-msgstr "パスワードが一致しません。"
-
-#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR1A.fixedtext.text
-msgid "The document contains document macros signed by:"
-msgstr "このドキュメントに含まれるドキュメントマクロの署名元:"
-
-#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR1B.fixedtext.text
-msgid "The document contains document macros."
-msgstr "ドキュメントマクロを含むドキュメントです。"
-
-#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_VIEWSIGNS.pushbutton.text
-msgid "View Signatures..."
-msgstr "署名を表示..."
-
-#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR2.fixedtext.text
-msgid ""
-"Macros may contain viruses. Disabling macros for a document is always safe. "
-"If you disable macros you may lose functionality provided by the document "
-"macros."
-msgstr ""
-"マクロには、ウィルスが含まれていることがあります。安全のためには、ドキュメントのマクロを無効にすることをお勧めします。ただし、マクロを無効にすると、ドキ"
-"ュメントマクロの機能を使用できなくなります。"
-
-#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.CB_ALWAYSTRUST.checkbox.text
-msgid "Always trust macros from this source"
-msgstr "常にこのソースのマクロを信頼"
-
-#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_ENABLE.okbutton.text
-msgid "~Enable Macros"
-msgstr "マクロの有効化(~E)"
-
-#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_DISABLE.cancelbutton.text
-msgid "~Disable Macros"
-msgstr "マクロの無効化(~D)"
-
-#: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.modaldialog.text
-msgid "%PRODUCTNAME - Security Warning"
-msgstr "セキュリティ警告"
-
-#: sslwarndlg.src#DLG_UUI_SSLWARN.FT_LABEL_1.fixedtext.text
-msgctxt "sslwarndlg.src#DLG_UUI_SSLWARN.FT_LABEL_1.fixedtext.text"
-msgid "No Text"
-msgstr "テキストなし"
-
-#: sslwarndlg.src#DLG_UUI_SSLWARN.PB_VIEW__CERTIFICATE.pushbutton.text
-msgid "View Certificate"
-msgstr "証明書の表示"
-
-#: sslwarndlg.src#DLG_UUI_SSLWARN.PB_CANCEL.cancelbutton.text
-msgid "Cancel Connection"
-msgstr "接続のキャンセル"
-
-#: sslwarndlg.src#DLG_UUI_SSLWARN.PB_OK.pushbutton.text
-msgid "Continue"
-msgstr "続行"
-
-#: sslwarndlg.src#DLG_UUI_SSLWARN.modaldialog.text
-msgid "Security Warning: "
-msgstr "セキュリティー警告: "
-
-#: trylater.src#STR_TRYLATER_TITLE.string.text
-msgctxt "trylater.src#STR_TRYLATER_TITLE.string.text"
-msgid "Document in Use"
-msgstr "ドキュメントは使用中です"
-
-#: trylater.src#STR_TRYLATER_MSG.string.text
-msgid ""
-"Document file '$(ARG1)' is locked for editing by:\n"
-"\n"
-"$(ARG2)\n"
-"\n"
-"Try again later to save document or save a copy of that document.\n"
-"\n"
-msgstr ""
-"ドキュメントファイル '$(ARG1)' は次の人が編集中のためロックされています:\n"
-"\n"
-"$(ARG2)\n"
-"\n"
-"ドキュメントを後でもう一度保存するか、ドキュメントのコピーを保存してください。\n"
-"\n"
-
-#: trylater.src#STR_TRYLATER_RETRYSAVING_BTN.string.text
-msgctxt "trylater.src#STR_TRYLATER_RETRYSAVING_BTN.string.text"
-msgid "~Retry Saving"
-msgstr "保存の再試行(~R)"
-
-#: trylater.src#STR_TRYLATER_SAVEAS_BTN.string.text
-msgid "~Save As..."
-msgstr "名前を付けて保存(~S)"
-
-#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_VIEW__CERTIFICATE.pushbutton.text
-msgid "Examine Certificate..."
-msgstr "証明書の確認..."
-
-#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_HELP.helpbutton.text
-msgid "Help"
-msgstr "ヘルプ"
-
-#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_OK.pushbutton.text
-msgid "OK"
-msgstr "OK"
-
-#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.RB_ACCEPT_1.radiobutton.text
-msgid "Accept this certificate temporarily for this session"
-msgstr "この証明書をこのセッションに限り一時的に受け入れる"
-
-#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.RB_DONTACCEPT_2.radiobutton.text
-msgid "Do not accept this certificate and do not connect to this Web site"
-msgstr "この証明書を受け入れず、この Web サイトに接続しない"
-
-#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.FT_LABEL_1.fixedtext.text
-msgctxt "unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.FT_LABEL_1.fixedtext.text"
-msgid "No Text"
-msgstr "テキストなし"
-
-#: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.modaldialog.text
-msgid "Website Certified by an Unknown Authority"
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.ModalDialog.Text
+msgid  "Website Certified by an Unknown Authority"
 msgstr "不明な認証局により証明された Web サイト"
 
-#~ msgid "Reenter password"
-#~ msgstr "パスワードの再入力"
+#: source/unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_VIEW__CERTIFICATE.PushButton.Text
+msgid  "Examine Certificate..."
+msgstr "証明書の確認..."
 
-#~ msgid ""
-#~ "WARNING: If you lose or forget the password, it cannot be recovered. It is "
-#~ "advisable to keep passwords in a safe place. Passwords are case-sensitive."
-#~ msgstr ""
-#~ "警告: パスワードを失ったり忘れたりした場合には回復処理ができません。パスワードを安全な場所に保管することをお勧めします。パスワードは、大文字と小文字を"
-#~ "区別します。"
+#: source/unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_HELP.HelpButton.Text
+msgid  "Help"
+msgstr "ヘルプ"
 
-#~ msgid ""
-#~ "WARNING: If you lose or forget the password, it cannot be recovered. It is "
-#~ "advisable to keep passwords in a safe place. Passwords are case-sensitive "
-#~ "and at most fifteen characters long."
-#~ msgstr ""
-#~ "警告: パスワードを失ったり忘れたりした場合には回復処理ができません。パスワードを安全な場所に保管することをお勧めします。パスワードは、大文字と小文字を"
-#~ "区別し、最大 15 文字で設定します。"
+#: source/unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_OK.PushButton.Text
+msgid  "OK"
+msgstr "OK"
 
-#~ msgid ""
-#~ "The wrong Master Password has been entered. %PRODUCTNAME could not access "
-#~ "web login information protected by Master Password.\n"
-#~ "\n"
-#~ "Note: Passwords are case-sensitive and at least five characters long."
-#~ msgstr ""
-#~ "間違ったマスターパスワードが入力されました。%PRODUCTNAME はマスターパスワードに保護された Web ログイン情報にアクセスできませんでした。\n"
-#~ "\n"
-#~ "注意: パスワードは、大文字と小文字を含む 5 文字以上で設定します。"
+#: source/unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.RB_ACCEPT_1.RadioButton.Text
+msgid  "Accept this certificate temporarily for this session"
+msgstr "この証明書をこのセッションに限り一時的に受け入れる"
 
-#~ msgid ""
-#~ "Caution: Make sure you remember the Master Password you have set. If you "
-#~ "forget your Master Password, you will be unable to access any of the "
-#~ "information protected by it. Passwords are case-sensitive and at least five "
-#~ "characters long."
-#~ msgstr ""
-#~ "注意: 設定したマスターパスワードを覚えておいてください。忘れた場合、マスターパスワードによって保護されたいずれの情報にもアクセスすることができなくなり"
-#~ "ます。パスワードは、大文字と小文字を含む 5 文字以上で設定します。"
+#: source/unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.RB_DONTACCEPT_2.RadioButton.Text
+msgid  "Do not accept this certificate and do not connect to this Web site"
+msgstr "この証明書を受け入れず、この Web サイトに接続しない"
+
+#: source/unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.FT_LABEL_1.FixedText.Text
+msgid  "No Text"
+msgstr "テキストなし"
+
+#: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_OPEN.String.Text
+msgid  "Enter password to open file: \n"
+msgstr "ファイルを開くためのパスワードを入力してください: \n"
+
+#: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_MODIFY.String.Text
+msgid  "Enter password to modify file: \n"
+msgstr "ファイルを変更するためのパスワードを入力してください: "
+
+#: source/passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_SIMPLE_PASSWORD.String.Text
+msgid  "Enter password: "
+msgstr "パスワードの入力:"
+
+#: source/passworddlg.src#DLG_UUI_PASSWORD.STR_CONFIRM_SIMPLE_PASSWORD.String.Text
+msgid  "Confirm password: "
+msgstr "パスワードの確認:"
+
+#: source/passworddlg.src#DLG_UUI_PASSWORD.STR_TITLE_CREATE_PASSWORD.String.Text
+msgid  "Set Password"
+msgstr "パスワード設定"
+
+#: source/passworddlg.src#DLG_UUI_PASSWORD.STR_TITLE_ENTER_PASSWORD.String.Text
+msgid  "Enter Password"
+msgstr "パスワードの入力"
+
+#: source/passworddlg.src#DLG_UUI_PASSWORD.STR_PASSWORD_MISMATCH.String.Text
+msgid  "The confirmation password did not match the password. Set the password again by entering the same password in both boxes."
+msgstr ""
+
+#: source/trylater.src#STR_TRYLATER_TITLE.String.Text
+msgid  "Document in Use"
+msgstr "ドキュメントは使用中です"
+
+#: source/trylater.src#STR_TRYLATER_MSG.String.Text
+msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nTry again later to save document or save a copy of that document.\n\n"
+msgstr ""
+
+#: source/trylater.src#STR_TRYLATER_RETRYSAVING_BTN.String.Text
+msgid  "~Retry Saving"
+msgstr "保存の再試行(~R)"
+
+#: source/trylater.src#STR_TRYLATER_SAVEAS_BTN.String.Text
+msgid  "~Save As..."
+msgstr "名前を付けて保存(~S)"
+
+#: source/ids.src#RID_KEEP_PASSWORD.String.Text
+msgid  "~Remember password until end of session"
+msgstr "セッション終了時までパスワードを記憶(~R)"
+
+#: source/ids.src#RID_SAVE_PASSWORD.String.Text
+msgid  "~Remember password"
+msgstr "パスワードを記憶(~R)"
+
+#: source/ids.src#STR_WARNING_BROKENSIGNATURE_TITLE.String.Text
+msgid  "Invalid Document Signature"
+msgstr "ドキュメントの署名が無効"
+
+#: source/ids.src#STR_WARNING_INCOMPLETE_ENCRYPTION_TITLE.String.Text
+msgid  "Non-Encrypted Streams"
+msgstr "暗号化されていないストリーム"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ABORT & ERRCODE_RES_MASK).String.Text
+msgid  "The operation executed on $(ARG1) was aborted."
+msgstr "$(ARG1) で実行した操作は中止されました。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ACCESSDENIED & ERRCODE_RES_MASK).String.Text
+msgid  "Access to $(ARG1) was denied."
+msgstr "$(ARG1) へのアクセスは拒否されました。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ALREADYEXISTS & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) already exists."
+msgstr "$(ARG1) はすでにあります。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TARGETALREADYEXISTS & ERRCODE_RES_MASK).String.Text
+msgid  "Target already exists."
+msgstr "ターゲットがすでに存在します。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MODULESIZEEXCEEDED & ERRCODE_RES_MASK).String.Text
+msgid  "You are about to save/export a password protected basic library containing module(s) \n$(ARG1)\nwhich are too large to store in binary format. If you wish users that don't have access to the library password to be able to run macros in those module(s) you must split those modules into a number of smaller modules. Do you wish to continue to save/export this library?"
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BADCRC & ERRCODE_RES_MASK).String.Text
+msgid  "The data from $(ARG1) has an incorrect checksum."
+msgstr "$(ARG1) のデータはチェックサムが正しくありません。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTCREATE & ERRCODE_RES_MASK).String.Text
+msgid  "The object $(ARG1) cannot be created in directory $(ARG2)."
+msgstr "オブジェクト $(ARG1) はディレクトリ $(ARG2) に作成できません。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTREAD & ERRCODE_RES_MASK).String.Text
+msgid  "Data of $(ARG1) could not be read."
+msgstr "$(ARG1) のデータは読み取れませんでした。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTSEEK & ERRCODE_RES_MASK).String.Text
+msgid  "The seek operation on $(ARG1) could not be performed."
+msgstr "$(ARG1) への seek 操作は実行できませんでした。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTTELL & ERRCODE_RES_MASK).String.Text
+msgid  "The tell operation on $(ARG1) could not be performed."
+msgstr "$(ARG1) への tell 操作は実行できませんでした。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTWRITE & ERRCODE_RES_MASK).String.Text
+msgid  "Data for $(ARG1) could not be written."
+msgstr "$(ARG1) のデータは書き込みできませんでした。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CURRENTDIR & ERRCODE_RES_MASK).String.Text
+msgid  "Action impossible: $(ARG1) is the current directory."
+msgstr "実行できません: $(ARG1) は現在のディレクトリです。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) is not ready."
+msgstr "$(ARG1) の準備ができていません。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSAMEDEVICE & ERRCODE_RES_MASK).String.Text
+msgid  "Action impossible: $(ARG1) and $(ARG2) are different devices (drives)."
+msgstr "実行できません: $(ARG1) と $(ARG2) は異なったデバイス (ドライブ) です。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_GENERAL & ERRCODE_RES_MASK).String.Text
+msgid  "General input/output error while accessing $(ARG1)."
+msgstr "$(ARG1) へアクセスする際の一般的な入力/出力のエラー。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDACCESS & ERRCODE_RES_MASK).String.Text
+msgid  "An attempt was made to access $(ARG1) in an invalid way."
+msgstr "$(ARG1) への無効なアクセスが試みられました。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDCHAR & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) contains invalid characters."
+msgstr "$(ARG1) に無効な文字が含まれています。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDDEVICE & ERRCODE_RES_MASK).String.Text
+msgid  "The device (drive) $(ARG1) is invalid."
+msgstr "デバイス (ドライブ) $(ARG1) は無効です。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDLENGTH & ERRCODE_RES_MASK).String.Text
+msgid  "The data from $(ARG1) has an invalid length."
+msgstr "$(ARG1) のデータの文字列の長さは無効です。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_INVALIDPARAMETER & ERRCODE_RES_MASK).String.Text
+msgid  "The operation on $(ARG1) was started with an invalid parameter."
+msgstr "$(ARG1) への操作実行は無効なパラメータで開始されました。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_ISWILDCARD & ERRCODE_RES_MASK).String.Text
+msgid  "The operation cannot be performed because $(ARG1) contains wildcards."
+msgstr "$(ARG1) にワイルドカードが含まれているため、操作は実行できません。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_LOCKVIOLATION & ERRCODE_RES_MASK).String.Text
+msgid  "Error during shared access to $(ARG1)."
+msgstr "$(ARG1) への共有アクセスの際のエラー。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_MISPLACEDCHAR & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) contains misplaced characters."
+msgstr "$(ARG1) には間違った位置に文字が含まれています。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NAMETOOLONG & ERRCODE_RES_MASK).String.Text
+msgid  "The name $(ARG1) contains too many characters."
+msgstr "名前 $(ARG1) に含まれている文字数が多すぎます。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) does not exist."
+msgstr "$(ARG1) はありません。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTSPATH & ERRCODE_RES_MASK).String.Text
+msgid  "The path $(ARG1) does not exist."
+msgstr "パス $(ARG1) はありません。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTSUPPORTED & ERRCODE_RES_MASK).String.Text
+msgid  "The operation on $(ARG1) is not supported on this operating system."
+msgstr "$(ARG1) への操作はこのオペレーティングシステムではサポートされません。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTADIRECTORY & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) is not a directory."
+msgstr "$(ARG1) はディレクトリではありません。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTAFILE & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) is not a file."
+msgstr "$(ARG1) はファイルではありません。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFSPACE & ERRCODE_RES_MASK).String.Text
+msgid  "There is no space left on device $(ARG1)."
+msgstr "デバイス $(ARG1) には空き容量はありません。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_TOOMANYOPENFILES & ERRCODE_RES_MASK).String.Text
+msgid  "The operation on $(ARG1) cannot be performed because too many files are already open."
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_OUTOFMEMORY & ERRCODE_RES_MASK).String.Text
+msgid  "The operation on $(ARG1) cannot be performed because there is no more memory available."
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_PENDING & ERRCODE_RES_MASK).String.Text
+msgid  "The operation on $(ARG1) cannot continue because more data is pending."
+msgstr "保留データがあるために、$(ARG1) への操作は続行できません。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_RECURSIVE & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) cannot be copied into itself."
+msgstr "$(ARG1) をそれ自体にコピーすることはできません。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNKNOWN & ERRCODE_RES_MASK).String.Text
+msgid  "Unknown input/output error while accessing $(ARG1)."
+msgstr "$(ARG1) へアクセスする際の不明な入力/出力のエラー。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRITEPROTECTED & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) is write protected."
+msgstr "$(ARG1) は書き込み保護されています。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRONGFORMAT & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) is not in the correct format."
+msgstr "$(ARG1) の書式が正しくありません。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_WRONGVERSION & ERRCODE_RES_MASK).String.Text
+msgid  "The version of $(ARG1) is not correct."
+msgstr "$(ARG1) のバージョンが正しくありません。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS_VOLUME & ERRCODE_RES_MASK).String.Text
+msgid  "Drive $(ARG1) does not exist."
+msgstr "ドライブ $(ARG1) はありません。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTEXISTS_FOLDER & ERRCODE_RES_MASK).String.Text
+msgid  "Folder $(ARG1) does not exist."
+msgstr "フォルダ $(ARG1) はありません。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA & ERRCODE_RES_MASK).String.Text
+msgid  "The installed Java version is not supported."
+msgstr "インストールされているバージョン の Java はサポートされません。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION & ERRCODE_RES_MASK).String.Text
+msgid  "The installed Java version $(ARG1) is not supported."
+msgstr "インストールされているバージョン $(ARG1) の Java はサポートされません。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_MIN & ERRCODE_RES_MASK).String.Text
+msgid  "The installed Java version is not supported, at least version $(ARG1) is required."
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGJAVA_VERSION_MIN & ERRCODE_RES_MASK).String.Text
+msgid  "The installed Java version $(ARG1) is not supported, at least version $(ARG2) is required."
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP & ERRCODE_RES_MASK).String.Text
+msgid  "The data associated with the partnership is corrupted."
+msgstr "パートナシップに保存されたデータが破損しています。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_BADPARTNERSHIP_NAME & ERRCODE_RES_MASK).String.Text
+msgid  "The data associated with the partnership $(ARG1) is corrupted."
+msgstr "パートナーシップ $(ARG1) に保存されたデータが破損しています。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_VOLUME & ERRCODE_RES_MASK).String.Text
+msgid  "Volume $(ARG1) is not ready."
+msgstr "ドライブ $(ARG1) の準備ができていません。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_REMOVABLE & ERRCODE_RES_MASK).String.Text
+msgid  "$(ARG1) is not ready; please insert a storage medium."
+msgstr "$(ARG1) の準備ができていません。記憶媒体を入れてください。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_NOTREADY_VOLUME_REMOVABLE & ERRCODE_RES_MASK).String.Text
+msgid  "Volume $(ARG1) is not ready; please insert a storage medium."
+msgstr "ドライブ $(ARG1) の準備ができていません。記憶媒体を入れてください。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_WRONGMEDIUM & ERRCODE_RES_MASK).String.Text
+msgid  "Please insert disk $(ARG1)."
+msgstr "ディスク $(ARG1) を入れてください。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_CANTCREATE_NONAME & ERRCODE_RES_MASK).String.Text
+msgid  "The object cannot be created in directory $(ARG1)."
+msgstr "ディレクトリ $(ARG1) にオブジェクトを作成できません。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_UNSUPPORTEDOVERWRITE & ERRCODE_RES_MASK).String.Text
+msgid  "%PRODUCTNAME cannot keep files from being overwritten when this transmission protocol is used. Do you want to continue anyway?"
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE & ERRCODE_RES_MASK).String.Text
+msgid  "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\n\nThe corruption could be the result of document manipulation or of structural document damage due to data transmission.\n\nWe recommend that you do not trust the content of the repaired document.\nExecution of macros is disabled for this document.\n\nShould %PRODUCTNAME repair the file?\n"
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_IO_BROKENPACKAGE_CANTREPAIR & ERRCODE_RES_MASK).String.Text
+msgid  "The file '$(ARG1)' could not be repaired and therefore cannot be opened."
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_NOREMOVE & ERRCODE_RES_MASK).String.Text
+msgid  "Configuration data in '$(ARG1)' is corrupted. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BROKENDATA_WITHREMOVE & ERRCODE_RES_MASK).String.Text
+msgid  "The personal configuration file '$(ARG1)' is corrupted and must be deleted to continue. Some of your personal settings may be lost.\nDo you want to continue startup of %PRODUCTNAME without the corrupted configuration data?"
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING & ERRCODE_RES_MASK).String.Text
+msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly."
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_CONFIGURATION_BACKENDMISSING_WITHRECOVER & ERRCODE_RES_MASK).String.Text
+msgid  "The configuration data source '$(ARG1)' is unavailable. Without this data some functions may not operate correctly.\nDo you want to continue startup of %PRODUCTNAME without the missing configuration data?"
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_INVALID_XFORMS_SUBMISSION_DATA & ERRCODE_RES_MASK).STRING.Text
+msgid  "The form contains invalid data. Do you still want to continue?"
+msgstr "フォームには無効なデータが含まれています。それでも続行しますか。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCKED & ERRCODE_RES_MASK).String.Text
+msgid  "The file $(ARG1) is locked by another user. Currently, another write access to this file cannot be granted."
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCKED_SELF & ERRCODE_RES_MASK).String.Text
+msgid  "The file $(ARG1) is locked by yourself. Currently, another write access to this file cannot be granted."
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_NOT_LOCKED & ERRCODE_RES_MASK).String.Text
+msgid  "The file $(ARG1) is currently not locked by yourself."
+msgstr "ファイル $(ARG1) に、このプログラムからのロックはされていません。"
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_LOCKING_LOCK_EXPIRED & ERRCODE_RES_MASK).String.Text
+msgid  "The previously obtained lock for file $(ARG1) has expired.\nThis can happen due to problems on the server managing the file lock. It cannot be guaranteed that write operations on this file will not overwrite changes done by other users!"
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_UNKNOWNAUTH_UNTRUSTED).STRING.Text
+msgid  "Unable to verify the identity of $(ARG1) site.\n\nBefore accepting this certificate, you should examine this site's certificate carefully. Are you willing to accept this certificate for the purpose of identifying the Web site $(ARG1)?"
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_EXPIRED_1).STRING.Text
+msgid  "$(ARG1) is a site that uses a security certificate to encrypt data during transmission, but its certificate expired on $(ARG2).\n\nYou should check to make sure that your computer's time is correct."
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_DOMAINMISMATCH_1).STRING.Text
+msgid  "You have attempted to establish a connection with $(ARG1). However, the security certificate presented belongs to $(ARG2). It is possible, though unlikely, that someone may be trying to intercept your communication with this web site.\n\nIf you suspect the certificate shown does not belong to $(ARG1), please cancel the connection and notify the site administrator.\n\nWould you like to continue anyway?"
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(ERRCODE_UUI_SSLWARN_INVALID_1).STRING.Text
+msgid  "The certificate could not be validated. You should examine this site's certificate carefully.\n\nIf you suspect the certificate shown, please cancel the connection and notify the site administrator."
+msgstr ""
+
+#: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_DOMAINMISMATCH).STRING.Text
+msgid  "Security Warning: Domain Name Mismatch"
+msgstr "セキュリティー警告: ドメイン名が一致しません"
+
+#: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_EXPIRED).STRING.Text
+msgid  "Security Warning: Server Certificate Expired"
+msgstr "セキュリティー警告: サーバー証明書の有効期限が切れています"
+
+#: source/ids.src#RID_UUI_ERRHDL.(TITLE_UUI_SSLWARN_INVALID).STRING.Text
+msgid  "Security Warning: Server Certificate Invalid"
+msgstr "セキュリティー警告: サーバー証明書が無効です"
+
+#: source/fltdlg.src#DLG_FILTER_SELECT.ModalDialog.Text
+msgid  "Filter Selection"
+msgstr "フィルタの選択"
+
+#: source/logindlg.src#DLG_UUI_LOGIN.ModalDialog.Text
+msgid  "Authentication Required"
+msgstr "認証が必要"
+
+#: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_ERROR.FixedText.Text
+msgid  "Message from server:"
+msgstr "サーバーからのメッセージ"
+
+#: source/logindlg.src#DLG_UUI_LOGIN.FT_INFO_LOGIN_REQUEST.FixedText.Text
+msgid  "Enter user name and password for: \n%1"
+msgstr ""
+
+#: source/logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.String.Text
+msgid  "Enter user name and password for: \n"%2" on %1"
+msgstr ""
+
+#: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.FixedText.Text
+msgid  "~Path"
+msgstr "パス(~P)"
+
+#: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_USERNAME.FixedText.Text
+msgid  "~User name"
+msgstr "ユーザー名(~U)"
+
+#: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PASSWORD.FixedText.Text
+msgid  "Pass~word"
+msgstr "パスワード(~W)"
+
+#: source/logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_ACCOUNT.FixedText.Text
+msgid  "A~ccount"
+msgstr "アカウント(~C)"
+
+#: source/logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_SAVEPASSWORD.CheckBox.Text
+msgid  "~Remember password"
+msgstr "パスワードを記憶(~R)"
+
+#: source/logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_USESYSCREDS.CheckBox.Text
+msgid  "~Use system credentials"
+msgstr "システムの証明書を使う(~U)"
+
+#: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_SEND.RadioButton.Text
+msgid  "~Send"
+msgstr "受け入れる(~S)"
+
+#: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_IGNORE.RadioButton.Text
+msgid  "I~gnore"
+msgstr "無視する(~G)"
+
+#: source/cookiedg.src#DLG_COOKIES.RB_INFUTURE_INTERACTIVE.RadioButton.Text
+msgid  "I~nteractive"
+msgstr "毎回確認する(~N)"
+
+#: source/cookiedg.src#DLG_COOKIES.GB_INFUTURE.GroupBox.Text
+msgid  "Future Cookie Handling"
+msgstr "クッキーの今後の操作手順"
+
+#: source/cookiedg.src#DLG_COOKIES.BTN_COOKIES_CANCEL.PushButton.Text
+msgid  "~Ignore"
+msgstr "無視する(~I)"
+
+#: source/cookiedg.src#DLG_COOKIES.BTN_COOKIES_OK.PushButton.Text
+msgid  "~Send"
+msgstr "受け入れる(~S)"
+
+#: source/cookiedg.src#STR_COOKIES_RECV_START.String.Text
+msgid  "The '${HOST}' server wishes to set one or more cookies.\nCookies contain information referring to certain URL classes. If %PRODUCTNAME later requests a document with a URL corresponding to the class of a previously set cookie, %PRODUCTNAME will send this information to the server. This allows a server to recognize the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
+msgstr ""
+
+#: source/cookiedg.src#STR_COOKIES_RECV_COOKIES.String.Text
+msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
+msgstr "ドメイン: ${DOMAIN}､パス: ${PATH}、クッキー: ${COOKIE}。\n"
+
+#: source/cookiedg.src#STR_COOKIES_RECV_TITLE.String.Text
+msgid  "Cookie Reception"
+msgstr "クッキーの受信"
+
+#: source/cookiedg.src#STR_COOKIES_SEND_START.String.Text
+msgid  "%PRODUCTNAME has saved cookies for the server '${HOST}' which will be sent when requesting the document ${PATH}.\nCookies contain information which refers to certain URL classes. They are sent by some servers to %PRODUCTNAME where they are saved when certain documents are accessed. If %PRODUCTNAME loads a document that, according to the URL, corresponds to a class of one of the previously received Cookies, %PRODUCTNAME will send this information to that server. This enables a server to keep track of the status of a WWW application, e.g., when shopping online.\n\nThe following Cookies should be set:\n\n"
+msgstr ""
+
+#: source/cookiedg.src#STR_COOKIES_SEND_COOKIES.String.Text
+msgid  "Domain: ${DOMAIN}, Path: ${PATH}, Cookie: ${COOKIE}.\n"
+msgstr "ドメイン: ${DOMAIN}､パス: ${PATH}、クッキー: ${COOKIE}。\n"
+
+#: source/cookiedg.src#STR_COOKIES_SEND_TITLE.String.Text
+msgid  "Send Cookies"
+msgstr "クッキーの送信"
+
+#: source/passworderrs.src#STR_ERROR_PASSWORD_TO_OPEN_WRONG.String.Text
+msgid  "The password is incorrect. The file cannot be opened."
+msgstr "パスワードが正しくありません。ドキュメントを開けません。"
+
+#: source/passworderrs.src#STR_ERROR_PASSWORD_TO_MODIFY_WRONG.String.Text
+msgid  "The password is incorrect. The file cannot be modified."
+msgstr "パスワードが正しくありません。ドキュメントは変更できません。"
+
+#: source/passworderrs.src#STR_ERROR_MASTERPASSWORD_WRONG.String.Text
+msgid  "The master password is incorrect."
+msgstr "マスターパスワードが正しくありません。"
+
+#: source/passworderrs.src#STR_ERROR_SIMPLE_PASSWORD_WRONG.String.Text
+msgid  "The password is incorrect."
+msgstr "パスワードが正しくありません。"
+
+#: source/passworderrs.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.String.Text
+msgid  "The password confirmation does not match."
+msgstr "パスワードが一致しません。"
+
+#: source/nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.ModalDialog.Text
+msgid  "File Exists"
+msgstr "同名ファイルが存在します"
+
+#: source/nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.BTN_OVERWRITE.PushButton.Text
+msgid  "Replace"
+msgstr "置換"
+
+#: source/nameclashdlg.src#DLG_SIMPLE_NAME_CLASH.BTN_RENAME.PushButton.Text
+msgid  "Rename"
+msgstr "名前変更"
+
+#: source/openlocked.src#STR_OPENLOCKED_TITLE.String.Text
+msgid  "Document in Use"
+msgstr "ドキュメントは使用中です"
+
+#: source/openlocked.src#STR_OPENLOCKED_MSG.String.Text
+msgid  "Document file '$(ARG1)' is locked for editing by:\n\n$(ARG2)\n\nOpen document read-only or open a copy of the document for editing.\n\n"
+msgstr ""
+
+#: source/openlocked.src#STR_OPENLOCKED_OPENREADONLY_BTN.String.Text
+msgid  "Open ~Read-Only"
+msgstr "読み取り専用で開く(~R)"
+
+#: source/openlocked.src#STR_OPENLOCKED_OPENCOPY_BTN.String.Text
+msgid  "Open ~Copy"
+msgstr "コピーを開く(~C)"
+
+#: source/openlocked.src#STR_UNKNOWNUSER.String.Text
+msgid  "Unknown User"
+msgstr "不明なユーザー"
+
+#: source/filechanged.src#STR_FILECHANGED_TITLE.String.Text
+msgid  "Document Has Been Changed by Others"
+msgstr "他の人がドキュメントを更新しました"
+
+#: source/filechanged.src#STR_FILECHANGED_MSG.String.Text
+msgid  "The file has been changed since it was opened for editing in %PRODUCTNAME. Saving your version of the document will overwrite changes made by others.\n\nDo you want to save anyway?\n\n"
+msgstr ""
+
+#: source/filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.String.Text
+msgid  "~Save Anyway"
+msgstr "強制的に保存(~S)"
+
+#: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.ModalDialog.Text
+msgid  "%PRODUCTNAME Update Available"
+msgstr "%PRODUCTNAME の更新が入手可能"
+
+#: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.FixedText.Text
+msgid  "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\n\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME."
+msgstr ""
+
+#: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_UPDATE.PushButton.Text
+msgid  "~Update Now..."
+msgstr "今すぐ更新(~U)..."
+
+#: source/newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.PB_LATER.CancelButton.Text
+msgid  "~Later"
+msgstr "あとで更新(~L)"
+
+#: source/sslwarndlg.src#DLG_UUI_SSLWARN.ModalDialog.Text
+msgid  "Security Warning: "
+msgstr "セキュリティー警告: "
+
+#: source/sslwarndlg.src#DLG_UUI_SSLWARN.FT_LABEL_1.FixedText.Text
+msgid  "No Text"
+msgstr "テキストなし"
+
+#: source/sslwarndlg.src#DLG_UUI_SSLWARN.PB_VIEW__CERTIFICATE.PushButton.Text
+msgid  "View Certificate"
+msgstr "証明書の表示"
+
+#: source/sslwarndlg.src#DLG_UUI_SSLWARN.PB_CANCEL.CancelButton.Text
+msgid  "Cancel Connection"
+msgstr "接続のキャンセル"
+
+#: source/sslwarndlg.src#DLG_UUI_SSLWARN.PB_OK.PushButton.Text
+msgid  "Continue"
+msgstr "続行"
+
+#: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.ModalDialog.Text
+msgid  "%PRODUCTNAME - Security Warning"
+msgstr "セキュリティ警告"
+
+#: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR1A.FixedText.Text
+msgid  "The document contains document macros signed by:"
+msgstr "このドキュメントに含まれるドキュメントマクロの署名元:"
+
+#: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR1B.FixedText.Text
+msgid  "The document contains document macros."
+msgstr "ドキュメントマクロを含むドキュメントです。"
+
+#: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_VIEWSIGNS.PushButton.Text
+msgid  "View Signatures..."
+msgstr "署名を表示..."
+
+#: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR2.FixedText.Text
+msgid  "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
+msgstr ""
+
+#: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.CB_ALWAYSTRUST.CheckBox.Text
+msgid  "Always trust macros from this source"
+msgstr "常にこのソースのマクロを信頼"
+
+#: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_ENABLE.OKButton.Text
+msgid  "~Enable Macros"
+msgstr "マクロの有効化(~E)"
+
+#: source/secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_DISABLE.CancelButton.Text
+msgid  "~Disable Macros"
+msgstr "マクロの無効化(~D)"
+
+#: source/masterpassworddlg.src#DLG_UUI_MASTERPASSWORD.FT_MASTERPASSWORD.FixedText.Text
+msgid  "Enter password"
+msgstr "パスワードの入力"
+
+#: source/masterpassworddlg.src#DLG_UUI_MASTERPASSWORD.HelpButton.Text
+msgid  "Enter Master Password"
+msgstr "マスターパスワードの入力"
+
+#: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.ModalDialog.Text
+msgid  "Set Master Password"
+msgstr "マスターパスワードの設定"
+
+#: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_INFOTEXT.FixedText.Text
+msgid  "Passwords for web connections are protected by a master password. You will be asked to enter it once per session, if %PRODUCTNAME retrieves a password from the protected password list."
+msgstr ""
+
+#: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_CRT.FixedText.Text
+msgid  "~Enter password"
+msgstr "パスワードの入力(~E)"
+
+#: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_REPEAT.FixedText.Text
+msgid  "~Reenter password"
+msgstr "パスワードの再入力(~R)"
+
+#: source/masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_CAUTIONTEXT.FixedText.Text
+msgid  "Caution: If you forget the master password, you will be unable to access any of the information protected by it. Passwords are case-sensitive."
+msgstr ""
+
+#: source/alreadyopen.src#STR_ALREADYOPEN_MSG.String.Text
+msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nOpen document read-only, or ignore own file locking and open the document for editing.\n\n"
+msgstr ""
+
+#: source/alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.String.Text
+msgid  "Open ~Read-Only"
+msgstr "読み取り専用で開く(~R)"
+
+#: source/alreadyopen.src#STR_ALREADYOPEN_OPEN_BTN.String.Text
+msgid  "~Open"
+msgstr "開く(~O)"
+
+#: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_MSG.String.Text
+msgid  "Document file '$(ARG1)' is locked for editing by yourself on a different system since $(ARG2)\n\nClose document on other system and retry saving or ignore own file locking and save current document.\n\n"
+msgstr ""
+
+#: source/alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.String.Text
+msgid  "~Retry Saving"
+msgstr "保存の再試行(~R)"
+
+#: source/alreadyopen.src#STR_ALREADYOPEN_SAVE_BTN.String.Text
+msgid  "~Save"
+msgstr "保存(~S)"
+
+#: source/lockfailed.src#STR_LOCKFAILED_MSG.String.Text
+msgid  "The file could not be locked for exclusive access by %PRODUCTNAME, due to missing permission to create a lock file on that file location."
+msgstr ""

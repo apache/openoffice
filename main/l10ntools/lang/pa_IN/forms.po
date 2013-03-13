@@ -1,255 +1,272 @@
-
-#: strings.src#RID_BASELISTBOX_ERROR_FILLLIST.string.text
-msgid "The contents of a combo box or list field could not be determined."
-msgstr "ਕੰਬੋ ਬਾਕਸ ਜਾਂ ਲਿਸਟ ਕਾਲਮ ਦੀ ਸਮੱਗਰੀ ਨਹੀਂ ਜਾਣੀ ਜਾ ਸਕੀ।"
-
-#: strings.src#RID_ERR_LOADING_FORM.string.text
-msgid "The data content could not be loaded."
-msgstr "ਡਾਟਾ ਸੰਖੇਪ ਲੋਡ ਨਹੀਂ ਹੋ ਸਕਿਆ।"
-
-#: strings.src#RID_ERR_REFRESHING_FORM.string.text
-msgid "The data content could not be updated"
-msgstr "ਡਾਟਾ ਸੰਖੇਪ ਦਾ ਅੱਪਡੇਟ ਨਹੀਂ ਹੋ ਸਕਿਆ"
-
-#: strings.src#RID_STR_CLEAR_GRAPHICS.string.text
-msgid "Remove graphics"
-msgstr "ਗਰਾਫਿਕ ਹਟਾਓ"
-
-#: strings.src#RID_STR_CONNECTERROR.string.text
-msgid "Connection failed"
-msgstr "ਸੰਬੰਧ ਅਸਫਲ"
-
-#: strings.src#RID_STR_CONTROL_SUBSTITUTED_EPXPLAIN.string.text
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
 msgid ""
-"An error occurred while this control was being loaded. It was therefore "
-"replaced with a placeholder."
-msgstr "ਇਹ ਕੰਟਰੋਲ ਲੋਡ ਕਰਨ ਸਮੇਂ ਗਲਤੀ ਵਾਪਰੀ। ਇਸ ਲਈ ਇਹ ਪਲੇਸ-ਹੋਲਡਰ ਨਾਲ ਹਟਾਇਆ ਗਿਆ।"
-
-#: strings.src#RID_STR_CONTROL_SUBSTITUTED_NAME.string.text
-msgid "substituted"
 msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
 
-#: strings.src#RID_STR_COULD_NOT_SET_FILTER.string.text
-msgid "Error setting the filter criteria"
-msgstr "ਫਿਲਟਰ ਸੀਮਾ ਸੈੱਟ ਕਰਨ ਲਈ ਗਲਤੀ"
 
-#: strings.src#RID_STR_COULD_NOT_SET_ORDER.string.text
-msgid "Error setting the sort criteria"
-msgstr "ਕ੍ਰਮਬੱਧ ਸੀਮਾ ਸੈਟ ਕਰਨ ਦੌਰਾਨ ਗਲਤੀ"
-
-#: strings.src#RID_STR_ERR_DELETERECORD.string.text
-msgid "Error deleting the current record"
-msgstr "ਮੌਜੂਦਾ ਰਿਕਾਰਡ ਮਿਟਾਉਣ ਸਮੇਂ ਗਲਤੀ"
-
-#: strings.src#RID_STR_ERR_DELETERECORDS.string.text
-msgid "Error deleting the specified records"
-msgstr "ਨਿਰਧਾਰਿਤ ਰਿਕਾਰਡ ਮਿਟਾਉਣ ਸਮੇਂ ਗਲਤੀ"
-
-#: strings.src#RID_STR_ERR_INSERTRECORD.string.text
-msgid "Error inserting the new record"
-msgstr "ਨਵਾਂ ਰਿਕਾਰਡ ਸ਼ਾਮਿਲ ਕਰਨ ਸਮੇਂ ਗਲਤੀ"
-
-#: strings.src#RID_STR_ERR_UPDATERECORD.string.text
-msgid "Error updating the current record"
-msgstr "ਮੌਜੂਦਾ ਰਿਕਾਰਡ ਦੇ ਅੱਪਡੇਟ ਸਮੇਂ ਗਲਤੀ"
-
-#: strings.src#RID_STR_FEATURE_NOT_EXECUTABLE.string.text
-msgid "This function cannot be executed, but is only for status queries."
-msgstr "ਇਹ ਫੰਕਸ਼ਨ ਚਲਾਇਆ ਨਹੀਂ ਜਾ ਸਕਦਾ ਹੈ, ਪਰ ਸਿਰਫ਼ ਹਾਲਤ ਕਿਊਰੀਆਂ ਲਈ ਹੈ।"
-
-#: strings.src#RID_STR_FEATURE_REQUIRES_PARAMETERS.string.text
-msgid "To execute this function, parameters are needed."
-msgstr "ਇਹ ਫੰਕਸ਼ਨ ਚਲਾਉਣ ਲਈ, ਮੁੱਲ ਦੀ ਲੋੜ ਹੈ।"
-
-#: strings.src#RID_STR_FEATURE_UNKNOWN.string.text
-msgid "Unknown function."
-msgstr "ਅਣਜਾਣ ਫੰਕਸ਼ਨ ਹੈ।"
-
-#: strings.src#RID_STR_IMPORT_GRAPHIC.string.text
-msgid "Insert graphics"
-msgstr "ਗਰਾਫਿਕ ਸ਼ਾਮਲ"
-
-#: strings.src#RID_STR_INCOMPATIBLE_TYPES.string.text
-msgid ""
-"The value types supported by the binding cannot be used for exchanging data "
-"with this control."
-msgstr ""
-"ਬੰਧਕ ਦੁਆਰਾ ਸਹਿਯੋਗੀ ਮੁੱਲ ਕਿਸਮ, ਇਸ ਕੰਟਰੋਲ ਨਾਲ ਡਾਟਾ ਤਬਾਦਲੇ ਲਈ ਵਰਤੀ ਨਹੀਂ ਜਾ "
-"ਸਕਦੀ।"
-
-#: strings.src#RID_STR_INVALIDSTREAM.string.text
-msgid "The given stream is invalid."
-msgstr "ਦਿੱਤੀ ਧਾਰਾ ਅਯੋਗ ਹੈ।"
-
-#: strings.src#RID_STR_INVALID_VALIDATOR.string.text
-msgid ""
-"The control is connected to an external value binding, which at the same "
-"time acts as validator. You need to revoke the value binding, before you can "
-"set a new validator."
-msgstr ""
-"ਕੰਟਰੋਲ ਬਾਹਰੀ ਮੁੱਲ ਬੰਧਕ ਨਾਲ ਜੁੜਿਆ ਹੈ, ਜੋ ਕਿ ਉਸੇ ਸਮੇਂ ਯੋਗਿਕ ਦਾ ਕੰਮ ਕਰਦਾ ਹੈ। "
-"ਨਵਾਂ ਯੋਗਿਕ ਨਿਰਧਾਰਿਤ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਤੁਹਾਨੂੰ ਮੁੱਲ ਬੰਧਨ ਰੱਦ ਕਰਨ ਦੀ ਜਰੂਰਤ ਪਵੇਗੀ।"
-
-#: strings.src#RID_STR_LABEL_OF.string.text
-msgid "of"
-msgstr ""
-
-#: strings.src#RID_STR_LABEL_RECORD.string.text
-msgid "Record"
-msgstr "ਰਿਕਾਰਡ"
-
-#: strings.src#RID_STR_NEED_NON_NULL_OBJECT.string.text
-msgid "The object cannot be NULL."
-msgstr "ਇਕਾਈ NULL ਨਹੀਂ ਹੋ ਸਕਦੀ।"
-
-#: strings.src#RID_STR_OPEN_GRAPHICS.string.text
-msgid "Insert graphics from..."
-msgstr "ਇਸ ਤੋਂ ਗਰਾਫਿਕਸ ਸ਼ਾਮਿਲ..."
-
-#: strings.src#RID_STR_QUERY_SAVE_MODIFIED_ROW.string.text
-msgid ""
-"The content of the current form has been modified.\n"
-"Do you want to save your changes?"
-msgstr ""
-"ਮੌਜੂਦਾ ਫਾਰਮ ਦੀ ਸਮੱਗਰੀ ਸੋਧੀ ਗਈ ਹੈ।\n"
-"ਕੀ ਤੁਸੀਂ ਬਦਲਾਅ ਸੰਭਾਲਣੇ ਚਾਹੁੰਦੇ ਹੋ?"
-
-#: strings.src#RID_STR_READERROR.string.text
-msgid "Error reading data from database"
-msgstr "ਡਾਟਾਬੇਸ ਵਿੱਚੋਂ ਡਾਟਾ ਪੜਨ ਵਿੱਚ ਗਲਤੀ"
-
-#: strings.src#RID_STR_SYNTAXERROR.string.text
-msgid "Syntax error in query expression"
-msgstr "ਪ੍ਰਸ਼ਨ ਸਮੀਕਰਨ ਵਿੱਚ ਵਾਕ-ਬੋਧ ਗਲਤੀ ਹੈ"
-
-#: xforms.src#RID_STR_DATATYPE_BOOLEAN.string.text
-msgid "True/False (Boolean)"
-msgstr "ਸਹੀ/ਗਲਤ (ਬੂਲੀਅਨ)"
-
-#: xforms.src#RID_STR_DATATYPE_DATE.string.text
-msgid "Date"
-msgstr "ਮਿਤੀ"
-
-#: xforms.src#RID_STR_DATATYPE_DATETIME.string.text
-msgid "Date and Time"
-msgstr "ਮਿਤੀ ਅਤੇ ਸਮਾਂ"
-
-#: xforms.src#RID_STR_DATATYPE_DAY.string.text
-msgid "Day"
-msgstr "ਦਿਨ"
-
-#: xforms.src#RID_STR_DATATYPE_DECIMAL.string.text
-msgid "Decimal"
-msgstr "ਦਸ਼ਮਲਵ"
-
-#: xforms.src#RID_STR_DATATYPE_DOUBLE.string.text
-msgid "Double"
-msgstr "ਡਬਲ"
-
-#: xforms.src#RID_STR_DATATYPE_FLOAT.string.text
-msgid "Floating point"
-msgstr "ਭਿੰਨ ਬਿੰਦੂ"
-
-#: xforms.src#RID_STR_DATATYPE_MONTH.string.text
-msgid "Month"
-msgstr "ਮਹੀਨਾ"
-
-#: xforms.src#RID_STR_DATATYPE_MONTHDAY.string.text
-msgid "Month and day"
-msgstr "ਮਹੀਨਾ ਅਤੇ ਦਿਨ"
-
-#: xforms.src#RID_STR_DATATYPE_STRING.string.text
-msgid "String"
-msgstr "ਸਤਰ"
-
-#: xforms.src#RID_STR_DATATYPE_TIME.string.text
-msgid "Time"
-msgstr "ਸਮਾਂ"
-
-#: xforms.src#RID_STR_DATATYPE_URL.string.text
-msgid "Hyperlink"
-msgstr "ਹਾਈਪਰਲਿੰਕ"
-
-#: xforms.src#RID_STR_DATATYPE_YEAR.string.text
-msgid "Year"
-msgstr "ਸਾਲ"
-
-#: xforms.src#RID_STR_DATATYPE_YEARMONTH.string.text
-msgid "Month and year"
-msgstr "ਮਹੀਨਾ ਅਤੇ ਸਾਲ"
-
-#: xforms.src#RID_STR_XFORMS_BINDING_UI_NAME.string.text
-msgid "Binding"
-msgstr "ਬੰਧਕ"
-
-#: xforms.src#RID_STR_XFORMS_CANT_EVALUATE.string.text
-msgid "Error during evaluation"
-msgstr "ਮੁਲਾਂਕਣ ਸਮੇਂ ਗਲਤੀ"
-
-#: xforms.src#RID_STR_XFORMS_INVALID_BINDING_EXPRESSION.string.text
-msgid "This is an invalid binding expression."
-msgstr "ਇਹ ਅਯੋਗ ਬੰਧਨ ਸਮੀਕਰਨ ਹੈ।"
-
-#: xforms.src#RID_STR_XFORMS_INVALID_CONSTRAINT.string.text
-msgid "The constraint '$1' not validated."
-msgstr "ਪਾਬੰਦੀ '$1' ਯੋਗ ਨਹੀਂ ਠਹਿਰਾਈ।"
-
-#: xforms.src#RID_STR_XFORMS_INVALID_VALUE.string.text
-msgid "Value is invalid."
-msgstr "ਮੁੱਲ ਗਲਤ ਹੈ।"
-
-#: xforms.src#RID_STR_XFORMS_NO_BINDING_EXPRESSION.string.text
-msgid "Please enter a binding expression."
+#: source/resource/xforms.src#RID_STR_XFORMS_NO_BINDING_EXPRESSION.String.Text
+msgid  "Please enter a binding expression."
 msgstr "ਕਿਰਪਾ ਕਰਕੇ ਬੰਧਨ ਸਮੀਕਰਨ ਭਰੋ।"
 
-#: xforms.src#RID_STR_XFORMS_PATTERN_DOESNT_MATCH.string.text
-msgid "The string '$1' does not match the required regular expression '$2'."
-msgstr "ਸਤਰ '$1' ਲੋੜੀਂਦੀ ਸਮੀਕਰਨ '$2' ਨਾਲ ਮੇਲ ਨਹੀਂ ਖਾਂਦੀ।"
+#: source/resource/xforms.src#RID_STR_XFORMS_INVALID_BINDING_EXPRESSION.String.Text
+msgid  "This is an invalid binding expression."
+msgstr "ਇਹ ਅਯੋਗ ਬੰਧਨ ਸਮੀਕਰਨ ਹੈ।"
 
-#: xforms.src#RID_STR_XFORMS_REQUIRED.string.text
-msgid "A value is required."
+#: source/resource/xforms.src#RID_STR_XFORMS_INVALID_VALUE.String.Text
+msgid  "Value is invalid."
+msgstr "ਮੁੱਲ ਗਲਤ ਹੈ।"
+
+#: source/resource/xforms.src#RID_STR_XFORMS_REQUIRED.String.Text
+msgid  "A value is required."
 msgstr "ਮੁੱਲ ਲੋੜੀਂਦਾ ਹੈ।"
 
-#: xforms.src#RID_STR_XFORMS_VALUE_FRACTION_DIGITS.string.text
-msgid "$2 fraction digits allowed at most."
-msgstr "ਵੱਧ ਤੋਂ ਵੱਧ $2 ਭਿੰਨ ਅੰਕਾਂ ਦੀ ਇਜਾਜ਼ਤ ਹੈ।"
+#: source/resource/xforms.src#RID_STR_XFORMS_INVALID_CONSTRAINT.String.Text
+msgid  "The constraint '$1' not validated."
+msgstr "ਪਾਬੰਦੀ '$1' ਯੋਗ ਨਹੀਂ ਠਹਿਰਾਈ।"
 
-#: xforms.src#RID_STR_XFORMS_VALUE_IS_NOT_A.string.text
-msgid "The value is not of the type '$2'."
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_IS_NOT_A.String.Text
+msgid  "The value is not of the type '$2'."
 msgstr "ਮੁੱਲ '$2' ਕਿਸਮ ਦਾ ਨਹੀਂ।"
 
-#: xforms.src#RID_STR_XFORMS_VALUE_LENGTH.string.text
-msgid "The string must be $2 characters long."
-msgstr "ਸਤਰ $2 ਅੱਖਰ ਲੰਬੀ ਹੋਣੀ ਜਰੂਰੀ ਹੈ।"
-
-#: xforms.src#RID_STR_XFORMS_VALUE_MAX_EXCL.string.text
-msgid "The value must be smaller than $2."
-msgstr "ਮੁੱਲ $2 ਤੋਂ ਛੋਟਾ ਹੋਣਾ ਜਰੂਰੀ ਹੈ।"
-
-#: xforms.src#RID_STR_XFORMS_VALUE_MAX_INCL.string.text
-msgid "The value must be smaller than or equal to $2."
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_INCL.String.Text
+msgid  "The value must be smaller than or equal to $2."
 msgstr "ਮੁੱਲ $2 ਤੋਂ ਛੋਟਾ ਜਾਂ ਬਰਾਬਰ ਹੋਣਾ ਜਰੂਰੀ ਹੈ।"
 
-#: xforms.src#RID_STR_XFORMS_VALUE_MAX_LENGTH.string.text
-msgid "The string can only be $2 characters long at most."
-msgstr "ਸਤਰ ਵੱਧ ਤੋਂ ਵੱਧ ਸਿਰਫ $2 ਅੱਖਰ ਲੰਬੀ ਹੋ ਸਕਦੀ ਹੈ।"
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_EXCL.String.Text
+msgid  "The value must be smaller than $2."
+msgstr "ਮੁੱਲ $2 ਤੋਂ ਛੋਟਾ ਹੋਣਾ ਜਰੂਰੀ ਹੈ।"
 
-#: xforms.src#RID_STR_XFORMS_VALUE_MIN_EXCL.string.text
-msgid "The value must be greater than $2."
-msgstr "ਮੁੱਲ $2 ਤੋਂ ਵੱਡਾ ਹੋਣਾ ਜਰੂਰੀ ਹੈ।"
-
-#: xforms.src#RID_STR_XFORMS_VALUE_MIN_INCL.string.text
-msgid "The value must be greater than or equal to $2."
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_INCL.String.Text
+msgid  "The value must be greater than or equal to $2."
 msgstr "ਮੁੱਲ $2 ਤੋਂ ਵੱਡਾ ਜਾਂ ਬਰਾਬਰ ਹੋਣਾ ਜਰੂਰੀ ਹੈ।"
 
-#: xforms.src#RID_STR_XFORMS_VALUE_MIN_LENGTH.string.text
-msgid "The string must be at least $2 characters long."
-msgstr "ਸਤਰ ਘੱਟੋ ਘੱਟ $2 ਅੱਖਰ ਲੰਬੀ ਹੋਣੀ ਜਰੂਰੀ ਹੈ।"
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_EXCL.String.Text
+msgid  "The value must be greater than $2."
+msgstr "ਮੁੱਲ $2 ਤੋਂ ਵੱਡਾ ਹੋਣਾ ਜਰੂਰੀ ਹੈ।"
 
-#: xforms.src#RID_STR_XFORMS_VALUE_PATTERN.string.text
-msgid "The value does not match the pattern '$2'."
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_PATTERN.String.Text
+msgid  "The value does not match the pattern '$2'."
 msgstr "ਮੁੱਲ '$2' ਨਮੂਨੇ ਨਾਲ ਮੇਲ ਨਹੀਂ ਖਾਂਦਾ।"
 
-#: xforms.src#RID_STR_XFORMS_VALUE_TOTAL_DIGITS.string.text
-msgid "$2 digits allowed at most."
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_TOTAL_DIGITS.String.Text
+msgid  "$2 digits allowed at most."
 msgstr "ਵੱਧ ਤੋਂ ਵੱਧ $2 ਅੰਕਾਂ ਦੀ ਇਜਾਜ਼ਤ ਹੈ।"
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_FRACTION_DIGITS.String.Text
+msgid  "$2 fraction digits allowed at most."
+msgstr "ਵੱਧ ਤੋਂ ਵੱਧ $2 ਭਿੰਨ ਅੰਕਾਂ ਦੀ ਇਜਾਜ਼ਤ ਹੈ।"
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_LENGTH.String.Text
+msgid  "The string must be $2 characters long."
+msgstr "ਸਤਰ $2 ਅੱਖਰ ਲੰਬੀ ਹੋਣੀ ਜਰੂਰੀ ਹੈ।"
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_LENGTH.String.Text
+msgid  "The string must be at least $2 characters long."
+msgstr "ਸਤਰ ਘੱਟੋ ਘੱਟ $2 ਅੱਖਰ ਲੰਬੀ ਹੋਣੀ ਜਰੂਰੀ ਹੈ।"
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_LENGTH.String.Text
+msgid  "The string can only be $2 characters long at most."
+msgstr "ਸਤਰ ਵੱਧ ਤੋਂ ਵੱਧ ਸਿਰਫ $2 ਅੱਖਰ ਲੰਬੀ ਹੋ ਸਕਦੀ ਹੈ।"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_STRING.String.Text
+msgid  "String"
+msgstr "ਸਤਰ"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_URL.String.Text
+msgid  "Hyperlink"
+msgstr "ਹਾਈਪਰਲਿੰਕ"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_BOOLEAN.String.Text
+msgid  "True/False (Boolean)"
+msgstr "ਸਹੀ/ਗਲਤ (ਬੂਲੀਅਨ)"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_DECIMAL.String.Text
+msgid  "Decimal"
+msgstr "ਦਸ਼ਮਲਵ"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_FLOAT.String.Text
+msgid  "Floating point"
+msgstr "ਭਿੰਨ ਬਿੰਦੂ"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_DOUBLE.String.Text
+msgid  "Double"
+msgstr "ਡਬਲ"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_DATE.String.Text
+msgid  "Date"
+msgstr "ਮਿਤੀ"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_TIME.String.Text
+msgid  "Time"
+msgstr "ਸਮਾਂ"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_DATETIME.String.Text
+msgid  "Date and Time"
+msgstr "ਮਿਤੀ ਅਤੇ ਸਮਾਂ"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_YEARMONTH.String.Text
+msgid  "Month and year"
+msgstr "ਮਹੀਨਾ ਅਤੇ ਸਾਲ"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_YEAR.String.Text
+msgid  "Year"
+msgstr "ਸਾਲ"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_MONTHDAY.String.Text
+msgid  "Month and day"
+msgstr "ਮਹੀਨਾ ਅਤੇ ਦਿਨ"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_MONTH.String.Text
+msgid  "Month"
+msgstr "ਮਹੀਨਾ"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_DAY.String.Text
+msgid  "Day"
+msgstr "ਦਿਨ"
+
+#: source/resource/xforms.src#RID_STR_XFORMS_CANT_EVALUATE.String.Text
+msgid  "Error during evaluation"
+msgstr "ਮੁਲਾਂਕਣ ਸਮੇਂ ਗਲਤੀ"
+
+#: source/resource/xforms.src#RID_STR_XFORMS_PATTERN_DOESNT_MATCH.String.Text
+msgid  "The string '$1' does not match the required regular expression '$2'."
+msgstr "ਸਤਰ '$1' ਲੋੜੀਂਦੀ ਸਮੀਕਰਨ '$2' ਨਾਲ ਮੇਲ ਨਹੀਂ ਖਾਂਦੀ।"
+
+#: source/resource/xforms.src#RID_STR_XFORMS_BINDING_UI_NAME.String.Text
+msgid  "Binding"
+msgstr "ਬੰਧਕ"
+
+#: source/resource/strings.src#RID_BASELISTBOX_ERROR_FILLLIST.String.Text
+msgid  "The contents of a combo box or list field could not be determined."
+msgstr "ਕੰਬੋ ਬਾਕਸ ਜਾਂ ਲਿਸਟ ਕਾਲਮ ਦੀ ਸਮੱਗਰੀ ਨਹੀਂ ਜਾਣੀ ਜਾ ਸਕੀ।"
+
+#: source/resource/strings.src#RID_STR_IMPORT_GRAPHIC.String.Text
+msgid  "Insert graphics"
+msgstr "ਗਰਾਫਿਕ ਸ਼ਾਮਲ"
+
+#: source/resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_NAME.String.Text
+msgid  "substituted"
+msgstr ""
+
+#: source/resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_EPXPLAIN.String.Text
+msgid  "An error occurred while this control was being loaded. It was therefore replaced with a placeholder."
+msgstr ""
+
+#: source/resource/strings.src#RID_STR_READERROR.String.Text
+msgid  "Error reading data from database"
+msgstr "ਡਾਟਾਬੇਸ ਵਿੱਚੋਂ ਡਾਟਾ ਪੜਨ ਵਿੱਚ ਗਲਤੀ"
+
+#: source/resource/strings.src#RID_STR_CONNECTERROR.String.Text
+msgid  "Connection failed"
+msgstr "ਸੰਬੰਧ ਅਸਫਲ"
+
+#: source/resource/strings.src#RID_ERR_LOADING_FORM.String.Text
+msgid  "The data content could not be loaded."
+msgstr "ਡਾਟਾ ਸੰਖੇਪ ਲੋਡ ਨਹੀਂ ਹੋ ਸਕਿਆ।"
+
+#: source/resource/strings.src#RID_ERR_REFRESHING_FORM.String.Text
+msgid  "The data content could not be updated"
+msgstr "ਡਾਟਾ ਸੰਖੇਪ ਦਾ ਅੱਪਡੇਟ ਨਹੀਂ ਹੋ ਸਕਿਆ"
+
+#: source/resource/strings.src#RID_STR_ERR_INSERTRECORD.String.Text
+msgid  "Error inserting the new record"
+msgstr "ਨਵਾਂ ਰਿਕਾਰਡ ਸ਼ਾਮਿਲ ਕਰਨ ਸਮੇਂ ਗਲਤੀ"
+
+#: source/resource/strings.src#RID_STR_ERR_UPDATERECORD.String.Text
+msgid  "Error updating the current record"
+msgstr "ਮੌਜੂਦਾ ਰਿਕਾਰਡ ਦੇ ਅੱਪਡੇਟ ਸਮੇਂ ਗਲਤੀ"
+
+#: source/resource/strings.src#RID_STR_ERR_DELETERECORD.String.Text
+msgid  "Error deleting the current record"
+msgstr "ਮੌਜੂਦਾ ਰਿਕਾਰਡ ਮਿਟਾਉਣ ਸਮੇਂ ਗਲਤੀ"
+
+#: source/resource/strings.src#RID_STR_ERR_DELETERECORDS.String.Text
+msgid  "Error deleting the specified records"
+msgstr "ਨਿਰਧਾਰਿਤ ਰਿਕਾਰਡ ਮਿਟਾਉਣ ਸਮੇਂ ਗਲਤੀ"
+
+#: source/resource/strings.src#RID_STR_NEED_NON_NULL_OBJECT.String.Text
+msgid  "The object cannot be NULL."
+msgstr "ਇਕਾਈ NULL ਨਹੀਂ ਹੋ ਸਕਦੀ।"
+
+#: source/resource/strings.src#RID_STR_OPEN_GRAPHICS.String.Text
+msgid  "Insert graphics from..."
+msgstr "ਇਸ ਤੋਂ ਗਰਾਫਿਕਸ ਸ਼ਾਮਿਲ..."
+
+#: source/resource/strings.src#RID_STR_CLEAR_GRAPHICS.String.Text
+msgid  "Remove graphics"
+msgstr "ਗਰਾਫਿਕ ਹਟਾਓ"
+
+#: source/resource/strings.src#RID_STR_INVALIDSTREAM.String.Text
+msgid  "The given stream is invalid."
+msgstr "ਦਿੱਤੀ ਧਾਰਾ ਅਯੋਗ ਹੈ।"
+
+#: source/resource/strings.src#RID_STR_SYNTAXERROR.String.Text
+msgid  "Syntax error in query expression"
+msgstr "ਪ੍ਰਸ਼ਨ ਸਮੀਕਰਨ ਵਿੱਚ ਵਾਕ-ਬੋਧ ਗਲਤੀ ਹੈ"
+
+#: source/resource/strings.src#RID_STR_INCOMPATIBLE_TYPES.String.Text
+msgid  "The value types supported by the binding cannot be used for exchanging data with this control."
+msgstr ""
+
+#: source/resource/strings.src#RID_STR_LABEL_RECORD.String.Text
+msgid  "Record"
+msgstr "ਰਿਕਾਰਡ"
+
+#: source/resource/strings.src#RID_STR_INVALID_VALIDATOR.String.Text
+msgid  "The control is connected to an external value binding, which at the same time acts as validator. You need to revoke the value binding, before you can set a new validator."
+msgstr ""
+
+#: source/resource/strings.src#RID_STR_LABEL_OF.String.Text
+msgid  "of"
+msgstr ""
+
+#: source/resource/strings.src#RID_STR_QUERY_SAVE_MODIFIED_ROW.String.Text
+msgid  "The content of the current form has been modified.\nDo you want to save your changes?"
+msgstr ""
+
+#: source/resource/strings.src#RID_STR_COULD_NOT_SET_ORDER.String.Text
+msgid  "Error setting the sort criteria"
+msgstr "ਕ੍ਰਮਬੱਧ ਸੀਮਾ ਸੈਟ ਕਰਨ ਦੌਰਾਨ ਗਲਤੀ"
+
+#: source/resource/strings.src#RID_STR_COULD_NOT_SET_FILTER.String.Text
+msgid  "Error setting the filter criteria"
+msgstr "ਫਿਲਟਰ ਸੀਮਾ ਸੈੱਟ ਕਰਨ ਲਈ ਗਲਤੀ"
+
+#: source/resource/strings.src#RID_STR_FEATURE_REQUIRES_PARAMETERS.String.Text
+msgid  "To execute this function, parameters are needed."
+msgstr "ਇਹ ਫੰਕਸ਼ਨ ਚਲਾਉਣ ਲਈ, ਮੁੱਲ ਦੀ ਲੋੜ ਹੈ।"
+
+#: source/resource/strings.src#RID_STR_FEATURE_NOT_EXECUTABLE.String.Text
+msgid  "This function cannot be executed, but is only for status queries."
+msgstr "ਇਹ ਫੰਕਸ਼ਨ ਚਲਾਇਆ ਨਹੀਂ ਜਾ ਸਕਦਾ ਹੈ, ਪਰ ਸਿਰਫ਼ ਹਾਲਤ ਕਿਊਰੀਆਂ ਲਈ ਹੈ।"
+
+#: source/resource/strings.src#RID_STR_FEATURE_UNKNOWN.String.Text
+msgid  "Unknown function."
+msgstr "ਅਣਜਾਣ ਫੰਕਸ਼ਨ ਹੈ।"

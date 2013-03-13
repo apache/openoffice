@@ -1,977 +1,844 @@
-#: padialog.src#RID_PADIALOG.RID_PA_BTN_CANCEL.cancelbutton.text
-msgctxt "padialog.src#RID_PADIALOG.RID_PA_BTN_CANCEL.cancelbutton.text"
-msgid "Close"
-msgstr "Itxi"
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
 
-#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_DEFAULT.checkbox.text
-msgid "~Use as default printer"
-msgstr "~Erabili inprimagailu lehenetsi gisa"
 
-#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_FAXSWALLOW.checkbox.text
-msgid "Remo~ve fax number from output"
-msgstr "Kendu ~fax-zenbakia irteeratik"
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_TXT_HELP.FixedText.Text
+msgid  "Please select the folder from which you want to import fonts. Add the selected fonts by clicking the OK button."
+msgstr ""
 
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_LINKONLY.checkbox.text
-msgid "Create ~soft links only"
-msgstr "~Esteka bigunak bakarrik sortu"
-
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_SUBDIRS.checkbox.text
-msgid "Sea~rch Subdirectories"
-msgstr "Bi~latu azpidirektorioetan"
-
-#: padialog.src#RID_PADIALOG.RID_PA_CB_CUPSUSAGE.checkbox.text
-msgid "Disable CUPS Support"
-msgstr "Desgaitu CUPS euskarria"
-
-#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_FAXNAME.edit.text
-msgid "Fax printer"
-msgstr "Fax-inprimagailua"
-
-#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_PDFNAME.edit.text
-msgctxt "padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_PDFNAME.edit.text"
-msgid "PDF converter"
-msgstr "PDF bihurtzailea"
-
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_FROM.fixedline.text
-msgid "Source directory"
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_FROM.FixedLine.Text
+msgid  "Source directory"
 msgstr "Iturburuko direktorioa"
 
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_TARGETOPTS.fixedline.text
-msgid "Target options"
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_SUBDIRS.CheckBox.Text
+msgid  "Sea~rch Subdirectories"
+msgstr "Bi~latu azpidirektorioetan"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_TARGETOPTS.FixedLine.Text
+msgid  "Target options"
 msgstr "Helburuko aukerak"
 
-#: padialog.src#RID_PADIALOG.RID_PA_FL_CUPSUSAGE.fixedline.text
-msgid "CUPS support"
-msgstr "CUPS euskarria"
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_LINKONLY.CheckBox.Text
+msgid  "Create ~soft links only"
+msgstr "~Esteka bigunak bakarrik sortu"
 
-#: padialog.src#RID_PADIALOG.RID_PA_FL_PRINTERS.fixedline.text
-msgid "Installed ~printers"
-msgstr "~Instalatutako inprimagailuak"
-
-#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_DRIVER.fixedline.text
-msgid "~Selection of drivers"
-msgstr "Kontrolatzaile-a~ukera"
-
-#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_PATH.fixedline.text
-msgid "Dri~ver directory"
-msgstr "~Kontrolatzailearen direktorioa"
-
-#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_TXT_OVER.fixedtext.text
-msgid "Do you want to"
-msgstr "Zer egin nahi duzu?"
-
-#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_TXT_DRIVER.fixedtext.text
-msgid "Please select a s~uitable driver."
-msgstr "Hautatu kontrolatzaile egokia."
-
-#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_COMMAND.fixedtext.text
-msgid "Please enter a c~ommand line appropriate for this device."
-msgstr "Idatzi gailu honentzat egokia den ~komando-lerro bat."
-
-#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_PDFDIR.fixedtext.text
-msgid "PDF ~target directory"
-msgstr "PDF ~helburuko direktorioa"
-
-#: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_TXT_DRIVER.fixedtext.text
-msgid "Use the following driver for this fax connection"
-msgstr "Erabili ondoko kontrolatzailea fax-konexio honetarako"
-
-#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_FAXNAME.fixedtext.text
-msgid "Please enter a name for the fax connection."
-msgstr "Idatzi izen bat fax-konexioarentzat."
-
-#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_NAME.fixedtext.text
-msgid "Please enter a name for the printer."
-msgstr "Idatzi izen bat inprimagailuarentzat."
-
-#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_PDFNAME.fixedtext.text
-msgid "Please enter a name for the PDF connection."
-msgstr "Idatzi izen bat PDF konexioarentzat."
-
-#: padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_TXT_PRINTERS.fixedtext.text
-msgid ""
-"~These printers can be imported. Please select the ones you want to import."
-msgstr ""
-"~Inprimagailu hauek inporta daitezke. Hautatu inportatu nahi dituzunak."
-
-#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_TXT_DRIVER.fixedtext.text
-msgid "Use the following driver for this PDF converter"
-msgstr "Erabili ondoko kontrolatzailea PDF bihurtzaile honentzat"
-
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_TXT_HELP.fixedtext.text
-msgid ""
-"Please select the folder from which you want to import fonts. Add the "
-"selected fonts by clicking the OK button."
-msgstr ""
-"Hautatu inportatu nahi dituzun letra-tipoak dituen karpeta. Hautatutako "
-"letra-tipoak gehitzeko, egin klik Ados botoian."
-
-#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_FIXED.fixedtext.text
-msgid "Note: The fonts are only available to the applications."
-msgstr "Oharra: letra-tipoak aplikazioarentzat bakarrik daude erabilgarri."
-
-#: padialog.src#RID_PADIALOG.RID_PA_TXT_COMMAND.fixedtext.text
-msgid "Command:"
-msgstr "Komandoa:"
-
-#: padialog.src#RID_PADIALOG.RID_PA_TXT_COMMENT.fixedtext.text
-msgid "Comment:"
-msgstr "Iruzkina:"
-
-#: padialog.src#RID_PADIALOG.RID_PA_TXT_DRIVER.fixedtext.text
-msgid "Driver:"
-msgstr "Kontrolatzailea:"
-
-#: padialog.src#RID_PADIALOG.RID_PA_TXT_LOCATION.fixedtext.text
-msgid "Location:"
-msgstr "Kokalekua:"
-
-#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_DRIVER.fixedtext.text
-msgid "Please select the drivers to install and press \"%s\"."
-msgstr "Hautatu instalatu nahi dituzun kontrolatzaileak, eta sakatu \"%s\"."
-
-#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_PATH.fixedtext.text
-msgid "Please select the driver directory."
-msgstr "Hautatu kontrolatzailearen direktorioa."
-
-#: padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.fixedtext.text
-msgid "Progress"
-msgstr "Progresioa"
-
-#: padialog.src#RID_ADD_PRINTER_DIALOG.modaldialog.text
-msgid "Add Printer"
-msgstr "Gehitu inprimagailua"
-
-#: padialog.src#RID_FONTIMPORT_DIALOG.modaldialog.text
-msgid "Add Fonts"
-msgstr "Gehitu letra-tipoak"
-
-#: padialog.src#RID_FONTNAMEDIALOG.modaldialog.text
-msgid "Fonts"
-msgstr "Letra-tipoak"
-
-#: padialog.src#RID_PADIALOG.modaldialog.text
-msgid "Printer Administration"
-msgstr "Inprimagailu-administrazioa"
-
-#: padialog.src#RID_PPDIMPORT_DLG.modaldialog.text
-msgid "Driver Installation"
-msgstr "Kontrolatzaile-instalazioa"
-
-#: padialog.src#RID_PROGRESS_DLG.modelessdialog.text
-msgid "Please wait"
-msgstr "Itxaron"
-
-#: padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_FINISH.okbutton.text
-msgid "~Finish"
-msgstr "A~maitu"
-
-#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_OK.okbutton.text
-msgctxt "padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_OK.okbutton.text"
-msgid "Close"
-msgstr "Itxi"
-
-#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_ADD.pushbutton.text
-msgid "~Import..."
-msgstr "~Inportatu..."
-
-#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_REMOVE.pushbutton.text
-msgid "~Delete"
-msgstr "E~zabatu"
-
-#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_BTN_HELP.pushbutton.text
-msgctxt ""
-"padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_BTN_HELP.pushbutton.text"
-msgid "~Help"
-msgstr "~Laguntza"
-
-#: padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.pushbutton.text
-msgctxt ""
-"padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.pushbutton."
-"text"
-msgid "~Select All"
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BTN_SELECTALL.PushButton.Text
+msgid  "~Select All"
 msgstr "~Hautatu denak"
 
-#: padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_NEXT.pushbutton.text
-msgid "~Next >>"
-msgstr "~Hurrengoa >>"
-
-#: padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_PREV.pushbutton.text
-msgid "<< ~Back"
-msgstr "<<At~zera"
-
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BTN_SELECTALL.pushbutton.text
-msgctxt ""
-"padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BTN_SELECTALL.pushbutton.text"
-msgid "~Select All"
-msgstr "~Hautatu denak"
-
-#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_IMPORT.pushbutton.text
-msgid "~Add..."
-msgstr "~Gehitu..."
-
-#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_REMOVE.pushbutton.text
-msgid "~Remove..."
-msgstr "~Kendu..."
-
-#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_RENAME.pushbutton.text
-msgid "Re~name..."
-msgstr "Izena ~aldatu…"
-
-#: padialog.src#RID_PADIALOG.RID_PA_BTN_ADD.pushbutton.text
-msgid "New Printer..."
-msgstr "Inprimagailu berria…"
-
-#: padialog.src#RID_PADIALOG.RID_PA_BTN_CONF.pushbutton.text
-msgid "Properties..."
-msgstr "Propietateak..."
-
-#: padialog.src#RID_PADIALOG.RID_PA_BTN_DEL.pushbutton.text
-msgid "Remo~ve..."
-msgstr "~Kendu…"
-
-#: padialog.src#RID_PADIALOG.RID_PA_BTN_FONTS.pushbutton.text
-msgid "Fon~ts..."
-msgstr "Letra-~tipoak…"
-
-#: padialog.src#RID_PADIALOG.RID_PA_BTN_RENAME.pushbutton.text
-msgid "R~ename..."
-msgstr "Izena ~aldatu…"
-
-#: padialog.src#RID_PADIALOG.RID_PA_BTN_STD.pushbutton.text
-msgctxt "padialog.src#RID_PADIALOG.RID_PA_BTN_STD.pushbutton.text"
-msgid "~Default"
-msgstr "~Lehenetsia"
-
-#: padialog.src#RID_PADIALOG.RID_PA_TESTPAGE.pushbutton.text
-msgid "Test ~Page"
-msgstr "~Proba-orria"
-
-#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_BTN_SEARCH.pushbutton.text
-msgid "Browse..."
-msgstr "Arakatu..."
-
-#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_FAX.radiobutton.text
-msgid "Connect a fa~x device"
-msgstr "~Fax-gailu bat konektatu"
-
-#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_OLD.radiobutton.text
-msgid "~Import printers from a StarOffice installation"
-msgstr "Inprimagailuak inportatu ~StarOffice instalaziotik"
-
-#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PDF.radiobutton.text
-msgid "Connect a P~DF converter"
-msgstr "~PDF bihurtzailea konektatu"
-
-#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PRINTER.radiobutton.text
-msgid "Add a ~printer"
-msgstr "~Inprimagailu bat gehitu"
-
-#: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_DEFAULT.radiobutton.text
-msgctxt ""
-"padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_DEFAULT.radiobutton."
-"text"
-msgid "T~he default driver"
-msgstr "Kontrolatzaile ~lehenetsia"
-
-#: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_SELECT.radiobutton.text
-msgid "A speci~fic driver, to adapt the format to another printer"
-msgstr "Kontrolatzaile berezia, formatua beste ~inprimagailu bati egokitzeko"
-
-#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DEFAULT.radiobutton.text
-msgctxt ""
-"padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DEFAULT.radiobutton."
-"text"
-msgid "T~he default driver"
-msgstr "Kontrolatzaile ~lehenetsia"
-
-#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DIST.radiobutton.text
-msgid "The Adobe D~istiller(tm) driver"
-msgstr "Adobe D~istiller(tm) kontrolatzailea"
-
-#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_SELECT.radiobutton.text
-msgid "A spec~ific driver, to adapt the format to another printer"
-msgstr "Kontrolatzaile berezia, ~formatua beste inprimagailu bati egokitzeko"
-
-#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_STR_TITLE.string.text
-msgid "Choose a device type"
-msgstr "Hautatu gailu mota bat"
-
-#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_STR_REMOVE.string.text
-msgid "Delete driver"
-msgstr "Ezabatu kontrolatzailea"
-
-#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_STR_TITLE.string.text
-msgctxt ""
-"padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_STR_TITLE.string.text"
-msgid "Choose a driver"
-msgstr "Aukeratu kontrolatzailea"
-
-#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_FAXHELP.string.text
-msgid ""
-"The command line for fax connections is executed as follows: for each fax "
-"sent, \"(TMP)\" in the command line is replaced by a temporary file and "
-"\"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" "
-"appears in the command line, the PostScript code will be supplied via a "
-"file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr ""
-"Honela exekutatzen da fax-konexioen komando-lerroa: bidalitako fax "
-"bakoitzeko, komando-lerroko \"(TMP)\"ren ordez aldi baterako fitxategi bat "
-"jartzen da, eta \"(PHONE)\"ren ordez, fax-zenbakia. Komando-lerroan "
-"\"(TMP)\" badago, fitxategi baten bidez emango da PostScript kodea, bestela, "
-"sarrera estandarraren bidez (alegia, kanalizazio moduan) pasatuko da."
-
-#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.string.text
-msgctxt ""
-"padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.string.text"
-msgid ""
-"The command line for PDF converters is executed as follows: for each "
-"document printed, \"(TMP)\" in the command line is replaced by a temporary "
-"file and \"(OUTFILE)\" in the command line is replaced by the target PDF "
-"file name. If \"(TMP)\" is in the command line, the PostScript code will be "
-"supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr ""
-"Honela exekutatzen da PDF bihurtzaileen komando-lerroa: inprimatutako "
-"dokumentu bakoitzeko, komando-lerroko \"(TMP)\"ren ordez aldi baterako "
-"fitxategi bat jartzen da, eta \"(OUTFILE)\"ren ordez, helburuko PDF "
-"fitxategiaren izena. Komando-lerroan \"(TMP)\" badago, fitxategi baten bidez "
-"emango da PostScript kodea, bestela, sarrera estandarraren bidez (alegia, "
-"kanalizazio moduan)."
-
-#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_STR_TITLE.string.text
-msgid "Choose a command line"
-msgstr "Aukeratu komando-lerro bat"
-
-#: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_STR_TITLE.string.text
-msgctxt "padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_STR_TITLE.string.text"
-msgid "Choose a driver"
-msgstr "Aukeratu kontrolatzailea"
-
-#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_STR_TITLE.string.text
-msgid "Choose a name"
-msgstr "Aukeratu izen bat"
-
-#: padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_STR_TITLE.string.text
-msgid "Import printers from old versions"
-msgstr "Inportatu inprimagailuak bertsio zaharretatik"
-
-#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_STR_TITLE.string.text
-msgctxt "padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_STR_TITLE.string.text"
-msgid "Choose a driver"
-msgstr "Aukeratu kontrolatzailea"
-
-#: padialog.src#RID_AFMERROR_BOX_TXT.string.text
-msgid ""
-"The metric\n"
-"\n"
-"%s\n"
-"\n"
-"could not be converted for the following reason:\n"
-"\n"
-msgstr ""
-" \n"
-"\n"
-"%s\n"
-"\n"
-"metrika ezin izan da bihurtu, arrazoi honengatik:\n"
-
-#: padialog.src#RID_AFMERROR_MOVETO_FAILED.string.text
-msgid "The converted metric could not be written."
-msgstr "Bihurtutako metrika ezin izan da idatzi."
-
-#: padialog.src#RID_AFMERROR_NOT_A_METRIC.string.text
-msgid "The file does not contain a metric."
-msgstr "Fitxategiak ez dauka metrikarik."
-
-#: padialog.src#RID_AFMERROR_NO_FAMILY_NAME.string.text
-msgid "The metric does not contain a 'FamilyName' entry."
-msgstr "Metrikak ez dauka 'FamilyName' sarrerarik."
-
-#: padialog.src#RID_AFMERROR_NO_FONT_NAME.string.text
-msgid "The metric does not contain a 'FontName' entry."
-msgstr "Metrikak ez dauka 'FontName' sarrerarik."
-
-#: padialog.src#RID_AFMERROR_NO_FULL_NAME.string.text
-msgid "The metric does not contain a 'FullName' entry."
-msgstr "Metrikak ez dauka 'FullName' sarrerarik."
-
-#: padialog.src#RID_AFMERROR_OK.string.text
-msgid "No error"
-msgstr "Errorerik ez"
-
-#: padialog.src#RID_AFMERROR_STREAM_READ_FAILED.string.text
-msgid "The metric could not be read."
-msgstr "Metrika ezin izan da irakurri."
-
-#: padialog.src#RID_AFMERROR_STREAM_WRITE_FAILED.string.text
-msgid "A temporary file could not be created."
-msgstr "Aldi baterako fitxategia ezin izan da sortu."
-
-#: padialog.src#RID_BXT_ENVIRONMENT.string.text
-msgid "Wrong environment"
-msgstr "Ingurune okerra"
-
-#: padialog.src#RID_BXT_TESTPAGE.string.text
-msgid "Test page"
-msgstr "Proba-orria"
-
-#: padialog.src#RID_ERR_NOPRINTER.string.text
-msgid "Could not open printer %s."
-msgstr "%s inprimagailua ezin izan da ireki."
-
-#: padialog.src#RID_ERR_NOWRITE.string.text
-msgid ""
-"No printers can be installed, because the file system is read-only.\n"
-"Please contact your system administrator."
-msgstr ""
-"Ezin da instalatu inprimagailurik, fitxategi-sistena irakurtzeko bakarrik "
-"delako.\n"
-"Mesedez, jarri harremanetan zure sistema-adminitratzailearekin"
-
-#: padialog.src#RID_ERR_PRINTERNOTREMOVEABLE.string.text
-msgid "The printer %s cannot be removed."
-msgstr "%s inprimagailua ezin da kendu."
-
-#: padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.string.text
-msgid ""
-"The driver \"%s\" is used by your default printer. Therefore, it cannot be "
-"removed."
-msgstr ""
-"Zure inprimagailu lehenetsiak \"%s\" kontrolatzailea erabiltzen du. Beraz, "
-"ezin da kendu."
-
-#: padialog.src#RID_ERR_REMOVEDRIVERFAILED.string.text
-msgid ""
-"The driver \"%s1\" could not be removed. It was not possible to remove the "
-"file\n"
-"\n"
-"%s2."
-msgstr ""
-"Ezin izan da \"%s1\" kontrolatzailea kendu. Ezin izan da \n"
-"\n"
-"%s2 fitxategia kendu."
-
-#: padialog.src#RID_ERR_REMOVESGENPRT.string.text
-msgid "The driver \"%s\" is always needed and can therefore not be removed."
-msgstr "\"%s\" kontrolatzailea beti behar da, eta, horregatik, ezin da kendu."
-
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.string.text
-msgid ""
-"The metric file for the font file\n"
-"   %s\n"
-"could not be copied. The font will not be installed."
-msgstr ""
-"Ezin izan da kopiatu\n"
-"   %s\n"
-"letra-tipoen fitxategirako neurri-fitxategia. Letra-tipoa ez da instalatuko."
-
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.string.text
-msgid ""
-"The font file\n"
-"   %s\n"
-"could not be copied. The font will not be installed."
-msgstr ""
-"Ezin izan da kopiatu\n"
-"   %s\n"
-"letra-tipoen fitxategia. Letra-tipoa ez da instalatuko."
-
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_IMPORTOP.string.text
-msgid "Add fonts"
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_IMPORTOP.String.Text
+msgid  "Add fonts"
 msgstr "Gehitu letra-tipoak"
 
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.string.text
-msgid ""
-"A format file (with an .afm extension) has not been found for the font\n"
-"%s\n"
-"therefore, the font cannot be installed. Format files can be created with "
-"ghostscript, for example, and have to be located in the same directory as "
-"the font files or its afm subdirectory."
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
+msgid  "Do you really want to overwrite this font file?\n   %s"
 msgstr ""
-"Ez da letra-tipoarentzako formatu-fitxategirik (afm luzapenarekin) topatu\n"
-"%s\n"
-"beraz, ezin da letra-tipoa instalatu. Formatu-fitxategiak ghostscript-ekin "
-"sor daitezke adibidez, eta letra-tipoen fitxategien direktorio berean edo "
-"bertako afm azpidirektorioan egon behar dute."
 
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.string.text
-msgid ""
-"A directory containing a writable fonts.dir file is not located in the "
-"Fontpath. Therefore, fonts cannot be installed."
-msgstr ""
-"Letra-tipoen bide-izenean (fontpath-ean) ez dago idatz daitekeen fonts.dir "
-"izeneko fitxategia duen direktoriorik. Beraz, ezin dira letra-tipoak "
-"instalatu."
-
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NUMBEROFFONTSIMPORTED.string.text
-msgid "%d new fonts were added."
-msgstr "%d letra-tipo berri gehitu dira."
-
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.string.text
-msgid "All"
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
+msgid  "All"
 msgstr "Denak"
 
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITENONE.string.text
-msgid "None"
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITENONE.String.Text
+msgid  "None"
 msgstr "Bat ere ez"
 
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.string.text
-msgid ""
-"Do you really want to overwrite this font file?\n"
-"   %s"
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
+msgid  "A format file (with an .afm extension) has not been found for the font\n%s\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
 msgstr ""
-"Benetan gainidatzi nahi duzu letra-tipoen fitxategi hau?\n"
-"   %s"
 
-#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_NOTRENAMABLE.string.text
-msgid "The font %s cannot be renamed due to missing write permission."
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
+msgid  "The metric file for the font file\n   %s\ncould not be copied. The font will not be installed."
 msgstr ""
-"%s letra-tipoari ezin zaio izena aldatu, idazteko baimenik ez dagoelako."
 
-#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_RENAME.string.text
-msgid "~New name for %s"
-msgstr "%s letra-tipoaren ~izen berria"
-
-#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_TTCRENAME.string.text
-msgid "~New name for %s (%d1 of %d2)"
-msgstr "%s letra-tipoaren ~izen berria(%d1 / %d2)"
-
-#: padialog.src#RID_OPERATION_CONVERTMETRIC.string.text
-msgid "Font metrics conversion"
-msgstr "Letra-tipoen metrika bihurtzea"
-
-#: padialog.src#RID_PADIALOG.RID_PA_STR_DEFPRT.string.text
-msgid "Default printer"
-msgstr "Inprimagailu lehenetsia"
-
-#: padialog.src#RID_PADIALOG.RID_PA_STR_RENAME.string.text
-msgid "Rename"
-msgstr "Izena aldatu"
-
-#: padialog.src#RID_PA_TXT_TESTPAGE_PRINTED.string.text
-msgid "The test page was printed succesfully. Please check the result."
-msgstr "Proba-orria behar bezala inprimatu da. Begiratu emaitza."
-
-#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_STR_LOADINGPPD.string.text
-msgid "Searching for drivers"
-msgstr "Kontrolatzaile-bilaketa"
-
-#: padialog.src#RID_QRY_PRTNAME.string.text
-msgid "~New printer name"
-msgstr "~Inprimagailu-izen berria"
-
-#: padialog.src#RID_QUERY_DRIVERUSED.string.text
-msgid ""
-"There are still printers using the driver \"%s\". Do you really want to "
-"remove it? The corresponding printers will also be removed."
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
+msgid  "The font file\n   %s\ncould not be copied. The font will not be installed."
 msgstr ""
-"Inprimagailu batzuek \"%s\" kontrolatzailea erabiltzen dute. Benetan kendu "
-"nahi duzu? Inprimagailu horiek ere kendu egingo dira."
 
-#: padialog.src#RID_QUERY_REMOVEDRIVER.string.text
-msgid "Do you really want to remove the driver \"%s\"?"
-msgstr "Benetan kendu nahi duzu \"%s\" kontrolatzailea?"
-
-#: padialog.src#RID_QUERY_REMOVEFONTFROMLIST.string.text
-msgid "Do you really want to remove the selected fonts ?"
-msgstr "Benetan kendu nahi dituzu hautatutako letra-tipoak?"
-
-#: padialog.src#RID_QUERY_REMOVEPRINTER.string.text
-msgid "Do you really want to remove this printer ?"
-msgstr "Benetan kendu nahi duzu inprimagailu hau?"
-
-#: padialog.src#RID_TXT_DRIVERDOESNOTEXIST.string.text
-msgid ""
-"The driver for the printer \"%s1\" (%s2) is not installed. Therefore the "
-"printer cannot be imported."
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
+msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
 msgstr ""
-"\"%s1\" (%s2) inprimagailuaren kontrolatzailea ez dago instalatuta. Beraz, "
-"ezin da inprimagailua inportatu."
 
-#: padialog.src#RID_TXT_FONT_BOLD.string.text
-msgid "Bold"
-msgstr "Lodia"
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NUMBEROFFONTSIMPORTED.String.Text
+msgid  "%d new fonts were added."
+msgstr "%d letra-tipo berri gehitu dira."
 
-#: padialog.src#RID_TXT_FONT_CONDENSED.string.text
-msgid "Condensed"
-msgstr "Estutua"
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.String.Text
+msgid  "Add Fonts"
+msgstr "Gehitu letra-tipoak"
 
-#: padialog.src#RID_TXT_FONT_EXPANDED.string.text
-msgid "Expanded"
-msgstr "Zabaldua"
+#: source/padialog.src#RID_PADIALOG.RID_PA_FL_CUPSUSAGE.FixedLine.Text
+msgid  "CUPS support"
+msgstr "CUPS euskarria"
 
-#: padialog.src#RID_TXT_FONT_EXTRACONDENSED.string.text
-msgid "Extracondensed"
-msgstr "Estra-estutua"
+#: source/padialog.src#RID_PADIALOG.RID_PA_CB_CUPSUSAGE.CheckBox.Text
+msgid  "Disable CUPS Support"
+msgstr "Desgaitu CUPS euskarria"
 
-#: padialog.src#RID_TXT_FONT_EXTRAEXPANDED.string.text
-msgid "Extraexpanded"
-msgstr "Estra-zabaldua"
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_CANCEL.CancelButton.Text
+msgid  "Close"
+msgstr "Itxi"
 
-#: padialog.src#RID_TXT_FONT_ITALIC.string.text
-msgid "Italic"
-msgstr "Etzana"
+#: source/padialog.src#RID_PADIALOG.RID_PA_FL_PRINTERS.FixedLine.Text
+msgid  "Installed ~printers"
+msgstr "~Instalatutako inprimagailuak"
 
-#: padialog.src#RID_TXT_FONT_LIGHT.string.text
-msgid "Light"
-msgstr "Argia"
+#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_COMMAND.FixedText.Text
+msgid  "Command:"
+msgstr "Komandoa:"
 
-#: padialog.src#RID_TXT_FONT_OBLIQUE.string.text
-msgid "Oblique"
-msgstr "Okerra"
+#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_DRIVER.FixedText.Text
+msgid  "Driver:"
+msgstr "Kontrolatzailea:"
 
-#: padialog.src#RID_TXT_FONT_REGULAR.string.text
-msgid "Regular"
-msgstr "Erregularra"
+#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_LOCATION.FixedText.Text
+msgid  "Location:"
+msgstr "Kokalekua:"
 
-#: padialog.src#RID_TXT_FONT_SEMIBOLD.string.text
-msgid "Semibold"
-msgstr "Erdi-lodia"
+#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_COMMENT.FixedText.Text
+msgid  "Comment:"
+msgstr "Iruzkina:"
 
-#: padialog.src#RID_TXT_FONT_SEMICONDENSED.string.text
-msgid "Semicondensed"
-msgstr "Erdi-estutua"
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_CONF.PushButton.Text
+msgid  "Properties..."
+msgstr "Propietateak..."
 
-#: padialog.src#RID_TXT_FONT_SEMIEXPANDED.string.text
-msgid "Semiexpanded"
-msgstr "Erdi-zabaldua"
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_RENAME.PushButton.Text
+msgid  "R~ename..."
+msgstr "Izena ~aldatu…"
 
-#: padialog.src#RID_TXT_FONT_SEMILIGHT.string.text
-msgid "Semilight"
-msgstr "Erdi-argia"
-
-#: padialog.src#RID_TXT_FONT_THIN.string.text
-msgid "Thin"
-msgstr "Fina"
-
-#: padialog.src#RID_TXT_FONT_ULTRABOLD.string.text
-msgid "Ultrabold"
-msgstr "Ultra-lodia"
-
-#: padialog.src#RID_TXT_FONT_ULTRACONDENSED.string.text
-msgid "Ultracondensed"
-msgstr "Ultra-estutua"
-
-#: padialog.src#RID_TXT_FONT_ULTRAEXPANDED.string.text
-msgid "Ultraexpanded"
-msgstr "Ultra-zabaldua"
-
-#: padialog.src#RID_TXT_FONT_ULTRALIGHT.string.text
-msgid "Ultralight"
-msgstr "Ultra-argia"
-
-#: padialog.src#RID_TXT_PRINTERADDFAILED.string.text
-msgid "The printer \"%s\" could not be added."
-msgstr "Ezin izan da \"%s\" inprimagailua gehitu."
-
-#: padialog.src#RID_TXT_PRINTERALREADYEXISTS.string.text
-msgid ""
-"A printer named \"%s\" already exists. This printer will not be imported."
-msgstr ""
-"Badago jadanik \"%s\" izeneko inprimagailu bat. Inprimagailu hori ez da "
-"inportatuko."
-
-#: padialog.src#RID_TXT_PRINTERWITHOUTCOMMAND.string.text
-msgid ""
-"The printer \"%s\" has no valid configuration and, therefore, cannot be "
-"imported."
-msgstr ""
-"Badago jadanik \"%s\" izeneko inprimagailu bat. Inprimagailu hori ez da "
-"inportatuko."
-
-#: padialog.src#RID_TXT_TESTPAGE_COMMENT.string.text
-msgid "Comment"
-msgstr "Iruzkina"
-
-#: padialog.src#RID_TXT_TESTPAGE_DATE.string.text
-msgid "Date"
-msgstr "Data"
-
-#: padialog.src#RID_TXT_TESTPAGE_MODEL.string.text
-msgid "Model"
-msgstr "Modeloa"
-
-#: padialog.src#RID_TXT_TESTPAGE_NAME.string.text
-msgid "Name"
-msgstr "Izena"
-
-#: padialog.src#RID_TXT_TESTPAGE_QUEUE.string.text
-msgid "Queue"
-msgstr "Ilara"
-
-#: padialog.src#RID_TXT_TESTPAGE_TIME.string.text
-msgid "Time"
-msgstr "Ordua"
-
-#: padialog.src#RID_YOU_SURE.string.text
-msgid "Are you sure ?"
-msgstr "Ziur zaude?"
-
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BOX_SWALLOWFAXNO.checkbox.text
-msgid "~Fax number will be removed from output"
-msgstr "~Fax-zenbakia ez da azalduko irteeran"
-
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_CB_EXTERNAL.checkbox.text
-msgid "~Use system print dialog, disable %PRODUCTNAME's print dialog"
-msgstr ""
-"~Erabili sistemako elkarrizketa-koadroa inprimatzeko , desgaitu %PRODUCTNAME-"
-"(r)en inprimagailuaren elkarrizketa-koadroa"
-
-#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ENABLE_BTN.checkbox.text
-msgid "~Enable font replacement"
-msgstr "~Gaitu letra-tipoak ordeztea"
-
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_DEFAULT.fixedline.text
-msgctxt "rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_DEFAULT.fixedline.text"
-msgid "Printer"
-msgstr "Inprimagailua"
-
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_INSTALL.fixedline.text
-msgid "Select command"
-msgstr "Hautatu komandoa"
-
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FT_QUICKCMD.fixedtext.text
-msgid "Command for quick printing without dialog (optional)"
-msgstr "Komandoa elkarrizketa-koadrorik gabe azkar inprimatzeko (aukerakoa)"
-
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONFIGURE.fixedtext.text
-msgid "~Configure as"
-msgstr "~Konfiguratu honela:"
-
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONNECT.fixedtext.text
-msgid "Command: "
-msgstr "Komandoa: "
-
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_PDFDIR.fixedtext.text
-msgid "PDF target directory :"
-msgstr "PDF helburuko direktorioa :"
-
-#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_DEPTH_TXT.fixedtext.text
-msgid "Color ~depth"
-msgstr "Kolore-~sakonera"
-
-#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDKEY_TXT.fixedtext.text
-msgid "~Option"
-msgstr "~Aukera"
-
-#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDVALUE_TXT.fixedtext.text
-msgid "Current ~value"
-msgstr "~Uneko balioa"
-
-#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_TXT.fixedtext.text
-msgid "Printer ~Language type"
-msgstr "Inprimagailu  Lengoaia mota"
-
-#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_SPACE_TXT.fixedtext.text
-msgid "~Color"
-msgstr "~Kolorea"
-
-#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_FROM_TXT.fixedtext.text
-msgid "Repla~ce font"
-msgstr "Ordeztu ~letra-tipoa"
-
-#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_SUBST_TXT.fixedtext.text
-msgid "Replaced ~fonts"
-msgstr "~Ordeztutako letra-tipoak"
-
-#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_TO_TXT.fixedtext.text
-msgid "by ~printer font"
-msgstr "~inprimagailuko letra-tipoarekin"
-
-#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_BOTTOMMARGIN_TXT.fixedtext.text
-msgid "~Bottom margin"
-msgstr "~Beheko marjina"
-
-#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_COMMENT_TXT.fixedtext.text
-msgid "~Comment"
-msgstr "~Iruzkina"
-
-#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_LEFTMARGIN_TXT.fixedtext.text
-msgid "~Left margin"
-msgstr "E~zkerreko marjina"
-
-#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_RIGHTMARGIN_TXT.fixedtext.text
-msgid "~Right margin"
-msgstr "E~skuineko marjina"
-
-#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_TOPMARGIN_TXT.fixedtext.text
-msgid "~Top margin"
-msgstr "~Goiko marjina"
-
-#: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_DUPLEX_TXT.fixedtext.text
-msgid "~Duplex"
-msgstr "~Bikoitza"
-
-#: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_ORIENTATION_TXT.fixedtext.text
-msgid "~Orientation"
-msgstr "~Orientazioa"
-
-#: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_PAPER_TXT.fixedtext.text
-msgid "~Paper size"
-msgstr "~Paper-tamaina"
-
-#: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_SLOT_TXT.fixedtext.text
-msgid "Paper tray"
-msgstr "Paper-erretilua"
-
-#: rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_PASS_TXT.fixedtext.text
-msgid "~Password"
-msgstr "~Pasahitza"
-
-#: rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_TXT.fixedtext.text
-msgid "Please enter your authentication data for server %s"
-msgstr "Sartu %s zerbitzarirako autentifikazio-datuak"
-
-#: rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_USER_TXT.fixedtext.text
-msgid "~User"
-msgstr "~Erabiltzailea"
-
-#: rtsetup.src#RID_RTS_PWDIALOG.modaldialog.text
-msgid "Authentication request"
-msgstr "Autentifikatzeko eskaera"
-
-#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_COMMANDPAGE.pageitem.text
-msgid "Command"
-msgstr "Komandoa"
-
-#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_DEVICEPAGE.pageitem.text
-msgid "Device"
-msgstr "Gailua"
-
-#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_FONTSUBSTPAGE.pageitem.text
-msgid "Font Replacement"
-msgstr "Letra-tipoen ordeztea"
-
-#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_OTHERPAGE.pageitem.text
-msgid "Other Settings"
-msgstr "Beste ezarpen batzuk"
-
-#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_PAPERPAGE.pageitem.text
-msgid "Paper"
-msgstr "Papera"
-
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_HELP.pushbutton.text
-msgctxt "rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_HELP.pushbutton.text"
-msgid "~Help"
-msgstr "~Laguntza"
-
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_REMOVE.pushbutton.text
-msgctxt ""
-"rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_REMOVE.pushbutton.text"
-msgid "~Remove"
-msgstr "~Kendu"
-
-#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ADD_BTN.pushbutton.text
-msgid "~Add"
-msgstr "Ge~hitu"
-
-#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_REMOVE_BTN.pushbutton.text
-msgctxt ""
-"rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_REMOVE_BTN.pushbutton.text"
-msgid "~Remove"
-msgstr "~Kendu"
-
-#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_DEFAULT_BTN.pushbutton.text
-msgctxt ""
-"rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_DEFAULT_BTN.pushbutton.text"
-msgid "~Default"
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_STD.PushButton.Text
+msgid  "~Default"
 msgstr "~Lehenetsia"
 
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_FAX.string.text
-msgid "Fax"
-msgstr "Faxa"
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_DEL.PushButton.Text
+msgid  "Remo~ve..."
+msgstr "~Kendu…"
 
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PDF.string.text
-msgctxt ""
-"rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PDF.string.text"
-msgid "PDF converter"
+#: source/padialog.src#RID_PADIALOG.RID_PA_TESTPAGE.PushButton.Text
+msgid  "Test ~Page"
+msgstr "~Proba-orria"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_FONTS.PushButton.Text
+msgid  "Fon~ts..."
+msgstr "Letra-~tipoak…"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_ADD.PushButton.Text
+msgid  "New Printer..."
+msgstr "Inprimagailu berria…"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_STR_DEFPRT.String.Text
+msgid  "Default printer"
+msgstr "Inprimagailu lehenetsia"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_STR_RENAME.String.Text
+msgid  "Rename"
+msgstr "Izena aldatu"
+
+#: source/padialog.src#RID_PADIALOG.String.Text
+msgid  "Printer Administration"
+msgstr "Inprimagailu-administrazioa"
+
+#: source/padialog.src#RID_ERR_NOPRINTER.String.Text
+msgid  "Could not open printer %s."
+msgstr "%s inprimagailua ezin izan da ireki."
+
+#: source/padialog.src#RID_PA_TXT_TESTPAGE_PRINTED.String.Text
+msgid  "The test page was printed succesfully. Please check the result."
+msgstr "Proba-orria behar bezala inprimatu da. Begiratu emaitza."
+
+#: source/padialog.src#RID_ERR_NOWRITE.String.Text
+msgid  "No printers can be installed, because the file system is read-only.\nPlease contact your system administrator."
+msgstr ""
+
+#: source/padialog.src#RID_QRY_PRTNAME.String.Text
+msgid  "~New printer name"
+msgstr "~Inprimagailu-izen berria"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_MODEL.String.Text
+msgid  "Model"
+msgstr "Modeloa"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_NAME.String.Text
+msgid  "Name"
+msgstr "Izena"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_COMMENT.String.Text
+msgid  "Comment"
+msgstr "Iruzkina"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_QUEUE.String.Text
+msgid  "Queue"
+msgstr "Ilara"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_DATE.String.Text
+msgid  "Date"
+msgstr "Data"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_TIME.String.Text
+msgid  "Time"
+msgstr "Ordua"
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_OK.OKButton.Text
+msgid  "Close"
+msgstr "Itxi"
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_RENAME.PushButton.Text
+msgid  "Re~name..."
+msgstr "Izena ~aldatu…"
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_REMOVE.PushButton.Text
+msgid  "~Remove..."
+msgstr "~Kendu..."
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_IMPORT.PushButton.Text
+msgid  "~Add..."
+msgstr "~Gehitu..."
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_FIXED.FixedText.Text
+msgid  "Note: The fonts are only available to the applications."
+msgstr "Oharra: letra-tipoak aplikazioarentzat bakarrik daude erabilgarri."
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_RENAME.String.Text
+msgid  "~New name for %s"
+msgstr "%s letra-tipoaren ~izen berria"
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_TTCRENAME.String.Text
+msgid  "~New name for %s (%d1 of %d2)"
+msgstr "%s letra-tipoaren ~izen berria(%d1 / %d2)"
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_NOTRENAMABLE.String.Text
+msgid  "The font %s cannot be renamed due to missing write permission."
+msgstr ""
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.String.Text
+msgid  "Fonts"
+msgstr "Letra-tipoak"
+
+#: source/padialog.src#RID_BXT_TESTPAGE.String.Text
+msgid  "Test page"
+msgstr "Proba-orria"
+
+#: source/padialog.src#RID_BXT_ENVIRONMENT.String.Text
+msgid  "Wrong environment"
+msgstr "Ingurune okerra"
+
+#: source/padialog.src#RID_YOU_SURE.String.Text
+msgid  "Are you sure ?"
+msgstr "Ziur zaude?"
+
+#: source/padialog.src#RID_AFMERROR_OK.String.Text
+msgid  "No error"
+msgstr "Errorerik ez"
+
+#: source/padialog.src#RID_AFMERROR_NO_FONT_NAME.String.Text
+msgid  "The metric does not contain a 'FontName' entry."
+msgstr "Metrikak ez dauka 'FontName' sarrerarik."
+
+#: source/padialog.src#RID_AFMERROR_NO_FULL_NAME.String.Text
+msgid  "The metric does not contain a 'FullName' entry."
+msgstr "Metrikak ez dauka 'FullName' sarrerarik."
+
+#: source/padialog.src#RID_AFMERROR_NO_FAMILY_NAME.String.Text
+msgid  "The metric does not contain a 'FamilyName' entry."
+msgstr "Metrikak ez dauka 'FamilyName' sarrerarik."
+
+#: source/padialog.src#RID_AFMERROR_MOVETO_FAILED.String.Text
+msgid  "The converted metric could not be written."
+msgstr "Bihurtutako metrika ezin izan da idatzi."
+
+#: source/padialog.src#RID_AFMERROR_STREAM_READ_FAILED.String.Text
+msgid  "The metric could not be read."
+msgstr "Metrika ezin izan da irakurri."
+
+#: source/padialog.src#RID_AFMERROR_STREAM_WRITE_FAILED.String.Text
+msgid  "A temporary file could not be created."
+msgstr "Aldi baterako fitxategia ezin izan da sortu."
+
+#: source/padialog.src#RID_AFMERROR_NOT_A_METRIC.STRING.Text
+msgid  "The file does not contain a metric."
+msgstr "Fitxategiak ez dauka metrikarik."
+
+#: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
+msgid  "The metric\n\n%s\n\ncould not be converted for the following reason:\n\n"
+msgstr ""
+
+#: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
+msgid  "Progress"
+msgstr "Progresioa"
+
+#: source/padialog.src#RID_PROGRESS_DLG.FixedText.Text
+msgid  "Please wait"
+msgstr "Itxaron"
+
+#: source/padialog.src#RID_OPERATION_CONVERTMETRIC.String.Text
+msgid  "Font metrics conversion"
+msgstr "Letra-tipoen metrika bihurtzea"
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_PATH.FixedLine.Text
+msgid  "Dri~ver directory"
+msgstr "~Kontrolatzailearen direktorioa"
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_PATH.FixedText.Text
+msgid  "Please select the driver directory."
+msgstr "Hautatu kontrolatzailearen direktorioa."
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_BTN_SEARCH.PushButton.Text
+msgid  "Browse..."
+msgstr "Arakatu..."
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_DRIVER.FixedLine.Text
+msgid  "~Selection of drivers"
+msgstr "Kontrolatzaile-a~ukera"
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_DRIVER.FixedText.Text
+msgid  "Please select the drivers to install and press "%s"."
+msgstr ""
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_STR_LOADINGPPD.String.Text
+msgid  "Searching for drivers"
+msgstr "Kontrolatzaile-bilaketa"
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.CancelButton.Text
+msgid  "Driver Installation"
+msgstr "Kontrolatzaile-instalazioa"
+
+#: source/padialog.src#RID_QUERY_REMOVEDRIVER.String.Text
+msgid  "Do you really want to remove the driver "%s"?"
+msgstr ""
+
+#: source/padialog.src#RID_QUERY_REMOVEPRINTER.String.Text
+msgid  "Do you really want to remove this printer ?"
+msgstr "Benetan kendu nahi duzu inprimagailu hau?"
+
+#: source/padialog.src#RID_QUERY_REMOVEFONTFROMLIST.String.Text
+msgid  "Do you really want to remove the selected fonts ?"
+msgstr "Benetan kendu nahi dituzu hautatutako letra-tipoak?"
+
+#: source/padialog.src#RID_QUERY_DRIVERUSED.String.Text
+msgid  "There are still printers using the driver "%s". Do you really want to remove it? The corresponding printers will also be removed."
+msgstr ""
+
+#: source/padialog.src#RID_ERR_REMOVESGENPRT.String.Text
+msgid  "The driver "%s" is always needed and can therefore not be removed."
+msgstr ""
+
+#: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
+msgid  "The driver "%s1" could not be removed. It was not possible to remove the file\n\n%s2."
+msgstr ""
+
+#: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
+msgid  "The driver "%s" is used by your default printer. Therefore, it cannot be removed."
+msgstr ""
+
+#: source/padialog.src#RID_ERR_PRINTERNOTREMOVEABLE.String.Text
+msgid  "The printer %s cannot be removed."
+msgstr "%s inprimagailua ezin da kendu."
+
+#: source/padialog.src#RID_TXT_PRINTERALREADYEXISTS.String.Text
+msgid  "A printer named "%s" already exists. This printer will not be imported."
+msgstr ""
+
+#: source/padialog.src#RID_TXT_PRINTERWITHOUTCOMMAND.String.Text
+msgid  "The printer "%s" has no valid configuration and, therefore, cannot be imported."
+msgstr ""
+
+#: source/padialog.src#RID_TXT_DRIVERDOESNOTEXIST.String.Text
+msgid  "The driver for the printer "%s1" (%s2) is not installed. Therefore the printer cannot be imported."
+msgstr ""
+
+#: source/padialog.src#RID_TXT_PRINTERADDFAILED.String.Text
+msgid  "The printer "%s" could not be added."
+msgstr ""
+
+#: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_FINISH.OKButton.Text
+msgid  "~Finish"
+msgstr "A~maitu"
+
+#: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_NEXT.PushButton.Text
+msgid  "~Next >>"
+msgstr "~Hurrengoa >>"
+
+#: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_PREV.PushButton.Text
+msgid  "<< ~Back"
+msgstr "<<At~zera"
+
+#: source/padialog.src#RID_ADD_PRINTER_DIALOG.PushButton.Text
+msgid  "Add Printer"
+msgstr "Gehitu inprimagailua"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_STR_TITLE.String.Text
+msgid  "Choose a driver"
+msgstr "Aukeratu kontrolatzailea"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_TXT_DRIVER.FixedText.Text
+msgid  "Please select a s~uitable driver."
+msgstr "Hautatu kontrolatzaile egokia."
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_ADD.PushButton.Text
+msgid  "~Import..."
+msgstr "~Inportatu..."
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_REMOVE.PushButton.Text
+msgid  "~Delete"
+msgstr "E~zabatu"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_STR_REMOVE.String.Text
+msgid  "Delete driver"
+msgstr "Ezabatu kontrolatzailea"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_STR_TITLE.String.Text
+msgid  "Choose a device type"
+msgstr "Hautatu gailu mota bat"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_TXT_OVER.FixedText.Text
+msgid  "Do you want to"
+msgstr "Zer egin nahi duzu?"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PRINTER.RadioButton.Text
+msgid  "Add a ~printer"
+msgstr "~Inprimagailu bat gehitu"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_FAX.RadioButton.Text
+msgid  "Connect a fa~x device"
+msgstr "~Fax-gailu bat konektatu"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PDF.RadioButton.Text
+msgid  "Connect a P~DF converter"
+msgstr "~PDF bihurtzailea konektatu"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_OLD.RadioButton.Text
+msgid  "~Import printers from a StarOffice installation"
+msgstr "Inprimagailuak inportatu ~StarOffice instalaziotik"
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_STR_TITLE.String.Text
+msgid  "Choose a name"
+msgstr "Aukeratu izen bat"
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_NAME.FixedText.Text
+msgid  "Please enter a name for the printer."
+msgstr "Idatzi izen bat inprimagailuarentzat."
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_FAXNAME.FixedText.Text
+msgid  "Please enter a name for the fax connection."
+msgstr "Idatzi izen bat fax-konexioarentzat."
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_PDFNAME.FixedText.Text
+msgid  "Please enter a name for the PDF connection."
+msgstr "Idatzi izen bat PDF konexioarentzat."
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_FAXNAME.Edit.Text
+msgid  "Fax printer"
+msgstr "Fax-inprimagailua"
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_PDFNAME.Edit.Text
+msgid  "PDF converter"
 msgstr "PDF bihurtzailea"
 
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PRINTER.string.text
-msgctxt ""
-"rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PRINTER.string.text"
-msgid "Printer"
-msgstr "Inprimagailua"
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_DEFAULT.CheckBox.Text
+msgid  "~Use as default printer"
+msgstr "~Erabili inprimagailu lehenetsi gisa"
 
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_FAXHELP.string.text
-msgid ""
-"The command line for fax devices is executed as follows: for each fax sent, "
-"\"(TMP)\" in the command line is replaced by a temporary file and "
-"\"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" "
-"appears in the command line, the PostScript code will be supplied via a "
-"file, otherwise it is passed as standard input (i.e. as a pipe)."
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_FAXSWALLOW.CheckBox.Text
+msgid  "Remo~ve fax number from output"
+msgstr "Kendu ~fax-zenbakia irteeratik"
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_STR_TITLE.String.Text
+msgid  "Choose a command line"
+msgstr "Aukeratu komando-lerro bat"
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_COMMAND.FixedText.Text
+msgid  "Please enter a c~ommand line appropriate for this device."
+msgstr "Idatzi gailu honentzat egokia den ~komando-lerro bat."
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_PDFDIR.FixedText.Text
+msgid  "PDF ~target directory"
+msgstr "PDF ~helburuko direktorioa"
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_BTN_HELP.PushButton.Text
+msgid  "~Help"
+msgstr "~Laguntza"
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.String.Text
+msgid  "The command line for PDF converters is executed as follows: for each document printed, "(TMP)" in the command line is replaced by a temporary file and "(OUTFILE)" in the command line is replaced by the target PDF file name. If "(TMP)" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
 msgstr ""
-"Honela exekutatzen da fax-gailuen komando-lerroa: bidalitako fax bakoitzeko, "
-"komando-lerroko \"(TMP)\"ren ordez aldi baterako fitxategi bat jartzen da, "
-"eta \"(PHONE)\"ren ordez, fax-zenbakia. Komando-lerroan \"(TMP)\" badago, "
-"fitxategi baten bidez emango da PostScript kodea, bestela, sarrera "
-"estandarraren bidez (alegia, kanalizazio moduan) pasatuko da."
 
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.string.text
-msgctxt "rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.string.text"
-msgid ""
-"The command line for PDF converters is executed as follows: for each "
-"document printed, \"(TMP)\" in the command line is replaced by a temporary "
-"file and \"(OUTFILE)\" in the command line is replaced by the target PDF "
-"file name. If \"(TMP)\" is in the command line, the PostScript code will be "
-"supplied via a file, otherwise via standard input (i.e. as a pipe)."
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_FAXHELP.String.Text
+msgid  "The command line for fax connections is executed as follows: for each fax sent, "(TMP)" in the command line is replaced by a temporary file and "(PHONE)" in the command line is replaced by the fax number. If "(TMP)" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
 msgstr ""
-"Honela exekutatzen da PDF bihurtzaileen komando-lerroa: inprimatutako "
-"dokumentu bakoitzeko, komando-lerroko \"(TMP)\"ren ordez aldi baterako "
-"fitxategi bat jartzen da, eta \"(OUTFILE)\"ren ordez, helburuko PDF "
-"fitxategiaren izena. Komando-lerroan \"(TMP)\" badago, fitxategi baten bidez "
-"emango da PostScript kodea, bestela, sarrera estandarraren bidez (alegia, "
-"kanalizazio moduan)."
 
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PRINTERHELP.string.text
-msgid ""
-"The command line for printer devices is executed as follows: the generated "
-"PostScript code is supplied as standard input (i.e. as a pipe) to the "
-"command line."
+#: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_STR_TITLE.String.Text
+msgid  "Import printers from old versions"
+msgstr "Inportatu inprimagailuak bertsio zaharretatik"
+
+#: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_TXT_PRINTERS.FixedText.Text
+msgid  "~These printers can be imported. Please select the ones you want to import."
 msgstr ""
-"Honela exekutatzen da inprimagailuen komando-lerroa: sortutako PostScript "
-"kodea sarrera estandar moduan (alegia, kanalizazio moduan) bidaliko da "
-"komando-lerrora."
 
-#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_COLOR_TXT.string.text
-msgid "Color"
-msgstr "Kolorea"
+#: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.PushButton.Text
+msgid  "~Select All"
+msgstr "~Hautatu denak"
 
-#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_GRAY_TXT.string.text
-msgid "Grayscale"
-msgstr "Gris-eskala"
+#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_STR_TITLE.String.Text
+msgid  "Choose a driver"
+msgstr "Aukeratu kontrolatzailea"
 
-#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_FROMDRIVER_TXT.string.text
-msgid "from driver"
+#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_TXT_DRIVER.FixedText.Text
+msgid  "Use the following driver for this fax connection"
+msgstr "Erabili ondoko kontrolatzailea fax-konexio honetarako"
+
+#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_DEFAULT.RadioButton.Text
+msgid  "T~he default driver"
+msgstr "Kontrolatzaile ~lehenetsia"
+
+#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_SELECT.RadioButton.Text
+msgid  "A speci~fic driver, to adapt the format to another printer"
+msgstr "Kontrolatzaile berezia, formatua beste ~inprimagailu bati egokitzeko"
+
+#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_STR_TITLE.String.Text
+msgid  "Choose a driver"
+msgstr "Aukeratu kontrolatzailea"
+
+#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_TXT_DRIVER.FixedText.Text
+msgid  "Use the following driver for this PDF converter"
+msgstr "Erabili ondoko kontrolatzailea PDF bihurtzaile honentzat"
+
+#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DEFAULT.RadioButton.Text
+msgid  "T~he default driver"
+msgstr "Kontrolatzaile ~lehenetsia"
+
+#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DIST.RadioButton.Text
+msgid  "The Adobe D~istiller(tm) driver"
+msgstr "Adobe D~istiller(tm) kontrolatzailea"
+
+#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_SELECT.RadioButton.Text
+msgid  "A spec~ific driver, to adapt the format to another printer"
+msgstr "Kontrolatzaile berezia, ~formatua beste inprimagailu bati egokitzeko"
+
+#: source/padialog.src#RID_TXT_FONT_ITALIC.String.Text
+msgid  "Italic"
+msgstr "Etzana"
+
+#: source/padialog.src#RID_TXT_FONT_OBLIQUE.String.Text
+msgid  "Oblique"
+msgstr "Okerra"
+
+#: source/padialog.src#RID_TXT_FONT_THIN.String.Text
+msgid  "Thin"
+msgstr "Fina"
+
+#: source/padialog.src#RID_TXT_FONT_ULTRALIGHT.String.Text
+msgid  "Ultralight"
+msgstr "Ultra-argia"
+
+#: source/padialog.src#RID_TXT_FONT_SEMILIGHT.String.Text
+msgid  "Semilight"
+msgstr "Erdi-argia"
+
+#: source/padialog.src#RID_TXT_FONT_LIGHT.String.Text
+msgid  "Light"
+msgstr "Argia"
+
+#: source/padialog.src#RID_TXT_FONT_SEMIBOLD.String.Text
+msgid  "Semibold"
+msgstr "Erdi-lodia"
+
+#: source/padialog.src#RID_TXT_FONT_BOLD.String.Text
+msgid  "Bold"
+msgstr "Lodia"
+
+#: source/padialog.src#RID_TXT_FONT_ULTRABOLD.String.Text
+msgid  "Ultrabold"
+msgstr "Ultra-lodia"
+
+#: source/padialog.src#RID_TXT_FONT_ULTRACONDENSED.String.Text
+msgid  "Ultracondensed"
+msgstr "Ultra-estutua"
+
+#: source/padialog.src#RID_TXT_FONT_EXTRACONDENSED.String.Text
+msgid  "Extracondensed"
+msgstr "Estra-estutua"
+
+#: source/padialog.src#RID_TXT_FONT_CONDENSED.String.Text
+msgid  "Condensed"
+msgstr "Estutua"
+
+#: source/padialog.src#RID_TXT_FONT_SEMICONDENSED.String.Text
+msgid  "Semicondensed"
+msgstr "Erdi-estutua"
+
+#: source/padialog.src#RID_TXT_FONT_SEMIEXPANDED.String.Text
+msgid  "Semiexpanded"
+msgstr "Erdi-zabaldua"
+
+#: source/padialog.src#RID_TXT_FONT_EXPANDED.String.Text
+msgid  "Expanded"
+msgstr "Zabaldua"
+
+#: source/padialog.src#RID_TXT_FONT_EXTRAEXPANDED.String.Text
+msgid  "Extraexpanded"
+msgstr "Estra-zabaldua"
+
+#: source/padialog.src#RID_TXT_FONT_ULTRAEXPANDED.String.Text
+msgid  "Ultraexpanded"
+msgstr "Ultra-zabaldua"
+
+#: source/padialog.src#RID_TXT_FONT_REGULAR.String.Text
+msgid  "Regular"
+msgstr "Erregularra"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_COMMANDPAGE.PageItem.Text
+msgid  "Command"
+msgstr "Komandoa"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_PAPERPAGE.PageItem.Text
+msgid  "Paper"
+msgstr "Papera"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_DEVICEPAGE.PageItem.Text
+msgid  "Device"
+msgstr "Gailua"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_FONTSUBSTPAGE.PageItem.Text
+msgid  "Font Replacement"
+msgstr "Letra-tipoen ordeztea"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_OTHERPAGE.PageItem.Text
+msgid  "Other Settings"
+msgstr "Beste ezarpen batzuk"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_FROMDRIVER_TXT.String.Text
+msgid  "from driver"
 msgstr "kontrolatzailetik"
 
-#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_INVALID_TXT.string.text
-msgid "<ignore>"
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_INVALID_TXT.String.Text
+msgid  "<ignore>"
 msgstr "<ez ikusi egin>"
 
-#: rtsetup.src#RID_TXT_QUERYFAXNUMBER.string.text
-msgid "Please enter the fax number."
-msgstr "Idatzi fax-zenbakia."
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.String.Text
+msgid  "Properties of %s"
+msgstr "%s - propietateak"
 
-#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.1.stringlist.text
-msgid "PostScript (Level from driver)"
+#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_PAPER_TXT.FixedText.Text
+msgid  "~Paper size"
+msgstr "~Paper-tamaina"
+
+#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_ORIENTATION_TXT.FixedText.Text
+msgid  "~Orientation"
+msgstr "~Orientazioa"
+
+#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_DUPLEX_TXT.FixedText.Text
+msgid  "~Duplex"
+msgstr "~Bikoitza"
+
+#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_SLOT_TXT.FixedText.Text
+msgid  "Paper tray"
+msgstr "Paper-erretilua"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_COLOR_TXT.String.Text
+msgid  "Color"
+msgstr "Kolorea"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_GRAY_TXT.String.Text
+msgid  "Grayscale"
+msgstr "Gris-eskala"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDKEY_TXT.FixedText.Text
+msgid  "~Option"
+msgstr "~Aukera"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDVALUE_TXT.FixedText.Text
+msgid  "Current ~value"
+msgstr "~Uneko balioa"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_TXT.FixedText.Text
+msgid  "Printer ~Language type"
+msgstr "Inprimagailu  Lengoaia mota"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.1.StringList.item
+msgid  "PostScript (Level from driver)"
 msgstr "PostScript (kontrolatzailearen maila)"
 
-#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.2.stringlist.text
-msgid "PostScript Level 1"
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.2.StringList.item
+msgid  "PostScript Level 1"
 msgstr "PostScript-en 1. maila"
 
-#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.3.stringlist.text
-msgid "PostScript Level 2"
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.3.StringList.item
+msgid  "PostScript Level 2"
 msgstr "PostScript-en 2. maila"
 
-#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.4.stringlist.text
-msgid "PostScript Level 3"
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.4.StringList.item
+msgid  "PostScript Level 3"
 msgstr "PostScript-en 3. maila"
 
-#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.5.stringlist.text
-msgid "PDF"
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.10.StringList.item
+msgid  "PDF"
 msgstr "PDF"
 
-#: rtsetup.src#RID_RTS_RTSDIALOG.tabdialog.text
-msgid "Properties of %s"
-msgstr "%s - propietateak"
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_SPACE_TXT.FixedText.Text
+msgid  "~Color"
+msgstr "~Kolorea"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_DEPTH_TXT.FixedText.Text
+msgid  "Color ~depth"
+msgstr "Kolore-~sakonera"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ENABLE_BTN.CheckBox.Text
+msgid  "~Enable font replacement"
+msgstr "~Gaitu letra-tipoak ordeztea"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_SUBST_TXT.FixedText.Text
+msgid  "Replaced ~fonts"
+msgstr "~Ordeztutako letra-tipoak"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ADD_BTN.PushButton.Text
+msgid  "~Add"
+msgstr "Ge~hitu"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_REMOVE_BTN.PushButton.Text
+msgid  "~Remove"
+msgstr "~Kendu"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_FROM_TXT.FixedText.Text
+msgid  "Repla~ce font"
+msgstr "Ordeztu ~letra-tipoa"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_TO_TXT.FixedText.Text
+msgid  "by ~printer font"
+msgstr "~inprimagailuko letra-tipoarekin"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_CB_EXTERNAL.CheckBox.Text
+msgid  "~Use system print dialog, disable %PRODUCTNAME's print dialog"
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FT_QUICKCMD.FixedText.Text
+msgid  "Command for quick printing without dialog (optional)"
+msgstr "Komandoa elkarrizketa-koadrorik gabe azkar inprimatzeko (aukerakoa)"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_INSTALL.FixedLine.Text
+msgid  "Select command"
+msgstr "Hautatu komandoa"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PRINTER.String.Text
+msgid  "Printer"
+msgstr "Inprimagailua"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_FAX.String.Text
+msgid  "Fax"
+msgstr "Faxa"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PDF.String.Text
+msgid  "PDF converter"
+msgstr "PDF bihurtzailea"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONFIGURE.FixedText.Text
+msgid  "~Configure as"
+msgstr "~Konfiguratu honela:"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BOX_SWALLOWFAXNO.CheckBox.Text
+msgid  "~Fax number will be removed from output"
+msgstr "~Fax-zenbakia ez da azalduko irteeran"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_PDFDIR.FixedText.Text
+msgid  "PDF target directory :"
+msgstr "PDF helburuko direktorioa :"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONNECT.FixedText.Text
+msgid  "Command: "
+msgstr "Komandoa: "
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_DEFAULT.FixedLine.Text
+msgid  "Printer"
+msgstr "Inprimagailua"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_HELP.PushButton.Text
+msgid  "~Help"
+msgstr "~Laguntza"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_REMOVE.PushButton.Text
+msgid  "~Remove"
+msgstr "~Kendu"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.String.Text
+msgid  "The command line for PDF converters is executed as follows: for each document printed, "(TMP)" in the command line is replaced by a temporary file and "(OUTFILE)" in the command line is replaced by the target PDF file name. If "(TMP)" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PRINTERHELP.String.Text
+msgid  "The command line for printer devices is executed as follows: the generated PostScript code is supplied as standard input (i.e. as a pipe) to the command line."
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_FAXHELP.String.Text
+msgid  "The command line for fax devices is executed as follows: for each fax sent, "(TMP)" in the command line is replaced by a temporary file and "(PHONE)" in the command line is replaced by the fax number. If "(TMP)" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_LEFTMARGIN_TXT.FixedText.Text
+msgid  "~Left margin"
+msgstr "E~zkerreko marjina"
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_TOPMARGIN_TXT.FixedText.Text
+msgid  "~Top margin"
+msgstr "~Goiko marjina"
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_RIGHTMARGIN_TXT.FixedText.Text
+msgid  "~Right margin"
+msgstr "E~skuineko marjina"
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_BOTTOMMARGIN_TXT.FixedText.Text
+msgid  "~Bottom margin"
+msgstr "~Beheko marjina"
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_COMMENT_TXT.FixedText.Text
+msgid  "~Comment"
+msgstr "~Iruzkina"
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_DEFAULT_BTN.PushButton.Text
+msgid  "~Default"
+msgstr "~Lehenetsia"
+
+#: source/rtsetup.src#RID_TXT_QUERYFAXNUMBER.String.Text
+msgid  "Please enter the fax number."
+msgstr "Idatzi fax-zenbakia."
+
+#: source/rtsetup.src#RID_RTS_PWDIALOG.ModalDialog.Text
+msgid  "Authentication request"
+msgstr "Autentifikatzeko eskaera"
+
+#: source/rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_TXT.FixedText.Text
+msgid  "Please enter your authentication data for server %s"
+msgstr "Sartu %s zerbitzarirako autentifikazio-datuak"
+
+#: source/rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_USER_TXT.FixedText.Text
+msgid  "~User"
+msgstr "~Erabiltzailea"
+
+#: source/rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_PASS_TXT.FixedText.Text
+msgid  "~Password"
+msgstr "~Pasahitza"

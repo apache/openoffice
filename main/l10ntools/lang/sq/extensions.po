@@ -1,2796 +1,2580 @@
-
-#: updatehdl.src#RID_UPDATE_STR_CHECKING.string.text
-msgid "Checking..."
-msgstr "Kontrolli i sekuencës"
-
-#: updatehdl.src#RID_UPDATE_STR_CHECKING_ERR.string.text
-msgid "Checking for an update failed."
-msgstr "Ekzekutimi i 'update-grub' dështoi."
-
-#: updatehdl.src#RID_UPDATE_STR_NO_UPD_FOUND.string.text
-msgid "%PRODUCTNAME %PRODUCTVERSION is up to date."
-msgstr ""
-
-#: updatehdl.src#RID_UPDATE_STR_UPD_FOUND.string.text
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
 msgid ""
-"%PRODUCTNAME %NEXTVERSION is available.\n"
-"\n"
-"The installed version is %PRODUCTNAME %PRODUCTVERSION.\n"
-"\n"
-"Note: Before downloading  an update, please ensure that you have sufficient "
-"access rights to install it.\n"
-"A password, usually the administrator's or root password, may be required."
 msgstr ""
-
-#: updatehdl.src#RID_UPDATE_STR_DLG_TITLE.string.text
-msgid "Check for Updates"
-msgstr "E gatshme për përdorim"
-
-#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_PAUSE.string.text
-msgid "Downloading %PRODUCTNAME %NEXTVERSION paused at..."
-msgstr "Prezantim %PRODUCTNAME %PRODUCTVERSION"
-
-#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_ERR.string.text
-msgid "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
-msgstr "Prezantim %PRODUCTNAME %PRODUCTVERSION"
-
-#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.string.text
-msgid ""
-"The download location is: %DOWNLOAD_PATH.\n"
-"\n"
-"Under Tools – Options... - %PRODUCTNAME – Online Update you can change the "
-"download location."
-msgstr ""
-
-#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.string.text
-msgid "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
-msgstr ""
-
-#: updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.string.text
-msgid ""
-"The automatic download of the update is currently not available.\n"
-"\n"
-"Click 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the "
-"web site."
-msgstr ""
-
-#: updatehdl.src#RID_UPDATE_STR_DOWNLOADING.string.text
-msgid "Downloading %PRODUCTNAME %NEXTVERSION..."
-msgstr "Prezantim %PRODUCTNAME %PRODUCTVERSION"
-
-#: updatehdl.src#RID_UPDATE_STR_READY_INSTALL.string.text
-msgid ""
-"Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
-msgstr ""
-
-#: updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.string.text
-msgid "%PRODUCTNAME %PRODUCTVERSION"
-msgstr "%PRODUCTNAME %PRODUCTVERSION"
-
-#: updatehdl.src#RID_UPDATE_STR_CANCEL_DOWNLOAD.string.text
-msgid "Do you really want to cancel the download?"
-msgstr "Vërtetë dëshironi të fshini Stilin $1?"
-
-#: updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.string.text
-msgid ""
-"To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do "
-"you want to install the update now?"
-msgstr ""
-
-#: updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.string.text
-msgid "Install ~now"
-msgstr "Regjistrohuni tash"
-
-#: updatehdl.src#RID_UPDATE_STR_INSTALL_LATER.string.text
-msgid "Install ~later"
-msgstr "Duke vlefshmërinë e instalimit"
-
-#: updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.string.text
-msgid ""
-"Could not run the installer application, please run %FILE_NAME in %"
-"DOWNLOAD_PATH manually."
-msgstr ""
-
-#: updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.string.text
-msgid ""
-"A file with that name already exists! Do you want to overwrite the existing "
-"file?"
-msgstr ""
-
-#: updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.string.text
-msgid ""
-"A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you "
-"want to continue with the download or delete and reload the file?"
-msgstr ""
-
-#: updatehdl.src#RID_UPDATE_STR_RELOAD_RELOAD.string.text
-msgid "Reload File"
-msgstr ""
-
-#: updatehdl.src#RID_UPDATE_STR_RELOAD_CONTINUE.string.text
-msgid "Continue"
-msgstr ""
-
-#: updatehdl.src#RID_UPDATE_STR_PERCENT.string.text
-msgid "%PERCENT%"
-msgstr "Përqindja"
-
-#: updatehdl.src#RID_UPDATE_FT_STATUS.string.text
-msgid "Status"
-msgstr "Gjendje"
-
-#: updatehdl.src#RID_UPDATE_FT_DESCRIPTION.string.text
-msgid "Description"
-msgstr "Përshkrimi"
-
-#: updatehdl.src#RID_UPDATE_BTN_CLOSE.string.text
-msgid "Close"
-msgstr "Mbylle"
-
-#: updatehdl.src#RID_UPDATE_BTN_DOWNLOAD.string.text
-msgid "~Download"
-msgstr "Shkarko"
-
-#: updatehdl.src#RID_UPDATE_BTN_INSTALL.string.text
-msgid "~Install"
-msgstr "&Instalo"
-
-#: updatehdl.src#RID_UPDATE_BTN_PAUSE.string.text
-msgid "~Pause"
-msgstr "Pauzo..."
-
-#: updatehdl.src#RID_UPDATE_BTN_RESUME.string.text
-msgid "~Resume"
-msgstr "Rimerr instalimin"
-
-#: updatehdl.src#RID_UPDATE_BTN_CANCEL.string.text
-msgid "Cancel"
-msgstr "Anulo"
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.string.text
-msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.string.text"
-msgid "%PRODUCTNAME update available"
-msgstr "E gatshme për përdorim"
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_AVAIL.string.text
-msgid "Click here to start the download."
-msgstr "kliko këtu që të krijosh dokumente të reja"
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.string.text
-msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.string.text"
-msgid "%PRODUCTNAME update available"
-msgstr "E gatshme për përdorim"
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.string.text
-msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.string.text"
-msgid "Click here for more information."
-msgstr "Të lutem kontrollo regjistrin e sistemit për më tepër të dhëna."
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.string.text
-msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.string.text"
-msgid "%PRODUCTNAME update available"
-msgstr "E gatshme për përdorim"
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_AUTO_START.string.text
-msgid "Download of update begins."
-msgstr "Azhuro të gjitha lidhjet"
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOADING.string.text
-msgid "Download of update in progress"
-msgstr ""
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_PAUSED.string.text
-msgid "Download of update paused"
-msgstr "Azhuro të gjitha lidhjet"
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_PAUSED.string.text
-msgid "Click here to resume."
-msgstr "Kliko këtu për të filluar"
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_T_ERROR_DOWNLOADING.string.text
-msgid "Download of update stalled"
-msgstr "Azhuro të gjitha lidhjet"
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.string.text
-msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.string.text"
-msgid "Click here for more information."
-msgstr "Të lutem kontrollo regjistrin e sistemit për më tepër të dhëna."
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_AVAIL.string.text
-msgid "Download of update completed"
-msgstr "Azhuro të gjitha lidhjet"
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_AVAIL.string.text
-msgid "Click here to start the installation."
-msgstr "Kliko Instalo që të fillojë instalimi."
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_T_EXT_UPD_AVAIL.string.text
-msgid "Updates for extensions available"
-msgstr ""
-
-#: updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.string.text
-msgctxt "updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.string.text"
-msgid "Click here for more information."
-msgstr "Të lutem kontrollo regjistrin e sistemit për më tepër të dhëna."
-
-#: Addons.xcu#.Addons.AddonUI.OfficeHelp.UpdateCheckJob.Title.value.text
-msgid "Check for ~Updates..."
-msgstr "E gatshme për përdorim"
-
-#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.FL_DATA.fixedline.text
-msgctxt "commonpagesdbp.src#RID_PAGE_TABLESELECTION.FL_DATA.fixedline.text"
-msgid "Data"
-msgstr "Të dhëna"
-
-#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.fixedtext.text
-msgid ""
-"Currently, the form the control belongs to is not (or not completely) bound "
-"to a data source.\n"
-"\n"
-"Please choose a data source and a table.\n"
-"\n"
-"\n"
-"Please note that the settings made on this page will take effect immediately "
-"upon leaving the page."
-msgstr ""
-"Aktualisht, formulimi që i takon kontrollës nuk është ( ose jo komplet) e "
-"lidhur në burimin e të dhënave.\n"
-"\n"
-"Ju lutem zgjedhni një burim të të dhënave dhe një tabelë.\n"
-"\n"
-"\n"
-"Ju lutem mbani shënim që aranzhimet e bëra në këtë faqe do të kenë efekt "
-"menjëherë në mbarim të kësaj faqe."
-
-#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.fixedtext.text
-msgid "~Data source:"
-msgstr "~Burimit i të dhënave:"
-
-#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.PB_FORMDATASOURCE.pushbutton.text
-msgid "~..."
-msgstr "~..."
-
-#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_TABLE.fixedtext.text
-msgid "~Table / Query:"
-msgstr "Tabela;Pyetsori; Sql;Sql[Autokton]"
-
-#: commonpagesdbp.src#RID_PAGE_TABLESELECTION.tabpage.text
-msgctxt "commonpagesdbp.src#RID_PAGE_TABLESELECTION.tabpage.text"
-msgid "Data"
-msgstr "Të dhëna"
-
-#: commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.FT_DATABASEFIELD_QUEST.fixedtext.text
-msgid "Do you want to save the value in a database field?"
-msgstr "A dëshironi të ruani vlerat në një fushë të të dhënave bazë?"
-
-#: commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_YES.radiobutton.text
-msgid "~Yes, I want to save it in the following database field:"
-msgstr "~Po, Unë dëshiroj të ruaj atë në fushën e mëposhtme të të dhënave bazë:"
-
-#: commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_NO.radiobutton.text
-msgid "~No, I only want to save the value in the form."
-msgstr "~Jo, Unë vetëm dua të ruaj vlerën në formulim."
-
-#: commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.tabpage.text
-msgid "Database Field"
-msgstr "Fusha e Bazës së të Dhënave"
-
-#: commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FL_FORMSETINGS.fixedline.text
-msgid "Form"
-msgstr "Formular"
-
-#: commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMDATASOURCELABEL.fixedtext.text
-msgid "Data source"
-msgstr "Burimi i të dhënave"
-
-#: commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMCONTENTTYPELABEL.fixedtext.text
-msgid "Content type"
-msgstr "Lloj i përmbajtjes"
-
-#: commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMTABLELABEL.fixedtext.text
-msgid "Content"
-msgstr "Përmbajtje"
-
-#: commonpagesdbp.src#RID_STR_TYPE_TABLE.string.text
-msgid "Table"
-msgstr "Tabelë"
-
-#: commonpagesdbp.src#RID_STR_TYPE_QUERY.string.text
-msgid "Query"
-msgstr "Pyetësor"
-
-#: commonpagesdbp.src#RID_STR_TYPE_COMMAND.string.text
-msgid "SQL command"
-msgstr "Komanda SQL "
-
-#: dbpilots.src#RID_DLG_GROUPBOXWIZARD.modaldialog.text
-msgid "Group Element Wizard"
-msgstr "AutoPilot Element Grup"
-
-#: dbpilots.src#RID_DLG_GRIDWIZARD.modaldialog.text
-msgid "Table Element Wizard"
-msgstr "Autopilot Element Tabelë"
-
-#: dbpilots.src#RID_STR_LISTWIZARD_TITLE.string.text
-msgid "List Box Wizard"
-msgstr "AutoPilot Kuti Listë"
-
-#: dbpilots.src#RID_STR_COMBOWIZARD_TITLE.string.text
-msgid "Combo Box Wizard"
-msgstr "AutoPilot  Kuti Krehër"
-
-#: dbpilots.src#RID_STR_COULDNOTOPENTABLE.string.text
-msgid "The table connection to the data source could not be established."
-msgstr "Lidhja e tabelës për burimin e të dhënave nuk mund të ngritet."
-
-#: gridpages.src#RID_PAGE_GW_FIELDSELECTION.FL_FRAME.fixedline.text
-msgid "Table element"
-msgstr "Element tabele"
-
-#: gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.fixedtext.text
-msgctxt "gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.fixedtext.text"
-msgid "Existing fields"
-msgstr "Fushat ekzistuese"
-
-#: gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_SELECTED_FIELDS.fixedtext.text
-msgid "Selected fields"
-msgstr "Fushat e përzgjedhura"
-
-#: gridpages.src#RID_PAGE_GW_FIELDSELECTION.tabpage.text
-msgctxt "gridpages.src#RID_PAGE_GW_FIELDSELECTION.tabpage.text"
-msgid "Field Selection"
-msgstr "Përzgjedhje e fushës"
-
-#: gridpages.src#RID_STR_DATEPOSTFIX.string.text
-msgid " (Date)"
-msgstr "(Data)"
-
-#: gridpages.src#RID_STR_TIMEPOSTFIX.string.text
-msgid " (Time)"
-msgstr "(Koha)"
-
-#: groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOLABELS.fixedtext.text
-msgid "Which ~names do you want to give the option fields?"
-msgstr "Cilët ~emra dëshironi ti ipni fushave së mundshme?"
-
-#: groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.fixedtext.text
-msgctxt "groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.fixedtext.text"
-msgid "~Option fields"
-msgstr "~Fushat e mundshme"
-
-#: groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.tabpage.text
-msgctxt "groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.tabpage.text"
-msgid "Data"
-msgstr "Të dhëna"
-
-#: groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.FT_DEFAULTSELECTION.fixedtext.text
-msgid "Should one option field be selected as a default?"
-msgstr "A do të jetë e përzgjedhur një fushë mundshme si një mosparaqitje?"
-
-#: groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_YES.radiobutton.text
-msgid "~Yes, the following:"
-msgstr "~Po, vijuesja:"
-
-#: groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_NO.radiobutton.text
-msgid "No, one particular field is not going to be selected."
-msgstr "Jo, nuk do të përzgjedhet. një fushë e veqantë ."
-
-#: groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.tabpage.text
-msgid "Default Field Selection"
-msgstr "Mosparqitje Fushës Përzgjedhur"
-
-#: groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES_EXPL.fixedtext.text
-msgid "When you select an option, the option group is given a specific value."
-msgstr ""
-"Kur ju të përzgjedhni një mundësi, grupit të zgjedhjes i është dhënë një "
-"vlerë specifike. "
-
-#: groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES.fixedtext.text
-msgid "Which ~value do you want to assign to each option?"
-msgstr "Cila ~vlerë dëshironi të caktohet tek secila zgjedhje?"
-
-#: groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_RADIOBUTTONS.fixedtext.text
-msgctxt "groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_RADIOBUTTONS.fixedtext.text"
-msgid "~Option fields"
-msgstr "~Fushat e mundshme"
-
-#: groupboxpages.src#RID_PAGE_OPTIONVALUES.tabpage.text
-msgid "Field Values"
-msgstr "Vlerat e Fushës"
-
-#: groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_NAMEIT.fixedtext.text
-msgid "Which ~caption is to be given to your option group?"
-msgstr "Cili ~titull është për tu dhënë tek grupi juaj i zgjedhjeve?"
-
-#: groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_THATSALL.fixedtext.text
-msgid "These were all details needed to create the option group."
-msgstr ""
-"Këto ishin të gjitha detalet e nevojshme për të krijuar grupin e zgjedhjeve."
-
-#: groupboxpages.src#RID_PAGE_OPTIONS_FINAL.tabpage.text
-msgid "Create Option Group"
-msgstr "Krijo Grup Zgjedhje"
-
-#: groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.string.text
-msgid ""
-"You can either save the value of the option group in a database field or use "
-"it for a later action."
-msgstr ""
-"Ju për më tepër mund ti ruani vlerat e grupit të zgjedhjeve në një fushë të "
-"bazës së të dhënave ose përdor ato për një veprim të mëvonshëm."
-
-#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FL_FRAME.fixedline.text
-msgid "Control"
-msgstr "Kontrolli"
-
-#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.fixedtext.text
-msgid ""
-"On the right side, you see all the tables from the data source of the form.\n"
-"\n"
-"\n"
-"Choose the table from which the data should be used as basis for the list "
-"content:"
-msgstr ""
-"Në anën e djathtë, ju shihni të gjitha tabelat nga burimet e të dhënave në "
-"formulim.\n"
-"\n"
-"\n"
-"Zgjidh tabeln nga e cila të dhënat duhet të përdoren si bazë për përmbatjen "
-"e listes: "
-
-#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.tabpage.text
-msgid "Table Selection"
-msgstr "Përzgjedhje Tabele"
-
-#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_TABLEFIELDS.fixedtext.text
-msgctxt "listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_TABLEFIELDS.fixedtext.text"
-msgid "Existing fields"
-msgstr "Fushat ekzistuese"
-
-#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_DISPLAYEDFIELD.fixedtext.text
-msgid "Display field"
-msgstr "Paraqit fushën"
-
-#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_COMBOBOX.string.text
-msgid "The contents of the field selected will be shown in the combo box list."
-msgstr ""
-"Përmbatjet nga fusha e përzgjedhur do të tregohen në listen e kutisë "
-"krehëse."
-
-#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.string.text
-msgid ""
-"The contents of the selected field will be shown in the list box if the "
-"linked fields are identical."
-msgstr ""
-"Përmbatjet nga fusha e përzgjedhur do të tregohen në listen e kutisë nëse "
-"fushat  e lidhura janë identike."
-
-#: listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.tabpage.text
-msgctxt "listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.tabpage.text"
-msgid "Field Selection"
-msgstr "Përzgjedhje e fushës"
-
-#: listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.fixedtext.text
-msgid ""
-"This is where you select fields with matching contents so that the value "
-"from the display field will be shown."
-msgstr ""
-"Kjo është ku ju përzgjedhni fushat me bashkërendim të përmabjtjeve kështu që "
-"do të tregohen vlerat nga fusha e paraqitur."
-
-#: listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.fixedtext.text
-msgid "Field from the ~Value Table"
-msgstr "Fushë nga~Tabele Vlere "
-
-#: listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_TABLEFIELD.fixedtext.text
-msgid "Field from the ~List Table"
-msgstr "Fushë nga~Tabelë Liste"
-
-#: listcombopages.src#RID_PAGE_LCW_FIELDLINK.tabpage.text
-msgid "Field Link"
-msgstr "Lidhje Fushe"
-
-#: listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.string.text
-msgid ""
-"You can either save the value of the combo box in a database field or use it "
-"for display purposes."
-msgstr ""
-"Për më tepër ju do të ruani vlerat e kutisë krehëse në një fushë të të "
-"dhënave ose përdor atë për propozime të paraqitjes."
-
-#: fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.pageitem.text
-msgctxt "fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.pageitem.text"
-msgid "Font"
-msgstr "Fonti"
-
-#: fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS_EXT.pageitem.text
-msgid "Font Effects"
-msgstr "Efektet e fontit"
-
-#: fontdialog.src#RID_TABDLG_FONTDIALOG.tabdialog.text
-msgid "Character"
-msgstr "Karakter"
-
-#: formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.fixedtext.text
-msgid ""
-"Sub forms can be used to display detailed data about the current record of "
-"the master form. To do this, you can specify which columns in the sub form "
-"match which columns in the master form."
-msgstr ""
-
-#: formlinkdialog.src#RID_DLG_FORMLINKS.modaldialog.text
-msgid "Link fields"
-msgstr "Lidh fushat kryesore"
-
-#: formlinkdialog.src#PB_SUGGEST.pushbutton.text
-msgid "Suggest"
-msgstr ""
-
-#: formlinkdialog.src#STR_DETAIL_FORM.string.text
-msgid "Sub Form"
-msgstr "Dizajnimi i formularit"
-
-#: formlinkdialog.src#STR_MASTER_FORM.string.text
-msgid "Master Form"
-msgstr "Dizajnimi i formularit"
-
-#: formlinkdialog.src#STR_ERROR_RETRIEVING_COLUMNS.string.text
-msgid "The columns of '#' could not be retrieved."
-msgstr "Fajlli nuk mund të ruhet!"
-
-#: formres.src#RID_STR_EDITMASK.string.text
-msgid "Edit mask"
-msgstr "Redakto maskën"
-
-#: formres.src#RID_STR_LITERALMASK.string.text
-msgid "Literal mask"
-msgstr "Maska e saktë"
-
-#: formres.src#RID_STR_READONLY.string.text
-msgctxt "formres.src#RID_STR_READONLY.string.text"
-msgid "Read-only"
-msgstr "Vetëm -lexim"
-
-#: formres.src#RID_STR_ENABLED.string.text
-msgid "Enabled"
-msgstr "Mundësuar"
-
-#: formres.src#RID_STR_ENABLE_VISIBLE.string.text
-msgid "Visible"
-msgstr "Madhësi e dallueshme"
-
-#: formres.src#RID_STR_AUTOCOMPLETE.string.text
-msgid "AutoFill"
-msgstr "AutoPërmbushje"
-
-#: formres.src#RID_STR_LINECOUNT.string.text
-msgid "Line count"
-msgstr "Numëro rreshtat"
-
-#: formres.src#RID_STR_MAXTEXTLEN.string.text
-msgid "Max. text length"
-msgstr "Gjatësia maksimale e tekstit"
-
-#: formres.src#RID_STR_SPIN.string.text
-msgid "Spin Button"
-msgstr "Buton rrotullues"
-
-#: formres.src#RID_STR_STRICTFORMAT.string.text
-msgid "Strict format"
-msgstr "Format i caktuar"
-
-#: formres.src#RID_STR_SHOWTHOUSANDSEP.string.text
-msgid "Thousands separator"
-msgstr "Ndarës i mijësheve"
-
-#: formres.src#RID_STR_PRINTABLE.string.text
-msgid "Printable"
-msgstr "Objekt, që shtypet"
-
-#: formres.src#RID_STR_TARGET_URL.string.text
-msgctxt "formres.src#RID_STR_TARGET_URL.string.text"
-msgid "URL"
-msgstr "URL"
-
-#: formres.src#RID_STR_TARGET_FRAME.string.text
-msgctxt "formres.src#RID_STR_TARGET_FRAME.string.text"
-msgid "Frame"
-msgstr "Kornizë"
-
-#: formres.src#RID_STR_HELPTEXT.string.text
-msgid "Help text"
-msgstr "Teksti  ndihmës"
-
-#: formres.src#RID_STR_HELPURL.string.text
-msgid "Help URL"
-msgstr "Ndihma URL"
-
-#: formres.src#RID_STR_TAG.string.text
-msgid "Additional information"
-msgstr "Informata shtesë"
-
-#: formres.src#RID_STR_ECHO_CHAR.string.text
-msgid "Password character"
-msgstr "Kodi i karakterit"
-
-#: formres.src#RID_STR_TRISTATE.string.text
-msgid "Tristate"
-msgstr "Trirangë"
-
-#: formres.src#RID_STR_EMPTY_IS_NULL.string.text
-msgid "Empty string is NULL"
-msgstr "Vargu i thatë është i PAVLEFSHËM"
-
-#: formres.src#RID_STR_DECIMAL_ACCURACY.string.text
-msgid "Decimal accuracy"
-msgstr "Saktësia decimale"
-
-#: formres.src#RID_STR_IMAGE_URL.string.text
-msgid "Graphics"
-msgstr "Grafikat"
-
-#: formres.src#RID_STR_DEFAULT_SELECT_SEQ.string.text
-msgid "Default selection"
-msgstr "Mosparaqit përzgjedhjen"
-
-#: formres.src#RID_STR_DEFAULT_BUTTON.string.text
-msgid "Default button"
-msgstr "Mosparaqit butonin"
-
-#: formres.src#RID_STR_LABELCONTROL.string.text
-msgctxt "formres.src#RID_STR_LABELCONTROL.string.text"
-msgid "Label Field"
-msgstr "Fushë emërimi"
-
-#: formres.src#RID_STR_LABEL.string.text
-msgid "Label"
-msgstr "Emërtimi"
-
-#: formres.src#RID_STR_ALIGN.string.text
-msgid "Alignment"
-msgstr "Mbështetje"
-
-#: formres.src#RID_STR_VERTICAL_ALIGN.string.text
-msgid "Vert. Alignment"
-msgstr "Mbështetje vertikale"
-
-#: formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.1.string.text
-msgid "Top"
-msgstr "Lartë"
-
-#: formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.2.string.text
-msgid "Middle"
-msgstr "Lart - në mes"
-
-#: formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.3.string.text
-msgid "Bottom"
-msgstr "Poshtë"
-
-#: formres.src#RID_STR_IMAGEPOSITION.string.text
-msgid "Graphics alignment"
-msgstr "Mbështetje vertikale"
-
-#: formres.src#RID_STR_FONT.string.text
-msgctxt "formres.src#RID_STR_FONT.string.text"
-msgid "Font"
-msgstr "Fonti"
-
-#: formres.src#RID_STR_BACKGROUNDCOLOR.string.text
-msgid "Background color"
-msgstr "Ngjyra e sfondit"
-
-#: formres.src#RID_STR_BORDER.string.text
-msgid "Border"
-msgstr "Kufiri"
-
-#: formres.src#RID_STR_ICONSIZE.string.text
-msgid "Icon size"
-msgstr "Madhësia Origjinale"
-
-#: formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.1.string.text
-msgid "Small"
-msgstr "SMALL"
-
-#: formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.2.string.text
-msgid "Large"
-msgstr "LARGE"
-
-#: formres.src#RID_STR_SHOW_POSITION.string.text
-msgid "Positioning"
-msgstr ""
-
-#: formres.src#RID_STR_SHOW_NAVIGATION.string.text
-msgid "Navigation"
-msgstr "Orientimi"
-
-#: formres.src#RID_STR_SHOW_RECORDACTIONS.string.text
-msgid "Acting on a record"
-msgstr "Mbroje regjistrin e ndryshimeve"
-
-#: formres.src#RID_STR_SHOW_FILTERSORT.string.text
-msgid "Filtering / Sorting"
-msgstr "Filtrimi Kyçyr/Ç'kyçur"
-
-#: formres.src#RID_STR_HSCROLL.string.text
-msgid "Horizontal scroll bar"
-msgstr "Shirit rrotullues horizontal"
-
-#: formres.src#RID_STR_VSCROLL.string.text
-msgid "Vertical scroll bar"
-msgstr "Shirit rrotullues vertikal"
-
-#: formres.src#RID_STR_WORDBREAK.string.text
-msgid "Word break"
-msgstr "Thyerje e rreshtit"
-
-#: formres.src#RID_STR_MULTILINE.string.text
-msgid "Multiline input"
-msgstr "Hyrje e shumë rreshtave"
-
-#: formres.src#RID_STR_MULTISELECTION.string.text
-msgid "Multiselection"
-msgstr "Zgjedhje e shumëfishtë"
-
-#: formres.src#RID_STR_NAME.string.text
-msgid "Name"
-msgstr "Emri"
-
-#: formres.src#RID_STR_TABINDEX.string.text
-msgid "Tab order"
-msgstr "Tab Renditja"
-
-#: formres.src#RID_STR_WHEEL_BEHAVIOR.string.text
-msgid "Mouse wheel scroll"
-msgstr ""
-
-#: formres.src#RID_STR_FILTER.string.text
-msgid "Filter"
-msgstr "Filtër"
-
-#: formres.src#RID_STR_SORT_CRITERIA.string.text
-msgid "Sort"
-msgstr "Rendit"
-
-#: formres.src#RID_STR_RECORDMARKER.string.text
-msgid "Record marker"
-msgstr "Shënues regjistrimi"
-
-#: formres.src#RID_STR_FILTERPROPOSAL.string.text
-msgid "Filter proposal"
-msgstr "Propozim filtri"
-
-#: formres.src#RID_STR_NAVIGATION.string.text
-msgid "Navigation bar"
-msgstr "Shiriti i orientimit"
-
-#: formres.src#RID_STR_CYCLE.string.text
-msgid "Cycle"
-msgstr "Cikël"
-
-#: formres.src#RID_STR_TABSTOP.string.text
-msgid "Tabstop"
-msgstr "Tabstop"
-
-#: formres.src#RID_STR_CONTROLSOURCE.string.text
-msgid "Data field"
-msgstr "Fusha e të dhënave"
-
-#: formres.src#RID_STR_DROPDOWN.string.text
-msgid "Dropdown"
-msgstr "Rënie poshtë"
-
-#: formres.src#RID_STR_BOUNDCOLUMN.string.text
-msgid "Bound field"
-msgstr "Fusha lidhëse"
-
-#: formres.src#RID_STR_LISTSOURCE.string.text
-msgid "List content"
-msgstr "Përmbajtja e listës "
-
-#: formres.src#RID_STR_LISTSOURCETYPE.string.text
-msgid "Type of list contents"
-msgstr "Lloji i përmbatjes së listes"
-
-#: formres.src#RID_STR_CURSORSOURCE.string.text
-msgid "Content"
-msgstr "Përmbajtje"
-
-#: formres.src#RID_STR_CURSORSOURCETYPE.string.text
-msgid "Content type"
-msgstr "Lloj i përmbajtjes"
-
-#: formres.src#RID_STR_ALLOW_ADDITIONS.string.text
-msgid "Allow additions"
-msgstr "Lejo shtimet"
-
-#: formres.src#RID_STR_ALLOW_DELETIONS.string.text
-msgid "Allow deletions"
-msgstr "Lejo Bashkëveprim"
-
-#: formres.src#RID_STR_ALLOW_EDITS.string.text
-msgid "Allow modifications"
-msgstr "Lejo ndryshimet"
-
-#: formres.src#RID_STR_DATAENTRY.string.text
-msgid "Add data only"
-msgstr "Shto vetëm të dhënat"
-
-#: formres.src#RID_STR_DATASOURCE.string.text
-msgid "Data source"
-msgstr "Burimi i të dhënave"
-
-#: formres.src#RID_STR_MASTERFIELDS.string.text
-msgid "Link master fields"
-msgstr "Lidh fushat kryesore"
-
-#: formres.src#RID_STR_SLAVEFIELDS.string.text
-msgid "Link slave fields"
-msgstr "Lidh fushat skllave"
-
-#: formres.src#RID_STR_VALUEMIN.string.text
-msgid "Value min."
-msgstr "Vlerë min."
-
-#: formres.src#RID_STR_VALUEMAX.string.text
-msgid "Value max."
-msgstr "Vlerë maks."
-
-#: formres.src#RID_STR_VALUESTEP.string.text
-msgid "Incr./decrement value"
-msgstr "Vlerë rritje/pakësim"
-
-#: formres.src#RID_STR_CURRENCYSYMBOL.string.text
-msgid "Currency symbol"
-msgstr "Simbol monedhe"
-
-#: formres.src#RID_STR_DATEMIN.string.text
-msgid "Date min."
-msgstr "Datë min."
-
-#: formres.src#RID_STR_DATEMAX.string.text
-msgid "Date max."
-msgstr "Datë maks."
-
-#: formres.src#RID_STR_DATEFORMAT.string.text
-msgid "Date format"
-msgstr "Format date"
-
-#: formres.src#RID_STR_SELECTEDITEMS.string.text
-msgid "Selection"
-msgstr "Selektimet"
-
-#: formres.src#RID_STR_TIMEMIN.string.text
-msgid "Time min."
-msgstr "Koha min."
-
-#: formres.src#RID_STR_TIMEMAX.string.text
-msgid "Time max."
-msgstr "Koha maks."
-
-#: formres.src#RID_STR_TIMEFORMAT.string.text
-msgid "Time format"
-msgstr "Format kohe"
-
-#: formres.src#RID_STR_CURRSYM_POSITION.string.text
-msgid "Prefix symbol"
-msgstr "Simbol parashtese"
-
-#: formres.src#RID_STR_VALUE.string.text
-msgid "Value"
-msgstr "Vlerë"
-
-#: formres.src#RID_STR_FORMATKEY.string.text
-msgid "Formatting"
-msgstr "Formatim"
-
-#: formres.src#RID_STR_CLASSID.string.text
-msgid "Class ID"
-msgstr "ID klase"
-
-#: formres.src#RID_STR_HEIGHT.string.text
-msgid "Height"
-msgstr "Lartësia"
-
-#: formres.src#RID_STR_WIDTH.string.text
-msgid "Width"
-msgstr "Gjerësia"
-
-#: formres.src#RID_STR_LISTINDEX.string.text
-msgid "List index"
-msgstr "Indeks liste"
-
-#: formres.src#RID_STR_ROWHEIGHT.string.text
-msgid "Row height"
-msgstr "Lartësi  rreshti"
-
-#: formres.src#RID_STR_FILLCOLOR.string.text
-msgid "Fill color"
-msgstr "Ngjyrë e mbushur"
-
-#: formres.src#RID_STR_LINECOLOR.string.text
-msgid "Line color"
-msgstr "Ngjyra e vijës"
-
-#: formres.src#RID_STR_REFVALUE.string.text
-msgid "Reference value (on)"
-msgstr "Theksimi i Vlerës Po/Jo"
-
-#: formres.src#RID_STR_UNCHECKEDREFVALUE.string.text
-msgid "Reference value (off)"
-msgstr "Theksimi i Vlerës Po/Jo"
-
-#: formres.src#RID_STR_STRINGITEMLIST.string.text
-msgid "List entries"
-msgstr "Fut në listë regjistrimet"
-
-#: formres.src#RID_STR_BUTTONTYPE.string.text
-msgid "Action"
-msgstr "Veprim"
-
-#: formres.src#RID_STR_SUBMIT_ACTION.string.text
-msgctxt "formres.src#RID_STR_SUBMIT_ACTION.string.text"
-msgid "URL"
-msgstr "URL"
-
-#: formres.src#RID_STR_SUBMIT_METHOD.string.text
-msgid "Type of submission"
-msgstr "Lloji  i paraqitjes"
-
-#: formres.src#RID_STR_DEFAULT_STATE.string.text
-msgid "Default status"
-msgstr "Mosparaqitje statusi"
-
-#: formres.src#RID_STR_SUBMIT_ENCODING.string.text
-msgid "Submission encoding"
-msgstr "Kodifikimi i paraqitjes"
-
-#: formres.src#RID_STR_DEFAULTVALUE.string.text
-msgid "Default value"
-msgstr "Mosparaqitje vlerash"
-
-#: formres.src#RID_STR_DEFAULTTEXT.string.text
-msgid "Default text"
-msgstr "Vizato tekstin "
-
-#: formres.src#RID_STR_DEFAULTDATE.string.text
-msgid "Default date"
-msgstr "Data (caktuar)"
-
-#: formres.src#RID_STR_DEFAULTTIME.string.text
-msgid "Default time"
-msgstr "Koha (caktuar)"
-
-#: formres.src#RID_STR_SUBMIT_TARGET.string.text
-msgctxt "formres.src#RID_STR_SUBMIT_TARGET.string.text"
-msgid "Frame"
-msgstr "Kornizë"
-
-#: formres.src#RID_RSC_ENUM_BORDER_TYPE.1.string.text
-msgid "Without frame"
-msgstr "Përmbajtjet e kornizës"
-
-#: formres.src#RID_RSC_ENUM_BORDER_TYPE.2.string.text
-msgid "3D look"
-msgstr "&Shiko në:"
-
-#: formres.src#RID_RSC_ENUM_BORDER_TYPE.3.string.text
-msgctxt "formres.src#RID_RSC_ENUM_BORDER_TYPE.3.string.text"
-msgid "Flat"
-msgstr "Rrafsh"
-
-#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.1.string.text
-msgid "Valuelist"
-msgstr ""
-
-#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.string.text
-msgctxt "formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.string.text"
-msgid "Table"
-msgstr "Tabelë"
-
-#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.string.text
-msgctxt "formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.string.text"
-msgid "Query"
-msgstr "Pyetësor"
-
-#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.4.string.text
-msgid "Sql"
-msgstr "Sql"
-
-#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.5.string.text
-msgid "Sql [Native]"
-msgstr "Sql [Native]"
-
-#: formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.6.string.text
-msgid "Tablefields"
-msgstr ""
-
-#: formres.src#RID_RSC_ENUM_ALIGNMENT.1.string.text
-msgid "Left"
-msgstr "Majtas"
-
-#: formres.src#RID_RSC_ENUM_ALIGNMENT.2.string.text
-msgid "Center"
-msgstr "Qendër"
-
-#: formres.src#RID_RSC_ENUM_ALIGNMENT.3.string.text
-msgid "Right"
-msgstr "Djathtas"
-
-#: formres.src#RID_RSC_ENUM_BUTTONTYPE.1.string.text
-msgctxt "formres.src#RID_RSC_ENUM_BUTTONTYPE.1.string.text"
-msgid "None"
-msgstr "Asnjë"
-
-#: formres.src#RID_RSC_ENUM_BUTTONTYPE.2.string.text
-msgid "Submit form"
-msgstr "Dizajnimi i formularit"
-
-#: formres.src#RID_RSC_ENUM_BUTTONTYPE.3.string.text
-msgid "Reset form"
-msgstr "Dizajnimi i formularit"
-
-#: formres.src#RID_RSC_ENUM_BUTTONTYPE.4.string.text
-msgid "Open document/web page"
-msgstr "Dokumenti tashmë i hapur për editim."
-
-#: formres.src#RID_RSC_ENUM_BUTTONTYPE.5.string.text
-msgid "First record"
-msgstr "Shënimi i parë"
-
-#: formres.src#RID_RSC_ENUM_BUTTONTYPE.6.string.text
-msgid "Previous record"
-msgstr "Shënimi i kaluar"
-
-#: formres.src#RID_RSC_ENUM_BUTTONTYPE.7.string.text
-msgid "Next record"
-msgstr "Regjistrim tjetër"
-
-#: formres.src#RID_RSC_ENUM_BUTTONTYPE.8.string.text
-msgid "Last record"
-msgstr "Shënimi i fundit"
-
-#: formres.src#RID_RSC_ENUM_BUTTONTYPE.9.string.text
-msgid "Save record"
-msgstr "Ruaje shënimin"
-
-#: formres.src#RID_RSC_ENUM_BUTTONTYPE.10.string.text
-msgid "Undo data entry"
-msgstr "Zhbëj: Futjen e të Dhënave"
-
-#: formres.src#RID_RSC_ENUM_BUTTONTYPE.11.string.text
-msgid "New record"
-msgstr "Shënim i ri"
-
-#: formres.src#RID_RSC_ENUM_BUTTONTYPE.12.string.text
-msgid "Delete record"
-msgstr "Fshije shënimin"
-
-#: formres.src#RID_RSC_ENUM_BUTTONTYPE.13.string.text
-msgid "Refresh form"
-msgstr "Dizajnimi i formularit"
-
-#: formres.src#RID_RSC_ENUM_SUBMIT_METHOD.1.string.text
-msgid "Get"
-msgstr "Merr"
-
-#: formres.src#RID_RSC_ENUM_SUBMIT_METHOD.2.string.text
-msgid "Post"
-msgstr "Posto"
-
-#: formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.string.text
-msgctxt "formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.string.text"
-msgid "URL"
-msgstr "URL"
-
-#: formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.2.string.text
-msgid "Multipart"
-msgstr "shumëpjesore/alternative"
-
-#: formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.string.text
-msgctxt "formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.string.text"
-msgid "Text"
-msgstr "Tekst"
-
-#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.1.string.text
-msgid "Standard (short)"
-msgstr "Standard (e shkurtë)"
-
-#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.2.string.text
-msgid "Standard (short YY)"
-msgstr "Kërcim i shkurtë"
-
-#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.3.string.text
-msgid "Standard (short YYYY)"
-msgstr "Kërcim i shkurtë"
-
-#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.4.string.text
-msgid "Standard (long)"
-msgstr "Standard (e gjatë)"
-
-#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.5.string.text
-msgid "DD/MM/YY"
-msgstr ""
-
-#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.6.string.text
-msgid "MM/DD/YY"
-msgstr ""
-
-#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.7.string.text
-msgid "YY/MM/DD"
-msgstr ""
-
-#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.8.string.text
-msgid "DD/MM/YYYY"
-msgstr ""
-
-#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.9.string.text
-msgid "MM/DD/YYYY"
-msgstr ""
-
-#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.10.string.text
-msgid "YYYY/MM/DD"
-msgstr ""
-
-#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.11.string.text
-msgid "YY-MM-DD"
-msgstr ""
-
-#: formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.12.string.text
-msgid "YYYY-MM-DD"
-msgstr ""
-
-#: formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.1.string.text
-msgid "13:45"
-msgstr "45 shkallë"
-
-#: formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.2.string.text
-msgid "13:45:00"
-msgstr "13:45;13:45:00;01:45 PM;01:45:00 PM"
-
-#: formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.3.string.text
-msgid "01:45 PM"
-msgstr "13:45;13:45:00;01:45 PM;01:45:00 PM"
-
-#: formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.4.string.text
-msgid "01:45:00 PM"
-msgstr "13:45;13:45:00;01:45 PM;01:45:00 PM"
-
-#: formres.src#RID_RSC_ENUM_CHECKED.1.string.text
-msgid "Not Selected"
-msgstr "Jo e përzgjedhur;E përzgjedhur; E padefinuar"
-
-#: formres.src#RID_RSC_ENUM_CHECKED.2.string.text
-msgid "Selected"
-msgstr "%O zgjedhur "
-
-#: formres.src#RID_RSC_ENUM_CHECKED.3.string.text
-msgid "Not Defined"
-msgstr "Variabli nuk është definuar"
-
-#: formres.src#RID_RSC_ENUM_CYCLE.1.string.text
-msgid "All records"
-msgstr "Regjistrimet e zgjedhur"
-
-#: formres.src#RID_RSC_ENUM_CYCLE.2.string.text
-msgid "Active record"
-msgstr "Numri i regjistrimit"
-
-#: formres.src#RID_RSC_ENUM_CYCLE.3.string.text
-msgid "Current page"
-msgstr "Numri i faqes"
-
-#: formres.src#RID_RSC_ENUM_NAVIGATION.1.string.text
-msgctxt "formres.src#RID_RSC_ENUM_NAVIGATION.1.string.text"
-msgid "No"
-msgstr "No"
-
-#: formres.src#RID_RSC_ENUM_NAVIGATION.2.string.text
-msgctxt "formres.src#RID_RSC_ENUM_NAVIGATION.2.string.text"
-msgid "Yes"
-msgstr "Po"
-
-#: formres.src#RID_RSC_ENUM_NAVIGATION.3.string.text
-msgid "Parent Form"
-msgstr " Jo;Po;Shkak formulimi"
-
-#: formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.string.text
-msgctxt "formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.string.text"
-msgid "None"
-msgstr "Asnjë"
-
-#: formres.src#RID_RSC_ENUM_SELECTION_TYPE.2.string.text
-msgid "Single"
-msgstr "E vetme"
-
-#: formres.src#RID_RSC_ENUM_SELECTION_TYPE.3.string.text
-msgid "Multi"
-msgstr ""
-
-#: formres.src#RID_RSC_ENUM_SELECTION_TYPE.4.string.text
-msgid "Range"
-msgstr "Brez"
-
-#: formres.src#RID_STR_EVT_APPROVEPARAMETER.string.text
-msgid "Fill parameters"
-msgstr "Mbush parametrat"
-
-#: formres.src#RID_STR_EVT_ACTIONPERFORMED.string.text
-msgid "Execute action"
-msgstr ""
-
-#: formres.src#RID_STR_EVT_AFTERUPDATE.string.text
-msgid "After updating"
-msgstr "Pas freskimit"
-
-#: formres.src#RID_STR_EVT_BEFOREUPDATE.string.text
-msgid "Before updating"
-msgstr "Përpara freskimit"
-
-#: formres.src#RID_STR_EVT_APPROVEROWCHANGE.string.text
-msgid "Before record action"
-msgstr "Pëpara veprimit të regjistrimit"
-
-#: formres.src#RID_STR_EVT_ROWCHANGE.string.text
-msgid "After record action"
-msgstr "Pas veprimit të regjistrimit"
-
-#: formres.src#RID_STR_EVT_CONFIRMDELETE.string.text
-msgid "Confirm deletion"
-msgstr "Konfirmo  fshierjen"
-
-#: formres.src#RID_STR_EVT_ERROROCCURED.string.text
-msgid "Error occurred"
-msgstr "Është ndeshur gabimi"
-
-#: formres.src#RID_STR_EVT_FOCUSGAINED.string.text
-msgid "When receiving focus"
-msgstr "Kur pranon mbledhje"
-
-#: formres.src#RID_STR_EVT_FOCUSLOST.string.text
-msgid "When losing focus"
-msgstr "Kur humb mbledhjen"
-
-#: formres.src#RID_STR_EVT_ITEMSTATECHANGED.string.text
-msgid "Item status changed"
-msgstr "Statuti i artikullit ka ndryshuar"
-
-#: formres.src#RID_STR_EVT_KEYTYPED.string.text
-msgid "Key pressed"
-msgstr "Miu i shtypur"
-
-#: formres.src#RID_STR_EVT_KEYUP.string.text
-msgid "Key released"
-msgstr "Miu i çliruar"
-
-#: formres.src#RID_STR_EVT_LOADED.string.text
-msgid "When loading"
-msgstr "Kur ngarkon"
-
-#: formres.src#RID_STR_EVT_RELOADING.string.text
-msgid "Before reloading"
-msgstr "Pëpara ringarkimit"
-
-#: formres.src#RID_STR_EVT_RELOADED.string.text
-msgid "When reloading"
-msgstr "Kur ringarkon"
-
-#: formres.src#RID_STR_EVT_MOUSEDRAGGED.string.text
-msgid "Mouse moved while key pressed"
-msgstr "Miu lëvizë derisa shtypet çelësi"
-
-#: formres.src#RID_STR_EVT_MOUSEENTERED.string.text
-msgid "Mouse inside"
-msgstr "Miu brenda"
-
-#: formres.src#RID_STR_EVT_MOUSEEXITED.string.text
-msgid "Mouse outside"
-msgstr "Miu jashtë"
-
-#: formres.src#RID_STR_EVT_MOUSEMOVED.string.text
-msgid "Mouse moved"
-msgstr "Miu i lëvizur"
-
-#: formres.src#RID_STR_EVT_MOUSEPRESSED.string.text
-msgid "Mouse button pressed"
-msgstr "Butoni i miut i shtypur"
-
-#: formres.src#RID_STR_EVT_MOUSERELEASED.string.text
-msgid "Mouse button released"
-msgstr "Butoni i miut i çliruar"
-
-#: formres.src#RID_STR_EVT_POSITIONING.string.text
-msgid "Before record change"
-msgstr "Përpara ndryshimit në regjistrim"
-
-#: formres.src#RID_STR_EVT_POSITIONED.string.text
-msgid "After record change"
-msgstr "Pas ndryshimit në regjistrim"
-
-#: formres.src#RID_STR_EVT_RESETTED.string.text
-msgid "After resetting"
-msgstr "Pas risistemimit"
-
-#: formres.src#RID_STR_EVT_APPROVERESETTED.string.text
-msgid "Prior to reset"
-msgstr "Para se të risistemoj"
-
-#: formres.src#RID_STR_EVT_APPROVEACTIONPERFORMED.string.text
-msgid "Approve action"
-msgstr ""
-
-#: formres.src#RID_STR_EVT_SUBMITTED.string.text
-msgid "Before submitting"
-msgstr "Përpara paraqitjes"
-
-#: formres.src#RID_STR_EVT_TEXTCHANGED.string.text
-msgid "Text modified"
-msgstr "Teksti i modifikuar"
-
-#: formres.src#RID_STR_EVT_UNLOADING.string.text
-msgid "Before unloading"
-msgstr "Përpara shkarkimit"
-
-#: formres.src#RID_STR_EVT_UNLOADED.string.text
-msgid "When unloading"
-msgstr "Kur shkarkon"
-
-#: formres.src#RID_STR_EVT_CHANGED.string.text
-msgid "Changed"
-msgstr "Ndryshuar"
-
-#: formres.src#RID_STR_EVENTS.string.text
-msgid "Events"
-msgstr "Ngjarjet"
-
-#: formres.src#RID_STR_ESCAPE_PROCESSING.string.text
-msgid "Analyze SQL command"
-msgstr "Analizo  komandën SQL"
-
-#: formres.src#RID_STR_POSITIONX.string.text
-msgid "PositionX"
-msgstr "PozicioniX"
-
-#: formres.src#RID_STR_POSITIONY.string.text
-msgid "PositionY"
-msgstr "PozicioniY"
-
-#: formres.src#RID_STR_TITLE.string.text
-msgid "Title"
-msgstr "Titulli"
-
-#: formres.src#RID_STR_STEP.string.text
-msgid "Page (step)"
-msgstr "Faqe (hap)"
-
-#: formres.src#RID_STR_PROGRESSVALUE.string.text
-msgid "Progress value"
-msgstr "Vlerë avancimi"
-
-#: formres.src#RID_STR_PROGRESSVALUE_MIN.string.text
-msgid "Progress value min."
-msgstr "Vlerë avancimi min."
-
-#: formres.src#RID_STR_PROGRESSVALUE_MAX.string.text
-msgid "Progress value max."
-msgstr "Vlera avancimi maks."
-
-#: formres.src#RID_STR_SCROLLVALUE.string.text
-msgid "Scroll value"
-msgstr "Vlerë dorëshkrimi"
-
-#: formres.src#RID_STR_SCROLLVALUE_MAX.string.text
-msgid "Scroll value max."
-msgstr "Vlerë dorëshkrimi maks."
-
-#: formres.src#RID_STR_SCROLLVALUE_MIN.string.text
-msgid "Scroll value min."
-msgstr "Vlerë avancimi min."
-
-#: formres.src#RID_STR_DEFAULT_SCROLLVALUE.string.text
-msgid "Default scroll value"
-msgstr "Vlerë dorëshkrimi maks."
-
-#: formres.src#RID_STR_LINEINCREMENT.string.text
-msgid "Small change"
-msgstr "Ndrysho fontin"
-
-#: formres.src#RID_STR_BLOCKINCREMENT.string.text
-msgid "Large change"
-msgstr "Ndrysho fontin"
-
-#: formres.src#RID_STR_REPEAT_DELAY.string.text
-msgid "Delay"
-msgstr "Flowchart: Delay"
-
-#: formres.src#RID_STR_REPEAT.string.text
-msgid "Repeat"
-msgstr "Përsërite"
-
-#: formres.src#RID_STR_VISIBLESIZE.string.text
-msgid "Visible size"
-msgstr "Madhësi e dallueshme"
-
-#: formres.src#RID_STR_ORIENTATION.string.text
-msgid "Orientation"
-msgstr "Orientim"
-
-#: formres.src#RID_RSC_ENUM_ORIENTATION.1.string.text
-msgctxt "formres.src#RID_RSC_ENUM_ORIENTATION.1.string.text"
-msgid "Horizontal"
-msgstr "Horizontal"
-
-#: formres.src#RID_RSC_ENUM_ORIENTATION.2.string.text
-msgctxt "formres.src#RID_RSC_ENUM_ORIENTATION.2.string.text"
-msgid "Vertical"
-msgstr "Vertikal"
-
-#: formres.src#RID_STR_EVT_ADJUSTMENTVALUECHANGED.string.text
-msgid "While adjusting"
-msgstr "Derisa rregullon"
-
-#: formres.src#RID_STR_DATE.string.text
-msgid "Date"
-msgstr "Data"
-
-#: formres.src#RID_STR_STATE.string.text
-msgid "State"
-msgstr "Shteti"
-
-#: formres.src#RID_STR_TIME.string.text
-msgid "Time"
-msgstr "Koha"
-
-#: formres.src#RID_STR_SCALEIMAGE.string.text
-msgid "Scale"
-msgstr "Shkallë"
-
-#: formres.src#RID_STR_PUSHBUTTONTYPE.string.text
-msgid "Button type"
-msgstr "Lloj butoni"
-
-#: formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.string.text
-msgctxt "formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.string.text"
-msgid "Default"
-msgstr "Standarde"
-
-#: formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.2.string.text
-msgid "OK"
-msgstr "OK"
-
-#: formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.3.string.text
-msgid "Cancel"
-msgstr "Anulo"
-
-#: formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.string.text
-msgctxt "formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.string.text"
-msgid "Help"
-msgstr "Ndihma"
-
-#: formres.src#RID_STR_UNABLETOCONNECT.string.text
-msgid "The connection to the data source \"$name$\" could not be established."
-msgstr "Lidhja për në bazën e të dhënave \"$emri$\" nuk mund të ngritet."
-
-#: formres.src#RID_STR_TEXT.string.text
-msgctxt "formres.src#RID_STR_TEXT.string.text"
-msgid "Text"
-msgstr "Tekst"
-
-#: formres.src#RID_STR_BOUND_CELL.string.text
-msgid "Linked cell"
-msgstr "Qeliza e tabelës"
-
-#: formres.src#RID_STR_LIST_CELL_RANGE.string.text
-msgid "Source cell range"
-msgstr "~Intervali i të dhënave burimore"
-
-#: formres.src#RID_STR_CELL_EXCHANGE_TYPE.string.text
-msgid "Contents of the linked cell"
-msgstr "Ndaj qelizën në"
-
-#: formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.1.string.text
-msgid "The selected entry"
-msgstr "Gjej hyrjen"
-
-#: formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.2.string.text
-msgid "Position of the selected entry"
-msgstr "Trego numrin e shënuar"
-
-#: formres.src#RID_STR_SHOW_SCROLLBARS.string.text
-msgid "Scrollbars"
-msgstr ""
-
-#: formres.src#RID_RSC_ENUM_TEXTTYPE.1.string.text
-msgid "Single-line"
-msgstr "Hapësirë me vetëm një rresht"
-
-#: formres.src#RID_RSC_ENUM_TEXTTYPE.2.string.text
-msgid "Multi-line"
-msgstr "Stili i linjës"
-
-#: formres.src#RID_RSC_ENUM_TEXTTYPE.3.string.text
-msgid "Multi-line with formatting"
-msgstr "Rifillo numërimin e rreshtave me:"
-
-#: formres.src#RID_STR_SYMBOLCOLOR.string.text
-msgid "Symbol color"
-msgstr "Ngjyra e Fontit"
-
-#: formres.src#RID_STR_LINEEND_FORMAT.string.text
-msgid "Text lines end with"
-msgstr "Zëvendëso me Kutinë e Tekstit"
-
-#: formres.src#RID_RSC_ENUM_LINEEND_FORMAT.1.string.text
-msgid "LF (Unix)"
-msgstr "CR & LF"
-
-#: formres.src#RID_RSC_ENUM_LINEEND_FORMAT.2.string.text
-msgid "CR+LF (Windows)"
-msgstr "Windows Explorer vazhdim"
-
-#: formres.src#RID_RSC_ENUM_SCROLLBARS.1.string.text
-msgctxt "formres.src#RID_RSC_ENUM_SCROLLBARS.1.string.text"
-msgid "None"
-msgstr "Asnjë"
-
-#: formres.src#RID_RSC_ENUM_SCROLLBARS.2.string.text
-msgctxt "formres.src#RID_RSC_ENUM_SCROLLBARS.2.string.text"
-msgid "Horizontal"
-msgstr "Horizontal"
-
-#: formres.src#RID_RSC_ENUM_SCROLLBARS.3.string.text
-msgctxt "formres.src#RID_RSC_ENUM_SCROLLBARS.3.string.text"
-msgid "Vertical"
-msgstr "Vertikal"
-
-#: formres.src#RID_RSC_ENUM_SCROLLBARS.4.string.text
-msgid "Both"
-msgstr ""
-
-#: formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.string.text
-msgctxt "formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.string.text"
-msgid "Table"
-msgstr "Tabelë"
-
-#: formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.string.text
-msgctxt "formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.string.text"
-msgid "Query"
-msgstr "Pyetësor"
-
-#: formres.src#RID_RSC_ENUM_COMMAND_TYPE.3.string.text
-msgid "SQL command"
-msgstr "Komanda SQL "
-
-#: formres.src#RID_STR_TOGGLE.string.text
-msgid "Toggle"
-msgstr "Kapërce"
-
-#: formres.src#RID_STR_FOCUSONCLICK.string.text
-msgid "Take Focus on Click"
-msgstr ""
-
-#: formres.src#RID_STR_HIDEINACTIVESELECTION.string.text
-msgid "Hide selection"
-msgstr "Zgjedhja e databazës"
-
-#: formres.src#RID_STR_VISUALEFFECT.string.text
-msgid "Style"
-msgstr "Stili"
-
-#: formres.src#RID_RSC_ENUM_VISUALEFFECT.1.string.text
-msgid "3D"
-msgstr "3D"
-
-#: formres.src#RID_RSC_ENUM_VISUALEFFECT.2.string.text
-msgctxt "formres.src#RID_RSC_ENUM_VISUALEFFECT.2.string.text"
-msgid "Flat"
-msgstr "Rrafsh"
-
-#: formres.src#RID_STR_BORDERCOLOR.string.text
-msgid "Border color"
-msgstr "Ngjyra e Kufirit"
-
-#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.1.string.text
-msgid "Left top"
-msgstr "Lartë majtas"
-
-#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.2.string.text
-msgid "Left centered"
-msgstr "Mbështet në qendër"
-
-#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.3.string.text
-msgid "Left bottom"
-msgstr "Poshtë majtas"
-
-#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.4.string.text
-msgid "Right top"
-msgstr "Lartë djathtas"
-
-#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.5.string.text
-msgid "Right centered"
-msgstr "Mbështet në qendër"
-
-#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.6.string.text
-msgid "Right bottom"
-msgstr "Poshtë - djathas"
-
-#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.7.string.text
-msgid "Above left"
-msgstr "Lartë majtas"
-
-#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.8.string.text
-msgid "Above centered"
-msgstr "Mbështet në qendër"
-
-#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.9.string.text
-msgid "Above right"
-msgstr "Lartë djathtas"
-
-#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.10.string.text
-msgid "Below left"
-msgstr "Lartë majtas"
-
-#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.11.string.text
-msgid "Below centered"
-msgstr "Mbështet në qendër"
-
-#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.12.string.text
-msgid "Below right"
-msgstr "Lartë djathtas"
-
-#: formres.src#RID_RSC_ENUM_IMAGE_POSITION.13.string.text
-msgid "Centered"
-msgstr "Në qendër"
-
-#: formres.src#RID_STR_AUTOLINEBREAK.string.text
-msgid "Wrap text automatically"
-msgstr "Përshtat tekstin për formë"
-
-#: formres.src#RID_STR_TEXTTYPE.string.text
-msgid "Text type"
-msgstr "Lloji  i publikimit"
-
-#: formres.src#RID_RSC_ENUM_SHOWHIDE.1.string.text
-msgid "Hide"
-msgstr "Fshehe"
-
-#: formres.src#RID_RSC_ENUM_SHOWHIDE.2.string.text
-msgid "Show"
-msgstr "Shfaq"
-
-#: formres.src#RID_STR_XML_DATA_MODEL.string.text
-msgid "XML data model"
-msgstr "Shto të dhënat si:"
-
-#: formres.src#RID_STR_BIND_EXPRESSION.string.text
-msgid "Binding expression"
-msgstr "Duke ndërlidhur shprehjen"
-
-#: formres.src#RID_STR_XSD_REQUIRED.string.text
-msgid "Required"
-msgstr "Kërkohet"
-
-#: formres.src#RID_STR_LIST_BINDING.string.text
-msgid "List entry source"
-msgstr "Burimi nuk është caktuar."
-
-#: formres.src#RID_STR_XSD_RELEVANT.string.text
-msgid "Relevant"
-msgstr ""
-
-#: formres.src#RID_STR_XSD_READONLY.string.text
-msgctxt "formres.src#RID_STR_XSD_READONLY.string.text"
-msgid "Read-only"
-msgstr "Vetëm -lexim"
-
-#: formres.src#RID_STR_XSD_CONSTRAINT.string.text
-msgid "Constraint"
-msgstr "Kufizimet"
-
-#: formres.src#RID_STR_XSD_CALCULATION.string.text
-msgid "Calculation"
-msgstr ""
-
-#: formres.src#RID_STR_XSD_DATA_TYPE.string.text
-msgid "Data type"
-msgstr "Tipi i të dhënave"
-
-#: formres.src#RID_STR_XSD_WHITESPACES.string.text
-msgid "Whitespaces"
-msgstr ""
-
-#: formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.1.string.text
-msgid "Preserve"
-msgstr ""
-
-#: formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.2.string.text
-msgid "Replace"
-msgstr "Zëvendëso"
-
-#: formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.3.string.text
-msgid "Collapse"
-msgstr "Kolaps"
-
-#: formres.src#RID_STR_XSD_PATTERN.string.text
-msgid "Pattern"
-msgstr "Model"
-
-#: formres.src#RID_STR_XSD_LENGTH.string.text
-msgid "Length"
-msgstr "Gjatësi "
-
-#: formres.src#RID_STR_XSD_MIN_LENGTH.string.text
-msgid "Length (at least)"
-msgstr "Gjerësia (më së paku)"
-
-#: formres.src#RID_STR_XSD_MAX_LENGTH.string.text
-msgid "Length (at most)"
-msgstr "Pikat në fund"
-
-#: formres.src#RID_STR_XSD_TOTAL_DIGITS.string.text
-msgid "Digits (total)"
-msgstr "Gjerësi Totale"
-
-#: formres.src#RID_STR_XSD_FRACTION_DIGITS.string.text
-msgid "Digits (fraction)"
-msgstr "Shiriti i thyesës"
-
-#: formres.src#RID_STR_XSD_MAX_INCLUSIVE.string.text
-msgid "Max. (inclusive)"
-msgstr "Vlerë maks."
-
-#: formres.src#RID_STR_XSD_MAX_EXCLUSIVE.string.text
-msgid "Max. (exclusive)"
-msgstr "Vlerë maks."
-
-#: formres.src#RID_STR_XSD_MIN_INCLUSIVE.string.text
-msgid "Min. (inclusive)"
-msgstr "Lartësia min.:"
-
-#: formres.src#RID_STR_XSD_MIN_EXCLUSIVE.string.text
-msgid "Min. (exclusive)"
-msgstr "Lartësia min.:"
-
-#: formres.src#RID_STR_SUBMISSION_ID.string.text
-msgid "Submission"
-msgstr "Pranim"
-
-#: formres.src#RID_STR_BINDING_UI_NAME.string.text
-msgid "Binding"
-msgstr "Ndërlidhjet"
-
-#: formres.src#RID_STR_SELECTION_TYPE.string.text
-msgid "Selection type"
-msgstr "Lloji  i publikimit"
-
-#: formres.src#RID_STR_ROOT_DISPLAYED.string.text
-msgid "Root displayed"
-msgstr "Hapësirë në mes rrënjëve"
-
-#: formres.src#RID_STR_SHOWS_HANDLES.string.text
-msgid "Show handles"
-msgstr "Trajtime të mëdha"
-
-#: formres.src#RID_STR_SHOWS_ROOT_HANDLES.string.text
-msgid "Show root handles"
-msgstr "Trajtim i thjeshtë"
-
-#: formres.src#RID_STR_EDITABLE.string.text
-msgid "Editable"
-msgstr ""
-
-#: formres.src#RID_STR_INVOKES_STOP_NOT_EDITING.string.text
-msgid "Invokes stop node editing"
-msgstr ""
-
-#: formres.src#RID_STR_DECORATION.string.text
-msgid "With title bar"
-msgstr "Zëvendëso me shiritin orientues"
-
-#: formres.src#RID_STR_NOLABEL.string.text
-msgid "No Label"
-msgstr "Teksti i etiketës"
-
-#: formres.src#RID_RSC_ENUM_SCALE_MODE.1.string.text
-msgctxt "formres.src#RID_RSC_ENUM_SCALE_MODE.1.string.text"
-msgid "No"
-msgstr "No"
-
-#: formres.src#RID_RSC_ENUM_SCALE_MODE.2.string.text
-msgid "Keep Ratio"
-msgstr "Mbaje përpjestimin"
-
-#: formres.src#RID_RSC_ENUM_SCALE_MODE.3.string.text
-msgid "Fit to Size"
-msgstr "Përshtate me madhësinë"
-
-#: formres.src#RID_STR_INPUT_REQUIRED.string.text
-msgid "Input required"
-msgstr "Ngjyra është pritur"
-
-#: formres.src#RID_STR_WRITING_MODE.string.text
-msgid "Text direction"
-msgstr "Drejtimi  teksti"
-
-#: formres.src#RID_RSC_ENUM_WRITING_MODE.1.string.text
-msgid "Left-to-right"
-msgstr "Nga e majta në të djathtë"
-
-#: formres.src#RID_RSC_ENUM_WRITING_MODE.2.string.text
-msgid "Right-to-left"
-msgstr "Nga e djathta në të majtë"
-
-#: formres.src#RID_RSC_ENUM_WRITING_MODE.3.string.text
-msgid "Use superordinate object settings"
-msgstr "Shfrytëzo parametrat e mbishtruar të objektit"
-
-#: formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.1.string.text
-msgid "Never"
-msgstr ""
-
-#: formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.2.string.text
-msgid "When focused"
-msgstr "Kur humb mbledhjen"
-
-#: formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.3.string.text
-msgid "Always"
-msgstr ""
-
-#: formres.src#RID_STR_ANCHOR_TYPE.string.text
-msgid "Anchor"
-msgstr "Spiranca"
-
-#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.1.string.text
-msgid "To Paragraph"
-msgstr "Tek paragrafi"
-
-#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.2.string.text
-msgid "As Character"
-msgstr "Si karakter"
-
-#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.string.text
-msgctxt "formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.string.text"
-msgid "To Page"
-msgstr "Tek faqja"
-
-#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.4.string.text
-msgid "To Frame"
-msgstr "Në  kornizë"
-
-#: formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.5.string.text
-msgid "To Character"
-msgstr "Tek karakteri"
-
-#: formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.1.string.text
-msgctxt "formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.1.string.text"
-msgid "To Page"
-msgstr "Tek faqja"
-
-#: formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.2.string.text
-msgid "To Cell"
-msgstr "Nga ~Qelia"
-
-#: formres.src#RID_STR_FONTSTYLE_REGULAR.string.text
-msgid "Regular"
-msgstr "I rregullt"
-
-#: formres.src#RID_STR_FONTSTYLE_BOLD_ITALIC.string.text
-msgid "Bold Italic"
-msgstr "E trashur italike"
-
-#: formres.src#RID_STR_FONTSTYLE_ITALIC.string.text
-msgid "Italic"
-msgstr "Italike"
-
-#: formres.src#RID_STR_FONTSTYLE_BOLD.string.text
-msgid "Bold"
-msgstr "Me të trasha"
-
-#: formres.src#RID_STR_FONT_DEFAULT.string.text
-msgid "(Default)"
-msgstr "Standarde"
-
-#: newdatatype.src#RID_DLG_NEW_DATA_TYPE.FT_LABEL.fixedtext.text
-msgid "Type a name for the new data type:"
-msgstr "~Emri i i ri pwr %s (%d1 of %d2)"
-
-#: newdatatype.src#RID_DLG_NEW_DATA_TYPE.modaldialog.text
-msgid "New Data Type"
-msgstr "Pwrzirje e tipit tw sw dhwnave"
-
-#: pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.string.text
-msgid ""
-"Do you want to delete the data type '#type#' from the model?\n"
-"Please note that this will affect all controls which are bound to this data "
-"type."
-msgstr ""
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.string.text
-msgid "Button"
-msgstr "Butoni"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_RADIOBUTTON.string.text
-msgid "Option Button"
-msgstr "Butoni opcional"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_CHECKBOX.string.text
-msgid "Check Box"
-msgstr "Kutia për kontrollim"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.string.text
-msgctxt "pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.string.text"
-msgid "Label Field"
-msgstr "Fushë emërimi"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_GROUPBOX.string.text
-msgid "Group Box"
-msgstr "Kuti grupi"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_EDIT.string.text
-msgid "Text Box"
-msgstr "Kutia e tekstit"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_FORMATTED.string.text
-msgid "Formatted Field"
-msgstr "Fusha e Formatuar"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_LISTBOX.string.text
-msgid "List Box"
-msgstr "Kuti e listës"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_COMBOBOX.string.text
-msgid "Combo Box"
-msgstr "Combo Kuti"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_IMAGEBUTTON.string.text
-msgid "Image Button"
-msgstr "Butoni i fotografisë"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_HIDDENCONTROL.string.text
-msgid "Hidden Control"
-msgstr "Kontroll i Fshehur"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_UNKNOWNCONTROL.string.text
-msgid "Control (unknown type)"
-msgstr "Kontroll ( lloj i panjohur)"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_IMAGECONTROL.string.text
-msgid "Image Control"
-msgstr "Kontrolli i fotografisë"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_FILECONTROL.string.text
-msgid "File Selection"
-msgstr "Zgjedhja e fajllit"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_DATEFIELD.string.text
-msgid "Date Field"
-msgstr "Fusha e datës"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_TIMEFIELD.string.text
-msgid "Time Field"
-msgstr "Fusha e Kohës"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_NUMERICFIELD.string.text
-msgid "Numeric Field"
-msgstr "Fushë numerike"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_CURRENCYFIELD.string.text
-msgid "Currency Field"
-msgstr "Fusha e valutave"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_PATTERNFIELD.string.text
-msgid "Pattern Field"
-msgstr "Fusha e modelit"
-
-#: pcrmiscres.src#RID_STR_PROPTITLE_DBGRID.string.text
-msgid "Table Control "
-msgstr "Kontrolli i Tabelës"
-
-#: propres.src#RID_STR_STANDARD.string.text
-msgctxt "propres.src#RID_STR_STANDARD.string.text"
-msgid "Default"
-msgstr "Standarde"
-
-#: propres.src#RID_STR_PROPPAGE_DEFAULT.string.text
-msgid "General"
-msgstr "Të përgjithshme"
-
-#: propres.src#RID_STR_PROPPAGE_DATA.string.text
-msgid "Data"
-msgstr "Të dhëna"
-
-#: propres.src#RID_RSC_ENUM_YESNO.1.string.text
-msgctxt "propres.src#RID_RSC_ENUM_YESNO.1.string.text"
-msgid "No"
-msgstr "No"
-
-#: propres.src#RID_RSC_ENUM_YESNO.2.string.text
-msgctxt "propres.src#RID_RSC_ENUM_YESNO.2.string.text"
-msgid "Yes"
-msgstr "Po"
-
-#: propres.src#RID_STR_HELP_SECTION_LABEL.string.text
-msgctxt "propres.src#RID_STR_HELP_SECTION_LABEL.string.text"
-msgid "Help"
-msgstr "Ndihma"
-
-#: propres.src#RID_EMBED_IMAGE_PLACEHOLDER.string.text
-msgid "<Embedded-Image>"
-msgstr "Pikë fotografi"
-
-#: propres.src#RID_STR_TEXT_FORMAT.string.text
-msgctxt "propres.src#RID_STR_TEXT_FORMAT.string.text"
-msgid "Text"
-msgstr "Tekst"
-
-#: selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.fixedtext.text
-msgid ""
-"These are control fields that can be used as label fields for the "
-"$control_class$ $control_name$."
-msgstr ""
-"Këto janë fushat e kontrollit që mund të përdoren si fusha të emërtuara për "
-"$kontroll_klasë$ $kontroll_emra$."
-
-#: selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.checkbox.text
-msgid "~No assignment"
-msgstr "~Pangarkim"
-
-#: selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.modaldialog.text
-msgid "Label Field Selection"
-msgstr "Përzgjedhje Fushes së Emëruar"
-
-#: selectlabeldialog.src#RID_STR_FORMS.string.text
-msgid "Forms"
-msgstr "Formularët"
-
-#: taborder.src#RID_DLG_TABORDER.FT_CONTROLS.fixedtext.text
-msgid "Controls"
-msgstr "Kontrollet"
-
-#: taborder.src#RID_DLG_TABORDER.PB_MOVE_UP.pushbutton.text
-msgid "Move Up"
-msgstr "Lëviz sipër"
-
-#: taborder.src#RID_DLG_TABORDER.PB_MOVE_DOWN.pushbutton.text
-msgid "Move Down"
-msgstr "Lëviz poshtë"
-
-#: taborder.src#RID_DLG_TABORDER.PB_AUTO_ORDER.pushbutton.text
-msgid "Automatic Sort"
-msgstr "Klasifiko sipas"
-
-#: taborder.src#RID_DLG_TABORDER.modaldialog.text
-msgid "Tab Order"
-msgstr "Tab Renditja"
-
-#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_SELECT_ABTYPE.string.text
-msgid "Address book type"
-msgstr "Ju lutem përzgjedhni llojin e librit të adresave."
-
-#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_INVOKE_ADMIN_DIALOG.string.text
-msgid "Connection Settings"
-msgstr "Parametrat e faqes"
-
-#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_TABLE_SELECTION.string.text
-msgid "Table selection"
-msgstr "Përzgjedhje Tabele"
-
-#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.string.text
-msgctxt "abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.string.text"
-msgid "Field Assignment"
-msgstr "Fusha e Caktuar"
-
-#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_FINAL_CONFIRM.string.text
-msgid "Data Source Title"
-msgstr "Lidhja me burimin e të dhënave"
-
-#: abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.modaldialog.text
-msgid "Address Book Data Source Wizard"
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.ModalDialog.Text
+msgid  "Address Book Data Source Wizard"
 msgstr "Mirësevini në Burimet e të Dhënave të Adresave AutoPilot "
 
-#: abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.fixedtext.text
-msgid ""
-"%PRODUCTNAME lets you access address data already present in your system. To "
-"do this, a %PRODUCTNAME data source will be created in which your address "
-"data is available in tabular form.\n"
-"\n"
-"This wizard helps you create the data source."
-msgstr ""
-"%PRODUCTNAME ju lejojnë qasjen në të dhënat e adresës prezente në sistemin "
-"tuaj. Për ta bërë këtë, burimet e të dhënave %PRODUCTNAME do të  krijohen në "
-"të cilen të dhënat e adresës tuaj janë të gatshme në formulimin tabelar.\n"
-"\n"
-"Ky AutoPilot iu ndihmon të krijoni burimin e të dhënave."
-
-#: abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.fixedline.text
-msgid "Please select the type of your external address book:"
-msgstr "Ju lutem përzgjidhni llojin e librit të adresave të jashtme:"
-
-#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION.radiobutton.text
-msgid "Evolution"
-msgstr "Evolucion"
-
-#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_GROUPWISE.radiobutton.text
-msgid "Groupwise"
-msgstr ""
-
-#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_LDAP.radiobutton.text
-msgid "Evolution LDAP"
-msgstr "Të dhëna të adresave LDAP"
-
-#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_MORK.radiobutton.text
-msgid "Mozilla / Netscape"
-msgstr "Mozilla/Arratisjerrjeti"
-
-#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_THUNDERBIRD.radiobutton.text
-msgid "Thunderbird"
-msgstr ""
-
-#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_KAB.radiobutton.text
-msgid "KDE address book"
-msgstr "Burimi i Regjistrit të adresave..."
-
-#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_MACAB.radiobutton.text
-msgid "Mac OS X address book"
-msgstr "Shabllonet: Caktimi i Adresarit"
-
-#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_LDAP.radiobutton.text
-msgid "LDAP address data"
-msgstr "Të dhëna të adresave LDAP"
-
-#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOK.radiobutton.text
-msgid "Outlook address book"
-msgstr "Pamje e librit të adresave"
-
-#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOKEXPRESS.radiobutton.text
-msgid "Windows system address book"
-msgstr "Sistemi Windows i librit të adresave"
-
-#: abspilot.src#RID_PAGE_SELECTABTYPE.RB_OTHER.radiobutton.text
-msgid "Other external data source"
-msgstr "Burime tjera të jashtme të të dhënave"
-
-#: abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.fixedtext.text
-msgid ""
-"To set up the new data source, additional information is required.\n"
-"\n"
-"Click the following button to open another dialog in which you then enter "
-"the necessary information."
-msgstr ""
-"Të vendosen burime të reja të të dhënave, kërkohen informacione shtesë.\n"
-"\n"
-"Klikoni butonin e mëposhtëm për të hapur dialogun tjetër në të cilen ju "
-"pastaj regjistroni informacionet e nevojshme."
-
-#: abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.pushbutton.text
-msgid "Settings"
-msgstr "Parametrat"
-
-#: abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.fixedtext.text
-msgid ""
-"The connection to the data source could not be established.\n"
-"Before you proceed, please check the settings made, or (on the previous "
-"page) choose another address data source type."
-msgstr ""
-"Lidhja me burimet e të dhënave nuk mund të vendoset.\n"
-"Pëpara se të procesoni, ju lutem kontrolloni aranzhimet e bëra,ose (në faqen "
-"paraprake) zgjedh lloj tjetër të burimeve të të dhënave të adresës."
-
-#: abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.fixedtext.text
-msgid ""
-"The external data source you have chosen contains more than one address "
-"book.\n"
-"Please select the one you mainly want to work with:"
-msgstr ""
-"Burimet e jashtme të të dhënave që ju keni zgjedhur përmbajnë më shumë se "
-"një libër adrese.\n"
-"Ju lutem përzgjedhni njërin që ju kryesisht dëshironi të punoni me: "
-
-#: abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.fixedtext.text
-msgid ""
-"To incorporate the address data in your templates, %PRODUCTNAME has to know "
-"which fields contain which data.\n"
-"\n"
-"For instance, you could have stored the e-mail addresses in a field named "
-"\"email\", or \"E-mail\" or \"EM\" - or something completely different.\n"
-"\n"
-"Click the button below to open another dialog where you can enter the "
-"settings for your data source."
-msgstr ""
-"Të inkorporohen të dhënat e adresave në shabllonin tuaj, %PRODUCTNAME duhet "
-"te dij cilat fusha përmbajnë cilat të dhëna.\n"
-"\n"
-"Për shembull, ju mund të keni ruajtur e-mail adresat në fushat e "
-"emëruara\"email\",ose\"E-mail\" ose\"EM\"- ose diçka komplet ndryshe.\n"
-"\n"
-"Kliko butonin poshtë të hap një dialog tjetër ku ju mund të regjistroni "
-"aranzhimet për burimet tuaja të të dhënave."
-
-#: abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.pushbutton.text
-msgctxt "abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.pushbutton.text"
-msgid "Field Assignment"
-msgstr "Fusha e Caktuar"
-
-#: abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.fixedtext.text
-msgid ""
-"That was all the information necessary to integrate your address data into %"
-"PRODUCTNAME.\n"
-"\n"
-"Now, just enter the name under which you want to register the data source in "
-"%PRODUCTNAME."
-msgstr ""
-"Këto ishin të gjitha informacionet e nevojshme për të integruar të dhënat e "
-"adresës suaj në %PRODUCTNAME.\n"
-"\n"
-"Tani,ju vetëm regjistroni emrin nën të cilin ju dëshironi të regjistroni "
-"burimet e të dhënave në %PRODUCTNAME."
-
-#: abspilot.src#RID_PAGE_FINAL.FT_LOCATION.fixedtext.text
-msgid "Location"
-msgstr "Lokacioni"
-
-#: abspilot.src#RID_PAGE_FINAL.PB_BROWSE.pushbutton.text
-msgid "Browse..."
-msgstr "Shfleto..."
-
-#: abspilot.src#RID_PAGE_FINAL.CB_REGISTER_DS.checkbox.text
-msgid "Make this address book available to all modules in %PRODUCTNAME."
-msgstr ""
-
-#: abspilot.src#RID_PAGE_FINAL.FT_NAME_EXPL.fixedtext.text
-msgid "Address book name"
-msgstr "Burimi i Regjistrit të adresave..."
-
-#: abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.fixedtext.text
-msgid ""
-"Another data source already has this name. As data sources have to have "
-"globally unique names, you need to choose another one."
-msgstr ""
-"Burimet tjera të të dhënave tanimë kanë këtë emër. Sikurse burimet e të "
-"dhënave kanë për të pasur emra global unik, ju duhet të zgjedhni një tjetër."
-
-#: abspilot.src#RID_ERR_NEEDTYPESELECTION.errorbox.text
-msgid "Please select a type of address book."
+#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_SELECT_ABTYPE.String.Text
+msgid  "Address book type"
 msgstr "Ju lutem përzgjedhni llojin e librit të adresave."
 
-#: abspilot.src#RID_QRY_NOTABLES.querybox.text
-msgid ""
-"The data source does not contain any tables.\n"
-"Do you want to set it up as an address data source, anyway?"
-msgstr ""
-"Burmiet e të dhënave nuk përmbajnë ndonjë tabelë.\n"
-"Sidoqoftë a dëshironi  të ndërtoni atë si një burim i të dhënave të "
-"adresave?"
+#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_INVOKE_ADMIN_DIALOG.String.Text
+msgid  "Connection Settings"
+msgstr "Parametrat e faqes"
 
-#: abspilot.src#RID_STR_DEFAULT_NAME.string.text
-msgid "Addresses"
+#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_TABLE_SELECTION.String.Text
+msgid  "Table selection"
+msgstr "Përzgjedhje Tabele"
+
+#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_MANUAL_FIELD_MAPPING.String.Text
+msgid  "Field Assignment"
+msgstr "Fusha e Caktuar"
+
+#: source/abpilot/abspilot.src#RID_DLG_ADDRESSBOOKSOURCEPILOT.STR_FINAL_CONFIRM.String.Text
+msgid  "Data Source Title"
+msgstr "Lidhja me burimin e të dhënave"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FT_TYPE_HINTS.FixedText.Text
+msgid  "%PRODUCTNAME lets you access address data already present in your system. To do this, a %PRODUCTNAME data source will be created in which your address data is available in tabular form.\n\nThis wizard helps you create the data source."
+msgstr ""
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.FL_TYPE.FixedLine.Text
+msgid  "Please select the type of your external address book:"
+msgstr "Ju lutem përzgjidhni llojin e librit të adresave të jashtme:"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION.RadioButton.Text
+msgid  "Evolution"
+msgstr "Evolucion"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_GROUPWISE.RadioButton.Text
+msgid  "Groupwise"
+msgstr ""
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_EVOLUTION_LDAP.RadioButton.Text
+msgid  "Evolution LDAP"
+msgstr "Të dhëna të adresave LDAP"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_MORK.RadioButton.Text
+msgid  "Mozilla / Netscape"
+msgstr "Mozilla/Arratisjerrjeti"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_THUNDERBIRD.RadioButton.Text
+msgid  "Thunderbird"
+msgstr ""
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_KAB.RadioButton.Text
+msgid  "KDE address book"
+msgstr "Burimi i Regjistrit të adresave..."
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_MACAB.RadioButton.Text
+msgid  "Mac OS X address book"
+msgstr "Shabllonet: Caktimi i Adresarit"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_LDAP.RadioButton.Text
+msgid  "LDAP address data"
+msgstr "Të dhëna të adresave LDAP"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOK.RadioButton.Text
+msgid  "Outlook address book"
+msgstr "Pamje e librit të adresave"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OUTLOOKEXPRESS.RadioButton.Text
+msgid  "Windows system address book"
+msgstr "Sistemi Windows i librit të adresave"
+
+#: source/abpilot/abspilot.src#RID_PAGE_SELECTABTYPE.RB_OTHER.RadioButton.Text
+msgid  "Other external data source"
+msgstr "Burime tjera të jashtme të të dhënave"
+
+#: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ADMINEXPLANATION.FixedText.Text
+msgid  "To set up the new data source, additional information is required.\n\nClick the following button to open another dialog in which you then enter the necessary information."
+msgstr ""
+
+#: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.PB_INVOKE_ADMIN_DIALOG.PushButton.Text
+msgid  "Settings"
+msgstr "Parametrat"
+
+#: source/abpilot/abspilot.src#RID_PAGE_ADMININVOKATION.FT_ERROR.FixedText.Text
+msgid  "The connection to the data source could not be established.\nBefore you proceed, please check the settings made, or (on the previous page) choose another address data source type."
+msgstr ""
+
+#: source/abpilot/abspilot.src#RID_PAGE_TABLESELECTION_AB.FL_TOOMUCHTABLES.FixedText.Text
+msgid  "The external data source you have chosen contains more than one address book.\nPlease select the one you mainly want to work with:"
+msgstr ""
+
+#: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.FT_FIELDASSIGMENTEXPL.FixedText.Text
+msgid  "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n\nFor instance, you could have stored the e-mail addresses in a field named "email", or "E-mail" or "EM" - or something completely different.\n\nClick the button below to open another dialog where you can enter the settings for your data source."
+msgstr ""
+
+#: source/abpilot/abspilot.src#RID_PAGE_FIELDMAPPING.PB_INVOKE_FIELDS_DIALOG.PushButton.Text
+msgid  "Field Assignment"
+msgstr "Fusha e Caktuar"
+
+#: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_FINISH_EXPL.FixedText.Text
+msgid  "That was all the information necessary to integrate your address data into %PRODUCTNAME.\n\nNow, just enter the name under which you want to register the data source in %PRODUCTNAME."
+msgstr ""
+
+#: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_LOCATION.FixedText.Text
+msgid  "Location"
+msgstr "Lokacioni"
+
+#: source/abpilot/abspilot.src#RID_PAGE_FINAL.PB_BROWSE.PushButton.Text
+msgid  "Browse..."
+msgstr "Shfleto..."
+
+#: source/abpilot/abspilot.src#RID_PAGE_FINAL.CB_REGISTER_DS.CheckBox.Text
+msgid  "Make this address book available to all modules in %PRODUCTNAME."
+msgstr ""
+
+#: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_NAME_EXPL.FixedText.Text
+msgid  "Address book name"
+msgstr "Burimi i Regjistrit të adresave..."
+
+#: source/abpilot/abspilot.src#RID_PAGE_FINAL.FT_DUPLICATENAME.FixedText.Text
+msgid  "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
+msgstr ""
+
+#: source/abpilot/abspilot.src#RID_ERR_NEEDTYPESELECTION.ErrorBox.Message
+msgid  "Please select a type of address book."
+msgstr "Ju lutem përzgjedhni llojin e librit të adresave."
+
+#: source/abpilot/abspilot.src#RID_QRY_NOTABLES.QueryBox.Message
+msgid  "The data source does not contain any tables.\nDo you want to set it up as an address data source, anyway?"
+msgstr ""
+
+#: source/abpilot/abspilot.src#RID_STR_DEFAULT_NAME.String.Text
+msgid  "Addresses"
 msgstr "Adresat"
 
-#: abspilot.src#RID_STR_ADMINDIALOGTITLE.string.text
-msgid "Create Address Data Source"
+#: source/abpilot/abspilot.src#RID_STR_ADMINDIALOGTITLE.String.Text
+msgid  "Create Address Data Source"
 msgstr "Krijo Burim të të Dhënave të Adresës"
 
-#: abspilot.src#RID_STR_NOCONNECTION.string.text
-msgid "The connection could not be established."
+#: source/abpilot/abspilot.src#RID_STR_NOCONNECTION.String.Text
+msgid  "The connection could not be established."
 msgstr "Lidhja nuk mund të ngritet."
 
-#: abspilot.src#RID_STR_PLEASECHECKSETTINGS.string.text
-msgid "Please check the settings made for the data source."
+#: source/abpilot/abspilot.src#RID_STR_PLEASECHECKSETTINGS.String.Text
+msgid  "Please check the settings made for the data source."
 msgstr "Ju lutem kontrollo aranzhimet e bëra për burimet e të dhënave."
 
-#: abspilot.src#RID_STR_FIELDDIALOGTITLE.string.text
-msgid "Address Data - Field Assignment"
+#: source/abpilot/abspilot.src#RID_STR_FIELDDIALOGTITLE.String.Text
+msgid  "Address Data - Field Assignment"
 msgstr "Të dhëna të Adresës - Fusha e Caktuar"
 
-#: abspilot.src#RID_STR_NOFIELDSASSIGNED.string.text
-msgid ""
-"There are no fields assigned at this time.\n"
-"You can either assign fields now or do so later by first choosing:\n"
-"\"File - Template - Address Book Source...\""
+#: source/abpilot/abspilot.src#RID_STR_NOFIELDSASSIGNED.String.Text
+msgid  "There are no fields assigned at this time.\nYou can either assign fields now or do so later by first choosing:\n"File - Template - Address Book Source...""
 msgstr ""
-"Në këtë kohë nuk ka fusha të caktuara.\n"
-"Ju për më tepër caktoni fushat ose bëje më vonë me zgjedhjen e parë:\n"
-"\"Dosje - Shabllon - Burim i të Dhënave të Adresës...\""
 
-#: bib.src#RID_BIB_STR_FIELDSELECTION.string.text
-msgid "Field selection:"
-msgstr "Përzgjedhje  fushe:"
-
-#: bib.src#RID_BIB_STR_TABWIN_PREFIX.string.text
-msgid "Table;Query;Sql;Sql [Native]"
-msgstr "Tabela;Pyetsori; Sql;Sql[Autokton]"
-
-#: bib.src#RID_BIB_STR_FRAME_TITLE.string.text
-msgid "Bibliography Database"
-msgstr "Të Dhëna Bazë Bibliografike"
-
-#: bib.src#RID_MAP_QUESTION.string.text
-msgid "Do you want to edit the column arrangement?"
-msgstr "A dëshironi të redaktoni rregullimin e kolonës?"
-
-#: datman.src#RID_DLG_MAPPING.GB_MAPPING.fixedline.text
-msgid "Column names"
-msgstr "Emrat e Kolonave"
-
-#: datman.src#RID_DLG_MAPPING.ST_NONE.string.text
-msgid "<none>"
-msgstr "<asnjë>"
-
-#: datman.src#RID_DLG_MAPPING.modaldialog.text
-msgid "Column Layout for Table %1"
-msgstr "Faqosje e Kolonës për Tabelë %1"
-
-#: datman.src#RID_DLG_DBCHANGE.ST_ENTRY.string.text
-msgid "Entry"
-msgstr "Hyrje"
-
-#: datman.src#RID_DLG_DBCHANGE.modaldialog.text
-msgid "Choose Data Source"
-msgstr "Zgjedh Burimin e të Dhënave"
-
-#: sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.string.text
-msgid "The following column names could not be assigned:\n"
-msgstr "Emrat e kolonave të mëposhtme nuk mund të caktohen:\n"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.string.text
-msgid "Article"
-msgstr "Artikulli"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_BOOK.string.text
-msgid "Book"
-msgstr "Libri"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_BOOKLET.string.text
-msgid "Brochures"
-msgstr "Broshurat"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_CONFERENCE.string.text
-msgctxt "sections.src#RID_TP_GENERAL.ST_TYPE_CONFERENCE.string.text"
-msgid "Conference proceedings"
-msgstr "Procesimet e  konferencës"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_INBOOK.string.text
-msgid "Book excerpt"
-msgstr "Fragment libri "
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_INCOLLECTION.string.text
-msgid "Book excerpt with title"
-msgstr "Fragment  libri me titull"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_INPROCEEDINGS.string.text
-msgctxt "sections.src#RID_TP_GENERAL.ST_TYPE_INPROCEEDINGS.string.text"
-msgid "Conference proceedings"
-msgstr "Procesimet e  konferencës"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_JOURNAL.string.text
-msgid "Journal"
-msgstr "Zhurnal"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_MANUAL.string.text
-msgid "Techn. documentation"
-msgstr "Dokumentacion teknik"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_MASTERSTHESIS.string.text
-msgid "Thesis"
-msgstr "Tezat"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_MISC.string.text
-msgid "Miscellaneous"
-msgstr "Të ndryshme"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_PHDTHESIS.string.text
-msgid "Dissertation"
-msgstr "Disertacioni"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_PROCEEDINGS.string.text
-msgctxt "sections.src#RID_TP_GENERAL.ST_TYPE_PROCEEDINGS.string.text"
-msgid "Conference proceedings"
-msgstr "Procesimet e  konferencës"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_TECHREPORT.string.text
-msgid "Research report"
-msgstr "Raport studimor"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_UNPUBLISHED.string.text
-msgid "Unpublished"
-msgstr "E pabotuar"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_EMAIL.string.text
-msgid "e-mail"
-msgstr "e-mail"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_WWW.string.text
-msgid "WWW document"
-msgstr "WWW dokument"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM1.string.text
-msgid "User-defined1"
-msgstr "i definuar nga shfrytëzuesi 1"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM2.string.text
-msgid "User-defined2"
-msgstr "i definuar nga shfrytëzuesi 2"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM3.string.text
-msgid "User-defined3"
-msgstr "i definuar nga shfrytëzuesi 3"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM4.string.text
-msgid "User-defined4"
-msgstr "i definuar nga shfrytëzuesi 4"
-
-#: sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM5.string.text
-msgid "User-defined5"
-msgstr "i definuar nga shfrytëzuesi 5"
-
-#: sections.src#RID_TP_GENERAL.tabpage.text
-msgid "General"
-msgstr "Të përgjithshme"
-
-#: sections.src#RID_POPUP_ME_VIEW.PU_INSERT.menuitem.text
-msgid "Insert Section..."
-msgstr "Fut seksionin..."
-
-#: sections.src#RID_POPUP_ME_VIEW.PU_REMOVE.menuitem.text
-msgid "Delete Section..."
-msgstr "Fshij seksionin..."
-
-#: sections.src#RID_POPUP_ME_VIEW.PU_CHG_NAME.menuitem.text
-msgid "Modify Name..."
-msgstr "Modifiko Emrin..."
-
-#: sections.src#ST_IDENTIFIER.string.text
-msgid "~Short name"
-msgstr "~Emër i shkurtë"
-
-#: sections.src#ST_AUTHTYPE.string.text
-msgid "~Type"
-msgstr "Lloji"
-
-#: sections.src#ST_YEAR.string.text
-msgid "~Year"
-msgstr "~Viti"
-
-#: sections.src#ST_AUTHOR.string.text
-msgid "Author(s)"
-msgstr "Autor(ët)"
-
-#: sections.src#ST_TITLE.string.text
-msgid "Tit~le"
-msgstr "Tit~tulli"
-
-#: sections.src#ST_PUBLISHER.string.text
-msgid "~Publisher"
-msgstr "~Botues"
-
-#: sections.src#ST_ADDRESS.string.text
-msgid "A~ddress"
-msgstr "A~dresa"
-
-#: sections.src#ST_ISBN.string.text
-msgid "~ISBN"
-msgstr "~ISBN"
-
-#: sections.src#ST_CHAPTER.string.text
-msgid "~Chapter"
-msgstr "~Kapitulli"
-
-#: sections.src#ST_PAGE.string.text
-msgid "Pa~ge(s)"
-msgstr "Fa~qe(et)"
-
-#: sections.src#ST_EDITOR.string.text
-msgid "Editor"
-msgstr "Botuesi'"
-
-#: sections.src#ST_EDITION.string.text
-msgid "Ed~ition"
-msgstr "Bo~tim"
-
-#: sections.src#ST_BOOKTITLE.string.text
-msgid "~Book title"
-msgstr "~Titull libri"
-
-#: sections.src#ST_VOLUME.string.text
-msgid "Volume"
-msgstr "Volumi"
-
-#: sections.src#ST_HOWPUBLISHED.string.text
-msgid "Publication t~ype"
-msgstr "Ll~oj publikimi"
-
-#: sections.src#ST_ORGANIZATION.string.text
-msgid "Organi~zation"
-msgstr "Organi~zatë"
-
-#: sections.src#ST_INSTITUTION.string.text
-msgid "Instit~ution"
-msgstr "Instit~tucion"
-
-#: sections.src#ST_SCHOOL.string.text
-msgid "University"
-msgstr "Universiteti"
-
-#: sections.src#ST_REPORT.string.text
-msgid "Type of re~port"
-msgstr "Lloji i ra~portit"
-
-#: sections.src#ST_MONTH.string.text
-msgid "~Month"
-msgstr "~Muaji"
-
-#: sections.src#ST_JOURNAL.string.text
-msgid "~Journal"
-msgstr "~Zhurnali"
-
-#: sections.src#ST_NUMBER.string.text
-msgid "Numb~er"
-msgstr "Num~ri"
-
-#: sections.src#ST_SERIES.string.text
-msgid "Se~ries"
-msgstr "Se~ri"
-
-#: sections.src#ST_ANNOTE.string.text
-msgid "Ann~otation"
-msgstr "Shën~im"
-
-#: sections.src#ST_NOTE.string.text
-msgid "~Note"
-msgstr "~Shënim"
-
-#: sections.src#ST_URL.string.text
-msgid "URL"
-msgstr "URL"
-
-#: sections.src#ST_CUSTOM1.string.text
-msgid "User-defined field ~1"
-msgstr "Përdorruesi-i definuar fusha ~1"
-
-#: sections.src#ST_CUSTOM2.string.text
-msgid "User-defined field ~2"
-msgstr "Përdoruesi-i definuar fusha ~2"
-
-#: sections.src#ST_CUSTOM3.string.text
-msgid "User-defined field ~3"
-msgstr "Përdoruesi-i definuar fusha ~3"
-
-#: sections.src#ST_CUSTOM4.string.text
-msgid "User-defined field ~4"
-msgstr "Përdoruesi-i definuar fusha ~4"
-
-#: sections.src#ST_CUSTOM5.string.text
-msgid "User-defined field ~5"
-msgstr "Përdoruesi-i definuar fusha ~6"
-
-#: toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.toolboxitem.text
-msgid "Table"
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_SOURCE.ToolBoxItem.Text
+msgid  "Table"
 msgstr "Tabelë"
 
-#: toolbar.src#RID_BIB_TOOLBAR.TBC_FT_QUERY.toolboxitem.text
-msgid "Search Key"
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_FT_QUERY.ToolBoxItem.Text
+msgid  "Search Key"
 msgstr "Çelës kërkimi"
 
-#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_AUTOFILTER.toolboxitem.text
-msgid "AutoFilter"
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_AUTOFILTER.ToolBoxItem.Text
+msgid  "AutoFilter"
 msgstr "AutoFiltër"
 
-#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_FILTERCRIT.toolboxitem.text
-msgid "Standard Filter"
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_FILTERCRIT.ToolBoxItem.Text
+msgid  "Standard Filter"
 msgstr "Filtër Standard"
 
-#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_REMOVEFILTER.toolboxitem.text
-msgid "Remove Filter"
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_REMOVEFILTER.ToolBoxItem.Text
+msgid  "Remove Filter"
 msgstr "Largo Filtrin "
 
-#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_COL_ASSIGN.toolboxitem.text
-msgid "Column Arrangement"
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_COL_ASSIGN.ToolBoxItem.Text
+msgid  "Column Arrangement"
 msgstr "Aranzhimi i Kolonave"
 
-#: toolbar.src#RID_BIB_TOOLBAR.TBC_BT_CHANGESOURCE.toolboxitem.text
-msgid "Data Source"
+#: source/bibliography/toolbar.src#RID_BIB_TOOLBAR.TBC_BT_CHANGESOURCE.ToolBoxItem.Text
+msgid  "Data Source"
 msgstr "Burim i të Dhënave"
 
-#: grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.pushbutton.text
-msgctxt "grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.pushbutton.text"
-msgid "Set"
-msgstr "Vendos"
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_ERROR_PREFIX.String.Text
+msgid  "The following column names could not be assigned:\n"
+msgstr "Emrat e kolonave të mëposhtme nuk mund të caktohen:\n"
 
-#: grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_ASCENDING.string.text
-msgid "Linear ascending"
-msgstr "Lartësim linear"
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_ARTICLE.String.Text
+msgid  "Article"
+msgstr "Artikulli"
 
-#: grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_DESCENDING.string.text
-msgid "Linear descending"
-msgstr "Zbritshmëri lineare"
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOK.String.Text
+msgid  "Book"
+msgstr "Libri"
 
-#: grid.src#GRID_DIALOG.RESET_TYPE_RESET.string.text
-msgid "Original values"
-msgstr "Vlerat origjinale"
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_BOOKLET.String.Text
+msgid  "Brochures"
+msgstr "Broshurat"
 
-#: grid.src#GRID_DIALOG.RESET_TYPE_EXPONENTIAL.string.text
-msgid "Exponential increasing"
-msgstr "Rritje treguesi"
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CONFERENCE.String.Text
+msgid  "Conference proceedings"
+msgstr "Procesimet e  konferencës"
 
-#: sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.pushbutton.text
-msgid ""
-"About\n"
-" Dev~ice"
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INBOOK.String.Text
+msgid  "Book excerpt"
+msgstr "Fragment libri "
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INCOLLECTION.String.Text
+msgid  "Book excerpt with title"
+msgstr "Fragment  libri me titull"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_INPROCEEDINGS.String.Text
+msgid  "Conference proceedings"
+msgstr "Procesimet e  konferencës"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_JOURNAL.String.Text
+msgid  "Journal"
+msgstr "Zhurnal"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MANUAL.String.Text
+msgid  "Techn. documentation"
+msgstr "Dokumentacion teknik"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MASTERSTHESIS.String.Text
+msgid  "Thesis"
+msgstr "Tezat"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_MISC.String.Text
+msgid  "Miscellaneous"
+msgstr "Të ndryshme"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PHDTHESIS.String.Text
+msgid  "Dissertation"
+msgstr "Disertacioni"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_PROCEEDINGS.String.Text
+msgid  "Conference proceedings"
+msgstr "Procesimet e  konferencës"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_TECHREPORT.String.Text
+msgid  "Research report"
+msgstr "Raport studimor"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_UNPUBLISHED.String.Text
+msgid  "Unpublished"
+msgstr "E pabotuar"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_EMAIL.String.Text
+msgid  "e-mail"
+msgstr "e-mail"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_WWW.String.Text
+msgid  "WWW document"
+msgstr "WWW dokument"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM1.String.Text
+msgid  "User-defined1"
+msgstr "i definuar nga shfrytëzuesi 1"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM2.String.Text
+msgid  "User-defined2"
+msgstr "i definuar nga shfrytëzuesi 2"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM3.String.Text
+msgid  "User-defined3"
+msgstr "i definuar nga shfrytëzuesi 3"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM4.String.Text
+msgid  "User-defined4"
+msgstr "i definuar nga shfrytëzuesi 4"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.ST_TYPE_CUSTOM5.String.Text
+msgid  "User-defined5"
+msgstr "i definuar nga shfrytëzuesi 5"
+
+#: source/bibliography/sections.src#RID_TP_GENERAL.String.Text
+msgid  "General"
+msgstr "Të përgjithshme"
+
+#: source/bibliography/sections.src#RID_POPUP_ME_VIEW.PU_INSERT.MenuItem.Text
+msgid  "Insert Section..."
+msgstr "Fut seksionin..."
+
+#: source/bibliography/sections.src#RID_POPUP_ME_VIEW.PU_REMOVE.MenuItem.Text
+msgid  "Delete Section..."
+msgstr "Fshij seksionin..."
+
+#: source/bibliography/sections.src#RID_POPUP_ME_VIEW.PU_CHG_NAME.MenuItem.Text
+msgid  "Modify Name..."
+msgstr "Modifiko Emrin..."
+
+#: source/bibliography/sections.src#ST_IDENTIFIER.String.Text
+msgid  "~Short name"
+msgstr "~Emër i shkurtë"
+
+#: source/bibliography/sections.src#ST_AUTHTYPE.String.Text
+msgid  "~Type"
+msgstr "Lloji"
+
+#: source/bibliography/sections.src#ST_YEAR.String.Text
+msgid  "~Year"
+msgstr "~Viti"
+
+#: source/bibliography/sections.src#ST_AUTHOR.String.Text
+msgid  "Author(s)"
+msgstr "Autor(ët)"
+
+#: source/bibliography/sections.src#ST_TITLE.String.Text
+msgid  "Tit~le"
+msgstr "Tit~tulli"
+
+#: source/bibliography/sections.src#ST_PUBLISHER.String.Text
+msgid  "~Publisher"
+msgstr "~Botues"
+
+#: source/bibliography/sections.src#ST_ADDRESS.String.Text
+msgid  "A~ddress"
+msgstr "A~dresa"
+
+#: source/bibliography/sections.src#ST_ISBN.String.Text
+msgid  "~ISBN"
+msgstr "~ISBN"
+
+#: source/bibliography/sections.src#ST_CHAPTER.String.Text
+msgid  "~Chapter"
+msgstr "~Kapitulli"
+
+#: source/bibliography/sections.src#ST_PAGE.String.Text
+msgid  "Pa~ge(s)"
+msgstr "Fa~qe(et)"
+
+#: source/bibliography/sections.src#ST_EDITOR.String.Text
+msgid  "Editor"
+msgstr "Botuesi'"
+
+#: source/bibliography/sections.src#ST_EDITION.String.Text
+msgid  "Ed~ition"
+msgstr "Bo~tim"
+
+#: source/bibliography/sections.src#ST_BOOKTITLE.String.Text
+msgid  "~Book title"
+msgstr "~Titull libri"
+
+#: source/bibliography/sections.src#ST_VOLUME.String.Text
+msgid  "Volume"
+msgstr "Volumi"
+
+#: source/bibliography/sections.src#ST_HOWPUBLISHED.String.Text
+msgid  "Publication t~ype"
+msgstr "Ll~oj publikimi"
+
+#: source/bibliography/sections.src#ST_ORGANIZATION.String.Text
+msgid  "Organi~zation"
+msgstr "Organi~zatë"
+
+#: source/bibliography/sections.src#ST_INSTITUTION.String.Text
+msgid  "Instit~ution"
+msgstr "Instit~tucion"
+
+#: source/bibliography/sections.src#ST_SCHOOL.String.Text
+msgid  "University"
+msgstr "Universiteti"
+
+#: source/bibliography/sections.src#ST_REPORT.String.Text
+msgid  "Type of re~port"
+msgstr "Lloji i ra~portit"
+
+#: source/bibliography/sections.src#ST_MONTH.String.Text
+msgid  "~Month"
+msgstr "~Muaji"
+
+#: source/bibliography/sections.src#ST_JOURNAL.String.Text
+msgid  "~Journal"
+msgstr "~Zhurnali"
+
+#: source/bibliography/sections.src#ST_NUMBER.String.Text
+msgid  "Numb~er"
+msgstr "Num~ri"
+
+#: source/bibliography/sections.src#ST_SERIES.String.Text
+msgid  "Se~ries"
+msgstr "Se~ri"
+
+#: source/bibliography/sections.src#ST_ANNOTE.String.Text
+msgid  "Ann~otation"
+msgstr "Shën~im"
+
+#: source/bibliography/sections.src#ST_NOTE.String.Text
+msgid  "~Note"
+msgstr "~Shënim"
+
+#: source/bibliography/sections.src#ST_URL.String.Text
+msgid  "URL"
+msgstr "URL"
+
+#: source/bibliography/sections.src#ST_CUSTOM1.String.Text
+msgid  "User-defined field ~1"
+msgstr "Përdorruesi-i definuar fusha ~1"
+
+#: source/bibliography/sections.src#ST_CUSTOM2.String.Text
+msgid  "User-defined field ~2"
+msgstr "Përdoruesi-i definuar fusha ~2"
+
+#: source/bibliography/sections.src#ST_CUSTOM3.String.Text
+msgid  "User-defined field ~3"
+msgstr "Përdoruesi-i definuar fusha ~3"
+
+#: source/bibliography/sections.src#ST_CUSTOM4.String.Text
+msgid  "User-defined field ~4"
+msgstr "Përdoruesi-i definuar fusha ~4"
+
+#: source/bibliography/sections.src#ST_CUSTOM5.String.Text
+msgid  "User-defined field ~5"
+msgstr "Përdoruesi-i definuar fusha ~6"
+
+#: source/bibliography/datman.src#RID_DLG_MAPPING.GB_MAPPING.FixedLine.Text
+msgid  "Column names"
+msgstr "Emrat e Kolonave"
+
+#: source/bibliography/datman.src#RID_DLG_MAPPING.ST_NONE.String.Text
+msgid  "<none>"
+msgstr "<asnjë>"
+
+#: source/bibliography/datman.src#RID_DLG_MAPPING.String.Text
+msgid  "Column Layout for Table %1"
+msgstr "Faqosje e Kolonës për Tabelë %1"
+
+#: source/bibliography/datman.src#RID_DLG_DBCHANGE.ModalDialog.Text
+msgid  "Choose Data Source"
+msgstr "Zgjedh Burimin e të Dhënave"
+
+#: source/bibliography/datman.src#RID_DLG_DBCHANGE.ST_ENTRY.String.Text
+msgid  "Entry"
+msgstr "Hyrje"
+
+#: source/bibliography/bib.src#RID_BIB_STR_FIELDSELECTION.String.Text
+msgid  "Field selection:"
+msgstr "Përzgjedhje  fushe:"
+
+#: source/bibliography/bib.src#RID_BIB_STR_TABWIN_PREFIX.String.Text
+msgid  "Table;Query;Sql;Sql [Native]"
+msgstr "Tabela;Pyetsori; Sql;Sql[Autokton]"
+
+#: source/bibliography/bib.src#RID_BIB_STR_FRAME_TITLE.String.Text
+msgid  "Bibliography Database"
+msgstr "Të Dhëna Bazë Bibliografike"
+
+#: source/bibliography/bib.src#RID_MAP_QUESTION.String.Text
+msgid  "Do you want to edit the column arrangement?"
+msgstr "A dëshironi të redaktoni rregullimin e kolonës?"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.TabPage.Text
+msgid  "Table Selection"
+msgstr "Përzgjedhje Tabele"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FL_FRAME.FixedLine.Text
+msgid  "Control"
+msgstr "Kontrolli"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_TABLE.FT_SELECTTABLE_LABEL.FixedText.Text
+msgid  "On the right side, you see all the tables from the data source of the form.\n\n\nChoose the table from which the data should be used as basis for the list content:"
 msgstr ""
-"Për\n"
-"Paj~isje"
 
-#: sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.pushbutton.text
-msgid ""
-"Create\n"
-"Preview"
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.TabPage.Text
+msgid  "Field Selection"
+msgstr "Përzgjedhje e fushës"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_TABLEFIELDS.FixedText.Text
+msgid  "Existing fields"
+msgstr "Fushat ekzistuese"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.FT_DISPLAYEDFIELD.FixedText.Text
+msgid  "Display field"
+msgstr "Paraqit fushën"
+
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_COMBOBOX.String.Text
+msgid  "The contents of the field selected will be shown in the combo box list."
 msgstr ""
-"Krijo\n"
-"Shikim paraprak"
 
-#: sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.fixedline.text
-msgid "Preview"
-msgstr "Shikim paraprak"
-
-#: sanedlg.src#RID_SANE_DIALOG.RID_SCANAREA_BOX.fixedline.text
-msgid "Scan area"
-msgstr "Skano hapësiren"
-
-#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_LEFT_TXT.fixedtext.text
-msgid "Left:"
-msgstr "Majtas:"
-
-#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_TOP_TXT.fixedtext.text
-msgid "Top:"
-msgstr "Sipërm:"
-
-#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RIGHT_TXT.fixedtext.text
-msgid "Right:"
-msgstr "Djathtas:"
-
-#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BOTTOM_TXT.fixedtext.text
-msgid "Bottom:"
-msgstr "Poshtë"
-
-#: sanedlg.src#RID_SANE_DIALOG.RID_DEVICE_BOX_TXT.fixedtext.text
-msgid "Device used:"
-msgstr "Pajisja  përdorur:"
-
-#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RESOLUTION_TXT.fixedtext.text
-msgid "Resolution [~DPI]"
-msgstr "Rezolucion (~DPI)"
-
-#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_ADVANCED_TXT.fixedtext.text
-msgid "Show advanced options"
-msgstr "Shfaq mundësitë e avancuara"
-
-#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_OPTION_TXT.fixedtext.text
-msgid "Options:"
-msgstr "Mundësitë:"
-
-#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_NUMERIC_VECTOR_TXT.fixedtext.text
-msgid "Vector element"
-msgstr "Element vektori"
-
-#: sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.pushbutton.text
-msgctxt "sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.pushbutton.text"
-msgid "Set"
-msgstr "Vendos"
-
-#: sanedlg.src#RID_SANE_DIALOG.modaldialog.text
-msgid "Scanner"
-msgstr "Skener"
-
-#: sanedlg.src#RID_SANE_DEVICEINFO_TXT.string.text
-msgid ""
-"Device: %s\n"
-"Vendor: %s\n"
-"Model: %s\n"
-"Type: %s"
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_CONTENTSELECTION_FIELD.STR_FIELDINFO_LISTBOX.String.Text
+msgid  "The contents of the selected field will be shown in the list box if the linked fields are identical."
 msgstr ""
-"Pajisja: %s\n"
-"Shitës: %s\n"
-"Model: %s\n"
-"Lloj: %s"
 
-#: sanedlg.src#RID_SANE_SCANERROR_TXT.string.text
-msgid "An error occurred while scanning."
-msgstr "Një gabim është ndeshur gjatë skanografisë"
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.TabPage.Text
+msgid  "Field Link"
+msgstr "Lidhje Fushe"
 
-#: sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.string.text
-msgid ""
-"The device does not offer a preview option. Therefore, a normal scan will be "
-"used as a preview instead. This may take a considerable amount of time."
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_FIELDLINK_DESC.FixedText.Text
+msgid  "This is where you select fields with matching contents so that the value from the display field will be shown."
 msgstr ""
-"Pajisja nuk ofron zgjedhjen nga shikimi paraprak. Si pasojë, do të përdoret "
-"një skan normal si në vend të shikimit paraprak. Kjo mund të merr një pjesë "
-"të konsiderueshme të kohës."
 
-#: sanedlg.src#RID_SANE_NOSANELIB_TXT.string.text
-msgid "The SANE interface could not be initialized. Scanning is not possible."
-msgstr "Ndërfaqja SANE nuk mund të inicializohet. Skanimi nuk është i mundshëm."
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_VALUELISTFIELD.FixedText.Text
+msgid  "Field from the ~Value Table"
+msgstr "Fushë nga~Tabele Vlere "
 
-#: preload.src#RID_DLG_OEMWIZARD.PB_PREV.pushbutton.text
-msgid "<< Back"
+#: source/dbpilots/listcombopages.src#RID_PAGE_LCW_FIELDLINK.FT_TABLEFIELD.FixedText.Text
+msgid  "Field from the ~List Table"
+msgstr "Fushë nga~Tabelë Liste"
+
+#: source/dbpilots/listcombopages.src#RID_STR_COMBOWIZ_DBFIELD.String.Text
+msgid  "You can either save the value of the combo box in a database field or use it for display purposes."
+msgstr ""
+
+#: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.TabPage.Text
+msgid  "Field Selection"
+msgstr "Përzgjedhje e fushës"
+
+#: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FL_FRAME.FixedLine.Text
+msgid  "Table element"
+msgstr "Element tabele"
+
+#: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_EXISTING_FIELDS.FixedText.Text
+msgid  "Existing fields"
+msgstr "Fushat ekzistuese"
+
+#: source/dbpilots/gridpages.src#RID_PAGE_GW_FIELDSELECTION.FT_SELECTED_FIELDS.FixedText.Text
+msgid  "Selected fields"
+msgstr "Fushat e përzgjedhura"
+
+#: source/dbpilots/gridpages.src#RID_STR_DATEPOSTFIX.String.Text
+msgid  " (Date)"
+msgstr "(Data)"
+
+#: source/dbpilots/gridpages.src#RID_STR_TIMEPOSTFIX.String.Text
+msgid  " (Time)"
+msgstr "(Koha)"
+
+#: source/dbpilots/dbpilots.src#RID_DLG_GROUPBOXWIZARD.ModalDialog.Text
+msgid  "Group Element Wizard"
+msgstr "AutoPilot Element Grup"
+
+#: source/dbpilots/dbpilots.src#RID_DLG_GRIDWIZARD.ModalDialog.Text
+msgid  "Table Element Wizard"
+msgstr "Autopilot Element Tabelë"
+
+#: source/dbpilots/dbpilots.src#RID_STR_LISTWIZARD_TITLE.String.Text
+msgid  "List Box Wizard"
+msgstr "AutoPilot Kuti Listë"
+
+#: source/dbpilots/dbpilots.src#RID_STR_COMBOWIZARD_TITLE.String.Text
+msgid  "Combo Box Wizard"
+msgstr "AutoPilot  Kuti Krehër"
+
+#: source/dbpilots/dbpilots.src#RID_STR_COULDNOTOPENTABLE.String.Text
+msgid  "The table connection to the data source could not be established."
+msgstr "Lidhja e tabelës për burimin e të dhënave nuk mund të ngritet."
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.TabPage.Text
+msgid  "Data"
+msgstr "Të dhëna"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FL_DATA.FixedLine.Text
+msgid  "Data"
+msgstr "Të dhëna"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_EXPLANATION.FixedText.Text
+msgid  "Currently, the form the control belongs to is not (or not completely) bound to a data source.\n\nPlease choose a data source and a table.\n\n\nPlease note that the settings made on this page will take effect immediately upon leaving the page."
+msgstr ""
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_DATASOURCE.FixedText.Text
+msgid  "~Data source:"
+msgstr "~Burimit i të dhënave:"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.PB_FORMDATASOURCE.PushButton.Text
+msgid  "~..."
+msgstr "~..."
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_TABLESELECTION.FT_TABLE.FixedText.Text
+msgid  "~Table / Query:"
+msgstr "Tabela;Pyetsori; Sql;Sql[Autokton]"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.TabPage.Text
+msgid  "Database Field"
+msgstr "Fusha e Bazës së të Dhënave"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.FT_DATABASEFIELD_QUEST.FixedText.Text
+msgid  "Do you want to save the value in a database field?"
+msgstr "A dëshironi të ruani vlerat në një fushë të të dhënave bazë?"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_YES.RadioButton.Text
+msgid  "~Yes, I want to save it in the following database field:"
+msgstr "~Po, Unë dëshiroj të ruaj atë në fushën e mëposhtme të të dhënave bazë:"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_OPTION_DBFIELD.RB_STOREINFIELD_NO.RadioButton.Text
+msgid  "~No, I only want to save the value in the form."
+msgstr "~Jo, Unë vetëm dua të ruaj vlerën në formulim."
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FL_FORMSETINGS.FixedLine.Text
+msgid  "Form"
+msgstr "Formular"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMDATASOURCELABEL.FixedText.Text
+msgid  "Data source"
+msgstr "Burimi i të dhënave"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMCONTENTTYPELABEL.FixedText.Text
+msgid  "Content type"
+msgstr "Lloj i përmbajtjes"
+
+#: source/dbpilots/commonpagesdbp.src#RID_PAGE_FORM_DATASOURCE_STATUS.FT_FORMTABLELABEL.FixedText.Text
+msgid  "Content"
+msgstr "Përmbajtje"
+
+#: source/dbpilots/commonpagesdbp.src#RID_STR_TYPE_TABLE.String.Text
+msgid  "Table"
+msgstr "Tabelë"
+
+#: source/dbpilots/commonpagesdbp.src#RID_STR_TYPE_QUERY.String.Text
+msgid  "Query"
+msgstr "Pyetësor"
+
+#: source/dbpilots/commonpagesdbp.src#RID_STR_TYPE_COMMAND.String.Text
+msgid  "SQL command"
+msgstr "Komanda SQL "
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.TabPage.Text
+msgid  "Data"
+msgstr "Të dhëna"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOLABELS.FixedText.Text
+msgid  "Which ~names do you want to give the option fields?"
+msgstr "Cilët ~emra dëshironi ti ipni fushave së mundshme?"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_GROUPRADIOSELECTION.FT_RADIOBUTTONS.FixedText.Text
+msgid  "~Option fields"
+msgstr "~Fushat e mundshme"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.TabPage.Text
+msgid  "Default Field Selection"
+msgstr "Mosparqitje Fushës Përzgjedhur"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.FT_DEFAULTSELECTION.FixedText.Text
+msgid  "Should one option field be selected as a default?"
+msgstr "A do të jetë e përzgjedhur një fushë mundshme si një mosparaqitje?"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_YES.RadioButton.Text
+msgid  "~Yes, the following:"
+msgstr "~Po, vijuesja:"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_DEFAULTFIELDSELECTION.RB_DEFSELECTION_NO.RadioButton.Text
+msgid  "No, one particular field is not going to be selected."
+msgstr "Jo, nuk do të përzgjedhet. një fushë e veqantë ."
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.TabPage.Text
+msgid  "Field Values"
+msgstr "Vlerat e Fushës"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES_EXPL.FixedText.Text
+msgid  "When you select an option, the option group is given a specific value."
+msgstr ""
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_OPTIONVALUES.FixedText.Text
+msgid  "Which ~value do you want to assign to each option?"
+msgstr "Cila ~vlerë dëshironi të caktohet tek secila zgjedhje?"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONVALUES.FT_RADIOBUTTONS.FixedText.Text
+msgid  "~Option fields"
+msgstr "~Fushat e mundshme"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.TabPage.Text
+msgid  "Create Option Group"
+msgstr "Krijo Grup Zgjedhje"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_NAMEIT.FixedText.Text
+msgid  "Which ~caption is to be given to your option group?"
+msgstr "Cili ~titull është për tu dhënë tek grupi juaj i zgjedhjeve?"
+
+#: source/dbpilots/groupboxpages.src#RID_PAGE_OPTIONS_FINAL.FT_THATSALL.FixedText.Text
+msgid  "These were all details needed to create the option group."
+msgstr ""
+
+#: source/dbpilots/groupboxpages.src#RID_STR_GROUPWIZ_DBFIELD.String.Text
+msgid  "You can either save the value of the option group in a database field or use it for a later action."
+msgstr ""
+
+#: source/preload/preload.src#RID_DLG_OEMWIZARD.PB_PREV.PushButton.Text
+msgid  "<< Back"
 msgstr "<< Prapa"
 
-#: preload.src#RID_DLG_OEMWIZARD.PB_NEXT.pushbutton.text
-msgid "Next >>"
+#: source/preload/preload.src#RID_DLG_OEMWIZARD.PB_NEXT.PushButton.Text
+msgid  "Next >>"
 msgstr "I ardhshëm >>"
 
-#: preload.src#RID_DLG_OEMWIZARD.ST_ACCEPT.string.text
-msgid "Accept"
+#: source/preload/preload.src#RID_DLG_OEMWIZARD.ST_ACCEPT.String.Text
+msgid  "Accept"
 msgstr "Pranoj"
 
-#: preload.src#RID_DLG_OEMWIZARD.ST_FINISH.string.text
-msgid "Finish"
+#: source/preload/preload.src#RID_DLG_OEMWIZARD.ST_FINISH.String.Text
+msgid  "Finish"
 msgstr "Përfundimi"
 
-#: preload.src#RID_DLG_OEMWIZARD.ST_LICENSE_AGREEMENT.string.text
-msgid " - Software License Agreement"
+#: source/preload/preload.src#RID_DLG_OEMWIZARD.ST_LICENSE_AGREEMENT.String.Text
+msgid  " - Software License Agreement"
 msgstr "-Marrëveshja Liçensë e Softuerit"
 
-#: preload.src#RID_DLG_OEMWIZARD.ST_INSERT_USER_DATA.string.text
-msgid "- User Data"
+#: source/preload/preload.src#RID_DLG_OEMWIZARD.ST_INSERT_USER_DATA.String.Text
+msgid  "- User Data"
 msgstr "-Të dhëna të Përdoruesit"
 
-#: preload.src#RID_TP_WELCOME.FT_INFO.fixedtext.text
-msgid ""
-"Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n"
-"\n"
-"To start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal "
-"data in the dialog following the license text. Important information is "
-"contained in the readme files which are located in the %PRODUCTNAME product "
-"directory. Please read these files carefully. You can also find detailed "
-"information at the Oracle website \n"
-"\n"
-"http://www.oracle.com/us/products/applications/open-office."
-msgstr ""
-
-#: preload.src#RID_TP_WELCOME.tabpage.text
-msgid "Welcome"
+#: source/preload/preload.src#RID_TP_WELCOME.TabPage.Text
+msgid  "Welcome"
 msgstr "Mirësevini"
 
-#: preload.src#RID_TP_LICENSE.FT_INFO1.fixedtext.text
-msgid "Please follow these steps to proceed with the installation:"
+#: source/preload/preload.src#RID_TP_WELCOME.FT_INFO.FixedText.Text
+msgid  "Welcome to %PRODUCTNAME %PRODUCTVERSION OEM\n\nTo start the %PRODUCTNAME %PRODUCTVERSION OEM, please enter your personal data in the dialog following the license text. Important information is contained in the readme files which are located in the %PRODUCTNAME product directory. Please read these files carefully. You can also find detailed information at the Oracle website \n\nhttp://www.oracle.com/us/products/applications/open-office."
+msgstr ""
+
+#: source/preload/preload.src#RID_TP_LICENSE.TabPage.Text
+msgid  "License Agreement"
+msgstr "Marrëveshja Liçensë"
+
+#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO1.FixedText.Text
+msgid  "Please follow these steps to proceed with the installation:"
 msgstr "Ju lutem vijoni këto hapa për të procesuar me instalimin:"
 
-#: preload.src#RID_TP_LICENSE.FT_INFO2_1.fixedtext.text
-msgid "1."
+#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO2_1.FixedText.Text
+msgid  "1."
 msgstr "1."
 
-#: preload.src#RID_TP_LICENSE.FT_INFO2.fixedtext.text
-msgid ""
-"View the complete License Agreement. Please use the scroll bar or the '%"
-"PAGEDOWN' button in this dialog to view the entire license text."
+#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO2.FixedText.Text
+msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
 msgstr ""
-"Shikoni Marraveshjen License komplete. Ju  lutem përdor shiritin rrotullues "
-"ose butonin '%PAGEDOWN' në këtë dialog të paraqet pamjen e mbrendshme të "
-"tekstit licensë."
 
-#: preload.src#RID_TP_LICENSE.PB_PAGEDOWN.pushbutton.text
-msgid "Page Down"
+#: source/preload/preload.src#RID_TP_LICENSE.PB_PAGEDOWN.PushButton.Text
+msgid  "Page Down"
 msgstr "Faqja poshtë"
 
-#: preload.src#RID_TP_LICENSE.FT_INFO3_1.fixedtext.text
-msgid "2."
+#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO3_1.FixedText.Text
+msgid  "2."
 msgstr "2."
 
-#: preload.src#RID_TP_LICENSE.FT_INFO3.fixedtext.text
-msgid "Accept the License Agreement."
+#: source/preload/preload.src#RID_TP_LICENSE.FT_INFO3.FixedText.Text
+msgid  "Accept the License Agreement."
 msgstr "Prano Marrëveshjen e Liçensës"
 
-#: preload.src#RID_TP_LICENSE.CB_ACCEPT.checkbox.text
-msgid "I accept the terms of the Agreement."
+#: source/preload/preload.src#RID_TP_LICENSE.CB_ACCEPT.CheckBox.Text
+msgid  "I accept the terms of the Agreement."
 msgstr "Pranoj termet e Marrëveshjes"
 
-#: preload.src#RID_TP_LICENSE.LICENCE_ACCEPT.string.text
-msgid "~Accept"
+#: source/preload/preload.src#RID_TP_LICENSE.LICENCE_ACCEPT.String.Text
+msgid  "~Accept"
 msgstr "Prano"
 
-#: preload.src#RID_TP_LICENSE.LICENCE_NOTACCEPT.string.text
-msgid "Decline"
+#: source/preload/preload.src#RID_TP_LICENSE.LICENCE_NOTACCEPT.String.Text
+msgid  "Decline"
 msgstr "Nuk pranoj"
 
-#: preload.src#RID_TP_LICENSE.tabpage.text
-msgid "License Agreement"
-msgstr "Marrëveshja Liçensë"
+#: source/propctrlr/taborder.src#RID_DLG_TABORDER.ModalDialog.Text
+msgid  "Tab Order"
+msgstr "Tab Renditja"
+
+#: source/propctrlr/taborder.src#RID_DLG_TABORDER.FT_CONTROLS.FixedText.Text
+msgid  "Controls"
+msgstr "Kontrollet"
+
+#: source/propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_UP.PushButton.Text
+msgid  "Move Up"
+msgstr "Lëviz sipër"
+
+#: source/propctrlr/taborder.src#RID_DLG_TABORDER.PB_MOVE_DOWN.PushButton.Text
+msgid  "Move Down"
+msgstr "Lëviz poshtë"
+
+#: source/propctrlr/taborder.src#RID_DLG_TABORDER.PB_AUTO_ORDER.PushButton.Text
+msgid  "Automatic Sort"
+msgstr "Klasifiko sipas"
+
+#: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.FixedText.Text
+msgid  "These are control fields that can be used as label fields for the $control_class$ $control_name$."
+msgstr ""
+
+#: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.1.CheckBox.Text
+msgid  "~No assignment"
+msgstr "~Pangarkim"
+
+#: source/propctrlr/selectlabeldialog.src#RID_DLG_SELECTLABELCONTROL.CancelButton.Text
+msgid  "Label Field Selection"
+msgstr "Përzgjedhje Fushes së Emëruar"
+
+#: source/propctrlr/selectlabeldialog.src#RID_STR_FORMS.String.Text
+msgid  "Forms"
+msgstr "Formularët"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_CONFIRM_DELETE_DATA_TYPE.String.Text
+msgid  "Do you want to delete the data type '#type#' from the model?\nPlease note that this will affect all controls which are bound to this data type."
+msgstr ""
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PUSHBUTTON.String.Text
+msgid  "Button"
+msgstr "Butoni"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_RADIOBUTTON.String.Text
+msgid  "Option Button"
+msgstr "Butoni opcional"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CHECKBOX.String.Text
+msgid  "Check Box"
+msgstr "Kutia për kontrollim"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FIXEDTEXT.String.Text
+msgid  "Label Field"
+msgstr "Fushë emërimi"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_GROUPBOX.String.Text
+msgid  "Group Box"
+msgstr "Kuti grupi"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_EDIT.String.Text
+msgid  "Text Box"
+msgstr "Kutia e tekstit"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FORMATTED.String.Text
+msgid  "Formatted Field"
+msgstr "Fusha e Formatuar"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_LISTBOX.String.Text
+msgid  "List Box"
+msgstr "Kuti e listës"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_COMBOBOX.String.Text
+msgid  "Combo Box"
+msgstr "Combo Kuti"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGEBUTTON.String.Text
+msgid  "Image Button"
+msgstr "Butoni i fotografisë"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_HIDDENCONTROL.String.Text
+msgid  "Hidden Control"
+msgstr "Kontroll i Fshehur"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_UNKNOWNCONTROL.String.Text
+msgid  "Control (unknown type)"
+msgstr "Kontroll ( lloj i panjohur)"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_IMAGECONTROL.String.Text
+msgid  "Image Control"
+msgstr "Kontrolli i fotografisë"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_FILECONTROL.String.Text
+msgid  "File Selection"
+msgstr "Zgjedhja e fajllit"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DATEFIELD.String.Text
+msgid  "Date Field"
+msgstr "Fusha e datës"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_TIMEFIELD.String.Text
+msgid  "Time Field"
+msgstr "Fusha e Kohës"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_NUMERICFIELD.String.Text
+msgid  "Numeric Field"
+msgstr "Fushë numerike"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_CURRENCYFIELD.String.Text
+msgid  "Currency Field"
+msgstr "Fusha e valutave"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_PATTERNFIELD.String.Text
+msgid  "Pattern Field"
+msgstr "Fusha e modelit"
+
+#: source/propctrlr/pcrmiscres.src#RID_STR_PROPTITLE_DBGRID.String.Text
+msgid  "Table Control "
+msgstr "Kontrolli i Tabelës"
+
+#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.ModalDialog.Text
+msgid  "Link fields"
+msgstr "Lidh fushat kryesore"
+
+#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.FT_EXPLANATION.FixedText.Text
+msgid  "Sub forms can be used to display detailed data about the current record of the master form. To do this, you can specify which columns in the sub form match which columns in the master form."
+msgstr ""
+
+#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.PB_SUGGEST.PushButton.Text
+msgid  "Suggest"
+msgstr ""
+
+#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_DETAIL_FORM.String.Text
+msgid  "Sub Form"
+msgstr "Dizajnimi i formularit"
+
+#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_MASTER_FORM.String.Text
+msgid  "Master Form"
+msgstr "Dizajnimi i formularit"
+
+#: source/propctrlr/formlinkdialog.src#RID_DLG_FORMLINKS.STR_ERROR_RETRIEVING_COLUMNS.String.Text
+msgid  "The columns of '#' could not be retrieved."
+msgstr "Fajlli nuk mund të ruhet!"
+
+#: source/propctrlr/propres.src#RID_STR_STANDARD.String.Text
+msgid  "Default"
+msgstr "Standarde"
+
+#: source/propctrlr/propres.src#RID_STR_PROPPAGE_DEFAULT.String.Text
+msgid  "General"
+msgstr "Të përgjithshme"
+
+#: source/propctrlr/propres.src#RID_STR_PROPPAGE_DATA.String.Text
+msgid  "Data"
+msgstr "Të dhëna"
+
+#: source/propctrlr/propres.src#RID_RSC_ENUM_YESNO.1.String.Text
+msgid  "No"
+msgstr "No"
+
+#: source/propctrlr/propres.src#RID_RSC_ENUM_YESNO.2.String.Text
+msgid  "Yes"
+msgstr "Po"
+
+#: source/propctrlr/propres.src#RID_STR_HELP_SECTION_LABEL.String.Text
+msgid  "Help"
+msgstr "Ndihma"
+
+#: source/propctrlr/propres.src#RID_EMBED_IMAGE_PLACEHOLDER.String.Text
+msgid  "<Embedded-Image>"
+msgstr "Pikë fotografi"
+
+#: source/propctrlr/propres.src#RID_STR_TEXT_FORMAT.String.Text
+msgid  "Text"
+msgstr "Tekst"
+
+#: source/propctrlr/formres.src#RID_STR_EDITMASK.String.Text
+msgid  "Edit mask"
+msgstr "Redakto maskën"
+
+#: source/propctrlr/formres.src#RID_STR_LITERALMASK.String.Text
+msgid  "Literal mask"
+msgstr "Maska e saktë"
+
+#: source/propctrlr/formres.src#RID_STR_READONLY.String.Text
+msgid  "Read-only"
+msgstr "Vetëm -lexim"
+
+#: source/propctrlr/formres.src#RID_STR_ENABLED.String.Text
+msgid  "Enabled"
+msgstr "Mundësuar"
+
+#: source/propctrlr/formres.src#RID_STR_ENABLE_VISIBLE.String.Text
+msgid  "Visible"
+msgstr "Madhësi e dallueshme"
+
+#: source/propctrlr/formres.src#RID_STR_AUTOCOMPLETE.String.Text
+msgid  "AutoFill"
+msgstr "AutoPërmbushje"
+
+#: source/propctrlr/formres.src#RID_STR_LINECOUNT.String.Text
+msgid  "Line count"
+msgstr "Numëro rreshtat"
+
+#: source/propctrlr/formres.src#RID_STR_MAXTEXTLEN.String.Text
+msgid  "Max. text length"
+msgstr "Gjatësia maksimale e tekstit"
+
+#: source/propctrlr/formres.src#RID_STR_SPIN.String.Text
+msgid  "Spin Button"
+msgstr "Buton rrotullues"
+
+#: source/propctrlr/formres.src#RID_STR_STRICTFORMAT.String.Text
+msgid  "Strict format"
+msgstr "Format i caktuar"
+
+#: source/propctrlr/formres.src#RID_STR_SHOWTHOUSANDSEP.String.Text
+msgid  "Thousands separator"
+msgstr "Ndarës i mijësheve"
+
+#: source/propctrlr/formres.src#RID_STR_PRINTABLE.String.Text
+msgid  "Printable"
+msgstr "Objekt, që shtypet"
+
+#: source/propctrlr/formres.src#RID_STR_TARGET_URL.String.Text
+msgid  "URL"
+msgstr "URL"
+
+#: source/propctrlr/formres.src#RID_STR_TARGET_FRAME.String.Text
+msgid  "Frame"
+msgstr "Kornizë"
+
+#: source/propctrlr/formres.src#RID_STR_HELPTEXT.String.Text
+msgid  "Help text"
+msgstr "Teksti  ndihmës"
+
+#: source/propctrlr/formres.src#RID_STR_HELPURL.String.Text
+msgid  "Help URL"
+msgstr "Ndihma URL"
+
+#: source/propctrlr/formres.src#RID_STR_TAG.String.Text
+msgid  "Additional information"
+msgstr "Informata shtesë"
+
+#: source/propctrlr/formres.src#RID_STR_ECHO_CHAR.String.Text
+msgid  "Password character"
+msgstr "Kodi i karakterit"
+
+#: source/propctrlr/formres.src#RID_STR_TRISTATE.String.Text
+msgid  "Tristate"
+msgstr "Trirangë"
+
+#: source/propctrlr/formres.src#RID_STR_EMPTY_IS_NULL.String.Text
+msgid  "Empty string is NULL"
+msgstr "Vargu i thatë është i PAVLEFSHËM"
+
+#: source/propctrlr/formres.src#RID_STR_DECIMAL_ACCURACY.String.Text
+msgid  "Decimal accuracy"
+msgstr "Saktësia decimale"
+
+#: source/propctrlr/formres.src#RID_STR_IMAGE_URL.String.Text
+msgid  "Graphics"
+msgstr "Grafikat"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULT_SELECT_SEQ.String.Text
+msgid  "Default selection"
+msgstr "Mosparaqit përzgjedhjen"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULT_BUTTON.String.Text
+msgid  "Default button"
+msgstr "Mosparaqit butonin"
+
+#: source/propctrlr/formres.src#RID_STR_LABELCONTROL.String.Text
+msgid  "Label Field"
+msgstr "Fushë emërimi"
+
+#: source/propctrlr/formres.src#RID_STR_LABEL.String.Text
+msgid  "Label"
+msgstr "Emërtimi"
+
+#: source/propctrlr/formres.src#RID_STR_ALIGN.String.Text
+msgid  "Alignment"
+msgstr "Mbështetje"
+
+#: source/propctrlr/formres.src#RID_STR_VERTICAL_ALIGN.String.Text
+msgid  "Vert. Alignment"
+msgstr "Mbështetje vertikale"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.1.String.Text
+msgid  "Top"
+msgstr "Lartë"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.2.String.Text
+msgid  "Middle"
+msgstr "Lart - në mes"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_VERTICAL_ALIGN.3.String.Text
+msgid  "Bottom"
+msgstr "Poshtë"
+
+#: source/propctrlr/formres.src#RID_STR_IMAGEPOSITION.String.Text
+msgid  "Graphics alignment"
+msgstr "Mbështetje vertikale"
+
+#: source/propctrlr/formres.src#RID_STR_FONT.String.Text
+msgid  "Font"
+msgstr "Fonti"
+
+#: source/propctrlr/formres.src#RID_STR_BACKGROUNDCOLOR.String.Text
+msgid  "Background color"
+msgstr "Ngjyra e sfondit"
+
+#: source/propctrlr/formres.src#RID_STR_BORDER.String.Text
+msgid  "Border"
+msgstr "Kufiri"
+
+#: source/propctrlr/formres.src#RID_STR_ICONSIZE.String.Text
+msgid  "Icon size"
+msgstr "Madhësia Origjinale"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.1.String.Text
+msgid  "Small"
+msgstr "SMALL"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ICONSIZE_TYPE.2.String.Text
+msgid  "Large"
+msgstr "LARGE"
+
+#: source/propctrlr/formres.src#RID_STR_SHOW_POSITION.String.Text
+msgid  "Positioning"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_STR_SHOW_NAVIGATION.String.Text
+msgid  "Navigation"
+msgstr "Orientimi"
+
+#: source/propctrlr/formres.src#RID_STR_SHOW_RECORDACTIONS.String.Text
+msgid  "Acting on a record"
+msgstr "Mbroje regjistrin e ndryshimeve"
+
+#: source/propctrlr/formres.src#RID_STR_SHOW_FILTERSORT.String.Text
+msgid  "Filtering / Sorting"
+msgstr "Filtrimi Kyçyr/Ç'kyçur"
+
+#: source/propctrlr/formres.src#RID_STR_HSCROLL.String.Text
+msgid  "Horizontal scroll bar"
+msgstr "Shirit rrotullues horizontal"
+
+#: source/propctrlr/formres.src#RID_STR_VSCROLL.String.Text
+msgid  "Vertical scroll bar"
+msgstr "Shirit rrotullues vertikal"
+
+#: source/propctrlr/formres.src#RID_STR_WORDBREAK.String.Text
+msgid  "Word break"
+msgstr "Thyerje e rreshtit"
+
+#: source/propctrlr/formres.src#RID_STR_MULTILINE.String.Text
+msgid  "Multiline input"
+msgstr "Hyrje e shumë rreshtave"
+
+#: source/propctrlr/formres.src#RID_STR_MULTISELECTION.String.Text
+msgid  "Multiselection"
+msgstr "Zgjedhje e shumëfishtë"
+
+#: source/propctrlr/formres.src#RID_STR_NAME.String.Text
+msgid  "Name"
+msgstr "Emri"
+
+#: source/propctrlr/formres.src#RID_STR_TABINDEX.String.Text
+msgid  "Tab order"
+msgstr "Tab Renditja"
+
+#: source/propctrlr/formres.src#RID_STR_WHEEL_BEHAVIOR.String.Text
+msgid  "Mouse wheel scroll"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_STR_FILTER.String.Text
+msgid  "Filter"
+msgstr "Filtër"
+
+#: source/propctrlr/formres.src#RID_STR_SORT_CRITERIA.String.Text
+msgid  "Sort"
+msgstr "Rendit"
+
+#: source/propctrlr/formres.src#RID_STR_RECORDMARKER.String.Text
+msgid  "Record marker"
+msgstr "Shënues regjistrimi"
+
+#: source/propctrlr/formres.src#RID_STR_FILTERPROPOSAL.String.Text
+msgid  "Filter proposal"
+msgstr "Propozim filtri"
+
+#: source/propctrlr/formres.src#RID_STR_NAVIGATION.String.Text
+msgid  "Navigation bar"
+msgstr "Shiriti i orientimit"
+
+#: source/propctrlr/formres.src#RID_STR_CYCLE.String.Text
+msgid  "Cycle"
+msgstr "Cikël"
+
+#: source/propctrlr/formres.src#RID_STR_TABSTOP.String.Text
+msgid  "Tabstop"
+msgstr "Tabstop"
+
+#: source/propctrlr/formres.src#RID_STR_CONTROLSOURCE.String.Text
+msgid  "Data field"
+msgstr "Fusha e të dhënave"
+
+#: source/propctrlr/formres.src#RID_STR_DROPDOWN.String.Text
+msgid  "Dropdown"
+msgstr "Rënie poshtë"
+
+#: source/propctrlr/formres.src#RID_STR_BOUNDCOLUMN.String.Text
+msgid  "Bound field"
+msgstr "Fusha lidhëse"
+
+#: source/propctrlr/formres.src#RID_STR_LISTSOURCE.String.Text
+msgid  "List content"
+msgstr "Përmbajtja e listës "
+
+#: source/propctrlr/formres.src#RID_STR_LISTSOURCETYPE.String.Text
+msgid  "Type of list contents"
+msgstr "Lloji i përmbatjes së listes"
+
+#: source/propctrlr/formres.src#RID_STR_CURSORSOURCE.String.Text
+msgid  "Content"
+msgstr "Përmbajtje"
+
+#: source/propctrlr/formres.src#RID_STR_CURSORSOURCETYPE.String.Text
+msgid  "Content type"
+msgstr "Lloj i përmbajtjes"
+
+#: source/propctrlr/formres.src#RID_STR_ALLOW_ADDITIONS.String.Text
+msgid  "Allow additions"
+msgstr "Lejo shtimet"
+
+#: source/propctrlr/formres.src#RID_STR_ALLOW_DELETIONS.String.Text
+msgid  "Allow deletions"
+msgstr "Lejo Bashkëveprim"
+
+#: source/propctrlr/formres.src#RID_STR_ALLOW_EDITS.String.Text
+msgid  "Allow modifications"
+msgstr "Lejo ndryshimet"
+
+#: source/propctrlr/formres.src#RID_STR_DATAENTRY.String.Text
+msgid  "Add data only"
+msgstr "Shto vetëm të dhënat"
+
+#: source/propctrlr/formres.src#RID_STR_DATASOURCE.String.Text
+msgid  "Data source"
+msgstr "Burimi i të dhënave"
+
+#: source/propctrlr/formres.src#RID_STR_MASTERFIELDS.String.Text
+msgid  "Link master fields"
+msgstr "Lidh fushat kryesore"
+
+#: source/propctrlr/formres.src#RID_STR_SLAVEFIELDS.String.Text
+msgid  "Link slave fields"
+msgstr "Lidh fushat skllave"
+
+#: source/propctrlr/formres.src#RID_STR_VALUEMIN.String.Text
+msgid  "Value min."
+msgstr "Vlerë min."
+
+#: source/propctrlr/formres.src#RID_STR_VALUEMAX.String.Text
+msgid  "Value max."
+msgstr "Vlerë maks."
+
+#: source/propctrlr/formres.src#RID_STR_VALUESTEP.String.Text
+msgid  "Incr./decrement value"
+msgstr "Vlerë rritje/pakësim"
+
+#: source/propctrlr/formres.src#RID_STR_CURRENCYSYMBOL.String.Text
+msgid  "Currency symbol"
+msgstr "Simbol monedhe"
+
+#: source/propctrlr/formres.src#RID_STR_DATEMIN.String.Text
+msgid  "Date min."
+msgstr "Datë min."
+
+#: source/propctrlr/formres.src#RID_STR_DATEMAX.String.Text
+msgid  "Date max."
+msgstr "Datë maks."
+
+#: source/propctrlr/formres.src#RID_STR_DATEFORMAT.String.Text
+msgid  "Date format"
+msgstr "Format date"
+
+#: source/propctrlr/formres.src#RID_STR_SELECTEDITEMS.String.Text
+msgid  "Selection"
+msgstr "Selektimet"
+
+#: source/propctrlr/formres.src#RID_STR_TIMEMIN.String.Text
+msgid  "Time min."
+msgstr "Koha min."
+
+#: source/propctrlr/formres.src#RID_STR_TIMEMAX.String.Text
+msgid  "Time max."
+msgstr "Koha maks."
+
+#: source/propctrlr/formres.src#RID_STR_TIMEFORMAT.String.Text
+msgid  "Time format"
+msgstr "Format kohe"
+
+#: source/propctrlr/formres.src#RID_STR_CURRSYM_POSITION.String.Text
+msgid  "Prefix symbol"
+msgstr "Simbol parashtese"
+
+#: source/propctrlr/formres.src#RID_STR_VALUE.String.Text
+msgid  "Value"
+msgstr "Vlerë"
+
+#: source/propctrlr/formres.src#RID_STR_FORMATKEY.String.Text
+msgid  "Formatting"
+msgstr "Formatim"
+
+#: source/propctrlr/formres.src#RID_STR_CLASSID.String.Text
+msgid  "Class ID"
+msgstr "ID klase"
+
+#: source/propctrlr/formres.src#RID_STR_HEIGHT.String.Text
+msgid  "Height"
+msgstr "Lartësia"
+
+#: source/propctrlr/formres.src#RID_STR_WIDTH.String.Text
+msgid  "Width"
+msgstr "Gjerësia"
+
+#: source/propctrlr/formres.src#RID_STR_LISTINDEX.String.Text
+msgid  "List index"
+msgstr "Indeks liste"
+
+#: source/propctrlr/formres.src#RID_STR_ROWHEIGHT.String.Text
+msgid  "Row height"
+msgstr "Lartësi  rreshti"
+
+#: source/propctrlr/formres.src#RID_STR_FILLCOLOR.String.Text
+msgid  "Fill color"
+msgstr "Ngjyrë e mbushur"
+
+#: source/propctrlr/formres.src#RID_STR_LINECOLOR.String.Text
+msgid  "Line color"
+msgstr "Ngjyra e vijës"
+
+#: source/propctrlr/formres.src#RID_STR_REFVALUE.String.Text
+msgid  "Reference value (on)"
+msgstr "Theksimi i Vlerës Po/Jo"
+
+#: source/propctrlr/formres.src#RID_STR_UNCHECKEDREFVALUE.String.Text
+msgid  "Reference value (off)"
+msgstr "Theksimi i Vlerës Po/Jo"
+
+#: source/propctrlr/formres.src#RID_STR_STRINGITEMLIST.String.Text
+msgid  "List entries"
+msgstr "Fut në listë regjistrimet"
+
+#: source/propctrlr/formres.src#RID_STR_BUTTONTYPE.String.Text
+msgid  "Action"
+msgstr "Veprim"
+
+#: source/propctrlr/formres.src#RID_STR_SUBMIT_ACTION.String.Text
+msgid  "URL"
+msgstr "URL"
+
+#: source/propctrlr/formres.src#RID_STR_SUBMIT_METHOD.String.Text
+msgid  "Type of submission"
+msgstr "Lloji  i paraqitjes"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULT_STATE.String.Text
+msgid  "Default status"
+msgstr "Mosparaqitje statusi"
+
+#: source/propctrlr/formres.src#RID_STR_SUBMIT_ENCODING.String.Text
+msgid  "Submission encoding"
+msgstr "Kodifikimi i paraqitjes"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULTVALUE.String.Text
+msgid  "Default value"
+msgstr "Mosparaqitje vlerash"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULTTEXT.String.Text
+msgid  "Default text"
+msgstr "Vizato tekstin "
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULTDATE.String.Text
+msgid  "Default date"
+msgstr "Data (caktuar)"
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULTTIME.String.Text
+msgid  "Default time"
+msgstr "Koha (caktuar)"
+
+#: source/propctrlr/formres.src#RID_STR_SUBMIT_TARGET.String.Text
+msgid  "Frame"
+msgstr "Kornizë"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.1.String.Text
+msgid  "Without frame"
+msgstr "Përmbajtjet e kornizës"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.2.String.Text
+msgid  "3D look"
+msgstr "&Shiko në:"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BORDER_TYPE.3.String.Text
+msgid  "Flat"
+msgstr "Rrafsh"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.1.String.Text
+msgid  "Valuelist"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.2.String.Text
+msgid  "Table"
+msgstr "Tabelë"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.3.String.Text
+msgid  "Query"
+msgstr "Pyetësor"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.4.String.Text
+msgid  "Sql"
+msgstr "Sql"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.5.String.Text
+msgid  "Sql [Native]"
+msgstr "Sql [Native]"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LISTSOURCE_TYPE.6.String.Text
+msgid  "Tablefields"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.1.String.Text
+msgid  "Left"
+msgstr "Majtas"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.2.String.Text
+msgid  "Center"
+msgstr "Qendër"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ALIGNMENT.3.String.Text
+msgid  "Right"
+msgstr "Djathtas"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.1.String.Text
+msgid  "None"
+msgstr "Asnjë"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.2.String.Text
+msgid  "Submit form"
+msgstr "Dizajnimi i formularit"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.3.String.Text
+msgid  "Reset form"
+msgstr "Dizajnimi i formularit"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.4.String.Text
+msgid  "Open document/web page"
+msgstr "Dokumenti tashmë i hapur për editim."
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.5.String.Text
+msgid  "First record"
+msgstr "Shënimi i parë"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.6.String.Text
+msgid  "Previous record"
+msgstr "Shënimi i kaluar"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.7.String.Text
+msgid  "Next record"
+msgstr "Regjistrim tjetër"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.8.String.Text
+msgid  "Last record"
+msgstr "Shënimi i fundit"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.9.String.Text
+msgid  "Save record"
+msgstr "Ruaje shënimin"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.10.String.Text
+msgid  "Undo data entry"
+msgstr "Zhbëj: Futjen e të Dhënave"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.11.String.Text
+msgid  "New record"
+msgstr "Shënim i ri"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.12.String.Text
+msgid  "Delete record"
+msgstr "Fshije shënimin"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_BUTTONTYPE.13.String.Text
+msgid  "Refresh form"
+msgstr "Dizajnimi i formularit"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.1.String.Text
+msgid  "Get"
+msgstr "Merr"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_METHOD.2.String.Text
+msgid  "Post"
+msgstr "Posto"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.1.String.Text
+msgid  "URL"
+msgstr "URL"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.2.String.Text
+msgid  "Multipart"
+msgstr "shumëpjesore/alternative"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SUBMIT_ENCODING.3.String.Text
+msgid  "Text"
+msgstr "Tekst"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.1.String.Text
+msgid  "Standard (short)"
+msgstr "Standard (e shkurtë)"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.2.String.Text
+msgid  "Standard (short YY)"
+msgstr "Kërcim i shkurtë"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.3.String.Text
+msgid  "Standard (short YYYY)"
+msgstr "Kërcim i shkurtë"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.4.String.Text
+msgid  "Standard (long)"
+msgstr "Standard (e gjatë)"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.5.String.Text
+msgid  "DD/MM/YY"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.6.String.Text
+msgid  "MM/DD/YY"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.7.String.Text
+msgid  "YY/MM/DD"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.8.String.Text
+msgid  "DD/MM/YYYY"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.9.String.Text
+msgid  "MM/DD/YYYY"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.10.String.Text
+msgid  "YYYY/MM/DD"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.11.String.Text
+msgid  "YY-MM-DD"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_DATEFORMAT_LIST.12.String.Text
+msgid  "YYYY-MM-DD"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.1.String.Text
+msgid  "13:45"
+msgstr "45 shkallë"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.2.String.Text
+msgid  "13:45:00"
+msgstr "13:45;13:45:00;01:45 PM;01:45:00 PM"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.3.String.Text
+msgid  "01:45 PM"
+msgstr "13:45;13:45:00;01:45 PM;01:45:00 PM"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TIMEFORMAT_LIST.4.String.Text
+msgid  "01:45:00 PM"
+msgstr "13:45;13:45:00;01:45 PM;01:45:00 PM"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CHECKED.1.String.Text
+msgid  "Not Selected"
+msgstr "Jo e përzgjedhur;E përzgjedhur; E padefinuar"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CHECKED.2.String.Text
+msgid  "Selected"
+msgstr "%O zgjedhur "
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CHECKED.3.String.Text
+msgid  "Not Defined"
+msgstr "Variabli nuk është definuar"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CYCLE.1.String.Text
+msgid  "All records"
+msgstr "Regjistrimet e zgjedhur"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CYCLE.2.String.Text
+msgid  "Active record"
+msgstr "Numri i regjistrimit"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CYCLE.3.String.Text
+msgid  "Current page"
+msgstr "Numri i faqes"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.1.String.Text
+msgid  "No"
+msgstr "No"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.2.String.Text
+msgid  "Yes"
+msgstr "Po"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_NAVIGATION.3.String.Text
+msgid  "Parent Form"
+msgstr " Jo;Po;Shkak formulimi"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.1.String.Text
+msgid  "None"
+msgstr "Asnjë"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.2.String.Text
+msgid  "Single"
+msgstr "E vetme"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.3.String.Text
+msgid  "Multi"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SELECTION_TYPE.4.String.Text
+msgid  "Range"
+msgstr "Brez"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_APPROVEPARAMETER.String.Text
+msgid  "Fill parameters"
+msgstr "Mbush parametrat"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_ACTIONPERFORMED.String.Text
+msgid  "Execute action"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_STR_EVT_AFTERUPDATE.String.Text
+msgid  "After updating"
+msgstr "Pas freskimit"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_BEFOREUPDATE.String.Text
+msgid  "Before updating"
+msgstr "Përpara freskimit"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_APPROVEROWCHANGE.String.Text
+msgid  "Before record action"
+msgstr "Pëpara veprimit të regjistrimit"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_ROWCHANGE.String.Text
+msgid  "After record action"
+msgstr "Pas veprimit të regjistrimit"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_CONFIRMDELETE.String.Text
+msgid  "Confirm deletion"
+msgstr "Konfirmo  fshierjen"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_ERROROCCURED.String.Text
+msgid  "Error occurred"
+msgstr "Është ndeshur gabimi"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_FOCUSGAINED.String.Text
+msgid  "When receiving focus"
+msgstr "Kur pranon mbledhje"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_FOCUSLOST.String.Text
+msgid  "When losing focus"
+msgstr "Kur humb mbledhjen"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_ITEMSTATECHANGED.String.Text
+msgid  "Item status changed"
+msgstr "Statuti i artikullit ka ndryshuar"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_KEYTYPED.String.Text
+msgid  "Key pressed"
+msgstr "Miu i shtypur"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_KEYUP.String.Text
+msgid  "Key released"
+msgstr "Miu i çliruar"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_LOADED.String.Text
+msgid  "When loading"
+msgstr "Kur ngarkon"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_RELOADING.String.Text
+msgid  "Before reloading"
+msgstr "Pëpara ringarkimit"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_RELOADED.String.Text
+msgid  "When reloading"
+msgstr "Kur ringarkon"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEDRAGGED.String.Text
+msgid  "Mouse moved while key pressed"
+msgstr "Miu lëvizë derisa shtypet çelësi"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEENTERED.String.Text
+msgid  "Mouse inside"
+msgstr "Miu brenda"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEEXITED.String.Text
+msgid  "Mouse outside"
+msgstr "Miu jashtë"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEMOVED.String.Text
+msgid  "Mouse moved"
+msgstr "Miu i lëvizur"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_MOUSEPRESSED.String.Text
+msgid  "Mouse button pressed"
+msgstr "Butoni i miut i shtypur"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_MOUSERELEASED.String.Text
+msgid  "Mouse button released"
+msgstr "Butoni i miut i çliruar"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_POSITIONING.String.Text
+msgid  "Before record change"
+msgstr "Përpara ndryshimit në regjistrim"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_POSITIONED.String.Text
+msgid  "After record change"
+msgstr "Pas ndryshimit në regjistrim"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_RESETTED.String.Text
+msgid  "After resetting"
+msgstr "Pas risistemimit"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_APPROVERESETTED.String.Text
+msgid  "Prior to reset"
+msgstr "Para se të risistemoj"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_APPROVEACTIONPERFORMED.String.Text
+msgid  "Approve action"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_STR_EVT_SUBMITTED.String.Text
+msgid  "Before submitting"
+msgstr "Përpara paraqitjes"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_TEXTCHANGED.String.Text
+msgid  "Text modified"
+msgstr "Teksti i modifikuar"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_UNLOADING.String.Text
+msgid  "Before unloading"
+msgstr "Përpara shkarkimit"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_UNLOADED.String.Text
+msgid  "When unloading"
+msgstr "Kur shkarkon"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_CHANGED.String.Text
+msgid  "Changed"
+msgstr "Ndryshuar"
+
+#: source/propctrlr/formres.src#RID_STR_EVENTS.String.Text
+msgid  "Events"
+msgstr "Ngjarjet"
+
+#: source/propctrlr/formres.src#RID_STR_ESCAPE_PROCESSING.String.Text
+msgid  "Analyze SQL command"
+msgstr "Analizo  komandën SQL"
+
+#: source/propctrlr/formres.src#RID_STR_POSITIONX.String.Text
+msgid  "PositionX"
+msgstr "PozicioniX"
+
+#: source/propctrlr/formres.src#RID_STR_POSITIONY.String.Text
+msgid  "PositionY"
+msgstr "PozicioniY"
+
+#: source/propctrlr/formres.src#RID_STR_TITLE.String.Text
+msgid  "Title"
+msgstr "Titulli"
+
+#: source/propctrlr/formres.src#RID_STR_STEP.String.Text
+msgid  "Page (step)"
+msgstr "Faqe (hap)"
+
+#: source/propctrlr/formres.src#RID_STR_PROGRESSVALUE.String.Text
+msgid  "Progress value"
+msgstr "Vlerë avancimi"
+
+#: source/propctrlr/formres.src#RID_STR_PROGRESSVALUE_MIN.String.Text
+msgid  "Progress value min."
+msgstr "Vlerë avancimi min."
+
+#: source/propctrlr/formres.src#RID_STR_PROGRESSVALUE_MAX.String.Text
+msgid  "Progress value max."
+msgstr "Vlera avancimi maks."
+
+#: source/propctrlr/formres.src#RID_STR_SCROLLVALUE.String.Text
+msgid  "Scroll value"
+msgstr "Vlerë dorëshkrimi"
+
+#: source/propctrlr/formres.src#RID_STR_SCROLLVALUE_MAX.String.Text
+msgid  "Scroll value max."
+msgstr "Vlerë dorëshkrimi maks."
+
+#: source/propctrlr/formres.src#RID_STR_SCROLLVALUE_MIN.String.Text
+msgid  "Scroll value min."
+msgstr "Vlerë avancimi min."
+
+#: source/propctrlr/formres.src#RID_STR_DEFAULT_SCROLLVALUE.String.Text
+msgid  "Default scroll value"
+msgstr "Vlerë dorëshkrimi maks."
+
+#: source/propctrlr/formres.src#RID_STR_LINEINCREMENT.String.Text
+msgid  "Small change"
+msgstr "Ndrysho fontin"
+
+#: source/propctrlr/formres.src#RID_STR_BLOCKINCREMENT.String.Text
+msgid  "Large change"
+msgstr "Ndrysho fontin"
+
+#: source/propctrlr/formres.src#RID_STR_REPEAT_DELAY.String.Text
+msgid  "Delay"
+msgstr "Flowchart: Delay"
+
+#: source/propctrlr/formres.src#RID_STR_REPEAT.String.Text
+msgid  "Repeat"
+msgstr "Përsërite"
+
+#: source/propctrlr/formres.src#RID_STR_VISIBLESIZE.String.Text
+msgid  "Visible size"
+msgstr "Madhësi e dallueshme"
+
+#: source/propctrlr/formres.src#RID_STR_ORIENTATION.String.Text
+msgid  "Orientation"
+msgstr "Orientim"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.1.String.Text
+msgid  "Horizontal"
+msgstr "Horizontal"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_ORIENTATION.2.String.Text
+msgid  "Vertical"
+msgstr "Vertikal"
+
+#: source/propctrlr/formres.src#RID_STR_EVT_ADJUSTMENTVALUECHANGED.String.Text
+msgid  "While adjusting"
+msgstr "Derisa rregullon"
+
+#: source/propctrlr/formres.src#RID_STR_DATE.String.Text
+msgid  "Date"
+msgstr "Data"
+
+#: source/propctrlr/formres.src#RID_STR_STATE.String.Text
+msgid  "State"
+msgstr "Shteti"
+
+#: source/propctrlr/formres.src#RID_STR_TIME.String.Text
+msgid  "Time"
+msgstr "Koha"
+
+#: source/propctrlr/formres.src#RID_STR_SCALEIMAGE.String.Text
+msgid  "Scale"
+msgstr "Shkallë"
+
+#: source/propctrlr/formres.src#RID_STR_PUSHBUTTONTYPE.String.Text
+msgid  "Button type"
+msgstr "Lloj butoni"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.1.String.Text
+msgid  "Default"
+msgstr "Standarde"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.2.String.Text
+msgid  "OK"
+msgstr "OK"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.3.String.Text
+msgid  "Cancel"
+msgstr "Anulo"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_PUSHBUTTONTYPE.4.String.Text
+msgid  "Help"
+msgstr "Ndihma"
+
+#: source/propctrlr/formres.src#RID_STR_UNABLETOCONNECT.String.Text
+msgid  "The connection to the data source "$name$" could not be established."
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_STR_TEXT.String.Text
+msgid  "Text"
+msgstr "Tekst"
+
+#: source/propctrlr/formres.src#RID_STR_BOUND_CELL.String.Text
+msgid  "Linked cell"
+msgstr "Qeliza e tabelës"
+
+#: source/propctrlr/formres.src#RID_STR_LIST_CELL_RANGE.String.Text
+msgid  "Source cell range"
+msgstr "~Intervali i të dhënave burimore"
+
+#: source/propctrlr/formres.src#RID_STR_CELL_EXCHANGE_TYPE.String.Text
+msgid  "Contents of the linked cell"
+msgstr "Ndaj qelizën në"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.1.String.Text
+msgid  "The selected entry"
+msgstr "Gjej hyrjen"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_CELL_EXCHANGE_TYPE.2.String.Text
+msgid  "Position of the selected entry"
+msgstr "Trego numrin e shënuar"
+
+#: source/propctrlr/formres.src#RID_STR_SHOW_SCROLLBARS.String.Text
+msgid  "Scrollbars"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.1.String.Text
+msgid  "Single-line"
+msgstr "Hapësirë me vetëm një rresht"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.2.String.Text
+msgid  "Multi-line"
+msgstr "Stili i linjës"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXTTYPE.3.String.Text
+msgid  "Multi-line with formatting"
+msgstr "Rifillo numërimin e rreshtave me:"
+
+#: source/propctrlr/formres.src#RID_STR_SYMBOLCOLOR.String.Text
+msgid  "Symbol color"
+msgstr "Ngjyra e Fontit"
+
+#: source/propctrlr/formres.src#RID_STR_LINEEND_FORMAT.String.Text
+msgid  "Text lines end with"
+msgstr "Zëvendëso me Kutinë e Tekstit"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.1.String.Text
+msgid  "LF (Unix)"
+msgstr "CR & LF"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_LINEEND_FORMAT.2.String.Text
+msgid  "CR+LF (Windows)"
+msgstr "Windows Explorer vazhdim"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.1.String.Text
+msgid  "None"
+msgstr "Asnjë"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.2.String.Text
+msgid  "Horizontal"
+msgstr "Horizontal"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.3.String.Text
+msgid  "Vertical"
+msgstr "Vertikal"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCROLLBARS.4.String.Text
+msgid  "Both"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.1.String.Text
+msgid  "Table"
+msgstr "Tabelë"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.2.String.Text
+msgid  "Query"
+msgstr "Pyetësor"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_COMMAND_TYPE.3.String.Text
+msgid  "SQL command"
+msgstr "Komanda SQL "
+
+#: source/propctrlr/formres.src#RID_STR_TOGGLE.String.Text
+msgid  "Toggle"
+msgstr "Kapërce"
+
+#: source/propctrlr/formres.src#RID_STR_FOCUSONCLICK.String.Text
+msgid  "Take Focus on Click"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_STR_HIDEINACTIVESELECTION.String.Text
+msgid  "Hide selection"
+msgstr "Zgjedhja e databazës"
+
+#: source/propctrlr/formres.src#RID_STR_VISUALEFFECT.String.Text
+msgid  "Style"
+msgstr "Stili"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.1.String.Text
+msgid  "3D"
+msgstr "3D"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_VISUALEFFECT.2.String.Text
+msgid  "Flat"
+msgstr "Rrafsh"
+
+#: source/propctrlr/formres.src#RID_STR_BORDERCOLOR.String.Text
+msgid  "Border color"
+msgstr "Ngjyra e Kufirit"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.1.String.Text
+msgid  "Left top"
+msgstr "Lartë majtas"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.2.String.Text
+msgid  "Left centered"
+msgstr "Mbështet në qendër"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.3.String.Text
+msgid  "Left bottom"
+msgstr "Poshtë majtas"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.4.String.Text
+msgid  "Right top"
+msgstr "Lartë djathtas"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.5.String.Text
+msgid  "Right centered"
+msgstr "Mbështet në qendër"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.6.String.Text
+msgid  "Right bottom"
+msgstr "Poshtë - djathas"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.7.String.Text
+msgid  "Above left"
+msgstr "Lartë majtas"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.8.String.Text
+msgid  "Above centered"
+msgstr "Mbështet në qendër"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.9.String.Text
+msgid  "Above right"
+msgstr "Lartë djathtas"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.10.String.Text
+msgid  "Below left"
+msgstr "Lartë majtas"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.11.String.Text
+msgid  "Below centered"
+msgstr "Mbështet në qendër"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.12.String.Text
+msgid  "Below right"
+msgstr "Lartë djathtas"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_IMAGE_POSITION.13.String.Text
+msgid  "Centered"
+msgstr "Në qendër"
+
+#: source/propctrlr/formres.src#RID_STR_AUTOLINEBREAK.String.Text
+msgid  "Wrap text automatically"
+msgstr "Përshtat tekstin për formë"
+
+#: source/propctrlr/formres.src#RID_STR_TEXTTYPE.String.Text
+msgid  "Text type"
+msgstr "Lloji  i publikimit"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.1.String.Text
+msgid  "Hide"
+msgstr "Fshehe"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SHOWHIDE.2.String.Text
+msgid  "Show"
+msgstr "Shfaq"
+
+#: source/propctrlr/formres.src#RID_STR_XML_DATA_MODEL.String.Text
+msgid  "XML data model"
+msgstr "Shto të dhënat si:"
+
+#: source/propctrlr/formres.src#RID_STR_BIND_EXPRESSION.String.Text
+msgid  "Binding expression"
+msgstr "Duke ndërlidhur shprehjen"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_REQUIRED.String.Text
+msgid  "Required"
+msgstr "Kërkohet"
+
+#: source/propctrlr/formres.src#RID_STR_LIST_BINDING.String.Text
+msgid  "List entry source"
+msgstr "Burimi nuk është caktuar."
+
+#: source/propctrlr/formres.src#RID_STR_XSD_RELEVANT.String.Text
+msgid  "Relevant"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_STR_XSD_READONLY.String.Text
+msgid  "Read-only"
+msgstr "Vetëm -lexim"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_CONSTRAINT.String.Text
+msgid  "Constraint"
+msgstr "Kufizimet"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_CALCULATION.String.Text
+msgid  "Calculation"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_STR_XSD_DATA_TYPE.String.Text
+msgid  "Data type"
+msgstr "Tipi i të dhënave"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_WHITESPACES.String.Text
+msgid  "Whitespaces"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.1.String.Text
+msgid  "Preserve"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.2.String.Text
+msgid  "Replace"
+msgstr "Zëvendëso"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WHITESPACE_HANDLING.3.String.Text
+msgid  "Collapse"
+msgstr "Kolaps"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_PATTERN.String.Text
+msgid  "Pattern"
+msgstr "Model"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_LENGTH.String.Text
+msgid  "Length"
+msgstr "Gjatësi "
+
+#: source/propctrlr/formres.src#RID_STR_XSD_MIN_LENGTH.String.Text
+msgid  "Length (at least)"
+msgstr "Gjerësia (më së paku)"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_MAX_LENGTH.String.Text
+msgid  "Length (at most)"
+msgstr "Pikat në fund"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_TOTAL_DIGITS.String.Text
+msgid  "Digits (total)"
+msgstr "Gjerësi Totale"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_FRACTION_DIGITS.String.Text
+msgid  "Digits (fraction)"
+msgstr "Shiriti i thyesës"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_MAX_INCLUSIVE.String.Text
+msgid  "Max. (inclusive)"
+msgstr "Vlerë maks."
+
+#: source/propctrlr/formres.src#RID_STR_XSD_MAX_EXCLUSIVE.String.Text
+msgid  "Max. (exclusive)"
+msgstr "Vlerë maks."
+
+#: source/propctrlr/formres.src#RID_STR_XSD_MIN_INCLUSIVE.String.Text
+msgid  "Min. (inclusive)"
+msgstr "Lartësia min.:"
+
+#: source/propctrlr/formres.src#RID_STR_XSD_MIN_EXCLUSIVE.String.Text
+msgid  "Min. (exclusive)"
+msgstr "Lartësia min.:"
+
+#: source/propctrlr/formres.src#RID_STR_SUBMISSION_ID.String.Text
+msgid  "Submission"
+msgstr "Pranim"
+
+#: source/propctrlr/formres.src#RID_STR_BINDING_UI_NAME.String.Text
+msgid  "Binding"
+msgstr "Ndërlidhjet"
+
+#: source/propctrlr/formres.src#RID_STR_SELECTION_TYPE.String.Text
+msgid  "Selection type"
+msgstr "Lloji  i publikimit"
+
+#: source/propctrlr/formres.src#RID_STR_ROOT_DISPLAYED.String.Text
+msgid  "Root displayed"
+msgstr "Hapësirë në mes rrënjëve"
+
+#: source/propctrlr/formres.src#RID_STR_SHOWS_HANDLES.String.Text
+msgid  "Show handles"
+msgstr "Trajtime të mëdha"
+
+#: source/propctrlr/formres.src#RID_STR_SHOWS_ROOT_HANDLES.String.Text
+msgid  "Show root handles"
+msgstr "Trajtim i thjeshtë"
+
+#: source/propctrlr/formres.src#RID_STR_EDITABLE.String.Text
+msgid  "Editable"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_STR_INVOKES_STOP_NOT_EDITING.String.Text
+msgid  "Invokes stop node editing"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_STR_DECORATION.String.Text
+msgid  "With title bar"
+msgstr "Zëvendëso me shiritin orientues"
+
+#: source/propctrlr/formres.src#RID_STR_NOLABEL.String.Text
+msgid  "No Label"
+msgstr "Teksti i etiketës"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.1.String.Text
+msgid  "No"
+msgstr "No"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.2.String.Text
+msgid  "Keep Ratio"
+msgstr "Mbaje përpjestimin"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SCALE_MODE.3.String.Text
+msgid  "Fit to Size"
+msgstr "Përshtate me madhësinë"
+
+#: source/propctrlr/formres.src#RID_STR_INPUT_REQUIRED.String.Text
+msgid  "Input required"
+msgstr "Ngjyra është pritur"
+
+#: source/propctrlr/formres.src#RID_STR_WRITING_MODE.String.Text
+msgid  "Text direction"
+msgstr "Drejtimi  teksti"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.1.String.Text
+msgid  "Left-to-right"
+msgstr "Nga e majta në të djathtë"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.2.String.Text
+msgid  "Right-to-left"
+msgstr "Nga e djathta në të majtë"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WRITING_MODE.3.String.Text
+msgid  "Use superordinate object settings"
+msgstr "Shfrytëzo parametrat e mbishtruar të objektit"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.1.String.Text
+msgid  "Never"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.2.String.Text
+msgid  "When focused"
+msgstr "Kur humb mbledhjen"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_WHEEL_BEHAVIOR.3.String.Text
+msgid  "Always"
+msgstr ""
+
+#: source/propctrlr/formres.src#RID_STR_ANCHOR_TYPE.String.Text
+msgid  "Anchor"
+msgstr "Spiranca"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.1.String.Text
+msgid  "To Paragraph"
+msgstr "Tek paragrafi"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.2.String.Text
+msgid  "As Character"
+msgstr "Si karakter"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.3.String.Text
+msgid  "To Page"
+msgstr "Tek faqja"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.4.String.Text
+msgid  "To Frame"
+msgstr "Në  kornizë"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_TEXT_ANCHOR_TYPE.5.String.Text
+msgid  "To Character"
+msgstr "Tek karakteri"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.1.String.Text
+msgid  "To Page"
+msgstr "Tek faqja"
+
+#: source/propctrlr/formres.src#RID_RSC_ENUM_SHEET_ANCHOR_TYPE.2.String.Text
+msgid  "To Cell"
+msgstr "Nga ~Qelia"
+
+#: source/propctrlr/formres.src#RID_STR_FONTSTYLE_REGULAR.String.Text
+msgid  "Regular"
+msgstr "I rregullt"
+
+#: source/propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD_ITALIC.String.Text
+msgid  "Bold Italic"
+msgstr "E trashur italike"
+
+#: source/propctrlr/formres.src#RID_STR_FONTSTYLE_ITALIC.String.Text
+msgid  "Italic"
+msgstr "Italike"
+
+#: source/propctrlr/formres.src#RID_STR_FONTSTYLE_BOLD.String.Text
+msgid  "Bold"
+msgstr "Me të trasha"
+
+#: source/propctrlr/formres.src#RID_STR_FONT_DEFAULT.String.Text
+msgid  "(Default)"
+msgstr "Standarde"
+
+#: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.TabDialog.Text
+msgid  "Character"
+msgstr "Karakter"
+
+#: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS.PageItem.Text
+msgid  "Font"
+msgstr "Fonti"
+
+#: source/propctrlr/fontdialog.src#RID_TABDLG_FONTDIALOG.1.TABPAGE_CHARACTERS_EXT.PageItem.Text
+msgid  "Font Effects"
+msgstr "Efektet e fontit"
+
+#: source/propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.ModalDialog.Text
+msgid  "New Data Type"
+msgstr "Pwrzirje e tipit tw sw dhwnave"
+
+#: source/propctrlr/newdatatype.src#RID_DLG_NEW_DATA_TYPE.FT_LABEL.FixedText.Text
+msgid  "Type a name for the new data type:"
+msgstr "~Emri i i ri pwr %s (%d1 of %d2)"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICEINFO_BTN.PushButton.Text
+msgid  "About\n Dev~ice"
+msgstr ""
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BTN.PushButton.Text
+msgid  "Create\nPreview"
+msgstr ""
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_PREVIEW_BOX.FixedLine.Text
+msgid  "Preview"
+msgstr "Shikim paraprak"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCANAREA_BOX.FixedLine.Text
+msgid  "Scan area"
+msgstr "Skano hapësiren"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_LEFT_TXT.FixedText.Text
+msgid  "Left:"
+msgstr "Majtas:"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_TOP_TXT.FixedText.Text
+msgid  "Top:"
+msgstr "Sipërm:"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RIGHT_TXT.FixedText.Text
+msgid  "Right:"
+msgstr "Djathtas:"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BOTTOM_TXT.FixedText.Text
+msgid  "Bottom:"
+msgstr "Poshtë"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_DEVICE_BOX_TXT.FixedText.Text
+msgid  "Device used:"
+msgstr "Pajisja  përdorur:"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_RESOLUTION_TXT.FixedText.Text
+msgid  "Resolution [~DPI]"
+msgstr "Rezolucion (~DPI)"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_ADVANCED_TXT.FixedText.Text
+msgid  "Show advanced options"
+msgstr "Shfaq mundësitë e avancuara"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_OPTION_TXT.FixedText.Text
+msgid  "Options:"
+msgstr "Mundësitë:"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_NUMERIC_VECTOR_TXT.FixedText.Text
+msgid  "Vector element"
+msgstr "Element vektori"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.RID_SCAN_BUTTON_OPTION_BTN.PushButton.Text
+msgid  "Set"
+msgstr "Vendos"
+
+#: source/scanner/sanedlg.src#RID_SANE_DIALOG.Bitmap.Text
+msgid  "Scanner"
+msgstr "Skener"
+
+#: source/scanner/sanedlg.src#RID_SANE_DEVICEINFO_TXT.String.Text
+msgid  "Device: %s\nVendor: %s\nModel: %s\nType: %s"
+msgstr ""
+
+#: source/scanner/sanedlg.src#RID_SANE_SCANERROR_TXT.String.Text
+msgid  "An error occurred while scanning."
+msgstr "Një gabim është ndeshur gjatë skanografisë"
+
+#: source/scanner/sanedlg.src#RID_SANE_NORESOLUTIONOPTION_TXT.String.Text
+msgid  "The device does not offer a preview option. Therefore, a normal scan will be used as a preview instead. This may take a considerable amount of time."
+msgstr ""
+
+#: source/scanner/sanedlg.src#RID_SANE_NOSANELIB_TXT.String.Text
+msgid  "The SANE interface could not be initialized. Scanning is not possible."
+msgstr "Ndërfaqja SANE nuk mund të inicializohet. Skanimi nuk është i mundshëm."
+
+#: source/scanner/grid.src#GRID_DIALOG.GRID_DIALOG_RESET_BTN.PushButton.Text
+msgid  "Set"
+msgstr "Vendos"
+
+#: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_ASCENDING.String.Text
+msgid  "Linear ascending"
+msgstr "Lartësim linear"
+
+#: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_LINEAR_DESCENDING.String.Text
+msgid  "Linear descending"
+msgstr "Zbritshmëri lineare"
+
+#: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_RESET.String.Text
+msgid  "Original values"
+msgstr "Vlerat origjinale"
+
+#: source/scanner/grid.src#GRID_DIALOG.RESET_TYPE_EXPONENTIAL.String.Text
+msgid  "Exponential increasing"
+msgstr "Rritje treguesi"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_CHECKING.String.Text
+msgid  "Checking..."
+msgstr "Kontrolli i sekuencës"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_CHECKING_ERR.String.Text
+msgid  "Checking for an update failed."
+msgstr "Ekzekutimi i 'update-grub' dështoi."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_NO_UPD_FOUND.String.Text
+msgid  "%PRODUCTNAME %PRODUCTVERSION is up to date."
+msgstr ""
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_UPD_FOUND.String.Text
+msgid  "%PRODUCTNAME %NEXTVERSION is available.\n\nThe installed version is %PRODUCTNAME %PRODUCTVERSION.\n\nNote: Before downloading  an update, please ensure that you have sufficient access rights to install it.\nA password, usually the administrator's or root password, may be required."
+msgstr ""
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DLG_TITLE.String.Text
+msgid  "Check for Updates"
+msgstr "E gatshme për përdorim"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_PAUSE.String.Text
+msgid  "Downloading %PRODUCTNAME %NEXTVERSION paused at..."
+msgstr "Prezantim %PRODUCTNAME %PRODUCTVERSION"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_ERR.String.Text
+msgid  "Downloading %PRODUCTNAME %NEXTVERSION stalled at"
+msgstr "Prezantim %PRODUCTNAME %PRODUCTVERSION"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_WARN.String.Text
+msgid  "The download location is: %DOWNLOAD_PATH.\n\nUnder Tools – Options... - %PRODUCTNAME – Online Update you can change the download location."
+msgstr ""
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_DESCR.String.Text
+msgid  "%FILE_NAME has been downloaded to %DOWNLOAD_PATH."
+msgstr ""
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOAD_UNAVAIL.String.Text
+msgid  "The automatic download of the update is currently not available.\n\nClick 'Download...' to download %PRODUCTNAME %NEXTVERSION manually from the web site."
+msgstr ""
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_DOWNLOADING.String.Text
+msgid  "Downloading %PRODUCTNAME %NEXTVERSION..."
+msgstr "Prezantim %PRODUCTNAME %PRODUCTVERSION"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_READY_INSTALL.String.Text
+msgid  "Download of %PRODUCTNAME %NEXTVERSION completed. Ready for installation."
+msgstr ""
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_TITLE.String.Text
+msgid  "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_CANCEL_DOWNLOAD.String.Text
+msgid  "Do you really want to cancel the download?"
+msgstr "Vërtetë dëshironi të fshini Stilin $1?"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_BEGIN_INSTALL.String.Text
+msgid  "To install the update, %PRODUCTNAME %PRODUCTVERSION needs to be closed. Do you want to install the update now?"
+msgstr ""
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_NOW.String.Text
+msgid  "Install ~now"
+msgstr "Regjistrohuni tash"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_LATER.String.Text
+msgid  "Install ~later"
+msgstr "Duke vlefshmërinë e instalimit"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_INSTALL_ERROR.String.Text
+msgid  "Could not run the installer application, please run %FILE_NAME in %DOWNLOAD_PATH manually."
+msgstr ""
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_OVERWRITE_WARNING.String.Text
+msgid  "A file with that name already exists! Do you want to overwrite the existing file?"
+msgstr ""
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_WARNING.String.Text
+msgid  "A file with the name '%FILENAME' already exists in '%DOWNLOAD_PATH'! Do you want to continue with the download or delete and reload the file?"
+msgstr ""
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_RELOAD.String.Text
+msgid  "Reload File"
+msgstr ""
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_RELOAD_CONTINUE.String.Text
+msgid  "Continue"
+msgstr ""
+
+#: source/update/check/updatehdl.src#RID_UPDATE_STR_PERCENT.String.Text
+msgid  "%PERCENT%"
+msgstr "Përqindja"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_FT_STATUS.String.Text
+msgid  "Status"
+msgstr "Gjendje"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_FT_DESCRIPTION.String.Text
+msgid  "Description"
+msgstr "Përshkrimi"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BTN_CLOSE.String.Text
+msgid  "Close"
+msgstr "Mbylle"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BTN_DOWNLOAD.String.Text
+msgid  "~Download"
+msgstr "Shkarko"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BTN_INSTALL.String.Text
+msgid  "~Install"
+msgstr "&Instalo"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BTN_PAUSE.String.Text
+msgid  "~Pause"
+msgstr "Pauzo..."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BTN_RESUME.String.Text
+msgid  "~Resume"
+msgstr "Rimerr instalimin"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BTN_CANCEL.String.Text
+msgid  "Cancel"
+msgstr "Anulo"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_AVAIL.String.Text
+msgid  "%PRODUCTNAME update available"
+msgstr "E gatshme për përdorim"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_AVAIL.String.Text
+msgid  "Click here to start the download."
+msgstr "kliko këtu që të krijosh dokumente të reja"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_UPDATE_NO_DOWN.String.Text
+msgid  "%PRODUCTNAME update available"
+msgstr "E gatshme për përdorim"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_UPDATE_NO_DOWN.String.Text
+msgid  "Click here for more information."
+msgstr "Të lutem kontrollo regjistrin e sistemit për më tepër të dhëna."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_AUTO_START.String.Text
+msgid  "%PRODUCTNAME update available"
+msgstr "E gatshme për përdorim"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_AUTO_START.String.Text
+msgid  "Download of update begins."
+msgstr "Azhuro të gjitha lidhjet"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOADING.String.Text
+msgid  "Download of update in progress"
+msgstr ""
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_PAUSED.String.Text
+msgid  "Download of update paused"
+msgstr "Azhuro të gjitha lidhjet"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_PAUSED.String.Text
+msgid  "Click here to resume."
+msgstr "Kliko këtu për të filluar"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_ERROR_DOWNLOADING.String.Text
+msgid  "Download of update stalled"
+msgstr "Azhuro të gjitha lidhjet"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_ERROR_DOWNLOADING.String.Text
+msgid  "Click here for more information."
+msgstr "Të lutem kontrollo regjistrin e sistemit për më tepër të dhëna."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_DOWNLOAD_AVAIL.String.Text
+msgid  "Download of update completed"
+msgstr "Azhuro të gjitha lidhjet"
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_DOWNLOAD_AVAIL.String.Text
+msgid  "Click here to start the installation."
+msgstr "Kliko Instalo që të fillojë instalimi."
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_T_EXT_UPD_AVAIL.String.Text
+msgid  "Updates for extensions available"
+msgstr ""
+
+#: source/update/check/updatehdl.src#RID_UPDATE_BUBBLE_EXT_UPD_AVAIL.String.Text
+msgid  "Click here for more information."
+msgstr "Të lutem kontrollo regjistrin e sistemit për më tepër të dhëna."
+
+#: source/update/check/Addons.xcu#.Addons.AddonUI.OfficeHelp.UpdateCheckJob.Title
+msgid  "Check for ~Updates..."
+msgstr "E gatshme për përdorim"

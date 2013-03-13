@@ -1,2771 +1,2248 @@
-
-#: view.src#STR_NODEFPRINTER.string.text
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
 msgid ""
-"No default printer found.\n"
-"Please choose a printer and try again."
 msgstr ""
-"كۆڭۈلدىكى پرىنتېر تېپىلمىدى.\n"
-"پرىنتېردىن بىرنى تاللاپ ئاندىن قايتا سىناڭ."
-
-#: view.src#STR_NOSTARTPRINTER.string.text
-msgid ""
-"Could not start printer.\n"
-"Please check your printer configuration."
-msgstr ""
-"پرىنتېرنى قوزغىتالمىدى.\n"
-"پرىنتېر سەپلىمىسىنى تەكشۈرۈڭ."
-
-#: view.src#STR_PRINTER_NOTAVAIL.string.text
-msgid ""
-"This document has been formatted for the printer $1. The specified printer "
-"is not available. \n"
-"Do you want to use the standard printer $2 ?"
-msgstr ""
-"بۇ پۈتۈك فورماتى مەخسۇس $1 پرىنتېر ئۈچۈن تەڭشەلگەن.\n"
-"ئەمما بۇ پرىنتېر مەۋجۇد ئەمەس. كۆڭۈلدىكى $2 پرىنتېرنى ئىشلىتەمسىز؟"
-
-#: view.src#STR_PRINT_OPTIONS.string.text
-msgid "Options..."
-msgstr "…تاللانما"
-
-#: view.src#STR_PRINT_OPTIONS_TITLE.string.text
-msgid "Printer Options"
-msgstr "پرىنتېر تاللانما"
-
-#: view.src#STR_ERROR_PRINTER_BUSY.string.text
-msgid "Printer busy"
-msgstr "پرىنتېر ئالدىراش"
-
-#: view.src#STR_ERROR_PRINT.string.text
-msgid "Error while printing"
-msgstr "بېسىۋاتقاندا خاتالىق كۆرۈلدى"
-
-#: view.src#STR_PRINTING.string.text
-msgid "Printing"
-msgstr "بېسىۋاتىدۇ"
-
-#: view.src#STR_PAGE.string.text
-msgid "Page "
-msgstr "بەت "
-
-#: view.src#STR_ERROR_SAVE_TEMPLATE.string.text
-msgid "Error saving template "
-msgstr "قېلىپ ساقلىغاندا خاتالىق كۆرۈلدى "
-
-#: view.src#STR_READONLY.string.text
-msgid " (read-only)"
-msgstr " (ئوقۇشقىلا بولىدۇ)"
-
-#: view.src#STR_PRINT_NEWORI.string.text
-msgctxt "view.src#STR_PRINT_NEWORI.string.text"
-msgid ""
-"The page size and orientation have been modified.\n"
-"Would you like to save the new settings in the\n"
-"active document?"
-msgstr ""
-"بەت چوڭلۇقى ۋە بەت يۆنىلىشى ئۆزگەرتىلدى.\n"
-"يېڭى تەڭشەكنى ئاكتىپ پۈتۈككە\n"
-" ساقلامسىز؟"
-
-#: view.src#STR_PRINT_NEWSIZE.string.text
-msgid ""
-"The page size has been modified.\n"
-"Should the new settings be saved\n"
-"in the active document?"
-msgstr ""
-"بەت چوڭلۇقى ئۆزگەرتىلدى.\n"
-"يېڭى تەڭشەكنى ئاكتىپ پۈتۈككە\n"
-" ساقلامسىز؟"
-
-#: view.src#STR_PRINT_NEWORISIZE.string.text
-msgctxt "view.src#STR_PRINT_NEWORISIZE.string.text"
-msgid ""
-"The page size and orientation have been modified.\n"
-"Would you like to save the new settings in the\n"
-"active document?"
-msgstr ""
-"بەت چوڭلۇقى ۋە بەت يۆنىلىشى ئۆزگەرتىلدى.\n"
-"يېڭى تەڭشەكنى ئاكتىپ پۈتۈككە\n"
-" ساقلامسىز؟"
-
-#: view.src#STR_PREVIEW_DOCINFO.string.text
-msgid ""
-"<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>Title:</b><dd>$("
-"TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt>"
-"<b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
-msgstr ""
-"<html><body BGCOLOR=\"#c0c0c0\"><font FACE=\"Arial\"><dl><dt><b>ماۋزۇ:</b><dd>$("
-"TITEL)<dt><b>تېما:</b><dd>$(THEME)<dt><b>ھالقىلىق سۆز:</b><dd>$(KEYWORDS)<dt"
-"><b>چۈشەندۈرۈش:</b><dd>$(TEXT)</dl></font></body></html>"
-
-#: view.src#STR_PREVIEW_NODOCINFO.string.text
-msgid ""
-"<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document "
-"properties found.</B></FONT></P></BODY></HTML>"
-msgstr ""
-"<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>پۈتۈك خاسلىقى "
-"تېپىلمىدى.</B></FONT></P></BODY></HTML>"
-
-#: view.src#MSG_CANT_CLOSE.infobox.text
-msgid ""
-"The document cannot be closed because a\n"
-" print job is being carried out."
-msgstr ""
-"بۇ پۈتۈكنى ياپالمايدۇ چۈنكى\n"
-"بېسىش ۋەزىپىسىدىن بىرنى ئىجرا قىلىۋاتىدۇ."
-
-#: view.src#DLG_PRINTMONITOR_TEXT.#define.text
-msgid "Print Monitor"
-msgstr "بېسىشنى كۆزەتكۈچ"
-
-#: view.src#DLG_PRINTMONITOR.FT_PRINTING.fixedtext.text
-msgid "is being printed on"
-msgstr "بېسىش ئۈسكۈنىسى"
-
-#: view.src#DLG_PRINTMONITOR.STR_FT_PREPARATION.string.text
-msgid "is being prepared for printing"
-msgstr "بېسىشقا تەييارلىنىۋاتىدۇ"
-
-#: view.src#MSG_ERROR_SEND_MAIL.infobox.text
-msgid ""
-"An error occurred in sending the message. Possible errors could be a missing "
-"user account or a defective setup.\n"
-"Please check the %PRODUCTNAME settings or your e-mail program settings."
-msgstr ""
-"ئېلخەت يوللىغاندا خاتالىق يۈز بەردى. ئىشلەتكۈچى ھېساباتى كەم ياكى قاچىلاش "
-"پروگراممىسىدا خاتالىق بولۇشى مۇمكىن.\n"
-"%PRODUCTNAME نىڭ تەڭشىكى ياكى ئېلخەت پروگرامما تەڭشىكىڭىزنى تەكشۈرۈڭ."
-
-#: view.src#MSG_QUERY_OPENASTEMPLATE.querybox.text
-msgid ""
-"This document cannot be edited, possibly due to missing access rights. Do "
-"you want to edit a copy of the document?"
-msgstr ""
-"بۇ پۈتۈكنى تەھرىرلىيەلمەيدۇ، سەۋەبى زىيارەت قىلىش ھوقۇقى يوق بولۇشى مۇمكىن. "
-"بۇ پۈتۈكنىڭ كۆپەيتمە نەشرىنى تەھرىرلەمسىز؟"
-
-#: view.src#STR_REPAIREDDOCUMENT.string.text
-msgid " (repaired document)"
-msgstr " (ئوڭشالغان پۈتۈك)"
-
-#: view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.errorbox.text
-msgid ""
-"%PRODUCTNAME could not find a web browser on your system. Please check your "
-"Desktop Preferences or install a web browser (for example, Mozilla) in the "
-"default  location requested during the browser installation."
-msgstr ""
-"%PRODUCTNAME سىستېمىدىن توركۆرگۈ تاپالمىدى. ئۈستەل يۈزى مايىللىقىنى تەكشۈرۈڭ "
-"ياكى توركۆرگۈ قاچىلاش جەريانىدا توركۆرگۈ (مەسىلەن، Mozilla)نى كۆڭۈلدىكى "
-"ئورۇنغا قاچىلاڭ."
-
-#: menu.src#STR_MENU_CFGITEM.string.text
-msgid "Configuration Menu"
-msgstr "تىزىملىك سەپلەش"
-
-#: menu.src#STR_MENU_ADDONS.string.text
-msgid "~Add-Ons"
-msgstr "قىستۇرما دېتال(~A)"
-
-#: menu.src#MN_CLIPBOARDFUNCS.SID_CUT.menuitem.text
-msgid "Cu~t"
-msgstr "كەس(~T)"
-
-#: menu.src#MN_CLIPBOARDFUNCS.SID_COPY.menuitem.text
-msgid "~Copy"
-msgstr "كۆچۈر(~C)"
-
-#: menu.src#MN_CLIPBOARDFUNCS.SID_PASTE.menuitem.text
-msgid "~Paste"
-msgstr "چاپلا(~P)"
-
-#: menu.src#SID_WIN_FULLSCREEN.string.text
-msgid "Leave Full-Screen Mode"
-msgstr "پۈتۈن ئېكران ھالەتتىن ئايرىل"
-
-#: menu.src#STR_MENU_ADDONHELP.string.text
-msgid "Add-~On Help"
-msgstr "قىستۇرما دېتال ياردىمى(~O)"
-
-#: menu.src#STR_MENU_SYNONYMS.string.text
-msgid "Synonyms"
-msgstr "مەنىداش سۆزلەر"
-
-#: menu.src#STR_MENU_NO_SYNONYM_FOUND.string.text
-msgid "(none)"
-msgstr "(يوق)"
-
-#: menu.src#STR_MENU_THESAURUS.string.text
-msgid "~Thesaurus..."
-msgstr "مەنىداش سۆزلەر لۇغىتى(~T)…"
-
-#: fltfnc.src#STR_FILTER_NOT_INSTALLED.string.text
-msgid ""
-"The selected filter $(FILTER) has not been installed.\n"
-"Would you like to do this now?"
-msgstr ""
-"تاللىغان سۈزگۈچ $(FILTER) تېخى قاچىلانمىغان.\n"
-"ھازىر قاچىلامسىز؟"
-
-#: fltfnc.src#STR_FILTER_CONSULT_SERVICE.string.text
-msgid ""
-"The selected filter $(FILTER) is not included in your edition.\n"
-"You can find information about orders on our homepage."
-msgstr ""
-"بۇ نەشرى سىز تاللىغان سۈزگۈچ $(FILTER) نى تېخى تەمىنلىمىگەن\n"
-"سىز تور بېتىمىزدىن يۇمشاق دېتال زاكاز قىلىش ئۇچۇرىنى ئوقۇڭ."
-"X-Accelerator-Marker: ~\n"
-
-#: app.src#STR_NONAME.string.text
-msgid "Untitled"
-msgstr "ماۋزۇسىز"
-
-#: app.src#STR_CLOSE.string.text
-msgid "Close"
-msgstr "ياپ"
-
-#: app.src#STR_STYLE_FILTER_AUTO.string.text
-msgid "Automatic"
-msgstr "ئاپتوماتىك"
-
-#: app.src#STR_STANDARD_SHORTCUT.string.text
-msgctxt "app.src#STR_STANDARD_SHORTCUT.string.text"
-msgid "Standard"
-msgstr "ئۆلچەملىك"
-
-#: app.src#STR_BYTES.string.text
-msgid "Bytes"
-msgstr "بايت"
-
-#: app.src#STR_KB.string.text
-msgid "KB"
-msgstr "ك ب"
-
-#: app.src#STR_MB.string.text
-msgid "MB"
-msgstr "م ب"
-
-#: app.src#STR_GB.string.text
-msgid "GB"
-msgstr "گ ب"
-
-#: app.src#MSG_QUERY_LASTVERSION.querybox.text
-msgid "Cancel all changes?"
-msgstr "ھەممە ئۆزگەرتىشتىن ۋاز كېچەمسىز؟"
-
-#: app.src#RID_DOCALREADYLOADED_DLG.infobox.text
-msgid "Document already open."
-msgstr "پۈتۈك ئېچىلغان."
-
-#: app.src#MSG_ERR_NO_WEBBROWSER_FOUND.errorbox.text
-msgid ""
-"%PRODUCTNAME could not find a web browser on your system. Please check your "
-"Desktop Preferences or install a web browser (for example, Mozilla) in the "
-"default  location requested during the browser installation."
-msgstr ""
-"%PRODUCTNAME سىستېمىدىن توركۆرگۈ تاپالمىدى. ئۈستەل يۈزى مايىللىقىنى تەكشۈرۈڭ "
-"ياكى توركۆرگۈ قاچىلاش جەريانىدا توركۆرگۈ (مەسىلەن، Mozilla)نى كۆڭۈلدىكى "
-"ئورۇنغا قاچىلاڭ."
-
-#: app.src#GID_INTERN.string.text
-msgid "Internal"
-msgstr "ئىچكى"
-
-#: app.src#GID_APPLICATION.string.text
-msgid "Application"
-msgstr "قوللىنىشچان پروگرامما"
-
-#: app.src#GID_VIEW.string.text
-msgid "View"
-msgstr "كۆرۈنۈش"
-
-#: app.src#GID_DOCUMENT.string.text
-msgid "Documents"
-msgstr "پۈتۈكلەر"
-
-#: app.src#GID_EDIT.string.text
-msgid "Edit"
-msgstr "تەھرىر"
-
-#: app.src#GID_MACRO.string.text
-msgid "BASIC"
-msgstr "BASIC"
-
-#: app.src#GID_OPTIONS.string.text
-msgid "Options"
-msgstr "تاللانما"
-
-#: app.src#GID_MATH.string.text
-msgid "Math"
-msgstr "ماتېماتىكا"
-
-#: app.src#GID_NAVIGATOR.string.text
-msgid "Navigate"
-msgstr "يول باشلا"
-
-#: app.src#GID_INSERT.string.text
-msgid "Insert"
-msgstr "قىستۇر"
-
-#: app.src#GID_FORMAT.string.text
-msgid "Format"
-msgstr "فورمات"
-
-#: app.src#GID_TEMPLATE.string.text
-msgid "Templates"
-msgstr "قېلىپلار"
-
-#: app.src#GID_TEXT.string.text
-msgid "Text"
-msgstr "تېكىست"
-
-#: app.src#GID_FRAME.string.text
-msgid "Frame"
-msgstr "كاندۇك"
-
-#: app.src#GID_GRAPHIC.string.text
-msgctxt "app.src#GID_GRAPHIC.string.text"
-msgid "Graphic"
-msgstr "گرافىك"
-
-#: app.src#GID_TABLE.string.text
-msgid "Table"
-msgstr "جەدۋەل"
-
-#: app.src#GID_ENUMERATION.string.text
-msgid "Numbering"
-msgstr "نومۇر بېكىتىش"
-
-#: app.src#GID_DATA.string.text
-msgid "Data"
-msgstr "سانلىق مەلۇمات"
-
-#: app.src#GID_SPECIAL.string.text
-msgid "Special Functions"
-msgstr "ئالاھىدە ئىقتىدار"
-
-#: app.src#GID_IMAGE.string.text
-msgid "Image"
-msgstr "سۈرەت"
-
-#: app.src#GID_CHART.string.text
-msgid "Chart"
-msgstr "دىئاگرامما"
-
-#: app.src#GID_EXPLORER.string.text
-msgid "Explorer"
-msgstr "مەنبە باشقۇرغۇچ"
-
-#: app.src#GID_CONNECTOR.string.text
-msgid "Connector"
-msgstr "ئۇلىغۇچ"
-
-#: app.src#GID_MODIFY.string.text
-msgid "Modify"
-msgstr "ئۆزگەرت"
-
-#: app.src#GID_DRAWING.string.text
-msgid "Drawing"
-msgstr "سىزمىچىلىق"
-
-#: app.src#GID_CONTROLS.string.text
-msgid "Controls"
-msgstr "كونتروللار"
-
-#: app.src#MSG_CANT_QUIT.infobox.text
-msgid ""
-"The application cannot be terminated at the moment.\n"
-"Please wait until all print jobs and/or\n"
-"OLE actions have finished and close all dialogs."
-msgstr ""
-"بۇ قوللىنىشچان پروگراممىنى ھازىر ئاخىرلاشتۇرالمايدۇ.\n"
-" بېسىش ۋەزىپىسى ياكى OLE قوزغىتىش ھالىتى ئاخىرلاشقىچە ساقلاڭ، \n"
-"ئاندىن ھەممە سۆزلىشىش رامكىسىنى يېپىڭ."
-
-#: app.src#STR_ISMODIFIED.string.text
-msgid "Do you want to save the changes to %1?"
-msgstr "ئۆزگەرتىشنى %1 غا ساقلامسىز؟"
-
-#: app.src#STR_QUITAPP.string.text
-msgid "E~xit"
-msgstr "چېكىن(~X)"
-
-#: app.src#RID_STR_HELP.string.text
-msgid "Help"
-msgstr "ياردەم"
-
-#: app.src#RID_STR_NOAUTOSTARTHELPAGENT.string.text
-msgid "No automatic start at 'XX'"
-msgstr "'XX' ئۆزلۈكىدىن قوزغالمايدۇ"
-
-#: app.src#RID_HELPBAR.string.text
-msgid "Help Bar"
-msgstr "ياردەم بالداق"
-
-#: app.src#RID_STR_HLPFILENOTEXIST.string.text
-msgid "The help file for this topic is not installed."
-msgstr "بۇ باش تېمىغا مۇناسىۋەتلىك ياردەم ھۆججىتى قاچىلانمىغان."
-
-#: app.src#RID_ENVTOOLBOX.string.text
-msgid "Function Bar"
-msgstr "ئىقتىدار بالداق"
-
-#: app.src#RID_SPECIALCONFIG_ERROR.string.text
-msgid ""
-"An error has occurred in the special configuration.\n"
-"Please contact your administrator."
-msgstr ""
-"ئالاھىدە سەپلىمە ھۆججەتتە خاتالىق بايقالدى.\n"
-"باشقۇرغۇچىڭىز بىلەن ئالاقىلىشىڭ."
-
-#: app.src#STR_QUICKSTART_EXIT.string.text
-msgid "Exit Quickstarter"
-msgstr "تېز قوزغاتقۇچتىن چېكىن"
-
-#: app.src#STR_QUICKSTART_TIP.string.text
-msgid "%PRODUCTNAME %PRODUCTVERSION Quickstarter"
-msgstr "%PRODUCTNAME %PRODUCTVERSION تېز قوزغات"
-
-#: app.src#STR_QUICKSTART_FILEOPEN.string.text
-msgid "Open Document..."
-msgstr "پۈتۈك ئاچ…"
-
-#: app.src#STR_QUICKSTART_FROMTEMPLATE.string.text
-msgid "From Template..."
-msgstr "قېلىپتىن…"
-
-#: app.src#STR_QUICKSTART_PRELAUNCH.string.text
-msgid "Load %PRODUCTNAME During System Start-Up"
-msgstr "سىستېما قوزغالغاندا %PRODUCTNAME نى يۈكلە"
-
-#: app.src#STR_QUICKSTART_PRELAUNCH_UNX.string.text
-msgid "Disable systray Quickstarter"
-msgstr "قوندۇرما تېز قوزغات چەكلەندى"
-
-#: app.src#STR_QUICKSTART_LNKNAME.string.text
-msgid "%PRODUCTNAME %PRODUCTVERSION"
-msgstr "%PRODUCTNAME %PRODUCTVERSION"
-
-#: app.src#STR_QUICKSTART_FILE.string.text
-msgid "File"
-msgstr "ھۆججەت"
-
-#: app.src#STR_QUICKSTART_STARTCENTER.string.text
-msgid "Startcenter"
-msgstr "قوزغىتىش مەركىزى"
-
-#: app.src#STR_QUICKSTART_RECENTDOC.string.text
-msgid "Recent Documents"
-msgstr "يېقىنقى پۈتۈكلەر"
-
-#: app.src#STR_QUERY_UPDATE_LINKS.string.text
-msgid "Update all links?"
-msgstr "ھەممە ئۇلانمىنى يېڭىلامسىز؟"
-
-#: app.src#STR_DDE_ERROR.string.text
-msgid "DDE link to % for % area % are not available."
-msgstr "% كۆرسەتكەن % ئۇلىنىشىغا ئېرىشەلمىدى،  دائىرىسى %"
-
-#: app.src#RID_SECURITY_WARNING_HYPERLINK.warningbox.text
-msgid "This hyperlink is going to open \"%s\". Do you want to proceed?"
-msgstr "بۇ ئۇلانما \"%s\" نى ئاچىدۇ. داۋاملاشتۇرامسىز؟"
-
-#: app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.warningbox.text
-msgid ""
-"For security reasons, the hyperlink cannot be executed.\n"
-"The stated address will not be opened."
-msgstr ""
-"بىخەتەرلىك سەۋەبىدىن، بۇ ئۇلانمىنى ئىجرا قىلالمايدۇ.\n"
-"بەلگىلەنگەن ئادرېسنى ئاچالمايدۇ."
-
-#: app.src#RID_SECURITY_WARNING_TITLE.string.text
-msgid "Security Warning"
-msgstr "بىخەتەرلىك ئاگاھلاندۇرۇش"
-
-#: app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.querybox.text
-msgid ""
-"Saving will remove all existing signatures.\n"
-"Do you want to continue saving the document?"
-msgstr ""
-"ساقلانسا نۆۋەتتىكى ئىمزا ئۆچۈرۈلىدۇ.\n"
-"پۈتۈكنى ساقلاۋېرەمسىز؟"
-
-#: app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.querybox.text
-msgid ""
-"The document has to be saved before it can be signed.\n"
-"Do you want to save the document?"
-msgstr ""
-"بۇ پۈتۈكنى ساقلىغاندىن كېيىن ئاندىن ئىمزا قويغىلى بولىدۇ. \n"
-"پۈتۈكنى ساقلامسىز؟"
-
-#: app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.infobox.text
-msgid ""
-"This document must be saved in OpenDocument file format before it can be "
-"digitally signed."
-msgstr ""
-"بۇ پۈتۈكنى ئالدى بىلەن OpenDocument فورماتىدا ساقلاپ ئاندىن ئىمزا قويغىلى "
-"بولىدۇ."
-
-#: app.src#RID_XMLSEC_DOCUMENTSIGNED.string.text
-msgid " (Signed)"
-msgstr " (ئىمزالانغان)"
-
-#: app.src#STR_STANDARD.string.text
-msgctxt "app.src#STR_STANDARD.string.text"
-msgid "Standard"
-msgstr "ئۆلچەملىك"
-
-#: app.src#RID_SVXSTR_FILELINK.string.text
-msgid "Document"
-msgstr "پۈتۈك"
-
-#: app.src#STR_NONE.string.text
-msgid "- None -"
-msgstr "- يوق -"
-
-#: app.src#RID_SVXSTR_GRAFIKLINK.string.text
-msgctxt "app.src#RID_SVXSTR_GRAFIKLINK.string.text"
-msgid "Graphic"
-msgstr "گرافىك"
-
-#: app.src#STR_SFX_FILTERNAME_ALL.string.text
-msgid "All files (*.*)"
-msgstr "ھەممە ھۆججەت (*.*)"
-
-#: app.src#RID_SVXSTR_EDITGRFLINK.string.text
-msgid "Link graphics"
-msgstr "گرافىكقا ئۇلا"
-
-#: app.src#STR_ERRUNOEVENTBINDUNG.string.text
-msgid ""
-"An appropriate component method %1\n"
-"could not be found.\n"
-"\n"
-"Check spelling of method name."
-msgstr ""
-"مۇۋاپىق بولغان بۆلەك ئۇسۇلى %1 نى \n"
-"تاپالمىدى.\n"
-"\n"
-"ئۇسۇل ئاتىنىڭ ئىملاسىنى تەكشۈرۈڭ."
-
-#: app.src#RID_SVXSTR_GRFILTER_OPENERROR.string.text
-msgid "Graphics file cannot be opened"
-msgstr "گرافىك ھۆججىتىنى ئاچالمىدى"
-
-#: app.src#RID_SVXSTR_GRFILTER_IOERROR.string.text
-msgid "Graphics file cannot be read"
-msgstr "گرافىك ھۆججىتىنى ئوقۇيالمىدى"
-
-#: app.src#RID_SVXSTR_GRFILTER_FORMATERROR.string.text
-msgid "Unknown graphics format"
-msgstr "نامەلۇم گرافىك فورماتى"
-
-#: app.src#RID_SVXSTR_GRFILTER_VERSIONERROR.string.text
-msgid "This version of the graphics file is not supported"
-msgstr "بۇ نەشرىدىكى گرافىك ھۆججىتىنى قوللىمايدۇ"
-
-#: app.src#RID_SVXSTR_GRFILTER_FILTERERROR.string.text
-msgid "Graphics filter not found"
-msgstr "گرافىك سۈزگۈچ تېپىلمىدى"
-
-#: app.src#RID_SVXSTR_GRFILTER_TOOBIG.string.text
-msgid "Not enough memory to insert graphic"
-msgstr "گرافىك قىستۇرۇشقا يېتەرلىك ئەسلەك يوق."
-
-#: dde.src#MD_DDE_LINKEDIT.FT_DDE_APP.fixedtext.text
-msgid "~Application:"
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/appl/dde.src#MD_DDE_LINKEDIT.ModalDialog.Text
+msgid  "Modify Link"
+msgstr "ئۇلانما ئۆزگەرت"
+
+#: source/appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_APP.FixedText.Text
+msgid  "~Application:"
 msgstr "قوللىنىشچان پروگرامما(~A):"
 
-#: dde.src#MD_DDE_LINKEDIT.FT_DDE_TOPIC.fixedtext.text
-msgid "~File:"
+#: source/appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_TOPIC.FixedText.Text
+msgid  "~File:"
 msgstr "ھۆججەت(~F):"
 
-#: dde.src#MD_DDE_LINKEDIT.FT_DDE_ITEM.fixedtext.text
-msgid "~Category:"
+#: source/appl/dde.src#MD_DDE_LINKEDIT.FT_DDE_ITEM.FixedText.Text
+msgid  "~Category:"
 msgstr "كاتېگورىيە(~C):"
 
-#: dde.src#MD_DDE_LINKEDIT.GROUP_DDE_CHG.fixedline.text
-msgid "Modify link"
+#: source/appl/dde.src#MD_DDE_LINKEDIT.GROUP_DDE_CHG.FixedLine.Text
+msgid  "Modify link"
 msgstr "ئۇلانما ئۆزگەرت"
 
-#: dde.src#MD_DDE_LINKEDIT.modaldialog.text
-msgid "Modify Link"
-msgstr "ئۇلانما ئۆزگەرت"
-
-#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_CONTENTS.pageitem.text
-msgid "Contents"
-msgstr "مەزمۇنلار"
-
-#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_INDEX.pageitem.text
-msgid "Index"
-msgstr "ئىندېكس"
-
-#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_SEARCH.pageitem.text
-msgid "Find"
-msgstr "ئىزدە"
-
-#: newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_BOOKMARKS.pageitem.text
-msgid "Bookmarks"
-msgstr "خەتكۈچ"
-
-#: newhelp.src#TP_HELP_INDEX.FT_EXPRESSION.fixedtext.text
-msgid "~Search term"
-msgstr "ئىزدەش تۈرى(~S)"
-
-#: newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.pushbutton.text
-msgctxt "newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.pushbutton.text"
-msgid "~Display"
-msgstr "كۆرسەت(~D)"
-
-#: newhelp.src#TP_HELP_SEARCH.FT_SEARCH.fixedtext.text
-msgid "S~earch term"
-msgstr "ئىزدەش تۈرى(~E)"
-
-#: newhelp.src#TP_HELP_SEARCH.PB_SEARCH.pushbutton.text
-msgid "~Find"
-msgstr "ئىزدە(~F)"
-
-#: newhelp.src#TP_HELP_SEARCH.CB_FULLWORDS.checkbox.text
-msgid "~Complete words only"
-msgstr "سۆزگىلا يول قوي(~C)"
-
-#: newhelp.src#TP_HELP_SEARCH.CB_SCOPE.checkbox.text
-msgid "Find in ~headings only"
-msgstr "ماۋزۇ دائىرىسىدىلا ئىزدە(~H)"
-
-#: newhelp.src#TP_HELP_SEARCH.PB_OPEN_SEARCH.pushbutton.text
-msgctxt "newhelp.src#TP_HELP_SEARCH.PB_OPEN_SEARCH.pushbutton.text"
-msgid "~Display"
-msgstr "كۆرسەت(~D)"
-
-#: newhelp.src#TP_HELP_BOOKMARKS.FT_BOOKMARKS.fixedtext.text
-msgid "~Bookmarks"
-msgstr "خەتكۈچلەر(~B)"
-
-#: newhelp.src#TP_HELP_BOOKMARKS.PB_BOOKMARKS.pushbutton.text
-msgctxt "newhelp.src#TP_HELP_BOOKMARKS.PB_BOOKMARKS.pushbutton.text"
-msgid "~Display"
-msgstr "كۆرسەت(~D)"
-
-#: newhelp.src#STR_HELP_WINDOW_TITLE.string.text
-msgid "%PRODUCTNAME Help"
-msgstr "%PRODUCTNAME ياردەم"
-
-#: newhelp.src#STR_HELP_BUTTON_INDEX_ON.string.text
-msgid "Show Navigation Pane"
-msgstr "يولباشچى كۆزنىكىنى كۆرسەت"
-
-#: newhelp.src#STR_HELP_BUTTON_INDEX_OFF.string.text
-msgid "Hide Navigation Pane"
-msgstr "يولباشچى كۆزنىكىنى يوشۇر"
-
-#: newhelp.src#STR_HELP_BUTTON_START.string.text
-msgid "First Page"
-msgstr "بىرىنچى بەت"
-
-#: newhelp.src#STR_HELP_BUTTON_PREV.string.text
-msgid "Previous Page"
-msgstr "ئالدىنقى بەت"
-
-#: newhelp.src#STR_HELP_BUTTON_NEXT.string.text
-msgid "Next Page"
-msgstr "كېيىنكى بەت"
-
-#: newhelp.src#STR_HELP_BUTTON_PRINT.string.text
-msgid "Print..."
-msgstr "باس…"
-
-#: newhelp.src#STR_HELP_BUTTON_ADDBOOKMARK.string.text
-msgid "Add to Bookmarks..."
-msgstr "خەتكۈچكە قوش…"
-
-#: newhelp.src#STR_HELP_BUTTON_SEARCHDIALOG.string.text
-msgid "Find on this Page..."
-msgstr "مۇشۇ بەتتىن ئىزدە…"
-
-#: newhelp.src#STR_HELP_BUTTON_SOURCEVIEW.string.text
-msgid "HTML Source"
-msgstr "HTML ئەسلى كودى"
-
-#: newhelp.src#STR_HELP_FIRST_MESSAGE.string.text
-msgid "The Help is being started..."
-msgstr "ياردەمنى قوزغىتىۋاتىدۇ…"
-
-#: newhelp.src#STR_HELP_MENU_TEXT_SELECTION_MODE.string.text
-msgid "Select Text"
-msgstr "تېكست تاللا"
-
-#: newhelp.src#STR_HELP_MENU_TEXT_COPY.string.text
-msgid "~Copy"
-msgstr "كۆچۈر(~C)"
-
-#: newhelp.src#DLG_HELP_ADDBOOKMARK.FT_BOOKMARK_TITLE.fixedtext.text
-msgid "Bookmark:"
-msgstr "خەتكۈچ:"
-
-#: newhelp.src#DLG_HELP_ADDBOOKMARK.STR_BOOKMARK_RENAME.string.text
-msgid "Rename Bookmark"
-msgstr "خەتكۈش ئاتى ئۆزگەرت"
-
-#: newhelp.src#DLG_HELP_ADDBOOKMARK.modaldialog.text
-msgid "Add to Bookmarks"
-msgstr "خەتكۈچكە قوش"
-
-#: newhelp.src#MENU_HELP_BOOKMARKS.MID_OPEN.menuitem.text
-msgid "Display"
-msgstr "كۆرسەت"
-
-#: newhelp.src#MENU_HELP_BOOKMARKS.MID_RENAME.menuitem.text
-msgid "Rename..."
-msgstr "ئات ئۆزگەرت…"
-
-#: newhelp.src#MENU_HELP_BOOKMARKS.MID_DELETE.menuitem.text
-msgid "Delete"
-msgstr "ئۆچۈر"
-
-#: newhelp.src#RID_INFO_NOSEARCHRESULTS.infobox.text
-msgid "No topics found."
-msgstr "باش تېما تاپالمىدى."
-
-#: newhelp.src#RID_INFO_NOSEARCHTEXTFOUND.infobox.text
-msgid "The text you entered was not found."
-msgstr "كىرگۈزگەن تېكستىڭىزنى تاپالمىدى."
-
-#: newhelp.src#RID_HELP_ONSTARTUP_TEXT.string.text
-msgid "~Display %PRODUCTNAME %MODULENAME Help at Startup"
-msgstr "قوزغالغاندا %PRODUCTNAME %MODULENAME ياردەمنى كۆرسەت(~D)"
-
-#: sfx.src#STR_ACCTITLE_PRODUCTIVITYTOOLS.string.text
-msgid "%PRODUCTNAME"
+#: source/appl/sfx.src#STR_ACCTITLE_PRODUCTIVITYTOOLS.String.Text
+msgid  "%PRODUCTNAME"
 msgstr "%PRODUCTNAME"
 
-#~ msgid "Applied Styles"
-#~ msgstr "قوللانغان ئۇسلۇب"
-
-#~ msgid "Custom Styles"
-#~ msgstr "ئىختىيارىچە ئۇسلۇب"
-
-#~ msgid "All Styles"
-#~ msgstr "ھەممە ئۇسلۇب"
-
-#~ msgid "Cannot open document."
-#~ msgstr "پۈتۈك ئاچالمىدى."
-
-#~ msgid "Error reading configuration file."
-#~ msgstr "سەپلىمە ھۆججەت ئوقۇۋاتقاندا خاتالىق كۆرۈلدى."
-
-#~ msgid "Error writing configuration file."
-#~ msgstr "سەپلىمە ھۆججىتىگە يازغاندا خاتالىق كۆرۈلدى."
-
-#~ msgid "Error opening configuration file."
-#~ msgstr "سەپلىمە ھۆججىتى ئېچىشتا خاتالىق كۆرۈلدى."
-
-#~ msgid "File is not a configuration file."
-#~ msgstr "بۇ ھۆججەت سەپلىمە ھۆججىتى ئەمەس."
-
-#~ msgid "Configuration file contains the wrong version."
-#~ msgstr "سەپلىمە ھۆججەت نەشرى خاتا."
-
-#~ msgid ""
-#~ "Error recording BASIC library in\n"
-#~ "'@'."
-#~ msgstr ""
-#~ "BASIC ئامبىرى '@' يازغاندا \n"
-#~ "خاتالىق كۆرۈلدى."
-
-#~ msgid ""
-#~ "An unexpected program error has occurred.\n"
-#~ "\n"
-#~ "Do you want to try to save your changes in all open documents before the "
-#~ "program is terminated?"
-#~ msgstr ""
-#~ "تاسادىپىي پروگرامما خاتالىقى يۈز بەردى.\n"
-#~ "\n"
-#~ "بۇ قوللىنىشچان پروگراممىنى يېپىشتىن ئىلگىرى ئاچقان پۈتۈكنىڭ ھەممىنى "
-#~ "ساقلامسىز؟"
-
-#~ msgid ""
-#~ "A form is to be sent by e-mail.\n"
-#~ "This means that the receiver will get to see your e-mail address."
-#~ msgstr ""
-#~ "ئېلخەتتە جەدۋەل يوللاڭ.\n"
-#~ "شۇنداق بولغاندا ئېلخەت تاپشۇرۇۋالغۇچى سىزنىڭ ئېلخەت ئادرېسىڭىزنى كۆرەلەيدۇ."
-
-#~ msgid "File Recovery"
-#~ msgstr "ھۆججەت ئەسلىگە كەلتۈر"
-
-#~ msgid "Should the file \"$1\" be restored?"
-#~ msgstr "\"$1\" ھۆججەت ئەسلىگە كەلتۈرۈلەمدۇ؟"
-
-#~ msgid "General"
-#~ msgstr "ئادەتتىكى"
-
-#~ msgid "Save"
-#~ msgstr "ساقلا"
-
-#~ msgid "Paths"
-#~ msgstr "يول"
-
-#~ msgid "Spellcheck"
-#~ msgstr "ئىملا تەكشۈر"
-
-#~ msgid ""
-#~ "This application is as object or print server active.\n"
-#~ "Do you want to terminate anyway?"
-#~ msgstr ""
-#~ "بۇ قوللىنىشچان پروگرامما ئوبيېكت ياكى بېسىش مۇلازىمىتى سۈپىتىدە ئاكتىپ "
-#~ "ھالەتتە.\n"
-#~ "ئۇنى ئاخىرلاشتۇرامسىز؟"
-
-#~ msgid "%PRODUCTNAME cannot be started more than once."
-#~ msgstr "%PRODUCTNAME دىن بىرلا ۋاقىتتا بىر قانچىنى قوزغاتقىلى بولمايدۇ."
-
-#~ msgid ""
-#~ "Some %PRODUCTNAME functions will not work properly without a printer driver.\n"
-#~ "Please install a printer driver."
-#~ msgstr ""
-#~ "پرىنتېر قوزغىتىش پروگراممىسى قاچىلانمىغانلىقتىن، %PRODUCTNAME نىڭ بىر قىسىم "
-#~ "ئىقتىدارى نورمال ئىجرا بولماسلىقى مۇمكىن.\n"
-#~ "پرىنتېر قوزغىتىش پروگراممىسى قاچىلاڭ."
-
-#~ msgid "AutoSave"
-#~ msgstr "ئۆزلۈكىدىن ساقلا"
-
-#~ msgid ""
-#~ "Limited system resources. Please quit other applications or close some "
-#~ "windows before continuing."
-#~ msgstr ""
-#~ "سىستېما مەنبەسى يېتىشمىدى. داۋاملاشتۇرۇشتىن ئىلگىرى باشقا قوللىنىشچان "
-#~ "پروگراممىلارنى ياكى كۆزنەكلەرنى يېپىڭ."
-
-#~ msgid "There are files missing. Please check application setup."
-#~ msgstr ""
-#~ "زۆرۈر بولغان پروگرامما بۆلىكىنى تاپالمىدى. قوللىنىشچان پروگرامما "
-#~ "قاچىلىنىشىنى تەكشۈرۈڭ."
-
-#~ msgid ""
-#~ "Another error occurred during the save recovery.\n"
-#~ "Possibly, the data could not be entirely saved."
-#~ msgstr ""
-#~ "ئەسلىگە كەلتۈرۈشنى ساقلىغاندا خاتالىق كۆرۈلدى.\n"
-#~ "بەلكىم سانلىق مەلۇمات تولۇق ساقلانمىغان بولۇشى مۇمكىن."
-
-#~ msgid "System resources exhausted. Please restart the application."
-#~ msgstr ""
-#~ "سىستېما مەنبەسى ئىشلىتىلىپ بولدى. قوللىنىشچان پروگراممىنى قايتا قوزغىتىڭ."
-
-#~ msgid "Error initializing object-system."
-#~ msgstr "ئوبيېكت سىستېمىسى دەسلەپلەشتۈرۈشتە خاتالىق كۆرۈلدى."
-
-#~ msgid "The file $(FILE) doesn't exist."
-#~ msgstr "$(FILE) ھۆججەت مەۋجۇد ئەمەس."
-
-#~ msgid "The path to file $(FILE) doesn't exist."
-#~ msgstr "$(FILE) ھۆججەتنى كۆرسەتكەن يول مەۋجۇد ئەمەس."
-
-#~ msgid ""
-#~ "The file $(FILE) could not be opened,\n"
-#~ "because too many files are open.\n"
-#~ "Please close some files and try again."
-#~ msgstr ""
-#~ "$(FILE) ھۆججەتنى ئاچالمىدى،\n"
-#~ "چۈنكى بەك كۆپ ھۆججەت ئېچىلغان.\n"
-#~ "بەزى ھۆججەتلەرنى يېپىپ ئاندىن قايتا سىناڭ."
-
-#~ msgid "The file $(FILE) could not be opened due to missing access rights."
-#~ msgstr "ئوقۇش ھوقۇقى بولمىغانلىقتىن $(FILE) ھۆججەتنى ئاچالمىدى."
-
-#~ msgid "The file $(FILE) could not be accessed."
-#~ msgstr "$(FILE) ھۆججەتنى ئوقۇيالمىدى."
-
-#~ msgid "The file $(FILE) could not be opened due to an invalid file handle."
-#~ msgstr "ئىناۋەتسىز ھۆججەت بەلگە قىممىتى سەۋەبىدىن $(FILE) ھۆججەتنى ئاچالمىدى."
-
-#~ msgid "The file $(FILE) could not be created."
-#~ msgstr "$(FILE) ھۆججەت قۇرالمايدۇ."
-
-#~ msgid "Error by shared access to $(FILE)."
-#~ msgstr "$(FILE) ھەمبەھىر ھۆججەت ئوقۇش خاتالىقى كۆرۈلدى"
-
-#~ msgid "General I/O error accessing $(FILE)."
-#~ msgstr "$(FILE)ئوقۇغاندا ئادەتتىكى كىرگۈزۈش/چىقىرىش خاتالىقى كۆرۈلدى."
-
-#~ msgid "The selected template has an incorrect format"
-#~ msgstr "تاللانغان قېلىپنىڭ فورماتى خاتا."
-
-#~ msgid "Can't open file $."
-#~ msgstr "$ ھۆججەت ئاچالمىدى."
-
-#~ msgid "E~xit & return to "
-#~ msgstr "چېكىن & قايت(~X) "
-
-#~ msgid "Select a command or click to select a theme."
-#~ msgstr "بۇيرۇقتىن بىرنى تاللاڭ ياكى چېكىڭ، باش تېما تاللاڭ."
-
-#~ msgid "Mail"
-#~ msgstr "خەت-چەك"
-
-#~ msgid "Addresses"
-#~ msgstr "ئادرېس"
-
-#~ msgid "Don't display tips"
-#~ msgstr "ئەسكەرتىش كۆرسەتمە"
-
-#~ msgid "The help system could not be started"
-#~ msgstr "ياردەم قوللىنىشچان پروگراممىنى قوزغىتالمىدى."
-
-#~ msgid "Enable plug-ins"
-#~ msgstr "قىستۇرما دېتال قوزغات"
-
-#~ msgid ""
-#~ "Important program components could not be initialized correctly.\n"
-#~ "Please start the setup program with the option /Repair."
-#~ msgstr ""
-#~ "مۇھىم پروگرامما بۆلىكىنى توغرا دەسلەپلەشتۈرەلمىدى.\n"
-#~ "قاچىلاش پروگراممىسىنى قوزغىتىپ، تاللانما - ئوڭشاشنى ئىجرا قىلىڭ."
-
-#~ msgid "Reference will not be saved: "
-#~ msgstr "نەقىل ساقلانمايدۇ: "
-
-#~ msgid "Configuration"
-#~ msgstr "تەڭشەك"
-
-#~ msgid "My Documents"
-#~ msgstr "پۈتۈكلىرىم"
-
-#~ msgid "Graphics"
-#~ msgstr "گرافىك"
-
-#~ msgid "Icons"
-#~ msgstr "سىنبەلگىلەر"
-
-#~ msgid "Palettes"
-#~ msgstr "رەڭ تەڭشەش تاختىسى"
-
-#~ msgid "Backups"
-#~ msgstr "زاپاس"
-
-#~ msgid "Modules"
-#~ msgstr "بۆلەكلەر"
-
-#~ msgid "AutoText"
-#~ msgstr "تېكست توپلام"
-
-#~ msgid "Dictionaries"
-#~ msgstr "لۇغەتلەر"
-
-#~ msgid "Gallery"
-#~ msgstr "رەسىم كارىدورى"
-
-#~ msgid "Message Storage"
-#~ msgstr "ئۇچۇر ساقلىغۇچ"
-
-#~ msgid "Temporary files"
-#~ msgstr "ۋاقىتلىق ھۆججەت"
-
-#~ msgid "Plug-ins"
-#~ msgstr "قىستۇرما دېتال"
-
-#~ msgid "Folder Bookmarks"
-#~ msgstr "مۇندەرىجە قىسقۇچ"
-
-#~ msgid "Filters"
-#~ msgstr "سۈزگۈچلەر"
-
-#~ msgid "Add-ins"
-#~ msgstr "قىستۇرما دېتال"
-
-#~ msgid "User Configuration"
-#~ msgstr "ئىشلەتكۈچى سەپلىمىسى"
-
-#~ msgid "User-defined dictionaries"
-#~ msgstr "ئىشلەتكۈچى ئىختىيارىچە لۇغەت"
-
-#~ msgid "AutoCorrect"
-#~ msgstr "ئاپتۇماتىك تۈزەت"
-
-#~ msgid "Writing aids"
-#~ msgstr "يېزىش قائىدىسى"
-
-#~ msgid "The URL is not valid."
-#~ msgstr "بۇ URL ئىناۋەتسىز."
-
-#~ msgid "Undo: "
-#~ msgstr "يېنىۋال: "
-
-#~ msgid "Re~do: "
-#~ msgstr "تەكرارلا(~D): "
-
-#~ msgid "~Repeat: "
-#~ msgstr "قايتلا(~R): "
-
-#~ msgid "New task"
-#~ msgstr "يېڭى ۋازىپە"
-"X-Accelerator-Marker: ~\n"
-
-#: doc.src#MSG_CONFIRM_FILTER.querybox.text
-msgid ""
-"Saving in external formats may have caused\n"
-" information loss. Do you still want to close?"
-msgstr ""
-"ھۆججەت سىرتقى فورماتتا ساقلانسا ئۇچۇر يوقىلىشى مۇمكىن.\n"
-"بۇ ھۆججەتنى ياپامسىز؟"
-
-#: doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.querybox.text
-msgid ""
-"Name already in use.\n"
-"Do you want to overwrite document template?"
-msgstr ""
-"بۇ ئات ئىشلىتىلگەن.\n"
-"بۇ پۈتۈك قېلىپىنى قاپلىۋېتەمسىز؟"
-
-#: doc.src#STR_DELETE_REGION.string.text
-msgid "Are you sure you want to delete the region \"$1\"?"
-msgstr "دائىرە\"$1\"نى راستىنلا ئۆچۈرەمسىز؟"
-
-#: doc.src#STR_DELETE_TEMPLATE.string.text
-msgid "Are you sure you want to delete the entry \"$1\"?"
-msgstr "تۈر\"$1\"نى راستىنلا ئۆچۈرەمسىز؟"
-
-#: doc.src#MSG_REGION_NOTEMPTY.querybox.text
-msgid ""
-"The category is not empty.\n"
-"Delete anyway?"
-msgstr ""
-"بۇ دائىرە بوش ئەمەس.\n"
-"ئۆچۈرۈۋېتەمسىز؟"
-
-#: doc.src#STR_QUERY_SAVE_DOCUMENT.string.text
-msgid ""
-"The document \"$(DOC)\" has been modified.\n"
-"Do you want to save your changes?"
-msgstr ""
-"\"$(DOC)\" پۈتۈك ئۆزگەرتىلدى.\n"
-"ئۆزگەرتكەننى ساقلامسىز؟"
-
-#: doc.src#STR_STYLES.string.text
-msgid "Styles"
-msgstr "ئۇسلۇبلار"
-
-#: doc.src#STR_MACROS.string.text
-msgid "Macros"
-msgstr "ماكرولار"
-
-#: doc.src#STR_CONFIG.string.text
-msgid "Configuration"
-msgstr "تەڭشەك"
-
-#: doc.src#STR_PRINT_STYLES_HEADER.string.text
-msgid "Styles in "
-msgstr "ئۇسلۇبلار "
-
-#: doc.src#STR_PRINT_STYLES.string.text
-msgid "Printing Styles"
-msgstr "بېسىش ئۇسلۇبى"
-
-#: doc.src#MSG_PRINT_ERROR.errorbox.text
-msgid "The print job could not be started."
-msgstr "بېسىش مەشغۇلاتىنى باشلىيالمايدۇ."
-
-#: doc.src#STR_BACKUP_COPY.string.text
-msgid "Copy"
-msgstr "كۆچۈر"
-
-#: doc.src#MSG_CANT_OPEN_TEMPLATE.infobox.text
-msgid "The template could not be opened."
-msgstr "قېلىپنى ئاچالمىدى."
-
-#: doc.src#MSG_VIEW_OPEN_CANT_SAVE.infobox.text
-msgid "Document already open for editing."
-msgstr "پۈتۈكنى تەھرىرلەش ئۈچۈن ئاچقان."
-
-#: doc.src#STR_ERROR_SAVE.string.text
-msgid "Error recording document "
-msgstr "پۈتۈككە يازغاندا خاتالىق كۆرۈلدى "
-
-#: doc.src#STR_TEMPLATE_FILTER.string.text
-msgctxt "doc.src#STR_TEMPLATE_FILTER.string.text"
-msgid "Templates"
-msgstr "قېلىپ"
-
-#: doc.src#STR_ERROR_COPY_TEMPLATE.string.text
-msgid ""
-"Error copying template \"$1\". \n"
-"A template with this name may already exist."
-msgstr ""
-"قېلىپ\"$1\"نى كۆچۈرگەندە خاتالىق كۆرۈلدى.\n"
-"ئوخشاش ئاتلىق قېلىپ مەۋجۇد بولۇشى مۇمكىن."
-
-#: doc.src#STR_ERROR_DELETE_TEMPLATE.string.text
-msgid "The template \"$1\" can not be deleted."
-msgstr "قېلىپ\"$1\"نى ئۆچۈرەلمەيدۇ."
-
-#: doc.src#STR_ERROR_MOVE_TEMPLATE.string.text
-msgid "Error moving template \"$1\"."
-msgstr "قېلىپ\"$1\"نى يۆتكىگەندە خاتالىق كۆرۈلدى."
-
-#: doc.src#MSG_ERROR_RESCAN.errorbox.text
-msgid "The update could not be saved."
-msgstr "يېڭىلاشنى ساقلىيالمىدى."
-
-#: doc.src#STR_ERROR_SAVE_TEMPLATE.string.text
-msgid "Error saving template "
-msgstr "قېلىپ ساقلىغاندا خاتالىق كۆرۈلدى "
-
-#: doc.src#MSG_ERROR_RENAME_TEMPLATE.errorbox.text
-msgid "Error renaming template."
-msgstr "قېلىپ ئاتىنى ئۆزگەرتكەندە خاتالىق يۈز بەردى."
-
-#: doc.src#MSG_ERROR_RENAME_TEMPLATE_REGION.errorbox.text
-msgid "Error renaming template category."
-msgstr "قېلىپ تىپىنى ئۆزگەرتكەندە خاتالىق يۈز بەردى."
-
-#: doc.src#MSG_ERROR_EMPTY_NAME.errorbox.text
-msgid "Please specify a name."
-msgstr "ئاتتىن بىرنى بەلگىلەڭ."
-
-#: doc.src#MSG_ERROR_UNIQ_NAME.errorbox.text
-msgid ""
-"Please specify a unique name.\n"
-"Entries must not be case specific."
-msgstr ""
-"بىردىنبىر ئاتتىن بىرنى بەلگىلەڭ.\n"
-"تۈردە چوڭ كىچىك يېزىلىش پەرقلەندۈرۈلمەيدۇ."
-
-#: doc.src#STR_QUERY_DEFAULT_TEMPLATE.string.text
-msgid "Should the template \"$(TEXT)\" become the default template?"
-msgstr "قېلىپ\"$(TEXT)\"نى كۆڭۈلدىكى قېلىپ قىلىپ تەڭشەمسىز؟"
-
-#: doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.querybox.text
-msgid "Do you want to reset the default template?"
-msgstr "كۆڭۈلدىكى قېلىپقا ئەسلىگە قايتۇرامسىز؟"
-
-#: doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.infobox.text
-msgid ""
-"Template directory\n"
-"$(DIR)\n"
-"does not exist."
-msgstr ""
-"قېلىپ مۇندەرىجە\n"
-"$(DIR)\n"
-"مەۋجۇد ئەمەس."
-
-#: doc.src#MSG_DOCINFO_CANTREAD.infobox.text
-msgid "Document info cannot be read."
-msgstr "پۈتۈك ئۇچۇرىنى ئوقۇيالمىدى."
-
-#: doc.src#STR_ERROR_NOSTORAGE.string.text
-msgid "The selected file has an incorrect format."
-msgstr "تاللانغان ھۆججەتنىڭ فورماتى خاتا."
-
-#: doc.src#STR_QUERY_MUSTOWNFORMAT.string.text
-msgid ""
-"Documents cannot be saved in $(FORMAT) format. Do you\n"
-"want to save your changes using the $(OWNFORMAT) format?"
-msgstr ""
-"پۈتۈك $(FORMAT) فورماتىدا ساقلانمايدۇ.\n"
-"ئۆزگەرتكەننى $(OWNFORMAT) فورماتىدا ساقلامسىز؟"
-
-#: doc.src#STR_SAVEDOC.string.text
-msgid "~Save"
-msgstr "ساقلا(~S)"
-
-#: doc.src#STR_UPDATEDOC.string.text
-msgid "~Update"
-msgstr "يېڭىلا(~U)"
-
-#: doc.src#STR_SAVEASDOC.string.text
-msgid "Save ~As..."
-msgstr "باشقا ئاتتا ساقلا(~A)…"
-
-#: doc.src#STR_SAVECOPYDOC.string.text
-msgid "Save Copy ~as..."
-msgstr "كۆپەيتمىسىنى باشقا ئىسىمدا ساقلا(~A)…"
-
-#: doc.src#STR_CLOSEDOC.string.text
-msgid "~Close"
-msgstr "ياپ(~C)"
-
-#: doc.src#STR_CLOSEDOC_ANDRETURN.string.text
-msgid "~Close & Return to "
-msgstr "ياپ & قايت(~C) "
-
-#: doc.src#STR_WIZARD.string.text
-msgid " AutoPilot"
-msgstr " يېتەكچى"
-
-#: doc.src#RID_STR_FILTCONFIG.string.text
-msgid "Configurations"
-msgstr "سەپلىمە"
-
-#: doc.src#RID_STR_FILTBASIC.string.text
-msgid "%PRODUCTNAME Basic libraries"
-msgstr "%PRODUCTNAME Basic ئامبىرى"
-
-#: doc.src#RID_STR_WARNSTYLEOVERWRITE.string.text
-msgid "Should the \"$(ARG1)\" Style be replaced?"
-msgstr "ئۇسلۇب \"$(ARG1)\" نى ئالماشتۇرامسىز؟"
-
-#: doc.src#STR_DOC_LOADING.string.text
-msgid "Loading Document"
-msgstr "پۈتۈك يۈكلەۋاتىدۇ"
-
-#: doc.src#RID_DLSTATUS.INET_NAME_RESOLVE_START.string.text
-msgid "Connection to: $(HOST). Waiting for response..."
-msgstr "ئۇلىنىش ئورنى: $(HOST) . ئىنكاس كۈتۈۋاتىدۇ…"
-
-#: doc.src#RID_DLSTATUS.INET_CONNECT_START.string.text
-msgid "Opening $(TARGET) at $(HOST)"
-msgstr "$(HOST) دىكى $(TARGET) نى ئېچىۋاتىدۇ"
-
-#: doc.src#RID_DLSTATUS.INET_READ_STATUS.string.text
-msgid "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
-msgstr "يۈكلەۋاتىدۇ: $(HOST) نىڭ $(TARGET). يۈكلىدى:$(BYTE)"
-
-#: doc.src#RID_DLSTATUS.INET_CONNECTION_CLOSED.string.text
-msgid "Disconnected"
-msgstr "ئۈزۈلدى"
-
-#: doc.src#MSG_OPEN_READONLY.querybox.text
-msgid ""
-"Document cannot be opened for editing.\n"
-"Do you want to open it as read-only?"
-msgstr ""
-"پۈتۈكنى تەھرىرلەش ھالىتىدە ئاچالمايسىز.\n"
-"ئوقۇشقىلا بولىدىغان ھالەتتە ئاچامسىز؟"
-
-#: doc.src#STR_EDIT.string.text
-msgid "Edit"
-msgstr "تەھرىر"
-
-#: doc.src#RID_OFFICEFILTER.string.text
-msgid "%PRODUCTNAME Documents"
-msgstr "%PRODUCTNAME پۈتۈكى"
-
-#: doc.src#STR_FRAMEOBJECT_PROPERTIES.string.text
-msgid "Propert~ies..."
-msgstr "خاسلىق(~I)…"
-
-#: doc.src#STR_FSET_FILTERNAME0.string.text
-msgid "HTML (FrameSet)"
-msgstr "HTML (كاندۇك)"
-
-#: doc.src#STR_FSET_FILTERNAME1.string.text
-msgid "%PRODUCTNAME Frame Document"
-msgstr "%PRODUCTNAME كاندۇك پۈتۈك"
-
-#: doc.src#STR_TEMPL_MOVED.string.text
-msgid ""
-"The template \"$(TEMPLATE)\" was not found at the original location. A "
-"template with the same name exists at \"$(FOUND)\". Should this template be "
-"used in the future when comparing?"
-msgstr ""
-"\"$(TEMPLATE)\" قېلىپ ئەسلىدىكى ئورنىدىن تېپىلمىدى.  ئوخشاش ئاتتىكى قېلىپ "
-"\"$(FOUND)\" مەۋجۇد. كېيىن سېلىشتۇرغاندا بۇ قېلىپنى ئىشلەتسۇنمۇ؟"
-
-#: doc.src#STR_TEMPL_RESET.string.text
-msgid ""
-"The template \"$(TEMPLATE)\" has not been found. Should the template be looked "
-"for the next time the document is opened ?"
-msgstr ""
-"\"$(TEMPLATE)\" قېلىپ تېپىلمىدى. كېيىنكى قېتىم پۈتۈك ئاچقاندا ئۇنى ئىزدىسۇنمۇ؟"
-
-#: doc.src#STR_AUTOMATICVERSION.string.text
-msgid "Automatically saved version"
-msgstr "ئۆزلۈكىدىن ساقلانغان نەشرى"
-
-#: doc.src#STR_DOCTYPENAME_SW.string.text
-msgid "Text Document"
-msgstr "تېكست پۈتۈك"
-
-#: doc.src#STR_DOCTYPENAME_SWWEB.string.text
-msgid "HTML Document"
-msgstr "HTML پۈتۈك"
-
-#: doc.src#STR_DOCTYPENAME_SWGLOB.string.text
-msgid "Master Document"
-msgstr "ئاساسىي پۈتۈك"
-
-#: doc.src#STR_DOCTYPENAME_SC.string.text
-msgid "Spreadsheet"
-msgstr "ئېلېكترونلۇق جەدۋەل"
-
-#: doc.src#STR_DOCTYPENAME_SI.string.text
-msgid "Presentation"
-msgstr "كۆرسەتمە"
-
-#: doc.src#STR_DOCTYPENAME_SD.string.text
-msgid "Drawing"
-msgstr "سىزمىچىلىق"
-
-#: doc.src#STR_DOCTYPENAME_MESSAGE.string.text
-msgid "Message"
-msgstr "ئۇچۇر"
-
-#: doc.src#STR_NOSAVEANDCLOSE.string.text
-msgid "~Discard"
-msgstr "تاشلىۋەت(~D)"
-
-#: doc.src#STR_PACKNGO_NOACCESS.string.text
-msgid "Access to the current data medium not possible."
-msgstr "نۆۋەتتىكى سانلىق مەلۇمات ۋاسىتىسىنى ئوقۇيالمىدى."
-
-#: doc.src#STR_PACKNGO_NEWMEDIUM.string.text
-msgid "Insert the next data carrier and click OK."
-msgstr "كېيىنكى سانلىق مەلۇمات ساقلىغۇچنى قىستۇرۇپ «جەزملە» نى چېكىڭ."
-
-#: doc.src#STR_OBJECT.string.text
-msgid "Object"
-msgstr "ئوبيېكت"
-
-#: doc.src#DLG_MACROQUERY.querybox.text
-msgid "This document contains macros. $(TEXT)"
-msgstr "بۇ پۈتۈكتە ماكرو بار. $(TEXT)"
-
-#: doc.src#DLG_MACROQUERY.querybox.title
-msgid "Run Macro"
-msgstr "ماكرو ئىجرا قىل"
-
-#: doc.src#BTN_OK.string.text
-msgid "Run"
-msgstr "ئىجرا قىل"
-
-#: doc.src#BTN_CANCEL.string.text
-msgid "Do Not Run"
-msgstr "ئىجرا قىلما"
-
-#: doc.src#FT_CANCEL.string.text
-msgid ""
-"According to the security settings, the macros in this document should not "
-"be run. Do you want to run them anyway?"
-msgstr ""
-"نۆۋەتتىكى بىخەتەرلىك تەڭشىكىگە ئاساسەن، بۇ پۈتۈكتىكى ماكرونى ئىجرا قىلماڭ. "
-"بۇ ماكرونى ئىجرا قىلامسىز؟"
-
-#: doc.src#FT_OK.string.text
-msgid "Do you want to allow these macros to be run?"
-msgstr "بۇ ماكرونى ئىجرا قىلىشقا يول قويامسىز؟"
-
-#: doc.src#STR_EXPORTASPDF_TITLE.string.text
-msgid "Export as PDF"
-msgstr "PDF چىقار"
-
-#: doc.src#STR_EXPORTWITHCFGBUTTON.string.text
-msgid "Export..."
-msgstr "چىقار…"
-
-#: doc.src#STR_EXPORTBUTTON.string.text
-msgid "Export"
-msgstr "چىقار"
-
-#: doc.src#RID_SVXSTR_SECURITY_ADDPATH.string.text
-msgid "Add this directory to the list of secure paths: "
-msgstr "بۇ مۇندەرىجىنى بىخەتەر يول تىزىملىكىگە قوش: "
-
-#: doc.src#STR_LABEL_FILEFORMAT.string.text
-msgid "File format:"
-msgstr "ھۆججەت فورماتى:"
-
-#: doc.src#STR_HIDDENINFO_CONTAINS.string.text
-msgid ""
-"This document contains:\n"
-"\n"
-msgstr ""
-"بۇ پۈتۈك مەزمۇنىدا:\n"
-"\n"
-
-#: doc.src#STR_HIDDENINFO_RECORDCHANGES.string.text
-msgid "Recorded changes"
-msgstr "خاتىرىلەنگەن ئۆزگەرتىش"
-
-#: doc.src#STR_HIDDENINFO_NOTES.string.text
-msgid "Notes"
-msgstr "ئىزاھ"
-
-#: doc.src#STR_HIDDENINFO_DOCVERSIONS.string.text
-msgid "Document versions"
-msgstr "پۈتۈك نەشرى"
-
-#: doc.src#STR_HIDDENINFO_FIELDS.string.text
-msgid "Fields"
-msgstr "سۆز بۆلىكى"
-
-#: doc.src#STR_HIDDENINFO_LINKDATA.string.text
-msgid "Linked data..."
-msgstr "ئۇلانغان سانلىق مەلۇمات…"
-
-#: doc.src#STR_HIDDENINFO_CONTINUE_SAVING.string.text
-msgid "Do you want to continue saving the document?"
-msgstr "پۈتۈك ساقلاشنى داۋاملاشتۇرامسىز؟"
-
-#: doc.src#STR_HIDDENINFO_CONTINUE_PRINTING.string.text
-msgid "Do you want to continue printing the document?"
-msgstr "پۈتۈك بېسىشنى داۋاملاشتۇرامسىز؟"
-
-#: doc.src#STR_HIDDENINFO_CONTINUE_SIGNING.string.text
-msgid "Do you want to continue signing the document?"
-msgstr "پۈتۈككە ئىمزا قويۇشنى داۋاملاشتۇرامسىز؟"
-
-#: doc.src#STR_HIDDENINFO_CONTINUE_CREATEPDF.string.text
-msgid "Do you want to continue creating a PDF file?"
-msgstr "PDF ھۆججىتى قۇرۇشنى داۋاملاشتۇرامسىز؟"
-
-#: doc.src#STR_NEW_FILENAME_SAVE.string.text
-msgid ""
-"If you do not want to overwrite the original document, you should save your "
-"work under a new filename."
-msgstr ""
-"ئەگەر ئەسلى پۈتۈكنى قاپلاشنى خالىمىسىڭىز ئۇنداقتا ھۆججەتنى يېڭى ئات بىلەن "
-"ساقلاڭ."
-
-#: doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.string.text
-msgid "Some template files are protected and can not be deleted."
-msgstr "بەزى قېلىپ ھۆججەتلىرى قوغدالغان، ئۆچۈرگىلى بولمايدۇ."
-
-#: doc.src#STR_DOCINFO_INFOFIELD.string.text
-msgid "Info %1"
-msgstr "%1 ئۇچۇرى"
-
-#: doc.src#STR_SHARED.string.text
-msgid " (shared)"
-msgstr " (ھەمبەھىر)"
-
-#: doc.src#STR_XMLSEC_ODF12_EXPECTED.string.text
-msgid ""
-"The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-"
-"Options-Load/Save-General. Signing documents requires ODF 1.2 "
-"(OpenOffice.org 3.x)."
-msgstr ""
-"قورال - تاللانما - يۈكلە/ساقلا - ئادەتتىكى كۆزنىكىدە پۈتۈك فورمات نەشرى ODF "
-"1.1 (OpenOffice.org 2.x) گە تەڭشەلگەن. ئىمزالىق پۈتۈك ODF 1.2 "
-"(OpenOffice.org 3.x) تەلەپ قىلىدۇ."
-
-#: doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.querybox.text
-msgid ""
-"The document has to be saved before it can be signed. Saving the document "
-"removes all present signatures.\n"
-"Do you want to save the document?"
-msgstr ""
-"بۇ پۈتۈكنى ساقلىغاندىن كېيىن ئاندىن ئىمزا قويغىلى بولىدۇ. پۈتۈك ساقلانسا "
-"ھازىرقى ھەممە ئىمزا ئۆچۈرۈلىدۇ.\n"
-"پۈتۈكنى ساقلامسىز؟"
-
-#: doc.src#STR_QRYTEMPL_MESSAGE.string.text
-msgid ""
-"The template '$(ARG1)' on which this document is based, has been modified. "
-"Do you want to update style based formattings according to the modified "
-"template?"
-msgstr ""
-"بۇ پۈتۈك ئاساس قىلغان'$(ARG1)' قېلىپ ئۆزگەرتىلدى. ئۆزگەرتىلگەندىن كېيىنكى "
-"قېلىپ بويىچە ئۇسلۇب ئاساسىدىكى فورماتنى ئۆزگەرتەمسىز؟"
-
-#: doc.src#STR_QRYTEMPL_UPDATE_BTN.string.text
-msgid "~Update Styles"
-msgstr "ئۇسلۇب يېڭىلا(~U)"
-
-#: doc.src#STR_QRYTEMPL_KEEP_BTN.string.text
-msgid "~Keep Old Styles"
-msgstr "كونا ئۇسلۇبنى ساقلاپ قال(~K)"
-
-#: doctdlg.src#DLG_DOC_TEMPLATE.FL_EDIT.fixedline.text
-msgid "New template"
-msgstr "يېڭى قېلىپ"
-
-#: doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.fixedline.text
-msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.fixedline.text"
-msgid "Templates"
-msgstr "قېلىپ"
-
-#: doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.fixedtext.text
-msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.fixedtext.text"
-msgid "~Categories"
-msgstr "كاتېگورىيە(~C)"
-
-#: doctdlg.src#DLG_DOC_TEMPLATE.FT_STYLESHEETS.fixedtext.text
-msgid "~Templates"
-msgstr "قېلىپلار(~T)"
-
-#: doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.pushbutton.text
-msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.pushbutton.text"
-msgid "~Edit"
-msgstr "تەھرىر(~E)"
-
-#: doctdlg.src#DLG_DOC_TEMPLATE.BT_ORGANIZE.pushbutton.text
-msgid "~Organizer..."
-msgstr "باشقۇر(~O)…"
-
-#: doctdlg.src#DLG_DOC_TEMPLATE.modaldialog.text
-msgctxt "doctdlg.src#DLG_DOC_TEMPLATE.modaldialog.text"
-msgid "Templates"
-msgstr "قېلىپ"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.1.itemlist.text
-msgid "My Templates"
-msgstr "قېلىپلىرىم"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.2.itemlist.text
-msgid "Business Correspondence"
-msgstr "سودا خەت-چەكلىرى"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.3.itemlist.text
-msgid "Other Business Documents"
-msgstr "باشقا سودا پۈتۈكلىرى"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.4.itemlist.text
-msgid "Personal Correspondence and Documents"
-msgstr "شەخسىي خەت-چەك ۋە پۈتۈك"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.5.itemlist.text
-msgid "Forms and Contracts"
-msgstr "جەدۋەل ۋە توختام"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.6.itemlist.text
-msgid "Finances"
-msgstr "مالىيە"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.7.itemlist.text
-msgid "Education"
-msgstr "مائارىپ"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.8.itemlist.text
-msgid "Presentation Backgrounds"
-msgstr "كۆرسەتمە تەگلىكى"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.9.itemlist.text
-msgid "Presentations"
-msgstr "كۆرسەتمە"
-
-#: doctempl.src#TEMPLATE_LONG_NAMES_ARY.10.itemlist.text
-msgid "Miscellaneous"
-msgstr "باشقىلار"
-
-#: doctempl.src#RID_CNT_STR_WAITING.string.text
-msgid "The templates are being initialized for first-time usage."
-msgstr "بىرىنچى قېتىم ئىشلەتكەن قېلىپنى دەسلەپلەشتۈرۈۋاتىدۇ."
-
-#: docvor.src#DLG_ORGANIZE.BTN_OK.okbutton.text
-msgid "Close"
+#: source/appl/app.src#STR_NONAME.String.Text
+msgid  "Untitled"
+msgstr "ماۋزۇسىز"
+
+#: source/appl/app.src#STR_CLOSE.String.Text
+msgid  "Close"
 msgstr "ياپ"
 
-#: docvor.src#DLG_ORGANIZE.BTN_FILES.pushbutton.text
-msgid "~File..."
-msgstr "ھۆججەت(~F)…"
+#: source/appl/app.src#STR_STYLE_FILTER_AUTO.String.Text
+msgid  "Automatic"
+msgstr "ئاپتوماتىك"
 
-#: docvor.src#DLG_ORGANIZE.BTN_ADDRESSTEMPLATE.pushbutton.text
-msgid "~Address Book..."
-msgstr "ئادرېس دەپتىرى(~A)…"
+#: source/appl/app.src#STR_STANDARD_SHORTCUT.String.Text
+msgid  "Standard"
+msgstr "ئۆلچەملىك"
 
-#: docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.1.stringlist.text
-msgctxt "docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.1.stringlist.text"
-msgid "Templates"
-msgstr "قېلىپ"
+#: source/appl/app.src#STR_BYTES.String.Text
+msgid  "Bytes"
+msgstr "بايت"
 
-#: docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.2.stringlist.text
-msgctxt "docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.2.stringlist.text"
-msgid "Documents"
-msgstr "پۈتۈكلەر"
+#: source/appl/app.src#STR_KB.String.Text
+msgid  "KB"
+msgstr "ك ب"
 
-#: docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.1.stringlist.text
-msgctxt "docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.1.stringlist.text"
-msgid "Templates"
-msgstr "قېلىپ"
+#: source/appl/app.src#STR_MB.String.Text
+msgid  "MB"
+msgstr "م ب"
 
-#: docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.2.stringlist.text
-msgctxt "docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.2.stringlist.text"
-msgid "Documents"
-msgstr "پۈتۈكلەر"
+#: source/appl/app.src#STR_GB.String.Text
+msgid  "GB"
+msgstr "گ ب"
 
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_NEW.menuitem.text
-msgid "~New"
-msgstr "يېڭى(~N)"
+#: source/appl/app.src#MSG_QUERY_LASTVERSION.QueryBox.Message
+msgid  "Cancel all changes?"
+msgstr "ھەممە ئۆزگەرتىشتىن ۋاز كېچەمسىز؟"
 
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DELETE.menuitem.text
-msgid "~Delete"
-msgstr "ئۆچۈر(~D)"
+#: source/appl/app.src#RID_DOCALREADYLOADED_DLG.InfoBox.Message
+msgid  "Document already open."
+msgstr "پۈتۈك ئېچىلغان."
 
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.menuitem.text
-msgctxt "docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.menuitem.text"
-msgid "~Edit"
-msgstr "تەھرىر(~E)"
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_FROM.menuitem.text
-msgid "Import Template..."
-msgstr "قېلىپ ئەكىر…"
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_TO.menuitem.text
-msgid "Export Template..."
-msgstr "قېلىپ چىقار…"
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINT.menuitem.text
-msgid "~Print"
-msgstr "باس(~P)"
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINTER_SETUP.menuitem.text
-msgid "Printer Settings..."
-msgstr "پرىنتېر تەڭشەك…"
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESCAN.menuitem.text
-msgid "Update"
-msgstr "يېڭىلا"
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DEFAULT_TEMPLATE.menuitem.text
-msgid "Set As Default Template"
-msgstr "كۆڭۈلدىكى قېلىپ قىلىپ تەڭشە"
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESET_DEFAULT_TEMPLATE.menuitem.text
-msgid "Reset Default Template"
-msgstr "كۆڭۈلدىكى تەڭشەككە قايتۇر"
-
-#: docvor.src#DLG_ORGANIZE.BTN_EDIT.menubutton.text
-msgid "Commands"
-msgstr "بۇيرۇقلار"
-
-#: docvor.src#DLG_ORGANIZE.modaldialog.text
-msgid "Template Management"
-msgstr "قېلىپ باشقۇر"
-
-#: new.src#DLG_NEW_FILE.FT_REGION.fixedtext.text
-msgctxt "new.src#DLG_NEW_FILE.FT_REGION.fixedtext.text"
-msgid "~Categories"
-msgstr "كاتېگورىيە(~C)"
-
-#: new.src#DLG_NEW_FILE.FT_TEMPLATE.fixedtext.text
-msgid "T~emplates"
-msgstr "قېلىپ(~E)"
-
-#: new.src#DLG_NEW_FILE.BT_MORE.morebutton.text
-msgid "~More"
-msgstr "تېخىمۇ كۆپ(~M)"
-
-#: new.src#DLG_NEW_FILE.BTN_PREVIEW.checkbox.text
-msgid "Pre~view"
-msgstr "ئالدىن كۆزەت(~V)"
-
-#: new.src#DLG_NEW_FILE.GB_DOCINFO.fixedline.text
-msgid "Description"
-msgstr "چۈشەندۈرۈلۈشى"
-
-#: new.src#DLG_NEW_FILE.CB_TEXT_STYLE.checkbox.text
-msgid "Te~xt"
-msgstr "تېكست(~X)"
-
-#: new.src#DLG_NEW_FILE.CB_FRAME_STYLE.checkbox.text
-msgid "~Frame"
-msgstr "كاندۇك(~F)"
-
-#: new.src#DLG_NEW_FILE.CB_PAGE_STYLE.checkbox.text
-msgid "~Pages"
-msgstr "بەت(~P)"
-
-#: new.src#DLG_NEW_FILE.CB_NUM_STYLE.checkbox.text
-msgid "N~umbering"
-msgstr "تەرتىپ نومۇرى(~U)"
-
-#: new.src#DLG_NEW_FILE.CB_MERGE_STYLE.checkbox.text
-msgid "~Overwrite"
-msgstr "قاپلا(~O)"
-
-#: new.src#DLG_NEW_FILE.PB_LOAD_FILE.pushbutton.text
-msgid "From File..."
-msgstr "ھۆججەتتىن…"
-
-#: new.src#DLG_NEW_FILE.STR_LOAD_TEMPLATE.string.text
-msgid "Load Styles"
-msgstr "ئۇسلۇب يۈكلە"
-
-#: new.src#DLG_NEW_FILE.FT_TITLE.fixedtext.text
-msgid "~Title"
-msgstr "ماۋزۇ(~T)"
-
-#: new.src#DLG_NEW_FILE.FT_THEMA.fixedtext.text
-msgid "Subject"
-msgstr "تېما"
-
-#: new.src#DLG_NEW_FILE.FT_KEYWORDS.fixedtext.text
-msgid "~Key words"
-msgstr "ھالقىلىق سۆز(~K)"
-
-#: new.src#DLG_NEW_FILE.FT_DESC.fixedtext.text
-msgid "~Description"
-msgstr "چۈشەندۈرۈش(~D)"
-
-#: new.src#DLG_NEW_FILE.modaldialog.text
-msgid "New"
-msgstr "يېڭى"
-
-#~ msgid ""
-#~ "The Styles in this document do not match your current Styles. Should your "
-#~ "current Styles be applied to this document?"
-#~ msgstr ""
-#~ "بۇ پۈتۈك ئۇسلۇبى بىلەن نۆۋەتتىكى ئۇسلۇبىڭىز ماسلاشمايدىكەن. ھۆججەتكە "
-#~ "نۆۋەتتىكى ئۇسلۇبىڭىزنى قوللىنامسىز؟"
-"X-Accelerator-Marker: ~\n"
-
-#: alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.fixedtext.text
-msgid ""
-"This document may contain formatting or content that cannot be saved in the "
-"%FORMATNAME file format. Do you want to save the document in this format "
-"anyway?\n"
-"\n"
-"Use the latest ODF file format and be sure all formatting and content is "
-"saved correctly."
+#: source/appl/app.src#MSG_ERR_NO_WEBBROWSER_FOUND.ErrorBox.Message
+msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
 msgstr ""
-"بۇ پۈتۈكتە %FORMATNAME ھۆججەت فورماتىدا ساقلىغىلى بولمايدىغان مەزمۇن ياكى "
-"فورمات مەۋجۇد. پۈتۈكنى يەنىلا مۇشۇ فورماتتا ساقلاۋېرەمسىز؟\n"
-"\n"
-"ئەڭ يېڭى ODF ھۆججەت فورماتىدا ھەممە فورمات ۋە مەزمۇننى توغرا ساقلىغىلى "
-"بولىدۇ."
 
-#: alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.okbutton.text
-msgid "~Keep Current Format"
-msgstr "نۆۋەتتىكى فورماتنى ساقلا(~K)"
+#: source/appl/app.src#GID_INTERN.String.Text
+msgid  "Internal"
+msgstr "ئىچكى"
 
-#: alienwarn.src#RID_DLG_ALIEN_WARNING.PB_YES.cancelbutton.text
-msgid "~Save in ODF Format"
-msgstr "ODF فورماتىدا ساقلا(~S)"
+#: source/appl/app.src#GID_APPLICATION.String.Text
+msgid  "Application"
+msgstr "قوللىنىشچان پروگرامما"
 
-#: alienwarn.src#RID_DLG_ALIEN_WARNING.PB_MOREINFO.helpbutton.text
-msgid "~More Information..."
-msgstr "تېخىمۇ كۆپ ئۇچۇر(~M)…"
-
-#: alienwarn.src#RID_DLG_ALIEN_WARNING.CB_WARNING_OFF.checkbox.text
-msgid "~Ask when not saving in ODF format"
-msgstr "ODF فورماتىدا ساقلىمىسا سورا(~A)"
-
-#: dialog.src#STR_RESET.string.text
-msgid "~Reset"
-msgstr "ئەسلىگە قايتۇر(~R)"
-
-#: dialog.src#STR_APPLY.string.text
-msgid "Apply"
-msgstr "قوللان"
-
-#: dialog.src#STR_TABPAGE_MANAGESTYLES.string.text
-msgid "Organizer"
-msgstr "باشقۇر"
-
-#: dialog.src#MSG_TABPAGE_INVALIDNAME.infobox.text
-msgid "This name is already in use."
-msgstr "بۇ ئات ئىشلىتىلىۋاتىدۇ."
-
-#: dialog.src#MSG_TABPAGE_INVALIDSTYLE.infobox.text
-msgid "This Style does not exist."
-msgstr "بۇ ئۇسلۇب مەۋجۇد ئەمەس."
-
-#: dialog.src#MSG_TABPAGE_INVALIDPARENT.infobox.text
-msgid ""
-"This Style cannot be used as a base Style,\n"
-"because it would result in a recursive reference."
-msgstr ""
-"بۇ ئۇسلۇبنى ئاساسىي ئۇسلۇب قىلغىلى بولمايدۇ،\n"
-"بولمىسا قايتلانما نەقىلنى كەلتۈرۈپ چىقىرىدۇ."
-
-#: dialog.src#MSG_POOL_STYLE_NAME.infobox.text
-msgid ""
-"Name already exists as a default Style.\n"
-"Please choose another name."
-msgstr ""
-"بۇ كۆڭۈلدىكى ئۇسلۇب ئاتى.\n"
-"باشقا ئاتنى تاللاڭ."
-
-#: dialog.src#STR_DELETE_STYLE.string.text
-msgid "Do you really want to delete Style $1?"
-msgstr "$1 ئۇسلۇبنى راستىنلا ئۆچۈرەمسىز؟"
-
-#: dialog.src#STR_DELETE_STYLE_USED.string.text
-msgid "You are deleting an applied Style!\n"
-msgstr "قوللانغان ئۇسلۇبنى ئۆچۈرەمسىز!\n"
-
-#: dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.menuitem.text
-msgid "New..."
-msgstr "يېڭى…"
-
-#: dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.menuitem.text
-msgid "Modify..."
-msgstr "ئۆزگەرت…"
-
-#: dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.menuitem.text
-msgid "Delete..."
-msgstr "ئۆچۈر…"
-
-#: dialog.src#SID_NAVIGATOR.string.text
-msgid "Navigator"
-msgstr "يول باشچى"
-
-#: dialog.src#SID_TASKPANE.string.text
-msgid "Task Pane"
-msgstr "ۋەزىپە يۈزى"
-
-#: dialog.src#MSG_ERROR_WRONG_CONFIRM.errorbox.text
-msgid "Faulty password confirmation"
-msgstr "جەزملەش ئىم خاتا"
-
-#: dialog.src#STR_PDF_EXPORT_SEND.string.text
-msgid "Send"
-msgstr "يوللا"
-
-#: dinfdlg.src#STR_SFX_NEWOFFICEDOC.string.text
-msgid "%PRODUCTNAME document"
-msgstr "%PRODUCTNAME پۈتۈكى"
-
-#: dinfdlg.src#TP_DOCINFODESC.FT_TITLE.fixedtext.text
-msgid "~Title"
-msgstr "ماۋزۇ(~T)"
-
-#: dinfdlg.src#TP_DOCINFODESC.FT_THEMA.fixedtext.text
-msgid "~Subject"
-msgstr "تېما(~S)"
-
-#: dinfdlg.src#TP_DOCINFODESC.FT_KEYWORDS.fixedtext.text
-msgid "~Keywords"
-msgstr "ھالقىلىق سۆز(~K)"
-
-#: dinfdlg.src#TP_DOCINFODESC.FT_COMMENT.fixedtext.text
-msgid "~Comments"
-msgstr "ئىزاھات(~C)"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.fixedtext.text
-msgid "Type:"
-msgstr "تىپ:"
-
-#: dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.checkbox.text
-msgctxt "dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.checkbox.text"
-msgid "~Read-only"
-msgstr "ئوقۇشقىلا بولىدۇ(~R)"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_FILE.fixedtext.text
-msgid "Location:"
-msgstr "ئورنى:"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_FILE_SIZE.fixedtext.text
-msgid "Size:"
-msgstr "چوڭلۇقى:"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_CREATE.fixedtext.text
-msgid "Created:"
-msgstr "قۇرغان ۋاقىت:"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_CHANGE.fixedtext.text
-msgid "Modified:"
-msgstr "ئۆزگەرتىلگەن:"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_SIGNED.fixedtext.text
-msgid "Digitally signed:"
-msgstr "رەقەملىك ئىمزا:"
-
-#: dinfdlg.src#TP_DOCINFODOC.BTN_SIGNATURE.pushbutton.text
-msgid "Digital Signature..."
-msgstr "رەقەملىك ئىمزا…"
-
-#: dinfdlg.src#TP_DOCINFODOC.STR_MULTSIGNED.string.text
-msgid "Multiply signed document"
-msgstr "كۆپ ئىمزالىق پۈتۈك"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_PRINT.fixedtext.text
-msgid "Last printed:"
-msgstr "ئاخىرقى باسقان ۋاقتى:"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_TIMELOG.fixedtext.text
-msgid "Total editing time:"
-msgstr "تەھرىرلىگەن ئومۇمىي ۋاقىت:"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_DOCNO.fixedtext.text
-msgid "Revision number:"
-msgstr "تۈزىتىش قېتىم سانى:"
-
-#: dinfdlg.src#TP_DOCINFODOC.BTN_DELETE.pushbutton.text
-msgid "Reset"
-msgstr "ئەسلىگە قايتۇر"
-
-#: dinfdlg.src#TP_DOCINFODOC.CB_USE_USERDATA.checkbox.text
-msgid "~Apply user data"
-msgstr "ئىشلەتكۈچى سانلىق مەلۇماتىنى قوللان(~A)"
-
-#: dinfdlg.src#TP_DOCINFODOC.FT_TEMPL.fixedtext.text
-msgid "Template:"
-msgstr "قېلىپ:"
-
-#: dinfdlg.src#TP_DOCINFODOC.STR_UNKNOWNSIZE.string.text
-msgid "unknown"
-msgstr "نامەلۇم"
-
-#: dinfdlg.src#TP_DOCINFODOC.EDIT_FILE_NAME.string.text
-msgid "File Name"
-msgstr "ھۆججەت ئاتى"
-
-#: dinfdlg.src#TP_DOCINFOUSER.BTN_EDITLABEL.pushbutton.text
-msgid "~Info fields..."
-msgstr "ئۇچۇر سۆز بۆلىكى(~I)…"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.RB_NOAUTOUPDATE.radiobutton.text
-msgid "Do not refresh automatically"
-msgstr "ئۆزلۈكىدىن يېڭىلىما"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.RB_RELOADUPDATE.radiobutton.text
-msgid "Refresh this document"
-msgstr "بۇ پۈتۈكنى يېڭىلا"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.FT_EVERY.fixedtext.text
-msgid "every"
-msgstr "ھەر"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.fixedtext.text
-msgctxt "dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.fixedtext.text"
-msgid "seconds"
-msgstr "سېكۇنت"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.RB_FORWARDUPDATE.radiobutton.text
-msgid "Redirect from this document"
-msgstr "بۇ پۈتۈكتىن يوللا"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.fixedtext.text
-msgid "after"
-msgstr "داۋامى"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.fixedtext.text
-msgctxt "dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.fixedtext.text"
-msgid "seconds"
-msgstr "سېكۇنت"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.FT_URL.fixedtext.text
-msgid "to URL"
-msgstr "URL غا"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.FT_FRAME.fixedtext.text
-msgid "to frame"
-msgstr "كاندۇكقا"
-
-#: dinfdlg.src#TP_DOCINFORELOAD.STR_FORWARD_ERRMSSG.string.text
-msgid "If you select the option \"%PLACEHOLDER%\", you must enter a URL."
-msgstr ""
-"ئەگەر \"%PLACEHOLDER%\" تاللانمىنى تاللىسىڭىز، چوقۇم URL دىن بىرنى كىرگۈزۈڭ."
-
-#: dinfdlg.src#TP_CUSTOMPROPERTIES.FT_PROPERTIES.fixedtext.text
-msgid "~Properties"
-msgstr "خاسلىق(~P)"
-
-#: dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.string.text
-msgid "Name"
-msgstr "ئاتى"
-
-#: dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.string.text
-msgid "Type"
-msgstr "تىپى"
-
-#: dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_VALUE.string.text
-msgid "Value"
-msgstr "قىممەت"
-
-#: dinfdlg.src#TP_CUSTOMPROPERTIES.BTN_ADD.pushbutton.text
-msgid "~Add"
-msgstr "قوش(~A)"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.combobox.text
-msgctxt "dinfdlg.src#SFX_CB_PROPERTY_NAME.combobox.text"
-msgid "-"
-msgstr "-"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.combobox.quickhelptext
-msgid "Property Name"
-msgstr "خاسلىق ئاتى"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.1.stringlist.text
-msgid "Checked by"
-msgstr "تەكشۈرگۈچى"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.2.stringlist.text
-msgid "Client"
-msgstr "خېرىدار"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.3.stringlist.text
-msgid "Date completed"
-msgstr "تاماملانغان چېسلا"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.4.stringlist.text
-msgid "Department"
-msgstr "تارماق"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.5.stringlist.text
-msgid "Destinations"
-msgstr "نىشان"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.6.stringlist.text
-msgid "Disposition"
-msgstr "خاھىش"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.7.stringlist.text
-msgid "Division"
-msgstr "تارماق"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.8.stringlist.text
-msgid "Document number"
-msgstr "پۈتۈك تەرتىپ نومۇرى"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.9.stringlist.text
-msgid "Editor"
-msgstr "نەشر قىلغۇچى"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.10.stringlist.text
-msgid "E-Mail"
-msgstr "ئېلخەت"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.11.stringlist.text
-msgid "Forward to"
-msgstr "يۆتكەل"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.12.stringlist.text
-msgid "Group"
-msgstr "گۇرۇپپا"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.13.stringlist.text
-msgid "Info"
-msgstr "ئۇچۇر"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.14.stringlist.text
-msgid "Language"
-msgstr "تىل"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.15.stringlist.text
-msgid "Mailstop"
-msgstr "ئېلخەت ئادرېسى"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.16.stringlist.text
-msgid "Matter"
-msgstr "مەسىلە"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.17.stringlist.text
-msgid "Office"
-msgstr "ئىشخانا"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.18.stringlist.text
-msgid "Owner"
-msgstr "ئىگىسى"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.19.stringlist.text
-msgid "Project"
-msgstr "قۇرۇلۇش"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.20.stringlist.text
-msgid "Publisher"
-msgstr "تارقاتقۇچى"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.21.stringlist.text
-msgid "Purpose"
-msgstr "ئىشلىتىلىشى"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.22.stringlist.text
-msgid "Received from"
-msgstr "يوللىغۇچى"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.23.stringlist.text
-msgid "Recorded by"
-msgstr "خاتىرىلىگۈچى"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.24.stringlist.text
-msgid "Recorded date"
-msgstr "خاتىرىلىگەن چېسلا"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.25.stringlist.text
-msgid "Reference"
-msgstr "نەقىل"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.26.stringlist.text
-msgid "Source"
-msgstr "مەنبە"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.27.stringlist.text
-msgid "Status"
-msgstr "ھالىتى"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.28.stringlist.text
-msgid "Telephone number"
-msgstr "تېلېفون نومۇرى"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.29.stringlist.text
-msgid "Typist"
-msgstr "خەت باسقۇچى"
-
-#: dinfdlg.src#SFX_CB_PROPERTY_NAME.30.stringlist.text
-msgid "URL"
-msgstr "URL"
-
-#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.1.stringlist.text
-msgid "Text"
-msgstr "تېكىست"
-
-#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.2.stringlist.text
-msgid "DateTime"
-msgstr "چېسلا ۋە ۋاقىت"
-
-#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.3.stringlist.text
-msgid "Date"
-msgstr "چېسلا"
-
-#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.4.stringlist.text
-msgctxt "dinfdlg.src#SFX_LB_PROPERTY_TYPE.4.stringlist.text"
-msgid "Duration"
-msgstr "داۋاملىشىش ۋاقتى"
-
-#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.5.stringlist.text
-msgid "Number"
-msgstr "تەرتىپ نومۇر"
-
-#: dinfdlg.src#SFX_LB_PROPERTY_TYPE.6.stringlist.text
-msgid "Yes or no"
-msgstr "ھەئە ياكى ياق"
-
-#: dinfdlg.src#SFX_ST_DURATION_FORMAT.string.text
-msgid " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
-msgstr " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
-
-#: dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.radiobutton.text
-msgid "Yes"
-msgstr "ھەئە"
-
-#: dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_NO.radiobutton.text
-msgid "No"
-msgstr "ياق"
-
-#: dinfdlg.src#SFX_PB_PROPERTY_REMOVE.imagebutton.text
-msgctxt "dinfdlg.src#SFX_PB_PROPERTY_REMOVE.imagebutton.text"
-msgid "-"
-msgstr "-"
-
-#: dinfdlg.src#SFX_PB_PROPERTY_REMOVE.imagebutton.quickhelptext
-msgid "Remove Property"
-msgstr "خاسلىق چىقىرىۋەت"
-
-#: dinfdlg.src#SFX_QB_WRONG_TYPE.querybox.text
-msgid ""
-"The value entered does not match the specified type.\n"
-"The value will be stored as text."
-msgstr ""
-"كىرگۈزگەن قىممەت بىلەن بەلگىلەنگەن تىپ ماسلاشمىدى\n"
-"بۇ قىممەت تېكست سۈپىتىدە ساقلىنىدۇ."
-
-#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.pageitem.text
-msgid "General"
-msgstr "ئادەتتىكى"
-
-#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.pageitem.text
-msgid "Description"
-msgstr "چۈشەندۈرۈلۈشى"
-
-#: dinfdlg.src#SID_DOCINFO.1.TP_CUSTOMPROPERTIES.pageitem.text
-msgid "Custom Properties"
-msgstr "ئىختىيارىچە خاسلىق"
-
-#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.pageitem.text
-msgid "Internet"
-msgstr "تۇتاش تور"
-
-#: dinfdlg.src#SID_DOCINFO.1.TP_DOCINFOSECURITY.pageitem.text
-msgid "Security"
-msgstr "بىخەتەرلىك"
-
-#: dinfdlg.src#SID_DOCINFO.tabdialog.text
-msgid "Properties of "
-msgstr "خاسلىق "
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.FL_DURATION.fixedline.text
-msgctxt "dinfdlg.src#RID_EDIT_DURATIONS.FL_DURATION.fixedline.text"
-msgid "Duration"
-msgstr "داۋاملىشىش ۋاقتى"
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.CB_NEGATIVE.checkbox.text
-msgid "~Negative"
-msgstr "مەنفى(~N)"
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.FT_YEAR.fixedtext.text
-msgid "~Years"
-msgstr "يىل(~Y)"
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.FT_MONTH.fixedtext.text
-msgid "~Months"
-msgstr "ئاي(~M)"
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.FT_DAY.fixedtext.text
-msgid "~Days"
-msgstr "كۈن(~D)"
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.FT_HOUR.fixedtext.text
-msgid "H~ours"
-msgstr "سائەت(~O)"
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.FT_MINUTE.fixedtext.text
-msgid "Min~utes"
-msgstr "مىنۇت(~U)"
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.FT_SECOND.fixedtext.text
-msgid "~Seconds"
-msgstr "سېكۇنت(~S)"
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.FT_MSECOND.fixedtext.text
-msgid "Millise~conds"
-msgstr "مىللى سېكۇنت(~C)"
-
-#: dinfdlg.src#RID_EDIT_DURATIONS.modaldialog.text
-msgid "Edit Duration"
-msgstr "داۋاملىشىش ۋاقىت تەھرىر"
-
-#: dinfedt.src#DLG_DOCINFO_EDT.FL_INFO.fixedline.text
-msgid "Names"
-msgstr "ئاتى"
-
-#: dinfedt.src#DLG_DOCINFO_EDT.modaldialog.text
-msgid "Edit Field Names"
-msgstr "سۆز بۆلەك ئاتى تەھرىر"
-
-#: filedlghelper.src#STR_SFX_FILEDLG_ACTUALVERSION.string.text
-msgid "Current version"
-msgstr "نۆۋەتتىكى نەشرى"
-
-#: filedlghelper.src#STR_SFX_EXPLORERFILE_EXPORT.string.text
-msgid "Export"
-msgstr "چىقار"
-
-#: filedlghelper.src#STR_SFX_EXPLORERFILE_INSERT.string.text
-msgid "Insert"
-msgstr "قىستۇر"
-
-#: filedlghelper.src#STR_SFX_EXPLORERFILE_BUTTONINSERT.string.text
-msgid "~Insert"
-msgstr "قىستۇر(~I)"
-
-#: filedlghelper.src#STR_SFX_IMPORT_ALL.string.text
-msgid "<All formats>"
-msgstr "<ھەممە فورمات>"
-
-#: filedlghelper.src#STR_CB_AUTO_EXTENSION.string.text
-msgid "~Automatic file name extension"
-msgstr "ھۆججەت كېڭەيتىلگەن ئاتىنى ئۆزلۈكىدىن قوش(~A)"
-
-#: filedlghelper.src#STR_CB_SELECTION.string.text
-msgid "~Selection"
-msgstr "تاللا(~S)"
-
-#: filedlghelper.src#STR_CB_INSERT_AS_LINK.string.text
-msgid "~Link"
-msgstr "ئۇلانما(~L)"
-
-#: filedlghelper.src#STR_CB_SHOW_PREVIEW.string.text
-msgid "Pr~eview"
-msgstr "ئالدىن كۆزەت(~E)"
-
-#: filedlghelper.src#STR_CB_READONLY.string.text
-msgctxt "filedlghelper.src#STR_CB_READONLY.string.text"
-msgid "~Read-only"
-msgstr "ئوقۇشقىلا بولىدۇ(~R)"
-
-#: filedlghelper.src#STR_CB_PASSWORD.string.text
-msgid "Save with ~password"
-msgstr "ئىم بىلەن ساقلا(~P)"
-
-#: filedlghelper.src#STR_CB_FILTER_OPTIONS.string.text
-msgid "Edit ~filter settings"
-msgstr "سۈزگۈچ تەڭشەك تەھرىر(~F)"
-
-#: filedlghelper.src#STR_PB_PLAY.string.text
-msgid "~Play"
-msgstr "چال(~P)"
-
-#: filedlghelper.src#STR_PB_STOP.string.text
-msgid "Sto~p"
-msgstr "توختا(~P)"
-
-#: filedlghelper.src#STR_PB_OPEN.string.text
-msgid "~Open"
-msgstr "ئاچ(~O)"
-
-#: filedlghelper.src#STR_PB_SAVE.string.text
-msgid "~Save"
-msgstr "ساقلا(~S)"
-
-#: filedlghelper.src#STR_LB_IMAGE_TEMPLATE.string.text
-msgid "Style:"
-msgstr "ئۇسلۇب:"
-
-#: filedlghelper.src#STR_LB_TEMPLATES.string.text
-msgid "~Templates:"
-msgstr "قېلىپلار(~T):"
-
-#: filedlghelper.src#STR_LB_VERSION.string.text
-msgid "~Version:"
-msgstr "نەشرى(~V):"
-
-#: mailwindow.src#RID_ERRBOX_MAIL_CONFIG.errorbox.text
-msgid ""
-"%PRODUCTNAME was unable to find a working e-mail configuration. Please save "
-"this document locally instead and attach it from within your e-mail client."
-msgstr ""
-"%PRODUCTNAME ئىناۋەتلىك ئېلخەت تەڭشىكىنى تاپالمىدى. بۇ پۈتۈكنى يەرلىك "
-"دىسكىدا ساقلاپ، ئېلخەت خېرىدار پروگراممىڭىزدا قوشۇمچە سۈپىتىدە قوشۇڭ."
-
-#: mgetempl.src#TP_MANAGE_STYLES.FT_NAME.fixedtext.text
-msgid "~Name"
-msgstr "ئاتى(~N):"
-
-#: mgetempl.src#TP_MANAGE_STYLES.CB_AUTO.checkbox.text
-msgid "~AutoUpdate"
-msgstr "ئۆزلۈكدىدىن يېڭىلا(~A)"
-
-#: mgetempl.src#TP_MANAGE_STYLES.FT_NEXT.fixedtext.text
-msgid "Ne~xt Style"
-msgstr "كېيىنكى ئۇسلۇب(~X)"
-
-#: mgetempl.src#TP_MANAGE_STYLES.FT_BASE.fixedtext.text
-msgid "Linked with"
-msgstr "ئۇلىنىدىغان جاي"
-
-#: mgetempl.src#TP_MANAGE_STYLES.FT_REGION.fixedtext.text
-msgid "~Category"
-msgstr "كاتېگورىيە(~C)"
-
-#: mgetempl.src#TP_MANAGE_STYLES.GB_DESC.fixedline.text
-msgid "Contains"
-msgstr "ئىچىدە"
-
-#: newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.FL_COL.fixedline.text
-msgid "Style name"
-msgstr "ئۇسلۇب ئىسمى"
-
-#: newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MSG_OVERWRITE.querybox.text
-msgid "Style already exists. Overwrite?"
-msgstr "ئۇسلۇب مەۋجۇد، قاپلىۋېتەمسىز؟"
-
-#: newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.modaldialog.text
-msgid "Create Style"
-msgstr "ئۇسلۇب قۇر"
-
-#: passwd.src#DLG_PASSWD.FT_PASSWD_USER.fixedtext.text
-msgid "~User"
-msgstr "ئىشلەتكۈچى(~U)"
-
-#: passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD.fixedtext.text
-msgid "~Password"
-msgstr "ئىم(~P)"
-
-#: passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM.fixedtext.text
-msgid "~Confirm"
-msgstr "جەزملە(~C)"
-
-#: passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.fixedline.text
-msgctxt "passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.fixedline.text"
-msgid "Password"
-msgstr "ئىم"
-
-#: passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD2.fixedtext.text
-msgid "P~assword"
-msgstr "ئىم(~A)"
-
-#: passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM2.fixedtext.text
-msgid "Confir~m"
-msgstr "جەزملە(~M)"
-
-#: passwd.src#DLG_PASSWD.TEXT_PASSWD.string.text
-msgctxt "passwd.src#DLG_PASSWD.TEXT_PASSWD.string.text"
-msgid "Password"
-msgstr "ئىم"
-
-#: passwd.src#DLG_PASSWD.modaldialog.text
-msgid "Enter Password"
-msgstr "ئىم كىرگۈزۈڭ"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.fixedline.text
-msgid "Reduce print data"
-msgstr "بېسىش سانلىق مەلۇماتىنى ئازايت"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.FT_OUTPUTTYPE.fixedtext.text
-msgid "Settings for"
-msgstr "تەڭشەك"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTEROUTPUT.radiobutton.text
-msgid "~Printer"
-msgstr "پرىنتېر(~P)"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTFILEOUTPUT.radiobutton.text
-msgid "Print to ~file"
-msgstr "ھۆججەتكە باس(~F)"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCETRANSPARENCY.checkbox.text
-msgid "~Reduce transparency"
-msgstr "سۈزۈكلۈكنى ئازايت(~R)"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_AUTO.radiobutton.text
-msgid "Auto~matically"
-msgstr "ئاپتوماتىك(~M)"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_NONE.radiobutton.text
-msgid "~No transparency"
-msgstr "تۇتۇق(~N)"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEGRADIENTS.checkbox.text
-msgid "Reduce ~gradients"
-msgstr "تەدرىجىي ئۆزگىرىشنى ئازايت(~G)"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_STRIPES.radiobutton.text
-msgid "Gradient ~stripes"
-msgstr "تەدرىجىي ئۆزگىرىش سىزىقلىرى(~S)"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_COLOR.radiobutton.text
-msgid "Intermediate ~color"
-msgstr "ئوتتۇرا رەڭ(~C)"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS.checkbox.text
-msgid "Reduce ~bitmaps"
-msgstr "بىتلىق تەسۋىر ئازايت(~B)"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_OPTIMAL.radiobutton.text
-msgid "~High print quality"
-msgstr "يۇقىرى بېسىش سۈپىتى(~H)"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_NORMAL.radiobutton.text
-msgid "N~ormal print quality"
-msgstr "ئادەتتىكى بېسىش سۈپىتى(~O)"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_RESOLUTION.radiobutton.text
-msgid "Reso~lution"
-msgstr "پەرق ئېتىش نىسبىتى(~L)"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.1.stringlist.text
-msgid "72 DPI"
-msgstr "72 DPI"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.2.stringlist.text
-msgid "96 DPI"
-msgstr "96 DPI"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.3.stringlist.text
-msgid "150 DPI (Fax)"
-msgstr "(فاكس)150 DPI"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.4.stringlist.text
-msgid "200 DPI (default)"
-msgstr "(كۆڭۈلدىكى)200 DPI"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.5.stringlist.text
-msgid "300 DPI"
-msgstr "300 DPI"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.6.stringlist.text
-msgid "600 DPI"
-msgstr "600 DPI"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS_TRANSPARENCY.checkbox.text
-msgid "Include transparent ob~jects"
-msgstr "سۈزۈك ئوبيېكتنى ئۆز ئىچىگە ئالىدۇ(~J)"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.CB_CONVERTTOGREYSCALES.checkbox.text
-msgid "Con~vert colors to grayscale"
-msgstr "رەڭلىكنى كۈلرەڭگە ئايلاندۇر(~V)"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.GB_PRINT_WARN.fixedline.text
-msgid "Printer warnings"
-msgstr "پرىنتېر ئاگاھلاندۇرۇشى"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERSIZE.checkbox.text
-msgid "P~aper size"
-msgstr "قەغەز چوڭلۇقى(~A)"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERORIENTATION.checkbox.text
-msgid "Pap~er orientation"
-msgstr "قەغەز قىستۇرۇش يۆنىلىشى(~E)"
-
-#: printopt.src#TP_COMMONPRINTOPTIONS.CB_TRANSPARENCY.checkbox.text
-msgid "~Transparency"
-msgstr "سۈزۈكلۈك(~T)"
-
-#: printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.fixedtext.text
-msgid ""
-"Your document contains transparent objects.\n"
-"This may lead to longer printing time on certain\n"
-"printers. Should the aspect of transparency\n"
-"be reduced?"
-msgstr ""
-"پۈتۈكىڭىزدە سۈزۈك ئوبيېكت بار.\n"
-"بۇ نۇرغۇن پرىنتېرلارنىڭ ئۇزۇن ۋاقىتتا\n"
-"بېسىش ۋەزىپىسىنى تاماملىشىنى كەلتۈرۈپ چىقىرىدۇ.\n"
-"پرىنتېر بۇ سۈزۈك ئوبيېكتلارغا پەرۋا قىلمىسۇنمۇ؟"
-
-#: printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.okbutton.text
-msgid "~Yes"
-msgstr "ھەئە(~Y)"
-
-#: printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_NO.pushbutton.text
-msgid "~No"
-msgstr "ياق(~N)"
-
-#: printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_CANCEL.cancelbutton.text
-msgid "~Cancel"
-msgstr "ۋاز كەچ(~C)"
-
-#: printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.checkbox.text
-msgid "~Do not show warning again"
-msgstr "ئاگاھلاندۇرۇشنى قايتا كۆرسەتمە(~D)"
-
-#: printopt.src#RID_WARN_PRINTTRANSPARENCY.modaldialog.text
-msgid "Warning"
-msgstr "دىققەت"
-
-#: recfloat.src#SID_RECORDING_FLOATWINDOW.floatingwindow.text
-msgid "Record Macro"
-msgstr "ماكرو خاتىرىلە"
-
-#: recfloat.src#STR_MACRO_LOSS.string.text
-msgid ""
-"Do you really want to cancel the recording? Any steps recorded up to this "
-"point will be lost."
-msgstr ""
-"خاتىرىلەشتىن راستىنلا ۋاز كېچەمسىز؟ نۆۋەتتە خاتىرىلەنگەن ھەممە خاتىرە "
-"مەزمۇنى يوقىلىدۇ."
-
-#: recfloat.src#STR_CANCEL_RECORDING.string.text
-msgid "Cancel Recording"
-msgstr "خاتىرىلەشنى توختات"
-
-#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FL.fixedline.text
-msgid "File encryption password"
-msgstr "ھۆججەتنى شىفىرلاشتا ئىشلىتىدىغان ئىم"
-
-#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FT.fixedtext.text
-msgid "~Enter password to open"
-msgstr "ئېچىش ئۈچۈن ئىم كىرگۈز(~E)"
-
-#: securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_OPEN_FT.fixedtext.text
-msgid "~Reenter password to open"
-msgstr "ئىمنى قايتا كىرگۈزگەندە ئاچ(~R)"
-
-#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FL.fixedline.text
-msgid "File sharing password"
-msgstr "ھۆججەت ھەمبىرلەش ئىمى"
-
-#: securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FT.fixedtext.text
-msgid "Enter password to modify"
-msgstr "ئىم كىرگۈزگەندە ئۆزگەرت"
-
-#: securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_MODIFY_FT.fixedtext.text
-msgid "Reenter password to modify"
-msgstr "ئىمنى قايتا كىرگۈزگەندە ئۆزگەرت"
-
-#: securitypage.src#TP_DOCINFOSECURITY.OPTIONS_FL.fixedline.text
-msgid "File sharing options"
-msgstr "ھۆججەت ھەمبەھىر تاللانما"
-
-#: securitypage.src#TP_DOCINFOSECURITY.OPEN_READONLY_CB.checkbox.text
-msgid "~Open file read-only"
-msgstr "ھۆججەتنى ئوقۇشقىلا بولىدىغان ئاچ(~O)"
-
-#: securitypage.src#TP_DOCINFOSECURITY.RECORD_CHANGES_CB.checkbox.text
-msgid "Record ~changes"
-msgstr "ئۆزگەرتىشنى خاتىرىلە(~C)"
-
-#: securitypage.src#TP_DOCINFOSECURITY.STR_PROTECT.string.text
-msgid "~Protect..."
-msgstr "قوغدا(~P)…"
-
-#: securitypage.src#TP_DOCINFOSECURITY.STR_UNPROTECT.string.text
-msgid "~Unprotect..."
-msgstr "قوغدىما(~U)…"
-
-#: securitypage.src#TP_DOCINFOSECURITY.STR_END_REDLINING_WARNING.string.text
-msgid ""
-"This action will exit the change recording mode.\n"
-"Any information about changes will be lost.\n"
-"\n"
-"Exit change recording mode?\n"
-"\n"
-msgstr ""
-"بۇ مەشغۇلات خاتىرە ئۆزگەرتىش ھالىتىدىن چېكىنىدۇ.\n"
-"ئۆزگەرتكەن مەزمۇن يوقىلىدۇ.\n"
-"\n"
-"خاتىرە ئۆزگەرتىش ھالىتىدىن چېكىنەمسىز؟\n"
-"\n"
-
-#: securitypage.src#RID_SFX_PROTECT_RECORDS.string.text
-msgid "Protect Records"
-msgstr "خاتىرە قوغدا"
-
-#: securitypage.src#RID_SFX_UNPROTECT_RECORDS.string.text
-msgid "Unprotect Records"
-msgstr "قوغدالمىغان خاتىرە"
-
-#: securitypage.src#RID_SFX_INCORRECT_PASSWORD.string.text
-msgid "Incorrect password"
-msgstr "خاتا شىفىر"
-
-#: srchdlg.src#RID_DLG_SEARCH.FT_SEARCH.fixedtext.text
-msgid "~Search for"
-msgstr "مەزمۇن ئىزە(~S)"
-
-#: srchdlg.src#RID_DLG_SEARCH.CB_WHOLEWORDS.checkbox.text
-msgid "~Whole words only"
-msgstr "پۈتۈن سۆزگە ماسلاش(~W)"
-
-#: srchdlg.src#RID_DLG_SEARCH.CB_MATCHCASE.checkbox.text
-msgid "~Match case"
-msgstr "چوڭ كىچىك يېزىلىش پەرقلەندۈر(~M)"
-
-#: srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.checkbox.text
-msgctxt "srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.checkbox.text"
-msgid "Wrap ~around"
-msgstr "ئايلاندۇرۇپ قەۋەتلەش(~A)"
-
-#: srchdlg.src#RID_DLG_SEARCH.CB_BACKWARDS.checkbox.text
-msgid "~Backwards"
-msgstr "كەينىگە(~B)"
-
-#: srchdlg.src#RID_DLG_SEARCH.PB_FIND.pushbutton.text
-msgid "~Find"
-msgstr "ئىزدە(~F)"
-
-#: srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.cancelbutton.text
-msgctxt "srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.cancelbutton.text"
-msgid "~Close"
-msgstr "ياپ(~C)"
-
-#: srchdlg.src#RID_DLG_SEARCH.STR_TOGGLE.string.text
-msgctxt "srchdlg.src#RID_DLG_SEARCH.STR_TOGGLE.string.text"
-msgid "Wrap ~around"
-msgstr "ئايلاندۇرۇپ قەۋەتلەش(~A)"
-
-#: srchdlg.src#RID_DLG_SEARCH.modelessdialog.text
-msgid "Find on this Page"
-msgstr "مۇشۇ بەتتىن ئىزدە"
-
-#: taskpane.src#STR_SFX_DOCK.string.text
-msgid "Dock"
-msgstr "مۇقىملاشتۇر"
-
-#: taskpane.src#STR_SFX_UNDOCK.string.text
-msgid "Undock"
-msgstr "بوشات"
-
-#: taskpane.src#STR_SFX_TASK_PANE_VIEW.string.text
-msgid "View"
+#: source/appl/app.src#GID_VIEW.String.Text
+msgid  "View"
 msgstr "كۆرۈنۈش"
 
-#: taskpane.src#STR_SFX_TASKS.string.text
-msgid "Tasks"
-msgstr "ۋەزىپە"
+#: source/appl/app.src#GID_DOCUMENT.String.Text
+msgid  "Documents"
+msgstr "پۈتۈكلەر"
 
-#: templdlg.src#RID_STYLECATALOG.BT_ORG.pushbutton.text
-msgid "~Organizer..."
-msgstr "باشقۇر(~O)…"
+#: source/appl/app.src#GID_EDIT.String.Text
+msgid  "Edit"
+msgstr "تەھرىر"
 
-#: templdlg.src#RID_STYLECATALOG.BT_DEL.pushbutton.text
-msgid "~Delete..."
-msgstr "ئۆچۈر(~D)…"
+#: source/appl/app.src#GID_MACRO.String.Text
+msgid  "BASIC"
+msgstr "BASIC"
 
-#: templdlg.src#RID_STYLECATALOG.BT_EDIT.pushbutton.text
-msgid "~Modify..."
-msgstr "ئۆزگەرت(~M)…"
+#: source/appl/app.src#GID_OPTIONS.String.Text
+msgid  "Options"
+msgstr "تاللانما"
 
-#: templdlg.src#RID_STYLECATALOG.BT_NEW.pushbutton.text
-msgid "~New..."
-msgstr "يېڭى(~N)…"
+#: source/appl/app.src#GID_MATH.String.Text
+msgid  "Math"
+msgstr "ماتېماتىكا"
 
-#: templdlg.src#RID_STYLECATALOG.modaldialog.text
-msgid "Style Catalog"
+#: source/appl/app.src#GID_NAVIGATOR.String.Text
+msgid  "Navigate"
+msgstr "يول باشلا"
+
+#: source/appl/app.src#GID_INSERT.String.Text
+msgid  "Insert"
+msgstr "قىستۇر"
+
+#: source/appl/app.src#GID_FORMAT.String.Text
+msgid  "Format"
+msgstr "فورمات"
+
+#: source/appl/app.src#GID_TEMPLATE.String.Text
+msgid  "Templates"
+msgstr "قېلىپلار"
+
+#: source/appl/app.src#GID_TEXT.String.Text
+msgid  "Text"
+msgstr "تېكىست"
+
+#: source/appl/app.src#GID_FRAME.String.Text
+msgid  "Frame"
+msgstr "كاندۇك"
+
+#: source/appl/app.src#GID_GRAPHIC.String.Text
+msgid  "Graphic"
+msgstr "گرافىك"
+
+#: source/appl/app.src#GID_TABLE.String.Text
+msgid  "Table"
+msgstr "جەدۋەل"
+
+#: source/appl/app.src#GID_ENUMERATION.String.Text
+msgid  "Numbering"
+msgstr "نومۇر بېكىتىش"
+
+#: source/appl/app.src#GID_DATA.String.Text
+msgid  "Data"
+msgstr "سانلىق مەلۇمات"
+
+#: source/appl/app.src#GID_SPECIAL.String.Text
+msgid  "Special Functions"
+msgstr "ئالاھىدە ئىقتىدار"
+
+#: source/appl/app.src#GID_IMAGE.String.Text
+msgid  "Image"
+msgstr "سۈرەت"
+
+#: source/appl/app.src#GID_CHART.String.Text
+msgid  "Chart"
+msgstr "دىئاگرامما"
+
+#: source/appl/app.src#GID_EXPLORER.String.Text
+msgid  "Explorer"
+msgstr "مەنبە باشقۇرغۇچ"
+
+#: source/appl/app.src#GID_CONNECTOR.String.Text
+msgid  "Connector"
+msgstr "ئۇلىغۇچ"
+
+#: source/appl/app.src#GID_MODIFY.String.Text
+msgid  "Modify"
+msgstr "ئۆزگەرت"
+
+#: source/appl/app.src#GID_DRAWING.String.Text
+msgid  "Drawing"
+msgstr "سىزمىچىلىق"
+
+#: source/appl/app.src#GID_CONTROLS.String.Text
+msgid  "Controls"
+msgstr "كونتروللار"
+
+#: source/appl/app.src#MSG_CANT_QUIT.InfoBox.Message
+msgid  "The application cannot be terminated at the moment.\nPlease wait until all print jobs and/or\nOLE actions have finished and close all dialogs."
+msgstr ""
+
+#: source/appl/app.src#STR_ISMODIFIED.String.Text
+msgid  "Do you want to save the changes to %1?"
+msgstr "ئۆزگەرتىشنى %1 غا ساقلامسىز؟"
+
+#: source/appl/app.src#STR_QUITAPP.String.Text
+msgid  "E~xit"
+msgstr "چېكىن(~X)"
+
+#: source/appl/app.src#RID_STR_HELP.String.Text
+msgid  "Help"
+msgstr "ياردەم"
+
+#: source/appl/app.src#RID_STR_NOAUTOSTARTHELPAGENT.String.Text
+msgid  "No automatic start at 'XX'"
+msgstr "'XX' ئۆزلۈكىدىن قوزغالمايدۇ"
+
+#: source/appl/app.src#RID_HELPBAR.String.Text
+msgid  "Help Bar"
+msgstr "ياردەم بالداق"
+
+#: source/appl/app.src#RID_STR_HLPFILENOTEXIST.String.Text
+msgid  "The help file for this topic is not installed."
+msgstr "بۇ باش تېمىغا مۇناسىۋەتلىك ياردەم ھۆججىتى قاچىلانمىغان."
+
+#: source/appl/app.src#RID_ENVTOOLBOX.String.Text
+msgid  "Function Bar"
+msgstr "ئىقتىدار بالداق"
+
+#: source/appl/app.src#RID_SPECIALCONFIG_ERROR.String.Text
+msgid  "An error has occurred in the special configuration.\nPlease contact your administrator."
+msgstr ""
+
+#: source/appl/app.src#STR_QUICKSTART_EXIT.String.Text
+msgid  "Exit Quickstarter"
+msgstr "تېز قوزغاتقۇچتىن چېكىن"
+
+#: source/appl/app.src#STR_QUICKSTART_TIP.String.Text
+msgid  "%PRODUCTNAME %PRODUCTVERSION Quickstarter"
+msgstr "%PRODUCTNAME %PRODUCTVERSION تېز قوزغات"
+
+#: source/appl/app.src#STR_QUICKSTART_FILEOPEN.String.Text
+msgid  "Open Document..."
+msgstr "پۈتۈك ئاچ…"
+
+#: source/appl/app.src#STR_QUICKSTART_FROMTEMPLATE.String.Text
+msgid  "From Template..."
+msgstr "قېلىپتىن…"
+
+#: source/appl/app.src#STR_QUICKSTART_PRELAUNCH.String.Text
+msgid  "Load %PRODUCTNAME During System Start-Up"
+msgstr "سىستېما قوزغالغاندا %PRODUCTNAME نى يۈكلە"
+
+#: source/appl/app.src#STR_QUICKSTART_PRELAUNCH_UNX.String.Text
+msgid  "Disable Quickstarter"
+msgstr ""
+
+#: source/appl/app.src#STR_QUICKSTART_LNKNAME.String.Text
+msgid  "%PRODUCTNAME %PRODUCTVERSION"
+msgstr "%PRODUCTNAME %PRODUCTVERSION"
+
+#: source/appl/app.src#STR_QUICKSTART_FILE.String.Text
+msgid  "File"
+msgstr "ھۆججەت"
+
+#: source/appl/app.src#STR_QUICKSTART_STARTCENTER.String.Text
+msgid  "Startcenter"
+msgstr "قوزغىتىش مەركىزى"
+
+#: source/appl/app.src#STR_QUICKSTART_RECENTDOC.String.Text
+msgid  "Recent Documents"
+msgstr "يېقىنقى پۈتۈكلەر"
+
+#: source/appl/app.src#STR_QUERY_UPDATE_LINKS.String.Text
+msgid  "Update all links?"
+msgstr "ھەممە ئۇلانمىنى يېڭىلامسىز؟"
+
+#: source/appl/app.src#STR_DDE_ERROR.String.Text
+msgid  "DDE link to % for % area % are not available."
+msgstr "% كۆرسەتكەن % ئۇلىنىشىغا ئېرىشەلمىدى،  دائىرىسى %"
+
+#: source/appl/app.src#RID_SECURITY_WARNING_HYPERLINK.WarningBox.Message
+msgid  "This hyperlink is going to open "%s". Do you want to proceed?"
+msgstr ""
+
+#: source/appl/app.src#RID_SECURITY_WARNING_NO_HYPERLINKS.WarningBox.Message
+msgid  "For security reasons, the hyperlink cannot be executed.\nThe stated address will not be opened."
+msgstr ""
+
+#: source/appl/app.src#RID_SECURITY_WARNING_TITLE.String.Text
+msgid  "Security Warning"
+msgstr "بىخەتەرلىك ئاگاھلاندۇرۇش"
+
+#: source/appl/app.src#RID_XMLSEC_QUERY_LOSINGSIGNATURE.QueryBox.Message
+msgid  "Saving will remove all existing signatures.\nDo you want to continue saving the document?"
+msgstr ""
+
+#: source/appl/app.src#RID_XMLSEC_QUERY_SAVEBEFORESIGN.QueryBox.Message
+msgid  "The document has to be saved before it can be signed.\nDo you want to save the document?"
+msgstr ""
+
+#: source/appl/app.src#RID_XMLSEC_INFO_WRONGDOCFORMAT.InfoBox.Message
+msgid  "This document must be saved in OpenDocument file format before it can be digitally signed."
+msgstr ""
+
+#: source/appl/app.src#RID_XMLSEC_DOCUMENTSIGNED.String.Text
+msgid  " (Signed)"
+msgstr " (ئىمزالانغان)"
+
+#: source/appl/app.src#STR_STANDARD.String.Text
+msgid  "Standard"
+msgstr "ئۆلچەملىك"
+
+#: source/appl/app.src#RID_SVXSTR_FILELINK.String.Text
+msgid  "Document"
+msgstr "پۈتۈك"
+
+#: source/appl/app.src#STR_NONE.String.Text
+msgid  "- None -"
+msgstr "- يوق -"
+
+#: source/appl/app.src#RID_SVXSTR_GRAFIKLINK.String.Text
+msgid  "Graphic"
+msgstr "گرافىك"
+
+#: source/appl/app.src#STR_SFX_FILTERNAME_ALL.String.Text
+msgid  "All files (*.*)"
+msgstr "ھەممە ھۆججەت (*.*)"
+
+#: source/appl/app.src#RID_SVXSTR_EDITGRFLINK.String.Text
+msgid  "Link graphics"
+msgstr "گرافىكقا ئۇلا"
+
+#: source/appl/app.src#STR_ERRUNOEVENTBINDUNG.String.Text
+msgid  "An appropriate component method %1\ncould not be found.\n\nCheck spelling of method name."
+msgstr ""
+
+#: source/appl/app.src#RID_SVXSTR_GRFILTER_OPENERROR.String.Text
+msgid  "Graphics file cannot be opened"
+msgstr "گرافىك ھۆججىتىنى ئاچالمىدى"
+
+#: source/appl/app.src#RID_SVXSTR_GRFILTER_IOERROR.String.Text
+msgid  "Graphics file cannot be read"
+msgstr "گرافىك ھۆججىتىنى ئوقۇيالمىدى"
+
+#: source/appl/app.src#RID_SVXSTR_GRFILTER_FORMATERROR.String.Text
+msgid  "Unknown graphics format"
+msgstr "نامەلۇم گرافىك فورماتى"
+
+#: source/appl/app.src#RID_SVXSTR_GRFILTER_VERSIONERROR.String.Text
+msgid  "This version of the graphics file is not supported"
+msgstr "بۇ نەشرىدىكى گرافىك ھۆججىتىنى قوللىمايدۇ"
+
+#: source/appl/app.src#RID_SVXSTR_GRFILTER_FILTERERROR.String.Text
+msgid  "Graphics filter not found"
+msgstr "گرافىك سۈزگۈچ تېپىلمىدى"
+
+#: source/appl/app.src#RID_SVXSTR_GRFILTER_TOOBIG.String.Text
+msgid  "Not enough memory to insert graphic"
+msgstr "گرافىك قىستۇرۇشقا يېتەرلىك ئەسلەك يوق."
+
+#: source/appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_CONTENTS.PageItem.Text
+msgid  "Contents"
+msgstr "مەزمۇنلار"
+
+#: source/appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_INDEX.PageItem.Text
+msgid  "Index"
+msgstr "ئىندېكس"
+
+#: source/appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_SEARCH.PageItem.Text
+msgid  "Find"
+msgstr "ئىزدە"
+
+#: source/appl/newhelp.src#WIN_HELPINDEX.TC_INDEX.HELP_INDEX_PAGE_BOOKMARKS.PageItem.Text
+msgid  "Bookmarks"
+msgstr "خەتكۈچ"
+
+#: source/appl/newhelp.src#TP_HELP_INDEX.FT_EXPRESSION.FixedText.Text
+msgid  "~Search term"
+msgstr "ئىزدەش تۈرى(~S)"
+
+#: source/appl/newhelp.src#TP_HELP_INDEX.PB_OPEN_INDEX.PushButton.Text
+msgid  "~Display"
+msgstr "كۆرسەت(~D)"
+
+#: source/appl/newhelp.src#TP_HELP_SEARCH.FT_SEARCH.FixedText.Text
+msgid  "S~earch term"
+msgstr "ئىزدەش تۈرى(~E)"
+
+#: source/appl/newhelp.src#TP_HELP_SEARCH.PB_SEARCH.PushButton.Text
+msgid  "~Find"
+msgstr "ئىزدە(~F)"
+
+#: source/appl/newhelp.src#TP_HELP_SEARCH.CB_FULLWORDS.CheckBox.Text
+msgid  "~Complete words only"
+msgstr "سۆزگىلا يول قوي(~C)"
+
+#: source/appl/newhelp.src#TP_HELP_SEARCH.CB_SCOPE.CheckBox.Text
+msgid  "Find in ~headings only"
+msgstr "ماۋزۇ دائىرىسىدىلا ئىزدە(~H)"
+
+#: source/appl/newhelp.src#TP_HELP_SEARCH.PB_OPEN_SEARCH.PushButton.Text
+msgid  "~Display"
+msgstr "كۆرسەت(~D)"
+
+#: source/appl/newhelp.src#TP_HELP_BOOKMARKS.FT_BOOKMARKS.FixedText.Text
+msgid  "~Bookmarks"
+msgstr "خەتكۈچلەر(~B)"
+
+#: source/appl/newhelp.src#TP_HELP_BOOKMARKS.PB_BOOKMARKS.PushButton.Text
+msgid  "~Display"
+msgstr "كۆرسەت(~D)"
+
+#: source/appl/newhelp.src#STR_HELP_WINDOW_TITLE.String.Text
+msgid  "%PRODUCTNAME Help"
+msgstr "%PRODUCTNAME ياردەم"
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_INDEX_ON.String.Text
+msgid  "Show Navigation Pane"
+msgstr "يولباشچى كۆزنىكىنى كۆرسەت"
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_INDEX_OFF.String.Text
+msgid  "Hide Navigation Pane"
+msgstr "يولباشچى كۆزنىكىنى يوشۇر"
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_START.String.Text
+msgid  "First Page"
+msgstr "بىرىنچى بەت"
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_PREV.String.Text
+msgid  "Previous Page"
+msgstr "ئالدىنقى بەت"
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_NEXT.String.Text
+msgid  "Next Page"
+msgstr "كېيىنكى بەت"
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_PRINT.String.Text
+msgid  "Print..."
+msgstr "باس…"
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_ADDBOOKMARK.String.Text
+msgid  "Add to Bookmarks..."
+msgstr "خەتكۈچكە قوش…"
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_SEARCHDIALOG.String.Text
+msgid  "Find on this Page..."
+msgstr "مۇشۇ بەتتىن ئىزدە…"
+
+#: source/appl/newhelp.src#STR_HELP_BUTTON_SOURCEVIEW.String.Text
+msgid  "HTML Source"
+msgstr "HTML ئەسلى كودى"
+
+#: source/appl/newhelp.src#STR_HELP_FIRST_MESSAGE.String.Text
+msgid  "The Help is being started..."
+msgstr "ياردەمنى قوزغىتىۋاتىدۇ…"
+
+#: source/appl/newhelp.src#STR_HELP_MENU_TEXT_SELECTION_MODE.String.Text
+msgid  "Select Text"
+msgstr "تېكست تاللا"
+
+#: source/appl/newhelp.src#STR_HELP_MENU_TEXT_COPY.String.Text
+msgid  "~Copy"
+msgstr "كۆچۈر(~C)"
+
+#: source/appl/newhelp.src#DLG_HELP_ADDBOOKMARK.ModalDialog.Text
+msgid  "Add to Bookmarks"
+msgstr "خەتكۈچكە قوش"
+
+#: source/appl/newhelp.src#DLG_HELP_ADDBOOKMARK.FT_BOOKMARK_TITLE.FixedText.Text
+msgid  "Bookmark:"
+msgstr "خەتكۈچ:"
+
+#: source/appl/newhelp.src#DLG_HELP_ADDBOOKMARK.STR_BOOKMARK_RENAME.String.Text
+msgid  "Rename Bookmark"
+msgstr "خەتكۈش ئاتى ئۆزگەرت"
+
+#: source/appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_OPEN.MenuItem.Text
+msgid  "Display"
+msgstr "كۆرسەت"
+
+#: source/appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_RENAME.MenuItem.Text
+msgid  "Rename..."
+msgstr "ئات ئۆزگەرت…"
+
+#: source/appl/newhelp.src#MENU_HELP_BOOKMARKS.MID_DELETE.MenuItem.Text
+msgid  "Delete"
+msgstr "ئۆچۈر"
+
+#: source/appl/newhelp.src#RID_INFO_NOSEARCHRESULTS.InfoBox.Message
+msgid  "No topics found."
+msgstr "باش تېما تاپالمىدى."
+
+#: source/appl/newhelp.src#RID_INFO_NOSEARCHTEXTFOUND.InfoBox.Message
+msgid  "The text you entered was not found."
+msgstr "كىرگۈزگەن تېكستىڭىزنى تاپالمىدى."
+
+#: source/appl/newhelp.src#RID_HELP_ONSTARTUP_TEXT.String.Text
+msgid  "~Display %PRODUCTNAME %MODULENAME Help at Startup"
+msgstr "قوزغالغاندا %PRODUCTNAME %MODULENAME ياردەمنى كۆرسەت(~D)"
+
+#: source/bastyp/fltfnc.src#STR_FILTER_NOT_INSTALLED.String.Text
+msgid  "The selected filter $(FILTER) has not been installed.\nWould you like to do this now?"
+msgstr ""
+
+#: source/bastyp/fltfnc.src#STR_FILTER_CONSULT_SERVICE.String.Text
+msgid  "The selected filter $(FILTER) is not included in your edition.\nYou can find information about orders on our homepage."
+msgstr ""
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_REDUCE.FixedLine.Text
+msgid  "Reduce print data"
+msgstr "بېسىش سانلىق مەلۇماتىنى ئازايت"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.FT_OUTPUTTYPE.FixedText.Text
+msgid  "Settings for"
+msgstr "تەڭشەك"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTEROUTPUT.RadioButton.Text
+msgid  "~Printer"
+msgstr "پرىنتېر(~P)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_PRINTFILEOUTPUT.RadioButton.Text
+msgid  "Print to ~file"
+msgstr "ھۆججەتكە باس(~F)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCETRANSPARENCY.CheckBox.Text
+msgid  "~Reduce transparency"
+msgstr "سۈزۈكلۈكنى ئازايت(~R)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_AUTO.RadioButton.Text
+msgid  "Auto~matically"
+msgstr "ئاپتوماتىك(~M)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCETRANSPARENCY_NONE.RadioButton.Text
+msgid  "~No transparency"
+msgstr "تۇتۇق(~N)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEGRADIENTS.CheckBox.Text
+msgid  "Reduce ~gradients"
+msgstr "تەدرىجىي ئۆزگىرىشنى ئازايت(~G)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_STRIPES.RadioButton.Text
+msgid  "Gradient ~stripes"
+msgstr "تەدرىجىي ئۆزگىرىش سىزىقلىرى(~S)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEGRADIENTS_COLOR.RadioButton.Text
+msgid  "Intermediate ~color"
+msgstr "ئوتتۇرا رەڭ(~C)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS.CheckBox.Text
+msgid  "Reduce ~bitmaps"
+msgstr "بىتلىق تەسۋىر ئازايت(~B)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_OPTIMAL.RadioButton.Text
+msgid  "~High print quality"
+msgstr "يۇقىرى بېسىش سۈپىتى(~H)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_NORMAL.RadioButton.Text
+msgid  "N~ormal print quality"
+msgstr "ئادەتتىكى بېسىش سۈپىتى(~O)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.RB_REDUCEBITMAPS_RESOLUTION.RadioButton.Text
+msgid  "Reso~lution"
+msgstr "پەرق ئېتىش نىسبىتى(~L)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "600 DPI"
+msgstr "600 DPI"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_REDUCEBITMAPS_TRANSPARENCY.CheckBox.Text
+msgid  "Include transparent ob~jects"
+msgstr "سۈزۈك ئوبيېكتنى ئۆز ئىچىگە ئالىدۇ(~J)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_CONVERTTOGREYSCALES.CheckBox.Text
+msgid  "Con~vert colors to grayscale"
+msgstr "رەڭلىكنى كۈلرەڭگە ئايلاندۇر(~V)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.GB_PRINT_WARN.FixedLine.Text
+msgid  "Printer warnings"
+msgstr "پرىنتېر ئاگاھلاندۇرۇشى"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERSIZE.CheckBox.Text
+msgid  "P~aper size"
+msgstr "قەغەز چوڭلۇقى(~A)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_PAPERORIENTATION.CheckBox.Text
+msgid  "Pap~er orientation"
+msgstr "قەغەز قىستۇرۇش يۆنىلىشى(~E)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.CB_TRANSPARENCY.CheckBox.Text
+msgid  "~Transparency"
+msgstr "سۈزۈكلۈك(~T)"
+
+#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.ModalDialog.Text
+msgid  "Warning"
+msgstr "دىققەت"
+
+#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.FT_PRINTTRANSWARN.FixedText.Text
+msgid  "Your document contains transparent objects.\nThis may lead to longer printing time on certain\nprinters. Should the aspect of transparency\nbe reduced?"
+msgstr ""
+
+#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_YES.OKButton.Text
+msgid  "~Yes"
+msgstr "ھەئە(~Y)"
+
+#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_NO.PushButton.Text
+msgid  "~No"
+msgstr "ياق(~N)"
+
+#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.BTN_PRINTTRANS_CANCEL.CancelButton.Text
+msgid  "~Cancel"
+msgstr "ۋاز كەچ(~C)"
+
+#: source/dialog/printopt.src#RID_WARN_PRINTTRANSPARENCY.CBX_NOPRINTTRANSWARN.CheckBox.Text
+msgid  "~Do not show warning again"
+msgstr "ئاگاھلاندۇرۇشنى قايتا كۆرسەتمە(~D)"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "72 DPI"
+msgstr "72 DPI"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "96 DPI"
+msgstr "96 DPI"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "150 DPI (Fax)"
+msgstr "(فاكس)150 DPI"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "200 DPI (default)"
+msgstr "(كۆڭۈلدىكى)200 DPI"
+
+#: source/dialog/printopt.src#TP_COMMONPRINTOPTIONS.LB_REDUCEBITMAPS_RESOLUTION.0.StringList.item
+msgid  "300 DPI"
+msgstr "300 DPI"
+
+#: source/dialog/templdlg.src#RID_STYLECATALOG.ModalDialog.Text
+msgid  "Style Catalog"
 msgstr "ئۇسلۇب كاتالوگى"
 
-#: templdlg.src#STR_STYLE_ELEMTLIST.string.text
-msgid "Style List"
+#: source/dialog/templdlg.src#RID_STYLECATALOG.BT_ORG.PushButton.Text
+msgid  "~Organizer..."
+msgstr "باشقۇر(~O)…"
+
+#: source/dialog/templdlg.src#RID_STYLECATALOG.BT_DEL.PushButton.Text
+msgid  "~Delete..."
+msgstr "ئۆچۈر(~D)…"
+
+#: source/dialog/templdlg.src#RID_STYLECATALOG.BT_EDIT.PushButton.Text
+msgid  "~Modify..."
+msgstr "ئۆزگەرت(~M)…"
+
+#: source/dialog/templdlg.src#RID_STYLECATALOG.BT_NEW.PushButton.Text
+msgid  "~New..."
+msgstr "يېڭى(~N)…"
+
+#: source/dialog/templdlg.src#STR_STYLE_ELEMTLIST.String.Text
+msgid  "Style List"
 msgstr "ئۇسلۇپ تىزىمى"
 
-#: templdlg.src#STR_STYLE_FILTER_HIERARCHICAL.string.text
-msgid "Hierarchical"
+#: source/dialog/templdlg.src#STR_STYLE_FILTER_HIERARCHICAL.String.Text
+msgid  "Hierarchical"
 msgstr "دەرىجىگە ئايرىلغان"
 
-#: templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_WATERCAN.toolboxitem.text
-msgid "Fill Format Mode"
-msgstr "فورمات تولدۇرۇش ھالىتى"
-
-#: templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_NEW_BY_EXAMPLE.toolboxitem.text
-msgid "New Style from Selection"
-msgstr "تاللانغان يېڭى ئۇسلۇب"
-
-#: templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_UPDATE_BY_EXAMPLE.toolboxitem.text
-msgid "Update Style"
-msgstr "ئۇسلۇب يېڭىلا"
-
-#: templdlg.src#DLG_STYLE_DESIGNER.dockingwindow.text
-msgid "Styles and Formatting"
+#: source/dialog/templdlg.src#DLG_STYLE_DESIGNER.DockingWindow.Text
+msgid  "Styles and Formatting"
 msgstr "ئۇسلۇب ۋە فورمات"
 
-#: versdlg.src#DLG_VERSIONS.GB_NEWVERSIONS.fixedline.text
-msgid "New versions"
+#: source/dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_WATERCAN.ToolBoxItem.Text
+msgid  "Fill Format Mode"
+msgstr "فورمات تولدۇرۇش ھالىتى"
+
+#: source/dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_NEW_BY_EXAMPLE.ToolBoxItem.Text
+msgid  "New Style from Selection"
+msgstr "تاللانغان يېڭى ئۇسلۇب"
+
+#: source/dialog/templdlg.src#DLG_STYLE_DESIGNER.TB_ACTION.SID_STYLE_UPDATE_BY_EXAMPLE.ToolBoxItem.Text
+msgid  "Update Style"
+msgstr "ئۇسلۇب يېڭىلا"
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FL.FixedLine.Text
+msgid  "File encryption password"
+msgstr "ھۆججەتنى شىفىرلاشتا ئىشلىتىدىغان ئىم"
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_OPEN_FT.FixedText.Text
+msgid  "~Enter password to open"
+msgstr "ئېچىش ئۈچۈن ئىم كىرگۈز(~E)"
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_OPEN_FT.FixedText.Text
+msgid  "~Reenter password to open"
+msgstr "ئىمنى قايتا كىرگۈزگەندە ئاچ(~R)"
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FL.FixedLine.Text
+msgid  "File sharing password"
+msgstr "ھۆججەت ھەمبىرلەش ئىمى"
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.PASSWORD_TO_MODIFY_FT.FixedText.Text
+msgid  "Enter password to modify"
+msgstr "ئىم كىرگۈزگەندە ئۆزگەرت"
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.CONFIRM_PASSWORD_TO_MODIFY_FT.FixedText.Text
+msgid  "Reenter password to modify"
+msgstr "ئىمنى قايتا كىرگۈزگەندە ئۆزگەرت"
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.OPTIONS_FL.FixedLine.Text
+msgid  "File sharing options"
+msgstr "ھۆججەت ھەمبەھىر تاللانما"
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.OPEN_READONLY_CB.CheckBox.Text
+msgid  "~Open file read-only"
+msgstr "ھۆججەتنى ئوقۇشقىلا بولىدىغان ئاچ(~O)"
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.RECORD_CHANGES_CB.CheckBox.Text
+msgid  "Record ~changes"
+msgstr "ئۆزگەرتىشنى خاتىرىلە(~C)"
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.STR_PROTECT.String.Text
+msgid  "~Protect..."
+msgstr "قوغدا(~P)…"
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.STR_UNPROTECT.String.Text
+msgid  "~Unprotect..."
+msgstr "قوغدىما(~U)…"
+
+#: source/dialog/securitypage.src#TP_DOCINFOSECURITY.STR_END_REDLINING_WARNING.String.Text
+msgid  "This action will exit the change recording mode.\nAny information about changes will be lost.\n\nExit change recording mode?\n\n"
+msgstr ""
+
+#: source/dialog/securitypage.src#RID_SFX_PROTECT_RECORDS.String.Text
+msgid  "Protect Records"
+msgstr "خاتىرە قوغدا"
+
+#: source/dialog/securitypage.src#RID_SFX_UNPROTECT_RECORDS.String.Text
+msgid  "Unprotect Records"
+msgstr "قوغدالمىغان خاتىرە"
+
+#: source/dialog/securitypage.src#RID_SFX_INCORRECT_PASSWORD.String.Text
+msgid  "Incorrect password"
+msgstr "خاتا شىفىر"
+
+#: source/dialog/versdlg.src#DLG_VERSIONS.GB_NEWVERSIONS.FixedLine.Text
+msgid  "New versions"
 msgstr "يېڭى نەشرى"
 
-#: versdlg.src#DLG_VERSIONS.PB_SAVE.pushbutton.text
-msgid "Save ~New Version"
+#: source/dialog/versdlg.src#DLG_VERSIONS.PB_SAVE.PushButton.Text
+msgid  "Save ~New Version"
 msgstr "يېڭى نەشرىدە ساقلا(~N)"
 
-#: versdlg.src#DLG_VERSIONS.CB_SAVEONCLOSE.checkbox.text
-msgid "~Always save a version on closing"
+#: source/dialog/versdlg.src#DLG_VERSIONS.CB_SAVEONCLOSE.CheckBox.Text
+msgid  "~Always save a version on closing"
 msgstr "ياپقاندا ئىزچىل نەشر ئۇچۇرىنى ساقلا(~A)"
 
-#: versdlg.src#DLG_VERSIONS.GB_OLDVERSIONS.fixedline.text
-msgid "Existing versions"
+#: source/dialog/versdlg.src#DLG_VERSIONS.GB_OLDVERSIONS.FixedLine.Text
+msgid  "Existing versions"
 msgstr "ھازىرقى نەشرى"
 
-#: versdlg.src#DLG_VERSIONS.FT_DATETIME.fixedtext.text
-msgid "Date and time"
+#: source/dialog/versdlg.src#DLG_VERSIONS.FT_DATETIME.FixedText.Text
+msgid  "Date and time"
 msgstr "چېسلا ۋە ۋاقىت"
 
-#: versdlg.src#DLG_VERSIONS.FT_SAVEDBY.fixedtext.text
-msgid "Saved by"
+#: source/dialog/versdlg.src#DLG_VERSIONS.FT_SAVEDBY.FixedText.Text
+msgid  "Saved by"
 msgstr "ساقلىغۇچى"
 
-#: versdlg.src#DLG_VERSIONS.FT_COMMENTS.fixedtext.text
-msgid "Comments"
+#: source/dialog/versdlg.src#DLG_VERSIONS.FT_COMMENTS.FixedText.Text
+msgid  "Comments"
 msgstr "ئىزاھاتلار"
 
-#: versdlg.src#DLG_VERSIONS.PB_CLOSE.cancelbutton.text
-msgid "Close"
+#: source/dialog/versdlg.src#DLG_VERSIONS.PB_CLOSE.CancelButton.Text
+msgid  "Close"
 msgstr "ياپ"
 
-#: versdlg.src#DLG_VERSIONS.PB_OPEN.pushbutton.text
-msgid "Open"
+#: source/dialog/versdlg.src#DLG_VERSIONS.PB_OPEN.PushButton.Text
+msgid  "Open"
 msgstr "ئاچ"
 
-#: versdlg.src#DLG_VERSIONS.PB_VIEW.pushbutton.text
-msgid "~Show..."
+#: source/dialog/versdlg.src#DLG_VERSIONS.PB_VIEW.PushButton.Text
+msgid  "~Show..."
 msgstr "كۆرسەت(~S)…"
 
-#: versdlg.src#DLG_VERSIONS.PB_DELETE.pushbutton.text
-msgid "~Delete"
+#: source/dialog/versdlg.src#DLG_VERSIONS.PB_DELETE.PushButton.Text
+msgid  "~Delete"
 msgstr "ئۆچۈر(~D)"
 
-#: versdlg.src#DLG_VERSIONS.PB_COMPARE.pushbutton.text
-msgid "Compare"
+#: source/dialog/versdlg.src#DLG_VERSIONS.PB_COMPARE.PushButton.Text
+msgid  "Compare"
 msgstr "سېلىشتۇر"
 
-#: versdlg.src#DLG_VERSIONS.modaldialog.text
-msgid "Versions of"
+#: source/dialog/versdlg.src#DLG_VERSIONS.HelpButton.Text
+msgid  "Versions of"
 msgstr "نەشرى"
 
-#: versdlg.src#DLG_COMMENTS.FT_DATETIME.fixedtext.text
-msgid "Date and time : "
+#: source/dialog/versdlg.src#DLG_COMMENTS.FT_DATETIME.FixedText.Text
+msgid  "Date and time : "
 msgstr "چېسلا ۋە ۋاقىت: "
 
-#: versdlg.src#DLG_COMMENTS.FT_SAVEDBY.fixedtext.text
-msgid "Saved by "
+#: source/dialog/versdlg.src#DLG_COMMENTS.FT_SAVEDBY.FixedText.Text
+msgid  "Saved by "
 msgstr "ساقلىغۇچى "
 
-#: versdlg.src#DLG_COMMENTS.PB_CLOSE.pushbutton.text
-msgctxt "versdlg.src#DLG_COMMENTS.PB_CLOSE.pushbutton.text"
-msgid "~Close"
+#: source/dialog/versdlg.src#DLG_COMMENTS.PB_CLOSE.PushButton.Text
+msgid  "~Close"
 msgstr "ياپ(~C)"
 
-#: versdlg.src#DLG_COMMENTS.modaldialog.text
-msgid "Insert Version Comment"
+#: source/dialog/versdlg.src#DLG_COMMENTS.HelpButton.Text
+msgid  "Insert Version Comment"
 msgstr "نەشر ئىزاھاتى قىستۇر"
 
-#: versdlg.src#DLG_COMMENTS.string.text
-msgid "Version comment"
+#: source/dialog/versdlg.src#DLG_COMMENTS.String.Text
+msgid  "Version comment"
 msgstr "نەشر ئىزاھاتى"
 
-#~ msgid "Confirm password"
-#~ msgstr "ئىم جەزملە"
+#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NAME.FixedText.Text
+msgid  "~Name"
+msgstr "ئاتى(~N):"
 
-#~ msgid "Confirm password"
-#~ msgstr "ئىم جەزملە"
+#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.CB_AUTO.CheckBox.Text
+msgid  "~AutoUpdate"
+msgstr "ئۆزلۈكدىدىن يېڭىلا(~A)"
+
+#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_NEXT.FixedText.Text
+msgid  "Ne~xt Style"
+msgstr "كېيىنكى ئۇسلۇب(~X)"
+
+#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_BASE.FixedText.Text
+msgid  "Linked with"
+msgstr "ئۇلىنىدىغان جاي"
+
+#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.FT_REGION.FixedText.Text
+msgid  "~Category"
+msgstr "كاتېگورىيە(~C)"
+
+#: source/dialog/mgetempl.src#TP_MANAGE_STYLES.GB_DESC.FixedLine.Text
+msgid  "Contains"
+msgstr "ئىچىدە"
+
+#: source/dialog/filedlghelper.src#STR_SFX_FILEDLG_ACTUALVERSION.String.Text
+msgid  "Current version"
+msgstr "نۆۋەتتىكى نەشرى"
+
+#: source/dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_EXPORT.String.Text
+msgid  "Export"
+msgstr "چىقار"
+
+#: source/dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_INSERT.String.Text
+msgid  "Insert"
+msgstr "قىستۇر"
+
+#: source/dialog/filedlghelper.src#STR_SFX_EXPLORERFILE_BUTTONINSERT.String.Text
+msgid  "~Insert"
+msgstr "قىستۇر(~I)"
+
+#: source/dialog/filedlghelper.src#STR_SFX_IMPORT_ALL.String.Text
+msgid  "<All formats>"
+msgstr "<ھەممە فورمات>"
+
+#: source/dialog/filedlghelper.src#STR_CB_AUTO_EXTENSION.String.Text
+msgid  "~Automatic file name extension"
+msgstr "ھۆججەت كېڭەيتىلگەن ئاتىنى ئۆزلۈكىدىن قوش(~A)"
+
+#: source/dialog/filedlghelper.src#STR_CB_SELECTION.String.Text
+msgid  "~Selection"
+msgstr "تاللا(~S)"
+
+#: source/dialog/filedlghelper.src#STR_CB_INSERT_AS_LINK.String.Text
+msgid  "~Link"
+msgstr "ئۇلانما(~L)"
+
+#: source/dialog/filedlghelper.src#STR_CB_SHOW_PREVIEW.String.Text
+msgid  "Pr~eview"
+msgstr "ئالدىن كۆزەت(~E)"
+
+#: source/dialog/filedlghelper.src#STR_CB_READONLY.String.Text
+msgid  "~Read-only"
+msgstr "ئوقۇشقىلا بولىدۇ(~R)"
+
+#: source/dialog/filedlghelper.src#STR_CB_PASSWORD.String.Text
+msgid  "Save with ~password"
+msgstr "ئىم بىلەن ساقلا(~P)"
+
+#: source/dialog/filedlghelper.src#STR_CB_FILTER_OPTIONS.String.Text
+msgid  "Edit ~filter settings"
+msgstr "سۈزگۈچ تەڭشەك تەھرىر(~F)"
+
+#: source/dialog/filedlghelper.src#STR_PB_PLAY.String.Text
+msgid  "~Play"
+msgstr "چال(~P)"
+
+#: source/dialog/filedlghelper.src#STR_PB_STOP.String.Text
+msgid  "Sto~p"
+msgstr "توختا(~P)"
+
+#: source/dialog/filedlghelper.src#STR_PB_OPEN.String.Text
+msgid  "~Open"
+msgstr "ئاچ(~O)"
+
+#: source/dialog/filedlghelper.src#STR_PB_SAVE.String.Text
+msgid  "~Save"
+msgstr "ساقلا(~S)"
+
+#: source/dialog/filedlghelper.src#STR_LB_IMAGE_TEMPLATE.String.Text
+msgid  "Style:"
+msgstr "ئۇسلۇب:"
+
+#: source/dialog/filedlghelper.src#STR_LB_TEMPLATES.String.Text
+msgid  "~Templates:"
+msgstr "قېلىپلار(~T):"
+
+#: source/dialog/filedlghelper.src#STR_LB_VERSION.String.Text
+msgid  "~Version:"
+msgstr "نەشرى(~V):"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.ModelessDialog.Text
+msgid  "Find on this Page"
+msgstr "مۇشۇ بەتتىن ئىزدە"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.FT_SEARCH.FixedText.Text
+msgid  "~Search for"
+msgstr "مەزمۇن ئىزە(~S)"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.CB_WHOLEWORDS.CheckBox.Text
+msgid  "~Whole words only"
+msgstr "پۈتۈن سۆزگە ماسلاش(~W)"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.CB_MATCHCASE.CheckBox.Text
+msgid  "~Match case"
+msgstr "چوڭ كىچىك يېزىلىش پەرقلەندۈر(~M)"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.CB_WRAPAROUND.CheckBox.Text
+msgid  "Wrap ~around"
+msgstr "ئايلاندۇرۇپ قەۋەتلەش(~A)"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.CB_BACKWARDS.CheckBox.Text
+msgid  "~Backwards"
+msgstr "كەينىگە(~B)"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.PB_FIND.PushButton.Text
+msgid  "~Find"
+msgstr "ئىزدە(~F)"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.PB_CANCELFIND.CancelButton.Text
+msgid  "~Close"
+msgstr "ياپ(~C)"
+
+#: source/dialog/srchdlg.src#RID_DLG_SEARCH.STR_TOGGLE.String.Text
+msgid  "Wrap ~around"
+msgstr "ئايلاندۇرۇپ قەۋەتلەش(~A)"
+
+#: source/dialog/passwd.src#DLG_PASSWD.ModalDialog.Text
+msgid  "Enter Password"
+msgstr "ئىم كىرگۈزۈڭ"
+
+#: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_USER.FixedText.Text
+msgid  "~User"
+msgstr "ئىشلەتكۈچى(~U)"
+
+#: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD.FixedText.Text
+msgid  "~Password"
+msgstr "ئىم(~P)"
+
+#: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM.FixedText.Text
+msgid  "~Confirm"
+msgstr "جەزملە(~C)"
+
+#: source/dialog/passwd.src#DLG_PASSWD.GB_PASSWD_PASSWORD.FixedLine.Text
+msgid  "Password"
+msgstr "ئىم"
+
+#: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_PASSWORD2.FixedText.Text
+msgid  "P~assword"
+msgstr "ئىم(~A)"
+
+#: source/dialog/passwd.src#DLG_PASSWD.FT_PASSWD_CONFIRM2.FixedText.Text
+msgid  "Confir~m"
+msgstr "جەزملە(~M)"
+
+#: source/dialog/passwd.src#DLG_PASSWD.TEXT_PASSWD.String.Text
+msgid  "Password"
+msgstr "ئىم"
+
+#: source/dialog/dinfdlg.src#STR_SFX_NEWOFFICEDOC.String.Text
+msgid  "%PRODUCTNAME document"
+msgstr "%PRODUCTNAME پۈتۈكى"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_TITLE.FixedText.Text
+msgid  "~Title"
+msgstr "ماۋزۇ(~T)"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_THEMA.FixedText.Text
+msgid  "~Subject"
+msgstr "تېما(~S)"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_KEYWORDS.FixedText.Text
+msgid  "~Keywords"
+msgstr "ھالقىلىق سۆز(~K)"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODESC.FT_COMMENT.FixedText.Text
+msgid  "~Comments"
+msgstr "ئىزاھات(~C)"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_TYP.FixedText.Text
+msgid  "Type:"
+msgstr "تىپ:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.CB_FILE_READONLY.CheckBox.Text
+msgid  "~Read-only"
+msgstr "ئوقۇشقىلا بولىدۇ(~R)"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE.FixedText.Text
+msgid  "Location:"
+msgstr "ئورنى:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_FILE_SIZE.FixedText.Text
+msgid  "Size:"
+msgstr "چوڭلۇقى:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_CREATE.FixedText.Text
+msgid  "Created:"
+msgstr "قۇرغان ۋاقىت:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_CHANGE.FixedText.Text
+msgid  "Modified:"
+msgstr "ئۆزگەرتىلگەن:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_SIGNED.FixedText.Text
+msgid  "Digitally signed:"
+msgstr "رەقەملىك ئىمزا:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.BTN_SIGNATURE.PushButton.Text
+msgid  "Digital Signature..."
+msgstr "رەقەملىك ئىمزا…"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.STR_MULTSIGNED.String.Text
+msgid  "Multiply signed document"
+msgstr "كۆپ ئىمزالىق پۈتۈك"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_PRINT.FixedText.Text
+msgid  "Last printed:"
+msgstr "ئاخىرقى باسقان ۋاقتى:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_TIMELOG.FixedText.Text
+msgid  "Total editing time:"
+msgstr "تەھرىرلىگەن ئومۇمىي ۋاقىت:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_DOCNO.FixedText.Text
+msgid  "Revision number:"
+msgstr "تۈزىتىش قېتىم سانى:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.BTN_DELETE.PushButton.Text
+msgid  "Reset"
+msgstr "ئەسلىگە قايتۇر"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.CB_USE_USERDATA.CheckBox.Text
+msgid  "~Apply user data"
+msgstr "ئىشلەتكۈچى سانلىق مەلۇماتىنى قوللان(~A)"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.FT_TEMPL.FixedText.Text
+msgid  "Template:"
+msgstr "قېلىپ:"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.STR_UNKNOWNSIZE.String.Text
+msgid  "unknown"
+msgstr "نامەلۇم"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFODOC.EDIT_FILE_NAME.String.Text
+msgid  "File Name"
+msgstr "ھۆججەت ئاتى"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFOUSER.BTN_EDITLABEL.PushButton.Text
+msgid  "~Info fields..."
+msgstr "ئۇچۇر سۆز بۆلىكى(~I)…"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_NOAUTOUPDATE.RadioButton.Text
+msgid  "Do not refresh automatically"
+msgstr "ئۆزلۈكىدىن يېڭىلىما"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_RELOADUPDATE.RadioButton.Text
+msgid  "Refresh this document"
+msgstr "بۇ پۈتۈكنى يېڭىلا"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_EVERY.FixedText.Text
+msgid  "every"
+msgstr "ھەر"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_RELOADSECS.FixedText.Text
+msgid  "seconds"
+msgstr "سېكۇنت"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.RB_FORWARDUPDATE.RadioButton.Text
+msgid  "Redirect from this document"
+msgstr "بۇ پۈتۈكتىن يوللا"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_AFTER.FixedText.Text
+msgid  "after"
+msgstr "داۋامى"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FORWARDSECS.FixedText.Text
+msgid  "seconds"
+msgstr "سېكۇنت"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_URL.FixedText.Text
+msgid  "to URL"
+msgstr "URL غا"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.FT_FRAME.FixedText.Text
+msgid  "to frame"
+msgstr "كاندۇكقا"
+
+#: source/dialog/dinfdlg.src#TP_DOCINFORELOAD.STR_FORWARD_ERRMSSG.String.Text
+msgid  "If you select the option "%PLACEHOLDER%", you must enter a URL."
+msgstr ""
+
+#: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.FT_PROPERTIES.FixedText.Text
+msgid  "~Properties"
+msgstr "خاسلىق(~P)"
+
+#: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_NAME.String.Text
+msgid  "Name"
+msgstr "ئاتى"
+
+#: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_TYPE.String.Text
+msgid  "Type"
+msgstr "تىپى"
+
+#: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.CTRL_PROPERTIES.STR_HEADER_VALUE.String.Text
+msgid  "Value"
+msgstr "قىممەت"
+
+#: source/dialog/dinfdlg.src#TP_CUSTOMPROPERTIES.BTN_ADD.PushButton.Text
+msgid  "~Add"
+msgstr "قوش(~A)"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.ComboBox.QuickHelpText
+msgid  "Property Name"
+msgstr "خاسلىق ئاتى"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item1.StringList.item
+msgid  "Checked by"
+msgstr "تەكشۈرگۈچى"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item2.StringList.item
+msgid  "Client"
+msgstr "خېرىدار"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item3.StringList.item
+msgid  "Date completed"
+msgstr "تاماملانغان چېسلا"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item4.StringList.item
+msgid  "Department"
+msgstr "تارماق"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item5.StringList.item
+msgid  "Destinations"
+msgstr "نىشان"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item6.StringList.item
+msgid  "Disposition"
+msgstr "خاھىش"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item7.StringList.item
+msgid  "Division"
+msgstr "تارماق"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item8.StringList.item
+msgid  "Document number"
+msgstr "پۈتۈك تەرتىپ نومۇرى"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item9.StringList.item
+msgid  "Editor"
+msgstr "نەشر قىلغۇچى"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item10.StringList.item
+msgid  "E-Mail"
+msgstr "ئېلخەت"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item11.StringList.item
+msgid  "Forward to"
+msgstr "يۆتكەل"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item12.StringList.item
+msgid  "Group"
+msgstr "گۇرۇپپا"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item13.StringList.item
+msgid  "Info"
+msgstr "ئۇچۇر"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item14.StringList.item
+msgid  "Language"
+msgstr "تىل"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item15.StringList.item
+msgid  "Mailstop"
+msgstr "ئېلخەت ئادرېسى"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item16.StringList.item
+msgid  "Matter"
+msgstr "مەسىلە"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item17.StringList.item
+msgid  "Office"
+msgstr "ئىشخانا"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item18.StringList.item
+msgid  "Owner"
+msgstr "ئىگىسى"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item19.StringList.item
+msgid  "Project"
+msgstr "قۇرۇلۇش"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item20.StringList.item
+msgid  "Publisher"
+msgstr "تارقاتقۇچى"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item21.StringList.item
+msgid  "Purpose"
+msgstr "ئىشلىتىلىشى"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item22.StringList.item
+msgid  "Received from"
+msgstr "يوللىغۇچى"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item23.StringList.item
+msgid  "Recorded by"
+msgstr "خاتىرىلىگۈچى"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item24.StringList.item
+msgid  "Recorded date"
+msgstr "خاتىرىلىگەن چېسلا"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item25.StringList.item
+msgid  "Reference"
+msgstr "نەقىل"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item26.StringList.item
+msgid  "Source"
+msgstr "مەنبە"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item27.StringList.item
+msgid  "Status"
+msgstr "ھالىتى"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item28.StringList.item
+msgid  "Telephone number"
+msgstr "تېلېفون نومۇرى"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item29.StringList.item
+msgid  "Typist"
+msgstr "خەت باسقۇچى"
+
+#: source/dialog/dinfdlg.src#SFX_CB_PROPERTY_NAME.item30.StringList.item
+msgid  "URL"
+msgstr "URL"
+
+#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_TEXT.StringList.item
+msgid  "Text"
+msgstr "تېكىست"
+
+#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATETIME.StringList.item
+msgid  "DateTime"
+msgstr "چېسلا ۋە ۋاقىت"
+
+#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DATE.StringList.item
+msgid  "Date"
+msgstr "چېسلا"
+
+#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_DURATION.StringList.item
+msgid  "Duration"
+msgstr "داۋاملىشىش ۋاقتى"
+
+#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_NUMBER.StringList.item
+msgid  "Number"
+msgstr "تەرتىپ نومۇر"
+
+#: source/dialog/dinfdlg.src#SFX_LB_PROPERTY_TYPE.CUSTOM_TYPE_BOOLEAN.StringList.item
+msgid  "Yes or no"
+msgstr "ھەئە ياكى ياق"
+
+#: source/dialog/dinfdlg.src#SFX_ST_DURATION_FORMAT.String.Text
+msgid  " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
+msgstr " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
+
+#: source/dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_YES.RadioButton.Text
+msgid  "Yes"
+msgstr "ھەئە"
+
+#: source/dialog/dinfdlg.src#SFX_WIN_PROPERTY_YESNO.RB_PROPERTY_NO.RadioButton.Text
+msgid  "No"
+msgstr "ياق"
+
+#: source/dialog/dinfdlg.src#SFX_PB_PROPERTY_REMOVE.ImageButton.QuickHelpText
+msgid  "Remove Property"
+msgstr "خاسلىق چىقىرىۋەت"
+
+#: source/dialog/dinfdlg.src#SFX_QB_WRONG_TYPE.QueryBox.Message
+msgid  "The value entered does not match the specified type.\nThe value will be stored as text."
+msgstr ""
+
+#: source/dialog/dinfdlg.src#SID_DOCINFO.TabDialog.Text
+msgid  "Properties of "
+msgstr "خاسلىق "
+
+#: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODOC.PageItem.Text
+msgid  "General"
+msgstr "ئادەتتىكى"
+
+#: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFODESC.PageItem.Text
+msgid  "Description"
+msgstr "چۈشەندۈرۈلۈشى"
+
+#: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_CUSTOMPROPERTIES.PageItem.Text
+msgid  "Custom Properties"
+msgstr "ئىختىيارىچە خاسلىق"
+
+#: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFORELOAD.PageItem.Text
+msgid  "Internet"
+msgstr "تۇتاش تور"
+
+#: source/dialog/dinfdlg.src#SID_DOCINFO.1.TP_DOCINFOSECURITY.PageItem.Text
+msgid  "Security"
+msgstr "بىخەتەرلىك"
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.ModalDialog.Text
+msgid  "Edit Duration"
+msgstr "داۋاملىشىش ۋاقىت تەھرىر"
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FL_DURATION.FixedLine.Text
+msgid  "Duration"
+msgstr "داۋاملىشىش ۋاقتى"
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.CB_NEGATIVE.CheckBox.Text
+msgid  "~Negative"
+msgstr "مەنفى(~N)"
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_YEAR.FixedText.Text
+msgid  "~Years"
+msgstr "يىل(~Y)"
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MONTH.FixedText.Text
+msgid  "~Months"
+msgstr "ئاي(~M)"
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_DAY.FixedText.Text
+msgid  "~Days"
+msgstr "كۈن(~D)"
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_HOUR.FixedText.Text
+msgid  "H~ours"
+msgstr "سائەت(~O)"
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MINUTE.FixedText.Text
+msgid  "Min~utes"
+msgstr "مىنۇت(~U)"
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_SECOND.FixedText.Text
+msgid  "~Seconds"
+msgstr "سېكۇنت(~S)"
+
+#: source/dialog/dinfdlg.src#RID_EDIT_DURATIONS.FT_MSECOND.FixedText.Text
+msgid  "Millise~conds"
+msgstr "مىللى سېكۇنت(~C)"
+
+#: source/dialog/dinfedt.src#DLG_DOCINFO_EDT.ModalDialog.Text
+msgid  "Edit Field Names"
+msgstr "سۆز بۆلەك ئاتى تەھرىر"
+
+#: source/dialog/dinfedt.src#DLG_DOCINFO_EDT.FL_INFO.FixedLine.Text
+msgid  "Names"
+msgstr "ئاتى"
+
+#: source/dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.ModalDialog.Text
+msgid  "Create Style"
+msgstr "ئۇسلۇب قۇر"
+
+#: source/dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.FL_COL.FixedLine.Text
+msgid  "Style name"
+msgstr "ئۇسلۇب ئىسمى"
+
+#: source/dialog/newstyle.src#DLG_NEW_STYLE_BY_EXAMPLE.MSG_OVERWRITE.QueryBox.Message
+msgid  "Style already exists. Overwrite?"
+msgstr "ئۇسلۇب مەۋجۇد، قاپلىۋېتەمسىز؟"
+
+#: source/dialog/recfloat.src#SID_RECORDING_FLOATWINDOW.FloatingWindow.Text
+msgid  "Record Macro"
+msgstr "ماكرو خاتىرىلە"
+
+#: source/dialog/recfloat.src#STR_MACRO_LOSS.String.Text
+msgid  "Do you really want to cancel the recording? Any steps recorded up to this point will be lost."
+msgstr ""
+
+#: source/dialog/recfloat.src#STR_CANCEL_RECORDING.String.Text
+msgid  "Cancel Recording"
+msgstr "خاتىرىلەشنى توختات"
+
+#: source/dialog/mailwindow.src#RID_ERRBOX_MAIL_CONFIG.ErrorBox.MESSAGE
+msgid  "%PRODUCTNAME was unable to find a working e-mail configuration. Please save this document locally instead and attach it from within your e-mail client."
+msgstr ""
+
+#: source/dialog/dialog.src#STR_RESET.String.Text
+msgid  "~Reset"
+msgstr "ئەسلىگە قايتۇر(~R)"
+
+#: source/dialog/dialog.src#STR_APPLY.String.Text
+msgid  "Apply"
+msgstr "قوللان"
+
+#: source/dialog/dialog.src#STR_TABPAGE_MANAGESTYLES.String.Text
+msgid  "Organizer"
+msgstr "باشقۇر"
+
+#: source/dialog/dialog.src#MSG_TABPAGE_INVALIDNAME.InfoBox.Message
+msgid  "This name is already in use."
+msgstr "بۇ ئات ئىشلىتىلىۋاتىدۇ."
+
+#: source/dialog/dialog.src#MSG_TABPAGE_INVALIDSTYLE.InfoBox.Message
+msgid  "This Style does not exist."
+msgstr "بۇ ئۇسلۇب مەۋجۇد ئەمەس."
+
+#: source/dialog/dialog.src#MSG_TABPAGE_INVALIDPARENT.InfoBox.Message
+msgid  "This Style cannot be used as a base Style,\nbecause it would result in a recursive reference."
+msgstr ""
+
+#: source/dialog/dialog.src#MSG_POOL_STYLE_NAME.InfoBox.Message
+msgid  "Name already exists as a default Style.\nPlease choose another name."
+msgstr ""
+
+#: source/dialog/dialog.src#STR_DELETE_STYLE.String.Text
+msgid  "Do you really want to delete Style $1?"
+msgstr "$1 ئۇسلۇبنى راستىنلا ئۆچۈرەمسىز؟"
+
+#: source/dialog/dialog.src#STR_DELETE_STYLE_USED.String.Text
+msgid  "You are deleting an applied Style!\n"
+msgstr "قوللانغان ئۇسلۇبنى ئۆچۈرەمسىز!\n"
+
+#: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_NEW.MenuItem.Text
+msgid  "New..."
+msgstr "يېڭى…"
+
+#: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_EDIT.MenuItem.Text
+msgid  "Modify..."
+msgstr "ئۆزگەرت…"
+
+#: source/dialog/dialog.src#MN_CONTEXT_TEMPLDLG.ID_DELETE.MenuItem.Text
+msgid  "Delete..."
+msgstr "ئۆچۈر…"
+
+#: source/dialog/dialog.src#SID_NAVIGATOR.String.Text
+msgid  "Navigator"
+msgstr "يول باشچى"
+
+#: source/dialog/dialog.src#SID_TASKPANE.String.Text
+msgid  "Task Pane"
+msgstr "ۋەزىپە يۈزى"
+
+#: source/dialog/dialog.src#MSG_ERROR_WRONG_CONFIRM.ErrorBox.Message
+msgid  "Faulty password confirmation"
+msgstr "جەزملەش ئىم خاتا"
+
+#: source/dialog/dialog.src#STR_PDF_EXPORT_SEND.String.Text
+msgid  "Send"
+msgstr "يوللا"
+
+#: source/dialog/taskpane.src#STR_SFX_DOCK.String.Text
+msgid  "Dock"
+msgstr "مۇقىملاشتۇر"
+
+#: source/dialog/taskpane.src#STR_SFX_UNDOCK.String.Text
+msgid  "Undock"
+msgstr "بوشات"
+
+#: source/dialog/taskpane.src#STR_SFX_TASK_PANE_VIEW.String.Text
+msgid  "View"
+msgstr "كۆرۈنۈش"
+
+#: source/dialog/taskpane.src#STR_SFX_TASKS.String.Text
+msgid  "Tasks"
+msgstr "ۋەزىپە"
+
+#: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.FT_INFOTEXT.FixedText.Text
+msgid  "This document may contain formatting or content that cannot be saved in the %FORMATNAME file format. Do you want to save the document in this format anyway?\n\nUse the latest ODF file format and be sure all formatting and content is saved correctly."
+msgstr ""
+
+#: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_NO.OKButton.Text
+msgid  "~Keep Current Format"
+msgstr "نۆۋەتتىكى فورماتنى ساقلا(~K)"
+
+#: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_YES.CancelButton.Text
+msgid  "~Save in ODF Format"
+msgstr "ODF فورماتىدا ساقلا(~S)"
+
+#: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.PB_MOREINFO.HelpButton.Text
+msgid  "~More Information..."
+msgstr "تېخىمۇ كۆپ ئۇچۇر(~M)…"
+
+#: source/dialog/alienwarn.src#RID_DLG_ALIEN_WARNING.CB_WARNING_OFF.CheckBox.Text
+msgid  "~Ask when not saving in ODF format"
+msgstr "ODF فورماتىدا ساقلىمىسا سورا(~A)"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item1.ItemList.item
+msgid  "My Templates"
+msgstr "قېلىپلىرىم"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item2.ItemList.item
+msgid  "Business Correspondence"
+msgstr "سودا خەت-چەكلىرى"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item3.ItemList.item
+msgid  "Other Business Documents"
+msgstr "باشقا سودا پۈتۈكلىرى"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item4.ItemList.item
+msgid  "Personal Correspondence and Documents"
+msgstr "شەخسىي خەت-چەك ۋە پۈتۈك"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item5.ItemList.item
+msgid  "Forms and Contracts"
+msgstr "جەدۋەل ۋە توختام"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item6.ItemList.item
+msgid  "Finances"
+msgstr "مالىيە"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item7.ItemList.item
+msgid  "Education"
+msgstr "مائارىپ"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item8.ItemList.item
+msgid  "Presentation Backgrounds"
+msgstr "كۆرسەتمە تەگلىكى"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item9.ItemList.item
+msgid  "Presentations"
+msgstr "كۆرسەتمە"
+
+#: source/doc/doctempl.src#TEMPLATE_LONG_NAMES_ARY.item10.ItemList.item
+msgid  "Miscellaneous"
+msgstr "باشقىلار"
+
+#: source/doc/doctempl.src#RID_CNT_STR_WAITING.String.Text
+msgid  "The templates are being initialized for first-time usage."
+msgstr "بىرىنچى قېتىم ئىشلەتكەن قېلىپنى دەسلەپلەشتۈرۈۋاتىدۇ."
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.ModalDialog.Text
+msgid  "Templates"
+msgstr "قېلىپ"
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_EDIT.FixedLine.Text
+msgid  "New template"
+msgstr "يېڭى قېلىپ"
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FL_STYLESHEETS.FixedLine.Text
+msgid  "Templates"
+msgstr "قېلىپ"
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_SECTION.FixedText.Text
+msgid  "~Categories"
+msgstr "كاتېگورىيە(~C)"
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.FT_STYLESHEETS.FixedText.Text
+msgid  "~Templates"
+msgstr "قېلىپلار(~T)"
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_EDIT.PushButton.Text
+msgid  "~Edit"
+msgstr "تەھرىر(~E)"
+
+#: source/doc/doctdlg.src#DLG_DOC_TEMPLATE.BT_ORGANIZE.PushButton.Text
+msgid  "~Organizer..."
+msgstr "باشقۇر(~O)…"
+
+#: source/doc/doc.src#MSG_CONFIRM_FILTER.QueryBox.Message
+msgid  "Saving in external formats may have caused\n information loss. Do you still want to close?"
+msgstr ""
+
+#: source/doc/doc.src#MSG_CONFIRM_OVERWRITE_TEMPLATE.QueryBox.Message
+msgid  "Name already in use.\nDo you want to overwrite document template?"
+msgstr ""
+
+#: source/doc/doc.src#STR_DELETE_REGION.String.Text
+msgid  "Are you sure you want to delete the region "$1"?"
+msgstr ""
+
+#: source/doc/doc.src#STR_DELETE_TEMPLATE.String.Text
+msgid  "Are you sure you want to delete the entry "$1"?"
+msgstr ""
+
+#: source/doc/doc.src#MSG_REGION_NOTEMPTY.QueryBox.Message
+msgid  "The category is not empty.\nDelete anyway?"
+msgstr ""
+
+#: source/doc/doc.src#STR_QUERY_SAVE_DOCUMENT.String.Text
+msgid  "The document "$(DOC)" has been modified.\nDo you want to save your changes?"
+msgstr ""
+
+#: source/doc/doc.src#STR_STYLES.String.Text
+msgid  "Styles"
+msgstr "ئۇسلۇبلار"
+
+#: source/doc/doc.src#STR_MACROS.String.Text
+msgid  "Macros"
+msgstr "ماكرولار"
+
+#: source/doc/doc.src#STR_CONFIG.String.Text
+msgid  "Configuration"
+msgstr "تەڭشەك"
+
+#: source/doc/doc.src#STR_PRINT_STYLES_HEADER.String.Text
+msgid  "Styles in "
+msgstr "ئۇسلۇبلار "
+
+#: source/doc/doc.src#STR_PRINT_STYLES.String.Text
+msgid  "Printing Styles"
+msgstr "بېسىش ئۇسلۇبى"
+
+#: source/doc/doc.src#MSG_PRINT_ERROR.ErrorBox.Message
+msgid  "The print job could not be started."
+msgstr "بېسىش مەشغۇلاتىنى باشلىيالمايدۇ."
+
+#: source/doc/doc.src#STR_BACKUP_COPY.String.Text
+msgid  "Copy"
+msgstr "كۆچۈر"
+
+#: source/doc/doc.src#MSG_CANT_OPEN_TEMPLATE.InfoBox.Message
+msgid  "The template could not be opened."
+msgstr "قېلىپنى ئاچالمىدى."
+
+#: source/doc/doc.src#MSG_VIEW_OPEN_CANT_SAVE.InfoBox.Message
+msgid  "Document already open for editing."
+msgstr "پۈتۈكنى تەھرىرلەش ئۈچۈن ئاچقان."
+
+#: source/doc/doc.src#STR_ERROR_SAVE.String.Text
+msgid  "Error recording document "
+msgstr "پۈتۈككە يازغاندا خاتالىق كۆرۈلدى "
+
+#: source/doc/doc.src#STR_TEMPLATE_FILTER.String.Text
+msgid  "Templates"
+msgstr "قېلىپ"
+
+#: source/doc/doc.src#STR_ERROR_COPY_TEMPLATE.String.Text
+msgid  "Error copying template "$1". \nA template with this name may already exist."
+msgstr ""
+
+#: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE.String.Text
+msgid  "The template "$1" can not be deleted."
+msgstr ""
+
+#: source/doc/doc.src#STR_ERROR_MOVE_TEMPLATE.String.Text
+msgid  "Error moving template "$1"."
+msgstr ""
+
+#: source/doc/doc.src#MSG_ERROR_RESCAN.ErrorBox.Message
+msgid  "The update could not be saved."
+msgstr "يېڭىلاشنى ساقلىيالمىدى."
+
+#: source/doc/doc.src#STR_ERROR_SAVE_TEMPLATE.String.Text
+msgid  "Error saving template "
+msgstr "قېلىپ ساقلىغاندا خاتالىق كۆرۈلدى "
+
+#: source/doc/doc.src#MSG_ERROR_RENAME_TEMPLATE.ErrorBox.Message
+msgid  "Error renaming template."
+msgstr "قېلىپ ئاتىنى ئۆزگەرتكەندە خاتالىق يۈز بەردى."
+
+#: source/doc/doc.src#MSG_ERROR_RENAME_TEMPLATE_REGION.ErrorBox.Message
+msgid  "Error renaming template category."
+msgstr "قېلىپ تىپىنى ئۆزگەرتكەندە خاتالىق يۈز بەردى."
+
+#: source/doc/doc.src#MSG_ERROR_EMPTY_NAME.ErrorBox.Message
+msgid  "Please specify a name."
+msgstr "ئاتتىن بىرنى بەلگىلەڭ."
+
+#: source/doc/doc.src#MSG_ERROR_UNIQ_NAME.ErrorBox.Message
+msgid  "Please specify a unique name.\nEntries must not be case specific."
+msgstr ""
+
+#: source/doc/doc.src#STR_QUERY_DEFAULT_TEMPLATE.String.Text
+msgid  "Should the template "$(TEXT)" become the default template?"
+msgstr ""
+
+#: source/doc/doc.src#MSG_QUERY_RESET_DEFAULT_TEMPLATE.QueryBox.Message
+msgid  "Do you want to reset the default template?"
+msgstr "كۆڭۈلدىكى قېلىپقا ئەسلىگە قايتۇرامسىز؟"
+
+#: source/doc/doc.src#MSG_TEMPLATE_DIR_NOT_EXIST.InfoBox.Message
+msgid  "Template directory\n$(DIR)\ndoes not exist."
+msgstr ""
+
+#: source/doc/doc.src#MSG_DOCINFO_CANTREAD.InfoBox.Message
+msgid  "Document info cannot be read."
+msgstr "پۈتۈك ئۇچۇرىنى ئوقۇيالمىدى."
+
+#: source/doc/doc.src#STR_ERROR_NOSTORAGE.String.Text
+msgid  "The selected file has an incorrect format."
+msgstr "تاللانغان ھۆججەتنىڭ فورماتى خاتا."
+
+#: source/doc/doc.src#STR_QUERY_MUSTOWNFORMAT.String.Text
+msgid  "Documents cannot be saved in $(FORMAT) format. Do you\nwant to save your changes using the $(OWNFORMAT) format?"
+msgstr ""
+
+#: source/doc/doc.src#STR_SAVEDOC.String.Text
+msgid  "~Save"
+msgstr "ساقلا(~S)"
+
+#: source/doc/doc.src#STR_UPDATEDOC.String.Text
+msgid  "~Update"
+msgstr "يېڭىلا(~U)"
+
+#: source/doc/doc.src#STR_SAVEASDOC.String.Text
+msgid  "Save ~As..."
+msgstr "باشقا ئاتتا ساقلا(~A)…"
+
+#: source/doc/doc.src#STR_SAVECOPYDOC.String.Text
+msgid  "Save Copy ~as..."
+msgstr "كۆپەيتمىسىنى باشقا ئىسىمدا ساقلا(~A)…"
+
+#: source/doc/doc.src#STR_CLOSEDOC.String.Text
+msgid  "~Close"
+msgstr "ياپ(~C)"
+
+#: source/doc/doc.src#STR_CLOSEDOC_ANDRETURN.String.Text
+msgid  "~Close & Return to "
+msgstr "ياپ & قايت(~C) "
+
+#: source/doc/doc.src#STR_WIZARD.String.Text
+msgid  " AutoPilot"
+msgstr " يېتەكچى"
+
+#: source/doc/doc.src#RID_STR_FILTCONFIG.String.Text
+msgid  "Configurations"
+msgstr "سەپلىمە"
+
+#: source/doc/doc.src#RID_STR_FILTBASIC.String.Text
+msgid  "%PRODUCTNAME Basic libraries"
+msgstr "%PRODUCTNAME Basic ئامبىرى"
+
+#: source/doc/doc.src#RID_STR_WARNSTYLEOVERWRITE.String.Text
+msgid  "Should the "$(ARG1)" Style be replaced?"
+msgstr ""
+
+#: source/doc/doc.src#STR_DOC_LOADING.String.Text
+msgid  "Loading Document"
+msgstr "پۈتۈك يۈكلەۋاتىدۇ"
+
+#: source/doc/doc.src#RID_DLSTATUS.INET_NAME_RESOLVE_START.String.Text
+msgid  "Connection to: $(HOST). Waiting for response..."
+msgstr "ئۇلىنىش ئورنى: $(HOST) . ئىنكاس كۈتۈۋاتىدۇ…"
+
+#: source/doc/doc.src#RID_DLSTATUS.INET_CONNECT_START.String.Text
+msgid  "Opening $(TARGET) at $(HOST)"
+msgstr "$(HOST) دىكى $(TARGET) نى ئېچىۋاتىدۇ"
+
+#: source/doc/doc.src#RID_DLSTATUS.INET_READ_STATUS.String.Text
+msgid  "Loading: $(TARGET) from $(HOST). Loaded: $(BYTE)"
+msgstr "يۈكلەۋاتىدۇ: $(HOST) نىڭ $(TARGET). يۈكلىدى:$(BYTE)"
+
+#: source/doc/doc.src#RID_DLSTATUS.INET_CONNECTION_CLOSED.String.Text
+msgid  "Disconnected"
+msgstr "ئۈزۈلدى"
+
+#: source/doc/doc.src#MSG_OPEN_READONLY.QueryBox.Message
+msgid  "Document cannot be opened for editing.\nDo you want to open it as read-only?"
+msgstr ""
+
+#: source/doc/doc.src#STR_EDIT.String.Text
+msgid  "Edit"
+msgstr "تەھرىر"
+
+#: source/doc/doc.src#RID_OFFICEFILTER.String.Text
+msgid  "%PRODUCTNAME Documents"
+msgstr "%PRODUCTNAME پۈتۈكى"
+
+#: source/doc/doc.src#STR_FRAMEOBJECT_PROPERTIES.String.Text
+msgid  "Propert~ies..."
+msgstr "خاسلىق(~I)…"
+
+#: source/doc/doc.src#STR_FSET_FILTERNAME0.String.Text
+msgid  "HTML (FrameSet)"
+msgstr "HTML (كاندۇك)"
+
+#: source/doc/doc.src#STR_FSET_FILTERNAME1.String.Text
+msgid  "%PRODUCTNAME Frame Document"
+msgstr "%PRODUCTNAME كاندۇك پۈتۈك"
+
+#: source/doc/doc.src#STR_TEMPL_MOVED.String.Text
+msgid  "The template "$(TEMPLATE)" was not found at the original location. A template with the same name exists at "$(FOUND)". Should this template be used in the future when comparing?"
+msgstr ""
+
+#: source/doc/doc.src#STR_TEMPL_RESET.String.Text
+msgid  "The template "$(TEMPLATE)" has not been found. Should the template be looked for the next time the document is opened ?"
+msgstr ""
+
+#: source/doc/doc.src#STR_AUTOMATICVERSION.String.Text
+msgid  "Automatically saved version"
+msgstr "ئۆزلۈكىدىن ساقلانغان نەشرى"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_SW.String.Text
+msgid  "Text Document"
+msgstr "تېكست پۈتۈك"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_SWWEB.String.Text
+msgid  "HTML Document"
+msgstr "HTML پۈتۈك"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_SWGLOB.String.Text
+msgid  "Master Document"
+msgstr "ئاساسىي پۈتۈك"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_SC.String.Text
+msgid  "Spreadsheet"
+msgstr "ئېلېكترونلۇق جەدۋەل"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_SI.String.Text
+msgid  "Presentation"
+msgstr "كۆرسەتمە"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_SD.String.Text
+msgid  "Drawing"
+msgstr "سىزمىچىلىق"
+
+#: source/doc/doc.src#STR_DOCTYPENAME_MESSAGE.String.Text
+msgid  "Message"
+msgstr "ئۇچۇر"
+
+#: source/doc/doc.src#STR_NOSAVEANDCLOSE.String.Text
+msgid  "~Discard"
+msgstr "تاشلىۋەت(~D)"
+
+#: source/doc/doc.src#STR_PACKNGO_NOACCESS.String.Text
+msgid  "Access to the current data medium not possible."
+msgstr "نۆۋەتتىكى سانلىق مەلۇمات ۋاسىتىسىنى ئوقۇيالمىدى."
+
+#: source/doc/doc.src#STR_PACKNGO_NEWMEDIUM.String.Text
+msgid  "Insert the next data carrier and click OK."
+msgstr "كېيىنكى سانلىق مەلۇمات ساقلىغۇچنى قىستۇرۇپ «جەزملە» نى چېكىڭ."
+
+#: source/doc/doc.src#STR_OBJECT.String.Text
+msgid  "Object"
+msgstr "ئوبيېكت"
+
+#: source/doc/doc.src#DLG_MACROQUERY.QueryBox.Title
+msgid  "Run Macro"
+msgstr "ماكرو ئىجرا قىل"
+
+#: source/doc/doc.src#DLG_MACROQUERY.QueryBox.Message
+msgid  "This document contains macros. $(TEXT)"
+msgstr "بۇ پۈتۈكتە ماكرو بار. $(TEXT)"
+
+#: source/doc/doc.src#BTN_OK.String.Text
+msgid  "Run"
+msgstr "ئىجرا قىل"
+
+#: source/doc/doc.src#BTN_CANCEL.String.Text
+msgid  "Do Not Run"
+msgstr "ئىجرا قىلما"
+
+#: source/doc/doc.src#FT_CANCEL.String.Text
+msgid  "According to the security settings, the macros in this document should not be run. Do you want to run them anyway?"
+msgstr ""
+
+#: source/doc/doc.src#FT_OK.String.Text
+msgid  "Do you want to allow these macros to be run?"
+msgstr "بۇ ماكرونى ئىجرا قىلىشقا يول قويامسىز؟"
+
+#: source/doc/doc.src#STR_EXPORTASPDF_TITLE.String.Text
+msgid  "Export as PDF"
+msgstr "PDF چىقار"
+
+#: source/doc/doc.src#STR_EXPORTWITHCFGBUTTON.String.Text
+msgid  "Export..."
+msgstr "چىقار…"
+
+#: source/doc/doc.src#STR_EXPORTBUTTON.String.Text
+msgid  "Export"
+msgstr "چىقار"
+
+#: source/doc/doc.src#RID_SVXSTR_SECURITY_ADDPATH.String.Text
+msgid  "Add this directory to the list of secure paths: "
+msgstr "بۇ مۇندەرىجىنى بىخەتەر يول تىزىملىكىگە قوش: "
+
+#: source/doc/doc.src#STR_LABEL_FILEFORMAT.String.Text
+msgid  "File format:"
+msgstr "ھۆججەت فورماتى:"
+
+#: source/doc/doc.src#STR_HIDDENINFO_CONTAINS.String.Text
+msgid  "This document contains:\n\n"
+msgstr ""
+
+#: source/doc/doc.src#STR_HIDDENINFO_RECORDCHANGES.String.Text
+msgid  "Recorded changes"
+msgstr "خاتىرىلەنگەن ئۆزگەرتىش"
+
+#: source/doc/doc.src#STR_HIDDENINFO_NOTES.String.Text
+msgid  "Notes"
+msgstr "ئىزاھ"
+
+#: source/doc/doc.src#STR_HIDDENINFO_DOCVERSIONS.String.Text
+msgid  "Document versions"
+msgstr "پۈتۈك نەشرى"
+
+#: source/doc/doc.src#STR_HIDDENINFO_FIELDS.String.Text
+msgid  "Fields"
+msgstr "سۆز بۆلىكى"
+
+#: source/doc/doc.src#STR_HIDDENINFO_LINKDATA.String.Text
+msgid  "Linked data..."
+msgstr "ئۇلانغان سانلىق مەلۇمات…"
+
+#: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_SAVING.String.Text
+msgid  "Do you want to continue saving the document?"
+msgstr "پۈتۈك ساقلاشنى داۋاملاشتۇرامسىز؟"
+
+#: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_PRINTING.String.Text
+msgid  "Do you want to continue printing the document?"
+msgstr "پۈتۈك بېسىشنى داۋاملاشتۇرامسىز؟"
+
+#: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_SIGNING.String.Text
+msgid  "Do you want to continue signing the document?"
+msgstr "پۈتۈككە ئىمزا قويۇشنى داۋاملاشتۇرامسىز؟"
+
+#: source/doc/doc.src#STR_HIDDENINFO_CONTINUE_CREATEPDF.String.Text
+msgid  "Do you want to continue creating a PDF file?"
+msgstr "PDF ھۆججىتى قۇرۇشنى داۋاملاشتۇرامسىز؟"
+
+#: source/doc/doc.src#STR_NEW_FILENAME_SAVE.String.Text
+msgid  "If you do not want to overwrite the original document, you should save your work under a new filename."
+msgstr ""
+
+#: source/doc/doc.src#STR_ERROR_DELETE_TEMPLATE_DIR.String.Text
+msgid  "Some template files are protected and can not be deleted."
+msgstr "بەزى قېلىپ ھۆججەتلىرى قوغدالغان، ئۆچۈرگىلى بولمايدۇ."
+
+#: source/doc/doc.src#STR_DOCINFO_INFOFIELD.String.Text
+msgid  "Info %1"
+msgstr "%1 ئۇچۇرى"
+
+#: source/doc/doc.src#STR_SHARED.String.Text
+msgid  " (shared)"
+msgstr " (ھەمبەھىر)"
+
+#: source/doc/doc.src#STR_XMLSEC_ODF12_EXPECTED.String.Text
+msgid  "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-Options-Load/Save-General. Signing documents requires ODF 1.2 (OpenOffice.org 3.x)."
+msgstr ""
+
+#: source/doc/doc.src#MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN.QueryBox.Message
+msgid  "The document has to be saved before it can be signed. Saving the document removes all present signatures.\nDo you want to save the document?"
+msgstr ""
+
+#: source/doc/doc.src#STR_QRYTEMPL_MESSAGE.String.Text
+msgid  "The template '$(ARG1)' on which this document is based, has been modified. Do you want to update style based formattings according to the modified template?"
+msgstr ""
+
+#: source/doc/doc.src#STR_QRYTEMPL_UPDATE_BTN.String.Text
+msgid  "~Update Styles"
+msgstr "ئۇسلۇب يېڭىلا(~U)"
+
+#: source/doc/doc.src#STR_QRYTEMPL_KEEP_BTN.String.Text
+msgid  "~Keep Old Styles"
+msgstr "كونا ئۇسلۇبنى ساقلاپ قال(~K)"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.ModalDialog.Text
+msgid  "Template Management"
+msgstr "قېلىپ باشقۇر"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_OK.OKButton.Text
+msgid  "Close"
+msgstr "ياپ"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_FILES.PushButton.Text
+msgid  "~File..."
+msgstr "ھۆججەت(~F)…"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_ADDRESSTEMPLATE.PushButton.Text
+msgid  "~Address Book..."
+msgstr "ئادرېس دەپتىرى(~A)…"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
+msgid  "Documents"
+msgstr "پۈتۈكلەر"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
+msgid  "Documents"
+msgstr "پۈتۈكلەر"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.MenuButton.Text
+msgid  "Commands"
+msgstr "بۇيرۇقلار"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_NEW.MenuItem.Text
+msgid  "~New"
+msgstr "يېڭى(~N)"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DELETE.MenuItem.Text
+msgid  "~Delete"
+msgstr "ئۆچۈر(~D)"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_EDIT.MenuItem.Text
+msgid  "~Edit"
+msgstr "تەھرىر(~E)"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_FROM.MenuItem.Text
+msgid  "Import Template..."
+msgstr "قېلىپ ئەكىر…"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_COPY_TO.MenuItem.Text
+msgid  "Export Template..."
+msgstr "قېلىپ چىقار…"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINT.MenuItem.Text
+msgid  "~Print"
+msgstr "باس(~P)"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_PRINTER_SETUP.MenuItem.Text
+msgid  "Printer Settings..."
+msgstr "پرىنتېر تەڭشەك…"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESCAN.MenuItem.Text
+msgid  "Update"
+msgstr "يېڭىلا"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_DEFAULT_TEMPLATE.MenuItem.Text
+msgid  "Set As Default Template"
+msgstr "كۆڭۈلدىكى قېلىپ قىلىپ تەڭشە"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.BTN_EDIT.ID_RESET_DEFAULT_TEMPLATE.MenuItem.Text
+msgid  "Reset Default Template"
+msgstr "كۆڭۈلدىكى تەڭشەككە قايتۇر"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_LEFT_TYP.Default.StringList.item
+msgid  "Templates"
+msgstr "قېلىپ"
+
+#: source/doc/docvor.src#DLG_ORGANIZE.LB_RIGHT_TYP.Default.StringList.item
+msgid  "Templates"
+msgstr "قېلىپ"
+
+#: source/doc/new.src#DLG_NEW_FILE.ModalDialog.Text
+msgid  "New"
+msgstr "يېڭى"
+
+#: source/doc/new.src#DLG_NEW_FILE.FT_REGION.FixedText.Text
+msgid  "~Categories"
+msgstr "كاتېگورىيە(~C)"
+
+#: source/doc/new.src#DLG_NEW_FILE.FT_TEMPLATE.FixedText.Text
+msgid  "T~emplates"
+msgstr "قېلىپ(~E)"
+
+#: source/doc/new.src#DLG_NEW_FILE.BT_MORE.MoreButton.Text
+msgid  "~More"
+msgstr "تېخىمۇ كۆپ(~M)"
+
+#: source/doc/new.src#DLG_NEW_FILE.BTN_PREVIEW.CheckBox.Text
+msgid  "Pre~view"
+msgstr "ئالدىن كۆزەت(~V)"
+
+#: source/doc/new.src#DLG_NEW_FILE.GB_DOCINFO.FixedLine.Text
+msgid  "Description"
+msgstr "چۈشەندۈرۈلۈشى"
+
+#: source/doc/new.src#DLG_NEW_FILE.CB_TEXT_STYLE.CheckBox.Text
+msgid  "Te~xt"
+msgstr "تېكست(~X)"
+
+#: source/doc/new.src#DLG_NEW_FILE.CB_FRAME_STYLE.CheckBox.Text
+msgid  "~Frame"
+msgstr "كاندۇك(~F)"
+
+#: source/doc/new.src#DLG_NEW_FILE.CB_PAGE_STYLE.CheckBox.Text
+msgid  "~Pages"
+msgstr "بەت(~P)"
+
+#: source/doc/new.src#DLG_NEW_FILE.CB_NUM_STYLE.CheckBox.Text
+msgid  "N~umbering"
+msgstr "تەرتىپ نومۇرى(~U)"
+
+#: source/doc/new.src#DLG_NEW_FILE.CB_MERGE_STYLE.CheckBox.Text
+msgid  "~Overwrite"
+msgstr "قاپلا(~O)"
+
+#: source/doc/new.src#DLG_NEW_FILE.PB_LOAD_FILE.PushButton.Text
+msgid  "From File..."
+msgstr "ھۆججەتتىن…"
+
+#: source/doc/new.src#DLG_NEW_FILE.STR_LOAD_TEMPLATE.String.Text
+msgid  "Load Styles"
+msgstr "ئۇسلۇب يۈكلە"
+
+#: source/doc/new.src#DLG_NEW_FILE.FT_TITLE.FixedText.Text
+msgid  "~Title"
+msgstr "ماۋزۇ(~T)"
+
+#: source/doc/new.src#DLG_NEW_FILE.FT_THEMA.FixedText.Text
+msgid  "Subject"
+msgstr "تېما"
+
+#: source/doc/new.src#DLG_NEW_FILE.FT_KEYWORDS.FixedText.Text
+msgid  "~Key words"
+msgstr "ھالقىلىق سۆز(~K)"
+
+#: source/doc/new.src#DLG_NEW_FILE.FT_DESC.FixedText.Text
+msgid  "~Description"
+msgstr "چۈشەندۈرۈش(~D)"
+
+#: source/menu/menu.src#STR_MENU_CFGITEM.String.Text
+msgid  "Configuration Menu"
+msgstr "تىزىملىك سەپلەش"
+
+#: source/menu/menu.src#STR_MENU_ADDONS.String.Text
+msgid  "~Add-Ons"
+msgstr "قىستۇرما دېتال(~A)"
+
+#: source/menu/menu.src#MN_CLIPBOARDFUNCS.SID_CUT.MenuItem.Text
+msgid  "Cu~t"
+msgstr "كەس(~T)"
+
+#: source/menu/menu.src#MN_CLIPBOARDFUNCS.SID_COPY.MenuItem.Text
+msgid  "~Copy"
+msgstr "كۆچۈر(~C)"
+
+#: source/menu/menu.src#MN_CLIPBOARDFUNCS.SID_PASTE.MenuItem.Text
+msgid  "~Paste"
+msgstr "چاپلا(~P)"
+
+#: source/menu/menu.src#SID_WIN_FULLSCREEN.String.Text
+msgid  "Leave Full-Screen Mode"
+msgstr "پۈتۈن ئېكران ھالەتتىن ئايرىل"
+
+#: source/menu/menu.src#STR_MENU_ADDONHELP.String.Text
+msgid  "Add-~On Help"
+msgstr "قىستۇرما دېتال ياردىمى(~O)"
+
+#: source/menu/menu.src#STR_MENU_SYNONYMS.String.Text
+msgid  "Synonyms"
+msgstr "مەنىداش سۆزلەر"
+
+#: source/menu/menu.src#STR_MENU_NO_SYNONYM_FOUND.String.Text
+msgid  "(none)"
+msgstr "(يوق)"
+
+#: source/menu/menu.src#STR_MENU_THESAURUS.String.Text
+msgid  "~Thesaurus..."
+msgstr "مەنىداش سۆزلەر لۇغىتى(~T)…"
+
+#: source/view/view.src#STR_NODEFPRINTER.String.Text
+msgid  "No default printer found.\nPlease choose a printer and try again."
+msgstr ""
+
+#: source/view/view.src#STR_NOSTARTPRINTER.String.Text
+msgid  "Could not start printer.\nPlease check your printer configuration."
+msgstr ""
+
+#: source/view/view.src#STR_PRINTER_NOTAVAIL.String.Text
+msgid  "This document has been formatted for the printer $1. The specified printer is not available. \nDo you want to use the standard printer $2 ?"
+msgstr ""
+
+#: source/view/view.src#STR_PRINT_OPTIONS.String.Text
+msgid  "Options..."
+msgstr "…تاللانما"
+
+#: source/view/view.src#STR_PRINT_OPTIONS_TITLE.String.Text
+msgid  "Printer Options"
+msgstr "پرىنتېر تاللانما"
+
+#: source/view/view.src#STR_ERROR_PRINTER_BUSY.String.Text
+msgid  "Printer busy"
+msgstr "پرىنتېر ئالدىراش"
+
+#: source/view/view.src#STR_ERROR_PRINT.String.Text
+msgid  "Error while printing"
+msgstr "بېسىۋاتقاندا خاتالىق كۆرۈلدى"
+
+#: source/view/view.src#STR_PRINTING.String.Text
+msgid  "Printing"
+msgstr "بېسىۋاتىدۇ"
+
+#: source/view/view.src#STR_PAGE.String.Text
+msgid  "Page "
+msgstr "بەت "
+
+#: source/view/view.src#STR_READONLY.String.Text
+msgid  " (read-only)"
+msgstr " (ئوقۇشقىلا بولىدۇ)"
+
+#: source/view/view.src#STR_PRINT_NEWORI.String.Text
+msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
+msgstr ""
+
+#: source/view/view.src#STR_PRINT_NEWSIZE.String.Text
+msgid  "The page size has been modified.\nShould the new settings be saved\nin the active document?"
+msgstr ""
+
+#: source/view/view.src#STR_PRINT_NEWORISIZE.String.Text
+msgid  "The page size and orientation have been modified.\nWould you like to save the new settings in the\nactive document?"
+msgstr ""
+
+#: source/view/view.src#STR_PREVIEW_DOCINFO.String.Text
+msgid  "<html><body BGCOLOR="#c0c0c0"><font FACE="Arial"><dl><dt><b>Title:</b><dd>$(TITEL)<dt><b>Subject:</b><dd>$(THEME)<dt><b>Keywords:</b><dd>$(KEYWORDS)<dt><b>Description:</b><dd>$(TEXT)</dl></font></body></html>"
+msgstr ""
+
+#: source/view/view.src#STR_PREVIEW_NODOCINFO.String.Text
+msgid  "<HTML><BODY BGCOLOR="#c0c0c0"><BR><BR><P><FONT FACE="Arial"><B>No document properties found.</B></FONT></P></BODY></HTML>"
+msgstr ""
+
+#: source/view/view.src#MSG_CANT_CLOSE.InfoBox.Message
+msgid  "The document cannot be closed because a\n print job is being carried out."
+msgstr ""
+
+#: source/view/view.src#DLG_PRINTMONITOR.FT_PRINTING.FixedText.Text
+msgid  "is being printed on"
+msgstr "بېسىش ئۈسكۈنىسى"
+
+#: source/view/view.src#DLG_PRINTMONITOR.STR_FT_PREPARATION.String.Text
+msgid  "is being prepared for printing"
+msgstr "بېسىشقا تەييارلىنىۋاتىدۇ"
+
+#: source/view/view.src#MSG_ERROR_SEND_MAIL.InfoBox.Message
+msgid  "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\nPlease check the %PRODUCTNAME settings or your e-mail program settings."
+msgstr ""
+
+#: source/view/view.src#MSG_QUERY_OPENASTEMPLATE.QueryBox.Message
+msgid  "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
+msgstr ""
+
+#: source/view/view.src#STR_REPAIREDDOCUMENT.String.Text
+msgid  " (repaired document)"
+msgstr " (ئوڭشالغان پۈتۈك)"
+
+#: source/view/view.src#MSG_ERROR_NO_WEBBROWSER_FOUND.ErrorBox.Message
+msgid  "%PRODUCTNAME could not find a web browser on your system. Please check your Desktop Preferences or install a web browser (for example, Mozilla) in the default  location requested during the browser installation."
+msgstr ""
+
+#: source/view/view.src#DLG_PRINTMONITOR_TEXT.#define.Text
+msgid  "Print Monitor"
+msgstr "بېسىشنى كۆزەتكۈچ"
+
+#: source/view/view.src#STR_ERROR_SAVE_TEMPLATE.String.Text
+msgid  "Error saving template "
+msgstr "قېلىپ ساقلىغاندا خاتالىق كۆرۈلدى "

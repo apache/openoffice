@@ -1,908 +1,572 @@
-
-#: wiki.xhp#bm_id3154408.help.text
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
 msgid ""
-"<bookmark_value>Wiki;@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_va"
-"lue>@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>extensions;Me"
-"diaWiki</bookmark_value>"
 msgstr ""
-"<bookmark_value>Wiki;@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_va"
-"lue>@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>razširitev;Me"
-"diaWiki</bookmark_value>"
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
 
-#: wiki.xhp#hd_id3569444.help.text
-msgid "To Remove the @WIKIEXTENSIONPRODUCTNAME@"
-msgstr "Odstranitev razširitve @WIKIEXTENSIONPRODUCTNAME@"
 
-#: wiki.xhp#hd_id4554582.help.text
-msgid "System Requirements"
-msgstr "Sistemske zahteve"
-
-#: wiki.xhp#hd_id5316019.help.text
-msgid "To Connect to a Wiki"
-msgstr "Povezava z Wikijem"
-
-#: wiki.xhp#hd_id567339.help.text
-msgid "To Install the @WIKIEXTENSIONPRODUCTNAME@"
-msgstr "Namestitev razširitve @WIKIEXTENSIONPRODUCTNAME@"
-
-#: wiki.xhp#hd_id5993530.help.text
-msgctxt "wiki.xhp#hd_id5993530.help.text"
-msgid "@WIKIEXTENSIONPRODUCTNAME@"
-msgstr "Wiki-založnik"
-
-#: wiki.xhp#hd_id7044892.help.text
-msgid "To Create a New Wiki Page"
-msgstr "Ustvarjanje nove strani wiki"
-
-#: wiki.xhp#hd_id8047120.help.text
-msgid "Installing @WIKIEXTENSIONPRODUCTNAME@"
-msgstr "Namestitev razširitve @WIKIEXTENSIONPRODUCTNAME@"
-
-#: wiki.xhp#par_id1732230.help.text
-msgctxt "wiki.xhp#par_id1732230.help.text"
-msgid ""
-"In a Writer window, choose <item type=\"menuitem\">Tools - Extension "
-"Manager</item>."
-msgstr ""
-"V oknu programa Writer izberite <item type=\"menuitem\">Orodja - Upravitelj "
-"razširitev</item>."
-
-#: wiki.xhp#par_id228278.help.text
-msgid ""
-"In the <link href=\"@WIKIEXTENSIONID@/wikisend.xhp\">Send to MediaWiki</link> "
-"dialog, specify the settings for your entry."
-msgstr ""
-"V pogovornem oknu <link href=\"@WIKIEXTENSIONID@/wikisend.xhp\">Pošlji na "
-"MediaWiki</link> določite nastavitve za svoj vnos."
-
-#: wiki.xhp#par_id2381969.help.text
-msgid ""
-"Note: You can store your user name and password for all respective dialogs "
-"inside %PRODUCTNAME. The password will be stored in a secure way, where "
-"access is maintained by a master password. To enable the master password, "
-"choose <item type=\"menuitem\">Tools - Options - %PRODUCTNAME - "
-"Security</item>."
-msgstr ""
-"Opomba: Svoje uporabniško ime in geslo lahko shranite za vsa ustrezna "
-"pogovorna okna v %PRODUCTNAME. Geslo bo shranjeno na varen način, dostop pa "
-"ščiti glavno geslo. Če želite omogočiti glavno geslo, izberite <item "
-"type=\"menuitem\">Orodja - Možnosti - %PRODUCTNAME - Varnost</item>."
-
-#: wiki.xhp#par_id2564165.help.text
-msgid "<emph>MediaWiki server</emph>: Select the Wiki."
-msgstr "<emph>Strežnik MediaWiki</emph>: Izberite Wiki."
-
-#: wiki.xhp#par_id2597430.help.text
-msgid "StarOffice/StarSuite 9"
-msgstr "StarOffice/StarSuite 9"
-
-#: wiki.xhp#par_id265511.help.text
-msgid ""
-"Restart the software, open a text document, then choose <item "
-"type=\"menuitem\">Tools - Options - Internet - MediaWiki</item> to enter your "
-"Wiki settings. See \"To Connect To a Wiki\" below."
-msgstr ""
-"Ponovno zaženite program, odprite dokument z besedilom, nato izberite <item "
-"type=\"menuitem\">Orodja - Možnosti - Internet - MediaWiki</item>, kjer "
-"vnesete svoje nastavitve za Wiki. Oglejte si \"Povezava z Wikijem\" spodaj."
-
-#: wiki.xhp#par_id2655110.help.text
-msgctxt "wiki.xhp#par_id2655110.help.text"
-msgid ""
-"In a Writer window, choose <item type=\"menuitem\">Tools - Extension "
-"Manager</item>."
-msgstr ""
-"V oknu programa Writer izberite <item type=\"menuitem\">Orodja - Upravitelj "
-"razširitev</item>."
-
-#: wiki.xhp#par_id292062.help.text
-msgid ""
-"Optionally enable \"Save password\" to save the password between sessions. A "
-"master password is used to maintain access to all saved passwords. Choose "
-"<item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Security</item> to "
-"enable the master password. \"Save password\" is unavailable when the master "
-"password is not enabled."
-msgstr ""
-"Po potrebi potrdite \"Shrani geslo\", če želite shraniti geslo med sejami. "
-"Glavno geslo uporabljamo za ohranjanje dostopa do vseh shranjenih gesel. "
-"Izberite <item type=\"menuitem\">Orodja - Možnosti - %PRODUCTNAME - "
-"Varnost</item>, če želite omogočiti glavno geslo. \"Shrani geslo\" ni na "
-"voljo, če glavno geslo ni omogočeno."
-
-#: wiki.xhp#par_id3514206.help.text
-msgid "Open a Writer document."
-msgstr "Odprite dokument programa Writer."
-
-#: wiki.xhp#par_id368968.help.text
-msgid ""
-"In the <link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\">Options</link> "
-"dialog, click Add."
-msgstr ""
-"V pogovornem oknu <link "
-"href=\"@WIKIEXTENSIONID@/wikisettings.xhp\">Možnosti</link> kliknite Dodaj."
-
-#: wiki.xhp#par_id3751640.help.text
-msgid ""
-"Note: If you connect to the web using a proxy server, enter the proxy "
-"information to <item type=\"menuitem\">Tools - Options - Internet - "
-"Proxy</item>, and restart the software."
-msgstr ""
-"Opomba: Če se v splet povezujete prek posredovalnega strežnika, vnesite "
-"podatke o posredovalnem strežniku v <item type=\"menuitem\">Orodja - Možnosti "
-"- Internet - Posredovalni strežniki</item> in ponovno zaženite program."
-
-#: wiki.xhp#par_id389416.help.text
-msgid "You can copy the URL from a web browser and paste it into the textbox."
-msgstr ""
-"URL lahko kopirate iz spletnega brskalnika in ga prilepite v polje z "
-"besedilom."
-
-#: wiki.xhp#par_id4008911.help.text
-msgid "Close %PRODUCTNAME, and close also the Quickstarter if enabled."
-msgstr "Zaprite %PRODUCTNAME in Hitri zaganjalnik, če je vključen."
-
-#: wiki.xhp#par_id4123661.help.text
-msgid ""
-"<emph>This is a minor edit</emph>: Check this box to mark the uploaded page "
-"as a minor edit of the already existing page with the same title."
-msgstr ""
-"<emph>To je manjši popravek</emph>: Označite to polje, če želite označiti "
-"preneseno stran kot manjši popravek že obstoječe istoimenske strani."
-
-#: wiki.xhp#par_id4277169.help.text
-msgid ""
-"Before you install the @WIKIEXTENSIONPRODUCTNAME@, ensure that %PRODUCTNAME "
-"uses a Java Runtime Environment (JRE). To check the status of the JRE, "
-"choose <item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Java</item>. "
-"Ensure that \"Use a Java runtime environment\" is marked and that a Java "
-"runtime folder is selected in the big listbox. If no JRE was activated, then "
-"activate a JRE 1.4 or later and restart %PRODUCTNAME."
-msgstr ""
-"Preden namestite @WIKIEXTENSIONPRODUCTNAME@, zagotovite, da %PRODUCTNAME "
-"uporablja izvajalno okolje Java (JRE). Če želite preveriti stanje JRE, "
-"izberite <item type=\"menuitem\">Orodja - Možnosti - %PRODUCTNAME - "
-"Java</item>. Zagotovite, da je polje \"Uporabi izvajalno okolje Java\" "
-"potrjeno in da je v velikem seznamskem polju izbrana mapa izvajalnega okolja "
-"Java. Če ni izbrano nobeno izvajalno okolje JRE, potem aktivirajte JRE 1.4 "
-"ali novejše in ponovno zaženite %PRODUCTNAME."
-
-#: wiki.xhp#par_id4338511.help.text
-msgid "In the Extension Manager dialog, click Add."
-msgstr "V Upravitelju razširitev kliknite Dodaj."
-
-#: wiki.xhp#par_id452284.help.text
-msgid ""
-"<emph>Show in web browser</emph>: Check this box to open your system web "
-"browser and show the uploaded Wiki page."
-msgstr ""
-"<emph>Pokaži v spletnem brskalniku</emph>: Označite to polje, če želite "
-"odpreti svoj spletni brskalnik in si v njem ogledati preneseno stran Wiki."
-
-#: wiki.xhp#par_id4566484.help.text
-msgid "Choose <item type=\"menuitem\">File - Send - To MediaWiki</item>."
-msgstr "Izberite <item type=\"menuitem\">Datoteka - Pošlji - Na MediaWiki</item>."
-
-#: wiki.xhp#par_id5328836.help.text
-msgid ""
-"In the URL textbox, enter the address of a Wiki that you want to connect to."
-msgstr ""
-"V polje z besedilom URL vnesite naslov wikija, s katerim se želite povezati."
-
-#: wiki.xhp#par_id5566576.help.text
-msgid ""
-"<emph>Title</emph>: Type the title of your page. Type the title of an "
-"existing page to overwrite the page with your current text document. Type a "
-"new title to create a new page on the Wiki."
-msgstr ""
-"<emph>Naslov</emph>: Vnesite naslov svoje strani. Vnesite naslov obstoječe "
-"strani, če jo želite prepisati z vsebino trenutnega dokumenta z besedilom. "
-"Vnesite nov naslov, če želite ustvariti novo stran Wiki."
-
-#: wiki.xhp#par_id5882442.help.text
-msgid ""
-"Locate the @WIKIEXTENSIONFILENAME@.oxt file, click Open, and then click "
-"Close. "
-msgstr ""
-"Poiščite datoteko @WIKIEXTENSIONFILENAME@.oxt, kliknite Odpri, nato kliknite "
-"Zapri. "
-
-#: wiki.xhp#par_id5906552.help.text
-msgid "In the Username box, enter your user ID for your Wiki account."
-msgstr "V polje Uporabniško ime vnesite svoje uporabniško ime za račun Wiki."
-
-#: wiki.xhp#par_id6468703.help.text
-msgid ""
-"<ahelp hid=\".\">Choose <item type=\"menuitem\">File - Send - To "
-"MediaWiki</item> to upload the current Writer document to a MediaWiki "
-"server.</ahelp>"
-msgstr ""
-"<ahelp hid=\".\">Izberite <item type=\"menuitem\">Datoteka - Pošlji - Na "
-"MediaWiki</item>, če želite prenesti trenutni dokument na strežnik "
-"MediaWiki.</ahelp>"
-
-#: wiki.xhp#par_id6962187.help.text
-msgid ""
-"In the <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> "
-"dialog, enter the account information for the Wiki."
-msgstr ""
-"V pogovornem oknu <link "
-"href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> vnesite podatke o "
-"računu za Wiki."
-
-#: wiki.xhp#par_id7387615.help.text
-msgid ""
-"A Wiki account on a supported <link "
-"href=\"http://www.mediawiki.org/wiki/MediaWiki\">MediaWiki</link> server"
-msgstr ""
-"Račun Wiki na podprtem strežniku <link "
-"href=\"http://www.mediawiki.org/wiki/MediaWiki\">MediaWiki</link>"
-
-#: wiki.xhp#par_id8346812.help.text
-msgid "Click Send."
-msgstr "Kliknite Pošlji."
-
-#: wiki.xhp#par_id8430738.help.text
-msgid "OpenOffice.org 3.0"
-msgstr "OpenOffice.org 3.0"
-
-#: wiki.xhp#par_id8431348.help.text
-msgid "Select the extension, click Remove, and then click Close."
-msgstr "Izberite razširitev, kliknite Odstrani, nato kliknite Zapri."
-
-#: wiki.xhp#par_id8869594.help.text
-msgid ""
-"In the Password box, enter the password for your Wiki account, then click "
-"OK."
-msgstr "V polje Geslo vnesite geslo svojega računa Wiki, nato kliknite V redu."
-
-#: wiki.xhp#par_id9297158.help.text
-msgid ""
-"If the Wiki allows anonymous write access, you can leave the Username and "
-"Password boxes empty."
-msgstr ""
-"Če Wiki dovoli anonimni dostop in pisanje, lahko pustite polji Uporabniško "
-"ime in Geslo prazni."
-
-#: wiki.xhp#par_id9340495.help.text
-msgid "Java Runtime Environment 1.4"
-msgstr "Javansko izvajalno okolje JRE 1.4"
-
-#: wiki.xhp#par_id944853.help.text
-msgid ""
-"Write the content of the Wiki page. You can use formatting like text "
-"formats, headings, footnotes, and more. See the <link "
-"href=\"@WIKIEXTENSIONID@/wikiformats.xhp\">list of supported formats</link>."
-msgstr ""
-"Napišite vsebino strani Wiki. Uporabite lahko oblikovanje, kot so "
-"oblikovanje samega besedila, naslovi, sprotne opombe in druge. Oglejte si "
-"<link href=\"@WIKIEXTENSIONID@/wikiformats.xhp\">seznam podprtih vrst "
-"datotek</link>."
-
-#: wiki.xhp#par_id9504379.help.text
-msgid "Click the plus sign (+) in front of My Extensions."
-msgstr "Kliknite znak plus (+) pred oznako Moje razširitve."
-
-#: wiki.xhp#par_id9533677.help.text
-msgid ""
-"Open a Writer document, and choose <item type=\"menuitem\">Tools - Options - "
-"Internet - MediaWiki</item>."
-msgstr ""
-"Odprite dokument programa Writer in izberite <item type=\"menuitem\">Orodja - "
-"Možnosti - Internet - MediaWiki</item>."
-
-#: wiki.xhp#par_id9647511.help.text
-msgid ""
-"<ahelp hid=\".\">By using the @WIKIEXTENSIONPRODUCTNAME@ you can upload your "
-"current Writer text document to a MediaWiki server. After uploading, all "
-"Wiki users can read your document on the Wiki.</ahelp>"
-msgstr ""
-"<ahelp hid=\".\">Če uporabljate razširitev @WIKIEXTENSIONPRODUCTNAME@, lahko "
-"prenesete svoj trenutni dokument z besedilom iz Writerja na strežnik "
-"MediaWiki. Po prenosu lahko vsi uporabniki Wikija preberejo vaš dokument na "
-"Wikiju.</ahelp>"
-
-#: wiki.xhp#par_id9688711.help.text
-msgid "<emph>Summary</emph>: Enter an optional short summary of your page."
-msgstr "<emph>Povzetek</emph>: Vnesite neobvezen kratek povzetek svoje strani."
-
-#: wiki.xhp#tit.help.text
-msgctxt "wiki.xhp#tit.help.text"
-msgid "@WIKIEXTENSIONPRODUCTNAME@"
-msgstr "Wiki-založnik"
-
-#: wikiaccount.xhp#hd_id960722.help.text
-msgctxt "wikiaccount.xhp#hd_id960722.help.text"
-msgid "MediaWiki"
-msgstr "MediaWiki"
-
-#: wikiaccount.xhp#par_id1113010.help.text
-msgid ""
-"<ahelp hid=\".\" visibility=\"hidden\">Enter your password on the MediaWiki "
-"server. Leave empty for anonymous access.</ahelp>"
-msgstr ""
-"<ahelp hid=\".\" visibility=\"hidden\">Vnesite svoje geslo za strežnik "
-"MediaWiki. Pustite prazno za anonimni dostop.</ahelp>"
-
-#: wikiaccount.xhp#par_id3112582.help.text
-msgid ""
-"Enter the Internet address of a Wiki server in a format like "
-"http://wiki.services.openoffice.org/wiki or copy the URL from a web browser."
-msgstr ""
-"Vnesite spletni naslov strežnika Wiki v obliki "
-"http://wiki.services.openoffice.org/wiki ali kopirajte URL iz spletnega "
-"brskalnika."
-
-#: wikiaccount.xhp#par_id4571672.help.text
-msgid ""
-"Use the MediaWiki dialog to add or edit your MediaWiki account settings."
-msgstr ""
-"Uporabite pogovorno okno MediaWiki, če želite dodati ali urediti nastavitve "
-"svojega računa MediaWiki."
-
-#: wikiaccount.xhp#par_id628070.help.text
-msgid ""
-"If the Wiki allows anonymous access, you can leave the account text boxes "
-"empty. Else enter your user name and password."
-msgstr ""
-"Če Wiki dovoli anonimni dostop, lahko pustite polja z besedilom računa "
-"prazna. Sicer vnesite svoje uporabniško ime in geslo."
-
-#: wikiaccount.xhp#par_id656758.help.text
-msgid ""
-"<ahelp hid=\".\" visibility=\"hidden\">Enable to store your password between "
-"sessions. The master password must be enabled, see <item "
-"type=\"menuitem\">Tools - Options - %PRODUCTNAME - Security</item>.</ahelp>"
-msgstr ""
-"<ahelp hid=\".\" visibility=\"hidden\">Omogočite shranjevanje svojega gesla med "
-"sejami. Glavno geslo mora biti vključeno, oglejte si <item "
-"type=\"menuitem\">Orodja - Možnosti - %PRODUCTNAME - Varnost</item>.</ahelp>"
-
-#: wikiaccount.xhp#par_id7631458.help.text
-msgid ""
-"<ahelp hid=\".\" visibility=\"hidden\">Enter the URL of a MediaWiki server, "
-"starting with http://</ahelp>"
-msgstr ""
-"<ahelp hid=\".\" visibility=\"hidden\">Vnesite URL strežnika MediaWiki, ki se "
-"začne s http://</ahelp>"
-
-#: wikiaccount.xhp#par_id7862483.help.text
-msgid ""
-"<ahelp hid=\".\" visibility=\"hidden\">Enter your user name on the MediaWiki "
-"server. Leave empty for anonymous access.</ahelp>"
-msgstr ""
-"<ahelp hid=\".\" visibility=\"hidden\">Vnesite svoje uporabniško ime za strežnik "
-"MediaWiki. Pustite prazno za anonimni dostop.</ahelp>"
-
-#: wikiaccount.xhp#par_id9046601.help.text
-msgid ""
-"If you have enabled the master password feature on the Security tab page of "
-"the Tools - Options - %PRODUCTNAME dialog, then the software can store your "
-"password and automatically insert the data where necessary. Enable the \"Save "
-"password\" checkbox to store your password."
-msgstr ""
-"Če ste vključili možnost glavnega gesla na zavihku Varnost pogovornega okna "
-"Orodja - Možnosti - %PRODUCTNAME, lahko program shrani vaše geslo in "
-"samodejno vstavi podatke, ko je to potrebno. Potrdite polje \"Shrani geslo\", "
-"če želite shraniti svoje geslo."
-
-#: wikiaccount.xhp#tit.help.text
-msgctxt "wikiaccount.xhp#tit.help.text"
-msgid "MediaWiki"
-msgstr "MediaWiki"
-
-#: wikiformats.xhp#hd_id2162236.help.text
-msgid "Tables"
-msgstr "Tabele"
-
-#: wikiformats.xhp#hd_id2954496.help.text
-msgid "Joined Cells"
-msgstr "Spojene celice"
-
-#: wikiformats.xhp#hd_id3743095.help.text
-msgctxt "wikiformats.xhp#hd_id3743095.help.text"
-msgid "MediaWiki Formats"
+#: mediawiki/help/wikiformats.xhp#tit
+msgid  "MediaWiki Formats"
 msgstr "Vrste datotek MediaWiki"
 
-#: wikiformats.xhp#hd_id425122.help.text
-msgid "Borders"
-msgstr "Obrobe"
+#: mediawiki/help/wikiformats.xhp#hd_id3743095
+msgid  "MediaWiki Formats"
+msgstr "Vrste datotek MediaWiki"
 
-#: wikiformats.xhp#hd_id4436475.help.text
-msgid "Alignment"
-msgstr "Poravnava"
+#: mediawiki/help/wikiformats.xhp#par_id8654133
+msgid  "The following list gives an overview of the text formats that the @WIKIEXTENSIONPRODUCTNAME@ can upload to the Wiki server."
+msgstr ""
 
-#: wikiformats.xhp#hd_id4834131.help.text
-msgid "Character styles"
-msgstr "Znakovni slogi"
+#: mediawiki/help/wikiformats.xhp#par_id5630664
+msgid  "The OpenDocument format used by Writer and the WikiMedia format are quite different. Only a subset of all features can be transformed from one format to the other."
+msgstr ""
 
-#: wikiformats.xhp#hd_id5152745.help.text
-msgid "Footnotes"
-msgstr "Sprotne opombe"
-
-#: wikiformats.xhp#hd_id6255073.help.text
-msgid "Charset and special characters"
-msgstr "Nabor znakov in posebni znaki"
-
-#: wikiformats.xhp#hd_id7026886.help.text
-msgid "Paragraphs"
-msgstr "Odstavki"
-
-#: wikiformats.xhp#hd_id7178868.help.text
-msgid "Headings"
+#: mediawiki/help/wikiformats.xhp#hd_id7178868
+msgid  "Headings"
 msgstr "Naslovi"
 
-#: wikiformats.xhp#hd_id7217627.help.text
-msgid "Hyperlinks"
+#: mediawiki/help/wikiformats.xhp#par_id508133
+msgid  "Apply a heading paragraph style to the headings in your Writer document. The Wiki will show the heading styles of the same outline level, formatted as defined by the Wiki engine."
+msgstr ""
+
+#: mediawiki/help/wikiformats.xhp#hd_id7217627
+msgid  "Hyperlinks"
 msgstr "Hiperpovezave"
 
-#: wikiformats.xhp#hd_id7486190.help.text
-msgid "Pre-formatted text"
-msgstr "Vnaprej oblikovano besedilo"
+#: mediawiki/help/wikiformats.xhp#par_id3735465
+msgid  "Native OpenDocument hyperlinks are transformed into "external" Wiki links. Therefore, the built-in linking facility of OpenDocument should only be used to create links that point to other sites outside the Wiki web. For creating Wiki links that point to other subjects of the same Wiki domain, use Wiki links."
+msgstr ""
 
-#: wikiformats.xhp#hd_id9405499.help.text
-msgid "Images"
-msgstr "Slike"
-
-#: wikiformats.xhp#hd_id941190.help.text
-msgid "Lists"
+#: mediawiki/help/wikiformats.xhp#hd_id941190
+msgid  "Lists"
 msgstr "Seznami"
 
-#: wikiformats.xhp#par_id1459395.help.text
-msgid ""
-"A paragraph style with a fixed-width font is transformed as pre-formatted "
-"text. Pre-formatted text is shown on the Wiki with a border around the text."
+#: mediawiki/help/wikiformats.xhp#par_id8942838
+msgid  "Lists can reliably be exported when the whole list uses a consistent list style. Use the Numbering or Bullets icon to generate a list in Writer. If you need a list without numbering or bullets, use Format - Bullets and Numbering to define and apply the respective list style."
 msgstr ""
-"Slog odstavka s pisavo z nespremenljivo širino se pretvori v vnaprej "
-"oblikovano besedilo. Vnaprej oblikovano besedilo se v wikiju prikaže z "
-"obrobo."
 
-#: wikiformats.xhp#par_id1831110.help.text
-msgid ""
-"Irrespective of custom table styles for border and background, a table is "
-"always exported as \"<emph>prettytable\"</emph>, which renders in the Wiki "
-"engine with simple borders and bold header."
+#: mediawiki/help/wikiformats.xhp#hd_id7026886
+msgid  "Paragraphs"
+msgstr "Odstavki"
+
+#: mediawiki/help/wikiformats.xhp#hd_id4436475
+msgid  "Alignment"
+msgstr "Poravnava"
+
+#: mediawiki/help/wikiformats.xhp#par_id376598
+msgid  "Explicit text alignment should not be used in Wiki articles. Nevertheless, text alignment is supported for left, centered, and right alignment of text."
 msgstr ""
-"Ne glede na prilagojene sloge obrob in ozadja tabele se ta vedno izvozi kot "
-" \"<emph>prettytable\"</emph>, ki jo Wiki upodobi z enostavnimi obrobami in "
-"krepko glavo."
 
-#: wikiformats.xhp#par_id3037202.help.text
-msgid ""
-"Simple tables are supported well. Table headers are translated into "
-"corresponding Wiki style table headers. However, custom formatting of table "
-"borders, column sizes and background colors is ignored."
+#: mediawiki/help/wikiformats.xhp#hd_id7486190
+msgid  "Pre-formatted text"
+msgstr "Vnaprej oblikovano besedilo"
+
+#: mediawiki/help/wikiformats.xhp#par_id1459395
+msgid  "A paragraph style with a fixed-width font is transformed as pre-formatted text. Pre-formatted text is shown on the Wiki with a border around the text."
 msgstr ""
-"Prav tako so podprte enostavne tabele. Glave tabel so prevedene v ustrezne "
-"glave tabel sloga wikija. Vendar pa je oblikovanje obrob tabele, velikosti "
-"stolpcev in barv ozadja prezrto."
 
-#: wikiformats.xhp#par_id3541673.help.text
-msgid ""
-"Images cannot be exported by a transformation producing a single file of "
-"Wiki text. However, if the image is already uploaded to the target Wiki "
-"domain (e. g. WikiMedia Commons), then the transformation produces a valid "
-"image tag that includes the image. Image captions are also supported."
+#: mediawiki/help/wikiformats.xhp#hd_id4834131
+msgid  "Character styles"
+msgstr "Znakovni slogi"
+
+#: mediawiki/help/wikiformats.xhp#par_id6397595
+msgid  "Character styles modify the appearance of parts of a paragraph. The transformation supports bold, italics, bold/italics, subscript and superscript. All fixed width fonts are transformed into the Wiki typewriter style."
 msgstr ""
-"Slik ni mogoče izvoziti s preoblikovanjem, ki ustvari posamezno datoteko z "
-"besedilom wiki. A če je slika že prenesena v ciljno domeno wikija (npr. "
-"WikiMedia Commons), preoblikovanje ustvari veljavno značko slike, ki "
-"vključuje sliko. Naslovi slik so tudi podprti."
 
-#: wikiformats.xhp#par_id3735465.help.text
-msgid ""
-"Native OpenDocument hyperlinks are transformed into \"external\" Wiki links. "
-"Therefore, the built-in linking facility of OpenDocument should only be used "
-"to create links that point to other sites outside the Wiki web. For "
-"creating Wiki links that point to other subjects of the same Wiki domain, "
-"use Wiki links."
+#: mediawiki/help/wikiformats.xhp#hd_id5152745
+msgid  "Footnotes"
+msgstr "Sprotne opombe"
+
+#: mediawiki/help/wikiformats.xhp#par_id5238196
+msgid  "Note: The transformation uses the new style of footnotes with <ref> and <references> tags that requires the Cite.php extension to be installed into MediaWiki. If those tags occur as plain text in the transformation result, ask the Wiki administrator to install this extension."
 msgstr ""
-"Hiperpovezave OpenDocument se preoblikujejo v \"zunanje\" povezave wikija. "
-"Zato je vgrajeno povezovalno funkcijo zapisa OpenDocument smiselno "
-"uporabljati le za ustvarjanje povezav, ki vodijo na druga spletna mesta "
-"zunaj spletišča wikija. Če želite ustvariti povezave wiki, ki kažejo na "
-"druge predmete v isti domeni wiki, uporabite povezave wikija."
 
-#: wikiformats.xhp#par_id376598.help.text
-msgid ""
-"Explicit text alignment should not be used in Wiki articles. Nevertheless, "
-"text alignment is supported for left, centered, and right alignment of text."
+#: mediawiki/help/wikiformats.xhp#hd_id9405499
+msgid  "Images"
+msgstr "Slike"
+
+#: mediawiki/help/wikiformats.xhp#par_id3541673
+msgid  "Images cannot be exported by a transformation producing a single file of Wiki text. However, if the image is already uploaded to the target Wiki domain (e. g. WikiMedia Commons), then the transformation produces a valid image tag that includes the image. Image captions are also supported."
 msgstr ""
-"Izrecne poravnave besedila ni dovoljeno uprabiti v člankih Wiki. Ne glede na "
-"to je podprta leva, sredinska in desna poravnava besedila."
 
-#: wikiformats.xhp#par_id508133.help.text
-msgid ""
-"Apply a heading paragraph style to the headings in your Writer document. The "
-"Wiki will show the heading styles of the same outline level, formatted as "
-"defined by the Wiki engine."
+#: mediawiki/help/wikiformats.xhp#hd_id2162236
+msgid  "Tables"
+msgstr "Tabele"
+
+#: mediawiki/help/wikiformats.xhp#par_id3037202
+msgid  "Simple tables are supported well. Table headers are translated into corresponding Wiki style table headers. However, custom formatting of table borders, column sizes and background colors is ignored."
 msgstr ""
-"Za naslove v dokumentu programa Writer uporabite slog odstavka naslova. Wiki "
-"bo pokazal sloge naslovov na isti orisni ravni, oblikovane v skladu s "
-"funkcijami Wikija."
 
-#: wikiformats.xhp#par_id5238196.help.text
-msgid ""
-"Note: The transformation uses the new style of footnotes with <ref> and "
-"<references> tags that requires the Cite.php extension to be installed into "
-"MediaWiki. If those tags occur as plain text in the transformation result, "
-"ask the Wiki administrator to install this extension."
+#: mediawiki/help/wikiformats.xhp#hd_id2954496
+msgid  "Joined Cells"
+msgstr "Spojene celice"
+
+#: mediawiki/help/wikiformats.xhp#par_id8253730
+msgid  "OpenDocument and especially OpenOffice.org represent tables that have joined cells that span rows as tables with nested tables. In contrast, the wiki model of table is to declare column and row spans for such joined cells. "
 msgstr ""
-"Opomba: Preoblikovanje uporablja nov slog sprotnih opomb z značkama <ref> in "
-"<references>, za kar je potrebna namestitev razširitve Cite.php v "
-"MediaWiki. Če se te značke pokažejo kot navadno besedilo v rezultatu "
-"preoblikovanja, prosite skrbnika Wikija, da namesti to razširitev."
 
-#: wikiformats.xhp#par_id5630664.help.text
-msgid ""
-"The OpenDocument format used by Writer and the WikiMedia format are quite "
-"different. Only a subset of all features can be transformed from one format "
-"to the other."
+#: mediawiki/help/wikiformats.xhp#par_id8163090
+msgid  "If only columns of the same row are joined, the result of the transformation resembles the source document very well."
 msgstr ""
-"Zapis OpenDocument, ki ga uporablja Writer, in zapis WikiMedia sta zelo "
-"različna. Le podmnožico vseh značilnosti je mogoče prenesti iz enega zapisa "
-"v drugega."
 
-#: wikiformats.xhp#par_id6397595.help.text
-msgid ""
-"Character styles modify the appearance of parts of a paragraph. The "
-"transformation supports bold, italics, bold/italics, subscript and "
-"superscript. All fixed width fonts are transformed into the Wiki typewriter "
-"style."
+#: mediawiki/help/wikiformats.xhp#hd_id425122
+msgid  "Borders"
+msgstr "Obrobe"
+
+#: mediawiki/help/wikiformats.xhp#par_id1831110
+msgid  "Irrespective of custom table styles for border and background, a table is always exported as "\<emph\>prettytable"\</emph\>, which renders in the Wiki engine with simple borders and bold header."
 msgstr ""
-"Znakovni slogi spremenijo videz dela odstavka. Preoblikovanje podpira "
-"krepko, ležečo, krepko in ležečo, nadpisano in podpisano pisavo. Vse pisave "
-"z nespremenljivo širino se spremenijo v wikijev slog pisalnega stroja."
 
-#: wikiformats.xhp#par_id8163090.help.text
-msgid ""
-"If only columns of the same row are joined, the result of the transformation "
-"resembles the source document very well."
+#: mediawiki/help/wikiformats.xhp#hd_id6255073
+msgid  "Charset and special characters"
+msgstr "Nabor znakov in posebni znaki"
+
+#: mediawiki/help/wikiformats.xhp#par_id8216193
+msgid  "The charset of the transformation result is fixed to UTF-8. Depending on your system, this might not be the default charset. This might cause "special characters" to look broken when viewed with default settings. However, you can switch your editor to UTF-8 encoding to fix this. If your editor does not support switching the encoding, you can display the result of the transformation in the Firefox browser and switch the encoding to UTF-8 there. Now, you can cut and paste the transformation result to your program of choice."
 msgstr ""
-"Če so spojeni le stolpci iste vrstice, je rezultat transformacije podoben "
-"izvornemu dokumentu."
 
-#: wikiformats.xhp#par_id8216193.help.text
-msgid ""
-"The charset of the transformation result is fixed to UTF-8. Depending on "
-"your system, this might not be the default charset. This might cause "
-"\"special characters\" to look broken when viewed with default settings. "
-"However, you can switch your editor to UTF-8 encoding to fix this. If your "
-"editor does not support switching the encoding, you can display the result "
-"of the transformation in the Firefox browser and switch the encoding to "
-"UTF-8 there. Now, you can cut and paste the transformation result to your "
-"program of choice."
+#: mediawiki/help/wiki.xhp#bm_id3154408
+msgid  "\<bookmark_value\>Wiki;@WIKIEXTENSIONPRODUCTNAME@\</bookmark_value\>\<bookmark_value\>@WIKIEXTENSIONPRODUCTNAME@\</bookmark_value\>\<bookmark_value\>extensions;MediaWiki\</bookmark_value\>"
 msgstr ""
-"Nabor znakov preoblikovanja je nastavljen na UTF-8. Glede na vrsto sistema "
-"to morda ni vaš privzeti nabor znakov. Zgodi se lahko, da so \"posebni znaki\" "
-"videti okvarjeni, če jih gledate s privzetimi nastavitvami. Vendar lahko v "
-"svojem urejevalniku spremenite kodiranje znakov na UTF-8, da to odpravite. "
-"Če vaš urejevalnik ne podpira preklopa med kodnimi tabelami, lahko rezultat "
-"preoblikovanja prikažete v brskalniku Firefox in tam spremenite kodiranje "
-"znakov na UTF-8. Seveda lahko rezultat preoblikovanja izrežete in prilepite "
-"v program po svoji izbiri."
 
-#: wikiformats.xhp#par_id8253730.help.text
-msgid ""
-"OpenDocument and especially OpenOffice.org represent tables that have joined "
-"cells that span rows as tables with nested tables. In contrast, the wiki "
-"model of table is to declare column and row spans for such joined cells. "
-msgstr ""
-"OpenDocument in še posebej OpenOffice.org predstavljajo tabele s spojenimi "
-"celicami, ki se lahko raztezajo čez vrstice, kot tabele z gnezdenimi "
-"tabelami. Nasprotno s tem modeli tabel wiki vsebujejo deklaracije razpona "
-"stolpcev in vrstic v tako spojenih celicah. "
-
-#: wikiformats.xhp#par_id8654133.help.text
-msgid ""
-"The following list gives an overview of the text formats that the "
-"@WIKIEXTENSIONPRODUCTNAME@ can upload to the Wiki server."
-msgstr ""
-"Spodnji seznam podaja pregled vrst besedilnih besedilnih datotek, ki jih "
-"lahko razširitev @WIKIEXTENSIONPRODUCTNAME@ prenese na strežnik Wiki."
-
-#: wikiformats.xhp#par_id8942838.help.text
-msgid ""
-"Lists can reliably be exported when the whole list uses a consistent list "
-"style. Use the Numbering or Bullets icon to generate a list in Writer. If "
-"you need a list without numbering or bullets, use Format - Bullets and "
-"Numbering to define and apply the respective list style."
-msgstr ""
-"Sezname je mogoče izvoziti, če celoten seznam uporablja konsistenten "
-"seznamski slog. Če želite v modulu Write ustvariti seznam, uporabite ikono "
-"Oštevilčevanje ali Oznake. Če želite seznam brez oštevilčevanja ali oznak, "
-"uporabite Oblika - Oznake in oštevilčevanje, da določite in uporabite "
-"ustrezen slog seznama."
-
-#: wikiformats.xhp#tit.help.text
-msgctxt "wikiformats.xhp#tit.help.text"
-msgid "MediaWiki Formats"
-msgstr "Vrste datotek MediaWiki"
-
-#: wikisend.xhp#hd_id108340.help.text
-msgctxt "wikisend.xhp#hd_id108340.help.text"
-msgid "Send to MediaWiki"
-msgstr "Pošlji na MediaWiki"
-
-#: wikisend.xhp#par_id1743827.help.text
-msgid ""
-"In the Send to MediaWiki dialog, specify the settings for your current Wiki "
-"upload."
-msgstr ""
-"V pogovornem oknu MediaWiki določite nastavitve za trenutni prenos na wiki."
-
-#: wikisend.xhp#par_id2486342.help.text
-msgid ""
-"<ahelp hid=\".\">Enter an optional short summary or comment.</ahelp> See <link "
-"href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\">http://meta.wikimed"
-"ia.org/wiki/Help:Edit_summary</link>."
-msgstr ""
-"<ahelp hid=\".\">Vnesite neobvezen kratek povzetek ali komentar.</ahelp> "
-"Oglejte si <link href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\">htt"
-"p://meta.wikimedia.org/wiki/Help:Edit_summary (v angl.)</link>."
-
-#: wikisend.xhp#par_id2794885.help.text
-msgid ""
-"<ahelp hid=\".\">Enter the title of your Wiki entry. This is the top heading "
-"of your Wiki entry. For a new entry, the title must be unique on this Wiki. "
-"If you enter an existing title, your upload will overwrite the existing Wiki "
-"entry.</ahelp>"
-msgstr ""
-"<ahelp hid=\".\">Vnesite naslov svojega vnosa v Wiki. To je vrhnji naslov "
-"članka. Če gre za novo stran, mora biti naslov v tem Wikiju enkraten. Če "
-"vnesete obstoječi naslov, boste s prenosom prepisali obstoječo stran "
-"Wiki.</ahelp>"
-
-#: wikisend.xhp#par_id6592913.help.text
-msgid ""
-"<emph>Show in web browser</emph>: <ahelp hid=\".\">Check this box to open your "
-"system web browser and show the uploaded Wiki page.</ahelp>"
-msgstr ""
-"<emph>Pokaži v spletnem brskalniku</emph>: <ahelp hid=\".\">Označite to polje, "
-"če želite odpreti svoj spletni brskalnik in si ogledati preneseno stran "
-"Wiki.</ahelp>"
-
-#: wikisend.xhp#par_id664082.help.text
-msgid ""
-"<ahelp hid=\".\">Select the MediaWiki server where you want to publish your "
-"document. Click Add to add a new server to the list.</ahelp>"
-msgstr ""
-"<ahelp hid=\".\">Izberite strežnik MediaWiki, na katerem želite objaviti svoj "
-"dokument. Kliknite Dodaj, če želite na seznam dodati nov strežnik.</ahelp>"
-
-#: wikisend.xhp#par_id823999.help.text
-msgid ""
-"<emph>This is a minor edit</emph>: <ahelp hid=\".\">Check this box to mark the "
-"uploaded page as a minor edit of the already existing page with the same "
-"title.</ahelp>"
-msgstr ""
-"<emph>To je manjši popravek</emph>: <ahelp hid=\".\">Označite to polje, če "
-"želite označiti preneseno stran kot manjši popravek že obstoječe istoimenske "
-"strani.</ahelp>"
-
-#: wikisend.xhp#tit.help.text
-msgctxt "wikisend.xhp#tit.help.text"
-msgid "Send to MediaWiki"
-msgstr "Pošlji na MediaWiki"
-
-#: wikisettings.xhp#hd_id6425672.help.text
-msgctxt "wikisettings.xhp#hd_id6425672.help.text"
-msgid "MediaWiki Options"
-msgstr "Možnosti MediaWiki"
-
-#: wikisettings.xhp#par_id1029084.help.text
-msgid ""
-"When you click Add or Edit, the <link "
-"href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> dialog opens."
-msgstr ""
-"Če kliknete Dodaj ali Uredi, se odpre pogovorno okno <link "
-"href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link>."
-
-#: wikisettings.xhp#par_id1188390.help.text
-msgid ""
-"You can add, edit and remove MediaWiki servers. Open the dialog by <item "
-"type=\"menuitem\">Tools - Options - Internet - MediaWiki</item>. "
-"Alternatively, choose <item type=\"menuitem\">Tools - Extension "
-"Manager</item>, select the @WIKIEXTENSIONPRODUCTNAME@, and click the Options "
-"button."
-msgstr ""
-"Strežnike MediaWiki lahko dodate, uredite in odstranite. Odprite pogovorno "
-"okno z <item type=\"menuitem\">Orodja - Možnosti - Internet - "
-"MediaWiki</item>. Lahko pa tudi izberete <item type=\"menuitem\">Orodja - "
-"Upravitelj razširitev</item>, izberete razširitev @WIKIEXTENSIONPRODUCTNAME@ "
-"in kliknete gumb Možnosti."
-
-#: wikisettings.xhp#par_id300607.help.text
-msgid ""
-"<ahelp hid=\".\">Click Add to add a new Wiki server.<br/>Select an entry and "
-"click Edit to edit the account settings.<br/>Select an entry and click "
-"Remove to remove the entry from the list.</ahelp>"
-msgstr ""
-"<ahelp hid=\".\">Kliknite Dodaj, če želite dodati nov strežnik "
-"Wiki.<br/>Izberite vnos in klinite Uredi, če želite urediti nastavitve "
-"računa.<br/>Izberite vnos in kliknite Odstrani, če želite odstraniti vnos s "
-"seznama.</ahelp>"
-
-#: wikisettings.xhp#par_id3386333.help.text
-msgid ""
-"<ahelp hid=\".\" visibility=\"hidden\">Opens the MediaWiki dialog to edit the "
-"selected entry.</ahelp>"
-msgstr ""
-"<ahelp hid=\".\" visibility=\"hidden\">Odpre pogovorno okno MediaWiki, kjer "
-"uredite izbrani vnos.</ahelp>"
-
-#: wikisettings.xhp#par_id7285073.help.text
-msgid ""
-"<ahelp hid=\".\" visibility=\"hidden\">Removes the selected entry from the "
-"list.</ahelp>"
-msgstr ""
-"<ahelp hid=\".\" visibility=\"hidden\">Izbrani vnos odstrani s seznama.</ahelp>"
-
-#: wikisettings.xhp#par_id9786065.help.text
-msgid ""
-"<ahelp hid=\".\" visibility=\"hidden\">Opens the MediaWiki dialog to add a new "
-"entry to the list.</ahelp>"
-msgstr ""
-"<ahelp hid=\".\" visibility=\"hidden\">Odpre pogovorno okno MediaWiki, kjer "
-"dodate nov vnos na seznam.</ahelp>"
-
-#: wikisettings.xhp#tit.help.text
-msgctxt "wikisettings.xhp#tit.help.text"
-msgid "MediaWiki Options"
-msgstr "Možnosti MediaWiki"
-"X-Accelerator-Marker: ~\n"
-
-#: Addons.xcu#.Addons.AddonUI.OfficeMenuBarMerging.com.sun.star.wiki.S1.MenuItems.M2.Title.value.text
-msgid "To Media~Wiki..."
-msgstr "Na Media~Wiki ..."
-
-#: OptionsDialog.xcu#.OptionsDialog.Nodes.Internet.Leaves.com.sun.star.wiki.options.Label.value.text
-msgid "MediaWiki"
-msgstr "MediaWiki"
-"X-Accelerator-Marker: ~\n"
-
-#: WikiExtension.xcu#.WikiExtension.Strings.CancelSending.value.text
-msgid ""
-"The transfer has been interrupted. Please check the integrity of the wiki "
-"article."
-msgstr "Prenos je bil prekinjen. Preverite neoporečnost članka wiki."
-
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_AddButton.value.text
-msgid "~Add..."
-msgstr "~Dodaj ..."
-
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditButton.value.text
-msgid "~Edit..."
-msgstr "~Uredi ..."
-
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_AccountLine.value.text
-msgid "Account"
-msgstr "Račun"
-
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_PasswordLabel.value.text
-msgid "~Password"
-msgstr "~Geslo"
-
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_SaveBox.value.text
-msgid "~Save password"
-msgstr "~Shrani geslo"
-
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_UrlLabel.value.text
-msgid "U~RL"
-msgstr "U~RL"
-
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_UsernameLabel.value.text
-msgid "~Username"
-msgstr "~Uporabniško ime"
-
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_WikiLine.value.text
-msgid "MediaWiki Server"
-msgstr "Strežnik MediaWiki"
-
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_MediaWiki_Extension_String.value.text
-msgid "@WIKIEXTENSIONPRODUCTNAME@"
+#: mediawiki/help/wiki.xhp#hd_id5993530
+msgid  "@WIKIEXTENSIONPRODUCTNAME@"
 msgstr "Wiki-založnik"
 
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_MediaWiki_Title.value.text
-msgid "MediaWiki"
+#: mediawiki/help/wiki.xhp#par_id9647511
+msgid  "\<ahelp hid=\".\"\>By using the @WIKIEXTENSIONPRODUCTNAME@ you can upload your current Writer text document to a MediaWiki server. After uploading, all Wiki users can read your document on the Wiki.\</ahelp\>"
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id6468703
+msgid  "\<ahelp hid=\".\"\>Choose \<item type=\"menuitem\"\>File - Send - To MediaWiki\</item\> to upload the current Writer document to a MediaWiki server.\</ahelp\>"
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#hd_id4554582
+msgid  "System Requirements"
+msgstr "Sistemske zahteve"
+
+#: mediawiki/help/wiki.xhp#par_id2597430
+msgid  "StarOffice/StarSuite 9"
+msgstr "StarOffice/StarSuite 9"
+
+#: mediawiki/help/wiki.xhp#par_id8430738
+msgid  "OpenOffice.org 3.0"
+msgstr "OpenOffice.org 3.0"
+
+#: mediawiki/help/wiki.xhp#par_id9340495
+msgid  "Java Runtime Environment 1.4"
+msgstr "Javansko izvajalno okolje JRE 1.4"
+
+#: mediawiki/help/wiki.xhp#par_id7387615
+msgid  "A Wiki account on a supported \<link href=\"http://www.mediawiki.org/wiki/MediaWiki\"\>MediaWiki\</link\> server"
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#hd_id8047120
+msgid  "Installing @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "Namestitev razširitve @WIKIEXTENSIONPRODUCTNAME@"
+
+#: mediawiki/help/wiki.xhp#par_id4277169
+msgid  "Before you install the @WIKIEXTENSIONPRODUCTNAME@, ensure that %PRODUCTNAME uses a Java Runtime Environment (JRE). To check the status of the JRE, choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Java\</item\>. Ensure that "Use a Java runtime environment" is marked and that a Java runtime folder is selected in the big listbox. If no JRE was activated, then activate a JRE 1.4 or later and restart %PRODUCTNAME."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#hd_id567339
+msgid  "To Install the @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "Namestitev razširitve @WIKIEXTENSIONPRODUCTNAME@"
+
+#: mediawiki/help/wiki.xhp#par_id1732230
+msgid  "In a Writer window, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id4338511
+msgid  "In the Extension Manager dialog, click Add."
+msgstr "V Upravitelju razširitev kliknite Dodaj."
+
+#: mediawiki/help/wiki.xhp#par_id5882442
+msgid  "Locate the @WIKIEXTENSIONFILENAME@.oxt file, click Open, and then click Close. "
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id4008911
+msgid  "Close %PRODUCTNAME, and close also the Quickstarter if enabled."
+msgstr "Zaprite %PRODUCTNAME in Hitri zaganjalnik, če je vključen."
+
+#: mediawiki/help/wiki.xhp#par_id265511
+msgid  "Restart the software, open a text document, then choose \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\> to enter your Wiki settings. See "To Connect To a Wiki" below."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#hd_id3569444
+msgid  "To Remove the @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "Odstranitev razširitve @WIKIEXTENSIONPRODUCTNAME@"
+
+#: mediawiki/help/wiki.xhp#par_id2655110
+msgid  "In a Writer window, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id9504379
+msgid  "Click the plus sign (+) in front of My Extensions."
+msgstr "Kliknite znak plus (+) pred oznako Moje razširitve."
+
+#: mediawiki/help/wiki.xhp#par_id8431348
+msgid  "Select the extension, click Remove, and then click Close."
+msgstr "Izberite razširitev, kliknite Odstrani, nato kliknite Zapri."
+
+#: mediawiki/help/wiki.xhp#hd_id5316019
+msgid  "To Connect to a Wiki"
+msgstr "Povezava z Wikijem"
+
+#: mediawiki/help/wiki.xhp#par_id2381969
+msgid  "Note: You can store your user name and password for all respective dialogs inside %PRODUCTNAME. The password will be stored in a secure way, where access is maintained by a master password. To enable the master password, choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\>."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id3751640
+msgid  "Note: If you connect to the web using a proxy server, enter the proxy information to \<item type=\"menuitem\"\>Tools - Options - Internet - Proxy\</item\>, and restart the software."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id9533677
+msgid  "Open a Writer document, and choose \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\>."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id368968
+msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\"\>Options\</link\> dialog, click Add."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id6962187
+msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\"\>MediaWiki\</link\> dialog, enter the account information for the Wiki."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id5328836
+msgid  "In the URL textbox, enter the address of a Wiki that you want to connect to."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id389416
+msgid  "You can copy the URL from a web browser and paste it into the textbox."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id5906552
+msgid  "In the Username box, enter your user ID for your Wiki account."
+msgstr "V polje Uporabniško ime vnesite svoje uporabniško ime za račun Wiki."
+
+#: mediawiki/help/wiki.xhp#par_id9297158
+msgid  "If the Wiki allows anonymous write access, you can leave the Username and Password boxes empty."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id8869594
+msgid  "In the Password box, enter the password for your Wiki account, then click OK."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id292062
+msgid  "Optionally enable "Save password" to save the password between sessions. A master password is used to maintain access to all saved passwords. Choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\> to enable the master password. "Save password" is unavailable when the master password is not enabled."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#hd_id7044892
+msgid  "To Create a New Wiki Page"
+msgstr "Ustvarjanje nove strani wiki"
+
+#: mediawiki/help/wiki.xhp#par_id3514206
+msgid  "Open a Writer document."
+msgstr "Odprite dokument programa Writer."
+
+#: mediawiki/help/wiki.xhp#par_id944853
+msgid  "Write the content of the Wiki page. You can use formatting like text formats, headings, footnotes, and more. See the \<link href=\"@WIKIEXTENSIONID@/wikiformats.xhp\"\>list of supported formats\</link\>."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id4566484
+msgid  "Choose \<item type=\"menuitem\"\>File - Send - To MediaWiki\</item\>."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id228278
+msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikisend.xhp\"\>Send to MediaWiki\</link\> dialog, specify the settings for your entry."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id2564165
+msgid  "\<emph\>MediaWiki server\</emph\>: Select the Wiki."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id5566576
+msgid  "\<emph\>Title\</emph\>: Type the title of your page. Type the title of an existing page to overwrite the page with your current text document. Type a new title to create a new page on the Wiki."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id9688711
+msgid  "\<emph\>Summary\</emph\>: Enter an optional short summary of your page."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id4123661
+msgid  "\<emph\>This is a minor edit\</emph\>: Check this box to mark the uploaded page as a minor edit of the already existing page with the same title."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id452284
+msgid  "\<emph\>Show in web browser\</emph\>: Check this box to open your system web browser and show the uploaded Wiki page."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id8346812
+msgid  "Click Send."
+msgstr "Kliknite Pošlji."
+
+#: mediawiki/help/wiki.xhp#tit
+msgid  "@WIKIEXTENSIONPRODUCTNAME@"
+msgstr "Wiki-založnik"
+
+#: mediawiki/help/wikisettings.xhp#hd_id6425672
+msgid  "MediaWiki Options"
+msgstr "Možnosti MediaWiki"
+
+#: mediawiki/help/wikisettings.xhp#par_id1188390
+msgid  "You can add, edit and remove MediaWiki servers. Open the dialog by \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\>. Alternatively, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>, select the @WIKIEXTENSIONPRODUCTNAME@, and click the Options button."
+msgstr ""
+
+#: mediawiki/help/wikisettings.xhp#par_id300607
+msgid  "\<ahelp hid=\".\"\>Click Add to add a new Wiki server.\<br/\>Select an entry and click Edit to edit the account settings.\<br/\>Select an entry and click Remove to remove the entry from the list.\</ahelp\>"
+msgstr ""
+
+#: mediawiki/help/wikisettings.xhp#par_id9786065
+msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the MediaWiki dialog to add a new entry to the list.\</ahelp\>"
+msgstr ""
+
+#: mediawiki/help/wikisettings.xhp#par_id3386333
+msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the MediaWiki dialog to edit the selected entry.\</ahelp\>"
+msgstr ""
+
+#: mediawiki/help/wikisettings.xhp#par_id7285073
+msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Removes the selected entry from the list.\</ahelp\>"
+msgstr ""
+
+#: mediawiki/help/wikisettings.xhp#par_id1029084
+msgid  "When you click Add or Edit, the \<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\"\>MediaWiki\</link\> dialog opens."
+msgstr ""
+
+#: mediawiki/help/wikisettings.xhp#tit
+msgid  "MediaWiki Options"
+msgstr "Možnosti MediaWiki"
+
+#: mediawiki/help/wikiaccount.xhp#hd_id960722
+msgid  "MediaWiki"
 msgstr "MediaWiki"
 
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_NewWikiPage_Label1.value.text
-msgid ""
-"A wiki article with the title '$ARG1' does not exist yet. Do you want to "
-"create a new article with that name?"
+#: mediawiki/help/wikiaccount.xhp#par_id4571672
+msgid  "Use the MediaWiki dialog to add or edit your MediaWiki account settings."
 msgstr ""
-"Članek wiki z naslovom '$ARG1' še ne obstaja. Želite ustvariti nov članek s "
-"tem imenom?"
 
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_No.value.text
-msgid "No"
-msgstr "Ne"
+#: mediawiki/help/wikiaccount.xhp#par_id7631458
+msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter the URL of a MediaWiki server, starting with http://\</ahelp\>"
+msgstr ""
 
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_OK.value.text
-msgid "OK"
-msgstr "V redu"
+#: mediawiki/help/wikiaccount.xhp#par_id7862483
+msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter your user name on the MediaWiki server. Leave empty for anonymous access.\</ahelp\>"
+msgstr ""
 
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_RemoveButton.value.text
-msgid "~Remove"
-msgstr "Odst~rani"
+#: mediawiki/help/wikiaccount.xhp#par_id1113010
+msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter your password on the MediaWiki server. Leave empty for anonymous access.\</ahelp\>"
+msgstr ""
 
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendButton.value.text
-msgid "~Send"
-msgstr "~Pošlji"
+#: mediawiki/help/wikiaccount.xhp#par_id656758
+msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enable to store your password between sessions. The master password must be enabled, see \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\>.\</ahelp\>"
+msgstr ""
 
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendTitle.value.text
-msgid "Send to MediaWiki"
+#: mediawiki/help/wikiaccount.xhp#par_id3112582
+msgid  "Enter the Internet address of a Wiki server in a format like http://wiki.services.openoffice.org/wiki or copy the URL from a web browser."
+msgstr ""
+
+#: mediawiki/help/wikiaccount.xhp#par_id628070
+msgid  "If the Wiki allows anonymous access, you can leave the account text boxes empty. Else enter your user name and password."
+msgstr ""
+
+#: mediawiki/help/wikiaccount.xhp#par_id9046601
+msgid  "If you have enabled the master password feature on the Security tab page of the Tools - Options - %PRODUCTNAME dialog, then the software can store your password and automatically insert the data where necessary. Enable the "Save password" checkbox to store your password."
+msgstr ""
+
+#: mediawiki/help/wikiaccount.xhp#tit
+msgid  "MediaWiki"
+msgstr "MediaWiki"
+
+#: mediawiki/help/wikisend.xhp#hd_id108340
+msgid  "Send to MediaWiki"
 msgstr "Pošlji na MediaWiki"
 
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_BrowserCheck.value.text
-msgid "Show in web ~browser"
-msgstr "Pokaži v spletnem ~brskalniku"
-
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_Label1.value.text
-msgid "Media~Wiki Server"
-msgstr "Strežnik Media~Wiki"
-
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_Label2.value.text
-msgid "~Title"
-msgstr "~Naslov"
-
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_Label3.value.text
-msgid "S~ummary"
-msgstr "Po~vzetek"
-
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_MinorCheck.value.text
-msgid "This is a ~minor edit"
-msgstr "To je ~manjši popravek"
-
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_WikiArticle.value.text
-msgid "Wiki article"
-msgstr "Članek Wiki"
-
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_WikiPageExists_Label1.value.text
-msgid ""
-"A wiki article with the title '$ARG1' already exists.&#13;&#13;Do you want "
-"to replace the current article with your article?&#13;&#13;"
+#: mediawiki/help/wikisend.xhp#par_id1743827
+msgid  "In the Send to MediaWiki dialog, specify the settings for your current Wiki upload."
 msgstr ""
-"Članek wiki z naslovom '$ARG1' že obstaja.&#13;&#13;Želite zamenjati "
-"obstoječi članek s svojim člankom?&#13;&#13;"
 
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_Yes.value.text
-msgid "Yes"
-msgstr "Da"
+#: mediawiki/help/wikisend.xhp#par_id664082
+msgid  "\<ahelp hid=\".\"\>Select the MediaWiki server where you want to publish your document. Click Add to add a new server to the list.\</ahelp\>"
+msgstr ""
 
-#: WikiExtension.xcu#.WikiExtension.Strings.GeneralSendError.value.text
-msgid "The operation 'Send to MediaWiki' could not be completed successfully."
+#: mediawiki/help/wikisend.xhp#par_id2794885
+msgid  "\<ahelp hid=\".\"\>Enter the title of your Wiki entry. This is the top heading of your Wiki entry. For a new entry, the title must be unique on this Wiki. If you enter an existing title, your upload will overwrite the existing Wiki entry.\</ahelp\>"
+msgstr ""
+
+#: mediawiki/help/wikisend.xhp#par_id2486342
+msgid  "\<ahelp hid=\".\"\>Enter an optional short summary or comment.\</ahelp\> See \<link href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\"\>http://meta.wikimedia.org/wiki/Help:Edit_summary\</link\>."
+msgstr ""
+
+#: mediawiki/help/wikisend.xhp#par_id823999
+msgid  "\<emph\>This is a minor edit\</emph\>: \<ahelp hid=\".\"\>Check this box to mark the uploaded page as a minor edit of the already existing page with the same title.\</ahelp\>"
+msgstr ""
+
+#: mediawiki/help/wikisend.xhp#par_id6592913
+msgid  "\<emph\>Show in web browser\</emph\>: \<ahelp hid=\".\"\>Check this box to open your system web browser and show the uploaded Wiki page.\</ahelp\>"
+msgstr ""
+
+#: mediawiki/help/wikisend.xhp#tit
+msgid  "Send to MediaWiki"
+msgstr "Pošlji na MediaWiki"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Addons.xcu#.Addons.AddonUI.OfficeMenuBarMerging.com.sun.star.wiki.S1.MenuItems.M2.Title
+msgid  "To Media~Wiki..."
+msgstr "Na Media~Wiki ..."
+
+#: mediawiki/src/registry/data/org/openoffice/Office/OptionsDialog.xcu#.OptionsDialog.Nodes.Internet.Leaves.com.sun.star.wiki.options.Label
+msgid  "MediaWiki"
+msgstr "MediaWiki"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.GeneralSendError
+msgid  "The operation 'Send to MediaWiki' could not be completed successfully."
 msgstr "Dejanje 'Pošlji na MediaWiki' ni bilo uspešno dokončano."
 
-#: WikiExtension.xcu#.WikiExtension.Strings.InvalidURL.value.text
-msgid "A connection could not be created because the URL is invalid."
-msgstr "Povezave ni mogoče vzpostaviti, ker je URL neveljaven."
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.NoWikiFilter
+msgid  "The MediaWiki export filter cannot be found. Choose 'Tools-XML Filter Settings' to install the filter, or use the setup to install the component."
+msgstr ""
 
-#: WikiExtension.xcu#.WikiExtension.Strings.NoConnectionToURL.value.text
-msgid "A connection to the MediaWiki system at '$ARG1' could not be created."
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.NoConnectionToURL
+msgid  "A connection to the MediaWiki system at '$ARG1' could not be created."
 msgstr "Povezave s sistemom MediaWiki na naslovu '$ARG1' ni mogoče ustvariti."
 
-#: WikiExtension.xcu#.WikiExtension.Strings.NoURL.value.text
-msgid "Specify a MediaWiki server by providing a URL."
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.WrongLogin
+msgid  "User name or password is incorrect. Please try again, or leave the fields blank for an anonymous connection."
+msgstr ""
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.InvalidURL
+msgid  "A connection could not be created because the URL is invalid."
+msgstr "Povezave ni mogoče vzpostaviti, ker je URL neveljaven."
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.NoURL
+msgid  "Specify a MediaWiki server by providing a URL."
 msgstr "Določite strežnik MediaWiki z navedbo njegovega URL."
 
-#: WikiExtension.xcu#.WikiExtension.Strings.NoWikiFilter.value.text
-msgid ""
-"The MediaWiki export filter cannot be found. Choose 'Tools-XML Filter "
-"Settings' to install the filter, or use the setup to install the component."
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.CancelSending
+msgid  "The transfer has been interrupted. Please check the integrity of the wiki article."
 msgstr ""
-"Izvoznega filtra MediaWiki ni mogoče najti. Izberite 'Orodja-Nastavitve "
-"filtra XML', če želite namestiti filter, sicer uporabite namestitveni "
-"program, da namestite komponento."
 
-#: WikiExtension.xcu#.WikiExtension.Strings.UnknownCert.value.text
-msgid "The certificate of the selected site is unknown."
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_UrlLabel
+msgid  "U~RL"
+msgstr "U~RL"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_UsernameLabel
+msgid  "~Username"
+msgstr "~Uporabniško ime"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_PasswordLabel
+msgid  "~Password"
+msgstr "~Geslo"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendTitle
+msgid  "Send to MediaWiki"
+msgstr "Pošlji na MediaWiki"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_WikiArticle
+msgid  "Wiki article"
+msgstr "Članek Wiki"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_No
+msgid  "No"
+msgstr "Ne"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_OK
+msgid  "OK"
+msgstr "V redu"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_Yes
+msgid  "Yes"
+msgstr "Da"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_AddButton
+msgid  "~Add..."
+msgstr "~Dodaj ..."
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditButton
+msgid  "~Edit..."
+msgstr "~Uredi ..."
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendButton
+msgid  "~Send"
+msgstr "~Pošlji"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_RemoveButton
+msgid  "~Remove"
+msgstr "Odst~rani"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_NewWikiPage_Label1
+msgid  "A wiki article with the title '$ARG1' does not exist yet. Do you want to create a new article with that name?"
+msgstr ""
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_Label1
+msgid  "Media~Wiki Server"
+msgstr "Strežnik Media~Wiki"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_Label2
+msgid  "~Title"
+msgstr "~Naslov"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_Label3
+msgid  "S~ummary"
+msgstr "Po~vzetek"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_MinorCheck
+msgid  "This is a ~minor edit"
+msgstr "To je ~manjši popravek"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_BrowserCheck
+msgid  "Show in web ~browser"
+msgstr "Pokaži v spletnem ~brskalniku"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.UnknownCert
+msgid  "The certificate of the selected site is unknown."
 msgstr "Potrdilo izbranega spletnega mesta ni znano."
 
-#: WikiExtension.xcu#.WikiExtension.Strings.WrongLogin.value.text
-msgid ""
-"User name or password is incorrect. Please try again, or leave the fields "
-"blank for an anonymous connection."
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_MediaWiki_Title
+msgid  "MediaWiki"
+msgstr "MediaWiki"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_AccountLine
+msgid  "Account"
+msgstr "Račun"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_WikiLine
+msgid  "MediaWiki Server"
+msgstr "Strežnik MediaWiki"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_SaveBox
+msgid  "~Save password"
+msgstr "~Shrani geslo"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_MediaWiki_Extension_String
+msgid  "@WIKIEXTENSIONPRODUCTNAME@"
+msgstr "Wiki-založnik"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_WikiPageExists_Label1
+msgid  "A wiki article with the title '$ARG1' already exists.&#13;&#13;Do you want to replace the current article with your article?&#13;&#13;"
 msgstr ""
-"Uporabniško ime ali geslo je nepravilno. Poskusite znova ali pustite polja "
-"prazna, če želite vzpostaviti anonimno povezavo."

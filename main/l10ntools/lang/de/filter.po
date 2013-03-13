@@ -1,1447 +1,1380 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
 
-#: StarBase.xcu#StarBase.UIName.value.text
-msgid "OpenDocument Database"
-msgstr "Open Office Datenbank"
 
-#: calc8.xcu#calc8.UIName.value.text
-msgid "Calc 8"
-msgstr "Calc 8"
+#: source/config/fragments/filters/writer_globaldocument_StarOffice_XML_Writer_ui.xcu#writer_globaldocument_StarOffice_XML_Writer.UIName
+msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document"
+msgstr ""
 
-#: calc8_template.xcu#calc8_template.UIName.value.text
-msgid "Calc 8 Template"
-msgstr "Calc 8-Vorlage"
-
-#: calc_MS_Excel_2003_XML.xcu#calc_MS_Excel_2003_XML.UIName.value.text
-msgid "Microsoft Excel 2003 XML"
-msgstr "Microsoft Excel 2003 XML"
-
-#: chart8.xcu#chart8.UIName.value.text
-msgid "Chart 8"
-msgstr "Chart 8"
-
-#: draw8.xcu#draw8.UIName.value.text
-msgid "Draw 8"
-msgstr "Draw 8"
-
-#: draw8_template.xcu#draw8_template.UIName.value.text
-msgid "Draw 8 Template"
-msgstr "Draw 8-Vorlage"
-
-#: impress8.xcu#impress8.UIName.value.text
-msgid "Impress 8"
-msgstr "Impress 8"
-
-#: impress8_template.xcu#impress8_template.UIName.value.text
-msgid "Impress 8 Template"
-msgstr "Impress 8-Vorlage"
-
-#: math8.xcu#math8.UIName.value.text
-msgid "Math 8"
-msgstr "Math 8"
-
-#: writer8.xcu#writer8.UIName.value.text
-msgid "Writer 8"
-msgstr "Writer 8"
-
-#: writer8_template.xcu#writer8_template.UIName.value.text
-msgid "Writer 8 Template"
-msgstr "Writer 8-Vorlage"
-
-#: writer_MS_Word_2003_XML.xcu#writer_MS_Word_2003_XML.UIName.value.text
-msgid "Microsoft Word 2003 XML"
-msgstr "Microsoft Word 2003 XML"
-
-#: writerglobal8.xcu#writerglobal8.UIName.value.text
-msgid "Writer 8 Master Document"
-msgstr "Writer 8-Hauptdokument"
-
-#: writerweb8_writer_template.xcu#writerweb8_writer_template.UIName.value.text
-msgid "Writer/Web 8 Template"
-msgstr "Writer/Web 8-Vorlage"
-
-#: HTML_MasterDoc_ui.xcu#HTML_MasterDoc.UIName.value.text
-msgid "HTML Document (%productname% Master Document)"
-msgstr "HTML-Dokument (%productname% Globaldokument)"
-
-#: HTML__StarCalc__ui.xcu#HTML__StarCalc_.UIName.value.text
-msgid "HTML Document (%productname% Calc)"
-msgstr "HTML-Dokument (%productname% Calc)"
-
-#: HTML__StarWriter__ui.xcu#HTML__StarWriter_.UIName.value.text
-msgid "HTML Document (%productname% Writer)"
-msgstr "HTML-Dokument (%productname% Writer)"
-
-#: HTML_ui.xcu#HTML.UIName.value.text
-msgid "HTML Document"
-msgstr "HTML-Dokument"
-
-#: MS_Excel_2003_XML_ui.xcu#MS_Excel_2003_XML.UIName.value.text
-msgid "Microsoft Excel 2003 XML"
-msgstr "Microsoft Excel 2003 XML"
-
-#: MS_Excel_4_0_Vorlage_Template_ui.xcu#MS_Excel_4.0_Vorlage/Template.UIName.value.text
-msgid "Microsoft Excel 4.0 Template"
-msgstr "Microsoft Excel 4.0 Vorlage"
-
-#: MS_Excel_5_0_95_Vorlage_Template_ui.xcu#MS_Excel_5.0/95_Vorlage/Template.UIName.value.text
-msgid "Microsoft Excel 5.0 Template"
-msgstr "Microsoft Excel 5.0 Vorlage"
-
-#: MS_Excel_95_Vorlage_Template_ui.xcu#MS_Excel_95_Vorlage/Template.UIName.value.text
-msgid "Microsoft Excel 95 Template"
-msgstr "Microsoft Excel 95 Vorlage"
-
-#: MS_Excel_97_Vorlage_Template_ui.xcu#MS_Excel_97_Vorlage/Template.UIName.value.text
-msgid "Microsoft Excel 97/2000/XP Template"
-msgstr "Microsoft Excel 97/2000/XP Vorlage"
-
-#: MS_PowerPoint_97_Vorlage_ui.xcu#MS_PowerPoint_97_Vorlage.UIName.value.text
-msgid "Microsoft PowerPoint 97/2000/XP Template"
-msgstr "Microsoft PowerPoint 97/2000/XP Vorlage"
-
-#: MS_Word_2003_XML_ui.xcu#MS_Word_2003_XML.UIName.value.text
-msgid "Microsoft Word 2003 XML"
-msgstr "Microsoft Word 2003 XML"
-
-#: MS_Word_2007_XML_Template_ui.xcu#MS_Word_2007_XML_Template.UIName.value.text
-msgid "Microsoft Word 2007 XML Template"
-msgstr "Microsoft Word 2007 XML-Vorlage"
-
-#: MS_Word_2007_XML_ui.xcu#MS_Word_2007_XML.UIName.value.text
-msgid "Microsoft Word 2007 XML"
-msgstr "Microsoft Word 2007 XML"
-
-#: MS_Word_95_Vorlage_ui.xcu#MS_Word_95_Vorlage.UIName.value.text
-msgid "Microsoft Word 95 Template"
-msgstr "Microsoft Word 95 Vorlage"
-
-#: MS_Word_97_Vorlage_ui.xcu#MS_Word_97_Vorlage.UIName.value.text
-msgid "Microsoft Word 97/2000/XP Template"
-msgstr "Microsoft Word 97/2000/XP Vorlage"
-
-#: StarCalc_3_0_Vorlage_Template_ui.xcu#StarCalc_3.0_Vorlage/Template.UIName.value.text
-msgid "StarCalc 3.0 Template"
-msgstr "StarCalc 3.0 Vorlage"
-
-#: StarCalc_4_0_Vorlage_Template_ui.xcu#StarCalc_4.0_Vorlage/Template.UIName.value.text
-msgid "StarCalc 4.0 Template"
-msgstr "StarCalc 4.0 Vorlage"
-
-#: StarCalc_5_0_Vorlage_Template_ui.xcu#StarCalc_5.0_Vorlage/Template.UIName.value.text
-msgid "StarCalc 5.0 Template"
-msgstr "StarCalc 5.0 Vorlage"
-
-#: StarDraw_3_0_Vorlage__StarImpress__ui.xcu#StarDraw_3.0_Vorlage__StarImpress_.UIName.value.text
-msgid "StarDraw 3.0 Template (%productname% Impress)"
-msgstr "StarDraw 3.0 Vorlage (%productname% Impress)"
-
-#: StarDraw_3_0_Vorlage_ui.xcu#StarDraw_3.0_Vorlage.UIName.value.text
-msgid "StarDraw 3.0 Template"
-msgstr "StarDraw 3.0 Vorlage"
-
-#: StarDraw_5_0_Vorlage__StarImpress__ui.xcu#StarDraw_5.0_Vorlage__StarImpress_.UIName.value.text
-msgid "StarDraw 5.0 Template (%productname% Impress)"
-msgstr "StarDraw 5.0 Vorlage (%productname% Impress)"
-
-#: StarDraw_5_0_Vorlage_ui.xcu#StarDraw_5.0_Vorlage.UIName.value.text
-msgid "StarDraw 5.0 Template"
-msgstr "StarDraw 5.0 Vorlage"
-
-#: StarImpress_4_0_Vorlage_ui.xcu#StarImpress_4.0_Vorlage.UIName.value.text
-msgid "StarImpress 4.0 Template"
-msgstr "StarImpress 4.0 Vorlage"
-
-#: StarImpress_5_0_Vorlage_ui.xcu#StarImpress_5.0_Vorlage.UIName.value.text
-msgid "StarImpress 5.0 Template"
-msgstr "StarImpress 5.0 Vorlage"
-
-#: StarImpress_5_0__packed__ui.xcu#StarImpress_5.0__packed_.UIName.value.text
-msgid "StarImpress 5.0 Packed"
-msgstr "StarImpress 5.0 gepackt"
-
-#: StarOffice_XML__Base__ui.xcu#StarOffice_XML__Base_.UIName.value.text
-msgid "ODF Database"
-msgstr "ODF Datenbank"
-
-#: StarOffice_XML__Calc__ui.xcu#StarOffice_XML__Calc_.UIName.value.text
-msgid "%productname% %formatversion% Spreadsheet"
-msgstr "%productname% %formatversion% Tabellendokument"
-
-#: StarOffice_XML__Chart__ui.xcu#StarOffice_XML__Chart_.UIName.value.text
-msgid "%productname% %formatversion% Chart"
-msgstr "%productname% %formatversion% Diagramm"
-
-#: StarOffice_XML__Draw__ui.xcu#StarOffice_XML__Draw_.UIName.value.text
-msgid "%productname% %formatversion% Drawing"
-msgstr "%productname% %formatversion% Zeichnung"
-
-#: StarOffice_XML__Impress__ui.xcu#StarOffice_XML__Impress_.UIName.value.text
-msgid "%productname% %formatversion% Presentation"
-msgstr "%productname% %formatversion% Präsentation"
-
-#: StarOffice_XML__Math__ui.xcu#StarOffice_XML__Math_.UIName.value.text
-msgid "%productname% %formatversion% Formula"
-msgstr "%productname% %formatversion% Formel"
-
-#: StarOffice_XML__Writer__ui.xcu#StarOffice_XML__Writer_.UIName.value.text
-msgctxt "StarOffice_XML__Writer__ui.xcu#StarOffice_XML__Writer_.UIName.value.text"
-msgid "%productname% %formatversion% Text Document"
-msgstr "%productname% %formatversion% Textdokument"
-
-#: StarWriter_3_0_Vorlage_Template_ui.xcu#StarWriter_3.0_Vorlage/Template.UIName.value.text
-msgid "StarWriter 3.0 Template"
-msgstr "StarWriter 3.0 Vorlage"
-
-#: StarWriter_4_0_GlobalDocument_ui.xcu#StarWriter_4.0/GlobalDocument.UIName.value.text
-msgid "StarWriter 4.0 Master Document"
-msgstr "StarWriter 4.0 Globaldokument"
-
-#: StarWriter_4_0_Vorlage_Template_ui.xcu#StarWriter_4.0_Vorlage/Template.UIName.value.text
-msgid "StarWriter 4.0 Template"
-msgstr "StarWriter 4.0 Vorlage"
-
-#: StarWriter_5_0_GlobalDocument_ui.xcu#StarWriter_5.0/GlobalDocument.UIName.value.text
-msgid "StarWriter 5.0 Master Document"
+#: source/config/fragments/filters/StarWriter_5_0_GlobalDocument_ui.xcu#StarWriter 5.0/GlobalDocument.UIName
+msgid  "StarWriter 5.0 Master Document"
 msgstr "StarWriter 5.0 Globaldokument"
 
-#: StarWriter_5_0_Vorlage_Template_ui.xcu#StarWriter_5.0_Vorlage/Template.UIName.value.text
-msgid "StarWriter 5.0 Template"
-msgstr "StarWriter 5.0 Vorlage"
+#: source/config/fragments/filters/StarOffice_XML__Math__ui.xcu#StarOffice XML (Math).UIName
+msgid  "%oooxmlformatname% %oooxmlformatversion% Formula"
+msgstr ""
 
-#: StarWriter_Web_4_0_Vorlage_Template_ui.xcu#StarWriter/Web_4.0_Vorlage/Template.UIName.value.text
-msgid "StarWriter/Web 4.0 Template"
-msgstr "StarWriter/Web 4.0 Vorlage"
+#: source/config/fragments/filters/MS_Excel_4_0_Vorlage_Template_ui.xcu#MS Excel 4.0 Vorlage/Template.UIName
+msgid  "Microsoft Excel 4.0 Template"
+msgstr "Microsoft Excel 4.0 Vorlage"
 
-#: StarWriter_Web_5_0_Vorlage_Template_ui.xcu#StarWriter/Web_5.0_Vorlage/Template.UIName.value.text
-msgid "StarWriter/Web 5.0 Template"
-msgstr "StarWriter/Web 5.0 Vorlage"
+#: source/config/fragments/filters/HTML_ui.xcu#HTML.UIName
+msgid  "HTML Document"
+msgstr "HTML-Dokument"
 
-#: Text__StarWriter_Web__ui.xcu#Text__StarWriter/Web_.UIName.value.text
-msgid "Text (%productname% Writer/Web)"
-msgstr "Text (%productname% Writer/Web)"
+#: source/config/fragments/filters/StarOffice_XML__Calc__ui.xcu#StarOffice XML (Calc).UIName
+msgid  "%oooxmlformatname% %oooxmlformatversion% Spreadsheet"
+msgstr ""
 
-#: Text___txt___csv__StarCalc__ui.xcu#Text___txt___csv__StarCalc_.UIName.value.text
-msgid "Text CSV"
-msgstr "Text CSV"
+#: source/config/fragments/filters/StarOffice_XML__Chart__ui.xcu#StarOffice XML (Chart).UIName
+msgid  "%oooxmlformatname% %oooxmlformatversion% Chart"
+msgstr ""
 
-#: Text__encoded___StarWriter_GlobalDocument__ui.xcu#Text__encoded___StarWriter/GlobalDocument_.UIName.value.text
-msgid "Text Encoded (%productname% Master Document)"
-msgstr "Text Kodiert (%productname% Globaldokument)"
-
-#: Text__encoded___StarWriter_Web__ui.xcu#Text__encoded___StarWriter/Web_.UIName.value.text
-msgid "Text Encoded (%productname% Writer/Web)"
-msgstr "Text Kodiert (%productname% Writer/Web)"
-
-#: Text__encoded__ui.xcu#Text__encoded_.UIName.value.text
-msgid "Text Encoded"
-msgstr "Text Kodiert"
-
-#: Text_ui.xcu#Text.UIName.value.text
-msgid "Text"
-msgstr "Text"
-
-#: UOF_presentation_ui.xcu#UOF_presentation.UIName.value.text
-msgid "Unified Office Format presentation"
-msgstr "Unified Office Format Präsentation"
-
-#: UOF_spreadsheet_ui.xcu#UOF_spreadsheet.UIName.value.text
-msgid "Unified Office Format spreadsheet"
-msgstr "Unified Office Format Tabellendokument"
-
-#: UOF_text_ui.xcu#UOF_text.UIName.value.text
-msgid "Unified Office Format text"
-msgstr "Unified Office Format Textdokument"
-
-#: calc8_template_ui.xcu#calc8_template.UIName.value.text
-msgid "ODF Spreadsheet Template"
-msgstr "ODF Tabellendokumentvorlage"
-
-#: calc8_ui.xcu#calc8.UIName.value.text
-msgid "ODF Spreadsheet"
-msgstr "ODF Tabellendokument"
-
-#: calc_HTML_WebQuery_ui.xcu#calc_HTML_WebQuery.UIName.value.text
-msgid "Web Page Query (%productname% Calc)"
-msgstr "Webseiten-Abfrage (%productname% Calc)"
-
-#: calc_MS_Excel_2007_Binary_ui.xcu#Calc_MS_Excel_2007_Binary.UIName.value.text
-msgid "Microsoft Excel 2007 Binary"
-msgstr "Microsoft Excel 2007 Binär-Dokument"
-
-#: calc_MS_Excel_2007_XML_Template_ui.xcu#Calc_MS_Excel_2007_XML_Template.UIName.value.text
-msgid "Microsoft Excel 2007 XML Template"
-msgstr "Microsoft Excel 2007 XML-Vorlage"
-
-#: calc_MS_Excel_2007_XML_ui.xcu#Calc_MS_Excel_2007_XML.UIName.value.text
-msgid "Microsoft Excel 2007 XML"
-msgstr "Microsoft Excel 2007 XML"
-
-#: calc_StarOffice_XML_Calc_Template_ui.xcu#calc_StarOffice_XML_Calc_Template.UIName.value.text
-msgid "%productname% %formatversion% Spreadsheet Template"
-msgstr "%productname% %formatversion% Tabellendokument Vorlage"
-
-#: chart8_ui.xcu#chart8.UIName.value.text
-msgid "ODF Chart"
-msgstr "ODF Diagramm"
-
-#: draw8_template_ui.xcu#draw8_template.UIName.value.text
-msgid "ODF Drawing Template"
-msgstr "ODF Zeichnungsdokumentvorlage"
-
-#: draw8_ui.xcu#draw8.UIName.value.text
-msgid "ODF Drawing"
-msgstr "ODF Zeichnung"
-
-#: draw_StarOffice_XML_Draw_Template_ui.xcu#draw_StarOffice_XML_Draw_Template.UIName.value.text
-msgid "%productname% %formatversion% Drawing Template"
-msgstr "%productname% %formatversion% Zeichnungsvorlage"
-
-#: draw_html_Export_ui.xcu#draw_html_Export.UIName.value.text
-msgid "HTML Document (%productname% Draw)"
-msgstr "HTML-Dokument (%productname% Draw)"
-
-#: impress8_draw_ui.xcu#impress8_draw.UIName.value.text
-msgid "ODF Drawing (Impress)"
-msgstr "ODF Zeichnung (Impress)"
-
-#: impress8_template_ui.xcu#impress8_template.UIName.value.text
-msgid "ODF Presentation Template"
-msgstr "ODF Präsentationsdokumentvorlage"
-
-#: impress8_ui.xcu#impress8.UIName.value.text
-msgid "ODF Presentation"
-msgstr "ODF Präsentation"
-
-#: impress_MS_PowerPoint_2007_XML_Template_ui.xcu#Impress_MS_PowerPoint_2007_XML_Template.UIName.value.text
-msgid "Microsoft PowerPoint 2007 XML Template"
+#: source/config/fragments/filters/impress_MS_PowerPoint_2007_XML_Template_ui.xcu#Impress MS PowerPoint 2007 XML Template.UIName
+msgid  "Microsoft PowerPoint 2007 XML Template"
 msgstr "Microsoft PowerPoint 2007 XML-Vorlage"
 
-#: impress_MS_PowerPoint_2007_XML_ui.xcu#Impress_MS_PowerPoint_2007_XML.UIName.value.text
-msgid "Microsoft PowerPoint 2007 XML"
-msgstr "Microsoft PowerPoint 2007 XML"
+#: source/config/fragments/filters/impress8_ui.xcu#impress8.UIName
+msgid  "ODF Presentation"
+msgstr "ODF Präsentation"
 
-#: impress_StarOffice_XML_Draw_ui.xcu#impress_StarOffice_XML_Draw.UIName.value.text
-msgid "%productname% %formatversion% Drawing (%productname% Impress)"
-msgstr "%productname% %formatversion% Zeichnung (%productname% Impress)"
+#: source/config/fragments/filters/StarImpress_5_0__packed__ui.xcu#StarImpress 5.0 (packed).UIName
+msgid  "StarImpress 5.0 Packed"
+msgstr "StarImpress 5.0 gepackt"
 
-#: impress_StarOffice_XML_Impress_Template_ui.xcu#impress_StarOffice_XML_Impress_Template.UIName.value.text
-msgid "%productname% %formatversion% Presentation Template"
-msgstr "%productname% %formatversion% Präsentationsvorlage"
+#: source/config/fragments/filters/MS_Word_2003_XML_ui.xcu#MS Word 2003 XML.UIName
+msgid  "Microsoft Word 2003 XML"
+msgstr "Microsoft Word 2003 XML"
 
-#: impress_html_Export_ui.xcu#impress_html_Export.UIName.value.text
-msgid "HTML Document (%productname% Impress)"
-msgstr "HTML-Dokument (%productname% Impress)"
+#: source/config/fragments/filters/StarDraw_3_0_Vorlage_ui.xcu#StarDraw 3.0 Vorlage.UIName
+msgid  "StarDraw 3.0 Template"
+msgstr "StarDraw 3.0 Vorlage"
 
-#: math8_ui.xcu#math8.UIName.value.text
-msgid "ODF Formula"
+#: source/config/fragments/filters/writer_globaldocument_StarOffice_XML_Writer_GlobalDocument_ui.xcu#writer_globaldocument_StarOffice_XML_Writer_GlobalDocument.UIName
+msgid  "%oooxmlformatname% %oooxmlformatversion% Master Document"
+msgstr ""
+
+#: source/config/fragments/filters/UOF_presentation_ui.xcu#UOF presentation.UIName
+msgid  "Unified Office Format presentation"
+msgstr "Unified Office Format Präsentation"
+
+#: source/config/fragments/filters/MS_Excel_5_0_95_Vorlage_Template_ui.xcu#MS Excel 5.0/95 Vorlage/Template.UIName
+msgid  "Microsoft Excel 5.0 Template"
+msgstr "Microsoft Excel 5.0 Vorlage"
+
+#: source/config/fragments/filters/StarImpress_4_0_Vorlage_ui.xcu#StarImpress 4.0 Vorlage.UIName
+msgid  "StarImpress 4.0 Template"
+msgstr "StarImpress 4.0 Vorlage"
+
+#: source/config/fragments/filters/StarWriter_3_0_Vorlage_Template_ui.xcu#StarWriter 3.0 Vorlage/Template.UIName
+msgid  "StarWriter 3.0 Template"
+msgstr "StarWriter 3.0 Vorlage"
+
+#: source/config/fragments/filters/StarOffice_XML__Draw__ui.xcu#StarOffice XML (Draw).UIName
+msgid  "%oooxmlformatname% %oooxmlformatversion% Drawing"
+msgstr ""
+
+#: source/config/fragments/filters/StarWriter_4_0_Vorlage_Template_ui.xcu#StarWriter 4.0 Vorlage/Template.UIName
+msgid  "StarWriter 4.0 Template"
+msgstr "StarWriter 4.0 Vorlage"
+
+#: source/config/fragments/filters/Text__StarWriter_Web__ui.xcu#Text (StarWriter/Web).UIName
+msgid  "Text (%productname% Writer/Web)"
+msgstr "Text (%productname% Writer/Web)"
+
+#: source/config/fragments/filters/StarDraw_5_0_Vorlage_ui.xcu#StarDraw 5.0 Vorlage.UIName
+msgid  "StarDraw 5.0 Template"
+msgstr "StarDraw 5.0 Vorlage"
+
+#: source/config/fragments/filters/writer8_ui.xcu#writer8.UIName
+msgid  "ODF Text Document"
+msgstr "ODF Textdokument"
+
+#: source/config/fragments/filters/calc8_ui.xcu#calc8.UIName
+msgid  "ODF Spreadsheet"
+msgstr "ODF Tabellendokument"
+
+#: source/config/fragments/filters/math8_ui.xcu#math8.UIName
+msgid  "ODF Formula"
 msgstr "ODF Formel"
 
-#: writer8_template_ui.xcu#writer8_template.UIName.value.text
-msgid "ODF Text Document Template"
-msgstr "ODF Textdokumentvorlage"
+#: source/config/fragments/filters/StarOffice_XML__Base__ui.xcu#StarOffice XML (Base).UIName
+msgid  "ODF Database"
+msgstr "ODF Datenbank"
 
-#: writer8_ui.xcu#writer8.UIName.value.text
-msgctxt "writer8_ui.xcu#writer8.UIName.value.text"
-msgid "ODF Text Document"
-msgstr "ODF Textdokument"
+#: source/config/fragments/filters/StarOffice_XML__Impress__ui.xcu#StarOffice XML (Impress).UIName
+msgid  "%oooxmlformatname% %oooxmlformatversion% Presentation"
+msgstr ""
 
-#: writer_StarOffice_XML_Writer_Template_ui.xcu#writer_StarOffice_XML_Writer_Template.UIName.value.text
-msgid "%productname% %formatversion% Text Document Template"
-msgstr "%productname% %formatversion% Textdokumentvorlage"
+#: source/config/fragments/filters/impress_StarOffice_XML_Draw_ui.xcu#impress_StarOffice_XML_Draw.UIName
+msgid  "%oooxmlformatname% %oooxmlformatversion% Drawing (%productname% Impress)"
+msgstr ""
 
-#: writer_globaldocument_StarOffice_XML_Writer_GlobalDocument_ui.xcu#writer_globaldocument_StarOffice_XML_Writer_GlobalDocument.UIName.value.text
-msgid "%productname% %formatversion% Master Document"
-msgstr "%productname% %formatversion% Globaldokument"
-
-#: writer_globaldocument_StarOffice_XML_Writer_ui.xcu#writer_globaldocument_StarOffice_XML_Writer.UIName.value.text
-msgctxt "writer_globaldocument_StarOffice_XML_Writer_ui.xcu#writer_globaldocument_StarOffice_XML_Writer.UIName.value.text"
-msgid "%productname% %formatversion% Text Document"
-msgstr "%productname% %formatversion% Textdokument"
-
-#: writer_web_StarOffice_XML_Writer_Web_Template_ui.xcu#writer_web_StarOffice_XML_Writer_Web_Template.UIName.value.text
-msgid "%productname% %formatversion% HTML Template"
-msgstr "%productname% %formatversion% HTML-Dokumentvorlage"
-
-#: writer_web_StarOffice_XML_Writer_ui.xcu#writer_web_StarOffice_XML_Writer.UIName.value.text
-msgid "%productname% %formatversion% Text Document (%productname% Writer/Web)"
-msgstr "%productname% %formatversion% Textdokument (%productname% Writer/Web)"
-
-#: writerglobal8_ui.xcu#writerglobal8.UIName.value.text
-msgid "ODF Master Document"
+#: source/config/fragments/filters/writerglobal8_ui.xcu#writerglobal8.UIName
+msgid  "ODF Master Document"
 msgstr "ODF Globaldokument"
 
-#: writerglobal8_writer_ui.xcu#writerglobal8_writer.UIName.value.text
-msgctxt "writerglobal8_writer_ui.xcu#writerglobal8_writer.UIName.value.text"
-msgid "ODF Text Document"
+#: source/config/fragments/filters/calc_HTML_WebQuery_ui.xcu#calc_HTML_WebQuery.UIName
+msgid  "Web Page Query (%productname% Calc)"
+msgstr "Webseiten-Abfrage (%productname% Calc)"
+
+#: source/config/fragments/filters/impress8_draw_ui.xcu#impress8_draw.UIName
+msgid  "ODF Drawing (Impress)"
+msgstr "ODF Zeichnung (Impress)"
+
+#: source/config/fragments/filters/calc_MS_Excel_2007_XML_Template_ui.xcu#Calc MS Excel 2007 XML Template.UIName
+msgid  "Microsoft Excel 2007 XML Template"
+msgstr "Microsoft Excel 2007 XML-Vorlage"
+
+#: source/config/fragments/filters/StarCalc_5_0_Vorlage_Template_ui.xcu#StarCalc 5.0 Vorlage/Template.UIName
+msgid  "StarCalc 5.0 Template"
+msgstr "StarCalc 5.0 Vorlage"
+
+#: source/config/fragments/filters/HTML_MasterDoc_ui.xcu#HTML_MasterDoc.UIName
+msgid  "HTML Document (%productname% Master Document)"
+msgstr "HTML-Dokument (%productname% Globaldokument)"
+
+#: source/config/fragments/filters/writer_web_StarOffice_XML_Writer_Web_Template_ui.xcu#writer_web_StarOffice_XML_Writer_Web_Template.UIName
+msgid  "%oooxmlformatname% %oooxmlformatversion% HTML Template"
+msgstr ""
+
+#: source/config/fragments/filters/MS_Word_97_Vorlage_ui.xcu#MS Word 97 Vorlage.UIName
+msgid  "Microsoft Word 97/2000/XP Template"
+msgstr "Microsoft Word 97/2000/XP Vorlage"
+
+#: source/config/fragments/filters/draw_StarOffice_XML_Draw_Template_ui.xcu#draw_StarOffice_XML_Draw_Template.UIName
+msgid  "%oooxmlformatname% %oooxmlformatversion% Drawing Template"
+msgstr ""
+
+#: source/config/fragments/filters/writerweb8_writer_ui.xcu#writerweb8_writer.UIName
+msgid  "%productname% Text (%productname% Writer/Web)"
+msgstr "%productname% Text (%productname% Writer/Web)"
+
+#: source/config/fragments/filters/calc_StarOffice_XML_Calc_Template_ui.xcu#calc_StarOffice_XML_Calc_Template.UIName
+msgid  "%oooxmlformatname% %oooxmlformatversion% Spreadsheet Template"
+msgstr ""
+
+#: source/config/fragments/filters/UOF_spreadsheet_ui.xcu#UOF spreadsheet.UIName
+msgid  "Unified Office Format spreadsheet"
+msgstr "Unified Office Format Tabellendokument"
+
+#: source/config/fragments/filters/StarImpress_5_0_Vorlage_ui.xcu#StarImpress 5.0 Vorlage.UIName
+msgid  "StarImpress 5.0 Template"
+msgstr "StarImpress 5.0 Vorlage"
+
+#: source/config/fragments/filters/writer_StarOffice_XML_Writer_Template_ui.xcu#writer_StarOffice_XML_Writer_Template.UIName
+msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document Template"
+msgstr ""
+
+#: source/config/fragments/filters/chart8_ui.xcu#chart8.UIName
+msgid  "ODF Chart"
+msgstr "ODF Diagramm"
+
+#: source/config/fragments/filters/draw8_template_ui.xcu#draw8_template.UIName
+msgid  "ODF Drawing Template"
+msgstr "ODF Zeichnungsdokumentvorlage"
+
+#: source/config/fragments/filters/StarDraw_3_0_Vorlage__StarImpress__ui.xcu#StarDraw 3.0 Vorlage (StarImpress).UIName
+msgid  "StarDraw 3.0 Template (%productname% Impress)"
+msgstr "StarDraw 3.0 Vorlage (%productname% Impress)"
+
+#: source/config/fragments/filters/HTML__StarCalc__ui.xcu#HTML (StarCalc).UIName
+msgid  "HTML Document (%productname% Calc)"
+msgstr "HTML-Dokument (%productname% Calc)"
+
+#: source/config/fragments/filters/Text__encoded__ui.xcu#Text (encoded).UIName
+msgid  "Text Encoded"
+msgstr "Text Kodiert"
+
+#: source/config/fragments/filters/MS_Word_95_Vorlage_ui.xcu#MS Word 95 Vorlage.UIName
+msgid  "Microsoft Word 95 Template"
+msgstr "Microsoft Word 95 Vorlage"
+
+#: source/config/fragments/filters/MS_Word_2007_XML_Template_ui.xcu#MS Word 2007 XML Template.UIName
+msgid  "Microsoft Word 2007 XML Template"
+msgstr "Microsoft Word 2007 XML-Vorlage"
+
+#: source/config/fragments/filters/NSO_Writer_UOF2_ui.xcu#NSO Writer UOF2.UIName
+msgid  "Uniform Office Format 2 Text"
+msgstr ""
+
+#: source/config/fragments/filters/NSO_Impress_UOF2_ui.xcu#NSO Impress UOF2.UIName
+msgid  "Uniform Office Format 2 presentation"
+msgstr ""
+
+#: source/config/fragments/filters/StarCalc_4_0_Vorlage_Template_ui.xcu#StarCalc 4.0 Vorlage/Template.UIName
+msgid  "StarCalc 4.0 Template"
+msgstr "StarCalc 4.0 Vorlage"
+
+#: source/config/fragments/filters/calc8_template_ui.xcu#calc8_template.UIName
+msgid  "ODF Spreadsheet Template"
+msgstr "ODF Tabellendokumentvorlage"
+
+#: source/config/fragments/filters/writerglobal8_writer_ui.xcu#writerglobal8_writer.UIName
+msgid  "ODF Text Document"
 msgstr "ODF Textdokument"
 
-#: writerweb8_writer_template_ui.xcu#writerweb8_writer_template.UIName.value.text
-msgid "HTML Document Template"
+#: source/config/fragments/filters/calc_MS_Excel_2007_XML_ui.xcu#Calc MS Excel 2007 XML.UIName
+msgid  "Microsoft Excel 2007 XML"
+msgstr "Microsoft Excel 2007 XML"
+
+#: source/config/fragments/filters/draw8_ui.xcu#draw8.UIName
+msgid  "ODF Drawing"
+msgstr "ODF Zeichnung"
+
+#: source/config/fragments/filters/Text__encoded___StarWriter_Web__ui.xcu#Text (encoded) (StarWriter/Web).UIName
+msgid  "Text Encoded (%productname% Writer/Web)"
+msgstr "Text Kodiert (%productname% Writer/Web)"
+
+#: source/config/fragments/filters/Text___txt___csv__StarCalc__ui.xcu#Text - txt - csv (StarCalc).UIName
+msgid  "Text CSV"
+msgstr "Text CSV"
+
+#: source/config/fragments/filters/MS_Excel_2003_XML_ui.xcu#MS Excel 2003 XML.UIName
+msgid  "Microsoft Excel 2003 XML"
+msgstr "Microsoft Excel 2003 XML"
+
+#: source/config/fragments/filters/StarWriter_Web_5_0_Vorlage_Template_ui.xcu#StarWriter/Web 5.0 Vorlage/Template.UIName
+msgid  "StarWriter/Web 5.0 Template"
+msgstr "StarWriter/Web 5.0 Vorlage"
+
+#: source/config/fragments/filters/HTML__StarWriter__ui.xcu#HTML (StarWriter).UIName
+msgid  "HTML Document (%productname% Writer)"
+msgstr "HTML-Dokument (%productname% Writer)"
+
+#: source/config/fragments/filters/StarWriter_4_0_GlobalDocument_ui.xcu#StarWriter 4.0/GlobalDocument.UIName
+msgid  "StarWriter 4.0 Master Document"
+msgstr "StarWriter 4.0 Globaldokument"
+
+#: source/config/fragments/filters/StarCalc_3_0_Vorlage_Template_ui.xcu#StarCalc 3.0 Vorlage/Template.UIName
+msgid  "StarCalc 3.0 Template"
+msgstr "StarCalc 3.0 Vorlage"
+
+#: source/config/fragments/filters/impress_html_Export_ui.xcu#impress_html_Export.UIName
+msgid  "HTML Document (%productname% Impress)"
+msgstr "HTML-Dokument (%productname% Impress)"
+
+#: source/config/fragments/filters/MS_PowerPoint_97_Vorlage_ui.xcu#MS PowerPoint 97 Vorlage.UIName
+msgid  "Microsoft PowerPoint 97/2000/XP Template"
+msgstr "Microsoft PowerPoint 97/2000/XP Vorlage"
+
+#: source/config/fragments/filters/calc_MS_Excel_2007_Binary_ui.xcu#Calc MS Excel 2007 Binary.UIName
+msgid  "Microsoft Excel 2007 Binary"
+msgstr "Microsoft Excel 2007 Binär-Dokument"
+
+#: source/config/fragments/filters/writer8_template_ui.xcu#writer8_template.UIName
+msgid  "ODF Text Document Template"
+msgstr "ODF Textdokumentvorlage"
+
+#: source/config/fragments/filters/StarOffice_XML__Writer__ui.xcu#StarOffice XML (Writer).UIName
+msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document"
+msgstr ""
+
+#: source/config/fragments/filters/impress8_template_ui.xcu#impress8_template.UIName
+msgid  "ODF Presentation Template"
+msgstr "ODF Präsentationsdokumentvorlage"
+
+#: source/config/fragments/filters/draw_html_Export_ui.xcu#draw_html_Export.UIName
+msgid  "HTML Document (%productname% Draw)"
+msgstr "HTML-Dokument (%productname% Draw)"
+
+#: source/config/fragments/filters/Text__encoded___StarWriter_GlobalDocument__ui.xcu#Text (encoded) (StarWriter/GlobalDocument).UIName
+msgid  "Text Encoded (%productname% Master Document)"
+msgstr "Text Kodiert (%productname% Globaldokument)"
+
+#: source/config/fragments/filters/StarWriter_5_0_Vorlage_Template_ui.xcu#StarWriter 5.0 Vorlage/Template.UIName
+msgid  "StarWriter 5.0 Template"
+msgstr "StarWriter 5.0 Vorlage"
+
+#: source/config/fragments/filters/MS_Excel_95_Vorlage_Template_ui.xcu#MS Excel 95 Vorlage/Template.UIName
+msgid  "Microsoft Excel 95 Template"
+msgstr "Microsoft Excel 95 Vorlage"
+
+#: source/config/fragments/filters/writerweb8_writer_template_ui.xcu#writerweb8_writer_template.UIName
+msgid  "HTML Document Template"
 msgstr "HTML-Dokumentvorlage"
 
-#: writerweb8_writer_ui.xcu#writerweb8_writer.UIName.value.text
-msgid "%productname% Text (%productname% Writer/Web)"
-msgstr "%productname% Text (%productname% Writer/Web)"
-"X-Accelerator-Marker: ~\n"
+#: source/config/fragments/filters/MS_Excel_97_Vorlage_Template_ui.xcu#MS Excel 97 Vorlage/Template.UIName
+msgid  "Microsoft Excel 97/2000/XP Template"
+msgstr "Microsoft Excel 97/2000/XP Vorlage"
 
-#: bmp_Export.xcu#bmp_Export.UIName.value.text
-msgctxt "bmp_Export.xcu#bmp_Export.UIName.value.text"
-msgid "BMP - Windows Bitmap"
-msgstr "BMP - Windows Bitmap"
+#: source/config/fragments/filters/MS_Word_2007_XML_ui.xcu#MS Word 2007 XML.UIName
+msgid  "Microsoft Word 2007 XML"
+msgstr "Microsoft Word 2007 XML"
 
-#: bmp_Import.xcu#bmp_Import.UIName.value.text
-msgctxt "bmp_Import.xcu#bmp_Import.UIName.value.text"
-msgid "BMP - Windows Bitmap"
-msgstr "BMP - Windows Bitmap"
+#: source/config/fragments/filters/impress_MS_PowerPoint_2007_XML_ui.xcu#Impress MS PowerPoint 2007 XML.UIName
+msgid  "Microsoft PowerPoint 2007 XML"
+msgstr "Microsoft PowerPoint 2007 XML"
 
-#: dxf_Import.xcu#dxf_Import.UIName.value.text
-msgid "DXF - AutoCAD Interchange Format"
-msgstr "DXF - AutoCAD Interchange Format"
+#: source/config/fragments/filters/UOF_text_ui.xcu#UOF text.UIName
+msgid  "Unified Office Format text"
+msgstr "Unified Office Format Textdokument"
 
-#: emf_Export.xcu#emf_Export.UIName.value.text
-msgctxt "emf_Export.xcu#emf_Export.UIName.value.text"
-msgid "EMF - Enhanced Metafile"
-msgstr "EMF - Enhanced Metafile"
+#: source/config/fragments/filters/writer_web_StarOffice_XML_Writer_ui.xcu#writer_web_StarOffice_XML_Writer.UIName
+msgid  "%oooxmlformatname% %oooxmlformatversion% Text Document (%productname% Writer/Web)"
+msgstr ""
 
-#: emf_Import.xcu#emf_Import.UIName.value.text
-msgctxt "emf_Import.xcu#emf_Import.UIName.value.text"
-msgid "EMF - Enhanced Metafile"
-msgstr "EMF - Enhanced Metafile"
+#: source/config/fragments/filters/impress_StarOffice_XML_Impress_Template_ui.xcu#impress_StarOffice_XML_Impress_Template.UIName
+msgid  "%oooxmlformatname% %oooxmlformatversion% Presentation Template"
+msgstr ""
 
-#: eps_Export.xcu#eps_Export.UIName.value.text
-msgctxt "eps_Export.xcu#eps_Export.UIName.value.text"
-msgid "EPS - Encapsulated PostScript"
-msgstr "EPS - Encapsulated PostScript"
+#: source/config/fragments/filters/StarDraw_5_0_Vorlage__StarImpress__ui.xcu#StarDraw 5.0 Vorlage (StarImpress).UIName
+msgid  "StarDraw 5.0 Template (%productname% Impress)"
+msgstr "StarDraw 5.0 Vorlage (%productname% Impress)"
 
-#: eps_Import.xcu#eps_Import.UIName.value.text
-msgctxt "eps_Import.xcu#eps_Import.UIName.value.text"
-msgid "EPS - Encapsulated PostScript"
-msgstr "EPS - Encapsulated PostScript"
+#: source/config/fragments/filters/Text_ui.xcu#Text.UIName
+msgid  "Text"
+msgstr "Text"
 
-#: gif_Export.xcu#gif_Export.UIName.value.text
-msgctxt "gif_Export.xcu#gif_Export.UIName.value.text"
-msgid "GIF - Graphics Interchange Format"
-msgstr "GIF - Graphics Interchange-Format"
+#: source/config/fragments/filters/StarWriter_Web_4_0_Vorlage_Template_ui.xcu#StarWriter/Web 4.0 Vorlage/Template.UIName
+msgid  "StarWriter/Web 4.0 Template"
+msgstr "StarWriter/Web 4.0 Vorlage"
 
-#: gif_Import.xcu#gif_Import.UIName.value.text
-msgctxt "gif_Import.xcu#gif_Import.UIName.value.text"
-msgid "GIF - Graphics Interchange Format"
-msgstr "GIF - Graphics Interchange-Format"
+#: source/config/fragments/filters/NSO_Calc_UOF2_ui.xcu#NSO Calc UOF2.UIName
+msgid  "Uniform Office Format 2 spreadsheet"
+msgstr ""
 
-#: jpg_Export.xcu#jpg_Export.UIName.value.text
-msgctxt "jpg_Export.xcu#jpg_Export.UIName.value.text"
-msgid "JPEG - Joint Photographic Experts Group"
-msgstr "JPEG - Joint Photographic Experts Group"
-
-#: jpg_Import.xcu#jpg_Import.UIName.value.text
-msgctxt "jpg_Import.xcu#jpg_Import.UIName.value.text"
-msgid "JPEG - Joint Photographic Experts Group"
-msgstr "JPEG - Joint Photographic Experts Group"
-
-#: met_Export.xcu#met_Export.UIName.value.text
-msgctxt "met_Export.xcu#met_Export.UIName.value.text"
-msgid "MET - OS/2 Metafile"
-msgstr "MET - OS/2 Metafile"
-
-#: met_Import.xcu#met_Import.UIName.value.text
-msgctxt "met_Import.xcu#met_Import.UIName.value.text"
-msgid "MET - OS/2 Metafile"
-msgstr "MET - OS/2 Metafile"
-
-#: pbm_Export.xcu#pbm_Export.UIName.value.text
-msgctxt "pbm_Export.xcu#pbm_Export.UIName.value.text"
-msgid "PBM - Portable Bitmap"
-msgstr "PBM - Portable Bitmap"
-
-#: pbm_Import.xcu#pbm_Import.UIName.value.text
-msgctxt "pbm_Import.xcu#pbm_Import.UIName.value.text"
-msgid "PBM - Portable Bitmap"
-msgstr "PBM - Portable Bitmap"
-
-#: pcd_Import_Base.xcu#pcd_Import_Base.UIName.value.text
-msgid "PCD - Kodak Photo CD (768x512)"
-msgstr "PCD - Kodak Photo CD (768x512)"
-
-#: pcd_Import_Base16.xcu#pcd_Import_Base16.UIName.value.text
-msgid "PCD - Kodak Photo CD (192x128)"
-msgstr "PCD - Kodak Photo CD (192x128)"
-
-#: pcd_Import_Base4.xcu#pcd_Import_Base4.UIName.value.text
-msgid "PCD - Kodak Photo CD (384x256)"
-msgstr "PCD - Kodak Photo CD (384x256)"
-
-#: pct_Export.xcu#pct_Export.UIName.value.text
-msgctxt "pct_Export.xcu#pct_Export.UIName.value.text"
-msgid "PCT - Mac Pict"
-msgstr "PCT - Mac Pict"
-
-#: pct_Import.xcu#pct_Import.UIName.value.text
-msgctxt "pct_Import.xcu#pct_Import.UIName.value.text"
-msgid "PCT - Mac Pict"
-msgstr "PCT - Mac Pict"
-
-#: pcx_Import.xcu#pcx_Import.UIName.value.text
-msgid "PCX - Zsoft Paintbrush"
-msgstr "PCX - Zsoft Paintbrush"
-
-#: pgm_Export.xcu#pgm_Export.UIName.value.text
-msgctxt "pgm_Export.xcu#pgm_Export.UIName.value.text"
-msgid "PGM - Portable Graymap"
-msgstr "PGM - Portable Graymap"
-
-#: pgm_Import.xcu#pgm_Import.UIName.value.text
-msgctxt "pgm_Import.xcu#pgm_Import.UIName.value.text"
-msgid "PGM - Portable Graymap"
-msgstr "PGM - Portable Graymap"
-
-#: png_Export.xcu#png_Export.UIName.value.text
-msgctxt "png_Export.xcu#png_Export.UIName.value.text"
-msgid "PNG - Portable Network Graphic"
-msgstr "PNG - Portable Network Graphic"
-
-#: png_Import.xcu#png_Import.UIName.value.text
-msgctxt "png_Import.xcu#png_Import.UIName.value.text"
-msgid "PNG - Portable Network Graphic"
-msgstr "PNG - Portable Network Graphic"
-
-#: ppm_Export.xcu#ppm_Export.UIName.value.text
-msgctxt "ppm_Export.xcu#ppm_Export.UIName.value.text"
-msgid "PPM - Portable Pixelmap"
+#: source/config/fragments/internalgraphicfilters/ppm_Export.xcu#ppm_Export.UIName
+msgid  "PPM - Portable Pixelmap"
 msgstr "PPM - Portable Pixelmap"
 
-#: ppm_Import.xcu#ppm_Import.UIName.value.text
-msgctxt "ppm_Import.xcu#ppm_Import.UIName.value.text"
-msgid "PPM - Portable Pixelmap"
-msgstr "PPM - Portable Pixelmap"
+#: source/config/fragments/internalgraphicfilters/pbm_Import.xcu#pbm_Import.UIName
+msgid  "PBM - Portable Bitmap"
+msgstr "PBM - Portable Bitmap"
 
-#: psd_Import.xcu#psd_Import.UIName.value.text
-msgid "PSD - Adobe Photoshop"
-msgstr "PSD - Adobe Photoshop"
-
-#: ras_Export.xcu#ras_Export.UIName.value.text
-msgctxt "ras_Export.xcu#ras_Export.UIName.value.text"
-msgid "RAS - Sun Raster Image"
-msgstr "RAS - Sun Raster Image"
-
-#: ras_Import.xcu#ras_Import.UIName.value.text
-msgctxt "ras_Import.xcu#ras_Import.UIName.value.text"
-msgid "RAS - Sun Raster Image"
-msgstr "RAS - Sun Raster Image"
-
-#: sgf_Import.xcu#sgf_Import.UIName.value.text
-msgid "SGF - StarWriter Graphics Format"
+#: source/config/fragments/internalgraphicfilters/sgf_Import.xcu#sgf_Import.UIName
+msgid  "SGF - StarWriter Graphics Format"
 msgstr "SGF - StarWriter Graphics Format"
 
-#: sgv_Import.xcu#sgv_Import.UIName.value.text
-msgid "SGV - StarDraw 2.0"
+#: source/config/fragments/internalgraphicfilters/svg_Export.xcu#svg_Export.UIName
+msgid  "SVG - Scalable Vector Graphics"
+msgstr "SVG - Scalable Vector Graphics"
+
+#: source/config/fragments/internalgraphicfilters/wmf_Import.xcu#wmf_Import.UIName
+msgid  "WMF - Windows Metafile"
+msgstr "WMF - Windows Metafile"
+
+#: source/config/fragments/internalgraphicfilters/ppm_Import.xcu#ppm_Import.UIName
+msgid  "PPM - Portable Pixelmap"
+msgstr "PPM - Portable Pixelmap"
+
+#: source/config/fragments/internalgraphicfilters/jpg_Import.xcu#jpg_Import.UIName
+msgid  "JPEG - Joint Photographic Experts Group"
+msgstr "JPEG - Joint Photographic Experts Group"
+
+#: source/config/fragments/internalgraphicfilters/tif_Import.xcu#tif_Import.UIName
+msgid  "TIFF - Tagged Image File Format"
+msgstr "TIFF - Tagged Image File Format"
+
+#: source/config/fragments/internalgraphicfilters/pcd_Import_Base16.xcu#pcd_Import_Base16.UIName
+msgid  "PCD - Kodak Photo CD (192x128)"
+msgstr "PCD - Kodak Photo CD (192x128)"
+
+#: source/config/fragments/internalgraphicfilters/eps_Import.xcu#eps_Import.UIName
+msgid  "EPS - Encapsulated PostScript"
+msgstr "EPS - Encapsulated PostScript"
+
+#: source/config/fragments/internalgraphicfilters/ras_Import.xcu#ras_Import.UIName
+msgid  "RAS - Sun Raster Image"
+msgstr "RAS - Sun Raster Image"
+
+#: source/config/fragments/internalgraphicfilters/eps_Export.xcu#eps_Export.UIName
+msgid  "EPS - Encapsulated PostScript"
+msgstr "EPS - Encapsulated PostScript"
+
+#: source/config/fragments/internalgraphicfilters/xpm_Import.xcu#xpm_Import.UIName
+msgid  "XPM - X PixMap"
+msgstr "XPM - X PixMap"
+
+#: source/config/fragments/internalgraphicfilters/sgv_Import.xcu#sgv_Import.UIName
+msgid  "SGV - StarDraw 2.0"
 msgstr "SGV - StarDraw 2.0"
 
-#: svg_Export.xcu#svg_Export.UIName.value.text
-msgctxt "svg_Export.xcu#svg_Export.UIName.value.text"
-msgid "SVG - Scalable Vector Graphics"
-msgstr "SVG - Scalable Vector Graphics"
+#: source/config/fragments/internalgraphicfilters/bmp_Import.xcu#bmp_Import.UIName
+msgid  "BMP - Windows Bitmap"
+msgstr "BMP - Windows Bitmap"
 
-#: svg_Import.xcu#svg_Import.UIName.value.text
-msgctxt "svg_Import.xcu#svg_Import.UIName.value.text"
-msgid "SVG - Scalable Vector Graphics"
-msgstr "SVG - Scalable Vector Graphics"
+#: source/config/fragments/internalgraphicfilters/wmf_Export.xcu#wmf_Export.UIName
+msgid  "WMF - Windows Metafile"
+msgstr "WMF - Windows Metafile"
 
-#: svm_Export.xcu#svm_Export.UIName.value.text
-msgctxt "svm_Export.xcu#svm_Export.UIName.value.text"
-msgid "SVM - StarView Metafile"
+#: source/config/fragments/internalgraphicfilters/emf_Import.xcu#emf_Import.UIName
+msgid  "EMF - Enhanced Metafile"
+msgstr "EMF - Enhanced Metafile"
+
+#: source/config/fragments/internalgraphicfilters/pcd_Import_Base.xcu#pcd_Import_Base.UIName
+msgid  "PCD - Kodak Photo CD (768x512)"
+msgstr "PCD - Kodak Photo CD (768x512)"
+
+#: source/config/fragments/internalgraphicfilters/bmp_Export.xcu#bmp_Export.UIName
+msgid  "BMP - Windows Bitmap"
+msgstr "BMP - Windows Bitmap"
+
+#: source/config/fragments/internalgraphicfilters/pct_Export.xcu#pct_Export.UIName
+msgid  "PCT - Mac Pict"
+msgstr "PCT - Mac Pict"
+
+#: source/config/fragments/internalgraphicfilters/emf_Export.xcu#emf_Export.UIName
+msgid  "EMF - Enhanced Metafile"
+msgstr "EMF - Enhanced Metafile"
+
+#: source/config/fragments/internalgraphicfilters/psd_Import.xcu#psd_Import.UIName
+msgid  "PSD - Adobe Photoshop"
+msgstr "PSD - Adobe Photoshop"
+
+#: source/config/fragments/internalgraphicfilters/gif_Export.xcu#gif_Export.UIName
+msgid  "GIF - Graphics Interchange Format"
+msgstr "GIF - Graphics Interchange-Format"
+
+#: source/config/fragments/internalgraphicfilters/met_Export.xcu#met_Export.UIName
+msgid  "MET - OS/2 Metafile"
+msgstr "MET - OS/2 Metafile"
+
+#: source/config/fragments/internalgraphicfilters/svm_Export.xcu#svm_Export.UIName
+msgid  "SVM - StarView Metafile"
 msgstr "SVM - StarView Metafile"
 
-#: svm_Import.xcu#svm_Import.UIName.value.text
-msgctxt "svm_Import.xcu#svm_Import.UIName.value.text"
-msgid "SVM - StarView Metafile"
+#: source/config/fragments/internalgraphicfilters/pct_Import.xcu#pct_Import.UIName
+msgid  "PCT - Mac Pict"
+msgstr "PCT - Mac Pict"
+
+#: source/config/fragments/internalgraphicfilters/met_Import.xcu#met_Import.UIName
+msgid  "MET - OS/2 Metafile"
+msgstr "MET - OS/2 Metafile"
+
+#: source/config/fragments/internalgraphicfilters/pgm_Import.xcu#pgm_Import.UIName
+msgid  "PGM - Portable Graymap"
+msgstr "PGM - Portable Graymap"
+
+#: source/config/fragments/internalgraphicfilters/xpm_Export.xcu#xpm_Export.UIName
+msgid  "XPM - X PixMap"
+msgstr "XPM - X PixMap"
+
+#: source/config/fragments/internalgraphicfilters/svg_Import.xcu#svg_Import.UIName
+msgid  "SVG - Scalable Vector Graphics"
+msgstr "SVG - Scalable Vector Graphics"
+
+#: source/config/fragments/internalgraphicfilters/pcx_Import.xcu#pcx_Import.UIName
+msgid  "PCX - Zsoft Paintbrush"
+msgstr "PCX - Zsoft Paintbrush"
+
+#: source/config/fragments/internalgraphicfilters/svm_Import.xcu#svm_Import.UIName
+msgid  "SVM - StarView Metafile"
 msgstr "SVM - StarView Metafile"
 
-#: tga_Import.xcu#tga_Import.UIName.value.text
-msgid "TGA - Truevision Targa"
+#: source/config/fragments/internalgraphicfilters/tga_Import.xcu#tga_Import.UIName
+msgid  "TGA - Truevision Targa"
 msgstr "TGA - Truevision Targa"
 
-#: tif_Export.xcu#tif_Export.UIName.value.text
-msgctxt "tif_Export.xcu#tif_Export.UIName.value.text"
-msgid "TIFF - Tagged Image File Format"
+#: source/config/fragments/internalgraphicfilters/pgm_Export.xcu#pgm_Export.UIName
+msgid  "PGM - Portable Graymap"
+msgstr "PGM - Portable Graymap"
+
+#: source/config/fragments/internalgraphicfilters/tif_Export.xcu#tif_Export.UIName
+msgid  "TIFF - Tagged Image File Format"
 msgstr "TIFF - Tagged Image File Format"
 
-#: tif_Import.xcu#tif_Import.UIName.value.text
-msgctxt "tif_Import.xcu#tif_Import.UIName.value.text"
-msgid "TIFF - Tagged Image File Format"
-msgstr "TIFF - Tagged Image File Format"
+#: source/config/fragments/internalgraphicfilters/ras_Export.xcu#ras_Export.UIName
+msgid  "RAS - Sun Raster Image"
+msgstr "RAS - Sun Raster Image"
 
-#: wmf_Export.xcu#wmf_Export.UIName.value.text
-msgctxt "wmf_Export.xcu#wmf_Export.UIName.value.text"
-msgid "WMF - Windows Metafile"
-msgstr "WMF - Windows Metafile"
+#: source/config/fragments/internalgraphicfilters/dxf_Import.xcu#dxf_Import.UIName
+msgid  "DXF - AutoCAD Interchange Format"
+msgstr "DXF - AutoCAD Interchange Format"
 
-#: wmf_Import.xcu#wmf_Import.UIName.value.text
-msgctxt "wmf_Import.xcu#wmf_Import.UIName.value.text"
-msgid "WMF - Windows Metafile"
-msgstr "WMF - Windows Metafile"
+#: source/config/fragments/internalgraphicfilters/pcd_Import_Base4.xcu#pcd_Import_Base4.UIName
+msgid  "PCD - Kodak Photo CD (384x256)"
+msgstr "PCD - Kodak Photo CD (384x256)"
 
-#: xbm_Import.xcu#xbm_Import.UIName.value.text
-msgid "XBM - X Bitmap"
+#: source/config/fragments/internalgraphicfilters/pbm_Export.xcu#pbm_Export.UIName
+msgid  "PBM - Portable Bitmap"
+msgstr "PBM - Portable Bitmap"
+
+#: source/config/fragments/internalgraphicfilters/png_Export.xcu#png_Export.UIName
+msgid  "PNG - Portable Network Graphic"
+msgstr "PNG - Portable Network Graphic"
+
+#: source/config/fragments/internalgraphicfilters/xbm_Import.xcu#xbm_Import.UIName
+msgid  "XBM - X Bitmap"
 msgstr "XBM - X Bitmap"
 
-#: xpm_Export.xcu#xpm_Export.UIName.value.text
-msgctxt "xpm_Export.xcu#xpm_Export.UIName.value.text"
-msgid "XPM - X PixMap"
-msgstr "XPM - X PixMap"
+#: source/config/fragments/internalgraphicfilters/jpg_Export.xcu#jpg_Export.UIName
+msgid  "JPEG - Joint Photographic Experts Group"
+msgstr "JPEG - Joint Photographic Experts Group"
 
-#: xpm_Import.xcu#xpm_Import.UIName.value.text
-msgctxt "xpm_Import.xcu#xpm_Import.UIName.value.text"
-msgid "XPM - X PixMap"
-msgstr "XPM - X PixMap"
+#: source/config/fragments/internalgraphicfilters/gif_Import.xcu#gif_Import.UIName
+msgid  "GIF - Graphics Interchange Format"
+msgstr "GIF - Graphics Interchange-Format"
 
-#: t602filter.src#T602FILTER_STR_CANCEL_BUTTON.string.text
-msgid "Cancel"
-msgstr "Abbrechen"
+#: source/config/fragments/internalgraphicfilters/png_Import.xcu#png_Import.UIName
+msgid  "PNG - Portable Network Graphic"
+msgstr "PNG - Portable Network Graphic"
 
-#: t602filter.src#T602FILTER_STR_CYRILLIC_MODE.string.text
-msgid "Mode for Russian language (Cyrillic)"
-msgstr "Modus für Russisch (Kyrillisch)"
+#: source/config/fragments/types/writer_MS_Word_2003_XML.xcu#writer_MS_Word_2003_XML.UIName
+msgid  "Microsoft Word 2003 XML"
+msgstr "Microsoft Word 2003 XML"
 
-#: t602filter.src#T602FILTER_STR_DOT_COMMANDS.string.text
-msgid "Display dot commands"
-msgstr "Punktbefehle anzeigen"
-
-#: t602filter.src#T602FILTER_STR_ENCODING_AUTO.string.text
-msgid "Automatic"
-msgstr "Automatisch"
-
-#: t602filter.src#T602FILTER_STR_ENCODING_CP852.string.text
-msgid "CP852 (Latin2)"
-msgstr "CP852 (Latin2)"
-
-#: t602filter.src#T602FILTER_STR_ENCODING_CP895.string.text
-msgid "CP895 (KEYB2CS, Kamenicky)"
-msgstr "CP895 (KEYB2CS, Kamenicky)"
-
-#: t602filter.src#T602FILTER_STR_ENCODING_KOI8CS2.string.text
-msgid "KOI8 CS2"
-msgstr "KOI8 CS2"
-
-#: t602filter.src#T602FILTER_STR_ENCODING_LABEL.string.text
-msgid "Encoding"
-msgstr "Kodierung"
-
-#: t602filter.src#T602FILTER_STR_IMPORT_DIALOG_TITLE.string.text
-msgid "Settings for T602 import"
-msgstr "Einstellungen für T602-Import"
-
-#: t602filter.src#T602FILTER_STR_OK_BUTTON.string.text
-msgid "OK"
-msgstr "OK"
-
-#: t602filter.src#T602FILTER_STR_REFORMAT_TEXT.string.text
-msgid "Reformat the text"
-msgstr "Text neu formatieren"
-
-#: impswfdialog.src#DLG_OPTIONS.FI_DESCR.fixedtext.text
-msgid ""
-"1: min. quality\n"
-"100: max. quality"
+#: source/config/fragments/types/calc_NSO_UOF2.xcu#calc_NSO_UOF2.UIName
+msgid  "Uniform Office Format 2 spreadsheet"
 msgstr ""
-"1: min. Qualität\n"
-"100: max. Qualität"
 
-#: impswfdialog.src#DLG_OPTIONS.modaldialog.text
-msgid "Macromedia Flash (SWF) Options"
+#: source/config/fragments/types/calc_MS_Excel_2003_XML.xcu#calc_MS_Excel_2003_XML.UIName
+msgid  "Microsoft Excel 2003 XML"
+msgstr "Microsoft Excel 2003 XML"
+
+#: source/config/fragments/types/StarBase.xcu#StarBase.UIName
+msgid  "OpenDocument Database"
+msgstr "Open Office Datenbank"
+
+#: source/config/fragments/types/writer_NSO_UOF2.xcu#writer_NSO_UOF2.UIName
+msgid  "Uniform Office Format 2 text"
+msgstr ""
+
+#: source/config/fragments/types/impress_NSO_UOF2.xcu#impress_NSO_UOF2.UIName
+msgid  "Uniform Office Format 2 presentation"
+msgstr ""
+
+#: source/flash/impswfdialog.src#DLG_OPTIONS.ModalDialog.Text
+msgid  "Macromedia Flash (SWF) Options"
 msgstr "Macromedia Flash (SWF) Optionen"
 
-#: epsstr.src#KEY_VERSION_CHECK.string.text
-msgid ""
-"Warning: Not all of the imported EPS graphics could be saved at level1\n"
-"as some are at a higher level!"
+#: source/flash/impswfdialog.src#DLG_OPTIONS.FI_DESCR.FixedText.Text
+msgid  "1: min. quality\n100: max. quality"
 msgstr ""
-"Achtung: Es konnten nicht alle importierte EPS-Grafiken in Level1 "
-"abgespeichert werden, da einige in einem höherem Level vorliegen!"
 
-#: xmlfileview.src#DLG_XML_SOURCE_FILE_DIALOG.PB_VALIDATE.pushbutton.text
-msgid "~Validate"
-msgstr "~Validieren"
-
-#: xmlfileview.src#DLG_XML_SOURCE_FILE_DIALOG.workwindow.text
-msgid "XML Filter output"
-msgstr "XML-Filter Ausgabe"
-
-#: xmlfilterdialogstrings.src#STR_COLUMN_HEADER_NAME.string.text
-msgid "Name"
-msgstr "Name"
-
-#: xmlfilterdialogstrings.src#STR_COLUMN_HEADER_TYPE.string.text
-msgid "Type"
-msgstr "Type"
-
-#: xmlfilterdialogstrings.src#STR_DEFAULT_FILTER_NAME.string.text
-msgid "New Filter"
-msgstr "Neuer Filter"
-
-#: xmlfilterdialogstrings.src#STR_DEFAULT_UI_NAME.string.text
-msgid "Untitled"
-msgstr "Unbenannt"
-
-#: xmlfilterdialogstrings.src#STR_ERROR_DTD_NOT_FOUND.string.text
-msgid "The DTD could not be found. Please enter a valid path."
+#: source/graphicfilter/eps/epsstr.src#KEY_VERSION_CHECK.String.Text
+msgid  "Warning: Not all of the imported EPS graphics could be saved at level1\nas some are at a higher level!"
 msgstr ""
-"Die DTD konnte nicht gefunden werden. Bitte geben Sie einen gültigen Pfad "
-"ein."
 
-#: xmlfilterdialogstrings.src#STR_ERROR_EXPORT_XSLT_NOT_FOUND.string.text
-msgid "The XSLT for export cannot be found. Please enter a valid path."
-msgstr ""
-"Die Export-XSLT konnte nicht gefunden werden. Bitte geben Sie einen gültigen "
-"Pfad ein."
+#: source/pdf/pdf.src#PDF_PROGRESS_BAR.String.Text
+msgid  "Export as PDF"
+msgstr "Exportieren als PDF"
 
-#: xmlfilterdialogstrings.src#STR_ERROR_FILTER_NAME_EXISTS.string.text
-msgid ""
-"An XML filter with the name '%s' already exists. Please enter a different "
-"name."
-msgstr ""
-"Es existiert bereits ein XML-Filter mit dem Namen '%s'. Bitte wählen Sie "
-"einen anderen Namen."
-
-#: xmlfilterdialogstrings.src#STR_ERROR_IMPORT_TEMPLATE_NOT_FOUND.string.text
-msgid "The given import template cannot be found. Please enter a valid path."
-msgstr ""
-"Die angegebene Import-Dokumentvorlage konnte nicht gefunden werden. Bitte "
-"geben Sie einen gültigen Pfad ein."
-
-#: xmlfilterdialogstrings.src#STR_ERROR_IMPORT_XSLT_NOT_FOUND.string.text
-msgid "The XSLT for import cannot be found. Please enter a valid path."
-msgstr ""
-"Die Import-XSLT konnte nicht gefunden werden. Bitte geben Sie einen gültigen "
-"Pfad ein."
-
-#: xmlfilterdialogstrings.src#STR_ERROR_TYPE_NAME_EXISTS.string.text
-msgid ""
-"The name for  the user interface '%s1' is already used by the XML filter '%"
-"s2'. Please enter a different name."
-msgstr ""
-"Der Name auf der Benutzeroberfläche '%s1' wird bereits von dem XML-Filter '%"
-"s2' verwendet. Bitte wählen Sie einen anderen Namen."
-
-#: xmlfilterdialogstrings.src#STR_EXPORT_ONLY.string.text
-msgid "export filter"
-msgstr "Export Filter"
-
-#: xmlfilterdialogstrings.src#STR_FILTERS_HAVE_BEEN_SAVED.string.text
-msgid "%s XML filters have been saved in the package '%s'."
-msgstr "%s XML-Filter wurden in dem Paket '%s' gesichert."
-
-#: xmlfilterdialogstrings.src#STR_FILTERS_INSTALLED.string.text
-msgid "%s XML filters have been installed successfully."
-msgstr "%s XML-Filter wurden erfolgreich installiert."
-
-#: xmlfilterdialogstrings.src#STR_FILTER_HAS_BEEN_SAVED.string.text
-msgid "The XML filter '%s' has been saved as package '%s'. "
-msgstr "Der XML-Filter '%s' wurde als Paket '%s' gesichert."
-
-#: xmlfilterdialogstrings.src#STR_FILTER_INSTALLED.string.text
-msgid "The XML filter '%s' has been installed successfully."
-msgstr "Der XML-Filter '%s' wurde erfolgreich installiert."
-
-#: xmlfilterdialogstrings.src#STR_FILTER_PACKAGE.string.text
-msgid "XSLT filter package"
-msgstr "XSLT Filter Paket"
-
-#: xmlfilterdialogstrings.src#STR_IMPORT_EXPORT.string.text
-msgid "import/export filter"
-msgstr "Import/Export Filter"
-
-#: xmlfilterdialogstrings.src#STR_IMPORT_ONLY.string.text
-msgid "import filter"
-msgstr "Import Filter"
-
-#: xmlfilterdialogstrings.src#STR_NOT_SPECIFIED.string.text
-msgid "Not specified"
-msgstr "Nicht spezifiziert"
-
-#: xmlfilterdialogstrings.src#STR_NO_FILTERS_FOUND.string.text
-msgid ""
-"No XML filter could be installed because the package '%s' does not contain "
-"any XML filters."
-msgstr ""
-"Es wurde kein XML-Filter installiert, weil das Paket '%s' keine XML-Filter "
-"enthält."
-
-#: xmlfilterdialogstrings.src#STR_UNDEFINED_FILTER.string.text
-msgid "undefined filter"
-msgstr "Undefinierter Filter"
-
-#: xmlfilterdialogstrings.src#STR_UNKNOWN_APPLICATION.string.text
-msgid "Unknown"
-msgstr "Unbekannt"
-
-#: xmlfilterdialogstrings.src#STR_WARN_DELETE.string.text
-msgid ""
-"Do you really want to delete the XML Filter '%s'? This action cannot be "
-"undone."
-msgstr ""
-"Wollen Sie wirklich den XML-Filter '%s' löschen? Diese Aktion kann nicht "
-"rückgängig gemacht werden."
-
-#: xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_CLOSE.pushbutton.text
-msgctxt "xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_CLOSE.pushbutton.text"
-msgid "~Close"
-msgstr "~Schließen"
-
-#: xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_DELETE.pushbutton.text
-msgid "~Delete..."
-msgstr "~Löschen..."
-
-#: xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_EDIT.pushbutton.text
-msgid "~Edit..."
-msgstr "~Bearbeiten..."
-
-#: xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_NEW.pushbutton.text
-msgid "~New..."
-msgstr "~Neu..."
-
-#: xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_OPEN.pushbutton.text
-msgid "~Open Package..."
-msgstr "~Paket öffnen..."
-
-#: xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_SAVE.pushbutton.text
-msgid "~Save as Package..."
-msgstr "~Als Paket sichern..."
-
-#: xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_TEST.pushbutton.text
-msgid "~Test XSLTs..."
-msgstr "~XSLTs testen..."
-
-#: xmlfiltersettingsdialog.src#STR_XML_FILTER_LISTBOX.string.text
-msgid "XML Filter List"
-msgstr "XML Filter Liste"
-
-#: xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.workwindow.text
-msgid "XML Filter Settings"
-msgstr "XML-Filter Einstellungen"
-
-#: xmlfiltertabdialog.src#DLG_XML_FILTER_TABDIALOG.1.RID_XML_FILTER_TABPAGE_BASIC.pageitem.text
-msgctxt "xmlfiltertabdialog.src#DLG_XML_FILTER_TABDIALOG.1.RID_XML_FILTER_TABPAGE_BASIC.pageitem.text"
-msgid "General"
-msgstr "Allgemein"
-
-#: xmlfiltertabdialog.src#DLG_XML_FILTER_TABDIALOG.1.RID_XML_FILTER_TABPAGE_XSLT.pageitem.text
-msgctxt "xmlfiltertabdialog.src#DLG_XML_FILTER_TABDIALOG.1.RID_XML_FILTER_TABPAGE_XSLT.pageitem.text"
-msgid "Transformation"
-msgstr "Transformation"
-
-#: xmlfiltertabdialog.src#DLG_XML_FILTER_TABDIALOG.tabdialog.text
-msgid "XML Filter: %s"
-msgstr "XML-Filter: %s"
-
-#: xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_APPLICATION.fixedtext.text
-msgid "Application"
-msgstr "Anwendung"
-
-#: xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_DESCRIPTION.fixedtext.text
-msgid "Comments"
-msgstr "Kommentar"
-
-#: xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_EXTENSION.fixedtext.text
-msgid "File extension"
-msgstr "Dateiendung"
-
-#: xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_FILTER_NAME.fixedtext.text
-msgid "Filter name"
-msgstr "Filtername"
-
-#: xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_INTERFACE_NAME.fixedtext.text
-msgid ""
-"Name of\n"
-"file type"
-msgstr ""
-"Name des\n"
-"Dateityps"
-
-#: xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.tabpage.text
-msgctxt "xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.tabpage.text"
-msgid "General"
-msgstr "Allgemein"
-
-#: xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_DOCTYPE.fixedtext.text
-msgid "DocType"
-msgstr "DocType"
-
-#: xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_DTD_SCHEMA.fixedtext.text
-msgid "DTD"
-msgstr "DTD"
-
-#: xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_EXPORT_XSLT.fixedtext.text
-msgctxt "xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_EXPORT_XSLT.fixedtext.text"
-msgid "XSLT for export"
-msgstr "Export-XSLT"
-
-#: xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_IMPORT_TEMPLATE.fixedtext.text
-msgctxt "xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_IMPORT_TEMPLATE.fixedtext.text"
-msgid "Template for import"
-msgstr "Import-Dokumentvorlage"
-
-#: xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_IMPORT_XSLT.fixedtext.text
-msgctxt "xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_IMPORT_XSLT.fixedtext.text"
-msgid "XSLT for import"
-msgstr "Import-XSLT"
-
-#: xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.ED_XML_DTD_SCHEMA_BROWSE.pushbutton.text
-msgctxt "xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.ED_XML_DTD_SCHEMA_BROWSE.pushbutton.text"
-msgid "Browse..."
-msgstr "Auswählen..."
-
-#: xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.PB_XML_EXPORT_XSLT_BROWSE.pushbutton.text
-msgctxt "xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.PB_XML_EXPORT_XSLT_BROWSE.pushbutton.text"
-msgid "Browse..."
-msgstr "Auswählen..."
-
-#: xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.PB_XML_IMPORT_TEMPLATE_BROWSE.pushbutton.text
-msgctxt "xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.PB_XML_IMPORT_TEMPLATE_BROWSE.pushbutton.text"
-msgid "Browse..."
-msgstr "Auswählen..."
-
-#: xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.PB_XML_IMPORT_XSLT_BROWSE.pushbutton.text
-msgctxt "xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.PB_XML_IMPORT_XSLT_BROWSE.pushbutton.text"
-msgid "Browse..."
-msgstr "Auswählen..."
-
-#: xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.tabpage.text
-msgctxt "xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.tabpage.text"
-msgid "Transformation"
-msgstr "Transformation"
-
-#: xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.CBX_DISPLAY_SOURCE.checkbox.text
-msgid "~Display source"
-msgstr "Quelltext anzeigen"
-
-#: xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FL_EXPORT.fixedline.text
-msgid "Export"
-msgstr "Exportieren"
-
-#: xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FL_IMPORT.fixedline.text
-msgid "Import"
-msgstr "Importieren"
-
-#: xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_EXPORT_XSLT.fixedtext.text
-msgctxt "xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_EXPORT_XSLT.fixedtext.text"
-msgid "XSLT for export"
-msgstr "Export-XSLT"
-
-#: xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_IMPORT_TEMPLATE.fixedtext.text
-msgctxt "xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_IMPORT_TEMPLATE.fixedtext.text"
-msgid "Template for import"
-msgstr "Import-Dokumentvorlage"
-
-#: xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_IMPORT_XSLT.fixedtext.text
-msgctxt "xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_IMPORT_XSLT.fixedtext.text"
-msgid "XSLT for import"
-msgstr "Import-XSLT"
-
-#: xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_TRANSFORM_DOCUMENT.fixedtext.text
-msgid "Transform document"
-msgstr "Dokument transformieren"
-
-#: xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_TRANSFORM_FILE.fixedtext.text
-msgid "Transform file"
-msgstr "Datei transformieren"
-
-#: xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.modaldialog.text
-msgid "Test XML Filter: %s"
-msgstr "XML-Filter testen: %s"
-
-#: xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_CLOSE.pushbutton.text
-msgctxt "xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_CLOSE.pushbutton.text"
-msgid "~Close"
-msgstr "~Schließen"
-
-#: xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_CURRENT_DOCUMENT.pushbutton.text
-msgid "~Current Document"
-msgstr "A~ktuelles Dokument"
-
-#: xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_EXPORT_BROWSE.pushbutton.text
-msgid "~Browse..."
-msgstr "~Auswählen..."
-
-#: xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_IMPORT_BROWSE.pushbutton.text
-msgid "B~rowse..."
-msgstr "A~uswählen..."
-
-#: xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_RECENT_DOCUMENT.pushbutton.text
-msgid "~Recent File"
-msgstr "~Letzte Datei"
-
-#: impdialog.src#CB_ADDSTREAM.checkbox.text
-msgid "Create ~hybrid file"
-msgstr "~Hybridformat erzeugen"
-
-#: impdialog.src#CB_ALLOWDUPLICATEFIELDNAMES.checkbox.text
-msgid "Allow duplicate field ~names"
-msgstr "D~oppelte Feldnamen erlauben"
-
-#: impdialog.src#CB_EMBEDSTANDARDFONTS.checkbox.text
-msgid "E~mbed standard fonts"
-msgstr "Standardschriften ein~betten"
-
-#: impdialog.src#CB_EXPORTBOOKMARKS.checkbox.text
-msgid "Export ~bookmarks"
-msgstr "Lesezeichen exportieren"
-
-#: impdialog.src#CB_EXPORTEMPTYPAGES.checkbox.text
-msgid "Exp~ort automatically inserted blank pages"
-msgstr "Automatisch eingefügte ~Leerseiten exportieren"
-
-#: impdialog.src#CB_EXPORTFORMFIELDS.checkbox.text
-msgid "~Create PDF form"
-msgstr "PDF Formular erzeugen"
-
-#: impdialog.src#CB_EXPORTNOTES.checkbox.text
-msgid "~Export comments"
-msgstr "~Kommentare exportieren"
-
-#: impdialog.src#CB_EXPORTNOTESPAGES.checkbox.text
-msgid "Export ~notes pages"
-msgstr "~Notizseiten exportieren"
-
-#: impdialog.src#CB_PDFA_1B_SELECT.checkbox.text
-msgid "P~DF/A-1a"
-msgstr "P~DF/A-1a"
-
-#: impdialog.src#CB_TAGGEDPDF.checkbox.text
-msgid "~Tagged PDF"
-msgstr "~Tagged PDF"
-
-#: impdialog.src#RID_PDF_TAB_GENER.CB_REDUCEIMAGERESOLUTION.checkbox.text
-msgid "~Reduce image resolution"
-msgstr "~Grafikauflösung verringern"
-
-#: impdialog.src#RID_PDF_TAB_LINKS.CB_CNV_OOO_DOCTOPDF.checkbox.text
-msgid "Convert document references to PDF targets"
-msgstr "Dokumentreferenzen in PDF-Ziele umwandeln"
-
-#: impdialog.src#RID_PDF_TAB_LINKS.CB_ENAB_RELLINKFSYS.checkbox.text
-msgid "Export URLs relative to file system"
-msgstr "URLs relativ zum Dateisystem exportieren"
-
-#: impdialog.src#RID_PDF_TAB_LINKS.CB_EXP_BMRK_TO_DEST.checkbox.text
-msgid "Export bookmarks as named destinations"
-msgstr "Lesezeichen als benannte Ziele exportieren"
-
-#: impdialog.src#RID_PDF_TAB_OPNFTR.CB_PGLY_FIRSTLEFT.checkbox.text
-msgid "First page is ~left"
-msgstr "Erste Seite ist links"
-
-#: impdialog.src#RID_PDF_TAB_SECURITY.CB_ENAB_ACCESS.checkbox.text
-msgid "Enable text access for acce~ssibility tools"
-msgstr "Mit Unterstützung der ~Zugänglichkeit"
-
-#: impdialog.src#RID_PDF_TAB_SECURITY.CB_ENDAB_COPY.checkbox.text
-msgid "Ena~ble copying of content"
-msgstr "Inha~lt kopieren erlauben"
-
-#: impdialog.src#RID_PDF_TAB_VPREFER.CB_DISPDOCTITLE.checkbox.text
-msgid "~Display document title"
-msgstr "Dokumenttitel anzeigen"
-
-#: impdialog.src#RID_PDF_TAB_VPREFER.CB_TRANSITIONEFFECTS.checkbox.text
-msgid "~Use transition effects"
-msgstr "~Übergangseffekte benutzen"
-
-#: impdialog.src#RID_PDF_TAB_VPREFER.CB_UOP_HIDEVMENUBAR.checkbox.text
-msgid "Hide ~menubar"
-msgstr "Menüleiste ausblenden"
-
-#: impdialog.src#RID_PDF_TAB_VPREFER.CB_UOP_HIDEVTOOLBAR.checkbox.text
-msgid "Hide ~toolbar"
-msgstr "Werkzeugleisten ausblenden"
-
-#: impdialog.src#RID_PDF_TAB_VPREFER.CB_UOP_HIDEVWINCTRL.checkbox.text
-msgid "Hide ~window controls"
-msgstr "Fenstersteuerelemente ausblenden"
-
-#: impdialog.src#RID_PDF_TAB_VPREFER.CB_WNDOPT_CNTRWIN.checkbox.text
-msgid "~Center window on screen"
-msgstr "Fenster auf Bildschirm zentrieren"
-
-#: impdialog.src#RID_PDF_TAB_VPREFER.CB_WNDOPT_OPNFULL.checkbox.text
-msgid "~Open in full screen mode"
-msgstr "Im Vollbildmodus öffnen"
-
-#: impdialog.src#RID_PDF_TAB_VPREFER.CB_WNDOPT_RESINIT.checkbox.text
-msgid "~Resize window to initial page"
-msgstr "Fenster an erste Seite anpassen"
-
-#: impdialog.src#FL_GENERAL.fixedline.text
-msgctxt "impdialog.src#FL_GENERAL.fixedline.text"
-msgid "General"
-msgstr "Allgemein"
-
-#: impdialog.src#RID_PDF_TAB_GENER.FL_IMAGES.fixedline.text
-msgid "Images"
-msgstr "Grafiken"
-
-#: impdialog.src#RID_PDF_TAB_GENER.FL_PAGES.fixedline.text
-msgid "Range"
-msgstr "Bereich"
-
-#: impdialog.src#RID_PDF_TAB_LINKS.FL_DEFAULT_LINK_ACTION.fixedline.text
-msgid "Cross-document links"
-msgstr "Verknüpfungen zwischen Dokumenten"
-
-#: impdialog.src#RID_PDF_TAB_OPNFTR.FL_INITVIEW.fixedline.text
-msgid "Panes"
-msgstr "Bereiche"
-
-#: impdialog.src#RID_PDF_TAB_OPNFTR.FL_MAGNIFICATION.fixedline.text
-msgid "Magnification"
-msgstr "Vergrößerung"
-
-#: impdialog.src#RID_PDF_TAB_OPNFTR.FL_PAGE_LAYOUT.fixedline.text
-msgid "Page layout"
-msgstr "Seitenlayout"
-
-#: impdialog.src#RID_PDF_TAB_SECURITY.FL_CHANGES_ALLOWED.fixedline.text
-msgid "Changes"
-msgstr "Än~derungen"
-
-#: impdialog.src#RID_PDF_TAB_SECURITY.FL_PRINT_PERMISSIONS.fixedline.text
-msgid "Printing"
-msgstr "Drucken"
-
-#: impdialog.src#RID_PDF_TAB_SECURITY.FL_PWD_GROUP.fixedline.text
-msgid "File encryption and permission"
-msgstr "Verschlüsselung und Rechte"
-
-#: impdialog.src#RID_PDF_TAB_VPREFER.FL_BOOKMARKS.fixedline.text
-msgid "Bookmarks"
-msgstr "Lesezeichen"
-
-#: impdialog.src#RID_PDF_TAB_VPREFER.FL_TRANSITIONS.fixedline.text
-msgid "Transitions"
-msgstr "Übergangseffekte"
-
-#: impdialog.src#RID_PDF_TAB_VPREFER.FL_USRIFOPT.fixedline.text
-msgid "User interface options"
-msgstr "Benutzeroberflächenoptionen"
-
-#: impdialog.src#RID_PDF_TAB_VPREFER.FL_WINOPT.fixedline.text
-msgid "Window options"
-msgstr "Fensteroptionen"
-
-#: impdialog.src#FT_FORMSFORMAT.fixedtext.text
-msgid "Submit ~format"
-msgstr "~Format für Übermittlung"
-
-#: impdialog.src#RID_PDF_ERROR_DLG.FT_PROCESS.fixedtext.text
-msgid "During PDF export the following problems occurred:"
-msgstr "Während des PDF-Exports sind folgende Probleme aufgetreten:"
-
-#: impdialog.src#RID_PDF_TAB_GENER.FT_QUALITY.fixedtext.text
-msgid "~Quality"
-msgstr "~Qualität"
-
-#: impdialog.src#RID_PDF_TAB_OPNFTR.FT_MAGNF_INITIAL_PAGE.fixedtext.text
-msgid "Open on page"
-msgstr "Öffnen auf Seite"
-
-#: impdialog.src#RID_PDF_ERROR_DLG.modaldialog.text
-msgid "Problems during PDF export"
-msgstr "Probleme während des PDF-Exports"
-
-#: impdialog.src#RID_PDF_EXPORT_DLG.1.RID_PDF_TAB_GENER.pageitem.text
-msgctxt "impdialog.src#RID_PDF_EXPORT_DLG.1.RID_PDF_TAB_GENER.pageitem.text"
-msgid "General"
-msgstr "Allgemein"
-
-#: impdialog.src#RID_PDF_EXPORT_DLG.1.RID_PDF_TAB_LINKS.pageitem.text
-msgid "Links"
-msgstr "Verknüpfungen"
-
-#: impdialog.src#RID_PDF_EXPORT_DLG.1.RID_PDF_TAB_OPNFTR.pageitem.text
-msgctxt "impdialog.src#RID_PDF_EXPORT_DLG.1.RID_PDF_TAB_OPNFTR.pageitem.text"
-msgid "Initial View"
-msgstr "Anfangsdarstellung"
-
-#: impdialog.src#RID_PDF_EXPORT_DLG.1.RID_PDF_TAB_SECURITY.pageitem.text
-msgctxt "impdialog.src#RID_PDF_EXPORT_DLG.1.RID_PDF_TAB_SECURITY.pageitem.text"
-msgid "Security"
-msgstr "Sicherheit"
-
-#: impdialog.src#RID_PDF_EXPORT_DLG.1.RID_PDF_TAB_VPREFER.pageitem.text
-msgctxt "impdialog.src#RID_PDF_EXPORT_DLG.1.RID_PDF_TAB_VPREFER.pageitem.text"
-msgid "User Interface"
-msgstr "Benutzeroberfläche"
-
-#: impdialog.src#RID_PDF_TAB_SECURITY.BTN_SET_PWD.pushbutton.text
-msgid "Set ~passwords..."
-msgstr "~Passwörter setzen"
-
-#: impdialog.src#RID_PDF_TAB_GENER.RB_ALL.radiobutton.text
-msgid "~All"
-msgstr "~Alle"
-
-#: impdialog.src#RID_PDF_TAB_GENER.RB_JPEGCOMPRESSION.radiobutton.text
-msgid "~JPEG compression"
-msgstr "Optimiert für ~JPEG Komprimierung"
-
-#: impdialog.src#RID_PDF_TAB_GENER.RB_LOSSLESSCOMPRESSION.radiobutton.text
-msgid "~Lossless compression"
-msgstr "~Verlustfreie Komprimierung"
-
-#: impdialog.src#RID_PDF_TAB_GENER.RB_RANGE.radiobutton.text
-msgid "~Pages"
-msgstr "~Seiten"
-
-#: impdialog.src#RID_PDF_TAB_GENER.RB_SELECTION.radiobutton.text
-msgid "~Selection"
-msgstr "A~uswahl"
-
-#: impdialog.src#RID_PDF_TAB_LINKS.CB_VIEW_PDF_APPLICATION.radiobutton.text
-msgid "Open with PDF reader application"
-msgstr "Mit PDF-Anzeigeprogramm öffnen"
-
-#: impdialog.src#RID_PDF_TAB_LINKS.CB_VIEW_PDF_BROWSER.radiobutton.text
-msgid "Open with Internet browser"
-msgstr "Mit Internet-Browser öffnen"
-
-#: impdialog.src#RID_PDF_TAB_LINKS.CB_VIEW_PDF_DEFAULT.radiobutton.text
-msgid "Default mode"
-msgstr "Standardverhalten"
-
-#: impdialog.src#RID_PDF_TAB_OPNFTR.RB_MAGNF_DEFAULT.radiobutton.text
-msgid "~Default"
-msgstr "Standard"
-
-#: impdialog.src#RID_PDF_TAB_OPNFTR.RB_MAGNF_VISIBLE.radiobutton.text
-msgid "Fit ~visible"
-msgstr "Seitenbreite"
-
-#: impdialog.src#RID_PDF_TAB_OPNFTR.RB_MAGNF_WIDTH.radiobutton.text
-msgid "Fit ~width"
-msgstr "Fensterbreite"
-
-#: impdialog.src#RID_PDF_TAB_OPNFTR.RB_MAGNF_WIND.radiobutton.text
-msgid "~Fit in window"
-msgstr "Fenstergröße"
-
-#: impdialog.src#RID_PDF_TAB_OPNFTR.RB_MAGNF_ZOOM.radiobutton.text
-msgid "~Zoom factor"
-msgstr "Vergrößerungsstufe"
-
-#: impdialog.src#RID_PDF_TAB_OPNFTR.RB_OPNMODE_OUTLINE.radiobutton.text
-msgid "~Bookmarks and page"
-msgstr "Lesezeichen-Fenster und Seite"
-
-#: impdialog.src#RID_PDF_TAB_OPNFTR.RB_OPNMODE_PAGEONLY.radiobutton.text
-msgid "~Page only"
-msgstr "Nur Seite"
-
-#: impdialog.src#RID_PDF_TAB_OPNFTR.RB_OPNMODE_THUMBS.radiobutton.text
-msgid "~Thumbnails and page"
-msgstr "Seiten-Fenster und Seite"
-
-#: impdialog.src#RID_PDF_TAB_OPNFTR.RB_PGLY_CONT.radiobutton.text
-msgid "~Continuous"
-msgstr "Fortlaufend"
-
-#: impdialog.src#RID_PDF_TAB_OPNFTR.RB_PGLY_CONTFAC.radiobutton.text
-msgid "C~ontinuous facing"
-msgstr "Fortlaufend - Doppelseiten"
-
-#: impdialog.src#RID_PDF_TAB_OPNFTR.RB_PGLY_DEFAULT.radiobutton.text
-msgid "D~efault"
-msgstr "Standard"
-
-#: impdialog.src#RID_PDF_TAB_OPNFTR.RB_PGLY_SINGPG.radiobutton.text
-msgid "~Single page"
-msgstr "Einzelne Seite"
-
-#: impdialog.src#RID_PDF_TAB_SECURITY.RB_CHANGES_ANY_NOCOPY.radiobutton.text
-msgid "~Any except extracting pages"
-msgstr "~Alles, bis auf Extrahieren von Seiten"
-
-#: impdialog.src#RID_PDF_TAB_SECURITY.RB_CHANGES_COMMENT.radiobutton.text
-msgid "~Commenting, filling in form fields"
-msgstr "~Kommentieren und Formulare ausfüllen"
-
-#: impdialog.src#RID_PDF_TAB_SECURITY.RB_CHANGES_FILLFORM.radiobutton.text
-msgid "~Filling in form fields"
-msgstr "~Formulare ausfüllen"
-
-#: impdialog.src#RID_PDF_TAB_SECURITY.RB_CHANGES_INSDEL.radiobutton.text
-msgid "~Inserting, deleting, and rotating pages"
-msgstr "Einfügen, Löschen und Rotieren von ~Seiten"
-
-#: impdialog.src#RID_PDF_TAB_SECURITY.RB_CHANGES_NONE.radiobutton.text
-msgid "No~t permitted"
-msgstr "Ni~cht gestattet"
-
-#: impdialog.src#RID_PDF_TAB_SECURITY.RB_PRINT_HIGHRES.radiobutton.text
-msgid "~High resolution"
-msgstr "~Hohe Auflösung"
-
-#: impdialog.src#RID_PDF_TAB_SECURITY.RB_PRINT_LOWRES.radiobutton.text
-msgid "~Low resolution (150 dpi)"
-msgstr "N~iedrige Auflösung (150 dpi)"
-
-#: impdialog.src#RID_PDF_TAB_SECURITY.RB_PRINT_NONE.radiobutton.text
-msgid "~Not permitted"
-msgstr "~Nicht gestattet"
-
-#: impdialog.src#RID_PDF_TAB_VPREFER.RB_ALLBOOKMARKLEVELS.radiobutton.text
-msgid "All bookmark levels"
-msgstr "Alle Lesezeichenebenen"
-
-#: impdialog.src#RID_PDF_TAB_VPREFER.RB_VISIBLEBOOKMARKLEVELS.radiobutton.text
-msgid "Visible bookmark levels"
-msgstr "Aufgeklappte Lesezeichenebenen"
-
-#: impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_FORMACTION_PDFA.string.text
-msgid ""
-"A form control contained an action not supported by the PDF/A standard. The "
-"action was skipped"
-msgstr ""
-"Ein Formularelement enthielt eine Aktion, die nicht vom PDF/A-Standard "
-"unterstützt wurde. Die Aktion wurde nicht exportiert"
-
-#: impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_FORMACTION_PDFA_SHORT.string.text
-msgid "PDF/A form action"
-msgstr "PDF/A-Formularaktion"
-
-#: impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_CONVERTED.string.text
-msgid ""
-"Some objects were converted to an image in order to remove transparencies, "
-"because the target PDF format does not support transparencies. Possibly "
-"better results can be achieved if you remove the transparent objects before "
-"exporting."
-msgstr ""
-"Da das Ziel-PDF-Format keine Transparenzen unterstützt, werden einige "
-"Objekte zu Bildern konvertiert, um Transparenzen zu entfernen. Es können "
-"evtl. bessere Ergebnisse erzielt werden, wenn die transparenten Objekte vor "
-"dem Export entfernt werden."
-
-#: impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_CONVERTED_SHORT.string.text
-msgid "Transparencies removed"
-msgstr "Transparenzen wurden entfernt."
-
-#: impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_PDFA.string.text
-msgid ""
-"PDF/A forbids transparency. A transparent object was painted opaque instead."
-msgstr ""
-"PDF/A verbietet Transparenzen. Ein transparentes Objekt wurde stattdessen "
-"ohne Transparenz exportiert."
-
-#: impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_PDFA_SHORT.string.text
-msgid "PDF/A transparency"
-msgstr "PDF/A-Transparenz"
-
-#: impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_VERSION.string.text
-msgid ""
-"Transparency is not supported in PDF versions earlier than PDF 1.4. A "
-"transparent object was painted opaque instead"
-msgstr ""
-"Transparenz wird von PDF-Versionen vor 1.4 nicht unterstützt. Ein "
-"transparentes Objekt wurde stattdessen ohne Transparenz exportiert."
-
-#: impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_VERSION_SHORT.string.text
-msgid "PDF version conflict"
-msgstr "PDF-Versionskonflikt"
-
-#: impdialog.src#RID_PDF_TAB_SECURITY.STR_OWNER_PWD_PDFA.string.text
-msgid "PDF document will not be restricted due to PDF/A export."
-msgstr "Das PDF wurde nicht Eingeschränkt da es ein PDF/A ist."
-
-#: impdialog.src#RID_PDF_TAB_SECURITY.STR_OWNER_PWD_REST.string.text
-msgid "PDF document will be restricted"
-msgstr "Dokument-Rechte werden eingeschränkt"
-
-#: impdialog.src#RID_PDF_TAB_SECURITY.STR_OWNER_PWD_SET.string.text
-msgid "Permission password set"
-msgstr "Rechte-Passwort gesetzt"
-
-#: impdialog.src#RID_PDF_TAB_SECURITY.STR_OWNER_PWD_UNREST.string.text
-msgid "PDF document will be unrestricted"
-msgstr "Dokument-Rechte werden nicht eingeschränkt"
-
-#: impdialog.src#RID_PDF_TAB_SECURITY.STR_OWNER_PWD_UNSET.string.text
-msgid "No permission password set"
-msgstr "Kein Rechte-Passwort gesetzt"
-
-#: impdialog.src#RID_PDF_TAB_SECURITY.STR_SET_PWD.string.text
-msgid "Set passwords"
-msgstr "Passwörter setzen"
-
-#: impdialog.src#RID_PDF_TAB_SECURITY.STR_USER_PWD_ENC.string.text
-msgid "PDF document will be encrypted"
-msgstr "PDF-Dokument wird verschlüsselt"
-
-#: impdialog.src#RID_PDF_TAB_SECURITY.STR_USER_PWD_PDFA.string.text
-msgid "PDF document will not be encrypted due to PDF/A export."
-msgstr "Das PDF Dokument wird nicht Verschlüsselt da PDF/A ausgewählt wurde"
-
-#: impdialog.src#RID_PDF_TAB_SECURITY.STR_USER_PWD_SET.string.text
-msgid "Open password set"
-msgstr "Öffnen-Passwort gesetzt"
-
-#: impdialog.src#RID_PDF_TAB_SECURITY.STR_USER_PWD_UNENC.string.text
-msgid "PDF document will not be encrypted"
-msgstr "PDF-Dokument wird nicht verschlüsselt"
-
-#: impdialog.src#RID_PDF_TAB_SECURITY.STR_USER_PWD_UNSET.string.text
-msgid "No open password set"
-msgstr "Kein Öffnen-Passwort gesetzt"
-
-#: impdialog.src#STR_PDF_EXPORT.string.text
-msgid "E~xport"
+#: source/pdf/impdialog.src#STR_PDF_EXPORT.String.Text
+msgid  "E~xport"
 msgstr "E~xportieren"
 
-#: impdialog.src#STR_PDF_EXPORT_ODPWD.string.text
-msgid "Set permission password"
-msgstr "Rechte-Passwort setzen"
-
-#: impdialog.src#STR_PDF_EXPORT_UDPWD.string.text
-msgid "Set open password"
+#: source/pdf/impdialog.src#STR_PDF_EXPORT_UDPWD.String.Text
+msgid  "Set open password"
 msgstr "Öffnen-Passwort setzen"
 
-#: impdialog.src#RID_PDF_EXPORT_DLG.tabdialog.text
-msgid "PDF Options"
-msgstr "PDF Optionen"
+#: source/pdf/impdialog.src#STR_PDF_EXPORT_ODPWD.String.Text
+msgid  "Set permission password"
+msgstr "Rechte-Passwort setzen"
 
-#: impdialog.src#RID_PDF_TAB_GENER.tabpage.text
-msgctxt "impdialog.src#RID_PDF_TAB_GENER.tabpage.text"
-msgid "General"
+#: source/pdf/impdialog.src#RID_PDF_TAB_GENER.TabPage.Text
+msgid  "General"
 msgstr "Allgemein"
 
-#: impdialog.src#RID_PDF_TAB_LINKS.tabpage.text
-msgid "---"
-msgstr "---"
+#: source/pdf/impdialog.src#RID_PDF_TAB_GENER.FL_PAGES.FixedLine.Text
+msgid  "Range"
+msgstr "Bereich"
 
-#: impdialog.src#RID_PDF_TAB_OPNFTR.tabpage.text
-msgctxt "impdialog.src#RID_PDF_TAB_OPNFTR.tabpage.text"
-msgid "Initial View"
-msgstr "Anfangsdarstellung"
+#: source/pdf/impdialog.src#RID_PDF_TAB_GENER.RB_ALL.RadioButton.Text
+msgid  "~All"
+msgstr "~Alle"
 
-#: impdialog.src#RID_PDF_TAB_SECURITY.tabpage.text
-msgctxt "impdialog.src#RID_PDF_TAB_SECURITY.tabpage.text"
-msgid "Security"
-msgstr "Sicherheit"
+#: source/pdf/impdialog.src#RID_PDF_TAB_GENER.RB_RANGE.RadioButton.Text
+msgid  "~Pages"
+msgstr "~Seiten"
 
-#: impdialog.src#RID_PDF_TAB_VPREFER.tabpage.text
-msgctxt "impdialog.src#RID_PDF_TAB_VPREFER.tabpage.text"
-msgid "User Interface"
-msgstr "Benutzeroberfläche"
+#: source/pdf/impdialog.src#RID_PDF_TAB_GENER.RB_SELECTION.RadioButton.Text
+msgid  "~Selection"
+msgstr "A~uswahl"
 
-#: impdialog.src#RID_PDF_WARNPDFAPASSWORD.warningbox.text
-msgid ""
-"PDF/A does not allow encryption. The exported PDF file will not be password "
-"protected."
-msgstr ""
-"PDF/A erlaubt keine Verschlüsselung. Das exportierte PDF unterstützt keinen "
-"Passwortschutz"
+#: source/pdf/impdialog.src#RID_PDF_TAB_GENER.FL_IMAGES.FixedLine.Text
+msgid  "Images"
+msgstr "Grafiken"
 
-#: impdialog.src#RID_PDF_WARNPDFAPASSWORD.warningbox.title
-msgid "PDF/A Export"
+#: source/pdf/impdialog.src#RID_PDF_TAB_GENER.RB_LOSSLESSCOMPRESSION.RadioButton.Text
+msgid  "~Lossless compression"
+msgstr "~Verlustfreie Komprimierung"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_GENER.RB_JPEGCOMPRESSION.RadioButton.Text
+msgid  "~JPEG compression"
+msgstr "Optimiert für ~JPEG Komprimierung"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_GENER.FT_QUALITY.FixedText.Text
+msgid  "~Quality"
+msgstr "~Qualität"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_GENER.CB_REDUCEIMAGERESOLUTION.CheckBox.Text
+msgid  "~Reduce image resolution"
+msgstr "~Grafikauflösung verringern"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_GENER.FL_GENERAL.FixedLine.Text
+msgid  "General"
+msgstr "Allgemein"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_GENER.CB_PDFA_1B_SELECT.CheckBox.Text
+msgid  "P~DF/A-1a"
+msgstr "P~DF/A-1a"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_GENER.CB_TAGGEDPDF.CheckBox.Text
+msgid  "~Tagged PDF"
+msgstr "~Tagged PDF"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_GENER.CB_EXPORTFORMFIELDS.CheckBox.Text
+msgid  "~Create PDF form"
+msgstr "PDF Formular erzeugen"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_GENER.FT_FORMSFORMAT.FixedText.Text
+msgid  "Submit ~format"
+msgstr "~Format für Übermittlung"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_GENER.CB_ALLOWDUPLICATEFIELDNAMES.CheckBox.Text
+msgid  "Allow duplicate field ~names"
+msgstr "D~oppelte Feldnamen erlauben"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_GENER.CB_EXPORTBOOKMARKS.CheckBox.Text
+msgid  "Export ~bookmarks"
+msgstr "Lesezeichen exportieren"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_GENER.CB_EXPORTNOTES.CheckBox.Text
+msgid  "~Export comments"
+msgstr "~Kommentare exportieren"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_GENER.CB_EXPORTNOTESPAGES.CheckBox.Text
+msgid  "Export ~notes pages"
+msgstr "~Notizseiten exportieren"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_GENER.CB_EXPORTEMPTYPAGES.CheckBox.Text
+msgid  "Exp~ort automatically inserted blank pages"
+msgstr "Automatisch eingefügte ~Leerseiten exportieren"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_GENER.CB_EMBEDSTANDARDFONTS.CheckBox.Text
+msgid  "E~mbed standard fonts"
+msgstr "Standardschriften ein~betten"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_GENER.CB_ADDSTREAM.CheckBox.Text
+msgid  "Create ~hybrid file"
+msgstr "~Hybridformat erzeugen"
+
+#: source/pdf/impdialog.src#RID_PDF_WARNPDFAPASSWORD.WarningBox.Title
+msgid  "PDF/A Export"
 msgstr "PDF/A Export"
 
-#: pdf.src#PDF_PROGRESS_BAR.string.text
-msgid "Export as PDF"
-msgstr "Exportieren als PDF"
+#: source/pdf/impdialog.src#RID_PDF_WARNPDFAPASSWORD.WarningBox.Message
+msgid  "PDF/A does not allow encryption. The exported PDF file will not be password protected."
+msgstr ""
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_OPNFTR.TabPage.Text
+msgid  "Initial View"
+msgstr "Anfangsdarstellung"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_OPNFTR.FL_INITVIEW.FixedLine.Text
+msgid  "Panes"
+msgstr "Bereiche"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_OPNMODE_PAGEONLY.RadioButton.Text
+msgid  "~Page only"
+msgstr "Nur Seite"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_OPNMODE_OUTLINE.RadioButton.Text
+msgid  "~Bookmarks and page"
+msgstr "Lesezeichen-Fenster und Seite"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_OPNMODE_THUMBS.RadioButton.Text
+msgid  "~Thumbnails and page"
+msgstr "Seiten-Fenster und Seite"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_OPNFTR.FT_MAGNF_INITIAL_PAGE.FixedText.Text
+msgid  "Open on page"
+msgstr "Öffnen auf Seite"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_OPNFTR.FL_MAGNIFICATION.FixedLine.Text
+msgid  "Magnification"
+msgstr "Vergrößerung"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_MAGNF_DEFAULT.RadioButton.Text
+msgid  "~Default"
+msgstr "Standard"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_MAGNF_WIND.RadioButton.Text
+msgid  "~Fit in window"
+msgstr "Fenstergröße"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_MAGNF_WIDTH.RadioButton.Text
+msgid  "Fit ~width"
+msgstr "Fensterbreite"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_MAGNF_VISIBLE.RadioButton.Text
+msgid  "Fit ~visible"
+msgstr "Seitenbreite"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_MAGNF_ZOOM.RadioButton.Text
+msgid  "~Zoom factor"
+msgstr "Vergrößerungsstufe"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_OPNFTR.FL_PAGE_LAYOUT.FixedLine.Text
+msgid  "Page layout"
+msgstr "Seitenlayout"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_PGLY_DEFAULT.RadioButton.Text
+msgid  "D~efault"
+msgstr "Standard"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_PGLY_SINGPG.RadioButton.Text
+msgid  "~Single page"
+msgstr "Einzelne Seite"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_PGLY_CONT.RadioButton.Text
+msgid  "~Continuous"
+msgstr "Fortlaufend"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_OPNFTR.RB_PGLY_CONTFAC.RadioButton.Text
+msgid  "C~ontinuous facing"
+msgstr "Fortlaufend - Doppelseiten"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_OPNFTR.CB_PGLY_FIRSTLEFT.CheckBox.Text
+msgid  "First page is ~left"
+msgstr "Erste Seite ist links"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_VPREFER.TabPage.Text
+msgid  "User Interface"
+msgstr "Benutzeroberfläche"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_VPREFER.FL_WINOPT.FixedLine.Text
+msgid  "Window options"
+msgstr "Fensteroptionen"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_WNDOPT_RESINIT.CheckBox.Text
+msgid  "~Resize window to initial page"
+msgstr "Fenster an erste Seite anpassen"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_WNDOPT_CNTRWIN.CheckBox.Text
+msgid  "~Center window on screen"
+msgstr "Fenster auf Bildschirm zentrieren"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_WNDOPT_OPNFULL.CheckBox.Text
+msgid  "~Open in full screen mode"
+msgstr "Im Vollbildmodus öffnen"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_DISPDOCTITLE.CheckBox.Text
+msgid  "~Display document title"
+msgstr "Dokumenttitel anzeigen"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_VPREFER.FL_USRIFOPT.FixedLine.Text
+msgid  "User interface options"
+msgstr "Benutzeroberflächenoptionen"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_UOP_HIDEVMENUBAR.CheckBox.Text
+msgid  "Hide ~menubar"
+msgstr "Menüleiste ausblenden"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_UOP_HIDEVTOOLBAR.CheckBox.Text
+msgid  "Hide ~toolbar"
+msgstr "Werkzeugleisten ausblenden"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_UOP_HIDEVWINCTRL.CheckBox.Text
+msgid  "Hide ~window controls"
+msgstr "Fenstersteuerelemente ausblenden"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_VPREFER.FL_TRANSITIONS.FixedLine.Text
+msgid  "Transitions"
+msgstr "Übergangseffekte"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_VPREFER.CB_TRANSITIONEFFECTS.CheckBox.Text
+msgid  "~Use transition effects"
+msgstr "~Übergangseffekte benutzen"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_VPREFER.FL_BOOKMARKS.FixedLine.Text
+msgid  "Bookmarks"
+msgstr "Lesezeichen"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_VPREFER.RB_ALLBOOKMARKLEVELS.RadioButton.Text
+msgid  "All bookmark levels"
+msgstr "Alle Lesezeichenebenen"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_VPREFER.RB_VISIBLEBOOKMARKLEVELS.RadioButton.Text
+msgid  "Visible bookmark levels"
+msgstr "Aufgeklappte Lesezeichenebenen"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_SECURITY.TabPage.Text
+msgid  "Security"
+msgstr "Sicherheit"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_SECURITY.FL_PWD_GROUP.FixedLine.Text
+msgid  "File encryption and permission"
+msgstr "Verschlüsselung und Rechte"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_SECURITY.BTN_SET_PWD.PushButton.Text
+msgid  "Set ~passwords..."
+msgstr "~Passwörter setzen"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_SET_PWD.String.Text
+msgid  "Set passwords"
+msgstr "Passwörter setzen"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_USER_PWD_SET.String.Text
+msgid  "Open password set"
+msgstr "Öffnen-Passwort gesetzt"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_USER_PWD_ENC.String.Text
+msgid  "PDF document will be encrypted"
+msgstr "PDF-Dokument wird verschlüsselt"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_USER_PWD_UNSET.String.Text
+msgid  "No open password set"
+msgstr "Kein Öffnen-Passwort gesetzt"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_USER_PWD_UNENC.String.Text
+msgid  "PDF document will not be encrypted"
+msgstr "PDF-Dokument wird nicht verschlüsselt"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_USER_PWD_PDFA.String.Text
+msgid  "PDF document will not be encrypted due to PDF/A export."
+msgstr "Das PDF Dokument wird nicht Verschlüsselt da PDF/A ausgewählt wurde"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_OWNER_PWD_SET.String.Text
+msgid  "Permission password set"
+msgstr "Rechte-Passwort gesetzt"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_OWNER_PWD_REST.String.Text
+msgid  "PDF document will be restricted"
+msgstr "Dokument-Rechte werden eingeschränkt"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_OWNER_PWD_UNSET.String.Text
+msgid  "No permission password set"
+msgstr "Kein Rechte-Passwort gesetzt"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_OWNER_PWD_UNREST.String.Text
+msgid  "PDF document will be unrestricted"
+msgstr "Dokument-Rechte werden nicht eingeschränkt"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_SECURITY.STR_OWNER_PWD_PDFA.String.Text
+msgid  "PDF document will not be restricted due to PDF/A export."
+msgstr "Das PDF wurde nicht Eingeschränkt da es ein PDF/A ist."
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_SECURITY.FL_PRINT_PERMISSIONS.FixedLine.Text
+msgid  "Printing"
+msgstr "Drucken"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_PRINT_NONE.RadioButton.Text
+msgid  "~Not permitted"
+msgstr "~Nicht gestattet"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_PRINT_LOWRES.RadioButton.Text
+msgid  "~Low resolution (150 dpi)"
+msgstr "N~iedrige Auflösung (150 dpi)"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_PRINT_HIGHRES.RadioButton.Text
+msgid  "~High resolution"
+msgstr "~Hohe Auflösung"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_SECURITY.FL_CHANGES_ALLOWED.FixedLine.Text
+msgid  "Changes"
+msgstr "Än~derungen"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_CHANGES_NONE.RadioButton.Text
+msgid  "No~t permitted"
+msgstr "Ni~cht gestattet"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_CHANGES_INSDEL.RadioButton.Text
+msgid  "~Inserting, deleting, and rotating pages"
+msgstr "Einfügen, Löschen und Rotieren von ~Seiten"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_CHANGES_FILLFORM.RadioButton.Text
+msgid  "~Filling in form fields"
+msgstr "~Formulare ausfüllen"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_CHANGES_COMMENT.RadioButton.Text
+msgid  "~Commenting, filling in form fields"
+msgstr "~Kommentieren und Formulare ausfüllen"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_SECURITY.RB_CHANGES_ANY_NOCOPY.RadioButton.Text
+msgid  "~Any except extracting pages"
+msgstr "~Alles, bis auf Extrahieren von Seiten"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_SECURITY.CB_ENDAB_COPY.CheckBox.Text
+msgid  "Ena~ble copying of content"
+msgstr "Inha~lt kopieren erlauben"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_SECURITY.CB_ENAB_ACCESS.CheckBox.Text
+msgid  "Enable text access for acce~ssibility tools"
+msgstr "Mit Unterstützung der ~Zugänglichkeit"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_LINKS.TabPage.Text
+msgid  "---"
+msgstr "---"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_LINKS.CB_EXP_BMRK_TO_DEST.CheckBox.Text
+msgid  "Export bookmarks as named destinations"
+msgstr "Lesezeichen als benannte Ziele exportieren"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_LINKS.CB_CNV_OOO_DOCTOPDF.CheckBox.Text
+msgid  "Convert document references to PDF targets"
+msgstr "Dokumentreferenzen in PDF-Ziele umwandeln"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_LINKS.CB_ENAB_RELLINKFSYS.CheckBox.Text
+msgid  "Export URLs relative to file system"
+msgstr "URLs relativ zum Dateisystem exportieren"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_LINKS.FL_DEFAULT_LINK_ACTION.FixedLine.Text
+msgid  "Cross-document links"
+msgstr "Verknüpfungen zwischen Dokumenten"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_LINKS.CB_VIEW_PDF_DEFAULT.RadioButton.Text
+msgid  "Default mode"
+msgstr "Standardverhalten"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_LINKS.CB_VIEW_PDF_APPLICATION.RadioButton.Text
+msgid  "Open with PDF reader application"
+msgstr "Mit PDF-Anzeigeprogramm öffnen"
+
+#: source/pdf/impdialog.src#RID_PDF_TAB_LINKS.CB_VIEW_PDF_BROWSER.RadioButton.Text
+msgid  "Open with Internet browser"
+msgstr "Mit Internet-Browser öffnen"
+
+#: source/pdf/impdialog.src#RID_PDF_EXPORT_DLG.TabDialog.Text
+msgid  "PDF Options"
+msgstr "PDF Optionen"
+
+#: source/pdf/impdialog.src#RID_PDF_EXPORT_DLG.1.RID_PDF_TAB_GENER.PageItem.Text
+msgid  "General"
+msgstr "Allgemein"
+
+#: source/pdf/impdialog.src#RID_PDF_EXPORT_DLG.1.RID_PDF_TAB_OPNFTR.PageItem.Text
+msgid  "Initial View"
+msgstr "Anfangsdarstellung"
+
+#: source/pdf/impdialog.src#RID_PDF_EXPORT_DLG.1.RID_PDF_TAB_VPREFER.PageItem.Text
+msgid  "User Interface"
+msgstr "Benutzeroberfläche"
+
+#: source/pdf/impdialog.src#RID_PDF_EXPORT_DLG.1.RID_PDF_TAB_LINKS.PageItem.Text
+msgid  "Links"
+msgstr "Verknüpfungen"
+
+#: source/pdf/impdialog.src#RID_PDF_EXPORT_DLG.1.RID_PDF_TAB_SECURITY.PageItem.Text
+msgid  "Security"
+msgstr "Sicherheit"
+
+#: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.ModalDialog.Text
+msgid  "Problems during PDF export"
+msgstr "Probleme während des PDF-Exports"
+
+#: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.FT_PROCESS.FixedText.Text
+msgid  "During PDF export the following problems occurred:"
+msgstr "Während des PDF-Exports sind folgende Probleme aufgetreten:"
+
+#: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_PDFA_SHORT.String.Text
+msgid  "PDF/A transparency"
+msgstr "PDF/A-Transparenz"
+
+#: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_PDFA.String.Text
+msgid  "PDF/A forbids transparency. A transparent object was painted opaque instead."
+msgstr ""
+
+#: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_VERSION_SHORT.String.Text
+msgid  "PDF version conflict"
+msgstr "PDF-Versionskonflikt"
+
+#: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_VERSION.String.Text
+msgid  "Transparency is not supported in PDF versions earlier than PDF 1.4. A transparent object was painted opaque instead"
+msgstr ""
+
+#: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_FORMACTION_PDFA_SHORT.String.Text
+msgid  "PDF/A form action"
+msgstr "PDF/A-Formularaktion"
+
+#: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_FORMACTION_PDFA.String.Text
+msgid  "A form control contained an action not supported by the PDF/A standard. The action was skipped"
+msgstr ""
+
+#: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_CONVERTED.String.Text
+msgid  "Some objects were converted to an image in order to remove transparencies, because the target PDF format does not support transparencies. Possibly better results can be achieved if you remove the transparent objects before exporting."
+msgstr ""
+
+#: source/pdf/impdialog.src#RID_PDF_ERROR_DLG.STR_WARN_TRANSP_CONVERTED_SHORT.String.Text
+msgid  "Transparencies removed"
+msgstr "Transparenzen wurden entfernt."
+
+#: source/t602/t602filter.src#T602FILTER_STR_IMPORT_DIALOG_TITLE.String.Text
+msgid  "Settings for T602 import"
+msgstr "Einstellungen für T602-Import"
+
+#: source/t602/t602filter.src#T602FILTER_STR_ENCODING_LABEL.String.Text
+msgid  "Encoding"
+msgstr "Kodierung"
+
+#: source/t602/t602filter.src#T602FILTER_STR_ENCODING_AUTO.String.Text
+msgid  "Automatic"
+msgstr "Automatisch"
+
+#: source/t602/t602filter.src#T602FILTER_STR_ENCODING_CP852.String.Text
+msgid  "CP852 (Latin2)"
+msgstr "CP852 (Latin2)"
+
+#: source/t602/t602filter.src#T602FILTER_STR_ENCODING_CP895.String.Text
+msgid  "CP895 (KEYB2CS, Kamenicky)"
+msgstr "CP895 (KEYB2CS, Kamenicky)"
+
+#: source/t602/t602filter.src#T602FILTER_STR_ENCODING_KOI8CS2.String.Text
+msgid  "KOI8 CS2"
+msgstr "KOI8 CS2"
+
+#: source/t602/t602filter.src#T602FILTER_STR_CYRILLIC_MODE.String.Text
+msgid  "Mode for Russian language (Cyrillic)"
+msgstr "Modus für Russisch (Kyrillisch)"
+
+#: source/t602/t602filter.src#T602FILTER_STR_REFORMAT_TEXT.String.Text
+msgid  "Reformat the text"
+msgstr "Text neu formatieren"
+
+#: source/t602/t602filter.src#T602FILTER_STR_DOT_COMMANDS.String.Text
+msgid  "Display dot commands"
+msgstr "Punktbefehle anzeigen"
+
+#: source/t602/t602filter.src#T602FILTER_STR_CANCEL_BUTTON.String.Text
+msgid  "Cancel"
+msgstr "Abbrechen"
+
+#: source/t602/t602filter.src#T602FILTER_STR_OK_BUTTON.String.Text
+msgid  "OK"
+msgstr "OK"
+
+#: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.ModalDialog.Text
+msgid  "Test XML Filter: %s"
+msgstr "XML-Filter testen: %s"
+
+#: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FL_EXPORT.FixedLine.Text
+msgid  "Export"
+msgstr "Exportieren"
+
+#: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_EXPORT_XSLT.FixedText.Text
+msgid  "XSLT for export"
+msgstr "Export-XSLT"
+
+#: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_TRANSFORM_DOCUMENT.FixedText.Text
+msgid  "Transform document"
+msgstr "Dokument transformieren"
+
+#: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_EXPORT_BROWSE.PushButton.Text
+msgid  "~Browse..."
+msgstr "~Auswählen..."
+
+#: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_CURRENT_DOCUMENT.PushButton.Text
+msgid  "~Current Document"
+msgstr "A~ktuelles Dokument"
+
+#: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FL_IMPORT.FixedLine.Text
+msgid  "Import"
+msgstr "Importieren"
+
+#: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_IMPORT_XSLT.FixedText.Text
+msgid  "XSLT for import"
+msgstr "Import-XSLT"
+
+#: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_IMPORT_TEMPLATE.FixedText.Text
+msgid  "Template for import"
+msgstr "Import-Dokumentvorlage"
+
+#: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.FT_TRANSFORM_FILE.FixedText.Text
+msgid  "Transform file"
+msgstr "Datei transformieren"
+
+#: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.CBX_DISPLAY_SOURCE.CheckBox.Text
+msgid  "~Display source"
+msgstr "Quelltext anzeigen"
+
+#: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_IMPORT_BROWSE.PushButton.Text
+msgid  "B~rowse..."
+msgstr "A~uswählen..."
+
+#: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_RECENT_DOCUMENT.PushButton.Text
+msgid  "~Recent File"
+msgstr "~Letzte Datei"
+
+#: source/xsltdialog/xmlfiltertestdialog.src#DLG_XML_FILTER_TEST_DIALOG.PB_CLOSE.PushButton.Text
+msgid  "~Close"
+msgstr "~Schließen"
+
+#: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.TabPage.Text
+msgid  "Transformation"
+msgstr "Transformation"
+
+#: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_DOCTYPE.FixedText.Text
+msgid  "DocType"
+msgstr "DocType"
+
+#: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_DTD_SCHEMA.FixedText.Text
+msgid  "DTD"
+msgstr "DTD"
+
+#: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.ED_XML_DTD_SCHEMA_BROWSE.PushButton.Text
+msgid  "Browse..."
+msgstr "Auswählen..."
+
+#: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_EXPORT_XSLT.FixedText.Text
+msgid  "XSLT for export"
+msgstr "Export-XSLT"
+
+#: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.PB_XML_EXPORT_XSLT_BROWSE.PushButton.Text
+msgid  "Browse..."
+msgstr "Auswählen..."
+
+#: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_IMPORT_XSLT.FixedText.Text
+msgid  "XSLT for import"
+msgstr "Import-XSLT"
+
+#: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.PB_XML_IMPORT_XSLT_BROWSE.PushButton.Text
+msgid  "Browse..."
+msgstr "Auswählen..."
+
+#: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.FT_XML_IMPORT_TEMPLATE.FixedText.Text
+msgid  "Template for import"
+msgstr "Import-Dokumentvorlage"
+
+#: source/xsltdialog/xmlfiltertabpagexslt.src#RID_XML_FILTER_TABPAGE_XSLT.PB_XML_IMPORT_TEMPLATE_BROWSE.PushButton.Text
+msgid  "Browse..."
+msgstr "Auswählen..."
+
+#: source/xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.WorkWindow.Text
+msgid  "XML Filter Settings"
+msgstr "XML-Filter Einstellungen"
+
+#: source/xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_NEW.PushButton.Text
+msgid  "~New..."
+msgstr "~Neu..."
+
+#: source/xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_EDIT.PushButton.Text
+msgid  "~Edit..."
+msgstr "~Bearbeiten..."
+
+#: source/xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_TEST.PushButton.Text
+msgid  "~Test XSLTs..."
+msgstr "~XSLTs testen..."
+
+#: source/xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_DELETE.PushButton.Text
+msgid  "~Delete..."
+msgstr "~Löschen..."
+
+#: source/xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_SAVE.PushButton.Text
+msgid  "~Save as Package..."
+msgstr "~Als Paket sichern..."
+
+#: source/xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_OPEN.PushButton.Text
+msgid  "~Open Package..."
+msgstr "~Paket öffnen..."
+
+#: source/xsltdialog/xmlfiltersettingsdialog.src#DLG_XML_FILTER_SETTINGS_DIALOG.PB_XML_FILTER_CLOSE.PushButton.Text
+msgid  "~Close"
+msgstr "~Schließen"
+
+#: source/xsltdialog/xmlfiltersettingsdialog.src#STR_XML_FILTER_LISTBOX.String.Text
+msgid  "XML Filter List"
+msgstr "XML Filter Liste"
+
+#: source/xsltdialog/xmlfiltertabdialog.src#DLG_XML_FILTER_TABDIALOG.TabDialog.Text
+msgid  "XML Filter: %s"
+msgstr "XML-Filter: %s"
+
+#: source/xsltdialog/xmlfiltertabdialog.src#DLG_XML_FILTER_TABDIALOG.1.RID_XML_FILTER_TABPAGE_BASIC.PageItem.Text
+msgid  "General"
+msgstr "Allgemein"
+
+#: source/xsltdialog/xmlfiltertabdialog.src#DLG_XML_FILTER_TABDIALOG.1.RID_XML_FILTER_TABPAGE_XSLT.PageItem.Text
+msgid  "Transformation"
+msgstr "Transformation"
+
+#: source/xsltdialog/xmlfilterdialogstrings.src#STR_COLUMN_HEADER_NAME.String.Text
+msgid  "Name"
+msgstr "Name"
+
+#: source/xsltdialog/xmlfilterdialogstrings.src#STR_COLUMN_HEADER_TYPE.String.Text
+msgid  "Type"
+msgstr "Type"
+
+#: source/xsltdialog/xmlfilterdialogstrings.src#STR_UNKNOWN_APPLICATION.String.Text
+msgid  "Unknown"
+msgstr "Unbekannt"
+
+#: source/xsltdialog/xmlfilterdialogstrings.src#STR_IMPORT_ONLY.String.Text
+msgid  "import filter"
+msgstr "Import Filter"
+
+#: source/xsltdialog/xmlfilterdialogstrings.src#STR_IMPORT_EXPORT.String.Text
+msgid  "import/export filter"
+msgstr "Import/Export Filter"
+
+#: source/xsltdialog/xmlfilterdialogstrings.src#STR_EXPORT_ONLY.String.Text
+msgid  "export filter"
+msgstr "Export Filter"
+
+#: source/xsltdialog/xmlfilterdialogstrings.src#STR_WARN_DELETE.String.Text
+msgid  "Do you really want to delete the XML Filter '%s'? This action cannot be undone."
+msgstr ""
+
+#: source/xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_FILTER_NAME_EXISTS.String.Text
+msgid  "An XML filter with the name '%s' already exists. Please enter a different name."
+msgstr ""
+
+#: source/xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_TYPE_NAME_EXISTS.String.Text
+msgid  "The name for  the user interface '%s1' is already used by the XML filter '%s2'. Please enter a different name."
+msgstr ""
+
+#: source/xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_DTD_NOT_FOUND.String.Text
+msgid  "The DTD could not be found. Please enter a valid path."
+msgstr ""
+
+#: source/xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_EXPORT_XSLT_NOT_FOUND.String.Text
+msgid  "The XSLT for export cannot be found. Please enter a valid path."
+msgstr ""
+
+#: source/xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_IMPORT_XSLT_NOT_FOUND.String.Text
+msgid  "The XSLT for import cannot be found. Please enter a valid path."
+msgstr ""
+
+#: source/xsltdialog/xmlfilterdialogstrings.src#STR_ERROR_IMPORT_TEMPLATE_NOT_FOUND.String.Text
+msgid  "The given import template cannot be found. Please enter a valid path."
+msgstr ""
+
+#: source/xsltdialog/xmlfilterdialogstrings.src#STR_NOT_SPECIFIED.String.Text
+msgid  "Not specified"
+msgstr "Nicht spezifiziert"
+
+#: source/xsltdialog/xmlfilterdialogstrings.src#STR_DEFAULT_FILTER_NAME.String.Text
+msgid  "New Filter"
+msgstr "Neuer Filter"
+
+#: source/xsltdialog/xmlfilterdialogstrings.src#STR_DEFAULT_UI_NAME.String.Text
+msgid  "Untitled"
+msgstr "Unbenannt"
+
+#: source/xsltdialog/xmlfilterdialogstrings.src#STR_UNDEFINED_FILTER.String.Text
+msgid  "undefined filter"
+msgstr "Undefinierter Filter"
+
+#: source/xsltdialog/xmlfilterdialogstrings.src#STR_FILTER_HAS_BEEN_SAVED.String.Text
+msgid  "The XML filter '%s' has been saved as package '%s'. "
+msgstr "Der XML-Filter '%s' wurde als Paket '%s' gesichert."
+
+#: source/xsltdialog/xmlfilterdialogstrings.src#STR_FILTERS_HAVE_BEEN_SAVED.String.Text
+msgid  "%s XML filters have been saved in the package '%s'."
+msgstr "%s XML-Filter wurden in dem Paket '%s' gesichert."
+
+#: source/xsltdialog/xmlfilterdialogstrings.src#STR_FILTER_PACKAGE.String.Text
+msgid  "XSLT filter package"
+msgstr "XSLT Filter Paket"
+
+#: source/xsltdialog/xmlfilterdialogstrings.src#STR_FILTER_INSTALLED.String.Text
+msgid  "The XML filter '%s' has been installed successfully."
+msgstr "Der XML-Filter '%s' wurde erfolgreich installiert."
+
+#: source/xsltdialog/xmlfilterdialogstrings.src#STR_FILTERS_INSTALLED.String.Text
+msgid  "%s XML filters have been installed successfully."
+msgstr "%s XML-Filter wurden erfolgreich installiert."
+
+#: source/xsltdialog/xmlfilterdialogstrings.src#STR_NO_FILTERS_FOUND.String.Text
+msgid  "No XML filter could be installed because the package '%s' does not contain any XML filters."
+msgstr ""
+
+#: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.TabPage.Text
+msgid  "General"
+msgstr "Allgemein"
+
+#: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_FILTER_NAME.FixedText.Text
+msgid  "Filter name"
+msgstr "Filtername"
+
+#: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_APPLICATION.FixedText.Text
+msgid  "Application"
+msgstr "Anwendung"
+
+#: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_INTERFACE_NAME.FixedText.Text
+msgid  "Name of\nfile type"
+msgstr ""
+
+#: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_EXTENSION.FixedText.Text
+msgid  "File extension"
+msgstr "Dateiendung"
+
+#: source/xsltdialog/xmlfiltertabpagebasic.src#RID_XML_FILTER_TABPAGE_BASIC.FT_XML_DESCRIPTION.FixedText.Text
+msgid  "Comments"
+msgstr "Kommentar"
+
+#: source/xsltdialog/xmlfileview.src#DLG_XML_SOURCE_FILE_DIALOG.WorkWindow.Text
+msgid  "XML Filter output"
+msgstr "XML-Filter Ausgabe"
+
+#: source/xsltdialog/xmlfileview.src#DLG_XML_SOURCE_FILE_DIALOG.PB_VALIDATE.PushButton.Text
+msgid  "~Validate"
+msgstr "~Validieren"
+
+#: source/config/fragments/types/writerglobal8.xcu#writerglobal8.UIName
+msgid  "Writer 8 Master Document"
+msgstr "Writer 8-Hauptdokument"
+
+#: source/config/fragments/types/impress8.xcu#impress8.UIName
+msgid  "Impress 8"
+msgstr "Impress 8"
+
+#: source/config/fragments/types/calc8_template.xcu#calc8_template.UIName
+msgid  "Calc 8 Template"
+msgstr "Calc 8-Vorlage"
+
+#: source/config/fragments/types/writer8.xcu#writer8.UIName
+msgid  "Writer 8"
+msgstr "Writer 8"
+
+#: source/config/fragments/types/impress8_template.xcu#impress8_template.UIName
+msgid  "Impress 8 Template"
+msgstr "Impress 8-Vorlage"
+
+#: source/config/fragments/types/draw8_template.xcu#draw8_template.UIName
+msgid  "Draw 8 Template"
+msgstr "Draw 8-Vorlage"
+
+#: source/config/fragments/types/writerweb8_writer_template.xcu#writerweb8_writer_template.UIName
+msgid  "Writer/Web 8 Template"
+msgstr "Writer/Web 8-Vorlage"
+
+#: source/config/fragments/types/draw8.xcu#draw8.UIName
+msgid  "Draw 8"
+msgstr "Draw 8"
+
+#: source/config/fragments/types/calc8.xcu#calc8.UIName
+msgid  "Calc 8"
+msgstr "Calc 8"
+
+#: source/config/fragments/types/math8.xcu#math8.UIName
+msgid  "Math 8"
+msgstr "Math 8"
+
+#: source/config/fragments/types/writer8_template.xcu#writer8_template.UIName
+msgid  "Writer 8 Template"
+msgstr "Writer 8-Vorlage"
+
+#: source/config/fragments/types/chart8.xcu#chart8.UIName
+msgid  "Chart 8"
+msgstr "Chart 8"

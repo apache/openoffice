@@ -1,240 +1,224 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.9.0\n"
-"X-Accelerator-Marker: ~\n"
+"X-Generator: genLang\n"
 
-#: resource.src#STR_MENU_ADDONS.string.text
-msgid "Add-Ons"
+
+#: source/classes/resource.src#STR_MENU_ADDONS.String.Text
+msgid  "Add-Ons"
 msgstr "Дополнения"
 
-#: resource.src#STR_MENU_ADDONHELP.string.text
-msgid "Add-~On Help"
+#: source/classes/resource.src#STR_MENU_ADDONHELP.String.Text
+msgid  "Add-~On Help"
 msgstr "Справка по дополнениям"
 
-#: resource.src#STR_MENU_HEADFOOTALL.string.text
-msgid "All"
+#: source/classes/resource.src#STR_MENU_HEADFOOTALL.String.Text
+msgid  "All"
 msgstr "Все"
 
-#: resource.src#STR_UPDATEDOC.string.text
-msgid "~Update"
+#: source/classes/resource.src#STR_UPDATEDOC.String.Text
+msgid  "~Update"
 msgstr "Обновить"
 
-#: resource.src#STR_CLOSEDOC_ANDRETURN.string.text
-msgid "~Close & Return to "
+#: source/classes/resource.src#STR_CLOSEDOC_ANDRETURN.String.Text
+msgid  "~Close & Return to "
 msgstr "Закрыть и вернуться к"
 
-#: resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_VISIBLEBUTTON.menuitem.text
-msgid "Visible ~Buttons"
+#: source/classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_VISIBLEBUTTON.MenuItem.Text
+msgid  "Visible ~Buttons"
 msgstr "Показать кнопки"
 
-#: resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_CUSTOMIZETOOLBAR.menuitem.text
-msgid "~Customize Toolbar..."
+#: source/classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_CUSTOMIZETOOLBAR.MenuItem.Text
+msgid  "~Customize Toolbar..."
 msgstr "Настройка панели инструментов..."
 
-#: resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_DOCKTOOLBAR.menuitem.text
-msgid "~Dock Toolbar"
+#: source/classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_DOCKTOOLBAR.MenuItem.Text
+msgid  "~Dock Toolbar"
 msgstr "Закрепить панель инструментов"
 
-#: resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_DOCKALLTOOLBAR.menuitem.text
-msgid "Dock ~All Toolbars"
+#: source/classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_DOCKALLTOOLBAR.MenuItem.Text
+msgid  "Dock ~All Toolbars"
 msgstr "Закрепить все панели инструментов"
 
-#: resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_LOCKTOOLBARPOSITION.menuitem.text
-msgid "~Lock Toolbar Position"
+#: source/classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_LOCKTOOLBARPOSITION.MenuItem.Text
+msgid  "~Lock Toolbar Position"
 msgstr "Фиксировать позицию панели инструментов"
 
-#: resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_CLOSE.menuitem.text
-msgid "Close ~Toolbar"
+#: source/classes/resource.src#POPUPMENU_TOOLBAR_QUICKCUSTOMIZATION.MENUITEM_TOOLBAR_CLOSE.MenuItem.Text
+msgid  "Close ~Toolbar"
 msgstr "Закрыть панель инструментов"
 
-#: resource.src#STR_SAVECOPYDOC.string.text
-msgid "Save Copy ~as..."
+#: source/classes/resource.src#STR_SAVECOPYDOC.String.Text
+msgid  "Save Copy ~as..."
 msgstr "Сохранить копию как..."
 
-#: resource.src#STR_NODOCUMENT.string.text
-msgid "No Documents"
+#: source/classes/resource.src#STR_NODOCUMENT.String.Text
+msgid  "No Documents"
 msgstr "Документов нет"
 
-#: resource.src#STR_TOOLBAR_TITLE_ADDON.string.text
-msgid "Add-On %num%"
+#: source/classes/resource.src#STR_CLEAR_RECENT_FILES.String.Text
+msgid  "Clear List"
+msgstr ""
+
+#: source/classes/resource.src#STR_CLEAR_RECENT_FILES_HELP.String.Text
+msgid  "Clears the list with the most recently opened files. This action can not be undone."
+msgstr ""
+
+#: source/classes/resource.src#STR_TOOLBAR_TITLE_ADDON.String.Text
+msgid  "Add-On %num%"
 msgstr "Расширения %num%"
 
-#: resource.src#STR_STATUSBAR_LOGOTEXT.string.text
-msgid "A %PRODUCTNAME product by Oracle"
-msgstr "%PRODUCTNAME является продуктом Oracle"
-
-#: resource.src#DLG_LICENSE.FT_INFO1.fixedtext.text
-msgid "Please follow these steps to proceed with the installation:"
-msgstr "Выполните следующие действия для продолжения установки:"
-
-#: resource.src#DLG_LICENSE.FT_INFO2_1.fixedtext.text
-msgid "1."
-msgstr "1."
-
-#: resource.src#DLG_LICENSE.FT_INFO2.fixedtext.text
-msgid ""
-"View the complete License Agreement. Please use the scroll bar or the '%"
-"PAGEDOWN' button in this dialog to view the entire license text."
-msgstr ""
-"Просмотрите лицензионное соглашение полностью. Используйте полосу прокрутки "
-"или кнопку %PAGEDOWN для просмотра текста лицензии.  "
-
-#: resource.src#DLG_LICENSE.PB_PAGEDOWN.pushbutton.text
-msgid "Scroll Down"
-msgstr "Прокрутить вниз"
-
-#: resource.src#DLG_LICENSE.FT_INFO3_1.fixedtext.text
-msgid "2."
-msgstr "2."
-
-#: resource.src#DLG_LICENSE.FT_INFO3.fixedtext.text
-msgid "Accept the License Agreement."
-msgstr "Принять лицензионное соглашение"
-
-#: resource.src#DLG_LICENSE.LICENSE_ACCEPT.string.text
-msgid "~Accept"
-msgstr "Принять"
-
-#: resource.src#DLG_LICENSE.LICENSE_NOTACCEPT.string.text
-msgid "Decline"
-msgstr "Отклонить"
-
-#: resource.src#DLG_LICENSE.modaldialog.text
-msgid "License Agreement"
+#: source/classes/resource.src#DLG_LICENSE.ModalDialog.Text
+msgid  "License Agreement"
 msgstr "Лицензионное соглашение"
 
-#: resource.src#STR_FULL_DISC_RETRY_BUTTON.string.text
-msgid "Retry"
+#: source/classes/resource.src#DLG_LICENSE.FT_INFO1.FixedText.Text
+msgid  "Please follow these steps to proceed with the installation:"
+msgstr "Выполните следующие действия для продолжения установки:"
+
+#: source/classes/resource.src#DLG_LICENSE.FT_INFO2_1.FixedText.Text
+msgid  "1."
+msgstr "1."
+
+#: source/classes/resource.src#DLG_LICENSE.FT_INFO2.FixedText.Text
+msgid  "View the complete License Agreement. Please use the scroll bar or the '%PAGEDOWN' button in this dialog to view the entire license text."
+msgstr ""
+
+#: source/classes/resource.src#DLG_LICENSE.PB_PAGEDOWN.PushButton.Text
+msgid  "Scroll Down"
+msgstr "Прокрутить вниз"
+
+#: source/classes/resource.src#DLG_LICENSE.FT_INFO3_1.FixedText.Text
+msgid  "2."
+msgstr "2."
+
+#: source/classes/resource.src#DLG_LICENSE.FT_INFO3.FixedText.Text
+msgid  "Accept the License Agreement."
+msgstr "Принять лицензионное соглашение"
+
+#: source/classes/resource.src#DLG_LICENSE.LICENSE_ACCEPT.String.Text
+msgid  "~Accept"
+msgstr "Принять"
+
+#: source/classes/resource.src#DLG_LICENSE.LICENSE_NOTACCEPT.String.Text
+msgid  "Decline"
+msgstr "Отклонить"
+
+#: source/classes/resource.src#STR_FULL_DISC_RETRY_BUTTON.String.Text
+msgid  "Retry"
 msgstr "Повторить"
 
-#: resource.src#STR_FULL_DISC_MSG.string.text
-msgid ""
-"%PRODUCTNAME could not save important internal information due to "
-"insufficient free disk space at the following location:\n"
-"%PATH\n"
-"\n"
-"You will not be able to continue working with %PRODUCTNAME without "
-"allocating more free disk space at that location.\n"
-"\n"
-"Press the 'Retry' button after you have allocated more free disk space to "
-"retry saving the data.\n"
-"\n"
+#: source/classes/resource.src#STR_FULL_DISC_MSG.String.Text
+msgid  "%PRODUCTNAME could not save important internal information due to insufficient free disk space at the following location:\n%PATH\n\nYou will not be able to continue working with %PRODUCTNAME without allocating more free disk space at that location.\n\nPress the 'Retry' button after you have allocated more free disk space to retry saving the data.\n\n"
 msgstr ""
-"%PRODUCTNAME не может сохранить важную внутреннюю информацию из-за "
-"недостаточного места на диске в следующем расположении:\n"
-"%PATH\n"
-"\n"
-"Невозможно будет продолжить работу с %PRODUCTNAME без выделения "
-"дополнительного свободного места на диске в этом расположении.\n"
-"\n"
-"После выделения дополнительного места на диске нажмите кнопку «Повторить» "
-"для повторения попытки сохранения данных.\n"
-"\n"
 
-#: resource.src#STR_RESTORE_TOOLBARS.string.text
-msgid "~Reset"
+#: source/classes/resource.src#STR_RESTORE_TOOLBARS.String.Text
+msgid  "~Reset"
 msgstr "Восстановить"
 
-#: resource.src#STR_CORRUPT_UICFG_SHARE.string.text
-msgid ""
-"An error occurred while loading the user interface configuration data. The "
-"application will be terminated now.\n"
-"Please try to reinstall the application."
+#: source/classes/resource.src#STR_CORRUPT_UICFG_SHARE.String.Text
+msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to reinstall the application."
 msgstr ""
-"Ошибка загрузки конфигураций пользовательского интерфейса. Приложение будет "
-"закрыто.\n"
-"Попробуйте переустановить приложение."
 
-#: resource.src#STR_CORRUPT_UICFG_USER.string.text
-msgid ""
-"An error occurred while loading the user interface configuration data. The "
-"application will be terminated now.\n"
-"Please try to remove your user profile for the application."
+#: source/classes/resource.src#STR_CORRUPT_UICFG_USER.String.Text
+msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application."
 msgstr ""
-"Ошибка загрузки конфигураций пользовательского интерфейса. Приложение будет "
-"закрыто.\n"
-"Попробуйте удалить пользовательский профиль приложения."
 
-#: resource.src#STR_CORRUPT_UICFG_GENERAL.string.text
-msgid ""
-"An error occurred while loading the user interface configuration data. The "
-"application will be terminated now.\n"
-"Please try to remove your user profile for the application first or try to "
-"reinstall the application."
+#: source/classes/resource.src#STR_CORRUPT_UICFG_GENERAL.String.Text
+msgid  "An error occurred while loading the user interface configuration data. The application will be terminated now.\nPlease try to remove your user profile for the application first or try to reinstall the application."
 msgstr ""
-"Ошибка загрузки конфигураций пользовательского интерфейса. Приложение будет "
-"закрыто.\n"
-"Попробуйте удалить пользовательский профиль и переустановить приложение."
 
-#: resource.src#STR_UNTITLED_DOCUMENT.string.text
-msgid "Untitled"
+#: source/classes/resource.src#STR_UNTITLED_DOCUMENT.String.Text
+msgid  "Untitled"
 msgstr "Без имени"
 
-#: resource.src#STR_LANGSTATUS_MULTIPLE_LANGUAGES.string.text
-msgid "Multiple Languages"
+#: source/classes/resource.src#STR_LANGSTATUS_MULTIPLE_LANGUAGES.String.Text
+msgid  "Multiple Languages"
 msgstr "Несколько языков"
 
-#: resource.src#STR_LANGSTATUS_NONE.string.text
-msgid "None (Do not check spelling)"
+#: source/classes/resource.src#STR_LANGSTATUS_NONE.String.Text
+msgid  "None (Do not check spelling)"
 msgstr "Нет (не проверять орфографию)"
 
-#: resource.src#STR_RESET_TO_DEFAULT_LANGUAGE.string.text
-msgid "Reset to Default Language"
+#: source/classes/resource.src#STR_RESET_TO_DEFAULT_LANGUAGE.String.Text
+msgid  "Reset to Default Language"
 msgstr "Установить язык по умолчанию"
 
-#: resource.src#STR_LANGSTATUS_MORE.string.text
-msgid "More..."
+#: source/classes/resource.src#STR_LANGSTATUS_MORE.String.Text
+msgid  "More..."
 msgstr "Е~щё..."
 
-#: resource.src#STR_SET_LANGUAGE_FOR_SELECTION.string.text
-msgid "Set Language for Selection"
+#: source/classes/resource.src#STR_SET_LANGUAGE_FOR_SELECTION.String.Text
+msgid  "Set Language for Selection"
 msgstr "Установить язык для выделения"
 
-#: resource.src#STR_SET_LANGUAGE_FOR_PARAGRAPH.string.text
-msgid "Set Language for Paragraph"
+#: source/classes/resource.src#STR_SET_LANGUAGE_FOR_PARAGRAPH.String.Text
+msgid  "Set Language for Paragraph"
 msgstr "Установить язык для абзаца"
 
-#: resource.src#STR_SET_LANGUAGE_FOR_ALL_TEXT.string.text
-msgid "Set Language for all Text"
+#: source/classes/resource.src#STR_SET_LANGUAGE_FOR_ALL_TEXT.String.Text
+msgid  "Set Language for all Text"
 msgstr "Установить язык для всего текста"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
-"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Translate Toolkit 1.9.0\n"
-"X-Accelerator-Marker: ~\n"
 
-#: fwk_services.src#DLG_BACKING.STR_BACKING_WELCOME.string.text
-msgid "Welcome to"
+#: source/services/fwk_services.src#DLG_BACKING.STR_BACKING_WELCOME.String.Text
+msgid  "Welcome to"
 msgstr "Добро пожаловать в"
 
-#: fwk_services.src#DLG_BACKING.STR_BACKING_WELCOMEPRODUCT.string.text
-msgid "%PRODUCTNAME"
+#: source/services/fwk_services.src#DLG_BACKING.STR_BACKING_WELCOMEPRODUCT.String.Text
+msgid  "%PRODUCTNAME"
 msgstr "%PRODUCTNAME"
 
-#: fwk_services.src#DLG_BACKING.STR_BACKING_CREATE.string.text
-msgid "Create a new document"
+#: source/services/fwk_services.src#DLG_BACKING.STR_BACKING_CREATE.String.Text
+msgid  "Create a new document"
 msgstr "Создать документ"
 
-#: fwk_services.src#DLG_BACKING.STR_BACKING_TEMPLATE.string.text
-msgid "~Templates..."
+#: source/services/fwk_services.src#DLG_BACKING.STR_BACKING_TEMPLATE.String.Text
+msgid  "~Templates..."
 msgstr "Шаблоны..."
 
-#: fwk_services.src#DLG_BACKING.STR_BACKING_FILE.string.text
-msgid "~Open..."
+#: source/services/fwk_services.src#DLG_BACKING.STR_BACKING_FILE.String.Text
+msgid  "~Open..."
 msgstr "Открыть..."
 
-#: fwk_services.src#DLG_BACKING.STR_BACKING_EXTHELP.string.text
-msgid "Add new features to %PRODUCTNAME"
+#: source/services/fwk_services.src#DLG_BACKING.STR_BACKING_EXTHELP.String.Text
+msgid  "Add new features to %PRODUCTNAME"
 msgstr "Добавить расширения для %PRODUCTNAME (загрузка из Интернет)"
 
-#: fwk_services.src#DLG_BACKING.STR_BACKING_REGHELP.string.text
-msgid "Register your %PRODUCTNAME"
+#: source/services/fwk_services.src#DLG_BACKING.STR_BACKING_REGHELP.String.Text
+msgid  "Register your %PRODUCTNAME"
 msgstr "Зарегистрировать %PRODUCTNAME"
 
-#: fwk_services.src#DLG_BACKING.STR_BACKING_INFOHELP.string.text
-msgid "Get more information about %PRODUCTNAME"
+#: source/services/fwk_services.src#DLG_BACKING.STR_BACKING_INFOHELP.String.Text
+msgid  "Get more information about %PRODUCTNAME"
 msgstr "Подробнее об %PRODUCTNAME"
 
-#: fwk_services.src#DLG_BACKING.STR_BACKING_TPLREP.string.text
-msgid "Get more templates for %PRODUCTNAME"
+#: source/services/fwk_services.src#DLG_BACKING.STR_BACKING_TPLREP.String.Text
+msgid  "Get more templates for %PRODUCTNAME"
 msgstr "Добавить шаблоны для %PRODUCTNAME (загрузка из Интернета)"

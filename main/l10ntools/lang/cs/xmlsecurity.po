@@ -1,382 +1,348 @@
-
-#: certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.FT_HINT_SELECT.fixedtext.text
-msgid "Select the certificate you want to use for signing"
-msgstr "Zvolte certifikát, který chcete použít pro podepisování"
-
-#: certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.string.text
-msgctxt "certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.string.text"
-msgid "Issued to\tIssued by\tExpiration date"
-msgstr "Vydán pro\tVydán kým\tDatum expirace"
-
-#: certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.pushbutton.text
-msgctxt "certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.pushbutton.text"
-msgid "View Certificate..."
-msgstr "Zobrazit certifikát..."
-
-#: certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.modaldialog.text
-msgid "Select Certificate"
-msgstr "Vybrat certifikát"
-
-#: certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_GENERAL.pageitem.text
-msgid "General"
-msgstr "Obecné"
-
-#: certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_DETAILS.pageitem.text
-msgid "Details"
-msgstr "Podrobnosti"
-
-#: certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_CERTPATH.pageitem.text
-msgid "Certification Path"
-msgstr "Cesta k certifikátu"
-
-#: certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.tabdialog.text
-msgid "View Certificate"
-msgstr "Zobrazit certifikát"
-
-#: certificateviewer.src#RID_XMLSECTP_GENERAL.FI_CERTINFO.fixedtext.text
-msgid " Certificate Information"
-msgstr "Informace o certifikátu"
-
-#: certificateviewer.src#RID_XMLSECTP_GENERAL.FI_HINTNOTTRUST.fixedtext.text
-msgid "This certificate is intended for the following purpose(s):"
-msgstr "Tento certifikát je určen k těmto účelům:"
-
-#: certificateviewer.src#RID_XMLSECTP_GENERAL.FI_ISSTOLABEL.fixedtext.text
-msgid "Issued to:"
-msgstr "Vydán pro:"
-
-#: certificateviewer.src#RID_XMLSECTP_GENERAL.FI_ISSBYLABEL.fixedtext.text
-msgid "Issued by:"
-msgstr "Vydal:"
-
-#: certificateviewer.src#RID_XMLSECTP_GENERAL.FI_VALIDDATE.fixedtext.text
-msgid "Valid from %SDATE% to %EDATE%"
-msgstr "Platný od %SDATE% do %EDATE%"
-
-#: certificateviewer.src#RID_XMLSECTP_GENERAL.FI_CORRPRIVKEY.fixedtext.text
-msgid "You have a private key that corresponds to this certificate."
-msgstr "Vlastníte soukromý klíč, který patří k tomuto certifikátu."
-
-#: certificateviewer.src#RID_XMLSECTP_GENERAL.STR_CERTIFICATE_NOT_VALIDATED.string.text
-msgctxt "certificateviewer.src#RID_XMLSECTP_GENERAL.STR_CERTIFICATE_NOT_VALIDATED.string.text"
-msgid "The certificate could not be validated."
-msgstr "Certifikát nelze ověřit."
-
-#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_HEADERBAR.string.text
-msgid "Field\tValue"
-msgstr "Pole\tHodnota"
-
-#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VERSION.string.text
-msgid "Version"
-msgstr "Verze"
-
-#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SERIALNUM.string.text
-msgid "Serial Number"
-msgstr "Sériové číslo"
-
-#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGALGORITHM.string.text
-msgctxt "certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGALGORITHM.string.text"
-msgid "Signature Algorithm"
-msgstr "Algoritmus podpisu"
-
-#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_ISSUER.string.text
-msgid "Issuer"
-msgstr "Vydavatel"
-
-#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_ISSUER_ID.string.text
-msgid "Issuer Unique ID"
-msgstr "Unikátní ID vydavatele"
-
-#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VALIDFROM.string.text
-msgid "Valid From"
-msgstr "Platný od"
-
-#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VALIDTO.string.text
-msgid "Valid to"
-msgstr "Platný do"
-
-#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT.string.text
-msgid "Subject"
-msgstr "Subjekt"
-
-#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_ID.string.text
-msgid "Subject Unique ID"
-msgstr "Unikátní ID subjektu"
-
-#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_PUBKEY_ALGO.string.text
-msgid "Subject Algorithm"
-msgstr "Algoritmus subjektu"
-
-#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_PUBKEY_VAL.string.text
-msgid "Public Key"
-msgstr "Veřejný klíč"
-
-#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGNATURE_ALGO.string.text
-msgctxt "certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGNATURE_ALGO.string.text"
-msgid "Signature Algorithm"
-msgstr "Algoritmus podpisu"
-
-#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_THUMBPRINT_SHA1.string.text
-msgid "Thumbprint SHA1"
-msgstr "Otisk SHA1"
-
-#: certificateviewer.src#RID_XMLSECTP_DETAILS.STR_THUMBPRINT_MD5.string.text
-msgid "Thumbprint MD5"
-msgstr "Otisk MD5"
-
-#: certificateviewer.src#RID_XMLSECTP_CERTPATH.FT_CERTPATH.fixedtext.text
-msgid "Certification path"
-msgstr "Cesta k certifikátu"
-
-#: certificateviewer.src#RID_XMLSECTP_CERTPATH.BTN_VIEWCERT.pushbutton.text
-msgctxt "certificateviewer.src#RID_XMLSECTP_CERTPATH.BTN_VIEWCERT.pushbutton.text"
-msgid "View Certificate..."
-msgstr "Zobrazit certifikát..."
-
-#: certificateviewer.src#RID_XMLSECTP_CERTPATH.FT_CERTSTATUS.fixedtext.text
-msgid "Certification status"
-msgstr "Stav certifikátu"
-
-#: certificateviewer.src#RID_XMLSECTP_CERTPATH.STR_PATH_CERT_OK.string.text
-msgid "The certificate is OK."
-msgstr "Certifikát je v pořádku."
-
-#: certificateviewer.src#RID_XMLSECTP_CERTPATH.STR_PATH_CERT_NOT_VALIDATED.string.text
-msgctxt "certificateviewer.src#RID_XMLSECTP_CERTPATH.STR_PATH_CERT_NOT_VALIDATED.string.text"
-msgid "The certificate could not be validated."
-msgstr "Certifikát nelze ověřit."
-
-#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_DOC.fixedtext.text
-msgid "The following have signed the document content:"
-msgstr "Obsah tohoto dokumentu podepsali:"
-
-#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_BASIC.fixedtext.text
-msgid "The following have signed the document macro:"
-msgstr "Makro v tomto dokumentu podepsali:"
-
-#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_PACK.fixedtext.text
-msgid "The following have signed this package:"
-msgstr "Tento balíček podepsali:"
-
-#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_HEADERBAR.string.text
-msgid "\tSigned by\tDigital ID issued by\tDate"
-msgstr "\tPodepsal\tVydavatel certifikátu\tDatum"
-
-#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_VALID_SIGNATURE.string.text
-msgid "Valid signature"
-msgstr "Platný podpis"
-
-#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_NO_INFO_TO_VERIFY.string.text
-msgid "Certificate could not be validated"
-msgstr "Certifikát nelze ověřit"
-
-#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_INVALID_SIGNATURE.string.text
-msgctxt "digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_INVALID_SIGNATURE.string.text"
-msgid "The signatures in this document are invalid"
-msgstr "Podpisy v tomto dokumentu nejsou platné"
-
-#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_VALID.fixedtext.text
-msgid "The signatures in this document are valid"
-msgstr "Podpisy v tomto dokumentu jsou platné"
-
-#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_OLDSIGNATURE.fixedtext.text
-msgid "Not all parts of the document are signed"
-msgstr "Některé části dokumentu nejsou podepsány"
-
-#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_BROKEN.fixedtext.text
-msgctxt "digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_BROKEN.fixedtext.text"
-msgid "The signatures in this document are invalid"
-msgstr "Podpisy v tomto dokumentu nejsou platné"
-
-#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_VIEWCERT.pushbutton.text
-msgctxt "digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_VIEWCERT.pushbutton.text"
-msgid "View Certificate..."
-msgstr "Zobrazit certifikát..."
-
-#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_ADDCERT.pushbutton.text
-msgid "Sign Document..."
-msgstr "Podepsat dokument..."
-
-#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_REMOVECERT.pushbutton.text
-msgctxt "digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_REMOVECERT.pushbutton.text"
-msgid "Remove"
-msgstr "Odstranit"
-
-#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_OK.okbutton.text
-msgid "Close"
-msgstr "Zavřít"
-
-#: digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.modaldialog.text
-msgid "Digital Signatures"
-msgstr "Elektronické podpisy"
-
-#: digitalsignaturesdialog.src#RID_XMLSECDLG_OLD_ODF_FORMAT.errorbox.text
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
 msgid ""
-"This document contains signatures in ODF 1.1 (OpenOffice.org 2.x) format. "
-"Signing documents in %PRODUCTNAME %PRODUCTVERSION requires ODF 1.2 format "
-"version. Thus no signatures can be added or removed to this document.\n"
-"\n"
-"Save document in ODF 1.2 format and add all desired signatures again."
 msgstr ""
-"Tento dokument obsahuje podpisy ve formátu ODF 1.1 (OpenOffice.org 2.x). K "
-"podepsání dokumentu v %PRODUCTNAME %PRODUCTVERSION je potřeba verze formátu "
-"ODF 1.2. Tudíž z tohoto dokumentu nelze odebrat ani přidat podpisy.\n"
-"\n"
-"Uložte dokument ve formátu ODF 1.2 a znovu přidejte požadované podpisy."
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
 
-#: digitalsignaturesdialog.src#MSG_XMLSECDLG_QUERY_REMOVEDOCSIGNBEFORESIGN.querybox.text
-msgid ""
-"Adding or removing a macro signature will remove all document signatures.\n"
-"Do you really want to continue?"
+
+#: source/component/warnbox.src#RID_XMLSECWB_NO_MOZILLA_PROFILE.WarningBox.Message
+msgid  "Digital signatures functionality could not be used, because no Mozilla user profile was found. Please check the Mozilla installation."
 msgstr ""
-"Přidání nebo odstranění podpisu makra odstraní všechny podpisy dokumentu.\n"
-"Opravdu pokračovat?"
 
-#: macrosecurity.src#RID_XMLSECTP_MACROSEC.1.RID_XMLSECTP_SECLEVEL.pageitem.text
-msgid "Security Level"
-msgstr "Úroveň zabezpečení"
-
-#: macrosecurity.src#RID_XMLSECTP_MACROSEC.1.RID_XMLSECTP_TRUSTSOURCES.pageitem.text
-msgid "Trusted Sources"
-msgstr "Důvěryhodné zdroje"
-
-#: macrosecurity.src#RID_XMLSECTP_MACROSEC.BTN_RESET.pushbutton.text
-msgid "Reset"
-msgstr "Obnovit"
-
-#: macrosecurity.src#RID_XMLSECTP_MACROSEC.tabdialog.text
-msgid "Macro Security"
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.TabDialog.Text
+msgid  "Macro Security"
 msgstr "Zabezpečení maker"
 
-#: macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.radiobutton.text
-msgid ""
-"~Very high.\n"
-"Only macros from trusted file locations are allowed to run. All other "
-"macros, regardless whether signed or not, are disabled."
-msgstr ""
-"Velmi vysoká.\n"
-"Spouštění maker je povoleno pouze pro makra uložená v důvěryhodných "
-"umístěních. Všechna ostatní makra jsou zakázána, bez ohledu na to, zda jsou "
-"podepsána nebo ne."
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.1.RID_XMLSECTP_SECLEVEL.PageItem.Text
+msgid  "Security Level"
+msgstr "Úroveň zabezpečení"
 
-#: macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.radiobutton.text
-msgid ""
-"H~igh.\n"
-"Only signed macros from trusted sources are allowed to run. Unsigned macros "
-"are disabled."
-msgstr ""
-"Vysoká.\n"
-"Jsou povolena pouze podepsaná makra z důvěryhodných zdrojů. Nepodepsaná "
-"makra jsou zakázána."
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.1.RID_XMLSECTP_TRUSTSOURCES.PageItem.Text
+msgid  "Trusted Sources"
+msgstr "Důvěryhodné zdroje"
 
-#: macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.radiobutton.text
-msgid ""
-"~Medium.\n"
-"Confirmation required before executing macros from untrusted sources."
-msgstr ""
-"Střední.\n"
-"Je třeba potvrdit každé spuštění makra z nedůvěryhodného zdroje."
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_MACROSEC.BTN_RESET.PushButton.Text
+msgid  "Reset"
+msgstr "Obnovit"
 
-#: macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.radiobutton.text
-msgid ""
-"~Low (not recommended).\n"
-"All macros will be executed without confirmation. Use this setting only if "
-"you are certain that all documents that will be opened are safe."
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_VERYHIGH.RadioButton.Text
+msgid  "~Very high.\nOnly macros from trusted file locations are allowed to run. All other macros, regardless whether signed or not, are disabled."
 msgstr ""
-"Nízká (nedoporučujeme).\n"
-"Makra je možné spustit bez potvrzení. Tento stupeň používejte výhradně "
-"tehdy, kdy jste si jisti, že všechny otevírané dokumenty jsou bezpečné."
 
-#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.fixedline.text
-msgid "Trusted certificates"
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_HIGH.RadioButton.Text
+msgid  "H~igh.\nOnly signed macros from trusted sources are allowed to run. Unsigned macros are disabled."
+msgstr ""
+
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_MEDIUM.RadioButton.Text
+msgid  "~Medium.\nConfirmation required before executing macros from untrusted sources."
+msgstr ""
+
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_SECLEVEL.RB_LOW.RadioButton.Text
+msgid  "~Low (not recommended).\nAll macros will be executed without confirmation. Use this setting only if you are certain that all documents that will be opened are safe."
+msgstr ""
+
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTCERT.FixedLine.Text
+msgid  "Trusted certificates"
 msgstr "Důvěryhodné certifikáty"
 
-#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.STR_HEADERBAR.string.text
-msgctxt "macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.STR_HEADERBAR.string.text"
-msgid "Issued to\tIssued by\tExpiration date"
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.STR_HEADERBAR.String.Text
+msgid  "Issued to\tIssued by\tExpiration date"
 msgstr "Vydán pro\tVydán kým\tDatum expirace"
 
-#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_ADD_TRUSTCERT.pushbutton.text
-msgctxt "macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_ADD_TRUSTCERT.pushbutton.text"
-msgid "Add..."
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_ADD_TRUSTCERT.PushButton.Text
+msgid  "Add..."
 msgstr "Přidat..."
 
-#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_VIEW_TRUSTCERT.pushbutton.text
-msgid "View..."
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_VIEW_TRUSTCERT.PushButton.Text
+msgid  "View..."
 msgstr "Zobrazit..."
 
-#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_REMOVE_TRUSTCERT.pushbutton.text
-msgctxt "macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_REMOVE_TRUSTCERT.pushbutton.text"
-msgid "Remove"
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.PB_REMOVE_TRUSTCERT.PushButton.Text
+msgid  "Remove"
 msgstr "Odstranit"
 
-#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTFILELOC.fixedline.text
-msgid "Trusted file locations"
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_TRUSTFILELOC.FixedLine.Text
+msgid  "Trusted file locations"
 msgstr "Důvěryhodná umístění"
 
-#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FI_TRUSTFILELOC.fixedtext.text
-msgid ""
-"Document macros are always executed if they have been opened from one of the "
-"following locations."
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FI_TRUSTFILELOC.FixedText.Text
+msgid  "Document macros are always executed if they have been opened from one of the following locations."
 msgstr ""
-"Makra uložená v dokumentech spustí pouze tehdy, když jsou dokumenty otevřeny "
-"z následujících umístění."
 
-#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_ADD_TRUSTFILELOC.pushbutton.text
-msgctxt "macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_ADD_TRUSTFILELOC.pushbutton.text"
-msgid "Add..."
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_ADD_TRUSTFILELOC.PushButton.Text
+msgid  "Add..."
 msgstr "Přidat..."
 
-#: macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_REMOVE_TRUSTFILELOC.pushbutton.text
-msgctxt "macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_REMOVE_TRUSTFILELOC.pushbutton.text"
-msgid "Remove"
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_TRUSTSOURCES.FL_REMOVE_TRUSTFILELOC.PushButton.Text
+msgid  "Remove"
 msgstr "Odstranit"
 
-#: macrosecurity.src#RID_XMLSECTP_READONLY_CONFIG_TIP.string.text
-msgid "This setting is protected by the Administrator"
+#: source/dialogs/macrosecurity.src#RID_XMLSECTP_READONLY_CONFIG_TIP.String.Text
+msgid  "This setting is protected by the Administrator"
 msgstr "Toto nastavení je chráněno Administrátorem"
 
-#: warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR1A.fixedtext.text
-msgid "The document contains document macros signed by:"
-msgstr "Dokument obsahuje makra podepsaná:"
-
-#: warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR1B.fixedtext.text
-msgid "The document contains document macros."
-msgstr "Dokument obsahuje makra."
-
-#: warnings.src#RID_XMLSECTP_MACROWARN.PB_VIEWSIGNS.pushbutton.text
-msgid "View Signatures..."
-msgstr "Zobrazit podpisy..."
-
-#: warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR2.fixedtext.text
-msgid ""
-"Macros may contain viruses. Disabling macros for a document is always save. "
-"If you disable macros you may lose functionality provided by the document "
-"macros."
-msgstr ""
-"Makra mohou obsahovat viry. Zákaz maker vám vždy zajistí bezpečnost. Pokud "
-"makra zakážete, můžete přijít o funkce, které makra poskytují."
-
-#: warnings.src#RID_XMLSECTP_MACROWARN.CB_ALWAYSTRUST.checkbox.text
-msgid "Always trust macros from this source"
-msgstr "Vždy věřit makrům z tohoto zdroje"
-
-#: warnings.src#RID_XMLSECTP_MACROWARN.PB_ENABLE.pushbutton.text
-msgid "Enable Macros"
-msgstr "Povolit makra"
-
-#: warnings.src#RID_XMLSECTP_MACROWARN.PB_DISABLE.cancelbutton.text
-msgid "Disable Macros"
-msgstr "Zakázat makra"
-
-#: warnings.src#RID_XMLSECTP_MACROWARN.modaldialog.text
-msgid "Security Warning"
+#: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.ModalDialog.Text
+msgid  "Security Warning"
 msgstr "Bezpečnostní upozornění"
 
-#: warnbox.src#RID_XMLSECWB_NO_MOZILLA_PROFILE.warningbox.text
-msgid ""
-"Digital signatures functionality could not be used, because no Mozilla user "
-"profile was found. Please check the Mozilla installation."
+#: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR1A.FixedText.Text
+msgid  "The document contains document macros signed by:"
+msgstr "Dokument obsahuje makra podepsaná:"
+
+#: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR1B.FixedText.Text
+msgid  "The document contains document macros."
+msgstr "Dokument obsahuje makra."
+
+#: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.PB_VIEWSIGNS.PushButton.Text
+msgid  "View Signatures..."
+msgstr "Zobrazit podpisy..."
+
+#: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.FI_DESCR2.FixedText.Text
+msgid  "Macros may contain viruses. Disabling macros for a document is always save. If you disable macros you may lose functionality provided by the document macros."
 msgstr ""
-"Elektronické podpisy nelze použít, protože nebyl nalezen uživatelský profil "
-"Mozilla. Zkontrolujte, prosím, instalaci internetového prohlížeče Mozilla."
+
+#: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.CB_ALWAYSTRUST.CheckBox.Text
+msgid  "Always trust macros from this source"
+msgstr "Vždy věřit makrům z tohoto zdroje"
+
+#: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.PB_ENABLE.PushButton.Text
+msgid  "Enable Macros"
+msgstr "Povolit makra"
+
+#: source/dialogs/warnings.src#RID_XMLSECTP_MACROWARN.PB_DISABLE.CancelButton.Text
+msgid  "Disable Macros"
+msgstr "Zakázat makra"
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.ModalDialog.Text
+msgid  "Digital Signatures"
+msgstr "Elektronické podpisy"
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_DOC.FixedText.Text
+msgid  "The following have signed the document content:"
+msgstr "Obsah tohoto dokumentu podepsali:"
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_BASIC.FixedText.Text
+msgid  "The following have signed the document macro:"
+msgstr "Makro v tomto dokumentu podepsali:"
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FT_HINT_PACK.FixedText.Text
+msgid  "The following have signed this package:"
+msgstr "Tento balíček podepsali:"
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_HEADERBAR.String.Text
+msgid  "\tSigned by\tDigital ID issued by\tDate"
+msgstr "\tPodepsal\tVydavatel certifikátu\tDatum"
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_VALID_SIGNATURE.String.Text
+msgid  "Valid signature"
+msgstr "Platný podpis"
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_NO_INFO_TO_VERIFY.String.Text
+msgid  "Certificate could not be validated"
+msgstr "Certifikát nelze ověřit"
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.STR_INVALID_SIGNATURE.String.Text
+msgid  "The signatures in this document are invalid"
+msgstr "Podpisy v tomto dokumentu nejsou platné"
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_VALID.FixedText.Text
+msgid  "The signatures in this document are valid"
+msgstr "Podpisy v tomto dokumentu jsou platné"
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_OLDSIGNATURE.FixedText.Text
+msgid  "Not all parts of the document are signed"
+msgstr "Některé části dokumentu nejsou podepsány"
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.FI_STATE_BROKEN.FixedText.Text
+msgid  "The signatures in this document are invalid"
+msgstr "Podpisy v tomto dokumentu nejsou platné"
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_VIEWCERT.PushButton.Text
+msgid  "View Certificate..."
+msgstr "Zobrazit certifikát..."
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_ADDCERT.PushButton.Text
+msgid  "Sign Document..."
+msgstr "Podepsat dokument..."
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_REMOVECERT.PushButton.Text
+msgid  "Remove"
+msgstr "Odstranit"
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_DIGSIG.BTN_OK.OKButton.Text
+msgid  "Close"
+msgstr "Zavřít"
+
+#: source/dialogs/digitalsignaturesdialog.src#RID_XMLSECDLG_OLD_ODF_FORMAT.ErrorBox.Message
+msgid  "This document contains signatures in ODF 1.1 format. Signing documents in %PRODUCTNAME %PRODUCTVERSION requires ODF 1.2 format version. Thus no signatures can be added or removed to this document.\n\nSave document in ODF 1.2 format and add all desired signatures again."
+msgstr ""
+
+#: source/dialogs/digitalsignaturesdialog.src#MSG_XMLSECDLG_QUERY_REMOVEDOCSIGNBEFORESIGN.QueryBox.Message
+msgid  "Adding or removing a macro signature will remove all document signatures.\nDo you really want to continue?"
+msgstr ""
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.TabDialog.Text
+msgid  "View Certificate"
+msgstr "Zobrazit certifikát"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_GENERAL.PageItem.Text
+msgid  "General"
+msgstr "Obecné"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_DETAILS.PageItem.Text
+msgid  "Details"
+msgstr "Podrobnosti"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECDLG_CERTVIEWER.1.RID_XMLSECTP_CERTPATH.PageItem.Text
+msgid  "Certification Path"
+msgstr "Cesta k certifikátu"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_CERTINFO.FixedText.Text
+msgid  " Certificate Information"
+msgstr "Informace o certifikátu"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_HINTNOTTRUST.FixedText.Text
+msgid  "This certificate is intended for the following purpose(s):"
+msgstr "Tento certifikát je určen k těmto účelům:"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_ISSTOLABEL.FixedText.Text
+msgid  "Issued to:"
+msgstr "Vydán pro:"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_ISSBYLABEL.FixedText.Text
+msgid  "Issued by:"
+msgstr "Vydal:"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_VALIDDATE.FixedText.Text
+msgid  "Valid from %SDATE% to %EDATE%"
+msgstr "Platný od %SDATE% do %EDATE%"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.FI_CORRPRIVKEY.FixedText.Text
+msgid  "You have a private key that corresponds to this certificate."
+msgstr "Vlastníte soukromý klíč, který patří k tomuto certifikátu."
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_GENERAL.STR_CERTIFICATE_NOT_VALIDATED.String.Text
+msgid  "The certificate could not be validated."
+msgstr "Certifikát nelze ověřit."
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_HEADERBAR.String.Text
+msgid  "Field\tValue"
+msgstr "Pole\tHodnota"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VERSION.String.Text
+msgid  "Version"
+msgstr "Verze"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SERIALNUM.String.Text
+msgid  "Serial Number"
+msgstr "Sériové číslo"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGALGORITHM.String.Text
+msgid  "Signature Algorithm"
+msgstr "Algoritmus podpisu"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_ISSUER.String.Text
+msgid  "Issuer"
+msgstr "Vydavatel"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_ISSUER_ID.String.Text
+msgid  "Issuer Unique ID"
+msgstr "Unikátní ID vydavatele"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VALIDFROM.String.Text
+msgid  "Valid From"
+msgstr "Platný od"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_VALIDTO.String.Text
+msgid  "Valid to"
+msgstr "Platný do"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT.String.Text
+msgid  "Subject"
+msgstr "Subjekt"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_ID.String.Text
+msgid  "Subject Unique ID"
+msgstr "Unikátní ID subjektu"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_PUBKEY_ALGO.String.Text
+msgid  "Subject Algorithm"
+msgstr "Algoritmus subjektu"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SUBJECT_PUBKEY_VAL.String.Text
+msgid  "Public Key"
+msgstr "Veřejný klíč"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_SIGNATURE_ALGO.String.Text
+msgid  "Signature Algorithm"
+msgstr "Algoritmus podpisu"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_THUMBPRINT_SHA1.String.Text
+msgid  "Thumbprint SHA1"
+msgstr "Otisk SHA1"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_DETAILS.STR_THUMBPRINT_MD5.String.Text
+msgid  "Thumbprint MD5"
+msgstr "Otisk MD5"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.FT_CERTPATH.FixedText.Text
+msgid  "Certification path"
+msgstr "Cesta k certifikátu"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.BTN_VIEWCERT.PushButton.Text
+msgid  "View Certificate..."
+msgstr "Zobrazit certifikát..."
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.FT_CERTSTATUS.FixedText.Text
+msgid  "Certification status"
+msgstr "Stav certifikátu"
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.STR_PATH_CERT_OK.String.Text
+msgid  "The certificate is OK."
+msgstr "Certifikát je v pořádku."
+
+#: source/dialogs/certificateviewer.src#RID_XMLSECTP_CERTPATH.STR_PATH_CERT_NOT_VALIDATED.String.Text
+msgid  "The certificate could not be validated."
+msgstr "Certifikát nelze ověřit."
+
+#: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.ModalDialog.Text
+msgid  "Select Certificate"
+msgstr "Vybrat certifikát"
+
+#: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.FT_HINT_SELECT.FixedText.Text
+msgid  "Select the certificate you want to use for signing"
+msgstr "Zvolte certifikát, který chcete použít pro podepisování"
+
+#: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.STR_HEADERBAR.String.Text
+msgid  "Issued to\tIssued by\tExpiration date"
+msgstr "Vydán pro\tVydán kým\tDatum expirace"
+
+#: source/dialogs/certificatechooser.src#RID_XMLSECDLG_CERTCHOOSER.BTN_VIEWCERT.PushButton.Text
+msgid  "View Certificate..."
+msgstr "Zobrazit certifikát..."

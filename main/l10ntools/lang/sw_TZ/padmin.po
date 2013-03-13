@@ -1,950 +1,844 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
 
-#: padialog.src#RID_PADIALOG.RID_PA_BTN_CANCEL.cancelbutton.text
-msgctxt "padialog.src#RID_PADIALOG.RID_PA_BTN_CANCEL.cancelbutton.text"
-msgid "Close"
-msgstr "Funga"
 
-#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_DEFAULT.checkbox.text
-msgid "~Use as default printer"
-msgstr "Tumia kama printa msingi"
-
-#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_FAXSWALLOW.checkbox.text
-msgid "Remo~ve fax number from output"
-msgstr "Ondoa namba ya faksi kwenya zao"
-
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_LINKONLY.checkbox.text
-msgid "Create ~soft links only"
-msgstr "Unda viungo vyepesi tu"
-
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_SUBDIRS.checkbox.text
-msgid "Sea~rch Subdirectories"
-msgstr "Sea~rch Subdirectories"
-
-#: padialog.src#RID_PADIALOG.RID_PA_CB_CUPSUSAGE.checkbox.text
-msgid "Disable CUPS Support"
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_TXT_HELP.FixedText.Text
+msgid  "Please select the folder from which you want to import fonts. Add the selected fonts by clicking the OK button."
 msgstr ""
 
-#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_FAXNAME.edit.text
-msgid "Fax printer"
-msgstr "Faksi printa"
-
-#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_PDFNAME.edit.text
-msgctxt "padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_PDFNAME.edit.text"
-msgid "PDF converter"
-msgstr "Kigeuzi cha PDF"
-
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_FROM.fixedline.text
-msgid "Source directory"
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_FROM.FixedLine.Text
+msgid  "Source directory"
 msgstr "Saraka chanzo"
 
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_TARGETOPTS.fixedline.text
-msgid "Target options"
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_SUBDIRS.CheckBox.Text
+msgid  "Sea~rch Subdirectories"
+msgstr "Sea~rch Subdirectories"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_TARGETOPTS.FixedLine.Text
+msgid  "Target options"
 msgstr "Target options"
 
-#: padialog.src#RID_PADIALOG.RID_PA_FL_CUPSUSAGE.fixedline.text
-msgid "CUPS support"
-msgstr ""
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_LINKONLY.CheckBox.Text
+msgid  "Create ~soft links only"
+msgstr "Unda viungo vyepesi tu"
 
-#: padialog.src#RID_PADIALOG.RID_PA_FL_PRINTERS.fixedline.text
-msgid "Installed ~printers"
-msgstr "Printa zilizosakinishwa"
-
-#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_DRIVER.fixedline.text
-msgid "~Selection of drivers"
-msgstr "Uteuzi wa viendeshi"
-
-#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_PATH.fixedline.text
-msgid "Dri~ver directory"
-msgstr "Saraka ya kiendeshe"
-
-#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_TXT_OVER.fixedtext.text
-msgid "Do you want to"
-msgstr "Unataka ku"
-
-#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_TXT_DRIVER.fixedtext.text
-msgid "Please select a s~uitable driver."
-msgstr "Tafadhali teua kiendeshe kinachofaa."
-
-#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_COMMAND.fixedtext.text
-msgid "Please enter a c~ommand line appropriate for this device."
-msgstr "Tafadhali ingiza mstari wa amri unaofaa kwa ajili ya chombo hiki."
-
-#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_PDFDIR.fixedtext.text
-msgid "PDF ~target directory"
-msgstr "Saraka lengwa ya PDF"
-
-#: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_TXT_DRIVER.fixedtext.text
-msgid "Use the following driver for this fax connection"
-msgstr "Tumia kiendeshi kifuatacho kwa ajili ya unganisho la faksi hili"
-
-#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_FAXNAME.fixedtext.text
-msgid "Please enter a name for the fax connection."
-msgstr "Tafadhali ingiza jina kwa ajili ya unganisho la faksi."
-
-#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_NAME.fixedtext.text
-msgid "Please enter a name for the printer."
-msgstr "Tadhali ingiza jina kwa ajili ya printa."
-
-#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_PDFNAME.fixedtext.text
-msgid "Please enter a name for the PDF connection."
-msgstr "Tafadhali ingizo jina kwa ajili ya unganisho la PDF."
-
-#: padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_TXT_PRINTERS.fixedtext.text
-msgid ""
-"~These printers can be imported. Please select the ones you want to import."
-msgstr "Printa hizi zinaweza kuletwa. Tafadhali teua ambzo unataka kuleta."
-
-#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_TXT_DRIVER.fixedtext.text
-msgid "Use the following driver for this PDF converter"
-msgstr "Tumia kiendeshi kifuatacho kwa ajili ya kigeuzi PDF hiki"
-
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_TXT_HELP.fixedtext.text
-msgid ""
-"Please select the folder from which you want to import fonts. Add the "
-"selected fonts by clicking the OK button."
-msgstr ""
-"Tafadhali teua folda ambamo unataka kuleta fonti. Ongeza fonti zilizoteuliwa "
-"kwa kubonyeza kitufe cha OK."
-
-#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_FIXED.fixedtext.text
-msgid "Note: The fonts are only available to the applications."
-msgstr "Zingatia: Fonti zinapatikana tu kwenye program-tumizi."
-
-#: padialog.src#RID_PADIALOG.RID_PA_TXT_COMMAND.fixedtext.text
-msgid "Command:"
-msgstr "Amri:"
-
-#: padialog.src#RID_PADIALOG.RID_PA_TXT_COMMENT.fixedtext.text
-msgid "Comment:"
-msgstr "Oni:"
-
-#: padialog.src#RID_PADIALOG.RID_PA_TXT_DRIVER.fixedtext.text
-msgid "Driver:"
-msgstr "Kiendeshe:"
-
-#: padialog.src#RID_PADIALOG.RID_PA_TXT_LOCATION.fixedtext.text
-msgid "Location:"
-msgstr "Location:"
-
-#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_DRIVER.fixedtext.text
-msgid "Please select the drivers to install and press \"%s\"."
-msgstr "Tafadhali teua viendeshe vya kusakinisha na bonyeza \"\"."
-
-#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_PATH.fixedtext.text
-msgid "Please select the driver directory."
-msgstr "Tafadhali teua saraka ya kiendeshi."
-
-#: padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.fixedtext.text
-msgid "Progress"
-msgstr "Progress"
-
-#: padialog.src#RID_ADD_PRINTER_DIALOG.modaldialog.text
-msgid "Add Printer"
-msgstr "Ongeza Printa"
-
-#: padialog.src#RID_FONTIMPORT_DIALOG.modaldialog.text
-msgid "Add Fonts"
-msgstr "Ongeza Fonti"
-
-#: padialog.src#RID_FONTNAMEDIALOG.modaldialog.text
-msgid "Fonts"
-msgstr "Fonts"
-
-#: padialog.src#RID_PADIALOG.modaldialog.text
-msgid "Printer Administration"
-msgstr "Utawala wa Printa"
-
-#: padialog.src#RID_PPDIMPORT_DLG.modaldialog.text
-msgid "Driver Installation"
-msgstr "Usakinishaji wa Kiendeshi"
-
-#: padialog.src#RID_PROGRESS_DLG.modelessdialog.text
-msgid "Please wait"
-msgstr "Tafadhari subiri"
-
-#: padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_FINISH.okbutton.text
-msgid "~Finish"
-msgstr "~Finish"
-
-#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_OK.okbutton.text
-msgctxt "padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_OK.okbutton.text"
-msgid "Close"
-msgstr "Funga"
-
-#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_ADD.pushbutton.text
-msgid "~Import..."
-msgstr "Leta..."
-
-#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_REMOVE.pushbutton.text
-msgid "~Delete"
-msgstr "Futa"
-
-#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_BTN_HELP.pushbutton.text
-msgctxt "padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_BTN_HELP.pushbutton.text"
-msgid "~Help"
-msgstr "Msaada"
-
-#: padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.pushbutton.text
-msgctxt "padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.pushbutton.text"
-msgid "~Select All"
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BTN_SELECTALL.PushButton.Text
+msgid  "~Select All"
 msgstr "Teua zote"
 
-#: padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_NEXT.pushbutton.text
-msgid "~Next >>"
-msgstr "Ifuatayo >>"
-
-#: padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_PREV.pushbutton.text
-msgid "<< ~Back"
-msgstr "<< Nyuma"
-
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BTN_SELECTALL.pushbutton.text
-msgctxt "padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BTN_SELECTALL.pushbutton.text"
-msgid "~Select All"
-msgstr "Teua zote"
-
-#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_IMPORT.pushbutton.text
-msgid "~Add..."
-msgstr "Ongeza..."
-
-#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_REMOVE.pushbutton.text
-msgid "~Remove..."
-msgstr "Ondoa..."
-
-#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_RENAME.pushbutton.text
-msgid "Re~name..."
-msgstr "badili jina..."
-
-#: padialog.src#RID_PADIALOG.RID_PA_BTN_ADD.pushbutton.text
-msgid "New Printer..."
-msgstr "Printa..."
-
-#: padialog.src#RID_PADIALOG.RID_PA_BTN_CONF.pushbutton.text
-msgid "Properties..."
-msgstr "Properties..."
-
-#: padialog.src#RID_PADIALOG.RID_PA_BTN_DEL.pushbutton.text
-msgid "Remo~ve..."
-msgstr "Ondoa..."
-
-#: padialog.src#RID_PADIALOG.RID_PA_BTN_FONTS.pushbutton.text
-msgid "Fon~ts..."
-msgstr "Fonti..."
-
-#: padialog.src#RID_PADIALOG.RID_PA_BTN_RENAME.pushbutton.text
-msgid "R~ename..."
-msgstr "badili jina..."
-
-#: padialog.src#RID_PADIALOG.RID_PA_BTN_STD.pushbutton.text
-msgctxt "padialog.src#RID_PADIALOG.RID_PA_BTN_STD.pushbutton.text"
-msgid "~Default"
-msgstr "~Default"
-
-#: padialog.src#RID_PADIALOG.RID_PA_TESTPAGE.pushbutton.text
-msgid "Test ~Page"
-msgstr "Ukurasa wa jaribio"
-
-#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_BTN_SEARCH.pushbutton.text
-msgid "Browse..."
-msgstr "Vinjari..."
-
-#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_FAX.radiobutton.text
-msgid "Connect a fa~x device"
-msgstr "Unganisha chombo cha faksi"
-
-#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_OLD.radiobutton.text
-msgid "~Import printers from a StarOffice installation"
-msgstr "Leta printa kutoka usakinishaji wa StarOffice"
-
-#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PDF.radiobutton.text
-msgid "Connect a P~DF converter"
-msgstr "Unganisha kigeuzi cha PDF"
-
-#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PRINTER.radiobutton.text
-msgid "Add a ~printer"
-msgstr "Ongeza printa"
-
-#: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_DEFAULT.radiobutton.text
-msgctxt "padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_DEFAULT.radiobutton.text"
-msgid "T~he default driver"
-msgstr "Kiendeshe msingi"
-
-#: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_SELECT.radiobutton.text
-msgid "A speci~fic driver, to adapt the format to another printer"
-msgstr "Kiendeshi maalumu, kurekebisha fomati kwenye printa nyingine"
-
-#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DEFAULT.radiobutton.text
-msgctxt "padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DEFAULT.radiobutton.text"
-msgid "T~he default driver"
-msgstr "Kiendeshe msingi"
-
-#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DIST.radiobutton.text
-msgid "The Adobe D~istiller(tm) driver"
-msgstr "Kiendeshe cha Adobe D~istiller(tm)"
-
-#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_SELECT.radiobutton.text
-msgid "A spec~ific driver, to adapt the format to another printer"
-msgstr "Kiendeshi maaluma, kurekebisha fomati kwenye printa nyingine"
-
-#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_STR_TITLE.string.text
-msgid "Choose a device type"
-msgstr "Chagua aina ya chombo"
-
-#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_STR_REMOVE.string.text
-msgid "Delete driver"
-msgstr "Futa kiendeshe"
-
-#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_STR_TITLE.string.text
-msgctxt "padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_STR_TITLE.string.text"
-msgid "Choose a driver"
-msgstr "Chagua kiendeshe"
-
-#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_FAXHELP.string.text
-msgid ""
-"The command line for fax connections is executed as follows: for each fax "
-"sent, \"(TMP)\" in the command line is replaced by a temporary file and "
-"\"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" "
-"appears in the command line, the PostScript code will be supplied via a "
-"file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr ""
-"Mstari wa amri kwa ajili ya maunganisho ya faksi umetekelezwa kama "
-"ifuatavyo: kwa kila faksi iliyotumwa, \"(TMP)\" katika mstari wa amri "
-"imebadilishwa na faili la muda na \"(PHONE)\" katika mstari wa amri "
-"imebadilishwa na namba ya faksi. Kama \"(TMP)\" imejitokeza katika mstari wa "
-"amri, msimbo HatiPosta utagawiwa kupitia faili, vinginevyo utapitishwa kama "
-"ingizo sanifu (i.e. kama paipu)."
-
-#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.string.text
-msgctxt "padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.string.text"
-msgid ""
-"The command line for PDF converters is executed as follows: for each "
-"document printed, \"(TMP)\" in the command line is replaced by a temporary "
-"file and \"(OUTFILE)\" in the command line is replaced by the target PDF file "
-"name. If \"(TMP)\" is in the command line, the PostScript code will be "
-"supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr ""
-"Mstari wa amri kwa ajili ya vigeuzi vya PDF umetekelezwa: kwa kila andiko "
-"lilichapwa, \"(TMP)\" katika mstari wa amri limebadilishwa na faili la muda na "
-"\"(OUTFILE)\" katika mstari wa amri limebadilishwa na jina la faili la PDF "
-"lengwa. Kama \"(TMP)\" ipo kwenye mstari wa amri, msimbo HatiPosta utagawiwa "
-"kupitia faili, vinginevyo kupitia ingizo sanifu (i.e. kama paipu)."
-
-#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_STR_TITLE.string.text
-msgid "Choose a command line"
-msgstr "Chagua mstari wa amri"
-
-#: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_STR_TITLE.string.text
-msgctxt "padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_STR_TITLE.string.text"
-msgid "Choose a driver"
-msgstr "Chagua kiendeshe"
-
-#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_STR_TITLE.string.text
-msgid "Choose a name"
-msgstr "Chagua jina"
-
-#: padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_STR_TITLE.string.text
-msgid "Import printers from old versions"
-msgstr "Leta printa kutoka matoleo ya awali"
-
-#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_STR_TITLE.string.text
-msgctxt "padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_STR_TITLE.string.text"
-msgid "Choose a driver"
-msgstr "Chagua kiendeshe"
-
-#: padialog.src#RID_AFMERROR_BOX_TXT.string.text
-msgid ""
-"The metric\n"
-"\n"
-"%s\n"
-"\n"
-"could not be converted for the following reason:\n"
-"\n"
-msgstr ""
-"Metriki\n"
-"\n"
-"\n"
-"\n"
-"haikuweza kugeuzwa kutokana na sababu ifuatayo:\n"
-"\n"
-
-#: padialog.src#RID_AFMERROR_MOVETO_FAILED.string.text
-msgid "The converted metric could not be written."
-msgstr "Metriki iliyogeuzwa haikuweza kuandikwa."
-
-#: padialog.src#RID_AFMERROR_NOT_A_METRIC.string.text
-msgid "The file does not contain a metric."
-msgstr "Faili halina metriki."
-
-#: padialog.src#RID_AFMERROR_NO_FAMILY_NAME.string.text
-msgid "The metric does not contain a 'FamilyName' entry."
-msgstr "Metriki haina ingizo la 'Jina la Familia'."
-
-#: padialog.src#RID_AFMERROR_NO_FONT_NAME.string.text
-msgid "The metric does not contain a 'FontName' entry."
-msgstr "Metriki haina ingizo la 'Jina la Fonti'."
-
-#: padialog.src#RID_AFMERROR_NO_FULL_NAME.string.text
-msgid "The metric does not contain a 'FullName' entry."
-msgstr "Metriki haina ingizo la 'Jina Kamili'."
-
-#: padialog.src#RID_AFMERROR_OK.string.text
-msgid "No error"
-msgstr "Hakuna hitilafu"
-
-#: padialog.src#RID_AFMERROR_STREAM_READ_FAILED.string.text
-msgid "The metric could not be read."
-msgstr "Metriki haikuweza kusomeka."
-
-#: padialog.src#RID_AFMERROR_STREAM_WRITE_FAILED.string.text
-msgid "A temporary file could not be created."
-msgstr "Faili la muda halikuweza kuundwa."
-
-#: padialog.src#RID_BXT_ENVIRONMENT.string.text
-msgid "Wrong environment"
-msgstr "Mazingira mabaya"
-
-#: padialog.src#RID_BXT_TESTPAGE.string.text
-msgid "Test page"
-msgstr "Ukurasa wa jaribio"
-
-#: padialog.src#RID_ERR_NOPRINTER.string.text
-msgid "Could not open printer %s."
-msgstr "Haikuweza kufungua printa ."
-
-#: padialog.src#RID_ERR_NOWRITE.string.text
-msgid ""
-"No printers can be installed, because the file system is read-only.\n"
-"Please contact your system administrator."
-msgstr ""
-
-#: padialog.src#RID_ERR_PRINTERNOTREMOVEABLE.string.text
-msgid "The printer %s cannot be removed."
-msgstr "Printa  haiwezi kuondolewa."
-
-#: padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.string.text
-msgid ""
-"The driver \"%s\" is used by your default printer. Therefore, it cannot be "
-"removed."
-msgstr ""
-"Kiendeshe \"\" kinatumiwa na printa msingi yako. Kwahiyo, hakiwezi kuondolewa."
-
-#: padialog.src#RID_ERR_REMOVEDRIVERFAILED.string.text
-msgid ""
-"The driver \"%s1\" could not be removed. It was not possible to remove the "
-"file\n"
-"\n"
-"%s2."
-msgstr ""
-"Kiendeshe \"1\" hakikuweza kuondolewa. Haikuwezekana kuondoa faili\n"
-"\n"
-"2."
-
-#: padialog.src#RID_ERR_REMOVESGENPRT.string.text
-msgid "The driver \"%s\" is always needed and can therefore not be removed."
-msgstr "Kiendeshe \"\" kwa kwaida kinahitajika na kwa hiyo hakiwezi kuondolewa."
-
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.string.text
-msgid ""
-"The metric file for the font file\n"
-"   %s\n"
-"could not be copied. The font will not be installed."
-msgstr ""
-"Metriki kwa ajili ya faili la fonti\n"
-"   \n"
-"haikuweza kufunguka. Fonti haitasakiniwa."
-
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.string.text
-msgid ""
-"The font file\n"
-"   %s\n"
-"could not be copied. The font will not be installed."
-msgstr ""
-"Faili la fonti\n"
-"   \n"
-"halikuweza kunakiliwa. Fonti haitasakiniwa."
-
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_IMPORTOP.string.text
-msgid "Add fonts"
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_IMPORTOP.String.Text
+msgid  "Add fonts"
 msgstr "Ongeza fonti"
 
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.string.text
-msgid ""
-"A format file (with an .afm extension) has not been found for the font\n"
-"%s\n"
-"therefore, the font cannot be installed. Format files can be created with "
-"ghostscript, for example, and have to be located in the same directory as "
-"the font files or its afm subdirectory."
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
+msgid  "Do you really want to overwrite this font file?\n   %s"
 msgstr ""
-"Faili la fomati (lenye tawi .afm) halikupatikana kwa ajili ya fonti\n"
-"\n"
-"Kwa hiyo, fonti haiwezi kusakinishwa. Mafaili ya fomati yanaweza kuundwa kwa "
-"hati ghost, kwa mfano, na kuwekwa katika saraka moja kama mafaili ya fonti "
-"au saraka yake ndogo ya afm."
 
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.string.text
-msgid ""
-"A directory containing a writable fonts.dir file is not located in the "
-"Fontpath. Therefore, fonts cannot be installed."
-msgstr ""
-"Saraka yenye faili font.dir la kuandikika haikuwekwa katika Njiafonti. "
-"Kwahiyo, fonti haiwezi kusakinishwa."
-
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NUMBEROFFONTSIMPORTED.string.text
-msgid "%d new fonts were added."
-msgstr "0 fonti mpya zimeongezwa."
-
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.string.text
-msgid "All"
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
+msgid  "All"
 msgstr "All"
 
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITENONE.string.text
-msgid "None"
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITENONE.String.Text
+msgid  "None"
 msgstr "Bila"
 
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.string.text
-msgid ""
-"Do you really want to overwrite this font file?\n"
-"   %s"
-msgstr ""
-"Je ni kweli unataka kuandikiza hili faili la fonti?\n"
-"   "
-
-#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_NOTRENAMABLE.string.text
-msgid "The font %s cannot be renamed due to missing write permission."
-msgstr ""
-"Fonti  haiwezi kupewa jina jipya kwasababu ya kutokuwepo ruhusa ya kuandika."
-
-#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_RENAME.string.text
-msgid "~New name for %s"
-msgstr "Jina jipya kwa ajili ya "
-
-#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_TTCRENAME.string.text
-msgid "~New name for %s (%d1 of %d2)"
-msgstr "Jina jipya kwa ajili ya  (01 ya 02)"
-
-#: padialog.src#RID_OPERATION_CONVERTMETRIC.string.text
-msgid "Font metrics conversion"
-msgstr "Ugeuzaji wa metriki za fonti"
-
-#: padialog.src#RID_PADIALOG.RID_PA_STR_DEFPRT.string.text
-msgid "Default printer"
-msgstr "Default printer"
-
-#: padialog.src#RID_PADIALOG.RID_PA_STR_RENAME.string.text
-msgid "Rename"
-msgstr "Rename"
-
-#: padialog.src#RID_PA_TXT_TESTPAGE_PRINTED.string.text
-msgid "The test page was printed succesfully. Please check the result."
-msgstr "Ukurasa wa jaribio umechapwa kwa mafanikio. Tafadhali kagua matokeo."
-
-#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_STR_LOADINGPPD.string.text
-msgid "Searching for drivers"
-msgstr "Utafutizi kwa ajili ya viendeshe"
-
-#: padialog.src#RID_QRY_PRTNAME.string.text
-msgid "~New printer name"
-msgstr "Jina jipya la printa"
-
-#: padialog.src#RID_QUERY_DRIVERUSED.string.text
-msgid ""
-"There are still printers using the driver \"%s\". Do you really want to remove "
-"it? The corresponding printers will also be removed."
-msgstr ""
-"Bado kuna printa zinatumia kiendeshe \"\". Je ni kweli unataka kukiondoa? "
-"Printa zinazohusiika pia zitaondolewa."
-
-#: padialog.src#RID_QUERY_REMOVEDRIVER.string.text
-msgid "Do you really want to remove the driver \"%s\"?"
-msgstr "Je ni kweli unataka kuondoa kiendeshe \"\"?"
-
-#: padialog.src#RID_QUERY_REMOVEFONTFROMLIST.string.text
-msgid "Do you really want to remove the selected fonts ?"
-msgstr "Je ni kweli unataka kuondoa fonti zilizoteuliwa ?"
-
-#: padialog.src#RID_QUERY_REMOVEPRINTER.string.text
-msgid "Do you really want to remove this printer ?"
-msgstr "Je ni kweli unataka koundoa printa hii ?"
-
-#: padialog.src#RID_TXT_DRIVERDOESNOTEXIST.string.text
-msgid ""
-"The driver for the printer \"%s1\" (%s2) is not installed. Therefore the "
-"printer cannot be imported."
-msgstr ""
-"Kiendeshe kwa ajili ya printa \"1\" (2) hakijasakinishwa. Kwahiyo printa "
-"haiwezi kuletwa."
-
-#: padialog.src#RID_TXT_FONT_BOLD.string.text
-msgid "Bold"
-msgstr "Bold"
-
-#: padialog.src#RID_TXT_FONT_CONDENSED.string.text
-msgid "Condensed"
-msgstr "Iliyofupishwa"
-
-#: padialog.src#RID_TXT_FONT_EXPANDED.string.text
-msgid "Expanded"
-msgstr "Expanded"
-
-#: padialog.src#RID_TXT_FONT_EXTRACONDENSED.string.text
-msgid "Extracondensed"
-msgstr "Iliyofupishwa mno"
-
-#: padialog.src#RID_TXT_FONT_EXTRAEXPANDED.string.text
-msgid "Extraexpanded"
-msgstr "Iliyopanuliwa mno"
-
-#: padialog.src#RID_TXT_FONT_ITALIC.string.text
-msgid "Italic"
-msgstr "Italic"
-
-#: padialog.src#RID_TXT_FONT_LIGHT.string.text
-msgid "Light"
-msgstr "Light"
-
-#: padialog.src#RID_TXT_FONT_OBLIQUE.string.text
-msgid "Oblique"
-msgstr "Y-a mshazari"
-
-#: padialog.src#RID_TXT_FONT_REGULAR.string.text
-msgid "Regular"
-msgstr "Regular"
-
-#: padialog.src#RID_TXT_FONT_SEMIBOLD.string.text
-msgid "Semibold"
-msgstr "Koze la kati"
-
-#: padialog.src#RID_TXT_FONT_SEMICONDENSED.string.text
-msgid "Semicondensed"
-msgstr "Iliyofupishwa kiasi"
-
-#: padialog.src#RID_TXT_FONT_SEMIEXPANDED.string.text
-msgid "Semiexpanded"
-msgstr "Iliyopanuliwa kiasi"
-
-#: padialog.src#RID_TXT_FONT_SEMILIGHT.string.text
-msgid "Semilight"
-msgstr "Mwanga kiasi"
-
-#: padialog.src#RID_TXT_FONT_THIN.string.text
-msgid "Thin"
-msgstr "Nyembamba"
-
-#: padialog.src#RID_TXT_FONT_ULTRABOLD.string.text
-msgid "Ultrabold"
-msgstr "Koze kali"
-
-#: padialog.src#RID_TXT_FONT_ULTRACONDENSED.string.text
-msgid "Ultracondensed"
-msgstr "Iliyofupishwa kupita kiasi"
-
-#: padialog.src#RID_TXT_FONT_ULTRAEXPANDED.string.text
-msgid "Ultraexpanded"
-msgstr "Iliyopanuliwa kupita kiasi"
-
-#: padialog.src#RID_TXT_FONT_ULTRALIGHT.string.text
-msgid "Ultralight"
-msgstr "Mwanga mkali"
-
-#: padialog.src#RID_TXT_PRINTERADDFAILED.string.text
-msgid "The printer \"%s\" could not be added."
-msgstr "The printer \"%s\" could not be added."
-
-#: padialog.src#RID_TXT_PRINTERALREADYEXISTS.string.text
-msgid "A printer named \"%s\" already exists. This printer will not be imported."
-msgstr "Printa yenye jina \"\" tayari ipo. Hii printa haitaletwa."
-
-#: padialog.src#RID_TXT_PRINTERWITHOUTCOMMAND.string.text
-msgid ""
-"The printer \"%s\" has no valid configuration and, therefore, cannot be "
-"imported."
-msgstr "Printa \"\" haina usanidi halali na, kwahiyo, haiwezi kuletwa."
-
-#: padialog.src#RID_TXT_TESTPAGE_COMMENT.string.text
-msgid "Comment"
-msgstr "Oni"
-
-#: padialog.src#RID_TXT_TESTPAGE_DATE.string.text
-msgid "Date"
-msgstr "Tarehe"
-
-#: padialog.src#RID_TXT_TESTPAGE_MODEL.string.text
-msgid "Model"
-msgstr "Modeli"
-
-#: padialog.src#RID_TXT_TESTPAGE_NAME.string.text
-msgid "Name"
-msgstr "Jina"
-
-#: padialog.src#RID_TXT_TESTPAGE_QUEUE.string.text
-msgid "Queue"
-msgstr "Foleni"
-
-#: padialog.src#RID_TXT_TESTPAGE_TIME.string.text
-msgid "Time"
-msgstr "Time"
-
-#: padialog.src#RID_YOU_SURE.string.text
-msgid "Are you sure ?"
-msgstr "Je una hakika ?"
-
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BOX_SWALLOWFAXNO.checkbox.text
-msgid "~Fax number will be removed from output"
-msgstr "Namba ya faksi itaondolewa kwenye zao"
-
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_CB_EXTERNAL.checkbox.text
-msgid "~Use system print dialog, disable %PRODUCTNAME's print dialog"
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
+msgid  "A format file (with an .afm extension) has not been found for the font\n%s\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
 msgstr ""
 
-#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ENABLE_BTN.checkbox.text
-msgid "~Enable font replacement"
-msgstr "Wezesha ubadilishaji wa fonti"
-
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_DEFAULT.fixedline.text
-msgctxt "rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_DEFAULT.fixedline.text"
-msgid "Printer"
-msgstr "Printa"
-
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_INSTALL.fixedline.text
-msgid "Select command"
-msgstr "Teua amri"
-
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FT_QUICKCMD.fixedtext.text
-msgid "Command for quick printing without dialog (optional)"
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
+msgid  "The metric file for the font file\n   %s\ncould not be copied. The font will not be installed."
 msgstr ""
 
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONFIGURE.fixedtext.text
-msgid "~Configure as"
-msgstr "Sanidi kama"
-
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONNECT.fixedtext.text
-msgid "Command: "
-msgstr "Amri: "
-
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_PDFDIR.fixedtext.text
-msgid "PDF target directory :"
-msgstr "Saraka lengwa ya PDF :"
-
-#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_DEPTH_TXT.fixedtext.text
-msgid "Color ~depth"
-msgstr "Kina cha rangi"
-
-#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDKEY_TXT.fixedtext.text
-msgid "~Option"
-msgstr "Chaguo"
-
-#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDVALUE_TXT.fixedtext.text
-msgid "Current ~value"
-msgstr "Thamani ya sasa"
-
-#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_TXT.fixedtext.text
-msgid "Printer ~Language type"
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
+msgid  "The font file\n   %s\ncould not be copied. The font will not be installed."
 msgstr ""
 
-#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_SPACE_TXT.fixedtext.text
-msgid "~Color"
-msgstr "Rangi"
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
+msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
+msgstr ""
 
-#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_FROM_TXT.fixedtext.text
-msgid "Repla~ce font"
-msgstr "Badili fointi"
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NUMBEROFFONTSIMPORTED.String.Text
+msgid  "%d new fonts were added."
+msgstr "0 fonti mpya zimeongezwa."
 
-#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_SUBST_TXT.fixedtext.text
-msgid "Replaced ~fonts"
-msgstr "Fonti zitakazobadilishwa"
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.String.Text
+msgid  "Add Fonts"
+msgstr "Ongeza Fonti"
 
-#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_TO_TXT.fixedtext.text
-msgid "by ~printer font"
-msgstr "kwa fonti ya printa"
+#: source/padialog.src#RID_PADIALOG.RID_PA_FL_CUPSUSAGE.FixedLine.Text
+msgid  "CUPS support"
+msgstr ""
 
-#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_BOTTOMMARGIN_TXT.fixedtext.text
-msgid "~Bottom margin"
-msgstr "Pambizo chini"
+#: source/padialog.src#RID_PADIALOG.RID_PA_CB_CUPSUSAGE.CheckBox.Text
+msgid  "Disable CUPS Support"
+msgstr ""
 
-#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_COMMENT_TXT.fixedtext.text
-msgid "~Comment"
-msgstr "Oni"
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_CANCEL.CancelButton.Text
+msgid  "Close"
+msgstr "Funga"
 
-#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_LEFTMARGIN_TXT.fixedtext.text
-msgid "~Left margin"
-msgstr "Pambizo kushoto"
+#: source/padialog.src#RID_PADIALOG.RID_PA_FL_PRINTERS.FixedLine.Text
+msgid  "Installed ~printers"
+msgstr "Printa zilizosakinishwa"
 
-#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_RIGHTMARGIN_TXT.fixedtext.text
-msgid "~Right margin"
-msgstr "Pambizo kulia"
+#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_COMMAND.FixedText.Text
+msgid  "Command:"
+msgstr "Amri:"
 
-#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_TOPMARGIN_TXT.fixedtext.text
-msgid "~Top margin"
-msgstr "Pambizo juu"
+#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_DRIVER.FixedText.Text
+msgid  "Driver:"
+msgstr "Kiendeshe:"
 
-#: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_DUPLEX_TXT.fixedtext.text
-msgid "~Duplex"
-msgstr "Mara dufu"
+#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_LOCATION.FixedText.Text
+msgid  "Location:"
+msgstr "Location:"
 
-#: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_ORIENTATION_TXT.fixedtext.text
-msgid "~Orientation"
-msgstr "Mkao"
+#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_COMMENT.FixedText.Text
+msgid  "Comment:"
+msgstr "Oni:"
 
-#: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_PAPER_TXT.fixedtext.text
-msgid "~Paper size"
-msgstr "Saisi ya karatasi"
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_CONF.PushButton.Text
+msgid  "Properties..."
+msgstr "Properties..."
 
-#: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_SLOT_TXT.fixedtext.text
-msgid "Paper tray"
-msgstr "Paper tray"
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_RENAME.PushButton.Text
+msgid  "R~ename..."
+msgstr "badili jina..."
 
-#: rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_PASS_TXT.fixedtext.text
-msgid "~Password"
-msgstr "Nywila"
-
-#: rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_TXT.fixedtext.text
-msgid "Please enter your authentication data for server %s"
-msgstr "Please enter your authentication data for server %s"
-
-#: rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_USER_TXT.fixedtext.text
-msgid "~User"
-msgstr "Mtumiaji"
-
-#: rtsetup.src#RID_RTS_PWDIALOG.modaldialog.text
-msgid "Authentication request"
-msgstr "Authentication request"
-
-#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_COMMANDPAGE.pageitem.text
-msgid "Command"
-msgstr "Amri"
-
-#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_DEVICEPAGE.pageitem.text
-msgid "Device"
-msgstr "Chombo"
-
-#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_FONTSUBSTPAGE.pageitem.text
-msgid "Font Replacement"
-msgstr "Ubadilishaji wa Fonti"
-
-#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_OTHERPAGE.pageitem.text
-msgid "Other Settings"
-msgstr "Vipimo Vingine"
-
-#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_PAPERPAGE.pageitem.text
-msgid "Paper"
-msgstr "Karatasi"
-
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_HELP.pushbutton.text
-msgctxt "rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_HELP.pushbutton.text"
-msgid "~Help"
-msgstr "Msaada"
-
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_REMOVE.pushbutton.text
-msgctxt "rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_REMOVE.pushbutton.text"
-msgid "~Remove"
-msgstr "Ondoa"
-
-#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ADD_BTN.pushbutton.text
-msgid "~Add"
-msgstr "Ongeza"
-
-#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_REMOVE_BTN.pushbutton.text
-msgctxt "rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_REMOVE_BTN.pushbutton.text"
-msgid "~Remove"
-msgstr "Ondoa"
-
-#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_DEFAULT_BTN.pushbutton.text
-msgctxt "rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_DEFAULT_BTN.pushbutton.text"
-msgid "~Default"
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_STD.PushButton.Text
+msgid  "~Default"
 msgstr "~Default"
 
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_FAX.string.text
-msgid "Fax"
-msgstr "Faksi"
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_DEL.PushButton.Text
+msgid  "Remo~ve..."
+msgstr "Ondoa..."
 
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PDF.string.text
-msgctxt "rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PDF.string.text"
-msgid "PDF converter"
+#: source/padialog.src#RID_PADIALOG.RID_PA_TESTPAGE.PushButton.Text
+msgid  "Test ~Page"
+msgstr "Ukurasa wa jaribio"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_FONTS.PushButton.Text
+msgid  "Fon~ts..."
+msgstr "Fonti..."
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_ADD.PushButton.Text
+msgid  "New Printer..."
+msgstr "Printa..."
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_STR_DEFPRT.String.Text
+msgid  "Default printer"
+msgstr "Default printer"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_STR_RENAME.String.Text
+msgid  "Rename"
+msgstr "Rename"
+
+#: source/padialog.src#RID_PADIALOG.String.Text
+msgid  "Printer Administration"
+msgstr "Utawala wa Printa"
+
+#: source/padialog.src#RID_ERR_NOPRINTER.String.Text
+msgid  "Could not open printer %s."
+msgstr "Haikuweza kufungua printa ."
+
+#: source/padialog.src#RID_PA_TXT_TESTPAGE_PRINTED.String.Text
+msgid  "The test page was printed succesfully. Please check the result."
+msgstr "Ukurasa wa jaribio umechapwa kwa mafanikio. Tafadhali kagua matokeo."
+
+#: source/padialog.src#RID_ERR_NOWRITE.String.Text
+msgid  "No printers can be installed, because the file system is read-only.\nPlease contact your system administrator."
+msgstr ""
+
+#: source/padialog.src#RID_QRY_PRTNAME.String.Text
+msgid  "~New printer name"
+msgstr "Jina jipya la printa"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_MODEL.String.Text
+msgid  "Model"
+msgstr "Modeli"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_NAME.String.Text
+msgid  "Name"
+msgstr "Jina"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_COMMENT.String.Text
+msgid  "Comment"
+msgstr "Oni"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_QUEUE.String.Text
+msgid  "Queue"
+msgstr "Foleni"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_DATE.String.Text
+msgid  "Date"
+msgstr "Tarehe"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_TIME.String.Text
+msgid  "Time"
+msgstr "Time"
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_OK.OKButton.Text
+msgid  "Close"
+msgstr "Funga"
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_RENAME.PushButton.Text
+msgid  "Re~name..."
+msgstr "badili jina..."
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_REMOVE.PushButton.Text
+msgid  "~Remove..."
+msgstr "Ondoa..."
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_IMPORT.PushButton.Text
+msgid  "~Add..."
+msgstr "Ongeza..."
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_FIXED.FixedText.Text
+msgid  "Note: The fonts are only available to the applications."
+msgstr "Zingatia: Fonti zinapatikana tu kwenye program-tumizi."
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_RENAME.String.Text
+msgid  "~New name for %s"
+msgstr "Jina jipya kwa ajili ya "
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_TTCRENAME.String.Text
+msgid  "~New name for %s (%d1 of %d2)"
+msgstr "Jina jipya kwa ajili ya  (01 ya 02)"
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_NOTRENAMABLE.String.Text
+msgid  "The font %s cannot be renamed due to missing write permission."
+msgstr ""
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.String.Text
+msgid  "Fonts"
+msgstr "Fonts"
+
+#: source/padialog.src#RID_BXT_TESTPAGE.String.Text
+msgid  "Test page"
+msgstr "Ukurasa wa jaribio"
+
+#: source/padialog.src#RID_BXT_ENVIRONMENT.String.Text
+msgid  "Wrong environment"
+msgstr "Mazingira mabaya"
+
+#: source/padialog.src#RID_YOU_SURE.String.Text
+msgid  "Are you sure ?"
+msgstr "Je una hakika ?"
+
+#: source/padialog.src#RID_AFMERROR_OK.String.Text
+msgid  "No error"
+msgstr "Hakuna hitilafu"
+
+#: source/padialog.src#RID_AFMERROR_NO_FONT_NAME.String.Text
+msgid  "The metric does not contain a 'FontName' entry."
+msgstr "Metriki haina ingizo la 'Jina la Fonti'."
+
+#: source/padialog.src#RID_AFMERROR_NO_FULL_NAME.String.Text
+msgid  "The metric does not contain a 'FullName' entry."
+msgstr "Metriki haina ingizo la 'Jina Kamili'."
+
+#: source/padialog.src#RID_AFMERROR_NO_FAMILY_NAME.String.Text
+msgid  "The metric does not contain a 'FamilyName' entry."
+msgstr "Metriki haina ingizo la 'Jina la Familia'."
+
+#: source/padialog.src#RID_AFMERROR_MOVETO_FAILED.String.Text
+msgid  "The converted metric could not be written."
+msgstr "Metriki iliyogeuzwa haikuweza kuandikwa."
+
+#: source/padialog.src#RID_AFMERROR_STREAM_READ_FAILED.String.Text
+msgid  "The metric could not be read."
+msgstr "Metriki haikuweza kusomeka."
+
+#: source/padialog.src#RID_AFMERROR_STREAM_WRITE_FAILED.String.Text
+msgid  "A temporary file could not be created."
+msgstr "Faili la muda halikuweza kuundwa."
+
+#: source/padialog.src#RID_AFMERROR_NOT_A_METRIC.STRING.Text
+msgid  "The file does not contain a metric."
+msgstr "Faili halina metriki."
+
+#: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
+msgid  "The metric\n\n%s\n\ncould not be converted for the following reason:\n\n"
+msgstr ""
+
+#: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
+msgid  "Progress"
+msgstr "Progress"
+
+#: source/padialog.src#RID_PROGRESS_DLG.FixedText.Text
+msgid  "Please wait"
+msgstr "Tafadhari subiri"
+
+#: source/padialog.src#RID_OPERATION_CONVERTMETRIC.String.Text
+msgid  "Font metrics conversion"
+msgstr "Ugeuzaji wa metriki za fonti"
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_PATH.FixedLine.Text
+msgid  "Dri~ver directory"
+msgstr "Saraka ya kiendeshe"
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_PATH.FixedText.Text
+msgid  "Please select the driver directory."
+msgstr "Tafadhali teua saraka ya kiendeshi."
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_BTN_SEARCH.PushButton.Text
+msgid  "Browse..."
+msgstr "Vinjari..."
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_DRIVER.FixedLine.Text
+msgid  "~Selection of drivers"
+msgstr "Uteuzi wa viendeshi"
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_DRIVER.FixedText.Text
+msgid  "Please select the drivers to install and press "%s"."
+msgstr ""
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_STR_LOADINGPPD.String.Text
+msgid  "Searching for drivers"
+msgstr "Utafutizi kwa ajili ya viendeshe"
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.CancelButton.Text
+msgid  "Driver Installation"
+msgstr "Usakinishaji wa Kiendeshi"
+
+#: source/padialog.src#RID_QUERY_REMOVEDRIVER.String.Text
+msgid  "Do you really want to remove the driver "%s"?"
+msgstr ""
+
+#: source/padialog.src#RID_QUERY_REMOVEPRINTER.String.Text
+msgid  "Do you really want to remove this printer ?"
+msgstr "Je ni kweli unataka koundoa printa hii ?"
+
+#: source/padialog.src#RID_QUERY_REMOVEFONTFROMLIST.String.Text
+msgid  "Do you really want to remove the selected fonts ?"
+msgstr "Je ni kweli unataka kuondoa fonti zilizoteuliwa ?"
+
+#: source/padialog.src#RID_QUERY_DRIVERUSED.String.Text
+msgid  "There are still printers using the driver "%s". Do you really want to remove it? The corresponding printers will also be removed."
+msgstr ""
+
+#: source/padialog.src#RID_ERR_REMOVESGENPRT.String.Text
+msgid  "The driver "%s" is always needed and can therefore not be removed."
+msgstr ""
+
+#: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
+msgid  "The driver "%s1" could not be removed. It was not possible to remove the file\n\n%s2."
+msgstr ""
+
+#: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
+msgid  "The driver "%s" is used by your default printer. Therefore, it cannot be removed."
+msgstr ""
+
+#: source/padialog.src#RID_ERR_PRINTERNOTREMOVEABLE.String.Text
+msgid  "The printer %s cannot be removed."
+msgstr "Printa  haiwezi kuondolewa."
+
+#: source/padialog.src#RID_TXT_PRINTERALREADYEXISTS.String.Text
+msgid  "A printer named "%s" already exists. This printer will not be imported."
+msgstr ""
+
+#: source/padialog.src#RID_TXT_PRINTERWITHOUTCOMMAND.String.Text
+msgid  "The printer "%s" has no valid configuration and, therefore, cannot be imported."
+msgstr ""
+
+#: source/padialog.src#RID_TXT_DRIVERDOESNOTEXIST.String.Text
+msgid  "The driver for the printer "%s1" (%s2) is not installed. Therefore the printer cannot be imported."
+msgstr ""
+
+#: source/padialog.src#RID_TXT_PRINTERADDFAILED.String.Text
+msgid  "The printer "%s" could not be added."
+msgstr ""
+
+#: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_FINISH.OKButton.Text
+msgid  "~Finish"
+msgstr "~Finish"
+
+#: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_NEXT.PushButton.Text
+msgid  "~Next >>"
+msgstr "Ifuatayo >>"
+
+#: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_PREV.PushButton.Text
+msgid  "<< ~Back"
+msgstr "<< Nyuma"
+
+#: source/padialog.src#RID_ADD_PRINTER_DIALOG.PushButton.Text
+msgid  "Add Printer"
+msgstr "Ongeza Printa"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_STR_TITLE.String.Text
+msgid  "Choose a driver"
+msgstr "Chagua kiendeshe"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_TXT_DRIVER.FixedText.Text
+msgid  "Please select a s~uitable driver."
+msgstr "Tafadhali teua kiendeshe kinachofaa."
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_ADD.PushButton.Text
+msgid  "~Import..."
+msgstr "Leta..."
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_REMOVE.PushButton.Text
+msgid  "~Delete"
+msgstr "Futa"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_STR_REMOVE.String.Text
+msgid  "Delete driver"
+msgstr "Futa kiendeshe"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_STR_TITLE.String.Text
+msgid  "Choose a device type"
+msgstr "Chagua aina ya chombo"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_TXT_OVER.FixedText.Text
+msgid  "Do you want to"
+msgstr "Unataka ku"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PRINTER.RadioButton.Text
+msgid  "Add a ~printer"
+msgstr "Ongeza printa"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_FAX.RadioButton.Text
+msgid  "Connect a fa~x device"
+msgstr "Unganisha chombo cha faksi"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PDF.RadioButton.Text
+msgid  "Connect a P~DF converter"
+msgstr "Unganisha kigeuzi cha PDF"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_OLD.RadioButton.Text
+msgid  "~Import printers from a StarOffice installation"
+msgstr "Leta printa kutoka usakinishaji wa StarOffice"
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_STR_TITLE.String.Text
+msgid  "Choose a name"
+msgstr "Chagua jina"
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_NAME.FixedText.Text
+msgid  "Please enter a name for the printer."
+msgstr "Tadhali ingiza jina kwa ajili ya printa."
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_FAXNAME.FixedText.Text
+msgid  "Please enter a name for the fax connection."
+msgstr "Tafadhali ingiza jina kwa ajili ya unganisho la faksi."
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_PDFNAME.FixedText.Text
+msgid  "Please enter a name for the PDF connection."
+msgstr "Tafadhali ingizo jina kwa ajili ya unganisho la PDF."
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_FAXNAME.Edit.Text
+msgid  "Fax printer"
+msgstr "Faksi printa"
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_PDFNAME.Edit.Text
+msgid  "PDF converter"
 msgstr "Kigeuzi cha PDF"
 
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PRINTER.string.text
-msgctxt "rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PRINTER.string.text"
-msgid "Printer"
-msgstr "Printa"
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_DEFAULT.CheckBox.Text
+msgid  "~Use as default printer"
+msgstr "Tumia kama printa msingi"
 
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_FAXHELP.string.text
-msgid ""
-"The command line for fax devices is executed as follows: for each fax sent, "
-"\"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in "
-"the command line is replaced by the fax number. If \"(TMP)\" appears in the "
-"command line, the PostScript code will be supplied via a file, otherwise it "
-"is passed as standard input (i.e. as a pipe)."
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_FAXSWALLOW.CheckBox.Text
+msgid  "Remo~ve fax number from output"
+msgstr "Ondoa namba ya faksi kwenya zao"
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_STR_TITLE.String.Text
+msgid  "Choose a command line"
+msgstr "Chagua mstari wa amri"
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_COMMAND.FixedText.Text
+msgid  "Please enter a c~ommand line appropriate for this device."
+msgstr "Tafadhali ingiza mstari wa amri unaofaa kwa ajili ya chombo hiki."
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_PDFDIR.FixedText.Text
+msgid  "PDF ~target directory"
+msgstr "Saraka lengwa ya PDF"
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_BTN_HELP.PushButton.Text
+msgid  "~Help"
+msgstr "Msaada"
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.String.Text
+msgid  "The command line for PDF converters is executed as follows: for each document printed, "(TMP)" in the command line is replaced by a temporary file and "(OUTFILE)" in the command line is replaced by the target PDF file name. If "(TMP)" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
 msgstr ""
-"Mstari wa amri wa vyombo vya faksi umetekelezwa kama ifuatavyo: kwa kila "
-"faksi iliyotumwa, \"(TMP)\" katika mstari wa amri imebadilishwa na faili la "
-"muda na \"(PHONE)\" katika mstari wa amri imebadilishwa na namba ya faksi. "
-"Kama \"(TMP)\" inatokea katika mstari wa amri, msimbo HatiPosta utagawiwa "
-"kupitia faili, vinginevyo umepitishwa ingizo sanifu (i.e. kama paipu)."
 
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.string.text
-msgctxt "rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.string.text"
-msgid ""
-"The command line for PDF converters is executed as follows: for each "
-"document printed, \"(TMP)\" in the command line is replaced by a temporary "
-"file and \"(OUTFILE)\" in the command line is replaced by the target PDF file "
-"name. If \"(TMP)\" is in the command line, the PostScript code will be "
-"supplied via a file, otherwise via standard input (i.e. as a pipe)."
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_FAXHELP.String.Text
+msgid  "The command line for fax connections is executed as follows: for each fax sent, "(TMP)" in the command line is replaced by a temporary file and "(PHONE)" in the command line is replaced by the fax number. If "(TMP)" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
 msgstr ""
-"Mstari wa amri kwa ajili ya vigeuzi vya PDF umetekelezwa: kwa kila andiko "
-"lilichapwa, \"(TMP)\" katika mstari wa amri limebadilishwa na faili la muda na "
-"\"(OUTFILE)\" katika mstari wa amri limebadilishwa na jina la faili la PDF "
-"lengwa. Kama \"(TMP)\" ipo kwenye mstari wa amri, msimbo HatiPosta utagawiwa "
-"kupitia faili, vinginevyo kupitia ingizo sanifu (i.e. kama paipu)."
 
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PRINTERHELP.string.text
-msgid ""
-"The command line for printer devices is executed as follows: the generated "
-"PostScript code is supplied as standard input (i.e. as a pipe) to the "
-"command line."
+#: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_STR_TITLE.String.Text
+msgid  "Import printers from old versions"
+msgstr "Leta printa kutoka matoleo ya awali"
+
+#: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_TXT_PRINTERS.FixedText.Text
+msgid  "~These printers can be imported. Please select the ones you want to import."
 msgstr ""
-"Mstari wa amri kwa ajili ya chombo cha printa utatekelezwa kama ifuatavyo: "
-"msimbo HatiPosta utagawiwa kama ingizo sanifu (i.e. kama paipu) kwenye "
-"mstari wa amri."
 
-#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_COLOR_TXT.string.text
-msgid "Color"
-msgstr "Color"
+#: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.PushButton.Text
+msgid  "~Select All"
+msgstr "Teua zote"
 
-#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_GRAY_TXT.string.text
-msgid "Grayscale"
-msgstr "Grayscale"
+#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_STR_TITLE.String.Text
+msgid  "Choose a driver"
+msgstr "Chagua kiendeshe"
 
-#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_FROMDRIVER_TXT.string.text
-msgid "from driver"
+#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_TXT_DRIVER.FixedText.Text
+msgid  "Use the following driver for this fax connection"
+msgstr "Tumia kiendeshi kifuatacho kwa ajili ya unganisho la faksi hili"
+
+#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_DEFAULT.RadioButton.Text
+msgid  "T~he default driver"
+msgstr "Kiendeshe msingi"
+
+#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_SELECT.RadioButton.Text
+msgid  "A speci~fic driver, to adapt the format to another printer"
+msgstr "Kiendeshi maalumu, kurekebisha fomati kwenye printa nyingine"
+
+#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_STR_TITLE.String.Text
+msgid  "Choose a driver"
+msgstr "Chagua kiendeshe"
+
+#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_TXT_DRIVER.FixedText.Text
+msgid  "Use the following driver for this PDF converter"
+msgstr "Tumia kiendeshi kifuatacho kwa ajili ya kigeuzi PDF hiki"
+
+#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DEFAULT.RadioButton.Text
+msgid  "T~he default driver"
+msgstr "Kiendeshe msingi"
+
+#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DIST.RadioButton.Text
+msgid  "The Adobe D~istiller(tm) driver"
+msgstr "Kiendeshe cha Adobe D~istiller(tm)"
+
+#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_SELECT.RadioButton.Text
+msgid  "A spec~ific driver, to adapt the format to another printer"
+msgstr "Kiendeshi maaluma, kurekebisha fomati kwenye printa nyingine"
+
+#: source/padialog.src#RID_TXT_FONT_ITALIC.String.Text
+msgid  "Italic"
+msgstr "Italic"
+
+#: source/padialog.src#RID_TXT_FONT_OBLIQUE.String.Text
+msgid  "Oblique"
+msgstr "Y-a mshazari"
+
+#: source/padialog.src#RID_TXT_FONT_THIN.String.Text
+msgid  "Thin"
+msgstr "Nyembamba"
+
+#: source/padialog.src#RID_TXT_FONT_ULTRALIGHT.String.Text
+msgid  "Ultralight"
+msgstr "Mwanga mkali"
+
+#: source/padialog.src#RID_TXT_FONT_SEMILIGHT.String.Text
+msgid  "Semilight"
+msgstr "Mwanga kiasi"
+
+#: source/padialog.src#RID_TXT_FONT_LIGHT.String.Text
+msgid  "Light"
+msgstr "Light"
+
+#: source/padialog.src#RID_TXT_FONT_SEMIBOLD.String.Text
+msgid  "Semibold"
+msgstr "Koze la kati"
+
+#: source/padialog.src#RID_TXT_FONT_BOLD.String.Text
+msgid  "Bold"
+msgstr "Bold"
+
+#: source/padialog.src#RID_TXT_FONT_ULTRABOLD.String.Text
+msgid  "Ultrabold"
+msgstr "Koze kali"
+
+#: source/padialog.src#RID_TXT_FONT_ULTRACONDENSED.String.Text
+msgid  "Ultracondensed"
+msgstr "Iliyofupishwa kupita kiasi"
+
+#: source/padialog.src#RID_TXT_FONT_EXTRACONDENSED.String.Text
+msgid  "Extracondensed"
+msgstr "Iliyofupishwa mno"
+
+#: source/padialog.src#RID_TXT_FONT_CONDENSED.String.Text
+msgid  "Condensed"
+msgstr "Iliyofupishwa"
+
+#: source/padialog.src#RID_TXT_FONT_SEMICONDENSED.String.Text
+msgid  "Semicondensed"
+msgstr "Iliyofupishwa kiasi"
+
+#: source/padialog.src#RID_TXT_FONT_SEMIEXPANDED.String.Text
+msgid  "Semiexpanded"
+msgstr "Iliyopanuliwa kiasi"
+
+#: source/padialog.src#RID_TXT_FONT_EXPANDED.String.Text
+msgid  "Expanded"
+msgstr "Expanded"
+
+#: source/padialog.src#RID_TXT_FONT_EXTRAEXPANDED.String.Text
+msgid  "Extraexpanded"
+msgstr "Iliyopanuliwa mno"
+
+#: source/padialog.src#RID_TXT_FONT_ULTRAEXPANDED.String.Text
+msgid  "Ultraexpanded"
+msgstr "Iliyopanuliwa kupita kiasi"
+
+#: source/padialog.src#RID_TXT_FONT_REGULAR.String.Text
+msgid  "Regular"
+msgstr "Regular"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_COMMANDPAGE.PageItem.Text
+msgid  "Command"
+msgstr "Amri"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_PAPERPAGE.PageItem.Text
+msgid  "Paper"
+msgstr "Karatasi"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_DEVICEPAGE.PageItem.Text
+msgid  "Device"
+msgstr "Chombo"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_FONTSUBSTPAGE.PageItem.Text
+msgid  "Font Replacement"
+msgstr "Ubadilishaji wa Fonti"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_OTHERPAGE.PageItem.Text
+msgid  "Other Settings"
+msgstr "Vipimo Vingine"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_FROMDRIVER_TXT.String.Text
+msgid  "from driver"
 msgstr "kutoka kiendeshe"
 
-#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_INVALID_TXT.string.text
-msgid "<ignore>"
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_INVALID_TXT.String.Text
+msgid  "<ignore>"
 msgstr "<puuza>"
 
-#: rtsetup.src#RID_TXT_QUERYFAXNUMBER.string.text
-msgid "Please enter the fax number."
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.String.Text
+msgid  "Properties of %s"
+msgstr "Tabia za "
+
+#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_PAPER_TXT.FixedText.Text
+msgid  "~Paper size"
+msgstr "Saisi ya karatasi"
+
+#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_ORIENTATION_TXT.FixedText.Text
+msgid  "~Orientation"
+msgstr "Mkao"
+
+#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_DUPLEX_TXT.FixedText.Text
+msgid  "~Duplex"
+msgstr "Mara dufu"
+
+#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_SLOT_TXT.FixedText.Text
+msgid  "Paper tray"
+msgstr "Paper tray"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_COLOR_TXT.String.Text
+msgid  "Color"
+msgstr "Color"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_GRAY_TXT.String.Text
+msgid  "Grayscale"
+msgstr "Grayscale"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDKEY_TXT.FixedText.Text
+msgid  "~Option"
+msgstr "Chaguo"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDVALUE_TXT.FixedText.Text
+msgid  "Current ~value"
+msgstr "Thamani ya sasa"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_TXT.FixedText.Text
+msgid  "Printer ~Language type"
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.1.StringList.item
+msgid  "PostScript (Level from driver)"
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.2.StringList.item
+msgid  "PostScript Level 1"
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.3.StringList.item
+msgid  "PostScript Level 2"
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.4.StringList.item
+msgid  "PostScript Level 3"
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.10.StringList.item
+msgid  "PDF"
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_SPACE_TXT.FixedText.Text
+msgid  "~Color"
+msgstr "Rangi"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_DEPTH_TXT.FixedText.Text
+msgid  "Color ~depth"
+msgstr "Kina cha rangi"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ENABLE_BTN.CheckBox.Text
+msgid  "~Enable font replacement"
+msgstr "Wezesha ubadilishaji wa fonti"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_SUBST_TXT.FixedText.Text
+msgid  "Replaced ~fonts"
+msgstr "Fonti zitakazobadilishwa"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ADD_BTN.PushButton.Text
+msgid  "~Add"
+msgstr "Ongeza"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_REMOVE_BTN.PushButton.Text
+msgid  "~Remove"
+msgstr "Ondoa"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_FROM_TXT.FixedText.Text
+msgid  "Repla~ce font"
+msgstr "Badili fointi"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_TO_TXT.FixedText.Text
+msgid  "by ~printer font"
+msgstr "kwa fonti ya printa"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_CB_EXTERNAL.CheckBox.Text
+msgid  "~Use system print dialog, disable %PRODUCTNAME's print dialog"
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FT_QUICKCMD.FixedText.Text
+msgid  "Command for quick printing without dialog (optional)"
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_INSTALL.FixedLine.Text
+msgid  "Select command"
+msgstr "Teua amri"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PRINTER.String.Text
+msgid  "Printer"
+msgstr "Printa"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_FAX.String.Text
+msgid  "Fax"
+msgstr "Faksi"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PDF.String.Text
+msgid  "PDF converter"
+msgstr "Kigeuzi cha PDF"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONFIGURE.FixedText.Text
+msgid  "~Configure as"
+msgstr "Sanidi kama"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BOX_SWALLOWFAXNO.CheckBox.Text
+msgid  "~Fax number will be removed from output"
+msgstr "Namba ya faksi itaondolewa kwenye zao"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_PDFDIR.FixedText.Text
+msgid  "PDF target directory :"
+msgstr "Saraka lengwa ya PDF :"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONNECT.FixedText.Text
+msgid  "Command: "
+msgstr "Amri: "
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_DEFAULT.FixedLine.Text
+msgid  "Printer"
+msgstr "Printa"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_HELP.PushButton.Text
+msgid  "~Help"
+msgstr "Msaada"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_REMOVE.PushButton.Text
+msgid  "~Remove"
+msgstr "Ondoa"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.String.Text
+msgid  "The command line for PDF converters is executed as follows: for each document printed, "(TMP)" in the command line is replaced by a temporary file and "(OUTFILE)" in the command line is replaced by the target PDF file name. If "(TMP)" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PRINTERHELP.String.Text
+msgid  "The command line for printer devices is executed as follows: the generated PostScript code is supplied as standard input (i.e. as a pipe) to the command line."
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_FAXHELP.String.Text
+msgid  "The command line for fax devices is executed as follows: for each fax sent, "(TMP)" in the command line is replaced by a temporary file and "(PHONE)" in the command line is replaced by the fax number. If "(TMP)" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_LEFTMARGIN_TXT.FixedText.Text
+msgid  "~Left margin"
+msgstr "Pambizo kushoto"
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_TOPMARGIN_TXT.FixedText.Text
+msgid  "~Top margin"
+msgstr "Pambizo juu"
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_RIGHTMARGIN_TXT.FixedText.Text
+msgid  "~Right margin"
+msgstr "Pambizo kulia"
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_BOTTOMMARGIN_TXT.FixedText.Text
+msgid  "~Bottom margin"
+msgstr "Pambizo chini"
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_COMMENT_TXT.FixedText.Text
+msgid  "~Comment"
+msgstr "Oni"
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_DEFAULT_BTN.PushButton.Text
+msgid  "~Default"
+msgstr "~Default"
+
+#: source/rtsetup.src#RID_TXT_QUERYFAXNUMBER.String.Text
+msgid  "Please enter the fax number."
 msgstr "Tafadhali ingiza namba ya faksi."
 
-#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.1.stringlist.text
-msgid "PostScript (Level from driver)"
-msgstr ""
+#: source/rtsetup.src#RID_RTS_PWDIALOG.ModalDialog.Text
+msgid  "Authentication request"
+msgstr "Authentication request"
 
-#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.2.stringlist.text
-msgid "PostScript Level 1"
-msgstr ""
+#: source/rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_TXT.FixedText.Text
+msgid  "Please enter your authentication data for server %s"
+msgstr "Please enter your authentication data for server %s"
 
-#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.3.stringlist.text
-msgid "PostScript Level 2"
-msgstr ""
+#: source/rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_USER_TXT.FixedText.Text
+msgid  "~User"
+msgstr "Mtumiaji"
 
-#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.4.stringlist.text
-msgid "PostScript Level 3"
-msgstr ""
-
-#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.5.stringlist.text
-msgid "PDF"
-msgstr ""
-
-#: rtsetup.src#RID_RTS_RTSDIALOG.tabdialog.text
-msgid "Properties of %s"
-msgstr "Tabia za "
+#: source/rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_PASS_TXT.FixedText.Text
+msgid  "~Password"
+msgstr "Nywila"

@@ -1,1133 +1,457 @@
-"X-Accelerator-Marker: ~\n"
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
 
-#: readme.xrm#Welcome.Welcome.readmeitem.text
-msgid "${PRODUCTNAME} ${PRODUCTVERSION} ReadMe"
+
+#: docs/readme/readme.xrm#Welcome.Welcome
+msgid  "${PRODUCTNAME} ${PRODUCTVERSION} ReadMe"
 msgstr "${PRODUCTNAME} ${PRODUCTVERSION} আমাকে পড়ুন"
 
-#: readme.xrm#LatestUpdates.LatestUpdates.readmeitem.text
-msgid ""
-"For latest updates to this readme file, see <a href=\"http://www.openoffice.o"
-"rg/welcome/readme.html\">http://www.openoffice.org/welcome/readme.html</a>"
+#: docs/readme/readme.xrm#LatestUpdates.LatestUpdates
+msgid  "For latest updates to this readme file, see <a href="http://www.openoffice.org/welcome/readme.html">http://www.openoffice.org/welcome/readme.html</a>"
 msgstr ""
 
-#: readme.xrm#A6.A6.readmeitem.text
-msgid ""
-"This file contains important information about this program. Please read "
-"this information very carefully before starting work."
-msgstr ""
-"এই ফাইলটি এই প্রোগ্রাম সম্পর্কে জরুরি তথ্য ধারন করে। অনুগ্রহ করে কাজ শুরুর "
-"আগে মনোযোগ দিয়ে এই তথ্যগুলি পড়ুন।"
-
-#: readme.xrm#A7.A7.readmeitem.text
-msgid ""
-"The OpenOffice.org Community, responsible for the development of this "
-"product, would like to invite you to participate as a community member. As a "
-"new user, you can check out the ${PRODUCTNAME} site with helpful user "
-"information at <a href=\"http://www.openoffice.org/about_us/introduction.html"
-"\">http://www.openoffice.org/about_us/introduction.html</a>"
+#: docs/readme/readme.xrm#A6.A6
+msgid  "This file contains important information about this program. Please read this information very carefully before starting work."
 msgstr ""
 
-#: readme.xrm#A9.A9.readmeitem.text
+#: docs/readme/readme.xrm#A7.A7
+msgid  "The Apache OpenOffice Community, responsible for the development of this product, would like to invite you to participate as a community member. As a new user, you can check out the ${PRODUCTNAME} site with helpful user information at <a href="http://www.openoffice.org/about_us/introduction.html">http://www.openoffice.org/about_us/introduction.html</a>"
+msgstr ""
+
+#: docs/readme/readme.xrm#A9.A9
+msgid  "Also read the sections below about getting involved in the Apache OpenOffice project."
+msgstr ""
+
+#: docs/readme/readme.xrm#A10.A10
 #, fuzzy
-msgid ""
-"Also read the sections below about getting involved in the OpenOffice.org "
-"project."
-msgstr "OpenOffice.org প্রোজেক্টে অন্তর্ভূক্ত হওয়ার ব্যাপারে নিচের অংশে পড়ুন।"
-
-#: readme.xrm#A10.A10.readmeitem.text
-msgid "Is ${PRODUCTNAME} really free for any user? "
+msgid  "Is ${PRODUCTNAME} really free for any user? "
 msgstr "${PRODUCTNAME} কি আসলেই কোনো ব্যবহারকারীর জন্য খালি আছে?"
 
-#: readme.xrm#A11.A11.readmeitem.text
-#, fuzzy
-msgid ""
-"${PRODUCTNAME} is free for use by everybody. You may take this copy of "
-"${PRODUCTNAME} and install it on as many computers as you like, and use it "
-"for any purpose you like (including commercial, government, public "
-"administration and educational use). For further details see the license "
-"text delivered together with ${PRODUCTNAME} or <a href=\"http://www.openoffic"
-"e.org/license.html\">http://www.openoffice.org/license.html</a>"
+#: docs/readme/readme.xrm#A11.A11
+msgid  "${PRODUCTNAME} is free for use by everybody. You may take this copy of ${PRODUCTNAME} and install it on as many computers as you like, and use it for any purpose you like (including commercial, government, public administration and educational use). For further details see the license text delivered together with ${PRODUCTNAME} or <a href="http://www.openoffice.org/license.html">http://www.openoffice.org/license.html</a>"
 msgstr ""
-"${PRODUCTNAME} সকলের ব্যবহারের জন্য মুক্ত। আপনি ${PRODUCTNAME} এর অনুলিপি "
-"নিতে পারেন এবং যত কম্পিউটারে ইচ্ছা সংস্থাপন করতে পারেন, এবং আপনার যে কোনো "
-"কাজে এটি ব্যবহার করতে পারেন (যেমন ব্যবসায়িক, সরকারী, লোক প্রশাসন এবং "
-"পড়ালেখা সংক্রান্ত ব্যবহার)। আরো বিস্তারিত জানার জন্য ${PRODUCTNAME} এর সাথে "
-"দেয়া লাইসেন্সটি পড়ুন অথবা"
 
-#: readme.xrm#A12.A12.readmeitem.text
-msgid "Why is ${PRODUCTNAME} free for any user?"
+#: docs/readme/readme.xrm#A12.A12
+#, fuzzy
+msgid  "Why is ${PRODUCTNAME} free for any user?"
 msgstr "${PRODUCTNAME} কেনো কোনো ব্যবহারকারীর জন্য খালি আছে?"
 
-#: readme.xrm#A13.A13.readmeitem.text
-msgid ""
-"You can use this copy of ${PRODUCTNAME} today free of charge because "
-"individual contributors and corporate sponsors have designed, developed, "
-"tested, translated, documented, supported, marketed, and helped in many "
-"other ways to make ${PRODUCTNAME} what it is today - the world's leading "
-"open-source office software."
-msgstr ""
-"আপনি ${PRODUCTNAME} এর এই অনুলিপিটি কোনো খরচ ছাড়াই ব্যবহার করতে পারছেন কারন "
-"স্বতন্ত্র অংশগ্রহনকারীরা এবং কর্পোরেট স্পন্সররা এটির ডিজাইন, উন্নতি, "
-"পরীক্ষা, অনুবাদ, ডকুমেন্ট, সমর্থন, মার্কেট, এবং আরো অনেকভাবে সাহায্য করেছে "
-"এটিকে বর্তমানের অবস্থানে নিতে - বর্তমান বিশ্বের নেতৃত্বদানকারী মুক্ত সোর্স "
-"অফিস সফটওয়্যার।"
-
-#: readme.xrm#A13b.A13b.readmeitem.text
-msgid ""
-"If you appreciate their efforts, and would like to ensure OpenOffice.org "
-"continues into the future, please consider contributing to the project - see "
-"<a href=\"http://contributing.openoffice.org\">http://contributing.openoffice"
-".org</a> for details. Everyone has a contribution to make."
+#: docs/readme/readme.xrm#A13.A13
+msgid  "You can use this copy of ${PRODUCTNAME} today free of charge because individual contributors and corporate sponsors have designed, developed, tested, translated, documented, supported, marketed, and helped in many other ways to make ${PRODUCTNAME} what it is today - the world's leading open-source office software."
 msgstr ""
 
-#: readme.xrm#rr3fgf42r.rr3fgf42r.readmeitem.text
-msgid "Notes on Installation"
+#: docs/readme/readme.xrm#A13b.A13b
+msgid  "If you appreciate their efforts, and would like to ensure Apache OpenOffice continues into the future, please consider contributing to the project - see <a href="http://contributing.openoffice.org">http://contributing.openoffice.org</a> for details. Everyone has a contribution to make."
+msgstr ""
+
+#: docs/readme/readme.xrm#rr3fgf42r.rr3fgf42r
+#, fuzzy
+msgid  "Notes on Installation"
 msgstr "সংস্থাপনের ব্যপারে নোট"
 
-#: readme.xrm#javaneeded.javaneeded.readmeitem.text
-msgid ""
-"${PRODUCTNAME} requires a recent version of JAVA for full functionality "
-"which is part of the ${PRODUCTNAME} installation package."
+#: docs/readme/readme.xrm#javaneeded.javaneeded
+msgid  "${PRODUCTNAME} requires a recent version of JAVA for full functionality; JAVA can be downloaded from <a href="http://java.com">http://java.com</a>."
 msgstr ""
 
-#: readme.xrm#sdfsdfgf42r.sdfsdfgf42r.readmeitem.text
+#: docs/readme/readme.xrm#sdfsdfgf42r.sdfsdfgf42r
 #, fuzzy
-msgid "System Requirements"
+msgid  "System Requirements"
 msgstr "সিস্টেমের আবশ্যকতা:"
 
-#: readme.xrm#macxiOSX.macxiOSX.readmeitem.text
-msgid "MacOSX 10.4 (Tiger) or higher"
+#: docs/readme/readme.xrm#macxiOSX.macxiOSX
+#, fuzzy
+msgid  "MacOSX 10.4 (Tiger) or higher"
 msgstr "MacOSX 10.4 (Tiger) বা উচ্চ"
 
-#: readme.xrm#macxicpu.macxicpu.readmeitem.text
-msgid "Intel processor"
+#: docs/readme/readme.xrm#macxicpu.macxicpu
+#, fuzzy
+msgid  "Intel processor"
 msgstr "ইন্টেল প্রোসেসর"
 
-#: readme.xrm#macxiRAM.macxiRAM.readmeitem.text
-msgid "512 MB RAM"
+#: docs/readme/readme.xrm#macxiRAM.macxiRAM
+#, fuzzy
+msgid  "512 MB RAM"
 msgstr "৫১২ মেগাবাইট RAM"
 
-#: readme.xrm#macxHardDiksSpace.macxHardDiksSpace.readmeitem.text
-msgctxt "readme.xrm#macxHardDiksSpace.macxHardDiksSpace.readmeitem.text"
-msgid "Up to 1.5 GB available hard disk space"
+#: docs/readme/readme.xrm#macxHardDiksSpace.macxHardDiksSpace
+msgid  "Up to 1.5 GB available hard disk space"
 msgstr ""
 
-#: readme.xrm#macxivideo.macxivideo.readmeitem.text
-msgid ""
-"1024 x 768 graphic device with 256 colors (higher resolution recommended)"
-msgstr "১০২৪ x ৭৬৮ গ্রাফিক যন্ত্র, ২৫৬ কালার সহ (আরো বেশি রেসল্যুশন সুপারিশকৃত)"
+#: docs/readme/readme.xrm#macxivideo.macxivideo
+msgid  "1024 x 768 graphic device with 256 colors (higher resolution recommended)"
+msgstr ""
 
-#: readme.xrm#s2s3sdf2.s2s3sdf2.readmeitem.text
-#, fuzzy
-msgid ""
-"Microsoft Windows 2000 (Service Pack 4 or higher), XP, Vista, or Windows 7"
-msgstr "মাইক্রোসফট উইন্ডোজ ২০০০ (সার্ভিস প্যাক ৪ বা উচ্চতর), এক্সপি, বা ভিসতা"
+#: docs/readme/readme.xrm#s2s3sdf2.s2s3sdf2
+msgid  "Microsoft Windows 2000 (Service Pack 4 or higher), XP, Vista, or Windows 7"
+msgstr ""
 
-#: readme.xrm#utzu6.utzu6.readmeitem.text
+#: docs/readme/readme.xrm#utzu6.utzu6
 #, fuzzy
-msgctxt "readme.xrm#utzu6.utzu6.readmeitem.text"
-msgid "Pentium compatible PC (Pentium III or Athlon recommended)"
+msgid  "Pentium compatible PC (Pentium III or Athlon recommended)"
 msgstr "পেন্টিয়ামের সমতুল্য পিসি (সুপারিশকৃত: পেন্টিয়াম III বা অ্যাথলন)"
 
-#: readme.xrm#ghuj67.ghuj67.readmeitem.text
+#: docs/readme/readme.xrm#ghuj67.ghuj67
 #, fuzzy
-msgctxt "readme.xrm#ghuj67.ghuj67.readmeitem.text"
-msgid "256 MB RAM (512 MB RAM recommended)"
+msgid  "256 MB RAM (512 MB RAM recommended)"
 msgstr "২৫৬ মেগাবাইট RAM (সুপারিশকৃত: ৫১২ মেগাবাইট RAM)"
 
-#: readme.xrm#jzjtzu6.jzjtzu6.readmeitem.text
-msgctxt "readme.xrm#jzjtzu6.jzjtzu6.readmeitem.text"
-msgid "Up to 1.5 GB available hard disk space"
+#: docs/readme/readme.xrm#jzjtzu6.jzjtzu6
+msgid  "Up to 1.5 GB available hard disk space"
 msgstr ""
 
-#: readme.xrm#jtzu56.jtzu56.readmeitem.text
-msgid ""
-"1024x768 resolution (higher resolution recommended), at least 256 colors"
-msgstr "১০২৪ x ৭৬৮ রেসল্যুশন (আরো বেশি রেসল্যুশন সুপারিশকৃত), অন্তত ২৫৬ কালারসহ"
+#: docs/readme/readme.xrm#jtzu56.jtzu56
+msgid  "1024x768 resolution (higher resolution recommended), at least 256 colors"
+msgstr ""
 
-#: readme.xrm#edssc3d.edssc3d.readmeitem.text
+#: docs/readme/readme.xrm#edssc3d.edssc3d
+msgid  "Please be aware that administrator rights are needed for the installation process."
+msgstr ""
+
+#: docs/readme/readme.xrm#MSOReg1.MSOReg1
+msgid  "Registration of ${PRODUCTNAME} as default application for Microsoft Office formats can be forced or suppressed by using the following command line switches with the installer:"
+msgstr ""
+
+#: docs/readme/readme.xrm#MSOReg2.MSOReg2
+msgid  "<tt>/msoreg=1</tt> will force registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
+msgstr ""
+
+#: docs/readme/readme.xrm#MSOReg3.MSOReg3
+msgid  "<tt>/msoreg=0</tt> will suppress registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
+msgstr ""
+
+#: docs/readme/readme.xrm#DLLA1.DLLA1
+msgid  "If you perform an administrative installation using setup /a, you need to make sure that the file msvc90.dll is installed on the system. This file is required for ${PRODUCTNAME} to start after an administrative installation. You can get the file from <a href="http://www.microsoft.com/downloads/details.aspx?familyid=9B2DA534-3E03-4391-8A4D-074B9F2BC1BF">http://www.microsoft.com/downloads/details.aspx?familyid=9B2DA534-3E03-4391-8A4D-074B9F2BC1BF</a>"
+msgstr ""
+
+#: docs/readme/readme.xrm#AdminNeeded.AdminNeeded
+msgid  "Please be aware that administrator rights are needed for the installation process."
+msgstr ""
+
+#: docs/readme/readme.xrm#s2335.s2335
 #, fuzzy
-msgctxt "readme.xrm#edssc3d.edssc3d.readmeitem.text"
-msgid ""
-"Please be aware that administrator rights are needed for the installation "
-"process."
-msgstr ""
-"নোট: অনুগ্রহ করে জানুন যে সংস্থাপন প্রক্রিয়ার জন্য প্রশাসকের অধিকার "
-"প্রয়োজন।"
-
-#: readme.xrm#MSOReg1.MSOReg1.readmeitem.text
-msgid ""
-"Registration of ${PRODUCTNAME} as default application for Microsoft Office "
-"formats can be forced or suppressed by using the following command line "
-"switches with the installer:"
-msgstr ""
-"সংস্থাপনের সাথে নিম্নের কমান্ড লাইন সুইচ ব্যবহার করে মাইক্রোসফট অফিস "
-"বিন্যাসের জন্য পূর্ব নির্ধারিত প্রয়োগন হিসেবে ${PRODUCTNAME} কে রেজিস্ট্রেশন "
-"করানো যায় বা বাদ দেয়া যায়।"
-
-#: readme.xrm#MSOReg2.MSOReg2.readmeitem.text
-#, fuzzy
-msgid ""
-"<tt>/msoreg=1</tt> will force registration of ${PRODUCTNAME} as default "
-"application for Microsoft Office formats."
-msgstr ""
-"/msoreg=1 মাইক্রোসফট অফিস বিন্যাসের জন্য পূর্ব নির্ধারিত প্রয়োগন হিসেবে "
-"${PRODUCTNAME} কে রেজিস্ট্রেশন করাবে।"
-
-#: readme.xrm#MSOReg3.MSOReg3.readmeitem.text
-#, fuzzy
-msgid ""
-"<tt>/msoreg=0</tt> will suppress registration of ${PRODUCTNAME} as default "
-"application for Microsoft Office formats."
-msgstr ""
-"/msoreg=1 মাইক্রোসফট অফিস বিন্যাসের জন্য পূর্ব নির্ধারিত প্রয়োগন হিসেবে "
-"${PRODUCTNAME} কে বাদ দিবে।"
-
-#: readme.xrm#DLLA1.DLLA1.readmeitem.text
-msgid ""
-"If you perform an administrative installation using setup /a, you need to "
-"make sure that the file msvc90.dll is installed on the system. This file is "
-"required for ${PRODUCTNAME} to start after an administrative installation. "
-"You can get the file from <a href=\"http://www.microsoft.com/downloads/detail"
-"s.aspx?familyid=9B2DA534-3E03-4391-8A4D-074B9F2BC1BF\">http://www.microsoft.c"
-"om/downloads/details.aspx?familyid=9B2DA534-3E03-4391-8A4D-074B9F2BC1BF</a>"
-msgstr ""
-
-#: readme.xrm#AdminNeeded.AdminNeeded.readmeitem.text
-#, fuzzy
-msgctxt "readme.xrm#AdminNeeded.AdminNeeded.readmeitem.text"
-msgid ""
-"Please be aware that administrator rights are needed for the installation "
-"process."
-msgstr ""
-"নোট: অনুগ্রহ করে জানুন যে সংস্থাপন প্রক্রিয়ার জন্য প্রশাসকের অধিকার "
-"প্রয়োজন।"
-
-#: readme.xrm#s2335.s2335.readmeitem.text
-msgid "Solaris 10 operating system (SPARC platform) or higher"
+msgid  "Solaris 10 operating system (SPARC platform) or higher"
 msgstr "সোলারিস ১০ অপারেটিং সিস্টেম (SPARC প্ল্যাটফর্ম) বা উচ্চ"
 
-#: readme.xrm#s253.s253.readmeitem.text
+#: docs/readme/readme.xrm#s253.s253
 #, fuzzy
-msgctxt "readme.xrm#s253.s253.readmeitem.text"
-msgid "256 MB RAM (512 MB RAM recommended)"
+msgid  "256 MB RAM (512 MB RAM recommended)"
 msgstr "২৫৬ মেগাবাইট RAM (সুপারিশকৃত: ৫১২ মেগাবাইট RAM)"
 
-#: readme.xrm#s23seg.s23seg.readmeitem.text
-msgctxt "readme.xrm#s23seg.s23seg.readmeitem.text"
-msgid "Up to 1.55 GB available hard disk space"
+#: docs/readme/readme.xrm#s23seg.s23seg
+msgid  "Up to 1.55 GB available hard disk space"
 msgstr ""
 
-#: readme.xrm#s2s43gfe.s2s43gfe.readmeitem.text
-#, fuzzy
-msgctxt "readme.xrm#s2s43gfe.s2s43gfe.readmeitem.text"
-msgid ""
-"X Server with 1024x768 resolution (higher resolution recommended), with at "
-"least 256 colors"
+#: docs/readme/readme.xrm#s2s43gfe.s2s43gfe
+msgid  "X Server with 1024x768 resolution (higher resolution recommended), with at least 256 colors"
 msgstr ""
-"X সার্ভার ১০২৪ x ৭৬৮ রেসল্যুশনসহ (আরো বেশি রেসল্যুশন সুপারিশকৃত), অন্তত ২৫৬ "
-"কালারসহ"
 
-#: readme.xrm#n4234rw.n4234rw.readmeitem.text
+#: docs/readme/readme.xrm#n4234rw.n4234rw
 #, fuzzy
-msgctxt "readme.xrm#n4234rw.n4234rw.readmeitem.text"
-msgid "Window Manager"
+msgid  "Window Manager"
 msgstr "উইন্ডো ব্যবস্থাপক (প্রোগ্রাম)"
 
-#: readme.xrm#wd2dff2.wd2dff2.readmeitem.text
-#, fuzzy
-msgctxt "readme.xrm#wd2dff2.wd2dff2.readmeitem.text"
-msgid ""
-"Gnome 2.6 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, "
-"required for support of assistive technology tools (AT tools)"
+#: docs/readme/readme.xrm#wd2dff2.wd2dff2
+msgid  "Gnome 2.6 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
 msgstr ""
-"সহযোগী টেকনোলজি টুল সাপোর্টের জন্য জিনোম ২.৬ বা উচ্চ, গেইল ১.৮.৬ এবং "
-"অ্যাট-স্পাই ১.৭ প্যাকেজ প্রয়োজন"
 
-#: readme.xrm#s23h.s23h.readmeitem.text
-msgid "Solaris 10 operating system (x86 platform) or higher"
+#: docs/readme/readme.xrm#s23h.s23h
+#, fuzzy
+msgid  "Solaris 10 operating system (x86 platform) or higher"
 msgstr "সোলারিজ ১০ অপারেটিং সিস্টেম (x86 প্ল্যাটফর্ম) বা উচ্চ"
 
-#: readme.xrm#s24f.s24f.readmeitem.text
+#: docs/readme/readme.xrm#s24f.s24f
 #, fuzzy
-msgctxt "readme.xrm#s24f.s24f.readmeitem.text"
-msgid "256 MB RAM (512 MB RAM recommended)"
+msgid  "256 MB RAM (512 MB RAM recommended)"
 msgstr "২৫৬ মেগাবাইট RAM (সুপারিশকৃত: ৫১২ মেগাবাইট RAM)"
 
-#: readme.xrm#fgheg.fgheg.readmeitem.text
-msgctxt "readme.xrm#fgheg.fgheg.readmeitem.text"
-msgid "Up to 1.55 GB available hard disk space"
+#: docs/readme/readme.xrm#fgheg.fgheg
+msgid  "Up to 1.55 GB available hard disk space"
 msgstr ""
 
-#: readme.xrm#fghfgh.fghfgh.readmeitem.text
-#, fuzzy
-msgctxt "readme.xrm#fghfgh.fghfgh.readmeitem.text"
-msgid ""
-"X Server with 1024x768 resolution (higher resolution recommended), with at "
-"least 256 colors"
+#: docs/readme/readme.xrm#fghfgh.fghfgh
+msgid  "X Server with 1024x768 resolution (higher resolution recommended), with at least 256 colors"
 msgstr ""
-"X সার্ভার ১০২৪ x ৭৬৮ রেসল্যুশনসহ (আরো বেশি রেসল্যুশন সুপারিশকৃত), অন্তত ২৫৬ "
-"কালারসহ"
 
-#: readme.xrm#mgjfg.mgjfg.readmeitem.text
+#: docs/readme/readme.xrm#mgjfg.mgjfg
 #, fuzzy
-msgctxt "readme.xrm#mgjfg.mgjfg.readmeitem.text"
-msgid "Window Manager"
+msgid  "Window Manager"
 msgstr "উইন্ডো ব্যবস্থাপক (প্রোগ্রাম)"
 
-#: readme.xrm#wd2dff1.wd2dff1.readmeitem.text
-#, fuzzy
-msgctxt "readme.xrm#wd2dff1.wd2dff1.readmeitem.text"
-msgid ""
-"Gnome 2.6 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, "
-"required for support of assistive technology tools (AT tools)"
+#: docs/readme/readme.xrm#wd2dff1.wd2dff1
+msgid  "Gnome 2.6 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
 msgstr ""
-"সহযোগী টেকনোলজি টুল সাপোর্টের জন্য জিনোম ২.৬ বা উচ্চ, গেইল ১.৮.৬ এবং "
-"অ্যাট-স্পাই ১.৭ প্যাকেজ প্রয়োজন"
 
-#: readme.xrm#s2we35.s2we35.readmeitem.text
+#: docs/readme/readme.xrm#s2we35.s2we35
 #, fuzzy
-msgid "Linux Kernel version 2.6.18 or higher"
+msgid  "Linux Kernel version 2.6.18 or higher"
 msgstr "লিনাক্স কার্নেল ভার্সন ২.৪ বা উচ্চ"
 
-#: readme.xrm#s253we.s253we.readmeitem.text
+#: docs/readme/readme.xrm#s253we.s253we
 #, fuzzy
-msgid "glibc2 version 2.5 or higher"
+msgid  "glibc2 version 2.5 or higher"
 msgstr "glibc2 ভার্সন ২.৩.২ বা উচ্চ"
 
-#: readme.xrm#s256we.s256we.readmeitem.text
+#: docs/readme/readme.xrm#s256we.s256we
 #, fuzzy
-msgid "gtk version 2.10.4 or higher"
+msgid  "gtk version 2.10.4 or higher"
 msgstr "gtk ভার্সন ২.২.০ বা উচ্চ"
 
-#: readme.xrm#s2etfseg.s2etfseg.readmeitem.text
+#: docs/readme/readme.xrm#s2etfseg.s2etfseg
 #, fuzzy
-msgctxt "readme.xrm#s2etfseg.s2etfseg.readmeitem.text"
-msgid "Pentium compatible PC (Pentium III or Athlon recommended)"
+msgid  "Pentium compatible PC (Pentium III or Athlon recommended)"
 msgstr "পেন্টিয়ামের সমতুল্য পিসি (সুপারিশকৃত: পেন্টিয়াম III বা অ্যাথলন)"
 
-#: readme.xrm#s2ssdfe.s2ssdfe.readmeitem.text
+#: docs/readme/readme.xrm#s2ssdfe.s2ssdfe
 #, fuzzy
-msgctxt "readme.xrm#s2ssdfe.s2ssdfe.readmeitem.text"
-msgid "256 MB RAM (512 MB RAM recommended)"
+msgid  "256 MB RAM (512 MB RAM recommended)"
 msgstr "২৫৬ মেগাবাইট RAM (সুপারিশকৃত: ৫১২ মেগাবাইট RAM)"
 
-#: readme.xrm#n42dfgf.n42dfgf.readmeitem.text
-msgctxt "readme.xrm#n42dfgf.n42dfgf.readmeitem.text"
-msgid "Up to 1.55 GB available hard disk space"
+#: docs/readme/readme.xrm#n42dfgf.n42dfgf
+msgid  "Up to 1.55 GB available hard disk space"
 msgstr ""
 
-#: readme.xrm#ghjhhr.ghjhhr.readmeitem.text
-#, fuzzy
-msgctxt "readme.xrm#ghjhhr.ghjhhr.readmeitem.text"
-msgid ""
-"X Server with 1024x768 resolution (higher resolution recommended), with at "
-"least 256 colors"
+#: docs/readme/readme.xrm#ghjhhr.ghjhhr
+msgid  "X Server with 1024x768 resolution (higher resolution recommended), with at least 256 colors"
 msgstr ""
-"X সার্ভার ১০২৪ x ৭৬৮ রেসল্যুশনসহ (আরো বেশি রেসল্যুশন সুপারিশকৃত), অন্তত ২৫৬ "
-"কালারসহ"
 
-#: readme.xrm#fhrtz5.fhrtz5.readmeitem.text
+#: docs/readme/readme.xrm#fhrtz5.fhrtz5
 #, fuzzy
-msgctxt "readme.xrm#fhrtz5.fhrtz5.readmeitem.text"
-msgid "Window Manager"
+msgid  "Window Manager"
 msgstr "উইন্ডো ব্যবস্থাপক (প্রোগ্রাম)"
 
-#: readme.xrm#wd2dff.wd2dff.readmeitem.text
+#: docs/readme/readme.xrm#wd2dff.wd2dff
+msgid  "Gnome 2.16 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, required for support of assistive technology tools (AT tools)"
+msgstr ""
+
+#: docs/readme/readme.xrm#Linuxi3a.Linuxi3a
+msgid  "There is a wide variety of Linux distributions, and even within the same distribution there may be different installation options (KDE vs Gnome, etc.). Some distributions ship with their own ‘native’ version of ${PRODUCTNAME}, which may have different features from this Community ${PRODUCTNAME}. Sometimes you can install the Community ${PRODUCTNAME} alongside the ‘native’ version. However, it’s usually safer to remove the ‘native’ version before installing this Community version. Consult the documentation for your distribution for details of how to do this."
+msgstr ""
+
+#: docs/readme/readme.xrm#Linuxi4a.Linuxi4a
+msgid  "It is recommended that you always backup your system before you remove or install software."
+msgstr ""
+
+#: docs/readme/readme.xrm#Precautions.Precautions
+msgid  "Please make sure you have enough free memory in the temporary directory on your system and that read, write and run access rights have been granted. Close all other programs before starting the installation."
+msgstr ""
+
+#: docs/readme/readme.xrm#BDB11.BDB11
+msgid  "Extension Database Incompatibility"
+msgstr ""
+
+#: docs/readme/readme.xrm#BDB2a.BDB2a
+msgid  "The Berkeley database engine has been upgraded in this version of ${PRODUCTNAME}. The database engine upgrade introduces an incompatibility with user data for installed extensions for ${PRODUCTNAME} versions prior to 3.2 that may require your action if you downgrade your version of ${PRODUCTNAME}."
+msgstr ""
+
+#: docs/readme/readme.xrm#BDB3a.BDB3a
+msgid  "This version of ${PRODUCTNAME} will convert your extension database to the new Berkeley database format when extensions are installed or removed. After this conversion, the database can no longer be read by earlier versions of ${PRODUCTNAME}. Downgrading to an earlier version may result in a dysfunctional installation."
+msgstr ""
+
+#: docs/readme/readme.xrm#BDB4a.BDB4a
+msgid  "If you downgrade to an earlier version of ${PRODUCTNAME}, you must remove the user data directory <tt>{user data}/uno_packages</tt>, for example <tt>~/.openoffice.org/3/user/uno_packages</tt>, and reinstall all extensions."
+msgstr ""
+
+#: docs/readme/readme.xrm#naso01.naso01
 #, fuzzy
-msgid ""
-"Gnome 2.16 or higher, with the gail 1.8.6 and the at-spi 1.7 packages, "
-"required for support of assistive technology tools (AT tools)"
-msgstr ""
-"সহযোগী টেকনোলজি টুল সাপোর্টের জন্য জিনোম ২.৬ বা উচ্চ, গেইল ১.৮.৬ এবং "
-"অ্যাট-স্পাই ১.৭ প্যাকেজ প্রয়োজন"
-
-#: readme.xrm#Linuxi3a.Linuxi3a.readmeitem.text
-#, fuzzy
-msgid ""
-"There is a wide variety of Linux distributions, and even within the same "
-"distribution there may be different installation options (KDE vs Gnome, "
-"etc.). Some distributions ship with their own ‘native’ version of "
-"${PRODUCTNAME}, which may have different features from this Community "
-"${PRODUCTNAME}. Sometimes you can install the Community ${PRODUCTNAME} "
-"alongside the ‘native’ version. However, it’s usually safer to remove the "
-"‘native’ version before installing this Community version. Consult the "
-"documentation for your distribution for details of how to do this."
-msgstr ""
-"লিনাক্সের অনেক ডিস্ট্রিবিউশন আছে, এমনকি একই ডিস্ট্রিবিউশনের মধ্যেও ভিন্ন "
-"ভিন্ন ইন্সটলেশন অপসন আছে (যেমন, কেডিই বনাম জিনোম)। কিছু ডিস্ট্রিবিউশনের সাথে "
-"তাদের নিজস্ব ${PRODUCTNAME} থাকে, যেটিতে কমিউনিটি ${PRODUCTNAME} এর চেয়ে "
-"আলাদা বৈশিষ্ট্য থাকতে পারে। আপনি হয়তো তাদের নিজস্ব ${PRODUCTNAME} ভার্সনের "
-"সাথে কমিউনিটি ${PRODUCTNAME} ও ইন্সটল করতে পারবেন। যদিও ভালো হয় কমিউনিটি "
-"ভার্সন সংস্থাপন করার আগে তাদের নিজস্ব সংষ্করনটি মুছে দেন। এ ব্যাপারে "
-"বিস্তারিত জানার জন্য আপনার ডিস্ট্রিবিউশনের ডকুমেন্টেশন দেখুন।"
-
-#: readme.xrm#Linuxi4a.Linuxi4a.readmeitem.text
-msgid ""
-"It is recommended that you always backup your system before you remove or "
-"install software."
-msgstr ""
-"সফটওয়্যার সংস্থাপন করার আগে বা মুছে ফেলার আগে আপনার সিস্টেমের ব্যাকআপ রাখা "
-"উচিত।"
-
-#: readme.xrm#Precautions.Precautions.readmeitem.text
-msgid ""
-"Please make sure you have enough free memory in the temporary directory on "
-"your system and that read, write and run access rights have been granted. "
-"Close all other programs before starting the installation."
-msgstr ""
-"অনুগ্রহ করে নিশ্চিত হোন যে আপনার সিস্টেমের অস্থায়ী নির্দেশিকাতে যথেষ্ট্য "
-"খালি জায়গা আছে এবং পড়ার, লেখার এবং চালনোর অধিকার আছে। সংস্থাপন শুরু করার "
-"আগে অন্য সব প্রোগ্রাম বন্ধ করে নিন।‌"
-
-#: readme.xrm#BDB11.BDB11.readmeitem.text
-msgid "Extension Database Incompatibility"
-msgstr ""
-
-#: readme.xrm#BDB2a.BDB2a.readmeitem.text
-msgid ""
-"The Berkeley database engine has been upgraded in this version of "
-"${PRODUCTNAME}. The database engine upgrade introduces an incompatibility "
-"with user data for installed extensions for ${PRODUCTNAME} versions prior to "
-"3.2 that may require your action if you downgrade your version of "
-"${PRODUCTNAME}."
-msgstr ""
-
-#: readme.xrm#BDB3a.BDB3a.readmeitem.text
-msgid ""
-"This version of ${PRODUCTNAME} will convert your extension database to the "
-"new Berkeley database format when extensions are installed or removed. After "
-"this conversion, the database can no longer be read by earlier versions of "
-"${PRODUCTNAME}. Downgrading to an earlier version may result in a "
-"dysfunctional installation."
-msgstr ""
-
-#: readme.xrm#BDB4a.BDB4a.readmeitem.text
-msgid ""
-"If you downgrade to an earlier version of ${PRODUCTNAME}, you must remove "
-"the user data directory <tt>{user data}/uno_packages</tt>, for example "
-"<tt>~/.openoffice.org/3/user/uno_packages</tt>, and reinstall all "
-"extensions."
-msgstr ""
-
-#: readme.xrm#naso01.naso01.readmeitem.text
-msgid "Problems During Program Startup"
+msgid  "Problems During Program Startup"
 msgstr "প্রোগ্রাম শুরুর সময় সমস্যা"
 
-#: readme.xrm#naso02.naso02.readmeitem.text
-#, fuzzy
-msgid ""
-"If you experience ${PRODUCTNAME} startup problems (most notably while using "
-"Gnome) please 'unset' the <tt>SESSION_MANAGER</tt> environment variable "
-"inside the shell you use to start ${PRODUCTNAME}. This can be done by adding "
-"the line \"<tt>unset SESSION_MANAGER</tt>\" to the beginning of the soffice "
-"shell script found in the \"<tt>[office folder]/program</tt>\" directory."
+#: docs/readme/readme.xrm#naso02.naso02
+msgid  "If you experience ${PRODUCTNAME} startup problems (most notably while using Gnome) please 'unset' the <tt>SESSION_MANAGER</tt> environment variable inside the shell you use to start ${PRODUCTNAME}. This can be done by adding the line "<tt>unset SESSION_MANAGER</tt>" to the beginning of the soffice shell script found in the "<tt>[office folder]/program</tt>" directory."
 msgstr ""
-"যদি আপনি ${PRODUCTNAME} স্টার্টআপ সমস্যা অনুভব করেন (জিনোম ব্যবহার করার সময় "
-"সবচেয়ে বেশি দেখা যায়), তাহলে ${PRODUCTNAME} শুরু করতে যেই শেল আপনি "
-"ব্যবহার করেন তার ভেতরে অনুগ্রহ করে SESSION_MANAGER এনভায়রনমেন্ট ভেরিয়েবলটি "
-"'unset' করুন। \"[office folder]/program\" ডিরেক্টরীর শেল স্ক্রিপ্টের শুরুতে "
-"\"unset SESSION_MANAGER\" লাইন যোগ করে এটি করা যাবে।"
 
-#: readme.xrm#abcdef.abcdef.readmeitem.text
-#, fuzzy
-msgid ""
-"Difficulties starting ${PRODUCTNAME} (e.g. applications hang) as well as "
-"problems with the screen display are often caused by the graphics card "
-"driver. If these problems occur, please update your graphics card driver or "
-"try using the graphics driver delivered with your operating system. "
-"Difficulties displaying 3D objects can often be solved by deactivating the "
-"option \"Use OpenGL\" under 'Tools - Options - ${PRODUCTNAME} - View - 3D "
-"view'."
+#: docs/readme/readme.xrm#abcdef.abcdef
+msgid  "Difficulties starting ${PRODUCTNAME} (e.g. applications hang) as well as problems with the screen display are often caused by the graphics card driver. If these problems occur, please update your graphics card driver or try using the graphics driver delivered with your operating system. Difficulties displaying 3D objects can often be solved by deactivating the option "Use OpenGL" under 'Tools - Options - ${PRODUCTNAME} - View - 3D view'."
 msgstr ""
-"প্রায় সমসয়ই ${PRODUCTNAME} শুরু করতে সমস্যা (উদাঃ অ্যাপলিকেশন হ্যাং) এর "
-"পাশাপাশি পর্দা প্রদর্শন করতে সমস্যার কারন হল গ্রাফিক্স কার্ড ড্রাইভার। যদি "
-"এই সমস্যা ঘটে, অনুগ্রহ করে আপনার গ্রাফিক্স কার্ড ড্রাইভার হালনাগাদ করুন অথবা "
-"আপনার অপারেটিং সিস্টেমের সঙ্গে যে গ্রাফিক্স ড্রাইভার দেয়া হয়েছে তা "
-"ব্যবহার করার চেষ্টা করুন। ত্রিমাত্রিক বস্তু দেখার সমস্যা দূর করা যেতে পারে "
-"'Tools - Options - ${PRODUCTNAME} - View - 3D view' এ \"OpenGL ব্যবহার করুন\" "
-"অপশন অকার্যকর করে।"
 
-#: readme.xrm#naso.naso.readmeitem.text
-msgid "ALPS/Synaptics notebook touchpads in Windows"
+#: docs/readme/readme.xrm#naso.naso
+#, fuzzy
+msgid  "ALPS/Synaptics notebook touchpads in Windows"
 msgstr "উইন্ডোজে ALPS/Synaptics নোটবই টাচপ্যাড"
 
-#: readme.xrm#naso2.naso2.readmeitem.text
-msgid ""
-"Due to a Windows driver issue, you cannot scroll through ${PRODUCTNAME} "
-"documents when you slide your finger across an ALPS/Synaptics touchpad."
+#: docs/readme/readme.xrm#naso2.naso2
+msgid  "Due to a Windows driver issue, you cannot scroll through ${PRODUCTNAME} documents when you slide your finger across an ALPS/Synaptics touchpad."
 msgstr ""
-"একটি উইন্ডোজ ড্রাইভার বিষয়ের কারনে, ALPS/Synaptics টাচপ্যাডে আঙুল চালানোর "
-"সময় আপনি ${PRODUCTNAME} নথির মধ্যে স্ক্রল করতে পারবেন না।"
 
-#: readme.xrm#naso6.naso6.readmeitem.text
+#: docs/readme/readme.xrm#naso6.naso6
+msgid  "To enable touchpad scrolling, add the following lines to the "<tt>C:\Program Files\Synaptics\SynTP\SynTPEnh.ini</tt>" configuration file, and restart your computer:"
+msgstr ""
+
+#: docs/readme/readme.xrm#naso8.naso8
+msgid  "The location of the configuration file might vary on different versions of Windows."
+msgstr ""
+
+#: docs/readme/readme.xrm#sdfsd32asrc.sdfsd32asrc
 #, fuzzy
-msgid ""
-"To enable touchpad scrolling, add the following lines to the \"<tt>C:\\Program "
-"Files\\Synaptics\\SynTP\\SynTPEnh.ini</tt>\" configuration file, and restart "
-"your computer:"
-msgstr ""
-"টাচপ্যাড স্ক্রলিং সক্রিয় করতে, \" c: \\Program Files\\Synaptics\\SynTP\\SynTPEnh "
-"ini \" বিন্যাসন ফাইলে নিম্নলিখিত লাইন যোগ করুন, এবং আপনার কম্পিউটার পুনরায় "
-"চালু করুন:"
-
-#: readme.xrm#naso8.naso8.readmeitem.text
-#, fuzzy
-msgid ""
-"The location of the configuration file might vary on different versions of "
-"Windows."
-msgstr ""
-"নোট: বিন্যাসনন ফাইলের অবস্থান উইন্ডোজের বিভিন্ন সংষ্করণের জন্য ভিন্ন হতে "
-"পারে।"
-
-#: readme.xrm#sdfsd32asrc.sdfsd32asrc.readmeitem.text
-msgid "Mozilla Address Book Driver"
+msgid  "Mozilla Address Book Driver"
 msgstr "মজিলা ঠিকানার বইয়ের ড্রাইভার"
 
-#: readme.xrm#sdcc32asrc.sdcc32asrc.readmeitem.text
-#, fuzzy
-msgid ""
-"The Mozilla address book driver requires the <tt>SUNWzlib</tt> package. This "
-"package is not part of the minimum Solaris operating system installation. "
-"If you require access to the Mozilla address book, then add this package to "
-"your Solaris operating system using the command \"<tt>pkgadd</tt>\" from the "
-"installation CD."
+#: docs/readme/readme.xrm#sdcc32asrc.sdcc32asrc
+msgid  "The Mozilla address book driver requires the <tt>SUNWzlib</tt> package. This package is not part of the minimum Solaris operating system installation. If you require access to the Mozilla address book, then add this package to your Solaris operating system using the command "<tt>pkgadd</tt>" from the installation CD."
 msgstr ""
-"Mozilla ঠিকানা বই ড্রাইভারের SUNWzlib প্যাকেজটি প্রয়োজন। এই প্যাকেজটি "
-"ন্যুনতম সোলারিস অপারেটিং সিস্টেম সংস্থাপনের অংশ নয়। যদি আপনি Mozilla ঠিকানা "
-"বই ব্যবহার করতে চান, তাহলে সংস্থাপন সিডি থেকে \"pkgadd\" কমান্ড ব্যবহার করে "
-"আপনার সোলারিস অপারেটিং সিস্টেমে এই প্যাকেজটি যোগ করুন  ।"
 
-#: readme.xrm#awe1.awe1.readmeitem.text
-msgid "Shortcut Keys"
+#: docs/readme/readme.xrm#awe1.awe1
+#, fuzzy
+msgid  "Shortcut Keys"
 msgstr "শর্টকাট কী (key)"
 
-#: readme.xrm#w32e1.w32e1.readmeitem.text
+#: docs/readme/readme.xrm#w32e1.w32e1
+msgid  "Only shortcut keys (key combinations) not used by the operating system can be used in ${PRODUCTNAME}. If a key combination in ${PRODUCTNAME} does not work as described in the ${PRODUCTNAME} Help, check if that shortcut is already used by the operating system. To rectify such conflicts, you can change the keys assigned by your operating system. Alternatively, you can change almost any key assignment in ${PRODUCTNAME}. For more information on this topic, refer to the ${PRODUCTNAME} Help or the Help documention of your operating system."
+msgstr ""
+
+#: docs/readme/readme.xrm#mackeys1.mackeys1
+msgid  "The application help of ${PRODUCTNAME} may use shortcut combinations for PC keyboards only."
+msgstr ""
+
+#: docs/readme/readme.xrm#gfh6w.gfh6w
 #, fuzzy
-msgid ""
-"Only shortcut keys (key combinations) not used by the operating system can "
-"be used in ${PRODUCTNAME}. If a key combination in ${PRODUCTNAME} does not "
-"work as described in the ${PRODUCTNAME} Help, check if that shortcut is "
-"already used by the operating system. To rectify such conflicts, you can "
-"change the keys assigned by your operating system. Alternatively, you can "
-"change almost any key assignment in ${PRODUCTNAME}. For more information on "
-"this topic, refer to the ${PRODUCTNAME} Help or the Help documention of your "
-"operating system."
-msgstr ""
-"যেসব শর্টকাট কী অপারেটিং সিস্টেম দ্বারা ব্যবহৃত হয়না কেবলমাত্র সেসব শর্টকাট "
-"কী ${PRODUCTNAME} এ ব্যবহার করা যাবে। ${PRODUCTNAME} এ  যদি কোনো কী "
-"${PRODUCTNAME} এর সাহায্য ফাইলের বর্ণনা অনুযায়ী কাজ না করে, দেখুন সেই "
-"শর্টকাটটি অপারেটিং সিস্টেম দ্বারা ইতিমধ্যে ব্যবহার করা হচ্ছে কিনা। এমন সংঘাত "
-"এড়াতে, আপনি আপনার অপারেটিং সিস্টেমের কী পরিবর্তন করতে পারেন। বিকল্প "
-"হিসেবে, আপনি ${PRODUCTNAME} তে যেকোন কী পরিবর্তন করতে পারেন। এই বিষয়বস্তু "
-"সম্পর্কে আরও বেশি তথ্যের জন্য, ${PRODUCTNAME} এর সাহায্য দেখুন বা অপারেটিং "
-"সিস্টেমের সাহায্য নথি দেখুন।"
-
-#: readme.xrm#mackeys1.mackeys1.readmeitem.text
-msgid ""
-"The application help of ${PRODUCTNAME} may use shortcut combinations for PC "
-"keyboards only."
-msgstr ""
-"${PRODUCTNAME} এর প্রয়োগনের সাহায্য নিয়ে শুধু পিসি কিবোর্ডের কম্বিনেশনে "
-"শর্টকাট বানানো যায়।"
-
-#: readme.xrm#gfh6w.gfh6w.readmeitem.text
-msgid "File Locking"
+msgid  "File Locking"
 msgstr "ফাইল তালাবদ্ধ করা হচ্ছে"
 
-#: readme.xrm#pji76w.pji76w.readmeitem.text
-msgid ""
-"File locking is enabled by default in ${PRODUCTNAME}. On a network that uses "
-"the Network File System protocol (NFS), the locking daemon for NFS clients "
-"must be active. To disable file locking, edit the <tt>soffice</tt> script "
-"and change the line \"<tt>export SAL_ENABLE_FILE_LOCKING</tt>\" to \"<tt># "
-"export SAL_ENABLE_FILE_LOCKING</tt>\". If you disable file locking, the write "
-"access of a document is not restricted to the user who first opens the "
-"document."
+#: docs/readme/readme.xrm#pji76w.pji76w
+msgid  "File locking is enabled by default in ${PRODUCTNAME}. On a network that uses the Network File System protocol (NFS), the locking daemon for NFS clients must be active. To disable file locking, edit the <tt>soffice</tt> script and change the line "<tt>export SAL_ENABLE_FILE_LOCKING</tt>" to "<tt># export SAL_ENABLE_FILE_LOCKING</tt>". If you disable file locking, the write access of a document is not restricted to the user who first opens the document."
 msgstr ""
 
-#: readme.xrm#pji76wsdf.pji76wsdf.readmeitem.text
-msgid ""
-"Warning: The activated file locking feature can cause problems with Solaris "
-"2.5.1 and 2.7 used in conjunction with Linux NFS 2.0. If your system "
-"environment has these parameters, we strongly recommend that you avoid using "
-"the file locking feature. Otherwise, ${PRODUCTNAME} will hang when you try "
-"to open a file from a NFS mounted directory from a Linux computer."
+#: docs/readme/readme.xrm#pji76wsdf.pji76wsdf
+msgid  "Warning: The activated file locking feature can cause problems with Solaris 2.5.1 and 2.7 used in conjunction with Linux NFS 2.0. If your system environment has these parameters, we strongly recommend that you avoid using the file locking feature. Otherwise, ${PRODUCTNAME} will hang when you try to open a file from a NFS mounted directory from a Linux computer."
 msgstr ""
-"সাবধানবাণী: সক্রিয় ফাইল তালাবদ্ধ করার বৈশিষ্ট্য লিনাক্স এনএফএস ২.০ এর সঙ্গে "
-"ব্যবহৃত সোলারিস ২.৫.১ এবং ২.৭ এর সঙ্গে সমস্যা ঘটাতে পারে। যদি আপনার সিস্টেম "
-"এনভায়রনমেন্টে এই প্যারামিটারগুলো থাকে, আমরা দৃঢ়ভাবে সুপারিশ করি যে আপনি "
-"ফাইল তালাবদ্ধ করার বৈশিষ্ট্য ব্যবহার করা এড়িয়ে চলুন। অন্যথায়, লিনাক্স "
-"কম্পিউটারের এনএফএস ডিরেক্টরী থেকে কোনো ফাইল খুলতে গেলে ${PRODUCTNAME} হ্যাং "
-"করবে।"
 
-#: readme.xrm#gfh6w1.gfh6w1.readmeitem.text
-msgid "Problems When Sending Documents as E-mails From ${PRODUCTNAME}"
+#: docs/readme/readme.xrm#gfh6w1.gfh6w1
+#, fuzzy
+msgid  "Problems When Sending Documents as E-mails From ${PRODUCTNAME}"
 msgstr "${PRODUCTNAME} থেকে ই-মেইল হিসেবে নথি পাঠানোর সময় সমস্যা"
 
-#: readme.xrm#pji76w1.pji76w1.readmeitem.text
-#, fuzzy
-msgid ""
-"When sending a document via 'File - Send - Document as E-mail' or 'Document "
-"as PDF Attachment' problems might occur (program crashes or hangs). This is "
-"due to the Windows system file \"Mapi\" (Messaging Application Programming "
-"Interface) which causes problems in some file versions. Unfortunately, the "
-"problem cannot be narrowed down to a certain version number. For more "
-"information visit <a "
-"href=\"http://www.microsoft.com\">http://www.microsoft.com</a> to search the "
-"Microsoft Knowledge Base for \"mapi dll\"."
+#: docs/readme/readme.xrm#pji76w1.pji76w1
+msgid  "When sending a document via 'File - Send - Document as E-mail' or 'Document as PDF Attachment' problems might occur (program crashes or hangs). This is due to the Windows system file "Mapi" (Messaging Application Programming Interface) which causes problems in some file versions. Unfortunately, the problem cannot be narrowed down to a certain version number. For more information visit <a href="http://www.microsoft.com">http://www.microsoft.com</a> to search the Microsoft Knowledge Base for "mapi dll"."
 msgstr ""
-"'ফাইল - প্রেরণ করুন - ই-মেইল হিসেবে নথি' বা 'PDF সংযোজন হিসেবে নথি' এর "
-"মাধ্যমে কোনো নথি পাঠাতে চাইলে সমস্যা দেখা দিতে পারে(প্রোগ্রাম ভেঙ্গে পড়া "
-"অথবা হ্যাং হওয়া)। এটি উইন্ডোজের \"Mapi\" (Messaging Application Programming "
-"Interface) সিস্টেম ফাইলের কারনে হয়ে থাকে যেটি কিছু ফাইল সংস্করণে সমস্যা "
-"ঘটায়। দুর্ভাগ্যবশত, কোনো নির্দিষ্ট সংস্করনের সমস্যাটি ঘটো না। mapi dll\" এর "
-"ব্যপারে খোজায়  আরও বেশি তথ্যের জন্য http://www.microsoft.com দেখুন।"
 
-#: readme.xrm#aw22.aw22.readmeitem.text
-msgid "Important Accessibility Notes"
+#: docs/readme/readme.xrm#aw22.aw22
+#, fuzzy
+msgid  "Important Accessibility Notes"
 msgstr "জরুরী  প্রবেশ্যতা নোট"
 
-#: readme.xrm#access7.access7.readmeitem.text
-msgid ""
-"For more information on the accessibility features in ${PRODUCTNAME}, see <a "
-"href=\"http://www.openoffice.org/access/\">http://www.openoffice.org/access/<"
-"/a>"
+#: docs/readme/readme.xrm#access7.access7
+msgid  "For more information on the accessibility features in ${PRODUCTNAME}, see <a href="http://www.openoffice.org/access/">http://www.openoffice.org/access/</a>"
 msgstr ""
 
-#: readme.xrm#support.support.readmeitem.text
-msgid "User Support"
+#: docs/readme/readme.xrm#support.support
+#, fuzzy
+msgid  "User Support"
 msgstr "ব্যবহারকারী সহায়তা"
 
-#: readme.xrm#support1.support1.readmeitem.text
-msgid ""
-"The main support page <a "
-"href=\"http://support.openoffice.org/\">http://support.openoffice.org/</a> "
-"offers various possibilities for help with ${PRODUCTNAME}. Your question may "
-"have already been answered - check the Community Forum at <a href=\"http://u"
-"ser.services.openoffice.org\">http://user.services.openoffice.org</a> or "
-"search the archives of the 'users@openoffice.org' mailing list at <a href=\"h"
-"ttp://www.openoffice.org/mail_list.html\">http://www.openoffice.org/mail_list"
-".html</a>. Alternatively, you can send in your questions to <a "
-"href=\"mailto:users@openoffice.org\">users@openoffice.org</a>. How to "
-"subscribe to the list (to get an email response) is explained on this page: "
-"<a href=\"http://wiki.services.openoffice.org/wiki/Website/Content/help/maili"
-"nglists\">http://wiki.services.openoffice.org/wiki/Website/Content/help/maili"
-"nglists</a>."
+#: docs/readme/readme.xrm#support1.support1
+msgid  "The main support page <a href="http://support.openoffice.org/">http://support.openoffice.org/</a> offers various possibilities for help with ${PRODUCTNAME}. Your question may have already been answered - check the Community Forum at <a href="http://user.services.openoffice.org">http://user.services.openoffice.org</a> or search the archives of the 'users@openoffice.apache.org' mailing list at <a href="http://www.openoffice.org/mail_list.html">http://www.openoffice.org/mail_list.html</a>. Alternatively, you can send in your questions to <a href="mailto:users@openoffice.apache.org">users@openoffice.apache.org</a>. How to subscribe to the list (to get an email response) is explained on this page: <a href="http://wiki.services.openoffice.org/wiki/Website/Content/help/mailinglists">http://wiki.services.openoffice.org/wiki/Website/Content/help/mailinglists</a>."
 msgstr ""
 
-#: readme.xrm#faq.faq.readmeitem.text
-msgid ""
-"Also check the FAQ section at <a href=\"http://wiki.services.openoffice.org/w"
-"iki/Documentation/FAQ\">http://wiki.services.openoffice.org/wiki/Documentatio"
-"n/FAQ.</a>"
+#: docs/readme/readme.xrm#faq.faq
+msgid  "Also check the FAQ section at <a href="http://wiki.services.openoffice.org/wiki/Documentation/FAQ">http://wiki.services.openoffice.org/wiki/Documentation/FAQ.</a>"
 msgstr ""
 
-#: readme.xrm#reportbugs.reportbugs.readmeitem.text
-msgid "Reporting Bugs &amp; Issues"
+#: docs/readme/readme.xrm#reportbugs.reportbugs
+msgid  "Reporting Bugs &amp; Issues"
 msgstr ""
 
-#: readme.xrm#reportbugs1.reportbugs1.readmeitem.text
+#: docs/readme/readme.xrm#reportbugs1.reportbugs1
+msgid  "The ${PRODUCTNAME} Web site hosts IssueZilla, our mechanism for reporting, tracking and solving bugs and issues. We encourage all users to feel entitled and welcome to report issues that may arise on your particular platform. Energetic reporting of issues is one of the most important contributions that the user community can make to the ongoing development and improvement of the suite."
+msgstr ""
+
+#: docs/readme/readme.xrm#gettinginvolved1.gettinginvolved1
 #, fuzzy
-msgid ""
-"The ${PRODUCTNAME} Web site hosts IssueZilla, our mechanism for reporting, "
-"tracking and solving bugs and issues. We encourage all users to feel "
-"entitled and welcome to report issues that may arise on your particular "
-"platform. Energetic reporting of issues is one of the most important "
-"contributions that the user community can make to the ongoing development "
-"and improvement of the suite."
-msgstr ""
-"${PRODUCTNAME} ওয়েব সাইটে IssueZillatracking আছে, যেটি সমস্যা ধরতে, সমাধান "
-"করতে এবং প্রতিবেদন করতে সাহায্য করে। আমরা সকলকে প্রতিবেদন পাঠাতে উৎ‍সাহিত "
-"করি। স্যুটের উন্নতিসাধনে কর্মশক্তিসম্পন্ন রিপোর্টিং সর্বাপেক্ষা গুরুত্বপূর্ণ "
-"অবদানসমূহের একটি।"
-
-#: readme.xrm#gettinginvolved1.gettinginvolved1.readmeitem.text
-#, fuzzy
-msgid "Getting Involved"
+msgid  "Getting Involved"
 msgstr "অন্তর্ভূক্ত করা হচ্ছে"
 
-#: readme.xrm#gettinginvolved2.gettinginvolved2.readmeitem.text
-msgid ""
-"The ${PRODUCTNAME} Community would very much benefit from your active "
-"participation in the development of this important open source project."
+#: docs/readme/readme.xrm#gettinginvolved2.gettinginvolved2
+msgid  "The ${PRODUCTNAME} Community would very much benefit from your active participation in the development of this important open source project."
 msgstr ""
-"${PRODUCTNAME} কমিউনিটি এই জরুরী মুক্ত সোর্স প্রোজেক্ট উন্নয়নে আপনার "
-"কার্যকর অংশগ্রহনে অত্যন্ত উপকৃত হবে।"
 
-#: readme.xrm#gettingimvolved3.gettingimvolved3.readmeitem.text
-#, fuzzy
-msgid ""
-"As a user, you are already a valuable part of the suite's development "
-"process and we would like to encourage you to take an even more active role "
-"with a view to being a long-term contributor to the community. Please join "
-"and check out the user page at <a "
-"href=\"http://incubator.apache.org/openofficeorg/get-"
-"involved.html\">http://incubator.apache.org/openofficeorg/get-"
-"involved.html</a>"
+#: docs/readme/readme.xrm#gettingimvolved3.gettingimvolved3
+msgid  "As a user, you are already a valuable part of the suite's development process and we would like to encourage you to take an even more active role with a view to being a long-term contributor to the community. Please join and check out the user page at <a href="http://openoffice.apache.org/get-involved.html">http://openoffice.apache.org/get-involved.html</a>"
 msgstr ""
-"একজন ব্যবহারকারী হিসেবে আপনি এই স্যুটের উন্নয়ন প্রক্রিয়ার একজন মূল্যবান "
-"অংশ হয়ে গিয়েছেন এবং আপনাকে আরো কার্যরক ভূমিকা রাখার জন্য উৎসাহিত করা হচ্ছে "
-"যেন আপনি প্রদায়ক হিসেবে অনেকদিন কমিউনিটির সাথে থাকেন। অনুগ্রহ করে এখানে "
-"দেখুন এবং যুক্ত হোন:"
 
-#: readme.xrm#howtostart.howtostart.readmeitem.text
+#: docs/readme/readme.xrm#howtostart.howtostart
 #, fuzzy
-msgid "How to Start"
+msgid  "How to Start"
 msgstr "শুরু করার পদ্ধতি"
 
-#: readme.xrm#howtostart1.howtostart1.readmeitem.text
-#, fuzzy
-msgid ""
-"The best way to start contributing is to subscribe to one or more of the "
-"mailing lists, lurk for a while, and gradually use the mail archives to "
-"familiarize yourself with many of the topics covered since the "
-"${PRODUCTNAME} source code was released back in October 2000. When you're "
-"comfortable, all you need to do is send an email self-introduction and jump "
-"right in. If you are familiar with Open Source Projects, check out our To-"
-"Dos list and see if there is anything you would like to help with at <a href"
-"=\"http://development.openoffice.org/todo.html\">http://development.openoffice"
-".org/todo.html</a>."
+#: docs/readme/readme.xrm#howtostart1.howtostart1
+msgid  "The best way to start contributing is to subscribe to one or more of the mailing lists, lurk for a while, and gradually use the mail archives to familiarize yourself with many of the topics covered since the ${PRODUCTNAME} source code was released back in October 2000. When you're comfortable, all you need to do is send an email self-introduction and jump right in. If you are familiar with Open Source Projects, check out our To-Dos list and see if there is anything you would like to help with at <a href="http://development.openoffice.org/todo.html">http://development.openoffice.org/todo.html</a>."
 msgstr ""
-"কনট্রিবিউটর হিসেবে শুরু করার শ্রেষ্ঠ উপায় হল এক বা একাধিক মেইলিং লিস্টে "
-"যুক্ত হওয়া, কিছু সময় দেখা, এবং মেইল আর্কাইভ ব্যবহার করে নিজেকে বিষয়গুলোর "
-"সাথে পরিচিত করে তোলা যেগুলো ২০০০ সালের অক্টোবরে ${PRODUCTNAME} রিলিজের পর "
-"থেকে লেখা হচ্ছে। যখন আপনি সঠিক মনে করবেন তখন শুধুমাত্র নিজেকে পরিচিত করানোর "
-"জন্য একটি মেইল করে আপনি কাজ শুরু করে দিতে পারেন। আপনি যদি মুক্ত সোর্স "
-"প্রোজেক্টগুলোর সাথে পরিচিত থাকেন, তাহলে এখানে আমাদের কাজের তালিকা দেখে ঠিক "
-"করুন আপনি কোনটিতে সাহায্য করতে চান:"
 
-#: readme.xrm#subscribe.subscribe.readmeitem.text
-msgid "Subscribe"
+#: docs/readme/readme.xrm#subscribe.subscribe
+#, fuzzy
+msgid  "Subscribe"
 msgstr "সাবস্ক্রাইব"
 
-#: readme.xrm#subscribe1.subscribe1.readmeitem.text
-msgid ""
-"Here are a few of the Project mailing lists to which you can subscribe at <a "
-"href=\"http://incubator.apache.org/openofficeorg/mailing-"
-"lists.html\">http://incubator.apache.org/openofficeorg/mailing-lists.html</a>"
+#: docs/readme/readme.xrm#subscribe1.subscribe1
+msgid  "Here are a few of the Project mailing lists to which you can subscribe at <a href="http://openoffice.apache.org/mailing-lists.html">http://openoffice.apache.org/mailing-lists.html</a>"
 msgstr ""
 
-#: readme.xrm#subscribelist1.subscribelist1.readmeitem.text
+#: docs/readme/readme.xrm#subscribelist1.subscribelist1
+msgid  "News: ooo-announce@incubator.apache.org *recommended to all users* (light traffic)"
+msgstr ""
+
+#: docs/readme/readme.xrm#subscribelist2.subscribelist2
+msgid  "Main user forum: ooo-users@incubator.apache.org *easy way to lurk on discussions* (heavy traffic)"
+msgstr ""
+
+#: docs/readme/readme.xrm#subscribelist3.subscribelist3
+msgid  "Marketing project: ooo-marketing@incubator.apache.org *beyond development* (getting heavy)"
+msgstr ""
+
+#: docs/readme/readme.xrm#subscribelist4.subscribelist4
+msgid  "General code contributor list: ooo-dev@incubator.apache.org (moderate/heavy)"
+msgstr ""
+
+#: docs/readme/readme.xrm#joining.joining
+msgid  "You can make major contributions to this important open source project even if you have limited software design or coding experience. Yes, you!"
+msgstr ""
+
+#: docs/readme/readme.xrm#joining1.joining1
+msgid  "At <a href="http://openoffice.apache.org/get-involved.html">http://openoffice.apache.org/get-involved.html</a> you will find a first overview where you can start with, ranging from Localization, QA, user support to some real core coding projects. If you are not a developer, try the Documentation or the Marketing Project. The Apache OpenOffice Marketing Project is applying both guerilla and traditional commercial techniques to marketing open source software, and we are doing it across language and cultural barriers, so you can help just by spreading the word and telling a friend about this office suite."
+msgstr ""
+
+#: docs/readme/readme.xrm#joining3.joining3
+msgid  "You can help by joining the marktig mailig list ooo-marketing@incubator.apache.org or visit the Marketing Communications &amp; Information Network on <a href="http://marketing.openoffice.org">http://marketing.openoffice.org</a> where you can provide point communication contact with press, media, government agencies, consultants, schools, Linux Users Groups and developers in your country and local community."
+msgstr ""
+
+#: docs/readme/readme.xrm#credits.credits
+msgid  "We hope you enjoy working with the new ${PRODUCTNAME} ${PRODUCTVERSION} and will join us online."
+msgstr ""
+
+#: docs/readme/readme.xrm#credits2.credits2
+msgid  "The Apache OpenOffice Community"
+msgstr ""
+
+#: docs/readme/readme.xrm#sdffd23r3cefwefew.sdffd23r3cefwefew
 #, fuzzy
-msgid ""
-"News: ooo-announce@incubator.apache.org *recommended to all users* (light "
-"traffic)"
-msgstr ""
-"খবর: announce@openoffice.org *সকল ব্যবহারকারীর জন্য প্রযোজ্য* (হালকা "
-"ট্রাফিক) "
-
-#: readme.xrm#subscribelist2.subscribelist2.readmeitem.text
-#, fuzzy
-msgid ""
-"Main user forum: ooo-users@incubator.apache.org *easy way to lurk on "
-"discussions* (heavy traffic)"
-msgstr ""
-"প্রধান ব্যবহারকারী ফোরাম: user@openoffice.org *আলোচনাগুলো পড়ার সহজ উপায়* "
-"(অত্যন্ত ট্রাফিক) "
-
-#: readme.xrm#subscribelist3.subscribelist3.readmeitem.text
-#, fuzzy
-msgid ""
-"Marketing project: ooo-marketing@incubator.apache.org *beyond development* "
-"(getting heavy)"
-msgstr ""
-"মার্কেটিং প্রোজেক্ট: dev@marketing.openoffice.org *উন্নয়ন পরবর্তী* (ভারি "
-"হচ্ছে) "
-
-#: readme.xrm#subscribelist4.subscribelist4.readmeitem.text
-#, fuzzy
-msgid ""
-"General code contributor list: ooo-dev@incubator.apache.org (moderate/heavy)"
-msgstr "সাধারন কোড প্রদায়ক তালিকা: dev@openoffice.org (মডারেটর) "
-
-#: readme.xrm#.readmeitem.text
-msgid "Joining the Project"
-msgstr ""
-
-#: readme.xrm#joining.joining.readmeitem.text
-msgid ""
-"You can make major contributions to this important open source project even "
-"if you have limited software design or coding experience. Yes, you!"
-msgstr ""
-"যদি আপনার খুব কম সফটওয়্যার ডিজাইন বা কোডিং অভিজ্ঞতা থাকে তাহলেও আপনি এই "
-"জরুরী মুক্ত সোর্স প্রোজেক্টে বড় অবদান রাখতে পারেন। হ্যাঁ, আপনি!"
-
-#: readme.xrm#joining1.joining1.readmeitem.text
-#, fuzzy
-msgid ""
-"At <a href=\"http://incubator.apache.org/openofficeorg/get-"
-"involved.html\">http://incubator.apache.org/openofficeorg/get-"
-"involved.html</a> you will find a first overview where you can start with, "
-"ranging from Localization, QA, user support to some real core coding "
-"projects. If you are not a developer, try the Documentation or the Marketing "
-"Project. The OpenOffice.org Marketing Project is applying both guerilla and "
-"traditional commercial techniques to marketing open source software, and we "
-"are doing it across language and cultural barriers, so you can help just by "
-"spreading the word and telling a friend about this office suite."
-msgstr ""
-"আপনি কিছু প্রকৃত মূল কোডিং প্রকল্পে লোকালাইজেশন, পোর্টিং এবং গ্রুপওয়্যার এর "
-"প্রকল্প খুঁজে পাবেন। যদি আপনি একটি ডেভেলপার না হোন, ডকুমেনটেশন অথবা বিপণন "
-"প্রকল্প চেষ্টা করুন।"
-
-#: readme.xrm#joining3.joining3.readmeitem.text
-msgid ""
-"You can help by joining the marktig mailig list ooo-"
-"marketing@incubator.apache.org or visit the Marketing Communications &amp; "
-"Information Network on <a "
-"href=\"http://marketing.openoffice.org\">http://marketing.openoffice.org</a> "
-"where you can provide point communication contact with press, media, "
-"government agencies, consultants, schools, Linux Users Groups and developers "
-"in your country and local community."
-msgstr ""
-
-#: readme.xrm#credits.credits.readmeitem.text
-msgid ""
-"We hope you enjoy working with the new ${PRODUCTNAME} ${PRODUCTVERSION} and "
-"will join us online."
-msgstr ""
-"আশা করি আপনি নতুন ${PRODUCTNAME} ${PRODUCTVERSION} এর সাথে কাজ করে আনন্দ "
-"পাচ্ছেন এবং অনলাইনে আমাদের সাথে যুক্ত হবেন।"
-
-#: readme.xrm#credits2.credits2.readmeitem.text
-msgid "The OpenOffice.org Community"
-msgstr "OpenOffice.org কমিউনিটি"
-
-#: readme.xrm#sdffd23r3cefwefew.sdffd23r3cefwefew.readmeitem.text
-msgid "Used / Modified Source Code"
+msgid  "Used / Modified Source Code"
 msgstr "ব্যবহৃত / পরিবর্তিত সোর্স কোড"
-
-#~ msgid "Registration "
-#~ msgstr "নিবন্ধন"
-
-#, fuzzy
-#~ msgid ""
-#~ "Please take a little time to complete the minimal Product Registration "
-#~ "process when you install the software. While registration is optional, we "
-#~ "encourage you to register, since the information enables the community to "
-#~ "make an even better software suite and address user needs directly. Through "
-#~ "its Privacy Policy, the ${PRODUCTNAME} Community takes every precaution to "
-#~ "safeguard your personal data. If you missed the registration at "
-#~ "installation, you can return and register at any time at by choosing \"Help - "
-#~ "Registration\" from the main menu."
-#~ msgstr ""
-#~ "অনুগ্রহ করে সফটওয়্যার সংস্থাপন করার সময় প্রোডাক্ট নিবন্ধন পদ্ধতি শেষ করতে "
-#~ "একটি ছোট সময় দিন। নিবন্ধন করা ঐচ্ছিক, আমরা নিবন্ধন করতে আপনাকে উৎ‍সাহিত "
-#~ "করি, যেহেতু এই তথ্য থেকে একটি ভাল সফটওয়্যার স্যুট তৈরি করতে এবং "
-#~ "ব্যবহারকারীর প্রয়োজন মেটাতে কমিউনিটি সক্রিয় হয়। এর গোপনীয়তা নীতিমালার "
-#~ "মধ্য দিয়ে, ${PRODUCTNAME} কমিউনিটি আপনার ব্যক্তিগত ডেটা রক্ষা করার প্রতি "
-#~ "সচেষ্ট হয়। যদি আপনি সংস্থাপনে নিবন্ধন না করে থাকেন, প্রধান মেনু থেকে \"Help "
-#~ "> Registration\" নির্বাচন করে আপনি তা যেকোনো সময় করতে পারেন।"
-
-#, fuzzy
-#~ msgid "User Survey"
-#~ msgstr "ব্যবহারকারী পরিদর্শন"
-
-#~ msgid ""
-#~ "There is also a User Survey located online which we encourage you to fill "
-#~ "out. The User Survey results will help ${PRODUCTNAME} move more rapidly in "
-#~ "setting new standards for the creation of the next-generation office suite. "
-#~ "Through its Privacy Policy, the ${PRODUCTNAME} Community takes every "
-#~ "precaution to safeguard your personal data."
-#~ msgstr ""
-#~ "অনলাইনে আরেকটি ব্যবহারকারী পরিদর্শন আছে যেটি পূরণ করতে আমরা আপনাকে উৎ‍সাহিত "
-#~ "করি। ব্যবহারকারী পরিদর্শন ফলাফল next-generation অফিস স্যুটের সৃষ্টির জন্য "
-#~ "${productname} কে সাহায্য করবে। এর গোপনীয়তা নীতিমালার মধ্য দিয়ে, "
-#~ "${PRODUCTNAME} কমিউনিটি আপনার ব্যক্তিগত উপাত্ত রক্ষা করার প্রতি সচেষ্ট হয়।"
-
-#, fuzzy
-#~ msgid "Joining one or more Projects"
-#~ msgstr "এক বা একাধিক প্রকল্পে যুক্ত হোন"
-
-#~ msgid "Welcome"
-#~ msgstr "স্বাগতম"
-
-#~ msgid "For latest updates to this readme file, see "
-#~ msgstr "এই  আমাকে পড়ুন ফাইলের সর্বশেষ আপডেটের জন্য দেখুন"
-
-#~ msgid "http://www.openoffice.org/welcome/readme.html"
-#~ msgstr "http://www.openoffice.org/welcome/readme.html"
-
-#~ msgid "Dear User"
-#~ msgstr "প্রিয় ব্যবহারকারী"
-
-#~ msgid ""
-#~ "The OpenOffice.org Community, responsible for the development of this "
-#~ "product, would like to invite you to participate as a community member. As a "
-#~ "new user, you can check out the ${PRODUCTNAME} site with helpful user "
-#~ "information at "
-#~ msgstr ""
-#~ "OpenOffice.org কমিউনিটি, এই প্রোডাক্ট তৈরির জন্য দ্বায়ভারপ্রাপ্ত, আপনাকে "
-#~ "কমিউনিটির একজন সদস্য হওয়ার জন্য আমন্ত্রন জানাচ্ছে। একজন নতুন ব্যবহারকারী "
-#~ "হিসেবে আপনি  এখানে সহায়ক ব্যবহারকারী তথ্যসহ ${PRODUCTNAME} সাইট দেখতে পারেন"
-
-#~ msgid "http://www.openoffice.org/about_us/introduction.html "
-#~ msgstr "http://www.openoffice.org/about_us/introduction.html "
-
-#~ msgid "http://www.openoffice.org/license.html "
-#~ msgstr "http://www.openoffice.org/license.html "
-
-#~ msgid ""
-#~ "If you appreciate their efforts, and would like to ensure OpenOffice.org "
-#~ "continues into the future, please consider contributing to the project - see "
-#~ ""
-#~ msgstr ""
-#~ "আপনি যদি তাদের প্রচেষ্টাকে মূল্যায়ন করেন, এবং চান যে OpenOffice.org "
-#~ "ভবিষ্যতে উন্নতি করবে, তাহলে অনুগ্রহ করে প্রোজেক্টে সাহায্য করুন - দেখুন"
-
-#~ msgid "http://contributing.openoffice.org"
-#~ msgstr "http://contributing.openoffice.org"
-
-#~ msgid " for details. Everyone has a contribution to make."
-#~ msgstr "বিস্তারিত জানার জন্য। তৈরির ব্যাপারে সবার অবদান আছে।"
-
-#~ msgid "500 MB available hard disk space"
-#~ msgstr "হার্ড ডিস্কে ৫০০ মেগাবাইট খালি জায়গা"
-
-#~ msgid ""
-#~ "Chinese, Japanese and Korean versions: 600 MB (multi-language version:  800 "
-#~ "MB) available hard disk space)"
-#~ msgstr ""
-#~ "চায়নিজ, জাপানিজ এবং কোরিয়ান ভার্সন: হার্ড ডিস্কে ৬০০ মেগাবাইট (একাধিক ভাষা "
-#~ "ভার্সন: ৮০০ মেগাবাইট) খালি জায়গা"
-
-#~ msgid "370 MB available hard disk space"
-#~ msgstr "হার্ড ডিস্কে ৩৭০ মেগাবাইট খালি জায়গা"
-
-#~ msgid "Chinese, Japanese and Korean versions: 650 MB available hard disk space"
-#~ msgstr ""
-#~ "চায়নিজ, জাপানিজ এবং কোরিয়ান ভার্সন: হার্ড ডিস্কে ৬৫০ মেগাবাইট খালি জায়গা"
-
-#~ msgctxt "readme.xrm#ooo_readme.Installation.Sols2.s23seg.readmeitem.text"
-#~ msgid "480 MB available hard disk space"
-#~ msgstr "হার্ড ডিস্কে ৪৮০ মেগাবাইট খালি জায়গা"
-
-#~ msgctxt "readme.xrm#ooo_readme.Installation.Sols2.SolsHDCJK.readmeitem.text"
-#~ msgid "Chinese, Japanese and Korean versions: 480 MB available hard disk space"
-#~ msgstr ""
-#~ "চায়নিজ, জাপানিজ এবং কোরিয়ান ভার্সন: হার্ড ডিস্কে ৪৮০ মেগাবাইট খালি জায়গা"
-
-#~ msgctxt "readme.xrm#ooo_readme.Installation.Solia2.fgheg.readmeitem.text"
-#~ msgid "480 MB available hard disk space"
-#~ msgstr "হার্ড ডিস্কে ৪৮০ মেগাবাইট খালি জায়গা"
-
-#~ msgctxt "readme.xrm#ooo_readme.Installation.Solia2.SoliHDCJK.readmeitem.text"
-#~ msgid "Chinese, Japanese and Korean versions: 480 MB available hard disk space"
-#~ msgstr ""
-#~ "চায়নিজ, জাপানিজ এবং কোরিয়ান ভার্সন: হার্ড ডিস্কে ৪৮০ মেগাবাইট খালি জায়গা"
-
-#~ msgid "440 MB available hard disk space"
-#~ msgstr "হার্ড ডিস্কে ৪৪০ মেগাবাইট খালি জায়গা"
-
-#~ msgid "Chinese, Japanese and Korean versions: 440 MB available hard disk space"
-#~ msgstr ""
-#~ "চায়নিজ, জাপানিজ এবং কোরিয়ান ভার্সন: হার্ড ডিস্কে ৪৪০ মেগাবাইট খালি জায়গা"
-
-#~ msgid ""
-#~ "If you perform an administrative installation using setup /a, you need to "
-#~ "make sure that the file msvc90.dll is installed on the system. This file is "
-#~ "required for ${PRODUCTNAME} to start after an administrative installation. "
-#~ "You can get the file from "
-#~ msgstr ""
-#~ "আপনি যদি setup /a ব্যবহার করে প্রশাসনিক সংস্থাপন করেন, তাহলে আপনাকে খেয়াল "
-#~ "রাখতে হবে যেন msvc90.dll ফাইলটি সংস্থাপন করা হয়। এই ফাইলটি ${PRODUCTNAME} "
-#~ "চালু হওয়ার জন্য প্রয়োজন। আপনি এই ফাইলটি পেতে পারেন"
-
-#~ msgid ""
-#~ "http://www.microsoft.com/downloads/details.aspx?familyid=9B2DA534-3E03-4391"
-#~ "-8A4D-074B9F2BC1BF "
-#~ msgstr ""
-#~ "http://www.microsoft.com/downloads/details.aspx?familyid=9B2DA534-3E03-4391"
-#~ "-8A4D-074B9F2BC1BF "
-
-#~ msgid ""
-#~ "Please note that copy and paste via clipboard between ${PRODUCTNAME} 1.x and "
-#~ "${PRODUCTNAME} ${PRODUCTVERSION} might not work in OpenOffice.org format. "
-#~ "If that happens, choose 'Edit - Paste Special' and choose a format other "
-#~ "than ${PRODUCTNAME}, or open the document in ${PRODUCTNAME} "
-#~ "${PRODUCTVERSION} directly."
-#~ msgstr ""
-#~ "অনুগ্রহ করে খেয়াল রাখবেন যে ${PRODUCTNAME} ১.x এবং ${PRODUCTNAME} "
-#~ "${PRODUCTVERSION} এর মধ্যে ক্লীপবোর্ডের মাধ্যমে অনুলিপি এবং প্রতিলেপন করা "
-#~ "ওপেনঅফিস.অর্গ বিন্যাসে কাজ নাও করতে পারে। যদি সেটি ঘটে, 'Edit - Paste "
-#~ "Special' নির্বাচন করুন এবং ${PRODUCTNAME} এর ব্যতীত অন্য একটি বিন্যাস বেছে "
-#~ "নিন, অথবা নথিটি সরাসরি ${PRODUCTNAME} ${PRODUCTVERSION} এ খুলুন।"
-
-#~ msgid "[${PRODUCTNAME}]"
-#~ msgstr "[${PRODUCTNAME}]"
-
-#~ msgid "FC = \"SALFRAME\""
-#~ msgstr "FC = \"SALFRAME\""
-
-#~ msgid "SF = 0x10000000"
-#~ msgstr "SF = 0x10000000"
-
-#~ msgid "SF |= 0x00004000"
-#~ msgstr "SF |= 0x00004000"
-
-#~ msgid ""
-#~ "Due to a conflict with input method switching on multiple platforms, the "
-#~ "following shortcut keys required to be changed at last minute:"
-#~ msgstr ""
-#~ "একাধিক প্ল্যাটফর্মে ইনপুট পদ্ধতির দ্বন্দের কারনে শেষ পর্যায়ে এসে নিম্নের "
-#~ "শর্টকাট কী (key) গুলো পরির্তন করার প্রয়োজন দেখা দিয়েছে:"
-
-#~ msgid "Cmd-Space is now Cmd-Shift-Space"
-#~ msgstr "Cmd-স্পেস এখন Cmd-শিফট-স্পেস"
-
-#~ msgid "Cmd-Shift-Space is now Cmd-M"
-#~ msgstr "Cmd-শিফট-স্পেস এখন Cmd-M"
-
-#~ msgctxt "readme.xrm#ooo_readme.Keyboard.KeysChangedWNT.KeysChangedWNT2.readmeitem.text"
-#~ msgid "Ctrl-Space is now Ctrl-Shift-Space"
-#~ msgstr "Ctrl-স্পেস এখন Ctrl-শিফট-স্পেস"
-
-#~ msgctxt "readme.xrm#ooo_readme.Keyboard.KeysChangedWNT.KeysChangedWNT3.readmeitem.text"
-#~ msgid "Ctrl-Shift-Space is now Ctrl-M"
-#~ msgstr "Ctrl-শিফট-স্পেস এখন Ctrl-M"
-
-#~ msgctxt "readme.xrm#ooo_readme.Keyboard.KeysChangedLIN.KeysChangedLIN2.readmeitem.text"
-#~ msgid "Ctrl-Space is now Ctrl-Shift-Space"
-#~ msgstr "Ctrl-স্পেস এখন Ctrl-শিফট-স্পেস"
-
-#~ msgctxt "readme.xrm#ooo_readme.Keyboard.KeysChangedLIN.KeysChangedLIN.readmeitem.text"
-#~ msgid "Ctrl-Shift-Space is now Ctrl-M"
-#~ msgstr "Ctrl-শিফট-স্পেস এখন Ctrl-M"
-
-#~ msgctxt "readme.xrm#ooo_readme.Keyboard.KeysChangedSOL.KeysChangedSOL2.readmeitem.text"
-#~ msgid "Ctrl-Space is now Ctrl-Shift-Space"
-#~ msgstr "Ctrl-স্পেস এখন Ctrl-শিফট-স্পেস"
-
-#~ msgctxt "readme.xrm#ooo_readme.Keyboard.KeysChangedSOL.KeysChangedSOL3.readmeitem.text"
-#~ msgid "Ctrl-Shift-Space is now Ctrl-M"
-#~ msgstr "Ctrl-শিফট-স্পেস এখন Ctrl-M"
-
-#~ msgid ""
-#~ "In the default setting, file locking is turned on in ${PRODUCTNAME}. To "
-#~ "deactivate it, you have to set the appropriate environment variables "
-#~ "SAL_ENABLE_FILE_LOCKING=0 and export SAL_ENABLE_FILE_LOCKING. These entries "
-#~ "are already in enabled form in the soffice script file."
-#~ msgstr ""
-#~ "পূর্ব নির্ধারিত সেটিং এ, ${PRODUCTNAME} এ ফাইল লক চালু করা থাকে। এটি "
-#~ "নিষ্ক্রিয় করতে, আপনাকে উপযুক্ত এনভায়রনমেন্ট ভেরিয়েবল "
-#~ "SAL_ENABLE_FILE_LOCKING=0 সেট করতে হবে এবং SAL_ENABLE_FILE_LOCKING এক্সপোর্ট "
-#~ "করতে হবে। এই এন্ট্রিগুলো soffice স্ক্রিপ্ট ফাইলে ইতিমধ্যে সক্রিয় আকারে "
-#~ "আছে।"
-
-#~ msgid "For information on the accessibility features in ${PRODUCTNAME}, see "
-#~ msgstr "${PRODUCTNAME} এ প্রবেশ্যতা বৈশিষ্ট্যের উপর তথ্যের জন্য দেখুন"
-
-#~ msgid "http://www.openoffice.org/access/"
-#~ msgstr "http://www.openoffice.org/access/"
-
-#~ msgctxt "readme.xrm#ooo_readme.A11y.F2c.abdfs2c.readmeitem.text"
-#~ msgid "."
-#~ msgstr "."
-
-#~ msgid "The main support page "
-#~ msgstr "প্রধান সহায়তা পৃষ্ঠা"
-
-#~ msgid "http://support.openoffice.org/"
-#~ msgstr "http://support.openoffice.org/"
-
-#~ msgid ""
-#~ "offers various possibilities for help with ${PRODUCTNAME}. Your question may "
-#~ "have already been answered - check the Community Forum."
-#~ msgstr ""
-#~ "${PRODUCTNAME}এর সঙ্গে সাহায্যের জন্য বিভিন্ন সম্ভাবনা প্রস্তাব দেয়। আপনার "
-#~ "প্রশ্নের উত্তর ইতিমধ্যে দেয়া থাকতে পারে - কমিউনিটি ফোরাম দেখুন।"
-
-#~ msgid "http://user.services.openoffice.org"
-#~ msgstr "http://user.services.openoffice.org"
-
-#~ msgid " or search the archives of the 'users@openoffice.org' mailing list at "
-#~ msgstr "অথবা 'users@openoffice.org' মেইলিং লিস্টের আর্কাইভে খুঁজুন"
-
-#~ msgctxt "readme.xrm#ooo_readme.UserSupport.A2.f.readmeitem.text"
-#~ msgid "http://www.openoffice.org/mail_list.html"
-#~ msgstr "http://www.openoffice.org/mail_list.html"
-
-#~ msgid ". Alternatively, you can send in your questions to "
-#~ msgstr "। বিকল্প হিসেবে, আপনি আপনার প্রশ্ন পাঠাতে পারেন"
-
-#~ msgid "users@openoffice.org"
-#~ msgstr "users@openoffice.org"
-
-#~ msgid ""
-#~ ". How to subscribe to the list (to get an email response) is explained on "
-#~ "this page: "
-#~ msgstr ""
-#~ "। কিভাবে লিস্টে ঢুকবেন (ই-মেইলের সাড়া পেতে) তা এই পাতায় বর্ণনা করা আছে:"
-
-#~ msgid ""
-#~ "http://wiki.services.openoffice.org/wiki/Website/Content/help/mailinglists"
-#~ msgstr ""
-#~ "http://wiki.services.openoffice.org/wiki/Website/Content/help/mailinglists"
-
-#~ msgctxt "readme.xrm#ooo_readme.UserSupport.A2.k.readmeitem.text"
-#~ msgid "."
-#~ msgstr "."
-
-#~ msgid "Also check the FAQ section at "
-#~ msgstr "একই সাথে FAQ শাখাটিও দেখুন এখানে"
-
-#~ msgid "http://wiki.services.openoffice.org/wiki/Documentation/FAQ"
-#~ msgstr "http://wiki.services.openoffice.org/wiki/Documentation/FAQ"
-
-#~ msgctxt "readme.xrm#ooo_readme.UserSupport.A3.c.readmeitem.text"
-#~ msgid "."
-#~ msgstr "."
-
-#~ msgid "Report Bugs & Issues "
-#~ msgstr "সমস্যা এবং ইস্যু প্রতিবেদন করুন"
-
-#~ msgid "http://www.openoffice.org "
-#~ msgstr "http://www.openoffice.org "
-
-#~ msgid "http://development.openoffice.org/todo.html"
-#~ msgstr "http://development.openoffice.org/todo.html"
-
-#~ msgctxt "readme.xrm#ooo_readme.GettingInvolved.emptyparagraph.A5.c.readmeitem.text"
-#~ msgid "."
-#~ msgstr "."
-
-#~ msgid ""
-#~ "Here are a few of the Project mailing lists to which you can subscribe at "
-#~ msgstr ""
-#~ "এখানে কিছু প্রোজেক্ট মেইলিং লিস্ট আছে যেখানে আপনি সাবস্ক্রাইব করতে পারেন"
-
-#~ msgctxt "readme.xrm#ooo_readme.GettingInvolved.emptyparagraph.A7.b.readmeitem.text"
-#~ msgid "http://www.openoffice.org/mail_list.html"
-#~ msgstr "http://www.openoffice.org/mail_list.html"
-
-#~ msgid "At "
-#~ msgstr "এখানে"
-
-#~ msgid "http://projects.openoffice.org/index.html"
-#~ msgstr "http://projects.openoffice.org/index.html"
-
-#~ msgid ""
-#~ "You can help by joining the Marketing Communications & Information Network "
-#~ "here: "
-#~ msgstr ""
-#~ "আপনি মার্কেটিং কমিউনিকেশন এবং তথ্য নেটওয়ার্কে যুক্ত হয়ে সাহায্য করতে "
-#~ "পারেন:"
-
-#~ msgid "http://marketing.openoffice.org/contacts.html "
-#~ msgstr "http://marketing.openoffice.org/contacts.html "
-
-#~ msgid ""
-#~ " where you can provide point communication contact with press, media, "
-#~ "government agencies, consultants, schools, Linux Users Groups and developers "
-#~ "in your country and local community."
-#~ msgstr ""
-#~ "যেখানে আপনি আপনার দেশের প্রেস, মিডিয়া, সরকারী এজেন্সি, কনসালটেন্ট, স্কুল, "
-#~ "লিনাক্স ব্যবহারকারী গ্রুপ এবং ডেভেলপারদের সাথে পয়েন্ট কমিউনিকেশন যোগাযোগ "
-#~ "করতে পারেন।"
-
-#~ msgid ""
-#~ "Portions Copyright 1998, 1999 James Clark. Portions Copyright 1996, 1998 "
-#~ "Netscape Communications Corporation."
-#~ msgstr ""
-#~ "আংশিক কপিরাইট ১৯৯৮, ১৯৯৯ জেমস ক্লার্ক। আংশিক কপিরাইট ১৯৯৬, ১৯৯৮ নেটস্কেপ "
-#~ "কমিউনিকেশনস কর্পোরেশন।"

@@ -1,510 +1,521 @@
-"X-Accelerator-Marker: ~\n"
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
 
-#: cstitem.src#STR_COLUM_DT_AUTO.string.text
-msgid "automatic"
+
+#: source/items/cstitem.src#STR_COLUM_DT_AUTO.String.Text
+msgid  "automatic"
 msgstr "خودکار"
-"X-Accelerator-Marker: ~\n"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_OCTSTREAM.string.text
-msgid "Binary file"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_OCTSTREAM.String.Text
+msgid  "Binary file"
 msgstr "پرونده دودوئی"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_PDF.string.text
-msgid "PDF file"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_PDF.String.Text
+msgid  "PDF file"
 msgstr "پرونده PDF"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_RTF.string.text
-msgid "RTF File"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_RTF.String.Text
+msgid  "RTF File"
 msgstr "پرونده RTF"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_MSWORD.string.text
-msgid "MS-Word document"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_MSWORD.String.Text
+msgid  "MS-Word document"
 msgstr "پرونده ورد مایکروسافت"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_STARCALC.string.text
-msgid "%PRODUCTNAME Spreadsheet"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_STARCALC.String.Text
+msgid  "%PRODUCTNAME Spreadsheet"
 msgstr "کاربرگ %PRODUCTNAME"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_STARCHART.string.text
-msgid "%PRODUCTNAME Chart"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_STARCHART.String.Text
+msgid  "%PRODUCTNAME Chart"
 msgstr "نمودار %PRODUCTNAME"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_STARDRAW.string.text
-msgid "%PRODUCTNAME Drawing"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_STARDRAW.String.Text
+msgid  "%PRODUCTNAME Drawing"
 msgstr "طراحی %PRODUCTNAME"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_STARIMAGE.string.text
-msgid "%PRODUCTNAME Image"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_STARIMAGE.String.Text
+msgid  "%PRODUCTNAME Image"
 msgstr "تصویر %PRODUCTNAME"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_STARMATH.string.text
-msgid "%PRODUCTNAME Formula"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_STARMATH.String.Text
+msgid  "%PRODUCTNAME Formula"
 msgstr "فرمول %PRODUCTNAME"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_STARWRITER.string.text
-msgid "%PRODUCTNAME Text"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_STARWRITER.String.Text
+msgid  "%PRODUCTNAME Text"
 msgstr "متن %PRODUCTNAME"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_ZIP.string.text
-msgid "ZIP file"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_ZIP.String.Text
+msgid  "ZIP file"
 msgstr "پرونده ZIP"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_JAR.string.text
-msgid "JAR file"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_JAR.String.Text
+msgid  "JAR file"
 msgstr "پرونده JAR"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_AUDIO_AIFF.string.text
-msgctxt "mediatyp.src#STR_SVT_MIMETYPE_AUDIO_AIFF.string.text"
-msgid "Audio file"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_AUDIO_AIFF.String.Text
+msgid  "Audio file"
 msgstr "پرونده صوتی"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_AUDIO_BASIC.string.text
-msgctxt "mediatyp.src#STR_SVT_MIMETYPE_AUDIO_BASIC.string.text"
-msgid "Audio file"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_AUDIO_BASIC.String.Text
+msgid  "Audio file"
 msgstr "پرونده صوتی"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_AUDIO_MIDI.string.text
-msgctxt "mediatyp.src#STR_SVT_MIMETYPE_AUDIO_MIDI.string.text"
-msgid "Audio file"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_AUDIO_MIDI.String.Text
+msgid  "Audio file"
 msgstr "پرونده صوتی"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_AUDIO_WAV.string.text
-msgctxt "mediatyp.src#STR_SVT_MIMETYPE_AUDIO_WAV.string.text"
-msgid "Audio file"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_AUDIO_WAV.String.Text
+msgid  "Audio file"
 msgstr "پرونده صوتی"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_IMAGE_GIF.string.text
-msgctxt "mediatyp.src#STR_SVT_MIMETYPE_IMAGE_GIF.string.text"
-msgid "Graphics"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_IMAGE_GIF.String.Text
+msgid  "Graphics"
 msgstr "نگاره"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_IMAGE_JPEG.string.text
-msgctxt "mediatyp.src#STR_SVT_MIMETYPE_IMAGE_JPEG.string.text"
-msgid "Graphics"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_IMAGE_JPEG.String.Text
+msgid  "Graphics"
 msgstr "نگاره"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_IMAGE_PCX.string.text
-msgctxt "mediatyp.src#STR_SVT_MIMETYPE_IMAGE_PCX.string.text"
-msgid "Graphics"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_IMAGE_PCX.String.Text
+msgid  "Graphics"
 msgstr "نگاره"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_IMAGE_BMP.string.text
-msgid "Bitmap"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_IMAGE_BMP.String.Text
+msgid  "Bitmap"
 msgstr "نقشه بیتی"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_TEXT_HTML.string.text
-msgid "HTML document"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_TEXT_HTML.String.Text
+msgid  "HTML document"
 msgstr "سند HTML"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_TEXT_PLAIN.string.text
-msgid "Text file"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_TEXT_PLAIN.String.Text
+msgid  "Text file"
 msgstr "پرونده متنی"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_TEXT_URL.string.text
-msgid "Bookmark"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_TEXT_URL.String.Text
+msgid  "Bookmark"
 msgstr "چوب الف"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_TEXT_VCARD.string.text
-msgid "vCard file"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_TEXT_VCARD.String.Text
+msgid  "vCard file"
 msgstr "پرونده vCard"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_VIDEO_VDO.string.text
-msgctxt "mediatyp.src#STR_SVT_MIMETYPE_VIDEO_VDO.string.text"
-msgid "Video file"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_VIDEO_VDO.String.Text
+msgid  "Video file"
 msgstr "پرونده ویدئویی"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_VIDEO_MSVIDEO.string.text
-msgctxt "mediatyp.src#STR_SVT_MIMETYPE_VIDEO_MSVIDEO.string.text"
-msgid "Video file"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_VIDEO_MSVIDEO.String.Text
+msgid  "Video file"
 msgstr "پرونده ویدئویی"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_X_STARMAIL.string.text
-msgctxt "mediatyp.src#STR_SVT_MIMETYPE_X_STARMAIL.string.text"
-msgid "Message"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_X_STARMAIL.String.Text
+msgid  "Message"
 msgstr "پیام"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_X_VRML.string.text
-msgid "VRML file"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_X_VRML.String.Text
+msgid  "VRML file"
 msgstr "پرونده VRML"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_STARIMPRESS.string.text
-msgid "%PRODUCTNAME Presentation"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_STARIMPRESS.String.Text
+msgid  "%PRODUCTNAME Presentation"
 msgstr "ارائه %PRODUCTNAME"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_IMPRESSPACKED.string.text
-msgid "%PRODUCTNAME Presentation (packed)"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_IMPRESSPACKED.String.Text
+msgid  "%PRODUCTNAME Presentation (packed)"
 msgstr "ارائه %PRODUCTNAME (فشرده شده)"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_STARHELP.string.text
-msgid "%PRODUCTNAME Help"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_STARHELP.String.Text
+msgid  "%PRODUCTNAME Help"
 msgstr "راهنمای %PRODUCTNAME"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_MSG.string.text
-msgctxt "mediatyp.src#STR_SVT_MIMETYPE_CNT_MSG.string.text"
-msgid "Message"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_MSG.String.Text
+msgid  "Message"
 msgstr "پیام"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_DOCUMENT.string.text
-msgid "Document"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_DOCUMENT.String.Text
+msgid  "Document"
 msgstr "سند"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_POP3BOX.string.text
-msgid "POP3 Account"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_POP3BOX.String.Text
+msgid  "POP3 Account"
 msgstr "حساب POP3"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_IMAPBOX.string.text
-msgid "IMAP Account"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_IMAPBOX.String.Text
+msgid  "IMAP Account"
 msgstr "حساب IMAP"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_IMAPFLD.string.text
-msgctxt "mediatyp.src#STR_SVT_MIMETYPE_CNT_IMAPFLD.string.text"
-msgid "Folder"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_IMAPFLD.String.Text
+msgid  "Folder"
 msgstr "پوشه"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_VIMBOX.string.text
-msgid "VIM Account"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_VIMBOX.String.Text
+msgid  "VIM Account"
 msgstr "حساب VIM"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_VIMINBOX.string.text
-msgid "Inbox"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_VIMINBOX.String.Text
+msgid  "Inbox"
 msgstr "صندوق پستی"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_BBBOX.string.text
-msgid "Newsgroups"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_BBBOX.String.Text
+msgid  "Newsgroups"
 msgstr "گروه خبری"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_VIM_BB.string.text
-msgid "Newsgroup"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_VIM_BB.String.Text
+msgid  "Newsgroup"
 msgstr "گروه خبری"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_NEWSBOX.string.text
-msgid "News"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_NEWSBOX.String.Text
+msgid  "News"
 msgstr "خبرها"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_NEWSGRP.string.text
-msgid "Group"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_NEWSGRP.String.Text
+msgid  "Group"
 msgstr "گروه"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_OUTBOX.string.text
-msgid "Outbox"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_OUTBOX.String.Text
+msgid  "Outbox"
 msgstr "صندوق ارسال"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_FTPBOX.string.text
-msgid "FTP Account"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_FTPBOX.String.Text
+msgid  "FTP Account"
 msgstr "حساب FTP"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_FTPFLD.string.text
-msgid "FTP Folder"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_FTPFLD.String.Text
+msgid  "FTP Folder"
 msgstr "پوشه FTP"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_FTPFILE.string.text
-msgid "FTP File"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_FTPFILE.String.Text
+msgid  "FTP File"
 msgstr "پرونده FTP"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_FTPLINK.string.text
-msgid "FTP Link"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_FTPLINK.String.Text
+msgid  "FTP Link"
 msgstr "پیوند FTP"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_HTTPBOX.string.text
-msgid "HTTP"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_HTTPBOX.String.Text
+msgid  "HTTP"
 msgstr "HTTP"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_FSYSBOX.string.text
-msgid "Workplace"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_FSYSBOX.String.Text
+msgid  "Workplace"
 msgstr "محل کار"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_FSYSFLD.string.text
-msgctxt "mediatyp.src#STR_SVT_MIMETYPE_CNT_FSYSFLD.string.text"
-msgid "Folder"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_FSYSFLD.String.Text
+msgid  "Folder"
 msgstr "پوشه"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_FSYSFILE.string.text
-msgid "File"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_FSYSFILE.String.Text
+msgid  "File"
 msgstr "پرونده"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_FSYSURLFILE.string.text
-msgid "Link"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_FSYSURLFILE.String.Text
+msgid  "Link"
 msgstr "پیوند"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_PUBLBOX.string.text
-msgid "Project"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_PUBLBOX.String.Text
+msgid  "Project"
 msgstr "طرح"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_SRCHBOX.string.text
-msgid "Find"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_SRCHBOX.String.Text
+msgid  "Find"
 msgstr "جستجو"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_SUBSCRBOX.string.text
-msgid "Subscriptions"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_SUBSCRBOX.String.Text
+msgid  "Subscriptions"
 msgstr "اشتراک‌ها"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_BOOKMARK.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_BOOKMARK.String.Text
 #, fuzzy
-msgid "Bookmark subscription"
+msgid  "Bookmark subscription"
 msgstr "اشتراک‌ نشانک"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_CDF.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_CDF.String.Text
 #, fuzzy
-msgctxt "mediatyp.src#STR_SVT_MIMETYPE_CNT_CDF.string.text"
-msgid "Channel subscription"
+msgid  "Channel subscription"
 msgstr "اشتراک‌ کانال"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_CDFSUB.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_CDFSUB.String.Text
 #, fuzzy
-msgctxt "mediatyp.src#STR_SVT_MIMETYPE_CNT_CDFSUB.string.text"
-msgid "Channel subscription"
+msgid  "Channel subscription"
 msgstr "اشتراک‌ کانال"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_CDFITEM.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_CDFITEM.String.Text
 #, fuzzy
-msgctxt "mediatyp.src#STR_SVT_MIMETYPE_CNT_CDFITEM.string.text"
-msgid "Channel subscription"
+msgid  "Channel subscription"
 msgstr "اشتراک کانال"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_STARCHANNEL.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_STARCHANNEL.String.Text
 #, fuzzy
-msgid "StarChannel"
+msgid  "StarChannel"
 msgstr "کانال ستاره"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_TRASHBOX.string.text
-msgid "Recycle Bin"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_TRASHBOX.String.Text
+#, fuzzy
+msgid  "Recycle Bin"
 msgstr "سطل بازیافت"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_TRASH.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_TRASH.String.Text
 #, fuzzy
-msgid "Deleted Object"
+msgid  "Deleted Object"
 msgstr "حذف شیء"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_REMOV_VOL.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_REMOV_VOL.String.Text
 #, fuzzy
-msgctxt "mediatyp.src#STR_SVT_MIMETYPE_CNT_REMOV_VOL.string.text"
-msgid "Local drive"
+msgid  "Local drive"
 msgstr "درایو محلی"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_FIX_VOL.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_FIX_VOL.String.Text
 #, fuzzy
-msgctxt "mediatyp.src#STR_SVT_MIMETYPE_CNT_FIX_VOL.string.text"
-msgid "Local drive"
+msgid  "Local drive"
 msgstr "درایو محلی"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_REM_VOL.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_REM_VOL.String.Text
 #, fuzzy
-msgid "Network connection"
+msgid  "Network connection"
 msgstr "اتصال شبکه"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_RAM_VOL.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_RAM_VOL.String.Text
 #, fuzzy
-msgid "RAM Disk"
+msgid  "RAM Disk"
 msgstr "دیسک RAM"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_CDROM.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_CDROM.String.Text
 #, fuzzy
-msgid "CD-ROM drive"
+msgid  "CD-ROM drive"
 msgstr "دیسک CD-ROM"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_DISK_35.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_DISK_35.String.Text
 #, fuzzy
-msgid "3.5'' Disk"
+msgid  "3.5'' Disk"
 msgstr "دیسک 3.5''"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_DISK_525.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_DISK_525.String.Text
 #, fuzzy
-msgid "5.25'' Disk"
+msgid  "5.25'' Disk"
 msgstr "دیسک 5.25''"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_TAPEDRIVE.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_TAPEDRIVE.String.Text
 #, fuzzy
-msgid "Tape drive"
+msgid  "Tape drive"
 msgstr "درایو نوار"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_GAL.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_GAL.String.Text
 #, fuzzy
-msgid "Gallery"
+msgid  "Gallery"
 msgstr "گالری"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_GAL_THEME.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_GAL_THEME.String.Text
 #, fuzzy
-msgid "Gallery theme"
+msgid  "Gallery theme"
 msgstr "مضمون گالری"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_STARW_GLOB.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_STARW_GLOB.String.Text
 #, fuzzy
-msgid "%PRODUCTNAME Master Document"
+msgid  "%PRODUCTNAME Master Document"
 msgstr "سند اصلی %PRODUCTNAME "
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_SDM.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_SDM.String.Text
 #, fuzzy
-msgctxt "mediatyp.src#STR_SVT_MIMETYPE_APP_SDM.string.text"
-msgid "Message"
+msgid  "Message"
 msgstr "پیام"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_SMD.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_SMD.String.Text
 #, fuzzy
-msgctxt "mediatyp.src#STR_SVT_MIMETYPE_APP_SMD.string.text"
-msgid "Message"
+msgid  "Message"
 msgstr "پیام"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_STARW_WEB.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_STARW_WEB.String.Text
 #, fuzzy
-msgid "%PRODUCTNAME Writer/Web"
+msgid  "%PRODUCTNAME Writer/Web"
 msgstr "تارنما/نویسنده %PRODUCTNAME"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_SCHEDULE.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_SCHEDULE.String.Text
 #, fuzzy
-msgid "Tasks & Events"
+msgid  "Tasks & Events"
 msgstr "رخدادها و وظایف"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_SCHEDULE_EVT.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_SCHEDULE_EVT.String.Text
 #, fuzzy
-msgid "%PRODUCTNAME Events View"
+msgid  "%PRODUCTNAME Events View"
 msgstr "متن %PRODUCTNAME"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_SCHEDULE_TASK.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_SCHEDULE_TASK.String.Text
 #, fuzzy
-msgid "%PRODUCTNAME Task View"
+msgid  "%PRODUCTNAME Task View"
 msgstr "متن %PRODUCTNAME"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_SCHEDULE_FEVT.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_SCHEDULE_FEVT.String.Text
 #, fuzzy
-msgid "%PRODUCTNAME Event"
+msgid  "%PRODUCTNAME Event"
 msgstr "متن %PRODUCTNAME"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_SCHEDULE_FTASK.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_SCHEDULE_FTASK.String.Text
 #, fuzzy
-msgid "%PRODUCTNAME Task"
+msgid  "%PRODUCTNAME Task"
 msgstr "متن %PRODUCTNAME"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_FRAMESET.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_FRAMESET.String.Text
 #, fuzzy
-msgid "Frameset Document"
+msgid  "Frameset Document"
 msgstr "سند قابی"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_MACRO.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_MACRO.String.Text
 #, fuzzy
-msgid "Macro file"
+msgid  "Macro file"
 msgstr "پرونده ماکرو"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_SFSYSFOLDER.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_SFSYSFOLDER.String.Text
 #, fuzzy
-msgid "System folder"
+msgid  "System folder"
 msgstr "پوشه سامانه"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_CNT_SFSYSFILE.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_SFSYSFILE.String.Text
 #, fuzzy
-msgid "System object"
+msgid  "System object"
 msgstr "شیء سامانه"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_TEMPLATE.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_TEMPLATE.String.Text
 #, fuzzy
-msgid "%PRODUCTNAME Template"
+msgid  "%PRODUCTNAME Template"
 msgstr "متن %PRODUCTNAME"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_IMAGE_GENERIC.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_IMAGE_GENERIC.String.Text
 #, fuzzy
-msgctxt "mediatyp.src#STR_SVT_MIMETYPE_IMAGE_GENERIC.string.text"
-msgid "Graphics"
+msgid  "Graphics"
 msgstr "نگاره"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_MSEXCEL.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_MSEXCEL.String.Text
 #, fuzzy
-msgid "MS Excel document"
+msgid  "MS Excel document"
 msgstr "سند اِکسل مایکروسافت"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_MSEXCEL_TEMPL.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_MSEXCEL_TEMPL.String.Text
 #, fuzzy
-msgid "MS Excel Template"
+msgid  "MS Excel Template"
 msgstr "الگو  اِکسل مایکروسافت"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_MSPPOINT.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_MSPPOINT.String.Text
 #, fuzzy
-msgid "MS PowerPoint document"
+msgid  "MS PowerPoint document"
 msgstr "سند پاورپوینت مایکروسافت"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_TEXT_VCALENDAR.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_TEXT_VCALENDAR.String.Text
 #, fuzzy
-msgid "vCalendar-file"
+msgid  "vCalendar-file"
 msgstr "پرونده-vCalendar"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_TEXT_ICALENDAR.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_TEXT_ICALENDAR.String.Text
 #, fuzzy
-msgid "iCalendar-File"
+msgid  "iCalendar-File"
 msgstr "پرونده-iCalendar"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_TEXT_XMLICALENDAR.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_TEXT_XMLICALENDAR.String.Text
 #, fuzzy
-msgid "XML-iCalendar-File"
+msgid  "XML-iCalendar-File"
 msgstr "پرونده-XML-iCalendar"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_TEXT_CDE_CALENDAR_APP.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_TEXT_CDE_CALENDAR_APP.String.Text
 #, fuzzy
-msgid "CDE-Calendar-File"
+msgid  "CDE-Calendar-File"
 msgstr "پرونده-تقویم-CDE"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_INET_MSG_RFC822.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_INET_MSG_RFC822.String.Text
 #, fuzzy
-msgid "message/rfc822"
+msgid  "message/rfc822"
 msgstr "پیغام/rfc822"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_INET_MULTI_ALTERNATIVE.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_INET_MULTI_ALTERNATIVE.String.Text
 #, fuzzy
-msgid "multipart/alternative"
+msgid  "multipart/alternative"
 msgstr "چند‌بخشی / جایگزین"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_INET_MULTI_DIGEST.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_INET_MULTI_DIGEST.String.Text
 #, fuzzy
-msgid "multipart/digest"
+msgid  "multipart/digest"
 msgstr "چند‌بخشی / خلاصه"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_INET_MULTI_PARALLEL.string.text
-msgid "multipart/parallel"
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_INET_MULTI_PARALLEL.String.Text
+#, fuzzy
+msgid  "multipart/parallel"
 msgstr "چندبخشی/موازی"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_INET_MULTI_RELATED.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_INET_MULTI_RELATED.String.Text
 #, fuzzy
-msgid "multipart/related"
+msgid  "multipart/related"
 msgstr "چندبخشی/مرتبط"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_INET_MULTI_MIXED.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_INET_MULTI_MIXED.String.Text
 #, fuzzy
-msgid "multipart/mixed"
+msgid  "multipart/mixed"
 msgstr "چندبخشی/مخلوط"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_SXCALC.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_SXCALC.String.Text
 #, fuzzy
-msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet"
+msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet"
 msgstr "صفحه گسترده %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_SXCHART.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_SXCHART.String.Text
 #, fuzzy
-msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Chart"
+msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Chart"
 msgstr "نمودار %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_SXDRAW.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_SXDRAW.String.Text
 #, fuzzy
-msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Drawing"
+msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Drawing"
 msgstr "ترسیم %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_SXMATH.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_SXMATH.String.Text
 #, fuzzy
-msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Formula"
+msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Formula"
 msgstr "قاعده %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_SXWRITER.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_SXWRITER.String.Text
 #, fuzzy
-msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Text Document"
+msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Text Document"
 msgstr "سند متن %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_SXIMPRESS.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_SXIMPRESS.String.Text
 #, fuzzy
-msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Presentation"
+msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Presentation"
 msgstr "ارائه %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_SXGLOBAL.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_SXGLOBAL.String.Text
 #, fuzzy
-msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Master Document"
+msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Master Document"
 msgstr "سند اصلی %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION"
 
-#: mediatyp.src#STR_SVT_MIMETYPE_APP_SXIPACKED.string.text
+#: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_SXIPACKED.String.Text
 #, fuzzy
-msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Presentation (packed)"
+msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Presentation (packed)"
 msgstr "ارائه %PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION (بسته بندی شده)"

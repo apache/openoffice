@@ -1,279 +1,237 @@
-"X-Accelerator-Marker: ~\n"
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
 
-#: crashrep.ulf#_WELCOME_CAPTION_.LngText.text
-msgctxt "crashrep.ulf#_WELCOME_CAPTION_.LngText.text"
-msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
-msgstr "%PRODUCTNAME% %PRODUCTVERSION% ত্রুটি রিপোর্ট"
 
-#: crashrep.ulf#_WELCOME_HEADER_.LngText.text
-msgid "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
-msgstr "%PRODUCTNAME% %PRODUCTVERSION% ত্রুটি রিপোর্টে স্বাগতম"
-
-#: crashrep.ulf#_WELCOME_BODY1_.LngText.text
+#: source/all/crashrep.ulf#%WELCOME_CAPTION%
 #, fuzzy
-msgid ""
-"This error report tool gathers information about how %PRODUCTNAME% is "
-"working and sends it to Oracle to help improve future versions.\n"
-"\n"
-msgstr ""
-"এই ভুল বিবরনী টুল কিভাবে %PRODUCTNAME% কাজ করছে সে সম্পর্কে তথ্য সংগ্রহ করে "
-"এবং পরবর্তী সংস্করণ উন্নয়নের জন্য সান মাইক্রোসিস্টেমস-এ এটা পাঠায়।\n"
-"\n"
-
-#: crashrep.ulf#_WELCOME_BODY2_.LngText.text
-msgid ""
-"It's easy - just send the report without any further effort on your part by "
-"clicking 'Send' in the next dialog, or you can briefly describe how the "
-"error occurred and then click 'Send'. If you want to see the report, click "
-"the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n"
-"\n"
-msgstr ""
-"'পাঠাও' বাটনে ক্লিক করে শুধু ত্রুটি রিপোর্টটি পাঠিয়ে দিন, অথবা কিভাবে "
-"ত্রুটিটি হলো তা সংক্ষেপে লিখে 'পাঠাও' বাটনে ক্লিক করুন। যদি রিপোর্টিটি দেখতে "
-"চান, শুধু 'রিপোর্ট দেখাও' বাটনে ক্লিক করুন। কোন ডাটা পাঠাতে না চাইলে 'পাঠিও "
-"না' বাটনে ক্লিক করুন।\n"
-"\n"
-
-#: crashrep.ulf#_WELCOME_BODY3_.LngText.text
-#, fuzzy
-msgid ""
-"Customer Privacy\n"
-"The information gathered is limited to data concerning the state of %"
-"PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information "
-"about passwords or document contents is not collected.\n"
-"\n"
-"The information will only be used to improve the quality of %PRODUCTNAME% "
-"and will not be shared with third parties.\n"
-"For more information on Oracle's privacy policy, visit\n"
-msgstr ""
-"গ্রাহকের গোপনীয়তা\n"
-"যে তথ্যগুলো একত্র করা হয়েছে সেগুলো শুধু সমস্যা হওয়ার সময় %PRODUCTNAME% %"
-"PRODUCTVERSION% এর অবস্থা সম্পর্কে নির্দেশ করে। পাসওয়ার্ড বা ডকুমেন্টের "
-"কনটেন্ট সম্পর্কিত অন্যান্য তথ্য নেয়া হবে না।\n"
-"\n"
-"\n"
-"তথ্যগুলি শুধুমাত্র %PRODUCTNAME% এর মান উন্নয়ন এর জন্য ব্যবহার করা হবে এবং "
-"তৃতীয় পক্ষকে জানতে দেয়া হবে না।\n"
-"সান মাইক্রোসিস্টেমের গোপনীয়তার নীতিমালা সম্পর্কে আরো তথ্যের জন্য দেখুন\n"
-
-#: crashrep.ulf#_PRIVACY_URL_.LngText.text
-msgid "http://www.oracle.com/html/services-privacy-policy.html"
-msgstr ""
-
-#: crashrep.ulf#_NEXT_BUTTON_.LngText.text
-msgid "~Next >>"
-msgstr "পরবর্তী >> (~N)"
-
-#: crashrep.ulf#_CANCEL_BUTTON_.LngText.text
-msgid "Cancel"
-msgstr "বাতিল"
-
-#: crashrep.ulf#_OK_BUTTON_.LngText.text
-msgid "OK"
-msgstr "ঠিক আছে"
-
-#: crashrep.ulf#_REPORT_CAPTION_.LngText.text
-msgctxt "crashrep.ulf#_REPORT_CAPTION_.LngText.text"
-msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgid  "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
 msgstr "ত্রুটি রিপোর্ট %PRODUCTNAME% %PRODUCTVERSION% "
 
-#: crashrep.ulf#_REPORT_HEADER_.LngText.text
-msgid "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
+#: source/all/crashrep.ulf#%WELCOME_HEADER%
+#, fuzzy
+msgid  "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "%PRODUCTNAME% %PRODUCTVERSION% ত্রুটি রিপোর্টে স্বাগতম"
+
+#: source/all/crashrep.ulf#%WELCOME_BODY1%
+msgid  "This error report tool gathers information about how %PRODUCTNAME% is working and sends it to Apache OpenOffice to help improve future versions.\n\n"
+msgstr ""
+
+#: source/all/crashrep.ulf#%WELCOME_BODY2%
+msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
+msgstr ""
+
+#: source/all/crashrep.ulf#%WELCOME_BODY3%
+msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
+msgstr ""
+
+#: source/all/crashrep.ulf#%PRIVACY_URL%
+msgid  "http://www.openoffice.org/privacy.html"
+msgstr ""
+
+#: source/all/crashrep.ulf#%NEXT_BUTTON%
+#, fuzzy
+msgid  "~Next >>"
+msgstr "পরবর্তী >> (~N)"
+
+#: source/all/crashrep.ulf#%CANCEL_BUTTON%
+#, fuzzy
+msgid  "Cancel"
+msgstr "বাতিল"
+
+#: source/all/crashrep.ulf#%OK_BUTTON%
+#, fuzzy
+msgid  "OK"
+msgstr "ঠিক আছে"
+
+#: source/all/crashrep.ulf#%REPORT_CAPTION%
+#, fuzzy
+msgid  "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "ত্রুটি রিপোর্ট %PRODUCTNAME% %PRODUCTVERSION% "
+
+#: source/all/crashrep.ulf#%REPORT_HEADER%
+#, fuzzy
+msgid  "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
 msgstr "%PRODUCTNAME% %PRODUCTVERSION% চলার সময় একটি ত্রুটি দেখা দিয়েছে"
 
-#: crashrep.ulf#_REPORT_BODY_.LngText.text
+#: source/all/crashrep.ulf#%REPORT_BODY%
+msgid  "The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information that could help Apache OpenOffice improve %PRODUCTNAME%.\nIn the spaces below, you can enter a title for your crash report and describe the action you were trying to carry out when the error occurred. Then click 'Send'.\n"
+msgstr ""
+
+#: source/all/crashrep.ulf#%ENTER_TITLE%
+msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
+msgstr ""
+
+#: source/all/crashrep.ulf#%ALLOW_CONTACT%
+msgid  "~I allow Apache OpenOffice to contact me regarding this report."
+msgstr ""
+
+#: source/all/crashrep.ulf#%ENTER_EMAIL%
 #, fuzzy
-msgid ""
-"The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information "
-"that could help Oracle improve %PRODUCTNAME%.\n"
-"In the spaces below, you can enter a title for your crash report and "
-"describe the action you were trying to carry out when the error occurred. "
-"Then click 'Send'.\n"
-msgstr ""
-"%PRODUCTNAME% %PRODUCTVERSION% এই ত্রুটি রিপোর্টটি তথ্য সংগ্রহ করে, যা সান "
-"মাইক্রোসিস্টেম'কে %PRODUCTNAME%-এর মান উন্নয়নে সাহায্য করে। \n"
-" নিচের খালি অংশে ক্রাশ রিপোর্টিটির নাম লিখুন এবং ঘটার পর আপনি কি পদক্ষেপ "
-"নিয়েছেন তা লিখে 'পাঠাও' বাটনে ক্লিক করুন। \n"
-
-#: crashrep.ulf#_ENTER_TITLE_.LngText.text
-msgid ""
-"Which type of document (e.g. presentation) were you using when the error "
-"occurred?"
-msgstr ""
-"যখন ত্রুটিটি ঘটেছিল তখন আপনি কোন ধরনের ডকুমেন্টে (যেমন প্রেজেন্টেশান)কাজ "
-"করছিলেন?"
-
-#: crashrep.ulf#_ALLOW_CONTACT_.LngText.text
-#, fuzzy
-msgid "~I allow Oracle to contact me regarding this report."
-msgstr ""
-"এ রিপোর্টের ব্যাপারে সান মাইক্রোসিস্টেম আমার (~I) সাথে যোগাযোগ করতে পারে। "
-
-#: crashrep.ulf#_ENTER_EMAIL_.LngText.text
-msgid "Please enter your e-mail address."
+msgid  "Please enter your e-mail address."
 msgstr "আপনার ইমেইল  ঠিকানাটি লিখুন।"
 
-#: crashrep.ulf#_ENTER_DESCRIPTION_.LngText.text
-msgid "~How were you using %PRODUCTNAME% when the error occurred ?"
+#: source/all/crashrep.ulf#%ENTER_DESCRIPTION%
+#, fuzzy
+msgid  "~How were you using %PRODUCTNAME% when the error occurred ?"
 msgstr "ত্রুটিটি যখন হয়েছিল, আপনি কিভাবে %PRODUCTNAME%-তে কাজ করেছেন?"
 
-#: crashrep.ulf#_BACK_BUTTON_.LngText.text
-msgid " << ~Back"
+#: source/all/crashrep.ulf#%BACK_BUTTON%
+#, fuzzy
+msgid  " << ~Back"
 msgstr "<< পূর্ববর্তী (~B)"
 
-#: crashrep.ulf#_SEND_BUTTON_.LngText.text
-msgid "S~end"
+#: source/all/crashrep.ulf#%SEND_BUTTON%
+#, fuzzy
+msgid  "S~end"
 msgstr "পাঠাও (~e)"
 
-#: crashrep.ulf#_DONOT_SEND_BUTTON_.LngText.text
-msgid "Do ~Not Send"
+#: source/all/crashrep.ulf#%DONOT_SEND_BUTTON%
+#, fuzzy
+msgid  "Do ~Not Send"
 msgstr "পাঠিও না (~N)"
 
-#: crashrep.ulf#_SHOW_REPORT_BUTTON_.LngText.text
-msgid "Show ~Report..."
+#: source/all/crashrep.ulf#%SHOW_REPORT_BUTTON%
+#, fuzzy
+msgid  "Show ~Report..."
 msgstr "রিপোর্ট দেখাও (~R)"
 
-#: crashrep.ulf#_SAVE_REPORT_BUTTON_.LngText.text
-msgid "~Save Report..."
+#: source/all/crashrep.ulf#%SAVE_REPORT_BUTTON%
+#, fuzzy
+msgid  "~Save Report..."
 msgstr "রিপোর্ট সংরক্ষন করুন... (~S)"
 
-#: crashrep.ulf#_SAVE_REPORT_TITLE_.LngText.text
-msgid "Save Report to"
+#: source/all/crashrep.ulf#%SAVE_REPORT_TITLE%
+#, fuzzy
+msgid  "Save Report to"
 msgstr " রিপোর্ট সংরক্ষন করুন"
 
-#: crashrep.ulf#_ERROR_MSG_SIMPLE_MAPI_.LngText.text
-msgid ""
-"The error report could not be sent because the default e-mail program does "
-"not support MAPI.\n"
-" Please use a MAPI-compatible e-mail program."
+#: source/all/crashrep.ulf#%ERROR_MSG_SIMPLE_MAPI%
+msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
 msgstr ""
-"সমস্যা রিপোর্টটি পাঠানো গেলো না কারন ডিফল্ট ই-মেইল প্রোগ্রামটি MAPI সমর্থন "
-"করে না। অনুগ্রহ করে MAPI-সঙ্গতিপূর্ণ একটি ই-মেইল প্রোগ্রাম ব্যবহার করুন।"
 
-#: crashrep.ulf#_ERROR_MSG_DISK_FULL_.LngText.text
-msgid ""
-"The error report could not be temporarily saved and could therefore not be "
-"sent."
-msgstr "ত্রুটি রিপোর্টটি সাময়িক ভাবে সংরক্ষন সম্ভব নয়, তাই পাঠানো যাচ্ছে না। "
-
-#: crashrep.ulf#_ERROR_MSG_SENDMAIL_.LngText.text
-msgid ""
-"The error report could not be sent because 'sendmail' could not be started.\n"
-"Please check the 'sendmail' settings."
+#: source/all/crashrep.ulf#%ERROR_MSG_DISK_FULL%
+msgid  "The error report could not be temporarily saved and could therefore not be sent."
 msgstr ""
-"ত্রুটি রিপোর্টটি পাঠানো সম্ভব নয় কারণ 'সেন্ডমেইল' সার্ভিসটি চালু নেই। \n"
-" দয়াকরে 'সেন্ডমেইল' সেটিংস দেখুন। "
 
-#: crashrep.ulf#_ERROR_MSG_PROXY_.LngText.text
-msgid ""
-"The error report could not be sent. Please check the proxy settings under "
-"'Options' in the Error Report Tool."
+#: source/all/crashrep.ulf#%ERROR_MSG_SENDMAIL%
+msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
 msgstr ""
-"ত্রুটি রিপোর্টটি পাঠানো সম্ভব নয়। দয়াকরে ত্রুটি রিপোর্ট টুলের অপশন থেকে "
-"প্রক্সি সেটিংসটি চেক করুন। "
 
-#: crashrep.ulf#_ERROR_MSG_NOCONNECT_.LngText.text
-msgid ""
-"The error report could not be sent because there is no Internet connection. "
-"Please check your Internet settings."
+#: source/all/crashrep.ulf#%ERROR_MSG_PROXY%
+msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
 msgstr ""
-"সম্ভবত ইন্টারনেট সংযোগ নেই, তাই ত্রুটি রিপোর্টটি পাঠানো সম্ভব নয়। দয়াকরে "
-"ইন্টারনেট সেটিংস চেক করুন। "
 
-#: crashrep.ulf#_OPTIONS_BUTTON_.LngText.text
-msgid "~Options..."
+#: source/all/crashrep.ulf#%ERROR_MSG_NOCONNECT%
+msgid  "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
+msgstr ""
+
+#: source/all/crashrep.ulf#%OPTIONS_BUTTON%
+#, fuzzy
+msgid  "~Options..."
 msgstr "অপশন... (~O)"
 
-#: crashrep.ulf#_OPTIONS_TITLE_.LngText.text
-msgid "Options"
+#: source/all/crashrep.ulf#%OPTIONS_TITLE%
+#, fuzzy
+msgid  "Options"
 msgstr "অপশন"
 
-#: crashrep.ulf#_PROXY_SETTINGS_HEADER_.LngText.text
-msgid "Proxy settings"
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_HEADER%
+#, fuzzy
+msgid  "Proxy settings"
 msgstr "প্রক্সি সেটিংস"
 
-#: crashrep.ulf#_PROXY_SETTINGS_SYSTEM_.LngText.text
-msgid "Use ~system settings"
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_SYSTEM%
+#, fuzzy
+msgid  "Use ~system settings"
 msgstr "সিস্টেম সেটিংস (~s) ব্যাবহার করুন"
 
-#: crashrep.ulf#_PROXY_SETTINGS_DIRECT_.LngText.text
-msgid "Use ~direct connection to the Internet"
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_DIRECT%
+#, fuzzy
+msgid  "Use ~direct connection to the Internet"
 msgstr "সরাসরি (~d) ইন্টারনেট সংযোগ ব্যাবহার"
 
-#: crashrep.ulf#_PROXY_SETTINGS_MANUAL_.LngText.text
-msgid "Use ~manual settings"
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_MANUAL%
+#, fuzzy
+msgid  "Use ~manual settings"
 msgstr "ম্যানুয়াল (~m) সেটিংস ব্যবহার করুন"
 
-#: crashrep.ulf#_PROXY_SETTINGS_ADDRESS_.LngText.text
-msgid "HT~TP Proxy"
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_ADDRESS%
+#, fuzzy
+msgid  "HT~TP Proxy"
 msgstr "HTTP(~T) প্রক্সি"
 
-#: crashrep.ulf#_PROXY_SETTINGS_PORT_.LngText.text
-msgid "~Port"
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_PORT%
+#, fuzzy
+msgid  "~Port"
 msgstr "পোর্ট (~P)"
 
-#: crashrep.ulf#_PROXY_SETTINGS_DESCRIPTION_.LngText.text
-msgid ""
-"The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to "
-"be able to send error reports.\n"
-"\n"
-"Companies often use proxy servers in conjunction with a firewall to protect "
-"the network.\n"
-"\n"
-"If this applies to your situation, you have to specify the address and port "
-"for the server."
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_DESCRIPTION%
+msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
 msgstr ""
-"%PRODUCTNAME% সমস্যা রিপোর্ট টুলটির সমস্যা রিপোর্ট পাঠানোর জন্য ইন্টারনেটে "
-"সংযুক্ত হওয়া প্রয়োজন।\n"
-"\n"
-"নেটওয়ার্কের প্রতিরক্ষার জন্য কোম্পানিগুলো প্রায়ই ফায়ারওয়াল এর সাথে "
-"প্রক্সি সার্ভার ব্যবহার করে।\n"
-"\n"
-"যদি আপনার অবস্থাও এরকম হয়ে থাকে, তাহলে আপনাকে সার্ভারের ঠিকানা এবং পোর্ট "
-"উল্লেখ করে দিতে হবে।"
 
-#: crashrep.ulf#_SENDING_REPORT_HEADER_.LngText.text
-msgid "Sending Error Report"
+#: source/all/crashrep.ulf#%SENDING_REPORT_HEADER%
+#, fuzzy
+msgid  "Sending Error Report"
 msgstr "ত্রুটি রিপোর্ট পাঠানো হচ্ছে"
 
-#: crashrep.ulf#_SENDING_REPORT_STATUS_.LngText.text
-msgid "Status: Sending error report"
+#: source/all/crashrep.ulf#%SENDING_REPORT_STATUS%
+#, fuzzy
+msgid  "Status: Sending error report"
 msgstr "অবস্থাঃ ত্রুটি রিপোর্ট পাঠানো হচ্ছে "
 
-#: crashrep.ulf#_SENDING_REPORT_STATUS_FINISHED_.LngText.text
-msgid "Status: The error report has been sent successfully."
+#: source/all/crashrep.ulf#%SENDING_REPORT_STATUS_FINISHED%
+#, fuzzy
+msgid  "Status: The error report has been sent successfully."
 msgstr "অবস্থাঃ ত্রুটি রিপোর্টটি ঠিক ভাবে পাঠানো হয়েছে।"
 
-#: crashrep.ulf#_ERROR_MSG_NOEMAILADDRESS_.LngText.text
-#, fuzzy
-msgid ""
-"You have marked the option 'I allow Oracle to contact me regarding this "
-"report.'\n"
-"Please enter your e-mail address."
+#: source/all/crashrep.ulf#%ERROR_MSG_NOEMAILADDRESS%
+msgid  "You have marked the option 'I allow Apache OpenOffice to contact me regarding this report.'\nPlease enter your e-mail address."
 msgstr ""
-"তুমি ‌এই অপশনটি নির্দিষ্ট করিয়াছ \"আমি এই  রিপোর্ট অনুযায়ী Sun Microsystem "
-"কে আমার সাথে যোগাযোগ করার জন্য অনুমোদন দিয়েছি। দয়া করে তোমার ই‌-মেইল "
-"ঠিকানা প্রবেশ করাও।"
 
-#: crashrep.ulf#_MSG_CMDLINE_USAGE_.LngText.text
-msgid "Usage:"
+#: source/all/crashrep.ulf#%MSG_CMDLINE_USAGE%
+#, fuzzy
+msgid  "Usage:"
 msgstr "ব্যবহারঃ"
 
-#: crashrep.ulf#_MSG_PARAM_PROCESSID_.LngText.text
-msgid "-p <process ID>"
+#: source/all/crashrep.ulf#%MSG_PARAM_PROCESSID%
+#, fuzzy
+msgid  "-p <process ID>"
 msgstr "-p <প্রসেস আইডি>"
 
-#: crashrep.ulf#_MSG_PARAM_PROCESSID_DESCRIPTION_.LngText.text
-msgid "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
+#: source/all/crashrep.ulf#%MSG_PARAM_PROCESSID_DESCRIPTION%
+#, fuzzy
+msgid  "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
 msgstr "সমস্যা রিপোর্ট টুলের সাথে %PRODUCTNAME% প্রসেস আইডি (PID) যোগ কর"
 
-#: crashrep.ulf#_MSG_PARAM_HELP_DESCRIPTION_.LngText.text
-msgid ""
-"Shows this help text.\n"
-"Detailed information can be found in the Setup Guide."
+#: source/all/crashrep.ulf#%MSG_PARAM_HELP_DESCRIPTION%
+msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
 msgstr ""
-"ব্যবহারবিধি দেখুন।\n"
-" সেটআপ গাইডে বিস্তারিত তথ্য পাওয়া যাবে। "
-
-#~ msgid "http://www.sun.com/privacy/"
-#~ msgstr " http://www.sun.com/privacy/"

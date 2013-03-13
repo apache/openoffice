@@ -1,56 +1,87 @@
-"X-Accelerator-Marker: ~\n"
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
 
-#: solver.src#RID_SOLVER_COMPONENT.string.text
+
+#: source/solver/solver.src#RID_SOLVER_COMPONENT.String.Text
 #, fuzzy
-msgid "%PRODUCTNAME Linear Solver"
+msgid  "%PRODUCTNAME Linear Solver"
 msgstr "%PRODUCTNAME Linear Solver"
 
-#: solver.src#RID_PROPERTY_NONNEGATIVE.string.text
+#: source/solver/solver.src#RID_PROPERTY_NONNEGATIVE.String.Text
 #, fuzzy
-msgid "Assume variables as non-negative"
+msgid  "Assume variables as non-negative"
 msgstr "Assume variables as non-negative"
 
-#: solver.src#RID_PROPERTY_INTEGER.string.text
+#: source/solver/solver.src#RID_PROPERTY_INTEGER.String.Text
 #, fuzzy
-msgid "Assume variables as integer"
+msgid  "Assume variables as integer"
 msgstr "Assume variables as integer"
 
-#: solver.src#RID_PROPERTY_TIMEOUT.string.text
+#: source/solver/solver.src#RID_PROPERTY_TIMEOUT.String.Text
 #, fuzzy
-msgid "Solving time limit (seconds)"
+msgid  "Solving time limit (seconds)"
 msgstr "Solving time limit (seconds)"
 
-#: solver.src#RID_PROPERTY_EPSILONLEVEL.string.text
+#: source/solver/solver.src#RID_PROPERTY_EPSILONLEVEL.String.Text
 #, fuzzy
-msgid "Epsilon level (0-3)"
+msgid  "Epsilon level (0-3)"
 msgstr "Epsilon level (0-3)"
 
-#: solver.src#RID_PROPERTY_LIMITBBDEPTH.string.text
+#: source/solver/solver.src#RID_PROPERTY_LIMITBBDEPTH.String.Text
 #, fuzzy
-msgid "Limit branch-and-bound depth"
+msgid  "Limit branch-and-bound depth"
 msgstr "Limit branch-and-bound depth"
 
-#: solver.src#RID_ERROR_NONLINEAR.string.text
+#: source/solver/solver.src#RID_ERROR_NONLINEAR.String.Text
 #, fuzzy
-msgid "The model is not linear."
+msgid  "The model is not linear."
 msgstr "The model is not linear."
 
-#: solver.src#RID_ERROR_EPSILONLEVEL.string.text
+#: source/solver/solver.src#RID_ERROR_EPSILONLEVEL.String.Text
 #, fuzzy
-msgid "The epsilon level is invalid."
+msgid  "The epsilon level is invalid."
 msgstr "The epsilon level is invalid."
 
-#: solver.src#RID_ERROR_INFEASIBLE.string.text
+#: source/solver/solver.src#RID_ERROR_INFEASIBLE.String.Text
 #, fuzzy
-msgid "The model is infeasible. Check limiting conditions."
+msgid  "The model is infeasible. Check limiting conditions."
 msgstr "The model is infeasible. Check limiting conditions."
 
-#: solver.src#RID_ERROR_UNBOUNDED.string.text
+#: source/solver/solver.src#RID_ERROR_UNBOUNDED.String.Text
 #, fuzzy
-msgid "The model is unbounded."
+msgid  "The model is unbounded."
 msgstr "The model is unbounded."
 
-#: solver.src#RID_ERROR_TIMEOUT.string.text
+#: source/solver/solver.src#RID_ERROR_TIMEOUT.String.Text
 #, fuzzy
-msgid "The time limit was reached."
+msgid  "The time limit was reached."
 msgstr "The time limit was reached."

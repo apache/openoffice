@@ -1,251 +1,272 @@
-
-#: strings.src#RID_BASELISTBOX_ERROR_FILLLIST.string.text
-msgid "The contents of a combo box or list field could not be determined."
-msgstr "无法确定组合框或者列表框内的内容。"
-
-#: strings.src#RID_ERR_LOADING_FORM.string.text
-msgid "The data content could not be loaded."
-msgstr "无法装入数据内容。"
-
-#: strings.src#RID_ERR_REFRESHING_FORM.string.text
-msgid "The data content could not be updated"
-msgstr "无法更新数据内容。"
-
-#: strings.src#RID_STR_CLEAR_GRAPHICS.string.text
-msgid "Remove graphics"
-msgstr "删除图形"
-
-#: strings.src#RID_STR_CONNECTERROR.string.text
-msgid "Connection failed"
-msgstr "连接失败"
-
-#: strings.src#RID_STR_CONTROL_SUBSTITUTED_EPXPLAIN.string.text
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
 msgid ""
-"An error occurred while this control was being loaded. It was therefore "
-"replaced with a placeholder."
-msgstr "加载此控件时出错。因此用占位符替换此控件。"
-
-#: strings.src#RID_STR_CONTROL_SUBSTITUTED_NAME.string.text
-msgid "substituted"
-msgstr "替换"
-
-#: strings.src#RID_STR_COULD_NOT_SET_FILTER.string.text
-msgid "Error setting the filter criteria"
-msgstr "设置过滤条件时出错"
-
-#: strings.src#RID_STR_COULD_NOT_SET_ORDER.string.text
-msgid "Error setting the sort criteria"
-msgstr "设置排序条件时出错"
-
-#: strings.src#RID_STR_ERR_DELETERECORD.string.text
-msgid "Error deleting the current record"
-msgstr "在删除当前数据条目时发生错误"
-
-#: strings.src#RID_STR_ERR_DELETERECORDS.string.text
-msgid "Error deleting the specified records"
-msgstr "在删除指定的数据条目时发生错误"
-
-#: strings.src#RID_STR_ERR_INSERTRECORD.string.text
-msgid "Error inserting the new record"
-msgstr "在插入新数据条目时发生错误"
-
-#: strings.src#RID_STR_ERR_UPDATERECORD.string.text
-msgid "Error updating the current record"
-msgstr "在更新当前数据条目时发生错误"
-
-#: strings.src#RID_STR_FEATURE_NOT_EXECUTABLE.string.text
-msgid "This function cannot be executed, but is only for status queries."
-msgstr "此功能无法执行，它只用于状态查询。"
-
-#: strings.src#RID_STR_FEATURE_REQUIRES_PARAMETERS.string.text
-msgid "To execute this function, parameters are needed."
-msgstr "要执行此功能，需要使用参数。"
-
-#: strings.src#RID_STR_FEATURE_UNKNOWN.string.text
-msgid "Unknown function."
-msgstr "未知功能。"
-
-#: strings.src#RID_STR_IMPORT_GRAPHIC.string.text
-msgid "Insert graphics"
-msgstr "插入图形"
-
-#: strings.src#RID_STR_INCOMPATIBLE_TYPES.string.text
-msgid ""
-"The value types supported by the binding cannot be used for exchanging data "
-"with this control."
-msgstr "绑定功能支持的值类型不能用于与此控件交换数据。"
-
-#: strings.src#RID_STR_INVALIDSTREAM.string.text
-msgid "The given stream is invalid."
-msgstr "给定的数据流无效。"
-
-#: strings.src#RID_STR_INVALID_VALIDATOR.string.text
-msgid ""
-"The control is connected to an external value binding, which at the same "
-"time acts as validator. You need to revoke the value binding, before you can "
-"set a new validator."
-msgstr "该控件连接到同时起到验证程序功能的外部值绑定。只有先将该值绑定取消，才可设置新验证程序。"
-
-#: strings.src#RID_STR_LABEL_OF.string.text
-msgid "of"
-msgstr "/"
-
-#: strings.src#RID_STR_LABEL_RECORD.string.text
-msgid "Record"
-msgstr "记录"
-
-#: strings.src#RID_STR_NEED_NON_NULL_OBJECT.string.text
-msgid "The object cannot be NULL."
-msgstr "这个对象不可以是 NULL 。"
-
-#: strings.src#RID_STR_OPEN_GRAPHICS.string.text
-msgid "Insert graphics from..."
-msgstr "插入图形从..."
-
-#: strings.src#RID_STR_QUERY_SAVE_MODIFIED_ROW.string.text
-msgid ""
-"The content of the current form has been modified.\n"
-"Do you want to save your changes?"
 msgstr ""
-"当前窗体的内容已修改。\n"
-"是否保存这些更改？"
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
 
-#: strings.src#RID_STR_READERROR.string.text
-msgid "Error reading data from database"
-msgstr "在读取数据库数据时发生错误"
 
-#: strings.src#RID_STR_SYNTAXERROR.string.text
-msgid "Syntax error in query expression"
-msgstr "查询语句出现语法错误。"
-
-#: xforms.src#RID_STR_DATATYPE_BOOLEAN.string.text
-msgid "True/False (Boolean)"
-msgstr "True/False（布尔值）"
-
-#: xforms.src#RID_STR_DATATYPE_DATE.string.text
-msgid "Date"
-msgstr "日期"
-
-#: xforms.src#RID_STR_DATATYPE_DATETIME.string.text
-msgid "Date and Time"
-msgstr "日期和时间"
-
-#: xforms.src#RID_STR_DATATYPE_DAY.string.text
-msgid "Day"
-msgstr "日"
-
-#: xforms.src#RID_STR_DATATYPE_DECIMAL.string.text
-msgid "Decimal"
-msgstr "小数"
-
-#: xforms.src#RID_STR_DATATYPE_DOUBLE.string.text
-msgid "Double"
-msgstr "双精度"
-
-#: xforms.src#RID_STR_DATATYPE_FLOAT.string.text
-msgid "Floating point"
-msgstr "浮点"
-
-#: xforms.src#RID_STR_DATATYPE_MONTH.string.text
-msgid "Month"
-msgstr "月"
-
-#: xforms.src#RID_STR_DATATYPE_MONTHDAY.string.text
-msgid "Month and day"
-msgstr "月和日"
-
-#: xforms.src#RID_STR_DATATYPE_STRING.string.text
-msgid "String"
-msgstr "字符串"
-
-#: xforms.src#RID_STR_DATATYPE_TIME.string.text
-msgid "Time"
-msgstr "时间"
-
-#: xforms.src#RID_STR_DATATYPE_URL.string.text
-msgid "Hyperlink"
-msgstr "超链接"
-
-#: xforms.src#RID_STR_DATATYPE_YEAR.string.text
-msgid "Year"
-msgstr "年"
-
-#: xforms.src#RID_STR_DATATYPE_YEARMONTH.string.text
-msgid "Month and year"
-msgstr "月和年"
-
-#: xforms.src#RID_STR_XFORMS_BINDING_UI_NAME.string.text
-msgid "Binding"
-msgstr "绑定"
-
-#: xforms.src#RID_STR_XFORMS_CANT_EVALUATE.string.text
-msgid "Error during evaluation"
-msgstr "评估期间出错"
-
-#: xforms.src#RID_STR_XFORMS_INVALID_BINDING_EXPRESSION.string.text
-msgid "This is an invalid binding expression."
-msgstr "此绑定表达式无效。"
-
-#: xforms.src#RID_STR_XFORMS_INVALID_CONSTRAINT.string.text
-msgid "The constraint '$1' not validated."
-msgstr "约束 $1 未经验证。"
-
-#: xforms.src#RID_STR_XFORMS_INVALID_VALUE.string.text
-msgid "Value is invalid."
-msgstr "值无效。"
-
-#: xforms.src#RID_STR_XFORMS_NO_BINDING_EXPRESSION.string.text
-msgid "Please enter a binding expression."
+#: source/resource/xforms.src#RID_STR_XFORMS_NO_BINDING_EXPRESSION.String.Text
+msgid  "Please enter a binding expression."
 msgstr "请输入一个绑定表达式。"
 
-#: xforms.src#RID_STR_XFORMS_PATTERN_DOESNT_MATCH.string.text
-msgid "The string '$1' does not match the required regular expression '$2'."
-msgstr "字符串 $1 与所需的正则表达式 $2 不匹配。"
+#: source/resource/xforms.src#RID_STR_XFORMS_INVALID_BINDING_EXPRESSION.String.Text
+msgid  "This is an invalid binding expression."
+msgstr "此绑定表达式无效。"
 
-#: xforms.src#RID_STR_XFORMS_REQUIRED.string.text
-msgid "A value is required."
+#: source/resource/xforms.src#RID_STR_XFORMS_INVALID_VALUE.String.Text
+msgid  "Value is invalid."
+msgstr "值无效。"
+
+#: source/resource/xforms.src#RID_STR_XFORMS_REQUIRED.String.Text
+msgid  "A value is required."
 msgstr "需要输入一个值。"
 
-#: xforms.src#RID_STR_XFORMS_VALUE_FRACTION_DIGITS.string.text
-msgid "$2 fraction digits allowed at most."
-msgstr "最多允许使用 $2 个小数位。"
+#: source/resource/xforms.src#RID_STR_XFORMS_INVALID_CONSTRAINT.String.Text
+msgid  "The constraint '$1' not validated."
+msgstr "约束 $1 未经验证。"
 
-#: xforms.src#RID_STR_XFORMS_VALUE_IS_NOT_A.string.text
-msgid "The value is not of the type '$2'."
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_IS_NOT_A.String.Text
+msgid  "The value is not of the type '$2'."
 msgstr "该值不属于类型 $2。"
 
-#: xforms.src#RID_STR_XFORMS_VALUE_LENGTH.string.text
-msgid "The string must be $2 characters long."
-msgstr "字符串的长度必须为 $2 个字符。"
-
-#: xforms.src#RID_STR_XFORMS_VALUE_MAX_EXCL.string.text
-msgid "The value must be smaller than $2."
-msgstr "该值必须小于 $2。"
-
-#: xforms.src#RID_STR_XFORMS_VALUE_MAX_INCL.string.text
-msgid "The value must be smaller than or equal to $2."
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_INCL.String.Text
+msgid  "The value must be smaller than or equal to $2."
 msgstr "该值必须小于或等于 $2。"
 
-#: xforms.src#RID_STR_XFORMS_VALUE_MAX_LENGTH.string.text
-msgid "The string can only be $2 characters long at most."
-msgstr "字符串的长度最多只能为 $2 个字符。"
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_EXCL.String.Text
+msgid  "The value must be smaller than $2."
+msgstr "该值必须小于 $2。"
 
-#: xforms.src#RID_STR_XFORMS_VALUE_MIN_EXCL.string.text
-msgid "The value must be greater than $2."
-msgstr "该值必须大于 $2。"
-
-#: xforms.src#RID_STR_XFORMS_VALUE_MIN_INCL.string.text
-msgid "The value must be greater than or equal to $2."
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_INCL.String.Text
+msgid  "The value must be greater than or equal to $2."
 msgstr "该值必须大于或等于 $2。"
 
-#: xforms.src#RID_STR_XFORMS_VALUE_MIN_LENGTH.string.text
-msgid "The string must be at least $2 characters long."
-msgstr "字符串的长度必须至少为 $2 个字符。"
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_EXCL.String.Text
+msgid  "The value must be greater than $2."
+msgstr "该值必须大于 $2。"
 
-#: xforms.src#RID_STR_XFORMS_VALUE_PATTERN.string.text
-msgid "The value does not match the pattern '$2'."
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_PATTERN.String.Text
+msgid  "The value does not match the pattern '$2'."
 msgstr "该值与样式 $2 不匹配。"
 
-#: xforms.src#RID_STR_XFORMS_VALUE_TOTAL_DIGITS.string.text
-msgid "$2 digits allowed at most."
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_TOTAL_DIGITS.String.Text
+msgid  "$2 digits allowed at most."
 msgstr "最多允许使用 $2 个数位。"
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_FRACTION_DIGITS.String.Text
+msgid  "$2 fraction digits allowed at most."
+msgstr "最多允许使用 $2 个小数位。"
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_LENGTH.String.Text
+msgid  "The string must be $2 characters long."
+msgstr "字符串的长度必须为 $2 个字符。"
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_LENGTH.String.Text
+msgid  "The string must be at least $2 characters long."
+msgstr "字符串的长度必须至少为 $2 个字符。"
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_LENGTH.String.Text
+msgid  "The string can only be $2 characters long at most."
+msgstr "字符串的长度最多只能为 $2 个字符。"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_STRING.String.Text
+msgid  "String"
+msgstr "字符串"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_URL.String.Text
+msgid  "Hyperlink"
+msgstr "超链接"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_BOOLEAN.String.Text
+msgid  "True/False (Boolean)"
+msgstr "True/False（布尔值）"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_DECIMAL.String.Text
+msgid  "Decimal"
+msgstr "小数"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_FLOAT.String.Text
+msgid  "Floating point"
+msgstr "浮点"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_DOUBLE.String.Text
+msgid  "Double"
+msgstr "双精度"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_DATE.String.Text
+msgid  "Date"
+msgstr "日期"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_TIME.String.Text
+msgid  "Time"
+msgstr "时间"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_DATETIME.String.Text
+msgid  "Date and Time"
+msgstr "日期和时间"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_YEARMONTH.String.Text
+msgid  "Month and year"
+msgstr "月和年"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_YEAR.String.Text
+msgid  "Year"
+msgstr "年"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_MONTHDAY.String.Text
+msgid  "Month and day"
+msgstr "月和日"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_MONTH.String.Text
+msgid  "Month"
+msgstr "月"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_DAY.String.Text
+msgid  "Day"
+msgstr "日"
+
+#: source/resource/xforms.src#RID_STR_XFORMS_CANT_EVALUATE.String.Text
+msgid  "Error during evaluation"
+msgstr "评估期间出错"
+
+#: source/resource/xforms.src#RID_STR_XFORMS_PATTERN_DOESNT_MATCH.String.Text
+msgid  "The string '$1' does not match the required regular expression '$2'."
+msgstr "字符串 $1 与所需的正则表达式 $2 不匹配。"
+
+#: source/resource/xforms.src#RID_STR_XFORMS_BINDING_UI_NAME.String.Text
+msgid  "Binding"
+msgstr "绑定"
+
+#: source/resource/strings.src#RID_BASELISTBOX_ERROR_FILLLIST.String.Text
+msgid  "The contents of a combo box or list field could not be determined."
+msgstr "无法确定组合框或者列表框内的内容。"
+
+#: source/resource/strings.src#RID_STR_IMPORT_GRAPHIC.String.Text
+msgid  "Insert graphics"
+msgstr "插入图形"
+
+#: source/resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_NAME.String.Text
+msgid  "substituted"
+msgstr "替换"
+
+#: source/resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_EPXPLAIN.String.Text
+msgid  "An error occurred while this control was being loaded. It was therefore replaced with a placeholder."
+msgstr ""
+
+#: source/resource/strings.src#RID_STR_READERROR.String.Text
+msgid  "Error reading data from database"
+msgstr "在读取数据库数据时发生错误"
+
+#: source/resource/strings.src#RID_STR_CONNECTERROR.String.Text
+msgid  "Connection failed"
+msgstr "连接失败"
+
+#: source/resource/strings.src#RID_ERR_LOADING_FORM.String.Text
+msgid  "The data content could not be loaded."
+msgstr "无法装入数据内容。"
+
+#: source/resource/strings.src#RID_ERR_REFRESHING_FORM.String.Text
+msgid  "The data content could not be updated"
+msgstr "无法更新数据内容。"
+
+#: source/resource/strings.src#RID_STR_ERR_INSERTRECORD.String.Text
+msgid  "Error inserting the new record"
+msgstr "在插入新数据条目时发生错误"
+
+#: source/resource/strings.src#RID_STR_ERR_UPDATERECORD.String.Text
+msgid  "Error updating the current record"
+msgstr "在更新当前数据条目时发生错误"
+
+#: source/resource/strings.src#RID_STR_ERR_DELETERECORD.String.Text
+msgid  "Error deleting the current record"
+msgstr "在删除当前数据条目时发生错误"
+
+#: source/resource/strings.src#RID_STR_ERR_DELETERECORDS.String.Text
+msgid  "Error deleting the specified records"
+msgstr "在删除指定的数据条目时发生错误"
+
+#: source/resource/strings.src#RID_STR_NEED_NON_NULL_OBJECT.String.Text
+msgid  "The object cannot be NULL."
+msgstr "这个对象不可以是 NULL 。"
+
+#: source/resource/strings.src#RID_STR_OPEN_GRAPHICS.String.Text
+msgid  "Insert graphics from..."
+msgstr "插入图形从..."
+
+#: source/resource/strings.src#RID_STR_CLEAR_GRAPHICS.String.Text
+msgid  "Remove graphics"
+msgstr "删除图形"
+
+#: source/resource/strings.src#RID_STR_INVALIDSTREAM.String.Text
+msgid  "The given stream is invalid."
+msgstr "给定的数据流无效。"
+
+#: source/resource/strings.src#RID_STR_SYNTAXERROR.String.Text
+msgid  "Syntax error in query expression"
+msgstr "查询语句出现语法错误。"
+
+#: source/resource/strings.src#RID_STR_INCOMPATIBLE_TYPES.String.Text
+msgid  "The value types supported by the binding cannot be used for exchanging data with this control."
+msgstr ""
+
+#: source/resource/strings.src#RID_STR_LABEL_RECORD.String.Text
+msgid  "Record"
+msgstr "记录"
+
+#: source/resource/strings.src#RID_STR_INVALID_VALIDATOR.String.Text
+msgid  "The control is connected to an external value binding, which at the same time acts as validator. You need to revoke the value binding, before you can set a new validator."
+msgstr ""
+
+#: source/resource/strings.src#RID_STR_LABEL_OF.String.Text
+msgid  "of"
+msgstr "/"
+
+#: source/resource/strings.src#RID_STR_QUERY_SAVE_MODIFIED_ROW.String.Text
+msgid  "The content of the current form has been modified.\nDo you want to save your changes?"
+msgstr ""
+
+#: source/resource/strings.src#RID_STR_COULD_NOT_SET_ORDER.String.Text
+msgid  "Error setting the sort criteria"
+msgstr "设置排序条件时出错"
+
+#: source/resource/strings.src#RID_STR_COULD_NOT_SET_FILTER.String.Text
+msgid  "Error setting the filter criteria"
+msgstr "设置过滤条件时出错"
+
+#: source/resource/strings.src#RID_STR_FEATURE_REQUIRES_PARAMETERS.String.Text
+msgid  "To execute this function, parameters are needed."
+msgstr "要执行此功能，需要使用参数。"
+
+#: source/resource/strings.src#RID_STR_FEATURE_NOT_EXECUTABLE.String.Text
+msgid  "This function cannot be executed, but is only for status queries."
+msgstr "此功能无法执行，它只用于状态查询。"
+
+#: source/resource/strings.src#RID_STR_FEATURE_UNKNOWN.String.Text
+msgid  "Unknown function."
+msgstr "未知功能。"

@@ -1,1313 +1,1558 @@
-
-#: CondFormat.src#WIN_CONDITION.LB_COND_TYPE.1.stringlist.text
-msgid "Field Value Is"
-msgstr "ವರ್ಗದ ಮೌಲ್ಯವು"
-
-#: CondFormat.src#WIN_CONDITION.LB_COND_TYPE.2.stringlist.text
-msgid "Expression Is"
-msgstr "ಗಣಿತೋಕ್ತಿಯು"
-
-#: CondFormat.src#WIN_CONDITION.LB_OP.1.stringlist.text
-msgid "between"
-msgstr "ನಡುವೆ"
-
-#: CondFormat.src#WIN_CONDITION.LB_OP.2.stringlist.text
-msgid "not between"
-msgstr "ನಡುವೆಯಲ್ಲ"
-
-#: CondFormat.src#WIN_CONDITION.LB_OP.3.stringlist.text
-msgid "equal to"
-msgstr "ಇದಕ್ಕೆ ಸಮ"
-
-#: CondFormat.src#WIN_CONDITION.LB_OP.4.stringlist.text
-msgid "not equal to"
-msgstr "ಸಮವಲ್ಲದ"
-
-#: CondFormat.src#WIN_CONDITION.LB_OP.5.stringlist.text
-msgid "greater than"
-msgstr "ಇದಕ್ಕಿಂತ ಹೆಚ್ಚಿನ"
-
-#: CondFormat.src#WIN_CONDITION.LB_OP.6.stringlist.text
-msgid "less than"
-msgstr "ಇದಕ್ಕಿಂತ ಕಡಿಮೆ"
-
-#: CondFormat.src#WIN_CONDITION.LB_OP.7.stringlist.text
-msgid "greater than or equal to"
-msgstr "ಇದಕ್ಕಿಂತಲೂ ಹೆಚ್ಚಿನ ಅಥವಾ ಇದಕ್ಕೆ ಸಮನಾದ"
-
-#: CondFormat.src#WIN_CONDITION.LB_OP.8.stringlist.text
-msgid "less than or equal to"
-msgstr "ಇದಕ್ಕಿಂತ ಕಡಿಮೆಯಾದ ಅಥವ ಇದಕ್ಕೆ ಸಮನಾದ"
-
-#: CondFormat.src#WIN_CONDITION.FT_AND.fixedtext.text
-msgid "and"
-msgstr "ಮತ್ತು"
-
-#: CondFormat.src#WIN_CONDITION.CRTL_FORMAT_PREVIEW.window.text
-msgid "Example"
-msgstr "ಉದಾಹರಣೆ"
-
-#: CondFormat.src#RID_CONDFORMAT.PB_HELP.helpbutton.text
-msgctxt "CondFormat.src#RID_CONDFORMAT.PB_HELP.helpbutton.text"
-msgid "~Help"
-msgstr "ಸಹಾಯ(~H)"
-
-#: CondFormat.src#RID_CONDFORMAT.modaldialog.text
-msgid "Conditional Formatting"
-msgstr "ಷರತ್ತುಸಹಿತ ರಚನೆ"
-
-#: CondFormat.src#STR_NUMBERED_CONDITION.string.text
-msgid "Condition $number$"
-msgstr "ನಿಬಂಧನೆ $number$"
-
-#: CondFormat.src#STR_COLOR_WHITE.string.text
-msgid "White"
-msgstr "ಬಿಳಿ"
-
-#: CondFormat.src#STR_CHARCOLOR.string.text
-msgid "Font color"
-msgstr "ಅಕ್ಷರಶೈಲಿ ಬಣ್ಣ"
-
-#: CondFormat.src#STR_CHARBACKGROUND.string.text
-msgctxt "CondFormat.src#STR_CHARBACKGROUND.string.text"
-msgid "Background"
-msgstr "ಹಿನ್ನೆಲೆ"
-
-#: CondFormat.src#STR_TRANSPARENT.string.text
-msgid "No Fill"
-msgstr "ಭರ್ತಿ ಇಲ್ಲ"
-
-#: CondFormat.src#RID_TB_SORTING.SID_FM_SORTUP.toolboxitem.text
-msgid "Sort Ascending"
-msgstr "ಏರಿಕೆಕ್ರಮದಲ್ಲಿ ವಿಂಗಡಿಸು"
-
-#: CondFormat.src#RID_TB_SORTING.SID_FM_SORTDOWN.toolboxitem.text
-msgid "Sort Descending"
-msgstr "ಇಳಿಕೆಕ್ರಮದಲ್ಲಿ ವಿಂಗಡಿಸು"
-
-#: CondFormat.src#RID_TB_SORTING.SID_FM_REMOVE_FILTER_SORT.toolboxitem.text
-msgid "Remove sorting"
-msgstr "ವಿಂಗಡಣೆಯನ್ನು ತೆಗೆದುಹಾಕು"
-
-#: CondFormat.src#RID_TB_SORTING.SID_ADD_CONTROL_PAIR.toolboxitem.text
-msgid "Insert"
-msgstr "ಸೇರಿಸು"
-
-#: CondFormat.src#ADDFIELD_FL_HELP_SEPARATOR.fixedline.text
-msgctxt "CondFormat.src#ADDFIELD_FL_HELP_SEPARATOR.fixedline.text"
-msgid "Help"
-msgstr "ಸಹಾಯ"
-
-#: CondFormat.src#ADDFIELD_HELP_FIELD.fixedtext.text
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
 msgid ""
-"Highlight the fields to insert into the selected section of the template, "
-"then click Insert or press Enter."
 msgstr ""
-"ನಮೂನೆಯಲ್ಲಿ ಆಯ್ಕೆ ಮಾಡಲಾದ ಜಾಗಕ್ಕೆ ಸೇರಿಸಲು ಸ್ಥಳಗಳನ್ನು ಹೈಲೈಟ್ ಮಾಡಿ, ಹಾಗು ನಂತರ "
-"ಒಳಕ್ಕೆ ಸೇರಿಸಿ ಅಥವ ಎಂಟರ್ ಅನ್ನು ಒತ್ತಿ."
-
-#: DateTime.src#RID_DATETIME_DLG.CB_DATE.checkbox.text
-msgid "Include Date"
-msgstr "ದಿನಾಂಕವನ್ನು ಸೇರಿಸು"
-
-#: DateTime.src#RID_DATETIME_DLG.FT_DATE_FORMAT.fixedtext.text
-msgctxt "DateTime.src#RID_DATETIME_DLG.FT_DATE_FORMAT.fixedtext.text"
-msgid "Format"
-msgstr "ರೂಪಿಸು"
-
-#: DateTime.src#RID_DATETIME_DLG.CB_TIME.checkbox.text
-msgid "Include Time"
-msgstr "ಸಮಯವನ್ನು ಸೇರಿಸು"
-
-#: DateTime.src#RID_DATETIME_DLG.FT_TIME_FORMAT.fixedtext.text
-msgctxt "DateTime.src#RID_DATETIME_DLG.FT_TIME_FORMAT.fixedtext.text"
-msgid "Format"
-msgstr "ರೂಪಿಸು"
-
-#: DateTime.src#RID_DATETIME_DLG.PB_HELP.helpbutton.text
-msgctxt "DateTime.src#RID_DATETIME_DLG.PB_HELP.helpbutton.text"
-msgid "~Help"
-msgstr "ಸಹಾಯ(~H)"
-
-#: DateTime.src#RID_DATETIME_DLG.modaldialog.text
-msgid "Date and Time"
-msgstr "ದಿನಾಂಕ ಹಾಗು ಸಮಯ"
-
-#: dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_PAGE.pageitem.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_PAGE.pageitem.text"
-msgid "Page"
-msgstr "ಪುಟ"
-
-#: dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_BACKGROUND.pageitem.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_BACKGROUND.pageitem.text"
-msgid "Background"
-msgstr "ಹಿನ್ನೆಲೆ"
-
-#: dlgpage.src#RID_PAGEDIALOG_PAGE.1.pushbutton.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_PAGE.1.pushbutton.text"
-msgid "Return"
-msgstr "ಹಿಂದಿರುಗು"
-
-#: dlgpage.src#RID_PAGEDIALOG_PAGE.1.string.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_PAGE.1.string.text"
-msgid "Page"
-msgstr "ಪುಟ"
-
-#: dlgpage.src#RID_PAGEDIALOG_PAGE.2.string.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_PAGE.2.string.text"
-msgid "Background"
-msgstr "ಹಿನ್ನೆಲೆ"
-
-#: dlgpage.src#RID_PAGEDIALOG_PAGE.tabdialog.text
-msgid "Page Setup"
-msgstr "ಪುಟ ಸಿದ್ಧತಾ ಆದೇಶ"
-
-#: dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.pushbutton.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.pushbutton.text"
-msgid "Return"
-msgstr "ಹಿಂದಿರುಗು"
-
-#: dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.string.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.string.text"
-msgid "Background"
-msgstr "ಹಿನ್ನೆಲೆ"
-
-#: dlgpage.src#RID_PAGEDIALOG_BACKGROUND.tabdialog.text
-msgid "Section Setup"
-msgstr "ವಿಭಾಗದ ಸಿದ್ಧತೆ"
-
-#: dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_CHAR.pageitem.text
-msgid "Font"
-msgstr "ಅಕ್ಷರಶೈಲಿ"
-
-#: dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_EFFECTS.pageitem.text
-msgid "Font Effects"
-msgstr "ಅಕ್ಷರಶೈಲಿ ಪರಿಣಾಮಗಳು"
-
-#: dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_POSITION.pageitem.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_POSITION.pageitem.text"
-msgid "Position"
-msgstr "ಸ್ಥಾನ"
-
-#: dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_TWOLN.pageitem.text
-msgid "Asian Layout"
-msgstr "ಏಷಿಯಾದ ರೂಪವಿನ್ಯಾಸ"
-
-#: dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_BACKGROUND.pageitem.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_BACKGROUND.pageitem.text"
-msgid "Background"
-msgstr "ಹಿನ್ನೆಲೆ"
-
-#: dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_ALIGNMENT.pageitem.text
-msgid "Alignment"
-msgstr "ಹೊಂದಿಕೆ"
-
-#: dlgpage.src#RID_PAGEDIALOG_CHAR.1.pushbutton.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_CHAR.1.pushbutton.text"
-msgid "Return"
-msgstr "ಹಿಂದಿರುಗು"
-
-#: dlgpage.src#RID_PAGEDIALOG_CHAR.1.string.text
-msgid "Character"
-msgstr "ಅಕ್ಷರ"
-
-#: dlgpage.src#RID_PAGEDIALOG_CHAR.tabdialog.text
-msgid "Character Settings"
-msgstr "ಅಕ್ಷರ ಸಿದ್ಧತೆಗಳು"
-
-#: dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE.pageitem.text
-#, fuzzy
-msgctxt "dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE.pageitem.text"
-msgid "Line"
-msgstr "ರೇಖೆ"
-
-#: dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE_DEF.pageitem.text
-msgid "Line Styles"
-msgstr "ರೇಖೆ ಶೈಲಿಗಳು"
-
-#: dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINEEND_DEF.pageitem.text
-msgid "Arrow Styles"
-msgstr "ಬಾಣ ಶೈಲಿಗಳು"
-
-#: dlgpage.src#RID_PAGEDIALOG_LINE.1.pushbutton.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_LINE.1.pushbutton.text"
-msgid "Return"
-msgstr "ಹಿಂದಿರುಗು"
-
-#: dlgpage.src#RID_PAGEDIALOG_LINE.1.string.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_LINE.1.string.text"
-msgid "Line"
-msgstr "ಸಾಲು"
-
-#: dlgpage.src#RID_PAGEDIALOG_LINE.tabdialog.text
-msgctxt "dlgpage.src#RID_PAGEDIALOG_LINE.tabdialog.text"
-msgid "Line"
-msgstr "ಸಾಲು"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR2.fixedline.text
-msgctxt "GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR2.fixedline.text"
-msgid "Groups"
-msgstr "ಗುಂಪುಗಳು"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.FT_MOVELABEL.fixedtext.text
-msgid "Group actions"
-msgstr "ಗುಂಪು ಕಾರ್ಯಗಳು"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_UP.toolboxitem.text
-msgid "Move up"
-msgstr "ಮೇಲಕ್ಕೆ ಜರುಗಿಸು"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_DOWN.toolboxitem.text
-msgid "Move down"
-msgstr "ಕೆಳಕ್ಕೆ ಜರುಗಿಸು"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_DELETE.toolboxitem.text
-msgid "~Delete"
-msgstr "ಅಳಿಸು(~D)"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR3.fixedline.text
-msgid "Properties"
-msgstr "ಗುಣಗಳು"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.FT_ORDER.fixedtext.text
-msgid "Sorting"
-msgstr "ವಿಂಗಡಣೆ"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.1.stringlist.text
-msgid "Ascending"
-msgstr "ಏರಿಕೆಕ್ರಮ"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.2.stringlist.text
-msgid "Descending"
-msgstr "ಇಳಿಕೆಕ್ರಮ"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.FT_HEADER.fixedtext.text
-msgid "Group Header"
-msgstr "ಗುಂಪಿನ ಶಿರೋಲೇಖ"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.1.stringlist.text
-msgctxt "GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.1.stringlist.text"
-msgid "Present"
-msgstr "ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.2.stringlist.text
-msgctxt "GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.2.stringlist.text"
-msgid "Not present"
-msgstr "ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.FT_FOOTER.fixedtext.text
-msgid "Group Footer"
-msgstr "ಗುಂಪಿನ ಅಡಿಲೇಖ"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.1.stringlist.text
-msgctxt "GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.1.stringlist.text"
-msgid "Present"
-msgstr "ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.2.stringlist.text
-msgctxt "GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.2.stringlist.text"
-msgid "Not present"
-msgstr "ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPON.fixedtext.text
-msgid "Group On"
-msgstr "ಇದರಲ್ಲಿ ಗುಂಪುಗೂಡಿಸು"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.LST_GROUPONLST.1.stringlist.text
-msgid "Each Value"
-msgstr "ಪ್ರತಿ ಮೌಲ್ಯ"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPINTERVAL.fixedtext.text
-msgid "Group Interval"
-msgstr "ಗುಂಪಿನ ಅಂತರ"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.FT_KEEPTOGETHER.fixedtext.text
-msgid "Keep Together"
-msgstr "ಒಟ್ಟಿಗೆ ಇರಿಸು"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.1.stringlist.text
-msgid "No"
-msgstr "ಇಲ್ಲ"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.2.stringlist.text
-msgid "Whole Group"
-msgstr "ಸಂಪೂರ್ಣ ಗುಂಪು"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.3.stringlist.text
-msgid "With First Detail"
-msgstr "ಮೊದಲ ವಿವರದೊಂದಿಗೆ"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR1.fixedline.text
-msgctxt "GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR1.fixedline.text"
-msgid "Help"
-msgstr "ಸಹಾಯ"
-
-#: GroupsSorting.src#RID_GROUPS_SORTING.floatingwindow.text
-msgid "Sorting and Grouping"
-msgstr "ವಿಂಡಗಣೆ ಹಾಗು ಗುಂಪುಗೂಡಿಕೆ"
-
-#: GroupsSorting.src#STR_RPT_EXPRESSION.string.text
-msgid "Field/Expression"
-msgstr "ವರ್ಗ/ಗಣಿತೋಕ್ತಿ"
-
-#: GroupsSorting.src#STR_RPT_SORTING.string.text
-msgid "Sort Order"
-msgstr "ವಿಂಗಡಣೆಯ ಕ್ರಮ"
-
-#: GroupsSorting.src#STR_RPT_PREFIXCHARS.string.text
-msgid "Prefix Characters"
-msgstr "ಪೂರ್ವಪ್ರತ್ಯಯ ಅಕ್ಷರಗಳು"
-
-#: GroupsSorting.src#STR_RPT_YEAR.string.text
-msgid "Year"
-msgstr "ವರ್ಷ"
-
-#: GroupsSorting.src#STR_RPT_QUARTER.string.text
-msgid "Quarter"
-msgstr "ಮಾಸ"
-
-#: GroupsSorting.src#STR_RPT_MONTH.string.text
-msgid "Month"
-msgstr "ತಿಂಗಳು"
-
-#: GroupsSorting.src#STR_RPT_WEEK.string.text
-msgid "Week"
-msgstr "ವಾರ"
-
-#: GroupsSorting.src#STR_RPT_DAY.string.text
-msgid "Day"
-msgstr "ದಿನ"
-
-#: GroupsSorting.src#STR_RPT_HOUR.string.text
-msgid "Hour"
-msgstr "ಗಂಟೆ"
-
-#: GroupsSorting.src#STR_RPT_MINUTE.string.text
-msgid "Minute"
-msgstr "ನಿಮಿಷ"
-
-#: GroupsSorting.src#STR_RPT_INTERVAL.string.text
-msgid "Interval"
-msgstr "ಅವಧಿ"
-
-#: GroupsSorting.src#STR_RPT_HELP_FIELD.string.text
-msgid "Select a field or type an expression to sort or group on."
-msgstr ""
-"ಯಾವ ಆಧಾರದ ಮೇರೆಗೆ ವಿಂಗಡಿಸಬೇಕು ಅಥವ ಗುಂಪುಗೂಡಿಸಬೇಕು ಎಂದು ಒಂದು ವರ್ಗ ಅಥವ "
-"ಗಣಿತೋಕ್ತಿಯನ್ನು ಆಯ್ಕೆ ಮಾಡಿ."
-
-#: GroupsSorting.src#STR_RPT_HELP_HEADER.string.text
-msgid "Display a header for this group?"
-msgstr "ಈ ಗುಂಪಿಗೆ ಒಂದು ಶಿರೋಲೇಖವನ್ನು ತೋರಿಸಬೇಕೆ?"
-
-#: GroupsSorting.src#STR_RPT_HELP_FOOTER.string.text
-msgid "Display a footer for this group?"
-msgstr "ಈ ಗುಂಪಿಗೆ ಒಂದು ಅಡಿಲೇಖವನ್ನು ತೋರಿಸಬೇಕೆ?"
-
-#: GroupsSorting.src#STR_RPT_HELP_GROUPON.string.text
-msgid "Select the value or range of values that starts a new group."
-msgstr "ಒಂದು ಹೊಸ ಗುಂಪಿನ ಪ್ರಾರಂಭದ ಮೌಲ್ಯ ಅಥವ ಮೌಲ್ಯದ ವ್ಯಾಪ್ತಿಯನ್ನು ಆಯ್ಕೆ ಮಾಡಿ."
-
-#: GroupsSorting.src#STR_RPT_HELP_INTERVAL.string.text
-msgid "Interval or number of characters to group on."
-msgstr "ಗುಂಪುಗೂಡಿಸಬೇಕಿರುವ ಅಂತರ ಅಥವ ಅಕ್ಷರಗಳ ಸಂಖ್ಯೆ."
-
-#: GroupsSorting.src#STR_RPT_HELP_KEEP.string.text
-msgid "Keep group together on one page?"
-msgstr "ಗುಂಪುಗಳನ್ನು ಒಂದೇ ಪುಟದಲ್ಲಿ ಇರಿಸಬೇಕೆ?"
-
-#: GroupsSorting.src#STR_RPT_HELP_SORT.string.text
-msgid ""
-"Select ascending or descending sort order. Ascending means from A to Z or 0 "
-"to 9"
-msgstr ""
-"ಏರಿಕೆ ಅಥವ ಇಳಿಕೆ ಕ್ರಮವನ್ನು ಆಯ್ಕೆ ಮಾಡಿ. ಏರಿಕೆ ಎಂದರೆ A ಇಂದ Z ವರೆಗೆ ಅಥವ ೦ ಇಂದ ೯ "
-"ವರೆಗೆ"
-
-#: Navigator.src#RID_NAVIGATOR.floatingwindow.text
-msgid "Report navigator"
-msgstr "ವರದಿ ನ್ಯಾವಿಗೇಟರ್"
-
-#: Navigator.src#RID_STR_FUNCTIONS.string.text
-msgid "Functions"
-msgstr "ಕಾರ್ಯಭಾರಗಳು"
-
-#: Navigator.src#RID_STR_GROUPS.string.text
-msgctxt "Navigator.src#RID_STR_GROUPS.string.text"
-msgid "Groups"
-msgstr "ಗುಂಪುಗಳು"
-
-#: Navigator.src#RID_MENU_NAVIGATOR.SID_SORTINGANDGROUPING.menuitem.text
-msgid "Sorting and Grouping..."
-msgstr "ವಿಂಡಗಣೆ ಹಾಗು ಗುಂಪುಗೂಡಿಕೆ..."
-
-#: Navigator.src#RID_MENU_NAVIGATOR.SID_PAGEHEADERFOOTER.menuitem.text
-msgid "Page Header/Footer..."
-msgstr "ಪುಟದ ಶೀರೋಲೇಖ/ಅಡಿಲೇಖ..."
-
-#: Navigator.src#RID_MENU_NAVIGATOR.SID_REPORTHEADERFOOTER.menuitem.text
-msgid "Report Header/Footer..."
-msgstr "ವರದಿ ಶೀರೋಲೇಖ/ಅಡಿಲೇಖ..."
-
-#: Navigator.src#RID_MENU_NAVIGATOR.SID_RPT_NEW_FUNCTION.menuitem.text
-msgid "New Function"
-msgstr "ಹೊಸ ಕಾರ್ಯಭಾರ"
-
-#: Navigator.src#RID_MENU_NAVIGATOR.SID_SHOW_PROPERTYBROWSER.menuitem.text
-msgid "Properties..."
-msgstr "ಗುಣಗಳು..."
-
-#: PageNumber.src#RID_PAGENUMBERS.FL_FORMAT.fixedline.text
-msgctxt "PageNumber.src#RID_PAGENUMBERS.FL_FORMAT.fixedline.text"
-msgid "Format"
-msgstr "ರೂಪಿಸು"
-
-#: PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N.radiobutton.text
-msgid "Page N"
-msgstr "N ಪುಟ"
-
-#: PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N_OF_M.radiobutton.text
-msgid "Page N of M"
-msgstr "M ಪುಟದಲ್ಲಿ N"
-
-#: PageNumber.src#RID_PAGENUMBERS.FL_POSITION.fixedline.text
-msgctxt "PageNumber.src#RID_PAGENUMBERS.FL_POSITION.fixedline.text"
-msgid "Position"
-msgstr "ಸ್ಥಾನ"
-
-#: PageNumber.src#RID_PAGENUMBERS.RB_PAGE_TOPPAGE.radiobutton.text
-msgid "Top of Page (Header)"
-msgstr "ಪುಟದ ಮೇಲ್ಭಾಗದಲ್ಲಿ (ಶಿರೋಲೇಖ)"
-
-#: PageNumber.src#RID_PAGENUMBERS.RB_PAGE_BOTTOMPAGE.radiobutton.text
-msgid "Bottom of Page (Footer)"
-msgstr "ಪುಟದ ಕೆಳಭಾಗದಲ್ಲಿ (ಅಡಿಲೇಖ)"
-
-#: PageNumber.src#RID_PAGENUMBERS.FL_MISC.fixedline.text
-msgid "General"
-msgstr "ಸಾಮಾನ್ಯ"
-
-#: PageNumber.src#RID_PAGENUMBERS.FL_ALIGNMENT.fixedtext.text
-msgid "Alignment:"
-msgstr "ಹೊಂದಿಕೆ:"
-
-#: PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.1.stringlist.text
-msgid "Left"
-msgstr "ಎಡ"
-
-#: PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.2.stringlist.text
-msgid "Center"
-msgstr "ಮಧ್ಯ"
-
-#: PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.3.stringlist.text
-msgid "Right"
-msgstr "ಬಲ"
-
-#: PageNumber.src#RID_PAGENUMBERS.CB_SHOWNUMBERONFIRSTPAGE.checkbox.text
-msgid "Show Number on First Page"
-msgstr "ಮೊದಲ ಪುಟದಲ್ಲಿ ಸಂಖ್ಯೆಯನ್ನು ತೋರಿಸು"
-
-#: PageNumber.src#RID_PAGENUMBERS.PB_HELP.helpbutton.text
-msgctxt "PageNumber.src#RID_PAGENUMBERS.PB_HELP.helpbutton.text"
-msgid "~Help"
-msgstr "ಸಹಾಯ(~H)"
-
-#: PageNumber.src#RID_PAGENUMBERS.modaldialog.text
-msgid "Page Numbers"
-msgstr "ಪುಟ ಸಂಖ್ಯೆಗಳು"
-
-#: PageNumber.src#STR_RPT_PN_PAGE.string.text
-msgid "\"Page \" & #PAGENUMBER#"
-msgstr "\"ಪುಟ \" & #PAGENUMBER#"
-
-#: PageNumber.src#STR_RPT_PN_PAGE_OF.string.text
-msgid " & \" of \" & #PAGECOUNT#"
-msgstr "& #PAGECOUNT# \" ರಲ್ಲಿ \" &"
-
-#: report.src#RID_STR_BRWTITLE_PROPERTIES.string.text
-msgid "Properties: "
-msgstr "ಗುಣಗಳು: "
-
-#: report.src#RID_STR_BRWTITLE_NO_PROPERTIES.string.text
-msgid "No Control marked"
-msgstr "ಯಾವ ನಿಯಂತ್ರಣವನ್ನೂ ಗುರುತು ಹಾಕಿಲ್ಲ"
-
-#: report.src#RID_STR_BRWTITLE_MULTISELECT.string.text
-msgid "Multiselection"
-msgstr "ಬಹುಆಯ್ಕೆ"
-
-#: report.src#RID_STR_PROPTITLE_IMAGECONTROL.string.text
-msgid "Image Control"
-msgstr "ಬಿಂಬದ ನಿಯಂತ್ರಣ"
-
-#: report.src#RID_STR_PROPTITLE_FIXEDTEXT.string.text
-msgid "Label field"
-msgstr "ಗುರುತುಪಟ್ಟಿ ವರ್ಗ"
-
-#: report.src#RID_STR_PROPTITLE_FIXEDLINE.string.text
-msgid "Line"
-msgstr "ಸಾಲು"
-
-#: report.src#RID_STR_PROPTITLE_FORMATTED.string.text
-msgid "Formatted Field"
-msgstr "ಫಾರ್ಮಾಟ್‌ ಮಾಡಲಾದ ವರ್ಗ"
-
-#: report.src#RID_STR_PROPTITLE_SHAPE.string.text
-msgid "Shape"
-msgstr "ಆಕಾರ"
-
-#: report.src#RID_STR_PROPTITLE_REPORT.string.text
-msgid "Report"
-msgstr "ವರದಿ"
-
-#: report.src#RID_STR_PROPTITLE_SECTION.string.text
-msgctxt "report.src#RID_STR_PROPTITLE_SECTION.string.text"
-msgid "Section"
-msgstr "ವಿಭಾಗ"
-
-#: report.src#RID_STR_PROPTITLE_FUNCTION.string.text
-msgctxt "report.src#RID_STR_PROPTITLE_FUNCTION.string.text"
-msgid "Function"
-msgstr "ಕಾರ್ಯಭಾರ"
-
-#: report.src#RID_STR_PROPTITLE_GROUP.string.text
-msgid "Group"
-msgstr "ಗುಂಪು"
-
-#: report.src#STR_SHOW_RULER.string.text
-msgid "Show ruler"
-msgstr "ಮಾಪಕವನ್ನು ತೋರಿಸು"
-
-#: report.src#STR_SHOW_GRID.string.text
-msgid "Show grid"
-msgstr "ಚೌಕಜಾಲವನ್ನು ತೋರಿಸು"
-
-#: report.src#RID_STR_UNDO_CHANGEPOSITION.string.text
-msgid "Change Object"
-msgstr "ವಸ್ತುವನ್ನ ಬದಲಿಸಿ"
-
-#: report.src#RID_STR_UNDO_MOVE_GROUP.string.text
-msgid "Move Group(s)"
-msgstr "ಗುಂಪ(ಗಳ)ನ್ನು ಜರುಗಿಸಿ"
-
-#: report.src#RID_STR_UNDO_CONDITIONAL_FORMATTING.string.text
-msgid "Conditional Formatting"
-msgstr "ನಿಬಂಧನೆಯ ಫಾರ್ಮಾಟ್ ಪದ್ಧತಿ"
-
-#: report.src#RID_STR_UNDO_REMOVE_REPORTHEADERFOOTER.string.text
-msgid "Remove report header / report footer"
-msgstr "ವರದಿಯ ಶಿರೊಲೇಖ / ವರದಿಯ ಅಡಿಲೇಖವನ್ನು ತಗೆದು ಹಾಕು"
-
-#: report.src#RID_STR_UNDO_ADD_REPORTHEADERFOOTER.string.text
-msgid "Add report header / report footer"
-msgstr "ವರದಿಯ ಶಿರೊಲೇಖ / ವರದಿಯ ಅಡಿಲೇಖವನ್ನು ಸೇರಿಸು"
-
-#: report.src#RID_STR_UNDO_REMOVE_PAGEHEADERFOOTER.string.text
-msgid "Remove page header / page footer"
-msgstr "ಹಾಳೆಯ ಶಿರೊಲೇಖ / ಹಾಳೆಯ ಅಡಿಲೇಖವನ್ನು ಸೇರಿಸು"
-
-#: report.src#RID_STR_UNDO_ADD_PAGEHEADERFOOTER.string.text
-msgid "Add page header / page footer"
-msgstr "ಹಾಳೆಯ ಶಿರೊಲೇಖ / ಹಾಳೆಯ ಅಡಿಲೇಖವನ್ನು ತೆಗೆದು ಹಾಕು"
-
-#: report.src#RID_STR_UNDO_PROPERTY.string.text
-msgid "Change property '#'"
-msgstr "ಗುಣ '#' ಅನ್ನು ಬದಲಿಸು"
-
-#: report.src#RID_STR_UNDO_ADD_GROUP_HEADER.string.text
-msgid "Add group header "
-msgstr "ಗುಂಪು ಶಿರೊಲೇಖವನ್ನು ಸೇರಿಸು "
-
-#: report.src#RID_STR_UNDO_REMOVE_GROUP_HEADER.string.text
-msgid "Remove group header "
-msgstr "ಗುಂಪು ಶಿರೊಲೇಖವನ್ನು ತೆಗೆದು ಹಾಕು "
-
-#: report.src#RID_STR_UNDO_ADD_GROUP_FOOTER.string.text
-msgid "Add group footer "
-msgstr "ಗುಂಪು ಅಡಿಲೇಖವನ್ನು ಸೇರಿಸು"
-
-#: report.src#RID_STR_UNDO_REMOVE_GROUP_FOOTER.string.text
-msgid "Remove group footer "
-msgstr "ಗುಂಪು ಅಡಿಲೇಖವನ್ನು ತೆಗೆದು ಹಾಕು"
-
-#: report.src#RID_STR_UNDO_ADDFUNCTION.string.text
-msgid "Add function"
-msgstr "ಕಾರ್ಯವನ್ನು ಸೇರಿಸು"
-
-#: report.src#RID_STR_UNDO_DELETEFUNCTION.string.text
-msgid "Delete function"
-msgstr "ಕಾರ್ಯವನ್ನು ತೆಗೆದುಹಾಕು"
-
-#: report.src#RID_STR_DESIGN_VIEW.string.text
-msgid "Design"
-msgstr "ವಿನ್ಯಾಸ"
-
-#: report.src#RID_STR_PREVIEW_VIEW.string.text
-msgid "Preview"
-msgstr "ಮುನ್ನೋಟ"
-
-#: report.src#STR_RPT_TITLE.string.text
-msgid "Report #"
-msgstr "ವರದಿ #"
-
-#: report.src#STR_RPT_LABEL.string.text
-msgid "~Report name"
-msgstr "ವರದಿಯ ಹೆಸರು(~R)"
-
-#: report.src#RID_STR_UNDO_REMOVE_GROUP.string.text
-msgctxt "report.src#RID_STR_UNDO_REMOVE_GROUP.string.text"
-msgid "Delete Group"
-msgstr "ಗುಂಪನ್ನು ತೆಗೆ"
-
-#: report.src#RID_STR_UNDO_APPEND_GROUP.string.text
-msgid "Add Group"
-msgstr "ಗುಂಪನ್ನ ಸೇರಿಸು"
-
-#: report.src#RID_STR_UNDO_REMOVE_SELECTION.string.text
-msgid "Delete Selection"
-msgstr "ಆಯ್ಕೆಯನ್ನು ತೆಗೆ"
-
-#: report.src#RID_STR_UNDO_REMOVE_FUNCTION.string.text
-msgid "Delete Function"
-msgstr "ಕಾರ್ಯವನ್ನು ತೆಗೆ"
-
-#: report.src#RID_STR_UNDO_CHANGE_SIZE.string.text
-msgid "Change Size"
-msgstr "ಗಾತ್ರವನ್ನು ಬದಲಿಸು"
-
-#: report.src#RID_STR_UNDO_PASTE.string.text
-msgid "Paste"
-msgstr "ಅಂಟಿಸು"
-
-#: report.src#RID_STR_UNDO_INSERT_CONTROL.string.text
-msgid "Insert Control"
-msgstr "ನಿಯಂತ್ರಣವನ್ನು ಸೇರ್ಪಡಿಸಿ"
-
-#: report.src#RID_STR_UNDO_DELETE_CONTROL.string.text
-msgid "Delete Control"
-msgstr "ನಿಯಂತ್ರಣವನ್ನು ತೆಗೆಯಿರಿ"
-
-#: report.src#RID_STR_UNDO_GROUP.string.text
-msgid "Insert Group"
-msgstr "ಗುಂಪನ್ನು ಅಳವಡಿಸು"
-
-#: report.src#RID_STR_UNDO_UNGROUP.string.text
-msgctxt "report.src#RID_STR_UNDO_UNGROUP.string.text"
-msgid "Delete Group"
-msgstr "ಗುಂಪನ್ನು ತೆಗೆ"
-
-#: report.src#RID_STR_GROUPHEADER.string.text
-msgid "GroupHeader"
-msgstr "ಗುಂಪುಶಿರೊಲೇಖ"
-
-#: report.src#RID_STR_GROUPFOOTER.string.text
-msgid "GroupFooter"
-msgstr "ಗುಂಪುಅಡಿಲೇಖ"
-
-#: report.src#RID_MENU_REPORT.SID_SORTINGANDGROUPING.menuitem.text
-msgid "Sorting and Grouping..."
-msgstr "ವಿಂಗಡಣೆ ಹಾಗು ವರ್ಗೀಕರಣ..."
-
-#: report.src#RID_MENU_REPORT.SID_ATTR_CHAR_COLOR_BACKGROUND.menuitem.text
-msgid "Background Color..."
-msgstr "ಹಿನ್ನೆಲೆ ಬಣ್ಣ..."
-
-#: report.src#RID_MENU_REPORT.SID_RULER.menuitem.text
-msgid "Ruler..."
-msgstr "ಮಾಪಕ..."
-
-#: report.src#RID_MENU_REPORT.SID_GRID_VISIBLE.menuitem.text
-msgid "Grid..."
-msgstr "ಚೌಕಜಾಲ..."
-
-#: report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_UP.menuitem.text
-msgid "Bring ~Forward"
-msgstr "ಮುಂದಕ್ಕೆ ಕಳುಹಿಸು(~F)"
-
-#: report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_DOWN.menuitem.text
-msgid "Send Back~ward"
-msgstr "ಹಿಂದಕ್ಕೆ ಕಳುಹಿಸು(~w)"
-
-#: report.src#RID_MENU_REPORT.SID_ARRANGEMENU.menuitem.text
-msgid "~Arrange"
-msgstr "ಹೊಂದಿಸು(~A)"
-
-#: report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTWIDTH.menuitem.text
-msgid "~Fit to smallest width"
-msgstr "ಅತಿ ಚಿಕ್ಕ ಅಗಲಕ್ಕೆ ಸರಿಹೊಂದಿಸು(~F)"
-
-#: report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTWIDTH.menuitem.text
-msgid "~Fit to greatest width"
-msgstr "ಅತಿ ದೊಡ್ಡ ಅಗಲಕ್ಕೆ ಸರಿಹೊಂದಿಸು(~F)"
-
-#: report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTHEIGHT.menuitem.text
-msgid "~Fit to smallest height"
-msgstr "ಅತಿ ಚಿಕ್ಕ ಎತ್ತರಕ್ಕೆ ಸರಿಹೊಂದಿಸು(~F)"
-
-#: report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTHEIGHT.menuitem.text
-msgid "~Fit to greatest height"
-msgstr "ಅತಿ ದೊಡ್ಡ ಎತ್ತರಕ್ಕೆ ಸರಿಹೊಂದಿಸು(~F)"
-
-#: report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.menuitem.text
-msgid "~Object Resizing"
-msgstr "ವಸ್ತುವಿನ ಗಾತ್ರ ಬದಲಿಕೆ(~O)"
-
-#: report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK.menuitem.text
-msgid "Shrink"
-msgstr "ಕುಗ್ಗಿಸು"
-
-#: report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_TOP.menuitem.text
-msgid "Shrink from top"
-msgstr "ಮೇಲ್ಭಾಗದಿಂದ ಕುಗ್ಗಿಸು"
-
-#: report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_BOTTOM.menuitem.text
-msgid "Shrink from bottom"
-msgstr "ಕೆಳಭಾಗದಿಂದ ಕುಗ್ಗಿಸು"
-
-#: report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.menuitem.text
-msgctxt "report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.menuitem.text"
-msgid "Section"
-msgstr "ವಿಭಾಗ"
-
-#: report.src#RID_MENU_REPORT.SID_DISTRIBUTION.menuitem.text
-msgid "Distribution..."
-msgstr "ವಿತರಣೆ..."
-
-#: report.src#RID_MENU_REPORT.SID_SHOW_PROPERTYBROWSER.menuitem.text
-msgid "Properties..."
-msgstr "ಗುಣಗಳು..."
-
-#: report.src#RID_STR_FIELDSELECTION.string.text
-msgid "Add field:"
-msgstr "ವರ್ಗ ಸೇರಿಸು:"
-
-#: report.src#RID_STR_FILTER.string.text
-msgid "Filter"
-msgstr "ಶೋಧಕ"
-
-#: report.src#RID_APP_TITLE.string.text
-msgid " - %PRODUCTNAME Base Report"
-msgstr "- %PRODUCTNAME ಮೂಲ ವರದಿ"
-
-#: report.src#RID_APP_NEW_DOC.string.text
-msgid "Untitled"
-msgstr "ಶೀರ್ಷಿಕೆರಹಿತ"
-
-#: report.src#RID_STR_UNDO_ALIGNMENT.string.text
-msgid "Change Alignment"
-msgstr "ಹೊಂದಿಕೆಯನ್ನು ಬದಲಾಯಿಸು"
-
-#: report.src#RID_STR_HEADER.string.text
-msgid "# Header"
-msgstr "# ಶಿರೊಲೇಖ"
-
-#: report.src#RID_STR_FOOTER.string.text
-msgid "# Footer"
-msgstr "# ಅಡಿಲೇಖ"
-
-#: report.src#RID_STR_IMPORT_GRAPHIC.string.text
-msgid "Insert graphics"
-msgstr "ಚಿತ್ರಗಳನ್ನು ಅಳವಡಿಸು"
-
-#: report.src#RID_STR_DELETE.string.text
-msgid "Delete"
-msgstr "ಅಳಿಸು"
-
-#: report.src#RID_STR_FUNCTION.string.text
-msgctxt "report.src#RID_STR_FUNCTION.string.text"
-msgid "Function"
-msgstr "ಕಾರ್ಯಭಾರ"
-
-#: report.src#RID_STR_COULD_NOT_CREATE_REPORT.string.text
-msgid "An error occurred while creating the report."
-msgstr "ವರದಿಯನ್ನು ರಚಿಸುವಲ್ಲಿ ದೋಷ ಉಂಟಾಗಿದೆ."
-
-#: report.src#RID_STR_CAUGHT_FOREIGN_EXCEPTION.string.text
-msgid "An exception of type $type$ was caught."
-msgstr "$type$ ಬಗೆಯ ಒಂದು ಅಪವಾದವು ತಲೆದೋರಿದೆ."
-
-#: report.src#RID_STR_UNDO_CHANGEFONT.string.text
-msgid "Change font"
-msgstr "ಅಕ್ಷರಶೈಲಿಯನ್ನು ಬದಲಾಯಿಸು"
-
-#: report.src#RID_STR_UNDO_CHANGEPAGE.string.text
-msgid "Change page attributes"
-msgstr "ಹಾಳೆಯ ಲಕ್ಷಣಗಳನ್ನು ಬದಲಿಸು"
-
-#: report.src#RID_STR_PAGEHEADERFOOTER_INSERT.string.text
-msgid "Insert Page Header/Footer"
-msgstr "ಹಾಳೆಯ ಶಿರೊಲೇಖ / ಅಡಿಲೇಖವನ್ನು ಸೇರಿಸು"
-
-#: report.src#RID_STR_PAGEHEADERFOOTER_DELETE.string.text
-msgid "Delete Page Header/Footer"
-msgstr "ಹಾಳೆಯ ಶಿರೊಲೇಖ / ಅಡಿಲೇಖವನ್ನು ತೆಗೆದುಹಾಕು"
-
-#: report.src#RID_STR_COLUMNHEADERFOOTER_INSERT.string.text
-msgid "Insert Column Header/Footer"
-msgstr "ಲಂಬಸಾಲಿನ ಶಿರೊಲೇಖ / ಅಡಿಲೇಖವನ್ನು ಸೇರಿಸು"
-
-#: report.src#RID_STR_COLUMNHEADERFOOTER_DELETE.string.text
-msgid "Delete Column Header/Footer"
-msgstr "ಲಂಬಸಾಲಿನ ಶಿರೊಲೇಖ / ಅಡಿಲೇಖವನ್ನು ತೆಗೆದುಹಾಕು"
-
-#: report.src#RID_STR_REPORTHEADERFOOTER_INSERT.string.text
-msgid "Insert Report Header/Footer"
-msgstr "ವರದಿಯ ಶಿರೊಲೇಖ / ಅಡಿಲೇಖವನ್ನು ಸೇರಿಸು"
-
-#: report.src#RID_STR_REPORTHEADERFOOTER_DELETE.string.text
-msgid "Delete Report Header/Footer"
-msgstr "ವರದಿಯ ಶಿರೊಲೇಖ / ಅಡಿಲೇಖವನ್ನು ತೆಗೆದುಹಾಕು"
-
-#: report.src#RID_ERR_NO_COMMAND.string.text
-msgid "The report can not be executed unless it is bound to content."
-msgstr ""
-"ವರದಿಯು ಅದರ ವಿಷಯಕ್ಕೆ ಬದ್ಧವಾಗಿರದೆ ಹೋದಲ್ಲಿ ಅದನ್ನು ಕಾರ್ಯಗತಗೊಳಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ."
-
-#: report.src#RID_ERR_NO_OBJECTS.string.text
-msgid ""
-"The report can not be executed unless at least one object has been inserted."
-msgstr ""
-"ವರದಿಗೆ ಕನಿಷ್ಟ ಒಂದು ವಸ್ತುವನ್ನು ಸೇರಿಸದೆ ಹೋದಲ್ಲಿ ಅದನ್ನು ಕಾರ್ಯಗತಗೊಳಿಸಲು "
-"ಸಾಧ್ಯವಿಲ್ಲ."
-
-#: report.src#RID_STR_UNDO_SHRINK.string.text
-msgid "Shrink Section"
-msgstr "ವಿಭಾಗವನ್ನು ಕುಗ್ಗಿಸು"
-
-#: report.src#RID_STR_DETAIL.string.text
-msgid "Detail"
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/core/resource/strings.src#RID_STR_DETAIL.String.Text
+msgid  "Detail"
 msgstr "ವಿವರ"
 
-#: report.src#RID_STR_PAGE_HEADER.string.text
-msgid "Page Header"
-msgstr "ಪುಟದ ಶಿರೊಲೇಖ"
-
-#: report.src#RID_STR_PAGE_FOOTER.string.text
-msgid "Page Footer"
-msgstr "ಪುಟದ ಅಡಿಲೇಖ"
-
-#: report.src#RID_STR_REPORT_HEADER.string.text
-msgid "Report Header"
-msgstr "ವರದಿಯ ಶಿರೊಲೇಖ"
-
-#: report.src#RID_STR_REPORT_FOOTER.string.text
-msgid "Report Footer"
-msgstr "ವರದಿಯ ಅಡಿಲೇಖ"
-
-#: report.src#RID_STR_INSERT.string.text
-msgid "Insert"
-msgstr "ಅಳವಡಿಸು"
-
-#: inspection.src#RID_STR_PROPPAGE_DEFAULT.string.text
-msgid "General"
-msgstr "ಸಾಮಾನ್ಯ"
-
-#: inspection.src#RID_STR_PROPPAGE_DATA.string.text
-msgid "Data"
-msgstr "ದತ್ತ"
-
-#: inspection.src#RID_STR_BOOL.1.string.text
-msgctxt "inspection.src#RID_STR_BOOL.1.string.text"
-msgid "No"
-msgstr "ಇಲ್ಲ"
-
-#: inspection.src#RID_STR_BOOL.2.string.text
-msgid "Yes"
-msgstr "ಹೌದು"
-
-#: inspection.src#RID_STR_FORCENEWPAGE.string.text
-msgid "Force New Page"
-msgstr "ಹೊಸ ಪುಟಕ್ಕಾಗಿ ಒತ್ತಾಯಿಸು"
-
-#: inspection.src#RID_STR_FORCENEWPAGE_CONST.1.string.text
-msgctxt "inspection.src#RID_STR_FORCENEWPAGE_CONST.1.string.text"
-msgid "None"
-msgstr "ಏನೂ ಇಲ್ಲ"
-
-#: inspection.src#RID_STR_FORCENEWPAGE_CONST.2.string.text
-msgid "Before Section"
-msgstr "ವಿಭಾಗದ ಮೊದಲು"
-
-#: inspection.src#RID_STR_FORCENEWPAGE_CONST.3.string.text
-msgid "After Section"
-msgstr "ವಿಭಾಗದ ನಂತರ"
-
-#: inspection.src#RID_STR_FORCENEWPAGE_CONST.4.string.text
-msgid "Before & After Section"
-msgstr "ವಿಭಾಗ ಮೊದಲು ಹಾಗು ನಂತರ"
-
-#: inspection.src#RID_STR_NEWROWORCOL.string.text
-msgid "New Row Or Column"
-msgstr "ಹೊಸ ಅಡ್ಡಸಾಲು ಅಥವ ಲಂಬಸಾಲು"
-
-#: inspection.src#RID_STR_KEEPTOGETHER.string.text
-msgid "Keep Together"
-msgstr "ಒಟ್ಟಾಗಿ ಇರಿಸು"
-
-#: inspection.src#RID_STR_KEEPTOGETHER_CONST.1.string.text
-msgctxt "inspection.src#RID_STR_KEEPTOGETHER_CONST.1.string.text"
-msgid "No"
-msgstr "ಇಲ್ಲ"
-
-#: inspection.src#RID_STR_KEEPTOGETHER_CONST.2.string.text
-msgid "Whole Group"
-msgstr "ಸಂಪೂರ್ಣ ಗುಂಪು"
-
-#: inspection.src#RID_STR_KEEPTOGETHER_CONST.3.string.text
-msgid "With First Detail"
-msgstr "ಮೊದಲಿನ ಮಾಹಿತಿಯೊಂದಿಗೆ"
-
-#: inspection.src#RID_STR_CANGROW.string.text
-msgid "Can Grow"
-msgstr "ಬೆಳೆಯಬಹುದು"
-
-#: inspection.src#RID_STR_CANSHRINK.string.text
-msgid "Can Shrink"
-msgstr "ಕುಗ್ಗಬಹುದು"
-
-#: inspection.src#RID_STR_REPEATSECTION.string.text
-msgid "Repeat Section"
-msgstr "ವಿಭಾಗವನ್ನು ಪುನರಾವರ್ತಿಸು"
-
-#: inspection.src#RID_STR_PRINTREPEATEDVALUES.string.text
-msgid "Print repeated values"
-msgstr "ಪುನರಾವರ್ತಿತ ಮೌಲ್ಯಗಳನ್ನು ಮುದ್ರಿಸು"
-
-#: inspection.src#RID_STR_CONDITIONALPRINTEXPRESSION.string.text
-msgid "Conditional Print Expression"
-msgstr "ನಿಬಂಧಾತ್ಮಕ ಮುದ್ರಣ ಎಕ್ಸ್‍ಪ್ರೆಶನ್"
-
-#: inspection.src#RID_STR_STARTNEWCOLUMN.string.text
-msgid "Start new column"
-msgstr "ಹೊಸ ಲಂಬಸಾಲನ್ನು ಆರಂಭಿಸು"
-
-#: inspection.src#RID_STR_STARTNEWPAGE.string.text
-msgid "Start new page"
-msgstr "ಹೊಸ ಪುಟವನ್ನು ಆರಂಭಿಸು"
-
-#: inspection.src#RID_STR_RESETPAGENUMBER.string.text
-msgid "Reset page number"
-msgstr "ಪುಟದ ಸಂಖ್ಯೆಯನ್ನು ಮರಳಿಹೊಂದಿಸು"
-
-#: inspection.src#RID_STR_CHARTTYPE.string.text
-msgid "Chart type"
-msgstr "ನಕ್ಷೆಯ ಬಗೆ"
-
-#: inspection.src#RID_STR_PRINTWHENGROUPCHANGE.string.text
-msgid "Print When Group Change"
-msgstr "ಗುಂಪು ಬದಲಾದಾಗ ಮುದ್ರಿಸು"
-
-#: inspection.src#RID_STR_VISIBLE.string.text
-msgid "Visible"
-msgstr "ಗೋಚರ"
-
-#: inspection.src#RID_STR_GROUPKEEPTOGETHER.string.text
-msgid "Group keep together"
-msgstr "ಗುಂಪನ್ನು ಒಟ್ಟಿಗೆ ಇರಿಸು"
-
-#: inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.1.string.text
-msgid "Per Page"
-msgstr "ಪ್ರತಿ ಪುಟಕ್ಕೆ"
-
-#: inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.2.string.text
-msgid "Per Column"
-msgstr "ಪ್ರತಿ ಲಂಬಸಾಲಿಗೆ"
-
-#: inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.1.string.text
-msgctxt "inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.1.string.text"
-msgid "None"
-msgstr "ಏನೂ ಇಲ್ಲ"
-
-#: inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.2.string.text
-msgid "Section"
-msgstr "ವಿಭಾಗ"
-
-#: inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.3.string.text
-msgid "Automatic"
-msgstr "ಸ್ವಯಂಚಾಲಿತ"
-
-#: inspection.src#RID_STR_PAGEHEADEROPTION.string.text
-msgid "Page header"
-msgstr "ಪುಟದ ಅಡಿಲೇಖ"
-
-#: inspection.src#RID_STR_PAGEFOOTEROPTION.string.text
-msgid "Page footer"
-msgstr "ಪುಟದ ಅಡಿಲೇಖ"
-
-#: inspection.src#RID_STR_REPORTPRINTOPTION_CONST.1.string.text
-msgid "All Pages"
-msgstr "ಎಲ್ಲಾ ಪುಟಗಳು"
-
-#: inspection.src#RID_STR_REPORTPRINTOPTION_CONST.2.string.text
-msgid "Not With Report Header"
-msgstr "ವರದಿ ಶಿರೋಲೇಖದೊಂದಿಗೆ ಅಲ್ಲ"
-
-#: inspection.src#RID_STR_REPORTPRINTOPTION_CONST.3.string.text
-msgid "Not With Report Footer"
-msgstr "ವರದಿ ಅಡಿಲೇಖದೊಂದಿಗೆ ಅಲ್ಲ"
-
-#: inspection.src#RID_STR_REPORTPRINTOPTION_CONST.4.string.text
-msgid "Not With Report Header/Footer"
-msgstr "ವರದಿ ಶಿರೋಲೇಖ/ಅಡಿಲೇಖದೊಂದಿಗೆ ಅಲ್ಲ"
-
-#: inspection.src#RID_STR_DEEPTRAVERSING.string.text
-msgid "Deep traversing"
-msgstr "ಆಳವಾದ ಚಲನೆ"
-
-#: inspection.src#RID_STR_PREEVALUATED.string.text
-msgid "Pre evaluation"
-msgstr "ಪರಿಶೀಲನಾ ಪೂರ್ವ"
-
-#: inspection.src#RID_STR_POSITIONX.string.text
-msgid "Position X"
-msgstr "ಸ್ಥಾನ X"
-
-#: inspection.src#RID_STR_POSITIONY.string.text
-msgid "Position Y"
-msgstr "ಸ್ಥಾನ Y"
-
-#: inspection.src#RID_STR_WIDTH.string.text
-msgid "Width"
-msgstr "ಅಗಲ"
-
-#: inspection.src#RID_STR_HEIGHT.string.text
-msgid "Height"
-msgstr "ಎತ್ತರ"
-
-#: inspection.src#RID_STR_INITIALFORMULA.string.text
-msgid "Initial value"
-msgstr "ಆರಂಭಿಕ ಮೌಲ್ಯ"
-
-#: inspection.src#RID_STR_PRESERVEIRI.string.text
-msgid "Preserve as Link"
-msgstr "ಕೊಂಡಿಯಾಗಿ ಇರಿಸಿಕೊ"
-
-#: inspection.src#RID_STR_FORMULA.string.text
-msgid "Formula"
-msgstr "ಸೂತ್ರ"
-
-#: inspection.src#RID_STR_DATAFIELD.string.text
-msgid "Data field"
-msgstr "ದತ್ತ ವರ್ಗ"
-
-#: inspection.src#RID_STR_FONT.string.text
-msgid "Font"
-msgstr "ಅಕ್ಷರಶೈಲಿ"
-
-#: inspection.src#RID_STR_BACKCOLOR.string.text
-msgid "Background color"
-msgstr "ಹಿನ್ನೆಲೆ ಬಣ್ಣ"
-
-#: inspection.src#RID_STR_BACKTRANSPARENT.string.text
-msgctxt "inspection.src#RID_STR_BACKTRANSPARENT.string.text"
-msgid "Background Transparent"
-msgstr "ಹಿನ್ನೆಲೆ ಪಾರದರ್ಶಕತೆ"
-
-#: inspection.src#RID_STR_CONTROLBACKGROUNDTRANSPARENT.string.text
-msgctxt "inspection.src#RID_STR_CONTROLBACKGROUNDTRANSPARENT.string.text"
-msgid "Background Transparent"
-msgstr "ಹಿನ್ನೆಲೆ ಪಾರದರ್ಶಕತೆ"
-
-#: inspection.src#RID_STR_OVERLAP_OTHER_CONTROL.string.text
-msgid "This operation is not allowed. The control overlaps with another one."
-msgstr "ಈ ಕಾರ್ಯಕ್ಕೆ ಅನುಮತಿ ಇಲ್ಲ. ಒಂದು ನಿಯಂತ್ರಣವು ಇನ್ನೊಂದರ ಮೇಲೆ ಹೇರಲ್ಪಡುತ್ತದೆ."
-
-#: inspection.src#RID_STR_ILLEGAL_POSITION.string.text
-msgid "This position can not be set. It is invalid."
-msgstr "ಈ ಸ್ಥಾನವನ್ನು ಹೊಂದಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ. ಇದು ಅಮಾನ್ಯವಾಗಿದೆ."
-
-#: inspection.src#RID_STR_SCOPE_GROUP.string.text
-msgid "Group: %1"
-msgstr "ಗುಂಪು: %1"
-
-#: inspection.src#RID_STR_FORMULALIST.string.text
-msgctxt "inspection.src#RID_STR_FORMULALIST.string.text"
-msgid "Function"
-msgstr "ಕಾರ್ಯಭಾರ"
-
-#: inspection.src#RID_STR_SCOPE.string.text
-msgid "Scope"
-msgstr "ವ್ಯಾಪ್ತಿ"
-
-#: inspection.src#RID_STR_TYPE.string.text
-msgid "Data Field Type"
-msgstr "ದತ್ತಾಂಶ ವರ್ಗದ ಬಗೆ"
-
-#: inspection.src#RID_STR_TYPE_CONST.1.string.text
-msgid "Field or Formula"
-msgstr "ಕ್ಷೇತ್ರ ಅಥವ ಸೂತ್ರ"
-
-#: inspection.src#RID_STR_TYPE_CONST.2.string.text
-msgctxt "inspection.src#RID_STR_TYPE_CONST.2.string.text"
-msgid "Function"
-msgstr "ಕಾರ್ಯಭಾರ"
-
-#: inspection.src#RID_STR_TYPE_CONST.3.string.text
-msgctxt "inspection.src#RID_STR_TYPE_CONST.3.string.text"
-msgid "Counter"
-msgstr "ಗಣಕ"
-
-#: inspection.src#RID_STR_TYPE_CONST.4.string.text
-msgid "User defined Function"
-msgstr "ಬಳಕೆದಾರರಿಂದ ಸೂಚಿತವಾದ ಕ್ರಿಯೆ"
-
-#: inspection.src#RID_STR_MASTERFIELDS.string.text
-msgid "Link master fields"
-msgstr "ಮುಖ್ಯ ವರ್ಗಗಳಲ್ಲಿ ಸಂಪರ್ಕ ಏರ್ಪಡಿಸು"
-
-#: inspection.src#RID_STR_DETAILFIELDS.string.text
-msgid "Link slave fields"
-msgstr "ಸೇವಕ ವರ್ಗಗಳಲ್ಲಿ ಸಂಪರ್ಕ ಏರ್ಪಡಿಸು"
-
-#: inspection.src#RID_STR_EXPLANATION.string.text
-msgid ""
-"Charts can be used to display detailed data about the current record of the "
-"report. To do this, you can specify which columns in the chart match which "
-"columns in the report."
-msgstr ""
-"ವರದಿಯ ಪ್ರಸಕ್ತ ದಾಖಲೆಯ ಬಗೆಗಿನ ವಿವರವಾದ ದತ್ತಾಂಶವನ್ನು ತೋರಿಸಲು ನಕ್ಷೆಗಳನ್ನು "
-"ಬಳಸಬಹುದು. ಹೀಗೆ ಮಾಡಲು ನಕ್ಷೆಯ ಯಾವ ಲಂಬಸಾಲುಗಳು ವರದಿಯ ಯಾವ ಲಂಬಸಾಲಿಗೆ ತಾಳೆಯಾಗಬೇಕು "
-"ಎಂದು ನೀವು ಸೂಚಿಸಬಹುದು."
-
-#: inspection.src#RID_STR_DETAILLABEL.string.text
-msgid "Chart"
-msgstr "ನಕ್ಷೆ"
-
-#: inspection.src#RID_STR_MASTERLABEL.string.text
-msgid "Report"
-msgstr "ವರದಿ"
-
-#: inspection.src#RID_STR_PREVIEW_COUNT.string.text
-msgid "Preview Row(s)"
-msgstr "ಅಡ್ಡಸಾಲು(ಗಳ) ಮುನ್ನೋಟ"
-
-#: inspection.src#RID_STR_AREA.string.text
-msgid "Area"
-msgstr "ಕ್ಷೇತ್ರ"
-
-#: inspection.src#RID_STR_MIMETYPE.string.text
-msgid "Report Output Format"
-msgstr "ವರದಿಯ ಫಲಿತಾಂಶದ ಆಕಾರ"
-
-#: inspection.src#RID_STR_VERTICALALIGN.string.text
-msgid "Vert. Alignment"
-msgstr "ಲಂಬ ಹೊಂದಿಕೆ"
-
-#: inspection.src#RID_STR_VERTICAL_ALIGN_CONST.1.string.text
-msgid "Top"
-msgstr "ಮೇಲೆ"
-
-#: inspection.src#RID_STR_VERTICAL_ALIGN_CONST.2.string.text
-msgid "Middle"
-msgstr "ಮಧ್ಯ"
-
-#: inspection.src#RID_STR_VERTICAL_ALIGN_CONST.3.string.text
-msgid "Bottom"
-msgstr "ಕೆಳಗೆ"
-
-#: inspection.src#RID_STR_PARAADJUST.string.text
-msgid "Horz. Alignment"
-msgstr "ಅಡ್ಡ ಹೊಂದಿಕೆ"
-
-#: inspection.src#RID_STR_PARAADJUST_CONST.1.string.text
-msgid "Left"
-msgstr "ಎಡ"
-
-#: inspection.src#RID_STR_PARAADJUST_CONST.2.string.text
-msgid "Right"
-msgstr "ಬಲ"
-
-#: inspection.src#RID_STR_PARAADJUST_CONST.3.string.text
-msgid "Block"
-msgstr "ಬ್ಲಾಕ್"
-
-#: inspection.src#RID_STR_PARAADJUST_CONST.4.string.text
-msgid "Center"
-msgstr "ಮಧ್ಯ"
-
-#: inspection.src#RID_STR_F_COUNTER.string.text
-msgctxt "inspection.src#RID_STR_F_COUNTER.string.text"
-msgid "Counter"
-msgstr "ಗಣಕ"
-
-#: inspection.src#RID_STR_F_ACCUMULATION.string.text
-msgid "Accumulation"
-msgstr "ಒಗ್ಗೂಡಿಕೆ"
-
-#: inspection.src#RID_STR_F_MINIMUM.string.text
-msgid "Minimum"
-msgstr "ಕನಿಷ್ಟ"
-
-#: inspection.src#RID_STR_F_MAXIMUM.string.text
-msgid "Maximum"
-msgstr "ಗರಿಷ್ಟ"
-
-#: strings.src#RID_STR_DETAIL.string.text
-msgid "Detail"
-msgstr "ವಿವರ"
-
-#: strings.src#RID_STR_PAGE_HEADER.string.text
-msgid "Page Header"
+#: source/core/resource/strings.src#RID_STR_PAGE_HEADER.String.Text
+msgid  "Page Header"
 msgstr "ಪುಟದ ಶಿರೋಲೇಖ"
 
-#: strings.src#RID_STR_PAGE_FOOTER.string.text
-msgid "Page Footer"
+#: source/core/resource/strings.src#RID_STR_PAGE_FOOTER.String.Text
+msgid  "Page Footer"
 msgstr "ಪುಟದ ಅಡಿಲೇಖ"
 
-#: strings.src#RID_STR_GROUP_HEADER.string.text
-msgid "Group Header"
+#: source/core/resource/strings.src#RID_STR_GROUP_HEADER.String.Text
+msgid  "Group Header"
 msgstr "ಸಮೂಹ ಶಿರೋಲೇಖ"
 
-#: strings.src#RID_STR_GROUP_FOOTER.string.text
-msgid "Group Footer"
+#: source/core/resource/strings.src#RID_STR_GROUP_FOOTER.String.Text
+msgid  "Group Footer"
 msgstr "ಸಮೂಹ ಅಡಿಲೇಖ"
 
-#: strings.src#RID_STR_REPORT_HEADER.string.text
-msgid "Report Header"
+#: source/core/resource/strings.src#RID_STR_REPORT_HEADER.String.Text
+msgid  "Report Header"
 msgstr "ವರದಿಯ ಶಿರೋಲೇಖ"
 
-#: strings.src#RID_STR_REPORT_FOOTER.string.text
-msgid "Report Footer"
+#: source/core/resource/strings.src#RID_STR_REPORT_FOOTER.String.Text
+msgid  "Report Footer"
 msgstr "ವರದಿಯ ಅಡಿಲೇಖ"
 
-#: strings.src#RID_STR_PROPERTY_CHANGE_NOT_ALLOWED.string.text
-msgid "The name '#1' already exists and can not be asssigned again."
+#: source/core/resource/strings.src#RID_STR_PROPERTY_CHANGE_NOT_ALLOWED.String.Text
+msgid  "The name '#1' already exists and can not be asssigned again."
 msgstr ""
-"'#1' ಎಂಬ ಹೆಸರು ಈಗಾಗಲೇ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ ಹಾಗು ಇದನ್ನು ಇನ್ನೊಮ್ಮೆ ನಿಯೋಜಿಸಲು "
-"ಸಾಧ್ಯವಿಲ್ಲ."
 
-#: strings.src#RID_STR_ERROR_WRONG_ARGUMENT.string.text
-msgid ""
-"You tried to set an illegal argument. Please have a look at '#1' for valid "
-"arguments."
+#: source/core/resource/strings.src#RID_STR_ERROR_WRONG_ARGUMENT.String.Text
+msgid  "You tried to set an illegal argument. Please have a look at '#1' for valid arguments."
 msgstr ""
-"ನೀವು ಅಮಾನ್ಯವಾದ ಆರ್ಗ್ಯುಮೆಂಟನ್ನು ಹೊಂದಲು ಪ್ರಯತ್ನಿಸುತ್ತಿದೀರಿ. ದಯವಿಟ್ಟು ಸರಿಯಾದ "
-"ಆರ್ಗ್ಯುಮೆಂಟಿಗಾಗಿ '#1' ಇದನ್ನು ನೋಡಿ."
 
-#: strings.src#RID_STR_ARGUMENT_IS_NULL.string.text
-msgid "The element is invalid."
+#: source/core/resource/strings.src#RID_STR_ARGUMENT_IS_NULL.String.Text
+msgid  "The element is invalid."
 msgstr "ಈ ಘಟಕವು ಅಮಾನ್ಯವಾಗಿದೆ."
 
-#: strings.src#RID_STR_FIXEDTEXT.string.text
-msgid "Label field"
+#: source/core/resource/strings.src#RID_STR_FIXEDTEXT.String.Text
+msgid  "Label field"
 msgstr "ಲೇಬಲ್‌ನ ಸ್ಥಳ"
 
-#: strings.src#RID_STR_FORMATTEDFIELD.string.text
-msgid "Formatted field"
+#: source/core/resource/strings.src#RID_STR_FORMATTEDFIELD.String.Text
+msgid  "Formatted field"
 msgstr "ರೂಪಿಸುವ ಸ್ಥಳ"
 
-#: strings.src#RID_STR_IMAGECONTROL.string.text
-msgid "Image control"
+#: source/core/resource/strings.src#RID_STR_IMAGECONTROL.String.Text
+msgid  "Image control"
 msgstr "ಚಿತ್ರ ನಿಯಂತ್ರಣ"
 
-#: strings.src#RID_STR_REPORT.string.text
-msgid "Report"
+#: source/core/resource/strings.src#RID_STR_REPORT.String.Text
+msgid  "Report"
 msgstr "ವರದಿ"
 
-#: strings.src#RID_STR_SHAPE.string.text
-msgid "Shape"
+#: source/core/resource/strings.src#RID_STR_SHAPE.String.Text
+msgid  "Shape"
 msgstr "ಆಕಾರ"
 
-#: strings.src#RID_STR_FIXEDLINE.string.text
-msgid "Fixed line"
+#: source/core/resource/strings.src#RID_STR_FIXEDLINE.String.Text
+msgid  "Fixed line"
 msgstr "ನಿಶ್ಚಿತ ರೇಖೆ"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FloatingWindow.Text
+#, fuzzy
+msgid  "Sorting and Grouping"
+msgstr "ವಿಂಡಗಣೆ ಹಾಗು ಗುಂಪುಗೂಡಿಕೆ"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR2.FixedLine.Text
+#, fuzzy
+msgid  "Groups"
+msgstr "ಗುಂಪುಗಳು"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_MOVELABEL.FixedText.Text
+#, fuzzy
+msgid  "Group actions"
+msgstr "ಗುಂಪು ಕಾರ್ಯಗಳು"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_UP.ToolBoxItem.Text
+#, fuzzy
+msgid  "Move up"
+msgstr "ಮೇಲಕ್ಕೆ ಜರುಗಿಸು"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_MOVE_DOWN.ToolBoxItem.Text
+#, fuzzy
+msgid  "Move down"
+msgstr "ಕೆಳಕ್ಕೆ ಜರುಗಿಸು"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.TB_TOOLBOX.SID_RPT_GROUPSORT_DELETE.ToolBoxItem.Text
+#, fuzzy
+msgid  "~Delete"
+msgstr "ಅಳಿಸು(~D)"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR3.FixedLine.Text
+#, fuzzy
+msgid  "Properties"
+msgstr "ಗುಣಗಳು"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_ORDER.FixedText.Text
+#, fuzzy
+msgid  "Sorting"
+msgstr "ವಿಂಗಡಣೆ"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.0.StringList.item
+#, fuzzy
+msgid  "Ascending"
+msgstr "ಏರಿಕೆಕ್ರಮ"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_ORDER.1.StringList.item
+#, fuzzy
+msgid  "Descending"
+msgstr "ಇಳಿಕೆಕ್ರಮ"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_HEADER.FixedText.Text
+#, fuzzy
+msgid  "Group Header"
+msgstr "ಗುಂಪಿನ ಶಿರೋಲೇಖ"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
+#, fuzzy
+msgid  "Not present"
+msgstr "ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_FOOTER.FixedText.Text
+#, fuzzy
+msgid  "Group Footer"
+msgstr "ಗುಂಪಿನ ಅಡಿಲೇಖ"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
+#, fuzzy
+msgid  "Not present"
+msgstr "ಅಸ್ತಿತ್ವದಲ್ಲಿಲ್ಲ"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPON.FixedText.Text
+#, fuzzy
+msgid  "Group On"
+msgstr "ಇದರಲ್ಲಿ ಗುಂಪುಗೂಡಿಸು"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_GROUPONLST.Default.StringList.item
+#, fuzzy
+msgid  "Each Value"
+msgstr "ಪ್ರತಿ ಮೌಲ್ಯ"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_GROUPINTERVAL.FixedText.Text
+#, fuzzy
+msgid  "Group Interval"
+msgstr "ಗುಂಪಿನ ಅಂತರ"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FT_KEEPTOGETHER.FixedText.Text
+#, fuzzy
+msgid  "Keep Together"
+msgstr "ಒಟ್ಟಿಗೆ ಇರಿಸು"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.0.StringList.item
+#, fuzzy
+msgid  "No"
+msgstr "ಇಲ್ಲ"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.1.StringList.item
+#, fuzzy
+msgid  "Whole Group"
+msgstr "ಸಂಪೂರ್ಣ ಗುಂಪು"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_KEEPTOGETHERLST.2.StringList.item
+#, fuzzy
+msgid  "With First Detail"
+msgstr "ಮೊದಲ ವಿವರದೊಂದಿಗೆ"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.FL_SEPARATOR1.FixedLine.Text
+#, fuzzy
+msgid  "Help"
+msgstr "ಸಹಾಯ"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_EXPRESSION.String.Text
+#, fuzzy
+msgid  "Field/Expression"
+msgstr "ವರ್ಗ/ಗಣಿತೋಕ್ತಿ"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_SORTING.String.Text
+#, fuzzy
+msgid  "Sort Order"
+msgstr "ವಿಂಗಡಣೆಯ ಕ್ರಮ"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_PREFIXCHARS.String.Text
+#, fuzzy
+msgid  "Prefix Characters"
+msgstr "ಪೂರ್ವಪ್ರತ್ಯಯ ಅಕ್ಷರಗಳು"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_YEAR.String.Text
+#, fuzzy
+msgid  "Year"
+msgstr "ವರ್ಷ"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_QUARTER.String.Text
+#, fuzzy
+msgid  "Quarter"
+msgstr "ಮಾಸ"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_MONTH.String.Text
+#, fuzzy
+msgid  "Month"
+msgstr "ತಿಂಗಳು"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_WEEK.String.Text
+#, fuzzy
+msgid  "Week"
+msgstr "ವಾರ"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_DAY.String.Text
+#, fuzzy
+msgid  "Day"
+msgstr "ದಿನ"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HOUR.String.Text
+#, fuzzy
+msgid  "Hour"
+msgstr "ಗಂಟೆ"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_MINUTE.String.Text
+#, fuzzy
+msgid  "Minute"
+msgstr "ನಿಮಿಷ"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_INTERVAL.String.Text
+#, fuzzy
+msgid  "Interval"
+msgstr "ಅವಧಿ"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_FIELD.String.Text
+msgid  "Select a field or type an expression to sort or group on."
+msgstr ""
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_HEADER.String.Text
+#, fuzzy
+msgid  "Display a header for this group?"
+msgstr "ಈ ಗುಂಪಿಗೆ ಒಂದು ಶಿರೋಲೇಖವನ್ನು ತೋರಿಸಬೇಕೆ?"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_FOOTER.String.Text
+#, fuzzy
+msgid  "Display a footer for this group?"
+msgstr "ಈ ಗುಂಪಿಗೆ ಒಂದು ಅಡಿಲೇಖವನ್ನು ತೋರಿಸಬೇಕೆ?"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_GROUPON.String.Text
+#, fuzzy
+msgid  "Select the value or range of values that starts a new group."
+msgstr "ಒಂದು ಹೊಸ ಗುಂಪಿನ ಪ್ರಾರಂಭದ ಮೌಲ್ಯ ಅಥವ ಮೌಲ್ಯದ ವ್ಯಾಪ್ತಿಯನ್ನು ಆಯ್ಕೆ ಮಾಡಿ."
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_INTERVAL.String.Text
+#, fuzzy
+msgid  "Interval or number of characters to group on."
+msgstr "ಗುಂಪುಗೂಡಿಸಬೇಕಿರುವ ಅಂತರ ಅಥವ ಅಕ್ಷರಗಳ ಸಂಖ್ಯೆ."
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_KEEP.String.Text
+#, fuzzy
+msgid  "Keep group together on one page?"
+msgstr "ಗುಂಪುಗಳನ್ನು ಒಂದೇ ಪುಟದಲ್ಲಿ ಇರಿಸಬೇಕೆ?"
+
+#: source/ui/dlg/GroupsSorting.src#STR_RPT_HELP_SORT.String.Text
+msgid  "Select ascending or descending sort order. Ascending means from A to Z or 0 to 9"
+msgstr ""
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_HEADERLST.Default.StringList.item
+#, fuzzy
+msgid  "Present"
+msgstr "ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ"
+
+#: source/ui/dlg/GroupsSorting.src#RID_GROUPS_SORTING.LST_FOOTERLST.Default.StringList.item
+#, fuzzy
+msgid  "Present"
+msgstr "ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.ModalDialog.Text
+#, fuzzy
+msgid  "Page Numbers"
+msgstr "ಪುಟ ಸಂಖ್ಯೆಗಳು"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_FORMAT.FixedLine.Text
+#, fuzzy
+msgid  "Format"
+msgstr "ರೂಪಿಸು"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N.RadioButton.Text
+#, fuzzy
+msgid  "Page N"
+msgstr "N ಪುಟ"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_N_OF_M.RadioButton.Text
+#, fuzzy
+msgid  "Page N of M"
+msgstr "M ಪುಟದಲ್ಲಿ N"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_POSITION.FixedLine.Text
+#, fuzzy
+msgid  "Position"
+msgstr "ಸ್ಥಾನ"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_TOPPAGE.RadioButton.Text
+#, fuzzy
+msgid  "Top of Page (Header)"
+msgstr "ಪುಟದ ಮೇಲ್ಭಾಗದಲ್ಲಿ (ಶಿರೋಲೇಖ)"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.RB_PAGE_BOTTOMPAGE.RadioButton.Text
+#, fuzzy
+msgid  "Bottom of Page (Footer)"
+msgstr "ಪುಟದ ಕೆಳಭಾಗದಲ್ಲಿ (ಅಡಿಲೇಖ)"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_MISC.FixedLine.Text
+#, fuzzy
+msgid  "General"
+msgstr "ಸಾಮಾನ್ಯ"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.FL_ALIGNMENT.FixedText.Text
+#, fuzzy
+msgid  "Alignment:"
+msgstr "ಹೊಂದಿಕೆ:"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+#, fuzzy
+msgid  "Right"
+msgstr "ಬಲ"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.CB_SHOWNUMBERONFIRSTPAGE.CheckBox.Text
+#, fuzzy
+msgid  "Show Number on First Page"
+msgstr "ಮೊದಲ ಪುಟದಲ್ಲಿ ಸಂಖ್ಯೆಯನ್ನು ತೋರಿಸು"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.PB_HELP.HelpButton.Text
+#, fuzzy
+msgid  "~Help"
+msgstr "ಸಹಾಯ(~H)"
+
+#: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE.String.Text
+msgid  ""Page " & #PAGENUMBER#"
+msgstr ""
+
+#: source/ui/dlg/PageNumber.src#STR_RPT_PN_PAGE_OF.String.Text
+msgid  " & " of " & #PAGECOUNT#"
+msgstr ""
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+#, fuzzy
+msgid  "Left"
+msgstr "ಎಡ"
+
+#: source/ui/dlg/PageNumber.src#RID_PAGENUMBERS.LST_ALIGNMENT.Default.StringList.item
+#, fuzzy
+msgid  "Center"
+msgstr "ಮಧ್ಯ"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.TabDialog.Text
+#, fuzzy
+msgid  "Page Setup"
+msgstr "ಪುಟ ಸಿದ್ಧತಾ ಆದೇಶ"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_PAGE.PageItem.Text
+#, fuzzy
+msgid  "Page"
+msgstr "ಪುಟ"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.RID_SVXPAGE_BACKGROUND.PageItem.Text
+#, fuzzy
+msgid  "Background"
+msgstr "ಹಿನ್ನೆಲೆ"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.PushButton.Text
+#, fuzzy
+msgid  "Return"
+msgstr "ಹಿಂದಿರುಗು"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.1.String.Text
+#, fuzzy
+msgid  "Page"
+msgstr "ಪುಟ"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_PAGE.2.String.Text
+#, fuzzy
+msgid  "Background"
+msgstr "ಹಿನ್ನೆಲೆ"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.TabDialog.Text
+#, fuzzy
+msgid  "Section Setup"
+msgstr "ವಿಭಾಗದ ಸಿದ್ಧತೆ"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.PushButton.Text
+#, fuzzy
+msgid  "Return"
+msgstr "ಹಿಂದಿರುಗು"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_BACKGROUND.1.String.Text
+#, fuzzy
+msgid  "Background"
+msgstr "ಹಿನ್ನೆಲೆ"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.TabDialog.Text
+#, fuzzy
+msgid  "Character Settings"
+msgstr "ಅಕ್ಷರ ಸಿದ್ಧತೆಗಳು"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_CHAR.PageItem.Text
+#, fuzzy
+msgid  "Font"
+msgstr "ಅಕ್ಷರಶೈಲಿ"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_EFFECTS.PageItem.Text
+#, fuzzy
+msgid  "Font Effects"
+msgstr "ಅಕ್ಷರಶೈಲಿ ಪರಿಣಾಮಗಳು"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_POSITION.PageItem.Text
+#, fuzzy
+msgid  "Position"
+msgstr "ಸ್ಥಾನ"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_TWOLN.PageItem.Text
+#, fuzzy
+msgid  "Asian Layout"
+msgstr "ಏಷಿಯಾದ ರೂಪವಿನ್ಯಾಸ"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_BACKGROUND.PageItem.Text
+#, fuzzy
+msgid  "Background"
+msgstr "ಹಿನ್ನೆಲೆ"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.RID_PAGE_ALIGNMENT.PageItem.Text
+#, fuzzy
+msgid  "Alignment"
+msgstr "ಹೊಂದಿಕೆ"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.PushButton.Text
+#, fuzzy
+msgid  "Return"
+msgstr "ಹಿಂದಿರುಗು"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_CHAR.1.String.Text
+#, fuzzy
+msgid  "Character"
+msgstr "ಅಕ್ಷರ"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.TabDialog.Text
+#, fuzzy
+msgid  "Line"
+msgstr "ರೇಖೆ"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE.PageItem.Text
+#, fuzzy
+msgid  "Line"
+msgstr "ಸಾಲು"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINE_DEF.PageItem.Text
+#, fuzzy
+msgid  "Line Styles"
+msgstr "ರೇಖೆ ಶೈಲಿಗಳು"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.RID_SVXPAGE_LINEEND_DEF.PageItem.Text
+#, fuzzy
+msgid  "Arrow Styles"
+msgstr "ಬಾಣ ಶೈಲಿಗಳು"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.PushButton.Text
+#, fuzzy
+msgid  "Return"
+msgstr "ಹಿಂದಿರುಗು"
+
+#: source/ui/dlg/dlgpage.src#RID_PAGEDIALOG_LINE.1.String.Text
+#, fuzzy
+msgid  "Line"
+msgstr "ಸಾಲು"
+
+#: source/ui/dlg/Navigator.src#RID_NAVIGATOR.FloatingWindow.Text
+#, fuzzy
+msgid  "Report navigator"
+msgstr "ವರದಿ ನ್ಯಾವಿಗೇಟರ್"
+
+#: source/ui/dlg/Navigator.src#RID_STR_FUNCTIONS.String.Text
+#, fuzzy
+msgid  "Functions"
+msgstr "ಕಾರ್ಯಭಾರಗಳು"
+
+#: source/ui/dlg/Navigator.src#RID_STR_GROUPS.String.Text
+#, fuzzy
+msgid  "Groups"
+msgstr "ಗುಂಪುಗಳು"
+
+#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SORTINGANDGROUPING.MenuItem.Text
+#, fuzzy
+msgid  "Sorting and Grouping..."
+msgstr "ವಿಂಡಗಣೆ ಹಾಗು ಗುಂಪುಗೂಡಿಕೆ..."
+
+#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_PAGEHEADERFOOTER.MenuItem.Text
+#, fuzzy
+msgid  "Page Header/Footer..."
+msgstr "ಪುಟದ ಶೀರೋಲೇಖ/ಅಡಿಲೇಖ..."
+
+#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_REPORTHEADERFOOTER.MenuItem.Text
+#, fuzzy
+msgid  "Report Header/Footer..."
+msgstr "ವರದಿ ಶೀರೋಲೇಖ/ಅಡಿಲೇಖ..."
+
+#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_RPT_NEW_FUNCTION.MenuItem.Text
+#, fuzzy
+msgid  "New Function"
+msgstr "ಹೊಸ ಕಾರ್ಯಭಾರ"
+
+#: source/ui/dlg/Navigator.src#RID_MENU_NAVIGATOR.SID_SHOW_PROPERTYBROWSER.MenuItem.Text
+#, fuzzy
+msgid  "Properties..."
+msgstr "ಗುಣಗಳು..."
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
+#, fuzzy
+msgid  "Expression Is"
+msgstr "ಗಣಿತೋಕ್ತಿಯು"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.0.StringList.item
+#, fuzzy
+msgid  "between"
+msgstr "ನಡುವೆ"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.1.StringList.item
+#, fuzzy
+msgid  "not between"
+msgstr "ನಡುವೆಯಲ್ಲ"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.2.StringList.item
+#, fuzzy
+msgid  "equal to"
+msgstr "ಇದಕ್ಕೆ ಸಮ"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.3.StringList.item
+#, fuzzy
+msgid  "not equal to"
+msgstr "ಸಮವಲ್ಲದ"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.4.StringList.item
+#, fuzzy
+msgid  "greater than"
+msgstr "ಇದಕ್ಕಿಂತ ಹೆಚ್ಚಿನ"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.5.StringList.item
+#, fuzzy
+msgid  "less than"
+msgstr "ಇದಕ್ಕಿಂತ ಕಡಿಮೆ"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.6.StringList.item
+#, fuzzy
+msgid  "greater than or equal to"
+msgstr "ಇದಕ್ಕಿಂತಲೂ ಹೆಚ್ಚಿನ ಅಥವಾ ಇದಕ್ಕೆ ಸಮನಾದ"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_OP.7.StringList.item
+#, fuzzy
+msgid  "less than or equal to"
+msgstr "ಇದಕ್ಕಿಂತ ಕಡಿಮೆಯಾದ ಅಥವ ಇದಕ್ಕೆ ಸಮನಾದ"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.FT_AND.FixedText.Text
+#, fuzzy
+msgid  "and"
+msgstr "ಮತ್ತು"
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.CRTL_FORMAT_PREVIEW.Window.Text
+#, fuzzy
+msgid  "Example"
+msgstr "ಉದಾಹರಣೆ"
+
+#: source/ui/dlg/CondFormat.src#RID_CONDFORMAT.ModalDialog.Text
+#, fuzzy
+msgid  "Conditional Formatting"
+msgstr "ಷರತ್ತುಸಹಿತ ರಚನೆ"
+
+#: source/ui/dlg/CondFormat.src#RID_CONDFORMAT.PB_HELP.HelpButton.Text
+#, fuzzy
+msgid  "~Help"
+msgstr "ಸಹಾಯ(~H)"
+
+#: source/ui/dlg/CondFormat.src#STR_NUMBERED_CONDITION.String.Text
+#, fuzzy
+msgid  "Condition $number$"
+msgstr "ನಿಬಂಧನೆ $number$"
+
+#: source/ui/dlg/CondFormat.src#STR_COLOR_WHITE.String.Text
+#, fuzzy
+msgid  "White"
+msgstr "ಬಿಳಿ"
+
+#: source/ui/dlg/CondFormat.src#STR_CHARCOLOR.String.Text
+#, fuzzy
+msgid  "Font color"
+msgstr "ಅಕ್ಷರಶೈಲಿ ಬಣ್ಣ"
+
+#: source/ui/dlg/CondFormat.src#STR_CHARBACKGROUND.String.Text
+#, fuzzy
+msgid  "Background"
+msgstr "ಹಿನ್ನೆಲೆ"
+
+#: source/ui/dlg/CondFormat.src#STR_TRANSPARENT.String.Text
+#, fuzzy
+msgid  "No Fill"
+msgstr "ಭರ್ತಿ ಇಲ್ಲ"
+
+#: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTUP.ToolBoxItem.Text
+#, fuzzy
+msgid  "Sort Ascending"
+msgstr "ಏರಿಕೆಕ್ರಮದಲ್ಲಿ ವಿಂಗಡಿಸು"
+
+#: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_SORTDOWN.ToolBoxItem.Text
+#, fuzzy
+msgid  "Sort Descending"
+msgstr "ಇಳಿಕೆಕ್ರಮದಲ್ಲಿ ವಿಂಗಡಿಸು"
+
+#: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_FM_REMOVE_FILTER_SORT.ToolBoxItem.Text
+#, fuzzy
+msgid  "Remove sorting"
+msgstr "ವಿಂಗಡಣೆಯನ್ನು ತೆಗೆದುಹಾಕು"
+
+#: source/ui/dlg/CondFormat.src#RID_TB_SORTING.SID_ADD_CONTROL_PAIR.ToolBoxItem.Text
+#, fuzzy
+msgid  "Insert"
+msgstr "ಸೇರಿಸು"
+
+#: source/ui/dlg/CondFormat.src#ADDFIELD_FL_HELP_SEPARATOR.FixedLine.Text
+#, fuzzy
+msgid  "Help"
+msgstr "ಸಹಾಯ"
+
+#: source/ui/dlg/CondFormat.src#ADDFIELD_HELP_FIELD.FixedText.Text
+msgid  "Highlight the fields to insert into the selected section of the template, then click Insert or press Enter."
+msgstr ""
+
+#: source/ui/dlg/CondFormat.src#WIN_CONDITION.LB_COND_TYPE.Default.StringList.item
+#, fuzzy
+msgid  "Field Value Is"
+msgstr "ವರ್ಗದ ಮೌಲ್ಯವು"
+
+#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.ModalDialog.Text
+#, fuzzy
+msgid  "Date and Time"
+msgstr "ದಿನಾಂಕ ಹಾಗು ಸಮಯ"
+
+#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_DATE.CheckBox.Text
+#, fuzzy
+msgid  "Include Date"
+msgstr "ದಿನಾಂಕವನ್ನು ಸೇರಿಸು"
+
+#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_DATE_FORMAT.FixedText.Text
+#, fuzzy
+msgid  "Format"
+msgstr "ರೂಪಿಸು"
+
+#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.CB_TIME.CheckBox.Text
+#, fuzzy
+msgid  "Include Time"
+msgstr "ಸಮಯವನ್ನು ಸೇರಿಸು"
+
+#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.FT_TIME_FORMAT.FixedText.Text
+#, fuzzy
+msgid  "Format"
+msgstr "ರೂಪಿಸು"
+
+#: source/ui/dlg/DateTime.src#RID_DATETIME_DLG.PB_HELP.HelpButton.Text
+#, fuzzy
+msgid  "~Help"
+msgstr "ಸಹಾಯ(~H)"
+
+#: source/ui/inspection/inspection.src#RID_STR_PROPPAGE_DEFAULT.String.Text
+#, fuzzy
+msgid  "General"
+msgstr "ಸಾಮಾನ್ಯ"
+
+#: source/ui/inspection/inspection.src#RID_STR_PROPPAGE_DATA.String.Text
+#, fuzzy
+msgid  "Data"
+msgstr "ದತ್ತ"
+
+#: source/ui/inspection/inspection.src#RID_STR_BOOL.1.String.Text
+#, fuzzy
+msgid  "No"
+msgstr "ಇಲ್ಲ"
+
+#: source/ui/inspection/inspection.src#RID_STR_BOOL.2.String.Text
+#, fuzzy
+msgid  "Yes"
+msgstr "ಹೌದು"
+
+#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE.String.Text
+#, fuzzy
+msgid  "Force New Page"
+msgstr "ಹೊಸ ಪುಟಕ್ಕಾಗಿ ಒತ್ತಾಯಿಸು"
+
+#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.1.String.Text
+#, fuzzy
+msgid  "None"
+msgstr "ಏನೂ ಇಲ್ಲ"
+
+#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.2.String.Text
+#, fuzzy
+msgid  "Before Section"
+msgstr "ವಿಭಾಗದ ಮೊದಲು"
+
+#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.3.String.Text
+#, fuzzy
+msgid  "After Section"
+msgstr "ವಿಭಾಗದ ನಂತರ"
+
+#: source/ui/inspection/inspection.src#RID_STR_FORCENEWPAGE_CONST.4.String.Text
+#, fuzzy
+msgid  "Before & After Section"
+msgstr "ವಿಭಾಗ ಮೊದಲು ಹಾಗು ನಂತರ"
+
+#: source/ui/inspection/inspection.src#RID_STR_NEWROWORCOL.String.Text
+#, fuzzy
+msgid  "New Row Or Column"
+msgstr "ಹೊಸ ಅಡ್ಡಸಾಲು ಅಥವ ಲಂಬಸಾಲು"
+
+#: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER.String.Text
+#, fuzzy
+msgid  "Keep Together"
+msgstr "ಒಟ್ಟಾಗಿ ಇರಿಸು"
+
+#: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.1.String.Text
+#, fuzzy
+msgid  "No"
+msgstr "ಇಲ್ಲ"
+
+#: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.2.String.Text
+#, fuzzy
+msgid  "Whole Group"
+msgstr "ಸಂಪೂರ್ಣ ಗುಂಪು"
+
+#: source/ui/inspection/inspection.src#RID_STR_KEEPTOGETHER_CONST.3.String.Text
+#, fuzzy
+msgid  "With First Detail"
+msgstr "ಮೊದಲಿನ ಮಾಹಿತಿಯೊಂದಿಗೆ"
+
+#: source/ui/inspection/inspection.src#RID_STR_CANGROW.String.Text
+#, fuzzy
+msgid  "Can Grow"
+msgstr "ಬೆಳೆಯಬಹುದು"
+
+#: source/ui/inspection/inspection.src#RID_STR_CANSHRINK.String.Text
+#, fuzzy
+msgid  "Can Shrink"
+msgstr "ಕುಗ್ಗಬಹುದು"
+
+#: source/ui/inspection/inspection.src#RID_STR_REPEATSECTION.String.Text
+#, fuzzy
+msgid  "Repeat Section"
+msgstr "ವಿಭಾಗವನ್ನು ಪುನರಾವರ್ತಿಸು"
+
+#: source/ui/inspection/inspection.src#RID_STR_PRINTREPEATEDVALUES.String.Text
+#, fuzzy
+msgid  "Print repeated values"
+msgstr "ಪುನರಾವರ್ತಿತ ಮೌಲ್ಯಗಳನ್ನು ಮುದ್ರಿಸು"
+
+#: source/ui/inspection/inspection.src#RID_STR_CONDITIONALPRINTEXPRESSION.String.Text
+#, fuzzy
+msgid  "Conditional Print Expression"
+msgstr "ನಿಬಂಧಾತ್ಮಕ ಮುದ್ರಣ ಎಕ್ಸ್‍ಪ್ರೆಶನ್"
+
+#: source/ui/inspection/inspection.src#RID_STR_STARTNEWCOLUMN.String.Text
+#, fuzzy
+msgid  "Start new column"
+msgstr "ಹೊಸ ಲಂಬಸಾಲನ್ನು ಆರಂಭಿಸು"
+
+#: source/ui/inspection/inspection.src#RID_STR_STARTNEWPAGE.String.Text
+#, fuzzy
+msgid  "Start new page"
+msgstr "ಹೊಸ ಪುಟವನ್ನು ಆರಂಭಿಸು"
+
+#: source/ui/inspection/inspection.src#RID_STR_RESETPAGENUMBER.String.Text
+#, fuzzy
+msgid  "Reset page number"
+msgstr "ಪುಟದ ಸಂಖ್ಯೆಯನ್ನು ಮರಳಿಹೊಂದಿಸು"
+
+#: source/ui/inspection/inspection.src#RID_STR_CHARTTYPE.String.Text
+#, fuzzy
+msgid  "Chart type"
+msgstr "ನಕ್ಷೆಯ ಬಗೆ"
+
+#: source/ui/inspection/inspection.src#RID_STR_PRINTWHENGROUPCHANGE.String.Text
+#, fuzzy
+msgid  "Print When Group Change"
+msgstr "ಗುಂಪು ಬದಲಾದಾಗ ಮುದ್ರಿಸು"
+
+#: source/ui/inspection/inspection.src#RID_STR_VISIBLE.String.Text
+#, fuzzy
+msgid  "Visible"
+msgstr "ಗೋಚರ"
+
+#: source/ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER.String.Text
+#, fuzzy
+msgid  "Group keep together"
+msgstr "ಗುಂಪನ್ನು ಒಟ್ಟಿಗೆ ಇರಿಸು"
+
+#: source/ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.1.String.Text
+#, fuzzy
+msgid  "Per Page"
+msgstr "ಪ್ರತಿ ಪುಟಕ್ಕೆ"
+
+#: source/ui/inspection/inspection.src#RID_STR_GROUPKEEPTOGETHER_CONST.2.String.Text
+#, fuzzy
+msgid  "Per Column"
+msgstr "ಪ್ರತಿ ಲಂಬಸಾಲಿಗೆ"
+
+#: source/ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.1.String.Text
+#, fuzzy
+msgid  "None"
+msgstr "ಏನೂ ಇಲ್ಲ"
+
+#: source/ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.2.String.Text
+#, fuzzy
+msgid  "Section"
+msgstr "ವಿಭಾಗ"
+
+#: source/ui/inspection/inspection.src#RID_STR_SECTIONPAGEBREAK_CONST.3.String.Text
+#, fuzzy
+msgid  "Automatic"
+msgstr "ಸ್ವಯಂಚಾಲಿತ"
+
+#: source/ui/inspection/inspection.src#RID_STR_PAGEHEADEROPTION.String.Text
+#, fuzzy
+msgid  "Page header"
+msgstr "ಪುಟದ ಅಡಿಲೇಖ"
+
+#: source/ui/inspection/inspection.src#RID_STR_PAGEFOOTEROPTION.String.Text
+#, fuzzy
+msgid  "Page footer"
+msgstr "ಪುಟದ ಅಡಿಲೇಖ"
+
+#: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.1.String.Text
+#, fuzzy
+msgid  "All Pages"
+msgstr "ಎಲ್ಲಾ ಪುಟಗಳು"
+
+#: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.2.String.Text
+#, fuzzy
+msgid  "Not With Report Header"
+msgstr "ವರದಿ ಶಿರೋಲೇಖದೊಂದಿಗೆ ಅಲ್ಲ"
+
+#: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.3.String.Text
+#, fuzzy
+msgid  "Not With Report Footer"
+msgstr "ವರದಿ ಅಡಿಲೇಖದೊಂದಿಗೆ ಅಲ್ಲ"
+
+#: source/ui/inspection/inspection.src#RID_STR_REPORTPRINTOPTION_CONST.4.String.Text
+#, fuzzy
+msgid  "Not With Report Header/Footer"
+msgstr "ವರದಿ ಶಿರೋಲೇಖ/ಅಡಿಲೇಖದೊಂದಿಗೆ ಅಲ್ಲ"
+
+#: source/ui/inspection/inspection.src#RID_STR_DEEPTRAVERSING.String.Text
+#, fuzzy
+msgid  "Deep traversing"
+msgstr "ಆಳವಾದ ಚಲನೆ"
+
+#: source/ui/inspection/inspection.src#RID_STR_PREEVALUATED.String.Text
+#, fuzzy
+msgid  "Pre evaluation"
+msgstr "ಪರಿಶೀಲನಾ ಪೂರ್ವ"
+
+#: source/ui/inspection/inspection.src#RID_STR_POSITIONX.String.Text
+#, fuzzy
+msgid  "Position X"
+msgstr "ಸ್ಥಾನ X"
+
+#: source/ui/inspection/inspection.src#RID_STR_POSITIONY.String.Text
+#, fuzzy
+msgid  "Position Y"
+msgstr "ಸ್ಥಾನ Y"
+
+#: source/ui/inspection/inspection.src#RID_STR_WIDTH.String.Text
+#, fuzzy
+msgid  "Width"
+msgstr "ಅಗಲ"
+
+#: source/ui/inspection/inspection.src#RID_STR_HEIGHT.String.Text
+#, fuzzy
+msgid  "Height"
+msgstr "ಎತ್ತರ"
+
+#: source/ui/inspection/inspection.src#RID_STR_INITIALFORMULA.String.Text
+#, fuzzy
+msgid  "Initial value"
+msgstr "ಆರಂಭಿಕ ಮೌಲ್ಯ"
+
+#: source/ui/inspection/inspection.src#RID_STR_PRESERVEIRI.String.Text
+#, fuzzy
+msgid  "Preserve as Link"
+msgstr "ಕೊಂಡಿಯಾಗಿ ಇರಿಸಿಕೊ"
+
+#: source/ui/inspection/inspection.src#RID_STR_FORMULA.String.Text
+#, fuzzy
+msgid  "Formula"
+msgstr "ಸೂತ್ರ"
+
+#: source/ui/inspection/inspection.src#RID_STR_DATAFIELD.String.Text
+#, fuzzy
+msgid  "Data field"
+msgstr "ದತ್ತ ವರ್ಗ"
+
+#: source/ui/inspection/inspection.src#RID_STR_FONT.String.Text
+#, fuzzy
+msgid  "Font"
+msgstr "ಅಕ್ಷರಶೈಲಿ"
+
+#: source/ui/inspection/inspection.src#RID_STR_BACKCOLOR.String.Text
+#, fuzzy
+msgid  "Background color"
+msgstr "ಹಿನ್ನೆಲೆ ಬಣ್ಣ"
+
+#: source/ui/inspection/inspection.src#RID_STR_BACKTRANSPARENT.String.Text
+#, fuzzy
+msgid  "Background Transparent"
+msgstr "ಹಿನ್ನೆಲೆ ಪಾರದರ್ಶಕತೆ"
+
+#: source/ui/inspection/inspection.src#RID_STR_CONTROLBACKGROUNDTRANSPARENT.String.Text
+#, fuzzy
+msgid  "Background Transparent"
+msgstr "ಹಿನ್ನೆಲೆ ಪಾರದರ್ಶಕತೆ"
+
+#: source/ui/inspection/inspection.src#RID_STR_OVERLAP_OTHER_CONTROL.String.Text
+#, fuzzy
+msgid  "This operation is not allowed. The control overlaps with another one."
+msgstr "ಈ ಕಾರ್ಯಕ್ಕೆ ಅನುಮತಿ ಇಲ್ಲ. ಒಂದು ನಿಯಂತ್ರಣವು ಇನ್ನೊಂದರ ಮೇಲೆ ಹೇರಲ್ಪಡುತ್ತದೆ."
+
+#: source/ui/inspection/inspection.src#RID_STR_ILLEGAL_POSITION.String.Text
+#, fuzzy
+msgid  "This position can not be set. It is invalid."
+msgstr "ಈ ಸ್ಥಾನವನ್ನು ಹೊಂದಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ. ಇದು ಅಮಾನ್ಯವಾಗಿದೆ."
+
+#: source/ui/inspection/inspection.src#RID_STR_SCOPE_GROUP.String.Text
+#, fuzzy
+msgid  "Group: %1"
+msgstr "ಗುಂಪು: %1"
+
+#: source/ui/inspection/inspection.src#RID_STR_FORMULALIST.String.Text
+#, fuzzy
+msgid  "Function"
+msgstr "ಕಾರ್ಯಭಾರ"
+
+#: source/ui/inspection/inspection.src#RID_STR_SCOPE.String.Text
+#, fuzzy
+msgid  "Scope"
+msgstr "ವ್ಯಾಪ್ತಿ"
+
+#: source/ui/inspection/inspection.src#RID_STR_TYPE.String.Text
+#, fuzzy
+msgid  "Data Field Type"
+msgstr "ದತ್ತಾಂಶ ವರ್ಗದ ಬಗೆ"
+
+#: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.1.String.Text
+#, fuzzy
+msgid  "Field or Formula"
+msgstr "ಕ್ಷೇತ್ರ ಅಥವ ಸೂತ್ರ"
+
+#: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.2.String.Text
+#, fuzzy
+msgid  "Function"
+msgstr "ಕಾರ್ಯಭಾರ"
+
+#: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.3.String.Text
+#, fuzzy
+msgid  "Counter"
+msgstr "ಗಣಕ"
+
+#: source/ui/inspection/inspection.src#RID_STR_TYPE_CONST.4.String.Text
+#, fuzzy
+msgid  "User defined Function"
+msgstr "ಬಳಕೆದಾರರಿಂದ ಸೂಚಿತವಾದ ಕ್ರಿಯೆ"
+
+#: source/ui/inspection/inspection.src#RID_STR_MASTERFIELDS.String.Text
+#, fuzzy
+msgid  "Link master fields"
+msgstr "ಮುಖ್ಯ ವರ್ಗಗಳಲ್ಲಿ ಸಂಪರ್ಕ ಏರ್ಪಡಿಸು"
+
+#: source/ui/inspection/inspection.src#RID_STR_DETAILFIELDS.String.Text
+#, fuzzy
+msgid  "Link slave fields"
+msgstr "ಸೇವಕ ವರ್ಗಗಳಲ್ಲಿ ಸಂಪರ್ಕ ಏರ್ಪಡಿಸು"
+
+#: source/ui/inspection/inspection.src#RID_STR_EXPLANATION.String.Text
+msgid  "Charts can be used to display detailed data about the current record of the report. To do this, you can specify which columns in the chart match which columns in the report."
+msgstr ""
+
+#: source/ui/inspection/inspection.src#RID_STR_DETAILLABEL.String.Text
+#, fuzzy
+msgid  "Chart"
+msgstr "ನಕ್ಷೆ"
+
+#: source/ui/inspection/inspection.src#RID_STR_MASTERLABEL.String.Text
+#, fuzzy
+msgid  "Report"
+msgstr "ವರದಿ"
+
+#: source/ui/inspection/inspection.src#RID_STR_PREVIEW_COUNT.String.Text
+#, fuzzy
+msgid  "Preview Row(s)"
+msgstr "ಅಡ್ಡಸಾಲು(ಗಳ) ಮುನ್ನೋಟ"
+
+#: source/ui/inspection/inspection.src#RID_STR_AREA.String.Text
+#, fuzzy
+msgid  "Area"
+msgstr "ಕ್ಷೇತ್ರ"
+
+#: source/ui/inspection/inspection.src#RID_STR_MIMETYPE.String.Text
+#, fuzzy
+msgid  "Report Output Format"
+msgstr "ವರದಿಯ ಫಲಿತಾಂಶದ ಆಕಾರ"
+
+#: source/ui/inspection/inspection.src#RID_STR_VERTICALALIGN.String.Text
+#, fuzzy
+msgid  "Vert. Alignment"
+msgstr "ಲಂಬ ಹೊಂದಿಕೆ"
+
+#: source/ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.1.String.Text
+#, fuzzy
+msgid  "Top"
+msgstr "ಮೇಲೆ"
+
+#: source/ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.2.String.Text
+#, fuzzy
+msgid  "Middle"
+msgstr "ಮಧ್ಯ"
+
+#: source/ui/inspection/inspection.src#RID_STR_VERTICAL_ALIGN_CONST.3.String.Text
+#, fuzzy
+msgid  "Bottom"
+msgstr "ಕೆಳಗೆ"
+
+#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST.String.Text
+#, fuzzy
+msgid  "Horz. Alignment"
+msgstr "ಅಡ್ಡ ಹೊಂದಿಕೆ"
+
+#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.1.String.Text
+#, fuzzy
+msgid  "Left"
+msgstr "ಎಡ"
+
+#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.2.String.Text
+#, fuzzy
+msgid  "Right"
+msgstr "ಬಲ"
+
+#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.3.String.Text
+#, fuzzy
+msgid  "Block"
+msgstr "ಬ್ಲಾಕ್"
+
+#: source/ui/inspection/inspection.src#RID_STR_PARAADJUST_CONST.4.String.Text
+#, fuzzy
+msgid  "Center"
+msgstr "ಮಧ್ಯ"
+
+#: source/ui/inspection/inspection.src#RID_STR_F_COUNTER.String.Text
+#, fuzzy
+msgid  "Counter"
+msgstr "ಗಣಕ"
+
+#: source/ui/inspection/inspection.src#RID_STR_F_ACCUMULATION.String.Text
+#, fuzzy
+msgid  "Accumulation"
+msgstr "ಒಗ್ಗೂಡಿಕೆ"
+
+#: source/ui/inspection/inspection.src#RID_STR_F_MINIMUM.String.Text
+#, fuzzy
+msgid  "Minimum"
+msgstr "ಕನಿಷ್ಟ"
+
+#: source/ui/inspection/inspection.src#RID_STR_F_MAXIMUM.String.Text
+#, fuzzy
+msgid  "Maximum"
+msgstr "ಗರಿಷ್ಟ"
+
+#: source/ui/report/report.src#RID_STR_BRWTITLE_PROPERTIES.String.Text
+#, fuzzy
+msgid  "Properties: "
+msgstr "ಗುಣಗಳು: "
+
+#: source/ui/report/report.src#RID_STR_BRWTITLE_NO_PROPERTIES.String.Text
+#, fuzzy
+msgid  "No Control marked"
+msgstr "ಯಾವ ನಿಯಂತ್ರಣವನ್ನೂ ಗುರುತು ಹಾಕಿಲ್ಲ"
+
+#: source/ui/report/report.src#RID_STR_BRWTITLE_MULTISELECT.String.Text
+#, fuzzy
+msgid  "Multiselection"
+msgstr "ಬಹುಆಯ್ಕೆ"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_IMAGECONTROL.String.Text
+#, fuzzy
+msgid  "Image Control"
+msgstr "ಬಿಂಬದ ನಿಯಂತ್ರಣ"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_FIXEDTEXT.String.Text
+#, fuzzy
+msgid  "Label field"
+msgstr "ಗುರುತುಪಟ್ಟಿ ವರ್ಗ"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_FIXEDLINE.String.Text
+#, fuzzy
+msgid  "Line"
+msgstr "ಸಾಲು"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_FORMATTED.String.Text
+#, fuzzy
+msgid  "Formatted Field"
+msgstr "ಫಾರ್ಮಾಟ್‌ ಮಾಡಲಾದ ವರ್ಗ"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_SHAPE.String.Text
+#, fuzzy
+msgid  "Shape"
+msgstr "ಆಕಾರ"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_REPORT.String.Text
+#, fuzzy
+msgid  "Report"
+msgstr "ವರದಿ"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_SECTION.String.Text
+#, fuzzy
+msgid  "Section"
+msgstr "ವಿಭಾಗ"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_FUNCTION.String.Text
+#, fuzzy
+msgid  "Function"
+msgstr "ಕಾರ್ಯಭಾರ"
+
+#: source/ui/report/report.src#RID_STR_PROPTITLE_GROUP.String.Text
+#, fuzzy
+msgid  "Group"
+msgstr "ಗುಂಪು"
+
+#: source/ui/report/report.src#STR_SHOW_RULER.String.Text
+#, fuzzy
+msgid  "Show ruler"
+msgstr "ಮಾಪಕವನ್ನು ತೋರಿಸು"
+
+#: source/ui/report/report.src#STR_SHOW_GRID.String.Text
+#, fuzzy
+msgid  "Show grid"
+msgstr "ಚೌಕಜಾಲವನ್ನು ತೋರಿಸು"
+
+#: source/ui/report/report.src#RID_STR_UNDO_CHANGEPOSITION.String.Text
+#, fuzzy
+msgid  "Change Object"
+msgstr "ವಸ್ತುವನ್ನ ಬದಲಿಸಿ"
+
+#: source/ui/report/report.src#RID_STR_UNDO_MOVE_GROUP.String.Text
+#, fuzzy
+msgid  "Move Group(s)"
+msgstr "ಗುಂಪ(ಗಳ)ನ್ನು ಜರುಗಿಸಿ"
+
+#: source/ui/report/report.src#RID_STR_UNDO_CONDITIONAL_FORMATTING.String.Text
+#, fuzzy
+msgid  "Conditional Formatting"
+msgstr "ನಿಬಂಧನೆಯ ಫಾರ್ಮಾಟ್ ಪದ್ಧತಿ"
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_REPORTHEADERFOOTER.String.Text
+#, fuzzy
+msgid  "Remove report header / report footer"
+msgstr "ವರದಿಯ ಶಿರೊಲೇಖ / ವರದಿಯ ಅಡಿಲೇಖವನ್ನು ತಗೆದು ಹಾಕು"
+
+#: source/ui/report/report.src#RID_STR_UNDO_ADD_REPORTHEADERFOOTER.String.Text
+#, fuzzy
+msgid  "Add report header / report footer"
+msgstr "ವರದಿಯ ಶಿರೊಲೇಖ / ವರದಿಯ ಅಡಿಲೇಖವನ್ನು ಸೇರಿಸು"
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_PAGEHEADERFOOTER.String.Text
+#, fuzzy
+msgid  "Remove page header / page footer"
+msgstr "ಹಾಳೆಯ ಶಿರೊಲೇಖ / ಹಾಳೆಯ ಅಡಿಲೇಖವನ್ನು ಸೇರಿಸು"
+
+#: source/ui/report/report.src#RID_STR_UNDO_ADD_PAGEHEADERFOOTER.String.Text
+#, fuzzy
+msgid  "Add page header / page footer"
+msgstr "ಹಾಳೆಯ ಶಿರೊಲೇಖ / ಹಾಳೆಯ ಅಡಿಲೇಖವನ್ನು ತೆಗೆದು ಹಾಕು"
+
+#: source/ui/report/report.src#RID_STR_UNDO_PROPERTY.String.Text
+#, fuzzy
+msgid  "Change property '#'"
+msgstr "ಗುಣ '#' ಅನ್ನು ಬದಲಿಸು"
+
+#: source/ui/report/report.src#RID_STR_UNDO_ADD_GROUP_HEADER.String.Text
+#, fuzzy
+msgid  "Add group header "
+msgstr "ಗುಂಪು ಶಿರೊಲೇಖವನ್ನು ಸೇರಿಸು "
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_HEADER.String.Text
+#, fuzzy
+msgid  "Remove group header "
+msgstr "ಗುಂಪು ಶಿರೊಲೇಖವನ್ನು ತೆಗೆದು ಹಾಕು "
+
+#: source/ui/report/report.src#RID_STR_UNDO_ADD_GROUP_FOOTER.String.Text
+#, fuzzy
+msgid  "Add group footer "
+msgstr "ಗುಂಪು ಅಡಿಲೇಖವನ್ನು ಸೇರಿಸು"
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP_FOOTER.String.Text
+#, fuzzy
+msgid  "Remove group footer "
+msgstr "ಗುಂಪು ಅಡಿಲೇಖವನ್ನು ತೆಗೆದು ಹಾಕು"
+
+#: source/ui/report/report.src#RID_STR_UNDO_ADDFUNCTION.String.Text
+#, fuzzy
+msgid  "Add function"
+msgstr "ಕಾರ್ಯವನ್ನು ಸೇರಿಸು"
+
+#: source/ui/report/report.src#RID_STR_UNDO_DELETEFUNCTION.String.Text
+#, fuzzy
+msgid  "Delete function"
+msgstr "ಕಾರ್ಯವನ್ನು ತೆಗೆದುಹಾಕು"
+
+#: source/ui/report/report.src#RID_STR_DESIGN_VIEW.String.Text
+#, fuzzy
+msgid  "Design"
+msgstr "ವಿನ್ಯಾಸ"
+
+#: source/ui/report/report.src#RID_STR_PREVIEW_VIEW.String.Text
+#, fuzzy
+msgid  "Preview"
+msgstr "ಮುನ್ನೋಟ"
+
+#: source/ui/report/report.src#STR_RPT_TITLE.String.Text
+#, fuzzy
+msgid  "Report #"
+msgstr "ವರದಿ #"
+
+#: source/ui/report/report.src#STR_RPT_LABEL.String.Text
+#, fuzzy
+msgid  "~Report name"
+msgstr "ವರದಿಯ ಹೆಸರು(~R)"
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_GROUP.String.Text
+#, fuzzy
+msgid  "Delete Group"
+msgstr "ಗುಂಪನ್ನು ತೆಗೆ"
+
+#: source/ui/report/report.src#RID_STR_UNDO_APPEND_GROUP.String.Text
+#, fuzzy
+msgid  "Add Group"
+msgstr "ಗುಂಪನ್ನ ಸೇರಿಸು"
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_SELECTION.String.Text
+#, fuzzy
+msgid  "Delete Selection"
+msgstr "ಆಯ್ಕೆಯನ್ನು ತೆಗೆ"
+
+#: source/ui/report/report.src#RID_STR_UNDO_REMOVE_FUNCTION.String.Text
+#, fuzzy
+msgid  "Delete Function"
+msgstr "ಕಾರ್ಯವನ್ನು ತೆಗೆ"
+
+#: source/ui/report/report.src#RID_STR_UNDO_CHANGE_SIZE.String.Text
+#, fuzzy
+msgid  "Change Size"
+msgstr "ಗಾತ್ರವನ್ನು ಬದಲಿಸು"
+
+#: source/ui/report/report.src#RID_STR_UNDO_PASTE.String.Text
+#, fuzzy
+msgid  "Paste"
+msgstr "ಅಂಟಿಸು"
+
+#: source/ui/report/report.src#RID_STR_UNDO_INSERT_CONTROL.String.Text
+#, fuzzy
+msgid  "Insert Control"
+msgstr "ನಿಯಂತ್ರಣವನ್ನು ಸೇರ್ಪಡಿಸಿ"
+
+#: source/ui/report/report.src#RID_STR_UNDO_DELETE_CONTROL.String.Text
+#, fuzzy
+msgid  "Delete Control"
+msgstr "ನಿಯಂತ್ರಣವನ್ನು ತೆಗೆಯಿರಿ"
+
+#: source/ui/report/report.src#RID_STR_UNDO_GROUP.String.Text
+#, fuzzy
+msgid  "Insert Group"
+msgstr "ಗುಂಪನ್ನು ಅಳವಡಿಸು"
+
+#: source/ui/report/report.src#RID_STR_UNDO_UNGROUP.String.Text
+#, fuzzy
+msgid  "Delete Group"
+msgstr "ಗುಂಪನ್ನು ತೆಗೆ"
+
+#: source/ui/report/report.src#RID_STR_GROUPHEADER.String.Text
+#, fuzzy
+msgid  "GroupHeader"
+msgstr "ಗುಂಪುಶಿರೊಲೇಖ"
+
+#: source/ui/report/report.src#RID_STR_GROUPFOOTER.String.Text
+#, fuzzy
+msgid  "GroupFooter"
+msgstr "ಗುಂಪುಅಡಿಲೇಖ"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_SORTINGANDGROUPING.MenuItem.Text
+#, fuzzy
+msgid  "Sorting and Grouping..."
+msgstr "ವಿಂಗಡಣೆ ಹಾಗು ವರ್ಗೀಕರಣ..."
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_ATTR_CHAR_COLOR_BACKGROUND.MenuItem.Text
+#, fuzzy
+msgid  "Background Color..."
+msgstr "ಹಿನ್ನೆಲೆ ಬಣ್ಣ..."
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_RULER.MenuItem.Text
+#, fuzzy
+msgid  "Ruler..."
+msgstr "ಮಾಪಕ..."
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_GRID_VISIBLE.MenuItem.Text
+#, fuzzy
+msgid  "Grid..."
+msgstr "ಚೌಕಜಾಲ..."
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.MenuItem.Text
+#, fuzzy
+msgid  "~Arrange"
+msgstr "ಹೊಂದಿಸು(~A)"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_UP.MenuItem.Text
+#, fuzzy
+msgid  "Bring ~Forward"
+msgstr "ಮುಂದಕ್ಕೆ ಕಳುಹಿಸು(~F)"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_ARRANGEMENU.SID_FRAME_DOWN.MenuItem.Text
+#, fuzzy
+msgid  "Send Back~ward"
+msgstr "ಹಿಂದಕ್ಕೆ ಕಳುಹಿಸು(~w)"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.MenuItem.Text
+#, fuzzy
+msgid  "~Object Resizing"
+msgstr "ವಸ್ತುವಿನ ಗಾತ್ರ ಬದಲಿಕೆ(~O)"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTWIDTH.MenuItem.Text
+#, fuzzy
+msgid  "~Fit to smallest width"
+msgstr "ಅತಿ ಚಿಕ್ಕ ಅಗಲಕ್ಕೆ ಸರಿಹೊಂದಿಸು(~F)"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTWIDTH.MenuItem.Text
+#, fuzzy
+msgid  "~Fit to greatest width"
+msgstr "ಅತಿ ದೊಡ್ಡ ಅಗಲಕ್ಕೆ ಸರಿಹೊಂದಿಸು(~F)"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_SMALLESTHEIGHT.MenuItem.Text
+#, fuzzy
+msgid  "~Fit to smallest height"
+msgstr "ಅತಿ ಚಿಕ್ಕ ಎತ್ತರಕ್ಕೆ ಸರಿಹೊಂದಿಸು(~F)"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_OBJECT_RESIZING.SID_OBJECT_GREATESTHEIGHT.MenuItem.Text
+#, fuzzy
+msgid  "~Fit to greatest height"
+msgstr "ಅತಿ ದೊಡ್ಡ ಎತ್ತರಕ್ಕೆ ಸರಿಹೊಂದಿಸು(~F)"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.MenuItem.Text
+#, fuzzy
+msgid  "Section"
+msgstr "ವಿಭಾಗ"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK.MenuItem.Text
+#, fuzzy
+msgid  "Shrink"
+msgstr "ಕುಗ್ಗಿಸು"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_TOP.MenuItem.Text
+#, fuzzy
+msgid  "Shrink from top"
+msgstr "ಮೇಲ್ಭಾಗದಿಂದ ಕುಗ್ಗಿಸು"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_SECTION_SHRINK_MENU.SID_SECTION_SHRINK_BOTTOM.MenuItem.Text
+#, fuzzy
+msgid  "Shrink from bottom"
+msgstr "ಕೆಳಭಾಗದಿಂದ ಕುಗ್ಗಿಸು"
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_DISTRIBUTION.MenuItem.Text
+#, fuzzy
+msgid  "Distribution..."
+msgstr "ವಿತರಣೆ..."
+
+#: source/ui/report/report.src#RID_MENU_REPORT.SID_SHOW_PROPERTYBROWSER.MenuItem.Text
+#, fuzzy
+msgid  "Properties..."
+msgstr "ಗುಣಗಳು..."
+
+#: source/ui/report/report.src#RID_STR_FIELDSELECTION.String.Text
+#, fuzzy
+msgid  "Add field:"
+msgstr "ವರ್ಗ ಸೇರಿಸು:"
+
+#: source/ui/report/report.src#RID_STR_FILTER.String.Text
+#, fuzzy
+msgid  "Filter"
+msgstr "ಶೋಧಕ"
+
+#: source/ui/report/report.src#RID_APP_TITLE.String.Text
+#, fuzzy
+msgid  " - %PRODUCTNAME Base Report"
+msgstr "- %PRODUCTNAME ಮೂಲ ವರದಿ"
+
+#: source/ui/report/report.src#RID_APP_NEW_DOC.String.Text
+#, fuzzy
+msgid  "Untitled"
+msgstr "ಶೀರ್ಷಿಕೆರಹಿತ"
+
+#: source/ui/report/report.src#RID_STR_UNDO_ALIGNMENT.String.Text
+#, fuzzy
+msgid  "Change Alignment"
+msgstr "ಹೊಂದಿಕೆಯನ್ನು ಬದಲಾಯಿಸು"
+
+#: source/ui/report/report.src#RID_STR_HEADER.String.Text
+#, fuzzy
+msgid  "# Header"
+msgstr "# ಶಿರೊಲೇಖ"
+
+#: source/ui/report/report.src#RID_STR_FOOTER.String.Text
+#, fuzzy
+msgid  "# Footer"
+msgstr "# ಅಡಿಲೇಖ"
+
+#: source/ui/report/report.src#RID_STR_IMPORT_GRAPHIC.String.Text
+#, fuzzy
+msgid  "Insert graphics"
+msgstr "ಚಿತ್ರಗಳನ್ನು ಅಳವಡಿಸು"
+
+#: source/ui/report/report.src#RID_STR_DELETE.String.Text
+#, fuzzy
+msgid  "Delete"
+msgstr "ಅಳಿಸು"
+
+#: source/ui/report/report.src#RID_STR_FUNCTION.String.Text
+#, fuzzy
+msgid  "Function"
+msgstr "ಕಾರ್ಯಭಾರ"
+
+#: source/ui/report/report.src#RID_STR_COULD_NOT_CREATE_REPORT.String.Text
+#, fuzzy
+msgid  "An error occurred while creating the report."
+msgstr "ವರದಿಯನ್ನು ರಚಿಸುವಲ್ಲಿ ದೋಷ ಉಂಟಾಗಿದೆ."
+
+#: source/ui/report/report.src#RID_STR_CAUGHT_FOREIGN_EXCEPTION.String.Text
+#, fuzzy
+msgid  "An exception of type $type$ was caught."
+msgstr "$type$ ಬಗೆಯ ಒಂದು ಅಪವಾದವು ತಲೆದೋರಿದೆ."
+
+#: source/ui/report/report.src#RID_STR_UNDO_CHANGEFONT.String.Text
+#, fuzzy
+msgid  "Change font"
+msgstr "ಅಕ್ಷರಶೈಲಿಯನ್ನು ಬದಲಾಯಿಸು"
+
+#: source/ui/report/report.src#RID_STR_UNDO_CHANGEPAGE.String.Text
+#, fuzzy
+msgid  "Change page attributes"
+msgstr "ಹಾಳೆಯ ಲಕ್ಷಣಗಳನ್ನು ಬದಲಿಸು"
+
+#: source/ui/report/report.src#RID_STR_PAGEHEADERFOOTER_INSERT.String.Text
+#, fuzzy
+msgid  "Insert Page Header/Footer"
+msgstr "ಹಾಳೆಯ ಶಿರೊಲೇಖ / ಅಡಿಲೇಖವನ್ನು ಸೇರಿಸು"
+
+#: source/ui/report/report.src#RID_STR_PAGEHEADERFOOTER_DELETE.String.Text
+#, fuzzy
+msgid  "Delete Page Header/Footer"
+msgstr "ಹಾಳೆಯ ಶಿರೊಲೇಖ / ಅಡಿಲೇಖವನ್ನು ತೆಗೆದುಹಾಕು"
+
+#: source/ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_INSERT.String.Text
+#, fuzzy
+msgid  "Insert Column Header/Footer"
+msgstr "ಲಂಬಸಾಲಿನ ಶಿರೊಲೇಖ / ಅಡಿಲೇಖವನ್ನು ಸೇರಿಸು"
+
+#: source/ui/report/report.src#RID_STR_COLUMNHEADERFOOTER_DELETE.String.Text
+#, fuzzy
+msgid  "Delete Column Header/Footer"
+msgstr "ಲಂಬಸಾಲಿನ ಶಿರೊಲೇಖ / ಅಡಿಲೇಖವನ್ನು ತೆಗೆದುಹಾಕು"
+
+#: source/ui/report/report.src#RID_STR_REPORTHEADERFOOTER_INSERT.String.Text
+#, fuzzy
+msgid  "Insert Report Header/Footer"
+msgstr "ವರದಿಯ ಶಿರೊಲೇಖ / ಅಡಿಲೇಖವನ್ನು ಸೇರಿಸು"
+
+#: source/ui/report/report.src#RID_STR_REPORTHEADERFOOTER_DELETE.String.Text
+#, fuzzy
+msgid  "Delete Report Header/Footer"
+msgstr "ವರದಿಯ ಶಿರೊಲೇಖ / ಅಡಿಲೇಖವನ್ನು ತೆಗೆದುಹಾಕು"
+
+#: source/ui/report/report.src#RID_ERR_NO_COMMAND.String.Text
+msgid  "The report can not be executed unless it is bound to content."
+msgstr ""
+
+#: source/ui/report/report.src#RID_ERR_NO_OBJECTS.String.Text
+msgid  "The report can not be executed unless at least one object has been inserted."
+msgstr ""
+
+#: source/ui/report/report.src#RID_STR_UNDO_SHRINK.String.Text
+#, fuzzy
+msgid  "Shrink Section"
+msgstr "ವಿಭಾಗವನ್ನು ಕುಗ್ಗಿಸು"
+
+#: source/ui/report/report.src#RID_STR_INSERT.String.Text
+#, fuzzy
+msgid  "Insert"
+msgstr "ಅಳವಡಿಸು"
+
+#: source/ui/report/report.src#RID_STR_DETAIL.String.Text
+#, fuzzy
+msgid  "Detail"
+msgstr "ವಿವರ"
+
+#: source/ui/report/report.src#RID_STR_PAGE_HEADER.String.Text
+#, fuzzy
+msgid  "Page Header"
+msgstr "ಪುಟದ ಶಿರೊಲೇಖ"
+
+#: source/ui/report/report.src#RID_STR_PAGE_FOOTER.String.Text
+#, fuzzy
+msgid  "Page Footer"
+msgstr "ಪುಟದ ಅಡಿಲೇಖ"
+
+#: source/ui/report/report.src#RID_STR_REPORT_HEADER.String.Text
+#, fuzzy
+msgid  "Report Header"
+msgstr "ವರದಿಯ ಶಿರೊಲೇಖ"
+
+#: source/ui/report/report.src#RID_STR_REPORT_FOOTER.String.Text
+#, fuzzy
+msgid  "Report Footer"
+msgstr "ವರದಿಯ ಅಡಿಲೇಖ"

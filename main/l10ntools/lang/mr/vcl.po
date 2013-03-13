@@ -1,796 +1,847 @@
-"X-Accelerator-Marker: ~\n"
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
 
-#: btntext.src#SV_BUTTONTEXT_OK.string.text
-msgid "OK"
-msgstr "ठीक आहे"
 
-#: btntext.src#SV_BUTTONTEXT_CANCEL.string.text
-msgid "Cancel"
-msgstr "रद्द करा"
-
-#: btntext.src#SV_BUTTONTEXT_YES.string.text
-msgid "~Yes"
-msgstr "होय (~Y)"
-
-#: btntext.src#SV_BUTTONTEXT_NO.string.text
-msgid "~No"
-msgstr "नाही (~N)"
-
-#: btntext.src#SV_BUTTONTEXT_RETRY.string.text
-msgid "~Retry"
-msgstr "पुनः प्रयत्न करा (~R)"
-
-#: btntext.src#SV_BUTTONTEXT_HELP.string.text
-msgid "~Help"
-msgstr "मदत (~H)"
-
-#: btntext.src#SV_BUTTONTEXT_MORE.string.text
-msgctxt "btntext.src#SV_BUTTONTEXT_MORE.string.text"
-msgid "~More"
-msgstr "अधिक (~M)"
-
-#: btntext.src#SV_BUTTONTEXT_LESS.string.text
-msgctxt "btntext.src#SV_BUTTONTEXT_LESS.string.text"
-msgid "~More"
-msgstr "अधिक (~M)"
-
-#: btntext.src#SV_BUTTONTEXT_IGNORE.string.text
-msgid "~Ignore"
-msgstr "दुर्लक्ष करा (~I)"
-
-#: btntext.src#SV_BUTTONTEXT_ABORT.string.text
-msgid "~Abort"
-msgstr "रद्द करा (~A)"
-
-#: helptext.src#SV_HELPTEXT_CLOSE.string.text
-msgid "Close"
+#: source/src/helptext.src#SV_HELPTEXT_CLOSE.String.Text
+msgid  "Close"
 msgstr "बंद करा"
 
-#: helptext.src#SV_HELPTEXT_CLOSEDOCUMENT.string.text
-msgid "Close Document"
+#: source/src/helptext.src#SV_HELPTEXT_CLOSEDOCUMENT.String.Text
+msgid  "Close Document"
 msgstr "कागदपत्र बंद करा"
 
-#: helptext.src#SV_HELPTEXT_MINIMIZE.string.text
-msgid "Minimize"
+#: source/src/helptext.src#SV_HELPTEXT_MINIMIZE.String.Text
+msgid  "Minimize"
 msgstr "लहान करा "
 
-#: helptext.src#SV_HELPTEXT_MAXIMIZE.string.text
-msgid "Maximize"
+#: source/src/helptext.src#SV_HELPTEXT_MAXIMIZE.String.Text
+msgid  "Maximize"
 msgstr "मोठे करा"
 
-#: helptext.src#SV_HELPTEXT_RESTORE.string.text
-msgid "Restore"
+#: source/src/helptext.src#SV_HELPTEXT_RESTORE.String.Text
+msgid  "Restore"
 msgstr "पूर्वस्थितीत आणा"
 
-#: helptext.src#SV_HELPTEXT_ROLLDOWN.string.text
-msgid "Drop down"
+#: source/src/helptext.src#SV_HELPTEXT_ROLLDOWN.String.Text
+msgid  "Drop down"
 msgstr "खाली पाडा"
 
-#: helptext.src#SV_HELPTEXT_ROLLUP.string.text
-msgid "Roll up"
+#: source/src/helptext.src#SV_HELPTEXT_ROLLUP.String.Text
+msgid  "Roll up"
 msgstr "वर गुंडाळा"
 
-#: helptext.src#SV_HELPTEXT_HELP.string.text
-msgctxt "helptext.src#SV_HELPTEXT_HELP.string.text"
-msgid "Help"
+#: source/src/helptext.src#SV_HELPTEXT_HELP.String.Text
+msgid  "Help"
 msgstr "मदत"
 
-#: helptext.src#SV_HELPTEXT_ALWAYSVISIBLE.string.text
-msgid "Always visible"
+#: source/src/helptext.src#SV_HELPTEXT_ALWAYSVISIBLE.String.Text
+msgid  "Always visible"
 msgstr "नेहमीच दृश्यमान"
 
-#: helptext.src#SV_HELPTEXT_FADEIN.string.text
-msgid "Show"
+#: source/src/helptext.src#SV_HELPTEXT_FADEIN.String.Text
+msgid  "Show"
 msgstr "दाखवा"
 
-#: helptext.src#SV_HELPTEXT_FADEOUT.string.text
-msgid "Hide"
+#: source/src/helptext.src#SV_HELPTEXT_FADEOUT.String.Text
+msgid  "Hide"
 msgstr "अदृश्य करा"
 
-#: helptext.src#SV_HELPTEXT_SPLITFLOATING.string.text
-msgid "Floating"
+#: source/src/helptext.src#SV_HELPTEXT_SPLITFLOATING.String.Text
+msgid  "Floating"
 msgstr "तरंगते"
 
-#: helptext.src#SV_HELPTEXT_SPLITFIXED.string.text
-msgid "Stick"
+#: source/src/helptext.src#SV_HELPTEXT_SPLITFIXED.String.Text
+msgid  "Stick"
 msgstr "छडी"
 
-#: helptext.src#SV_SHORTCUT_HELP.string.text
-msgctxt "helptext.src#SV_SHORTCUT_HELP.string.text"
-msgid "Help"
+#: source/src/helptext.src#SV_SHORTCUT_HELP.String.Text
+msgid  "Help"
 msgstr "मदत"
 
-#: helptext.src#SV_SHORTCUT_CONTEXTHELP.string.text
-msgid "Context Help"
+#: source/src/helptext.src#SV_SHORTCUT_CONTEXTHELP.String.Text
+msgid  "Context Help"
 msgstr "संदर्भ मदत"
 
-#: helptext.src#SV_SHORTCUT_ACTIVEHELP.string.text
-msgid "Extended Tips"
+#: source/src/helptext.src#SV_SHORTCUT_ACTIVEHELP.String.Text
+msgid  "Extended Tips"
 msgstr "विस्तृत टिपा"
 
-#: helptext.src#SV_SHORTCUT_DOCKUNDOCK.string.text
-msgid "Dock/Undock Windows"
+#: source/src/helptext.src#SV_SHORTCUT_DOCKUNDOCK.String.Text
+msgid  "Dock/Undock Windows"
 msgstr " विन्डोज जोडा/जोडू नका"
 
-#: helptext.src#SV_SHORTCUT_NEXTSUBWINDOW.string.text
-msgid "To Next Toolbar/Window"
+#: source/src/helptext.src#SV_SHORTCUT_NEXTSUBWINDOW.String.Text
+msgid  "To Next Toolbar/Window"
 msgstr "पुढच्या साधनपट्टी/विन्डो वर"
 
-#: helptext.src#SV_SHORTCUT_PREVSUBWINDOW.string.text
-msgid "To Previous Toolbar/Window"
+#: source/src/helptext.src#SV_SHORTCUT_PREVSUBWINDOW.String.Text
+msgid  "To Previous Toolbar/Window"
 msgstr "मागच्या साधनपट्टी/विन्डो वर"
 
-#: helptext.src#SV_SHORTCUT_TODOCUMENT.string.text
-msgid "To Document"
+#: source/src/helptext.src#SV_SHORTCUT_TODOCUMENT.String.Text
+msgid  "To Document"
 msgstr "दस्तऐवजाकडे"
 
-#: helptext.src#SV_SHORTCUT_MENUBAR.string.text
-msgid "To Menu Bar"
+#: source/src/helptext.src#SV_SHORTCUT_MENUBAR.String.Text
+msgid  "To Menu Bar"
 msgstr "पर्याय पट्टीवर"
 
-#: helptext.src#SV_SHORTCUT_SPLITTER.string.text
-msgid "Split window separator"
+#: source/src/helptext.src#SV_SHORTCUT_SPLITTER.String.Text
+msgid  "Split window separator"
 msgstr "विन्डो विभाजक अलग करा"
 
-#: menu.src#SV_RESID_STRING_NOSELECTIONPOSSIBLE.string.text
-msgid "<No selection possible>"
-msgstr " <कोणतीही निवड शक्य नाही>"
-
-#: menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_UNDO.menuitem.text
-msgid "~Undo"
-msgstr "पूर्ववत् करा (~U)"
-
-#: menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_CUT.menuitem.text
-msgid "Cu~t"
-msgstr "कापा (~t)"
-
-#: menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_COPY.menuitem.text
-msgid "~Copy"
-msgstr "प्रत बनवा (~C)"
-
-#: menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_PASTE.menuitem.text
-msgid "~Paste"
-msgstr "चिकटवा (~P)"
-
-#: menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_DELETE.menuitem.text
-msgid "~Delete"
-msgstr "नष्ट करा (~D)"
-
-#: menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_SELECTALL.menuitem.text
-msgid "Select ~All"
-msgstr "सर्व निवडा (~A)"
-
-#: menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_INSERTSYMBOL.menuitem.text
-msgid "~Special Character..."
-msgstr "विशेष अक्षर (~S)..."
-
-#: menu.src#SV_MENU_MAC_SERVICES.string.text
-msgid "Services"
-msgstr "सेवा"
-
-#: menu.src#SV_MENU_MAC_HIDEAPP.string.text
-msgid "Hide %PRODUCTNAME"
-msgstr "%PRODUCTNAME अदृश्य करा"
-
-#: menu.src#SV_MENU_MAC_HIDEALL.string.text
-msgid "Hide Others"
-msgstr "इतर अदृश्य करा"
-
-#: menu.src#SV_MENU_MAC_SHOWALL.string.text
-msgid "Show All"
-msgstr "सर्व दाखवा"
-
-#: menu.src#SV_MENU_MAC_QUITAPP.string.text
-msgid "Quit %PRODUCTNAME"
-msgstr "%PRODUCTNAME मधून बाहेर पडा"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_OK.okbutton.text
-msgid "~Print"
-msgstr "छपाई (~P)"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_PAGE_TXT.fixedtext.text
-msgid "/ %n"
-msgstr "/ %n"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_NOPAGES.string.text
-msgid "No pages"
-msgstr "पाने नाही"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_TOFILE_TXT.string.text
-msgid "Print to File..."
-msgstr "फाइल मध्ये छपाई करा..."
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_DEFPRT_TXT.string.text
-msgid "Default printer"
-msgstr "मूळस्थिती मुद्रक"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_PRINTPREVIEW_TXT.string.text
-msgid "Print preview"
-msgstr "छपाई पूर्वावलोकन"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_LAYOUT_FL.fixedline.text
-msgid "Layout"
-msgstr "मांडणी"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BTN.radiobutton.text
-msgid "Pa~ges per sheet"
-msgstr "पाने प्रत्येक शीट (~g)"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.1.stringlist.text
-msgid "1"
-msgstr "1"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.2.stringlist.text
-msgid "2"
-msgstr "2"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.3.stringlist.text
-msgid "4"
-msgstr "4"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.4.stringlist.text
-msgid "6"
-msgstr "6"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.5.stringlist.text
-msgid "9"
-msgstr "9"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.6.stringlist.text
-msgid "16"
-msgstr "16"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.7.stringlist.text
-msgid "Custom"
-msgstr "मनपसंत"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_NUM_PAGES_TXT.fixedtext.text
-msgid "P~ages"
-msgstr "पाने (~a)"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_TIMES_TXT.fixedtext.text
-msgid "b~y"
-msgstr "नुरूप (~y)"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_PAGES_1_TXT.fixedtext.text
-msgid "~Distance"
-msgstr "अंतर (~D)"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_PAGES_2_TXT.fixedtext.text
-msgid "between pages"
-msgstr "पानांच्या अंतर्गत"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_SHEET_1_TXT.fixedtext.text
-msgid "~Margin"
-msgstr "समास (~M)"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_SHEET_2_TXT.fixedtext.text
-msgid "to sheet border"
-msgstr "शीटच्या किनारपर्यंत"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_TXT.fixedtext.text
-msgid "~Orientation"
-msgstr "दिशा (~O)"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.1.stringlist.text
-msgid "Automatic"
-msgstr "स्वयं"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.2.stringlist.text
-msgid "Portrait"
-msgstr "उभे"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.3.stringlist.text
-msgid "Landscape"
-msgstr "आडवे"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_TXT.fixedtext.text
-msgid "Order"
-msgstr "क्रम"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.1.stringlist.text
-msgid "left to right, then down"
-msgstr "डावे ते उजवे, त्यानंतर खाली"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.2.stringlist.text
-msgid "top to bottom, then right"
-msgstr "शीर्ष ते तळ, त्यानंतर उजवीकडे"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.3.stringlist.text
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_MM.ItemList.item
 #, fuzzy
-msgid "top to bottom, then left"
-msgstr "शीर्ष ते तळ, त्यानंतर उजवीकडे"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.4.stringlist.text
-msgid "right to left, then down"
-msgstr ""
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_BORDER_CB.checkbox.text
-msgid "Draw a border around each page"
-msgstr "प्रत्येक पानाभोवती किनार रेखांकीत करा"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.tabpage.text
-msgid "Page Layout"
-msgstr "पानाची मांडणी"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_PRINTERS_FL.fixedline.text
-msgid "Prin~ter"
-msgstr "छपाईयंत्र (~t)"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_DETAILS_BTN.checkbox.text
-msgid "Details"
-msgstr "तपशील"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_STATUS_TXT.fixedtext.text
-msgid "Status:"
-msgstr "स्थिती:"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_LOCATION_TXT.fixedtext.text
-msgid "Location:"
-msgstr "स्थान:"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_COMMENT_TXT.fixedtext.text
-msgid "Comment:"
-msgstr "टिप्पणी:"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_PRT_SETUP.pushbutton.text
-msgid "Properties..."
-msgstr "गुणधर्म..."
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_COPIES.fixedline.text
-msgid "Range and copies"
-msgstr "व्याप्ती व प्रत"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_COPYCOUNT.fixedtext.text
-msgid "Number of copies"
-msgstr "प्रत संख्या"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_COLLATE.checkbox.text
-msgid "Collate"
-msgstr "एकत्र करा"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_OPT_REVERSE.checkbox.text
-msgid "Print in ~reverse page order"
-msgstr "उलट पानाच्या क्रमवारीत छपाई करा (~r)"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.tabpage.text
-msgid "General"
-msgstr "सर्वसाधारण"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_TAB_OPT.SV_PRINT_OPT_PRINT_FL.fixedline.text
-msgctxt "print.src#SV_DLG_PRINT.SV_PRINT_TAB_OPT.SV_PRINT_OPT_PRINT_FL.fixedline.text"
-msgid "Options"
-msgstr "पर्याय"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_TAB_OPT.SV_PRINT_OPT_TOFILE.checkbox.text
-msgid "Print to ~file"
-msgstr "फाइल अंतर्गत छपाई करा (~f)"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_TAB_OPT.SV_PRINT_OPT_SINGLEJOBS.checkbox.text
-msgid "~Create single print jobs for collated output"
-msgstr "सर्व एकत्र आऊटपुटकरीता एक छपाई जॉब् निर्माण करा (~C)"
-
-#: print.src#SV_DLG_PRINT.SV_PRINT_TAB_OPT.tabpage.text
-msgctxt "print.src#SV_DLG_PRINT.SV_PRINT_TAB_OPT.tabpage.text"
-msgid "Options"
-msgstr "पर्याय"
-
-#: print.src#SV_DLG_PRINT.modaldialog.text
-msgid "Print"
-msgstr "छपाई"
-
-#: print.src#SV_DLG_PRINT_PROGRESS.SV_PRINT_PROGRESS_TEXT.fixedtext.text
-msgid "Page %p of %n"
-msgstr "पान %p, %n पैकी"
-
-#: print.src#SV_DLG_PRINT_PROGRESS.modelessdialog.text
-msgid "Printing"
-msgstr "छपाई"
-
-#: print.src#SV_PRINT_NOPRINTERWARNING.errorbox.text
-msgid ""
-"No default printer found.\n"
-"Please choose a printer and try again."
-msgstr ""
-"कोणताही मूळस्थितीचा मुद्रक सापडला नाही.\n"
-"कृपया मुद्रक निवडा व परत प्रयत्न करा."
-
-#: print.src#SV_PRINT_NOCONTENT.errorbox.text
-msgid ""
-"There are no pages to be printed. Please check your document for ranges "
-"relevant to printing."
-msgstr ""
-"छपाईकरीता पाने आढळली नाहीत. छपाईशी संबंधित व्याप्तिकरीता कृपया आपले दस्तऐवज "
-"तपासा."
-
-#: print.src#SV_PRINT_NATIVE_STRINGS.1.itemlist.text
-msgid "Preview"
-msgstr "पूर्वदृश्य"
-
-#: print.src#SV_PRINT_NATIVE_STRINGS.2.itemlist.text
-msgid "Page number"
-msgstr "पान क्रमांक"
-
-#: print.src#SV_PRINT_NATIVE_STRINGS.3.itemlist.text
-msgid "Number of pages"
-msgstr "पानांची संख्या"
-
-#: print.src#SV_PRINT_NATIVE_STRINGS.4.itemlist.text
-msgid "More"
-msgstr "अधिक"
-
-#: print.src#SV_PRINT_NATIVE_STRINGS.5.itemlist.text
-msgid "Print selection only"
-msgstr ""
-
-#: print.src#RID_STR_PAPERNAMES.1.itemlist.text
-msgid "A0"
-msgstr ""
-
-#: print.src#RID_STR_PAPERNAMES.2.itemlist.text
-msgid "A1"
-msgstr ""
-
-#: print.src#RID_STR_PAPERNAMES.3.itemlist.text
-msgid "A2"
-msgstr ""
-
-#: print.src#RID_STR_PAPERNAMES.4.itemlist.text
-msgid "A3"
-msgstr ""
-
-#: print.src#RID_STR_PAPERNAMES.5.itemlist.text
-msgid "A4"
-msgstr ""
-
-#: print.src#RID_STR_PAPERNAMES.6.itemlist.text
-msgid "A5"
-msgstr ""
-
-#: print.src#RID_STR_PAPERNAMES.7.itemlist.text
-msgid "B4 (ISO)"
-msgstr ""
-
-#: print.src#RID_STR_PAPERNAMES.8.itemlist.text
-msgid "B5 (ISO)"
-msgstr ""
-
-#: print.src#RID_STR_PAPERNAMES.9.itemlist.text
-msgid "Letter"
-msgstr ""
-
-#: print.src#RID_STR_PAPERNAMES.10.itemlist.text
-msgid "Legal"
-msgstr ""
-
-#: print.src#RID_STR_PAPERNAMES.11.itemlist.text
-msgid "Tabloid"
-msgstr ""
-
-#: print.src#RID_STR_PAPERNAMES.12.itemlist.text
-msgid "User Defined"
-msgstr ""
-
-#: print.src#RID_STR_PAPERNAMES.13.itemlist.text
-msgid "B6 (ISO)"
-msgstr ""
-
-#: print.src#RID_STR_PAPERNAMES.14.itemlist.text
-msgid "C4 Envelope"
-msgstr ""
-
-#: print.src#RID_STR_PAPERNAMES.15.itemlist.text
-msgid "C5 Envelope"
-msgstr ""
-
-#: print.src#RID_STR_PAPERNAMES.16.itemlist.text
-msgid "C6 Envelope"
-msgstr ""
-
-#: print.src#RID_STR_PAPERNAMES.17.itemlist.text
-msgid "C6/5 Envelope"
-msgstr ""
-
-#: print.src#RID_STR_PAPERNAMES.18.itemlist.text
-msgid "DL Envelope"
-msgstr ""
-
-#: print.src#RID_STR_PAPERNAMES.19.itemlist.text
-msgid "Dia Slide"
-msgstr ""
-
-#: print.src#RID_STR_PAPERNAMES.20.itemlist.text
-msgid "Screen"
-msgstr ""
-
-#: print.src#RID_STR_PAPERNAMES.21.itemlist.text
-msgid "C"
-msgstr ""
-
-#: print.src#RID_STR_PAPERNAMES.22.itemlist.text
-msgid "D"
-msgstr ""
-
-#: print.src#RID_STR_PAPERNAMES.23.itemlist.text
-msgid "E"
-msgstr ""
-
-#: print.src#RID_STR_PAPERNAMES.24.itemlist.text
-msgid "Executive"
-msgstr ""
-
-#: print.src#RID_STR_PAPERNAMES.25.itemlist.text
-msgid "Long Bond"
-msgstr ""
-
-#: print.src#RID_STR_PAPERNAMES.26.itemlist.text
-msgid "#8 (Monarch) Envelope"
-msgstr ""
-
-#: print.src#RID_STR_PAPERNAMES.27.itemlist.text
-msgid "#6 3/4 (Personal) Envelope"
-msgstr ""
-
-#: print.src#RID_STR_PAPERNAMES.28.itemlist.text
-msgid "#9 Envelope"
-msgstr ""
-
-#: print.src#RID_STR_PAPERNAMES.29.itemlist.text
-msgid "#10 Envelope"
-msgstr ""
-
-#: print.src#RID_STR_PAPERNAMES.30.itemlist.text
-msgid "#11 Envelope"
-msgstr ""
-
-#: print.src#RID_STR_PAPERNAMES.31.itemlist.text
-msgid "#12 Envelope"
-msgstr ""
-
-#: print.src#RID_STR_PAPERNAMES.32.itemlist.text
-msgid "16 Kai"
-msgstr ""
-
-#: print.src#RID_STR_PAPERNAMES.33.itemlist.text
-msgid "32 Kai"
-msgstr ""
-
-#: print.src#RID_STR_PAPERNAMES.34.itemlist.text
-msgid "Big 32 Kai"
-msgstr ""
-
-#: print.src#RID_STR_PAPERNAMES.35.itemlist.text
-msgid "B4 (JIS)"
-msgstr ""
-
-#: print.src#RID_STR_PAPERNAMES.36.itemlist.text
-msgid "B5 (JIS)"
-msgstr ""
-
-#: print.src#RID_STR_PAPERNAMES.37.itemlist.text
-msgid "B6 (JIS)"
-msgstr ""
-
-#: stdtext.src#SV_STDTEXT_SERVICENOTAVAILABLE.string.text
-msgid ""
-"The component (%s) could not be loaded.\n"
-"Please start setup with the repair option."
-msgstr ""
-"(%s)घटक लोड करू शकत नाही.\n"
-" कृपया दुरूस्ती पर्यायाची मांडणी करा."
-
-#: stdtext.src#SV_STDTEXT_DONTHINTAGAIN.string.text
-msgid "Do not show this information again."
-msgstr "ही माहिती पुन्हा दाखवू नका."
-
-#: stdtext.src#SV_STDTEXT_DONTASKAGAIN.string.text
-msgid "Do not show this question again."
-msgstr "हा प्रश्न पुन्हा दाखवू नका."
-
-#: stdtext.src#SV_STDTEXT_DONTWARNAGAIN.string.text
-msgid "Do not show warning again."
-msgstr "ही सावधानता सूचना पुन्हा दाखवू नका."
-
-#: stdtext.src#SV_ACCESSERROR_WRONG_VERSION.string.text
-msgid "Wrong Version"
-msgstr "चुकीची आवृत्ती"
-
-#: stdtext.src#SV_ACCESSERROR_BRIDGE_MSG.string.text
-msgid ""
-"%PRODUCTNAME %PRODUCTVERSION requires a Java Access Bridge 1.0.3 or later "
-"version to support accessibility."
-msgstr ""
-"%PRODUCTNAME %PRODUCTVERSION जावा ऍसेस ब्रिज 1.0.3  आवश्यक आहे किंवा "
-"प्रवेशासाठी पुढील आवृत्ती समर्थित आहे."
-
-#: stdtext.src#SV_ACCESSERROR_OK_CANCEL_MSG.string.text
-msgid ""
-"Click '%OK' to start %PRODUCTNAME %PRODUCTVERSION without accessibility "
-"support, or click '%CANCEL' to exit %PRODUCTNAME %PRODUCTVERSION."
-msgstr ""
-"प्रवेश समर्थनाशिवाय,  %PRODUCTNAME %PRODUCTVERSION चालू करण्यासाठी '%OK' "
-"क्लिक करा, किंवा %PRODUCTNAME %PRODUCTVERSION मधून बाहेर येण्यासाठी  '%"
-"CANCEL' वर क्लिक करा."
-
-#: stdtext.src#SV_ACCESSERROR_MISSING_BRIDGE.string.text
-msgid "No Java Access Bridge"
-msgstr "जावा एक्सेस् ब्रिज नाही"
-
-#: stdtext.src#SV_ACCESSERROR_FAULTY_JAVA.string.text
-msgid "Faulty Java Installation"
-msgstr "चुकीची जावा  स्थापना "
-
-#: stdtext.src#SV_ACCESSERROR_JAVA_MSG.string.text
-msgid ""
-"%PRODUCTNAME %PRODUCTVERSION requires Java 1.4.0_02 or later version to "
-"support accessibility."
-msgstr ""
-"%PRODUCTNAME %PRODUCTVERSION जावा 1.4.0_02 आवश्यक आहे किंवा प्रवेशासाठी "
-"पुढची आवृत्ती समर्थित आहे."
-
-#: stdtext.src#SV_ACCESSERROR_MISSING_JAVA.string.text
-msgid "No Java Installation"
-msgstr "जावा स्थापना नाही"
-
-#: stdtext.src#SV_ACCESSERROR_JAVA_NOT_CONFIGURED.string.text
-msgid "Missing Java Configuration"
-msgstr "जावा अंतर्गत रचना गहाळ झाली आहे"
-
-#: stdtext.src#SV_ACCESSERROR_JAVA_DISABLED.string.text
-msgid "Java Disabled"
-msgstr "जावा असक्षम केले आहे"
-
-#: stdtext.src#SV_ACCESSERROR_TURNAROUND_MSG.string.text
-msgid "The Java Access Bridge could not be started."
-msgstr "जावा ऐक्सेस ब्रिज प्रारंभ होत नाही."
-
-#: stdtext.src#SV_ACCESSERROR_NO_FONTS.string.text
-msgid "No fonts could be found on the system."
-msgstr ""
-
-#: stdtext.src#SV_STDTEXT_ABOUT.string.text
-msgid "About %PRODUCTNAME"
-msgstr "%PRODUCTNAME च्याविषयी"
-
-#: stdtext.src#SV_STDTEXT_PREFERENCES.string.text
-msgid "Preferences..."
-msgstr "प्राधान्ये..."
-
-#: stdtext.src#SV_EDIT_WARNING_BOX.warningbox.text
-msgid ""
-"The inserted text exceeded the maximum length of this text field. The text "
-"was truncated."
-msgstr ""
-"अंतर्भूत केलेले मजकूर या मजकूर  क्षेत्राच्या कमाल लांबीइतके वाढवले.  मजकूर "
-"कमी केला होता."
-
-#: stdtext.src#SV_MAC_SCREENNNAME.string.text
-msgid "Screen %d"
-msgstr "पडदा %d"
-
-#: stdtext.src#SV_STDTEXT_ALLFILETYPES.string.text
-msgid "Any type"
-msgstr "कुठलेही प्रकार"
-
-#: units.src#SV_FUNIT_STRINGS.1.itemlist.text
-msgid "mm"
+msgid  "mm"
 msgstr "mm"
 
-#: units.src#SV_FUNIT_STRINGS.2.itemlist.text
-msgid "cm"
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_CM.ItemList.item
+#, fuzzy
+msgid  "cm"
 msgstr "cm"
 
-#: units.src#SV_FUNIT_STRINGS.3.itemlist.text
-msgid "m"
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_M.ItemList.item
+#, fuzzy
+msgid  "m"
 msgstr "m"
 
-#: units.src#SV_FUNIT_STRINGS.4.itemlist.text
-msgid "km"
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_KM.ItemList.item
+#, fuzzy
+msgid  "km"
 msgstr "km"
 
-#: units.src#SV_FUNIT_STRINGS.5.itemlist.text
-msgid "twips"
-msgstr "twips"
-
-#: units.src#SV_FUNIT_STRINGS.6.itemlist.text
-msgid "twip"
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ItemList.item
+#, fuzzy
+msgid  "twip"
 msgstr "twip"
 
-#: units.src#SV_FUNIT_STRINGS.7.itemlist.text
-msgid "pt"
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_POINT.ItemList.item
+#, fuzzy
+msgid  "pt"
 msgstr "pt"
 
-#: units.src#SV_FUNIT_STRINGS.8.itemlist.text
-msgid "pi"
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_PICA.ItemList.item
+#, fuzzy
+msgid  "pi"
 msgstr "pi"
 
-#: units.src#SV_FUNIT_STRINGS.9.itemlist.text
-msgid "\""
-msgstr "\""
-
-#: units.src#SV_FUNIT_STRINGS.10.itemlist.text
-msgid "in"
-msgstr "in"
-
-#: units.src#SV_FUNIT_STRINGS.11.itemlist.text
-msgid "inch"
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
+#, fuzzy
+msgid  "inch"
 msgstr "इंच"
 
-#: units.src#SV_FUNIT_STRINGS.12.itemlist.text
-msgid "'"
-msgstr "'"
-
-#: units.src#SV_FUNIT_STRINGS.13.itemlist.text
-msgid "ft"
-msgstr "ft"
-
-#: units.src#SV_FUNIT_STRINGS.14.itemlist.text
-msgid "foot"
-msgstr "फूट"
-
-#: units.src#SV_FUNIT_STRINGS.15.itemlist.text
-msgid "feet"
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ItemList.item
+#, fuzzy
+msgid  "feet"
 msgstr "फीट"
 
-#: units.src#SV_FUNIT_STRINGS.16.itemlist.text
-msgid "miles"
-msgstr "माइल्स्"
-
-#: units.src#SV_FUNIT_STRINGS.17.itemlist.text
-msgid "mile"
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ItemList.item
+#, fuzzy
+msgid  "mile"
 msgstr "माइल"
 
-#: units.src#SV_FUNIT_STRINGS.18.itemlist.text
-msgid "%"
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_PERCENT.ItemList.item
+#, fuzzy
+msgid  "%"
 msgstr "%"
 
-#~ msgctxt "print.src#SV_DLG_PRINT.SV_PRINT_PAGE_EDIT.numericfield.text"
-#~ msgid "-"
-#~ msgstr "-"
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_TWIP.ItemList.item
+#, fuzzy
+msgid  "twips"
+msgstr "twips"
 
-#~ msgctxt "print.src#SV_DLG_PRINT.SV_PRINT_PAGE_FORWARD.pushbutton.text"
-#~ msgid "-"
-#~ msgstr "-"
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
+msgid  """
+msgstr ""
 
-#~ msgctxt "print.src#SV_DLG_PRINT.SV_PRINT_PAGE_BACKWARD.pushbutton.text"
-#~ msgid "-"
-#~ msgstr "-"
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_INCH.ItemList.item
+#, fuzzy
+msgid  "in"
+msgstr "in"
 
-#~ msgid "~Default"
-#~ msgstr "पूर्वनिर्धारीत (~D)"
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ItemList.item
+#, fuzzy
+msgid  "'"
+msgstr "'"
 
-#~ msgctxt "print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.listbox.text"
-#~ msgid "-"
-#~ msgstr "-"
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ItemList.item
+#, fuzzy
+msgid  "ft"
+msgstr "ft"
 
-#~ msgctxt "print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_COLS_EDT.numericfield.text"
-#~ msgid "-"
-#~ msgstr "-"
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_FOOT.ItemList.item
+#, fuzzy
+msgid  "foot"
+msgstr "फूट"
 
-#~ msgctxt "print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ROWS_EDT.numericfield.text"
-#~ msgid "-"
-#~ msgstr "-"
+#: source/src/units.src#SV_FUNIT_STRINGS.FUNIT_MILE.ItemList.item
+#, fuzzy
+msgid  "miles"
+msgstr "माइल्स्"
 
-#~ msgctxt "print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_PAGES_EDT.metricfield.text"
-#~ msgid "-"
-#~ msgstr "-"
+#: source/src/stdtext.src#SV_STDTEXT_SERVICENOTAVAILABLE.String.Text
+msgid  "The component (%s) could not be loaded.\nPlease start setup with the repair option."
+msgstr ""
 
-#~ msgctxt "print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_SHEET_EDT.metricfield.text"
-#~ msgid "-"
-#~ msgstr "-"
+#: source/src/stdtext.src#SV_STDTEXT_DONTHINTAGAIN.String.Text
+#, fuzzy
+msgid  "Do not show this information again."
+msgstr "ही माहिती पुन्हा दाखवू नका."
 
-#~ msgctxt "print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.listbox.text"
-#~ msgid "-"
-#~ msgstr "-"
+#: source/src/stdtext.src#SV_STDTEXT_DONTASKAGAIN.String.Text
+#, fuzzy
+msgid  "Do not show this question again."
+msgstr "हा प्रश्न पुन्हा दाखवू नका."
 
-#~ msgctxt "print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.listbox.text"
-#~ msgid "-"
-#~ msgstr "-"
+#: source/src/stdtext.src#SV_STDTEXT_DONTWARNAGAIN.String.Text
+#, fuzzy
+msgid  "Do not show warning again."
+msgstr "ही सावधानता सूचना पुन्हा दाखवू नका."
 
-#~ msgctxt "print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_PRINTERS.listbox.text"
-#~ msgid "-"
-#~ msgstr "-"
+#: source/src/stdtext.src#SV_ACCESSERROR_WRONG_VERSION.String.Text
+#, fuzzy
+msgid  "Wrong Version"
+msgstr "चुकीची आवृत्ती"
 
-#~ msgctxt "print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_COPYCOUNT_FIELD.numericfield.text"
-#~ msgid "-"
-#~ msgstr "-"
+#: source/src/stdtext.src#SV_ACCESSERROR_BRIDGE_MSG.String.Text
+msgid  "%PRODUCTNAME %PRODUCTVERSION requires a Java Access Bridge 1.0.3 or later version to support accessibility."
+msgstr ""
+
+#: source/src/stdtext.src#SV_ACCESSERROR_OK_CANCEL_MSG.String.Text
+msgid  "Click '%OK' to start %PRODUCTNAME %PRODUCTVERSION without accessibility support, or click '%CANCEL' to exit %PRODUCTNAME %PRODUCTVERSION."
+msgstr ""
+
+#: source/src/stdtext.src#SV_ACCESSERROR_MISSING_BRIDGE.String.Text
+#, fuzzy
+msgid  "No Java Access Bridge"
+msgstr "जावा एक्सेस् ब्रिज नाही"
+
+#: source/src/stdtext.src#SV_ACCESSERROR_FAULTY_JAVA.String.Text
+#, fuzzy
+msgid  "Faulty Java Installation"
+msgstr "चुकीची जावा  स्थापना "
+
+#: source/src/stdtext.src#SV_ACCESSERROR_JAVA_MSG.String.Text
+msgid  "%PRODUCTNAME %PRODUCTVERSION requires Java 1.4.0_02 or later version to support accessibility."
+msgstr ""
+
+#: source/src/stdtext.src#SV_ACCESSERROR_MISSING_JAVA.String.Text
+#, fuzzy
+msgid  "No Java Installation"
+msgstr "जावा स्थापना नाही"
+
+#: source/src/stdtext.src#SV_ACCESSERROR_JAVA_NOT_CONFIGURED.String.Text
+#, fuzzy
+msgid  "Missing Java Configuration"
+msgstr "जावा अंतर्गत रचना गहाळ झाली आहे"
+
+#: source/src/stdtext.src#SV_ACCESSERROR_JAVA_DISABLED.String.Text
+#, fuzzy
+msgid  "Java Disabled"
+msgstr "जावा असक्षम केले आहे"
+
+#: source/src/stdtext.src#SV_ACCESSERROR_TURNAROUND_MSG.String.Text
+#, fuzzy
+msgid  "The Java Access Bridge could not be started."
+msgstr "जावा ऐक्सेस ब्रिज प्रारंभ होत नाही."
+
+#: source/src/stdtext.src#SV_ACCESSERROR_NO_FONTS.String.Text
+msgid  "No fonts could be found on the system."
+msgstr ""
+
+#: source/src/stdtext.src#SV_STDTEXT_ABOUT.String.Text
+#, fuzzy
+msgid  "About %PRODUCTNAME"
+msgstr "%PRODUCTNAME च्याविषयी"
+
+#: source/src/stdtext.src#SV_STDTEXT_PREFERENCES.String.Text
+#, fuzzy
+msgid  "Preferences..."
+msgstr "प्राधान्ये..."
+
+#: source/src/stdtext.src#SV_EDIT_WARNING_BOX.WarningBox.Message
+msgid  "The inserted text exceeded the maximum length of this text field. The text was truncated."
+msgstr ""
+
+#: source/src/stdtext.src#SV_MAC_SCREENNNAME.String.Text
+#, fuzzy
+msgid  "Screen %d"
+msgstr "पडदा %d"
+
+#: source/src/stdtext.src#SV_STDTEXT_ALLFILETYPES.String.Text
+#, fuzzy
+msgid  "Any type"
+msgstr "कुठलेही प्रकार"
+
+#: source/src/print.src#SV_DLG_PRINT.ModalDialog.Text
+#, fuzzy
+msgid  "Print"
+msgstr "छपाई"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_OK.OKButton.Text
+#, fuzzy
+msgid  "~Print"
+msgstr "छपाई (~P)"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_PAGE_TXT.FixedText.Text
+#, fuzzy
+msgid  "/ %n"
+msgstr "/ %n"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_NOPAGES.String.Text
+#, fuzzy
+msgid  "No pages"
+msgstr "पाने नाही"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TOFILE_TXT.String.Text
+#, fuzzy
+msgid  "Print to File..."
+msgstr "फाइल मध्ये छपाई करा..."
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_DEFPRT_TXT.String.Text
+#, fuzzy
+msgid  "Default printer"
+msgstr "मूळस्थिती मुद्रक"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_PRINTPREVIEW_TXT.String.Text
+#, fuzzy
+msgid  "Print preview"
+msgstr "छपाई पूर्वावलोकन"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.TabPage.Text
+#, fuzzy
+msgid  "Page Layout"
+msgstr "पानाची मांडणी"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_LAYOUT_FL.FixedLine.Text
+#, fuzzy
+msgid  "Layout"
+msgstr "मांडणी"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BTN.RadioButton.Text
+#, fuzzy
+msgid  "Pa~ges per sheet"
+msgstr "पाने प्रत्येक शीट (~g)"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.1.StringList.item
+#, fuzzy
+msgid  "1"
+msgstr "1"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.2.StringList.item
+#, fuzzy
+msgid  "2"
+msgstr "2"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.4.StringList.item
+#, fuzzy
+msgid  "4"
+msgstr "4"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.6.StringList.item
+#, fuzzy
+msgid  "6"
+msgstr "6"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.9.StringList.item
+#, fuzzy
+msgid  "9"
+msgstr "9"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.16.StringList.item
+#, fuzzy
+msgid  "16"
+msgstr "16"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_PAGES_BOX.0xffff.StringList.item
+#, fuzzy
+msgid  "Custom"
+msgstr "मनपसंत"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_NUM_PAGES_TXT.FixedText.Text
+#, fuzzy
+msgid  "P~ages"
+msgstr "पाने (~a)"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_TIMES_TXT.FixedText.Text
+#, fuzzy
+msgid  "b~y"
+msgstr "नुरूप (~y)"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_PAGES_1_TXT.FixedText.Text
+#, fuzzy
+msgid  "~Distance"
+msgstr "अंतर (~D)"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_PAGES_2_TXT.FixedText.Text
+#, fuzzy
+msgid  "between pages"
+msgstr "पानांच्या अंतर्गत"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_SHEET_1_TXT.FixedText.Text
+#, fuzzy
+msgid  "~Margin"
+msgstr "समास (~M)"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_MARGINS_SHEET_2_TXT.FixedText.Text
+#, fuzzy
+msgid  "to sheet border"
+msgstr "शीटच्या किनारपर्यंत"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_TXT.FixedText.Text
+#, fuzzy
+msgid  "~Orientation"
+msgstr "दिशा (~O)"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_AUTOMATIC.StringList.item
+#, fuzzy
+msgid  "Automatic"
+msgstr "स्वयं"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_PORTRAIT.StringList.item
+#, fuzzy
+msgid  "Portrait"
+msgstr "उभे"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORIENTATION_BOX.SV_PRINT_PRT_NUP_ORIENTATION_LANDSCAPE.StringList.item
+#, fuzzy
+msgid  "Landscape"
+msgstr "आडवे"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_TXT.FixedText.Text
+#, fuzzy
+msgid  "Order"
+msgstr "क्रम"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_LRTB.StringList.item
+#, fuzzy
+msgid  "left to right, then down"
+msgstr "डावे ते उजवे, त्यानंतर खाली"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_TBLR.StringList.item
+#, fuzzy
+msgid  "top to bottom, then right"
+msgstr "शीर्ष ते तळ, त्यानंतर उजवीकडे"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_TBRL.StringList.item
+#, fuzzy
+msgid  "top to bottom, then left"
+msgstr "शीर्ष ते तळ, त्यानंतर उजवीकडे"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_ORDER_BOX.SV_PRINT_PRT_NUP_ORDER_RLTB.StringList.item
+msgid  "right to left, then down"
+msgstr ""
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_NUP.SV_PRINT_PRT_NUP_BORDER_CB.CheckBox.Text
+#, fuzzy
+msgid  "Draw a border around each page"
+msgstr "प्रत्येक पानाभोवती किनार रेखांकीत करा"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.TabPage.Text
+#, fuzzy
+msgid  "General"
+msgstr "सर्वसाधारण"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_PRINTERS_FL.FixedLine.Text
+#, fuzzy
+msgid  "Prin~ter"
+msgstr "छपाईयंत्र (~t)"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_DETAILS_BTN.CheckBox.Text
+#, fuzzy
+msgid  "Details"
+msgstr "तपशील"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_STATUS_TXT.FixedText.Text
+#, fuzzy
+msgid  "Status:"
+msgstr "स्थिती:"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_LOCATION_TXT.FixedText.Text
+#, fuzzy
+msgid  "Location:"
+msgstr "स्थान:"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_COMMENT_TXT.FixedText.Text
+#, fuzzy
+msgid  "Comment:"
+msgstr "टिप्पणी:"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_PRT_SETUP.PushButton.Text
+#, fuzzy
+msgid  "Properties..."
+msgstr "गुणधर्म..."
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_COPIES.FixedLine.Text
+#, fuzzy
+msgid  "Range and copies"
+msgstr "व्याप्ती व प्रत"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_COPYCOUNT.FixedText.Text
+#, fuzzy
+msgid  "Number of copies"
+msgstr "प्रत संख्या"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_COLLATE.CheckBox.Text
+#, fuzzy
+msgid  "Collate"
+msgstr "एकत्र करा"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_JOB.SV_PRINT_OPT_REVERSE.CheckBox.Text
+#, fuzzy
+msgid  "Print in ~reverse page order"
+msgstr "उलट पानाच्या क्रमवारीत छपाई करा (~r)"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_OPT.TabPage.Text
+#, fuzzy
+msgid  "Options"
+msgstr "पर्याय"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_OPT.SV_PRINT_OPT_PRINT_FL.FixedLine.Text
+#, fuzzy
+msgid  "Options"
+msgstr "पर्याय"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_OPT.SV_PRINT_OPT_TOFILE.CheckBox.Text
+#, fuzzy
+msgid  "Print to ~file"
+msgstr "फाइल अंतर्गत छपाई करा (~f)"
+
+#: source/src/print.src#SV_DLG_PRINT.SV_PRINT_TAB_OPT.SV_PRINT_OPT_SINGLEJOBS.CheckBox.Text
+#, fuzzy
+msgid  "~Create single print jobs for collated output"
+msgstr "सर्व एकत्र आऊटपुटकरीता एक छपाई जॉब् निर्माण करा (~C)"
+
+#: source/src/print.src#SV_DLG_PRINT_PROGRESS.ModelessDialog.Text
+#, fuzzy
+msgid  "Printing"
+msgstr "छपाई"
+
+#: source/src/print.src#SV_DLG_PRINT_PROGRESS.SV_PRINT_PROGRESS_TEXT.FixedText.Text
+#, fuzzy
+msgid  "Page %p of %n"
+msgstr "पान %p, %n पैकी"
+
+#: source/src/print.src#SV_PRINT_NOPRINTERWARNING.ErrorBox.Message
+msgid  "No default printer found.\nPlease choose a printer and try again."
+msgstr ""
+
+#: source/src/print.src#SV_PRINT_NOCONTENT.ErrorBox.Message
+msgid  "There are no pages to be printed. Please check your document for ranges relevant to printing."
+msgstr ""
+
+#: source/src/print.src#SV_PRINT_NATIVE_STRINGS.item1.ItemList.item
+#, fuzzy
+msgid  "Preview"
+msgstr "पूर्वदृश्य"
+
+#: source/src/print.src#SV_PRINT_NATIVE_STRINGS.item2.ItemList.item
+#, fuzzy
+msgid  "Page number"
+msgstr "पान क्रमांक"
+
+#: source/src/print.src#SV_PRINT_NATIVE_STRINGS.item3.ItemList.item
+#, fuzzy
+msgid  "Number of pages"
+msgstr "पानांची संख्या"
+
+#: source/src/print.src#SV_PRINT_NATIVE_STRINGS.item4.ItemList.item
+#, fuzzy
+msgid  "More"
+msgstr "अधिक"
+
+#: source/src/print.src#SV_PRINT_NATIVE_STRINGS.item5.ItemList.item
+msgid  "Print selection only"
+msgstr ""
+
+#: source/src/print.src#RID_STR_PAPERNAMES.item1.ItemList.item
+msgid  "A0"
+msgstr ""
+
+#: source/src/print.src#RID_STR_PAPERNAMES.item2.ItemList.item
+msgid  "A1"
+msgstr ""
+
+#: source/src/print.src#RID_STR_PAPERNAMES.item3.ItemList.item
+msgid  "A2"
+msgstr ""
+
+#: source/src/print.src#RID_STR_PAPERNAMES.item4.ItemList.item
+msgid  "A3"
+msgstr ""
+
+#: source/src/print.src#RID_STR_PAPERNAMES.item5.ItemList.item
+msgid  "A4"
+msgstr ""
+
+#: source/src/print.src#RID_STR_PAPERNAMES.item6.ItemList.item
+msgid  "A5"
+msgstr ""
+
+#: source/src/print.src#RID_STR_PAPERNAMES.item7.ItemList.item
+msgid  "B4 (ISO)"
+msgstr ""
+
+#: source/src/print.src#RID_STR_PAPERNAMES.item8.ItemList.item
+msgid  "B5 (ISO)"
+msgstr ""
+
+#: source/src/print.src#RID_STR_PAPERNAMES.item9.ItemList.item
+msgid  "Letter"
+msgstr ""
+
+#: source/src/print.src#RID_STR_PAPERNAMES.item10.ItemList.item
+msgid  "Legal"
+msgstr ""
+
+#: source/src/print.src#RID_STR_PAPERNAMES.item11.ItemList.item
+msgid  "Tabloid"
+msgstr ""
+
+#: source/src/print.src#RID_STR_PAPERNAMES.item12.ItemList.item
+msgid  "User Defined"
+msgstr ""
+
+#: source/src/print.src#RID_STR_PAPERNAMES.item13.ItemList.item
+msgid  "B6 (ISO)"
+msgstr ""
+
+#: source/src/print.src#RID_STR_PAPERNAMES.item14.ItemList.item
+msgid  "C4 Envelope"
+msgstr ""
+
+#: source/src/print.src#RID_STR_PAPERNAMES.item15.ItemList.item
+msgid  "C5 Envelope"
+msgstr ""
+
+#: source/src/print.src#RID_STR_PAPERNAMES.item16.ItemList.item
+msgid  "C6 Envelope"
+msgstr ""
+
+#: source/src/print.src#RID_STR_PAPERNAMES.item17.ItemList.item
+msgid  "C6/5 Envelope"
+msgstr ""
+
+#: source/src/print.src#RID_STR_PAPERNAMES.item18.ItemList.item
+msgid  "DL Envelope"
+msgstr ""
+
+#: source/src/print.src#RID_STR_PAPERNAMES.item19.ItemList.item
+msgid  "Dia Slide"
+msgstr ""
+
+#: source/src/print.src#RID_STR_PAPERNAMES.item20.ItemList.item
+msgid  "Screen"
+msgstr ""
+
+#: source/src/print.src#RID_STR_PAPERNAMES.item21.ItemList.item
+msgid  "C"
+msgstr ""
+
+#: source/src/print.src#RID_STR_PAPERNAMES.item22.ItemList.item
+msgid  "D"
+msgstr ""
+
+#: source/src/print.src#RID_STR_PAPERNAMES.item23.ItemList.item
+msgid  "E"
+msgstr ""
+
+#: source/src/print.src#RID_STR_PAPERNAMES.item24.ItemList.item
+msgid  "Executive"
+msgstr ""
+
+#: source/src/print.src#RID_STR_PAPERNAMES.item25.ItemList.item
+msgid  "Long Bond"
+msgstr ""
+
+#: source/src/print.src#RID_STR_PAPERNAMES.item26.ItemList.item
+msgid  "#8 (Monarch) Envelope"
+msgstr ""
+
+#: source/src/print.src#RID_STR_PAPERNAMES.item27.ItemList.item
+msgid  "#6 3/4 (Personal) Envelope"
+msgstr ""
+
+#: source/src/print.src#RID_STR_PAPERNAMES.item28.ItemList.item
+msgid  "#9 Envelope"
+msgstr ""
+
+#: source/src/print.src#RID_STR_PAPERNAMES.item29.ItemList.item
+msgid  "#10 Envelope"
+msgstr ""
+
+#: source/src/print.src#RID_STR_PAPERNAMES.item30.ItemList.item
+msgid  "#11 Envelope"
+msgstr ""
+
+#: source/src/print.src#RID_STR_PAPERNAMES.item31.ItemList.item
+msgid  "#12 Envelope"
+msgstr ""
+
+#: source/src/print.src#RID_STR_PAPERNAMES.item32.ItemList.item
+msgid  "16 Kai"
+msgstr ""
+
+#: source/src/print.src#RID_STR_PAPERNAMES.item33.ItemList.item
+msgid  "32 Kai"
+msgstr ""
+
+#: source/src/print.src#RID_STR_PAPERNAMES.item34.ItemList.item
+msgid  "Big 32 Kai"
+msgstr ""
+
+#: source/src/print.src#RID_STR_PAPERNAMES.item35.ItemList.item
+msgid  "B4 (JIS)"
+msgstr ""
+
+#: source/src/print.src#RID_STR_PAPERNAMES.item36.ItemList.item
+msgid  "B5 (JIS)"
+msgstr ""
+
+#: source/src/print.src#RID_STR_PAPERNAMES.item37.ItemList.item
+msgid  "B6 (JIS)"
+msgstr ""
+
+#: source/src/menu.src#SV_RESID_STRING_NOSELECTIONPOSSIBLE.String.Text
+#, fuzzy
+msgid  "<No selection possible>"
+msgstr " <कोणतीही निवड शक्य नाही>"
+
+#: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_UNDO.MenuItem.Text
+#, fuzzy
+msgid  "~Undo"
+msgstr "पूर्ववत् करा (~U)"
+
+#: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_CUT.MenuItem.Text
+#, fuzzy
+msgid  "Cu~t"
+msgstr "कापा (~t)"
+
+#: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_COPY.MenuItem.Text
+#, fuzzy
+msgid  "~Copy"
+msgstr "प्रत बनवा (~C)"
+
+#: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_PASTE.MenuItem.Text
+#, fuzzy
+msgid  "~Paste"
+msgstr "चिकटवा (~P)"
+
+#: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_DELETE.MenuItem.Text
+#, fuzzy
+msgid  "~Delete"
+msgstr "नष्ट करा (~D)"
+
+#: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_SELECTALL.MenuItem.Text
+#, fuzzy
+msgid  "Select ~All"
+msgstr "सर्व निवडा (~A)"
+
+#: source/src/menu.src#SV_RESID_MENU_EDIT.SV_MENU_EDIT_INSERTSYMBOL.MenuItem.Text
+#, fuzzy
+msgid  "~Special Character..."
+msgstr "विशेष अक्षर (~S)..."
+
+#: source/src/menu.src#SV_MENU_MAC_SERVICES.String.Text
+#, fuzzy
+msgid  "Services"
+msgstr "सेवा"
+
+#: source/src/menu.src#SV_MENU_MAC_HIDEAPP.String.Text
+#, fuzzy
+msgid  "Hide %PRODUCTNAME"
+msgstr "%PRODUCTNAME अदृश्य करा"
+
+#: source/src/menu.src#SV_MENU_MAC_HIDEALL.String.Text
+#, fuzzy
+msgid  "Hide Others"
+msgstr "इतर अदृश्य करा"
+
+#: source/src/menu.src#SV_MENU_MAC_SHOWALL.String.Text
+#, fuzzy
+msgid  "Show All"
+msgstr "सर्व दाखवा"
+
+#: source/src/menu.src#SV_MENU_MAC_QUITAPP.String.Text
+#, fuzzy
+msgid  "Quit %PRODUCTNAME"
+msgstr "%PRODUCTNAME मधून बाहेर पडा"
+
+#: source/src/btntext.src#SV_BUTTONTEXT_OK.String.Text
+#, fuzzy
+msgid  "OK"
+msgstr "ठीक आहे"
+
+#: source/src/btntext.src#SV_BUTTONTEXT_CANCEL.String.Text
+#, fuzzy
+msgid  "Cancel"
+msgstr "रद्द करा"
+
+#: source/src/btntext.src#SV_BUTTONTEXT_YES.String.Text
+#, fuzzy
+msgid  "~Yes"
+msgstr "होय (~Y)"
+
+#: source/src/btntext.src#SV_BUTTONTEXT_NO.String.Text
+#, fuzzy
+msgid  "~No"
+msgstr "नाही (~N)"
+
+#: source/src/btntext.src#SV_BUTTONTEXT_RETRY.String.Text
+#, fuzzy
+msgid  "~Retry"
+msgstr "पुनः प्रयत्न करा (~R)"
+
+#: source/src/btntext.src#SV_BUTTONTEXT_HELP.String.Text
+#, fuzzy
+msgid  "~Help"
+msgstr "मदत (~H)"
+
+#: source/src/btntext.src#SV_BUTTONTEXT_MORE.String.Text
+#, fuzzy
+msgid  "~More"
+msgstr "अधिक (~M)"
+
+#: source/src/btntext.src#SV_BUTTONTEXT_LESS.String.Text
+#, fuzzy
+msgid  "~More"
+msgstr "अधिक (~M)"
+
+#: source/src/btntext.src#SV_BUTTONTEXT_IGNORE.String.Text
+#, fuzzy
+msgid  "~Ignore"
+msgstr "दुर्लक्ष करा (~I)"
+
+#: source/src/btntext.src#SV_BUTTONTEXT_ABORT.String.Text
+#, fuzzy
+msgid  "~Abort"
+msgstr "रद्द करा (~A)"

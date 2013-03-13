@@ -1,784 +1,604 @@
-"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Translate Toolkit 1.9.0\n"
-"X-Accelerator-Marker: ~\n"
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
 
-#: setupstrings.ulf#STRING_PREVIOUS.LngText.text
-msgid "Back"
+
+#: src/Localization/setupstrings.ulf#STRING_PREVIOUS
+msgid  "Back"
 msgstr "Назад"
 
-#: setupstrings.ulf#STRING_NEXT.LngText.text
-msgid "Next"
+#: src/Localization/setupstrings.ulf#STRING_NEXT
+msgid  "Next"
 msgstr "Далее"
 
-#: setupstrings.ulf#STRING_CANCEL.LngText.text
-msgid "Cancel"
+#: src/Localization/setupstrings.ulf#STRING_CANCEL
+msgid  "Cancel"
 msgstr "Отмена"
 
-#: setupstrings.ulf#STRING_FINISH.LngText.text
-msgid "Finish"
+#: src/Localization/setupstrings.ulf#STRING_FINISH
+msgid  "Finish"
 msgstr "Завершить"
 
-#: setupstrings.ulf#STRING_DECLINE.LngText.text
-msgid "Decline"
+#: src/Localization/setupstrings.ulf#STRING_DECLINE
+msgid  "Decline"
 msgstr "Отклонить"
 
-#: setupstrings.ulf#STRING_INSTALL.LngText.text
-msgid "Install now"
+#: src/Localization/setupstrings.ulf#STRING_INSTALL
+msgid  "Install now"
 msgstr "Установить сейчас"
 
-#: setupstrings.ulf#STRING_UNINSTALL.LngText.text
-msgid "Remove Now"
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALL
+msgid  "Remove Now"
 msgstr "Удалить сейчас"
 
-#: setupstrings.ulf#STRING_HELP.LngText.text
-msgid "Help"
+#: src/Localization/setupstrings.ulf#STRING_HELP
+msgid  "Help"
 msgstr "Справка"
 
-#: setupstrings.ulf#STRING_OK.LngText.text
-msgid "OK"
+#: src/Localization/setupstrings.ulf#STRING_OK
+msgid  "OK"
 msgstr "ОК"
 
-#: setupstrings.ulf#STRING_ERROR.LngText.text
-msgid "Error"
+#: src/Localization/setupstrings.ulf#STRING_ERROR
+msgid  "Error"
 msgstr "Ошибка"
 
-#: setupstrings.ulf#STRING_FILE_NOT_FOUND.LngText.text
-msgid "Error: File not found"
+#: src/Localization/setupstrings.ulf#STRING_FILE_NOT_FOUND
+msgid  "Error: File not found"
 msgstr "Ошибка: файл не найден"
 
-#: setupstrings.ulf#STRING_APPLICATIONTITLE.LngText.text
-msgid "${PRODUCT_FULLNAME} Installation Wizard"
+#: src/Localization/setupstrings.ulf#STRING_APPLICATIONTITLE
+msgid  "${PRODUCT_FULLNAME} Installation Wizard"
 msgstr "Мастер установки ${PRODUCT_FULLNAME}"
 
-#: setupstrings.ulf#STRING_APPLICATIONTITLEUNINSTALLATION.LngText.text
-msgid "${PRODUCT_FULLNAME} Uninstallation Wizard"
+#: src/Localization/setupstrings.ulf#STRING_APPLICATIONTITLEUNINSTALLATION
+msgid  "${PRODUCT_FULLNAME} Uninstallation Wizard"
 msgstr "Мастер удаления ${PRODUCT_FULLNAME}"
 
-#: setupstrings.ulf#STRING_CANCEL_DIALOG_TITLE.LngText.text
-msgid "Exit"
+#: src/Localization/setupstrings.ulf#STRING_CANCEL_DIALOG_TITLE
+msgid  "Exit"
 msgstr "Выход"
 
-#: setupstrings.ulf#STRING_CANCEL_DIALOG.LngText.text
-msgid "Do you really want to exit the Installation Wizard?"
+#: src/Localization/setupstrings.ulf#STRING_CANCEL_DIALOG
+msgid  "Do you really want to exit the Installation Wizard?"
 msgstr "Вы действительно хотите выйти из мастера удаления?"
 
-#: setupstrings.ulf#STRING_CANCEL_DIALOG_UNINSTALLATION.LngText.text
-msgid "Do you really want to exit the Uninstallation Wizard?"
+#: src/Localization/setupstrings.ulf#STRING_CANCEL_DIALOG_UNINSTALLATION
+msgid  "Do you really want to exit the Uninstallation Wizard?"
 msgstr "Вы действительно хотите выйти из мастера удаления?"
 
-#: setupstrings.ulf#STRING_STOP_DIALOG.LngText.text
-msgid "Do you really want to abort the installation process?"
+#: src/Localization/setupstrings.ulf#STRING_STOP_DIALOG
+msgid  "Do you really want to abort the installation process?"
 msgstr "Вы действительно хотите прервать процесс установки?"
 
-#: setupstrings.ulf#STRING_STOP_DIALOG_TITLE.LngText.text
-msgid "Abort installation?"
+#: src/Localization/setupstrings.ulf#STRING_STOP_DIALOG_TITLE
+msgid  "Abort installation?"
 msgstr "Прервать установку?"
 
-#: setupstrings.ulf#STRING_STOP_DIALOG_UNINSTALLATION.LngText.text
-msgid "Do you really want to abort the uninstallation process?"
+#: src/Localization/setupstrings.ulf#STRING_STOP_DIALOG_UNINSTALLATION
+msgid  "Do you really want to abort the uninstallation process?"
 msgstr "Вы действительно хотите прервать процесс удаления?"
 
-#: setupstrings.ulf#STRING_STOP_DIALOG_TITLE_UNINSTALLATION.LngText.text
-msgid "Abort uninstallation?"
+#: src/Localization/setupstrings.ulf#STRING_STOP_DIALOG_TITLE_UNINSTALLATION
+msgid  "Abort uninstallation?"
 msgstr "Прервать удаление?"
 
-#: setupstrings.ulf#STRING_ACCEPTLICENSE.LngText.text
-msgid "Accept License"
+#: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE
+msgid  "Accept License"
 msgstr "Принять лицензию"
 
-#: setupstrings.ulf#STRING_ACCEPTLICENSE1.LngText.text
-msgid "Software License Agreement"
+#: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE1
+msgid  "Software License Agreement"
 msgstr "Лицензионное соглашение программного обеспечения"
 
-#: setupstrings.ulf#STRING_ACCEPTLICENSE2.LngText.text
-msgid "Please read the following license agreement carefully."
+#: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE2
+msgid  "Please read the following license agreement carefully."
 msgstr "Внимательно прочитайте следующее лицензионное соглашение."
 
-#: setupstrings.ulf#STRING_ACCEPTLICENSE3.LngText.text
-msgctxt "setupstrings.ulf#STRING_ACCEPTLICENSE3.LngText.text"
-msgid ""
-"If you have read and accept all the terms of the entire Software License "
-"Agreement, click 'Accept License' to continue with the installation."
+#: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE3
+msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
 msgstr ""
-"Если вы принимаете все условия лицензионного соглашения на использование "
-"программного обеспечения, нажмите кнопку «Принять соглашение», чтобы "
-"продолжить установку."
 
-#: setupstrings.ulf#STRING_CHOOSEDIRECTORY1.LngText.text
-msgid "Select Installation Directory"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1
+msgid  "Select Installation Directory"
 msgstr "Выберите каталог установки"
 
-#: setupstrings.ulf#STRING_CHOOSEDIRECTORY1_UPDATE.LngText.text
-msgid "Update the Installed Version"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1_UPDATE
+msgid  "Update the Installed Version"
 msgstr "Обновить установленную версию"
 
-#: setupstrings.ulf#STRING_CHOOSEDIRECTORY1_MAINTAIN.LngText.text
-msgid "Adding Components to the Installed Version"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1_MAINTAIN
+msgid  "Adding Components to the Installed Version"
 msgstr "Добавление компонентов к установленной версии"
 
-#: setupstrings.ulf#STRING_CHOOSEDIRECTORY2.LngText.text
-msgid "Install ${PRODUCT_FULLNAME} in this directory"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY2
+msgid  "Install ${PRODUCT_FULLNAME} in this directory"
 msgstr "Установить ${PRODUCT_FULLNAME} в каталог:"
 
-#: setupstrings.ulf#STRING_CHOOSEDIRECTORY3.LngText.text
-msgid "Browse..."
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY3
+msgid  "Browse..."
 msgstr "Обзор..."
 
-#: setupstrings.ulf#STRING_CHOOSEDIRECTORY4_QUESTION_TITLE.LngText.text
-msgid "Create New Directory"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY4_QUESTION_TITLE
+msgid  "Create New Directory"
 msgstr "Создать новый каталог"
 
-#: setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE.LngText.text
-msgid ""
-"The directory '${DIR}' does not exist.\n"
-"Do you want to create it now?"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE
+msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now?"
 msgstr ""
-"Каталог '${DIR}' не существует.\n"
-"Создать?"
 
-#: setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2.LngText.text
-msgid ""
-"The directory '${DIR}' does not exist.\n"
-"Do you want to create it now or choose another directory?"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2
+msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now or choose another directory?"
 msgstr ""
-"Каталог '${DIR}' не существует.\n"
-"Создать или выбрать другой?"
 
-#: setupstrings.ulf#STRING_CHOOSEDIRECTORY6.LngText.text
-msgid "Select root directory"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY6
+msgid  "Select root directory"
 msgstr "Выберите корневой каталог"
 
-#: setupstrings.ulf#STRING_CHOOSEDIRECTORY_NO_WRITE_ACCESS.LngText.text
-msgid "You do not have write access in the directory"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_NO_WRITE_ACCESS
+msgid  "You do not have write access in the directory"
 msgstr "Недостаточно правд для записи в указанный каталог"
 
-#: setupstrings.ulf#STRING_CHOOSEDIRECTORY_NOT_ALLOWED.LngText.text
-msgid "You are not allowed to create the directory"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_NOT_ALLOWED
+msgid  "You are not allowed to create the directory"
 msgstr "Нет прав для создания каталога"
 
-#: setupstrings.ulf#STRING_CHOOSEDIRECTORY_NO_SUCCESS.LngText.text
-msgid "Failed to create the directory"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_NO_SUCCESS
+msgid  "Failed to create the directory"
 msgstr "Не удалось создать каталог"
 
-#: setupstrings.ulf#STRING_CHOOSECOMPONENTS1.LngText.text
-msgid "Select Components"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS1
+msgid  "Select Components"
 msgstr "Выбрать компоненты"
 
-#: setupstrings.ulf#STRING_CHOOSECOMPONENTS1_MAINTAIN.LngText.text
-msgid "Select Additional Components"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS1_MAINTAIN
+msgid  "Select Additional Components"
 msgstr "Выбор дополнительных компонентов"
 
-#: setupstrings.ulf#STRING_CHOOSECOMPONENTS2.LngText.text
-msgid "Marked components will be installed. Please mark them accordingly"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS2
+msgid  "Marked components will be installed. Please mark them accordingly"
 msgstr "Выбранные компоненты будут установлены. Отметьте нужные компоненты."
 
-#: setupstrings.ulf#STRING_CHOOSECOMPONENTS3.LngText.text
-msgid "Feature Description"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS3
+msgid  "Feature Description"
 msgstr "Описание"
 
-#: setupstrings.ulf#STRING_CHOOSECOMPONENTS4.LngText.text
-msgid "Size (kB):"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS4
+msgid  "Size (kB):"
 msgstr "Размер (kB):"
 
-#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE1.LngText.text
-msgctxt "setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE1.LngText.text"
-msgid "Select the Type of Installation"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE1
+msgid  "Select the Type of Installation"
 msgstr "Выбрать тип установки"
 
-#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE2.LngText.text
-msgid "Select the type of installation that best suits your needs:"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE2
+msgid  "Select the type of installation that best suits your needs:"
 msgstr "Выберите наиболее подходящий тип установки:"
 
-#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE3.LngText.text
-msgctxt "setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE3.LngText.text"
-msgid "Select the Type of Installation"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE3
+msgid  "Select the Type of Installation"
 msgstr "Выбрать тип установки"
 
-#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE4.LngText.text
-msgid "The main components will be installed. Recommended for most users."
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE4
+msgid  "The main components will be installed. Recommended for most users."
 msgstr ""
-"Будут установлены все компоненты. Рекомендуется для большинства "
-"пользователей."
 
-#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE5.LngText.text
-msgid ""
-"You choose the components you want to install and where they are stored. "
-"Recommended for advanced users."
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE5
+msgid  "You choose the components you want to install and where they are stored. Recommended for advanced users."
 msgstr ""
-"Необходимо выбрать нужные компоненты. Рекомендуется для опытных "
-"пользователей."
 
-#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE6.LngText.text
-msgid "Typical"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE6
+msgid  "Typical"
 msgstr "Обычная"
 
-#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE7.LngText.text
-msgid "Custom"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE7
+msgid  "Custom"
 msgstr "Особая"
 
-#: setupstrings.ulf#STRING_INSTALLATIONIMMINENT1.LngText.text
-msgid "Ready to Install"
+#: src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT1
+msgid  "Ready to Install"
 msgstr "Все готово для установки"
 
-#: setupstrings.ulf#STRING_INSTALLATIONIMMINENT1_UPDATE.LngText.text
-msgid "Ready to Update"
+#: src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT1_UPDATE
+msgid  "Ready to Update"
 msgstr "Все готово для обновления"
 
-#: setupstrings.ulf#STRING_INSTALLATIONIMMINENT2.LngText.text
-msgid "The following ${PRODUCT_FULLNAME} components will be installed:"
+#: src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT2
+msgid  "The following ${PRODUCT_FULLNAME} components will be installed:"
 msgstr "Будут установлены следующие компоненты ${PRODUCT_FULLNAME}:"
 
-#: setupstrings.ulf#STRING_INSTALLATIONONGOING1.LngText.text
-msgid "Installing..."
+#: src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING1
+msgid  "Installing..."
 msgstr "Установка..."
 
-#: setupstrings.ulf#STRING_INSTALLATIONONGOING3.LngText.text
-msgid "Stop"
+#: src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING3
+msgid  "Stop"
 msgstr "Прервать"
 
-#: setupstrings.ulf#STRING_INSTALLATIONONGOING_PACKAGEPATH_NOT_FOUND.LngText.text
-msgid "ERROR: Path with installation packages not found!"
+#: src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING_PACKAGEPATH_NOT_FOUND
+msgid  "ERROR: Path with installation packages not found!"
 msgstr "Ошибка: не найден путь с установочными пакетами."
 
-#: setupstrings.ulf#STRING_PROLOGUE1.LngText.text
-msgid "Welcome"
+#: src/Localization/setupstrings.ulf#STRING_PROLOGUE1
+msgid  "Welcome"
 msgstr "Добро пожаловать"
 
-#: setupstrings.ulf#STRING_PROLOGUE2.LngText.text
-msgid ""
-"This Installation Wizard will install ${PRODUCT_FULLNAME} on your computer."
-msgstr "Этот мастер выполнит установку ${PRODUCT_FULLNAME} на ваш компьютер."
+#: src/Localization/setupstrings.ulf#STRING_PROLOGUE2
+msgid  "This Installation Wizard will install ${PRODUCT_FULLNAME} on your computer."
+msgstr ""
 
-#: setupstrings.ulf#STRING_PROLOGUE3.LngText.text
-msgid "To continue, click 'Next'."
+#: src/Localization/setupstrings.ulf#STRING_PROLOGUE3
+msgid  "To continue, click 'Next'."
 msgstr "Чтобы продолжить, нажмите кнопку «Далее»."
 
-#: setupstrings.ulf#STRING_PROLOGUE4.LngText.text
-msgid ""
-"Note: This installation will be done without root privileges. Therefore you "
-"will have a reduced functionality (Java Runtime Environment (JRE) not "
-"installable, system integration not possible).\n"
-"Click 'Cancel' and change your privileges to root privileges, if you want to "
-"use the complete functionality."
+#: src/Localization/setupstrings.ulf#STRING_PROLOGUE4
+msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
 msgstr ""
-"Примечание: установка будет выполнена без прав администратора. Поэтому "
-"продукт будет установлен с неполной функциональностью (не будут установлены "
-"Java Runtime Environment (JRE), интеграция с рабочим столом).\n"
-"Для полноценной установки щелкните «Отменить» и запустите установку с "
-"правами администратора."
 
-#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1.LngText.text
-msgid "Installation Completed"
+#: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1
+msgid  "Installation Completed"
 msgstr "Установка завершена"
 
-#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1_ABORT.LngText.text
-msgid "Installation Aborted"
+#: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1_ABORT
+msgid  "Installation Aborted"
 msgstr "Установка прервана"
 
-#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1_ERROR.LngText.text
-msgid "Installation Failed"
+#: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1_ERROR
+msgid  "Installation Failed"
 msgstr "Установка не удалась"
 
-#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2.LngText.text
-msgid ""
-"The Installation Wizard has successfully installed ${PRODUCT_FULLNAME} on "
-"your computer."
+#: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2
+msgid  "The Installation Wizard has successfully installed ${PRODUCT_FULLNAME} on your computer."
 msgstr ""
-"Мастер успешно завершил установку ${PRODUCT_FULLNAME} на Вашем компьютере."
 
-#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ABORT.LngText.text
-msgid ""
-"The Installation Wizard was aborted. ${PRODUCT_NAME} is not installed on "
-"your computer."
+#: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ABORT
+msgid  "The Installation Wizard was aborted. ${PRODUCT_NAME} is not installed on your computer."
 msgstr ""
-"Мастер установки прерван. ${PRODUCT_NAME} не был установлен на Вашем "
-"компьютере."
 
-#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ERROR.LngText.text
-msgid ""
-"An error has occurred. Thus the Installation Wizard could not install "
-"${PRODUCT_NAME} on your computer successfully. Click 'Details...' for more "
-"information."
+#: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ERROR
+msgid  "An error has occurred. Thus the Installation Wizard could not install ${PRODUCT_NAME} on your computer successfully. Click 'Details...' for more information."
 msgstr ""
-"Произошла ошибка. Мастер установки не смог установить ${PRODUCT_NAME} на ваш "
-"компьютер. Щелкните «Детали» для подробной информации."
 
-#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED3.LngText.text
-msgid "Click 'Finish' to exit the Wizard."
+#: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED3
+msgid  "Click 'Finish' to exit the Wizard."
 msgstr "Щелкните «Завершить» для выхода из мастера."
 
-#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED_BUTTON.LngText.text
-msgid "Details..."
+#: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED_BUTTON
+msgid  "Details..."
 msgstr "Детали..."
 
-#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE2.LngText.text
-msgid ""
-"The ${PRODUCT_FULLNAME} Uninstallation Wizard will remove "
-"${PRODUCT_FULLNAME} from your computer."
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE2
+msgid  "The ${PRODUCT_FULLNAME} Uninstallation Wizard will remove ${PRODUCT_FULLNAME} from your computer."
 msgstr ""
-"Мастер удаления ${PRODUCT_FULLNAME} удалит ${PRODUCT_FULLNAME} с Вашего "
-"компьютера."
 
-#: setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_ROOT.LngText.text
-msgid ""
-"Sorry, wrong privileges. Installation was done with User privilges, but you "
-"have Root privileges."
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_ROOT
+msgid  "Sorry, wrong privileges. Installation was done with User privilges, but you have Root privileges."
 msgstr ""
-"Некорректные привилегии. Установка была произведена с пользовательскими "
-"привилегиями, а Вы обладаете административными привилегиями."
 
-#: setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_USER.LngText.text
-msgid ""
-"Sorry, wrong privileges. Installation was done with Root privilges, but you "
-"have User privileges."
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_USER
+msgid  "Sorry, wrong privileges. Installation was done with Root privilges, but you have User privileges."
 msgstr ""
-"Некорректные привилегии. Установка была произведена с административными "
-"привилегиями, а Вы обладаете пользовательскими привилегиями."
 
-#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE1.LngText.text
-msgid "Select the Type of Uninstallation"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE1
+msgid  "Select the Type of Uninstallation"
 msgstr "Выберите тип удаления"
 
-#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE2.LngText.text
-msgid "Select the type of uninstallation that best suits your needs:"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE2
+msgid  "Select the type of uninstallation that best suits your needs:"
 msgstr "Выберите наиболее подходящий тип удаления:"
 
-#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE3.LngText.text
-msgid "Partial"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE3
+msgid  "Partial"
 msgstr "Частичное"
 
-#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE4.LngText.text
-msgid ""
-"Completely removes ${PRODUCT_FULLNAME} and all its components from your "
-"system."
-msgstr "Полностью удаляет ${PRODUCT_FULLNAME} и компоненты с Вашей системы."
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE4
+msgid  "Completely removes ${PRODUCT_FULLNAME} and all its components from your system."
+msgstr ""
 
-#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE5.LngText.text
-msgid "You choose the program features you want to remove."
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE5
+msgid  "You choose the program features you want to remove."
 msgstr "Выберите свойства программы, которые Вы хотите удалить."
 
-#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE6.LngText.text
-msgid "Complete"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE6
+msgid  "Complete"
 msgstr "Полное"
 
-#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS2.LngText.text
-msgid ""
-"Components marked with an X will be removed. Mark the components you want to "
-"remove."
-msgstr "Отмеченные компоненты будут удалены. Отметьте компоненты для удаления."
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS2
+msgid  "Components marked with an X will be removed. Mark the components you want to remove."
+msgstr ""
 
-#: setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT1.LngText.text
-msgid "Ready to Remove"
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT1
+msgid  "Ready to Remove"
 msgstr "Все готово для удаления"
 
-#: setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT2.LngText.text
-msgid "The following ${PRODUCT_FULLNAME} components will be removed: "
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT2
+msgid  "The following ${PRODUCT_FULLNAME} components will be removed: "
 msgstr "Будут удалены следующие компоненты ${PRODUCT_FULLNAME}: "
 
-#: setupstrings.ulf#STRING_UNINSTALLATIONONGOING1.LngText.text
-msgid "Uninstalling..."
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONONGOING1
+msgid  "Uninstalling..."
 msgstr "Удаление..."
 
-#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1.LngText.text
-msgid "Uninstallation Completed"
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1
+msgid  "Uninstallation Completed"
 msgstr "Удаление завершено"
 
-#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1_ABORT.LngText.text
-msgid "Uninstallation Aborted"
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1_ABORT
+msgid  "Uninstallation Aborted"
 msgstr "Удаление прервано"
 
-#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1_ERROR.LngText.text
-msgid "Uninstallation Failed"
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1_ERROR
+msgid  "Uninstallation Failed"
 msgstr "Удаление не удалось"
 
-#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2.LngText.text
-msgid ""
-"The Uninstallation Wizard has successfully removed ${PRODUCT_FULLNAME} from "
-"your computer."
-msgstr "Мастер успешно удалил ${PRODUCT_FULLNAME} с Вашего компьютера."
-
-#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_PARTIAL.LngText.text
-msgid ""
-"The Uninstallation Wizard has successfully removed the selected components "
-"of ${PRODUCT_NAME} from your computer."
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2
+msgid  "The Uninstallation Wizard has successfully removed ${PRODUCT_FULLNAME} from your computer."
 msgstr ""
-"Мастер успешно удалил выбранные компоненты ${PRODUCT_LNAME} с Вашего "
-"компьютера."
 
-#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ABORT.LngText.text
-msgid ""
-"The Uninstallation Wizard was aborted before completely removing "
-"${PRODUCT_NAME} from your computer."
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_PARTIAL
+msgid  "The Uninstallation Wizard has successfully removed the selected components of ${PRODUCT_NAME} from your computer."
 msgstr ""
-"Процесс удаления был прерван до полного удаления ${PRODUCT_NAME} с Вашего "
-"компьютера."
 
-#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ERROR.LngText.text
-msgid ""
-"An error has occurred. Thus the Uninstallation Wizard could not remove "
-"${PRODUCT_NAME} from your computer successfully. Click 'Details...' for more "
-"information."
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ABORT
+msgid  "The Uninstallation Wizard was aborted before completely removing ${PRODUCT_NAME} from your computer."
 msgstr ""
-"Произошла ошибка. Мастер удаления не смог полностью удалить ${PRODUCT_NAME} "
-"с вашего компьютера. Щелкните «Детали» для подробной информации."
 
-#: setupstrings.ulf#STRING_INSTALLERFACTORY_OS_NOT_SUPPORTED.LngText.text
-msgid "Sorry, this Operating System is not supported yet."
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ERROR
+msgid  "An error has occurred. Thus the Uninstallation Wizard could not remove ${PRODUCT_NAME} from your computer successfully. Click 'Details...' for more information."
+msgstr ""
+
+#: src/Localization/setupstrings.ulf#STRING_INSTALLERFACTORY_OS_NOT_SUPPORTED
+msgid  "Sorry, this Operating System is not supported yet."
 msgstr "Данная операционная система не поддерживается."
 
-#: setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_FOUND.LngText.text
-msgid "An older version of ${PRODUCT_NAME} was found on your system in:"
+#: src/Localization/setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_FOUND
+msgid  "An older version of ${PRODUCT_NAME} was found on your system in:"
 msgstr "Более старая версия ${PRODUCT_NAME} обнаружена в системе в:"
 
-#: setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_REMOVE.LngText.text
-msgid ""
-"You have to remove the older version of ${PRODUCT_NAME} before you can "
-"install the newer one."
+#: src/Localization/setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_REMOVE
+msgid  "You have to remove the older version of ${PRODUCT_NAME} before you can install the newer one."
 msgstr ""
-"Перед установкой новой версии необходимо удалить старую версию "
-"${PRODUCT_NAME}."
 
-#: setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_FOUND.LngText.text
-msgid "A newer version of ${PRODUCT_NAME} was found on your system in:"
+#: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_FOUND
+msgid  "A newer version of ${PRODUCT_NAME} was found on your system in:"
 msgstr "Более новая версия ${PRODUCT_NAME} была обнаружена в каталоге:"
 
-#: setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_REMOVE.LngText.text
-msgid ""
-"You have to remove the newer version of ${PRODUCT_NAME} before you can "
-"install the older one."
+#: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_REMOVE
+msgid  "You have to remove the newer version of ${PRODUCT_NAME} before you can install the older one."
 msgstr ""
-"Удалите более новую версию ${PRODUCT_NAME} перед установкой более старой."
 
-#: setupstrings.ulf#STRING_NEWER_VERSION_DATABASE.LngText.text
-msgid "Database"
+#: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_DATABASE
+msgid  "Database"
 msgstr "База данных"
 
-#: setupstrings.ulf#STRING_NEWER_VERSION_TIP.LngText.text
-msgid "Please choose another installation directory."
+#: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_TIP
+msgid  "Please choose another installation directory."
 msgstr "Выберите другой каталог установки."
 
-#: setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_1.LngText.text
-msgid "The user you are logged in as cannot run the Installation Wizard."
+#: src/Localization/setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_1
+msgid  "The user you are logged in as cannot run the Installation Wizard."
 msgstr "Данный пользователь не может запустить мастер установки."
 
-#: setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_2.LngText.text
-msgid ""
-"Please log out and log back in as a user with system administrator rights."
-msgstr "Войдите в систему с правами администратора."
+#: src/Localization/setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_2
+msgid  "Please log out and log back in as a user with system administrator rights."
+msgstr ""
 
-#: setupstrings.ulf#STRING_DISCSPACE_INSUFFICIENT.LngText.text
-msgid "Not enough discspace available for installation."
+#: src/Localization/setupstrings.ulf#STRING_DISCSPACE_INSUFFICIENT
+msgid  "Not enough discspace available for installation."
 msgstr "Недостаточно дискового пространства для установки."
 
-#: setupstrings.ulf#STRING_DISCSPACE_REQUIRED.LngText.text
-msgid "Required disc space"
+#: src/Localization/setupstrings.ulf#STRING_DISCSPACE_REQUIRED
+msgid  "Required disc space"
 msgstr "Необходимое дисковое пространство"
 
-#: setupstrings.ulf#STRING_DISCSPACE_AVAILABLE.LngText.text
-msgid "Available disc space"
+#: src/Localization/setupstrings.ulf#STRING_DISCSPACE_AVAILABLE
+msgid  "Available disc space"
 msgstr "Доступное дисковое пространство"
 
-#: setupstrings.ulf#STRING_DISCSPACE_TIP.LngText.text
-msgid ""
-"Please use another directory for installation or change your module "
-"selection."
-msgstr "Используйте другой каталог или измените набор компонентов."
+#: src/Localization/setupstrings.ulf#STRING_DISCSPACE_TIP
+msgid  "Please use another directory for installation or change your module selection."
+msgstr ""
 
-#: setupstrings.ulf#STRING_ANALYZING_DATABASE1.LngText.text
-msgid "Analyzing ..."
+#: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE1
+msgid  "Analyzing ..."
 msgstr "Сбор данных..."
 
-#: setupstrings.ulf#STRING_ANALYZING_DATABASE2.LngText.text
-msgid ""
-"Analyzing database\n"
-"Please wait a moment ..."
+#: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE2
+msgid  "Analyzing database\nPlease wait a moment ..."
 msgstr ""
-"Сбор данных о базе данных.\n"
-"Подождите..."
 
-#: setupstrings.ulf#STRING_PROLOGUE_1.LngText.text
-msgid ""
-"Welcome to the Installation Wizard.<p>This wizard asks you to supply "
-"configuration settings.<p>At the bottom of each page are navigation buttons "
-"that let you move through the Installation Wizard:"
+#: src/Localization/setupstrings.ulf#STRING_PROLOGUE_1
+msgid  "Welcome to the Installation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Installation Wizard:"
 msgstr ""
-"Добро пожаловать в мастер установки.<p>Мастер поможет Вам выбрать параметры "
-"установки.<p>В нижней части находятся кнопки, которые позволят пройти все "
-"шаги мастера:"
 
-#: setupstrings.ulf#STRING_PROLOGUE_2.LngText.text
-msgctxt "setupstrings.ulf#STRING_PROLOGUE_2.LngText.text"
-msgid "'Back' returns you to the previous page."
+#: src/Localization/setupstrings.ulf#STRING_PROLOGUE_2
+msgid  "'Back' returns you to the previous page."
 msgstr "Чтобы вернуться на предыдущую страницу, нажмите кнопку «Назад»."
 
-#: setupstrings.ulf#STRING_PROLOGUE_3.LngText.text
-msgctxt "setupstrings.ulf#STRING_PROLOGUE_3.LngText.text"
-msgid "'Next' takes you to the next page. "
+#: src/Localization/setupstrings.ulf#STRING_PROLOGUE_3
+msgid  "'Next' takes you to the next page. "
 msgstr "Чтобы перейти к следующей странице, нажмите кнопку «Далее». "
 
-#: setupstrings.ulf#STRING_PROLOGUE_4.LngText.text
-msgid "'Cancel' ends the Installation Wizard without installing this software."
+#: src/Localization/setupstrings.ulf#STRING_PROLOGUE_4
+msgid  "'Cancel' ends the Installation Wizard without installing this software."
 msgstr "«Отмена» прекратит работу мастера установки."
 
-#: setupstrings.ulf#STRING_PROLOGUE_5.LngText.text
-msgctxt "setupstrings.ulf#STRING_PROLOGUE_5.LngText.text"
-msgid ""
-"'Help' displays the Help with further information about the page currently "
-"displayed."
+#: src/Localization/setupstrings.ulf#STRING_PROLOGUE_5
+msgid  "'Help' displays the Help with further information about the page currently displayed."
 msgstr ""
-"Чтобы показать дополнительные сведения о текущей странице, нажмите кнопку "
-"«Справка»."
 
-#: setupstrings.ulf#STRING_PROLOGUE_6.LngText.text
-msgid "'OK' exits the Help page and returns you to the Installation Wizard."
+#: src/Localization/setupstrings.ulf#STRING_PROLOGUE_6
+msgid  "'OK' exits the Help page and returns you to the Installation Wizard."
 msgstr ""
-"Чтобы закрыть справку и вернуться к мастеру установки, нажмите кнопку «ОК»."
 
-#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_1.LngText.text
-msgid ""
-"Welcome to the Uninstallation Wizard.<p>This wizard asks you to supply "
-"configuration settings.<p>At the bottom of each page are navigation buttons "
-"that let you move through the Uninstallation Wizard:"
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_1
+msgid  "Welcome to the Uninstallation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Uninstallation Wizard:"
 msgstr ""
-"Добро пожаловать в мастер удаления.<p>Мастер поможет Вам выбрать параметры "
-"удаления.<p>В нижней части находятся кнопки, которые позволят пройти все "
-"шаги мастера:"
 
-#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_2.LngText.text
-msgctxt "setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_2.LngText.text"
-msgid "'Back' returns you to the previous page."
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_2
+msgid  "'Back' returns you to the previous page."
 msgstr "Чтобы вернуться на предыдущую страницу, нажмите кнопку «Назад»."
 
-#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_3.LngText.text
-msgctxt "setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_3.LngText.text"
-msgid "'Next' takes you to the next page. "
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_3
+msgid  "'Next' takes you to the next page. "
 msgstr "Чтобы перейти к следующей странице, нажмите кнопку «Далее». "
 
-#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_4.LngText.text
-msgid "'Cancel' ends the Uninstallation Wizard without removing this software."
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_4
+msgid  "'Cancel' ends the Uninstallation Wizard without removing this software."
 msgstr "«Отмена» прекратит работу мастера удаления."
 
-#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_5.LngText.text
-msgctxt "setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_5.LngText.text"
-msgid ""
-"'Help' displays the Help with further information about the page currently "
-"displayed."
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_5
+msgid  "'Help' displays the Help with further information about the page currently displayed."
 msgstr ""
-"Чтобы показать дополнительные сведения о текущей странице, нажмите кнопку "
-"«Справка»."
 
-#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_6.LngText.text
-msgid "'OK' exits the Help page and returns you to the Uninstallation Wizard."
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_6
+msgid  "'OK' exits the Help page and returns you to the Uninstallation Wizard."
 msgstr ""
-"Чтобы закрыть справку и вернуться к мастеру удаления, нажмите кнопку «ОК»."
 
-#: setupstrings.ulf#STRING_ACCEPTLICENSE_1.LngText.text
-msgid ""
-"Before you install this product, you must read and accept the entire "
-"Software License Agreement under which this software is licensed for your "
-"use."
+#: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_1
+msgid  "Before you install this product, you must read and accept the entire Software License Agreement under which this software is licensed for your use."
 msgstr ""
-"Перед установкой данного продукта вы должны прочитать до конца и принять "
-"лицензионное соглашение, под которым распространяется данный продукт."
 
-#: setupstrings.ulf#STRING_ACCEPTLICENSE_2.LngText.text
-msgctxt "setupstrings.ulf#STRING_ACCEPTLICENSE_2.LngText.text"
-msgid ""
-"If you have read and accept all the terms of the entire Software License "
-"Agreement, click 'Accept License' to continue with the installation."
+#: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_2
+msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
 msgstr ""
-"Если вы принимаете все условия лицензионного соглашения на использование "
-"программного обеспечения, нажмите кнопку «Принять соглашение», чтобы "
-"продолжить установку."
 
-#: setupstrings.ulf#STRING_ACCEPTLICENSE_3.LngText.text
-msgid ""
-"If you do not accept all the terms of the Software License Agreement, click "
-"'Decline' to end the Installation Wizard without installing this product."
+#: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_3
+msgid  "If you do not accept all the terms of the Software License Agreement, click 'Decline' to end the Installation Wizard without installing this product."
 msgstr ""
-"В случае несогласия с условиями лицензионного соглашения щелкните на кнопку "
-"«Отклонить» для завершения мастера установки без установки продукта."
 
-#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE_1.LngText.text
-msgid ""
-"Select the type of product installation to perform from the following "
-"choices. This will determine how much information you need to provide for "
-"product configuration."
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE_1
+msgid  "Select the type of product installation to perform from the following choices. This will determine how much information you need to provide for product configuration."
 msgstr ""
-"Выберите тип установки из следующих вариантов. Количество запрошенной для "
-"конфигурации продукта информации будет зависеть от типа установки."
 
-#: setupstrings.ulf#STRING_CHOOSEDIRECTORY_1.LngText.text
-msgid ""
-"It is recommended that you install this product in the directory suggested "
-"by this Installation Wizard. <p>To choose a different location, click "
-"'Browse...' or specify the full path of the directory to use in the text box "
-"below. <p>If this product is already installed, you cannot change the "
-"destination directory."
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_1
+msgid  "It is recommended that you install this product in the directory suggested by this Installation Wizard. <p>To choose a different location, click 'Browse...' or specify the full path of the directory to use in the text box below. <p>If this product is already installed, you cannot change the destination directory."
 msgstr ""
-"Рекомендуется установить продукт в каталог, предлагаемый мастером установки. "
-"<p>Для выбора альтернативного каталога, щелкните на «Обзор...» или впишите "
-"полный путь в текстовом поле.<p>Каталог установки невозможно изменить, если "
-"продукт уже установлен."
 
-#: setupstrings.ulf#STRING_CHOOSECOMPONENTS_1.LngText.text
-msgid ""
-"Components marked in color will be installed. Click the icon of a component "
-"to mark or unmark the component.<p>All already installed components cannot "
-"be selected for installation."
+#: src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS_1
+msgid  "Components marked in color will be installed. Click the icon of a component to mark or unmark the component.<p>All already installed components cannot be selected for installation."
 msgstr ""
-"Отмеченные цветом компоненты будут установлены. Щелкните на значке "
-"компонента для установки или снятия выделения компонента.<p>Ранее "
-"установленные компоненты не могут быть выбраны для установки."
 
-#: setupstrings.ulf#STRING_INSTALLATIONIMMINENT_1.LngText.text
-msgid ""
-"The listed components are ready for installation based on your configuration "
-"settings. <p>If you are satisfied with your selection, click 'Install Now' "
-"to begin. <p>To check or modify your settings on the previous pages, click "
-"'Back'."
+#: src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT_1
+msgid  "The listed components are ready for installation based on your configuration settings. <p>If you are satisfied with your selection, click 'Install Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
 msgstr ""
-"Перечисленные компоненты готовы к установке на основе заданных параметров "
-"конфигурации. <p>Если выбор сделан, нажмите кнопку «Установить», чтобы "
-"начать установку. <p>Чтобы проверить или изменить параметры, заданные на "
-"предыдущих страницах, нажмите кнопку «Назад»."
 
-#: setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT_1.LngText.text
-msgid ""
-"The listed components are ready for uninstallation based on your "
-"configuration settings. <p>If you are satisfied with your selection, click "
-"'Remove Now' to begin. <p>To check or modify your settings on the previous "
-"pages, click 'Back'."
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT_1
+msgid  "The listed components are ready for uninstallation based on your configuration settings. <p>If you are satisfied with your selection, click 'Remove Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
 msgstr ""
-"Перечисленные компоненты готовы к удалению на основе заданных параметров "
-"конфигурации. <p>Если выбор сделан, нажмите кнопку «Удалить», чтобы начать "
-"удаление. <p>Чтобы проверить или изменить параметры, заданные на предыдущих "
-"страницах, нажмите кнопку «Назад»."
 
-#: setupstrings.ulf#STRING_INSTALLATIONONGOING_1.LngText.text
-msgid ""
-"This page indicates the progress of the installation with the aid of a "
-"progress bar. To abort the installation process, click 'Stop'."
+#: src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING_1
+msgid  "This page indicates the progress of the installation with the aid of a progress bar. To abort the installation process, click 'Stop'."
 msgstr ""
-"На этой странице отображается индикатор выполнения установки. Чтобы "
-"приостановить или прервать процесс установки, нажмите кнопку «Остановить»."
 
-#: setupstrings.ulf#STRING_UNINSTALLATIONONGOING_1.LngText.text
-msgid ""
-"This page indicates the progress of the uninstallation with the aid of a "
-"progress bar. To abort the uninstallation, click 'Stop'."
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONONGOING_1
+msgid  "This page indicates the progress of the uninstallation with the aid of a progress bar. To abort the uninstallation, click 'Stop'."
 msgstr ""
-"На этой странице отображается индикатор выполнения удаления. Чтобы "
-"приостановить или прервать удаление, нажмите кнопку «Остановить»."
 
-#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE_1.LngText.text
-msgid ""
-"Complete: This will remove all installed components of your "
-"version.<p>Partial: This removes only the components you will choose out of "
-"the components list."
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE_1
+msgid  "Complete: This will remove all installed components of your version.<p>Partial: This removes only the components you will choose out of the components list."
 msgstr ""
-"Полное: удаление всех компонентов данной версии.<p>Partial: удаление "
-"выбранных пользователем компонентов."
 
-#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS_1.LngText.text
-msgid ""
-"Components marked with an X will be removed. Click next to a component to "
-"mark or unmark it with an X."
-msgstr "Отмеченные компоненты будут удалены. Отметьте компоненты для удаления."
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS_1
+msgid  "Components marked with an X will be removed. Click next to a component to mark or unmark it with an X."
+msgstr ""
 
-#: setupstrings.ulf#STRING_PACKAGEFORMAT_NOT_SUPPORTED.LngText.text
-msgid ""
-"This package format is currently not supported for your operating system!"
-msgstr "Этот формат пакетов для данной операционной системы не поддерживается."
+#: src/Localization/setupstrings.ulf#STRING_PACKAGEFORMAT_NOT_SUPPORTED
+msgid  "This package format is currently not supported for your operating system!"
+msgstr ""
 
-#: setupstrings.ulf#STRING_OPERATING_SYSTEM.LngText.text
-msgid "Operating system"
+#: src/Localization/setupstrings.ulf#STRING_OPERATING_SYSTEM
+msgid  "Operating system"
 msgstr "Операционная система"
 
-#: setupstrings.ulf#STRING_PACKAGEFORMAT.LngText.text
-msgid "Package format"
+#: src/Localization/setupstrings.ulf#STRING_PACKAGEFORMAT
+msgid  "Package format"
 msgstr "Формат пакетов"
 
-#: setupstrings.ulf#STRING_NOTHING_TO_INSTALL.LngText.text
-msgid "Nothing to install"
+#: src/Localization/setupstrings.ulf#STRING_NOTHING_TO_INSTALL
+msgid  "Nothing to install"
 msgstr "Нечего устанавливать"
 
-#: setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_1.LngText.text
-msgid "No components have been selected for installation."
+#: src/Localization/setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_1
+msgid  "No components have been selected for installation."
 msgstr "Не выбраны компоненты для установки."
 
-#: setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_2.LngText.text
-msgid ""
-"Click 'OK' to select one or more components for installation or to exit the "
-"Installation Wizard."
+#: src/Localization/setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_2
+msgid  "Click 'OK' to select one or more components for installation or to exit the Installation Wizard."
 msgstr ""
-"Чтобы выбрать один или несколько компонентов для установки или завершить "
-"работу мастера установки, нажмите кнопку «ОК»."
 
-#: setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_1.LngText.text
-msgid "No languages have been selected for installation."
+#: src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_1
+msgid  "No languages have been selected for installation."
 msgstr "Не выбраны языковые компоненты для установки."
 
-#: setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_2.LngText.text
-msgid ""
-"Click 'OK' to select one or more languages for installation or to exit the "
-"Installation Wizard."
+#: src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_2
+msgid  "Click 'OK' to select one or more languages for installation or to exit the Installation Wizard."
 msgstr ""
-"Чтобы выбрать один или несколько языков для установки или завершить работу "
-"мастера установки, нажмите кнопку «ОК»."
 
-#: setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_1.LngText.text
-msgid "No applications have been selected for installation."
+#: src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_1
+msgid  "No applications have been selected for installation."
 msgstr "Для установки не выбраны приложения."
 
-#: setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_2.LngText.text
-msgid ""
-"Click 'OK' to select one or more application for installation or to exit the "
-"Installation Wizard."
+#: src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_2
+msgid  "Click 'OK' to select one or more application for installation or to exit the Installation Wizard."
 msgstr ""
-"Нажмите кнопку «OK» для выбора одного или более приложений для установки или "
-"выйдите из мастера установки."
 
-#: setupstrings.ulf#STRING_NOTHING_TO_UNINSTALL.LngText.text
-msgid "Nothing to uninstall"
+#: src/Localization/setupstrings.ulf#STRING_NOTHING_TO_UNINSTALL
+msgid  "Nothing to uninstall"
 msgstr "Нечего удалять"
 
-#: setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_1.LngText.text
-msgid "No components have been selected for uninstallation."
+#: src/Localization/setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_1
+msgid  "No components have been selected for uninstallation."
 msgstr "Не выбраны компоненты для удалнеия."
 
-#: setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_2.LngText.text
-msgid ""
-"Click 'OK' to select one or more components for uninstallation or to exit "
-"the Uninstallation Wizard."
+#: src/Localization/setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_2
+msgid  "Click 'OK' to select one or more components for uninstallation or to exit the Uninstallation Wizard."
 msgstr ""
-"Чтобы выбрать один или несколько компонентов для удаления или завершить "
-"работу мастера удаления, нажмите кнопку «ОК»."
 
-#: setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_1.LngText.text
-msgid "All language components have been selected for uninstallation."
+#: src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_1
+msgid  "All language components have been selected for uninstallation."
 msgstr "Выбраны все языковые компоненты для удаления."
 
-#: setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_2.LngText.text
-msgid ""
-"Click 'OK' to select one or more language components not for uninstallation "
-"or to exit the Uninstallation Wizard."
+#: src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_2
+msgid  "Click 'OK' to select one or more language components not for uninstallation or to exit the Uninstallation Wizard."
 msgstr ""
-"Нажмите кнопку «OK» для выбора одного или более языковых компонентов, "
-"которые необходимо сохранить, или выйдите из мастера удаления."
 
-#: setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_1.LngText.text
-msgid "All application components have been selected for uninstallation."
+#: src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_1
+msgid  "All application components have been selected for uninstallation."
 msgstr "Выбраны все компоненты для удаления."
 
-#: setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_2.LngText.text
-msgid ""
-"Click 'OK' to select one or more application components not for "
-"uninstallation or to exit the Uninstallation Wizard."
+#: src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_2
+msgid  "Click 'OK' to select one or more application components not for uninstallation or to exit the Uninstallation Wizard."
 msgstr ""
-"Нажмите кнопку «OK» для выбора одного или более компонентов приложения, "
-"которые необходимо сохранить, или выйдите из мастера удаления."
 
-#: setupstrings.ulf#STRING_CHANGE_SELECTION.LngText.text
-msgid "Please change selection"
+#: src/Localization/setupstrings.ulf#STRING_CHANGE_SELECTION
+msgid  "Please change selection"
 msgstr "Измените выбор."

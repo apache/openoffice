@@ -1,1770 +1,604 @@
-
-#: sb.src#ERRCODE_BASMGR_LIBLOAD___ERRCODE_RES_MASK.string.text
-msgid "Error loading library '$(ARG1)'."
-msgstr "'$(ARG1)' кiтапхананың жүктеу қатесi"
-
-#: sb.src#ERRCODE_BASMGR_LIBSAVE___ERRCODE_RES_MASK.string.text
-msgid "Error saving library: '$(ARG1)'."
-msgstr " '$(ARG1)':Кiтапхананың жуктеме қатесi"
-
-#: sb.src#ERRCODE_BASMGR_MGROPEN___ERRCODE_RES_MASK.string.text
-msgid "The BASIC from the file '$(ARG1)' could not be initialized."
-msgstr "'$(ARG1)' файлда BASIC-тiң бастапқы шарттары беру мүмкiн емес"
-
-#: sb.src#ERRCODE_BASMGR_MGRSAVE___ERRCODE_RES_MASK.string.text
-msgid "Error saving BASIC: '$(ARG1)'."
-msgstr "BASIC'а сақтау қатесi: '$(ARG1)'"
-
-#: sb.src#ERRCODE_BASMGR_REMOVELIB___ERRCODE_RES_MASK.string.text
-msgid "Error removing library."
-msgstr "Кiтапхананы жою қатесi"
-
-#: sb.src#ERRCODE_BASMGR_UNLOADLIB___ERRCODE_RES_MASK.string.text
-msgid "The library could not be removed from memory."
-msgstr "Кiтапхананы жадынан жоюға болмайды."
-
-#: sb.src#IDS_SBERR_STOREREF.string.text
-msgid "Reference will not be saved: "
-msgstr "Сiлтеме сақталмайды"
-
-#: sb.src#IDS_SBERR_TERMINATED.string.text
-msgid "The macro running has been interrupted"
-msgstr "Макростын орындалуы үзiлiндi"
-
-#: sb.src#RID_BASIC_START.ERRCODE_BASIC_ARRAY_FIX___ERRCODE_RES_MASK.string.text
-msgid "This array is fixed or temporarily locked."
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
 msgstr ""
-
-#: sb.src#RID_BASIC_START.ERRCODE_BASIC_COMPAT___ERRCODE_RES_MASK.string.text
-msgid "$(ARG1)"
-msgstr ""
-
-#: sb.src#RID_BASIC_START.ERRCODE_BASIC_EXCEPTION___ERRCODE_RES_MASK.string.text
-msgid "An exception occurred $(ARG1)."
-msgstr "$(ARG1) бөлектеуiн шығару"
-
-#: sb.src#RID_BASIC_START.ERRCODE_BASIC_EXPR_TOO_COMPLEX___ERRCODE_RES_MASK.string.text
-msgid "Expression Too Complex."
-msgstr ""
-
-#: sb.src#RID_BASIC_START.ERRCODE_BASIC_LOOP_NOT_INIT___ERRCODE_RES_MASK.string.text
-msgid "For loop not initialized."
-msgstr ""
-
-#: sb.src#RID_BASIC_START.ERRCODE_BASIC_OPER_NOT_PERFORM___ERRCODE_RES_MASK.string.text
-msgid "Can't perform requested operation."
-msgstr ""
-
-#: sb.src#RID_BASIC_START.ERRCODE_BASIC_STRING_OVERFLOW___ERRCODE_RES_MASK.string.text
-msgid "Out of string space."
-msgstr ""
-
-#: sb.src#RID_BASIC_START.ERRCODE_BASIC_TOO_MANY_DLL___ERRCODE_RES_MASK.string.text
-msgid "Too many DLL application clients."
-msgstr ""
-
-#: sb.src#RID_BASIC_START.SBERR_IS_NULL___ERRCODE_RES_MASK.string.text
-msgid "Use of zero not permitted."
-msgstr "Нөлдiң қолдануна  рұқсат берiлмеген"
-
-#: sb.src#RID_BASIC_START.SbERR_ACCESS_DENIED___ERRCODE_RES_MASK.string.text
-msgid "Access denied."
-msgstr "Рұқсат жоқ"
-
-#: sb.src#RID_BASIC_START.SbERR_ACCESS_ERROR___ERRCODE_RES_MASK.string.text
-msgid "Path/File access error."
-msgstr "Файлға рұқсат қатесi"
-
-#: sb.src#RID_BASIC_START.SbERR_ALREADY_DIM___ERRCODE_RES_MASK.string.text
-msgid "Array already dimensioned."
-msgstr "Жиым өлшемi белгiлi"
-
-#: sb.src#RID_BASIC_START.SbERR_ARG_MISSING___ERRCODE_RES_MASK.string.text
-msgid "Required argument lacking."
-msgstr "Керектi дәлелдiң жоқтығы"
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_ACTION___ERRCODE_RES_MASK.string.text
-msgid "This action is not supported by given object."
-msgstr "Бұл амал нысанмен сүйемелденбейдi"
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_ARGUMENT___ERRCODE_RES_MASK.string.text
-msgid "Invalid procedure call."
-msgstr "Iс ретiн шақыруы дұрыс емес"
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_BLOCK___ERRCODE_RES_MASK.string.text
-msgid "Statement block still open: $(ARG1) missing."
-msgstr "Нұсқамалардың ашық бөлiгi жоқ: $(ARG1)"
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_BRACKETS___ERRCODE_RES_MASK.string.text
-msgid "Parentheses do not match."
-msgstr "Сынарсыз жақшалар"
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_CHANNEL___ERRCODE_RES_MASK.string.text
-msgid "Invalid file name or file number."
-msgstr "Аты  немесе файлдың нөмiрi дұрыс емес"
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_CHAR_IN_NUMBER___ERRCODE_RES_MASK.string.text
-msgid "Invalid character in number."
-msgstr "Санындағы мүмкiн емес белгi"
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_CLIPBD_FORMAT___ERRCODE_RES_MASK.string.text
-msgid "Invalid clipboard format."
-msgstr "Аралық сақтағыштың мүмкiн емес пiшiнi"
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_DECLARATION___ERRCODE_RES_MASK.string.text
-msgid "Symbol $(ARG1) already defined differently."
-msgstr " $(ARG1) белгiсi бұрын анықталған едi"
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_DLL_CALL___ERRCODE_RES_MASK.string.text
-msgid "Wrong DLL call convention."
-msgstr "DLL шақыру параметрлер тiзбегi дұрыс емес"
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_DLL_LOAD___ERRCODE_RES_MASK.string.text
-msgid "Error loading DLL file."
-msgstr "DLL жүктеу қатесi"
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_EXIT___ERRCODE_RES_MASK.string.text
-msgid "Exit $(ARG1) expected."
-msgstr "Exit $(ARG1) күтуде"
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_FILE_MODE___ERRCODE_RES_MASK.string.text
-msgid "Incorrect file mode."
-msgstr "Файлдың тәртiбi дұрыс емес"
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_INDEX___ERRCODE_RES_MASK.string.text
-msgid "Invalid object index."
-msgstr "Объекттiң индексi дұрыс емес"
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_LOCALE___ERRCODE_RES_MASK.string.text
-msgid "The current locale setting is not supported by the given object."
-msgstr "Осы нысанмен ағымды аймақтық баптаулар сүйемелденбейдi"
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_METHOD___ERRCODE_RES_MASK.string.text
-msgid "This property or method is not supported by the object."
-msgstr "Нысан бұл қасиеттi немесе әдiстi қолдамайды"
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_NUMBER_OF_ARGS___ERRCODE_RES_MASK.string.text
-msgctxt "sb.src#RID_BASIC_START.SbERR_BAD_NUMBER_OF_ARGS___ERRCODE_RES_MASK.string.text"
-msgid "Invalid number of arguments."
-msgstr ""
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_OPTION___ERRCODE_RES_MASK.string.text
-msgid "Unknown option: $(ARG1)."
-msgstr "Белгiсiз параметр: $(ARG1)"
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_ORDINAL___ERRCODE_RES_MASK.string.text
-msgid "Invalid ordinal number."
-msgstr " Реттiк сан дұрыс емес"
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_PARAMETER___ERRCODE_RES_MASK.string.text
-msgid "Invalid parameter."
-msgstr "Параметр дұрыс емес"
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_PARAMETERS___ERRCODE_RES_MASK.string.text
-msgid "Parameters do not correspond to procedure."
-msgstr "Параметрлер iс ретiне сәйкес емес"
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_PATTERN___ERRCODE_RES_MASK.string.text
-msgid "Invalid string pattern."
-msgstr "Қатар үлгiсi дұрыс емес"
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_PROP_VALUE___ERRCODE_RES_MASK.string.text
-msgid "Incorrect property value."
-msgstr "Қасиеттiң қатесi дұрыс емес"
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_RECORD_LENGTH___ERRCODE_RES_MASK.string.text
-msgid "Incorrect record length."
-msgstr "Деректердi жазу үзындығы дұрыс емес"
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_RECORD_NUMBER___ERRCODE_RES_MASK.string.text
-msgid "Incorrect record number."
-msgstr "Жазу нөмiрi дұрыс емес"
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_RESUME___ERRCODE_RES_MASK.string.text
-msgid "Resume without error."
-msgstr "Қатесiз"
-
-#: sb.src#RID_BASIC_START.SbERR_CANNOT_LOAD___ERRCODE_RES_MASK.string.text
-msgid "Module cannot be loaded; invalid format."
-msgstr "Модулдi жүктеуге мүмкiн емес; пiшiмi дұрыс емес"
-
-#: sb.src#RID_BASIC_START.SbERR_CONSTANT_REDECLARED___ERRCODE_RES_MASK.string.text
-msgid "Constant $(ARG1) redefined."
-msgstr "Тұрақты $(ARG1) жаңадан белгiленген"
-
-#: sb.src#RID_BASIC_START.SbERR_CONVERSION___ERRCODE_RES_MASK.string.text
-msgid "Data type mismatch."
-msgstr "Түрлер үйлесiмсiз"
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_BUSY___ERRCODE_RES_MASK.string.text
-msgid "External application busy."
-msgstr "Iшкi қосымша бос емес"
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_CHANNEL_LOCKED___ERRCODE_RES_MASK.string.text
-msgid "DDE channel locked."
-msgstr "DDE арнасы буғатталған"
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_CONV_CLOSED___ERRCODE_RES_MASK.string.text
-msgid "DDE connection interrupted or modified."
-msgstr " DDE бойынша байланыс үзiлген"
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_DLL_NOT_FOUND___ERRCODE_RES_MASK.string.text
-msgid "DDE requires the DDEML.DLL file."
-msgstr "DDE үшiн DDEML. DLL файлы керек"
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_ERROR___ERRCODE_RES_MASK.string.text
-msgid "DDE Error."
-msgstr "DDE қатесi"
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_INVALID_LINK___ERRCODE_RES_MASK.string.text
-msgid "Invalid DDE link format."
-msgstr "DDE бойынша  байланыс пiшiмi дұрыс емес"
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_LINK_ALREADY_EST___ERRCODE_RES_MASK.string.text
-msgid "Paste link already performed."
-msgstr "Сiлтеменi кiрiстiруi орындалған "
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_LINK_INV_TOPIC___ERRCODE_RES_MASK.string.text
-msgid "Link mode cannot be set due to invalid link topic."
-msgstr ""
-"Тақырыптың дұрыс еместiгiнен байланыс тәртiбiн орнатуға мүмкiндiк болмай "
-"тұр. "
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_MULT_RESPONSES___ERRCODE_RES_MASK.string.text
-msgid "Too many applications responded to DDE connect initiation."
-msgstr ""
-"Өте көп қосымшалар DDE бойынша байланысты орнатуын тырысуға жауап бередi  "
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_NOTPROCESSED___ERRCODE_RES_MASK.string.text
-msgid "External application cannot execute DDE operation."
-msgstr "Iшкi қосымшалар DDE iс ретiн орындауға мүмкiндiк жоқ"
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_NO_CHANNEL___ERRCODE_RES_MASK.string.text
-msgid "DDE method invoked with no channel open."
-msgstr "DDE әдiсi DDE арнаның болмауында шақырылған"
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_NO_DATA___ERRCODE_RES_MASK.string.text
-msgid "DDE operation without data."
-msgstr " DDE операциясы деректерсiз"
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_NO_RESPONSE___ERRCODE_RES_MASK.string.text
-msgid "No application responded to DDE connect initiation."
-msgstr "Қосымша DDE бойынша байланысты орнатуын тырысуға жауап бермейдi"
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_OUTOFCHANNELS___ERRCODE_RES_MASK.string.text
-msgid "No DDE channels available."
-msgstr "DDE бос арналары жоқ"
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_PARTNER_QUIT___ERRCODE_RES_MASK.string.text
-msgid "External application has been terminated."
-msgstr "Сыртқы қосымшалар жабық"
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_QUEUE_OVERFLOW___ERRCODE_RES_MASK.string.text
-msgid "DDE message has been lost."
-msgstr "DDE мәлiмдемесi жоғалған"
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_TIMEOUT___ERRCODE_RES_MASK.string.text
-msgid "Timeout while waiting for DDE response."
-msgstr " DDE жауапты кұту уақыттың арттыруы"
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_USER_INTERRUPT___ERRCODE_RES_MASK.string.text
-msgid "User pressed ESCAPE during DDE operation."
-msgstr " DDE операция кезiнде пайдаланушы ESCAPE басты"
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_WAITINGACK___ERRCODE_RES_MASK.string.text
-msgid "Awaiting response to DDE connection."
-msgstr " DDE бойынша қосылғанда жауапты күту"
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_WRONG_DATA_FORMAT___ERRCODE_RES_MASK.string.text
-msgid "Data are in wrong format."
-msgstr "Деректер дұрыс емес пiшiмiнде"
-
-#: sb.src#RID_BASIC_START.SbERR_DIFFERENT_DRIVE___ERRCODE_RES_MASK.string.text
-msgid "Renaming on different drives impossible."
-msgstr "Әр түрлi дисктерде жаңадан ат беруге болмайды"
-
-#: sb.src#RID_BASIC_START.SbERR_DISK_FULL___ERRCODE_RES_MASK.string.text
-msgid "Disk or hard drive full."
-msgstr "Диск толық"
-
-#: sb.src#RID_BASIC_START.SbERR_DLLPROC_NOT_FOUND___ERRCODE_RES_MASK.string.text
-msgid "Specified DLL function not found."
-msgstr " DLL-дiң iшiнде жете табылмады"
-
-#: sb.src#RID_BASIC_START.SbERR_DUPLICATE_DEF___ERRCODE_RES_MASK.string.text
-msgid "Duplicate definition."
-msgstr "Жаңадан белгiлеуiн тырысу"
-
-#: sb.src#RID_BASIC_START.SbERR_EXPECTED___ERRCODE_RES_MASK.string.text
-msgid "Expected: $(ARG1)."
-msgstr " $(ARG1): Күтуде"
-
-#: sb.src#RID_BASIC_START.SbERR_FILE_ALREADY_OPEN___ERRCODE_RES_MASK.string.text
-msgid "File already open."
-msgstr "Файл ашық едi"
-
-#: sb.src#RID_BASIC_START.SbERR_FILE_EXISTS___ERRCODE_RES_MASK.string.text
-msgid "File already exists."
-msgstr "Файл бұрынан бар едi"
-
-#: sb.src#RID_BASIC_START.SbERR_FILE_NOT_FOUND___ERRCODE_RES_MASK.string.text
-msgid "File not found."
-msgstr "Файл табылмады"
-
-#: sb.src#RID_BASIC_START.SbERR_GETPROP_FAILED___ERRCODE_RES_MASK.string.text
-msgid "Unable to determine property."
-msgstr "Қасиетiң анықтауға мүмкiндiк жоқ "
-
-#: sb.src#RID_BASIC_START.SbERR_INTERNAL_ERROR___ERRCODE_RES_MASK.string.text
-msgid "Internal error $(ARG1)."
-msgstr " $(ARG1) iшкi қате"
-
-#: sb.src#RID_BASIC_START.SbERR_INVALID_OBJECT___ERRCODE_RES_MASK.string.text
-msgid "Invalid object reference."
-msgstr "Нысанға  сiлтеме дұрыс емес"
-
-#: sb.src#RID_BASIC_START.SbERR_INVALID_USAGE_OBJECT___ERRCODE_RES_MASK.string.text
-msgid "Invalid use of an object."
-msgstr "Нысанның қолдануы дұрыс емес"
-
-#: sb.src#RID_BASIC_START.SbERR_IO_ERROR___ERRCODE_RES_MASK.string.text
-msgid "Device I/O error."
-msgstr "Енгiзу/шығару құрылғылардың қатесi"
-
-#: sb.src#RID_BASIC_START.SbERR_LABEL_DEFINED___ERRCODE_RES_MASK.string.text
-msgid "Label $(ARG1) already defined."
-msgstr "$(ARG1) қолтаңбасы анықталған едi"
-
-#: sb.src#RID_BASIC_START.SbERR_LABEL_EXPECTED___ERRCODE_RES_MASK.string.text
-msgid "Label expected."
-msgstr "Қолтаңба күтуде"
-
-#: sb.src#RID_BASIC_START.SbERR_LVALUE_EXPECTED___ERRCODE_RES_MASK.string.text
-msgid "Value cannot be applied."
-msgstr "Мәндi қолдануға мүмкiн емес"
-
-#: sb.src#RID_BASIC_START.SbERR_MATH_OVERFLOW___ERRCODE_RES_MASK.string.text
-msgid "Overflow."
-msgstr "Тасу"
-
-#: sb.src#RID_BASIC_START.SbERR_METHOD_FAILED___ERRCODE_RES_MASK.string.text
-msgid "Error executing a method."
-msgstr "Әдiстi орындау қатесi"
-
-#: sb.src#RID_BASIC_START.SbERR_METHOD_NOT_FOUND___ERRCODE_RES_MASK.string.text
-msgid "Object does not have this method."
-msgstr "Нысанда осы эдiс жоқ"
-
-#: sb.src#RID_BASIC_START.SbERR_MUST_HAVE_DIMS___ERRCODE_RES_MASK.string.text
-msgid "Array must be dimensioned."
-msgstr "Жиым өлшемдiгiн тағайындау қажет"
-
-#: sb.src#RID_BASIC_START.SbERR_NAMED_NOT_FOUND___ERRCODE_RES_MASK.string.text
-msgid "Named argument not found."
-msgstr "Көрсетiлген дәлел табылмады"
-
-#: sb.src#RID_BASIC_START.SbERR_NEEDS_OBJECT___ERRCODE_RES_MASK.string.text
-msgid "Object required."
-msgstr "Нысан талап етiлiп жатыр"
-
-#: sb.src#RID_BASIC_START.SbERR_NOT_A_COLL___ERRCODE_RES_MASK.string.text
-msgid "Object is not a list."
-msgstr "Нысан тiзiм емес"
-
-#: sb.src#RID_BASIC_START.SbERR_NOT_IMPLEMENTED___ERRCODE_RES_MASK.string.text
-msgid "Not implemented."
-msgstr "Iске асырылмаған"
-
-#: sb.src#RID_BASIC_START.SbERR_NOT_IN_MAIN___ERRCODE_RES_MASK.string.text
-msgid "$(ARG1) not allowed outside a procedure."
-msgstr "Iс ретiнен бөлек $(ARG1)  мүмкiн емес"
-
-#: sb.src#RID_BASIC_START.SbERR_NOT_IN_SUBR___ERRCODE_RES_MASK.string.text
-msgid "$(ARG1) not allowed within a procedure."
-msgstr "$(ARG1) iс ретiнiң iшiнде қолайсыз"
-
-#: sb.src#RID_BASIC_START.SbERR_NOT_OPTIONAL___ERRCODE_RES_MASK.string.text
-msgid "Argument is not optional."
-msgstr "Дәлел қажеттi боп есептеледi"
-
-#: sb.src#RID_BASIC_START.SbERR_NOT_READY___ERRCODE_RES_MASK.string.text
-msgid "Disk not ready."
-msgstr "Диск дайын емес"
-
-#: sb.src#RID_BASIC_START.SbERR_NO_ACTIVE_OBJECT___ERRCODE_RES_MASK.string.text
-msgid "Object is not available."
-msgstr "Қол жетпес нысаны"
-
-#: sb.src#RID_BASIC_START.SbERR_NO_DEVICE___ERRCODE_RES_MASK.string.text
-msgid "Device not available."
-msgstr "Құрылғыға рұқсат жоқ"
-
-#: sb.src#RID_BASIC_START.SbERR_NO_GOSUB___ERRCODE_RES_MASK.string.text
-msgid "Return without Gosub."
-msgstr "Gosub - сыз қайтару"
-
-#: sb.src#RID_BASIC_START.SbERR_NO_IF___ERRCODE_RES_MASK.string.text
-msgid "Else/Endif without If."
-msgstr "Else/Endif  If-сiз"
-
-#: sb.src#RID_BASIC_START.SbERR_NO_MEMORY___ERRCODE_RES_MASK.string.text
-msgid "Not enough memory."
-msgstr "Жады жеткiлiксiз"
-
-#: sb.src#RID_BASIC_START.SbERR_NO_METHOD___ERRCODE_RES_MASK.string.text
-msgid "Property or method not found: $(ARG1)."
-msgstr "Касиетi немесе модулi табылмаған "
-
-#: sb.src#RID_BASIC_START.SbERR_NO_NAMED_ARGS___ERRCODE_RES_MASK.string.text
-msgid "Named arguments are not supported by given object."
-msgstr "Аталган дәлелдер осы нысанмен сүйемелденбейдi               "
-
-#: sb.src#RID_BASIC_START.SbERR_NO_OBJECT___ERRCODE_RES_MASK.string.text
-msgid "Object variable not set."
-msgstr "Айнымалы белгiленбеген"
-
-#: sb.src#RID_BASIC_START.SbERR_NO_OLE___ERRCODE_RES_MASK.string.text
-msgid "OLE Automation is not supported by this object."
-msgstr "OLE бұл нысанмен сүйемелденбеген"
-
-#: sb.src#RID_BASIC_START.SbERR_NO_STRINGS_ARRAYS___ERRCODE_RES_MASK.string.text
-msgid "Strings or arrays not permitted."
-msgstr "Қатарлар немесе жиымдар мүмкiн емес"
-
-#: sb.src#RID_BASIC_START.SbERR_OLE_ERROR___ERRCODE_RES_MASK.string.text
-msgid "OLE Automation Error."
-msgstr "OLE қатесi"
-
-#: sb.src#RID_BASIC_START.SbERR_OUT_OF_RANGE___ERRCODE_RES_MASK.string.text
-msgid "Index out of defined range."
-msgstr "Индекс  белгiленген аралықтан ары"
-
-#: sb.src#RID_BASIC_START.SbERR_PATH_NOT_FOUND___ERRCODE_RES_MASK.string.text
-msgid "Path not found."
-msgstr "Жолы табылмаған"
-
-#: sb.src#RID_BASIC_START.SbERR_PROC_DEFINED___ERRCODE_RES_MASK.string.text
-msgid "Sub procedure or function procedure $(ARG1) already defined."
-msgstr "Iшкi iс ретi немесе  $(ARG1) жете бұрыннан анықталған едi"
-
-#: sb.src#RID_BASIC_START.SbERR_PROC_UNDEFINED___ERRCODE_RES_MASK.string.text
-msgid "Sub-procedure or function procedure not defined."
-msgstr "Iшкi iс ретi немесе жете белгiлiнбеген"
-
-#: sb.src#RID_BASIC_START.SbERR_PROG_TOO_LARGE___ERRCODE_RES_MASK.string.text
-msgid "Program too large."
-msgstr "Бағдарлама өте үлкен"
-
-#: sb.src#RID_BASIC_START.SbERR_PROPERTY_NOT_FOUND___ERRCODE_RES_MASK.string.text
-msgid "Object does not have this property."
-msgstr "Нысанда бұл қасиет жоқ"
-
-#: sb.src#RID_BASIC_START.SbERR_PROP_READONLY___ERRCODE_RES_MASK.string.text
-msgid "This property is read-only."
-msgstr "Тек қана оқуға арналған қасиет"
-
-#: sb.src#RID_BASIC_START.SbERR_PROP_WRITEONLY___ERRCODE_RES_MASK.string.text
-msgid "This property is write only."
-msgstr "Қасиетi тек қана жабаға"
-
-#: sb.src#RID_BASIC_START.SbERR_READ_PAST_EOF___ERRCODE_RES_MASK.string.text
-msgid "Reading exceeds EOF."
-msgstr " (EOF) файл шекарасынан кейiн оқу"
-
-#: sb.src#RID_BASIC_START.SbERR_REDO_FROM_START___ERRCODE_RES_MASK.string.text
-msgid "Incorrect entry; please retry."
-msgstr "Деректердiң енгiзуi дұрыс емес; қайталаңыз"
-
-#: sb.src#RID_BASIC_START.SbERR_SETPROP_FAILED___ERRCODE_RES_MASK.string.text
-msgid "Unable to set property."
-msgstr "Қасиеттi орнатуға мүмкiн емес"
-
-#: sb.src#RID_BASIC_START.SbERR_STACK_OVERFLOW___ERRCODE_RES_MASK.string.text
-msgid "Not enough stack memory."
-msgstr "Iшкi жадының өлшемi жеткiлiксiз"
-
-#: sb.src#RID_BASIC_START.SbERR_SYMBOL_EXPECTED___ERRCODE_RES_MASK.string.text
-msgid "Symbol expected."
-msgstr "Күтпелi белгi"
-
-#: sb.src#RID_BASIC_START.SbERR_SYNTAX___ERRCODE_RES_MASK.string.text
-msgid "Syntax error."
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_SYNTAX & ERRCODE_RES_MASK.String.Text
+msgid  "Syntax error."
 msgstr "Синтактикалық қате"
 
-#: sb.src#RID_BASIC_START.SbERR_TOO_MANY_FILES___ERRCODE_RES_MASK.string.text
-msgid "Too many files."
-msgstr "Өте көп файлдар"
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_GOSUB & ERRCODE_RES_MASK.String.Text
+msgid  "Return without Gosub."
+msgstr "Gosub - сыз қайтару"
 
-#: sb.src#RID_BASIC_START.SbERR_UNDEF_ARRAY___ERRCODE_RES_MASK.string.text
-msgid "Array or procedure $(ARG1) not found."
-msgstr "Жиым немесе iс ретi $(ARG1) табылмады"
+#: source/classes/sb.src#RID_BASIC_START.SbERR_REDO_FROM_START & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect entry; please retry."
+msgstr "Деректердiң енгiзуi дұрыс емес; қайталаңыз"
 
-#: sb.src#RID_BASIC_START.SbERR_UNDEF_LABEL___ERRCODE_RES_MASK.string.text
-msgid "Label $(ARG1) undefined."
-msgstr "Қолтаңба $(ARG1) анықталмаған"
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_ARGUMENT & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid procedure call."
+msgstr "Iс ретiн шақыруы дұрыс емес"
 
-#: sb.src#RID_BASIC_START.SbERR_UNDEF_PROC___ERRCODE_RES_MASK.string.text
-msgid "Procedure $(ARG1) not found."
-msgstr "Iс ретi $(ARG1) табылмады"
+#: source/classes/sb.src#RID_BASIC_START.SbERR_MATH_OVERFLOW & ERRCODE_RES_MASK.String.Text
+msgid  "Overflow."
+msgstr "Тасу"
 
-#: sb.src#RID_BASIC_START.SbERR_UNDEF_TYPE___ERRCODE_RES_MASK.string.text
-msgid "Unknown data type $(ARG1)."
-msgstr "Белгiсiз деректер түрi $(ARG1)"
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_MEMORY & ERRCODE_RES_MASK.String.Text
+msgid  "Not enough memory."
+msgstr "Жады жеткiлiксiз"
 
-#: sb.src#RID_BASIC_START.SbERR_UNDEF_VAR___ERRCODE_RES_MASK.string.text
-msgid "Variable $(ARG1) not found."
-msgstr "Айнымалы $(ARG1) табылмады"
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ALREADY_DIM & ERRCODE_RES_MASK.String.Text
+msgid  "Array already dimensioned."
+msgstr "Жиым өлшемi белгiлi"
 
-#: sb.src#RID_BASIC_START.SbERR_UNEXPECTED___ERRCODE_RES_MASK.string.text
-msgid "Unexpected symbol: $(ARG1)."
-msgstr " $(ARG1): Күтпеген белгi"
+#: source/classes/sb.src#RID_BASIC_START.SbERR_OUT_OF_RANGE & ERRCODE_RES_MASK.String.Text
+msgid  "Index out of defined range."
+msgstr "Индекс  белгiленген аралықтан ары"
 
-#: sb.src#RID_BASIC_START.SbERR_USER_ABORT___ERRCODE_RES_MASK.string.text
-msgid "Process interrupted by user."
-msgstr "Процесс пайдаланушымен  үзiлген"
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DUPLICATE_DEF & ERRCODE_RES_MASK.String.Text
+msgid  "Duplicate definition."
+msgstr "Жаңадан белгiлеуiн тырысу"
 
-#: sb.src#RID_BASIC_START.SbERR_VAR_DEFINED___ERRCODE_RES_MASK.string.text
-msgid "Variable $(ARG1) already defined."
-msgstr "Айнымалы $(ARG1) белгiленген"
-
-#: sb.src#RID_BASIC_START.SbERR_VAR_EXPECTED___ERRCODE_RES_MASK.string.text
-msgid "Variable expected."
-msgstr "Күтпелi айнымалы"
-
-#: sb.src#RID_BASIC_START.SbERR_VAR_UNDEFINED___ERRCODE_RES_MASK.string.text
-msgid "Variable not defined."
-msgstr "Айнымалы белгiленбеген"
-
-#: sb.src#RID_BASIC_START.SbERR_WRONG_ARGS___ERRCODE_RES_MASK.string.text
-msgctxt "sb.src#RID_BASIC_START.SbERR_WRONG_ARGS___ERRCODE_RES_MASK.string.text"
-msgid "Invalid number of arguments."
-msgstr ""
-
-#: sb.src#RID_BASIC_START.SbERR_WRONG_DIMS___ERRCODE_RES_MASK.string.text
-msgid "Dimension specifications do not match."
-msgstr "Өлшемдiк спецификациялары бiр-бiрiне сәйкес келмейдi"
-
-#: sb.src#RID_BASIC_START.SbERR_ZERODIV___ERRCODE_RES_MASK.string.text
-msgid "Division by zero."
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ZERODIV & ERRCODE_RES_MASK.String.Text
+msgid  "Division by zero."
 msgstr "Нөлге бөлу"
 
-#: basic.src#IDD_FIND_DIALOG.RID_CANCEL.cancelbutton.text
-msgctxt "basic.src#IDD_FIND_DIALOG.RID_CANCEL.cancelbutton.text"
-msgid "~Cancel"
+#: source/classes/sb.src#RID_BASIC_START.SbERR_VAR_UNDEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Variable not defined."
+msgstr "Айнымалы белгiленбеген"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_CONVERSION & ERRCODE_RES_MASK.String.Text
+msgid  "Data type mismatch."
+msgstr "Түрлер үйлесiмсiз"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PARAMETER & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid parameter."
+msgstr "Параметр дұрыс емес"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_USER_ABORT & ERRCODE_RES_MASK.String.Text
+msgid  "Process interrupted by user."
+msgstr "Процесс пайдаланушымен  үзiлген"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_RESUME & ERRCODE_RES_MASK.String.Text
+msgid  "Resume without error."
+msgstr "Қатесiз"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_STACK_OVERFLOW & ERRCODE_RES_MASK.String.Text
+msgid  "Not enough stack memory."
+msgstr "Iшкi жадының өлшемi жеткiлiксiз"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROC_UNDEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Sub-procedure or function procedure not defined."
+msgstr "Iшкi iс ретi немесе жете белгiлiнбеген"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_DLL_LOAD & ERRCODE_RES_MASK.String.Text
+msgid  "Error loading DLL file."
+msgstr "DLL жүктеу қатесi"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_DLL_CALL & ERRCODE_RES_MASK.String.Text
+msgid  "Wrong DLL call convention."
+msgstr "DLL шақыру параметрлер тiзбегi дұрыс емес"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_INTERNAL_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "Internal error $(ARG1)."
+msgstr " $(ARG1) iшкi қате"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_CHANNEL & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid file name or file number."
+msgstr "Аты  немесе файлдың нөмiрi дұрыс емес"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_FILE_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "File not found."
+msgstr "Файл табылмады"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_FILE_MODE & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect file mode."
+msgstr "Файлдың тәртiбi дұрыс емес"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_FILE_ALREADY_OPEN & ERRCODE_RES_MASK.String.Text
+msgid  "File already open."
+msgstr "Файл ашық едi"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_IO_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "Device I/O error."
+msgstr "Енгiзу/шығару құрылғылардың қатесi"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_FILE_EXISTS & ERRCODE_RES_MASK.String.Text
+msgid  "File already exists."
+msgstr "Файл бұрынан бар едi"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_RECORD_LENGTH & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect record length."
+msgstr "Деректердi жазу үзындығы дұрыс емес"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DISK_FULL & ERRCODE_RES_MASK.String.Text
+msgid  "Disk or hard drive full."
+msgstr "Диск толық"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_READ_PAST_EOF & ERRCODE_RES_MASK.String.Text
+msgid  "Reading exceeds EOF."
+msgstr " (EOF) файл шекарасынан кейiн оқу"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_RECORD_NUMBER & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect record number."
+msgstr "Жазу нөмiрi дұрыс емес"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_TOO_MANY_FILES & ERRCODE_RES_MASK.String.Text
+msgid  "Too many files."
+msgstr "Өте көп файлдар"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_DEVICE & ERRCODE_RES_MASK.String.Text
+msgid  "Device not available."
+msgstr "Құрылғыға рұқсат жоқ"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ACCESS_DENIED & ERRCODE_RES_MASK.String.Text
+msgid  "Access denied."
+msgstr "Рұқсат жоқ"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_READY & ERRCODE_RES_MASK.String.Text
+msgid  "Disk not ready."
+msgstr "Диск дайын емес"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_IMPLEMENTED & ERRCODE_RES_MASK.String.Text
+msgid  "Not implemented."
+msgstr "Iске асырылмаған"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DIFFERENT_DRIVE & ERRCODE_RES_MASK.String.Text
+msgid  "Renaming on different drives impossible."
+msgstr "Әр түрлi дисктерде жаңадан ат беруге болмайды"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ACCESS_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "Path/File access error."
+msgstr "Файлға рұқсат қатесi"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PATH_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Path not found."
+msgstr "Жолы табылмаған"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Object variable not set."
+msgstr "Айнымалы белгiленбеген"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PATTERN & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid string pattern."
+msgstr "Қатар үлгiсi дұрыс емес"
+
+#: source/classes/sb.src#RID_BASIC_START.SBERR_IS_NULL & ERRCODE_RES_MASK.String.Text
+msgid  "Use of zero not permitted."
+msgstr "Нөлдiң қолдануна  рұқсат берiлмеген"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "DDE Error."
+msgstr "DDE қатесi"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_WAITINGACK & ERRCODE_RES_MASK.String.Text
+msgid  "Awaiting response to DDE connection."
+msgstr " DDE бойынша қосылғанда жауапты күту"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_OUTOFCHANNELS & ERRCODE_RES_MASK.String.Text
+msgid  "No DDE channels available."
+msgstr "DDE бос арналары жоқ"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NO_RESPONSE & ERRCODE_RES_MASK.String.Text
+msgid  "No application responded to DDE connect initiation."
+msgstr "Қосымша DDE бойынша байланысты орнатуын тырысуға жауап бермейдi"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_MULT_RESPONSES & ERRCODE_RES_MASK.String.Text
+msgid  "Too many applications responded to DDE connect initiation."
 msgstr ""
 
-#: basic.src#IDD_PRINT_DIALOG.RID_CANCEL.cancelbutton.text
-msgctxt "basic.src#IDD_PRINT_DIALOG.RID_CANCEL.cancelbutton.text"
-msgid "Cancel"
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_CHANNEL_LOCKED & ERRCODE_RES_MASK.String.Text
+msgid  "DDE channel locked."
+msgstr "DDE арнасы буғатталған"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NOTPROCESSED & ERRCODE_RES_MASK.String.Text
+msgid  "External application cannot execute DDE operation."
+msgstr "Iшкi қосымшалар DDE iс ретiн орындауға мүмкiндiк жоқ"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_TIMEOUT & ERRCODE_RES_MASK.String.Text
+msgid  "Timeout while waiting for DDE response."
+msgstr " DDE жауапты кұту уақыттың арттыруы"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_USER_INTERRUPT & ERRCODE_RES_MASK.String.Text
+msgid  "User pressed ESCAPE during DDE operation."
+msgstr " DDE операция кезiнде пайдаланушы ESCAPE басты"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_BUSY & ERRCODE_RES_MASK.String.Text
+msgid  "External application busy."
+msgstr "Iшкi қосымша бос емес"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NO_DATA & ERRCODE_RES_MASK.String.Text
+msgid  "DDE operation without data."
+msgstr " DDE операциясы деректерсiз"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_WRONG_DATA_FORMAT & ERRCODE_RES_MASK.String.Text
+msgid  "Data are in wrong format."
+msgstr "Деректер дұрыс емес пiшiмiнде"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_PARTNER_QUIT & ERRCODE_RES_MASK.String.Text
+msgid  "External application has been terminated."
+msgstr "Сыртқы қосымшалар жабық"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_CONV_CLOSED & ERRCODE_RES_MASK.String.Text
+msgid  "DDE connection interrupted or modified."
+msgstr " DDE бойынша байланыс үзiлген"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NO_CHANNEL & ERRCODE_RES_MASK.String.Text
+msgid  "DDE method invoked with no channel open."
+msgstr "DDE әдiсi DDE арнаның болмауында шақырылған"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_INVALID_LINK & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid DDE link format."
+msgstr "DDE бойынша  байланыс пiшiмi дұрыс емес"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_QUEUE_OVERFLOW & ERRCODE_RES_MASK.String.Text
+msgid  "DDE message has been lost."
+msgstr "DDE мәлiмдемесi жоғалған"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_LINK_ALREADY_EST & ERRCODE_RES_MASK.String.Text
+msgid  "Paste link already performed."
+msgstr "Сiлтеменi кiрiстiруi орындалған "
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_LINK_INV_TOPIC & ERRCODE_RES_MASK.String.Text
+msgid  "Link mode cannot be set due to invalid link topic."
 msgstr ""
 
-#: basic.src#IDD_REPLACE_DIALOG.RID_CANCEL.cancelbutton.text
-msgctxt "basic.src#IDD_REPLACE_DIALOG.RID_CANCEL.cancelbutton.text"
-msgid "~Cancel"
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_DLL_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "DDE requires the DDEML.DLL file."
+msgstr "DDE үшiн DDEML. DLL файлы керек"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_CANNOT_LOAD & ERRCODE_RES_MASK.String.Text
+msgid  "Module cannot be loaded; invalid format."
+msgstr "Модулдi жүктеуге мүмкiн емес; пiшiмi дұрыс емес"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_INDEX & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid object index."
+msgstr "Объекттiң индексi дұрыс емес"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_ACTIVE_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Object is not available."
+msgstr "Қол жетпес нысаны"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PROP_VALUE & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect property value."
+msgstr "Қасиеттiң қатесi дұрыс емес"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROP_READONLY & ERRCODE_RES_MASK.String.Text
+msgid  "This property is read-only."
+msgstr "Тек қана оқуға арналған қасиет"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROP_WRITEONLY & ERRCODE_RES_MASK.String.Text
+msgid  "This property is write only."
+msgstr "Қасиетi тек қана жабаға"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_INVALID_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid object reference."
+msgstr "Нысанға  сiлтеме дұрыс емес"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_METHOD & ERRCODE_RES_MASK.String.Text
+msgid  "Property or method not found: $(ARG1)."
+msgstr "Касиетi немесе модулi табылмаған "
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NEEDS_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Object required."
+msgstr "Нысан талап етiлiп жатыр"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_INVALID_USAGE_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid use of an object."
+msgstr "Нысанның қолдануы дұрыс емес"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_OLE & ERRCODE_RES_MASK.String.Text
+msgid  "OLE Automation is not supported by this object."
+msgstr "OLE бұл нысанмен сүйемелденбеген"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_METHOD & ERRCODE_RES_MASK.String.Text
+msgid  "This property or method is not supported by the object."
+msgstr "Нысан бұл қасиеттi немесе әдiстi қолдамайды"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_OLE_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "OLE Automation Error."
+msgstr "OLE қатесi"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_ACTION & ERRCODE_RES_MASK.String.Text
+msgid  "This action is not supported by given object."
+msgstr "Бұл амал нысанмен сүйемелденбейдi"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_NAMED_ARGS & ERRCODE_RES_MASK.String.Text
+msgid  "Named arguments are not supported by given object."
+msgstr "Аталган дәлелдер осы нысанмен сүйемелденбейдi               "
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_LOCALE & ERRCODE_RES_MASK.String.Text
+msgid  "The current locale setting is not supported by the given object."
+msgstr "Осы нысанмен ағымды аймақтық баптаулар сүйемелденбейдi"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NAMED_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Named argument not found."
+msgstr "Көрсетiлген дәлел табылмады"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_OPTIONAL & ERRCODE_RES_MASK.String.Text
+msgid  "Argument is not optional."
+msgstr "Дәлел қажеттi боп есептеледi"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_WRONG_ARGS & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid number of arguments."
 msgstr ""
 
-#: basic.src#RID_TP_CRASH.CB_ALLOWCONTACT.checkbox.text
-msgid "Allow Contact"
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_A_COLL & ERRCODE_RES_MASK.String.Text
+msgid  "Object is not a list."
+msgstr "Нысан тiзiм емес"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_ORDINAL & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid ordinal number."
+msgstr " Реттiк сан дұрыс емес"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DLLPROC_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Specified DLL function not found."
+msgstr " DLL-дiң iшiнде жете табылмады"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_CLIPBD_FORMAT & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid clipboard format."
+msgstr "Аралық сақтағыштың мүмкiн емес пiшiнi"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROPERTY_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Object does not have this property."
+msgstr "Нысанда бұл қасиет жоқ"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_METHOD_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Object does not have this method."
+msgstr "Нысанда осы эдiс жоқ"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ARG_MISSING & ERRCODE_RES_MASK.String.Text
+msgid  "Required argument lacking."
+msgstr "Керектi дәлелдiң жоқтығы"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_NUMBER_OF_ARGS & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid number of arguments."
 msgstr ""
 
-#: basic.src#RID_TP_CRASH.CB_USEPROXY.checkbox.text
-msgid "Use Proxy"
+#: source/classes/sb.src#RID_BASIC_START.SbERR_METHOD_FAILED & ERRCODE_RES_MASK.String.Text
+msgid  "Error executing a method."
+msgstr "Әдiстi орындау қатесi"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_SETPROP_FAILED & ERRCODE_RES_MASK.String.Text
+msgid  "Unable to set property."
+msgstr "Қасиеттi орнатуға мүмкiн емес"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_GETPROP_FAILED & ERRCODE_RES_MASK.String.Text
+msgid  "Unable to determine property."
+msgstr "Қасиетiң анықтауға мүмкiндiк жоқ "
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNEXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Unexpected symbol: $(ARG1)."
+msgstr " $(ARG1): Күтпеген белгi"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Expected: $(ARG1)."
+msgstr " $(ARG1): Күтуде"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_SYMBOL_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Symbol expected."
+msgstr "Күтпелi белгi"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_VAR_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Variable expected."
+msgstr "Күтпелi айнымалы"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_LABEL_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Label expected."
+msgstr "Қолтаңба күтуде"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_LVALUE_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Value cannot be applied."
+msgstr "Мәндi қолдануға мүмкiн емес"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_VAR_DEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Variable $(ARG1) already defined."
+msgstr "Айнымалы $(ARG1) белгiленген"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROC_DEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Sub procedure or function procedure $(ARG1) already defined."
+msgstr "Iшкi iс ретi немесе  $(ARG1) жете бұрыннан анықталған едi"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_LABEL_DEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Label $(ARG1) already defined."
+msgstr "$(ARG1) қолтаңбасы анықталған едi"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_VAR & ERRCODE_RES_MASK.String.Text
+msgid  "Variable $(ARG1) not found."
+msgstr "Айнымалы $(ARG1) табылмады"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_ARRAY & ERRCODE_RES_MASK.String.Text
+msgid  "Array or procedure $(ARG1) not found."
+msgstr "Жиым немесе iс ретi $(ARG1) табылмады"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_PROC & ERRCODE_RES_MASK.String.Text
+msgid  "Procedure $(ARG1) not found."
+msgstr "Iс ретi $(ARG1) табылмады"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_LABEL & ERRCODE_RES_MASK.String.Text
+msgid  "Label $(ARG1) undefined."
+msgstr "Қолтаңба $(ARG1) анықталмаған"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_TYPE & ERRCODE_RES_MASK.String.Text
+msgid  "Unknown data type $(ARG1)."
+msgstr "Белгiсiз деректер түрi $(ARG1)"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_EXIT & ERRCODE_RES_MASK.String.Text
+msgid  "Exit $(ARG1) expected."
+msgstr "Exit $(ARG1) күтуде"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_BLOCK & ERRCODE_RES_MASK.String.Text
+msgid  "Statement block still open: $(ARG1) missing."
+msgstr "Нұсқамалардың ашық бөлiгi жоқ: $(ARG1)"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_BRACKETS & ERRCODE_RES_MASK.String.Text
+msgid  "Parentheses do not match."
+msgstr "Сынарсыз жақшалар"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_DECLARATION & ERRCODE_RES_MASK.String.Text
+msgid  "Symbol $(ARG1) already defined differently."
+msgstr " $(ARG1) белгiсi бұрын анықталған едi"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PARAMETERS & ERRCODE_RES_MASK.String.Text
+msgid  "Parameters do not correspond to procedure."
+msgstr "Параметрлер iс ретiне сәйкес емес"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_CHAR_IN_NUMBER & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid character in number."
+msgstr "Санындағы мүмкiн емес белгi"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_MUST_HAVE_DIMS & ERRCODE_RES_MASK.String.Text
+msgid  "Array must be dimensioned."
+msgstr "Жиым өлшемдiгiн тағайындау қажет"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_IF & ERRCODE_RES_MASK.String.Text
+msgid  "Else/Endif without If."
+msgstr "Else/Endif  If-сiз"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_IN_SUBR & ERRCODE_RES_MASK.String.Text
+msgid  "$(ARG1) not allowed within a procedure."
+msgstr "$(ARG1) iс ретiнiң iшiнде қолайсыз"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_IN_MAIN & ERRCODE_RES_MASK.String.Text
+msgid  "$(ARG1) not allowed outside a procedure."
+msgstr "Iс ретiнен бөлек $(ARG1)  мүмкiн емес"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_WRONG_DIMS & ERRCODE_RES_MASK.String.Text
+msgid  "Dimension specifications do not match."
+msgstr "Өлшемдiк спецификациялары бiр-бiрiне сәйкес келмейдi"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_OPTION & ERRCODE_RES_MASK.String.Text
+msgid  "Unknown option: $(ARG1)."
+msgstr "Белгiсiз параметр: $(ARG1)"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_CONSTANT_REDECLARED & ERRCODE_RES_MASK.String.Text
+msgid  "Constant $(ARG1) redefined."
+msgstr "Тұрақты $(ARG1) жаңадан белгiленген"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROG_TOO_LARGE & ERRCODE_RES_MASK.String.Text
+msgid  "Program too large."
+msgstr "Бағдарлама өте үлкен"
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_STRINGS_ARRAYS & ERRCODE_RES_MASK.String.Text
+msgid  "Strings or arrays not permitted."
+msgstr "Қатарлар немесе жиымдар мүмкiн емес"
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_EXCEPTION & ERRCODE_RES_MASK.String.Text
+msgid  "An exception occurred $(ARG1)."
+msgstr "$(ARG1) бөлектеуiн шығару"
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_ARRAY_FIX & ERRCODE_RES_MASK.String.Text
+msgid  "This array is fixed or temporarily locked."
 msgstr ""
 
-#: basic.src#RID_TP_PROFILE.CB_AUTORELOAD.checkbox.text
-msgid "AutoReload"
-msgstr "Автоматты түрде қайтадан жүктеу"
-
-#: basic.src#RID_TP_PROFILE.CB_AUTOSAVE.checkbox.text
-msgid "Save before execute"
-msgstr "Енгiзуiнiң алдында сақтау"
-
-#: basic.src#RID_TP_PROFILE.CB_STOPONSYNTAXERRORS.checkbox.text
-msgid "Stop on Syntax Errors"
-msgstr "Синтактикалық қателерде тоқтау"
-
-#: basic.src#RID_TP_PROFILE.HID_CHECK.checkbox.text
-msgid "Default HID directory"
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_STRING_OVERFLOW & ERRCODE_RES_MASK.String.Text
+msgid  "Out of string space."
 msgstr ""
 
-#: basic.src#IDD_EDIT_VAR.RID_ED_NEW_STRING.edit.text
-msgid "Edit"
-msgstr "Түзету"
-
-#: basic.src#IDS_CANTLOAD.errorbox.text
-msgid "Library cannot be loaded!"
-msgstr "Кiтапхананы жүктеуге болмайды! "
-
-#: basic.src#IDS_CANTLOAD.errorbox.title
-msgctxt "basic.src#IDS_CANTLOAD.errorbox.title"
-msgid "Testtool Error"
-msgstr "Testtool Error"
-
-#: basic.src#IDS_CANTSAVE.errorbox.text
-msgid "Library cannot be saved!"
-msgstr "Кiтапхананы сақтауға мүмкiндiк жоқ!"
-
-#: basic.src#IDS_CANTSAVE.errorbox.title
-msgctxt "basic.src#IDS_CANTSAVE.errorbox.title"
-msgid "Testtool Error"
-msgstr "Testtool Error"
-
-#: basic.src#IDS_INVALID_VALUE.errorbox.text
-msgid "The value is invalid and cannot be set."
-msgstr "Мәнi дұрыс емес болғандықтан оны орнатуға мүмкiн емес."
-
-#: basic.src#IDS_INVALID_VALUE.errorbox.title
-msgctxt "basic.src#IDS_INVALID_VALUE.errorbox.title"
-msgid "Testtool Error"
-msgstr "Testtool Error"
-
-#: basic.src#IDS_NOMAINPGM.errorbox.text
-msgid "This window does not contain a main program!"
-msgstr "Бұл терезеге main iс ретi кiрмейдi"
-
-#: basic.src#IDS_NOMAINPGM.errorbox.title
-msgctxt "basic.src#IDS_NOMAINPGM.errorbox.title"
-msgid "Testtool Error"
-msgstr "Testtool Error"
-
-#: basic.src#IDS_PATTERNNOTFOUND.errorbox.text
-msgid "Search key not found!"
-msgstr "Табылмады"
-
-#: basic.src#IDS_PATTERNNOTFOUND.errorbox.title
-msgctxt "basic.src#IDS_PATTERNNOTFOUND.errorbox.title"
-msgid "Testtool Error"
-msgstr "Testtool Error"
-
-#: basic.src#IDS_READERROR.errorbox.text
-msgid "File cannot be read!"
-msgstr "Файлды оқуға мүмкiн емес!"
-
-#: basic.src#IDS_READERROR.errorbox.title
-msgctxt "basic.src#IDS_READERROR.errorbox.title"
-msgid "Testtool Error"
-msgstr "Testtool Error"
-
-#: basic.src#IDS_WRITEERROR.errorbox.text
-msgid "File cannot be saved!"
-msgstr "Файлды сақтауға мүмкiн емес!"
-
-#: basic.src#IDS_WRITEERROR.errorbox.title
-msgctxt "basic.src#IDS_WRITEERROR.errorbox.title"
-msgid "Testtool Error"
-msgstr "Testtool Error"
-
-#: basic.src#RID_TP_CRASH.FL_CRASHREPORT.fixedline.text
-msgctxt "basic.src#RID_TP_CRASH.FL_CRASHREPORT.fixedline.text"
-msgid "Crashreport"
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_EXPR_TOO_COMPLEX & ERRCODE_RES_MASK.String.Text
+msgid  "Expression Too Complex."
 msgstr ""
 
-#: basic.src#RID_TP_GENERIC.RID_FL_AREA.fixedline.text
-msgid "Area"
-msgstr "Аймақ"
-
-#: basic.src#RID_TP_GENERIC.RID_FL_VALUE.fixedline.text
-msgid "Setting"
-msgstr "Баптау"
-
-#: basic.src#RID_TP_MISC.FL_COMMUNICATION.fixedline.text
-msgid "Communication"
-msgstr "Байланыс"
-
-#: basic.src#RID_TP_MISC.FL_OTHER.fixedline.text
-msgid "Other settings"
-msgstr "Басқа да баптаулар"
-
-#: basic.src#RID_TP_PROFILE.FL_DIRECTORIES.fixedline.text
-msgid "Profile settings"
-msgstr "Түрiн баптау"
-
-#: basic.src#RID_TP_PROFILE.RID_FL_PROFILE.fixedline.text
-msgctxt "basic.src#RID_TP_PROFILE.RID_FL_PROFILE.fixedline.text"
-msgid "Profile"
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_OPER_NOT_PERFORM & ERRCODE_RES_MASK.String.Text
+msgid  "Can't perform requested operation."
 msgstr ""
 
-#: basic.src#IDD_DISPLAY_HID.RID_FT_CONTROLS.fixedtext.text
-msgid "Controls"
-msgstr "Басқару элементтерi"
-
-#: basic.src#IDD_DISPLAY_HID.RID_FT_SLOTS.fixedtext.text
-msgid "Slots"
-msgstr "Сiлтемелiк бөлiк"
-
-#: basic.src#IDD_EDIT_VAR.RID_FT_CONTENT.fixedtext.text
-msgid "Content"
-msgstr "Мән"
-
-#: basic.src#IDD_EDIT_VAR.RID_FT_CONTENT_VALUE.fixedtext.text
-msgid "Previous contents"
-msgstr "Алдынғы мән"
-
-#: basic.src#IDD_EDIT_VAR.RID_FT_NAME.fixedtext.text
-msgctxt "basic.src#IDD_EDIT_VAR.RID_FT_NAME.fixedtext.text"
-msgid "Name"
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_TOO_MANY_DLL & ERRCODE_RES_MASK.String.Text
+msgid  "Too many DLL application clients."
 msgstr ""
 
-#: basic.src#IDD_EDIT_VAR.RID_FT_NAME_VALUE.fixedtext.text
-msgid "Name of variable"
-msgstr "Айнымалының аты"
-
-#: basic.src#IDD_EDIT_VAR.RID_FT_NEW_CONTENT.fixedtext.text
-msgid "New content"
-msgstr "Жаңа мәнi"
-
-#: basic.src#IDD_FIND_DIALOG.RID_FIXEDTEXT1.fixedtext.text
-msgid "~Text"
-msgstr "~Мәтiн"
-
-#: basic.src#IDD_PRINT_DIALOG.RID_TEXT.fixedtext.text
-msgid "Print "
-msgstr "Баспадан шығару"
-
-#: basic.src#IDD_REPLACE_DIALOG.RID_FIXEDTEXT1.fixedtext.text
-msgid "~Search for"
-msgstr "~Табу"
-
-#: basic.src#IDD_REPLACE_DIALOG.RID_FIXEDTEXT2.fixedtext.text
-msgid "~Replace by"
-msgstr "~Ауыстыру"
-
-#: basic.src#IDD_TT_ABOUT_DIALOG.1.fixedtext.text
-msgctxt "basic.src#IDD_TT_ABOUT_DIALOG.1.fixedtext.text"
-msgid "VCLTestTool"
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_LOOP_NOT_INIT & ERRCODE_RES_MASK.String.Text
+msgid  "For loop not initialized."
 msgstr ""
 
-#: basic.src#IDD_TT_ABOUT_DIALOG.4.fixedtext.text
-msgid "©1995-2010 Oracle"
-msgstr "©1995-2004 Sun Microsystems, Inc."
-
-#: basic.src#LOAD_CONF.FILENAME.fixedtext.text
-msgid "File.win"
-msgstr "win.файлы "
-
-#: basic.src#LOAD_CONF.WORK.fixedtext.text
-msgid "Slot IDs"
-msgstr "ID сiлтемелiк блоғы"
-
-#: basic.src#RID_TP_CRASH.FT_CRHOST.fixedtext.text
-msgctxt "basic.src#RID_TP_CRASH.FT_CRHOST.fixedtext.text"
-msgid "Host"
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_COMPAT & ERRCODE_RES_MASK.String.Text
+msgid  "$(ARG1)"
 msgstr ""
 
-#: basic.src#RID_TP_CRASH.FT_CRPORT.fixedtext.text
-msgid "Port"
-msgstr ""
-
-#: basic.src#RID_TP_CRASH.FT_EMAIL.fixedtext.text
-msgid "EMail"
-msgstr ""
-
-#: basic.src#RID_TP_FONT.FT_FONTNAME.fixedtext.text
-msgid "Type"
-msgstr "Туралау"
-
-#: basic.src#RID_TP_FONT.FT_FONTSIZE.fixedtext.text
-msgid "Size"
-msgstr "Кегль"
-
-#: basic.src#RID_TP_FONT.FT_FONTSTYLE.fixedtext.text
-msgid "Typeface"
-msgstr "Факстiң түрi"
-
-#: basic.src#RID_TP_MISC.FT_HOST.fixedtext.text
-msgctxt "basic.src#RID_TP_MISC.FT_HOST.fixedtext.text"
-msgid "Host"
-msgstr ""
-
-#: basic.src#RID_TP_MISC.FT_LRU.fixedtext.text
-msgid "Max LRU Files"
-msgstr "Max LRU файлдары"
-
-#: basic.src#RID_TP_MISC.FT_PROGDIR.fixedtext.text
-msgid "OOo Program Dir"
-msgstr ""
-
-#: basic.src#RID_TP_MISC.FT_TTPORT.fixedtext.text
-msgid "Testtool Port"
-msgstr "Сайманның тестiк порты\n"
-
-#: basic.src#RID_TP_MISC.FT_UNOPORT.fixedtext.text
-msgid "Remote UNO Port"
-msgstr "Шеттелген UNO порты"
-
-#: basic.src#RID_TP_MISC.TIMEOUT_TEXT.fixedtext.text
-msgid "Server Timeout"
-msgstr "Сервер уақытша өшiрiлген"
-
-#: basic.src#RID_TP_PROFILE.BASIS_TEXT.fixedtext.text
-msgid "Base directory"
-msgstr "Негiзгi топтама"
-
-#: basic.src#RID_TP_PROFILE.LOG_TEXT.fixedtext.text
-msgid "Log base directory"
-msgstr "Топтама қорының негiзi"
-
-#: basic.src#IDD_DISPLAY_HID.floatingwindow.text
-msgid "Display HId"
-msgstr " HId дисплейi"
-
-#: basic.src#LOAD_CONF.floatingwindow.text
-msgid "Reading Configuration Files"
-msgstr "Құрылымдық файлды оқу"
-
-#: basic.src#IDS_NOPRINTERERROR.infobox.text
-msgid "The print function is not available!"
-msgstr "Баспадан шығару жетесi қазiргi уақытта iстемейдi!"
-
-#: basic.src#IDS_NOT_YET_IMPLEMENTED.infobox.text
-msgid "Not yet implemented"
-msgstr "Әле құрылмаған"
-
-#: basic.src#RID_APPMENUBAR.RID_APPEDIT.menuitem.text
-msgid "~Edit"
-msgstr "~Түзету"
-
-#: basic.src#RID_APPMENUBAR.RID_APPFILE.menuitem.text
-msgid "~File"
-msgstr "~Файл"
-
-#: basic.src#RID_APPMENUBAR.RID_APPHELP.menuitem.text
-msgid "~Help"
-msgstr "~Анықтама"
-
-#: basic.src#RID_APPMENUBAR.RID_APPRUN.menuitem.text
-msgid "~Program"
-msgstr "~Бағдарлама"
-
-#: basic.src#RID_APPMENUBAR.RID_APPWINDOW.menuitem.text
-msgid "~Window"
-msgstr "~Терезе"
-
-#: basic.src#RID_EDIT.RID_EDITCOPY.menuitem.text
-msgid "~Copy"
-msgstr "~Көшiру"
-
-#: basic.src#RID_EDIT.RID_EDITCUT.menuitem.text
-msgid "~Cut"
-msgstr "~Қию"
-
-#: basic.src#RID_EDIT.RID_EDITDEL.menuitem.text
-msgid "~Delete"
-msgstr "~Жою"
-
-#: basic.src#RID_EDIT.RID_EDITPASTE.menuitem.text
-msgid "~Paste"
-msgstr "~Қою"
-
-#: basic.src#RID_EDIT.RID_EDITREDO.menuitem.text
-msgid "~Redo"
-msgstr "~Қайтару"
-
-#: basic.src#RID_EDIT.RID_EDITREPEAT.menuitem.text
-msgid "Repeat S~earch"
-msgstr "I~зденiстi қайталау"
-
-#: basic.src#RID_EDIT.RID_EDITREPLACE.menuitem.text
-msgid "~Replace..."
-msgstr "~Ауыстыру..."
-
-#: basic.src#RID_EDIT.RID_EDITSEARCH.menuitem.text
-msgid "~Find..."
-msgstr "~Табу..."
-
-#: basic.src#RID_EDIT.RID_EDITUNDO.menuitem.text
-msgid "~Undo"
-msgstr "~Керi"
-
-#: basic.src#RID_FILE.RID_FILECLOSE.menuitem.text
-msgid "~Close"
-msgstr "~Жабу"
-
-#: basic.src#RID_FILE.RID_FILELOADLIB.menuitem.text
-msgid "~Load Library..."
-msgstr "~Кiтапхананы жүктеу..."
-
-#: basic.src#RID_FILE.RID_FILENEW.menuitem.text
-msgid "~New"
-msgstr "~Жаңа"
-
-#: basic.src#RID_FILE.RID_FILEOPEN.menuitem.text
-msgid "~Open..."
-msgstr "~Ашу"
-
-#: basic.src#RID_FILE.RID_FILEPRINT.menuitem.text
-msgid "~Print"
-msgstr "~Баспаға шығару"
-
-#: basic.src#RID_FILE.RID_FILESAVE.menuitem.text
-msgid "~Save"
-msgstr "~Сақтау"
-
-#: basic.src#RID_FILE.RID_FILESAVEAS.menuitem.text
-msgid "Save~ As..."
-msgstr "~Басқаша сақтау..."
-
-#: basic.src#RID_FILE.RID_FILESAVELIB.menuitem.text
-msgid "Save Li~brary..."
-msgstr "~Кiтапхананы сақтау..."
-
-#: basic.src#RID_FILE.RID_FILESETUP.menuitem.text
-msgid "P~rinter Setting..."
-msgstr "~Баспа құрылғысын баптау..."
-
-#: basic.src#RID_FILE.RID_QUIT.menuitem.text
-msgid "~Exit"
-msgstr "~Шығу"
-
-#: basic.src#RID_HELP.menuitem.text
-msgid "~About..."
-msgstr "~Бағдарлама туралы..."
-
-#: basic.src#RID_RUN.RID_RUNBREAK.menuitem.text
-msgid "~Break"
-msgstr "~Үзу"
-
-#: basic.src#RID_RUN.RID_RUNCOMPILE.menuitem.text
-msgid "~Compile"
-msgstr "~Түзету"
-
-#: basic.src#RID_RUN.RID_RUNDISAS.menuitem.text
-msgid "~Disassemble"
-msgstr "~Керi тарату"
-
-#: basic.src#RID_RUN.RID_RUNNEXTERR.menuitem.text
-msgid "~Next Error"
-msgstr "~Келесi қате"
-
-#: basic.src#RID_RUN.RID_RUNPREVERR.menuitem.text
-msgid "~Previous Error"
-msgstr "~Алдынғы қате"
-
-#: basic.src#RID_RUN.RID_RUNSTART.menuitem.text
-msgid "~Start"
-msgstr "~Iске қосу"
-
-#: basic.src#RID_RUN.RID_RUNSTEPINTO.menuitem.text
-msgid "~Single Step"
-msgstr "~Бiр қадам"
-
-#: basic.src#RID_RUN.RID_RUNSTEPOVER.menuitem.text
-msgid "Si~ngle Step over Procedure"
-msgstr "Iс ретi бойынша ~бiр қадам"
-
-#: basic.src#RID_RUN.RID_RUNSTOP.menuitem.text
-msgid "~Stop"
-msgstr "~Тоқтату"
-
-#: basic.src#RID_RUN.RID_TOGLEBRKPNT.menuitem.text
-msgid "Set / Delete Break Point"
-msgstr "Тоқтату нұктесiн жасау/жою"
-
-#: basic.src#RID_TT_EXTRAS.RID_OPTIONS.menuitem.text
-msgid "~Settings"
-msgstr "~Баптаулар"
-
-#: basic.src#IDD_FIND_DIALOG.modaldialog.text
-msgid "Testtool: Find Text"
-msgstr "Тест сайманы: Мәтiндi табу"
-
-#: basic.src#IDD_REPLACE_DIALOG.modaldialog.text
-msgid "Testtool: Replace Text"
-msgstr "Тест сайманы: Мәтiндi ауыстыру"
-
-#: basic.src#IDD_TT_ABOUT_DIALOG.modaldialog.text
-msgid "About VCLTestTool"
-msgstr "VCL тестiк сайман туралы"
-
-#: basic.src#RID_CALLDLG.modaldialog.text
-msgid "Dynamic Link No. "
-msgstr "Динамикалық сiлтеменiң №"
-
-#: basic.src#IDD_EDIT_VAR.modelessdialog.text
-msgid "Edit variable"
-msgstr "Айнымалыны түзету"
-
-#: basic.src#IDD_PRINT_DIALOG.modelessdialog.text
-msgid "Testtool: Print File"
-msgstr "Тестiк сайман: Файлды баспадан шығару"
-
-#: basic.src#IDD_DISPLAY_HID.RID_OK_CLOSE.okbutton.text
-msgid "Close"
-msgstr "Жабу"
-
-#: basic.src#IDD_FIND_DIALOG.RID_OK.okbutton.text
-msgid "~Find"
-msgstr "~Табу"
-
-#: basic.src#IDD_REPLACE_DIALOG.RID_OK.okbutton.text
-msgid "~Replace"
-msgstr "~Ауыстыру"
-
-#: basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_CRA.pageitem.text
-msgctxt "basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_CRA.pageitem.text"
-msgid "Crashreport"
-msgstr ""
-
-#: basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_FON.pageitem.text
-msgid "Font"
-msgstr "Қарiп"
-
-#: basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_GEN.pageitem.text
-msgid "Generic"
-msgstr "Қарапайым"
-
-#: basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_MIS.pageitem.text
-msgid "Misc"
-msgstr ""
-
-#: basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_PRO.pageitem.text
-msgctxt "basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_PRO.pageitem.text"
-msgid "Profile"
-msgstr ""
-
-#: basic.src#IDD_DISPLAY_HID.RID_PB_BENENNEN.pushbutton.text
-msgctxt "basic.src#IDD_DISPLAY_HID.RID_PB_BENENNEN.pushbutton.text"
-msgid "Name"
-msgstr ""
-
-#: basic.src#IDD_DISPLAY_HID.RID_PB_KOPIEREN.pushbutton.text
-msgid "Copy"
-msgstr "Көшiру"
-
-#: basic.src#IDD_DISPLAY_HID.RID_PB_SELECTALL.pushbutton.text
-msgid "Select all"
-msgstr "Барлығын ерекшелеу"
-
-#: basic.src#RID_TP_GENERIC.RID_PB_DEL_VALUE.pushbutton.text
-msgctxt "basic.src#RID_TP_GENERIC.RID_PB_DEL_VALUE.pushbutton.text"
-msgid "Delete"
-msgstr ""
-
-#: basic.src#RID_TP_GENERIC.RID_PB_NEW_AREA.pushbutton.text
-msgctxt "basic.src#RID_TP_GENERIC.RID_PB_NEW_AREA.pushbutton.text"
-msgid "New"
-msgstr ""
-
-#: basic.src#RID_TP_GENERIC.RID_PB_NEW_VALUE.pushbutton.text
-msgctxt "basic.src#RID_TP_GENERIC.RID_PB_NEW_VALUE.pushbutton.text"
-msgid "New"
-msgstr ""
-
-#: basic.src#RID_TP_GENERIC.RID_PB_SELECT_FILE.pushbutton.text
-msgid "Path ..."
-msgstr ""
-
-#: basic.src#RID_TP_GENERIC.RID_PD_DEL_AREA.pushbutton.text
-msgctxt "basic.src#RID_TP_GENERIC.RID_PD_DEL_AREA.pushbutton.text"
-msgid "Delete"
-msgstr ""
-
-#: basic.src#RID_TP_MISC.PB_PROGDIR.pushbutton.text
-msgctxt "basic.src#RID_TP_MISC.PB_PROGDIR.pushbutton.text"
-msgid "..."
-msgstr ""
-
-#: basic.src#RID_TP_PROFILE.BASIS_SET.pushbutton.text
-msgctxt "basic.src#RID_TP_PROFILE.BASIS_SET.pushbutton.text"
-msgid "..."
-msgstr ""
-
-#: basic.src#RID_TP_PROFILE.HID_SET.pushbutton.text
-msgctxt "basic.src#RID_TP_PROFILE.HID_SET.pushbutton.text"
-msgid "..."
-msgstr ""
-
-#: basic.src#RID_TP_PROFILE.LOG_SET.pushbutton.text
-msgctxt "basic.src#RID_TP_PROFILE.LOG_SET.pushbutton.text"
-msgid "..."
-msgstr ""
-
-#: basic.src#RID_TP_PROFILE.RID_PB_NEW_PROFILE.pushbutton.text
-msgctxt "basic.src#RID_TP_PROFILE.RID_PB_NEW_PROFILE.pushbutton.text"
-msgid "New"
-msgstr ""
-
-#: basic.src#RID_TP_PROFILE.RID_PD_DEL_PROFILE.pushbutton.text
-msgctxt "basic.src#RID_TP_PROFILE.RID_PD_DEL_PROFILE.pushbutton.text"
-msgid "Delete"
-msgstr ""
-
-#: basic.src#IDS_ASKDIRTYRELOAD.querybox.text
-msgid ""
-"File has been changed on data medium\n"
-"and in the Editor. Reload?"
-msgstr ""
-"Файл ақпарат тасымалдауышта /n өзгертiлген және Редакторда. Қайтадан жүктеу "
-"керек пе?"
-
-#: basic.src#IDS_ASKDIRTYRELOAD.querybox.title
-msgctxt "basic.src#IDS_ASKDIRTYRELOAD.querybox.title"
-msgid "Testtool"
-msgstr "Testtool"
-
-#: basic.src#IDS_ASKRELOAD.querybox.text
-msgid "File has been changed on data medium. Reload?"
-msgstr "Файл ақпарат тасымалдауышта өзгертiлдi? Жаңадан жүктеу керек пе?"
-
-#: basic.src#IDS_ASKRELOAD.querybox.title
-msgctxt "basic.src#IDS_ASKRELOAD.querybox.title"
-msgid "Testtool"
-msgstr "Testtool"
-
-#: basic.src#IDS_ASKSAVEERROR.querybox.text
-msgid "Error saving files! Run anyway?"
-msgstr "Файлдардың жазу қатесi! Ескермей iске қосу керек пе?"
-
-#: basic.src#IDS_ASKSAVEERROR.querybox.title
-msgctxt "basic.src#IDS_ASKSAVEERROR.querybox.title"
-msgid "Testtool"
-msgstr "Testtool"
-
-#: basic.src#IDS_ASK_DIRTY_AND_DISKCHANGE_SAVE.querybox.text
-msgid ""
-"File has been changed on data medium\n"
-"and in the Editor. Save?"
-msgstr ""
-"Файл ақпарат тасымалдауышта өзгертiлген \n"
-" және Редакторда. Сақтау керек пе?"
-
-#: basic.src#IDS_ASK_DIRTY_AND_DISKCHANGE_SAVE.querybox.title
-msgctxt "basic.src#IDS_ASK_DIRTY_AND_DISKCHANGE_SAVE.querybox.title"
-msgid "Testtool"
-msgstr "Testtool"
-
-#: basic.src#IDS_ASK_DIRTY_SAVE.querybox.text
-msgid "File has been changed. Save?"
-msgstr "Файл өзгерген. Сақтау керек пе?"
-
-#: basic.src#IDS_ASK_DIRTY_SAVE.querybox.title
-msgctxt "basic.src#IDS_ASK_DIRTY_SAVE.querybox.title"
-msgid "Testtool"
-msgstr "Testtool"
-
-#: basic.src#IDS_ASK_DISKCHANGE_SAVE.querybox.text
-msgid ""
-"File has been changed on data medium.\n"
-"Overwrite?"
-msgstr ""
-"Файл ақпарат тасымалдаушында өзгерген.\n"
-" Қайта жазу керек пе?"
-
-#: basic.src#IDS_ASK_DISKCHANGE_SAVE.querybox.title
-msgctxt "basic.src#IDS_ASK_DISKCHANGE_SAVE.querybox.title"
-msgid "Testtool"
-msgstr "Testtool"
-
-#: basic.src#IDS_LOSS_OF_INFORMATION.querybox.text
-msgid "Saving in an external format causes information loss."
-msgstr "Iшкi пiшiмде сақтау ақпараттсыз қалуына соғу мүмкiн."
-
-#: basic.src#IDS_LOSS_OF_INFORMATION.querybox.title
-msgctxt "basic.src#IDS_LOSS_OF_INFORMATION.querybox.title"
-msgid "Testtool"
-msgstr "Testtool"
-
-#: basic.src#IDS_RUNNING.querybox.text
-msgid "BASIC is still running! Exit anyway?"
-msgstr "BASIC жүктелiп қалды! Бәрiбiр шығу керек пе? "
-
-#: basic.src#IDS_RUNNING.querybox.title
-msgctxt "basic.src#IDS_RUNNING.querybox.title"
-msgid "Testtool"
-msgstr "Testtool"
-
-#: basic.src#IDD_EDIT_VAR.RID_RB_NEW_BOOL_F.radiobutton.text
-msgid "False"
-msgstr "ЖАЛҒАН"
-
-#: basic.src#IDD_EDIT_VAR.RID_RB_NEW_BOOL_T.radiobutton.text
-msgid "True"
-msgstr "ШЫНДЫҚ"
-
-#: basic.src#IDS_APPMODE_BREAK.string.text
-msgid "Break"
-msgstr "Үзу"
-
-#: basic.src#IDS_APPMODE_RUN.string.text
-msgid "Run"
-msgstr "Орындау"
-
-#: basic.src#IDS_APPNAME.string.text
-msgctxt "basic.src#IDS_APPNAME.string.text"
-msgid "Testtool"
-msgstr ""
-
-#: basic.src#IDS_APPNAME2.string.text
-msgctxt "basic.src#IDS_APPNAME2.string.text"
-msgid "VCLTestTool"
-msgstr ""
-
-#: basic.src#IDS_BASFILTER.string.text
-msgid "Source files (*.BAS)"
-msgstr "(*.BAS) бастапқы файлдар"
-
-#: basic.src#IDS_CANCEL.string.text
-msgctxt "basic.src#IDS_CANCEL.string.text"
-msgid "Cancel"
-msgstr ""
-
-#: basic.src#IDS_CONTINUE.string.text
-msgid "Continue"
-msgstr "Жалғастыру"
-
-#: basic.src#IDS_DISASWIN.string.text
-msgid "Disassembly"
-msgstr "Жинақты бұзу"
-
-#: basic.src#IDS_EDIT_VAR.string.text
-msgid "Edit ($Arg1)"
-msgstr "( $Arg ) түзету"
-
-#: basic.src#IDS_ERROR1.string.text
-msgid "Error "
-msgstr "Қате"
-
-#: basic.src#IDS_ERROR2.string.text
-msgid " in line "
-msgstr "қатарда"
-
-#: basic.src#IDS_INCFILTER.string.text
-msgid "Include files (*.INC)"
-msgstr "(*.INC) қосылатын файлдар"
-
-#: basic.src#IDS_LIBFILTER.string.text
-msgid "Libraries (*.SB)"
-msgstr "(*.SB) Кiтапханалар"
-
-#: basic.src#IDS_LOADDLG.string.text
-msgid "Testtool: Load File"
-msgstr "Тесттiк сайман: Файлды жүктеу"
-
-#: basic.src#IDS_NONAME.string.text
-msgid "Unnamed"
-msgstr "Аталмаған"
-
-#: basic.src#IDS_NO_LONGNAME.string.text
-msgid "No entries in Hid.Lst"
-msgstr "Hid.Lst-ға кiруге мүмкiн емес "
-
-#: basic.src#IDS_OBJECT.string.text
-msgid "Object"
-msgstr "Нысан"
-
-#: basic.src#IDS_PAGE.string.text
-msgid "Page "
-msgstr "Парақ"
-
-#: basic.src#IDS_PRINTMSG.string.text
-msgid "Printout of "
-msgstr "Баспаға шығару"
-
-#: basic.src#IDS_RESFILTER.string.text
-msgid "Result files (*.RES)"
-msgstr "(*.RES) Нәтижелiқ файлдар"
-
-#: basic.src#IDS_SAVEDLG.string.text
-msgid "Testtool: Save File"
-msgstr "Тесттiқ сайман: Файлды сақтау"
-
-#: basic.src#IDS_TXTFILTER.string.text
-msgid "Results as text file (*.TXT)"
-msgstr "(*.TXT) мәтiндiк файл сияқты нәтиже"
-
-#: basic.src#IDS_WARNING1.string.text
-msgid "Warning "
-msgstr "Еспертпе"
-
-#: basic.src#IDS_WARNING_PREFIX.string.text
-msgctxt "basic.src#IDS_WARNING_PREFIX.string.text"
-msgid "Warning: "
-msgstr ""
-
-#: basic.src#RID_TT_EXTRAS_NAME.string.text
-msgid "E~xtra"
-msgstr "~Қосымша"
-
-#: basic.src#IDD_OPTIONS_DLG.tabdialog.text
-msgid "Settings"
-msgstr ""
-
-#: basmsg.src#S_ERROR_OUTSIDE_TESTCASE.string.text
-msgid "Error outside of test case"
-msgstr "Тестiк шарттардан бөлек қате"
-
-#: basmsg.src#S_PROG_START.string.text
-msgid "Program start: ($Arg1); ($Arg2)"
-msgstr "($Arg1); ($Arg2) бағдарламаларды iске қосу"
-
-#: basmsg.src#S_WARNING_PREFIX.string.text
-msgctxt "basmsg.src#S_WARNING_PREFIX.string.text"
-msgid "Warning: "
-msgstr ""
-
-#: svtmsg.src#S_ALLOWED_ONLY_IN_DOCKING_MODE.string.text
-msgid "Method only allowed in docking mode at ($Arg1)"
-msgstr "($Arg1)-де түйістірiлген әдiспен тек қана рұқсат берiлген тәсiлiмен\n"
-
-#: svtmsg.src#S_ALLOWED_ONLY_IN_FLOATING_MODE.string.text
-msgid "Method only allowed in floating mode at ($Arg1)"
-msgstr "($Arg1) -дегi әдiстi, тек қана жылжамалы тәсiлде рұқсат етiлген\n"
-
-#: svtmsg.src#S_APP_SHUTDOWN.string.text
-msgid "Application has been shut down"
-msgstr "Қосымша жабық болады"
-
-#: svtmsg.src#S_ATTEMPT_TO_WRITE_READONLY.string.text
-msgid "Attempt to write on read-only ($Arg1)"
-msgstr " Тек қана оқылатын ($Arg1) жазуға тырысу "
-
-#: svtmsg.src#S_BUTTONID_REQUIRED.string.text
-msgid "A button ID needs to be given at ($Arg1)"
-msgstr "($Arg1)-де батырмаға жеке куәлiк беру қажет.\n"
-
-#: svtmsg.src#S_BUTTON_DISABLED_ON_TOOLBOX.string.text
-msgid "The button is disabled in ToolBox at ($Arg1)"
-msgstr "($Arg1)-да саймандар топтамасының iшiнде батырма бұғаттанды "
-
-#: svtmsg.src#S_BUTTON_HIDDEN_ON_TOOLBOX.string.text
-msgid "The button is hidden in ToolBox at ($Arg1)"
-msgstr "($Arg1)-дегi батырма жасырынған сайман топтамасында\n"
-
-#: svtmsg.src#S_BUTTON_ID_NOT_THERE.string.text
-msgid "There is no button with ID ($Arg1) at ($Arg2)"
-msgstr "($Arg2)-де ID ($Arg1)-мен батырма жоқ\n"
-
-#: svtmsg.src#S_CANNOT_CREATE_DIRECTORY.string.text
-msgid "Cannot create Directory: \"($Arg1)\""
-msgstr "\"($Arg1)\": Буманы жасау мүмкiн емес"
-
-#: svtmsg.src#S_CANNOT_FIND_FLOATING_WIN.string.text
-msgid "Cannot find FloatingWindow for floating DockingWindow at ($Arg1)."
-msgstr ""
-"($Arg1)- гi DockingWindow енгiзу үшiн, FloatingWindow -тi табуға мүмкiндiк "
-"жоқ."
-
-#: svtmsg.src#S_CANNOT_MAKE_BUTTON_VISIBLE_IN_TOOLBOX.string.text
-msgid "Button cannot be made visible in ToolBox at ($Arg1)"
-msgstr "($Arg1)-да саймандар топтамасының iшiнде батырма бейнеленбейдi "
-
-#: svtmsg.src#S_CONTROLTYPE_NOT_SUPPORTED.string.text
-msgid "ControlType ($Arg1) is not supported"
-msgstr "($Arg1) бақылау түрi сүйемелденбейдi"
-
-#: svtmsg.src#S_DEPRECATED.string.text
-msgid "Deprecated! Please change the script."
-msgstr "Айыптауш! Өтiнемiн түпнұсқаны өзгертiңiз.   "
-
-#: svtmsg.src#S_DIRECTORY_NOT_EMPTY.string.text
-msgid "Directory has to be Empty to unpack to. Directory: \"($Arg1)\""
-msgstr "\"($Arg1)\" Анықтамалық. Анықтамалықты ашу үшiн ол бос болу керек. "
-
-#: svtmsg.src#S_ENTRY_NOT_FOUND.string.text
-msgid "\"($Arg2)\" entry at ($Arg1) not found"
-msgstr "\"($Arg1)\"-те ($Arg2) табылмады"
-
-#: svtmsg.src#S_ERROR_IN_SET_TEXT.string.text
-msgid "Set text did not function"
-msgstr "Бұл мәтiн жете ретiнде саналмайды"
-
-#: svtmsg.src#S_ERROR_SAVING_IMAGE.string.text
-msgid "Error #($Arg1) when saving the image"
-msgstr "№($Arg1) бейненi жазу кезiндегi қате"
-
-#: svtmsg.src#S_GPF_ABORT.string.text
-msgid "Program aborted with GPF"
-msgstr "GPF-мен бағдарлама үзiлдi"
-
-#: svtmsg.src#S_HELPID_ON_TOOLBOX_NOT_FOUND.string.text
-msgid "HelpID in ToolBox not found at ($Arg1)"
-msgstr " ($Arg1)-да ID көмегi  саймандар топтамасында  мүмкiнi жоқ"
-
-#: svtmsg.src#S_INTERNAL_ERROR.string.text
-msgid "Internal error at ($Arg1)"
-msgstr "($Arg1)-те iшкi қате"
-
-#: svtmsg.src#S_INVALID_PARAMETERS.string.text
-msgid "Invalid Parameters"
-msgstr "Параметрлер дұрыс емес"
-
-#: svtmsg.src#S_INVALID_POSITION.string.text
-msgid "Invalid position at ($Arg1)"
-msgstr "($Arg1)-тегi орны дұрыс емес"
-
-#: svtmsg.src#S_ITEMS_INVISIBLE.string.text
-msgid "The items are hidden at ($Arg1)"
-msgstr "($Arg1)-те жасырын элементтер"
-
-#: svtmsg.src#S_MENU_NOT_CLOSING.string.text
-msgid "Menu not closing."
-msgstr ""
-
-#: svtmsg.src#S_METHOD_FAILED.string.text
-msgid "($Arg1) of entry \"($Arg2)\" failed"
-msgstr "\"($Arg2)\"-ге кiретiн ($Arg1) жұмыс орындамайды "
-
-#: svtmsg.src#S_NO_ACTIVE_WINDOW.string.text
-msgid "No active window found (GetNextCloseWindow)"
-msgstr "(GetNextCloseWindow) белсендi терезе табылмады"
-
-#: svtmsg.src#S_NO_CANCEL_BUTTON.string.text
-msgid "There is no Cancel button at ($Arg1)"
-msgstr "($Arg1)-де ешқандай Болдырмау батырмасы жоқ\n"
-
-#: svtmsg.src#S_NO_DEFAULT_BUTTON.string.text
-msgid "There is no Default button defined at ($Arg1)"
-msgstr "($Arg1)-де ешқандай Үнсiз келiсiм батырмасы жоқ\n"
-
-#: svtmsg.src#S_NO_DIALOG_IN_GETACTIVE.string.text
-msgid "GetActive does not return a dialog! Inform development"
-msgstr "GetActive сұхбатты қайтармады! Құрастырушыларға хабар берiңiз."
-
-#: svtmsg.src#S_NO_HELP_BUTTON.string.text
-msgid "There is no Help button at ($Arg1)"
-msgstr "($Arg1)-де ешқандай Көмек батырмасы жоқ\n"
-
-#: svtmsg.src#S_NO_LIST_BOX_BUTTON.string.text
-msgid "ListBoxButton does not exist in ($Arg1)"
-msgstr "($Arg1)-те тiзiм топтамасының батырмасы жоқ\n"
-
-#: svtmsg.src#S_NO_LIST_BOX_STRING.string.text
-msgid "String does not exist in ($Arg1)"
-msgstr ""
-
-#: svtmsg.src#S_NO_MENU.string.text
-msgid "There is no menu at ($Arg1)"
-msgstr " ($Arg1)-де  мәзiр жоқ "
-
-#: svtmsg.src#S_NO_MORE_FILES.string.text
-msgid "No more files"
-msgstr "Файлдар жоқ"
-
-#: svtmsg.src#S_NO_NO_BUTTON.string.text
-msgid "There is no No button at ($Arg1)"
-msgstr "($Arg1)-де 'Жоқ' батырмасы жоқ\n"
-
-#: svtmsg.src#S_NO_OK_BUTTON.string.text
-msgid "There is no OK button at ($Arg1)"
-msgstr "($Arg1)-де ешқандай ОК батырмасы жоқ\n"
-
-#: svtmsg.src#S_NO_POPUP.string.text
-msgid "Pop-up menu not open"
-msgstr "Қалқып шығу мәзiрi ашылмайды"
-
-#: svtmsg.src#S_NO_RETRY_BUTTON.string.text
-msgid "There is no Repeat button at ($Arg1)"
-msgstr "($Arg1)-де ешқандай Қайталау батырмасы жоқ\n"
-
-#: svtmsg.src#S_NO_SAX_PARSER.string.text
-msgid "No SAX Parser when using ($Arg1). Initialize with 'SAXReadFile' first."
-msgstr "($Arg1) қолданғанда SAX Талдауышы жоқ. 'SAXReadFile' бастап бастапқы мәндi "
-"берiңiз\n"
-
-#: svtmsg.src#S_NO_SCROLLBAR.string.text
-msgid "No scroll bar at ($Arg1)"
-msgstr " ($Arg1) -да айналым жолақтарынсыз"
-
-#: svtmsg.src#S_NO_SELECTED_ENTRY.string.text
-msgid "No entry is selected in ($Arg2) at ($Arg1)"
-msgstr " ($Arg1) -де ($Arg2)-та ешқандай енгiзу таңдалмады\n"
-
-#: svtmsg.src#S_NO_SELECTED_ENTRY_DEPRECATED.string.text
-msgid "No entry is selected in TreeListBox at ($Arg1)"
-msgstr "($Arg1)-те тармақталынған тiзiм топтамасын таңдауға мүмкiндiк жоқ"
-
-#: svtmsg.src#S_NO_SELECT_FALSE.string.text
-msgid "Select FALSE not allowed. Use MultiSelect at ($Arg1)"
-msgstr "Рұқсат етiлмеген ЖАЛҒАН таңдаңыз. ($Arg1)-де Қолдануының мультитаңдау\n"
-
-#: svtmsg.src#S_NO_STATUSBAR.string.text
-msgid "No status bar at ($Arg1)"
-msgstr "($Arg1) -да аймақ дәрежесi табылмады"
-
-#: svtmsg.src#S_NO_SUBMENU.string.text
-msgid "Submenu does not exist"
-msgstr "Iшкi мәзiрi жоқ"
-
-#: svtmsg.src#S_NO_YES_BUTTON.string.text
-msgid "There is no Yes button at ($Arg1)"
-msgstr "($Arg1)-де  Иә батырмасы жоқ\n"
-
-#: svtmsg.src#S_NUMBER_TOO_BIG.string.text
-msgid "Entry number ($Arg2) is too large in ($Arg1). Max. allowed is ($Arg3)"
-msgstr "($Arg2) мәнi ($Arg1)-ден үлкен. ($Arg3) максималды мүмкiндiк мән"
-
-#: svtmsg.src#S_NUMBER_TOO_SMALL.string.text
-msgid ""
-"The entry number ($Arg2) is too small in ($Arg1). Min allowed is ($Arg3)"
-msgstr "($Arg2) мәнi ($Arg1) мәнiнен кiшi. ($Arg3) минималды мүмкiндiк мән "
-
-#: svtmsg.src#S_POINTER_OUTSIDE_APPWIN.string.text
-msgid "Pointer not inside application window at '($Arg1)'"
-msgstr "'($Arg1)'-дiң iшiндегi қосымша терезенiң  бөлек нұсқағышы"
-
-#: svtmsg.src#S_RESETAPPLICATION_FAILED_COMPLEX.string.text
-msgid "ResetApplication failed: too complex"
-msgstr "Қосымшаның босатуы орындалмады: Өте күрделi"
-
-#: svtmsg.src#S_RESETAPPLICATION_FAILED_UNKNOWN.string.text
-msgid "ResetApplication failed: unknown window type"
-msgstr "Қосымшаның босатуы орындалмады: Терезенiң түрi белгiсiз"
-
-#: svtmsg.src#S_SELECTION_BY_ATTRIBUTE_ONLY_DIRECTORIES.string.text
-msgid "Selection by attributes only possible for directories"
-msgstr "Төлбелгi бойынша таңдау тек бумалар үшiн рұқсат"
-
-#: svtmsg.src#S_SELECT_DESELECT_VIA_STRING_NOT_IMPLEMENTED.string.text
-msgid "Select/Deselect with string not implemented at ($Arg1)"
-msgstr "($Arg1)-те орындалмаған Таңдау/Болдырмау\n"
-
-#: svtmsg.src#S_SID_EXECUTE_FAILED.string.text
-msgid "Slot ID could not be executed"
-msgstr "ID ciлтемелiк бөлiғiн орындауға мүмкiндiк жоқ"
-
-#: svtmsg.src#S_SID_EXECUTE_FAILED_NO_DISPATCHER.string.text
-msgid "Slot ID cannot be executed. No ActiveDispatcher"
-msgstr ""
-" ID сiлтемелiк бөлiгiн iске қосуға мүмкiндiк жоқ. Белсендi реттегiшi жоқ."
-
-#: svtmsg.src#S_SIZE_BELOW_MINIMUM.string.text
-msgid "The Size is below the minimum. x=($Arg1) ,y=($Arg2)"
-msgstr " x = ($Arg1), y = ($Arg2). Өлшем - минимумнан төмен."
-
-#: svtmsg.src#S_SIZE_NOT_CHANGEABLE.string.text
-msgid "Size cannot be altered at ($Arg1)"
-msgstr "($Arg1) үшiн өлшемiн өзгертуге болмайды\n"
-
-#: svtmsg.src#S_SLOT_IN_EXECUTE.string.text
-msgid "Another Slot is being executed already."
-msgstr ""
-
-#: svtmsg.src#S_SPLITWIN_NOT_FOUND.string.text
-msgid "SplitWindow not found at ($Arg1)"
-msgstr "($Arg1)-те үзу терезесi табылмады"
-
-#: svtmsg.src#S_TABPAGE_NOT_FOUND.string.text
-msgid "Tab page not found at ($Arg1)"
-msgstr "($Arg1)-те бетбелгiлер табылмады"
-
-#: svtmsg.src#S_TEAROFF_FAILED.string.text
-msgid "TearOff failed in ToolBox at ($Arg1)"
-msgstr "($Arg1)-те саймандар топтамасында TearOff`(Алып тастау) сәтсiздiгi болыпты.\n"
-
-#: svtmsg.src#S_TRISTATE_NOT_ALLOWED.string.text
-msgid "Tristate cannot be set at ($Arg1)"
-msgstr " ($Arg1)-те Триггердi орнатуға мүмкiндiк жоқ"
-
-#: svtmsg.src#S_UNKNOWN_COMMAND.string.text
-msgid "Unknown command '($Arg1)'"
-msgstr "'($Argl)' белгiсiз мәзiрлер"
-
-#: svtmsg.src#S_UNKNOWN_METHOD.string.text
-msgid "Unknown method '($Arg1)' on ($Arg2)"
-msgstr " '($Arg2)'-гi  '($Arg1)'-нiң белгiссiз әдiсi "
-
-#: svtmsg.src#S_UNKNOWN_TYPE.string.text
-msgid "Unknown object type ($Arg1) from UId or method '($Arg2)' not supported"
-msgstr "UId -ден белгiсiз ($Arg1) нысаны немесе сүйемелденбейтiн '($Arg2)'  әдiсi\n"
-
-#: svtmsg.src#S_UNO_PROPERTY_NITIALIZE_FAILED.string.text
-msgid "UnoSlot: Properties could not be initialized"
-msgstr "Слот жоқ: Қасиеттi бастапқы шарттарға келтiру мүмкiн емес "
-
-#: svtmsg.src#S_UNO_URL_EXECUTE_FAILED_DISABLED.string.text
-msgid "UNO URL \"($Arg1)\" could not be run: Disabled"
-msgstr "UNO URL \"($Arg1)\" басқаруға болмайды: Бұғатталған "
-
-#: svtmsg.src#S_UNO_URL_EXECUTE_FAILED_NO_DISPATCHER.string.text
-msgid "UNO URL \"($Arg1)\" could not be executed: No dispatcher was found."
-msgstr "UNO URL \"($Arg1)\" орындауға мүмкiндiк жоқ: Ешқандай реттегiш табылмады.\n"
-
-#: svtmsg.src#S_UNO_URL_EXECUTE_FAILED_NO_FRAME.string.text
-msgid "UNO URL \"($Arg1)\" could not be executed: No ActiveFrame on desktop."
-msgstr ""
-"UNO URL \"($Arg1)\" орындалынбады: Ешқандай Белсендi Құрылым жұмысшы үстелiнде "
-"жоқ."
-
-#: svtmsg.src#S_UNPACKING_STORAGE_FAILED.string.text
-msgid "Unpacking storage \"($Arg1)\" to \"($Arg2)\" failed"
-msgstr "\"($Arg2)\"-ке жеткiзiлген \"($Arg1) \"-нi сақтауынан ашу \n"
-
-#: svtmsg.src#S_WINDOW_DISAPPEARED.string.text
-msgid "Window disappeared in the meantime at ($Arg1)"
-msgstr "($Arg1)-те терезе ағымды уақытында жабылады"
-
-#: svtmsg.src#S_WIN_DISABLED.string.text
-msgid "($Arg1) could not be accessed. Disabled"
-msgstr "($Arg1)-ға рұқсат жоқ "
-
-#: svtmsg.src#S_WIN_INVISIBLE.string.text
-msgid "($Arg1) is not visible"
-msgstr "'($Argl)' көрiнбейтiн"
-
-#: svtmsg.src#S_WIN_NOT_FOUND.string.text
-msgid "($Arg1) could not be found"
-msgstr " ($Arg1) табу мүмкiндiк жоқ"
-
-#: testtool.src#S_INVALID_KEYCODE.string.text
-msgid "Is an invalid KeyCode!"
-msgstr "Перне коды дұрыс емес!"
-
-#: testtool.src#S_MANDATORY_FILE.string.text
-msgid ""
-"\n"
-"could not be found.\n"
-"This file is indispensable."
-msgstr ""
-"\n"
-" Табылмады.\n"
-" Бұл файл қажеттi."
-
-#: testtool.src#S_READING_BASIC_MODULE.string.text
-msgid "Reading BASIC module"
-msgstr "BASIC-тiң модулiң оқу"
-
-#: testtool.src#S_READING_CONTROLS.string.text
-msgid "Reading Controls"
-msgstr "Басқаруны оқу"
-
-#: testtool.src#S_READING_LONGNAMES.string.text
-msgid "Reading long-names"
-msgstr "Ұзын ат оқу"
-
-#: testtool.src#S_READING_SLOT_IDS.string.text
-msgid "Reading Slot IDs"
-msgstr "Slot IDs оқу"
-
-#: testtool.src#S_STARTING_APPLICATION.string.text
-msgid "Starting application"
-msgstr "Қосымшаны орындау"
-
-#: ttmsg.src#S_APPLICATION_RESTARTED.string.text
-msgid "Application has been restarted."
-msgstr "Қосымша жаңадан жүктелiндi"
-
-#: ttmsg.src#S_APPLICATION_START_FAILED.string.text
-msgid "Application \"($Arg1)\" cannot be started. "
-msgstr "\"($Arg1)\" қосымшаны iске қосуға болмай тұр."
-
-#: ttmsg.src#S_CANNOT_OPEN_FILE.string.text
-msgid "File cannot be opened: ($Arg1)"
-msgstr "($Arg1): Файлдың ашылуы мүмкiн емес"
-
-#: ttmsg.src#S_DOUBLE_NAME.string.text
-msgid "Name double: ($Arg1)"
-msgstr "Қос аты: ($Arg1)"
-
-#: ttmsg.src#S_ERRORS_DETECTED.string.text
-msgid "** ($Arg1) errors occurred"
-msgstr "** ($Arg1)-да  қателер  табылды."
-
-#: ttmsg.src#S_FIRST_SHORTNAME_REQ_ASTRX.string.text
-msgid "First short-name must start with * . Ignoring."
-msgstr "*-ден бастап қысқа аты iске қосылу керек. Өткiзу керек пе?\n"
-
-#: ttmsg.src#S_INCLUDE_FILE_WARNINGS_DETECTED.string.text
-msgid "** ($Arg1) warnings occurred during initialization"
-msgstr "Бастапқы мәндi беру уақытында ** ($Arg1) ескертпелерi болды"
-
-#: ttmsg.src#S_INVALID_LINE.string.text
-msgid "Line \"($Arg1)\" is invalid."
-msgstr " \"($Arg1)\" сызығына рұқсат жоқ. \n"
-
-#: ttmsg.src#S_LONGNAME_UNKNOWN.string.text
-msgid "Long-name unknown: ($Arg1)"
-msgstr "($Arg1): Ұзын аты белгiсiз"
-
-#: ttmsg.src#S_NAME_NOT_THERE.string.text
-msgid "Name doesn't exist: #($Arg1)"
-msgstr " #($Arg1):Аты жоқ"
-
-#: ttmsg.src#S_NO_CONNECTION.string.text
-msgid "No connection. Sequence No: ($Arg1)"
-msgstr "Байланыс жоқ. Келiсiмi жоқ:($Arg1)"
-
-#: ttmsg.src#S_NO_ERRORS_DETECTED.string.text
-msgid "** No errors have occurred"
-msgstr "**  Ешқандай қателер болмады"
-
-#: ttmsg.src#S_NO_FILES_FOUND.string.text
-msgid "No ($Arg1) files found"
-msgstr "($Arg1) файлды таппады"
-
-#: ttmsg.src#S_NO_INCLUDE_FILE_WARNINGS_DETECTED.string.text
-msgid "** No warnings occurred during initialization"
-msgstr "**Шыққан мәндi қайтарыңыз\n"
-
-#: ttmsg.src#S_NO_WARNINGS_DETECTED.string.text
-msgid "** No warnings have occurred"
-msgstr ""
-"** Ешқандай ескертпелер болмады \n"
-"   "
-
-#: ttmsg.src#S_READING_FILE.string.text
-msgid "Reading the files"
-msgstr "Файлдарды оқу"
-
-#: ttmsg.src#S_RETURNED_VALUE_ID_MISSMATCH.string.text
-msgid "Return value received but different Id expected"
-msgstr "Түрлi  Id күткен алынған мәннiң қайтарыңыз."
-
-#: ttmsg.src#S_RETURNED_VALUE_NO_RECEIVER.string.text
-msgid "Return value received but no receiver defined"
-msgstr "Белгiленген қабылдағышты емес қабылданған мәндi қайтарыңыз\n"
-
-#: ttmsg.src#S_RETURN_SEQUENCE_MISSMATCH.string.text
-msgid "Return Stream has wrong sequence: ($Arg1) instead of ($Arg2)"
-msgstr "($Arg1)-ның орына  ($Arg2): Қайтыңыз, ағынның тiзбегi дұрыс емес.  "
-
-#: ttmsg.src#S_SHORTNAME_UNKNOWN.string.text
-msgid "Short-name unknown during copying: ($Arg1)"
-msgstr " ($Arg1)-ның қысқа аты көшiру кезде белгiссiз "
-
-#: ttmsg.src#S_TIMOUT_SENDING.string.text
-msgid "Server Timeout while sending. Sequence No: ($Arg1)"
-msgstr "Жiберу кезде Сервер өшiрiлген. ($Arg1)-нiң тiзбектi нөмiрi\n"
-
-#: ttmsg.src#S_TIMOUT_WAITING.string.text
-msgid "Server Timeout while waiting for answer. Sequence No: ($Arg1)"
-msgstr "Сервер өшiрiлген, жауап келгенше күтiңiз .  ($Arg1) байланысы жоқ\n"
-
-#: ttmsg.src#S_UNKNOWN_METHOD.string.text
-msgid "Unknown method on object :($Arg1).($Arg2)"
-msgstr "($Arg1).($Arg2) нысандарда әдiсi белгiссiз"
-
-#: ttmsg.src#S_UNKNOWN_SLOT_CONTROL.string.text
-msgid "Slot/Control unknown :\"($Arg1)\""
-msgstr "\"($Arg1)\": Сiлтемелiк бөлiгi/бақылауы анықталмаған"
-
-#: ttmsg.src#S_WARNINGS_DETECTED.string.text
-msgid "** ($Arg1) warnings occurred"
-msgstr "** ($Arg1) Ескертулерi өтiп қойған"
-
-#: format.src#STR_BASICKEY_FORMAT_CURRENCY.string.text
-msgid "@0.00 $;@(0.00 $)"
-msgstr "@0.00 $;@(0.00 $)"
-
-#: format.src#STR_BASICKEY_FORMAT_FALSE.string.text
-msgid "False"
-msgstr "Жалған"
-
-#: format.src#STR_BASICKEY_FORMAT_NO.string.text
-msgid "No"
-msgstr "Жоқ"
-
-#: format.src#STR_BASICKEY_FORMAT_OFF.string.text
-msgid "Off"
-msgstr "Off"
-
-#: format.src#STR_BASICKEY_FORMAT_ON.string.text
-msgid "On"
+#: source/classes/sb.src#IDS_SBERR_TERMINATED.String.Text
+msgid  "The macro running has been interrupted"
+msgstr "Макростын орындалуы үзiлiндi"
+
+#: source/classes/sb.src#IDS_SBERR_STOREREF.String.Text
+msgid  "Reference will not be saved: "
+msgstr "Сiлтеме сақталмайды"
+
+#: source/classes/sb.src#ERRCODE_BASMGR_LIBLOAD & ERRCODE_RES_MASK.String.Text
+msgid  "Error loading library '$(ARG1)'."
+msgstr "'$(ARG1)' кiтапхананың жүктеу қатесi"
+
+#: source/classes/sb.src#ERRCODE_BASMGR_LIBSAVE & ERRCODE_RES_MASK.String.Text
+msgid  "Error saving library: '$(ARG1)'."
+msgstr " '$(ARG1)':Кiтапхананың жуктеме қатесi"
+
+#: source/classes/sb.src#ERRCODE_BASMGR_MGROPEN & ERRCODE_RES_MASK.String.Text
+msgid  "The BASIC from the file '$(ARG1)' could not be initialized."
+msgstr "'$(ARG1)' файлда BASIC-тiң бастапқы шарттары беру мүмкiн емес"
+
+#: source/classes/sb.src#ERRCODE_BASMGR_MGRSAVE & ERRCODE_RES_MASK.String.Text
+msgid  "Error saving BASIC: '$(ARG1)'."
+msgstr "BASIC'а сақтау қатесi: '$(ARG1)'"
+
+#: source/classes/sb.src#ERRCODE_BASMGR_REMOVELIB & ERRCODE_RES_MASK.String.Text
+msgid  "Error removing library."
+msgstr "Кiтапхананы жою қатесi"
+
+#: source/classes/sb.src#ERRCODE_BASMGR_UNLOADLIB & ERRCODE_RES_MASK.String.Text
+msgid  "The library could not be removed from memory."
+msgstr "Кiтапхананы жадынан жоюға болмайды."
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_ON.String.Text
+msgid  "On"
 msgstr "Үстiне"
 
-#: format.src#STR_BASICKEY_FORMAT_TRUE.string.text
-msgid "True"
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_OFF.String.Text
+msgid  "Off"
+msgstr "Off"
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_TRUE.String.Text
+msgid  "True"
 msgstr "Шындық"
 
-#: format.src#STR_BASICKEY_FORMAT_YES.string.text
-msgid "Yes"
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_FALSE.String.Text
+msgid  "False"
+msgstr "Жалған"
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_YES.String.Text
+msgid  "Yes"
 msgstr "Иә"
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_NO.String.Text
+msgid  "No"
+msgstr "Жоқ"
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_CURRENCY.String.Text
+msgid  "@0.00 $;@(0.00 $)"
+msgstr "@0.00 $;@(0.00 $)"

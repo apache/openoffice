@@ -1,795 +1,604 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
 
-#: setupstrings.ulf#STRING_PREVIOUS.LngText.text
-msgid "Back"
+
+#: src/Localization/setupstrings.ulf#STRING_PREVIOUS
+msgid  "Back"
 msgstr "Geri"
 
-#: setupstrings.ulf#STRING_NEXT.LngText.text
-msgid "Next"
+#: src/Localization/setupstrings.ulf#STRING_NEXT
+msgid  "Next"
 msgstr "İleri"
 
-#: setupstrings.ulf#STRING_CANCEL.LngText.text
-msgid "Cancel"
+#: src/Localization/setupstrings.ulf#STRING_CANCEL
+msgid  "Cancel"
 msgstr "İptal"
 
-#: setupstrings.ulf#STRING_FINISH.LngText.text
-msgid "Finish"
+#: src/Localization/setupstrings.ulf#STRING_FINISH
+msgid  "Finish"
 msgstr "Bitir"
 
-#: setupstrings.ulf#STRING_DECLINE.LngText.text
-msgid "Decline"
+#: src/Localization/setupstrings.ulf#STRING_DECLINE
+msgid  "Decline"
 msgstr "Reddet"
 
-#: setupstrings.ulf#STRING_INSTALL.LngText.text
-msgid "Install now"
+#: src/Localization/setupstrings.ulf#STRING_INSTALL
+msgid  "Install now"
 msgstr "Şimdi kur"
 
-#: setupstrings.ulf#STRING_UNINSTALL.LngText.text
-msgid "Remove Now"
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALL
+msgid  "Remove Now"
 msgstr "Şimdi Kaldır"
 
-#: setupstrings.ulf#STRING_HELP.LngText.text
-msgid "Help"
+#: src/Localization/setupstrings.ulf#STRING_HELP
+msgid  "Help"
 msgstr "Yardım"
 
-#: setupstrings.ulf#STRING_OK.LngText.text
-msgid "OK"
+#: src/Localization/setupstrings.ulf#STRING_OK
+msgid  "OK"
 msgstr "Tamam"
 
-#: setupstrings.ulf#STRING_ERROR.LngText.text
-msgid "Error"
+#: src/Localization/setupstrings.ulf#STRING_ERROR
+msgid  "Error"
 msgstr "Hata"
 
-#: setupstrings.ulf#STRING_FILE_NOT_FOUND.LngText.text
-msgid "Error: File not found"
+#: src/Localization/setupstrings.ulf#STRING_FILE_NOT_FOUND
+msgid  "Error: File not found"
 msgstr "Hata: Dosya bulunamadı"
 
-#: setupstrings.ulf#STRING_APPLICATIONTITLE.LngText.text
-msgid "${PRODUCT_FULLNAME} Installation Wizard"
+#: src/Localization/setupstrings.ulf#STRING_APPLICATIONTITLE
+msgid  "${PRODUCT_FULLNAME} Installation Wizard"
 msgstr "${PRODUCT_FULLNAME} Kurulum Sihirbazı"
 
-#: setupstrings.ulf#STRING_APPLICATIONTITLEUNINSTALLATION.LngText.text
-msgid "${PRODUCT_FULLNAME} Uninstallation Wizard"
+#: src/Localization/setupstrings.ulf#STRING_APPLICATIONTITLEUNINSTALLATION
+msgid  "${PRODUCT_FULLNAME} Uninstallation Wizard"
 msgstr "${PRODUCT_FULLNAME} Kaldırma Sihirbazı"
 
-#: setupstrings.ulf#STRING_CANCEL_DIALOG_TITLE.LngText.text
-msgid "Exit"
+#: src/Localization/setupstrings.ulf#STRING_CANCEL_DIALOG_TITLE
+msgid  "Exit"
 msgstr "Çıkış"
 
-#: setupstrings.ulf#STRING_CANCEL_DIALOG.LngText.text
-msgid "Do you really want to exit the Installation Wizard?"
+#: src/Localization/setupstrings.ulf#STRING_CANCEL_DIALOG
+msgid  "Do you really want to exit the Installation Wizard?"
 msgstr "Kurulum sihirbazından çıkmak istediğinizden emin misiniz?"
 
-#: setupstrings.ulf#STRING_CANCEL_DIALOG_UNINSTALLATION.LngText.text
-msgid "Do you really want to exit the Uninstallation Wizard?"
+#: src/Localization/setupstrings.ulf#STRING_CANCEL_DIALOG_UNINSTALLATION
+msgid  "Do you really want to exit the Uninstallation Wizard?"
 msgstr "Kaldırma Sihirbazından çıkmak istediğinizden emin misiniz?"
 
-#: setupstrings.ulf#STRING_STOP_DIALOG.LngText.text
-msgid "Do you really want to abort the installation process?"
+#: src/Localization/setupstrings.ulf#STRING_STOP_DIALOG
+msgid  "Do you really want to abort the installation process?"
 msgstr "Kuruluma gerçekten son vermek istiyor musunuz?"
 
-#: setupstrings.ulf#STRING_STOP_DIALOG_TITLE.LngText.text
-msgid "Abort installation?"
+#: src/Localization/setupstrings.ulf#STRING_STOP_DIALOG_TITLE
+msgid  "Abort installation?"
 msgstr "Kuruluma son ver?"
 
-#: setupstrings.ulf#STRING_STOP_DIALOG_UNINSTALLATION.LngText.text
-msgid "Do you really want to abort the uninstallation process?"
+#: src/Localization/setupstrings.ulf#STRING_STOP_DIALOG_UNINSTALLATION
+msgid  "Do you really want to abort the uninstallation process?"
 msgstr "Kaldırmaya gerçekten son vermek istiyor musunuz?"
 
-#: setupstrings.ulf#STRING_STOP_DIALOG_TITLE_UNINSTALLATION.LngText.text
-msgid "Abort uninstallation?"
+#: src/Localization/setupstrings.ulf#STRING_STOP_DIALOG_TITLE_UNINSTALLATION
+msgid  "Abort uninstallation?"
 msgstr "Kaldırmaya son ver?"
 
-#: setupstrings.ulf#STRING_ACCEPTLICENSE.LngText.text
-msgid "Accept License"
+#: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE
+msgid  "Accept License"
 msgstr "Lisansı Kabul Et"
 
-#: setupstrings.ulf#STRING_ACCEPTLICENSE1.LngText.text
-msgid "Software License Agreement"
+#: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE1
+msgid  "Software License Agreement"
 msgstr "Yazılım Lisans Anlaşması"
 
-#: setupstrings.ulf#STRING_ACCEPTLICENSE2.LngText.text
-msgid "Please read the following license agreement carefully."
+#: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE2
+msgid  "Please read the following license agreement carefully."
 msgstr "Lütfen lisans anlaşmasını okuyunuz."
 
-#: setupstrings.ulf#STRING_ACCEPTLICENSE3.LngText.text
-msgctxt "setupstrings.ulf#STRING_ACCEPTLICENSE3.LngText.text"
-msgid ""
-"If you have read and accept all the terms of the entire Software License "
-"Agreement, click 'Accept License' to continue with the installation."
+#: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE3
+msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
 msgstr ""
-"Eğer mevcut Yazılım Lisans Anlaşmasını okudunuz ve kabul ediyorsanız, "
-"yüklemeye devam için 'Lisansı kabul et''i tıklayınız."
 
-#: setupstrings.ulf#STRING_CHOOSEDIRECTORY1.LngText.text
-msgid "Select Installation Directory"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1
+msgid  "Select Installation Directory"
 msgstr "Yükleme Dizinini Seçin"
 
-#: setupstrings.ulf#STRING_CHOOSEDIRECTORY1_UPDATE.LngText.text
-msgid "Update the Installed Version"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1_UPDATE
+msgid  "Update the Installed Version"
 msgstr "Kurulmuş Sürümü Güncelle"
 
-#: setupstrings.ulf#STRING_CHOOSEDIRECTORY1_MAINTAIN.LngText.text
-msgid "Adding Components to the Installed Version"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY1_MAINTAIN
+msgid  "Adding Components to the Installed Version"
 msgstr "Kurulmuş sürüme eklenen bileşenler"
 
-#: setupstrings.ulf#STRING_CHOOSEDIRECTORY2.LngText.text
-msgid "Install ${PRODUCT_FULLNAME} in this directory"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY2
+msgid  "Install ${PRODUCT_FULLNAME} in this directory"
 msgstr "${PRODUCT_FULLNAME} 'ı bu dizine kur"
 
-#: setupstrings.ulf#STRING_CHOOSEDIRECTORY3.LngText.text
-msgid "Browse..."
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY3
+msgid  "Browse..."
 msgstr "Gözat..."
 
-#: setupstrings.ulf#STRING_CHOOSEDIRECTORY4_QUESTION_TITLE.LngText.text
-msgid "Create New Directory"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY4_QUESTION_TITLE
+msgid  "Create New Directory"
 msgstr "Yeni Dizin Oluştur"
 
-#: setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE.LngText.text
-msgid ""
-"The directory '${DIR}' does not exist.\n"
-"Do you want to create it now?"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE
+msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now?"
 msgstr ""
-"'${DIR}' dizini bulunmamaktadır.\n"
-"Şimdi oluşturmak ister misiniz?"
 
-#: setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2.LngText.text
-msgid ""
-"The directory '${DIR}' does not exist.\n"
-"Do you want to create it now or choose another directory?"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY5_QUESTION_MESSAGE2
+msgid  "The directory '${DIR}' does not exist.\nDo you want to create it now or choose another directory?"
 msgstr ""
-"'${DIR}' dizini bulunmamaktadır.\n"
-"Şimdi oluşturmak ya da farklı bir dizin seçmek ister misiniz?"
 
-#: setupstrings.ulf#STRING_CHOOSEDIRECTORY6.LngText.text
-msgid "Select root directory"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY6
+msgid  "Select root directory"
 msgstr "Kök dizin seçin"
 
-#: setupstrings.ulf#STRING_CHOOSEDIRECTORY_NO_WRITE_ACCESS.LngText.text
-msgid "You do not have write access in the directory"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_NO_WRITE_ACCESS
+msgid  "You do not have write access in the directory"
 msgstr "Dizin içine yazma iznine sahip değilsiniz"
 
-#: setupstrings.ulf#STRING_CHOOSEDIRECTORY_NOT_ALLOWED.LngText.text
-msgid "You are not allowed to create the directory"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_NOT_ALLOWED
+msgid  "You are not allowed to create the directory"
 msgstr "Dizin oluşturmanıza izin verilmedi"
 
-#: setupstrings.ulf#STRING_CHOOSEDIRECTORY_NO_SUCCESS.LngText.text
-msgid "Failed to create the directory"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_NO_SUCCESS
+msgid  "Failed to create the directory"
 msgstr "Dizin oluşturulamadı"
 
-#: setupstrings.ulf#STRING_CHOOSECOMPONENTS1.LngText.text
-msgid "Select Components"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS1
+msgid  "Select Components"
 msgstr "Bileşenleri Seçiniz"
 
-#: setupstrings.ulf#STRING_CHOOSECOMPONENTS1_MAINTAIN.LngText.text
-msgid "Select Additional Components"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS1_MAINTAIN
+msgid  "Select Additional Components"
 msgstr "Ek Bileşenleri Seçiniz"
 
-#: setupstrings.ulf#STRING_CHOOSECOMPONENTS2.LngText.text
-msgid "Marked components will be installed. Please mark them accordingly"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS2
+msgid  "Marked components will be installed. Please mark them accordingly"
 msgstr "İşaretlenmiş bileşenler kurulacak. Lütfen işaretleyiniz"
 
-#: setupstrings.ulf#STRING_CHOOSECOMPONENTS3.LngText.text
-msgid "Feature Description"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS3
+msgid  "Feature Description"
 msgstr "Özellik Açıklaması"
 
-#: setupstrings.ulf#STRING_CHOOSECOMPONENTS4.LngText.text
-msgid "Size (kB):"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS4
+msgid  "Size (kB):"
 msgstr "Boyut (kB):"
 
-#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE1.LngText.text
-msgctxt "setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE1.LngText.text"
-msgid "Select the Type of Installation"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE1
+msgid  "Select the Type of Installation"
 msgstr "Kurulum Türünü Seçin"
 
-#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE2.LngText.text
-msgid "Select the type of installation that best suits your needs:"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE2
+msgid  "Select the type of installation that best suits your needs:"
 msgstr "İhtiyaçlarınıza en uygun kurulum türünü seçin:"
 
-#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE3.LngText.text
-msgctxt "setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE3.LngText.text"
-msgid "Select the Type of Installation"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE3
+msgid  "Select the Type of Installation"
 msgstr "Kurulum Türünü Seçin"
 
-#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE4.LngText.text
-msgid "The main components will be installed. Recommended for most users."
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE4
+msgid  "The main components will be installed. Recommended for most users."
 msgstr "Ana bileşenler kurulacaktır. Birçok kullanıcı için önerilir."
 
-#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE5.LngText.text
-msgid ""
-"You choose the components you want to install and where they are stored. "
-"Recommended for advanced users."
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE5
+msgid  "You choose the components you want to install and where they are stored. Recommended for advanced users."
 msgstr ""
-"İstediğiniz bileşenleri seçebilirsiniz ve nereye kurulacağına karar "
-"verebilirsiniz. Uzman kullanıcılar için önerilir."
 
-#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE6.LngText.text
-msgid "Typical"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE6
+msgid  "Typical"
 msgstr "Normal"
 
-#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE7.LngText.text
-msgid "Custom"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE7
+msgid  "Custom"
 msgstr "Özel"
 
-#: setupstrings.ulf#STRING_INSTALLATIONIMMINENT1.LngText.text
-msgid "Ready to Install"
+#: src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT1
+msgid  "Ready to Install"
 msgstr "Kurulum için hazır"
 
-#: setupstrings.ulf#STRING_INSTALLATIONIMMINENT1_UPDATE.LngText.text
-msgid "Ready to Update"
+#: src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT1_UPDATE
+msgid  "Ready to Update"
 msgstr "Güncelleme için hazır"
 
-#: setupstrings.ulf#STRING_INSTALLATIONIMMINENT2.LngText.text
-msgid "The following ${PRODUCT_FULLNAME} components will be installed:"
+#: src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT2
+msgid  "The following ${PRODUCT_FULLNAME} components will be installed:"
 msgstr "${PRODUCT _ FULLNAME} bileşenleri kurulmuş olacak:"
 
-#: setupstrings.ulf#STRING_INSTALLATIONONGOING1.LngText.text
-msgid "Installing..."
+#: src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING1
+msgid  "Installing..."
 msgstr "Kuruluyor..."
 
-#: setupstrings.ulf#STRING_INSTALLATIONONGOING3.LngText.text
-msgid "Stop"
+#: src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING3
+msgid  "Stop"
 msgstr "Dur"
 
-#: setupstrings.ulf#STRING_INSTALLATIONONGOING_PACKAGEPATH_NOT_FOUND.LngText.text
-msgid "ERROR: Path with installation packages not found!"
+#: src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING_PACKAGEPATH_NOT_FOUND
+msgid  "ERROR: Path with installation packages not found!"
 msgstr "HATA: Kurulum paketleri dizini bulunamadı!"
 
-#: setupstrings.ulf#STRING_PROLOGUE1.LngText.text
-msgid "Welcome"
+#: src/Localization/setupstrings.ulf#STRING_PROLOGUE1
+msgid  "Welcome"
 msgstr "Hoş geldiniz"
 
-#: setupstrings.ulf#STRING_PROLOGUE2.LngText.text
-msgid ""
-"This Installation Wizard will install ${PRODUCT_FULLNAME} on your computer."
-msgstr "Kurulum sihirbazı, bilgisayarınıza ${PRODUCT_FULLNAME}'i kuracak."
+#: src/Localization/setupstrings.ulf#STRING_PROLOGUE2
+msgid  "This Installation Wizard will install ${PRODUCT_FULLNAME} on your computer."
+msgstr ""
 
-#: setupstrings.ulf#STRING_PROLOGUE3.LngText.text
-msgid "To continue, click 'Next'."
+#: src/Localization/setupstrings.ulf#STRING_PROLOGUE3
+msgid  "To continue, click 'Next'."
 msgstr "Devam etmek için 'İleri' düğmesini tıklayın."
 
-#: setupstrings.ulf#STRING_PROLOGUE4.LngText.text
-msgid ""
-"Note: This installation will be done without root privileges. Therefore you "
-"will have a reduced functionality (Java Runtime Environment (JRE) not "
-"installable, system integration not possible).\n"
-"Click 'Cancel' and change your privileges to root privileges, if you want to "
-"use the complete functionality."
+#: src/Localization/setupstrings.ulf#STRING_PROLOGUE4
+msgid  "Note: This installation will be done without root privileges. Therefore you will have a reduced functionality (Java Runtime Environment (JRE) not installable, system integration not possible).\nClick 'Cancel' and change your privileges to root privileges, if you want to use the complete functionality."
 msgstr ""
-"Not: Bu kurulum için root hakları gerekebilir. Bundan dolayı bazı özellikler "
-"tam olarak çalışmayabilir (Java Çalıştırma Ortamı (JRE) yüklenemeyebilir, "
-"sistem entegrasyonu olmayabilir).\n"
-"Tam işlevselliği kullanmak isterseniz 'İptal' düğmesine tıklayın ve root "
-"haklarını alarak kurulumu tamamlayın."
 
-#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1.LngText.text
-msgid "Installation Completed"
+#: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1
+msgid  "Installation Completed"
 msgstr "Kurulum Tamamlandı"
 
-#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1_ABORT.LngText.text
-msgid "Installation Aborted"
+#: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1_ABORT
+msgid  "Installation Aborted"
 msgstr "Kuruluma Son Verildi"
 
-#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1_ERROR.LngText.text
-msgid "Installation Failed"
+#: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED1_ERROR
+msgid  "Installation Failed"
 msgstr "Kurulum Başarısız"
 
-#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2.LngText.text
-msgid ""
-"The Installation Wizard has successfully installed ${PRODUCT_FULLNAME} on "
-"your computer."
+#: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2
+msgid  "The Installation Wizard has successfully installed ${PRODUCT_FULLNAME} on your computer."
 msgstr ""
-"Kurulum sihirbazı, bilgisayarınıza ${PRODUCT_FULLNAME}'i başarıyla kurdu."
 
-#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ABORT.LngText.text
-msgid ""
-"The Installation Wizard was aborted. ${PRODUCT_NAME} is not installed on "
-"your computer."
+#: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ABORT
+msgid  "The Installation Wizard was aborted. ${PRODUCT_NAME} is not installed on your computer."
 msgstr ""
-"Kurulum sihirbazına son verildi. ${PRODUCT_NAME} bilgisayarınıza kurulamadı."
 
-#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ERROR.LngText.text
-msgid ""
-"An error has occurred. Thus the Installation Wizard could not install "
-"${PRODUCT_NAME} on your computer successfully. Click 'Details...' for more "
-"information."
+#: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED2_ERROR
+msgid  "An error has occurred. Thus the Installation Wizard could not install ${PRODUCT_NAME} on your computer successfully. Click 'Details...' for more information."
 msgstr ""
-"Bir hata meydana geldi. Kurulum sihirbazı, bilgisayarınıza ${PRODUCT_ NAME} "
-"'i başarıyla kuramadı. Daha fazla bilgi için 'Ayrıntılar...' düğmesine "
-"tıklayın."
 
-#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED3.LngText.text
-msgid "Click 'Finish' to exit the Wizard."
+#: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED3
+msgid  "Click 'Finish' to exit the Wizard."
 msgstr "Sihirbazdan çıkmak için 'Bitir' düğmesini tıklayın."
 
-#: setupstrings.ulf#STRING_INSTALLATIONCOMPLETED_BUTTON.LngText.text
-msgid "Details..."
+#: src/Localization/setupstrings.ulf#STRING_INSTALLATIONCOMPLETED_BUTTON
+msgid  "Details..."
 msgstr "Ayrıntılar..."
 
-#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE2.LngText.text
-msgid ""
-"The ${PRODUCT_FULLNAME} Uninstallation Wizard will remove "
-"${PRODUCT_FULLNAME} from your computer."
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE2
+msgid  "The ${PRODUCT_FULLNAME} Uninstallation Wizard will remove ${PRODUCT_FULLNAME} from your computer."
 msgstr ""
-"${PRODUCT_FULLNAME} kaldırma sihirbazı, bilgisayarınızdan "
-"${PRODUCT_FULLNAME} ürününü kaldıracak."
 
-#: setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_ROOT.LngText.text
-msgid ""
-"Sorry, wrong privileges. Installation was done with User privilges, but you "
-"have Root privileges."
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_ROOT
+msgid  "Sorry, wrong privileges. Installation was done with User privilges, but you have Root privileges."
 msgstr ""
-"Üzgünüm, yanlış ayrıcalıklar var. Kullanıcı ayrıcalıklarına sahipsiniz fakat "
-"işlem için Yönetici haklarına sahip olmalısınız."
 
-#: setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_USER.LngText.text
-msgid ""
-"Sorry, wrong privileges. Installation was done with Root privilges, but you "
-"have User privileges."
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALLATION_PROLOGUE_WRONG_PRIVILEGES_CURRENT_USER
+msgid  "Sorry, wrong privileges. Installation was done with Root privilges, but you have User privileges."
 msgstr ""
-"Üzgünüm, yanlış ayrıcalıklar var. Yönetici ayrıcalıklarına sahipsiniz fakat "
-"işlem için Kullanıcı haklarına sahip olmalısınız."
 
-#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE1.LngText.text
-msgid "Select the Type of Uninstallation"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE1
+msgid  "Select the Type of Uninstallation"
 msgstr "Kaldırma Türünü Seçin"
 
-#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE2.LngText.text
-msgid "Select the type of uninstallation that best suits your needs:"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE2
+msgid  "Select the type of uninstallation that best suits your needs:"
 msgstr "Size en uygun kaldırma türünü seçin:"
 
-#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE3.LngText.text
-msgid "Partial"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE3
+msgid  "Partial"
 msgstr "Kısmen"
 
-#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE4.LngText.text
-msgid ""
-"Completely removes ${PRODUCT_FULLNAME} and all its components from your "
-"system."
-msgstr "${PRODUCT_FULLNAME} ve tüm bileşenlerini sisteminizden kaldırılacaktır."
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE4
+msgid  "Completely removes ${PRODUCT_FULLNAME} and all its components from your system."
+msgstr ""
 
-#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE5.LngText.text
-msgid "You choose the program features you want to remove."
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE5
+msgid  "You choose the program features you want to remove."
 msgstr "Kaldırmak istediğiniz program özelliklerini seçin."
 
-#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE6.LngText.text
-msgid "Complete"
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE6
+msgid  "Complete"
 msgstr "Tamamı"
 
-#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS2.LngText.text
-msgid ""
-"Components marked with an X will be removed. Mark the components you want to "
-"remove."
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS2
+msgid  "Components marked with an X will be removed. Mark the components you want to remove."
 msgstr ""
-"X ile işaretlenmiş bileşenler kaldıralacaktır. Kaldırmak istediğiniz "
-"bileşenleri işaretleyin."
 
-#: setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT1.LngText.text
-msgid "Ready to Remove"
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT1
+msgid  "Ready to Remove"
 msgstr "Kaldırmaya Hazır"
 
-#: setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT2.LngText.text
-msgid "The following ${PRODUCT_FULLNAME} components will be removed: "
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT2
+msgid  "The following ${PRODUCT_FULLNAME} components will be removed: "
 msgstr "Takip eden ${PRODUCT_FULLNAME} bileşenleri kaldırılacak: "
 
-#: setupstrings.ulf#STRING_UNINSTALLATIONONGOING1.LngText.text
-msgid "Uninstalling..."
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONONGOING1
+msgid  "Uninstalling..."
 msgstr "Kaldırılıyor..."
 
-#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1.LngText.text
-msgid "Uninstallation Completed"
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1
+msgid  "Uninstallation Completed"
 msgstr "Kaldırma Tamamlandı"
 
-#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1_ABORT.LngText.text
-msgid "Uninstallation Aborted"
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1_ABORT
+msgid  "Uninstallation Aborted"
 msgstr "Kaldırmaya Son Verildi"
 
-#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1_ERROR.LngText.text
-msgid "Uninstallation Failed"
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED1_ERROR
+msgid  "Uninstallation Failed"
 msgstr "Kaldırma Başarısız Oldu"
 
-#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2.LngText.text
-msgid ""
-"The Uninstallation Wizard has successfully removed ${PRODUCT_FULLNAME} from "
-"your computer."
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2
+msgid  "The Uninstallation Wizard has successfully removed ${PRODUCT_FULLNAME} from your computer."
 msgstr ""
-"Kaldırma Sihirbazı ${PRODUCT_FULLNAME} ürününü bilgisayarınızdan başarıyla "
-"kaldırdı."
 
-#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_PARTIAL.LngText.text
-msgid ""
-"The Uninstallation Wizard has successfully removed the selected components "
-"of ${PRODUCT_NAME} from your computer."
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_PARTIAL
+msgid  "The Uninstallation Wizard has successfully removed the selected components of ${PRODUCT_NAME} from your computer."
 msgstr ""
-"Kaldırma Sihirbazı ${PRODUCT_NAME} ürününe ait seçilmiş bileşenleri "
-"bilgisayarınızdan başarıyla kaldırdı."
 
-#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ABORT.LngText.text
-msgid ""
-"The Uninstallation Wizard was aborted before completely removing "
-"${PRODUCT_NAME} from your computer."
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ABORT
+msgid  "The Uninstallation Wizard was aborted before completely removing ${PRODUCT_NAME} from your computer."
 msgstr ""
-"Kaldırma sihirbazı bilgisayarınızdan ${PRODUCT_NAME} ürününü kaldırırken "
-"kaldırmaya son verildi."
 
-#: setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ERROR.LngText.text
-msgid ""
-"An error has occurred. Thus the Uninstallation Wizard could not remove "
-"${PRODUCT_NAME} from your computer successfully. Click 'Details...' for more "
-"information."
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONCOMPLETED2_ERROR
+msgid  "An error has occurred. Thus the Uninstallation Wizard could not remove ${PRODUCT_NAME} from your computer successfully. Click 'Details...' for more information."
 msgstr ""
-"Bir hata meydana geldi. Kaldırma sihirbazı ${PRODUCT_NAME} ürününü "
-"bilgisayarınızdan başarıyla kaldıramadı. Daha fazla bilgi için "
-"'Ayrıntılar...' düğmesine tıklayın."
 
-#: setupstrings.ulf#STRING_INSTALLERFACTORY_OS_NOT_SUPPORTED.LngText.text
-msgid "Sorry, this Operating System is not supported yet."
+#: src/Localization/setupstrings.ulf#STRING_INSTALLERFACTORY_OS_NOT_SUPPORTED
+msgid  "Sorry, this Operating System is not supported yet."
 msgstr "Üzgünüz, bu İşletim Sistemi henüz desteklenmiyor."
 
-#: setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_FOUND.LngText.text
-msgid "An older version of ${PRODUCT_NAME} was found on your system in:"
+#: src/Localization/setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_FOUND
+msgid  "An older version of ${PRODUCT_NAME} was found on your system in:"
 msgstr "${PRODUCT_NAME} 'ın daha eski bir sürümü sisteminizde bulundu:"
 
-#: setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_REMOVE.LngText.text
-msgid ""
-"You have to remove the older version of ${PRODUCT_NAME} before you can "
-"install the newer one."
+#: src/Localization/setupstrings.ulf#STRING_OLDER_VERSION_INSTALLED_REMOVE
+msgid  "You have to remove the older version of ${PRODUCT_NAME} before you can install the newer one."
 msgstr ""
-"${PRODUCT_NAME} 'in yeni sürümünü kurmak için eski sürümü kaldırmalısınız."
 
-#: setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_FOUND.LngText.text
-msgid "A newer version of ${PRODUCT_NAME} was found on your system in:"
+#: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_FOUND
+msgid  "A newer version of ${PRODUCT_NAME} was found on your system in:"
 msgstr "${PRODUCT_NAME} 'ın daha yeni bir sürümü sisteminizde bulundu:"
 
-#: setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_REMOVE.LngText.text
-msgid ""
-"You have to remove the newer version of ${PRODUCT_NAME} before you can "
-"install the older one."
+#: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_INSTALLED_REMOVE
+msgid  "You have to remove the newer version of ${PRODUCT_NAME} before you can install the older one."
 msgstr ""
-"${PRODUCT_NAME} 'in yeni sürümünü kurmak için eski sürümü kaldırmalısınız."
 
-#: setupstrings.ulf#STRING_NEWER_VERSION_DATABASE.LngText.text
-msgid "Database"
+#: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_DATABASE
+msgid  "Database"
 msgstr "Veritabanı"
 
-#: setupstrings.ulf#STRING_NEWER_VERSION_TIP.LngText.text
-msgid "Please choose another installation directory."
+#: src/Localization/setupstrings.ulf#STRING_NEWER_VERSION_TIP
+msgid  "Please choose another installation directory."
 msgstr "Lütfen kurulum için başka bir dizin seçin."
 
-#: setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_1.LngText.text
-msgid "The user you are logged in as cannot run the Installation Wizard."
+#: src/Localization/setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_1
+msgid  "The user you are logged in as cannot run the Installation Wizard."
 msgstr "Kullanıcılar sistemdeyken Kurulum Sihirbazı çalıştırılamaz."
 
-#: setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_2.LngText.text
-msgid ""
-"Please log out and log back in as a user with system administrator rights."
+#: src/Localization/setupstrings.ulf#STRING_ROOT_PRIVILEGES_REQUIRED_2
+msgid  "Please log out and log back in as a user with system administrator rights."
 msgstr ""
-"Lütfen çıkış yapın ve sistem yönetici haklarıyla sistem tekrar giriş yapın."
 
-#: setupstrings.ulf#STRING_DISCSPACE_INSUFFICIENT.LngText.text
-msgid "Not enough discspace available for installation."
+#: src/Localization/setupstrings.ulf#STRING_DISCSPACE_INSUFFICIENT
+msgid  "Not enough discspace available for installation."
 msgstr "Kurulum için disk alanı yeterli değil."
 
-#: setupstrings.ulf#STRING_DISCSPACE_REQUIRED.LngText.text
-msgid "Required disc space"
+#: src/Localization/setupstrings.ulf#STRING_DISCSPACE_REQUIRED
+msgid  "Required disc space"
 msgstr "Gerekli disk alanı"
 
-#: setupstrings.ulf#STRING_DISCSPACE_AVAILABLE.LngText.text
-msgid "Available disc space"
+#: src/Localization/setupstrings.ulf#STRING_DISCSPACE_AVAILABLE
+msgid  "Available disc space"
 msgstr "Kullanılabilir disk alanı"
 
-#: setupstrings.ulf#STRING_DISCSPACE_TIP.LngText.text
-msgid ""
-"Please use another directory for installation or change your module "
-"selection."
+#: src/Localization/setupstrings.ulf#STRING_DISCSPACE_TIP
+msgid  "Please use another directory for installation or change your module selection."
 msgstr ""
-"Lütfen kurulum için başka dizin kullanın veya modül seçiminizi değiştirin."
 
-#: setupstrings.ulf#STRING_ANALYZING_DATABASE1.LngText.text
-msgid "Analyzing ..."
+#: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE1
+msgid  "Analyzing ..."
 msgstr "Çözümlüyor..."
 
-#: setupstrings.ulf#STRING_ANALYZING_DATABASE2.LngText.text
-msgid ""
-"Analyzing database\n"
-"Please wait a moment ..."
+#: src/Localization/setupstrings.ulf#STRING_ANALYZING_DATABASE2
+msgid  "Analyzing database\nPlease wait a moment ..."
 msgstr ""
-"Veritabanını çözümlüyor\n"
-"Lütfen bekleyiniz..."
 
-#: setupstrings.ulf#STRING_PROLOGUE_1.LngText.text
-msgid ""
-"Welcome to the Installation Wizard.<p>This wizard asks you to supply "
-"configuration settings.<p>At the bottom of each page are navigation buttons "
-"that let you move through the Installation Wizard:"
+#: src/Localization/setupstrings.ulf#STRING_PROLOGUE_1
+msgid  "Welcome to the Installation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Installation Wizard:"
 msgstr ""
-"Kurulum Sihirbazına Hoş Geldiniz.<p>Sihirbaz yapılandırma ayarlarınız için "
-"size bazı sorular soracak.<p>Her sayfanın altında bulunan gezinme düğmeleri "
-"sihirbazın izin verdiği hareketleri gösterir:"
 
-#: setupstrings.ulf#STRING_PROLOGUE_2.LngText.text
-msgctxt "setupstrings.ulf#STRING_PROLOGUE_2.LngText.text"
-msgid "'Back' returns you to the previous page."
+#: src/Localization/setupstrings.ulf#STRING_PROLOGUE_2
+msgid  "'Back' returns you to the previous page."
 msgstr "'Geri' düğmesi bir önceki sayfaya dönmenizi sağlar."
 
-#: setupstrings.ulf#STRING_PROLOGUE_3.LngText.text
-msgctxt "setupstrings.ulf#STRING_PROLOGUE_3.LngText.text"
-msgid "'Next' takes you to the next page. "
+#: src/Localization/setupstrings.ulf#STRING_PROLOGUE_3
+msgid  "'Next' takes you to the next page. "
 msgstr "'İleri' düğmesi bir sonraki sayfaya gitmenizi sağlar."
 
-#: setupstrings.ulf#STRING_PROLOGUE_4.LngText.text
-msgid "'Cancel' ends the Installation Wizard without installing this software."
+#: src/Localization/setupstrings.ulf#STRING_PROLOGUE_4
+msgid  "'Cancel' ends the Installation Wizard without installing this software."
 msgstr ""
-"'İptal' düğmesi kurulumu sonlandırarak kurulum sihirbazından çıkmanızı "
-"sağlar."
 
-#: setupstrings.ulf#STRING_PROLOGUE_5.LngText.text
-msgctxt "setupstrings.ulf#STRING_PROLOGUE_5.LngText.text"
-msgid ""
-"'Help' displays the Help with further information about the page currently "
-"displayed."
+#: src/Localization/setupstrings.ulf#STRING_PROLOGUE_5
+msgid  "'Help' displays the Help with further information about the page currently displayed."
 msgstr ""
-"'Yardım' geçerli sayfa hakkında bilgiler verir ve yardım bilgisini gösterir."
 
-#: setupstrings.ulf#STRING_PROLOGUE_6.LngText.text
-msgid "'OK' exits the Help page and returns you to the Installation Wizard."
+#: src/Localization/setupstrings.ulf#STRING_PROLOGUE_6
+msgid  "'OK' exits the Help page and returns you to the Installation Wizard."
 msgstr ""
-"'Tamam' düğmesi, yardım sayfasından çıkar ve Kurulum Sihirbazına geri "
-"dönmenizi sağlar."
 
-#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_1.LngText.text
-msgid ""
-"Welcome to the Uninstallation Wizard.<p>This wizard asks you to supply "
-"configuration settings.<p>At the bottom of each page are navigation buttons "
-"that let you move through the Uninstallation Wizard:"
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_1
+msgid  "Welcome to the Uninstallation Wizard.<p>This wizard asks you to supply configuration settings.<p>At the bottom of each page are navigation buttons that let you move through the Uninstallation Wizard:"
 msgstr ""
-"Kaldırma Sihirbazına Hoş Geldiniz.<p>Bu sihirbaz yapılandırma ayarlarınızı "
-"düzenlemek için yardımcı olacaktır.<p>Her sayfanın altında Kaldırma "
-"Sihirbazında kullanabileceğiniz bazı düğmeler bulunur:"
 
-#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_2.LngText.text
-msgctxt "setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_2.LngText.text"
-msgid "'Back' returns you to the previous page."
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_2
+msgid  "'Back' returns you to the previous page."
 msgstr "'Geri' bir önceki sayfaya dönmenizi sağlar."
 
-#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_3.LngText.text
-msgctxt "setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_3.LngText.text"
-msgid "'Next' takes you to the next page. "
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_3
+msgid  "'Next' takes you to the next page. "
 msgstr "'İleri' bir sonraki sayfaya ulaşmanızı sağlar."
 
-#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_4.LngText.text
-msgid "'Cancel' ends the Uninstallation Wizard without removing this software."
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_4
+msgid  "'Cancel' ends the Uninstallation Wizard without removing this software."
 msgstr ""
-"'İptal' kaldırma işlemini sonlandırarak Kaldırma Sihirbazından çıkmanızı "
-"sağlar."
 
-#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_5.LngText.text
-msgctxt "setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_5.LngText.text"
-msgid ""
-"'Help' displays the Help with further information about the page currently "
-"displayed."
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_5
+msgid  "'Help' displays the Help with further information about the page currently displayed."
 msgstr ""
-"'Yardım' gösterilen sayfa hakkında daha fazla bilgiyi gösterir, şu anda "
-"gösterilen sayfa gibi."
 
-#: setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_6.LngText.text
-msgid "'OK' exits the Help page and returns you to the Uninstallation Wizard."
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONPROLOGUE_6
+msgid  "'OK' exits the Help page and returns you to the Uninstallation Wizard."
 msgstr "'Tamam' yardım sayfasında çıkıp Kaldırma Sihirbazına  dönmenizi sağlar."
 
-#: setupstrings.ulf#STRING_ACCEPTLICENSE_1.LngText.text
-msgid ""
-"Before you install this product, you must read and accept the entire "
-"Software License Agreement under which this software is licensed for your "
-"use."
+#: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_1
+msgid  "Before you install this product, you must read and accept the entire Software License Agreement under which this software is licensed for your use."
 msgstr ""
-"Bu ürünü yüklemeden önce, yazılım lisans anlaşmasını okumalı ve kabul "
-"etmeniz gereklidir."
 
-#: setupstrings.ulf#STRING_ACCEPTLICENSE_2.LngText.text
-msgctxt "setupstrings.ulf#STRING_ACCEPTLICENSE_2.LngText.text"
-msgid ""
-"If you have read and accept all the terms of the entire Software License "
-"Agreement, click 'Accept License' to continue with the installation."
+#: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_2
+msgid  "If you have read and accept all the terms of the entire Software License Agreement, click 'Accept License' to continue with the installation."
 msgstr ""
-"Eğer mevcut Yazılım Lisans Anlaşmasını okudunuz ve kabul ediyorsanız, "
-"yüklemeye devam için 'Lisansı kabul et''i tıklayınız."
 
-#: setupstrings.ulf#STRING_ACCEPTLICENSE_3.LngText.text
-msgid ""
-"If you do not accept all the terms of the Software License Agreement, click "
-"'Decline' to end the Installation Wizard without installing this product."
+#: src/Localization/setupstrings.ulf#STRING_ACCEPTLICENSE_3
+msgid  "If you do not accept all the terms of the Software License Agreement, click 'Decline' to end the Installation Wizard without installing this product."
 msgstr ""
-"Eğer Yazılım Lisans Anlaşmasını tüm maddelerini kabul etmiyorsanız "
-"\"Reddet\"'i tıklayarak ürünü kurmadan sihirbazdan çıkabilirsiniz."
 
-#: setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE_1.LngText.text
-msgid ""
-"Select the type of product installation to perform from the following "
-"choices. This will determine how much information you need to provide for "
-"product configuration."
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEINSTALLATIONTYPE_1
+msgid  "Select the type of product installation to perform from the following choices. This will determine how much information you need to provide for product configuration."
 msgstr ""
-"Takip eden seçeneklerden ürün kurulum türünü seçin. Bu sizin ürün hakkında "
-"nasıl bir bilgiye sahip olduğunuza göre belirlenecektir."
 
-#: setupstrings.ulf#STRING_CHOOSEDIRECTORY_1.LngText.text
-msgid ""
-"It is recommended that you install this product in the directory suggested "
-"by this Installation Wizard. <p>To choose a different location, click "
-"'Browse...' or specify the full path of the directory to use in the text box "
-"below. <p>If this product is already installed, you cannot change the "
-"destination directory."
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEDIRECTORY_1
+msgid  "It is recommended that you install this product in the directory suggested by this Installation Wizard. <p>To choose a different location, click 'Browse...' or specify the full path of the directory to use in the text box below. <p>If this product is already installed, you cannot change the destination directory."
 msgstr ""
-"Bu ürünün Kurulum Sihirbazı tarafından önerilen dizinlere kurulması "
-"önerilir. <p>Farklı bir dizin seçmek için 'Gözat...' düğmesi tıklayın ya da "
-"tam dizin yolunu kutucuğa yazabilirsiniz. <p>Eğer ürün daha önce "
-"yüklenmişse, dizini değiştiremezsiniz."
 
-#: setupstrings.ulf#STRING_CHOOSECOMPONENTS_1.LngText.text
-msgid ""
-"Components marked in color will be installed. Click the icon of a component "
-"to mark or unmark the component.<p>All already installed components cannot "
-"be selected for installation."
+#: src/Localization/setupstrings.ulf#STRING_CHOOSECOMPONENTS_1
+msgid  "Components marked in color will be installed. Click the icon of a component to mark or unmark the component.<p>All already installed components cannot be selected for installation."
 msgstr ""
-"Renkli olarak işaretlenmiş bileşenler kurulacaktır. İşaretlemek ya da "
-"işareti kaldırmak için bileşen simgesini tıklayın.<p>Önceden kurulmuş "
-"bileşenler işaretlense bile kurulmayacaktır."
 
-#: setupstrings.ulf#STRING_INSTALLATIONIMMINENT_1.LngText.text
-msgid ""
-"The listed components are ready for installation based on your configuration "
-"settings. <p>If you are satisfied with your selection, click 'Install Now' "
-"to begin. <p>To check or modify your settings on the previous pages, click "
-"'Back'."
+#: src/Localization/setupstrings.ulf#STRING_INSTALLATIONIMMINENT_1
+msgid  "The listed components are ready for installation based on your configuration settings. <p>If you are satisfied with your selection, click 'Install Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
 msgstr ""
-"Listelenmiş bileşenler, yapılandırdığınız ayarlara göre kurulum için "
-"hazırlar. <p>Eğer seçimlerinize karar verdiyseniz 'Şimdi Kur' düğmesini "
-"tıklayarak kuruluma başlayabilirsiniz. <p>Ayarlarınızı ve seçimlerinizi "
-"tekrar kontrol etmek isterseniz 'Geri' düğmesini tıklayarak bir önceki "
-"ekrana dönebilirsiniz."
 
-#: setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT_1.LngText.text
-msgid ""
-"The listed components are ready for uninstallation based on your "
-"configuration settings. <p>If you are satisfied with your selection, click "
-"'Remove Now' to begin. <p>To check or modify your settings on the previous "
-"pages, click 'Back'."
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONIMMINENT_1
+msgid  "The listed components are ready for uninstallation based on your configuration settings. <p>If you are satisfied with your selection, click 'Remove Now' to begin. <p>To check or modify your settings on the previous pages, click 'Back'."
 msgstr ""
-"Listelenmiş bileşenler yapılandırma ayarlarınıza bağlı olarak kaldırma için "
-"hazırdır. <p>Eğer seçimlerinizde eminseniz \"Şimdi Kaldır\" seçeneğine "
-"tıklayarak kaldırma işlemine başlayabilirsiniz. <p>Ayarlarınızı değiştirmek "
-"ya da kontrol etmek isterseniz bir önceki sayfaya \"Geri\" düğmesine "
-"tıklayarak ulaşabilirsiniz."
 
-#: setupstrings.ulf#STRING_INSTALLATIONONGOING_1.LngText.text
-msgid ""
-"This page indicates the progress of the installation with the aid of a "
-"progress bar. To abort the installation process, click 'Stop'."
+#: src/Localization/setupstrings.ulf#STRING_INSTALLATIONONGOING_1
+msgid  "This page indicates the progress of the installation with the aid of a progress bar. To abort the installation process, click 'Stop'."
 msgstr ""
-"Bu sayfa, bir ilerleme göstergesi yardımıyla kurulumun durumunu gösterir. "
-"Kurulumu sona erdirmek isterseniz 'Dur' düğmesine tıklayın."
 
-#: setupstrings.ulf#STRING_UNINSTALLATIONONGOING_1.LngText.text
-msgid ""
-"This page indicates the progress of the uninstallation with the aid of a "
-"progress bar. To abort the uninstallation, click 'Stop'."
+#: src/Localization/setupstrings.ulf#STRING_UNINSTALLATIONONGOING_1
+msgid  "This page indicates the progress of the uninstallation with the aid of a progress bar. To abort the uninstallation, click 'Stop'."
 msgstr ""
-"Bu sayfa bir ilerleme çubuğu yardımıyla kaldırma işleminin gelişimini "
-"gösterir. Kaldırma işleminden vazgeçmek isterseniz, \"Dur\" düğmesine "
-"tıklayabilirsiniz."
 
-#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE_1.LngText.text
-msgid ""
-"Complete: This will remove all installed components of your "
-"version.<p>Partial: This removes only the components you will choose out of "
-"the components list."
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONTYPE_1
+msgid  "Complete: This will remove all installed components of your version.<p>Partial: This removes only the components you will choose out of the components list."
 msgstr ""
-"Tamamı: Kurulmuş olan tüm bileşenleri ve programı kaldırır. <p>Kısmen: "
-"Sadece sizin kaldırmak için seçtiğiniz bileşenleri kaldırır."
 
-#: setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS_1.LngText.text
-msgid ""
-"Components marked with an X will be removed. Click next to a component to "
-"mark or unmark it with an X."
+#: src/Localization/setupstrings.ulf#STRING_CHOOSEUNINSTALLATIONCOMPONENTS_1
+msgid  "Components marked with an X will be removed. Click next to a component to mark or unmark it with an X."
 msgstr ""
-"X ile işaretlenmiş bileşenler kaldıralacaktır. İleri düğmesini tıklayarak X "
-"ile bileşenleri işaretleyin ya da işaretlerini kaldırın."
 
-#: setupstrings.ulf#STRING_PACKAGEFORMAT_NOT_SUPPORTED.LngText.text
-msgid ""
-"This package format is currently not supported for your operating system!"
-msgstr "İşletim sisteminiz için geçerli paket biçimi desteklenmiyor."
+#: src/Localization/setupstrings.ulf#STRING_PACKAGEFORMAT_NOT_SUPPORTED
+msgid  "This package format is currently not supported for your operating system!"
+msgstr ""
 
-#: setupstrings.ulf#STRING_OPERATING_SYSTEM.LngText.text
-msgid "Operating system"
+#: src/Localization/setupstrings.ulf#STRING_OPERATING_SYSTEM
+msgid  "Operating system"
 msgstr "İşletim sistemi"
 
-#: setupstrings.ulf#STRING_PACKAGEFORMAT.LngText.text
-msgid "Package format"
+#: src/Localization/setupstrings.ulf#STRING_PACKAGEFORMAT
+msgid  "Package format"
 msgstr "Paket biçimi"
 
-#: setupstrings.ulf#STRING_NOTHING_TO_INSTALL.LngText.text
-msgid "Nothing to install"
+#: src/Localization/setupstrings.ulf#STRING_NOTHING_TO_INSTALL
+msgid  "Nothing to install"
 msgstr "Kurulacak hiçbirşey yok"
 
-#: setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_1.LngText.text
-msgid "No components have been selected for installation."
+#: src/Localization/setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_1
+msgid  "No components have been selected for installation."
 msgstr "Kurulum için hiçbir bileşen seçilmemiş."
 
-#: setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_2.LngText.text
-msgid ""
-"Click 'OK' to select one or more components for installation or to exit the "
-"Installation Wizard."
+#: src/Localization/setupstrings.ulf#STRING_NO_COMPONENTS_SELECTED_2
+msgid  "Click 'OK' to select one or more components for installation or to exit the Installation Wizard."
 msgstr ""
-"Kurulum için daha fazla bileşen ya da bir tane seçmek için 'Tamam' düğmesini "
-"tıklayın ya da Kurulum Sihirbazından çıkabilirsiniz."
 
-#: setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_1.LngText.text
-msgid "No languages have been selected for installation."
+#: src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_1
+msgid  "No languages have been selected for installation."
 msgstr "Kurulum için hiçbir dil seçilmemiş."
 
-#: setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_2.LngText.text
-msgid ""
-"Click 'OK' to select one or more languages for installation or to exit the "
-"Installation Wizard."
+#: src/Localization/setupstrings.ulf#STRING_NO_LANGUAGE_SELECTED_2
+msgid  "Click 'OK' to select one or more languages for installation or to exit the Installation Wizard."
 msgstr ""
-"Kurmak istediğiniz bir ya da daha fazla dil bileşenini seçerek 'Tamam' "
-"düğmesini tıklayın ya da işlemden vazgeçmek isterseniz Kurulum Sihirbazından "
-"çıkabilirsiniz."
 
-#: setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_1.LngText.text
-msgid "No applications have been selected for installation."
+#: src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_1
+msgid  "No applications have been selected for installation."
 msgstr "Kurulum için hiçbir uygulama seçilmemiş."
 
-#: setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_2.LngText.text
-msgid ""
-"Click 'OK' to select one or more application for installation or to exit the "
-"Installation Wizard."
+#: src/Localization/setupstrings.ulf#STRING_NO_APPLICATION_SELECTED_2
+msgid  "Click 'OK' to select one or more application for installation or to exit the Installation Wizard."
 msgstr ""
-"Kurmak istediğiniz bir ya da daha fazla uygulama bileşenini seçerek 'Tamam' "
-"düğmesini tıklayın ya da işlemden vazgeçmek isterseniz Kurulum Sihirbazından "
-"çıkabilirsiniz."
 
-#: setupstrings.ulf#STRING_NOTHING_TO_UNINSTALL.LngText.text
-msgid "Nothing to uninstall"
+#: src/Localization/setupstrings.ulf#STRING_NOTHING_TO_UNINSTALL
+msgid  "Nothing to uninstall"
 msgstr "Kaldırılacak hiçbirşey yok"
 
-#: setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_1.LngText.text
-msgid "No components have been selected for uninstallation."
+#: src/Localization/setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_1
+msgid  "No components have been selected for uninstallation."
 msgstr "Kaldırmak için hirçbir bileşen seçilmemiş."
 
-#: setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_2.LngText.text
-msgid ""
-"Click 'OK' to select one or more components for uninstallation or to exit "
-"the Uninstallation Wizard."
+#: src/Localization/setupstrings.ulf#STRING_NO_UNINSTALLCOMPONENTS_SELECTED_2
+msgid  "Click 'OK' to select one or more components for uninstallation or to exit the Uninstallation Wizard."
 msgstr ""
-"Kaldırmak için daha fazla bileşen ya da bir tane seçmek için 'Tamam' "
-"düğmesini tıklayın ya da Kaldırma Sihirbazından çıkabilirsiniz"
 
-#: setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_1.LngText.text
-msgid "All language components have been selected for uninstallation."
+#: src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_1
+msgid  "All language components have been selected for uninstallation."
 msgstr "Kaldırma için tüm dil bileşenleri seçildi."
 
-#: setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_2.LngText.text
-msgid ""
-"Click 'OK' to select one or more language components not for uninstallation "
-"or to exit the Uninstallation Wizard."
+#: src/Localization/setupstrings.ulf#STRING_ALL_LANGUAGECOMPONENTS_SELECTED_2
+msgid  "Click 'OK' to select one or more language components not for uninstallation or to exit the Uninstallation Wizard."
 msgstr ""
-"Kaldırmak istediğiniz bir ya da daha fazla dil bileşenini seçerek 'Tamam' "
-"düğmesini tıklayın ya da işlemden vazgeçmek isterseniz Kaldırma "
-"Sihirbazından çıkabilirsiniz."
 
-#: setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_1.LngText.text
-msgid "All application components have been selected for uninstallation."
+#: src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_1
+msgid  "All application components have been selected for uninstallation."
 msgstr "Kaldırma için tüm uygulama bileşenleri seçildi."
 
-#: setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_2.LngText.text
-msgid ""
-"Click 'OK' to select one or more application components not for "
-"uninstallation or to exit the Uninstallation Wizard."
+#: src/Localization/setupstrings.ulf#STRING_ALL_APPLICATIONCOMPONENTS_SELECTED_2
+msgid  "Click 'OK' to select one or more application components not for uninstallation or to exit the Uninstallation Wizard."
 msgstr ""
-"Kaldırmak istediğiniz bir ya da daha fazla uygulama bileşenini seçerek "
-"'Tamam' düğmesini tıklayın ya da işlemden vazgeçmek isterseniz Kaldırma "
-"Sihirbazından çıkabilirsiniz."
 
-#: setupstrings.ulf#STRING_CHANGE_SELECTION.LngText.text
-msgid "Please change selection"
+#: src/Localization/setupstrings.ulf#STRING_CHANGE_SELECTION
+msgid  "Please change selection"
 msgstr "Lütfen seçimi değiştirin"

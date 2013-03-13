@@ -1,72 +1,104 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
 
-#: mediacontrol.src#AVMEDIA_STR_OPEN.string.text
-msgid "Open"
+
+#: source/framework/mediacontrol.src#AVMEDIA_STR_OPEN.String.Text
+msgid  "Open"
 msgstr "Aç"
 
-#: mediacontrol.src#AVMEDIA_STR_INSERT.string.text
-msgid "Apply"
+#: source/framework/mediacontrol.src#AVMEDIA_STR_INSERT.String.Text
+msgid  "Apply"
 msgstr "Uygula"
 
-#: mediacontrol.src#AVMEDIA_STR_PLAY.string.text
-msgid "Play"
+#: source/framework/mediacontrol.src#AVMEDIA_STR_PLAY.String.Text
+msgid  "Play"
 msgstr "Oynat"
 
-#: mediacontrol.src#AVMEDIA_STR_PAUSE.string.text
-msgid "Pause"
+#: source/framework/mediacontrol.src#AVMEDIA_STR_PAUSE.String.Text
+msgid  "Pause"
 msgstr "Durdur"
 
-#: mediacontrol.src#AVMEDIA_STR_STOP.string.text
-msgid "Stop"
+#: source/framework/mediacontrol.src#AVMEDIA_STR_STOP.String.Text
+msgid  "Stop"
 msgstr "Dur"
 
-#: mediacontrol.src#AVMEDIA_STR_ENDLESS.string.text
-msgid "Repeat"
+#: source/framework/mediacontrol.src#AVMEDIA_STR_ENDLESS.String.Text
+msgid  "Repeat"
 msgstr "Tekrarla"
 
-#: mediacontrol.src#AVMEDIA_STR_MUTE.string.text
-msgid "Mute"
+#: source/framework/mediacontrol.src#AVMEDIA_STR_MUTE.String.Text
+msgid  "Mute"
 msgstr "Sessiz"
 
-#: mediacontrol.src#AVMEDIA_STR_ZOOM.string.text
-msgid "View"
+#: source/framework/mediacontrol.src#AVMEDIA_STR_ZOOM.String.Text
+msgid  "View"
 msgstr "Görüntüle"
 
-#: mediacontrol.src#AVMEDIA_STR_ZOOM_50.string.text
-msgid "50%"
+#: source/framework/mediacontrol.src#AVMEDIA_STR_ZOOM_50.String.Text
+msgid  "50%"
 msgstr "%50"
 
-#: mediacontrol.src#AVMEDIA_STR_ZOOM_100.string.text
-msgid "100%"
+#: source/framework/mediacontrol.src#AVMEDIA_STR_ZOOM_100.String.Text
+msgid  "100%"
 msgstr "%100"
 
-#: mediacontrol.src#AVMEDIA_STR_ZOOM_200.string.text
-msgid "200%"
+#: source/framework/mediacontrol.src#AVMEDIA_STR_ZOOM_200.String.Text
+msgid  "200%"
 msgstr "%200"
 
-#: mediacontrol.src#AVMEDIA_STR_ZOOM_FIT.string.text
-msgid "Scaled"
+#: source/framework/mediacontrol.src#AVMEDIA_STR_ZOOM_FIT.String.Text
+msgid  "Scaled"
 msgstr "Ölçekli"
 
-#: mediacontrol.src#AVMEDIA_STR_MEDIAPLAYER.string.text
-msgid "Media Player"
+#: source/framework/mediacontrol.src#AVMEDIA_STR_MEDIAPLAYER.String.Text
+msgid  "Media Player"
 msgstr "Ortam Oynatıcısı"
 
-#: mediawindow.src#AVMEDIA_STR_INSERTMEDIA_DLG.string.text
-msgid "Insert Movie and Sound"
+#: source/viewer/mediawindow.src#AVMEDIA_STR_INSERTMEDIA_DLG.String.Text
+msgid  "Insert Movie and Sound"
 msgstr "Film ve Ses Ekle"
 
-#: mediawindow.src#AVMEDIA_STR_OPENMEDIA_DLG.string.text
-msgid "Open Movie and Sound"
+#: source/viewer/mediawindow.src#AVMEDIA_STR_OPENMEDIA_DLG.STRING.Text
+msgid  "Open Movie and Sound"
 msgstr "Film ve Ses Aç"
 
-#: mediawindow.src#AVMEDIA_STR_ALL_MEDIAFILES.string.text
-msgid "All movie and sound files"
+#: source/viewer/mediawindow.src#AVMEDIA_STR_ALL_MEDIAFILES.String.Text
+msgid  "All movie and sound files"
 msgstr "Tüm film ve ses dosyaları"
 
-#: mediawindow.src#AVMEDIA_STR_ALL_FILES.string.text
-msgid "All files (*.*)"
+#: source/viewer/mediawindow.src#AVMEDIA_STR_ALL_FILES.String.Text
+msgid  "All files (*.*)"
 msgstr "Tüm dosyalar (*.*)"
 
-#: mediawindow.src#AVMEDIA_ERR_URL.errorbox.text
-msgid "The format of the selected file is not supported."
+#: source/viewer/mediawindow.src#AVMEDIA_ERR_URL.ErrorBox.Message
+msgid  "The format of the selected file is not supported."
 msgstr "Seçilen dosya biçimi desteklenmemektedir."

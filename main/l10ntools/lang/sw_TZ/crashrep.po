@@ -1,277 +1,208 @@
-
-#: crashrep.ulf#_ALLOW_CONTACT_.LngText.text
-msgid "~I allow Oracle to contact me regarding this report."
-msgstr "Nina ruhusu Sun Microsystems kuwasiliana na mimi kuhusu ripoti hii."
-
-#: crashrep.ulf#_BACK_BUTTON_.LngText.text
-msgid " << ~Back"
-msgstr " << Nyuma"
-
-#: crashrep.ulf#_CANCEL_BUTTON_.LngText.text
-msgid "Cancel"
-msgstr "Ghairi"
-
-#: crashrep.ulf#_DONOT_SEND_BUTTON_.LngText.text
-msgid "Do ~Not Send"
-msgstr "Usitume"
-
-#: crashrep.ulf#_ENTER_DESCRIPTION_.LngText.text
-msgid "~How were you using %PRODUCTNAME% when the error occurred ?"
-msgstr "Unatumiaje %PRODUCTNAME% wakati hitilafu inapotokea ?"
-
-#: crashrep.ulf#_ENTER_EMAIL_.LngText.text
-msgid "Please enter your e-mail address."
-msgstr "Tafadhari ingiza anwani yako ya barua e-."
-
-#: crashrep.ulf#_ENTER_TITLE_.LngText.text
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
 msgid ""
-"Which type of document (e.g. presentation) were you using when the error "
-"occurred?"
 msgstr ""
-"Aina ipi ya andiko (k.m. uwasilishaji) uliokuwa unatumia wakati hitilafu "
-"imetokea?"
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
 
-#: crashrep.ulf#_ERROR_MSG_DISK_FULL_.LngText.text
-msgid ""
-"The error report could not be temporarily saved and could therefore not be "
-"sent."
+
+#: source/all/crashrep.ulf#%WELCOME_CAPTION%
+msgid  "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "%PRODUCTNAME%PRODUCTVERSION% Ripoti ya Hitilafu"
+
+#: source/all/crashrep.ulf#%WELCOME_HEADER%
+msgid  "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
+msgstr "Karibu katika %PRODUCTNAME%PRODUCTVERSION% Ripoti ya Hitilafu"
+
+#: source/all/crashrep.ulf#%WELCOME_BODY1%
+msgid  "This error report tool gathers information about how %PRODUCTNAME% is working and sends it to Apache OpenOffice to help improve future versions.\n\n"
 msgstr ""
-"Ripoti ya hitilafu haiwezekani kuhifadhiwa kwa muda na kwa hiyo haiwezekani "
-"kutumwa."
 
-#: crashrep.ulf#_ERROR_MSG_NOCONNECT_.LngText.text
-msgid ""
-"The error report could not be sent because there is no Internet connection. "
-"Please check your Internet settings."
+#: source/all/crashrep.ulf#%WELCOME_BODY2%
+msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
 msgstr ""
-"Ripoti ya hitilafu haikuwezwa kutumwa kwa sababu hakuna unganisho la wavuti. "
-"Tafadhari angalia vipimo vya wavuti yako."
 
-#: crashrep.ulf#_ERROR_MSG_NOEMAILADDRESS_.LngText.text
-msgid ""
-"You have marked the option 'I allow Oracle to contact me regarding this "
-"report.'\n"
-"Please enter your e-mail address."
+#: source/all/crashrep.ulf#%WELCOME_BODY3%
+msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
 msgstr ""
-"Umeweka alama kwenye chaguo 'Nina ruhusu Sun Microsystems kuwasiliana na "
-"mimi kuhusu ripoti hii.'\n"
-"Tafadhari ingiza anwani ya barua e-."
 
-#: crashrep.ulf#_ERROR_MSG_PROXY_.LngText.text
-msgid ""
-"The error report could not be sent. Please check the proxy settings under "
-"'Options' in the Error Report Tool."
+#: source/all/crashrep.ulf#%PRIVACY_URL%
+msgid  "http://www.openoffice.org/privacy.html"
 msgstr ""
-"Ripoti ya hitilafu haikuwezwa kutumwa. Tafadhari angali vipimo yya proksi "
-"chini ya 'Chaguzi' katika Zana ya Ripoti Hitilafu."
 
-#: crashrep.ulf#_ERROR_MSG_SENDMAIL_.LngText.text
-msgid ""
-"The error report could not be sent because 'sendmail' could not be started.\n"
-"Please check the 'sendmail' settings."
-msgstr ""
-"Ripoti ya hitilafu haikuwezwa kutumwa kwa sababu 'sendmail' haikuweza "
-"kuanzishwa.\n"
-"Tafadhari angalia vipimo vya 'sendmail'."
-
-#: crashrep.ulf#_ERROR_MSG_SIMPLE_MAPI_.LngText.text
-msgid ""
-"The error report could not be sent because the default e-mail program does "
-"not support MAPI.\n"
-" Please use a MAPI-compatible e-mail program."
-msgstr ""
-"Ripoti ya hitilafu haikuwezwa kutumwa kwa sababu programu msingi ya barua e- "
-"haina mwega MAPI.\n"
-"Tafadhari tumia MAPI-tangamana ya programu ya barua e-."
-
-#: crashrep.ulf#_MSG_CMDLINE_USAGE_.LngText.text
-msgid "Usage:"
-msgstr "Matumizi:"
-
-#: crashrep.ulf#_MSG_PARAM_HELP_DESCRIPTION_.LngText.text
-msgid ""
-"Shows this help text.\n"
-"Detailed information can be found in the Setup Guide."
-msgstr ""
-"Onesha matini msaada haya.\n"
-"Taarifa kamili inapatikana katika Mwongozo wa Usanidi."
-
-#: crashrep.ulf#_MSG_PARAM_PROCESSID_.LngText.text
-msgid "-p <process ID>"
-msgstr "-p <mchakato ID>"
-
-#: crashrep.ulf#_MSG_PARAM_PROCESSID_DESCRIPTION_.LngText.text
-msgid "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
-msgstr ""
-"Pangia %PRODUCTNAME% kitambulishi mchakato (KM) kwa Zana ya Taarifa ya "
-"Hitilafu"
-
-#: crashrep.ulf#_NEXT_BUTTON_.LngText.text
-msgid "~Next >>"
+#: source/all/crashrep.ulf#%NEXT_BUTTON%
+msgid  "~Next >>"
 msgstr "Ifuatayo >>"
 
-#: crashrep.ulf#_OK_BUTTON_.LngText.text
-msgid "OK"
+#: source/all/crashrep.ulf#%CANCEL_BUTTON%
+msgid  "Cancel"
+msgstr "Ghairi"
+
+#: source/all/crashrep.ulf#%OK_BUTTON%
+msgid  "OK"
 msgstr "SAWA"
 
-#: crashrep.ulf#_OPTIONS_BUTTON_.LngText.text
-msgid "~Options..."
-msgstr "Chaguzi..."
-
-#: crashrep.ulf#_OPTIONS_TITLE_.LngText.text
-msgid "Options"
-msgstr "Options"
-
-#: crashrep.ulf#_PRIVACY_URL_.LngText.text
-msgid "http://www.oracle.com/html/services-privacy-policy.html"
-msgstr "http://www.sun.com/privacy/"
-
-#: crashrep.ulf#_PROXY_SETTINGS_ADDRESS_.LngText.text
-msgid "HT~TP Proxy"
-msgstr "HTTP Proksi"
-
-#: crashrep.ulf#_PROXY_SETTINGS_DESCRIPTION_.LngText.text
-msgid ""
-"The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to "
-"be able to send error reports.\n"
-"\n"
-"Companies often use proxy servers in conjunction with a firewall to protect "
-"the network.\n"
-"\n"
-"If this applies to your situation, you have to specify the address and port "
-"for the server."
-msgstr ""
-"Zana ya ripoti ya hitilafu %PRODUCTNAME 0naitaji kuwa imeunganishwa na "
-"wavuti ili iweze kutuma ripoti ya hitilafu.\n"
-"\n"
-"Makampuni mara kwa mara yanatumia maseva proksi katika uunganishaji na ngome "
-"kukinga mtandao..\n"
-"\n"
-"Kama hii inatekelezeka katika hali yako, inabidi ubainishe anwani na poti "
-"kwa seva."
-
-#: crashrep.ulf#_PROXY_SETTINGS_DIRECT_.LngText.text
-msgid "Use ~direct connection to the Internet"
-msgstr "Tumia unganisho la moja kwa moja kwa Wavuti"
-
-#: crashrep.ulf#_PROXY_SETTINGS_HEADER_.LngText.text
-msgid "Proxy settings"
-msgstr "Proxy settings"
-
-#: crashrep.ulf#_PROXY_SETTINGS_MANUAL_.LngText.text
-msgid "Use ~manual settings"
-msgstr "Tumia vipimo mwongozo"
-
-#: crashrep.ulf#_PROXY_SETTINGS_PORT_.LngText.text
-msgid "~Port"
-msgstr "~Port"
-
-#: crashrep.ulf#_PROXY_SETTINGS_SYSTEM_.LngText.text
-msgid "Use ~system settings"
-msgstr "Tumia vipimo mfumo"
-
-#: crashrep.ulf#_REPORT_BODY_.LngText.text
-msgid ""
-"The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information "
-"that could help Oracle improve %PRODUCTNAME%.\n"
-"In the spaces below, you can enter a title for your crash report and "
-"describe the action you were trying to carry out when the error occurred. "
-"Then click 'Send'.\n"
-msgstr ""
-"Ripoti ya Hitilafu %PRODUCTNAME%PRODUCTVERSION 0mekusanya taarifa ambazo "
-"zitasaidia Sun Microsystems kuendeleza %PRODUCTNAME%.\n"
-"Katika nafasi hapo chini, unaweza kuingiza kichwa cha habari kwa ajili ia "
-"ripoti ya kukwama na elezea hatua gani ulijaribu kuchukua wakati hitilafu "
-"ilipotokea. Halafu bofya 'Tuma'.\n"
-
-#: crashrep.ulf#_REPORT_CAPTION_.LngText.text
-msgctxt "crashrep.ulf#_REPORT_CAPTION_.LngText.text"
-msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+#: source/all/crashrep.ulf#%REPORT_CAPTION%
+msgid  "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
 msgstr "%PRODUCTNAME%PRODUCTVERSION% Ripoti ya Hitilafu"
 
-#: crashrep.ulf#_REPORT_HEADER_.LngText.text
-msgid "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
+#: source/all/crashrep.ulf#%REPORT_HEADER%
+msgid  "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
 msgstr "Hitilafu imetokea wakati wa uendeshaji wa %PRODUCTNAME%PRODUCTVERSION%"
 
-#: crashrep.ulf#_SAVE_REPORT_BUTTON_.LngText.text
-msgid "~Save Report..."
-msgstr "Hifadhi Ripoti..."
+#: source/all/crashrep.ulf#%REPORT_BODY%
+msgid  "The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information that could help Apache OpenOffice improve %PRODUCTNAME%.\nIn the spaces below, you can enter a title for your crash report and describe the action you were trying to carry out when the error occurred. Then click 'Send'.\n"
+msgstr ""
 
-#: crashrep.ulf#_SAVE_REPORT_TITLE_.LngText.text
-msgid "Save Report to"
-msgstr "Hifadhi Repoti kwenye"
+#: source/all/crashrep.ulf#%ENTER_TITLE%
+msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
+msgstr ""
 
-#: crashrep.ulf#_SENDING_REPORT_HEADER_.LngText.text
-msgid "Sending Error Report"
-msgstr "Utumaji wa Ripoti ya Hitilafu"
+#: source/all/crashrep.ulf#%ALLOW_CONTACT%
+msgid  "~I allow Apache OpenOffice to contact me regarding this report."
+msgstr ""
 
-#: crashrep.ulf#_SENDING_REPORT_STATUS_.LngText.text
-msgid "Status: Sending error report"
-msgstr "Hali: Utumaji wa Ripoti ya hitilafu"
+#: source/all/crashrep.ulf#%ENTER_EMAIL%
+msgid  "Please enter your e-mail address."
+msgstr "Tafadhari ingiza anwani yako ya barua e-."
 
-#: crashrep.ulf#_SENDING_REPORT_STATUS_FINISHED_.LngText.text
-msgid "Status: The error report has been sent successfully."
-msgstr "Hali: Ripoti ya hitilafu imefanikiwa kutumwa."
+#: source/all/crashrep.ulf#%ENTER_DESCRIPTION%
+msgid  "~How were you using %PRODUCTNAME% when the error occurred ?"
+msgstr "Unatumiaje %PRODUCTNAME% wakati hitilafu inapotokea ?"
 
-#: crashrep.ulf#_SEND_BUTTON_.LngText.text
-msgid "S~end"
+#: source/all/crashrep.ulf#%BACK_BUTTON%
+msgid  " << ~Back"
+msgstr " << Nyuma"
+
+#: source/all/crashrep.ulf#%SEND_BUTTON%
+msgid  "S~end"
 msgstr "Tuma"
 
-#: crashrep.ulf#_SHOW_REPORT_BUTTON_.LngText.text
-msgid "Show ~Report..."
+#: source/all/crashrep.ulf#%DONOT_SEND_BUTTON%
+msgid  "Do ~Not Send"
+msgstr "Usitume"
+
+#: source/all/crashrep.ulf#%SHOW_REPORT_BUTTON%
+msgid  "Show ~Report..."
 msgstr "Onesha Ripoti..."
 
-#: crashrep.ulf#_WELCOME_BODY1_.LngText.text
-msgid ""
-"This error report tool gathers information about how %PRODUCTNAME% is "
-"working and sends it to Oracle to help improve future versions.\n"
-"\n"
+#: source/all/crashrep.ulf#%SAVE_REPORT_BUTTON%
+msgid  "~Save Report..."
+msgstr "Hifadhi Ripoti..."
+
+#: source/all/crashrep.ulf#%SAVE_REPORT_TITLE%
+msgid  "Save Report to"
+msgstr "Hifadhi Repoti kwenye"
+
+#: source/all/crashrep.ulf#%ERROR_MSG_SIMPLE_MAPI%
+msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
 msgstr ""
-"Zana hii ya ripoti hitilafu inakusanya taarifa kuhusu jinsi %PRODUCTNAME "
-"0navyofanya kazi na kutuma taarifa hizo kwa Sun Microsystems kusaidia "
-"kuendeleza matoleo yajayo.\n"
-"\n"
 
-#: crashrep.ulf#_WELCOME_BODY2_.LngText.text
-msgid ""
-"It's easy - just send the report without any further effort on your part by "
-"clicking 'Send' in the next dialog, or you can briefly describe how the "
-"error occurred and then click 'Send'. If you want to see the report, click "
-"the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n"
-"\n"
+#: source/all/crashrep.ulf#%ERROR_MSG_DISK_FULL%
+msgid  "The error report could not be temporarily saved and could therefore not be sent."
 msgstr ""
-"Ni rahisi - tuma ripoti bila jitiada zaidi zozote katika sehemu yako kwa "
-"kubofya 'Tuma' katika dalogi inayofuata, au unaweza kuelezea kwa kifupi "
-"jinsi hitilafu ilivyotokea na halafuu bofya 'Tuma'. Kama unataka kuona "
-"ripoti, Bofya kitufe 'Onesha Ripoti'. Hakuna data zitakazotumwa kama "
-"utabofya 'Usitume'.\n"
-"\n"
 
-#: crashrep.ulf#_WELCOME_BODY3_.LngText.text
-msgid ""
-"Customer Privacy\n"
-"The information gathered is limited to data concerning the state of %"
-"PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information "
-"about passwords or document contents is not collected.\n"
-"\n"
-"The information will only be used to improve the quality of %PRODUCTNAME% "
-"and will not be shared with third parties.\n"
-"For more information on Oracle's privacy policy, visit\n"
+#: source/all/crashrep.ulf#%ERROR_MSG_SENDMAIL%
+msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
 msgstr ""
-"Stara ya Mteja\n"
-"Taarifa zilizokusanywa zinakikomo kwa data zinazohusisha hali ya %"
-"PRODUCTNAME%PRODUCTVERSION% wakati hitilafu ilipotokea.Taarifa nyingine "
-"kuhusu nywila au yaliyomo katika andiko hazikukusanywa.\n"
-"\n"
-"Taarifa zitatumika tu kuendeleza ubora wa %PRODUCTNAME% NA azitakuwa "
-"zinachangia na sehemu za tatu.\n"
-"Kwa taarifa zaidi juu ya sera za stara za Sun Microsystems', tembelea\n"
 
-#: crashrep.ulf#_WELCOME_CAPTION_.LngText.text
-msgctxt "crashrep.ulf#_WELCOME_CAPTION_.LngText.text"
-msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
-msgstr "%PRODUCTNAME%PRODUCTVERSION% Ripoti ya Hitilafu"
+#: source/all/crashrep.ulf#%ERROR_MSG_PROXY%
+msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
+msgstr ""
 
-#: crashrep.ulf#_WELCOME_HEADER_.LngText.text
-msgid "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
-msgstr "Karibu katika %PRODUCTNAME%PRODUCTVERSION% Ripoti ya Hitilafu"
+#: source/all/crashrep.ulf#%ERROR_MSG_NOCONNECT%
+msgid  "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
+msgstr ""
+
+#: source/all/crashrep.ulf#%OPTIONS_BUTTON%
+msgid  "~Options..."
+msgstr "Chaguzi..."
+
+#: source/all/crashrep.ulf#%OPTIONS_TITLE%
+msgid  "Options"
+msgstr "Options"
+
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_HEADER%
+msgid  "Proxy settings"
+msgstr "Proxy settings"
+
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_SYSTEM%
+msgid  "Use ~system settings"
+msgstr "Tumia vipimo mfumo"
+
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_DIRECT%
+msgid  "Use ~direct connection to the Internet"
+msgstr "Tumia unganisho la moja kwa moja kwa Wavuti"
+
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_MANUAL%
+msgid  "Use ~manual settings"
+msgstr "Tumia vipimo mwongozo"
+
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_ADDRESS%
+msgid  "HT~TP Proxy"
+msgstr "HTTP Proksi"
+
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_PORT%
+msgid  "~Port"
+msgstr "~Port"
+
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_DESCRIPTION%
+msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
+msgstr ""
+
+#: source/all/crashrep.ulf#%SENDING_REPORT_HEADER%
+msgid  "Sending Error Report"
+msgstr "Utumaji wa Ripoti ya Hitilafu"
+
+#: source/all/crashrep.ulf#%SENDING_REPORT_STATUS%
+msgid  "Status: Sending error report"
+msgstr "Hali: Utumaji wa Ripoti ya hitilafu"
+
+#: source/all/crashrep.ulf#%SENDING_REPORT_STATUS_FINISHED%
+msgid  "Status: The error report has been sent successfully."
+msgstr "Hali: Ripoti ya hitilafu imefanikiwa kutumwa."
+
+#: source/all/crashrep.ulf#%ERROR_MSG_NOEMAILADDRESS%
+msgid  "You have marked the option 'I allow Apache OpenOffice to contact me regarding this report.'\nPlease enter your e-mail address."
+msgstr ""
+
+#: source/all/crashrep.ulf#%MSG_CMDLINE_USAGE%
+msgid  "Usage:"
+msgstr "Matumizi:"
+
+#: source/all/crashrep.ulf#%MSG_PARAM_PROCESSID%
+msgid  "-p <process ID>"
+msgstr "-p <mchakato ID>"
+
+#: source/all/crashrep.ulf#%MSG_PARAM_PROCESSID_DESCRIPTION%
+msgid  "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
+msgstr ""
+
+#: source/all/crashrep.ulf#%MSG_PARAM_HELP_DESCRIPTION%
+msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
+msgstr ""

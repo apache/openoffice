@@ -1,955 +1,844 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
 
-#: padialog.src#RID_PADIALOG.RID_PA_BTN_CANCEL.cancelbutton.text
-msgctxt "padialog.src#RID_PADIALOG.RID_PA_BTN_CANCEL.cancelbutton.text"
-msgid "Close"
-msgstr "Serriñ"
 
-#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_DEFAULT.checkbox.text
-msgid "~Use as default printer"
-msgstr "Arverañ evel moullerez ~dre ziouer"
-
-#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_FAXSWALLOW.checkbox.text
-msgid "Remo~ve fax number from output"
-msgstr "~Niverenn faks ebet evit an ec'hankad"
-
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_LINKONLY.checkbox.text
-msgid "Create ~soft links only"
-msgstr "Krouiñ ereoù soft nemetken"
-
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_SUBDIRS.checkbox.text
-msgid "Sea~rch Subdirectories"
-msgstr "Klask en iskavlec'hiadoù"
-
-#: padialog.src#RID_PADIALOG.RID_PA_CB_CUPSUSAGE.checkbox.text
-msgid "Disable CUPS Support"
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_TXT_HELP.FixedText.Text
+msgid  "Please select the folder from which you want to import fonts. Add the selected fonts by clicking the OK button."
 msgstr ""
 
-#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_FAXNAME.edit.text
-msgid "Fax printer"
-msgstr "Moullerez pelleiler"
-
-#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_PDFNAME.edit.text
-msgctxt "padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_PDFNAME.edit.text"
-msgid "PDF converter"
-msgstr "Amdroer PDF"
-
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_FROM.fixedline.text
-msgid "Source directory"
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_FROM.FixedLine.Text
+msgid  "Source directory"
 msgstr "Kavlec'hiad tarzh"
 
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_TARGETOPTS.fixedline.text
-msgid "Target options"
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_SUBDIRS.CheckBox.Text
+msgid  "Sea~rch Subdirectories"
+msgstr "Klask en iskavlec'hiadoù"
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_FL_TARGETOPTS.FixedLine.Text
+msgid  "Target options"
 msgstr "Dibarzhioù bukenn"
 
-#: padialog.src#RID_PADIALOG.RID_PA_FL_CUPSUSAGE.fixedline.text
-msgid "CUPS support"
-msgstr ""
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BOX_LINKONLY.CheckBox.Text
+msgid  "Create ~soft links only"
+msgstr "Krouiñ ereoù soft nemetken"
 
-#: padialog.src#RID_PADIALOG.RID_PA_FL_PRINTERS.fixedline.text
-msgid "Installed ~printers"
-msgstr "Moullerezed sternet"
-
-#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_DRIVER.fixedline.text
-msgid "~Selection of drivers"
-msgstr "Sturioù dieub"
-
-#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_PATH.fixedline.text
-msgid "Dri~ver directory"
-msgstr "Kavlec'hiad stur"
-
-#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_TXT_OVER.fixedtext.text
-msgid "Do you want to"
-msgstr "Petra a fell deoc'h ober ?"
-
-#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_TXT_DRIVER.fixedtext.text
-msgid "Please select a s~uitable driver."
-msgstr "Diuzit ur stur dereat."
-
-#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_COMMAND.fixedtext.text
-msgid "Please enter a c~ommand line appropriate for this device."
-msgstr "Euvrit ul linenn arc'had a-benn gervel an drobarzhell-mañ."
-
-#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_PDFDIR.fixedtext.text
-msgid "PDF ~target directory"
-msgstr "Kavelec'hiad bukenn PDF"
-
-#: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_TXT_DRIVER.fixedtext.text
-msgid "Use the following driver for this fax connection"
-msgstr "Stur da arverañ gant ar gennaskenn faks"
-
-#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_FAXNAME.fixedtext.text
-msgid "Please enter a name for the fax connection."
-msgstr "Erspizit un anv evit ar c'hennaskañ faks."
-
-#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_NAME.fixedtext.text
-msgid "Please enter a name for the printer."
-msgstr "Erspizit un anv evit ar voullerez."
-
-#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_PDFNAME.fixedtext.text
-msgid "Please enter a name for the PDF connection."
-msgstr "Erspizit un anv evit ar c'hennaskañ PDF."
-
-#: padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_TXT_PRINTERS.fixedtext.text
-msgid ""
-"~These printers can be imported. Please select the ones you want to import."
-msgstr ""
-"Gallout a ra ar moullerezioù-se bezañ enporzhiet ; dibabit a re a blij "
-"deoc'h."
-
-#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_TXT_DRIVER.fixedtext.text
-msgid "Use the following driver for this PDF converter"
-msgstr "Stur da arverañ gant un amdroer PDF :"
-
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_TXT_HELP.fixedtext.text
-msgid ""
-"Please select the folder from which you want to import fonts. Add the "
-"selected fonts by clicking the OK button."
-msgstr ""
-"Diuzit an teuliad m'hoc'h eus c'hoant ezporzhiañ nodrezhioù anezhañ, klikit "
-"goude war O.K. evit ouzhpennañ an nodrezhioù diuzet."
-
-#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_FIXED.fixedtext.text
-msgid "Note: The fonts are only available to the applications."
-msgstr "Evezhiadenn : An nodrezhioù zo hegerz evit an arload hepken."
-
-#: padialog.src#RID_PADIALOG.RID_PA_TXT_COMMAND.fixedtext.text
-msgid "Command:"
-msgstr "Arc'had :"
-
-#: padialog.src#RID_PADIALOG.RID_PA_TXT_COMMENT.fixedtext.text
-msgid "Comment:"
-msgstr "Evezhiadenn :"
-
-#: padialog.src#RID_PADIALOG.RID_PA_TXT_DRIVER.fixedtext.text
-msgid "Driver:"
-msgstr "Stur :"
-
-#: padialog.src#RID_PADIALOG.RID_PA_TXT_LOCATION.fixedtext.text
-msgid "Location:"
-msgstr "Lec'hiadur :"
-
-#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_DRIVER.fixedtext.text
-msgid "Please select the drivers to install and press \"%s\"."
-msgstr "Diuzit ar sturioù ha gwiriekait gant an afell \"%s\"."
-
-#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_PATH.fixedtext.text
-msgid "Please select the driver directory."
-msgstr "Diuzit ar c'havlec'hiad ennañ restroù ar stur."
-
-#: padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.fixedtext.text
-msgid "Progress"
-msgstr "Araokaat"
-
-#: padialog.src#RID_ADD_PRINTER_DIALOG.modaldialog.text
-msgid "Add Printer"
-msgstr "Ouzhpennañ ur voullerez"
-
-#: padialog.src#RID_FONTIMPORT_DIALOG.modaldialog.text
-msgid "Add Fonts"
-msgstr "Ouzhpennañ nodrezhioù"
-
-#: padialog.src#RID_FONTNAMEDIALOG.modaldialog.text
-msgid "Fonts"
-msgstr "Nodrezhioù"
-
-#: padialog.src#RID_PADIALOG.modaldialog.text
-msgid "Printer Administration"
-msgstr "Ardeiñ moullerezed"
-
-#: padialog.src#RID_PPDIMPORT_DLG.modaldialog.text
-msgid "Driver Installation"
-msgstr "Staliañ ar stur."
-
-#: padialog.src#RID_PROGRESS_DLG.modelessdialog.text
-msgid "Please wait"
-msgstr "Gortozit, mar plij..."
-
-#: padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_FINISH.okbutton.text
-msgid "~Finish"
-msgstr "Krouiñ"
-
-#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_OK.okbutton.text
-msgctxt "padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_OK.okbutton.text"
-msgid "Close"
-msgstr "Serriñ"
-
-#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_ADD.pushbutton.text
-msgid "~Import..."
-msgstr "Enporzh~iañ..."
-
-#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_REMOVE.pushbutton.text
-msgid "~Delete"
-msgstr "Lemel kuit"
-
-#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_BTN_HELP.pushbutton.text
-msgctxt "padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_BTN_HELP.pushbutton.text"
-msgid "~Help"
-msgstr "Skoazell"
-
-#: padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.pushbutton.text
-msgctxt "padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.pushbutton.text"
-msgid "~Select All"
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BTN_SELECTALL.PushButton.Text
+msgid  "~Select All"
 msgstr "Diuz pep tra"
 
-#: padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_NEXT.pushbutton.text
-msgid "~Next >>"
-msgstr "War-lerc'h >>"
-
-#: padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_PREV.pushbutton.text
-msgid "<< ~Back"
-msgstr "<< Kent"
-
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BTN_SELECTALL.pushbutton.text
-msgctxt "padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_BTN_SELECTALL.pushbutton.text"
-msgid "~Select All"
-msgstr "Diuz pep tra"
-
-#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_IMPORT.pushbutton.text
-msgid "~Add..."
-msgstr "Ouzhpennañ..."
-
-#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_REMOVE.pushbutton.text
-msgid "~Remove..."
-msgstr "Lemel kuit..."
-
-#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_RENAME.pushbutton.text
-msgid "Re~name..."
-msgstr "Adenvel..."
-
-#: padialog.src#RID_PADIALOG.RID_PA_BTN_ADD.pushbutton.text
-msgid "New Printer..."
-msgstr "Moullerez ~nevez"
-
-#: padialog.src#RID_PADIALOG.RID_PA_BTN_CONF.pushbutton.text
-msgid "Properties..."
-msgstr "~Perzhioù..."
-
-#: padialog.src#RID_PADIALOG.RID_PA_BTN_DEL.pushbutton.text
-msgid "Remo~ve..."
-msgstr "Lemel kuit..."
-
-#: padialog.src#RID_PADIALOG.RID_PA_BTN_FONTS.pushbutton.text
-msgid "Fon~ts..."
-msgstr "~Nodrezhioù..."
-
-#: padialog.src#RID_PADIALOG.RID_PA_BTN_RENAME.pushbutton.text
-msgid "R~ename..."
-msgstr "Ad~envel..."
-
-#: padialog.src#RID_PADIALOG.RID_PA_BTN_STD.pushbutton.text
-msgctxt "padialog.src#RID_PADIALOG.RID_PA_BTN_STD.pushbutton.text"
-msgid "~Default"
-msgstr "Dre ziouer"
-
-#: padialog.src#RID_PADIALOG.RID_PA_TESTPAGE.pushbutton.text
-msgid "Test ~Page"
-msgstr "~Pajenn arnod"
-
-#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_BTN_SEARCH.pushbutton.text
-msgid "Browse..."
-msgstr "~Kantreal..."
-
-#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_FAX.radiobutton.text
-msgid "Connect a fa~x device"
-msgstr "Kennaskañ un drobarzhell faks"
-
-#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_OLD.radiobutton.text
-msgid "~Import printers from a StarOffice installation"
-msgstr "Enporzh~iañ unan pe veur a voullerez diouzh ur staliadur StarOffice"
-
-#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PDF.radiobutton.text
-msgid "Connect a P~DF converter"
-msgstr "Kennaskañ un amdroer PDF"
-
-#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PRINTER.radiobutton.text
-msgid "Add a ~printer"
-msgstr "~Ouzhpennañ ur voullerez"
-
-#: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_DEFAULT.radiobutton.text
-msgctxt "padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_DEFAULT.radiobutton.text"
-msgid "T~he default driver"
-msgstr "Stur dre ziouer"
-
-#: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_SELECT.radiobutton.text
-msgid "A speci~fic driver, to adapt the format to another printer"
-msgstr "Stur arbennik a-benn azasaat ar mentrezhañ d'ur voullerez all"
-
-#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DEFAULT.radiobutton.text
-msgctxt "padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DEFAULT.radiobutton.text"
-msgid "T~he default driver"
-msgstr "Stur dre ziouer"
-
-#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DIST.radiobutton.text
-msgid "The Adobe D~istiller(tm) driver"
-msgstr "Stur Adobe Distiller(tm)"
-
-#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_SELECT.radiobutton.text
-msgid "A spec~ific driver, to adapt the format to another printer"
-msgstr "Stur arbennik a-benn azasaat ar mentrezhañ d'ur voullerez all"
-
-#: padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_STR_TITLE.string.text
-msgid "Choose a device type"
-msgstr "Diuz ur rumm trobarzhell"
-
-#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_STR_REMOVE.string.text
-msgid "Delete driver"
-msgstr "Lemel kuit ar stur"
-
-#: padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_STR_TITLE.string.text
-msgctxt "padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_STR_TITLE.string.text"
-msgid "Choose a driver"
-msgstr "Diuz ur stur"
-
-#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_FAXHELP.string.text
-msgid ""
-"The command line for fax connections is executed as follows: for each fax "
-"sent, \"(TMP)\" in the command line is replaced by a temporary file and "
-"\"(PHONE)\" in the command line is replaced by the fax number. If \"(TMP)\" "
-"appears in the command line, the PostScript code will be supplied via a "
-"file, otherwise it is passed as standard input (i.e. as a pipe)."
-msgstr ""
-"Keweriad al linenn lankañ evit ar c'hennaskoù faks : evit pep kasad faks ez "
-"eus erlec'hiet ur restr amzeriat ouzh \"(TMP)\" hag an niverenn faks ouzh "
-"\"(PHONE)\". Ma teuy \"(TMP)\" el linenn lankañ e vo treuzkaset ar voneg "
-"PostScript er restr ; en tu kontrol e vo treuzkaset dre an enankad dre "
-"ziouer (eleze evel ur gorzenn (pipe))."
-
-#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.string.text
-msgctxt "padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.string.text"
-msgid ""
-"The command line for PDF converters is executed as follows: for each "
-"document printed, \"(TMP)\" in the command line is replaced by a temporary "
-"file and \"(OUTFILE)\" in the command line is replaced by the target PDF file "
-"name. If \"(TMP)\" is in the command line, the PostScript code will be "
-"supplied via a file, otherwise via standard input (i.e. as a pipe)."
-msgstr ""
-"Keweriad al linenn lankañ evit an amdroerioù PDF : evit pep teul moullet ez "
-"eus erlec'hiet ur restr amzeriat ouzh \"(TMP)\" hag ur restr PDF da grouiñ "
-"ouzh \"(OUTFILE)\". Ma teuy \"(TMP)\" war wel el linenn lankañ, e vo treuzkaset "
-"ar voneg PostScript en ur restr ; en tu kontrol e vo treuzkaset dre an "
-"enankad dre ziouer (eleze evel korzenn (pipe))."
-
-#: padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_STR_TITLE.string.text
-msgid "Choose a command line"
-msgstr "Diuz ul linenn arc'had"
-
-#: padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_STR_TITLE.string.text
-msgctxt "padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_STR_TITLE.string.text"
-msgid "Choose a driver"
-msgstr "Diuz ur stur"
-
-#: padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_STR_TITLE.string.text
-msgid "Choose a name"
-msgstr "Diuz un anv"
-
-#: padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_STR_TITLE.string.text
-msgid "Import printers from old versions"
-msgstr "Enporzh ar moullerezed o tont eus ar goulevioù kent"
-
-#: padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_STR_TITLE.string.text
-msgctxt "padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_STR_TITLE.string.text"
-msgid "Choose a driver"
-msgstr "Diuz ur stur"
-
-#: padialog.src#RID_AFMERROR_BOX_TXT.string.text
-msgid ""
-"The metric\n"
-"\n"
-"%s\n"
-"\n"
-"could not be converted for the following reason:\n"
-"\n"
-msgstr ""
-"N'haller ket amdreiñ ar menterezh\n"
-"\n"
-"%s\n"
-"\n"
-"evit an abeg da-heul :\n"
-"\n"
-
-#: padialog.src#RID_AFMERROR_MOVETO_FAILED.string.text
-msgid "The converted metric could not be written."
-msgstr "Skrivadur ar menterezh amdroet dic'hallus"
-
-#: padialog.src#RID_AFMERROR_NOT_A_METRIC.string.text
-msgid "The file does not contain a metric."
-msgstr "N'eus menterezh ebet endalc'het gant ar restr."
-
-#: padialog.src#RID_AFMERROR_NO_FAMILY_NAME.string.text
-msgid "The metric does not contain a 'FamilyName' entry."
-msgstr "N'eus enankad 'FamilyName' ebet e-barzh ar menterezh."
-
-#: padialog.src#RID_AFMERROR_NO_FONT_NAME.string.text
-msgid "The metric does not contain a 'FontName' entry."
-msgstr "N'eus enankad 'FontName' ebet e-barzh ar menterezh."
-
-#: padialog.src#RID_AFMERROR_NO_FULL_NAME.string.text
-msgid "The metric does not contain a 'FullName' entry."
-msgstr "N'eus enankad 'FullName' ebet e-barzh ar menterezh."
-
-#: padialog.src#RID_AFMERROR_OK.string.text
-msgid "No error"
-msgstr "Fazi ebet"
-
-#: padialog.src#RID_AFMERROR_STREAM_READ_FAILED.string.text
-msgid "The metric could not be read."
-msgstr "Lennadur ar menterezh dic'halloudus."
-
-#: padialog.src#RID_AFMERROR_STREAM_WRITE_FAILED.string.text
-msgid "A temporary file could not be created."
-msgstr "N'haller ket krouiñ ur restr padennek "
-
-#: padialog.src#RID_BXT_ENVIRONMENT.string.text
-msgid "Wrong environment"
-msgstr "Amva nammek"
-
-#: padialog.src#RID_BXT_TESTPAGE.string.text
-msgid "Test page"
-msgstr "Pajenn arnod"
-
-#: padialog.src#RID_ERR_NOPRINTER.string.text
-msgid "Could not open printer %s."
-msgstr "N'haller ket digeriñ ar voullerez $1 "
-
-#: padialog.src#RID_ERR_NOWRITE.string.text
-msgid ""
-"No printers can be installed, because the file system is read-only.\n"
-"Please contact your system administrator."
-msgstr ""
-
-#: padialog.src#RID_ERR_PRINTERNOTREMOVEABLE.string.text
-msgid "The printer %s cannot be removed."
-msgstr "N'haller ket dilemel ar voullerez-mañ."
-
-#: padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.string.text
-msgid ""
-"The driver \"%s\" is used by your default printer. Therefore, it cannot be "
-"removed."
-msgstr "Ho moullerez dre ziouer a arver ar stur \"%s\". Dic'hallus e lemel kuit."
-
-#: padialog.src#RID_ERR_REMOVEDRIVERFAILED.string.text
-msgid ""
-"The driver \"%s1\" could not be removed. It was not possible to remove the "
-"file\n"
-"\n"
-"%s2."
-msgstr ""
-"N'haller ket dilemel ar stur \"%s1\" : C'hwitet en deus dilamadur ar restr\n"
-"\n"
-"%s2\n"
-"\n"
-"."
-
-#: padialog.src#RID_ERR_REMOVESGENPRT.string.text
-msgid "The driver \"%s\" is always needed and can therefore not be removed."
-msgstr "Ar stur \"%s\" a vez arveret ent reizhiadel : n'hall ket bezañ dilamet."
-
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.string.text
-msgid ""
-"The metric file for the font file\n"
-"   %s\n"
-"could not be copied. The font will not be installed."
-msgstr ""
-"Eilañ ar restr vetrek evit ar restr\n"
-"  %s\n"
-"dic'hallus, neuze n'haller ket staliañ an nodrezh "
-
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.string.text
-msgid ""
-"The font file\n"
-"   %s\n"
-"could not be copied. The font will not be installed."
-msgstr ""
-"Eilañ ar restr nodrezh\n"
-"  %s\n"
-" dic'hallus, neuze dic'hallusted staliañ an nodrezh "
-
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_IMPORTOP.string.text
-msgid "Add fonts"
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_IMPORTOP.String.Text
+msgid  "Add fonts"
 msgstr "Ouzhpennañ an nodrezhioù"
 
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.string.text
-msgid ""
-"A format file (with an .afm extension) has not been found for the font\n"
-"%s\n"
-"therefore, the font cannot be installed. Format files can be created with "
-"ghostscript, for example, and have to be located in the same directory as "
-"the font files or its afm subdirectory."
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.String.Text
+msgid  "Do you really want to overwrite this font file?\n   %s"
 msgstr ""
-"N'eus restr ventrezh ebet (hec'h askouezhadenn .afm) dinoet evit ar restr "
-"nodrezh\n"
-"%s\n"
-" ; an nodrezh n'hall ket bezañ staliet neuze. Ar restroù mentrezh a c'hall "
-"bezañ krouet gant ghostscript da skouer ha ret eo dezho bezañ lec'hiet en "
-"hevelep kavlec'hiad ha hini ar restroù nodrezh pe en iskavlec'hiad afm."
 
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.string.text
-msgid ""
-"A directory containing a writable fonts.dir file is not located in the "
-"Fontpath. Therefore, fonts cannot be installed."
-msgstr ""
-"N'eus kavlec'h ebet gant ur restr skrivañ fonts.dir en treug nodrezhioù "
-"(fontpath). N'haller ket staliañ an nodrezhioù "
-
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NUMBEROFFONTSIMPORTED.string.text
-msgid "%d new fonts were added."
-msgstr "%d nodrezh nevez a zo bet staliet."
-
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.string.text
-msgid "All"
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITEALL.String.Text
+msgid  "All"
 msgstr "Pep tra"
 
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITENONE.string.text
-msgid "None"
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_OVERWRITENONE.String.Text
+msgid  "None"
 msgstr "Tra ebet"
 
-#: padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_QUERYOVERWRITE.string.text
-msgid ""
-"Do you really want to overwrite this font file?\n"
-"   %s"
-msgstr ""
-"Fellout a ra deoc'h flastrañ\n"
-"ar restrad nodrezhioù\n"
-" %s ?"
-
-#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_NOTRENAMABLE.string.text
-msgid "The font %s cannot be renamed due to missing write permission."
-msgstr "N'haller ket adenvel an nodrezh %s : gwirioù skrivañ dispirus."
-
-#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_RENAME.string.text
-msgid "~New name for %s"
-msgstr "Anv nevez evit %s"
-
-#: padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_TTCRENAME.string.text
-msgid "~New name for %s (%d1 of %d2)"
-msgstr "Anv nevez evit %s (%d1 eus %d2)"
-
-#: padialog.src#RID_OPERATION_CONVERTMETRIC.string.text
-msgid "Font metrics conversion"
-msgstr "Amdroadur metrerezhioù an nodrezhioù"
-
-#: padialog.src#RID_PADIALOG.RID_PA_STR_DEFPRT.string.text
-msgid "Default printer"
-msgstr "Moullerez dre ziouer"
-
-#: padialog.src#RID_PADIALOG.RID_PA_STR_RENAME.string.text
-msgid "Rename"
-msgstr "Adenvel"
-
-#: padialog.src#RID_PA_TXT_TESTPAGE_PRINTED.string.text
-msgid "The test page was printed succesfully. Please check the result."
-msgstr "Echu eo moulladur ar bajenn brouadiñ, Gwiriit an disoc'h, mar plij."
-
-#: padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_STR_LOADINGPPD.string.text
-msgid "Searching for drivers"
-msgstr "Klask sturioù"
-
-#: padialog.src#RID_QRY_PRTNAME.string.text
-msgid "~New printer name"
-msgstr "Anv moullerez nevez"
-
-#: padialog.src#RID_QUERY_DRIVERUSED.string.text
-msgid ""
-"There are still printers using the driver \"%s\". Do you really want to remove "
-"it? The corresponding printers will also be removed."
-msgstr ""
-"Moullerezed all a implij ar stur \"%s\". Ha fellout a ra deoc'h e zilemel ? An "
-"dra-se a zilamo ar moullerezioù kenglotus all ivez."
-
-#: padialog.src#RID_QUERY_REMOVEDRIVER.string.text
-msgid "Do you really want to remove the driver \"%s\"?"
-msgstr "C'hoant hoc'h eus lemel kuit da vat ar stur \"%s\" ?"
-
-#: padialog.src#RID_QUERY_REMOVEFONTFROMLIST.string.text
-msgid "Do you really want to remove the selected fonts ?"
-msgstr "C'hoant hoc'h eus lemel kuit da vat an arouezennoù diuzet ?"
-
-#: padialog.src#RID_QUERY_REMOVEPRINTER.string.text
-msgid "Do you really want to remove this printer ?"
-msgstr "C'hoant hoc'h eus lemel kuit da vat ar voullerez-mañ ?"
-
-#: padialog.src#RID_TXT_DRIVERDOESNOTEXIST.string.text
-msgid ""
-"The driver for the printer \"%s1\" (%s2) is not installed. Therefore the "
-"printer cannot be imported."
-msgstr ""
-"N'eo ket staliet ar stur evit ar voullerez \"%s1\" (%s2). N'haller ket "
-"enporzhiañ ar voullerez."
-
-#: padialog.src#RID_TXT_FONT_BOLD.string.text
-msgid "Bold"
-msgstr "Tev"
-
-#: padialog.src#RID_TXT_FONT_CONDENSED.string.text
-msgid "Condensed"
-msgstr "Krennet"
-
-#: padialog.src#RID_TXT_FONT_EXPANDED.string.text
-msgid "Expanded"
-msgstr "Astennet"
-
-#: padialog.src#RID_TXT_FONT_EXTRACONDENSED.string.text
-msgid "Extracondensed"
-msgstr "Dreistkrenn"
-
-#: padialog.src#RID_TXT_FONT_EXTRAEXPANDED.string.text
-msgid "Extraexpanded"
-msgstr "Dreistledan"
-
-#: padialog.src#RID_TXT_FONT_ITALIC.string.text
-msgid "Italic"
-msgstr "Stouet"
-
-#: padialog.src#RID_TXT_FONT_LIGHT.string.text
-msgid "Light"
-msgstr "Light"
-
-#: padialog.src#RID_TXT_FONT_OBLIQUE.string.text
-msgid "Oblique"
-msgstr "A-veskell"
-
-#: padialog.src#RID_TXT_FONT_REGULAR.string.text
-msgid "Regular"
-msgstr "Reizh"
-
-#: padialog.src#RID_TXT_FONT_SEMIBOLD.string.text
-msgid "Semibold"
-msgstr "Hanter-lard"
-
-#: padialog.src#RID_TXT_FONT_SEMICONDENSED.string.text
-msgid "Semicondensed"
-msgstr "Hanter-grennet"
-
-#: padialog.src#RID_TXT_FONT_SEMIEXPANDED.string.text
-msgid "Semiexpanded"
-msgstr "Hanter-ledet"
-
-#: padialog.src#RID_TXT_FONT_SEMILIGHT.string.text
-msgid "Semilight"
-msgstr "Hanter-c'houloù"
-
-#: padialog.src#RID_TXT_FONT_THIN.string.text
-msgid "Thin"
-msgstr "Dibenn"
-
-#: padialog.src#RID_TXT_FONT_ULTRABOLD.string.text
-msgid "Ultrabold"
-msgstr "Tev kenañ"
-
-#: padialog.src#RID_TXT_FONT_ULTRACONDENSED.string.text
-msgid "Ultracondensed"
-msgstr "Krennet kenañ"
-
-#: padialog.src#RID_TXT_FONT_ULTRAEXPANDED.string.text
-msgid "Ultraexpanded"
-msgstr "Astenn kenañ"
-
-#: padialog.src#RID_TXT_FONT_ULTRALIGHT.string.text
-msgid "Ultralight"
-msgstr "Light kenañ"
-
-#: padialog.src#RID_TXT_PRINTERADDFAILED.string.text
-msgid "The printer \"%s\" could not be added."
-msgstr "N'haller ket ouzhpennañ ar voullerez \"%s\" "
-
-#: padialog.src#RID_TXT_PRINTERALREADYEXISTS.string.text
-msgid "A printer named \"%s\" already exists. This printer will not be imported."
-msgstr "Ur voullerez anvet \"%s\" zo endeo anezhi. Ne vo ket enporzhiet."
-
-#: padialog.src#RID_TXT_PRINTERWITHOUTCOMMAND.string.text
-msgid ""
-"The printer \"%s\" has no valid configuration and, therefore, cannot be "
-"imported."
-msgstr ""
-"N'eo ket bet kefluniet mat ar voullerez \"%s\" ha n'hall ket bezañ enporzhet "
-"neuze."
-
-#: padialog.src#RID_TXT_TESTPAGE_COMMENT.string.text
-msgid "Comment"
-msgstr "Evezhiadenn"
-
-#: padialog.src#RID_TXT_TESTPAGE_DATE.string.text
-msgid "Date"
-msgstr "Deiziad"
-
-#: padialog.src#RID_TXT_TESTPAGE_MODEL.string.text
-msgid "Model"
-msgstr "Patromel"
-
-#: padialog.src#RID_TXT_TESTPAGE_NAME.string.text
-msgid "Name"
-msgstr "Anv"
-
-#: padialog.src#RID_TXT_TESTPAGE_QUEUE.string.text
-msgid "Queue"
-msgstr "Lostad gortoz"
-
-#: padialog.src#RID_TXT_TESTPAGE_TIME.string.text
-msgid "Time"
-msgstr "Eur"
-
-#: padialog.src#RID_YOU_SURE.string.text
-msgid "Are you sure ?"
-msgstr "Ha sur oc'h ?"
-
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BOX_SWALLOWFAXNO.checkbox.text
-msgid "~Fax number will be removed from output"
-msgstr "Ne vo ket meneget an niverenn belleiler."
-
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_CB_EXTERNAL.checkbox.text
-msgid "~Use system print dialog, disable %PRODUCTNAME's print dialog"
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOAFM.String.Text
+msgid  "A format file (with an .afm extension) has not been found for the font\n%s\ntherefore, the font cannot be installed. Format files can be created with ghostscript, for example, and have to be located in the same directory as the font files or its afm subdirectory."
 msgstr ""
 
-#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ENABLE_BTN.checkbox.text
-msgid "~Enable font replacement"
-msgstr "~Gweredekaat an erlec'hiañ nodrezh"
-
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_DEFAULT.fixedline.text
-msgctxt "rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_DEFAULT.fixedline.text"
-msgid "Printer"
-msgstr "Moullerez"
-
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_INSTALL.fixedline.text
-msgid "Select command"
-msgstr "Diuz un urzh"
-
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FT_QUICKCMD.fixedtext.text
-msgid "Command for quick printing without dialog (optional)"
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_AFMCOPYFAILED.String.Text
+msgid  "The metric file for the font file\n   %s\ncould not be copied. The font will not be installed."
 msgstr ""
 
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONFIGURE.fixedtext.text
-msgid "~Configure as"
-msgstr "Kefluniañ evel"
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_FONTCOPYFAILED.String.Text
+msgid  "The font file\n   %s\ncould not be copied. The font will not be installed."
+msgstr ""
 
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONNECT.fixedtext.text
-msgid "Command: "
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NOWRITEABLEFONTSDIR.String.Text
+msgid  "A directory containing a writable fonts.dir file is not located in the Fontpath. Therefore, fonts cannot be installed."
+msgstr ""
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.RID_FIMP_STR_NUMBEROFFONTSIMPORTED.String.Text
+msgid  "%d new fonts were added."
+msgstr "%d nodrezh nevez a zo bet staliet."
+
+#: source/padialog.src#RID_FONTIMPORT_DIALOG.String.Text
+msgid  "Add Fonts"
+msgstr "Ouzhpennañ nodrezhioù"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_FL_CUPSUSAGE.FixedLine.Text
+msgid  "CUPS support"
+msgstr ""
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_CB_CUPSUSAGE.CheckBox.Text
+msgid  "Disable CUPS Support"
+msgstr ""
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_CANCEL.CancelButton.Text
+msgid  "Close"
+msgstr "Serriñ"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_FL_PRINTERS.FixedLine.Text
+msgid  "Installed ~printers"
+msgstr "Moullerezed sternet"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_COMMAND.FixedText.Text
+msgid  "Command:"
 msgstr "Arc'had :"
 
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_PDFDIR.fixedtext.text
-msgid "PDF target directory :"
-msgstr "Kavlec'hiad bukenn PDF :"
+#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_DRIVER.FixedText.Text
+msgid  "Driver:"
+msgstr "Stur :"
 
-#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_DEPTH_TXT.fixedtext.text
-msgid "Color ~depth"
-msgstr "~Donder liv"
+#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_LOCATION.FixedText.Text
+msgid  "Location:"
+msgstr "Lec'hiadur :"
 
-#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDKEY_TXT.fixedtext.text
-msgid "~Option"
-msgstr "~Dibarzh"
+#: source/padialog.src#RID_PADIALOG.RID_PA_TXT_COMMENT.FixedText.Text
+msgid  "Comment:"
+msgstr "Evezhiadenn :"
 
-#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDVALUE_TXT.fixedtext.text
-msgid "Current ~value"
-msgstr "~Gwerzh oberiat"
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_CONF.PushButton.Text
+msgid  "Properties..."
+msgstr "~Perzhioù..."
 
-#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_TXT.fixedtext.text
-msgid "Printer ~Language type"
-msgstr ""
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_RENAME.PushButton.Text
+msgid  "R~ename..."
+msgstr "Ad~envel..."
 
-#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_SPACE_TXT.fixedtext.text
-msgid "~Color"
-msgstr "Liv"
-
-#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_FROM_TXT.fixedtext.text
-msgid "Repla~ce font"
-msgstr "Erlec'hiañ an nodrezh"
-
-#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_SUBST_TXT.fixedtext.text
-msgid "Replaced ~fonts"
-msgstr "~Nodrezhioù erlec'hiet"
-
-#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_TO_TXT.fixedtext.text
-msgid "by ~printer font"
-msgstr "Dre nodrezh~ioù ar voullerez"
-
-#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_BOTTOMMARGIN_TXT.fixedtext.text
-msgid "~Bottom margin"
-msgstr "Ismarz"
-
-#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_COMMENT_TXT.fixedtext.text
-msgid "~Comment"
-msgstr "Evezhiadenn"
-
-#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_LEFTMARGIN_TXT.fixedtext.text
-msgid "~Left margin"
-msgstr "Marz a-gleiz"
-
-#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_RIGHTMARGIN_TXT.fixedtext.text
-msgid "~Right margin"
-msgstr "Marz a-zehou"
-
-#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_TOPMARGIN_TXT.fixedtext.text
-msgid "~Top margin"
-msgstr "Usmarz"
-
-#: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_DUPLEX_TXT.fixedtext.text
-msgid "~Duplex"
-msgstr "~Daouank"
-
-#: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_ORIENTATION_TXT.fixedtext.text
-msgid "~Orientation"
-msgstr "~Tuadur"
-
-#: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_PAPER_TXT.fixedtext.text
-msgid "~Paper size"
-msgstr "Mentrezh ~paper"
-
-#: rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_SLOT_TXT.fixedtext.text
-msgid "Paper tray"
-msgstr "~Bailh boueta"
-
-#: rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_PASS_TXT.fixedtext.text
-msgid "~Password"
-msgstr "Ger-tre~men"
-
-#: rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_TXT.fixedtext.text
-msgid "Please enter your authentication data for server %s"
-msgstr "Euvrit ho roadennoù dilesa evit an dafariad %s"
-
-#: rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_USER_TXT.fixedtext.text
-msgid "~User"
-msgstr "~Arveriad"
-
-#: rtsetup.src#RID_RTS_PWDIALOG.modaldialog.text
-msgid "Authentication request"
-msgstr "Goulenn dilesa"
-
-#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_COMMANDPAGE.pageitem.text
-msgid "Command"
-msgstr "Arc'had"
-
-#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_DEVICEPAGE.pageitem.text
-msgid "Device"
-msgstr "Trobarzhell"
-
-#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_FONTSUBSTPAGE.pageitem.text
-msgid "Font Replacement"
-msgstr "Erlec'hiañ nodrezh"
-
-#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_OTHERPAGE.pageitem.text
-msgid "Other Settings"
-msgstr "Arventennoù ouzhpenn"
-
-#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_PAPERPAGE.pageitem.text
-msgid "Paper"
-msgstr "Paper"
-
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_HELP.pushbutton.text
-msgctxt "rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_HELP.pushbutton.text"
-msgid "~Help"
-msgstr "Skoazell"
-
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_REMOVE.pushbutton.text
-msgctxt "rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_REMOVE.pushbutton.text"
-msgid "~Remove"
-msgstr "Lemel kuit"
-
-#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ADD_BTN.pushbutton.text
-msgid "~Add"
-msgstr "Ouzhpennañ"
-
-#: rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_REMOVE_BTN.pushbutton.text
-msgctxt "rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_REMOVE_BTN.pushbutton.text"
-msgid "~Remove"
-msgstr "Lemel kuit"
-
-#: rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_DEFAULT_BTN.pushbutton.text
-msgctxt "rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_DEFAULT_BTN.pushbutton.text"
-msgid "~Default"
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_STD.PushButton.Text
+msgid  "~Default"
 msgstr "Dre ziouer"
 
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_FAX.string.text
-msgid "Fax"
-msgstr "Pelleiler"
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_DEL.PushButton.Text
+msgid  "Remo~ve..."
+msgstr "Lemel kuit..."
 
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PDF.string.text
-msgctxt "rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PDF.string.text"
-msgid "PDF converter"
+#: source/padialog.src#RID_PADIALOG.RID_PA_TESTPAGE.PushButton.Text
+msgid  "Test ~Page"
+msgstr "~Pajenn arnod"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_FONTS.PushButton.Text
+msgid  "Fon~ts..."
+msgstr "~Nodrezhioù..."
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_BTN_ADD.PushButton.Text
+msgid  "New Printer..."
+msgstr "Moullerez ~nevez"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_STR_DEFPRT.String.Text
+msgid  "Default printer"
+msgstr "Moullerez dre ziouer"
+
+#: source/padialog.src#RID_PADIALOG.RID_PA_STR_RENAME.String.Text
+msgid  "Rename"
+msgstr "Adenvel"
+
+#: source/padialog.src#RID_PADIALOG.String.Text
+msgid  "Printer Administration"
+msgstr "Ardeiñ moullerezed"
+
+#: source/padialog.src#RID_ERR_NOPRINTER.String.Text
+msgid  "Could not open printer %s."
+msgstr "N'haller ket digeriñ ar voullerez $1 "
+
+#: source/padialog.src#RID_PA_TXT_TESTPAGE_PRINTED.String.Text
+msgid  "The test page was printed succesfully. Please check the result."
+msgstr "Echu eo moulladur ar bajenn brouadiñ, Gwiriit an disoc'h, mar plij."
+
+#: source/padialog.src#RID_ERR_NOWRITE.String.Text
+msgid  "No printers can be installed, because the file system is read-only.\nPlease contact your system administrator."
+msgstr ""
+
+#: source/padialog.src#RID_QRY_PRTNAME.String.Text
+msgid  "~New printer name"
+msgstr "Anv moullerez nevez"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_MODEL.String.Text
+msgid  "Model"
+msgstr "Patromel"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_NAME.String.Text
+msgid  "Name"
+msgstr "Anv"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_COMMENT.String.Text
+msgid  "Comment"
+msgstr "Evezhiadenn"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_QUEUE.String.Text
+msgid  "Queue"
+msgstr "Lostad gortoz"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_DATE.String.Text
+msgid  "Date"
+msgstr "Deiziad"
+
+#: source/padialog.src#RID_TXT_TESTPAGE_TIME.String.Text
+msgid  "Time"
+msgstr "Eur"
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_OK.OKButton.Text
+msgid  "Close"
+msgstr "Serriñ"
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_RENAME.PushButton.Text
+msgid  "Re~name..."
+msgstr "Adenvel..."
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_REMOVE.PushButton.Text
+msgid  "~Remove..."
+msgstr "Lemel kuit..."
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_BTN_IMPORT.PushButton.Text
+msgid  "~Add..."
+msgstr "Ouzhpennañ..."
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_FIXED.FixedText.Text
+msgid  "Note: The fonts are only available to the applications."
+msgstr "Evezhiadenn : An nodrezhioù zo hegerz evit an arload hepken."
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_RENAME.String.Text
+msgid  "~New name for %s"
+msgstr "Anv nevez evit %s"
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_TTCRENAME.String.Text
+msgid  "~New name for %s (%d1 of %d2)"
+msgstr "Anv nevez evit %s (%d1 eus %d2)"
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.RID_FNTNM_STR_NOTRENAMABLE.String.Text
+msgid  "The font %s cannot be renamed due to missing write permission."
+msgstr "N'haller ket adenvel an nodrezh %s : gwirioù skrivañ dispirus."
+
+#: source/padialog.src#RID_FONTNAMEDIALOG.String.Text
+msgid  "Fonts"
+msgstr "Nodrezhioù"
+
+#: source/padialog.src#RID_BXT_TESTPAGE.String.Text
+msgid  "Test page"
+msgstr "Pajenn arnod"
+
+#: source/padialog.src#RID_BXT_ENVIRONMENT.String.Text
+msgid  "Wrong environment"
+msgstr "Amva nammek"
+
+#: source/padialog.src#RID_YOU_SURE.String.Text
+msgid  "Are you sure ?"
+msgstr "Ha sur oc'h ?"
+
+#: source/padialog.src#RID_AFMERROR_OK.String.Text
+msgid  "No error"
+msgstr "Fazi ebet"
+
+#: source/padialog.src#RID_AFMERROR_NO_FONT_NAME.String.Text
+msgid  "The metric does not contain a 'FontName' entry."
+msgstr "N'eus enankad 'FontName' ebet e-barzh ar menterezh."
+
+#: source/padialog.src#RID_AFMERROR_NO_FULL_NAME.String.Text
+msgid  "The metric does not contain a 'FullName' entry."
+msgstr "N'eus enankad 'FullName' ebet e-barzh ar menterezh."
+
+#: source/padialog.src#RID_AFMERROR_NO_FAMILY_NAME.String.Text
+msgid  "The metric does not contain a 'FamilyName' entry."
+msgstr "N'eus enankad 'FamilyName' ebet e-barzh ar menterezh."
+
+#: source/padialog.src#RID_AFMERROR_MOVETO_FAILED.String.Text
+msgid  "The converted metric could not be written."
+msgstr "Skrivadur ar menterezh amdroet dic'hallus"
+
+#: source/padialog.src#RID_AFMERROR_STREAM_READ_FAILED.String.Text
+msgid  "The metric could not be read."
+msgstr "Lennadur ar menterezh dic'halloudus."
+
+#: source/padialog.src#RID_AFMERROR_STREAM_WRITE_FAILED.String.Text
+msgid  "A temporary file could not be created."
+msgstr "N'haller ket krouiñ ur restr padennek "
+
+#: source/padialog.src#RID_AFMERROR_NOT_A_METRIC.STRING.Text
+msgid  "The file does not contain a metric."
+msgstr "N'eus menterezh ebet endalc'het gant ar restr."
+
+#: source/padialog.src#RID_AFMERROR_BOX_TXT.String.Text
+msgid  "The metric\n\n%s\n\ncould not be converted for the following reason:\n\n"
+msgstr ""
+
+#: source/padialog.src#RID_PROGRESS_DLG.RID_PROGRESS_PROGRESS_TXT.FixedText.Text
+msgid  "Progress"
+msgstr "Araokaat"
+
+#: source/padialog.src#RID_PROGRESS_DLG.FixedText.Text
+msgid  "Please wait"
+msgstr "Gortozit, mar plij..."
+
+#: source/padialog.src#RID_OPERATION_CONVERTMETRIC.String.Text
+msgid  "Font metrics conversion"
+msgstr "Amdroadur metrerezhioù an nodrezhioù"
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_PATH.FixedLine.Text
+msgid  "Dri~ver directory"
+msgstr "Kavlec'hiad stur"
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_PATH.FixedText.Text
+msgid  "Please select the driver directory."
+msgstr "Diuzit ar c'havlec'hiad ennañ restroù ar stur."
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_BTN_SEARCH.PushButton.Text
+msgid  "Browse..."
+msgstr "~Kantreal..."
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_GROUP_DRIVER.FixedLine.Text
+msgid  "~Selection of drivers"
+msgstr "Sturioù dieub"
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_TXT_DRIVER.FixedText.Text
+msgid  "Please select the drivers to install and press "%s"."
+msgstr ""
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.RID_PPDIMP_STR_LOADINGPPD.String.Text
+msgid  "Searching for drivers"
+msgstr "Klask sturioù"
+
+#: source/padialog.src#RID_PPDIMPORT_DLG.CancelButton.Text
+msgid  "Driver Installation"
+msgstr "Staliañ ar stur."
+
+#: source/padialog.src#RID_QUERY_REMOVEDRIVER.String.Text
+msgid  "Do you really want to remove the driver "%s"?"
+msgstr ""
+
+#: source/padialog.src#RID_QUERY_REMOVEPRINTER.String.Text
+msgid  "Do you really want to remove this printer ?"
+msgstr "C'hoant hoc'h eus lemel kuit da vat ar voullerez-mañ ?"
+
+#: source/padialog.src#RID_QUERY_REMOVEFONTFROMLIST.String.Text
+msgid  "Do you really want to remove the selected fonts ?"
+msgstr "C'hoant hoc'h eus lemel kuit da vat an arouezennoù diuzet ?"
+
+#: source/padialog.src#RID_QUERY_DRIVERUSED.String.Text
+msgid  "There are still printers using the driver "%s". Do you really want to remove it? The corresponding printers will also be removed."
+msgstr ""
+
+#: source/padialog.src#RID_ERR_REMOVESGENPRT.String.Text
+msgid  "The driver "%s" is always needed and can therefore not be removed."
+msgstr ""
+
+#: source/padialog.src#RID_ERR_REMOVEDRIVERFAILED.String.Text
+msgid  "The driver "%s1" could not be removed. It was not possible to remove the file\n\n%s2."
+msgstr ""
+
+#: source/padialog.src#RID_ERR_REMOVEDEFAULTDRIVER.String.Text
+msgid  "The driver "%s" is used by your default printer. Therefore, it cannot be removed."
+msgstr ""
+
+#: source/padialog.src#RID_ERR_PRINTERNOTREMOVEABLE.String.Text
+msgid  "The printer %s cannot be removed."
+msgstr "N'haller ket dilemel ar voullerez-mañ."
+
+#: source/padialog.src#RID_TXT_PRINTERALREADYEXISTS.String.Text
+msgid  "A printer named "%s" already exists. This printer will not be imported."
+msgstr ""
+
+#: source/padialog.src#RID_TXT_PRINTERWITHOUTCOMMAND.String.Text
+msgid  "The printer "%s" has no valid configuration and, therefore, cannot be imported."
+msgstr ""
+
+#: source/padialog.src#RID_TXT_DRIVERDOESNOTEXIST.String.Text
+msgid  "The driver for the printer "%s1" (%s2) is not installed. Therefore the printer cannot be imported."
+msgstr ""
+
+#: source/padialog.src#RID_TXT_PRINTERADDFAILED.String.Text
+msgid  "The printer "%s" could not be added."
+msgstr ""
+
+#: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_FINISH.OKButton.Text
+msgid  "~Finish"
+msgstr "Krouiñ"
+
+#: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_NEXT.PushButton.Text
+msgid  "~Next >>"
+msgstr "War-lerc'h >>"
+
+#: source/padialog.src#RID_ADD_PRINTER_DIALOG.RID_ADDP_BTN_PREV.PushButton.Text
+msgid  "<< ~Back"
+msgstr "<< Kent"
+
+#: source/padialog.src#RID_ADD_PRINTER_DIALOG.PushButton.Text
+msgid  "Add Printer"
+msgstr "Ouzhpennañ ur voullerez"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_STR_TITLE.String.Text
+msgid  "Choose a driver"
+msgstr "Diuz ur stur"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_TXT_DRIVER.FixedText.Text
+msgid  "Please select a s~uitable driver."
+msgstr "Diuzit ur stur dereat."
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_ADD.PushButton.Text
+msgid  "~Import..."
+msgstr "Enporzh~iañ..."
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_BTN_REMOVE.PushButton.Text
+msgid  "~Delete"
+msgstr "Lemel kuit"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDRIVER.RID_ADDP_CHDRV_STR_REMOVE.String.Text
+msgid  "Delete driver"
+msgstr "Lemel kuit ar stur"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_STR_TITLE.String.Text
+msgid  "Choose a device type"
+msgstr "Diuz ur rumm trobarzhell"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_TXT_OVER.FixedText.Text
+msgid  "Do you want to"
+msgstr "Petra a fell deoc'h ober ?"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PRINTER.RadioButton.Text
+msgid  "Add a ~printer"
+msgstr "~Ouzhpennañ ur voullerez"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_FAX.RadioButton.Text
+msgid  "Connect a fa~x device"
+msgstr "Kennaskañ un drobarzhell faks"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_PDF.RadioButton.Text
+msgid  "Connect a P~DF converter"
+msgstr "Kennaskañ un amdroer PDF"
+
+#: source/padialog.src#RID_ADDP_PAGE_CHOOSEDEV.RID_ADDP_CHDEV_BTN_OLD.RadioButton.Text
+msgid  "~Import printers from a StarOffice installation"
+msgstr "Enporzh~iañ unan pe veur a voullerez diouzh ur staliadur StarOffice"
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_STR_TITLE.String.Text
+msgid  "Choose a name"
+msgstr "Diuz un anv"
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_NAME.FixedText.Text
+msgid  "Please enter a name for the printer."
+msgstr "Erspizit un anv evit ar voullerez."
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_FAXNAME.FixedText.Text
+msgid  "Please enter a name for the fax connection."
+msgstr "Erspizit un anv evit ar c'hennaskañ faks."
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_TXT_PDFNAME.FixedText.Text
+msgid  "Please enter a name for the PDF connection."
+msgstr "Erspizit un anv evit ar c'hennaskañ PDF."
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_FAXNAME.Edit.Text
+msgid  "Fax printer"
+msgstr "Moullerez pelleiler"
+
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_EDT_PDFNAME.Edit.Text
+msgid  "PDF converter"
 msgstr "Amdroer PDF"
 
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PRINTER.string.text
-msgctxt "rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PRINTER.string.text"
-msgid "Printer"
-msgstr "Moullerez"
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_DEFAULT.CheckBox.Text
+msgid  "~Use as default printer"
+msgstr "Arverañ evel moullerez ~dre ziouer"
 
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_FAXHELP.string.text
-msgid ""
-"The command line for fax devices is executed as follows: for each fax sent, "
-"\"(TMP)\" in the command line is replaced by a temporary file and \"(PHONE)\" in "
-"the command line is replaced by the fax number. If \"(TMP)\" appears in the "
-"command line, the PostScript code will be supplied via a file, otherwise it "
-"is passed as standard input (i.e. as a pipe)."
+#: source/padialog.src#RID_ADDP_PAGE_NAME.RID_ADDP_NAME_BOX_FAXSWALLOW.CheckBox.Text
+msgid  "Remo~ve fax number from output"
+msgstr "~Niverenn faks ebet evit an ec'hankad"
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_STR_TITLE.String.Text
+msgid  "Choose a command line"
+msgstr "Diuz ul linenn arc'had"
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_COMMAND.FixedText.Text
+msgid  "Please enter a c~ommand line appropriate for this device."
+msgstr "Euvrit ul linenn arc'had a-benn gervel an drobarzhell-mañ."
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_TXT_PDFDIR.FixedText.Text
+msgid  "PDF ~target directory"
+msgstr "Kavelec'hiad bukenn PDF"
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_BTN_HELP.PushButton.Text
+msgid  "~Help"
+msgstr "Skoazell"
+
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_PDFHELP.String.Text
+msgid  "The command line for PDF converters is executed as follows: for each document printed, "(TMP)" in the command line is replaced by a temporary file and "(OUTFILE)" in the command line is replaced by the target PDF file name. If "(TMP)" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
 msgstr ""
-"Keweriad al linenn lankañ evit an trobarzhelloù faks : evit pep kasad faks, "
-"ez eo erlec'hiet ur restr amzeriat ouzh \"(TMP)\" hag an niverenn faks ouzh "
-"\"(PHONE)\". Ma teuy \"(TMP)\" war wel el linenn lankañ e vo treuzkaset ar voneg "
-"PostScript en ur restr ; en tu kontrol e vo treuzkaset dre an enankad dre "
-"ziouer (eleze evel ur gorzenn (pipe))."
 
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.string.text
-msgctxt "rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.string.text"
-msgid ""
-"The command line for PDF converters is executed as follows: for each "
-"document printed, \"(TMP)\" in the command line is replaced by a temporary "
-"file and \"(OUTFILE)\" in the command line is replaced by the target PDF file "
-"name. If \"(TMP)\" is in the command line, the PostScript code will be "
-"supplied via a file, otherwise via standard input (i.e. as a pipe)."
+#: source/padialog.src#RID_ADDP_PAGE_COMMAND.RID_ADDP_CMD_STR_FAXHELP.String.Text
+msgid  "The command line for fax connections is executed as follows: for each fax sent, "(TMP)" in the command line is replaced by a temporary file and "(PHONE)" in the command line is replaced by the fax number. If "(TMP)" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
 msgstr ""
-"Keweriad al linenn lankañ evit an amdroerioù PDF : evit pep teul moullet ez "
-"eus erlec'hiet ur restr amzeriat ouzh \"(TMP)\" hag ur restr PDF da grouiñ "
-"ouzh \"(OUTFILE)\". Ma teuy \"(TMP)\" war wel el linenn lankañ, e vo treuzkaset "
-"ar voneg PostScript en ur restr ; en tu kontrol e vo treuzkaset dre an "
-"enankad dre ziouer (eleze evel korzenn (pipe))."
 
-#: rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PRINTERHELP.string.text
-msgid ""
-"The command line for printer devices is executed as follows: the generated "
-"PostScript code is supplied as standard input (i.e. as a pipe) to the "
-"command line."
+#: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_STR_TITLE.String.Text
+msgid  "Import printers from old versions"
+msgstr "Enporzh ar moullerezed o tont eus ar goulevioù kent"
+
+#: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_TXT_PRINTERS.FixedText.Text
+msgid  "~These printers can be imported. Please select the ones you want to import."
 msgstr ""
-"Keweriad al linenn lankañ evit ar moullerezed : ar voneg PostScript aozet zo "
-"treuzkaset d'al linenn lankañ evel enankad dre ziouer (eleze evel korzenn "
-"(pipe))."
 
-#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_COLOR_TXT.string.text
-msgid "Color"
-msgstr "Liv"
+#: source/padialog.src#RID_ADDP_PAGE_OLDPRINTERS.RID_ADDP_OLD_BTN_SELECTALL.PushButton.Text
+msgid  "~Select All"
+msgstr "Diuz pep tra"
 
-#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_GRAY_TXT.string.text
-msgid "Grayscale"
-msgstr "Liveoù gris"
+#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_STR_TITLE.String.Text
+msgid  "Choose a driver"
+msgstr "Diuz ur stur"
 
-#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_FROMDRIVER_TXT.string.text
-msgid "from driver"
+#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_TXT_DRIVER.FixedText.Text
+msgid  "Use the following driver for this fax connection"
+msgstr "Stur da arverañ gant ar gennaskenn faks"
+
+#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_DEFAULT.RadioButton.Text
+msgid  "T~he default driver"
+msgstr "Stur dre ziouer"
+
+#: source/padialog.src#RID_ADDP_PAGE_FAXDRIVER.RID_ADDP_FAXDRV_BTN_SELECT.RadioButton.Text
+msgid  "A speci~fic driver, to adapt the format to another printer"
+msgstr "Stur arbennik a-benn azasaat ar mentrezhañ d'ur voullerez all"
+
+#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_STR_TITLE.String.Text
+msgid  "Choose a driver"
+msgstr "Diuz ur stur"
+
+#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_TXT_DRIVER.FixedText.Text
+msgid  "Use the following driver for this PDF converter"
+msgstr "Stur da arverañ gant un amdroer PDF :"
+
+#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DEFAULT.RadioButton.Text
+msgid  "T~he default driver"
+msgstr "Stur dre ziouer"
+
+#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_DIST.RadioButton.Text
+msgid  "The Adobe D~istiller(tm) driver"
+msgstr "Stur Adobe Distiller(tm)"
+
+#: source/padialog.src#RID_ADDP_PAGE_PDFDRIVER.RID_ADDP_PDFDRV_BTN_SELECT.RadioButton.Text
+msgid  "A spec~ific driver, to adapt the format to another printer"
+msgstr "Stur arbennik a-benn azasaat ar mentrezhañ d'ur voullerez all"
+
+#: source/padialog.src#RID_TXT_FONT_ITALIC.String.Text
+msgid  "Italic"
+msgstr "Stouet"
+
+#: source/padialog.src#RID_TXT_FONT_OBLIQUE.String.Text
+msgid  "Oblique"
+msgstr "A-veskell"
+
+#: source/padialog.src#RID_TXT_FONT_THIN.String.Text
+msgid  "Thin"
+msgstr "Dibenn"
+
+#: source/padialog.src#RID_TXT_FONT_ULTRALIGHT.String.Text
+msgid  "Ultralight"
+msgstr "Light kenañ"
+
+#: source/padialog.src#RID_TXT_FONT_SEMILIGHT.String.Text
+msgid  "Semilight"
+msgstr "Hanter-c'houloù"
+
+#: source/padialog.src#RID_TXT_FONT_LIGHT.String.Text
+msgid  "Light"
+msgstr "Light"
+
+#: source/padialog.src#RID_TXT_FONT_SEMIBOLD.String.Text
+msgid  "Semibold"
+msgstr "Hanter-lard"
+
+#: source/padialog.src#RID_TXT_FONT_BOLD.String.Text
+msgid  "Bold"
+msgstr "Tev"
+
+#: source/padialog.src#RID_TXT_FONT_ULTRABOLD.String.Text
+msgid  "Ultrabold"
+msgstr "Tev kenañ"
+
+#: source/padialog.src#RID_TXT_FONT_ULTRACONDENSED.String.Text
+msgid  "Ultracondensed"
+msgstr "Krennet kenañ"
+
+#: source/padialog.src#RID_TXT_FONT_EXTRACONDENSED.String.Text
+msgid  "Extracondensed"
+msgstr "Dreistkrenn"
+
+#: source/padialog.src#RID_TXT_FONT_CONDENSED.String.Text
+msgid  "Condensed"
+msgstr "Krennet"
+
+#: source/padialog.src#RID_TXT_FONT_SEMICONDENSED.String.Text
+msgid  "Semicondensed"
+msgstr "Hanter-grennet"
+
+#: source/padialog.src#RID_TXT_FONT_SEMIEXPANDED.String.Text
+msgid  "Semiexpanded"
+msgstr "Hanter-ledet"
+
+#: source/padialog.src#RID_TXT_FONT_EXPANDED.String.Text
+msgid  "Expanded"
+msgstr "Astennet"
+
+#: source/padialog.src#RID_TXT_FONT_EXTRAEXPANDED.String.Text
+msgid  "Extraexpanded"
+msgstr "Dreistledan"
+
+#: source/padialog.src#RID_TXT_FONT_ULTRAEXPANDED.String.Text
+msgid  "Ultraexpanded"
+msgstr "Astenn kenañ"
+
+#: source/padialog.src#RID_TXT_FONT_REGULAR.String.Text
+msgid  "Regular"
+msgstr "Reizh"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_COMMANDPAGE.PageItem.Text
+msgid  "Command"
+msgstr "Arc'had"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_PAPERPAGE.PageItem.Text
+msgid  "Paper"
+msgstr "Paper"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_DEVICEPAGE.PageItem.Text
+msgid  "Device"
+msgstr "Trobarzhell"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_FONTSUBSTPAGE.PageItem.Text
+msgid  "Font Replacement"
+msgstr "Erlec'hiañ nodrezh"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_TABCONTROL.RID_RTS_OTHERPAGE.PageItem.Text
+msgid  "Other Settings"
+msgstr "Arventennoù ouzhpenn"
+
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_FROMDRIVER_TXT.String.Text
+msgid  "from driver"
 msgstr "hervez ar stur"
 
-#: rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_INVALID_TXT.string.text
-msgid "<ignore>"
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.RID_RTS_RTSDIALOG_INVALID_TXT.String.Text
+msgid  "<ignore>"
 msgstr "<leuskel a-gostez>"
 
-#: rtsetup.src#RID_TXT_QUERYFAXNUMBER.string.text
-msgid "Please enter the fax number."
+#: source/rtsetup.src#RID_RTS_RTSDIALOG.String.Text
+msgid  "Properties of %s"
+msgstr "Perzhioù eus %"
+
+#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_PAPER_TXT.FixedText.Text
+msgid  "~Paper size"
+msgstr "Mentrezh ~paper"
+
+#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_ORIENTATION_TXT.FixedText.Text
+msgid  "~Orientation"
+msgstr "~Tuadur"
+
+#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_DUPLEX_TXT.FixedText.Text
+msgid  "~Duplex"
+msgstr "~Daouank"
+
+#: source/rtsetup.src#RID_RTS_PAPERPAGE.RID_RTS_PAPER_SLOT_TXT.FixedText.Text
+msgid  "Paper tray"
+msgstr "~Bailh boueta"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_COLOR_TXT.String.Text
+msgid  "Color"
+msgstr "Liv"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_GRAY_TXT.String.Text
+msgid  "Grayscale"
+msgstr "Liveoù gris"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDKEY_TXT.FixedText.Text
+msgid  "~Option"
+msgstr "~Dibarzh"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PPDVALUE_TXT.FixedText.Text
+msgid  "Current ~value"
+msgstr "~Gwerzh oberiat"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_TXT.FixedText.Text
+msgid  "Printer ~Language type"
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.1.StringList.item
+msgid  "PostScript (Level from driver)"
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.2.StringList.item
+msgid  "PostScript Level 1"
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.3.StringList.item
+msgid  "PostScript Level 2"
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.4.StringList.item
+msgid  "PostScript Level 3"
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.10.StringList.item
+msgid  "PDF"
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_SPACE_TXT.FixedText.Text
+msgid  "~Color"
+msgstr "Liv"
+
+#: source/rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_DEPTH_TXT.FixedText.Text
+msgid  "Color ~depth"
+msgstr "~Donder liv"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ENABLE_BTN.CheckBox.Text
+msgid  "~Enable font replacement"
+msgstr "~Gweredekaat an erlec'hiañ nodrezh"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_SUBST_TXT.FixedText.Text
+msgid  "Replaced ~fonts"
+msgstr "~Nodrezhioù erlec'hiet"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_ADD_BTN.PushButton.Text
+msgid  "~Add"
+msgstr "Ouzhpennañ"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_REMOVE_BTN.PushButton.Text
+msgid  "~Remove"
+msgstr "Lemel kuit"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_FROM_TXT.FixedText.Text
+msgid  "Repla~ce font"
+msgstr "Erlec'hiañ an nodrezh"
+
+#: source/rtsetup.src#RID_RTS_FONTSUBSTPAGE.RID_RTS_FS_TO_TXT.FixedText.Text
+msgid  "by ~printer font"
+msgstr "Dre nodrezh~ioù ar voullerez"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_CB_EXTERNAL.CheckBox.Text
+msgid  "~Use system print dialog, disable %PRODUCTNAME's print dialog"
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FT_QUICKCMD.FixedText.Text
+msgid  "Command for quick printing without dialog (optional)"
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_INSTALL.FixedLine.Text
+msgid  "Select command"
+msgstr "Diuz un urzh"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PRINTER.String.Text
+msgid  "Printer"
+msgstr "Moullerez"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_FAX.String.Text
+msgid  "Fax"
+msgstr "Pelleiler"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_CONFIGURE_PDF.String.Text
+msgid  "PDF converter"
+msgstr "Amdroer PDF"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONFIGURE.FixedText.Text
+msgid  "~Configure as"
+msgstr "Kefluniañ evel"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BOX_SWALLOWFAXNO.CheckBox.Text
+msgid  "~Fax number will be removed from output"
+msgstr "Ne vo ket meneget an niverenn belleiler."
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_PDFDIR.FixedText.Text
+msgid  "PDF target directory :"
+msgstr "Kavlec'hiad bukenn PDF :"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_TXT_CONNECT.FixedText.Text
+msgid  "Command: "
+msgstr "Arc'had :"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_FL_DEFAULT.FixedLine.Text
+msgid  "Printer"
+msgstr "Moullerez"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_HELP.PushButton.Text
+msgid  "~Help"
+msgstr "Skoazell"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_BTN_REMOVE.PushButton.Text
+msgid  "~Remove"
+msgstr "Lemel kuit"
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PDFHELP.String.Text
+msgid  "The command line for PDF converters is executed as follows: for each document printed, "(TMP)" in the command line is replaced by a temporary file and "(OUTFILE)" in the command line is replaced by the target PDF file name. If "(TMP)" is in the command line, the PostScript code will be supplied via a file, otherwise via standard input (i.e. as a pipe)."
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_PRINTERHELP.String.Text
+msgid  "The command line for printer devices is executed as follows: the generated PostScript code is supplied as standard input (i.e. as a pipe) to the command line."
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_COMMANDPAGE.RID_RTS_CMD_STR_FAXHELP.String.Text
+msgid  "The command line for fax devices is executed as follows: for each fax sent, "(TMP)" in the command line is replaced by a temporary file and "(PHONE)" in the command line is replaced by the fax number. If "(TMP)" appears in the command line, the PostScript code will be supplied via a file, otherwise it is passed as standard input (i.e. as a pipe)."
+msgstr ""
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_LEFTMARGIN_TXT.FixedText.Text
+msgid  "~Left margin"
+msgstr "Marz a-gleiz"
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_TOPMARGIN_TXT.FixedText.Text
+msgid  "~Top margin"
+msgstr "Usmarz"
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_RIGHTMARGIN_TXT.FixedText.Text
+msgid  "~Right margin"
+msgstr "Marz a-zehou"
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_BOTTOMMARGIN_TXT.FixedText.Text
+msgid  "~Bottom margin"
+msgstr "Ismarz"
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_COMMENT_TXT.FixedText.Text
+msgid  "~Comment"
+msgstr "Evezhiadenn"
+
+#: source/rtsetup.src#RID_RTS_OTHERPAGE.RID_RTS_OTHER_DEFAULT_BTN.PushButton.Text
+msgid  "~Default"
+msgstr "Dre ziouer"
+
+#: source/rtsetup.src#RID_TXT_QUERYFAXNUMBER.String.Text
+msgid  "Please enter the fax number."
 msgstr "Euvrit an niverenn faks."
 
-#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.1.stringlist.text
-msgid "PostScript (Level from driver)"
-msgstr ""
+#: source/rtsetup.src#RID_RTS_PWDIALOG.ModalDialog.Text
+msgid  "Authentication request"
+msgstr "Goulenn dilesa"
 
-#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.2.stringlist.text
-msgid "PostScript Level 1"
-msgstr ""
+#: source/rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_TXT.FixedText.Text
+msgid  "Please enter your authentication data for server %s"
+msgstr "Euvrit ho roadennoù dilesa evit an dafariad %s"
 
-#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.3.stringlist.text
-msgid "PostScript Level 2"
-msgstr ""
+#: source/rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_USER_TXT.FixedText.Text
+msgid  "~User"
+msgstr "~Arveriad"
 
-#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.4.stringlist.text
-msgid "PostScript Level 3"
-msgstr ""
-
-#: rtsetup.src#RID_RTS_DEVICEPAGE.RID_RTS_DEVICE_PRINTLANG_BOX.5.stringlist.text
-msgid "PDF"
-msgstr ""
-
-#: rtsetup.src#RID_RTS_RTSDIALOG.tabdialog.text
-msgid "Properties of %s"
-msgstr "Perzhioù eus %"
+#: source/rtsetup.src#RID_RTS_PWDIALOG.RID_RTS_PWDIALOG_PASS_TXT.FixedText.Text
+msgid  "~Password"
+msgstr "Ger-tre~men"

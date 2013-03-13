@@ -1,893 +1,572 @@
-
-#: wiki.xhp#tit.help.text
-msgctxt "wiki.xhp#tit.help.text"
-msgid "@WIKIEXTENSIONPRODUCTNAME@"
-msgstr "@WIKIEXTENSIONPRODUCTNAME@"
-
-#: wiki.xhp#bm_id3154408.help.text
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
 msgid ""
-"<bookmark_value>Wiki;@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_va"
-"lue>@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>extensions;Me"
-"diaWiki</bookmark_value>"
 msgstr ""
-"<bookmark_value>വിക്കി;@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_"
-"value>@WIKIEXTENSIONPRODUCTNAME@</bookmark_value><bookmark_value>എക്സ്റ്റെന്"
-"‍ഷനുകള്‍; മീഡിയാവിക്കി</bookmark_value>"
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
 
-#: wiki.xhp#hd_id5993530.help.text
-msgctxt "wiki.xhp#hd_id5993530.help.text"
-msgid "@WIKIEXTENSIONPRODUCTNAME@"
-msgstr "@WIKIEXTENSIONPRODUCTNAME@"
 
-#: wiki.xhp#par_id9647511.help.text
-msgid ""
-"<ahelp hid=\".\">By using the @WIKIEXTENSIONPRODUCTNAME@ you can upload your "
-"current Writer text document to a MediaWiki server. After uploading, all "
-"Wiki users can read your document on the Wiki.</ahelp>"
-msgstr ""
-"<ahelp hid=\".\">@WIKIEXTENSIONPRODUCTNAME@ ഉപയോഗിച്ചു് നിങ്ങളുടെ നിലവിലുള്ള "
-"റൈറ്റര്‍ ടെക്സ്റ്റ് രേഖ ഒരു മീഡിയാ സര്‍വറിലേക്ക് അപ്‌ലോഡ് ചെയ്യുവാന്‍ "
-"സാധിക്കുന്നു. ഇതിനു് ശേഷം, എല്ലാ വിക്കി ഉപയോക്താക്കള്‍ക്കും നിങ്ങളുടെ രേഖ "
-"ലഭ്യമാകുന്നു.</ahelp>"
-
-#: wiki.xhp#par_id6468703.help.text
-msgid ""
-"<ahelp hid=\".\">Choose <item type=\"menuitem\">File - Send - To "
-"MediaWiki</item> to upload the current Writer document to a MediaWiki "
-"server.</ahelp>"
-msgstr ""
-"<ahelp hid=\".\">ഇപ്പോഴുള്ള റൈറ്റര്‍ രേഖ ഒരു മീഡിയാവിക്കി സര്‍വറിലേക്ക് "
-"അപ്‌ലോഡ് ചെയ്യുന്നതിനായി <item type=\"menuitem\">ഫയല്‍ - അയയ്ക്കുക - "
-"മീഡിയാവിക്കിയിലേക്ക്</item> തെരഞ്ഞെടുക്കുക.</ahelp>"
-
-#: wiki.xhp#hd_id4554582.help.text
-msgid "System Requirements"
-msgstr "സിസ്റ്റം ആവശ്യമങ്ങള്‍"
-
-#: wiki.xhp#par_id2597430.help.text
-msgid "StarOffice/StarSuite 9"
-msgstr "StarOffice/StarSuite 9"
-
-#: wiki.xhp#par_id8430738.help.text
-msgid "OpenOffice.org 3.0"
-msgstr "ഓപ്പണ്‍ഓഫീസ്.ഓര്‍ഗ് 3.0"
-
-#: wiki.xhp#par_id9340495.help.text
-msgid "Java Runtime Environment 1.4"
-msgstr "ജാവാ റണ്‍ടൈം എന്‍വയോണ്മെന്റ് 1.4"
-
-#: wiki.xhp#par_id7387615.help.text
-msgid ""
-"A Wiki account on a supported <link "
-"href=\"http://www.mediawiki.org/wiki/MediaWiki\">MediaWiki</link> server"
-msgstr ""
-"പിന്തുണയുള്ള <link "
-"href=\"http://www.mediawiki.org/wiki/MediaWiki\">മീഡിയാവിക്കി</link> "
-"സര്‍വറിലുള്ള ഒരു വിക്കി അക്കൌണ്ട്"
-
-#: wiki.xhp#hd_id8047120.help.text
-msgid "Installing @WIKIEXTENSIONPRODUCTNAME@"
-msgstr "@WIKIEXTENSIONPRODUCTNAME@ ഇന്‍സ്റ്റോള്‍ ചെയ്യുന്നു"
-
-#: wiki.xhp#par_id4277169.help.text
-msgid ""
-"Before you install the @WIKIEXTENSIONPRODUCTNAME@, ensure that %PRODUCTNAME "
-"uses a Java Runtime Environment (JRE). To check the status of the JRE, "
-"choose <item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Java</item>. "
-"Ensure that \"Use a Java runtime environment\" is marked and that a Java "
-"runtime folder is selected in the big listbox. If no JRE was activated, then "
-"activate a JRE 1.4 or later and restart %PRODUCTNAME."
-msgstr ""
-"നിങ്ങള്‍ @WIKIEXTENSIONPRODUCTNAME@ ഇന്‍സ്റ്റോള്‍ ചെയ്യുന്നതിനു് മുമ്പായി, %"
-"PRODUCTNAME ഒരു ജാവാ റണ്‍ടൈം എന്‍വയോണ്മെന്റ് (JRE) ഉപയോഗിക്കുന്നു "
-"എന്നുറപ്പാക്കുക. JRE-യുടെ അവസ്ഥ പരിശോധിക്കുന്നതിനായി, <item "
-"type=\"menuitem\">ഉപകരണങ്ങള്‍ - ഉപാധികള്‍ - %PRODUCTNAME - ജാവാ</item> "
-"തെരഞ്ഞെടുക്കുക. \"~ഒരു ജാവാ റണ്‍ടൈം എന്‍വയോണ്മെന്റ് ഉപയോഗിക്കുക\" "
-"അടയാളപ്പെടുത്തിയിട്ടുണ്ടെന്നും വലിയ ലിസ്റ്റബോക്സില്‍ ഒരു ജാവാ റണ്‍ടൈം "
-"തെരഞ്ഞെടുത്തിട്ടുണ്ടെന്നും ഉറപ്പുവരുത്തുക. JRE സജീവമല്ലെങ്കില്‍, JRE 1.4 "
-"അല്ലെങ്കില്‍ അതിനു് ശേഷമുള്ളതു് സജീവമാക്കി %PRODUCTNAME വീണ്ടും ആരംഭിക്കുക."
-
-#: wiki.xhp#hd_id567339.help.text
-msgid "To Install the @WIKIEXTENSIONPRODUCTNAME@"
-msgstr "@WIKIEXTENSIONPRODUCTNAME@ ഇന്‍സ്റ്റോള്‍ ചെയ്യുന്നതിനു്"
-
-#: wiki.xhp#par_id1732230.help.text
-msgctxt "wiki.xhp#par_id1732230.help.text"
-msgid ""
-"In a Writer window, choose <item type=\"menuitem\">Tools - Extension "
-"Manager</item>."
-msgstr ""
-"റൈറ്റര്‍ ജാലകത്തില്‍, <item type=\"menuitem\">ഉപകരണങ്ങള്‍ - എക്സ്റ്റെന്‍ഷന്‍ "
-"മാനേജര്‍ </item> തെരഞ്ഞെടുക്കുക."
-
-#: wiki.xhp#par_id4338511.help.text
-msgid "In the Extension Manager dialog, click Add."
-msgstr "എക്സ്റ്റെന്‍ഷന്‍ മാനേജര്‍ ഡയലോഗില്‍, ചേര്‍ക്കുക ക്ലിക്ക് ചെയ്യുക."
-
-#: wiki.xhp#par_id5882442.help.text
-msgid ""
-"Locate the @WIKIEXTENSIONFILENAME@.oxt file, click Open, and then click "
-"Close. "
-msgstr ""
-"@WIKIEXTENSIONFILENAME@.oxt ഫയല്‍ കണ്ടുപിടിച്ചു്, തുറക്കുക ക്ലിക്ക് ചെയ്യുക, "
-"എന്നിട്ട് അടയ്ക്കുക."
-
-#: wiki.xhp#par_id4008911.help.text
-msgid "Close %PRODUCTNAME, and close also the Quickstarter if enabled."
-msgstr ""
-"%PRODUCTNAME അടയ്ക്കുക, ക്വിക്ക്സ്റ്റാര്‍ട്ടര്‍ സജ്ജമെങ്കില്‍ അതും "
-"അടയ്ക്കുക."
-
-#: wiki.xhp#par_id265511.help.text
-msgid ""
-"Restart the software, open a text document, then choose <item "
-"type=\"menuitem\">Tools - Options - Internet - MediaWiki</item> to enter your "
-"Wiki settings. See \"To Connect To a Wiki\" below."
-msgstr ""
-"സോഫ്റ്റ്‌വെയര്‍ വീണ്ടും ആരംഭിക്കുക, ഒരു ടെക്സ്റ്റ് രേഖ തുറക്കുക, ശേഷം "
-"നിങ്ങളുടെ വിക്കി സജ്ജീകരണങ്ങള്‍ നല്‍കുന്നതിനായി <item "
-"type=\"menuitem\">ഉപകരണങ്ങള്‍ - ഉപാധികള്‍ - ഇന്റര്‍നെറ്റ് - മീഡിയാവിക്കി "
-"</item> തെരഞ്ഞെടുക്കുക. താഴെകൊടുത്തിരിക്കുന്ന \"ഒരു വിക്കിയിലേക്ക് കണക്ട് "
-"ചെയ്യുന്നതിനു്\" കാണുക."
-
-#: wiki.xhp#hd_id3569444.help.text
-msgid "To Remove the @WIKIEXTENSIONPRODUCTNAME@"
-msgstr "@WIKIEXTENSIONPRODUCTNAME@ നീക്കം ചെയ്യുന്നതിനു്"
-
-#: wiki.xhp#par_id2655110.help.text
-msgctxt "wiki.xhp#par_id2655110.help.text"
-msgid ""
-"In a Writer window, choose <item type=\"menuitem\">Tools - Extension "
-"Manager</item>."
-msgstr ""
-"ഒരു റൈറ്റര്‍ ജാലകത്തില്‍, <item type=\"menuitem\">ഉപകരണങ്ങള്‍ - "
-"എക്സ്റ്റെന്‍ഷന്‍ മാനേജര്‍</item> തെരഞ്ഞെടുക്കുക"
-
-#: wiki.xhp#par_id9504379.help.text
-msgid "Click the plus sign (+) in front of My Extensions."
-msgstr ""
-"എക്സ്റ്റെന്‍ഷനുകളുടെ മുമ്പിലുള്ള പ്ലസ് ചിഹ്നത്തില്‍ (+) ക്ലിക്ക് ചെയ്യുക."
-
-#: wiki.xhp#par_id8431348.help.text
-msgid "Select the extension, click Remove, and then click Close."
-msgstr ""
-"എക്സ്റ്റെന്‍ഷന്‍ തെരഞ്ഞെടുത്തു്, നീക്കം ചെയ്യുക ക്ലിക്ക് ചെയ്യുക, ശേഷം "
-"അടയ്ക്കുക ക്ലിക്ക് ചെയ്യുക."
-
-#: wiki.xhp#hd_id5316019.help.text
-msgid "To Connect to a Wiki"
-msgstr "ഒരു വിക്കിയിലേക്ക് കണക്ട് ചെയ്യുന്നതിനു്"
-
-#: wiki.xhp#par_id2381969.help.text
-msgid ""
-"Note: You can store your user name and password for all respective dialogs "
-"inside %PRODUCTNAME. The password will be stored in a secure way, where "
-"access is maintained by a master password. To enable the master password, "
-"choose <item type=\"menuitem\">Tools - Options - %PRODUCTNAME - "
-"Security</item>."
-msgstr ""
-"കുറിപ്പു്: നിങ്ങള്‍ക്കു് എല്ലാ ഡയലോഗുകള്‍ക്കുമുള്ള ഉപയോക്തൃനാമവും "
-"രഹസ്യവാക്കും %PRODUCTNAME-ല്‍ സൂക്ഷിക്കുവാന്‍ സാധിക്കുന്നു. രഹസ്യവാക്ക് "
-"സുരക്ഷിതമായി സൂക്ഷിക്കുന്നു, ഇവിടെ പ്രവേശനം ഒരു പ്രധാന രഹസ്യവാക്ക് "
-"ഉപയോഗിച്ചു് മാത്രമേ സാധ്യമാകൂ. പ്രധാന രഹസ്യവാക്ക് സജ്ജമാക്കുന്നതിനായി <item "
-"type=\"menuitem\">ഉപകരണങ്ങള്‍ - ഉപാധികള്‍ - %PRODUCTNAME - സുരക്ഷ</item> "
-"തെരഞ്ഞെടുക്കുക."
-
-#: wiki.xhp#par_id3751640.help.text
-msgid ""
-"Note: If you connect to the web using a proxy server, enter the proxy "
-"information to <item type=\"menuitem\">Tools - Options - Internet - "
-"Proxy</item>, and restart the software."
-msgstr ""
-"കുറിപ്പു്: നിങ്ങള്‍ വെബിലേക്ക് ഒരു പ്രോക്സി സര്‍വര്‍ വഴിയാണു് കണക്ട് "
-"ചെയ്യുന്നതെങ്കില്‍, <item type=\"menuitem\">Tools - Options - Internet - "
-"Proxy</item>, and restart the software."
-
-#: wiki.xhp#par_id9533677.help.text
-msgid ""
-"Open a Writer document, and choose <item type=\"menuitem\">Tools - Options - "
-"Internet - MediaWiki</item>."
-msgstr ""
-"ഒരു റൈറ്റര്‍ രേഖ തുറന്നു് <item type=\"menuitem\">ഉപകരണങ്ങള്‍ - ഉപാധികള്‍ - "
-"ഇന്റര്‍നെറ്റ് - മീഡിയാവിക്കി</item> തെരഞ്ഞെടുക്കുക."
-
-#: wiki.xhp#par_id368968.help.text
-msgid ""
-"In the <link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\">Options</link> "
-"dialog, click Add."
-msgstr ""
-"<link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\">ഉപാധികള്‍</link> എന്ന "
-"ഡയലോഗിലുള്ള ചേര്‍ക്കുക ക്ലിക്ക് ചെയ്യുക."
-
-#: wiki.xhp#par_id6962187.help.text
-msgid ""
-"In the <link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> "
-"dialog, enter the account information for the Wiki."
-msgstr ""
-"<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">മീഡിയാവിക്കി</link> "
-"ഡയലോഗില്‍, വിക്കിയുടെ അക്കൌണ്ട വിവരം നല്‍കുക."
-
-#: wiki.xhp#par_id5328836.help.text
-msgid ""
-"In the URL textbox, enter the address of a Wiki that you want to connect to."
-msgstr ""
-"നിങ്ങള്‍ക്കു് കണക്ട് ചെയ്യേണ്ട വിക്കിയുടെ വിലാസം യുആര്‍എല്‍ "
-"ടെക്സ്റ്റ്ബോക്സില്‍ നല്‍കുക."
-
-#: wiki.xhp#par_id389416.help.text
-msgid "You can copy the URL from a web browser and paste it into the textbox."
-msgstr ""
-"ഒരു വെബ് ബ്രൌസറില്‍ നിന്നും യുആര്‍എല്‍ പകര്‍ത്തി ടെക്സ്റ്റ്ബോക്സിലേക്ക് "
-"ഒട്ടിക്കുക."
-
-#: wiki.xhp#par_id5906552.help.text
-msgid "In the Username box, enter your user ID for your Wiki account."
-msgstr ""
-"ഉപയോക്തൃനാമത്തിനുള്ള ബോക്സില്‍, നിങ്ങളുടെ വിക്കി അക്കൌണ്ടിന്റെ യൂസര്‍ ID "
-"നല്‍കുക."
-
-#: wiki.xhp#par_id9297158.help.text
-msgid ""
-"If the Wiki allows anonymous write access, you can leave the Username and "
-"Password boxes empty."
-msgstr ""
-"എഴുതുവാനുള്ള അജ്ഞാതമായ അനുമതി വിക്കി അനുവദിക്കുന്നെങ്കില്‍, "
-"ഉപയോക്തൃനാമവുംരഹസ്യവാക്കും നല്‍കേണ്ടതില്ല."
-
-#: wiki.xhp#par_id8869594.help.text
-msgid ""
-"In the Password box, enter the password for your Wiki account, then click "
-"OK."
-msgstr ""
-"രഹസ്യവാക്കിനുള്ള ബോക്സില്‍, വിക്കി അക്കൌണ്ടിന്റെ രഹസ്യവാക്ക്യം നല്‍കി, ശരി "
-"ക്ലിക്ക് ചെയ്യുക."
-
-#: wiki.xhp#par_id292062.help.text
-msgid ""
-"Optionally enable \"Save password\" to save the password between sessions. A "
-"master password is used to maintain access to all saved passwords. Choose "
-"<item type=\"menuitem\">Tools - Options - %PRODUCTNAME - Security</item> to "
-"enable the master password. \"Save password\" is unavailable when the master "
-"password is not enabled."
-msgstr ""
-"കൂടാതെ സെഷനുകളുടെ ഇടയില്‍ രഹസ്യവാക്കു് സൂക്ഷിക്കുന്നതിനായി ആവശ്യമെങ്കില്‍ "
-"മാത്രം എന്ന രീതിയില്‍ \"രഹസ്യവാക്ക് സൂക്ഷിക്കുക\" പ്രവര്‍ത്തന സജ്ജമാക്കുക. "
-"എല്ലാ രഹസ്യവാക്കുകളും കൈകാര്യം ചെയ്യുന്നതിനായി ഒരു പ്രധാന രഹസ്യവാക്ക് "
-"ആവശ്യമുണ്ടു്. ഇതു് സജ്ജമാക്കുന്നതിനായി <item type=\"menuitem\">ഉപകരണങ്ങള്‍ - "
-"ഉപാധികള്‍ - %PRODUCTNAME - സുരക്ഷ</item> തെരഞ്ഞെടുക്കുക. ഈ രഹസ്യവാക്ക് "
-"സജ്ജമല്ലാത്തപ്പോള്‍, \"രഹസ്യവാക്ക് സൂക്ഷിക്കുക\" ലഭ്യമല്ല."
-
-#: wiki.xhp#hd_id7044892.help.text
-msgid "To Create a New Wiki Page"
-msgstr "ഒരു പുതിയ വിക്കി താള്‍ ഉണ്ടാക്കുന്നതിനു്"
-
-#: wiki.xhp#par_id3514206.help.text
-msgid "Open a Writer document."
-msgstr "ഒരു റൈറ്റര്‍ രേഖ തുറക്കുക."
-
-#: wiki.xhp#par_id944853.help.text
-msgid ""
-"Write the content of the Wiki page. You can use formatting like text "
-"formats, headings, footnotes, and more. See the <link "
-"href=\"@WIKIEXTENSIONID@/wikiformats.xhp\">list of supported formats</link>."
-msgstr ""
-"വിക്കി താളിലുള്ളവ എഴുതുക. ടെക്സ്റ്റ് ശൈലി, തലക്കെട്ടുകള്‍, അടിക്കുറിപ്പുകള്‍ "
-"എന്നിങ്ങനെയുള്ള രീതികള്‍ നിങ്ങള്‍ക്കുപയോഗിക്കാം. <link "
-"href=\"@WIKIEXTENSIONID@/wikiformats.xhp\">പിന്തുണയ്ക്കുന്ന രീതികള്‍</link> "
-"കാണുക."
-
-#: wiki.xhp#par_id4566484.help.text
-msgid "Choose <item type=\"menuitem\">File - Send - To MediaWiki</item>."
-msgstr ""
-"<item type=\"menuitem\">ഫയല്‍ - അയയ്ക്കുത - മീഡിയാവിക്കിയിലേക്ക്</item> "
-"തെരഞ്ഞെടുക്കുക."
-
-#: wiki.xhp#par_id228278.help.text
-msgid ""
-"In the <link href=\"@WIKIEXTENSIONID@/wikisend.xhp\">Send to MediaWiki</link> "
-"dialog, specify the settings for your entry."
-msgstr ""
-"<link href=\"@WIKIEXTENSIONID@/wikisend.xhp\">മീഡിയാവിക്കിയിലേക്ക് "
-"അയയ്ക്കുക</link> ഡയലോഗില്‍ നിങ്ങളുടെ എന്‍ട്രിയ്ക്കുള്ള സജ്ജീകരണങ്ങള്‍ "
-"വ്യക്തമാക്കുക."
-
-#: wiki.xhp#par_id2564165.help.text
-msgid "<emph>MediaWiki server</emph>: Select the Wiki."
-msgstr "<emph>മീഡിയാവിക്കി സര്‍വര്‍</emph>: വിക്കി തെരഞ്ഞെടുക്കുക."
-
-#: wiki.xhp#par_id5566576.help.text
-msgid ""
-"<emph>Title</emph>: Type the title of your page. Type the title of an "
-"existing page to overwrite the page with your current text document. Type a "
-"new title to create a new page on the Wiki."
-msgstr ""
-"<emph>തലക്കെട്ട്</emph>: നിങ്ങളുടെ താളിന്റെ തലക്കെട്ട് ടൈപ്പ് ചെയ്യുക. "
-"ഇപ്പോഴുള്ള് ടെക്സ്റ്റ് രേഖ ഉപയോഗിച്ചു് നിലവിലുള്ള താള്‍ "
-"തിരുത്തിസൂക്ഷിക്കുന്നതിനായി, ആ താളിന്റെ തലക്കെട്ട് നല്‍കുക. വിക്കിയില്‍ "
-"പുതിയൊരു താളുണ്ടാക്കുന്നതിനായി പുതിയ തലക്കെട്ട് നല്‍കുക."
-
-#: wiki.xhp#par_id9688711.help.text
-msgid "<emph>Summary</emph>: Enter an optional short summary of your page."
-msgstr "<emph>വിവരണം</emph>: നിങ്ങളുടെ താളിനുള്ള ലഘു വിവരണം നല്‍കുക."
-
-#: wiki.xhp#par_id4123661.help.text
-msgid ""
-"<emph>This is a minor edit</emph>: Check this box to mark the uploaded page "
-"as a minor edit of the already existing page with the same title."
-msgstr ""
-"<emph>ഇതൊരു ചെറിയ തിരുത്തലാണു്</emph>: ഒരേ തലക്കെട്ടില്‍ നിലവിലുള്ള ഒരു "
-"താളിനുള്ള ഒരു ചെറിയ തിരുത്തലായി അപ്‌ലോഡ് ചെയ്ത താള്‍ "
-"അടയാളപ്പെടുത്തുന്നതിനായി ഈ ബോക്സ് ചെക്ക് ചെയ്യുക."
-
-#: wiki.xhp#par_id452284.help.text
-msgid ""
-"<emph>Show in web browser</emph>: Check this box to open your system web "
-"browser and show the uploaded Wiki page."
-msgstr ""
-"<emph>വെബ് ബ്രൌസറില്‍ കാണിക്കുക</emph>: നിങ്ങളുടെ സിസ്റ്റം വെബ് ബ്രൌസര്‍ "
-"തുറന്നു് അപ്‌ലോഡ് ചെയ്ത വിക്കി താള്‍ കാണിക്കുന്നതിനായി ഈ ബോക്സ് ചെക്ക് "
-"ചെയ്യുക."
-
-#: wiki.xhp#par_id8346812.help.text
-msgid "Click Send."
-msgstr "അയയ്ക്കുക ക്ലിക്ക് ചെയ്യുക."
-
-#: wikiaccount.xhp#tit.help.text
-msgctxt "wikiaccount.xhp#tit.help.text"
-msgid "MediaWiki"
-msgstr "മീഡിയാവിക്കി"
-
-#: wikiaccount.xhp#hd_id960722.help.text
-msgctxt "wikiaccount.xhp#hd_id960722.help.text"
-msgid "MediaWiki"
-msgstr "മീഡീയാവിക്കി"
-
-#: wikiaccount.xhp#par_id4571672.help.text
-msgid ""
-"Use the MediaWiki dialog to add or edit your MediaWiki account settings."
-msgstr ""
-"നിങ്ങളുടെ മീഡിയാവിക്കി അക്കൌണ്ട് സജ്ജീകരണങ്ങള്‍ ചേര്‍ക്കുന്നതിനോ "
-"ചിട്ടപ്പെടുത്തുന്നതിനോ മീഡിയാവിക്കി ഡയലോഗ് ഉപയോഗിക്കുക."
-
-#: wikiaccount.xhp#par_id7631458.help.text
-msgid ""
-"<ahelp hid=\".\" visibility=\"hidden\">Enter the URL of a MediaWiki server, "
-"starting with http://</ahelp>"
-msgstr ""
-"<ahelp hid=\".\" visibility=\"hidden\">http:// എന്നാരംഭിക്കുന്ന ഒരു മീഡിയാവിക്കി "
-"സര്‍വറിനുള്ള യുആര്‍എല്‍ നല്‍കുക</ahelp>"
-
-#: wikiaccount.xhp#par_id7862483.help.text
-msgid ""
-"<ahelp hid=\".\" visibility=\"hidden\">Enter your user name on the MediaWiki "
-"server. Leave empty for anonymous access.</ahelp>"
-msgstr ""
-"<ahelp hid=\".\" visibility=\"hidden\">മീഡിയാവിക്കിസര്‍വറില്‍ നിങ്ങളുടെ "
-"ഉപയോക്തൃനാമം നല്‍കുക. അജ്ഞാതമായ പ്രവേശനത്തിനു് ഇതു് നല്‍കേണ്ടതില്ല.</ahelp>"
-
-#: wikiaccount.xhp#par_id1113010.help.text
-msgid ""
-"<ahelp hid=\".\" visibility=\"hidden\">Enter your password on the MediaWiki "
-"server. Leave empty for anonymous access.</ahelp>"
-msgstr ""
-"<ahelp hid=\".\" visibility=\"hidden\">മീഡിയാവിക്കി സര്‍വറില്‍ നിങ്ങളുടെ "
-"രഹസ്യവാക്ക് നല്‍കുക. അജ്ഞാതമായി പ്രവേശിക്കുന്നതിനായി ഇതു് "
-"ശൂന്യമായിടുക.</ahelp>"
-
-#: wikiaccount.xhp#par_id656758.help.text
-msgid ""
-"<ahelp hid=\".\" visibility=\"hidden\">Enable to store your password between "
-"sessions. The master password must be enabled, see <item "
-"type=\"menuitem\">Tools - Options - %PRODUCTNAME - Security</item>.</ahelp>"
-msgstr ""
-"<ahelp hid=\".\" visibility=\"hidden\">സെഷനുകളില്‍ നിങ്ങളുടെ രഹസ്യവാക്ക് "
-"സൂക്ഷിക്കുന്നതിനായി പ്രവര്‍ത്തന സജ്ജമാക്കുക. പ്രധാന രഹസ്യവാക്ക് സജ്ജമാക്കുക, "
-"<item type=\"menuitem\">ഉപകരണങ്ങള്‍ - ഉപാധികള്‍ - %PRODUCTNAME - "
-"സുരക്ഷ</item>.</ahelp> കാണുക."
-
-#: wikiaccount.xhp#par_id3112582.help.text
-msgid ""
-"Enter the Internet address of a Wiki server in a format like "
-"http://wiki.services.openoffice.org/wiki or copy the URL from a web browser."
-msgstr ""
-"http://wiki.services.openoffice.org/wiki എന്ന രീതിയില്‍ ഒരു വിക്കി "
-"സര്‍വറിനുള്ള ഇന്റര്‍നെറ്റ് വിലാസം നല്‍കുക അല്ലെങ്കില്‍ ഒരു വെബ് ബ്രൌസറില്‍ "
-"നിന്നും യുആര്‍എല്‍ പകര്‍ത്തുക."
-
-#: wikiaccount.xhp#par_id628070.help.text
-msgid ""
-"If the Wiki allows anonymous access, you can leave the account text boxes "
-"empty. Else enter your user name and password."
-msgstr ""
-"വിക്കി അജ്ഞാതമായ അനുമതി അനുവദിക്കുന്നുണ്ടെങ്കില്‍, അക്കൌണ്ട് ടെക്സ്റ്റ് "
-"ബോക്സുകള്‍ ശൂന്യമായിടുക. അല്ലെങ്കില്‍, ഉപയോക്തൃനാമവും രഹസ്യവാക്കും നല്‍കുക."
-
-#: wikiaccount.xhp#par_id9046601.help.text
-msgid ""
-"If you have enabled the master password feature on the Security tab page of "
-"the Tools - Options - %PRODUCTNAME dialog, then the software can store your "
-"password and automatically insert the data where necessary. Enable the \"Save "
-"password\" checkbox to store your password."
-msgstr ""
-"ഉപകരണങ്ങള്‍ - ഉപാധികള്‍ - %PRODUCTNAME ഡയലോഗിന്റെ സുരക്ഷ റ്റാബിനുള്ള "
-"താളില്‍പ്രധാന രഹസ്യവാക്കിനുള്ള വിശേഷത സജ്ജമാക്കിയിട്ടുണ്ടെങ്കില്‍, "
-"സോഫ്റ്റ്‌വെയര്‍ നിങ്ങളുടെ രഹസ്യവാക്ക് സൂക്ഷിച്ചു്, ആവശ്യമുള്ളപ്പോള്‍ ഡേറ്റാ "
-"സ്വയം ചേര്‍ക്കുന്നു. നിങ്ങളുടെ രഹസ്യവാക്ക് സൂക്ഷിക്കുന്നതിനായി \"രഹസ്യവാക്ക് "
-"സൂക്ഷിക്കുക\" പ്രവര്‍ത്തന സജ്ജമാക്കുക."
-
-#: wikiformats.xhp#tit.help.text
-msgctxt "wikiformats.xhp#tit.help.text"
-msgid "MediaWiki Formats"
+#: mediawiki/help/wikiformats.xhp#tit
+msgid  "MediaWiki Formats"
 msgstr "മീഡിയാവിക്കി ശൈലികള്‍"
 
-#: wikiformats.xhp#hd_id3743095.help.text
-msgctxt "wikiformats.xhp#hd_id3743095.help.text"
-msgid "MediaWiki Formats"
+#: mediawiki/help/wikiformats.xhp#hd_id3743095
+msgid  "MediaWiki Formats"
 msgstr "മീഡിയാവിക്കി ശൈലികള്‍"
 
-#: wikiformats.xhp#par_id8654133.help.text
-msgid ""
-"The following list gives an overview of the text formats that the "
-"@WIKIEXTENSIONPRODUCTNAME@ can upload to the Wiki server."
-msgstr ""
-"@WIKIEXTENSIONPRODUCTNAME@-നു് വിക്കി സര്‍വറിലേക്ക് അപ്‌ലോഡ് ചെയ്യുവാന്‍ "
-"സാധിക്കുന്ന ടെക്സ്റ്റ് ശൈലികളുടെ ഒരു അവലോകനം ഈ പട്ടിക നല്‍കുന്നു."
-
-#: wikiformats.xhp#par_id5630664.help.text
-msgid ""
-"The OpenDocument format used by Writer and the WikiMedia format are quite "
-"different. Only a subset of all features can be transformed from one format "
-"to the other."
+#: mediawiki/help/wikiformats.xhp#par_id8654133
+msgid  "The following list gives an overview of the text formats that the @WIKIEXTENSIONPRODUCTNAME@ can upload to the Wiki server."
 msgstr ""
 
-#: wikiformats.xhp#hd_id7178868.help.text
-msgid "Headings"
+#: mediawiki/help/wikiformats.xhp#par_id5630664
+msgid  "The OpenDocument format used by Writer and the WikiMedia format are quite different. Only a subset of all features can be transformed from one format to the other."
+msgstr ""
+
+#: mediawiki/help/wikiformats.xhp#hd_id7178868
+msgid  "Headings"
 msgstr "തലക്കെട്ടുകള്‍"
 
-#: wikiformats.xhp#par_id508133.help.text
-msgid ""
-"Apply a heading paragraph style to the headings in your Writer document. The "
-"Wiki will show the heading styles of the same outline level, formatted as "
-"defined by the Wiki engine."
+#: mediawiki/help/wikiformats.xhp#par_id508133
+msgid  "Apply a heading paragraph style to the headings in your Writer document. The Wiki will show the heading styles of the same outline level, formatted as defined by the Wiki engine."
 msgstr ""
 
-#: wikiformats.xhp#hd_id7217627.help.text
-msgid "Hyperlinks"
+#: mediawiki/help/wikiformats.xhp#hd_id7217627
+msgid  "Hyperlinks"
 msgstr "ഹൈപ്പര്‍ലിങ്കുകള്‍"
 
-#: wikiformats.xhp#par_id3735465.help.text
-msgid ""
-"Native OpenDocument hyperlinks are transformed into \"external\" Wiki links. "
-"Therefore, the built-in linking facility of OpenDocument should only be used "
-"to create links that point to other sites outside the Wiki web. For "
-"creating Wiki links that point to other subjects of the same Wiki domain, "
-"use Wiki links."
+#: mediawiki/help/wikiformats.xhp#par_id3735465
+msgid  "Native OpenDocument hyperlinks are transformed into "external" Wiki links. Therefore, the built-in linking facility of OpenDocument should only be used to create links that point to other sites outside the Wiki web. For creating Wiki links that point to other subjects of the same Wiki domain, use Wiki links."
 msgstr ""
 
-#: wikiformats.xhp#hd_id941190.help.text
-msgid "Lists"
+#: mediawiki/help/wikiformats.xhp#hd_id941190
+msgid  "Lists"
 msgstr "പട്ടികകള്‍"
 
-#: wikiformats.xhp#par_id8942838.help.text
-msgid ""
-"Lists can reliably be exported when the whole list uses a consistent list "
-"style. Use the Numbering or Bullets icon to generate a list in Writer. If "
-"you need a list without numbering or bullets, use Format - Bullets and "
-"Numbering to define and apply the respective list style."
+#: mediawiki/help/wikiformats.xhp#par_id8942838
+msgid  "Lists can reliably be exported when the whole list uses a consistent list style. Use the Numbering or Bullets icon to generate a list in Writer. If you need a list without numbering or bullets, use Format - Bullets and Numbering to define and apply the respective list style."
 msgstr ""
 
-#: wikiformats.xhp#hd_id7026886.help.text
-msgid "Paragraphs"
+#: mediawiki/help/wikiformats.xhp#hd_id7026886
+msgid  "Paragraphs"
 msgstr "ഖണ്ഡികകള്‍"
 
-#: wikiformats.xhp#hd_id4436475.help.text
-msgid "Alignment"
+#: mediawiki/help/wikiformats.xhp#hd_id4436475
+msgid  "Alignment"
 msgstr "അലൈന്‍മെന്റ്"
 
-#: wikiformats.xhp#par_id376598.help.text
-msgid ""
-"Explicit text alignment should not be used in Wiki articles. Nevertheless, "
-"text alignment is supported for left, centered, and right alignment of text."
+#: mediawiki/help/wikiformats.xhp#par_id376598
+msgid  "Explicit text alignment should not be used in Wiki articles. Nevertheless, text alignment is supported for left, centered, and right alignment of text."
 msgstr ""
 
-#: wikiformats.xhp#hd_id7486190.help.text
-msgid "Pre-formatted text"
+#: mediawiki/help/wikiformats.xhp#hd_id7486190
+msgid  "Pre-formatted text"
 msgstr "പ്രീ-ഫോര്‍മാറ്റഡ് ടെക്സ്റ്റ്"
 
-#: wikiformats.xhp#par_id1459395.help.text
-msgid ""
-"A paragraph style with a fixed-width font is transformed as pre-formatted "
-"text. Pre-formatted text is shown on the Wiki with a border around the text."
+#: mediawiki/help/wikiformats.xhp#par_id1459395
+msgid  "A paragraph style with a fixed-width font is transformed as pre-formatted text. Pre-formatted text is shown on the Wiki with a border around the text."
 msgstr ""
 
-#: wikiformats.xhp#hd_id4834131.help.text
-msgid "Character styles"
+#: mediawiki/help/wikiformats.xhp#hd_id4834131
+msgid  "Character styles"
 msgstr "അക്ഷരത്തിന്റെ ശൈലികള്‍"
 
-#: wikiformats.xhp#par_id6397595.help.text
-msgid ""
-"Character styles modify the appearance of parts of a paragraph. The "
-"transformation supports bold, italics, bold/italics, subscript and "
-"superscript. All fixed width fonts are transformed into the Wiki typewriter "
-"style."
+#: mediawiki/help/wikiformats.xhp#par_id6397595
+msgid  "Character styles modify the appearance of parts of a paragraph. The transformation supports bold, italics, bold/italics, subscript and superscript. All fixed width fonts are transformed into the Wiki typewriter style."
 msgstr ""
 
-#: wikiformats.xhp#hd_id5152745.help.text
-msgid "Footnotes"
+#: mediawiki/help/wikiformats.xhp#hd_id5152745
+msgid  "Footnotes"
 msgstr "അടിക്കുറിപ്പുകള്‍"
 
-#: wikiformats.xhp#par_id5238196.help.text
-msgid ""
-"Note: The transformation uses the new style of footnotes with <ref> and "
-"<references> tags that requires the Cite.php extension to be installed into "
-"MediaWiki. If those tags occur as plain text in the transformation result, "
-"ask the Wiki administrator to install this extension."
+#: mediawiki/help/wikiformats.xhp#par_id5238196
+msgid  "Note: The transformation uses the new style of footnotes with <ref> and <references> tags that requires the Cite.php extension to be installed into MediaWiki. If those tags occur as plain text in the transformation result, ask the Wiki administrator to install this extension."
 msgstr ""
 
-#: wikiformats.xhp#hd_id9405499.help.text
-msgid "Images"
+#: mediawiki/help/wikiformats.xhp#hd_id9405499
+msgid  "Images"
 msgstr "ചിത്രങ്ങള്‍"
 
-#: wikiformats.xhp#par_id3541673.help.text
-msgid ""
-"Images cannot be exported by a transformation producing a single file of "
-"Wiki text. However, if the image is already uploaded to the target Wiki "
-"domain (e. g. WikiMedia Commons), then the transformation produces a valid "
-"image tag that includes the image. Image captions are also supported."
+#: mediawiki/help/wikiformats.xhp#par_id3541673
+msgid  "Images cannot be exported by a transformation producing a single file of Wiki text. However, if the image is already uploaded to the target Wiki domain (e. g. WikiMedia Commons), then the transformation produces a valid image tag that includes the image. Image captions are also supported."
 msgstr ""
 
-#: wikiformats.xhp#hd_id2162236.help.text
-msgid "Tables"
+#: mediawiki/help/wikiformats.xhp#hd_id2162236
+msgid  "Tables"
 msgstr "ടേബിളുകള്‍"
 
-#: wikiformats.xhp#par_id3037202.help.text
-msgid ""
-"Simple tables are supported well. Table headers are translated into "
-"corresponding Wiki style table headers. However, custom formatting of table "
-"borders, column sizes and background colors is ignored."
+#: mediawiki/help/wikiformats.xhp#par_id3037202
+msgid  "Simple tables are supported well. Table headers are translated into corresponding Wiki style table headers. However, custom formatting of table borders, column sizes and background colors is ignored."
 msgstr ""
 
-#: wikiformats.xhp#hd_id2954496.help.text
-msgid "Joined Cells"
+#: mediawiki/help/wikiformats.xhp#hd_id2954496
+msgid  "Joined Cells"
 msgstr "യോജിച്ച സെല്ലുകള്‍"
 
-#: wikiformats.xhp#par_id8253730.help.text
-msgid ""
-"OpenDocument and especially OpenOffice.org represent tables that have joined "
-"cells that span rows as tables with nested tables. In contrast, the wiki "
-"model of table is to declare column and row spans for such joined cells. "
+#: mediawiki/help/wikiformats.xhp#par_id8253730
+msgid  "OpenDocument and especially OpenOffice.org represent tables that have joined cells that span rows as tables with nested tables. In contrast, the wiki model of table is to declare column and row spans for such joined cells. "
 msgstr ""
 
-#: wikiformats.xhp#par_id8163090.help.text
-msgid ""
-"If only columns of the same row are joined, the result of the transformation "
-"resembles the source document very well."
+#: mediawiki/help/wikiformats.xhp#par_id8163090
+msgid  "If only columns of the same row are joined, the result of the transformation resembles the source document very well."
 msgstr ""
 
-#: wikiformats.xhp#hd_id425122.help.text
-msgid "Borders"
+#: mediawiki/help/wikiformats.xhp#hd_id425122
+msgid  "Borders"
 msgstr "അതിരുകള്‍"
 
-#: wikiformats.xhp#par_id1831110.help.text
-msgid ""
-"Irrespective of custom table styles for border and background, a table is "
-"always exported as \"<emph>prettytable\"</emph>, which renders in the Wiki "
-"engine with simple borders and bold header."
+#: mediawiki/help/wikiformats.xhp#par_id1831110
+msgid  "Irrespective of custom table styles for border and background, a table is always exported as "\<emph\>prettytable"\</emph\>, which renders in the Wiki engine with simple borders and bold header."
 msgstr ""
 
-#: wikiformats.xhp#hd_id6255073.help.text
-msgid "Charset and special characters"
+#: mediawiki/help/wikiformats.xhp#hd_id6255073
+msgid  "Charset and special characters"
 msgstr "ക്യാര്‍സെറ്റും പ്രത്യേക അക്ഷരങ്ങളും"
 
-#: wikiformats.xhp#par_id8216193.help.text
-msgid ""
-"The charset of the transformation result is fixed to UTF-8. Depending on "
-"your system, this might not be the default charset. This might cause "
-"\"special characters\" to look broken when viewed with default settings. "
-"However, you can switch your editor to UTF-8 encoding to fix this. If your "
-"editor does not support switching the encoding, you can display the result "
-"of the transformation in the Firefox browser and switch the encoding to "
-"UTF-8 there. Now, you can cut and paste the transformation result to your "
-"program of choice."
+#: mediawiki/help/wikiformats.xhp#par_id8216193
+msgid  "The charset of the transformation result is fixed to UTF-8. Depending on your system, this might not be the default charset. This might cause "special characters" to look broken when viewed with default settings. However, you can switch your editor to UTF-8 encoding to fix this. If your editor does not support switching the encoding, you can display the result of the transformation in the Firefox browser and switch the encoding to UTF-8 there. Now, you can cut and paste the transformation result to your program of choice."
 msgstr ""
 
-#: wikisend.xhp#tit.help.text
-msgctxt "wikisend.xhp#tit.help.text"
-msgid "Send to MediaWiki"
-msgstr "മീഡിയാവിക്കിയിലേക്ക് അയയ്ക്കുക"
-
-#: wikisend.xhp#hd_id108340.help.text
-msgctxt "wikisend.xhp#hd_id108340.help.text"
-msgid "Send to MediaWiki"
-msgstr "മീഡിയാവിക്കിയിലേക്ക് അയയ്ക്കുക"
-
-#: wikisend.xhp#par_id1743827.help.text
-msgid ""
-"In the Send to MediaWiki dialog, specify the settings for your current Wiki "
-"upload."
+#: mediawiki/help/wiki.xhp#bm_id3154408
+msgid  "\<bookmark_value\>Wiki;@WIKIEXTENSIONPRODUCTNAME@\</bookmark_value\>\<bookmark_value\>@WIKIEXTENSIONPRODUCTNAME@\</bookmark_value\>\<bookmark_value\>extensions;MediaWiki\</bookmark_value\>"
 msgstr ""
-"മീഡിയാവിക്കിയിലേക്ക് അയയ്ക്കുക എന്ന ഡയലോഗില്‍, നിങ്ങളുടെ ഇപ്പോഴുള്ള വിക്കി "
-"അപ്‌ലോഡില്‍ സജ്ജീകരണങ്ങള്‍ വ്യക്തമാക്കുക."
 
-#: wikisend.xhp#par_id664082.help.text
-msgid ""
-"<ahelp hid=\".\">Select the MediaWiki server where you want to publish your "
-"document. Click Add to add a new server to the list.</ahelp>"
-msgstr ""
-"<ahelp hid=\".\">നിങ്ങളുടെ രേഖ പ്രസിദ്ധീകരിക്കുന്നതിനുള്ള മീഡിയാസര്‍വര്‍ "
-"തെരഞ്ഞെടുക്കുക.പട്ടികയിലേക്ക് പുതിയൊരു സര്‍വര്‍ ചേര്‍ക്കുന്നതിനായി "
-"ചേര്‍ക്കുക ക്ലിക്ക് ചെയ്യുക.</ahelp>"
-
-#: wikisend.xhp#par_id2794885.help.text
-msgid ""
-"<ahelp hid=\".\">Enter the title of your Wiki entry. This is the top heading "
-"of your Wiki entry. For a new entry, the title must be unique on this Wiki. "
-"If you enter an existing title, your upload will overwrite the existing Wiki "
-"entry.</ahelp>"
-msgstr ""
-"<ahelp hid=\".\">നിങ്ങളുടെ വിക്കി എന്‍ട്രിയ്ക്കുള്ള തലക്കെട്ട് നല്‍കുക. ഇതാണു് "
-"നിങ്ങളുടെ വിക്കി എന്‍ട്രിയുടെ മുകളിലുള്ള തലക്കെട്ട്. പുതിയ "
-"എന്‍ട്രിയ്ക്കായി, ഈ വിക്കിയില്‍ തലക്കെട്ട് ഒരു തവണമാത്രമേ ഉപയോഗിക്കുവാന്‍ "
-"പാടുള്ളൂ. നിലവിലുള്ള ഒരു തലക്കെട്ട് നല്‍കിയാല്‍, നിലവിലുള്ള ഒരു വിക്കി "
-"എന്‍ട്രി മാറ്റിയെഴതപ്പെടുന്നു.</ahelp>"
-
-#: wikisend.xhp#par_id2486342.help.text
-msgid ""
-"<ahelp hid=\".\">Enter an optional short summary or comment.</ahelp> See <link "
-"href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\">http://meta.wikimed"
-"ia.org/wiki/Help:Edit_summary</link>."
-msgstr ""
-"<ahelp hid=\".\">ഒരു ലഘു വിവരണം അല്ലെങ്കില്‍ അഭിപ്രായം നല്‍കുക "
-"(ആവശ്യമെങ്കില്‍).</ahelp> <link href=\"http://meta.wikimedia.org/wiki/Help:Ed"
-"it_summary\">http://meta.wikimedia.org/wiki/Help:Edit_summary</link> കാണുക."
-
-#: wikisend.xhp#par_id823999.help.text
-msgid ""
-"<emph>This is a minor edit</emph>: <ahelp hid=\".\">Check this box to mark the "
-"uploaded page as a minor edit of the already existing page with the same "
-"title.</ahelp>"
-msgstr ""
-"<emph>ഇതൊരു ചെറിയ തിരുത്തലാണു്</emph>: <ahelp hid=\".\">ഒരേ തലക്കെട്ടില്‍ "
-"നിലവിലുള്ള താളിനുള്ള ഒരു ചെറിയ തിരുത്തലായി അപ്‌ലോഡ് ചെയ്ത താള്‍ "
-"അടയാളപ്പെടുത്തുന്നതിനായി ഈ ബോക്സ് ചെക്ക് ചെയ്യുക.</ahelp>"
-
-#: wikisend.xhp#par_id6592913.help.text
-msgid ""
-"<emph>Show in web browser</emph>: <ahelp hid=\".\">Check this box to open your "
-"system web browser and show the uploaded Wiki page.</ahelp>"
-msgstr ""
-"<emph>വെബ് ബ്രൌസര്‍ കാണിക്കുക</emph>: <ahelp hid=\".\">നിങ്ങളുടെ സിസ്റ്റം വെബ് "
-"ബ്രൌസര്‍ തുറന്നു് അപ്‌ലോഡ് ചെയ്ത വിക്കി താള്‍ കാണിക്കുന്നതിനായി ഈ ബോക്സ് "
-"ചെക്ക് ചെയ്യുക.</ahelp>"
-
-#: wikisettings.xhp#tit.help.text
-msgctxt "wikisettings.xhp#tit.help.text"
-msgid "MediaWiki Options"
-msgstr "മീഡിയാവിക്കി ഉപാധികള്‍"
-
-#: wikisettings.xhp#hd_id6425672.help.text
-msgctxt "wikisettings.xhp#hd_id6425672.help.text"
-msgid "MediaWiki Options"
-msgstr "മീ‍ഡിയാവിക്കി ഉപാധികള്‍"
-
-#: wikisettings.xhp#par_id1188390.help.text
-msgid ""
-"You can add, edit and remove MediaWiki servers. Open the dialog by <item "
-"type=\"menuitem\">Tools - Options - Internet - MediaWiki</item>. "
-"Alternatively, choose <item type=\"menuitem\">Tools - Extension "
-"Manager</item>, select the @WIKIEXTENSIONPRODUCTNAME@, and click the Options "
-"button."
-msgstr ""
-"നിങ്ങള്‍ക്കു് മീഡിയാവിക്കി സര്‍വറുകള്‍ ചേര്‍ക്കുവാനും ചിട്ടപ്പെടുത്തുവാനും "
-"നീക്കം ചെയ്യുവാനും സാധിക്കുന്നു. <item type=\"menuitem\">ഉപകരണങ്ങള്‍ - "
-"ഉപാധികള്‍ - ഇന്റര്‍നെറ്റ് - മീഡിയാവിക്കി</item> വഴി ഡയലോഗ് തുറക്കുക. കൂടാതെ, "
-"<item type=\"menuitem\">ഉപകരണങ്ങള്‍ - എക്സ്റ്റെന്‍ഷന്‍മാനേജര്‍</item> "
-"തെരഞ്ഞെടുത്തു്, @WIKIEXTENSIONPRODUCTNAME@ തെരഞ്ഞെടുത്തു്, ഉപാധികള്‍ ബട്ടണ്‍ "
-"ക്ലിക്ക് ചെയ്യുക."
-
-#: wikisettings.xhp#par_id300607.help.text
-msgid ""
-"<ahelp hid=\".\">Click Add to add a new Wiki server.<br/>Select an entry and "
-"click Edit to edit the account settings.<br/>Select an entry and click "
-"Remove to remove the entry from the list.</ahelp>"
-msgstr ""
-"<ahelp hid=\".\">പുതിയൊരു വിക്കി സര്‍വര്‍ ചേര്‍ക്കുന്നതിനായി ചേര്‍ക്കുക "
-"ക്ലിക്ക് ചെയ്യുക.<br/>അക്കൌണ്ട് സജ്ജീകരണങ്ങളില്‍ മാറ്റം വരുത്തുന്നതിനായി "
-"എന്‍ട്രി തെരഞ്ഞെടുത്തു്, ചിട്ടപ്പെടുത്തുക ക്ലിക്ക് ചെയ്യുക.<br/>പട്ടികയില്‍ "
-"നിന്നും ഒരു എന്‍ട്രി നീക്കം ചെയ്യുന്നതിനായി അതു് തെരഞ്ഞെടുത്തു് നീക്കം "
-"ചെയ്യുക ക്ലിക്ക് ചെയ്യുക.</ahelp>"
-
-#: wikisettings.xhp#par_id9786065.help.text
-msgid ""
-"<ahelp hid=\".\" visibility=\"hidden\">Opens the MediaWiki dialog to add a new "
-"entry to the list.</ahelp>"
-msgstr ""
-"<ahelp hid=\".\" visibility=\"hidden\">പട്ടികയിലേക്ക് ഒരു പുതിയ എന്‍ട്രി "
-"നല്‍കുന്നതിനായി മീഡിയാവിക്കി ഡയലോഗ് തുറക്കുന്നു.</ahelp>"
-
-#: wikisettings.xhp#par_id3386333.help.text
-msgid ""
-"<ahelp hid=\".\" visibility=\"hidden\">Opens the MediaWiki dialog to edit the "
-"selected entry.</ahelp>"
-msgstr ""
-"<ahelp hid=\".\" visibility=\"hidden\">തെരഞ്ഞെടുത്ത എന്‍ട്രി "
-"ചിട്ടപ്പെടുത്തുന്നതിനായി മീഡിയാവിക്കി ഡയലോഗ് തുറക്കുന്നു.</ahelp>"
-
-#: wikisettings.xhp#par_id7285073.help.text
-msgid ""
-"<ahelp hid=\".\" visibility=\"hidden\">Removes the selected entry from the "
-"list.</ahelp>"
-msgstr ""
-"<ahelp hid=\".\" visibility=\"hidden\">പട്ടികയില്‍ നിന്നും തെരഞ്ഞെടുത്ത എന്‍ട്രി "
-"നീക്കം ചെയ്യുന്നു.</ahelp>"
-
-#: wikisettings.xhp#par_id1029084.help.text
-msgid ""
-"When you click Add or Edit, the <link "
-"href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">MediaWiki</link> dialog opens."
-msgstr ""
-"ചിട്ടപ്പെടുത്തുക അല്ലെങ്കില്‍ ചേര്‍ക്കുക ക്ലിക്ക് ചെയ്യുമ്പോള്‍, <link "
-"href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\">മീഡിയാവിക്കി</link> ഡയലോഗ് "
-"തുറക്കുന്നു"
-"X-Accelerator-Marker: ~\n"
-
-#: Addons.xcu#.Addons.AddonUI.OfficeMenuBarMerging.com.sun.star.wiki.S1.MenuItems.M2.Title.value.text
-msgid "To Media~Wiki..."
-msgstr "മീഡിയാ ~വിക്കിയിലേക്കു്"
-
-#: OptionsDialog.xcu#.OptionsDialog.Nodes.Internet.Leaves.com.sun.star.wiki.options.Label.value.text
-msgid "MediaWiki"
-msgstr "മീഡിയാ വിക്കി"
-"X-Accelerator-Marker: ~\n"
-
-#: WikiExtension.xcu#.WikiExtension.Strings.GeneralSendError.value.text
-msgid "The operation 'Send to MediaWiki' could not be completed successfully."
-msgstr ""
-"'മീഡിയവിക്കിയിലേക്കു് അയയ്ക്കുക' എന്ന പ്രക്രിയ പൂര്‍ണ്ണമായി വിജയകരമായില്ല."
-
-#: WikiExtension.xcu#.WikiExtension.Strings.NoWikiFilter.value.text
-msgid ""
-"The MediaWiki export filter cannot be found. Choose 'Tools-XML Filter "
-"Settings' to install the filter, or use the setup to install the component."
-msgstr ""
-"മീഡിയവിക്കി എക്സ്പോര്‍ട്ട് ഫില്‍‌റ്റര്‍ ലഭ്യമാക്കുവാന്‍ സാധിച്ചില്ല. "
-"ഫില്‍‌റ്റര്‍ ഇന്‍സ്റ്റോള്‍ ചെയ്യുന്നതിനായി 'Tools-XML ഫില്‍‌റ്റര്‍ "
-"ക്രമീകരണം', അല്ലെങ്കില്‍ ഘടകം ഇന്‍സ്റ്റോള്‍ ചെയ്യുവാനുള്ള സജ്ജീകരണം "
-"ഉപയോഗിക്കുക, "
-
-#: WikiExtension.xcu#.WikiExtension.Strings.NoConnectionToURL.value.text
-msgid "A connection to the MediaWiki system at '$ARG1' could not be created."
-msgstr ""
-"'$ARG1'-ലുള്ള മീഡിയവിക്കി സിസ്റ്റമിലേക്കുള്ള കണക്ഷന്‍ ഉണ്ടാക്കുവാന്‍ "
-"സാധ്യമായില്ല."
-
-#: WikiExtension.xcu#.WikiExtension.Strings.WrongLogin.value.text
-msgid ""
-"User name or password is incorrect. Please try again, or leave the fields "
-"blank for an anonymous connection."
-msgstr ""
-"ഉപയോക്താവിന്റെ നാമം അല്ലെങ്കില്‍ പാസ്‌വേര്‍ഡ് തെറ്റാണു്. ദയവായി വീണ്ടും "
-"ശ്രമിക്കുക, അല്ലെങ്കില്‍ അ‍ജ്ഞാതമായ കണക്ഷനുവേണ്ടി ഫീള്‍ഡുകള്‍ "
-"ശൂന്യമാക്കിയിടുക."
-
-#: WikiExtension.xcu#.WikiExtension.Strings.InvalidURL.value.text
-msgid "A connection could not be created because the URL is invalid."
-msgstr "യുആര്‍എല്‍ തെറ്റായതിനാല്‍, കണക്ഷന്‍ ഉണ്ടാക്കുവാന്‍ സാധ്യമായില്ല."
-
-#: WikiExtension.xcu#.WikiExtension.Strings.NoURL.value.text
-msgid "Specify a MediaWiki server by providing a URL."
-msgstr "ഒരു യുആര്‍എല്‍ നല്‍കി ഒരു മീഡിയാവിക്കി വ്യക്തമാക്കുക."
-
-#: WikiExtension.xcu#.WikiExtension.Strings.CancelSending.value.text
-msgid ""
-"The transfer has been interrupted. Please check the integrity of the wiki "
-"article."
-msgstr ""
-"നീക്കം ചെയ്യുന്നതില്‍ തടസ്സം നേരിട്ടിരിക്കുന്നു. വിക്കി ലേഖനത്തിന്റെ സമഗ്രത "
-"പരിശോധിക്കുക."
-
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_UrlLabel.value.text
-msgid "U~RL"
-msgstr "~യുആര്‍എല്‍"
-
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_UsernameLabel.value.text
-msgid "~Username"
-msgstr "~ഉപയോക്തൃനാമം"
-
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_PasswordLabel.value.text
-msgid "~Password"
-msgstr "~പാസ്‌വേര്‍ഡ്"
-
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendTitle.value.text
-msgid "Send to MediaWiki"
-msgstr "മീഡിയാ വിക്കിയിലേക്കു് അയയ്ക്കുക"
-
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_WikiArticle.value.text
-msgid "Wiki article"
-msgstr "വിക്കി ലേഖനം"
-
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_No.value.text
-msgid "No"
-msgstr "ഇല്ല"
-
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_OK.value.text
-msgid "OK"
-msgstr "ശരി"
-
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_Yes.value.text
-msgid "Yes"
-msgstr "ഉവ്വു്"
-
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_AddButton.value.text
-msgid "~Add..."
-msgstr "~ചേര്‍ക്കുക..."
-
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditButton.value.text
-msgid "~Edit..."
-msgstr "~ചിട്ടപ്പെടുത്തുക..."
-
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendButton.value.text
-msgid "~Send"
-msgstr "~അയയ്ക്കുക"
-
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_RemoveButton.value.text
-msgid "~Remove"
-msgstr "~നീക്കം ചെയ്യുക"
-
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_NewWikiPage_Label1.value.text
-msgid ""
-"A wiki article with the title '$ARG1' does not exist yet. Do you want to "
-"create a new article with that name?"
-msgstr ""
-"'$ARG1' എന്ന പേരില്‍ ഒരു വിക്കി ലേഖനം ലഭ്യമല്ല. ഈ പേരില്‍ നിങ്ങള്‍ക്കു് ഒരു "
-"പുതിയ ലേഖനം ഉണ്ടാക്കണമോ?"
-
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_Label1.value.text
-msgid "Media~Wiki Server"
-msgstr "മീഡിയാ ~വിക്കി സര്‍വര്‍"
-
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_Label2.value.text
-msgid "~Title"
-msgstr "~തലക്കെട്ട്"
-
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_Label3.value.text
-msgid "S~ummary"
-msgstr "~ചുരുക്കം"
-
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_MinorCheck.value.text
-msgid "This is a ~minor edit"
-msgstr "ഇതു് ഒരു ചെറിയ ചിട്ടപ്പെടുത്തല്‍ ആകുന്നു"
-
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_BrowserCheck.value.text
-msgid "Show in web ~browser"
-msgstr "വെബ് ~ബ്രൌസറില്‍ കാണിക്കുക"
-
-#: WikiExtension.xcu#.WikiExtension.Strings.UnknownCert.value.text
-msgid "The certificate of the selected site is unknown."
-msgstr "തെരഞ്ഞെടുത്തിരിക്കുന്ന സൈറ്റിനുള്ള സര്‍ട്ടിഫിക്കേറ്റ് അജ്ഞാതമാണു്."
-
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_MediaWiki_Title.value.text
-msgid "MediaWiki"
-msgstr "മീഡിയവിക്കി"
-
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_AccountLine.value.text
-msgid "Account"
-msgstr "അക്കൌണ്ട്"
-
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_WikiLine.value.text
-msgid "MediaWiki Server"
-msgstr "മീഡിയവിക്കി സര്‍വര്‍"
-
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_SaveBox.value.text
-msgid "~Save password"
-msgstr "~പാസ്‌വേര്‍ഡ് സൂക്ഷിക്കുക"
-
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_MediaWiki_Extension_String.value.text
-msgid "@WIKIEXTENSIONPRODUCTNAME@"
+#: mediawiki/help/wiki.xhp#hd_id5993530
+msgid  "@WIKIEXTENSIONPRODUCTNAME@"
 msgstr "@WIKIEXTENSIONPRODUCTNAME@"
 
-#: WikiExtension.xcu#.WikiExtension.Strings.Dlg_WikiPageExists_Label1.value.text
-msgid ""
-"A wiki article with the title '$ARG1' already exists.&#13;&#13;Do you want "
-"to replace the current article with your article?&#13;&#13;"
+#: mediawiki/help/wiki.xhp#par_id9647511
+msgid  "\<ahelp hid=\".\"\>By using the @WIKIEXTENSIONPRODUCTNAME@ you can upload your current Writer text document to a MediaWiki server. After uploading, all Wiki users can read your document on the Wiki.\</ahelp\>"
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id6468703
+msgid  "\<ahelp hid=\".\"\>Choose \<item type=\"menuitem\"\>File - Send - To MediaWiki\</item\> to upload the current Writer document to a MediaWiki server.\</ahelp\>"
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#hd_id4554582
+msgid  "System Requirements"
+msgstr "സിസ്റ്റം ആവശ്യമങ്ങള്‍"
+
+#: mediawiki/help/wiki.xhp#par_id2597430
+msgid  "StarOffice/StarSuite 9"
+msgstr "StarOffice/StarSuite 9"
+
+#: mediawiki/help/wiki.xhp#par_id8430738
+msgid  "OpenOffice.org 3.0"
+msgstr "ഓപ്പണ്‍ഓഫീസ്.ഓര്‍ഗ് 3.0"
+
+#: mediawiki/help/wiki.xhp#par_id9340495
+msgid  "Java Runtime Environment 1.4"
+msgstr "ജാവാ റണ്‍ടൈം എന്‍വയോണ്മെന്റ് 1.4"
+
+#: mediawiki/help/wiki.xhp#par_id7387615
+msgid  "A Wiki account on a supported \<link href=\"http://www.mediawiki.org/wiki/MediaWiki\"\>MediaWiki\</link\> server"
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#hd_id8047120
+msgid  "Installing @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@ ഇന്‍സ്റ്റോള്‍ ചെയ്യുന്നു"
+
+#: mediawiki/help/wiki.xhp#par_id4277169
+msgid  "Before you install the @WIKIEXTENSIONPRODUCTNAME@, ensure that %PRODUCTNAME uses a Java Runtime Environment (JRE). To check the status of the JRE, choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Java\</item\>. Ensure that "Use a Java runtime environment" is marked and that a Java runtime folder is selected in the big listbox. If no JRE was activated, then activate a JRE 1.4 or later and restart %PRODUCTNAME."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#hd_id567339
+msgid  "To Install the @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@ ഇന്‍സ്റ്റോള്‍ ചെയ്യുന്നതിനു്"
+
+#: mediawiki/help/wiki.xhp#par_id1732230
+msgid  "In a Writer window, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id4338511
+msgid  "In the Extension Manager dialog, click Add."
+msgstr "എക്സ്റ്റെന്‍ഷന്‍ മാനേജര്‍ ഡയലോഗില്‍, ചേര്‍ക്കുക ക്ലിക്ക് ചെയ്യുക."
+
+#: mediawiki/help/wiki.xhp#par_id5882442
+msgid  "Locate the @WIKIEXTENSIONFILENAME@.oxt file, click Open, and then click Close. "
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id4008911
+msgid  "Close %PRODUCTNAME, and close also the Quickstarter if enabled."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id265511
+msgid  "Restart the software, open a text document, then choose \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\> to enter your Wiki settings. See "To Connect To a Wiki" below."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#hd_id3569444
+msgid  "To Remove the @WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@ നീക്കം ചെയ്യുന്നതിനു്"
+
+#: mediawiki/help/wiki.xhp#par_id2655110
+msgid  "In a Writer window, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id9504379
+msgid  "Click the plus sign (+) in front of My Extensions."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id8431348
+msgid  "Select the extension, click Remove, and then click Close."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#hd_id5316019
+msgid  "To Connect to a Wiki"
+msgstr "ഒരു വിക്കിയിലേക്ക് കണക്ട് ചെയ്യുന്നതിനു്"
+
+#: mediawiki/help/wiki.xhp#par_id2381969
+msgid  "Note: You can store your user name and password for all respective dialogs inside %PRODUCTNAME. The password will be stored in a secure way, where access is maintained by a master password. To enable the master password, choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\>."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id3751640
+msgid  "Note: If you connect to the web using a proxy server, enter the proxy information to \<item type=\"menuitem\"\>Tools - Options - Internet - Proxy\</item\>, and restart the software."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id9533677
+msgid  "Open a Writer document, and choose \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\>."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id368968
+msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikisettings.xhp\"\>Options\</link\> dialog, click Add."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id6962187
+msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\"\>MediaWiki\</link\> dialog, enter the account information for the Wiki."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id5328836
+msgid  "In the URL textbox, enter the address of a Wiki that you want to connect to."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id389416
+msgid  "You can copy the URL from a web browser and paste it into the textbox."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id5906552
+msgid  "In the Username box, enter your user ID for your Wiki account."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id9297158
+msgid  "If the Wiki allows anonymous write access, you can leave the Username and Password boxes empty."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id8869594
+msgid  "In the Password box, enter the password for your Wiki account, then click OK."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id292062
+msgid  "Optionally enable "Save password" to save the password between sessions. A master password is used to maintain access to all saved passwords. Choose \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\> to enable the master password. "Save password" is unavailable when the master password is not enabled."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#hd_id7044892
+msgid  "To Create a New Wiki Page"
+msgstr "ഒരു പുതിയ വിക്കി താള്‍ ഉണ്ടാക്കുന്നതിനു്"
+
+#: mediawiki/help/wiki.xhp#par_id3514206
+msgid  "Open a Writer document."
+msgstr "ഒരു റൈറ്റര്‍ രേഖ തുറക്കുക."
+
+#: mediawiki/help/wiki.xhp#par_id944853
+msgid  "Write the content of the Wiki page. You can use formatting like text formats, headings, footnotes, and more. See the \<link href=\"@WIKIEXTENSIONID@/wikiformats.xhp\"\>list of supported formats\</link\>."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id4566484
+msgid  "Choose \<item type=\"menuitem\"\>File - Send - To MediaWiki\</item\>."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id228278
+msgid  "In the \<link href=\"@WIKIEXTENSIONID@/wikisend.xhp\"\>Send to MediaWiki\</link\> dialog, specify the settings for your entry."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id2564165
+msgid  "\<emph\>MediaWiki server\</emph\>: Select the Wiki."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id5566576
+msgid  "\<emph\>Title\</emph\>: Type the title of your page. Type the title of an existing page to overwrite the page with your current text document. Type a new title to create a new page on the Wiki."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id9688711
+msgid  "\<emph\>Summary\</emph\>: Enter an optional short summary of your page."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id4123661
+msgid  "\<emph\>This is a minor edit\</emph\>: Check this box to mark the uploaded page as a minor edit of the already existing page with the same title."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id452284
+msgid  "\<emph\>Show in web browser\</emph\>: Check this box to open your system web browser and show the uploaded Wiki page."
+msgstr ""
+
+#: mediawiki/help/wiki.xhp#par_id8346812
+msgid  "Click Send."
+msgstr "അയയ്ക്കുക ക്ലിക്ക് ചെയ്യുക."
+
+#: mediawiki/help/wiki.xhp#tit
+msgid  "@WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@"
+
+#: mediawiki/help/wikisettings.xhp#hd_id6425672
+msgid  "MediaWiki Options"
+msgstr "മീഡിയാവിക്കി ഉപാധികള്‍"
+
+#: mediawiki/help/wikisettings.xhp#par_id1188390
+msgid  "You can add, edit and remove MediaWiki servers. Open the dialog by \<item type=\"menuitem\"\>Tools - Options - Internet - MediaWiki\</item\>. Alternatively, choose \<item type=\"menuitem\"\>Tools - Extension Manager\</item\>, select the @WIKIEXTENSIONPRODUCTNAME@, and click the Options button."
+msgstr ""
+
+#: mediawiki/help/wikisettings.xhp#par_id300607
+msgid  "\<ahelp hid=\".\"\>Click Add to add a new Wiki server.\<br/\>Select an entry and click Edit to edit the account settings.\<br/\>Select an entry and click Remove to remove the entry from the list.\</ahelp\>"
+msgstr ""
+
+#: mediawiki/help/wikisettings.xhp#par_id9786065
+msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the MediaWiki dialog to add a new entry to the list.\</ahelp\>"
+msgstr ""
+
+#: mediawiki/help/wikisettings.xhp#par_id3386333
+msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Opens the MediaWiki dialog to edit the selected entry.\</ahelp\>"
+msgstr ""
+
+#: mediawiki/help/wikisettings.xhp#par_id7285073
+msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Removes the selected entry from the list.\</ahelp\>"
+msgstr ""
+
+#: mediawiki/help/wikisettings.xhp#par_id1029084
+msgid  "When you click Add or Edit, the \<link href=\"@WIKIEXTENSIONID@/wikiaccount.xhp\"\>MediaWiki\</link\> dialog opens."
+msgstr ""
+
+#: mediawiki/help/wikisettings.xhp#tit
+msgid  "MediaWiki Options"
+msgstr "മീ‍ഡിയാവിക്കി ഉപാധികള്‍"
+
+#: mediawiki/help/wikiaccount.xhp#hd_id960722
+msgid  "MediaWiki"
+msgstr "മീഡിയാവിക്കി"
+
+#: mediawiki/help/wikiaccount.xhp#par_id4571672
+msgid  "Use the MediaWiki dialog to add or edit your MediaWiki account settings."
+msgstr ""
+
+#: mediawiki/help/wikiaccount.xhp#par_id7631458
+msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter the URL of a MediaWiki server, starting with http://\</ahelp\>"
+msgstr ""
+
+#: mediawiki/help/wikiaccount.xhp#par_id7862483
+msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter your user name on the MediaWiki server. Leave empty for anonymous access.\</ahelp\>"
+msgstr ""
+
+#: mediawiki/help/wikiaccount.xhp#par_id1113010
+msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enter your password on the MediaWiki server. Leave empty for anonymous access.\</ahelp\>"
+msgstr ""
+
+#: mediawiki/help/wikiaccount.xhp#par_id656758
+msgid  "\<ahelp hid=\".\" visibility=\"hidden\"\>Enable to store your password between sessions. The master password must be enabled, see \<item type=\"menuitem\"\>Tools - Options - %PRODUCTNAME - Security\</item\>.\</ahelp\>"
+msgstr ""
+
+#: mediawiki/help/wikiaccount.xhp#par_id3112582
+msgid  "Enter the Internet address of a Wiki server in a format like http://wiki.services.openoffice.org/wiki or copy the URL from a web browser."
+msgstr ""
+
+#: mediawiki/help/wikiaccount.xhp#par_id628070
+msgid  "If the Wiki allows anonymous access, you can leave the account text boxes empty. Else enter your user name and password."
+msgstr ""
+
+#: mediawiki/help/wikiaccount.xhp#par_id9046601
+msgid  "If you have enabled the master password feature on the Security tab page of the Tools - Options - %PRODUCTNAME dialog, then the software can store your password and automatically insert the data where necessary. Enable the "Save password" checkbox to store your password."
+msgstr ""
+
+#: mediawiki/help/wikiaccount.xhp#tit
+msgid  "MediaWiki"
+msgstr "മീഡീയാവിക്കി"
+
+#: mediawiki/help/wikisend.xhp#hd_id108340
+msgid  "Send to MediaWiki"
+msgstr "മീഡിയാവിക്കിയിലേക്ക് അയയ്ക്കുക"
+
+#: mediawiki/help/wikisend.xhp#par_id1743827
+msgid  "In the Send to MediaWiki dialog, specify the settings for your current Wiki upload."
+msgstr ""
+
+#: mediawiki/help/wikisend.xhp#par_id664082
+msgid  "\<ahelp hid=\".\"\>Select the MediaWiki server where you want to publish your document. Click Add to add a new server to the list.\</ahelp\>"
+msgstr ""
+
+#: mediawiki/help/wikisend.xhp#par_id2794885
+msgid  "\<ahelp hid=\".\"\>Enter the title of your Wiki entry. This is the top heading of your Wiki entry. For a new entry, the title must be unique on this Wiki. If you enter an existing title, your upload will overwrite the existing Wiki entry.\</ahelp\>"
+msgstr ""
+
+#: mediawiki/help/wikisend.xhp#par_id2486342
+msgid  "\<ahelp hid=\".\"\>Enter an optional short summary or comment.\</ahelp\> See \<link href=\"http://meta.wikimedia.org/wiki/Help:Edit_summary\"\>http://meta.wikimedia.org/wiki/Help:Edit_summary\</link\>."
+msgstr ""
+
+#: mediawiki/help/wikisend.xhp#par_id823999
+msgid  "\<emph\>This is a minor edit\</emph\>: \<ahelp hid=\".\"\>Check this box to mark the uploaded page as a minor edit of the already existing page with the same title.\</ahelp\>"
+msgstr ""
+
+#: mediawiki/help/wikisend.xhp#par_id6592913
+msgid  "\<emph\>Show in web browser\</emph\>: \<ahelp hid=\".\"\>Check this box to open your system web browser and show the uploaded Wiki page.\</ahelp\>"
+msgstr ""
+
+#: mediawiki/help/wikisend.xhp#tit
+msgid  "Send to MediaWiki"
+msgstr "മീഡിയാവിക്കിയിലേക്ക് അയയ്ക്കുക"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Addons.xcu#.Addons.AddonUI.OfficeMenuBarMerging.com.sun.star.wiki.S1.MenuItems.M2.Title
+msgid  "To Media~Wiki..."
+msgstr "മീഡിയാ ~വിക്കിയിലേക്കു്"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/OptionsDialog.xcu#.OptionsDialog.Nodes.Internet.Leaves.com.sun.star.wiki.options.Label
+msgid  "MediaWiki"
+msgstr "മീഡിയാ വിക്കി"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.GeneralSendError
+msgid  "The operation 'Send to MediaWiki' could not be completed successfully."
+msgstr ""
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.NoWikiFilter
+msgid  "The MediaWiki export filter cannot be found. Choose 'Tools-XML Filter Settings' to install the filter, or use the setup to install the component."
+msgstr ""
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.NoConnectionToURL
+msgid  "A connection to the MediaWiki system at '$ARG1' could not be created."
+msgstr ""
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.WrongLogin
+msgid  "User name or password is incorrect. Please try again, or leave the fields blank for an anonymous connection."
+msgstr ""
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.InvalidURL
+msgid  "A connection could not be created because the URL is invalid."
+msgstr "യുആര്‍എല്‍ തെറ്റായതിനാല്‍, കണക്ഷന്‍ ഉണ്ടാക്കുവാന്‍ സാധ്യമായില്ല."
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.NoURL
+msgid  "Specify a MediaWiki server by providing a URL."
+msgstr "ഒരു യുആര്‍എല്‍ നല്‍കി ഒരു മീഡിയാവിക്കി വ്യക്തമാക്കുക."
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.CancelSending
+msgid  "The transfer has been interrupted. Please check the integrity of the wiki article."
+msgstr ""
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_UrlLabel
+msgid  "U~RL"
+msgstr "~യുആര്‍എല്‍"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_UsernameLabel
+msgid  "~Username"
+msgstr "~ഉപയോക്തൃനാമം"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_PasswordLabel
+msgid  "~Password"
+msgstr "~പാസ്‌വേര്‍ഡ്"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendTitle
+msgid  "Send to MediaWiki"
+msgstr "മീഡിയാ വിക്കിയിലേക്കു് അയയ്ക്കുക"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_WikiArticle
+msgid  "Wiki article"
+msgstr "വിക്കി ലേഖനം"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_No
+msgid  "No"
+msgstr "ഇല്ല"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_OK
+msgid  "OK"
+msgstr "ശരി"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_Yes
+msgid  "Yes"
+msgstr "ഉവ്വു്"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_AddButton
+msgid  "~Add..."
+msgstr "~ചേര്‍ക്കുക..."
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditButton
+msgid  "~Edit..."
+msgstr "~ചിട്ടപ്പെടുത്തുക..."
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendButton
+msgid  "~Send"
+msgstr "~അയയ്ക്കുക"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_RemoveButton
+msgid  "~Remove"
+msgstr "~നീക്കം ചെയ്യുക"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_NewWikiPage_Label1
+msgid  "A wiki article with the title '$ARG1' does not exist yet. Do you want to create a new article with that name?"
+msgstr ""
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_Label1
+msgid  "Media~Wiki Server"
+msgstr "മീഡിയാ ~വിക്കി സര്‍വര്‍"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_Label2
+msgid  "~Title"
+msgstr "~തലക്കെട്ട്"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_Label3
+msgid  "S~ummary"
+msgstr "~ചുരുക്കം"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_MinorCheck
+msgid  "This is a ~minor edit"
+msgstr "ഇതു് ഒരു ചെറിയ ചിട്ടപ്പെടുത്തല്‍ ആകുന്നു"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_SendToMediaWiki_BrowserCheck
+msgid  "Show in web ~browser"
+msgstr "വെബ് ~ബ്രൌസറില്‍ കാണിക്കുക"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.UnknownCert
+msgid  "The certificate of the selected site is unknown."
+msgstr "തെരഞ്ഞെടുത്തിരിക്കുന്ന സൈറ്റിനുള്ള സര്‍ട്ടിഫിക്കേറ്റ് അജ്ഞാതമാണു്."
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_MediaWiki_Title
+msgid  "MediaWiki"
+msgstr "മീഡിയവിക്കി"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_AccountLine
+msgid  "Account"
+msgstr "അക്കൌണ്ട്"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_WikiLine
+msgid  "MediaWiki Server"
+msgstr "മീഡിയവിക്കി സര്‍വര്‍"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_EditSetting_SaveBox
+msgid  "~Save password"
+msgstr "~പാസ്‌വേര്‍ഡ് സൂക്ഷിക്കുക"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_MediaWiki_Extension_String
+msgid  "@WIKIEXTENSIONPRODUCTNAME@"
+msgstr "@WIKIEXTENSIONPRODUCTNAME@"
+
+#: mediawiki/src/registry/data/org/openoffice/Office/Custom/WikiExtension.xcu#.WikiExtension.Strings.Dlg_WikiPageExists_Label1
+msgid  "A wiki article with the title '$ARG1' already exists.&#13;&#13;Do you want to replace the current article with your article?&#13;&#13;"
 msgstr ""

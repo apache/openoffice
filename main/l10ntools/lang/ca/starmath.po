@@ -1,1817 +1,1760 @@
-"X-Accelerator-Marker: ~\n"
-"X-Language: ca\n"
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
 
-#: commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.menuitem.text
-msgid "~Unary/Binary Operators"
-msgstr "~Operadors unaris i binaris"
 
-#: commands.src#RID_COMMANDMENU.RID_RELATIONS_MENU.menuitem.text
-msgid "~Relations"
-msgstr "~Relacions"
+#: source/smres.src#RID_FONTDIALOG.ModalDialog.Text
+msgid  "Fonts"
+msgstr "Tipus de lletra"
 
-#: commands.src#RID_COMMANDMENU.RID_SETOPERATIONS_MENU.menuitem.text
-msgid "~Set Operations"
-msgstr "~Operacions amb conjunts"
-
-#: commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.RID_FUNCTIONSOTHER1_MENU.menuitem.text
-msgid "More"
-msgstr "Més"
-
-#: commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.menuitem.text
-msgctxt "commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.menuitem.text"
-msgid "~Functions"
-msgstr "~Funcions"
-
-#: commands.src#RID_COMMANDMENU.RID_OPERATORS_MENU.menuitem.text
-msgid "O~perators"
-msgstr "O~peradors"
-
-#: commands.src#RID_COMMANDMENU.RID_ATTRIBUTES_MENU.menuitem.text
-msgid "~Attributes"
-msgstr "~Atributs"
-
-#: commands.src#RID_COMMANDMENU.RID_BRACKETS_MENU.menuitem.text
-msgid "~Brackets"
-msgstr "~Claudàtors"
-
-#: commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NEWLINE.menuitem.text
-msgctxt "commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NEWLINE.menuitem.text"
-msgid "New Line"
-msgstr "Línia nova"
-
-#: commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_SBLANK.menuitem.text
-msgctxt "commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_SBLANK.menuitem.text"
-msgid "Small Gap"
-msgstr "Separació petita"
-
-#: commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_BLANK.menuitem.text
-msgctxt "commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_BLANK.menuitem.text"
-msgid "Gap"
-msgstr "Separació"
-
-#: commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NOSPACE.menuitem.text
-msgid "nospace {...}"
-msgstr "sense espai {...}"
-
-#: commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.menuitem.text
-msgid "For~mats"
-msgstr "For~mats"
-
-#: commands.src#RID_COMMANDMENU.RID_MISC_MENU.menuitem.text
-msgid "~Others"
-msgstr "~Altres"
-
-#: smres.src#RID_FONTDIALOG.1.fixedtext.text
-msgctxt "smres.src#RID_FONTDIALOG.1.fixedtext.text"
-msgid "~Font"
+#: source/smres.src#RID_FONTDIALOG.1.FixedText.Text
+msgid  "~Font"
 msgstr "~Tipus de lletra"
 
-#: smres.src#RID_FONTDIALOG.1.checkbox.text
-msgid "~Bold"
+#: source/smres.src#RID_FONTDIALOG.1.CheckBox.Text
+msgid  "~Bold"
 msgstr "~Negreta"
 
-#: smres.src#RID_FONTDIALOG.2.checkbox.text
-msgid "~Italic"
+#: source/smres.src#RID_FONTDIALOG.2.CheckBox.Text
+msgid  "~Italic"
 msgstr "~Cursiva"
 
-#: smres.src#RID_FONTDIALOG.2.fixedtext.text
-msgctxt "smres.src#RID_FONTDIALOG.2.fixedtext.text"
-msgid "Attributes"
+#: source/smres.src#RID_FONTDIALOG.2.FixedText.Text
+msgid  "Attributes"
 msgstr "Atributs"
 
-#: smres.src#RID_FONTDIALOG.modaldialog.text
-msgctxt "smres.src#RID_FONTDIALOG.modaldialog.text"
-msgid "Fonts"
-msgstr "Tipus de lletra"
-
-#: smres.src#RID_FONTSIZEDIALOG.1.fixedtext.text
-msgid "Base ~size"
-msgstr "Mida de la ~base"
-
-#: smres.src#RID_FONTSIZEDIALOG.4.fixedtext.text
-msgctxt "smres.src#RID_FONTSIZEDIALOG.4.fixedtext.text"
-msgid "~Text"
-msgstr "~Text"
-
-#: smres.src#RID_FONTSIZEDIALOG.5.fixedtext.text
-msgid "~Indexes"
-msgstr "Í~ndexs"
-
-#: smres.src#RID_FONTSIZEDIALOG.6.fixedtext.text
-msgctxt "smres.src#RID_FONTSIZEDIALOG.6.fixedtext.text"
-msgid "~Functions"
-msgstr "~Funcions"
-
-#: smres.src#RID_FONTSIZEDIALOG.7.fixedtext.text
-msgid "~Operators"
-msgstr "~Operadors"
-
-#: smres.src#RID_FONTSIZEDIALOG.8.fixedtext.text
-msgid "~Limits"
-msgstr "~Límits"
-
-#: smres.src#RID_FONTSIZEDIALOG.1.fixedline.text
-msgid "Relative sizes"
-msgstr "Mides relatives"
-
-#: smres.src#RID_FONTSIZEDIALOG.1.pushbutton.text
-msgctxt "smres.src#RID_FONTSIZEDIALOG.1.pushbutton.text"
-msgid "~Default"
-msgstr "Per ~defecte"
-
-#: smres.src#RID_FONTSIZEDIALOG.modaldialog.text
-msgid "Font Sizes"
+#: source/smres.src#RID_FONTSIZEDIALOG.ModalDialog.Text
+msgid  "Font Sizes"
 msgstr "Mides de lletra"
 
-#: smres.src#RID_FONTTYPEDIALOG.1.fixedline.text
-msgid "Formula fonts"
-msgstr "Tipus de lletra de les fórmules"
+#: source/smres.src#RID_FONTSIZEDIALOG.1.FixedText.Text
+msgid  "Base ~size"
+msgstr "Mida de la ~base"
 
-#: smres.src#RID_FONTTYPEDIALOG.2.fixedline.text
-msgid "Custom fonts"
-msgstr "Tipus de lletra d'usuari"
-
-#: smres.src#RID_FONTTYPEDIALOG.1.fixedtext.text
-msgid "~Variables"
-msgstr "~Variables"
-
-#: smres.src#RID_FONTTYPEDIALOG.2.fixedtext.text
-msgctxt "smres.src#RID_FONTTYPEDIALOG.2.fixedtext.text"
-msgid "~Functions"
-msgstr "~Funcions"
-
-#: smres.src#RID_FONTTYPEDIALOG.3.fixedtext.text
-msgid "~Numbers"
-msgstr "~Números"
-
-#: smres.src#RID_FONTTYPEDIALOG.4.fixedtext.text
-msgctxt "smres.src#RID_FONTTYPEDIALOG.4.fixedtext.text"
-msgid "~Text"
+#: source/smres.src#RID_FONTSIZEDIALOG.4.FixedText.Text
+msgid  "~Text"
 msgstr "~Text"
 
-#: smres.src#RID_FONTTYPEDIALOG.5.fixedtext.text
-msgid "~Serif"
-msgstr "~Serif"
+#: source/smres.src#RID_FONTSIZEDIALOG.5.FixedText.Text
+msgid  "~Indexes"
+msgstr "Í~ndexs"
 
-#: smres.src#RID_FONTTYPEDIALOG.6.fixedtext.text
-msgid "S~ans"
-msgstr "S~ans"
+#: source/smres.src#RID_FONTSIZEDIALOG.6.FixedText.Text
+msgid  "~Functions"
+msgstr "~Funcions"
 
-#: smres.src#RID_FONTTYPEDIALOG.7.fixedtext.text
-msgid "F~ixed"
-msgstr "Amplada f~ixa"
+#: source/smres.src#RID_FONTSIZEDIALOG.7.FixedText.Text
+msgid  "~Operators"
+msgstr "~Operadors"
 
-#: smres.src#RID_FONTTYPEDIALOG.1.menubutton.text
-msgctxt "smres.src#RID_FONTTYPEDIALOG.1.menubutton.text"
-msgid "~Modify"
-msgstr "~Modifica"
+#: source/smres.src#RID_FONTSIZEDIALOG.8.FixedText.Text
+msgid  "~Limits"
+msgstr "~Límits"
 
-#: smres.src#RID_FONTTYPEDIALOG.2.pushbutton.text
-msgctxt "smres.src#RID_FONTTYPEDIALOG.2.pushbutton.text"
-msgid "~Default"
+#: source/smres.src#RID_FONTSIZEDIALOG.1.FixedLine.Text
+msgid  "Relative sizes"
+msgstr "Mides relatives"
+
+#: source/smres.src#RID_FONTSIZEDIALOG.1.PushButton.Text
+msgid  "~Default"
 msgstr "Per ~defecte"
 
-#: smres.src#RID_FONTTYPEDIALOG.modaldialog.text
-msgctxt "smres.src#RID_FONTTYPEDIALOG.modaldialog.text"
-msgid "Fonts"
+#: source/smres.src#RID_FONTTYPEDIALOG.ModalDialog.Text
+msgid  "Fonts"
 msgstr "Tipus de lletra"
 
-#: smres.src#RID_DISTANCEDIALOG.1.metricfield.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.1.metricfield.text"
-msgid "%"
-msgstr "%"
-
-#: smres.src#RID_DISTANCEDIALOG.2.metricfield.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.2.metricfield.text"
-msgid "%"
-msgstr "%"
-
-#: smres.src#RID_DISTANCEDIALOG.1.checkbox.text
-msgid "Scale all brackets"
-msgstr "Dimensiona tots els claudàtors"
-
-#: smres.src#RID_DISTANCEDIALOG.3.metricfield.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.3.metricfield.text"
-msgid "%"
-msgstr "%"
-
-#: smres.src#RID_DISTANCEDIALOG.1.pushbutton.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.1.pushbutton.text"
-msgid "~Default"
-msgstr "Per ~defecte"
-
-#: smres.src#RID_DISTANCEDIALOG.1.menubutton.text
-msgid "~Category"
-msgstr "~Categoria"
-
-#: smres.src#RID_DISTANCEDIALOG.1.fixedline.text
-msgid "Category"
-msgstr "Categoria"
-
-#: smres.src#RID_DISTANCEDIALOG.1.1.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.1.1.string.text"
-msgid "Spacing"
-msgstr "Espaiat"
-
-#: smres.src#RID_DISTANCEDIALOG.1.2.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.1.2.string.text"
-msgid "~Spacing"
-msgstr "E~spaiat"
-
-#: smres.src#RID_DISTANCEDIALOG.1.3.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.1.3.string.text"
-msgid "~Line spacing"
-msgstr "Inter~lineat"
-
-#: smres.src#RID_DISTANCEDIALOG.1.4.string.text
-msgid "~Root spacing"
-msgstr "Espaiat de l'a~rrel"
-
-#: smres.src#RID_DISTANCEDIALOG.2.1.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.2.1.string.text"
-msgid "Indexes"
-msgstr "Índexs"
-
-#: smres.src#RID_DISTANCEDIALOG.2.2.string.text
-msgid "~Superscript"
-msgstr "~Superíndex"
-
-#: smres.src#RID_DISTANCEDIALOG.2.3.string.text
-msgid "S~ubscript"
-msgstr "S~ubíndex"
-
-#: smres.src#RID_DISTANCEDIALOG.3.1.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.3.1.string.text"
-msgid "Fractions"
-msgstr "Fraccions"
-
-#: smres.src#RID_DISTANCEDIALOG.3.2.string.text
-msgid "~Numerator"
-msgstr "~Numerador"
-
-#: smres.src#RID_DISTANCEDIALOG.3.3.string.text
-msgid "~Denominator"
-msgstr "~Denominador"
-
-#: smres.src#RID_DISTANCEDIALOG.4.1.string.text
-msgid "Fraction bar"
-msgstr "Barra de fraccions"
-
-#: smres.src#RID_DISTANCEDIALOG.4.2.string.text
-msgid "~Excess length"
-msgstr "Longitud de l'~excés"
-
-#: smres.src#RID_DISTANCEDIALOG.4.3.string.text
-msgid "~Weight"
-msgstr "~Pes"
-
-#: smres.src#RID_DISTANCEDIALOG.5.1.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.5.1.string.text"
-msgid "Limits"
-msgstr "Límits"
-
-#: smres.src#RID_DISTANCEDIALOG.5.2.string.text
-msgid "~Upper limit"
-msgstr "Límit s~uperior"
-
-#: smres.src#RID_DISTANCEDIALOG.5.3.string.text
-msgid "~Lower limit"
-msgstr "~Límit inferior"
-
-#: smres.src#RID_DISTANCEDIALOG.6.1.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.6.1.string.text"
-msgid "Brackets"
-msgstr "Claudàtors"
-
-#: smres.src#RID_DISTANCEDIALOG.6.2.string.text
-msgid "~Excess size (left/right)"
-msgstr "Mida de l'~excés (esquerra/dreta)"
-
-#: smres.src#RID_DISTANCEDIALOG.6.3.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.6.3.string.text"
-msgid "~Spacing"
-msgstr "E~spaiat"
-
-#: smres.src#RID_DISTANCEDIALOG.6.5.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.6.5.string.text"
-msgid "~Excess size"
-msgstr "Mida de l'~excés"
-
-#: smres.src#RID_DISTANCEDIALOG.7.1.string.text
-msgid "Matrix"
-msgstr "Matriu"
-
-#: smres.src#RID_DISTANCEDIALOG.7.2.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.7.2.string.text"
-msgid "~Line spacing"
-msgstr "Inter~lineat"
-
-#: smres.src#RID_DISTANCEDIALOG.7.3.string.text
-msgid "~Column spacing"
-msgstr "Espaiat de la ~columna"
-
-#: smres.src#RID_DISTANCEDIALOG.8.1.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.8.1.string.text"
-msgid "Symbols"
-msgstr "Símbols"
-
-#: smres.src#RID_DISTANCEDIALOG.8.2.string.text
-msgid "~Primary height"
-msgstr "Alçada ~primària"
-
-#: smres.src#RID_DISTANCEDIALOG.8.3.string.text
-msgid "~Minimum spacing"
-msgstr "Espaiat ~mínim"
-
-#: smres.src#RID_DISTANCEDIALOG.9.1.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.9.1.string.text"
-msgid "Operators"
-msgstr "Operadors"
-
-#: smres.src#RID_DISTANCEDIALOG.9.2.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.9.2.string.text"
-msgid "~Excess size"
-msgstr "Mida de l'~excés"
-
-#: smres.src#RID_DISTANCEDIALOG.9.3.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.9.3.string.text"
-msgid "~Spacing"
-msgstr "E~spaiat"
-
-#: smres.src#RID_DISTANCEDIALOG.10.1.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.10.1.string.text"
-msgid "Borders"
-msgstr "Vores"
-
-#: smres.src#RID_DISTANCEDIALOG.10.2.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.10.2.string.text"
-msgid "~Left"
-msgstr "~Esquerra"
-
-#: smres.src#RID_DISTANCEDIALOG.10.3.string.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.10.3.string.text"
-msgid "~Right"
-msgstr "~Dreta"
-
-#: smres.src#RID_DISTANCEDIALOG.10.4.string.text
-msgid "~Top"
-msgstr "~Superior"
-
-#: smres.src#RID_DISTANCEDIALOG.10.5.string.text
-msgid "~Bottom"
-msgstr "~Inferior"
-
-#: smres.src#RID_DISTANCEDIALOG.modaldialog.text
-msgctxt "smres.src#RID_DISTANCEDIALOG.modaldialog.text"
-msgid "Spacing"
-msgstr "Espaiat"
-
-#: smres.src#RID_ALIGNDIALOG.1.radiobutton.text
-msgctxt "smres.src#RID_ALIGNDIALOG.1.radiobutton.text"
-msgid "~Left"
-msgstr "~Esquerra"
-
-#: smres.src#RID_ALIGNDIALOG.2.radiobutton.text
-msgid "~Centered"
-msgstr "~Centrat"
-
-#: smres.src#RID_ALIGNDIALOG.3.radiobutton.text
-msgctxt "smres.src#RID_ALIGNDIALOG.3.radiobutton.text"
-msgid "~Right"
-msgstr "~Dreta"
-
-#: smres.src#RID_ALIGNDIALOG.1.fixedline.text
-msgid "Horizontal"
-msgstr "Horitzontal"
-
-#: smres.src#RID_ALIGNDIALOG.1.pushbutton.text
-msgctxt "smres.src#RID_ALIGNDIALOG.1.pushbutton.text"
-msgid "~Default"
-msgstr "Per ~defecte"
-
-#: smres.src#RID_ALIGNDIALOG.modaldialog.text
-msgid "Alignment"
-msgstr "Alineació"
-
-#: smres.src#RID_PRINTOPTIONPAGE.FL_PRINTOPTIONS.fixedline.text
-msgid "Print options"
-msgstr "Opcions d'impressió"
-
-#: smres.src#RID_PRINTOPTIONPAGE.CB_TITLEROW.checkbox.text
-msgid "~Title row"
-msgstr "~Fila del títol"
-
-#: smres.src#RID_PRINTOPTIONPAGE.CB_EQUATION_TEXT.checkbox.text
-msgctxt "smres.src#RID_PRINTOPTIONPAGE.CB_EQUATION_TEXT.checkbox.text"
-msgid "~Formula text"
-msgstr "~Text de la fórmula"
-
-#: smres.src#RID_PRINTOPTIONPAGE.CB_FRAME.checkbox.text
-msgid "B~order"
-msgstr "V~ora"
-
-#: smres.src#RID_PRINTOPTIONPAGE.FL_PRINT_FORMAT.fixedline.text
-msgid "Print format"
-msgstr "Format d'impressió"
-
-#: smres.src#RID_PRINTOPTIONPAGE.RB_ORIGINAL_SIZE.radiobutton.text
-msgctxt "smres.src#RID_PRINTOPTIONPAGE.RB_ORIGINAL_SIZE.radiobutton.text"
-msgid "O~riginal size"
-msgstr "Mida o~riginal"
-
-#: smres.src#RID_PRINTOPTIONPAGE.RB_FIT_TO_PAGE.radiobutton.text
-msgctxt "smres.src#RID_PRINTOPTIONPAGE.RB_FIT_TO_PAGE.radiobutton.text"
-msgid "Fit to ~page"
-msgstr "Ajusta a la ~pàgina"
-
-#: smres.src#RID_PRINTOPTIONPAGE.RB_ZOOM.radiobutton.text
-msgctxt "smres.src#RID_PRINTOPTIONPAGE.RB_ZOOM.radiobutton.text"
-msgid "~Scaling"
-msgstr "Redimen~sionament"
-
-#: smres.src#RID_PRINTOPTIONPAGE.FL_MISC_OPTIONS.fixedline.text
-msgid "Miscellaneous options"
-msgstr "Altres opcions"
-
-#: smres.src#RID_PRINTOPTIONPAGE.CB_IGNORE_SPACING.checkbox.text
-msgid "Ig~nore ~~ and ` at the end of the line"
-msgstr "Ig~nora ~~ i ` a final de línia"
-
-#: smres.src#RID_PRINTOPTIONPAGE.CB_SAVE_ONLY_USED_SYMBOLS.checkbox.text
-msgid "Embed only used symbols (smaller file size)"
-msgstr "Incrusta només els símbols utilitzats (mida del fitxer més petita)"
-
-#: smres.src#RID_PRINTOPTIONPAGE.tabpage.text
-msgid "Formula Options:Settings"
-msgstr "Opcions de fórmula: Configuració"
-
-#: smres.src#RID_SYMBOLDIALOG.1.fixedtext.text
-msgid "~Symbol set"
-msgstr "Conjunt de ~símbols"
-
-#: smres.src#RID_SYMBOLDIALOG.2.fixedtext.text
-msgid "Unknown"
-msgstr "Desconegut"
-
-#: smres.src#RID_SYMBOLDIALOG.2.pushbutton.text
-msgid "~Insert"
-msgstr "~Insereix"
-
-#: smres.src#RID_SYMBOLDIALOG.3.pushbutton.text
-msgid "~Close"
-msgstr "~Tanca"
-
-#: smres.src#RID_SYMBOLDIALOG.1.pushbutton.text
-msgid "~Edit..."
-msgstr "~Edita..."
-
-#: smres.src#RID_SYMBOLDIALOG.modaldialog.text
-msgctxt "smres.src#RID_SYMBOLDIALOG.modaldialog.text"
-msgid "Symbols"
-msgstr "Símbols"
-
-#: smres.src#RID_SYMDEFINEDIALOG.1.fixedtext.text
-msgid "~Old symbol"
-msgstr "Símb~ol anterior"
-
-#: smres.src#RID_SYMDEFINEDIALOG.2.fixedtext.text
-msgid "O~ld symbol set"
-msgstr "Conjunt de símbo~ls anterior"
-
-#: smres.src#RID_SYMDEFINEDIALOG.9.fixedtext.text
-msgid "~Symbol"
-msgstr "~Símbol"
-
-#: smres.src#RID_SYMDEFINEDIALOG.10.fixedtext.text
-msgid "Symbol s~et"
-msgstr "Con~junt de símbols"
-
-#: smres.src#RID_SYMDEFINEDIALOG.3.fixedtext.text
-msgctxt "smres.src#RID_SYMDEFINEDIALOG.3.fixedtext.text"
-msgid "~Font"
-msgstr "~Tipus de lletra"
-
-#: smres.src#RID_SYMDEFINEDIALOG.FT_FONTS_SUBSET.fixedtext.text
-msgid "~Subset"
-msgstr "~Subconjunt"
-
-#: smres.src#RID_SYMDEFINEDIALOG.4.fixedtext.text
-msgid "~Typeface"
-msgstr "T~ipografia"
-
-#: smres.src#RID_SYMDEFINEDIALOG.1.pushbutton.text
-msgid "~Add"
-msgstr "~Afegeix"
-
-#: smres.src#RID_SYMDEFINEDIALOG.2.pushbutton.text
-msgctxt "smres.src#RID_SYMDEFINEDIALOG.2.pushbutton.text"
-msgid "~Modify"
+#: source/smres.src#RID_FONTTYPEDIALOG.1.FixedLine.Text
+msgid  "Formula fonts"
+msgstr "Tipus de lletra de les fórmules"
+
+#: source/smres.src#RID_FONTTYPEDIALOG.2.FixedLine.Text
+msgid  "Custom fonts"
+msgstr "Tipus de lletra d'usuari"
+
+#: source/smres.src#RID_FONTTYPEDIALOG.1.FixedText.Text
+msgid  "~Variables"
+msgstr "~Variables"
+
+#: source/smres.src#RID_FONTTYPEDIALOG.2.FixedText.Text
+msgid  "~Functions"
+msgstr "~Funcions"
+
+#: source/smres.src#RID_FONTTYPEDIALOG.3.FixedText.Text
+msgid  "~Numbers"
+msgstr "~Números"
+
+#: source/smres.src#RID_FONTTYPEDIALOG.4.FixedText.Text
+msgid  "~Text"
+msgstr "~Text"
+
+#: source/smres.src#RID_FONTTYPEDIALOG.5.FixedText.Text
+msgid  "~Serif"
+msgstr "~Serif"
+
+#: source/smres.src#RID_FONTTYPEDIALOG.6.FixedText.Text
+msgid  "S~ans"
+msgstr "S~ans"
+
+#: source/smres.src#RID_FONTTYPEDIALOG.7.FixedText.Text
+msgid  "F~ixed"
+msgstr "Amplada f~ixa"
+
+#: source/smres.src#RID_FONTTYPEDIALOG.1.MenuButton.Text
+msgid  "~Modify"
 msgstr "~Modifica"
 
-#: smres.src#RID_SYMDEFINEDIALOG.3.pushbutton.text
-msgid "~Delete"
-msgstr "~Suprimeix"
+#: source/smres.src#RID_FONTTYPEDIALOG.2.PushButton.Text
+msgid  "~Default"
+msgstr "Per ~defecte"
 
-#: smres.src#RID_SYMDEFINEDIALOG.modaldialog.text
-msgid "Edit Symbols"
-msgstr "Edita símbols"
-
-#: smres.src#RID_NOMATHTYPEFACEWARNING.warningbox.text
-msgid ""
-"The 'StarMath' font has not been installed.\n"
-"Without this font %PRODUCTNAME Math cannot function correctly.\n"
-"Please install this font and restart %PRODUCTNAME Math."
-msgstr ""
-"No teniu instal·lat el tipus de lletra \"StarMath\".\n"
-"Sense aquest tipus de lletra l'%PRODUCTNAME Math no funcionarà correctament.\n"
-"Instal·leu aquest tipus de lletra i reinicieu l'%PRODUCTNAME Math."
-
-#: smres.src#RID_DEFAULTSAVEQUERY.querybox.text
-msgid ""
-"Should the changes be saved as defaults?\n"
-"\n"
-"These changes will apply for all new formulas."
-msgstr ""
-"Voleu desar els canvis com a valors per defecte?\n"
-"\n"
-"Aquests canvis tindran efecte en totes les fórmules noves."
-
-#: smres.src#RID_FONTREGULAR.string.text
-msgid "Standard"
-msgstr "Estàndard"
-
-#: smres.src#RID_FONTITALIC.string.text
-msgid "Italic"
-msgstr "Cursiva"
-
-#: smres.src#RID_FONTBOLD.string.text
-msgid "Bold"
-msgstr "Negreta"
-
-#: smres.src#RID_VIEWMENU.SID_VIEW050.menuitem.text
-msgid "~View 50%"
-msgstr "Visualitza ~50%"
-
-#: smres.src#RID_VIEWMENU.SID_VIEW100.menuitem.text
-msgid "View ~100%"
-msgstr "Visualitza ~100%"
-
-#: smres.src#RID_VIEWMENU.SID_VIEW200.menuitem.text
-msgid "View ~200%"
-msgstr "Visualitza ~200%"
-
-#: smres.src#RID_VIEWMENU.SID_ZOOMIN.menuitem.text
-msgid "~Zoom In"
-msgstr "~Amplia"
-
-#: smres.src#RID_VIEWMENU.SID_ZOOMOUT.menuitem.text
-msgid "Zoom ~Out"
-msgstr "~Redueix"
-
-#: smres.src#RID_VIEWMENU.SID_ADJUST.menuitem.text
-msgid "~Display All"
-msgstr "~Mostra-ho tot"
-
-#: smres.src#RID_VIEWMENU.SID_DRAW.menuitem.text
-msgid "U~pdate"
-msgstr "Act~ualitza"
-
-#: smres.src#RID_DISTANCEMENU.WORKARROUND_1.menuitem.text
-msgctxt "smres.src#RID_DISTANCEMENU.WORKARROUND_1.menuitem.text"
-msgid "Spacing"
+#: source/smres.src#RID_DISTANCEDIALOG.ModalDialog.Text
+msgid  "Spacing"
 msgstr "Espaiat"
 
-#: smres.src#RID_DISTANCEMENU.Indexes.menuitem.text
-msgctxt "smres.src#RID_DISTANCEMENU.Indexes.menuitem.text"
-msgid "Indexes"
+#: source/smres.src#RID_DISTANCEDIALOG.1.MetricField.CustomUnitText
+msgid  "%"
+msgstr "%"
+
+#: source/smres.src#RID_DISTANCEDIALOG.2.MetricField.CustomUnitText
+msgid  "%"
+msgstr "%"
+
+#: source/smres.src#RID_DISTANCEDIALOG.1.CheckBox.Text
+msgid  "Scale all brackets"
+msgstr "Dimensiona tots els claudàtors"
+
+#: source/smres.src#RID_DISTANCEDIALOG.3.MetricField.CustomUnitText
+msgid  "%"
+msgstr "%"
+
+#: source/smres.src#RID_DISTANCEDIALOG.1.PushButton.Text
+msgid  "~Default"
+msgstr "Per ~defecte"
+
+#: source/smres.src#RID_DISTANCEDIALOG.1.MenuButton.Text
+msgid  "~Category"
+msgstr "~Categoria"
+
+#: source/smres.src#RID_DISTANCEDIALOG.1.FixedLine.Text
+msgid  "Category"
+msgstr "Categoria"
+
+#: source/smres.src#RID_DISTANCEDIALOG.1.1.String.Text
+msgid  "Spacing"
+msgstr "Espaiat"
+
+#: source/smres.src#RID_DISTANCEDIALOG.1.2.String.Text
+msgid  "~Spacing"
+msgstr "E~spaiat"
+
+#: source/smres.src#RID_DISTANCEDIALOG.1.3.String.Text
+msgid  "~Line spacing"
+msgstr "Inter~lineat"
+
+#: source/smres.src#RID_DISTANCEDIALOG.1.4.String.Text
+msgid  "~Root spacing"
+msgstr "Espaiat de l'a~rrel"
+
+#: source/smres.src#RID_DISTANCEDIALOG.2.1.String.Text
+msgid  "Indexes"
 msgstr "Índexs"
 
-#: smres.src#RID_DISTANCEMENU.WORKARROUND_3.menuitem.text
-msgctxt "smres.src#RID_DISTANCEMENU.WORKARROUND_3.menuitem.text"
-msgid "Fractions"
+#: source/smres.src#RID_DISTANCEDIALOG.2.2.String.Text
+msgid  "~Superscript"
+msgstr "~Superíndex"
+
+#: source/smres.src#RID_DISTANCEDIALOG.2.3.String.Text
+msgid  "S~ubscript"
+msgstr "S~ubíndex"
+
+#: source/smres.src#RID_DISTANCEDIALOG.3.1.String.Text
+msgid  "Fractions"
 msgstr "Fraccions"
 
-#: smres.src#RID_DISTANCEMENU.Fraction_Bars.menuitem.text
-msgid "Fraction Bars"
-msgstr "Barres de fracció"
+#: source/smres.src#RID_DISTANCEDIALOG.3.2.String.Text
+msgid  "~Numerator"
+msgstr "~Numerador"
 
-#: smres.src#RID_DISTANCEMENU.Limits.menuitem.text
-msgctxt "smres.src#RID_DISTANCEMENU.Limits.menuitem.text"
-msgid "Limits"
+#: source/smres.src#RID_DISTANCEDIALOG.3.3.String.Text
+msgid  "~Denominator"
+msgstr "~Denominador"
+
+#: source/smres.src#RID_DISTANCEDIALOG.4.1.String.Text
+msgid  "Fraction bar"
+msgstr "Barra de fraccions"
+
+#: source/smres.src#RID_DISTANCEDIALOG.4.2.String.Text
+msgid  "~Excess length"
+msgstr "Longitud de l'~excés"
+
+#: source/smres.src#RID_DISTANCEDIALOG.4.3.String.Text
+msgid  "~Weight"
+msgstr "~Pes"
+
+#: source/smres.src#RID_DISTANCEDIALOG.5.1.String.Text
+msgid  "Limits"
 msgstr "Límits"
 
-#: smres.src#RID_DISTANCEMENU.Brackets.menuitem.text
-msgctxt "smres.src#RID_DISTANCEMENU.Brackets.menuitem.text"
-msgid "Brackets"
+#: source/smres.src#RID_DISTANCEDIALOG.5.2.String.Text
+msgid  "~Upper limit"
+msgstr "Límit s~uperior"
+
+#: source/smres.src#RID_DISTANCEDIALOG.5.3.String.Text
+msgid  "~Lower limit"
+msgstr "~Límit inferior"
+
+#: source/smres.src#RID_DISTANCEDIALOG.6.1.String.Text
+msgid  "Brackets"
 msgstr "Claudàtors"
 
-#: smres.src#RID_DISTANCEMENU.Matrices.menuitem.text
-msgid "Matrices"
-msgstr "Matrius"
-
-#: smres.src#RID_DISTANCEMENU.Symbols.menuitem.text
-msgctxt "smres.src#RID_DISTANCEMENU.Symbols.menuitem.text"
-msgid "Symbols"
-msgstr "Símbols"
-
-#: smres.src#RID_DISTANCEMENU.Operators.menuitem.text
-msgctxt "smres.src#RID_DISTANCEMENU.Operators.menuitem.text"
-msgid "Operators"
-msgstr "Operadors"
-
-#: smres.src#RID_DISTANCEMENU.WORKARROUND_10.menuitem.text
-msgctxt "smres.src#RID_DISTANCEMENU.WORKARROUND_10.menuitem.text"
-msgid "Borders"
-msgstr "Vores"
-
-#: smres.src#RID_FONTMENU.Variables.menuitem.text
-msgid "Variables"
-msgstr "Variables"
-
-#: smres.src#RID_FONTMENU.Functions.menuitem.text
-msgctxt "smres.src#RID_FONTMENU.Functions.menuitem.text"
-msgid "Functions"
-msgstr "Funcions"
-
-#: smres.src#RID_FONTMENU.Numbers.menuitem.text
-msgid "Numbers"
-msgstr "Números"
-
-#: smres.src#RID_FONTMENU.Text.menuitem.text
-msgid "Text"
-msgstr "Text"
-
-#: smres.src#RID_FONTMENU.Serif.menuitem.text
-msgid "Serif"
-msgstr "Serif"
-
-#: smres.src#RID_FONTMENU.Sans.menuitem.text
-msgid "Sans"
-msgstr "Sans"
-
-#: smres.src#RID_FONTMENU.Fixed.menuitem.text
-msgid "Fixed"
-msgstr "Amplada fixa"
-
-#: smres.src#CMDBOXWINDOW_TEXT.#define.text
-msgid "Commands"
-msgstr "Ordres"
-
-#: smres.src#RID_DOCUMENTSTR.string.text
-msgid "Formula"
-msgstr "Fórmula"
-
-#: smres.src#STR_STATSTR_READING.string.text
-msgid "Loading document..."
-msgstr "S'està carregant el document..."
-
-#: smres.src#STR_STATSTR_WRITING.string.text
-msgid "Saving document..."
-msgstr "S'està desant el document..."
-
-#: smres.src#STR_MATH_DOCUMENT_FULLTYPE_CURRENT.string.text
-msgid "%PRODUCTNAME %PRODUCTVERSION Formula"
-msgstr "Fórmula de l'%PRODUCTNAME %PRODUCTVERSION"
-
-#: smres.src#RID_SYMBOLFILESSTR.string.text
-msgid "Symbol files (*.sms)"
-msgstr "Fitxers de símbols (*.sms)"
-
-#: smres.src#RID_ALLFILESSTR.string.text
-msgid "All Files (*.*)"
-msgstr "Tots els fitxers (*.*)"
-
-#: smres.src#RID_ERR_IDENT.string.text
-msgid "ERROR : "
-msgstr "ERROR : "
-
-#: smres.src#RID_ERR_UNKOWN.string.text
-msgid "Unknown error occurred"
-msgstr "S'ha produït un error desconegut"
-
-#: smres.src#RID_ERR_UNEXPECTEDCHARACTER.string.text
-msgid "Unexpected character"
-msgstr "Caràcter no esperat"
-
-#: smres.src#RID_ERR_OVERFLOW.string.text
-msgid "Formula entry too complex"
-msgstr "La fórmula és massa complexa"
-
-#: smres.src#RID_ERR_LGROUPEXPECTED.string.text
-msgid "'{' expected"
-msgstr "S'esperava '{'"
-
-#: smres.src#RID_ERR_RGROUPEXPECTED.string.text
-msgid "'}' expected"
-msgstr "S'esperava '}'"
-
-#: smres.src#RID_ERR_LBRACEEXPECTED.string.text
-msgid "'(' expected"
-msgstr "S'esperava '('"
-
-#: smres.src#RID_ERR_RBRACEEXPECTED.string.text
-msgid "')' expected"
-msgstr "S'esperava ')'"
-
-#: smres.src#RID_ERR_FUNCEXPECTED.string.text
-msgid "Function expected"
-msgstr "S'esperava una funció"
-
-#: smres.src#RID_ERR_UNOPEREXPECTED.string.text
-msgid "Unary operator expected"
-msgstr "S'esperava un operador unari"
-
-#: smres.src#RID_ERR_BINOPEREXPECTED.string.text
-msgid "Binary operator expected"
-msgstr "S'esperava un operador binari"
-
-#: smres.src#RID_ERR_SYMBOLEXPECTED.string.text
-msgid "Symbol expected"
-msgstr "S'esperava un símbol"
-
-#: smres.src#RID_ERR_IDENTEXPECTED.string.text
-msgid "Identifier expected"
-msgstr "S'esperava un identificador"
-
-#: smres.src#RID_ERR_POUNDEXPECTED.string.text
-msgid "'#' expected"
-msgstr "S'esperava '#'"
-
-#: smres.src#RID_ERR_COLOREXPECTED.string.text
-msgid "Color required"
-msgstr "Es necessita un color"
-
-#: smres.src#RID_ERR_LPARENTEXPECTED.string.text
-msgid "Left limit expected"
-msgstr "S'esperava el límit per l'esquerra"
-
-#: smres.src#RID_ERR_RPARENTEXPECTED.string.text
-msgid "Right limit expected"
-msgstr "S'esperava el límit per la dreta"
-
-#: smres.src#RID_ERR_RIGHTEXPECTED.string.text
-msgid "'RIGHT' expected"
-msgstr "S'esperava 'RIGHT'"
-
-#: smres.src#RID_MATH_TOOLBOX.string.text
-msgid "Main Toolbar"
-msgstr "Barra d'eines principal"
-
-#: smres.src#RID_PRINTUIOPTIONS.1.itemlist.text
-msgid "%PRODUCTNAME %s"
-msgstr "%PRODUCTNAME %s"
-
-#: smres.src#RID_PRINTUIOPTIONS.2.itemlist.text
-msgid "Contents"
-msgstr "Contingut"
-
-#: smres.src#RID_PRINTUIOPTIONS.3.itemlist.text
-msgid "~Title"
-msgstr "~Títol"
-
-#: smres.src#RID_PRINTUIOPTIONS.4.itemlist.text
-msgctxt "smres.src#RID_PRINTUIOPTIONS.4.itemlist.text"
-msgid "~Formula text"
-msgstr "~Text de la fórmula"
-
-#: smres.src#RID_PRINTUIOPTIONS.5.itemlist.text
-msgid "B~orders"
-msgstr "V~ores"
-
-#: smres.src#RID_PRINTUIOPTIONS.6.itemlist.text
-msgid "Size"
-msgstr "Mida"
-
-#: smres.src#RID_PRINTUIOPTIONS.7.itemlist.text
-msgctxt "smres.src#RID_PRINTUIOPTIONS.7.itemlist.text"
-msgid "O~riginal size"
-msgstr "Mida o~riginal"
-
-#: smres.src#RID_PRINTUIOPTIONS.8.itemlist.text
-msgctxt "smres.src#RID_PRINTUIOPTIONS.8.itemlist.text"
-msgid "Fit to ~page"
-msgstr "Ajusta a la ~pàgina"
-
-#: smres.src#RID_PRINTUIOPTIONS.9.itemlist.text
-msgctxt "smres.src#RID_PRINTUIOPTIONS.9.itemlist.text"
-msgid "~Scaling"
-msgstr "Redimen~sionament"
-
-#: symbol.src#RID_UI_SYMBOLSET_NAMES.1.itemlist.text
-msgid "Greek"
-msgstr "Grec"
-
-#: symbol.src#RID_UI_SYMBOLSET_NAMES.2.itemlist.text
-msgid "Special"
-msgstr "Especial"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.1.itemlist.text
-msgid "alpha"
-msgstr "alfa"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.2.itemlist.text
-msgid "ALPHA"
-msgstr "ALFA"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.3.itemlist.text
-msgid "beta"
-msgstr "beta"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.4.itemlist.text
-msgid "BETA"
-msgstr "BETA"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.5.itemlist.text
-msgid "gamma"
-msgstr "gamma"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.6.itemlist.text
-msgid "GAMMA"
-msgstr "GAMMA"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.7.itemlist.text
-msgid "delta"
-msgstr "delta"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.8.itemlist.text
-msgid "DELTA"
-msgstr "DELTA"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.9.itemlist.text
-msgid "epsilon"
-msgstr "èpsilon"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.10.itemlist.text
-msgid "EPSILON"
-msgstr "ÈPSILON"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.11.itemlist.text
-msgid "zeta"
-msgstr "zeta"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.12.itemlist.text
-msgid "ZETA"
-msgstr "ZETA"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.13.itemlist.text
-msgid "eta"
-msgstr "eta"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.14.itemlist.text
-msgid "ETA"
-msgstr "ETA"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.15.itemlist.text
-msgid "theta"
-msgstr "theta"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.16.itemlist.text
-msgid "THETA"
-msgstr "THETA"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.17.itemlist.text
-msgid "iota"
-msgstr "iota"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.18.itemlist.text
-msgid "IOTA"
-msgstr "IOTA"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.19.itemlist.text
-msgid "kappa"
-msgstr "kappa"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.20.itemlist.text
-msgid "KAPPA"
-msgstr "KAPPA"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.21.itemlist.text
-msgid "lambda"
-msgstr "lambda"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.22.itemlist.text
-msgid "LAMBDA"
-msgstr "LAMBDA"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.23.itemlist.text
-msgid "mu"
-msgstr "mu"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.24.itemlist.text
-msgid "MU"
-msgstr "MU"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.25.itemlist.text
-msgid "nu"
-msgstr "nu"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.26.itemlist.text
-msgid "NU"
-msgstr "NU"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.27.itemlist.text
-msgid "xi"
-msgstr "xi"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.28.itemlist.text
-msgid "XI"
-msgstr "XI"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.29.itemlist.text
-msgid "omicron"
-msgstr "òmicron"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.30.itemlist.text
-msgid "OMICRON"
-msgstr "ÒMICRON"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.31.itemlist.text
-msgid "pi"
-msgstr "pi"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.32.itemlist.text
-msgid "PI"
-msgstr "PI"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.33.itemlist.text
-msgid "rho"
-msgstr "rho"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.34.itemlist.text
-msgid "RHO"
-msgstr "RHO"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.35.itemlist.text
-msgid "sigma"
-msgstr "sigma"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.36.itemlist.text
-msgid "SIGMA"
-msgstr "SIGMA"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.37.itemlist.text
-msgid "tau"
-msgstr "tau"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.38.itemlist.text
-msgid "TAU"
-msgstr "TAU"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.39.itemlist.text
-msgid "upsilon"
-msgstr "ípsilon"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.40.itemlist.text
-msgid "UPSILON"
-msgstr "ÍPSILON"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.41.itemlist.text
-msgid "phi"
-msgstr "fi"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.42.itemlist.text
-msgid "PHI"
-msgstr "FI"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.43.itemlist.text
-msgid "chi"
-msgstr "Khi"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.44.itemlist.text
-msgid "CHI"
-msgstr "KHI"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.45.itemlist.text
-msgid "psi"
-msgstr "psi"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.46.itemlist.text
-msgid "PSI"
-msgstr "PSI"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.47.itemlist.text
-msgid "omega"
-msgstr "omega"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.48.itemlist.text
-msgid "OMEGA"
-msgstr "OMEGA"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.49.itemlist.text
-msgid "varepsilon"
-msgstr "varèpsilon"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.50.itemlist.text
-msgid "vartheta"
-msgstr "vartheta"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.51.itemlist.text
-msgid "varpi"
-msgstr "varpi"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.52.itemlist.text
-msgid "varrho"
-msgstr "varrho"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.53.itemlist.text
-msgid "varsigma"
-msgstr "varsigma"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.54.itemlist.text
-msgid "varphi"
-msgstr "varfi"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.55.itemlist.text
-msgid "element"
-msgstr "Element"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.56.itemlist.text
-msgid "noelement"
-msgstr "No és element"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.57.itemlist.text
-msgid "strictlylessthan"
-msgstr "Estrictament menor que"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.58.itemlist.text
-msgid "strictlygreaterthan"
-msgstr "Estrictament major que"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.59.itemlist.text
-msgid "notequal"
-msgstr "No és igual"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.60.itemlist.text
-msgid "identical"
-msgstr "Idèntic"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.61.itemlist.text
-msgid "tendto"
-msgstr "Tendeix a"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.62.itemlist.text
-msgctxt "symbol.src#RID_UI_SYMBOL_NAMES.62.itemlist.text"
-msgid "infinite"
-msgstr "Infinit"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.63.itemlist.text
-msgid "angle"
-msgstr "Angle"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.64.itemlist.text
-msgid "perthousand"
-msgstr "Per mil"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.65.itemlist.text
-msgid "and"
-msgstr "I"
-
-#: symbol.src#RID_UI_SYMBOL_NAMES.66.itemlist.text
-msgid "or"
-msgstr "O"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_UNBINOPS_CAT.toolboxitem.text
-msgid "Unary/Binary Operators"
-msgstr "~Operadors unaris i binaris"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_RELATIONS_CAT.toolboxitem.text
-msgid "Relations"
-msgstr "Relacions"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_SETOPERATIONS_CAT.toolboxitem.text
-msgid "Set Operations"
-msgstr "Operacions amb conjunts"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_FUNCTIONS_CAT.toolboxitem.text
-msgctxt "toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_FUNCTIONS_CAT.toolboxitem.text"
-msgid "Functions"
-msgstr "Funcions"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_OPERATORS_CAT.toolboxitem.text
-msgctxt "toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_OPERATORS_CAT.toolboxitem.text"
-msgid "Operators"
-msgstr "Operadors"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_ATTRIBUTES_CAT.toolboxitem.text
-msgctxt "toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_ATTRIBUTES_CAT.toolboxitem.text"
-msgid "Attributes"
-msgstr "Atributs"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_MISC_CAT.toolboxitem.text
-msgid "Others"
-msgstr "Altres"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_BRACKETS_CAT.toolboxitem.text
-msgctxt "toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_BRACKETS_CAT.toolboxitem.text"
-msgid "Brackets"
-msgstr "Claudàtors"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_FORMAT_CAT.toolboxitem.text
-msgid "Formats"
-msgstr "Formats"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_PLUSX.toolboxitem.text
-msgid "+ Sign"
-msgstr "Signe +"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_MINUSX.toolboxitem.text
-msgid "- Sign"
-msgstr "Signe -"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_PLUSMINUSX.toolboxitem.text
-msgid "+- Sign"
-msgstr "Signe +-"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_MINUSPLUSX.toolboxitem.text
-msgid "-+ Sign"
-msgstr "Signe -+"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_NEGX.toolboxitem.text
-msgid "Boolean NOT"
-msgstr "NO lògic"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XPLUSY.toolboxitem.text
-msgid "Addition +"
-msgstr "Suma +"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XCDOTY.toolboxitem.text
-msgid "Multiplication (Dot )"
-msgstr "Multiplicació (punt)"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XTIMESY.toolboxitem.text
-msgid "Multiplication (x)"
-msgstr "Multiplicació (creu)"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XSYMTIMESY.toolboxitem.text
-msgid "Multiplication (*)"
-msgstr "Multiplicació (asterisc)"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XANDY.toolboxitem.text
-msgid "Boolean AND"
-msgstr "I lògic"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XMINUSY.toolboxitem.text
-msgid "Subtraction -"
-msgstr "Resta -"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XOVERY.toolboxitem.text
-msgid "Division (Fraction)"
-msgstr "Divisió (fracció)"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XDIVY.toolboxitem.text
-msgid "Division (÷)"
-msgstr "Divisió (÷)"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XSYMDIVIDEY.toolboxitem.text
-msgid "Division (Slash)"
-msgstr "Divisió (barra inclinada)"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XORY.toolboxitem.text
-msgid "Boolean OR"
-msgstr "O lògic"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XCIRCY.toolboxitem.text
-msgid "Concatenate"
-msgstr "Concatena"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XEQY.toolboxitem.text
-msgid "Is Equal"
-msgstr "És igual"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XNEQY.toolboxitem.text
-msgid "Is Not Equal"
-msgstr "No és igual"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XAPPROXY.toolboxitem.text
-msgid "Is Approximately Equal"
-msgstr "És aproximadament igual"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XDIVIDESY.toolboxitem.text
-msgid "Divides"
-msgstr "Divideix"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XNDIVIDESY.toolboxitem.text
-msgid "Does Not Divide"
-msgstr "No divideix"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XLTY.toolboxitem.text
-msgid "Is Less Than"
-msgstr "És menor que"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XGTY.toolboxitem.text
-msgid "Is Greater Than"
-msgstr "És major que"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XSIMEQY.toolboxitem.text
-msgid "Is Similar Or Equal"
-msgstr "És semblant o igual"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XPARALLELY.toolboxitem.text
-msgid "Is Parallel To"
-msgstr "És paral·lel a"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XORTHOY.toolboxitem.text
-msgid "Is Orthogonal To"
-msgstr "És ortogonal a"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XLESLANTY.toolboxitem.text
-msgctxt "toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XLESLANTY.toolboxitem.text"
-msgid "Is Less Than Or Equal To"
-msgstr "És menor o igual que"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XGESLANTY.toolboxitem.text
-msgctxt "toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XGESLANTY.toolboxitem.text"
-msgid "Is Greater Than Or Equal To"
-msgstr "És major o igual que"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XSIMY.toolboxitem.text
-msgid "Is Similar To"
-msgstr "És semblant a"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XEQUIVY.toolboxitem.text
-msgid "Is Congruent To"
-msgstr "És congruent amb"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XLEY.toolboxitem.text
-msgctxt "toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XLEY.toolboxitem.text"
-msgid "Is Less Than Or Equal To"
-msgstr "És menor o igual que"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XGEY.toolboxitem.text
-msgctxt "toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XGEY.toolboxitem.text"
-msgid "Is Greater Than Or Equal To"
-msgstr "És major o igual que"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XPROPY.toolboxitem.text
-msgid "Is Proportional To"
-msgstr "És proporcional a"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XTOWARDY.toolboxitem.text
-msgid "Toward"
-msgstr "Tendeix "
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_DLARROW.toolboxitem.text
-msgid "Double Arrow Left"
-msgstr "Fletxa doble esquerra"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_DLRARROW.toolboxitem.text
-msgid "Double Arrow Left And Right"
-msgstr "Fletxa doble esquerra i dreta"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_DRARROW.toolboxitem.text
-msgid "Double Arrow Right"
-msgstr "Fletxa doble dreta"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XINY.toolboxitem.text
-msgid "Is In"
-msgstr "Contingut a"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XNOTINY.toolboxitem.text
-msgid "Is Not In"
-msgstr "No contingut a"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XOWNSY.toolboxitem.text
-msgid "Owns"
-msgstr "Conté"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_EMPTYSET.toolboxitem.text
-msgid "Empty Set"
-msgstr "Conjunt buit"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XINTERSECTIONY.toolboxitem.text
-msgid "Intersection"
-msgstr "Intersecció"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XUNIONY.toolboxitem.text
-msgid "Union"
-msgstr "Unió"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XSETMINUSY.toolboxitem.text
-msgid "Difference"
-msgstr "Diferència"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XSLASHY.toolboxitem.text
-msgid "Quotient Set"
-msgstr "Conjunt quocient"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_ALEPH.toolboxitem.text
-msgid "Aleph"
-msgstr "Àlef"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XSUBSETY.toolboxitem.text
-msgid "Subset"
-msgstr "Subconjunt"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XSUBSETEQY.toolboxitem.text
-msgid "Subset Or Equal To"
-msgstr "Subconjunt o igual a"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XSUPSETY.toolboxitem.text
-msgid "Superset"
-msgstr "Superconjunt"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XSUPSETEQY.toolboxitem.text
-msgid "Superset Or Equal To"
-msgstr "Superconjunt o igual a"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XNSUBSETY.toolboxitem.text
-msgid "Not Subset"
-msgstr "No subconjunt"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XNSUBSETEQY.toolboxitem.text
-msgid "Not Subset Or Equal"
-msgstr "No subconjunt ni igual"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XNSUPSETY.toolboxitem.text
-msgid "Not Superset"
-msgstr "No superconjunt"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XNSUPSETEQY.toolboxitem.text
-msgid "Not Superset Or Equal"
-msgstr "No superconjunt ni igual"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_SETN.toolboxitem.text
-msgid "Natural Numbers Set"
-msgstr "Conjunt dels nombres naturals"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_SETZ.toolboxitem.text
-msgid "Integers Set"
-msgstr "Conjunt dels nombres enters"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_SETQ.toolboxitem.text
-msgid "Set of Rational Numbers"
-msgstr "Conjunt dels nombres racionals"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_SETR.toolboxitem.text
-msgid "Real Numbers Set"
-msgstr "Conjunt dels nombres reals"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_SETC.toolboxitem.text
-msgid "Complex Numbers Set"
-msgstr "Conjunt dels nombres complexos"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_EX.toolboxitem.text
-msgctxt "toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_EX.toolboxitem.text"
-msgid "Exponential Function"
-msgstr "Funció exponencial"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_LNX.toolboxitem.text
-msgid "Natural Logarithm"
-msgstr "Logaritme natural"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_EXPX.toolboxitem.text
-msgctxt "toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_EXPX.toolboxitem.text"
-msgid "Exponential Function"
-msgstr "Funció exponencial"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_LOGX.toolboxitem.text
-msgid "Logarithm"
-msgstr "Logaritme"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_RSUPX.toolboxitem.text
-msgid "Power"
-msgstr "Potència"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_SINX.toolboxitem.text
-msgid "Sine"
-msgstr "Sinus"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_COSX.toolboxitem.text
-msgid "Cosine"
-msgstr "Cosinus"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_TANX.toolboxitem.text
-msgid "Tangent"
-msgstr "Tangent"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_COTX.toolboxitem.text
-msgid "Cotangent"
-msgstr "Cotangent"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_SQRTX.toolboxitem.text
-msgid "Square Root"
-msgstr "Arrel quadrada"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARCSINX.toolboxitem.text
-msgid "Arcsine"
-msgstr "Arc sinus"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARCCOSX.toolboxitem.text
-msgid "Arccosine"
-msgstr "Arc cosinus"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARCTANX.toolboxitem.text
-msgid "Arctangent"
-msgstr "Arc tangent"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARCCOTX.toolboxitem.text
-msgid "Arccotangent"
-msgstr "Arc cotangent"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_NROOTXY.toolboxitem.text
-msgid "N-th Root"
-msgstr "Arrel enèsima"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_SINHX.toolboxitem.text
-msgid "Hyperbolic Sine"
-msgstr "Sinus hiperbòlic"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_COSHX.toolboxitem.text
-msgid "Hyperbolic Cosine"
-msgstr "Cosinus hiperbòlic"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_TANHX.toolboxitem.text
-msgid "Hyperbolic Tangent"
-msgstr "Tangent hiperbòlica"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_COTHX.toolboxitem.text
-msgid "Hyperbolic Cotangent"
-msgstr "Cotangent hiperbòlica"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ABSX.toolboxitem.text
-msgid "Absolute Value"
-msgstr "Valor absolut"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARSINHX.toolboxitem.text
-msgid "Area Hyperbolic Sine"
-msgstr "Arc sinus hiperbòlic de l'àrea"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARCOSHX.toolboxitem.text
-msgid "Area Hyperbolic Cosine"
-msgstr "Arc cosinus hiperbòlic de l'àrea"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARTANHX.toolboxitem.text
-msgid "Area Hyperbolic Tangent"
-msgstr "Arc tangent hiperbòlica de l'àrea"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARCOTHX.toolboxitem.text
-msgid "Area Hyperbolic Cotangent"
-msgstr "Arc cotangent hiperbòlica de l'àrea"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_FACTX.toolboxitem.text
-msgid "Factorial"
-msgstr "Factorial"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_LIMX.toolboxitem.text
-msgid "Limes"
-msgstr "Límit"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_SUMX.toolboxitem.text
-msgid "Sum"
-msgstr "Suma"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_PRODX.toolboxitem.text
-msgid "Product"
-msgstr "Producte"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_COPRODX.toolboxitem.text
-msgid "Coproduct"
-msgstr "Coproducte"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_FROMXTOY.toolboxitem.text
-msgid "Upper And Lower Limit"
-msgstr "Límits superior i inferior"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_INTX.toolboxitem.text
-msgid "Integral"
-msgstr "Integral"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_IINTX.toolboxitem.text
-msgid "Double Integral"
-msgstr "Integral doble"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_IIINTX.toolboxitem.text
-msgid "Triple Integral"
-msgstr "Integral triple"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_FROMX.toolboxitem.text
-msgid "Lower Limit"
-msgstr "Límit inferior"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_LINTX.toolboxitem.text
-msgid "Curve Integral"
-msgstr "Integral de línia"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_LLINTX.toolboxitem.text
-msgid "Double Curve Integral"
-msgstr "Integral de línia doble"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_LLLINTX.toolboxitem.text
-msgid "Triple Curve Integral"
-msgstr "Integral de línia triple"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_TOX.toolboxitem.text
-msgid "Upper Limit"
-msgstr "Límit superior"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_ACUTEX.toolboxitem.text
-msgid "Acute Accent"
-msgstr "Accent agut"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_GRAVEX.toolboxitem.text
-msgid "Grave Accent"
-msgstr "Accent greu"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_CHECKX.toolboxitem.text
-msgid "Reverse Circumflex"
-msgstr "Circumflex invers"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_BREVEX.toolboxitem.text
-msgid "Breve"
-msgstr "Breu"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_CIRCLEX.toolboxitem.text
-msgid "Circle"
-msgstr "Cercle"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_VECX.toolboxitem.text
-msgid "Vector Arrow"
-msgstr "Fletxa vectorial"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_TILDEX.toolboxitem.text
-msgid "Tilde"
-msgstr "Titlla"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_HATX.toolboxitem.text
-msgid "Circumflex"
-msgstr "Circumflex"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_BARX.toolboxitem.text
-msgid "Line Above"
-msgstr "Línia superior"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_DOTX.toolboxitem.text
-msgid "Dot"
-msgstr "Punt"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_WIDEVECX.toolboxitem.text
-msgid "Large Vector Arrow"
-msgstr "Fletxa vectorial llarga"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_WIDETILDEX.toolboxitem.text
-msgid "Large Tilde"
-msgstr "Titlla gran"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_WIDEHATX.toolboxitem.text
-msgid "Large Circumflex"
-msgstr "Circumflex gran"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_DDOTX.toolboxitem.text
-msgid "Double Dot"
-msgstr "Punt doble"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_OVERLINEX.toolboxitem.text
-msgid "Line Over"
-msgstr "Línia a sobre"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_UNDERLINEX.toolboxitem.text
-msgid "Line Below"
-msgstr "Línia a sota"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_OVERSTRIKEX.toolboxitem.text
-msgid "Line Through"
-msgstr "Línia a través"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_DDDOTX.toolboxitem.text
-msgid "Triple Dot"
-msgstr "Punt triple"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_PHANTOMX.toolboxitem.text
-msgid "Transparent"
-msgstr "Transparent"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_BOLDX.toolboxitem.text
-msgid "Bold Font"
-msgstr "Lletra negreta"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_ITALX.toolboxitem.text
-msgid "Italic Font"
-msgstr "Lletra cursiva"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_SIZEXY.toolboxitem.text
-msgid "Resize"
-msgstr "Canvia la mida"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_FONTXY.toolboxitem.text
-msgid "Change Font"
-msgstr "Canvia el tipus de lletra"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRPARENTX.toolboxitem.text
-msgid "Round Brackets"
-msgstr "Parèntesis"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRBRACKETX.toolboxitem.text
-msgid "Square Brackets"
-msgstr "Claudàtors"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRDBRACKETX.toolboxitem.text
-msgid "Double Square Brackets"
-msgstr "Claudàtors dobles"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRLINEX.toolboxitem.text
-msgid "Single Lines"
-msgstr "Línies simples"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRDLINEX.toolboxitem.text
-msgid "Double Lines"
-msgstr "Línies dobles"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRBRACEX.toolboxitem.text
-msgid "Braces"
-msgstr "Claus"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRANGLEX.toolboxitem.text
-msgid "Angle Brackets"
-msgstr "Parèntesis angulars"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LMRANGLEXY.toolboxitem.text
-msgid "Operator Brackets"
-msgstr "Claudàtors d'operador"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRGROUPX.toolboxitem.text
-msgid "Group Brackets"
-msgstr "Claudàtors d'agrupament"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLRPARENTX.toolboxitem.text
-msgid "Round Brackets (Scalable)"
-msgstr "Parèntesis (dimensionables)"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLRBRACKETX.toolboxitem.text
-msgid "Square Brackets (Scalable)"
-msgstr "Claudàtors (dimensionables)"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLRDBRACKETX.toolboxitem.text
-msgid "Double Square Brackets (Scalable)"
-msgstr "Claudàtors dobles (dimensionables)"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLRLINEX.toolboxitem.text
-msgid "Single Lines (Scalable)"
-msgstr "Línies simples (dimensionables)"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLRDLINEX.toolboxitem.text
-msgid "Double Lines (Scalable)"
-msgstr "Línies dobles (dimensionables)"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLRBRACEX.toolboxitem.text
-msgid "Braces (Scalable)"
-msgstr "Claus (dimensionables)"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLRANGLEX.toolboxitem.text
-msgid "Angle Brackets (Scalable)"
-msgstr "Parèntesis angulars (dimensionables)"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLMRANGLEXY.toolboxitem.text
-msgid "Operator Brackets (Scalable)"
-msgstr "Claudàtors d'operador (dimensionables)"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_XOVERBRACEY.toolboxitem.text
-msgid "Braces Top (Scalable)"
-msgstr "Claus a la part superior (dimensionables)"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_XUNDERBRACEY.toolboxitem.text
-msgid "Braces Bottom (Scalable)"
-msgstr "Claus a la part inferior (dimensionables)"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_LSUPX.toolboxitem.text
-msgid "Superscript Left"
-msgstr "Superíndex a l'esquerra"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_CSUPX.toolboxitem.text
-msgid "Superscript Top"
-msgstr "Superíndex a sobre"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_RSUPX.toolboxitem.text
-msgid "Superscript Right"
-msgstr "Superíndex a la dreta"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_BINOMXY.toolboxitem.text
-msgid "Vertical Stack (2 Elements)"
-msgstr "Pila vertical (2 elements)"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_NEWLINE.toolboxitem.text
-msgctxt "toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_NEWLINE.toolboxitem.text"
-msgid "New Line"
-msgstr "Línia nova"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_LSUBX.toolboxitem.text
-msgid "Subscript Left"
-msgstr "Subíndex a l'esquerra"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_CSUBX.toolboxitem.text
-msgid "Subscript Bottom"
-msgstr "Subíndex a sota"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_RSUBX.toolboxitem.text
-msgid "Subscript Right"
-msgstr "Subíndex a la dreta"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_STACK.toolboxitem.text
-msgid "Vertical Stack"
-msgstr "Pila vertical"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_SBLANK.toolboxitem.text
-msgctxt "toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_SBLANK.toolboxitem.text"
-msgid "Small Gap"
-msgstr "Separació petita"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_ALIGNLX.toolboxitem.text
-msgid "Align Left"
-msgstr "Alineació a l'esquerra"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_ALIGNCX.toolboxitem.text
-msgid "Align Center"
-msgstr "Alineació al centre"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_ALIGNRX.toolboxitem.text
-msgid "Align Right"
-msgstr "Alineació a la dreta"
-
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_MATRIX.toolboxitem.text
-msgid "Matrix Stack"
+#: source/smres.src#RID_DISTANCEDIALOG.6.2.String.Text
+msgid  "~Excess size (left/right)"
+msgstr "Mida de l'~excés (esquerra/dreta)"
+
+#: source/smres.src#RID_DISTANCEDIALOG.6.3.String.Text
+msgid  "~Spacing"
+msgstr "E~spaiat"
+
+#: source/smres.src#RID_DISTANCEDIALOG.6.5.String.Text
+msgid  "~Excess size"
+msgstr "Mida de l'~excés"
+
+#: source/smres.src#RID_DISTANCEDIALOG.7.1.String.Text
+msgid  "Matrix"
 msgstr "Matriu"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_BLANK.toolboxitem.text
-msgctxt "toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_BLANK.toolboxitem.text"
-msgid "Gap"
+#: source/smres.src#RID_DISTANCEDIALOG.7.2.String.Text
+msgid  "~Line spacing"
+msgstr "Inter~lineat"
+
+#: source/smres.src#RID_DISTANCEDIALOG.7.3.String.Text
+msgid  "~Column spacing"
+msgstr "Espaiat de la ~columna"
+
+#: source/smres.src#RID_DISTANCEDIALOG.8.1.String.Text
+msgid  "Symbols"
+msgstr "Símbols"
+
+#: source/smres.src#RID_DISTANCEDIALOG.8.2.String.Text
+msgid  "~Primary height"
+msgstr "Alçada ~primària"
+
+#: source/smres.src#RID_DISTANCEDIALOG.8.3.String.Text
+msgid  "~Minimum spacing"
+msgstr "Espaiat ~mínim"
+
+#: source/smres.src#RID_DISTANCEDIALOG.9.1.String.Text
+msgid  "Operators"
+msgstr "Operadors"
+
+#: source/smres.src#RID_DISTANCEDIALOG.9.2.String.Text
+msgid  "~Excess size"
+msgstr "Mida de l'~excés"
+
+#: source/smres.src#RID_DISTANCEDIALOG.9.3.String.Text
+msgid  "~Spacing"
+msgstr "E~spaiat"
+
+#: source/smres.src#RID_DISTANCEDIALOG.10.1.String.Text
+msgid  "Borders"
+msgstr "Vores"
+
+#: source/smres.src#RID_DISTANCEDIALOG.10.2.String.Text
+msgid  "~Left"
+msgstr "~Esquerra"
+
+#: source/smres.src#RID_DISTANCEDIALOG.10.3.String.Text
+msgid  "~Right"
+msgstr "~Dreta"
+
+#: source/smres.src#RID_DISTANCEDIALOG.10.4.String.Text
+msgid  "~Top"
+msgstr "~Superior"
+
+#: source/smres.src#RID_DISTANCEDIALOG.10.5.String.Text
+msgid  "~Bottom"
+msgstr "~Inferior"
+
+#: source/smres.src#RID_ALIGNDIALOG.ModalDialog.Text
+msgid  "Alignment"
+msgstr "Alineació"
+
+#: source/smres.src#RID_ALIGNDIALOG.1.RadioButton.Text
+msgid  "~Left"
+msgstr "~Esquerra"
+
+#: source/smres.src#RID_ALIGNDIALOG.2.RadioButton.Text
+msgid  "~Centered"
+msgstr "~Centrat"
+
+#: source/smres.src#RID_ALIGNDIALOG.3.RadioButton.Text
+msgid  "~Right"
+msgstr "~Dreta"
+
+#: source/smres.src#RID_ALIGNDIALOG.1.FixedLine.Text
+msgid  "Horizontal"
+msgstr "Horitzontal"
+
+#: source/smres.src#RID_ALIGNDIALOG.1.PushButton.Text
+msgid  "~Default"
+msgstr "Per ~defecte"
+
+#: source/smres.src#RID_PRINTOPTIONPAGE.TabPage.Text
+msgid  "Formula Options:Settings"
+msgstr "Opcions de fórmula: Configuració"
+
+#: source/smres.src#RID_PRINTOPTIONPAGE.FL_PRINTOPTIONS.FixedLine.Text
+msgid  "Print options"
+msgstr "Opcions d'impressió"
+
+#: source/smres.src#RID_PRINTOPTIONPAGE.CB_TITLEROW.CheckBox.Text
+msgid  "~Title row"
+msgstr "~Fila del títol"
+
+#: source/smres.src#RID_PRINTOPTIONPAGE.CB_EQUATION_TEXT.CheckBox.Text
+msgid  "~Formula text"
+msgstr "~Text de la fórmula"
+
+#: source/smres.src#RID_PRINTOPTIONPAGE.CB_FRAME.CheckBox.Text
+msgid  "B~order"
+msgstr "V~ora"
+
+#: source/smres.src#RID_PRINTOPTIONPAGE.FL_PRINT_FORMAT.FixedLine.Text
+msgid  "Print format"
+msgstr "Format d'impressió"
+
+#: source/smres.src#RID_PRINTOPTIONPAGE.RB_ORIGINAL_SIZE.RadioButton.Text
+msgid  "O~riginal size"
+msgstr "Mida o~riginal"
+
+#: source/smres.src#RID_PRINTOPTIONPAGE.RB_FIT_TO_PAGE.RadioButton.Text
+msgid  "Fit to ~page"
+msgstr "Ajusta a la ~pàgina"
+
+#: source/smres.src#RID_PRINTOPTIONPAGE.RB_ZOOM.RadioButton.Text
+msgid  "~Scaling"
+msgstr "Redimen~sionament"
+
+#: source/smres.src#RID_PRINTOPTIONPAGE.FL_MISC_OPTIONS.FixedLine.Text
+msgid  "Miscellaneous options"
+msgstr "Altres opcions"
+
+#: source/smres.src#RID_PRINTOPTIONPAGE.CB_IGNORE_SPACING.CheckBox.Text
+msgid  "Ig~nore ~~ and ` at the end of the line"
+msgstr "Ig~nora ~~ i ` a final de línia"
+
+#: source/smres.src#RID_PRINTOPTIONPAGE.CB_SAVE_ONLY_USED_SYMBOLS.CheckBox.Text
+msgid  "Embed only used symbols (smaller file size)"
+msgstr "Incrusta només els símbols utilitzats (mida del fitxer més petita)"
+
+#: source/smres.src#RID_SYMBOLDIALOG.ModalDialog.Text
+msgid  "Symbols"
+msgstr "Símbols"
+
+#: source/smres.src#RID_SYMBOLDIALOG.1.FixedText.Text
+msgid  "~Symbol set"
+msgstr "Conjunt de ~símbols"
+
+#: source/smres.src#RID_SYMBOLDIALOG.2.FixedText.Text
+msgid  "Unknown"
+msgstr "Desconegut"
+
+#: source/smres.src#RID_SYMBOLDIALOG.2.PushButton.Text
+msgid  "~Insert"
+msgstr "~Insereix"
+
+#: source/smres.src#RID_SYMBOLDIALOG.3.PushButton.Text
+msgid  "~Close"
+msgstr "~Tanca"
+
+#: source/smres.src#RID_SYMBOLDIALOG.1.PushButton.Text
+msgid  "~Edit..."
+msgstr "~Edita..."
+
+#: source/smres.src#RID_SYMDEFINEDIALOG.ModalDialog.Text
+msgid  "Edit Symbols"
+msgstr "Edita símbols"
+
+#: source/smres.src#RID_SYMDEFINEDIALOG.1.FixedText.Text
+msgid  "~Old symbol"
+msgstr "Símb~ol anterior"
+
+#: source/smres.src#RID_SYMDEFINEDIALOG.2.FixedText.Text
+msgid  "O~ld symbol set"
+msgstr "Conjunt de símbo~ls anterior"
+
+#: source/smres.src#RID_SYMDEFINEDIALOG.9.FixedText.Text
+msgid  "~Symbol"
+msgstr "~Símbol"
+
+#: source/smres.src#RID_SYMDEFINEDIALOG.10.FixedText.Text
+msgid  "Symbol s~et"
+msgstr "Con~junt de símbols"
+
+#: source/smres.src#RID_SYMDEFINEDIALOG.3.FixedText.Text
+msgid  "~Font"
+msgstr "~Tipus de lletra"
+
+#: source/smres.src#RID_SYMDEFINEDIALOG.FT_FONTS_SUBSET.FixedText.Text
+msgid  "~Subset"
+msgstr "~Subconjunt"
+
+#: source/smres.src#RID_SYMDEFINEDIALOG.4.FixedText.Text
+msgid  "~Typeface"
+msgstr "T~ipografia"
+
+#: source/smres.src#RID_SYMDEFINEDIALOG.1.PushButton.Text
+msgid  "~Add"
+msgstr "~Afegeix"
+
+#: source/smres.src#RID_SYMDEFINEDIALOG.2.PushButton.Text
+msgid  "~Modify"
+msgstr "~Modifica"
+
+#: source/smres.src#RID_SYMDEFINEDIALOG.3.PushButton.Text
+msgid  "~Delete"
+msgstr "~Suprimeix"
+
+#: source/smres.src#RID_NOMATHTYPEFACEWARNING.WarningBox.Message
+msgid  "The 'StarMath' font has not been installed.\nWithout this font %PRODUCTNAME Math cannot function correctly.\nPlease install this font and restart %PRODUCTNAME Math."
+msgstr ""
+
+#: source/smres.src#RID_DEFAULTSAVEQUERY.QueryBox.Message
+msgid  "Should the changes be saved as defaults?\n\nThese changes will apply for all new formulas."
+msgstr ""
+
+#: source/smres.src#RID_FONTREGULAR.String.Text
+msgid  "Standard"
+msgstr "Estàndard"
+
+#: source/smres.src#RID_FONTITALIC.String.Text
+msgid  "Italic"
+msgstr "Cursiva"
+
+#: source/smres.src#RID_FONTBOLD.String.Text
+msgid  "Bold"
+msgstr "Negreta"
+
+#: source/smres.src#RID_VIEWMENU.SID_VIEW050.MenuItem.Text
+msgid  "~View 50%"
+msgstr "Visualitza ~50%"
+
+#: source/smres.src#RID_VIEWMENU.SID_VIEW100.MenuItem.Text
+msgid  "View ~100%"
+msgstr "Visualitza ~100%"
+
+#: source/smres.src#RID_VIEWMENU.SID_VIEW200.MenuItem.Text
+msgid  "View ~200%"
+msgstr "Visualitza ~200%"
+
+#: source/smres.src#RID_VIEWMENU.SID_ZOOMIN.MenuItem.Text
+msgid  "~Zoom In"
+msgstr "~Amplia"
+
+#: source/smres.src#RID_VIEWMENU.SID_ZOOMOUT.MenuItem.Text
+msgid  "Zoom ~Out"
+msgstr "~Redueix"
+
+#: source/smres.src#RID_VIEWMENU.SID_ADJUST.MenuItem.Text
+msgid  "~Display All"
+msgstr "~Mostra-ho tot"
+
+#: source/smres.src#RID_VIEWMENU.SID_DRAW.MenuItem.Text
+msgid  "U~pdate"
+msgstr "Act~ualitza"
+
+#: source/smres.src#RID_DISTANCEMENU.WORKARROUND_1.MenuItem.Text
+msgid  "Spacing"
+msgstr "Espaiat"
+
+#: source/smres.src#RID_DISTANCEMENU.2.MenuItem.Text
+msgid  "Indexes"
+msgstr "Índexs"
+
+#: source/smres.src#RID_DISTANCEMENU.WORKARROUND_3.MenuItem.Text
+msgid  "Fractions"
+msgstr "Fraccions"
+
+#: source/smres.src#RID_DISTANCEMENU.4.MenuItem.Text
+msgid  "Fraction Bars"
+msgstr "Barres de fracció"
+
+#: source/smres.src#RID_DISTANCEMENU.5.MenuItem.Text
+msgid  "Limits"
+msgstr "Límits"
+
+#: source/smres.src#RID_DISTANCEMENU.6.MenuItem.Text
+msgid  "Brackets"
+msgstr "Claudàtors"
+
+#: source/smres.src#RID_DISTANCEMENU.7.MenuItem.Text
+msgid  "Matrices"
+msgstr "Matrius"
+
+#: source/smres.src#RID_DISTANCEMENU.8.MenuItem.Text
+msgid  "Symbols"
+msgstr "Símbols"
+
+#: source/smres.src#RID_DISTANCEMENU.9.MenuItem.Text
+msgid  "Operators"
+msgstr "Operadors"
+
+#: source/smres.src#RID_DISTANCEMENU.WORKARROUND_10.MenuItem.Text
+msgid  "Borders"
+msgstr "Vores"
+
+#: source/smres.src#RID_FONTMENU.1.MenuItem.Text
+msgid  "Variables"
+msgstr "Variables"
+
+#: source/smres.src#RID_FONTMENU.2.MenuItem.Text
+msgid  "Functions"
+msgstr "Funcions"
+
+#: source/smres.src#RID_FONTMENU.3.MenuItem.Text
+msgid  "Numbers"
+msgstr "Números"
+
+#: source/smres.src#RID_FONTMENU.4.MenuItem.Text
+msgid  "Text"
+msgstr "Text"
+
+#: source/smres.src#RID_FONTMENU.5.MenuItem.Text
+msgid  "Serif"
+msgstr "Serif"
+
+#: source/smres.src#RID_FONTMENU.6.MenuItem.Text
+msgid  "Sans"
+msgstr "Sans"
+
+#: source/smres.src#RID_FONTMENU.7.MenuItem.Text
+msgid  "Fixed"
+msgstr "Amplada fixa"
+
+#: source/smres.src#RID_DOCUMENTSTR.String.Text
+msgid  "Formula"
+msgstr "Fórmula"
+
+#: source/smres.src#STR_STATSTR_READING.String.Text
+msgid  "Loading document..."
+msgstr "S'està carregant el document..."
+
+#: source/smres.src#STR_STATSTR_WRITING.String.Text
+msgid  "Saving document..."
+msgstr "S'està desant el document..."
+
+#: source/smres.src#STR_MATH_DOCUMENT_FULLTYPE_CURRENT.String.Text
+msgid  "%PRODUCTNAME %PRODUCTVERSION Formula"
+msgstr "Fórmula de l'%PRODUCTNAME %PRODUCTVERSION"
+
+#: source/smres.src#RID_SYMBOLFILESSTR.String.Text
+msgid  "Symbol files (*.sms)"
+msgstr "Fitxers de símbols (*.sms)"
+
+#: source/smres.src#RID_ALLFILESSTR.String.Text
+msgid  "All Files (*.*)"
+msgstr "Tots els fitxers (*.*)"
+
+#: source/smres.src#RID_ERR_IDENT.String.Text
+msgid  "ERROR : "
+msgstr "ERROR : "
+
+#: source/smres.src#RID_ERR_UNKOWN.String.Text
+msgid  "Unknown error occurred"
+msgstr "S'ha produït un error desconegut"
+
+#: source/smres.src#RID_ERR_UNEXPECTEDCHARACTER.String.Text
+msgid  "Unexpected character"
+msgstr "Caràcter no esperat"
+
+#: source/smres.src#RID_ERR_OVERFLOW.String.Text
+msgid  "Formula entry too complex"
+msgstr "La fórmula és massa complexa"
+
+#: source/smres.src#RID_ERR_LGROUPEXPECTED.String.Text
+msgid  "'{' expected"
+msgstr "S'esperava '{'"
+
+#: source/smres.src#RID_ERR_RGROUPEXPECTED.String.Text
+msgid  "'}' expected"
+msgstr "S'esperava '}'"
+
+#: source/smres.src#RID_ERR_LBRACEEXPECTED.String.Text
+msgid  "'(' expected"
+msgstr "S'esperava '('"
+
+#: source/smres.src#RID_ERR_RBRACEEXPECTED.String.Text
+msgid  "')' expected"
+msgstr "S'esperava ')'"
+
+#: source/smres.src#RID_ERR_FUNCEXPECTED.String.Text
+msgid  "Function expected"
+msgstr "S'esperava una funció"
+
+#: source/smres.src#RID_ERR_UNOPEREXPECTED.String.Text
+msgid  "Unary operator expected"
+msgstr "S'esperava un operador unari"
+
+#: source/smres.src#RID_ERR_BINOPEREXPECTED.String.Text
+msgid  "Binary operator expected"
+msgstr "S'esperava un operador binari"
+
+#: source/smres.src#RID_ERR_SYMBOLEXPECTED.String.Text
+msgid  "Symbol expected"
+msgstr "S'esperava un símbol"
+
+#: source/smres.src#RID_ERR_IDENTEXPECTED.String.Text
+msgid  "Identifier expected"
+msgstr "S'esperava un identificador"
+
+#: source/smres.src#RID_ERR_POUNDEXPECTED.String.Text
+msgid  "'#' expected"
+msgstr "S'esperava '#'"
+
+#: source/smres.src#RID_ERR_COLOREXPECTED.String.Text
+msgid  "Color required"
+msgstr "Es necessita un color"
+
+#: source/smres.src#RID_ERR_LPARENTEXPECTED.String.Text
+msgid  "Left limit expected"
+msgstr "S'esperava el límit per l'esquerra"
+
+#: source/smres.src#RID_ERR_RPARENTEXPECTED.String.Text
+msgid  "Right limit expected"
+msgstr "S'esperava el límit per la dreta"
+
+#: source/smres.src#RID_ERR_RIGHTEXPECTED.String.Text
+msgid  "'RIGHT' expected"
+msgstr "S'esperava 'RIGHT'"
+
+#: source/smres.src#RID_MATH_TOOLBOX.String.Text
+msgid  "Main Toolbar"
+msgstr "Barra d'eines principal"
+
+#: source/smres.src#RID_PRINTUIOPTIONS.item1.ItemList.item
+msgid  "%PRODUCTNAME %s"
+msgstr "%PRODUCTNAME %s"
+
+#: source/smres.src#RID_PRINTUIOPTIONS.item2.ItemList.item
+msgid  "Contents"
+msgstr "Contingut"
+
+#: source/smres.src#RID_PRINTUIOPTIONS.item3.ItemList.item
+msgid  "~Title"
+msgstr "~Títol"
+
+#: source/smres.src#RID_PRINTUIOPTIONS.item4.ItemList.item
+msgid  "~Formula text"
+msgstr "~Text de la fórmula"
+
+#: source/smres.src#RID_PRINTUIOPTIONS.item5.ItemList.item
+msgid  "B~orders"
+msgstr "V~ores"
+
+#: source/smres.src#RID_PRINTUIOPTIONS.item6.ItemList.item
+msgid  "Size"
+msgstr "Mida"
+
+#: source/smres.src#RID_PRINTUIOPTIONS.item7.ItemList.item
+msgid  "O~riginal size"
+msgstr "Mida o~riginal"
+
+#: source/smres.src#RID_PRINTUIOPTIONS.item8.ItemList.item
+msgid  "Fit to ~page"
+msgstr "Ajusta a la ~pàgina"
+
+#: source/smres.src#RID_PRINTUIOPTIONS.item9.ItemList.item
+msgid  "~Scaling"
+msgstr "Redimen~sionament"
+
+#: source/smres.src#CMDBOXWINDOW_TEXT.#define.Text
+msgid  "Commands"
+msgstr "Ordres"
+
+#: source/commands.src#RID_COMMANDMENU.RID_UNBINOPS_MENU.MenuItem.Text
+msgid  "~Unary/Binary Operators"
+msgstr "~Operadors unaris i binaris"
+
+#: source/commands.src#RID_COMMANDMENU.RID_RELATIONS_MENU.MenuItem.Text
+msgid  "~Relations"
+msgstr "~Relacions"
+
+#: source/commands.src#RID_COMMANDMENU.RID_SETOPERATIONS_MENU.MenuItem.Text
+msgid  "~Set Operations"
+msgstr "~Operacions amb conjunts"
+
+#: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.MenuItem.Text
+msgid  "~Functions"
+msgstr "~Funcions"
+
+#: source/commands.src#RID_COMMANDMENU.RID_FUNCTIONS_MENU.RID_FUNCTIONSOTHER1_MENU.MenuItem.Text
+msgid  "More"
+msgstr "Més"
+
+#: source/commands.src#RID_COMMANDMENU.RID_OPERATORS_MENU.MenuItem.Text
+msgid  "O~perators"
+msgstr "O~peradors"
+
+#: source/commands.src#RID_COMMANDMENU.RID_ATTRIBUTES_MENU.MenuItem.Text
+msgid  "~Attributes"
+msgstr "~Atributs"
+
+#: source/commands.src#RID_COMMANDMENU.RID_BRACKETS_MENU.MenuItem.Text
+msgid  "~Brackets"
+msgstr "~Claudàtors"
+
+#: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.MenuItem.Text
+msgid  "For~mats"
+msgstr "For~mats"
+
+#: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NEWLINE.MenuItem.Text
+msgid  "New Line"
+msgstr "Línia nova"
+
+#: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_SBLANK.MenuItem.Text
+msgid  "Small Gap"
+msgstr "Separació petita"
+
+#: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_BLANK.MenuItem.Text
+msgid  "Gap"
 msgstr "Separació"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_INFINITY.toolboxitem.text
-msgctxt "toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_INFINITY.toolboxitem.text"
-msgid "infinite"
+#: source/commands.src#RID_COMMANDMENU.RID_FORMAT_MENU.RID_NOSPACE.MenuItem.Text
+msgid  "nospace {...}"
+msgstr "sense espai {...}"
+
+#: source/commands.src#RID_COMMANDMENU.RID_MISC_MENU.MenuItem.Text
+msgid  "~Others"
+msgstr "~Altres"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.FloatingWindow.Text
+msgid  "Elements"
+msgstr "Elements"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_UNBINOPS_CAT.ToolBoxItem.Text
+msgid  "Unary/Binary Operators"
+msgstr "~Operadors unaris i binaris"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_RELATIONS_CAT.ToolBoxItem.Text
+msgid  "Relations"
+msgstr "Relacions"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_SETOPERATIONS_CAT.ToolBoxItem.Text
+msgid  "Set Operations"
+msgstr "Operacions amb conjunts"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_FUNCTIONS_CAT.ToolBoxItem.Text
+msgid  "Functions"
+msgstr "Funcions"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_OPERATORS_CAT.ToolBoxItem.Text
+msgid  "Operators"
+msgstr "Operadors"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_ATTRIBUTES_CAT.ToolBoxItem.Text
+msgid  "Attributes"
+msgstr "Atributs"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_MISC_CAT.ToolBoxItem.Text
+msgid  "Others"
+msgstr "Altres"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_BRACKETS_CAT.ToolBoxItem.Text
+msgid  "Brackets"
+msgstr "Claudàtors"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CATALOG.RID_FORMAT_CAT.ToolBoxItem.Text
+msgid  "Formats"
+msgstr "Formats"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_PLUSX.ToolBoxItem.Text
+msgid  "+ Sign"
+msgstr "Signe +"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_MINUSX.ToolBoxItem.Text
+msgid  "- Sign"
+msgstr "Signe -"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_PLUSMINUSX.ToolBoxItem.Text
+msgid  "+- Sign"
+msgstr "Signe +-"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_MINUSPLUSX.ToolBoxItem.Text
+msgid  "-+ Sign"
+msgstr "Signe -+"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_NEGX.ToolBoxItem.Text
+msgid  "Boolean NOT"
+msgstr "NO lògic"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XPLUSY.ToolBoxItem.Text
+msgid  "Addition +"
+msgstr "Suma +"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XCDOTY.ToolBoxItem.Text
+msgid  "Multiplication (Dot )"
+msgstr "Multiplicació (punt)"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XTIMESY.ToolBoxItem.Text
+msgid  "Multiplication (x)"
+msgstr "Multiplicació (creu)"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XSYMTIMESY.ToolBoxItem.Text
+msgid  "Multiplication (*)"
+msgstr "Multiplicació (asterisc)"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XANDY.ToolBoxItem.Text
+msgid  "Boolean AND"
+msgstr "I lògic"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XMINUSY.ToolBoxItem.Text
+msgid  "Subtraction -"
+msgstr "Resta -"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XOVERY.ToolBoxItem.Text
+msgid  "Division (Fraction)"
+msgstr "Divisió (fracció)"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XDIVY.ToolBoxItem.Text
+msgid  "Division (÷)"
+msgstr "Divisió (÷)"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XSYMDIVIDEY.ToolBoxItem.Text
+msgid  "Division (Slash)"
+msgstr "Divisió (barra inclinada)"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XORY.ToolBoxItem.Text
+msgid  "Boolean OR"
+msgstr "O lògic"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_A.RID_XCIRCY.ToolBoxItem.Text
+msgid  "Concatenate"
+msgstr "Concatena"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XEQY.ToolBoxItem.Text
+msgid  "Is Equal"
+msgstr "És igual"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XNEQY.ToolBoxItem.Text
+msgid  "Is Not Equal"
+msgstr "No és igual"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XAPPROXY.ToolBoxItem.Text
+msgid  "Is Approximately Equal"
+msgstr "És aproximadament igual"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XDIVIDESY.ToolBoxItem.Text
+msgid  "Divides"
+msgstr "Divideix"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XNDIVIDESY.ToolBoxItem.Text
+msgid  "Does Not Divide"
+msgstr "No divideix"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XLTY.ToolBoxItem.Text
+msgid  "Is Less Than"
+msgstr "És menor que"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XGTY.ToolBoxItem.Text
+msgid  "Is Greater Than"
+msgstr "És major que"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XSIMEQY.ToolBoxItem.Text
+msgid  "Is Similar Or Equal"
+msgstr "És semblant o igual"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XPARALLELY.ToolBoxItem.Text
+msgid  "Is Parallel To"
+msgstr "És paral·lel a"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XORTHOY.ToolBoxItem.Text
+msgid  "Is Orthogonal To"
+msgstr "És ortogonal a"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XLESLANTY.ToolBoxItem.Text
+msgid  "Is Less Than Or Equal To"
+msgstr "És menor o igual que"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XGESLANTY.ToolBoxItem.Text
+msgid  "Is Greater Than Or Equal To"
+msgstr "És major o igual que"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XSIMY.ToolBoxItem.Text
+msgid  "Is Similar To"
+msgstr "És semblant a"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XEQUIVY.ToolBoxItem.Text
+msgid  "Is Congruent To"
+msgstr "És congruent amb"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XLEY.ToolBoxItem.Text
+msgid  "Is Less Than Or Equal To"
+msgstr "És menor o igual que"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XGEY.ToolBoxItem.Text
+msgid  "Is Greater Than Or Equal To"
+msgstr "És major o igual que"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XPROPY.ToolBoxItem.Text
+msgid  "Is Proportional To"
+msgstr "És proporcional a"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_XTOWARDY.ToolBoxItem.Text
+msgid  "Toward"
+msgstr "Tendeix "
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_DLARROW.ToolBoxItem.Text
+msgid  "Double Arrow Left"
+msgstr "Fletxa doble esquerra"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_DLRARROW.ToolBoxItem.Text
+msgid  "Double Arrow Left And Right"
+msgstr "Fletxa doble esquerra i dreta"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_B.RID_DRARROW.ToolBoxItem.Text
+msgid  "Double Arrow Right"
+msgstr "Fletxa doble dreta"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XINY.ToolBoxItem.Text
+msgid  "Is In"
+msgstr "Contingut a"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XNOTINY.ToolBoxItem.Text
+msgid  "Is Not In"
+msgstr "No contingut a"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XOWNSY.ToolBoxItem.Text
+msgid  "Owns"
+msgstr "Conté"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_EMPTYSET.ToolBoxItem.Text
+msgid  "Empty Set"
+msgstr "Conjunt buit"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XINTERSECTIONY.ToolBoxItem.Text
+msgid  "Intersection"
+msgstr "Intersecció"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XUNIONY.ToolBoxItem.Text
+msgid  "Union"
+msgstr "Unió"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XSETMINUSY.ToolBoxItem.Text
+msgid  "Difference"
+msgstr "Diferència"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XSLASHY.ToolBoxItem.Text
+msgid  "Quotient Set"
+msgstr "Conjunt quocient"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_ALEPH.ToolBoxItem.Text
+msgid  "Aleph"
+msgstr "Àlef"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XSUBSETY.ToolBoxItem.Text
+msgid  "Subset"
+msgstr "Subconjunt"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XSUBSETEQY.ToolBoxItem.Text
+msgid  "Subset Or Equal To"
+msgstr "Subconjunt o igual a"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XSUPSETY.ToolBoxItem.Text
+msgid  "Superset"
+msgstr "Superconjunt"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XSUPSETEQY.ToolBoxItem.Text
+msgid  "Superset Or Equal To"
+msgstr "Superconjunt o igual a"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XNSUBSETY.ToolBoxItem.Text
+msgid  "Not Subset"
+msgstr "No subconjunt"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XNSUBSETEQY.ToolBoxItem.Text
+msgid  "Not Subset Or Equal"
+msgstr "No subconjunt ni igual"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XNSUPSETY.ToolBoxItem.Text
+msgid  "Not Superset"
+msgstr "No superconjunt"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_XNSUPSETEQY.ToolBoxItem.Text
+msgid  "Not Superset Or Equal"
+msgstr "No superconjunt ni igual"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_SETN.ToolBoxItem.Text
+msgid  "Natural Numbers Set"
+msgstr "Conjunt dels nombres naturals"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_SETZ.ToolBoxItem.Text
+msgid  "Integers Set"
+msgstr "Conjunt dels nombres enters"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_SETQ.ToolBoxItem.Text
+msgid  "Set of Rational Numbers"
+msgstr "Conjunt dels nombres racionals"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_SETR.ToolBoxItem.Text
+msgid  "Real Numbers Set"
+msgstr "Conjunt dels nombres reals"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_C.RID_SETC.ToolBoxItem.Text
+msgid  "Complex Numbers Set"
+msgstr "Conjunt dels nombres complexos"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_EX.ToolBoxItem.Text
+msgid  "Exponential Function"
+msgstr "Funció exponencial"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_LNX.ToolBoxItem.Text
+msgid  "Natural Logarithm"
+msgstr "Logaritme natural"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_EXPX.ToolBoxItem.Text
+msgid  "Exponential Function"
+msgstr "Funció exponencial"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_LOGX.ToolBoxItem.Text
+msgid  "Logarithm"
+msgstr "Logaritme"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_RSUPX.ToolBoxItem.Text
+msgid  "Power"
+msgstr "Potència"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_SINX.ToolBoxItem.Text
+msgid  "Sine"
+msgstr "Sinus"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_COSX.ToolBoxItem.Text
+msgid  "Cosine"
+msgstr "Cosinus"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_TANX.ToolBoxItem.Text
+msgid  "Tangent"
+msgstr "Tangent"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_COTX.ToolBoxItem.Text
+msgid  "Cotangent"
+msgstr "Cotangent"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_SQRTX.ToolBoxItem.Text
+msgid  "Square Root"
+msgstr "Arrel quadrada"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARCSINX.ToolBoxItem.Text
+msgid  "Arcsine"
+msgstr "Arc sinus"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARCCOSX.ToolBoxItem.Text
+msgid  "Arccosine"
+msgstr "Arc cosinus"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARCTANX.ToolBoxItem.Text
+msgid  "Arctangent"
+msgstr "Arc tangent"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARCCOTX.ToolBoxItem.Text
+msgid  "Arccotangent"
+msgstr "Arc cotangent"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_NROOTXY.ToolBoxItem.Text
+msgid  "N-th Root"
+msgstr "Arrel enèsima"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_SINHX.ToolBoxItem.Text
+msgid  "Hyperbolic Sine"
+msgstr "Sinus hiperbòlic"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_COSHX.ToolBoxItem.Text
+msgid  "Hyperbolic Cosine"
+msgstr "Cosinus hiperbòlic"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_TANHX.ToolBoxItem.Text
+msgid  "Hyperbolic Tangent"
+msgstr "Tangent hiperbòlica"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_COTHX.ToolBoxItem.Text
+msgid  "Hyperbolic Cotangent"
+msgstr "Cotangent hiperbòlica"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ABSX.ToolBoxItem.Text
+msgid  "Absolute Value"
+msgstr "Valor absolut"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARSINHX.ToolBoxItem.Text
+msgid  "Area Hyperbolic Sine"
+msgstr "Arc sinus hiperbòlic de l'àrea"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARCOSHX.ToolBoxItem.Text
+msgid  "Area Hyperbolic Cosine"
+msgstr "Arc cosinus hiperbòlic de l'àrea"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARTANHX.ToolBoxItem.Text
+msgid  "Area Hyperbolic Tangent"
+msgstr "Arc tangent hiperbòlica de l'àrea"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_ARCOTHX.ToolBoxItem.Text
+msgid  "Area Hyperbolic Cotangent"
+msgstr "Arc cotangent hiperbòlica de l'àrea"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_D.RID_FACTX.ToolBoxItem.Text
+msgid  "Factorial"
+msgstr "Factorial"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_LIMX.ToolBoxItem.Text
+msgid  "Limes"
+msgstr "Límit"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_SUMX.ToolBoxItem.Text
+msgid  "Sum"
+msgstr "Suma"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_PRODX.ToolBoxItem.Text
+msgid  "Product"
+msgstr "Producte"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_COPRODX.ToolBoxItem.Text
+msgid  "Coproduct"
+msgstr "Coproducte"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_FROMXTOY.ToolBoxItem.Text
+msgid  "Upper And Lower Limit"
+msgstr "Límits superior i inferior"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_INTX.ToolBoxItem.Text
+msgid  "Integral"
+msgstr "Integral"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_IINTX.ToolBoxItem.Text
+msgid  "Double Integral"
+msgstr "Integral doble"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_IIINTX.ToolBoxItem.Text
+msgid  "Triple Integral"
+msgstr "Integral triple"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_FROMX.ToolBoxItem.Text
+msgid  "Lower Limit"
+msgstr "Límit inferior"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_LINTX.ToolBoxItem.Text
+msgid  "Curve Integral"
+msgstr "Integral de línia"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_LLINTX.ToolBoxItem.Text
+msgid  "Double Curve Integral"
+msgstr "Integral de línia doble"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_LLLINTX.ToolBoxItem.Text
+msgid  "Triple Curve Integral"
+msgstr "Integral de línia triple"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_E.RID_TOX.ToolBoxItem.Text
+msgid  "Upper Limit"
+msgstr "Límit superior"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_ACUTEX.ToolBoxItem.Text
+msgid  "Acute Accent"
+msgstr "Accent agut"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_GRAVEX.ToolBoxItem.Text
+msgid  "Grave Accent"
+msgstr "Accent greu"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_CHECKX.ToolBoxItem.Text
+msgid  "Reverse Circumflex"
+msgstr "Circumflex invers"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_BREVEX.ToolBoxItem.Text
+msgid  "Breve"
+msgstr "Breu"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_CIRCLEX.ToolBoxItem.Text
+msgid  "Circle"
+msgstr "Cercle"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_VECX.ToolBoxItem.Text
+msgid  "Vector Arrow"
+msgstr "Fletxa vectorial"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_TILDEX.ToolBoxItem.Text
+msgid  "Tilde"
+msgstr "Titlla"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_HATX.ToolBoxItem.Text
+msgid  "Circumflex"
+msgstr "Circumflex"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_BARX.ToolBoxItem.Text
+msgid  "Line Above"
+msgstr "Línia superior"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_DOTX.ToolBoxItem.Text
+msgid  "Dot"
+msgstr "Punt"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_WIDEVECX.ToolBoxItem.Text
+msgid  "Large Vector Arrow"
+msgstr "Fletxa vectorial llarga"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_WIDETILDEX.ToolBoxItem.Text
+msgid  "Large Tilde"
+msgstr "Titlla gran"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_WIDEHATX.ToolBoxItem.Text
+msgid  "Large Circumflex"
+msgstr "Circumflex gran"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_DDOTX.ToolBoxItem.Text
+msgid  "Double Dot"
+msgstr "Punt doble"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_OVERLINEX.ToolBoxItem.Text
+msgid  "Line Over"
+msgstr "Línia a sobre"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_UNDERLINEX.ToolBoxItem.Text
+msgid  "Line Below"
+msgstr "Línia a sota"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_OVERSTRIKEX.ToolBoxItem.Text
+msgid  "Line Through"
+msgstr "Línia a través"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_DDDOTX.ToolBoxItem.Text
+msgid  "Triple Dot"
+msgstr "Punt triple"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_PHANTOMX.ToolBoxItem.Text
+msgid  "Transparent"
+msgstr "Transparent"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_BOLDX.ToolBoxItem.Text
+msgid  "Bold Font"
+msgstr "Lletra negreta"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_ITALX.ToolBoxItem.Text
+msgid  "Italic Font"
+msgstr "Lletra cursiva"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_SIZEXY.ToolBoxItem.Text
+msgid  "Resize"
+msgstr "Canvia la mida"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_F.RID_FONTXY.ToolBoxItem.Text
+msgid  "Change Font"
+msgstr "Canvia el tipus de lletra"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRPARENTX.ToolBoxItem.Text
+msgid  "Round Brackets"
+msgstr "Parèntesis"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRBRACKETX.ToolBoxItem.Text
+msgid  "Square Brackets"
+msgstr "Claudàtors"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRDBRACKETX.ToolBoxItem.Text
+msgid  "Double Square Brackets"
+msgstr "Claudàtors dobles"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRLINEX.ToolBoxItem.Text
+msgid  "Single Lines"
+msgstr "Línies simples"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRDLINEX.ToolBoxItem.Text
+msgid  "Double Lines"
+msgstr "Línies dobles"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRBRACEX.ToolBoxItem.Text
+msgid  "Braces"
+msgstr "Claus"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRANGLEX.ToolBoxItem.Text
+msgid  "Angle Brackets"
+msgstr "Parèntesis angulars"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LMRANGLEXY.ToolBoxItem.Text
+msgid  "Operator Brackets"
+msgstr "Claudàtors d'operador"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_LRGROUPX.ToolBoxItem.Text
+msgid  "Group Brackets"
+msgstr "Claudàtors d'agrupament"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLRPARENTX.ToolBoxItem.Text
+msgid  "Round Brackets (Scalable)"
+msgstr "Parèntesis (dimensionables)"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLRBRACKETX.ToolBoxItem.Text
+msgid  "Square Brackets (Scalable)"
+msgstr "Claudàtors (dimensionables)"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLRDBRACKETX.ToolBoxItem.Text
+msgid  "Double Square Brackets (Scalable)"
+msgstr "Claudàtors dobles (dimensionables)"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLRLINEX.ToolBoxItem.Text
+msgid  "Single Lines (Scalable)"
+msgstr "Línies simples (dimensionables)"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLRDLINEX.ToolBoxItem.Text
+msgid  "Double Lines (Scalable)"
+msgstr "Línies dobles (dimensionables)"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLRBRACEX.ToolBoxItem.Text
+msgid  "Braces (Scalable)"
+msgstr "Claus (dimensionables)"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLRANGLEX.ToolBoxItem.Text
+msgid  "Angle Brackets (Scalable)"
+msgstr "Parèntesis angulars (dimensionables)"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_SLMRANGLEXY.ToolBoxItem.Text
+msgid  "Operator Brackets (Scalable)"
+msgstr "Claudàtors d'operador (dimensionables)"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_XOVERBRACEY.ToolBoxItem.Text
+msgid  "Braces Top (Scalable)"
+msgstr "Claus a la part superior (dimensionables)"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_G.RID_XUNDERBRACEY.ToolBoxItem.Text
+msgid  "Braces Bottom (Scalable)"
+msgstr "Claus a la part inferior (dimensionables)"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_LSUPX.ToolBoxItem.Text
+msgid  "Superscript Left"
+msgstr "Superíndex a l'esquerra"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_CSUPX.ToolBoxItem.Text
+msgid  "Superscript Top"
+msgstr "Superíndex a sobre"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_RSUPX.ToolBoxItem.Text
+msgid  "Superscript Right"
+msgstr "Superíndex a la dreta"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_BINOMXY.ToolBoxItem.Text
+msgid  "Vertical Stack (2 Elements)"
+msgstr "Pila vertical (2 elements)"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_NEWLINE.ToolBoxItem.Text
+msgid  "New Line"
+msgstr "Línia nova"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_LSUBX.ToolBoxItem.Text
+msgid  "Subscript Left"
+msgstr "Subíndex a l'esquerra"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_CSUBX.ToolBoxItem.Text
+msgid  "Subscript Bottom"
+msgstr "Subíndex a sota"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_RSUBX.ToolBoxItem.Text
+msgid  "Subscript Right"
+msgstr "Subíndex a la dreta"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_STACK.ToolBoxItem.Text
+msgid  "Vertical Stack"
+msgstr "Pila vertical"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_SBLANK.ToolBoxItem.Text
+msgid  "Small Gap"
+msgstr "Separació petita"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_ALIGNLX.ToolBoxItem.Text
+msgid  "Align Left"
+msgstr "Alineació a l'esquerra"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_ALIGNCX.ToolBoxItem.Text
+msgid  "Align Center"
+msgstr "Alineació al centre"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_ALIGNRX.ToolBoxItem.Text
+msgid  "Align Right"
+msgstr "Alineació a la dreta"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_MATRIX.ToolBoxItem.Text
+msgid  "Matrix Stack"
+msgstr "Matriu"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_H.RID_BLANK.ToolBoxItem.Text
+msgid  "Gap"
+msgstr "Separació"
+
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_INFINITY.ToolBoxItem.Text
+msgid  "infinite"
 msgstr "Infinit"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_PARTIAL.toolboxitem.text
-msgid "Partial"
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_PARTIAL.ToolBoxItem.Text
+msgid  "Partial"
 msgstr "Parcial"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_NABLA.toolboxitem.text
-msgid "Nabla"
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_NABLA.ToolBoxItem.Text
+msgid  "Nabla"
 msgstr "Nabla"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_EXISTS.toolboxitem.text
-msgid "There Exists"
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_EXISTS.ToolBoxItem.Text
+msgid  "There Exists"
 msgstr "Existeix"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_FORALL.toolboxitem.text
-msgid "For All"
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_FORALL.ToolBoxItem.Text
+msgid  "For All"
 msgstr "Per a tots"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_HBAR.toolboxitem.text
-msgid "h Bar"
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_HBAR.ToolBoxItem.Text
+msgid  "h Bar"
 msgstr "h barrada"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_LAMBDABAR.toolboxitem.text
-msgid "Lambda Bar"
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_LAMBDABAR.ToolBoxItem.Text
+msgid  "Lambda Bar"
 msgstr "Lambda barrada"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_RE.toolboxitem.text
-msgid "Real Part"
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_RE.ToolBoxItem.Text
+msgid  "Real Part"
 msgstr "Part real"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_IM.toolboxitem.text
-msgid "Imaginary Part"
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_IM.ToolBoxItem.Text
+msgid  "Imaginary Part"
 msgstr "Part imaginària"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_WP.toolboxitem.text
-msgid "Weierstrass p"
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_WP.ToolBoxItem.Text
+msgid  "Weierstrass p"
 msgstr "p de Weierstrass"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_LEFTARROW.toolboxitem.text
-msgid "Left Arrow"
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_LEFTARROW.ToolBoxItem.Text
+msgid  "Left Arrow"
 msgstr "Fletxa esquerra"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_RIGHTARROW.toolboxitem.text
-msgid "Right Arrow"
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_RIGHTARROW.ToolBoxItem.Text
+msgid  "Right Arrow"
 msgstr "Fletxa dreta"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_UPARROW.toolboxitem.text
-msgid "Up Arrow"
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_UPARROW.ToolBoxItem.Text
+msgid  "Up Arrow"
 msgstr "Fletxa amunt"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_DOWNARROW.toolboxitem.text
-msgid "Down Arrow"
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_DOWNARROW.ToolBoxItem.Text
+msgid  "Down Arrow"
 msgstr "Fletxa avall"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_DOTSLOW.toolboxitem.text
-msgid "Dots At Bottom"
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_DOTSLOW.ToolBoxItem.Text
+msgid  "Dots At Bottom"
 msgstr "Punts per sota"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_DOTSAXIS.toolboxitem.text
-msgid "Dots In Middle"
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_DOTSAXIS.ToolBoxItem.Text
+msgid  "Dots In Middle"
 msgstr "Punts al mig"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_DOTSVERT.toolboxitem.text
-msgid "Dots Vertically"
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_DOTSVERT.ToolBoxItem.Text
+msgid  "Dots Vertically"
 msgstr "Punts en vertical"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_DOTSUP.toolboxitem.text
-msgid "Dots To Top"
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_DOTSUP.ToolBoxItem.Text
+msgid  "Dots To Top"
 msgstr "Punts cap amunt"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_DOTSDOWN.toolboxitem.text
-msgid "Dots to Bottom"
+#: source/toolbox.src#RID_TOOLBOXWINDOW.TOOLBOX_CAT_I.RID_DOTSDOWN.ToolBoxItem.Text
+msgid  "Dots to Bottom"
 msgstr "Punts cap avall"
 
-#: toolbox.src#RID_TOOLBOXWINDOW.floatingwindow.text
-msgid "Elements"
-msgstr "Elements"
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOLSET_NAMES.item1.ItemList.item
+msgid  "Greek"
+msgstr "Grec"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOLSET_NAMES.item2.ItemList.item
+msgid  "Special"
+msgstr "Especial"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item1.ItemList.item
+msgid  "alpha"
+msgstr "alfa"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item2.ItemList.item
+msgid  "ALPHA"
+msgstr "ALFA"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item3.ItemList.item
+msgid  "beta"
+msgstr "beta"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item4.ItemList.item
+msgid  "BETA"
+msgstr "BETA"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item5.ItemList.item
+msgid  "gamma"
+msgstr "gamma"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item6.ItemList.item
+msgid  "GAMMA"
+msgstr "GAMMA"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item7.ItemList.item
+msgid  "delta"
+msgstr "delta"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item8.ItemList.item
+msgid  "DELTA"
+msgstr "DELTA"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item9.ItemList.item
+msgid  "epsilon"
+msgstr "èpsilon"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item10.ItemList.item
+msgid  "EPSILON"
+msgstr "ÈPSILON"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item11.ItemList.item
+msgid  "zeta"
+msgstr "zeta"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item12.ItemList.item
+msgid  "ZETA"
+msgstr "ZETA"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item13.ItemList.item
+msgid  "eta"
+msgstr "eta"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item14.ItemList.item
+msgid  "ETA"
+msgstr "ETA"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item15.ItemList.item
+msgid  "theta"
+msgstr "theta"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item16.ItemList.item
+msgid  "THETA"
+msgstr "THETA"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item17.ItemList.item
+msgid  "iota"
+msgstr "iota"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item18.ItemList.item
+msgid  "IOTA"
+msgstr "IOTA"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item19.ItemList.item
+msgid  "kappa"
+msgstr "kappa"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item20.ItemList.item
+msgid  "KAPPA"
+msgstr "KAPPA"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item21.ItemList.item
+msgid  "lambda"
+msgstr "lambda"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item22.ItemList.item
+msgid  "LAMBDA"
+msgstr "LAMBDA"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item23.ItemList.item
+msgid  "mu"
+msgstr "mu"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item24.ItemList.item
+msgid  "MU"
+msgstr "MU"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item25.ItemList.item
+msgid  "nu"
+msgstr "nu"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item26.ItemList.item
+msgid  "NU"
+msgstr "NU"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item27.ItemList.item
+msgid  "xi"
+msgstr "xi"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item28.ItemList.item
+msgid  "XI"
+msgstr "XI"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item29.ItemList.item
+msgid  "omicron"
+msgstr "òmicron"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item30.ItemList.item
+msgid  "OMICRON"
+msgstr "ÒMICRON"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item31.ItemList.item
+msgid  "pi"
+msgstr "pi"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item32.ItemList.item
+msgid  "PI"
+msgstr "PI"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item33.ItemList.item
+msgid  "rho"
+msgstr "rho"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item34.ItemList.item
+msgid  "RHO"
+msgstr "RHO"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item35.ItemList.item
+msgid  "sigma"
+msgstr "sigma"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item36.ItemList.item
+msgid  "SIGMA"
+msgstr "SIGMA"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item37.ItemList.item
+msgid  "tau"
+msgstr "tau"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item38.ItemList.item
+msgid  "TAU"
+msgstr "TAU"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item39.ItemList.item
+msgid  "upsilon"
+msgstr "ípsilon"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item40.ItemList.item
+msgid  "UPSILON"
+msgstr "ÍPSILON"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item41.ItemList.item
+msgid  "phi"
+msgstr "fi"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item42.ItemList.item
+msgid  "PHI"
+msgstr "FI"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item43.ItemList.item
+msgid  "chi"
+msgstr "Khi"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item44.ItemList.item
+msgid  "CHI"
+msgstr "KHI"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item45.ItemList.item
+msgid  "psi"
+msgstr "psi"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item46.ItemList.item
+msgid  "PSI"
+msgstr "PSI"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item47.ItemList.item
+msgid  "omega"
+msgstr "omega"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item48.ItemList.item
+msgid  "OMEGA"
+msgstr "OMEGA"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item49.ItemList.item
+msgid  "varepsilon"
+msgstr "varèpsilon"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item50.ItemList.item
+msgid  "vartheta"
+msgstr "vartheta"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item51.ItemList.item
+msgid  "varpi"
+msgstr "varpi"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item52.ItemList.item
+msgid  "varrho"
+msgstr "varrho"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item53.ItemList.item
+msgid  "varsigma"
+msgstr "varsigma"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item54.ItemList.item
+msgid  "varphi"
+msgstr "varfi"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item55.ItemList.item
+msgid  "element"
+msgstr "Element"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item56.ItemList.item
+msgid  "noelement"
+msgstr "No és element"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item57.ItemList.item
+msgid  "strictlylessthan"
+msgstr "Estrictament menor que"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item58.ItemList.item
+msgid  "strictlygreaterthan"
+msgstr "Estrictament major que"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item59.ItemList.item
+msgid  "notequal"
+msgstr "No és igual"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item60.ItemList.item
+msgid  "identical"
+msgstr "Idèntic"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item61.ItemList.item
+msgid  "tendto"
+msgstr "Tendeix a"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item62.ItemList.item
+msgid  "infinite"
+msgstr "Infinit"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item63.ItemList.item
+msgid  "angle"
+msgstr "Angle"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item64.ItemList.item
+msgid  "perthousand"
+msgstr "Per mil"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item65.ItemList.item
+msgid  "and"
+msgstr "I"
+
+#: source/symbol.src#RID_LOCALIZED_NAMES.RID_UI_SYMBOL_NAMES.item66.ItemList.item
+msgid  "or"
+msgstr "O"

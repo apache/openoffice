@@ -1,258 +1,272 @@
-
-#: strings.src#RID_BASELISTBOX_ERROR_FILLLIST.string.text
-msgid "The contents of a combo box or list field could not be determined."
-msgstr "Ni mogoče določiti vsebine kombiniranega polja ali polja seznama."
-
-#: strings.src#RID_ERR_LOADING_FORM.string.text
-msgid "The data content could not be loaded."
-msgstr "Ni mogoče naložiti podatkov."
-
-#: strings.src#RID_ERR_REFRESHING_FORM.string.text
-msgid "The data content could not be updated"
-msgstr "Ni mogoče posodobiti podatkov"
-
-#: strings.src#RID_STR_CLEAR_GRAPHICS.string.text
-msgid "Remove graphics"
-msgstr "Odstrani grafike"
-
-#: strings.src#RID_STR_CONNECTERROR.string.text
-msgid "Connection failed"
-msgstr "Povezava ni uspela"
-
-#: strings.src#RID_STR_CONTROL_SUBSTITUTED_EPXPLAIN.string.text
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
 msgid ""
-"An error occurred while this control was being loaded. It was therefore "
-"replaced with a placeholder."
 msgstr ""
-"Pri nalaganju kontrolnika je prišlo do napake, zato je bil zamenjan z "
-"ogrado."
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
 
-#: strings.src#RID_STR_CONTROL_SUBSTITUTED_NAME.string.text
-msgid "substituted"
-msgstr "nadomeščeno"
 
-#: strings.src#RID_STR_COULD_NOT_SET_FILTER.string.text
-msgid "Error setting the filter criteria"
-msgstr "Napaka pri nastavljanju pogojev filtriranja"
-
-#: strings.src#RID_STR_COULD_NOT_SET_ORDER.string.text
-msgid "Error setting the sort criteria"
-msgstr "Napaka pri nastavljanju pogojev razvrščanja"
-
-#: strings.src#RID_STR_ERR_DELETERECORD.string.text
-msgid "Error deleting the current record"
-msgstr "Napaka pri brisanju trenutnega zapisa"
-
-#: strings.src#RID_STR_ERR_DELETERECORDS.string.text
-msgid "Error deleting the specified records"
-msgstr "Napaka pri brisanju navedenih zapisov"
-
-#: strings.src#RID_STR_ERR_INSERTRECORD.string.text
-msgid "Error inserting the new record"
-msgstr "Napaka pri vstavljanju novega zapisa"
-
-#: strings.src#RID_STR_ERR_UPDATERECORD.string.text
-msgid "Error updating the current record"
-msgstr "Napaka pri posodabljanju trenutnega zapisa"
-
-#: strings.src#RID_STR_FEATURE_NOT_EXECUTABLE.string.text
-msgid "This function cannot be executed, but is only for status queries."
-msgstr "Ta funkcija ni izvedljiva, namenjena je le za povpraševanje stanja."
-
-#: strings.src#RID_STR_FEATURE_REQUIRES_PARAMETERS.string.text
-msgid "To execute this function, parameters are needed."
-msgstr "Za izvedbo te funkcije so potrebni parametri."
-
-#: strings.src#RID_STR_FEATURE_UNKNOWN.string.text
-msgid "Unknown function."
-msgstr "Neznana funkcija."
-
-#: strings.src#RID_STR_IMPORT_GRAPHIC.string.text
-msgid "Insert graphics"
-msgstr "Vstavi sliko"
-
-#: strings.src#RID_STR_INCOMPATIBLE_TYPES.string.text
-msgid ""
-"The value types supported by the binding cannot be used for exchanging data "
-"with this control."
-msgstr ""
-"Vrst vrednosti, ki jih podpira vezava, ni mogoče uporabiti za izmenjavo "
-"podatkov s tem kontrolnikom."
-
-#: strings.src#RID_STR_INVALIDSTREAM.string.text
-msgid "The given stream is invalid."
-msgstr "Podani tok ni veljaven."
-
-#: strings.src#RID_STR_INVALID_VALIDATOR.string.text
-msgid ""
-"The control is connected to an external value binding, which at the same "
-"time acts as validator. You need to revoke the value binding, before you can "
-"set a new validator."
-msgstr ""
-"Kontrolnik je povezan na vezavo zunanje vrednosti, ki hkrati deluje kot "
-"validator. Preden nastavite nov validator, morate preklicati trenutno vezavo "
-"vrednosti."
-
-#: strings.src#RID_STR_LABEL_OF.string.text
-msgid "of"
-msgstr "od"
-
-#: strings.src#RID_STR_LABEL_RECORD.string.text
-msgid "Record"
-msgstr "Zapis"
-
-#: strings.src#RID_STR_NEED_NON_NULL_OBJECT.string.text
-msgid "The object cannot be NULL."
-msgstr "Predmet ne more biti NULL."
-
-#: strings.src#RID_STR_OPEN_GRAPHICS.string.text
-msgid "Insert graphics from..."
-msgstr "Vstavi grafike iz ..."
-
-#: strings.src#RID_STR_QUERY_SAVE_MODIFIED_ROW.string.text
-msgid ""
-"The content of the current form has been modified.\n"
-"Do you want to save your changes?"
-msgstr ""
-"Vsebina trenutnega obrazca je bila spremenjena.\n"
-"Želite shraniti spremembe?"
-
-#: strings.src#RID_STR_READERROR.string.text
-msgid "Error reading data from database"
-msgstr "Napaka pri branju podatkov iz zbirke podatkov"
-
-#: strings.src#RID_STR_SYNTAXERROR.string.text
-msgid "Syntax error in query expression"
-msgstr "Napaka v skladnji poizvedbe"
-
-#: xforms.src#RID_STR_DATATYPE_BOOLEAN.string.text
-msgid "True/False (Boolean)"
-msgstr "True/false (logična vrednost)"
-
-#: xforms.src#RID_STR_DATATYPE_DATE.string.text
-msgid "Date"
-msgstr "Datum"
-
-#: xforms.src#RID_STR_DATATYPE_DATETIME.string.text
-msgid "Date and Time"
-msgstr "Datum in čas"
-
-#: xforms.src#RID_STR_DATATYPE_DAY.string.text
-msgid "Day"
-msgstr "Dan"
-
-#: xforms.src#RID_STR_DATATYPE_DECIMAL.string.text
-msgid "Decimal"
-msgstr "Decimalno"
-
-#: xforms.src#RID_STR_DATATYPE_DOUBLE.string.text
-msgid "Double"
-msgstr "Dvojno"
-
-#: xforms.src#RID_STR_DATATYPE_FLOAT.string.text
-msgid "Floating point"
-msgstr "Št. s plavajočo vejico"
-
-#: xforms.src#RID_STR_DATATYPE_MONTH.string.text
-msgid "Month"
-msgstr "Mesec"
-
-#: xforms.src#RID_STR_DATATYPE_MONTHDAY.string.text
-msgid "Month and day"
-msgstr "Mesec in dan"
-
-#: xforms.src#RID_STR_DATATYPE_STRING.string.text
-msgid "String"
-msgstr "Niz"
-
-#: xforms.src#RID_STR_DATATYPE_TIME.string.text
-msgid "Time"
-msgstr "Čas"
-
-#: xforms.src#RID_STR_DATATYPE_URL.string.text
-msgid "Hyperlink"
-msgstr "Hiperpovezava"
-
-#: xforms.src#RID_STR_DATATYPE_YEAR.string.text
-msgid "Year"
-msgstr "Leto"
-
-#: xforms.src#RID_STR_DATATYPE_YEARMONTH.string.text
-msgid "Month and year"
-msgstr "Mesec in leto"
-
-#: xforms.src#RID_STR_XFORMS_BINDING_UI_NAME.string.text
-msgid "Binding"
-msgstr "Vezava"
-
-#: xforms.src#RID_STR_XFORMS_CANT_EVALUATE.string.text
-msgid "Error during evaluation"
-msgstr "Napaka pri vrednotenju"
-
-#: xforms.src#RID_STR_XFORMS_INVALID_BINDING_EXPRESSION.string.text
-msgid "This is an invalid binding expression."
-msgstr "Ta vezavni izraz ni veljaven."
-
-#: xforms.src#RID_STR_XFORMS_INVALID_CONSTRAINT.string.text
-msgid "The constraint '$1' not validated."
-msgstr "Omejitev '$1' ni bila potrjena."
-
-#: xforms.src#RID_STR_XFORMS_INVALID_VALUE.string.text
-msgid "Value is invalid."
-msgstr "Vrednost ni veljavna."
-
-#: xforms.src#RID_STR_XFORMS_NO_BINDING_EXPRESSION.string.text
-msgid "Please enter a binding expression."
+#: source/resource/xforms.src#RID_STR_XFORMS_NO_BINDING_EXPRESSION.String.Text
+msgid  "Please enter a binding expression."
 msgstr "Vnesite vezavni izraz."
 
-#: xforms.src#RID_STR_XFORMS_PATTERN_DOESNT_MATCH.string.text
-msgid "The string '$1' does not match the required regular expression '$2'."
-msgstr "Niz '$1' se ne ujema z zahtevanim regularnim izrazom '$2'."
+#: source/resource/xforms.src#RID_STR_XFORMS_INVALID_BINDING_EXPRESSION.String.Text
+msgid  "This is an invalid binding expression."
+msgstr "Ta vezavni izraz ni veljaven."
 
-#: xforms.src#RID_STR_XFORMS_REQUIRED.string.text
-msgid "A value is required."
+#: source/resource/xforms.src#RID_STR_XFORMS_INVALID_VALUE.String.Text
+msgid  "Value is invalid."
+msgstr "Vrednost ni veljavna."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_REQUIRED.String.Text
+msgid  "A value is required."
 msgstr "Zahtevana je vrednost."
 
-#: xforms.src#RID_STR_XFORMS_VALUE_FRACTION_DIGITS.string.text
-msgid "$2 fraction digits allowed at most."
-msgstr "Dovoljenih je največ $2 desetiških števk."
+#: source/resource/xforms.src#RID_STR_XFORMS_INVALID_CONSTRAINT.String.Text
+msgid  "The constraint '$1' not validated."
+msgstr "Omejitev '$1' ni bila potrjena."
 
-#: xforms.src#RID_STR_XFORMS_VALUE_IS_NOT_A.string.text
-msgid "The value is not of the type '$2'."
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_IS_NOT_A.String.Text
+msgid  "The value is not of the type '$2'."
 msgstr "Vrednost ni vrste '$2'."
 
-#: xforms.src#RID_STR_XFORMS_VALUE_LENGTH.string.text
-msgid "The string must be $2 characters long."
-msgstr "Niz mora vsebovati $2 znakov."
-
-#: xforms.src#RID_STR_XFORMS_VALUE_MAX_EXCL.string.text
-msgid "The value must be smaller than $2."
-msgstr "Vrednost mora biti manjša od $2."
-
-#: xforms.src#RID_STR_XFORMS_VALUE_MAX_INCL.string.text
-msgid "The value must be smaller than or equal to $2."
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_INCL.String.Text
+msgid  "The value must be smaller than or equal to $2."
 msgstr "Vrednost mora biti manjša ali enaka $2."
 
-#: xforms.src#RID_STR_XFORMS_VALUE_MAX_LENGTH.string.text
-msgid "The string can only be $2 characters long at most."
-msgstr "Niz mora biti dolg največ $2 znakov."
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_EXCL.String.Text
+msgid  "The value must be smaller than $2."
+msgstr "Vrednost mora biti manjša od $2."
 
-#: xforms.src#RID_STR_XFORMS_VALUE_MIN_EXCL.string.text
-msgid "The value must be greater than $2."
-msgstr "Vrednost mora biti večja od $2."
-
-#: xforms.src#RID_STR_XFORMS_VALUE_MIN_INCL.string.text
-msgid "The value must be greater than or equal to $2."
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_INCL.String.Text
+msgid  "The value must be greater than or equal to $2."
 msgstr "Vrednost mora biti večja od ali enaka $2."
 
-#: xforms.src#RID_STR_XFORMS_VALUE_MIN_LENGTH.string.text
-msgid "The string must be at least $2 characters long."
-msgstr "Niz mora vsebovati najmanj $2 znakov."
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_EXCL.String.Text
+msgid  "The value must be greater than $2."
+msgstr "Vrednost mora biti večja od $2."
 
-#: xforms.src#RID_STR_XFORMS_VALUE_PATTERN.string.text
-msgid "The value does not match the pattern '$2'."
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_PATTERN.String.Text
+msgid  "The value does not match the pattern '$2'."
 msgstr "Vrednost ne ustreza vzorcu '$2'."
 
-#: xforms.src#RID_STR_XFORMS_VALUE_TOTAL_DIGITS.string.text
-msgid "$2 digits allowed at most."
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_TOTAL_DIGITS.String.Text
+msgid  "$2 digits allowed at most."
 msgstr "Dovoljenih je največ $2 števk."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_FRACTION_DIGITS.String.Text
+msgid  "$2 fraction digits allowed at most."
+msgstr "Dovoljenih je največ $2 desetiških števk."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_LENGTH.String.Text
+msgid  "The string must be $2 characters long."
+msgstr "Niz mora vsebovati $2 znakov."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MIN_LENGTH.String.Text
+msgid  "The string must be at least $2 characters long."
+msgstr "Niz mora vsebovati najmanj $2 znakov."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_VALUE_MAX_LENGTH.String.Text
+msgid  "The string can only be $2 characters long at most."
+msgstr "Niz mora biti dolg največ $2 znakov."
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_STRING.String.Text
+msgid  "String"
+msgstr "Niz"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_URL.String.Text
+msgid  "Hyperlink"
+msgstr "Hiperpovezava"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_BOOLEAN.String.Text
+msgid  "True/False (Boolean)"
+msgstr "True/false (logična vrednost)"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_DECIMAL.String.Text
+msgid  "Decimal"
+msgstr "Decimalno"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_FLOAT.String.Text
+msgid  "Floating point"
+msgstr "Št. s plavajočo vejico"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_DOUBLE.String.Text
+msgid  "Double"
+msgstr "Dvojno"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_DATE.String.Text
+msgid  "Date"
+msgstr "Datum"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_TIME.String.Text
+msgid  "Time"
+msgstr "Čas"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_DATETIME.String.Text
+msgid  "Date and Time"
+msgstr "Datum in čas"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_YEARMONTH.String.Text
+msgid  "Month and year"
+msgstr "Mesec in leto"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_YEAR.String.Text
+msgid  "Year"
+msgstr "Leto"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_MONTHDAY.String.Text
+msgid  "Month and day"
+msgstr "Mesec in dan"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_MONTH.String.Text
+msgid  "Month"
+msgstr "Mesec"
+
+#: source/resource/xforms.src#RID_STR_DATATYPE_DAY.String.Text
+msgid  "Day"
+msgstr "Dan"
+
+#: source/resource/xforms.src#RID_STR_XFORMS_CANT_EVALUATE.String.Text
+msgid  "Error during evaluation"
+msgstr "Napaka pri vrednotenju"
+
+#: source/resource/xforms.src#RID_STR_XFORMS_PATTERN_DOESNT_MATCH.String.Text
+msgid  "The string '$1' does not match the required regular expression '$2'."
+msgstr "Niz '$1' se ne ujema z zahtevanim regularnim izrazom '$2'."
+
+#: source/resource/xforms.src#RID_STR_XFORMS_BINDING_UI_NAME.String.Text
+msgid  "Binding"
+msgstr "Vezava"
+
+#: source/resource/strings.src#RID_BASELISTBOX_ERROR_FILLLIST.String.Text
+msgid  "The contents of a combo box or list field could not be determined."
+msgstr "Ni mogoče določiti vsebine kombiniranega polja ali polja seznama."
+
+#: source/resource/strings.src#RID_STR_IMPORT_GRAPHIC.String.Text
+msgid  "Insert graphics"
+msgstr "Vstavi sliko"
+
+#: source/resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_NAME.String.Text
+msgid  "substituted"
+msgstr "nadomeščeno"
+
+#: source/resource/strings.src#RID_STR_CONTROL_SUBSTITUTED_EPXPLAIN.String.Text
+msgid  "An error occurred while this control was being loaded. It was therefore replaced with a placeholder."
+msgstr ""
+
+#: source/resource/strings.src#RID_STR_READERROR.String.Text
+msgid  "Error reading data from database"
+msgstr "Napaka pri branju podatkov iz zbirke podatkov"
+
+#: source/resource/strings.src#RID_STR_CONNECTERROR.String.Text
+msgid  "Connection failed"
+msgstr "Povezava ni uspela"
+
+#: source/resource/strings.src#RID_ERR_LOADING_FORM.String.Text
+msgid  "The data content could not be loaded."
+msgstr "Ni mogoče naložiti podatkov."
+
+#: source/resource/strings.src#RID_ERR_REFRESHING_FORM.String.Text
+msgid  "The data content could not be updated"
+msgstr "Ni mogoče posodobiti podatkov"
+
+#: source/resource/strings.src#RID_STR_ERR_INSERTRECORD.String.Text
+msgid  "Error inserting the new record"
+msgstr "Napaka pri vstavljanju novega zapisa"
+
+#: source/resource/strings.src#RID_STR_ERR_UPDATERECORD.String.Text
+msgid  "Error updating the current record"
+msgstr "Napaka pri posodabljanju trenutnega zapisa"
+
+#: source/resource/strings.src#RID_STR_ERR_DELETERECORD.String.Text
+msgid  "Error deleting the current record"
+msgstr "Napaka pri brisanju trenutnega zapisa"
+
+#: source/resource/strings.src#RID_STR_ERR_DELETERECORDS.String.Text
+msgid  "Error deleting the specified records"
+msgstr "Napaka pri brisanju navedenih zapisov"
+
+#: source/resource/strings.src#RID_STR_NEED_NON_NULL_OBJECT.String.Text
+msgid  "The object cannot be NULL."
+msgstr "Predmet ne more biti NULL."
+
+#: source/resource/strings.src#RID_STR_OPEN_GRAPHICS.String.Text
+msgid  "Insert graphics from..."
+msgstr "Vstavi grafike iz ..."
+
+#: source/resource/strings.src#RID_STR_CLEAR_GRAPHICS.String.Text
+msgid  "Remove graphics"
+msgstr "Odstrani grafike"
+
+#: source/resource/strings.src#RID_STR_INVALIDSTREAM.String.Text
+msgid  "The given stream is invalid."
+msgstr "Podani tok ni veljaven."
+
+#: source/resource/strings.src#RID_STR_SYNTAXERROR.String.Text
+msgid  "Syntax error in query expression"
+msgstr "Napaka v skladnji poizvedbe"
+
+#: source/resource/strings.src#RID_STR_INCOMPATIBLE_TYPES.String.Text
+msgid  "The value types supported by the binding cannot be used for exchanging data with this control."
+msgstr ""
+
+#: source/resource/strings.src#RID_STR_LABEL_RECORD.String.Text
+msgid  "Record"
+msgstr "Zapis"
+
+#: source/resource/strings.src#RID_STR_INVALID_VALIDATOR.String.Text
+msgid  "The control is connected to an external value binding, which at the same time acts as validator. You need to revoke the value binding, before you can set a new validator."
+msgstr ""
+
+#: source/resource/strings.src#RID_STR_LABEL_OF.String.Text
+msgid  "of"
+msgstr "od"
+
+#: source/resource/strings.src#RID_STR_QUERY_SAVE_MODIFIED_ROW.String.Text
+msgid  "The content of the current form has been modified.\nDo you want to save your changes?"
+msgstr ""
+
+#: source/resource/strings.src#RID_STR_COULD_NOT_SET_ORDER.String.Text
+msgid  "Error setting the sort criteria"
+msgstr "Napaka pri nastavljanju pogojev razvrščanja"
+
+#: source/resource/strings.src#RID_STR_COULD_NOT_SET_FILTER.String.Text
+msgid  "Error setting the filter criteria"
+msgstr "Napaka pri nastavljanju pogojev filtriranja"
+
+#: source/resource/strings.src#RID_STR_FEATURE_REQUIRES_PARAMETERS.String.Text
+msgid  "To execute this function, parameters are needed."
+msgstr "Za izvedbo te funkcije so potrebni parametri."
+
+#: source/resource/strings.src#RID_STR_FEATURE_NOT_EXECUTABLE.String.Text
+msgid  "This function cannot be executed, but is only for status queries."
+msgstr "Ta funkcija ni izvedljiva, namenjena je le za povpraševanje stanja."
+
+#: source/resource/strings.src#RID_STR_FEATURE_UNKNOWN.String.Text
+msgid  "Unknown function."
+msgstr "Neznana funkcija."

@@ -1,3193 +1,3088 @@
-
-#: roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_WELCOME.string.text
-msgid "Welcome"
-msgstr "歡迎"
-
-#: roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_PREPARE.string.text
-msgid "Prepare"
-msgstr "準備"
-
-#: roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_SETUP.string.text
-msgid "Setup"
-msgstr "設定"
-
-#: roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_FINISH.string.text
-msgid "Finish"
-msgstr "完成"
-
-#: roadmapskeleton.src#DLG_ROADMAP_SKELETON.modaldialog.text
-msgid "Roadmap Skeleton Demo"
-msgstr "示範說明架構"
-"X-Accelerator-Marker: ~\n"
-
-#: addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FL_DATASOURCEFRAME.fixedline.text
-msgid "Address Book Source"
-msgstr "通訊錄來源"
-
-#: addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_DATASOURCE.fixedtext.text
-msgid "Data source"
-msgstr "資料來源"
-
-#: addresstemplate.src#DLG_ADDRESSBOOKSOURCE.PB_ADMINISTATE_DATASOURCES.pushbutton.text
-msgid "~Address Data Source..."
-msgstr "地址資料來源(~A)..."
-
-#: addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_TABLE.fixedtext.text
-msgid "Table"
-msgstr "表格"
-
-#: addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_FIELDS.fixedtext.text
-msgid "Field assignment"
-msgstr "指定欄位"
-
-#: addresstemplate.src#DLG_ADDRESSBOOKSOURCE.modaldialog.text
-msgid "Templates: Address Book Assignment"
-msgstr "範本：指定通訊錄"
-
-#: addresstemplate.src#STR_NO_FIELD_SELECTION.string.text
-msgid "<none>"
-msgstr "<無>"
-
-#: addresstemplate.src#STR_FIELD_COMPANY.string.text
-msgid "Company"
-msgstr "公司"
-
-#: addresstemplate.src#STR_FIELD_DEPARTMENT.string.text
-msgid "Department"
-msgstr "部門"
-
-#: addresstemplate.src#STR_FIELD_FIRSTNAME.string.text
-msgid "First name"
-msgstr "名字"
-
-#: addresstemplate.src#STR_FIELD_LASTNAME.string.text
-msgid "Last name"
-msgstr "姓氏"
-
-#: addresstemplate.src#STR_FIELD_STREET.string.text
-msgid "Street"
-msgstr "街道"
-
-#: addresstemplate.src#STR_FIELD_COUNTRY.string.text
-msgid "Country"
-msgstr "國家"
-
-#: addresstemplate.src#STR_FIELD_ZIPCODE.string.text
-msgid "ZIP Code"
-msgstr "郵遞區號"
-
-#: addresstemplate.src#STR_FIELD_CITY.string.text
-msgid "City"
-msgstr "城市"
-
-#: addresstemplate.src#STR_FIELD_TITLE.string.text
-msgid "Title"
-msgstr "稱謂"
-
-#: addresstemplate.src#STR_FIELD_POSITION.string.text
-msgid "Position"
-msgstr "職務"
-
-#: addresstemplate.src#STR_FIELD_ADDRFORM.string.text
-msgid "Addr. Form"
-msgstr "稱呼"
-
-#: addresstemplate.src#STR_FIELD_INITIALS.string.text
-msgid "Initials"
-msgstr "縮寫"
-
-#: addresstemplate.src#STR_FIELD_SALUTATION.string.text
-msgid "Complimentary close"
-msgstr "問候語"
-
-#: addresstemplate.src#STR_FIELD_HOMETEL.string.text
-msgid "Tel: Home"
-msgstr "私人電話號碼"
-
-#: addresstemplate.src#STR_FIELD_WORKTEL.string.text
-msgid "Tel: Work"
-msgstr "公司電話號碼"
-
-#: addresstemplate.src#STR_FIELD_FAX.string.text
-msgid "FAX"
-msgstr "傳真號碼"
-
-#: addresstemplate.src#STR_FIELD_EMAIL.string.text
-msgid "E-mail"
-msgstr "電子郵件地址"
-
-#: addresstemplate.src#STR_FIELD_URL.string.text
-msgid "URL"
-msgstr "URL"
-
-#: addresstemplate.src#STR_FIELD_NOTE.string.text
-msgid "Note"
-msgstr "備注"
-
-#: addresstemplate.src#STR_FIELD_USER1.string.text
-msgid "User 1"
-msgstr "使用者 1"
-
-#: addresstemplate.src#STR_FIELD_USER2.string.text
-msgid "User 2"
-msgstr "使用者 2"
-
-#: addresstemplate.src#STR_FIELD_USER3.string.text
-msgid "User 3"
-msgstr "使用者 3"
-
-#: addresstemplate.src#STR_FIELD_USER4.string.text
-msgid "User 4"
-msgstr "使用者 4"
-
-#: addresstemplate.src#STR_FIELD_ID.string.text
-msgid "ID"
-msgstr "ID"
-
-#: addresstemplate.src#STR_FIELD_STATE.string.text
-msgid "State"
-msgstr "省市"
-
-#: addresstemplate.src#STR_FIELD_OFFICETEL.string.text
-msgid "Tel: Office"
-msgstr "辦公室電話號碼"
-
-#: addresstemplate.src#STR_FIELD_PAGER.string.text
-msgid "Pager"
-msgstr "無線呼叫號碼"
-
-#: addresstemplate.src#STR_FIELD_MOBILE.string.text
-msgid "Mobile"
-msgstr "手機號碼"
-
-#: addresstemplate.src#STR_FIELD_TELOTHER.string.text
-msgid "Tel: Other"
-msgstr "其他電話號碼"
-
-#: addresstemplate.src#STR_FIELD_CALENDAR.string.text
-msgid "Calendar"
-msgstr "行事歷"
-
-#: addresstemplate.src#STR_FIELD_INVITE.string.text
-msgid "Invite"
-msgstr "邀請"
-
-#: filedlg2.src#STR_FILEDLG_SELECT.string.text
-msgid "Select Directory"
-msgstr "選擇目錄"
-
-#: filedlg2.src#STR_FILEDLG_CANTCHDIR.string.text
-msgid "Cannot change to directory"
-msgstr "無法轉到目錄"
-
-#: filedlg2.src#STR_FILEDLG_OPEN.string.text
-msgid "Open"
-msgstr "開啟舊檔"
-
-#: filedlg2.src#STR_FILEDLG_FILE.string.text
-msgid "~File"
-msgstr "檔案(~F)"
-
-#: filedlg2.src#STR_FILEDLG_DIR.string.text
-msgid "~Directory"
-msgstr "目錄(~D)"
-
-#: filedlg2.src#STR_FILEDLG_TYPE.string.text
-msgid "File ~type"
-msgstr "檔案類型(~T)"
-
-#: filedlg2.src#STR_FILEDLG_CANTOPENFILE.string.text
-msgid "Can't open file"
-msgstr "無法開啟檔案"
-
-#: filedlg2.src#STR_FILEDLG_CANTOPENDIR.string.text
-msgid "Can't open directory"
-msgstr "無法開啟目錄"
-
-#: filedlg2.src#STR_FILEDLG_OVERWRITE.string.text
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
 msgid ""
-"This file already exists. \n"
-"Overwrite ?"
 msgstr ""
-"檔案存在。 \n"
-"您要覆寫檔案？"
-
-#: filedlg2.src#STR_FILEDLG_GOUP.string.text
-msgid "Up One Level"
-msgstr "向上一級"
-
-#: filedlg2.src#STR_FILEDLG_SAVE.string.text
-msgid "Save"
-msgstr "儲存"
-
-#: filedlg2.src#STR_FILEDLG_DRIVES.string.text
-msgid "D~rive"
-msgstr "驅動器(~R)"
-
-#: filedlg2.src#STR_FILEDLG_HOME.string.text
-msgid "User Directory"
-msgstr "自訂目錄"
-
-#: filedlg2.src#STR_FILEDLG_NEWDIR.string.text
-msgid "Create Directory"
-msgstr "建立目錄"
-
-#: filedlg2.src#STR_FILEDLG_ASKNEWDIR.string.text
-msgid "Do you want the directory %s to be created ?"
-msgstr "您要建立這個目錄 %s ？"
-
-#: formats.src#STR_FORMAT_STRING.string.text
-msgid "Unformatted text"
-msgstr "未格式化的文字"
-
-#: formats.src#STR_FORMAT_BITMAP.string.text
-msgid "Bitmap"
-msgstr "點陣圖"
-
-#: formats.src#STR_FORMAT_GDIMETAFILE.string.text
-msgid "GDI metafile"
-msgstr "GDI 圖形檔"
-
-#: formats.src#STR_FORMAT_RTF.string.text
-msgid "Formatted text [RTF]"
-msgstr "已經格式化的文字 [RTF]"
-
-#: formats.src#STR_FORMAT_ID_DRAWING.string.text
-msgid "Drawing format"
-msgstr "繪圖格式"
-
-#: formats.src#STR_FORMAT_ID_SVXB.string.text
-msgid "SVXB (StarView bitmap/animation)"
-msgstr "SVXB (StarView 點陣圖/動畫)"
-
-#: formats.src#STR_FORMAT_ID_INTERNALLINK_STATE.string.text
-msgid "Status Info from Svx Internal Link"
-msgstr "Svx Internal Link 的狀態資訊"
-
-#: formats.src#STR_FORMAT_ID_SOLK.string.text
-msgid "SOLK (%PRODUCTNAME Link)"
-msgstr "SOLK (%PRODUCTNAME Link)"
-
-#: formats.src#STR_FORMAT_ID_NETSCAPE_BOOKMARK.string.text
-msgid "Netscape Bookmark"
-msgstr "Netscape 書籖"
-
-#: formats.src#STR_FORMAT_ID_STARSERVER.string.text
-msgid "Star server format"
-msgstr "Star 伺服器格式"
-
-#: formats.src#STR_FORMAT_ID_STAROBJECT.string.text
-msgid "Star object format"
-msgstr "Star 物件格式"
-
-#: formats.src#STR_FORMAT_ID_APPLETOBJECT.string.text
-msgid "Applet object"
-msgstr "Applet 物件"
-
-#: formats.src#STR_FORMAT_ID_PLUGIN_OBJECT.string.text
-msgid "Plug-in object"
-msgstr "外掛程式物件"
-
-#: formats.src#STR_FORMAT_ID_STARWRITER_30.string.text
-msgid "StarWriter 3.0 object"
-msgstr "StarWriter 3.0 物件"
-
-#: formats.src#STR_FORMAT_ID_STARWRITER_40.string.text
-msgid "StarWriter 4.0 object"
-msgstr "StarWriter 4.0 物件"
-
-#: formats.src#STR_FORMAT_ID_STARWRITER_50.string.text
-msgid "StarWriter 5.0 object"
-msgstr "StarWriter 5.0 物件"
-
-#: formats.src#STR_FORMAT_ID_STARWRITERWEB_40.string.text
-msgid "StarWriter/Web 4.0 object"
-msgstr "StarWriter/Web 4.0 物件"
-
-#: formats.src#STR_FORMAT_ID_STARWRITERWEB_50.string.text
-msgid "StarWriter/Web 5.0 object"
-msgstr "StarWriter/Web 5.0 物件"
-
-#: formats.src#STR_FORMAT_ID_STARWRITERGLOB_40.string.text
-msgid "StarWriter/Master 4.0 object"
-msgstr "StarWriter/Global 4.0 物件"
-
-#: formats.src#STR_FORMAT_ID_STARWRITERGLOB_50.string.text
-msgid "StarWriter/Master 5.0 object"
-msgstr "StarWriter/Global 5.0 物件"
-
-#: formats.src#STR_FORMAT_ID_STARDRAW.string.text
-msgid "StarDraw object"
-msgstr "StarDraw 物件"
-
-#: formats.src#STR_FORMAT_ID_STARDRAW_40.string.text
-msgid "StarDraw 4.0 object"
-msgstr "StarDraw 4.0 物件"
-
-#: formats.src#STR_FORMAT_ID_STARIMPRESS_50.string.text
-msgid "StarImpress 5.0 object"
-msgstr "StarImpress 5.0 物件"
-
-#: formats.src#STR_FORMAT_ID_STARDRAW_50.string.text
-msgid "StarDraw 5.0 object"
-msgstr "StarDraw 5.0 物件"
-
-#: formats.src#STR_FORMAT_ID_STARCALC.string.text
-msgid "StarCalc object"
-msgstr "StarCalc 物件"
-
-#: formats.src#STR_FORMAT_ID_STARCALC_40.string.text
-msgid "StarCalc  4.0 object"
-msgstr "StarCalc  4.0 物件"
-
-#: formats.src#STR_FORMAT_ID_STARCALC_50.string.text
-msgid "StarCalc 5.0 object"
-msgstr "StarCalc 5.0 物件"
-
-#: formats.src#STR_FORMAT_ID_STARCHART.string.text
-msgid "StarChart object"
-msgstr "StarChart 物件"
-
-#: formats.src#STR_FORMAT_ID_STARCHART_40.string.text
-msgid "StarChart 4.0 object"
-msgstr "StarChart 4.0 物件"
-
-#: formats.src#STR_FORMAT_ID_STARCHART_50.string.text
-msgctxt "formats.src#STR_FORMAT_ID_STARCHART_50.string.text"
-msgid "StarChart 5.0 object"
-msgstr "StarChart 5.0 物件"
-
-#: formats.src#STR_FORMAT_ID_STARIMAGE.string.text
-msgid "StarImage object"
-msgstr "StarImage 物件"
-
-#: formats.src#STR_FORMAT_ID_STARIMAGE_40.string.text
-msgid "StarImage 4.0 object"
-msgstr "StarImage 4.0 物件"
-
-#: formats.src#STR_FORMAT_ID_STARIMAGE_50.string.text
-msgid "StarImage 5.0 object"
-msgstr "StarImage 5.0 物件"
-
-#: formats.src#STR_FORMAT_ID_STARMATH.string.text
-msgid "StarMath object"
-msgstr "StarMath 物件"
-
-#: formats.src#STR_FORMAT_ID_STARMATH_40.string.text
-msgid "StarMath 4.0 object"
-msgstr "StarMath 4.0 物件"
-
-#: formats.src#STR_FORMAT_ID_STARMATH_50.string.text
-msgid "StarMath 5.0 object"
-msgstr "StarMath 5.0 物件"
-
-#: formats.src#STR_FORMAT_ID_STAROBJECT_PAINTDOC.string.text
-msgid "StarObject Paint object"
-msgstr "StarObject 繪圖物件"
-
-#: formats.src#STR_FORMAT_ID_HTML.string.text
-msgid "HTML (HyperText Markup Language)"
-msgstr "HTML(超文字標記語言)"
-
-#: formats.src#STR_FORMAT_ID_HTML_SIMPLE.string.text
-msgid "HTML format"
-msgstr "HTML 格式"
-
-#: formats.src#STR_FORMAT_ID_BIFF_5.string.text
-msgid "Biff5 (Microsoft Excel 5.0/95)"
-msgstr "Biff5 (Microsoft Excel 5.0/95)"
-
-#: formats.src#STR_FORMAT_ID_BIFF_8.string.text
-msgid "Biff8 (Microsoft Excel 97/2000/XP)"
-msgstr "Biff8 (Microsoft Excel 97/2000/XP)"
-
-#: formats.src#STR_FORMAT_ID_SYLK.string.text
-msgid "Sylk"
-msgstr "Sylk"
-
-#: formats.src#STR_FORMAT_ID_LINK.string.text
-msgid "DDE link"
-msgstr "DDE 連結"
-
-#: formats.src#STR_FORMAT_ID_DIF.string.text
-msgid "DIF"
-msgstr "DIF"
-
-#: formats.src#STR_FORMAT_ID_MSWORD_DOC.string.text
-msgid "Microsoft Word object"
-msgstr "Microsoft Word 物件"
-
-#: formats.src#STR_FORMAT_ID_STAR_FRAMESET_DOC.string.text
-msgid "StarFrameSet object"
-msgstr "StarFrameSet 物件"
-
-#: formats.src#STR_FORMAT_ID_OFFICE_DOC.string.text
-msgid "Office document object"
-msgstr "Office 文件物件"
-
-#: formats.src#STR_FORMAT_ID_NOTES_DOCINFO.string.text
-msgid "Notes document info"
-msgstr "Notes 文件資訊"
-
-#: formats.src#STR_FORMAT_ID_SFX_DOC.string.text
-msgid "Sfx document"
-msgstr "Sfx 文件"
-
-#: formats.src#STR_FORMAT_ID_STARCHARTDOCUMENT_50.string.text
-msgctxt "formats.src#STR_FORMAT_ID_STARCHARTDOCUMENT_50.string.text"
-msgid "StarChart 5.0 object"
-msgstr "StarChart 5.0 物件"
-
-#: formats.src#STR_FORMAT_ID_GRAPHOBJ.string.text
-msgid "Graphic object"
-msgstr "圖形物件"
-
-#: formats.src#STR_FORMAT_ID_STARWRITER_60.string.text
-msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer object"
-msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer 物件"
-
-#: formats.src#STR_FORMAT_ID_STARWRITERWEB_60.string.text
-msgid ""
-"%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Web object"
-msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Web 物件"
-
-#: formats.src#STR_FORMAT_ID_STARWRITERGLOB_60.string.text
-msgid ""
-"%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Master object"
-msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Master 物件"
-
-#: formats.src#STR_FORMAT_ID_STARDRAW_60.string.text
-msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Draw object"
-msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Draw 物件"
-
-#: formats.src#STR_FORMAT_ID_STARIMPRESS_60.string.text
-msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Impress object"
-msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Impress 物件"
-
-#: formats.src#STR_FORMAT_ID_STARCALC_60.string.text
-msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Calc object"
-msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Calc 物件"
-
-#: formats.src#STR_FORMAT_ID_STARCHART_60.string.text
-msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart object"
-msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart 物件"
-
-#: formats.src#STR_FORMAT_ID_STARMATH_60.string.text
-msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Math object"
-msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Math 物件"
-
-#: formats.src#STR_FORMAT_ID_WMF.string.text
-msgid "Windows metafile"
-msgstr "Windows 圖形檔"
-
-#: formats.src#STR_FORMAT_ID_DBACCESS_QUERY.string.text
-msgid "Data source object"
-msgstr "資料來源物件"
-
-#: formats.src#STR_FORMAT_ID_DBACCESS_TABLE.string.text
-msgid "Data source table"
-msgstr "資料來源表格"
-
-#: formats.src#STR_FORMAT_ID_DBACCESS_COMMAND.string.text
-msgid "SQL query"
-msgstr "SQL 查詢"
-
-#: formats.src#STR_FORMAT_ID_DIALOG_60.string.text
-msgid "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION dialog"
-msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION 對話方塊"
-
-#: formats.src#STR_FORMAT_ID_FILEGRPDESCRIPTOR.string.text
-msgid "Link"
-msgstr "超連結"
-
-#: formats.src#STR_FORMAT_ID_HTML_NO_COMMENT.string.text
-msgid "HTML format without comments"
-msgstr "沒有註解的 HTML 格式"
-
-#: prnsetup.src#STR_SVT_PRNDLG_READY.string.text
-msgid "Ready"
-msgstr "就緒"
-
-#: prnsetup.src#STR_SVT_PRNDLG_PAUSED.string.text
-msgid "Paused"
-msgstr "暫停"
-
-#: prnsetup.src#STR_SVT_PRNDLG_PENDING.string.text
-msgid "Pending deletion"
-msgstr "刪除等候的"
-
-#: prnsetup.src#STR_SVT_PRNDLG_BUSY.string.text
-msgid "Busy"
-msgstr "忙碌"
-
-#: prnsetup.src#STR_SVT_PRNDLG_INITIALIZING.string.text
-msgid "Initializing"
-msgstr "初始化"
-
-#: prnsetup.src#STR_SVT_PRNDLG_WAITING.string.text
-msgid "Waiting"
-msgstr "等候"
-
-#: prnsetup.src#STR_SVT_PRNDLG_WARMING_UP.string.text
-msgid "Warming up"
-msgstr "預熱"
-
-#: prnsetup.src#STR_SVT_PRNDLG_PROCESSING.string.text
-msgid "Processing"
-msgstr "處理"
-
-#: prnsetup.src#STR_SVT_PRNDLG_PRINTING.string.text
-msgid "Printing"
-msgstr "列印"
-
-#: prnsetup.src#STR_SVT_PRNDLG_OFFLINE.string.text
-msgid "Offline"
-msgstr "離線"
-
-#: prnsetup.src#STR_SVT_PRNDLG_ERROR.string.text
-msgid "Error"
-msgstr "錯誤"
-
-#: prnsetup.src#STR_SVT_PRNDLG_SERVER_UNKNOWN.string.text
-msgid "Unknown Server"
-msgstr "不明的伺服器"
-
-#: prnsetup.src#STR_SVT_PRNDLG_PAPER_JAM.string.text
-msgid "Paper jam"
-msgstr "卡紙"
-
-#: prnsetup.src#STR_SVT_PRNDLG_PAPER_OUT.string.text
-msgid "Not enough paper"
-msgstr "紙用完"
-
-#: prnsetup.src#STR_SVT_PRNDLG_MANUAL_FEED.string.text
-msgid "Manual feed"
-msgstr "手動送紙"
-
-#: prnsetup.src#STR_SVT_PRNDLG_PAPER_PROBLEM.string.text
-msgid "Paper problem"
-msgstr "紙張問題"
-
-#: prnsetup.src#STR_SVT_PRNDLG_IO_ACTIVE.string.text
-msgid "I/O active"
-msgstr "啟動輸入/輸出"
-
-#: prnsetup.src#STR_SVT_PRNDLG_OUTPUT_BIN_FULL.string.text
-msgid "Output bin full"
-msgstr "匯出緩衝區溢滿"
-
-#: prnsetup.src#STR_SVT_PRNDLG_TONER_LOW.string.text
-msgid "Toner low"
-msgstr "墨粉不足"
-
-#: prnsetup.src#STR_SVT_PRNDLG_NO_TONER.string.text
-msgid "No toner"
-msgstr "墨粉用完"
-
-#: prnsetup.src#STR_SVT_PRNDLG_PAGE_PUNT.string.text
-msgid "Delete Page"
-msgstr "刪除頁"
-
-#: prnsetup.src#STR_SVT_PRNDLG_USER_INTERVENTION.string.text
-msgid "User intervention necessary"
-msgstr "需要自訂"
-
-#: prnsetup.src#STR_SVT_PRNDLG_OUT_OF_MEMORY.string.text
-msgid "Insufficient memory"
-msgstr "記憶體不足"
-
-#: prnsetup.src#STR_SVT_PRNDLG_DOOR_OPEN.string.text
-msgid "Cover open"
-msgstr "護蓋敞開"
-
-#: prnsetup.src#STR_SVT_PRNDLG_POWER_SAVE.string.text
-msgid "Power save mode"
-msgstr "節約電源模式"
-
-#: prnsetup.src#STR_SVT_PRNDLG_DEFPRINTER.string.text
-msgid "Default printer"
-msgstr "預設印表機"
-
-#: prnsetup.src#STR_SVT_PRNDLG_JOBCOUNT.string.text
-msgid "%d documents"
-msgstr "%d 文件"
-
-#: prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FL_PRINTER.fixedline.text
-msgid "Printer"
-msgstr "印表機"
-
-#: prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_NAME.fixedtext.text
-msgid "~Name"
-msgstr "名稱(~N)"
-
-#: prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.BTN_PROPERTIES.pushbutton.text
-msgid "Propert~ies..."
-msgstr "屬性(~I)..."
-
-#: prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_STATUS.fixedtext.text
-msgid "Status"
-msgstr "狀態"
-
-#: prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_TYPE.fixedtext.text
-msgid "Type"
-msgstr "類型"
-
-#: prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_LOCATION.fixedtext.text
-msgid "Location"
-msgstr "位置"
-
-#: prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_COMMENT.fixedtext.text
-msgid "Comment"
-msgstr "註解"
-
-#: prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.BTN_OPTIONS.pushbutton.text
-msgid "~Options..."
-msgstr "其他(~O)..."
-
-#: prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.modaldialog.text
-msgid "Printer Setup"
-msgstr "設置印表機"
-
-#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_GENERALERROR_S_MAX.string.text
-msgid "General OLE error."
-msgstr "一般 OLE 錯誤。"
-
-#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_CANT_BINDTOSOURCE_S_MAX.string.text
-msgid "The connection to the object cannot be established."
-msgstr "無法建立指向這個物件的連線。"
-
-#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOCACHE_UPDATED_S_MAX.string.text
-msgid "No cache files were updated."
-msgstr "未更新任何快取檔案。"
-
-#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_SOMECACHES_NOTUPDATED_S_MAX.string.text
-msgid "Some cache files were not updated."
-msgstr "某些快取檔案未更新。"
-
-#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_UNAVAILABLE_S_MAX.string.text
-msgid "Status of object cannot be determined in a timely manner."
-msgstr "無法及時判斷物件的狀態。"
-
-#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_E_CLASSDIFF_S_MAX.string.text
-msgid "Source of the OLE link has been converted."
-msgstr "已經轉換 OLE 連結的來源。"
-
-#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_OBJECT_S_MAX.string.text
-msgid "The object could not be found."
-msgstr "無法找到物件"
-
-#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_EXCEEDED_DEADLINE_S_MAX.string.text
-msgid "The process could not be completed within the specified time period."
-msgstr "這個動作無法在設定的時間內完成"
-
-#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_CONNECT_MANUALLY_S_MAX.string.text
-msgid "OLE could not connect to a network device (server)."
-msgstr "OLE 無法連線至網路裝置 (伺服器) 。"
-
-#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_INTERMEDIATE_INTERFACE_NOT_SUPPORTED_S_MAX.string.text
-msgid ""
-"The object found does not support the interface required for the desired "
-"operation."
-msgstr "找到的物件不支援要進行之運算所需的介面。"
-
-#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NO_INTERFACE_S_MAX.string.text
-msgid "Interface not supported."
-msgstr "不支援介面。"
-
-#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_OUT_OF_MEMORY_S_MAX.string.text
-msgid "Insufficient memory."
-msgstr "記憶體不足。"
-
-#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_SYNTAX_S_MAX.string.text
-msgid "The connection name could not be processed."
-msgstr "無法處理連線名稱"
-
-#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_REDUCED_TO_SELF_S_MAX.string.text
-msgid "The connection name could not be reduced further."
-msgstr "連線名稱無法再簡化。"
-
-#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_INVERSE_S_MAX.string.text
-msgid "The connection name has no inverse."
-msgstr "這個連線名稱沒有逆代碼。"
-
-#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_PREFIX_S_MAX.string.text
-msgid "No common prefix exists."
-msgstr "不存在共用的前綴。"
-
-#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_HIM_S_MAX.string.text
-msgctxt "so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_HIM_S_MAX.string.text"
-msgid "The connection name is contained in the other one."
-msgstr "連線名稱存在於另一個名稱內"
-
-#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_US_S_MAX.string.text
-msgid ""
-"The connection names (the receiver and the other moniker) are identical."
-msgstr "連線名稱相同"
-
-#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_ME_S_MAX.string.text
-msgctxt "so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_ME_S_MAX.string.text"
-msgid "The connection name is contained in the other one."
-msgstr "連線名稱存在於另一個名稱內"
-
-#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NOT_BINDABLE_S_MAX.string.text
-msgid "The connection name cannot be connected. This is a relative name."
-msgstr "這個連線名稱是一個相對的名稱﹐因此無法建立連線。"
-
-#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOT_IMPLEMENTED_S_MAX.string.text
-msgid "Operation not implemented."
-msgstr "未執行運算。"
-
-#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_STORAGE_S_MAX.string.text
-msgid "No storage."
-msgstr "無儲存裝置。"
-
-#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_FALSE_S_MAX.string.text
-msgid "False."
-msgstr "False。"
-
-#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NEED_GENERIC_S_MAX.string.text
-msgid "Monikers must be composed generically."
-msgstr "必項撰寫一般的 Moniker。"
-
-#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_PENDING_S_MAX.string.text
-msgid "Data not available at this time."
-msgstr "目前資料無法使用。"
-
-#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOT_INPLACEACTIVE___S_MAX.string.text
-msgid "Object could not be activated InPlace."
-msgstr "無法正確啟動物件。"
-
-#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_LINDEX___S_MAX.string.text
-msgid "Invalid index."
-msgstr "索引無效。"
-
-#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_CANNOT_DOVERB_NOW___S_MAX.string.text
-msgid "The action cannot be executed in the object's current state."
-msgstr "在目前狀態下物件無法執行這個過程。"
-
-#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_OLEOBJ_INVALIDHWND___S_MAX.string.text
-msgid "An invalid window was passed when activated."
-msgstr "在啟動指令時傳遞了一個無效的視窗。"
-
-#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOVERBS___S_MAX.string.text
-msgid "The object does not support any actions."
-msgstr "此物件不支援任何動作。"
-
-#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_INVALIDVERB___S_MAX.string.text
-msgid "The action is not defined. The default action will be executed."
-msgstr "沒有定義這個動作。因此執行預設動作。"
-
-#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_CONNECT___S_MAX.string.text
-msgid "A link to the network could not be re-established."
-msgstr "無法恢複指向網絡的連結。"
-
-#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOTIMPL___S_MAX.string.text
-msgid "Object does not support this action."
-msgstr "物件不支援此動作。"
-
-#: so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_CANTOPENFILE___S_MAX.string.text
-msgid "The specified file could not be opened."
-msgstr "無法開啟指定的檔案。"
-
-#: so3res.src#RID_SO_ERRCTX.ERRCTX_SO_DOVERB.string.text
-msgid "$(ERR) activating object"
-msgstr "在使用物件時發生 $(ERR)"
-
-#: so3res.src#STR_INS_OBJECT.string.text
-msgid "Inserts a new %1-Object into your document."
-msgstr "在您的文件內插入一個新的 %1 物件。"
-
-#: so3res.src#STR_INS_OBJECT_ICON.string.text
-msgid "Inserts a new %1-Object into your document as a symbol."
-msgstr "在您的文件內插入一個新的 %1 物件的圖示。"
-
-#: so3res.src#STR_INS_FILE.string.text
-msgid ""
-"Inserts the contents of the file into your document to enable later editing "
-"in the original application."
-msgstr "在文件內插入檔案內容﹐以便以後在原來的應用程式內編輯它。"
-
-#: so3res.src#STR_INS_PLUGIN.string.text
-msgid ""
-"Inserts a plug-in object into your document with a reference to the plug-in "
-"data. When the object is activated, the plug-in is automatically executed."
-msgstr "在文件內插入一個外掛程式物件。在這個物件中含有指向一個外掛程式資料的參照。使用這個物件時﹐就會啟動外掛程式 。"
-
-#: so3res.src#STR_INS_APPLET.string.text
-msgid ""
-"Inserts an applet object into your document. When the object is activated, "
-"the applet is automatically executed."
-msgstr "在文件內加入一個 Applet 物件。這個物件指向一個 Applet 的資料。按一下這個物件﹐Applet 就會啟動運行。"
-
-#: so3res.src#STR_INS_FILE_ICON.string.text
-msgid "Inserts the contents of the file as an icon into your document."
-msgstr "在您的文件內加入一個代表檔案內容的圖示。"
-
-#: so3res.src#STR_INS_FILE_LINK.string.text
-msgid ""
-"Inserts the contents of the file into your document and creates a link to "
-"the source file. Changes made to the source file will be reflected in your "
-"document."
-msgstr "在您的文件內加入一個檔案內容並且含有一個指向原檔案的連結。原文件的變更也會更新顯示在您的文件內。"
-
-#: so3res.src#STR_INS_FILE_ICON_LINK.string.text
-msgid ""
-"Inserts an icon into your document representing the file. Changes made to "
-"the source file will be reflected in your document."
-msgstr "在您的文件內加入一個代表檔案內容的圖示。原檔案的變更也會更新顯示在您的文件內。"
-
-#: so3res.src#STR_PASTE.string.text
-msgid "Pastes the contents of the clipboard as %1 in your document."
-msgstr "將剪貼簿的內容當作 %1 插入您的文件。"
-
-#: so3res.src#STR_CONVERT_TO.string.text
-msgid "Converts the selected %1object to the object type %2."
-msgstr "將選取的 %1-物件轉換成類型 %2 的物件。"
-
-#: so3res.src#STR_ACTIVATE_AS.string.text
-msgid "All objects of type %1 are activated as %2, but not converted"
-msgstr "每個 %1 會被當作物件類型 %2 使用﹐但是不會被轉換。"
-
-#: so3res.src#STR_VERB_OPEN.string.text
-msgid "~Open"
-msgstr "開啟舊檔(~O)"
-
-#: so3res.src#STR_VERB_PROPS.string.text
-msgid "~Properties"
-msgstr "屬性(~P)"
-
-#: so3res.src#STR_PLUGIN_CANT_SHOW.string.text
-msgid "Plug-in % cannot be displayed."
-msgstr "無法顯示外掛程式 % 。"
-
-#: so3res.src#STR_ERROR_DDE.string.text
-msgid "DDE link to % for % area % are not available."
-msgstr "無法產生 DDE 連結 %。這個連結是指向 % 範圍是 %。"
-
-#: so3res.src#STR_ERROR_OBJNOCREATE.string.text
-msgid "Object % could not be inserted."
-msgstr "無法插入物件 % 。"
-
-#: so3res.src#STR_ERROR_OBJNOCREATE_FROM_FILE.string.text
-msgid "Object from file % could not be inserted."
-msgstr "無法從檔案 % 插入物件。"
-
-#: so3res.src#STR_ERROR_OBJNOCREATE_PLUGIN.string.text
-msgid "Plug-in from document % could not be inserted."
-msgstr "無法從文件 % 插入外掛程式 。"
-
-#: so3res.src#STR_QUERYUPDATELINKS.string.text
-msgid "Update all links?"
-msgstr "您要更新所有的連結？"
-
-#: so3res.src#STR_FURTHER_OBJECT.string.text
-msgid "Further objects"
-msgstr "其他的物件"
-
-#: so3res.src#STR_EDIT_APPLET.string.text
-msgid "Edit Applet"
-msgstr "編輯 Applet"
-
-#: so3res.src#MI_PLUGIN.MI_PLUGIN_DEACTIVATE.menuitem.text
-msgid "Deactivate"
-msgstr "不使用"
-
-#: so3res.src#STR_UNKNOWN_SOURCE.string.text
-msgid "Unknown source"
-msgstr "資料來源不明"
-
-#: wizardmachine.src#STR_WIZDLG_FINISH.string.text
-msgid "~Finish"
-msgstr "完成(~F)"
-
-#: wizardmachine.src#STR_WIZDLG_NEXT.string.text
-msgid "~Next >>"
-msgstr "繼續(~N) >>"
-
-#: wizardmachine.src#STR_WIZDLG_PREVIOUS.string.text
-msgid "<< Bac~k"
-msgstr "<< 返回(~K)"
-
-#: wizardmachine.src#STR_WIZDLG_ROADMAP_TITLE.string.text
-msgid "Steps"
-msgstr "步驟"
-
-#~ msgid "~Cyan"
-#~ msgstr "藍綠色(~C)"
-
-#~ msgid "~Magenta"
-#~ msgstr "紫紅色(~M)"
-
-#~ msgid "~Yellow"
-#~ msgstr "黃色(~Y)"
-
-#~ msgid "~Key"
-#~ msgstr "鍵碼(~K)"
-
-#~ msgid "~Red"
-#~ msgstr "紅色(~R)"
-
-#~ msgid "~Green"
-#~ msgstr "綠色(~G)"
-
-#~ msgid "~Blue"
-#~ msgstr "藍色(~B)"
-
-#~ msgid "H~ue"
-#~ msgstr "顏色(~U)"
-
-#~ msgid "~Saturation"
-#~ msgstr "飽和度(~S)"
-
-#~ msgid "Bright~ness"
-#~ msgstr "亮度(~N)"
-
-#~ msgid "Color"
-#~ msgstr "顏色"
-
-#~ msgid "RGB(%1, %2, %3) Hue:%4 Saturation:%5 Brightness:%6"
-#~ msgstr "RGB值(%1, %2, %3) 色調:%4 飽和度:%5 亮度:%6"
-"X-Accelerator-Marker: ~\n"
-
-#: fileview.src#STR_SVT_FILEVIEW_COLUMN_TITLE.string.text
-msgctxt "fileview.src#STR_SVT_FILEVIEW_COLUMN_TITLE.string.text"
-msgid "Title"
-msgstr "標題"
-
-#: fileview.src#STR_SVT_FILEVIEW_COLUMN_SIZE.string.text
-msgctxt "fileview.src#STR_SVT_FILEVIEW_COLUMN_SIZE.string.text"
-msgid "Size"
-msgstr "大小"
-
-#: fileview.src#STR_SVT_FILEVIEW_COLUMN_DATE.string.text
-msgid "Date modified"
-msgstr "修改的日期"
-
-#: fileview.src#STR_SVT_FILEVIEW_COLUMN_TYPE.string.text
-msgctxt "fileview.src#STR_SVT_FILEVIEW_COLUMN_TYPE.string.text"
-msgid "Type"
-msgstr "類型"
-
-#: fileview.src#STR_SVT_FILEVIEW_ERR_MAKEFOLDER.string.text
-msgid "Could not create the folder %1."
-msgstr "無法建立資料夾 %1 。"
-
-#: fileview.src#STR_SVT_BYTES.string.text
-msgid "Bytes"
-msgstr "bytes"
-
-#: fileview.src#STR_SVT_KB.string.text
-msgid "KB"
-msgstr "KB"
-
-#: fileview.src#STR_SVT_MB.string.text
-msgid "MB"
-msgstr "MB"
-
-#: fileview.src#STR_SVT_GB.string.text
-msgid "GB"
-msgstr "GB"
-
-#: fileview.src#RID_FILEVIEW_CONTEXTMENU.MID_FILEVIEW_DELETE.menuitem.text
-msgctxt "fileview.src#RID_FILEVIEW_CONTEXTMENU.MID_FILEVIEW_DELETE.menuitem.text"
-msgid "~Delete"
-msgstr "刪除(~D)"
-
-#: fileview.src#RID_FILEVIEW_CONTEXTMENU.MID_FILEVIEW_RENAME.menuitem.text
-msgid "~Rename"
-msgstr "重新命名(~R)"
-
-#: fileview.src#DLG_SVT_QUERYDELETE.TXT_ENTRY.fixedtext.text
-msgid "Entry:"
-msgstr "項目："
-
-#: fileview.src#DLG_SVT_QUERYDELETE.TXT_QUERYMSG.fixedtext.text
-msgid "Are you sure you want to delete the selected data?"
-msgstr "真要刪除選取的資料？"
-
-#: fileview.src#DLG_SVT_QUERYDELETE.BTN_YES.pushbutton.text
-msgctxt "fileview.src#DLG_SVT_QUERYDELETE.BTN_YES.pushbutton.text"
-msgid "~Delete"
-msgstr "刪除(~D)"
-
-#: fileview.src#DLG_SVT_QUERYDELETE.BTN_ALL.pushbutton.text
-msgid "Delete ~All"
-msgstr "全部刪除(~A)"
-
-#: fileview.src#DLG_SVT_QUERYDELETE.BTN_NO.pushbutton.text
-msgid "Do ~Not Delete"
-msgstr "不要刪除(~N)"
-
-#: fileview.src#DLG_SVT_QUERYDELETE.modaldialog.text
-msgid "Confirm Delete"
-msgstr "確認刪除"
-
-#: svcontnr.src#STR_SVT_ACC_DESC_TABLISTBOX.string.text
-msgid "Row: %1, Column: %2"
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/contnr/svcontnr.src#STR_SVT_ACC_DESC_TABLISTBOX.String.Text
+msgid  "Row: %1, Column: %2"
 msgstr "列：%1，欄：%2"
 
-#: svcontnr.src#STR_SVT_ACC_DESC_FILEVIEW.string.text
-msgid ", Type: %1, URL: %2"
+#: source/contnr/svcontnr.src#STR_SVT_ACC_DESC_FILEVIEW.String.Text
+msgid  ", Type: %1, URL: %2"
 msgstr "，類型：%1，URL：%2"
 
-#: svcontnr.src#STR_SVT_ACC_DESC_FOLDER.string.text
-msgid "Folder"
+#: source/contnr/svcontnr.src#STR_SVT_ACC_DESC_FOLDER.String.Text
+msgid  "Folder"
 msgstr "資料夾"
 
-#: svcontnr.src#STR_SVT_ACC_DESC_FILE.string.text
-msgid "File"
+#: source/contnr/svcontnr.src#STR_SVT_ACC_DESC_FILE.String.Text
+msgid  "File"
 msgstr "檔案"
 
-#: svcontnr.src#STR_SVT_ACC_EMPTY_FIELD.string.text
-msgid "Empty Field"
+#: source/contnr/svcontnr.src#STR_SVT_ACC_EMPTY_FIELD.String.Text
+msgid  "Empty Field"
 msgstr "空白欄位"
 
-#: templwin.src#STR_SVT_NEWDOC.string.text
-msgid "New Document"
+#: source/contnr/templwin.src#STR_SVT_NEWDOC.String.Text
+msgid  "New Document"
 msgstr "新增文件"
 
-#: templwin.src#STR_SVT_MYDOCS.string.text
-msgid "My Documents"
+#: source/contnr/templwin.src#STR_SVT_MYDOCS.String.Text
+msgid  "My Documents"
 msgstr "我的文件"
 
-#: templwin.src#STR_SVT_TEMPLATES.string.text
-msgid "Templates"
+#: source/contnr/templwin.src#STR_SVT_TEMPLATES.String.Text
+msgid  "Templates"
 msgstr "範本"
 
-#: templwin.src#STR_SVT_SAMPLES.string.text
-msgid "Samples"
+#: source/contnr/templwin.src#STR_SVT_SAMPLES.String.Text
+msgid  "Samples"
 msgstr "範例"
 
-#: templwin.src#TB_SVT_FILEVIEW.TI_DOCTEMPLATE_BACK.toolboxitem.text
-msgid "Back"
+#: source/contnr/templwin.src#TB_SVT_FILEVIEW.TI_DOCTEMPLATE_BACK.ToolBoxItem.Text
+msgid  "Back"
 msgstr "返回"
 
-#: templwin.src#TB_SVT_FILEVIEW.TI_DOCTEMPLATE_PREV.toolboxitem.text
-msgid "Up One Level"
+#: source/contnr/templwin.src#TB_SVT_FILEVIEW.TI_DOCTEMPLATE_PREV.ToolBoxItem.Text
+msgid  "Up One Level"
 msgstr "目錄向上一層"
 
-#: templwin.src#TB_SVT_FILEVIEW.TI_DOCTEMPLATE_PRINT.toolboxitem.text
-msgid "Print"
+#: source/contnr/templwin.src#TB_SVT_FILEVIEW.TI_DOCTEMPLATE_PRINT.ToolBoxItem.Text
+msgid  "Print"
 msgstr "列印"
 
-#: templwin.src#TB_SVT_FRAMEWIN.TI_DOCTEMPLATE_DOCINFO.toolboxitem.text
-msgid "Document Properties"
+#: source/contnr/templwin.src#TB_SVT_FRAMEWIN.TI_DOCTEMPLATE_DOCINFO.ToolBoxItem.Text
+msgid  "Document Properties"
 msgstr "文件屬性"
 
-#: templwin.src#TB_SVT_FRAMEWIN.TI_DOCTEMPLATE_PREVIEW.toolboxitem.text
-msgid "Preview"
+#: source/contnr/templwin.src#TB_SVT_FRAMEWIN.TI_DOCTEMPLATE_PREVIEW.ToolBoxItem.Text
+msgid  "Preview"
 msgstr "預覽"
 
-#: templwin.src#DLG_DOCTEMPLATE.FT_DOCTEMPLATE_LINK.fixedtext.text
-msgid "~Get more templates online..."
-msgstr "取得更多線上範本(~G)..."
-
-#: templwin.src#DLG_DOCTEMPLATE.BTN_DOCTEMPLATE_MANAGE.pushbutton.text
-msgid "Organi~ze..."
-msgstr "管理(~Z)..."
-
-#: templwin.src#DLG_DOCTEMPLATE.BTN_DOCTEMPLATE_EDIT.pushbutton.text
-msgid "~Edit"
-msgstr "編輯(~E)"
-
-#: templwin.src#DLG_DOCTEMPLATE.BTN_DOCTEMPLATE_OPEN.okbutton.text
-msgid "~Open"
-msgstr "開啟舊檔(~O)"
-
-#: templwin.src#DLG_DOCTEMPLATE.modaldialog.text
-msgid "Templates and Documents"
+#: source/contnr/templwin.src#DLG_DOCTEMPLATE.ModalDialog.Text
+msgid  "Templates and Documents"
 msgstr "範本和文件"
 
-#: templwin.src#STRARY_SVT_DOCINFO.1.itemlist.text
-msgctxt "templwin.src#STRARY_SVT_DOCINFO.1.itemlist.text"
-msgid "Title"
-msgstr "大標題"
-
-#: templwin.src#STRARY_SVT_DOCINFO.2.itemlist.text
-msgid "By"
-msgstr "作者"
-
-#: templwin.src#STRARY_SVT_DOCINFO.3.itemlist.text
-msgid "Date"
-msgstr "日期"
-
-#: templwin.src#STRARY_SVT_DOCINFO.4.itemlist.text
-msgid "Keywords"
-msgstr "關鍵字"
-
-#: templwin.src#STRARY_SVT_DOCINFO.5.itemlist.text
-msgid "Description"
-msgstr "描述"
-
-#: templwin.src#STRARY_SVT_DOCINFO.6.itemlist.text
-msgctxt "templwin.src#STRARY_SVT_DOCINFO.6.itemlist.text"
-msgid "Type"
-msgstr "內容類型"
-
-#: templwin.src#STRARY_SVT_DOCINFO.7.itemlist.text
-msgid "Modified on"
-msgstr "修改的日期"
-
-#: templwin.src#STRARY_SVT_DOCINFO.8.itemlist.text
-msgid "Modified by"
-msgstr "編輯修改者"
-
-#: templwin.src#STRARY_SVT_DOCINFO.9.itemlist.text
-msgid "Printed on"
-msgstr "列印的日期"
-
-#: templwin.src#STRARY_SVT_DOCINFO.10.itemlist.text
-msgid "Printed by"
-msgstr "列印的日期"
-
-#: templwin.src#STRARY_SVT_DOCINFO.11.itemlist.text
-msgid "Subject"
-msgstr "主題"
-
-#: templwin.src#STRARY_SVT_DOCINFO.12.itemlist.text
-msgctxt "templwin.src#STRARY_SVT_DOCINFO.12.itemlist.text"
-msgid "Size"
-msgstr "大小"
-
-#: templwin.src#STR_SVT_NEWDOC_HELP.string.text
-msgid "Click here to create new documents."
-msgstr "您在此能夠建立新的文件。"
-
-#: templwin.src#STR_SVT_MYDOCS_HELP.string.text
-msgid "Contains your letters, reports and other documents"
-msgstr "存放您的信件、報表及其它文件"
-
-#: templwin.src#STR_SVT_TEMPLATES_HELP.string.text
-msgid "Contains templates for creating new documents"
-msgstr "存放用來建立新文件的範本"
-
-#: templwin.src#STR_SVT_SAMPLES_HELP.string.text
-msgid "Contains a selection of sample letters, reports and other documents"
-msgstr "存放一套信件、報表及其它文件的範例文件"
-"X-Accelerator-Marker: ~\n"
-
-#: calendar.src#STR_SVT_CALENDAR_DAY.string.text
-msgid "Day"
-msgstr "天"
-
-#: calendar.src#STR_SVT_CALENDAR_WEEK.string.text
-msgid "Week"
-msgstr "週"
-
-#: calendar.src#STR_SVT_CALENDAR_TODAY.string.text
-msgid "Today"
-msgstr "今天"
-
-#: calendar.src#STR_SVT_CALENDAR_NONE.string.text
-msgid "None"
-msgstr "無"
-
-#: ctrlbox.src#STR_SVT_AUTOMATIC_COLOR.string.text
-msgid "Automatic"
-msgstr "自動"
-
-#: ctrlbox.src#STR_SVT_COLLATE_ALPHANUMERIC.string.text
-msgctxt "ctrlbox.src#STR_SVT_COLLATE_ALPHANUMERIC.string.text"
-msgid "Alphanumeric"
-msgstr "字母數字式"
-
-#: ctrlbox.src#STR_SVT_COLLATE_NORMAL.string.text
-msgid "Normal"
-msgstr "一般"
-
-#: ctrlbox.src#STR_SVT_COLLATE_CHARSET.string.text
-msgid "Character set"
-msgstr "字型"
-
-#: ctrlbox.src#STR_SVT_COLLATE_DICTIONARY.string.text
-msgctxt "ctrlbox.src#STR_SVT_COLLATE_DICTIONARY.string.text"
-msgid "Dictionary"
-msgstr "字典"
-
-#: ctrlbox.src#STR_SVT_COLLATE_PINYIN.string.text
-msgctxt "ctrlbox.src#STR_SVT_COLLATE_PINYIN.string.text"
-msgid "Pinyin"
-msgstr "拼音"
-
-#: ctrlbox.src#STR_SVT_COLLATE_STROKE.string.text
-msgctxt "ctrlbox.src#STR_SVT_COLLATE_STROKE.string.text"
-msgid "Stroke"
-msgstr "筆畫"
-
-#: ctrlbox.src#STR_SVT_COLLATE_RADICAL.string.text
-msgctxt "ctrlbox.src#STR_SVT_COLLATE_RADICAL.string.text"
-msgid "Radical"
-msgstr "部首"
-
-#: ctrlbox.src#STR_SVT_COLLATE_UNICODE.string.text
-msgid "Unicode"
-msgstr "Unicode"
-
-#: ctrlbox.src#STR_SVT_COLLATE_ZHUYIN.string.text
-msgctxt "ctrlbox.src#STR_SVT_COLLATE_ZHUYIN.string.text"
-msgid "Zhuyin"
-msgstr "注音"
-
-#: ctrlbox.src#STR_SVT_COLLATE_PHONEBOOK.string.text
-msgid "Phone book"
-msgstr "電話簿"
-
-#: ctrlbox.src#STR_SVT_COLLATE_PHONETIC_F.string.text
-msgid "Phonetic (alphanumeric first)"
-msgstr "語音的(數字排列最先)"
-
-#: ctrlbox.src#STR_SVT_COLLATE_PHONETIC_L.string.text
-msgid "Phonetic (alphanumeric last)"
-msgstr "語音的(字母數字排列最後)"
-
-#: ctrlbox.src#STR_SVT_INDEXENTRY_ALPHANUMERIC.string.text
-msgctxt "ctrlbox.src#STR_SVT_INDEXENTRY_ALPHANUMERIC.string.text"
-msgid "Alphanumeric"
-msgstr "字母數字的"
-
-#: ctrlbox.src#STR_SVT_INDEXENTRY_DICTIONARY.string.text
-msgctxt "ctrlbox.src#STR_SVT_INDEXENTRY_DICTIONARY.string.text"
-msgid "Dictionary"
-msgstr "字典"
-
-#: ctrlbox.src#STR_SVT_INDEXENTRY_PINYIN.string.text
-msgctxt "ctrlbox.src#STR_SVT_INDEXENTRY_PINYIN.string.text"
-msgid "Pinyin"
-msgstr "拼音"
-
-#: ctrlbox.src#STR_SVT_INDEXENTRY_RADICAL.string.text
-msgctxt "ctrlbox.src#STR_SVT_INDEXENTRY_RADICAL.string.text"
-msgid "Radical"
-msgstr "部首"
-
-#: ctrlbox.src#STR_SVT_INDEXENTRY_STROKE.string.text
-msgctxt "ctrlbox.src#STR_SVT_INDEXENTRY_STROKE.string.text"
-msgid "Stroke"
-msgstr "筆畫"
-
-#: ctrlbox.src#STR_SVT_INDEXENTRY_ZHUYIN.string.text
-msgctxt "ctrlbox.src#STR_SVT_INDEXENTRY_ZHUYIN.string.text"
-msgid "Zhuyin"
-msgstr "注音"
-
-#: ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_FS.string.text
-msgid "Phonetic (alphanumeric first, grouped by syllables)"
-msgstr "語音的(字母數字排列最先，按音節分組)"
-
-#: ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_FC.string.text
-msgid "Phonetic (alphanumeric first, grouped by consonants)"
-msgstr "語音的(字母數字排列最先，按輔音分組)"
-
-#: ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_LS.string.text
-msgid "Phonetic (alphanumeric last, grouped by syllables)"
-msgstr "語音的(數字排列最後，按音節分組)"
-
-#: ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_LC.string.text
-msgid "Phonetic (alphanumeric last, grouped by consonants)"
-msgstr "語音的(數字排列最後，按輔音分組)"
-
-#: ctrltool.src#STR_SVT_STYLE_LIGHT.string.text
-msgid "Light"
-msgstr "細"
-
-#: ctrltool.src#STR_SVT_STYLE_LIGHT_ITALIC.string.text
-msgid "Light Italic"
-msgstr "細斜體"
-
-#: ctrltool.src#STR_SVT_STYLE_NORMAL.string.text
-msgid "Regular"
-msgstr "標準"
-
-#: ctrltool.src#STR_SVT_STYLE_NORMAL_ITALIC.string.text
-msgid "Italic"
-msgstr "斜體"
-
-#: ctrltool.src#STR_SVT_STYLE_BOLD.string.text
-msgid "Bold"
-msgstr "粗體"
-
-#: ctrltool.src#STR_SVT_STYLE_BOLD_ITALIC.string.text
-msgid "Bold Italic"
-msgstr "粗斜體"
-
-#: ctrltool.src#STR_SVT_STYLE_BLACK.string.text
-msgid "Black"
-msgstr "黑體"
-
-#: ctrltool.src#STR_SVT_STYLE_BLACK_ITALIC.string.text
-msgid "Black Italic"
-msgstr "黑斜體"
-
-#: ctrltool.src#STR_SVT_FONTMAP_BOTH.string.text
-msgid "The same font will be used on both your printer and your screen."
-msgstr "螢幕顯示和列印使用統一的字型"
-
-#: ctrltool.src#STR_SVT_FONTMAP_PRINTERONLY.string.text
-msgid "This is a printer font. The screen image may differ."
-msgstr "列印字型。螢幕顯示字型可能略微有些偏差。"
-
-#: ctrltool.src#STR_SVT_FONTMAP_SCREENONLY.string.text
-msgid "This is a screen font. The printer image may differ."
-msgstr "螢幕字型。列印出可能會有一些偏差。"
-
-#: ctrltool.src#STR_SVT_FONTMAP_SIZENOTAVAILABLE.string.text
-msgid ""
-"This font size has not been installed. The closest available size will be "
-"used."
-msgstr "沒有安裝這個字型。採用最近似的字型。"
-
-#: ctrltool.src#STR_SVT_FONTMAP_STYLENOTAVAILABLE.string.text
-msgid ""
-"This font style will be simulated or the closest matching style will be "
-"used."
-msgstr "模仿這個字型或採用最近似的字型。"
-
-#: ctrltool.src#STR_SVT_FONTMAP_NOTAVAILABLE.string.text
-msgid ""
-"This font has not been installed. The closest available font will be used."
-msgstr "沒有安裝這個字型。採用最近似的字型。"
-
-#: filectrl.src#STR_FILECTRL_BUTTONTEXT.string.text
-msgid "Browse..."
-msgstr "瀏覽..."
-
-#: filectrl.src#STR_TABBAR_PUSHBUTTON_MOVET0HOME.string.text
-msgid "Move To Home"
-msgstr "移動到家目錄"
-
-#: filectrl.src#STR_TABBAR_PUSHBUTTON_MOVELEFT.string.text
-msgid "Move Left"
-msgstr "左移"
-
-#: filectrl.src#STR_TABBAR_PUSHBUTTON_MOVERIGHT.string.text
-msgid "Move Right"
-msgstr "右移"
-
-#: filectrl.src#STR_TABBAR_PUSHBUTTON_MOVETOEND.string.text
-msgid "Move To End"
-msgstr "移到結尾"
-
-#: toolpanel.src#STR_SVT_TOOL_PANEL_BUTTON_FWD.string.text
-msgid "Tab Panel Scroll Button, backward"
-msgstr "標籤面板捲動按鈕，向後"
-
-#: toolpanel.src#STR_SVT_TOOL_PANEL_BUTTON_BACK.string.text
-msgid "Tab Panel Scroll Button, forward"
-msgstr "標籤面板捲動按鈕，向前"
-"X-Generator: Translate Toolkit 1.9.0\n"
-"X-Accelerator-Marker: ~\n"
-
-#: exportdialog.src#DLG_EXPORT_TITLE.string.text
-msgid " Options"
-msgstr " 選項"
-
-#: exportdialog.src#DLG_EXPORT.FL_EXPORT_SIZE.fixedline.text
-msgid "Size"
-msgstr "大小"
-
-#: exportdialog.src#DLG_EXPORT.FT_SIZEX.fixedtext.text
-msgid "Width:"
-msgstr "寬度："
-
-#: exportdialog.src#DLG_EXPORT.LB_SIZEX.1.stringlist.text
-msgctxt "exportdialog.src#DLG_EXPORT.LB_SIZEX.1.stringlist.text"
-msgid "inches"
-msgstr "英吋"
-
-#: exportdialog.src#DLG_EXPORT.LB_SIZEX.2.stringlist.text
-msgctxt "exportdialog.src#DLG_EXPORT.LB_SIZEX.2.stringlist.text"
-msgid "cm"
-msgstr "公分"
-
-#: exportdialog.src#DLG_EXPORT.LB_SIZEX.3.stringlist.text
-msgctxt "exportdialog.src#DLG_EXPORT.LB_SIZEX.3.stringlist.text"
-msgid "mm"
-msgstr "公釐"
-
-#: exportdialog.src#DLG_EXPORT.LB_SIZEX.4.stringlist.text
-msgctxt "exportdialog.src#DLG_EXPORT.LB_SIZEX.4.stringlist.text"
-msgid "points"
-msgstr "點"
-
-#: exportdialog.src#DLG_EXPORT.LB_SIZEX.5.stringlist.text
-msgctxt "exportdialog.src#DLG_EXPORT.LB_SIZEX.5.stringlist.text"
-msgid "pixels"
-msgstr "像素"
-
-#: exportdialog.src#DLG_EXPORT.FT_SIZEY.fixedtext.text
-msgid "Height:"
-msgstr "高度："
-
-#: exportdialog.src#DLG_EXPORT.LB_SIZEY.1.stringlist.text
-msgctxt "exportdialog.src#DLG_EXPORT.LB_SIZEY.1.stringlist.text"
-msgid "inches"
-msgstr "英吋"
-
-#: exportdialog.src#DLG_EXPORT.LB_SIZEY.2.stringlist.text
-msgctxt "exportdialog.src#DLG_EXPORT.LB_SIZEY.2.stringlist.text"
-msgid "cm"
-msgstr "公分"
-
-#: exportdialog.src#DLG_EXPORT.LB_SIZEY.3.stringlist.text
-msgctxt "exportdialog.src#DLG_EXPORT.LB_SIZEY.3.stringlist.text"
-msgid "mm"
-msgstr "公釐"
-
-#: exportdialog.src#DLG_EXPORT.LB_SIZEY.4.stringlist.text
-msgctxt "exportdialog.src#DLG_EXPORT.LB_SIZEY.4.stringlist.text"
-msgid "points"
-msgstr "點"
-
-#: exportdialog.src#DLG_EXPORT.LB_SIZEY.5.stringlist.text
-msgctxt "exportdialog.src#DLG_EXPORT.LB_SIZEY.5.stringlist.text"
-msgid "pixels"
-msgstr "像素"
-
-#: exportdialog.src#DLG_EXPORT.FT_RESOLUTION.fixedtext.text
-msgid "Resolution:"
-msgstr "解析度："
-
-#: exportdialog.src#DLG_EXPORT.LB_RESOLUTION.1.stringlist.text
-msgid "pixels/cm"
-msgstr "像素/公分"
-
-#: exportdialog.src#DLG_EXPORT.LB_RESOLUTION.2.stringlist.text
-msgid "pixels/inch"
-msgstr "像素/英吋"
-
-#: exportdialog.src#DLG_EXPORT.LB_RESOLUTION.3.stringlist.text
-msgid "pixels/meter"
-msgstr "像素/公尺"
-
-#: exportdialog.src#DLG_EXPORT.FL_COLOR_DEPTH.fixedline.text
-msgid "Color Depth"
-msgstr "色彩深度"
-
-#: exportdialog.src#DLG_EXPORT.STR_1BIT_THRESHOLD.string.text
-msgid "1 bit threshold"
-msgstr "1位元臨界值"
-
-#: exportdialog.src#DLG_EXPORT.STR_1BIT_DITHERED.string.text
-msgid "1 bit dithered"
-msgstr "1位元抖動"
-
-#: exportdialog.src#DLG_EXPORT.STR_4BIT_GRAYSCALE.string.text
-msgid "4 bit grayscale"
-msgstr "4位元灰階"
-
-#: exportdialog.src#DLG_EXPORT.STR_4BIT_COLOR_PALETTE.string.text
-msgid "4 bit color"
-msgstr "4位元彩色"
-
-#: exportdialog.src#DLG_EXPORT.STR_8BIT_GRAYSCALE.string.text
-msgid "8 bit grayscale"
-msgstr "8位元灰階"
-
-#: exportdialog.src#DLG_EXPORT.STR_8BIT_COLOR_PALETTE.string.text
-msgid "8 bit color"
-msgstr "8位元彩色"
-
-#: exportdialog.src#DLG_EXPORT.STR_24BIT_TRUE_COLOR.string.text
-msgid "24 bit true color"
-msgstr "24位元全彩色"
-
-#: exportdialog.src#DLG_EXPORT.FL_JPG_QUALITY.fixedline.text
-msgid "Quality"
-msgstr "品質"
-
-#: exportdialog.src#DLG_EXPORT.FL_COMPRESSION.fixedline.text
-msgid "Compression"
-msgstr "壓縮"
-
-#: exportdialog.src#DLG_EXPORT.FL_MODE.fixedline.text
-msgid "Mode"
-msgstr "模式"
-
-#: exportdialog.src#DLG_EXPORT.FL_PBM_OPTIONS.fixedline.text
-msgid "File Format"
-msgstr "檔案格式"
-
-#: exportdialog.src#DLG_EXPORT.FT_JPG_MIN.fixedtext.text
-msgid "1 is minimum Quality and smallest file size."
-msgstr "1是檔案大小最小，但品質最差。"
-
-#: exportdialog.src#DLG_EXPORT.FT_JPG_MAX.fixedtext.text
-msgid "100 is maximum Quality and biggest file size."
-msgstr "100是檔案大小最大，但品質最好。"
-
-#: exportdialog.src#DLG_EXPORT.FT_PNG_MIN.fixedtext.text
-msgid "0 is biggest file size and fastest loading."
-msgstr "0是檔案大小最大，且讀取速度最快。"
-
-#: exportdialog.src#DLG_EXPORT.FT_PNG_MAX.fixedtext.text
-msgid "9 is smallest file size and slowest loading."
-msgstr "9是檔案大小最小，但讀取速度最慢。"
-
-#: exportdialog.src#DLG_EXPORT.CB_JPG_PREVIEW.checkbox.text
-msgctxt "exportdialog.src#DLG_EXPORT.CB_JPG_PREVIEW.checkbox.text"
-msgid "Preview"
-msgstr "預覽"
-
-#: exportdialog.src#DLG_EXPORT.CB_INTERLACED.checkbox.text
-msgid "Interlaced"
-msgstr "交錯"
-
-#: exportdialog.src#DLG_EXPORT.CB_RLE_ENCODING.checkbox.text
-msgid "RLE encoding"
-msgstr "RLE編碼"
-
-#: exportdialog.src#DLG_EXPORT.FL_GIF_DRAWING_OBJECTS.fixedline.text
-msgid "Drawing Objects"
-msgstr "繪製物件"
-
-#: exportdialog.src#DLG_EXPORT.CB_SAVE_TRANSPARENCY.checkbox.text
-msgid "Save transparency"
-msgstr "儲存透明度"
-
-#: exportdialog.src#DLG_EXPORT.RB_BINARY.radiobutton.text
-msgid "Binary"
-msgstr "二進位格式"
-
-#: exportdialog.src#DLG_EXPORT.RB_TEXT.radiobutton.text
-msgid "Text"
-msgstr "文字"
-
-#: exportdialog.src#DLG_EXPORT.FL_EPS_PREVIEW.fixedline.text
-msgctxt "exportdialog.src#DLG_EXPORT.FL_EPS_PREVIEW.fixedline.text"
-msgid "Preview"
-msgstr "預覽"
-
-#: exportdialog.src#DLG_EXPORT.CB_EPS_PREVIEW_TIFF.checkbox.text
-msgid "Image Preview (TIFF)"
-msgstr "影像預覽(TIFF)"
-
-#: exportdialog.src#DLG_EXPORT.CB_EPS_PREVIEW_EPSI.checkbox.text
-msgid "Interchange (EPSI)"
-msgstr "交換(EPSI)"
-
-#: exportdialog.src#DLG_EXPORT.FL_EPS_VERSION.fixedline.text
-msgid "Version"
-msgstr "版本"
-
-#: exportdialog.src#DLG_EXPORT.RB_EPS_LEVEL1.radiobutton.text
-msgid "Level 1"
-msgstr "等級1"
-
-#: exportdialog.src#DLG_EXPORT.RB_EPS_LEVEL2.radiobutton.text
-msgid "Level 2"
-msgstr "等級2"
-
-#: exportdialog.src#DLG_EXPORT.FL_EPS_COLOR_FORMAT.fixedline.text
-msgid "Color format"
-msgstr "色彩格式"
-
-#: exportdialog.src#DLG_EXPORT.RB_EPS_COLOR_FORMAT1.radiobutton.text
-msgid "Color"
-msgstr "顏色"
-
-#: exportdialog.src#DLG_EXPORT.RB_EPS_COLOR_FORMAT2.radiobutton.text
-msgid "Grayscale"
-msgstr "灰階"
-
-#: exportdialog.src#DLG_EXPORT.RB_EPS_COMPRESSION_LZW.radiobutton.text
-msgid "LZW encoding"
-msgstr "LZW編碼"
-
-#: exportdialog.src#DLG_EXPORT.RB_EPS_COMPRESSION_NONE.radiobutton.text
-msgid "None"
-msgstr "無"
-
-#: exportdialog.src#DLG_EXPORT.STR_ESTIMATED_SIZE_PIX_1.string.text
-msgid "The picture needs about %1 KB of memory."
-msgstr "這張圖需要約 %1 KB的記憶體空間。"
-
-#: exportdialog.src#DLG_EXPORT.STR_ESTIMATED_SIZE_PIX_2.string.text
-msgid ""
-"The picture needs about %1 KB of memory,\n"
-" the file size is %2 KB."
-msgstr ""
-"這張圖需要約 %1 KB的記憶體空間。\n"
-" 檔案大小 %2 KB。"
-
-#: exportdialog.src#DLG_EXPORT.STR_ESTIMATED_SIZE_VEC.string.text
-msgid "The file size is %1 KB."
-msgstr "檔案大小 %1 KB。"
-
-#: javaerror.src#WARNINGBOX_JAVANOTFOUND.warningbox.text
-msgid ""
-"%PRODUCTNAME requires a Java runtime environment (JRE) to perform this task. "
-"Please install a JRE and restart %PRODUCTNAME."
-msgstr ""
-"%PRODUCTNAME 需要 Java Runtime Environment (JRE) 才能執行此工作。請安裝 JRE 並重新啟動 %"
-"PRODUCTNAME。"
-
-#: javaerror.src#WARNINGBOX_INVALIDJAVASETTINGS.warningbox.text
-msgid ""
-"The %PRODUCTNAME configuration has been changed. Under Tools - Options - %"
-"PRODUCTNAME - Java, select the Java runtime environment you want to have "
-"used by %PRODUCTNAME."
-msgstr ""
-"%PRODUCTNAME 配置已變更。在 [工具] - [選項] - [%PRODUCTNAME] - [Java] 下，選取您想要讓 %"
-"PRODUCTNAME 使用的 Java Runtime Environment。"
-
-#: javaerror.src#QBX_JAVADISABLED.querybox.text
-msgid ""
-"%PRODUCTNAME requires a Java runtime environment (JRE) to perform this task. "
-"However, use of a JRE has been disabled. Do you want to enable the use of a "
-"JRE now?"
-msgstr ""
-"%PRODUCTNAME 需要 Java Runtime Environment (JRE) 才能執行此工作。但是 JRE "
-"一直為停用狀態。您想要現在啟用 JRE 嗎？"
-
-#: javaerror.src#ERRORBOX_JVMCREATIONFAILED.errorbox.text
-msgid ""
-"%PRODUCTNAME requires a Java runtime environment (JRE) to perform this task. "
-"The selected JRE is defective. Please select another version or install a "
-"new JRE and select  it under Tools - Options - %PRODUCTNAME - Java."
-msgstr ""
-"%PRODUCTNAME 需要 Java Runtime Environment (JRE) 才能執行此工作。所選 JRE "
-"有問題。請選取另一版本或安裝新 JRE，並由 [工具] - [選項] - %PRODUCTNAME - Java 選取 JRE。"
-
-#: javaerror.src#ERRORBOX_RESTARTREQUIRED.errorbox.text
-msgid ""
-"For the selected Java runtime environment to work properly, %PRODUCTNAME "
-"must be restarted. Please restart %PRODUCTNAME now."
-msgstr ""
-"為讓所選 Java Runtime Environment 正常運作，必須重新啟動 %PRODUCTNAME。請立刻重新啟動 %PRODUCTNAME。"
-
-#: javaerror.src#STR_WARNING_JAVANOTFOUND.string.text
-msgid "JRE Required"
-msgstr "需要 JRE"
-
-#: javaerror.src#STR_WARNING_INVALIDJAVASETTINGS.string.text
-msgid "Select JRE"
-msgstr "選取 JRE"
-
-#: javaerror.src#STR_ERROR_RESTARTREQUIRED.string.text
-msgid "Restart Required"
-msgstr "需要重新啟動"
-
-#: javaerror.src#STR_QUESTION_JAVADISABLED.string.text
-msgid "Enable JRE"
-msgstr "啟用 JRE"
-
-#: javaerror.src#STR_ERROR_JVMCREATIONFAILED.string.text
-msgid "JRE is Defective"
-msgstr "JRE 有問題"
-
-#: testtool.src#DisplayHidToolBox.TT_SHOW.toolboxitem.text
-msgid "Display IDs"
-msgstr "顯示 ID"
-
-#: testtool.src#DisplayHidToolBox.TT_OUTPUT.toolboxitem.text
-msgid "This is the input window"
-msgstr "此為輸入視窗"
-
-#: testtool.src#DisplayHidToolBox.TT_SEND_DATA.toolboxitem.text
-msgid "Transfer to TestTool"
-msgstr "傳輸至 TestTool"
-
-#: testtool.src#DisplayHidToolBox.TT_ALLWIN.toolboxitem.text
-msgid "Show all windows"
-msgstr "顯示所有視窗"
-
-#: testtool.src#DisplayHidToolBox.TT_KURZNAME.toolboxitem.text
-msgid "Show short names (if available)"
-msgstr "顯示簡短名稱 (如果有)"
-
-#: testtool.src#DisplayHidToolBox.TT_LANGNAME.toolboxitem.text
-msgid "Always show long-name"
-msgstr "一律顯示完整名稱"
-
-#: testtool.src#DisplayHidToolBox.toolbox.text
-msgid "DisplayHID"
-msgstr "DisplayHID"
-
-#: testtool.src#TT_INLINE_TRANSLATION.TT_GB_TRANSLATION.groupbox.text
-msgid "Translation"
-msgstr "翻譯"
-
-#: testtool.src#TT_INLINE_TRANSLATION.TT_E_NEW.edit.text
-msgid "~Edit"
+#: source/contnr/templwin.src#DLG_DOCTEMPLATE.FT_DOCTEMPLATE_LINK.FixedText.Text
+msgid  "~Get more templates online..."
+msgstr "取得更多線上範本(~G)..."
+
+#: source/contnr/templwin.src#DLG_DOCTEMPLATE.BTN_DOCTEMPLATE_MANAGE.PushButton.Text
+msgid  "Organi~ze..."
+msgstr "管理(~Z)..."
+
+#: source/contnr/templwin.src#DLG_DOCTEMPLATE.BTN_DOCTEMPLATE_EDIT.PushButton.Text
+msgid  "~Edit"
 msgstr "編輯(~E)"
 
-#: testtool.src#TT_INLINE_TRANSLATION.TT_FT_OLD.fixedtext.text
-msgid "Original Text"
-msgstr "原始文字"
-
-#: testtool.src#TT_INLINE_TRANSLATION.TT_GB_COMMENT.groupbox.text
-msgid "Comment"
-msgstr "註釋"
-
-#: testtool.src#TT_INLINE_TRANSLATION.TT_E_COMMENT.edit.text
-msgid "~Comment"
-msgstr "註釋(~C)"
-
-#: testtool.src#TT_INLINE_TRANSLATION.TT_PB_SELECT.pushbutton.text
-msgid "~Select"
-msgstr "選取(~S)"
-
-#: testtool.src#TT_INLINE_TRANSLATION.TT_PB_RESTORE.pushbutton.text
-msgid "~Restore"
-msgstr "修復(~R)"
-
-#: testtool.src#TT_INLINE_TRANSLATION.TT_PB_ACCEPT.pushbutton.text
-msgid "~Accept"
-msgstr "接受(~A)"
-
-#: testtool.src#TT_INLINE_TRANSLATION.TT_PB_NEXT.pushbutton.text
-msgid "~Next"
-msgstr "下一個(~N)"
-
-#: testtool.src#TT_INLINE_TRANSLATION.workwindow.text
-msgid "Inplace Translation"
-msgstr "直接翻譯"
-
-#: testtool.src#TT_DISCARD_CHANGED_DATA.messbox.text
-msgid "The Translation will be lost. Proceed anyway?"
-msgstr "翻譯即將遺失。是否仍要繼續?"
-
-#: testtool.src#TT_NO_CONTROL.errorbox.text
-msgid "The Control is no longer valid. The Translation cannot be saved."
-msgstr "此控制項不再有效。無法儲存翻譯。"
-
-#: testtool.src#TT_GPF.string.text
-msgid "GPF occurred"
-msgstr "發生 GPF"
-
-#: testtool.src#TT_ALTERNATE_CAPTION.string.text
-msgid "HelpID does not match UniqueID: "
-msgstr "HelpID 與 UniqueID 不相符: "
-"X-Accelerator-Marker: ~\n"
-
-#: imagemgr.src#STR_DESCRIPTION_SOURCEFILE.string.text
-msgid "Source code"
-msgstr "原始檔"
-
-#: imagemgr.src#STR_DESCRIPTION_BOOKMARKFILE.string.text
-msgid "Bookmark file"
-msgstr "書籤檔案"
-
-#: imagemgr.src#STR_DESCRIPTION_GRAPHIC_DOC.string.text
-msgid "Graphics"
-msgstr "圖形"
-
-#: imagemgr.src#STR_DESCRIPTION_CFGFILE.string.text
-msgid "Configuration file"
-msgstr "配置檔案"
-
-#: imagemgr.src#STR_DESCRIPTION_APPLICATION.string.text
-msgid "Application"
-msgstr "應用程式"
-
-#: imagemgr.src#STR_DESCRIPTION_DATABASE_TABLE.string.text
-msgid "Database table"
-msgstr "資料庫表格"
-
-#: imagemgr.src#STR_DESCRIPTION_SYSFILE.string.text
-msgid "System file"
-msgstr "系統檔案"
-
-#: imagemgr.src#STR_DESCRIPTION_WORD_DOC.string.text
-msgid "MS Word document"
-msgstr "MS Word 文件"
-
-#: imagemgr.src#STR_DESCRIPTION_HELP_DOC.string.text
-msgid "Help file"
-msgstr "說明檔案"
-
-#: imagemgr.src#STR_DESCRIPTION_HTMLFILE.string.text
-msgctxt "imagemgr.src#STR_DESCRIPTION_HTMLFILE.string.text"
-msgid "HTML document"
-msgstr "HTML 文件"
-
-#: imagemgr.src#STR_DESCRIPTION_ARCHIVFILE.string.text
-msgid "Archive file"
-msgstr "備用檔案"
-
-#: imagemgr.src#STR_DESCRIPTION_LOGFILE.string.text
-msgid "Log file"
-msgstr "記錄檔案"
-
-#: imagemgr.src#STR_DESCRIPTION_SDATABASE_DOC.string.text
-msgid "%STAROFFICE Database"
-msgstr "%STAROFFICE 資料庫"
-
-#: imagemgr.src#STR_DESCRIPTION_GLOBALDOC.string.text
-msgid "StarWriter 4.0 / 5.0 Master Document"
-msgstr "StarWriter 4.0 / 5.0 主控文件"
-
-#: imagemgr.src#STR_DESCRIPTION_SIMAGE_DOC.string.text
-msgid "%STAROFFICE Image"
-msgstr "%STAROFFICE 影像"
-
-#: imagemgr.src#STR_DESCRIPTION_TEXTFILE.string.text
-msgid "Text file"
-msgstr "文字檔案"
-
-#: imagemgr.src#STR_DESCRIPTION_LINK.string.text
-msgid "Link"
-msgstr "連結"
-
-#: imagemgr.src#STR_DESCRIPTION_SOFFICE_TEMPLATE_DOC.string.text
-msgid "%STAROFFICE 3.0 - 5.0 Template"
-msgstr "%STAROFFICE 3.0 - 5.0 範本"
-
-#: imagemgr.src#STR_DESCRIPTION_EXCEL_DOC.string.text
-msgid "MS Excel document"
-msgstr "MS Excel 文件"
-
-#: imagemgr.src#STR_DESCRIPTION_EXCEL_TEMPLATE_DOC.string.text
-msgid "MS Excel template"
-msgstr "MS Excel 範本"
-
-#: imagemgr.src#STR_DESCRIPTION_BATCHFILE.string.text
-msgid "Batch file"
-msgstr "批次檔"
-
-#: imagemgr.src#STR_DESCRIPTION_FILE.string.text
-msgid "File"
-msgstr "檔案"
-
-#: imagemgr.src#STR_DESCRIPTION_FOLDER.string.text
-msgid "Folder"
-msgstr "資料夾"
-
-#: imagemgr.src#STR_DESCRIPTION_FACTORY_WRITER.string.text
-msgid "Text Document"
-msgstr "文字文件"
-
-#: imagemgr.src#STR_DESCRIPTION_FACTORY_CALC.string.text
-msgid "Spreadsheet"
-msgstr "試算表"
-
-#: imagemgr.src#STR_DESCRIPTION_FACTORY_IMPRESS.string.text
-msgid "Presentation"
-msgstr "簡報"
-
-#: imagemgr.src#STR_DESCRIPTION_FACTORY_DRAW.string.text
-msgid "Drawing"
-msgstr "繪圖"
-
-#: imagemgr.src#STR_DESCRIPTION_FACTORY_WRITERWEB.string.text
-msgctxt "imagemgr.src#STR_DESCRIPTION_FACTORY_WRITERWEB.string.text"
-msgid "HTML document"
-msgstr "HTML 文件"
-
-#: imagemgr.src#STR_DESCRIPTION_FACTORY_GLOBALDOC.string.text
-msgid "Master document"
-msgstr "主控文件"
-
-#: imagemgr.src#STR_DESCRIPTION_FACTORY_MATH.string.text
-msgid "Formula"
-msgstr "公式"
-
-#: imagemgr.src#STR_DESCRIPTION_FACTORY_DATABASE.string.text
-msgid "Database"
-msgstr "資料庫"
-
-#: imagemgr.src#STR_DESCRIPTION_CALC_TEMPLATE.string.text
-msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet Template"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION 試算表範本"
-
-#: imagemgr.src#STR_DESCRIPTION_DRAW_TEMPLATE.string.text
-msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Drawing Template"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION 繪圖範本"
-
-#: imagemgr.src#STR_DESCRIPTION_IMPRESS_TEMPLATE.string.text
-msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Presentation Template"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION 簡報範本"
-
-#: imagemgr.src#STR_DESCRIPTION_WRITER_TEMPLATE.string.text
-msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Text Document Template"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION 文字文件範本"
-
-#: imagemgr.src#STR_DESCRIPTION_LOCALE_VOLUME.string.text
-msgid "Local drive"
-msgstr "本機磁碟"
-
-#: imagemgr.src#STR_DESCRIPTION_FLOPPY_VOLUME.string.text
-msgid "Disk drive"
-msgstr "軟碟機"
-
-#: imagemgr.src#STR_DESCRIPTION_CDROM_VOLUME.string.text
-msgid "CD-ROM drive"
-msgstr "光碟機"
-
-#: imagemgr.src#STR_DESCRIPTION_REMOTE_VOLUME.string.text
-msgid "Network connection"
-msgstr "網路連線"
-
-#: imagemgr.src#STR_DESCRIPTION_POWERPOINT.string.text
-msgid "MS PowerPoint Document"
-msgstr "Microsoft PowerPoint 文件"
-
-#: imagemgr.src#STR_DESCRIPTION_POWERPOINT_TEMPLATE.string.text
-msgid "MS PowerPoint Template"
-msgstr "Microsoft PowerPoint Template"
-
-#: imagemgr.src#STR_DESCRIPTION_POWERPOINT_SHOW.string.text
-msgid "MS PowerPoint Show"
-msgstr "Microsoft PowerPoint Show"
-
-#: imagemgr.src#STR_DESCRIPTION_SXMATH_DOC.string.text
-msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Formula"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION 公式"
-
-#: imagemgr.src#STR_DESCRIPTION_SXCHART_DOC.string.text
-msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Chart"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION 圖表"
-
-#: imagemgr.src#STR_DESCRIPTION_SXDRAW_DOC.string.text
-msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Drawing"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION 繪圖"
-
-#: imagemgr.src#STR_DESCRIPTION_SXCALC_DOC.string.text
-msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION 試算表"
-
-#: imagemgr.src#STR_DESCRIPTION_SXIMPRESS_DOC.string.text
-msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Presentation"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION 簡報"
-
-#: imagemgr.src#STR_DESCRIPTION_SXWRITER_DOC.string.text
-msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Text Document"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION 文字文件"
-
-#: imagemgr.src#STR_DESCRIPTION_SXGLOBAL_DOC.string.text
-msgid "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Master Document"
-msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION 主控文件"
-
-#: imagemgr.src#STR_DESCRIPTION_MATHML_DOC.string.text
-msgid "MathML Document"
-msgstr "MathML 文件"
-
-#: imagemgr.src#STR_DESCRIPTION_OO_DATABASE_DOC.string.text
-msgid "OpenDocument Database"
-msgstr "OpenDocument 資料庫"
-
-#: imagemgr.src#STR_DESCRIPTION_OO_DRAW_DOC.string.text
-msgid "OpenDocument Drawing"
-msgstr "OpenDocument 繪圖"
-
-#: imagemgr.src#STR_DESCRIPTION_OO_MATH_DOC.string.text
-msgid "OpenDocument Formula"
-msgstr "OpenDocument 公式"
-
-#: imagemgr.src#STR_DESCRIPTION_OO_GLOBAL_DOC.string.text
-msgid "OpenDocument Master Document"
-msgstr "OpenDocument 主控文件"
-
-#: imagemgr.src#STR_DESCRIPTION_OO_IMPRESS_DOC.string.text
-msgid "OpenDocument Presentation"
-msgstr "OpenDocument 簡報"
-
-#: imagemgr.src#STR_DESCRIPTION_OO_CALC_DOC.string.text
-msgid "OpenDocument Spreadsheet"
-msgstr "OpenDocument 試算表"
-
-#: imagemgr.src#STR_DESCRIPTION_OO_WRITER_DOC.string.text
-msgid "OpenDocument Text"
-msgstr "OpenDocument 文字"
-
-#: imagemgr.src#STR_DESCRIPTION_OO_CALC_TEMPLATE.string.text
-msgid "OpenDocument Spreadsheet Template"
-msgstr "OpenDocument 試算表範本"
-
-#: imagemgr.src#STR_DESCRIPTION_OO_DRAW_TEMPLATE.string.text
-msgid "OpenDocument Drawing Template"
-msgstr "OpenDocument 繪圖範本"
-
-#: imagemgr.src#STR_DESCRIPTION_OO_IMPRESS_TEMPLATE.string.text
-msgid "OpenDocument Presentation Template"
-msgstr "OpenDocument 簡報範本"
-
-#: imagemgr.src#STR_DESCRIPTION_OO_WRITER_TEMPLATE.string.text
-msgid "OpenDocument Text Template"
-msgstr "OpenDocument 文字範本"
-
-#: imagemgr.src#STR_DESCRIPTION_EXTENSION.string.text
-msgid "%PRODUCTNAME Extension"
-msgstr "%PRODUCTNAME 擴充軟體"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NONE.pairedlist.text
-msgid "[None]"
-msgstr "[無]"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DONTKNOW.pairedlist.text
-msgid "Unknown"
-msgstr "未知"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SYSTEM.pairedlist.text
-msgid "Default"
-msgstr "預設"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AFRIKAANS.pairedlist.text
-msgid "Afrikaans (South Africa)"
-msgstr "南非語 (南非)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ALBANIAN.pairedlist.text
-msgid "Albanian"
-msgstr "阿爾巴尼亞語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_PRIMARY_ONLY.pairedlist.text
-msgid "Arabic"
-msgstr "阿拉伯語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_ALGERIA.pairedlist.text
-msgid "Arabic (Algeria)"
-msgstr "阿拉伯語 (阿爾及利亞)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_BAHRAIN.pairedlist.text
-msgid "Arabic (Bahrain)"
-msgstr "阿拉伯語 (巴林)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_CHAD.pairedlist.text
-msgid "Arabic (Chad)"
-msgstr "阿拉伯語 (查德)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_COMOROS.pairedlist.text
-msgid "Arabic (Comoros)"
-msgstr "阿拉伯語 (葛摩)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_DJIBOUTI.pairedlist.text
-msgid "Arabic (Djibouti)"
-msgstr "阿拉伯語 (吉布地)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_EGYPT.pairedlist.text
-msgid "Arabic (Egypt)"
-msgstr "阿拉伯語 (埃及)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_ERITREA.pairedlist.text
-msgid "Arabic (Eritrea)"
-msgstr "阿拉伯語 (厄利垂亞)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_IRAQ.pairedlist.text
-msgid "Arabic (Iraq)"
-msgstr "阿拉伯語 (伊拉克)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_ISRAEL.pairedlist.text
-msgid "Arabic (Israel)"
-msgstr "阿拉伯語 (以色列)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_JORDAN.pairedlist.text
-msgid "Arabic (Jordan)"
-msgstr "阿拉伯語 (約旦)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_KUWAIT.pairedlist.text
-msgid "Arabic (Kuwait)"
-msgstr "阿拉伯語 (科威特)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_LEBANON.pairedlist.text
-msgid "Arabic (Lebanon)"
-msgstr "阿拉伯語 (黎巴嫩)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_LIBYA.pairedlist.text
-msgid "Arabic (Libya)"
-msgstr "阿拉伯語 (利比亞)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_MAURITANIA.pairedlist.text
-msgid "Arabic (Mauritania)"
-msgstr "阿拉伯語 (茅利塔尼亞)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_MOROCCO.pairedlist.text
-msgid "Arabic (Morocco)"
-msgstr "阿拉伯語 (摩洛哥)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_OMAN.pairedlist.text
-msgid "Arabic (Oman)"
-msgstr "阿拉伯語 (阿曼)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_PALESTINE.pairedlist.text
-msgid "Arabic (Palestine)"
-msgstr "阿拉伯語 (巴勒斯坦)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_QATAR.pairedlist.text
-msgid "Arabic (Qatar)"
-msgstr "阿拉伯語 (卡塔爾)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_SAUDI_ARABIA.pairedlist.text
-msgid "Arabic (Saudi Arabia)"
-msgstr "阿拉伯語 (沙烏地阿拉伯)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_SOMALIA.pairedlist.text
-msgid "Arabic (Somalia)"
-msgstr "阿拉伯語 (索馬利亞)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_SUDAN.pairedlist.text
-msgid "Arabic (Sudan)"
-msgstr "阿拉伯語 (蘇丹)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_SYRIA.pairedlist.text
-msgid "Arabic (Syria)"
-msgstr "阿拉伯語 (敘利亞)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_TUNISIA.pairedlist.text
-msgid "Arabic (Tunisia)"
-msgstr "阿拉伯語 (突尼西亞)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_UAE.pairedlist.text
-msgid "Arabic (UAE)"
-msgstr "阿拉伯語 (阿拉伯聯合大公國)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_YEMEN.pairedlist.text
-msgid "Arabic (Yemen)"
-msgstr "阿拉伯語 (葉門)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARMENIAN.pairedlist.text
-msgid "Armenian"
-msgstr "亞美尼亞語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ASSAMESE.pairedlist.text
-msgid "Assami"
-msgstr "印度的阿薩姆語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AZERI_LATIN.pairedlist.text
-msgid "Azerbaijani Latin"
-msgstr "阿塞拜疆語 (拉丁語)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AZERI_CYRILLIC.pairedlist.text
-msgid "Azerbaijani Cyrillic"
-msgstr "阿塞拜疆語 (斯拉夫語)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BASQUE.pairedlist.text
-msgid "Basque"
-msgstr "巴斯克語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BENGALI.pairedlist.text
-msgid "Bengali (India)"
-msgstr "孟加拉語 (印度)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BULGARIAN.pairedlist.text
-msgid "Bulgarian"
-msgstr "保加利亞語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BELARUSIAN.pairedlist.text
-msgid "Belarusian"
-msgstr "白俄羅斯語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CATALAN.pairedlist.text
-msgid "Catalan"
-msgstr "加泰羅尼亞語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_TRADITIONAL.pairedlist.text
-msgid "Chinese (traditional)"
-msgstr "中文 (繁體)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_SIMPLIFIED.pairedlist.text
-msgid "Chinese (simplified)"
-msgstr "中文 (簡體)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_HONGKONG.pairedlist.text
-msgid "Chinese (Hong Kong)"
-msgstr "中文 (香港)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_SINGAPORE.pairedlist.text
-msgid "Chinese (Singapore)"
-msgstr "中文 (新加坡)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_MACAU.pairedlist.text
-msgid "Chinese (Macau)"
-msgstr "中文 (澳門)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CROATIAN.pairedlist.text
-msgid "Croatian"
-msgstr "克羅地亞語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CZECH.pairedlist.text
-msgid "Czech"
-msgstr "捷克語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DANISH.pairedlist.text
-msgid "Danish"
-msgstr "丹麥語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DUTCH.pairedlist.text
-msgid "Dutch (Netherlands)"
-msgstr "荷蘭語 (荷蘭)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DUTCH_BELGIAN.pairedlist.text
-msgid "Dutch (Belgium)"
-msgstr "荷蘭語 (比利時)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_US.pairedlist.text
-msgid "English (USA)"
-msgstr "英語 (美國)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_UK.pairedlist.text
-msgid "English (UK)"
-msgstr "英語 (英國)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_AUS.pairedlist.text
-msgid "English (Australia)"
-msgstr "英語 (澳大利亞)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_CAN.pairedlist.text
-msgid "English (Canada)"
-msgstr "英語 (加拿大)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_NZ.pairedlist.text
-msgid "English (New Zealand)"
-msgstr "英語 (紐西蘭)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_EIRE.pairedlist.text
-msgid "English (Eire)"
-msgstr "英語 (愛爾蘭)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_SAFRICA.pairedlist.text
-msgid "English (South Africa)"
-msgstr "英語 (南非)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_JAMAICA.pairedlist.text
-msgid "English (Jamaica)"
-msgstr "英語 (牙買加)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_CARRIBEAN.pairedlist.text
-msgid "English (Caribbean)"
-msgstr "英語 (加勒比海)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_BELIZE.pairedlist.text
-msgid "English (Belize)"
-msgstr "英語 (貝里斯)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_TRINIDAD.pairedlist.text
-msgid "English (Trinidad)"
-msgstr "英語 (千里達)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_ZIMBABWE.pairedlist.text
-msgid "English (Zimbabwe)"
-msgstr "英語 (辛巴威)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_PHILIPPINES.pairedlist.text
-msgid "English (Philippines)"
-msgstr "英語 (菲律賓)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_INDIA.pairedlist.text
-msgid "English (India)"
-msgstr "英語 (印度)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ESTONIAN.pairedlist.text
-msgid "Estonian"
-msgstr "愛沙尼亞語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FINNISH.pairedlist.text
-msgid "Finnish"
-msgstr "芬蘭語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FAEROESE.pairedlist.text
-msgid "Faroese"
-msgstr "法羅群島語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FARSI.pairedlist.text
-msgid "Farsi"
-msgstr "波斯語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH.pairedlist.text
-msgid "French (France)"
-msgstr "法語 (法國)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_BELGIAN.pairedlist.text
-msgid "French (Belgium)"
-msgstr "法語 (比利時)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_CANADIAN.pairedlist.text
-msgid "French (Canada)"
-msgstr "法語 (加拿大)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_SWISS.pairedlist.text
-msgid "French (Switzerland)"
-msgstr "法語 (瑞士)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_LUXEMBOURG.pairedlist.text
-msgid "French (Luxembourg)"
-msgstr "法語 (盧森堡)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_MONACO.pairedlist.text
-msgid "French (Monaco)"
-msgstr "法語 (摩洛哥)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GASCON.pairedlist.text
-msgid "Gascon"
-msgstr "加斯科涅語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN.pairedlist.text
-msgid "German (Germany)"
-msgstr "德語 (德國)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_SWISS.pairedlist.text
-msgid "German (Switzerland)"
-msgstr "法語 (瑞士)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_AUSTRIAN.pairedlist.text
-msgid "German (Austria)"
-msgstr "法語 (奧地利)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_LUXEMBOURG.pairedlist.text
-msgid "German (Luxembourg)"
-msgstr "法語 (盧森堡)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_LIECHTENSTEIN.pairedlist.text
-msgid "German (Liechtenstein)"
-msgstr "德語 (列支敦斯登)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GREEK.pairedlist.text
-msgid "Greek"
-msgstr "希臘語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GUJARATI.pairedlist.text
-msgid "Gujarati"
-msgstr "古吉拉特語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HEBREW.pairedlist.text
-msgid "Hebrew"
-msgstr "希伯來語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HINDI.pairedlist.text
-msgid "Hindi"
-msgstr "北印度語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HUNGARIAN.pairedlist.text
-msgid "Hungarian"
-msgstr "匈牙利語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ICELANDIC.pairedlist.text
-msgid "Icelandic"
-msgstr "冰島語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_INDONESIAN.pairedlist.text
-msgid "Indonesian"
-msgstr "印尼語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ITALIAN.pairedlist.text
-msgid "Italian (Italy)"
-msgstr "義大利語 (義大利)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ITALIAN_SWISS.pairedlist.text
-msgid "Italian (Switzerland)"
-msgstr "義大利語 (瑞士)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_JAPANESE.pairedlist.text
-msgid "Japanese"
-msgstr "日語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KANNADA.pairedlist.text
-msgid "Kannada"
-msgstr "印度的卡納達語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KASHMIRI.pairedlist.text
-msgid "Kashmiri (Kashmir)"
-msgstr "喀什米爾語 (喀什米爾)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KASHMIRI_INDIA.pairedlist.text
-msgid "Kashmiri (India)"
-msgstr "喀什米爾語 (印度)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KAZAK.pairedlist.text
-msgid "Kazak"
-msgstr "哈薩克語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KONKANI.pairedlist.text
-msgid "Konkani"
-msgstr "印度方言 (Konkani)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KOREAN.pairedlist.text
-msgid "Korean (RoK)"
-msgstr "韓語 (南韓)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LATVIAN.pairedlist.text
-msgid "Latvian"
-msgstr "拉脫維亞語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LITHUANIAN.pairedlist.text
-msgid "Lithuanian"
-msgstr "立陶宛語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MACEDONIAN.pairedlist.text
-msgid "Macedonian"
-msgstr "馬其頓語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAY_MALAYSIA.pairedlist.text
-msgid "Malay (Malaysia)"
-msgstr "馬來語 (馬來西亞)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAY_BRUNEI_DARUSSALAM.pairedlist.text
-msgid "Malay (Brunei Darussalam)"
-msgstr "馬來語 (汶萊)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAYALAM.pairedlist.text
-msgid "Malayalam"
-msgstr "喀拉拉語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MANIPURI.pairedlist.text
-msgid "Manipuri"
-msgstr "印度方言 (Manipuri)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MARATHI.pairedlist.text
-msgid "Marathi"
-msgstr "印度方言 (Marathi)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NEPALI.pairedlist.text
-msgid "Nepali (Nepal)"
-msgstr "尼泊爾語 (尼泊爾)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NEPALI_INDIA.pairedlist.text
-msgid "Nepali (India)"
-msgstr "尼泊爾語 (印度)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NORWEGIAN_BOKMAL.pairedlist.text
-msgid "Norwegian, Bokmål"
-msgstr "挪威語 (伯克默爾)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NORWEGIAN_NYNORSK.pairedlist.text
-msgid "Norwegian, Nynorsk"
-msgstr "挪威語 (尼諾斯克)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ORIYA.pairedlist.text
-msgid "Oriya"
-msgstr "歐利亞語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_POLISH.pairedlist.text
-msgid "Polish"
-msgstr "波蘭語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PORTUGUESE.pairedlist.text
-msgid "Portuguese (Portugal)"
-msgstr "葡萄牙語 (葡萄牙)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PORTUGUESE_BRAZILIAN.pairedlist.text
-msgid "Portuguese (Brazil)"
-msgstr "葡萄牙語 (巴西)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PUNJABI.pairedlist.text
-msgid "Punjabi"
-msgstr "旁遮普語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_RHAETO_ROMAN.pairedlist.text
-msgid "Rhaeto-Romance"
-msgstr "里托羅曼語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ROMANIAN.pairedlist.text
-msgid "Romanian"
-msgstr "羅馬尼亞語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_RUSSIAN.pairedlist.text
-msgid "Russian"
-msgstr "俄語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SANSKRIT.pairedlist.text
-msgid "Sanskrit"
-msgstr "梵語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SERBIAN_CYRILLIC.pairedlist.text
-msgid "Serbian Cyrillic (Serbia and Montenegro)"
-msgstr "塞爾維亞語 (斯拉夫語) (塞爾維亞與蒙特內哥羅)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SERBIAN_LATIN.pairedlist.text
-msgid "Serbian Latin (Serbia and Montenegro)"
-msgstr "塞爾維亞語 (拉丁語) (塞爾維亞與蒙特內哥羅)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_CYRILLIC_SERBIA.pairedlist.text
-msgid "Serbian Cyrillic (Serbia)"
-msgstr "塞爾維亞語 (斯拉夫語) (塞爾維亞)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_LATIN_SERBIA.pairedlist.text
-msgid "Serbian Latin (Serbia)"
-msgstr "塞爾維亞語 (拉丁語) (塞爾維亞)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_CYRILLIC_MONTENEGRO.pairedlist.text
-msgid "Serbian Cyrillic (Montenegro)"
-msgstr "塞爾維亞語 (斯拉夫語) (蒙特內哥羅)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_LATIN_MONTENEGRO.pairedlist.text
-msgid "Serbian Latin (Montenegro)"
-msgstr "塞爾維亞語 (拉丁語) (蒙特內哥羅)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SINDHI.pairedlist.text
-msgid "Sindhi"
-msgstr "信德語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SLOVAK.pairedlist.text
-msgid "Slovak"
+#: source/contnr/templwin.src#DLG_DOCTEMPLATE.BTN_DOCTEMPLATE_OPEN.OKButton.Text
+msgid  "~Open"
+msgstr "開啟舊檔(~O)"
+
+#: source/contnr/templwin.src#STRARY_SVT_DOCINFO.DI_TITLE.ItemList.item
+msgid  "Title"
+msgstr "大標題"
+
+#: source/contnr/templwin.src#STRARY_SVT_DOCINFO.DI_FROM.ItemList.item
+msgid  "By"
+msgstr "作者"
+
+#: source/contnr/templwin.src#STRARY_SVT_DOCINFO.DI_DATE.ItemList.item
+msgid  "Date"
+msgstr "日期"
+
+#: source/contnr/templwin.src#STRARY_SVT_DOCINFO.DI_KEYWORDS.ItemList.item
+msgid  "Keywords"
+msgstr "關鍵字"
+
+#: source/contnr/templwin.src#STRARY_SVT_DOCINFO.DI_DESCRIPTION.ItemList.item
+msgid  "Description"
+msgstr "描述"
+
+#: source/contnr/templwin.src#STRARY_SVT_DOCINFO.DI_MIMETYPE.ItemList.item
+msgid  "Type"
+msgstr "內容類型"
+
+#: source/contnr/templwin.src#STRARY_SVT_DOCINFO.DI_MODIFIEDDATE.ItemList.item
+msgid  "Modified on"
+msgstr "修改的日期"
+
+#: source/contnr/templwin.src#STRARY_SVT_DOCINFO.DI_MODIFIEDBY.ItemList.item
+msgid  "Modified by"
+msgstr "編輯修改者"
+
+#: source/contnr/templwin.src#STRARY_SVT_DOCINFO.DI_PRINTDATE.ItemList.item
+msgid  "Printed on"
+msgstr "列印的日期"
+
+#: source/contnr/templwin.src#STRARY_SVT_DOCINFO.DI_PRINTBY.ItemList.item
+msgid  "Printed by"
+msgstr "列印的日期"
+
+#: source/contnr/templwin.src#STRARY_SVT_DOCINFO.DI_THEME.ItemList.item
+msgid  "Subject"
+msgstr "主題"
+
+#: source/contnr/templwin.src#STRARY_SVT_DOCINFO.DI_SIZE.ItemList.item
+msgid  "Size"
+msgstr "大小"
+
+#: source/contnr/templwin.src#STR_SVT_NEWDOC_HELP.String.Text
+msgid  "Click here to create new documents."
+msgstr "您在此能夠建立新的文件。"
+
+#: source/contnr/templwin.src#STR_SVT_MYDOCS_HELP.String.Text
+msgid  "Contains your letters, reports and other documents"
+msgstr "存放您的信件、報表及其它文件"
+
+#: source/contnr/templwin.src#STR_SVT_TEMPLATES_HELP.String.Text
+msgid  "Contains templates for creating new documents"
+msgstr "存放用來建立新文件的範本"
+
+#: source/contnr/templwin.src#STR_SVT_SAMPLES_HELP.String.Text
+msgid  "Contains a selection of sample letters, reports and other documents"
+msgstr "存放一套信件、報表及其它文件的範例文件"
+
+#: source/contnr/fileview.src#STR_SVT_FILEVIEW_COLUMN_TITLE.String.Text
+msgid  "Title"
+msgstr "標題"
+
+#: source/contnr/fileview.src#STR_SVT_FILEVIEW_COLUMN_SIZE.String.Text
+msgid  "Size"
+msgstr "大小"
+
+#: source/contnr/fileview.src#STR_SVT_FILEVIEW_COLUMN_DATE.String.Text
+msgid  "Date modified"
+msgstr "修改的日期"
+
+#: source/contnr/fileview.src#STR_SVT_FILEVIEW_COLUMN_TYPE.String.Text
+msgid  "Type"
+msgstr "類型"
+
+#: source/contnr/fileview.src#STR_SVT_FILEVIEW_ERR_MAKEFOLDER.String.Text
+msgid  "Could not create the folder %1."
+msgstr "無法建立資料夾 %1 。"
+
+#: source/contnr/fileview.src#STR_SVT_BYTES.String.Text
+msgid  "Bytes"
+msgstr "bytes"
+
+#: source/contnr/fileview.src#STR_SVT_KB.String.Text
+msgid  "KB"
+msgstr "KB"
+
+#: source/contnr/fileview.src#STR_SVT_MB.String.Text
+msgid  "MB"
+msgstr "MB"
+
+#: source/contnr/fileview.src#STR_SVT_GB.String.Text
+msgid  "GB"
+msgstr "GB"
+
+#: source/contnr/fileview.src#RID_FILEVIEW_CONTEXTMENU.MID_FILEVIEW_DELETE.MenuItem.Text
+msgid  "~Delete"
+msgstr "刪除(~D)"
+
+#: source/contnr/fileview.src#RID_FILEVIEW_CONTEXTMENU.MID_FILEVIEW_RENAME.MenuItem.Text
+msgid  "~Rename"
+msgstr "重新命名(~R)"
+
+#: source/contnr/fileview.src#DLG_SVT_QUERYDELETE.ModalDialog.Text
+msgid  "Confirm Delete"
+msgstr "確認刪除"
+
+#: source/contnr/fileview.src#DLG_SVT_QUERYDELETE.TXT_ENTRY.FixedText.Text
+msgid  "Entry:"
+msgstr "項目："
+
+#: source/contnr/fileview.src#DLG_SVT_QUERYDELETE.TXT_QUERYMSG.FixedText.Text
+msgid  "Are you sure you want to delete the selected data?"
+msgstr "真要刪除選取的資料？"
+
+#: source/contnr/fileview.src#DLG_SVT_QUERYDELETE.BTN_YES.PushButton.Text
+msgid  "~Delete"
+msgstr "刪除(~D)"
+
+#: source/contnr/fileview.src#DLG_SVT_QUERYDELETE.BTN_ALL.PushButton.Text
+msgid  "Delete ~All"
+msgstr "全部刪除(~A)"
+
+#: source/contnr/fileview.src#DLG_SVT_QUERYDELETE.BTN_NO.PushButton.Text
+msgid  "Do ~Not Delete"
+msgstr "不要刪除(~N)"
+
+#: source/control/filectrl.src#STR_FILECTRL_BUTTONTEXT.String.Text
+msgid  "Browse..."
+msgstr "瀏覽..."
+
+#: source/control/filectrl.src#STR_TABBAR_PUSHBUTTON_MOVET0HOME.String.Text
+msgid  "Move To Home"
+msgstr "移動到家目錄"
+
+#: source/control/filectrl.src#STR_TABBAR_PUSHBUTTON_MOVELEFT.String.Text
+msgid  "Move Left"
+msgstr "左移"
+
+#: source/control/filectrl.src#STR_TABBAR_PUSHBUTTON_MOVERIGHT.String.Text
+msgid  "Move Right"
+msgstr "右移"
+
+#: source/control/filectrl.src#STR_TABBAR_PUSHBUTTON_MOVETOEND.String.Text
+msgid  "Move To End"
+msgstr "移到結尾"
+
+#: source/control/calendar.src#STR_SVT_CALENDAR_DAY.String.Text
+msgid  "Day"
+msgstr "天"
+
+#: source/control/calendar.src#STR_SVT_CALENDAR_WEEK.String.Text
+msgid  "Week"
+msgstr "週"
+
+#: source/control/calendar.src#STR_SVT_CALENDAR_TODAY.String.Text
+msgid  "Today"
+msgstr "今天"
+
+#: source/control/calendar.src#STR_SVT_CALENDAR_NONE.String.Text
+msgid  "None"
+msgstr "無"
+
+#: source/control/ctrltool.src#STR_SVT_STYLE_LIGHT.String.Text
+msgid  "Light"
+msgstr "細"
+
+#: source/control/ctrltool.src#STR_SVT_STYLE_LIGHT_ITALIC.String.Text
+msgid  "Light Italic"
+msgstr "細斜體"
+
+#: source/control/ctrltool.src#STR_SVT_STYLE_NORMAL.String.Text
+msgid  "Regular"
+msgstr "標準"
+
+#: source/control/ctrltool.src#STR_SVT_STYLE_NORMAL_ITALIC.String.Text
+msgid  "Italic"
+msgstr "斜體"
+
+#: source/control/ctrltool.src#STR_SVT_STYLE_BOLD.String.Text
+msgid  "Bold"
+msgstr "粗體"
+
+#: source/control/ctrltool.src#STR_SVT_STYLE_BOLD_ITALIC.String.Text
+msgid  "Bold Italic"
+msgstr "粗斜體"
+
+#: source/control/ctrltool.src#STR_SVT_STYLE_BLACK.String.Text
+msgid  "Black"
+msgstr "黑體"
+
+#: source/control/ctrltool.src#STR_SVT_STYLE_BLACK_ITALIC.String.Text
+msgid  "Black Italic"
+msgstr "黑斜體"
+
+#: source/control/ctrltool.src#STR_SVT_FONTMAP_BOTH.String.Text
+msgid  "The same font will be used on both your printer and your screen."
+msgstr "螢幕顯示和列印使用統一的字型"
+
+#: source/control/ctrltool.src#STR_SVT_FONTMAP_PRINTERONLY.String.Text
+msgid  "This is a printer font. The screen image may differ."
+msgstr "列印字型。螢幕顯示字型可能略微有些偏差。"
+
+#: source/control/ctrltool.src#STR_SVT_FONTMAP_SCREENONLY.String.Text
+msgid  "This is a screen font. The printer image may differ."
+msgstr "螢幕字型。列印出可能會有一些偏差。"
+
+#: source/control/ctrltool.src#STR_SVT_FONTMAP_SIZENOTAVAILABLE.String.Text
+msgid  "This font size has not been installed. The closest available size will be used."
 msgstr ""
 
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SLOVENIAN.pairedlist.text
-msgid "Slovenian"
-msgstr "斯洛維尼亞語"
+#: source/control/ctrltool.src#STR_SVT_FONTMAP_STYLENOTAVAILABLE.String.Text
+msgid  "This font style will be simulated or the closest matching style will be used."
+msgstr ""
 
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH.pairedlist.text
-msgid "Spanish (Spain)"
-msgstr "西班牙語 (西班牙)"
+#: source/control/ctrltool.src#STR_SVT_FONTMAP_NOTAVAILABLE.String.Text
+msgid  "This font has not been installed. The closest available font will be used."
+msgstr ""
 
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_MEXICAN.pairedlist.text
-msgid "Spanish (Mexico)"
-msgstr "西班牙語 (墨西哥)"
+#: source/control/ctrlbox.src#STR_SVT_AUTOMATIC_COLOR.String.Text
+msgid  "Automatic"
+msgstr "自動"
 
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_GUATEMALA.pairedlist.text
-msgid "Spanish (Guatemala)"
-msgstr "西班牙語 (瓜地馬拉)"
+#: source/control/ctrlbox.src#STR_SVT_COLLATE_ALPHANUMERIC.String.Text
+msgid  "Alphanumeric"
+msgstr "字母數字式"
 
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_COSTARICA.pairedlist.text
-msgid "Spanish (Costa Rica)"
-msgstr "西班牙語 (哥斯大黎加)"
+#: source/control/ctrlbox.src#STR_SVT_COLLATE_NORMAL.String.Text
+msgid  "Normal"
+msgstr "一般"
 
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PANAMA.pairedlist.text
-msgid "Spanish (Panama)"
-msgstr "西班牙語 (巴拿馬)"
+#: source/control/ctrlbox.src#STR_SVT_COLLATE_CHARSET.String.Text
+msgid  "Character set"
+msgstr "字型"
 
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_DOMINICAN_REPUBLIC.pairedlist.text
-msgid "Spanish (Dom. Rep.)"
-msgstr "西班牙語 (多米尼加)"
+#: source/control/ctrlbox.src#STR_SVT_COLLATE_DICTIONARY.String.Text
+msgid  "Dictionary"
+msgstr "字典"
 
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_VENEZUELA.pairedlist.text
-msgid "Spanish (Venezuela)"
-msgstr "西班牙語 (委內瑞拉)"
+#: source/control/ctrlbox.src#STR_SVT_COLLATE_PINYIN.String.Text
+msgid  "Pinyin"
+msgstr "拼音"
 
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_COLOMBIA.pairedlist.text
-msgid "Spanish (Colombia)"
-msgstr "西班牙語 (哥倫比亞)"
+#: source/control/ctrlbox.src#STR_SVT_COLLATE_STROKE.String.Text
+msgid  "Stroke"
+msgstr "筆畫"
 
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PERU.pairedlist.text
-msgid "Spanish (Peru)"
-msgstr "西班牙語 (秘魯)"
+#: source/control/ctrlbox.src#STR_SVT_COLLATE_RADICAL.String.Text
+msgid  "Radical"
+msgstr "部首"
 
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_ARGENTINA.pairedlist.text
-msgid "Spanish (Argentina)"
-msgstr "西班牙語 (阿根廷)"
+#: source/control/ctrlbox.src#STR_SVT_COLLATE_UNICODE.String.Text
+msgid  "Unicode"
+msgstr "Unicode"
 
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_ECUADOR.pairedlist.text
-msgid "Spanish (Ecuador)"
-msgstr "西班牙語 (厄瓜多)"
+#: source/control/ctrlbox.src#STR_SVT_COLLATE_ZHUYIN.String.Text
+msgid  "Zhuyin"
+msgstr "注音"
 
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_CHILE.pairedlist.text
-msgid "Spanish (Chile)"
-msgstr "西班牙語 (智利)"
+#: source/control/ctrlbox.src#STR_SVT_COLLATE_PHONEBOOK.String.Text
+msgid  "Phone book"
+msgstr "電話簿"
 
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_URUGUAY.pairedlist.text
-msgid "Spanish (Uruguay)"
-msgstr "西班牙語 (烏拉圭)"
+#: source/control/ctrlbox.src#STR_SVT_COLLATE_PHONETIC_F.String.Text
+msgid  "Phonetic (alphanumeric first)"
+msgstr "語音的(數字排列最先)"
 
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PARAGUAY.pairedlist.text
-msgid "Spanish (Paraguay)"
-msgstr "西班牙語 (巴拉圭)"
+#: source/control/ctrlbox.src#STR_SVT_COLLATE_PHONETIC_L.String.Text
+msgid  "Phonetic (alphanumeric last)"
+msgstr "語音的(字母數字排列最後)"
 
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_BOLIVIA.pairedlist.text
-msgid "Spanish (Bolivia)"
-msgstr "西班牙語 (玻利維亞)"
+#: source/control/ctrlbox.src#STR_SVT_INDEXENTRY_ALPHANUMERIC.String.Text
+msgid  "Alphanumeric"
+msgstr "字母數字的"
 
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_EL_SALVADOR.pairedlist.text
-msgid "Spanish (El Salvador)"
-msgstr "西班牙語 (薩爾瓦多)"
+#: source/control/ctrlbox.src#STR_SVT_INDEXENTRY_DICTIONARY.String.Text
+msgid  "Dictionary"
+msgstr "字典"
 
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_HONDURAS.pairedlist.text
-msgid "Spanish (Honduras)"
-msgstr "西班牙語 (宏都拉斯)"
+#: source/control/ctrlbox.src#STR_SVT_INDEXENTRY_PINYIN.String.Text
+msgid  "Pinyin"
+msgstr "拼音"
 
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_NICARAGUA.pairedlist.text
-msgid "Spanish (Nicaragua)"
-msgstr "西班牙語 (尼加拉瓜)"
+#: source/control/ctrlbox.src#STR_SVT_INDEXENTRY_RADICAL.String.Text
+msgid  "Radical"
+msgstr "部首"
 
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PUERTO_RICO.pairedlist.text
-msgid "Spanish (Puerto Rico)"
-msgstr "西班牙語 (波多黎各)"
+#: source/control/ctrlbox.src#STR_SVT_INDEXENTRY_STROKE.String.Text
+msgid  "Stroke"
+msgstr "筆畫"
 
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWAHILI.pairedlist.text
-msgid "Swahili (Kenya)"
-msgstr "斯瓦希里語 (肯亞)"
+#: source/control/ctrlbox.src#STR_SVT_INDEXENTRY_ZHUYIN.String.Text
+msgid  "Zhuyin"
+msgstr "注音"
 
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWEDISH.pairedlist.text
-msgid "Swedish (Sweden)"
-msgstr "瑞典語 (瑞典)"
+#: source/control/ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_FS.String.Text
+msgid  "Phonetic (alphanumeric first, grouped by syllables)"
+msgstr "語音的(字母數字排列最先，按音節分組)"
 
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWEDISH_FINLAND.pairedlist.text
-msgid "Swedish (Finland)"
-msgstr "瑞典語 (芬蘭)"
+#: source/control/ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_FC.String.Text
+msgid  "Phonetic (alphanumeric first, grouped by consonants)"
+msgstr "語音的(字母數字排列最先，按輔音分組)"
 
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TAJIK.pairedlist.text
-msgid "Tajik"
-msgstr "塔吉克語"
+#: source/control/ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_LS.String.Text
+msgid  "Phonetic (alphanumeric last, grouped by syllables)"
+msgstr "語音的(數字排列最後，按音節分組)"
 
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TAMIL.pairedlist.text
-msgid "Tamil"
-msgstr "坦米爾語"
+#: source/control/ctrlbox.src#STR_SVT_INDEXENTRY_PHONETIC_LC.String.Text
+msgid  "Phonetic (alphanumeric last, grouped by consonants)"
+msgstr "語音的(數字排列最後，按輔音分組)"
 
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TATAR.pairedlist.text
-msgid "Tatar"
-msgstr "韃靼語"
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_READY.String.Text
+msgid  "Ready"
+msgstr "就緒"
 
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TELUGU.pairedlist.text
-msgid "Telugu"
-msgstr "印度方言 (Telugu)"
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_PAUSED.String.Text
+msgid  "Paused"
+msgstr "暫停"
 
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_THAI.pairedlist.text
-msgid "Thai"
-msgstr "泰語"
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_PENDING.String.Text
+msgid  "Pending deletion"
+msgstr "刪除等候的"
 
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TURKISH.pairedlist.text
-msgid "Turkish"
-msgstr "土耳其語"
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_BUSY.String.Text
+msgid  "Busy"
+msgstr "忙碌"
 
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_URDU_PAKISTAN.pairedlist.text
-msgid "Urdu (Pakistan)"
-msgstr "烏都語 (巴基斯坦)"
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_INITIALIZING.String.Text
+msgid  "Initializing"
+msgstr "初始化"
 
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_URDU_INDIA.pairedlist.text
-msgid "Urdu (India)"
-msgstr "烏都語 (印度)"
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_WAITING.String.Text
+msgid  "Waiting"
+msgstr "等候"
 
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UKRAINIAN.pairedlist.text
-msgid "Ukrainian"
-msgstr "烏克蘭語"
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_WARMING_UP.String.Text
+msgid  "Warming up"
+msgstr "預熱"
 
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UZBEK_LATIN.pairedlist.text
-msgid "Uzbek Latin"
-msgstr "烏茲別克語 (拉丁語)"
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_PROCESSING.String.Text
+msgid  "Processing"
+msgstr "處理"
 
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_WELSH.pairedlist.text
-msgid "Welsh"
-msgstr "瑞士法語"
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_PRINTING.String.Text
+msgid  "Printing"
+msgstr "列印"
 
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER1.pairedlist.text
-msgid "User 1"
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_OFFLINE.String.Text
+msgid  "Offline"
+msgstr "離線"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_ERROR.String.Text
+msgid  "Error"
+msgstr "錯誤"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_SERVER_UNKNOWN.String.Text
+msgid  "Unknown Server"
+msgstr "不明的伺服器"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_PAPER_JAM.String.Text
+msgid  "Paper jam"
+msgstr "卡紙"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_PAPER_OUT.String.Text
+msgid  "Not enough paper"
+msgstr "紙用完"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_MANUAL_FEED.String.Text
+msgid  "Manual feed"
+msgstr "手動送紙"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_PAPER_PROBLEM.String.Text
+msgid  "Paper problem"
+msgstr "紙張問題"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_IO_ACTIVE.String.Text
+msgid  "I/O active"
+msgstr "啟動輸入/輸出"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_OUTPUT_BIN_FULL.String.Text
+msgid  "Output bin full"
+msgstr "匯出緩衝區溢滿"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_TONER_LOW.String.Text
+msgid  "Toner low"
+msgstr "墨粉不足"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_NO_TONER.String.Text
+msgid  "No toner"
+msgstr "墨粉用完"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_PAGE_PUNT.String.Text
+msgid  "Delete Page"
+msgstr "刪除頁"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_USER_INTERVENTION.String.Text
+msgid  "User intervention necessary"
+msgstr "需要自訂"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_OUT_OF_MEMORY.String.Text
+msgid  "Insufficient memory"
+msgstr "記憶體不足"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_DOOR_OPEN.String.Text
+msgid  "Cover open"
+msgstr "護蓋敞開"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_POWER_SAVE.String.Text
+msgid  "Power save mode"
+msgstr "節約電源模式"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_DEFPRINTER.String.Text
+msgid  "Default printer"
+msgstr "預設印表機"
+
+#: source/dialogs/prnsetup.src#STR_SVT_PRNDLG_JOBCOUNT.String.Text
+msgid  "%d documents"
+msgstr "%d 文件"
+
+#: source/dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.ModalDialog.Text
+msgid  "Printer Setup"
+msgstr "設置印表機"
+
+#: source/dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FL_PRINTER.FixedLine.Text
+msgid  "Printer"
+msgstr "印表機"
+
+#: source/dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_NAME.FixedText.Text
+msgid  "~Name"
+msgstr "名稱(~N)"
+
+#: source/dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.BTN_PROPERTIES.PushButton.Text
+msgid  "Propert~ies..."
+msgstr "屬性(~I)..."
+
+#: source/dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_STATUS.FixedText.Text
+msgid  "Status"
+msgstr "狀態"
+
+#: source/dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_TYPE.FixedText.Text
+msgid  "Type"
+msgstr "類型"
+
+#: source/dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_LOCATION.FixedText.Text
+msgid  "Location"
+msgstr "位置"
+
+#: source/dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.FT_COMMENT.FixedText.Text
+msgid  "Comment"
+msgstr "註解"
+
+#: source/dialogs/prnsetup.src#DLG_SVT_PRNDLG_PRNSETUPDLG.BTN_OPTIONS.PushButton.Text
+msgid  "~Options..."
+msgstr "其他(~O)..."
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_SELECT.String.Text
+msgid  "Select Directory"
+msgstr "選擇目錄"
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_CANTCHDIR.String.Text
+msgid  "Cannot change to directory"
+msgstr "無法轉到目錄"
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_OPEN.String.Text
+msgid  "Open"
+msgstr "開啟舊檔"
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_FILE.String.Text
+msgid  "~File"
+msgstr "檔案(~F)"
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_DIR.String.Text
+msgid  "~Directory"
+msgstr "目錄(~D)"
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_TYPE.String.Text
+msgid  "File ~type"
+msgstr "檔案類型(~T)"
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_CANTOPENFILE.String.Text
+msgid  "Can't open file"
+msgstr "無法開啟檔案"
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_CANTOPENDIR.String.Text
+msgid  "Can't open directory"
+msgstr "無法開啟目錄"
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_OVERWRITE.String.Text
+msgid  "This file already exists. \nOverwrite ?"
+msgstr ""
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_GOUP.String.Text
+msgid  "Up One Level"
+msgstr "向上一級"
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_SAVE.String.Text
+msgid  "Save"
+msgstr "儲存"
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_DRIVES.String.Text
+msgid  "D~rive"
+msgstr "驅動器(~R)"
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_HOME.String.Text
+msgid  "User Directory"
+msgstr "自訂目錄"
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_NEWDIR.String.Text
+msgid  "Create Directory"
+msgstr "建立目錄"
+
+#: source/dialogs/filedlg2.src#STR_FILEDLG_ASKNEWDIR.String.Text
+msgid  "Do you want the directory %s to be created ?"
+msgstr "您要建立這個目錄 %s ？"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.ModalDialog.Text
+msgid  "Templates: Address Book Assignment"
+msgstr "範本：指定通訊錄"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FL_DATASOURCEFRAME.FixedLine.Text
+msgid  "Address Book Source"
+msgstr "通訊錄來源"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_DATASOURCE.FixedText.Text
+msgid  "Data source"
+msgstr "資料來源"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.PB_ADMINISTATE_DATASOURCES.PushButton.Text
+msgid  "~Address Data Source..."
+msgstr "地址資料來源(~A)..."
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_TABLE.FixedText.Text
+msgid  "Table"
+msgstr "表格"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.FT_FIELDS.FixedText.Text
+msgid  "Field assignment"
+msgstr "指定欄位"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_NO_FIELD_SELECTION.String.Text
+msgid  "<none>"
+msgstr "<無>"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_COMPANY.String.Text
+msgid  "Company"
+msgstr "公司"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_DEPARTMENT.String.Text
+msgid  "Department"
+msgstr "部門"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_FIRSTNAME.String.Text
+msgid  "First name"
+msgstr "名字"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_LASTNAME.String.Text
+msgid  "Last name"
+msgstr "姓氏"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_STREET.String.Text
+msgid  "Street"
+msgstr "街道"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_COUNTRY.String.Text
+msgid  "Country"
+msgstr "國家"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ZIPCODE.String.Text
+msgid  "ZIP Code"
+msgstr "郵遞區號"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_CITY.String.Text
+msgid  "City"
+msgstr "城市"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_TITLE.String.Text
+msgid  "Title"
+msgstr "稱謂"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_POSITION.String.Text
+msgid  "Position"
+msgstr "職務"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ADDRFORM.String.Text
+msgid  "Addr. Form"
+msgstr "稱呼"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_INITIALS.String.Text
+msgid  "Initials"
+msgstr "縮寫"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_SALUTATION.String.Text
+msgid  "Complimentary close"
+msgstr "問候語"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_HOMETEL.String.Text
+msgid  "Tel: Home"
+msgstr "私人電話號碼"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_WORKTEL.String.Text
+msgid  "Tel: Work"
+msgstr "公司電話號碼"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_FAX.String.Text
+msgid  "FAX"
+msgstr "傳真號碼"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_EMAIL.String.Text
+msgid  "E-mail"
+msgstr "電子郵件地址"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_URL.String.Text
+msgid  "URL"
+msgstr "URL"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_NOTE.String.Text
+msgid  "Note"
+msgstr "備注"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER1.String.Text
+msgid  "User 1"
 msgstr "使用者 1"
 
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER2.pairedlist.text
-msgid "User 2"
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER2.String.Text
+msgid  "User 2"
 msgstr "使用者 2"
 
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER3.pairedlist.text
-msgid "User 3"
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER3.String.Text
+msgid  "User 3"
 msgstr "使用者 3"
 
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER4.pairedlist.text
-msgid "User 4"
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_USER4.String.Text
+msgid  "User 4"
 msgstr "使用者 4"
 
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER5.pairedlist.text
-msgid "User 5"
-msgstr "使用者 5"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER6.pairedlist.text
-msgid "User 6"
-msgstr "使用者 6"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER7.pairedlist.text
-msgid "User 7"
-msgstr "使用者 7"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER8.pairedlist.text
-msgid "User 8"
-msgstr "使用者 8"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER9.pairedlist.text
-msgid "User 9"
-msgstr "使用者 9"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LATIN.pairedlist.text
-msgid "Latin"
-msgstr "拉丁語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ESPERANTO.pairedlist.text
-msgid "Esperanto"
-msgstr "世界語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KINYARWANDA.pairedlist.text
-msgid "Kinyarwanda (Rwanda)"
-msgstr "金牙旺達 (盧旺達)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MAORI_NEW_ZEALAND.pairedlist.text
-msgid "Maori (New Zealand)"
-msgstr "毛利語(紐西蘭)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GALICIAN.pairedlist.text
-msgid "Galician"
-msgstr "加利西亞語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DHIVEHI.pairedlist.text
-msgid "Dhivehi"
-msgstr "德希維希語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SEPEDI.pairedlist.text
-msgid "Northern Sotho"
-msgstr "北索托語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GAELIC_SCOTLAND.pairedlist.text
-msgid "Gaelic (Scotland)"
-msgstr "蓋爾語 (蘇格蘭)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MONGOLIAN.pairedlist.text
-msgid "Mongolian"
-msgstr "蒙古語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_INTERLINGUA.pairedlist.text
-msgid "Interlingua"
-msgstr "國際語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BOSNIAN_BOSNIA_HERZEGOVINA.pairedlist.text
-msgid "Bosnian"
-msgstr "波士尼亞語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BENGALI_BANGLADESH.pairedlist.text
-msgid "Bengali (Bangladesh)"
-msgstr "孟加拉語 (孟加拉)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_OCCITAN.pairedlist.text
-msgid "Occitan"
-msgstr "奧克語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KHMER.pairedlist.text
-msgid "Khmer"
-msgstr "高棉語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_TURKEY.pairedlist.text
-msgid "Kurdish (Turkey)"
-msgstr "庫德語 (土耳其)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_SYRIA.pairedlist.text
-msgid "Kurdish (Syria)"
-msgstr "庫德語 (敘利亞)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_IRAQ.pairedlist.text
-msgid "Kurdish (Iraq)"
-msgstr "庫德語 (伊拉克)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_IRAN.pairedlist.text
-msgid "Kurdish (Iran)"
-msgstr "庫德語 (伊朗)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN.pairedlist.text
-msgid "Sardinian"
-msgstr "薩丁語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DZONGKHA.pairedlist.text
-msgid "Dzongkha"
-msgstr "不丹語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SWAHILI_TANZANIA.pairedlist.text
-msgid "Swahili (Tanzania)"
-msgstr "斯瓦希里語 (坦尚尼亞)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LAO.pairedlist.text
-msgid "Lao"
-msgstr "老撾語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GAELIC_IRELAND.pairedlist.text
-msgid "Irish"
-msgstr "愛爾蘭語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TIBETAN.pairedlist.text
-msgid "Tibetan (PR China)"
-msgstr "藏語 (中國大陸)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GEORGIAN.pairedlist.text
-msgid "Georgian"
-msgstr "格魯吉亞(喬治亞)語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRISIAN_NETHERLANDS.pairedlist.text
-msgid "Frisian"
-msgstr "夫里斯蘭語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TSWANA.pairedlist.text
-msgid "Tswana (South Africa)"
-msgstr "班圖語 (南非)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ZULU.pairedlist.text
-msgid "Zulu"
-msgstr "祖魯語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_VIETNAMESE.pairedlist.text
-msgid "Vietnamese"
-msgstr "越南語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BRETON.pairedlist.text
-msgid "Breton"
-msgstr "不列塔尼語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KALAALLISUT.pairedlist.text
-msgid "Kalaallisut"
-msgstr "格陵蘭語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_NDEBELE_SOUTH.pairedlist.text
-msgid "Ndebele, South"
-msgstr "南恩德貝勒語 (南非)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SESOTHO.pairedlist.text
-msgid "Southern Sotho"
-msgstr "南索托語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SWAZI.pairedlist.text
-msgid "Swazi"
-msgstr "史瓦濟語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TSONGA.pairedlist.text
-msgid "Tsonga"
-msgstr "頌加語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_VENDA.pairedlist.text
-msgid "Venda"
-msgstr "文達語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TSWANA_BOTSWANA.pairedlist.text
-msgid "Tswana (Botswana)"
-msgstr "班圖語 (波札那)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_XHOSA.pairedlist.text
-msgid "Xhosa"
-msgstr "廓薩語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SINHALESE_SRI_LANKA.pairedlist.text
-msgid "Sinhala"
-msgstr "錫蘭語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MOORE.pairedlist.text
-msgid "Moore"
-msgstr "穆爾"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BAMBARA.pairedlist.text
-msgid "Bambara"
-msgstr "班巴拉語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_AKAN.pairedlist.text
-msgid "Akan"
-msgstr "亞肯語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LUXEMBOURGISH.pairedlist.text
-msgid "Luxembourgish"
-msgstr "盧森堡語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_FRIULIAN.pairedlist.text
-msgid "Friulian"
-msgstr "夫里斯蘭語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_FIJIAN.pairedlist.text
-msgid "Fijian"
-msgstr "斐濟語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_AFRIKAANS_NAMIBIA.pairedlist.text
-msgid "Afrikaans (Namibia)"
-msgstr "南非語 (納米比亞)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ENGLISH_NAMIBIA.pairedlist.text
-msgid "English (Namibia)"
-msgstr "英語 (納米比亞)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_WALLOON.pairedlist.text
-msgid "Walloon"
-msgstr "華隆語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_COPTIC.pairedlist.text
-msgid "Coptic"
-msgstr "埃及古語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TIGRIGNA_ERITREA.pairedlist.text
-msgid "Tigrigna (Eritrea)"
-msgstr "提格利尼亞語 (厄立特里亞)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TIGRIGNA_ETHIOPIA.pairedlist.text
-msgid "Tigrigna (Ethiopia)"
-msgstr "提格利尼亞語 (衣索比亞)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AMHARIC_ETHIOPIA.pairedlist.text
-msgid "Amharic"
-msgstr "阿姆哈拉語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KIRGHIZ.pairedlist.text
-msgid "Kirghiz"
-msgstr "吉爾吉斯語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GERMAN_BELGIUM.pairedlist.text
-msgid "German (Belgium)"
-msgstr "德語 (比利時)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_CHUVASH.pairedlist.text
-msgid "Chuvash"
-msgstr "楚瓦士語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BURMESE.pairedlist.text
-msgid "Burmese"
-msgstr "緬甸語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HAUSA_NIGERIA.pairedlist.text
-msgid "Hausa (Nigeria)"
-msgstr "豪撒語 (奈及利亞)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_HAUSA_GHANA.pairedlist.text
-msgid "Hausa (Ghana)"
-msgstr "豪撒語 (迦納)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_EWE_GHANA.pairedlist.text
-msgid "Éwé"
-msgstr "幽語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ENGLISH_GHANA.pairedlist.text
-msgid "English (Ghana)"
-msgstr "英語 (迦納)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SANGO.pairedlist.text
-msgid "Sango"
-msgstr "桑戈語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TAGALOG.pairedlist.text
-msgid "Tagalog"
-msgstr "菲律賓湯加洛格語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GANDA.pairedlist.text
-msgid "Ganda"
-msgstr "盧干達語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LINGALA_DRCONGO.pairedlist.text
-msgid "Lingala"
-msgstr "林格拉語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LOW_GERMAN.pairedlist.text
-msgid "Low German"
-msgstr "低地德語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_HILIGAYNON.pairedlist.text
-msgid "Hiligaynon"
-msgstr "希利蓋農語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_NYANJA.pairedlist.text
-msgid "Nyanja"
-msgstr "恩雅哈語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KASHUBIAN.pairedlist.text
-msgid "Kashubian"
-msgstr "卡舒比語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SPANISH_CUBA.pairedlist.text
-msgid "Spanish (Cuba)"
-msgstr "西班牙語 (古巴)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TETUN.pairedlist.text
-msgid "Tetun (Indonesia)"
-msgstr "德頓語 (印尼)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_QUECHUA_NORTH_BOLIVIA.pairedlist.text
-msgid "Quechua (Bolivia, North)"
-msgstr "蓋楚瓦語 (北玻利維亞)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_QUECHUA_SOUTH_BOLIVIA.pairedlist.text
-msgid "Quechua (Bolivia, South)"
-msgstr "蓋楚瓦語 (南玻利維亞)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SOMALI.pairedlist.text
-msgid "Somali"
-msgstr "索馬利語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_INARI.pairedlist.text
-msgid "Sami, Inari (Finland)"
-msgstr "伊納里薩米語 (芬蘭)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_LULE_NORWAY.pairedlist.text
-msgid "Sami, Lule (Norway)"
-msgstr "盧爾薩米語 (挪威)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_LULE_SWEDEN.pairedlist.text
-msgid "Sami, Lule (Sweden)"
-msgstr "盧爾薩米語 (瑞典)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_NORTHERN_FINLAND.pairedlist.text
-msgid "Sami, Northern (Finland)"
-msgstr "北薩米語 (芬蘭)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_NORTHERN_NORWAY.pairedlist.text
-msgid "Sami, Northern (Norway)"
-msgstr "北薩米語 (挪威)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_NORTHERN_SWEDEN.pairedlist.text
-msgid "Sami, Northern (Sweden)"
-msgstr "北薩米語 (瑞典)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_SKOLT.pairedlist.text
-msgid "Sami, Skolt (Finland)"
-msgstr "史寇特薩米語 (芬蘭)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_SOUTHERN_NORWAY.pairedlist.text
-msgid "Sami, Southern (Norway)"
-msgstr "南薩米語 (挪威)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_SOUTHERN_SWEDEN.pairedlist.text
-msgid "Sami, Southern (Sweden)"
-msgstr "南薩米語 (瑞典)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SAMI_KILDIN_RUSSIA.pairedlist.text
-msgid "Sami, Kildin (Russia)"
-msgstr "基爾丁-薩米語 (俄羅斯)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GUARANI_PARAGUAY.pairedlist.text
-msgid "Guaraní, Paraguayan"
-msgstr "瓜拉尼語、巴拉圭語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BODO_INDIA.pairedlist.text
-msgid "Bodo"
-msgstr "博多語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_DOGRI_INDIA.pairedlist.text
-msgid "Dogri"
-msgstr "多格里語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MAITHILI_INDIA.pairedlist.text
-msgid "Maithili"
-msgstr "邁德里語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SANTALI_INDIA.pairedlist.text
-msgid "Santali"
-msgstr "桑塔利語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TETUN_TIMOR_LESTE.pairedlist.text
-msgid "Tetun (Timor-Leste)"
-msgstr "德頓語 (東帝汶)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TURKMEN.pairedlist.text
-msgid "Turkmen"
-msgstr "土庫曼語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALTESE.pairedlist.text
-msgid "Maltese"
-msgstr "馬爾他語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TOK_PISIN.pairedlist.text
-msgid "Tok Pisin"
-msgstr "巴布亞皮欽語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SHUSWAP.pairedlist.text
-msgid "Shuswap"
-msgstr "蘇斯瓦語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_OROMO.pairedlist.text
-msgid "Oromo"
-msgstr "奧羅蒙語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ANCIENT_GREEK.pairedlist.text
-msgid "Greek, Ancient"
-msgstr "古希臘語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_YIDDISH.pairedlist.text
-msgid "Yiddish (Israel)"
-msgstr "意第緒語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_QUECHUA_ECUADOR.pairedlist.text
-msgid "Quechua (Ecuador)"
-msgstr "蓋楚瓦語 (厄瓜多)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UIGHUR_CHINA.pairedlist.text
-msgid "Uyghur"
-msgstr "維吾爾語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ASTURIAN.pairedlist.text
-msgid "Asturian"
-msgstr "阿斯圖里亞斯語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UPPER_SORBIAN_GERMANY.pairedlist.text
-msgid "Sorbian, Upper"
-msgstr "上索布語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LOWER_SORBIAN_GERMANY.pairedlist.text
-msgid "Sorbian, Lower"
-msgstr "下索布語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LATGALIAN.pairedlist.text
-msgid "Latgalian"
-msgstr "拉特加萊語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MAORE.pairedlist.text
-msgid "Maore"
-msgstr "穆爾語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BUSHI.pairedlist.text
-msgid "Bushi"
-msgstr "布希語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TAHITIAN.pairedlist.text
-msgid "Tahitian"
-msgstr "大溪地語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MALAGASY_PLATEAU.pairedlist.text
-msgid "Malagasy, Plateau"
-msgstr "馬達加斯加語，高原"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PAPIAMENTU.pairedlist.text
-msgid "Papiamentu (Netherlands Antilles)"
-msgstr "帕匹曼圖語 (荷屬安替列斯)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_PAPIAMENTU_ARUBA.pairedlist.text
-msgid "Papiamento (Aruba)"
-msgstr "帕皮阿門托語 (阿路巴)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN_CAMPIDANESE.pairedlist.text
-msgid "Sardinian, Campidanese"
-msgstr "薩丁尼亞語，坎皮達諾"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN_GALLURESE.pairedlist.text
-msgid "Sardinian, Gallurese"
-msgstr "薩丁尼亞語，加盧拉"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN_LOGUDORESE.pairedlist.text
-msgid "Sardinian, Logudorese"
-msgstr "薩丁尼亞語，勞古多羅"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN_SASSARESE.pairedlist.text
-msgid "Sardinian, Sassarese"
-msgstr "薩丁尼亞語，薩薩里"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BAFIA.pairedlist.text
-msgid "Bafia"
-msgstr "巴非亞語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GIKUYU.pairedlist.text
-msgid "Gikuyu"
-msgstr "吉庫尤語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_YORUBA.pairedlist.text
-msgid "Yoruba"
-msgstr "約魯巴語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_RUSYN_UKRAINE.pairedlist.text
-msgid "Rusyn (Ukraine)"
-msgstr "魯塞尼亞語 (烏克蘭)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_RUSYN_SLOVAKIA.pairedlist.text
-msgid "Rusyn (Slovakia)"
-msgstr "魯塞尼亞語 (斯洛伐克)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_YIDDISH_US.pairedlist.text
-msgid "Yiddish (USA)"
-msgstr "意第緒語(美國)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HAWAIIAN_UNITED_STATES.pairedlist.text
-msgid "Hawaiian"
-msgstr "夏威夷語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LIMBU.pairedlist.text
-msgid "Limbu"
-msgstr "林布語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LOJBAN.pairedlist.text
-msgid "Lojban"
-msgstr "邏輯語(人工語言)"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KABYLE.pairedlist.text
-msgid "Kabyle"
-msgstr "卡比拉語"
-
-#: langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_HAITIAN.pairedlist.text
-msgid "Haitian"
-msgstr "海地語"
-
-#: undo.src#STR_UNDO.string.text
-msgid "Undo: "
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_ID.String.Text
+msgid  "ID"
+msgstr "ID"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_STATE.String.Text
+msgid  "State"
+msgstr "省市"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_OFFICETEL.String.Text
+msgid  "Tel: Office"
+msgstr "辦公室電話號碼"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_PAGER.String.Text
+msgid  "Pager"
+msgstr "無線呼叫號碼"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_MOBILE.String.Text
+msgid  "Mobile"
+msgstr "手機號碼"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_TELOTHER.String.Text
+msgid  "Tel: Other"
+msgstr "其他電話號碼"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_CALENDAR.String.Text
+msgid  "Calendar"
+msgstr "行事歷"
+
+#: source/dialogs/addresstemplate.src#DLG_ADDRESSBOOKSOURCE.STR_FIELD_INVITE.String.Text
+msgid  "Invite"
+msgstr "邀請"
+
+#: source/dialogs/formats.src#STR_FORMAT_STRING.String.Text
+msgid  "Unformatted text"
+msgstr "未格式化的文字"
+
+#: source/dialogs/formats.src#STR_FORMAT_BITMAP.String.Text
+msgid  "Bitmap"
+msgstr "點陣圖"
+
+#: source/dialogs/formats.src#STR_FORMAT_GDIMETAFILE.String.Text
+msgid  "GDI metafile"
+msgstr "GDI 圖形檔"
+
+#: source/dialogs/formats.src#STR_FORMAT_RTF.String.Text
+msgid  "Formatted text [RTF]"
+msgstr "已經格式化的文字 [RTF]"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_DRAWING.String.Text
+msgid  "Drawing format"
+msgstr "繪圖格式"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_SVXB.String.Text
+msgid  "SVXB (StarView bitmap/animation)"
+msgstr "SVXB (StarView 點陣圖/動畫)"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_INTERNALLINK_STATE.String.Text
+msgid  "Status Info from Svx Internal Link"
+msgstr "Svx Internal Link 的狀態資訊"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_SOLK.String.Text
+msgid  "SOLK (%PRODUCTNAME Link)"
+msgstr "SOLK (%PRODUCTNAME Link)"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_NETSCAPE_BOOKMARK.String.Text
+msgid  "Netscape Bookmark"
+msgstr "Netscape 書籖"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARSERVER.String.Text
+msgid  "Star server format"
+msgstr "Star 伺服器格式"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STAROBJECT.String.Text
+msgid  "Star object format"
+msgstr "Star 物件格式"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_APPLETOBJECT.String.Text
+msgid  "Applet object"
+msgstr "Applet 物件"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_PLUGIN_OBJECT.String.Text
+msgid  "Plug-in object"
+msgstr "外掛程式物件"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITER_30.String.Text
+msgid  "StarWriter 3.0 object"
+msgstr "StarWriter 3.0 物件"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITER_40.String.Text
+msgid  "StarWriter 4.0 object"
+msgstr "StarWriter 4.0 物件"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITER_50.String.Text
+msgid  "StarWriter 5.0 object"
+msgstr "StarWriter 5.0 物件"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_40.String.Text
+msgid  "StarWriter/Web 4.0 object"
+msgstr "StarWriter/Web 4.0 物件"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_50.String.Text
+msgid  "StarWriter/Web 5.0 object"
+msgstr "StarWriter/Web 5.0 物件"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_40.String.Text
+msgid  "StarWriter/Master 4.0 object"
+msgstr "StarWriter/Global 4.0 物件"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_50.String.Text
+msgid  "StarWriter/Master 5.0 object"
+msgstr "StarWriter/Global 5.0 物件"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARDRAW.String.Text
+msgid  "StarDraw object"
+msgstr "StarDraw 物件"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARDRAW_40.String.Text
+msgid  "StarDraw 4.0 object"
+msgstr "StarDraw 4.0 物件"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARIMPRESS_50.String.Text
+msgid  "StarImpress 5.0 object"
+msgstr "StarImpress 5.0 物件"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARDRAW_50.String.Text
+msgid  "StarDraw 5.0 object"
+msgstr "StarDraw 5.0 物件"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARCALC.String.Text
+msgid  "StarCalc object"
+msgstr "StarCalc 物件"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARCALC_40.String.Text
+msgid  "StarCalc  4.0 object"
+msgstr "StarCalc  4.0 物件"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARCALC_50.String.Text
+msgid  "StarCalc 5.0 object"
+msgstr "StarCalc 5.0 物件"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARCHART.String.Text
+msgid  "StarChart object"
+msgstr "StarChart 物件"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARCHART_40.String.Text
+msgid  "StarChart 4.0 object"
+msgstr "StarChart 4.0 物件"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARCHART_50.String.Text
+msgid  "StarChart 5.0 object"
+msgstr "StarChart 5.0 物件"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARIMAGE.String.Text
+msgid  "StarImage object"
+msgstr "StarImage 物件"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARIMAGE_40.String.Text
+msgid  "StarImage 4.0 object"
+msgstr "StarImage 4.0 物件"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARIMAGE_50.String.Text
+msgid  "StarImage 5.0 object"
+msgstr "StarImage 5.0 物件"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARMATH.String.Text
+msgid  "StarMath object"
+msgstr "StarMath 物件"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARMATH_40.String.Text
+msgid  "StarMath 4.0 object"
+msgstr "StarMath 4.0 物件"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARMATH_50.String.Text
+msgid  "StarMath 5.0 object"
+msgstr "StarMath 5.0 物件"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STAROBJECT_PAINTDOC.String.Text
+msgid  "StarObject Paint object"
+msgstr "StarObject 繪圖物件"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_HTML.String.Text
+msgid  "HTML (HyperText Markup Language)"
+msgstr "HTML(超文字標記語言)"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_HTML_SIMPLE.String.Text
+msgid  "HTML format"
+msgstr "HTML 格式"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_BIFF_5.String.Text
+msgid  "Biff5 (Microsoft Excel 5.0/95)"
+msgstr "Biff5 (Microsoft Excel 5.0/95)"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_BIFF_8.String.Text
+msgid  "Biff8 (Microsoft Excel 97/2000/XP)"
+msgstr "Biff8 (Microsoft Excel 97/2000/XP)"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_SYLK.String.Text
+msgid  "Sylk"
+msgstr "Sylk"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_LINK.String.Text
+msgid  "DDE link"
+msgstr "DDE 連結"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_DIF.String.Text
+msgid  "DIF"
+msgstr "DIF"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_MSWORD_DOC.String.Text
+msgid  "Microsoft Word object"
+msgstr "Microsoft Word 物件"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STAR_FRAMESET_DOC.String.Text
+msgid  "StarFrameSet object"
+msgstr "StarFrameSet 物件"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_OFFICE_DOC.String.Text
+msgid  "Office document object"
+msgstr "Office 文件物件"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_NOTES_DOCINFO.String.Text
+msgid  "Notes document info"
+msgstr "Notes 文件資訊"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_SFX_DOC.String.Text
+msgid  "Sfx document"
+msgstr "Sfx 文件"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARCHARTDOCUMENT_50.String.Text
+msgid  "StarChart 5.0 object"
+msgstr "StarChart 5.0 物件"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_GRAPHOBJ.String.Text
+msgid  "Graphic object"
+msgstr "圖形物件"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITER_60.String.Text
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer object"
+msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer 物件"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERWEB_60.String.Text
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Web object"
+msgstr ""
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARWRITERGLOB_60.String.Text
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Writer/Master object"
+msgstr ""
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARDRAW_60.String.Text
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Draw object"
+msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Draw 物件"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARIMPRESS_60.String.Text
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Impress object"
+msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Impress 物件"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARCALC_60.String.Text
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Calc object"
+msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Calc 物件"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARCHART_60.String.Text
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart object"
+msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart 物件"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_STARMATH_60.String.Text
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Math object"
+msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Math 物件"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_WMF.String.Text
+msgid  "Windows metafile"
+msgstr "Windows 圖形檔"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_DBACCESS_QUERY.String.Text
+msgid  "Data source object"
+msgstr "資料來源物件"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_DBACCESS_TABLE.String.Text
+msgid  "Data source table"
+msgstr "資料來源表格"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_DBACCESS_COMMAND.String.Text
+msgid  "SQL query"
+msgstr "SQL 查詢"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_DIALOG_60.String.Text
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION dialog"
+msgstr "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION 對話方塊"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_FILEGRPDESCRIPTOR.String.Text
+msgid  "Link"
+msgstr "超連結"
+
+#: source/dialogs/formats.src#STR_FORMAT_ID_HTML_NO_COMMENT.String.Text
+msgid  "HTML format without comments"
+msgstr "沒有註解的 HTML 格式"
+
+#: source/dialogs/wizardmachine.src#STR_WIZDLG_FINISH.String.Text
+msgid  "~Finish"
+msgstr "完成(~F)"
+
+#: source/dialogs/wizardmachine.src#STR_WIZDLG_NEXT.String.Text
+msgid  "~Next >>"
+msgstr "繼續(~N) >>"
+
+#: source/dialogs/wizardmachine.src#STR_WIZDLG_PREVIOUS.String.Text
+msgid  "<< Bac~k"
+msgstr "<< 返回(~K)"
+
+#: source/dialogs/wizardmachine.src#STR_WIZDLG_ROADMAP_TITLE.String.Text
+msgid  "Steps"
+msgstr "步驟"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_GENERALERROR&S_MAX.String.Text
+msgid  "General OLE error."
+msgstr "一般 OLE 錯誤。"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_CANT_BINDTOSOURCE&S_MAX.String.Text
+msgid  "The connection to the object cannot be established."
+msgstr "無法建立指向這個物件的連線。"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOCACHE_UPDATED&S_MAX.String.Text
+msgid  "No cache files were updated."
+msgstr "未更新任何快取檔案。"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_SOMECACHES_NOTUPDATED&S_MAX.String.Text
+msgid  "Some cache files were not updated."
+msgstr "某些快取檔案未更新。"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_UNAVAILABLE&S_MAX.String.Text
+msgid  "Status of object cannot be determined in a timely manner."
+msgstr "無法及時判斷物件的狀態。"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_E_CLASSDIFF&S_MAX.String.Text
+msgid  "Source of the OLE link has been converted."
+msgstr "已經轉換 OLE 連結的來源。"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_OBJECT&S_MAX.String.Text
+msgid  "The object could not be found."
+msgstr "無法找到物件"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_EXCEEDED_DEADLINE&S_MAX.String.Text
+msgid  "The process could not be completed within the specified time period."
+msgstr "這個動作無法在設定的時間內完成"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_CONNECT_MANUALLY&S_MAX.String.Text
+msgid  "OLE could not connect to a network device (server)."
+msgstr "OLE 無法連線至網路裝置 (伺服器) 。"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_INTERMEDIATE_INTERFACE_NOT_SUPPORTED&S_MAX.String.Text
+msgid  "The object found does not support the interface required for the desired operation."
+msgstr ""
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NO_INTERFACE&S_MAX.String.Text
+msgid  "Interface not supported."
+msgstr "不支援介面。"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_OUT_OF_MEMORY&S_MAX.String.Text
+msgid  "Insufficient memory."
+msgstr "記憶體不足。"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_SYNTAX&S_MAX.String.Text
+msgid  "The connection name could not be processed."
+msgstr "無法處理連線名稱"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_REDUCED_TO_SELF&S_MAX.String.Text
+msgid  "The connection name could not be reduced further."
+msgstr "連線名稱無法再簡化。"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_INVERSE&S_MAX.String.Text
+msgid  "The connection name has no inverse."
+msgstr "這個連線名稱沒有逆代碼。"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_PREFIX&S_MAX.String.Text
+msgid  "No common prefix exists."
+msgstr "不存在共用的前綴。"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_HIM&S_MAX.String.Text
+msgid  "The connection name is contained in the other one."
+msgstr "連線名稱存在於另一個名稱內"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_US&S_MAX.String.Text
+msgid  "The connection names (the receiver and the other moniker) are identical."
+msgstr ""
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_ME&S_MAX.String.Text
+msgid  "The connection name is contained in the other one."
+msgstr "連線名稱存在於另一個名稱內"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NOT_BINDABLE&S_MAX.String.Text
+msgid  "The connection name cannot be connected. This is a relative name."
+msgstr "這個連線名稱是一個相對的名稱﹐因此無法建立連線。"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOT_IMPLEMENTED&S_MAX.String.Text
+msgid  "Operation not implemented."
+msgstr "未執行運算。"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NO_STORAGE&S_MAX.String.Text
+msgid  "No storage."
+msgstr "無儲存裝置。"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_FALSE&S_MAX.String.Text
+msgid  "False."
+msgstr "False。"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_NEED_GENERIC&S_MAX.String.Text
+msgid  "Monikers must be composed generically."
+msgstr "必項撰寫一般的 Moniker。"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_PENDING&S_MAX.String.Text
+msgid  "Data not available at this time."
+msgstr "目前資料無法使用。"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOT_INPLACEACTIVE & S_MAX.String.Text
+msgid  "Object could not be activated InPlace."
+msgstr "無法正確啟動物件。"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_LINDEX & S_MAX.String.Text
+msgid  "Invalid index."
+msgstr "索引無效。"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_CANNOT_DOVERB_NOW & S_MAX.String.Text
+msgid  "The action cannot be executed in the object's current state."
+msgstr "在目前狀態下物件無法執行這個過程。"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_OLEOBJ_INVALIDHWND & S_MAX.String.Text
+msgid  "An invalid window was passed when activated."
+msgstr "在啟動指令時傳遞了一個無效的視窗。"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOVERBS & S_MAX.String.Text
+msgid  "The object does not support any actions."
+msgstr "此物件不支援任何動作。"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_INVALIDVERB & S_MAX.String.Text
+msgid  "The action is not defined. The default action will be executed."
+msgstr "沒有定義這個動作。因此執行預設動作。"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_CONNECT & S_MAX.String.Text
+msgid  "A link to the network could not be re-established."
+msgstr "無法恢複指向網絡的連結。"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_NOTIMPL & S_MAX.String.Text
+msgid  "Object does not support this action."
+msgstr "物件不支援此動作。"
+
+#: source/dialogs/so3res.src#RID_SO_ERROR_HANDLER.ERRCODE_SO_MK_CANTOPENFILE & S_MAX.String.Text
+msgid  "The specified file could not be opened."
+msgstr "無法開啟指定的檔案。"
+
+#: source/dialogs/so3res.src#RID_SO_ERRCTX.ERRCTX_SO_DOVERB.String.Text
+msgid  "$(ERR) activating object"
+msgstr "在使用物件時發生 $(ERR)"
+
+#: source/dialogs/so3res.src#STR_INS_OBJECT.String.Text
+msgid  "Inserts a new %1-Object into your document."
+msgstr "在您的文件內插入一個新的 %1 物件。"
+
+#: source/dialogs/so3res.src#STR_INS_OBJECT_ICON.String.Text
+msgid  "Inserts a new %1-Object into your document as a symbol."
+msgstr "在您的文件內插入一個新的 %1 物件的圖示。"
+
+#: source/dialogs/so3res.src#STR_INS_FILE.String.Text
+msgid  "Inserts the contents of the file into your document to enable later editing in the original application."
+msgstr ""
+
+#: source/dialogs/so3res.src#STR_INS_PLUGIN.String.Text
+msgid  "Inserts a plug-in object into your document with a reference to the plug-in data. When the object is activated, the plug-in is automatically executed."
+msgstr ""
+
+#: source/dialogs/so3res.src#STR_INS_APPLET.String.Text
+msgid  "Inserts an applet object into your document. When the object is activated, the applet is automatically executed."
+msgstr ""
+
+#: source/dialogs/so3res.src#STR_INS_FILE_ICON.String.Text
+msgid  "Inserts the contents of the file as an icon into your document."
+msgstr "在您的文件內加入一個代表檔案內容的圖示。"
+
+#: source/dialogs/so3res.src#STR_INS_FILE_LINK.String.Text
+msgid  "Inserts the contents of the file into your document and creates a link to the source file. Changes made to the source file will be reflected in your document."
+msgstr ""
+
+#: source/dialogs/so3res.src#STR_INS_FILE_ICON_LINK.String.Text
+msgid  "Inserts an icon into your document representing the file. Changes made to the source file will be reflected in your document."
+msgstr ""
+
+#: source/dialogs/so3res.src#STR_PASTE.String.Text
+msgid  "Pastes the contents of the clipboard as %1 in your document."
+msgstr "將剪貼簿的內容當作 %1 插入您的文件。"
+
+#: source/dialogs/so3res.src#STR_CONVERT_TO.String.Text
+msgid  "Converts the selected %1object to the object type %2."
+msgstr "將選取的 %1-物件轉換成類型 %2 的物件。"
+
+#: source/dialogs/so3res.src#STR_ACTIVATE_AS.String.Text
+msgid  "All objects of type %1 are activated as %2, but not converted"
+msgstr "每個 %1 會被當作物件類型 %2 使用﹐但是不會被轉換。"
+
+#: source/dialogs/so3res.src#STR_VERB_OPEN.String.Text
+msgid  "~Open"
+msgstr "開啟舊檔(~O)"
+
+#: source/dialogs/so3res.src#STR_VERB_PROPS.String.Text
+msgid  "~Properties"
+msgstr "屬性(~P)"
+
+#: source/dialogs/so3res.src#STR_PLUGIN_CANT_SHOW.String.Text
+msgid  "Plug-in % cannot be displayed."
+msgstr "無法顯示外掛程式 % 。"
+
+#: source/dialogs/so3res.src#STR_ERROR_DDE.String.Text
+msgid  "DDE link to % for % area % are not available."
+msgstr "無法產生 DDE 連結 %。這個連結是指向 % 範圍是 %。"
+
+#: source/dialogs/so3res.src#STR_ERROR_OBJNOCREATE.String.Text
+msgid  "Object % could not be inserted."
+msgstr "無法插入物件 % 。"
+
+#: source/dialogs/so3res.src#STR_ERROR_OBJNOCREATE_FROM_FILE.String.Text
+msgid  "Object from file % could not be inserted."
+msgstr "無法從檔案 % 插入物件。"
+
+#: source/dialogs/so3res.src#STR_ERROR_OBJNOCREATE_PLUGIN.String.Text
+msgid  "Plug-in from document % could not be inserted."
+msgstr "無法從文件 % 插入外掛程式 。"
+
+#: source/dialogs/so3res.src#STR_QUERYUPDATELINKS.String.Text
+msgid  "Update all links?"
+msgstr "您要更新所有的連結？"
+
+#: source/dialogs/so3res.src#STR_FURTHER_OBJECT.String.Text
+msgid  "Further objects"
+msgstr "其他的物件"
+
+#: source/dialogs/so3res.src#STR_EDIT_APPLET.String.Text
+msgid  "Edit Applet"
+msgstr "編輯 Applet"
+
+#: source/dialogs/so3res.src#MI_PLUGIN.MI_PLUGIN_DEACTIVATE.MenuItem.Text
+msgid  "Deactivate"
+msgstr "不使用"
+
+#: source/dialogs/so3res.src#STR_UNKNOWN_SOURCE.String.Text
+msgid  "Unknown source"
+msgstr "資料來源不明"
+
+#: source/filter/exportdialog.src#DLG_EXPORT_TITLE.String.Text
+msgid  " Options"
+msgstr " 選項"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FL_EXPORT_SIZE.FixedLine.Text
+msgid  "Size"
+msgstr "大小"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FT_SIZEX.FixedText.Text
+msgid  "Width:"
+msgstr "寬度："
+
+#: source/filter/exportdialog.src#DLG_EXPORT.LB_SIZEX.item1.StringList.item
+msgid  "inches"
+msgstr "英吋"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.LB_SIZEX.Default.StringList.item
+msgid  "cm"
+msgstr "公分"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.LB_SIZEX.item3.StringList.item
+msgid  "mm"
+msgstr "公釐"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.LB_SIZEX.item4.StringList.item
+msgid  "points"
+msgstr "點"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.LB_SIZEX.item5.StringList.item
+msgid  "pixels"
+msgstr "像素"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FT_SIZEY.FixedText.Text
+msgid  "Height:"
+msgstr "高度："
+
+#: source/filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.item1.StringList.item
+msgid  "inches"
+msgstr "英吋"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.Default.StringList.item
+msgid  "cm"
+msgstr "公分"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.item3.StringList.item
+msgid  "mm"
+msgstr "公釐"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.item4.StringList.item
+msgid  "points"
+msgstr "點"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.LB_SIZEY.item5.StringList.item
+msgid  "pixels"
+msgstr "像素"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FT_RESOLUTION.FixedText.Text
+msgid  "Resolution:"
+msgstr "解析度："
+
+#: source/filter/exportdialog.src#DLG_EXPORT.LB_RESOLUTION.item1.StringList.item
+msgid  "pixels/cm"
+msgstr "像素/公分"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.LB_RESOLUTION.Default.StringList.item
+msgid  "pixels/inch"
+msgstr "像素/英吋"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.LB_RESOLUTION.item3.StringList.item
+msgid  "pixels/meter"
+msgstr "像素/公尺"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FL_COLOR_DEPTH.FixedLine.Text
+msgid  "Color Depth"
+msgstr "色彩深度"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.STR_1BIT_THRESHOLD.String.Text
+msgid  "1 bit threshold"
+msgstr "1位元臨界值"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.STR_1BIT_DITHERED.String.Text
+msgid  "1 bit dithered"
+msgstr "1位元抖動"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.STR_4BIT_GRAYSCALE.String.Text
+msgid  "4 bit grayscale"
+msgstr "4位元灰階"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.STR_4BIT_COLOR_PALETTE.String.Text
+msgid  "4 bit color"
+msgstr "4位元彩色"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.STR_8BIT_GRAYSCALE.String.Text
+msgid  "8 bit grayscale"
+msgstr "8位元灰階"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.STR_8BIT_COLOR_PALETTE.String.Text
+msgid  "8 bit color"
+msgstr "8位元彩色"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.STR_24BIT_TRUE_COLOR.String.Text
+msgid  "24 bit true color"
+msgstr "24位元全彩色"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FL_JPG_QUALITY.FixedLine.Text
+msgid  "Quality"
+msgstr "品質"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FL_COMPRESSION.FixedLine.Text
+msgid  "Compression"
+msgstr "壓縮"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FL_MODE.FixedLine.Text
+msgid  "Mode"
+msgstr "模式"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FL_PBM_OPTIONS.FixedLine.Text
+msgid  "File Format"
+msgstr "檔案格式"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FT_JPG_MIN.FixedText.Text
+msgid  "1 is minimum Quality and smallest file size."
+msgstr "1是檔案大小最小，但品質最差。"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FT_JPG_MAX.FixedText.Text
+msgid  "100 is maximum Quality and biggest file size."
+msgstr "100是檔案大小最大，但品質最好。"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FT_PNG_MIN.FixedText.Text
+msgid  "0 is biggest file size and fastest loading."
+msgstr "0是檔案大小最大，且讀取速度最快。"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FT_PNG_MAX.FixedText.Text
+msgid  "9 is smallest file size and slowest loading."
+msgstr "9是檔案大小最小，但讀取速度最慢。"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.CB_JPG_PREVIEW.CheckBox.Text
+msgid  "Preview"
+msgstr "預覽"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.CB_INTERLACED.CheckBox.Text
+msgid  "Interlaced"
+msgstr "交錯"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.CB_RLE_ENCODING.CheckBox.Text
+msgid  "RLE encoding"
+msgstr "RLE編碼"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FL_GIF_DRAWING_OBJECTS.FixedLine.Text
+msgid  "Drawing Objects"
+msgstr "繪製物件"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.CB_SAVE_TRANSPARENCY.CheckBox.Text
+msgid  "Save transparency"
+msgstr "儲存透明度"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.RB_BINARY.RadioButton.Text
+msgid  "Binary"
+msgstr "二進位格式"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.RB_TEXT.RadioButton.Text
+msgid  "Text"
+msgstr "文字"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FL_EPS_PREVIEW.FixedLine.Text
+msgid  "Preview"
+msgstr "預覽"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.CB_EPS_PREVIEW_TIFF.CheckBox.Text
+msgid  "Image Preview (TIFF)"
+msgstr "影像預覽(TIFF)"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.CB_EPS_PREVIEW_EPSI.CheckBox.Text
+msgid  "Interchange (EPSI)"
+msgstr "交換(EPSI)"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FL_EPS_VERSION.FixedLine.Text
+msgid  "Version"
+msgstr "版本"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.RB_EPS_LEVEL1.RadioButton.Text
+msgid  "Level 1"
+msgstr "等級1"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.RB_EPS_LEVEL2.RadioButton.Text
+msgid  "Level 2"
+msgstr "等級2"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.FL_EPS_COLOR_FORMAT.FixedLine.Text
+msgid  "Color format"
+msgstr "色彩格式"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.RB_EPS_COLOR_FORMAT1.RadioButton.Text
+msgid  "Color"
+msgstr "顏色"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.RB_EPS_COLOR_FORMAT2.RadioButton.Text
+msgid  "Grayscale"
+msgstr "灰階"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.RB_EPS_COMPRESSION_LZW.RadioButton.Text
+msgid  "LZW encoding"
+msgstr "LZW編碼"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.RB_EPS_COMPRESSION_NONE.RadioButton.Text
+msgid  "None"
+msgstr "無"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.STR_ESTIMATED_SIZE_PIX_1.String.Text
+msgid  "The picture needs about %1 KB of memory."
+msgstr "這張圖需要約 %1 KB的記憶體空間。"
+
+#: source/filter/exportdialog.src#DLG_EXPORT.STR_ESTIMATED_SIZE_PIX_2.String.Text
+msgid  "The picture needs about %1 KB of memory,\n the file size is %2 KB."
+msgstr ""
+
+#: source/filter/exportdialog.src#DLG_EXPORT.STR_ESTIMATED_SIZE_VEC.String.Text
+msgid  "The file size is %1 KB."
+msgstr "檔案大小 %1 KB。"
+
+#: source/java/javaerror.src#WARNINGBOX_JAVANOTFOUND.WarningBox.Message
+msgid  "%PRODUCTNAME requires a Java runtime environment (JRE) to perform this task. Please install a JRE and restart %PRODUCTNAME."
+msgstr ""
+
+#: source/java/javaerror.src#WARNINGBOX_INVALIDJAVASETTINGS.WarningBox.Message
+msgid  "The %PRODUCTNAME configuration has been changed. Under Tools - Options - %PRODUCTNAME - Java, select the Java runtime environment you want to have used by %PRODUCTNAME."
+msgstr ""
+
+#: source/java/javaerror.src#QBX_JAVADISABLED.QueryBox.Message
+msgid  "%PRODUCTNAME requires a Java runtime environment (JRE) to perform this task. However, use of a JRE has been disabled. Do you want to enable the use of a JRE now?"
+msgstr ""
+
+#: source/java/javaerror.src#ERRORBOX_JVMCREATIONFAILED.ErrorBox.Message
+msgid  "%PRODUCTNAME requires a Java runtime environment (JRE) to perform this task. The selected JRE is defective. Please select another version or install a new JRE and select  it under Tools - Options - %PRODUCTNAME - Java."
+msgstr ""
+
+#: source/java/javaerror.src#ERRORBOX_RESTARTREQUIRED.ErrorBox.Message
+msgid  "For the selected Java runtime environment to work properly, %PRODUCTNAME must be restarted. Please restart %PRODUCTNAME now."
+msgstr ""
+
+#: source/java/javaerror.src#STR_WARNING_JAVANOTFOUND.String.Text
+msgid  "JRE Required"
+msgstr "需要 JRE"
+
+#: source/java/javaerror.src#STR_WARNING_INVALIDJAVASETTINGS.String.Text
+msgid  "Select JRE"
+msgstr "選取 JRE"
+
+#: source/java/javaerror.src#STR_ERROR_RESTARTREQUIRED.String.Text
+msgid  "Restart Required"
+msgstr "需要重新啟動"
+
+#: source/java/javaerror.src#STR_QUESTION_JAVADISABLED.String.Text
+msgid  "Enable JRE"
+msgstr "啟用 JRE"
+
+#: source/java/javaerror.src#STR_ERROR_JVMCREATIONFAILED.String.Text
+msgid  "JRE is Defective"
+msgstr "JRE 有問題"
+
+#: source/misc/undo.src#STR_UNDO.String.Text
+msgid  "Undo: "
 msgstr "復原： "
 
-#: undo.src#STR_REDO.string.text
-msgid "Re~do: "
+#: source/misc/undo.src#STR_REDO.String.Text
+msgid  "Re~do: "
 msgstr "取消復原(~d)： "
 
-#: undo.src#STR_REPEAT.string.text
-msgid "~Repeat: "
+#: source/misc/undo.src#STR_REPEAT.String.Text
+msgid  "~Repeat: "
 msgstr "重複(~R)："
 
-#~ msgid "Slovakian"
-#~ msgstr "斯洛伐克語"
+#: source/misc/imagemgr.src#STR_DESCRIPTION_SOURCEFILE.String.Text
+msgid  "Source code"
+msgstr "原始檔"
 
-#~ msgid "Yiddish"
-#~ msgstr "意第緒語"
+#: source/misc/imagemgr.src#STR_DESCRIPTION_BOOKMARKFILE.String.Text
+msgid  "Bookmark file"
+msgstr "書籤檔案"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_GRAPHIC_DOC.String.Text
+msgid  "Graphics"
+msgstr "圖形"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_CFGFILE.String.Text
+msgid  "Configuration file"
+msgstr "配置檔案"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_APPLICATION.String.Text
+msgid  "Application"
+msgstr "應用程式"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_DATABASE_TABLE.String.Text
+msgid  "Database table"
+msgstr "資料庫表格"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_SYSFILE.String.Text
+msgid  "System file"
+msgstr "系統檔案"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_WORD_DOC.String.Text
+msgid  "MS Word document"
+msgstr "MS Word 文件"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_HELP_DOC.String.Text
+msgid  "Help file"
+msgstr "說明檔案"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_HTMLFILE.String.Text
+msgid  "HTML document"
+msgstr "HTML 文件"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_ARCHIVFILE.String.Text
+msgid  "Archive file"
+msgstr "備用檔案"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_LOGFILE.String.Text
+msgid  "Log file"
+msgstr "記錄檔案"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_SDATABASE_DOC.String.Text
+msgid  "%STAROFFICE Database"
+msgstr "%STAROFFICE 資料庫"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_GLOBALDOC.String.Text
+msgid  "StarWriter 4.0 / 5.0 Master Document"
+msgstr "StarWriter 4.0 / 5.0 主控文件"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_SIMAGE_DOC.String.Text
+msgid  "%STAROFFICE Image"
+msgstr "%STAROFFICE 影像"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_TEXTFILE.String.Text
+msgid  "Text file"
+msgstr "文字檔案"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_LINK.String.Text
+msgid  "Link"
+msgstr "連結"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_SOFFICE_TEMPLATE_DOC.String.Text
+msgid  "%STAROFFICE 3.0 - 5.0 Template"
+msgstr "%STAROFFICE 3.0 - 5.0 範本"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_EXCEL_DOC.String.Text
+msgid  "MS Excel document"
+msgstr "MS Excel 文件"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_EXCEL_TEMPLATE_DOC.String.Text
+msgid  "MS Excel template"
+msgstr "MS Excel 範本"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_BATCHFILE.String.Text
+msgid  "Batch file"
+msgstr "批次檔"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_FILE.String.Text
+msgid  "File"
+msgstr "檔案"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_FOLDER.String.Text
+msgid  "Folder"
+msgstr "資料夾"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_WRITER.String.Text
+msgid  "Text Document"
+msgstr "文字文件"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_CALC.String.Text
+msgid  "Spreadsheet"
+msgstr "試算表"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_IMPRESS.String.Text
+msgid  "Presentation"
+msgstr "簡報"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_DRAW.String.Text
+msgid  "Drawing"
+msgstr "繪圖"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_WRITERWEB.String.Text
+msgid  "HTML document"
+msgstr "HTML 文件"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_GLOBALDOC.String.Text
+msgid  "Master document"
+msgstr "主控文件"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_MATH.String.Text
+msgid  "Formula"
+msgstr "公式"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_FACTORY_DATABASE.String.Text
+msgid  "Database"
+msgstr "資料庫"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_CALC_TEMPLATE.String.Text
+msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet Template"
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION 試算表範本"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_DRAW_TEMPLATE.String.Text
+msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Drawing Template"
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION 繪圖範本"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_IMPRESS_TEMPLATE.String.Text
+msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Presentation Template"
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION 簡報範本"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_WRITER_TEMPLATE.String.Text
+msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Text Document Template"
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION 文字文件範本"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_LOCALE_VOLUME.String.Text
+msgid  "Local drive"
+msgstr "本機磁碟"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_FLOPPY_VOLUME.String.Text
+msgid  "Disk drive"
+msgstr "軟碟機"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_CDROM_VOLUME.String.Text
+msgid  "CD-ROM drive"
+msgstr "光碟機"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_REMOTE_VOLUME.String.Text
+msgid  "Network connection"
+msgstr "網路連線"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT.String.Text
+msgid  "MS PowerPoint Document"
+msgstr "Microsoft PowerPoint 文件"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT_TEMPLATE.String.Text
+msgid  "MS PowerPoint Template"
+msgstr "Microsoft PowerPoint Template"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT_SHOW.String.Text
+msgid  "MS PowerPoint Show"
+msgstr "Microsoft PowerPoint Show"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_SXMATH_DOC.String.Text
+msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Formula"
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION 公式"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_SXCHART_DOC.String.Text
+msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Chart"
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION 圖表"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_SXDRAW_DOC.String.Text
+msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Drawing"
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION 繪圖"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_SXCALC_DOC.String.Text
+msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet"
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION 試算表"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_SXIMPRESS_DOC.String.Text
+msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Presentation"
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION 簡報"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_SXWRITER_DOC.String.Text
+msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Text Document"
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION 文字文件"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_SXGLOBAL_DOC.String.Text
+msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Master Document"
+msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION 主控文件"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_MATHML_DOC.String.Text
+msgid  "MathML Document"
+msgstr "MathML 文件"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_OO_DATABASE_DOC.String.Text
+msgid  "OpenDocument Database"
+msgstr "OpenDocument 資料庫"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_OO_DRAW_DOC.String.Text
+msgid  "OpenDocument Drawing"
+msgstr "OpenDocument 繪圖"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_OO_MATH_DOC.String.Text
+msgid  "OpenDocument Formula"
+msgstr "OpenDocument 公式"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_OO_GLOBAL_DOC.String.Text
+msgid  "OpenDocument Master Document"
+msgstr "OpenDocument 主控文件"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_OO_IMPRESS_DOC.String.Text
+msgid  "OpenDocument Presentation"
+msgstr "OpenDocument 簡報"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_OO_CALC_DOC.String.Text
+msgid  "OpenDocument Spreadsheet"
+msgstr "OpenDocument 試算表"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_OO_WRITER_DOC.String.Text
+msgid  "OpenDocument Text"
+msgstr "OpenDocument 文字"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_OO_CALC_TEMPLATE.String.Text
+msgid  "OpenDocument Spreadsheet Template"
+msgstr "OpenDocument 試算表範本"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_OO_DRAW_TEMPLATE.String.Text
+msgid  "OpenDocument Drawing Template"
+msgstr "OpenDocument 繪圖範本"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_OO_IMPRESS_TEMPLATE.String.Text
+msgid  "OpenDocument Presentation Template"
+msgstr "OpenDocument 簡報範本"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_OO_WRITER_TEMPLATE.String.Text
+msgid  "OpenDocument Text Template"
+msgstr "OpenDocument 文字範本"
+
+#: source/misc/imagemgr.src#STR_DESCRIPTION_EXTENSION.String.Text
+msgid  "%PRODUCTNAME Extension"
+msgstr "%PRODUCTNAME 擴充軟體"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NONE.PairedList.item
+msgid  "[None]"
+msgstr "[無]"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DONTKNOW.PairedList.item
+msgid  "Unknown"
+msgstr "未知"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SYSTEM.PairedList.item
+msgid  "Default"
+msgstr "預設"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AFRIKAANS.PairedList.item
+msgid  "Afrikaans (South Africa)"
+msgstr "南非語 (南非)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ALBANIAN.PairedList.item
+msgid  "Albanian"
+msgstr "阿爾巴尼亞語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_PRIMARY_ONLY.PairedList.item
+msgid  "Arabic"
+msgstr "阿拉伯語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_ALGERIA.PairedList.item
+msgid  "Arabic (Algeria)"
+msgstr "阿拉伯語 (阿爾及利亞)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_BAHRAIN.PairedList.item
+msgid  "Arabic (Bahrain)"
+msgstr "阿拉伯語 (巴林)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_CHAD.PairedList.item
+msgid  "Arabic (Chad)"
+msgstr "阿拉伯語 (查德)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_COMOROS.PairedList.item
+msgid  "Arabic (Comoros)"
+msgstr "阿拉伯語 (葛摩)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_DJIBOUTI.PairedList.item
+msgid  "Arabic (Djibouti)"
+msgstr "阿拉伯語 (吉布地)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_EGYPT.PairedList.item
+msgid  "Arabic (Egypt)"
+msgstr "阿拉伯語 (埃及)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_ERITREA.PairedList.item
+msgid  "Arabic (Eritrea)"
+msgstr "阿拉伯語 (厄利垂亞)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_IRAQ.PairedList.item
+msgid  "Arabic (Iraq)"
+msgstr "阿拉伯語 (伊拉克)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_ISRAEL.PairedList.item
+msgid  "Arabic (Israel)"
+msgstr "阿拉伯語 (以色列)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_JORDAN.PairedList.item
+msgid  "Arabic (Jordan)"
+msgstr "阿拉伯語 (約旦)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_KUWAIT.PairedList.item
+msgid  "Arabic (Kuwait)"
+msgstr "阿拉伯語 (科威特)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_LEBANON.PairedList.item
+msgid  "Arabic (Lebanon)"
+msgstr "阿拉伯語 (黎巴嫩)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_LIBYA.PairedList.item
+msgid  "Arabic (Libya)"
+msgstr "阿拉伯語 (利比亞)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_MAURITANIA.PairedList.item
+msgid  "Arabic (Mauritania)"
+msgstr "阿拉伯語 (茅利塔尼亞)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_MOROCCO.PairedList.item
+msgid  "Arabic (Morocco)"
+msgstr "阿拉伯語 (摩洛哥)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_OMAN.PairedList.item
+msgid  "Arabic (Oman)"
+msgstr "阿拉伯語 (阿曼)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_PALESTINE.PairedList.item
+msgid  "Arabic (Palestine)"
+msgstr "阿拉伯語 (巴勒斯坦)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_QATAR.PairedList.item
+msgid  "Arabic (Qatar)"
+msgstr "阿拉伯語 (卡塔爾)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_SAUDI_ARABIA.PairedList.item
+msgid  "Arabic (Saudi Arabia)"
+msgstr "阿拉伯語 (沙烏地阿拉伯)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_SOMALIA.PairedList.item
+msgid  "Arabic (Somalia)"
+msgstr "阿拉伯語 (索馬利亞)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ARABIC_SUDAN.PairedList.item
+msgid  "Arabic (Sudan)"
+msgstr "阿拉伯語 (蘇丹)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_SYRIA.PairedList.item
+msgid  "Arabic (Syria)"
+msgstr "阿拉伯語 (敘利亞)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_TUNISIA.PairedList.item
+msgid  "Arabic (Tunisia)"
+msgstr "阿拉伯語 (突尼西亞)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_UAE.PairedList.item
+msgid  "Arabic (UAE)"
+msgstr "阿拉伯語 (阿拉伯聯合大公國)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_YEMEN.PairedList.item
+msgid  "Arabic (Yemen)"
+msgstr "阿拉伯語 (葉門)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARMENIAN.PairedList.item
+msgid  "Armenian"
+msgstr "亞美尼亞語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ASSAMESE.PairedList.item
+msgid  "Assami"
+msgstr "印度的阿薩姆語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AZERI_LATIN.PairedList.item
+msgid  "Azerbaijani Latin"
+msgstr "阿塞拜疆語 (拉丁語)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AZERI_CYRILLIC.PairedList.item
+msgid  "Azerbaijani Cyrillic"
+msgstr "阿塞拜疆語 (斯拉夫語)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BASQUE.PairedList.item
+msgid  "Basque"
+msgstr "巴斯克語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BENGALI.PairedList.item
+msgid  "Bengali (India)"
+msgstr "孟加拉語 (印度)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BULGARIAN.PairedList.item
+msgid  "Bulgarian"
+msgstr "保加利亞語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BELARUSIAN.PairedList.item
+msgid  "Belarusian"
+msgstr "白俄羅斯語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CATALAN.PairedList.item
+msgid  "Catalan"
+msgstr "加泰羅尼亞語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_TRADITIONAL.PairedList.item
+msgid  "Chinese (traditional)"
+msgstr "中文 (繁體)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_SIMPLIFIED.PairedList.item
+msgid  "Chinese (simplified)"
+msgstr "中文 (簡體)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_HONGKONG.PairedList.item
+msgid  "Chinese (Hong Kong)"
+msgstr "中文 (香港)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_SINGAPORE.PairedList.item
+msgid  "Chinese (Singapore)"
+msgstr "中文 (新加坡)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_MACAU.PairedList.item
+msgid  "Chinese (Macau)"
+msgstr "中文 (澳門)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CROATIAN.PairedList.item
+msgid  "Croatian"
+msgstr "克羅地亞語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CZECH.PairedList.item
+msgid  "Czech"
+msgstr "捷克語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DANISH.PairedList.item
+msgid  "Danish"
+msgstr "丹麥語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DUTCH.PairedList.item
+msgid  "Dutch (Netherlands)"
+msgstr "荷蘭語 (荷蘭)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DUTCH_BELGIAN.PairedList.item
+msgid  "Dutch (Belgium)"
+msgstr "荷蘭語 (比利時)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_US.PairedList.item
+msgid  "English (USA)"
+msgstr "英語 (美國)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_UK.PairedList.item
+msgid  "English (UK)"
+msgstr "英語 (英國)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_AUS.PairedList.item
+msgid  "English (Australia)"
+msgstr "英語 (澳大利亞)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_CAN.PairedList.item
+msgid  "English (Canada)"
+msgstr "英語 (加拿大)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_NZ.PairedList.item
+msgid  "English (New Zealand)"
+msgstr "英語 (紐西蘭)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_EIRE.PairedList.item
+msgid  "English (Eire)"
+msgstr "英語 (愛爾蘭)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_SAFRICA.PairedList.item
+msgid  "English (South Africa)"
+msgstr "英語 (南非)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_JAMAICA.PairedList.item
+msgid  "English (Jamaica)"
+msgstr "英語 (牙買加)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_CARRIBEAN.PairedList.item
+msgid  "English (Caribbean)"
+msgstr "英語 (加勒比海)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_BELIZE.PairedList.item
+msgid  "English (Belize)"
+msgstr "英語 (貝里斯)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_TRINIDAD.PairedList.item
+msgid  "English (Trinidad)"
+msgstr "英語 (千里達)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_ZIMBABWE.PairedList.item
+msgid  "English (Zimbabwe)"
+msgstr "英語 (辛巴威)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_PHILIPPINES.PairedList.item
+msgid  "English (Philippines)"
+msgstr "英語 (菲律賓)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_INDIA.PairedList.item
+msgid  "English (India)"
+msgstr "英語 (印度)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ESTONIAN.PairedList.item
+msgid  "Estonian"
+msgstr "愛沙尼亞語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FINNISH.PairedList.item
+msgid  "Finnish"
+msgstr "芬蘭語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FAEROESE.PairedList.item
+msgid  "Faroese"
+msgstr "法羅群島語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FARSI.PairedList.item
+msgid  "Persian"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH.PairedList.item
+msgid  "French (France)"
+msgstr "法語 (法國)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_BELGIAN.PairedList.item
+msgid  "French (Belgium)"
+msgstr "法語 (比利時)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_CANADIAN.PairedList.item
+msgid  "French (Canada)"
+msgstr "法語 (加拿大)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_SWISS.PairedList.item
+msgid  "French (Switzerland)"
+msgstr "法語 (瑞士)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_LUXEMBOURG.PairedList.item
+msgid  "French (Luxembourg)"
+msgstr "法語 (盧森堡)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_MONACO.PairedList.item
+msgid  "French (Monaco)"
+msgstr "法語 (摩洛哥)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GASCON.PairedList.item
+msgid  "Gascon"
+msgstr "加斯科涅語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN.PairedList.item
+msgid  "German (Germany)"
+msgstr "德語 (德國)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_SWISS.PairedList.item
+msgid  "German (Switzerland)"
+msgstr "法語 (瑞士)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_AUSTRIAN.PairedList.item
+msgid  "German (Austria)"
+msgstr "法語 (奧地利)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_LUXEMBOURG.PairedList.item
+msgid  "German (Luxembourg)"
+msgstr "法語 (盧森堡)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_LIECHTENSTEIN.PairedList.item
+msgid  "German (Liechtenstein)"
+msgstr "德語 (列支敦斯登)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GREEK.PairedList.item
+msgid  "Greek"
+msgstr "希臘語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GUJARATI.PairedList.item
+msgid  "Gujarati"
+msgstr "古吉拉特語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HEBREW.PairedList.item
+msgid  "Hebrew"
+msgstr "希伯來語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HINDI.PairedList.item
+msgid  "Hindi"
+msgstr "北印度語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HUNGARIAN.PairedList.item
+msgid  "Hungarian"
+msgstr "匈牙利語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ICELANDIC.PairedList.item
+msgid  "Icelandic"
+msgstr "冰島語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_INDONESIAN.PairedList.item
+msgid  "Indonesian"
+msgstr "印尼語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ITALIAN.PairedList.item
+msgid  "Italian (Italy)"
+msgstr "義大利語 (義大利)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ITALIAN_SWISS.PairedList.item
+msgid  "Italian (Switzerland)"
+msgstr "義大利語 (瑞士)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_JAPANESE.PairedList.item
+msgid  "Japanese"
+msgstr "日語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KANNADA.PairedList.item
+msgid  "Kannada"
+msgstr "印度的卡納達語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KASHMIRI.PairedList.item
+msgid  "Kashmiri (Kashmir)"
+msgstr "喀什米爾語 (喀什米爾)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KASHMIRI_INDIA.PairedList.item
+msgid  "Kashmiri (India)"
+msgstr "喀什米爾語 (印度)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KAZAK.PairedList.item
+msgid  "Kazak"
+msgstr "哈薩克語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KONKANI.PairedList.item
+msgid  "Konkani"
+msgstr "印度方言 (Konkani)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KOREAN.PairedList.item
+msgid  "Korean (RoK)"
+msgstr "韓語 (南韓)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LATVIAN.PairedList.item
+msgid  "Latvian"
+msgstr "拉脫維亞語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LITHUANIAN.PairedList.item
+msgid  "Lithuanian"
+msgstr "立陶宛語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MACEDONIAN.PairedList.item
+msgid  "Macedonian"
+msgstr "馬其頓語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAY_MALAYSIA.PairedList.item
+msgid  "Malay (Malaysia)"
+msgstr "馬來語 (馬來西亞)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAY_BRUNEI_DARUSSALAM.PairedList.item
+msgid  "Malay (Brunei Darussalam)"
+msgstr "馬來語 (汶萊)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAYALAM.PairedList.item
+msgid  "Malayalam"
+msgstr "喀拉拉語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MANIPURI.PairedList.item
+msgid  "Manipuri"
+msgstr "印度方言 (Manipuri)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MARATHI.PairedList.item
+msgid  "Marathi"
+msgstr "印度方言 (Marathi)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NEPALI.PairedList.item
+msgid  "Nepali (Nepal)"
+msgstr "尼泊爾語 (尼泊爾)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NEPALI_INDIA.PairedList.item
+msgid  "Nepali (India)"
+msgstr "尼泊爾語 (印度)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NORWEGIAN_BOKMAL.PairedList.item
+msgid  "Norwegian, Bokmål"
+msgstr "挪威語 (伯克默爾)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NORWEGIAN_NYNORSK.PairedList.item
+msgid  "Norwegian, Nynorsk"
+msgstr "挪威語 (尼諾斯克)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ORIYA.PairedList.item
+msgid  "Oriya"
+msgstr "歐利亞語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_POLISH.PairedList.item
+msgid  "Polish"
+msgstr "波蘭語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PORTUGUESE.PairedList.item
+msgid  "Portuguese (Portugal)"
+msgstr "葡萄牙語 (葡萄牙)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PORTUGUESE_BRAZILIAN.PairedList.item
+msgid  "Portuguese (Brazil)"
+msgstr "葡萄牙語 (巴西)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PUNJABI.PairedList.item
+msgid  "Punjabi"
+msgstr "旁遮普語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_RHAETO_ROMAN.PairedList.item
+msgid  "Rhaeto-Romance"
+msgstr "里托羅曼語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ROMANIAN.PairedList.item
+msgid  "Romanian"
+msgstr "羅馬尼亞語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_RUSSIAN.PairedList.item
+msgid  "Russian"
+msgstr "俄語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SANSKRIT.PairedList.item
+msgid  "Sanskrit"
+msgstr "梵語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SERBIAN_CYRILLIC.PairedList.item
+msgid  "Serbian Cyrillic (Serbia and Montenegro)"
+msgstr "塞爾維亞語 (斯拉夫語) (塞爾維亞與蒙特內哥羅)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SERBIAN_LATIN.PairedList.item
+msgid  "Serbian Latin (Serbia and Montenegro)"
+msgstr "塞爾維亞語 (拉丁語) (塞爾維亞與蒙特內哥羅)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_CYRILLIC_SERBIA.PairedList.item
+msgid  "Serbian Cyrillic (Serbia)"
+msgstr "塞爾維亞語 (斯拉夫語) (塞爾維亞)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_LATIN_SERBIA.PairedList.item
+msgid  "Serbian Latin (Serbia)"
+msgstr "塞爾維亞語 (拉丁語) (塞爾維亞)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_CYRILLIC_MONTENEGRO.PairedList.item
+msgid  "Serbian Cyrillic (Montenegro)"
+msgstr "塞爾維亞語 (斯拉夫語) (蒙特內哥羅)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_LATIN_MONTENEGRO.PairedList.item
+msgid  "Serbian Latin (Montenegro)"
+msgstr "塞爾維亞語 (拉丁語) (蒙特內哥羅)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SINDHI.PairedList.item
+msgid  "Sindhi"
+msgstr "信德語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SLOVAK.PairedList.item
+msgid  "Slovak"
+msgstr ""
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SLOVENIAN.PairedList.item
+msgid  "Slovenian"
+msgstr "斯洛維尼亞語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH.PairedList.item
+msgid  "Spanish (Spain)"
+msgstr "西班牙語 (西班牙)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_MEXICAN.PairedList.item
+msgid  "Spanish (Mexico)"
+msgstr "西班牙語 (墨西哥)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_GUATEMALA.PairedList.item
+msgid  "Spanish (Guatemala)"
+msgstr "西班牙語 (瓜地馬拉)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_COSTARICA.PairedList.item
+msgid  "Spanish (Costa Rica)"
+msgstr "西班牙語 (哥斯大黎加)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PANAMA.PairedList.item
+msgid  "Spanish (Panama)"
+msgstr "西班牙語 (巴拿馬)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_DOMINICAN_REPUBLIC.PairedList.item
+msgid  "Spanish (Dom. Rep.)"
+msgstr "西班牙語 (多米尼加)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_VENEZUELA.PairedList.item
+msgid  "Spanish (Venezuela)"
+msgstr "西班牙語 (委內瑞拉)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_COLOMBIA.PairedList.item
+msgid  "Spanish (Colombia)"
+msgstr "西班牙語 (哥倫比亞)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PERU.PairedList.item
+msgid  "Spanish (Peru)"
+msgstr "西班牙語 (秘魯)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_ARGENTINA.PairedList.item
+msgid  "Spanish (Argentina)"
+msgstr "西班牙語 (阿根廷)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_ECUADOR.PairedList.item
+msgid  "Spanish (Ecuador)"
+msgstr "西班牙語 (厄瓜多)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_CHILE.PairedList.item
+msgid  "Spanish (Chile)"
+msgstr "西班牙語 (智利)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_URUGUAY.PairedList.item
+msgid  "Spanish (Uruguay)"
+msgstr "西班牙語 (烏拉圭)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PARAGUAY.PairedList.item
+msgid  "Spanish (Paraguay)"
+msgstr "西班牙語 (巴拉圭)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_BOLIVIA.PairedList.item
+msgid  "Spanish (Bolivia)"
+msgstr "西班牙語 (玻利維亞)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_EL_SALVADOR.PairedList.item
+msgid  "Spanish (El Salvador)"
+msgstr "西班牙語 (薩爾瓦多)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_HONDURAS.PairedList.item
+msgid  "Spanish (Honduras)"
+msgstr "西班牙語 (宏都拉斯)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_NICARAGUA.PairedList.item
+msgid  "Spanish (Nicaragua)"
+msgstr "西班牙語 (尼加拉瓜)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PUERTO_RICO.PairedList.item
+msgid  "Spanish (Puerto Rico)"
+msgstr "西班牙語 (波多黎各)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWAHILI.PairedList.item
+msgid  "Swahili (Kenya)"
+msgstr "斯瓦希里語 (肯亞)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWEDISH.PairedList.item
+msgid  "Swedish (Sweden)"
+msgstr "瑞典語 (瑞典)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWEDISH_FINLAND.PairedList.item
+msgid  "Swedish (Finland)"
+msgstr "瑞典語 (芬蘭)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TAJIK.PairedList.item
+msgid  "Tajik"
+msgstr "塔吉克語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TAMIL.PairedList.item
+msgid  "Tamil"
+msgstr "坦米爾語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TATAR.PairedList.item
+msgid  "Tatar"
+msgstr "韃靼語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TELUGU.PairedList.item
+msgid  "Telugu"
+msgstr "印度方言 (Telugu)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_THAI.PairedList.item
+msgid  "Thai"
+msgstr "泰語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TURKISH.PairedList.item
+msgid  "Turkish"
+msgstr "土耳其語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_URDU_PAKISTAN.PairedList.item
+msgid  "Urdu (Pakistan)"
+msgstr "烏都語 (巴基斯坦)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_URDU_INDIA.PairedList.item
+msgid  "Urdu (India)"
+msgstr "烏都語 (印度)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UKRAINIAN.PairedList.item
+msgid  "Ukrainian"
+msgstr "烏克蘭語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UZBEK_LATIN.PairedList.item
+msgid  "Uzbek Latin"
+msgstr "烏茲別克語 (拉丁語)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_WELSH.PairedList.item
+msgid  "Welsh"
+msgstr "瑞士法語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER1.PairedList.item
+msgid  "User 1"
+msgstr "使用者 1"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER2.PairedList.item
+msgid  "User 2"
+msgstr "使用者 2"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER3.PairedList.item
+msgid  "User 3"
+msgstr "使用者 3"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER4.PairedList.item
+msgid  "User 4"
+msgstr "使用者 4"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER5.PairedList.item
+msgid  "User 5"
+msgstr "使用者 5"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER6.PairedList.item
+msgid  "User 6"
+msgstr "使用者 6"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER7.PairedList.item
+msgid  "User 7"
+msgstr "使用者 7"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER8.PairedList.item
+msgid  "User 8"
+msgstr "使用者 8"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER9.PairedList.item
+msgid  "User 9"
+msgstr "使用者 9"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LATIN.PairedList.item
+msgid  "Latin"
+msgstr "拉丁語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ESPERANTO.PairedList.item
+msgid  "Esperanto"
+msgstr "世界語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KINYARWANDA.PairedList.item
+msgid  "Kinyarwanda (Rwanda)"
+msgstr "金牙旺達 (盧旺達)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MAORI_NEW_ZEALAND.PairedList.item
+msgid  "Maori (New Zealand)"
+msgstr "毛利語(紐西蘭)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GALICIAN.PairedList.item
+msgid  "Galician"
+msgstr "加利西亞語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DHIVEHI.PairedList.item
+msgid  "Dhivehi"
+msgstr "德希維希語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SEPEDI.PairedList.item
+msgid  "Northern Sotho"
+msgstr "北索托語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GAELIC_SCOTLAND.PairedList.item
+msgid  "Gaelic (Scotland)"
+msgstr "蓋爾語 (蘇格蘭)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MONGOLIAN.PairedList.item
+msgid  "Mongolian"
+msgstr "蒙古語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_INTERLINGUA.PairedList.item
+msgid  "Interlingua"
+msgstr "國際語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BOSNIAN_BOSNIA_HERZEGOVINA.PairedList.item
+msgid  "Bosnian"
+msgstr "波士尼亞語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BENGALI_BANGLADESH.PairedList.item
+msgid  "Bengali (Bangladesh)"
+msgstr "孟加拉語 (孟加拉)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_OCCITAN.PairedList.item
+msgid  "Occitan"
+msgstr "奧克語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KHMER.PairedList.item
+msgid  "Khmer"
+msgstr "高棉語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_TURKEY.PairedList.item
+msgid  "Kurdish (Turkey)"
+msgstr "庫德語 (土耳其)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_SYRIA.PairedList.item
+msgid  "Kurdish (Syria)"
+msgstr "庫德語 (敘利亞)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_IRAQ.PairedList.item
+msgid  "Kurdish (Iraq)"
+msgstr "庫德語 (伊拉克)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_IRAN.PairedList.item
+msgid  "Kurdish (Iran)"
+msgstr "庫德語 (伊朗)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN.PairedList.item
+msgid  "Sardinian"
+msgstr "薩丁語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DZONGKHA.PairedList.item
+msgid  "Dzongkha"
+msgstr "不丹語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SWAHILI_TANZANIA.PairedList.item
+msgid  "Swahili (Tanzania)"
+msgstr "斯瓦希里語 (坦尚尼亞)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LAO.PairedList.item
+msgid  "Lao"
+msgstr "老撾語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GAELIC_IRELAND.PairedList.item
+msgid  "Irish"
+msgstr "愛爾蘭語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TIBETAN.PairedList.item
+msgid  "Tibetan (PR China)"
+msgstr "藏語 (中國大陸)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GEORGIAN.PairedList.item
+msgid  "Georgian"
+msgstr "格魯吉亞(喬治亞)語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRISIAN_NETHERLANDS.PairedList.item
+msgid  "Frisian"
+msgstr "夫里斯蘭語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TSWANA.PairedList.item
+msgid  "Tswana (South Africa)"
+msgstr "班圖語 (南非)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ZULU.PairedList.item
+msgid  "Zulu"
+msgstr "祖魯語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_VIETNAMESE.PairedList.item
+msgid  "Vietnamese"
+msgstr "越南語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BRETON.PairedList.item
+msgid  "Breton"
+msgstr "不列塔尼語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KALAALLISUT.PairedList.item
+msgid  "Kalaallisut"
+msgstr "格陵蘭語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_NDEBELE_SOUTH.PairedList.item
+msgid  "Ndebele, South"
+msgstr "南恩德貝勒語 (南非)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SESOTHO.PairedList.item
+msgid  "Southern Sotho"
+msgstr "南索托語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SWAZI.PairedList.item
+msgid  "Swazi"
+msgstr "史瓦濟語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TSONGA.PairedList.item
+msgid  "Tsonga"
+msgstr "頌加語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_VENDA.PairedList.item
+msgid  "Venda"
+msgstr "文達語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TSWANA_BOTSWANA.PairedList.item
+msgid  "Tswana (Botswana)"
+msgstr "班圖語 (波札那)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_XHOSA.PairedList.item
+msgid  "Xhosa"
+msgstr "廓薩語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SINHALESE_SRI_LANKA.PairedList.item
+msgid  "Sinhala"
+msgstr "錫蘭語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MOORE.PairedList.item
+msgid  "Moore"
+msgstr "穆爾"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BAMBARA.PairedList.item
+msgid  "Bambara"
+msgstr "班巴拉語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_AKAN.PairedList.item
+msgid  "Akan"
+msgstr "亞肯語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LUXEMBOURGISH.PairedList.item
+msgid  "Luxembourgish"
+msgstr "盧森堡語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_FRIULIAN.PairedList.item
+msgid  "Friulian"
+msgstr "夫里斯蘭語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_FIJIAN.PairedList.item
+msgid  "Fijian"
+msgstr "斐濟語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_AFRIKAANS_NAMIBIA.PairedList.item
+msgid  "Afrikaans (Namibia)"
+msgstr "南非語 (納米比亞)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ENGLISH_NAMIBIA.PairedList.item
+msgid  "English (Namibia)"
+msgstr "英語 (納米比亞)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_WALLOON.PairedList.item
+msgid  "Walloon"
+msgstr "華隆語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_COPTIC.PairedList.item
+msgid  "Coptic"
+msgstr "埃及古語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TIGRIGNA_ERITREA.PairedList.item
+msgid  "Tigrigna (Eritrea)"
+msgstr "提格利尼亞語 (厄立特里亞)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TIGRIGNA_ETHIOPIA.PairedList.item
+msgid  "Tigrigna (Ethiopia)"
+msgstr "提格利尼亞語 (衣索比亞)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AMHARIC_ETHIOPIA.PairedList.item
+msgid  "Amharic"
+msgstr "阿姆哈拉語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KIRGHIZ.PairedList.item
+msgid  "Kirghiz"
+msgstr "吉爾吉斯語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GERMAN_BELGIUM.PairedList.item
+msgid  "German (Belgium)"
+msgstr "德語 (比利時)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_CHUVASH.PairedList.item
+msgid  "Chuvash"
+msgstr "楚瓦士語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BURMESE.PairedList.item
+msgid  "Burmese"
+msgstr "緬甸語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HAUSA_NIGERIA.PairedList.item
+msgid  "Hausa (Nigeria)"
+msgstr "豪撒語 (奈及利亞)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_HAUSA_GHANA.PairedList.item
+msgid  "Hausa (Ghana)"
+msgstr "豪撒語 (迦納)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_EWE_GHANA.PairedList.item
+msgid  "Éwé"
+msgstr "幽語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ENGLISH_GHANA.PairedList.item
+msgid  "English (Ghana)"
+msgstr "英語 (迦納)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SANGO.PairedList.item
+msgid  "Sango"
+msgstr "桑戈語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TAGALOG.PairedList.item
+msgid  "Tagalog"
+msgstr "菲律賓湯加洛格語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GANDA.PairedList.item
+msgid  "Ganda"
+msgstr "盧干達語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LINGALA_DRCONGO.PairedList.item
+msgid  "Lingala"
+msgstr "林格拉語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LOW_GERMAN.PairedList.item
+msgid  "Low German"
+msgstr "低地德語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_HILIGAYNON.PairedList.item
+msgid  "Hiligaynon"
+msgstr "希利蓋農語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_NYANJA.PairedList.item
+msgid  "Nyanja"
+msgstr "恩雅哈語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KASHUBIAN.PairedList.item
+msgid  "Kashubian"
+msgstr "卡舒比語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SPANISH_CUBA.PairedList.item
+msgid  "Spanish (Cuba)"
+msgstr "西班牙語 (古巴)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TETUN.PairedList.item
+msgid  "Tetun (Indonesia)"
+msgstr "德頓語 (印尼)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_QUECHUA_NORTH_BOLIVIA.PairedList.item
+msgid  "Quechua (Bolivia, North)"
+msgstr "蓋楚瓦語 (北玻利維亞)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_QUECHUA_SOUTH_BOLIVIA.PairedList.item
+msgid  "Quechua (Bolivia, South)"
+msgstr "蓋楚瓦語 (南玻利維亞)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SOMALI.PairedList.item
+msgid  "Somali"
+msgstr "索馬利語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_INARI.PairedList.item
+msgid  "Sami, Inari (Finland)"
+msgstr "伊納里薩米語 (芬蘭)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_LULE_NORWAY.PairedList.item
+msgid  "Sami, Lule (Norway)"
+msgstr "盧爾薩米語 (挪威)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_LULE_SWEDEN.PairedList.item
+msgid  "Sami, Lule (Sweden)"
+msgstr "盧爾薩米語 (瑞典)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_NORTHERN_FINLAND.PairedList.item
+msgid  "Sami, Northern (Finland)"
+msgstr "北薩米語 (芬蘭)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_NORTHERN_NORWAY.PairedList.item
+msgid  "Sami, Northern (Norway)"
+msgstr "北薩米語 (挪威)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_NORTHERN_SWEDEN.PairedList.item
+msgid  "Sami, Northern (Sweden)"
+msgstr "北薩米語 (瑞典)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_SKOLT.PairedList.item
+msgid  "Sami, Skolt (Finland)"
+msgstr "史寇特薩米語 (芬蘭)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_SOUTHERN_NORWAY.PairedList.item
+msgid  "Sami, Southern (Norway)"
+msgstr "南薩米語 (挪威)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_SOUTHERN_SWEDEN.PairedList.item
+msgid  "Sami, Southern (Sweden)"
+msgstr "南薩米語 (瑞典)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SAMI_KILDIN_RUSSIA.PairedList.item
+msgid  "Sami, Kildin (Russia)"
+msgstr "基爾丁-薩米語 (俄羅斯)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GUARANI_PARAGUAY.PairedList.item
+msgid  "Guaraní, Paraguayan"
+msgstr "瓜拉尼語、巴拉圭語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BODO_INDIA.PairedList.item
+msgid  "Bodo"
+msgstr "博多語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_DOGRI_INDIA.PairedList.item
+msgid  "Dogri"
+msgstr "多格里語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MAITHILI_INDIA.PairedList.item
+msgid  "Maithili"
+msgstr "邁德里語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SANTALI_INDIA.PairedList.item
+msgid  "Santali"
+msgstr "桑塔利語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TETUN_TIMOR_LESTE.PairedList.item
+msgid  "Tetun (Timor-Leste)"
+msgstr "德頓語 (東帝汶)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TURKMEN.PairedList.item
+msgid  "Turkmen"
+msgstr "土庫曼語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALTESE.PairedList.item
+msgid  "Maltese"
+msgstr "馬爾他語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TOK_PISIN.PairedList.item
+msgid  "Tok Pisin"
+msgstr "巴布亞皮欽語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SHUSWAP.PairedList.item
+msgid  "Shuswap"
+msgstr "蘇斯瓦語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_OROMO.PairedList.item
+msgid  "Oromo"
+msgstr "奧羅蒙語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ANCIENT_GREEK.PairedList.item
+msgid  "Greek, Ancient"
+msgstr "古希臘語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_YIDDISH.PairedList.item
+msgid  "Yiddish (Israel)"
+msgstr "意第緒語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_QUECHUA_ECUADOR.PairedList.item
+msgid  "Quechua (Ecuador)"
+msgstr "蓋楚瓦語 (厄瓜多)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UIGHUR_CHINA.PairedList.item
+msgid  "Uyghur"
+msgstr "維吾爾語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ASTURIAN.PairedList.item
+msgid  "Asturian"
+msgstr "阿斯圖里亞斯語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UPPER_SORBIAN_GERMANY.PairedList.item
+msgid  "Sorbian, Upper"
+msgstr "上索布語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LOWER_SORBIAN_GERMANY.PairedList.item
+msgid  "Sorbian, Lower"
+msgstr "下索布語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LATGALIAN.PairedList.item
+msgid  "Latgalian"
+msgstr "拉特加萊語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MAORE.PairedList.item
+msgid  "Maore"
+msgstr "穆爾語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BUSHI.PairedList.item
+msgid  "Bushi"
+msgstr "布希語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TAHITIAN.PairedList.item
+msgid  "Tahitian"
+msgstr "大溪地語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MALAGASY_PLATEAU.PairedList.item
+msgid  "Malagasy, Plateau"
+msgstr "馬達加斯加語，高原"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PAPIAMENTU.PairedList.item
+msgid  "Papiamentu (Netherlands Antilles)"
+msgstr "帕匹曼圖語 (荷屬安替列斯)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_PAPIAMENTU_ARUBA.PairedList.item
+msgid  "Papiamento (Aruba)"
+msgstr "帕皮阿門托語 (阿路巴)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN_CAMPIDANESE.PairedList.item
+msgid  "Sardinian, Campidanese"
+msgstr "薩丁尼亞語，坎皮達諾"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN_GALLURESE.PairedList.item
+msgid  "Sardinian, Gallurese"
+msgstr "薩丁尼亞語，加盧拉"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN_LOGUDORESE.PairedList.item
+msgid  "Sardinian, Logudorese"
+msgstr "薩丁尼亞語，勞古多羅"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN_SASSARESE.PairedList.item
+msgid  "Sardinian, Sassarese"
+msgstr "薩丁尼亞語，薩薩里"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BAFIA.PairedList.item
+msgid  "Bafia"
+msgstr "巴非亞語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GIKUYU.PairedList.item
+msgid  "Gikuyu"
+msgstr "吉庫尤語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_YORUBA.PairedList.item
+msgid  "Yoruba"
+msgstr "約魯巴語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_RUSYN_UKRAINE.PairedList.item
+msgid  "Rusyn (Ukraine)"
+msgstr "魯塞尼亞語 (烏克蘭)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_RUSYN_SLOVAKIA.PairedList.item
+msgid  "Rusyn (Slovakia)"
+msgstr "魯塞尼亞語 (斯洛伐克)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_YIDDISH_US.PairedList.item
+msgid  "Yiddish (USA)"
+msgstr "意第緒語(美國)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HAWAIIAN_UNITED_STATES.PairedList.item
+msgid  "Hawaiian"
+msgstr "夏威夷語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LIMBU.PairedList.item
+msgid  "Limbu"
+msgstr "林布語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LOJBAN.PairedList.item
+msgid  "Lojban"
+msgstr "邏輯語(人工語言)"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KABYLE.PairedList.item
+msgid  "Kabyle"
+msgstr "卡比拉語"
+
+#: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_HAITIAN.PairedList.item
+msgid  "Haitian"
+msgstr "海地語"
+
+#: source/plugapp/testtool.src#DisplayHidToolBox.TT_SHOW.ToolBoxItem.Text
+msgid  "Display IDs"
+msgstr "顯示 ID"
+
+#: source/plugapp/testtool.src#DisplayHidToolBox.TT_OUTPUT.ToolBoxItem.Text
+msgid  "This is the input window"
+msgstr "此為輸入視窗"
+
+#: source/plugapp/testtool.src#DisplayHidToolBox.TT_SEND_DATA.ToolBoxItem.Text
+msgid  "Transfer to TestTool"
+msgstr "傳輸至 TestTool"
+
+#: source/plugapp/testtool.src#DisplayHidToolBox.TT_ALLWIN.ToolBoxItem.Text
+msgid  "Show all windows"
+msgstr "顯示所有視窗"
+
+#: source/plugapp/testtool.src#DisplayHidToolBox.TT_KURZNAME.ToolBoxItem.Text
+msgid  "Show short names (if available)"
+msgstr "顯示簡短名稱 (如果有)"
+
+#: source/plugapp/testtool.src#DisplayHidToolBox.TT_LANGNAME.ToolBoxItem.Text
+msgid  "Always show long-name"
+msgstr "一律顯示完整名稱"
+
+#: source/plugapp/testtool.src#DisplayHidToolBox.ToolBoxItem.Text
+msgid  "DisplayHID"
+msgstr "DisplayHID"
+
+#: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_GB_TRANSLATION.GroupBox.Text
+msgid  "Translation"
+msgstr "翻譯"
+
+#: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_E_NEW.Edit.Text
+msgid  "~Edit"
+msgstr "編輯(~E)"
+
+#: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_FT_OLD.FixedText.Text
+msgid  "Original Text"
+msgstr "原始文字"
+
+#: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_GB_COMMENT.GroupBox.Text
+msgid  "Comment"
+msgstr "註釋"
+
+#: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_E_COMMENT.Edit.Text
+msgid  "~Comment"
+msgstr "註釋(~C)"
+
+#: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_SELECT.PushButton.Text
+msgid  "~Select"
+msgstr "選取(~S)"
+
+#: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_RESTORE.PushButton.Text
+msgid  "~Restore"
+msgstr "修復(~R)"
+
+#: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_ACCEPT.PushButton.Text
+msgid  "~Accept"
+msgstr "接受(~A)"
+
+#: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_NEXT.PushButton.Text
+msgid  "~Next"
+msgstr "下一個(~N)"
+
+#: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.PushButton.Text
+msgid  "Inplace Translation"
+msgstr "直接翻譯"
+
+#: source/plugapp/testtool.src#TT_DISCARD_CHANGED_DATA.MessBox.Message
+msgid  "The Translation will be lost. Proceed anyway?"
+msgstr "翻譯即將遺失。是否仍要繼續?"
+
+#: source/plugapp/testtool.src#TT_NO_CONTROL.ErrorBox.Message
+msgid  "The Control is no longer valid. The Translation cannot be saved."
+msgstr "此控制項不再有效。無法儲存翻譯。"
+
+#: source/plugapp/testtool.src#TT_GPF.String.Text
+msgid  "GPF occurred"
+msgstr "發生 GPF"
+
+#: source/plugapp/testtool.src#TT_ALTERNATE_CAPTION.String.Text
+msgid  "HelpID does not match UniqueID: "
+msgstr "HelpID 與 UniqueID 不相符: "
+
+#: source/toolpanel/toolpanel.src#STR_SVT_TOOL_PANEL_BUTTON_FWD.String.Text
+msgid  "Tab Panel Scroll Button, backward"
+msgstr "標籤面板捲動按鈕，向後"
+
+#: source/toolpanel/toolpanel.src#STR_SVT_TOOL_PANEL_BUTTON_BACK.String.Text
+msgid  "Tab Panel Scroll Button, forward"
+msgstr "標籤面板捲動按鈕，向前"
+
+#: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.ModalDialog.Text
+msgid  "Roadmap Skeleton Demo"
+msgstr "示範說明架構"
+
+#: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_WELCOME.String.Text
+msgid  "Welcome"
+msgstr "歡迎"
+
+#: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_PREPARE.String.Text
+msgid  "Prepare"
+msgstr "準備"
+
+#: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_SETUP.String.Text
+msgid  "Setup"
+msgstr "設定"
+
+#: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_FINISH.String.Text
+msgid  "Finish"
+msgstr "完成"

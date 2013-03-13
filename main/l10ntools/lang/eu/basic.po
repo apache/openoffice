@@ -1,1774 +1,604 @@
-
-#: sb.src#ERRCODE_BASMGR_LIBLOAD___ERRCODE_RES_MASK.string.text
-msgid "Error loading library '$(ARG1)'."
-msgstr "Errorea '$(ARG1)' liburutegia kargatzean."
-
-#: sb.src#ERRCODE_BASMGR_LIBSAVE___ERRCODE_RES_MASK.string.text
-msgid "Error saving library: '$(ARG1)'."
-msgstr "Errorea liburutegia gordetzean: '$(ARG1)'."
-
-#: sb.src#ERRCODE_BASMGR_MGROPEN___ERRCODE_RES_MASK.string.text
-msgid "The BASIC from the file '$(ARG1)' could not be initialized."
-msgstr "'$(ARG1)' fitxategiko BASIC ezin izan da hasieratu."
-
-#: sb.src#ERRCODE_BASMGR_MGRSAVE___ERRCODE_RES_MASK.string.text
-msgid "Error saving BASIC: '$(ARG1)'."
-msgstr "Errorea BASIC gordetzean: '$(ARG1)'."
-
-#: sb.src#ERRCODE_BASMGR_REMOVELIB___ERRCODE_RES_MASK.string.text
-msgid "Error removing library."
-msgstr "Errorea liburutegia kentzean."
-
-#: sb.src#ERRCODE_BASMGR_UNLOADLIB___ERRCODE_RES_MASK.string.text
-msgid "The library could not be removed from memory."
-msgstr "Liburutegia ezin izan da kendu memoriatik."
-
-#: sb.src#IDS_SBERR_STOREREF.string.text
-msgid "Reference will not be saved: "
-msgstr "Erreferentzia ez da gordeko: "
-
-#: sb.src#IDS_SBERR_TERMINATED.string.text
-msgid "The macro running has been interrupted"
-msgstr "Exekutatzen ari den makroa eten egin da"
-
-#: sb.src#RID_BASIC_START.ERRCODE_BASIC_ARRAY_FIX___ERRCODE_RES_MASK.string.text
-msgid "This array is fixed or temporarily locked."
-msgstr "Array hau finkatuta edo aldi baterako blokeatuta dago."
-
-#: sb.src#RID_BASIC_START.ERRCODE_BASIC_COMPAT___ERRCODE_RES_MASK.string.text
-msgid "$(ARG1)"
-msgstr "$(ARG1)"
-
-#: sb.src#RID_BASIC_START.ERRCODE_BASIC_EXCEPTION___ERRCODE_RES_MASK.string.text
-msgid "An exception occurred $(ARG1)."
-msgstr "Salbuespena gertatu da: $(ARG1)."
-
-#: sb.src#RID_BASIC_START.ERRCODE_BASIC_EXPR_TOO_COMPLEX___ERRCODE_RES_MASK.string.text
-msgid "Expression Too Complex."
-msgstr "Adierazpena konplexuegia da."
-
-#: sb.src#RID_BASIC_START.ERRCODE_BASIC_LOOP_NOT_INIT___ERRCODE_RES_MASK.string.text
-msgid "For loop not initialized."
-msgstr "'For' begizta hasieratu gabe."
-
-#: sb.src#RID_BASIC_START.ERRCODE_BASIC_OPER_NOT_PERFORM___ERRCODE_RES_MASK.string.text
-msgid "Can't perform requested operation."
-msgstr "Ezin da eskatutako eragiketa landu."
-
-#: sb.src#RID_BASIC_START.ERRCODE_BASIC_STRING_OVERFLOW___ERRCODE_RES_MASK.string.text
-msgid "Out of string space."
-msgstr "Katearen espaziotik kanpo."
-
-#: sb.src#RID_BASIC_START.ERRCODE_BASIC_TOO_MANY_DLL___ERRCODE_RES_MASK.string.text
-msgid "Too many DLL application clients."
-msgstr "DLL aplikazio-bezero gehiegi."
-
-#: sb.src#RID_BASIC_START.SBERR_IS_NULL___ERRCODE_RES_MASK.string.text
-msgid "Use of zero not permitted."
-msgstr "Zeroa ezin da erabili."
-
-#: sb.src#RID_BASIC_START.SbERR_ACCESS_DENIED___ERRCODE_RES_MASK.string.text
-msgid "Access denied."
-msgstr "Sarbidea ukatuta."
-
-#: sb.src#RID_BASIC_START.SbERR_ACCESS_ERROR___ERRCODE_RES_MASK.string.text
-msgid "Path/File access error."
-msgstr "Errorea bide-izena/fitxategia atzitzean."
-
-#: sb.src#RID_BASIC_START.SbERR_ALREADY_DIM___ERRCODE_RES_MASK.string.text
-msgid "Array already dimensioned."
-msgstr "Taulak baditu neurriak lehendik."
-
-#: sb.src#RID_BASIC_START.SbERR_ARG_MISSING___ERRCODE_RES_MASK.string.text
-msgid "Required argument lacking."
-msgstr "Beharrezko argumentua falta da."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_ACTION___ERRCODE_RES_MASK.string.text
-msgid "This action is not supported by given object."
-msgstr "Aipatutako objektuak ez du ekintza hori onartzen."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_ARGUMENT___ERRCODE_RES_MASK.string.text
-msgid "Invalid procedure call."
-msgstr "Baliogabeko prozedura-deia."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_BLOCK___ERRCODE_RES_MASK.string.text
-msgid "Statement block still open: $(ARG1) missing."
-msgstr "Instrukzio-blokea irekita dago: $(ARG1) falta da."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_BRACKETS___ERRCODE_RES_MASK.string.text
-msgid "Parentheses do not match."
-msgstr "Parentesiak ez datoz bat."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_CHANNEL___ERRCODE_RES_MASK.string.text
-msgid "Invalid file name or file number."
-msgstr "Baliogabeko fitxategi-izena edo fitxategi-zenbakia."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_CHAR_IN_NUMBER___ERRCODE_RES_MASK.string.text
-msgid "Invalid character in number."
-msgstr "Baliogabeko karakterea zenbakian."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_CLIPBD_FORMAT___ERRCODE_RES_MASK.string.text
-msgid "Invalid clipboard format."
-msgstr "Baliogabeko arbel-formatua."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_DECLARATION___ERRCODE_RES_MASK.string.text
-msgid "Symbol $(ARG1) already defined differently."
-msgstr "$(ARG1) ikurra beste era batera definituta dago."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_DLL_CALL___ERRCODE_RES_MASK.string.text
-msgid "Wrong DLL call convention."
-msgstr "DLLi deitzeko konbentzioa oker."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_DLL_LOAD___ERRCODE_RES_MASK.string.text
-msgid "Error loading DLL file."
-msgstr "Errorea DLL fitxategia kargatzean."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_EXIT___ERRCODE_RES_MASK.string.text
-msgid "Exit $(ARG1) expected."
-msgstr "Exit $(ARG1) espero zen."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_FILE_MODE___ERRCODE_RES_MASK.string.text
-msgid "Incorrect file mode."
-msgstr "Okerreko fitxategi modua."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_INDEX___ERRCODE_RES_MASK.string.text
-msgid "Invalid object index."
-msgstr "Baliogabeko objektu-indizea."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_LOCALE___ERRCODE_RES_MASK.string.text
-msgid "The current locale setting is not supported by the given object."
-msgstr "Aipatutako objektuak ez du uneko ezarpen lokala onartzen."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_METHOD___ERRCODE_RES_MASK.string.text
-msgid "This property or method is not supported by the object."
-msgstr "Objektu honek ez du propietate edo metodo hori onartzen."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_NUMBER_OF_ARGS___ERRCODE_RES_MASK.string.text
-msgctxt "sb.src#RID_BASIC_START.SbERR_BAD_NUMBER_OF_ARGS___ERRCODE_RES_MASK.string.text"
-msgid "Invalid number of arguments."
-msgstr "Argumentuen kopuru baliogabea."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_OPTION___ERRCODE_RES_MASK.string.text
-msgid "Unknown option: $(ARG1)."
-msgstr "Aukera ezezaguna: $(ARG1)."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_ORDINAL___ERRCODE_RES_MASK.string.text
-msgid "Invalid ordinal number."
-msgstr "Baliogabeko zenbaki ordinala."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_PARAMETER___ERRCODE_RES_MASK.string.text
-msgid "Invalid parameter."
-msgstr "Baliogabeko parametroak."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_PARAMETERS___ERRCODE_RES_MASK.string.text
-msgid "Parameters do not correspond to procedure."
-msgstr "Parametroak ez datoz bat prozedurarekin."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_PATTERN___ERRCODE_RES_MASK.string.text
-msgid "Invalid string pattern."
-msgstr "Kate-eredu baliogabea."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_PROP_VALUE___ERRCODE_RES_MASK.string.text
-msgid "Incorrect property value."
-msgstr "Okerreko propietate-balioa."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_RECORD_LENGTH___ERRCODE_RES_MASK.string.text
-msgid "Incorrect record length."
-msgstr "Okerreko erregistro-luzera."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_RECORD_NUMBER___ERRCODE_RES_MASK.string.text
-msgid "Incorrect record number."
-msgstr "Erregistro-zenbakia oker."
-
-#: sb.src#RID_BASIC_START.SbERR_BAD_RESUME___ERRCODE_RES_MASK.string.text
-msgid "Resume without error."
-msgstr "Berrekin errorerik gabe."
-
-#: sb.src#RID_BASIC_START.SbERR_CANNOT_LOAD___ERRCODE_RES_MASK.string.text
-msgid "Module cannot be loaded; invalid format."
-msgstr "Modulua ezin da kargatu; formatu baliogabea."
-
-#: sb.src#RID_BASIC_START.SbERR_CONSTANT_REDECLARED___ERRCODE_RES_MASK.string.text
-msgid "Constant $(ARG1) redefined."
-msgstr "$(ARG1) konstantea birdefinituta."
-
-#: sb.src#RID_BASIC_START.SbERR_CONVERSION___ERRCODE_RES_MASK.string.text
-msgid "Data type mismatch."
-msgstr "Datu motak ez datoz bat."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_BUSY___ERRCODE_RES_MASK.string.text
-msgid "External application busy."
-msgstr "Kanpoko aplikazioa ez dago prest."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_CHANNEL_LOCKED___ERRCODE_RES_MASK.string.text
-msgid "DDE channel locked."
-msgstr "DDE kanala blokeatuta."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_CONV_CLOSED___ERRCODE_RES_MASK.string.text
-msgid "DDE connection interrupted or modified."
-msgstr "DDE konexioa etenda edo aldatuta."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_DLL_NOT_FOUND___ERRCODE_RES_MASK.string.text
-msgid "DDE requires the DDEML.DLL file."
-msgstr "DDEk DDEML.DLL fitxategia behar du."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_ERROR___ERRCODE_RES_MASK.string.text
-msgid "DDE Error."
-msgstr "DDE errorea."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_INVALID_LINK___ERRCODE_RES_MASK.string.text
-msgid "Invalid DDE link format."
-msgstr "DDE esteka-formatua ez da baliozkoa."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_LINK_ALREADY_EST___ERRCODE_RES_MASK.string.text
-msgid "Paste link already performed."
-msgstr "Esteka dagoeneko itsatsita."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_LINK_INV_TOPIC___ERRCODE_RES_MASK.string.text
-msgid "Link mode cannot be set due to invalid link topic."
-msgstr "Esteka modua ezin da ezarri, esteka-gaia baliogabea baita."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_MULT_RESPONSES___ERRCODE_RES_MASK.string.text
-msgid "Too many applications responded to DDE connect initiation."
-msgstr "Aplikazio gehiegik erantzun dute DDE konexioa ezartzeko."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_NOTPROCESSED___ERRCODE_RES_MASK.string.text
-msgid "External application cannot execute DDE operation."
-msgstr "Kanpoko aplikazioak ezin du DDE eragiketa exekutatu."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_NO_CHANNEL___ERRCODE_RES_MASK.string.text
-msgid "DDE method invoked with no channel open."
-msgstr "DDE metodoa kanal irekirik gabe deitu da."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_NO_DATA___ERRCODE_RES_MASK.string.text
-msgid "DDE operation without data."
-msgstr "DDE eragiketa daturik gabe."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_NO_RESPONSE___ERRCODE_RES_MASK.string.text
-msgid "No application responded to DDE connect initiation."
-msgstr "Aplikazio batek ere ez du erantzun DDE konexioa ezartzeko."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_OUTOFCHANNELS___ERRCODE_RES_MASK.string.text
-msgid "No DDE channels available."
-msgstr "Ez dago DDE kanalik erabilgarri."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_PARTNER_QUIT___ERRCODE_RES_MASK.string.text
-msgid "External application has been terminated."
-msgstr "Kanpoko aplikazioa amaitu egin dute."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_QUEUE_OVERFLOW___ERRCODE_RES_MASK.string.text
-msgid "DDE message has been lost."
-msgstr "DDE mezua galdu egin da."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_TIMEOUT___ERRCODE_RES_MASK.string.text
-msgid "Timeout while waiting for DDE response."
-msgstr "Denbora-muga gainditu da DDEren erantzunaren zain."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_USER_INTERRUPT___ERRCODE_RES_MASK.string.text
-msgid "User pressed ESCAPE during DDE operation."
-msgstr "Erabiltzaileak IHES sakatu du DDE eragiketan zehar."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_WAITINGACK___ERRCODE_RES_MASK.string.text
-msgid "Awaiting response to DDE connection."
-msgstr "DDE konexioaren erantzunaren zain."
-
-#: sb.src#RID_BASIC_START.SbERR_DDE_WRONG_DATA_FORMAT___ERRCODE_RES_MASK.string.text
-msgid "Data are in wrong format."
-msgstr "Datuak okerreko formatuan daude."
-
-#: sb.src#RID_BASIC_START.SbERR_DIFFERENT_DRIVE___ERRCODE_RES_MASK.string.text
-msgid "Renaming on different drives impossible."
-msgstr "Ezin da izena aldatu unitate batetik bestera."
-
-#: sb.src#RID_BASIC_START.SbERR_DISK_FULL___ERRCODE_RES_MASK.string.text
-msgid "Disk or hard drive full."
-msgstr "Disketea edo disko gogorra beteta."
-
-#: sb.src#RID_BASIC_START.SbERR_DLLPROC_NOT_FOUND___ERRCODE_RES_MASK.string.text
-msgid "Specified DLL function not found."
-msgstr "Adierazitako DLL funtzioa ez da aurkitu."
-
-#: sb.src#RID_BASIC_START.SbERR_DUPLICATE_DEF___ERRCODE_RES_MASK.string.text
-msgid "Duplicate definition."
-msgstr "Definizioa bikoiztuta dago."
-
-#: sb.src#RID_BASIC_START.SbERR_EXPECTED___ERRCODE_RES_MASK.string.text
-msgid "Expected: $(ARG1)."
-msgstr "Espero dena: $(ARG1)."
-
-#: sb.src#RID_BASIC_START.SbERR_FILE_ALREADY_OPEN___ERRCODE_RES_MASK.string.text
-msgid "File already open."
-msgstr "Fitxategia jadanik irekita dago."
-
-#: sb.src#RID_BASIC_START.SbERR_FILE_EXISTS___ERRCODE_RES_MASK.string.text
-msgid "File already exists."
-msgstr "Fitxategia badago lehendik ere."
-
-#: sb.src#RID_BASIC_START.SbERR_FILE_NOT_FOUND___ERRCODE_RES_MASK.string.text
-msgid "File not found."
-msgstr "Fitxategia ez da aurkitu."
-
-#: sb.src#RID_BASIC_START.SbERR_GETPROP_FAILED___ERRCODE_RES_MASK.string.text
-msgid "Unable to determine property."
-msgstr "Propietatea ezin da zehaztu."
-
-#: sb.src#RID_BASIC_START.SbERR_INTERNAL_ERROR___ERRCODE_RES_MASK.string.text
-msgid "Internal error $(ARG1)."
-msgstr "Barneko errorea $(ARG1)."
-
-#: sb.src#RID_BASIC_START.SbERR_INVALID_OBJECT___ERRCODE_RES_MASK.string.text
-msgid "Invalid object reference."
-msgstr "Baliogabeko objektu-erreferentzia."
-
-#: sb.src#RID_BASIC_START.SbERR_INVALID_USAGE_OBJECT___ERRCODE_RES_MASK.string.text
-msgid "Invalid use of an object."
-msgstr "Objektu baten okerreko erabilera."
-
-#: sb.src#RID_BASIC_START.SbERR_IO_ERROR___ERRCODE_RES_MASK.string.text
-msgid "Device I/O error."
-msgstr "Gailuaren S/Iko errorea."
-
-#: sb.src#RID_BASIC_START.SbERR_LABEL_DEFINED___ERRCODE_RES_MASK.string.text
-msgid "Label $(ARG1) already defined."
-msgstr "$(ARG1) etiketa definituta dago."
-
-#: sb.src#RID_BASIC_START.SbERR_LABEL_EXPECTED___ERRCODE_RES_MASK.string.text
-msgid "Label expected."
-msgstr "Etiketa espero zen."
-
-#: sb.src#RID_BASIC_START.SbERR_LVALUE_EXPECTED___ERRCODE_RES_MASK.string.text
-msgid "Value cannot be applied."
-msgstr "Balioa ezin da aplikatu."
-
-#: sb.src#RID_BASIC_START.SbERR_MATH_OVERFLOW___ERRCODE_RES_MASK.string.text
-msgid "Overflow."
-msgstr "Gainezkatzea."
-
-#: sb.src#RID_BASIC_START.SbERR_METHOD_FAILED___ERRCODE_RES_MASK.string.text
-msgid "Error executing a method."
-msgstr "Errorea metodo bat exekutatzean."
-
-#: sb.src#RID_BASIC_START.SbERR_METHOD_NOT_FOUND___ERRCODE_RES_MASK.string.text
-msgid "Object does not have this method."
-msgstr "Objektuak ez du metodo hori."
-
-#: sb.src#RID_BASIC_START.SbERR_MUST_HAVE_DIMS___ERRCODE_RES_MASK.string.text
-msgid "Array must be dimensioned."
-msgstr "Taulari neurriak eman behar zaizkio."
-
-#: sb.src#RID_BASIC_START.SbERR_NAMED_NOT_FOUND___ERRCODE_RES_MASK.string.text
-msgid "Named argument not found."
-msgstr "Argumentu izendatua ez da aurkitu."
-
-#: sb.src#RID_BASIC_START.SbERR_NEEDS_OBJECT___ERRCODE_RES_MASK.string.text
-msgid "Object required."
-msgstr "Objektua behar da."
-
-#: sb.src#RID_BASIC_START.SbERR_NOT_A_COLL___ERRCODE_RES_MASK.string.text
-msgid "Object is not a list."
-msgstr "Objektua ez da zerrenda."
-
-#: sb.src#RID_BASIC_START.SbERR_NOT_IMPLEMENTED___ERRCODE_RES_MASK.string.text
-msgid "Not implemented."
-msgstr "Ez dago inplementatuta."
-
-#: sb.src#RID_BASIC_START.SbERR_NOT_IN_MAIN___ERRCODE_RES_MASK.string.text
-msgid "$(ARG1) not allowed outside a procedure."
-msgstr "$(ARG1) ez dago baimenduta prozeduratik kanpo."
-
-#: sb.src#RID_BASIC_START.SbERR_NOT_IN_SUBR___ERRCODE_RES_MASK.string.text
-msgid "$(ARG1) not allowed within a procedure."
-msgstr "$(ARG1) ez dago baimenduta prozeduraren barnean."
-
-#: sb.src#RID_BASIC_START.SbERR_NOT_OPTIONAL___ERRCODE_RES_MASK.string.text
-msgid "Argument is not optional."
-msgstr "Argumentua ez da aukerakoa."
-
-#: sb.src#RID_BASIC_START.SbERR_NOT_READY___ERRCODE_RES_MASK.string.text
-msgid "Disk not ready."
-msgstr "Diskoa ez dago prest."
-
-#: sb.src#RID_BASIC_START.SbERR_NO_ACTIVE_OBJECT___ERRCODE_RES_MASK.string.text
-msgid "Object is not available."
-msgstr "Objektua ez dago erabilgarri."
-
-#: sb.src#RID_BASIC_START.SbERR_NO_DEVICE___ERRCODE_RES_MASK.string.text
-msgid "Device not available."
-msgstr "Gailua ez dago erabilgarri."
-
-#: sb.src#RID_BASIC_START.SbERR_NO_GOSUB___ERRCODE_RES_MASK.string.text
-msgid "Return without Gosub."
-msgstr "Itzuli Gosub gabe."
-
-#: sb.src#RID_BASIC_START.SbERR_NO_IF___ERRCODE_RES_MASK.string.text
-msgid "Else/Endif without If."
-msgstr "Else/Endif: If gabe."
-
-#: sb.src#RID_BASIC_START.SbERR_NO_MEMORY___ERRCODE_RES_MASK.string.text
-msgid "Not enough memory."
-msgstr "Ez dago nahikoa memoria."
-
-#: sb.src#RID_BASIC_START.SbERR_NO_METHOD___ERRCODE_RES_MASK.string.text
-msgid "Property or method not found: $(ARG1)."
-msgstr "Ez da propietate edo metodoa aurkitu: $(ARG1)."
-
-#: sb.src#RID_BASIC_START.SbERR_NO_NAMED_ARGS___ERRCODE_RES_MASK.string.text
-msgid "Named arguments are not supported by given object."
-msgstr "Aipatutako objektuak ez ditu argumentu izendatuak onartzen."
-
-#: sb.src#RID_BASIC_START.SbERR_NO_OBJECT___ERRCODE_RES_MASK.string.text
-msgid "Object variable not set."
-msgstr "Objektu-aldagaia ezarri gabe."
-
-#: sb.src#RID_BASIC_START.SbERR_NO_OLE___ERRCODE_RES_MASK.string.text
-msgid "OLE Automation is not supported by this object."
-msgstr "Objektu honek ez du OLE automatizazioa onartzen."
-
-#: sb.src#RID_BASIC_START.SbERR_NO_STRINGS_ARRAYS___ERRCODE_RES_MASK.string.text
-msgid "Strings or arrays not permitted."
-msgstr "Kate edo array-rik ez da onartzen."
-
-#: sb.src#RID_BASIC_START.SbERR_OLE_ERROR___ERRCODE_RES_MASK.string.text
-msgid "OLE Automation Error."
-msgstr "OLE automatizazio-errorea."
-
-#: sb.src#RID_BASIC_START.SbERR_OUT_OF_RANGE___ERRCODE_RES_MASK.string.text
-msgid "Index out of defined range."
-msgstr "Indizea definitutako barrutitik kanpo dago."
-
-#: sb.src#RID_BASIC_START.SbERR_PATH_NOT_FOUND___ERRCODE_RES_MASK.string.text
-msgid "Path not found."
-msgstr "Bide-izena ez da aurkitu."
-
-#: sb.src#RID_BASIC_START.SbERR_PROC_DEFINED___ERRCODE_RES_MASK.string.text
-msgid "Sub procedure or function procedure $(ARG1) already defined."
-msgstr "$(ARG1) azpiprozedura edo funtzio-prozedura definituta dago."
-
-#: sb.src#RID_BASIC_START.SbERR_PROC_UNDEFINED___ERRCODE_RES_MASK.string.text
-msgid "Sub-procedure or function procedure not defined."
-msgstr "Azpiprozedura edo funtzio-prozedura ez dago zehaztuta."
-
-#: sb.src#RID_BASIC_START.SbERR_PROG_TOO_LARGE___ERRCODE_RES_MASK.string.text
-msgid "Program too large."
-msgstr "Programa handiegia da."
-
-#: sb.src#RID_BASIC_START.SbERR_PROPERTY_NOT_FOUND___ERRCODE_RES_MASK.string.text
-msgid "Object does not have this property."
-msgstr "Objektuak ez du propietate hori."
-
-#: sb.src#RID_BASIC_START.SbERR_PROP_READONLY___ERRCODE_RES_MASK.string.text
-msgid "This property is read-only."
-msgstr "Propietate hau soilik irakurtzekoa da."
-
-#: sb.src#RID_BASIC_START.SbERR_PROP_WRITEONLY___ERRCODE_RES_MASK.string.text
-msgid "This property is write only."
-msgstr "Propietate hau soilik idaztekoa da."
-
-#: sb.src#RID_BASIC_START.SbERR_READ_PAST_EOF___ERRCODE_RES_MASK.string.text
-msgid "Reading exceeds EOF."
-msgstr "Irakurketak fitxategi-amaiera gainditu du."
-
-#: sb.src#RID_BASIC_START.SbERR_REDO_FROM_START___ERRCODE_RES_MASK.string.text
-msgid "Incorrect entry; please retry."
-msgstr "Sarrera oker; saiatu berriro."
-
-#: sb.src#RID_BASIC_START.SbERR_SETPROP_FAILED___ERRCODE_RES_MASK.string.text
-msgid "Unable to set property."
-msgstr "Propietatea ezin da ezarri."
-
-#: sb.src#RID_BASIC_START.SbERR_STACK_OVERFLOW___ERRCODE_RES_MASK.string.text
-msgid "Not enough stack memory."
-msgstr "Ez dago nahikoa pila-memoria."
-
-#: sb.src#RID_BASIC_START.SbERR_SYMBOL_EXPECTED___ERRCODE_RES_MASK.string.text
-msgid "Symbol expected."
-msgstr "Ikurra espero zen."
-
-#: sb.src#RID_BASIC_START.SbERR_SYNTAX___ERRCODE_RES_MASK.string.text
-msgid "Syntax error."
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
+
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_SYNTAX & ERRCODE_RES_MASK.String.Text
+msgid  "Syntax error."
 msgstr "Sintaxi-errorea."
 
-#: sb.src#RID_BASIC_START.SbERR_TOO_MANY_FILES___ERRCODE_RES_MASK.string.text
-msgid "Too many files."
-msgstr "Fitxategi gehiegi."
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_GOSUB & ERRCODE_RES_MASK.String.Text
+msgid  "Return without Gosub."
+msgstr "Itzuli Gosub gabe."
 
-#: sb.src#RID_BASIC_START.SbERR_UNDEF_ARRAY___ERRCODE_RES_MASK.string.text
-msgid "Array or procedure $(ARG1) not found."
-msgstr "$(ARG1) matrizea edo prozedura ez da aurkitu."
+#: source/classes/sb.src#RID_BASIC_START.SbERR_REDO_FROM_START & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect entry; please retry."
+msgstr "Sarrera oker; saiatu berriro."
 
-#: sb.src#RID_BASIC_START.SbERR_UNDEF_LABEL___ERRCODE_RES_MASK.string.text
-msgid "Label $(ARG1) undefined."
-msgstr "$(ARG1) etiketa ez dago definituta."
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_ARGUMENT & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid procedure call."
+msgstr "Baliogabeko prozedura-deia."
 
-#: sb.src#RID_BASIC_START.SbERR_UNDEF_PROC___ERRCODE_RES_MASK.string.text
-msgid "Procedure $(ARG1) not found."
-msgstr "$(ARG1) prozedura ez da aurkitu."
+#: source/classes/sb.src#RID_BASIC_START.SbERR_MATH_OVERFLOW & ERRCODE_RES_MASK.String.Text
+msgid  "Overflow."
+msgstr "Gainezkatzea."
 
-#: sb.src#RID_BASIC_START.SbERR_UNDEF_TYPE___ERRCODE_RES_MASK.string.text
-msgid "Unknown data type $(ARG1)."
-msgstr "Datu mota ezezaguna $(ARG1)."
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_MEMORY & ERRCODE_RES_MASK.String.Text
+msgid  "Not enough memory."
+msgstr "Ez dago nahikoa memoria."
 
-#: sb.src#RID_BASIC_START.SbERR_UNDEF_VAR___ERRCODE_RES_MASK.string.text
-msgid "Variable $(ARG1) not found."
-msgstr "$(ARG1) aldagaia ez da aurkitu."
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ALREADY_DIM & ERRCODE_RES_MASK.String.Text
+msgid  "Array already dimensioned."
+msgstr "Taulak baditu neurriak lehendik."
 
-#: sb.src#RID_BASIC_START.SbERR_UNEXPECTED___ERRCODE_RES_MASK.string.text
-msgid "Unexpected symbol: $(ARG1)."
-msgstr "Ustekabeko ikurra: $(ARG1)."
+#: source/classes/sb.src#RID_BASIC_START.SbERR_OUT_OF_RANGE & ERRCODE_RES_MASK.String.Text
+msgid  "Index out of defined range."
+msgstr "Indizea definitutako barrutitik kanpo dago."
 
-#: sb.src#RID_BASIC_START.SbERR_USER_ABORT___ERRCODE_RES_MASK.string.text
-msgid "Process interrupted by user."
-msgstr "Prozesua erabiltzaileak eten du."
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DUPLICATE_DEF & ERRCODE_RES_MASK.String.Text
+msgid  "Duplicate definition."
+msgstr "Definizioa bikoiztuta dago."
 
-#: sb.src#RID_BASIC_START.SbERR_VAR_DEFINED___ERRCODE_RES_MASK.string.text
-msgid "Variable $(ARG1) already defined."
-msgstr "$(ARG1) aldagaia definituta dago."
-
-#: sb.src#RID_BASIC_START.SbERR_VAR_EXPECTED___ERRCODE_RES_MASK.string.text
-msgid "Variable expected."
-msgstr "Aldagaia espero zen."
-
-#: sb.src#RID_BASIC_START.SbERR_VAR_UNDEFINED___ERRCODE_RES_MASK.string.text
-msgid "Variable not defined."
-msgstr "Aldagaia definitu gabe."
-
-#: sb.src#RID_BASIC_START.SbERR_WRONG_ARGS___ERRCODE_RES_MASK.string.text
-msgctxt "sb.src#RID_BASIC_START.SbERR_WRONG_ARGS___ERRCODE_RES_MASK.string.text"
-msgid "Invalid number of arguments."
-msgstr "Argumentuen kopuru baliogabea."
-
-#: sb.src#RID_BASIC_START.SbERR_WRONG_DIMS___ERRCODE_RES_MASK.string.text
-msgid "Dimension specifications do not match."
-msgstr "Neurri-zehaztapenak ez datoz bat."
-
-#: sb.src#RID_BASIC_START.SbERR_ZERODIV___ERRCODE_RES_MASK.string.text
-msgid "Division by zero."
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ZERODIV & ERRCODE_RES_MASK.String.Text
+msgid  "Division by zero."
 msgstr "Zatitzailea zero."
 
-#: basic.src#IDD_FIND_DIALOG.RID_CANCEL.cancelbutton.text
-msgctxt "basic.src#IDD_FIND_DIALOG.RID_CANCEL.cancelbutton.text"
-msgid "~Cancel"
-msgstr "~Utzi"
-
-#: basic.src#IDD_PRINT_DIALOG.RID_CANCEL.cancelbutton.text
-msgctxt "basic.src#IDD_PRINT_DIALOG.RID_CANCEL.cancelbutton.text"
-msgid "Cancel"
-msgstr "Utzi"
-
-#: basic.src#IDD_REPLACE_DIALOG.RID_CANCEL.cancelbutton.text
-msgctxt "basic.src#IDD_REPLACE_DIALOG.RID_CANCEL.cancelbutton.text"
-msgid "~Cancel"
-msgstr "~Utzi"
-
-#: basic.src#RID_TP_CRASH.CB_ALLOWCONTACT.checkbox.text
-msgid "Allow Contact"
-msgstr "Onartu kontaktua"
-
-#: basic.src#RID_TP_CRASH.CB_USEPROXY.checkbox.text
-msgid "Use Proxy"
-msgstr "Erabili proxy-a"
-
-#: basic.src#RID_TP_PROFILE.CB_AUTORELOAD.checkbox.text
-msgid "AutoReload"
-msgstr "Birkargatze automatikoa"
-
-#: basic.src#RID_TP_PROFILE.CB_AUTOSAVE.checkbox.text
-msgid "Save before execute"
-msgstr "Gorde exekutatu aurretik"
-
-#: basic.src#RID_TP_PROFILE.CB_STOPONSYNTAXERRORS.checkbox.text
-msgid "Stop on Syntax Errors"
-msgstr "Gelditu sintaxi-erroreetan"
-
-#: basic.src#RID_TP_PROFILE.HID_CHECK.checkbox.text
-msgid "Default HID directory"
-msgstr "HID direktorio lehenetsia"
-
-#: basic.src#IDD_EDIT_VAR.RID_ED_NEW_STRING.edit.text
-msgid "Edit"
-msgstr "Editatu"
-
-#: basic.src#IDS_CANTLOAD.errorbox.text
-msgid "Library cannot be loaded!"
-msgstr "Liburutegia ezin da kargatu!"
-
-#: basic.src#IDS_CANTLOAD.errorbox.title
-msgctxt "basic.src#IDS_CANTLOAD.errorbox.title"
-msgid "Testtool Error"
-msgstr "Testtool-en errorea"
-
-#: basic.src#IDS_CANTSAVE.errorbox.text
-msgid "Library cannot be saved!"
-msgstr "Liburutegia ezin da gorde!"
-
-#: basic.src#IDS_CANTSAVE.errorbox.title
-msgctxt "basic.src#IDS_CANTSAVE.errorbox.title"
-msgid "Testtool Error"
-msgstr "Testtool-en errorea"
-
-#: basic.src#IDS_INVALID_VALUE.errorbox.text
-msgid "The value is invalid and cannot be set."
-msgstr "Balioa ez da baliozkoa eta ezin da ezarri."
-
-#: basic.src#IDS_INVALID_VALUE.errorbox.title
-msgctxt "basic.src#IDS_INVALID_VALUE.errorbox.title"
-msgid "Testtool Error"
-msgstr "Testtool-en errorea"
-
-#: basic.src#IDS_NOMAINPGM.errorbox.text
-msgid "This window does not contain a main program!"
-msgstr "Leiho honek ez du programa nagusirik!"
-
-#: basic.src#IDS_NOMAINPGM.errorbox.title
-msgctxt "basic.src#IDS_NOMAINPGM.errorbox.title"
-msgid "Testtool Error"
-msgstr "Testtool-en errorea"
-
-#: basic.src#IDS_PATTERNNOTFOUND.errorbox.text
-msgid "Search key not found!"
-msgstr "Bilatutako gakoa ez da aurkitu!"
-
-#: basic.src#IDS_PATTERNNOTFOUND.errorbox.title
-msgctxt "basic.src#IDS_PATTERNNOTFOUND.errorbox.title"
-msgid "Testtool Error"
-msgstr "Testtool-en errorea"
-
-#: basic.src#IDS_READERROR.errorbox.text
-msgid "File cannot be read!"
-msgstr "Fitxategia ezin da irakurri!"
-
-#: basic.src#IDS_READERROR.errorbox.title
-msgctxt "basic.src#IDS_READERROR.errorbox.title"
-msgid "Testtool Error"
-msgstr "Testtool-en errorea"
-
-#: basic.src#IDS_WRITEERROR.errorbox.text
-msgid "File cannot be saved!"
-msgstr "Fitxategia ezin da gorde!"
-
-#: basic.src#IDS_WRITEERROR.errorbox.title
-msgctxt "basic.src#IDS_WRITEERROR.errorbox.title"
-msgid "Testtool Error"
-msgstr "Testtool-en errorea"
-
-#: basic.src#RID_TP_CRASH.FL_CRASHREPORT.fixedline.text
-msgctxt "basic.src#RID_TP_CRASH.FL_CRASHREPORT.fixedline.text"
-msgid "Crashreport"
-msgstr "Kraskadura-txostena"
-
-#: basic.src#RID_TP_GENERIC.RID_FL_AREA.fixedline.text
-msgid "Area"
-msgstr "Area"
-
-#: basic.src#RID_TP_GENERIC.RID_FL_VALUE.fixedline.text
-msgid "Setting"
-msgstr "Ezarpena"
-
-#: basic.src#RID_TP_MISC.FL_COMMUNICATION.fixedline.text
-msgid "Communication"
-msgstr "Komunikazioa"
-
-#: basic.src#RID_TP_MISC.FL_OTHER.fixedline.text
-msgid "Other settings"
-msgstr "Beste ezarpen batzuk"
-
-#: basic.src#RID_TP_PROFILE.FL_DIRECTORIES.fixedline.text
-msgid "Profile settings"
-msgstr "Profilaren ezarpenak"
-
-#: basic.src#RID_TP_PROFILE.RID_FL_PROFILE.fixedline.text
-msgctxt "basic.src#RID_TP_PROFILE.RID_FL_PROFILE.fixedline.text"
-msgid "Profile"
-msgstr "Profila"
-
-#: basic.src#IDD_DISPLAY_HID.RID_FT_CONTROLS.fixedtext.text
-msgid "Controls"
-msgstr "Kontrolak"
-
-#: basic.src#IDD_DISPLAY_HID.RID_FT_SLOTS.fixedtext.text
-msgid "Slots"
-msgstr "Erretenak"
-
-#: basic.src#IDD_EDIT_VAR.RID_FT_CONTENT.fixedtext.text
-msgid "Content"
-msgstr "Edukia"
-
-#: basic.src#IDD_EDIT_VAR.RID_FT_CONTENT_VALUE.fixedtext.text
-msgid "Previous contents"
-msgstr "Eduki zaharra"
-
-#: basic.src#IDD_EDIT_VAR.RID_FT_NAME.fixedtext.text
-msgctxt "basic.src#IDD_EDIT_VAR.RID_FT_NAME.fixedtext.text"
-msgid "Name"
-msgstr "Izena"
-
-#: basic.src#IDD_EDIT_VAR.RID_FT_NAME_VALUE.fixedtext.text
-msgid "Name of variable"
-msgstr "Aldagaiaren izena"
-
-#: basic.src#IDD_EDIT_VAR.RID_FT_NEW_CONTENT.fixedtext.text
-msgid "New content"
-msgstr "Eduki berria"
-
-#: basic.src#IDD_FIND_DIALOG.RID_FIXEDTEXT1.fixedtext.text
-msgid "~Text"
-msgstr "~Testua"
-
-#: basic.src#IDD_PRINT_DIALOG.RID_TEXT.fixedtext.text
-msgid "Print "
-msgstr "Inprimatu "
-
-#: basic.src#IDD_REPLACE_DIALOG.RID_FIXEDTEXT1.fixedtext.text
-msgid "~Search for"
-msgstr "~Bilatu:"
-
-#: basic.src#IDD_REPLACE_DIALOG.RID_FIXEDTEXT2.fixedtext.text
-msgid "~Replace by"
-msgstr "~Iradokizuna"
-
-#: basic.src#IDD_TT_ABOUT_DIALOG.1.fixedtext.text
-msgctxt "basic.src#IDD_TT_ABOUT_DIALOG.1.fixedtext.text"
-msgid "VCLTestTool"
-msgstr "VCLTestTool"
-
-#: basic.src#IDD_TT_ABOUT_DIALOG.4.fixedtext.text
-msgid "©1995-2010 Oracle"
-msgstr "©1995-2010 Oracle"
-
-#: basic.src#LOAD_CONF.FILENAME.fixedtext.text
-msgid "File.win"
-msgstr "Fitxategia.win"
-
-#: basic.src#LOAD_CONF.WORK.fixedtext.text
-msgid "Slot IDs"
-msgstr "Erreten IDak"
-
-#: basic.src#RID_TP_CRASH.FT_CRHOST.fixedtext.text
-msgctxt "basic.src#RID_TP_CRASH.FT_CRHOST.fixedtext.text"
-msgid "Host"
-msgstr "Ostalaria"
-
-#: basic.src#RID_TP_CRASH.FT_CRPORT.fixedtext.text
-msgid "Port"
-msgstr "Ataka"
-
-#: basic.src#RID_TP_CRASH.FT_EMAIL.fixedtext.text
-msgid "EMail"
-msgstr "Helb. el."
-
-#: basic.src#RID_TP_FONT.FT_FONTNAME.fixedtext.text
-msgid "Type"
-msgstr "Mota"
-
-#: basic.src#RID_TP_FONT.FT_FONTSIZE.fixedtext.text
-msgid "Size"
-msgstr "Tamaina"
-
-#: basic.src#RID_TP_FONT.FT_FONTSTYLE.fixedtext.text
-msgid "Typeface"
-msgstr "Estiloa"
-
-#: basic.src#RID_TP_MISC.FT_HOST.fixedtext.text
-msgctxt "basic.src#RID_TP_MISC.FT_HOST.fixedtext.text"
-msgid "Host"
-msgstr "Ostalaria"
-
-#: basic.src#RID_TP_MISC.FT_LRU.fixedtext.text
-msgid "Max LRU Files"
-msgstr "Max LRU fitxategiak"
-
-#: basic.src#RID_TP_MISC.FT_PROGDIR.fixedtext.text
-msgid "OOo Program Dir"
-msgstr "OOo programaren dir."
-
-#: basic.src#RID_TP_MISC.FT_TTPORT.fixedtext.text
-msgid "Testtool Port"
-msgstr "Testtool ataka"
-
-#: basic.src#RID_TP_MISC.FT_UNOPORT.fixedtext.text
-msgid "Remote UNO Port"
-msgstr "Urruneko UNO ataka"
-
-#: basic.src#RID_TP_MISC.TIMEOUT_TEXT.fixedtext.text
-msgid "Server Timeout"
-msgstr "Zerbitzariaren denbora-muga"
-
-#: basic.src#RID_TP_PROFILE.BASIS_TEXT.fixedtext.text
-msgid "Base directory"
-msgstr "Oinarrizko direktorioa"
-
-#: basic.src#RID_TP_PROFILE.LOG_TEXT.fixedtext.text
-msgid "Log base directory"
-msgstr "Erregistratu oinarrizko direktorioa"
-
-#: basic.src#IDD_DISPLAY_HID.floatingwindow.text
-msgid "Display HId"
-msgstr "Bistaratu HId"
-
-#: basic.src#LOAD_CONF.floatingwindow.text
-msgid "Reading Configuration Files"
-msgstr "Konfigurazio-fitxategiak irakurtzen"
-
-#: basic.src#IDS_NOPRINTERERROR.infobox.text
-msgid "The print function is not available!"
-msgstr "Inprimatze-funtzioa ez dago erabilgarri!"
-
-#: basic.src#IDS_NOT_YET_IMPLEMENTED.infobox.text
-msgid "Not yet implemented"
-msgstr "Ez dago inplementatuta oraindik"
-
-#: basic.src#RID_APPMENUBAR.RID_APPEDIT.menuitem.text
-msgid "~Edit"
-msgstr "~Editatu"
-
-#: basic.src#RID_APPMENUBAR.RID_APPFILE.menuitem.text
-msgid "~File"
-msgstr "~Fitxategia"
-
-#: basic.src#RID_APPMENUBAR.RID_APPHELP.menuitem.text
-msgid "~Help"
-msgstr "~Laguntza"
-
-#: basic.src#RID_APPMENUBAR.RID_APPRUN.menuitem.text
-msgid "~Program"
-msgstr "~Programa"
-
-#: basic.src#RID_APPMENUBAR.RID_APPWINDOW.menuitem.text
-msgid "~Window"
-msgstr "~Leihoa"
-
-#: basic.src#RID_EDIT.RID_EDITCOPY.menuitem.text
-msgid "~Copy"
-msgstr "~Kopiatu"
-
-#: basic.src#RID_EDIT.RID_EDITCUT.menuitem.text
-msgid "~Cut"
-msgstr "~Ebaki"
-
-#: basic.src#RID_EDIT.RID_EDITDEL.menuitem.text
-msgid "~Delete"
-msgstr "E~zabatu"
-
-#: basic.src#RID_EDIT.RID_EDITPASTE.menuitem.text
-msgid "~Paste"
-msgstr "~Itsatsi"
-
-#: basic.src#RID_EDIT.RID_EDITREDO.menuitem.text
-msgid "~Redo"
-msgstr "~Berregin"
-
-#: basic.src#RID_EDIT.RID_EDITREPEAT.menuitem.text
-msgid "Repeat S~earch"
-msgstr "Errepikatu b~ilaketa"
-
-#: basic.src#RID_EDIT.RID_EDITREPLACE.menuitem.text
-msgid "~Replace..."
-msgstr "~Ordeztu..."
-
-#: basic.src#RID_EDIT.RID_EDITSEARCH.menuitem.text
-msgid "~Find..."
-msgstr "~Bilatu..."
-
-#: basic.src#RID_EDIT.RID_EDITUNDO.menuitem.text
-msgid "~Undo"
-msgstr "~Desegin"
-
-#: basic.src#RID_FILE.RID_FILECLOSE.menuitem.text
-msgid "~Close"
-msgstr "It~xi"
-
-#: basic.src#RID_FILE.RID_FILELOADLIB.menuitem.text
-msgid "~Load Library..."
-msgstr "~Kargatu liburutegia..."
-
-#: basic.src#RID_FILE.RID_FILENEW.menuitem.text
-msgid "~New"
-msgstr "~Berria"
-
-#: basic.src#RID_FILE.RID_FILEOPEN.menuitem.text
-msgid "~Open..."
-msgstr "~Ireki..."
-
-#: basic.src#RID_FILE.RID_FILEPRINT.menuitem.text
-msgid "~Print"
-msgstr "~Inprimatu"
-
-#: basic.src#RID_FILE.RID_FILESAVE.menuitem.text
-msgid "~Save"
-msgstr "~Gorde"
-
-#: basic.src#RID_FILE.RID_FILESAVEAS.menuitem.text
-msgid "Save~ As..."
-msgstr "Gorde~ honela... "
-
-#: basic.src#RID_FILE.RID_FILESAVELIB.menuitem.text
-msgid "Save Li~brary..."
-msgstr "Gorde li~burutegia..."
-
-#: basic.src#RID_FILE.RID_FILESETUP.menuitem.text
-msgid "P~rinter Setting..."
-msgstr "I~nprimagailuaren ezarpenak..."
-
-#: basic.src#RID_FILE.RID_QUIT.menuitem.text
-msgid "~Exit"
-msgstr "~Irten"
-
-#: basic.src#RID_HELP.menuitem.text
-msgid "~About..."
-msgstr "~Honi buruz..."
-
-#: basic.src#RID_RUN.RID_RUNBREAK.menuitem.text
-msgid "~Break"
-msgstr "~Jauzia"
-
-#: basic.src#RID_RUN.RID_RUNCOMPILE.menuitem.text
-msgid "~Compile"
-msgstr "~Konpilatu"
-
-#: basic.src#RID_RUN.RID_RUNDISAS.menuitem.text
-msgid "~Disassemble"
-msgstr "~Desmihiztatu"
-
-#: basic.src#RID_RUN.RID_RUNNEXTERR.menuitem.text
-msgid "~Next Error"
-msgstr "~Hurrengo errorea"
-
-#: basic.src#RID_RUN.RID_RUNPREVERR.menuitem.text
-msgid "~Previous Error"
-msgstr "~Aurreko errorea"
-
-#: basic.src#RID_RUN.RID_RUNSTART.menuitem.text
-msgid "~Start"
-msgstr "~Hasi"
-
-#: basic.src#RID_RUN.RID_RUNSTEPINTO.menuitem.text
-msgid "~Single Step"
-msgstr "~Urrats bakarra"
-
-#: basic.src#RID_RUN.RID_RUNSTEPOVER.menuitem.text
-msgid "Si~ngle Step over Procedure"
-msgstr "U~rratsez urratseko prozedura"
-
-#: basic.src#RID_RUN.RID_RUNSTOP.menuitem.text
-msgid "~Stop"
-msgstr "~Gelditu"
-
-#: basic.src#RID_RUN.RID_TOGLEBRKPNT.menuitem.text
-msgid "Set / Delete Break Point"
-msgstr "Ezarri / Ezabatu eten-puntua"
-
-#: basic.src#RID_TT_EXTRAS.RID_OPTIONS.menuitem.text
-msgid "~Settings"
-msgstr "~Ezarpenak"
-
-#: basic.src#IDD_FIND_DIALOG.modaldialog.text
-msgid "Testtool: Find Text"
-msgstr "Testtool: bilatu testua"
-
-#: basic.src#IDD_REPLACE_DIALOG.modaldialog.text
-msgid "Testtool: Replace Text"
-msgstr "Testtool: ordeztu testua"
-
-#: basic.src#IDD_TT_ABOUT_DIALOG.modaldialog.text
-msgid "About VCLTestTool"
-msgstr "VCLTestTool-i buruz"
-
-#: basic.src#RID_CALLDLG.modaldialog.text
-msgid "Dynamic Link No. "
-msgstr "Esteka dinamikoaren zk. "
-
-#: basic.src#IDD_EDIT_VAR.modelessdialog.text
-msgid "Edit variable"
-msgstr "Editatu aldagaia"
-
-#: basic.src#IDD_PRINT_DIALOG.modelessdialog.text
-msgid "Testtool: Print File"
-msgstr "Testtool: inprimatu fitxategia"
-
-#: basic.src#IDD_DISPLAY_HID.RID_OK_CLOSE.okbutton.text
-msgid "Close"
-msgstr "Itxi"
-
-#: basic.src#IDD_FIND_DIALOG.RID_OK.okbutton.text
-msgid "~Find"
-msgstr "~Bilatu"
-
-#: basic.src#IDD_REPLACE_DIALOG.RID_OK.okbutton.text
-msgid "~Replace"
-msgstr "Or~deztu"
-
-#: basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_CRA.pageitem.text
-msgctxt "basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_CRA.pageitem.text"
-msgid "Crashreport"
-msgstr "Kraskadura-txostena"
-
-#: basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_FON.pageitem.text
-msgid "Font"
-msgstr "Letra-tipoa"
-
-#: basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_GEN.pageitem.text
-msgid "Generic"
-msgstr "Generikoa"
-
-#: basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_MIS.pageitem.text
-msgid "Misc"
-msgstr "Hainbat"
-
-#: basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_PRO.pageitem.text
-msgctxt "basic.src#IDD_OPTIONS_DLG.RES_TC_OPTIONS.RID_TP_PRO.pageitem.text"
-msgid "Profile"
-msgstr "Profila"
-
-#: basic.src#IDD_DISPLAY_HID.RID_PB_BENENNEN.pushbutton.text
-msgctxt "basic.src#IDD_DISPLAY_HID.RID_PB_BENENNEN.pushbutton.text"
-msgid "Name"
-msgstr "Izena"
-
-#: basic.src#IDD_DISPLAY_HID.RID_PB_KOPIEREN.pushbutton.text
-msgid "Copy"
-msgstr "Kopiatu"
-
-#: basic.src#IDD_DISPLAY_HID.RID_PB_SELECTALL.pushbutton.text
-msgid "Select all"
-msgstr "Hautatu dena"
-
-#: basic.src#RID_TP_GENERIC.RID_PB_DEL_VALUE.pushbutton.text
-msgctxt "basic.src#RID_TP_GENERIC.RID_PB_DEL_VALUE.pushbutton.text"
-msgid "Delete"
-msgstr "Ezabatu"
-
-#: basic.src#RID_TP_GENERIC.RID_PB_NEW_AREA.pushbutton.text
-msgctxt "basic.src#RID_TP_GENERIC.RID_PB_NEW_AREA.pushbutton.text"
-msgid "New"
-msgstr "Berria"
-
-#: basic.src#RID_TP_GENERIC.RID_PB_NEW_VALUE.pushbutton.text
-msgctxt "basic.src#RID_TP_GENERIC.RID_PB_NEW_VALUE.pushbutton.text"
-msgid "New"
-msgstr "Berria"
-
-#: basic.src#RID_TP_GENERIC.RID_PB_SELECT_FILE.pushbutton.text
-msgid "Path ..."
-msgstr "Bide-izena ..."
-
-#: basic.src#RID_TP_GENERIC.RID_PD_DEL_AREA.pushbutton.text
-msgctxt "basic.src#RID_TP_GENERIC.RID_PD_DEL_AREA.pushbutton.text"
-msgid "Delete"
-msgstr "Ezabatu"
-
-#: basic.src#RID_TP_MISC.PB_PROGDIR.pushbutton.text
-msgctxt "basic.src#RID_TP_MISC.PB_PROGDIR.pushbutton.text"
-msgid "..."
-msgstr "..."
-
-#: basic.src#RID_TP_PROFILE.BASIS_SET.pushbutton.text
-msgctxt "basic.src#RID_TP_PROFILE.BASIS_SET.pushbutton.text"
-msgid "..."
-msgstr "..."
-
-#: basic.src#RID_TP_PROFILE.HID_SET.pushbutton.text
-msgctxt "basic.src#RID_TP_PROFILE.HID_SET.pushbutton.text"
-msgid "..."
-msgstr "..."
-
-#: basic.src#RID_TP_PROFILE.LOG_SET.pushbutton.text
-msgctxt "basic.src#RID_TP_PROFILE.LOG_SET.pushbutton.text"
-msgid "..."
-msgstr "..."
-
-#: basic.src#RID_TP_PROFILE.RID_PB_NEW_PROFILE.pushbutton.text
-msgctxt "basic.src#RID_TP_PROFILE.RID_PB_NEW_PROFILE.pushbutton.text"
-msgid "New"
-msgstr "Berria"
-
-#: basic.src#RID_TP_PROFILE.RID_PD_DEL_PROFILE.pushbutton.text
-msgctxt "basic.src#RID_TP_PROFILE.RID_PD_DEL_PROFILE.pushbutton.text"
-msgid "Delete"
-msgstr "Ezabatu"
-
-#: basic.src#IDS_ASKDIRTYRELOAD.querybox.text
-msgid ""
-"File has been changed on data medium\n"
-"and in the Editor. Reload?"
-msgstr ""
-"Fitxategia aldatu egin da datuen euskarrian\n"
-"eta editorean. Birkargatu?"
-
-#: basic.src#IDS_ASKDIRTYRELOAD.querybox.title
-msgctxt "basic.src#IDS_ASKDIRTYRELOAD.querybox.title"
-msgid "Testtool"
-msgstr "Testtool"
-
-#: basic.src#IDS_ASKRELOAD.querybox.text
-msgid "File has been changed on data medium. Reload?"
-msgstr "Fitxategia aldatu egin da datu-euskarrian. Birkargatu?"
-
-#: basic.src#IDS_ASKRELOAD.querybox.title
-msgctxt "basic.src#IDS_ASKRELOAD.querybox.title"
-msgid "Testtool"
-msgstr "Testtool"
-
-#: basic.src#IDS_ASKSAVEERROR.querybox.text
-msgid "Error saving files! Run anyway?"
-msgstr "Errorea fitxategiak gordetzean! Hala ere jarraitu?"
-
-#: basic.src#IDS_ASKSAVEERROR.querybox.title
-msgctxt "basic.src#IDS_ASKSAVEERROR.querybox.title"
-msgid "Testtool"
-msgstr "Testtool"
-
-#: basic.src#IDS_ASK_DIRTY_AND_DISKCHANGE_SAVE.querybox.text
-msgid ""
-"File has been changed on data medium\n"
-"and in the Editor. Save?"
-msgstr ""
-"Fitxategia aldatu egin da datuen euskarrian\n"
-"eta editorean. Gorde?"
-
-#: basic.src#IDS_ASK_DIRTY_AND_DISKCHANGE_SAVE.querybox.title
-msgctxt "basic.src#IDS_ASK_DIRTY_AND_DISKCHANGE_SAVE.querybox.title"
-msgid "Testtool"
-msgstr "Testtool"
-
-#: basic.src#IDS_ASK_DIRTY_SAVE.querybox.text
-msgid "File has been changed. Save?"
-msgstr "Fitxategian aldaketak egin dira. Gorde nahi duzu?"
-
-#: basic.src#IDS_ASK_DIRTY_SAVE.querybox.title
-msgctxt "basic.src#IDS_ASK_DIRTY_SAVE.querybox.title"
-msgid "Testtool"
-msgstr "Testtool"
-
-#: basic.src#IDS_ASK_DISKCHANGE_SAVE.querybox.text
-msgid ""
-"File has been changed on data medium.\n"
-"Overwrite?"
-msgstr ""
-"Fitxategia aldatu egin da datuen euskarrian.\n"
-"Gainidatzi?"
-
-#: basic.src#IDS_ASK_DISKCHANGE_SAVE.querybox.title
-msgctxt "basic.src#IDS_ASK_DISKCHANGE_SAVE.querybox.title"
-msgid "Testtool"
-msgstr "Testtool"
-
-#: basic.src#IDS_LOSS_OF_INFORMATION.querybox.text
-msgid "Saving in an external format causes information loss."
-msgstr "Kanpoko formatuan gordetzean informazioa galtzen da."
-
-#: basic.src#IDS_LOSS_OF_INFORMATION.querybox.title
-msgctxt "basic.src#IDS_LOSS_OF_INFORMATION.querybox.title"
-msgid "Testtool"
-msgstr "Testtool"
-
-#: basic.src#IDS_RUNNING.querybox.text
-msgid "BASIC is still running! Exit anyway?"
-msgstr "BASIC oraindik exekutatzen ari da! Hala ere irten?"
-
-#: basic.src#IDS_RUNNING.querybox.title
-msgctxt "basic.src#IDS_RUNNING.querybox.title"
-msgid "Testtool"
-msgstr "Testtool"
-
-#: basic.src#IDD_EDIT_VAR.RID_RB_NEW_BOOL_F.radiobutton.text
-msgid "False"
-msgstr "Faltsua"
-
-#: basic.src#IDD_EDIT_VAR.RID_RB_NEW_BOOL_T.radiobutton.text
-msgid "True"
-msgstr "Egiazkoa"
-
-#: basic.src#IDS_APPMODE_BREAK.string.text
-msgid "Break"
-msgstr "Jauzia"
-
-#: basic.src#IDS_APPMODE_RUN.string.text
-msgid "Run"
-msgstr "Exekutatu"
-
-#: basic.src#IDS_APPNAME.string.text
-msgctxt "basic.src#IDS_APPNAME.string.text"
-msgid "Testtool"
-msgstr "Testtool"
-
-#: basic.src#IDS_APPNAME2.string.text
-msgctxt "basic.src#IDS_APPNAME2.string.text"
-msgid "VCLTestTool"
-msgstr "VCLTestTool"
-
-#: basic.src#IDS_BASFILTER.string.text
-msgid "Source files (*.BAS)"
-msgstr "Iturburu-fitxategiak (*.BAS)"
-
-#: basic.src#IDS_CANCEL.string.text
-msgctxt "basic.src#IDS_CANCEL.string.text"
-msgid "Cancel"
-msgstr "Utzi"
-
-#: basic.src#IDS_CONTINUE.string.text
-msgid "Continue"
-msgstr "Jarraitu"
-
-#: basic.src#IDS_DISASWIN.string.text
-msgid "Disassembly"
-msgstr "Desmihiztatu"
-
-#: basic.src#IDS_EDIT_VAR.string.text
-msgid "Edit ($Arg1)"
-msgstr "Editatu ($Arg1)"
-
-#: basic.src#IDS_ERROR1.string.text
-msgid "Error "
-msgstr "Errorea "
-
-#: basic.src#IDS_ERROR2.string.text
-msgid " in line "
-msgstr " lerro honetan: "
-
-#: basic.src#IDS_INCFILTER.string.text
-msgid "Include files (*.INC)"
-msgstr "Include fitxategiak (*.INC)"
-
-#: basic.src#IDS_LIBFILTER.string.text
-msgid "Libraries (*.SB)"
-msgstr "Liburutegiak (*.SB)"
-
-#: basic.src#IDS_LOADDLG.string.text
-msgid "Testtool: Load File"
-msgstr "Testtool: kargatu fitxategia"
-
-#: basic.src#IDS_NONAME.string.text
-msgid "Unnamed"
-msgstr "Izengabea"
-
-#: basic.src#IDS_NO_LONGNAME.string.text
-msgid "No entries in Hid.Lst"
-msgstr "Ez dago sarrerarik Hid.Lst-en"
-
-#: basic.src#IDS_OBJECT.string.text
-msgid "Object"
-msgstr "Objektua"
-
-#: basic.src#IDS_PAGE.string.text
-msgid "Page "
-msgstr "Orrialdea: "
-
-#: basic.src#IDS_PRINTMSG.string.text
-msgid "Printout of "
-msgstr "Inprimatu hau: "
-
-#: basic.src#IDS_RESFILTER.string.text
-msgid "Result files (*.RES)"
-msgstr "Result fitxategiak (*.RES)"
-
-#: basic.src#IDS_SAVEDLG.string.text
-msgid "Testtool: Save File"
-msgstr "Testtool: gorde fitxategia"
-
-#: basic.src#IDS_TXTFILTER.string.text
-msgid "Results as text file (*.TXT)"
-msgstr "Emaitzak testu-fitxategi gisa (*.TXT)"
-
-#: basic.src#IDS_WARNING1.string.text
-msgid "Warning "
-msgstr "Abisua "
-
-#: basic.src#IDS_WARNING_PREFIX.string.text
-msgctxt "basic.src#IDS_WARNING_PREFIX.string.text"
-msgid "Warning: "
-msgstr "Abisua: "
-
-#: basic.src#RID_TT_EXTRAS_NAME.string.text
-msgid "E~xtra"
-msgstr "E~stra"
-
-#: basic.src#IDD_OPTIONS_DLG.tabdialog.text
-msgid "Settings"
-msgstr "Ezarpenak"
-
-#: basmsg.src#S_ERROR_OUTSIDE_TESTCASE.string.text
-msgid "Error outside of test case"
-msgstr "Errorea TestCase batetik kanpo"
-
-#: basmsg.src#S_PROG_START.string.text
-msgid "Program start: ($Arg1); ($Arg2)"
-msgstr "Programa-hasiera: ($Arg1); ($Arg2)"
-
-#: basmsg.src#S_WARNING_PREFIX.string.text
-msgctxt "basmsg.src#S_WARNING_PREFIX.string.text"
-msgid "Warning: "
-msgstr "Abisua: "
-
-#: svtmsg.src#S_ALLOWED_ONLY_IN_DOCKING_MODE.string.text
-msgid "Method only allowed in docking mode at ($Arg1)"
-msgstr "Metodoa atrakatze moduan bakarrik onartzen da ($Arg1)(e)n"
-
-#: svtmsg.src#S_ALLOWED_ONLY_IN_FLOATING_MODE.string.text
-msgid "Method only allowed in floating mode at ($Arg1)"
-msgstr "Metodoa modu mugikorrean bakarrik onartzen da ($Arg1)(e)n"
-
-#: svtmsg.src#S_APP_SHUTDOWN.string.text
-msgid "Application has been shut down"
-msgstr "Aplikazioa itxi egin da"
-
-#: svtmsg.src#S_ATTEMPT_TO_WRITE_READONLY.string.text
-msgid "Attempt to write on read-only ($Arg1)"
-msgstr "Irakurtzeko soilik moduan idazteko saiakera ($Arg1)"
-
-#: svtmsg.src#S_BUTTONID_REQUIRED.string.text
-msgid "A button ID needs to be given at ($Arg1)"
-msgstr "Botoi IDa sartu behar da ($Arg1)(e)n"
-
-#: svtmsg.src#S_BUTTON_DISABLED_ON_TOOLBOX.string.text
-msgid "The button is disabled in ToolBox at ($Arg1)"
-msgstr "ToolBox-eko botoia desgaituta dago ($Arg1)(e)n"
-
-#: svtmsg.src#S_BUTTON_HIDDEN_ON_TOOLBOX.string.text
-msgid "The button is hidden in ToolBox at ($Arg1)"
-msgstr "ToolBox-eko botoia ezkutatuta dago ($Arg1)(e)n"
-
-#: svtmsg.src#S_BUTTON_ID_NOT_THERE.string.text
-msgid "There is no button with ID ($Arg1) at ($Arg2)"
-msgstr "Ez dago ($Arg1) IDa duen botoirik ($Arg2)(e)n"
-
-#: svtmsg.src#S_CANNOT_CREATE_DIRECTORY.string.text
-msgid "Cannot create Directory: \"($Arg1)\""
-msgstr "Direktorioa ezin da sortu: \"($Arg1)\""
-
-#: svtmsg.src#S_CANNOT_FIND_FLOATING_WIN.string.text
-msgid "Cannot find FloatingWindow for floating DockingWindow at ($Arg1)."
-msgstr ""
-"DockingWindow mugikorraren FloatingWindow-a ezin da aurkitu ($Arg1)(e)n."
-
-#: svtmsg.src#S_CANNOT_MAKE_BUTTON_VISIBLE_IN_TOOLBOX.string.text
-msgid "Button cannot be made visible in ToolBox at ($Arg1)"
-msgstr "ToolBox-eko botoia ezin da ikusgai bihurtu ($Arg1)(e)n"
-
-#: svtmsg.src#S_CONTROLTYPE_NOT_SUPPORTED.string.text
-msgid "ControlType ($Arg1) is not supported"
-msgstr "ControlType ($Arg1) ez da onartzen"
-
-#: svtmsg.src#S_DEPRECATED.string.text
-msgid "Deprecated! Please change the script."
-msgstr "Ez da onartu! Aldatu idazkera."
-
-#: svtmsg.src#S_DIRECTORY_NOT_EMPTY.string.text
-msgid "Directory has to be Empty to unpack to. Directory: \"($Arg1)\""
-msgstr "Direktorioak hutsik egon behar du despaketatzeko. Direktorioa \"($Arg1)\""
-
-#: svtmsg.src#S_ENTRY_NOT_FOUND.string.text
-msgid "\"($Arg2)\" entry at ($Arg1) not found"
-msgstr "\"($Arg2)\" sarrera ez da aurkitu ($Arg1)(e)n"
-
-#: svtmsg.src#S_ERROR_IN_SET_TEXT.string.text
-msgid "Set text did not function"
-msgstr "SetText-ek ez du funtzionatu"
-
-#: svtmsg.src#S_ERROR_SAVING_IMAGE.string.text
-msgid "Error #($Arg1) when saving the image"
-msgstr "#($Arg1) errorea irudia gordetzean"
-
-#: svtmsg.src#S_GPF_ABORT.string.text
-msgid "Program aborted with GPF"
-msgstr "GPFrekin abortatutako programa"
-
-#: svtmsg.src#S_HELPID_ON_TOOLBOX_NOT_FOUND.string.text
-msgid "HelpID in ToolBox not found at ($Arg1)"
-msgstr "ToolBox-eko HelpIDa ez da aurkitu ($Arg1)(e)n"
-
-#: svtmsg.src#S_INTERNAL_ERROR.string.text
-msgid "Internal error at ($Arg1)"
-msgstr "Barneko errorea ($Arg1)(e)n"
-
-#: svtmsg.src#S_INVALID_PARAMETERS.string.text
-msgid "Invalid Parameters"
-msgstr "Parametro baliogabeak"
-
-#: svtmsg.src#S_INVALID_POSITION.string.text
-msgid "Invalid position at ($Arg1)"
-msgstr "Posizio baliogabea ($Arg1)(e)n"
-
-#: svtmsg.src#S_ITEMS_INVISIBLE.string.text
-msgid "The items are hidden at ($Arg1)"
-msgstr "Elementuak ezkutatuta daude ($Arg1)(e)n"
-
-#: svtmsg.src#S_MENU_NOT_CLOSING.string.text
-msgid "Menu not closing."
-msgstr "Menua itxi gabe."
-
-#: svtmsg.src#S_METHOD_FAILED.string.text
-msgid "($Arg1) of entry \"($Arg2)\" failed"
-msgstr "\"($Arg2)\" sarrerako ($Arg1)(e)k huts egin du"
-
-#: svtmsg.src#S_NO_ACTIVE_WINDOW.string.text
-msgid "No active window found (GetNextCloseWindow)"
-msgstr "Ez da leiho aktiborik aurkitu (GetNextCloseWindow)"
-
-#: svtmsg.src#S_NO_CANCEL_BUTTON.string.text
-msgid "There is no Cancel button at ($Arg1)"
-msgstr "Ez dago 'Utzi' botoirik ($Arg1)(e)n"
-
-#: svtmsg.src#S_NO_DEFAULT_BUTTON.string.text
-msgid "There is no Default button defined at ($Arg1)"
-msgstr "Ez dago 'Lehenetsi' botoirik ($Arg1)(e)n"
-
-#: svtmsg.src#S_NO_DIALOG_IN_GETACTIVE.string.text
-msgid "GetActive does not return a dialog! Inform development"
-msgstr ""
-"GetActive-k ez du elkarrizketa-koadrorik erakusten! Eman horren berri "
-"garapen-zerbitzuari."
-
-#: svtmsg.src#S_NO_HELP_BUTTON.string.text
-msgid "There is no Help button at ($Arg1)"
-msgstr "Ez dago 'Laguntza' botoirik ($Arg1)(e)n"
-
-#: svtmsg.src#S_NO_LIST_BOX_BUTTON.string.text
-msgid "ListBoxButton does not exist in ($Arg1)"
-msgstr "ListBoxButton ez dago ($Arg1)(e)n"
-
-#: svtmsg.src#S_NO_LIST_BOX_STRING.string.text
-msgid "String does not exist in ($Arg1)"
-msgstr "Katea ez da ($Arg1)(e)n existitzen"
-
-#: svtmsg.src#S_NO_MENU.string.text
-msgid "There is no menu at ($Arg1)"
-msgstr "Ez dago menurik ($Arg1)(e)n"
-
-#: svtmsg.src#S_NO_MORE_FILES.string.text
-msgid "No more files"
-msgstr "Ez dago fitxategi gehiago"
-
-#: svtmsg.src#S_NO_NO_BUTTON.string.text
-msgid "There is no No button at ($Arg1)"
-msgstr "Ez dago 'Ez' botoirik ($Arg1)(e)n"
-
-#: svtmsg.src#S_NO_OK_BUTTON.string.text
-msgid "There is no OK button at ($Arg1)"
-msgstr "Ez dago 'Ados' botoirik ($Arg1)(e)n"
-
-#: svtmsg.src#S_NO_POPUP.string.text
-msgid "Pop-up menu not open"
-msgstr "Laster-menua ez dago irekita"
-
-#: svtmsg.src#S_NO_RETRY_BUTTON.string.text
-msgid "There is no Repeat button at ($Arg1)"
-msgstr "Ez dago 'Errepikatu' botoirik ($Arg1)(e)n"
-
-#: svtmsg.src#S_NO_SAX_PARSER.string.text
-msgid "No SAX Parser when using ($Arg1). Initialize with 'SAXReadFile' first."
-msgstr ""
-"SAX analizatzailerik ez ($Arg1) erabiltzean. Hasieratu aurrena "
-"'SAXReadFile'-rekin."
-
-#: svtmsg.src#S_NO_SCROLLBAR.string.text
-msgid "No scroll bar at ($Arg1)"
-msgstr "Ez dago korritze-barrarik ($Arg1)(e)n"
-
-#: svtmsg.src#S_NO_SELECTED_ENTRY.string.text
-msgid "No entry is selected in ($Arg2) at ($Arg1)"
-msgstr "Ez dago sarrerarik hautatuta ($Arg2)(e)ko ($Arg1)(e)n"
-
-#: svtmsg.src#S_NO_SELECTED_ENTRY_DEPRECATED.string.text
-msgid "No entry is selected in TreeListBox at ($Arg1)"
-msgstr "Ez dago sarrerarik hautatuta TreeListBox-eko ($Arg1)(e)n"
-
-#: svtmsg.src#S_NO_SELECT_FALSE.string.text
-msgid "Select FALSE not allowed. Use MultiSelect at ($Arg1)"
-msgstr "Hautatu FALTSUA ez dago baimenduta. Erabili ($Arg1)(e)ko MultiSelect "
-
-#: svtmsg.src#S_NO_STATUSBAR.string.text
-msgid "No status bar at ($Arg1)"
-msgstr "Egoera-berrik ez ($Arg1)(e)n"
-
-#: svtmsg.src#S_NO_SUBMENU.string.text
-msgid "Submenu does not exist"
-msgstr "Azpimenua ez dago"
-
-#: svtmsg.src#S_NO_YES_BUTTON.string.text
-msgid "There is no Yes button at ($Arg1)"
-msgstr "Ez dago 'Bai' botoirik ($Arg1)(e)n"
-
-#: svtmsg.src#S_NUMBER_TOO_BIG.string.text
-msgid "Entry number ($Arg2) is too large in ($Arg1). Max. allowed is ($Arg3)"
-msgstr ""
-"($Arg2) sarrera-zenbakia handiegia da ($Arg1)(e)n. Baimendutako geh. ($Arg3) "
-"da"
-
-#: svtmsg.src#S_NUMBER_TOO_SMALL.string.text
-msgid ""
-"The entry number ($Arg2) is too small in ($Arg1). Min allowed is ($Arg3)"
-msgstr ""
-"($Arg2) sarrera-zenbakia txikiegia da ($Arg1)(e)n. Baimendutako gutx. "
-"($Arg3) da"
-
-#: svtmsg.src#S_POINTER_OUTSIDE_APPWIN.string.text
-msgid "Pointer not inside application window at '($Arg1)'"
-msgstr "Erakuslea aplikazio-leihotik kanpo dago '($Arg1)'(e)n"
-
-#: svtmsg.src#S_RESETAPPLICATION_FAILED_COMPLEX.string.text
-msgid "ResetApplication failed: too complex"
-msgstr "ResetApplication-ek huts egin du: konplexuegia"
-
-#: svtmsg.src#S_RESETAPPLICATION_FAILED_UNKNOWN.string.text
-msgid "ResetApplication failed: unknown window type"
-msgstr "ResetApplication-ek huts egin du: leiho mota ezezaguna"
-
-#: svtmsg.src#S_SELECTION_BY_ATTRIBUTE_ONLY_DIRECTORIES.string.text
-msgid "Selection by attributes only possible for directories"
-msgstr "Atributuen araberako hautapena direktorioekin bakarrik egin daiteke"
-
-#: svtmsg.src#S_SELECT_DESELECT_VIA_STRING_NOT_IMPLEMENTED.string.text
-msgid "Select/Deselect with string not implemented at ($Arg1)"
-msgstr ""
-"‘Hautatu/desautatu katearekin’ aukera ez dago inplementatuta ($Arg1)(e)n"
-
-#: svtmsg.src#S_SID_EXECUTE_FAILED.string.text
-msgid "Slot ID could not be executed"
-msgstr "Erreten IDa ezin izan da exekutatu"
-
-#: svtmsg.src#S_SID_EXECUTE_FAILED_NO_DISPATCHER.string.text
-msgid "Slot ID cannot be executed. No ActiveDispatcher"
-msgstr "Erreten IDa ezin da exekutatu. Ez dago ActiveDispatcher-ik"
-
-#: svtmsg.src#S_SIZE_BELOW_MINIMUM.string.text
-msgid "The Size is below the minimum. x=($Arg1) ,y=($Arg2)"
-msgstr "Tamaina minimoa baino txikiagoa da. x=($Arg1) ,y=($Arg2)"
-
-#: svtmsg.src#S_SIZE_NOT_CHANGEABLE.string.text
-msgid "Size cannot be altered at ($Arg1)"
-msgstr "Tamaina ezin da aldatu ($Arg1)(e)n"
-
-#: svtmsg.src#S_SLOT_IN_EXECUTE.string.text
-msgid "Another Slot is being executed already."
-msgstr "Lehendik ere beste erreten bat exekutatzen ari da."
-
-#: svtmsg.src#S_SPLITWIN_NOT_FOUND.string.text
-msgid "SplitWindow not found at ($Arg1)"
-msgstr "SplitWindow ez da aurkitu ($Arg1)(e)n"
-
-#: svtmsg.src#S_TABPAGE_NOT_FOUND.string.text
-msgid "Tab page not found at ($Arg1)"
-msgstr "Fitxa ez da aurkitu ($Arg1)(e)n"
-
-#: svtmsg.src#S_TEAROFF_FAILED.string.text
-msgid "TearOff failed in ToolBox at ($Arg1)"
-msgstr "ToolBox-eko TearOff-ek huts egin du ($Arg1)(e)n"
-
-#: svtmsg.src#S_TRISTATE_NOT_ALLOWED.string.text
-msgid "Tristate cannot be set at ($Arg1)"
-msgstr "Hiru egoerakoa ezin da ezarri ($Arg1)(e)n"
-
-#: svtmsg.src#S_UNKNOWN_COMMAND.string.text
-msgid "Unknown command '($Arg1)'"
-msgstr "Komando ezezaguna '($Arg1)'"
-
-#: svtmsg.src#S_UNKNOWN_METHOD.string.text
-msgid "Unknown method '($Arg1)' on ($Arg2)"
-msgstr "'($Arg1)' metodo ezezaguna ($Arg2)(e)n"
-
-#: svtmsg.src#S_UNKNOWN_TYPE.string.text
-msgid "Unknown object type ($Arg1) from UId or method '($Arg2)' not supported"
-msgstr ""
-"UId-aren objektu mota ezezaguna ($Arg1) edo '($Arg2)' metodoa ez da onartzen"
-
-#: svtmsg.src#S_UNO_PROPERTY_NITIALIZE_FAILED.string.text
-msgid "UnoSlot: Properties could not be initialized"
-msgstr "UnoSlot: propietateak ezin izan dira hasieratu"
-
-#: svtmsg.src#S_UNO_URL_EXECUTE_FAILED_DISABLED.string.text
-msgid "UNO URL \"($Arg1)\" could not be run: Disabled"
-msgstr "UNO URL \"($Arg1)\" ezin izan da exekutatu: desgaituta"
-
-#: svtmsg.src#S_UNO_URL_EXECUTE_FAILED_NO_DISPATCHER.string.text
-msgid "UNO URL \"($Arg1)\" could not be executed: No dispatcher was found."
-msgstr "UNO URL \"($Arg1)\" ezin izan da exekutatu: ez da dispatcher-ik aurkitu."
-
-#: svtmsg.src#S_UNO_URL_EXECUTE_FAILED_NO_FRAME.string.text
-msgid "UNO URL \"($Arg1)\" could not be executed: No ActiveFrame on desktop."
-msgstr ""
-"UNO URL \"($Arg1)\" ezin izan da exekutatu: ActiveFrame ez dago mahaigainean."
-
-#: svtmsg.src#S_UNPACKING_STORAGE_FAILED.string.text
-msgid "Unpacking storage \"($Arg1)\" to \"($Arg2)\" failed"
-msgstr "Biltegia despaketatzeak huts egin du: \"($Arg1)\" -> \"($Arg2)\""
-
-#: svtmsg.src#S_WINDOW_DISAPPEARED.string.text
-msgid "Window disappeared in the meantime at ($Arg1)"
-msgstr "Bitarte horretan leihoa desagertu egin da ($Arg1)(e)n"
-
-#: svtmsg.src#S_WIN_DISABLED.string.text
-msgid "($Arg1) could not be accessed. Disabled"
-msgstr "($Arg1) ezin izan da atzitu. Desgaituta"
-
-#: svtmsg.src#S_WIN_INVISIBLE.string.text
-msgid "($Arg1) is not visible"
-msgstr "($Arg1) ez dago ikusgai"
-
-#: svtmsg.src#S_WIN_NOT_FOUND.string.text
-msgid "($Arg1) could not be found"
-msgstr "($Arg1) ezin izan da aurkitu"
-
-#: testtool.src#S_INVALID_KEYCODE.string.text
-msgid "Is an invalid KeyCode!"
-msgstr "KeyCode hori ez da baliozkoa!"
-
-#: testtool.src#S_MANDATORY_FILE.string.text
-msgid ""
-"\n"
-"could not be found.\n"
-"This file is indispensable."
-msgstr ""
-"\n"
-"ezin izan da aurkitu.\n"
-"Fitxategi hau beharrezkoa da."
-
-#: testtool.src#S_READING_BASIC_MODULE.string.text
-msgid "Reading BASIC module"
-msgstr "BASIC modulua irakurtzen"
-
-#: testtool.src#S_READING_CONTROLS.string.text
-msgid "Reading Controls"
-msgstr "Kontrolak irakurtzen"
-
-#: testtool.src#S_READING_LONGNAMES.string.text
-msgid "Reading long-names"
-msgstr "Izen luzeak irakurtzen"
-
-#: testtool.src#S_READING_SLOT_IDS.string.text
-msgid "Reading Slot IDs"
-msgstr "Erreten IDak irakurtzen"
-
-#: testtool.src#S_STARTING_APPLICATION.string.text
-msgid "Starting application"
-msgstr "Aplikazioa abiarazten"
-
-#: ttmsg.src#S_APPLICATION_RESTARTED.string.text
-msgid "Application has been restarted."
-msgstr "Aplikazioa berrabiarazi egin da."
-
-#: ttmsg.src#S_APPLICATION_START_FAILED.string.text
-msgid "Application \"($Arg1)\" cannot be started. "
-msgstr "\"($Arg1)\" aplikazioa ezin da abiarazi. "
-
-#: ttmsg.src#S_CANNOT_OPEN_FILE.string.text
-msgid "File cannot be opened: ($Arg1)"
-msgstr "Ezin da fitxategia ireki: ($Arg1)"
-
-#: ttmsg.src#S_DOUBLE_NAME.string.text
-msgid "Name double: ($Arg1)"
-msgstr "Izen bikoitza: ($Arg1)"
-
-#: ttmsg.src#S_ERRORS_DETECTED.string.text
-msgid "** ($Arg1) errors occurred"
-msgstr "** ($Arg1) errore gertatu dira"
-
-#: ttmsg.src#S_FIRST_SHORTNAME_REQ_ASTRX.string.text
-msgid "First short-name must start with * . Ignoring."
-msgstr "Lehen izen laburrak * ikurrarekin hasi behar du. Ez ikusi egin."
-
-#: ttmsg.src#S_INCLUDE_FILE_WARNINGS_DETECTED.string.text
-msgid "** ($Arg1) warnings occurred during initialization"
-msgstr "** ($Arg1) abisu agertu dira hasieratzean"
-
-#: ttmsg.src#S_INVALID_LINE.string.text
-msgid "Line \"($Arg1)\" is invalid."
-msgstr "\"($Arg1)\" lerroa ez da baliozkoa."
-
-#: ttmsg.src#S_LONGNAME_UNKNOWN.string.text
-msgid "Long-name unknown: ($Arg1)"
-msgstr "Izen luzea ezezaguna: ($Arg1)"
-
-#: ttmsg.src#S_NAME_NOT_THERE.string.text
-msgid "Name doesn't exist: #($Arg1)"
-msgstr "Izen hau ez dago: #($Arg1)"
-
-#: ttmsg.src#S_NO_CONNECTION.string.text
-msgid "No connection. Sequence No: ($Arg1)"
-msgstr "Konexiorik ez. Sekuentzia-zk.: ($Arg1)"
-
-#: ttmsg.src#S_NO_ERRORS_DETECTED.string.text
-msgid "** No errors have occurred"
-msgstr "** Ez da errorerik gertatu"
-
-#: ttmsg.src#S_NO_FILES_FOUND.string.text
-msgid "No ($Arg1) files found"
-msgstr "Ez da ($Arg1) fitxategirik aurkitu"
-
-#: ttmsg.src#S_NO_INCLUDE_FILE_WARNINGS_DETECTED.string.text
-msgid "** No warnings occurred during initialization"
-msgstr "** Ez da abisurik agertu hasieratzean"
-
-#: ttmsg.src#S_NO_WARNINGS_DETECTED.string.text
-msgid "** No warnings have occurred"
-msgstr "** Ez da abisurik agertu"
-
-#: ttmsg.src#S_READING_FILE.string.text
-msgid "Reading the files"
-msgstr "Fitxategiak irakurtzen"
-
-#: ttmsg.src#S_RETURNED_VALUE_ID_MISSMATCH.string.text
-msgid "Return value received but different Id expected"
-msgstr "Itzulera-balioa jaso da, baina beste Id bat espero zen"
-
-#: ttmsg.src#S_RETURNED_VALUE_NO_RECEIVER.string.text
-msgid "Return value received but no receiver defined"
-msgstr "Itzulera-balioa jaso da, baina hartzailea ez dago zehaztuta"
-
-#: ttmsg.src#S_RETURN_SEQUENCE_MISSMATCH.string.text
-msgid "Return Stream has wrong sequence: ($Arg1) instead of ($Arg2)"
-msgstr "Return Stream-ek okerreko sekuentzia du: ($Arg1) ($Arg2)(e)n ordez"
-
-#: ttmsg.src#S_SHORTNAME_UNKNOWN.string.text
-msgid "Short-name unknown during copying: ($Arg1)"
-msgstr "Izen laburra ez da ezagutu kopiatzean: ($Arg1)"
-
-#: ttmsg.src#S_TIMOUT_SENDING.string.text
-msgid "Server Timeout while sending. Sequence No: ($Arg1)"
-msgstr ""
-"Zerbitzariaren denbora-muga gainditu da bidaltzean. Sekuentzia-zk.: ($Arg1)"
-
-#: ttmsg.src#S_TIMOUT_WAITING.string.text
-msgid "Server Timeout while waiting for answer. Sequence No: ($Arg1)"
-msgstr ""
-"Zerbitzariaren denbora-muga gainditu da erantzunaren zain zegoenean. "
-"Sekuentzia-zk.: ($Arg1)"
-
-#: ttmsg.src#S_UNKNOWN_METHOD.string.text
-msgid "Unknown method on object :($Arg1).($Arg2)"
-msgstr "Metodo ezezaguna objektuan :($Arg1).($Arg2)"
-
-#: ttmsg.src#S_UNKNOWN_SLOT_CONTROL.string.text
-msgid "Slot/Control unknown :\"($Arg1)\""
-msgstr "Erretena/Kontrola ezezaguna :\"($Arg1)\""
-
-#: ttmsg.src#S_WARNINGS_DETECTED.string.text
-msgid "** ($Arg1) warnings occurred"
-msgstr "** ($Arg1) abisu agertu dira"
-
-#: format.src#STR_BASICKEY_FORMAT_CURRENCY.string.text
-msgid "@0.00 $;@(0.00 $)"
-msgstr "@0.00 $;@(0.00 $)"
-
-#: format.src#STR_BASICKEY_FORMAT_FALSE.string.text
-msgid "False"
-msgstr "Faltsua"
-
-#: format.src#STR_BASICKEY_FORMAT_NO.string.text
-msgid "No"
-msgstr "Ez"
-
-#: format.src#STR_BASICKEY_FORMAT_OFF.string.text
-msgid "Off"
-msgstr "Desaktibatuta"
-
-#: format.src#STR_BASICKEY_FORMAT_ON.string.text
-msgid "On"
+#: source/classes/sb.src#RID_BASIC_START.SbERR_VAR_UNDEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Variable not defined."
+msgstr "Aldagaia definitu gabe."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_CONVERSION & ERRCODE_RES_MASK.String.Text
+msgid  "Data type mismatch."
+msgstr "Datu motak ez datoz bat."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PARAMETER & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid parameter."
+msgstr "Baliogabeko parametroak."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_USER_ABORT & ERRCODE_RES_MASK.String.Text
+msgid  "Process interrupted by user."
+msgstr "Prozesua erabiltzaileak eten du."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_RESUME & ERRCODE_RES_MASK.String.Text
+msgid  "Resume without error."
+msgstr "Berrekin errorerik gabe."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_STACK_OVERFLOW & ERRCODE_RES_MASK.String.Text
+msgid  "Not enough stack memory."
+msgstr "Ez dago nahikoa pila-memoria."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROC_UNDEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Sub-procedure or function procedure not defined."
+msgstr "Azpiprozedura edo funtzio-prozedura ez dago zehaztuta."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_DLL_LOAD & ERRCODE_RES_MASK.String.Text
+msgid  "Error loading DLL file."
+msgstr "Errorea DLL fitxategia kargatzean."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_DLL_CALL & ERRCODE_RES_MASK.String.Text
+msgid  "Wrong DLL call convention."
+msgstr "DLLi deitzeko konbentzioa oker."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_INTERNAL_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "Internal error $(ARG1)."
+msgstr "Barneko errorea $(ARG1)."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_CHANNEL & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid file name or file number."
+msgstr "Baliogabeko fitxategi-izena edo fitxategi-zenbakia."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_FILE_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "File not found."
+msgstr "Fitxategia ez da aurkitu."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_FILE_MODE & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect file mode."
+msgstr "Okerreko fitxategi modua."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_FILE_ALREADY_OPEN & ERRCODE_RES_MASK.String.Text
+msgid  "File already open."
+msgstr "Fitxategia jadanik irekita dago."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_IO_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "Device I/O error."
+msgstr "Gailuaren S/Iko errorea."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_FILE_EXISTS & ERRCODE_RES_MASK.String.Text
+msgid  "File already exists."
+msgstr "Fitxategia badago lehendik ere."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_RECORD_LENGTH & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect record length."
+msgstr "Okerreko erregistro-luzera."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DISK_FULL & ERRCODE_RES_MASK.String.Text
+msgid  "Disk or hard drive full."
+msgstr "Disketea edo disko gogorra beteta."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_READ_PAST_EOF & ERRCODE_RES_MASK.String.Text
+msgid  "Reading exceeds EOF."
+msgstr "Irakurketak fitxategi-amaiera gainditu du."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_RECORD_NUMBER & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect record number."
+msgstr "Erregistro-zenbakia oker."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_TOO_MANY_FILES & ERRCODE_RES_MASK.String.Text
+msgid  "Too many files."
+msgstr "Fitxategi gehiegi."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_DEVICE & ERRCODE_RES_MASK.String.Text
+msgid  "Device not available."
+msgstr "Gailua ez dago erabilgarri."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ACCESS_DENIED & ERRCODE_RES_MASK.String.Text
+msgid  "Access denied."
+msgstr "Sarbidea ukatuta."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_READY & ERRCODE_RES_MASK.String.Text
+msgid  "Disk not ready."
+msgstr "Diskoa ez dago prest."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_IMPLEMENTED & ERRCODE_RES_MASK.String.Text
+msgid  "Not implemented."
+msgstr "Ez dago inplementatuta."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DIFFERENT_DRIVE & ERRCODE_RES_MASK.String.Text
+msgid  "Renaming on different drives impossible."
+msgstr "Ezin da izena aldatu unitate batetik bestera."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ACCESS_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "Path/File access error."
+msgstr "Errorea bide-izena/fitxategia atzitzean."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PATH_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Path not found."
+msgstr "Bide-izena ez da aurkitu."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Object variable not set."
+msgstr "Objektu-aldagaia ezarri gabe."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PATTERN & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid string pattern."
+msgstr "Kate-eredu baliogabea."
+
+#: source/classes/sb.src#RID_BASIC_START.SBERR_IS_NULL & ERRCODE_RES_MASK.String.Text
+msgid  "Use of zero not permitted."
+msgstr "Zeroa ezin da erabili."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "DDE Error."
+msgstr "DDE errorea."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_WAITINGACK & ERRCODE_RES_MASK.String.Text
+msgid  "Awaiting response to DDE connection."
+msgstr "DDE konexioaren erantzunaren zain."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_OUTOFCHANNELS & ERRCODE_RES_MASK.String.Text
+msgid  "No DDE channels available."
+msgstr "Ez dago DDE kanalik erabilgarri."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NO_RESPONSE & ERRCODE_RES_MASK.String.Text
+msgid  "No application responded to DDE connect initiation."
+msgstr "Aplikazio batek ere ez du erantzun DDE konexioa ezartzeko."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_MULT_RESPONSES & ERRCODE_RES_MASK.String.Text
+msgid  "Too many applications responded to DDE connect initiation."
+msgstr "Aplikazio gehiegik erantzun dute DDE konexioa ezartzeko."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_CHANNEL_LOCKED & ERRCODE_RES_MASK.String.Text
+msgid  "DDE channel locked."
+msgstr "DDE kanala blokeatuta."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NOTPROCESSED & ERRCODE_RES_MASK.String.Text
+msgid  "External application cannot execute DDE operation."
+msgstr "Kanpoko aplikazioak ezin du DDE eragiketa exekutatu."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_TIMEOUT & ERRCODE_RES_MASK.String.Text
+msgid  "Timeout while waiting for DDE response."
+msgstr "Denbora-muga gainditu da DDEren erantzunaren zain."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_USER_INTERRUPT & ERRCODE_RES_MASK.String.Text
+msgid  "User pressed ESCAPE during DDE operation."
+msgstr "Erabiltzaileak IHES sakatu du DDE eragiketan zehar."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_BUSY & ERRCODE_RES_MASK.String.Text
+msgid  "External application busy."
+msgstr "Kanpoko aplikazioa ez dago prest."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NO_DATA & ERRCODE_RES_MASK.String.Text
+msgid  "DDE operation without data."
+msgstr "DDE eragiketa daturik gabe."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_WRONG_DATA_FORMAT & ERRCODE_RES_MASK.String.Text
+msgid  "Data are in wrong format."
+msgstr "Datuak okerreko formatuan daude."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_PARTNER_QUIT & ERRCODE_RES_MASK.String.Text
+msgid  "External application has been terminated."
+msgstr "Kanpoko aplikazioa amaitu egin dute."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_CONV_CLOSED & ERRCODE_RES_MASK.String.Text
+msgid  "DDE connection interrupted or modified."
+msgstr "DDE konexioa etenda edo aldatuta."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_NO_CHANNEL & ERRCODE_RES_MASK.String.Text
+msgid  "DDE method invoked with no channel open."
+msgstr "DDE metodoa kanal irekirik gabe deitu da."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_INVALID_LINK & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid DDE link format."
+msgstr "DDE esteka-formatua ez da baliozkoa."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_QUEUE_OVERFLOW & ERRCODE_RES_MASK.String.Text
+msgid  "DDE message has been lost."
+msgstr "DDE mezua galdu egin da."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_LINK_ALREADY_EST & ERRCODE_RES_MASK.String.Text
+msgid  "Paste link already performed."
+msgstr "Esteka dagoeneko itsatsita."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_LINK_INV_TOPIC & ERRCODE_RES_MASK.String.Text
+msgid  "Link mode cannot be set due to invalid link topic."
+msgstr "Esteka modua ezin da ezarri, esteka-gaia baliogabea baita."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DDE_DLL_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "DDE requires the DDEML.DLL file."
+msgstr "DDEk DDEML.DLL fitxategia behar du."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_CANNOT_LOAD & ERRCODE_RES_MASK.String.Text
+msgid  "Module cannot be loaded; invalid format."
+msgstr "Modulua ezin da kargatu; formatu baliogabea."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_INDEX & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid object index."
+msgstr "Baliogabeko objektu-indizea."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_ACTIVE_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Object is not available."
+msgstr "Objektua ez dago erabilgarri."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PROP_VALUE & ERRCODE_RES_MASK.String.Text
+msgid  "Incorrect property value."
+msgstr "Okerreko propietate-balioa."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROP_READONLY & ERRCODE_RES_MASK.String.Text
+msgid  "This property is read-only."
+msgstr "Propietate hau soilik irakurtzekoa da."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROP_WRITEONLY & ERRCODE_RES_MASK.String.Text
+msgid  "This property is write only."
+msgstr "Propietate hau soilik idaztekoa da."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_INVALID_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid object reference."
+msgstr "Baliogabeko objektu-erreferentzia."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_METHOD & ERRCODE_RES_MASK.String.Text
+msgid  "Property or method not found: $(ARG1)."
+msgstr "Ez da propietate edo metodoa aurkitu: $(ARG1)."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NEEDS_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Object required."
+msgstr "Objektua behar da."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_INVALID_USAGE_OBJECT & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid use of an object."
+msgstr "Objektu baten okerreko erabilera."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_OLE & ERRCODE_RES_MASK.String.Text
+msgid  "OLE Automation is not supported by this object."
+msgstr "Objektu honek ez du OLE automatizazioa onartzen."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_METHOD & ERRCODE_RES_MASK.String.Text
+msgid  "This property or method is not supported by the object."
+msgstr "Objektu honek ez du propietate edo metodo hori onartzen."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_OLE_ERROR & ERRCODE_RES_MASK.String.Text
+msgid  "OLE Automation Error."
+msgstr "OLE automatizazio-errorea."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_ACTION & ERRCODE_RES_MASK.String.Text
+msgid  "This action is not supported by given object."
+msgstr "Aipatutako objektuak ez du ekintza hori onartzen."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_NAMED_ARGS & ERRCODE_RES_MASK.String.Text
+msgid  "Named arguments are not supported by given object."
+msgstr "Aipatutako objektuak ez ditu argumentu izendatuak onartzen."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_LOCALE & ERRCODE_RES_MASK.String.Text
+msgid  "The current locale setting is not supported by the given object."
+msgstr "Aipatutako objektuak ez du uneko ezarpen lokala onartzen."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NAMED_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Named argument not found."
+msgstr "Argumentu izendatua ez da aurkitu."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_OPTIONAL & ERRCODE_RES_MASK.String.Text
+msgid  "Argument is not optional."
+msgstr "Argumentua ez da aukerakoa."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_WRONG_ARGS & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid number of arguments."
+msgstr "Argumentuen kopuru baliogabea."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_A_COLL & ERRCODE_RES_MASK.String.Text
+msgid  "Object is not a list."
+msgstr "Objektua ez da zerrenda."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_ORDINAL & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid ordinal number."
+msgstr "Baliogabeko zenbaki ordinala."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_DLLPROC_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Specified DLL function not found."
+msgstr "Adierazitako DLL funtzioa ez da aurkitu."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_CLIPBD_FORMAT & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid clipboard format."
+msgstr "Baliogabeko arbel-formatua."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROPERTY_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Object does not have this property."
+msgstr "Objektuak ez du propietate hori."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_METHOD_NOT_FOUND & ERRCODE_RES_MASK.String.Text
+msgid  "Object does not have this method."
+msgstr "Objektuak ez du metodo hori."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_ARG_MISSING & ERRCODE_RES_MASK.String.Text
+msgid  "Required argument lacking."
+msgstr "Beharrezko argumentua falta da."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_NUMBER_OF_ARGS & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid number of arguments."
+msgstr "Argumentuen kopuru baliogabea."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_METHOD_FAILED & ERRCODE_RES_MASK.String.Text
+msgid  "Error executing a method."
+msgstr "Errorea metodo bat exekutatzean."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_SETPROP_FAILED & ERRCODE_RES_MASK.String.Text
+msgid  "Unable to set property."
+msgstr "Propietatea ezin da ezarri."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_GETPROP_FAILED & ERRCODE_RES_MASK.String.Text
+msgid  "Unable to determine property."
+msgstr "Propietatea ezin da zehaztu."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNEXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Unexpected symbol: $(ARG1)."
+msgstr "Ustekabeko ikurra: $(ARG1)."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Expected: $(ARG1)."
+msgstr "Espero dena: $(ARG1)."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_SYMBOL_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Symbol expected."
+msgstr "Ikurra espero zen."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_VAR_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Variable expected."
+msgstr "Aldagaia espero zen."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_LABEL_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Label expected."
+msgstr "Etiketa espero zen."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_LVALUE_EXPECTED & ERRCODE_RES_MASK.String.Text
+msgid  "Value cannot be applied."
+msgstr "Balioa ezin da aplikatu."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_VAR_DEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Variable $(ARG1) already defined."
+msgstr "$(ARG1) aldagaia definituta dago."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROC_DEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Sub procedure or function procedure $(ARG1) already defined."
+msgstr "$(ARG1) azpiprozedura edo funtzio-prozedura definituta dago."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_LABEL_DEFINED & ERRCODE_RES_MASK.String.Text
+msgid  "Label $(ARG1) already defined."
+msgstr "$(ARG1) etiketa definituta dago."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_VAR & ERRCODE_RES_MASK.String.Text
+msgid  "Variable $(ARG1) not found."
+msgstr "$(ARG1) aldagaia ez da aurkitu."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_ARRAY & ERRCODE_RES_MASK.String.Text
+msgid  "Array or procedure $(ARG1) not found."
+msgstr "$(ARG1) matrizea edo prozedura ez da aurkitu."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_PROC & ERRCODE_RES_MASK.String.Text
+msgid  "Procedure $(ARG1) not found."
+msgstr "$(ARG1) prozedura ez da aurkitu."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_LABEL & ERRCODE_RES_MASK.String.Text
+msgid  "Label $(ARG1) undefined."
+msgstr "$(ARG1) etiketa ez dago definituta."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_UNDEF_TYPE & ERRCODE_RES_MASK.String.Text
+msgid  "Unknown data type $(ARG1)."
+msgstr "Datu mota ezezaguna $(ARG1)."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_EXIT & ERRCODE_RES_MASK.String.Text
+msgid  "Exit $(ARG1) expected."
+msgstr "Exit $(ARG1) espero zen."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_BLOCK & ERRCODE_RES_MASK.String.Text
+msgid  "Statement block still open: $(ARG1) missing."
+msgstr "Instrukzio-blokea irekita dago: $(ARG1) falta da."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_BRACKETS & ERRCODE_RES_MASK.String.Text
+msgid  "Parentheses do not match."
+msgstr "Parentesiak ez datoz bat."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_DECLARATION & ERRCODE_RES_MASK.String.Text
+msgid  "Symbol $(ARG1) already defined differently."
+msgstr "$(ARG1) ikurra beste era batera definituta dago."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_PARAMETERS & ERRCODE_RES_MASK.String.Text
+msgid  "Parameters do not correspond to procedure."
+msgstr "Parametroak ez datoz bat prozedurarekin."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_CHAR_IN_NUMBER & ERRCODE_RES_MASK.String.Text
+msgid  "Invalid character in number."
+msgstr "Baliogabeko karakterea zenbakian."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_MUST_HAVE_DIMS & ERRCODE_RES_MASK.String.Text
+msgid  "Array must be dimensioned."
+msgstr "Taulari neurriak eman behar zaizkio."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_IF & ERRCODE_RES_MASK.String.Text
+msgid  "Else/Endif without If."
+msgstr "Else/Endif: If gabe."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_IN_SUBR & ERRCODE_RES_MASK.String.Text
+msgid  "$(ARG1) not allowed within a procedure."
+msgstr "$(ARG1) ez dago baimenduta prozeduraren barnean."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NOT_IN_MAIN & ERRCODE_RES_MASK.String.Text
+msgid  "$(ARG1) not allowed outside a procedure."
+msgstr "$(ARG1) ez dago baimenduta prozeduratik kanpo."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_WRONG_DIMS & ERRCODE_RES_MASK.String.Text
+msgid  "Dimension specifications do not match."
+msgstr "Neurri-zehaztapenak ez datoz bat."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_BAD_OPTION & ERRCODE_RES_MASK.String.Text
+msgid  "Unknown option: $(ARG1)."
+msgstr "Aukera ezezaguna: $(ARG1)."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_CONSTANT_REDECLARED & ERRCODE_RES_MASK.String.Text
+msgid  "Constant $(ARG1) redefined."
+msgstr "$(ARG1) konstantea birdefinituta."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_PROG_TOO_LARGE & ERRCODE_RES_MASK.String.Text
+msgid  "Program too large."
+msgstr "Programa handiegia da."
+
+#: source/classes/sb.src#RID_BASIC_START.SbERR_NO_STRINGS_ARRAYS & ERRCODE_RES_MASK.String.Text
+msgid  "Strings or arrays not permitted."
+msgstr "Kate edo array-rik ez da onartzen."
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_EXCEPTION & ERRCODE_RES_MASK.String.Text
+msgid  "An exception occurred $(ARG1)."
+msgstr "Salbuespena gertatu da: $(ARG1)."
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_ARRAY_FIX & ERRCODE_RES_MASK.String.Text
+msgid  "This array is fixed or temporarily locked."
+msgstr "Array hau finkatuta edo aldi baterako blokeatuta dago."
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_STRING_OVERFLOW & ERRCODE_RES_MASK.String.Text
+msgid  "Out of string space."
+msgstr "Katearen espaziotik kanpo."
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_EXPR_TOO_COMPLEX & ERRCODE_RES_MASK.String.Text
+msgid  "Expression Too Complex."
+msgstr "Adierazpena konplexuegia da."
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_OPER_NOT_PERFORM & ERRCODE_RES_MASK.String.Text
+msgid  "Can't perform requested operation."
+msgstr "Ezin da eskatutako eragiketa landu."
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_TOO_MANY_DLL & ERRCODE_RES_MASK.String.Text
+msgid  "Too many DLL application clients."
+msgstr "DLL aplikazio-bezero gehiegi."
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_LOOP_NOT_INIT & ERRCODE_RES_MASK.String.Text
+msgid  "For loop not initialized."
+msgstr "'For' begizta hasieratu gabe."
+
+#: source/classes/sb.src#RID_BASIC_START.ERRCODE_BASIC_COMPAT & ERRCODE_RES_MASK.String.Text
+msgid  "$(ARG1)"
+msgstr "$(ARG1)"
+
+#: source/classes/sb.src#IDS_SBERR_TERMINATED.String.Text
+msgid  "The macro running has been interrupted"
+msgstr "Exekutatzen ari den makroa eten egin da"
+
+#: source/classes/sb.src#IDS_SBERR_STOREREF.String.Text
+msgid  "Reference will not be saved: "
+msgstr "Erreferentzia ez da gordeko: "
+
+#: source/classes/sb.src#ERRCODE_BASMGR_LIBLOAD & ERRCODE_RES_MASK.String.Text
+msgid  "Error loading library '$(ARG1)'."
+msgstr "Errorea '$(ARG1)' liburutegia kargatzean."
+
+#: source/classes/sb.src#ERRCODE_BASMGR_LIBSAVE & ERRCODE_RES_MASK.String.Text
+msgid  "Error saving library: '$(ARG1)'."
+msgstr "Errorea liburutegia gordetzean: '$(ARG1)'."
+
+#: source/classes/sb.src#ERRCODE_BASMGR_MGROPEN & ERRCODE_RES_MASK.String.Text
+msgid  "The BASIC from the file '$(ARG1)' could not be initialized."
+msgstr "'$(ARG1)' fitxategiko BASIC ezin izan da hasieratu."
+
+#: source/classes/sb.src#ERRCODE_BASMGR_MGRSAVE & ERRCODE_RES_MASK.String.Text
+msgid  "Error saving BASIC: '$(ARG1)'."
+msgstr "Errorea BASIC gordetzean: '$(ARG1)'."
+
+#: source/classes/sb.src#ERRCODE_BASMGR_REMOVELIB & ERRCODE_RES_MASK.String.Text
+msgid  "Error removing library."
+msgstr "Errorea liburutegia kentzean."
+
+#: source/classes/sb.src#ERRCODE_BASMGR_UNLOADLIB & ERRCODE_RES_MASK.String.Text
+msgid  "The library could not be removed from memory."
+msgstr "Liburutegia ezin izan da kendu memoriatik."
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_ON.String.Text
+msgid  "On"
 msgstr "Aktibatuta"
 
-#: format.src#STR_BASICKEY_FORMAT_TRUE.string.text
-msgid "True"
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_OFF.String.Text
+msgid  "Off"
+msgstr "Desaktibatuta"
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_TRUE.String.Text
+msgid  "True"
 msgstr "Egiazkoa"
 
-#: format.src#STR_BASICKEY_FORMAT_YES.string.text
-msgid "Yes"
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_FALSE.String.Text
+msgid  "False"
+msgstr "Faltsua"
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_YES.String.Text
+msgid  "Yes"
 msgstr "Bai"
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_NO.String.Text
+msgid  "No"
+msgstr "Ez"
+
+#: source/sbx/format.src#STR_BASICKEY_FORMAT_CURRENCY.String.Text
+msgid  "@0.00 $;@(0.00 $)"
+msgstr "@0.00 $;@(0.00 $)"

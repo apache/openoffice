@@ -1,281 +1,208 @@
+#*************************************************************
+#*
+#* Licensed to the Apache Software Foundation (ASF) under one
+#* or more contributor license agreements.  See the NOTICE file
+#* distributed with this work for additional information
+#* regarding copyright ownership.  The ASF licenses this file
+#* to you under the Apache License, Version 2.0 (the
+#* "License"); you may not use this file except in compliance
+#* with the License.  You may obtain a copy of the License at
+#*
+#*   http://www.apache.org/licenses/LICENSE-2.0
+#*
+#* Unless required by applicable law or agreed to in writing,
+#* software distributed under the License is distributed on an
+#* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#* KIND, either express or implied.  See the License for the
+#* specific language governing permissions and limitations
+#* under the License.
+#*
+#************************************************************
+msgid ""
+msgstr ""
+"Project-Id-Version: AOO-4-xx\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: genLang (build process)\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: genLang\n"
 
-#: crashrep.ulf#_WELCOME_CAPTION_.LngText.text
-msgctxt "crashrep.ulf#_WELCOME_CAPTION_.LngText.text"
-msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+
+#: source/all/crashrep.ulf#%WELCOME_CAPTION%
+msgid  "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
 msgstr "Αναφορά σφάλματος του %PRODUCTNAME% %PRODUCTVERSION%"
 
-#: crashrep.ulf#_WELCOME_HEADER_.LngText.text
-msgid "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
+#: source/all/crashrep.ulf#%WELCOME_HEADER%
+msgid  "Welcome to the %PRODUCTNAME% %PRODUCTVERSION% Error Report"
 msgstr "Καλώς ήλθατε στην αναφορά σφάλματος του %PRODUCTNAME% %PRODUCTVERSION%"
 
-#: crashrep.ulf#_WELCOME_BODY1_.LngText.text
-msgid ""
-"This error report tool gathers information about how %PRODUCTNAME% is "
-"working and sends it to Oracle to help improve future versions.\n"
-"\n"
+#: source/all/crashrep.ulf#%WELCOME_BODY1%
+msgid  "This error report tool gathers information about how %PRODUCTNAME% is working and sends it to Apache OpenOffice to help improve future versions.\n\n"
 msgstr ""
-"Αυτό το εργαλείο αναφοράς σφαλμάτων συγκεντρώνει πληροφορίες για το πώς "
-"λειτουργεί το %PRODUCTNAME% και τις στέλνει στην Oracle για να βοηθήσει στη "
-"βελτίωση των επόμενων εκδόσεων.\n"
-"\n"
 
-#: crashrep.ulf#_WELCOME_BODY2_.LngText.text
-msgid ""
-"It's easy - just send the report without any further effort on your part by "
-"clicking 'Send' in the next dialog, or you can briefly describe how the "
-"error occurred and then click 'Send'. If you want to see the report, click "
-"the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n"
-"\n"
+#: source/all/crashrep.ulf#%WELCOME_BODY2%
+msgid  "It's easy - just send the report without any further effort on your part by clicking 'Send' in the next dialog, or you can briefly describe how the error occurred and then click 'Send'. If you want to see the report, click the 'Show Report' button. No data will be sent if you click 'Do Not Send'.\n\n"
 msgstr ""
-"Είναι εύκολο - απλώς στείλτε την αναφορά χωρίς άλλη ενέργεια από μέρους σας "
-"κάνοντας κλικ στο 'Αποστολή' στο διάλογο κειμένου, ή μπορείτε να περιγράψετε "
-"σύντομα το πως συνέβη το σφάλμα και μετά να κάνετε κλικ στο 'Αποστολή'. Αν "
-"θέλετε να δείτε την αναφορά, κάντε κλικ στο κουμπί 'Εμφάνιση αναφοράς'. Δε "
-"θα αποσταλούν δεδομένα αν κάνετε κλικ στο 'Ακύρωση'.\n"
-"\n"
 
-#: crashrep.ulf#_WELCOME_BODY3_.LngText.text
-msgid ""
-"Customer Privacy\n"
-"The information gathered is limited to data concerning the state of %"
-"PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information "
-"about passwords or document contents is not collected.\n"
-"\n"
-"The information will only be used to improve the quality of %PRODUCTNAME% "
-"and will not be shared with third parties.\n"
-"For more information on Oracle's privacy policy, visit\n"
+#: source/all/crashrep.ulf#%WELCOME_BODY3%
+msgid  "Customer Privacy\nThe information gathered is limited to data concerning the state of %PRODUCTNAME% %PRODUCTVERSION% when the error occurred. Other information about passwords or document contents is not collected.\n\nThe information will only be used to improve the quality of %PRODUCTNAME% and will not be shared with third parties.\nFor more information on Apache OpenOffice's privacy policy, visit\n"
 msgstr ""
-"Προσωπικό απόρρητο Πελάτη\n"
-"Οι πληροφορίες που συγκεντρώθηκαν περιορίζονται σε δεδομένα που αφορούν στην "
-"κατάσταση του %PRODUCTNAME% %PRODUCTVERSION% όταν συνέβη το σφάλμα. Άλλες "
-"πληροφορίες σχετικά με κωδικούς πρόσβασης ή τα περιεχόμενα του εγγράφου δεν "
-"περιλαμβάνονται.\n"
-"\n"
-"Οι πληροφορίες θα χρησιμοποιηθούν μόνο για τη βελτίωση της ποιότητας του %"
-"PRODUCTNAME% και δε θα δοθούν σε τρίτους.\n"
-"Για περισσότερες πληροφορίες για την πολιτική προσωπικού απορρήτου της "
-"Oracle, επισκεφτείτε το\n"
 
-#: crashrep.ulf#_PRIVACY_URL_.LngText.text
-msgid "http://www.oracle.com/html/services-privacy-policy.html"
-msgstr "http://www.oracle.com/html/services-privacy-policy.html"
+#: source/all/crashrep.ulf#%PRIVACY_URL%
+msgid  "http://www.openoffice.org/privacy.html"
+msgstr ""
 
-#: crashrep.ulf#_NEXT_BUTTON_.LngText.text
-msgid "~Next >>"
+#: source/all/crashrep.ulf#%NEXT_BUTTON%
+msgid  "~Next >>"
 msgstr "Επόμε~νο >>"
 
-#: crashrep.ulf#_CANCEL_BUTTON_.LngText.text
-msgid "Cancel"
+#: source/all/crashrep.ulf#%CANCEL_BUTTON%
+msgid  "Cancel"
 msgstr "Άκυρο"
 
-#: crashrep.ulf#_OK_BUTTON_.LngText.text
-msgid "OK"
+#: source/all/crashrep.ulf#%OK_BUTTON%
+msgid  "OK"
 msgstr "OK"
 
-#: crashrep.ulf#_REPORT_CAPTION_.LngText.text
-msgctxt "crashrep.ulf#_REPORT_CAPTION_.LngText.text"
-msgid "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
+#: source/all/crashrep.ulf#%REPORT_CAPTION%
+msgid  "%PRODUCTNAME% %PRODUCTVERSION% Error Report"
 msgstr "Αναφορά σφάλματος του %PRODUCTNAME% %PRODUCTVERSION%"
 
-#: crashrep.ulf#_REPORT_HEADER_.LngText.text
-msgid "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
+#: source/all/crashrep.ulf#%REPORT_HEADER%
+msgid  "An error occurred while running %PRODUCTNAME% %PRODUCTVERSION%"
 msgstr ""
-"Παρουσιάστηκε σφάλμα κατά την εκτέλεση του %PRODUCTNAME% %PRODUCTVERSION%"
 
-#: crashrep.ulf#_REPORT_BODY_.LngText.text
-msgid ""
-"The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information "
-"that could help Oracle improve %PRODUCTNAME%.\n"
-"In the spaces below, you can enter a title for your crash report and "
-"describe the action you were trying to carry out when the error occurred. "
-"Then click 'Send'.\n"
+#: source/all/crashrep.ulf#%REPORT_BODY%
+msgid  "The %PRODUCTNAME% %PRODUCTVERSION% Error Report has gathered information that could help Apache OpenOffice improve %PRODUCTNAME%.\nIn the spaces below, you can enter a title for your crash report and describe the action you were trying to carry out when the error occurred. Then click 'Send'.\n"
 msgstr ""
-"Η Αναφορά Σφάλματος του %PRODUCTNAME% %PRODUCTVERSION% έχει συγκεντρώσει "
-"πληροφορίες που θα μπορούσαν να βοηθήσουν την Oracle να βελτιώσει το %"
-"PRODUCTNAME%.\n"
-"Στα παρακάτω πεδία, μπορείτε να εισάγετε τον τίτλο της αναφοράς κατάρρευσης "
-"και να περιγράψετε τη λειτουργία που προσπαθούσατε να εκτελέσετε όταν συνέβη "
-"το σφάλμα. Μετά κάντε κλικ στο 'Αποστολή'.\n"
 
-#: crashrep.ulf#_ENTER_TITLE_.LngText.text
-msgid ""
-"Which type of document (e.g. presentation) were you using when the error "
-"occurred?"
-msgstr "Τι χρησιμοποιούσατε (π.χ παρουσίαση) όταν παρουσιάστηκε το σφάλμα;"
-
-#: crashrep.ulf#_ALLOW_CONTACT_.LngText.text
-msgid "~I allow Oracle to contact me regarding this report."
+#: source/all/crashrep.ulf#%ENTER_TITLE%
+msgid  "Which type of document (e.g. presentation) were you using when the error occurred?"
 msgstr ""
-"Επ~ιτρέπω στην Oracle να επικοινωνήσει μαζί μου σχετικά με αυτή την αναφορά."
 
-#: crashrep.ulf#_ENTER_EMAIL_.LngText.text
-msgid "Please enter your e-mail address."
+#: source/all/crashrep.ulf#%ALLOW_CONTACT%
+msgid  "~I allow Apache OpenOffice to contact me regarding this report."
+msgstr ""
+
+#: source/all/crashrep.ulf#%ENTER_EMAIL%
+msgid  "Please enter your e-mail address."
 msgstr "Παρακαλούμε δώστε την ηλεκτρονική σας διεύθυνση."
 
-#: crashrep.ulf#_ENTER_DESCRIPTION_.LngText.text
-msgid "~How were you using %PRODUCTNAME% when the error occurred ?"
+#: source/all/crashrep.ulf#%ENTER_DESCRIPTION%
+msgid  "~How were you using %PRODUCTNAME% when the error occurred ?"
 msgstr "~Πώς χρησιμοποιούσατε το %PRODUCTNAME% όταν συνέβη το σφάλμα;"
 
-#: crashrep.ulf#_BACK_BUTTON_.LngText.text
-msgid " << ~Back"
+#: source/all/crashrep.ulf#%BACK_BUTTON%
+msgid  " << ~Back"
 msgstr "<< ~Προηγούμενο"
 
-#: crashrep.ulf#_SEND_BUTTON_.LngText.text
-msgid "S~end"
+#: source/all/crashrep.ulf#%SEND_BUTTON%
+msgid  "S~end"
 msgstr "Απο~στολή"
 
-#: crashrep.ulf#_DONOT_SEND_BUTTON_.LngText.text
-msgid "Do ~Not Send"
+#: source/all/crashrep.ulf#%DONOT_SEND_BUTTON%
+msgid  "Do ~Not Send"
 msgstr "Ακύρωση"
 
-#: crashrep.ulf#_SHOW_REPORT_BUTTON_.LngText.text
-msgid "Show ~Report..."
+#: source/all/crashrep.ulf#%SHOW_REPORT_BUTTON%
+msgid  "Show ~Report..."
 msgstr "Εμφάνιση α~ναφοράς"
 
-#: crashrep.ulf#_SAVE_REPORT_BUTTON_.LngText.text
-msgid "~Save Report..."
+#: source/all/crashrep.ulf#%SAVE_REPORT_BUTTON%
+msgid  "~Save Report..."
 msgstr "Αποθήκευση ανα~φοράς"
 
-#: crashrep.ulf#_SAVE_REPORT_TITLE_.LngText.text
-msgid "Save Report to"
+#: source/all/crashrep.ulf#%SAVE_REPORT_TITLE%
+msgid  "Save Report to"
 msgstr "Αποθήκευση αναφοράς σε"
 
-#: crashrep.ulf#_ERROR_MSG_SIMPLE_MAPI_.LngText.text
-msgid ""
-"The error report could not be sent because the default e-mail program does "
-"not support MAPI.\n"
-" Please use a MAPI-compatible e-mail program."
+#: source/all/crashrep.ulf#%ERROR_MSG_SIMPLE_MAPI%
+msgid  "The error report could not be sent because the default e-mail program does not support MAPI.\n Please use a MAPI-compatible e-mail program."
 msgstr ""
-"Δεν ήταν δυνατή η αποστολή της αναφοράς σφάλματος γιατί ο προκαθορισμένος "
-"πελάτης ηλ. ταχυδρομείου δεν υποστηρίζει το πρότυπο MAPI.\n"
-"Παρακαλούμε χρησιμοποιείστε έναν πελάτη ηλ. ταχυδρομείου συμβατό με το "
-"πρότυπο MAPI."
 
-#: crashrep.ulf#_ERROR_MSG_DISK_FULL_.LngText.text
-msgid ""
-"The error report could not be temporarily saved and could therefore not be "
-"sent."
+#: source/all/crashrep.ulf#%ERROR_MSG_DISK_FULL%
+msgid  "The error report could not be temporarily saved and could therefore not be sent."
 msgstr ""
-"Δεν ήταν δυνατή η προσωρινή αποθήκευση της αναφοράς σφάλματος και γι' αυτό "
-"δεν ήταν δυνατή και η αποστολή της."
 
-#: crashrep.ulf#_ERROR_MSG_SENDMAIL_.LngText.text
-msgid ""
-"The error report could not be sent because 'sendmail' could not be started.\n"
-"Please check the 'sendmail' settings."
+#: source/all/crashrep.ulf#%ERROR_MSG_SENDMAIL%
+msgid  "The error report could not be sent because 'sendmail' could not be started.\nPlease check the 'sendmail' settings."
 msgstr ""
-"Δεν ήταν δυνατή α αποστολή της αναφοράς σφάλματος γιατί δεν είναι δυνατή η "
-"εκκίνηση του 'sendmail'.\n"
-"Παρακαλούμε ελέγξτε τις ρυθμίσεις του 'sendmail'."
 
-#: crashrep.ulf#_ERROR_MSG_PROXY_.LngText.text
-msgid ""
-"The error report could not be sent. Please check the proxy settings under "
-"'Options' in the Error Report Tool."
+#: source/all/crashrep.ulf#%ERROR_MSG_PROXY%
+msgid  "The error report could not be sent. Please check the proxy settings under 'Options' in the Error Report Tool."
 msgstr ""
-"Δεν ήταν δυνατή η αποστολή της αναφοράς σφάλματος. Παρακαλούμε ελέγξτε τις "
-"ρυθμίσεις διαμεσολαβητή στις 'Επιλογές' του Εργαλείου Αναφοράς Σφάλματος."
 
-#: crashrep.ulf#_ERROR_MSG_NOCONNECT_.LngText.text
-msgid ""
-"The error report could not be sent because there is no Internet connection. "
-"Please check your Internet settings."
+#: source/all/crashrep.ulf#%ERROR_MSG_NOCONNECT%
+msgid  "The error report could not be sent because there is no Internet connection. Please check your Internet settings."
 msgstr ""
-"Δεν ήταν δυνατή η αποστολή της αναφοράς σφάλματος γιατί δεν είστε συνδεμένοι "
-"στο διαδίκτυο. Παρακαλούμε ελέγξτε τις ρυθμίσεις του Διαδικτύου."
 
-#: crashrep.ulf#_OPTIONS_BUTTON_.LngText.text
-msgid "~Options..."
+#: source/all/crashrep.ulf#%OPTIONS_BUTTON%
+msgid  "~Options..."
 msgstr "~Επιλογές..."
 
-#: crashrep.ulf#_OPTIONS_TITLE_.LngText.text
-msgid "Options"
+#: source/all/crashrep.ulf#%OPTIONS_TITLE%
+msgid  "Options"
 msgstr "Επιλογές"
 
-#: crashrep.ulf#_PROXY_SETTINGS_HEADER_.LngText.text
-msgid "Proxy settings"
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_HEADER%
+msgid  "Proxy settings"
 msgstr "Ρυθμίσεις διαμεσολαβητή"
 
-#: crashrep.ulf#_PROXY_SETTINGS_SYSTEM_.LngText.text
-msgid "Use ~system settings"
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_SYSTEM%
+msgid  "Use ~system settings"
 msgstr "~Χρήση ρυθμίσεων συστήματος"
 
-#: crashrep.ulf#_PROXY_SETTINGS_DIRECT_.LngText.text
-msgid "Use ~direct connection to the Internet"
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_DIRECT%
+msgid  "Use ~direct connection to the Internet"
 msgstr "Χρήση απ ευ~θείας σύνδεσης στο διαδίκτυο"
 
-#: crashrep.ulf#_PROXY_SETTINGS_MANUAL_.LngText.text
-msgid "Use ~manual settings"
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_MANUAL%
+msgid  "Use ~manual settings"
 msgstr "Χρήση ~χειροκίνητων ρυθμίσεων"
 
-#: crashrep.ulf#_PROXY_SETTINGS_ADDRESS_.LngText.text
-msgid "HT~TP Proxy"
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_ADDRESS%
+msgid  "HT~TP Proxy"
 msgstr "Διαμεσολαβητής HT~TP"
 
-#: crashrep.ulf#_PROXY_SETTINGS_PORT_.LngText.text
-msgid "~Port"
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_PORT%
+msgid  "~Port"
 msgstr "~Θύρα"
 
-#: crashrep.ulf#_PROXY_SETTINGS_DESCRIPTION_.LngText.text
-msgid ""
-"The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to "
-"be able to send error reports.\n"
-"\n"
-"Companies often use proxy servers in conjunction with a firewall to protect "
-"the network.\n"
-"\n"
-"If this applies to your situation, you have to specify the address and port "
-"for the server."
+#: source/all/crashrep.ulf#%PROXY_SETTINGS_DESCRIPTION%
+msgid  "The %PRODUCTNAME% Error Report tool needs to be connected to the Internet to be able to send error reports.\n\nCompanies often use proxy servers in conjunction with a firewall to protect the network.\n\nIf this applies to your situation, you have to specify the address and port for the server."
 msgstr ""
-"Το εργαλείο Αναφοράς Σφάλματος του %PRODUCTNAME% πρέπει να είναι συνδεμένο "
-"με το διαδίκτυο για να μπορεί να αποστείλει αναφορές σφάλματος.\n"
-"\n"
-"Οι εταιρείες συχνά χρησιμοποιούν διαμεσολαβητές σε συνδυασμό με firewall για "
-"προστασία του δικτύου.\n"
-"\n"
-"Αν αυτό συμβαίνει στη δική σας περίπτωση, θα πρέπει να καθορίσετε τη "
-"διεύθυνση και τη θύρα του εξυπηρετητή."
 
-#: crashrep.ulf#_SENDING_REPORT_HEADER_.LngText.text
-msgid "Sending Error Report"
+#: source/all/crashrep.ulf#%SENDING_REPORT_HEADER%
+msgid  "Sending Error Report"
 msgstr "Αποστολή αναφοράς σφάλματος"
 
-#: crashrep.ulf#_SENDING_REPORT_STATUS_.LngText.text
-msgid "Status: Sending error report"
+#: source/all/crashrep.ulf#%SENDING_REPORT_STATUS%
+msgid  "Status: Sending error report"
 msgstr "Κατάσταση: Αποστολή αναφοράς σφάλματος"
 
-#: crashrep.ulf#_SENDING_REPORT_STATUS_FINISHED_.LngText.text
-msgid "Status: The error report has been sent successfully."
+#: source/all/crashrep.ulf#%SENDING_REPORT_STATUS_FINISHED%
+msgid  "Status: The error report has been sent successfully."
 msgstr "Κατάσταση: Η αναφορά σφάλματος στάλθηκε επιτυχώς."
 
-#: crashrep.ulf#_ERROR_MSG_NOEMAILADDRESS_.LngText.text
-msgid ""
-"You have marked the option 'I allow Oracle to contact me regarding this "
-"report.'\n"
-"Please enter your e-mail address."
+#: source/all/crashrep.ulf#%ERROR_MSG_NOEMAILADDRESS%
+msgid  "You have marked the option 'I allow Apache OpenOffice to contact me regarding this report.'\nPlease enter your e-mail address."
 msgstr ""
-"Έχετε επιλέξει την επιλογή 'Επιτρέπω στην Oracle να επικοινωνήσει μαζί μου "
-"σχετικά με αυτή την αναφορά.'\n"
-"Παρακαλούμε εισάγετε τη διεύθυνση email σας."
 
-#: crashrep.ulf#_MSG_CMDLINE_USAGE_.LngText.text
-msgid "Usage:"
+#: source/all/crashrep.ulf#%MSG_CMDLINE_USAGE%
+msgid  "Usage:"
 msgstr "Χρήση:"
 
-#: crashrep.ulf#_MSG_PARAM_PROCESSID_.LngText.text
-msgid "-p <process ID>"
+#: source/all/crashrep.ulf#%MSG_PARAM_PROCESSID%
+msgid  "-p <process ID>"
 msgstr "-p <process ID>"
 
-#: crashrep.ulf#_MSG_PARAM_PROCESSID_DESCRIPTION_.LngText.text
-msgid "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
+#: source/all/crashrep.ulf#%MSG_PARAM_PROCESSID_DESCRIPTION%
+msgid  "Assigns the %PRODUCTNAME% process ID (PID) to the Error Report Tool"
 msgstr ""
-"Αντιστοίχιση του ID της διεργασίας (PID) του %PRODUCTNAME% στο Εργαλείο "
-"Αναφοράς Σφάλματος"
 
-#: crashrep.ulf#_MSG_PARAM_HELP_DESCRIPTION_.LngText.text
-msgid ""
-"Shows this help text.\n"
-"Detailed information can be found in the Setup Guide."
+#: source/all/crashrep.ulf#%MSG_PARAM_HELP_DESCRIPTION%
+msgid  "Shows this help text.\nDetailed information can be found in the Setup Guide."
 msgstr ""
-"Εμφανίζει αυτό το κείμενο βοήθειας.\n"
-"Λεπτομερείς πληροφορίες μπορούν να βρεθούν στον Οδηγό Εγκατάστασης."
