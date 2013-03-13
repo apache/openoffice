@@ -1470,7 +1470,7 @@ msgstr "~Заклони"
 #: source/ui/app/mn.src#MN_DRAW5.MN_SUB_ARRANGE.MenuItem.Text
 #, fuzzy
 msgid  "~Arrange"
-msgstr "~Редослед"
+msgstr "~Распоред"
 
 #: source/ui/app/mn.src#MN_DRAW6.MN_SUB_ARRANGE.MenuItem.Text
 #, fuzzy
@@ -2436,20 +2436,24 @@ msgid  "~Pictures and objects"
 msgstr "~Слике и објекти"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_CTRLFLD.CheckBox.Text
+#, fuzzy
 msgid  "Form control~s"
-msgstr "Контроле обра~сца"
+msgstr "~Скривен текст"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_BACKGROUND.CheckBox.Text
+#, fuzzy
 msgid  "Page ba~ckground"
-msgstr "Позадина странице"
+msgstr "Позадина ~странице"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_BLACK_FONT.CheckBox.Text
+#, fuzzy
 msgid  "Print text in blac~k"
-msgstr "Штампај текст ~црно"
+msgstr "~Местодржачи и поља за текст"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_HIDDEN_TEXT.CheckBox.Text
+#, fuzzy
 msgid  "Hidden te~xt"
-msgstr "~Скривен текст"
+msgstr "Сл~ике и друга графика"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_TEXT_PLACEHOLDER.CheckBox.Text
 #, fuzzy
@@ -2472,8 +2476,9 @@ msgid  "~Right pages"
 msgstr "~Десне странице"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_PROSPECT.CheckBox.Text
+#, fuzzy
 msgid  "Broch~ure"
-msgstr "~Брошура"
+msgstr "На крају документа"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_PROSPECT_RTL.CheckBox.Text
 #, fuzzy
@@ -2511,8 +2516,9 @@ msgid  "Other"
 msgstr "Остало"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_PRINTEMPTYPAGES.CheckBox.Text
+#, fuzzy
 msgid  "Print ~automatically inserted blank pages"
-msgstr "Штампај ~аутоматски убачене празне странице"
+msgstr "Контроле обра~сца"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_PAPERFROMSETUP.CheckBox.Text
 #, fuzzy
@@ -8264,12 +8270,14 @@ msgid  "Options"
 msgstr "Опције"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.1.TP_FRM_WRAP.PageItem.Text
+#, fuzzy
 msgid  "Wrap"
-msgstr "Преламање"
+msgstr "Пребацивање"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.1.TP_FRM_URL.PageItem.Text
+#, fuzzy
 msgid  "Hyperlink"
-msgstr "Веза"
+msgstr "Хипервеза"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.1.TP_BORDER.PageItem.Text
 #, fuzzy
@@ -9120,8 +9128,9 @@ msgid  "Below"
 msgstr "Испод"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.STR_CATEGORY_NONE.String.Text
+#, fuzzy
 msgid  "<None>"
-msgstr "<Ниједна>"
+msgstr "<Нема>"
 
 #: source/ui/frmdlg/cption.src#DLG_SEQUENCE_OPTION.ModalDialog.Text
 #, fuzzy
@@ -9139,8 +9148,9 @@ msgid  "~Level"
 msgstr "~Ниво"
 
 #: source/ui/frmdlg/cption.src#DLG_SEQUENCE_OPTION.LB_LEVEL.item1.StringList.item
+#, fuzzy
 msgid  "<None>"
-msgstr "<Нема>"
+msgstr "<Ниједна>"
 
 #: source/ui/frmdlg/cption.src#DLG_SEQUENCE_OPTION.FT_SEPARATOR.FixedText.Text
 #, fuzzy
@@ -9621,8 +9631,9 @@ msgid  "~New..."
 msgstr "~Ново..."
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.MB_AUTOMARK.MN_AUTOMARK_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "~Edit..."
-msgstr "~Уреди..."
+msgstr "~Уређивање..."
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.MB_AUTOMARK.MenuItem.Text
 #, fuzzy
@@ -10307,8 +10318,9 @@ msgid  "The 'AutoText' directories are read-only. Do you want to call the path s
 msgstr ""
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.MNU_EDIT.FN_GL_DEFINE.MenuItem.Text
+#, fuzzy
 msgid  "~New"
-msgstr "~Нови"
+msgstr "~Нова"
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.MNU_EDIT.FN_GL_DEFINE_TEXT.MenuItem.Text
 #, fuzzy
@@ -12862,8 +12874,9 @@ msgid  "Right-to-left"
 msgstr "Здесна улево"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.LB_TEXTDIRECTION.4.StringList.item
+#, fuzzy
 msgid  "Use superordinate object settings"
-msgstr "Користи подешавања подређеног објекта"
+msgstr "Користи подешавања надређеног објекта"
 
 #: source/ui/table/tabledlg.src#TP_TABLE_COLUMN.CB_MOD_TBL.CheckBox.Text
 #, fuzzy
@@ -13852,24 +13865,29 @@ msgid  "WWW document"
 msgstr "WWW документ"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM1.String.Text
+#, fuzzy
 msgid  "User-defined1"
-msgstr "Кориснички-дефинисано1"
+msgstr "Посебно1"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM2.String.Text
+#, fuzzy
 msgid  "User-defined2"
-msgstr "Кориснички-дефинисано2"
+msgstr "Посебно2"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM3.String.Text
+#, fuzzy
 msgid  "User-defined3"
-msgstr "Кориснички-дефинисано3"
+msgstr "Посебно3"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM4.String.Text
+#, fuzzy
 msgid  "User-defined4"
-msgstr "Кориснички-дефинисано4"
+msgstr "Посебно4"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM5.String.Text
+#, fuzzy
 msgid  "User-defined5"
-msgstr "Кориснички-дефинисано5"
+msgstr "Посебно5"
 
 #: source/ui/utlui/initui.src#STR_AUTH_FIELD_IDENTIFIER.String.Text
 #, fuzzy
@@ -14498,7 +14516,7 @@ msgstr "Ознаке"
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_STANDARD.String.Text
 #, fuzzy
 msgid  "Default"
-msgstr "Подразумевани"
+msgstr "Подразумевано"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_TEXT.String.Text
 #, fuzzy
@@ -14543,7 +14561,7 @@ msgstr "Листа"
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_REGISTER_BASE.String.Text
 #, fuzzy
 msgid  "Index"
-msgstr "Индекс"
+msgstr "Попис"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_CONFRONTATION.String.Text
 #, fuzzy
