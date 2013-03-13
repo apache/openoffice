@@ -153,7 +153,7 @@ msgstr "V~ormen"
 
 #: inc/globlmn_tmpl.hrc#ITEM_GROUP_MENU.SID_MN_GROUP.MenuItem.Text
 msgid  "~Group"
-msgstr "~Groep"
+msgstr "~Groeperen"
 
 #: inc/globlmn_tmpl.hrc#ITEM_DATASOURCE_ADMINISTRATION.SID_DATASOURCE_ADMINISTRATION.MenuItem.Text
 msgid  "~Data Sources..."
@@ -297,11 +297,11 @@ msgstr "~Links"
 
 #: inc/globlmn_tmpl.hrc#SID_ATTR_PARA_ADJUST_RIGHT.#define.Text
 msgid  "~Right"
-msgstr "R~echts"
+msgstr "~Rechts"
 
 #: inc/globlmn_tmpl.hrc#SID_ATTR_PARA_ADJUST_CENTER.#define.Text
 msgid  "~Centered"
-msgstr "~Gecentreerd"
+msgstr "Ge~centreerd"
 
 #: inc/globlmn_tmpl.hrc#SID_ATTR_PARA_ADJUST_BLOCK.#define.Text
 msgid  "Justified"
@@ -873,7 +873,7 @@ msgstr "Opnieuw"
 
 #: source/dialog/imapdlg.src#RID_SVXDLG_IMAP.TBX_IMAPDLG1.TBI_ACTIVE.ToolBoxItem.Text
 msgid  "Active"
-msgstr "~Actief"
+msgstr "Actief"
 
 #: source/dialog/imapdlg.src#RID_SVXDLG_IMAP.TBX_IMAPDLG1.TBI_MACRO.ToolBoxItem.Text
 msgid  "Macro..."
@@ -1049,7 +1049,7 @@ msgstr "Buiten"
 
 #: source/dialog/swframeposstrings.src#RID_SVXSW_FRAMEPOSITIONS.STR_CENTER_VERT.String.Text
 msgid  "Center"
-msgstr "Midden"
+msgstr "Gecentreerd"
 
 #: source/dialog/swframeposstrings.src#RID_SVXSW_FRAMEPOSITIONS.STR_FROMLEFT.String.Text
 msgid  "From left"
@@ -1297,7 +1297,7 @@ msgstr "Volgende >>"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_RECOVERY_NEXT.String.Text
 msgid  "~Next >"
-msgstr "V~olgende >"
+msgstr "~Volgende >"
 
 #: source/dialog/docrecovery.src#RID_SVXPAGE_DOCRECOVERY_RECOVER.STR_SUCCESSRECOV.String.Text
 msgid  "Successfully recovered"
@@ -2693,7 +2693,7 @@ msgstr "Kleurovergang"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_BITMAP.String.Text
 msgid  "Bitmap"
-msgstr "~Bitmap"
+msgstr "Bitmap"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_LINESTYLE.String.Text
 msgid  "Line Style"
@@ -2809,7 +2809,7 @@ msgstr "- geen -"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_TRANSPARENCE.String.Text
 msgid  "Transparency"
-msgstr "Transparantie"
+msgstr "Transparant"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_CENTERED.String.Text
 msgid  "Centered"
@@ -5025,7 +5025,7 @@ msgstr "~Toevoegen..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MID_MODELS_EDIT.MenuItem.Text
 msgid  "~Edit..."
-msgstr "~Bewerken..."
+msgstr "~Naam wijzigen..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MID_MODELS_REMOVE.MenuItem.Text
 msgid  "~Remove"
@@ -5053,7 +5053,7 @@ msgstr "~Toevoegen..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MID_INSTANCES_EDIT.MenuItem.Text
 msgid  "~Edit..."
-msgstr "~Naam wijzigen..."
+msgstr "~Bewerken..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MID_INSTANCES_REMOVE.MenuItem.Text
 msgid  "~Remove"
@@ -5453,7 +5453,7 @@ msgstr "Galerij"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_ACTUALIZE_PROGRESS.String.Text
 msgid  "Update"
-msgstr "~Bijwerken"
+msgstr "Bijwerken"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_FOPENERROR.String.Text
 msgid  "This file cannot be opened"
@@ -5569,7 +5569,7 @@ msgstr "~Invoegen"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MN_ADD.MenuItem.Text
 msgid  "~Copy"
-msgstr "~Kopiëren"
+msgstr "~Kopie"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MN_ADD_LINK.MenuItem.Text
 msgid  "Link"
@@ -5913,7 +5913,7 @@ msgstr "Relatieve tekengrootte"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_COLOR.ItemList.item
 msgid  "Font color"
-msgstr "Kleur lettertype"
+msgstr "Tekstkleur"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_KERNING.ItemList.item
 msgid  "Kerning"
@@ -7373,7 +7373,7 @@ msgstr "Frame"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulEDGE.String.Text
 msgid  "Object Connectors"
-msgstr "Objectverbindingen"
+msgstr "Objectverbinding"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralEDGE.String.Text
 msgid  "Object Connectors"
@@ -7797,7 +7797,7 @@ msgstr "Hoekradius van %1 wijzigen"
 
 #: source/svdraw/svdstr.src#STR_DragPathObj.String.Text
 msgid  "Change %1"
-msgstr "Wijzig %1"
+msgstr "%1 wijzigen"
 
 #: source/svdraw/svdstr.src#STR_DragRectResize.String.Text
 msgid  "Resize %1"
@@ -8181,7 +8181,7 @@ msgstr "Verticale schaduwopvulling"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWTRANSPARENCE.String.Text
 msgid  "Shadow transparency"
-msgstr "Transparantie schaduw"
+msgstr "Schaduw transparant"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOW3D.String.Text
 msgid  "3D shadow"
