@@ -5285,7 +5285,7 @@ msgstr "Base de dades"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.3.String.Text
 msgid  "The range of cells containing data."
-msgstr "Interval de cel·les que contenen les dades."
+msgstr "Interval de les cel·les que contenen les dades."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.4.String.Text
 msgid  "Database field"
@@ -5301,7 +5301,7 @@ msgstr "Criteris de cerca"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.7.String.Text
 msgid  "Defines the cell range containing the search criteria."
-msgstr "Defineix l'interval de les cel·les que contenen els criteris de cerca."
+msgstr "Defineix l'interval de cel·les que contenen els criteris de cerca."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.1.String.Text
 msgid  "Counts all non-blank cells of a data range where the content corresponds to the search criteria."
@@ -5313,7 +5313,7 @@ msgstr "Base de dades"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.3.String.Text
 msgid  "The range of cells containing data."
-msgstr "Interval de cel·les que contenen les dades."
+msgstr "Interval de les cel·les que contenen les dades."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.4.String.Text
 msgid  "Database field"
@@ -5329,7 +5329,7 @@ msgstr "Criteris de cerca"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.7.String.Text
 msgid  "Defines the cell range containing the search criteria."
-msgstr "Defineix l'interval de les cel·les que contenen els criteris de cerca."
+msgstr "Defineix l'interval de cel·les que contenen els criteris de cerca."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_AVERAGE.1.String.Text
 msgid  "Returns the average value of all the cells of a data range whose contents match the search criteria."
@@ -5341,7 +5341,7 @@ msgstr "Base de dades"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_AVERAGE.3.String.Text
 msgid  "The range of cells containing data."
-msgstr "Interval de les cel·les que contenen les dades."
+msgstr "Interval de cel·les que contenen les dades."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_AVERAGE.4.String.Text
 msgid  "Database field"
@@ -5357,7 +5357,7 @@ msgstr "Criteris de cerca"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_AVERAGE.7.String.Text
 msgid  "Defines the cell range containing the search criteria."
-msgstr "Defineix l'interval de cel·les que contenen els criteris de cerca."
+msgstr "Defineix l'interval de les cel·les que contenen els criteris de cerca."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_GET.1.String.Text
 msgid  "Defines the contents of the cell of a data range which matches the search criteria."
@@ -5369,7 +5369,7 @@ msgstr "Base de dades"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_GET.3.String.Text
 msgid  "The range of cells containing data."
-msgstr "Interval de cel·les que contenen les dades."
+msgstr "Interval de les cel·les que contenen les dades."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_GET.4.String.Text
 msgid  "Database field"
@@ -5385,7 +5385,7 @@ msgstr "Criteris de cerca"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_GET.7.String.Text
 msgid  "Defines the cell range containing the search criteria."
-msgstr "Defineix l'interval de cel·les que contenen els criteris de cerca."
+msgstr "Defineix l'interval de les cel·les que contenen els criteris de cerca."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_MAX.1.String.Text
 msgid  "Returns the maximum value from all of the cells of a data range which correspond to the search criteria."
@@ -11091,6 +11091,54 @@ msgstr ""
 msgid  "The number of characters for the text."
 msgstr ""
 
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.1.String.Text
+msgid  "Return the cosecant of an angle. CSC(x)=1/SIN(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.3.String.Text
+msgid  "The angle in radians for which the cosecant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.1.String.Text
+msgid  "Return the secant of an angle. SEC(x)=1/COS(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.3.String.Text
+msgid  "The angle in radians for which the secant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.1.String.Text
+msgid  "Return the hyperbolic cosecant of a hyperbolic angle. CSCH(x)=1/SINH(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.3.String.Text
+msgid  "The hyperbolic angle in radians for which the hyperbolic cosecant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.1.String.Text
+msgid  "Return the hyperbolic secant of a hyperbolic angle. SECH(x)=1/COSH(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.3.String.Text
+msgid  "The hyperbolic angle in radians for which the hyperbolic secant is to be calculated."
+msgstr ""
+
 #: source/ui/src/scstring.src#SCSTR_APPLICATION.String.Text
 msgid  "%PRODUCTNAME Calc 6.0"
 msgstr "%PRODUCTNAME Calc 6.0"
@@ -12117,7 +12165,7 @@ msgstr ">="
 
 #: source/ui/src/optsolver.src#RID_SCDLG_OPTSOLVER.LB_OP1.Default.StringList.item
 msgid  "Integer"
-msgstr "Enter"
+msgstr "Enter "
 
 #: source/ui/src/optsolver.src#RID_SCDLG_OPTSOLVER.LB_OP2.Default.StringList.item
 msgid  "<="
@@ -12133,7 +12181,7 @@ msgstr ">="
 
 #: source/ui/src/optsolver.src#RID_SCDLG_OPTSOLVER.LB_OP2.Default.StringList.item
 msgid  "Integer"
-msgstr "Enter"
+msgstr "Enter "
 
 #: source/ui/src/optsolver.src#RID_SCDLG_OPTSOLVER.LB_OP3.Default.StringList.item
 msgid  "<="
