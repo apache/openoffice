@@ -1349,7 +1349,7 @@ msgstr "Dileu Pob Sylw ~gan %1"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_DELETEALL_POSTIT.MenuItem.Text
 msgid  "Delete ~All Comments"
-msgstr "Dileu ~Pob Sylw"
+msgstr "Dileu Pob ~Sylw"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_TAG_CONTEXTMENU.SID_REPLYTO_POSTIT.MenuItem.Text
 msgid  "~Reply"
@@ -1453,7 +1453,7 @@ msgstr "~Gwaelod"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_ROWS.MenuItem.Text
 msgid  "Space ~Equally"
-msgstr "Bylchu'n Gymesur"
+msgstr "Bylchu'n ~Gymesur"
 
 #: source/ui/app/popup2_tmpl.src#RID_GRAPHIC_TABLE_POPUP.DUMMY.SID_TABLE_SELECT_ROW.MenuItem.Text
 msgid  "~Select"
@@ -3397,19 +3397,19 @@ msgstr "~Dileu Haen..."
 
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_ALL_SLIDES.MenuItem.Text
 msgid  "~Apply to All Slides"
-msgstr "Gosod Popeth"
+msgstr "Gosod i Bob Tryloywder"
 
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_SELECTED_SLIDES.MenuItem.Text
 msgid  "Apply to ~Selected Slides"
-msgstr "Gosod"
+msgstr "Gosod i Dryloywderau Dewisol"
 
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_SHOW_LARGE_PREVIEW.MenuItem.Text
 msgid  "Show ~Large Preview"
-msgstr "Dangos Mawr Rhagolwg"
+msgstr "Dangos Rhagolwg ~Mawr"
 
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_SHOW_SMALL_PREVIEW.MenuItem.Text
 msgid  "Show S~mall Preview"
-msgstr "Dangos S Rhagolwg"
+msgstr "Dangos Rhagolwg ~Bach"
 
 #: source/ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_ALL_SLIDES.MenuItem.Text
 msgid  "~Apply to All Slides"
@@ -3417,7 +3417,7 @@ msgstr "Gosod i Bob Tryloywder"
 
 #: source/ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_SELECTED_SLIDES.MenuItem.Text
 msgid  "Apply to ~Selected Slides"
-msgstr "Gosod i Dryloywderau Dewisol"
+msgstr "Gosod"
 
 #: source/ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_EDIT_MASTER.MenuItem.Text
 msgid  "~Edit Master..."
@@ -5525,8 +5525,9 @@ msgid  "Fit to printable page"
 msgstr "Ffitio i'r dudalen argraffadwy"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.item3.ItemList.item
+#, fuzzy
 msgid  "Distribute on multiple sheets of paper"
-msgstr "Dosbarthu ar ddalennau niferus o bapur"
+msgstr "Dosbarthu ar dalennu niferus o bapur"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.item4.ItemList.item
 #, fuzzy
@@ -5609,8 +5610,9 @@ msgid  "~Slides"
 msgstr "~Tryloywder"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_RANGE_CHOICE.item3.ItemList.item
+#, fuzzy
 msgid  "Se~lection"
-msgstr "~Dewis"
+msgstr "De~wis"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_DRAW_PRINT_UI_PAGE_RANGE_CHOICE.item1.ItemList.item
 #, fuzzy
