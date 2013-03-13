@@ -5854,7 +5854,7 @@ msgstr "OR"
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
 msgid  "Does not end with"
-msgstr "ಇದರೊಂದಿಗೆ ಅಂತ್ಯಗೊಳ್ಳುವುದಿಲ್ಲ"
+msgstr "ಇದರಿಂದ ಆರಂಭಗೊಳ್ಳುವುದಿಲ್ಲ"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
 #, fuzzy
@@ -5904,7 +5904,7 @@ msgstr "ಫಲಿತಾಂಶಗಳನ್ನು ಇಲ್ಲಿಗೆ ಕಾಪ�
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.BTN_DEST_PERS.CheckBox.Text
 #, fuzzy
 msgid  "~Keep filter criteria"
-msgstr "ಶೋಧನೆಯ ಕಾರಣಗಳನ್ನು ಇಟ್ಟುಕೊ"
+msgstr "ಶೋಧಕ ಮಾನದಂಡವನ್ನು ಇರಿಸು(~K)"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.RB_COPY_AREA.ImageButton.QuickHelpText
 #, fuzzy
@@ -6527,12 +6527,12 @@ msgstr ""
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.6.String.Text
 #, fuzzy
 msgid  "Search criteria"
-msgstr "ಹುಡುಕಲು ಸುಳಿವುಗಳು"
+msgstr "ಹುಡುಕು ಮಾನದಂಡ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.7.String.Text
 #, fuzzy
 msgid  "Defines the cell range containing the search criteria."
-msgstr "ಹುಡುಕಲು ಸುಳಿವು ಇರುವ ಕೋಶ ವ್ಯಾಪ್ತಿಯನ್ನು ಸೂಚಿಸುತ್ತದೆ."
+msgstr "ಹುಡುಕು ಮಾನದಂಡಗಳನ್ನು ಹೊಂದಿರುವ ಕೋಶವ್ಯಾಪ್ತಿಯನ್ನು ವ್ಯಾಖ್ಯಿಸುತ್ತದೆ."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.1.String.Text
 msgid  "Counts all non-blank cells of a data range where the content corresponds to the search criteria."
@@ -8032,7 +8032,7 @@ msgstr "ಒಂದು ಅವಧಿಯ ರಿಯಾಯಿತಿಯ ದರ."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_NBW.4.String.Text
 #, fuzzy
 msgid  "value "
-msgstr "ಮೌಲ್ಯ "
+msgstr "ಮೌಲ್ಯ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_NBW.5.String.Text
 msgid  "Value 1, value 2,... are 1 to 30 arguments representing payments and income."
@@ -8557,7 +8557,7 @@ msgstr "ಬೇಸ್ a ಅನ್ನು ಎಕ್ಸ್‌ಪೊನೆಂಟ್ b
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_POWER.2.String.Text
 #, fuzzy
 msgid  "Base"
-msgstr "ಬೇಸ್"
+msgstr "ಆಧಾರ ಸಂಖ್ಯೆ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_POWER.3.String.Text
 #, fuzzy
@@ -8602,7 +8602,7 @@ msgstr "ಎಲ್ಲ ಆರ್ಗ್ಯುಮೆಂಟ್‌ಗಳ ಮೊತ್�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM.2.String.Text
 #, fuzzy
 msgid  "number "
-msgstr "ಸಂಖ್ಯೆ "
+msgstr "ಸಂಖ್ಯೆ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 arguments whose total is to be calculated."
@@ -8654,7 +8654,7 @@ msgstr "ಕೊಟ್ಟಿರುವ ಮಾನದಂಡದಿಂದ ಮೌಲ್�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_IF.4.String.Text
 #, fuzzy
 msgid  "criteria"
-msgstr "ಸುಳಿವುಗಳು"
+msgstr "ಮಾನದಂಡ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_IF.5.String.Text
 #, fuzzy
@@ -10728,7 +10728,7 @@ msgstr "ಪಾಯ್ಸನ್ ವಿತರಣೆಯನ್ನು ಗಣಿಸಬ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.4.String.Text
 #, fuzzy
 msgid  "mean"
-msgstr "ಮಧ್ಯಮ"
+msgstr "ಲಘು"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.5.String.Text
 #, fuzzy
@@ -11441,7 +11441,7 @@ msgstr ""
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHISQ_DIST.4.String.Text
 #, fuzzy
 msgid  "Degrees of Freedom"
-msgstr "ಸ್ವಾತಂತ್ರಾಂಕಗಳು"
+msgstr "ಸ್ವಾತಂತ್ರಾಂಕಗಳು(ಡಿಗ್ರಿ ಆಫ್ ಫ್ರೀಡಮ್)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHISQ_DIST.5.String.Text
 #, fuzzy
@@ -12187,7 +12187,7 @@ msgstr "ಉದ್ದ ಸಾಲು ಹುಡುಕು ಮತ್ತು ಗುರ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_V_LOOKUP.2.String.Text
 #, fuzzy
 msgid  "Search criterion"
-msgstr "ಹುಡುಕುವ ಸುಳಿವು"
+msgstr "ಹುಡುಕು ಮಾನದಂಡ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_V_LOOKUP.3.String.Text
 #, fuzzy
@@ -13472,6 +13472,54 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MIDB.7.String.Text
 msgid  "The number of characters for the text."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.1.String.Text
+msgid  "Return the cosecant of an angle. CSC(x)=1/SIN(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.3.String.Text
+msgid  "The angle in radians for which the cosecant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.1.String.Text
+msgid  "Return the secant of an angle. SEC(x)=1/COS(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.3.String.Text
+msgid  "The angle in radians for which the secant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.1.String.Text
+msgid  "Return the hyperbolic cosecant of a hyperbolic angle. CSCH(x)=1/SINH(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.3.String.Text
+msgid  "The hyperbolic angle in radians for which the hyperbolic cosecant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.1.String.Text
+msgid  "Return the hyperbolic secant of a hyperbolic angle. SECH(x)=1/COSH(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.3.String.Text
+msgid  "The hyperbolic angle in radians for which the hyperbolic secant is to be calculated."
 msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_APPLICATION.String.Text
@@ -15863,8 +15911,9 @@ msgid  "Cell value is"
 msgstr "ಕೋಶ ಮೌಲ್ಯವು"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
+#, fuzzy
 msgid  "equal to"
-msgstr "ಇದಕ್ಕೆ ಸಮ"
+msgstr "ಇದಕ್ಕೆ ಸಮನಾಗಿದೆ"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 #, fuzzy
@@ -15872,8 +15921,9 @@ msgid  "less than"
 msgstr "ಇದಕ್ಕಿಂತ ಕಡಿಮೆ"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
+#, fuzzy
 msgid  "greater than"
-msgstr "ಇದಕ್ಕಿಂತ ಹೆಚ್ಚಾದ"
+msgstr "ಇದಕ್ಕಿಂತ ಹೆಚ್ಚು"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 #, fuzzy
@@ -15886,8 +15936,9 @@ msgid  "greater than or equal to"
 msgstr "ಇದಕ್ಕಿಂತ ಹೆಚ್ಚಾದ ಅಥವ ಇದಕ್ಕೆ ಸಮನಾದ"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
+#, fuzzy
 msgid  "not equal to"
-msgstr "ಇದಕ್ಕೆ ಸಮನಾಗಿಲ್ಲ"
+msgstr "ಇದಕ್ಕೆ ಸಮಾನವಾಗಿಲ್ಲ"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 #, fuzzy
@@ -15900,6 +15951,7 @@ msgid  "Cell value is"
 msgstr "ಕೋಶ ಮೌಲ್ಯವು"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
+#, fuzzy
 msgid  "equal to"
 msgstr "ಇದಕ್ಕೆ ಸಮನಾಗಿದೆ"
 
@@ -15909,6 +15961,7 @@ msgid  "less than"
 msgstr "ಇದಕ್ಕಿಂತ ಕಡಿಮೆ"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
+#, fuzzy
 msgid  "greater than"
 msgstr "ಇದಕ್ಕಿಂತ ಹೆಚ್ಚು"
 
@@ -15923,6 +15976,7 @@ msgid  "greater than or equal to"
 msgstr "ಇದಕ್ಕಿಂತ ಹೆಚ್ಚಾದ ಅಥವ ಇದಕ್ಕೆ ಸಮನಾದ"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
+#, fuzzy
 msgid  "not equal to"
 msgstr "ಇದಕ್ಕೆ ಸಮಾನವಾಗಿಲ್ಲ"
 
