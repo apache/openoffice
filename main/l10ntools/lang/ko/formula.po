@@ -1227,6 +1227,22 @@ msgstr "#NUM!"
 msgid  "#N/A"
 msgstr "#N/A"
 
+#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT.String.Text
+msgid  "CSC"
+msgstr ""
+
+#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT.String.Text
+msgid  "SEC"
+msgstr ""
+
+#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT_HYP.String.Text
+msgid  "CSCH"
+msgstr ""
+
+#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT_HYP.String.Text
+msgid  "SECH"
+msgstr ""
+
 #: source/ui/dlg/formdlgs.src#RID_FORMULATAB_FUNCTION.LB_CATEGORY.Default.StringList.item
 msgid  "All"
 msgstr "모두"
@@ -1277,7 +1293,7 @@ msgstr "배열"
 
 #: source/ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.RB_REF.ImageButton.QuickHelpText
 msgid  "Maximize"
-msgstr "확대"
+msgstr "최대화"
 
 #: source/ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.BTN_BACKWARD.PushButton.Text
 msgid  "<< ~Back"
