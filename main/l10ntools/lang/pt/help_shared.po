@@ -1923,7 +1923,7 @@ msgid  "2011-09-29"
 msgstr ""
 
 #: source/text/shared/00/00000021.xhp#par_id0519200811530471
-msgid  "OpenOffice.org 3, StarOffice 9, Apache Open Office"
+msgid  "OpenOffice.org 3, StarOffice 9"
 msgstr ""
 
 #: source/text/shared/00/00000021.xhp#par_id1001200912381153
@@ -1933,7 +1933,7 @@ msgstr "ODF 1.2 (Alargado)"
 
 #: source/text/shared/00/00000021.xhp#par_id1001200912381174
 #, fuzzy
-msgid  "OpenOffice.org 3.2 or StarOffice 9.2"
+msgid  "OpenOffice.org 3.2, StarOffice 9.2"
 msgstr "OpenOffice.org 3.2 ou StarOffice 9.2"
 
 #: source/text/shared/00/00000021.xhp#par_id0514200811525591
@@ -17776,7 +17776,7 @@ msgstr ""
 #: source/text/shared/01/05040200.xhp#hd_id3153394.33
 #, fuzzy
 msgid  "Format"
-msgstr "Formato"
+msgstr "Formatar"
 
 #: source/text/shared/01/05040200.xhp#par_id3149827.34
 msgid  "\<ahelp hid=\"SVX:LISTBOX:RID_SVXPAGE_PAGE:LB_PAPER_SIZE\"\>Select a predefined paper size, or create a custom format by entering the dimensions for the paper in the \<emph\>Height \</emph\>and \<emph\>Width \</emph\>boxes.\</ahelp\>"
@@ -68730,7 +68730,7 @@ msgid  "Modify"
 msgstr "Modificar"
 
 #: source/text/shared/optionen/01010500.xhp#par_id3148916.30
-msgid  "\<ahelp hid=\"SVX:PUSHBUTTON:RID_SVXPAGE_COLOR:BTN_MODIFY\"\>Changes the current color.\</ahelp\> Note that the color is overwritten without a confirmation."
+msgid  "\<ahelp hid=\"SVX:PUSHBUTTON:RID_SVXPAGE_COLOR:BTN_MODIFY\"\>Changes the current color. Note that the color is overwritten without a confirmation.\</ahelp\>"
 msgstr ""
 
 #: source/text/shared/optionen/01010500.xhp#hd_id3154754.31
@@ -68759,172 +68759,181 @@ msgstr ""
 msgid  "The \<emph\>Load color list\</emph\> and \<emph\>Save color list \</emph\>icons are visible only if you select the \<emph\>Colors\</emph\> tab with the \<emph\>Format - Area\</emph\> command."
 msgstr ""
 
+#: source/text/shared/optionen/01010500.xhp#par_id3141111
+msgid  "\<ahelp hid=\".\"\>Opens the Color Picker. First highlight a color in the Color table. Then click Edit to open the Color Picker. Select a color in the Color Picker and click OK. The selected color replaces the color that is highlighted in the Color table.\</ahelp\>"
+msgstr ""
+
 #: source/text/shared/optionen/01010501.xhp#tit
 #, fuzzy
 msgid  "Color"
 msgstr "Cor"
 
-#: source/text/shared/optionen/01010501.xhp#hd_id3153126.1
-#, fuzzy
-msgid  "Color"
-msgstr "Cor"
-
 #: source/text/shared/optionen/01010501.xhp#bm_id3150771
-msgid  "\<bookmark_value\>defining;colors\</bookmark_value\>\<bookmark_value\>colors;selection\</bookmark_value\>\<bookmark_value\>colors;adding\</bookmark_value\>"
+msgid  "            \<bookmark_value\>defining;colors\</bookmark_value\>            \<bookmark_value\>colors;selection\</bookmark_value\>            \<bookmark_value\>colors;adding\</bookmark_value\>        "
 msgstr ""
 
 #: source/text/shared/optionen/01010501.xhp#par_id3150771.2
-msgid  "\<variable id=\"farbentext\"\>\<ahelp hid=\".\"\>Allows you to define your own colors using the two-dimensional graphic and numerical gradient chart.\</ahelp\>\</variable\> Click \<emph\>OK\</emph\> to display the newly defined color in the preview box of the \<emph\>Colors\</emph\> register, where you can then decide if you want to add or replace the new color in the current color palette."
-msgstr ""
-
-#: source/text/shared/optionen/01010501.xhp#hd_id3149514.3
-#, fuzzy
-msgid  "Color Window"
-msgstr "Janela Cor"
-
-#: source/text/shared/optionen/01010501.xhp#par_id3153061.4
-msgid  "In the two big color windows, you click to select a new color. You can select the color in the left or the right color window as you wish."
-msgstr ""
-
-#: source/text/shared/optionen/01010501.xhp#par_id3148944.5
-msgid  "In the right color window, you will see the entire color spectrum from the left to the right, with the colors at the top being fully saturated and the colors at the bottom being unsaturated."
-msgstr ""
-
-#: source/text/shared/optionen/01010501.xhp#par_id3149670.6
-msgid  "In the left color window, you will see a selection of colors, displaying a progressive spectrum, varying between the four colors in the four corners of this window. You can change the colors in the four corners as follows:"
-msgstr ""
-
-#: source/text/shared/optionen/01010501.xhp#par_id3154758.7
-#, fuzzy
-msgid  "Click the corner of the field in which you want to change the color."
-msgstr "Faça clique no canto do campo no qual pretende alterar a cor."
-
-#: source/text/shared/optionen/01010501.xhp#par_id3150398.8
-msgid  "In the right color window, click the desired new color for the corner field or enter the values, which define the color, in the numeric input fields."
-msgstr ""
-
-#: source/text/shared/optionen/01010501.xhp#par_id3151210.9
-msgid  "Apply the color selected on the right to the small field that is marked in the left color window by clicking the \<emph\><--\</emph\> button."
-msgstr ""
-
-#: source/text/shared/optionen/01010501.xhp#par_id3151383.10
-msgid  "The gradient in the left color window is immediately adjusted with respect to hue, saturation, and brightness."
+msgid  "            \<variable id=\"farbentext\"\>                \<ahelp hid=\".\"\>Allows you to define your own colors.\</ahelp\>            \</variable\>        "
 msgstr ""
 
 #: source/text/shared/optionen/01010501.xhp#par_id9701528
 msgid  "%PRODUCTNAME uses only the RGB color model for printing in color. The CMYK controls are provided only to ease the input of color values using CMYK notation."
 msgstr ""
 
-#: source/text/shared/optionen/01010501.xhp#hd_id3153192.11
-#, fuzzy
-msgid  "<--"
-msgstr "<--"
-
-#: source/text/shared/optionen/01010501.xhp#par_id3154909.12
-msgid  "\<ahelp hid=\"SVTOOLS:PUSHBUTTON:DLG_COLOR:BTN_1\"\>Click the \<emph\><--\</emph\> button to replace the selected color in the color palette with the color selected at the right. The button is enabled when you select a color in one of the four corners.\</ahelp\>"
-msgstr ""
-
-#: source/text/shared/optionen/01010501.xhp#hd_id3158409.13
-#, fuzzy
-msgid  "-->"
-msgstr "-->"
-
-#: source/text/shared/optionen/01010501.xhp#par_id3151043.14
-msgid  "\<ahelp hid=\"SVTOOLS:PUSHBUTTON:DLG_COLOR:BTN_2\"\>Sets the small selection cursor in the right window on the color, which corresponds to the selected color in the left window and updates the respective values in the numerical fields.\</ahelp\>"
-msgstr ""
-
-#: source/text/shared/optionen/01010501.xhp#hd_id3149203.15
+#: source/text/shared/optionen/01010501.xhp#hd_id5566778814.3
 #, fuzzy
 msgid  "Cyan"
 msgstr "Ciano "
 
-#: source/text/shared/optionen/01010501.xhp#par_id3159252.16
-msgid  "\<ahelp hid=\"SVTOOLS_METRICFIELD_DLG_COLOR_NUM_CYAN\"\>Sets the Cyan color value in the CMYK color model.\</ahelp\>"
-msgstr ""
-
-#: source/text/shared/optionen/01010501.xhp#hd_id3155429.17
+#: source/text/shared/optionen/01010501.xhp#hd_id5566778815.3
 #, fuzzy
 msgid  "Magenta"
 msgstr "Magenta"
 
-#: source/text/shared/optionen/01010501.xhp#par_id3152596.18
-msgid  "\<ahelp hid=\"SVTOOLS_METRICFIELD_DLG_COLOR_NUM_MAGENTA\"\>Sets the Magenta color value in the CMYK color model.\</ahelp\>"
-msgstr ""
-
-#: source/text/shared/optionen/01010501.xhp#hd_id3154147.19
+#: source/text/shared/optionen/01010501.xhp#hd_id5566778816.3
 #, fuzzy
 msgid  "Yellow"
 msgstr "Amarelo"
 
-#: source/text/shared/optionen/01010501.xhp#par_id3155306.20
-msgid  "\<ahelp hid=\"SVTOOLS_METRICFIELD_DLG_COLOR_NUM_YELLOW\"\>Sets the Yellow color value in the CMYK color model.\</ahelp\>"
-msgstr ""
-
-#: source/text/shared/optionen/01010501.xhp#hd_id3150105.21
+#: source/text/shared/optionen/01010501.xhp#hd_id5566778817.3
 #, fuzzy
 msgid  "Key"
 msgstr "Tecla"
 
-#: source/text/shared/optionen/01010501.xhp#par_id3146148.22
-msgid  "\<ahelp hid=\"SVTOOLS_METRICFIELD_DLG_COLOR_NUM_KEY\"\>Sets the Black color value or key (black) in the CMYK color model.\</ahelp\>"
-msgstr ""
-
-#: source/text/shared/optionen/01010501.xhp#hd_id3151114.23
+#: source/text/shared/optionen/01010501.xhp#hd_id5566778805.3
 #, fuzzy
 msgid  "Red"
 msgstr "Vermelho"
 
-#: source/text/shared/optionen/01010501.xhp#par_id3153726.24
-msgid  "\<ahelp hid=\"SVTOOLS:NUMERICFIELD:DLG_COLOR:NUM_RED\"\>Sets the Red color value in the RGB color model.\</ahelp\>"
-msgstr ""
-
-#: source/text/shared/optionen/01010501.xhp#hd_id3148618.25
+#: source/text/shared/optionen/01010501.xhp#hd_id5566778806.3
 #, fuzzy
 msgid  "Green"
 msgstr "Verde"
 
-#: source/text/shared/optionen/01010501.xhp#par_id3149298.26
-msgid  "\<ahelp hid=\"SVTOOLS:NUMERICFIELD:DLG_COLOR:NUM_GREEN\"\>Sets the Green color value in the RGB color model.\</ahelp\>"
-msgstr ""
-
-#: source/text/shared/optionen/01010501.xhp#hd_id3151075.27
+#: source/text/shared/optionen/01010501.xhp#hd_id5566778807.3
 #, fuzzy
 msgid  "Blue"
 msgstr "Azul"
 
-#: source/text/shared/optionen/01010501.xhp#par_id3148455.28
-msgid  "\<ahelp hid=\"SVTOOLS:NUMERICFIELD:DLG_COLOR:NUM_BLUE\"\>Sets the Blue color value in the RGB color model.\</ahelp\>"
-msgstr ""
-
-#: source/text/shared/optionen/01010501.xhp#hd_id3145647.29
-#, fuzzy
-msgid  "Color"
-msgstr "Cor"
-
-#: source/text/shared/optionen/01010501.xhp#par_id3154729.30
-msgid  "\<ahelp hid=\"SVTOOLS:NUMERICFIELD:DLG_COLOR:NUM_HUE\"\>Sets the Hue in the HSB color model.\</ahelp\>"
-msgstr ""
-
-#: source/text/shared/optionen/01010501.xhp#hd_id3144766.31
+#: source/text/shared/optionen/01010501.xhp#hd_id5566778811.3
 #, fuzzy
 msgid  "Saturation"
 msgstr "Saturação"
 
-#: source/text/shared/optionen/01010501.xhp#par_id3153512.32
-msgid  "\<ahelp hid=\"SVTOOLS:NUMERICFIELD:DLG_COLOR:NUM_SATURATION\"\>Sets the Saturation in the HSB color model.\</ahelp\>"
+#: source/text/shared/optionen/01010501.xhp#hd_id5566778800
+msgid  "Color Picker"
 msgstr ""
 
-#: source/text/shared/optionen/01010501.xhp#hd_id3156180.33
-#, fuzzy
-msgid  "Luminance"
-msgstr "Luminosidade"
-
-#: source/text/shared/optionen/01010501.xhp#par_id3146969.34
-msgid  "\<ahelp hid=\"SVTOOLS:NUMERICFIELD:DLG_COLOR:NUM_LUMINANCE\"\>Sets the Brightness in the HSB color model.\</ahelp\>"
+#: source/text/shared/optionen/01010501.xhp#hd_id5566778801.3
+msgid  "Color Field"
 msgstr ""
 
-#: source/text/shared/optionen/01010501.xhp#par_id3154164.35
-msgid  "In the left preview field, you will see the original color from the parent tab, \<emph\>Colors\</emph\>. In the right preview field, you will always see the current result of your work in this dialog."
+#: source/text/shared/optionen/01010501.xhp#par_id5566778801
+msgid  "            \<ahelp hid=\"cui:Control:ColorPicker:ColorField\"\>In the big color field, you click to select a new color.\</ahelp\>        "
+msgstr ""
+
+#: source/text/shared/optionen/01010501.xhp#hd_id5566778802.3
+msgid  "Color Slider"
+msgstr ""
+
+#: source/text/shared/optionen/01010501.xhp#par_id5566778802
+msgid  "Click any of the six option buttons Red, Green, Blue, Hue, Saturation, or Brightness. The color slider changes to show the available range of values. \<ahelp hid=\"cui:Control:ColorPicker:ColorSlider\"\>In the color slider, you will see the range of values that you can change, depending on the selected option button. Click inside the color slider to change values in the big color field.\</ahelp\>        "
+msgstr ""
+
+#: source/text/shared/optionen/01010501.xhp#hd_id5566778803.3
+msgid  "Current Color Preview"
+msgstr ""
+
+#: source/text/shared/optionen/01010501.xhp#par_id5566778803
+msgid  "            \<ahelp hid=\"cui:Control:ColorPicker:ColorPreview\"\>In the left half of the preview field, you will always see the current result of your work in this dialog.\</ahelp\>        "
+msgstr ""
+
+#: source/text/shared/optionen/01010501.xhp#hd_id5566778803b.3
+msgid  "Previous Color"
+msgstr ""
+
+#: source/text/shared/optionen/01010501.xhp#par_id5566778803b
+msgid  "            \<ahelp hid=\"cui:Control:ColorPicker:ColorPrevious\"\>In the right half of the preview field, you will see the original color from the parent tab, \<emph\>Colors\</emph\>.\</ahelp\>        "
+msgstr ""
+
+#: source/text/shared/optionen/01010501.xhp#hd_id5566778804.3
+msgid  "RGB"
+msgstr ""
+
+#: source/text/shared/optionen/01010501.xhp#par_id5566778804
+msgid  "These set of controls allow to choose a color in the RGB color model, where red, green, and blue are combined to produce a color."
+msgstr ""
+
+#: source/text/shared/optionen/01010501.xhp#par_id5566778805
+msgid  "            \<ahelp hid=\"cui:MetricField:ColorPicker:Red\"\>Sets the Red color value in the RGB color model.\</ahelp\>        "
+msgstr ""
+
+#: source/text/shared/optionen/01010501.xhp#par_id5566778806
+msgid  "            \<ahelp hid=\"cui:RadioButton:ColorPicker:Green\"\>Sets the Green color value in the RGB color model.\</ahelp\>        "
+msgstr ""
+
+#: source/text/shared/optionen/01010501.xhp#par_id5566778807
+msgid  "            \<ahelp hid=\"cui:MetricField:ColorPicker:Blue\"\>Sets the Blue color value in the RGB color model.\</ahelp\>        "
+msgstr ""
+
+#: source/text/shared/optionen/01010501.xhp#hd_id5566778808.3
+msgid  "Hex"
+msgstr ""
+
+#: source/text/shared/optionen/01010501.xhp#par_id5566778808
+msgid  "            \<ahelp hid=\"cui:MetricField:ColorPicker:Hex\"\>Sets the Red, Green, and Blue color value in the RGB color model, using a hexadecimal format RRGGBB.\</ahelp\>        "
+msgstr ""
+
+#: source/text/shared/optionen/01010501.xhp#hd_id5566778809.3
+msgid  "HSB"
+msgstr ""
+
+#: source/text/shared/optionen/01010501.xhp#par_id5566778809
+msgid  "These set of controls allow to choose a color in the HSB color space."
+msgstr ""
+
+#: source/text/shared/optionen/01010501.xhp#hd_id5566778810.3
+msgid  "Hue"
+msgstr ""
+
+#: source/text/shared/optionen/01010501.xhp#par_id5566778810
+msgid  "            \<ahelp hid=\"cui:MetricField:ColorPicker:Hue\"\>Sets the Hue in the HSB color model.\</ahelp\>        "
+msgstr ""
+
+#: source/text/shared/optionen/01010501.xhp#par_id5566778811
+msgid  "            \<ahelp hid=\"cui:MetricField:ColorPicker:Saturation\"\>Sets the Saturation in the HSB color model.\</ahelp\>        "
+msgstr ""
+
+#: source/text/shared/optionen/01010501.xhp#hd_id5566778812.3
+msgid  "Brightness"
+msgstr ""
+
+#: source/text/shared/optionen/01010501.xhp#par_id5566778812
+msgid  "            \<ahelp hid=\"cui:MetricField:ColorPicker:Brightness\"\>Sets the Brightness in the HSB color model.\</ahelp\>        "
+msgstr ""
+
+#: source/text/shared/optionen/01010501.xhp#hd_id5566778813.3
+msgid  "CMYK"
+msgstr ""
+
+#: source/text/shared/optionen/01010501.xhp#par_id5566778813
+msgid  "These set of controls allow to choose a color in the CMYK color model. CMYK refers to the four inks used in some color printing: cyan, magenta, yellow, and key (black)."
+msgstr ""
+
+#: source/text/shared/optionen/01010501.xhp#par_id5566778814
+msgid  "            \<ahelp hid=\"cui:MetricField:ColorPicker:Cyan\"\>Sets the Cyan color value in the CMYK color model.\</ahelp\>        "
+msgstr ""
+
+#: source/text/shared/optionen/01010501.xhp#par_id5566778815
+msgid  "            \<ahelp hid=\"cui:MetricField:ColorPicker:Magenta\"\>Sets the Magenta color value in the CMYK color model.\</ahelp\>        "
+msgstr ""
+
+#: source/text/shared/optionen/01010501.xhp#par_id5566778816
+msgid  "            \<ahelp hid=\"cui:MetricField:ColorPicker:Yellow\"\>Sets the Yellow color value in the CMYK color model.\</ahelp\>        "
+msgstr ""
+
+#: source/text/shared/optionen/01010501.xhp#par_id5566778817
+msgid  "            \<ahelp hid=\"cui:MetricField:ColorPicker:Key\"\>Sets the Black color value or key (black) in the CMYK color model.\</ahelp\>        "
 msgstr ""
 
 #: source/text/shared/optionen/01010600.xhp#tit
