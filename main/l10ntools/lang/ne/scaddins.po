@@ -457,7 +457,7 @@ msgstr "सुरु मिति अघि वा पछि कार्यद�
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.6.String.Text
 msgid  "Holidays"
-msgstr "बिदाको दिनहरू"
+msgstr "बिदाको दिन"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.7.String.Text
 msgid  "List of date values of days off (vacation, holidays, etc.)"
@@ -509,7 +509,7 @@ msgstr "महिनाहरू"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.5.String.Text
 msgid  "Number of months before or after the start date"
-msgstr "सुरु मितिको अघि वा पछिको महिनाहरूको नम्बर"
+msgstr "सुरु मितिको अगाडि वा पछाडिको महिनाहरूको नम्बर"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Weeknum.1.String.Text
 msgid  "Returns the number of the calendar week in which the specified date occurs."
@@ -733,7 +733,7 @@ msgstr "नम्बर(हरू)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Gcd.3.String.Text
 msgid  "Number or list of numbers"
-msgstr "नम्बर वा नम्बरहरूको सूची"
+msgstr "नम्बर वा नम्बहरूको सूची"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Lcm.1.String.Text
 msgid  "Returns the least common multiple"
@@ -845,7 +845,7 @@ msgstr "स्थानहरू"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.5.String.Text
 msgid  "Number of places used"
-msgstr "प्रयोग गरिएको स्थानहरूको नम्बर"
+msgstr "प्रयोग गरिने स्थानहरूको नम्बर"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Dec.1.String.Text
 msgid  "Converts a binary number to a decimal number"
@@ -897,7 +897,7 @@ msgstr "स्थानहरू"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Bin.5.String.Text
 msgid  "Number of places used"
-msgstr "प्रयोग गरिने स्थानहरूको नम्बर"
+msgstr "प्रयोग गरिएको स्थानहरूको नम्बर"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Dec.1.String.Text
 msgid  "Converts an octal number to a decimal number"
@@ -981,7 +981,7 @@ msgstr "नम्बर"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.3.String.Text
 msgid  "The decimal number"
-msgstr "दशमलब नम्बर"
+msgstr "दशमलव नम्बर"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.4.String.Text
 msgid  "Places"
@@ -1001,7 +1001,7 @@ msgstr "नम्बर"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Bin.3.String.Text
 msgid  "The hexadecimal number to be converted (as text)"
-msgstr "हेक्साडेशिमल नम्बरलाई (पाठको रूपमा) रूपान्तरण गरिने छ ।"
+msgstr "हेक्साडेसिमल नम्बरलाई (पाठको रूपमा) रूपान्तरण गरिने छ ।"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Bin.4.String.Text
 msgid  "Places"
@@ -1565,7 +1565,7 @@ msgstr "दर"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.13.String.Text
 msgid  "The rate of depreciation"
-msgstr "ह्रासकट्टीको दर"
+msgstr "ह्रासकट्टी दर"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.14.String.Text
 msgid  "Basis"
@@ -1573,7 +1573,7 @@ msgstr "आधार"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.15.String.Text
 msgid  "The year basis to be used"
-msgstr "प्रयोग गर्नका लागि वर्ष आधार"
+msgstr "वर्ष आधार प्रयो गरिन्छ"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.1.String.Text
 msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
@@ -1705,7 +1705,7 @@ msgstr "निकासा"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.3.String.Text
 msgid  "The issue date"
-msgstr "निकासाा मिति"
+msgstr "निकासा मिति"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.4.String.Text
 msgid  "Settlement"
@@ -1753,11 +1753,11 @@ msgstr "फर्छ्योट"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.4.String.Text
 msgid  "Maturity"
-msgstr "पूरा हुने मिति"
+msgstr "अवधि"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.5.String.Text
 msgid  "The maturity"
-msgstr "पूरा हुने मिति"
+msgstr "अवधि"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.6.String.Text
 msgid  "Investment"
@@ -1797,11 +1797,11 @@ msgstr "फर्छ्योट"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.4.String.Text
 msgid  "Maturity"
-msgstr "अवधि"
+msgstr "पूरा हुने मिति"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.5.String.Text
 msgid  "The maturity"
-msgstr "अवधि"
+msgstr "पूरा हुने मिति"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.6.String.Text
 msgid  "Price"
@@ -3229,7 +3229,7 @@ msgstr "मिति"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.3.String.Text
 msgid  "Any day in the desired year"
-msgstr "चाहेको वर्षमा कुनै दिन"
+msgstr "चाहेको वर्षमा कुनै पनि दिन"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.1.String.Text
 msgid  "Returns the number of days of the month in which the date entered occurs"
@@ -3253,7 +3253,7 @@ msgstr "मिति"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInYear.3.String.Text
 msgid  "Any day in the desired year"
-msgstr "चाहेको वर्षमा कुनै पनि दिन"
+msgstr "चाहेको वर्षमा कुनै दिन"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_WeeksInYear.1.String.Text
 msgid  "Returns the number of weeks of the year in which the date entered occurs"

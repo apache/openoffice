@@ -1773,7 +1773,7 @@ msgstr "नेभिगेटर"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_ROW.FixedText.Text
 msgid  "Row"
-msgstr "पङ्क्ति"
+msgstr "Row"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_ROW.NumericField.QuickHelpText
 msgid  "Row"
@@ -1781,7 +1781,7 @@ msgstr "Row"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_COL.FixedText.Text
 msgid  "Column"
-msgstr "स्तम्भ"
+msgstr "Column"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_COL.SpinField.QuickHelpText
 msgid  "Column"
@@ -2089,7 +2089,7 @@ msgstr "Text Attributes"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_FILE.ImageButton.QuickHelpText
 msgid  "Title"
-msgstr "File Name"
+msgstr "शीर्षक"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_TITEL.MenuItem.Text
 msgid  "Title"
@@ -3009,7 +3009,7 @@ msgstr "स्वत: रूपरेखा"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SUBTOTALS.String.Text
 msgid  "Subtotals"
-msgstr "उपजम्माहरू"
+msgstr "उप जम्मा"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SORT.String.Text
 msgid  "Sort"
@@ -3329,7 +3329,7 @@ msgstr "कुल जम्मा"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABLE_ERGEBNIS.String.Text
 msgid  "Result"
-msgstr "परिमाण"
+msgstr "परिणाम"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SPELLING.String.Text
 msgid  "Spellcheck"
@@ -3837,7 +3837,7 @@ msgstr "प्रकार्य सम्पादन गर्नुहोस�
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_NOTES.String.Text
 msgid  "Comments"
-msgstr "टिप्पणीहरू"
+msgstr "द्रष्टव्य"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELTAB.String.Text
 msgid  "Are you sure you want to delete the selected sheet(s)?"
@@ -5285,11 +5285,11 @@ msgstr "डाटाबेस"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.3.String.Text
 msgid  "The range of cells containing data."
-msgstr "डेटा समबेस गर्ने कक्षहरूको दायरा"
+msgstr "कक्षहरूको दायराले डेटा समावेश गर्दछ ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.4.String.Text
 msgid  "Database field"
-msgstr "डाटाबेस फाँट"
+msgstr "खोजी फाँट"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.5.String.Text
 msgid  "Indicates which database field (column) is to be used for the search criteria."
@@ -5313,11 +5313,11 @@ msgstr "डाटाबेस"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.3.String.Text
 msgid  "The range of cells containing data."
-msgstr "कक्षहरूको दायराले डेटा समावेश गर्दछ ।"
+msgstr "डेटा समाबेस गर्ने कक्षहरूको दायरा"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.4.String.Text
 msgid  "Database field"
-msgstr "खोजी फाँट"
+msgstr "डाटाबेस फाँट"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.5.String.Text
 msgid  "Indicates which database field (column) is to be used for the search criteria."
@@ -5341,7 +5341,7 @@ msgstr "डाटाबेस"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_AVERAGE.3.String.Text
 msgid  "The range of cells containing data."
-msgstr "डेटा समाबेस गर्ने कक्षहरूको दायरा"
+msgstr "डेटा समावेश गर्ने कक्षहरूको दायरा"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_AVERAGE.4.String.Text
 msgid  "Database field"
@@ -5369,7 +5369,7 @@ msgstr "डाटाबेस"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_GET.3.String.Text
 msgid  "The range of cells containing data."
-msgstr "डेटा समावेश गर्ने कक्षहरूको दायरा"
+msgstr "डेटा समावेश गर्ने कक्षहरूको दायराा को."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_GET.4.String.Text
 msgid  "Database field"
@@ -5397,7 +5397,7 @@ msgstr "डाटाबेस"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_MAX.3.String.Text
 msgid  "The range of cells containing data."
-msgstr "डेटा समावेश गर्ने कक्षहरूको दायराा को."
+msgstr "डेटा समावेश गर्ने कक्षहरूको दायरा"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_MAX.4.String.Text
 msgid  "Database field"
@@ -5661,7 +5661,7 @@ msgstr "नम्बर"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.3.String.Text
 msgid  "The internal number for the date."
-msgstr "डेटाका लागि एउटा इन्टिजर नम्बर"
+msgstr "मितिका लागि एटा इन्टिजर नम्बर"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.1.String.Text
 msgid  "Calculates the number of days between two dates based on a 360-day year."
@@ -5673,7 +5673,7 @@ msgstr "मिति १"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.3.String.Text
 msgid  "The start date for calculating the difference in days."
-msgstr "दिनहरूमा फरक गणना गर्नका लागि सुरु मिति"
+msgstr "दिनहरूमा फरक गणना गर्नका लागि सुरु दिन"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.4.String.Text
 msgid  "Date_2"
@@ -5913,7 +5913,7 @@ msgstr "प्रकार"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "प्रकार = १ ले अवधिको सुरुको देय मिति दर्शाउदछ, = ० अन्तमा ।"
+msgstr "प्रकार = ले अवधिको सुरुआतको देयमिति दर्शाउदछ, = ० ले अन्त्य"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.1.String.Text
 msgid  "Future value. Returns the future value of an investment based on regular payments and a constant interest rate."
@@ -5925,7 +5925,7 @@ msgstr "दर"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.3.String.Text
 msgid  "The rate of interest per period."
-msgstr "हरेक अवधिको ब्याज दर"
+msgstr "हरेक अवधिको ब्याजको दर"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.4.String.Text
 msgid  "NPER"
@@ -5941,7 +5941,7 @@ msgstr "PMT"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.7.String.Text
 msgid  "Regular payments. The constant annuity to be paid in each period."
-msgstr "नियमित भुक्तानी, हरेक अवधिमा एउटा अचल वार्षिकि तिरिन्छ ।"
+msgstr "नियमित भुक्तानी, हरेक अवधिमा तिरिने अचल वार्षिकि"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.8.String.Text
 msgid  "PV"
@@ -5949,7 +5949,7 @@ msgstr "PV"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.9.String.Text
 msgid  "Present value. The current value of a series of payments"
-msgstr "वर्तमान मान, भुक्तानीहरूको एउटा श्रृखलाको वर्तमान मान"
+msgstr "वर्तमान मान, भुक्तानीहरूको श्रृखलाहरूको वर्तमान मान"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.10.String.Text
 msgid  "Type"
@@ -5957,7 +5957,7 @@ msgstr "प्रकार"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "प्रकार = ले अवधिको सुरुआतको देयमिति दर्शाउदछ, = ० ले अन्त्य"
+msgstr "प्रकार = १ ले अवधिको सुरुआतको देयमिति दर्शाउदछ, = ० अन्त्य ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.1.String.Text
 msgid  "Payment period. Calculates the number of payment periods for an investment based on regular payments and a constant interest rate."
@@ -5969,7 +5969,7 @@ msgstr "दर"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.3.String.Text
 msgid  "The rate of interest per period."
-msgstr "हरेक अवधिको ब्याजको दर"
+msgstr "हरेक अवधिको ब्याज दर"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.4.String.Text
 msgid  "PMT"
@@ -5985,7 +5985,7 @@ msgstr "PV"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.7.String.Text
 msgid  "Present value. The current value of a series of payments"
-msgstr "वर्तमान मान, भुक्तानीहरूको श्रृखलाहरूको वर्तमान मान"
+msgstr "वर्तमान मान, भुक्तानीको श्रृखलाको वर्तमान मान"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.8.String.Text
 msgid  "FV"
@@ -6001,7 +6001,7 @@ msgstr "प्रकार"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "प्रकार = १ ले अवधिको सुरुआतको देयमिति दर्शाउदछ, = ० अन्त्य ।"
+msgstr "प्रकार = १ ले अवधिको सुरुआतमा देयमिति दर्शाउदछ, = ० अन्त्यमा"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.1.String.Text
 msgid  "Regular payments. Returns the periodic payment of an annuity, based on regular payments and a fixed periodic interest rate."
@@ -6029,7 +6029,7 @@ msgstr "PV"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.7.String.Text
 msgid  "Present value. The current value of a series of payments"
-msgstr "वर्तमान मान, भुक्तानीको श्रृखलाको वर्तमान मान"
+msgstr "वर्तमान मान, भुक्तानीहरूको एउटा श्रृखलाको हालको मान"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.8.String.Text
 msgid  "FV"
@@ -6045,7 +6045,7 @@ msgstr "प्रकार"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "प्रकार = १ ले अवधिको सुरुआतको देयमिति दर्शाउदछ, = ० अन्त्य ।"
+msgstr "प्रकार = ले अवधिको सुरुआत देयमिति दर्शाउदछ, = ० अन्त्य ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.1.String.Text
 msgid  "Calculates the constant interest rate of an investment with regular payments."
@@ -6073,7 +6073,7 @@ msgstr "PV"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.7.String.Text
 msgid  "Present value. The current value of a series of payments"
-msgstr "वर्तमान मान, भुक्तानीहरूको एउटा श्रृखलाको हालको मान"
+msgstr "वर्तमान मान, भुक्तानीहरूको श्रृखलाको हालको मान"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.8.String.Text
 msgid  "FV"
@@ -6089,11 +6089,11 @@ msgstr "प्रकार"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "प्रकार = १ ले अवधिको सुरुआतमा देयमिति दर्शाउदछ, = ० अन्त्यमा"
+msgstr "प्रकार = १ ले अवधिको सुरुआतको देयमिति दर्शाउदछ, = ० अन्त्य ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.12.String.Text
 msgid  "Guess"
-msgstr "अनुमान"
+msgstr "अनुमान गर्नुहोस्"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.13.String.Text
 msgid  "Guess. The estimate of the interest rate for the iterative calculating method."
@@ -6149,7 +6149,7 @@ msgstr "प्रकार"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.13.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "प्रकार = ले अवधिको सुरुआत देयमिति दर्शाउदछ, = ० अन्त्य ।"
+msgstr "प्रकार = १ ले अवधिको देयमितिको सुरु दर्शाउदछ, = ० अन्तमा ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.1.String.Text
 msgid  "Repayment. Calculates the repayment amount for a period for an investment whereby the payments are at regular intervals and the interest rate constant."
@@ -6201,7 +6201,7 @@ msgstr "प्रकार"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.13.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "प्रकार = १ ले अवधिको सुरुआतको देयमिति दर्शाउदछ, = ० अन्त्य ।"
+msgstr "प्रकार = १ ले अवधिको सुरुआत देयमिति दर्शाउदछ, = ० अन्तमा ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KUM_KAP_Z.1.String.Text
 msgid  "Cumulative Capital. Calculates the total amount of the repayment share in a period for an investment with constant interest rate."
@@ -6317,7 +6317,7 @@ msgstr "मूल्य"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.3.String.Text
 msgid  "Acquisition costs. The initial cost of the asset."
-msgstr "प्राप्ति मूल्य, सम्पत्तीको सुरुआतको मूल्य ।"
+msgstr "प्राप्ति मूल्य, सम्पत्तिको सुरुआतको मुल्य ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.4.String.Text
 msgid  "Salvage"
@@ -6325,7 +6325,7 @@ msgstr "Salvage"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.5.String.Text
 msgid  "Salvage: The remaining value of the asset at the end of its life."
-msgstr "Salvage: सम्पत्तिको लाईफको अन्त्यमा बाकि रहेको मान"
+msgstr "Salvage: सम्पत्तिको लाईफको अन्त्यमा बाकी रहेको मान"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.6.String.Text
 msgid  "Life"
@@ -6361,7 +6361,7 @@ msgstr "Salvage"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LIA.5.String.Text
 msgid  "Salvage: The remaining value of the asset at the end of its life."
-msgstr "Salvage: सम्पत्तिको लाईफको अन्त्यमा बाकी रहेको मान"
+msgstr "Salvage: सम्पत्तिको लाईफको अन्त्यमा बाकी रहेको मानि"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LIA.6.String.Text
 msgid  "Life"
@@ -7561,7 +7561,7 @@ msgstr "नम्बर"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LOG.3.String.Text
 msgid  "A value greater than 0 for which the logarithm is to be calculated."
-msgstr "० भन्दा ठूलो मान जसका लागि लगारिदम गणना गरिने छ ।"
+msgstr "० भन्दा ठूलो मान जसका लागि लगारिदम गणना गरिनु पर्दछ ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LOG.4.String.Text
 msgid  "Base"
@@ -8113,7 +8113,7 @@ msgstr "नयाँ डेटा X"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.7.String.Text
 msgid  "The array of X data for recalculating the values."
-msgstr "मानहरू पुन: गणना गर्नाका लागि X डेटाको एरे"
+msgstr "मानहरू पुन: गणनाका लागि रूपमा X डेटाक एरे"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.8.String.Text
 msgid  "Linear_type"
@@ -8637,7 +8637,7 @@ msgstr "बाइनोमियल वितरण प्रयोग गरे
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_B.2.String.Text
 msgid  "trials"
-msgstr "परीक्षणहरू"
+msgstr "परीक्षण"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_B.3.String.Text
 msgid  "The number of trials."
@@ -8729,7 +8729,7 @@ msgstr "परिक्षणहरूको एउटा श्रूङ्ख�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.4.String.Text
 msgid  "trials"
-msgstr "परीक्षण"
+msgstr "परीक्षणहरू"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.5.String.Text
 msgid  "The total number of trials."
@@ -8853,7 +8853,7 @@ msgstr "मीन"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.5.String.Text
 msgid  "The mean value. The mean value of the normal distribution."
-msgstr "मीन मान, सामान्य वितरणको मीन मान"
+msgstr "मीन मान, सामान्य वितरणका लागि मीन मान"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.6.String.Text
 msgid  "STDEV"
@@ -9333,15 +9333,15 @@ msgstr "मान जसका लागि F वितरण गणना ग�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_DIST.4.String.Text
 msgid  "degrees_freedom_1"
-msgstr "स्वतन्त्रताको डिग्री १"
+msgstr "स्वतन्त्रताको डिग्रीहरू १"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_DIST.5.String.Text
 msgid  "The degrees of freedom in the numerator of the F distribution."
-msgstr "F वितरणको गणकमा स्वतन्त्रताको डिग्रीहरू"
+msgstr "संभावना मान जसका लागि उल्टा F वितरण गणना गरिने छ ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_DIST.6.String.Text
 msgid  "degrees_freedom_2"
-msgstr "स्वतन्त्रताको डिग्री २"
+msgstr "स्वतन्त्रताको डिग्रीहरू २"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_DIST.7.String.Text
 msgid  "The degrees of freedom in the denominator of the F distribution."
@@ -9393,7 +9393,7 @@ msgstr "स्वतन्त्रताको डिग्रीहरू"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHI_DIST.5.String.Text
 msgid  "The degrees of freedom of the chi square distribution."
-msgstr "चि वर्ग वितरणको स्वतन्त्रताको डिग्रीहरू"
+msgstr "चि वर्ग वितरणको स्वतन्त्रताको नम्बर"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHISQ_DIST.1.String.Text
 msgid  "Returns left-tail probability of the cumulative distribution function or values of the probability density function of the chi-square distribution."
@@ -9509,7 +9509,7 @@ msgstr "गणना २"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VARIATIONEN.5.String.Text
 msgid  "The selection number taken from the elements."
-msgstr "तत्वहरूबाट लिइएको चयन नम्बर"
+msgstr "अल्फाहरूबाट लिइएको चयन नम्बर"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VARIATIONEN_2.1.String.Text
 msgid  "Returns the number of permutations for a given number of objects (repetition allowed)."
@@ -9885,7 +9885,7 @@ msgstr "सन्दर्भ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AREAS.3.String.Text
 msgid  "The reference to a (multiple) range."
-msgstr "(बहुविध) दायराका लागि सन्दर्भ"
+msgstr "(बहुविध) दायरामा सन्दर्भ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHOSE.1.String.Text
 msgid  "Selects a value from a list of up to 30 value arguments."
@@ -10117,7 +10117,7 @@ msgstr "खोजी मापदण्ड"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOOKUP.3.String.Text
 msgid  "The value to be used for comparison."
-msgstr "तुलना गर्न प्रयोग गरिने मान"
+msgstr "तुलनाका लागि प्रयोग हुने मान"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOOKUP.4.String.Text
 msgid  "Search vector"
@@ -10473,7 +10473,7 @@ msgstr "पाठ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.5.String.Text
 msgid  "The text in which a search is to be made."
-msgstr "पाठ जसमा खोजी सुरु गरिन्छ ।"
+msgstr "पाठ जसमा खोजी बनाउनु पर्दछ ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.6.String.Text
 msgid  "position"
@@ -11089,6 +11089,54 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MIDB.7.String.Text
 msgid  "The number of characters for the text."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.1.String.Text
+msgid  "Return the cosecant of an angle. CSC(x)=1/SIN(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.3.String.Text
+msgid  "The angle in radians for which the cosecant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.1.String.Text
+msgid  "Return the secant of an angle. SEC(x)=1/COS(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.3.String.Text
+msgid  "The angle in radians for which the secant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.1.String.Text
+msgid  "Return the hyperbolic cosecant of a hyperbolic angle. CSCH(x)=1/SINH(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.3.String.Text
+msgid  "The hyperbolic angle in radians for which the hyperbolic cosecant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.1.String.Text
+msgid  "Return the hyperbolic secant of a hyperbolic angle. SECH(x)=1/COSH(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.3.String.Text
+msgid  "The hyperbolic angle in radians for which the hyperbolic secant is to be calculated."
 msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_APPLICATION.String.Text
@@ -13021,7 +13069,7 @@ msgstr "कक्ष मान..."
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 msgid  "equal to"
-msgstr "बरावर"
+msgstr "बराबर"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 msgid  "less than"
@@ -13033,7 +13081,7 @@ msgstr "भन्दा बढी"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 msgid  "less than or equal to"
-msgstr "भन्दा कम वा बरावर"
+msgstr "भन्दा कम वा बराबर"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 msgid  "greater than or equal to"
