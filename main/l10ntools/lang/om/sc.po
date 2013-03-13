@@ -204,7 +204,7 @@ msgstr "Filannoo kana irraa"
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.RB_INAREA.ImageButton.QuickHelpText
 #, fuzzy
 msgid  "Shrink"
-msgstr "Qooqsi"
+msgstr "Xinneessi"
 
 #: source/ui/dbgui/pivot.src#RID_SCDLG_PIVOT_LAYOUT.FT_OUTAREA.FixedText.Text
 #, fuzzy
@@ -658,7 +658,7 @@ msgstr "Gargaarsa Naqaa"
 #: source/ui/dbgui/validate.src#TAB_DLG_VALIDATION.1.TP_VALIDATION_ERROR.PageItem.Text
 #, fuzzy
 msgid  "Error Alert"
-msgstr "Dogoggora"
+msgstr "Ofeeggannoo Dogoggoraa"
 
 #: source/ui/dbgui/validate.src#TAB_DLG_VALIDATION.PageItem.Text
 #, fuzzy
@@ -2502,8 +2502,9 @@ msgid  "Scale"
 msgstr "Safara"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
+#, fuzzy
 msgid  "- none -"
-msgstr "- homaa -"
+msgstr "- yaadannoo -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
 #, fuzzy
@@ -2516,6 +2517,7 @@ msgid  "- user defined -"
 msgstr "- fayyadamaan kan murtaa'e -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATROW.Default.StringList.item
+#, fuzzy
 msgid  "- none -"
 msgstr "- yaadannoo -"
 
@@ -3109,7 +3111,7 @@ msgstr "Wardiilee filaman qofa maxxansi"
 #: source/ui/src/optdlg.src#RID_SCPAGE_CONTENT.LB_OBJGRF.Default.StringList.item
 #, fuzzy
 msgid  "Show"
-msgstr "Mul'isi"
+msgstr "Agarsiisi"
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_CONTENT.LB_DIAGRAM.Default.StringList.item
 #, fuzzy
@@ -3721,7 +3723,7 @@ msgstr "Fooyi"
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_QUERY.String.Text
 #, fuzzy
 msgid  "Filter"
-msgstr "Gingilchi"
+msgstr "Gingilchaa"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_DBDATA.String.Text
 #, fuzzy
@@ -4737,7 +4739,7 @@ msgstr "Fankishinii Gulaali"
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_NOTES.String.Text
 #, fuzzy
 msgid  "Comments"
-msgstr "Yaadota"
+msgstr "Yaada"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELTAB.String.Text
 #, fuzzy
@@ -6956,7 +6958,7 @@ msgstr "Adu'u_1"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.3.String.Text
 #, fuzzy
 msgid  "The start date for calculating the difference in days."
-msgstr "Adu'u jalqabaa garaagarummaa guyyaalee herreguuf."
+msgstr "Garaagarummaa guyyaalee herreguuf adu'u jalqabaa."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.4.String.Text
 #, fuzzy
@@ -7244,7 +7246,7 @@ msgstr "Akaakuu"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.11.String.Text
 #, fuzzy
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "Akaakuu = 1 kanfaltii yeroo jalqabaa bakka bu'a, = 0 kan yeroo dhumaa."
+msgstr "Akaakuu = 1 kanfaltii yeroo jalqabaa bakka bu'a, = 0 kan dhumaa."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.1.String.Text
 msgid  "Future value. Returns the future value of an investment based on regular payments and a constant interest rate."
@@ -7258,7 +7260,7 @@ msgstr "Maakkii"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.3.String.Text
 #, fuzzy
 msgid  "The rate of interest per period."
-msgstr "Maakkii dhalaa yeroo tokkoon."
+msgstr "Maakkii dhalaa yeroo tokkoo."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.4.String.Text
 #, fuzzy
@@ -7297,7 +7299,7 @@ msgstr "Akaakuu"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.11.String.Text
 #, fuzzy
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "Akaakuu = 1 kanfaltii yeroo jalqabaa bakka bu'a, = 0 kan yeroo dhumaa."
+msgstr "Akaakuu = 1 kanfaltii yeroo jalqabaa bakka bu'a, = 0 kan dhumaa."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.1.String.Text
 msgid  "Payment period. Calculates the number of payment periods for an investment based on regular payments and a constant interest rate."
@@ -7349,7 +7351,7 @@ msgstr "Akaakuu"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.11.String.Text
 #, fuzzy
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "Akaakuu = 1 kanfaltii yeroo jalqabaa bakka bu'a, = 0 kan dhumaa."
+msgstr "Akaakuu = 1 yeroo jalqabaa bakka bu'a, = 0 kan dhumaa."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.1.String.Text
 msgid  "Regular payments. Returns the periodic payment of an annuity, based on regular payments and a fixed periodic interest rate."
@@ -7401,7 +7403,7 @@ msgstr "Akaakuu"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.11.String.Text
 #, fuzzy
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "Akaakuu = 1 kanfaltii yeroo jalqabaa bakka bu'a, = 0 kan dhumaa."
+msgstr "Akaakuu = 1 jalqaba yeroo bakka bu'a, = 0 kan dhumaa."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.1.String.Text
 msgid  "Calculates the constant interest rate of an investment with regular payments."
@@ -7718,7 +7720,7 @@ msgstr "Baasii"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.3.String.Text
 #, fuzzy
 msgid  "Acquisition costs. The initial cost of the asset."
-msgstr "Baasiiwwan argamaa. Baasii jalqabaa qabeenya dhaabbataa."
+msgstr "Baasii argannaa. Baasii jalqabaa qabeenya dhaabbataa."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.4.String.Text
 #, fuzzy
@@ -7728,7 +7730,7 @@ msgstr "Haftee"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.5.String.Text
 #, fuzzy
 msgid  "Salvage: The remaining value of the asset at the end of its life."
-msgstr "Haftee: Gatii haftee qabeenya dhaabbataa yeroo dhuma jireenya isaatti."
+msgstr "Haftee: Gatii haftee qabeenya dhaabbataa kan yeroo dhuma jireenya isaa."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.6.String.Text
 #, fuzzy
@@ -7826,7 +7828,7 @@ msgstr ""
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GDA.10.String.Text
 #, fuzzy
 msgid  "Factor"
-msgstr "Akkumsa"
+msgstr "Hirmaayaa"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GDA.11.String.Text
 msgid  "Factor. The factor for balance decline. F = 2 means a double declining balance factor"
@@ -9399,7 +9401,7 @@ msgstr "lakkoofsa"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.3.String.Text
 #, fuzzy
 msgid  "The number to be rounded up."
-msgstr "Lakkoofsa ol siiqfamu."
+msgstr "Lakkoofsa ol siiqsamu."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.4.String.Text
 #, fuzzy
@@ -9448,7 +9450,7 @@ msgstr "Lakkoofsa"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_EVEN.3.String.Text
 #, fuzzy
 msgid  "The number to be rounded up."
-msgstr "Lakkoofsa ol siiqfamu."
+msgstr "Lakkoofsa ol siiqsamu."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ODD.1.String.Text
 msgid  "Rounds a positive number up and negative number down to the nearest odd integer."
@@ -9774,7 +9776,7 @@ msgstr "Waraantoo deetaa Y."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.4.String.Text
 #, fuzzy
 msgid  "data_X"
-msgstr "deetaa_X"
+msgstr "deeta_X"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.5.String.Text
 #, fuzzy
@@ -9864,7 +9866,7 @@ msgstr "deetaa_X"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.5.String.Text
 #, fuzzy
 msgid  "The X data array as the basis for the regression."
-msgstr "Waraantoo deetaa X akka bu'uura riigreeshiniitti."
+msgstr "Waraantoo deetaa X bu'uura riigreeshiniitti."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.6.String.Text
 #, fuzzy
@@ -10608,7 +10610,7 @@ msgstr "yaaliiwwan"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.5.String.Text
 #, fuzzy
 msgid  "The total number of trials."
-msgstr "Lakkoofsa yaaliiwwanii."
+msgstr "Lakkoofsa ida'ammii yaaliiwwanii."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.6.String.Text
 #, fuzzy
@@ -10947,7 +10949,7 @@ msgstr "C"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_EXP_DIST.7.String.Text
 #, fuzzy
 msgid  "Cumulated. C=0 calculates the density function, C=1 the distribution."
-msgstr "Sassaabame. C=0 fankishinii rukkinaa herreega, C=1 raabsa."
+msgstr "Sassaabame. C=0 fankishinii rukkinaa, C=1 raabsa."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAMMA_DIST.1.String.Text
 msgid  "Returns the value of the probability density function or the cumulative distribution function for the Gamma distribution."
@@ -11281,12 +11283,12 @@ msgstr "Gatii raabsi T isaa herreegamu."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_DIST.4.String.Text
 #, fuzzy
 msgid  "degrees_freedom"
-msgstr "birmadummaa_diigriiwwan"
+msgstr "birmadummaa_diigrii"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_DIST.5.String.Text
 #, fuzzy
 msgid  "The degrees of freedom of the T distribution."
-msgstr "Birmadummaa diigrii raabsa T."
+msgstr "Diigrii birmadummaa raabsa T."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_DIST.6.String.Text
 #, fuzzy
@@ -11314,7 +11316,7 @@ msgstr ""
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_INV.4.String.Text
 #, fuzzy
 msgid  "degrees_freedom"
-msgstr "birmadummaa_diigriiwwan"
+msgstr "birmadummaa_diigrii"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_INV.5.String.Text
 #, fuzzy
@@ -11413,7 +11415,7 @@ msgstr "birmadummaa_diigrii"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHI_DIST.5.String.Text
 #, fuzzy
 msgid  "The degrees of freedom of the chi square distribution."
-msgstr "Birmadummaa diigrii raabsa iskuweerii chii."
+msgstr "Diigrii bilisummaa raabsa chii-iskuweerii."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHISQ_DIST.1.String.Text
 msgid  "Returns left-tail probability of the cumulative distribution function or values of the probability density function of the chi-square distribution."
@@ -11679,7 +11681,7 @@ msgstr "Yaalii F herreega."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.2.String.Text
 #, fuzzy
 msgid  "data_1"
-msgstr "deeta_1"
+msgstr "deetaa_1"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.3.String.Text
 #, fuzzy
@@ -11689,7 +11691,7 @@ msgstr "Waraantoo kuusaa jalqabaa."
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.4.String.Text
 #, fuzzy
 msgid  "data_2"
-msgstr "deeta_2"
+msgstr "deetaa_2"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.5.String.Text
 #, fuzzy
@@ -13464,6 +13466,54 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MIDB.7.String.Text
 msgid  "The number of characters for the text."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.1.String.Text
+msgid  "Return the cosecant of an angle. CSC(x)=1/SIN(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.3.String.Text
+msgid  "The angle in radians for which the cosecant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.1.String.Text
+msgid  "Return the secant of an angle. SEC(x)=1/COS(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.3.String.Text
+msgid  "The angle in radians for which the secant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.1.String.Text
+msgid  "Return the hyperbolic cosecant of a hyperbolic angle. CSCH(x)=1/SINH(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.3.String.Text
+msgid  "The hyperbolic angle in radians for which the hyperbolic cosecant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.1.String.Text
+msgid  "Return the hyperbolic secant of a hyperbolic angle. SECH(x)=1/COSH(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.3.String.Text
+msgid  "The hyperbolic angle in radians for which the hyperbolic secant is to be calculated."
 msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_APPLICATION.String.Text
@@ -15320,7 +15370,7 @@ msgstr "Gadi"
 #: source/ui/src/miscdlgs.src#RID_SCDLG_INSCONT.BTN_MV_RIGHT.RadioButton.Text
 #, fuzzy
 msgid  "~Right"
-msgstr "Mirgaatti"
+msgstr "Mirga"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_INSCONT.FL_MOVE.FixedLine.Text
 #, fuzzy
