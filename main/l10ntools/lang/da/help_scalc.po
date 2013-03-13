@@ -5973,7 +5973,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060106.xhp#hd_id3154843.35
 msgid  "Syntax"
-msgstr "Syntaks"
+msgstr "Syntaks:"
 
 #: source/text/scalc/01/04060106.xhp#par_id3147475.36
 msgid  "ABS(Number)"
@@ -5985,7 +5985,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060106.xhp#hd_id3155823.38
 msgid  "Example"
-msgstr "Eksempel"
+msgstr "Eksempel:"
 
 #: source/text/scalc/01/04060106.xhp#par_id3152787.39
 msgid  "\<item type=\"input\"\>=ABS(-56)\</item\> returns 56."
@@ -6013,7 +6013,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060106.xhp#hd_id3145144.44
 msgid  "Syntax"
-msgstr "Syntaks"
+msgstr "Syntaks:"
 
 #: source/text/scalc/01/04060106.xhp#par_id3153931.45
 msgid  "COUNTBLANK(Range)"
@@ -6025,7 +6025,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060106.xhp#hd_id3146139.47
 msgid  "Example"
-msgstr "Eksempel"
+msgstr "Eksempel:"
 
 #: source/text/scalc/01/04060106.xhp#par_id3148586.48
 msgid  "\<item type=\"input\"\>=COUNTBLANK(A1:B2)\</item\> returns 4 if cells A1, A2, B1, and B2 are all empty."
@@ -6045,7 +6045,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060106.xhp#hd_id3153565.52
 msgid  "Syntax"
-msgstr "Syntaks"
+msgstr "Syntaks:"
 
 #: source/text/scalc/01/04060106.xhp#par_id3150020.53
 msgid  "ACOS(Number)"
@@ -6061,7 +6061,7 @@ msgstr "For at returnere vinklen i grader skal du bruge funktionen GRADER."
 
 #: source/text/scalc/01/04060106.xhp#hd_id3149882.55
 msgid  "Example"
-msgstr "Eksempel"
+msgstr "Eksempel:"
 
 #: source/text/scalc/01/04060106.xhp#par_id3150128.56
 msgid  "\<item type=\"input\"\>=ACOS(-1)\</item\> returns 3.14159265358979 (PI radians)"
@@ -6085,7 +6085,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060106.xhp#hd_id3145295.62
 msgid  "Syntax"
-msgstr "Syntaks:"
+msgstr "Syntaks"
 
 #: source/text/scalc/01/04060106.xhp#par_id3151017.63
 msgid  "ACOSH(Number)"
@@ -6101,7 +6101,7 @@ msgstr "Tal skal være større end eller lig med 1."
 
 #: source/text/scalc/01/04060106.xhp#hd_id3150566.65
 msgid  "Example"
-msgstr "Eksempel:"
+msgstr "Eksempel"
 
 #: source/text/scalc/01/04060106.xhp#par_id3145629.66
 msgid  "\<item type=\"input\"\>=ACOSH(1)\</item\> returns 0."
@@ -6125,7 +6125,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060106.xhp#hd_id3153225.72
 msgid  "Syntax"
-msgstr "Syntaks:"
+msgstr "Syntaks"
 
 #: source/text/scalc/01/04060106.xhp#par_id3158419.73
 msgid  "ACOT(Number)"
@@ -6141,7 +6141,7 @@ msgstr "For at returnere vinklen i grader skal du bruge funktionen GRADER."
 
 #: source/text/scalc/01/04060106.xhp#hd_id3147538.75
 msgid  "Example"
-msgstr "Eksempel:"
+msgstr "Eksempel"
 
 #: source/text/scalc/01/04060106.xhp#par_id3155375.76
 msgid  "\<item type=\"input\"\>=ACOT(1)\</item\> returns 0.785398163397448 (PI/4 radians)."
@@ -6165,7 +6165,7 @@ msgstr ""
 
 #: source/text/scalc/01/04060106.xhp#hd_id3152585.82
 msgid  "Syntax"
-msgstr "Syntaks:"
+msgstr "Syntaks"
 
 #: source/text/scalc/01/04060106.xhp#par_id3147172.83
 msgid  "ACOTH(Number)"
@@ -6181,7 +6181,7 @@ msgstr "Der fremkommer en fejl, hvis Tal er mellem -1 og 1 inklusiv."
 
 #: source/text/scalc/01/04060106.xhp#hd_id3083452.85
 msgid  "Example"
-msgstr "Eksempel:"
+msgstr "Eksempel"
 
 #: source/text/scalc/01/04060106.xhp#par_id3150608.86
 msgid  "\<item type=\"input\"\>=ACOTH(1.1)\</item\> returns inverse hyperbolic cotangent of 1.1, approximately 1.52226."
@@ -13421,7 +13421,7 @@ msgstr "Række"
 
 #: source/text/scalc/01/04060112.xhp#par_id3155851.109
 msgid  "Row number of the element; numbering starts at 0."
-msgstr "Rækkenummer; nummereringen starter ved 0."
+msgstr "Rækkenummer. Nummerering begynder ved 0."
 
 #: source/text/scalc/01/04060112.xhp#par_id3153150.110
 msgid  "18"
@@ -13433,7 +13433,7 @@ msgstr "Tabel"
 
 #: source/text/scalc/01/04060112.xhp#par_id3150154.112
 msgid  "Table number of the element; numbering starts at 0."
-msgstr "Tabelnummer; nummereringen starter ved 0."
+msgstr "Tabelnummer. Nummerering begynder ved 0."
 
 #: source/text/scalc/01/04060112.xhp#par_id3149289.113
 msgid  "20"
@@ -13597,7 +13597,7 @@ msgstr "Række"
 
 #: source/text/scalc/01/04060112.xhp#par_id3150424.153
 msgid  "Row number of the element; numbering starts at 0."
-msgstr "Rækkenummer. Nummerering begynder ved 0."
+msgstr "Rækkenummer; nummereringen starter ved 0."
 
 #: source/text/scalc/01/04060112.xhp#par_id3154797.154
 msgid  "18"
@@ -13609,7 +13609,7 @@ msgstr "Tabel"
 
 #: source/text/scalc/01/04060112.xhp#par_id3149513.156
 msgid  "Table number of the element; numbering starts at 0."
-msgstr "Tabelnummer. Nummerering begynder ved 0."
+msgstr "Tabelnummer; nummereringen starter ved 0."
 
 #: source/text/scalc/01/04060112.xhp#par_id3145306.157
 msgid  "20"
