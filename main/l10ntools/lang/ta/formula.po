@@ -1227,6 +1227,22 @@ msgstr "#NUM!"
 msgid  "#N/A"
 msgstr "#N/A"
 
+#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT.String.Text
+msgid  "CSC"
+msgstr ""
+
+#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT.String.Text
+msgid  "SEC"
+msgstr ""
+
+#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_COSECANT_HYP.String.Text
+msgid  "CSCH"
+msgstr ""
+
+#: source/core/resource/core_resource.src#RID_STRLIST_FUNCTION_NAMES.SC_OPCODE_SECANT_HYP.String.Text
+msgid  "SECH"
+msgstr ""
+
 #: source/ui/dlg/formdlgs.src#RID_FORMULATAB_FUNCTION.LB_CATEGORY.Default.StringList.item
 msgid  "All"
 msgstr "அனைத்தும்"
@@ -1265,7 +1281,7 @@ msgstr "சூத்திரம் (~m)"
 
 #: source/ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.FT_RESULT.FixedText.Text
 msgid  "Function result"
-msgstr "செயல்பாட்டு முடிவு"
+msgstr "செயல்பாடு விளைவு"
 
 #: source/ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.FT_FORMULA_RESULT.FixedText.Text
 msgid  "Result"
@@ -1285,7 +1301,7 @@ msgstr "<< பின் (~B)"
 
 #: source/ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.BTN_FORWARD.PushButton.Text
 msgid  "~Next >>"
-msgstr "அடுத்து (~N)>> "
+msgstr "அடுத்து (~N) >>"
 
 #: source/ui/dlg/formdlgs.src#RID_FORMULADLG_FORMULA_MODAL.STR_TITLE1.String.Text
 msgid  "Function Wizard"

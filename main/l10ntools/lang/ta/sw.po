@@ -845,11 +845,11 @@ msgstr "அனைத்து தோற்றங்கள்"
 
 #: source/ui/app/app.src#DLG_STYLE_DESIGNER.SFX_STYLE_FAMILY_PARA.SFXSTYLEBIT_USED.FilterList.item
 msgid  "Applied Styles"
-msgstr "Applied Styles"
+msgstr "செயல்படுத்திய பாணிகள்"
 
 #: source/ui/app/app.src#DLG_STYLE_DESIGNER.SFX_STYLE_FAMILY_PARA.SFXSTYLEBIT_USERDEF.FilterList.item
 msgid  "Custom Styles"
-msgstr "Custom Styles"
+msgstr "தனிபயன் பாணிகள்"
 
 #: source/ui/app/app.src#DLG_STYLE_DESIGNER.SFX_STYLE_FAMILY_PARA.SFXSTYLEBIT_AUTO.FilterList.item
 msgid  "Automatic"
@@ -1470,7 +1470,7 @@ msgstr "பின்னுக்கு அனுப்பு"
 #: source/ui/app/mn.src#MN_DRAW5.MN_SUB_ARRANGE.MenuItem.Text
 #, fuzzy
 msgid  "~Arrange"
-msgstr "ஒழுங்குப்படுத்து"
+msgstr "ஒழுங்குபடுத்து"
 
 #: source/ui/app/mn.src#MN_DRAW6.MN_SUB_ARRANGE.MenuItem.Text
 #, fuzzy
@@ -1645,7 +1645,7 @@ msgstr "கட்டுப்பாடு"
 #: source/ui/app/mn.src#MN_DRWTXT_POPUPMENU.String.Text
 #, fuzzy
 msgid  "Draw Object text"
-msgstr "Draw Object text"
+msgstr "பொருள் உரை வரை"
 
 #: source/ui/app/mn.src#MN_REDCOMMENT.FN_DELETE_COMMENT.MenuItem.Text
 #, fuzzy
@@ -2048,8 +2048,9 @@ msgid  "Paragraph"
 msgstr "பத்தி"
 
 #: source/ui/chrdlg/paradlg.src#DLG_PARA.1.TP_PARA_STD.PageItem.Text
+#, fuzzy
 msgid  "Indents & Spacing"
-msgstr "உள்ளடக்கம் & இடைவெளி"
+msgstr "உள்ளடக்கங்கள் & இடைவெளி"
 
 #: source/ui/chrdlg/paradlg.src#DLG_PARA.1.TP_PARA_ALIGN.PageItem.Text
 #, fuzzy
@@ -5364,8 +5365,9 @@ msgid  "Background"
 msgstr "பின்னணி"
 
 #: source/ui/dialog/regionsw.src#DLG_INSERT_SECTION.1.TP_SECTION_FTNENDNOTES.PageItem.Text
+#, fuzzy
 msgid  "Footnotes/Endnotes"
-msgstr "அடிக்குறிப்புகள்/முடிவுரை"
+msgstr "Footnotes/Endnotes"
 
 #: source/ui/dialog/regionsw.src#DLG_INSERT_SECTION.ST_INSERT.String.Text
 #, fuzzy
@@ -5403,8 +5405,9 @@ msgid  "Footnotes/Endnotes"
 msgstr "Footnotes/Endnotes"
 
 #: source/ui/dialog/regionsw.src#DLG_SECTION_PROPERTIES.PageItem.Text
+#, fuzzy
 msgid  "Options"
-msgstr "விருப்பங்கள்"
+msgstr "Options"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FL_FTN.FixedLine.Text
 #, fuzzy
@@ -5437,8 +5440,9 @@ msgid  "Be~fore"
 msgstr "Be~fore"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FT_FTN_SUFFIX.FixedText.Text
+#, fuzzy
 msgid  "Aft~er"
-msgstr "Aft~er"
+msgstr "பின்"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FL_END.FixedLine.Text
 #, fuzzy
@@ -5805,7 +5809,7 @@ msgstr "காக்க வரைவியல்..."
 #: source/ui/docvw/docvw.src#MN_READONLY_POPUP.MN_READONLY_GRAPHICTOGALLERY.MN_READONLY_TOGALLERYLINK.MenuItem.Text
 #, fuzzy
 msgid  "As Link"
-msgstr "As Link"
+msgstr "இணைப்பாக"
 
 #: source/ui/docvw/docvw.src#MN_READONLY_POPUP.MN_READONLY_GRAPHICTOGALLERY.MN_READONLY_TOGALLERYCOPY.MenuItem.Text
 #, fuzzy
@@ -8016,8 +8020,9 @@ msgid  "Font"
 msgstr "எழுத்துரு"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_1.1.TP_CHAR_EXT.PageItem.Text
+#, fuzzy
 msgid  "Font Effects"
-msgstr "எழுத்துரு விளைவுகள்"
+msgstr "எழுத்து விளைவுகள்"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_1.1.TP_CHAR_POS.PageItem.Text
 #, fuzzy
@@ -9386,8 +9391,9 @@ msgid  "Index/Table"
 msgstr "அகரவரிசை/அட்டவணை"
 
 #: source/ui/index/cnttab.src#DLG_MULTI_TOX.1.TP_TOX_ENTRY.PageItem.Text
+#, fuzzy
 msgid  "Entries"
-msgstr "Entries"
+msgstr "உள்ளீடுகள்"
 
 #: source/ui/index/cnttab.src#DLG_MULTI_TOX.1.TP_TOX_STYLES.PageItem.Text
 #, fuzzy
@@ -9605,8 +9611,9 @@ msgid  "~New..."
 msgstr "புதிய..."
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.MB_AUTOMARK.MN_AUTOMARK_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "~Edit..."
-msgstr "திருத்து..."
+msgstr "திருத்து...."
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.MB_AUTOMARK.MenuItem.Text
 #, fuzzy
@@ -14182,7 +14189,7 @@ msgstr "Active Window"
 #: source/ui/utlui/navipi.src#DLG_NAVIGATION_PI.ST_HIDDEN.String.Text
 #, fuzzy
 msgid  "hidden"
-msgstr "மறைத்தல்"
+msgstr "மறைவான"
 
 #: source/ui/utlui/navipi.src#DLG_NAVIGATION_PI.ST_ACTIVE.String.Text
 #, fuzzy

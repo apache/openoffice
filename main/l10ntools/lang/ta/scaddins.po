@@ -709,8 +709,9 @@ msgid  "Returns the value 'true' if the number is even"
 msgstr "இரட்டை படை எண் என்றால் 'சரி' என்ற மதிப்பைத் தரும்"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.2.String.Text
+#, fuzzy
 msgid  "Number"
-msgstr "எண்"
+msgstr "எண்கள்"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.3.String.Text
 #, fuzzy
@@ -725,7 +726,7 @@ msgstr "ஒற்றை எண்ணாக இருப்பின் 'true' �
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Isodd.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "எண்கள்"
+msgstr "எண்"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Isodd.3.String.Text
 #, fuzzy
@@ -738,8 +739,9 @@ msgid  "Returns the multinomial coefficient of a set of numbers"
 msgstr "எண்களுக்கான "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.2.String.Text
+#, fuzzy
 msgid  "Number(s)"
-msgstr "எண்(கள்)"
+msgstr "எண்(கள்"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.3.String.Text
 msgid  "Number or list of numbers for which you want the multinomial coefficient"
@@ -795,12 +797,14 @@ msgid  "Returns the integer portion of a division"
 msgstr "வகுத்தலில் முழு எண் பகுதியைத் தரும்"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.2.String.Text
+#, fuzzy
 msgid  "Numerator"
-msgstr "மீதி"
+msgstr "Numerator"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.3.String.Text
+#, fuzzy
 msgid  "The dividend"
-msgstr "வகுத்தல்"
+msgstr "The dividend"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.4.String.Text
 #, fuzzy
@@ -808,8 +812,9 @@ msgid  "Denominator"
 msgstr "Denominator"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.5.String.Text
+#, fuzzy
 msgid  "The divisor"
-msgstr "வகுப்பு"
+msgstr "வகுப்பி"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.1.String.Text
 #, fuzzy
@@ -884,7 +889,7 @@ msgstr "பொதுவாக பெரிதாக உள்ள வகு எ�
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Gcd.2.String.Text
 #, fuzzy
 msgid  "Number(s)"
-msgstr "எண்(கள்"
+msgstr "எண்(கள்)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Gcd.3.String.Text
 #, fuzzy
@@ -929,7 +934,7 @@ msgstr "N"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besseli.5.String.Text
 #, fuzzy
 msgid  "The order of the Bessel function"
-msgstr "The order of the Bessel function"
+msgstr "Bessel செயல்பாட்டின் வரிசை"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselj.1.String.Text
 #, fuzzy
@@ -2038,12 +2043,12 @@ msgstr "விலை"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.10.String.Text
 #, fuzzy
 msgid  "Par"
-msgstr "Par"
+msgstr "பார்"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.11.String.Text
 #, fuzzy
 msgid  "The par value"
-msgstr "The par value"
+msgstr "பார் மதிப்பு"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.12.String.Text
 #, fuzzy
@@ -2077,7 +2082,7 @@ msgstr "வழங்கல்"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.3.String.Text
 #, fuzzy
 msgid  "The issue date"
-msgstr "வழங்கிய நாள்"
+msgstr "வழங்கிய தேதி"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.4.String.Text
 #, fuzzy
@@ -2212,7 +2217,7 @@ msgstr "விலை"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.8.String.Text
 #, fuzzy
 msgid  "Redemption"
-msgstr "எடுத்தல்"
+msgstr "எடுத்தவை"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.9.String.Text
 #, fuzzy
@@ -2261,17 +2266,17 @@ msgstr "கூப்பன்"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.7.String.Text
 #, fuzzy
 msgid  "The coupon rate"
-msgstr "கூப்பன் விகிதம்"
+msgstr "கூப்பன் விலை"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.8.String.Text
 #, fuzzy
 msgid  "Yield"
-msgstr "Yield"
+msgstr "பெற்றவை"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.9.String.Text
 #, fuzzy
 msgid  "The yield"
-msgstr "The yield"
+msgstr "பெற்றவை"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.10.String.Text
 #, fuzzy
@@ -2350,7 +2355,7 @@ msgstr "Pv"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.7.String.Text
 #, fuzzy
 msgid  "The present value"
-msgstr "The present value"
+msgstr "நடப்பு மதிப்பு"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.8.String.Text
 #, fuzzy
@@ -2484,17 +2489,17 @@ msgstr "விலை"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.8.String.Text
 #, fuzzy
 msgid  "Yield"
-msgstr "பெற்றவை"
+msgstr "பெற்றல்"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.9.String.Text
 #, fuzzy
 msgid  "The yield"
-msgstr "பெற்றவை"
+msgstr "The yield"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.10.String.Text
 #, fuzzy
 msgid  "Redemption"
-msgstr "எடுத்தவை"
+msgstr "எடுத்தல்"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.11.String.Text
 #, fuzzy
@@ -2607,7 +2612,7 @@ msgstr "வழங்கல்"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.7.String.Text
 #, fuzzy
 msgid  "The issue date"
-msgstr "வழங்கிய தேதி"
+msgstr "வழங்கிய நாள்"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.8.String.Text
 #, fuzzy
@@ -2622,12 +2627,12 @@ msgstr "விலை"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.10.String.Text
 #, fuzzy
 msgid  "Yield"
-msgstr "பெற்றவை"
+msgstr "Yield"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.11.String.Text
 #, fuzzy
 msgid  "The yield"
-msgstr "The yield"
+msgstr "பெற்றவை"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.12.String.Text
 #, fuzzy
@@ -2676,7 +2681,7 @@ msgstr "கூப்பன் விலை"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.8.String.Text
 #, fuzzy
 msgid  "Yield"
-msgstr "பெற்றல்"
+msgstr "Yield"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.9.String.Text
 #, fuzzy
@@ -2939,7 +2944,7 @@ msgstr "வழங்கல்"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.7.String.Text
 #, fuzzy
 msgid  "The issue date"
-msgstr "வழங்கிய நாள்"
+msgstr "வழங்கிய தேதி"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.8.String.Text
 #, fuzzy
@@ -3004,7 +3009,7 @@ msgstr "தள்ளுபடி"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbilleq.7.String.Text
 #, fuzzy
 msgid  "The discount rate"
-msgstr "தள்ளுபடி விகிதம்"
+msgstr "தள்ளூபடி விகிதம்"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Tbillprice.1.String.Text
 #, fuzzy
@@ -3869,8 +3874,9 @@ msgid  "End date"
 msgstr "முடிவு தேதி"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.5.String.Text
+#, fuzzy
 msgid  "Last day of the period"
-msgstr "காலத்தின் கடைசி நாள்."
+msgstr "காலக்கெடுவின் கடைசி நாள்."
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DiffWeeks.6.String.Text
 #, fuzzy
@@ -3959,8 +3965,9 @@ msgid  "Date"
 msgstr "தேதி"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_IsLeapYear.3.String.Text
+#, fuzzy
 msgid  "Any day in the desired year"
-msgstr "விருப்பட்ட மாதத்தில் ஏதாவது ஒரு நாள்"
+msgstr "விருப்பட்ட வருடத்தில் ஏதாவது ஒரு நாள்"
 
 #: source/datefunc/datefunc.src#RID_DATE_FUNCTION_DESCRIPTIONS.DATE_FUNCDESC_DaysInMonth.1.String.Text
 msgid  "Returns the number of days of the month in which the date entered occurs"
