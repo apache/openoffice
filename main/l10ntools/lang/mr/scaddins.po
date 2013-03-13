@@ -708,8 +708,9 @@ msgid  "Returns the value 'true' if the number is even"
 msgstr "सम संख्या असल्यास खरे मूल्य परत देतो"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.2.String.Text
+#, fuzzy
 msgid  "Number"
-msgstr "संख्या"
+msgstr "क्रमांक"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.3.String.Text
 #, fuzzy
@@ -722,8 +723,9 @@ msgid  "Returns the value 'true' if the number is odd"
 msgstr "विषम संख्या असल्यास खरे मूल्य परत देतो"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Isodd.2.String.Text
+#, fuzzy
 msgid  "Number"
-msgstr "संख्या"
+msgstr "क्रमांक"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Isodd.3.String.Text
 #, fuzzy
@@ -794,8 +796,9 @@ msgid  "Returns the integer portion of a division"
 msgstr "विभाजनाचा पूर्णांक हिस्सा परत देतो"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.2.String.Text
+#, fuzzy
 msgid  "Numerator"
-msgstr "विभाज्य/अंश"
+msgstr "अंश"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.3.String.Text
 #, fuzzy
@@ -803,8 +806,9 @@ msgid  "The dividend"
 msgstr " लाभांश"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.4.String.Text
+#, fuzzy
 msgid  "Denominator"
-msgstr "भाजक"
+msgstr "छेद/भाजक"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.5.String.Text
 #, fuzzy
@@ -817,8 +821,9 @@ msgid  "Returns a number rounded to a specified multiple"
 msgstr "निर्दिष्ट बहुगुणकात पूर्ण संख्या परत देतो"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.2.String.Text
+#, fuzzy
 msgid  "Number"
-msgstr "संख्या"
+msgstr "क्रमांक"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.3.String.Text
 #, fuzzy
@@ -841,8 +846,9 @@ msgid  "Returns the square root of a number which has been multiplied by pi"
 msgstr "ज्या संख्येस पायने गुणलेले आहे त्याचा वर्ग मूल परत देतो"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Sqrtpi.2.String.Text
+#, fuzzy
 msgid  "Number"
-msgstr "संख्या"
+msgstr "क्रमांक"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Sqrtpi.3.String.Text
 #, fuzzy
@@ -885,8 +891,9 @@ msgid  "Number(s)"
 msgstr "संख्या"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Gcd.3.String.Text
+#, fuzzy
 msgid  "Number or list of numbers"
-msgstr "संख्या किंवा संख्यांची यादी"
+msgstr "संख्या किंवा संख्येची यादी"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Lcm.1.String.Text
 #, fuzzy
@@ -916,7 +923,7 @@ msgstr "X"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besseli.3.String.Text
 #, fuzzy
 msgid  "The value at which the function is to be evaluated"
-msgstr "ज्या मूल्यावर फलाचे मूल्यांकन करावयाचे आहे ते मूल्य"
+msgstr "ज्या मूल्यावर फंक्शनचे मूल्यांकन करावयाचे आहे ते मूल्य"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besseli.4.String.Text
 #, fuzzy
@@ -926,7 +933,7 @@ msgstr "N"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besseli.5.String.Text
 #, fuzzy
 msgid  "The order of the Bessel function"
-msgstr "बेस्सेल फंक्शनचा क्रम"
+msgstr "बेस्सेल फलाचा क्रम"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselj.1.String.Text
 #, fuzzy
@@ -1011,12 +1018,12 @@ msgstr "बैनरी संख्येचे ओक्टल संख्य
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "संख्या"
+msgstr "क्रमांक"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.3.String.Text
 #, fuzzy
 msgid  "The binary number to be converted (as text)"
-msgstr "रूपांतरण करावयाची बैनरी संख्या (मजकूरासारखे)"
+msgstr "रूपांतरण करावयाचा बैनरी क्रमांक (मजकूरासारखे)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.4.String.Text
 #, fuzzy
@@ -1026,7 +1033,7 @@ msgstr "स्थान"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.5.String.Text
 #, fuzzy
 msgid  "Number of places used"
-msgstr "उपयोगात आणलेल्या स्थानांचा क्रमांक"
+msgstr "उपयोगात आणलेली एकुण स्थान"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Dec.1.String.Text
 #, fuzzy
@@ -1036,7 +1043,7 @@ msgstr "बैनरी क्रमांकाचे दशमान क्र
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Dec.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "क्रमांक"
+msgstr "संख्या"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Dec.3.String.Text
 #, fuzzy
@@ -1051,7 +1058,7 @@ msgstr "बैनरी क्रमांकाचे हेक्झाडे�
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Hex.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "क्रमांक"
+msgstr "संख्या"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Hex.3.String.Text
 #, fuzzy
@@ -1076,7 +1083,7 @@ msgstr "ओक्टल क्रमांकाचे बैनरी क्र
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Bin.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "क्रमांक"
+msgstr "संख्या"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Bin.3.String.Text
 #, fuzzy
@@ -1091,7 +1098,7 @@ msgstr "स्थान"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Bin.5.String.Text
 #, fuzzy
 msgid  "Number of places used"
-msgstr "उपयोगात आणलेल्या स्थानांचा क्रमांक"
+msgstr "उपयोगात आणलेली एकुण स्थान"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Dec.1.String.Text
 #, fuzzy
@@ -1101,7 +1108,7 @@ msgstr "ओक्टल क्रमांकाचे दशमान क्र
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Dec.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "क्रमांक"
+msgstr "संख्या"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Dec.3.String.Text
 #, fuzzy
@@ -1116,7 +1123,7 @@ msgstr "ओक्टल क्रमांकाचे हेक्झाडे�
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Hex.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "क्रमांक"
+msgstr "संख्या"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Hex.3.String.Text
 #, fuzzy
@@ -1131,7 +1138,7 @@ msgstr "स्थान"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Hex.5.String.Text
 #, fuzzy
 msgid  "Number of places used"
-msgstr "उपयोगात आणलेली एकुण स्थान"
+msgstr "उपयोगात आणलेली एकुण स्थानांचा "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Bin.1.String.Text
 #, fuzzy
@@ -1141,7 +1148,7 @@ msgstr "दशमान संख्येचे बैनरी संख्य
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Bin.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "संख्या"
+msgstr "पायरया"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Bin.3.String.Text
 #, fuzzy
@@ -1156,7 +1163,7 @@ msgstr "स्थान"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Bin.5.String.Text
 #, fuzzy
 msgid  "Number of places used"
-msgstr "उपयोगात आणलेली एकुण स्थान"
+msgstr "उपयोगात आणलेली एकुण स्थान "
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Hex.1.String.Text
 #, fuzzy
@@ -1166,7 +1173,7 @@ msgstr "दशमान संख्येचे हेक्झाडेसि�
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Hex.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "क्रमांक"
+msgstr "संख्या"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Hex.3.String.Text
 #, fuzzy
@@ -1181,7 +1188,7 @@ msgstr "स्थान"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Hex.5.String.Text
 #, fuzzy
 msgid  "Number of places used"
-msgstr "उपयोगात आणलेली एकुण स्थानांचा "
+msgstr "उपयोगात आणलेल्या स्थानांचा क्रमांक"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.1.String.Text
 #, fuzzy
@@ -1191,7 +1198,7 @@ msgstr "दशमान संख्येचे ओक्टल संख्य
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "पायरया"
+msgstr "संख्या"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.3.String.Text
 #, fuzzy
@@ -1206,7 +1213,7 @@ msgstr "स्थान"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.5.String.Text
 #, fuzzy
 msgid  "Number of places used"
-msgstr "उपयोगात आणलेली एकुण स्थान "
+msgstr "उपयोगात आणलेली एकुण स्थान"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Bin.1.String.Text
 #, fuzzy
@@ -1221,7 +1228,7 @@ msgstr "संख्या"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Bin.3.String.Text
 #, fuzzy
 msgid  "The hexadecimal number to be converted (as text)"
-msgstr "रूपांतरण करावयाचा हेक्झाडेसिमल क्रमांक (मजकूरासारखे)"
+msgstr "रूपांतरण करावयाची हेक्झाडेसिमल संख्या (मजकूरासारखे)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Bin.4.String.Text
 #, fuzzy
@@ -1246,7 +1253,7 @@ msgstr "क्रमांक"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Dec.3.String.Text
 #, fuzzy
 msgid  "The hexadecimal number to be converted (as text)"
-msgstr "रूपांतरण करावयाची हेक्झाडेसिमल संख्या (मजकूरासारखे)"
+msgstr "रूपांतरण करावयाचा हेक्झाडेसिमल संख्या (मजकूरासारखे)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Oct.1.String.Text
 #, fuzzy
@@ -1306,12 +1313,12 @@ msgstr "त्रुटी फल परत देतो"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Erf.2.String.Text
 #, fuzzy
 msgid  "Lower limit"
-msgstr "निम्न सीमा"
+msgstr "खालची सीमा"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Erf.3.String.Text
 #, fuzzy
 msgid  "The lower limit for integration"
-msgstr "संकलनाची निम्न सीमा"
+msgstr "समस्त साठी खालची सीमा"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Erf.4.String.Text
 #, fuzzy
@@ -2335,7 +2342,7 @@ msgstr "Nper"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.5.String.Text
 #, fuzzy
 msgid  "Number of payment periods"
-msgstr "पैसे फेडण्याचा एकुण कालावधींचे "
+msgstr "पैसे फेडण्याचा एकुण कालावधी"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.6.String.Text
 #, fuzzy

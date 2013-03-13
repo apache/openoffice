@@ -600,8 +600,9 @@ msgid  "Overall progress:"
 msgstr "संपूर्ण प्रगती:"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT_PROGRESS.FixedText.Text
+#, fuzzy
 msgid  "document $current$ of $overall$"
-msgstr " $संपूर्ण$चे $चालू$ कागदपत्र"
+msgstr "$overall$ चे  $current$ कागदपत्र"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_MIGRATION_DONE.FixedText.Text
 msgid  "All forms and reports have been successfully processed. Press 'Next' to show a detailed summary."
@@ -2791,7 +2792,7 @@ msgstr "dBASE जुळणीची मांडणी करा"
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_TEXT.String.Text
 #, fuzzy
 msgid  "Set up a connection to text files"
-msgstr "मजकूर फाइलंसाठी जुळणीची पूर्वतयारी  करा"
+msgstr "मजकूर फाइलंसाठी जुळणीची मांडणी करा"
 
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MSACCESS.String.Text
 #, fuzzy
@@ -3888,8 +3889,9 @@ msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Ima
 msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.String.Text
+#, fuzzy
 msgid  "Insert/remove primary key"
-msgstr "प्राइमरी कि अंतर्भूत करा/काढून टाका "
+msgstr "प्राइमरी कि अंतर्भूत करा/काढून टाका"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_YES.String.Text
 #, fuzzy
