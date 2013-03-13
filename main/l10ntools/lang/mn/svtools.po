@@ -353,7 +353,7 @@ msgstr "Толь бичиг"
 
 #: source/control/ctrlbox.src#STR_SVT_COLLATE_PINYIN.String.Text
 msgid  "Pinyin"
-msgstr "Ханзны буулгалт"
+msgstr "Ханз буулгалт"
 
 #: source/control/ctrlbox.src#STR_SVT_COLLATE_STROKE.String.Text
 msgid  "Stroke"
@@ -1688,146 +1688,182 @@ msgid  "Database"
 msgstr "Өгөгдлийн сан"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_CALC_TEMPLATE.String.Text
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet Template"
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet Template"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Хүснэгт баримтын хэв"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_DRAW_TEMPLATE.String.Text
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Drawing Template"
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing Template"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Зургийн хэв"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_IMPRESS_TEMPLATE.String.Text
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Presentation Template"
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation Template"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Үзүүлэнгийн хэв"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_WRITER_TEMPLATE.String.Text
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Text Document Template"
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document Template"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Бичвэр баримтын хэв"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_LOCALE_VOLUME.String.Text
+#, fuzzy
 msgid  "Local drive"
 msgstr "Локал хөтлөгч"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_FLOPPY_VOLUME.String.Text
+#, fuzzy
 msgid  "Disk drive"
 msgstr "Диск драйвер"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_CDROM_VOLUME.String.Text
+#, fuzzy
 msgid  "CD-ROM drive"
 msgstr "CD-ROM драйвер"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_REMOTE_VOLUME.String.Text
+#, fuzzy
 msgid  "Network connection"
 msgstr "Сүлжээний холболт"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT.String.Text
+#, fuzzy
 msgid  "MS PowerPoint Document"
 msgstr "MS PowerPoint баримт"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT_TEMPLATE.String.Text
+#, fuzzy
 msgid  "MS PowerPoint Template"
 msgstr "MS PowerPoint хэв"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_POWERPOINT_SHOW.String.Text
+#, fuzzy
 msgid  "MS PowerPoint Show"
 msgstr "MS PowerPoint үзүүлэн"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXMATH_DOC.String.Text
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Formula"
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Formula"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION томьёо"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXCHART_DOC.String.Text
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Chart"
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION диаграмм"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXDRAW_DOC.String.Text
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Drawing"
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Дүрслэл"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXCALC_DOC.String.Text
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet"
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION хүснэгт баримт"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXIMPRESS_DOC.String.Text
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Presentation"
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION үзүүлэн"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXWRITER_DOC.String.Text
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Text Document"
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION бичвэр баримт"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_SXGLOBAL_DOC.String.Text
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Master Document"
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Master Document"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION мастер баримт"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_MATHML_DOC.String.Text
+#, fuzzy
 msgid  "MathML Document"
 msgstr "MathML баримт"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_DATABASE_DOC.String.Text
+#, fuzzy
 msgid  "OpenDocument Database"
 msgstr "OpenDocument өгөгдлийн сан"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_DRAW_DOC.String.Text
+#, fuzzy
 msgid  "OpenDocument Drawing"
 msgstr "OpenDocument дүрслэл"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_MATH_DOC.String.Text
+#, fuzzy
 msgid  "OpenDocument Formula"
 msgstr "OpenDocument томьёо"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_GLOBAL_DOC.String.Text
+#, fuzzy
 msgid  "OpenDocument Master Document"
 msgstr "OpenDocument мастер баримт"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_IMPRESS_DOC.String.Text
+#, fuzzy
 msgid  "OpenDocument Presentation"
 msgstr "OpenDocument үзүүлэн"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_CALC_DOC.String.Text
+#, fuzzy
 msgid  "OpenDocument Spreadsheet"
 msgstr "OpenDocument хүснэгт баримт"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_WRITER_DOC.String.Text
+#, fuzzy
 msgid  "OpenDocument Text"
 msgstr "OpenDocument бичвэр"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_CALC_TEMPLATE.String.Text
+#, fuzzy
 msgid  "OpenDocument Spreadsheet Template"
 msgstr "OpenDocument хүснэгт баримтын Хэв"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_DRAW_TEMPLATE.String.Text
+#, fuzzy
 msgid  "OpenDocument Drawing Template"
 msgstr "OpenDocument дүрслэлийн хэв"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_IMPRESS_TEMPLATE.String.Text
+#, fuzzy
 msgid  "OpenDocument Presentation Template"
 msgstr "OpenDocument үзүүлэнгийн хэв"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_OO_WRITER_TEMPLATE.String.Text
+#, fuzzy
 msgid  "OpenDocument Text Template"
 msgstr "OpenDocument бичвэрийн хэв"
 
 #: source/misc/imagemgr.src#STR_DESCRIPTION_EXTENSION.String.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Extension"
 msgstr "%PRODUCTNAME өргөтгөл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NONE.PairedList.item
+#, fuzzy
 msgid  "[None]"
 msgstr "[Байхгүй]"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DONTKNOW.PairedList.item
+#, fuzzy
 msgid  "Unknown"
 msgstr "Тодорхойгүй"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SYSTEM.PairedList.item
+#, fuzzy
 msgid  "Default"
 msgstr "Өгөгдмөл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AFRIKAANS.PairedList.item
+#, fuzzy
 msgid  "Afrikaans (South Africa)"
 msgstr "Африк хэл (Өмнөд африк)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ALBANIAN.PairedList.item
+#, fuzzy
 msgid  "Albanian"
 msgstr "Албани хэл"
 
@@ -1836,10 +1872,12 @@ msgid  "Arabic"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_ALGERIA.PairedList.item
+#, fuzzy
 msgid  "Arabic (Algeria)"
 msgstr "Араб хэл (Алжир) "
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_BAHRAIN.PairedList.item
+#, fuzzy
 msgid  "Arabic (Bahrain)"
 msgstr "Араб хэл (Бахрейн) "
 
@@ -1856,6 +1894,7 @@ msgid  "Arabic (Djibouti)"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_EGYPT.PairedList.item
+#, fuzzy
 msgid  "Arabic (Egypt)"
 msgstr "Араб хэл (Египет)"
 
@@ -1864,6 +1903,7 @@ msgid  "Arabic (Eritrea)"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_IRAQ.PairedList.item
+#, fuzzy
 msgid  "Arabic (Iraq)"
 msgstr "Араб хэл (Ирак)"
 
@@ -1872,18 +1912,22 @@ msgid  "Arabic (Israel)"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_JORDAN.PairedList.item
+#, fuzzy
 msgid  "Arabic (Jordan)"
 msgstr "Араб хэл (Иордан)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_KUWAIT.PairedList.item
+#, fuzzy
 msgid  "Arabic (Kuwait)"
 msgstr "Араб хэл (Кувейт)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_LEBANON.PairedList.item
+#, fuzzy
 msgid  "Arabic (Lebanon)"
 msgstr "Араб хэл (Лебан)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_LIBYA.PairedList.item
+#, fuzzy
 msgid  "Arabic (Libya)"
 msgstr "Араб хэл (Ливи)"
 
@@ -1892,10 +1936,12 @@ msgid  "Arabic (Mauritania)"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_MOROCCO.PairedList.item
+#, fuzzy
 msgid  "Arabic (Morocco)"
 msgstr "Араб хэл (Марокко)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_OMAN.PairedList.item
+#, fuzzy
 msgid  "Arabic (Oman)"
 msgstr "Араб хэл (Оман)"
 
@@ -1904,10 +1950,12 @@ msgid  "Arabic (Palestine)"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_QATAR.PairedList.item
+#, fuzzy
 msgid  "Arabic (Qatar)"
 msgstr "Араб хэл (Катар) "
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_SAUDI_ARABIA.PairedList.item
+#, fuzzy
 msgid  "Arabic (Saudi Arabia)"
 msgstr "Араб хэл (Саудын Араб)"
 
@@ -1920,162 +1968,202 @@ msgid  "Arabic (Sudan)"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_SYRIA.PairedList.item
+#, fuzzy
 msgid  "Arabic (Syria)"
 msgstr "Араб хэл (Сири)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_TUNISIA.PairedList.item
+#, fuzzy
 msgid  "Arabic (Tunisia)"
 msgstr "Араб хэл (Тунис)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_UAE.PairedList.item
+#, fuzzy
 msgid  "Arabic (UAE)"
 msgstr "Араб хэл (АНЭ)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARABIC_YEMEN.PairedList.item
+#, fuzzy
 msgid  "Arabic (Yemen)"
 msgstr "Араб хэл (Йемен) "
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ARMENIAN.PairedList.item
+#, fuzzy
 msgid  "Armenian"
 msgstr "Армен хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ASSAMESE.PairedList.item
+#, fuzzy
 msgid  "Assami"
 msgstr "Ассами хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AZERI_LATIN.PairedList.item
+#, fuzzy
 msgid  "Azerbaijani Latin"
 msgstr "Азербайжан латин"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AZERI_CYRILLIC.PairedList.item
+#, fuzzy
 msgid  "Azerbaijani Cyrillic"
 msgstr "Азербайжан кирилл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BASQUE.PairedList.item
+#, fuzzy
 msgid  "Basque"
 msgstr "Баск хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BENGALI.PairedList.item
+#, fuzzy
 msgid  "Bengali (India)"
 msgstr "Бенгал хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BULGARIAN.PairedList.item
+#, fuzzy
 msgid  "Bulgarian"
 msgstr "Болгар хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BELARUSIAN.PairedList.item
+#, fuzzy
 msgid  "Belarusian"
 msgstr "Белорусс хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CATALAN.PairedList.item
+#, fuzzy
 msgid  "Catalan"
 msgstr "Каталан хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_TRADITIONAL.PairedList.item
+#, fuzzy
 msgid  "Chinese (traditional)"
 msgstr "Хятад хэл (Уламжлалт)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_SIMPLIFIED.PairedList.item
+#, fuzzy
 msgid  "Chinese (simplified)"
 msgstr "Хятад хэл (хялбаршуулсан)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_HONGKONG.PairedList.item
+#, fuzzy
 msgid  "Chinese (Hong Kong)"
 msgstr "Хятад хэл (Гонг Конг)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_SINGAPORE.PairedList.item
+#, fuzzy
 msgid  "Chinese (Singapore)"
 msgstr "Хятад хэл (Сингапур)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CHINESE_MACAU.PairedList.item
+#, fuzzy
 msgid  "Chinese (Macau)"
 msgstr "Хятад хэл (Макао)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CROATIAN.PairedList.item
+#, fuzzy
 msgid  "Croatian"
 msgstr "Хорват хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_CZECH.PairedList.item
+#, fuzzy
 msgid  "Czech"
 msgstr "Чех хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DANISH.PairedList.item
+#, fuzzy
 msgid  "Danish"
 msgstr "Дани хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DUTCH.PairedList.item
+#, fuzzy
 msgid  "Dutch (Netherlands)"
 msgstr "Датч (Недерланд)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DUTCH_BELGIAN.PairedList.item
+#, fuzzy
 msgid  "Dutch (Belgium)"
 msgstr "Датч (Бельги)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_US.PairedList.item
+#, fuzzy
 msgid  "English (USA)"
 msgstr "Англи хэл (АНУ)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_UK.PairedList.item
+#, fuzzy
 msgid  "English (UK)"
 msgstr "Англи хэл (Их Британи)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_AUS.PairedList.item
+#, fuzzy
 msgid  "English (Australia)"
 msgstr "Англи хэл (Австрали)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_CAN.PairedList.item
+#, fuzzy
 msgid  "English (Canada)"
 msgstr "Англи хэл (Канад)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_NZ.PairedList.item
+#, fuzzy
 msgid  "English (New Zealand)"
 msgstr "Англи хэл (Шинэ зеланд)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_EIRE.PairedList.item
+#, fuzzy
 msgid  "English (Eire)"
 msgstr "Англи хэл ()"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_SAFRICA.PairedList.item
+#, fuzzy
 msgid  "English (South Africa)"
 msgstr "Англи хэл (Өмнөд африк)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_JAMAICA.PairedList.item
+#, fuzzy
 msgid  "English (Jamaica)"
 msgstr "Англи хэл (Ямайк)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_CARRIBEAN.PairedList.item
+#, fuzzy
 msgid  "English (Caribbean)"
 msgstr "Англи хэл (Карибик)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_BELIZE.PairedList.item
+#, fuzzy
 msgid  "English (Belize)"
 msgstr "Англи хэл (Белиз) "
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_TRINIDAD.PairedList.item
+#, fuzzy
 msgid  "English (Trinidad)"
 msgstr "Англи хэл (Тринидад)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_ZIMBABWE.PairedList.item
+#, fuzzy
 msgid  "English (Zimbabwe)"
 msgstr "Англи хэл (Зимбабве)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_PHILIPPINES.PairedList.item
+#, fuzzy
 msgid  "English (Philippines)"
 msgstr "Англи хэл (Филиппин)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ENGLISH_INDIA.PairedList.item
+#, fuzzy
 msgid  "English (India)"
 msgstr "Англи хэл (Энэтхэг)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ESTONIAN.PairedList.item
+#, fuzzy
 msgid  "Estonian"
 msgstr "Эстони хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FINNISH.PairedList.item
+#, fuzzy
 msgid  "Finnish"
 msgstr "Финлянд хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FAEROESE.PairedList.item
+#, fuzzy
 msgid  "Faroese"
 msgstr "Фарое хэл"
 
@@ -2084,762 +2172,952 @@ msgid  "Persian"
 msgstr ""
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH.PairedList.item
+#, fuzzy
 msgid  "French (France)"
 msgstr "Франц хэл (Франц)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_BELGIAN.PairedList.item
+#, fuzzy
 msgid  "French (Belgium)"
 msgstr "Франц хэл (Белги)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_CANADIAN.PairedList.item
+#, fuzzy
 msgid  "French (Canada)"
 msgstr "Франц хэл (Канад)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_SWISS.PairedList.item
+#, fuzzy
 msgid  "French (Switzerland)"
 msgstr "Франц хэл (Швецарь)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_LUXEMBOURG.PairedList.item
+#, fuzzy
 msgid  "French (Luxembourg)"
 msgstr "Франц хэл (Луксембур)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRENCH_MONACO.PairedList.item
+#, fuzzy
 msgid  "French (Monaco)"
 msgstr "Франц хэл (Монако)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GASCON.PairedList.item
+#, fuzzy
 msgid  "Gascon"
 msgstr "Гасгон хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN.PairedList.item
+#, fuzzy
 msgid  "German (Germany)"
 msgstr "Герман хэл (Герман)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_SWISS.PairedList.item
+#, fuzzy
 msgid  "German (Switzerland)"
 msgstr "Герман хэл (Швецарь)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_AUSTRIAN.PairedList.item
+#, fuzzy
 msgid  "German (Austria)"
 msgstr "Герман хэл (Австри)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_LUXEMBOURG.PairedList.item
+#, fuzzy
 msgid  "German (Luxembourg)"
 msgstr "Герман хэл (Луксембург)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GERMAN_LIECHTENSTEIN.PairedList.item
+#, fuzzy
 msgid  "German (Liechtenstein)"
 msgstr "Герман хэл (Лихтэнштейн)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GREEK.PairedList.item
+#, fuzzy
 msgid  "Greek"
 msgstr "Грек хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GUJARATI.PairedList.item
+#, fuzzy
 msgid  "Gujarati"
 msgstr "Гужарат хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HEBREW.PairedList.item
+#, fuzzy
 msgid  "Hebrew"
 msgstr "Хэбрэ хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HINDI.PairedList.item
+#, fuzzy
 msgid  "Hindi"
 msgstr "Хинди хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HUNGARIAN.PairedList.item
+#, fuzzy
 msgid  "Hungarian"
 msgstr "Унгар хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ICELANDIC.PairedList.item
+#, fuzzy
 msgid  "Icelandic"
 msgstr "Исланд хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_INDONESIAN.PairedList.item
+#, fuzzy
 msgid  "Indonesian"
 msgstr "Индонез хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ITALIAN.PairedList.item
+#, fuzzy
 msgid  "Italian (Italy)"
 msgstr "Итали хэл (Итали)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ITALIAN_SWISS.PairedList.item
+#, fuzzy
 msgid  "Italian (Switzerland)"
 msgstr "Итали хэл (Швейцар)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_JAPANESE.PairedList.item
+#, fuzzy
 msgid  "Japanese"
 msgstr "Япон хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KANNADA.PairedList.item
+#, fuzzy
 msgid  "Kannada"
 msgstr "Канад хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KASHMIRI.PairedList.item
+#, fuzzy
 msgid  "Kashmiri (Kashmir)"
 msgstr "Кашмир хэл (Кашмир)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KASHMIRI_INDIA.PairedList.item
+#, fuzzy
 msgid  "Kashmiri (India)"
 msgstr "Кашмир хэл (Энэтхэг) "
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KAZAK.PairedList.item
+#, fuzzy
 msgid  "Kazak"
 msgstr "Казак хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KONKANI.PairedList.item
+#, fuzzy
 msgid  "Konkani"
 msgstr "Конкани хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KOREAN.PairedList.item
+#, fuzzy
 msgid  "Korean (RoK)"
 msgstr "Солонгос хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LATVIAN.PairedList.item
+#, fuzzy
 msgid  "Latvian"
 msgstr "Латви хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LITHUANIAN.PairedList.item
+#, fuzzy
 msgid  "Lithuanian"
 msgstr "Литва хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MACEDONIAN.PairedList.item
+#, fuzzy
 msgid  "Macedonian"
 msgstr "Макидон хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAY_MALAYSIA.PairedList.item
+#, fuzzy
 msgid  "Malay (Malaysia)"
 msgstr "Малай хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAY_BRUNEI_DARUSSALAM.PairedList.item
+#, fuzzy
 msgid  "Malay (Brunei Darussalam)"
 msgstr "Малайз хэл (Бруней, Дарусалам) "
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MALAYALAM.PairedList.item
+#, fuzzy
 msgid  "Malayalam"
 msgstr "Малайлам хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MANIPURI.PairedList.item
+#, fuzzy
 msgid  "Manipuri"
 msgstr "Манипури хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MARATHI.PairedList.item
+#, fuzzy
 msgid  "Marathi"
 msgstr "Маратхи хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NEPALI.PairedList.item
+#, fuzzy
 msgid  "Nepali (Nepal)"
 msgstr "Непал хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NEPALI_INDIA.PairedList.item
+#, fuzzy
 msgid  "Nepali (India)"
 msgstr "Непал хэл (Энэтхэг)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NORWEGIAN_BOKMAL.PairedList.item
+#, fuzzy
 msgid  "Norwegian, Bokmål"
 msgstr "Норвеги хэл, Бүкмал"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_NORWEGIAN_NYNORSK.PairedList.item
+#, fuzzy
 msgid  "Norwegian, Nynorsk"
 msgstr "Норвег хэл, Нунорск"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ORIYA.PairedList.item
+#, fuzzy
 msgid  "Oriya"
 msgstr "Ория хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_POLISH.PairedList.item
+#, fuzzy
 msgid  "Polish"
 msgstr "Польш хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PORTUGUESE.PairedList.item
+#, fuzzy
 msgid  "Portuguese (Portugal)"
 msgstr "Португал хэл (Португал)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PORTUGUESE_BRAZILIAN.PairedList.item
+#, fuzzy
 msgid  "Portuguese (Brazil)"
 msgstr "Португал хэл (Португал)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_PUNJABI.PairedList.item
+#, fuzzy
 msgid  "Punjabi"
 msgstr "Пунжаби хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_RHAETO_ROMAN.PairedList.item
+#, fuzzy
 msgid  "Rhaeto-Romance"
 msgstr "Рато-Роман"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ROMANIAN.PairedList.item
+#, fuzzy
 msgid  "Romanian"
 msgstr "Румын хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_RUSSIAN.PairedList.item
+#, fuzzy
 msgid  "Russian"
 msgstr "Орос хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SANSKRIT.PairedList.item
+#, fuzzy
 msgid  "Sanskrit"
 msgstr "Санскрит хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SERBIAN_CYRILLIC.PairedList.item
+#, fuzzy
 msgid  "Serbian Cyrillic (Serbia and Montenegro)"
 msgstr "Серби кирилл (Серби монтенегро)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SERBIAN_LATIN.PairedList.item
+#, fuzzy
 msgid  "Serbian Latin (Serbia and Montenegro)"
 msgstr "Серби латин (Серби монтенегро)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_CYRILLIC_SERBIA.PairedList.item
+#, fuzzy
 msgid  "Serbian Cyrillic (Serbia)"
 msgstr "Серби кирилл (Серби)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_LATIN_SERBIA.PairedList.item
+#, fuzzy
 msgid  "Serbian Latin (Serbia)"
 msgstr "Серби латин (Серби)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_CYRILLIC_MONTENEGRO.PairedList.item
+#, fuzzy
 msgid  "Serbian Cyrillic (Montenegro)"
 msgstr "Серби кирилл (Монтенегро)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SERBIAN_LATIN_MONTENEGRO.PairedList.item
+#, fuzzy
 msgid  "Serbian Latin (Montenegro)"
 msgstr "Серби латин (Монтенегро)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SINDHI.PairedList.item
+#, fuzzy
 msgid  "Sindhi"
 msgstr "Синди"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SLOVAK.PairedList.item
+#, fuzzy
 msgid  "Slovak"
 msgstr "Словак хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SLOVENIAN.PairedList.item
+#, fuzzy
 msgid  "Slovenian"
 msgstr "Словен хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH.PairedList.item
+#, fuzzy
 msgid  "Spanish (Spain)"
 msgstr "Испани хэл (Испани)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_MEXICAN.PairedList.item
+#, fuzzy
 msgid  "Spanish (Mexico)"
 msgstr "Испани хэл (Мексик)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_GUATEMALA.PairedList.item
+#, fuzzy
 msgid  "Spanish (Guatemala)"
 msgstr "Испани хэл (Гуатемал)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_COSTARICA.PairedList.item
+#, fuzzy
 msgid  "Spanish (Costa Rica)"
 msgstr "Испани хэл (Коста Рика)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PANAMA.PairedList.item
+#, fuzzy
 msgid  "Spanish (Panama)"
 msgstr "Испани хэл (Панам)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_DOMINICAN_REPUBLIC.PairedList.item
+#, fuzzy
 msgid  "Spanish (Dom. Rep.)"
 msgstr "Испани хэл (Доминик)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_VENEZUELA.PairedList.item
+#, fuzzy
 msgid  "Spanish (Venezuela)"
 msgstr "Испани хэл (Венесуел)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_COLOMBIA.PairedList.item
+#, fuzzy
 msgid  "Spanish (Colombia)"
 msgstr "Испани хэл (Колумб)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PERU.PairedList.item
+#, fuzzy
 msgid  "Spanish (Peru)"
 msgstr "Испани хэл (Перу)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_ARGENTINA.PairedList.item
+#, fuzzy
 msgid  "Spanish (Argentina)"
 msgstr "Испани хэл (Аргентин)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_ECUADOR.PairedList.item
+#, fuzzy
 msgid  "Spanish (Ecuador)"
 msgstr "Испани хэл (Эквадор)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_CHILE.PairedList.item
+#, fuzzy
 msgid  "Spanish (Chile)"
 msgstr "Испани хэл (Чили)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_URUGUAY.PairedList.item
+#, fuzzy
 msgid  "Spanish (Uruguay)"
 msgstr "Испани хэл (Уругвай)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PARAGUAY.PairedList.item
+#, fuzzy
 msgid  "Spanish (Paraguay)"
 msgstr "Испани хэл (Парагвай)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_BOLIVIA.PairedList.item
+#, fuzzy
 msgid  "Spanish (Bolivia)"
 msgstr "Испани хэл (Болив)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_EL_SALVADOR.PairedList.item
+#, fuzzy
 msgid  "Spanish (El Salvador)"
 msgstr "Испани хэл (Эл Салвадор)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_HONDURAS.PairedList.item
+#, fuzzy
 msgid  "Spanish (Honduras)"
 msgstr "Испани хэл (Гондурас)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_NICARAGUA.PairedList.item
+#, fuzzy
 msgid  "Spanish (Nicaragua)"
 msgstr "Испани хэл (Никарагуа)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SPANISH_PUERTO_RICO.PairedList.item
+#, fuzzy
 msgid  "Spanish (Puerto Rico)"
 msgstr "Испани хэл (Пуерто Рика)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWAHILI.PairedList.item
+#, fuzzy
 msgid  "Swahili (Kenya)"
 msgstr "Свахили хэл (Кени)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWEDISH.PairedList.item
+#, fuzzy
 msgid  "Swedish (Sweden)"
 msgstr "Швэд хэл (Швед)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SWEDISH_FINLAND.PairedList.item
+#, fuzzy
 msgid  "Swedish (Finland)"
 msgstr "Швэд хэл (Финланд)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TAJIK.PairedList.item
+#, fuzzy
 msgid  "Tajik"
 msgstr "Тажик хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TAMIL.PairedList.item
+#, fuzzy
 msgid  "Tamil"
 msgstr "Тамил хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TATAR.PairedList.item
+#, fuzzy
 msgid  "Tatar"
 msgstr "Татар хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TELUGU.PairedList.item
+#, fuzzy
 msgid  "Telugu"
 msgstr "Телүгү хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_THAI.PairedList.item
+#, fuzzy
 msgid  "Thai"
 msgstr "Тай хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TURKISH.PairedList.item
+#, fuzzy
 msgid  "Turkish"
 msgstr "Түрк хэл "
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_URDU_PAKISTAN.PairedList.item
+#, fuzzy
 msgid  "Urdu (Pakistan)"
 msgstr "Урду хэл (Пакистан)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_URDU_INDIA.PairedList.item
+#, fuzzy
 msgid  "Urdu (India)"
 msgstr "Урду хэл (Энэтхэг) "
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UKRAINIAN.PairedList.item
+#, fuzzy
 msgid  "Ukrainian"
 msgstr "Украйн хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_UZBEK_LATIN.PairedList.item
+#, fuzzy
 msgid  "Uzbek Latin"
 msgstr "Узбек латин"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_WELSH.PairedList.item
+#, fuzzy
 msgid  "Welsh"
 msgstr "Вэлш хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER1.PairedList.item
+#, fuzzy
 msgid  "User 1"
 msgstr "Хэрэглэгч 1"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER2.PairedList.item
+#, fuzzy
 msgid  "User 2"
 msgstr "Хэрэглэгч 2"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER3.PairedList.item
+#, fuzzy
 msgid  "User 3"
 msgstr "Хэрэглэгч 3"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER4.PairedList.item
+#, fuzzy
 msgid  "User 4"
 msgstr "Хэрэглэгч 4"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER5.PairedList.item
+#, fuzzy
 msgid  "User 5"
 msgstr "Хэрэглэгч 5"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER6.PairedList.item
+#, fuzzy
 msgid  "User 6"
 msgstr "Хэрэглэгч 6"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER7.PairedList.item
+#, fuzzy
 msgid  "User 7"
 msgstr "Хэрэглэгч 7"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER8.PairedList.item
+#, fuzzy
 msgid  "User 8"
 msgstr "Хэрэглэгч 8"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER9.PairedList.item
+#, fuzzy
 msgid  "User 9"
 msgstr "Хэрэглэгч 9"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LATIN.PairedList.item
+#, fuzzy
 msgid  "Latin"
 msgstr "Латин хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ESPERANTO.PairedList.item
+#, fuzzy
 msgid  "Esperanto"
 msgstr "Эсперанто хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KINYARWANDA.PairedList.item
+#, fuzzy
 msgid  "Kinyarwanda (Rwanda)"
 msgstr "Кинярванда хэл (Рванда)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MAORI_NEW_ZEALAND.PairedList.item
+#, fuzzy
 msgid  "Maori (New Zealand)"
 msgstr "Маори хэл (Шинэ Зеланд)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GALICIAN.PairedList.item
+#, fuzzy
 msgid  "Galician"
 msgstr "Гелиш хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DHIVEHI.PairedList.item
+#, fuzzy
 msgid  "Dhivehi"
 msgstr "Дивэхи хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SEPEDI.PairedList.item
+#, fuzzy
 msgid  "Northern Sotho"
 msgstr "Умард сото хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GAELIC_SCOTLAND.PairedList.item
+#, fuzzy
 msgid  "Gaelic (Scotland)"
 msgstr "Гелиш хэл (Шотланд)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_MONGOLIAN.PairedList.item
+#, fuzzy
 msgid  "Mongolian"
 msgstr "Монгол хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_INTERLINGUA.PairedList.item
+#, fuzzy
 msgid  "Interlingua"
 msgstr "Интерлингуа"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BOSNIAN_BOSNIA_HERZEGOVINA.PairedList.item
+#, fuzzy
 msgid  "Bosnian"
 msgstr "Босни хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BENGALI_BANGLADESH.PairedList.item
+#, fuzzy
 msgid  "Bengali (Bangladesh)"
 msgstr "Бангладеш хэл (Бангладеш)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_OCCITAN.PairedList.item
+#, fuzzy
 msgid  "Occitan"
 msgstr "Окцитан хэл "
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KHMER.PairedList.item
+#, fuzzy
 msgid  "Khmer"
 msgstr "Кампучи хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_TURKEY.PairedList.item
+#, fuzzy
 msgid  "Kurdish (Turkey)"
 msgstr "Күрд хэл (Турк)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_SYRIA.PairedList.item
+#, fuzzy
 msgid  "Kurdish (Syria)"
 msgstr "Күрд хэл (Сири)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_IRAQ.PairedList.item
+#, fuzzy
 msgid  "Kurdish (Iraq)"
 msgstr "Күрд хэл (Ирак)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KURDISH_IRAN.PairedList.item
+#, fuzzy
 msgid  "Kurdish (Iran)"
 msgstr "Күрд хэл (Иран)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SARDINIAN.PairedList.item
+#, fuzzy
 msgid  "Sardinian"
 msgstr "Сардини хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_DZONGKHA.PairedList.item
+#, fuzzy
 msgid  "Dzongkha"
 msgstr "Зонка хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SWAHILI_TANZANIA.PairedList.item
+#, fuzzy
 msgid  "Swahili (Tanzania)"
 msgstr "Свахили хэл (Танзаан)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_LAO.PairedList.item
+#, fuzzy
 msgid  "Lao"
 msgstr "Лао хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GAELIC_IRELAND.PairedList.item
+#, fuzzy
 msgid  "Irish"
 msgstr "Ирланд хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TIBETAN.PairedList.item
+#, fuzzy
 msgid  "Tibetan (PR China)"
 msgstr "Төвд хэл (Хятад)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GEORGIAN.PairedList.item
+#, fuzzy
 msgid  "Georgian"
 msgstr "Гүрж хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_FRISIAN_NETHERLANDS.PairedList.item
+#, fuzzy
 msgid  "Frisian"
 msgstr "Фарси хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TSWANA.PairedList.item
+#, fuzzy
 msgid  "Tswana (South Africa)"
 msgstr "Цвана хэл (Өмнөд африк)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_ZULU.PairedList.item
+#, fuzzy
 msgid  "Zulu"
 msgstr "Зулу хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_VIETNAMESE.PairedList.item
+#, fuzzy
 msgid  "Vietnamese"
 msgstr "Вьетнам хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BRETON.PairedList.item
+#, fuzzy
 msgid  "Breton"
 msgstr "Британи хэл "
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KALAALLISUT.PairedList.item
+#, fuzzy
 msgid  "Kalaallisut"
 msgstr "Калаалисут хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_NDEBELE_SOUTH.PairedList.item
+#, fuzzy
 msgid  "Ndebele, South"
 msgstr "Ндэбэлэ хэл, өмнөд"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SESOTHO.PairedList.item
+#, fuzzy
 msgid  "Southern Sotho"
 msgstr "Өмнөд Сото хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SWAZI.PairedList.item
+#, fuzzy
 msgid  "Swazi"
 msgstr "Свази хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TSONGA.PairedList.item
+#, fuzzy
 msgid  "Tsonga"
 msgstr "Цонга хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_VENDA.PairedList.item
+#, fuzzy
 msgid  "Venda"
 msgstr "Венда хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TSWANA_BOTSWANA.PairedList.item
+#, fuzzy
 msgid  "Tswana (Botswana)"
 msgstr "Цвана хэл (Ботсвана)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_XHOSA.PairedList.item
+#, fuzzy
 msgid  "Xhosa"
 msgstr "Хоса хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SINHALESE_SRI_LANKA.PairedList.item
+#, fuzzy
 msgid  "Sinhala"
 msgstr "Синхала хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MOORE.PairedList.item
+#, fuzzy
 msgid  "Moore"
 msgstr "Моор хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BAMBARA.PairedList.item
+#, fuzzy
 msgid  "Bambara"
 msgstr "Бамбара хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_AKAN.PairedList.item
+#, fuzzy
 msgid  "Akan"
 msgstr "Акан хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LUXEMBOURGISH.PairedList.item
+#, fuzzy
 msgid  "Luxembourgish"
 msgstr "Люксенбург хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_FRIULIAN.PairedList.item
+#, fuzzy
 msgid  "Friulian"
 msgstr "Фриул хэл "
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_FIJIAN.PairedList.item
+#, fuzzy
 msgid  "Fijian"
 msgstr "Фижиан хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_AFRIKAANS_NAMIBIA.PairedList.item
+#, fuzzy
 msgid  "Afrikaans (Namibia)"
 msgstr "Африк хэл (Намиби)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ENGLISH_NAMIBIA.PairedList.item
+#, fuzzy
 msgid  "English (Namibia)"
 msgstr "Англи хэл (Намиби)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_WALLOON.PairedList.item
+#, fuzzy
 msgid  "Walloon"
 msgstr "Валоон хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_COPTIC.PairedList.item
+#, fuzzy
 msgid  "Coptic"
 msgstr "Коптик хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TIGRIGNA_ERITREA.PairedList.item
+#, fuzzy
 msgid  "Tigrigna (Eritrea)"
 msgstr "Тигригна хэл (Эритриа)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TIGRIGNA_ETHIOPIA.PairedList.item
+#, fuzzy
 msgid  "Tigrigna (Ethiopia)"
 msgstr "Тигригна хэл (Этиоп)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_AMHARIC_ETHIOPIA.PairedList.item
+#, fuzzy
 msgid  "Amharic"
 msgstr "Амхарик хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_KIRGHIZ.PairedList.item
+#, fuzzy
 msgid  "Kirghiz"
 msgstr "Киргиз хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GERMAN_BELGIUM.PairedList.item
+#, fuzzy
 msgid  "German (Belgium)"
 msgstr "Герман хэл (Белги)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_CHUVASH.PairedList.item
+#, fuzzy
 msgid  "Chuvash"
 msgstr "Чуваш хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_BURMESE.PairedList.item
+#, fuzzy
 msgid  "Burmese"
 msgstr "Бурма хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_HAUSA_NIGERIA.PairedList.item
+#, fuzzy
 msgid  "Hausa (Nigeria)"
 msgstr "Хауса (Нигери)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_HAUSA_GHANA.PairedList.item
+#, fuzzy
 msgid  "Hausa (Ghana)"
 msgstr "Хауса (Гана)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_EWE_GHANA.PairedList.item
+#, fuzzy
 msgid  "Éwé"
 msgstr "Éwé хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_ENGLISH_GHANA.PairedList.item
+#, fuzzy
 msgid  "English (Ghana)"
 msgstr "Англи хэл (Гана)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SANGO.PairedList.item
+#, fuzzy
 msgid  "Sango"
 msgstr "Санго хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TAGALOG.PairedList.item
+#, fuzzy
 msgid  "Tagalog"
 msgstr "Тагалог хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_GANDA.PairedList.item
+#, fuzzy
 msgid  "Ganda"
 msgstr "Ганда хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LINGALA_DRCONGO.PairedList.item
+#, fuzzy
 msgid  "Lingala"
 msgstr "Лингала хэл"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_LOW_GERMAN.PairedList.item
+#, fuzzy
 msgid  "Low German"
 msgstr "Доод герман"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_HILIGAYNON.PairedList.item
+#, fuzzy
 msgid  "Hiligaynon"
 msgstr "Хилигянон"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_NYANJA.PairedList.item
+#, fuzzy
 msgid  "Nyanja"
 msgstr "Хянжа"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_KASHUBIAN.PairedList.item
+#, fuzzy
 msgid  "Kashubian"
 msgstr "Кашубан"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SPANISH_CUBA.PairedList.item
+#, fuzzy
 msgid  "Spanish (Cuba)"
 msgstr "Испани (Куб)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TETUN.PairedList.item
+#, fuzzy
 msgid  "Tetun (Indonesia)"
 msgstr "Тэтүн (Идонези)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_QUECHUA_NORTH_BOLIVIA.PairedList.item
+#, fuzzy
 msgid  "Quechua (Bolivia, North)"
 msgstr "Квачу (Боливи, умард)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_QUECHUA_SOUTH_BOLIVIA.PairedList.item
+#, fuzzy
 msgid  "Quechua (Bolivia, South)"
 msgstr "Квачу (Боливи, өмнөд)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SOMALI.PairedList.item
+#, fuzzy
 msgid  "Somali"
 msgstr "Сомали"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_INARI.PairedList.item
+#, fuzzy
 msgid  "Sami, Inari (Finland)"
 msgstr "Сами, Инари (Финлянд)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_LULE_NORWAY.PairedList.item
+#, fuzzy
 msgid  "Sami, Lule (Norway)"
 msgstr "Сами, Лүлэ (Норвеги)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_LULE_SWEDEN.PairedList.item
+#, fuzzy
 msgid  "Sami, Lule (Sweden)"
 msgstr "Сами, Лүлэ (Швед)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_NORTHERN_FINLAND.PairedList.item
+#, fuzzy
 msgid  "Sami, Northern (Finland)"
 msgstr "Сами, Умард (Финлянд)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_NORTHERN_NORWAY.PairedList.item
+#, fuzzy
 msgid  "Sami, Northern (Norway)"
 msgstr "Сами, Умард (Норвеги)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_NORTHERN_SWEDEN.PairedList.item
+#, fuzzy
 msgid  "Sami, Northern (Sweden)"
 msgstr "Сами, Умард (Швед)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_SKOLT.PairedList.item
+#, fuzzy
 msgid  "Sami, Skolt (Finland)"
 msgstr "Сами, Сколт (Финлянд)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_SOUTHERN_NORWAY.PairedList.item
+#, fuzzy
 msgid  "Sami, Southern (Norway)"
 msgstr "Сами, Өмнөд (Норвеги)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_SAMI_SOUTHERN_SWEDEN.PairedList.item
+#, fuzzy
 msgid  "Sami, Southern (Sweden)"
 msgstr "Сами, Өмнөд (Швед)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SAMI_KILDIN_RUSSIA.PairedList.item
+#, fuzzy
 msgid  "Sami, Kildin (Russia)"
 msgstr "Сами, Килдин (Орос)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_GUARANI_PARAGUAY.PairedList.item
+#, fuzzy
 msgid  "Guaraní, Paraguayan"
 msgstr "Гуарани, Парагуан"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_BODO_INDIA.PairedList.item
+#, fuzzy
 msgid  "Bodo"
 msgstr "Бодо"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_DOGRI_INDIA.PairedList.item
+#, fuzzy
 msgid  "Dogri"
 msgstr "Догри"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_MAITHILI_INDIA.PairedList.item
+#, fuzzy
 msgid  "Maithili"
 msgstr "Мэйтили"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_SANTALI_INDIA.PairedList.item
+#, fuzzy
 msgid  "Santali"
 msgstr "Сантали"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_USER_TETUN_TIMOR_LESTE.PairedList.item
+#, fuzzy
 msgid  "Tetun (Timor-Leste)"
 msgstr "Тэтүн (Титор-Лесте)"
 
 #: source/misc/langtab.src#STR_ARR_SVT_LANGUAGE_TABLE.LANGUAGE_TURKMEN.PairedList.item
+#, fuzzy
 msgid  "Turkmen"
 msgstr "Туркмен"
 
@@ -2976,86 +3254,107 @@ msgid  "Haitian"
 msgstr ""
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_SHOW.ToolBoxItem.Text
+#, fuzzy
 msgid  "Display IDs"
 msgstr "ТТ харуул"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_OUTPUT.ToolBoxItem.Text
+#, fuzzy
 msgid  "This is the input window"
 msgstr "Энэ нт оруулах цонх"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_SEND_DATA.ToolBoxItem.Text
+#, fuzzy
 msgid  "Transfer to TestTool"
 msgstr "TestTool рүү дамжуул"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_ALLWIN.ToolBoxItem.Text
+#, fuzzy
 msgid  "Show all windows"
 msgstr "Бүх цонхыг харуул"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_KURZNAME.ToolBoxItem.Text
+#, fuzzy
 msgid  "Show short names (if available)"
 msgstr "Товч нэрийг харуул (хэрэв боломжтой бол)"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.TT_LANGNAME.ToolBoxItem.Text
+#, fuzzy
 msgid  "Always show long-name"
 msgstr "Урт-нэрийг үргэлж харуул"
 
 #: source/plugapp/testtool.src#DisplayHidToolBox.ToolBoxItem.Text
+#, fuzzy
 msgid  "DisplayHID"
 msgstr "HID-г харуул"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_GB_TRANSLATION.GroupBox.Text
+#, fuzzy
 msgid  "Translation"
 msgstr "Орчуулга"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_E_NEW.Edit.Text
+#, fuzzy
 msgid  "~Edit"
 msgstr "~Засах"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_FT_OLD.FixedText.Text
+#, fuzzy
 msgid  "Original Text"
 msgstr "Эх бичвэр"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_GB_COMMENT.GroupBox.Text
+#, fuzzy
 msgid  "Comment"
 msgstr "Тайлбар"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_E_COMMENT.Edit.Text
+#, fuzzy
 msgid  "~Comment"
 msgstr "~Тайлбар"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_SELECT.PushButton.Text
+#, fuzzy
 msgid  "~Select"
 msgstr "~Сонгох"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_RESTORE.PushButton.Text
+#, fuzzy
 msgid  "~Restore"
 msgstr "~Сэргээх"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_ACCEPT.PushButton.Text
+#, fuzzy
 msgid  "~Accept"
 msgstr "~Зөвшөөрөх"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.TT_PB_NEXT.PushButton.Text
+#, fuzzy
 msgid  "~Next"
 msgstr "~Үргэлжлүүлэх"
 
 #: source/plugapp/testtool.src#TT_INLINE_TRANSLATION.PushButton.Text
+#, fuzzy
 msgid  "Inplace Translation"
 msgstr "Inplace орчуулга"
 
 #: source/plugapp/testtool.src#TT_DISCARD_CHANGED_DATA.MessBox.Message
+#, fuzzy
 msgid  "The Translation will be lost. Proceed anyway?"
 msgstr "Орчуулга алдагдана. Ямар ч байсан үргэлжлүүлэх үү?"
 
 #: source/plugapp/testtool.src#TT_NO_CONTROL.ErrorBox.Message
+#, fuzzy
 msgid  "The Control is no longer valid. The Translation cannot be saved."
 msgstr "Контрол цаашид боломжгүй. Орчуулга хадгалагдаж чадахгүй."
 
 #: source/plugapp/testtool.src#TT_GPF.String.Text
+#, fuzzy
 msgid  "GPF occurred"
 msgstr "GPF тохиолдсон"
 
 #: source/plugapp/testtool.src#TT_ALTERNATE_CAPTION.String.Text
+#, fuzzy
 msgid  "HelpID does not match UniqueID: "
 msgstr "HelpID нь UniqueID тай тохирохгүй байна:"
 
@@ -3068,21 +3367,26 @@ msgid  "Tab Panel Scroll Button, forward"
 msgstr ""
 
 #: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.ModalDialog.Text
+#, fuzzy
 msgid  "Roadmap Skeleton Demo"
 msgstr "Стратегийн төлөвлөгөөний загвар Demo"
 
 #: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_WELCOME.String.Text
+#, fuzzy
 msgid  "Welcome"
 msgstr "Тавтай морил"
 
 #: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_PREPARE.String.Text
+#, fuzzy
 msgid  "Prepare"
 msgstr "Бэлтгэх"
 
 #: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_SETUP.String.Text
+#, fuzzy
 msgid  "Setup"
 msgstr "Суулгац"
 
 #: workben/unodialog/roadmapskeleton.src#DLG_ROADMAP_SKELETON.STR_STATE_FINISH.String.Text
+#, fuzzy
 msgid  "Finish"
 msgstr "Дуусгах"

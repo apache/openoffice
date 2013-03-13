@@ -901,11 +901,11 @@ msgstr "IIS-н виртуал лавлахыг устгаж байна..."
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_10
 msgid  "Searching for qualifying products"
-msgstr "Тусгай бүтээгдэхүүнийг хайж байна"
+msgstr "Тусгай бүтээгдэхүүнүүдийг хайж байна"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_11
 msgid  "Computing space requirements"
-msgstr "Зайн шаардлагуудыг тооцоолж байна"
+msgstr "Сул зайн шаардлагуудыг тооцоолж байна"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_12
 msgid  "Computing space requirements"
@@ -925,7 +925,7 @@ msgstr "Холбогч үүсгэж байна"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_16
 msgid  "Shortcut: [1]"
-msgstr "Холбогч: [1]"
+msgstr "Холбогчид: [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_17
 msgid  "Deleting services"
@@ -1049,7 +1049,7 @@ msgstr "Бүтээгдэхүүний бүрдэр хэсгүүдийг мэдү�
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_47
 msgid  "Feature: [1]"
-msgstr "Бүрдэл хэсэг: [1]"
+msgstr "Бүрдэл хэсгүүд: [1]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_48
 msgid  "Publishing product information"
@@ -1093,7 +1093,7 @@ msgstr "MIME мэд. бүртгэж байна"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_58
 msgid  "MIME Content Type: [1], Extension: [2]"
-msgstr "MIME Агуулгын төрөл: [1], Өргөтгөл: [2]"
+msgstr "MIME агуулгын төрөл: [1], Өргөтгөл: [2]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_59
 msgid  "Registering product"
@@ -1137,7 +1137,7 @@ msgstr "Файл: [1], Лавлах: [9]"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_69
 msgid  "Updating environment strings"
-msgstr "Орчны хувьсагчийг засварлаж байна"
+msgstr "Орчны хувьсагчийг шинэчилж байна"
 
 #: inc_openoffice/windows/msi_languages/ActionTe.ulf#OOO_ACTIONTEXT_70
 msgid  "Name: [1], Value: [2], Action [3]"
@@ -1449,19 +1449,19 @@ msgstr "Виндовс суулгагч"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_3
 msgid  "Cancel"
-msgstr "Болих"
+msgstr "Цуцлах"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_5
 msgid  "&Look in:"
-msgstr "Дараахад &хайх:"
+msgstr "&Хайх:"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_6
 msgid  "Browse to the destination folder."
-msgstr "Товлосон хавтсыг гүйлгэн үз."
+msgstr "Товлосон хавтсыг гүйлгэн үзэх."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_7
 msgid  "{&MSSansBold8}Change Current Destination Folder"
-msgstr "{&MSSansBold8}Идэвхтэй товлосон лавлахыг соль"
+msgstr "{&MSSansBold8}Одоогийн товлосон хавтсыг солих"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_9
 msgid  "Create new folder|"
@@ -1473,7 +1473,7 @@ msgstr "ОК"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_12
 msgid  "&Folder name:"
-msgstr "&Хавтасын нэр:"
+msgstr "&Хавтасны нэр:"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_13
 msgid  "Up one level|"
@@ -1489,7 +1489,7 @@ msgstr "&Өөрчлөх..."
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_18
 msgid  "Cancel"
-msgstr "Болих"
+msgstr "Цуцлах"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_19
 msgid  "Specify a network location for the server image of the product."
@@ -1517,7 +1517,7 @@ msgstr "< &Буцах"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_25
 msgid  "Cancel"
-msgstr "Цуцлах"
+msgstr "Болих"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_26
 msgid  "&Next >"
@@ -1741,7 +1741,7 @@ msgstr "[INSTALLDIR]"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_92
 msgid  "Install [ProductName] to:"
-msgstr "[ProductName]-г дараах руу суулга:"
+msgstr "[ProductName] дараах руу суулга:"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_93
 msgid  "&Next >"
@@ -2049,7 +2049,7 @@ msgstr "Залуурчаас гарахдаа Сэргээх эсвэл дара
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_190
 msgid  "{&TahomaBold10}Installation Wizard Completed"
-msgstr "{&TahomaBold10}Суулгацын залуурч ажлаа дууслаа"
+msgstr "{&TahomaBold10}Суулгацын залуурч дууслаа"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_191
 msgid  "The wizard was interrupted before [ProductName] could be completely installed."
@@ -2081,7 +2081,7 @@ msgstr "&Дуусгах"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_198
 msgid  "{&TahomaBold10}Installation Wizard Completed"
-msgstr "{&TahomaBold10}Суулгацын залуурч дууслаа"
+msgstr "{&TahomaBold10}Суулгацын залуурч төгсөв"
 
 #: inc_openoffice/windows/msi_languages/Control.ulf#OOO_CONTROL_199
 msgid  "The Installation Wizard has successfully installed [ProductName]. Click Finish to exit the wizard."

@@ -37,11 +37,11 @@ msgstr "Боломжгүй"
 
 #: source/core/undo/undo.src#STR_DELETE_UNDO.String.Text
 msgid  "Delete $1"
-msgstr "$1-г устгах"
+msgstr "$1-г устга"
 
 #: source/core/undo/undo.src#STR_INSERT_UNDO.String.Text
 msgid  "Insert $1"
-msgstr "$1-г оруулах"
+msgstr "$1-г оруул"
 
 #: source/core/undo/undo.src#STR_OVR_UNDO.String.Text
 msgid  "Overwrite: $1"
@@ -753,7 +753,7 @@ msgstr "Буруу автомат бичвэр баримтын хувилбар
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_WRITE , ERR_WRITE_ERROR_FILE ).String.Text
 msgid  "Error in writing sub-document $(ARG1)."
-msgstr "$(ARG1) дэд баримтыг бичиж байхад алдаа гарлаа."
+msgstr "$(ARG1) дэд баримтыг бичих үед алдаа гарлаа."
 
 #: source/ui/app/error.src#RID_SW_ERRHDL.ERR_CODE ( ERRCODE_CLASS_READ , ERR_SWG_INTERNAL_ERROR ).String.Text
 msgid  "Internal error in %PRODUCTNAME Writer file format."
@@ -1481,11 +1481,11 @@ msgstr "~Хаялбар засах..."
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.MenuItem.Text
 msgid  "~Wrap"
-msgstr "~Нугалах"
+msgstr "~Нугалалт"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_NOWRAP.MenuItem.Text
 msgid  "~No Wrap"
-msgstr "~Нугалахгүй"
+msgstr "Бүү ~нугал"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_WRAP.MenuItem.Text
 msgid  "~Page Wrap"
@@ -1505,11 +1505,11 @@ msgstr "~Дэвсгэрт"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_WRAP_ANCHOR_ONLY.MenuItem.Text
 msgid  "~First Paragraph"
-msgstr "Эхний ~параграф"
+msgstr "~Эхний параграф"
 
 #: source/ui/app/mn.src#MN_DRAW_POPUPMENU.String.Text
 msgid  "Graphic"
-msgstr "График'"
+msgstr "График"
 
 #: source/ui/app/mn.src#MN_WRAP_DRAW.MN_WRAP.FN_FRAME_NOWRAP.MenuItem.Text
 msgid  "~No Wrap"
@@ -2893,7 +2893,7 @@ msgstr "Бичвэрийн торонд квадрат хуудасны гори
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.TabPage.Text
 msgid  "Caption"
-msgstr "Бичээс"
+msgstr "Тэмдэглээс"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_OBJECTS.FixedText.Text
 msgid  "Add captions automatically\nwhen inserting:"
@@ -4589,7 +4589,7 @@ msgstr "Багана"
 
 #: source/ui/dialog/regionsw.src#DLG_INSERT_SECTION.1.TP_SECTION_INDENTS.PageItem.Text
 msgid  "Indents"
-msgstr "Догол мөр"
+msgstr "Догол мөрүүд"
 
 #: source/ui/dialog/regionsw.src#DLG_INSERT_SECTION.1.TP_BACKGROUND.PageItem.Text
 msgid  "Background"
@@ -5417,7 +5417,7 @@ msgstr "дээрээс"
 
 #: source/ui/envelp/envfmt.src#TP_ENV_FMT.TXT_ADDR_FORMAT.FixedText.Text
 msgid  "Format"
-msgstr "формат"
+msgstr "Формат"
 
 #: source/ui/envelp/envfmt.src#TP_ENV_FMT.BTN_ADDR_EDIT.MenuButton.Text
 msgid  "Edit"
@@ -6801,7 +6801,7 @@ msgstr "Дэвсгэр"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_2.1.TP_BORDER.PageItem.Text
 msgid  "Borders"
-msgstr "Хүрээ"
+msgstr "Хүрээнүүд"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_2.1.TP_CONDCOLL.PageItem.Text
 msgid  "Condition"
@@ -6821,7 +6821,7 @@ msgstr "Хуудас"
 
 #: source/ui/fmtui/tmpdlg.src#STR_PAGE_BORDER.String.Text
 msgid  "Borders"
-msgstr "Хүрээнүүд"
+msgstr "Хүрээ"
 
 #: source/ui/fmtui/tmpdlg.src#STR_PAGE_HEADER.String.Text
 msgid  "Header"
@@ -7337,7 +7337,7 @@ msgstr "Алслалт"
 
 #: source/ui/frmdlg/column.src#TP_COLUMN.TabPage.Text
 msgid  "Columns"
-msgstr "Багана"
+msgstr "Баганууд"
 
 #: source/ui/frmdlg/column.src#TP_COLUMN.FT_NUMBER.FixedText.Text
 msgid  "Columns"
@@ -7833,7 +7833,7 @@ msgstr "Индекс/Хүснэгт"
 
 #: source/ui/index/cnttab.src#DLG_MULTI_TOX.1.TP_TOX_ENTRY.PageItem.Text
 msgid  "Entries"
-msgstr "Бичлэг"
+msgstr "Бичлэгүүд"
 
 #: source/ui/index/cnttab.src#DLG_MULTI_TOX.1.TP_TOX_STYLES.PageItem.Text
 msgid  "Styles"
@@ -9181,7 +9181,7 @@ msgstr "Гарчиггүй 1"
 
 #: source/ui/misc/outline.src#DLG_NUM_NAMES.LB_FORM.item2.StringList.item
 msgid  "Untitled 2"
-msgstr "Гарчиггүй 2"
+msgstr "Гарчиггүй 1"
 
 #: source/ui/misc/outline.src#DLG_NUM_NAMES.LB_FORM.item3.StringList.item
 msgid  "Untitled 3"
@@ -9477,7 +9477,7 @@ msgstr "~Баримтын төгсгөл"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FL_TEMPL.FixedLine.Text
 msgid  "Styles"
-msgstr "Загвар"
+msgstr "Загварууд"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_PARA_TEMPL.FixedText.Text
 msgid  "Pa~ragraph"
@@ -11569,7 +11569,7 @@ msgstr "Жолооч"
 
 #: source/ui/utlui/navipi.src#DLG_NAVIGATION_PI.TB_CONTENT.FN_GLOBAL_SWITCH.ToolBoxItem.Text
 msgid  "Toggle"
-msgstr "Сэлгээ"
+msgstr "Сэлгүүр"
 
 #: source/ui/utlui/navipi.src#DLG_NAVIGATION_PI.TB_CONTENT.FN_CREATE_NAVIGATION.ToolBoxItem.Text
 msgid  "Navigation"
