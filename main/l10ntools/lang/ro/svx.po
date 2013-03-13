@@ -1817,7 +1817,7 @@ msgstr "~Caută stiluri"
 
 #: source/dialog/srchdlg.src#RID_SVXDLG_SEARCH.CB_NOTES.CheckBox.Text
 msgid  "Notes"
-msgstr "Notițe"
+msgstr "Note"
 
 #: source/dialog/srchdlg.src#RID_SVXDLG_SEARCH.CB_JAP_MATCH_FULL_HALF_WIDTH.CheckBox.Text
 msgid  "Match character width"
@@ -1889,27 +1889,27 @@ msgstr "Configurare bordură"
 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.1.ItemList.item
 msgid  "Left border line"
-msgstr "Bordură stânga"
+msgstr "Graniță stânga"
 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.2.ItemList.item
 msgid  "Right border line"
-msgstr "Bordură dreapta"
+msgstr "Graniță dreapta"
 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.3.ItemList.item
 msgid  "Top border line"
-msgstr "Linie bordură superioară "
+msgstr "Bordura superioară"
 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.4.ItemList.item
 msgid  "Bottom border line"
-msgstr "Linie bordură inferioară"
+msgstr "Bordura inferioară"
 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.5.ItemList.item
 msgid  "Horizontal border line"
-msgstr "Linie bordură orizontală"
+msgstr "Bordură orizontală"
 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.6.ItemList.item
 msgid  "Vertical border line"
-msgstr "Linie bordură verticală"
+msgstr "Bordură verticală"
 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.7.ItemList.item
 msgid  "Diagonal border line from top left to bottom right"
@@ -2749,7 +2749,7 @@ msgstr "Maro"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_GREY.String.Text
 msgid  "Gray"
-msgstr "Gri deschis"
+msgstr "Gri "
 
 #: source/dialog/sdstring.src#RID_SVXSTR_LIGHTGREY.String.Text
 msgid  "Light gray"
@@ -3909,19 +3909,19 @@ msgstr "Efecte 3D"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_GEO.ButtonImage.QuickHelpText
 msgid  "Geometry"
-msgstr "Geometry"
+msgstr "Geometrie"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_REPRESENTATION.ButtonImage.QuickHelpText
 msgid  "Shading"
-msgstr "Shading"
+msgstr "Umbrire"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_LIGHT.ButtonImage.QuickHelpText
 msgid  "Illumination"
-msgstr "Illumination"
+msgstr "Iluminare"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_TEXTURE.ButtonImage.QuickHelpText
 msgid  "Textures"
-msgstr "Textures"
+msgstr "Texturi"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_MATERIAL.ButtonImage.QuickHelpText
 msgid  "Material"
@@ -3965,7 +3965,7 @@ msgstr ""
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.MTR_END_ANGLE.MetricField.CustomUnitText
 msgid  " degree(s)"
-msgstr "grad(e)"
+msgstr "grad (e)"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.FT_DEPTH.FixedText.Text
 msgid  "~Depth"
@@ -3993,7 +3993,7 @@ msgstr "Object-Specific"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_FLAT.ButtonImage.QuickHelpText
 msgid  "Flat"
-msgstr "Plat"
+msgstr "Flat"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_SPHERE.ButtonImage.QuickHelpText
 msgid  "Spherical"
@@ -4401,7 +4401,7 @@ msgstr "Navigator vizibil"
 
 #: source/form/fmstring.src#RID_STR_FORM.String.Text
 msgid  "Form"
-msgstr "Formular "
+msgstr "Formular"
 
 #: source/form/fmstring.src#RID_RSC_TABWIN_PREFIX.1.String.Text
 msgid  "Table"
@@ -5009,7 +5009,7 @@ msgstr "Adaugă un atribut"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_EDIT.ToolBoxItem.Text
 msgid  "Edit"
-msgstr "Editează"
+msgstr "Editare"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_REMOVE.ToolBoxItem.Text
 msgid  "Delete"
@@ -5025,7 +5025,7 @@ msgstr "~Adaugă..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MID_MODELS_EDIT.MenuItem.Text
 msgid  "~Edit..."
-msgstr "~Editează..."
+msgstr "~Editare..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MID_MODELS_REMOVE.MenuItem.Text
 msgid  "~Remove"
@@ -5053,7 +5053,7 @@ msgstr "~Adaugă..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MID_INSTANCES_EDIT.MenuItem.Text
 msgid  "~Edit..."
-msgstr "~Editare..."
+msgstr "~Editează..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MID_INSTANCES_REMOVE.MenuItem.Text
 msgid  "~Remove"
@@ -6917,7 +6917,7 @@ msgstr "desenează  obiect"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralNONE.String.Text
 msgid  "draw objects"
-msgstr "obiecte de desen"
+msgstr "Desenează obiecte"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRUP.String.Text
 msgid  "group object"
@@ -7125,7 +7125,7 @@ msgstr "Curbe Bézier"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFREELINE.String.Text
 msgid  "Freeform Line"
-msgstr "Linie liberă"
+msgstr "Linie cu formă liberă"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFREELINE.String.Text
 msgid  "Freeform Lines"
@@ -7145,7 +7145,7 @@ msgstr "Curbă"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralCOMBLINE.String.Text
 msgid  "Curve objects"
-msgstr "Obiecte curbe"
+msgstr "Obiecte Curbe"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulCOMBFILL.String.Text
 msgid  "Curve"
@@ -7193,7 +7193,7 @@ msgstr "Obiect text cu potrivire la mărime"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralFITTEXT.String.Text
 msgid  "Fit-to-size text objects"
-msgstr "Obiecte text cu potrivire la mărime"
+msgstr "Obiecte text cu potrivire la mărime "
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulFITALLTEXT.String.Text
 msgid  "Fit-to-size text object"
@@ -7957,7 +7957,7 @@ msgstr "pe"
 
 #: source/svdraw/svdstr.src#STR_ItemValOFF.String.Text
 msgid  "off"
-msgstr "fără"
+msgstr "Fără"
 
 #: source/svdraw/svdstr.src#STR_ItemValYES.String.Text
 msgid  "yes"
@@ -8185,11 +8185,11 @@ msgstr "Transparență umbră"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOW3D.String.Text
 msgid  "3D shadow"
-msgstr "Umbră 3D"
+msgstr "Stil umbră"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWPERSP.String.Text
 msgid  "Perspective shadow"
-msgstr "Umbră în perspectivă"
+msgstr "Umbră în Perspectivă"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONTYPE.String.Text
 msgid  "Callout type"
@@ -8321,7 +8321,7 @@ msgstr "Inversează"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFMODE.String.Text
 msgid  "Graphics mode"
-msgstr "Mod de desenare"
+msgstr "Mod grafic"
 
 #: source/svdraw/svdstr.src#STR_ItemNamSET_MISC.String.Text
 msgid  "Various attributes"
