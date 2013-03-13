@@ -849,7 +849,7 @@ msgstr "Используемые стили"
 
 #: source/ui/app/app.src#DLG_STYLE_DESIGNER.SFX_STYLE_FAMILY_PARA.SFXSTYLEBIT_USERDEF.FilterList.item
 msgid  "Custom Styles"
-msgstr "Стили пользователя"
+msgstr "Пользовательские стили"
 
 #: source/ui/app/app.src#DLG_STYLE_DESIGNER.SFX_STYLE_FAMILY_PARA.SFXSTYLEBIT_AUTO.FilterList.item
 msgid  "Automatic"
@@ -1433,11 +1433,11 @@ msgstr "Переместить ~назад"
 
 #: source/ui/app/mn.src#MN_DRAW5.MN_SUB_ARRANGE.MenuItem.Text
 msgid  "~Arrange"
-msgstr "Располо~жение"
+msgstr "Расположение"
 
 #: source/ui/app/mn.src#MN_DRAW6.MN_SUB_ARRANGE.MenuItem.Text
 msgid  "~Arrange"
-msgstr "Расположение"
+msgstr "Располо~жение"
 
 #: source/ui/app/mn.src#MN_ANNOTATIONS.FN_REPLY.MenuItem.Text
 msgid  "Reply"
@@ -2649,7 +2649,7 @@ msgstr "Атрибуты"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.LB_INS_ATTR.item1.StringList.item
 msgid  "[None]"
-msgstr "[Нет]"
+msgstr "[Без отметки]"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.LB_INS_ATTR.item2.StringList.item
 msgid  "Bold"
@@ -2741,7 +2741,7 @@ msgstr "~Отмечать"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.LB_MARKPOS.item1.StringList.item
 msgid  "[None]"
-msgstr "[Без отметки]"
+msgstr "[Нет]"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.LB_MARKPOS.item2.StringList.item
 msgid  "Left margin"
@@ -2893,7 +2893,7 @@ msgstr "Использовать квадратные страницы для т
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.TabPage.Text
 msgid  "Caption"
-msgstr "Название"
+msgstr "Заголовок"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_OBJECTS.FixedText.Text
 msgid  "Add captions automatically\nwhen inserting:"
@@ -2961,7 +2961,7 @@ msgstr "Уровень"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.LB_LEVEL.item1.StringList.item
 msgid  "None"
-msgstr "Нет"
+msgstr "Пусто"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_SEPARATOR.FixedText.Text
 msgid  "Separator"
@@ -4585,7 +4585,7 @@ msgstr "Раздел"
 
 #: source/ui/dialog/regionsw.src#DLG_INSERT_SECTION.1.TP_COLUMN.PageItem.Text
 msgid  "Columns"
-msgstr "Колонки"
+msgstr "Столбцы"
 
 #: source/ui/dialog/regionsw.src#DLG_INSERT_SECTION.1.TP_SECTION_INDENTS.PageItem.Text
 msgid  "Indents"
@@ -5541,7 +5541,7 @@ msgstr "Синхронизировать подписи"
 
 #: source/ui/envelp/label.src#STR_DOC_TITLE.String.Text
 msgid  "Labels"
-msgstr "Этикетки"
+msgstr "Подписи"
 
 #: source/ui/envelp/label.src#STR_CUSTOM.String.Text
 msgid  "[User]"
@@ -6837,7 +6837,7 @@ msgstr "Текстовая сетка"
 
 #: source/ui/fmtui/tmpdlg.src#STR_PAGE_COLUMN.String.Text
 msgid  "Columns"
-msgstr "Колонки"
+msgstr "Столбцы"
 
 #: source/ui/fmtui/tmpdlg.src#STR_PAGE_FOOTNOTE.String.Text
 msgid  "Footnote"
@@ -6881,7 +6881,7 @@ msgstr "Маркеры"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_5.1.RID_SVXPAGE_PICK_SINGLE_NUM.PageItem.Text
 msgid  "Numbering Style"
-msgstr "Тип нумерации"
+msgstr "Стиль нумерации"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_5.1.RID_SVXPAGE_PICK_NUM.PageItem.Text
 msgid  "Outline"
@@ -6905,7 +6905,7 @@ msgstr "Стиль нумерации"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.TabDialog.Text
 msgid  "Frame"
-msgstr "Врезка"
+msgstr "Фрейм"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.1.TP_FRM_STD.PageItem.Text
 msgid  "Type"
@@ -7165,7 +7165,7 @@ msgstr "U~RL"
 
 #: source/ui/frmdlg/frmpage.src#TP_FRM_URL.FT_NAME.FixedText.Text
 msgid  "~Name"
-msgstr "Название"
+msgstr "Имя"
 
 #: source/ui/frmdlg/frmpage.src#TP_FRM_URL.FT_FRAME.FixedText.Text
 msgid  "Frame"
@@ -8009,7 +8009,7 @@ msgstr "Создать..."
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.MB_AUTOMARK.MN_AUTOMARK_EDIT.MenuItem.Text
 msgid  "~Edit..."
-msgstr "Правка"
+msgstr "Изменить..."
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.MB_AUTOMARK.MenuItem.Text
 msgid  "~File"
@@ -8149,7 +8149,7 @@ msgstr "Элемент"
 
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.WIN_TOKEN.STR_TOKEN_HELP_TAB_STOP.String.Text
 msgid  "Tab stop"
-msgstr "Шаг табуляции"
+msgstr "Табуляция"
 
 #: source/ui/index/cnttab.src#TP_TOX_ENTRY.WIN_TOKEN.STR_TOKEN_HELP_TEXT.String.Text
 msgid  "Text"
@@ -8561,7 +8561,7 @@ msgstr ""
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.MNU_EDIT.FN_GL_DEFINE.MenuItem.Text
 msgid  "~New"
-msgstr "Созд~ать"
+msgstr "Новый"
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.MNU_EDIT.FN_GL_DEFINE_TEXT.MenuItem.Text
 msgid  "New (text only)"
@@ -9493,7 +9493,7 @@ msgstr "Стили символов"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_ANCHR_CHARFMT.FixedText.Text
 msgid  "Te~xt area"
-msgstr "Область текста"
+msgstr "Текст"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_TEXT_CHARFMT.FixedText.Text
 msgid  "~Footnote area"
@@ -11357,7 +11357,7 @@ msgstr "Брошюра"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CONFERENCE.String.Text
 msgid  "Conference proceedings"
-msgstr "Протокол совещания"
+msgstr "Отчёт заседания"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_INBOOK.String.Text
 msgid  "Book excerpt"
@@ -11369,7 +11369,7 @@ msgstr "Выписка из книги с названием"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_INPROCEEDINGS.String.Text
 msgid  "Conference proceedings"
-msgstr "Отчёт заседания"
+msgstr "Протокол совещания"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_JOURNAL.String.Text
 msgid  "Journal"
@@ -11413,23 +11413,23 @@ msgstr "Веб-документ"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM1.String.Text
 msgid  "User-defined1"
-msgstr "Поле пользователя1"
+msgstr "Поле пользователя 1"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM2.String.Text
 msgid  "User-defined2"
-msgstr "Поле пользователя2"
+msgstr "Поле пользователя 2"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM3.String.Text
 msgid  "User-defined3"
-msgstr "Поле пользователя3"
+msgstr "Поле пользователя 3"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM4.String.Text
 msgid  "User-defined4"
-msgstr "Поле пользователя4"
+msgstr "Поле пользователя 4"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM5.String.Text
 msgid  "User-defined5"
-msgstr "Поле пользователя5"
+msgstr "Поле пользователя 5"
 
 #: source/ui/utlui/initui.src#STR_AUTH_FIELD_IDENTIFIER.String.Text
 msgid  "Short name"
@@ -11601,7 +11601,7 @@ msgstr "Вкл./выкл. окно списка"
 
 #: source/ui/utlui/navipi.src#DLG_NAVIGATION_PI.TB_CONTENT.FN_SHOW_ROOT.ToolBoxItem.Text
 msgid  "Content View"
-msgstr "Содержание"
+msgstr "Содержимое"
 
 #: source/ui/utlui/navipi.src#DLG_NAVIGATION_PI.TB_CONTENT.FN_SELECT_SET_AUTO_BOOKMARK.ToolBoxItem.Text
 msgid  "Set Reminder"
@@ -11637,7 +11637,7 @@ msgstr "Переключить"
 
 #: source/ui/utlui/navipi.src#DLG_NAVIGATION_PI.TB_GLOBAL.FN_GLOBAL_EDIT.ToolBoxItem.Text
 msgid  "Edit"
-msgstr "Изменить"
+msgstr "Правка"
 
 #: source/ui/utlui/navipi.src#DLG_NAVIGATION_PI.TB_GLOBAL.FN_GLOBAL_UPDATE.ToolBoxItem.Text
 msgid  "Update"
@@ -11689,7 +11689,7 @@ msgstr "Активное окно"
 
 #: source/ui/utlui/navipi.src#DLG_NAVIGATION_PI.ST_HIDDEN.String.Text
 msgid  "hidden"
-msgstr "скрытый"
+msgstr "спрятан"
 
 #: source/ui/utlui/navipi.src#DLG_NAVIGATION_PI.ST_ACTIVE.String.Text
 msgid  "active"
@@ -11933,7 +11933,7 @@ msgstr "Подписи"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_STANDARD.String.Text
 msgid  "Default"
-msgstr "Базовый"
+msgstr "Обычный"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_TEXT.String.Text
 msgid  "Text body"

@@ -53,7 +53,7 @@ msgstr "Размерные линии"
 
 #: source/core/glob.src#STR_PAGE.String.Text
 msgid  "Slide"
-msgstr "Страница"
+msgstr "Слайд"
 
 #: source/core/glob.src#STR_PAGE_NAME.String.Text
 msgid  "Page"
@@ -197,11 +197,11 @@ msgstr "Режим точек соединения"
 
 #: source/core/glob.src#STR_LAYOUT_DEFAULT_NAME.String.Text
 msgid  "Default"
-msgstr "Обычный"
+msgstr "Базовый"
 
 #: source/core/glob.src#STR_LAYOUT_DEFAULT_TITLE_NAME.String.Text
 msgid  "Title"
-msgstr "Название"
+msgstr "Заголовок"
 
 #: source/core/glob.src#STR_STANDARD_STYLESHEET_NAME.String.Text
 msgid  "Default"
@@ -1313,7 +1313,7 @@ msgstr "Без переходов"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_REPLYTO_POSTIT.MenuItem.Text
 msgid  "~Reply"
-msgstr "Ответить"
+msgstr "Ответ~ить"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_ATTR_CHAR_WEIGHT.MenuItem.Text
 msgid  "~Bold"
@@ -1525,7 +1525,7 @@ msgstr "Панель опций/Графические объекты"
 
 #: source/ui/app/strings.src#STR_DRAW_COMMONTASK_TOOLBOX.String.Text
 msgid  "Presentation"
-msgstr "Панель презентации"
+msgstr "Презентация"
 
 #: source/ui/app/strings.src#STR_SLIDE_OBJ_TOOLBOX.String.Text
 msgid  "Slide Object Bar"
@@ -1617,7 +1617,7 @@ msgstr "Режим структуры"
 
 #: source/ui/app/strings.src#STR_NOTES_MODE.String.Text
 msgid  "Notes"
-msgstr "Режим примечаний"
+msgstr "Примечания"
 
 #: source/ui/app/strings.src#STR_HANDOUT_MODE.String.Text
 msgid  "Handout"
@@ -1757,7 +1757,7 @@ msgstr "Присвоить имя объекту"
 
 #: source/ui/app/strings.src#STR_DESC_NAMEGROUP.String.Text
 msgid  "Name"
-msgstr "Введите имя объекта"
+msgstr "Имя"
 
 #: source/ui/app/strings.src#STR_WARN_PAGE_EXISTS.String.Text
 msgid  "The slide name already exists or is invalid. Please enter another name."
@@ -1797,7 +1797,7 @@ msgstr "Слой"
 
 #: source/ui/app/strings.src#STR_UNDO_DELETEPAGES.String.Text
 msgid  "Delete slides"
-msgstr "Удалить слайд"
+msgstr "Удалить слайды"
 
 #: source/ui/app/strings.src#STR_UNDO_INSERTPAGES.String.Text
 msgid  "Insert slides"
@@ -2889,15 +2889,15 @@ msgstr "Вырав~нивание"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_LEFT.MenuItem.Text
 msgid  "~Left"
-msgstr "По левому краю"
+msgstr "По ~левому краю"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_RIGHT.MenuItem.Text
 msgid  "~Right"
-msgstr "По правому краю"
+msgstr "По ~правому краю"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_CENTER.MenuItem.Text
 msgid  "~Centered"
-msgstr "По центру"
+msgstr "По ~центру"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_BLOCK.MenuItem.Text
 msgid  "Justified"
@@ -2909,7 +2909,7 @@ msgstr "Вырав~нивание"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_LEFT.MenuItem.Text
 msgid  "~Left"
-msgstr "По ~левому краю"
+msgstr "По левому краю"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_CENTER.MenuItem.Text
 msgid  "~Centered"
@@ -2917,11 +2917,11 @@ msgstr "По ~центру"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_RIGHT.MenuItem.Text
 msgid  "~Right"
-msgstr "По ~правому краю"
+msgstr "С~права"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_UP.MenuItem.Text
 msgid  "~Top"
-msgstr "По ~верхнему краю"
+msgstr "Сверх~у"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_MIDDLE.MenuItem.Text
 msgid  "C~enter"
@@ -2929,7 +2929,7 @@ msgstr "По се~редине"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_DOWN.MenuItem.Text
 msgid  "~Bottom"
-msgstr "По ~нижнему краю"
+msgstr "С~низу"
 
 #: source/ui/app/menuids_tmpl.src#MN_CLOSE_OBJECT.SID_OBJECT_CLOSE.MenuItem.Text
 msgid  "Close ~Object"
@@ -5461,7 +5461,7 @@ msgstr "Исходный размер"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.item2.ItemList.item
 msgid  "Fit to printable page"
-msgstr "Подогнать по размеру страницы"
+msgstr "Подогнать по области печати"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_OPTIONS_CHOICES.item3.ItemList.item
 msgid  "Distribute on multiple sheets of paper"

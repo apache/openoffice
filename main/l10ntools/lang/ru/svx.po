@@ -77,7 +77,7 @@ msgstr "Видео..."
 
 #: inc/globlmn_tmpl.hrc#ITEM_INSERT_OBJECT_MN.SID_MN_INSERT_OBJECT_DLGS.MenuItem.Text
 msgid  "~Object"
-msgstr "Об~ъект"
+msgstr "Объект"
 
 #: inc/globlmn_tmpl.hrc#ITEM_INSERT_OBJECT_MN.SID_MN_INSERT_OBJECT_DLGS.SID_INSERT_OBJECT.MenuItem.Text
 msgid  "~OLE Object..."
@@ -89,7 +89,7 @@ msgstr "Формула..."
 
 #: inc/globlmn_tmpl.hrc#ITEM_INSERT_OBJECT_PORTAL.SID_MN_INSERT_OBJECT_DLGS.MenuItem.Text
 msgid  "~Object"
-msgstr "Объект"
+msgstr "Об~ъект"
 
 #: inc/globlmn_tmpl.hrc#ITEM_INSERT_OBJECT_PORTAL.SID_MN_INSERT_OBJECT_DLGS.SID_INSERT_OBJECT.MenuItem.Text
 msgid  "~OLE Object..."
@@ -153,7 +153,7 @@ msgstr "Фигуры"
 
 #: inc/globlmn_tmpl.hrc#ITEM_GROUP_MENU.SID_MN_GROUP.MenuItem.Text
 msgid  "~Group"
-msgstr "~Группировка"
+msgstr "Сгру~ппировать"
 
 #: inc/globlmn_tmpl.hrc#ITEM_DATASOURCE_ADMINISTRATION.SID_DATASOURCE_ADMINISTRATION.MenuItem.Text
 msgid  "~Data Sources..."
@@ -2693,7 +2693,7 @@ msgstr "Градиент"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_BITMAP.String.Text
 msgid  "Bitmap"
-msgstr "Растровое изображение"
+msgstr "Текстура"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_LINESTYLE.String.Text
 msgid  "Line Style"
@@ -3993,7 +3993,7 @@ msgstr "По объекту"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_FLAT.ButtonImage.QuickHelpText
 msgid  "Flat"
-msgstr "Плоскостной"
+msgstr "Плоский"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_SPHERE.ButtonImage.QuickHelpText
 msgid  "Spherical"
@@ -5025,7 +5025,7 @@ msgstr "Добавить..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MID_MODELS_EDIT.MenuItem.Text
 msgid  "~Edit..."
-msgstr "Правка..."
+msgstr "Переименовать..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_MODELS.MID_MODELS_REMOVE.MenuItem.Text
 msgid  "~Remove"
@@ -5053,7 +5053,7 @@ msgstr "Добавить..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MID_INSTANCES_EDIT.MenuItem.Text
 msgid  "~Edit..."
-msgstr "Переименовать..."
+msgstr "Правка..."
 
 #: source/form/datanavi.src#RID_SVXWIN_DATANAVIGATOR.MB_INSTANCES.MID_INSTANCES_REMOVE.MenuItem.Text
 msgid  "~Remove"
@@ -5565,11 +5565,11 @@ msgstr "Свойства..."
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MenuItem.Text
 msgid  "~Insert"
-msgstr "Вст~авить"
+msgstr "Вставить"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MN_ADD.MenuItem.Text
 msgid  "~Copy"
-msgstr "Копировать"
+msgstr "Копия"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MN_ADD_LINK.MenuItem.Text
 msgid  "Link"
@@ -5977,7 +5977,7 @@ msgstr "Начальные висячие строки"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_ULSPACE.ItemList.item
 msgid  "Spacing"
-msgstr "Интервал до/после абзаца"
+msgstr "Расстояние"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_PARA_LRSPACE.ItemList.item
 msgid  "Indent"
@@ -6917,7 +6917,7 @@ msgstr "графический объект"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralNONE.String.Text
 msgid  "draw objects"
-msgstr "графических объекта"
+msgstr "графические объекты"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulGRUP.String.Text
 msgid  "group object"
@@ -7173,7 +7173,7 @@ msgstr "Периодические сплайны"
 
 #: source/svdraw/svdstr.src#STR_ObjNameSingulTEXT.String.Text
 msgid  "Text Frame"
-msgstr "Врезки"
+msgstr "Врезка"
 
 #: source/svdraw/svdstr.src#STR_ObjNamePluralTEXT.String.Text
 msgid  "Text Frame"
@@ -7513,23 +7513,23 @@ msgstr "Изменить порядок %1"
 
 #: source/svdraw/svdstr.src#STR_EditMove.String.Text
 msgid  "Move %1"
-msgstr "Переместить объект %1"
+msgstr "Переместить %1"
 
 #: source/svdraw/svdstr.src#STR_EditResize.String.Text
 msgid  "Resize %1"
-msgstr "Изменить размер объекта %1"
+msgstr "Изменить размер %1"
 
 #: source/svdraw/svdstr.src#STR_EditRotate.String.Text
 msgid  "Rotate %1"
-msgstr "Повернуть объект %1"
+msgstr "Повернуть %1"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorHori.String.Text
 msgid  "Flip %1 horizontal"
-msgstr "Отразить %1 по горизонтали"
+msgstr "Отразить %1 горизонтально"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorVert.String.Text
 msgid  "Flip %1 vertical"
-msgstr "Отразить %1 по вертикали"
+msgstr "Отразить %1 вертикально"
 
 #: source/svdraw/svdstr.src#STR_EditMirrorDiag.String.Text
 msgid  "Flip %1 diagonal"
@@ -7541,7 +7541,7 @@ msgstr "Отразить %1 в свободной форме"
 
 #: source/svdraw/svdstr.src#STR_EditShear.String.Text
 msgid  "Distort %1 (slant)"
-msgstr "Исказить %1 (под наклоном)"
+msgstr "Исказить %1 (уклон)"
 
 #: source/svdraw/svdstr.src#STR_EditCrook.String.Text
 msgid  "Arrange %1 in circle"
@@ -7737,11 +7737,11 @@ msgstr "Геометрически изменить %1"
 
 #: source/svdraw/svdstr.src#STR_DragMethMove.String.Text
 msgid  "Move %1"
-msgstr "Переместить %1"
+msgstr "Переместить объект %1"
 
 #: source/svdraw/svdstr.src#STR_DragMethResize.String.Text
 msgid  "Resize %1"
-msgstr "Изменить размер %1"
+msgstr "Изменить размер объекта %1"
 
 #: source/svdraw/svdstr.src#STR_DragMethRotate.String.Text
 msgid  "Rotate %1"
@@ -8189,7 +8189,7 @@ msgstr "Трёхмерная тень"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_SHADOWPERSP.String.Text
 msgid  "Perspective shadow"
-msgstr "Тень в перспективе"
+msgstr "Перспективная тень"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_CAPTIONTYPE.String.Text
 msgid  "Callout type"
@@ -8285,7 +8285,7 @@ msgstr "Горизонтальная привязка текста"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_FITTOSIZE.String.Text
 msgid  "Fit text to frame"
-msgstr "Выровнять текст по рамке"
+msgstr "Подгон текста под рамку"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFRED.String.Text
 msgid  "Red"
