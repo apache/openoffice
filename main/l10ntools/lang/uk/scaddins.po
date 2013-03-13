@@ -714,8 +714,9 @@ msgid  "Number"
 msgstr "Число"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.3.String.Text
+#, fuzzy
 msgid  "The number"
-msgstr "Число"
+msgstr "Число."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Isodd.1.String.Text
 #, fuzzy
@@ -728,6 +729,7 @@ msgid  "Number"
 msgstr "Число"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Isodd.3.String.Text
+#, fuzzy
 msgid  "The number"
 msgstr "Число"
 
@@ -889,8 +891,9 @@ msgid  "Number(s)"
 msgstr "Число(а)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Gcd.3.String.Text
+#, fuzzy
 msgid  "Number or list of numbers"
-msgstr "Число або набір чисел"
+msgstr "Число або список чисел"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Lcm.1.String.Text
 #, fuzzy
@@ -920,7 +923,7 @@ msgstr "X"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besseli.3.String.Text
 #, fuzzy
 msgid  "The value at which the function is to be evaluated"
-msgstr "Значення, для якомго буде обчислена функція"
+msgstr "Значення, для якого буде обчислена функція"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besseli.4.String.Text
 #, fuzzy
@@ -945,7 +948,7 @@ msgstr "X"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselj.3.String.Text
 #, fuzzy
 msgid  "The value at which the function is to be evaluated"
-msgstr "Значення, для якого буде обчислена функція"
+msgstr "Значення, для якого обчислюється функція"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselj.4.String.Text
 #, fuzzy
@@ -970,7 +973,7 @@ msgstr "X"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselk.3.String.Text
 #, fuzzy
 msgid  "The value at which the function is to be evaluated"
-msgstr "Значення, для якого обчислюється функція"
+msgstr "Значення для якого обчислюється функція"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Besselk.4.String.Text
 #, fuzzy
@@ -1020,7 +1023,7 @@ msgstr "Число"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.3.String.Text
 #, fuzzy
 msgid  "The binary number to be converted (as text)"
-msgstr "Двійкове число, що буде перетворене (як текст)"
+msgstr "Двійкове число що буде перетворене (як текст)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.4.String.Text
 #, fuzzy
@@ -1030,7 +1033,7 @@ msgstr "Розрядність"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.5.String.Text
 #, fuzzy
 msgid  "Number of places used"
-msgstr "Допустима кількість символів у записі числа"
+msgstr "Припустима кількість символів у записі числа."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Dec.1.String.Text
 #, fuzzy
@@ -1045,7 +1048,7 @@ msgstr "Число"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Dec.3.String.Text
 #, fuzzy
 msgid  "The binary number to be converted (as text)"
-msgstr "Двійкове число що буде перетворене (як текст)"
+msgstr "Двійкове число, що буде перетворене (як текст)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Hex.1.String.Text
 #, fuzzy
@@ -1085,7 +1088,7 @@ msgstr "Число"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Bin.3.String.Text
 #, fuzzy
 msgid  "The octal number to be converted (as text)"
-msgstr "Перетворює вісімкове число (як текст)"
+msgstr "Вісімкове число, що буде перетворено (як текст)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Bin.4.String.Text
 #, fuzzy
@@ -1095,7 +1098,7 @@ msgstr "Розрядність"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Bin.5.String.Text
 #, fuzzy
 msgid  "Number of places used"
-msgstr "Припустима кількість символів у записі числа."
+msgstr "Максимальна кількість символів у записі числа"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Dec.1.String.Text
 #, fuzzy
@@ -1135,7 +1138,7 @@ msgstr "Розрядність"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Hex.5.String.Text
 #, fuzzy
 msgid  "Number of places used"
-msgstr "Припустима кількість символів у записі числа."
+msgstr "Припустима кількість символів у записі числа"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Bin.1.String.Text
 #, fuzzy
@@ -1160,7 +1163,7 @@ msgstr "Розрядність"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Bin.5.String.Text
 #, fuzzy
 msgid  "Number of places used"
-msgstr "Максимальна кількість символів у записі числа"
+msgstr "Припустима кількість символів у записі числа."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Hex.1.String.Text
 #, fuzzy
@@ -1185,7 +1188,7 @@ msgstr "Розрядність"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Hex.5.String.Text
 #, fuzzy
 msgid  "Number of places used"
-msgstr "Припустима кількість символів у записі числа."
+msgstr "Припустима кількість символів у записі числа"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.1.String.Text
 #, fuzzy
@@ -1225,7 +1228,7 @@ msgstr "Число"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Bin.3.String.Text
 #, fuzzy
 msgid  "The hexadecimal number to be converted (as text)"
-msgstr "Шістнадцяткове число, що перетворюється (як текст)"
+msgstr "Перетворює шістнадцяткове число (як текст)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Bin.4.String.Text
 #, fuzzy
@@ -1250,7 +1253,7 @@ msgstr "Число"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Dec.3.String.Text
 #, fuzzy
 msgid  "The hexadecimal number to be converted (as text)"
-msgstr "Перетворює шістнадцяткове число (як текст)"
+msgstr "Перетворюване шістнадцяткове число (як текст)"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Hex2Oct.1.String.Text
 #, fuzzy
@@ -1395,7 +1398,7 @@ msgstr "Комплексне число"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imabs.3.String.Text
 #, fuzzy
 msgid  "The complex number"
-msgstr "Комплексне число"
+msgstr "Комплексне число."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imaginary.1.String.Text
 #, fuzzy
@@ -1410,7 +1413,7 @@ msgstr "Комплексне число"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imaginary.3.String.Text
 #, fuzzy
 msgid  "The complex number"
-msgstr "Комплексне число."
+msgstr "Комплексне число"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Impower.1.String.Text
 #, fuzzy
@@ -1893,7 +1896,7 @@ msgstr "Період"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.11.String.Text
 #, fuzzy
 msgid  "The period"
-msgstr "Період"
+msgstr "Період."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.12.String.Text
 #, fuzzy
@@ -1913,7 +1916,7 @@ msgstr "Базис"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.15.String.Text
 #, fuzzy
 msgid  "The year basis to be used"
-msgstr "Спосіб обчислення дат, що використовується."
+msgstr "спосіб обчислення дат."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.1.String.Text
 msgid  "Returns the prorated linear depreciation of an asset for each accounting period"
@@ -2021,7 +2024,7 @@ msgstr "Угода"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.7.String.Text
 #, fuzzy
 msgid  "The settlement"
-msgstr "Дата угоди для цінних паперів"
+msgstr "Дата угоди для цінних паперів."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.8.String.Text
 #, fuzzy
@@ -2031,7 +2034,7 @@ msgstr "Ставка"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.9.String.Text
 #, fuzzy
 msgid  "The rate"
-msgstr "Річна ставка для купонів з цінних паперів."
+msgstr "Річна відсоткова ставка для купонів за цінними паперами."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.10.String.Text
 #, fuzzy
@@ -2041,7 +2044,7 @@ msgstr "Номінал"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.11.String.Text
 #, fuzzy
 msgid  "The par value"
-msgstr "Номінальна вартість цінних паперів."
+msgstr "Номінальна вартість цінних паперів"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.12.String.Text
 #, fuzzy
@@ -2051,7 +2054,7 @@ msgstr "Частота"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.13.String.Text
 #, fuzzy
 msgid  "The frequency"
-msgstr "Кількість виплат по купонам за рік."
+msgstr "Кількість виплат по купонах за рік"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.14.String.Text
 #, fuzzy
@@ -2061,7 +2064,7 @@ msgstr "Базис"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.15.String.Text
 #, fuzzy
 msgid  "The basis"
-msgstr "Спосіб обчислення дня."
+msgstr "Спосіб обчислення дня"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.1.String.Text
 msgid  "Returns the accrued interest for a security that pays interest at maturity"
@@ -2075,7 +2078,7 @@ msgstr "Випуск"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.3.String.Text
 #, fuzzy
 msgid  "The issue date"
-msgstr "Дата випуску цінних паперів."
+msgstr "Дата випуску цінних паперів"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.4.String.Text
 #, fuzzy
@@ -2085,7 +2088,7 @@ msgstr "Угода"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.5.String.Text
 #, fuzzy
 msgid  "The settlement"
-msgstr "Дата угоди для цінних паперів."
+msgstr "Дата угоди для цінних паперів"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.6.String.Text
 #, fuzzy
@@ -2095,7 +2098,7 @@ msgstr "Ставка"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.7.String.Text
 #, fuzzy
 msgid  "The rate"
-msgstr "Річна відсоткова ставка для купонів за цінними паперами."
+msgstr "Рівня відсоткова ставка для купонів за цінними паперами"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.8.String.Text
 #, fuzzy
@@ -2115,7 +2118,7 @@ msgstr "Базис"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.11.String.Text
 #, fuzzy
 msgid  "The basis"
-msgstr "Спосіб обчислення дня."
+msgstr "Спосіб обчислення дня"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.1.String.Text
 msgid  "Returns the amount paid out at maturity for a fully invested security"
@@ -2129,7 +2132,7 @@ msgstr "Угода"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.3.String.Text
 #, fuzzy
 msgid  "The settlement"
-msgstr "Дата угоди для цінних паперів"
+msgstr "Угода"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.4.String.Text
 #, fuzzy
@@ -2139,7 +2142,7 @@ msgstr "Погашення"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.5.String.Text
 #, fuzzy
 msgid  "The maturity"
-msgstr "Термін погашення цінних паперів"
+msgstr "Термін погашення цінних паперів."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.6.String.Text
 #, fuzzy
@@ -2149,12 +2152,12 @@ msgstr "Інвестиція"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.7.String.Text
 #, fuzzy
 msgid  "The investment"
-msgstr "Обсяг інвестиції у цінні папери"
+msgstr "Інвестиція"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.8.String.Text
 #, fuzzy
 msgid  "Discount"
-msgstr "Снижка"
+msgstr "Знижка"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.9.String.Text
 #, fuzzy
@@ -2169,7 +2172,7 @@ msgstr "Базис"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.11.String.Text
 #, fuzzy
 msgid  "The basis"
-msgstr "Спосіб обчислення дня"
+msgstr "Використаний спосіб обчислення дня"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.1.String.Text
 #, fuzzy
@@ -2184,7 +2187,7 @@ msgstr "Угода"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.3.String.Text
 #, fuzzy
 msgid  "The settlement"
-msgstr "Дата угоди для цінних паперів"
+msgstr "Дата угоди для цінних паперів."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.4.String.Text
 #, fuzzy
@@ -2194,7 +2197,7 @@ msgstr "Погашення"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.5.String.Text
 #, fuzzy
 msgid  "The maturity"
-msgstr "Термін погашення цінних паперів"
+msgstr "Термін погашення цінних паперів."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.6.String.Text
 #, fuzzy
@@ -2204,7 +2207,7 @@ msgstr "Вартість"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.7.String.Text
 #, fuzzy
 msgid  "The price"
-msgstr "Вартість цінних причин"
+msgstr "Вартість цінних паперів"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.8.String.Text
 #, fuzzy
@@ -2214,7 +2217,7 @@ msgstr "Викуп"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.9.String.Text
 #, fuzzy
 msgid  "The redemption value"
-msgstr "Ціна викупу цінних паперів"
+msgstr "Викупна ціна цінних паперів"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.10.String.Text
 #, fuzzy
@@ -2224,7 +2227,7 @@ msgstr "Базис"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.11.String.Text
 #, fuzzy
 msgid  "The basis"
-msgstr "Спосіб обчислення дня"
+msgstr "Спосіб обчислення дат"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.1.String.Text
 msgid  "Returns the annual Macaulay duration of a security with periodic interest payments"
@@ -2238,7 +2241,7 @@ msgstr "Угода"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.3.String.Text
 #, fuzzy
 msgid  "The settlement"
-msgstr "Дата угоди для цінних паперів"
+msgstr "Дата угоди для цінних паперів."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.4.String.Text
 #, fuzzy
@@ -2248,7 +2251,7 @@ msgstr "Погашення"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.5.String.Text
 #, fuzzy
 msgid  "The maturity"
-msgstr "Термін погашення цінних паперів."
+msgstr "Термін погашення цінних паперів"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.6.String.Text
 #, fuzzy
@@ -2258,17 +2261,17 @@ msgstr "Купон"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.7.String.Text
 #, fuzzy
 msgid  "The coupon rate"
-msgstr "Річна відсоткова ставка для купонів по цінним паперам"
+msgstr "Річна відсоткова ставка для купонів по цінних паперах"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.8.String.Text
 #, fuzzy
 msgid  "Yield"
-msgstr "Прибуток"
+msgstr "Прбуток"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.9.String.Text
 #, fuzzy
 msgid  "The yield"
-msgstr "Прибуток по цінних паперів"
+msgstr "Прибуток від цінних паперів"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.10.String.Text
 #, fuzzy
@@ -2278,7 +2281,7 @@ msgstr "Частота"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.11.String.Text
 #, fuzzy
 msgid  "The frequency"
-msgstr "Кількість виплат по купонах за рік"
+msgstr "Кількість викупів по купонах за рік"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.12.String.Text
 #, fuzzy
@@ -2288,7 +2291,7 @@ msgstr "Базис"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.13.String.Text
 #, fuzzy
 msgid  "The basis"
-msgstr "Спосіб обчислення дня"
+msgstr "Спосіб обчислення дат"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Effect.1.String.Text
 #, fuzzy
@@ -2313,7 +2316,7 @@ msgstr "Періоди"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Effect.5.String.Text
 #, fuzzy
 msgid  "The periods"
-msgstr "Кількість періодів що складають рік."
+msgstr "ільість періодів, що складають рік"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.1.String.Text
 msgid  "Returns the cumulative principal on a loan to be paid between two periods"
@@ -2327,7 +2330,7 @@ msgstr "Ставка"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.3.String.Text
 #, fuzzy
 msgid  "The rate"
-msgstr "Рівня відсоткова ставка для купонів за цінними паперами"
+msgstr "Річна відсоткова ставка для купонів за цінними паперами."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.4.String.Text
 #, fuzzy
@@ -2347,7 +2350,7 @@ msgstr "Поточне значення"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.7.String.Text
 #, fuzzy
 msgid  "The present value"
-msgstr "Поточне значення інвестиції"
+msgstr "Поточне значення інвестиції."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.8.String.Text
 #, fuzzy
@@ -2357,7 +2360,7 @@ msgstr "Початковий період"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.9.String.Text
 #, fuzzy
 msgid  "The start period"
-msgstr "Початковий період при обчисленнях"
+msgstr "Початковий період у обчисленнях"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.10.String.Text
 #, fuzzy
@@ -2392,7 +2395,7 @@ msgstr "Ставка"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumipmt.3.String.Text
 #, fuzzy
 msgid  "The rate"
-msgstr "Річна відсоткова ставка для купонів за цінними паперами."
+msgstr "Річна відсоткова ставка для купонів за цінними паперами"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumipmt.4.String.Text
 #, fuzzy
@@ -2456,7 +2459,7 @@ msgstr "Угода"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.3.String.Text
 #, fuzzy
 msgid  "The settlement"
-msgstr "Дата угоди для цінних паперів"
+msgstr "Дата угоди для цінних паперів."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.4.String.Text
 #, fuzzy
@@ -2466,7 +2469,7 @@ msgstr "Погашення"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.5.String.Text
 #, fuzzy
 msgid  "The maturity"
-msgstr "Термін погашення цінних паперів"
+msgstr "Термін погашення цінних паперів."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.6.String.Text
 #, fuzzy
@@ -2476,17 +2479,17 @@ msgstr "Ставка"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.7.String.Text
 #, fuzzy
 msgid  "The rate"
-msgstr "Річна відсоткова ставка для купонів за цінними паперами"
+msgstr "Річна відсоткова ставка для купонів за цінними паперами."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.8.String.Text
 #, fuzzy
 msgid  "Yield"
-msgstr "Прбуток"
+msgstr "Прибуток"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.9.String.Text
 #, fuzzy
 msgid  "The yield"
-msgstr "Прибуток від цінних паперів"
+msgstr "Прибуток за цінними паперами"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.10.String.Text
 #, fuzzy
@@ -2496,7 +2499,7 @@ msgstr "Викуп"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.11.String.Text
 #, fuzzy
 msgid  "The redemption value"
-msgstr "Викупна ціна цінних паперів"
+msgstr "Викупна ціна цінних паперів."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.12.String.Text
 #, fuzzy
@@ -2506,7 +2509,7 @@ msgstr "Частота"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.13.String.Text
 #, fuzzy
 msgid  "The frequency"
-msgstr "Кількість виплат по купонах за рік"
+msgstr "Кількість виплат по купонах за рік."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.14.String.Text
 #, fuzzy
@@ -2516,7 +2519,7 @@ msgstr "Базис"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.15.String.Text
 #, fuzzy
 msgid  "The basis"
-msgstr "Спосіб обчислення дня"
+msgstr "Спосіб обчислення дня."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.1.String.Text
 msgid  "Returns the price per 100 currency units face value of a discounted security"
@@ -2530,7 +2533,7 @@ msgstr "Угода"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.3.String.Text
 #, fuzzy
 msgid  "The settlement"
-msgstr "Угода"
+msgstr "Дата угоди для цінних паперів"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.4.String.Text
 #, fuzzy
@@ -2540,7 +2543,7 @@ msgstr "Погашення"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.5.String.Text
 #, fuzzy
 msgid  "The maturity"
-msgstr "Термін погашення цінних паперів"
+msgstr "Термін погашення цінних паперів."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.6.String.Text
 #, fuzzy
@@ -2560,7 +2563,7 @@ msgstr "Викуп"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.9.String.Text
 #, fuzzy
 msgid  "The redemption value"
-msgstr "Викупна ціна цінних паперів."
+msgstr "Викупна ціна цінних паперів"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.10.String.Text
 #, fuzzy
@@ -2570,7 +2573,7 @@ msgstr "Базис"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.11.String.Text
 #, fuzzy
 msgid  "The basis"
-msgstr "Спосіб обчислення дня"
+msgstr "Спосіб обчислення дня."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.1.String.Text
 msgid  "Returns the price per 100 currency units face value of a security that pays interest at maturity"
@@ -2594,7 +2597,7 @@ msgstr "Погашення"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.5.String.Text
 #, fuzzy
 msgid  "The maturity"
-msgstr "Термін погашення цінних паперів."
+msgstr "Термін погашення цінних паперів"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.6.String.Text
 #, fuzzy
@@ -2614,7 +2617,7 @@ msgstr "Ставка"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.9.String.Text
 #, fuzzy
 msgid  "The rate"
-msgstr "Річна відсоткова ставка для купонів за цінними паперами"
+msgstr "Річна ставки для купонів за цінними паперами"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.10.String.Text
 #, fuzzy
@@ -2624,7 +2627,7 @@ msgstr "Прибуток"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.11.String.Text
 #, fuzzy
 msgid  "The yield"
-msgstr "Прибуток за цінними паперами"
+msgstr "Прибуток від цінних паперів"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.12.String.Text
 #, fuzzy
@@ -2688,7 +2691,7 @@ msgstr "Частота"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.11.String.Text
 #, fuzzy
 msgid  "The frequency"
-msgstr "Кількість викупів по купонах за рік"
+msgstr "Кількість виплат за купонами за рік."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mduration.12.String.Text
 #, fuzzy
@@ -2741,7 +2744,7 @@ msgstr "Десяткове число, що перетворюється"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarfr.4.String.Text
 #, fuzzy
 msgid  "Fraction"
-msgstr "Дріб"
+msgstr "Дроб"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dollarfr.5.String.Text
 #, fuzzy
@@ -2805,7 +2808,7 @@ msgstr "Ставка"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.7.String.Text
 #, fuzzy
 msgid  "The rate"
-msgstr "Річна відсоткова ставка для купонів за цінними паперами"
+msgstr "Річна відсоткова ставка для купонів за цінними паперами."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.8.String.Text
 #, fuzzy
@@ -2835,7 +2838,7 @@ msgstr "Частота"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.13.String.Text
 #, fuzzy
 msgid  "The frequency"
-msgstr "Кількість виплат по купонах за рік."
+msgstr "Кількість виплат за купонами за рік"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.14.String.Text
 #, fuzzy
@@ -3152,7 +3155,7 @@ msgstr "Частота"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.17.String.Text
 #, fuzzy
 msgid  "The frequency"
-msgstr "Кількість виплат за купонами за рік."
+msgstr "Кількість виплат по купонах за рік"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.18.String.Text
 #, fuzzy
@@ -3247,7 +3250,7 @@ msgstr "Частота"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfyield.17.String.Text
 #, fuzzy
 msgid  "The frequency"
-msgstr "Кількість виплат за купонами за рік"
+msgstr "Кількість виплат по купонах за рік"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfyield.18.String.Text
 #, fuzzy
@@ -3291,7 +3294,7 @@ msgstr "Останні відсотки"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.7.String.Text
 #, fuzzy
 msgid  "The last interest date"
-msgstr "Дата останнього нарахування відсотків за цінними паперами"
+msgstr "Дата останнього нарахування відсотку за цінних паперів."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.8.String.Text
 #, fuzzy
@@ -3331,7 +3334,7 @@ msgstr "Частота"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.15.String.Text
 #, fuzzy
 msgid  "The frequency"
-msgstr "Кількість виплат по купонах за рік"
+msgstr "Кількість виплат по купонах на рік"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlprice.16.String.Text
 #, fuzzy
@@ -3416,7 +3419,7 @@ msgstr "Частота"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlyield.15.String.Text
 #, fuzzy
 msgid  "The frequency"
-msgstr "Кількість виплат по купонах за рік"
+msgstr "Кількість виплат за купонами за рік."
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddlyield.16.String.Text
 #, fuzzy
@@ -3440,7 +3443,7 @@ msgstr "Значення"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xirr.3.String.Text
 #, fuzzy
 msgid  "The values"
-msgstr "Ряд операцій з готівкою, які відповідають розкладу виплат."
+msgstr "Ряд операцій з готівкою, які відповідають розкладу виплат"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xirr.4.String.Text
 #, fuzzy
@@ -3584,7 +3587,7 @@ msgstr "Частота"
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupncd.7.String.Text
 #, fuzzy
 msgid  "The frequency"
-msgstr "Кількість виплат по купонах на рік"
+msgstr "Частота"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Coupncd.8.String.Text
 #, fuzzy

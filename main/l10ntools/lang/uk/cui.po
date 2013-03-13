@@ -2084,7 +2084,7 @@ msgid  "~Delete"
 msgstr "В~идалити"
 
 #: source/dialogs/about.src#RID_DEFAULTABOUT.ModalDialog.Text
-msgid  "About %PRODUCTNAME"
+msgid  "About %FULLPRODUCTNAME"
 msgstr ""
 
 #: source/dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_BTN_README.PushButton.Text
@@ -3334,8 +3334,9 @@ msgid  "HTTP~S proxy"
 msgstr "HTTP~S проксі"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_HTTPS_PORT.FixedText.Text
+#, fuzzy
 msgid  "P~ort"
-msgstr "П~орт"
+msgstr "~Порт"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_FTP_PROXY.FixedText.Text
 #, fuzzy
@@ -6738,7 +6739,7 @@ msgstr "Заповнення"
 #: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.LB_AREA_TYPE.Default.StringList.item
 #, fuzzy
 msgid  "Bitmap"
-msgstr "Растр"
+msgstr "Растрове зображення"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.FL_STEPCOUNT.FixedLine.Text
 #, fuzzy
@@ -8052,7 +8053,7 @@ msgstr "~Вирівнювання"
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ALIGN.item1.StringList.item
 #, fuzzy
 msgid  "Left"
-msgstr "Зліва"
+msgstr "Ліворуч"
 
 #: source/tabpages/numpages.src#RID_SVXPAGE_NUM_OPTIONS.LB_ALIGN.item2.StringList.item
 #, fuzzy
@@ -9686,7 +9687,7 @@ msgstr "Положення та розмір"
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_POSITION.FixedLine.Text
 #, fuzzy
 msgid  "Position"
-msgstr "~Положення"
+msgstr "Позиція"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_POS_X.FixedText.Text
 #, fuzzy
@@ -10121,7 +10122,7 @@ msgstr "~Горизонтально"
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_STD.StringList.item
 #, fuzzy
 msgid  "Default"
-msgstr "Типово"
+msgstr "Стандарт"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_LEFT.StringList.item
 #, fuzzy
