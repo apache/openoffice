@@ -7182,7 +7182,7 @@ msgstr "হাৰ"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.3.String.Text
 #, fuzzy
 msgid  "The rate of interest per period."
-msgstr "প্ৰতিটো কালৰ সুতটো ।"
+msgstr "প্ৰতিটো কালৰ সুতটো."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.4.String.Text
 #, fuzzy
@@ -10653,7 +10653,7 @@ msgstr "গড় । পইজন বিতৰণটোৰ গড় মূল�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.6.String.Text
 #, fuzzy
 msgid  "Cumulative"
-msgstr "মানবিশিষ্ট সাধাৰণ সঞ্চয়ী বিতৰণটোৰ মূল্যবোৰ ।"
+msgstr "মানবিশিষ্ট সাধাৰণ সঞ্চয়ী বিতৰণটোৰ মূল্যবোৰ."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.7.String.Text
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
@@ -10801,7 +10801,7 @@ msgstr ""
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOG_NORM_DIST.8.String.Text
 #, fuzzy
 msgid  "Cumulative"
-msgstr "মানবিশিষ্ট সাধাৰণ সঞ্চয়ী বিতৰণটোৰ মূল্যবোৰ."
+msgstr "মানবিশিষ্ট সাধাৰণ সঞ্চয়ী বিতৰণটোৰ মূল্যবোৰ ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOG_NORM_DIST.9.String.Text
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
@@ -10911,7 +10911,7 @@ msgstr "ৱেইবুল বিতৰণটোৰ বিটা পেৰাম
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAMMA_DIST.8.String.Text
 #, fuzzy
 msgid  "Cumulative"
-msgstr "মানবিশিষ্ট সাধাৰণ সঞ্চয়ী বিতৰণটোৰ মূল্যবোৰ ।"
+msgstr "মানবিশিষ্ট সাধাৰণ সঞ্চয়ী বিতৰণটোৰ মূল্যবোৰ."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAMMA_DIST.9.String.Text
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
@@ -11037,7 +11037,7 @@ msgstr "বিতৰণটোৰ মূল্য অন্তৰালটোৰ 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.12.String.Text
 #, fuzzy
 msgid  "Cumulative"
-msgstr "মানবিশিষ্ট সাধাৰণ সঞ্চয়ী বিতৰণটোৰ মূল্যবোৰ."
+msgstr "মানবিশিষ্ট সাধাৰণ সঞ্চয়ী বিতৰণটোৰ মূল্যবোৰ ।"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.13.String.Text
 msgid  "0 or FALSE for probability density function, any other value or TRUE or omitted for cumulative distribution function."
@@ -13382,6 +13382,54 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MIDB.7.String.Text
 msgid  "The number of characters for the text."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.1.String.Text
+msgid  "Return the cosecant of an angle. CSC(x)=1/SIN(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.3.String.Text
+msgid  "The angle in radians for which the cosecant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.1.String.Text
+msgid  "Return the secant of an angle. SEC(x)=1/COS(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.3.String.Text
+msgid  "The angle in radians for which the secant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.1.String.Text
+msgid  "Return the hyperbolic cosecant of a hyperbolic angle. CSCH(x)=1/SINH(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.3.String.Text
+msgid  "The hyperbolic angle in radians for which the hyperbolic cosecant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.1.String.Text
+msgid  "Return the hyperbolic secant of a hyperbolic angle. SECH(x)=1/COSH(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.3.String.Text
+msgid  "The hyperbolic angle in radians for which the hyperbolic secant is to be calculated."
 msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_APPLICATION.String.Text
