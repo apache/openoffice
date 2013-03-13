@@ -5334,8 +5334,9 @@ msgid  "Background"
 msgstr "पृष्ठभूमि"
 
 #: source/ui/dialog/regionsw.src#DLG_INSERT_SECTION.1.TP_SECTION_FTNENDNOTES.PageItem.Text
+#, fuzzy
 msgid  "Footnotes/Endnotes"
-msgstr "पाद टीका/अंत टीका"
+msgstr "पाद टीका/अंतिम टीका"
 
 #: source/ui/dialog/regionsw.src#DLG_INSERT_SECTION.ST_INSERT.String.Text
 #, fuzzy
@@ -5393,8 +5394,9 @@ msgid  "~Restart numbering"
 msgstr "क्रमांकण पुनः प्रारंभ करें (~R)"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FT_FTN_OFFSET.FixedText.Text
+#, fuzzy
 msgid  "~Start at"
-msgstr "यहाँ पर प्रारंभ करें (~S)"
+msgstr "यहाँ पर प्रारंभ (~S)"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.CB_FTN_NUM_FMT.CheckBox.Text
 #, fuzzy
@@ -5992,8 +5994,9 @@ msgid  "Footnote $(ARG1)"
 msgstr "पाद टीका $(ARG1)"
 
 #: source/ui/docvw/access.src#STR_ACCESS_ENDNOTE_NAME.String.Text
+#, fuzzy
 msgid  "Endnote $(ARG1)"
-msgstr "अंतिम टीका $(ARG1)"
+msgstr "अंत टीका $(ARG1)"
 
 #: source/ui/docvw/access.src#STR_ACCESS_ENDNOTE_DESC.String.Text
 #, fuzzy
@@ -7376,8 +7379,9 @@ msgid  "Paragraphs"
 msgstr "अनुच्छेद"
 
 #: source/ui/fldui/fldui.src#FLD_STAT_GRF.String.Text
+#, fuzzy
 msgid  "Graphics"
-msgstr "आलेखी"
+msgstr "चित्रादि"
 
 #: source/ui/fldui/fldui.src#FLD_STAT_OBJ.String.Text
 #, fuzzy
@@ -7546,8 +7550,9 @@ msgid  "Arabic (1 2 3)"
 msgstr "अरबी (1 2 3)"
 
 #: source/ui/fldui/fldui.src#FMT_NUM_PAGEDESC.String.Text
+#, fuzzy
 msgid  "As Page Style"
-msgstr "बतौर पृष्ठ शैली"
+msgstr "पृष्ठ शैली जैसे"
 
 #: source/ui/fldui/fldui.src#FMT_NUM_PAGESPECIAL.String.Text
 #, fuzzy
@@ -7972,8 +7977,9 @@ msgid  "Position"
 msgstr "स्थिति"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_1.1.TP_CHAR_TWOLN.PageItem.Text
+#, fuzzy
 msgid  "Asian Layout"
-msgstr "एशियन ख़ाका"
+msgstr "एशियाई ख़ाका"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_1.1.TP_BACKGROUND.PageItem.Text
 #, fuzzy
@@ -8176,12 +8182,14 @@ msgid  "Numbering Style"
 msgstr "क्रमांकन शैली"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.TabDialog.Text
+#, fuzzy
 msgid  "Frame"
-msgstr "फ्रेम"
+msgstr "ढाँचा"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.1.TP_FRM_STD.PageItem.Text
+#, fuzzy
 msgid  "Type"
-msgstr "प्रकार"
+msgstr "वर्ग"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.1.TP_FRM_ADD.PageItem.Text
 #, fuzzy
@@ -8226,7 +8234,7 @@ msgstr "तस्वीर"
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_GRF.1.TP_FRM_STD.PageItem.Text
 #, fuzzy
 msgid  "Type"
-msgstr "वर्ग"
+msgstr "प्रकार"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_GRF.1.TP_FRM_ADD.PageItem.Text
 #, fuzzy
@@ -9436,8 +9444,9 @@ msgid  "Chapter"
 msgstr "अध्याय"
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.FT_LEVEL.FixedText.Text
+#, fuzzy
 msgid  "Evaluate up to level"
-msgstr "एक स्तर ऊपर तक मूल्यांकन"
+msgstr "एक स्तर ऊपर तक मूल्यांकित करें"
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.FL_CREATEFROM.FixedLine.Text
 #, fuzzy
@@ -12183,8 +12192,9 @@ msgid  "Frame"
 msgstr "ढाँचा"
 
 #: source/ui/shells/shells.src#STR_SHELLNAME_GRAPHIC.String.Text
+#, fuzzy
 msgid  "Graphics"
-msgstr "चित्रादि"
+msgstr "आलेखी"
 
 #: source/ui/shells/shells.src#STR_SHELLNAME_OBJECT.String.Text
 #, fuzzy
@@ -13691,8 +13701,9 @@ msgid  "Conference proceedings"
 msgstr "सम्मेलन कार्यवाही"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_JOURNAL.String.Text
+#, fuzzy
 msgid  "Journal"
-msgstr "शोध पत्रिका"
+msgstr "जर्नल"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_MANUAL.String.Text
 #, fuzzy
@@ -14742,7 +14753,7 @@ msgstr "पाद टीका"
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_ENDNOTE.String.Text
 #, fuzzy
 msgid  "Endnote"
-msgstr "अंत टीका"
+msgstr "अंतिम टीका"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_LABEL.String.Text
 #, fuzzy
