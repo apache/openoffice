@@ -2217,7 +2217,7 @@ msgstr "ページの背景(~C)"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_BLACK_FONT.CheckBox.Text
 msgid  "Print text in blac~k"
-msgstr "文字を黒で印刷(~K)"
+msgstr "テキストを黒で印刷(~K)"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_HIDDEN_TEXT.CheckBox.Text
 msgid  "Hidden te~xt"
@@ -4709,7 +4709,7 @@ msgstr "非表示(~I)"
 
 #: source/ui/dialog/regionsw.src#FL_HIDE_TEXT.#define.Text
 msgid  "Hide"
-msgstr "表示しない"
+msgstr "隠す"
 
 #: source/ui/dialog/regionsw.src#CB_CONDITION_TEXT.#define.Text
 msgid  "~With Condition"
@@ -5585,7 +5585,7 @@ msgstr "肩書き/職業(~P)"
 
 #: source/ui/envelp/label.src#TP_PRIVATE_DATA.FT_PHONE_MOBILE.FixedText.Text
 msgid  "Phone/Mobile"
-msgstr "自宅電話/携帯電話"
+msgstr "会社電話/携帯電話"
 
 #: source/ui/envelp/label.src#TP_PRIVATE_DATA.FT_FAX.FixedText.Text
 msgid  "Fa~x"
@@ -6089,7 +6089,7 @@ msgstr "統計"
 
 #: source/ui/fldui/fldui.src#STR_AUTHORFLD.String.Text
 msgid  "Author"
-msgstr "著者"
+msgstr "作成者"
 
 #: source/ui/fldui/fldui.src#STR_TEMPLNAMEFLD.String.Text
 msgid  "Templates"
@@ -6397,7 +6397,7 @@ msgstr "アラビア数字(1 2 3)"
 
 #: source/ui/fldui/fldui.src#FMT_NUM_PAGEDESC.String.Text
 msgid  "As Page Style"
-msgstr "ページスタイルの設定"
+msgstr "ページ番号をスタイルで"
 
 #: source/ui/fldui/fldui.src#FMT_NUM_PAGESPECIAL.String.Text
 msgid  "Text"
@@ -6881,7 +6881,7 @@ msgstr "箇条書き"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_5.1.RID_SVXPAGE_PICK_SINGLE_NUM.PageItem.Text
 msgid  "Numbering Style"
-msgstr "番号付けの種類"
+msgstr "番号付けスタイル"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_5.1.RID_SVXPAGE_PICK_NUM.PageItem.Text
 msgid  "Outline"
@@ -6905,7 +6905,7 @@ msgstr "番号付けスタイル"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.TabDialog.Text
 msgid  "Frame"
-msgstr "枠"
+msgstr "フレーム"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.1.TP_FRM_STD.PageItem.Text
 msgid  "Type"
@@ -7337,7 +7337,7 @@ msgstr "余白"
 
 #: source/ui/frmdlg/column.src#TP_COLUMN.TabPage.Text
 msgid  "Columns"
-msgstr "列数"
+msgstr "段組み"
 
 #: source/ui/frmdlg/column.src#TP_COLUMN.FT_NUMBER.FixedText.Text
 msgid  "Columns"
@@ -7589,11 +7589,11 @@ msgstr "位置"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.STR_BEGINNING.String.Text
 msgid  "Above"
-msgstr "最初に"
+msgstr "上に"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.STR_END.String.Text
 msgid  "Below"
-msgstr "最後に"
+msgstr "下に"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.STR_ABOVE.String.Text
 msgid  "Above"
@@ -8513,7 +8513,7 @@ msgstr "ブロック名(~N)"
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.FT_SHORTNAME.FixedText.Text
 msgid  "~Shortcut"
-msgstr "ショートカットキー(~S)"
+msgstr "ショートカット(~S)"
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.LB_BIB.ST_READONLY.String.Text
 msgid  "read-only"
@@ -8561,7 +8561,7 @@ msgstr ""
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.MNU_EDIT.FN_GL_DEFINE.MenuItem.Text
 msgid  "~New"
-msgstr "新規作成(~N)"
+msgstr "新規(~N)"
 
 #: source/ui/misc/glossary.src#DLG_GLOSSARY.MNU_EDIT.FN_GL_DEFINE_TEXT.MenuItem.Text
 msgid  "New (text only)"
@@ -9493,7 +9493,7 @@ msgstr "文字スタイル"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_ANCHR_CHARFMT.FixedText.Text
 msgid  "Te~xt area"
-msgstr "文書範囲(~X)"
+msgstr "テキスト範囲(~X)"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_TEXT_CHARFMT.FixedText.Text
 msgid  "~Footnote area"
@@ -9501,7 +9501,7 @@ msgstr "脚注範囲(~F)"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FL_CONT.FixedLine.Text
 msgid  "Continuation notice"
-msgstr "脚注が次ページに続く際の注意書き"
+msgstr "継続の通知"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_CONT.FixedText.Text
 msgid  "End ~of footnote"
@@ -10609,7 +10609,7 @@ msgstr "右から左へ"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.LB_TEXTDIRECTION.4.StringList.item
 msgid  "Use superordinate object settings"
-msgstr "周りのテキストの文字方向に合わせる"
+msgstr "上位レベルのオブジェクト設定を使用"
 
 #: source/ui/table/tabledlg.src#TP_TABLE_COLUMN.CB_MOD_TBL.CheckBox.Text
 msgid  "Adapt table ~width"
@@ -11357,7 +11357,7 @@ msgstr "冊子"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CONFERENCE.String.Text
 msgid  "Conference proceedings"
-msgstr "議事録"
+msgstr "会報"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_INBOOK.String.Text
 msgid  "Book excerpt"
@@ -11369,7 +11369,7 @@ msgstr "本の抜粋（題付き）"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_INPROCEEDINGS.String.Text
 msgid  "Conference proceedings"
-msgstr "会報"
+msgstr "会議報告"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_JOURNAL.String.Text
 msgid  "Journal"

@@ -1929,7 +1929,7 @@ msgstr "繰り返す行"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATROW.Default.StringList.item
 msgid  "- user defined -"
-msgstr "- ユーザー定義 -"
+msgstr "-ユーザー定義-"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.RB_REPEATROW.ImageButton.QuickHelpText
 msgid  "Shrink"
@@ -2089,7 +2089,7 @@ msgstr "テキストの属性"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_FILE.ImageButton.QuickHelpText
 msgid  "Title"
-msgstr "ファイル名"
+msgstr "タイトル"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_TITEL.MenuItem.Text
 msgid  "Title"
@@ -2353,7 +2353,7 @@ msgstr "オブジェクトと図(~J)"
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_CONTENT.LB_OBJGRF.Default.StringList.item
 msgid  "Hide"
-msgstr "表示しない"
+msgstr "非表示"
 
 #: source/ui/src/optdlg.src#RID_SCPAGE_CONTENT.FT_DIAGRAM.FixedText.Text
 msgid  "Cha~rts"
@@ -3345,7 +3345,7 @@ msgstr "OR"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABLE_DEF.String.Text
 msgid  "Sheet"
-msgstr "Sheet"
+msgstr "シート"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MOVE_TO_END.String.Text
 msgid  "- move to end position -"
@@ -3805,7 +3805,7 @@ msgstr "数式"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_HIDE.String.Text
 msgid  "Hide"
-msgstr "非表示"
+msgstr "表示しない"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_PRINT.String.Text
 msgid  "Print"
@@ -4733,7 +4733,7 @@ msgstr "項目名"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.FT_COND.FixedText.Text
 msgid  "Condition"
-msgstr "関係"
+msgstr "条件"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.FT_VAL.FixedText.Text
 msgid  "Value"
@@ -5001,7 +5001,7 @@ msgstr "最小"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 msgid  "Largest %"
-msgstr "最大の %"
+msgstr "最大の%"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 msgid  "Smallest %"
@@ -5061,7 +5061,7 @@ msgstr "最小"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
 msgid  "Largest %"
-msgstr "最大の%"
+msgstr "最大の %"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND2.Default.stringlist.item
 msgid  "Smallest %"
@@ -5285,7 +5285,7 @@ msgstr "データベース"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.3.String.Text
 msgid  "The range of cells containing data."
-msgstr "データのあるセル範囲"
+msgstr "データのあるセル範囲。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.4.String.Text
 msgid  "Database field"
@@ -5313,7 +5313,7 @@ msgstr "データベース"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.3.String.Text
 msgid  "The range of cells containing data."
-msgstr "データのあるセル範囲"
+msgstr "データのあるセル範囲。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.4.String.Text
 msgid  "Database field"
@@ -5341,7 +5341,7 @@ msgstr "データベース"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_AVERAGE.3.String.Text
 msgid  "The range of cells containing data."
-msgstr "データのあるセル範囲"
+msgstr "データのあるセル範囲。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_AVERAGE.4.String.Text
 msgid  "Database field"
@@ -5369,7 +5369,7 @@ msgstr "データベース"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_GET.3.String.Text
 msgid  "The range of cells containing data."
-msgstr "データのあるセル範囲"
+msgstr "データのあるセル範囲。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_GET.4.String.Text
 msgid  "Database field"
@@ -5397,7 +5397,7 @@ msgstr "データベース"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_MAX.3.String.Text
 msgid  "The range of cells containing data."
-msgstr "データのあるセル範囲。"
+msgstr "データのあるセル範囲"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_MAX.4.String.Text
 msgid  "Database field"
@@ -5645,7 +5645,7 @@ msgstr "日付を表す文字列をシリアル値に変換します。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DATE_VALUE.2.String.Text
 msgid  "text"
-msgstr "日付文字列"
+msgstr "時間文字列"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DATE_VALUE.3.String.Text
 msgid  "A text enclosed in quotation marks which returns a date in a %PRODUCTNAME date format."
@@ -5657,7 +5657,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.2.String.Text
 msgid  "Number"
-msgstr "数値"
+msgstr "角度"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.3.String.Text
 msgid  "The internal number for the date."
@@ -5685,7 +5685,7 @@ msgstr "日数計算のためのあとの日付。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.6.String.Text
 msgid  "Type"
-msgstr "タイプ"
+msgstr "支払期日"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.7.String.Text
 msgid  "Method used to form differences: Type = 0 denotes US method (NASD), Type = 1 denotes the European method."
@@ -5697,7 +5697,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_HOUR.2.String.Text
 msgid  "Number"
-msgstr "数値"
+msgstr "角度"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_HOUR.3.String.Text
 msgid  "Internal time value"
@@ -5709,7 +5709,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_MIN.2.String.Text
 msgid  "Number"
-msgstr "数値"
+msgstr "相関係数"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_MIN.3.String.Text
 msgid  "Internal time value."
@@ -5721,7 +5721,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_MONTH.2.String.Text
 msgid  "Number"
-msgstr "数値"
+msgstr "数字"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_MONTH.3.String.Text
 msgid  "The internal number of the date."
@@ -5737,7 +5737,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_SEC.2.String.Text
 msgid  "Number"
-msgstr "角度"
+msgstr "数値"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_SEC.3.String.Text
 msgid  "The internal time value."
@@ -5777,7 +5777,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_TIME_VALUE.2.String.Text
 msgid  "text"
-msgstr "時間文字列"
+msgstr "対象"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_TIME_VALUE.3.String.Text
 msgid  "A text enclosed in quotation marks which returns a time in a %PRODUCTNAME time format."
@@ -5801,7 +5801,7 @@ msgstr "日付のシリアル値"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY_OF_WEEK.4.String.Text
 msgid  "Type"
-msgstr "タイプ"
+msgstr "支払期日"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY_OF_WEEK.5.String.Text
 msgid  "Fixes the beginning of the week and the type of calculation to be used."
@@ -5909,11 +5909,11 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.10.String.Text
 msgid  "Type"
-msgstr "支払期日"
+msgstr "切り替えなし"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "支払期 = 1 は各期の期首、支払期日 = 0 は各期の期末。"
+msgstr "支払期日、支払期日 = 1 各期の期首、支払期日 = 0 各期の期末。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.1.String.Text
 msgid  "Future value. Returns the future value of an investment based on regular payments and a constant interest rate."
@@ -5925,7 +5925,7 @@ msgstr "利率"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.3.String.Text
 msgid  "The rate of interest per period."
-msgstr "各期の利息"
+msgstr "投資期間を通じての一定の利率。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.4.String.Text
 msgid  "NPER"
@@ -5941,7 +5941,7 @@ msgstr "定期支払額"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.7.String.Text
 msgid  "Regular payments. The constant annuity to be paid in each period."
-msgstr "定期的な定額の支払い。利率が一定であると仮定して、貸付に必要な定期支払額を算出します。"
+msgstr "定期的な支払い額。将来一連に支払われる一定の年金。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.8.String.Text
 msgid  "PV"
@@ -5949,15 +5949,15 @@ msgstr "現在価値"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.9.String.Text
 msgid  "Present value. The current value of a series of payments"
-msgstr "現在価値。将来行われる一連の支払いを、現時点で一括払いした場合の合計金額。"
+msgstr "現在価値。 将来行われる一連の支払いを、現時点で一括払いした場合の合計金額。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.10.String.Text
 msgid  "Type"
-msgstr "支払期日"
+msgstr "タイプ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "支払期日、支払期日 = 1 各期の期首、支払期日 = 0 各期の期末。"
+msgstr "支払期日。支払期日 = 1 は各期の期首、支払期日 = 0 は各期の期末。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.1.String.Text
 msgid  "Payment period. Calculates the number of payment periods for an investment based on regular payments and a constant interest rate."
@@ -5969,7 +5969,7 @@ msgstr "利率"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.3.String.Text
 msgid  "The rate of interest per period."
-msgstr "投資期間を通じての一定の利率。"
+msgstr "期間ごとの利率"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.4.String.Text
 msgid  "PMT"
@@ -5977,7 +5977,7 @@ msgstr "定期支払額"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.5.String.Text
 msgid  "Regular payments. The constant annuity to be paid in each period."
-msgstr "定期的な支払い額。将来一連に支払われる一定の年金。"
+msgstr "定期的な定額の支払い。利率が一定であると仮定して、貸付に必要な定期支払額を算出します。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.6.String.Text
 msgid  "PV"
@@ -5985,7 +5985,7 @@ msgstr "現在価値"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.7.String.Text
 msgid  "Present value. The current value of a series of payments"
-msgstr "現在価値。 将来行われる一連の支払いを、現時点で一括払いした場合の合計金額。"
+msgstr "現在価値。将来行われる一連の支払いを、現時点で一括払いした場合の合計金額。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.8.String.Text
 msgid  "FV"
@@ -5997,11 +5997,11 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.10.String.Text
 msgid  "Type"
-msgstr "支払期日"
+msgstr "タイプ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "支払期日。支払期日 = 1 は各期の期首、支払期日 = 0 は各期の期末。"
+msgstr "支払い期日。支払期日 = 1 各期の期首、支払期日 = 0 各期の期末。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.1.String.Text
 msgid  "Regular payments. Returns the periodic payment of an annuity, based on regular payments and a fixed periodic interest rate."
@@ -6013,7 +6013,7 @@ msgstr "利率"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.3.String.Text
 msgid  "The rate of interest per period."
-msgstr "期間ごとの利率"
+msgstr "各期の利息。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.4.String.Text
 msgid  "NPER"
@@ -6041,11 +6041,11 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.10.String.Text
 msgid  "Type"
-msgstr "支払期日"
+msgstr "種類"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "支払期日。支払期日 = 1 は各期の期首、支払期日 = 0 は各期の期末。"
+msgstr "支払期日。支払期日 = 1 各期の期首、支払期日 = 0 各期の期末。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.1.String.Text
 msgid  "Calculates the constant interest rate of an investment with regular payments."
@@ -6085,11 +6085,11 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.10.String.Text
 msgid  "Type"
-msgstr "支払期日"
+msgstr "タイプ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "支払い期日。支払期日 = 1 各期の期首、支払期日 = 0 各期の期末。"
+msgstr "支払期日。支払期日 = 1 は各期の期首、支払期日 = 0 は各期の期末。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.12.String.Text
 msgid  "Guess"
@@ -6109,11 +6109,11 @@ msgstr "利率"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.3.String.Text
 msgid  "The rate of interest per period."
-msgstr "各期の利息。"
+msgstr "期間ごとの利率"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.4.String.Text
 msgid  "Period"
-msgstr "期間"
+msgstr "期"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.5.String.Text
 msgid  "Periods. The periods for which the compounded interest is to be calculated. P = 1 denotes for the first period, P = NPER for the last one."
@@ -6149,7 +6149,7 @@ msgstr "切り替えなし"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.13.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "支払期日。支払期日 = 1 各期の期首、支払期日 = 0 各期の期末。"
+msgstr "支払期日。支払期日 = 1 は各期の期首、支払期日 = 0 各期の期末。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.1.String.Text
 msgid  "Repayment. Calculates the repayment amount for a period for an investment whereby the payments are at regular intervals and the interest rate constant."
@@ -6201,7 +6201,7 @@ msgstr "タイプ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.13.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "支払期日。支払期日 = 1 は各期の期首、支払期日 = 0 は各期の期末。"
+msgstr "支払期日。支払期 = 1 は各期の期首、支払期日 = 0 は各期の期末。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KUM_KAP_Z.1.String.Text
 msgid  "Cumulative Capital. Calculates the total amount of the repayment share in a period for an investment with constant interest rate."
@@ -6213,7 +6213,7 @@ msgstr "利率"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KUM_KAP_Z.3.String.Text
 msgid  "The rate of interest per period."
-msgstr "期間ごとの利率"
+msgstr "各期の利息"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KUM_KAP_Z.4.String.Text
 msgid  "NPER"
@@ -6233,7 +6233,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KUM_KAP_Z.8.String.Text
 msgid  "S"
-msgstr "S"
+msgstr "開始期"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KUM_KAP_Z.9.String.Text
 msgid  "The start period. The first period to be taken into account. A = 1 denotes the very first period."
@@ -6285,7 +6285,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KUM_ZINS_Z.8.String.Text
 msgid  "S"
-msgstr "開始期"
+msgstr "S"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KUM_ZINS_Z.9.String.Text
 msgid  "The start period. The first period to be taken into account. A = 1 denotes the very first period."
@@ -6573,7 +6573,7 @@ msgstr "投資期間を通じて一定の割引率。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_NBW.4.String.Text
 msgid  "value "
-msgstr "値 "
+msgstr "数値 "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_NBW.5.String.Text
 msgid  "Value 1, value 2,... are 1 to 30 arguments representing payments and income."
@@ -6725,7 +6725,7 @@ msgstr "値が参照の場合、TRUE を返します。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_REF.2.String.Text
 msgid  "value"
-msgstr "値"
+msgstr "数値"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_REF.3.String.Text
 msgid  "The value to be tested."
@@ -6737,7 +6737,7 @@ msgstr "セルが #N/A でないエラーの場合、TRUEを返します。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_ERR.2.String.Text
 msgid  "value"
-msgstr "値"
+msgstr "数値"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_ERR.3.String.Text
 msgid  "The value to be tested."
@@ -6749,7 +6749,7 @@ msgstr "値がエラー値の場合、TRUE を返します。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_ERROR.2.String.Text
 msgid  "value"
-msgstr "値"
+msgstr "数値"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_ERROR.3.String.Text
 msgid  "The value to be tested."
@@ -6761,7 +6761,7 @@ msgstr "値が空白セルを参照している場合、TRUE を返します。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_EMPTY.2.String.Text
 msgid  "value"
-msgstr "値"
+msgstr "x"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_EMPTY.3.String.Text
 msgid  "The value to be tested."
@@ -6773,7 +6773,7 @@ msgstr "値が論理値の場合、TRUE を返します。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_LOGICAL.2.String.Text
 msgid  "value"
-msgstr "値"
+msgstr "数値"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_LOGICAL.3.String.Text
 msgid  "The value to be tested."
@@ -6785,7 +6785,7 @@ msgstr "値が #N/A の場合、TRUE を返します。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_NV.2.String.Text
 msgid  "value"
-msgstr "数値"
+msgstr "値"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_NV.3.String.Text
 msgid  "The value to be tested."
@@ -6833,7 +6833,7 @@ msgstr "セルが数式の場合、TRUE を返します。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_FORMULA.2.String.Text
 msgid  "reference"
-msgstr "参照"
+msgstr "範囲"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_FORMULA.3.String.Text
 msgid  "The cell to be checked."
@@ -7025,7 +7025,7 @@ msgstr "指定範囲の空白セルの数を数えます。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COUNT_EMPTY_CELLS.2.String.Text
 msgid  "range"
-msgstr "範囲"
+msgstr "範囲番号"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COUNT_EMPTY_CELLS.3.String.Text
 msgid  "The range in which empty cells are to be counted."
@@ -7041,7 +7041,7 @@ msgstr "引数の合計を返します。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM.2.String.Text
 msgid  "number "
-msgstr "数値 "
+msgstr "数値"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 arguments whose total is to be calculated."
@@ -7053,7 +7053,7 @@ msgstr "引数の2乗の和(平方和)を返します。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_SQ.2.String.Text
 msgid  "number "
-msgstr "数値"
+msgstr "数値 "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_SQ.3.String.Text
 msgid  "Number 1, number 2,... are 1 to 30 arguments for which the sum of the squares is to be calculated."
@@ -7077,7 +7077,7 @@ msgstr "指定の条件にあったセルの値を合計します。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_IF.2.String.Text
 msgid  "range"
-msgstr "範囲番号"
+msgstr "範囲"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_IF.3.String.Text
 msgid  "The range to be evaluated by the criteria given."
@@ -7229,7 +7229,7 @@ msgstr "数値の平方根を返します。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.2.String.Text
 msgid  "number"
-msgstr "数値"
+msgstr "確率"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.3.String.Text
 msgid  "A positive value for which the square root is to be calculated."
@@ -7417,7 +7417,7 @@ msgstr "指定した角度のサインを返します。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN.2.String.Text
 msgid  "number"
-msgstr "数値"
+msgstr "確率"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN.3.String.Text
 msgid  "The angle in radians for which the sine is to be calculated."
@@ -7441,7 +7441,7 @@ msgstr "数値のタンジェントを返します。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN.2.String.Text
 msgid  "number"
-msgstr "数値"
+msgstr "確率"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN.3.String.Text
 msgid  "The angle in radians for which the tangent is to be calculated."
@@ -7465,7 +7465,7 @@ msgstr "数値の双曲線正弦(パイパーボリックサイン)を返しま�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN_HYP.2.String.Text
 msgid  "number"
-msgstr "数値"
+msgstr "両側確率"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN_HYP.3.String.Text
 msgid  "The value for which the hyperbolic sine is to be calculated."
@@ -7489,7 +7489,7 @@ msgstr "数値の双曲線正接(ハイパーボリックタンジェント)を�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN_HYP.2.String.Text
 msgid  "number"
-msgstr "数値"
+msgstr "確率"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN_HYP.3.String.Text
 msgid  "The value for which the hyperbolic tangent is to be calculated."
@@ -7677,7 +7677,7 @@ msgstr "数値の任意の小数位を切り捨てます。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TRUNC.2.String.Text
 msgid  "number"
-msgstr "数値"
+msgstr "上側確率"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TRUNC.3.String.Text
 msgid  "The number to be truncated."
@@ -7697,7 +7697,7 @@ msgstr "数値を四捨五入して指定の桁数にします。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND.2.String.Text
 msgid  "number"
-msgstr "数値"
+msgstr "文字数"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND.3.String.Text
 msgid  "The number to be rounded."
@@ -7717,7 +7717,7 @@ msgstr "数値を指定の桁数に切り上げます。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.2.String.Text
 msgid  "number"
-msgstr "数値"
+msgstr "文字数"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.3.String.Text
 msgid  "The number to be rounded up."
@@ -7737,7 +7737,7 @@ msgstr "数値を切り捨てて指定の桁数にします。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_DOWN.2.String.Text
 msgid  "number"
-msgstr "数値"
+msgstr "文字数"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_DOWN.3.String.Text
 msgid  "The number to be rounded down."
@@ -7861,7 +7861,7 @@ msgstr "配列の縦方向と横方向のセル範囲の変換を行います。
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_TRANS.2.String.Text
 msgid  "array"
-msgstr "行列"
+msgstr "行列 1"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_TRANS.3.String.Text
 msgid  "The array in which the rows and columns have been transposed."
@@ -7873,7 +7873,7 @@ msgstr "2つの行列の積を返します。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_MULT.2.String.Text
 msgid  "array"
-msgstr "行列 1"
+msgstr "行列 2"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_MULT.3.String.Text
 msgid  "The first array for the array product."
@@ -7881,7 +7881,7 @@ msgstr "行列乗算する1つめ行列。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_MULT.4.String.Text
 msgid  "array"
-msgstr "行列 2"
+msgstr "行列"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_MULT.5.String.Text
 msgid  "The second array having the same number of rows as the first array has columns."
@@ -7893,7 +7893,7 @@ msgstr "行列式の解を返します。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_DET.2.String.Text
 msgid  "array"
-msgstr "行列"
+msgstr "範囲"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_DET.3.String.Text
 msgid  "The array for which the determinant is to be determined."
@@ -7905,7 +7905,7 @@ msgstr "行列の逆行列を返します。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_INV.2.String.Text
 msgid  "array"
-msgstr "行列"
+msgstr "範囲"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_INV.3.String.Text
 msgid  "The array to be inverted."
@@ -8001,7 +8001,7 @@ msgstr "データの頻度分布を１列の行列で返します。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FREQUENCY.2.String.Text
 msgid  "data"
-msgstr "データ範囲"
+msgstr "データ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FREQUENCY.3.String.Text
 msgid  "The array of the data."
@@ -8021,19 +8021,19 @@ msgstr "線形トレンドのパラメータを返します。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.2.String.Text
 msgid  "data_Y"
-msgstr "既知の Y"
+msgstr "データ Y"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.3.String.Text
 msgid  "The Y data array."
-msgstr "Y の値の行列。"
+msgstr "従属変数 Y の入力されているセル範囲。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.4.String.Text
 msgid  "data_X"
-msgstr "既知の X"
+msgstr "データ X"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.5.String.Text
 msgid  "The X data array."
-msgstr "X の値の行列。"
+msgstr "独立変数 X の入力されているセル範囲。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.6.String.Text
 msgid  "Linear_type"
@@ -8057,19 +8057,19 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.2.String.Text
 msgid  "data_Y"
-msgstr "既知の Y"
+msgstr "データ Y"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.3.String.Text
 msgid  "The Y data array."
-msgstr "Y の値の行列。"
+msgstr "従属変数 Y の値が入力されているセル範囲。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.4.String.Text
 msgid  "data_X"
-msgstr "既知の X"
+msgstr "データ X"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.5.String.Text
 msgid  "The X data array."
-msgstr "X の値の行列。"
+msgstr "独立変数 X の値が入力されているセル範囲。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.6.String.Text
 msgid  "Function_type"
@@ -8093,15 +8093,15 @@ msgstr "回帰直線の座標を計算します。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.2.String.Text
 msgid  "data_Y"
-msgstr "既知の Y"
+msgstr "データ Y"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.3.String.Text
 msgid  "The Y data array."
-msgstr "Y の値の行列。"
+msgstr "従属変数 Y の値が入力されているセル範囲。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.4.String.Text
 msgid  "data_X"
-msgstr "既知の X"
+msgstr "データ X"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.5.String.Text
 msgid  "The X data array as the basis for the regression."
@@ -8129,15 +8129,15 @@ msgstr "指数曲線上の値を返します。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GROWTH.2.String.Text
 msgid  "data_Y"
-msgstr "既知の Y"
+msgstr "データ Y"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GROWTH.3.String.Text
 msgid  "The Y data array."
-msgstr "Y の値の行列。"
+msgstr "従属変数 Y の値が入力されているセルの範囲。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GROWTH.4.String.Text
 msgid  "data_X"
-msgstr "既知の X"
+msgstr "データ X"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GROWTH.5.String.Text
 msgid  "The X data array as the basis for the regression."
@@ -8165,7 +8165,7 @@ msgstr "引数リスト含まれる数値データの個数を返します。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COUNT.2.String.Text
 msgid  "value "
-msgstr "数値 "
+msgstr "値 "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COUNT.3.String.Text
 msgid  "Value 1, value 2, ... are 1 to 30 arguments containing different data types but where only numbers are counted."
@@ -8453,15 +8453,15 @@ msgstr "データの中で、百分位で α 番目に位置する値を返し�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PERCENTILE.2.String.Text
 msgid  "data"
-msgstr "データ"
+msgstr "確率変数"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PERCENTILE.3.String.Text
 msgid  "The array of the data in the sample."
-msgstr "データの入力されているセル範囲。"
+msgstr "対象となるデータが入力されているセル範囲。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PERCENTILE.4.String.Text
 msgid  "Alpha"
-msgstr "α"
+msgstr "割合"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PERCENTILE.5.String.Text
 msgid  "The percentage rate of the quantile between 0 and 1."
@@ -8473,11 +8473,11 @@ msgstr "1組のデータの四分位数を返します。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_QUARTILE.2.String.Text
 msgid  "data"
-msgstr "データ"
+msgstr "データ範囲"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_QUARTILE.3.String.Text
 msgid  "The array of the data in the sample."
-msgstr "データの入力されているセル範囲。"
+msgstr "対象となるデータが入力されているセル範囲。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_QUARTILE.4.String.Text
 msgid  "Type"
@@ -8497,7 +8497,7 @@ msgstr "確率変数"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LARGE.3.String.Text
 msgid  "The array of the data in the sample."
-msgstr "対象となるデータが入力されているセル範囲。"
+msgstr "データの入力されているセル範囲。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LARGE.4.String.Text
 msgid  "Rank_c"
@@ -8517,7 +8517,7 @@ msgstr "データ範囲"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_SMALL.3.String.Text
 msgid  "The array of the data in the sample."
-msgstr "対象となるデータが入力されているセル範囲。"
+msgstr "データが入力されているセル範囲。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_SMALL.4.String.Text
 msgid  "Rank_c"
@@ -8537,7 +8537,7 @@ msgstr "データ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PERCENT_RANK.3.String.Text
 msgid  "The array of the data in the sample."
-msgstr "データが入力されているセル範囲。"
+msgstr "データの入力されているセル範囲。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PERCENT_RANK.4.String.Text
 msgid  "value"
@@ -8589,7 +8589,7 @@ msgstr "データの入力されているセル範囲。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TRIM_MEAN.4.String.Text
 msgid  "Alpha"
-msgstr "割合"
+msgstr "α"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TRIM_MEAN.5.String.Text
 msgid  "The percentage of marginal data that is not to be taken into account."
@@ -8645,7 +8645,7 @@ msgstr "独立試行の回数。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_B.4.String.Text
 msgid  "SP"
-msgstr "確率"
+msgstr "母比率"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_B.5.String.Text
 msgid  "The individual probability of a trial result."
@@ -8673,7 +8673,7 @@ msgstr "標準正規分布の累積分布関数の値を返します。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PHI.2.String.Text
 msgid  "number"
-msgstr "数値"
+msgstr "回数"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PHI.3.String.Text
 msgid  "The value for which the standard normal distribution is to be calculated."
@@ -8721,7 +8721,7 @@ msgstr "二項分布の確率を返します。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.2.String.Text
 msgid  "X"
-msgstr "X"
+msgstr "失敗数"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.3.String.Text
 msgid  "The number of successes in a series of trials."
@@ -8737,15 +8737,15 @@ msgstr "独立試行の回数。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.6.String.Text
 msgid  "SP"
-msgstr "母比率"
+msgstr "成功率"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.7.String.Text
 msgid  "The success probability of a trial."
-msgstr "1回の試行が成功する確率。"
+msgstr "試行が成功する確率。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.8.String.Text
 msgid  "C"
-msgstr "C"
+msgstr "関数形式"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.9.String.Text
 msgid  "Cumulated. C=0 calculates the individual probability, C=1 the cumulated probability."
@@ -8757,7 +8757,7 @@ msgstr "負の二項分布の値。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NEG_BINOM_VERT.2.String.Text
 msgid  "X"
-msgstr "失敗数"
+msgstr "X"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NEG_BINOM_VERT.3.String.Text
 msgid  "The number of failures in the trial range."
@@ -8773,11 +8773,11 @@ msgstr "試行が成功する回数。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NEG_BINOM_VERT.6.String.Text
 msgid  "SP"
-msgstr "成功率"
+msgstr "確率"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NEG_BINOM_VERT.7.String.Text
 msgid  "The success probability of a trial."
-msgstr "試行が成功する確率。"
+msgstr "1回の試行が成功する確率。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_KRIT_BINOM.1.String.Text
 msgid  "Border arguments of the binomial distribution."
@@ -8821,7 +8821,7 @@ msgstr "計算対象となる数値。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.4.String.Text
 msgid  "mean"
-msgstr "平均値"
+msgstr "平均"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.5.String.Text
 msgid  "Mean. The mean value of the Poisson distribution."
@@ -8857,7 +8857,7 @@ msgstr "平均。分布の算術平均(相加平均)。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.6.String.Text
 msgid  "STDEV"
-msgstr "標準偏差"
+msgstr "母標準偏差"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.7.String.Text
 msgid  "Standard deviation. The standard deviation of the normal distribution."
@@ -8865,7 +8865,7 @@ msgstr "標準偏差。分布の標準偏差。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.8.String.Text
 msgid  "C"
-msgstr "関数形式"
+msgstr "C"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.9.String.Text
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
@@ -8877,7 +8877,7 @@ msgstr "逆正規分布の値。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_INV.2.String.Text
 msgid  "number"
-msgstr "確率"
+msgstr "数値"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_INV.3.String.Text
 msgid  "The probability value for which the inverse normal distribution is to be calculated."
@@ -8885,7 +8885,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_INV.4.String.Text
 msgid  "mean"
-msgstr "平均"
+msgstr "定数"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_INV.5.String.Text
 msgid  "The mean value. The mean value of the normal distribution."
@@ -8917,7 +8917,7 @@ msgstr "逆標準正規分布の値。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_S_NORM_INV.2.String.Text
 msgid  "number"
-msgstr "確率"
+msgstr "数値"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_S_NORM_INV.3.String.Text
 msgid  "The probability value for which the inverse standard normal distribution is to be calculated."
@@ -9617,7 +9617,7 @@ msgstr "データ 1"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.3.String.Text
 msgid  "The first record array."
-msgstr "1つめのデータが入力されているセル範囲。"
+msgstr "変数 X のデータが入力されているセル範囲。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.4.String.Text
 msgid  "data_2"
@@ -9625,7 +9625,7 @@ msgstr "データ 2"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.5.String.Text
 msgid  "The second record array."
-msgstr "2つめのデータが入力されているセル範囲。"
+msgstr "変数 Y のデータが入力されているセル範囲。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.1.String.Text
 msgid  "Calculates the T test."
@@ -9637,7 +9637,7 @@ msgstr "データ 1"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.3.String.Text
 msgid  "The first record array."
-msgstr "変数 X のデータが入力されているセル範囲。"
+msgstr "1つめのデータが入力されているセル範囲。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.4.String.Text
 msgid  "data_2"
@@ -9645,7 +9645,7 @@ msgstr "データ 2"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.5.String.Text
 msgid  "The second record array."
-msgstr "変数 Y のデータが入力されているセル範囲。"
+msgstr "2つめのデータが入力されているセル範囲。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.6.String.Text
 msgid  "mode"
@@ -9669,19 +9669,19 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RSQ.2.String.Text
 msgid  "data_Y"
-msgstr "データ Y"
+msgstr "既知の Y"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RSQ.3.String.Text
 msgid  "The Y data array."
-msgstr "従属変数 Y の入力されているセル範囲。"
+msgstr "Y の値の行列。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RSQ.4.String.Text
 msgid  "data_X"
-msgstr "データ X"
+msgstr "既知の X"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RSQ.5.String.Text
 msgid  "The X data array."
-msgstr "独立変数 X の入力されているセル範囲。"
+msgstr "独立変数 X の値が入力されているセル範囲。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_INTERCEPT.1.String.Text
 msgid  "Returns the intercept of the linear regression line and the Y axis."
@@ -9701,7 +9701,7 @@ msgstr "既知の X"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_INTERCEPT.5.String.Text
 msgid  "The X data array."
-msgstr "独立変数 X の値が入力されているセル範囲。"
+msgstr "X の値の行列。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_SLOPE.1.String.Text
 msgid  "Returns the slope of the linear regression line."
@@ -9881,7 +9881,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AREAS.2.String.Text
 msgid  "reference"
-msgstr "参照"
+msgstr "範囲"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AREAS.3.String.Text
 msgid  "The reference to a (multiple) range."
@@ -9893,7 +9893,7 @@ msgstr "インデックスを使って、引数リストの値(1～29)の中か�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHOSE.2.String.Text
 msgid  "Index"
-msgstr "インデックス"
+msgstr "行番号"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHOSE.3.String.Text
 msgid  "The index of the value (1..30) selected."
@@ -9913,11 +9913,11 @@ msgstr "指定した範囲の列番号を返します。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COLUMN.2.String.Text
 msgid  "reference"
-msgstr "参照"
+msgstr "基準"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COLUMN.3.String.Text
 msgid  "The reference to a cell or a range."
-msgstr "列番号を調べるセルまたはセル範囲。"
+msgstr "行番号を調べるセルまたはセル範囲。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ROW.1.String.Text
 msgid  "Defines the internal row number of a reference."
@@ -9925,11 +9925,11 @@ msgstr "指定したセルまたはセル範囲の行番号を返します。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ROW.2.String.Text
 msgid  "reference"
-msgstr "範囲"
+msgstr "参照"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ROW.3.String.Text
 msgid  "The reference to a cell or a range."
-msgstr "行番号を調べるセルまたはセル範囲。"
+msgstr "列番号を調べるセルまたはセル範囲。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TABLE.1.String.Text
 msgid  "Returns the internal sheet number of a reference or a string."
@@ -9949,7 +9949,7 @@ msgstr "指定範囲の列数を返します。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COLUMNS.2.String.Text
 msgid  "array"
-msgstr "範囲"
+msgstr "行列"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COLUMNS.3.String.Text
 msgid  "The array (reference) for which the number of columns is to be determined."
@@ -10001,7 +10001,7 @@ msgstr "関数の対象となる範囲。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_H_LOOKUP.6.String.Text
 msgid  "Index"
-msgstr "行番号"
+msgstr "インデックス"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_H_LOOKUP.7.String.Text
 msgid  "The row index in the array."
@@ -10021,7 +10021,7 @@ msgstr "範囲内の1列目で行を特定し、その行の指定列のセル�
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_V_LOOKUP.2.String.Text
 msgid  "Search criterion"
-msgstr "検索条件"
+msgstr "検査値"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_V_LOOKUP.3.String.Text
 msgid  "The value to be found in the first column."
@@ -10113,7 +10113,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOOKUP.2.String.Text
 msgid  "Search criterion"
-msgstr "検査値"
+msgstr "検索値"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOOKUP.3.String.Text
 msgid  "The value to be used for comparison."
@@ -10349,7 +10349,7 @@ msgstr "半角 ASCII 文字とカタカナ文字を全角に変換します。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_JIS.2.String.Text
 msgid  "text"
-msgstr "対象"
+msgstr "文字列"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_JIS.3.String.Text
 msgid  "The text to convert."
@@ -10361,7 +10361,7 @@ msgstr "全角 ASCII 文字とカタカナ文字を半角に変換します。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ASC.2.String.Text
 msgid  "text"
-msgstr "対象"
+msgstr "文字列"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ASC.3.String.Text
 msgid  "The text to convert."
@@ -10373,7 +10373,7 @@ msgstr "文字列の先頭文字に対応するコード番号を返します。
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CODE.2.String.Text
 msgid  "text"
-msgstr "文字列"
+msgstr "対象"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CODE.3.String.Text
 msgid  "This is the text for which the code of the first character is to be found."
@@ -10417,7 +10417,7 @@ msgstr "印刷されない文字を文字列から削除します。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CLEAN.2.String.Text
 msgid  "text"
-msgstr "文字列"
+msgstr "対象"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CLEAN.3.String.Text
 msgid  "The text from which nonprintable characters are to be removed."
@@ -10469,7 +10469,7 @@ msgstr "検索する文字列。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.4.String.Text
 msgid  "text"
-msgstr "対象"
+msgstr "文字列"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.5.String.Text
 msgid  "The text in which a search is to be made."
@@ -10497,7 +10497,7 @@ msgstr "検索する文字列。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_SEARCH.4.String.Text
 msgid  "text"
-msgstr "対象"
+msgstr "文字列"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_SEARCH.5.String.Text
 msgid  "The text in which a search is to be made."
@@ -10517,7 +10517,7 @@ msgstr "語頭のスペースを削除します。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TRIM.2.String.Text
 msgid  "text"
-msgstr "文字列"
+msgstr "変換前単位"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TRIM.3.String.Text
 msgid  "The text in which extra spaces between words are to be deleted."
@@ -10529,7 +10529,7 @@ msgstr "文字列中のアルファベット単語の先頭文字を大文字に
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PROPPER.2.String.Text
 msgid  "text"
-msgstr "文字列"
+msgstr "変換後単位"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PROPPER.3.String.Text
 msgid  "The text in which the beginning of words are to be replaced by capital letters."
@@ -10541,7 +10541,7 @@ msgstr "文字列に含まれるアルファベットをすべて大文字に変
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_UPPER.2.String.Text
 msgid  "text"
-msgstr "文字列"
+msgstr "日付文字列"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_UPPER.3.String.Text
 msgid  "The text in which lower case letters are to be converted to capitals."
@@ -10553,7 +10553,7 @@ msgstr "文字列に含まれるアルファベットをすべて小文字に変
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOWER.2.String.Text
 msgid  "text"
-msgstr "文字列"
+msgstr "日付文字列"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOWER.3.String.Text
 msgid  "The text in which capitals are converted to lower case letters."
@@ -10609,7 +10609,7 @@ msgstr "文字列の一部を他の文字に置換します。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_REPLACE.2.String.Text
 msgid  "Text"
-msgstr "文字列"
+msgstr "テキスト"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_REPLACE.3.String.Text
 msgid  "The text in which some characters are to be replaced."
@@ -11091,6 +11091,54 @@ msgstr ""
 msgid  "The number of characters for the text."
 msgstr ""
 
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.1.String.Text
+msgid  "Return the cosecant of an angle. CSC(x)=1/SIN(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.3.String.Text
+msgid  "The angle in radians for which the cosecant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.1.String.Text
+msgid  "Return the secant of an angle. SEC(x)=1/COS(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.3.String.Text
+msgid  "The angle in radians for which the secant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.1.String.Text
+msgid  "Return the hyperbolic cosecant of a hyperbolic angle. CSCH(x)=1/SINH(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.3.String.Text
+msgid  "The hyperbolic angle in radians for which the hyperbolic cosecant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.1.String.Text
+msgid  "Return the hyperbolic secant of a hyperbolic angle. SECH(x)=1/COSH(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.3.String.Text
+msgid  "The hyperbolic angle in radians for which the hyperbolic secant is to be calculated."
+msgstr ""
+
 #: source/ui/src/scstring.src#SCSTR_APPLICATION.String.Text
 msgid  "%PRODUCTNAME Calc 6.0"
 msgstr "%PRODUCTNAME Calc 6.0"
@@ -11133,7 +11181,7 @@ msgstr "表"
 
 #: source/ui/src/scstring.src#SCSTR_DOCSHELL.String.Text
 msgid  "Sheet"
-msgstr "シート"
+msgstr "Sheet"
 
 #: source/ui/src/scstring.src#SCSTR_TABVIEWSHELL.String.Text
 msgid  "Cells"

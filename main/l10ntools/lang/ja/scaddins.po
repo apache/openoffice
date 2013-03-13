@@ -445,7 +445,7 @@ msgstr "開始日"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.3.String.Text
 msgid  "The start date"
-msgstr "開始日"
+msgstr "対象期間の初日を表す日付"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Workday.4.String.Text
 msgid  "Days"
@@ -473,7 +473,7 @@ msgstr "開始日"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.3.String.Text
 msgid  "The start date"
-msgstr "対象期間の初日を表す日付"
+msgstr "起算日を表す日付"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.4.String.Text
 msgid  "End date"
@@ -485,7 +485,7 @@ msgstr "対象期間の最終日を表す日付"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.6.String.Text
 msgid  "Basis"
-msgstr "基礎"
+msgstr "年の基準"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yearfrac.7.String.Text
 msgid  "Basis for determining the interest days"
@@ -501,7 +501,7 @@ msgstr "開始日"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.3.String.Text
 msgid  "The start date"
-msgstr "起算日を表す日付"
+msgstr "対象期間の初日を表す日付"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Edate.4.String.Text
 msgid  "Months"
@@ -585,11 +585,11 @@ msgstr "数値が偶数のとき TRUE を返し、奇数のとき FALSE を返�
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.2.String.Text
 msgid  "Number"
-msgstr "数値"
+msgstr "べき乗指数"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Iseven.3.String.Text
 msgid  "The number"
-msgstr "評価する数値"
+msgstr "数値"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Isodd.1.String.Text
 msgid  "Returns the value 'true' if the number is odd"
@@ -597,11 +597,11 @@ msgstr "数値が奇数のとき TRUE を返し、偶数のとき FALSE を返�
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Isodd.2.String.Text
 msgid  "Number"
-msgstr "べき乗指数"
+msgstr "数値"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Isodd.3.String.Text
 msgid  "The number"
-msgstr "評価する数値"
+msgstr "変換する値"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Multinomial.1.String.Text
 msgid  "Returns the multinomial coefficient of a set of numbers"
@@ -661,7 +661,7 @@ msgstr "分子"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.3.String.Text
 msgid  "The dividend"
-msgstr "分子(割られる数)"
+msgstr "割り算の分子"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.4.String.Text
 msgid  "Denominator"
@@ -669,7 +669,7 @@ msgstr "分母"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Quotient.5.String.Text
 msgid  "The divisor"
-msgstr "約数"
+msgstr "割り算の分母"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Mround.1.String.Text
 msgid  "Returns a number rounded to a specified multiple"
@@ -733,7 +733,7 @@ msgstr "数値"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Gcd.3.String.Text
 msgid  "Number or list of numbers"
-msgstr "最大公約数を求める数値"
+msgstr "最小公倍数を求める数値"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Lcm.1.String.Text
 msgid  "Returns the least common multiple"
@@ -845,7 +845,7 @@ msgstr "桁数"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Oct.5.String.Text
 msgid  "Number of places used"
-msgstr "使われている桁数"
+msgstr "表記に使用する文字数。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Bin2Dec.1.String.Text
 msgid  "Converts a binary number to a decimal number"
@@ -897,7 +897,7 @@ msgstr "桁数"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Bin.5.String.Text
 msgid  "Number of places used"
-msgstr "表記に使用する文字数。"
+msgstr "表記するときに使用する文字数"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Dec.1.String.Text
 msgid  "Converts an octal number to a decimal number"
@@ -929,7 +929,7 @@ msgstr "桁数"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oct2Hex.5.String.Text
 msgid  "Number of places used"
-msgstr "表記に使用する文字数。"
+msgstr "表記するときに使用する文字数"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Bin.1.String.Text
 msgid  "Converts a decimal number to a binary number"
@@ -949,7 +949,7 @@ msgstr "桁数"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Bin.5.String.Text
 msgid  "Number of places used"
-msgstr "表記するときに使用する文字数"
+msgstr "表記に使用する文字数。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Hex.1.String.Text
 msgid  "Converts a decimal number to a hexadecimal number"
@@ -969,7 +969,7 @@ msgstr "桁数"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Hex.5.String.Text
 msgid  "Number of places used"
-msgstr "表記するときに使用する文字数"
+msgstr "表記に使用する文字数。"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.1.String.Text
 msgid  "Converts a decimal number into an octal number"
@@ -981,7 +981,7 @@ msgstr "数値"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.3.String.Text
 msgid  "The decimal number"
-msgstr "桁数"
+msgstr "小数で表された数値"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Dec2Oct.4.String.Text
 msgid  "Places"
@@ -1073,7 +1073,7 @@ msgstr "下限"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Erf.3.String.Text
 msgid  "The lower limit for integration"
-msgstr "積分するときの下限値。"
+msgstr "積分するときの下限値"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Erf.4.String.Text
 msgid  "Upper limit"
@@ -1213,7 +1213,7 @@ msgstr "分母"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imdiv.5.String.Text
 msgid  "The divisor"
-msgstr "割り算の分母"
+msgstr "分数の分母となる整数"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Imexp.1.String.Text
 msgid  "Returns the algebraic form of the exponential of a complex number"
@@ -1561,7 +1561,7 @@ msgstr "会計期"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.12.String.Text
 msgid  "Rate"
-msgstr "率"
+msgstr "利率"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.13.String.Text
 msgid  "The rate of depreciation"
@@ -1569,7 +1569,7 @@ msgstr "減価償却率"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.14.String.Text
 msgid  "Basis"
-msgstr "年の基準"
+msgstr "基準"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amordegrc.15.String.Text
 msgid  "The year basis to be used"
@@ -1621,7 +1621,7 @@ msgstr "会計期"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.12.String.Text
 msgid  "Rate"
-msgstr "率"
+msgstr "利率"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.13.String.Text
 msgid  "The rate of depreciation"
@@ -1629,7 +1629,7 @@ msgstr "減価償却率"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.14.String.Text
 msgid  "Basis"
-msgstr "年の基準"
+msgstr "基準"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Amorlinc.15.String.Text
 msgid  "The year basis to be used"
@@ -1661,15 +1661,15 @@ msgstr "受領日"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.7.String.Text
 msgid  "The settlement"
-msgstr "証券の受領日"
+msgstr "財務省証券の受領日"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.8.String.Text
 msgid  "Rate"
-msgstr "利率"
+msgstr "割引率"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.9.String.Text
 msgid  "The rate"
-msgstr "証券の年利"
+msgstr "貸付期間を通じて一定の利率"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.10.String.Text
 msgid  "Par"
@@ -1693,7 +1693,7 @@ msgstr "基準"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrint.15.String.Text
 msgid  "The basis"
-msgstr "利息計算の基礎となる日数の計算方法"
+msgstr "基準"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.1.String.Text
 msgid  "Returns the accrued interest for a security that pays interest at maturity"
@@ -1713,7 +1713,7 @@ msgstr "受領日"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.5.String.Text
 msgid  "The settlement"
-msgstr "証券の受領日"
+msgstr "財務省証券の受領日"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.6.String.Text
 msgid  "Rate"
@@ -1721,7 +1721,7 @@ msgstr "利率"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.7.String.Text
 msgid  "The rate"
-msgstr "証券の年利"
+msgstr "貸付期間を通じて一定の利率"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.8.String.Text
 msgid  "Par"
@@ -1737,7 +1737,7 @@ msgstr "基準"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Accrintm.11.String.Text
 msgid  "The basis"
-msgstr "利息計算の基礎となる日数の計算方法"
+msgstr "利息計算の基準となる日数の計算方法"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.1.String.Text
 msgid  "Returns the amount paid out at maturity for a fully invested security"
@@ -1749,7 +1749,7 @@ msgstr "受領日"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.3.String.Text
 msgid  "The settlement"
-msgstr "証券の受領日"
+msgstr "財務省証券の受領日"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.4.String.Text
 msgid  "Maturity"
@@ -1757,7 +1757,7 @@ msgstr "満期日"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.5.String.Text
 msgid  "The maturity"
-msgstr "証券の満期日"
+msgstr "財務省証券の満期日"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.6.String.Text
 msgid  "Investment"
@@ -1781,7 +1781,7 @@ msgstr "基準"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Received.11.String.Text
 msgid  "The basis"
-msgstr "基準"
+msgstr "利息計算の基礎となる日数の計算方法"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.1.String.Text
 msgid  "Returns the discount rate for a security"
@@ -1793,7 +1793,7 @@ msgstr "受領日"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.3.String.Text
 msgid  "The settlement"
-msgstr "財務省証券の受領日"
+msgstr "証券の受領日"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.4.String.Text
 msgid  "Maturity"
@@ -1801,15 +1801,15 @@ msgstr "満期日"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.5.String.Text
 msgid  "The maturity"
-msgstr "証券の満期日"
+msgstr "財務省証券の満期日"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.6.String.Text
 msgid  "Price"
-msgstr "現在価値"
+msgstr "現在価格"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.7.String.Text
 msgid  "The price"
-msgstr "価格"
+msgstr "証券の価値"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.8.String.Text
 msgid  "Redemption"
@@ -1817,7 +1817,7 @@ msgstr "償還価値"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.9.String.Text
 msgid  "The redemption value"
-msgstr "償還価値"
+msgstr "額面 $100 に対する証券の償還額"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.10.String.Text
 msgid  "Basis"
@@ -1825,7 +1825,7 @@ msgstr "基準"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Disc.11.String.Text
 msgid  "The basis"
-msgstr "利息計算の基準となる日数の計算方法"
+msgstr "利息計算の基礎となる日数の計算方法"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.1.String.Text
 msgid  "Returns the annual Macaulay duration of a security with periodic interest payments"
@@ -1837,7 +1837,7 @@ msgstr "受領日"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.3.String.Text
 msgid  "The settlement"
-msgstr "財務省証券の受領日"
+msgstr "証券の受領日"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.4.String.Text
 msgid  "Maturity"
@@ -1845,7 +1845,7 @@ msgstr "満期日"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.5.String.Text
 msgid  "The maturity"
-msgstr "証券の満期日"
+msgstr "財務省証券の満期日"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Duration.6.String.Text
 msgid  "Coupon"
@@ -1909,7 +1909,7 @@ msgstr "割引率"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.3.String.Text
 msgid  "The rate"
-msgstr "貸付期間を通じて一定の利率"
+msgstr "証券の年利"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumprinc.4.String.Text
 msgid  "Nper"
@@ -1961,7 +1961,7 @@ msgstr "利率"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumipmt.3.String.Text
 msgid  "The rate"
-msgstr "貸付期間を通じて一定の利率"
+msgstr "発行日における証券の利率"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Cumipmt.4.String.Text
 msgid  "Nper"
@@ -2013,7 +2013,7 @@ msgstr "受領日"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.3.String.Text
 msgid  "The settlement"
-msgstr "財務省証券の受領日"
+msgstr "証券の受領日"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.4.String.Text
 msgid  "Maturity"
@@ -2021,7 +2021,7 @@ msgstr "満期日"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.5.String.Text
 msgid  "The maturity"
-msgstr "財務省証券の満期日"
+msgstr "証券の満期日"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.6.String.Text
 msgid  "Rate"
@@ -2029,7 +2029,7 @@ msgstr "利率"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.7.String.Text
 msgid  "The rate"
-msgstr "証券の年利"
+msgstr "発行日における証券の利率"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.8.String.Text
 msgid  "Yield"
@@ -2045,7 +2045,7 @@ msgstr "償還価値"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.11.String.Text
 msgid  "The redemption value"
-msgstr "額面 $100 に対する証券の償還額"
+msgstr "証券の償還額"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Price.12.String.Text
 msgid  "Frequency"
@@ -2081,7 +2081,7 @@ msgstr "満期日"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.5.String.Text
 msgid  "The maturity"
-msgstr "財務省証券の満期日"
+msgstr "証券の満期日"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.6.String.Text
 msgid  "Discount"
@@ -2097,7 +2097,7 @@ msgstr "償還価値"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.9.String.Text
 msgid  "The redemption value"
-msgstr "証券の償還額"
+msgstr "額面 ￥100 に対する証券の償還額"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricedisc.10.String.Text
 msgid  "Basis"
@@ -2125,7 +2125,7 @@ msgstr "満期日"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.5.String.Text
 msgid  "The maturity"
-msgstr "財務省証券の満期日"
+msgstr "証券の満期日"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.6.String.Text
 msgid  "Issue"
@@ -2141,7 +2141,7 @@ msgstr "利率"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.9.String.Text
 msgid  "The rate"
-msgstr "発行日における証券の利率"
+msgstr "証券の利率"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Pricemat.10.String.Text
 msgid  "Yield"
@@ -2297,15 +2297,15 @@ msgstr "利率"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.7.String.Text
 msgid  "The rate"
-msgstr "証券の年利"
+msgstr "証券の利率"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.8.String.Text
 msgid  "Price"
-msgstr "現在価格"
+msgstr "現在価値"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.9.String.Text
 msgid  "The price"
-msgstr "証券の価値"
+msgstr "証券の価格"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.10.String.Text
 msgid  "Redemption"
@@ -2313,7 +2313,7 @@ msgstr "償還価値"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.11.String.Text
 msgid  "The redemption value"
-msgstr "証券の償還額"
+msgstr "額面 $100 に対する証券の償還額"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yield.12.String.Text
 msgid  "Frequency"
@@ -2357,7 +2357,7 @@ msgstr "現在価値"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yielddisc.7.String.Text
 msgid  "The price"
-msgstr "証券の価格"
+msgstr "額面 $100 に対する財務省証券の価格"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yielddisc.8.String.Text
 msgid  "Redemption"
@@ -2365,7 +2365,7 @@ msgstr "償還価値"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yielddisc.9.String.Text
 msgid  "The redemption value"
-msgstr "証券の償還額"
+msgstr "額面 $100 に対する証券の償還額"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yielddisc.10.String.Text
 msgid  "Basis"
@@ -2409,7 +2409,7 @@ msgstr "利率"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.9.String.Text
 msgid  "The rate"
-msgstr "発行日における証券の利率"
+msgstr "証券の利率"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.10.String.Text
 msgid  "Price"
@@ -2417,7 +2417,7 @@ msgstr "現在価値"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.11.String.Text
 msgid  "The price"
-msgstr "額面 $100 に対する財務省証券の価格"
+msgstr "証券の価格"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Yieldmat.12.String.Text
 msgid  "Basis"
@@ -2553,7 +2553,7 @@ msgstr "利率"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.11.String.Text
 msgid  "The rate"
-msgstr "証券の利率"
+msgstr "対象となるキャッシュフローに適用する割引率"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.12.String.Text
 msgid  "Yield"
@@ -2569,7 +2569,7 @@ msgstr "償還価値"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.15.String.Text
 msgid  "The redemption value"
-msgstr "額面 ￥100 に対する証券の償還額"
+msgstr "証券の償還額"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfprice.16.String.Text
 msgid  "Frequency"
@@ -2645,7 +2645,7 @@ msgstr "償還価値"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfyield.15.String.Text
 msgid  "The redemption value"
-msgstr "額面 $100 に対する証券の償還額"
+msgstr "満期日における証券の償還額"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Oddfyield.16.String.Text
 msgid  "Frequency"
@@ -2805,11 +2805,11 @@ msgstr ""
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xirr.2.String.Text
 msgid  "Values"
-msgstr "範囲"
+msgstr "キャッシュフロー"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xirr.3.String.Text
 msgid  "The values"
-msgstr "収支明細表の日付に対応する一連のキャッシュフロー"
+msgstr "収支明細表の 日付 に対応する一連のキャッシュフロー"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xirr.4.String.Text
 msgid  "Dates"
@@ -2817,7 +2817,7 @@ msgstr "日付"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xirr.5.String.Text
 msgid  "The dates"
-msgstr "範囲に対応する一連の支払日"
+msgstr "キャッシュフローに対応する一連の支払日"
 
 #: source/analysis/analysis.src#RID_ANALYSIS_FUNCTION_DESCRIPTIONS.ANALYSIS_Xirr.6.String.Text
 msgid  "Guess"
