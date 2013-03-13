@@ -2037,7 +2037,7 @@ msgstr "Skalieren"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
 msgid  "- none -"
-msgstr "- keiner -"
+msgstr "- keine -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
 msgid  "- entire sheet -"
@@ -2089,7 +2089,7 @@ msgstr "Textattribute"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_FILE.ImageButton.QuickHelpText
 msgid  "Title"
-msgstr "Dateiname"
+msgstr "Titel"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_TITEL.MenuItem.Text
 msgid  "Title"
@@ -2749,7 +2749,7 @@ msgstr "Optionen"
 
 #: source/ui/src/solveroptions.src#RID_SCDLG_SOLVER_INTEGER.CancelButton.Text
 msgid  "Edit Setting"
-msgstr "Einstellungen bearbeiten"
+msgstr "Einstellung bearbeiten"
 
 #: source/ui/src/solveroptions.src#RID_SCDLG_SOLVER_DOUBLE.CancelButton.Text
 msgid  "Edit Setting"
@@ -3013,11 +3013,11 @@ msgstr "Teilergebnisse"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SORT.String.Text
 msgid  "Sort"
-msgstr "Sortierung"
+msgstr "Sortieren"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_QUERY.String.Text
 msgid  "Filter"
-msgstr "Filter"
+msgstr "Filtern"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_DBDATA.String.Text
 msgid  "Change Database Range"
@@ -3837,7 +3837,7 @@ msgstr "Funktion bearbeiten"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_NOTES.String.Text
 msgid  "Comments"
-msgstr "Bemerkungen"
+msgstr "Kommentare"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_QUERY_DELTAB.String.Text
 msgid  "Are you sure you want to delete the selected sheet(s)?"
@@ -5625,7 +5625,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DATE.4.String.Text
 msgid  "month"
-msgstr "MA"
+msgstr "Monat"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DATE.5.String.Text
 msgid  "An integer between 1 and 12 representing the month."
@@ -5645,7 +5645,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DATE_VALUE.2.String.Text
 msgid  "text"
-msgstr "Text"
+msgstr "text"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DATE_VALUE.3.String.Text
 msgid  "A text enclosed in quotation marks which returns a date in a %PRODUCTNAME date format."
@@ -5685,7 +5685,7 @@ msgstr "Späteres Datum für die Tagesdifferenz."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.6.String.Text
 msgid  "Type"
-msgstr "F"
+msgstr "Art"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.7.String.Text
 msgid  "Method used to form differences: Type = 0 denotes US method (NASD), Type = 1 denotes the European method."
@@ -5777,7 +5777,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_TIME_VALUE.2.String.Text
 msgid  "text"
-msgstr "Text"
+msgstr "text"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_TIME_VALUE.3.String.Text
 msgid  "A text enclosed in quotation marks which returns a time in a %PRODUCTNAME time format."
@@ -5801,7 +5801,7 @@ msgstr "Interne Zahl des Datums."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY_OF_WEEK.4.String.Text
 msgid  "Type"
-msgstr "Art"
+msgstr "F"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY_OF_WEEK.5.String.Text
 msgid  "Fixes the beginning of the week and the type of calculation to be used."
@@ -5909,7 +5909,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.10.String.Text
 msgid  "Type"
-msgstr "Art"
+msgstr "F"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
@@ -5953,7 +5953,7 @@ msgstr "Barwert. Der derzeitige Wert der Reihe von Zahlungen."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.10.String.Text
 msgid  "Type"
-msgstr "F"
+msgstr "Art"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
@@ -5997,7 +5997,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.10.String.Text
 msgid  "Type"
-msgstr "F"
+msgstr "Typ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
@@ -6041,7 +6041,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.10.String.Text
 msgid  "Type"
-msgstr "F"
+msgstr "Typ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
@@ -6085,7 +6085,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.10.String.Text
 msgid  "Type"
-msgstr "F"
+msgstr "Art"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
@@ -6113,7 +6113,7 @@ msgstr "Der Zinssatz pro Periode."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.4.String.Text
 msgid  "Period"
-msgstr "ZR"
+msgstr "P"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.5.String.Text
 msgid  "Periods. The periods for which the compounded interest is to be calculated. P = 1 denotes for the first period, P = NPER for the last one."
@@ -6145,7 +6145,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.12.String.Text
 msgid  "Type"
-msgstr "Art"
+msgstr "Typ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.13.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
@@ -6165,7 +6165,7 @@ msgstr "Der Zinssatz pro Periode."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.4.String.Text
 msgid  "Period"
-msgstr "P"
+msgstr "Zeitraum"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.5.String.Text
 msgid  "Period. The period for which the repayments are to be calculated. Per = 1 denotes for the first period, P = NPER for the last"
@@ -6337,7 +6337,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.8.String.Text
 msgid  "Period"
-msgstr "Zeitraum"
+msgstr "P"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.9.String.Text
 msgid  "Period. The depreciation period which must have the same time unit as average useful life."
@@ -6845,7 +6845,7 @@ msgstr "Liefert die Formel einer Formelzelle."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_FORMULA.2.String.Text
 msgid  "Reference"
-msgstr "Referenz"
+msgstr "Bezug"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_FORMULA.3.String.Text
 msgid  "The formula cell."
@@ -7229,7 +7229,7 @@ msgstr "Berechnet die Quadratwurzel einer Zahl."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.2.String.Text
 msgid  "number"
-msgstr "Zahl"
+msgstr "Anzahl"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.3.String.Text
 msgid  "A positive value for which the square root is to be calculated."
@@ -7417,7 +7417,7 @@ msgstr "Berechnet den Sinus einer Zahl."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN.2.String.Text
 msgid  "number"
-msgstr "Zahl"
+msgstr "Anzahl"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN.3.String.Text
 msgid  "The angle in radians for which the sine is to be calculated."
@@ -7441,7 +7441,7 @@ msgstr "Berechnet den Tangens einer Zahl."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN.2.String.Text
 msgid  "number"
-msgstr "Zahl"
+msgstr "Anzahl"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN.3.String.Text
 msgid  "The angle in radians for which the tangent is to be calculated."
@@ -7465,7 +7465,7 @@ msgstr "Berechnet den Hyperbelsinus (hyperbolischer Sinus) einer Zahl."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN_HYP.2.String.Text
 msgid  "number"
-msgstr "Zahl"
+msgstr "Anzahl"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN_HYP.3.String.Text
 msgid  "The value for which the hyperbolic sine is to be calculated."
@@ -7489,7 +7489,7 @@ msgstr "Berechnet den Hyperbeltangens (hyperbolischer Tangens) einer Zahl."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN_HYP.2.String.Text
 msgid  "number"
-msgstr "Anzahl"
+msgstr "Zahl"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN_HYP.3.String.Text
 msgid  "The value for which the hyperbolic tangent is to be calculated."
@@ -7669,7 +7669,7 @@ msgstr "Zahl"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_INT.3.String.Text
 msgid  "The number to be rounded down."
-msgstr "Die Zahl, die abgerundet wird."
+msgstr "Die Zahl, die abgerundet werden soll."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TRUNC.1.String.Text
 msgid  "Truncates the decimal places of a number."
@@ -7677,7 +7677,7 @@ msgstr "Schneidet Nachkommastellen einer Zahl ab."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TRUNC.2.String.Text
 msgid  "number"
-msgstr "Anzahl"
+msgstr "Zahl"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TRUNC.3.String.Text
 msgid  "The number to be truncated."
@@ -7697,7 +7697,7 @@ msgstr "Runden einer Zahl auf eine vorgegebene Genauigkeit."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND.2.String.Text
 msgid  "number"
-msgstr "Anzahl"
+msgstr "Zahl"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND.3.String.Text
 msgid  "The number to be rounded."
@@ -7709,7 +7709,7 @@ msgstr "Anzahl"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND.5.String.Text
 msgid  "The number of places to which a number is to be rounded."
-msgstr "Die Anzahl der Stellen, auf die gerundet werden soll."
+msgstr "Die Anzahl der Stellen, auf die aufgerundet werden soll."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.1.String.Text
 msgid  "Rounds a number up to the predefined accuracy."
@@ -7717,11 +7717,11 @@ msgstr "Rundet eine Zahl auf eine vorgegebene Genauigkeit auf."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.2.String.Text
 msgid  "number"
-msgstr "Anzahl"
+msgstr "Zahl"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.3.String.Text
 msgid  "The number to be rounded up."
-msgstr "Die Zahl, die aufgerundet wird."
+msgstr "Die Zahl, die aufgerundet werden soll."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.4.String.Text
 msgid  "count"
@@ -8829,7 +8829,7 @@ msgstr "Mittelwert. Der Mittelwert der Poisson-Verteilung."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.6.String.Text
 msgid  "Cumulative"
-msgstr "Kumulativ"
+msgstr "Kumuliert"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.7.String.Text
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
@@ -8953,7 +8953,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOG_NORM_DIST.8.String.Text
 msgid  "Cumulative"
-msgstr "Kumulativ"
+msgstr "Kumuliert"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOG_NORM_DIST.9.String.Text
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
@@ -9393,7 +9393,7 @@ msgstr "Freiheitsgrade"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHI_DIST.5.String.Text
 msgid  "The degrees of freedom of the chi square distribution."
-msgstr "Freiheitsgrade der Chi-Quadrat-Verteilung."
+msgstr "Die Freiheitsgrade der Chi-Quadrat-Verteilung."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHISQ_DIST.1.String.Text
 msgid  "Returns left-tail probability of the cumulative distribution function or values of the probability density function of the chi-square distribution."
@@ -10349,7 +10349,7 @@ msgstr "Wandelt ASCII- und Katakana-Zeichen halber Breite in normale Breite um."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_JIS.2.String.Text
 msgid  "text"
-msgstr "text"
+msgstr "Text"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_JIS.3.String.Text
 msgid  "The text to convert."
@@ -10361,7 +10361,7 @@ msgstr "Wandelt ASCII- und Katakana-Zeichen normaler Breite in halbe Breite um."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ASC.2.String.Text
 msgid  "text"
-msgstr "text"
+msgstr "Text"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ASC.3.String.Text
 msgid  "The text to convert."
@@ -11089,6 +11089,54 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MIDB.7.String.Text
 msgid  "The number of characters for the text."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.1.String.Text
+msgid  "Return the cosecant of an angle. CSC(x)=1/SIN(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.3.String.Text
+msgid  "The angle in radians for which the cosecant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.1.String.Text
+msgid  "Return the secant of an angle. SEC(x)=1/COS(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.3.String.Text
+msgid  "The angle in radians for which the secant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.1.String.Text
+msgid  "Return the hyperbolic cosecant of a hyperbolic angle. CSCH(x)=1/SINH(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.3.String.Text
+msgid  "The hyperbolic angle in radians for which the hyperbolic cosecant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.1.String.Text
+msgid  "Return the hyperbolic secant of a hyperbolic angle. SECH(x)=1/COSH(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.3.String.Text
+msgid  "The hyperbolic angle in radians for which the hyperbolic secant is to be calculated."
 msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_APPLICATION.String.Text
@@ -11901,7 +11949,7 @@ msgstr "Operationen:"
 
 #: source/ui/src/dbnamdlg.src#RID_SCDLG_DBNAMES.BTN_ADD.PushButton.Text
 msgid  "~Add"
-msgstr "Hin~zufügen"
+msgstr "Hinzu~fügen"
 
 #: source/ui/src/dbnamdlg.src#RID_SCDLG_DBNAMES.BTN_REMOVE.PushButton.Text
 msgid  "~Delete"
@@ -12117,7 +12165,7 @@ msgstr ">="
 
 #: source/ui/src/optsolver.src#RID_SCDLG_OPTSOLVER.LB_OP1.Default.StringList.item
 msgid  "Integer"
-msgstr "Ganzzahlig"
+msgstr "Ganzzahlig "
 
 #: source/ui/src/optsolver.src#RID_SCDLG_OPTSOLVER.LB_OP2.Default.StringList.item
 msgid  "<="
@@ -12133,7 +12181,7 @@ msgstr ">="
 
 #: source/ui/src/optsolver.src#RID_SCDLG_OPTSOLVER.LB_OP2.Default.StringList.item
 msgid  "Integer"
-msgstr "Ganzzahlig "
+msgstr "Ganzzahlig"
 
 #: source/ui/src/optsolver.src#RID_SCDLG_OPTSOLVER.LB_OP3.Default.StringList.item
 msgid  "<="
@@ -12597,7 +12645,7 @@ msgstr "Nach ~unten"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_INSCONT.BTN_MV_RIGHT.RadioButton.Text
 msgid  "~Right"
-msgstr "~Rechts"
+msgstr "Nach re~chts"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_INSCONT.FL_MOVE.FixedLine.Text
 msgid  "Shift cells"

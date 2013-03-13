@@ -153,7 +153,7 @@ msgstr "~Formen"
 
 #: inc/globlmn_tmpl.hrc#ITEM_GROUP_MENU.SID_MN_GROUP.MenuItem.Text
 msgid  "~Group"
-msgstr "~Gruppe"
+msgstr "~Gruppieren"
 
 #: inc/globlmn_tmpl.hrc#ITEM_DATASOURCE_ADMINISTRATION.SID_DATASOURCE_ADMINISTRATION.MenuItem.Text
 msgid  "~Data Sources..."
@@ -873,7 +873,7 @@ msgstr "Wiederherstellen "
 
 #: source/dialog/imapdlg.src#RID_SVXDLG_IMAP.TBX_IMAPDLG1.TBI_ACTIVE.ToolBoxItem.Text
 msgid  "Active"
-msgstr "Aktiv"
+msgstr "~Aktiv"
 
 #: source/dialog/imapdlg.src#RID_SVXDLG_IMAP.TBX_IMAPDLG1.TBI_MACRO.ToolBoxItem.Text
 msgid  "Macro..."
@@ -1501,7 +1501,7 @@ msgstr "..."
 
 #: source/dialog/ctredlin.src#SID_REDLIN_FILTER_PAGE.CB_COMMENT.CheckBox.Text
 msgid  "Comment"
-msgstr "Kommentar"
+msgstr "Be~schreibung"
 
 #: source/dialog/ctredlin.src#SID_REDLIN_FILTER_PAGE.STR_DATE_COMBOX.String.Text
 msgid  "Date Condition"
@@ -2809,7 +2809,7 @@ msgstr "- kein -"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_TRANSPARENCE.String.Text
 msgid  "Transparency"
-msgstr "Flächentransparenz"
+msgstr "Transparenz"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_CENTERED.String.Text
 msgid  "Centered"
@@ -3993,7 +3993,7 @@ msgstr "Objektspezifisch"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_FLAT.ButtonImage.QuickHelpText
 msgid  "Flat"
-msgstr "Flat"
+msgstr "Flach"
 
 #: source/engine3d/float3d.src#RID_SVXFLOAT_3D.BTN_NORMALS_SPHERE.ButtonImage.QuickHelpText
 msgid  "Spherical"
@@ -5005,7 +5005,7 @@ msgstr "Element hinzufügen"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD_ATTRIBUTE.ToolBoxItem.Text
 msgid  "Add Attribute"
-msgstr "Attribut hinzufügen"
+msgstr "Attribute hinzufügen"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_EDIT.ToolBoxItem.Text
 msgid  "Edit"
@@ -5193,7 +5193,7 @@ msgstr "Element hinzufügen"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_ADD_ATTRIBUTE.MenuItem.Text
 msgid  "Add Attribute"
-msgstr "Attribute hinzufügen"
+msgstr "Attribut hinzufügen"
 
 #: source/form/datanavi.src#RID_MENU_DATANAVIGATOR.TBI_ITEM_EDIT.MenuItem.Text
 msgid  "Edit"
@@ -5453,7 +5453,7 @@ msgstr "Gallery"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_ACTUALIZE_PROGRESS.String.Text
 msgid  "Update"
-msgstr "Aktualisieren"
+msgstr "~Aktualisieren"
 
 #: source/gallery2/gallery.src#RID_SVXSTR_GALLERY_FOPENERROR.String.Text
 msgid  "This file cannot be opened"
@@ -5565,11 +5565,11 @@ msgstr "~Eigenschaften..."
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MenuItem.Text
 msgid  "~Insert"
-msgstr "~Einfügen"
+msgstr "~Hinzufügen"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MN_ADD.MenuItem.Text
 msgid  "~Copy"
-msgstr "~Kopie"
+msgstr "~Kopieren"
 
 #: source/gallery2/gallery.src#RID_SVXMN_GALLERY2.MN_ADDMENU.MN_ADD_LINK.MenuItem.Text
 msgid  "Link"
@@ -5857,7 +5857,7 @@ msgstr ""
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_ZOOM.ItemList.item
 msgid  "Scale"
-msgstr "Skalierung"
+msgstr "Maßstab"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_BRUSH.ItemList.item
 msgid  "Brush"
@@ -6141,7 +6141,7 @@ msgstr "Notiz"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_NULL.String.Text
 msgid  "None"
-msgstr "Ohne"
+msgstr "Keine"
 
 #: source/items/svxitems.src#RID_SVXITEMS_BRUSHSTYLE_SOLID.String.Text
 msgid  "Solid"
@@ -8285,7 +8285,7 @@ msgstr "Horizontale Textverankerung"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_TEXT_FITTOSIZE.String.Text
 msgid  "Fit text to frame"
-msgstr "Text-an-Rahmen"
+msgstr "Text an Rahmen anpassen"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFRED.String.Text
 msgid  "Red"
@@ -8313,7 +8313,7 @@ msgstr "Gamma"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFTRANSPARENCE.String.Text
 msgid  "Transparency"
-msgstr "Flächentransparenz"
+msgstr "Transparenz"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_GRAFINVERT.String.Text
 msgid  "Invert"
@@ -8481,7 +8481,7 @@ msgstr "Füllbitmap"
 
 #: source/svdraw/svdstr.src#SIP_XA_FILLTRANSPARENCE.String.Text
 msgid  "Transparency"
-msgstr "Transparenz"
+msgstr "Flächentransparenz"
 
 #: source/svdraw/svdstr.src#SIP_XA_GRADIENTSTEPCOUNT.String.Text
 msgid  "Number of gradient steps"
