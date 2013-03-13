@@ -319,7 +319,7 @@ msgstr "⁠~ ပြင်ပရင်းမြစ် / ကြားခံ ဆက
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPITYPE.FL_FRAME.FixedLine.Text
 #, fuzzy
 msgid  "Selection"
-msgstr "ရွေးချယ်မှု"
+msgstr "လက်ရွေးစင်"
 
 #: source/ui/dbgui/dapitype.src#RID_SCDLG_DAPITYPE.FixedLine.Text
 #, fuzzy
@@ -595,7 +595,7 @@ msgstr "~အုပ်စုအနေဖြင့် "
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPNUMGROUP.HelpButton.Text
 #, fuzzy
 msgid  "Grouping"
-msgstr "အုပ်စုဖွဲ့သော"
+msgstr "အုပ်စုဖွဲ့နေသည်"
 
 #: source/ui/dbgui/dpgroupdlg.src#RID_SCDLG_DPDATEGROUP.FL_START.FixedLine.Text
 #, fuzzy
@@ -1845,8 +1845,9 @@ msgid  "Status unknown"
 msgstr "မသိသောအခြေအနေ"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.BTN_RETYPE_DOC.PushButton.Text
+#, fuzzy
 msgid  "Re-type"
-msgstr "ပြန်ရိုက်ပါ"
+msgstr "ပြန်-ရိုက်ပါ"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FL_SHEET.FixedLine.Text
 #, fuzzy
@@ -1864,6 +1865,7 @@ msgid  "Status unknown"
 msgstr "မသိသောအခြေအနေ"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.BTN_RETYPE_SHEET1.PushButton.Text
+#, fuzzy
 msgid  "Re-type"
 msgstr "ပြန်-ရိုက်ပါ"
 
@@ -2368,7 +2370,7 @@ msgstr "ထပ်တလဲလဲပြုလုပ်ရန်အတန်းမ
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_REPEATROW.Default.StringList.item
 #, fuzzy
 msgid  "- user defined -"
-msgstr "- အသုံးပြုသူ၏သတ်မှတ်ချက် -"
+msgstr "- အသုံးပြုသူ၏သတ်မှတ်ချက်-"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.RB_REPEATROW.ImageButton.QuickHelpText
 #, fuzzy
@@ -2503,7 +2505,7 @@ msgstr "စကေး"
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
 #, fuzzy
 msgid  "- none -"
-msgstr "- ဘာမျှမရှိပါ -"
+msgstr "-ဘာမျှမရှိပါ -"
 
 #: source/ui/pagedlg/pagedlg.src#RID_SCDLG_AREAS.LB_PRINTAREA.Default.StringList.item
 #, fuzzy
@@ -3385,7 +3387,7 @@ msgstr "ရွေးပိုင်ခွင့်များ"
 #: source/ui/src/solveroptions.src#RID_SCDLG_SOLVER_INTEGER.CancelButton.Text
 #, fuzzy
 msgid  "Edit Setting"
-msgstr "~ပြင်ဆင်ချိန်ညှိမှု ကို တည်းဖြတ်ပါ"
+msgstr "~ပြင်ဆင်ချိန်ညှိမှု ကိုတည်းဖြတ်ပါ"
 
 #: source/ui/src/solveroptions.src#RID_SCDLG_SOLVER_DOUBLE.CancelButton.Text
 #, fuzzy
@@ -3708,7 +3710,7 @@ msgstr "အလိုအလျောက်ကောက်ကြောင်း"
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SUBTOTALS.String.Text
 #, fuzzy
 msgid  "Subtotals"
-msgstr "အပေါင်းကိန်းအခွဲ"
+msgstr "စုစုပေါင်းကိန်းခွဲများ"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SORT.String.Text
 #, fuzzy
@@ -4102,7 +4104,7 @@ msgstr "စုစုပေါင်းချုပ်"
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABLE_ERGEBNIS.String.Text
 #, fuzzy
 msgid  "Result"
-msgstr "အ​ဖြေ"
+msgstr "အဖြေ"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_UNDO_SPELLING.String.Text
 #, fuzzy
@@ -4122,7 +4124,7 @@ msgstr "OR"
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_TABLE_DEF.String.Text
 #, fuzzy
 msgid  "Sheet"
-msgstr "စာရွက်အချပ်လွှာ"
+msgstr "စာရွက်လွှာ"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_MOVE_TO_END.String.Text
 #, fuzzy
@@ -4690,7 +4692,7 @@ msgstr "ပုံသေနည်းများ"
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_HIDE.String.Text
 #, fuzzy
 msgid  "Hide"
-msgstr "ဝှက်ထားပါ"
+msgstr "ခေတ္တခဏဖျောက်ထားပါ"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_PRINT.String.Text
 #, fuzzy
@@ -5012,7 +5014,7 @@ msgstr "ပြပါ"
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_VOBJ_MODE_HIDE.String.Text
 #, fuzzy
 msgid  "Hide"
-msgstr "ခေတ္တခဏဖျောက်ထားပါ"
+msgstr "ဝှက်ထားပါ"
 
 #: source/ui/src/globstr.src#RID_GLOBSTR.STR_SCATTR_PAGE_TOPDOWN.String.Text
 #, fuzzy
@@ -5791,7 +5793,7 @@ msgstr "စံနှုန်းစစ်ထုတ်ကိရိယာ "
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.FT_OP.FixedText.Text
 #, fuzzy
 msgid  "Operator"
-msgstr "လုပ်ကိုင်သူ"
+msgstr "အော်ပရေတာ"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.FT_FIELD.FixedText.Text
 #, fuzzy
@@ -5851,7 +5853,7 @@ msgstr "ဖြင့်အဆုံးမသတ်ပါ"
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.FL_CRITERIA.FixedLine.Text
 #, fuzzy
 msgid  "Filter criteria"
-msgstr "မှတ်ကျောက်တင်စစ်ထုတ်ကိရိယာ"
+msgstr "မှတ်ကျောက်စစ်ထုတ်ကိရိယာ"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.BTN_CASE.CheckBox.Text
 #, fuzzy
@@ -5871,7 +5873,7 @@ msgstr "ကော်လံအညွှန်းများပါဝင်သည
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.BTN_UNIQUE.CheckBox.Text
 #, fuzzy
 msgid  "~No duplication"
-msgstr "~ထပ်ခြင်းမရှိ"
+msgstr "~မူပွားခြင်းမဟုတ်ပါ"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.BTN_COPY_RESULT.CheckBox.Text
 #, fuzzy
@@ -5896,7 +5898,7 @@ msgstr "အတု"
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.FT_DBAREA_LABEL.FixedText.Text
 #, fuzzy
 msgid  "Data range:"
-msgstr "အချက်အလက်နယ်ပယ်ကန့်သတ်မှု"
+msgstr "အချက်အလက်များနယ်ပယ်ကန့်သတ်ချက်"
 
 #: source/ui/src/filter.src#RID_SCDLG_SPEC_FILTER.ModelessDialog.Text
 #, fuzzy
@@ -5916,7 +5918,7 @@ msgstr "ချုံ့ပါ"
 #: source/ui/src/filter.src#RID_SCDLG_SPEC_FILTER.BTN_CASE.CheckBox.Text
 #, fuzzy
 msgid  "~Case sensitive"
-msgstr "~ကိစ္စရပ်ပေါ်တွင်အမှားအယွင်းမခံနိုင်မှု "
+msgstr "~ကိစ္စရပ်ပေါ်တွင်အမှားအယွင်းမခံနိုင်မှု"
 
 #: source/ui/src/filter.src#RID_SCDLG_SPEC_FILTER.BTN_REGEXP.CheckBox.Text
 #, fuzzy
@@ -5961,7 +5963,7 @@ msgstr "အတု"
 #: source/ui/src/filter.src#RID_SCDLG_SPEC_FILTER.FT_DBAREA_LABEL.FixedText.Text
 #, fuzzy
 msgid  "Data range:"
-msgstr "အချက်အလက်များနယ်ပယ်ကန့်သတ်ချက်"
+msgstr "အချက်အလက်နယ်ပယ်ကန့်သတ်မှု"
 
 #: source/ui/src/filter.src#RID_SCDLG_PIVOTFILTER.ModalDialog.Text
 #, fuzzy
@@ -5971,7 +5973,7 @@ msgstr "စစ်ထုတ်ကိရိယာ"
 #: source/ui/src/filter.src#RID_SCDLG_PIVOTFILTER.FT_OP.FixedText.Text
 #, fuzzy
 msgid  "Operator"
-msgstr "အော်ပရေတာ"
+msgstr "လုပ်ကိုင်သူ"
 
 #: source/ui/src/filter.src#RID_SCDLG_PIVOTFILTER.FT_FIELD.FixedText.Text
 #, fuzzy
@@ -6136,12 +6138,12 @@ msgstr "အငယ်ဆုံး"
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
 msgid  "Largest %"
-msgstr "အကြီးဆုံး % "
+msgstr "% အကြီးဆုံး"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
 msgid  "Smallest %"
-msgstr "အငယ်ဆုံး % "
+msgstr "% အငယ်ဆုံး"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
@@ -6156,7 +6158,7 @@ msgstr "ပါဝင်မှုမရှိပါ"
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
 msgid  "Begins with"
-msgstr "ဖြင့်စတင်သည်"
+msgstr "ဖြင့်စတင်ပါ"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.LB_COND1.Default.stringlist.item
 #, fuzzy
@@ -6490,12 +6492,12 @@ msgstr "ဒေတာဘေ့စ်"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.3.String.Text
 #, fuzzy
 msgid  "The range of cells containing data."
-msgstr "အချက်အလက်များပါဝင်သည့် ဆဲလ်အကွက်များ နေရာကန့်သတ်ချက်"
+msgstr "အချက်အလက်များပါဝင်သော ဆဲလ်အကွက်များ နေရာကန့်သတ်ချက်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.4.String.Text
 #, fuzzy
 msgid  "Database field"
-msgstr "ဒေတာဘေ့စ် နယ်ပယ်"
+msgstr "ဒေတာဘေ့စ်နယ်ပယ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.5.String.Text
 msgid  "Indicates which database field (column) is to be used for the search criteria."
@@ -6509,7 +6511,7 @@ msgstr "မှတ်ကျောက်ရှာဖွေမှု"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.7.String.Text
 #, fuzzy
 msgid  "Defines the cell range containing the search criteria."
-msgstr "မှတ်ကျောက်ရှာဖွေမှု ပါဝင်သည့် ဆဲလ်အကွက်နေရာကို အဓိပ္ပာယ်သတ်မှတ်သည်။"
+msgstr "မှတ်ကျောက်ရှာဖွေမှု ပါဝင်သည့် ဆဲလ်အကွက်နေရာကို အဓိပ္ပါယ်သတ်မှတ်သည်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.1.String.Text
 msgid  "Counts all non-blank cells of a data range where the content corresponds to the search criteria."
@@ -6523,7 +6525,7 @@ msgstr "ဒေတာဘေ့စ်"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.3.String.Text
 #, fuzzy
 msgid  "The range of cells containing data."
-msgstr "အချက်အလက်များပါဝင်သော ဆဲလ်အကွက်များ နေရာကန့်သတ်ချက်။"
+msgstr "အချက်အလက်များပါဝင်သည့် ဆဲလ်အကွက်များ နေရာကန့်သတ်ချက်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.4.String.Text
 #, fuzzy
@@ -6542,7 +6544,7 @@ msgstr "မှတ်ကျောက်ရှာဖွေမှု"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.7.String.Text
 #, fuzzy
 msgid  "Defines the cell range containing the search criteria."
-msgstr "မှတ်ကျောက်ရှာဖွေမှု ပါဝင်သည့် ဆဲလ်အကွက်နေရာကို အဓိပ္ပာယ်သတ်မှတ်သည်။"
+msgstr "မှတ်ကျောက်ရှာဖွေမှု ပါဝင်သည့် ဆဲလ်အကွက်နေရာကို အဓိပ္ပါယ်သတ်မှတ်သည်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_AVERAGE.1.String.Text
 msgid  "Returns the average value of all the cells of a data range whose contents match the search criteria."
@@ -6575,7 +6577,7 @@ msgstr "မှတ်ကျောက်ရှာဖွေမှု"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_AVERAGE.7.String.Text
 #, fuzzy
 msgid  "Defines the cell range containing the search criteria."
-msgstr "မှတ်ကျောက်ရှာဖွေမှု ပါဝင်သည့် ဆဲလ်အကွက်နေရာကို အဓိပ္ပာယ်သတ်မှတ်သည်။"
+msgstr "မှတ်ကျောက်ရှာဖွေမှု ပါဝင်သည့် ဆဲလ်အကွက်နေရာကို အဓိပ္ပါယ်သတ်မှတ်သည်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_GET.1.String.Text
 msgid  "Defines the contents of the cell of a data range which matches the search criteria."
@@ -6608,7 +6610,7 @@ msgstr "မှတ်ကျောက်ရှာဖွေမှု"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_GET.7.String.Text
 #, fuzzy
 msgid  "Defines the cell range containing the search criteria."
-msgstr "မှတ်ကျောက်ရှာဖွေမှု ပါဝင်သည့် ဆဲလ်အကွက်နေရာကို အဓိပ္ပာယ်သတ်မှတ်သည်။"
+msgstr "မှတ်ကျောက်ရှာဖွေမှု ပါဝင်သည့် ဆဲလ်အကွက်နေရာကို အဓိပ္ပာယ်သတ်မှတ်သည်။။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_MAX.1.String.Text
 msgid  "Returns the maximum value from all of the cells of a data range which correspond to the search criteria."
@@ -6641,7 +6643,7 @@ msgstr "မှတ်ကျောက်ရှာဖွေမှု"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_MAX.7.String.Text
 #, fuzzy
 msgid  "Defines the cell range containing the search criteria."
-msgstr "မှတ်ကျောက်ရှာဖွေမှု ပါဝင်သည့် ဆဲလ်အကွက်နေရာကို အဓိပ္ပါယ်သတ်မှတ်သည်။"
+msgstr "မှတ်ကျောက်ရှာဖွေမှု ပါဝင်သည့် ဆဲလ်အကွက်နေရာကို အဓိပ္ပာယ်သတ်မှတ်သည်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_MIN.1.String.Text
 msgid  "Returns the minimum of all cells of a data range where the contents correspond to the search criteria."
@@ -6928,12 +6930,12 @@ msgstr ""
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ကိန်းဂဏန်းများ"
+msgstr "ကိန်းဂဏန်း"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.3.String.Text
 #, fuzzy
 msgid  "The internal number for the date."
-msgstr "ရက်စွဲအတွက် အတွင်းပိုင်းနံပါတ်"
+msgstr "ရက်စွဲအတွက် အတွင်းပိုင်း နံပါတ်တပ်သည်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.1.String.Text
 msgid  "Calculates the number of days between two dates based on a 360-day year."
@@ -6942,7 +6944,7 @@ msgstr ""
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.2.String.Text
 #, fuzzy
 msgid  "Date_1"
-msgstr "ရက်စွဲ _ ၁"
+msgstr "ရက်စွဲ_၁"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.3.String.Text
 #, fuzzy
@@ -6952,7 +6954,7 @@ msgstr "မတူညီသော နေ့ရက်များတွက်ခ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.4.String.Text
 #, fuzzy
 msgid  "Date_2"
-msgstr "ရက်စွဲ _ ၂"
+msgstr "ရက်စွဲ_၂"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.5.String.Text
 #, fuzzy
@@ -6962,7 +6964,7 @@ msgstr "မတူညီသော နေ့ရက်များတွက်ခ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.6.String.Text
 #, fuzzy
 msgid  "Type"
-msgstr "အမျိုးအစား"
+msgstr "ပုံစံ ရိုက်ပါ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.7.String.Text
 msgid  "Method used to form differences: Type = 0 denotes US method (NASD), Type = 1 denotes the European method."
@@ -6975,7 +6977,7 @@ msgstr ""
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_HOUR.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ကိန်းဂဏန်း"
+msgstr "ကိန်းဂဏန်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_HOUR.3.String.Text
 #, fuzzy
@@ -6989,7 +6991,7 @@ msgstr ""
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_MIN.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ကိန်းဂဏန်း"
+msgstr "နံပါတ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_MIN.3.String.Text
 #, fuzzy
@@ -7003,12 +7005,12 @@ msgstr ""
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_MONTH.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ကိန်းဂဏန်း"
+msgstr "နံပါတ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_MONTH.3.String.Text
 #, fuzzy
 msgid  "The internal number of the date."
-msgstr "ရက်စွဲ၏ အတွင်းပိုင်းနံပါတ်"
+msgstr "ရက်စွဲ၏ အတွင်းပိုင်း နံပါတ်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_ACT_TIME.1.String.Text
 #, fuzzy
@@ -7022,7 +7024,7 @@ msgstr ""
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_SEC.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ကိန်းဂဏန်း"
+msgstr "နံပါတ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_SEC.3.String.Text
 #, fuzzy
@@ -7088,7 +7090,7 @@ msgstr ""
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY_OF_WEEK.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ကိန်းဂဏန်း"
+msgstr "နံပါတ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY_OF_WEEK.3.String.Text
 #, fuzzy
@@ -7098,7 +7100,7 @@ msgstr "ရက်စွဲအတွက် အတွင်းပိုင်း �
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY_OF_WEEK.4.String.Text
 #, fuzzy
 msgid  "Type"
-msgstr "အမျိုးအစား"
+msgstr "ပုံစံ ရိုက်ပါ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY_OF_WEEK.5.String.Text
 #, fuzzy
@@ -7113,7 +7115,7 @@ msgstr "ရက်စွဲတန်ဖိုးတစ်ခု၏ ကိန်�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_YEAR.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ကိန်းဂဏန်း"
+msgstr "နံပါတ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_YEAR.3.String.Text
 #, fuzzy
@@ -7153,7 +7155,7 @@ msgstr "ပေးထားသော ရက်များပေါ်မူတ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_WEEK.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ကိန်းဂဏန်း"
+msgstr "နံပါတ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_WEEK.3.String.Text
 #, fuzzy
@@ -7227,7 +7229,7 @@ msgstr ""
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.10.String.Text
 #, fuzzy
 msgid  "Type"
-msgstr "အမျိုးအစား"
+msgstr "ပုံစံ ရိုက်ပါ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
@@ -7278,7 +7280,7 @@ msgstr "လက်ရှိ တန်ဖိုး။ ပေးရန်ရှိ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.10.String.Text
 #, fuzzy
 msgid  "Type"
-msgstr "အမျိုးအစား"
+msgstr "ပုံစံရိုက်ပါ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
@@ -7462,7 +7464,7 @@ msgstr "အချိန်ကာလတစ်ခုရှိ အတိုးန�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.4.String.Text
 #, fuzzy
 msgid  "Period"
-msgstr "ကာလ"
+msgstr "အချိန်ကာလ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.5.String.Text
 msgid  "Periods. The periods for which the compounded interest is to be calculated. P = 1 denotes for the first period, P = NPER for the last one."
@@ -7522,7 +7524,7 @@ msgstr "အချိန်ကာလတစ်ခုရှိ အတိုးန�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.4.String.Text
 #, fuzzy
 msgid  "Period"
-msgstr "အချိန်ကာလ"
+msgstr "ကာလ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.5.String.Text
 msgid  "Period. The period for which the repayments are to be calculated. Per = 1 denotes for the first period, P = NPER for the last"
@@ -7710,7 +7712,7 @@ msgstr ""
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.6.String.Text
 #, fuzzy
 msgid  "Life"
-msgstr "သက်တမ်း။"
+msgstr "သက်တမ်း"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.7.String.Text
 msgid  "Useful life. The number of periods in the useful life of the asset."
@@ -7719,7 +7721,7 @@ msgstr ""
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.8.String.Text
 #, fuzzy
 msgid  "Period"
-msgstr "ကာလ"
+msgstr "အချိန်ကာလ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.9.String.Text
 msgid  "Period. The depreciation period which must have the same time unit as average useful life."
@@ -7752,7 +7754,7 @@ msgstr ""
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LIA.6.String.Text
 #, fuzzy
 msgid  "Life"
-msgstr "သက်တမ်း"
+msgstr "သက်တမ်း။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LIA.7.String.Text
 msgid  "Useful life. The number of periods in the useful life of the asset."
@@ -8499,7 +8501,7 @@ msgstr "နံပါတ်တစ်ခု၏ အပြည့်အဝ တန်�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ABS.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ကိန်းဂဏန်း"
+msgstr "နံပါတ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ABS.3.String.Text
 #, fuzzy
@@ -8514,7 +8516,7 @@ msgstr "အခြေ a ၏ထပ်ညွှန်း b ပြန်ပေးသ
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_POWER.2.String.Text
 #, fuzzy
 msgid  "Base"
-msgstr "အခြေ"
+msgstr "Base"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_POWER.3.String.Text
 #, fuzzy
@@ -8539,7 +8541,7 @@ msgstr "သတ်မှတ် အပိုင်းအခြားတစ်ခ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COUNT_EMPTY_CELLS.2.String.Text
 #, fuzzy
 msgid  "range"
-msgstr "သတ်မှတ်အပိုင်းအခြား"
+msgstr "ကန့်သတ်နယ်ပယ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COUNT_EMPTY_CELLS.3.String.Text
 #, fuzzy
@@ -8559,7 +8561,7 @@ msgstr "ကိန်းရှင်းအားလုံး ပေါင်း�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM.2.String.Text
 #, fuzzy
 msgid  "number "
-msgstr "ကိန်းဂဏန်း"
+msgstr "နံပါတ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 arguments whose total is to be calculated."
@@ -8573,7 +8575,7 @@ msgstr "ကိန်းရှင်းအားလုံး၏ နှစ်ထ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_SQ.2.String.Text
 #, fuzzy
 msgid  "number "
-msgstr "ကိန်းဂဏန်း"
+msgstr "နံပါတ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_SQ.3.String.Text
 msgid  "Number 1, number 2,... are 1 to 30 arguments for which the sum of the squares is to be calculated."
@@ -8601,7 +8603,7 @@ msgstr "အခြေအနေများနှင့် ကိုက်ညီ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_IF.2.String.Text
 #, fuzzy
 msgid  "range"
-msgstr "ကန့်သတ်နယ်ပယ်"
+msgstr "နေရာကန့်သတ်ချက်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_IF.3.String.Text
 #, fuzzy
@@ -8616,7 +8618,7 @@ msgstr "မှတ်ကျောက်"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_IF.5.String.Text
 #, fuzzy
 msgid  "The cell range in which the search criteria are given."
-msgstr "ပေးထားသော မှတ်ကျောက်ရှာဖွေမှု အတွင်းရှိ ဆဲလ်အကွက် ကန့်သတ်နယ်ပယ်။"
+msgstr "ပေးထားသော မှတ်ကျောက်ရှာဖွေမှု အတွင်းရှိ ဆဲလ်အကွက် နေရာတစ်ခု။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_IF.6.String.Text
 #, fuzzy
@@ -8635,7 +8637,7 @@ msgstr ""
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IF.2.String.Text
 #, fuzzy
 msgid  "range"
-msgstr "နေရာကန့်သတ်ချက်"
+msgstr "ကန့်သတ်နယ်ပယ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IF.3.String.Text
 msgid  "The range to be evaluated by the criteria given."
@@ -8767,7 +8769,7 @@ msgstr "နံပါတ် တစ်ခု၏ နှစ်ထပ်ကိန်�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "ကိန်းဂဏန်း"
+msgstr "နံပါတ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.3.String.Text
 #, fuzzy
@@ -8821,7 +8823,7 @@ msgstr "နံပါတ် _ ၁"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN.3.String.Text
 #, fuzzy
 msgid  "The total number of elements."
-msgstr "အချက်အလက်များ၏ စုစုပေါင်းအရေအတွက်"
+msgstr "ဂဏန်း(သို့)ဇယားကွက်တစ်ခုတွင် ပါသော အချက်အလက်များ၏ စုစုပေါင်း အရေအတွက်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN.4.String.Text
 #, fuzzy
@@ -8865,7 +8867,7 @@ msgstr "စက်ဝိုင်းပြတ်အကွေး ကိုဆိ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_COS.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ကိန်းဂဏန်း"
+msgstr "နံပါတ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_COS.3.String.Text
 #, fuzzy
@@ -8880,7 +8882,7 @@ msgstr "စက်ဝန်းဆိုင်း၏ နံပါတ်တစ်�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_SIN.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ကိန်းဂဏန်း"
+msgstr "နံပါတ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_SIN.3.String.Text
 #, fuzzy
@@ -8895,7 +8897,7 @@ msgstr "နံပါတ်တစ်ခု၏ ပြောင်းပြန် �
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_COS_HYP.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ကိန်းဂဏန်"
+msgstr "နံပါတ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_COS_HYP.3.String.Text
 msgid  "A value greater than or equal to 1 for which the hyperbolic cosine is to be returned."
@@ -8909,7 +8911,7 @@ msgstr "ပြောင်းပြန် ဟိုက်ပါဘိုလစ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_SIN_HYP.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ကိန်းဂဏန်း"
+msgstr "နံပါတ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_SIN_HYP.3.String.Text
 #, fuzzy
@@ -8924,7 +8926,7 @@ msgstr "ပြောင်းပြန် ဟိုက်ပါဘိုလစ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_COT.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ကိန်းဂဏန်း"
+msgstr "နံပါတ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_COT.3.String.Text
 #, fuzzy
@@ -8939,7 +8941,7 @@ msgstr "စက်ဝိုင်းပြတ် တန်းဂျင့်၏ �
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_TAN.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ကိန်းဂဏန်း"
+msgstr "နံပါတ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_TAN.3.String.Text
 #, fuzzy
@@ -8954,7 +8956,7 @@ msgstr "ပြောင်းပြန် ဟိုက်ပါဘိုလစ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_COT_HYP.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ကိန်းဂဏန်း"
+msgstr "နံပါတ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_COT_HYP.3.String.Text
 msgid  "A value smaller than -1 or greater than 1 for which the inverse hyperbolic cotangent is to be returned."
@@ -8968,7 +8970,7 @@ msgstr "ပြောင်းပြန် ဟိုက်ပါဘိုလစ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_TAN_HYP.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ကိန်းဂဏန်း"
+msgstr "နံပါတ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_TAN_HYP.3.String.Text
 msgid  "A value between -1 and 1 for which the inverse hyperbolic tangent is to be returned."
@@ -8982,7 +8984,7 @@ msgstr "ကိုဆိုင်း၏ နံပါတ်တစ်ခုသိ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COS.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ကိန်းဂဏန်း"
+msgstr "နံပါတ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COS.3.String.Text
 #, fuzzy
@@ -8997,7 +8999,7 @@ msgstr "ဆိုင်း၏ နံပါတ်တစ်ခုသို့ ပ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN.2.String.Text
 #, fuzzy
 msgid  "number"
-msgstr "ကိန်းဂဏန်း"
+msgstr "နံပါတ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN.3.String.Text
 #, fuzzy
@@ -9012,7 +9014,7 @@ msgstr "ကိုတန်းဂျင့်၏ နံပါတ်တစ်ခ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COT.2.String.Text
 #, fuzzy
 msgid  "Number"
-msgstr "ကိန်းဂဏန်း"
+msgstr "နံပါတ်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COT.3.String.Text
 #, fuzzy
@@ -9307,7 +9309,7 @@ msgstr "နံပါတ်"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_INT.3.String.Text
 #, fuzzy
 msgid  "The number to be rounded down."
-msgstr "နံပါတ် လျှော့ယူပါ။"
+msgstr "နံပါတ် အနီးစပ်ဆုံးတန်ဖိုးသို့လျှော့သည်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TRUNC.1.String.Text
 #, fuzzy
@@ -9371,7 +9373,7 @@ msgstr "နံပါတ်"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.3.String.Text
 #, fuzzy
 msgid  "The number to be rounded up."
-msgstr "နံပါတ် အနီးစပ်ဆုံးတန်ဖိုးသို့တိုးသည်။"
+msgstr "နံပါတ် တိုး၍ လှည့်ရန် ဖြစ်သည်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.4.String.Text
 #, fuzzy
@@ -9396,7 +9398,7 @@ msgstr "နံပါတ်"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_DOWN.3.String.Text
 #, fuzzy
 msgid  "The number to be rounded down."
-msgstr "နံပါတ် အနီးစပ်ဆုံးတန်ဖိုးသို့လျှော့သည်။"
+msgstr "နံပါတ်ကို လျှော့ချပါ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_DOWN.4.String.Text
 #, fuzzy
@@ -9420,7 +9422,7 @@ msgstr "နံပါတ်"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_EVEN.3.String.Text
 #, fuzzy
 msgid  "The number to be rounded up."
-msgstr "နံပါတ် တိုး၍ လှည့်ရန် ဖြစ်သည်။"
+msgstr "နံပါတ် တိုး၍ယူသည်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ODD.1.String.Text
 msgid  "Rounds a positive number up and negative number down to the nearest odd integer."
@@ -9434,7 +9436,7 @@ msgstr "နံပါတ်"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ODD.3.String.Text
 #, fuzzy
 msgid  "The number to be rounded up."
-msgstr "နံပါတ် တိုး၍ယူသည်။"
+msgstr "နံပါတ် တိုး၍ လှည့်ရန် ဖြစ်သည်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_CEIL.1.String.Text
 #, fuzzy
@@ -9454,7 +9456,7 @@ msgstr "နံပါတ် တိုး၍ လှည့်ရန် ဖြစ်
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_CEIL.4.String.Text
 #, fuzzy
 msgid  "Significance"
-msgstr "အရေးပါမှု"
+msgstr "အရာရောက်ဂဏန်း"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_CEIL.5.String.Text
 #, fuzzy
@@ -9539,7 +9541,7 @@ msgstr ""
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_TRANS.2.String.Text
 #, fuzzy
 msgid  "array"
-msgstr "မတ်ထရစ်"
+msgstr "အရေး(ရ်)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_TRANS.3.String.Text
 #, fuzzy
@@ -9554,7 +9556,7 @@ msgstr "မတ်ထရစ်မြှောက်ခြင်း။ မတ်�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_MULT.2.String.Text
 #, fuzzy
 msgid  "array"
-msgstr "မတ်ထရစ်"
+msgstr "အရေး(ရ်)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_MULT.3.String.Text
 #, fuzzy
@@ -9564,7 +9566,7 @@ msgstr "မတ်ထရစ်မြှောက်လဒ်အတွက် ပ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_MULT.4.String.Text
 #, fuzzy
 msgid  "array"
-msgstr "မတ်ထရစ်"
+msgstr "အရေး(ရ်)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_MULT.5.String.Text
 msgid  "The second array having the same number of rows as the first array has columns."
@@ -9578,7 +9580,7 @@ msgstr "မတ်ထရစ်၏ဒီတားမင်နန့် ပြန�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_DET.2.String.Text
 #, fuzzy
 msgid  "array"
-msgstr "မတ်ထရစ်"
+msgstr "အရေး(ရ်)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_DET.3.String.Text
 #, fuzzy
@@ -9735,7 +9737,7 @@ msgstr "အရေး(ရ်)တစ်ခုအဖြစ်ကြားဖြတ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.2.String.Text
 #, fuzzy
 msgid  "data_Y"
-msgstr "Y_အချက်အလက်"
+msgstr "Y_အချက်အလက်များ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.3.String.Text
 #, fuzzy
@@ -9745,7 +9747,7 @@ msgstr "Y အချက်အလက်များအရေး(ရ်)"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.4.String.Text
 #, fuzzy
 msgid  "data_X"
-msgstr "X_အချက်အလက်"
+msgstr "X_အချက်အလက်များ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.5.String.Text
 #, fuzzy
@@ -9777,7 +9779,7 @@ msgstr ""
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.2.String.Text
 #, fuzzy
 msgid  "data_Y"
-msgstr "Y_အချက်အလက်"
+msgstr "Y_အချက်အလက်များ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.3.String.Text
 #, fuzzy
@@ -9787,7 +9789,7 @@ msgstr "Y အချက်အလက်များအရေး(ရ်)"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.4.String.Text
 #, fuzzy
 msgid  "data_X"
-msgstr "X_အချက်အလက်များ"
+msgstr "X_အချက်အလက်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.5.String.Text
 #, fuzzy
@@ -9820,7 +9822,7 @@ msgstr "နောက်သို့လျော့ချသည့် မျဉ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.2.String.Text
 #, fuzzy
 msgid  "data_Y"
-msgstr "Y_အချက်အလက်များ"
+msgstr "Y_အချက်အလက်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.3.String.Text
 #, fuzzy
@@ -9830,12 +9832,12 @@ msgstr "Y အချက်အလက်များအရေး(ရ်)"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.4.String.Text
 #, fuzzy
 msgid  "data_X"
-msgstr "X_အချက်အလက်"
+msgstr "X_အချက်အလက်များ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.5.String.Text
 #, fuzzy
 msgid  "The X data array as the basis for the regression."
-msgstr "ကြားဖြတ်ခြင်းလိုင်းအတွက်Xအချက်အလက်များအရေး(ရ်)"
+msgstr "လိုင်၏ကြားဖြတ်ခြင်းအတွက် X အချက်အလက်များအရေး(ရ်)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.6.String.Text
 #, fuzzy
@@ -9845,7 +9847,7 @@ msgstr "အချက်အလက်သစ် X"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.7.String.Text
 #, fuzzy
 msgid  "The array of X data for recalculating the values."
-msgstr "တန်ဖိုးများပြန်တွက်ချက်ခြင်းအတွက်X အချက်အလက်များအရေး(ရ်)"
+msgstr "တန်ဖိုးများပြန်လည်တွက်ချက်ခြင်းအတွက်X အချက်အလက်များအရေး(ရ်)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.8.String.Text
 #, fuzzy
@@ -10236,7 +10238,7 @@ msgstr "အချက်အလက်များ"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PERCENTILE.3.String.Text
 #, fuzzy
 msgid  "The array of the data in the sample."
-msgstr "နမူနာတွင် အချက်အလက်များအရေး(ရ်)"
+msgstr "နမူနာတွင် အချက်အလက်ကြမ်းများအရေး(ရ်)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PERCENTILE.4.String.Text
 #, fuzzy
@@ -10261,7 +10263,7 @@ msgstr "အချက်အလက်များ"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_QUARTILE.3.String.Text
 #, fuzzy
 msgid  "The array of the data in the sample."
-msgstr "နမူနာတွင် အချက်အလက်ကြမ်းများအရေး(ရ်)"
+msgstr "နမူနာတွင် အချက်အလက်များအရေး(ရ်)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_QUARTILE.4.String.Text
 #, fuzzy
@@ -10453,7 +10455,7 @@ msgstr ""
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_B.2.String.Text
 #, fuzzy
 msgid  "trials"
-msgstr "လမ်းကြောင်းများ"
+msgstr "စမ်းသပ်စစ်ဆေးခြင်းများ"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_B.3.String.Text
 #, fuzzy
@@ -10569,7 +10571,7 @@ msgstr "စမ်းသပ်စစ်ဆေးခြင်းများ"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.5.String.Text
 #, fuzzy
 msgid  "The total number of trials."
-msgstr "စမ်းသပ် စစ်ဆေးခြင်းများ၏စုစုပေါင်း အရေအတွက် နံပါတ်။"
+msgstr "စမ်းသပ်စစ်ဆေးခြင်းများ၏ စုစုပေါင်း အရေအတွက် နံပါတ်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.6.String.Text
 #, fuzzy
@@ -10678,7 +10680,7 @@ msgstr "ပွိုင်ဇင် ဖြန့်ဝေခြင်းအတ�
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.4.String.Text
 #, fuzzy
 msgid  "mean"
-msgstr "ကိန်းသေတန်ဖိုး တစ်ခု"
+msgstr "ကိန်းသေတန်ဖိုး တစ်ခု "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.5.String.Text
 msgid  "Mean. The mean value of the Poisson distribution."
@@ -11061,7 +11063,7 @@ msgstr "အဆုံးသတ်ပါ"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.11.String.Text
 #, fuzzy
 msgid  "The final value for the value interval of the distribution."
-msgstr "ဖြန့်ဝေခြင်း၏ အတွင်းတန်ဖိုးအတွက် နောက်ဆုံး တန်ဖိုးရှိသည်။"
+msgstr "ဖြန့်ဝေခြင်း၏ အတွင်း တန်ဖိုးအတွက် နောက်ဆုံး တန်ဖိုးရှိသည်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.12.String.Text
 #, fuzzy
@@ -11632,7 +11634,7 @@ msgstr "၁_အချက်အလက်"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.3.String.Text
 #, fuzzy
 msgid  "The first record array."
-msgstr "ပထမဆုံး မှတ်တမ်းအရေး(ရ်)"
+msgstr "ပထမဆုံး အရေး(ရ်)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.4.String.Text
 #, fuzzy
@@ -11642,7 +11644,7 @@ msgstr "၂_အချက်အလက်"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.5.String.Text
 #, fuzzy
 msgid  "The second record array."
-msgstr "ဒုတိယ မှတ်တမ်းအရေး(ရ်)"
+msgstr "ဒုတိယ မှတ်တမ်း ဘုံအမည်တစ်ခုသုံး၍ ဆက်စပ်နေသော ဂဏန်းအစု။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.1.String.Text
 #, fuzzy
@@ -11657,7 +11659,7 @@ msgstr "၁_အချက်အလက်"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.3.String.Text
 #, fuzzy
 msgid  "The first record array."
-msgstr "ပထမဆုံး အရေး(ရ်)"
+msgstr "ပထမဆုံး မှတ်တမ်း အရေး(ရ်)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.4.String.Text
 #, fuzzy
@@ -11667,7 +11669,7 @@ msgstr "၂_အချက်အလက်"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.5.String.Text
 #, fuzzy
 msgid  "The second record array."
-msgstr "ဒုတိယ မှတ်တမ်း ဘုံအမည်တစ်ခုသုံး၍ ဆက်စပ်နေသော ဂဏန်းအစု။"
+msgstr "ဒုတိယ မှတ်တမ်း အရေး(ရ်)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.6.String.Text
 #, fuzzy
@@ -11793,22 +11795,22 @@ msgstr ""
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PEARSON.2.String.Text
 #, fuzzy
 msgid  "Data_1"
-msgstr "၁_အချက်အလက်များ"
+msgstr "၁_အချက်အလက်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PEARSON.3.String.Text
 #, fuzzy
 msgid  "The first record array."
-msgstr "ပထမဆုံး မှတ်တမ်း အရေး(ရ်)"
+msgstr "ပထမဆုံး မှတ်တမ်းအရေး(ရ်)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PEARSON.4.String.Text
 #, fuzzy
 msgid  "Data_2"
-msgstr "၂_အချက်အလက်များ"
+msgstr "၂_အချက်အလက်"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PEARSON.5.String.Text
 #, fuzzy
 msgid  "The second record array."
-msgstr "ဒုတိယ မှတ်တမ်း အရေး(ရ်)"
+msgstr "ဒုတိယ မှတ်တမ်းအရေး(ရ်)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CORREL.1.String.Text
 #, fuzzy
@@ -11823,7 +11825,7 @@ msgstr "၁_အချက်အလက်"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CORREL.3.String.Text
 #, fuzzy
 msgid  "The first record array."
-msgstr "ပထမဆုံး မှတ်တမ်းအရေး(ရ်)"
+msgstr "ပထမဆုံးမှတ်တမ်းအရေး(ရ်)"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CORREL.4.String.Text
 #, fuzzy
@@ -11958,7 +11960,7 @@ msgstr "ရည်ညွှန်းချက်"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AREAS.3.String.Text
 #, fuzzy
 msgid  "The reference to a (multiple) range."
-msgstr "(ပေါင်းစုံ) ကန့်သတ်နယ်ပယ်ထားခြင်း တစ်ခုသို့ ရည်ညွှန်းချက်။"
+msgstr "(ပေါင်းစုံ) ကန့်သတ်နယ်ပယ်တစ်ခုသို့ ရည်ညွှန်းချက်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHOSE.1.String.Text
 msgid  "Selects a value from a list of up to 30 value arguments."
@@ -12517,7 +12519,7 @@ msgstr "စာသား"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_JIS.3.String.Text
 #, fuzzy
 msgid  "The text to convert."
-msgstr "စာသားပြောင်းထားရန် ဖြစ်သည်။"
+msgstr "စာသားပြောင်းထားရန်ဖြစ်သည်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ASC.1.String.Text
 #, fuzzy
@@ -12583,7 +12585,7 @@ msgstr "နံပါတ်"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHAR.3.String.Text
 #, fuzzy
 msgid  "The code value for the character."
-msgstr "အက္ခရာများအတွက် လက္ခဏာ တန်ဖိုးရှိသည်။"
+msgstr "အက္ခရာ၊သင်္ကေတများအတွက် လက္ခဏာ တန်ဖိုးရှိသည်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CLEAN.1.String.Text
 #, fuzzy
@@ -13080,7 +13082,7 @@ msgstr "အခြေခံကိန်း"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BASE.5.String.Text
 #, fuzzy
 msgid  "The base number for conversion must be in the range 2 - 36."
-msgstr "၂ – ၃၆ ကန့်သတ်ထားခြင်းတွင် ပြောင်းလဲခြင်းအတွက် အခြေခံ နံပါတ် ရှိရမည်။"
+msgstr "၂ – ၃၆ ကန့်သတ်နယ်ပယ်တွင်ပြောင်းလဲခြင်းအတွက် အခြေခံ နံပါတ် ရှိရမည်။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BASE.6.String.Text
 #, fuzzy
@@ -13127,7 +13129,7 @@ msgstr "တန်ဖိုး"
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CONVERT.3.String.Text
 #, fuzzy
 msgid  "The value to be converted."
-msgstr "တန်ဖိုး ကူးပြောင်းရန် ဖြစ်သည်။"
+msgstr "တန်ဖိုးကို ကူးပြောင်းပေးပါ။"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CONVERT.4.String.Text
 #, fuzzy
@@ -13385,6 +13387,54 @@ msgstr ""
 msgid  "The number of characters for the text."
 msgstr ""
 
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.1.String.Text
+msgid  "Return the cosecant of an angle. CSC(x)=1/SIN(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.3.String.Text
+msgid  "The angle in radians for which the cosecant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.1.String.Text
+msgid  "Return the secant of an angle. SEC(x)=1/COS(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.3.String.Text
+msgid  "The angle in radians for which the secant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.1.String.Text
+msgid  "Return the hyperbolic cosecant of a hyperbolic angle. CSCH(x)=1/SINH(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.3.String.Text
+msgid  "The hyperbolic angle in radians for which the hyperbolic cosecant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.1.String.Text
+msgid  "Return the hyperbolic secant of a hyperbolic angle. SECH(x)=1/COSH(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.3.String.Text
+msgid  "The hyperbolic angle in radians for which the hyperbolic secant is to be calculated."
+msgstr ""
+
 #: source/ui/src/scstring.src#SCSTR_APPLICATION.String.Text
 #, fuzzy
 msgid  "%PRODUCTNAME Calc 6.0"
@@ -13428,7 +13478,7 @@ msgstr "StarCalc 3.0 ဖြန့်သော အလွှာချပ်"
 #: source/ui/src/scstring.src#SCSTR_SHORT_SCDOC_NAME.String.Text
 #, fuzzy
 msgid  "Spreadsheet"
-msgstr "ဖြန့်သော အလွှာချပ်"
+msgstr "ဖြန့်သောအလွှာချပ်"
 
 #: source/ui/src/scstring.src#SCSTR_HUMAN_SCDOC_NAME.String.Text
 #, fuzzy
@@ -14643,7 +14693,7 @@ msgstr ">="
 #: source/ui/src/optsolver.src#RID_SCDLG_OPTSOLVER.LB_OP1.Default.StringList.item
 #, fuzzy
 msgid  "Integer"
-msgstr "ကိန်း ပြည့်"
+msgstr "ကိန်းပြည့်"
 
 #: source/ui/src/optsolver.src#RID_SCDLG_OPTSOLVER.LB_OP2.Default.StringList.item
 #, fuzzy
@@ -14718,7 +14768,7 @@ msgstr "~နဂိုမူလစီစဉ်ဖွဲ့စည်းမှု�
 #: source/ui/src/popup.src#RID_POPUP_CELLS.FID_CELL_FORMAT.MenuItem.Text
 #, fuzzy
 msgid  "~Format Cells..."
-msgstr "~ဆဲလ်အကွက်များစီစဉ်ဖွဲ့စည်းမှု..."
+msgstr "~ဆဲလ်အကွက်များ စီစဉ်ဖွဲ့စည်းမှုပုံစံ..."
 
 #: source/ui/src/popup.src#RID_POPUP_CELLS.FID_INS_CELL.MenuItem.Text
 #, fuzzy
@@ -15098,12 +15148,12 @@ msgstr "~နံပါတ်များ"
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.BTN_DELDATETIME.CheckBox.Text
 #, fuzzy
 msgid  "~Date & time"
-msgstr "⁠~ရက်စွဲနှင့်အချိန်"
+msgstr "~ရက်စွဲနှင့်အချိန်"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.BTN_DELFORMULAS.CheckBox.Text
 #, fuzzy
 msgid  "~Formulas"
-msgstr "⁠~ပုံသေနည်းများ"
+msgstr "~ပုံသေနည်းများ"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_DELCONT.BTN_DELATTRS.CheckBox.Text
 #, fuzzy
@@ -15761,12 +15811,12 @@ msgstr ""
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_1.Default.StringList.item
 #, fuzzy
 msgid  "Cell value is"
-msgstr "ဆဲလ်အကွက်တန်ဖိုးသည်"
+msgstr "အကွက်တန်ဖိုးသည်"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 #, fuzzy
 msgid  "equal to"
-msgstr "ညီမျှသော"
+msgstr "သို့ညီမျှသော"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND1_2.Default.StringList.item
 #, fuzzy
@@ -15806,7 +15856,7 @@ msgstr "အကွက်တန်ဖိုးသည်"
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
 #, fuzzy
 msgid  "equal to"
-msgstr "သို့ညီမျှသော"
+msgstr "ညီမျှသော"
 
 #: source/ui/src/condfrmt.src#RID_SCDLG_CONDFORMAT.LB_COND2_2.Default.StringList.item
 #, fuzzy

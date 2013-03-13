@@ -849,7 +849,7 @@ msgstr "စတိုင်လ်များအသုံးချသည်"
 
 #: source/ui/app/app.src#DLG_STYLE_DESIGNER.SFX_STYLE_FAMILY_PARA.SFXSTYLEBIT_USERDEF.FilterList.item
 msgid  "Custom Styles"
-msgstr "စိတ်ကြိုက် စတိုင်လ်များ"
+msgstr "စိတ်ကြိုက်စတိုင်လ်များ"
 
 #: source/ui/app/app.src#DLG_STYLE_DESIGNER.SFX_STYLE_FAMILY_PARA.SFXSTYLEBIT_AUTO.FilterList.item
 msgid  "Automatic"
@@ -1395,7 +1395,7 @@ msgstr "~ရွေးချယ်ပါ"
 #: source/ui/app/mn.src#MN_TAB2.MN_SUB_TBLROW.FN_TABLE_INSERT_ROW_DLG.MenuItem.Text
 #, fuzzy
 msgid  "~Insert..."
-msgstr "~ထည့်ပါ.."
+msgstr "~ထည့်ပါ..."
 
 #: source/ui/app/mn.src#MN_TAB2.MN_SUB_TBLROW.FN_TABLE_DELETE_ROW.MenuItem.Text
 #, fuzzy
@@ -1470,12 +1470,12 @@ msgstr "အနောက်သို့ ပို့ပါ"
 #: source/ui/app/mn.src#MN_DRAW5.MN_SUB_ARRANGE.MenuItem.Text
 #, fuzzy
 msgid  "~Arrange"
-msgstr "~စီစဉ်ထားသိုပါ"
+msgstr "⁠~စီစဉ်ထားသိုပါ"
 
 #: source/ui/app/mn.src#MN_DRAW6.MN_SUB_ARRANGE.MenuItem.Text
 #, fuzzy
 msgid  "~Arrange"
-msgstr "⁠~စီစဉ်ထားသိုပါ"
+msgstr "~စီစဉ်ထားသိုပါ"
 
 #: source/ui/app/mn.src#MN_ANNOTATIONS.FN_REPLY.MenuItem.Text
 #, fuzzy
@@ -1540,12 +1540,12 @@ msgstr "~စာသားများနယ်ပယ်တစ်ခုသို�
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_WRAP.MenuItem.Text
 #, fuzzy
 msgid  "~Page Wrap"
-msgstr "~စာမျက်နှာ စာသားများနယ်ပယ်တစ်ခုသို့ဝင်နေစေခြင်း"
+msgstr "~စာမျက်နှာရှိစာသားများနယ်ပယ်တစ်ခုသို့ဝင်နေစေခြင်း"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_WRAP_IDEAL.MenuItem.Text
 #, fuzzy
 msgid  "~Optimal Page Wrap"
-msgstr "~အသင့်ဆုံး စာမျက်နှာ စာသားများနယ်ပယ်တစ်ခုသို့ဝင်နေစေခြင်း"
+msgstr "~အသင့်ဆုံး စာမျက်နှာရိုက်စဉ် စာသားများနယ်ပယ်တစ်ခုသို့ဝင်နေစေခြင်း"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_FRAME_WRAPTHRU.MenuItem.Text
 #, fuzzy
@@ -4637,8 +4637,9 @@ msgid  "Start from ~existing document"
 msgstr "တည်ရှိနေသည့် မှတ်တမ်းမှတ်ရာမှ စတင်ပါ"
 
 #: source/ui/dbui/mmdocselectpage.src#DLG_MM_DOCSELECT_PAGE.PB_LOADDOC.PushButton.Text
+#, fuzzy
 msgid  "B~rowse..."
-msgstr "ဘလောက်ဇ်..."
+msgstr "ဘလောက်ဇ်. . "
 
 #: source/ui/dbui/mmdocselectpage.src#DLG_MM_DOCSELECT_PAGE.RB_LOADTEMPLATE.RadioButton.Text
 #, fuzzy
@@ -8095,7 +8096,7 @@ msgstr "နောက်ခံ"
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_2.1.TP_BORDER.PageItem.Text
 #, fuzzy
 msgid  "Borders"
-msgstr "နယ်နမိတ်များ"
+msgstr "နယ်နိမိတ်များ"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_2.1.TP_CONDCOLL.PageItem.Text
 #, fuzzy
@@ -8140,7 +8141,7 @@ msgstr "စာသား အကွက်ချသည်"
 #: source/ui/fmtui/tmpdlg.src#STR_PAGE_COLUMN.String.Text
 #, fuzzy
 msgid  "Columns"
-msgstr "ကော်လံအကန့်များ"
+msgstr "ကော်လံအကန့်္များ"
 
 #: source/ui/fmtui/tmpdlg.src#STR_PAGE_FOOTNOTE.String.Text
 #, fuzzy
@@ -8238,8 +8239,9 @@ msgid  "Options"
 msgstr "ရွေးပိုင်ခွင့်များ"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.1.TP_FRM_WRAP.PageItem.Text
+#, fuzzy
 msgid  "Wrap"
-msgstr "စာသားများနယ်ပယ်တစ်ခုတွင်းဝင်နေစေခြင်း"
+msgstr "စာသားများနယ်ပယ်တစ်ခုအတွင်းဝင်နေစေခြင်း"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.1.TP_FRM_URL.PageItem.Text
 #, fuzzy
@@ -9075,8 +9077,9 @@ msgid  "Position"
 msgstr "ရပ်တည်ချက်"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.STR_BEGINNING.String.Text
+#, fuzzy
 msgid  "Above"
-msgstr "အထက်တွင်"
+msgstr "အထက်"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.STR_END.String.Text
 #, fuzzy
@@ -9597,8 +9600,9 @@ msgid  "~New..."
 msgstr "~အသစ်..."
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.MB_AUTOMARK.MN_AUTOMARK_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "~Edit..."
-msgstr "⁠~တည်းဖြတ်ပါ..."
+msgstr "~တည်းဖြတ်ပါ..."
 
 #: source/ui/index/cnttab.src#TP_TOX_SELECT.MB_AUTOMARK.MenuItem.Text
 #, fuzzy
@@ -13824,24 +13828,29 @@ msgid  "WWW document"
 msgstr "WWW မှတ်တမ်းမှတ်ရာ"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM1.String.Text
+#, fuzzy
 msgid  "User-defined1"
-msgstr "အသုံးပြုသူ-သတ်မှတ်ချက်၁"
+msgstr "အသုံးပြုသူ-သတ်မှတ်ချက် ၁"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM2.String.Text
+#, fuzzy
 msgid  "User-defined2"
-msgstr "အသုံးပြုသူ-သတ်မှတ်ချက်၂"
+msgstr "အသုံးပြုသူ-သတ်မှတ်ချက် ၂"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM3.String.Text
+#, fuzzy
 msgid  "User-defined3"
-msgstr "အသုံးပြုသူ-သတ်မှတ်ချက်၃"
+msgstr "အသုံးပြုသူ-သတ်မှတ်ချက် ၃"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM4.String.Text
+#, fuzzy
 msgid  "User-defined4"
-msgstr "အသုံးပြုသူ-သတ်မှတ်ချက်၄"
+msgstr "အသုံးပြုသူ-သတ်မှတ်ချက် ၄"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM5.String.Text
+#, fuzzy
 msgid  "User-defined5"
-msgstr "အသုံးပြုသူ-သတ်မှတ်ချက်၅"
+msgstr "အသုံးပြုသူ-သတ်မှတ်ချက် ၅"
 
 #: source/ui/utlui/initui.src#STR_AUTH_FIELD_IDENTIFIER.String.Text
 #, fuzzy
@@ -14014,8 +14023,9 @@ msgid  "Navigator"
 msgstr "လှည့်လည် ကြည့်ရှုသည့်အရာ"
 
 #: source/ui/utlui/navipi.src#DLG_NAVIGATION_PI.TB_CONTENT.FN_GLOBAL_SWITCH.ToolBoxItem.Text
+#, fuzzy
 msgid  "Toggle"
-msgstr "အပြောင်းအလဲနှစ်ခုမှ တစ်ခုခုကို ရွေးချယ်ခြင်း"
+msgstr "အပြောင်းအလဲနှစ်ခုမှတစ်ခုခုကို ရွေးချယ်ခြင်း"
 
 #: source/ui/utlui/navipi.src#DLG_NAVIGATION_PI.TB_CONTENT.FN_CREATE_NAVIGATION.ToolBoxItem.Text
 #, fuzzy
@@ -14110,7 +14120,7 @@ msgstr "နောက်ဆုံးပေါ်အခြေအနေ"
 #: source/ui/utlui/navipi.src#DLG_NAVIGATION_PI.TB_GLOBAL.FN_GLOBAL_OPEN.ToolBoxItem.Text
 #, fuzzy
 msgid  "Insert"
-msgstr "ထည့်ပါ"
+msgstr "ထည့်သွင်းပါ"
 
 #: source/ui/utlui/navipi.src#DLG_NAVIGATION_PI.TB_GLOBAL.FN_GLOBAL_SAVE_CONTENT.ToolBoxItem.Text
 #, fuzzy
@@ -14829,7 +14839,7 @@ msgstr "အောက်ခြေမှတ်စု"
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_ENDNOTE.String.Text
 #, fuzzy
 msgid  "Endnote"
-msgstr "အဆုံးသတ်မှတ်စု"
+msgstr "အဆုံးသတ် မှတ်ချက်"
 
 #: source/ui/utlui/poolfmt.src#STR_POOLCOLL_LABEL.String.Text
 #, fuzzy

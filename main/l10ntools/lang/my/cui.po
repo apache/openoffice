@@ -1050,8 +1050,9 @@ msgid  "Mark Tree"
 msgstr ""
 
 #: source/dialogs/gallery.src#RID_SVXTABDLG_GALLERY.TabDialog.Text
+#, fuzzy
 msgid  "Properties of "
-msgstr "ဂုဏ်သတ္တိများ"
+msgstr "၏ ဂုဏ်သတ္တိများ"
 
 #: source/dialogs/gallery.src#RID_SVXTABDLG_GALLERY.1.RID_SVXTABPAGE_GALLERY_GENERAL.PageItem.Text
 #, fuzzy
@@ -1319,13 +1320,14 @@ msgid  "WWW Browser"
 msgstr "WWW အညွှန်း"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.BTN_TARGET.ImageButton.Text
+#, fuzzy
 msgid  "Target in Document"
-msgstr "Target in Document"
+msgstr "မှတ်တမ်းမှတ်ရာရှိ ပစ်မှတ်"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.BTN_TARGET.ImageButton.QuickHelpText
 #, fuzzy
 msgid  "Target in Document"
-msgstr "မှတ်တမ်းမှတ်ရာရှိ ပစ်မှတ်"
+msgstr "Target in Document"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.GRP_MORE.FixedLine.Text
 #, fuzzy
@@ -1358,13 +1360,14 @@ msgid  "N~ame"
 msgstr "အမည်"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.BTN_SCRIPT.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Events"
-msgstr "Events"
+msgstr "ဖြစ်ရပ်များ"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.BTN_SCRIPT.ButtonImage.Text
 #, fuzzy
 msgid  "Events"
-msgstr "Events"
+msgstr "ဖြစ်ရပ်များ"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.TabPage.Text
 #, fuzzy
@@ -1439,12 +1442,12 @@ msgstr "အမည်"
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.BTN_SCRIPT.ImageButton.QuickHelpText
 #, fuzzy
 msgid  "Events"
-msgstr "Events"
+msgstr "ဖြစ်ရပ်များ"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.BTN_SCRIPT.ButtonImage.Text
 #, fuzzy
 msgid  "Events"
-msgstr "Events"
+msgstr "ဖြစ်ရပ်များ"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.TabPage.Text
 #, fuzzy
@@ -1462,8 +1465,9 @@ msgid  "~Path"
 msgstr "လမ်းကြောင်း"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.BTN_FILEOPEN.ImageButton.QuickHelpText
+#, fuzzy
 msgid  "Open File"
-msgstr "Open File"
+msgstr "ဖိုင် ဖွင့်ပါ"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.BTN_FILEOPEN.ButtonImage.Text
 #, fuzzy
@@ -1533,12 +1537,12 @@ msgstr "အမည်"
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.BTN_SCRIPT.ImageButton.QuickHelpText
 #, fuzzy
 msgid  "Events"
-msgstr "ဖြစ်ရပ်များ"
+msgstr "Events"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_DOCUMENT.BTN_SCRIPT.ButtonImage.Text
 #, fuzzy
 msgid  "Events"
-msgstr "Events"
+msgstr "ဖြစ်ရပ်များ"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.TabPage.Text
 #, fuzzy
@@ -1573,7 +1577,7 @@ msgstr "ဖိုင်ပုံစံရိုက်ပါ"
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.BTN_CREATE.ImageButton.QuickHelpText
 #, fuzzy
 msgid  "Select Path"
-msgstr "Select Path"
+msgstr "လမ်းကြောင်း ရွေးချယ်ပါ"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.BTN_CREATE.ButtonImage.Text
 #, fuzzy
@@ -1613,7 +1617,7 @@ msgstr "အမည်"
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.BTN_SCRIPT.ImageButton.QuickHelpText
 #, fuzzy
 msgid  "Events"
-msgstr "ဖြစ်ရပ်များ"
+msgstr "Events"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_NEWDOCUMENT.BTN_SCRIPT.ButtonImage.Text
 #, fuzzy
@@ -2092,7 +2096,7 @@ msgid  "~Delete"
 msgstr "ဖျက်ပါ"
 
 #: source/dialogs/about.src#RID_DEFAULTABOUT.ModalDialog.Text
-msgid  "About %PRODUCTNAME"
+msgid  "About %FULLPRODUCTNAME"
 msgstr ""
 
 #: source/dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_BTN_README.PushButton.Text
@@ -3990,7 +3994,7 @@ msgstr "စာသားမှတ်တမ်းမှတ်ရာ"
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERTEXTGRID.FixedText.Text
 #, fuzzy
 msgid  "Grid"
-msgstr "ဂရစ်"
+msgstr "ဂရစ်အကွက်"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_WRITERFIELDSHADINGS.CheckBox.Text
 #, fuzzy
@@ -6022,7 +6026,7 @@ msgstr "အနောက်"
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.FT_EDIT_MODULES_NEWDICTSLINK.FixedText.Text
 #, fuzzy
 msgid  "~Get more dictionaries online..."
-msgstr "~နောက်ထပ်အဘိဓာန်များရရန် အွန်လိုင်း..."
+msgstr "~နောက်ထပ်အဘိဓာန်များရရန် အွန်လိုင်း.."
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.PB_OK.OKButton.Text
 #, fuzzy
@@ -6708,12 +6712,12 @@ msgstr "စတုရန်း"
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.FT_TRGR_CENTER_X.FixedText.Text
 #, fuzzy
 msgid  "Center ~X"
-msgstr "X ဗဟို"
+msgstr "ဗဟို X"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.FT_TRGR_CENTER_Y.FixedText.Text
 #, fuzzy
 msgid  "Center ~Y"
-msgstr "Y ဗဟို"
+msgstr "ဗဟို Y"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.FT_TRGR_ANGLE.FixedText.Text
 #, fuzzy
@@ -6928,7 +6932,7 @@ msgstr "~အထူးပြုခြင်း..."
 #: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.BTN_DELETE.PushButton.Text
 #, fuzzy
 msgid  "~Delete..."
-msgstr "ဖျက်ပါ..."
+msgstr "~ဖျက်ပါ..."
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.BTN_LOAD.ImageButton.QuickHelpText
 #, fuzzy
@@ -6988,7 +6992,7 @@ msgstr "~တင်ပို့ပါ..."
 #: source/tabpages/tabarea.src#RID_SVXPAGE_BITMAP.BTN_DELETE.PushButton.Text
 #, fuzzy
 msgid  "~Delete..."
-msgstr "~ဖျက်ပါ..."
+msgstr "ဖျက်ပါ..."
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_BITMAP.BTN_LOAD.ImageButton.QuickHelpText
 #, fuzzy
@@ -8586,8 +8590,9 @@ msgid  "Localized Options"
 msgstr "သီးခြားရွေးပိုင်ခွင့်များ"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_AUTOCOMPLETE_OPTIONS.PageItem.Text
+#, fuzzy
 msgid  "Word Completion"
-msgstr "စာလုံးပြည့်စုံမှု"
+msgstr "စကားလုံးအပြီးသတ်ခြင်း"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_SMARTTAG_OPTIONS.PageItem.Text
 #, fuzzy
@@ -10444,7 +10449,7 @@ msgstr "~ဖောင့်"
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_STYLE.FixedText.Text
 #, fuzzy
 msgid  "~Typeface"
-msgstr "စာလုံး မျက်နှာ"
+msgstr "~စာလုံး မျက်နှာ"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_WEST_STYLE_NOCJK.FixedText.Text
 #, fuzzy
@@ -10704,7 +10709,7 @@ msgstr "အစက်"
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDOTTED.StringList.item
 #, fuzzy
 msgid  "Dotted (Bold)"
-msgstr "အစက် (စာလုံးမဲ)"
+msgstr "အစက်(စာလုံးမဲ)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DASH.StringList.item
 #, fuzzy
@@ -10719,12 +10724,12 @@ msgstr "မျဉ်းရှည်(စာလုံးမဲ)"
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_LONGDASH.StringList.item
 #, fuzzy
 msgid  "Long Dash"
-msgstr "မျဉ်းရှည်"
+msgstr "မျဉ်းရှည်ရှည်"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDLONGDASH.StringList.item
 #, fuzzy
 msgid  "Long Dash (Bold)"
-msgstr "မျဉ်းရှည် (စာလုံးမဲ)"
+msgstr "မျဉ်းရှည်ရှည်(စာလုံးမဲ)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DASHDOT.StringList.item
 #, fuzzy
@@ -10734,7 +10739,7 @@ msgstr "အစက် မျဉ်းရှည်"
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDASHDOT.StringList.item
 #, fuzzy
 msgid  "Dot Dash (Bold)"
-msgstr "အစက် မျဉ်းရှည် (စာလုံးမဲ)"
+msgstr "အစက် မျဉ်းရှည်(စာလုံးမဲ)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DASHDOTDOT.StringList.item
 #, fuzzy
@@ -10934,7 +10939,7 @@ msgstr "ဥပမာ"
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_CAPITALS.String.Text
 #, fuzzy
 msgid  "Capitals"
-msgstr "စာလုံးအကြီး"
+msgstr "စာလုံးကြီးများ"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.STR_EFFECTS_LOWERCASE.String.Text
 #, fuzzy

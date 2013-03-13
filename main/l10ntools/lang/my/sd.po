@@ -1341,7 +1341,7 @@ msgstr "⁠~ကူးယူပြန်ထည့်ပါ"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_DELETE_POSTIT.MenuItem.Text
 msgid  "~Delete Comment"
-msgstr "ထင်မြင်သုံးသပ်ချက်များဖျက်ပါ"
+msgstr "ထင်မြင်သုံးသပ်ချက်ဖျက်ပါ"
 
 #: source/ui/annotations/annotations.src#RID_ANNOTATION_CONTEXTMENU.SID_DELETEALLBYAUTHOR_POSTIT.MenuItem.Text
 msgid  "Delete All Comments b~y %1"
@@ -3100,8 +3100,9 @@ msgid  "Position and Si~ze..."
 msgstr "ရပ်တည်ချက်နှင့် အရွယ်..."
 
 #: source/ui/app/menuids_tmpl.src#MN_EDIT_POINTS.SID_BEZIER_EDIT.MenuItem.Text
+#, fuzzy
 msgid  "Edit ~Points"
-msgstr "အစက်အပြောက်အမှတ်များ တည်းဖြတ်ပါ"
+msgstr "အမှတ်များ တည်းဖြတ်ပါ"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.MenuItem.Text
 #, fuzzy
@@ -3291,7 +3292,7 @@ msgstr "~အောက်ခြေ"
 #: source/ui/app/menuids_tmpl.src#MN_CLOSE_OBJECT.SID_OBJECT_CLOSE.MenuItem.Text
 #, fuzzy
 msgid  "Close ~Object"
-msgstr "အရာဝတ္ထု ပိတ်ပါ"
+msgstr "အရာဝတ္ထုပိတ်ပါ"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_EDIT.MenuItem.Text
 #, fuzzy
@@ -3826,7 +3827,7 @@ msgstr "~ရွေးချယ်ပါ"
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_INSERT_ROW_DLG.MenuItem.Text
 #, fuzzy
 msgid  "~Insert..."
-msgstr "~ထည့်သွင်းပါ. . . "
+msgstr "~ထည့်သွင်းပါ"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DELETE_ROW.MenuItem.Text
 #, fuzzy
@@ -3876,7 +3877,7 @@ msgstr "~ရုပ်ပုံ ဆလိုက် အားလုံးကို
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_SELECTED_SLIDES.MenuItem.Text
 #, fuzzy
 msgid  "Apply to ~Selected Slides"
-msgstr "ရွေးချယ်ထားသည့် ရုပ်ပုံဆလိုက်များကိုလက်တွေ့ အသုံးချပါ"
+msgstr "ရွေးချယ်ထားသည့် ရုပ်ပုံ ဆလိုက်များကို လက်တွေ့ အသုံးချပါ"
 
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_SHOW_LARGE_PREVIEW.MenuItem.Text
 #, fuzzy
@@ -4871,7 +4872,7 @@ msgstr "~နောက်ထပ် >>"
 #: source/ui/dlg/dlgass.src#DLG_ASS.BUT_FINISH.OKButton.Text
 #, fuzzy
 msgid  "~Create"
-msgstr "~ဖန်တီးပါ"
+msgstr "ဖန်တီးပါ"
 
 #: source/ui/dlg/dlgass.src#DLG_ASS.STR_OPEN.String.Text
 #, fuzzy
@@ -6229,8 +6230,9 @@ msgid  "Duplicate Slide"
 msgstr ""
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.Control.Text
+#, fuzzy
 msgid  "Table Design"
-msgstr "ဇယား ဒီဇိုင်း"
+msgstr "ဇယားပုံစံ"
 
 #: source/ui/table/TableDesignPane.src#DLG_TABLEDESIGNPANE.FL_STYLE_OPTIONS+1.FixedLine.Text
 #, fuzzy
@@ -6523,8 +6525,9 @@ msgid  "~Slides"
 msgstr "⁠~အနားများ"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_IMPRESS_PRINT_UI_PAGE_RANGE_CHOICE.item3.ItemList.item
+#, fuzzy
 msgid  "Se~lection"
-msgstr "~လက်ရွေးစင်"
+msgstr "လက်ရွေးစင်"
 
 #: source/ui/view/DocumentRenderer.src#_STR_IMPRESS_PRINT_UI_OPTIONS._STR_DRAW_PRINT_UI_PAGE_RANGE_CHOICE.item1.ItemList.item
 #, fuzzy

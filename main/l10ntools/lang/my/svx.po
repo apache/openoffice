@@ -996,7 +996,7 @@ msgstr "တူညီသော မာတိကာ ဘယ် / ညာ"
 #: source/dialog/hdft.src#RID_SVXPAGE_HEADER.FT_DIST.FixedText.Text
 #, fuzzy
 msgid  "~Spacing"
-msgstr "နေရာလပ်"
+msgstr "လပ်နေသောနေရာ"
 
 #: source/dialog/hdft.src#RID_SVXPAGE_HEADER.CB_DYNSPACING.CheckBox.Text
 #, fuzzy
@@ -2129,7 +2129,7 @@ msgstr "နယ်နိမိတ် ရွေးနိုင်ခြင်း"
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.1.ItemList.item
 #, fuzzy
 msgid  "Left border line"
-msgstr "ဘယ်ဖက် နယ်နိမိတ်လိုင်း"
+msgstr "ဘယ်ဖက် နိယ်နမိတ်လိုင်း"
 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.2.ItemList.item
 #, fuzzy
@@ -2149,7 +2149,7 @@ msgstr "အောက်ခြေဖက် နယ်နိမိတ်လို�
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.5.ItemList.item
 #, fuzzy
 msgid  "Horizontal border line"
-msgstr "ရေပြင်ညီနယ်နိမိတ်လိုင်း"
+msgstr "ရေပြင်ညီ နယ်နိမိတ်လိုင်း"
 
 #: source/dialog/frmsel.src#RID_SVXSTR_BORDER_CONTROL.ARR_TEXTS.6.ItemList.item
 #, fuzzy
@@ -3245,7 +3245,7 @@ msgstr "မီးခိုးပြာရောင်"
 #: source/dialog/sdstring.src#RID_SVXSTR_ORANGE.String.Text
 #, fuzzy
 msgid  "Orange"
-msgstr "လိမ္မော်"
+msgstr "လိမ္မော်ရောင်"
 
 #: source/dialog/sdstring.src#RID_SVXSTR_ARROW.String.Text
 #, fuzzy
@@ -5242,7 +5242,7 @@ msgstr "လှည့်လည် ကြည့်ရှုခြင်း အထ�
 #: source/form/fmstring.src#RID_STR_FORM.String.Text
 #, fuzzy
 msgid  "Form"
-msgstr "လျှောက်လွှာပုံစံ"
+msgstr "ပုံစံ"
 
 #: source/form/fmstring.src#RID_RSC_TABWIN_PREFIX.1.String.Text
 #, fuzzy
@@ -5976,8 +5976,9 @@ msgid  "Add Item"
 msgstr "အချက် ပေါင်းထည့်ပါ"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD_ELEMENT.ToolBoxItem.Text
+#, fuzzy
 msgid  "Add Element"
-msgstr "ဂဏန်း(သို့)ဇယားကွက်တစ်ခုတွင်ပါသော အချက်အလက်ကြမ်းတစ်စု ပေါင်းထည့်ပါ"
+msgstr "ဂဏန်း(သို့) ဇယားကွက်တစ်ခုတွင်ပါသော အချက်အလက်ကြမ်း တစ်စု ပေါင်းထည့်ပါ"
 
 #: source/form/datanavi.src#RID_SVX_XFORMS_TABPAGES.TB_ITEMS.TBI_ITEM_ADD_ATTRIBUTE.ToolBoxItem.Text
 #, fuzzy
@@ -7208,8 +7209,9 @@ msgid  "Register-true"
 msgstr "မှန်ကန်သော - စာရင်းသွင်းခြင်း"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_BRUSH_CHAR.ItemList.item
+#, fuzzy
 msgid  "Character background"
-msgstr "အက္ခရာ အနောက်ခံ"
+msgstr "အက္ခရာ၊သင်္ကေတ နောက်ခံ"
 
 #: source/items/svxitems.src#RID_ATTR_NAMES.SID_ATTR_CHAR_CJK_FONT.ItemList.item
 #, fuzzy
@@ -8961,7 +8963,7 @@ msgstr "%1 ရွှေ့ပြောင်းပါ"
 #: source/svdraw/svdstr.src#STR_EditResize.String.Text
 #, fuzzy
 msgid  "Resize %1"
-msgstr " %1 အရွယ် ပြန်ပြင်ပါ"
+msgstr "%1 အရွယ် ပြန်ပြင်ပါ"
 
 #: source/svdraw/svdstr.src#STR_EditRotate.String.Text
 #, fuzzy
@@ -8986,7 +8988,7 @@ msgstr "ထောင့်ဖြတ်မျဉ်း %1 လှန်ပါ"
 #: source/svdraw/svdstr.src#STR_EditMirrorFree.String.Text
 #, fuzzy
 msgid  "Flip %1 freehand"
-msgstr "အလွတ်တန်း %1 လှန်ပါ"
+msgstr "လက်တန်း %1 လှန်ပါ"
 
 #: source/svdraw/svdstr.src#STR_EditShear.String.Text
 #, fuzzy
@@ -9241,7 +9243,7 @@ msgstr "%1 ရွှေ့ပြောင်းပါ"
 #: source/svdraw/svdstr.src#STR_DragMethResize.String.Text
 #, fuzzy
 msgid  "Resize %1"
-msgstr "%1 အရွယ် ပြန်ပြင်ပါ"
+msgstr " %1 အရွယ် ပြန်ပြင်ပါ"
 
 #: source/svdraw/svdstr.src#STR_DragMethRotate.String.Text
 #, fuzzy
@@ -9511,7 +9513,7 @@ msgstr "ဖွင့်"
 #: source/svdraw/svdstr.src#STR_ItemValOFF.String.Text
 #, fuzzy
 msgid  "off"
-msgstr "အပိတ်"
+msgstr "ပိတ်"
 
 #: source/svdraw/svdstr.src#STR_ItemValYES.String.Text
 #, fuzzy
@@ -10001,7 +10003,7 @@ msgstr "အဆင့်"
 #: source/svdraw/svdstr.src#STR_ItemNam_OBJECTNAME.String.Text
 #, fuzzy
 msgid  "Object name"
-msgstr "အရာဝတ္ထု အမည်"
+msgstr "အရာဝတ္ထုအမည်"
 
 #: source/svdraw/svdstr.src#STR_ItemNam_STARTANGLE.String.Text
 #, fuzzy
@@ -11679,8 +11681,9 @@ msgid  "Color Palette"
 msgstr ""
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_UNDO_ACTIONS.String.Text
+#, fuzzy
 msgid  "Actions to undo: $(ARG1)"
-msgstr "$(ARG1) လုပ်ဆောင်ချက် ပြန်ခေါ်ပါ "
+msgstr "$(ARG1) လုပ်ဆောင်ချက်များ ပြန်ခေါ်ပါ"
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_UNDO_ACTION.String.Text
 #, fuzzy
@@ -11688,8 +11691,9 @@ msgid  "Actions to undo: $(ARG1)"
 msgstr "$(ARG1) လုပ်ဆောင်ချက် ပြန်ခေါ်ပါ "
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_REDO_ACTIONS.String.Text
+#, fuzzy
 msgid  "Actions to redo: $(ARG1)"
-msgstr "$(ARG1) လုပ်ဆောင်ချက် ပျက်သွားခြင်း"
+msgstr "$(ARG1) လုပ်ဆောင်ချက်များ ပျက်သွားခြင်း"
 
 #: source/tbxctrls/lboxctrl.src#RID_SVXSTR_NUM_REDO_ACTION.String.Text
 #, fuzzy

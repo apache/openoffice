@@ -809,7 +809,7 @@ msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 0.String.Text
 msgid  "Query Wizard"
-msgstr "ဝဇ္ဇတ် ကွာရီ"
+msgstr "ဝဇ္ဇတ် မေးခွန်း"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 1.String.Text
 msgid  "Query"
@@ -825,7 +825,7 @@ msgstr "ဇယားများ"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 4.String.Text
 msgid  "A~vailable fields"
-msgstr "ရနိုင်သော နေရာကွက်များ"
+msgstr "ရနိုင်သော နေရာများ"
 
 #: source/formwizard/dbwizres.src#RID_DB_QUERY_WIZARD_START + 5.String.Text
 msgid  "Name ~of the query"
@@ -1548,9 +1548,8 @@ msgid  "Congratulations. You have entered all the information needed to create y
 msgstr ""
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 36.String.Text
-#, fuzzy
 msgid  "What do you want to do next?"
-msgstr "နောက် ဘာလုပ်ရန် ဆန္ဒရှိပါသလဲ?"
+msgstr "နောက် ဘာလုပ်ရန် ဆန္ဒရှိပါသလဲ။"
 
 #: source/formwizard/dbwizres.src#RID_DB_TABLE_WIZARD_START + 37.String.Text
 #, fuzzy
@@ -1668,8 +1667,9 @@ msgid  "~Include footer"
 msgstr "စာမျက်နှာအောက်တွင် ပါဝင်စေပါ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 10.String.Text
+#, fuzzy
 msgid  "~Return address in envelope window"
-msgstr "ဝင်းဒိုးစာအိတ်ရှိ ကွန်ယက်လိပ်စာ ပြန်လာစေပါ"
+msgstr "~ စာအိတ် ဝင်းဒိုး ရှိ အပြန်လိပ်စာ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 11.String.Text
 #, fuzzy
@@ -1712,8 +1712,9 @@ msgid  "~Footer"
 msgstr "စာမျက်နှာအောက်"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 19.String.Text
+#, fuzzy
 msgid  "~Use user data for return address"
-msgstr "~ အပြန် လိပ်စာ အတွက် အသုံးပြုသူ ၏ အချက်အလက်ကို သုံးပါ"
+msgstr "ပြန်လာသော ကွန်ယက်လိပ်စာအတွက် အသုံးပြုသူ အချက်အလက်များ သုံးပါ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 20.String.Text
 #, fuzzy
@@ -1721,12 +1722,14 @@ msgid  "~New sender address:"
 msgstr "~ အသစ် ပို့သူ လိပ်စာ -"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 21.String.Text
+#, fuzzy
 msgid  "Use placeholders for ~recipient's address"
-msgstr "လက်ခံသူ လိပ်စာ အတွက် ချန်လှပ်နေရာများ ကို သုံးပါ"
+msgstr "လက်ခံရရှိသူ၏ ကွန်ယက်လိပ်စာအတွက် ချန်လှပ်ထားသော နေရာများ သုံးပါ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 22.String.Text
+#, fuzzy
 msgid  "Use address database for ~mail merge"
-msgstr "အီးမေးလ် ပေါင်းစပ် မှုအတွက် လိပ်စာ ဒေတာဘေ့စ် ကို သုံးပါ"
+msgstr "ပေါင်းထားသော အီးမေးလ်အတွက် ဒေတာဘေ့ ကွန်ယက်လိပ်စာ သုံးပါ"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 23.String.Text
 #, fuzzy
@@ -1866,8 +1869,9 @@ msgid  "Template name:"
 msgstr "ပုံစံပြား အမည် -"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 51.String.Text
+#, fuzzy
 msgid  "Location and file name:"
-msgstr "နေရာ နှင့် ဖိုင် အမည် -"
+msgstr "နေရာနှင့် ဖိုင်အမည်-"
 
 #: source/formwizard/dbwizres.src#RID_LETTERWIZARDDIALOG_START + 52.String.Text
 #, fuzzy
@@ -2015,8 +2019,9 @@ msgid  "~Use user data for return address"
 msgstr "~ အပြန် လိပ်စာ အတွက် အသုံးပြုသူ ၏ အချက်အလက်ကို သုံးပါ"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 11.String.Text
+#, fuzzy
 msgid  "~New return address"
-msgstr "ပြန်လာသော ကွန်ယက်လိပ်စာအသစ်"
+msgstr "~ အပြန်လိပ်စာအသစ်"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 12.String.Text
 #, fuzzy
@@ -2088,12 +2093,12 @@ msgstr "ပုံစံပြား အမည်-"
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 26.String.Text
 #, fuzzy
 msgid  "Location and file name:"
-msgstr "နေရာနှင့် ဖိုင် အမည် -"
+msgstr "နေရာ နှင့် ဖိုင် အမည် -"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 27.String.Text
 #, fuzzy
 msgid  "What do you want to do next?"
-msgstr "နောက် ဘာလုပ်ရန် ဆန္ဒရှိပါသလဲ?"
+msgstr "နောက် ဘာလုပ်ရန် ဆန္ဒရှိပါသလဲ။"
 
 #: source/formwizard/dbwizres.src#RID_FAXWIZARDDIALOG_START + 28.String.Text
 #, fuzzy
@@ -3082,7 +3087,7 @@ msgstr "ဥက္ကဌ"
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +26.String.Text
 #, fuzzy
 msgid  "Minute keeper"
-msgstr "မိနစ်ထိန်းသူ"
+msgstr "မိနစ် ထိန်းသူ"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +27.String.Text
 #, fuzzy
@@ -3092,7 +3097,7 @@ msgstr "သဘာပတိ"
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +28.String.Text
 #, fuzzy
 msgid  "Attendees"
-msgstr "တက်ရောက်သော ပရိဿတ်များ"
+msgstr "တက်ရောက်သော ပရိသတ်များ"
 
 #: source/formwizard/dbwizres.src#RID_AGENDAWIZARDDIALOG_START +29.String.Text
 #, fuzzy
@@ -3678,8 +3683,9 @@ msgid  "Back"
 msgstr "နောက်သို့"
 
 #: source/schedule/schedule.src#dlgCalTitleOwnData.String.Text
+#, fuzzy
 msgid  "Personal Data"
-msgstr "ကိုယ်ရေးအချက်အလက်များ"
+msgstr "ကိုယ်ရေး အချက်အလက်များ"
 
 #: source/schedule/schedule.src#dlgSchdlTitle.String.Text
 #, fuzzy
