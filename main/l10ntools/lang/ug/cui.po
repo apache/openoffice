@@ -1856,7 +1856,8 @@ msgid  "~Delete"
 msgstr "ئۆچۈر(~D)"
 
 #: source/dialogs/about.src#RID_DEFAULTABOUT.ModalDialog.Text
-msgid  "About %PRODUCTNAME"
+#, fuzzy
+msgid  "About %FULLPRODUCTNAME"
 msgstr "%PRODUCTNAME ھەققىدە"
 
 #: source/dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_BTN_README.PushButton.Text
@@ -1888,598 +1889,747 @@ msgid  "is not available for spellchecking\nPlease check your installation and i
 msgstr ""
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.ModalDialog.Text
+#, fuzzy
 msgid  "Hyphenation"
 msgstr "سىزىقچە"
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.FT_WORD.FixedText.Text
+#, fuzzy
 msgid  "~Word"
 msgstr "سۆز(~W)"
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.BTN_HYPH_CUT.OKButton.Text
+#, fuzzy
 msgid  "H~yphenate"
 msgstr "سىزىقچە(~Y)"
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.BTN_HYPH_CONTINUE.PushButton.Text
+#, fuzzy
 msgid  "~Skip"
 msgstr "ئاتلا(~S)"
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.BTN_HYPH_DELETE.PushButton.Text
+#, fuzzy
 msgid  "~Remove"
 msgstr "چىقىرىۋەت(~R)"
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.BTN_HYPH_ALL.PushButton.Text
+#, fuzzy
 msgid  "Hyphenate ~All"
 msgstr "ھەممىسى سىزىقچە(~A)"
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.BTN_HYPH_CANCEL.CancelButton.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "ياپ(~C)"
 
 #: source/dialogs/tbxform.src#RID_SVX_DLG_INPUTRECORDNO.ModalDialog.Text
+#, fuzzy
 msgid  "Record Number"
 msgstr "خاتىرە تەرتىپ نومۇرى"
 
 #: source/dialogs/tbxform.src#RID_SVX_DLG_INPUTRECORDNO.1.FixedText.Text
+#, fuzzy
 msgid  "go to record"
 msgstr "خاتىرىگە يۆتكەل"
 
 #: source/dialogs/multipat.src#RID_SVXDLG_MULTIPATH.ModalDialog.Text
+#, fuzzy
 msgid  "Select Paths"
 msgstr "يول تاللا"
 
 #: source/dialogs/multipat.src#RID_SVXDLG_MULTIPATH.FL_MULTIPATH.FixedLine.Text
+#, fuzzy
 msgid  "Paths"
 msgstr "يول"
 
 #: source/dialogs/multipat.src#RID_SVXDLG_MULTIPATH.FT_RADIOBUTTON.FixedText.Text
+#, fuzzy
 msgid  "Mark the default path for new files."
 msgstr "يېڭى ھۆججەت يولىغا بەلگە سال."
 
 #: source/dialogs/multipat.src#RID_SVXDLG_MULTIPATH.BTN_ADD_MULTIPATH.PushButton.Text
+#, fuzzy
 msgid  "~Add..."
 msgstr "قوش(~A)…"
 
 #: source/dialogs/multipat.src#RID_SVXDLG_MULTIPATH.BTN_DEL_MULTIPATH.PushButton.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "ئۆچۈر(~D)"
 
 #: source/dialogs/multipat.src#RID_SVXDLG_MULTIPATH.STR_HEADER_PATHS.String.Text
+#, fuzzy
 msgid  "Path list"
 msgstr "يول تىزىملىكى"
 
 #: source/dialogs/multipat.src#RID_MULTIPATH_DBL_ERR.String.Text
+#, fuzzy
 msgid  "The path %1 already exists."
 msgstr "بۇ  %1 يول مەۋجۇد."
 
 #: source/dialogs/multipat.src#RID_SVXSTR_FILE_TITLE.String.Text
+#, fuzzy
 msgid  "Select files"
 msgstr "ھۆججەت تاللا"
 
 #: source/dialogs/multipat.src#RID_SVXSTR_FILE_HEADLINE.String.Text
+#, fuzzy
 msgid  "Files"
 msgstr "ھۆججەتلەر"
 
 #: source/dialogs/multipat.src#RID_SVXSTR_ARCHIVE_TITLE.String.Text
+#, fuzzy
 msgid  "Select Archives"
 msgstr "زاپاس ھۆججەت تاللا"
 
 #: source/dialogs/multipat.src#RID_SVXSTR_ARCHIVE_HEADLINE.String.Text
+#, fuzzy
 msgid  "Archives"
 msgstr "زاپاس ھۆججەت"
 
 #: source/dialogs/multipat.src#RID_SVXSTR_MULTIFILE_DBL_ERR.String.Text
+#, fuzzy
 msgid  "The file %1 already exists."
 msgstr "%1 ھۆججەت مەۋجۇد."
 
 #: source/dialogs/svuidlg.src#MD_PASTE_OBJECT.ModalDialog.Text
+#, fuzzy
 msgid  "Paste Special"
 msgstr "ئۆزگىچە چاپلا"
 
 #: source/dialogs/svuidlg.src#MD_PASTE_OBJECT.FT_SOURCE.FixedText.Text
+#, fuzzy
 msgid  "Source:"
 msgstr "مەنبە:"
 
 #: source/dialogs/svuidlg.src#MD_PASTE_OBJECT.RB_PASTE.RadioButton.Text
+#, fuzzy
 msgid  "~Insert as"
 msgstr "سۈپىتىدە قىستۇر(~I)"
 
 #: source/dialogs/svuidlg.src#MD_PASTE_OBJECT.RB_PASTE_LINK.RadioButton.Text
+#, fuzzy
 msgid  "Link to"
 msgstr "ئۇلا"
 
 #: source/dialogs/svuidlg.src#MD_PASTE_OBJECT.CB_DISPLAY_AS_ICON.CheckBox.Text
+#, fuzzy
 msgid  "~As icon"
 msgstr "سىنبەلگە سۈپىتىدە(~A)"
 
 #: source/dialogs/svuidlg.src#MD_PASTE_OBJECT.PB_CHANGE_ICON.PushButton.Text
+#, fuzzy
 msgid  "~Other Icon..."
 msgstr "باشقا سىنبەلگە(~O)…"
 
 #: source/dialogs/svuidlg.src#MD_PASTE_OBJECT.FL_CHOICE.FixedLine.Text
+#, fuzzy
 msgid  "Selection"
 msgstr "تاللا"
 
 #: source/dialogs/svuidlg.src#MD_PASTE_OBJECT.S_OBJECT.String.Text
+#, fuzzy
 msgid  "Object"
 msgstr "ئوبيېكت"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.ModalDialog.Text
+#, fuzzy
 msgid  "Edit Links"
 msgstr "ئۇلانما تەھرىر"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_FILES.FixedText.Text
+#, fuzzy
 msgid  "Source file"
 msgstr "مەنبە ھۆججەت"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_LINKS.FixedText.Text
+#, fuzzy
 msgid  "Element:"
 msgstr "ئېلېمېنت:"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_TYPE.FixedText.Text
+#, fuzzy
 msgid  "Type"
 msgstr "تىپى"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_STATUS.FixedText.Text
+#, fuzzy
 msgid  "Status"
 msgstr "ھالىتى"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.1.CancelButton.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "ياپ(~C)"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.PB_UPDATE_NOW.PushButton.Text
+#, fuzzy
 msgid  "~Update"
 msgstr "يېڭىلا(~U)"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.PB_OPEN_SOURCE.PushButton.Text
+#, fuzzy
 msgid  "~Open"
 msgstr "ئاچ(~O)"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.PB_CHANGE_SOURCE.PushButton.Text
+#, fuzzy
 msgid  "~Modify..."
 msgstr "ئۆزگەرت(~M)…"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.PB_BREAK_LINK.PushButton.Text
+#, fuzzy
 msgid  "~Break Link"
 msgstr "ئۇلانما ئۈز(~B)"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_FILES2.FixedText.Text
+#, fuzzy
 msgid  "Source file"
 msgstr "مەنبە ھۆججەت"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_SOURCE2.FixedText.Text
+#, fuzzy
 msgid  "Element:"
 msgstr "ئېلېمېنت:"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_TYPE2.FixedText.Text
+#, fuzzy
 msgid  "Type:"
 msgstr "تىپ:"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_UPDATE.FixedText.Text
+#, fuzzy
 msgid  "Update:"
 msgstr "يېڭىلا:"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.RB_AUTOMATIC.RadioButton.Text
+#, fuzzy
 msgid  "~Automatic"
 msgstr "ئاپتوماتىك(~A)"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.RB_MANUAL.RadioButton.Text
+#, fuzzy
 msgid  "Ma~nual"
 msgstr "قولدا(~N)"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_AUTOLINK.String.Text
+#, fuzzy
 msgid  "Automatic"
 msgstr "ئاپتوماتىك"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_MANUALLINK.String.Text
+#, fuzzy
 msgid  "Manual"
 msgstr "قولدا"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_BROKENLINK.String.Text
+#, fuzzy
 msgid  "Not available"
 msgstr "ئىشلەتكىلى بولمايدۇ"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_GRAPHICLINK.String.Text
+#, fuzzy
 msgid  "Graphic"
 msgstr "گرافىك"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_BUTTONCLOSE.String.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "ياپ(~C)"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_CLOSELINKMSG.String.Text
+#, fuzzy
 msgid  "Are you sure you want to remove the selected link?"
 msgstr "تاللىغان ئۇلانمىنى راستىنلا چىقىرىۋېتەمسىز؟"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_CLOSELINKMSG_MULTI.String.Text
+#, fuzzy
 msgid  "Are you sure you want to remove the selected link?"
 msgstr "تاللىغان ئۇلانمىنى راستىنلا چىقىرىۋېتەمسىز؟"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_WAITINGLINK.String.Text
+#, fuzzy
 msgid  "Waiting"
 msgstr "كۈتۈۋاتىدۇ"
 
 #: source/dialogs/svuidlg.src#MD_LINKEDIT.ModalDialog.Text
+#, fuzzy
 msgid  "Modify Link"
 msgstr "ئۇلانما ئۆزگەرت"
 
 #: source/dialogs/svuidlg.src#MD_LINKEDIT.2.FixedText.Text
+#, fuzzy
 msgid  "Exchange source:"
 msgstr "مەنبە ئالماشتۇر:"
 
 #: source/dialogs/svuidlg.src#MD_LINKEDIT.ED_FULL_SOURCE_NAME.Edit.Text
+#, fuzzy
 msgid  "Edit"
 msgstr "تەھرىر"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OLEOBJECT.RB_NEW_OBJECT.RadioButton.Text
+#, fuzzy
 msgid  "~Create new"
 msgstr "يېڭىدىن قۇر(~C)"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OLEOBJECT.RB_OBJECT_FROMFILE.RadioButton.Text
+#, fuzzy
 msgid  "Create from ~file"
 msgstr "ھۆججەتتىن قۇر(~F)"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OLEOBJECT.BTN_FILEPATH.PushButton.Text
+#, fuzzy
 msgid  "~Search..."
 msgstr "ئىزدە(~S)…"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OLEOBJECT.CB_FILELINK.CheckBox.Text
+#, fuzzy
 msgid  "~Link to file"
 msgstr "ھۆججەتكە ئۇلا(~L)"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OLEOBJECT.GB_OBJECT.FixedLine.Text
+#, fuzzy
 msgid  "Object type"
 msgstr "ئوبيېكت تىپى"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OLEOBJECT.STR_FILE.String.Text
+#, fuzzy
 msgid  "File"
 msgstr "ھۆججەت"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OLEOBJECT.String.Text
+#, fuzzy
 msgid  "Insert OLE Object"
 msgstr "OLE ئوبيېكت قىستۇر"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_PLUGIN.BTN_FILEURL.PushButton.Text
+#, fuzzy
 msgid  "~Browse..."
 msgstr "كۆز يۈگۈرت(~B)…"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_PLUGIN.GB_FILEURL.FixedLine.Text
+#, fuzzy
 msgid  "File / URL"
 msgstr "ھۆججەت/URL"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_PLUGIN.GB_PLUGINS_OPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Options"
 msgstr "تاللانما"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_PLUGIN.HelpButton.Text
+#, fuzzy
 msgid  "Insert Plug-in"
 msgstr "قىستۇرما دېتال قىستۇر"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_APPLET.FT_CLASSFILE.FixedText.Text
+#, fuzzy
 msgid  "~Class"
 msgstr "تىپ(~C)"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_APPLET.FT_CLASSLOCATION.FixedText.Text
+#, fuzzy
 msgid  "Class ~Location"
 msgstr "تىپ ئورنى(~L)"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_APPLET.BTN_CLASS.PushButton.Text
+#, fuzzy
 msgid  "~Search..."
 msgstr "ئىزدە(~S)…"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_APPLET.GB_CLASS.FixedLine.Text
+#, fuzzy
 msgid  "File"
 msgstr "ھۆججەت"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_APPLET.GB_APPLET_OPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Options"
 msgstr "تاللانما"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_APPLET.HelpButton.Text
+#, fuzzy
 msgid  "Insert Applet"
 msgstr "Applet قىستۇر"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.ModalDialog.Text
+#, fuzzy
 msgid  "Floating Frame Properties"
 msgstr "لەيلىما رامكا خاسلىقى"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.FT_FRAMENAME.FixedText.Text
+#, fuzzy
 msgid  "~Name"
 msgstr "ئاتى(~N):"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.FT_URL.FixedText.Text
+#, fuzzy
 msgid  "~Contents"
 msgstr "مەزمۇنى(~C)"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.RB_SCROLLINGON.RadioButton.Text
+#, fuzzy
 msgid  "~On"
 msgstr "ئاچ(~O)"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.RB_SCROLLINGOFF.RadioButton.Text
+#, fuzzy
 msgid  "O~ff"
 msgstr "ياپ(~F)"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.RB_SCROLLINGAUTO.RadioButton.Text
+#, fuzzy
 msgid  "Au~tomatic"
 msgstr "ئاپتوماتىك(~T)"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.GB_SCROLLING.FixedLine.Text
+#, fuzzy
 msgid  "Scroll bar"
 msgstr "دومىلىما سۈرگۈچ"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.RB_FRMBORDER_ON.RadioButton.Text
+#, fuzzy
 msgid  "On"
 msgstr "قوزغات"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.RB_FRMBORDER_OFF.RadioButton.Text
+#, fuzzy
 msgid  "Off"
 msgstr "چەكلە"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.GB_BORDER.FixedLine.Text
+#, fuzzy
 msgid  "Border"
 msgstr "يان رامكا"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.FT_MARGINWIDTH.FixedText.Text
+#, fuzzy
 msgid  "~Width"
 msgstr "كەڭلىك(~W)"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.CB_MARGINWIDTHDEFAULT.CheckBox.Text
+#, fuzzy
 msgid  "~Default"
 msgstr "كۆڭۈلدىكى(~D)"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.FT_MARGINHEIGHT.FixedText.Text
+#, fuzzy
 msgid  "H~eight"
 msgstr "ئېگىزلىك(~E)"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.CB_MARGINHEIGHTDEFAULT.CheckBox.Text
+#, fuzzy
 msgid  "Defa~ult"
 msgstr "كۆڭۈلدىكى(~U)"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.GB_MARGIN.FixedLine.Text
+#, fuzzy
 msgid  "Spacing to contents"
 msgstr "مەزمۇنغىچە بولغان ئارىلىق"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.String.Text
+#, fuzzy
 msgid  "Select File for Floating Frame"
 msgstr "لەيلىمە رامكىغا ھۆججەت تاللا"
 
 #: source/dialogs/svuidlg.src#STR_EDIT_APPLET.String.Text
+#, fuzzy
 msgid  "Edit Applet"
 msgstr "Applet تەھرىر"
 
 #: source/dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.TabDialog.Text
+#, fuzzy
 msgid  "Format Cells"
 msgstr "كاتەكچە فورماتى"
 
 #: source/dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_CHAR_NAME.PageItem.Text
+#, fuzzy
 msgid  "Font"
 msgstr "خەت نۇسخا"
 
 #: source/dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_CHAR_EFFECTS.PageItem.Text
+#, fuzzy
 msgid  "Font Effects"
 msgstr "خەت نۇسخا ئۈنۈمى"
 
 #: source/dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_BORDER.PageItem.Text
+#, fuzzy
 msgid  "Borders"
 msgstr "يان رامكا"
 
 #: source/dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_AREA.PageItem.Text
+#, fuzzy
 msgid  "Background"
 msgstr "تەگلىك"
 
 #: source/dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.PushButton.Text
+#, fuzzy
 msgid  "Return"
 msgstr "Return"
 
 #: source/dialogs/splitcelldlg.src#RID_SVX_SPLITCELLDLG.ModalDialog.Text
+#, fuzzy
 msgid  "Split Cells"
 msgstr "كاتەكچە پارچىلا"
 
 #: source/dialogs/splitcelldlg.src#RID_SVX_SPLITCELLDLG.FT_COUNT.FixedText.Text
+#, fuzzy
 msgid  "~Split cell into"
 msgstr "كاتەكچىنى پارچىلا(~S)"
 
 #: source/dialogs/splitcelldlg.src#RID_SVX_SPLITCELLDLG.FL_COUNT.FixedLine.Text
+#, fuzzy
 msgid  "Split"
 msgstr "پارچىلا"
 
 #: source/dialogs/splitcelldlg.src#RID_SVX_SPLITCELLDLG.RB_HORZ.ImageRadioButton.Text
+#, fuzzy
 msgid  "H~orizontally"
 msgstr "توغرىسىغا(~O)"
 
 #: source/dialogs/splitcelldlg.src#RID_SVX_SPLITCELLDLG.CB_PROP.CheckBox.Text
+#, fuzzy
 msgid  "~Into equal proportions"
 msgstr "تەڭ نىسبەت(~I)"
 
 #: source/dialogs/splitcelldlg.src#RID_SVX_SPLITCELLDLG.RB_VERT.ImageRadioButton.Text
+#, fuzzy
 msgid  "~Vertically"
 msgstr "بويىغا(~V)"
 
 #: source/dialogs/splitcelldlg.src#RID_SVX_SPLITCELLDLG.FL_DIR.FixedLine.Text
+#, fuzzy
 msgid  "Direction"
 msgstr "يۆنىلىش"
 
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.ModalDialog.Text
+#, fuzzy
 msgid  "Note"
 msgstr "ئىزاھ"
 
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.FT_LASTEDITLABEL.FixedText.Text
+#, fuzzy
 msgid  "Author"
 msgstr "يازغۇچى"
 
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.FT_EDIT.FixedText.Text
+#, fuzzy
 msgid  "~Text"
 msgstr "تېكست(~T)"
 
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.FL_POSTIT.FixedLine.Text
+#, fuzzy
 msgid  "Contents"
 msgstr "مەزمۇنلار"
 
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.FT_AUTHOR.FixedText.Text
+#, fuzzy
 msgid  "~Insert"
 msgstr "قىستۇر(~I)"
 
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.BTN_AUTHOR.PushButton.Text
+#, fuzzy
 msgid  "Author"
 msgstr "يازغۇچى"
 
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.STR_NOTIZ_EDIT.String.Text
+#, fuzzy
 msgid  "Edit Note"
 msgstr "ئىزاھ تەھرىر"
 
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.STR_NOTIZ_INSERT.String.Text
+#, fuzzy
 msgid  "Insert note"
 msgstr "ئىزاھ قىستۇر"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.TabDialog.Text
+#, fuzzy
 msgid  "Text Format"
 msgstr "تېكست فورماتى"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_CHAR_NAME.PageItem.Text
+#, fuzzy
 msgid  "Font"
 msgstr "خەت نۇسخا"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_CHAR_EFFECTS.PageItem.Text
+#, fuzzy
 msgid  "Font Effects"
 msgstr "خەت نۇسخا ئۈنۈمى"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_CHAR_POSITION.PageItem.Text
+#, fuzzy
 msgid  "Position"
 msgstr "ئورنى"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_CHAR_TWOLINES.PageItem.Text
+#, fuzzy
 msgid  "Asian Layout"
 msgstr "شەرقى ئاسىيا ئۇسلۇبى"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_STD_PARAGRAPH.PageItem.Text
+#, fuzzy
 msgid  "Indents & Spacing"
 msgstr "تارايت & ئارىلىق"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PageItem.Text
+#, fuzzy
 msgid  "Alignment"
 msgstr "توغرىلا"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_EXT_PARAGRAPH.PageItem.Text
+#, fuzzy
 msgid  "Text Flow"
 msgstr "قۇر ئالماش ۋە بەتكە بۆل"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_PARA_ASIAN.PageItem.Text
+#, fuzzy
 msgid  "Asian Typography"
 msgstr "شەرقى ئاسىيا خېتى"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_BACKGROUND.PageItem.Text
+#, fuzzy
 msgid  "Background"
 msgstr "تەگلىك"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHATTR.ModalDialog.Text
+#, fuzzy
 msgid  "Attributes"
 msgstr "خاسلىق"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHATTR.FL_ATTR.FixedText.Text
+#, fuzzy
 msgid  "~Options"
 msgstr "تاللانما(~O)"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.ModalDialog.Text
+#, fuzzy
 msgid  "Similarity Search"
 msgstr "ئوخشاشنى ئىزدە"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.FT_OTHER.FixedText.Text
+#, fuzzy
 msgid  "~Exchange characters"
 msgstr "ھەرپ ئالماشتۇر(~E)"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.FT_LONGER.FixedText.Text
+#, fuzzy
 msgid  "~Add characters"
 msgstr "ھەرپ قوش(~A)"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.FT_SHORTER.FixedText.Text
+#, fuzzy
 msgid  "~Remove characters"
 msgstr "ھەرپ چىقىرىۋەت(~R)"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.CB_RELAX.CheckBox.Text
+#, fuzzy
 msgid  "~Combine"
 msgstr "بىرلەشتۈر(~C)"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.FL_SIMILARITY.FixedLine.Text
+#, fuzzy
 msgid  "Settings"
 msgstr "تەڭشەكلەر"
 
 #: source/dialogs/insrc.src#DLG_INS_ROW_COL.ModalDialog.Text
+#, fuzzy
 msgid  "Insert"
 msgstr "قىستۇر"
 
 #: source/dialogs/insrc.src#DLG_INS_ROW_COL.CB_POS_BEFORE.RadioButton.Text
+#, fuzzy
 msgid  "~Before"
 msgstr "ئاۋۋال(~B)"
 
 #: source/dialogs/insrc.src#DLG_INS_ROW_COL.CB_POS_AFTER.RadioButton.Text
+#, fuzzy
 msgid  "A~fter"
 msgstr "داۋامى(~F)"
 
 #: source/dialogs/insrc.src#DLG_INS_ROW_COL.FL_INS.FixedLine.Text
+#, fuzzy
 msgid  "Insert"
 msgstr "قىستۇر"
 
 #: source/dialogs/insrc.src#DLG_INS_ROW_COL.FL_POS.FixedLine.Text
+#, fuzzy
 msgid  "Position"
 msgstr "ئورنى"
 
 #: source/dialogs/insrc.src#DLG_INS_ROW_COL.FT_COUNT.FixedText.Text
+#, fuzzy
 msgid  "~Number"
 msgstr "تەرتىپ نومۇر(~N)"
 
 #: source/dialogs/insrc.src#DLG_INS_ROW_COL.STR_ROW.String.Text
+#, fuzzy
 msgid  " Rows"
 msgstr " قۇرلار"
 
 #: source/dialogs/insrc.src#DLG_INS_ROW_COL.STR_COL.String.Text
+#, fuzzy
 msgid  " Columns"
 msgstr " ستونلار"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_NAME.ModalDialog.Text
+#, fuzzy
 msgid  "Name"
 msgstr "ئاتى"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_OBJECT_NAME.ModalDialog.Text
+#, fuzzy
 msgid  "Name"
 msgstr "ئاتى"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_OBJECT_NAME.NTD_FT_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Name"
 msgstr "ئاتى(~N):"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_OBJECT_TITLE_DESC.ModalDialog.Text
+#, fuzzy
 msgid  "Description"
 msgstr "چۈشەندۈرۈلۈشى"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_OBJECT_TITLE_DESC.NTD_FT_TITLE.FixedText.Text
+#, fuzzy
 msgid  "~Title"
 msgstr "ماۋزۇ(~T)"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_OBJECT_TITLE_DESC.NTD_FT_DESC.FixedText.Text
+#, fuzzy
 msgid  "~Description"
 msgstr "چۈشەندۈرۈش(~D)"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.ModalDialog.Text
+#, fuzzy
 msgid  "Properties"
 msgstr "خاسلىق"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_URL1.FixedText.Text
+#, fuzzy
 msgid  "~URL"
 msgstr "URL(~U)"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_TARGET.FixedText.Text
+#, fuzzy
 msgid  "F~rame"
 msgstr "كاندۇك(~R)"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Name"
 msgstr "ئاتى(~N):"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_URLDESCRIPTION.FixedText.Text
+#, fuzzy
 msgid  "Alternative ~text"
 msgstr "تاللاشچان تېكست(~T)"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_DESCRIPTION.FixedText.Text
+#, fuzzy
 msgid  "~Description"
 msgstr "چۈشەندۈرۈش(~D)"
 
@@ -2548,50 +2698,62 @@ msgid  "~Key"
 msgstr ""
 
 #: source/dialogs/iconcdlg.src#RID_SVXSTR_ICONCHOICEDLG_RESETBUT.String.Text
+#, fuzzy
 msgid  "~Back"
 msgstr "كەينى(~B)"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.ModalDialog.Text
+#, fuzzy
 msgid  "Zoom & View Layout"
 msgstr "كۆرسىتىش نىسبىتى & كۆرۈنۈش ئۇسلۇبى"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.FL_ZOOM.FixedLine.Text
+#, fuzzy
 msgid  "Zoom factor"
 msgstr "كۆرسىتىش نىسبىتى"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.BTN_OPTIMAL.RadioButton.Text
+#, fuzzy
 msgid  "~Optimal"
 msgstr "ئەڭ ئەلا(~O)"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.BTN_WHOLE_PAGE.RadioButton.Text
+#, fuzzy
 msgid  "~Fit width and height"
 msgstr "كەڭلىك ئېگىزلىككە ماسلاش(~F)"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.BTN_PAGE_WIDTH.RadioButton.Text
+#, fuzzy
 msgid  "Fit ~width"
 msgstr "كەڭلىككە ماسلاش(~W)"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.BTN_USER.RadioButton.Text
+#, fuzzy
 msgid  "~Variable"
 msgstr "ئۆزگىرىشچان(~V)"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.FL_VIEWLAYOUT.FixedLine.Text
+#, fuzzy
 msgid  "View layout"
 msgstr "كۆرۈنۈش ئۇسلۇبى"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.BTN_AUTOMATIC.RadioButton.Text
+#, fuzzy
 msgid  "~Automatic"
 msgstr "ئاپتوماتىك(~A)"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.BTN_SINGLE.RadioButton.Text
+#, fuzzy
 msgid  "~Single page"
 msgstr "يەككە بەت(~S)"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.BTN_COLUMNS.RadioButton.Text
+#, fuzzy
 msgid  "~Columns"
 msgstr "ستونلار(~C)"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.CHK_BOOK.CheckBox.Text
+#, fuzzy
 msgid  "~Book mode"
 msgstr "كىتاب شەكلى(~B)"
 
@@ -2600,322 +2762,402 @@ msgid  "The following columns are currently hidden. Please mark the fields you w
 msgstr ""
 
 #: source/dialogs/showcols.src#RID_SVX_DLG_SHOWGRIDCOLUMNS.CancelButton.Text
+#, fuzzy
 msgid  "Show columns"
 msgstr "ستون كۆرسەت"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.ModalDialog.Text
+#, fuzzy
 msgid  "Record Search"
 msgstr "خاتىرە ئىزدە"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_SEARCHFOR.FixedLine.Text
+#, fuzzy
 msgid  "Search for"
 msgstr "مەزمۇن ئىزدە"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_SEARCHFORTEXT.RadioButton.Text
+#, fuzzy
 msgid  "~Text"
 msgstr "تېكست(~T)"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_SEARCHFORNULL.RadioButton.Text
+#, fuzzy
 msgid  "Field content is ~NULL"
 msgstr "سۆز بۆلەك مەزمۇنى NULL(~N)"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_SEARCHFORNOTNULL.RadioButton.Text
+#, fuzzy
 msgid  "Field content is not NU~LL"
 msgstr "سۆز بۆلەك مەزمۇنى NULL(~L)"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_WHERE.FixedLine.Text
+#, fuzzy
 msgid  "Where to search"
 msgstr "رايون"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FT_FORM.FixedText.Text
+#, fuzzy
 msgid  "Form"
 msgstr "كۆزنەك"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_ALLFIELDS.RadioButton.Text
+#, fuzzy
 msgid  "All Fields"
 msgstr "ھەممە سۆز بۆلىكى"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_SINGLEFIELD.RadioButton.Text
+#, fuzzy
 msgid  "Single field"
 msgstr "يەككە سۆز بۆلىكى"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_OPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Settings"
 msgstr "تەڭشەكلەر"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FT_POSITION.FixedText.Text
+#, fuzzy
 msgid  "Position"
 msgstr "ئورنى"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_USEFORMATTER.CheckBox.Text
+#, fuzzy
 msgid  "Apply field format"
 msgstr "سۆز بۆلەك فورماتىغا قوشۇل"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_CASE.CheckBox.Text
+#, fuzzy
 msgid  "Match case"
 msgstr "دەل ماسلاش"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_BACKWARD.CheckBox.Text
+#, fuzzy
 msgid  "Search backwards"
 msgstr "ئارقىغا ئىزدە"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_STARTOVER.CheckBox.Text
+#, fuzzy
 msgid  "From Beginning"
 msgstr "باشلىنىشتىن"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_WILDCARD.CheckBox.Text
+#, fuzzy
 msgid  "Wildcard expression"
 msgstr "ئورتاق بەلگە ئىپادە"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_REGULAR.CheckBox.Text
+#, fuzzy
 msgid  "Regular expression"
 msgstr "مۇنتىزىم ئىپادە"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_APPROX.CheckBox.Text
+#, fuzzy
 msgid  "Similarity Search"
 msgstr "ئوخشاشنى ئىزدە"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_APPROXSETTINGS.PushButton.Text
+#, fuzzy
 msgid  "..."
 msgstr "…"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_HALFFULLFORMS.CheckBox.Text
+#, fuzzy
 msgid  "Match character width"
 msgstr "پۈتكۈل ھەرپ كەڭلىكىگە ماسلاش"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_SOUNDSLIKECJK.CheckBox.Text
+#, fuzzy
 msgid  "Sounds like (Japanese)"
 msgstr "ئوخشىشىدىغان ھەرپ (ياپونچە)"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_SOUNDSLIKESETTINGS.PushButton.Text
+#, fuzzy
 msgid  "..."
 msgstr "…"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_STATE.FixedLine.Text
+#, fuzzy
 msgid  "State"
 msgstr "ھالەت"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FT_RECORDLABEL.FixedText.Text
+#, fuzzy
 msgid  "Record :"
 msgstr "خاتىرە:"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_SEARCH.PushButton.Text
+#, fuzzy
 msgid  "Search"
 msgstr "ئىزدە"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.1.CancelButton.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "ياپ(~C)"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.1.HelpButton.Text
+#, fuzzy
 msgid  "~Help"
 msgstr "ياردەم(~H)"
 
 #: source/dialogs/fmsearch.src#RID_STR_SEARCH_ANYWHERE.String.Text
+#, fuzzy
 msgid  "anywhere in the field"
 msgstr "سۆز بۆلىكىدىكى خالىغان ئورۇن"
 
 #: source/dialogs/fmsearch.src#RID_STR_SEARCH_BEGINNING.String.Text
+#, fuzzy
 msgid  "beginning of field"
 msgstr "سۆز بۆلەك بېشى"
 
 #: source/dialogs/fmsearch.src#RID_STR_SEARCH_END.String.Text
+#, fuzzy
 msgid  "end of field"
 msgstr "سۆز بۆلەك ئاخىرى"
 
 #: source/dialogs/fmsearch.src#RID_STR_SEARCH_WHOLE.String.Text
+#, fuzzy
 msgid  "entire field"
 msgstr "پۈتكۈل سۆز بۆلىكى"
 
 #: source/dialogs/fmsearch.src#RID_STR_FROM_TOP.String.Text
+#, fuzzy
 msgid  "From top"
 msgstr "ئۈستىدىن"
 
 #: source/dialogs/fmsearch.src#RID_STR_FROM_BOTTOM.String.Text
+#, fuzzy
 msgid  "From bottom"
 msgstr "ئاستىدىن"
 
 #: source/dialogs/fmsearch.src#RID_SVXERR_SEARCH_NORECORD.ErrorBox.Message
+#, fuzzy
 msgid  "No records corresponding to your data found."
 msgstr "سانلىق مەلۇماتىڭىز بىلەن ماس كېلىدىغان ھېچقانداق خاتىرە تېپىلمىدى."
 
 #: source/dialogs/fmsearch.src#RID_SVXERR_SEARCH_GENERAL_ERROR.ErrorBox.Message
+#, fuzzy
 msgid  "An unknown error occurred. The search could not be finished."
 msgstr "نامەلۇم خاتالىق كۆرۈلدى. ئىزدەشنى تاماملىيالمايدۇ."
 
 #: source/dialogs/fmsearch.src#RID_STR_OVERFLOW_FORWARD.String.Text
+#, fuzzy
 msgid  "Overflow, search continued at the beginning"
 msgstr "ئېشىپ كەتتى، باشتىن ئىزدەشنى داۋاملاشتۇرىدۇ"
 
 #: source/dialogs/fmsearch.src#RID_STR_OVERFLOW_BACKWARD.String.Text
+#, fuzzy
 msgid  "Overflow, search continued at the end"
 msgstr "ئېشىپ كەتتى، ئاخىرىدىن ئىزدەشنى داۋاملاشتۇرىدۇ"
 
 #: source/dialogs/fmsearch.src#RID_STR_SEARCH_COUNTING.String.Text
+#, fuzzy
 msgid  "counting records"
 msgstr "سۆز بۆلەك سانىقى"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ModelessDialog.Text
+#, fuzzy
 msgid  "Spellcheck: "
 msgstr "ئىملا تەكشۈر: "
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.FT_LANGUAGE.FixedText.Text
+#, fuzzy
 msgid  "Text languag~e"
 msgstr "تېكست تىلى(~E)"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.FT_NOTINDICT.FixedText.Text
+#, fuzzy
 msgid  "~Not in dictionary"
 msgstr "لۇغەتتە يوق(~N)"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.FT_SUGGESTION.FixedText.Text
+#, fuzzy
 msgid  "~Suggestions"
 msgstr "تەكلىپ(~S)"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.CB_CHECK_GRAMMAR.CheckBox.Text
+#, fuzzy
 msgid  "Check ~grammar"
 msgstr "گرامماتىكا تەكشۈر(~G)"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_IGNORE.PushButton.Text
+#, fuzzy
 msgid  "~Ignore Once"
 msgstr "بىر قېتىم پەرۋا قىلما(~I)"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_IGNOREALL.PushButton.Text
+#, fuzzy
 msgid  "I~gnore All"
 msgstr "ھەممىگە پەرۋا قىلما(~G)"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_IGNORERULE.PushButton.Text
+#, fuzzy
 msgid  "I~gnore Rule"
 msgstr "قائىدىگە پەرۋا قىلما(~G)"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.MB_ADDTODICT.MenuButton.Text
+#, fuzzy
 msgid  "~Add"
 msgstr "قوش(~A)"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_CHANGE.PushButton.Text
+#, fuzzy
 msgid  "~Change"
 msgstr "ئۆزگەرت(~C)"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_CHANGEALL.PushButton.Text
+#, fuzzy
 msgid  "Change A~ll"
 msgstr "ھەممىنى ئۆزگەرت(~L)"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_EXPLAIN.PushButton.Text
+#, fuzzy
 msgid  "~Explain..."
 msgstr "چۈشەندۈرۈش(~E)…"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_AUTOCORR.PushButton.Text
+#, fuzzy
 msgid  "AutoCor~rect"
 msgstr "ئۆزلۈكىدىن تۈزەت(~R)"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_OPTIONS.PushButton.Text
+#, fuzzy
 msgid  "O~ptions..."
 msgstr "تاللانما(~P)…"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_UNDO.PushButton.Text
+#, fuzzy
 msgid  "~Undo"
 msgstr "يېنىۋال(~U)"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_CLOSE.PushButton.Text
+#, fuzzy
 msgid  "Cl~ose"
 msgstr "ياپ(~O)"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_RESUME.String.Text
+#, fuzzy
 msgid  "Resu~me"
 msgstr "داۋاملاشتۇر(~M)"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_NOSUGGESTIONS.String.Text
+#, fuzzy
 msgid  "(no suggestions)"
 msgstr "(تەكلىپ يوق)"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_SPELLING.String.Text
+#, fuzzy
 msgid  "Spelling: $LANGUAGE ($LOCATION)"
 msgstr "ئىملا تەكشۈرۈۋاتىدۇ: $LANGUAGE ($LOCATION)"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_SPELLING_AND_GRAMMAR.String.Text
+#, fuzzy
 msgid  "Spelling and Grammar: $LANGUAGE ($LOCATION)"
 msgstr "ئىملا ۋە گرامماتىكا تەكشۈرۈۋاتىدۇ: $LANGUAGE ($LOCATION)"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_SPELLING_AND_GRAMMAR_VENDORNAME.String.Text
+#, fuzzy
 msgid  "Spelling and Grammar: $LANGUAGE ($LOCATION) [$VendorName]"
 msgstr "ئىملا ۋە گرامماتىكا تەكشۈرۈۋاتىدۇ: $LANGUAGE ($LOCATION) [$VendorName]"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.TabPage.Text
+#, fuzzy
 msgid  "Proxy"
 msgstr "ۋاكالەتچى"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.GB_SETTINGS.FixedLine.Text
+#, fuzzy
 msgid  "Settings"
 msgstr "تەڭشەكلەر"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_PROXYMODE.FixedText.Text
+#, fuzzy
 msgid  "Proxy s~erver"
 msgstr "ۋاكالەتچى مۇلازىمىتىر(~E)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.LB_PROXYMODE.item1.StringList.item
+#, fuzzy
 msgid  "None"
 msgstr "يوق"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.LB_PROXYMODE.item2.StringList.item
+#, fuzzy
 msgid  "System"
 msgstr "سىستېما"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.LB_PROXYMODE.item3.StringList.item
+#, fuzzy
 msgid  "Manual"
 msgstr "قولدا"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.ST_PROXY_FROM_BROWSER.String.Text
+#, fuzzy
 msgid  "Use browser settings"
 msgstr "توركۆرگۈ تەڭشىكىنى ئىشلەت"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_HTTP_PROXY.FixedText.Text
+#, fuzzy
 msgid  "HT~TP proxy"
 msgstr "HTTP ۋاكالەتچى(~T)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_HTTP_PORT.FixedText.Text
+#, fuzzy
 msgid  "~Port"
 msgstr "ئېغىز(~P)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_HTTPS_PROXY.FixedText.Text
+#, fuzzy
 msgid  "HTTP~S proxy"
 msgstr "HTTPS ۋاكالەتچى(~S)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_HTTPS_PORT.FixedText.Text
+#, fuzzy
 msgid  "P~ort"
 msgstr "ئېغىز(~O)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_FTP_PROXY.FixedText.Text
+#, fuzzy
 msgid  "~FTP proxy"
 msgstr "FTP ۋاكالەتچى(~F)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_FTP_PORT.FixedText.Text
+#, fuzzy
 msgid  "P~ort"
 msgstr "ئېغىز(~O)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_SOCKS_PROXY.FixedText.Text
+#, fuzzy
 msgid  "~SOCKS proxy"
 msgstr "SOCKS ۋاكالەتچى(~S)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_SOCKS_PORT.FixedText.Text
+#, fuzzy
 msgid  "Po~rt"
 msgstr "ئېغىز(~R)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_NOPROXYFOR.FixedText.Text
+#, fuzzy
 msgid  "~No proxy for:"
 msgstr "ۋاكالەتچى مۇلازىمىتىر يوق(~N):"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.ED_NOPROXYDESC.FixedText.Text
+#, fuzzy
 msgid  "Separator ;"
 msgstr "ئايرىغۇچ؛"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.GB_DNS.FixedLine.Text
+#, fuzzy
 msgid  "DNS server"
 msgstr "DNS مۇلازىمىتىر"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.RB_DNS_AUTO.RadioButton.Text
+#, fuzzy
 msgid  "~Automatic"
 msgstr "ئاپتوماتىك(~A)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.RB_DNS_MANUAL.RadioButton.Text
+#, fuzzy
 msgid  "~Manual"
 msgstr "قولدا(~M)"
 
@@ -2928,18 +3170,22 @@ msgid  "is not a valid entry for this field. Please specify a value between 1 an
 msgstr ""
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.TabPage.Text
+#, fuzzy
 msgid  "Search"
 msgstr "ئىزدە"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.GB_SEARCH.FixedLine.Text
+#, fuzzy
 msgid  "Search in"
 msgstr "ئىزدەش ئورنى"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.FT_SEARCH_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Name"
 msgstr "ئاتى(~N):"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.FT_SEARCH.FixedText.Text
+#, fuzzy
 msgid  "Type"
 msgstr "تىپى"
 
@@ -2948,66 +3194,82 @@ msgid  "~And"
 msgstr ""
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.RB_OR.RadioButton.Text
+#, fuzzy
 msgid  "~Or"
 msgstr "ياكى(~O)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.RB_EXACT.RadioButton.Text
+#, fuzzy
 msgid  "E~xact"
 msgstr "دەل(~X)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.FT_URL.FixedText.Text
+#, fuzzy
 msgid  "~Prefix"
 msgstr "ھۆرمەتلىك(~P)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.FT_POSTFIX.FixedText.Text
+#, fuzzy
 msgid  "Su~ffix"
 msgstr "كەينى قوشۇلغۇچى(~F)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.FT_SEPARATOR.FixedText.Text
+#, fuzzy
 msgid  "~Separator"
 msgstr "ئايرىغۇچ(~S)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.FT_CASE.FixedText.Text
+#, fuzzy
 msgid  "~Case match"
 msgstr "يېزىش ئۇسۇلى(~C)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.ED_CASE.item1.StringList.item
+#, fuzzy
 msgid  "None"
 msgstr "يوق"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.ED_CASE.item2.StringList.item
+#, fuzzy
 msgid  "Upper"
 msgstr "چوڭ يېزىلىش"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.ED_CASE.item3.StringList.item
+#, fuzzy
 msgid  "Lower"
 msgstr "كىچىك يېزىلىش"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.PB_NEW.PushButton.Text
+#, fuzzy
 msgid  "N~ew"
 msgstr "يېڭى(~E)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.PB_ADD.PushButton.Text
+#, fuzzy
 msgid  "~Add"
 msgstr "قوش(~A)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.PB_CHANGE.PushButton.Text
+#, fuzzy
 msgid  "~Modify"
 msgstr "ئۆزگەرت(~M)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.PB_DELETE.PushButton.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "ئۆچۈر(~D)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.MSG_MODIFY.String.Text
+#, fuzzy
 msgid  "Do you want to accept the current modification?"
 msgstr "نۆۋەتتىكى ئۆزگەرتىشكە قوشۇلامسىز؟"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.TabPage.Text
+#, fuzzy
 msgid  "Security"
 msgstr "بىخەتەرلىك"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FL_SEC_SECURITYOPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Security options and warnings"
 msgstr "بىخەتەرلىك تاللانمىسى ۋە ئاگاھلاندۇرۇش"
 
@@ -3016,22 +3278,27 @@ msgid  "Adjust security related options and define warnings for hidden informati
 msgstr ""
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.PB_SEC_SECURITYOPTIONS.PushButton.Text
+#, fuzzy
 msgid  "Options..."
 msgstr "…تاللانما"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FL_SEC_PASSWORDS.FixedLine.Text
+#, fuzzy
 msgid  "Passwords for web connections"
 msgstr "تور ئۇلىنىش ئىم"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.CB_SEC_SAVEPASSWORDS.CheckBox.Text
+#, fuzzy
 msgid  "Persistently save passwords for web connections"
 msgstr "web ئۇلىنىش ئىمنى مەڭگۈ ساقلا"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.PB_SEC_CONNECTIONS.PushButton.Text
+#, fuzzy
 msgid  "Connections..."
 msgstr "ئۇلىنىش…"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.CB_SEC_MASTERPASSWORD.CheckBox.Text
+#, fuzzy
 msgid  "Protected by a master password (recommended)"
 msgstr "ئاساسىي ئىمدا قوغدالغان (تەۋسىيە)"
 
@@ -3040,10 +3307,12 @@ msgid  "Passwords are protected by a master password. You will be asked to enter
 msgstr ""
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.PB_SEC_MASTERPASSWORD.PushButton.Text
+#, fuzzy
 msgid  "Master Password..."
 msgstr "ئاساسىي ئىم…"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FL_SEC_MACROSEC.FixedLine.Text
+#, fuzzy
 msgid  "Macro security"
 msgstr "ماكرو بىخەتەرلىكى"
 
@@ -3052,6 +3321,7 @@ msgid  "Adjust the security level for executing macros and specify trusted macro
 msgstr ""
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.PB_SEC_MACROSEC.PushButton.Text
+#, fuzzy
 msgid  "Macro Security..."
 msgstr "ماكرو بىخەتەرلىكى…"
 
@@ -3068,78 +3338,97 @@ msgid  "Please note that with Java\nyou disable Javascript as well.\n\nDo you st
 msgstr ""
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.CB_JSCPT_DISABLE.CheckBox.Text
+#, fuzzy
 msgid  "~Don't show warning again"
 msgstr "ئاگاھلاندۇرۇشنى قايتا كۆرسەتمە(~D)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_MAIL.FL_MAIL.FixedLine.Text
+#, fuzzy
 msgid  "Sending documents as e-mail attachments"
 msgstr "پۈتۈكنى ئېلخەت قوشۇمچىسى سۈپىتىدە يوللا"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_MAIL.FT_MAILERURL.FixedText.Text
+#, fuzzy
 msgid  "~E-mail program"
 msgstr "ئېلخەت پروگرامما(~E)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_MAIL.STR_DEFAULT_FILENAME.String.Text
+#, fuzzy
 msgid  "All files (*.*)"
 msgstr "ھەممە ھۆججەت (*.*)"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.TabPage.Text
+#, fuzzy
 msgid  "User Data"
 msgstr "ئىشلەتكۈچى سانلىق مەلۇماتى"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_COMPANY.FixedText.Text
+#, fuzzy
 msgid  "~Company"
 msgstr "شىركەت(~C)"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_NAME.FixedText.Text
+#, fuzzy
 msgid  "First/Last ~name/Initials"
 msgstr "ئاتى/تەگئاتى/قىسقاتىلمىسى(~N)"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_NAME_RUSS.FixedText.Text
+#, fuzzy
 msgid  "Last Name/First name/Father's name/Initials"
 msgstr "تەگئات//ئاتى/دادىسىنىڭ ئاتى/قىسقارتىلمىسى"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_NAME_EASTERN.FixedText.Text
+#, fuzzy
 msgid  "Last/First ~name/Initials"
 msgstr "ئاتى/تەگئاتى/قىسقاتىلمىسى(~N)"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_STREET.FixedText.Text
+#, fuzzy
 msgid  "~Street"
 msgstr "كوچا(~S)"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_STREET_RUSS.FixedText.Text
+#, fuzzy
 msgid  "Street/Apartment number"
 msgstr "كوچا/ئۆي نومۇرى"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_CITY.FixedText.Text
+#, fuzzy
 msgid  "Zip/City"
 msgstr "پوچتا نومۇرى/شەھەر"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_COUNTRY.FixedText.Text
+#, fuzzy
 msgid  "Country/Region"
 msgstr "دۆلەت/رايون"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_TITLEPOS.FixedText.Text
+#, fuzzy
 msgid  "~Title/Position"
 msgstr "ئەمەل/ۋەزىپە(~T)"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_PHONE.FixedText.Text
+#, fuzzy
 msgid  "Tel. (Home/Work)"
 msgstr "تېلېفون (ئۆي/خىزمەت)"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_FAXMAIL.FixedText.Text
+#, fuzzy
 msgid  "Fa~x / E-mail"
 msgstr "فاكس/ئېلخەت(~X)"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.GB_ADDRESS.FixedLine.Text
+#, fuzzy
 msgid  "Address "
 msgstr "ئادرېس "
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.CB_USEDATA.CheckBox.Text
+#, fuzzy
 msgid  "Use data for document properties"
 msgstr "پۈتۈك خاسلىقىنىڭ سانلىق مەلۇماتىنى ئىشلەت"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.STR_US_STATE.String.Text
+#, fuzzy
 msgid  "City/State/Zip"
 msgstr "شەھەر/دۆلەت/پوچتا نومۇرى"
 
@@ -3152,462 +3441,577 @@ msgid  "The User Data have been changed.\nDo you really want to change your User
 msgstr ""
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.FL_TREAT_AS_EQUAL.FixedLine.Text
+#, fuzzy
 msgid  "Treat as equal"
 msgstr "ئوخشاش بىر تەرەپ قىل"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_CASE.CheckBox.Text
+#, fuzzy
 msgid  "~uppercase/lowercase"
 msgstr "چوڭ/كىچىك يېزىلىش(~U)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_FULL_HALF_WIDTH.CheckBox.Text
+#, fuzzy
 msgid  "~full-width/half-width forms"
 msgstr "بىر بايت/ئىككى بايتلىق ھەرپ بەلگىلەر(~F)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_HIRAGANA_KATAKANA.CheckBox.Text
+#, fuzzy
 msgid  "~hiragana/katakana"
 msgstr "خىراگانا/كاتاكانا(~H)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_CONTRACTIONS.CheckBox.Text
+#, fuzzy
 msgid  "~contractions (yo-on, sokuon)"
 msgstr "ياپونچە قىسقارتىپ يېزىش (yo-on, sokuon)(~C)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_MINUS_DASH_CHOON.CheckBox.Text
+#, fuzzy
 msgid  "~minus/dash/cho-on"
 msgstr "ئېلىش/سىزىق/cho-on [－/‐/ー(~M)]"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_REPEAT_CHAR_MARKS.CheckBox.Text
+#, fuzzy
 msgid  "'re~peat character' marks"
 msgstr "تەكرارلانغان ھەرپ(~P)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_VARIANT_FORM_KANJI.CheckBox.Text
+#, fuzzy
 msgid  "~variant-form kanji (itaiji)"
 msgstr "ياپونچە خەنزۇچە خەت(itaiji)(~V)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_OLD_KANA_FORMS.CheckBox.Text
+#, fuzzy
 msgid  "~old Kana forms"
 msgstr "كونا كاتاكانا(~O)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_DIZI_DUZU.CheckBox.Text
+#, fuzzy
 msgid  "~di/zi, du/zu"
 msgstr "ヂ/ジ、ヅ/ズ(~D)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_BAVA_HAFA.CheckBox.Text
+#, fuzzy
 msgid  "~ba/va, ha/fa"
 msgstr "バ/ヴァ、ハ/ファ(~B)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_TSITHICHI_DHIZI.CheckBox.Text
+#, fuzzy
 msgid  "~tsi/thi/chi, dhi/zi"
 msgstr "バ/ヴァ、ハ/ファ(~T)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_HYUFYU_BYUVYU.CheckBox.Text
+#, fuzzy
 msgid  "h~yu/fyu, byu/vyu"
 msgstr "ヒュ/フュ、ビュ/ヴュ(~Y)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_SESHE_ZEJE.CheckBox.Text
+#, fuzzy
 msgid  "~se/she, ze/je"
 msgstr "バ/ヴァ、ハ/ファ(~S)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_IAIYA.CheckBox.Text
+#, fuzzy
 msgid  "~ia/iya (piano/piyano)"
 msgstr "イ段、エ段的连接ｱ/ﾔ(ﾋﾟｱﾉ/ﾋﾟﾔﾉ)(~I)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_KIKU.CheckBox.Text
+#, fuzzy
 msgid  "~ki/ku (tekisuto/tekusuto)"
 msgstr "サ行之前的ｷ/ｸ(ﾃｷｽﾄ/ﾃｸｽﾄ)(~K)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_PROLONGED_SOUNDMARK.CheckBox.Text
+#, fuzzy
 msgid  "Prolon~ged vowels (ka-/kaa)"
 msgstr "سوزۇلما سوزۇق تاۋۇش(ｶ/ｶｰ) (~G)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.FL_IGNORE.FixedLine.Text
+#, fuzzy
 msgid  "Ignore"
 msgstr "پىسەنت قىلماق"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_IGNORE_PUNCTUATION.CheckBox.Text
+#, fuzzy
 msgid  "Pu~nctuation characters"
 msgstr "تىنىش بەلگە ھەرپلىرى(~N)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_IGNORE_WHITESPACES.CheckBox.Text
+#, fuzzy
 msgid  "~Whitespace characters"
 msgstr "بوشلۇق ھەرپى(~W)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_IGNORE_MIDDLE_DOT.CheckBox.Text
+#, fuzzy
 msgid  "Midd~le dots"
 msgstr "ئوتتۇرا چېكىت(~L)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CheckBox.Text
+#, fuzzy
 msgid  "Searching in Japanese"
 msgstr "ياپونچەدىن ئىزدە"
 
 #: source/options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.FL_DEFTXTDIRECTION.FixedLine.Text
+#, fuzzy
 msgid  "Default text direction"
 msgstr "كۆڭۈلدىكى تېكست يۆنىلىشى"
 
 #: source/options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.RB_TXTDIR_LEFT2RIGHT.RadioButton.Text
+#, fuzzy
 msgid  "~Left-to-right"
 msgstr "سولدىن ئوڭغا(~L)"
 
 #: source/options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.RB_TXTDIR_RIGHT2LEFT.RadioButton.Text
+#, fuzzy
 msgid  "~Right-to-left"
 msgstr "ئوڭدىن سولغا(T)(~R)"
 
 #: source/options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.FL_SHEETVIEW.FixedLine.Text
+#, fuzzy
 msgid  "Sheet view"
 msgstr "ۋاراق كۆرۈنۈشى"
 
 #: source/options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.CB_SHTVW_RIGHT2LEFT.CheckBox.Text
+#, fuzzy
 msgid  "Right-~to-left"
 msgstr "ئوڭدىن سولغا(~T)"
 
 #: source/options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.CB_SHTVW_CURRENTDOCONLY.CheckBox.Text
+#, fuzzy
 msgid  "~Current document only"
 msgstr "نۆۋەتتىكى پۈتۈكلا(~C)"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.TabPage.Text
+#, fuzzy
 msgid  "Complex Text Layout"
 msgstr "مۇرەككەپ تېكست ئۇسلۇبى"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FL_SEQUENCECHECKING.FixedLine.Text
+#, fuzzy
 msgid  "Sequence checking"
 msgstr "تەكشۈرۈش تەرتىپى"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.CB_SEQUENCECHECKING.CheckBox.Text
+#, fuzzy
 msgid  "Use se~quence checking"
 msgstr "تەرتىپلىك تەكشۈرۈش ئىشلەت(~Q)"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.CB_RESTRICTED.CheckBox.Text
+#, fuzzy
 msgid  "Restricted"
 msgstr "چەكلەنگەن"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.CB_TYPE_REPLACE.CheckBox.Text
+#, fuzzy
 msgid  "~Type and replace"
 msgstr "كىرگۈز ۋە ئالماشتۇر(~T)"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FL_CURSORCONTROL.FixedLine.Text
+#, fuzzy
 msgid  "Cursor control"
 msgstr "نۇر بەلگە كونترول"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FT_MOVEMENT.FixedText.Text
+#, fuzzy
 msgid  "Movement"
 msgstr "يۆتكە"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.RB_MOVEMENT_LOGICAL.RadioButton.Text
+#, fuzzy
 msgid  "Lo~gical"
 msgstr "لوگىكىلىق(~G)"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.RB_MOVEMENT_VISUAL.RadioButton.Text
+#, fuzzy
 msgid  "~Visual"
 msgstr "كۆرۈنۈشچان(~V)"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FL_GENERAL.FixedLine.Text
+#, fuzzy
 msgid  "General options"
 msgstr "ئادەتتىكى تاللانما"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FT_NUMERALS.FixedText.Text
+#, fuzzy
 msgid  "~Numerals"
 msgstr "سان(~N)"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.item1.StringList.item
+#, fuzzy
 msgid  "Arabic"
 msgstr "ئەرەبچە"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.item2.StringList.item
+#, fuzzy
 msgid  "Hindi"
 msgstr "ھىندىچە"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.item3.StringList.item
+#, fuzzy
 msgid  "System"
 msgstr "سىستېما"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.item4.StringList.item
+#, fuzzy
 msgid  "Context"
 msgstr "تىل مۇھىتى"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FL_COLORSCHEME.FixedLine.Text
+#, fuzzy
 msgid  "Color scheme"
 msgstr "رەڭ نۇسخىسى"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FT_COLORSCHEME.FixedText.Text
+#, fuzzy
 msgid  "Scheme"
 msgstr "نۇسخا"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.PB_SAVESCHEME.PushButton.Text
+#, fuzzy
 msgid  "Save..."
 msgstr "ساقلا…"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.PB_DELETESCHEME.PushButton.Text
+#, fuzzy
 msgid  "Delete"
 msgstr "ئۆچۈر"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FL_CUSTOMCOLORS.FixedLine.Text
+#, fuzzy
 msgid  "Custom colors"
 msgstr "ئىختىيارىچە رەڭ"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.ST_ON.String.Text
+#, fuzzy
 msgid  "On"
 msgstr "قوزغات"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.ST_UIELEM.String.Text
+#, fuzzy
 msgid  "User interface elements"
 msgstr "ئىشلەتكۈچى كۆرۈنمە يۈزى ئېلېمېنتى"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.ST_COLSET.String.Text
+#, fuzzy
 msgid  "Color setting"
 msgstr "رەڭ تەڭشەك"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.ST_PREVIEW.String.Text
+#, fuzzy
 msgid  "Preview"
 msgstr "ئالدىن كۆزەت"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_GENERAL.FixedText.Text
+#, fuzzy
 msgid  "General"
 msgstr "ئادەتتىكى"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_DOCCOLOR.FixedText.Text
+#, fuzzy
 msgid  "Document background"
 msgstr "پۈتۈك تەگلىكى"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_DOCBOUND.CheckBox.Text
+#, fuzzy
 msgid  "Text boundaries"
 msgstr "تېكست چېگرىسى"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_APPBACKGROUND.FixedText.Text
+#, fuzzy
 msgid  "Application background"
 msgstr "قوللىنىشچان پروگرامما تەگلىكى"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_OBJECTBOUNDARIES.CheckBox.Text
+#, fuzzy
 msgid  "Object boundaries"
 msgstr "ئوبيېكت يان رامكىسى"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_TABLEBOUNDARIES.CheckBox.Text
+#, fuzzy
 msgid  "Table boundaries"
 msgstr "جەدۋەل يان رامكىسى"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_FONTCOLOR.FixedText.Text
+#, fuzzy
 msgid  "Font color"
 msgstr "خەت رەڭگى"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_LINKS.CheckBox.Text
+#, fuzzy
 msgid  "Unvisited links"
 msgstr "زىيارەت قىلىنمىغان ئۇلانما"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_LINKSVISITED.CheckBox.Text
+#, fuzzy
 msgid  "Visited links"
 msgstr "زىيارەت قىلىنغان ئۇلانما"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SPELL.FixedText.Text
+#, fuzzy
 msgid  "AutoSpellcheck"
 msgstr "ئۆزلۈكىدىن ئىملا تەكشۈر"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SMARTTAGS.FixedText.Text
+#, fuzzy
 msgid  "Smart Tags"
 msgstr "ئىدراكلىق بەلگە"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITER.FixedText.Text
+#, fuzzy
 msgid  "Text Document"
 msgstr "تېكست پۈتۈك"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERTEXTGRID.FixedText.Text
+#, fuzzy
 msgid  "Grid"
 msgstr "سېتكا"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_WRITERFIELDSHADINGS.CheckBox.Text
+#, fuzzy
 msgid  "Field shadings"
 msgstr "سۆز بۆلەك تەگلىك رەڭگى"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_WRITERIDXSHADINGS.CheckBox.Text
+#, fuzzy
 msgid  "Index and table shadings"
 msgstr "مۇندەرىجە تەگلىك رەڭگى"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERSCRIPTINDICATOR.FixedText.Text
+#, fuzzy
 msgid  "Script indicator"
 msgstr "قوليازما بەلگىسى"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_WRITERSECTIONBOUNDARIES.CheckBox.Text
+#, fuzzy
 msgid  "Section boundaries"
 msgstr "دائىرىنىڭ يان رامكىسى"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERPAGEBREAKS.FixedText.Text
+#, fuzzy
 msgid  "Page and column breaks"
 msgstr "بەت ۋە ستون قاتلا"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERDIRECTCURSOR.FixedText.Text
+#, fuzzy
 msgid  "Direct cursor"
 msgstr "بىۋاسىتە نۇر بەلگە"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTML.FixedText.Text
+#, fuzzy
 msgid  "HTML Document"
 msgstr "HTML پۈتۈك"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTMLSGML.FixedText.Text
+#, fuzzy
 msgid  "SGML syntax highlighting"
 msgstr "SGML گىرامماتىكىسىنى يورۇت"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTMLCOMMENT.FixedText.Text
+#, fuzzy
 msgid  "Comment highlighting"
 msgstr "ئىزاھات يورۇت"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTMLKEYWORD.FixedText.Text
+#, fuzzy
 msgid  "Keyword highlighting"
 msgstr "ھالقىلىق سۆز يورۇت"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTMLUNKNOWN.FixedText.Text
+#, fuzzy
 msgid  "Text"
 msgstr "تېكىست"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALC.FixedText.Text
+#, fuzzy
 msgid  "Spreadsheet"
 msgstr "ئېلېكترونلۇق جەدۋەل"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCGRID.FixedText.Text
+#, fuzzy
 msgid  "Grid lines"
 msgstr "سېتكا سىزىقى"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCPAGEBREAK.FixedText.Text
+#, fuzzy
 msgid  "Page breaks"
 msgstr "بەت ئايرىش بەلگىسى"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCPAGEBREAKMANUAL.FixedText.Text
+#, fuzzy
 msgid  "Manual page breaks"
 msgstr "قولدا بەت قاتلا"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCPAGEBREAKAUTO.FixedText.Text
+#, fuzzy
 msgid  "Automatic page breaks"
 msgstr "ئۆزلۈكىدىن بەت قاتلا"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCDETECTIVE.FixedText.Text
+#, fuzzy
 msgid  "Detective"
 msgstr "رازۋېدچىك"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCDETECTIVEERROR.FixedText.Text
+#, fuzzy
 msgid  "Detective error"
 msgstr "رازۋېدچىك خاتالىقى"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCREFERENCE.FixedText.Text
+#, fuzzy
 msgid  "References"
 msgstr "نەقىل"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCNOTESBACKGROUND.FixedText.Text
+#, fuzzy
 msgid  "Notes background"
 msgstr "ئىزاھات تەگلىكى"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_DRAW.FixedText.Text
+#, fuzzy
 msgid  "Drawing / Presentation"
 msgstr "سىزمىچىلىق/كۆرسەتمە"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_DRAWGRID.FixedText.Text
+#, fuzzy
 msgid  "Grid"
 msgstr "سېتكا"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASIC.FixedText.Text
+#, fuzzy
 msgid  "Basic Syntax Highlighting"
 msgstr "Basic گىرامماتىكىسىنى يورۇت"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICIDENTIFIER.FixedText.Text
+#, fuzzy
 msgid  "Identifier"
 msgstr "بەلگە"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICCOMMENT.FixedText.Text
+#, fuzzy
 msgid  "Comment"
 msgstr "ئىزاھات"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICNUMBER.FixedText.Text
+#, fuzzy
 msgid  "Number"
 msgstr "تەرتىپ نومۇر"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICSTRING.FixedText.Text
+#, fuzzy
 msgid  "String"
 msgstr "ھەرپ-بەلگە تىزىقى"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICOPERATOR.FixedText.Text
+#, fuzzy
 msgid  "Operator"
 msgstr "ئۇلىغۇچى"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICKEYWORD.FixedText.Text
+#, fuzzy
 msgid  "Reserved expression"
 msgstr "زاپاس ئىپادە"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICERROR.FixedText.Text
+#, fuzzy
 msgid  "Error"
 msgstr "خاتالىق"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQL_COMMAND.FixedText.Text
+#, fuzzy
 msgid  "SQL Syntax Highlighting"
 msgstr "SQL گىرامماتىكىسىنى يورۇت"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLIDENTIFIER.FixedText.Text
+#, fuzzy
 msgid  "Identifier"
 msgstr "بەلگە"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLNUMBER.FixedText.Text
+#, fuzzy
 msgid  "Number"
 msgstr "تەرتىپ نومۇر"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLSTRING.FixedText.Text
+#, fuzzy
 msgid  "String"
 msgstr "ھەرپ-بەلگە تىزىقى"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLOPERATOR.FixedText.Text
+#, fuzzy
 msgid  "Operator"
 msgstr "ئۇلىغۇچى"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLKEYWORD.FixedText.Text
+#, fuzzy
 msgid  "Keyword"
 msgstr "ئاچقۇچ سۆز"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLPARAMETER.FixedText.Text
+#, fuzzy
 msgid  "Parameter"
 msgstr "پارامېتىر"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLCOMMENT.FixedText.Text
+#, fuzzy
 msgid  "Comment"
 msgstr "ئىزاھات"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.ST_EXTENSION.String.Text
+#, fuzzy
 msgid  "Colorsettings of the Extensions"
 msgstr "كېڭەيتىلگەن رەڭ تەڭشىكى"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.ST_SPELL_CHECK_HIGHLIGHTING.String.Text
+#, fuzzy
 msgid  "Spell check highlighting"
 msgstr "ئىملا تەكشۈرۈشنى يورۇت"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.ST_GRAMMAR_CHECK_HIGHLIGHTING.String.Text
+#, fuzzy
 msgid  "Grammar check highlighting"
 msgstr "گىرامماتىكىلىق تەكشۈرۈشنى يورۇت"
 
 #: source/options/optcolor.src#RID_SVXQB_DELETE_COLOR_CONFIG.QueryBox.Message
+#, fuzzy
 msgid  "Do you really want to delete the color scheme?"
 msgstr "بۇ رەڭ نۇسخىسىنى راستىنلا ئۆچۈرەمسىز؟"
 
 #: source/options/optcolor.src#RID_SVXSTR_COLOR_CONFIG_DELETE.String.Text
+#, fuzzy
 msgid  "Color Scheme Deletion"
 msgstr "رەڭ نۇسخىسىنى ئۆچۈرۈشنى جەزملە"
 
 #: source/options/optcolor.src#RID_SVXSTR_COLOR_CONFIG_SAVE1.String.Text
+#, fuzzy
 msgid  "Save scheme"
 msgstr "نۇسخا ساقلا"
 
 #: source/options/optcolor.src#RID_SVXSTR_COLOR_CONFIG_SAVE2.String.Text
+#, fuzzy
 msgid  "Name of color scheme"
 msgstr "رەڭ نۇسخا ئاتى"
 
 #: source/options/doclinkdialog.src#DLG_DOCUMENTLINK.FT_URL.FixedText.Text
+#, fuzzy
 msgid  "~Database file"
 msgstr "ساندان ھۆججىتى(~D)"
 
 #: source/options/doclinkdialog.src#DLG_DOCUMENTLINK.PB_BROWSEFILE.PushButton.Text
+#, fuzzy
 msgid  "~Browse..."
 msgstr "كۆز يۈگۈرت(~B)…"
 
 #: source/options/doclinkdialog.src#DLG_DOCUMENTLINK.FT_NAME.FixedText.Text
+#, fuzzy
 msgid  "Registered ~name"
 msgstr "خەتلىگەن ئاتى(~N)"
 
 #: source/options/doclinkdialog.src#DLG_DOCUMENTLINK.STR_EDIT_LINK.String.Text
+#, fuzzy
 msgid  "Edit Database Link"
 msgstr "ساندان ئۇلىنىش تەھرىر"
 
 #: source/options/doclinkdialog.src#DLG_DOCUMENTLINK.STR_NEW_LINK.String.Text
+#, fuzzy
 msgid  "Create Database Link"
 msgstr "ساندان ئۇلىنىش قۇر"
 
@@ -3624,6 +4028,7 @@ msgid  "The name '$file$' is already used for another database.\nPlease choose a
 msgstr ""
 
 #: source/options/doclinkdialog.src#QUERY_DELETE_CONFIRM.QueryBox.Message
+#, fuzzy
 msgid  "Do you want to delete the entry?"
 msgstr "بۇ تۈرنى ئۆچۈرەمسىز؟"
 
