@@ -1505,7 +1505,7 @@ msgstr "Dokumenta aizsardzība"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.FT_DOCSTATUS.FixedText.Text
 msgid  "Status unknown"
-msgstr "Nezināms statuss"
+msgstr "Savienojuma statuss nav zināms"
 
 #: source/ui/miscdlgs/retypepassdlg.src#RID_SCDLG_RETYPEPASS.BTN_RETYPE_DOC.PushButton.Text
 msgid  "Re-type"
@@ -5301,7 +5301,7 @@ msgstr "Meklēšanas kritērijs"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.7.String.Text
 msgid  "Defines the cell range containing the search criteria."
-msgstr "Definē šūnu diapazonu, kurš satur kritērijus."
+msgstr "Definē šūnu diapazonu, kurš satur meklēšanas kritērijus."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.1.String.Text
 msgid  "Counts all non-blank cells of a data range where the content corresponds to the search criteria."
@@ -5329,7 +5329,7 @@ msgstr "Meklēšanas kritērijs"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.7.String.Text
 msgid  "Defines the cell range containing the search criteria."
-msgstr "Definē šūnu diapazonu, kurš satur meklēšanas kritērijus."
+msgstr "Definē šūnu diapazonu, kurš satur kritērijus."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_AVERAGE.1.String.Text
 msgid  "Returns the average value of all the cells of a data range whose contents match the search criteria."
@@ -5357,7 +5357,7 @@ msgstr "Meklēšanas kritērijs"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_AVERAGE.7.String.Text
 msgid  "Defines the cell range containing the search criteria."
-msgstr "Definē šūnu diapazonu, kurš satur kritērijus."
+msgstr "Definē šūnu diapazonu, kurš satur meklēšanas kritērijus."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_GET.1.String.Text
 msgid  "Defines the contents of the cell of a data range which matches the search criteria."
@@ -5385,7 +5385,7 @@ msgstr "Meklēšanas kritērijs"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_GET.7.String.Text
 msgid  "Defines the cell range containing the search criteria."
-msgstr "Definē šūnu diapazonu, kurš satur meklēšanas kritērijus."
+msgstr "Definē šūnu diapazonu, kurš satur kritērijus."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_MAX.1.String.Text
 msgid  "Returns the maximum value from all of the cells of a data range which correspond to the search criteria."
@@ -5413,7 +5413,7 @@ msgstr "Meklēšanas kritērijs"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_MAX.7.String.Text
 msgid  "Defines the cell range containing the search criteria."
-msgstr "Definē šūnu diapazonu, kurš satur kritērijus."
+msgstr "Definē šūnu diapazonu, kurš satur meklēšanas kritērijus."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_MIN.1.String.Text
 msgid  "Returns the minimum of all cells of a data range where the contents correspond to the search criteria."
@@ -5441,7 +5441,7 @@ msgstr "Meklēšanas kritērijs"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_MIN.7.String.Text
 msgid  "Defines the cell range containing the search criteria."
-msgstr "Definē šūnu diapazonu, kurš satur kritērijus."
+msgstr "Definē šūnu diapazonu, kurš satur meklēšanas kritērijus."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_PRODUCT.1.String.Text
 msgid  "Multiplies all cells of a data range where the contents match the search criteria."
@@ -5469,7 +5469,7 @@ msgstr "Meklēšanas kritērijs"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_PRODUCT.7.String.Text
 msgid  "Defines the cell range containing the search criteria."
-msgstr "Definē šūnu diapazonu, kurš satur meklēšanas kritērijus."
+msgstr "Definē šūnu diapazonu, kurš satur kritērijus."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_STD_DEV.1.String.Text
 msgid  "Calculates the standard deviation of all cells in a data range whose contents match the search criteria."
@@ -5497,7 +5497,7 @@ msgstr "Meklēšanas kritērijs"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_STD_DEV.7.String.Text
 msgid  "Defines the cell range containing the search criteria."
-msgstr "Definē šūnu diapazonu, kurš satur meklēšanas kritērijus."
+msgstr "Definē šūnu diapazonu, kurš satur kritērijus."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_STD_DEV_P.1.String.Text
 msgid  "Returns the standard deviation with regards to the population of all cells of a data range matching the search criteria."
@@ -5525,7 +5525,7 @@ msgstr "Meklēšanas kritērijs"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_STD_DEV_P.7.String.Text
 msgid  "Defines the cell range containing the search criteria."
-msgstr "Definē šūnu diapazonu, kurš satur kritērijus."
+msgstr "Definē šūnu diapazonu, kurš satur meklēšanas kritērijus."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_SUM.1.String.Text
 msgid  "Adds all the cells of a data range where the contents match the search criteria."
@@ -5553,7 +5553,7 @@ msgstr "Meklēšanas kritērijs"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_SUM.7.String.Text
 msgid  "Defines the cell range containing the search criteria."
-msgstr "Definē šūnu diapazonu, kurš satur kritērijus."
+msgstr "Definē šūnu diapazonu, kurš satur meklēšanas kritērijus."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_VAR.1.String.Text
 msgid  "Determines the variance of all the cells in a data range where the contents match the search criteria."
@@ -5625,7 +5625,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DATE.4.String.Text
 msgid  "month"
-msgstr "mēnesis"
+msgstr "mēneši"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DATE.5.String.Text
 msgid  "An integer between 1 and 12 representing the month."
@@ -5877,7 +5877,7 @@ msgstr "Pašreizējā vērtība. Rēķina investīciju vērtību."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.2.String.Text
 msgid  "Rate"
-msgstr "Likme"
+msgstr "Procentu_likme"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.3.String.Text
 msgid  "The rate of interest for the period given."
@@ -5893,7 +5893,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.6.String.Text
 msgid  "PMT"
-msgstr "PMT"
+msgstr "Maksājumi"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.7.String.Text
 msgid  "Regular payments. The constant amount of annuity that is paid in each period."
@@ -5925,7 +5925,7 @@ msgstr "Procentu_likme"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.3.String.Text
 msgid  "The rate of interest per period."
-msgstr "Procentu likme periodā."
+msgstr "Procentu likme vienā periodā."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.4.String.Text
 msgid  "NPER"
@@ -5937,7 +5937,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.6.String.Text
 msgid  "PMT"
-msgstr "Maksājumi"
+msgstr "Regulāraie_maksājumi"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.7.String.Text
 msgid  "Regular payments. The constant annuity to be paid in each period."
@@ -5945,7 +5945,7 @@ msgstr "Regulārie maksājumi. Konstants maksājuma lielums katrā periodā."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.8.String.Text
 msgid  "PV"
-msgstr "NV"
+msgstr "Pv"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.9.String.Text
 msgid  "Present value. The current value of a series of payments"
@@ -5969,11 +5969,11 @@ msgstr "Procentu_likme"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.3.String.Text
 msgid  "The rate of interest per period."
-msgstr "Procentu likme vienā periodā."
+msgstr "Procentu likme periodā."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.4.String.Text
 msgid  "PMT"
-msgstr "Regulāraie_maksājumi"
+msgstr "Reg_maks"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.5.String.Text
 msgid  "Regular payments. The constant annuity to be paid in each period."
@@ -5981,7 +5981,7 @@ msgstr "Regulārie maksājumi. Konstants maksājuma lielums katrā periodā."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.6.String.Text
 msgid  "PV"
-msgstr "Pv"
+msgstr "PV"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.7.String.Text
 msgid  "Present value. The current value of a series of payments"
@@ -6113,7 +6113,7 @@ msgstr "Procentu likme vienā periodā."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.4.String.Text
 msgid  "Period"
-msgstr "Periods"
+msgstr "Periodi"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.5.String.Text
 msgid  "Periods. The periods for which the compounded interest is to be calculated. P = 1 denotes for the first period, P = NPER for the last one."
@@ -6313,7 +6313,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.2.String.Text
 msgid  "Cost"
-msgstr "Izmaksas"
+msgstr "Vērtība"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.3.String.Text
 msgid  "Acquisition costs. The initial cost of the asset."
@@ -6325,7 +6325,7 @@ msgstr "Vērtība_beigās"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.5.String.Text
 msgid  "Salvage: The remaining value of the asset at the end of its life."
-msgstr "Atlikusī vērtība: Aktīva atlikusī vērtība pēc amortizācijas."
+msgstr "Vērtība beigās: aktīva atlikusī vērtība pēc amortizācijas."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.6.String.Text
 msgid  "Life"
@@ -6349,7 +6349,7 @@ msgstr "Aprēķina lineāro nolietojumu periodā."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LIA.2.String.Text
 msgid  "Cost"
-msgstr "Vērtība"
+msgstr "Izmaksas"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LIA.3.String.Text
 msgid  "Acquisition cost. The initial cost of an asset."
@@ -6565,7 +6565,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_NBW.2.String.Text
 msgid  "RATE"
-msgstr "Likme"
+msgstr "RATE"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_NBW.3.String.Text
 msgid  "The rate of discount for one period."
@@ -7005,7 +7005,7 @@ msgstr "Atgriež a^b, skaitlis a celts pakāpē b."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_POWER.2.String.Text
 msgid  "Base"
-msgstr "Kāpināmais"
+msgstr "Bāze"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_POWER.3.String.Text
 msgid  "The base a of the power a^b."
@@ -7273,7 +7273,7 @@ msgstr "skaitlis_1"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN.3.String.Text
 msgid  "The total number of elements."
-msgstr "Visu elementu skaits."
+msgstr "Kopējais elementu skaits"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN.4.String.Text
 msgid  "number_2"
@@ -7293,7 +7293,7 @@ msgstr "skaitlis_1"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN_2.3.String.Text
 msgid  "The total number of elements."
-msgstr "Visu elementu skaits."
+msgstr "Kopējais elementu skaits"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KOMBIN_2.4.String.Text
 msgid  "number_2"
@@ -7669,7 +7669,7 @@ msgstr "Skaitlis"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_INT.3.String.Text
 msgid  "The number to be rounded down."
-msgstr "Skaitlis, kuram rēķina veselo daļu."
+msgstr "Skaitlis, kuru apaļot uz leju."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TRUNC.1.String.Text
 msgid  "Truncates the decimal places of a number."
@@ -7741,7 +7741,7 @@ msgstr "skaitlis"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_DOWN.3.String.Text
 msgid  "The number to be rounded down."
-msgstr "Skaitlis, kuru apaļot uz leju."
+msgstr "Skaitlis, kuru noapaļot."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_DOWN.4.String.Text
 msgid  "count"
@@ -8029,7 +8029,7 @@ msgstr "Y datu masīvs."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.4.String.Text
 msgid  "data_X"
-msgstr "dati_X"
+msgstr "data_X"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.5.String.Text
 msgid  "The X data array."
@@ -8065,7 +8065,7 @@ msgstr "Y datu masīvs."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.4.String.Text
 msgid  "data_X"
-msgstr "dati_X"
+msgstr "data_X"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RKP.5.String.Text
 msgid  "The X data array."
@@ -8105,7 +8105,7 @@ msgstr "data_X"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.5.String.Text
 msgid  "The X data array as the basis for the regression."
-msgstr "X datu masīvs lineārās regresijas aprēķinam."
+msgstr "X datu masīvs kā pamats regresijas aprēķinam."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.6.String.Text
 msgid  "new data_X"
@@ -8113,7 +8113,7 @@ msgstr "jauni dati_X"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.7.String.Text
 msgid  "The array of X data for recalculating the values."
-msgstr "Jaunie X dati vērtību pārrēķināšanai."
+msgstr "X datu masīvs vērtību pārrēķināšanai."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.8.String.Text
 msgid  "Linear_type"
@@ -8457,7 +8457,7 @@ msgstr "dati"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PERCENTILE.3.String.Text
 msgid  "The array of the data in the sample."
-msgstr "Datu masīvs paraugā."
+msgstr "Parauga datu masīvs."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PERCENTILE.4.String.Text
 msgid  "Alpha"
@@ -8821,7 +8821,7 @@ msgstr "Vērtība, kurai tiks aprēķināts Puasona sadalījums."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.4.String.Text
 msgid  "mean"
-msgstr "vidējais"
+msgstr "Vidējais"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST.5.String.Text
 msgid  "Mean. The mean value of the Poisson distribution."
@@ -9145,7 +9145,7 @@ msgstr "Beigas"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.11.String.Text
 msgid  "The final value for the value interval of the distribution."
-msgstr "Pēdējā vērtība sadalījuma vērtību intervālam."
+msgstr "Beigu vērtība sadalījuma vērtību intervālam."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST.12.String.Text
 msgid  "Cumulative"
@@ -9285,7 +9285,7 @@ msgstr "Vērtība, kurai tiek aprēķināts T sadalījums."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_DIST.4.String.Text
 msgid  "degrees_freedom"
-msgstr "brīvības_pakāpe"
+msgstr "Brīvības pakāpe"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_DIST.5.String.Text
 msgid  "The degrees of freedom of the T distribution."
@@ -9313,7 +9313,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_INV.4.String.Text
 msgid  "degrees_freedom"
-msgstr "Brīvības pakāpe"
+msgstr "brīvības_pakāpe"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_INV.5.String.Text
 msgid  "The degrees of freedom of the T distribution."
@@ -9509,7 +9509,7 @@ msgstr "Skaits_2"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VARIATIONEN.5.String.Text
 msgid  "The selection number taken from the elements."
-msgstr "Izvēles skaitlis, ņemts no elementiem."
+msgstr "Izvēles numurs, ņemts no elementiem."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VARIATIONEN_2.1.String.Text
 msgid  "Returns the number of permutations for a given number of objects (repetition allowed)."
@@ -10409,7 +10409,7 @@ msgstr "skaitlis"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHAR.3.String.Text
 msgid  "The code value for the character."
-msgstr "Skaitlis, kurš jāpārveido par rakstzīmi."
+msgstr "Rakstzīmes skaitliskā vērtība."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CLEAN.1.String.Text
 msgid  "Removes all nonprintable characters from text."
@@ -10477,7 +10477,7 @@ msgstr "Teksts, kurā tiek veikta meklēšana."
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.6.String.Text
 msgid  "position"
-msgstr "vieta"
+msgstr "pozīcija"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.7.String.Text
 msgid  "The position in the text from which the search starts."
@@ -11089,6 +11089,54 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MIDB.7.String.Text
 msgid  "The number of characters for the text."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.1.String.Text
+msgid  "Return the cosecant of an angle. CSC(x)=1/SIN(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.3.String.Text
+msgid  "The angle in radians for which the cosecant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.1.String.Text
+msgid  "Return the secant of an angle. SEC(x)=1/COS(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.3.String.Text
+msgid  "The angle in radians for which the secant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.1.String.Text
+msgid  "Return the hyperbolic cosecant of a hyperbolic angle. CSCH(x)=1/SINH(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.3.String.Text
+msgid  "The hyperbolic angle in radians for which the hyperbolic cosecant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.1.String.Text
+msgid  "Return the hyperbolic secant of a hyperbolic angle. SECH(x)=1/COSH(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.3.String.Text
+msgid  "The hyperbolic angle in radians for which the hyperbolic secant is to be calculated."
 msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_APPLICATION.String.Text
@@ -12633,7 +12681,7 @@ msgstr "Platums"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_COL_MAN.BTN_DEFVAL.CheckBox.Text
 msgid  "~Default value"
-msgstr "~Noklusētā vērtība"
+msgstr "Noklusētā vērtība"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_COL_OPT.ModalDialog.Text
 msgid  "Optimal Column Width"
@@ -12645,7 +12693,7 @@ msgstr "Pievienot"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_COL_OPT.BTN_DEFVAL.CheckBox.Text
 msgid  "~Default value"
-msgstr "Noklusētā vērtība"
+msgstr "~Noklusētā vērtība"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_ROW_MAN.ModalDialog.Text
 msgid  "Row Height"
@@ -13325,7 +13373,7 @@ msgstr "Dzē~st saturu..."
 
 #: source/ui/src/hdrcont.src#RID_POPUP_ROWHEADER.FID_ROW_HIDE.MenuItem.Text
 msgid  "~Hide"
-msgstr "~Slēpt"
+msgstr "Slēpt"
 
 #: source/ui/src/hdrcont.src#RID_POPUP_ROWHEADER.FID_ROW_SHOW.MenuItem.Text
 msgid  "~Show"
