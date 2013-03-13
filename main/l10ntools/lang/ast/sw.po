@@ -261,7 +261,7 @@ msgstr "Parar atributu"
 
 #: source/core/undo/undo.src#STR_AUTOCORRECT.String.Text
 msgid  "AutoCorrect"
-msgstr "AutoCorreición"
+msgstr "Autoigua"
 
 #: source/core/undo/undo.src#STR_MERGE_TABLE.String.Text
 msgid  "Merge table"
@@ -2209,7 +2209,7 @@ msgstr "~Imáxenes y oxetos"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_CTRLFLD.CheckBox.Text
 msgid  "Form control~s"
-msgstr "Contr. del formulariu"
+msgstr "Contr. del f~ormulariu"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_BACKGROUND.CheckBox.Text
 msgid  "Page ba~ckground"
@@ -2217,11 +2217,11 @@ msgstr "Fondu de la páxina"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_BLACK_FONT.CheckBox.Text
 msgid  "Print text in blac~k"
-msgstr "El testu en priet~o"
+msgstr "Imprentar el testu en priet~o"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_HIDDEN_TEXT.CheckBox.Text
 msgid  "Hidden te~xt"
-msgstr "Anubrir te~stu"
+msgstr "Te~stu ocultu"
 
 #: source/ui/config/optdlg.src#TP_OPTPRINT_PAGE.CB_TEXT_PLACEHOLDER.CheckBox.Text
 msgid  "Text ~placeholder"
@@ -2893,7 +2893,7 @@ msgstr "Usar mou de páxina cuadrada pa cuadrícula de testu"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.TabPage.Text
 msgid  "Caption"
-msgstr "Títulu"
+msgstr "Anotación"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_OBJECTS.FixedText.Text
 msgid  "Add captions automatically\nwhen inserting:"
@@ -2961,7 +2961,7 @@ msgstr "Nivel"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.LB_LEVEL.item1.StringList.item
 msgid  "None"
-msgstr "Dengún"
+msgstr "Nengún"
 
 #: source/ui/config/optload.src#TP_OPTCAPTION_PAGE.FT_SEPARATOR.FixedText.Text
 msgid  "Separator"
@@ -4521,7 +4521,7 @@ msgstr "Pallabres:"
 
 #: source/ui/dialog/wordcountdialog.src#DLG_WORDCOUNT.FT_CURRENTCHARACTER.FixedText.Text
 msgid  "Characters:"
-msgstr "Caráuteres:"
+msgstr "Carauteres:"
 
 #: source/ui/dialog/wordcountdialog.src#DLG_WORDCOUNT.FL_DOC.FixedLine.Text
 msgid  "Whole document"
@@ -4589,7 +4589,7 @@ msgstr "Columnes"
 
 #: source/ui/dialog/regionsw.src#DLG_INSERT_SECTION.1.TP_SECTION_INDENTS.PageItem.Text
 msgid  "Indents"
-msgstr "Sangríes"
+msgstr "Indentaciones"
 
 #: source/ui/dialog/regionsw.src#DLG_INSERT_SECTION.1.TP_BACKGROUND.PageItem.Text
 msgid  "Background"
@@ -4597,7 +4597,7 @@ msgstr "Fondu"
 
 #: source/ui/dialog/regionsw.src#DLG_INSERT_SECTION.1.TP_SECTION_FTNENDNOTES.PageItem.Text
 msgid  "Footnotes/Endnotes"
-msgstr "Notes al pie/finales"
+msgstr "Notes al pie/Notes a lo cabero"
 
 #: source/ui/dialog/regionsw.src#DLG_INSERT_SECTION.ST_INSERT.String.Text
 msgid  "Insert"
@@ -4641,11 +4641,11 @@ msgstr "Reco~yer a lo cabero'l testu"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.CB_FTN_NUM.CheckBox.Text
 msgid  "~Restart numbering"
-msgstr "rea~niciar numberación"
+msgstr "~Reaniciar numberación"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FT_FTN_OFFSET.FixedText.Text
 msgid  "~Start at"
-msgstr "Entamar en"
+msgstr "~Aniciar en"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.CB_FTN_NUM_FMT.CheckBox.Text
 msgid  "Custom ~format"
@@ -4653,11 +4653,11 @@ msgstr "~Formatu personalizáu"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FT_FTN_PREFIX.FixedText.Text
 msgid  "Be~fore"
-msgstr "Delan~tre"
+msgstr "Ena~ntes"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FT_FTN_SUFFIX.FixedText.Text
 msgid  "Aft~er"
-msgstr "De~trás"
+msgstr "D~epués"
 
 #: source/ui/dialog/regionsw.src#TP_SECTION_FTNENDNOTES.FL_END.FixedLine.Text
 msgid  "Endnotes"
@@ -5097,7 +5097,7 @@ msgstr "Estilos de párrafu aplicaos"
 
 #: source/ui/docvw/access.src#STR_ACCESS_DOC_NAME.String.Text
 msgid  "Document view"
-msgstr "Visualización del documentu"
+msgstr "Vista de documentu"
 
 #: source/ui/docvw/access.src#STR_ACCESS_DOC_DESC.String.Text
 msgid  "Document view"
@@ -5133,7 +5133,7 @@ msgstr "Nota al pie $(ARG1)"
 
 #: source/ui/docvw/access.src#STR_ACCESS_ENDNOTE_NAME.String.Text
 msgid  "Endnote $(ARG1)"
-msgstr "Nota final $(ARG1)"
+msgstr "Nota a lo cabero $(ARG1)"
 
 #: source/ui/docvw/access.src#STR_ACCESS_ENDNOTE_DESC.String.Text
 msgid  "Endnote $(ARG1)"
