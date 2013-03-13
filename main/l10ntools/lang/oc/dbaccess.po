@@ -595,8 +595,9 @@ msgid  "Overall progress:"
 msgstr "Progression globala:"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_OBJECT_COUNT_PROGRESS.FixedText.Text
+#, fuzzy
 msgid  "document $current$ of $overall$"
-msgstr "document $current$ sus $overall$"
+msgstr "documents $current$ de $overall$"
 
 #: source/ext/macromigration/macromigration.src#TP_MIGRATE.FT_MIGRATION_DONE.FixedText.Text
 msgid  "All forms and reports have been successfully processed. Press 'Next' to show a detailed summary."
@@ -1618,7 +1619,7 @@ msgstr "Reglatge null"
 #: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.RB_CASC_UPD_DEFAULT.RadioButton.Text
 #, fuzzy
 msgid  "Set ~default"
-msgstr "Reglatges per ~defaut"
+msgstr "Reglatge per ~defaut"
 
 #: source/ui/dlg/RelationDlg.src#DLG_REL_PROPERTIES.FL_CASC_DEL.FixedLine.Text
 #, fuzzy
@@ -2761,7 +2762,7 @@ msgstr "Lo senhal es pas trapat. Se vos plai, tornatz picar lo senhal."
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.ModalDialog.Text
 #, fuzzy
 msgid  "Database Wizard"
-msgstr "Assistent banca de donadas"
+msgstr "Assistent de banca de donadas"
 
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_DBWIZARDTITLE.String.Text
 #, fuzzy
@@ -2781,7 +2782,7 @@ msgstr "Parametrar la connexion d'una basa dBase"
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_TEXT.String.Text
 #, fuzzy
 msgid  "Set up a connection to text files"
-msgstr "Parametrar la connexion a de fichièrs tèxtes"
+msgstr "Parametrar una connexion a de fichièrs de tèxte"
 
 #: source/ui/dlg/dbadminsetup.src#DLG_DATABASE_WIZARD.STR_PAGETITLE_MSACCESS.String.Text
 #, fuzzy
@@ -3873,8 +3874,9 @@ msgid  "Unknown;Text;Number;Date/Time;Date;Time;Yes/No;Currency;Memo;Counter;Ima
 msgstr ""
 
 #: source/ui/tabledesign/table.src#STR_TABLEDESIGN_UNDO_PRIMKEY.String.Text
+#, fuzzy
 msgid  "Insert/remove primary key"
-msgstr "Inserir/escafar la clau primària"
+msgstr "Inserir/suprimir una clau primària"
 
 #: source/ui/tabledesign/table.src#STR_VALUE_YES.String.Text
 #, fuzzy

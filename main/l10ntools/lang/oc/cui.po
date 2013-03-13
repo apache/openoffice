@@ -37,7 +37,7 @@ msgstr "Apondre de comandas"
 
 #: source/customize/selector.src#STR_SELECTOR_MACROS.String.Text
 msgid  "%PRODUCTNAME Macros"
-msgstr "%PRODUCTNAME macros"
+msgstr "Macros %PRODUCTNAME "
 
 #: source/customize/selector.src#STR_SELECTOR_CATEGORIES.String.Text
 msgid  "~Category"
@@ -649,7 +649,7 @@ msgstr "Importar..."
 
 #: source/customize/cfg.src#MD_ICONSELECTOR.BTN_DELETE.PushButton.Text
 msgid  "Delete..."
-msgstr "Suprimir..."
+msgstr "Suprimir...."
 
 #: source/customize/cfg.src#MD_ICONSELECTOR.FT_NOTE.FixedText.Text
 msgid  "Note:\nThe size of an icon should be 16x16 pixel to achieve best quality. Different sized icons will be scaled automatically."
@@ -884,7 +884,7 @@ msgstr "~Suprimir..."
 #: source/dialogs/scriptdlg.src#RID_DLG_NEWLIB.ModalDialog.Text
 #, fuzzy
 msgid  "Create Library"
-msgstr "Crear una bibliotèca"
+msgstr "Crear una librariá "
 
 #: source/dialogs/scriptdlg.src#RID_DLG_NEWLIB.FT_NEWLIB.FixedText.Text
 #, fuzzy
@@ -1338,7 +1338,7 @@ msgstr "~Quadre"
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.FT_FORM.FixedText.Text
 #, fuzzy
 msgid  "F~orm"
-msgstr "~Formulari"
+msgstr "F~ormulari"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_INTERNET.LB_FORM.Default.StringList.item
 #, fuzzy
@@ -1398,7 +1398,7 @@ msgstr "~Objècte"
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.BTN_ADRESSBOOK.ButtonImage.Text
 #, fuzzy
 msgid  "Data Sources..."
-msgstr "Fonts de donadas..."
+msgstr "Font de donadas..."
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.BTN_ADRESSBOOK.ButtonImage.QuickHelpText
 #, fuzzy
@@ -1418,7 +1418,7 @@ msgstr "~Quadre"
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.FT_FORM.FixedText.Text
 #, fuzzy
 msgid  "F~orm"
-msgstr "F~ormulari"
+msgstr "~Formulari"
 
 #: source/dialogs/hyperdlg.src#RID_SVXPAGE_HYPERLINK_MAIL.LB_FORM.Default.StringList.item
 #, fuzzy
@@ -1746,7 +1746,7 @@ msgstr "~Sasir lo mot de santa Clara de dobertura"
 #: source/dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.FT_REENTER_PASSWD_TO_OPEN.FixedText.Text
 #, fuzzy
 msgid  "Confirm password"
-msgstr "Confirmar lo mot de sanat Clara"
+msgstr "Confirmar lo mot de santa Clara"
 
 #: source/dialogs/passwdomdlg.src#RID_DLG_PASSWORD_TO_OPEN_MODIFY.FT_PASSWD_NOTE.FixedText.Text
 msgid  "Note: After a password has been set, the document will only open with the password. Should you lose the password, there will be no way to recover the document. Please also note that this password is case-sensitive."
@@ -2074,7 +2074,7 @@ msgid  "~Delete"
 msgstr "~Suprimir"
 
 #: source/dialogs/about.src#RID_DEFAULTABOUT.ModalDialog.Text
-msgid  "About %PRODUCTNAME"
+msgid  "About %FULLPRODUCTNAME"
 msgstr ""
 
 #: source/dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_BTN_README.PushButton.Text
@@ -3276,8 +3276,9 @@ msgid  "HTTP~S proxy"
 msgstr "Proxy HTTP~S"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_HTTPS_PORT.FixedText.Text
+#, fuzzy
 msgid  "P~ort"
-msgstr "Pòrt"
+msgstr "Pò~rt"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_FTP_PROXY.FixedText.Text
 #, fuzzy
@@ -4038,8 +4039,9 @@ msgid  "Basic Syntax Highlighting"
 msgstr "Mesa en evidéncia de la sintaxic del Basic"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICIDENTIFIER.FixedText.Text
+#, fuzzy
 msgid  "Identifier"
-msgstr "Identificant"
+msgstr "Identificator"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICCOMMENT.FixedText.Text
 #, fuzzy
@@ -4278,7 +4280,7 @@ msgstr "Afichatge"
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SFXPAGE_PRINTOPTIONS.ItemList.item
 #, fuzzy
 msgid  "Print"
-msgstr "Estampar"
+msgstr "Estampatge"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SFXPAGE_PATH.ItemList.item
 #, fuzzy
@@ -4881,7 +4883,7 @@ msgstr "Cargar los paramètres d'estampatge amb lo document"
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.GB_SAVE.FixedLine.Text
 #, fuzzy
 msgid  "Save"
-msgstr "Enregistrar"
+msgstr "Enregistrament"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.BTN_DOCINFO.CheckBox.Text
 #, fuzzy
@@ -6519,7 +6521,7 @@ msgstr "Carrat"
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.FT_TRGR_CENTER_X.FixedText.Text
 #, fuzzy
 msgid  "Center ~X"
-msgstr "Centre de ~X"
+msgstr "Centre ~X"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_TRANSPARENCE.FT_TRGR_CENTER_Y.FixedText.Text
 #, fuzzy
@@ -6559,7 +6561,7 @@ msgstr "Transparéncia"
 #: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.TabPage.Text
 #, fuzzy
 msgid  "Area"
-msgstr "Crear"
+msgstr "Zòna"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_AREA.FL_PROP.FixedLine.Text
 #, fuzzy
@@ -6659,7 +6661,7 @@ msgstr "Ombra"
 #: source/tabpages/tabarea.src#RID_SVXPAGE_SHADOW.FL_PROP.FixedLine.Text
 #, fuzzy
 msgid  "Properties"
-msgstr "Propietats"
+msgstr "Proprietats"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_SHADOW.TSB_SHOW_SHADOW.TriStateBox.Text
 #, fuzzy
@@ -6689,7 +6691,7 @@ msgstr "~Transparéncia"
 #: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.TabPage.Text
 #, fuzzy
 msgid  "Hatching"
-msgstr "Raiat"
+msgstr "Raia"
 
 #: source/tabpages/tabarea.src#RID_SVXPAGE_HATCH.FL_PROP.FixedLine.Text
 #, fuzzy
@@ -8403,7 +8405,7 @@ msgstr "Insercion automatica"
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.1.RID_OFAPAGE_SMARTTAG_OPTIONS.PageItem.Text
 #, fuzzy
 msgid  "Smart Tags"
-msgstr "Balisas elegantas"
+msgstr "Balisas polidas"
 
 #: source/tabpages/autocdlg.src#RID_OFA_AUTOCORR_DLG.FT_LANG.FixedText.Text
 #, fuzzy
@@ -8538,7 +8540,7 @@ msgstr "Combinar"
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.FT_SHORT.FixedText.Text
 #, fuzzy
 msgid  "Repla~ce"
-msgstr "Rem~plaçar"
+msgstr "~Remplaçar"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.FT_REPLACE.FixedText.Text
 #, fuzzy
@@ -8553,7 +8555,7 @@ msgstr "~Tèxte solament"
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.PB_NEW_REPLACE.PushButton.Text
 #, fuzzy
 msgid  "~New"
-msgstr "~Nòu"
+msgstr "~Novèl"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.PB_DELETE_REPLACE.PushButton.Text
 #, fuzzy
@@ -9840,7 +9842,7 @@ msgstr "Posicion e talha"
 #: source/tabpages/textattr.src#RID_SVXPAGE_TEXTATTR.TabPage.Text
 #, fuzzy
 msgid  "Text"
-msgstr "Tèxte"
+msgstr "Tèxt"
 
 #: source/tabpages/textattr.src#RID_SVXPAGE_TEXTATTR.FL_TEXT.FixedLine.Text
 #, fuzzy
@@ -10000,7 +10002,7 @@ msgstr "Ori~zontal"
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_STD.StringList.item
 #, fuzzy
 msgid  "Default"
-msgstr "Per defaut"
+msgstr "Estandard"
 
 #: source/tabpages/align.src#RID_SVXPAGE_ALIGNMENT.LB_HORALIGN.ALIGNDLG_HORALIGN_LEFT.StringList.item
 #, fuzzy
@@ -10425,7 +10427,7 @@ msgstr "Color"
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.FT_COLOR2.FixedText.Text
 #, fuzzy
 msgid  "Font ~color"
-msgstr "~Color de la poliça"
+msgstr "~Color de poliça"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_NAME.STR_CHARNAME_NOSTYLE.String.Text
 #, fuzzy
@@ -10515,7 +10517,7 @@ msgstr "Puntilhat"
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDOTTED.StringList.item
 #, fuzzy
 msgid  "Dotted (Bold)"
-msgstr "Puntilhat (gras)"
+msgstr "Puntilhat (Gras)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DASH.StringList.item
 #, fuzzy
@@ -10535,17 +10537,17 @@ msgstr "Tiret long"
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDLONGDASH.StringList.item
 #, fuzzy
 msgid  "Long Dash (Bold)"
-msgstr "Tiret  long (gras)"
+msgstr "Tiret long (Gras)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DASHDOT.StringList.item
 #, fuzzy
 msgid  "Dot Dash"
-msgstr "Punt tiret"
+msgstr "Ponch tiret"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDASHDOT.StringList.item
 #, fuzzy
 msgid  "Dot Dash (Bold)"
-msgstr "Punt tiret (gras)"
+msgstr "Punt tiret (Gras)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DASHDOTDOT.StringList.item
 #, fuzzy
@@ -10555,7 +10557,7 @@ msgstr "Punt punt tiret"
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDASHDOTDOT.StringList.item
 #, fuzzy
 msgid  "Dot Dot Dash (Bold)"
-msgstr "Punt punt tiret (gras)"
+msgstr "Punt punt tiret (Gras)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_WAVE.StringList.item
 #, fuzzy
@@ -10565,7 +10567,7 @@ msgstr "Ondulacion"
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDWAVE.StringList.item
 #, fuzzy
 msgid  "Wave (Bold)"
-msgstr "Ondulacion (grassa)"
+msgstr "Ondulacion (Gras)"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DOUBLEWAVE.StringList.item
 #, fuzzy
@@ -11214,7 +11216,7 @@ msgstr "Projeccion d'ombra cap a l'ennaut d'esquèrra"
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.TabPage.Text
 #, fuzzy
 msgid  "Callouts"
-msgstr "Legendas"
+msgstr "Legenda"
 
 #: source/tabpages/labdlg.src#RID_SVXPAGE_CAPTION.FT_ABSTAND.FixedText.Text
 #, fuzzy
