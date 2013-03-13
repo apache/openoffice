@@ -733,7 +733,7 @@ msgstr "功能(~F)"
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPDATAFIELD.FT_NAMELABEL.FixedText.Text
 msgid  "Name:"
-msgstr "姓名："
+msgstr "名稱："
 
 #: source/ui/dbgui/pvfundlg.src#RID_SCDLG_DPDATAFIELD.FL_DISPLAY.FixedLine.Text
 msgid  "Displayed value"
@@ -1773,7 +1773,7 @@ msgstr "助手"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_ROW.FixedText.Text
 msgid  "Row"
-msgstr "列"
+msgstr "欄"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_ROW.NumericField.QuickHelpText
 msgid  "Row"
@@ -1781,7 +1781,7 @@ msgstr "欄"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.FT_COL.FixedText.Text
 msgid  "Column"
-msgstr "欄"
+msgstr "列"
 
 #: source/ui/navipi/navipi.src#RID_SCDLG_NAVIGATOR.ED_COL.SpinField.QuickHelpText
 msgid  "Column"
@@ -2089,7 +2089,7 @@ msgstr "文字屬性"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.BTN_FILE.ImageButton.QuickHelpText
 msgid  "Title"
-msgstr "檔案名稱"
+msgstr "標題"
 
 #: source/ui/pagedlg/hfedtdlg.src#RID_HFBASE.RID_POPUP_FCOMMAND.FILE_COMMAND_TITEL.MenuItem.Text
 msgid  "Title"
@@ -4725,7 +4725,7 @@ msgstr "標準篩選"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.FT_OP.FixedText.Text
 msgid  "Operator"
-msgstr "捷徑"
+msgstr "運算子"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.FT_FIELD.FixedText.Text
 msgid  "Field name"
@@ -4805,7 +4805,7 @@ msgstr "縮小"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.FT_DBAREA.FixedText.Text
 msgid  "dummy"
-msgstr "空"
+msgstr "樣本"
 
 #: source/ui/src/filter.src#RID_SCDLG_FILTER.FT_DBAREA_LABEL.FixedText.Text
 msgid  "Data range:"
@@ -4857,7 +4857,7 @@ msgstr "選項"
 
 #: source/ui/src/filter.src#RID_SCDLG_SPEC_FILTER.FT_DBAREA.FixedText.Text
 msgid  "dummy"
-msgstr "樣本"
+msgstr "樣式"
 
 #: source/ui/src/filter.src#RID_SCDLG_SPEC_FILTER.FT_DBAREA_LABEL.FixedText.Text
 msgid  "Data range:"
@@ -5285,7 +5285,7 @@ msgstr "資料庫"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.3.String.Text
 msgid  "The range of cells containing data."
-msgstr "含有數據的儲存格區域"
+msgstr "含數據的儲存格區域"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.4.String.Text
 msgid  "Database field"
@@ -5301,7 +5301,7 @@ msgstr "搜尋條件"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT.7.String.Text
 msgid  "Defines the cell range containing the search criteria."
-msgstr "確定含有搜尋條件的儲存格區域。"
+msgstr "確定含有搜尋條件儲存格區域。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.1.String.Text
 msgid  "Counts all non-blank cells of a data range where the content corresponds to the search criteria."
@@ -5313,7 +5313,7 @@ msgstr "資料庫"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.3.String.Text
 msgid  "The range of cells containing data."
-msgstr "含有數據的儲存格區域"
+msgstr "含有資料的儲存格區域"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.4.String.Text
 msgid  "Database field"
@@ -5329,7 +5329,7 @@ msgstr "搜尋條件"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_COUNT_2.7.String.Text
 msgid  "Defines the cell range containing the search criteria."
-msgstr "確定含有搜尋條件儲存格區域。"
+msgstr "確定含有搜尋條件的儲存格區域。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_AVERAGE.1.String.Text
 msgid  "Returns the average value of all the cells of a data range whose contents match the search criteria."
@@ -5341,7 +5341,7 @@ msgstr "資料庫"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_AVERAGE.3.String.Text
 msgid  "The range of cells containing data."
-msgstr "含數據的儲存格區域"
+msgstr "含有資料的儲存格區域"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_AVERAGE.4.String.Text
 msgid  "Database field"
@@ -5369,7 +5369,7 @@ msgstr "資料庫"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_GET.3.String.Text
 msgid  "The range of cells containing data."
-msgstr "含有數據的儲存格區域"
+msgstr "含有資料的儲存格區域"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_GET.4.String.Text
 msgid  "Database field"
@@ -5397,7 +5397,7 @@ msgstr "資料庫"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_MAX.3.String.Text
 msgid  "The range of cells containing data."
-msgstr "含有數據的儲存格區域"
+msgstr "含有資料的儲存格區域。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DB_MAX.4.String.Text
 msgid  "Database field"
@@ -5625,7 +5625,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DATE.4.String.Text
 msgid  "month"
-msgstr "月"
+msgstr "month"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DATE.5.String.Text
 msgid  "An integer between 1 and 12 representing the month."
@@ -5645,7 +5645,7 @@ msgstr "將文字格式的日期轉變成日期的系統內部數字。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DATE_VALUE.2.String.Text
 msgid  "text"
-msgstr "文字"
+msgstr "time_text"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DATE_VALUE.3.String.Text
 msgid  "A text enclosed in quotation marks which returns a date in a %PRODUCTNAME date format."
@@ -5657,11 +5657,11 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.2.String.Text
 msgid  "Number"
-msgstr "serial_number"
+msgstr "序數"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY.3.String.Text
 msgid  "The internal number for the date."
-msgstr "日期的系統內部數字。"
+msgstr "日期的內部數字。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.1.String.Text
 msgid  "Calculates the number of days between two dates based on a 360-day year."
@@ -5685,7 +5685,7 @@ msgstr "計算相差天數的一個較晚的日期。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.6.String.Text
 msgid  "Type"
-msgstr "type"
+msgstr "return_type"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DIFF_DATE_360.7.String.Text
 msgid  "Method used to form differences: Type = 0 denotes US method (NASD), Type = 1 denotes the European method."
@@ -5697,7 +5697,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_HOUR.2.String.Text
 msgid  "Number"
-msgstr "serial_number"
+msgstr "序數"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_HOUR.3.String.Text
 msgid  "Internal time value"
@@ -5709,7 +5709,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_MIN.2.String.Text
 msgid  "Number"
-msgstr "序數"
+msgstr "value"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_MIN.3.String.Text
 msgid  "Internal time value."
@@ -5721,11 +5721,11 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_MONTH.2.String.Text
 msgid  "Number"
-msgstr "序數"
+msgstr "number"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_MONTH.3.String.Text
 msgid  "The internal number of the date."
-msgstr "日期的系統內部數字。"
+msgstr "日期的內部數字。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_ACT_TIME.1.String.Text
 msgid  "Determines the current time of the computer."
@@ -5737,7 +5737,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_SEC.2.String.Text
 msgid  "Number"
-msgstr "序數"
+msgstr "number"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_SEC.3.String.Text
 msgid  "The internal time value."
@@ -5777,7 +5777,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_TIME_VALUE.2.String.Text
 msgid  "text"
-msgstr "time_text"
+msgstr "文字"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_TIME_VALUE.3.String.Text
 msgid  "A text enclosed in quotation marks which returns a time in a %PRODUCTNAME time format."
@@ -5793,7 +5793,7 @@ msgstr "轉換日期成對應的一週內的某天(1-7)。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY_OF_WEEK.2.String.Text
 msgid  "Number"
-msgstr "序數"
+msgstr "number"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY_OF_WEEK.3.String.Text
 msgid  "The internal number for the date."
@@ -5801,7 +5801,7 @@ msgstr "日期的內部數字。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY_OF_WEEK.4.String.Text
 msgid  "Type"
-msgstr "return_type"
+msgstr "型態"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY_OF_WEEK.5.String.Text
 msgid  "Fixes the beginning of the week and the type of calculation to be used."
@@ -5813,7 +5813,7 @@ msgstr "日期轉換成相對應的年份數。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_YEAR.2.String.Text
 msgid  "Number"
-msgstr "序數"
+msgstr "number"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_YEAR.3.String.Text
 msgid  "Internal number of the date."
@@ -5845,7 +5845,7 @@ msgstr "計算某一日期在一年中的星期序列數。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_WEEK.2.String.Text
 msgid  "Number"
-msgstr "value"
+msgstr "number"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_WEEK.3.String.Text
 msgid  "The internal number of the date."
@@ -5853,7 +5853,7 @@ msgstr "日期的內部數字。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_WEEK.4.String.Text
 msgid  "mode"
-msgstr "模式"
+msgstr "tails"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_WEEK.5.String.Text
 msgid  "Indicates the first day of the week (1 = Sunday, other values = Monday)."
@@ -5877,7 +5877,7 @@ msgstr "凈現值。計算一個投資的凈現值。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.2.String.Text
 msgid  "Rate"
-msgstr "rate"
+msgstr "Rate"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.3.String.Text
 msgid  "The rate of interest for the period given."
@@ -5885,7 +5885,7 @@ msgstr "每個週期的利率。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.4.String.Text
 msgid  "NPER"
-msgstr "NPER"
+msgstr "nper"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.5.String.Text
 msgid  "The payment period. The total number of periods in which the annuity is paid."
@@ -5893,7 +5893,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.6.String.Text
 msgid  "PMT"
-msgstr "PMT"
+msgstr "pmt"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.7.String.Text
 msgid  "Regular payments. The constant amount of annuity that is paid in each period."
@@ -5901,7 +5901,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.8.String.Text
 msgid  "FV"
-msgstr "fv"
+msgstr "FV"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.9.String.Text
 msgid  "Future value. The value (final value) to be attained after the last payment."
@@ -5909,11 +5909,11 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.10.String.Text
 msgid  "Type"
-msgstr "型態"
+msgstr "type"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_BW.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "型態 = 1 表示在週期開始時到期，= 0 表示在週期結束時到期。"
+msgstr "到期類型。 F = 1 表示在期初時到期﹐F = 0 表示在期末時到期。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.1.String.Text
 msgid  "Future value. Returns the future value of an investment based on regular payments and a constant interest rate."
@@ -5921,15 +5921,15 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.2.String.Text
 msgid  "Rate"
-msgstr "Rate"
+msgstr "rate"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.3.String.Text
 msgid  "The rate of interest per period."
-msgstr "各期的利率。"
+msgstr "每個週期的利率。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.4.String.Text
 msgid  "NPER"
-msgstr "nper"
+msgstr "NPER"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.5.String.Text
 msgid  "Payment period. The total number of periods in which the annuity (pension) is paid."
@@ -5941,7 +5941,7 @@ msgstr "pmt"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.7.String.Text
 msgid  "Regular payments. The constant annuity to be paid in each period."
-msgstr "各期支付的恆定年金。"
+msgstr "各個週期應支付的年金。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.8.String.Text
 msgid  "PV"
@@ -5949,15 +5949,15 @@ msgstr "pv"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.9.String.Text
 msgid  "Present value. The current value of a series of payments"
-msgstr "凈現值。一系列未來付款目前值的累積數。"
+msgstr "凈現值。或一系列未來支付的目前價值。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.10.String.Text
 msgid  "Type"
-msgstr "type"
+msgstr "Type"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZW.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "到期類型。 F = 1 表示在期初時到期﹐F = 0 表示在期末時到期。"
+msgstr "到期類型。 F = 1 表示在週期開始時到期﹐F = 0 表示在週期結束時到期。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.1.String.Text
 msgid  "Payment period. Calculates the number of payment periods for an investment based on regular payments and a constant interest rate."
@@ -5977,7 +5977,7 @@ msgstr "pmt"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.5.String.Text
 msgid  "Regular payments. The constant annuity to be paid in each period."
-msgstr "各個週期應支付的年金。"
+msgstr "分期付款。各期支付的恆定年金。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.6.String.Text
 msgid  "PV"
@@ -5997,11 +5997,11 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.10.String.Text
 msgid  "Type"
-msgstr "type"
+msgstr "no_switch"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZZR.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "到期類型。 F = 1 表示在週期開始時到期﹐F = 0 表示在週期結束時到期。"
+msgstr "到期類型。 F = 1 表示在週期開始時到期﹐F = 0 表示是在週期結束時到期。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.1.String.Text
 msgid  "Regular payments. Returns the periodic payment of an annuity, based on regular payments and a fixed periodic interest rate."
@@ -6017,7 +6017,7 @@ msgstr "每個週期的利率。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.4.String.Text
 msgid  "NPER"
-msgstr "nper"
+msgstr "NPER"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.5.String.Text
 msgid  "Payment period. The total number of periods in which the annuity (pension) is paid."
@@ -6041,11 +6041,11 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.10.String.Text
 msgid  "Type"
-msgstr "type"
+msgstr "Type"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RMZ.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "到期類型。 F = 1 表示在週期開始時到期﹐F = 0 表示在週期結束時到期。"
+msgstr "到期類型。 F = 1 表示在週期的開始時到期﹐F = 0 表示在週期的結束時到期。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.1.String.Text
 msgid  "Calculates the constant interest rate of an investment with regular payments."
@@ -6053,7 +6053,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.2.String.Text
 msgid  "NPER"
-msgstr "nper"
+msgstr "NPER"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.3.String.Text
 msgid  "Payment period. The total number of periods in which the annuity (pension) is paid."
@@ -6085,11 +6085,11 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.10.String.Text
 msgid  "Type"
-msgstr "type"
+msgstr "Order"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.11.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "到期類型。 F = 1 表示在週期開始時到期﹐F = 0 表示在週期結束時到期。"
+msgstr "到期類型。F = 1 表示在一個週期開始時到期。 F = 0 則表示在一個週期結束時到期。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS.12.String.Text
 msgid  "Guess"
@@ -6113,7 +6113,7 @@ msgstr "每個週期的利率。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.4.String.Text
 msgid  "Period"
-msgstr "per"
+msgstr "period"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.5.String.Text
 msgid  "Periods. The periods for which the compounded interest is to be calculated. P = 1 denotes for the first period, P = NPER for the last one."
@@ -6129,7 +6129,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.8.String.Text
 msgid  "pv"
-msgstr "pv"
+msgstr "PV"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.9.String.Text
 msgid  "Present value. The current value of a series of payments"
@@ -6145,7 +6145,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.12.String.Text
 msgid  "Type"
-msgstr "type"
+msgstr "Type"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ZINS_Z.13.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
@@ -6165,7 +6165,7 @@ msgstr "每個週期的利率。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.4.String.Text
 msgid  "Period"
-msgstr "per"
+msgstr "period"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.5.String.Text
 msgid  "Period. The period for which the repayments are to be calculated. Per = 1 denotes for the first period, P = NPER for the last"
@@ -6197,7 +6197,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.12.String.Text
 msgid  "Type"
-msgstr "type"
+msgstr "match_type"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KAPZ.13.String.Text
 msgid  "Type = 1 denotes due at the beginning of the period, = 0 at the end."
@@ -6233,7 +6233,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KUM_KAP_Z.8.String.Text
 msgid  "S"
-msgstr "Start_period"
+msgstr "start_period"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KUM_KAP_Z.9.String.Text
 msgid  "The start period. The first period to be taken into account. A = 1 denotes the very first period."
@@ -6241,7 +6241,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KUM_KAP_Z.10.String.Text
 msgid  "E"
-msgstr "end_period"
+msgstr "End_period"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KUM_KAP_Z.11.String.Text
 msgid  "End period. The last period to be taken into account."
@@ -6277,7 +6277,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KUM_ZINS_Z.6.String.Text
 msgid  "pv"
-msgstr "PV"
+msgstr "pv"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_KUM_ZINS_Z.7.String.Text
 msgid  "The present value. The present value or the amount the annuity is currently worth."
@@ -6333,7 +6333,7 @@ msgstr "life"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.7.String.Text
 msgid  "Useful life. The number of periods in the useful life of the asset."
-msgstr "使用年限。資產可用的期數。"
+msgstr "使用年限。資產折舊期限。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DIA.8.String.Text
 msgid  "Period"
@@ -6369,7 +6369,7 @@ msgstr "life"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LIA.7.String.Text
 msgid  "Useful life. The number of periods in the useful life of the asset."
-msgstr "使用年限。資產折舊期限。"
+msgstr "使用年限。資產折舊年限。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GDA.1.String.Text
 msgid  "Calculates the depreciation of an asset for a specific period using the double-declining balance method or declining balance factor."
@@ -6573,7 +6573,7 @@ msgstr "各個週期的貼現率。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_NBW.4.String.Text
 msgid  "value "
-msgstr "value "
+msgstr "值"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_NBW.5.String.Text
 msgid  "Value 1, value 2,... are 1 to 30 arguments representing payments and income."
@@ -6677,7 +6677,7 @@ msgstr "恆定利率"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LAUFZ.4.String.Text
 msgid  "pv"
-msgstr "pv"
+msgstr "PV"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LAUFZ.5.String.Text
 msgid  "The present value. The current value of the investment."
@@ -6725,7 +6725,7 @@ msgstr "如果這個值是一個參照﹐那就傳回 TRUE。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_REF.2.String.Text
 msgid  "value"
-msgstr "值"
+msgstr "值值"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_REF.3.String.Text
 msgid  "The value to be tested."
@@ -6737,7 +6737,7 @@ msgstr "如果一個錯誤值不等於 #N/A﹐那就傳回 TRUE。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_ERR.2.String.Text
 msgid  "value"
-msgstr "值"
+msgstr "number"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_ERR.3.String.Text
 msgid  "The value to be tested."
@@ -6749,7 +6749,7 @@ msgstr "如果這個值是一個錯誤值﹐那麼就傳回 TRUE。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_ERROR.2.String.Text
 msgid  "value"
-msgstr "值"
+msgstr "value"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_ERROR.3.String.Text
 msgid  "The value to be tested."
@@ -6761,7 +6761,7 @@ msgstr "如果值是一個空白的儲存格參照﹐那麼就傳回 TRUE。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_EMPTY.2.String.Text
 msgid  "value"
-msgstr "值"
+msgstr "value"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_EMPTY.3.String.Text
 msgid  "The value to be tested."
@@ -6773,7 +6773,7 @@ msgstr "如果這個值是一個邏輯值﹐那就傳回 TRUE。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_LOGICAL.2.String.Text
 msgid  "value"
-msgstr "值"
+msgstr "Value"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_LOGICAL.3.String.Text
 msgid  "The value to be tested."
@@ -6785,7 +6785,7 @@ msgstr "如果這個值等於 #N/A﹐那就傳回 TRUE。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_NV.2.String.Text
 msgid  "value"
-msgstr "值"
+msgstr "value"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_NV.3.String.Text
 msgid  "The value to be tested."
@@ -6833,7 +6833,7 @@ msgstr "如果這個儲存格是一個公式儲存格﹐那就傳回 TRUE 。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_FORMULA.2.String.Text
 msgid  "reference"
-msgstr "參考值"
+msgstr "reference"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_IS_FORMULA.3.String.Text
 msgid  "The cell to be checked."
@@ -6845,7 +6845,7 @@ msgstr "反饋一個儲存格的公式。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_FORMULA.2.String.Text
 msgid  "Reference"
-msgstr "Reference"
+msgstr "參考值"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_FORMULA.3.String.Text
 msgid  "The formula cell."
@@ -6993,7 +6993,7 @@ msgstr "一個數字的絕對值。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ABS.2.String.Text
 msgid  "Number"
-msgstr "number"
+msgstr "Angle"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ABS.3.String.Text
 msgid  "The number whose absolute value is to be returned."
@@ -7025,7 +7025,7 @@ msgstr "計算一個區域中空白儲存格的數目。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COUNT_EMPTY_CELLS.2.String.Text
 msgid  "range"
-msgstr "range"
+msgstr "範圍"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COUNT_EMPTY_CELLS.3.String.Text
 msgid  "The range in which empty cells are to be counted."
@@ -7041,7 +7041,7 @@ msgstr "引數匯總求和。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM.2.String.Text
 msgid  "number "
-msgstr "number "
+msgstr "數字 "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 arguments whose total is to be calculated."
@@ -7053,7 +7053,7 @@ msgstr "計算引數的平方和。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_SQ.2.String.Text
 msgid  "number "
-msgstr "number "
+msgstr "數字 "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_SQ.3.String.Text
 msgid  "Number 1, number 2,... are 1 to 30 arguments for which the sum of the squares is to be calculated."
@@ -7077,7 +7077,7 @@ msgstr "根據指定條件對若干元素求和。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_IF.2.String.Text
 msgid  "range"
-msgstr "範圍"
+msgstr "area_num"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_IF.3.String.Text
 msgid  "The range to be evaluated by the criteria given."
@@ -7089,7 +7089,7 @@ msgstr "條件"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_IF.5.String.Text
 msgid  "The cell range in which the search criteria are given."
-msgstr "指定的條件。"
+msgstr "指定採用搜尋條件的儲存格區域。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_IF.6.String.Text
 msgid  "sum_range"
@@ -7105,7 +7105,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IF.2.String.Text
 msgid  "range"
-msgstr "範圍"
+msgstr "range"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IF.3.String.Text
 msgid  "The range to be evaluated by the criteria given."
@@ -7229,7 +7229,7 @@ msgstr "求一個數的正平方根。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.2.String.Text
 msgid  "number"
-msgstr "number"
+msgstr "probability"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SQRT.3.String.Text
 msgid  "A positive value for which the square root is to be calculated."
@@ -7309,7 +7309,7 @@ msgstr "計算一個數的反餘弦值。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_COS.2.String.Text
 msgid  "Number"
-msgstr "number"
+msgstr "Angle"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_COS.3.String.Text
 msgid  "A value between -1 and 1 for which the arccosine is to be returned."
@@ -7321,7 +7321,7 @@ msgstr "計算一個數字的反正弦值。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_SIN.2.String.Text
 msgid  "Number"
-msgstr "number"
+msgstr "Number"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_SIN.3.String.Text
 msgid  "A value between -1 and 1 for which the arcsine is to be returned."
@@ -7333,7 +7333,7 @@ msgstr "計算一個數字的反雙曲線餘弦值。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_COS_HYP.2.String.Text
 msgid  "Number"
-msgstr "number"
+msgstr "Number"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_COS_HYP.3.String.Text
 msgid  "A value greater than or equal to 1 for which the hyperbolic cosine is to be returned."
@@ -7345,7 +7345,7 @@ msgstr "計算一個數字的反雙曲正弦值。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_SIN_HYP.2.String.Text
 msgid  "Number"
-msgstr "number"
+msgstr "Number"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_SIN_HYP.3.String.Text
 msgid  "The value for which the inverse hyperbolic sine is to be returned."
@@ -7357,7 +7357,7 @@ msgstr "計算一個數字的反餘切值。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_COT.2.String.Text
 msgid  "Number"
-msgstr "number"
+msgstr "Number"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_COT.3.String.Text
 msgid  "The value for which the inverse cotangent is to be returned."
@@ -7369,7 +7369,7 @@ msgstr "計算一個數的反正切值。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_TAN.2.String.Text
 msgid  "Number"
-msgstr "number"
+msgstr "Number"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_TAN.3.String.Text
 msgid  "The value for which the arctangent is to be returned."
@@ -7381,7 +7381,7 @@ msgstr "計算一個數的反雙曲餘切值。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_COT_HYP.2.String.Text
 msgid  "Number"
-msgstr "number"
+msgstr "Number"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_COT_HYP.3.String.Text
 msgid  "A value smaller than -1 or greater than 1 for which the inverse hyperbolic cotangent is to be returned."
@@ -7393,7 +7393,7 @@ msgstr "計算一個數的反雙曲正切值。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_TAN_HYP.2.String.Text
 msgid  "Number"
-msgstr "number"
+msgstr "Number"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_TAN_HYP.3.String.Text
 msgid  "A value between -1 and 1 for which the inverse hyperbolic tangent is to be returned."
@@ -7405,7 +7405,7 @@ msgstr "計算一個角度的餘弦值。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COS.2.String.Text
 msgid  "Number"
-msgstr "number"
+msgstr "Number"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COS.3.String.Text
 msgid  "The angle in the radians for which the cosine is to be returned."
@@ -7417,7 +7417,7 @@ msgstr "計算輸入角度的正弦值。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN.2.String.Text
 msgid  "number"
-msgstr "number"
+msgstr "probability"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN.3.String.Text
 msgid  "The angle in radians for which the sine is to be calculated."
@@ -7429,7 +7429,7 @@ msgstr "計算一個角度的餘切值。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COT.2.String.Text
 msgid  "Number"
-msgstr "number"
+msgstr "Number"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COT.3.String.Text
 msgid  "The angle in radians whose cotangent value is to be returned."
@@ -7441,7 +7441,7 @@ msgstr "計算一個數的正切值。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN.2.String.Text
 msgid  "number"
-msgstr "number"
+msgstr "Probability"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN.3.String.Text
 msgid  "The angle in radians for which the tangent is to be calculated."
@@ -7453,7 +7453,7 @@ msgstr "計算一個數的雙曲餘弦值。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COS_HYP.2.String.Text
 msgid  "Number"
-msgstr "number"
+msgstr "serial_number"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COS_HYP.3.String.Text
 msgid  "The value for which the hyperbolic cosine is to be returned."
@@ -7465,7 +7465,7 @@ msgstr "計算一個數的雙曲正弦值。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN_HYP.2.String.Text
 msgid  "number"
-msgstr "number"
+msgstr "num_chars"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SIN_HYP.3.String.Text
 msgid  "The value for which the hyperbolic sine is to be calculated."
@@ -7477,7 +7477,7 @@ msgstr "計算一個數的雙曲餘切值。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COT_HYP.2.String.Text
 msgid  "Number"
-msgstr "number"
+msgstr "Number"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COT_HYP.3.String.Text
 msgid  "A value not equal to 0 for which the hyperbolic cotangent is to be returned."
@@ -7489,7 +7489,7 @@ msgstr "計算一個數的雙曲正切值。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN_HYP.2.String.Text
 msgid  "number"
-msgstr "number"
+msgstr "num_chars"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TAN_HYP.3.String.Text
 msgid  "The value for which the hyperbolic tangent is to be calculated."
@@ -7521,7 +7521,7 @@ msgstr "轉換弧度成角度。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DEG.2.String.Text
 msgid  "Number"
-msgstr "Angle"
+msgstr "serial_number"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_DEG.3.String.Text
 msgid  "The angle in a radian"
@@ -7533,7 +7533,7 @@ msgstr "將角度轉換為弧度。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RAD.2.String.Text
 msgid  "Number"
-msgstr "Angle"
+msgstr "Number"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_RAD.3.String.Text
 msgid  "The angle in degrees."
@@ -7545,7 +7545,7 @@ msgstr "計算底數為 e 的指數函數值。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_EXP.2.String.Text
 msgid  "Number"
-msgstr "number"
+msgstr "Number"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_EXP.3.String.Text
 msgid  "The exponent applied to base e."
@@ -7557,11 +7557,11 @@ msgstr "計算一個指定底數的數的對數。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LOG.2.String.Text
 msgid  "Number"
-msgstr "number"
+msgstr "Number"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LOG.3.String.Text
 msgid  "A value greater than 0 for which the logarithm is to be calculated."
-msgstr "要計算其對數的一個大於零的數。"
+msgstr "計算一個大於零的數的對數。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LOG.4.String.Text
 msgid  "Base"
@@ -7577,7 +7577,7 @@ msgstr "計算一個數的自然對數。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LN.2.String.Text
 msgid  "Number"
-msgstr "number"
+msgstr "Number"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LN.3.String.Text
 msgid  "A value greater than 0 for which the natural logarithm is to be calculated."
@@ -7589,7 +7589,7 @@ msgstr "計算底數為 10 的對數。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LOG10.2.String.Text
 msgid  "Number"
-msgstr "number"
+msgstr "serial_number"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_LOG10.3.String.Text
 msgid  "A value greater than 0 for which the logarithm is to be calculated."
@@ -7601,7 +7601,7 @@ msgstr "計算一個數的階乘。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_FACT.2.String.Text
 msgid  "Number"
-msgstr "number"
+msgstr "Number"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_FACT.3.String.Text
 msgid  "The number for which the factorial is to be calculated."
@@ -7633,7 +7633,7 @@ msgstr "確定一個數字的正負符號。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_PLUS_MINUS.2.String.Text
 msgid  "Number"
-msgstr "number"
+msgstr "數目"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_PLUS_MINUS.3.String.Text
 msgid  "The number for which the algebraic sign is to be determined."
@@ -7665,11 +7665,11 @@ msgstr "將一個數捨入為最接近的 (數值減小) 整數。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_INT.2.String.Text
 msgid  "Number"
-msgstr "Number"
+msgstr "number"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_INT.3.String.Text
 msgid  "The number to be rounded down."
-msgstr "要被捨入的數字。"
+msgstr "需要向下捨入的任意實數。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TRUNC.1.String.Text
 msgid  "Truncates the decimal places of a number."
@@ -7677,7 +7677,7 @@ msgstr "去除數字的小數點位數。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TRUNC.2.String.Text
 msgid  "number"
-msgstr "number"
+msgstr "num_chars"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TRUNC.3.String.Text
 msgid  "The number to be truncated."
@@ -7697,7 +7697,7 @@ msgstr "按指定位數向上 (沿絕對值增大的方向) 捨入數字。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND.2.String.Text
 msgid  "number"
-msgstr "number"
+msgstr "num_times"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND.3.String.Text
 msgid  "The number to be rounded."
@@ -7709,7 +7709,7 @@ msgstr "count"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND.5.String.Text
 msgid  "The number of places to which a number is to be rounded."
-msgstr "指定的位數﹐按此位數進行捨入。"
+msgstr "捨入後的數字的位數。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.1.String.Text
 msgid  "Rounds a number up to the predefined accuracy."
@@ -7717,11 +7717,11 @@ msgstr "按指定位數捨入數字。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.2.String.Text
 msgid  "number"
-msgstr "probability"
+msgstr "number"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.3.String.Text
 msgid  "The number to be rounded up."
-msgstr "需要向上捨入的任意實數。"
+msgstr "要取整的數字。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_UP.4.String.Text
 msgid  "count"
@@ -7737,11 +7737,11 @@ msgstr "按指定位數向下 (沿絕對值減小的方向) 捨入數字。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_DOWN.2.String.Text
 msgid  "number"
-msgstr "probability"
+msgstr "number"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_DOWN.3.String.Text
 msgid  "The number to be rounded down."
-msgstr "需要向下捨入的任意實數。"
+msgstr "要被捨入的數字。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ROUND_DOWN.4.String.Text
 msgid  "count"
@@ -7761,7 +7761,7 @@ msgstr "Number"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_EVEN.3.String.Text
 msgid  "The number to be rounded up."
-msgstr "要取整的數字。"
+msgstr "需要向上捨入的數。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ODD.1.String.Text
 msgid  "Rounds a positive number up and negative number down to the nearest odd integer."
@@ -7773,7 +7773,7 @@ msgstr "Number"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ODD.3.String.Text
 msgid  "The number to be rounded up."
-msgstr "需要向上捨入的數。"
+msgstr "要被捨入的數字。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_CEIL.1.String.Text
 msgid  "Rounds a number up to the nearest multiple of significance."
@@ -7789,7 +7789,7 @@ msgstr "要被捨入的數字。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_CEIL.4.String.Text
 msgid  "Significance"
-msgstr "有效位數"
+msgstr "精度"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_CEIL.5.String.Text
 msgid  "The number to whose multiple the value is rounded."
@@ -7797,7 +7797,7 @@ msgstr "基數﹐是指捨入成其倍數的數字。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_CEIL.6.String.Text
 msgid  "Mode"
-msgstr "mode"
+msgstr "模式"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_CEIL.7.String.Text
 msgid  "If given and not equal to zero then rounded up according to amount when a negative number and significance."
@@ -7861,7 +7861,7 @@ msgstr "矩陣轉置。交換矩陣的列與欄。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_TRANS.2.String.Text
 msgid  "array"
-msgstr "矩陣"
+msgstr "array"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_TRANS.3.String.Text
 msgid  "The array in which the rows and columns have been transposed."
@@ -7873,7 +7873,7 @@ msgstr "矩陣乘積。計算兩個矩陣的乘積。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_MULT.2.String.Text
 msgid  "array"
-msgstr "矩陣"
+msgstr "array"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_MAT_MULT.3.String.Text
 msgid  "The first array for the array product."
@@ -8001,7 +8001,7 @@ msgstr "以垂直陣列傳回頻率分布。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FREQUENCY.2.String.Text
 msgid  "data"
-msgstr "資料"
+msgstr "Data"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FREQUENCY.3.String.Text
 msgid  "The array of the data."
@@ -8021,7 +8021,7 @@ msgstr "以陣列計算線性迴歸的參數。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.2.String.Text
 msgid  "data_Y"
-msgstr "Y資料"
+msgstr "data_Y"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.3.String.Text
 msgid  "The Y data array."
@@ -8029,7 +8029,7 @@ msgstr "Y 資料矩陣。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.4.String.Text
 msgid  "data_X"
-msgstr "X資料"
+msgstr "data_X"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.5.String.Text
 msgid  "The X data array."
@@ -8037,7 +8037,7 @@ msgstr "X 資料矩陣。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.6.String.Text
 msgid  "Linear_type"
-msgstr "線性形式"
+msgstr "Linear_type"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RGP.7.String.Text
 msgid  "If type = 0 the linears will be calculated through the zero point, or else moved linears."
@@ -8105,7 +8105,7 @@ msgstr "data_X"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.5.String.Text
 msgid  "The X data array as the basis for the regression."
-msgstr "作為迴歸計算基礎的 X 資料矩陣。"
+msgstr "X 資料矩陣當作迴歸的基數。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.6.String.Text
 msgid  "new data_X"
@@ -8113,7 +8113,7 @@ msgstr "new data_X"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.7.String.Text
 msgid  "The array of X data for recalculating the values."
-msgstr "用來計算新值的 X 資料矩陣。"
+msgstr "用來預測指數趨勢值的新的 X 資料矩陣。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TREND.8.String.Text
 msgid  "Linear_type"
@@ -8165,7 +8165,7 @@ msgstr "計算數字項的個數。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COUNT.2.String.Text
 msgid  "value "
-msgstr "值"
+msgstr "值 "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COUNT.3.String.Text
 msgid  "Value 1, value 2, ... are 1 to 30 arguments containing different data types but where only numbers are counted."
@@ -8177,7 +8177,7 @@ msgstr "計算引數清單中值的個數。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COUNT_2.2.String.Text
 msgid  "value "
-msgstr "值"
+msgstr "值 "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COUNT_2.3.String.Text
 msgid  "Value 1, value 2, ... are 1 to 30 arguments representing the values to be counted."
@@ -8189,7 +8189,7 @@ msgstr "引數清單中的最大值。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MAX.2.String.Text
 msgid  "number "
-msgstr "number "
+msgstr "數字 "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MAX.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments for which the largest number is to be determined."
@@ -8201,7 +8201,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MAX_A.2.String.Text
 msgid  "value "
-msgstr "值"
+msgstr "值 "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MAX_A.3.String.Text
 msgid  "Value 1, value 2,    are 1 to 30 arguments whose largest value is to be determined."
@@ -8213,7 +8213,7 @@ msgstr "確定引數表中的最小值。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MIN.2.String.Text
 msgid  "number "
-msgstr "number "
+msgstr "數字 "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MIN.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments for which the smallest number is to be determined."
@@ -8225,7 +8225,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MIN_A.2.String.Text
 msgid  "value "
-msgstr "值 "
+msgstr "value "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MIN_A.3.String.Text
 msgid  "Value 1; value 2;... are 1 to 30 arguments whose smallest number is to be determined."
@@ -8237,7 +8237,7 @@ msgstr "計算樣本的變異數。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR.2.String.Text
 msgid  "number "
-msgstr "數字 "
+msgstr "number "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample of a population."
@@ -8261,7 +8261,7 @@ msgstr "計算母體的變異數。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR_P.2.String.Text
 msgid  "number "
-msgstr "數字 "
+msgstr "number "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR_P.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which represent a population."
@@ -8285,7 +8285,7 @@ msgstr "計算樣本的標準偏差。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ST_DEV.2.String.Text
 msgid  "number "
-msgstr "數字 "
+msgstr "number "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ST_DEV.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample of a population."
@@ -8309,7 +8309,7 @@ msgstr "計算母體的標準差。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ST_DEV_P.2.String.Text
 msgid  "number "
-msgstr "數字 "
+msgstr "number "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ST_DEV_P.3.String.Text
 msgid  "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample of a population."
@@ -8333,7 +8333,7 @@ msgstr "計算樣本的平均值。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AVERAGE.2.String.Text
 msgid  "number "
-msgstr "數字 "
+msgstr "number "
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AVERAGE.3.String.Text
 msgid  "Number 1, number 2;...are 1 to 30 numeric arguments representing a population sample."
@@ -8453,11 +8453,11 @@ msgstr "計算樣本的 alpha 百分比值。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PERCENTILE.2.String.Text
 msgid  "data"
-msgstr "資料"
+msgstr "x_range"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PERCENTILE.3.String.Text
 msgid  "The array of the data in the sample."
-msgstr "定義樣本中的資料矩陣。"
+msgstr "樣本中的資料矩陣。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PERCENTILE.4.String.Text
 msgid  "Alpha"
@@ -8473,11 +8473,11 @@ msgstr "計算樣本的四分位數。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_QUARTILE.2.String.Text
 msgid  "data"
-msgstr "資料"
+msgstr "data"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_QUARTILE.3.String.Text
 msgid  "The array of the data in the sample."
-msgstr "樣本中的資料矩陣。"
+msgstr "樣本資料的陣列。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_QUARTILE.4.String.Text
 msgid  "Type"
@@ -8497,7 +8497,7 @@ msgstr "Data"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LARGE.3.String.Text
 msgid  "The array of the data in the sample."
-msgstr "樣本資料的陣列。"
+msgstr "樣本中的資料矩陣。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LARGE.4.String.Text
 msgid  "Rank_c"
@@ -8517,7 +8517,7 @@ msgstr "x_range"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_SMALL.3.String.Text
 msgid  "The array of the data in the sample."
-msgstr "樣本中的資料矩陣。"
+msgstr "樣本中資料的陣列。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_SMALL.4.String.Text
 msgid  "Rank_c"
@@ -8617,7 +8617,7 @@ msgstr "與 x_range 中數值相對應的一組概率值。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PROB.6.String.Text
 msgid  "Start"
-msgstr "lower_limit"
+msgstr "Start"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PROB.7.String.Text
 msgid  "The start of the value interval whose probabilities is to be totalled."
@@ -8625,7 +8625,7 @@ msgstr "用來概率求和計算的值下界。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PROB.8.String.Text
 msgid  "End"
-msgstr "upper_limit"
+msgstr "End"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PROB.9.String.Text
 msgid  "The end of the value interval where the probabilities are to be totalled."
@@ -8645,7 +8645,7 @@ msgstr "試驗次數"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_B.4.String.Text
 msgid  "SP"
-msgstr "SP"
+msgstr "probabiltiy_s"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_B.5.String.Text
 msgid  "The individual probability of a trial result."
@@ -8721,7 +8721,7 @@ msgstr "二項式分佈值。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.2.String.Text
 msgid  "X"
-msgstr "X"
+msgstr "number_f"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.3.String.Text
 msgid  "The number of successes in a series of trials."
@@ -8733,19 +8733,19 @@ msgstr "trials"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.5.String.Text
 msgid  "The total number of trials."
-msgstr "試驗總次數。"
+msgstr "試驗次數。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.6.String.Text
 msgid  "SP"
-msgstr "probabiltiy_s"
+msgstr "probability_s"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.7.String.Text
 msgid  "The success probability of a trial."
-msgstr "單個試驗的成功率。"
+msgstr "每個試驗的成功概率。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.8.String.Text
 msgid  "C"
-msgstr "C"
+msgstr "cumulative"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BINOM_DIST.9.String.Text
 msgid  "Cumulated. C=0 calculates the individual probability, C=1 the cumulated probability."
@@ -8757,7 +8757,7 @@ msgstr "負二項式分佈。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NEG_BINOM_VERT.2.String.Text
 msgid  "X"
-msgstr "number_f"
+msgstr "sample_s"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NEG_BINOM_VERT.3.String.Text
 msgid  "The number of failures in the trial range."
@@ -8865,7 +8865,7 @@ msgstr "標準偏差。常態分佈的標準偏差。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.8.String.Text
 msgid  "C"
-msgstr "cumulative"
+msgstr "C"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST.9.String.Text
 msgid  "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
@@ -9009,7 +9009,7 @@ msgstr "指數分布的參數"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_EXP_DIST.6.String.Text
 msgid  "C"
-msgstr "C"
+msgstr "cumulative"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_EXP_DIST.7.String.Text
 msgid  "Cumulated. C=0 calculates the density function, C=1 the distribution."
@@ -9037,7 +9037,7 @@ msgstr "Gamma 分佈的 Alpha 參數。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAMMA_DIST.6.String.Text
 msgid  "beta"
-msgstr "beta"
+msgstr "Beta"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAMMA_DIST.7.String.Text
 msgid  "The Beta parameter of the Gamma distribution."
@@ -9293,7 +9293,7 @@ msgstr "t-分佈的自由度。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_DIST.6.String.Text
 msgid  "mode"
-msgstr "tails"
+msgstr "Tails"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_DIST.7.String.Text
 msgid  "Mode = 1 calculates the one-tailed test, 2 = two-tailed distribution."
@@ -9337,7 +9337,7 @@ msgstr "degrees_freedom_1"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_DIST.5.String.Text
 msgid  "The degrees of freedom in the numerator of the F distribution."
-msgstr "F-機率分佈的分子自由度。"
+msgstr "F - 機率分佈的分子自由度。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_DIST.6.String.Text
 msgid  "degrees_freedom_2"
@@ -9345,7 +9345,7 @@ msgstr "degrees_freedom_2"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_DIST.7.String.Text
 msgid  "The degrees of freedom in the denominator of the F distribution."
-msgstr "F-機率分佈的分母自由度。"
+msgstr "F - 機率分佈的分母自由度。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_INV.1.String.Text
 msgid  "Values of the inverse F distribution."
@@ -9617,7 +9617,7 @@ msgstr "data_1"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.3.String.Text
 msgid  "The first record array."
-msgstr "第一組資料條目矩陣。"
+msgstr "第一組資料矩陣。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.4.String.Text
 msgid  "data_2"
@@ -9625,7 +9625,7 @@ msgstr "data_2"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_TEST.5.String.Text
 msgid  "The second record array."
-msgstr "第二組資料條目矩陣。"
+msgstr "第二組資料矩陣。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.1.String.Text
 msgid  "Calculates the T test."
@@ -9637,7 +9637,7 @@ msgstr "data_1"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.3.String.Text
 msgid  "The first record array."
-msgstr "第一組資料條目矩陣。"
+msgstr "第一個資料條目矩陣。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.4.String.Text
 msgid  "data_2"
@@ -9645,11 +9645,11 @@ msgstr "data_2"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.5.String.Text
 msgid  "The second record array."
-msgstr "第二組資料條目矩陣。"
+msgstr "第二個資料條目矩陣。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.6.String.Text
 msgid  "mode"
-msgstr "Tails"
+msgstr "Mode"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_TEST.7.String.Text
 msgid  "Mode specifies the number of distribution tails to return. 1= one-tailed, 2 = two-tailed distribution"
@@ -9881,11 +9881,11 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AREAS.2.String.Text
 msgid  "reference"
-msgstr "reference"
+msgstr "參照"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AREAS.3.String.Text
 msgid  "The reference to a (multiple) range."
-msgstr "參照一個(多重)區域。"
+msgstr "一個(多重)區域的參照。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHOSE.1.String.Text
 msgid  "Selects a value from a list of up to 30 value arguments."
@@ -9893,7 +9893,7 @@ msgstr "從 30 個值中選一個值。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHOSE.2.String.Text
 msgid  "Index"
-msgstr "index"
+msgstr "Index"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHOSE.3.String.Text
 msgid  "The index of the value (1..30) selected."
@@ -9913,11 +9913,11 @@ msgstr "確定一個參照的內部欄號。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COLUMN.2.String.Text
 msgid  "reference"
-msgstr "參照"
+msgstr "Reference"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COLUMN.3.String.Text
 msgid  "The reference to a cell or a range."
-msgstr "儲存格或儲存格範圍的參照。"
+msgstr "一個儲存格或一個區域的參照。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ROW.1.String.Text
 msgid  "Defines the internal row number of a reference."
@@ -9925,7 +9925,7 @@ msgstr "指定參照的列號。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ROW.2.String.Text
 msgid  "reference"
-msgstr "參照"
+msgstr "reference"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ROW.3.String.Text
 msgid  "The reference to a cell or a range."
@@ -9937,7 +9937,7 @@ msgstr "確定一個參照或一個字串的工作表號碼。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TABLE.2.String.Text
 msgid  "reference"
-msgstr "參照"
+msgstr "reference"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TABLE.3.String.Text
 msgid  "The reference to a cell or a range or the character string of a sheet name."
@@ -9973,7 +9973,7 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TABLES.2.String.Text
 msgid  "reference"
-msgstr "Reference"
+msgstr "reference"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TABLES.3.String.Text
 msgid  "The reference to a cell or a range."
@@ -10001,7 +10001,7 @@ msgstr "矩陣或用來參照的區域。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_H_LOOKUP.6.String.Text
 msgid  "Index"
-msgstr "Index"
+msgstr "col_index"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_H_LOOKUP.7.String.Text
 msgid  "The row index in the array."
@@ -10349,7 +10349,7 @@ msgstr "將半形 ASCII 與片假名字元轉換為全形。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_JIS.2.String.Text
 msgid  "text"
-msgstr "文字"
+msgstr "text"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_JIS.3.String.Text
 msgid  "The text to convert."
@@ -10361,7 +10361,7 @@ msgstr "將全形 ASCII 與片假名字元轉換為半形。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ASC.2.String.Text
 msgid  "text"
-msgstr "文字"
+msgstr "text"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ASC.3.String.Text
 msgid  "The text to convert."
@@ -10373,7 +10373,7 @@ msgstr "提供一個字串的第一個字元的編碼。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CODE.2.String.Text
 msgid  "text"
-msgstr "text"
+msgstr "within_text"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CODE.3.String.Text
 msgid  "This is the text for which the code of the first character is to be found."
@@ -10417,7 +10417,7 @@ msgstr "刪除文字中不能列印的字元。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CLEAN.2.String.Text
 msgid  "text"
-msgstr "text"
+msgstr "within_text"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CLEAN.3.String.Text
 msgid  "The text from which nonprintable characters are to be removed."
@@ -10465,15 +10465,15 @@ msgstr "find_text"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.3.String.Text
 msgid  "The text to be found."
-msgstr "是您要查找的字串。"
+msgstr "需要查找的字元或字串。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.4.String.Text
 msgid  "text"
-msgstr "within_text"
+msgstr "Text"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.5.String.Text
 msgid  "The text in which a search is to be made."
-msgstr "是包含您所要查找內容的字串。"
+msgstr "要在其中查找的字串。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND.6.String.Text
 msgid  "position"
@@ -10497,7 +10497,7 @@ msgstr "需要查找的字元或字串。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_SEARCH.4.String.Text
 msgid  "text"
-msgstr "within_text"
+msgstr "text"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_SEARCH.5.String.Text
 msgid  "The text in which a search is to be made."
@@ -10517,7 +10517,7 @@ msgstr "刪除字串中的空格。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TRIM.2.String.Text
 msgid  "text"
-msgstr "Text"
+msgstr "text"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_TRIM.3.String.Text
 msgid  "The text in which extra spaces between words are to be deleted."
@@ -10529,7 +10529,7 @@ msgstr "將所有首字母及任何非字母字元之後的首字母轉換成大
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PROPPER.2.String.Text
 msgid  "text"
-msgstr "text"
+msgstr "字串"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_PROPPER.3.String.Text
 msgid  "The text in which the beginning of words are to be replaced by capital letters."
@@ -10541,7 +10541,7 @@ msgstr "將字串內的所有字母轉換成大寫字母。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_UPPER.2.String.Text
 msgid  "text"
-msgstr "text"
+msgstr "date_text"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_UPPER.3.String.Text
 msgid  "The text in which lower case letters are to be converted to capitals."
@@ -10609,7 +10609,7 @@ msgstr "用某一字串替換其它字串中的部份內容。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_REPLACE.2.String.Text
 msgid  "Text"
-msgstr "old_text"
+msgstr "字串"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_REPLACE.3.String.Text
 msgid  "The text in which some characters are to be replaced."
@@ -10821,7 +10821,7 @@ msgstr "radix"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BASE.5.String.Text
 msgid  "The base number for conversion must be in the range 2 - 36."
-msgstr "所要轉換的基數必須在 2 - 36 之間。"
+msgstr "所要轉換基數必須是在 2 - 36 之間。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BASE.6.String.Text
 msgid  "Minimum length"
@@ -10861,7 +10861,7 @@ msgstr "Value"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CONVERT.3.String.Text
 msgid  "The value to be converted."
-msgstr "要轉換的值。"
+msgstr "要轉換的數值。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CONVERT.4.String.Text
 msgid  "text"
@@ -10905,7 +10905,7 @@ msgstr "計算一個羅馬數字的值。"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ARABIC.2.String.Text
 msgid  "Text"
-msgstr "字串"
+msgstr "文字"
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ARABIC.3.String.Text
 msgid  "The text that represents a Roman numeral."
@@ -11089,6 +11089,54 @@ msgstr ""
 
 #: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MIDB.7.String.Text
 msgid  "The number of characters for the text."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.1.String.Text
+msgid  "Return the cosecant of an angle. CSC(x)=1/SIN(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT.3.String.Text
+msgid  "The angle in radians for which the cosecant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.1.String.Text
+msgid  "Return the secant of an angle. SEC(x)=1/COS(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT.3.String.Text
+msgid  "The angle in radians for which the secant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.1.String.Text
+msgid  "Return the hyperbolic cosecant of a hyperbolic angle. CSCH(x)=1/SINH(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COSECANT_HYP.3.String.Text
+msgid  "The hyperbolic angle in radians for which the hyperbolic cosecant is to be calculated."
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.1.String.Text
+msgid  "Return the hyperbolic secant of a hyperbolic angle. SECH(x)=1/COSH(x)"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.2.String.Text
+msgid  "Angle"
+msgstr ""
+
+#: source/ui/src/scfuncs.src#RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SECANT_HYP.3.String.Text
+msgid  "The hyperbolic angle in radians for which the hyperbolic secant is to be calculated."
 msgstr ""
 
 #: source/ui/src/scstring.src#SCSTR_APPLICATION.String.Text
@@ -11553,7 +11601,7 @@ msgstr "選取工作表"
 
 #: source/ui/src/scstring.src#STR_DLG_SELECTTABLES_LBNAME.String.Text
 msgid  "~Selected sheets"
-msgstr "選取的工作表(~S)"
+msgstr "僅列印選取的工作表(~O)"
 
 #: source/ui/src/scstring.src#STR_REPLCELLSWARN.String.Text
 msgid  "You are pasting data into cells that already contain data.\nDo you really want to overwrite the existing data?"
@@ -12177,7 +12225,7 @@ msgstr "格式化成預設值(~D)"
 
 #: source/ui/src/popup.src#RID_POPUP_CELLS.FID_CELL_FORMAT.MenuItem.Text
 msgid  "~Format Cells..."
-msgstr "格式化儲存格(~F)"
+msgstr "格式化儲存格(~F)..."
 
 #: source/ui/src/popup.src#RID_POPUP_CELLS.FID_INS_CELL.MenuItem.Text
 msgid  "~Insert..."
@@ -12313,7 +12361,7 @@ msgstr "欄位區快顯功能表"
 
 #: source/ui/src/popup.src#RID_POPUP_EDIT.SID_CELL_FORMAT_RESET.MenuItem.Text
 msgid  "~Default"
-msgstr "預設(~P)"
+msgstr "預設(~D)"
 
 #: source/ui/src/popup.src#RID_POPUP_EDIT.RID_MN_FORMAT_STYLE.MenuItem.Text
 msgid  "St~yle"
@@ -12597,7 +12645,7 @@ msgstr "向下(~W)"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_INSCONT.BTN_MV_RIGHT.RadioButton.Text
 msgid  "~Right"
-msgstr "向右(~R)"
+msgstr "右(~R)"
 
 #: source/ui/src/miscdlgs.src#RID_SCDLG_INSCONT.FL_MOVE.FixedLine.Text
 msgid  "Shift cells"

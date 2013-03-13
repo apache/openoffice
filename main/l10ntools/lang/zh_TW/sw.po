@@ -1213,7 +1213,7 @@ msgstr "下標"
 
 #: source/ui/app/mn.src#MN_TEXT_ATTR.MN_FORMAT_ALGN.MenuItem.Text
 msgid  "A~lignment"
-msgstr "對齊(~L)"
+msgstr "對齊(~l)"
 
 #: source/ui/app/mn.src#MN_TEXT_ATTR.MN_FORMAT_ALGN.SID_ATTR_PARA_ADJUST_BLOCK.MenuItem.Text
 msgid  "Justified"
@@ -1433,7 +1433,7 @@ msgstr "送回後面(~W)"
 
 #: source/ui/app/mn.src#MN_DRAW5.MN_SUB_ARRANGE.MenuItem.Text
 msgid  "~Arrange"
-msgstr "排序(~A)"
+msgstr "編排(~A)"
 
 #: source/ui/app/mn.src#MN_DRAW6.MN_SUB_ARRANGE.MenuItem.Text
 msgid  "~Arrange"
@@ -1505,7 +1505,7 @@ msgstr "置於背景(~B)"
 
 #: source/ui/app/mn.src#MN_MOUSE_FRAME_BEGIN.MN_WRAP.FN_WRAP_ANCHOR_ONLY.MenuItem.Text
 msgid  "~First Paragraph"
-msgstr "第一段落(~1)"
+msgstr "第一段(~F)"
 
 #: source/ui/app/mn.src#MN_DRAW_POPUPMENU.String.Text
 msgid  "Graphic"
@@ -2693,7 +2693,7 @@ msgstr "背景顏色"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.FT_INS_COL.FixedText.Text
 msgid  "Color"
-msgstr "顏色"
+msgstr "彩色"
 
 #: source/ui/config/redlopt.src#TP_REDLINE_OPT.WIN_INS.Window.Text
 msgid  "Insert"
@@ -6069,7 +6069,7 @@ msgstr "時間"
 
 #: source/ui/fldui/fldui.src#STR_FILENAMEFLD.String.Text
 msgid  "File name"
-msgstr "檔案名"
+msgstr "檔案名稱"
 
 #: source/ui/fldui/fldui.src#STR_DBNAMEFLD.String.Text
 msgid  "Database Name"
@@ -6089,7 +6089,7 @@ msgstr "統計"
 
 #: source/ui/fldui/fldui.src#STR_AUTHORFLD.String.Text
 msgid  "Author"
-msgstr "使用者"
+msgstr "作者"
 
 #: source/ui/fldui/fldui.src#STR_TEMPLNAMEFLD.String.Text
 msgid  "Templates"
@@ -6185,7 +6185,7 @@ msgstr "任何一個資料條目"
 
 #: source/ui/fldui/fldui.src#STR_DBSETNUMBERFLD.String.Text
 msgid  "Record number"
-msgstr "資料條目編號"
+msgstr "條目號碼"
 
 #: source/ui/fldui/fldui.src#STR_PREVPAGEFLD.String.Text
 msgid  "Previous page"
@@ -6405,7 +6405,7 @@ msgstr "文字"
 
 #: source/ui/fldui/fldui.src#FMT_AUTHOR_NAME.String.Text
 msgid  "Name"
-msgstr "姓名"
+msgstr "名稱"
 
 #: source/ui/fldui/fldui.src#FMT_AUTHOR_SCUT.String.Text
 msgid  "Initials"
@@ -6853,7 +6853,7 @@ msgstr "類型"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_3.1.TP_FRM_ADD.PageItem.Text
 msgid  "Options"
-msgstr "其它"
+msgstr "選項"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_3.1.TP_FRM_WRAP.PageItem.Text
 msgid  "Wrap"
@@ -6881,7 +6881,7 @@ msgstr "項目符號"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_5.1.RID_SVXPAGE_PICK_SINGLE_NUM.PageItem.Text
 msgid  "Numbering Style"
-msgstr "編號類型"
+msgstr "編號樣式"
 
 #: source/ui/fmtui/tmpdlg.src#DLG_TEMPLATE_5.1.RID_SVXPAGE_PICK_NUM.PageItem.Text
 msgid  "Outline"
@@ -6905,7 +6905,7 @@ msgstr "編號樣式"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.TabDialog.Text
 msgid  "Frame"
-msgstr "框架"
+msgstr "訊框"
 
 #: source/ui/frmdlg/frmpage.src#DLG_FRM_STD.1.TP_FRM_STD.PageItem.Text
 msgid  "Type"
@@ -7589,11 +7589,11 @@ msgstr "位置"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.STR_BEGINNING.String.Text
 msgid  "Above"
-msgstr "在起始位置"
+msgstr "之上"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.STR_END.String.Text
 msgid  "Below"
-msgstr "在結束位置"
+msgstr "之下"
 
 #: source/ui/frmdlg/cption.src#DLG_CAPTION.STR_ABOVE.String.Text
 msgid  "Above"
@@ -9437,7 +9437,7 @@ msgstr "編號(~B)"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_OFFSET.FixedText.Text
 msgid  "~Start at"
-msgstr "開始從(~S)"
+msgstr "開始時間(~S)"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_NUMCOUNT.FixedText.Text
 msgid  "~Counting"
@@ -9485,7 +9485,7 @@ msgstr "段落(~R)"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FT_PAGE_TEMPL.FixedText.Text
 msgid  "~Page"
-msgstr "頁(~P)"
+msgstr "頁面(~P)"
 
 #: source/ui/misc/docfnote.src#TP_FOOTNOTEOPTION.FL_CHAR_TEMPL.FixedLine.Text
 msgid  "Character Styles"
@@ -10601,7 +10601,7 @@ msgstr "文字方向(~D)"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.LB_TEXTDIRECTION.0.StringList.item
 msgid  "Left-to-right"
-msgstr "從左向右"
+msgstr "由左至右"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.LB_TEXTDIRECTION.1.StringList.item
 msgid  "Right-to-left"
@@ -10609,7 +10609,7 @@ msgstr "從右向左"
 
 #: source/ui/table/tabledlg.src#TP_FORMAT_TABLE.LB_TEXTDIRECTION.4.StringList.item
 msgid  "Use superordinate object settings"
-msgstr "沿用現有的文字方向的設定"
+msgstr "使用上層物件設定"
 
 #: source/ui/table/tabledlg.src#TP_TABLE_COLUMN.CB_MOD_TBL.CheckBox.Text
 msgid  "Adapt table ~width"
@@ -11357,7 +11357,7 @@ msgstr "小手冊"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CONFERENCE.String.Text
 msgid  "Conference proceedings"
-msgstr "會談記錄"
+msgstr "會議報告"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_INBOOK.String.Text
 msgid  "Book excerpt"
@@ -11413,23 +11413,23 @@ msgstr "網頁文件"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM1.String.Text
 msgid  "User-defined1"
-msgstr "自訂類型 1"
+msgstr "使用者定義1"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM2.String.Text
 msgid  "User-defined2"
-msgstr "自訂類型 2"
+msgstr "使用者定義2"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM3.String.Text
 msgid  "User-defined3"
-msgstr "自訂類型 3"
+msgstr "使用者定義3"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM4.String.Text
 msgid  "User-defined4"
-msgstr "自訂類型 4"
+msgstr "使用者定義4"
 
 #: source/ui/utlui/initui.src#STR_AUTH_TYPE_CUSTOM5.String.Text
 msgid  "User-defined5"
-msgstr "自訂類型 5"
+msgstr "使用者定義5"
 
 #: source/ui/utlui/initui.src#STR_AUTH_FIELD_IDENTIFIER.String.Text
 msgid  "Short name"

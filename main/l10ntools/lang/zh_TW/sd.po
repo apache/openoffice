@@ -53,7 +53,7 @@ msgstr "定量線"
 
 #: source/core/glob.src#STR_PAGE.String.Text
 msgid  "Slide"
-msgstr "頁"
+msgstr "投影片"
 
 #: source/core/glob.src#STR_PAGE_NAME.String.Text
 msgid  "Page"
@@ -1797,7 +1797,7 @@ msgstr "圖層"
 
 #: source/ui/app/strings.src#STR_UNDO_DELETEPAGES.String.Text
 msgid  "Delete slides"
-msgstr "刪除投影片"
+msgstr "刪除頁面"
 
 #: source/ui/app/strings.src#STR_UNDO_INSERTPAGES.String.Text
 msgid  "Insert slides"
@@ -2781,7 +2781,7 @@ msgstr "位置和大小(~Z)..."
 
 #: source/ui/app/menuids_tmpl.src#MN_EDIT_POINTS.SID_BEZIER_EDIT.MenuItem.Text
 msgid  "Edit ~Points"
-msgstr "編輯端點(~P)"
+msgstr "編極端點(~P)"
 
 #: source/ui/app/menuids_tmpl.src#MN_POSITION.SID_POSITION.MenuItem.Text
 msgid  "Arra~nge"
@@ -2889,11 +2889,11 @@ msgstr "對齊(~L)"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_LEFT.MenuItem.Text
 msgid  "~Left"
-msgstr "向左(~g)"
+msgstr "向左(~L)"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_RIGHT.MenuItem.Text
 msgid  "~Right"
-msgstr "向右(~d)"
+msgstr "向右(~R)"
 
 #: source/ui/app/menuids_tmpl.src#MN_TEXT_ALIGN.DUMMY.SID_ATTR_PARA_ADJUST_CENTER.MenuItem.Text
 msgid  "~Centered"
@@ -2921,7 +2921,7 @@ msgstr "向右(~R)"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_UP.MenuItem.Text
 msgid  "~Top"
-msgstr "上"
+msgstr "向上(~T)"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_MIDDLE.MenuItem.Text
 msgid  "C~enter"
@@ -2929,11 +2929,11 @@ msgstr "置中"
 
 #: source/ui/app/menuids_tmpl.src#MN_OBJECT_ALIGN.SID_OBJECT_ALIGN.SID_OBJECT_ALIGN_DOWN.MenuItem.Text
 msgid  "~Bottom"
-msgstr "下"
+msgstr "向下(~B)"
 
 #: source/ui/app/menuids_tmpl.src#MN_CLOSE_OBJECT.SID_OBJECT_CLOSE.MenuItem.Text
 msgid  "Close ~Object"
-msgstr "關閉物件(~o)"
+msgstr "關閉物件(~O)"
 
 #: source/ui/app/menuids_tmpl.src#MN_BEZIER.SID_BEZIER_EDIT.MenuItem.Text
 msgid  "Edit ~Points"
@@ -3365,7 +3365,7 @@ msgstr "插入(~I)..."
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DELETE_ROW.MenuItem.Text
 msgid  "~Delete"
-msgstr "刪除(~S)"
+msgstr "刪除(~D)"
 
 #: source/ui/app/popup.src#RID_DRAW_TABLEOBJ_INSIDE_POPUP.DUMMY.SID_TABLE_DISTRIBUTE_COLUMNS.MenuItem.Text
 msgid  "Space ~Equally"
@@ -3401,7 +3401,7 @@ msgstr "套用至所有投影片(~A)"
 
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_SELECTED_SLIDES.MenuItem.Text
 msgid  "Apply to ~Selected Slides"
-msgstr "套用至所選擇的投影片(~s)"
+msgstr "套用至所選擇的投影片(~S)"
 
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_SHOW_LARGE_PREVIEW.MenuItem.Text
 msgid  "Show ~Large Preview"
@@ -3409,7 +3409,7 @@ msgstr "大圖示預覽(~A)"
 
 #: source/ui/app/popup.src#RID_TASKPANE_MASTERPAGESSELECTOR_POPUP.SID_TP_SHOW_SMALL_PREVIEW.MenuItem.Text
 msgid  "Show S~mall Preview"
-msgstr "小圖示預覽(~M)"
+msgstr "小圖示預覽(~m)"
 
 #: source/ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_ALL_SLIDES.MenuItem.Text
 msgid  "~Apply to All Slides"
@@ -3417,7 +3417,7 @@ msgstr "套用至所有投影片(~A)"
 
 #: source/ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_APPLY_TO_SELECTED_SLIDES.MenuItem.Text
 msgid  "Apply to ~Selected Slides"
-msgstr "套用至所選擇的投影片(~S)"
+msgstr "套用至所選擇的投影片(~s)"
 
 #: source/ui/app/popup.src#RID_TASKPANE_CURRENT_MASTERPAGESSELECTOR_POPUP.SID_TP_EDIT_MASTER.MenuItem.Text
 msgid  "~Edit Master..."
@@ -3757,7 +3757,7 @@ msgstr "顏色(~C)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_GRAYSCALE.SID_OUTPUT_QUALITY_GRAYSCALE.MenuItem.Text
 msgid  "~Grayscale"
-msgstr "灰階(~g)"
+msgstr "灰階(~G)"
 
 #: source/ui/app/menuids2_tmpl.src#MN_OUTPUT_QUALITY_BLACKWHITE.SID_OUTPUT_QUALITY_BLACKWHITE.MenuItem.Text
 msgid  "~Black and White"
@@ -4445,7 +4445,7 @@ msgstr "線條"
 
 #: source/ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_AREA.PageItem.Text
 msgid  "Area"
-msgstr "充填"
+msgstr "區域"
 
 #: source/ui/dlg/prltempl.src#TAB_PRES_LAYOUT_TEMPLATE.1.RID_SVXPAGE_SHADOW.PageItem.Text
 msgid  "Shadow"

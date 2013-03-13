@@ -1013,7 +1013,7 @@ msgstr "標記樹"
 
 #: source/dialogs/gallery.src#RID_SVXTABDLG_GALLERY.TabDialog.Text
 msgid  "Properties of "
-msgstr "屬性： "
+msgstr "屬性："
 
 #: source/dialogs/gallery.src#RID_SVXTABDLG_GALLERY.1.RID_SVXTABPAGE_GALLERY_GENERAL.PageItem.Text
 msgid  "General"
@@ -1856,7 +1856,8 @@ msgid  "~Delete"
 msgstr "刪除(~D)"
 
 #: source/dialogs/about.src#RID_DEFAULTABOUT.ModalDialog.Text
-msgid  "About %PRODUCTNAME"
+#, fuzzy
+msgid  "About %FULLPRODUCTNAME"
 msgstr "關於 %PRODUCTNAME"
 
 #: source/dialogs/about.src#RID_DEFAULTABOUT.RID_CUI_ABOUT_BTN_README.PushButton.Text
@@ -1888,598 +1889,747 @@ msgid  "is not available for spellchecking\nPlease check your installation and i
 msgstr ""
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.ModalDialog.Text
+#, fuzzy
 msgid  "Hyphenation"
 msgstr "連字符"
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.FT_WORD.FixedText.Text
+#, fuzzy
 msgid  "~Word"
 msgstr "字(~W)"
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.BTN_HYPH_CUT.OKButton.Text
+#, fuzzy
 msgid  "H~yphenate"
 msgstr "斷字(~Y)"
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.BTN_HYPH_CONTINUE.PushButton.Text
+#, fuzzy
 msgid  "~Skip"
 msgstr "略過(~S)"
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.BTN_HYPH_DELETE.PushButton.Text
+#, fuzzy
 msgid  "~Remove"
 msgstr "刪除(~R)"
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.BTN_HYPH_ALL.PushButton.Text
+#, fuzzy
 msgid  "Hyphenate ~All"
 msgstr "全部斷字(~A)"
 
 #: source/dialogs/hyphen.src#RID_SVXDLG_HYPHENATE.BTN_HYPH_CANCEL.CancelButton.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "關閉(~C)"
 
 #: source/dialogs/tbxform.src#RID_SVX_DLG_INPUTRECORDNO.ModalDialog.Text
+#, fuzzy
 msgid  "Record Number"
 msgstr "資料條目編號"
 
 #: source/dialogs/tbxform.src#RID_SVX_DLG_INPUTRECORDNO.1.FixedText.Text
+#, fuzzy
 msgid  "go to record"
 msgstr "轉到資料條目"
 
 #: source/dialogs/multipat.src#RID_SVXDLG_MULTIPATH.ModalDialog.Text
+#, fuzzy
 msgid  "Select Paths"
 msgstr "選擇路徑"
 
 #: source/dialogs/multipat.src#RID_SVXDLG_MULTIPATH.FL_MULTIPATH.FixedLine.Text
+#, fuzzy
 msgid  "Paths"
 msgstr "路徑"
 
 #: source/dialogs/multipat.src#RID_SVXDLG_MULTIPATH.FT_RADIOBUTTON.FixedText.Text
+#, fuzzy
 msgid  "Mark the default path for new files."
 msgstr "標記新檔案的預設路徑。"
 
 #: source/dialogs/multipat.src#RID_SVXDLG_MULTIPATH.BTN_ADD_MULTIPATH.PushButton.Text
+#, fuzzy
 msgid  "~Add..."
 msgstr "增加(~A)..."
 
 #: source/dialogs/multipat.src#RID_SVXDLG_MULTIPATH.BTN_DEL_MULTIPATH.PushButton.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "刪除(~D)"
 
 #: source/dialogs/multipat.src#RID_SVXDLG_MULTIPATH.STR_HEADER_PATHS.String.Text
+#, fuzzy
 msgid  "Path list"
 msgstr "路徑清單"
 
 #: source/dialogs/multipat.src#RID_MULTIPATH_DBL_ERR.String.Text
+#, fuzzy
 msgid  "The path %1 already exists."
 msgstr "這個路徑 %1 已經存在。"
 
 #: source/dialogs/multipat.src#RID_SVXSTR_FILE_TITLE.String.Text
+#, fuzzy
 msgid  "Select files"
 msgstr "選擇檔案"
 
 #: source/dialogs/multipat.src#RID_SVXSTR_FILE_HEADLINE.String.Text
+#, fuzzy
 msgid  "Files"
 msgstr "檔案"
 
 #: source/dialogs/multipat.src#RID_SVXSTR_ARCHIVE_TITLE.String.Text
+#, fuzzy
 msgid  "Select Archives"
 msgstr "選擇備件"
 
 #: source/dialogs/multipat.src#RID_SVXSTR_ARCHIVE_HEADLINE.String.Text
+#, fuzzy
 msgid  "Archives"
 msgstr "備件"
 
 #: source/dialogs/multipat.src#RID_SVXSTR_MULTIFILE_DBL_ERR.String.Text
+#, fuzzy
 msgid  "The file %1 already exists."
 msgstr "這個檔案 %1 已經存在。"
 
 #: source/dialogs/svuidlg.src#MD_PASTE_OBJECT.ModalDialog.Text
+#, fuzzy
 msgid  "Paste Special"
 msgstr "選擇性貼上"
 
 #: source/dialogs/svuidlg.src#MD_PASTE_OBJECT.FT_SOURCE.FixedText.Text
+#, fuzzy
 msgid  "Source:"
 msgstr "來源："
 
 #: source/dialogs/svuidlg.src#MD_PASTE_OBJECT.RB_PASTE.RadioButton.Text
+#, fuzzy
 msgid  "~Insert as"
 msgstr "插入為(~I)"
 
 #: source/dialogs/svuidlg.src#MD_PASTE_OBJECT.RB_PASTE_LINK.RadioButton.Text
+#, fuzzy
 msgid  "Link to"
 msgstr "連結至"
 
 #: source/dialogs/svuidlg.src#MD_PASTE_OBJECT.CB_DISPLAY_AS_ICON.CheckBox.Text
+#, fuzzy
 msgid  "~As icon"
 msgstr "為圖示(~A)"
 
 #: source/dialogs/svuidlg.src#MD_PASTE_OBJECT.PB_CHANGE_ICON.PushButton.Text
+#, fuzzy
 msgid  "~Other Icon..."
 msgstr "其他圖示(~O)..."
 
 #: source/dialogs/svuidlg.src#MD_PASTE_OBJECT.FL_CHOICE.FixedLine.Text
+#, fuzzy
 msgid  "Selection"
 msgstr "選取項"
 
 #: source/dialogs/svuidlg.src#MD_PASTE_OBJECT.S_OBJECT.String.Text
+#, fuzzy
 msgid  "Object"
 msgstr "物件"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.ModalDialog.Text
+#, fuzzy
 msgid  "Edit Links"
 msgstr "編輯連結"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_FILES.FixedText.Text
+#, fuzzy
 msgid  "Source file"
 msgstr "原始碼檔案"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_LINKS.FixedText.Text
+#, fuzzy
 msgid  "Element:"
 msgstr "元素："
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_TYPE.FixedText.Text
+#, fuzzy
 msgid  "Type"
 msgstr "類型"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_STATUS.FixedText.Text
+#, fuzzy
 msgid  "Status"
 msgstr "狀態"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.1.CancelButton.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "關閉(~C)"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.PB_UPDATE_NOW.PushButton.Text
+#, fuzzy
 msgid  "~Update"
 msgstr "更新(~U)"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.PB_OPEN_SOURCE.PushButton.Text
+#, fuzzy
 msgid  "~Open"
 msgstr "開啟舊檔(~O)"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.PB_CHANGE_SOURCE.PushButton.Text
+#, fuzzy
 msgid  "~Modify..."
 msgstr "修改(~M)..."
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.PB_BREAK_LINK.PushButton.Text
+#, fuzzy
 msgid  "~Break Link"
 msgstr "中斷連結(~B)"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_FILES2.FixedText.Text
+#, fuzzy
 msgid  "Source file"
 msgstr "原始碼檔案"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_SOURCE2.FixedText.Text
+#, fuzzy
 msgid  "Element:"
 msgstr "元素："
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_TYPE2.FixedText.Text
+#, fuzzy
 msgid  "Type:"
 msgstr "類型："
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.FT_UPDATE.FixedText.Text
+#, fuzzy
 msgid  "Update:"
 msgstr "更新："
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.RB_AUTOMATIC.RadioButton.Text
+#, fuzzy
 msgid  "~Automatic"
 msgstr "自動(~A)"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.RB_MANUAL.RadioButton.Text
+#, fuzzy
 msgid  "Ma~nual"
 msgstr "手動(~N)"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_AUTOLINK.String.Text
+#, fuzzy
 msgid  "Automatic"
 msgstr "自動"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_MANUALLINK.String.Text
+#, fuzzy
 msgid  "Manual"
 msgstr "手動"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_BROKENLINK.String.Text
+#, fuzzy
 msgid  "Not available"
 msgstr "無法使用"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_GRAPHICLINK.String.Text
+#, fuzzy
 msgid  "Graphic"
 msgstr "圖形"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_BUTTONCLOSE.String.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "關閉(~C)"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_CLOSELINKMSG.String.Text
+#, fuzzy
 msgid  "Are you sure you want to remove the selected link?"
 msgstr "確定要移除所選連結？"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_CLOSELINKMSG_MULTI.String.Text
+#, fuzzy
 msgid  "Are you sure you want to remove the selected link?"
 msgstr "確定要移除所選連結？"
 
 #: source/dialogs/svuidlg.src#MD_UPDATE_BASELINKS.STR_WAITINGLINK.String.Text
+#, fuzzy
 msgid  "Waiting"
 msgstr "等待中"
 
 #: source/dialogs/svuidlg.src#MD_LINKEDIT.ModalDialog.Text
+#, fuzzy
 msgid  "Modify Link"
 msgstr "修改連結"
 
 #: source/dialogs/svuidlg.src#MD_LINKEDIT.2.FixedText.Text
+#, fuzzy
 msgid  "Exchange source:"
 msgstr "交換來源："
 
 #: source/dialogs/svuidlg.src#MD_LINKEDIT.ED_FULL_SOURCE_NAME.Edit.Text
+#, fuzzy
 msgid  "Edit"
 msgstr "編輯"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OLEOBJECT.RB_NEW_OBJECT.RadioButton.Text
+#, fuzzy
 msgid  "~Create new"
 msgstr "新建(~C)"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OLEOBJECT.RB_OBJECT_FROMFILE.RadioButton.Text
+#, fuzzy
 msgid  "Create from ~file"
 msgstr "從檔案建立(~F)"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OLEOBJECT.BTN_FILEPATH.PushButton.Text
+#, fuzzy
 msgid  "~Search..."
 msgstr "搜尋(~S)..."
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OLEOBJECT.CB_FILELINK.CheckBox.Text
+#, fuzzy
 msgid  "~Link to file"
 msgstr "連結至檔案(~L)"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OLEOBJECT.GB_OBJECT.FixedLine.Text
+#, fuzzy
 msgid  "Object type"
 msgstr "物件類型"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OLEOBJECT.STR_FILE.String.Text
+#, fuzzy
 msgid  "File"
 msgstr "檔案"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OLEOBJECT.String.Text
+#, fuzzy
 msgid  "Insert OLE Object"
 msgstr "插入 OLE 物件"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_PLUGIN.BTN_FILEURL.PushButton.Text
+#, fuzzy
 msgid  "~Browse..."
 msgstr "瀏覽(~B)..."
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_PLUGIN.GB_FILEURL.FixedLine.Text
+#, fuzzy
 msgid  "File / URL"
 msgstr "檔案 / URL"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_PLUGIN.GB_PLUGINS_OPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Options"
 msgstr "選項"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_PLUGIN.HelpButton.Text
+#, fuzzy
 msgid  "Insert Plug-in"
 msgstr "插入外掛程式"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_APPLET.FT_CLASSFILE.FixedText.Text
+#, fuzzy
 msgid  "~Class"
 msgstr "類別(~C)"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_APPLET.FT_CLASSLOCATION.FixedText.Text
+#, fuzzy
 msgid  "Class ~Location"
 msgstr "類別位置(~L)"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_APPLET.BTN_CLASS.PushButton.Text
+#, fuzzy
 msgid  "~Search..."
 msgstr "搜尋(~S)..."
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_APPLET.GB_CLASS.FixedLine.Text
+#, fuzzy
 msgid  "File"
 msgstr "檔案"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_APPLET.GB_APPLET_OPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Options"
 msgstr "選項"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_APPLET.HelpButton.Text
+#, fuzzy
 msgid  "Insert Applet"
 msgstr "插入 Applet"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.ModalDialog.Text
+#, fuzzy
 msgid  "Floating Frame Properties"
 msgstr "浮動訊框屬性"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.FT_FRAMENAME.FixedText.Text
+#, fuzzy
 msgid  "~Name"
 msgstr "名稱(~N)"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.FT_URL.FixedText.Text
+#, fuzzy
 msgid  "~Contents"
 msgstr "內容(~C)"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.RB_SCROLLINGON.RadioButton.Text
+#, fuzzy
 msgid  "~On"
 msgstr "開啟(~O)"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.RB_SCROLLINGOFF.RadioButton.Text
+#, fuzzy
 msgid  "O~ff"
 msgstr "關閉(~F)"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.RB_SCROLLINGAUTO.RadioButton.Text
+#, fuzzy
 msgid  "Au~tomatic"
 msgstr "自動(~T)"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.GB_SCROLLING.FixedLine.Text
+#, fuzzy
 msgid  "Scroll bar"
 msgstr "捲動軸"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.RB_FRMBORDER_ON.RadioButton.Text
+#, fuzzy
 msgid  "On"
 msgstr "開啟"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.RB_FRMBORDER_OFF.RadioButton.Text
+#, fuzzy
 msgid  "Off"
 msgstr "關閉"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.GB_BORDER.FixedLine.Text
+#, fuzzy
 msgid  "Border"
 msgstr "邊框"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.FT_MARGINWIDTH.FixedText.Text
+#, fuzzy
 msgid  "~Width"
 msgstr "寬度(~W)"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.CB_MARGINWIDTHDEFAULT.CheckBox.Text
+#, fuzzy
 msgid  "~Default"
 msgstr "預設(~D)"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.FT_MARGINHEIGHT.FixedText.Text
+#, fuzzy
 msgid  "H~eight"
 msgstr "高度(~E)"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.CB_MARGINHEIGHTDEFAULT.CheckBox.Text
+#, fuzzy
 msgid  "Defa~ult"
 msgstr "預設(~U)"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.GB_MARGIN.FixedLine.Text
+#, fuzzy
 msgid  "Spacing to contents"
 msgstr "至內容的間隔"
 
 #: source/dialogs/svuidlg.src#MD_INSERT_OBJECT_IFRAME.String.Text
+#, fuzzy
 msgid  "Select File for Floating Frame"
 msgstr "選取浮動訊框的檔案"
 
 #: source/dialogs/svuidlg.src#STR_EDIT_APPLET.String.Text
+#, fuzzy
 msgid  "Edit Applet"
 msgstr "編輯 Applet"
 
 #: source/dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.TabDialog.Text
+#, fuzzy
 msgid  "Format Cells"
 msgstr "格式化儲存格"
 
 #: source/dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_CHAR_NAME.PageItem.Text
+#, fuzzy
 msgid  "Font"
 msgstr "字型"
 
 #: source/dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_CHAR_EFFECTS.PageItem.Text
+#, fuzzy
 msgid  "Font Effects"
 msgstr "字型效果"
 
 #: source/dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_BORDER.PageItem.Text
+#, fuzzy
 msgid  "Borders"
 msgstr "邊框"
 
 #: source/dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.RID_SVXPAGE_AREA.PageItem.Text
+#, fuzzy
 msgid  "Background"
 msgstr "背景"
 
 #: source/dialogs/sdrcelldlg.src#RID_SVX_FORMAT_CELLS_DLG.1.PushButton.Text
+#, fuzzy
 msgid  "Return"
 msgstr "傳回"
 
 #: source/dialogs/splitcelldlg.src#RID_SVX_SPLITCELLDLG.ModalDialog.Text
+#, fuzzy
 msgid  "Split Cells"
 msgstr "分割儲存格"
 
 #: source/dialogs/splitcelldlg.src#RID_SVX_SPLITCELLDLG.FT_COUNT.FixedText.Text
+#, fuzzy
 msgid  "~Split cell into"
 msgstr "分割儲存格為(~S)"
 
 #: source/dialogs/splitcelldlg.src#RID_SVX_SPLITCELLDLG.FL_COUNT.FixedLine.Text
+#, fuzzy
 msgid  "Split"
 msgstr "分割"
 
 #: source/dialogs/splitcelldlg.src#RID_SVX_SPLITCELLDLG.RB_HORZ.ImageRadioButton.Text
+#, fuzzy
 msgid  "H~orizontally"
 msgstr "水平(~O)"
 
 #: source/dialogs/splitcelldlg.src#RID_SVX_SPLITCELLDLG.CB_PROP.CheckBox.Text
+#, fuzzy
 msgid  "~Into equal proportions"
 msgstr "分成相等的部分(~I)"
 
 #: source/dialogs/splitcelldlg.src#RID_SVX_SPLITCELLDLG.RB_VERT.ImageRadioButton.Text
+#, fuzzy
 msgid  "~Vertically"
 msgstr "垂直(~V)"
 
 #: source/dialogs/splitcelldlg.src#RID_SVX_SPLITCELLDLG.FL_DIR.FixedLine.Text
+#, fuzzy
 msgid  "Direction"
 msgstr "方向"
 
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.ModalDialog.Text
+#, fuzzy
 msgid  "Note"
 msgstr "備註"
 
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.FT_LASTEDITLABEL.FixedText.Text
+#, fuzzy
 msgid  "Author"
 msgstr "作者"
 
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.FT_EDIT.FixedText.Text
+#, fuzzy
 msgid  "~Text"
 msgstr "文字(~T)"
 
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.FL_POSTIT.FixedLine.Text
+#, fuzzy
 msgid  "Contents"
 msgstr "內容"
 
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.FT_AUTHOR.FixedText.Text
+#, fuzzy
 msgid  "~Insert"
 msgstr "插入(~I)"
 
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.BTN_AUTHOR.PushButton.Text
+#, fuzzy
 msgid  "Author"
 msgstr "作者"
 
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.STR_NOTIZ_EDIT.String.Text
+#, fuzzy
 msgid  "Edit Note"
 msgstr "編輯備註"
 
 #: source/dialogs/postdlg.src#RID_SVXDLG_POSTIT.STR_NOTIZ_INSERT.String.Text
+#, fuzzy
 msgid  "Insert note"
 msgstr "插入備註"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.TabDialog.Text
+#, fuzzy
 msgid  "Text Format"
 msgstr "文字格式"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_CHAR_NAME.PageItem.Text
+#, fuzzy
 msgid  "Font"
 msgstr "字型"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_CHAR_EFFECTS.PageItem.Text
+#, fuzzy
 msgid  "Font Effects"
 msgstr "字型效果"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_CHAR_POSITION.PageItem.Text
+#, fuzzy
 msgid  "Position"
 msgstr "位置"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_CHAR_TWOLINES.PageItem.Text
+#, fuzzy
 msgid  "Asian Layout"
 msgstr "亞洲語言版面配置"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_STD_PARAGRAPH.PageItem.Text
+#, fuzzy
 msgid  "Indents & Spacing"
 msgstr "縮排和間隔"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_ALIGN_PARAGRAPH.PageItem.Text
+#, fuzzy
 msgid  "Alignment"
 msgstr "對齊"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_EXT_PARAGRAPH.PageItem.Text
+#, fuzzy
 msgid  "Text Flow"
 msgstr "換行和分頁"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_PARA_ASIAN.PageItem.Text
+#, fuzzy
 msgid  "Asian Typography"
 msgstr "亞洲語言排版式樣"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHFORMAT.1.RID_SVXPAGE_BACKGROUND.PageItem.Text
+#, fuzzy
 msgid  "Background"
 msgstr "背景"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHATTR.ModalDialog.Text
+#, fuzzy
 msgid  "Attributes"
 msgstr "屬性"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHATTR.FL_ATTR.FixedText.Text
+#, fuzzy
 msgid  "~Options"
 msgstr "選項(~O)"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.ModalDialog.Text
+#, fuzzy
 msgid  "Similarity Search"
 msgstr "相似字搜尋"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.FT_OTHER.FixedText.Text
+#, fuzzy
 msgid  "~Exchange characters"
 msgstr "交換字元(~E)"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.FT_LONGER.FixedText.Text
+#, fuzzy
 msgid  "~Add characters"
 msgstr "增加字元(~A)"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.FT_SHORTER.FixedText.Text
+#, fuzzy
 msgid  "~Remove characters"
 msgstr "移除字元(~R)"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.CB_RELAX.CheckBox.Text
+#, fuzzy
 msgid  "~Combine"
 msgstr "合併(~C)"
 
 #: source/dialogs/srchxtra.src#RID_SVXDLG_SEARCHSIMILARITY.FL_SIMILARITY.FixedLine.Text
+#, fuzzy
 msgid  "Settings"
 msgstr "設定"
 
 #: source/dialogs/insrc.src#DLG_INS_ROW_COL.ModalDialog.Text
+#, fuzzy
 msgid  "Insert"
 msgstr "插入"
 
 #: source/dialogs/insrc.src#DLG_INS_ROW_COL.CB_POS_BEFORE.RadioButton.Text
+#, fuzzy
 msgid  "~Before"
 msgstr "之前(~B)"
 
 #: source/dialogs/insrc.src#DLG_INS_ROW_COL.CB_POS_AFTER.RadioButton.Text
+#, fuzzy
 msgid  "A~fter"
 msgstr "之後(~F)"
 
 #: source/dialogs/insrc.src#DLG_INS_ROW_COL.FL_INS.FixedLine.Text
+#, fuzzy
 msgid  "Insert"
 msgstr "插入"
 
 #: source/dialogs/insrc.src#DLG_INS_ROW_COL.FL_POS.FixedLine.Text
+#, fuzzy
 msgid  "Position"
 msgstr "位置"
 
 #: source/dialogs/insrc.src#DLG_INS_ROW_COL.FT_COUNT.FixedText.Text
+#, fuzzy
 msgid  "~Number"
 msgstr "編號(~N)"
 
 #: source/dialogs/insrc.src#DLG_INS_ROW_COL.STR_ROW.String.Text
+#, fuzzy
 msgid  " Rows"
 msgstr "列"
 
 #: source/dialogs/insrc.src#DLG_INS_ROW_COL.STR_COL.String.Text
+#, fuzzy
 msgid  " Columns"
 msgstr "欄"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_NAME.ModalDialog.Text
+#, fuzzy
 msgid  "Name"
 msgstr "名稱"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_OBJECT_NAME.ModalDialog.Text
+#, fuzzy
 msgid  "Name"
 msgstr "名稱"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_OBJECT_NAME.NTD_FT_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Name"
 msgstr "名稱(~N)"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_OBJECT_TITLE_DESC.ModalDialog.Text
+#, fuzzy
 msgid  "Description"
 msgstr "說明"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_OBJECT_TITLE_DESC.NTD_FT_TITLE.FixedText.Text
+#, fuzzy
 msgid  "~Title"
 msgstr "標題(~T)"
 
 #: source/dialogs/dlgname.src#RID_SVXDLG_OBJECT_TITLE_DESC.NTD_FT_DESC.FixedText.Text
+#, fuzzy
 msgid  "~Description"
 msgstr "說明(~D)"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.ModalDialog.Text
+#, fuzzy
 msgid  "Properties"
 msgstr "屬性"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_URL1.FixedText.Text
+#, fuzzy
 msgid  "~URL"
 msgstr "~URL"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_TARGET.FixedText.Text
+#, fuzzy
 msgid  "F~rame"
 msgstr "框架(~R)"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Name"
 msgstr "名稱(~N)"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_URLDESCRIPTION.FixedText.Text
+#, fuzzy
 msgid  "Alternative ~text"
 msgstr "替代文字(~T)"
 
 #: source/dialogs/cuiimapdlg.src#RID_SVXDLG_IMAPURL.FT_DESCRIPTION.FixedText.Text
+#, fuzzy
 msgid  "~Description"
 msgstr "描述(~D)"
 
@@ -2548,50 +2698,62 @@ msgid  "~Key"
 msgstr ""
 
 #: source/dialogs/iconcdlg.src#RID_SVXSTR_ICONCHOICEDLG_RESETBUT.String.Text
+#, fuzzy
 msgid  "~Back"
 msgstr "上一步(~B)"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.ModalDialog.Text
+#, fuzzy
 msgid  "Zoom & View Layout"
 msgstr "輸出檢視"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.FL_ZOOM.FixedLine.Text
+#, fuzzy
 msgid  "Zoom factor"
 msgstr "縮放係數"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.BTN_OPTIMAL.RadioButton.Text
+#, fuzzy
 msgid  "~Optimal"
 msgstr "最理想(~O)"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.BTN_WHOLE_PAGE.RadioButton.Text
+#, fuzzy
 msgid  "~Fit width and height"
 msgstr "最適寬度和高度(~F)"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.BTN_PAGE_WIDTH.RadioButton.Text
+#, fuzzy
 msgid  "Fit ~width"
 msgstr "最適寬度(~W)"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.BTN_USER.RadioButton.Text
+#, fuzzy
 msgid  "~Variable"
 msgstr "可變(~V)"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.FL_VIEWLAYOUT.FixedLine.Text
+#, fuzzy
 msgid  "View layout"
 msgstr "檢視版面配置"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.BTN_AUTOMATIC.RadioButton.Text
+#, fuzzy
 msgid  "~Automatic"
 msgstr "自動(~A)"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.BTN_SINGLE.RadioButton.Text
+#, fuzzy
 msgid  "~Single page"
 msgstr "單頁(~S)"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.BTN_COLUMNS.RadioButton.Text
+#, fuzzy
 msgid  "~Columns"
 msgstr "欄(~C)"
 
 #: source/dialogs/zoom.src#RID_SVXDLG_ZOOM.CHK_BOOK.CheckBox.Text
+#, fuzzy
 msgid  "~Book mode"
 msgstr "書籍模式(~B)"
 
@@ -2600,322 +2762,402 @@ msgid  "The following columns are currently hidden. Please mark the fields you w
 msgstr ""
 
 #: source/dialogs/showcols.src#RID_SVX_DLG_SHOWGRIDCOLUMNS.CancelButton.Text
+#, fuzzy
 msgid  "Show columns"
 msgstr "顯示欄"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.ModalDialog.Text
+#, fuzzy
 msgid  "Record Search"
 msgstr "搜尋資料條目"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_SEARCHFOR.FixedLine.Text
+#, fuzzy
 msgid  "Search for"
 msgstr "搜尋內容"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_SEARCHFORTEXT.RadioButton.Text
+#, fuzzy
 msgid  "~Text"
 msgstr "文字(~T)"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_SEARCHFORNULL.RadioButton.Text
+#, fuzzy
 msgid  "Field content is ~NULL"
 msgstr "欄位內容是 ~NULL"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_SEARCHFORNOTNULL.RadioButton.Text
+#, fuzzy
 msgid  "Field content is not NU~LL"
 msgstr "欄位內容不是 NU~LL"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_WHERE.FixedLine.Text
+#, fuzzy
 msgid  "Where to search"
 msgstr "區域"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FT_FORM.FixedText.Text
+#, fuzzy
 msgid  "Form"
 msgstr "表單"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_ALLFIELDS.RadioButton.Text
+#, fuzzy
 msgid  "All Fields"
 msgstr "全部的欄位"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.RB_SINGLEFIELD.RadioButton.Text
+#, fuzzy
 msgid  "Single field"
 msgstr "單一欄位"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_OPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Settings"
 msgstr "設定"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FT_POSITION.FixedText.Text
+#, fuzzy
 msgid  "Position"
 msgstr "位置"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_USEFORMATTER.CheckBox.Text
+#, fuzzy
 msgid  "Apply field format"
 msgstr "使用欄位格式"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_CASE.CheckBox.Text
+#, fuzzy
 msgid  "Match case"
 msgstr "精確搜尋"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_BACKWARD.CheckBox.Text
+#, fuzzy
 msgid  "Search backwards"
 msgstr "向後搜尋"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_STARTOVER.CheckBox.Text
+#, fuzzy
 msgid  "From Beginning"
 msgstr "從起始"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_WILDCARD.CheckBox.Text
+#, fuzzy
 msgid  "Wildcard expression"
 msgstr "萬用字元表示式"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_REGULAR.CheckBox.Text
+#, fuzzy
 msgid  "Regular expression"
 msgstr "常規表達"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_APPROX.CheckBox.Text
+#, fuzzy
 msgid  "Similarity Search"
 msgstr "相似字搜尋"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_APPROXSETTINGS.PushButton.Text
+#, fuzzy
 msgid  "..."
 msgstr "..."
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_HALFFULLFORMS.CheckBox.Text
+#, fuzzy
 msgid  "Match character width"
 msgstr "顧及字元寬度"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.CB_SOUNDSLIKECJK.CheckBox.Text
+#, fuzzy
 msgid  "Sounds like (Japanese)"
 msgstr "類似字元(日文)"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_SOUNDSLIKESETTINGS.PushButton.Text
+#, fuzzy
 msgid  "..."
 msgstr "..."
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FL_STATE.FixedLine.Text
+#, fuzzy
 msgid  "State"
 msgstr "狀態"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.FT_RECORDLABEL.FixedText.Text
+#, fuzzy
 msgid  "Record :"
 msgstr "資料條目："
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.PB_SEARCH.PushButton.Text
+#, fuzzy
 msgid  "Search"
 msgstr "搜尋"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.1.CancelButton.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "關閉(~C)"
 
 #: source/dialogs/fmsearch.src#RID_SVXDLG_SEARCHFORM.1.HelpButton.Text
+#, fuzzy
 msgid  "~Help"
 msgstr "說明(~H)"
 
 #: source/dialogs/fmsearch.src#RID_STR_SEARCH_ANYWHERE.String.Text
+#, fuzzy
 msgid  "anywhere in the field"
 msgstr "在欄位中任意處"
 
 #: source/dialogs/fmsearch.src#RID_STR_SEARCH_BEGINNING.String.Text
+#, fuzzy
 msgid  "beginning of field"
 msgstr "在欄位開頭"
 
 #: source/dialogs/fmsearch.src#RID_STR_SEARCH_END.String.Text
+#, fuzzy
 msgid  "end of field"
 msgstr "在欄位結尾"
 
 #: source/dialogs/fmsearch.src#RID_STR_SEARCH_WHOLE.String.Text
+#, fuzzy
 msgid  "entire field"
 msgstr "整個欄位"
 
 #: source/dialogs/fmsearch.src#RID_STR_FROM_TOP.String.Text
+#, fuzzy
 msgid  "From top"
 msgstr "從上"
 
 #: source/dialogs/fmsearch.src#RID_STR_FROM_BOTTOM.String.Text
+#, fuzzy
 msgid  "From bottom"
 msgstr "從下"
 
 #: source/dialogs/fmsearch.src#RID_SVXERR_SEARCH_NORECORD.ErrorBox.Message
+#, fuzzy
 msgid  "No records corresponding to your data found."
 msgstr "沒有找到與您的資料相對應的條目。"
 
 #: source/dialogs/fmsearch.src#RID_SVXERR_SEARCH_GENERAL_ERROR.ErrorBox.Message
+#, fuzzy
 msgid  "An unknown error occurred. The search could not be finished."
 msgstr "出現一個不明的錯誤。無法結束搜尋。"
 
 #: source/dialogs/fmsearch.src#RID_STR_OVERFLOW_FORWARD.String.Text
+#, fuzzy
 msgid  "Overflow, search continued at the beginning"
 msgstr "溢位，接著從起始位置搜尋"
 
 #: source/dialogs/fmsearch.src#RID_STR_OVERFLOW_BACKWARD.String.Text
+#, fuzzy
 msgid  "Overflow, search continued at the end"
 msgstr "溢位，接著從結尾位置搜尋"
 
 #: source/dialogs/fmsearch.src#RID_STR_SEARCH_COUNTING.String.Text
+#, fuzzy
 msgid  "counting records"
 msgstr "計數資料項目"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ModelessDialog.Text
+#, fuzzy
 msgid  "Spellcheck: "
 msgstr "拼字檢查： "
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.FT_LANGUAGE.FixedText.Text
+#, fuzzy
 msgid  "Text languag~e"
 msgstr "文字語言(~E)"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.FT_NOTINDICT.FixedText.Text
+#, fuzzy
 msgid  "~Not in dictionary"
 msgstr "不在字典中(~N)"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.FT_SUGGESTION.FixedText.Text
+#, fuzzy
 msgid  "~Suggestions"
 msgstr "建議(~S)"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.CB_CHECK_GRAMMAR.CheckBox.Text
+#, fuzzy
 msgid  "Check ~grammar"
 msgstr "檢查文法(~G)"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_IGNORE.PushButton.Text
+#, fuzzy
 msgid  "~Ignore Once"
 msgstr "忽略一次(~I)"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_IGNOREALL.PushButton.Text
+#, fuzzy
 msgid  "I~gnore All"
 msgstr "全部忽略(~G)"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_IGNORERULE.PushButton.Text
+#, fuzzy
 msgid  "I~gnore Rule"
 msgstr "忽略規則(~G)"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.MB_ADDTODICT.MenuButton.Text
+#, fuzzy
 msgid  "~Add"
 msgstr "增加(~A)"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_CHANGE.PushButton.Text
+#, fuzzy
 msgid  "~Change"
 msgstr "變更(~C)"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_CHANGEALL.PushButton.Text
+#, fuzzy
 msgid  "Change A~ll"
 msgstr "全部變更(~L)"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_EXPLAIN.PushButton.Text
+#, fuzzy
 msgid  "~Explain..."
 msgstr "說明(~E)..."
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_AUTOCORR.PushButton.Text
+#, fuzzy
 msgid  "AutoCor~rect"
 msgstr "自動校正(~R)"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_OPTIONS.PushButton.Text
+#, fuzzy
 msgid  "O~ptions..."
 msgstr "選項(~P)..."
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_UNDO.PushButton.Text
+#, fuzzy
 msgid  "~Undo"
 msgstr "還原(~U)"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.PB_CLOSE.PushButton.Text
+#, fuzzy
 msgid  "Cl~ose"
 msgstr "關閉(~O)"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_RESUME.String.Text
+#, fuzzy
 msgid  "Resu~me"
 msgstr "繼續(~M)"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_NOSUGGESTIONS.String.Text
+#, fuzzy
 msgid  "(no suggestions)"
 msgstr "(無建議)"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_SPELLING.String.Text
+#, fuzzy
 msgid  "Spelling: $LANGUAGE ($LOCATION)"
 msgstr "拼字檢查：$LANGUAGE ($LOCATION)"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_SPELLING_AND_GRAMMAR.String.Text
+#, fuzzy
 msgid  "Spelling and Grammar: $LANGUAGE ($LOCATION)"
 msgstr "拼字檢查與文法：$LANGUAGE ($LOCATION)"
 
 #: source/dialogs/SpellDialog.src#RID_SVXDLG_SPELLCHECK.ST_SPELLING_AND_GRAMMAR_VENDORNAME.String.Text
+#, fuzzy
 msgid  "Spelling and Grammar: $LANGUAGE ($LOCATION) [$VendorName]"
 msgstr "拼字檢查與文法：$LANGUAGE ($LOCATION) [$VendorName]"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.TabPage.Text
+#, fuzzy
 msgid  "Proxy"
 msgstr "代理伺服器"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.GB_SETTINGS.FixedLine.Text
+#, fuzzy
 msgid  "Settings"
 msgstr "設定"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_PROXYMODE.FixedText.Text
+#, fuzzy
 msgid  "Proxy s~erver"
 msgstr "代理伺服器(~E)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.LB_PROXYMODE.item1.StringList.item
+#, fuzzy
 msgid  "None"
 msgstr "無"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.LB_PROXYMODE.item2.StringList.item
+#, fuzzy
 msgid  "System"
 msgstr "系統"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.LB_PROXYMODE.item3.StringList.item
+#, fuzzy
 msgid  "Manual"
 msgstr "手動"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.ST_PROXY_FROM_BROWSER.String.Text
+#, fuzzy
 msgid  "Use browser settings"
 msgstr "使用瀏覽器的設定"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_HTTP_PROXY.FixedText.Text
+#, fuzzy
 msgid  "HT~TP proxy"
 msgstr "H~TTP 代理"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_HTTP_PORT.FixedText.Text
+#, fuzzy
 msgid  "~Port"
 msgstr "埠(~P)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_HTTPS_PROXY.FixedText.Text
+#, fuzzy
 msgid  "HTTP~S proxy"
 msgstr "HTTPS 代理伺服器(~S)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_HTTPS_PORT.FixedText.Text
+#, fuzzy
 msgid  "P~ort"
-msgstr "埠(~O)"
+msgstr "連接埠(~O)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_FTP_PROXY.FixedText.Text
+#, fuzzy
 msgid  "~FTP proxy"
 msgstr "~FTP 代理"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_FTP_PORT.FixedText.Text
+#, fuzzy
 msgid  "P~ort"
 msgstr "埠(~O)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_SOCKS_PROXY.FixedText.Text
+#, fuzzy
 msgid  "~SOCKS proxy"
 msgstr "~SOCKS 代理"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_SOCKS_PORT.FixedText.Text
+#, fuzzy
 msgid  "Po~rt"
 msgstr "埠(~R)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.FT_NOPROXYFOR.FixedText.Text
+#, fuzzy
 msgid  "~No proxy for:"
 msgstr "不用代理伺服器(~N)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.ED_NOPROXYDESC.FixedText.Text
+#, fuzzy
 msgid  "Separator ;"
 msgstr "用分號隔開"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.GB_DNS.FixedLine.Text
+#, fuzzy
 msgid  "DNS server"
 msgstr "DNS 伺服器"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.RB_DNS_AUTO.RadioButton.Text
+#, fuzzy
 msgid  "~Automatic"
 msgstr "自動(~A)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_PROXY.RB_DNS_MANUAL.RadioButton.Text
+#, fuzzy
 msgid  "~Manual"
 msgstr "手動(~M)"
 
@@ -2928,18 +3170,22 @@ msgid  "is not a valid entry for this field. Please specify a value between 1 an
 msgstr ""
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.TabPage.Text
+#, fuzzy
 msgid  "Search"
 msgstr "搜尋"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.GB_SEARCH.FixedLine.Text
+#, fuzzy
 msgid  "Search in"
 msgstr "搜尋位置"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.FT_SEARCH_NAME.FixedText.Text
+#, fuzzy
 msgid  "~Name"
 msgstr "名稱(~N)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.FT_SEARCH.FixedText.Text
+#, fuzzy
 msgid  "Type"
 msgstr "類型"
 
@@ -2948,66 +3194,82 @@ msgid  "~And"
 msgstr ""
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.RB_OR.RadioButton.Text
+#, fuzzy
 msgid  "~Or"
 msgstr "或(~O)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.RB_EXACT.RadioButton.Text
+#, fuzzy
 msgid  "E~xact"
 msgstr "精確(~X)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.FT_URL.FixedText.Text
+#, fuzzy
 msgid  "~Prefix"
 msgstr "前綴(~P)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.FT_POSTFIX.FixedText.Text
+#, fuzzy
 msgid  "Su~ffix"
 msgstr "後綴(~F)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.FT_SEPARATOR.FixedText.Text
+#, fuzzy
 msgid  "~Separator"
 msgstr "連接符(~S)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.FT_CASE.FixedText.Text
+#, fuzzy
 msgid  "~Case match"
 msgstr "大小寫(~C)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.ED_CASE.item1.StringList.item
+#, fuzzy
 msgid  "None"
 msgstr "無"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.ED_CASE.item2.StringList.item
+#, fuzzy
 msgid  "Upper"
 msgstr "大寫"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.ED_CASE.item3.StringList.item
+#, fuzzy
 msgid  "Lower"
 msgstr "小寫"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.PB_NEW.PushButton.Text
+#, fuzzy
 msgid  "N~ew"
 msgstr "新增(~E)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.PB_ADD.PushButton.Text
+#, fuzzy
 msgid  "~Add"
 msgstr "增加(~A)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.PB_CHANGE.PushButton.Text
+#, fuzzy
 msgid  "~Modify"
 msgstr "修改(~M)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.PB_DELETE.PushButton.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "刪除(~D)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SEARCH.MSG_MODIFY.String.Text
+#, fuzzy
 msgid  "Do you want to accept the current modification?"
 msgstr "您要採用目前的修改？"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.TabPage.Text
+#, fuzzy
 msgid  "Security"
 msgstr "安全性"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FL_SEC_SECURITYOPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Security options and warnings"
 msgstr "安全性選項與警告"
 
@@ -3016,22 +3278,27 @@ msgid  "Adjust security related options and define warnings for hidden informati
 msgstr ""
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.PB_SEC_SECURITYOPTIONS.PushButton.Text
+#, fuzzy
 msgid  "Options..."
 msgstr "選項..."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FL_SEC_PASSWORDS.FixedLine.Text
+#, fuzzy
 msgid  "Passwords for web connections"
 msgstr "Web 連線的密碼"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.CB_SEC_SAVEPASSWORDS.CheckBox.Text
+#, fuzzy
 msgid  "Persistently save passwords for web connections"
 msgstr "永久儲存 Web 連線的密碼"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.PB_SEC_CONNECTIONS.PushButton.Text
+#, fuzzy
 msgid  "Connections..."
 msgstr "連線..."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.CB_SEC_MASTERPASSWORD.CheckBox.Text
+#, fuzzy
 msgid  "Protected by a master password (recommended)"
 msgstr "受主密碼保護 (建議使用)"
 
@@ -3040,10 +3307,12 @@ msgid  "Passwords are protected by a master password. You will be asked to enter
 msgstr ""
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.PB_SEC_MASTERPASSWORD.PushButton.Text
+#, fuzzy
 msgid  "Master Password..."
 msgstr "主密碼..."
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.FL_SEC_MACROSEC.FixedLine.Text
+#, fuzzy
 msgid  "Macro security"
 msgstr "巨集安全性"
 
@@ -3052,6 +3321,7 @@ msgid  "Adjust the security level for executing macros and specify trusted macro
 msgstr ""
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_SECURITY.PB_SEC_MACROSEC.PushButton.Text
+#, fuzzy
 msgid  "Macro Security..."
 msgstr "巨集安全性..."
 
@@ -3068,78 +3338,97 @@ msgid  "Please note that with Java\nyou disable Javascript as well.\n\nDo you st
 msgstr ""
 
 #: source/options/optinet2.src#RID_SVXDLG_OPT_JAVASCRIPT_DISABLE.CB_JSCPT_DISABLE.CheckBox.Text
+#, fuzzy
 msgid  "~Don't show warning again"
 msgstr "不要再顯示這個警告(~D)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_MAIL.FL_MAIL.FixedLine.Text
+#, fuzzy
 msgid  "Sending documents as e-mail attachments"
 msgstr "以電子郵件附件的型式傳送文件"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_MAIL.FT_MAILERURL.FixedText.Text
+#, fuzzy
 msgid  "~E-mail program"
 msgstr "電子郵件程式(~E)"
 
 #: source/options/optinet2.src#RID_SVXPAGE_INET_MAIL.STR_DEFAULT_FILENAME.String.Text
+#, fuzzy
 msgid  "All files (*.*)"
 msgstr "全部檔案 (*.*)"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.TabPage.Text
+#, fuzzy
 msgid  "User Data"
 msgstr "使用者資料"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_COMPANY.FixedText.Text
+#, fuzzy
 msgid  "~Company"
 msgstr "公司(~C)"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_NAME.FixedText.Text
+#, fuzzy
 msgid  "First/Last ~name/Initials"
 msgstr "名字/姓氏/縮寫(~N)"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_NAME_RUSS.FixedText.Text
+#, fuzzy
 msgid  "Last Name/First name/Father's name/Initials"
 msgstr "姓氏/名字/父親名字/縮寫"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_NAME_EASTERN.FixedText.Text
+#, fuzzy
 msgid  "Last/First ~name/Initials"
 msgstr "名字/姓氏/縮寫(~N)"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_STREET.FixedText.Text
+#, fuzzy
 msgid  "~Street"
 msgstr "街道(~S)"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_STREET_RUSS.FixedText.Text
+#, fuzzy
 msgid  "Street/Apartment number"
 msgstr "街道/公寓號碼"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_CITY.FixedText.Text
+#, fuzzy
 msgid  "Zip/City"
 msgstr "郵遞區號/城市"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_COUNTRY.FixedText.Text
+#, fuzzy
 msgid  "Country/Region"
 msgstr "國家/地區"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_TITLEPOS.FixedText.Text
+#, fuzzy
 msgid  "~Title/Position"
 msgstr "頭銜/職務(~T)"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_PHONE.FixedText.Text
+#, fuzzy
 msgid  "Tel. (Home/Work)"
 msgstr "電話(私人/辦公室)"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.FT_FAXMAIL.FixedText.Text
+#, fuzzy
 msgid  "Fa~x / E-mail"
 msgstr "傳真/電子郵件(~X)"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.GB_ADDRESS.FixedLine.Text
+#, fuzzy
 msgid  "Address "
 msgstr " 地址 "
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.CB_USEDATA.CheckBox.Text
+#, fuzzy
 msgid  "Use data for document properties"
 msgstr "使用資料作為文件屬性"
 
 #: source/options/optgenrl.src#RID_SFXPAGE_GENERAL.STR_US_STATE.String.Text
+#, fuzzy
 msgid  "City/State/Zip"
 msgstr "街道/省市/郵遞區號"
 
@@ -3152,462 +3441,577 @@ msgid  "The User Data have been changed.\nDo you really want to change your User
 msgstr ""
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.FL_TREAT_AS_EQUAL.FixedLine.Text
+#, fuzzy
 msgid  "Treat as equal"
 msgstr "當作相等處理"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_CASE.CheckBox.Text
+#, fuzzy
 msgid  "~uppercase/lowercase"
 msgstr "字母大小寫(~U)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_FULL_HALF_WIDTH.CheckBox.Text
+#, fuzzy
 msgid  "~full-width/half-width forms"
 msgstr "全形和半形字型(~F)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_HIRAGANA_KATAKANA.CheckBox.Text
+#, fuzzy
 msgid  "~hiragana/katakana"
 msgstr "平假名和片假名(~H)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_CONTRACTIONS.CheckBox.Text
+#, fuzzy
 msgid  "~contractions (yo-on, sokuon)"
 msgstr "日文縮寫式(拗音，促音)(~C)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_MINUS_DASH_CHOON.CheckBox.Text
+#, fuzzy
 msgid  "~minus/dash/cho-on"
 msgstr "負數符號/連字符/長音[－/‐/ー](~M)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_REPEAT_CHAR_MARKS.CheckBox.Text
+#, fuzzy
 msgid  "'re~peat character' marks"
 msgstr "重復的字元[ヽヾゝゞ々](~P)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_VARIANT_FORM_KANJI.CheckBox.Text
+#, fuzzy
 msgid  "~variant-form kanji (itaiji)"
 msgstr "日文漢字(異体字)(~V)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_OLD_KANA_FORMS.CheckBox.Text
+#, fuzzy
 msgid  "~old Kana forms"
 msgstr "舊式日文假名(~O)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_DIZI_DUZU.CheckBox.Text
+#, fuzzy
 msgid  "~di/zi, du/zu"
 msgstr "ヂ/ジ、ヅ/ズ(~D)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_BAVA_HAFA.CheckBox.Text
+#, fuzzy
 msgid  "~ba/va, ha/fa"
 msgstr "バ/ヴァ、ハ/ファ(~B)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_TSITHICHI_DHIZI.CheckBox.Text
+#, fuzzy
 msgid  "~tsi/thi/chi, dhi/zi"
 msgstr "バ/ヴァ、ハ/ファ(~T)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_HYUFYU_BYUVYU.CheckBox.Text
+#, fuzzy
 msgid  "h~yu/fyu, byu/vyu"
 msgstr "ヒュ/フュ、ビュ/ヴュ(~Y)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_SESHE_ZEJE.CheckBox.Text
+#, fuzzy
 msgid  "~se/she, ze/je"
 msgstr "バ/ヴァ、ハ/ファ(~S)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_IAIYA.CheckBox.Text
+#, fuzzy
 msgid  "~ia/iya (piano/piyano)"
 msgstr "イ段及エ段的連接(ﾋﾟｱﾉ/ﾋﾟﾔﾉ)(~I)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_KIKU.CheckBox.Text
+#, fuzzy
 msgid  "~ki/ku (tekisuto/tekusuto)"
 msgstr "サ行之前的ｷ/ｸ(ﾃｷｽﾄ/ﾃｸｽﾄ)(~K)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_MATCH_PROLONGED_SOUNDMARK.CheckBox.Text
+#, fuzzy
 msgid  "Prolon~ged vowels (ka-/kaa)"
 msgstr "長元音(ｶ/ｶｰ)(~G)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.FL_IGNORE.FixedLine.Text
+#, fuzzy
 msgid  "Ignore"
 msgstr "忽略"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_IGNORE_PUNCTUATION.CheckBox.Text
+#, fuzzy
 msgid  "Pu~nctuation characters"
 msgstr "注音符號(~N)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_IGNORE_WHITESPACES.CheckBox.Text
+#, fuzzy
 msgid  "~Whitespace characters"
 msgstr "空格字元(~W)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CB_IGNORE_MIDDLE_DOT.CheckBox.Text
+#, fuzzy
 msgid  "Midd~le dots"
 msgstr "中間點(~L)"
 
 #: source/options/optjsearch.src#RID_SVXPAGE_JSEARCH_OPTIONS.CheckBox.Text
+#, fuzzy
 msgid  "Searching in Japanese"
 msgstr "用於日文的搜尋選項"
 
 #: source/options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.FL_DEFTXTDIRECTION.FixedLine.Text
+#, fuzzy
 msgid  "Default text direction"
 msgstr "預設的文字方向"
 
 #: source/options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.RB_TXTDIR_LEFT2RIGHT.RadioButton.Text
+#, fuzzy
 msgid  "~Left-to-right"
 msgstr "從左向右(~L)"
 
 #: source/options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.RB_TXTDIR_RIGHT2LEFT.RadioButton.Text
+#, fuzzy
 msgid  "~Right-to-left"
 msgstr "從右向左(~R)"
 
 #: source/options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.FL_SHEETVIEW.FixedLine.Text
+#, fuzzy
 msgid  "Sheet view"
 msgstr "表格檢視"
 
 #: source/options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.CB_SHTVW_RIGHT2LEFT.CheckBox.Text
+#, fuzzy
 msgid  "Right-~to-left"
 msgstr "從右向左(~T)"
 
 #: source/options/internationaloptions.src#RID_OFA_TP_INTERNATIONAL.CB_SHTVW_CURRENTDOCONLY.CheckBox.Text
+#, fuzzy
 msgid  "~Current document only"
 msgstr "僅用於目前的文件(~C)"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.TabPage.Text
+#, fuzzy
 msgid  "Complex Text Layout"
 msgstr "複合文字版面配置"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FL_SEQUENCECHECKING.FixedLine.Text
+#, fuzzy
 msgid  "Sequence checking"
 msgstr "順序檢查"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.CB_SEQUENCECHECKING.CheckBox.Text
+#, fuzzy
 msgid  "Use se~quence checking"
 msgstr "使用順序檢查(~q)"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.CB_RESTRICTED.CheckBox.Text
+#, fuzzy
 msgid  "Restricted"
 msgstr "限制"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.CB_TYPE_REPLACE.CheckBox.Text
+#, fuzzy
 msgid  "~Type and replace"
 msgstr "鍵入並取代(~T)"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FL_CURSORCONTROL.FixedLine.Text
+#, fuzzy
 msgid  "Cursor control"
 msgstr "游標控制"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FT_MOVEMENT.FixedText.Text
+#, fuzzy
 msgid  "Movement"
 msgstr "移動"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.RB_MOVEMENT_LOGICAL.RadioButton.Text
+#, fuzzy
 msgid  "Lo~gical"
 msgstr "邏輯(~G)"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.RB_MOVEMENT_VISUAL.RadioButton.Text
+#, fuzzy
 msgid  "~Visual"
 msgstr "可視(~V)"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FL_GENERAL.FixedLine.Text
+#, fuzzy
 msgid  "General options"
 msgstr "一般選項"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.FT_NUMERALS.FixedText.Text
+#, fuzzy
 msgid  "~Numerals"
 msgstr "數字(~N)"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.item1.StringList.item
+#, fuzzy
 msgid  "Arabic"
 msgstr "阿拉伯數字"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.item2.StringList.item
+#, fuzzy
 msgid  "Hindi"
 msgstr "北印度文"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.item3.StringList.item
+#, fuzzy
 msgid  "System"
 msgstr "系統"
 
 #: source/options/optctl.src#RID_SVXPAGE_OPTIONS_CTL.LB_NUMERALS.item4.StringList.item
+#, fuzzy
 msgid  "Context"
 msgstr "上下文"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FL_COLORSCHEME.FixedLine.Text
+#, fuzzy
 msgid  "Color scheme"
 msgstr "顔色圖案"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FT_COLORSCHEME.FixedText.Text
+#, fuzzy
 msgid  "Scheme"
 msgstr "顏色圖案"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.PB_SAVESCHEME.PushButton.Text
+#, fuzzy
 msgid  "Save..."
 msgstr "儲存..."
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.PB_DELETESCHEME.PushButton.Text
+#, fuzzy
 msgid  "Delete"
 msgstr "刪除"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.FL_CUSTOMCOLORS.FixedLine.Text
+#, fuzzy
 msgid  "Custom colors"
 msgstr "自訂的顏色"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.ST_ON.String.Text
+#, fuzzy
 msgid  "On"
 msgstr "啟動"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.ST_UIELEM.String.Text
+#, fuzzy
 msgid  "User interface elements"
 msgstr "使用者介面的元件"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.ST_COLSET.String.Text
+#, fuzzy
 msgid  "Color setting"
 msgstr "顔色的設定"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.ST_PREVIEW.String.Text
+#, fuzzy
 msgid  "Preview"
 msgstr "預覽"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_GENERAL.FixedText.Text
+#, fuzzy
 msgid  "General"
 msgstr "一般"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_DOCCOLOR.FixedText.Text
+#, fuzzy
 msgid  "Document background"
 msgstr "文件的背景"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_DOCBOUND.CheckBox.Text
+#, fuzzy
 msgid  "Text boundaries"
 msgstr "內文邊界"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_APPBACKGROUND.FixedText.Text
+#, fuzzy
 msgid  "Application background"
 msgstr "應用程式的背景"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_OBJECTBOUNDARIES.CheckBox.Text
+#, fuzzy
 msgid  "Object boundaries"
 msgstr "物件的邊框"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_TABLEBOUNDARIES.CheckBox.Text
+#, fuzzy
 msgid  "Table boundaries"
 msgstr "表格的邊框"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_FONTCOLOR.FixedText.Text
+#, fuzzy
 msgid  "Font color"
 msgstr "字型顏色"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_LINKS.CheckBox.Text
+#, fuzzy
 msgid  "Unvisited links"
 msgstr "尚未訪問過的連結"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_LINKSVISITED.CheckBox.Text
+#, fuzzy
 msgid  "Visited links"
 msgstr "訪問過的連結"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SPELL.FixedText.Text
+#, fuzzy
 msgid  "AutoSpellcheck"
 msgstr "自動檢查拼寫"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SMARTTAGS.FixedText.Text
+#, fuzzy
 msgid  "Smart Tags"
 msgstr "智慧標籤"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITER.FixedText.Text
+#, fuzzy
 msgid  "Text Document"
 msgstr "文字文件"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERTEXTGRID.FixedText.Text
+#, fuzzy
 msgid  "Grid"
-msgstr "網格"
+msgstr "格線"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_WRITERFIELDSHADINGS.CheckBox.Text
+#, fuzzy
 msgid  "Field shadings"
 msgstr "欄位背景顔色"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_WRITERIDXSHADINGS.CheckBox.Text
+#, fuzzy
 msgid  "Index and table shadings"
 msgstr "目錄背景顔色"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERSCRIPTINDICATOR.FixedText.Text
+#, fuzzy
 msgid  "Script indicator"
 msgstr "程式檔標記"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.CB_WRITERSECTIONBOUNDARIES.CheckBox.Text
+#, fuzzy
 msgid  "Section boundaries"
 msgstr "區段的邊框"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERPAGEBREAKS.FixedText.Text
+#, fuzzy
 msgid  "Page and column breaks"
 msgstr "分頁和換欄"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_WRITERDIRECTCURSOR.FixedText.Text
+#, fuzzy
 msgid  "Direct cursor"
 msgstr "直接定位游標"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTML.FixedText.Text
+#, fuzzy
 msgid  "HTML Document"
 msgstr "HTML 文件"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTMLSGML.FixedText.Text
+#, fuzzy
 msgid  "SGML syntax highlighting"
 msgstr "反白顯示 SGML 語法"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTMLCOMMENT.FixedText.Text
+#, fuzzy
 msgid  "Comment highlighting"
 msgstr "反白顯示備註"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTMLKEYWORD.FixedText.Text
+#, fuzzy
 msgid  "Keyword highlighting"
 msgstr "反白顯示關鍵字"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_HTMLUNKNOWN.FixedText.Text
+#, fuzzy
 msgid  "Text"
 msgstr "文字"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALC.FixedText.Text
+#, fuzzy
 msgid  "Spreadsheet"
 msgstr "試算表"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCGRID.FixedText.Text
+#, fuzzy
 msgid  "Grid lines"
 msgstr "格線"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCPAGEBREAK.FixedText.Text
+#, fuzzy
 msgid  "Page breaks"
 msgstr "分頁"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCPAGEBREAKMANUAL.FixedText.Text
+#, fuzzy
 msgid  "Manual page breaks"
 msgstr "手動分頁"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCPAGEBREAKAUTO.FixedText.Text
+#, fuzzy
 msgid  "Automatic page breaks"
 msgstr "自動分頁"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCDETECTIVE.FixedText.Text
+#, fuzzy
 msgid  "Detective"
 msgstr "偵探"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCDETECTIVEERROR.FixedText.Text
+#, fuzzy
 msgid  "Detective error"
 msgstr "偵探錯誤"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCREFERENCE.FixedText.Text
+#, fuzzy
 msgid  "References"
 msgstr "參照"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_CALCNOTESBACKGROUND.FixedText.Text
+#, fuzzy
 msgid  "Notes background"
 msgstr "備註的背景"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_DRAW.FixedText.Text
+#, fuzzy
 msgid  "Drawing / Presentation"
 msgstr "繪圖/簡報"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_DRAWGRID.FixedText.Text
+#, fuzzy
 msgid  "Grid"
 msgstr "網格"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASIC.FixedText.Text
+#, fuzzy
 msgid  "Basic Syntax Highlighting"
 msgstr "反白顯示 Basic 語法"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICIDENTIFIER.FixedText.Text
+#, fuzzy
 msgid  "Identifier"
 msgstr "標誌"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICCOMMENT.FixedText.Text
+#, fuzzy
 msgid  "Comment"
 msgstr "備註"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICNUMBER.FixedText.Text
+#, fuzzy
 msgid  "Number"
 msgstr "數字"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICSTRING.FixedText.Text
+#, fuzzy
 msgid  "String"
 msgstr "字串"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICOPERATOR.FixedText.Text
+#, fuzzy
 msgid  "Operator"
 msgstr "運算子"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICKEYWORD.FixedText.Text
+#, fuzzy
 msgid  "Reserved expression"
 msgstr "保留的表達式"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_BASICERROR.FixedText.Text
+#, fuzzy
 msgid  "Error"
 msgstr "錯誤"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQL_COMMAND.FixedText.Text
+#, fuzzy
 msgid  "SQL Syntax Highlighting"
 msgstr "反白顯示 SQL 語法"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLIDENTIFIER.FixedText.Text
+#, fuzzy
 msgid  "Identifier"
 msgstr "標誌"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLNUMBER.FixedText.Text
+#, fuzzy
 msgid  "Number"
 msgstr "數字"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLSTRING.FixedText.Text
+#, fuzzy
 msgid  "String"
 msgstr "字串"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLOPERATOR.FixedText.Text
+#, fuzzy
 msgid  "Operator"
 msgstr "運算子"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLKEYWORD.FixedText.Text
+#, fuzzy
 msgid  "Keyword"
 msgstr "關鍵字"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLPARAMETER.FixedText.Text
+#, fuzzy
 msgid  "Parameter"
 msgstr "參數"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.FT_SQLCOMMENT.FixedText.Text
+#, fuzzy
 msgid  "Comment"
 msgstr "備註"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.ST_EXTENSION.String.Text
+#, fuzzy
 msgid  "Colorsettings of the Extensions"
 msgstr "擴充軟體的顏色設定"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.ST_SPELL_CHECK_HIGHLIGHTING.String.Text
+#, fuzzy
 msgid  "Spell check highlighting"
 msgstr "拼字檢查反白顯示"
 
 #: source/options/optcolor.src#RID_SVXPAGE_COLORCONFIG.CT_COLORCONFIG.WN_SCROLL.ST_GRAMMAR_CHECK_HIGHLIGHTING.String.Text
+#, fuzzy
 msgid  "Grammar check highlighting"
 msgstr "文法檢查反白顯示"
 
 #: source/options/optcolor.src#RID_SVXQB_DELETE_COLOR_CONFIG.QueryBox.Message
+#, fuzzy
 msgid  "Do you really want to delete the color scheme?"
 msgstr "真的要刪除這個顏色圖案？"
 
 #: source/options/optcolor.src#RID_SVXSTR_COLOR_CONFIG_DELETE.String.Text
+#, fuzzy
 msgid  "Color Scheme Deletion"
 msgstr "確認刪除顔色圖案"
 
 #: source/options/optcolor.src#RID_SVXSTR_COLOR_CONFIG_SAVE1.String.Text
+#, fuzzy
 msgid  "Save scheme"
 msgstr "儲存顔色圖案"
 
 #: source/options/optcolor.src#RID_SVXSTR_COLOR_CONFIG_SAVE2.String.Text
+#, fuzzy
 msgid  "Name of color scheme"
 msgstr "顏色圖案的名稱"
 
 #: source/options/doclinkdialog.src#DLG_DOCUMENTLINK.FT_URL.FixedText.Text
+#, fuzzy
 msgid  "~Database file"
 msgstr "資料庫檔案(~D)"
 
 #: source/options/doclinkdialog.src#DLG_DOCUMENTLINK.PB_BROWSEFILE.PushButton.Text
+#, fuzzy
 msgid  "~Browse..."
 msgstr "瀏覽(~B)..."
 
 #: source/options/doclinkdialog.src#DLG_DOCUMENTLINK.FT_NAME.FixedText.Text
+#, fuzzy
 msgid  "Registered ~name"
 msgstr "註冊名稱(~N)"
 
 #: source/options/doclinkdialog.src#DLG_DOCUMENTLINK.STR_EDIT_LINK.String.Text
+#, fuzzy
 msgid  "Edit Database Link"
 msgstr "編輯資料庫連結"
 
 #: source/options/doclinkdialog.src#DLG_DOCUMENTLINK.STR_NEW_LINK.String.Text
+#, fuzzy
 msgid  "Create Database Link"
 msgstr "建立資料庫連結"
 
@@ -3624,18 +4028,22 @@ msgid  "The name '$file$' is already used for another database.\nPlease choose a
 msgstr ""
 
 #: source/options/doclinkdialog.src#QUERY_DELETE_CONFIRM.QueryBox.Message
+#, fuzzy
 msgid  "Do you want to delete the entry?"
 msgstr "是否要刪除此條目？"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.ModalDialog.Text
+#, fuzzy
 msgid  "Options"
 msgstr "選項"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.PB_BACK.PushButton.Text
+#, fuzzy
 msgid  "~Back"
 msgstr "返回(~B)"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE.ST_LOAD_ERROR.String.Text
+#, fuzzy
 msgid  "The selected module could not be loaded."
 msgstr "無法載入選擇的模塊。"
 
@@ -3688,442 +4096,552 @@ msgid  "This is where you define general settings for opening and saving documen
 msgstr ""
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.0.ItemList.item
+#, fuzzy
 msgid  "%PRODUCTNAME"
 msgstr "%PRODUCTNAME"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SFXPAGE_GENERAL.ItemList.item
+#, fuzzy
 msgid  "User Data"
 msgstr "使用者資料"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.OFA_TP_MISC.ItemList.item
+#, fuzzy
 msgid  "General"
 msgstr "一般"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.OFA_TP_MEMORY.ItemList.item
+#, fuzzy
 msgid  "Memory"
 msgstr "記憶體"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.OFA_TP_VIEW.ItemList.item
+#, fuzzy
 msgid  "View"
 msgstr "檢視"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SFXPAGE_PRINTOPTIONS.ItemList.item
+#, fuzzy
 msgid  "Print"
 msgstr "列印"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SFXPAGE_PATH.ItemList.item
+#, fuzzy
 msgid  "Paths"
 msgstr "路徑"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_COLOR.ItemList.item
+#, fuzzy
 msgid  "Colors"
 msgstr "色彩"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVX_FONT_SUBSTITUTION.ItemList.item
+#, fuzzy
 msgid  "Fonts"
 msgstr "字型"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_INET_SECURITY.ItemList.item
+#, fuzzy
 msgid  "Security"
 msgstr "安全性"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_COLORCONFIG.ItemList.item
+#, fuzzy
 msgid  "Appearance"
 msgstr "外觀"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_ACCESSIBILITYCONFIG.ItemList.item
+#, fuzzy
 msgid  "Accessibility"
 msgstr "輔助工具"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_OPTIONS_JAVA.ItemList.item
+#, fuzzy
 msgid  "Java"
 msgstr "Java"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_SSO.ItemList.item
+#, fuzzy
 msgid  "Network Identity"
 msgstr "網路身份"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_GENERAL_OPTIONS.RID_SVXPAGE_ONLINEUPDATE.ItemList.item
+#, fuzzy
 msgid  "Online Update"
 msgstr "線上更新"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.0.ItemList.item
+#, fuzzy
 msgid  "Language Settings"
 msgstr "語言設定"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.OFA_TP_LANGUAGES.ItemList.item
+#, fuzzy
 msgid  "Languages"
 msgstr "語言"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.RID_SFXPAGE_LINGU.ItemList.item
+#, fuzzy
 msgid  "Writing Aids"
 msgstr "語言規則"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.RID_SVXPAGE_JSEARCH_OPTIONS.ItemList.item
+#, fuzzy
 msgid  "Searching in Japanese"
 msgstr "用於日文的搜尋選項"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.RID_SVXPAGE_ASIAN_LAYOUT.ItemList.item
+#, fuzzy
 msgid  "Asian Layout"
 msgstr "亞洲語言版面配置"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_LANGUAGE_OPTIONS.RID_SVXPAGE_OPTIONS_CTL.ItemList.item
+#, fuzzy
 msgid  "Complex Text Layout"
 msgstr "複合文字版面配置"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_INET_DLG.0.ItemList.item
+#, fuzzy
 msgid  "Internet"
 msgstr "Internet"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_INET_DLG.RID_SVXPAGE_INET_PROXY.ItemList.item
+#, fuzzy
 msgid  "Proxy"
 msgstr "代理伺服器"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_INET_DLG.RID_SVXPAGE_INET_SEARCH.ItemList.item
+#, fuzzy
 msgid  "Search"
 msgstr "搜尋"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_INET_DLG.RID_SVXPAGE_INET_MAIL.ItemList.item
+#, fuzzy
 msgid  "E-mail"
 msgstr "電子郵件"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.0.ItemList.item
+#, fuzzy
 msgid  "%PRODUCTNAME Writer"
 msgstr "%PRODUCTNAME Writer"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_OPTLOAD_PAGE.ItemList.item
+#, fuzzy
 msgid  "General"
 msgstr "一般"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_CONTENT_OPT.ItemList.item
+#, fuzzy
 msgid  "View"
 msgstr "檢視"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_OPTSHDWCRSR.ItemList.item
+#, fuzzy
 msgid  "Formatting Aids"
 msgstr "格式化輔助"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SVXPAGE_GRID.ItemList.item
+#, fuzzy
 msgid  "Grid"
 msgstr "網格"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_STD_FONT.ItemList.item
+#, fuzzy
 msgid  "Basic Fonts (Western)"
 msgstr "標準字型 (西文)"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_STD_FONT_CJK.ItemList.item
+#, fuzzy
 msgid  "Basic Fonts (Asian)"
 msgstr "標準字型(亞洲語言)"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_STD_FONT_CTL.ItemList.item
+#, fuzzy
 msgid  "Basic Fonts (CTL)"
 msgstr "基本字型 (CTL)"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_OPTPRINT_PAGE.ItemList.item
+#, fuzzy
 msgid  "Print"
 msgstr "列印"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_OPTTABLE_PAGE.ItemList.item
+#, fuzzy
 msgid  "Table"
 msgstr "表格"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_REDLINE_OPT.ItemList.item
+#, fuzzy
 msgid  "Changes"
 msgstr "變更"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_OPTCOMPATIBILITY_PAGE.ItemList.item
+#, fuzzy
 msgid  "Compatibility"
 msgstr "相容性"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_OPTCAPTION_PAGE.ItemList.item
+#, fuzzy
 msgid  "AutoCaption"
 msgstr "自動標籤"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_EDITOPTIONS.RID_SW_TP_MAILCONFIG.ItemList.item
+#, fuzzy
 msgid  "Mail Merge E-mail"
 msgstr "合併列印電子郵件"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.0.ItemList.item
+#, fuzzy
 msgid  "%PRODUCTNAME Writer/Web"
 msgstr "%PRODUCTNAME Writer/Web"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_HTML_CONTENT_OPT.ItemList.item
+#, fuzzy
 msgid  "View"
 msgstr "檢視"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_HTML_OPTSHDWCRSR.ItemList.item
+#, fuzzy
 msgid  "Formatting Aids"
 msgstr "格式化輔助"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_HTML_OPTGRID_PAGE.ItemList.item
+#, fuzzy
 msgid  "Grid"
 msgstr "網格"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_HTML_OPTPRINT_PAGE.ItemList.item
+#, fuzzy
 msgid  "Print"
 msgstr "列印"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_HTML_OPTTABLE_PAGE.ItemList.item
+#, fuzzy
 msgid  "Table"
 msgstr "表格"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SW_ONLINEOPTIONS.RID_SW_TP_BACKGROUND.ItemList.item
+#, fuzzy
 msgid  "Background"
 msgstr "背景"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SM_EDITOPTIONS.0.ItemList.item
+#, fuzzy
 msgid  "%PRODUCTNAME Math"
 msgstr "%PRODUCTNAME Math"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SM_EDITOPTIONS.SID_SM_TP_PRINTOPTIONS.ItemList.item
+#, fuzzy
 msgid  "Settings"
 msgstr "設定"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.0.ItemList.item
+#, fuzzy
 msgid  "%PRODUCTNAME Calc"
 msgstr "%PRODUCTNAME Calc"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.SID_SC_TP_LAYOUT.ItemList.item
+#, fuzzy
 msgid  "General"
 msgstr "一般"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.SID_SC_TP_CONTENT.ItemList.item
+#, fuzzy
 msgid  "View"
 msgstr "檢視"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.RID_OFA_TP_INTERNATIONAL.ItemList.item
+#, fuzzy
 msgid  "International"
 msgstr "國際"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.SID_SC_TP_CALC.ItemList.item
+#, fuzzy
 msgid  "Calculate"
 msgstr "計算"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.SID_SC_TP_USERLISTS.ItemList.item
+#, fuzzy
 msgid  "Sort Lists"
 msgstr "排序清單"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.SID_SC_TP_CHANGES.ItemList.item
+#, fuzzy
 msgid  "Changes"
 msgstr "變更"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.SID_SC_TP_GRID.ItemList.item
+#, fuzzy
 msgid  "Grid"
 msgstr "網格"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SC_EDITOPTIONS.RID_SC_TP_PRINT.ItemList.item
+#, fuzzy
 msgid  "Print"
 msgstr "列印"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_EDITOPTIONS.0.ItemList.item
+#, fuzzy
 msgid  "%PRODUCTNAME Impress"
 msgstr "%PRODUCTNAME Impress"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_EDITOPTIONS.SID_SI_TP_MISC.ItemList.item
+#, fuzzy
 msgid  "General"
 msgstr "一般"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_EDITOPTIONS.SID_SI_TP_CONTENTS.ItemList.item
+#, fuzzy
 msgid  "View"
 msgstr "檢視"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_EDITOPTIONS.SID_SI_TP_SNAP.ItemList.item
+#, fuzzy
 msgid  "Grid"
 msgstr "網格"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_EDITOPTIONS.SID_SI_TP_PRINT.ItemList.item
+#, fuzzy
 msgid  "Print"
 msgstr "列印"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_GRAPHIC_OPTIONS.0.ItemList.item
+#, fuzzy
 msgid  "%PRODUCTNAME Draw"
 msgstr "%PRODUCTNAME Draw"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_GRAPHIC_OPTIONS.SID_SD_TP_MISC.ItemList.item
+#, fuzzy
 msgid  "General"
 msgstr "一般"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_GRAPHIC_OPTIONS.SID_SD_TP_CONTENTS.ItemList.item
+#, fuzzy
 msgid  "View"
 msgstr "檢視"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_GRAPHIC_OPTIONS.SID_SD_TP_SNAP.ItemList.item
+#, fuzzy
 msgid  "Grid"
 msgstr "網格"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SD_GRAPHIC_OPTIONS.SID_SD_TP_PRINT.ItemList.item
+#, fuzzy
 msgid  "Print"
 msgstr "列印"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SCH_EDITOPTIONS.0.ItemList.item
+#, fuzzy
 msgid  "Charts"
 msgstr "圖表"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SCH_EDITOPTIONS.RID_OPTPAGE_CHART_DEFCOLORS.ItemList.item
+#, fuzzy
 msgid  "Default Colors"
 msgstr "基色"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.0.ItemList.item
+#, fuzzy
 msgid  "Load/Save"
 msgstr "載入/儲存"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.RID_SFXPAGE_SAVE.ItemList.item
+#, fuzzy
 msgid  "General"
 msgstr "一般"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.SID_OPTFILTER_MSOFFICE.ItemList.item
+#, fuzzy
 msgid  "VBA Properties"
 msgstr "VBA屬性"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.RID_OFAPAGE_MSFILTEROPT2.ItemList.item
+#, fuzzy
 msgid  "Microsoft Office"
 msgstr "Microsoft Office"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_FILTER_DLG.RID_OFAPAGE_HTMLOPT.ItemList.item
+#, fuzzy
 msgid  "HTML Compatibility"
 msgstr "HTML 相容"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SB_STARBASEOPTIONS.0.ItemList.item
+#, fuzzy
 msgid  "%PRODUCTNAME Base"
 msgstr "%PRODUCTNAME Base"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SB_STARBASEOPTIONS.SID_SB_CONNECTIONPOOLING.ItemList.item
+#, fuzzy
 msgid  "Connections"
 msgstr "連線"
 
 #: source/options/treeopt.src#RID_OFADLG_OPTIONS_TREE_PAGES.SID_SB_STARBASEOPTIONS.SID_SB_DBREGISTEROPTIONS.ItemList.item
+#, fuzzy
 msgid  "Databases"
 msgstr "資料庫"
 
 #: source/options/treeopt.src#RID_RIDER_SLL_SITE.String.Text
+#, fuzzy
 msgid  "Site certificates"
 msgstr "網站認證憑證"
 
 #: source/options/treeopt.src#RID_RIDER_SLL_PERSONAL.String.Text
+#, fuzzy
 msgid  "Personal certificates"
 msgstr "個人認證憑證"
 
 #: source/options/optmemory.src#OFA_TP_MEMORY.GB_UNDO.FixedLine.Text
+#, fuzzy
 msgid  "Undo"
 msgstr "還原"
 
 #: source/options/optmemory.src#OFA_TP_MEMORY.FT_UNDO.FixedText.Text
+#, fuzzy
 msgid  "Number of steps"
 msgstr "步驟數"
 
 #: source/options/optmemory.src#OFA_TP_MEMORY.GB_GRAPHICCACHE.FixedLine.Text
+#, fuzzy
 msgid  "Graphics cache"
 msgstr "圖形快取"
 
 #: source/options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICCACHE.FixedText.Text
+#, fuzzy
 msgid  "Use for %PRODUCTNAME"
 msgstr "用於 %PRODUCTNAME"
 
 #: source/options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICCACHE_UNIT.FixedText.Text
+#, fuzzy
 msgid  "MB"
 msgstr "MB"
 
 #: source/options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICOBJECTCACHE.FixedText.Text
+#, fuzzy
 msgid  "Memory per object"
 msgstr "每個物件的記憶體"
 
 #: source/options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICOBJECTCACHE_UNIT.FixedText.Text
+#, fuzzy
 msgid  "MB"
 msgstr "MB"
 
 #: source/options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICOBJECTTIME.FixedText.Text
+#, fuzzy
 msgid  "Remove from memory after"
 msgstr "從記憶體移除的時限"
 
 #: source/options/optmemory.src#OFA_TP_MEMORY.FT_GRAPHICOBJECTTIME_UNIT.FixedText.Text
+#, fuzzy
 msgid  "hh:mm"
 msgstr "hh:mm"
 
 #: source/options/optmemory.src#OFA_TP_MEMORY.GB_OLECACHE.FixedLine.Text
+#, fuzzy
 msgid  "Cache for inserted objects"
 msgstr "插入物件的快取"
 
 #: source/options/optmemory.src#OFA_TP_MEMORY.FT_OLECACHE.FixedText.Text
+#, fuzzy
 msgid  "Number of objects"
 msgstr "物件數"
 
 #: source/options/optmemory.src#OFA_TP_MEMORY.FL_QUICKLAUNCH.FixedLine.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Quickstarter"
 msgstr "%PRODUCTNAME 快速啟動"
 
 #: source/options/optmemory.src#OFA_TP_MEMORY.CB_QUICKLAUNCH.CheckBox.Text
+#, fuzzy
 msgid  "Load %PRODUCTNAME during system start-up"
 msgstr "系統啟動時載入 %PRODUCTNAME"
 
 #: source/options/optmemory.src#OFA_TP_MEMORY.STR_QUICKLAUNCH_UNX.String.Text
+#, fuzzy
 msgid  "Enable systray Quickstarter"
 msgstr "啟用系統匣快速啟動"
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.TabPage.Text
+#, fuzzy
 msgid  "Java"
 msgstr "Java"
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.FL_JAVA.FixedLine.Text
+#, fuzzy
 msgid  "Java options"
 msgstr "Java 選項"
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.CB_JAVA_ENABLE.CheckBox.Text
+#, fuzzy
 msgid  "~Use a Java runtime environment"
 msgstr "使用 Java Runtime Environment(~U)"
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.FT_JAVA_FOUND.FixedText.Text
+#, fuzzy
 msgid  "~Java runtime environments (JRE) already installed:"
 msgstr "已安裝 Java Runtime Environments (JRE)(~J):"
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.PB_ADD.PushButton.Text
+#, fuzzy
 msgid  "~Add..."
 msgstr "增加(~A)..."
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.PB_PARAMETER.PushButton.Text
+#, fuzzy
 msgid  "~Parameters..."
 msgstr "參數(~P)..."
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.PB_CLASSPATH.PushButton.Text
+#, fuzzy
 msgid  "~Class Path..."
 msgstr "類別路徑(~C)..."
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_INSTALLED_IN.String.Text
+#, fuzzy
 msgid  "Location: "
 msgstr "位置："
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_ACCESSIBILITY.String.Text
+#, fuzzy
 msgid  "with accessibility support"
 msgstr "使用協助工具支援"
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_ADDDLGTEXT.String.Text
+#, fuzzy
 msgid  "Select a Java Runtime Environment"
 msgstr "選取 Java Runtime Environment"
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_HEADER_VENDOR.String.Text
+#, fuzzy
 msgid  "Vendor"
 msgstr "供應商"
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_HEADER_VERSION.String.Text
+#, fuzzy
 msgid  "Version"
 msgstr "版本"
 
 #: source/options/optjava.src#RID_SVXPAGE_OPTIONS_JAVA.STR_HEADER_FEATURES.String.Text
+#, fuzzy
 msgid  "Features"
 msgstr "功能"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.ModalDialog.Text
+#, fuzzy
 msgid  "Java Start Parameters"
 msgstr "Java 啟動參數"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.FT_PARAMETER.FixedText.Text
+#, fuzzy
 msgid  "Java start ~parameter"
 msgstr "Java 啟動參數(~P)"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.PB_ASSIGN.PushButton.Text
+#, fuzzy
 msgid  "~Assign"
 msgstr "指定(~A)"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.FT_ASSIGNED.FixedText.Text
+#, fuzzy
 msgid  "Assig~ned start parameters"
 msgstr "指定的啟動參數(~N)"
 
@@ -4132,26 +4650,32 @@ msgid  "For example: -Dmyprop=c:\program files\java"
 msgstr ""
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_PARAMETER.PB_REMOVE.PushButton.Text
+#, fuzzy
 msgid  "~Remove"
 msgstr "移除(~R)"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.ModalDialog.Text
+#, fuzzy
 msgid  "Class Path"
 msgstr "類別路徑"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.FT_PATH.FixedText.Text
+#, fuzzy
 msgid  "A~ssigned folders and archives"
 msgstr "指定的資料夾與歸檔(~S)"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.PB_ADDARCHIVE.PushButton.Text
+#, fuzzy
 msgid  "~Add Archive..."
 msgstr "增加歸檔(~A)..."
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.PB_ADDPATH.PushButton.Text
+#, fuzzy
 msgid  "Add ~Folder"
 msgstr "增加資料夾(~F)"
 
 #: source/options/optjava.src#RID_SVXDLG_JAVA_CLASSPATH.PB_REMOVE_PATH.PushButton.Text
+#, fuzzy
 msgid  "~Remove"
 msgstr "移除(~R)"
 
@@ -4172,154 +4696,192 @@ msgid  "You have to restart %PRODUCTNAME so the new or modified values can take 
 msgstr ""
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FL_POOLING.FixedLine.Text
+#, fuzzy
 msgid  "Connection pool"
 msgstr "保留驅動程式的設置"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.CB_POOL_CONNS.CheckBox.Text
+#, fuzzy
 msgid  "Connection pooling enabled"
 msgstr "保留使用驅動程式"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_DRIVERS.FixedText.Text
+#, fuzzy
 msgid  "Drivers known in %PRODUCTNAME"
 msgstr "已經為 %PRODUCTNAME 提供的驅動程式"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_DRIVERLABEL.FixedText.Text
+#, fuzzy
 msgid  "Current driver:"
 msgstr "現在使用的驅動程式："
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.CB_DRIVERPOOLING.CheckBox.Text
+#, fuzzy
 msgid  "Enable pooling for this driver"
 msgstr "保留使用這個驅動程式"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.FT_TIMEOUT.FixedText.Text
+#, fuzzy
 msgid  "Timeout (seconds)"
 msgstr "超過時限(秒)"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_DRIVER_NAME.String.Text
+#, fuzzy
 msgid  "Driver name"
 msgstr "驅動程式名稱"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOLED_FLAG.String.Text
+#, fuzzy
 msgid  "Pool"
 msgstr "保留"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_POOL_TIMEOUT.String.Text
+#, fuzzy
 msgid  "Timeout"
 msgstr "超過時限"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_YES.String.Text
+#, fuzzy
 msgid  "Yes"
 msgstr "是"
 
 #: source/options/connpooloptions.src#RID_OFAPAGE_CONNPOOLOPTIONS.STR_NO.String.Text
+#, fuzzy
 msgid  "No"
 msgstr "否"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.LB_LOAD.FixedLine.Text
+#, fuzzy
 msgid  "Load"
 msgstr "載入"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.CB_LOAD_SETTINGS.CheckBox.Text
+#, fuzzy
 msgid  "Load user-specific settings with the document"
 msgstr "連同使用者的設定一起載入文件"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.CB_LOAD_DOCPRINTER.CheckBox.Text
+#, fuzzy
 msgid  "Load printer settings with the document"
 msgstr "連同文件載入印表機設定"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.GB_SAVE.FixedLine.Text
+#, fuzzy
 msgid  "Save"
 msgstr "儲存"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.BTN_DOCINFO.CheckBox.Text
+#, fuzzy
 msgid  "~Edit document properties before saving"
 msgstr "存檔前先編輯文件屬性(~E)"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.BTN_BACKUP.CheckBox.Text
+#, fuzzy
 msgid  "Al~ways create backup copy"
 msgstr "自動製作安全備份(~W)"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.BTN_AUTOSAVE.CheckBox.Text
+#, fuzzy
 msgid  "Save ~AutoRecovery information every"
 msgstr "儲存自動回復資訊，間隔為(~A)"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.FT_MINUTE.FixedText.Text
+#, fuzzy
 msgid  "Minutes"
 msgstr "分鐘"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.BTN_RELATIVE_FSYS.CheckBox.Text
+#, fuzzy
 msgid  "Save URLs relative to file system"
 msgstr "儲存相對於檔案系統的 URL"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.BTN_RELATIVE_INET.CheckBox.Text
+#, fuzzy
 msgid  "Save URLs relative to internet"
 msgstr "儲存相對於網際網路的 URL"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.FL_FILTER.FixedLine.Text
+#, fuzzy
 msgid  "Default file format and ODF settings"
 msgstr "預設檔案格式和 ODF 設定"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.FT_ODF_VERSION.FixedText.Text
+#, fuzzy
 msgid  "ODF format version"
 msgstr "ODF 格式版本"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.LB_ODF_VERSION.2.StringList.item
+#, fuzzy
 msgid  "1.0/1.1"
 msgstr "1.0/1.1"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.LB_ODF_VERSION.4.StringList.item
+#, fuzzy
 msgid  "1.2"
 msgstr "1.2"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.LB_ODF_VERSION.0x7fffffff.StringList.item
+#, fuzzy
 msgid  "1.2 Extended (recommended)"
 msgstr "1.2 Extended (建議使用)"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.BTN_NOPRETTYPRINTING.CheckBox.Text
+#, fuzzy
 msgid  "Size optimization for ODF format"
 msgstr "ODF 格式大小最佳化"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.BTN_WARNALIENFORMAT.CheckBox.Text
+#, fuzzy
 msgid  "Warn when not saving in ODF or default format"
 msgstr "不以 ODF 或預設格式儲存時發出警告"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.FT_APP.FixedText.Text
+#, fuzzy
 msgid  "D~ocument type"
 msgstr "文件類型(~O)"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.FT_FILTER.FixedText.Text
+#, fuzzy
 msgid  "Always sa~ve as"
 msgstr "自動另存為(~V)"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_WRITER.StringList.item
+#, fuzzy
 msgid  "Text document"
 msgstr "文字文件"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_WRITER_WEB.StringList.item
+#, fuzzy
 msgid  "HTML document"
 msgstr "HTML 文件"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_WRITER_GLOBAL.StringList.item
+#, fuzzy
 msgid  "Master document"
 msgstr "主控文件"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_CALC.StringList.item
+#, fuzzy
 msgid  "Spreadsheet"
 msgstr "試算表"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_IMPRESS.StringList.item
+#, fuzzy
 msgid  "Presentation"
 msgstr "簡報"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_DRAW.StringList.item
+#, fuzzy
 msgid  "Drawing"
 msgstr "繪圖"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.LB_APP.APP_MATH.StringList.item
+#, fuzzy
 msgid  "Formula"
 msgstr "公式"
 
 #: source/options/optsave.src#RID_SFXPAGE_SAVE.FT_WARN.FixedText.Text
+#, fuzzy
 msgid  "Not using ODF 1.2 Extended may cause infomation to be lost."
 msgstr "不使用 ODF 1.2 Extended 可能會導致資訊遺失。"
 
@@ -4328,14 +4890,17 @@ msgid  "Using "%1" as default file format may cause information loss.\n"
 msgstr ""
 
 #: source/options/optsave.src#TEXT_SAVEPAGE.#define.Text
+#, fuzzy
 msgid  "Save"
 msgstr "儲存"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.TabPage.Text
+#, fuzzy
 msgid  "%PRODUCTNAME Improvement Program"
 msgstr "%PRODUCTNAME 改進計劃"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FL_IMPROVE.FixedLine.Text
+#, fuzzy
 msgid  "Improvement Program"
 msgstr "改進計劃"
 
@@ -4348,110 +4913,137 @@ msgid  "~Yes, I am willing to participate in the %PRODUCTNAME Improvement Progra
 msgstr ""
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.RB_NO.RadioButton.Text
+#, fuzzy
 msgid  "~No, I do not wish to participate"
 msgstr "不，我不想參加(~N)"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FL_DATA.FixedLine.Text
+#, fuzzy
 msgid  "Tracked Data"
 msgstr "已追蹤的資料"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FT_NR_REPORTS.FixedText.Text
+#, fuzzy
 msgid  "Number of reports sent:"
 msgstr "傳送的報告數："
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.FT_NR_ACTIONS.FixedText.Text
+#, fuzzy
 msgid  "Number of tracked actions:"
 msgstr "追蹤的動作數："
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.PB_SHOWDATA.PushButton.Text
+#, fuzzy
 msgid  "~Show Data"
 msgstr "顯示資料(~S)"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.STR_INFO.String.Text
+#, fuzzy
 msgid  "Help Optimize the Quality of %PRODUCTNAME"
 msgstr "協助提升 %PRODUCTNAME 的品質"
 
 #: source/options/optimprove.src#RID_SVXPAGE_IMPROVEMENT.STR_MOREINFO.String.Text
+#, fuzzy
 msgid  "More Information"
 msgstr "更多資訊"
 
 #: source/options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.ModalDialog.Text
+#, fuzzy
 msgid  "Stored Web Connection Information"
 msgstr "已儲存 Web 連線資訊"
 
 #: source/options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.FI_NEVERSHOWN.FixedText.Text
+#, fuzzy
 msgid  "Web login information (passwords are never shown)"
 msgstr "Web 登入資訊 (一律不顯示密碼)"
 
 #: source/options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.PB_REMOVE.PushButton.Text
+#, fuzzy
 msgid  "Remove"
 msgstr "移除"
 
 #: source/options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.PB_REMOVEALL.PushButton.Text
+#, fuzzy
 msgid  "Remove All"
 msgstr "全部移除"
 
 #: source/options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.PB_CHANGE.PushButton.Text
+#, fuzzy
 msgid  "Change Password..."
 msgstr "變更密碼..."
 
 #: source/options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.PB_CLOSE.CancelButton.Text
+#, fuzzy
 msgid  "Close"
 msgstr "關閉"
 
 #: source/options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.STR_WEBSITE.String.Text
+#, fuzzy
 msgid  "Website"
 msgstr "網站"
 
 #: source/options/webconninfo.src#RID_SVXDLG_WEBCONNECTION_INFO.STR_USERNAME.String.Text
+#, fuzzy
 msgid  "User name"
 msgstr "使用者名稱"
 
 #: source/options/optchart.src#RID_OPTPAGE_CHART_DEFCOLORS.TabPage.Text
+#, fuzzy
 msgid  "Default Colors"
 msgstr "基色"
 
 #: source/options/optchart.src#RID_OPTPAGE_CHART_DEFCOLORS.FL_CHART_COLOR_LIST.FixedLine.Text
+#, fuzzy
 msgid  "Chart colors"
 msgstr "圖表顏色"
 
 #: source/options/optchart.src#RID_OPTPAGE_CHART_DEFCOLORS.FL_COLOR_BOX.FixedLine.Text
+#, fuzzy
 msgid  "Color table"
 msgstr "調色板"
 
 #: source/options/optchart.src#RID_OPTPAGE_CHART_DEFCOLORS.PB_RESET_TO_DEFAULT.PushButton.Text
+#, fuzzy
 msgid  "~Default"
 msgstr "預設(~D)"
 
 #: source/options/optchart.src#RID_SVXSTR_DIAGRAM_ROW.String.Text
+#, fuzzy
 msgid  "Data Series $(ROW)"
 msgstr "資料序列 $(ROW)"
 
 #: source/options/optpath.src#RID_SFXPAGE_PATH.TabPage.Text
+#, fuzzy
 msgid  "Paths"
 msgstr "路徑"
 
 #: source/options/optpath.src#RID_SFXPAGE_PATH.FT_TYPE.FixedText.Text
+#, fuzzy
 msgid  "Type"
 msgstr "類型"
 
 #: source/options/optpath.src#RID_SFXPAGE_PATH.FT_PATH.FixedText.Text
+#, fuzzy
 msgid  "Path"
 msgstr "路徑"
 
 #: source/options/optpath.src#RID_SFXPAGE_PATH.BTN_PATH.PushButton.Text
+#, fuzzy
 msgid  "~Edit..."
 msgstr "編輯(~E)..."
 
 #: source/options/optpath.src#RID_SFXPAGE_PATH.BTN_STANDARD.PushButton.Text
+#, fuzzy
 msgid  "~Default"
 msgstr "預設(~D)"
 
 #: source/options/optpath.src#RID_SFXPAGE_PATH.GB_STD.FixedLine.Text
+#, fuzzy
 msgid  "Paths used by %PRODUCTNAME"
 msgstr "%PRODUCTNAME 所使用的路徑"
 
 #: source/options/optpath.src#RID_SFXPAGE_PATH.STR_MULTIPATHDLG.String.Text
+#, fuzzy
 msgid  "Edit Paths: %1"
 msgstr "編輯路徑: %1"
 
@@ -4460,190 +5052,237 @@ msgid  "The configuration and mail directories must be specified as separate dir
 msgstr ""
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_CONFIG_DIR.String.Text
+#, fuzzy
 msgid  "Configuration"
 msgstr "配置"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_WORK_PATH.String.Text
+#, fuzzy
 msgid  "My Documents"
 msgstr "我的文件"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_GRAPHICS_PATH.String.Text
+#, fuzzy
 msgid  "Graphics"
 msgstr "圖形"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_BITMAP_PATH.String.Text
+#, fuzzy
 msgid  "Icons"
 msgstr "圖示"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_PALETTE_PATH.String.Text
+#, fuzzy
 msgid  "Palettes"
 msgstr "調色板"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_BACKUP_PATH.String.Text
+#, fuzzy
 msgid  "Backups"
 msgstr "備份"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_MODULES_PATH.String.Text
+#, fuzzy
 msgid  "Modules"
 msgstr "模組"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_TEMPLATE_PATH.String.Text
+#, fuzzy
 msgid  "Templates"
 msgstr "範本"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_GLOSSARY_PATH.String.Text
+#, fuzzy
 msgid  "AutoText"
 msgstr "自動圖文集"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_DICTIONARY_PATH.String.Text
+#, fuzzy
 msgid  "Dictionaries"
 msgstr "字典"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_HELP_DIR.String.Text
+#, fuzzy
 msgid  "Help"
 msgstr "說明"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_GALLERY_DIR.String.Text
+#, fuzzy
 msgid  "Gallery"
 msgstr "畫廊"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_STORAGE_DIR.String.Text
+#, fuzzy
 msgid  "Message Storage"
 msgstr "訊息儲存"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_TEMP_PATH.String.Text
+#, fuzzy
 msgid  "Temporary files"
 msgstr "暫存檔"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_PLUGINS_PATH.String.Text
+#, fuzzy
 msgid  "Plug-ins"
 msgstr "外掛程式"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_FAVORITES_DIR.String.Text
+#, fuzzy
 msgid  "Folder Bookmarks"
 msgstr "資料夾書籤"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_FILTER_PATH.String.Text
+#, fuzzy
 msgid  "Filters"
 msgstr "篩選器"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_ADDINS_PATH.String.Text
+#, fuzzy
 msgid  "Add-ins"
 msgstr "Add-in"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_USERCONFIG_PATH.String.Text
+#, fuzzy
 msgid  "User Configuration"
 msgstr "使用者配置"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_USERDICTIONARY_DIR.String.Text
+#, fuzzy
 msgid  "User-defined dictionaries"
 msgstr "使用者自訂義字典"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_AUTOCORRECT_DIR.String.Text
+#, fuzzy
 msgid  "AutoCorrect"
 msgstr "自動校正"
 
 #: source/options/optpath.src#RID_SVXSTR_KEY_LINGUISTIC_DIR.String.Text
+#, fuzzy
 msgid  "Writing aids"
 msgstr "書寫輔助"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FL_MISCELLANEOUS.FixedLine.Text
+#, fuzzy
 msgid  "Miscellaneous options"
 msgstr "其他選項"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_ACCESSIBILITY_TOOL.CheckBox.Text
+#, fuzzy
 msgid  "Support ~assistive technology tools (program restart required)"
 msgstr "支援協助工具程式(需要重新啟動程式)(~A)"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_TEXTSELECTION.CheckBox.Text
+#, fuzzy
 msgid  "Use te~xt selection cursor in read-only text documents"
 msgstr "在受保護的文字文件内使用選中文字的游標(~X)"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_ANIMATED_GRAPHICS.CheckBox.Text
+#, fuzzy
 msgid  "Allow animated ~graphics"
 msgstr "允許動畫圖形(~G)"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_ANIMATED_TEXTS.CheckBox.Text
+#, fuzzy
 msgid  "Allow animated ~text"
 msgstr "允許動畫文字(~T)"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_TIPHELP.CheckBox.Text
+#, fuzzy
 msgid  "~Help tips disappear after "
 msgstr "說明文顯示停留(~H)"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FT_TIPHELP.FixedText.Text
+#, fuzzy
 msgid  "seconds"
 msgstr "秒"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.FL_HC_OPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Options for high contrast appearance"
 msgstr "高對比度顯示的選項"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_AUTO_DETECT_HC.CheckBox.Text
+#, fuzzy
 msgid  "Automatically ~detect high contrast mode of operating system"
 msgstr "自動偵測操作系統的高對比度模式(~D)"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_AUTOMATIC_FONT_COLOR.CheckBox.Text
+#, fuzzy
 msgid  "Use automatic font ~color for screen display"
 msgstr "螢幕顯示使用自動字型顏色(~C)"
 
 #: source/options/optaccessibility.src#RID_SVXPAGE_ACCESSIBILITYCONFIG.CB_PAGE_PREVIEWS.CheckBox.Text
+#, fuzzy
 msgid  "~Use system colors for page previews"
 msgstr "頁面預覽使用系統顏色(~U)"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.FL_HELP.FixedLine.Text
+#, fuzzy
 msgid  "Help"
 msgstr "說明"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.CB_TOOLTIP.CheckBox.Text
+#, fuzzy
 msgid  "~Tips"
 msgstr "提示(~T)"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.CB_EXTHELP.CheckBox.Text
+#, fuzzy
 msgid  "~Extended tips"
 msgstr "延伸提示(~E)"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.CB_HELPAGENT.CheckBox.Text
+#, fuzzy
 msgid  "~Help Agent"
 msgstr "說明助理(~H)"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.PB_HELPAGENT_RESET.PushButton.Text
+#, fuzzy
 msgid  "~Reset Help Agent"
 msgstr "重設說明代理程式(~R)"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.FT_HELPFORMAT.FixedText.Text
+#, fuzzy
 msgid  "Help ~formatting"
 msgstr "說明格式(~F)"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.item1.StringList.item
+#, fuzzy
 msgid  "Default"
 msgstr "預設"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.item2.StringList.item
+#, fuzzy
 msgid  "High Contrast #1"
 msgstr "高對比 #1"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.item3.StringList.item
+#, fuzzy
 msgid  "High Contrast #2"
 msgstr "高對比 #2"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.item4.StringList.item
+#, fuzzy
 msgid  "High Contrast Black"
 msgstr "高對比黑色"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.LB_HELPFORMAT.item5.StringList.item
+#, fuzzy
 msgid  "High Contrast White"
 msgstr "高對比白色"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.FL_FILEDLG.FixedLine.Text
+#, fuzzy
 msgid  "Open/Save dialogs"
 msgstr "開啟和儲存的對話方塊"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.CB_FILEDLG.CheckBox.Text
+#, fuzzy
 msgid  "~Use %PRODUCTNAME dialogs"
 msgstr "使用 %PRODUCTNAME 對話方塊(~U)"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.FL_DOCSTATUS.FixedLine.Text
+#, fuzzy
 msgid  "Document status"
 msgstr "文件的狀態"
 
@@ -4652,226 +5291,282 @@ msgid  "~Printing sets "document modified" status"
 msgstr ""
 
 #: source/options/optgdlg.src#OFA_TP_MISC.FL_TWOFIGURE.FixedLine.Text
+#, fuzzy
 msgid  "Year (two digits)"
 msgstr "年 (兩位數)"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.FT_INTERPRET.FixedText.Text
+#, fuzzy
 msgid  "Interpret as years between"
 msgstr "解譯為年間隔"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.FT_TOYEAR.FixedText.Text
+#, fuzzy
 msgid  "and "
 msgstr "與"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.FL_PRINTDLG.FixedLine.Text
+#, fuzzy
 msgid  "Print dialogs"
 msgstr "列印對話方塊"
 
 #: source/options/optgdlg.src#OFA_TP_MISC.CB_PRINTDLG.CheckBox.Text
+#, fuzzy
 msgid  "Use %PRODUCTNAME ~dialogs"
 msgstr "使用 %PRODUCTNAME 對話方塊(~D)"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FL_USERINTERFACE.FixedLine.Text
+#, fuzzy
 msgid  "User Interface"
 msgstr "使用者介面"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FT_WINDOWSIZE.FixedText.Text
+#, fuzzy
 msgid  "Sc~aling"
 msgstr "比例縮放(~A)"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FT_ICONSIZESTYLE.FixedText.Text
+#, fuzzy
 msgid  "Icon size and style"
 msgstr "圖示大小和樣式"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.STR_ICONSIZE.String.Text
+#, fuzzy
 msgid  "Icon size"
 msgstr "圖示大小"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.item1.StringList.item
+#, fuzzy
 msgid  "Automatic"
 msgstr "自動"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.item2.StringList.item
+#, fuzzy
 msgid  "Small"
 msgstr "小"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSIZE.item3.StringList.item
+#, fuzzy
 msgid  "Large"
 msgstr "大"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.item1.StringList.item
+#, fuzzy
 msgid  "Automatic"
 msgstr "自動"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.item2.StringList.item
+#, fuzzy
 msgid  "Galaxy (default)"
 msgstr "銀河 (預設)"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.item3.StringList.item
+#, fuzzy
 msgid  "High Contrast"
 msgstr "高對比"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.item4.StringList.item
+#, fuzzy
 msgid  "Industrial"
 msgstr "工業"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_ICONSTYLE.item5.StringList.item
+#, fuzzy
 msgid  "Classic"
 msgstr "傳統型"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.CB_SYSTEM_FONT.CheckBox.Text
+#, fuzzy
 msgid  "Use system ~font for user interface"
 msgstr "針對使用者介面使用系統字型(~F)"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.CB_FONTANTIALIASING.CheckBox.Text
+#, fuzzy
 msgid  "Screen font antialiasing"
 msgstr "平滑式螢幕字型"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FT_POINTLIMIT_LABEL.FixedText.Text
+#, fuzzy
 msgid  "from"
 msgstr "從"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FT_POINTLIMIT_UNIT.FixedText.Text
+#, fuzzy
 msgid  "Pixels"
 msgstr "像素"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FL_MENU.FixedLine.Text
+#, fuzzy
 msgid  "Menu"
 msgstr "功能表"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FT_MENU_ICONS.FixedText.Text
+#, fuzzy
 msgid  "Icons in menus"
 msgstr "功能表中的圖示"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_MENU_ICONS.item1.StringList.item
+#, fuzzy
 msgid  "Automatic"
 msgstr "自動"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_MENU_ICONS.item2.StringList.item
+#, fuzzy
 msgid  "Hide"
 msgstr "隱藏"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_MENU_ICONS.item3.StringList.item
+#, fuzzy
 msgid  "Show"
 msgstr "顯示"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FL_FONTLISTS.FixedLine.Text
+#, fuzzy
 msgid  "Font Lists"
 msgstr "字型清單"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.CB_FONT_SHOW.CheckBox.Text
+#, fuzzy
 msgid  "Show p~review of fonts"
 msgstr "顯示字型預覽(~R)"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.CB_FONT_HISTORY.CheckBox.Text
+#, fuzzy
 msgid  "Show font h~istory"
 msgstr "顯示字型歷程記錄(~I)"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FL_RENDERING.FixedLine.Text
+#, fuzzy
 msgid  "Graphics output"
 msgstr "圖形輸出"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.CB_USE_HARDACCELL.CheckBox.Text
+#, fuzzy
 msgid  "Use hardware acceleration"
 msgstr "使用硬體加速功能"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.CB_USE_ANTIALIASE.CheckBox.Text
+#, fuzzy
 msgid  "Use Anti-Aliasing"
 msgstr "使用邊緣圓滑設定"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FL_MOUSE.FixedLine.Text
+#, fuzzy
 msgid  "Mouse"
 msgstr "滑鼠"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FT_MOUSEPOS.FixedText.Text
+#, fuzzy
 msgid  "Mouse positioning"
 msgstr "滑鼠定位"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEPOS.item1.StringList.item
+#, fuzzy
 msgid  "Default button"
 msgstr "預設按鈕"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEPOS.item2.StringList.item
+#, fuzzy
 msgid  "Dialog center"
 msgstr "對話方塊置中"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEPOS.item3.StringList.item
+#, fuzzy
 msgid  "No automatic positioning"
 msgstr "無自動定位"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FT_MOUSEMIDDLE.FixedText.Text
+#, fuzzy
 msgid  "Middle mouse button"
 msgstr "滑鼠中間鍵"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEMIDDLE.item1.StringList.item
+#, fuzzy
 msgid  "No function"
 msgstr "無功能"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEMIDDLE.item2.StringList.item
+#, fuzzy
 msgid  "Automatic scrolling"
 msgstr "自動捲動"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.LB_MOUSEMIDDLE.item3.StringList.item
+#, fuzzy
 msgid  "Paste clipboard"
 msgstr "貼上剪貼簿"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.FL_SELECTION.FixedLine.Text
+#, fuzzy
 msgid  "Selection"
 msgstr "選取"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.CB_SELECTION.CheckBox.Text
+#, fuzzy
 msgid  "Transparency"
 msgstr "透明"
 
 #: source/options/optgdlg.src#OFA_TP_VIEW.MF_SELECTION.MetricField.CustomUnitText
+#, fuzzy
 msgid  "%"
 msgstr "%"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.FL_UI_LANG.FixedLine.Text
+#, fuzzy
 msgid  "Language of"
 msgstr "語言"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.FT_USERINTERFACE.FixedText.Text
+#, fuzzy
 msgid  "~User interface"
 msgstr "使用者介面(~U)"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.FT_LOCALESETTING.FixedText.Text
+#, fuzzy
 msgid  "Locale setting"
 msgstr "系統語言的設定"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.FT_DECIMALSEPARATOR.FixedText.Text
+#, fuzzy
 msgid  "Decimal separator key"
 msgstr "小數點符號鍵"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.CB_DECIMALSEPARATOR.CheckBox.Text
+#, fuzzy
 msgid  "~Same as locale setting ( %1 )"
 msgstr "與系統語言環境設定 ( %1 ) 相同(~S)"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.FT_CURRENCY.FixedText.Text
+#, fuzzy
 msgid  "~Default currency"
 msgstr "預設貨幣(~D)"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.FL_LINGU_LANG.FixedLine.Text
+#, fuzzy
 msgid  "Default languages for documents"
 msgstr "文件的預設語言"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.FT_WEST_LANG.FixedText.Text
+#, fuzzy
 msgid  "Western"
 msgstr "西文"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.FT_ASIAN_LANG.FixedText.Text
+#, fuzzy
 msgid  "Asian"
 msgstr "亞洲語言"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.FT_COMPLEX_LANG.FixedText.Text
+#, fuzzy
 msgid  "C~TL"
 msgstr "C~TL"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.CB_CURRENT_DOC.CheckBox.Text
+#, fuzzy
 msgid  "For the current document only"
 msgstr "僅適用於當前的文件"
 
 #: source/options/optgdlg.src#OFA_TP_LANGUAGES.FL_ENHANCED.FixedLine.Text
+#, fuzzy
 msgid  "Enhanced language support"
 msgstr "增強的語言支援"
 
@@ -4888,146 +5583,182 @@ msgid  "The language setting of the user interface has been updated and will tak
 msgstr ""
 
 #: source/options/optspell.src#RID_SFXPAGE_SPELL.TabPage.Text
+#, fuzzy
 msgid  "Spellcheck"
 msgstr "拼字檢查"
 
 #: source/options/optspell.src#RID_SFXPAGE_SPELL.BTN_BOOK.PushButton.Text
+#, fuzzy
 msgid  "~Edit..."
 msgstr "編輯(~E)..."
 
 #: source/options/optspell.src#RID_SFXPAGE_SPELL.GB_BOOK.FixedLine.Text
+#, fuzzy
 msgid  "Dictionaries"
 msgstr "字典"
 
 #: source/options/optspell.src#RID_SFXPAGE_SPELL.BTN_CAPS.CheckBox.Text
+#, fuzzy
 msgid  "~Capital words"
 msgstr "大寫字(~C)"
 
 #: source/options/optspell.src#RID_SFXPAGE_SPELL.BTN_NUMS.CheckBox.Text
+#, fuzzy
 msgid  "~Words with numbers "
 msgstr "含有數字的詞(~W) "
 
 #: source/options/optspell.src#RID_SFXPAGE_SPELL.BTN_UPLOW.CheckBox.Text
+#, fuzzy
 msgid  "~Case sensitive "
 msgstr "字母大小寫(~C) "
 
 #: source/options/optspell.src#RID_SFXPAGE_SPELL.GB_AUDIT.FixedLine.Text
+#, fuzzy
 msgid  "Check"
 msgstr "檢查"
 
 #: source/options/readonlyimage.src#RID_SVXSTR_READONLY_CONFIG_TIP.String.Text
+#, fuzzy
 msgid  "This setting is protected by the Administrator"
 msgstr "本設定是由管理員所保護"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.CB_USETABLE.CheckBox.Text
+#, fuzzy
 msgid  "~Apply replacement table"
 msgstr "使用取代清單(~A)"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.FT_FONT1.FixedText.Text
+#, fuzzy
 msgid  "~Font"
 msgstr "字型(~F)"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.FT_FONT2.FixedText.Text
+#, fuzzy
 msgid  "Re~place with"
 msgstr "取代成(~P)"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.TBX_SUBSTNEWDEL.BT_SUBSTAPPLY.ToolBoxItem.Text
+#, fuzzy
 msgid  "Apply"
 msgstr "採用"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.TBX_SUBSTNEWDEL.BT_SUBSTDELETE.ToolBoxItem.Text
+#, fuzzy
 msgid  "Delete"
 msgstr "刪除"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.FL_SOURCEVIEW.FixedLine.Text
+#, fuzzy
 msgid  "Font settings for HTML, Basic and SQL sources"
 msgstr "HTML、Basic 及 SQL 原始碼的字型設定"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.FT_FONTNAME.FixedText.Text
+#, fuzzy
 msgid  "Fonts"
 msgstr "字型"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.CB_NONPROP.CheckBox.Text
+#, fuzzy
 msgid  "Non-proportional fonts only"
 msgstr "僅寬度相等的字型"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.FT_FONTHEIGHT.FixedText.Text
+#, fuzzy
 msgid  "~Size"
 msgstr "大小(~S)"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER1.String.Text
+#, fuzzy
 msgid  "Always"
 msgstr "自動"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER2.String.Text
+#, fuzzy
 msgid  "Screen only"
 msgstr "僅限螢幕"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER3.String.Text
+#, fuzzy
 msgid  "Font"
 msgstr "字型"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_HEADER4.String.Text
+#, fuzzy
 msgid  "Replace with"
 msgstr "取代成"
 
 #: source/options/fontsubs.src#RID_SVX_FONT_SUBSTITUTION.STR_AUTOMATIC.String.Text
+#, fuzzy
 msgid  "Automatic"
 msgstr "自動"
 
 #: source/options/optdict.src#RID_SFXDLG_NEWDICT.ModalDialog.Text
+#, fuzzy
 msgid  "New Dictionary"
 msgstr "自訂字典"
 
 #: source/options/optdict.src#RID_SFXDLG_NEWDICT.FT_DICTNAME.FixedText.Text
+#, fuzzy
 msgid  "~Name"
 msgstr "名稱(~N)"
 
 #: source/options/optdict.src#RID_SFXDLG_NEWDICT.FT_DICTLANG.FixedText.Text
+#, fuzzy
 msgid  "~Language"
 msgstr "語言(~L)"
 
 #: source/options/optdict.src#RID_SFXDLG_NEWDICT.BTN_EXCEPT.CheckBox.Text
+#, fuzzy
 msgid  "~Exception (-)"
 msgstr "例外(-)(~E)"
 
 #: source/options/optdict.src#RID_SFXDLG_NEWDICT.GB_NEWDICT.FixedLine.Text
+#, fuzzy
 msgid  "Dictionary"
 msgstr "字典"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.ModalDialog.Text
+#, fuzzy
 msgid  "Edit Custom Dictionary"
 msgstr "編輯自訂字典"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.FT_BOOK.FixedText.Text
+#, fuzzy
 msgid  "~Book"
 msgstr "書(~B)"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.FT_DICTLANG.FixedText.Text
+#, fuzzy
 msgid  "~Language"
 msgstr "語言(~L)"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.FT_WORD.FixedText.Text
+#, fuzzy
 msgid  "~Word"
 msgstr "字(~W)"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.FT_REPLACE.FixedText.Text
+#, fuzzy
 msgid  "Replace ~By:"
 msgstr "建議(~B)"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.PB_NEW_REPLACE.PushButton.Text
+#, fuzzy
 msgid  "~New"
 msgstr "新字詞(~N)"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.PB_DELETE_REPLACE.PushButton.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "刪除(~D)"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.STR_MODIFY.String.Text
+#, fuzzy
 msgid  "~Replace"
 msgstr "取代(~R)"
 
 #: source/options/optdict.src#RID_SFXDLG_EDITDICT.BTN_EDITCLOSE.CancelButton.Text
+#, fuzzy
 msgid  "~Close"
 msgstr "關閉(~C)"
 
@@ -5036,270 +5767,337 @@ msgid  "The specified name already exists.\nPlease enter a new name."
 msgstr ""
 
 #: source/options/optdict.src#RID_SFXQB_SET_LANGUAGE.QueryBox.Message
+#, fuzzy
 msgid  "Do you want to change the '%1' dictionary language?"
 msgstr "要變更字典「%1」的語言？"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ModalDialog.Text
+#, fuzzy
 msgid  "Edit Modules"
 msgstr "編輯模塊"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.FL_EDIT_MODULES_OPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Options"
 msgstr "選項"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.FT_EDIT_MODULES_LANGUAGE.FixedText.Text
+#, fuzzy
 msgid  "Language"
 msgstr "語言"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.PB_EDIT_MODULES_PRIO_UP.PushButton.Text
+#, fuzzy
 msgid  "Move Up"
 msgstr "優先度 +"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.PB_EDIT_MODULES_PRIO_DOWN.PushButton.Text
+#, fuzzy
 msgid  "Move Down"
 msgstr "優先度 -"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.PB_EDIT_MODULES_PRIO_BACK.PushButton.Text
+#, fuzzy
 msgid  "~Back"
 msgstr "返回(~B)"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.FT_EDIT_MODULES_NEWDICTSLINK.FixedText.Text
+#, fuzzy
 msgid  "~Get more dictionaries online..."
 msgstr "取得更多線上字典(~G)..."
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.PB_OK.OKButton.Text
+#, fuzzy
 msgid  "Close"
 msgstr "關閉"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_SPELL.String.Text
+#, fuzzy
 msgid  "Spelling"
 msgstr "拼字檢查"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_HYPH.String.Text
+#, fuzzy
 msgid  "Hyphenation"
 msgstr "連字符"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_THES.String.Text
+#, fuzzy
 msgid  "Thesaurus"
 msgstr "同義詞詞典"
 
 #: source/options/optlingu.src#RID_SVXDLG_EDIT_MODULES.ST_GRAMMAR.String.Text
+#, fuzzy
 msgid  "Grammar"
 msgstr "文法"
 
 #: source/options/optlingu.src#RID_SVXDLG_LNG_ED_NUM_PREBREAK.ModalDialog.Text
+#, fuzzy
 msgid  "Hyphenation"
 msgstr "連字符"
 
 #: source/options/optlingu.src#RID_SVXDLG_LNG_ED_NUM_PREBREAK.STR_NUM_PRE_BREAK_DLG.String.Text
+#, fuzzy
 msgid  "Characters before break"
 msgstr "連字號之前的字母"
 
 #: source/options/optlingu.src#RID_SVXDLG_LNG_ED_NUM_PREBREAK.STR_NUM_POST_BREAK_DLG.String.Text
+#, fuzzy
 msgid  "Characters after break"
 msgstr "連字號之後的字母"
 
 #: source/options/optlingu.src#RID_SVXDLG_LNG_ED_NUM_PREBREAK.STR_NUM_MIN_WORDLEN_DLG.String.Text
+#, fuzzy
 msgid  "Minimal word length"
 msgstr "最短的字詞"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.TabPage.Text
+#, fuzzy
 msgid  "Options"
 msgstr "選項"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.FL_LINGUISTIC.FixedLine.Text
+#, fuzzy
 msgid  "Writing aids"
 msgstr "語言規則"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.FT_LINGU_MODULES.FixedText.Text
+#, fuzzy
 msgid  "Available language modules"
 msgstr "可使用的語言模塊"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.PB_LINGU_MODULES_EDIT.PushButton.Text
+#, fuzzy
 msgid  "~Edit..."
 msgstr "編輯(~E)..."
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.FT_LINGU_DICS.FixedText.Text
+#, fuzzy
 msgid  "User-defined dictionaries"
 msgstr "自訂字典"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.PB_LINGU_DICS_NEW_DIC.PushButton.Text
+#, fuzzy
 msgid  "~New..."
 msgstr "新增(~N)..."
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.PB_LINGU_DICS_EDIT_DIC.PushButton.Text
+#, fuzzy
 msgid  "Ed~it..."
 msgstr "編輯(~I)..."
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.PB_LINGU_DICS_DEL_DIC.PushButton.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "刪除(~D)"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.FT_LINGU_OPTIONS.FixedText.Text
+#, fuzzy
 msgid  "~Options"
 msgstr "選項(~O)"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.PB_LINGU_OPTIONS_EDIT.PushButton.Text
+#, fuzzy
 msgid  "Edi~t..."
 msgstr "編輯(~T)..."
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.FT_LINGU_OPTIONS_MOREDICTS.FixedText.Text
+#, fuzzy
 msgid  "~Get more dictionaries online..."
 msgstr "取得更多線上字典(~G)..."
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_CAPITAL_WORDS.String.Text
+#, fuzzy
 msgid  "Check uppercase words"
 msgstr "檢查大寫字母"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_WORDS_WITH_DIGITS.String.Text
+#, fuzzy
 msgid  "Check words with numbers "
 msgstr "檢查帶編號的字"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_CAPITALIZATION.String.Text
+#, fuzzy
 msgid  "Check capitalization"
 msgstr "檢查字母大小寫"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_SPELL_SPECIAL.String.Text
+#, fuzzy
 msgid  "Check special regions"
 msgstr "檢查特殊區域"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_SPELL_AUTO.String.Text
+#, fuzzy
 msgid  "Check spelling as you type"
 msgstr "在輸入時進行拼字檢查"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_GRAMMAR_AUTO.String.Text
+#, fuzzy
 msgid  "Check grammar as you type"
 msgstr "鍵入時檢查文法"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_NUM_MIN_WORDLEN.String.Text
+#, fuzzy
 msgid  "Minimal number of characters for hyphenation: "
 msgstr "用於連字符的最短的字詞長度："
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_NUM_PRE_BREAK.String.Text
+#, fuzzy
 msgid  "Characters before line break: "
 msgstr "連字符之前的字元："
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_NUM_POST_BREAK.String.Text
+#, fuzzy
 msgid  "Characters after line break: "
 msgstr "連字符之後的字元："
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_HYPH_AUTO.String.Text
+#, fuzzy
 msgid  "Hyphenate without inquiry"
 msgstr "自動分開"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_HYPH_SPECIAL.String.Text
+#, fuzzy
 msgid  "Hyphenate special regions"
 msgstr "分開特殊區域"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_LINGU_MODULES_EDIT.String.Text
+#, fuzzy
 msgid  "Edit Available language modules"
 msgstr "編輯可使用的語言模組"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_LINGU_DICS_EDIT_DIC.String.Text
+#, fuzzy
 msgid  "Edit User-defined dictionaries"
 msgstr "編輯使用者自定義字典"
 
 #: source/options/optlingu.src#RID_SFXPAGE_LINGU.STR_LINGU_OPTIONS_EDIT.String.Text
+#, fuzzy
 msgid  "Edit Options"
 msgstr "編輯選項"
 
 #: source/options/optlingu.src#RID_SFXQB_DELDICT.QueryBox.Message
+#, fuzzy
 msgid  "Do you want to delete the dictionary?"
 msgstr "您要刪除這個字典？"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.TabPage.Text
+#, fuzzy
 msgid  "Registered databases"
 msgstr "已註冊的資料庫"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.FT_TYPE.FixedText.Text
+#, fuzzy
 msgid  "Registered name"
 msgstr "註冊名稱"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.FT_PATH.FixedText.Text
+#, fuzzy
 msgid  "Database file"
 msgstr "資料庫檔案"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_NEW.PushButton.Text
+#, fuzzy
 msgid  "~New..."
 msgstr "新增(~N)..."
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_EDIT.PushButton.Text
+#, fuzzy
 msgid  "~Edit..."
 msgstr "編輯(~E)..."
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.BTN_DELETE.PushButton.Text
+#, fuzzy
 msgid  "~Delete"
 msgstr "刪除(~D)"
 
 #: source/options/dbregister.src#RID_SFXPAGE_DBREGISTER.GB_STD.FixedLine.Text
+#, fuzzy
 msgid  "Registered databases"
 msgstr "已註冊的資料庫"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.GB_WORD.FixedLine.Text
+#, fuzzy
 msgid  "Microsoft Word 97/2000/XP"
 msgstr "Microsoft Word 97/2000/XP"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_WBAS_CODE.CheckBox.Text
+#, fuzzy
 msgid  "Load Basic ~code"
 msgstr "載入 Basic 程式碼(~C)"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_WBAS_STG.CheckBox.Text
+#, fuzzy
 msgid  "Save ~original Basic code"
 msgstr "儲存原始 Basic 程式碼(~O)"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.GB_EXCEL.FixedLine.Text
+#, fuzzy
 msgid  "Microsoft Excel 97/2000/XP"
 msgstr "Microsoft Excel 97/2000/XP"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_EBAS_CODE.CheckBox.Text
+#, fuzzy
 msgid  "Lo~ad Basic code"
 msgstr "載入 Basic 程式碼(~A)"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_EBAS_EXECTBL.CheckBox.Text
+#, fuzzy
 msgid  "E~xecutable code"
 msgstr "可執行的程式碼(~X)"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_EBAS_STG.CheckBox.Text
+#, fuzzy
 msgid  "Sa~ve original Basic code"
 msgstr "儲存原始 Basic 程式碼(~V)"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.GB_PPOINT.FixedLine.Text
+#, fuzzy
 msgid  "Microsoft PowerPoint 97/2000/XP"
 msgstr "Microsoft PowerPoint 97/2000/XP"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_PBAS_CODE.CheckBox.Text
+#, fuzzy
 msgid  "Load Ba~sic code"
 msgstr "載入 Basic 程式碼(~S)"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT.CB_PBAS_STG.CheckBox.Text
+#, fuzzy
 msgid  "Sav~e original Basic code"
 msgstr "儲存原始 Basic 程式碼(~E)"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.ST_HEADER1.String.Text
+#, fuzzy
 msgid  "[L]"
 msgstr "[L]"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.ST_HEADER2.String.Text
+#, fuzzy
 msgid  "[S]"
 msgstr "[S]"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.FT_HEADER1_EXPLANATION.FixedText.Text
+#, fuzzy
 msgid  "[L]: Load and convert the object"
 msgstr "[L]：載入及轉換物件"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.FT_HEADER2_EXPLANATION.FixedText.Text
+#, fuzzy
 msgid  "[S]: Convert and save the object"
 msgstr "[S]：轉換及儲存物件"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.ST_CHG_MATH.String.Text
+#, fuzzy
 msgid  "MathType to %PRODUCTNAME Math or reverse"
 msgstr "MathType 轉換成 %PRODUCTNAME Math 或 %PRODUCTNAME Math 轉換成 MathType"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.ST_CHG_WRITER.String.Text
+#, fuzzy
 msgid  "WinWord to %PRODUCTNAME Writer or reverse"
 msgstr "WinWord 轉換成 %PRODUCTNAME Writer 或 %PRODUCTNAME Writer 轉換成 WinWord"
 
 #: source/options/optfltr.src#RID_OFAPAGE_MSFILTEROPT2.ST_CHG_CALC.String.Text
+#, fuzzy
 msgid  "Excel to %PRODUCTNAME Calc or reverse"
 msgstr "Excel 轉換成 %PRODUCTNAME Calc 或 %PRODUCTNAME Calc 轉換成 Excel"
 
@@ -5308,58 +6106,72 @@ msgid  "PowerPoint to %PRODUCTNAME Impress or reverse"
 msgstr ""
 
 #: source/options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.TabPage.Text
+#, fuzzy
 msgid  "OnlineUpdate"
 msgstr "線上更新"
 
 #: source/options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.FL_OPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Online Update Options"
 msgstr "線上更新選項"
 
 #: source/options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.CB_AUTOCHECK.CheckBox.Text
+#, fuzzy
 msgid  "~Check for updates automatically"
 msgstr "自動檢查是否有更新(~C)"
 
 #: source/options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.RB_EVERYDAY.RadioButton.Text
+#, fuzzy
 msgid  "Every Da~y"
 msgstr "每天(~Y)"
 
 #: source/options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.RB_EVERYWEEK.RadioButton.Text
+#, fuzzy
 msgid  "Every ~Week"
 msgstr "每週(~W)"
 
 #: source/options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.RB_EVERYMONTH.RadioButton.Text
+#, fuzzy
 msgid  "Every ~Month"
 msgstr "每月(~M)"
 
 #: source/options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.FT_LASTCHECKED.FixedText.Text
+#, fuzzy
 msgid  "Last checked: %DATE%, %TIME%"
 msgstr "上次檢查：%DATE%，%TIME%"
 
 #: source/options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.PB_CHECKNOW.PushButton.Text
+#, fuzzy
 msgid  "Check ~now"
 msgstr "立刻檢查(~N)"
 
 #: source/options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.CB_AUTODOWNLOAD.CheckBox.Text
+#, fuzzy
 msgid  "~Download updates automatically"
 msgstr "自動下載更新(~D)"
 
 #: source/options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.FT_DESTPATHLABEL.FixedText.Text
+#, fuzzy
 msgid  "Download destination:"
 msgstr "下載目標:"
 
 #: source/options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.PB_CHANGEPATH.PushButton.Text
+#, fuzzy
 msgid  "Ch~ange..."
 msgstr "變更(~A)..."
 
 #: source/options/optupdt.src#RID_SVXPAGE_ONLINEUPDATE.STR_NEVERCHECKED.String.Text
+#, fuzzy
 msgid  "Last checked: Not yet"
 msgstr "上次檢查：尚未檢查過"
 
 #: source/options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.ModalDialog.Text
+#, fuzzy
 msgid  "Security options and warnings"
 msgstr "安全性選項與警告"
 
 #: source/options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.FL_WARNINGS.FixedLine.Text
+#, fuzzy
 msgid  "Security warnings"
 msgstr "安全性警告"
 
@@ -5368,158 +6180,197 @@ msgid  "Warn if document contains recorded changes, versions, hidden information
 msgstr ""
 
 #: source/options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.CB_SAVESENDDOCS.CheckBox.Text
+#, fuzzy
 msgid  "When saving or sending"
 msgstr "儲存或傳送時"
 
 #: source/options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.CB_SIGNDOCS.CheckBox.Text
+#, fuzzy
 msgid  "When signing"
 msgstr "簽名時"
 
 #: source/options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.CB_PRINTDOCS.CheckBox.Text
+#, fuzzy
 msgid  "When printing"
 msgstr "列印時"
 
 #: source/options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.CB_CREATEPDF.CheckBox.Text
+#, fuzzy
 msgid  "When creating PDF files"
 msgstr "建立 PDF 檔案時"
 
 #: source/options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.FL_OPTIONS.FixedLine.Text
+#, fuzzy
 msgid  "Security options"
 msgstr "安全性選項"
 
 #: source/options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.CB_REMOVEINFO.CheckBox.Text
+#, fuzzy
 msgid  "Remove personal information on saving"
 msgstr "儲存時移除個人資訊"
 
 #: source/options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.CB_RECOMMENDPWD.CheckBox.Text
+#, fuzzy
 msgid  "Recommend password protection on saving"
 msgstr "建議儲存時使用密碼保護"
 
 #: source/options/securityoptions.src#RID_SVXDLG_SECURITY_OPTIONS.CB_CTRLHYPERLINK.CheckBox.Text
+#, fuzzy
 msgid  "Ctrl-click required to follow hyperlinks"
 msgstr "追蹤超連結需要按住 Ctrl 鍵再按一下滑鼠"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.GB_KERNING.FixedLine.Text
+#, fuzzy
 msgid  "Kerning"
 msgstr "字元間隔"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.RB_CHAR_KERNING.RadioButton.Text
+#, fuzzy
 msgid  "~Western characters only"
 msgstr "僅用於西文(~W)"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.RB_CHAR_PUNCT.RadioButton.Text
+#, fuzzy
 msgid  "Western ~text and Asian punctuation"
 msgstr "西文和亞洲語言文字標點符號(~T)"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.GB_CHAR_DIST.FixedLine.Text
+#, fuzzy
 msgid  "Character spacing"
 msgstr "字元間隔"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.RB_NO_COMP.RadioButton.Text
+#, fuzzy
 msgid  "~No compression"
 msgstr "不壓縮(~N)"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.RB_PUNCT_COMP.RadioButton.Text
+#, fuzzy
 msgid  "~Compress punctuation only"
 msgstr "僅壓縮標點符號(~C)"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.RB_PUNCT_KANA_COMP.RadioButton.Text
+#, fuzzy
 msgid  "Compress ~punctuation and Japanese Kana"
 msgstr "僅壓縮標點符號和日文假名(~P)"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.GB_START_END.FixedLine.Text
+#, fuzzy
 msgid  "First and last characters"
 msgstr "開頭字元和結尾字元"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.FT_LANGUAGE.FixedText.Text
+#, fuzzy
 msgid  "~Language"
 msgstr "語言(~L)"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.CB_STANDARD.CheckBox.Text
+#, fuzzy
 msgid  "~Default"
 msgstr "預設(~D)"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.FT_START.FixedText.Text
+#, fuzzy
 msgid  "Not at start of line:"
 msgstr "行首禁止使用字元："
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.FT_END.FixedText.Text
+#, fuzzy
 msgid  "Not at end of line:"
 msgstr "行末禁止使用字元："
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.FT_HINT.FixedText.Text
+#, fuzzy
 msgid  "Without user-defined line break symbols"
 msgstr "不附帶使用者自訂的換行符號"
 
 #: source/options/optasian.src#RID_SVXPAGE_ASIAN_LAYOUT.FixedText.Text
+#, fuzzy
 msgid  "Proxy"
 msgstr "代理伺服器"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE1.FixedText.Text
+#, fuzzy
 msgid  "Size ~1"
 msgstr "大小 1(~1)"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE2.FixedText.Text
+#, fuzzy
 msgid  "Size ~2"
 msgstr "大小 2(~2)"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE3.FixedText.Text
+#, fuzzy
 msgid  "Size ~3"
 msgstr "大小 3(~3)"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE4.FixedText.Text
+#, fuzzy
 msgid  "Size ~4"
 msgstr "大小 4(~4)"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE5.FixedText.Text
+#, fuzzy
 msgid  "Size ~5"
 msgstr "大小 5(~5)"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE6.FixedText.Text
+#, fuzzy
 msgid  "Size ~6"
 msgstr "大小 6(~6)"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_SIZE7.FixedText.Text
+#, fuzzy
 msgid  "Size ~7"
 msgstr "大小 7(~7)"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.GB_FONTSIZE.FixedLine.Text
+#, fuzzy
 msgid  "Font sizes"
 msgstr "字型大小"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.GB_IMPORT.FixedLine.Text
+#, fuzzy
 msgid  "Import"
 msgstr "匯入"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.CB_NUMBERS_ENGLISH_US.CheckBox.Text
+#, fuzzy
 msgid  "~Use '%ENGLISHUSLOCALE' locale for numbers"
 msgstr "使用數字的「%ENGLISHUSLOCALE」語言環境(~U)"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.CB_UNKNOWN_TAGS.CheckBox.Text
+#, fuzzy
 msgid  "~Import unknown HTML tags as fields"
 msgstr "將不明 HTML 標記匯入為欄位(~I)"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.CB_IGNORE_FONTNAMES.CheckBox.Text
+#, fuzzy
 msgid  "Ignore ~font settings"
 msgstr "忽略字型設定(~F)"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.GB_EXPORT.FixedLine.Text
+#, fuzzy
 msgid  "Export"
 msgstr "匯出"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.CB_STARBASIC_WARNING.CheckBox.Text
+#, fuzzy
 msgid  "Display ~warning"
 msgstr "顯示警告(~W)"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.CB_PRINT_EXTENSION.CheckBox.Text
+#, fuzzy
 msgid  "~Print layout"
 msgstr "整頁模式(~P)"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.CB_LOCAL_GRF.CheckBox.Text
+#, fuzzy
 msgid  "~Copy local graphics to Internet"
 msgstr "將本機圖形複製到網際網路(~C)"
 
 #: source/options/opthtml.src#RID_OFAPAGE_HTMLOPT.FT_CHARSET.FixedText.Text
+#, fuzzy
 msgid  "Character set"
 msgstr "字元集"
 
@@ -7663,8 +8514,9 @@ msgid  "Combine"
 msgstr "合併"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.FT_SHORT.FixedText.Text
+#, fuzzy
 msgid  "Repla~ce"
-msgstr "取代(~C)"
+msgstr "縮寫(~C)"
 
 #: source/tabpages/autocdlg.src#RID_OFAPAGE_AUTOCORR_REPLACE.FT_REPLACE.FixedText.Text
 #, fuzzy
@@ -8700,7 +9552,7 @@ msgstr "預覽"
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.TabPage.Text
 #, fuzzy
 msgid  "Position and Size"
-msgstr "位置與大小"
+msgstr "位置和大小"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FL_POSITION.FixedLine.Text
 #, fuzzy
@@ -8710,12 +9562,12 @@ msgstr "位置"
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_POS_X.FixedText.Text
 #, fuzzy
 msgid  "Position ~X"
-msgstr "位置 ~X"
+msgstr "位置 X(~X)"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_POS_Y.FixedText.Text
 #, fuzzy
 msgid  "Position ~Y"
-msgstr "位置 ~Y"
+msgstr "位置 Y(~Y)"
 
 #: source/tabpages/transfrm.src#RID_SVXPAGE_POSITION_SIZE.FT_POSREFERENCE.FixedText.Text
 #, fuzzy
@@ -8960,7 +9812,7 @@ msgstr "度"
 #: source/tabpages/transfrm.src#RID_SVXDLG_TRANSFORM.TabDialog.Text
 #, fuzzy
 msgid  "Position and Size"
-msgstr "位置和大小"
+msgstr "位置與大小"
 
 #: source/tabpages/transfrm.src#RID_SVXDLG_TRANSFORM.TAB_CONTROL.RID_SVXPAGE_ANGLE.PageItem.Text
 #, fuzzy
@@ -9098,8 +9950,9 @@ msgid  "~Width"
 msgstr "寬度(~W)"
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FT_HEIGHTZOOM.FixedText.Text
+#, fuzzy
 msgid  "H~eight"
-msgstr "高度(~E)"
+msgstr "高(~E)"
 
 #: source/tabpages/grfpage.src#RID_SVXPAGE_GRFCROP.FL_SIZE.FixedLine.Text
 #, fuzzy
@@ -9652,8 +10505,9 @@ msgid  "Dotted"
 msgstr "點線"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDOTTED.StringList.item
+#, fuzzy
 msgid  "Dotted (Bold)"
-msgstr "點線 (粗體)"
+msgstr "點線粗體"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DASH.StringList.item
 #, fuzzy
@@ -9661,8 +10515,9 @@ msgid  "Dash"
 msgstr "虛線"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDASH.StringList.item
+#, fuzzy
 msgid  "Dash (Bold)"
-msgstr "虛線 (粗體)"
+msgstr "虛線粗體"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_LONGDASH.StringList.item
 #, fuzzy
@@ -9670,8 +10525,9 @@ msgid  "Long Dash"
 msgstr "長虛線"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDLONGDASH.StringList.item
+#, fuzzy
 msgid  "Long Dash (Bold)"
-msgstr "長虛線 (粗體)"
+msgstr "長虛線粗體"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DASHDOT.StringList.item
 #, fuzzy
@@ -9679,8 +10535,9 @@ msgid  "Dot Dash"
 msgstr "點虛線"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDASHDOT.StringList.item
+#, fuzzy
 msgid  "Dot Dash (Bold)"
-msgstr "點虛線 (粗體)"
+msgstr "點虛線粗體"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DASHDOTDOT.StringList.item
 #, fuzzy
@@ -9688,8 +10545,9 @@ msgid  "Dot Dot Dash"
 msgstr "雙點虛線"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDDASHDOTDOT.StringList.item
+#, fuzzy
 msgid  "Dot Dot Dash (Bold)"
-msgstr "雙點虛線 (粗體)"
+msgstr "雙點虛線粗體"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_WAVE.StringList.item
 #, fuzzy
@@ -9697,8 +10555,9 @@ msgid  "Wave"
 msgstr "曲線"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_BOLDWAVE.StringList.item
+#, fuzzy
 msgid  "Wave (Bold)"
-msgstr "曲線 (粗體)"
+msgstr "曲線粗體"
 
 #: source/tabpages/chardlg.src#RID_SVXPAGE_CHAR_EFFECTS.LB_OVERLINE.CHRDLG_UNDERLINE_DOUBLEWAVE.StringList.item
 #, fuzzy
