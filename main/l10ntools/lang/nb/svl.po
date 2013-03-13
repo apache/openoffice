@@ -285,7 +285,7 @@ msgstr "Slettet objekt"
 
 #: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_REMOV_VOL.String.Text
 msgid  "Local drive"
-msgstr "Lokal disk"
+msgstr "Lokalt drev"
 
 #: source/misc/mediatyp.src#STR_SVT_MIMETYPE_CNT_FIX_VOL.String.Text
 msgid  "Local drive"
@@ -436,33 +436,41 @@ msgid  "multipart/mixed"
 msgstr "flerpunkt/blandet"
 
 #: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_SXCALC.String.Text
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet"
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Spreadsheet"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION regneark"
 
 #: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_SXCHART.String.Text
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Chart"
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Chart"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION diagram"
 
 #: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_SXDRAW.String.Text
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Drawing"
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Drawing"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION tegning"
 
 #: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_SXMATH.String.Text
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Formula"
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Formula"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION formel"
 
 #: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_SXWRITER.String.Text
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Text Document"
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Text Document"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION tekstdokument"
 
 #: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_SXIMPRESS.String.Text
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Presentation"
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION presentasjon"
 
 #: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_SXGLOBAL.String.Text
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Master Document"
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Master Document"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION hoveddokument"
 
 #: source/misc/mediatyp.src#STR_SVT_MIMETYPE_APP_SXIPACKED.String.Text
-msgid  "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION Presentation (packed)"
+#, fuzzy
+msgid  "%PRODUCTXMLFILEFORMATNAME %PRODUCTXMLFILEFORMATVERSION Presentation (packed)"
 msgstr "%PRODUCTNAME %PRODUCTXMLFILEFORMATVERSION presentasjon (komprimert)"

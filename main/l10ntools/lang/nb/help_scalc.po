@@ -1126,8 +1126,9 @@ msgid  "The\<emph\> Headers/Footers \</emph\>dialog contains the tabs for defini
 msgstr ""
 
 #: source/text/scalc/01/02120100.xhp#tit
+#, fuzzy
 msgid  "Header/Footer"
-msgstr "Topptekst/bunntekst"
+msgstr "Topptekst/Bunntekst"
 
 #: source/text/scalc/01/02120100.xhp#bm_id3153360
 msgid  "\<bookmark_value\>page styles; headers\</bookmark_value\>         \<bookmark_value\>page styles; footers\</bookmark_value\>         \<bookmark_value\>headers; defining\</bookmark_value\>         \<bookmark_value\>footers; defining\</bookmark_value\>         \<bookmark_value\>file names in headers/footers\</bookmark_value\>         \<bookmark_value\>changing;dates, automatically\</bookmark_value\>         \<bookmark_value\>dates;updating automatically\</bookmark_value\>         \<bookmark_value\>automatic date updates\</bookmark_value\>"
@@ -5759,7 +5760,7 @@ msgstr ""
 #: source/text/scalc/01/04060104.xhp#hd_id3151255.136
 #, fuzzy
 msgid  "TYPE"
-msgstr "TYPE (TYPE på engelsk)"
+msgstr "TYPE"
 
 #: source/text/scalc/01/04060104.xhp#par_id3155900.137
 msgid  "\<ahelp hid=\"HID_FUNC_TYP\"\>Returns the type of value.\</ahelp\>"
@@ -6468,7 +6469,7 @@ msgstr ""
 #: source/text/scalc/01/04060106.xhp#hd_id3154843.35
 #, fuzzy
 msgid  "Syntax"
-msgstr "Syntaks"
+msgstr "Eksempel"
 
 #: source/text/scalc/01/04060106.xhp#par_id3147475.36
 #, fuzzy
@@ -6512,7 +6513,7 @@ msgstr ""
 #: source/text/scalc/01/04060106.xhp#hd_id3145144.44
 #, fuzzy
 msgid  "Syntax"
-msgstr "Syntaks"
+msgstr "Syntax"
 
 #: source/text/scalc/01/04060106.xhp#par_id3153931.45
 #, fuzzy
@@ -6548,7 +6549,7 @@ msgstr ""
 #: source/text/scalc/01/04060106.xhp#hd_id3153565.52
 #, fuzzy
 msgid  "Syntax"
-msgstr "Eksempel"
+msgstr "Syntaks"
 
 #: source/text/scalc/01/04060106.xhp#par_id3150020.53
 #, fuzzy
@@ -6562,7 +6563,7 @@ msgstr ""
 #: source/text/scalc/01/04060106.xhp#par_id679647
 #, fuzzy
 msgid  "To return the angle in degrees, use the DEGREES function."
-msgstr "For å returnere vinkelen i grader, bruk bruk GRADER-funksjonen."
+msgstr "For å returnere vinkelen i grader, bruk GRADER-funksjonen."
 
 #: source/text/scalc/01/04060106.xhp#hd_id3149882.55
 #, fuzzy
@@ -6593,7 +6594,7 @@ msgstr ""
 #: source/text/scalc/01/04060106.xhp#hd_id3145295.62
 #, fuzzy
 msgid  "Syntax"
-msgstr "Syntax"
+msgstr "Syntaks"
 
 #: source/text/scalc/01/04060106.xhp#par_id3151017.63
 #, fuzzy
@@ -6652,7 +6653,7 @@ msgstr ""
 #: source/text/scalc/01/04060106.xhp#par_id5834528
 #, fuzzy
 msgid  "To return the angle in degrees, use the DEGREES function."
-msgstr "For å returnere vinkelen i grader, bruk GRADER-funksjonen."
+msgstr "vinkelenFor å returnere vinkelen i grader, bruk GRADER-funksjonen."
 
 #: source/text/scalc/01/04060106.xhp#hd_id3147538.75
 #, fuzzy
@@ -12571,7 +12572,7 @@ msgstr ""
 #: source/text/scalc/01/04060110.xhp#hd_id3155758.244
 #, fuzzy
 msgid  "Example"
-msgstr "Eksempel"
+msgstr "Opp"
 
 #: source/text/scalc/01/04060110.xhp#par_id3154621.245
 msgid  "            \<item type=\"input\"\>=ARABIC("MXIV")\</item\> returns 1014"
@@ -12647,7 +12648,7 @@ msgstr ""
 #: source/text/scalc/01/04060110.xhp#hd_id9694814
 #, fuzzy
 msgid  "Example"
-msgstr "Opp"
+msgstr "Eksempel"
 
 #: source/text/scalc/01/04060110.xhp#par_id3289284
 msgid  "            \<item type=\"input\"\>=BAHTTEXT(12.65)\</item\> returns a string in Thai characters with the meaning of "Twelve Baht and sixty five Satang"."
@@ -23920,7 +23921,7 @@ msgstr ""
 #: source/text/scalc/01/05050100.xhp#tit
 #, fuzzy
 msgid  "Rename Sheet"
-msgstr "Endre arknavn"
+msgstr "Gi arket et nytt navn"
 
 #: source/text/scalc/01/05050100.xhp#bm_id3147336
 msgid  "\<bookmark_value\>worksheet names\</bookmark_value\>\<bookmark_value\>changing; sheet names\</bookmark_value\>\<bookmark_value\>sheets; renaming\</bookmark_value\>"
@@ -31058,8 +31059,9 @@ msgid  "514"
 msgstr "514"
 
 #: source/text/scalc/05/02140000.xhp#par_id3157904.46
+#, fuzzy
 msgid  "Internal overflow"
-msgstr "Intern overflyt"
+msgstr "Intern tekstoverflyt"
 
 #: source/text/scalc/05/02140000.xhp#par_id3149352.47
 msgid  "Sort operation attempted on too much numerical data (max. 100000) or a calculation stack overflow."
