@@ -2009,7 +2009,7 @@ msgstr "PRIVATE prMuuttuja As TIETOTYYPPI"
 
 #: source/text/sbasic/shared/01020300.xhp#par_id3152994.63
 msgid  "The variable is only valid in this module."
-msgstr "Muuttuja on käyttökelpoinen vain määrittelymoduulissaan."
+msgstr "Muuttuja on kelpoinen vain määrittelymoduulissaan."
 
 #: source/text/sbasic/shared/01020300.xhp#par_id3150886.64
 msgid  "DIM VarName As TYPENAME"
@@ -4293,7 +4293,7 @@ msgstr "Suorita"
 
 #: source/text/sbasic/shared/02/11040000.xhp#tit
 msgid  "Stop"
-msgstr "Keskeytä makro"
+msgstr "Keskeytä"
 
 #: source/text/sbasic/shared/02/11040000.xhp#bm_id3154863
 msgid  "\<bookmark_value\>macros; stopping\</bookmark_value\>\<bookmark_value\>program stops\</bookmark_value\>\<bookmark_value\>stopping macros\</bookmark_value\>"
@@ -13985,7 +13985,7 @@ msgstr "Do [{While | Until} ehto = True]"
 
 #: source/text/sbasic/shared/03090201.xhp#par_id3154422.5
 msgid  "statement block"
-msgstr "lauselohko1"
+msgstr "lauselohko2"
 
 #: source/text/sbasic/shared/03090201.xhp#par_id3150789.6
 msgid  "[Exit Do]"
@@ -13993,7 +13993,7 @@ msgstr "[Exit Do]"
 
 #: source/text/sbasic/shared/03090201.xhp#par_id3155805.7
 msgid  "statement block"
-msgstr "lauselohko2"
+msgstr "lauselohko1"
 
 #: source/text/sbasic/shared/03090201.xhp#par_id3145090.8
 msgid  "Loop"
@@ -14009,7 +14009,7 @@ msgstr "Do"
 
 #: source/text/sbasic/shared/03090201.xhp#par_id3149762.11
 msgid  "statement block"
-msgstr "lauselohko1"
+msgstr "lauselohko2"
 
 #: source/text/sbasic/shared/03090201.xhp#par_id3150984.12
 msgid  "[Exit Do]"
@@ -14537,7 +14537,7 @@ msgstr "Sub/Function"
 
 #: source/text/sbasic/shared/03090301.xhp#par_id3150400.7
 msgid  "statement block"
-msgstr "lauselohko1"
+msgstr "lauselohko2"
 
 #: source/text/sbasic/shared/03090301.xhp#par_id3154140.8
 msgid  " Label"
@@ -14545,7 +14545,7 @@ msgstr "GoSub otsikko1"
 
 #: source/text/sbasic/shared/03090301.xhp#par_id3150869.9
 msgid  "statement block"
-msgstr "lauselohko2"
+msgstr "lauselohko3"
 
 #: source/text/sbasic/shared/03090301.xhp#par_id3154909.10
 msgid  "GoSub Label"
@@ -14565,7 +14565,7 @@ msgstr "lauselohko3"
 
 #: source/text/sbasic/shared/03090301.xhp#par_id3159252.14
 msgid  "Return"
-msgstr "Return"
+msgstr "Return 'Ennen End Sub -riviä"
 
 #: source/text/sbasic/shared/03090301.xhp#par_id3154321.15
 msgid  "End Sub/Function"
@@ -14677,7 +14677,7 @@ msgstr "Syntaksi:"
 
 #: source/text/sbasic/shared/03090302.xhp#par_id3154367.4
 msgid  "see Parameters"
-msgstr "katso parametrit-osasta alempaa"
+msgstr "katso parametrit"
 
 #: source/text/sbasic/shared/03090302.xhp#hd_id3150870.5
 msgid  "Parameters:"
@@ -14689,7 +14689,7 @@ msgstr "Sub/Function"
 
 #: source/text/sbasic/shared/03090302.xhp#par_id3156424.7
 msgid  "statement block"
-msgstr "lauselohko1"
+msgstr "lauselohko2"
 
 #: source/text/sbasic/shared/03090302.xhp#par_id3154685.8
 msgid  " Label1"
@@ -14701,7 +14701,7 @@ msgstr ""
 
 #: source/text/sbasic/shared/03090302.xhp#par_id3161832.10
 msgid  "statement block"
-msgstr "lauselohko2"
+msgstr "lauselohko3"
 
 #: source/text/sbasic/shared/03090302.xhp#par_id3146120.11
 msgid  "Exit Sub"
@@ -18725,7 +18725,7 @@ msgstr "print UBound(sVar())"
 
 #: source/text/sbasic/shared/03103000.xhp#par_id3153727.15
 msgid  "end Sub"
-msgstr "end Sub"
+msgstr "End Sub"
 
 #: source/text/sbasic/shared/03103000.xhp#par_id3145271.16
 msgid  "Sub ExampleUboundLbound2"

@@ -4545,7 +4545,7 @@ msgstr ""
 
 #: source/text/smath/01/03091506.xhp#par_id3159892.311
 msgid  "Horizontal bar above a character"
-msgstr "yläviiva, pituusmerkki, makron"
+msgstr "pitkä yläviiva"
 
 #: source/text/smath/01/03091506.xhp#par_id3161361
 msgid  "\<image id=\"img_id3161367\" src=\"res/commandimagelist/sc_bold.png\" width=\"0.222inch\" height=\"0.222inch\"\>\<alt id=\"alt_id3161367\"\>Icon\</alt\>\</image\>"
@@ -4941,7 +4941,7 @@ msgstr ""
 
 #: source/text/smath/01/03091508.xhp#par_id3181050.252
 msgid  "Left and right square bracket"
-msgstr "hakasulkeet, vasen ja oikea sulje"
+msgstr "vasen ja oikean hakasulje"
 
 #: source/text/smath/01/03091508.xhp#par_id3181078
 msgid  "\<image id=\"img_id3181084\" src=\"starmath/res/al21823.png\" width=\"0.25inch\" height=\"0.25inch\"\>\<alt id=\"alt_id3181084\"\>Icon\</alt\>\</image\>"
@@ -4981,7 +4981,7 @@ msgstr ""
 
 #: source/text/smath/01/03091508.xhp#par_id3181794.257
 msgid  "Left and right pointed bracket"
-msgstr "kulmasulkeet, vasen ja oikea sulje"
+msgstr "vasen ja oikea kulmasulje"
 
 #: source/text/smath/01/03091508.xhp#par_id3181822
 msgid  "\<image id=\"img_id3181828\" src=\"starmath/res/al21821.png\" width=\"0.25inch\" height=\"0.25inch\"\>\<alt id=\"alt_id3181828\"\>Icon\</alt\>\</image\>"
@@ -5081,11 +5081,11 @@ msgstr "skaalautuva alapuolinen aaltosulje"
 
 #: source/text/smath/01/03091508.xhp#par_id3183456.263
 msgid  "Left and right line with lower edges"
-msgstr "vasen ja oikea pystyviiva, joissa kulma alhaalla"
+msgstr "vasen ja oikea pystyviiva, joissa alakulmat"
 
 #: source/text/smath/01/03091508.xhp#par_id3183565.265
 msgid  "Left and right line with upper edges"
-msgstr "vasen ja oikea pystyviiva, joissa kulma ylhäällä"
+msgstr "vasen ja oikea pystyviiva, joissa yläkulmat"
 
 #: source/text/smath/01/03091508.xhp#par_idN12F9F
 msgid  "\<item type=\"literal\"\>\\lbrace \\rbrace\</item\> or \<item type=\"literal\"\>\\{ \\}\</item\>"
@@ -5661,7 +5661,7 @@ msgstr ""
 
 #: source/text/smath/01/05010100.xhp#tit
 msgid  "Fonts"
-msgstr "Fontit (Kirjasimet)"
+msgstr "Fontit"
 
 #: source/text/smath/01/05010100.xhp#hd_id3153188.1
 msgid  "Fonts"
@@ -5713,7 +5713,7 @@ msgstr ""
 
 #: source/text/smath/01/05020000.xhp#tit
 msgid  "Font Sizes"
-msgstr "Kirjasimen koko"
+msgstr "Fonttikoot"
 
 #: source/text/smath/01/05020000.xhp#bm_id3153816
 msgid  "\<bookmark_value\>font sizes; in $[officename] Math\</bookmark_value\>\<bookmark_value\>sizes; of fonts in $[officename] Math\</bookmark_value\>"
@@ -5797,7 +5797,7 @@ msgstr ""
 
 #: source/text/smath/01/05030000.xhp#tit
 msgid  "Spacing"
-msgstr "Välistys"
+msgstr "Välit"
 
 #: source/text/smath/01/05030000.xhp#bm_id3154658
 msgid  "\<bookmark_value\>spacing; formula elements\</bookmark_value\>\<bookmark_value\>formulas;element spacing\</bookmark_value\>"
@@ -5805,7 +5805,7 @@ msgstr ""
 
 #: source/text/smath/01/05030000.xhp#hd_id3154658.1
 msgid  "Spacing"
-msgstr "Välit"
+msgstr "Objektivälit"
 
 #: source/text/smath/01/05030000.xhp#par_id3153818.2
 msgid  "\<variable id=\"abstaendetext\"\>\<ahelp hid=\"SID_DISTANCE\"\>Use this dialog to determine the spacing between formula elements. The spacing is specified as a percentage in relation to the base size defined under \<emph\>Format - Font Size\</emph\>.\</ahelp\>\</variable\>"
@@ -5825,7 +5825,7 @@ msgstr ""
 
 #: source/text/smath/01/05030000.xhp#hd_id3150391.7
 msgid  "Spacing"
-msgstr "Välit"
+msgstr "Objektivälit"
 
 #: source/text/smath/01/05030000.xhp#par_id3151389.8
 msgid  "Defines the spacing between variables and operators, between lines, and between root signs and radicals."
