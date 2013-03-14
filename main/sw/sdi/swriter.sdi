@@ -6349,6 +6349,30 @@ SfxVoidItem PageDialog FN_FORMAT_PAGE_DLG
 	GroupId = GID_FORMAT;
 ]
 
+SfxVoidItem PageSettingDialog FN_FORMAT_PAGE_SETTING_DLG
+()
+[
+	/* flags: */
+	AutoUpdate = FALSE,
+	Cachable = Cachable,
+	FastCall = FALSE,
+	HasCoreId = FALSE,
+	HasDialog = TRUE,
+	ReadOnlyDoc = FALSE,
+	Toggle = FALSE,
+	Container = FALSE,
+	RecordAbsolute = FALSE,
+	RecordPerItem;
+	Asynchron;
+
+	/* config: */
+	AccelConfig = TRUE,
+	MenuConfig = TRUE,
+	StatusBarConfig = FALSE,
+	ToolBoxConfig = TRUE,
+	GroupId = GID_FORMAT;
+]
+
 //--------------------------------------------------------------------------
 SfxVoidItem PageDown FN_PAGEDOWN
 ()
@@ -10287,3 +10311,31 @@ SfxVoidItem CopyHyperlinkLocation FN_COPY_HYPERLINK_LOCATION
     ToolBoxConfig = TRUE,
     GroupId = GID_EDIT;
 ]
+
+
+SfxInt16Item SwPageColumn SID_ATTR_SWPAGE_COLUMN
+
+[
+    /* flags: */
+    AutoUpdate = FALSE,
+    Cachable = Cachable,
+    FastCall = FALSE,
+    HasCoreId = FALSE,
+    HasDialog = FALSE,
+    ReadOnlyDoc = TRUE,
+    Toggle = FALSE,
+    Container = FALSE,
+    RecordAbsolute = FALSE,
+    RecordPerSet;
+    Synchron;
+
+    Readonly = TRUE,
+
+    /* config: */
+    AccelConfig = TRUE,
+    MenuConfig = TRUE,
+    StatusBarConfig = FALSE,
+    ToolBoxConfig = TRUE,
+    GroupId = GID_VIEW;
+]
+

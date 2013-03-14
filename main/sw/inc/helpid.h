@@ -343,6 +343,27 @@
 #define HID_AUTOPILOT_PREV                                      "SW_HID_AUTOPILOT_PREV"
 #define HID_AUTOPILOT_OK                                        "SW_HID_AUTOPILOT_OK"
 
+// sw::sidebar::PagePropertyPanel
+#define HID_SWPAGE_ORIENTATION              "HID_SWPAGE_ORIENTATION"
+#define HID_SWPAGE_TBI_ORIENTATION          "HID_SWPAGE_TBI_ORIENTATION"
+#define HID_SWPAGE_MARGIN                   "HID_SWPAGE_MARGIN"
+#define HID_SWPAGE_TBI_MARGIN               "HID_SWPAGE_TBI_MARGIN"
+#define HID_SWPAGE_SIZE                     "HID_SWPAGE_SIZE"
+#define HID_SWPAGE_TBI_SIZE                 "HID_SWPAGE_TBI_SIZE"
+#define HID_SWPAGE_COLUMN                   "HID_SWPAGE_COLUMN"
+#define HID_SWPAGE_TBI_COLUMN               "HID_SWPAGE_TBI_COLUMN"
+#define HID_SWPAGE_LEFT_MARGIN              "HID_SWPAGE_LEFT_MARGIN"
+#define HID_SWPAGE_RIGHT_MARGIN             "HID_SWPAGE_RIGHT_MARGIN"
+#define HID_SWPAGE_TOP_MARGIN               "HID_SWPAGE_TOP_MARGIN"
+#define HID_SWPAGE_BOTTOM_MARGIN            "HID_SWPAGE_BOTTOM_MARGIN"
+#define HID_SWPAGE_SIZE_MORE                "HID_SWPAGE_SIZE_MORE"
+#define HID_SWPAGE_COLUMN_MORE              "HID_SWPAGE_COLUMN_MORE"
+#define HID_SWPAGE_VS_ORIENTATION           "HID_SWPAGE_VS_ORIENTATION"
+#define HID_SWPAGE_VS_MARGIN                "HID_SWPAGE_VS_MARGIN"
+#define HID_SWPAGE_VS_SIZE                  "HID_SWPAGE_VS_SIZE"
+#define HID_SWPAGE_VS_COLUMN                "HID_SWPAGE_VS_COLUMN"
+#define HID_PROPERTYPANEL_SWPAGE_SECTION    "HID_PROPERTYPANEL_SWPAGE_SECTION"
+
 // HelpIds fuers Menue *****************************************************
 
 #define HID_MN_SUB_TBLROW                                       "SW_HID_MN_SUB_TBLROW"

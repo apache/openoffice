@@ -106,7 +106,7 @@ extern SW_DLLPUBLIC SwWrtShell* GetActiveWrtShell();
 SwTemplateDlg::SwTemplateDlg(Window*			pParent,
 							 SfxStyleSheetBase& rBase,
 							 sal_uInt16 			nRegion,
-							 sal_Bool 				bColumn,
+							 const sal_uInt16 nSlot,
 							 SwWrtShell* 		pActShell,
 							 sal_Bool 				bNew ) :
 	SfxStyleDialog(	pParent,
@@ -260,15 +260,6 @@ SwTemplateDlg::SwTemplateDlg(Window*			pParent,
 
 			AddTabPage( TP_MACRO_ASSIGN, pFact->GetTabPageCreatorFunc(RID_SVXPAGE_MACROASSIGN), 0);
 
-			// Auskommentiert wegen Bug #45776 (per default keine Breite&Groesse in Rahmenvorlagen)
-/*			SwFmtFrmSize aSize( (const SwFmtFrmSize&)rBase.
-											GetItemSet().Get(RES_FRM_SIZE));
-			if( !aSize.GetWidth() )
-			{
-				aSize.SetWidth( DFLT_WIDTH );
-				aSize.SetHeight( DFLT_HEIGHT );
-				rBase.GetItemSet().Put( aSize );
-			}*/
 		break;
 		}
 		// Seitenvorlagen
@@ -277,34 +268,40 @@ SwTemplateDlg::SwTemplateDlg(Window*			pParent,
             DBG_ASSERT(pFact->GetTabPageCreatorFunc( RID_SVXPAGE_BACKGROUND ), "GetTabPageCreatorFunc fail!");
             DBG_ASSERT(pFact->GetTabPageRangesFunc( RID_SVXPAGE_BACKGROUND ), "GetTabPageRangesFunc fail!");
             AddTabPage(TP_BACKGROUND, pFact->GetTabPageCreatorFunc( RID_SVXPAGE_BACKGROUND ), pFact->GetTabPageRangesFunc( RID_SVXPAGE_BACKGROUND ) );
-			AddTabPage(TP_HEADER_PAGE,		String(SW_RES(STR_PAGE_HEADER)),
-											SvxHeaderPage::Create,
-											SvxHeaderPage::GetRanges );
-			AddTabPage(TP_FOOTER_PAGE,		String(SW_RES(STR_PAGE_FOOTER)),
-											SvxFooterPage::Create,
-											SvxFooterPage::GetRanges );
-			if(bColumn)
-				SetCurPageId(TP_COLUMN);
+            AddTabPage(TP_HEADER_PAGE,		String(SW_RES(STR_PAGE_HEADER)),
+                                            SvxHeaderPage::Create,
+                                            SvxHeaderPage::GetRanges );
+            AddTabPage(TP_FOOTER_PAGE,		String(SW_RES(STR_PAGE_FOOTER)),
+                                            SvxFooterPage::Create,
+                                            SvxFooterPage::GetRanges );
+            if ( nSlot == FN_FORMAT_PAGE_COLUMN_DLG )
+            {
+                SetCurPageId(TP_COLUMN);
+            }
+            else if ( nSlot == FN_FORMAT_PAGE_SETTING_DLG )
+            {
+                SetCurPageId(TP_PAGE_STD);
+            }
 
             DBG_ASSERT(pFact->GetTabPageCreatorFunc( RID_SVXPAGE_PAGE ), "GetTabPageCreatorFunc fail!");
             DBG_ASSERT(pFact->GetTabPageRangesFunc( RID_SVXPAGE_PAGE ), "GetTabPageRangesFunc fail!");
-			AddTabPage(TP_PAGE_STD,			String(SW_RES(STR_PAGE_STD)),
+            AddTabPage(TP_PAGE_STD,			String(SW_RES(STR_PAGE_STD)),
                                             pFact->GetTabPageCreatorFunc( RID_SVXPAGE_PAGE ),
                                             pFact->GetTabPageRangesFunc( RID_SVXPAGE_PAGE ),
-											sal_False,
-											1 ); // nach der Verwalten-Page
-			if(!pActShell || 0 == ::GetHtmlMode(pWrtShell->GetView().GetDocShell()))
-			{
+                                            sal_False,
+                                            1 ); // nach der Verwalten-Page
+            if(!pActShell || 0 == ::GetHtmlMode(pWrtShell->GetView().GetDocShell()))
+            {
                 DBG_ASSERT(pFact->GetTabPageCreatorFunc( RID_SVXPAGE_BORDER ), "GetTabPageCreatorFunc fail!");
                 DBG_ASSERT(pFact->GetTabPageRangesFunc( RID_SVXPAGE_BORDER ), "GetTabPageRangesFunc fail!");
-				AddTabPage(TP_BORDER, 			String(SW_RES(STR_PAGE_BORDER)),
-								pFact->GetTabPageCreatorFunc( RID_SVXPAGE_BORDER ), pFact->GetTabPageRangesFunc( RID_SVXPAGE_BORDER ) );
-				AddTabPage(TP_COLUMN,			String(SW_RES(STR_PAGE_COLUMN)),
-												SwColumnPage::Create,
-												SwColumnPage::GetRanges );
-				AddTabPage(TP_FOOTNOTE_PAGE,	String(SW_RES(STR_PAGE_FOOTNOTE)),
-												SwFootNotePage::Create,
-												SwFootNotePage::GetRanges );
+                AddTabPage(TP_BORDER, 			String(SW_RES(STR_PAGE_BORDER)),
+                                pFact->GetTabPageCreatorFunc( RID_SVXPAGE_BORDER ), pFact->GetTabPageRangesFunc( RID_SVXPAGE_BORDER ) );
+                AddTabPage(TP_COLUMN,			String(SW_RES(STR_PAGE_COLUMN)),
+                                                SwColumnPage::Create,
+                                                SwColumnPage::GetRanges );
+                AddTabPage(TP_FOOTNOTE_PAGE,	String(SW_RES(STR_PAGE_FOOTNOTE)),
+                                                SwFootNotePage::Create,
+                                                SwFootNotePage::GetRanges );
                 AddTabPage(TP_TEXTGRID_PAGE,    String(SW_RES(STR_PAGE_TEXTGRID)),
                                                 SwTextGridPage::Create,
                                                 SwTextGridPage::GetRanges );
@@ -314,9 +311,9 @@ SwTemplateDlg::SwTemplateDlg(Window*			pParent,
             }
 
 
-		}
-		break;
-		// Numerierungsvorlagen
+        }
+        break;
+        // Numerierungsvorlagen
 		case SFX_STYLE_FAMILY_PSEUDO:
 		{
             AddTabPage( RID_SVXPAGE_PICK_SINGLE_NUM );

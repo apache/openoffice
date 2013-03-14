@@ -24,6 +24,7 @@
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
 
+#include <cmdid.h>
 #include <hintids.hxx>
 #include <vcl/virdev.hxx>
 #include <svx/svdmodel.hxx>
@@ -424,6 +425,17 @@ void SwDoc::ChgPageDesc( sal_uInt16 i, const SwPageDesc &rChged )
     {
         GetIDocumentUndoRedo().DelAllUndoObj();
     }
+
+    SfxBindings* pBindings = GetDocShell() ? GetDocShell()->GetDispatcher()->GetBindings() : 0;
+    if ( pBindings )
+    {
+        pBindings->Invalidate( SID_ATTR_SWPAGE_COLUMN );
+        pBindings->Invalidate( SID_ATTR_PAGE );
+        pBindings->Invalidate( SID_ATTR_PAGE_SIZE );
+        pBindings->Invalidate( SID_ATTR_LONG_ULSPACE );
+        pBindings->Invalidate( SID_ATTR_LONG_LRSPACE );
+    }
+
 }
 
 /*************************************************************************

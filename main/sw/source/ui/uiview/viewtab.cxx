@@ -558,6 +558,63 @@ void SwView::ExecTabWin( SfxRequest& rReq )
 		}
 	}
 	break;
+    case SID_ATTR_SWPAGE_COLUMN:
+    {
+        const SfxInt16Item aColumnItem( (const SfxInt16Item&)rReq.GetArgs()->Get(nSlot) );
+        const sal_uInt16 nPageColumnType = aColumnItem.GetValue();
+
+        // nPageColumnType =
+        // 1 - single-columned page
+        // 2 - two-columned page
+        // 3 - three-columned page
+        // 4 - two-columned page with left column width of 2/3 of page width
+        // 5 - two-columned page with right column width of 2/3 of page width
+
+        sal_uInt16 nCount = 2;
+        if ( nPageColumnType == 1 )
+        {
+            nCount = 0;
+        }
+        else if ( nPageColumnType == 3 )
+        {
+            nCount = 3;
+        }
+
+        const sal_uInt16 nGutterWidth = 0;
+
+        const SvxLRSpaceItem aLR( rDesc.GetMaster().GetLRSpace() );
+        const long nLeft = aLR.GetLeft();
+        const long nRight = aLR.GetRight();
+        const long nWidth = nPageWidth - nLeft - nRight;
+
+        SwFmtCol aCols( rDesc.GetMaster().GetCol() );
+        aCols.Init( nCount, nGutterWidth, nWidth );
+        aCols.SetWishWidth( nWidth );
+        aCols.SetGutterWidth( nGutterWidth, nWidth );
+        aCols.SetOrtho( sal_False, nGutterWidth, nWidth );
+
+        long nColumnLeft = 0;
+        long nColumnRight = 0;
+        if ( nPageColumnType == 4 )
+        {
+            nColumnRight = (long)(nWidth/3);
+            nColumnLeft = nWidth - nColumnRight;
+            aCols.GetColumns()[0]->SetWishWidth( nColumnLeft );
+            aCols.GetColumns()[1]->SetWishWidth( nColumnRight );
+        }
+        else if ( nPageColumnType == 5 )
+        {
+            nColumnLeft = (long)(nWidth/3);
+            nColumnRight = nWidth - nColumnLeft;
+            aCols.GetColumns()[0]->SetWishWidth( nColumnLeft );
+            aCols.GetColumns()[1]->SetWishWidth( nColumnRight );
+        }
+
+        SwPageDesc aDesc( rDesc );
+        aDesc.GetMaster().SetFmtAttr( aCols );
+        rSh.ChgPageDesc( rSh.GetCurPageDesc(), aDesc );
+    }
+    break;
     case SID_ATTR_TABSTOP_VERTICAL:
     case SID_ATTR_TABSTOP:
     {
@@ -958,10 +1015,47 @@ void SwView::StateTabWin(SfxItemSet& rSet)
 	sal_uInt16 nWhich = aIter.FirstWhich();
     sal_Bool bPutContentProtection = sal_False;
 
-	while ( nWhich )
-	{
-		switch ( nWhich )
-		{
+    while ( nWhich )
+    {
+        switch ( nWhich )
+        {
+        case SID_ATTR_SWPAGE_COLUMN:
+        {
+            sal_uInt16 nColumnType = 0;
+
+            const SwFrmFmt& rMaster = rDesc.GetMaster();
+            SwFmtCol aCol(rMaster.GetCol());
+            const sal_uInt16 nCols = aCol.GetNumCols();
+            if ( nCols == 0 )
+            {
+                nColumnType = 1;
+            }
+            else if ( nCols == 2 )
+            {
+                const sal_uInt16 nColLeft = aCol.CalcPrtColWidth(0, aCol.GetWishWidth());
+                const sal_uInt16 nColRight = aCol.CalcPrtColWidth(1, aCol.GetWishWidth());
+
+                if ( abs(nColLeft - nColRight) <= 10 )
+                {
+                    nColumnType = 2;
+                }
+                else if( abs(nColLeft - nColRight*2) < 20 )
+                {
+                    nColumnType = 4;
+                }
+                else if( abs(nColLeft*2 - nColRight) < 20 )
+                {
+                    nColumnType = 5;
+                }
+            }
+            else if( nCols == 3 )
+            {
+                nColumnType = 3;
+            }
+
+            rSet.Put( SfxInt16Item( SID_ATTR_SWPAGE_COLUMN, nColumnType ) );
+        }
+        break;
 //        case RES_LR_SPACE:
 //        case SID_ATTR_LRSPACE:
 		case SID_ATTR_LONG_LRSPACE:
