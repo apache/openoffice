@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--***********************************************************
+ *
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ *
+ ***********************************************************-->
+<helpdocument version="1.0">
+    <meta>
+        <topic id="sdextPresentationMinimizerMainxhp" indexer="include">
+            <title xml-lang="en-US" id="tit">Presentation Minimizer</title>
+            <filename>/text/simpress/minimizer/main.xhp</filename>
+        </topic>
+    </meta>
+    <body>
+        <bookmark xml-lang="en-US" branch="hid/.uno:PresentationMinimizer" id="bm_id77665539" localize="false"/>
+        <bookmark xml-lang="en-US" branch="index" id="bm_id77665500">
+            <bookmark_value>presentations; optimize file size</bookmark_value>
+            <bookmark_value>Presentation Minimizer</bookmark_value>
+        </bookmark>
+        <bookmark xml-lang="en-US" branch="hid/.uno:PresentationMinimizer" id="bm_id77665502" localize="false"/>
+        <paragraph xml-lang="en-US" id="hd_id77665500" role="heading" level="1" l10n="NEW">Presentation Minimizer</paragraph>
+        <paragraph xml-lang="en-US" id="par_id77665500" role="paragraph" l10n="NEW"><ahelp hid=".uno:PresentationMinimizer">Opens the Presentation Minimizer wizards, where you can  optimize the size of %PRODUCTNAME Impress files, by compresing large images, reducing cropped areas, removing unused master pages, etc.</ahelp></paragraph>
+
+        <section id="howtoget">
+            <embed href="text/simpress/minimizer/shared.xhp#main"/>
+        </section>
+
+        <paragraph xml-lang="en-US" id="par_id77665502" role="paragraph" l10n="NEW">The Presentation Minimizer is used to reduce the file size of the current presentation. Images will be compressed and data, that is no longer needed, will be removed.</paragraph>
+        <paragraph xml-lang="en-US" id="par_id77665503" role="paragraph" l10n="NEW">At the last step of the wizard you can choose to apply the changes to the current presentation or to create an optimized new version of the presentation.</paragraph>
+
+        <embed href="text/simpress/minimizer/step1.xhp#step1"/>
+        <embed href="text/simpress/minimizer/step2.xhp#step2"/>
+        <embed href="text/simpress/minimizer/step3.xhp#step3"/>
+        <embed href="text/simpress/minimizer/step4.xhp#step4"/>
+        <embed href="text/simpress/minimizer/step5.xhp#step5"/>
+        <embed href="text/simpress/minimizer/infobox.xhp#infobox"/>
+
+        <!-- Buttons -->
+        <bookmark xml-lang="en-US" branch="hid/sdext:Minimizer:Wizard:PBHelp" id="bm_id77665503" localize="false"/>
+        <paragraph role="heading" id="hd_id776655000" xml-lang="en-US" level="2" l10n="NEW">Help</paragraph>
+        <paragraph role="paragraph" id="par_id776655000" xml-lang="en-US" l10n="NEW"><ahelp hid="hid/sdext:Minimizer:Wizard:PBHelp">Open the Online Help for this Wizard.</ahelp></paragraph>
+
+        <bookmark xml-lang="en-US" branch="hid/sdext:Minimizer:Wizard:PBBack" id="bm_id77665502" localize="false"/>
+        <paragraph role="heading" id="hd_id77665501" xml-lang="en-US" level="2" l10n="NEW">Back</paragraph>
+        <paragraph role="paragraph" id="par_id77665501" xml-lang="en-US" l10n="NEW" oldref="6"><ahelp hid="hid/sdext:Minimizer:Wizard:PBBack">Returns to the selections made on the previous page. The current settings remain in effect. This button only becomes active after the first page.</ahelp></paragraph>
+
+        <bookmark xml-lang="en-US" branch="hid/sdext:Minimizer:Wizard:PBNext" id="bm_id77665503" localize="false"/>
+        <paragraph role="heading" id="hd_id77665502" xml-lang="en-US" level="2" l10n="NEW">Next</paragraph>
+        <paragraph role="paragraph" id="par_id77665502b" xml-lang="en-US" l10n="NEW"><ahelp hid="hid/sdext:Minimizer:Wizard:PBNext">The wizard saves the current settings and goes to the next page. Once you reach the last page, this button will become inactive.</ahelp></paragraph>
+
+        <bookmark xml-lang="en-US" branch="hid/sdext:Minimizer:Wizard:PBFinish" id="bm_id77665504" localize="false"/>
+        <paragraph role="heading" id="hd_id77665503" xml-lang="en-US" level="2" l10n="CHG">Finish</paragraph>
+        <paragraph role="paragraph" id="par_id7766550b" xml-lang="en-US" l10n="NEW"><ahelp hid="hid/sdext:Minimizer:Wizard:PBFinish">According to your selections, the wizard creates a document template and saves it on your hard disk. A new document based on the template appears in the work area, with the filename "UntitledX" (X stands for an automatic number).</ahelp></paragraph>
+
+        <bookmark xml-lang="en-US" branch="hid/sdext:Minimizer:Wizard:PBCancel" id="bm_id77665505" localize="false"/>
+        <embed href="text/shared/00/00000001.xhp#abbrechen"/>
+        <paragraph role="note" id="par_id77665504" xml-lang="en-US" l10n="NEW">$[officename] saves the current settings in the wizard according to the selected document template. These will be used as the default settings the next time you activate the wizard.</paragraph>
+
+        <bookmark xml-lang="en-US" branch="hid/sdext:Minimizer:Wizard:Dialog" id="bm_id77665501" localize="false"/>
+        <comment>Dialog ID here, below any &lt;avis&gt; tags (else the tagged text will be shown on the buttons)</comment>
+    </body>
+</helpdocument>
