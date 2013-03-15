@@ -62,13 +62,12 @@ namespace PoWrap
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_po::startLook(char *syyText)
+void convert_po::startLook()
 {
  std::string sFileName, sNewKey;
  int         i;
 
 
- handleNL(syyText);
  if (!msKey.size() || !msId.size() || !msStr.size())
     return;
 
@@ -103,10 +102,8 @@ void convert_po::setValue(char *syyText, int iLineCnt)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_po::setFuzzy(char *syyText)
+void convert_po::setFuzzy()
 {
-  std::string sText(syyText);
-
   mbFuzzy = true;
 }
 
@@ -118,6 +115,10 @@ void convert_po::setKey(char *syyText)
   int i;
 
 
+  // Activate "look for msg" mode.
+  startLook();
+
+
   // skip "#:" and any blanks
   for (syyText += 2; *syyText == ' ' || *syyText == '\t'; ++syyText) ;
   msKey = syyText;
@@ -125,40 +126,29 @@ void convert_po::setKey(char *syyText)
   // remove trailing blanks
   for (i = msKey.size() -1; msKey[i] == '\r' || msKey[i] == ' ' || msKey[i] == '\t'; --i) ;
   msKey.erase(i+1);
-
-  if (msKey == "macrodlg.src#RID_MACROCHOOSER.modaldialog.text")
-  {
-    msKey = "jan";
-  }
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_po::setMsgId(char *syyText)
+void convert_po::setMsgId()
 {
-  std::string sText(syyText);
-
   mbExpectId = true;
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_po::setMsgStr(char *syyText)
+void convert_po::setMsgStr()
 {
-  std::string sText(syyText);
-
   mbExpectStr = true;
 }
 
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_po::handleNL(char *syyText)
+void convert_po::handleNL()
 {
-  mbExpectId  =
-  mbExpectStr = false;
   ++miLineNo;
 }
 
@@ -168,7 +158,7 @@ void convert_po::handleNL(char *syyText)
 void convert_po::execute()
 {
   PoWrap::yylex();
-  startLook("");
+  startLook();
 }
 
  

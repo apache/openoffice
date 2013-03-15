@@ -45,13 +45,13 @@ class convert_po : public convert_gen_impl
     convert_po(l10nMem& crMemory);
     ~convert_po();
 
-    void startLook (char *syyText);
+    void startLook ();
     void setValue  (char *syyText, int iLineCnt);
-    void setFuzzy  (char *syyText);
+    void setFuzzy  ();
     void setKey    (char *syyText);
-    void setMsgId  (char *syyText);
-    void setMsgStr (char *syyText);
-    void handleNL  (char *syyText);
+    void setMsgId  ();
+    void setMsgStr ();
+    void handleNL  ();
 
   private:
     std::string  msId;

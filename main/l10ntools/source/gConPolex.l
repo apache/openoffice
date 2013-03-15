@@ -76,33 +76,33 @@ SPACE [ \t]*
 
 
 "\"" {
+  char buildValue[8000];
+  int j, i, iLineCnt;
+
+  // loop across multiple "..." and combine them, while keeping the source
+  for (j = -1, iLineCnt = i = 0; yytext[i] == '\"';)
+  {
+    // build current "..."
+    for (; (buildValue[++j] = yytext[++i] = yyinput()) != '\"';)
+      if (yytext[i] == '\\')
+      {
+        if ( (yytext[++i] = yyinput()) != '\"')
+          ++j;
+        buildValue[j] = yytext[i];
+      }
+    --j;
+
+    if (!LOCptr->mbExpectId && !LOCptr->mbExpectStr)
+      break;
+
+    // skip rest of line
+    for (; (yytext[++i] = yyinput()) == ' ' || yytext[i] == '\t' || yytext[i] == '\n';)
+      if (yytext[i] == '\n')
+        ++iLineCnt;
+  }
+
   if (LOCptr->mbExpectId || LOCptr->mbExpectStr)
   {
-    char buildValue[8000];
-    int j, i, iLineCnt;
-
-    // loop across multiple "..." and combine them, while keeping the source
-    for (j = -1, iLineCnt = i = 0; yytext[i] == '\"';)
-    {
-      // build current "..."
-      for (; (buildValue[++j] = yytext[++i] = yyinput()) != '\"';)
-        if (yytext[i] == '\\')
-        {
-          yytext[++i] = yyinput();
-          if (yytext[i] != '\"')
-            ++j;
-          buildValue[j] = yytext[i];
-        }
-      --j;
-
-      // skip until next line
-      for (; (yytext[++i] = yyinput()) != '\n' && yytext[i] != '\"' && yytext[i] != EOF;) ;
-      if (yytext[i] == '\n')
-      {
-        ++iLineCnt;
-        yytext[++i] = yyinput();
-      }
-    }
     if (yytext[i] != EOF)
     {
       unput(yytext[i]);
@@ -113,39 +113,36 @@ SPACE [ \t]*
 }
 
 
-^"#,"{SPACE}.*[fF][uU][zZ][zZ][yY] {
-  LOCptr->setFuzzy(yytext);
+"#,"{SPACE}.*[fF][uU][zZ][zZ][yY] {
+  LOCptr->setFuzzy();
 }
 
 
-^"#:".* {
+"#:".* {
   LOCptr->setKey(yytext);
 }
 
 
-^"#~".* {
+[mM][sS][gG][cC][tT][xX][tT].* |
+"#*".*                         |
+"# ".*                         |
+"#~".*                         {
   // special comment, just skip
-  LOCptr->setMsgStr(yytext);
 }
 
 
-^[mM][sS][gG][iI][dD]{SPACE} {
-  LOCptr->setMsgId(yytext);
+[mM][sS][gG][iI][dD]{SPACE} {
+  LOCptr->setMsgId();
 }
 
 
-^[mM][sS][gG][sS][tT][rR]{SPACE} {
-  LOCptr->setMsgStr(yytext);
-}
-
-
-\n\r*\n {
-  LOCptr->startLook(yytext);
+[mM][sS][gG][sS][tT][rR]{SPACE} {
+  LOCptr->setMsgStr();
 }
 
 
 \n {
-  LOCptr->handleNL(yytext);
+  LOCptr->handleNL();
 }
 
 

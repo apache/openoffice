@@ -396,13 +396,13 @@ void l10nMem_impl::convEntryKey(int                iLineNo,
   iSize = ivEntryList.size();
   if (!iSize)
   {
-    showWarning("filename(" + sSourceFile + ") key(" + sKey +") lang(" +
-                mcDb.mcLangList[mcDb.miCurLangInx] + ") not found!", iLineNo);
+    showWarning("file(" + sSourceFile + ") key(" + sKey + ")  lang(" + mcDb.mcLangList[mcDb.miCurLangInx] +
+                ") with msgId(" + sOrgText + ") file not found", iLineNo);
     return;
   }
 
   // Loop through all potential en_US entries
-  for (iCandidate = i = 0; i < iSize; ++i)
+  for (iCandidate = -1, i = 0; i < iSize; ++i)
   {
     l10nMem_enus_entry& curE = mcDb.mcENUSlist[ivEntryList[i]];
 
@@ -425,21 +425,18 @@ void l10nMem_impl::convEntryKey(int                iLineNo,
     if (sKeyUpper != curE.msUpperKey)
       continue;
 
-    iCandidate = ivEntryList[i];
+    iCandidate = i;
   }
-  if (i == iSize && iCandidate <= 0)
-  {
-    showWarning("key(" + sKey + ")  lang(" + mcDb.mcLangList[mcDb.miCurLangInx] +
-                ") with msgId(" + sOrgText + ") cannot be matched", iLineNo);
-  }
+  sKeyUpper.clear();
+  if (i == iSize && iCandidate < 0)
+    sKeyUpper = "cannot be matched";
   else
   {
     // Primarely use text match, alternatively use key candidate 
     if (i == iSize)
     {
       i = iCandidate;
-      showDebug("matching through KEY, key(" + sKey + ")  lang(" + mcDb.mcLangList[mcDb.miCurLangInx] +
-                ") with msgId(" + sOrgText + ")", iLineNo);
+      sKeyUpper = "could only be matched through KEY";
     }
 
     // update language text
@@ -451,6 +448,11 @@ void l10nMem_impl::convEntryKey(int                iLineNo,
       curL.msText  = sText;
       curL.mbFuzzy = bIsFuzzy;
       curE.meState = l10nMem::ENTRY_CHANGED;
+    }
+    if (sKeyUpper.size())
+    {
+      showWarning("file(" + sSourceFile + ") key(" + sKey + ")  lang(" + mcDb.mcLangList[mcDb.miCurLangInx] +
+                  ") with msgId(" + sOrgText + ") " + sKeyUpper, iLineNo);
     }
   }
 }
