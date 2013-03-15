@@ -234,6 +234,7 @@ LINKLINKFILES= \
    text$/simpress$/02$/13180000.xhp \
    text$/simpress$/02$/13190000.xhp \
    text$/simpress$/04$/01020000.xhp \
+   text$/simpress$/04$/presenter.xhp \
    text$/simpress$/guide$/3d_create.xhp \
    text$/simpress$/guide$/animated_gif_create.xhp \
    text$/simpress$/guide$/animated_gif_save.xhp \
