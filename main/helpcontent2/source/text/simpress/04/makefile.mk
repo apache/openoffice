@@ -40,7 +40,8 @@ MODULE  = simpress
 
 # this list matches the *.xhp files to process
 XHPFILES = \
-   01020000.xhp 
+   01020000.xhp \
+   presenter.xhp
 	
 # --- Targets ------------------------------------------------------
 
