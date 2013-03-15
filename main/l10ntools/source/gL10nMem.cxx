@@ -192,7 +192,7 @@ void l10nMem_impl::setSourceKey(int                iLineNo,
   }
   else
   {
-    // add key, if changed text this is wrong but handled in reorganize
+    // add key, if changed text, this is wrong but handled in reorganize
     mcDb.addKey(iLineNo, sSourceFile, sKey, sText, l10nMem::ENTRY_ADDED);
   }
 }
@@ -339,16 +339,19 @@ bool l10nMem_impl::convFilterWarning(const std::string& sSourceFile,
                                      const std::string& sKey,
                                      const std::string& sOrgText)
 {
+  if (sOrgText == "-")
+    return true;
+
   if (msModuleName == "basic")
   {
-    if (sOrgText == "-"               ||
-        sSourceFile == "basic.src"    ||
+    if (sSourceFile == "basic.src"    ||
         sSourceFile == "basmsg.src"   ||
         sSourceFile == "svtmsg.src"   ||
         sSourceFile == "testtool.src" ||
         sSourceFile == "ttmsg.src"    )
       return true;
   }
+
   return false;
 }
 
@@ -363,13 +366,22 @@ void l10nMem_impl::convEntryKey(int                iLineNo,
                                bool               bIsFuzzy)
 {
   std::vector<int> ivEntryList;
-  int              i, iSize = mcDb.mcFileList.size();
+  std::string      sKeyUpper;
+  int              i, iSize, iCandidate;
+
 
   // filter out dummy messages, silently
-  if (convFilterWarning(sSourceFile, sKey, sOrgText))
+  if (!sText.size() || convFilterWarning(sSourceFile, sKey, sOrgText))
     return;
 
+  // make copy of key in upper case
+  iSize     = sKey.size();
+  sKeyUpper = sKey;
+  for (i = 0; i < iSize; ++i)
+    sKeyUpper[i] = toupper(sKeyUpper[i]);
+
   // Find all matching file names
+  iSize      = mcDb.mcFileList.size();
   for (i = 1; i < iSize; ++i)
     if (sSourceFile == mcDb.mcFileList[i].msPureName)
     {
@@ -390,7 +402,7 @@ void l10nMem_impl::convEntryKey(int                iLineNo,
   }
 
   // Loop through all potential en_US entries
-  for (i = 0; i < iSize; ++i)
+  for (iCandidate = i = 0; i < iSize; ++i)
   {
     l10nMem_enus_entry& curE = mcDb.mcENUSlist[ivEntryList[i]];
 
@@ -399,10 +411,39 @@ void l10nMem_impl::convEntryKey(int                iLineNo,
       continue;
 
     // The msgId must match
-    if (sOrgText != curE.msText)
+    if (sOrgText == curE.msText)
+      break;
+
+    // is this the second (or more candidate ? then we cannot use key
+    if (iCandidate)
+    {
+      iCandidate = -1;
+      continue;
+    }
+
+    // compare keys, but be aware of different length
+    if (sKeyUpper != curE.msUpperKey)
       continue;
 
+    iCandidate = ivEntryList[i];
+  }
+  if (i == iSize && iCandidate <= 0)
+  {
+    showWarning("key(" + sKey + ")  lang(" + mcDb.mcLangList[mcDb.miCurLangInx] +
+                ") with msgId(" + sOrgText + ") cannot be matched", iLineNo);
+  }
+  else
+  {
+    // Primarely use text match, alternatively use key candidate 
+    if (i == iSize)
+    {
+      i = iCandidate;
+      showDebug("matching through KEY, key(" + sKey + ")  lang(" + mcDb.mcLangList[mcDb.miCurLangInx] +
+                ") with msgId(" + sOrgText + ")", iLineNo);
+    }
+
     // update language text
+    l10nMem_enus_entry& curE = mcDb.mcENUSlist[ivEntryList[i]];
     l10nMem_lang_entry& curL = curE.mcLangList[mcDb.miCurLangInx];
 
     if (sText != curL.msText)
@@ -411,9 +452,5 @@ void l10nMem_impl::convEntryKey(int                iLineNo,
       curL.mbFuzzy = bIsFuzzy;
       curE.meState = l10nMem::ENTRY_CHANGED;
     }
-    return;
   }
-
-  showWarning("key(" + sKey + ")  lang(" + mcDb.mcLangList[mcDb.miCurLangInx] +
-              ") with msgId(" + sOrgText + ") cannot be matched", iLineNo);
 }

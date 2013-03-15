@@ -68,10 +68,24 @@ l10nMem_enus_entry::l10nMem_enus_entry(const std::string&   sKey,
                                        miFileInx(iFileInx),
                                        miLineNo(iLineNo)
 {
-  int i;
+  int  i, iSize;
+  char ch;
 
+  // add dummy language entries
   for (i = 0; i < iLangSize; ++i)
     mcLangList.push_back(l10nMem_lang_entry("", false));
+
+  // convert key to upper case
+  iSize      = sKey.size();
+  msUpperKey = sKey;
+  for (i = 0; i < iSize; ++i)
+  {
+    ch = msUpperKey[i];
+    if (ch == ' ' || ch == '*' || ch == '+')
+      msUpperKey[i] = '_';
+    else
+      msUpperKey[i] = toupper(msUpperKey[i]);
+  }
 }
 
 

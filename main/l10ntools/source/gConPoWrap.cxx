@@ -89,21 +89,15 @@ void convert_po::startLook(char *syyText)
 
 
 /**********************   I M P L E M E N T A T I O N   **********************/
-void convert_po::setValue(char *syyText)
+void convert_po::setValue(char *syyText, int iLineCnt)
 {
-  int inx;
-  std::string sText(syyText);
-
-  // find terminating "
-  for (inx =  sText.size(); sText[--inx] != '\"';) ;
-  sText.erase(inx);
-
   if (mbExpectId)
-    msId = sText;
+    msId = syyText;
   if (mbExpectStr)
-    msStr = sText;
+    msStr = syyText;
   mbExpectId  =
   mbExpectStr = false;
+  miLineNo   += iLineCnt;
 }
 
 
@@ -131,6 +125,11 @@ void convert_po::setKey(char *syyText)
   // remove trailing blanks
   for (i = msKey.size() -1; msKey[i] == '\r' || msKey[i] == ' ' || msKey[i] == '\t'; --i) ;
   msKey.erase(i+1);
+
+  if (msKey == "macrodlg.src#RID_MACROCHOOSER.modaldialog.text")
+  {
+    msKey = "jan";
+  }
 }
 
 
@@ -234,12 +233,25 @@ void convert_po::save(const std::string& sFileName,
                       bool               bFuzzy)
 {
   std::ostream outFile(&outBuffer);
+  std::string  newText(sText), newENUStext(sENUStext);
+  int          i;
+  
+  for (i = 0; (i = newText.find("\"", i)) != (int)std::string::npos;)
+  {
+    newText.insert(i, "\\");
+    i += 2;
+  }
+  for (i = 0; (i = newENUStext.find("\"", i)) != (int)std::string::npos;)
+  {
+    newENUStext.insert(i, "\\");
+    i += 2;
+  }
 
   outFile << std::endl << "#: " << sFileName << "#" << sKey << std::endl;
   if (bFuzzy)
     outFile << "#, fuzzy" << std::endl;
-  outFile << "msgid  \"" << sENUStext << "\"" << std::endl
-          << "msgstr \"" << sText     << "\"" << std::endl;
+  outFile << "msgid  \"" << newENUStext << "\"" << std::endl
+          << "msgstr \"" << newText     << "\"" << std::endl;
 }
 
 

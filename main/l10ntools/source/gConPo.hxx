@@ -46,7 +46,7 @@ class convert_po : public convert_gen_impl
     ~convert_po();
 
     void startLook (char *syyText);
-    void setValue  (char *syyText);
+    void setValue  (char *syyText, int iLineCnt);
     void setFuzzy  (char *syyText);
     void setKey    (char *syyText);
     void setMsgId  (char *syyText);

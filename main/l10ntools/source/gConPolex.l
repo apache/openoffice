@@ -75,31 +75,66 @@ SPACE [ \t]*
 %%
 
 
-"\"".* {
-  LOCptr->setValue(&yytext[1]);
+"\"" {
+  if (LOCptr->mbExpectId || LOCptr->mbExpectStr)
+  {
+    char buildValue[8000];
+    int j, i, iLineCnt;
+
+    // loop across multiple "..." and combine them, while keeping the source
+    for (j = -1, iLineCnt = i = 0; yytext[i] == '\"';)
+    {
+      // build current "..."
+      for (; (buildValue[++j] = yytext[++i] = yyinput()) != '\"';)
+        if (yytext[i] == '\\')
+        {
+          yytext[++i] = yyinput();
+          if (yytext[i] != '\"')
+            ++j;
+          buildValue[j] = yytext[i];
+        }
+      --j;
+
+      // skip until next line
+      for (; (yytext[++i] = yyinput()) != '\n' && yytext[i] != '\"' && yytext[i] != EOF;) ;
+      if (yytext[i] == '\n')
+      {
+        ++iLineCnt;
+        yytext[++i] = yyinput();
+      }
+    }
+    if (yytext[i] != EOF)
+    {
+      unput(yytext[i]);
+    }
+    buildValue[j+1] = '\0';
+    LOCptr->setValue(buildValue, iLineCnt);
+  }
 }
 
 
-"#,"{SPACE}.*[fF][uU][zZ][zZ][yY] {
+^"#,"{SPACE}.*[fF][uU][zZ][zZ][yY] {
   LOCptr->setFuzzy(yytext);
 }
 
 
-"#:".* {
+^"#:".* {
   LOCptr->setKey(yytext);
 }
 
-"#~".*\r*\n {
+
+^"#~".* {
   // special comment, just skip
+  LOCptr->setMsgStr(yytext);
 }
 
 
-{SPACE}[mM][sS][gG][iI][dD]{SPACE} {
+^[mM][sS][gG][iI][dD]{SPACE} {
   LOCptr->setMsgId(yytext);
 }
 
 
-{SPACE}[mM][sS][gG][sS][tT][rR]{SPACE} {
+^[mM][sS][gG][sS][tT][rR]{SPACE} {
   LOCptr->setMsgStr(yytext);
 }
 

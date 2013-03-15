@@ -59,6 +59,7 @@ class l10nMem_enus_entry
     ~l10nMem_enus_entry();
 
     std::string                     msKey;      // key in po file and source file
+    std::string                     msUpperKey; // key converted to uppercase (for compare)
     std::string                     msText;     // en_US text from source file
     l10nMem::ENTRY_STATE            meState;    // status information
     int                             miFileInx;  // index of file name
